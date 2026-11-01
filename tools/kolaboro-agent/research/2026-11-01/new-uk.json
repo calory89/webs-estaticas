@@ -1,0 +1,1057 @@
+[
+ {
+  "slug": "x1-trafford-waters-x1-developments",
+  "name": "X1 Trafford Waters",
+  "developer": "X1 Developments (with landowner Peel Waters)",
+  "area": "Trafford Waters, TraffordCity",
+  "country": "United Kingdom",
+  "market": "Manchester",
+  "stage": "under construction",
+  "url": "https://x1developments.com/developments/x1-trafford-waters-off-plan-investment/",
+  "docs_url": "https://x1developments.com/developments/x1-trafford-waters-off-plan-investment/",
+  "permit_number": "Trafford Council 111364/RES/23",
+  "docs_listed": [
+   "planning reference 111364/RES/23 quoted in developer news post (June 2024)",
+   "price from GBP 198,826",
+   "payment plan GBP 5,000 reservation, 25% on exchange, 75% on completion",
+   "6% guaranteed net returns for 5 years",
+   "250-year lease, peppercorn ground rent",
+   "completion Q2 2027 with long stop Q4 2028 (FAQ) but Q4 2027 elsewhere on the same page",
+   "floor plans only inside a gated brochure"
+  ],
+  "note": "Phase 1 of 113 flats (208 approved under reserved matters 111364/RES/23, decided 14 Jun 2024) at Trafford Waters, sold off-plan with a 6% guaranteed net return for 5 years. Ground was broken in Sep 2025, but in Jun 2026 a sister X1 company, X1 Manchester Waters Ltd, went into administration owing about GBP 24m of buyer deposits (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 198826,
+   "currency": "GBP",
+   "title": "leasehold",
+   "lease_base": 250,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 6,
+   "completion": "2027-Q2",
+   "permit_claim": true,
+   "permit_number": "Trafford Council 111364/RES/23",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "X1 names X1 Media City (sold out) and Cheltenham Place (delivered Q4 2024) on the project page; three Manchester Waters towers (406 homes) were delivered per Place North West",
+   "units": 113,
+   "payment_plan": "GBP 5,000 reservation, 25% on exchange, 75% on completion",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "X1 news post (24 Jun 2024) tells buyers to search 111364/RES/23 on Trafford Council's portal; a Dec 2025 non-material amendment form filed by X1 Developments Limited and Peel L&P states the reserved matters approval 111364/RES/23 (pursuant to outline 85282/OUT/15) was decided 14/06/2024 for 208 dwellings. The council portal itself could not be opened from our session",
+   "escrow": null,
+   "progress": "Project page gives only planned dates and contradicts itself (construction start Q4 2025 and Q2 2026). Place North West reported Bridgestone broke ground on the 113-flat first phase on 1 Sep 2025",
+   "plans": "Floor plans are only offered inside a brochure behind an enquiry form",
+   "record": "Developer cites X1 Media City and Cheltenham Place. Companies House shows X1 Manchester Waters Limited (10423395) in administration since 4 Jun 2026; Place North West reports 336 buyers' deposits (about GBP 24m) on two unbuilt towers",
+   "returns": "Project page headline: '6% Guaranteed NET Returns for 5 years' and 'GUARANTEED YIELD 6% Net'"
+  },
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "contradicted",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Reserved matters permission 111364/RES/23 granted for 208 homes",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.placenorthwest.co.uk/peel-x1-get-go-ahead-for-next-phase-of-1bn-masterplan/"
+   },
+   {
+    "claim": "Decision date on 111364/RES/23 was 14 Jun 2024 (stated in Dec 2025 amendment application)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://docs.planning.org.uk/20251223/100/T7OE2JQLH0Q00/26mhyfjhqqteov4l.pdf"
+   },
+   {
+    "claim": "Sales page (Feb 2026) says off-plan sales opened 'following planning approval in summer 2025'",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.placenorthwest.co.uk/peel-x1-get-go-ahead-for-next-phase-of-1bn-masterplan/"
+   },
+   {
+    "claim": "Construction start Q2 2026 (project page specification box)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.placenorthwest.co.uk/bridgestone-breaks-ground-on-113-trafford-waters-apartments/"
+   },
+   {
+    "claim": "Construction under way with Bridgestone as contractor since Sep 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.placenorthwest.co.uk/bridgestone-breaks-ground-on-113-trafford-waters-apartments/"
+   },
+   {
+    "claim": "70% of the 113-flat first phase sold off-plan by Sep 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.placenorthwest.co.uk/bridgestone-breaks-ground-on-113-trafford-waters-apartments/"
+   },
+   {
+    "claim": "Completion Q2 2027 (long stop Q4 2028)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://x1developments.com/developments/x1-trafford-waters-off-plan-investment/"
+   },
+   {
+    "claim": "Developer company X1 Developments Ltd is in good standing",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/07065987"
+   },
+   {
+    "claim": "Proven delivery record with Peel Waters at Manchester Waters",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/10423395"
+   },
+   {
+    "claim": "Three Manchester Waters towers (406 homes) delivered",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.placenorthwest.co.uk/x1-manchester-waters-owes-25-7m-to-creditors/"
+   },
+   {
+    "claim": "6% guaranteed net return for 5 years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://x1developments.com/developments/x1-trafford-waters-off-plan-investment/"
+   },
+   {
+    "claim": "Buyer deposits are protected",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://x1developments.com/developments/x1-trafford-waters-off-plan-investment/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Salford Quays / Liverpool, UK",
+   "developer_company": "Planning applicant 'X1 Developments Limited'; Companies House lists X1 DEVELOPMENTS LTD 07065987 (accounts overdue, active proposal to strike off) and holding company X1 DEVELOPMENTS GROUP LIMITED 12505207. No selling entity named on the sales page",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-09",
+   "handover_promised": "2027-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 198826,
+   "price_max": null,
+   "currency": "GBP",
+   "deposit_pct": 25,
+   "payment_plan": "GBP 5,000 reservation, 25% on exchange, 75% on completion",
+   "foreign_ownership": "250-year leasehold, same terms for overseas buyers",
+   "rental_programme": "Guaranteed 6% net for 5 years, fully furnished, short-let permission mentioned in press",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "residents' garden deck",
+    "shared work spaces",
+    "bike storage",
+    "parking",
+    "ground floor commercial units"
+   ],
+   "lat": 53.47,
+   "lng": -2.357,
+   "permit_authority": "Trafford Council (local planning authority)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Planning reference published by the developer and confirmed by press and the amendment application",
+   "Construction start confirmed by independent trade press (Sep 2025)",
+   "Long stop date (Q4 2028) stated in the FAQ"
+  ],
+  "flags": [
+   {
+    "text": "Place North West reported in Jun 2026 that X1 Manchester Waters Limited, part of the X1 group, entered administration with two of five towers unbuilt and 336 buyers holding deposits",
+    "source": "https://www.placenorthwest.co.uk/x1-vehicle-collapses-leaving-apartment-investors-in-the-mire/"
+   },
+   {
+    "text": "Administrator's report, as reported by Place North West, put the SPV's debts at GBP 25.7m, of which over GBP 24m is owed to off-plan buyers whose deposits X1 did not have funds to repay",
+    "source": "https://www.placenorthwest.co.uk/x1-manchester-waters-owes-25-7m-to-creditors/"
+   },
+   {
+    "text": "The Gazette notice records administrators (FRP Advisory) appointed to X1 Manchester Waters Limited on 4 Jun 2026, High Court Manchester CR-2026-000799",
+    "source": "https://www.thegazette.co.uk/London/issue/65088/page/11514/data.pdf"
+   },
+   {
+    "text": "Companies House shows X1 DEVELOPMENTS LTD (07065987) with accounts overdue and an active proposal to strike off",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/07065987"
+   }
+  ],
+  "sources": [
+   "https://x1developments.com/developments/x1-trafford-waters-off-plan-investment/",
+   "https://x1developments.com/x1-trafford-waters-now-open-for-off-plan-sales/",
+   "https://x1developments.com/planning-permission-granted-for-208-new-apartments-at-trafford-waters/",
+   "https://www.peelwaters.co.uk/news/third-residential-development-gets-green-light-at-trafford-waters/",
+   "https://www.placenorthwest.co.uk/peel-x1-get-go-ahead-for-next-phase-of-1bn-masterplan/",
+   "https://www.placenorthwest.co.uk/bridgestone-breaks-ground-on-113-trafford-waters-apartments/",
+   "https://www.propertyinvestortoday.co.uk/breaking-news/2025/09/first-company-breaks-ground-in-delivery-of-2bn-development/",
+   "https://docs.planning.org.uk/20251223/100/T7OE2JQLH0Q00/26mhyfjhqqteov4l.pdf",
+   "https://find-and-update.company-information.service.gov.uk/company/07065987",
+   "https://find-and-update.company-information.service.gov.uk/company/12505207",
+   "https://find-and-update.company-information.service.gov.uk/company/10423395",
+   "https://www.placenorthwest.co.uk/x1-vehicle-collapses-leaving-apartment-investors-in-the-mire/",
+   "https://www.placenorthwest.co.uk/x1-manchester-waters-owes-25-7m-to-creditors/",
+   "https://www.thegazette.co.uk/London/issue/65088/page/11514/data.pdf",
+   "https://www.insidermedia.com/news/north-west/administrators-appointed-to-x1-manchester-waters-developmentspv-incomplete-project-has-stalled-following-significant-financial-pressure"
+  ],
+  "verified_score": 2
+ },
+ {
+  "slug": "obsidian-greengate-salboy-domis",
+  "name": "Obsidian",
+  "developer": "Salboy and Domis Construction (SPV Trinity 2 Limited)",
+  "area": "Greengate, Trinity Way, Salford M3",
+  "country": "United Kingdom",
+  "market": "Manchester",
+  "stage": "under construction",
+  "url": "https://salboy.com/development/obsidian/",
+  "docs_url": "https://salboy.com/development/obsidian/",
+  "permit_number": "Salford City Council 23/81487/FUL",
+  "docs_listed": [
+   "developer page with status 'Under Construction' and dated news (topping out 16 Mar 2026)",
+   "contractor timeline: planning Jul 2023, start Jan 2024, sales launch Apr 2024, topping out Mar 2026",
+   "250 homes: 31 studios, 93 1BR, 111 2BR, 15 3BR",
+   "agents: 999-year lease, no ground rent, service charge about GBP 4.90 per sq ft, Protek warranty, 25% on exchange",
+   "completion Q4 2026"
+  ],
+  "note": "26-storey, 250-home Salboy and Domis tower approved by Salford in Jul 2023 (23/81487/FUL), started Apr 2024 and topped out Mar 2026 with completion targeted for late 2026. Agents quote prices from about GBP 249,000, a 999-year lease and a Protek warranty; no deposit protection or floor plans on the developer page (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 249000,
+   "currency": "GBP",
+   "title": "leasehold",
+   "lease_base": 999,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 6,
+   "completion": "2026-Q4",
+   "permit_claim": true,
+   "permit_number": "Salford City Council 23/81487/FUL",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Salboy and Domis name Local Blackfriars (2019) and Fifty5ive in Greengate as delivered (developer and contractor pages)",
+   "units": 250,
+   "payment_plan": "Reservation (GBP 2,000 per one agent), 25% on exchange, 75% on completion",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Place North West reported Salford approval in Jul 2023 under application 23/81487/FUL, submitted for Trinity 2, a Salboy and Domis SPV. Salford's public access portal was unreachable from our session",
+   "escrow": null,
+   "progress": "Salboy news 'Salboy and Domis top out Obsidian' (16 Mar 2026) and Domis project timeline; Place North West and Construction Enquirer reported the construction start in Apr 2024",
+   "plans": "No floor plans on the developer page; agents offer them on request",
+   "record": "Salboy Limited (09123542) active with accounts filed to 31 Mar 2025; developer names Local Blackfriars and Fifty5ive as delivered next door",
+   "returns": "No guaranteed language on Salboy's page; agents quote a projected 6% gross yield"
+  },
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Planning permission 23/81487/FUL approved Jul 2023 for 250 flats",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.placenorthwest.co.uk/planning-salford-says-yes-to-salboy-and-domis-26-storey-tower/"
+   },
+   {
+    "claim": "Applicant SPV Trinity 2 is a registered company",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/13856903"
+   },
+   {
+    "claim": "Site is charged to a lender (Bridgeco Limited, Nov 2024)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/13856903/charges"
+   },
+   {
+    "claim": "Construction started Apr 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.placenorthwest.co.uk/work-starts-on-salboys-26-storey-obsidian-tower/"
+   },
+   {
+    "claim": "Construction started Jan 2024 (contractor timeline)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.placenorthwest.co.uk/work-starts-on-salboys-26-storey-obsidian-tower/"
+   },
+   {
+    "claim": "Structure topped out Mar 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://salboy.com/2026/03/salboy-and-domis-top-out-obsidian/"
+   },
+   {
+    "claim": "Completion late 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.constructionenquirer.com/2024/04/18/work-starts-on-manchester-26-storey-obsidian-tower/"
+   },
+   {
+    "claim": "Salboy Limited is an active company with filed accounts",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/09123542"
+   },
+   {
+    "claim": "Delivered Local Blackfriars (2019)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.domisconstruction.co.uk/salboy-and-domis-top-out-at-obsidian/"
+   },
+   {
+    "claim": "Unit mix 31 studios, 93 1BR, 111 2BR, 15 3BR",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.placenorthwest.co.uk/planning-salford-says-yes-to-salboy-and-domis-26-storey-tower/"
+   },
+   {
+    "claim": "Prices from GBP 249,000",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.doranestates.co.uk/developments/manchester-developments/obsidian/"
+   },
+   {
+    "claim": "Protek new-build warranty",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vogueproperties.co.uk/developments/obsidian/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2014,
+   "developer_hq": "Salford, UK",
+   "developer_company": "Salboy Limited 09123542; SPV Trinity 2 Limited 13856903",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-04",
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 249000,
+   "price_max": null,
+   "currency": "GBP",
+   "deposit_pct": 25,
+   "payment_plan": "25% on exchange, 75% on completion (agents)",
+   "foreign_ownership": "999-year leasehold, no ground rent (agents)",
+   "rental_programme": "none; agents quote 6% projected gross yield",
+   "service_charge": "About GBP 4.90 per sq ft per year (agents); GBP 3,322 a year on a 678 sq ft 2BR (Savills listing)",
+   "brand": null,
+   "amenities": [
+    "gym",
+    "cinema room",
+    "private dining room",
+    "co-working",
+    "package store",
+    "ground floor restaurant"
+   ],
+   "lat": 53.487,
+   "lng": -2.253,
+   "permit_authority": "Salford City Council",
+   "brochure_url": null
+  },
+  "positives": [
+   "Structural frame complete (topped out Mar 2026), so build risk is late stage",
+   "Construction start and planning approval confirmed by independent trade press",
+   "999-year lease with no ground rent per agents"
+  ],
+  "flags": [],
+  "sources": [
+   "https://salboy.com/development/obsidian/",
+   "https://salboy.com/2026/03/salboy-and-domis-top-out-obsidian/",
+   "https://www.domisconstruction.co.uk/salboy-and-domis-top-out-at-obsidian/",
+   "https://www.domisconstruction.co.uk/project/obsidian/",
+   "https://www.placenorthwest.co.uk/planning-salford-says-yes-to-salboy-and-domis-26-storey-tower/",
+   "https://www.placenorthwest.co.uk/work-starts-on-salboys-26-storey-obsidian-tower/",
+   "https://www.constructionenquirer.com/2024/04/18/work-starts-on-manchester-26-storey-obsidian-tower/",
+   "https://find-and-update.company-information.service.gov.uk/company/13856903",
+   "https://find-and-update.company-information.service.gov.uk/company/13856903/charges",
+   "https://find-and-update.company-information.service.gov.uk/company/09123542",
+   "https://vogueproperties.co.uk/developments/obsidian/",
+   "https://amoka.co.uk/invest/obsidian",
+   "https://www.onthemarket.com/details/16482560/",
+   "https://www.doranestates.co.uk/developments/manchester-developments/obsidian/",
+   "https://northfoxproperty.co.uk/our-developments/obsidian-manchester/"
+  ],
+  "verified_score": 3
+ },
+ {
+  "slug": "contour-new-jackson-renaker",
+  "name": "Contour, New Jackson",
+  "developer": "Renaker (Renaker Build Limited; SPV New Jackson (Contour) Investments Limited)",
+  "area": "New Jackson, Great Jackson Street, Manchester M15",
+  "country": "United Kingdom",
+  "market": "Manchester",
+  "stage": "under construction",
+  "url": "https://renaker.com/developments/contour/",
+  "docs_url": "https://renaker.com/developments/contour/",
+  "permit_number": "Manchester City Council 132199/FO/2021",
+  "docs_listed": [
+   "unit-by-unit price list with sizes (2BR from GBP 430,000, 3BR from GBP 600,000; 1BR sold out)",
+   "floor plan image on each apartment page",
+   "Buildzone 10-year warranty plus 2-year developer warranty",
+   "leasehold 980 years from 1 Jan 2026, peppercorn ground rent",
+   "service charge est. GBP 3.50 psf, buildings insurance est. GBP 0.52 psf",
+   "GBP 3,000 non-refundable reservation fee, 10% deposit on exchange",
+   "construction updates 31 Mar 2026 (floor-by-floor) and 7 Sep 2026 (nearing completion)",
+   "completion November 2026"
+  ],
+  "note": "494-flat, 51-storey tower (Tower F2 of permission 132199/FO/2021, committee approval 17 Mar 2022) that Renaker says is nearing completion with first residents due November 2026; full price list, floor plans, Buildzone warranty and lease terms are published. The build is part-funded by a Greater Manchester Combined Authority loan, which has been the subject of a court challenge by a rival landowner (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 430000,
+   "currency": "GBP",
+   "title": "leasehold",
+   "lease_base": 980,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 6,
+   "completion": "2026-Q4",
+   "permit_claim": true,
+   "permit_number": "Manchester City Council 132199/FO/2021",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Renaker lists Three60 (443 flats, Q2 2024), The Blade (414, 2023), Elizabeth Tower (484, 2022), Victoria Residence (180, 2020) and Deansgate Square (1,508, 2019-2021) at New Jackson, and says it has delivered over 8,500 homes",
+   "units": 494,
+   "payment_plan": "GBP 3,000 non-refundable reservation, 10% on exchange, balance on completion",
+   "price_per_m2": 5592
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Manchester City Council committee report (17 Mar 2022) for application 132199/FO/2021, applicant Renaker Build Limited, two 51-storey towers of 494 homes each at Plot F, Great Jackson Street; Deloitte NMA letter states permission granted 1 Jul 2022",
+   "escrow": null,
+   "progress": "Renaker news 31 Mar 2026: frame complete, facade installed, plastering to Level 40; 7 Sep 2026: nearing completion, first residents in November",
+   "plans": "Each apartment page shows a floor plan image (e.g. type 2B.01 for apartment 402)",
+   "record": "Renaker lists completed towers with dates on its New Jackson page; Renaker Build Limited (06600257) active with accounts to 31 Oct 2025; SPV New Jackson (Contour) Investments Limited (15201834) active",
+   "returns": "Only 'c.6% projected yields based on local agent rental predictions'; no guarantee"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Full planning permission 132199/FO/2021 for two 51-storey towers (494 homes each), applicant Renaker Build Limited",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://democracy.manchester.gov.uk/documents/s33038/Great%20Jackson%20Street.pdf"
+   },
+   {
+    "claim": "Permission approved at committee 17 Mar 2022",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.placenorthwest.co.uk/planning-renakers-370m-manchester-towers-greenlit/"
+   },
+   {
+    "claim": "No on-site affordable homes (GBP 90,000 off-site contribution)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.manchestereveningnews.co.uk/news/greater-manchester-news/1500-flats-two-skyscrapers-approved-23424542"
+   },
+   {
+    "claim": "Selling SPV New Jackson (Contour) Investments Limited is registered and active",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/15201834"
+   },
+   {
+    "claim": "Contour land charged to Greater Manchester Combined Authority (Nov 2024), consistent with the GMCA New Jackson loan",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/15201834/charges"
+   },
+   {
+    "claim": "GMCA loans to Renaker SPVs found lawful by the Competition Appeal Tribunal and Court of Appeal",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.placenorthwest.co.uk/appeal-dismissed-over-gmcas-renaker-loans/"
+   },
+   {
+    "claim": "Frame complete and facade installed (Mar 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://renaker.com/news/contour-new-jackson-reaches-final-construction-phase-with-q4-completion-on-track/"
+   },
+   {
+    "claim": "Completion November 2026, ahead of schedule",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://renaker.com/news/contour-set-for-early-completion-at-new-jackson/"
+   },
+   {
+    "claim": "Renaker Build Limited active with filed accounts",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/06600257"
+   },
+   {
+    "claim": "Renaker has delivered over 8,500 homes",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://renaker.com/news/renaker-presents-west-gate-at-st-johns-waterside-a-new-riverside-neighbourhood-for-manchester-city-centre/"
+   },
+   {
+    "claim": "Buildzone 10-year warranty",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://renaker.com/apartment/contour-402/"
+   },
+   {
+    "claim": "Prices from GBP 430,000 for 2BR",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://renaker.com/developments/contour/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2006,
+   "developer_hq": "Manchester, UK",
+   "developer_company": "Renaker Build Limited 06600257 (planning applicant); New Jackson (Contour) Investments Limited 15201834",
+   "developer_projects_delivered": 6,
+   "developer_units_delivered": 8500,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": 0,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": 51.71,
+   "size_max_m2": 99.6,
+   "price_min": 307950,
+   "price_max": 600000,
+   "currency": "GBP",
+   "deposit_pct": 10,
+   "payment_plan": "GBP 3,000 reservation, 10% on exchange, balance on completion",
+   "foreign_ownership": "Leasehold 980 years from 1 Jan 2026, peppercorn ground rent; same terms for overseas buyers",
+   "rental_programme": "none; c.6% projected yield based on local agent predictions",
+   "service_charge": "Est. GBP 3.50 psf per year plus buildings insurance est. GBP 0.52 psf",
+   "brand": null,
+   "amenities": [
+    "residents' gym",
+    "co-working space",
+    "residents' lounge",
+    "private garden",
+    "basement parking (right to park GBP 30,000)",
+    "EV charging on request"
+   ],
+   "lat": 53.472,
+   "lng": -2.252,
+   "permit_authority": "Manchester City Council",
+   "brochure_url": null
+  },
+  "positives": [
+   "Full unit price list with sizes and a floor plan per apartment",
+   "Named 10-year warranty (Buildzone) and lease length published",
+   "Dated, detailed construction updates; building close to handover",
+   "Planning permission confirmed on the council's own committee report"
+  ],
+  "flags": [
+   {
+    "text": "Weis Group challenged the Greater Manchester Combined Authority's loans to Renaker SPVs for New Jackson and Trinity Islands; the Competition Appeal Tribunal (2025) and Court of Appeal (Jun 2026) ruled for GMCA, and Weis has sought permission to appeal to the Supreme Court",
+    "source": "https://www.bbc.co.uk/news/articles/cx4gq8rdz103o"
+   },
+   {
+    "text": "BBC reported that founder Daren Whitaker resigned as a Renaker director in November 2025, citing Companies House records",
+    "source": "https://www.bbc.co.uk/news/articles/cx4gq8rdz103o"
+   }
+  ],
+  "sources": [
+   "https://renaker.com/developments/contour/",
+   "https://renaker.com/apartment/contour-402/",
+   "https://renaker.com/apartment/contour-2511/",
+   "https://renaker.com/investors/",
+   "https://renaker.com/new-jackson/",
+   "https://renaker.com/news/contour-new-jackson-reaches-final-construction-phase-with-q4-completion-on-track/",
+   "https://renaker.com/news/contour-set-for-early-completion-at-new-jackson/",
+   "https://democracy.manchester.gov.uk/documents/s33038/Great%20Jackson%20Street.pdf",
+   "https://docs.planning.org.uk/20230816/27/RZ0YPUBCLTU00/1o80shfgwgvrj4g8.pdf",
+   "https://www.placenorthwest.co.uk/planning-renakers-370m-manchester-towers-greenlit/",
+   "https://www.manchestereveningnews.co.uk/news/greater-manchester-news/1500-flats-two-skyscrapers-approved-23424542",
+   "https://find-and-update.company-information.service.gov.uk/company/06600257",
+   "https://find-and-update.company-information.service.gov.uk/company/15201834",
+   "https://find-and-update.company-information.service.gov.uk/company/15201834/charges",
+   "https://www.placenorthwest.co.uk/appeal-dismissed-over-gmcas-renaker-loans/",
+   "https://www.bbc.co.uk/news/articles/cx4gq8rdz103o"
+  ],
+  "verified_score": 2
+ },
+ {
+  "slug": "w-residences-manchester-st-michaels-relentless-salboy",
+  "name": "W Residences Manchester (No.2 St Michael's)",
+  "developer": "Relentless Developments and Salboy (seller St Michaels UK PropCo 2 Limited)",
+  "area": "St Michael's, Jackson's Row, Manchester M2",
+  "country": "United Kingdom",
+  "market": "Manchester",
+  "stage": "under construction",
+  "url": "https://salboy.com/development/w-manchester-residences/",
+  "docs_url": "https://salboy.com/development/w-manchester-residences/",
+  "permit_number": "Manchester City Council 114664/FO/2016 (as varied, latest 137873/JO/2023)",
+  "docs_listed": [
+   "developer page: status 'Under Construction', branded W residences with hotel services",
+   "dated developer news (construction milestone Jun 2024, sales record Jul 2024, offices launch Mar 2026)",
+   "contractor progress reports: frame Level 29 (May 2026), Level 42 of 43 (Sep 2026)",
+   "Marriott licence disclaimer naming St Michaels UK PropCo2 Limited",
+   "agent price range GBP 803,000 to 6,000,000"
+  ],
+  "note": "Branded W Residences (217 per developer, 229 in the 2023 planning variation) on floors above a 162-room W Hotel in the 43-storey No.2 St Michael's tower, first marketed in Hong Kong in Nov 2023. Frame reached Level 42 of 43 in Sep 2026 and the hotel is due to open Q1 2027; no floor plans, deposit protection or residence completion date are published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 803000,
+   "currency": "GBP",
+   "title": "leasehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": true,
+   "permit_number": "Manchester City Council 114664/FO/2016 (as varied, latest 137873/JO/2023)",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "No.1 St Michael's office building (phase one) completed in 2025 (MEN, Wikipedia); Salboy says it has delivered over 3,250 homes; Relentless lists Hotel Football and the Stock Exchange Hotel",
+   "units": 217,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Manchester City Council committee report (8 Mar 2018) for application 114664/FO/2016 by Jacksons Row Developments Limited; Section 73 statement (Aug 2023) lists later consents 125549/JO/2019, 131612/JO/2021, 135827/JO/2022 and a new S73 raising flats from 213 to 229; a council record mirrored on PlanIndex refers to permission 137873/JO/2023",
+   "escrow": null,
+   "progress": "Domis May 2026 update (frame Level 29, facade Level 18) and Sep 2026 post (frame Level 42 of 43, facade Level 27); Place North West (Mar 2026) and MEN (Mar 2026) confirm the tower is under construction",
+   "plans": "No floor plans on the developer page",
+   "record": "No.1 St Michael's opened in 2025 (MEN); St Michaels UK PropCo 2 Limited (13994655) active with accounts filed to 30 Mar 2025",
+   "returns": "No yield or guarantee language on the developer page"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Original permission 114664/FO/2016 for St Michael's mixed-use scheme",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://democracy.manchester.gov.uk/Data/Planning%20and%20Highways%20Committee/20180308/Agenda/6._St_Michaels_Development.pdf"
+   },
+   {
+    "claim": "Tower consent varied in 2023 to add two residential floors (213 to 229 flats)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://docs.planning.org.uk/20230824/27/RZJMDXBCM2R00/k5iyblvuzrb4s5vw.pdf"
+   },
+   {
+    "claim": "217 W Residences in the tower",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://docs.planning.org.uk/20230824/27/RZJMDXBCM2R00/k5iyblvuzrb4s5vw.pdf"
+   },
+   {
+    "claim": "Seller St Michaels UK PropCo 2 Limited is registered and active",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/13994655"
+   },
+   {
+    "claim": "Phase 2 lease charged to CBRE Loan Services, Fred Done Property Trading Group and Manchester City Council (Feb 2025)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/13994655/charges"
+   },
+   {
+    "claim": "Tower under construction by Domis",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.placenorthwest.co.uk/next-75000-sq-ft-of-st-michaels-offices-comes-to-market/"
+   },
+   {
+    "claim": "Frame at Level 42 of 43 (Sep 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.linkedin.com/feed/update/urn:li:activity:7508812938628030464"
+   },
+   {
+    "claim": "W Hotel opens Q1 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.domisconstruction.co.uk/project/no-2-st-michaels-manchester/"
+   },
+   {
+    "claim": "Phase two scheduled to complete in 2026 (earlier reports) versus 2027 (later reports)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://en.wikipedia.org/wiki/St_Michael%27s,_Manchester"
+   },
+   {
+    "claim": "No.1 St Michael's (phase one) completed",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.manchestereveningnews.co.uk/news/greater-manchester-news/wanted-knock-down-now-gary-33560078"
+   },
+   {
+    "claim": "Prices from GBP 803,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://search.savills.com/property-detail/gbMNRDCSD240024"
+   },
+   {
+    "claim": "W marks used under licence from Marriott, which does not develop or sell the residences",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.domisconstruction.co.uk/project/no-2-st-michaels-manchester/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Manchester, UK",
+   "developer_company": "St Michaels UK PropCo 2 Limited 13994655 (seller per Marriott disclaimer); Jacksons Row Developments Limited 07431223 (planning applicant)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 3250,
+   "listed_or_audited": null,
+   "construction_start": "2023-01",
+   "handover_promised": "2027-Q1",
+   "original_handover": "2026",
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 803000,
+   "price_max": 6000000,
+   "currency": "GBP",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Leasehold (length not published); sold to overseas buyers including through Hong Kong launch events",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "W Residences (Marriott International, under licence)",
+   "amenities": [
+    "24-hour concierge",
+    "W hotel services",
+    "swimming pool",
+    "spa",
+    "gym",
+    "residents' lounge"
+   ],
+   "lat": 53.479,
+   "lng": -2.247,
+   "permit_authority": "Manchester City Council",
+   "brochure_url": null
+  },
+  "positives": [
+   "Planning history traceable on the council's committee papers and planning statements",
+   "Tower close to topping out with regular dated contractor updates",
+   "Selling SPV named in the brand disclaimer and active at Companies House"
+  ],
+  "flags": [],
+  "sources": [
+   "https://salboy.com/development/w-manchester-residences/",
+   "https://salboy.com/2026/03/premium-office-space-launched-at-no-2-st-michaels/",
+   "https://www.domisconstruction.co.uk/domis-construction-advances-delivery-at-w-manchester/",
+   "https://www.domisconstruction.co.uk/project/no-2-st-michaels-manchester/",
+   "https://www.linkedin.com/feed/update/urn:li:activity:7508812938628030464",
+   "https://www.placenorthwest.co.uk/next-75000-sq-ft-of-st-michaels-offices-comes-to-market/",
+   "https://www.manchestereveningnews.co.uk/news/greater-manchester-news/wanted-knock-down-now-gary-33560078",
+   "https://en.wikipedia.org/wiki/St_Michael%27s,_Manchester",
+   "https://prnewswire.com/apac/news-releases/st-michaels-phase-two-hosting-manchesters-first-branded-residences-the-w-residences-301980165.html",
+   "https://democracy.manchester.gov.uk/Data/Planning%20and%20Highways%20Committee/20180308/Agenda/6._St_Michaels_Development.pdf",
+   "https://docs.planning.org.uk/20230824/27/RZJMDXBCM2R00/k5iyblvuzrb4s5vw.pdf",
+   "https://planindex.co.uk/planning-applications/manchester/cdn-24-1100",
+   "https://find-and-update.company-information.service.gov.uk/company/13994655",
+   "https://find-and-update.company-information.service.gov.uk/company/13994655/charges",
+   "https://find-and-update.company-information.service.gov.uk/company/07431223",
+   "https://search.savills.com/property-detail/gbMNRDCSD240024"
+  ],
+  "verified_score": 3
+ },
+ {
+  "slug": "imperial-exchange-liverpool-seth-real-estate",
+  "name": "Imperial Exchange",
+  "developer": "Not named by the sales agent; planning applicant Seth Real Estate Ltd (sales by Falcon Partnerships)",
+  "area": "Exchange Street East / Dale Street, Liverpool L2",
+  "country": "United Kingdom",
+  "market": "Liverpool",
+  "stage": "off-plan",
+  "url": "https://falconpartnerships.co.uk/developments/imperial-exchange",
+  "docs_url": "https://falconpartnerships.co.uk/developments/imperial-exchange",
+  "permit_number": "Liverpool City Council 26F/1624 and 26/PCU/1639",
+  "docs_listed": [
+   "planning references 26F/1624 and 26/PCU/1639 (approved Aug 2026)",
+   "Phase 1 asking prices by apartment (1BR from GBP 198,000, 2BR from GBP 298,000)",
+   "size ranges 398 to 915 sq ft",
+   "999-year lease, short lets approved building-wide",
+   "indicative 8% gross yield, stated as not guaranteed",
+   "completion Q4 2028",
+   "floor plans, payment plan and vendor name only in a gated data pack"
+  ],
+  "note": "Conversion of the 10-storey former HMRC Imperial Court offices into 95 flats, approved by Liverpool City Council in Aug 2026 (26F/1624, 26/PCU/1639) for Seth Real Estate after a 106-flat version was refused on daylight grounds; the sales page does not name the developer and works still need Building Safety Regulator Gateway 2 approval before starting (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 198000,
+   "currency": "GBP",
+   "title": "leasehold",
+   "lease_base": 999,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 8,
+   "completion": "2028-Q4",
+   "permit_claim": true,
+   "permit_number": "Liverpool City Council 26F/1624 and 26/PCU/1639",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 95,
+   "payment_plan": "Reservation fee, deposit on exchange, balance on completion (amounts only in reservation agreement)",
+   "price_per_m2": 5211
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Sales page quotes 26F/1624 and 26/PCU/1639; Place North West, IN Site and Liverpool Echo (citing the council officer report) confirm approval in Aug 2026 for Seth Real Estate. Liverpool's planning portal was not reachable from our session",
+   "escrow": null,
+   "progress": "No construction yet; IN Site notes Gateway 2 approval from the Building Safety Regulator is needed before relevant building work starts",
+   "plans": "Floor plans are only in the gated data pack",
+   "record": "Sales page calls the developer 'established' but does not name it; the vendor is named only in the reservation agreement",
+   "returns": "Indicative 8% gross yield with explicit 'not guaranteed' wording"
+  },
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Planning approved Aug 2026 under 26F/1624 and 26/PCU/1639",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.placenorthwest.co.uk/imperial-court-conversion-clears-planning-hurdle/"
+   },
+   {
+    "claim": "95 apartments: 64 one-bed and 31 two-bed",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.liverpoolecho.co.uk/news/liverpool-news/former-liverpool-city-centre-hmrc-34471455"
+   },
+   {
+    "claim": "A three-bed apartment (4.06, 915 sq ft) is for sale",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.liverpoolecho.co.uk/news/liverpool-news/former-liverpool-city-centre-hmrc-34471455"
+   },
+   {
+    "claim": "Earlier 106-flat permitted development scheme was refused in May 2026 over daylight",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://insitemagazine.co.uk/imperial-court-conversion-clears-planning-hurdle/"
+   },
+   {
+    "claim": "Planning applicant Seth Real Estate Ltd is a registered active company",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/11564727"
+   },
+   {
+    "claim": "Sales agent Falcon Partnerships is an established business",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/17101070"
+   },
+   {
+    "claim": "Developer is established with a delivery track record",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://falconpartnerships.co.uk/developments/imperial-exchange"
+   },
+   {
+    "claim": "Building work can begin (Gateway 2 approval in place)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://insitemagazine.co.uk/imperial-court-conversion-clears-planning-hurdle/"
+   },
+   {
+    "claim": "Completion Q4 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://falconpartnerships.co.uk/developments/imperial-exchange"
+   },
+   {
+    "claim": "Short lets approved building-wide",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://falconpartnerships.co.uk/developments/imperial-exchange"
+   },
+   {
+    "claim": "About 50 to 51 basement parking spaces",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.liverpoolecho.co.uk/news/liverpool-news/former-liverpool-city-centre-hmrc-34471455"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2018,
+   "developer_hq": "Manchester, UK",
+   "developer_company": "Seth Real Estate Limited 11564727 (planning applicant per press; not named on sales page)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 37,
+   "size_max_m2": 85,
+   "price_min": 198000,
+   "price_max": null,
+   "currency": "GBP",
+   "deposit_pct": null,
+   "payment_plan": "Reservation, deposit on exchange, balance on completion; amounts only in reservation agreement",
+   "foreign_ownership": "999-year leasehold",
+   "rental_programme": "none; short lets approved per agent, indicative 8% gross yield",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "gym",
+    "co-working",
+    "residents' lounge",
+    "cinema room",
+    "music studio",
+    "basement parking"
+   ],
+   "lat": 53.408,
+   "lng": -2.99,
+   "permit_authority": "Liverpool City Council",
+   "brochure_url": null
+  },
+  "positives": [
+   "Planning references published and approval confirmed by independent press",
+   "Per-apartment asking prices and sizes shown on the sales page",
+   "Yield figure labelled indicative and not guaranteed"
+  ],
+  "flags": [
+   {
+    "text": "Liverpool Echo and Place North West reported that the council refused an earlier 106-flat version in 2026 over inadequate daylight; the approved 95-flat scheme includes rooms with only marginal daylight compliance per the officer report",
+    "source": "https://www.liverpoolecho.co.uk/news/liverpool-news/former-liverpool-city-centre-hmrc-34471455"
+   }
+  ],
+  "sources": [
+   "https://falconpartnerships.co.uk/developments/imperial-exchange",
+   "https://www.placenorthwest.co.uk/imperial-court-conversion-clears-planning-hurdle/",
+   "https://insitemagazine.co.uk/imperial-court-conversion-clears-planning-hurdle/",
+   "https://www.liverpoolecho.co.uk/news/liverpool-news/former-liverpool-city-centre-hmrc-34471455",
+   "https://www.broadgrove.co.uk/portfolio/imperial-court-liverpool/",
+   "https://vertapropertygroup.co.uk/portfolio/imperial-exchange-liverpool/",
+   "https://find-and-update.company-information.service.gov.uk/company/11564727",
+   "https://find-and-update.company-information.service.gov.uk/company/17101070"
+  ],
+  "verified_score": 1
+ }
+]

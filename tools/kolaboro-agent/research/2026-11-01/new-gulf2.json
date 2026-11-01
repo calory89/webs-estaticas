@@ -1322,5 +1322,2359 @@
    "https://tropicalriviera.com/the-great-escape-2-signature-residences-aida-oman/",
    "https://www.palmera.realestate/oman/guides/aida-yiti/"
   ]
+ },
+ {
+  "slug": "olive-farms-by-raya-jebel-sifah-muriya",
+  "name": "Olive Farms by Raya (Phase 2 and 3)",
+  "developer": "Muriya (Orascom Development Holding and OMRAN Group partnership)",
+  "area": "Raya, Jebel Sifah, Muscat Governorate",
+  "country": "Oman",
+  "market": "Oman",
+  "stage": "off-plan",
+  "url": "https://www.palmera.realestate/oman/property/olive-farms-jebel-sifah/",
+  "docs_url": "https://jebelsifah.com/real-estate/",
+  "permit_number": null,
+  "docs_listed": [
+   "1-3BR single-storey farmhouses 75 to 120 m2 BUA on 260 to 417 m2 plots",
+   "floor plans per type (agent page and brochure)",
+   "fact sheet with 3-year plan: 10% down, twelve quarterly 7.5% instalments",
+   "Phase 2 launch prices 1BR OMR 77,250, 2BR OMR 123,600",
+   "handover date not published"
+  ],
+  "note": "Farmhouse neighbourhood in the Jebel Sifah ITC by Muriya; Phase 1 (46 homes) sold out and Phase 2 launched in Jan 2026, with a Phase 3 brochure circulating by Oct 2026. No handover date, licence number, escrow or progress published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 77250,
+   "currency": "OMR",
+   "title": "freehold (ITC)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "CBNME (Feb 2025): Jebel Sifah has over 900 sold and delivered units, 115 beachfront units delivered in 2022 and 90 farmhouses handed over in 2024; Hawana Salalah over 1,000 units delivered",
+   "units": null,
+   "payment_plan": "10% on signing, then 7.5% every 3 months for 36 months, interest-free",
+   "price_per_m2": 1030
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence number published",
+   "escrow": "Nothing published",
+   "progress": "No handover date or construction updates (Tamlik: handover date not published)",
+   "plans": "Typical layouts for 1, 2 and 3BR on Palmera; brochure plan pages per Muscat Gates",
+   "record": "Delivered unit counts for Jebel Sifah reported by Construction Business News ME",
+   "returns": "No guarantee; one agent (opr.ae) shows '~7% ROI potential'"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Phase 2 launched Jan 2026 after Phase 1 sold out; 1BR from OMR 77,250, 2BR from OMR 123,600",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.muscatdaily.com/2026/01/22/jebel-sifah-launches-phase-2-of-olive-farms-by-raya/"
+   },
+   {
+    "claim": "Muriya is a partnership of Orascom Development and OMRAN",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://gulfnews.com/business/corporate-news/jebel-sifah-unveils-phase-2-of-olive-farms-by-raya-amid-record-demand-for-wellness-living-1.500415570"
+   },
+   {
+    "claim": "Jebel Sifah has over 900 sold and delivered units; 90 farmhouses handed over in 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.cbnme.com/news/hawana-salalah-jebel-sifah-redefining-omans-tourism-and-lifestyle/"
+   },
+   {
+    "claim": "Orascom Development operates Jebel Sifah and publishes audited FY2025 accounts",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.eqs-news.com/news/ad-hoc/orascom-development-holding-ag-publication-of-fy-2025-financial-statements-and-non-financial-report/9e3f856c-22a2-44dd-93b6-275a2660b381_en"
+   },
+   {
+    "claim": "Jebel Sifah is an ITC with freehold for all nationalities",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://jebelsifah.com/solaris/"
+   },
+   {
+    "claim": "Plot sizes 260-350 m2 (web) vs 310-417 m2 (Phase 3 brochure)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://muscatgates.com/olive-farms-phase-3-jebel-sifah-guide/"
+   },
+   {
+    "claim": "Starting price OMR 79,500 (Palmera) vs OMR 75,000 (developer site) vs 77,250 (press)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://jebelsifah.com/real-estate/"
+   },
+   {
+    "claim": "Handover date",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tamlik.om/itc/jebel-sifah/olive-farms"
+   },
+   {
+    "claim": "Escrow account for buyer payments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://jiwak.com/files/properties/11a1d41172036d38ad9ebde53ab47ea8cff80a23.pdf"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Muscat, Oman",
+   "developer_company": "Muriya Tourism Development (Orascom Development Holding AG and OMRAN Group)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 900,
+   "listed_or_audited": "Orascom Development Holding AG listed on SIX Swiss Exchange, audited FY2025 statements published 30 Mar 2026",
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR farmhouse",
+    "2BR farmhouse",
+    "3BR farmhouse"
+   ],
+   "size_min_m2": 75,
+   "size_max_m2": 120,
+   "price_min": 77250,
+   "price_max": null,
+   "currency": "OMR",
+   "deposit_pct": 10,
+   "payment_plan": "10% + 12 x 7.5% quarterly over 36 months",
+   "foreign_ownership": "freehold in Jebel Sifah ITC",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private gardens",
+    "optional private pool",
+    "kids splash zone",
+    "nature playgrounds",
+    "walking paths",
+    "marina",
+    "9-hole golf",
+    "beach"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ministry of Housing and Urban Planning (ITC)",
+   "brochure_url": "https://jiwak.com/files/properties/11a1d41172036d38ad9ebde53ab47ea8cff80a23.pdf"
+  },
+  "verified_score": 1,
+  "positives": [
+   "Developer with a verifiable delivery record in the same destination",
+   "Listed parent publishes audited accounts",
+   "Low entry price and interest-free 3-year plan"
+  ],
+  "flags": [],
+  "sources": [
+   "https://jebelsifah.com/real-estate/",
+   "https://jebelsifah.com/solaris/",
+   "https://www.palmera.realestate/oman/property/olive-farms-jebel-sifah/",
+   "https://tamlik.om/itc/jebel-sifah/olive-farms",
+   "https://jiwak.com/files/properties/11a1d41172036d38ad9ebde53ab47ea8cff80a23.pdf",
+   "https://opr.ae/projects/olive-farms-muriya-jebel-sifah-raya-oman",
+   "https://muscatgates.com/olive-farms-phase-3-jebel-sifah-guide/",
+   "https://www.muscatdaily.com/2026/01/22/jebel-sifah-launches-phase-2-of-olive-farms-by-raya/",
+   "https://gulfnews.com/business/corporate-news/jebel-sifah-unveils-phase-2-of-olive-farms-by-raya-amid-record-demand-for-wellness-living-1.500415570",
+   "https://www.cbnme.com/news/hawana-salalah-jebel-sifah-redefining-omans-tourism-and-lifestyle/",
+   "https://www.eqs-news.com/news/ad-hoc/orascom-development-holding-ag-publication-of-fy-2025-financial-statements-and-non-financial-report/9e3f856c-22a2-44dd-93b6-275a2660b381_en"
+  ]
+ },
+ {
+  "slug": "perlita-gardens-udc",
+  "name": "Perlita Gardens",
+  "developer": "United Development Company (UDC; QSE-listed)",
+  "area": "The Pearl Island, near Medina Centrale, Doha",
+  "country": "Qatar",
+  "market": "Qatar",
+  "stage": "off-plan",
+  "url": "https://thepeninsulaqatar.com/article/28/10/2026/udc-unveils-perlita-gardens-and-announces-limited-time-crystal-residence-sales-offer-at-cityscape-qatars-opening-day",
+  "docs_url": "https://udcqatar.com/Media-Room/Press-Releases/EGM",
+  "permit_number": null,
+  "docs_listed": [
+   "150 standalone six-bedroom villas in seven typologies",
+   "masterplan unveiled at Cityscape Qatar Oct 2026",
+   "Phase One limited release and expressions of interest",
+   "in-house payment plan with Commercial Bank and Dukhan Bank mortgages (terms not published)",
+   "build period about three years from start of construction",
+   "demolition and enabling works completed (June 2026 update)"
+  ],
+  "note": "Gated compound of about 150 villas on a Pearl Island site UDC bought for QAR 625m (approved at its Nov 2025 EGM, finalised Feb 2026); demolition and enabling works were completed by June 2026 and Phase One sales opened at Cityscape Qatar in Oct 2026. No prices, plans, permit or escrow details published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "QAR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "UDC is master developer of The Pearl Island and Gewan Island; Crystal Residence on Gewan Island is a completed development (The Peninsula, Oct 2026)",
+   "units": 150,
+   "payment_plan": "in-house plan, terms not published",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building permit or off-plan registration number published",
+   "escrow": "Nothing published",
+   "progress": "Peninsula (23 Jun 2026): UDC completed initial demolition and enabling works since start of year",
+   "plans": "Typologies described, no floor plans found",
+   "record": "UDC's completed Pearl Island and Gewan Island developments (Crystal Residence completed)",
+   "returns": "No guaranteed returns"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "UDC shareholders approved purchase of Perlita Villas for QAR 625m (EGM 25 Nov 2025, auditors EY present)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://thepeninsulaqatar.com/article/26/11/2025/extraordinary-general-assembly-meeting-of-united-development-company-approves-the-purchase-of-perlita-villas-project-and-amends-its-articles-of-association"
+   },
+   {
+    "claim": "Purchase finalised Feb 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.marketscreener.com/news/united-development-finalizes-purchase-of-perlita-villas-project-for-qar-625-mln-ce7e5adddd8bf122"
+   },
+   {
+    "claim": "Demolition and enabling works completed by June 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://thepeninsulaqatar.com/article/23/06/2026/udc-confirms-perlita-gardens-redevelopment-progress-at-the-pearl-island"
+   },
+   {
+    "claim": "150 six-bedroom villas, Phase One sales launched Oct 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.qatarliving.com/en/article/udc-unveils-perlita-gardens-and-announces-limited-time-crystal-residence-sales-offer-at-cityscape-qatar-s-opening-day"
+   },
+   {
+    "claim": "Developer listed on Qatar Stock Exchange since 2003, total assets QAR 18.5bn (Sep 2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://jaziranewswire.com/udc-approves-qr-625-million-acquisition-of-perlita-villas-project/"
+   },
+   {
+    "claim": "Build period about three years from construction start",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thepeninsulaqatar.com/article/28/10/2026/udc-unveils-perlita-gardens-and-announces-limited-time-crystal-residence-sales-offer-at-cityscape-qatars-opening-day"
+   },
+   {
+    "claim": "The Pearl Island is a freehold zone for non-Qataris",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.fgrealty.qa/landing/crystal-residence"
+   },
+   {
+    "claim": "Prices and payment plan",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thepeninsulaqatar.com/article/29/10/2026/perlita-gardens-a-new-residential-lifestyle"
+   },
+   {
+    "claim": "Escrow account under Qatar off-plan rules",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://udcqatar.com/Media-Room/Press-Releases/EGM"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1999,
+   "developer_hq": "Doha, Qatar",
+   "developer_company": "United Development Company Q.P.S.C.",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Qatar Stock Exchange (listed 2003), auditor Ernst & Young",
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "6BR villa"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "QAR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold (The Pearl Island designated zone, per agents)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pools",
+    "majlis areas",
+    "staff accommodation",
+    "gym areas",
+    "gated compound",
+    "Pearl Island retail and marina access"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ministry of Municipality; Real Estate Regulatory Authority (Aqarat) for off-plan sales",
+   "brochure_url": null
+  },
+  "verified_score": 2,
+  "positives": [
+   "Listed developer with shareholder-approved land purchase",
+   "Site works confirmed in press",
+   "Established master developer of The Pearl"
+  ],
+  "flags": [],
+  "sources": [
+   "https://udcqatar.com/Media-Room/Press-Releases/EGM",
+   "https://thepeninsulaqatar.com/article/26/11/2025/extraordinary-general-assembly-meeting-of-united-development-company-approves-the-purchase-of-perlita-villas-project-and-amends-its-articles-of-association",
+   "https://www.marketscreener.com/news/united-development-finalizes-purchase-of-perlita-villas-project-for-qar-625-mln-ce7e5adddd8bf122",
+   "https://thepeninsulaqatar.com/article/23/06/2026/udc-confirms-perlita-gardens-redevelopment-progress-at-the-pearl-island",
+   "https://thepeninsulaqatar.com/article/28/10/2026/udc-unveils-perlita-gardens-and-announces-limited-time-crystal-residence-sales-offer-at-cityscape-qatars-opening-day",
+   "https://thepeninsulaqatar.com/article/29/10/2026/perlita-gardens-a-new-residential-lifestyle",
+   "https://www.qatarliving.com/en/article/udc-unveils-perlita-gardens-and-announces-limited-time-crystal-residence-sales-offer-at-cityscape-qatar-s-opening-day",
+   "https://jaziranewswire.com/udc-approves-qr-625-million-acquisition-of-perlita-villas-project/",
+   "https://www.fgrealty.qa/landing/crystal-residence"
+  ]
+ },
+ {
+  "slug": "via-doro-mazaya-real-estate",
+  "name": "Via D'oro",
+  "developer": "Mazaya Real Estate Development Q.P.S.C. (QSE-listed), with a strategic partner",
+  "area": "Qetaifan Island, Lusail",
+  "country": "Qatar",
+  "market": "Qatar",
+  "stage": "under construction",
+  "url": "https://www.propertyfinder.qa/en/new-projects/mazaya-real-estate/via-doro",
+  "docs_url": "https://mazayaqatar.com/wp-content/uploads/2025/10/Q3-IRP-EN-compressed.pdf",
+  "permit_number": null,
+  "docs_listed": [
+   "34 fully furnished G+1+penthouse 4BR villas, BUA 290.31 m2",
+   "launch price QAR 4.25M to 4.3M",
+   "payment plan 60% during construction, 40% on handover",
+   "construction started 2 Feb 2026, expected completion 31 Mar 2028 (Property Finder)",
+   "expected handover 2028 in Mazaya investor presentation"
+  ],
+  "note": "Gated compound of 34 furnished villas on Qetaifan Island by Qatar-listed Mazaya, which describes it in its Q3 2025 investor presentation and 2025 annual report; Property Finder shows construction started Feb 2026 with completion March 2028. Mazaya had not yet handed over its first projects (Vera and Voya towers) at the time of its 2025 report (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 4250000,
+   "currency": "QAR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 34,
+   "payment_plan": "60% during construction, 40% on handover",
+   "price_per_m2": 14640
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit or Aqarat registration number on Mazaya or Property Finder",
+   "escrow": "Nothing published",
+   "progress": "Only a construction start date (2 Feb 2026) on Property Finder, no figure or dated photos",
+   "plans": "Property Finder layout table has an empty floor plan column",
+   "record": "Mazaya 2025 annual report: preparing to hand over its first two residential projects (Vera, Voya) in coming months",
+   "returns": "No guaranteed returns"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "34 villas, G+1+PH, 4BR, BUA 290.31 m2, expected handover 2028",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://mazayaqatar.com/wp-content/uploads/2025/10/Q3-IRP-EN-compressed.pdf"
+   },
+   {
+    "claim": "Project launched Oct 2025 by Mazaya Real Estate Development",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.marketscreener.com/news/mazaya-real-estate-development-launches-via-d-oro-project-in-lusail-city-ce7d5adad88af221"
+   },
+   {
+    "claim": "Developed with a strategic partner",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://mazayaqatar.com/wp-content/uploads/2026/03/web_FS_2025_Eng.pdf"
+   },
+   {
+    "claim": "Construction started 2 Feb 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.qa/en/new-projects/mazaya-real-estate/via-doro"
+   },
+   {
+    "claim": "Investor presentation (Oct 2025) lists project as under construction while launch was the same month",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://mazayaqatar.com/wp-content/uploads/2025/10/Q3-IRP-EN-compressed.pdf"
+   },
+   {
+    "claim": "Mazaya has delivered completed residential projects",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://mazayaqatar.com/wp-content/uploads/2026/03/web_FS_2025_Eng.pdf"
+   },
+   {
+    "claim": "Freehold ownership for foreigners on Qetaifan Island",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.qa/en/new-projects/mazaya-real-estate/via-doro"
+   },
+   {
+    "claim": "Starting price QAR 4.25M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.qa/en/new-projects/dev/mazaya-real-estate/lusail/qetaifan-islands"
+   },
+   {
+    "claim": "Escrow account for off-plan payments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.qa/en/new-projects/mazaya-real-estate/via-doro"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2008,
+   "developer_hq": "Doha, Qatar",
+   "developer_company": "Mazaya Real Estate Development Q.P.S.C.",
+   "developer_projects_delivered": 0,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Qatar Stock Exchange; audited 2025 financial statements published Mar 2026",
+   "construction_start": "2026-02",
+   "handover_promised": "2028-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "4BR villa"
+   ],
+   "size_min_m2": 290.31,
+   "size_max_m2": 290.31,
+   "price_min": 4250000,
+   "price_max": null,
+   "currency": "QAR",
+   "deposit_pct": null,
+   "payment_plan": "60/40",
+   "foreign_ownership": "freehold (portal statement)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "gated compound",
+    "private gardens",
+    "terraces",
+    "fully furnished",
+    "communal amenities"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Real Estate Regulatory Authority (Aqarat), Ministry of Municipality",
+   "brochure_url": null
+  },
+  "verified_score": 1,
+  "positives": [
+   "Listed developer that reports the project in investor materials and audited annual report",
+   "Small, clearly defined scheme of 34 villas"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.propertyfinder.qa/en/new-projects/mazaya-real-estate/via-doro",
+   "https://www.propertyfinder.qa/en/new-projects/dev/mazaya-real-estate/lusail/qetaifan-islands",
+   "https://mazayaqatar.com/wp-content/uploads/2025/10/Q3-IRP-EN-compressed.pdf",
+   "https://mazayaqatar.com/wp-content/uploads/2026/03/web_FS_2025_Eng.pdf",
+   "https://www.marketscreener.com/news/mazaya-real-estate-development-launches-via-d-oro-project-in-lusail-city-ce7d5adad88af221",
+   "https://www.immobilier.fm/mazaya-real-estate-development-devoile-son-projet-prestigieux-via-doro-a-lusail-city"
+  ]
+ },
+ {
+  "slug": "sea-la-vie-qatar-dar-global",
+  "name": "Sea La Vie Qatar",
+  "developer": "Dar Global (LSE: DAR)",
+  "area": "Qetaifan Island North, Lusail",
+  "country": "Qatar",
+  "market": "Qatar",
+  "stage": "off-plan",
+  "url": "https://www.omniacapitalgroup.com/en/developments/sea-la-vie-qetaifan-island-north",
+  "docs_url": "https://preprod.darglobal.co.uk/sea-la-vie",
+  "permit_number": null,
+  "docs_listed": [
+   "1BR plus den apartments in 14 layouts, 79 to 111 m2 internal, 88 to 253 m2 total",
+   "price from QAR 1,874,950",
+   "payment plan 20% booking, six 10% instalments to month 36, 20% on completion",
+   "completion June 2030",
+   "1% registration fee and estimated service charge QAR 12-20 per m2 (factsheet via agent)",
+   "floor plans per type on request"
+  ],
+  "note": "Five-floor block of one-bedroom-plus-den apartments on the Qetaifan Island North marina, launched by London-listed Dar Global in May 2026 with completion targeted June 2030; status 'Under Development'. No permit, escrow or progress published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1874950,
+   "currency": "QAR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Dar Global H1 2024 results presentation: completion and ongoing handover of Urban Oasis (Dubai)",
+   "units": null,
+   "payment_plan": "20% on booking, 10% every 6 months to month 36, 20% on completion",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No Aqarat or building permit number",
+   "escrow": "Agent says payments go to the developer's account named in sale documents; no escrow named",
+   "progress": "Status 'Under Development' only",
+   "plans": "Agent Omnia lists 14 layout types with floor plan links and sizes",
+   "record": "Dar Global LSE results name completed projects",
+   "returns": "Developer tagline 'Pleasure. Returns or both' but no guaranteed figure; Omnia states it does not guarantee yield"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Launched May 2026, from about QAR 1.8M, completion June 2030",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.propertywire.com/news/middle-east/dar-global-launches-waterfront-apartments-in-qetaifan-island/"
+   },
+   {
+    "claim": "Starting price QAR 1,874,950 (Omnia) vs QAR 1,924,470 (Dariva)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://dariva.com.sa/en/projects/sea-la-vie"
+   },
+   {
+    "claim": "Qetaifan Island North is within Lusail's freehold area, 100% foreign ownership",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.omniacapitalgroup.com/en/developments/sea-la-vie-qetaifan-island-north"
+   },
+   {
+    "claim": "Developer is London-listed with audited accounts",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.londonstockexchange.com/en/news/article/DAR/full-year-results/17497067"
+   },
+   {
+    "claim": "Dar Global delivered Urban Oasis in Dubai",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://cdn.darglobal.co.uk/Dar_Global_1_H24_Results_Presentation_FINAL_7219dc6c0f.pdf"
+   },
+   {
+    "claim": "Unit sizes 70 to 253 m2 (developer) vs 88 to 253 m2 (press)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://preprod.darglobal.co.uk/sea-la-vie"
+   },
+   {
+    "claim": "Construction started",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://preprod.darglobal.co.uk/sea-la-vie"
+   },
+   {
+    "claim": "Escrow account",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.omniacapitalgroup.com/en/developments/sea-la-vie-qetaifan-island-north"
+   },
+   {
+    "claim": "Purchase supports Qatar residency application",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertywire.com/news/middle-east/dar-global-launches-waterfront-apartments-in-qetaifan-island/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2017,
+   "developer_hq": "London, UK",
+   "developer_company": "Dar Global PLC",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "London Stock Exchange (DAR)",
+   "construction_start": null,
+   "handover_promised": "2030-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR plus den"
+   ],
+   "size_min_m2": 79,
+   "size_max_m2": 253,
+   "price_min": 1874950,
+   "price_max": null,
+   "currency": "QAR",
+   "deposit_pct": 20,
+   "payment_plan": "20/60/20",
+   "foreign_ownership": "freehold, 100% foreign ownership (developer and agents)",
+   "rental_programme": null,
+   "service_charge": "estimated QAR 12-20 per m2 (factsheet via agent)",
+   "brand": null,
+   "amenities": [
+    "infinity pool",
+    "fitness centre",
+    "landscaped courtyard",
+    "24-hour reception",
+    "retail",
+    "residents parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Real Estate Regulatory Authority (Aqarat)",
+   "brochure_url": null
+  },
+  "verified_score": 1,
+  "positives": [
+   "LSE-listed developer",
+   "Detailed per-layout sizes and full fee disclosure (registration and service charge estimates)",
+   "Time-based payment plan with 20% on completion"
+  ],
+  "flags": [],
+  "sources": [
+   "https://preprod.darglobal.co.uk/sea-la-vie",
+   "https://www.omniacapitalgroup.com/en/developments/sea-la-vie-qetaifan-island-north",
+   "https://www.omniacapitalgroup.com/en/developments/sea-la-vie-qetaifan-island-north/1-bedroom-apartments",
+   "https://www.propertywire.com/news/middle-east/dar-global-launches-waterfront-apartments-in-qetaifan-island/",
+   "https://dariva.com.sa/en/projects/sea-la-vie",
+   "https://www.qatarliving.com/en/properties/sale/residential/apartment/high_end_luxury_flat_for_sale_flexible_payment/314584",
+   "https://www.londonstockexchange.com/en/news/article/DAR/full-year-results/17497067",
+   "https://cdn.darglobal.co.uk/Dar_Global_1_H24_Results_Presentation_FINAL_7219dc6c0f.pdf"
+  ]
+ },
+ {
+  "slug": "skala-villas-north-ariane-real-estate",
+  "name": "Skala Villas North",
+  "developer": "Ariane Real Estate",
+  "area": "Qetaifan Island, Lusail",
+  "country": "Qatar",
+  "market": "Qatar",
+  "stage": "under construction",
+  "url": "https://www.propertyfinder.qa/en/plp/buy/townhouse-for-sale-lusail-qetaifan-islands-skala-villas-60501443.html",
+  "docs_url": "https://www.arianerealestate.com/projects/vive-hotel-apartments",
+  "permit_number": null,
+  "docs_listed": [
+   "furnished 3BR townhouses and villas, about 277 to 370 m2",
+   "first-sale prices from about QAR 4.8M (agents)",
+   "0% or 2% down payment, interest-free plan up to 9 years / until end of 2034",
+   "handover end of 2027 (agent)",
+   "developer construction updates page with 360 drone updates dated May and June 2026",
+   "Skala Villa project update page dated Nov 2024"
+  ],
+  "note": "Beachfront townhouses and villas on Qetaifan Island marketed by Ariane with a 0% down, nine-year interest-free plan that runs years past the end-2027 handover quoted by agents; the developer posts dated drone construction updates but no figure, permit, escrow or delivered-project record (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 4800000,
+   "currency": "QAR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": "0% down (offer to 30 Sep 2026) or 2% down, instalments interest-free over up to 9 years; one agent shows 2/48/30/20 with 20% post-handover",
+   "price_per_m2": 17600
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit or Aqarat number",
+   "escrow": "Nothing published",
+   "progress": "Ariane construction-updates page lists 360 drone updates dated May and June 2026 (not labelled per project in text); Skala Villa update dated Nov 2024",
+   "plans": "Agent pages reference floor plans but none were visible in text",
+   "record": "Developer page lists 283 units and 71,398 m2 across projects without completions; Vive Hotel Apartments still due Dec 2026",
+   "returns": "No guaranteed returns; agents mention 'capital appreciation potential'"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "0% down payment and 9-year interest-free plan, offer valid to 30 Sep 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ae.linkedin.com/posts/arianerealestate_arianerealestate-skalavillas-qetaifanisland-activity-7486808813010837504-Did-"
+   },
+   {
+    "claim": "Handover end of 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.qa/en/plp/buy/townhouse-for-sale-lusail-qetaifan-islands-skala-villas-60501443.html"
+   },
+   {
+    "claim": "Starting price QAR 4.8M (agents) vs QAR 6.2M (The Pearl Gates)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.thepearlgates.com/buy-new-projects-in-qatar/skala-villas-qetaifan-island-lusail-city-qatar/"
+   },
+   {
+    "claim": "Construction under way with drone updates May-June 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.arianerealestate.com/construction-updates"
+   },
+   {
+    "claim": "Freehold for Qatari and non-Qatari buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.qa/en/plp/buy/townhouse-for-sale-lusail-qetaifan-islands-skala-villas-59721398.html"
+   },
+   {
+    "claim": "Agent page describes 'three apartment towers' with Damac Hills views (copy error)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.thepearlgates.com/buy-new-projects-in-qatar/skala-villas-qetaifan-island-lusail-city-qatar/"
+   },
+   {
+    "claim": "Developer has completed projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.arianerealestate.com/projects/vive-hotel-apartments"
+   },
+   {
+    "claim": "Escrow account for buyer payments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.arianerealestate.com/projects/vive-hotel-apartments"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Doha, Qatar",
+   "developer_company": "Ariane Real Estate",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR townhouse",
+    "3BR villa",
+    "4BR villa"
+   ],
+   "size_min_m2": 277,
+   "size_max_m2": 370,
+   "price_min": 4800000,
+   "price_max": 10200000,
+   "currency": "QAR",
+   "deposit_pct": 0,
+   "payment_plan": "0-2% down, up to 9 years interest-free",
+   "foreign_ownership": "freehold (agent statements)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "beach access",
+    "clubhouse",
+    "pool",
+    "gym",
+    "kids play area",
+    "private jacuzzi",
+    "24/7 security"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Real Estate Regulatory Authority (Aqarat)",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "Developer publishes dated drone construction updates",
+   "Long interest-free payment plan"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.arianerealestate.com/projects/vive-hotel-apartments",
+   "https://www.arianerealestate.com/construction-updates",
+   "https://projectupdates.arianerealestate.com/project-updates/project-updates-skala-villa",
+   "https://ae.linkedin.com/posts/arianerealestate_arianerealestate-skalavillas-qetaifanisland-activity-7486808813010837504-Did-",
+   "https://www.propertyfinder.qa/en/plp/buy/townhouse-for-sale-lusail-qetaifan-islands-skala-villas-60501443.html",
+   "https://www.propertyfinder.qa/en/plp/buy/townhouse-for-sale-lusail-qetaifan-islands-skala-villas-59721398.html",
+   "https://www.propertyfinder.qa/ar/plp/buy/villa-for-sale-lusail-qetaifan-islands-skala-villas-59780692.html",
+   "https://www.thepearlgates.com/buy-new-projects-in-qatar/skala-villas-qetaifan-island-lusail-city-qatar/"
+  ]
+ },
+ {
+  "slug": "melia-residences-bahrain-infracorp",
+  "name": "Meliá Residences Bahrain (Meliá Beachfront)",
+  "developer": "Amwaj Beachfront, an Infracorp company, with Meliá Hotels International",
+  "area": "Amwaj Islands entrance, Muharraq Governorate",
+  "country": "Bahrain",
+  "market": "Bahrain",
+  "stage": "under construction",
+  "url": "https://www.propertyfinder.bh/en/new-projects/infracorp/melia-beachfront-hotels-and-resorts",
+  "docs_url": "https://infracorp.bh/own-your-unit-at-melia-residences-bahrain-with-an-annual-return-of-up-to-7-sales-officially-launch-for-melia-residences-bahrain-in-amwaj-islands/",
+  "permit_number": null,
+  "docs_listed": [
+   "three 22-storey towers with about 700 residential and hotel units plus 94 townhouses",
+   "brochure 2026 (Infracorp)",
+   "Q2 2026 progress report: 62% project completion, west tower facade closure",
+   "launch price BHD 70,000",
+   "handover Q4 2027 / December 2027",
+   "'expected annual returns of up to 7%'"
+  ],
+  "note": "Meliá-branded beachfront towers at the Amwaj Islands entrance; Infracorp's Q2 2026 progress report states 62% overall completion and a Q4 2027 handover target, and the May 2026 sales launch advertises expected annual returns of up to 7%. Three different payment plans are published and no RERA licence number or escrow bank is shown (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 70000,
+   "currency": "BHD",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 7,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 62,
+   "progress_updates": true,
+   "developer_delivered": "ME Construction News (Jun 2023): Infracorp completed and delivered phase one of California Village residences in Dubai and completed the first phase of the Marina at Bahrain Harbour",
+   "units": 700,
+   "payment_plan": "20% down, 30% during construction, 10% on handover, 40% post-handover (Property Finder); 15/70/15 over 7 years (agent site); 20% down then balance over more than four years (launch release)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No RERA off-plan licence number published",
+   "escrow": "No escrow bank or account published",
+   "progress": "Infracorp Progress Report Q2 2026: 62% completion, component percentages",
+   "plans": "Brochure text found but no unit plans seen",
+   "record": "Infracorp delivery of California Village phase one (Dubai) and Bahrain Harbour Marina phase one reported by ME Construction News",
+   "returns": "Launch release: 'expected annual returns of up to 7%' via Meliá leasing; not described as guaranteed"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project 62% complete (Q2 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://infracorp.bh/wp-content/uploads/2026/07/Infracorp-Progress-Report-Q2-2026.pdf"
+   },
+   {
+    "claim": "Cyprus Cybarco Tabet appointed for finishing works on the 240-unit west tower (Jul 2025)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://infracorp.bh/comprising-240-residential-units-cyprus-cybarco-tabet-cct-appointed-as-main-contractor-for-finishing-works-at-the-melia-beachfront-development/"
+   },
+   {
+    "claim": "Sales launched May 2026 with expected annual returns up to 7%",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.zawya.com/en/press-release/companies-news/sales-officially-launch-for-melia-residences-bahrain-in-amwaj-islands-343153"
+   },
+   {
+    "claim": "Handover Q4 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.bh/en/new-projects/infracorp/melia-beachfront-hotels-and-resorts"
+   },
+   {
+    "claim": "Payment plan (three different versions published)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://meliabahrain.com/"
+   },
+   {
+    "claim": "Freehold for all nationalities",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://meliabahrain.com/"
+   },
+   {
+    "claim": "RERA off-plan licence and escrow account (required by law: 20% of project value deposited in escrow)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.bahrain.bh/wps/portal/en/BNP/ServicesCatalogue/GSX-UI-PServiceDetails?psID=1645"
+   },
+   {
+    "claim": "Infracorp has delivered completed projects",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://meconstructionnews.com/57498/200mn-marina-bay-project-set-for-bahrain"
+   },
+   {
+    "claim": "Starting price BHD 70,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.bh/en/new-projects/infracorp/melia-beachfront-hotels-and-resorts"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2021,
+   "developer_hq": "Manama, Bahrain",
+   "developer_company": "Amwaj Beachfront (Infracorp B.S.C.(c) group)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "townhouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 70000,
+   "price_max": null,
+   "currency": "BHD",
+   "deposit_pct": 20,
+   "payment_plan": "20/30/10/40 (Property Finder)",
+   "foreign_ownership": "freehold",
+   "rental_programme": "Meliá-managed hospitality and leasing, expected returns up to 7% a year",
+   "service_charge": null,
+   "brand": "Meliá",
+   "amenities": [
+    "private beach",
+    "Beso Beach club",
+    "wellness facilities",
+    "gym",
+    "hotel services",
+    "24-hour concierge"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Real Estate Regulatory Authority (RERA) Bahrain",
+   "brochure_url": "https://infracorp.bh/wp-content/uploads/2026/07/Melia-Beachfront-Brochure-2026.pdf"
+  },
+  "verified_score": 1,
+  "positives": [
+   "Developer publishes a percentage progress report with component breakdown",
+   "International hotel operator attached"
+  ],
+  "flags": [],
+  "sources": [
+   "https://infracorp.bh/own-your-unit-at-melia-residences-bahrain-with-an-annual-return-of-up-to-7-sales-officially-launch-for-melia-residences-bahrain-in-amwaj-islands/",
+   "https://infracorp.bh/wp-content/uploads/2026/07/Infracorp-Progress-Report-Q2-2026.pdf",
+   "https://infracorp.bh/wp-content/uploads/2026/07/Melia-Beachfront-Brochure-2026.pdf",
+   "https://infracorp.bh/comprising-240-residential-units-cyprus-cybarco-tabet-cct-appointed-as-main-contractor-for-finishing-works-at-the-melia-beachfront-development/",
+   "https://www.zawya.com/en/press-release/companies-news/sales-officially-launch-for-melia-residences-bahrain-in-amwaj-islands-343153",
+   "https://www.propertyfinder.bh/en/new-projects/infracorp/melia-beachfront-hotels-and-resorts",
+   "https://meliabahrain.com/",
+   "https://www.bahrain.bh/wps/portal/en/BNP/ServicesCatalogue/GSX-UI-PServiceDetails?psID=1645",
+   "https://meconstructionnews.com/57498/200mn-marina-bay-project-set-for-bahrain"
+  ]
+ },
+ {
+  "slug": "marina-bay-reef-island-infracorp",
+  "name": "Marina Bay (Reef Island)",
+  "developer": "Infracorp",
+  "area": "Reef Island, Manama, Capital Governorate",
+  "country": "Bahrain",
+  "market": "Bahrain",
+  "stage": "under construction",
+  "url": "https://www.propertyfinder.bh/en/new-projects/infracorp/marina-bay",
+  "docs_url": "https://infracorp.bh/infracorp-launches-marina-bay-bahrains-newest-luxury-residential-development-on-reef-island-with-200-million-in-investments/",
+  "permit_number": null,
+  "docs_listed": [
+   "villas (4BR 652 to 1,076 m2), duplexes and 2BR apartments",
+   "launch price BHD 272,875",
+   "payment plan 10% down, 90% during construction",
+   "construction started Aug 2024, completion March 2027 (Property Finder)",
+   "Q2 2026 progress report: 70% completion, building and villa structure 100%, infrastructure 76%",
+   "mock-up villa completed"
+  ],
+  "note": "US$200m villa and duplex community on a 34,000 m2 Reef Island plot; Infracorp's July 2026 report puts it at 70% complete with structures finished, against a March 2027 completion date, and listed Bahraini developer Naseej agreed in Nov 2025 to buy a block of units. No RERA licence number, escrow bank or floor plans published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 272875,
+   "currency": "BHD",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 70,
+   "progress_updates": true,
+   "developer_delivered": "ME Construction News (Jun 2023): Infracorp completed and delivered phase one of California Village residences in Dubai and completed the first phase of the Marina at Bahrain Harbour",
+   "units": null,
+   "payment_plan": "10% down payment, 90% during construction",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No RERA off-plan licence number",
+   "escrow": "Not published",
+   "progress": "Infracorp Progress Report Q2 2026 (July 2026): 70% completion with component figures",
+   "plans": "Only unit sizes on Property Finder",
+   "record": "Earlier deliveries reported by ME Construction News",
+   "returns": "No guaranteed returns"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project launched June 2023 with US$200m investment",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://meconstructionnews.com/57498/200mn-marina-bay-project-set-for-bahrain"
+   },
+   {
+    "claim": "70% complete, structures 100% (July 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://infracorp.bh/wp-content/uploads/2026/07/Infracorp-Progress-Report-Q2-2026.pdf"
+   },
+   {
+    "claim": "Construction started Aug 2024 (Property Finder) vs works commencement announced May 2024 with CCT as contractor",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://infracorp.bh/news/"
+   },
+   {
+    "claim": "Completion March 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.bh/en/new-projects/infracorp/marina-bay"
+   },
+   {
+    "claim": "Naseej agreed to acquire residential units in Marina Bay (Nov 2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.zawya.com/en/press-release/companies-news/naseej-signs-agreement-with-infracorp-to-acquire-luxury-residential-units-at-marina-bay-on-reef-island-rv58t2vr"
+   },
+   {
+    "claim": "Infracorp delivered California Village phase one (Dubai)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://meconstructionnews.com/57498/200mn-marina-bay-project-set-for-bahrain"
+   },
+   {
+    "claim": "Registered with RERA (official registration)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bahrain.alsafaqa.com/en/developers/infracorp/projects/marina-bay-1fae5649"
+   },
+   {
+    "claim": "Freehold for foreign buyers on Reef Island",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.bh/en/new-projects/infracorp/marina-bay"
+   },
+   {
+    "claim": "Escrow account with 20% of project value as required by RERA licence conditions",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.bahrain.bh/wps/portal/en/BNP/ServicesCatalogue/GSX-UI-PServiceDetails?psID=1645"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2021,
+   "developer_hq": "Manama, Bahrain",
+   "developer_company": "Infracorp",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-05",
+   "handover_promised": "2027-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR apartment",
+    "2BR duplex",
+    "3BR duplex",
+    "penthouse",
+    "4BR villa"
+   ],
+   "size_min_m2": 188,
+   "size_max_m2": 1076,
+   "price_min": 272875,
+   "price_max": null,
+   "currency": "BHD",
+   "deposit_pct": 10,
+   "payment_plan": "10/90",
+   "foreign_ownership": "freehold (portal)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private marina",
+    "swimming pools",
+    "leisure areas",
+    "dining outlets",
+    "sea views"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Real Estate Regulatory Authority (RERA) Bahrain",
+   "brochure_url": null
+  },
+  "verified_score": 1,
+  "positives": [
+   "Quarterly percentage progress reports published by the developer",
+   "Structure complete per developer",
+   "Third-party developer bought a block of units"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.propertyfinder.bh/en/new-projects/infracorp/marina-bay",
+   "https://bahrain.alsafaqa.com/en/developers/infracorp/projects/marina-bay-1fae5649",
+   "https://infracorp.bh/infracorp-launches-marina-bay-bahrains-newest-luxury-residential-development-on-reef-island-with-200-million-in-investments/",
+   "https://infracorp.bh/news/",
+   "https://infracorp.bh/wp-content/uploads/2026/07/Infracorp-Progress-Report-Q2-2026.pdf",
+   "https://infracorp.bh/on-the-sidelines-of-cityscape-bahrain-2025-naseej-signs-agreement-with-infracorp-to-acquire-luxury-residential-units-at-marina-bay-on-reef-island/",
+   "https://www.zawya.com/en/press-release/companies-news/naseej-signs-agreement-with-infracorp-to-acquire-luxury-residential-units-at-marina-bay-on-reef-island-rv58t2vr",
+   "https://meconstructionnews.com/57498/200mn-marina-bay-project-set-for-bahrain",
+   "https://www.bahrain.bh/wps/portal/en/BNP/ServicesCatalogue/GSX-UI-PServiceDetails?psID=1645"
+  ]
+ },
+ {
+  "slug": "khadr-rise-era-real-estate",
+  "name": "Khadr Rise",
+  "developer": "ERA Real Estate (as named on Property Finder)",
+  "area": "Bahrain Bay, Manama, Capital Governorate",
+  "country": "Bahrain",
+  "market": "Bahrain",
+  "stage": "off-plan",
+  "url": "https://www.propertyfinder.bh/en/new-projects/era-real-estate/khadr-rise",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "studios 29 to 36 m2, 1BR 65 to 87 m2, 2BR 97 to 126 m2, 3BR 152 to 170 m2 (layout tables, floor plan column empty)",
+   "launch price BHD 48,888 (studio from BHD 43K in table)",
+   "expected booking 30 Mar 2026, construction start 31 Mar 2026, completion 31 Dec 2029",
+   "masterplan image"
+  ],
+  "note": "Mixed-use apartment and office tower in Bahrain Bay listed only on portals; the Property Finder page lists Jeddah landmarks (King Abdulaziz Airport, Mall of Arabia) as nearby, one agent blog describes the tower as completed, and AlSafaqa says sales have not started. No developer website, RERA licence, escrow, plans or delivery record found (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 48888,
+   "currency": "BHD",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "None published",
+   "escrow": "None published",
+   "progress": "Only a portal 'construction started' date of 31 Mar 2026",
+   "plans": "Layout tables with sizes but empty floor plan column",
+   "record": "No developer website or completed projects found",
+   "returns": "No guaranteed returns"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Developer is ERA Real Estate",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.bh/en/new-projects/era-real-estate/khadr-rise"
+   },
+   {
+    "claim": "Located in Bahrain Bay with Four Seasons views (portal lists Jeddah landmarks as nearby)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.propertyfinder.bh/en/new-projects/era-real-estate/khadr-rise"
+   },
+   {
+    "claim": "Construction started 31 Mar 2026",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://ahkbahrain.com/property/bahrain-bay-tower/"
+   },
+   {
+    "claim": "Sales status: not started / upcoming",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://bahrain.alsafaqa.com/en/developers/era-real-estate/projects/khadr-rise-d0c6c986"
+   },
+   {
+    "claim": "Completion 31 Dec 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.bh/en/new-projects/era-real-estate/khadr-rise"
+   },
+   {
+    "claim": "Starting price BHD 48,888",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.bh/en/new-projects"
+   },
+   {
+    "claim": "Registered with RERA as an off-plan project (AlSafaqa: official registration not matched)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bahrain.alsafaqa.com/en/developers/era-real-estate/projects/khadr-rise-d0c6c986"
+   },
+   {
+    "claim": "Freehold for local and international buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.bh/en/new-projects/era-real-estate/khadr-rise"
+   },
+   {
+    "claim": "Escrow account",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.bahrain.bh/wps/portal/en/BNP/ServicesCatalogue/GSX-UI-PServiceDetails?psID=1645"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-03",
+   "handover_promised": "2029-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 29,
+   "size_max_m2": 170,
+   "price_min": 43000,
+   "price_max": null,
+   "currency": "BHD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold (portal statement)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "indoor pool",
+    "infinity pool",
+    "playroom",
+    "lounge",
+    "gym",
+    "sauna"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Real Estate Regulatory Authority (RERA) Bahrain",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "Low entry price in an established freehold district"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.propertyfinder.bh/en/new-projects/era-real-estate/khadr-rise",
+   "https://www.propertyfinder.bh/en/new-projects",
+   "https://bahrain.alsafaqa.com/en/developers/era-real-estate/projects/khadr-rise-d0c6c986",
+   "https://ahkbahrain.com/property/bahrain-bay-tower/",
+   "https://www.bahrain.bh/wps/portal/en/BNP/ServicesCatalogue/GSX-UI-PServiceDetails?psID=1645"
+  ]
+ },
+ {
+  "slug": "orchid-bahrain-bay-orchid-developers",
+  "name": "Orchid Bahrain Bay",
+  "developer": "Orchid Developers (Orchid Development Company)",
+  "area": "Bahrain Bay, Manama, Capital Governorate",
+  "country": "Bahrain",
+  "market": "Bahrain",
+  "stage": "off-plan",
+  "url": "https://www.propertyfinder.bh/en/new-projects/orchid-developers/orchid-bahrain-bay",
+  "docs_url": "https://www.orchid-developers.com/orchid-bahrain-bay.php",
+  "permit_number": null,
+  "docs_listed": [
+   "residences and offices; studios 47 to 99 m2, 1BR 69 to 119 m2, 2BR 131 to 217 m2",
+   "launch price BHD 47,900",
+   "construction start 15 Sep 2026, delivery October 2030 (Property Finder)",
+   "amenity list (infinity pool, indoor pool, cinema, padel, squash)",
+   "developer states it has delivered more than 175 units"
+  ],
+  "note": "Waterfront residential and office tower announced at Cityscape Bahrain Nov 2024 within the Bahrain Bay master development; the developer page describes 25 storeys while Property Finder says 47, and delivery is listed for October 2030. No RERA licence, escrow, plans or progress published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 47900,
+   "currency": "BHD",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Developer page: 'has already delivered more than 175 units of residential and commercial properties'; projects not named on the page opened",
+   "units": null,
+   "payment_plan": "flexible plan during construction (agent listing, no terms)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No RERA off-plan licence number",
+   "escrow": "None published",
+   "progress": "Only a portal construction start date (15 Sep 2026)",
+   "plans": "Size ranges only",
+   "record": "Developer claims 175+ units delivered, without naming projects on the page opened",
+   "returns": "No guaranteed returns"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Orchid announced hotel and residential apartments in Bahrain Bay at Cityscape Bahrain (Nov 2024), welcomed by Bahrain Bay Development's GM",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://en.khalijiuwn24.com/1030985"
+   },
+   {
+    "claim": "Tower of 25 storeys (developer) vs 47 storeys (Property Finder)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.orchid-developers.com/orchid-bahrain-bay.php"
+   },
+   {
+    "claim": "Delivery October 2030",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.bh/en/new-projects/orchid-developers/orchid-bahrain-bay"
+   },
+   {
+    "claim": "Construction started 15 Sep 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.bh/ar/new-projects/orchid-developers/orchid-bahrain-bay"
+   },
+   {
+    "claim": "Developer delivered more than 175 units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.orchid-developers.com/orchid-bahrain-bay.php"
+   },
+   {
+    "claim": "Starting price BHD 47,900 (portal) vs BHD 59,000 for 53 m2 studio (agent)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.bh/ar/plp/buy/apartment-for-sale-capital-governorate-bahrain-bay-993510.html"
+   },
+   {
+    "claim": "Freehold ownership",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.bh/en/new-projects/orchid-developers/orchid-bahrain-bay"
+   },
+   {
+    "claim": "RERA off-plan licence and escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.bahrain.bh/wps/portal/en/BNP/ServicesCatalogue/GSX-UI-PServiceDetails?psID=1645"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Seef, Bahrain",
+   "developer_company": "Orchid Developers (Orchid Business Center, Seef)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 175,
+   "listed_or_audited": null,
+   "construction_start": "2026-09",
+   "handover_promised": "2030-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "office"
+   ],
+   "size_min_m2": 47,
+   "size_max_m2": 217,
+   "price_min": 47900,
+   "price_max": null,
+   "currency": "BHD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold (portal)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "infinity pool",
+    "indoor pool",
+    "sauna and steam",
+    "cinema",
+    "padel court",
+    "squash court",
+    "running track",
+    "kids play zone"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Real Estate Regulatory Authority (RERA) Bahrain",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "Developer has a stated delivery history",
+   "Inside an established freehold master development"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.orchid-developers.com/orchid-bahrain-bay.php",
+   "https://www.propertyfinder.bh/en/new-projects/orchid-developers/orchid-bahrain-bay",
+   "https://www.propertyfinder.bh/ar/new-projects/orchid-developers/orchid-bahrain-bay",
+   "https://www.propertyfinder.bh/ar/plp/buy/apartment-for-sale-capital-governorate-bahrain-bay-993510.html",
+   "https://en.khalijiuwn24.com/1030985",
+   "https://www.bahrain.bh/wps/portal/en/BNP/ServicesCatalogue/GSX-UI-PServiceDetails?psID=1645"
+  ]
+ },
+ {
+  "slug": "marassi-red-sea-phase-1-emaar-misr",
+  "name": "Marassi Red Sea (Phase 1 marina residences and villas)",
+  "developer": "Emaar Misr for Development (EGX-listed), with Citystars Properties (Golden Coast)",
+  "area": "Red Sea coast between Hurghada and Safaga",
+  "country": "Egypt",
+  "market": "Egypt",
+  "stage": "under construction",
+  "url": "https://www.emaarmisr.com/emaar-properties-related-communi/marassi-red-sea/",
+  "docs_url": "https://www.emaarmisr.com/emaar-properties-related-communi/marassi-red-sea/",
+  "permit_number": null,
+  "docs_listed": [
+   "product pages: Vida Branded Residences, Marina Shore Residences, Marina Bay, Laguna Villas and Townhomes, Horizon III Villas, Island Villas",
+   "coffee-table book PDF (Sep 2026) with masterplan figures",
+   "fully finished homes",
+   "construction contracts announced: EGP 5.7bn marina buildings (Arabian Construction Company), EGP 14bn villas (Rowad Modern Engineering, Innovo)",
+   "phase 1 handover 2029 (press)"
+  ],
+  "note": "2,426-feddan resort destination signed with Citystars in Sept 2025 at EGP 900bn; Emaar Misr reports phase 1 sales above EGP 80bn, site works under way and about EGP 20bn of phase 1 construction contracts awarded, with handover reported for 2029. Emaar publishes no prices, payment plan, permit number or escrow details for the Red Sea phases (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "EGP",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Emaar Misr operates since 1997 with completed communities such as Marassi North Coast, Mivida and Uptown Cairo (named as Emaar Misr sales centres/communities in its own material)",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No NUCA or building permit number published",
+   "escrow": "Nothing published",
+   "progress": "Dated contractor awards (Aug and Sep 2026) and Feb 2026 statement that construction started on phase 1; site preparation nearing completion (Arab Finance, Aug 2026)",
+   "plans": "Product pages list sizes (per D5Realty) but no unit plans seen",
+   "record": "Emaar Misr's delivered communities on the North Coast and in Cairo",
+   "returns": "No guaranteed returns language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "EGP 900bn development agreement with Citystars signed Sept 2025, 2,426 feddans",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://enterpriseam.com/egypt/2026/09/15/emaar-misr-signs-egp-14-bn-in-construction-contracts-for-marassi-red-sea/"
+   },
+   {
+    "claim": "Phase 1 sales above EGP 80bn",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emaarmisr.com/ar/marassi-red-sea-records-egp-80-billion-in-sales-and-emaar-misr-opens-phase-two/"
+   },
+   {
+    "claim": "EGP 5.7bn contract for 32 marina buildings (about 750 units) awarded",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.zawya.com/en/economy/emaar-misr-accelerates-construction-at-marassi-red-sea-project-418128"
+   },
+   {
+    "claim": "EGP 14bn villa contracts to Rowad and Innovo; phase 1 handover 2029",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://enterpriseam.com/egypt/2026/09/15/emaar-misr-signs-egp-14-bn-in-construction-contracts-for-marassi-red-sea/"
+   },
+   {
+    "claim": "Site preparation for phase 1 nearing completion (Aug 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.zawya.com/en/economy/emaar-misr-accelerates-construction-at-marassi-red-sea-project-418128"
+   },
+   {
+    "claim": "Construction started on phase 1 (Feb 2026)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.zawya.com/en/economy/emaar-misr-accelerates-construction-at-marassi-red-sea-project-418128"
+   },
+   {
+    "claim": "Developer is EGX-listed",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.zawya.com/en/economy/emaar-misr-accelerates-construction-at-marassi-red-sea-project-418128"
+   },
+   {
+    "claim": "Prices and payment plan",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://d5realty.com/vida-branded-residences-marassi-red-sea/"
+   },
+   {
+    "claim": "Vida branded residences launched 14 Sep 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://d5realty.com/vida-branded-residences-marassi-red-sea/"
+   },
+   {
+    "claim": "NUCA or Red Sea Governorate approvals and escrow arrangements",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emaarmisr.com/emaar-properties-related-communi/marassi-red-sea/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2005,
+   "developer_hq": "Cairo, Egypt",
+   "developer_company": "Emaar Misr for Development S.A.E.",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Egyptian Exchange (EGX)",
+   "construction_start": "2026",
+   "handover_promised": "2029",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "apartment",
+    "water home",
+    "townhouse",
+    "villa",
+    "branded residence"
+   ],
+   "size_min_m2": 70,
+   "size_max_m2": 188,
+   "price_min": null,
+   "price_max": null,
+   "currency": "EGP",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold; foreigners may own in Egypt subject to Law 230/1996 limits (not stated on project pages)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Vida (branded residences component)",
+   "amenities": [
+    "3 marinas",
+    "1.5 km elevated infinity beach",
+    "swimmable lagoons",
+    "12 hotels",
+    "500+ retail and dining outlets",
+    "Marassi Wonders entertainment zone"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Red Sea Governorate / Tourism Development Authority (coastal tourism land)",
+   "brochure_url": "https://www.emaarmisr.com/wp-content/uploads/2026/09/Emaar-Misr-Marassi-Red-Sea-Coffee-Book-SEP26.pdf"
+  },
+  "verified_score": 1,
+  "positives": [
+   "Listed developer with major contractors appointed and contract values disclosed",
+   "Construction milestones reported by Enterprise and Arab Finance"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.emaarmisr.com/emaar-properties-related-communi/marassi-red-sea/",
+   "https://www.emaarmisr.com/ar/marassi-red-sea-records-egp-80-billion-in-sales-and-emaar-misr-opens-phase-two/",
+   "https://www.emaarmisr.com/wp-content/uploads/2026/09/Emaar-Misr-Marassi-Red-Sea-Coffee-Book-SEP26.pdf",
+   "https://enterpriseam.com/egypt/2026/09/15/emaar-misr-signs-egp-14-bn-in-construction-contracts-for-marassi-red-sea/",
+   "https://www.zawya.com/en/economy/emaar-misr-accelerates-construction-at-marassi-red-sea-project-418128",
+   "https://d5realty.com/vida-branded-residences-marassi-red-sea/"
+  ]
+ },
+ {
+  "slug": "southmed-talaat-moustafa-group",
+  "name": "SouthMED",
+  "developer": "Talaat Moustafa Group Holding (TMG; EGX-listed)",
+  "area": "Km 165 Alexandria-Matrouh Road, El Dabaa, North Coast",
+  "country": "Egypt",
+  "market": "Egypt",
+  "stage": "under construction",
+  "url": "https://talaatmoustafa.com/communities/southmed/",
+  "docs_url": "https://talaatmoustafa.com/communities/southmed/",
+  "permit_number": null,
+  "docs_listed": [
+   "23 million m2 masterplan on about 5,500 feddans with 8 km beachfront",
+   "chalets, twin houses, villas and branded (Four Seasons) units",
+   "payment plans from 1.5% down over up to 15 years (report cited by Daily News Egypt)",
+   "first deliveries from 2028",
+   "quarterly sales disclosures by TMG"
+  ],
+  "note": "TMG's North Coast mega-resort launched July 2024, with cumulative contracted sales of about EGP 500bn by end of June 2026 per TMG's H1 2026 results; a consultancy report says phase 1 concrete works are complete and first handovers are targeted for 2028. No permit number, escrow or unit plans published on the project page (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 12000000,
+   "currency": "EGP",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "TMG handed over 3,196 units in 2025 and 1,459 in H1 2026, mainly in Madinaty and Celia (Businessmen EG, Aug 2026)",
+   "units": null,
+   "payment_plan": "down payments from 1.5%, repayment up to 15 years; e.g. 97 m2 sea-view chalet from EGP 12M with EGP 212,000 down and quarterly EGP 63,900",
+   "price_per_m2": 123711
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No NUCA or ministerial decree number on the project page",
+   "escrow": "Nothing published",
+   "progress": "Daily News Egypt (Jun 2026) citing The Board Consulting: phase 1 concrete works completed",
+   "plans": "No floor plans on the TMG page opened",
+   "record": "Units delivered by TMG in 2025 and H1 2026 reported in press from company figures",
+   "returns": "No guaranteed returns"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Cumulative SouthMED sales about EGP 500bn by end of June 2026 (EGP 93.9bn in H1 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.dailynewsegypt.com/2026/07/05/tmg-holding-posts-egp-219-1bn-in-h1-2026-sales/"
+   },
+   {
+    "claim": "Phase 1 concrete works completed",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://dailynewsegypt.com/2026/06/05/talaat-moustafa-group-leads-north-coast-construction-race-with-record-execution-rates-at-southmed/"
+   },
+   {
+    "claim": "First unit deliveries in 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dailynewsegypt.com/2026/08/18/southmed-project-sales-reach-egp-520bn-as-north-coast-drives-egyptian-real-estate-market/"
+   },
+   {
+    "claim": "Four Seasons units at SouthMED for delivery May 2029 (buyer statement)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.businessmen-eg.com/en/6284/turki-al-alshikh-joins-southmed-buyers"
+   },
+   {
+    "claim": "TMG delivered 3,196 units in 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.businessmen-eg.com/en/6284/turki-al-alshikh-joins-southmed-buyers"
+   },
+   {
+    "claim": "Commercial launch July 2024 (DNE) vs June 2024 (Techno Time)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.technotime.net/15933"
+   },
+   {
+    "claim": "Masterplan 23 million m2 vs about 5,500 feddans (about 23.1 million m2)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://dailynewsegypt.com/2026/06/05/talaat-moustafa-group-leads-north-coast-construction-race-with-record-execution-rates-at-southmed/"
+   },
+   {
+    "claim": "Chalet prices from EGP 12M for 97 m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dailynewsegypt.com/2026/06/05/talaat-moustafa-group-leads-north-coast-construction-race-with-record-execution-rates-at-southmed/"
+   },
+   {
+    "claim": "Presidential order for state review of developers' delivery compliance (Aug 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.businessmen-eg.com/en/6284/turki-al-alshikh-joins-southmed-buyers"
+   },
+   {
+    "claim": "Foreign buyers can own units (freehold)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://talaatmoustafa.com/communities/southmed/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Cairo, Egypt",
+   "developer_company": "Talaat Moustafa Group Holding",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Egyptian Exchange (EGX); H1 2026 net profit EGP 9.9bn reported",
+   "construction_start": null,
+   "handover_promised": "2028",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "chalet",
+    "twin house",
+    "villa",
+    "beachfront villa",
+    "branded residence"
+   ],
+   "size_min_m2": 97,
+   "size_max_m2": 501,
+   "price_min": 12000000,
+   "price_max": 91200000,
+   "currency": "EGP",
+   "deposit_pct": 1.5,
+   "payment_plan": "1.5% down, up to 15 years",
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Four Seasons (part of development)",
+   "amenities": [
+    "8 km beachfront",
+    "international marina",
+    "swimmable lagoons",
+    "hotels",
+    "dining",
+    "entertainment zones"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "New Urban Communities Authority (NUCA) / North Coast development authorities",
+   "brochure_url": null
+  },
+  "verified_score": 2,
+  "positives": [
+   "Listed developer with a large verified delivery record",
+   "Sales and construction milestones reported independently",
+   "Very long payment plans"
+  ],
+  "flags": [],
+  "sources": [
+   "https://talaatmoustafa.com/communities/southmed/",
+   "https://dailynewsegypt.com/2026/06/05/talaat-moustafa-group-leads-north-coast-construction-race-with-record-execution-rates-at-southmed/",
+   "https://www.dailynewsegypt.com/2026/08/18/southmed-project-sales-reach-egp-520bn-as-north-coast-drives-egyptian-real-estate-market/",
+   "https://www.dailynewsegypt.com/2026/07/05/tmg-holding-posts-egp-219-1bn-in-h1-2026-sales/",
+   "https://www.businessmen-eg.com/en/6284/turki-al-alshikh-joins-southmed-buyers",
+   "https://www.businessmen-eg.com/en/6150/tmgs-southmed-dominates-north-coast-market-with-egp-520b-lifetime-sales",
+   "https://www.technotime.net/15933"
+  ]
+ },
+ {
+  "slug": "nuba-el-gouna-orascom-development-egypt",
+  "name": "Nuba El Gouna (serviced apartments)",
+  "developer": "Orascom Development Egypt (EGX-listed; part of Orascom Development Holding)",
+  "area": "Central El Gouna, Red Sea",
+  "country": "Egypt",
+  "market": "Egypt",
+  "stage": "off-plan",
+  "url": "https://touch-realestate.com/en/property/red-sea/el-gouna/nuba-el-gouna/",
+  "docs_url": "https://www.elgouna.com/live-in/properties/nuba-serviced-apartments",
+  "permit_number": null,
+  "docs_listed": [
+   "1BR (80 m2) and 2BR (110 m2) fully finished serviced apartments",
+   "unit layout PDF with 1BR and 2BR plans and turnkey furniture packages",
+   "rental programme projection: average ROI 4-6% (1BR) and 5-7% (2BR) at 50% occupancy, with disclaimer that figures are not guaranteed",
+   "payment plan 15% down, balance over 5 years",
+   "delivery in 2028 (developer page); 'delivery in just one year' (May 2026 release)",
+   "USD prices from about 362,000 (agents)"
+  ],
+  "note": "Wellness-themed serviced apartment cluster of 97 units around a 2,500 m2 sandy pool, launched in March 2026 by Orascom Development Egypt and managed by Orascom Property Management; delivery is stated variously as one year, two years and 2028. Rental yield projections are published with a not-guaranteed disclaimer; no permit number or escrow details (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 362000,
+   "currency": "USD",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 7,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Orascom Development Egypt developed and operates El Gouna (25,000+ residents of 50+ nationalities per May 2026 release); ODH lists El Gouna among its operating destinations in FY2025 audited results",
+   "units": 97,
+   "payment_plan": "15% down payment, 85% in instalments over 5 years",
+   "price_per_m2": 4525
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "None published",
+   "escrow": "None published; one agent describes guarantee cheques held by the developer for other El Gouna projects",
+   "progress": "No construction updates for Nuba",
+   "plans": "Developer-hosted PDF with 1BR and 2BR unit layouts",
+   "record": "El Gouna town developed and operated by ODE; ODH audited FY2025 statements",
+   "returns": "Projected average ROI 4-7% with explicit disclaimer that figures are not guaranteed outcomes"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Nuba launched with 97 units, EGP 3bn sales target, delivery within two years",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.zawya.com/en/business/real-estate/orascom-development-egypt-launches-nuba-in-el-gouna-with-55mln-sales-target-351216"
+   },
+   {
+    "claim": "Delivery in just one year (May 2026 release) vs 2028 (developer page)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.elgouna.com/live-in/properties/nuba-serviced-apartments"
+   },
+   {
+    "claim": "About 40% of ODE sales come from international clients",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.zawya.com/en/business/real-estate/orascom-development-egypt-launches-nuba-in-el-gouna-with-55mln-sales-target-351216"
+   },
+   {
+    "claim": "Average ROI 4-7% at 50% occupancy (projection, not guaranteed)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://cms.elgouna.com/api/media/file/Nuba%201bedroom%2C%202bedroom%20V4.pdf"
+   },
+   {
+    "claim": "Site area 31,000-32,000 m2 with 2,500 m2 sandy pool",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.zawya.com/en/press-release/companies-news/el-gouna-launches-nuba-el-gouna-342513"
+   },
+   {
+    "claim": "Prices from USD 362,000 (1BR) to 482,000 (2BR)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://elgounahomes.com/property/nuba-el-gouna/"
+   },
+   {
+    "claim": "Parent Orascom Development Holding publishes audited FY2025 statements and operates El Gouna",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.eqs-news.com/news/ad-hoc/orascom-development-holding-ag-publication-of-fy-2025-financial-statements-and-non-financial-report/9e3f856c-22a2-44dd-93b6-275a2660b381_en"
+   },
+   {
+    "claim": "Foreigners can buy freehold in El Gouna",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://touch-realestate.com/en/property/red-sea/el-gouna/nuba-el-gouna/"
+   },
+   {
+    "claim": "Building permit and escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.elgouna.com/live-in/properties/nuba-serviced-apartments"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Cairo, Egypt",
+   "developer_company": "Orascom Development Egypt S.A.E.",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Orascom Development Egypt on EGX; parent ODH on SIX Swiss Exchange",
+   "construction_start": null,
+   "handover_promised": "2028",
+   "original_handover": "2027 (one-year delivery claim, May 2026)",
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 80,
+   "size_max_m2": 110,
+   "price_min": 362000,
+   "price_max": 500000,
+   "currency": "USD",
+   "deposit_pct": 15,
+   "payment_plan": "15% down, 5 years",
+   "foreign_ownership": "freehold (agent statements)",
+   "rental_programme": "Orascom Property Management rental programme; management fee waived 12 months then 20%; projected ROI 4-7%",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "2,500 m2 sandy pool",
+    "24/7 concierge",
+    "housekeeping",
+    "spa",
+    "gym",
+    "yoga area",
+    "co-working lounge"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Red Sea Governorate / Tourism Development Authority",
+   "brochure_url": "https://cms.elgouna.com/api/media/file/Nuba%201bedroom%2C%202bedroom%20V4.pdf"
+  },
+  "verified_score": 1,
+  "positives": [
+   "Established town developer with listed parent",
+   "Unit plans and rental assumptions published with clear not-guaranteed disclaimer",
+   "Interest-free 5-year plan"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.elgouna.com/live-in/properties/nuba-serviced-apartments",
+   "https://cms.elgouna.com/api/media/file/Nuba%201bedroom%2C%202bedroom%20V4.pdf",
+   "https://www.zawya.com/en/business/real-estate/orascom-development-egypt-launches-nuba-in-el-gouna-with-55mln-sales-target-351216",
+   "https://www.zawya.com/en/press-release/companies-news/el-gouna-launches-nuba-el-gouna-342513",
+   "https://touch-realestate.com/en/property/red-sea/el-gouna/nuba-el-gouna/",
+   "https://elgounahomes.com/property/nuba-el-gouna/",
+   "https://d5realty.com/wp-content/uploads/2026/06/El-Gouna-Off-Plan-Projects-Brief-June.pdf",
+   "https://www.eqs-news.com/news/ad-hoc/orascom-development-holding-ag-publication-of-fy-2025-financial-statements-and-non-financial-report/9e3f856c-22a2-44dd-93b6-275a2660b381_en"
+  ]
+ },
+ {
+  "slug": "diplo-east-mbg-developments",
+  "name": "Diplo East",
+  "developer": "MBG Developments (Master Builders Group / MBG Real Estate Development Company)",
+  "area": "R8, Plot 1A, New Administrative Capital",
+  "country": "Egypt",
+  "market": "Egypt",
+  "stage": "off-plan",
+  "url": "https://www.propertyfinder.eg/en/new-projects/mbg-developments/diplo-east",
+  "docs_url": "https://www.zawya.com/en/press-release/companies-news/mbg-receives-ministerial-approval-for-diplo-east-project-in-the-new-administrative-capital-362461",
+  "permit_number": "Ministerial Decree No. 216 of 2026",
+  "docs_listed": [
+   "Ministerial Decree No. 216 of 2026 announced by the developer (Feb 2026)",
+   "65-feddan plot opposite the Diplomatic Quarter; 70% villas, 30% G+8 apartment buildings",
+   "unit sizes 110 to 398 m2 (layout tables, no plan images)",
+   "payment plans 5% down over 8-10 years or 10% down over 8 years",
+   "delivery March 2029 (Property Finder), 30 Oct 2030 (Aqarzy), 4 years from contract (agents)",
+   "apartments semi-finished, villas core and shell; 8% maintenance deposit (agent)"
+  ],
+  "note": "Low-density compound in the New Capital's R8 district sold off-plan since at least March 2025; MBG announced Ministerial Decree No. 216 of 2026 in Feb 2026 and said construction would start once final executive permits are issued, while Property Finder lists a construction start of May 2025. Delivery dates range from March 2029 to October 2030 and one agent says the project 'guarantees a rewarding return' (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 3932500,
+   "currency": "EGP",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": null,
+   "completion": "2029-Q1",
+   "permit_claim": true,
+   "permit_number": "Ministerial Decree No. 216 of 2026",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": "5% down then 5% after 3 months and balance over 10 years, or 10% down over 8 years (agents)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": false,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Developer press release (Zawya, The Icon News, 12 Feb 2026): Ministerial Decree No. 216 of 2026 issued via NUCA and the Administrative Capital company",
+   "escrow": "Nothing published",
+   "progress": "No updates; developer says construction starts after final executive permits",
+   "plans": "Layout tables with sizes, floor plan column empty",
+   "record": "MBG's earlier New Capital project Pukka got ministerial approval in 2019 (Daily News Egypt); no completion found",
+   "returns": "Agent GPR Property: payment systems 'represent a promising investment opportunity that guarantees a rewarding return with the increase in real estate value'"
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Ministerial Decree No. 216 of 2026 issued for Diplo East",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.zawya.com/en/press-release/companies-news/mbg-receives-ministerial-approval-for-diplo-east-project-in-the-new-administrative-capital-362461"
+   },
+   {
+    "claim": "Construction started 18 May 2025 (Property Finder) vs to start after final executive permits (developer, Feb 2026)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://theicon.news/11646/"
+   },
+   {
+    "claim": "Delivery March 2029 vs 30 Oct 2030 vs 4 years from contract",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://aqarzy.com/en/compounds/diplo-east-compound"
+   },
+   {
+    "claim": "Plot 1A of 65 feddans opposite the Diplomatic Quarter",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.zawya.com/en/press-release/companies-news/mbg-receives-ministerial-approval-for-diplo-east-project-in-the-new-administrative-capital-362461"
+   },
+   {
+    "claim": "Mix 70% villas / 30% apartments (developer) vs 80/20 (agents)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://newcapital-developments.com/en/projects/diplo-east-new-capital-compound/"
+   },
+   {
+    "claim": "Starting price EGP 3.93M (Property Finder) vs EGP 6.71M (2026 agent lists)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://gprproperty.com/en/project/diplo-east-new-capital/"
+   },
+   {
+    "claim": "Units sold before the ministerial decree (agent price list dated March 2025)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://pioneerproperty.net/en/prices-and-spaces-of-diplo-east-new-capital-compound/"
+   },
+   {
+    "claim": "Guaranteed rewarding return (agent wording)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://gprproperty.com/en/project/diplo-east-new-capital/"
+   },
+   {
+    "claim": "MBG has completed earlier projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dailynewsegypt.com/2019/02/04/mbg-obtains-ministerial-approval-of-pukka-projects-construction/"
+   },
+   {
+    "claim": "Escrow or buyer deposit protection",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.eg/en/new-projects/mbg-developments/diplo-east"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Cairo, Egypt",
+   "developer_company": "MBG Real Estate Development Company",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2029-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR apartment",
+    "3BR apartment",
+    "duplex",
+    "penthouse",
+    "townhouse",
+    "sky villa",
+    "standalone villa"
+   ],
+   "size_min_m2": 110,
+   "size_max_m2": 398,
+   "price_min": 3932500,
+   "price_max": 46000000,
+   "currency": "EGP",
+   "deposit_pct": 5,
+   "payment_plan": "5% down, up to 10 years",
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": "8% maintenance deposit (agent)",
+   "brand": null,
+   "amenities": [
+    "social club",
+    "swimming pools",
+    "yoga areas",
+    "cycling and walking paths",
+    "padel courts",
+    "outdoor cinema",
+    "commercial zone",
+    "smart security"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "New Urban Communities Authority (NUCA) / Administrative Capital for Urban Development (ACUD)",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "Ministerial decree number published by the developer",
+   "Long instalment plans"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.zawya.com/en/press-release/companies-news/mbg-receives-ministerial-approval-for-diplo-east-project-in-the-new-administrative-capital-362461",
+   "https://theicon.news/11646/",
+   "https://www.propertyfinder.eg/en/new-projects/mbg-developments/diplo-east",
+   "https://newcapital-developments.com/en/projects/diplo-east-new-capital-compound/",
+   "https://pioneerproperty.net/en/prices-and-spaces-of-diplo-east-new-capital-compound/",
+   "https://aqarzy.com/en/compounds/diplo-east-compound",
+   "https://gprproperty.com/en/project/diplo-east-new-capital/",
+   "https://dailynewsegypt.com/2019/02/04/mbg-obtains-ministerial-approval-of-pukka-projects-construction/",
+   "https://enterpriseam.com/egypt/2026/09/02/new-city-land-will-go-to-big-proven-developers-first-under-nucas-overhauled-allocation-rules/"
+  ]
  }
 ]

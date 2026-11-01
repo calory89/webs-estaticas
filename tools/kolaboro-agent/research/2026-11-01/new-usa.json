@@ -1121,5 +1121,1777 @@
    "https://m.flsenate.gov/Statutes/718.202"
   ],
   "verified_score": 2
+ },
+ {
+  "slug": "bentley-residences-sunny-isles-dezer",
+  "name": "Bentley Residences Miami",
+  "developer": "Dezer Development (18401 Developers LLC)",
+  "area": "Sunny Isles Beach (18401 Collins Ave)",
+  "country": "USA",
+  "market": "Miami",
+  "stage": "under construction",
+  "url": "https://joshsteinrealtor.com/new-construction/bentley-residences/",
+  "docs_url": "https://floridayimby.com/2026/08/vertical-construction-progresses-on-62-story-bentley-residences-in-sunny-isles-beach.html",
+  "permit_number": "DBPR condominium filing PR77375",
+  "docs_listed": [
+   "216 residences, 62 storeys, sizes 5,256 to 6,333 sq ft (agent)",
+   "remaining inventory from USD 5.8M (agent citing PROFILEmiami, Jun 2026)",
+   "construction at about 13 storeys in Aug 2026 (Florida YIMBY)",
+   "completion 2028 (press); Bentley page still says 2027 (agent)",
+   "Florida DBPR filing PR77375 '18401 Collins Avenue Condominium' (18401 Developers LLC)"
+  ],
+  "note": "62-storey, 216-residence oceanfront tower by Dezer, filed with Florida DBPR as PR77375 (18401 Developers LLC); superstructure reached about 13 storeys in Aug 2026 with completion anticipated in 2028. Dezer's earlier Porsche Design Tower at 18555 Collins is a recorded DBPR condominium (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 5800000,
+   "currency": "USD",
+   "title": "freehold (fee simple condominium)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": true,
+   "permit_number": "DBPR PR77375",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Dezer: Porsche Design Tower (18555 Collins Ave, 132 units), recorded DBPR condominium PR75765 in Dec 2012 by 18555 Developers LLC at Dezer's address",
+   "units": 216,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Florida DBPR developer summary lists PR77375 '18401 Collins Avenue Codominium', developer 18401 Developers LLC, mailing address 18001 Collins Ave (Dezer); no building permit number published",
+   "escrow": "Not published; agent notes Florida 718.202 governs escrow",
+   "progress": "Florida YIMBY 6 Aug 2026: superstructure at about 13 of 62 storeys, contractor Coastal Construction; PROFILEmiami reported level 7 in Jun 2026",
+   "plans": "Renderings and size ranges only",
+   "record": "DBPR condo extract shows 18555 Collins Avenue Condo (Porsche Design Tower address), 132 units, recorded 13 Dec 2012, developer 18555 Developers LLC at the same Dezer address",
+   "returns": "No return or guarantee language"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Condo filed with Florida DBPR (PR77375) by 18401 Developers LLC",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv"
+   },
+   {
+    "claim": "Dezer delivered Porsche Design Tower (18555 Collins Ave, 132 units, recorded 2012)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www2.myfloridalicense.com/sto/file_download/extracts/Condo_MD.csv"
+   },
+   {
+    "claim": "216 residences over 62 storeys",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://floridayimby.com/2026/08/vertical-construction-progresses-on-62-story-bentley-residences-in-sunny-isles-beach.html"
+   },
+   {
+    "claim": "Vertical construction at about 13 storeys (Aug 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://floridayimby.com/2026/08/vertical-construction-progresses-on-62-story-bentley-residences-in-sunny-isles-beach.html"
+   },
+   {
+    "claim": "Completion 2027 (Bentley Motors page)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://floridayimby.com/2026/08/vertical-construction-progresses-on-62-story-bentley-residences-in-sunny-isles-beach.html"
+   },
+   {
+    "claim": "Completion 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://floridayimby.com/2026/08/vertical-construction-progresses-on-62-story-bentley-residences-in-sunny-isles-beach.html"
+   },
+   {
+    "claim": "Remaining inventory from USD 5.8M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://joshsteinrealtor.com/new-construction/bentley-residences/"
+   },
+   {
+    "claim": "Construction financing of USD 630M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://joshsteinrealtor.com/new-construction/bentley-residences/"
+   },
+   {
+    "claim": "Deposits held in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://m.flsenate.gov/Statutes/718.202"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Sunny Isles Beach, Florida, USA",
+   "developer_company": "18401 Developers LLC (DBPR developer of record)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025",
+   "handover_promised": "2028",
+   "original_handover": "2027",
+   "delay_months": null,
+   "unit_types": [
+    "3BR",
+    "4BR",
+    "5BR",
+    "penthouse"
+   ],
+   "size_min_m2": 488,
+   "size_max_m2": 588,
+   "price_min": 5800000,
+   "price_max": 37500000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Fee simple condominium, no restriction on foreign buyers",
+   "rental_programme": "Rentals per condominium rules; no programme",
+   "service_charge": "HOA about USD 4,429 to 4,742 per month (resale listings)",
+   "brand": "Bentley (Bentley Motors licence)",
+   "amenities": [
+    "in-residence car garages (Dezervator)",
+    "oceanfront"
+   ],
+   "lat": 25.946,
+   "lng": -80.12,
+   "permit_authority": "City of Sunny Isles Beach Building Department; Florida DBPR Division of Condominiums",
+   "brochure_url": null
+  },
+  "positives": [
+   "Condo filing and developer's earlier tower both confirmed in Florida DBPR registry",
+   "Vertical progress reported by independent press with dates",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://joshsteinrealtor.com/new-construction/bentley-residences/",
+   "https://floridayimby.com/2026/08/vertical-construction-progresses-on-62-story-bentley-residences-in-sunny-isles-beach.html",
+   "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv",
+   "https://www2.myfloridalicense.com/sto/file_download/extracts/Condo_MD.csv",
+   "https://m.flsenate.gov/Statutes/718.202"
+  ],
+  "verified_score": 3
+ },
+ {
+  "slug": "andare-residences-pininfarina-related",
+  "name": "Andare Residences by Pininfarina",
+  "developer": "The Related Group (RD 3B LLC)",
+  "area": "Las Olas, Downtown Fort Lauderdale (521 E Las Olas Blvd)",
+  "country": "USA",
+  "market": "Fort Lauderdale",
+  "stage": "under construction",
+  "url": "https://www.condoblackbook.com/downtown-fort-lauderdale/andare-residences",
+  "docs_url": "https://floridayimby.com/2025/05/46-story-andare-residences-breaks-ground-at-521-east-las-olas-boulevard-in-fort-lauderdale.html",
+  "permit_number": "DBPR condominium filing PR77476",
+  "docs_listed": [
+   "floor plans 01A to 04B, 2BR to 4BR (portal)",
+   "list prices from USD 2,216,900, average USD 1,825 per sq ft (portal)",
+   "groundbreaking May 2025, completion expected 2027 (Florida YIMBY)",
+   "USD 230.8M construction loan from Athene (Commercial Observer)",
+   "Florida DBPR filing PR77476 'Andare Residences Condo' (RD 3B LLC)"
+  ],
+  "note": "Pininfarina-designed Las Olas tower by Related, filed with Florida DBPR as PR77476 (RD 3B LLC); ground broken May 2025 with a USD 230.8M Athene construction loan and over 50% presold, completion expected 2027. Unit count differs between sources (163 vs 192) and no escrow terms are published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 2216900,
+   "currency": "USD",
+   "title": "freehold (fee simple condominium)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": true,
+   "permit_number": "DBPR PR77476",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Related affiliates (mailing address 2850 Tigertail Ave) have 8 DBPR condominiums recorded 2024-2026 totalling 2,181 units, incl. Crosby Miami Worldcenter, 444 Brickell Two, Casamar, District 225",
+   "units": 163,
+   "payment_plan": null,
+   "price_per_m2": 19644
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Florida DBPR developer summary lists PR77476 'Andare Residences Condo', developer RD 3B LLC, 2850 Tigertail Ave (Related HQ), Broward; building permit number not published",
+   "escrow": "Not published; Florida 718.202 statutory escrow for deposits up to 10%",
+   "progress": "Groundbreaking 19 May 2025 (Florida YIMBY); construction started the week before 27 May 2025 (Commercial Observer); no later dated update found",
+   "plans": "Condo Black Book lists eight floor plans (01A to 04B) with brochure and plan PDFs",
+   "record": "DBPR condo extracts: 8 condominiums recorded 2024-2026 by developers at Related's address, 2,181 units",
+   "returns": "No return language"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Condo filed with Florida DBPR (PR77476) by RD 3B LLC",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv"
+   },
+   {
+    "claim": "Related affiliates delivered and recorded 8 condos (2,181 units) in 2024-2026",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www2.myfloridalicense.com/sto/file_download/extracts/Condo_MD.csv"
+   },
+   {
+    "claim": "Construction started May 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://commercialobserver.com/2025/05/related-group-fort-lauderdale-apollo-global-management-andare-residences/"
+   },
+   {
+    "claim": "USD 230.8M construction loan from Athene (Apollo)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://commercialobserver.com/2025/05/related-group-fort-lauderdale-apollo-global-management-andare-residences/"
+   },
+   {
+    "claim": "More than 50% presold (May 2025)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://commercialobserver.com/2025/05/related-group-fort-lauderdale-apollo-global-management-andare-residences/"
+   },
+   {
+    "claim": "192 residences over 45 storeys (portal)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://floridayimby.com/2025/05/46-story-andare-residences-breaks-ground-at-521-east-las-olas-boulevard-in-fort-lauderdale.html"
+   },
+   {
+    "claim": "Completion 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://floridayimby.com/2025/05/46-story-andare-residences-breaks-ground-at-521-east-las-olas-boulevard-in-fort-lauderdale.html"
+   },
+   {
+    "claim": "Prices from USD 2.2M, average USD 1,825 per sq ft",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.condoblackbook.com/downtown-fort-lauderdale/andare-residences"
+   },
+   {
+    "claim": "Site acquired for USD 11.25M in 2020",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://floridayimby.com/2025/05/46-story-andare-residences-breaks-ground-at-521-east-las-olas-boulevard-in-fort-lauderdale.html"
+   },
+   {
+    "claim": "Deposits held in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://m.flsenate.gov/Statutes/718.202"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Miami, USA",
+   "developer_company": "RD 3B LLC (DBPR developer of record)",
+   "developer_projects_delivered": 8,
+   "developer_units_delivered": 2181,
+   "listed_or_audited": null,
+   "construction_start": "2025-05",
+   "handover_promised": "2027",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "4BR",
+    "penthouse"
+   ],
+   "size_min_m2": 167,
+   "size_max_m2": 557,
+   "price_min": 2216900,
+   "price_max": 16000000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Fee simple condominium, no restriction on foreign buyers",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Pininfarina (design)",
+   "amenities": [],
+   "lat": 26.119,
+   "lng": -80.139,
+   "permit_authority": "City of Fort Lauderdale Building Services; Florida DBPR Division of Condominiums",
+   "brochure_url": null
+  },
+  "positives": [
+   "Condo filing and developer's recent deliveries confirmed in Florida DBPR registry",
+   "Construction loan and start reported by independent press",
+   "Floor plans published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.condoblackbook.com/downtown-fort-lauderdale/andare-residences",
+   "https://floridayimby.com/2025/05/46-story-andare-residences-breaks-ground-at-521-east-las-olas-boulevard-in-fort-lauderdale.html",
+   "https://commercialobserver.com/2025/05/related-group-fort-lauderdale-apollo-global-management-andare-residences/",
+   "https://bogatovrealty.com/miami/fort-lauderdale/andare-residences-by-pininfarina/",
+   "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv",
+   "https://www2.myfloridalicense.com/sto/file_download/extracts/Condo_MD.csv",
+   "https://m.flsenate.gov/Statutes/718.202"
+  ],
+  "verified_score": 3
+ },
+ {
+  "slug": "sereno-fort-lauderdale-integra-flying-point",
+  "name": "Sereno Fort Lauderdale",
+  "developer": "Sunrise FTL Ventures, LLLP (Integra Investments and Flying Point)",
+  "area": "Birch State Park / Central Beach, Fort Lauderdale (2901 NE 9th Ct)",
+  "country": "USA",
+  "market": "Fort Lauderdale",
+  "stage": "off-plan",
+  "url": "https://floridayimby.com/?p=37216",
+  "docs_url": "https://condosandcondos.com/Pictures/1/4930158/Pdf/SERENO-Fort-Lauderdale-Condos-Brochure.pdf",
+  "permit_number": "DBPR condominium filing PR77746",
+  "docs_listed": [
+   "brochure: 76 residences, 14 storeys, 1-3BR+den, 1,080 to 2,400 sq ft, Section 718.503 disclaimer",
+   "Florida DBPR filing PR77746 'Sereno Fort Lauderdale, a Condo' (Sunrise FTL Ventures, LLLP)",
+   "Dec 2025 revision to 88 homes of 372 to 1,252 sq ft plus 113-key hotel (Florida YIMBY)"
+  ],
+  "note": "14-storey condo by Integra and Flying Point next to Birch State Park, filed with Florida DBPR (PR77746). Plans were revised in Dec 2025 from 76 larger condos to 88 smaller homes plus a 113-key hotel, so the sales brochure no longer matches; no prices, plans, escrow or permit details published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "USD",
+   "title": "freehold (fee simple condominium)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": "DBPR PR77746",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 88,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Florida DBPR developer summary lists PR77746 'Sereno Fort Lauderdale, a Condo', developer Sunrise FTL Ventures, LLLP, Broward; no city approval or building permit number published",
+   "escrow": "Brochure refers to Section 718.503 documents only; Florida 718.202 statutory escrow applies to deposits up to 10%",
+   "progress": "No construction reported; Dec 2025 article covers a redesign",
+   "plans": "No floor plans published",
+   "record": "Brochure cites Integra Investments' assets under management but says Integra only licenses its name and is not the developer; no delivered projects named",
+   "returns": "No return language"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Condo filed with Florida DBPR (PR77746) by Sunrise FTL Ventures, LLLP",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv"
+   },
+   {
+    "claim": "76 residences of 1,080 to 2,400 sq ft (brochure)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://floridayimby.com/?p=37216"
+   },
+   {
+    "claim": "Revised to 88 homes plus 113 hotel keys (Dec 2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://floridayimby.com/?p=37216"
+   },
+   {
+    "claim": "Developer is a single-purpose entity; Integra only licenses its marks",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv"
+   },
+   {
+    "claim": "Integra manages over USD 8B and developed 15M sq ft",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://condosandcondos.com/Pictures/1/4930158/Pdf/SERENO-Fort-Lauderdale-Condos-Brochure.pdf"
+   },
+   {
+    "claim": "City approval of revised plan",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://floridayimby.com/?p=37216"
+   },
+   {
+    "claim": "Completion 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://floridayimby.com/?p=37216"
+   },
+   {
+    "claim": "Deposits held in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://m.flsenate.gov/Statutes/718.202"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2006,
+   "developer_hq": "Miami, USA",
+   "developer_company": "Sunrise FTL Ventures, LLLP (DBPR developer of record)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 35,
+   "size_max_m2": 116,
+   "price_min": null,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Fee simple condominium, no restriction on foreign buyers",
+   "rental_programme": "113-key hotel component added in revised plan; no owner rental terms",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "rooftop resident pool",
+    "hotel pool",
+    "parking garage"
+   ],
+   "lat": 26.138,
+   "lng": -80.107,
+   "permit_authority": "City of Fort Lauderdale; Florida DBPR Division of Condominiums",
+   "brochure_url": "https://condosandcondos.com/Pictures/1/4930158/Pdf/SERENO-Fort-Lauderdale-Condos-Brochure.pdf"
+  },
+  "positives": [
+   "Condo filing confirmed in Florida DBPR registry",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://condosandcondos.com/Pictures/1/4930158/Pdf/SERENO-Fort-Lauderdale-Condos-Brochure.pdf",
+   "https://floridayimby.com/?p=37216",
+   "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv",
+   "https://m.flsenate.gov/Statutes/718.202"
+  ],
+  "verified_score": 1
+ },
+ {
+  "slug": "one-tampa-kolter-urban",
+  "name": "ONE Tampa",
+  "developer": "Kolter Urban (KT North Ashley LLC)",
+  "area": "Downtown Tampa (520 N Tampa St)",
+  "country": "USA",
+  "market": "Tampa",
+  "stage": "under construction",
+  "url": "https://homesandcondostampa.com/tampa-condos/one-tampa.htm",
+  "docs_url": "https://floridayimby.com/2026/08/construction-tops-out-on-42-story-one-tampa-in-downtown-tampa.html",
+  "permit_number": "DBPR condominium filing PR77422",
+  "docs_listed": [
+   "225 residences, 1-3BR 1,200 to 2,723 sq ft, penthouses 3,700 to 4,200 sq ft (agent)",
+   "topped out Aug 2026, first residents fall 2027 (Florida YIMBY)",
+   "nearly 70% sold, closings from Q3 2027 (Tampa Bay Business & Wealth)",
+   "Florida DBPR filing PR77422 'One Tampa, a Condo' (KT North Ashley LLC)"
+  ],
+  "note": "42-storey, 225-residence tower by Kolter Urban, filed with Florida DBPR (PR77422, KT North Ashley LLC); topped out Aug 2026 with nearly 70% sold and closings expected from Q3 2027. Prices, floor plans and escrow terms are only given on request (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "USD",
+   "title": "freehold (fee simple condominium)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": true,
+   "permit_number": "DBPR PR77422",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Kolter Urban entities recorded Bayso Sarasota (150 units, 2023), Art House St. Pete (244 units, 2025) and Selene Fort Lauderdale (194 units, 2025) as DBPR condominiums",
+   "units": 225,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Florida DBPR developer summary lists PR77422 'One Tampa, a Condo', developer KT North Ashley LLC, mailing address 105 NE 1st St, Delray Beach (Kolter); no building permit number published",
+   "escrow": "Not published; Florida 718.202 statutory escrow for deposits up to 10%",
+   "progress": "Topped out Aug 2026 (Florida YIMBY, Tampa Bay Times, TBBW); about one year of interior work remains; no %",
+   "plans": "Floor plans on request only",
+   "record": "DBPR condo extracts show three Kolter condominiums recorded 2023-2025 (588 units) by KT entities at the same Delray Beach address",
+   "returns": "No return language"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Condo filed with Florida DBPR (PR77422) by KT North Ashley LLC",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv"
+   },
+   {
+    "claim": "Kolter delivered Bayso, Art House and Selene (recorded condos, 588 units)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www2.myfloridalicense.com/sto/file_download/extracts/Condo_CW.csv"
+   },
+   {
+    "claim": "Structure topped out Aug 2026 at 42 storeys",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://floridayimby.com/2026/08/construction-tops-out-on-42-story-one-tampa-in-downtown-tampa.html"
+   },
+   {
+    "claim": "Nearly 70% of 225 residences sold",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://tbbwmag.com/2026/08/07/one-tampa/"
+   },
+   {
+    "claim": "Closings from Q3 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tbbwmag.com/2026/08/07/one-tampa/"
+   },
+   {
+    "claim": "Height capped at 649 ft by FAA and aviation authority (cut from 55 storeys)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://tbbwmag.com/2026/08/07/one-tampa/"
+   },
+   {
+    "claim": "Year built 2026 (agent)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://floridayimby.com/2026/08/construction-tops-out-on-42-story-one-tampa-in-downtown-tampa.html"
+   },
+   {
+    "claim": "Hurricane delay of about two months largely recovered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tbbwmag.com/2026/08/07/one-tampa/"
+   },
+   {
+    "claim": "Deposits held in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://m.flsenate.gov/Statutes/718.202"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Delray Beach, Florida, USA",
+   "developer_company": "KT North Ashley LLC (DBPR developer of record)",
+   "developer_projects_delivered": 3,
+   "developer_units_delivered": 588,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": 2,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "3BR+den",
+    "penthouse"
+   ],
+   "size_min_m2": 111,
+   "size_max_m2": 390,
+   "price_min": null,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Fee simple condominium, no restriction on foreign buyers",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [],
+   "lat": 27.948,
+   "lng": -82.46,
+   "permit_authority": "City of Tampa Construction Services; Florida DBPR Division of Condominiums",
+   "brochure_url": null
+  },
+  "positives": [
+   "Condo filing and developer's recent deliveries confirmed in Florida DBPR registry",
+   "Topped out, reported by several independent outlets",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://homesandcondostampa.com/tampa-condos/one-tampa.htm",
+   "https://floridayimby.com/2026/08/construction-tops-out-on-42-story-one-tampa-in-downtown-tampa.html",
+   "https://tbbwmag.com/2026/08/07/one-tampa/",
+   "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv",
+   "https://www2.myfloridalicense.com/sto/file_download/extracts/Condo_CW.csv",
+   "https://m.flsenate.gov/Statutes/718.202"
+  ],
+  "verified_score": 3
+ },
+ {
+  "slug": "hotel-ora-private-residences-tampa-arc",
+  "name": "Hotel ORA + Private Residences",
+  "developer": "ARC Realty Group / ARC Tampa Development LLC with Prosper Group and Sunwest Construction",
+  "area": "Downtown Tampa / Channel District (1101 E Jackson St)",
+  "country": "USA",
+  "market": "Tampa",
+  "stage": "off-plan",
+  "url": "https://www.condohotelcenter.com/?p=36642",
+  "docs_url": "https://floridayimby.com/2026/04/crane-and-foundation-permits-filed-for-ora-hotel-and-residences-in-tampa.html",
+  "permit_number": "DBPR condominium filing PR77776 (private residences only)",
+  "docs_listed": [
+   "condo-hotel suites from USD 646,700, penthouses USD 1.77M to 3.53M (agent)",
+   "lease-back with 'Guaranteed 8% of the purchase price' for two years and optional sell-back (agent)",
+   "management fee 15% then 20% of gross (TBBW)",
+   "FAA crane, foundation and utility permits filed, not issued (Florida YIMBY, Apr 2026)",
+   "Florida DBPR filing PR77776 'ORA Private Residences' (ARC Tampa Development LLC)"
+  ],
+  "note": "39-storey condo-hotel of 627 suites and 31 residences marketed with a two-year 'Guaranteed 8%' lease-back; presales passed USD 200M in late 2025 but in Apr 2026 foundation permits were still under review and groundbreaking had slipped from Mar 2026 to an expected summer start. Only the private residences appear in the Florida DBPR filing list (PR77776) (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 646700,
+   "currency": "USD",
+   "title": "freehold (fee simple condo-hotel unit)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 8,
+   "completion": "2029-Q4",
+   "permit_claim": false,
+   "permit_number": "DBPR PR77776",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 658,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": false,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Florida DBPR developer summary lists PR77776 'ORA Private Residences, a Condo within a portion of a building', developer ARC Tampa Development LLC, Clearwater; no DBPR filing found under a hotel-suite name. City foundation permits filed but not issued as of Apr 2026",
+   "escrow": "Not published; Florida 718.202 statutory escrow for deposits up to 10%",
+   "progress": "Not started as of Apr 2026; groundbreaking expected summer 2026 pending approvals (Florida YIMBY); no later start confirmed",
+   "plans": "Only unit types and interior photos",
+   "record": "Agent says ARC has constructed over 45 projects; none named",
+   "returns": "Agent page: 'Guaranteed 8% of the purchase price' after expenses for two years in the lease-back, then optional sell-back to developer at market value less 6%"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Private residences filed with Florida DBPR (PR77776) by ARC Tampa Development LLC",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv"
+   },
+   {
+    "claim": "Condo-hotel suites filed with DBPR",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv"
+   },
+   {
+    "claim": "Construction to begin January 2026 (agent)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://floridayimby.com/2026/04/crane-and-foundation-permits-filed-for-ora-hotel-and-residences-in-tampa.html"
+   },
+   {
+    "claim": "Foundation and crane permits filed, not yet issued (Apr 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://floridayimby.com/2026/04/crane-and-foundation-permits-filed-for-ora-hotel-and-residences-in-tampa.html"
+   },
+   {
+    "claim": "Presales over USD 200M",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://floridayimby.com/2025/11/hotel-ora-private-residences-reaches-major-sales-milestone-ahead-of-2026-groundbreaking.html"
+   },
+   {
+    "claim": "658 units (627 suites, 31 residences), 39 storeys",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://floridayimby.com/2026/04/crane-and-foundation-permits-filed-for-ora-hotel-and-residences-in-tampa.html"
+   },
+   {
+    "claim": "Guaranteed 8% return for two years in lease-back",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.condohotelcenter.com/?p=36642"
+   },
+   {
+    "claim": "Construction financing in place",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tbbwmag.com/2026/01/22/hotel-ora-approaching-new-pricing-phase/"
+   },
+   {
+    "claim": "Remaining 42 units to be repriced about 40% higher",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tbbwmag.com/2026/01/22/hotel-ora-approaching-new-pricing-phase/"
+   },
+   {
+    "claim": "Completion December 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.condohotelcenter.com/?p=36642"
+   },
+   {
+    "claim": "Developer has built over 45 projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.condohotelcenter.com/?p=36642"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Clearwater, Florida, USA",
+   "developer_company": "ARC Tampa Development LLC (DBPR developer of record for private residences)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2029-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio suite",
+    "1BR suite",
+    "2BR suite",
+    "penthouse residence 2-4BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 646700,
+   "price_max": 3530500,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Fee simple condo-hotel unit, no restriction on foreign buyers",
+   "rental_programme": "Optional lease-back with 'Guaranteed 8%' for two years (agent); management fee 15% of gross for two years then 20% (TBBW); furniture package USD 18,000 to 31,000 required",
+   "service_charge": null,
+   "brand": "Hotel ORA",
+   "amenities": [
+    "convention space 15,000 sq ft",
+    "10,000 sq ft restaurant",
+    "ground-floor retail"
+   ],
+   "lat": 27.95,
+   "lng": -82.451,
+   "permit_authority": "City of Tampa Construction Services; Florida DBPR Division of Condominiums",
+   "brochure_url": null
+  },
+  "positives": [
+   "Residences filing confirmed in Florida DBPR registry",
+   "Rental management fee terms published"
+  ],
+  "flags": [
+   {
+    "text": "Florida YIMBY reported in Apr 2026 that groundbreaking, originally targeted for Mar 2026, had moved to an anticipated summer start pending final approvals, with foundation permits still under review",
+    "source": "https://floridayimby.com/2026/04/crane-and-foundation-permits-filed-for-ora-hotel-and-residences-in-tampa.html"
+   }
+  ],
+  "sources": [
+   "https://www.condohotelcenter.com/?p=36642",
+   "https://floridayimby.com/2026/04/crane-and-foundation-permits-filed-for-ora-hotel-and-residences-in-tampa.html",
+   "https://floridayimby.com/2025/11/hotel-ora-private-residences-reaches-major-sales-milestone-ahead-of-2026-groundbreaking.html",
+   "https://tbbwmag.com/2026/01/22/hotel-ora-approaching-new-pricing-phase/",
+   "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv",
+   "https://m.flsenate.gov/Statutes/718.202"
+  ],
+  "verified_score": 2
+ },
+ {
+  "slug": "millenia-park-orlando-mir-developments",
+  "name": "Millenia Park",
+  "developer": "MIR Developments (Millenia Park Tower I-VIII LLCs)",
+  "area": "Millenia / near Epic Universe, Orlando (5587 Millenia Park Blvd)",
+  "country": "USA",
+  "market": "Orlando",
+  "stage": "under construction",
+  "url": "https://mikechenrealtor.com/real-estate-blog/millenia-park-orlando-one-of-the-best-condos-to-purchase-in-orlando/",
+  "docs_url": "https://floridayimby.com/2024/11/condos-at-millenia-park-planned-for-a-2025-delivery-near-universals-epic-universe.html",
+  "permit_number": "DBPR condominium filings PR77061, PR77062, PR77063, PR77056, PR77135, PR77136, PR77332",
+  "docs_listed": [
+   "Florida DBPR: Towers II, III, IV recorded Nov 2025 to May 2026 (120 units each); Towers I, V, VI, VII filed, not yet recorded",
+   "agent price list from USD 269,900 (1BR+den) with HOA figures",
+   "deposit schedule 30% at contract, 20% at 60 days, 20% top-off, 30% at closing (agent, 2023)",
+   "floor plan images 1BR+den to 3BR+den (agent)",
+   "8 buildings, 960 condos, construction started Q1 2023 (Florida YIMBY)"
+  ],
+  "note": "Eight-building, 960-condo community on the former Eaglewood golf course near Epic Universe by MIR Developments; three towers (360 units) are now recorded condominiums in the Florida DBPR registry while Towers I, V, VI and VII remain filed but unrecorded. Agent-published deposit schedule calls for 70% before closing, well above the 10% that Florida law must keep in escrow (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 269900,
+   "currency": "USD",
+   "title": "freehold (fee simple condominium)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": true,
+   "permit_number": "DBPR PR77061 / PR77135 / PR77136 / PR77332 (unrecorded towers)",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 38,
+   "progress_updates": true,
+   "developer_delivered": "Millenia Park Towers II, III and IV (120 units each) recorded as condominiums with DBPR on 27 May 2026, 18 Dec 2025 and 20 Nov 2025",
+   "units": 960,
+   "payment_plan": "30% at contract, 20% after 60 days, 20% top-off, 30% at closing (agent, 2023)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Florida DBPR developer summary lists Millenia Park Tower I to VII filings (PR77061, PR77062, PR77063, PR77056, PR77135, PR77136, PR77332) by single-tower LLCs at 11900 Biscayne Blvd, North Miami",
+   "escrow": "No escrow agent published; agent deposit schedule requires 70% before closing while Florida 718.202 only ring-fences the first 10%, with the rest usable for construction if the contract allows",
+   "progress": "DBPR condo extract shows Towers II, III and IV recorded (360 of 960 units, about 38% by units); construction began Q1 2023 (Florida YIMBY)",
+   "plans": "Agent page shows three floor plan images with prices and HOA by type",
+   "record": "Same developer's first three towers recorded with DBPR in 2025-2026",
+   "returns": "No yield or guarantee; agent offers rental projections on request only"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Seven tower condominiums filed with Florida DBPR",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv"
+   },
+   {
+    "claim": "Towers II, III, IV completed and recorded (120 units each)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www2.myfloridalicense.com/sto/file_download/extracts/condo_CE.csv"
+   },
+   {
+    "claim": "Project delivery in 2025",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://www2.myfloridalicense.com/sto/file_download/extracts/condo_CE.csv"
+   },
+   {
+    "claim": "8 buildings, 960 condos on 43 acres",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://floridayimby.com/2024/11/condos-at-millenia-park-planned-for-a-2025-delivery-near-universals-epic-universe.html"
+   },
+   {
+    "claim": "Construction started Q1 2023",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://floridayimby.com/2024/11/condos-at-millenia-park-planned-for-a-2025-delivery-near-universals-epic-universe.html"
+   },
+   {
+    "claim": "60% of first phase sold (2024)",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://floridayimby.com/2024/11/condos-at-millenia-park-planned-for-a-2025-delivery-near-universals-epic-universe.html"
+   },
+   {
+    "claim": "Prices from USD 269,900",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mikechenrealtor.com/real-estate-blog/millenia-park-orlando-one-of-the-best-condos-to-purchase-in-orlando/"
+   },
+   {
+    "claim": "Deposits 70% before closing",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mikechenrealtor.com/real-estate-blog/millenia-park-orlando-one-of-the-best-condos-to-purchase-in-orlando/"
+   },
+   {
+    "claim": "First 10% of deposits held in escrow by independent agent",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://m.flsenate.gov/Statutes/718.202"
+   },
+   {
+    "claim": "General contractor LB Construction of South Florida",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://floridayimby.com/2024/11/condos-at-millenia-park-planned-for-a-2025-delivery-near-universals-epic-universe.html"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "North Miami / Aventura, Florida, USA",
+   "developer_company": "Millenia Park Tower I-VIII LLCs (DBPR developers of record)",
+   "developer_projects_delivered": 3,
+   "developer_units_delivered": 360,
+   "listed_or_audited": null,
+   "construction_start": "2023-01",
+   "handover_promised": null,
+   "original_handover": "2025",
+   "delay_months": null,
+   "unit_types": [
+    "1BR+den",
+    "2BR+den",
+    "3BR+den"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 269900,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 30,
+   "payment_plan": "30/20/20/30",
+   "foreign_ownership": "Fee simple condominium, no restriction on foreign buyers",
+   "rental_programme": null,
+   "service_charge": "HOA USD 187.50 to 286.75 per month by type (agent, 2023)",
+   "brand": null,
+   "amenities": [
+    "25,000 sq ft retail"
+   ],
+   "lat": 28.455,
+   "lng": -81.43,
+   "permit_authority": "Orange County / City of Orlando building permits; Florida DBPR Division of Condominiums",
+   "brochure_url": null
+  },
+  "positives": [
+   "Three completed towers confirmed as recorded condominiums in DBPR registry",
+   "Price list, HOA and floor plans published by agent",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://mikechenrealtor.com/real-estate-blog/millenia-park-orlando-one-of-the-best-condos-to-purchase-in-orlando/",
+   "https://floridayimby.com/2024/11/condos-at-millenia-park-planned-for-a-2025-delivery-near-universals-epic-universe.html",
+   "https://floridaconnexion.com/?p=7621",
+   "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv",
+   "https://www2.myfloridalicense.com/sto/file_download/extracts/condo_CE.csv",
+   "https://m.flsenate.gov/Statutes/718.202"
+  ],
+  "verified_score": 3
+ },
+ {
+  "slug": "175-east-82nd-street-douglaston",
+  "name": "175 East 82nd Street",
+  "developer": "Douglaston Development (East82Owner, LLC)",
+  "area": "Upper East Side / Yorkville, Manhattan (1448 Third Ave)",
+  "country": "USA",
+  "market": "New York",
+  "stage": "under construction",
+  "url": "https://www.bhsusa.com/blog/young-new-development-group-leads-sales-at-175-east-82nd-street-as-new-rendering-is-revealed",
+  "docs_url": "https://www.bhsusa.com/blog/young-new-development-group-leads-sales-at-175-east-82nd-street-as-new-rendering-is-revealed",
+  "permit_number": "NYC DOB new building job M00995463 (GC permit M00995463-I1-GC)",
+  "docs_listed": [
+   "73 residences, 1BR to 6BR, three duplex penthouses (sales agent, May 2026)",
+   "topped out, facade past midpoint, completion fall 2027 (sales agent)",
+   "NYC DOB NB job M00995463: 73 dwelling units, 38 storeys, owner East82Owner, LLC, GC permit issued 25 Mar 2025, renewed to 12 Nov 2026",
+   "USD 270.5M construction loan from MSD Partners (PincusCo, Jun 2024)"
+  ],
+  "note": "39-storey, 73-residence CetraRuddy tower by Douglaston at Third Ave and 82nd St; NYC DOB records show new building job M00995463 (owner East82Owner, LLC) with the general construction permit issued Mar 2025. Topped out by May 2026 with completion targeted fall 2027; no prices, plans or offering plan file number published yet (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "USD",
+   "title": "freehold (fee simple condominium)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": "NYC DOB M00995463-I1-GC",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 73,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "NYC Open Data DOB NOW job filings: M00995463 at 1448 3 Avenue, block 1511 lot 31, owner East82Owner, LLC, 73 proposed dwelling units, 38 storeys, status Permit Entire; GC work permit M00995463-I1-GC issued 25 Mar 2025 and renewed 12 Nov 2025. Sales materials do not quote it",
+   "escrow": "No offering plan or escrow agent published; NY law requires deposits held in escrow under the AG-accepted offering plan, but no file number found",
+   "progress": "Sales agent (5 May 2026): topped out, facade past midpoint; DOB mini-crane permit issued Apr 2026",
+   "plans": "No floor plans published; StreetEasy shows no listings and sales start 1 Jan 2027",
+   "record": "No delivered projects listed on pages opened",
+   "returns": "No return language"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "registry",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "New building permit for 73 units, 38 storeys, owner East82Owner, LLC",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://data.cityofnewyork.us/resource/w9ak-ipjd.json?$where=block='1511' AND job_type='New Building'"
+   },
+   {
+    "claim": "General construction permit active (renewed to Nov 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://data.cityofnewyork.us/resource/rbx6-tga4.json?$where=job_filing_number like 'M00995463%'"
+   },
+   {
+    "claim": "Tower is 39 storeys (agent)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://data.cityofnewyork.us/resource/w9ak-ipjd.json?$where=block='1511' AND job_type='New Building'"
+   },
+   {
+    "claim": "73 residences",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://data.cityofnewyork.us/resource/w9ak-ipjd.json?$where=block='1511' AND job_type='New Building'"
+   },
+   {
+    "claim": "Topped out with facade past midpoint (May 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.bhsusa.com/blog/young-new-development-group-leads-sales-at-175-east-82nd-street-as-new-rendering-is-revealed"
+   },
+   {
+    "claim": "Completion fall 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.bhsusa.com/blog/young-new-development-group-leads-sales-at-175-east-82nd-street-as-new-rendering-is-revealed"
+   },
+   {
+    "claim": "USD 270.5M construction loan from MSD Partners",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.pincusco.com/douglaston-signs-270-5m-construction-loan-with-msd-partners-for-72-unit-project-in-carnegie-hill/"
+   },
+   {
+    "claim": "Offering plan accepted by NY Attorney General",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://streeteasy.com/building/175-east-82-street"
+   },
+   {
+    "claim": "Prices published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://streeteasy.com/building/175-east-82-street"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "New York, USA",
+   "developer_company": "East82Owner, LLC (DOB owner of record)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-10",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "5BR",
+    "6BR",
+    "duplex penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Fee simple condominium, no restriction on foreign buyers",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [],
+   "lat": 40.776,
+   "lng": -73.956,
+   "permit_authority": "NYC Department of Buildings; NY Attorney General (condo offering plans)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Building permit and unit count confirmed in NYC DOB open data",
+   "Construction loan reported by independent press",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.bhsusa.com/blog/young-new-development-group-leads-sales-at-175-east-82nd-street-as-new-rendering-is-revealed",
+   "https://streeteasy.com/building/175-east-82-street",
+   "https://www.pincusco.com/douglaston-signs-270-5m-construction-loan-with-msd-partners-for-72-unit-project-in-carnegie-hill/",
+   "https://data.cityofnewyork.us/resource/w9ak-ipjd.json?$where=block='1511' AND job_type='New Building'",
+   "https://data.cityofnewyork.us/resource/rbx6-tga4.json?$where=job_filing_number like 'M00995463%'"
+  ],
+  "verified_score": 2
+ },
+ {
+  "slug": "the-windsor-23-ocean-parkway-aview",
+  "name": "The Windsor",
+  "developer": "Aview Equities",
+  "area": "Windsor Terrace, Brooklyn (23 Ocean Parkway)",
+  "country": "USA",
+  "market": "New York",
+  "stage": "under construction",
+  "url": "https://streeteasy.com/building/the-windsor",
+  "docs_url": "https://www.cityrealty.com/nyc/market-insight/features/future-nyc/peek-inside-the-windsor-prospect-park-adjacent-condos-selling-491400/71644",
+  "permit_number": "NYC DOB new building job B00501131",
+  "docs_listed": [
+   "unit-by-unit price list with sizes, studios from USD 560,000 (StreetEasy, 31 Oct 2026)",
+   "floor plan links for listed units",
+   "sales started 20 May 2026, occupancy expected Q4 2026 (New York YIMBY)",
+   "NYC DOB NB job B00501131: 9 storeys, 131 proposed dwelling units, owner Aview Equities, permit entire since May 2022"
+  ],
+  "note": "Nine-storey condo of 98 to 99 homes next to Prospect Park, sales launched May 2026 with occupancy expected Q4 2026; NYC DOB records show new building job B00501131 permitted in 2022 under owner Aview Equities for 131 dwelling units, a different count from the sales listings. No offering plan file number or escrow details found (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 560000,
+   "currency": "USD",
+   "title": "freehold (fee simple condominium)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": false,
+   "permit_number": "NYC DOB B00501131",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 98,
+   "payment_plan": null,
+   "price_per_m2": 16552
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "NYC Open Data DOB NOW job filings: B00501131 at 23 Ocean Parkway, block 5322 lot 4, owner Aview Equities, New Building, 9 storeys, 131 proposed dwelling units, Permit Entire approved 31 May 2022, amendments approved to Jul 2026",
+   "escrow": "No offering plan file number or escrow agent published",
+   "progress": "New York YIMBY (Jun 2026): sales launched, occupancy anticipated Q4 2026; CityRealty shows summer 2025 construction photos",
+   "plans": "StreetEasy shows floor plan links and sizes per unit",
+   "record": "No completed projects named for Aview Equities",
+   "returns": "No return language"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "New building permit at 23 Ocean Parkway, owner Aview Equities",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://data.cityofnewyork.us/resource/w9ak-ipjd.json?$where=house_no='23' AND street_name like '%OCEAN P%'"
+   },
+   {
+    "claim": "98 condominiums (CityRealty) / 99 units (StreetEasy)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://data.cityofnewyork.us/resource/w9ak-ipjd.json?$where=house_no='23' AND street_name like '%OCEAN P%'"
+   },
+   {
+    "claim": "Developer is Local Development Group (New York YIMBY)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://newyorkyimby.com/2026/06/sales-launch-for-the-windsor-at-23-ocean-parkway-in-windsor-terrace-brooklyn.html"
+   },
+   {
+    "claim": "Nine storeys",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://data.cityofnewyork.us/resource/w9ak-ipjd.json?$where=house_no='23' AND street_name like '%OCEAN P%'"
+   },
+   {
+    "claim": "Occupancy Q4 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://newyorkyimby.com/2026/06/sales-launch-for-the-windsor-at-23-ocean-parkway-in-windsor-terrace-brooklyn.html"
+   },
+   {
+    "claim": "Construction permitted since 2022 (long build)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://data.cityofnewyork.us/resource/w9ak-ipjd.json?$where=house_no='23' AND street_name like '%OCEAN P%'"
+   },
+   {
+    "claim": "Studios from USD 560,000; 5 units in contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://streeteasy.com/building/the-windsor"
+   },
+   {
+    "claim": "Earlier launch prices from USD 491,400",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cityrealty.com/nyc/market-insight/features/future-nyc/peek-inside-the-windsor-prospect-park-adjacent-condos-selling-491400/71644"
+   },
+   {
+    "claim": "Offering plan accepted by NY Attorney General",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://streeteasy.com/building/the-windsor"
+   },
+   {
+    "claim": "Lawsuit by neighbour Brooklyn Equine resolved ('no more conflict')",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cityrealty.com/nyc/market-insight/features/future-nyc/peek-inside-the-windsor-prospect-park-adjacent-condos-selling-491400/71644"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Brooklyn, New York, USA",
+   "developer_company": "Aview Equities (DOB owner of record)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2022",
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 34,
+   "size_max_m2": 111,
+   "price_min": 560000,
+   "price_max": 1725000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Fee simple condominium, no restriction on foreign buyers",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "attended lobby",
+    "gym",
+    "children's playroom",
+    "media room",
+    "roof deck",
+    "garage parking",
+    "coworking lounge",
+    "pet wash"
+   ],
+   "lat": 40.653,
+   "lng": -73.973,
+   "permit_authority": "NYC Department of Buildings; NY Attorney General (condo offering plans)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Full unit-by-unit price list with sizes published",
+   "Building permit confirmed in NYC DOB open data",
+   "No guaranteed-return language"
+  ],
+  "flags": [
+   {
+    "text": "CityRealty reported a July 2025 lawsuit filed by neighbouring Brooklyn Equine; the developer's founder said there is no more conflict",
+    "source": "https://www.cityrealty.com/nyc/market-insight/features/future-nyc/peek-inside-the-windsor-prospect-park-adjacent-condos-selling-491400/71644"
+   }
+  ],
+  "sources": [
+   "https://streeteasy.com/building/the-windsor",
+   "https://www.cityrealty.com/nyc/market-insight/features/future-nyc/peek-inside-the-windsor-prospect-park-adjacent-condos-selling-491400/71644",
+   "https://newyorkyimby.com/2026/06/sales-launch-for-the-windsor-at-23-ocean-parkway-in-windsor-terrace-brooklyn.html",
+   "https://data.cityofnewyork.us/resource/w9ak-ipjd.json?$where=house_no='23' AND street_name like '%OCEAN P%'"
+  ],
+  "verified_score": 2
+ },
+ {
+  "slug": "pendry-residences-nashville-someraroad",
+  "name": "Pendry Residences Nashville",
+  "developer": "SomeraRoad with Trestle Studio (Pendry, a Montage International brand)",
+  "area": "The Gulch, Nashville (One Paseo Drive, Paseo South Gulch)",
+  "country": "USA",
+  "market": "Nashville",
+  "stage": "under construction",
+  "url": "https://tophotel.news/introducing-pendry-residences-nashville/",
+  "docs_url": "https://tophotel.news/introducing-pendry-residences-nashville/",
+  "permit_number": null,
+  "docs_listed": [
+   "146 residences, 1BR to 4BR, ten penthouses, 30-storey tower with 180-key hotel",
+   "construction underway, completion 2027",
+   "USD 253M construction loan from Bank OZK and InterVest (Mar 2025)",
+   "prices from about USD 1.3M, USD 26M of presales closed in Q1 2026 (The Real Deal)"
+  ],
+  "note": "30-storey Pendry hotel and residences tower in the Gulch with 146 condos above a 180-key hotel, financed by a USD 253M Bank OZK-led construction loan in Mar 2025; completion expected end 2027. No permit number, escrow arrangement, floor plans or developer delivery record published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1300000,
+   "currency": "USD",
+   "title": "freehold (fee simple condominium)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 146,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Construction underway per developer announcement; loan closed Mar 2025 with groundbreaking planned immediately (REBusiness); no % or dated photos",
+   "plans": "Only the Paseo Penthouse size (5,993 sq ft) is published",
+   "record": "No completed condominium projects named for SomeraRoad or Trestle Studio",
+   "returns": "No rental programme or return language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "USD 253M construction loan from Bank OZK and InterVest",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://rebusinessonline.com/walker-dunlop-arranges-253m-construction-loan-for-pendry-nashville-hotel-and-condominium-tower/"
+   },
+   {
+    "claim": "146 residences and 180 hotel keys in a 30-storey tower",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://rebusinessonline.com/walker-dunlop-arranges-253m-construction-loan-for-pendry-nashville-hotel-and-condominium-tower/"
+   },
+   {
+    "claim": "Construction underway",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tophotel.news/introducing-pendry-residences-nashville/"
+   },
+   {
+    "claim": "Opening 2027 (loan announcement)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://therealdeal.com/national/2026/07/09/pendry-nashville-taps-elliman-agent-to-woo-new-york-buyers/"
+   },
+   {
+    "claim": "Construction to finish end 2027, hotel opening early 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://therealdeal.com/national/2026/07/09/pendry-nashville-taps-elliman-agent-to-woo-new-york-buyers/"
+   },
+   {
+    "claim": "USD 26M presales closed in Q1 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://therealdeal.com/national/2026/07/09/pendry-nashville-taps-elliman-agent-to-woo-new-york-buyers/"
+   },
+   {
+    "claim": "Prices from about USD 1.3M",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://therealdeal.com/national/2026/07/09/pendry-nashville-taps-elliman-agent-to-woo-new-york-buyers/"
+   },
+   {
+    "claim": "Building permit issued by Metro Nashville Codes",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tophotel.news/introducing-pendry-residences-nashville/"
+   },
+   {
+    "claim": "Developer has delivered condo projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tophotel.news/introducing-pendry-residences-nashville/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-03",
+   "handover_promised": "2027-Q4",
+   "original_handover": "2027",
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": 557,
+   "price_min": 1300000,
+   "price_max": 7000000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Fee simple condominium, no restriction on foreign buyers",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Pendry (Montage International)",
+   "amenities": [
+    "rooftop pool",
+    "speakeasy with golf simulator",
+    "whiskey lounge",
+    "billiards salon",
+    "fitness center",
+    "pet spa",
+    "Spa Pendry access",
+    "residential staff"
+   ],
+   "lat": 36.149,
+   "lng": -86.785,
+   "permit_authority": "Metro Nashville Department of Codes Administration",
+   "brochure_url": null
+  },
+  "positives": [
+   "Construction loan and lenders reported by independent press",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://tophotel.news/introducing-pendry-residences-nashville/",
+   "https://rebusinessonline.com/walker-dunlop-arranges-253m-construction-loan-for-pendry-nashville-hotel-and-condominium-tower/",
+   "https://therealdeal.com/national/2026/07/09/pendry-nashville-taps-elliman-agent-to-woo-new-york-buyers/"
+  ],
+  "verified_score": 1
+ },
+ {
+  "slug": "nashville-edition-residences-tidal",
+  "name": "The Residences at The Nashville EDITION",
+  "developer": "Tidal Real Estate Partners with Left Lane Development (Marriott EDITION brand)",
+  "area": "The Gulch, Nashville (1110 Porter St)",
+  "country": "USA",
+  "market": "Nashville",
+  "stage": "off-plan",
+  "url": "https://www.zillow.com/community/residences-at-nashville-edition/452753046_zpid",
+  "docs_url": "https://hospitalitydesign.com/news/development-destinations/the-nashville-edition-hotel-residences/",
+  "permit_number": null,
+  "docs_listed": [
+   "84 condominiums on the top 15 floors of a 28-storey tower above a 261-room hotel",
+   "groundbreaking Feb to Mar 2026, completion 2028",
+   "USD 400M construction financing: USD 265M senior from Madison Realty Capital and Newbond, mezzanine from KSL (The Real Deal)",
+   "prices expected from above USD 1.6M, 1BR to 4BR"
+  ],
+  "note": "84 EDITION-branded condos above a 261-room hotel in the Gulch; ground was broken in early 2026 with completion scheduled for 2028 and USD 400M of construction financing reported in Dec 2025 (a Walker & Dunlop release gives USD 371.5M). No prices list, floor plans, permit number or escrow terms published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1600000,
+   "currency": "USD",
+   "title": "freehold (fee simple condominium)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 84,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Groundbreaking reported by Hospitality Design (5 Mar 2026) and GlobeSt (26 Feb 2026 headline: construction starts); no % published",
+   "plans": "No floor plans; Zillow page has no units listed",
+   "record": "No delivered projects for Tidal Real Estate Partners named on pages opened",
+   "returns": "No return language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "84 condominiums and 261 hotel rooms",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://therealdeal.com/national/nashville/2025/12/12/developer-of-nashville-edition-lands-400m-in-financing/"
+   },
+   {
+    "claim": "USD 400M construction financing",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://therealdeal.com/national/nashville/2025/12/12/developer-of-nashville-edition-lands-400m-in-financing/"
+   },
+   {
+    "claim": "Financing of USD 371.5M (arranger release title)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://therealdeal.com/national/nashville/2025/12/12/developer-of-nashville-edition-lands-400m-in-financing/"
+   },
+   {
+    "claim": "Ground broken early 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://hospitalitydesign.com/news/development-destinations/the-nashville-edition-hotel-residences/"
+   },
+   {
+    "claim": "Completion 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://hospitalitydesign.com/news/development-destinations/the-nashville-edition-hotel-residences/"
+   },
+   {
+    "claim": "Built 2026 (Zillow metadata)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://hospitalitydesign.com/news/development-destinations/the-nashville-edition-hotel-residences/"
+   },
+   {
+    "claim": "Prices from above USD 1.6M",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://therealdeal.com/national/nashville/2025/12/12/developer-of-nashville-edition-lands-400m-in-financing/"
+   },
+   {
+    "claim": "Strong initial sales reception",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://therealdeal.com/national/nashville/2025/12/12/developer-of-nashville-edition-lands-400m-in-financing/"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://hospitalitydesign.com/news/development-destinations/the-nashville-edition-hotel-residences/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "New York, USA",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-02",
+   "handover_promised": "2028",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 1600000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Fee simple condominium, no restriction on foreign buyers",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "EDITION (Marriott International)",
+   "amenities": [
+    "fitness center",
+    "golf simulator",
+    "lounges",
+    "hotel services"
+   ],
+   "lat": 36.156,
+   "lng": -86.784,
+   "permit_authority": "Metro Nashville Department of Codes Administration",
+   "brochure_url": null
+  },
+  "positives": [
+   "Construction financing and groundbreaking reported by independent press",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.zillow.com/community/residences-at-nashville-edition/452753046_zpid",
+   "https://hospitalitydesign.com/news/development-destinations/the-nashville-edition-hotel-residences/",
+   "https://therealdeal.com/national/nashville/2025/12/12/developer-of-nashville-edition-lands-400m-in-financing/"
+  ],
+  "verified_score": 1
  }
 ]

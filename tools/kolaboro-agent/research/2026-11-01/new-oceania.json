@@ -248,7 +248,7 @@
   "verification": {
    "permit": "developer",
    "escrow": "none",
-   "progress": "independent",
+   "progress": "developer",
    "plans": "none",
    "record": "developer",
    "returns": "developer"
@@ -286,26 +286,26 @@
    },
    {
     "claim": "75% of apartments sold by March 2026",
-    "status": "verified",
-    "by": "independent",
+    "status": "unverified",
+    "by": "none",
     "source": "https://www.apartments.com.au/news/qld/harmony-on-broadbeach-races-to-75-per-cent-sold-as-gold-partners-australia-target-construction-commencement"
    },
    {
     "claim": "Construction starts Q2 2026, completion late 2028",
     "status": "unverified",
-    "by": "independent",
+    "by": "none",
     "source": "https://www.apartments.com.au/news/qld/harmony-on-broadbeach-races-to-75-per-cent-sold-as-gold-partners-australia-target-construction-commencement"
    },
    {
     "claim": "Prices from AUD 975,000 (launch article) vs AUD 1,300,000 (current listing)",
     "status": "contradicted",
-    "by": "independent",
+    "by": "none",
     "source": "https://www.apartments.com.au/news/qld/harmony-on-broadbeach-launches-to-booming-gold-coast-suburb"
    },
    {
     "claim": "Unit count 113 at launch vs 101 on current listing",
     "status": "contradicted",
-    "by": "independent",
+    "by": "none",
     "source": "https://www.apartments.com.au/news/qld/harmony-on-broadbeach-launches-to-booming-gold-coast-suburb"
    },
    {
@@ -363,7 +363,7 @@
    "permit_authority": "City of Gold Coast (Planning Act 2016, Queensland)",
    "brochure_url": null
   },
-  "verified_score": 1,
+  "verified_score": 0,
   "sources": [
    "https://www.apartments.com.au/new-apartments/2797-gold-coast-highway-broadbeach",
    "https://www.apartments.com.au/news/qld/harmony-on-broadbeach-races-to-75-per-cent-sold-as-gold-partners-australia-target-construction-commencement",
@@ -373,6 +373,772 @@
    "https://abr.business.gov.au/ABN/View?abn=99686447325",
    "https://www.kollosche.com.au/property/2797-gold-coast-highway-broadbeach",
    "https://www.hsfkramer.com/notes/realestate/2025-posts/firb-update",
+   "https://propertymarkets.news/updated-firb-regulations-explained-off-the-plan-apartments-unaffected/"
+  ]
+ },
+ {
+  "slug": "palmera-residences-central-equity",
+  "name": "Palmera Residences",
+  "developer": "Central Equity",
+  "area": "Northcliffe, Surfers Paradise (18 Garfield Terrace)",
+  "country": "Australia",
+  "market": "Gold Coast",
+  "stage": "under construction",
+  "url": "https://www.apartments.com.au/new-apartments/palmera-residences-gold-coast-18-garfield-terrace-surfers-paradise-qld-4217",
+  "docs_url": "https://www.apartments.com.au/new-apartments/palmera-residences-gold-coast-18-garfield-terrace-surfers-paradise-qld-4217",
+  "permit_number": null,
+  "docs_listed": [
+   "unit-level prices for 3BR residences (AUD 2.21m to 4.52m on listing)",
+   "one sample floor plan (Level 47 sky home), others in gated brochure",
+   "estimated completion 2029",
+   "progress tracker: plans approved, construction started",
+   "builder Multiplex, financier NAB"
+  ],
+  "note": "52-level, 347-apartment tower by Melbourne developer Central Equity, built by Multiplex with NAB construction finance; first crane installed by September 2026 and sales above AUD 400m reported. No DA number, deposit arrangement or construction percentage is published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 2210000,
+   "currency": "AUD",
+   "title": "freehold strata",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "More than 85 residential developments with combined end value above AUD 8bn, about 40,000 residents housed in Melbourne CBD and Southbank (stated in apartments.com.au article)",
+   "units": 347,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Listing tracker says plans approved; no City of Gold Coast application number found",
+   "escrow": "No deposit holding arrangement published",
+   "progress": "Dated milestones reported: construction underway May 2026, first crane September 2026; no %",
+   "plans": "Sample floor plan on Level 47 listing, full set in brochure",
+   "record": "Developer track record of 85+ projects stated; long-standing operating company on the Australian Business Register",
+   "returns": "No rental programme or yield marketing"
+  },
+  "positives": [
+   "Tier 1 builder (Multiplex) confirmed on builder's own site",
+   "Bank construction finance (NAB) reported by trade press",
+   "Developer operating company Central Equity Limited registered with an ACN from the 1980s series",
+   "Construction underway before full sales launch"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction underway, Multiplex as builder",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.multiplex.global/projects/palmera-residences/"
+   },
+   {
+    "claim": "First crane installed (Sept 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/news/qld/first-crane-arrives-as-multiplex-gets-moving-on-palmera-residences"
+   },
+   {
+    "claim": "NAB is construction financier",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/news/qld/nab-funds-1-billion-surfers-paradise-apartment-development-palmera"
+   },
+   {
+    "claim": "52 levels, about AUD 1bn project",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.multiplex.global/projects/palmera-residences/"
+   },
+   {
+    "claim": "347 apartments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/news/qld/nab-funds-1-billion-surfers-paradise-apartment-development-palmera"
+   },
+   {
+    "claim": "Developer company Central Equity Limited registered and active",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://abr.business.gov.au/Search/ResultsActive?SearchText=Central%20Equity%20Limited"
+   },
+   {
+    "claim": "85+ developments delivered since 1987",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/news/qld/nab-funds-1-billion-surfers-paradise-apartment-development-palmera"
+   },
+   {
+    "claim": "Sales above AUD 400m",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/news/qld/palmera-residences-fly-out-the-door-as-sales-pass-400-million"
+   },
+   {
+    "claim": "Prices from AUD 2.21m (listing) vs AUD 2.95m (July 2026 article)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.apartments.com.au/news/qld/palmera-residences-fly-out-the-door-as-sales-pass-400-million"
+   },
+   {
+    "claim": "Completion 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/new-apartments/palmera-residences-gold-coast-18-garfield-terrace-surfers-paradise-qld-4217"
+   },
+   {
+    "claim": "Development approval granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/new-apartments/palmera-residences-gold-coast-18-garfield-terrace-surfers-paradise-qld-4217"
+   },
+   {
+    "claim": "Foreign buyers can purchase off-the-plan new dwellings",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://propertymarkets.news/updated-firb-regulations-explained-off-the-plan-apartments-unaffected/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1987,
+   "developer_hq": "Melbourne, Australia",
+   "developer_company": "Central Equity Limited, ABN 27 006 708 738",
+   "developer_projects_delivered": 85,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-05",
+   "handover_promised": "2029",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR",
+    "3BR plus study",
+    "penthouse",
+    "sky home"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 2210000,
+   "price_max": 8950000,
+   "currency": "AUD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold strata; foreign buyers may buy new off-the-plan dwellings under FIRB rules, outside the 1 Apr 2025 to 31 Mar 2027 established-dwelling ban",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "two pools",
+    "cabanas",
+    "indoor and outdoor gyms",
+    "yoga room",
+    "mineral pool",
+    "spa and sauna",
+    "seven-day concierge",
+    "two car spaces per residence"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "City of Gold Coast (Planning Act 2016, Queensland)",
+   "brochure_url": null
+  },
+  "verified_score": 2,
+  "sources": [
+   "https://www.apartments.com.au/new-apartments/palmera-residences-gold-coast-18-garfield-terrace-surfers-paradise-qld-4217",
+   "https://www.multiplex.global/projects/palmera-residences/",
+   "https://www.apartments.com.au/news/qld/first-crane-arrives-as-multiplex-gets-moving-on-palmera-residences",
+   "https://www.apartments.com.au/news/qld/nab-funds-1-billion-surfers-paradise-apartment-development-palmera",
+   "https://www.apartments.com.au/news/qld/palmera-residences-fly-out-the-door-as-sales-pass-400-million",
+   "https://a-d.com.au/buying-living/market-insights/central-equity-appoints-multiplex-to-deliver-dollar1-billion-palmera-tower-in-northcliffe",
+   "https://abr.business.gov.au/Search/ResultsActive?SearchText=Central%20Equity%20Limited",
+   "https://propertymarkets.news/updated-firb-regulations-explained-off-the-plan-apartments-unaffected/"
+  ]
+ },
+ {
+  "slug": "murcia-residences-sarazin",
+  "name": "Murcia Residences",
+  "developer": "Sarazin",
+  "area": "East Brisbane / Woolloongabba (9 Overend Street)",
+  "country": "Australia",
+  "market": "Brisbane",
+  "stage": "under construction",
+  "url": "https://www.apartments.com.au/new-apartments/murcia-residences-east-brisbane-9-overend-street-east-brisbane-qld-4169",
+  "docs_url": "https://www.apartments.com.au/new-apartments/murcia-residences-east-brisbane-9-overend-street-east-brisbane-qld-4169",
+  "permit_number": null,
+  "docs_listed": [
+   "unit-level prices 2BR+study from AUD 1.92m to 3BR corner from AUD 3.06m",
+   "estimated completion late 2027 (October 2027)",
+   "dated construction milestones (level 9 complete, jumpform level 13)",
+   "builder named: Hutchinson Builders",
+   "floor plans via brochure request"
+  ],
+  "note": "30-storey, 236-residence tower beside the Gabba Olympic precinct, built by Hutchinson Builders after groundbreaking in August 2024; construction milestones published and completion estimated October 2027. A project-specific trust (Sarazin 9 Overend Unit Trust) is on the Australian Business Register, but no Brisbane City Council approval number is published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1920000,
+   "currency": "AUD",
+   "title": "freehold strata",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Silk One, Woolloongabba described as completed and sold out on the developer's apartments.com.au profile",
+   "units": 236,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Status tracker shows 'Plans approved' but no Brisbane City Council application number found",
+   "escrow": "No deposit holding statement published",
+   "progress": "Milestones published: groundbreaking Aug 2024 (The Urban Developer), level 9 complete and jumpform at level 13 (a-d.com.au), status 'Under construction'",
+   "plans": "Floor plans only via brochure request",
+   "record": "One completed project (Silk One) named on portal profile",
+   "returns": "No yields or guarantees advertised"
+  },
+  "positives": [
+   "Groundbreaking and builder appointment reported by independent trade press",
+   "Project-specific trust entity registered",
+   "Detailed price list by unit type",
+   "Queensland statutory home warranty cover mentioned"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction started (groundbreaking August 2024) with Hutchinson Builders",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.theurbandeveloper.com/articles/sarazin-wins-over-hutchies-for-east-brisbane-project-murcia"
+   },
+   {
+    "claim": "Tower complete to level 9, jumpform at level 13",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a-d.com.au/buying-living/market-insights/murcia-residences-reaches-new-construction-milestone-as-demand-shifts-to-3-bedroom-homes"
+   },
+   {
+    "claim": "236 residences",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.theurbandeveloper.com/articles/sarazin-wins-over-hutchies-for-east-brisbane-project-murcia"
+   },
+   {
+    "claim": "Project entity registered (The Trustee for Sarazin 9 Overend Unit Trust, ABN 57 576 834 464)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://abr.business.gov.au/Search/ResultsActive?SearchText=Sarazin"
+   },
+   {
+    "claim": "Developer company Sarazin Pty Limited registered",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://abr.business.gov.au/Search/ResultsActive?SearchText=Sarazin"
+   },
+   {
+    "claim": "Development plans approved",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/new-apartments/murcia-residences-east-brisbane-9-overend-street-east-brisbane-qld-4169"
+   },
+   {
+    "claim": "Completion October 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a-d.com.au/buying-living/market-insights/murcia-residences-reaches-new-construction-milestone-as-demand-shifts-to-3-bedroom-homes"
+   },
+   {
+    "claim": "Silk One delivered and sold out",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/developers/sarazin"
+   },
+   {
+    "claim": "Prices from AUD 1.92m",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.apartments.com.au/new-apartments/murcia-residences-east-brisbane-9-overend-street-east-brisbane-qld-4169"
+   },
+   {
+    "claim": "All 1BR and 2BR sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://a-d.com.au/buying-living/market-insights/murcia-residences-reaches-new-construction-milestone-as-demand-shifts-to-3-bedroom-homes"
+   },
+   {
+    "claim": "Foreign buyers can buy new off-the-plan dwellings",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://propertymarkets.news/updated-firb-regulations-explained-off-the-plan-apartments-unaffected/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2016,
+   "developer_hq": "Sydney (NSW 2010) and Brisbane, Australia",
+   "developer_company": "Sarazin Pty Limited, ABN 39 107 818 673; project trust: The Trustee for Sarazin 9 Overend Unit Trust, ABN 57 576 834 464",
+   "developer_projects_delivered": 1,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-08",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "2BR plus study",
+    "3BR",
+    "sub-penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 1920000,
+   "price_max": 3060000,
+   "currency": "AUD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold strata; foreign buyers may buy new off-the-plan dwellings under FIRB rules, outside the 1 Apr 2025 to 31 Mar 2027 established-dwelling ban",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "rooftop infinity pool",
+    "cabanas",
+    "gym",
+    "magnesium plunge pools",
+    "sauna",
+    "steam room",
+    "EV charging"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Brisbane City Council (Planning Act 2016, Queensland)",
+   "brochure_url": null
+  },
+  "verified_score": 1,
+  "sources": [
+   "https://www.apartments.com.au/new-apartments/murcia-residences-east-brisbane-9-overend-street-east-brisbane-qld-4169",
+   "https://a-d.com.au/buying-living/market-insights/murcia-residences-reaches-new-construction-milestone-as-demand-shifts-to-3-bedroom-homes",
+   "https://a-d.com.au/buying-living/market-insights/construction-surges-ahead-at-murcia-residences-east-brisbanes-next-landmark",
+   "https://www.apartments.com.au/developers/sarazin",
+   "https://www.theurbandeveloper.com/articles/sarazin-wins-over-hutchies-for-east-brisbane-project-murcia",
+   "https://abr.business.gov.au/Search/ResultsActive?SearchText=Sarazin",
+   "https://propertymarkets.news/updated-firb-regulations-explained-off-the-plan-apartments-unaffected/"
+  ]
+ },
+ {
+  "slug": "aman-residences-niseko",
+  "name": "Aman Residences, Niseko",
+  "developer": "Not named (owner of Moiwa Ski Resort, with Aman as operator)",
+  "area": "Mount Moiwa, Niseko Town, Hokkaido",
+  "country": "Japan",
+  "market": "Niseko",
+  "stage": "off-plan",
+  "url": "https://www.aman.com/ko/resorts/aman-niseko/residences",
+  "docs_url": "https://www.aman.com/ko/resorts/aman-niseko/residences",
+  "permit_number": null,
+  "docs_listed": [
+   "31 Aman residences to own",
+   "opening 2030",
+   "enquiry form with confidentiality disclaimer",
+   "agent page: Kerry Hill Architects, onsen and wellness features, price on application"
+  ],
+  "note": "31 branded freestanding residences beside a 30-suite Aman resort on Mount Moiwa, marketed through Aman Residences and Niseko agents at price on application. Announced in 2019 for a 2023 opening, later shown as 2027 and now listed as opening 2030; developer entity, permits, plans and progress are not published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "JPY",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 31,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building confirmation or development approval referenced",
+   "escrow": "Nothing published",
+   "progress": "No construction updates; only opening year",
+   "plans": "No floor plans or sizes published",
+   "record": "Developer entity not named; Aman named only as operator",
+   "returns": "No rental or yield claims"
+  },
+  "positives": [
+   "No rental return promises",
+   "Opening year changes are visible on the brand's own pages"
+  ],
+  "flags": [
+   {
+    "text": "Opening date has moved from 2023 (announced 2019) to 2027 and now 2030, as reported by Uchi Japan; Aman has not explained the timing change",
+    "source": "https://uchijapan.com/news/aman-niseko-sets-2030-opening-date-for-mount-moiwa-resort"
+   }
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "31 residences and 30 guest rooms planned",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.businesstraveller.com/business-travel/2019/12/23/aman-will-open-its-fourth-resort-in-japan-in-2023/"
+   },
+   {
+    "claim": "Original opening 2023",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.businesstraveller.com/business-travel/2019/12/23/aman-will-open-its-fourth-resort-in-japan-in-2023/"
+   },
+   {
+    "claim": "Opening now 2030",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://uchijapan.com/news/aman-niseko-sets-2030-opening-date-for-mount-moiwa-resort"
+   },
+   {
+    "claim": "Opening 2030 (brand page)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aman.com/ko/resorts/aman-niseko/residences"
+   },
+   {
+    "claim": "Construction under way",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://uchijapan.com/news/aman-niseko-sets-2030-opening-date-for-mount-moiwa-resort"
+   },
+   {
+    "claim": "Developer owns and operates Moiwa Ski Resort",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.nisaderealestate.com/latest-projects/aman-niseko/"
+   },
+   {
+    "claim": "Building confirmation obtained",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aman.com/ko/resorts/aman-niseko/residences"
+   },
+   {
+    "claim": "Title type offered to buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aman.com/ko/resorts/aman-niseko/residences"
+   },
+   {
+    "claim": "Deposit protection",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.nisaderealestate.com/latest-projects/aman-niseko/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2030",
+   "original_handover": "2023",
+   "delay_months": 84,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR villas"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "JPY",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": "Aman professional management mentioned, no rental terms",
+   "service_charge": null,
+   "brand": "Aman",
+   "amenities": [
+    "onsen",
+    "wellness facilities",
+    "open fireplaces",
+    "hinoki bathtubs",
+    "resort access"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Hokkaido / Niseko Town (building confirmation)",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "sources": [
+   "https://www.aman.com/ko/resorts/aman-niseko/residences",
+   "https://www.nisaderealestate.com/latest-projects/aman-niseko/",
+   "https://uchijapan.com/news/aman-niseko-sets-2030-opening-date-for-mount-moiwa-resort",
+   "https://www.businesstraveller.com/business-travel/2019/12/23/aman-will-open-its-fourth-resort-in-japan-in-2023/"
+  ]
+ },
+ {
+  "slug": "harbourside-residences-mirvac",
+  "name": "Harbourside Residences",
+  "developer": "Mirvac (50/50 joint venture with Mitsubishi Estate)",
+  "area": "Darling Harbour (2-10 Darling Drive)",
+  "country": "Australia",
+  "market": "Sydney",
+  "stage": "under construction",
+  "url": "https://harbourside.mirvac.com",
+  "docs_url": "https://harbourside.mirvac.com",
+  "permit_number": "SSD-7874",
+  "docs_listed": [
+   "3 and 4 bedroom release",
+   "referral offer AUD 10,000 / 5,000 with T&Cs",
+   "investor page: staged completion late 2026 to late 2027, project value AUD 1,626m, 50% Mitsubishi Estate",
+   "no floor plans, prices or construction updates on project site"
+  ],
+  "note": "48-storey, about 263-apartment tower in the AUD 2bn Harbourside redevelopment, under construction since 2023 by ASX-listed Mirvac with Mitsubishi Estate as 50% partner; about AUD 700m of sales reported and completion expected late 2027. Concept approval SSD-7874 (MOD 6) is shown as approved on the NSW Planning Portal, though the sales site itself publishes no approval number, plans or prices (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1700000,
+   "currency": "AUD",
+   "title": "strata (tenure on the government-owned Darling Harbour site not stated)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": "SSD-7874",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Mirvac states over 50 years of development; ASX-listed group (Mirvac Limited ABN 92 003 280 699)",
+   "units": 263,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Sales site gives no approval number; SSD-7874 found on NSW Planning Portal (determined, approved 25 Jun 2021, consolidated as MOD 6)",
+   "escrow": "Nothing on deposit holding published",
+   "progress": "Investor page says 'construction is well progressed' (no figure, no dated photos on sales site)",
+   "plans": "No floor plans on sales site",
+   "record": "Listed group with 50+ year history and registered operating company",
+   "returns": "No yield or rental guarantee language"
+  },
+  "positives": [
+   "State Significant Development consent visible on NSW Planning Portal",
+   "ASX-listed developer with a 50% Japanese institutional partner",
+   "Price range of sold apartments reported by mainstream property press"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Planning consent for the tower (concept SSD) approved",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.planningportal.nsw.gov.au/major-projects/projects/harbourside-shopping-centre-redevelopment"
+   },
+   {
+    "claim": "Mitsubishi Estate owns 50% of the project",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://realassets.ipe.com/news/mitsubishi-estate-buys-half-mirvacs-a23bn-australian-project/10132394.article"
+   },
+   {
+    "claim": "Construction under way since 2023",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/Harbourside_Residences"
+   },
+   {
+    "claim": "Completion late 2027",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.realcommercial.com.au/news/mirvac-offloads-three-sydney-harbourside-apartments-for-65m"
+   },
+   {
+    "claim": "Completion 'from 2026' (2023 groundbreaking release) vs late 2027 now",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://corp-auth.mirvac.com/about/news-and-media/Mirvac-Breaks-Ground-at-2-Billion-Harbourside-Redevelopment"
+   },
+   {
+    "claim": "263 apartments in a 48-level tower",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.realcommercial.com.au/news/mirvac-offloads-three-sydney-harbourside-apartments-for-65m"
+   },
+   {
+    "claim": "About AUD 700m sales including three sub-penthouses for AUD 64.5m",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.realcommercial.com.au/news/mirvac-offloads-three-sydney-harbourside-apartments-for-65m"
+   },
+   {
+    "claim": "Developer company Mirvac Limited registered",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://abr.business.gov.au/Search/ResultsActive?SearchText=Mirvac%20Limited"
+   },
+   {
+    "claim": "Staged completion late 2026 to late 2027, project value AUD 1,626m",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.mirvac.com/investor-centre/property-portfolio/retail/harbourside"
+   },
+   {
+    "claim": "Majority of buyers local, about two-thirds owner-occupiers",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://realcommercial.com.au/news/harbourside-residences-600m-in-sales-to-revitalise-tired-sydney-locale"
+   },
+   {
+    "claim": "Foreign buyers can buy new off-the-plan dwellings",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://propertymarkets.news/updated-firb-regulations-explained-off-the-plan-apartments-unaffected/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1972,
+   "developer_hq": "Sydney, Australia",
+   "developer_company": "Mirvac Limited, ABN 92 003 280 699",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Mirvac Group listed on the ASX; Mitsubishi Estate (TSE listed) holds 50% of the project",
+   "construction_start": "2023-07",
+   "handover_promised": "2027-Q4",
+   "original_handover": "2026",
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "sub-penthouse",
+    "penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 1700000,
+   "price_max": 25000000,
+   "currency": "AUD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Foreign buyers may buy new off-the-plan dwellings under FIRB rules, outside the 1 Apr 2025 to 31 Mar 2027 established-dwelling ban",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "full resort amenity floor",
+    "waterfront public domain",
+    "3,500 m2 park"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "NSW Independent Planning Commission / Department of Planning (State Significant Development)",
+   "brochure_url": null
+  },
+  "verified_score": 3,
+  "sources": [
+   "https://harbourside.mirvac.com",
+   "https://www.planningportal.nsw.gov.au/major-projects/projects/harbourside-shopping-centre-redevelopment",
+   "https://corp-auth.mirvac.com/about/news-and-media/Mirvac-Breaks-Ground-at-2-Billion-Harbourside-Redevelopment",
+   "https://www.mirvac.com/investor-centre/property-portfolio/retail/harbourside",
+   "https://realassets.ipe.com/news/mitsubishi-estate-buys-half-mirvacs-a23bn-australian-project/10132394.article",
+   "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/Harbourside_Residences",
+   "https://realcommercial.com.au/news/harbourside-residences-600m-in-sales-to-revitalise-tired-sydney-locale",
+   "https://www.realcommercial.com.au/news/mirvac-offloads-three-sydney-harbourside-apartments-for-65m",
+   "https://abr.business.gov.au/Search/ResultsActive?SearchText=Mirvac%20Limited",
    "https://propertymarkets.news/updated-firb-regulations-explained-off-the-plan-apartments-unaffected/"
   ]
  }

@@ -778,5 +778,1209 @@
    "all_six": false
   },
   "verified_score": 1
+ },
+ {
+  "slug": "pavilion-square-kuala-lumpur-armani-hartajaya",
+  "name": "Pavilion Square Kuala Lumpur (Luxury Residences)",
+  "developer": "Armani Hartajaya Sdn. Bhd. (Pavilion Group)",
+  "area": "Jalan Raja Chulan, Bukit Bintang, Kuala Lumpur",
+  "country": "Malaysia",
+  "market": "Malaysia",
+  "stage": "under construction",
+  "url": "https://pavilionsquarekl.com/",
+  "docs_url": "https://1pavilion.com/PavilionsquareKL/",
+  "seed": {
+   "price": 1319000,
+   "currency": "MYR",
+   "title": "leasehold (99 years to 4 Oct 2122), serviced apartment strata",
+   "lease_base": 99,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q3",
+   "permit_claim": true,
+   "permit_number": "Developer licence 30633/11-2028/0308(A); Advertising and sales permit 30633-1/08-2027/0740(N)-(S); DBKL BP T3 OSC 2023 1113 (18)",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Group projects recorded as completed with CCC on KPKT TEDUH: Pavilion Damansara Heights (phase 1), Pavilion Embassy (phases 1-2), Pavilion Suites Kuala Lumpur, Pavilion Ceylon Hill (each under its own project company)",
+   "units": 960,
+   "payment_plan": null,
+   "price_per_m2": 28184
+  },
+  "docs_listed": [
+   "brochure APDL: developer licence, advertising permit, DBKL plan approval, tenure, encumbrance (OCBC), completion Q3 2029",
+   "brochure APDL: 960 units, 762 car parks, price RM1,319,000 to RM5,409,000",
+   "developer site: 8 unit layouts with sizes, Type A studio 46.8 sq m to Type C4 118.2 sq m",
+   "developer site: facilities (118 m rooftop infinity pool, Level 63A wellness)"
+  ],
+  "note": "67-storey, 960-unit Pavilion Group tower linked to Pavilion KL; KPKT TEDUH confirms the licence and permit, reports 32.4% construction progress and an approved 22-month extension moving vacant possession from Sep 2027 to Jul 2029. (checked 31 Oct 2026)",
+  "evidence": {
+   "permit": "APDL strip in the brochure and developer site lists licence 30633/11-2028/0308(A) and permit 30633-1/08-2027/0740(N)-(S); TEDUH project 30633-1 shows the same licence (valid to 30 Nov 2028) and permit (16 Aug 2024 to 15 Aug 2027)",
+   "escrow": "Developer does not name an HDA account; TEDUH records a Schedule H (Jadual H) sale agreement, under which buyer payments go into the statutory Housing Development Account",
+   "progress": "No progress published by the developer; TEDUH reports 32.40% component progress, status Lancar (on track)",
+   "plans": "Unit layout plans for 8 types on the developer site and brochure",
+   "record": "TEDUH lists other Pavilion-branded KL projects completed with CCC (Pavilion Damansara Heights, Pavilion Embassy, Pavilion Suites, Pavilion Ceylon Hill); developer does not list delivered projects on the project page",
+   "returns": "No rental guarantee or yield claim"
+  },
+  "positives": [
+   "Full APDL disclosure on the brochure, verifiable on TEDUH",
+   "Every unit priced above the RM1 million foreign-buyer floor in KL",
+   "Official progress and revised vacant-possession date published by KPKT"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Developer licence 30633/11-2028/0308(A) valid",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30633-1"
+   },
+   {
+    "claim": "Advertising permit 30633-1/08-2027/0740 valid to 15 Aug 2027",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30633-1"
+   },
+   {
+    "claim": "Developer company Armani Hartajaya Sdn. Bhd. active",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30633-1"
+   },
+   {
+    "claim": "960 serviced apartments, 68 floors on registry (67 storeys marketed)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30633-1"
+   },
+   {
+    "claim": "Price RM1,319,000 minimum",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30633-1"
+   },
+   {
+    "claim": "Price RM5,409,000 maximum (brochure)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30633-1"
+   },
+   {
+    "claim": "Construction progress 32.40%",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30633-1"
+   },
+   {
+    "claim": "Completion Q3 2029",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30633-1"
+   },
+   {
+    "claim": "Original vacant possession 11 Sep 2027, extended 22 months to 11 Jul 2029",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30633-1"
+   },
+   {
+    "claim": "Schedule H agreement (HDA account protection)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/30633-1"
+   },
+   {
+    "claim": "99-year leasehold to 2122, land charged to OCBC",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://appiliate.my/brochure/files/Pavilion%20Square%20LR%20E-Brochure.pdf"
+   },
+   {
+    "claim": "Pavilion-branded projects completed (CCC)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta?q=PAVILION&search_type=projek&page=1"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Kuala Lumpur, Malaysia",
+   "developer_company": "Armani Hartajaya Sdn. Bhd. (1163945-U), KPKT developer code 30633",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2029-Q3",
+   "original_handover": "2027-Q3",
+   "delay_months": 22,
+   "unit_types": [
+    "studio",
+    "1BR+study",
+    "2BR",
+    "2BR+study",
+    "3BR"
+   ],
+   "size_min_m2": 46.8,
+   "size_max_m2": 118.2,
+   "price_min": 1319000,
+   "price_max": 5774150,
+   "currency": "MYR",
+   "deposit_pct": null,
+   "payment_plan": "Schedule H progressive payments (statutory)",
+   "foreign_ownership": "Strata title; foreigners buy above RM1,000,000 with Kuala Lumpur land authority consent; land has a restriction requiring Land Committee consent for transfer",
+   "rental_programme": null,
+   "service_charge": "RM0.99 psf including sinking fund (agent site)",
+   "brand": "Pavilion",
+   "amenities": [
+    "118 m rooftop infinity pool",
+    "sky wellness floor",
+    "indoor and outdoor gym",
+    "steam and sauna",
+    "sky garden",
+    "link bridge to Pavilion KL"
+   ],
+   "lat": 3.149,
+   "lng": 101.716,
+   "permit_authority": "KPKT National Housing Department (developer licence, APDL); DBKL (building plan)",
+   "brochure_url": "https://hims.kpkt.gov.my/files/30633/P45/P45-20251103-00017583/IKLAN_BROSUR_01.pdf"
+  },
+  "sources": [
+   "https://pavilionsquarekl.com/",
+   "https://1pavilion.com/PavilionsquareKL/",
+   "https://appiliate.my/brochure/files/Pavilion%20Square%20LR%20E-Brochure.pdf",
+   "https://pavilionsquarebbkl.com/",
+   "https://teduh.kpkt.gov.my/api/projek-swasta/30633-1",
+   "https://teduh.kpkt.gov.my/api/projek-swasta?q=PAVILION&search_type=projek&page=1"
+  ],
+  "permit_number": "Developer licence 30633/11-2028/0308(A); Advertising and sales permit 30633-1/08-2027/0740(N)-(S); DBKL BP T3 OSC 2023 1113 (18)",
+  "added": "2026-10-31",
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verified_score": 4
+ },
+ {
+  "slug": "111-menerung-brdb",
+  "name": "111 Menerung (One Eleven Menerung)",
+  "developer": "BRDB Developments Sdn. Bhd.",
+  "area": "Jalan Menerung, Bangsar, Kuala Lumpur",
+  "country": "Malaysia",
+  "market": "Malaysia",
+  "stage": "under construction",
+  "url": "https://111menerung.com/",
+  "docs_url": "https://111menerung.com/",
+  "seed": {
+   "price": 2255150,
+   "currency": "MYR",
+   "title": "freehold (serviced apartments, no land restriction)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q1",
+   "permit_claim": true,
+   "permit_number": "Developer licence 32/08-2028/1034(R); Advertising and sales permit 32-15/08-2026/0634(R)-(S) (expired 17 Aug 2026; current on TEDUH 32-15/08-2027/0587(R)-(S)); DBKL BP T2 OSC 2020 0346",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "BRDB (est. 1964) names completed estates Tamansari, Senja Lakeside Estate and Emerald Bay (Johor) on its site; TEDUH records adjacent One Menerung as completed with CFO",
+   "units": 111,
+   "payment_plan": null,
+   "price_per_m2": 24249
+  },
+  "docs_listed": [
+   "developer site: APDL strip with licence, permit, plan approval, tenure, unit counts and price per type",
+   "developer site: price RM2,255,150 to RM7,325,500, completion Jan 2027 (60 months)",
+   "brochure: storey plan and unit plans M1 to L, specifications",
+   "BRDB portfolio page: 23 storeys, 111 units, status on-going"
+  ],
+  "note": "Low-density 111-unit freehold tower in Bangsar; KPKT TEDUH reports 95% construction progress and an approved 24-month extension moving vacant possession from Feb 2025 to Feb 2027, and marks the developer's record 'Ada Kesalahan' (offence on record). (checked 31 Oct 2026)",
+  "evidence": {
+   "permit": "APDL on 111menerung.com shows licence 32/08-2028/1034(R) and permit 32-15/08-2026/0634(R)-(S), valid to 17 Aug 2026; TEDUH shows that permit as expired and the current permit 32-15/08-2027/0587(R)-(S) valid to 17 Aug 2027",
+   "escrow": "Developer names no HDA account; TEDUH records a Schedule H (Jadual H) agreement under the statutory Housing Development Account regime",
+   "progress": "No developer progress page; TEDUH reports 95.00% component progress, status Lancar",
+   "plans": "Storey plan and unit plans in the developer brochure",
+   "record": "BRDB site names completed estates; TEDUH lists BRDB with 16 projects and One Menerung completed with CFO",
+   "returns": "No rental guarantee or yield claim"
+  },
+  "positives": [
+   "Every unit priced above the RM1 million foreign-buyer floor in KL",
+   "Freehold with no land restriction per the approved advertisement",
+   "Near completion per official KPKT progress figure"
+  ],
+  "flags": [
+   {
+    "text": "KPKT TEDUH marks BRDB Developments Sdn. Bhd.'s developer record as 'Ada Kesalahan' (has an offence on record); the portal does not show the details.",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/32-15"
+   },
+   {
+    "text": "TEDUH records an approved 24-month extension of the vacant possession date, from 16 Feb 2025 to 16 Feb 2027.",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/32-15"
+   }
+  ],
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Developer licence 32/08-2028/1034 valid to 17 Aug 2028",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/32-15"
+   },
+   {
+    "claim": "Advertising permit 32-15/08-2026/0634(R)-(S) is current (website)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/32-15"
+   },
+   {
+    "claim": "111 serviced apartments",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/32-15"
+   },
+   {
+    "claim": "23 storeys (marketing) vs 14 residential storeys (registry and contractor)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://slgconstruction.com.my/111-menerung/"
+   },
+   {
+    "claim": "Price RM2,255,150 to RM7,325,500",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/32-15"
+   },
+   {
+    "claim": "Completion January 2027",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/32-15"
+   },
+   {
+    "claim": "Original vacant possession Feb 2025, extended 24 months",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/32-15"
+   },
+   {
+    "claim": "Construction progress 95%",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/32-15"
+   },
+   {
+    "claim": "Schedule H agreement (HDA protection)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/32-15"
+   },
+   {
+    "claim": "Developer company registered and active",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/32-15"
+   },
+   {
+    "claim": "Type L 345 sq m (2021 brochure) vs 294 sq m (current APDL)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://cdn.klnewhomes.com/project-brochures/1748246584118-111%20Menerung_DigitalBrochure.pdf"
+   },
+   {
+    "claim": "Freehold, no land restriction",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://111menerung.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1964,
+   "developer_hq": "Bukit Bandaraya, Kuala Lumpur, Malaysia",
+   "developer_company": "BRDB Developments Sdn. Bhd. (5521-A), KPKT developer code 32",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q1",
+   "original_handover": "2025-Q1",
+   "delay_months": 24,
+   "unit_types": [
+    "2BR",
+    "2BR duplex",
+    "4BR duplex"
+   ],
+   "size_min_m2": 93,
+   "size_max_m2": 294,
+   "price_min": 2255150,
+   "price_max": 7325500,
+   "currency": "MYR",
+   "deposit_pct": null,
+   "payment_plan": "Schedule H progressive payments (statutory)",
+   "foreign_ownership": "Freehold strata; foreigners buy above RM1,000,000 with land authority consent",
+   "rental_programme": null,
+   "service_charge": "RM0.95 psf including sinking fund (portal)",
+   "brand": null,
+   "amenities": [
+    "infinity pool",
+    "jacuzzi",
+    "BBQ terrace",
+    "rooftop gardens",
+    "gymnasium",
+    "multipurpose hall"
+   ],
+   "lat": 3.144,
+   "lng": 101.664,
+   "permit_authority": "KPKT National Housing Department (licence, APDL); DBKL (building plan)",
+   "brochure_url": "https://hims.kpkt.gov.my/files/32/P45/P45-20260630-00019765/IKLAN_BROSUR_01.pdf"
+  },
+  "sources": [
+   "https://111menerung.com/",
+   "https://brdb.com.my/portfolio/one-eleven-menerung",
+   "https://brdb.com.my/",
+   "https://cdn.klnewhomes.com/project-brochures/1748246584118-111%20Menerung_DigitalBrochure.pdf",
+   "https://slgconstruction.com.my/111-menerung/",
+   "https://www.propertyportal.my/project/111-menerung",
+   "https://teduh.kpkt.gov.my/api/projek-swasta/32-15",
+   "https://teduh.kpkt.gov.my/api/projek-swasta?q=MENERUNG&search_type=projek&page=1"
+  ],
+  "permit_number": "Developer licence 32/08-2028/1034(R); Advertising and sales permit 32-15/08-2026/0634(R)-(S) (expired 17 Aug 2026; current on TEDUH 32-15/08-2027/0587(R)-(S)); DBKL BP T2 OSC 2020 0346",
+  "added": "2026-10-31",
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verified_score": 4
+ },
+ {
+  "slug": "divine-klcc-chin-hin-property",
+  "name": "Divine KLCC",
+  "developer": "Sinaran Urusjuta Sdn. Bhd. (Chin Hin Group Property Berhad)",
+  "area": "Jalan Saloma, KLCC fringe, Kuala Lumpur",
+  "country": "Malaysia",
+  "market": "Malaysia",
+  "stage": "off-plan",
+  "url": "https://malaysiaproperty4u.com/cn/projects/divine-klcc/",
+  "docs_url": "https://divineklcc.com/",
+  "seed": {
+   "price": 968000,
+   "currency": "MYR",
+   "title": "leasehold (99 years to 18 Sep 2122, per agent), serviced apartment strata",
+   "lease_base": 99,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2032-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 1033,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "developer site: renders, highlights, proposed rooftop bar, registration form only",
+   "news: GDV RM1.36B, 1,033 units of 502-1,319 sq ft, from RM968,000, preview 11 Apr 2026",
+   "agents: two blocks (83 and 44 storeys), completion Sep 2032, maintenance RM0.68 psf"
+  ],
+  "note": "84-storey, 1,033-unit serviced residence 400 m from the Petronas Towers by a unit of Bursa-listed Chin Hin; the developer site shows no licence, permit, price or plans, while KPKT TEDUH lists licence 31096/07-2030/0152(A), permit 31096-1/06-2029/0456(A)-(S), 5% progress and an approved 75-month build to vacant possession on 6 Oct 2032. (checked 31 Oct 2026)",
+  "evidence": {
+   "permit": "No licence or permit on divineklcc.com; TEDUH project 31096-1 lists developer licence 31096/07-2030/0152(A) (2025-2030) and advertising permit 31096-1/06-2029/0456(A)-(S) (21 Jun 2026 to 20 Jun 2029)",
+   "escrow": "Not published by developer; TEDUH records a Schedule H (Jadual H) agreement under the statutory HDA regime",
+   "progress": "Not published by developer; TEDUH reports 5.00% progress for both blocks, status Lancar",
+   "plans": "No plans on the developer site; layout sizes only in news and agent pages",
+   "record": "Project company has one project on TEDUH; no delivered projects named on the developer site",
+   "returns": "No guaranteed or yield language found"
+  },
+  "positives": [
+   "Licence, permit, prices and dates verifiable on KPKT TEDUH",
+   "Parent group listed on Bursa Malaysia"
+  ],
+  "flags": [
+   {
+    "text": "KPKT TEDUH records an approved 39-month extension to the build period, giving a 75-month period and vacant possession on 6 Oct 2032 for the first SPA signed 6 Jul 2026.",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/31096-1"
+   }
+  ],
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Developer licence 31096/07-2030/0152(A) valid",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/31096-1"
+   },
+   {
+    "claim": "Advertising permit 31096-1/06-2029/0456(A)-(S) valid",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/31096-1"
+   },
+   {
+    "claim": "Project company Sinaran Urusjuta Sdn. Bhd. active, linked to Chin Hin Property",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/31096-1"
+   },
+   {
+    "claim": "1,033 units in two blocks (561 and 472)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/31096-1"
+   },
+   {
+    "claim": "84 storeys (news) vs 83 (registry)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://www.thestar.com.my/starpicks/2026/04/13/kls-new-sky-high-address"
+   },
+   {
+    "claim": "Prices from RM968,000",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/31096-1"
+   },
+   {
+    "claim": "GDV RM1.36 billion",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.thestar.com.my/starpicks/2026/04/13/kls-new-sky-high-address"
+   },
+   {
+    "claim": "Completion Q3 2032",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/31096-1"
+   },
+   {
+    "claim": "Construction stage 5%",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/31096-1"
+   },
+   {
+    "claim": "Schedule H agreement",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/31096-1"
+   },
+   {
+    "claim": "Leasehold to 18 Sep 2122",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://malaysiaproperty4u.com/cn/projects/divine-klcc/"
+   },
+   {
+    "claim": "Concierge by Maple Hospitality Group",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.thestar.com.my/starpicks/2026/04/13/kls-new-sky-high-address"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2025,
+   "developer_hq": "Kuala Lumpur, Malaysia",
+   "developer_company": "Sinaran Urusjuta Sdn. Bhd., KPKT developer code 31096",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Parent Chin Hin Group Property Berhad / Chin Hin Group Berhad on Bursa Malaysia (per news and agents)",
+   "construction_start": null,
+   "handover_promised": "2032-Q4",
+   "original_handover": "2029-Q3",
+   "delay_months": 39,
+   "unit_types": [
+    "1BR+1",
+    "2BR",
+    "3BR+1",
+    "dual key"
+   ],
+   "size_min_m2": 46.6,
+   "size_max_m2": 122.5,
+   "price_min": 968000,
+   "price_max": 17813000,
+   "currency": "MYR",
+   "deposit_pct": null,
+   "payment_plan": "Schedule H progressive payments (statutory)",
+   "foreign_ownership": "Leasehold strata; foreigners buy above RM1,000,000 with land authority consent",
+   "rental_programme": "Concierge by Maple Hospitality Group; no rental figures",
+   "service_charge": "RM0.68 psf plus sinking fund (agents)",
+   "brand": null,
+   "amenities": [
+    "infinity lap pool",
+    "heated jacuzzi",
+    "gym",
+    "padel court",
+    "kids pool",
+    "forest garden",
+    "banquet hall",
+    "proposed rooftop bar"
+   ],
+   "lat": 3.161,
+   "lng": 101.71,
+   "permit_authority": "KPKT National Housing Department (licence, APDL); DBKL (building plan)",
+   "brochure_url": "https://hims.kpkt.gov.my/files/31096/P45/P45-20260921-00020517/IKLAN_BROSUR_01.pdf"
+  },
+  "sources": [
+   "https://divineklcc.com/",
+   "https://www.thestar.com.my/starpicks/2026/04/13/kls-new-sky-high-address",
+   "https://www.jlwmalaysia.com/publication/week-16-2026",
+   "https://malaysiaproperty4u.com/cn/projects/divine-klcc/",
+   "https://propertyindexmy.com/projects/divine-klcc.html",
+   "https://teduh.kpkt.gov.my/api/projek-swasta/31096-1"
+  ],
+  "permit_number": null,
+  "added": "2026-10-31",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verified_score": 3
+ },
+ {
+  "slug": "aethera-residences-uoa-johor-bahru",
+  "name": "Aethera Residences",
+  "developer": "Midtown Sanctuary Sdn. Bhd. (UOA Development Bhd)",
+  "area": "Jalan Tun Abdul Razak, Wadi Hana, Johor Bahru (near Bukit Chagar RTS)",
+  "country": "Malaysia",
+  "market": "Malaysia",
+  "stage": "off-plan",
+  "url": "https://aetheraresidences.com/",
+  "docs_url": "https://uoa.com.my/property/details/aethera-residences",
+  "seed": {
+   "price": 996200,
+   "currency": "MYR",
+   "title": "freehold (sale to non-citizens needs Johor state consent)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030-Q2",
+   "permit_claim": true,
+   "permit_number": "Developer licence 31157/09-2030/0213(A); Advertising and sales permit 31157-1/12-2028/1033(N)-(S); MBJB/U/2025/14/BGN/101/KOM(0)",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "UOA Group flagship Bangsar South (60-acre integrated development, KL) and nearly four decades of development stated on the project site; UOA Development annual report 2025 (Bursa filing) describes its Klang Valley development history",
+   "units": 786,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "project site: APDL strip (Malay) with licence, permit, plan approval, tenure, land restrictions, completion Jun 2030, price RM996,200 to RM4,288,000",
+   "project site: unit sizes Type E 1,315 sq ft, Type G duplex 2,594 sq ft, show unit photos",
+   "UOA page: 786 units, 52 storeys, 650-2,547 sq ft, freehold",
+   "UOA Development annual report 2025: GDV RM800M, construction to start FY2026"
+  ],
+  "note": "786-unit freehold tower 400 m from the Bukit Chagar RTS station, UOA's first Johor project; KPKT TEDUH confirms licence and permit, reports 20% progress and an approved 18-month extension to vacant possession on 11 Aug 2030; the title restricts sale to non-citizens without Johor state consent. (checked 31 Oct 2026)",
+  "evidence": {
+   "permit": "APDL on aetheraresidences.com lists licence 31157/09-2030/0213(A) and permit 31157-1/12-2028/1033(N)-(S); TEDUH project 31157-1 shows both active (permit now suffix (A))",
+   "escrow": "Not named by developer; TEDUH records a Schedule H (Jadual H) agreement under the statutory HDA regime",
+   "progress": "Not published by developer; TEDUH reports 20.00% progress, status Lancar",
+   "plans": "Only unit sizes and show-unit photos on the developer sites; no floor plans found",
+   "record": "UOA Development annual report 2025 (Bursa) and project site describe Bangsar South and decades of Klang Valley projects",
+   "returns": "Site mentions 'investment and rental appeal' only; no guarantee or yield figure"
+  },
+  "positives": [
+   "Developer group is Bursa-listed and disclosed the project in its audited annual report",
+   "APDL includes land restrictions, including the state-consent requirement for foreign buyers",
+   "No land encumbrance stated"
+  ],
+  "flags": [
+   {
+    "text": "KPKT TEDUH records an approved 18-month extension, giving a 54-month build period and vacant possession on 11 Aug 2030 for the first SPA signed 11 Feb 2026.",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/31157-1"
+   }
+  ],
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Developer licence 31157/09-2030/0213(A) valid",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/31157-1"
+   },
+   {
+    "claim": "Advertising permit 31157-1/12-2028/1033 valid",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/31157-1"
+   },
+   {
+    "claim": "Developer Midtown Sanctuary Sdn. Bhd. registered at UOA's Bangsar South address",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/31157-1"
+   },
+   {
+    "claim": "786 units, 52 storeys",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/31157-1"
+   },
+   {
+    "claim": "Price RM996,200 to RM4,288,000",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/31157-1"
+   },
+   {
+    "claim": "Completion June 2030",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/31157-1"
+   },
+   {
+    "claim": "Construction progress 20%",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/31157-1"
+   },
+   {
+    "claim": "GDV RM800M, construction to start FY2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.insage.com.my/BursaNews/Attachment/202604/20260427/UOADEV-AN20260427A1-1.pdf"
+   },
+   {
+    "claim": "About 400 m to Bukit Chagar RTS station",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.insage.com.my/BursaNews/Attachment/202604/20260427/UOADEV-AN20260427A1-1.pdf"
+   },
+   {
+    "claim": "Schedule H agreement",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/31157-1"
+   },
+   {
+    "claim": "Freehold, no encumbrance",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://aetheraresidences.com/"
+   },
+   {
+    "claim": "Type G duplex 2,594 sq ft (site) vs 2,547 sq ft (UOA page)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://uoa.com.my/property/details/aethera-residences"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Bangsar South, Kuala Lumpur, Malaysia",
+   "developer_company": "Midtown Sanctuary Sdn. Bhd., KPKT developer code 31157",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "UOA Development Bhd, Bursa Malaysia Main Market; audited annual report 2025",
+   "construction_start": null,
+   "handover_promised": "2030-Q2",
+   "original_handover": "2029-Q1",
+   "delay_months": 18,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "3BR dual key",
+    "4BR duplex"
+   ],
+   "size_min_m2": 60.4,
+   "size_max_m2": 236.6,
+   "price_min": 996200,
+   "price_max": 4288000,
+   "currency": "MYR",
+   "deposit_pct": null,
+   "payment_plan": "Schedule H progressive payments (statutory)",
+   "foreign_ownership": "Freehold strata; non-citizens need Johor state consent (restriction in interest on the title)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "swimming pool",
+    "wading pool",
+    "gym",
+    "sauna",
+    "sky lounge",
+    "multi-purpose hall",
+    "community garden",
+    "covered linkway"
+   ],
+   "lat": 1.468,
+   "lng": 103.759,
+   "permit_authority": "KPKT National Housing Department (licence, APDL); Majlis Bandaraya Johor Bahru (building plan)",
+   "brochure_url": "https://hims.kpkt.gov.my/files/31157/P45/P45-20260428-00019161/IKLAN_BROSUR_01.pdf"
+  },
+  "sources": [
+   "https://aetheraresidences.com/",
+   "https://uoa.com.my/property/details/aethera-residences",
+   "https://proplaunch.my/projects/residensi-aethera",
+   "https://www.insage.com.my/BursaNews/Attachment/202604/20260427/UOADEV-AN20260427A1-1.pdf",
+   "https://teduh.kpkt.gov.my/api/projek-swasta/31157-1"
+  ],
+  "permit_number": "Developer licence 31157/09-2030/0213(A); Advertising and sales permit 31157-1/12-2028/1033(N)-(S); MBJB/U/2025/14/BGN/101/KOM(0)",
+  "added": "2026-10-31",
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 4
+ },
+ {
+  "slug": "gladia-heights-khang-dien-keppel",
+  "name": "Gladia Heights (Gladia by the Waters high-rise zone)",
+  "developer": "Doan Nguyen House Trading Investment Co., Ltd. (Khang Dien House and Keppel JV)",
+  "area": "Vo Chi Cong Street, Binh Trung Ward (former District 2, Thu Duc), Ho Chi Minh City",
+  "country": "Vietnam",
+  "market": "Vietnam",
+  "stage": "under construction",
+  "url": "https://www.vutrongkhai.com/du-an/gladia-heights/",
+  "docs_url": "https://www.khangdien.com.vn/en/gladia-by-the-waters",
+  "seed": {
+   "price": 4400000000,
+   "currency": "VND",
+   "title": "apartment ownership; foreigners within the approved foreign-ownership list (50-year term under Vietnamese law)",
+   "lease_base": 50,
+   "extension": "Foreign owners may apply to extend under the Housing Law",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": true,
+   "permit_number": "HCMC Department of Construction letter 26381/SXD-PTDT (23 Jul 2026, 616 apartments eligible for sale); building permit 4151/SXD-QLXDCT (2 Feb 2026); investor approval 436/QD-UBND (11 Feb 2022)",
+   "plans_published": false,
+   "escrow": "VietinBank guarantee of the developer's handover obligations for off-plan housing",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Khang Dien states the Gladia by the Waters low-rise zone (226 villas and terrace homes) is complete with ownership certificates handed over",
+   "units": 616,
+   "payment_plan": "10% at contract, balance to handover; up to 12% discount for early payment (agent)",
+   "price_per_m2": 83000000
+  },
+  "docs_listed": [
+   "developer: legal status list with investor approval decisions and DoC eligibility letters for the landed zone",
+   "developer: high-rise zone groundbreaking Jan 2026, handover expected Q4 2027",
+   "developer news: 616 apartments and 23 shophouses in 3 towers, VietinBank handover guarantee, foreign-ownership eligible",
+   "agent: copy of DoC letter 26381/SXD-PTDT, land certificates DQ 128066 and DQ 128067, building permit 4151",
+   "agent: price list from VND 4.4B (1BR 50.3 sq m), from VND 83M per sq m"
+  ],
+  "note": "Three 15-storey towers (616 apartments) by the Khang Dien and Keppel JV beside the completed Gladia villa zone; the HCMC Department of Construction confirmed eligibility to sell on 23 Jul 2026 (letter 26381/SXD-PTDT), VietinBank guarantees handover and the project is on the city's foreign-ownership list; foundations completed, handover Q4 2027. (checked 31 Oct 2026)",
+  "evidence": {
+   "permit": "Developer lists approval decisions and DoC letters; agent hosts a scan of DoC letter 26381/SXD-PTDT of 23 Jul 2026 for 616 apartments; VnExpress and Dan Tri report the approval and building permit 4151/SXD-QLXDCT",
+   "escrow": "Khang Dien news: handover guarantee issued by VietinBank; VnExpress reports the same",
+   "progress": "Developer: groundbreaking Jan 2026, handover Q4 2027; Dan Tri (30 Jul 2026): foundations completed",
+   "plans": "No floor plans found on developer pages; agents describe unit sizes per tower",
+   "record": "Developer states the 226-unit low-rise zone is complete and pink books handed over; parent Khang Dien is HOSE-listed (KDH)",
+   "returns": "No guarantee by developer; agent mentions a 12-month rent rebate (VND 360-480M) on some 3BR and 4BR units as a sales incentive"
+  },
+  "positives": [
+   "Provincial eligibility-to-sell letter issued before launch, with unit count",
+   "Bank guarantee of handover obligation (VietinBank)",
+   "Land not mortgaged per the DoC letter",
+   "On the HCMC list of housing foreigners may own"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "independent",
+   "escrow": "independent",
+   "progress": "independent",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "HCMC DoC confirmed 616 apartments eligible for sale on 23 Jul 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://vnexpress.net/du-an-gladia-heights-du-dieu-kien-mo-ban-5102997.html"
+   },
+   {
+    "claim": "DoC letter number 26381/SXD-PTDT",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://sggroup.com.vn/wp-content/uploads/sgg-2026/phap-ly-gladia-heights/01-van-ban-26381-du-dieu-kien-ban.pdf"
+   },
+   {
+    "claim": "Building permit 4151/SXD-QLXDCT dated 2 Feb 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://dantri.com.vn/bat-dong-san/khu-can-ho-gladia-heights-co-van-ban-du-dieu-kien-mo-ban-20260730150638043.htm"
+   },
+   {
+    "claim": "VietinBank handover guarantee",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://vnexpress.net/du-an-gladia-heights-du-dieu-kien-mo-ban-5102997.html"
+   },
+   {
+    "claim": "Foreigners allowed to own",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://dantri.com.vn/bat-dong-san/khu-can-ho-gladia-heights-co-van-ban-du-dieu-kien-mo-ban-20260730150638043.htm"
+   },
+   {
+    "claim": "Developer company registered (enterprise code 0305090745)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://sggroup.com.vn/wp-content/uploads/sgg-2026/phap-ly-gladia-heights/01-van-ban-26381-du-dieu-kien-ban.pdf"
+   },
+   {
+    "claim": "Land not mortgaged",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://sggroup.com.vn/wp-content/uploads/sgg-2026/phap-ly-gladia-heights/01-van-ban-26381-du-dieu-kien-ban.pdf"
+   },
+   {
+    "claim": "Foundations completed",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://dantri.com.vn/bat-dong-san/khu-can-ho-gladia-heights-co-van-ban-du-dieu-kien-mo-ban-20260730150638043.htm"
+   },
+   {
+    "claim": "Handover Q4 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.khangdien.com.vn/en/gladia-by-the-waters"
+   },
+   {
+    "claim": "Project schedule to end of 2028 (investment approval)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://sggroup.com.vn/wp-content/uploads/sgg-2026/phap-ly-gladia-heights/01-van-ban-26381-du-dieu-kien-ban.pdf"
+   },
+   {
+    "claim": "Low-rise zone completed and pink books handed over",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.khangdien.com.vn/en/gladia-by-the-waters"
+   },
+   {
+    "claim": "Price from VND 83M per sq m",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.vutrongkhai.com/du-an/gladia-heights/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2007,
+   "developer_hq": "Ho Chi Minh City, Vietnam",
+   "developer_company": "Doan Nguyen House Trading Investment Co., Ltd., enterprise code 0305090745",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Khang Dien House Trading and Investment JSC, HOSE (KDH); partner Keppel Ltd (SGX)",
+   "construction_start": "2026-01",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "shophouse"
+   ],
+   "size_min_m2": 50.3,
+   "size_max_m2": 144.2,
+   "price_min": 4400000000,
+   "price_max": null,
+   "currency": "VND",
+   "deposit_pct": 10,
+   "payment_plan": "10% at contract, balance to handover (agent); legal cap 30% first instalment, 70% before handover, 95% before certificate",
+   "foreign_ownership": "Foreigners may buy (project on HCMC foreign-ownership list, letter 2864/UBND-DT of 9 Apr 2026 per agent), subject to the 30% building quota and term limits",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "50 m pool",
+    "aqua gym",
+    "jacuzzi",
+    "clubhouse gym and yoga",
+    "riverside park",
+    "5 themed parks"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "HCMC People's Committee (investment); HCMC Department of Construction (building permit, eligibility to sell future housing)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.khangdien.com.vn/en/gladia-by-the-waters",
+   "https://www.khangdien.com.vn/keppel-khang-dien-mo-ban-thanh-cong-du-an-gladia-heights",
+   "https://vnexpress.net/du-an-gladia-heights-du-dieu-kien-mo-ban-5102997.html",
+   "https://dantri.com.vn/bat-dong-san/khu-can-ho-gladia-heights-co-van-ban-du-dieu-kien-mo-ban-20260730150638043.htm",
+   "https://sggroup.com.vn/wp-content/uploads/sgg-2026/phap-ly-gladia-heights/01-van-ban-26381-du-dieu-kien-ban.pdf",
+   "https://sggroup.com.vn/phap-ly-gladia-heights/",
+   "https://www.vutrongkhai.com/du-an/gladia-heights/",
+   "https://gladiakhangdien.com.vn/gladia-heights/"
+  ],
+  "permit_number": "HCMC Department of Construction letter 26381/SXD-PTDT (23 Jul 2026, 616 apartments eligible for sale); building permit 4151/SXD-QLXDCT (2 Feb 2026); investor approval 436/QD-UBND (11 Feb 2022)",
+  "added": "2026-10-31",
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "verified_score": 3
+ },
+ {
+  "slug": "nobu-residences-danang-circle-point",
+  "name": "Nobu Residences Danang",
+  "developer": "Circle Point Real Estate JSC (developed by Viet Capital Real Estate, VCRE)",
+  "area": "01 Vo Van Kiet, Phuoc My, Son Tra, Da Nang (My Khe Beach)",
+  "country": "Vietnam",
+  "market": "Vietnam",
+  "stage": "under construction",
+  "url": "https://www.savills.com.vn/residential/da-nang-projects/nobu-residences.aspx",
+  "docs_url": "https://vn.savills.com.vn/pdf-folder/nobu-residences-danang-brochure-vn.pdf",
+  "seed": {
+   "price": null,
+   "currency": "VND",
+   "title": "vacation apartment (condotel) on commercial-service land, term to 2060; buyers hold via long-term lease agreement (agent)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 6,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 264,
+   "payment_plan": "Refundable booking VND 100-300M; SPA at 15% then 5% instalments; up to 14% discount for 95% upfront; bank loans to 70% with 24 months interest support (Savills)",
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "agent brochure: investor Circle Point, 3,000 sq m site, 43 floors, 186 hotel rooms, 264 vacation apartments, facilities",
+   "agent: unit types 38-372 sq m, long-term leasehold to 2060",
+   "agent: sales policy (booking fee, 15% at SPA, discounts, bank support)",
+   "agent: 'guaranteed 6% annual return for the first six years' (Savills launch article)",
+   "agent: monthly construction update Apr 2026 (transfer slab L6M done)"
+  ],
+  "note": "Nobu-branded 43-storey condotel tower on My Khe Beach owned by Circle Point and marketed through Savills with a 'guaranteed 6% annual return'; handover has slipped from Q1 2026 to Q3 2027 in agent materials, and the project did not appear in the Da Nang Department of Construction lists of projects eligible to sell future housing published Oct 2025 and Jun 2026. (checked 31 Oct 2026)",
+  "evidence": {
+   "permit": "No permit or sale-eligibility number published by developer or agents; Da Nang DoC lists reported by CafeLand (Oct 2025) and VietnamFinance (Jun 2026) do not name the project or Circle Point (those lists cover commercial housing)",
+   "escrow": null,
+   "progress": "Only agent listing updates (Danang Villa Realty, dated Apr 2026: transfer slab L6M poured, May plan L7-L9); VietTimes (Jun 2026) reports construction at floors 11-13",
+   "plans": "Unit sizes only (38.5-372.3 sq m); no floor plans found",
+   "record": "No delivered projects named for Circle Point; Lao Dong's Nhip song doanh nghiep reported the company was founded May 2021 with 3 registered employees",
+   "returns": "Savills launch article: 'guaranteed 6% annual return for the first six years'; Realtique: 6% guarantee for two years then revenue share"
+  },
+  "positives": [
+   "International hotel operator (Nobu Hospitality) under licence, disclosed with a brand disclaimer",
+   "Building scale and unit mix consistent across agent materials"
+  ],
+  "flags": [
+   {
+    "text": "Nhip song doanh nghiep (Lao Dong) reported in Dec 2024 that brokers were promoting a 6% a year rental commitment for the first two years and that the investor collected VND 100 million 'registration fees' from mid-2024, while piling was still under way.",
+    "source": "https://nhipsongdoanhnghiep.laodongdoanthe.vn/ram-ro-cam-ket-loi-nhuan-condotel-booking-tai-du-an-nobu-da-nang-chu-dau-tu-la-ai-108427.html"
+   }
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "returns": "contradicted"
+  },
+  "claims": [
+   {
+    "claim": "Project eligible to sell (DoC notice)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vietnamfinance.vn/khao-sat-tien-do-cac-du-an-nha-o-thuong-mai-sap-tung-ra-10500-can-ho-o-da-nang-d145814.html"
+   },
+   {
+    "claim": "Investor is Circle Point Real Estate JSC",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://nhipsongdoanhnghiep.laodongdoanthe.vn/ram-ro-cam-ket-loi-nhuan-condotel-booking-tai-du-an-nobu-da-nang-chu-dau-tu-la-ai-108427.html"
+   },
+   {
+    "claim": "Investor is a Sun Group and Nobu JV, 25-28 floors (VietTimes)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://baomoi.com/can-canh-loat-du-an-bat-dong-san-dang-trien-khai-tai-cac-khu-dat-dac-dia-o-da-nang-c55460248.epi"
+   },
+   {
+    "claim": "43 floors, 186 hotel rooms, 264 vacation apartments on 3,000 sq m (1/500 plan 5593/QD-UBND)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://nhipsongdoanhnghiep.laodongdoanthe.vn/ram-ro-cam-ket-loi-nhuan-condotel-booking-tai-du-an-nobu-da-nang-chu-dau-tu-la-ai-108427.html"
+   },
+   {
+    "claim": "Construction at floors 11-13 (Jun 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://baomoi.com/can-canh-loat-du-an-bat-dong-san-dang-trien-khai-tai-cac-khu-dat-dac-dia-o-da-nang-c55460248.epi"
+   },
+   {
+    "claim": "Handover Q3 2027 (vs Q1 2026 on Savills page, Q1 2027 CBRE)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.savills.com.vn/residential/da-nang-projects/nobu-residences.aspx"
+   },
+   {
+    "claim": "Guaranteed 6% a year for six years (Savills) vs two years (Realtique, Lao Dong)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.savills.com.vn/blog/article/220935/vietnam-eng/0325-nobu-residences-danang-officially-launches-handover-scheduled-for-q3-2027.aspx"
+   },
+   {
+    "claim": "Foreigners can buy via long-term lease agreement",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.realtique.net/en/news/real-estate/nobu-residences-da-nang-en/40446/nobu-residences-danang-price-legal/"
+   },
+   {
+    "claim": "Term to 2060",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.savills.com.vn/residential/da-nang-projects/nobu-residences.aspx"
+   },
+   {
+    "claim": "Developer track record",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://residential.cbrevietnam.com/nobu-danang"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2021,
+   "developer_hq": "Son Tra, Da Nang, Vietnam",
+   "developer_company": "Circle Point Real Estate JSC (development manager VCRE, Phoenix Holdings)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q3",
+   "original_handover": "2026-Q1",
+   "delay_months": 18,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR dual key",
+    "3BR sky pool",
+    "penthouse"
+   ],
+   "size_min_m2": 38.5,
+   "size_max_m2": 372.3,
+   "price_min": null,
+   "price_max": null,
+   "currency": "VND",
+   "deposit_pct": 15,
+   "payment_plan": "15% at SPA then 5% instalments; 95% upfront for 14% discount; bank loans up to 70%",
+   "foreign_ownership": "Vacation apartment on commercial land to 2060; agents say Vietnamese and foreign buyers hold via a long-term lease agreement",
+   "rental_programme": "Nobu Hospitality rental programme; agents advertise 6% guaranteed (2 or 6 years) then revenue share",
+   "service_charge": "2% maintenance fee; 4% FF&E fund (agent)",
+   "brand": "Nobu Residences (licensed)",
+   "amenities": [
+    "heated pool",
+    "Nobu restaurant",
+    "sky bar",
+    "sky gym",
+    "spa",
+    "kids club",
+    "ballroom",
+    "lobby lounge"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Da Nang People's Committee (planning); Da Nang Department of Construction (building permit, eligibility to sell)",
+   "brochure_url": "https://vn.savills.com.vn/pdf-folder/nobu-residences-danang-brochure-vn.pdf"
+  },
+  "sources": [
+   "https://www.savills.com.vn/residential/da-nang-projects/nobu-residences.aspx",
+   "https://vn.savills.com.vn/pdf-folder/nobu-residences-danang-brochure-vn.pdf",
+   "https://www.savills.com.vn/blog/article/220935/vietnam-eng/0325-nobu-residences-danang-officially-launches-handover-scheduled-for-q3-2027.aspx",
+   "https://www.realtique.net/en/news/real-estate/nobu-residences-da-nang-en/40446/nobu-residences-danang-price-legal/",
+   "https://residential.cbrevietnam.com/nobu-danang",
+   "https://www.danangvillarealty.com/vi/blog/real-estate/cp-nht-tin-d-xay-dng-nobu-danang-thang-042026.html",
+   "https://nhipsongdoanhnghiep.laodongdoanthe.vn/ram-ro-cam-ket-loi-nhuan-condotel-booking-tai-du-an-nobu-da-nang-chu-dau-tu-la-ai-108427.html",
+   "https://baomoi.com/can-canh-loat-du-an-bat-dong-san-dang-trien-khai-tai-cac-khu-dat-dac-dia-o-da-nang-c55460248.epi",
+   "https://cafeland.vn/tin-tuc/so-xay-dung-da-nang-cong-bo-loat-du-an-du-dieu-kien-ban-144409.html",
+   "https://vietnamfinance.vn/khao-sat-tien-do-cac-du-an-nha-o-thuong-mai-sap-tung-ra-10500-can-ho-o-da-nang-d145814.html"
+  ],
+  "permit_number": null,
+  "added": "2026-10-31",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": false,
+   "score": 1,
+   "all_six": false
+  },
+  "verified_score": 1
  }
 ]

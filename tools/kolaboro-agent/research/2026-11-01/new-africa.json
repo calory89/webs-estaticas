@@ -1159,5 +1159,2647 @@
    "https://al-yaseen-developments.com/page87045256.html"
   ],
   "verified_score": 0
+ },
+ {
+  "slug": "elevenonb-blok",
+  "name": "ELEVENONB",
+  "developer": "BLOK (Blok Urban Precinct Developers)",
+  "area": "West City, Cape Town CBD (11 Buiten Street)",
+  "country": "South Africa",
+  "market": "Cape Town",
+  "stage": "under construction",
+  "url": "https://www.bizcommunity.com/article/massive-boost-for-cape-town-cbd-developers-unveil-r650m-plan-for-upper-long-street-953654a",
+  "docs_url": "https://elevenonb.co.za/",
+  "permit_number": null,
+  "docs_listed": [
+   "151 apartments: compact studios to penthouses, 28 to 295 m2",
+   "price list by type (from R1,795,000)",
+   "estimated net short-term rental income per type (e.g. R182,928 for a compact studio)",
+   "deposit held in attorney's interest-bearing trust account (FAQ)",
+   "brochure PDF with unit types and sizes",
+   "completion November 2027 / Q4 2027",
+   "developer LinkedIn: groundbreaking July 2026, piling Aug 2026"
+  ],
+  "note": "R650m, 151-unit CBD block by Blok, its 21st development; deposits are held in the conveyancing attorney's trust account. The FAQ said ground would break in March 2026 but the groundbreaking ceremony was held in July 2026, with piling under way in August and completion still shown as November 2027 (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1795000,
+   "currency": "ZAR",
+   "title": "sectional title (freehold)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Cash buyers pay 30% deposit and bond buyers 10%; deposit is held in the developer's attorney's trust account and accrues interest for the buyer until completion",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Blok lists completed developments including TENONV (152 apartments, residents moving in mid-2026), ONE46ONM, ONEHUNDREDONM, TENONQ (53), NINEONS (23), TWO16ONHL (22), SIXTY6ONK (13), FIFTY8ONV (11); TENONV delivery reported by CCID and Bizcommunity",
+   "units": 151,
+   "payment_plan": "R50,000 reservation fee; 30% cash deposit or 10% deposit + 90% bond; balance on transfer",
+   "price_per_m2": 64107
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No City of Cape Town building plan approval number or NHBRC enrolment number published",
+   "escrow": "FAQ: deposit held in our attorney's trust account, accruing interest for the buyer until completion",
+   "progress": "Developer posts dated updates: groundbreaking ceremony (10 July 2026), piling works under way (12 Aug 2026)",
+   "plans": "Brochure PDF and apartment browser show each unit type with sizes (28 to 295 m2)",
+   "record": "Developer lists 20 completed developments; Cape Town Central City Improvement District and Bizcommunity report TENONV delivered 152 apartments",
+   "returns": "Site shows 'estimated net short term rental income' per unit type but no guarantee"
+  },
+  "positives": [
+   "Deposit held in attorney trust account with interest to buyer",
+   "Long delivery record of 20 completed Cape Town developments, latest confirmed by independent press",
+   "Full price list and unit sizes published",
+   "Dated construction updates from groundbreaking onward"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Blok delivered TENONV (152 apartments) in 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://capetownccid.com/news/move-revive-cape-towns-legendary-long-street"
+   },
+   {
+    "claim": "ELEVENONB is a R650m development",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.bizcommunity.com/article/massive-boost-for-cape-town-cbd-developers-unveil-r650m-plan-for-upper-long-street-953654a"
+   },
+   {
+    "claim": "Ground to break March 2026",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.linkedin.com/posts/blok-realestate_another-memorable-evening-as-we-marked-the-activity-7481306028144443392-IbtZ"
+   },
+   {
+    "claim": "Groundbreaking held July 2026; piling under way Aug 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.linkedin.com/posts/blok-realestate_progress-in-motion-at-elevenonb-since-activity-7493318860046135296-GS78"
+   },
+   {
+    "claim": "Completion November 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://elevenonb.co.za/"
+   },
+   {
+    "claim": "Deposits held in attorney's trust account",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://elevenonb.co.za/faqs/"
+   },
+   {
+    "claim": "20 completed developments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://blok.co.za/design/"
+   },
+   {
+    "claim": "Estimated net short-term rental income R182,928 for a compact studio",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://elevenonb.co.za/"
+   },
+   {
+    "claim": "No transfer duty on off-plan purchase (VAT-inclusive price)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://elevenonb.co.za/faqs/"
+   },
+   {
+    "claim": "City of Cape Town building plans approved",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://elevenonb.co.za/faqs/"
+   },
+   {
+    "claim": "Developer company registered with CIPC",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://blok.co.za/design/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Cape Town, South Africa",
+   "developer_company": null,
+   "developer_projects_delivered": 20,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-07",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "compact studio",
+    "studio",
+    "compact 1BR",
+    "1BR",
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": 28,
+   "size_max_m2": 295,
+   "price_min": 1795000,
+   "price_max": null,
+   "currency": "ZAR",
+   "deposit_pct": 10,
+   "payment_plan": "10% deposit + bond, or 30% deposit cash; balance on transfer",
+   "foreign_ownership": "sectional title freehold; no restriction on foreign buyers in South Africa",
+   "rental_programme": "short-term letting via Fluent (Blok partner), estimated net income shown per type",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "co-working space",
+    "privately run gym",
+    "ground-floor shopping arcade",
+    "concierge",
+    "24-hour security",
+    "laundry",
+    "pet-friendly"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "City of Cape Town (building plan approval); NHBRC (home enrolment)",
+   "brochure_url": "https://elevenonb.co.za/wp-content/uploads/2025/10/ELEVENONB-Website-Brochure_FINAL.pdf"
+  },
+  "sources": [
+   "https://elevenonb.co.za/",
+   "https://elevenonb.co.za/faqs/",
+   "https://elevenonb.co.za/wp-content/uploads/2025/10/ELEVENONB-Website-Brochure_FINAL.pdf",
+   "https://blok.co.za/design/",
+   "https://www.linkedin.com/posts/blok-realestate_another-memorable-evening-as-we-marked-the-activity-7481306028144443392-IbtZ",
+   "https://www.linkedin.com/posts/blok-realestate_progress-in-motion-at-elevenonb-since-activity-7493318860046135296-GS78",
+   "https://www.bizcommunity.com/article/massive-boost-for-cape-town-cbd-developers-unveil-r650m-plan-for-upper-long-street-953654a",
+   "https://capetownccid.com/news/move-revive-cape-towns-legendary-long-street"
+  ],
+  "verified_score": 1
+ },
+ {
+  "slug": "kingfisher-riverlands-signatura",
+  "name": "Kingfisher at Riverlands",
+  "developer": "Signatura (residential developer) with Zenprop; land held by Liesbeek Leisure Properties Trust",
+  "area": "Riverlands (former River Club), Observatory, Cape Town",
+  "country": "South Africa",
+  "market": "Cape Town",
+  "stage": "off-plan",
+  "url": "https://riverlands.capetown/apartments/",
+  "docs_url": "https://riverlands.capetown/apartments/",
+  "permit_number": null,
+  "docs_listed": [
+   "two ten-storey towers above a parking podium with rooftop pool deck and Virgin Active club",
+   "unit-level price list with internal and balcony areas, levies and rates, clickable floor plans",
+   "long- and short-term rental projections (nett, not guaranteed)",
+   "10% deposit, no transfer duty",
+   "expected completion Q3 2027",
+   "court records: City MPT approval 30 Sept 2020 and provincial environmental authorisation 20 Aug 2020 for the River Club site (erf 151832)"
+  ],
+  "note": "Second residential phase of the 14-hectare Riverlands precinct that also houses Amazon's Africa HQ; developer pages give completion in Q3 2027 and publish unit floor plans, levies and rental projections. The site's planning and environmental approvals were challenged in court, with an interdict granted in March 2022, rescinded in November 2022, and the SCA refusing leave to appeal in May 2023 (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 7495000,
+   "currency": "ZAR",
+   "title": "sectional title (freehold)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Signatura names The Onyx and WEX1 (Cape Town) and Arbour Nature Estate (George) as completed; first Riverlands phase Sunbird sold out; Zenprop active since 1998",
+   "units": 226,
+   "payment_plan": "10% deposit, balance on transfer (no transfer duty, VAT-inclusive prices)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building plan approval or NHBRC number published for Kingfisher; court judgments confirm the City Municipal Planning Tribunal approved the River Club development on 30 Sept 2020 (confirmed by the Mayor on 18 April 2021) and environmental authorisation was granted on 20 Aug 2020",
+   "escrow": "Only '10% deposit' is stated; no trust account or guarantee wording found",
+   "progress": "No construction updates for Kingfisher; sales page says launch is approaching",
+   "plans": "Price list links each available unit to its floor plan with internal and balcony areas",
+   "record": "Signatura names completed projects (The Onyx, WEX1, Arbour Nature Estate) and the sold-out Sunbird phase",
+   "returns": "Rental projections are labelled estimates (nett figures); no guarantee"
+  },
+  "positives": [
+   "Unit-level price list with floor plans, levies and rates",
+   "Land-use and environmental approvals for the site are recorded in court judgments and were upheld",
+   "Established residential and commercial developers named"
+  ],
+  "flags": [
+   {
+    "text": "Western Cape High Court interdicted construction on the River Club site in March 2022 pending consultation with First Nations groups; a full bench rescinded that order in November 2022, finding the litigation unauthorised",
+    "source": "https://www.saflii.org/za/cases/ZAWCHC/2022/227.html"
+   },
+   {
+    "text": "The City of Cape Town reported that the Supreme Court of Appeal refused the Observatory Civic Association leave to appeal on 16 May 2023",
+    "source": "https://www.capetown.gov.za/media-and-news/outcome-of-river-club-litigation-a-major-boost-for-cape-town/"
+   }
+  ],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "City MPT approved the River Club development (30 Sept 2020), confirmed by the Mayor (18 April 2021)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.saflii.org/za/cases/ZAWCHC/2022/280.html"
+   },
+   {
+    "claim": "Environmental authorisation granted 20 Aug 2020 and appeals dismissed 22 Feb 2021",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.saflii.org/za/cases/ZAWCHC/2022/280.html"
+   },
+   {
+    "claim": "Construction interdict rescinded (Nov 2022)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.saflii.org/za/cases/ZAWCHC/2022/227.html"
+   },
+   {
+    "claim": "SCA refused leave to appeal (May 2023)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.capetown.gov.za/media-and-news/outcome-of-river-club-litigation-a-major-boost-for-cape-town/"
+   },
+   {
+    "claim": "Land (erf 151832, ~14.7 ha) owned by Liesbeek Leisure Properties Trust",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.saflii.org/za/cases/ZAWCHC/2022/280.html"
+   },
+   {
+    "claim": "Kingfisher completion Q3 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://riverlands.capetown/apartments/"
+   },
+   {
+    "claim": "Kingfisher has 226 apartments (home page) vs 'over 300 apartments' (apartments page)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://riverlands.capetown/"
+   },
+   {
+    "claim": "Apartments from R7.495m (earlier listing: two-beds from R4.025m)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://riverlands.capetown/apartments/"
+   },
+   {
+    "claim": "First phase Sunbird sold out and built",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://riverlands.capetown/faq/"
+   },
+   {
+    "claim": "Signatura delivered The Onyx, WEX1 and Arbour Nature Estate",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://riverlands.capetown/about/"
+   },
+   {
+    "claim": "Short-term rental projection R29,500 per month nett for a two-bed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://riverlands.capetown/apartments/"
+   },
+   {
+    "claim": "Deposits held in trust",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://riverlands.capetown/faq/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2012,
+   "developer_hq": "Cape Town, South Africa",
+   "developer_company": "Signatura (founded 2012 by John Rabie); Zenprop Property Holdings (commercial); Trustees of Liesbeek Leisure Properties Trust (landowner in litigation)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 7495000,
+   "price_max": 7750000,
+   "currency": "ZAR",
+   "deposit_pct": 10,
+   "payment_plan": "10% deposit, balance on transfer",
+   "foreign_ownership": "sectional title freehold; no restriction on foreign buyers",
+   "rental_programme": "rental projections published; named short-term letting agents",
+   "service_charge": "estimated levies per unit published in price list",
+   "brand": "Virgin Active (health club)",
+   "amenities": [
+    "rooftop pool and pavilion",
+    "Virgin Active club",
+    "residents' gym",
+    "24-hour reception and security",
+    "2-hectare eco park",
+    "6 km trails",
+    "Riverlands Mall"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "City of Cape Town (Municipal Planning Tribunal, building plan approval); Western Cape DEA&DP (environmental authorisation)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://riverlands.capetown/",
+   "https://riverlands.capetown/apartments/",
+   "https://riverlands.capetown/faq/",
+   "https://riverlands.capetown/about/",
+   "https://riverlands.capetown/price-list/",
+   "https://www.saflii.org/za/cases/ZAWCHC/2022/280.html",
+   "https://www.saflii.org/za/cases/ZAWCHC/2022/227.html",
+   "https://www.capetown.gov.za/media-and-news/outcome-of-river-club-litigation-a-major-boost-for-cape-town/",
+   "https://cer.org.za/virtual-library/judgments/high-courts/observatory-civic-association-goringhaicona-khoi-khoin-v-liesbeek-leisure-properties-trust-others-river-club-development-interdict",
+   "https://www.businessday.co.za/bd/national/2022-11-08-full-steam-ahead-for-amazon-office-project-after-court-decision/"
+  ],
+  "verified_score": 1
+ },
+ {
+  "slug": "tifawin-villas-swisspro360",
+  "name": "Tifawin Villas",
+  "developer": "Unnamed third-party developer; exclusively distributed by SwissPro360 Morocco",
+  "area": "Route d'Amizmiz, Marrakech",
+  "country": "Morocco",
+  "market": "Marrakech",
+  "stage": "under construction",
+  "url": "https://eternalmorocco.com/en/residences/tifawin-marrakech",
+  "docs_url": "https://eternalmorocco.com/en/residences/tifawin-marrakech",
+  "permit_number": null,
+  "docs_listed": [
+   "16 single-storey villas, plots 1,064 to 1,811 m2, built 322 to 500 m2",
+   "master plan with sold and available plots (9 sold, 7 available)",
+   "per-villa areas (built, terrace, basement, pool)",
+   "payment schedule in four instalments tied to construction (35% at preliminary contract, 30% next stage...)",
+   "delivery July 2027, show villa open",
+   "price on request"
+  ],
+  "note": "Boutique villa estate sold by Dubai-born platform SwissPro360 as exclusive distributor; the site says it audited the developer, land title and permit but does not name the developer or publish the permit. The home page advertises an escrow account at a partner bank, while the same site says the banking arrangement is still being formalised (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "MAD",
+   "title": "freehold (individual land title at delivery)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "Home page: 'Escrow account at the partner bank'; developer page adds 'Banking arrangement being formalised'",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 16,
+   "payment_plan": "four instalments tied to construction progress: 35% at signature of preliminary contract, 30% at next stage, balance at later stages",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Distributor says each development is audited for land title and building permit before distribution, but no permit or land title number is shown",
+   "escrow": "Escrow at a partner bank is advertised, but the developer page states the banking arrangement is being formalised; contradictory",
+   "progress": "Show villa open for visits; no dated progress photos or percentage",
+   "plans": "Master plan with plot sizes and per-villa area tables; floor plans only in a brochure sent on request",
+   "record": "Underlying developer not named; distributor's own 72-riad programme is still in design",
+   "returns": "Yield calculator with editable assumptions; no guaranteed returns"
+  },
+  "positives": [
+   "Instalments tied to construction stages under Moroccan off-plan (VEFA) rules",
+   "Detailed per-villa areas and live sold/available plan",
+   "Freehold with individual land title at delivery for foreign buyers"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "contradicted",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Buyer money held in a bank escrow account",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://eternalmorocco.com/en/developer"
+   },
+   {
+    "claim": "Developer, land title and permit audited before distribution",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://eternalmorocco.com/en/developer"
+   },
+   {
+    "claim": "Delivery July 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://eternalmorocco.com/en/residences/tifawin-marrakech"
+   },
+   {
+    "claim": "9 of 16 villas sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://eternalmorocco.com/en/residences/tifawin-marrakech"
+   },
+   {
+    "claim": "Show villa built and open",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://eternalmorocco.com/en"
+   },
+   {
+    "claim": "Instalments tied to certified construction stages",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://eternalmorocco.com/en/residences/tifawin-marrakech"
+   },
+   {
+    "claim": "Individual land title for each villa at delivery",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://eternalmorocco.com/en"
+   },
+   {
+    "claim": "Non-residents can buy titled property freehold and repatriate proceeds",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://eternalmorocco.com/en"
+   },
+   {
+    "claim": "Underlying developer company registered (RC/ICE)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://eternalmorocco.com/en/residences/tifawin-marrakech"
+   },
+   {
+    "claim": "Building permit issued by the Marrakech commune",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://eternalmorocco.com/en/residences/tifawin-marrakech"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "4-suite villa",
+    "5-suite villa"
+   ],
+   "size_min_m2": 322,
+   "size_max_m2": 500,
+   "price_min": null,
+   "price_max": null,
+   "currency": "MAD",
+   "deposit_pct": 35,
+   "payment_plan": "4 stage-linked instalments, 35% at preliminary contract",
+   "foreign_ownership": "freehold with individual land title (titre foncier) at delivery",
+   "rental_programme": "none; yield calculator only",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private infinity pool",
+    "convertible rooftop",
+    "fire pit",
+    "basement gym or cinema on some villas",
+    "private secure estate"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Commune / Agence Urbaine de Marrakech (building permit); ANCFCC (land title)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://eternalmorocco.com/en",
+   "https://eternalmorocco.com/en/developer",
+   "https://eternalmorocco.com/en/residences/tifawin-marrakech"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "aman-residences-amanjena-aman-o-capital",
+  "name": "Aman Residences, Amanjena",
+  "developer": "Aman Group with O Capital Group (via Revly's Marrakech, co-owner of Amanjena)",
+  "area": "Route de Ouarzazate Km 12, Amelkis, Marrakech",
+  "country": "Morocco",
+  "market": "Marrakech",
+  "stage": "under construction",
+  "url": "https://www.privata.travel/residences/amanjena-marrakech",
+  "docs_url": "https://www.aman.com/resorts/amanjena/residences",
+  "permit_number": null,
+  "docs_listed": [
+   "villa collection within the Amanjena resort grounds, managed by Amanjena",
+   "three villa layouts, 1,530 to 2,260 m2 (Feb 2025 release)",
+   "architect SAOTA, interiors ARRCC",
+   "price on request, no unit count, no completion date"
+  ],
+  "note": "Aman's first branded residences in Africa, announced Feb 2025 as co-owned with O Capital Group, which states it owns Amanjena 50/50 with Aman; the release said construction was under way. Aman publishes no price, unit count, completion date or deposit terms, and its current page describes two- to five-bedroom villas against three- to six-bedroom in the launch release (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "MAD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Amanjena resort (40 pavilions) built in 2000-2001 by O Capital Group's Benjelloun with Aman and operating since 2001, per O Capital Group and Aman releases",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building permit or authorisation number published",
+   "escrow": "No deposit protection, VEFA guarantee or escrow information published",
+   "progress": "Feb 2025 release says construction is under way; no dated updates or percentage since",
+   "plans": "Layout sizes given but no floor plans published",
+   "record": "O Capital Group states its company Revly's Marrakech owns Amanjena, operating since 2001 and co-owned 50% with Aman Resorts Group",
+   "returns": "No rental programme figures or guarantees"
+  },
+  "positives": [
+   "Global hotel brand with an operating resort on the same grounds since 2001",
+   "Moroccan co-owner is a major group that publicly discloses its shareholding in the resort"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project co-owned with O Capital Group",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ocapitalgroup.ma/en/our-shareholdings/real-estate-tourism/amanjena/"
+   },
+   {
+    "claim": "Amanjena resort operating since 2001 with 40 pavilions",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ocapitalgroup.ma/en/our-shareholdings/real-estate-tourism/amanjena/"
+   },
+   {
+    "claim": "Construction under way (Feb 2025)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.traveldailymedia.com/aman-announces-aman-residences-amanjena-in-morocco/"
+   },
+   {
+    "claim": "Villas of three to six bedrooms",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.aman.com/resorts/amanjena/residences"
+   },
+   {
+    "claim": "Three layouts from 1,530 to 2,260 m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thesuitesojourn.com/amanjena-announces-new-residences-in-marrakech-morocco/"
+   },
+   {
+    "claim": "Designed by SAOTA with ARRCC interiors",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.saota.com/aman-residences-amanjena-marrakech/"
+   },
+   {
+    "claim": "Residences managed by Amanjena",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.hotelier-indonesia.com/2025/02/aman-announces-aman-residences-amanjena.html"
+   },
+   {
+    "claim": "Freehold title for buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.privata.travel/residences/amanjena-marrakech"
+   },
+   {
+    "claim": "Completion date",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aman.com/resorts/amanjena/residences"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aman.com/resorts/amanjena/residences"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Marrakech, Morocco (resort); Aman Group global",
+   "developer_company": "Revly's Marrakech (O Capital Group), 50% co-owned with Aman Resorts Group Limited",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-02",
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "villa 2-5BR (current page)",
+    "villa 3-6BR (launch release)"
+   ],
+   "size_min_m2": 1530,
+   "size_max_m2": 2260,
+   "price_min": null,
+   "price_max": null,
+   "currency": "MAD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "not stated by the developer",
+   "rental_programme": "managed by Amanjena (no figures)",
+   "service_charge": null,
+   "brand": "Aman",
+   "amenities": [
+    "private garden",
+    "private pool",
+    "staff accommodation",
+    "roof gardens",
+    "Amanjena resort services",
+    "Amelkis 27-hole golf"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Commune and Agence Urbaine de Marrakech",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.aman.com/resorts/amanjena/residences",
+   "https://www.ocapitalgroup.ma/en/our-shareholdings/real-estate-tourism/amanjena/",
+   "https://www.traveldailymedia.com/aman-announces-aman-residences-amanjena-in-morocco/",
+   "https://thesuitesojourn.com/amanjena-announces-new-residences-in-marrakech-morocco/",
+   "https://www.hotelier-indonesia.com/2025/02/aman-announces-aman-residences-amanjena.html",
+   "https://www.saota.com/aman-residences-amanjena-marrakech/",
+   "https://www.privata.travel/residences/amanjena-marrakech"
+  ],
+  "verified_score": 1
+ },
+ {
+  "slug": "azure-michamvi-azure-united-properties",
+  "name": "AZURE Michamvi (The House Residence Azure Zanzibar)",
+  "developer": "Azure United Properties",
+  "area": "Michamvi Peninsula, east coast",
+  "country": "Tanzania",
+  "market": "Zanzibar",
+  "stage": "under construction",
+  "url": "https://www.azuremichamvi.com/",
+  "docs_url": "https://www.azuremichamvi.com/villas",
+  "permit_number": null,
+  "docs_listed": [
+   "93 garden, beachfront and overwater villas (16 overwater)",
+   "villa layouts with room-by-room areas, plot and jetty allocations",
+   "villas from USD 320,000",
+   "mandatory rental pool, 14 days owner use per year",
+   "timeline: building permit secured 24 June 2024; villas Q4 2027; hotel operations Q1 2028",
+   "disclaimer: no return guaranteed unless in a signed agreement"
+  ],
+  "note": "Hotel-managed villa resort on a 60,000 m2 site; launched in May 2025 with Kerten Hospitality and a Q4 2026 handover, now planned for Q4 2027 with an unnamed five-star operator to be appointed. The developer says a building permit was secured in June 2024 but publishes no number, and an agent advertises about 15% ROI (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 320000,
+   "currency": "USD",
+   "title": "leasehold (Zanzibar condominium unit title)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 15,
+   "completion": "2027-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 93,
+   "payment_plan": null,
+   "price_per_m2": 3636
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Timeline states 'Building permit secured' on 24 June 2024; no permit or ZIPA certificate number published",
+   "escrow": "No escrow, insurance or deposit protection published",
+   "progress": "Timeline lists milestones and planned dates only; no dated site photos or percentage found",
+   "plans": "Villa pages give layouts and room-by-room areas for each type (88 to 187 m2 built)",
+   "record": "No completed projects by Azure United Properties named",
+   "returns": "Developer disclaims guaranteed returns; Coldwell Banker Tanzania advertises approximately 15% ROI for these Michamvi villas"
+  },
+  "positives": [
+   "Detailed villa layouts with areas and plot sizes",
+   "Developer states clearly that returns are not guaranteed",
+   "Covered by Tanzanian national press and announced with the Zanzibar tourism minister present"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Handover Q4 2026 (May 2025 launch)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://kertenhospitality.com/kerten-and-azure-launch-landmark-all-villa-resort-in-zanzibar/"
+   },
+   {
+    "claim": "Villa completion Q4 2027, hotel operations Q1 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.azuremichamvi.com/"
+   },
+   {
+    "claim": "Building permit secured 24 June 2024",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.azurezanzibar.com/project-michamvi"
+   },
+   {
+    "claim": "Operated by Kerten Hospitality",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.azuremichamvi.com/"
+   },
+   {
+    "claim": "93 villas including 16 overwater",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.thecitizen.co.tz/tanzania/zanzibar/how-azure-s-zanzibar-michamvi-project-will-redefine-sustainable-coastal-living-5275974"
+   },
+   {
+    "claim": "Site within a protected mangrove reserve (operator release)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kertenhospitality.com/kerten-and-azure-launch-landmark-all-villa-resort-in-zanzibar/"
+   },
+   {
+    "claim": "Villas from USD 320,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://coldwellbanker.tz/investing-guides/zanzibar-real-estate-guide/"
+   },
+   {
+    "claim": "About 15% ROI",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://coldwellbanker.tz/investing-guides/zanzibar-real-estate-guide/"
+   },
+   {
+    "claim": "Project is ZIPA approved / condominium registered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.azuremichamvi.com/"
+   },
+   {
+    "claim": "Developer company registered (BPRA)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.azurezanzibar.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2023,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-06",
+   "handover_promised": "2027-Q4",
+   "original_handover": "2026-Q4",
+   "delay_months": 12,
+   "unit_types": [
+    "1BR garden/beach villa",
+    "2BR villa",
+    "3BR beach villa",
+    "1BR overwater",
+    "2BR overwater"
+   ],
+   "size_min_m2": 85,
+   "size_max_m2": 187,
+   "price_min": 320000,
+   "price_max": 460000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "unit title under Zanzibar Condominium Act (leasehold); not detailed by developer",
+   "rental_programme": "mandatory rental pool, 14 owner nights per year; agent advertises about 15% ROI",
+   "service_charge": null,
+   "brand": "to be appointed (Kerten announced in 2025)",
+   "amenities": [
+    "private pools",
+    "beachfront restaurant",
+    "infinity pool",
+    "gym",
+    "yoga pavilion",
+    "overwater lounge",
+    "solar power"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Zanzibar Investment Promotion Authority (ZIPA); Department of Urban and Rural Planning (building permit); Condominium Board",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.azuremichamvi.com/",
+   "https://www.azuremichamvi.com/villas",
+   "https://www.azurezanzibar.com/project-michamvi",
+   "https://www.azurezanzibar.com/",
+   "https://kertenhospitality.com/kerten-and-azure-launch-landmark-all-villa-resort-in-zanzibar/",
+   "https://www.thecitizen.co.tz/tanzania/zanzibar/how-azure-s-zanzibar-michamvi-project-will-redefine-sustainable-coastal-living-5275974",
+   "https://coldwellbanker.tz/investing-guides/zanzibar-real-estate-guide/",
+   "https://www.znzist.com/real-estate"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "chukwani-shores-paddco",
+  "name": "Chukwani Shores",
+  "developer": "PADDCO",
+  "area": "Chukwani, south-west Unguja (near Stone Town)",
+  "country": "Tanzania",
+  "market": "Zanzibar",
+  "stage": "under construction",
+  "url": "https://www.znzist.com/real-estate",
+  "docs_url": "https://paddco.com/developments-chukwani-shores/",
+  "permit_number": null,
+  "docs_listed": [
+   "120 units: 50 1BR, 50 2BR, 10 penthouses, 8 villas, 2 super villas",
+   "prices from USD 132,900 (1BR) to USD 643,000 (super villa)",
+   "payment plan 10% down, 8 quarterly 10% instalments, 10% at handover",
+   "99-year leasehold",
+   "construction start Q1 2025, estimated finish Q3 2027",
+   "monthly construction progress gallery Dec 2024 to Oct 2026",
+   "unit pages with build sizes (e.g. 2BR 126 m2)"
+  ],
+  "note": "Seafront mixed apartment and villa scheme near Stone Town; PADDCO posts monthly progress galleries from December 2024 to October 2026 and targets completion in Q3 2027. No permit, ZIPA certificate or deposit protection is published and the developer names no completed project (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 132900,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 99,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 120,
+   "payment_plan": "10% down, 80% in 8 quarterly instalments of 10% during construction, 10% at handover",
+   "price_per_m2": 1311
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building permit, ZIPA or condominium registration number published",
+   "escrow": "No escrow or deposit protection; instalments paid to the developer",
+   "progress": "Construction progress page with monthly galleries labelled December 2024 through October 2026",
+   "plans": "Unit pages give build sizes and features but no floor plan drawings were found",
+   "record": "PADDCO names only Chukwani Shores and Blu Pearl (Nungwi); no completed projects",
+   "returns": "Mentions rental market benefits; no guaranteed returns"
+  },
+  "positives": [
+   "Monthly dated construction galleries for almost two years",
+   "Full price list, unit mix and staged payment plan published",
+   "10% retained until handover"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction started Q1 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://paddco.com/developments-chukwani-shores/"
+   },
+   {
+    "claim": "Estimated finish Q3 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://paddco.com/developments-chukwani-shores/"
+   },
+   {
+    "claim": "Monthly progress updates to Oct 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://paddco.com/chukwani-shores-construction-progress/"
+   },
+   {
+    "claim": "Payment plan 10/80/10 in quarterly 10% instalments (home page describes five 20% payments)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://paddco.com/"
+   },
+   {
+    "claim": "Villas sold out, concrete being poured (June 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.linkedin.com/posts/therealmaxwell_chukwani-shores-is-moving-fast-the-luxury-activity-7476627003602042880-d2Zf"
+   },
+   {
+    "claim": "Less than 40% of units available",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://paddco.com/developments-chukwani-shores/"
+   },
+   {
+    "claim": "99-year leasehold for buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://paddco.com/developments-chukwani-shores/"
+   },
+   {
+    "claim": "1BR from USD 132,900",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://paddco.com/developments-chukwani-shores/"
+   },
+   {
+    "claim": "ZIPA approval / condominium registration",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://paddco.com/"
+   },
+   {
+    "claim": "Developer company registered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://paddco.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2023,
+   "developer_hq": "Zanzibar, Tanzania",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-Q1",
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR penthouse",
+    "3BR villa",
+    "3BR super villa"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 132900,
+   "price_max": 643000,
+   "currency": "USD",
+   "deposit_pct": 10,
+   "payment_plan": "10/80/10",
+   "foreign_ownership": "99-year leasehold",
+   "rental_programme": "property management offered (no figures)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "seafront",
+    "private balconies",
+    "villas with private terraces"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "ZIPA; Zanzibar Department of Urban and Rural Planning; Condominium Board",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://paddco.com/",
+   "https://paddco.com/developments-chukwani-shores/",
+   "https://paddco.com/chukwani-shores-construction-progress/",
+   "https://paddco.com/project/chukwani-shores-2-bedroom-apartments/",
+   "https://www.linkedin.com/posts/therealmaxwell_chukwani-shores-is-moving-fast-the-luxury-activity-7476627003602042880-d2Zf",
+   "https://www.znzist.com/real-estate"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "amethyst-springs-kilimani-gy-group",
+  "name": "Amethyst Springs (Amethyst Kilimani)",
+  "developer": "GY Group Real Estate (EIA proponent: Stellar Strategies Limited)",
+  "area": "Maalim Juma Road, off Dennis Pritt Road, Kilimani",
+  "country": "Kenya",
+  "market": "Nairobi",
+  "stage": "off-plan",
+  "url": "https://zuriestates.com/discover/amethyst-springs-kilimani",
+  "docs_url": "https://gygroup.ke/projects/amethyst",
+  "permit_number": null,
+  "docs_listed": [
+   "five or six layouts 58 to 110 m2 with price ranges by floor (from KES 6.2m)",
+   "30% or 50% deposit price tiers (agents)",
+   "completion October 2028 (agents)",
+   "amenities: heated pool, gym, rooftop garden, cinema, co-working",
+   "NEMA EIA study report: 380 units, 21 storeys, plot L.R. No. 1/475 (Nairobi/Block 19/62)"
+  ],
+  "note": "380-unit twin-tower project by the team behind Emerald Springs Westlands, launched for presale in Sept-Oct 2025 with completion promised for October 2028. A NEMA-published EIA study report for an identical 380-unit scheme on Maalim Juma Road names Stellar Strategies Ltd as proponent and Denpro Ltd as registered landowner under a sale agreement; the report was posted for review in Feb 2026, after sales began (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 6200000,
+   "currency": "KES",
+   "title": "leasehold (sectional title)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Agents and developer cite Emerald Springs (Westlands, 2 towers, reported 95% complete July 2026), Misty Springs, Crest Park, Peony Estate and Siaya Park; Emerald Springs publishes a detailed 2026 progress report",
+   "units": 380,
+   "payment_plan": "30% deposit to reserve, balance in stages to completion; cheaper 50% deposit and cash tiers (agents)",
+   "price_per_m2": 106897
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No Nairobi County approval, NCA or NEMA licence number published by the developer; the NEMA EIA study report reference is NEMA/ENVIS/EIA/TOR/00154 (ENVIS 00398, EIA 2416) and is a study report, not a licence",
+   "escrow": "No escrow or deposit protection published",
+   "progress": "No construction updates for Amethyst found",
+   "plans": "Layouts listed with sizes and floors; unit brochures on agent sites but no floor plans on the developer page",
+   "record": "Same team's Emerald Springs publishes month-by-month 2026 progress; GY Group LinkedIn reported it 95% complete in July 2026",
+   "returns": "Agents quote projected 9 to 12% yields; developer page makes no return claim"
+  },
+  "positives": [
+   "Land parcel, unit count and proponent are identifiable from a public NEMA EIA report",
+   "Developer team has a near-complete Westlands tower project with detailed progress reporting",
+   "Unit sizes and price ranges by floor published"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "380 units (128 1BR, 214 2BR, 38 2BR+study) on Maalim Juma Road",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://nema.go.ke/wp-content/uploads/2026/02/ENVIS-00398-EIA-2416_Residential-Apartments-in-Kilimani.pdf"
+   },
+   {
+    "claim": "22-storey towers (marketing) vs 21 storeys (EIA report)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://nema.go.ke/wp-content/uploads/2026/02/ENVIS-00398-EIA-2416_Residential-Apartments-in-Kilimani.pdf"
+   },
+   {
+    "claim": "Land owned by the developer",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://nema.go.ke/wp-content/uploads/2026/02/ENVIS-00398-EIA-2416_Residential-Apartments-in-Kilimani.pdf"
+   },
+   {
+    "claim": "Environmental licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://nema.go.ke/eia-sea-reports/"
+   },
+   {
+    "claim": "Completion October 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://almasirealty.com/property/amethyst/"
+   },
+   {
+    "claim": "Launch October 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://splendorholdings.co.ke/properties/amethyst-springs-apartments-kilimani/"
+   },
+   {
+    "claim": "Prices from KES 6.2m",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://gygroup.ke/projects/amethyst"
+   },
+   {
+    "claim": "Developer delivered Emerald Springs, Misty Springs, Crest Park",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://almasirealty.com/property/amethyst/"
+   },
+   {
+    "claim": "Emerald Springs 95% complete (July 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.linkedin.com/posts/gy-group-real-estate_emerald-springs-july-2026-progress-update-activity-7483417341607866368-5XiQ"
+   },
+   {
+    "claim": "Developer identity consistent (Peony Developers vs GY Group attributions for Emerald Springs)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://goldstay.co.ke/insights/emerald-springs-residences-review-2026"
+   },
+   {
+    "claim": "Projected 9 to 12% rental yield",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://zuriestates.com/discover/amethyst-springs-kilimani"
+   },
+   {
+    "claim": "Payments linked to construction milestones",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://zuriestates.com/discover/amethyst-springs-kilimani"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Nairobi, Kenya",
+   "developer_company": "Stellar Strategies Limited, P.O. Box 52685-00100 Nairobi (EIA proponent); landowner Denpro Limited",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "premium 1BR",
+    "2BR",
+    "floating 2BR",
+    "premium 2BR",
+    "2BR + study"
+   ],
+   "size_min_m2": 58,
+   "size_max_m2": 110,
+   "price_min": 6200000,
+   "price_max": 13400000,
+   "currency": "KES",
+   "deposit_pct": 30,
+   "payment_plan": "30% deposit, balance during construction",
+   "foreign_ownership": "leasehold sectional title (foreigners may hold leasehold up to 99 years in Kenya)",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "heated swimming pool",
+    "gym",
+    "rooftop garden and lounge",
+    "padel court",
+    "cinema",
+    "co-working",
+    "borehole and backup generator",
+    "children's play area"
+   ],
+   "lat": -1.287,
+   "lng": 36.791,
+   "permit_authority": "Nairobi City County (building approval); NEMA (EIA licence); National Construction Authority (project registration)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://gygroup.ke/projects/amethyst",
+   "https://nema.go.ke/wp-content/uploads/2026/02/ENVIS-00398-EIA-2416_Residential-Apartments-in-Kilimani.pdf",
+   "https://nema.go.ke/eia-sea-reports/",
+   "https://zuriestates.com/discover/amethyst-springs-kilimani",
+   "https://almasirealty.com/property/amethyst/",
+   "https://commercialpropertykenya.com/properties/amethyst-springs-apartment-kilimani/",
+   "https://splendorholdings.co.ke/properties/amethyst-springs-apartments-kilimani/",
+   "https://www.emerald.ke/assets/documents/emerald_progress_report_2026.pdf",
+   "https://www.linkedin.com/posts/gy-group-real-estate_emerald-springs-july-2026-progress-update-activity-7483417341607866368-5XiQ",
+   "https://goldstay.co.ke/insights/emerald-springs-residences-review-2026",
+   "https://block.ke/investment-intelligence/off-plan-apartments-nairobi-2026-buying-guide/30433/"
+  ],
+  "verified_score": 1
+ },
+ {
+  "slug": "265-elmer-one-centum-real-estate",
+  "name": "265 Elmer One Apartments",
+  "developer": "Centum Real Estate Limited (100% owned by Centum Investment Company PLC)",
+  "area": "Kasarani, Nairobi",
+  "country": "Kenya",
+  "market": "Nairobi",
+  "stage": "under construction",
+  "url": "https://www.capitalfm.co.ke/business/2020/08/centum-real-estate-launches-affordable-housing-project-in-kasarani-units-priced-from-sh1-9mn/",
+  "docs_url": "https://centumre.co.ke/elmer-one/",
+  "permit_number": null,
+  "docs_listed": [
+   "studios, 1BR, 1BR loft and 2BR loft prices (from KES 2.5m)",
+   "newsletters with dated block-by-block progress and percentages (June 2024, March 2025)",
+   "listed parent's AGM answers: 224 of 284 units sold, completion expected Feb 2027",
+   "investor briefing FY2026: residential book, units handed over"
+  ],
+  "note": "Mid-market Kasarani scheme launched in August 2020 at 268 units from KES 1.9m; Centum's September 2026 AGM answers give 224 of 284 units sold and completion expected by February 2027, more than six years after launch. Centum Re publishes dated progress newsletters and its NSE-listed parent reports the residential book in audited results (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 2500000,
+   "currency": "KES",
+   "title": "leasehold (sectional title)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 7.5,
+   "completion": "2027-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Centum Re handed over 175 Cascadia units at Two Rivers in May 2026; Riverbank Phase 1 and Loft Phase 1 complete and sold out; 26 Mzizi Court 1A handover targeted Nov 2026 (Centum AGM and TNX Africa)",
+   "units": 284,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No Nairobi County approval, NCA or NEMA number published",
+   "escrow": "No escrow or deposit protection published",
+   "progress": "Centum Re newsletters give dated block progress with percentages (e.g. June 2024 Block C external walling 30%, Block D 100%; March 2025 Block C internal plaster)",
+   "plans": "Unit types and prices listed; no floor plan drawings found on the project page",
+   "record": "Centum Investment Company PLC (NSE-listed) AGM and FY2026 investor briefing detail delivered and ongoing projects; TNX Africa reported the Cascadia handover",
+   "returns": "2020 launch release cited average yields of 7.5% in the area; no guarantee"
+  },
+  "positives": [
+   "Parent company listed on the Nairobi Securities Exchange with audited reporting on sales and completions",
+   "Dated block-level progress reports with percentages",
+   "Developer has handed over other Nairobi projects in 2026"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Launched August 2020 with 268 units from KES 1.9m",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.capitalfm.co.ke/business/2020/08/centum-real-estate-launches-affordable-housing-project-in-kasarani-units-priced-from-sh1-9mn/"
+   },
+   {
+    "claim": "224 of 284 units sold (Aug 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://centum.co.ke/wp-content/uploads/2026/09/Centum-59th-AGM-QAs.pdf"
+   },
+   {
+    "claim": "Construction completion expected by February 2027",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://centum.co.ke/wp-content/uploads/2026/09/Centum-59th-AGM-QAs.pdf"
+   },
+   {
+    "claim": "Unit count consistent (268 at launch, 265 in name, 284 in AGM)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://centum.co.ke/wp-content/uploads/2026/09/Centum-59th-AGM-QAs.pdf"
+   },
+   {
+    "claim": "Prices from KES 2.5m (studio)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://centumre.co.ke/elmer-one/"
+   },
+   {
+    "claim": "Cascadia first 175 units handed over May 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.tnx.africa/real%20estate/article/2001548311/centum-re-begins-handover-of-400-apartments-at-nairobis-two-rivers"
+   },
+   {
+    "claim": "Centum Re is wholly owned by NSE-listed Centum Investment Company PLC",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://centum.co.ke/wp-content/uploads/2026/08/Centum-FY2026-Investor-Briefing-vfinal-v3.pdf"
+   },
+   {
+    "claim": "2,571 homes under active development, 1,503 completed",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://centum.co.ke/wp-content/uploads/2026/08/Centum-FY2026-Investor-Briefing-vfinal-v3.pdf"
+   },
+   {
+    "claim": "Block progress percentages (June 2024)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://centumre.co.ke/wp-content/uploads/2024/07/Centum-RE-June-2024-Newsletter-1.pdf"
+   },
+   {
+    "claim": "Average rental yield 7.5% in Kasarani",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.capitalfm.co.ke/business/2020/08/centum-real-estate-launches-affordable-housing-project-in-kasarani-units-priced-from-sh1-9mn/"
+   },
+   {
+    "claim": "Building approvals issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://centumre.co.ke/elmer-one/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Two Rivers, Nairobi, Kenya",
+   "developer_company": "Centum Real Estate Limited, subsidiary of Centum Investment Company PLC (NSE: CTUM)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 1503,
+   "listed_or_audited": "Parent listed on the Nairobi Securities Exchange; audited annual results (FY to March)",
+   "construction_start": null,
+   "handover_promised": "2027-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "1BR loft",
+    "2BR loft"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 2500000,
+   "price_max": 6600000,
+   "currency": "KES",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "leasehold sectional title (Kenya allows foreign leasehold up to 99 years)",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "landscaped courtyards",
+    "rooftop communal lounges",
+    "mini tennis court",
+    "mini soccer pitch",
+    "water recycling"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Nairobi City County; NEMA; National Construction Authority",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://centumre.co.ke/elmer-one/",
+   "https://centumre.co.ke/nairobi-real-estate-projects/",
+   "https://centumre.co.ke/wp-content/uploads/2024/07/Centum-RE-June-2024-Newsletter-1.pdf",
+   "https://centumre.co.ke/wp-content/uploads/2025/04/March-2025-Newsletter.pdf",
+   "https://centum.co.ke/wp-content/uploads/2026/09/Centum-59th-AGM-QAs.pdf",
+   "https://centum.co.ke/wp-content/uploads/2026/08/Centum-FY2026-Investor-Briefing-vfinal-v3.pdf",
+   "https://www.capitalfm.co.ke/business/2020/08/centum-real-estate-launches-affordable-housing-project-in-kasarani-units-priced-from-sh1-9mn/",
+   "https://www.tnx.africa/real%20estate/article/2001548311/centum-re-begins-handover-of-400-apartments-at-nairobis-two-rivers"
+  ],
+  "verified_score": 2
+ },
+ {
+  "slug": "salinas-residence-oasis-atlantico",
+  "name": "Salinas Residence",
+  "developer": "Grupo Oásis Atlântico",
+  "area": "Santa Maria, Sal",
+  "country": "Cape Verde",
+  "market": "Cape Verde",
+  "stage": "off-plan",
+  "url": "https://www.idealista.pt/news/imobiliario/internacional/2026/05/24/75512-grupo-portugues-lanca-novo-marco-no-turismo-residencial-em-cabo-verde",
+  "docs_url": "https://www.salinasresidence.com/en-gb",
+  "permit_number": null,
+  "docs_listed": [
+   "about 200 studio, 1BR and 2BR apartments in tourist (Block A) and private (Block B) buildings",
+   "hotel-managed rental scheme with stepped returns: 5%, 5.5%, then 6% from year 3 to 15",
+   "pre-launch prices EUR 79,000 (T0), 152,000 (T1), 173,000 (T2)",
+   "EUR 25m investment, first stone Sept/Oct 2026, completion summer 2028 / April 2028",
+   "agent: Banco InterAtlântico financing up to 75% LTV"
+  ],
+  "note": "EUR 25m, 200-apartment resort scheme by the Portuguese hotel group that runs seven hotels in Cape Verde and Brazil; tourist units carry a 15-year management contract with returns stepping up to 6% from year three, described as guaranteed by idealista and agents. Groundbreaking was scheduled for autumn 2026 and no licence or deposit protection is published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 79000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 6,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Group operates hotels in Cape Verde including Oásis Salinas Sea and Oásis Belorizonte (Sal), Oásis White Hotel (Boa Vista), Oásis Porto Grande (São Vicente) and Oásis Praiamar (Santiago), per SAPO and the group site",
+   "units": 200,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence or building permit number published",
+   "escrow": "No escrow or deposit protection; agent mentions bank financing only",
+   "progress": "Project not started; first stone scheduled for Sept 2026 (press) or Oct 2026 (agent); no updates found",
+   "plans": "Typologies described but no floor plans found on the developer site",
+   "record": "Group's operating hotels named by Portuguese and Cape Verdean press (SAPO, Expresso das Ilhas)",
+   "returns": "Developer site shows 5%, 5.5% and 6% (years 3-15); idealista says the model 'guarantees' a progressive annual income and Invest Cape Verde advertises 'Guaranteed 6% ROI' on a 15-year contract"
+  },
+  "positives": [
+   "Developer is an established hotel operator in Cape Verde with several running hotels",
+   "Launch, investment size and schedule reported by Cape Verdean and Portuguese press",
+   "Bank financing for foreign buyers reported through Banco InterAtlântico"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "independent",
+   "returns": "independent"
+  },
+  "claims": [
+   {
+    "claim": "EUR 25m investment, about 200 apartments",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://expressodasilhas.cv/economia/2026/05/11/oasis-atlantico-lanca-salinas-residence-com-investimento-de-25-milhoes-de-euros-na-ilha-do-sal/102693"
+   },
+   {
+    "claim": "First stone September 2026",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://investcapeverde.com/properties/oasis-salinas-residence-turnkey-apartments-in-santa-maria-sal-cape-verde/"
+   },
+   {
+    "claim": "Completion summer 2028",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://investcapeverde.com/properties/oasis-salinas-residence-turnkey-apartments-in-santa-maria-sal-cape-verde/"
+   },
+   {
+    "claim": "Returns up to 6% from year 3 (could reach)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://sapo.pt/artigo/salinas-residence-o-que-ja-se-sabe-sobre-o-novo-projeto-do-grupo-oasis-atlantico-na-ilha-do-sal-69fcb03d94df749f0adf32bd"
+   },
+   {
+    "claim": "Guaranteed 6% net yield on a 15-year management contract",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://expressodasilhas.cv/economia/2026/05/11/oasis-atlantico-lanca-salinas-residence-com-investimento-de-25-milhoes-de-euros-na-ilha-do-sal/102693"
+   },
+   {
+    "claim": "Pre-launch prices from EUR 79,000 (T0)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.idealista.pt/news/imobiliario/internacional/2026/05/24/75512-grupo-portugues-lanca-novo-marco-no-turismo-residencial-em-cabo-verde"
+   },
+   {
+    "claim": "Prices from EUR 126,000 (agent)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://investcapeverde.com/properties/oasis-salinas-residence-turnkey-apartments-in-santa-maria-sal-cape-verde/"
+   },
+   {
+    "claim": "Group operates hotels across Cape Verde",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://sapo.pt/artigo/salinas-residence-o-que-ja-se-sabe-sobre-o-novo-projeto-do-grupo-oasis-atlantico-na-ilha-do-sal-69fcb03d94df749f0adf32bd"
+   },
+   {
+    "claim": "Owners may use units 4 weeks a year",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://expressodasilhas.cv/economia/2026/05/11/oasis-atlantico-lanca-salinas-residence-com-investimento-de-25-milhoes-de-euros-na-ilha-do-sal/102693"
+   },
+   {
+    "claim": "Foreigners have full ownership rights in Cape Verde",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investcapeverde.com/properties/oasis-salinas-residence-turnkey-apartments-in-santa-maria-sal-cape-verde/"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.salinasresidence.com/en-gb"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Portugal / Cape Verde",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-09",
+   "handover_promised": "2028-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio (T0)",
+    "1BR (T1)",
+    "2BR (T2)",
+    "office"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 79000,
+   "price_max": 173000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold (foreigners may own property in Cape Verde)",
+   "rental_programme": "Block A: hotel-managed, 5% / 5.5% / 6% (years 3-15), 15-year contract, 4 weeks owner use; Block B: optional 50/50 revenue pool",
+   "service_charge": "Block B condominium about EUR 1.20 per m2 per month (agent); Block A fees paid by operator",
+   "brand": "Oásis Atlântico",
+   "amenities": [
+    "pools",
+    "restaurants and bars",
+    "gym",
+    "spa",
+    "padel courts",
+    "kids' club",
+    "24-hour reception and security",
+    "solar panels"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Câmara Municipal do Sal (building licence); Cabo Verde TradeInvest / tourism utility status",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.salinasresidence.com/en-gb",
+   "https://oasisatlantico.com/en/",
+   "https://sapo.pt/artigo/salinas-residence-o-que-ja-se-sabe-sobre-o-novo-projeto-do-grupo-oasis-atlantico-na-ilha-do-sal-69fcb03d94df749f0adf32bd",
+   "https://www.idealista.pt/news/imobiliario/internacional/2026/05/24/75512-grupo-portugues-lanca-novo-marco-no-turismo-residencial-em-cabo-verde",
+   "https://expressodasilhas.cv/economia/2026/05/11/oasis-atlantico-lanca-salinas-residence-com-investimento-de-25-milhoes-de-euros-na-ilha-do-sal/102693",
+   "https://investcapeverde.com/properties/oasis-salinas-residence-turnkey-apartments-in-santa-maria-sal-cape-verde/"
+  ],
+  "verified_score": 2
+ },
+ {
+  "slug": "the-view-boa-vista-boavista2000",
+  "name": "The View Boa Vista (Apart-Hotel)",
+  "developer": "Boavista2000.com group (Daniele Rampini)",
+  "area": "Praia Cabral, Sal Rei, Boa Vista",
+  "country": "Cape Verde",
+  "market": "Cape Verde",
+  "stage": "off-plan",
+  "url": "https://investire-a-capoverde.com/en/guide/the-view-domande-frequenti/",
+  "docs_url": "https://investire-a-capoverde.com/en/guide/the-view-domande-frequenti/",
+  "permit_number": null,
+  "docs_listed": [
+   "65 hotel suites, 98% ocean view, architect Giò Gozzi",
+   "suites from EUR 90,000, each registered in the buyer's name",
+   "10-year hotel management contract, 4 weeks owner use",
+   "foundation stone 4 July 2026, handover end of 2028",
+   "'building site live' page with site photos",
+   "financial terms only in an official presentation sent on request"
+  ],
+  "note": "Apart-hotel of 65 sold suites on the beach at Sal Rei by a Boa Vista developer group that says it has built and sold over 350 properties and runs the White Hotel. Its FAQ says both that the foundation stone 'was laid' and 'is set' for 4 July 2026; no permit, deposit protection or return figures are published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 90000,
+   "currency": "EUR",
+   "title": "freehold (suite registered to buyer)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Group states more than 350 properties built and sold on Boa Vista over 25 years and that its first apart-hotel, the White Hotel, is operating",
+   "units": 65,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building licence or tourism utility certificate number published",
+   "escrow": "No deposit protection published; financial terms only in a presentation on request",
+   "progress": "FAQ points to a 'building site live' page with dated updates and photos after the 4 July 2026 groundbreaking",
+   "plans": "Suite types and positions only in the presentation on request",
+   "record": "Claims of 350+ properties and the operating White Hotel are made only by the developer group",
+   "returns": "No yield or guarantee stated; FAQ warns buyers to read the financial terms"
+  },
+  "positives": [
+   "Suite title registered in the buyer's own name rather than a fund share",
+   "Developer states the limits of the apart-hotel format (restricted personal use)",
+   "Site visits and live site updates offered"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Foundation stone laid 4 July 2026 (also described as 'set for' that date)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://investire-a-capoverde.com/en/guide/the-view-domande-frequenti/"
+   },
+   {
+    "claim": "Handover end of 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investire-a-capoverde.com/en/guide/the-view-domande-frequenti/"
+   },
+   {
+    "claim": "65 suites, 98% ocean view",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investire-a-capoverde.com/en/guide/the-view-domande-frequenti/"
+   },
+   {
+    "claim": "Suites from EUR 90,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investire-a-capoverde.com/en/guide/the-view-domande-frequenti/"
+   },
+   {
+    "claim": "Group built and sold more than 350 properties on Boa Vista",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investire-a-capoverde.com/en/guide/the-view-domande-frequenti/"
+   },
+   {
+    "claim": "White Hotel is the group's own operating apart-hotel (an 'Oásis White Hotel' is listed by Oásis Atlântico)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://oasisatlantico.com/en/"
+   },
+   {
+    "claim": "Suite registered in the buyer's name",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investire-a-capoverde.com/en/guide/the-view-domande-frequenti/"
+   },
+   {
+    "claim": "10-year management contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investire-a-capoverde.com/en/guide/the-view-domande-frequenti/"
+   },
+   {
+    "claim": "Building licence granted by Boa Vista municipality",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://investire-a-capoverde.com/en/guide/the-view-domande-frequenti/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Sal Rei, Boa Vista, Cape Verde",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 350,
+   "listed_or_audited": null,
+   "construction_start": "2026-07",
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "hotel suite"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 90000,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "suite registered in buyer's name",
+   "rental_programme": "hotel-managed, 10-year contract, 4 weeks personal use; no figures",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "beachfront",
+    "hotel services"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Câmara Municipal da Boa Vista; Cabo Verde TradeInvest (tourism utility)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://investire-a-capoverde.com/en/guide/the-view-domande-frequenti/",
+   "https://oasisatlantico.com/en/"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "the-central-suites-swakopmund-aschenborn",
+  "name": "The Central Suites",
+  "developer": "Wilcko Aschenborn (managed by Perfectstay Holiday Rentals)",
+  "area": "New development area, central Swakopmund",
+  "country": "Namibia",
+  "market": "Namibia",
+  "stage": "off-plan",
+  "url": "https://nova.com.na/new-n200-million-serviced-apartment-set-for-swakopmund/",
+  "docs_url": "https://property.housefindernam.com/property-view/10373/modern-hotel-apartments-the-central-suites",
+  "permit_number": null,
+  "docs_listed": [
+   "13-storey, 40 m tower with 90 sectional title serviced suites",
+   "floor-by-floor price list: standard 35.08 m2 from N$1,710,000; 76.25 m2 corner units N$2.75m to N$3.9m",
+   "transfer costs included",
+   "rental management by Perfectstay with revenue share",
+   "press: projected 10% return at 35% occupancy and 38% at 85% occupancy",
+   "press: 45 of 90 suites still available"
+  ],
+  "note": "N$200m serviced-apartment tower announced in July 2026 by the operator of more than 160 short-stay apartments in Swakopmund; half the suites were said to be under contract. Agents publish a floor-by-floor price list, but no construction start, completion date, town council approval or deposit protection is published, and press coverage quotes projected returns of 10% to 38% (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1710000,
+   "currency": "NAD",
+   "title": "sectional title (freehold)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 10,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Developer says his business operates more than 160 serviced short-stay apartments in Swakopmund (press interview); no completed developments named",
+   "units": 90,
+   "payment_plan": null,
+   "price_per_m2": 48746
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No Swakopmund Municipality building plan approval or rezoning reference published",
+   "escrow": "No trust account or guarantee published",
+   "progress": "Press says plans are at an advanced stage; no construction start date or progress",
+   "plans": "Unit sizes listed per type; no floor plan drawings found",
+   "record": "Only the developer's own statement that he runs 160+ serviced apartments; no delivered building named",
+   "returns": "Press quotes 'projected' returns of 10% at 35% occupancy and 38% at 85% occupancy; not described as guaranteed"
+  },
+  "positives": [
+   "Detailed floor-by-floor price list with transfer costs included",
+   "Operator already runs a large short-stay portfolio in the town",
+   "Covered by several Namibian news outlets"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "N$200m, 13-storey, 90-unit development",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://futuremedianews.com.na/2026/07/10/new-n200-million-serviced-apartment-set-for-swakopmund/"
+   },
+   {
+    "claim": "45 of 90 suites already under contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://nova.com.na/new-n200-million-serviced-apartment-set-for-swakopmund/"
+   },
+   {
+    "claim": "10% projected return at 35% occupancy, 38% at 85%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://99fm.com.na/new-n200-million-serviced-apartment-set-for-swakopmund/"
+   },
+   {
+    "claim": "Developer operates more than 160 serviced apartments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://nova.com.na/new-n200-million-serviced-apartment-set-for-swakopmund/"
+   },
+   {
+    "claim": "Standard suite 36 m2 (press) vs 35.08 m2 (price list)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://property.housefindernam.com/property-view/10391/invest-in-swakopmunds-newest-landmark"
+   },
+   {
+    "claim": "Standard suites from N$1,710,000 incl. transfer",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://property.housefindernam.com/property-view/10373/modern-hotel-apartments-the-central-suites"
+   },
+   {
+    "claim": "Managed by Perfectstay Holiday Rentals",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://property.housefindernam.com/property-view/10373/modern-hotel-apartments-the-central-suites"
+   },
+   {
+    "claim": "Project still in planning, completion not stated",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://benjaminfercher.at/bautraeger-index/projekt/pr-na-0009-the-central/"
+   },
+   {
+    "claim": "Municipal building approval granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://nova.com.na/new-n200-million-serviced-apartment-set-for-swakopmund/"
+   },
+   {
+    "claim": "Developer company registered with BIPA",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://nova.com.na/new-n200-million-serviced-apartment-set-for-swakopmund/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Swakopmund, Namibia",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "standard suite",
+    "executive suite",
+    "2BR family suite"
+   ],
+   "size_min_m2": 35.08,
+   "size_max_m2": 76.25,
+   "price_min": 1710000,
+   "price_max": 3900000,
+   "currency": "NAD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "sectional title; not detailed by developer",
+   "rental_programme": "Perfectstay-managed revenue share; projected 10% at 35% occupancy",
+   "service_charge": null,
+   "brand": "The Central",
+   "amenities": [
+    "rooftop restaurant",
+    "heated pool deck",
+    "wellness spa",
+    "gym",
+    "sauna",
+    "24-hour reception",
+    "concierge"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Swakopmund Municipality (building plans); Ministry of Urban and Rural Development (township/zoning)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://nova.com.na/new-n200-million-serviced-apartment-set-for-swakopmund/",
+   "https://futuremedianews.com.na/2026/07/10/new-n200-million-serviced-apartment-set-for-swakopmund/",
+   "https://99fm.com.na/new-n200-million-serviced-apartment-set-for-swakopmund/",
+   "https://property.housefindernam.com/property-view/10373/modern-hotel-apartments-the-central-suites",
+   "https://property.housefindernam.com/property-view/10391/invest-in-swakopmunds-newest-landmark",
+   "https://benjaminfercher.at/bautraeger-index/projekt/pr-na-0009-the-central/"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "residence-mina-almadies-ilios-groupe",
+  "name": "Résidence Mina",
+  "developer": "Ilios Groupe (Ilios Construction)",
+  "area": "Almadies, Dakar",
+  "country": "Senegal",
+  "market": "Senegal",
+  "stage": "under construction",
+  "url": "https://www.iliosgroupe.com/portfolio/residence-mina/",
+  "docs_url": "https://www.iliosgroupe.com/portfolio/residence-mina/",
+  "permit_number": null,
+  "docs_listed": [
+   "20 apartments on 8 floors, three per floor, delivered fully furnished",
+   "construction start April 2026, end December 2027 (20 months)",
+   "rooftop infinity pool, sauna, hammam, gym, private parking",
+   "status: on sale"
+  ],
+  "note": "Boutique 20-unit furnished apartment block in Almadies by a Dakar developer with in-house construction arm; the developer page gives a construction start of April 2026 and delivery in December 2027 but publishes no prices, permit, land title, deposit guarantee or completed projects (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "XOF",
+   "title": "freehold (titre foncier) not stated",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 20,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No autorisation de construire number or land title (TF) published",
+   "escrow": "No VEFA completion guarantee (GFA) or escrow mentioned",
+   "progress": "Only planned start and end dates; no photos or progress figures",
+   "plans": "No floor plans or unit sizes published",
+   "record": "Developer site lists only projects currently on sale (Mina, Alia, Oléa); no delivered projects named",
+   "returns": "Speaks of 'rentabilités exceptionnelles' in general terms but no figure or guarantee"
+  },
+  "positives": [
+   "Small building with only three units per floor",
+   "Planned construction timeline published"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction started April 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.iliosgroupe.com/portfolio/residence-mina/"
+   },
+   {
+    "claim": "Delivery December 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.iliosgroupe.com/portfolio/residence-mina/"
+   },
+   {
+    "claim": "20 apartments over 8 floors",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.iliosgroupe.com/portfolio/residence-mina/"
+   },
+   {
+    "claim": "Delivered fully furnished",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.iliosgroupe.com/portfolio/residence-mina/"
+   },
+   {
+    "claim": "Ilios is a reference in high-end property in Senegal",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.iliosgroupe.com/"
+   },
+   {
+    "claim": "Exceptional rental returns for investors",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.iliosgroupe.com/"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.iliosgroupe.com/portfolio/residence-mina/"
+   },
+   {
+    "claim": "Land held under titre foncier",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.iliosgroupe.com/portfolio/residence-mina/"
+   },
+   {
+    "claim": "Developer company registered (RCCM / NINEA)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.iliosgroupe.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dakar, Senegal",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-04",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "apartment"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "XOF",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "not stated (foreigners may buy titled property in Senegal)",
+   "rental_programme": "none stated",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "rooftop infinity pool",
+    "sauna",
+    "hammam",
+    "gym",
+    "secure private parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ministère de l'Urbanisme / DSCOS (autorisation de construire); Conservation foncière",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.iliosgroupe.com/portfolio/residence-mina/",
+   "https://www.iliosgroupe.com/"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "harmonie-golf-beach-estate-semaris",
+  "name": "Harmonie Golf & Beach Estate (Harmonie Golf Villas)",
+  "developer": "Semaris Ltd (SPV Les Salines PDS Ltd), with Beachcomber Resorts & Hotels",
+  "area": "Les Salines, Black River (west coast)",
+  "country": "Mauritius",
+  "market": "Mauritius",
+  "stage": "under construction",
+  "url": "https://www.beachcomber-hotels.com/en/harmonie-golf-beach-estate",
+  "docs_url": "https://www.harmonie.mu/en",
+  "permit_number": null,
+  "docs_listed": [
+   "220 villas over three phases on 150 ha with 18-hole golf course; Phase 1: 81 villas and plots",
+   "Villa N, W and S models with treated and gross built areas (169-204 m2 / 401-507 m2)",
+   "prices from EUR 1,950,000 (developer) / EUR 2,520,000 (Beachcomber) / GBP 2,175,000 (sales site)",
+   "VEFA off-plan sale, residence permit for buyers",
+   "listed parent AGM deck (Dec 2025): infrastructure Phase 1 complete, EDB completion clearance, Rs 3bn sales"
+  ],
+  "note": "Golf estate by SEM-listed Semaris on former New Mauritius Hotels land; presale began in 2022 with construction planned for early 2023 and completion within three years, while Semaris's December 2025 AGM deck targets first villa deliveries in 2026 (both first and last semester are cited). Three official channels quote different starting prices (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1950000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Semaris's Domaine Palm Marrakech delivered 15 Phase 1 villas and 22 + 7 villas in Phase 2 zones (AGM Dec 2025); Royal Palm Marrakech Phase 1 of 97 villas sold and mostly delivered (Semaris site)",
+   "units": 220,
+   "payment_plan": "VEFA staged payments (no schedule published)",
+   "price_per_m2": 4863
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Semaris says the estate is a PDS approved by the EDB and that an EDB Completion Clearance was delivered; no certificate number published, and 'Les Salines PDS Ltd' does not appear on the EDB list of approved PDS projects consulted (July 2026 version)",
+   "escrow": "VEFA sale stated; no completion guarantee or escrow details published",
+   "progress": "Listed parent's AGM deck (17 Dec 2025) gives dated progress: infrastructure over 70% by June 2025, Phase 1 infrastructure complete, first villas due in 2026",
+   "plans": "Villa models described with areas; floor plans not published on the pages opened",
+   "record": "Semaris AGM and site report delivered villas at Domaine Palm / Royal Palm Marrakech",
+   "returns": "Rental management by Horizon Integrated Property Services mentioned; no return figures or guarantees"
+  },
+  "positives": [
+   "Developer listed on the Stock Exchange of Mauritius (DEM) with shareholder reporting of sales and progress",
+   "Partnered with Beachcomber, which operates seven resorts on the island",
+   "Dated progress figures in listed-company AGM materials"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Approved PDS by the EDB",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://edbmauritius.org/wp-content/uploads/2022/10/List-of-Approved-PDS-Projects.pdf"
+   },
+   {
+    "claim": "Construction to start early 2023, completion within three years",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.semaris.mu/media/fqxktsi4/semaris-agm-dec25.pdf"
+   },
+   {
+    "claim": "First villas delivered in first semester 2026 vs last semester 2026 (same AGM deck)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.semaris.mu/media/fqxktsi4/semaris-agm-dec25.pdf"
+   },
+   {
+    "claim": "Over Rs 3bn of sales secured or reserved (30 Nov 2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.semaris.mu/media/fqxktsi4/semaris-agm-dec25.pdf"
+   },
+   {
+    "claim": "First 12 VEFA deeds of sale and 19 CRPs signed (Rs 1.9bn)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.semaris.mu/media/fqxktsi4/semaris-agm-dec25.pdf"
+   },
+   {
+    "claim": "Phase 1 infrastructure completed and EDB completion clearance delivered",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.semaris.mu/media/fqxktsi4/semaris-agm-dec25.pdf"
+   },
+   {
+    "claim": "Villas from EUR 1,950,000",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.beachcomber-hotels.com/en/harmonie-golf-beach-estate"
+   },
+   {
+    "claim": "Semaris delivered villas at Domaine Palm Marrakech",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.semaris.mu/media/fqxktsi4/semaris-agm-dec25.pdf"
+   },
+   {
+    "claim": "Semaris listed on the SEM Development & Enterprise Market",
+    "status": "verified",
+    "by": "independent",
+    "source": "http://www.semaris.mu/en/mauritius/harmonie-golf-beach-estate/"
+   },
+   {
+    "claim": "Golf course delivered in 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.harmonie.mu/en"
+   },
+   {
+    "claim": "Residence permit for buyers and family",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://new.edbmauritius.com/schemes"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2018,
+   "developer_hq": "Curepipe, Mauritius",
+   "developer_company": "Semaris Ltd (SEM DEM listed); project company Les Salines PDS Ltd, Beachcomber House, Curepipe",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Semaris Ltd listed on the Development & Enterprise Market of the Stock Exchange of Mauritius; audited FY to 30 June",
+   "construction_start": "2023",
+   "handover_promised": "2026-H2",
+   "original_handover": "2026-Q1",
+   "delay_months": 6,
+   "unit_types": [
+    "Villa N 3-4BR",
+    "Villa W 3-4BR",
+    "Villa S 3-4BR",
+    "serviced plot (Mauritians only)"
+   ],
+   "size_min_m2": 401,
+   "size_max_m2": 507,
+   "price_min": 1950000,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": "VEFA",
+   "foreign_ownership": "freehold under PDS with residence permit",
+   "rental_programme": "villa and rental management by Horizon Integrated Property Services (no figures)",
+   "service_charge": null,
+   "brand": "Beachcomber (partner)",
+   "amenities": [
+    "18-hole par 72 golf course",
+    "clubhouse",
+    "private beach bar",
+    "boat park",
+    "Beachcomber resort privileges",
+    "concierge"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Economic Development Board (PDS); Black River District Council (building permits)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.harmonie.mu/en",
+   "https://properties.harmonie.mu/discover-harmonie-beach-and-golf-estate/",
+   "https://www.beachcomber-hotels.com/en/harmonie-golf-beach-estate",
+   "http://www.semaris.mu/en/mauritius/harmonie-golf-beach-estate/",
+   "https://www.semaris.mu/en/morocco/royal-palm-marrakech/",
+   "https://www.semaris.mu/media/fqxktsi4/semaris-agm-dec25.pdf",
+   "https://edbmauritius.org/wp-content/uploads/2022/10/List-of-Approved-PDS-Projects.pdf",
+   "https://new.edbmauritius.com/schemes",
+   "https://ome-mauritius.com/en/projects"
+  ],
+  "verified_score": 2
+ },
+ {
+  "slug": "orion-apartments-observatory-leisure-group",
+  "name": "Orion Apartments",
+  "developer": "Leisure Group (with Bernicchi Architects)",
+  "area": "339 Main Road, Observatory, Cape Town",
+  "country": "South Africa",
+  "market": "Cape Town",
+  "stage": "off-plan",
+  "url": "https://everythingproperty.co.za/observatorys-next-chapter-orion-apartments-arrives-at-the-heart-of-cape-towns-urban-revival/",
+  "docs_url": "https://orion-apartments.co.za/faqs/",
+  "permit_number": null,
+  "docs_listed": [
+   "148 sectional title units: 102 studios, 30 1BR, 16 2BR over eight storeys",
+   "online interactive price list with layouts, costs and expected rentals per unit",
+   "downloads: brochure, floor plans, specifications, 2028 estimated levies and PQ budget, conduct and management rules",
+   "deposit paid into transferring attorney's interest-bearing account",
+   "construction start September 2026, occupation March 2028",
+   "prices from R1.27m (studio) to R2.8m"
+  ],
+  "note": "148-unit Observatory block launched online on 22 July 2026 by a Cape Town developer active since 1969; deposits go to the transferring attorney's interest-bearing account and the site publishes floor plans, specifications and a 2028 levy budget. Construction was due to start in September 2026 with occupation in March 2028; no building plan approval number is published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1270000,
+   "currency": "ZAR",
+   "title": "sectional title (freehold)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Deposit (min 10%) paid into the transferring attorney's interest-bearing account, interest to buyer; cash balance or bank guarantee before lodgement",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Leisure Group states it has developed property since 1969, with 40+ projects and over 2,000 residential units delivered; names The Six and Milestone (201 Main Road, Wynberg) on its site",
+   "units": 148,
+   "payment_plan": "R10,000 reservation; 10% deposit within 7 days plus bond within 14 days, or cash/bank guarantee; balance on transfer",
+   "price_per_m2": 48846
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No City of Cape Town building plan approval or NHBRC enrolment number published",
+   "escrow": "FAQ: deposit paid into the transferring attorney's interest-bearing account and earns interest for the buyer",
+   "progress": "Off-plan; construction scheduled to start September 2026; no updates found",
+   "plans": "Floor plans, specifications and unit layouts available as downloads and in the interactive price list",
+   "record": "Developer claims 40+ projects and 2,000+ units since 1969 but names few completed schemes; press pieces about Orion are developer-supplied (Moneyweb article authored by the developer)",
+   "returns": "Expected rentals shown per unit; no rental operator appointed; no guarantees"
+  },
+  "positives": [
+   "Deposit held in attorney's interest-bearing account",
+   "Floor plans, specifications, levy budget and conduct rules published before construction",
+   "Unit-level pricing with all costs and expected rentals",
+   "VAT-inclusive pricing with no transfer duty and possible UDZ tax allowance"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "148 units (102 studios, 30 1BR, 16 2BR)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://orion-apartments.co.za/faqs/"
+   },
+   {
+    "claim": "Construction from September 2026, occupation March 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://orion-apartments.co.za/faqs/"
+   },
+   {
+    "claim": "Prices from R1.27m (article) vs R1.4m (home page)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://orion-apartments.co.za/"
+   },
+   {
+    "claim": "Deposits held in attorney's interest-bearing account",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://orion-apartments.co.za/faqs/"
+   },
+   {
+    "claim": "Developer delivered 2,000+ units over 50 years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://orion-apartments.co.za/"
+   },
+   {
+    "claim": "Developer has 40+ projects since 1969",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://leisuregroup.co.za/"
+   },
+   {
+    "claim": "Independent press coverage of the launch",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.moneyweb.co.za/in-depth/orion/could-this-be-one-of-cape-towns-smartest-urban-property-buys/"
+   },
+   {
+    "claim": "Site lies within Cape Town Urban Development Zone (UDZ tax allowance)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://orion-apartments.co.za/faqs/"
+   },
+   {
+    "claim": "City of Cape Town building plans approved",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://orion-apartments.co.za/faqs/"
+   },
+   {
+    "claim": "Developer company registered with CIPC",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://leisuregroup.co.za/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1969,
+   "developer_hq": "Cape Town, South Africa",
+   "developer_company": null,
+   "developer_projects_delivered": 40,
+   "developer_units_delivered": 2000,
+   "listed_or_audited": null,
+   "construction_start": "2026-09",
+   "handover_promised": "2028-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "ground-floor garden unit"
+   ],
+   "size_min_m2": 26,
+   "size_max_m2": 80,
+   "price_min": 1270000,
+   "price_max": 2800000,
+   "currency": "ZAR",
+   "deposit_pct": 10,
+   "payment_plan": "10% deposit + bond, or cash / bank guarantee",
+   "foreign_ownership": "sectional title freehold; no restriction on foreign buyers",
+   "rental_programme": "none appointed; expected rentals shown per unit",
+   "service_charge": "2028 estimated levy budget published",
+   "brand": null,
+   "amenities": [
+    "rooftop pool and sun decks",
+    "residents' gym",
+    "hotel-style lobby",
+    "secure access",
+    "landscaped communal areas",
+    "pet-friendly garden units"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "City of Cape Town (building plan approval); NHBRC",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://orion-apartments.co.za/",
+   "https://orion-apartments.co.za/faqs/",
+   "https://leisuregroup.co.za/",
+   "https://everythingproperty.co.za/observatorys-next-chapter-orion-apartments-arrives-at-the-heart-of-cape-towns-urban-revival/",
+   "https://www.moneyweb.co.za/in-depth/orion/could-this-be-one-of-cape-towns-smartest-urban-property-buys/",
+   "https://www.property24.com/articles/limited-stock-strong-rental-demand-observatorys-latest-launch-is-one-to-watch/33089"
+  ],
+  "verified_score": 0
  }
 ]
