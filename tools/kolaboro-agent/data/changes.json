@@ -1633,5 +1633,547 @@
     "Fideicomiso Buenos Aires Landmark, used by the developer to buy the land in 2018. No buyer escrow or guarantee mentioned."
    ]
   }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "j-hills",
+  "name": "J-Hills",
+  "changed": {
+   "title_type": [
+    "leasehold",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "natha-loka",
+  "name": "Natha Loka Eco Village",
+  "changed": {
+   "advertised_yield_pct": [
+    14,
+    7
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "secret-inshi",
+  "name": "SECRET by INSHI",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "samani-villa-pecatu-phase-2",
+  "name": "Samani Villa Pecatu (Phase 2)",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "grand-solaire-pattaya",
+  "name": "Grand Solaire Pattaya",
+  "changed": {
+   "guaranteed_language": [
+    false,
+    null
+   ],
+   "completion_year": [
+    2026,
+    null
+   ],
+   "permit_claim": [
+    false,
+    null
+   ],
+   "plans_published": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "the-crest-samui",
+  "name": "The Crest Residences",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "copacabana-coral-reef-jomtien",
+  "name": "Copacabana Coral Reef Jomtien",
+  "changed": {
+   "title_type": [
+    "freehold",
+    null
+   ],
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "hunab-ku-sanctuary-tulum",
+  "name": "Hunab-Ku Sanctuary",
+  "changed": {
+   "price_from": [
+    176000,
+    null
+   ],
+   "currency": [
+    "USD",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "edition-residences-miami-edgewater",
+  "name": "Edition Residences Miami",
+  "changed": {
+   "price_from": [
+    null,
+    1700000
+   ],
+   "currency": [
+    null,
+    "USD"
+   ],
+   "completion_year": [
+    null,
+    2028
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "mandarin-oriental-residences-boca-raton",
+  "name": "Mandarin Oriental Residences Boca Raton",
+  "changed": {
+   "escrow_or_guarantee": [
+    null,
+    "title companies holding their escrow deposits"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "widen-by-sansiri-sathorn",
+  "name": "Widen by Sansiri",
+  "changed": {
+   "title_type": [
+    "freehold",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "son-cladera-palma-new-development",
+  "name": "Exclusive new development in Son Cladera (EOS)",
+  "changed": {
+   "price_from": [
+    null,
+    425000
+   ],
+   "currency": [
+    null,
+    "EUR"
+   ],
+   "completion_year": [
+    null,
+    2027
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "samana-sky-views-dpc",
+  "name": "Samana Sky Views",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "crystal-garden-cap-cana-gesproin",
+  "name": "Crystal Garden Cap Cana",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "ora-by-casa-tua-fortune",
+  "name": "ORA by Casa Tua",
+  "changed": {
+   "price_from": [
+    900000,
+    null
+   ],
+   "currency": [
+    "USD",
+    null
+   ],
+   "completion_year": [
+    2030,
+    null
+   ],
+   "plans_published": [
+    true,
+    false
+   ],
+   "escrow_or_guarantee": [
+    "Deposits held in a non-interest-bearing escrow account; Escrow and Title Agent: First American Title",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "yalikavak-loft-akfen-gyo",
+  "name": "Yalıkavak Loft (Muğla Yalıkavak Bodrum Project)",
+  "changed": {
+   "permit_claim": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9467,
+    9468
+   ],
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "skypark-lucean-jomtien-lunique",
+  "name": "Skypark Lucean Jomtien Pattaya",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "mar-casa-deyaar",
+  "name": "Mar Casa",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "nine-collective-wasl",
+  "name": "Nine Collective",
+  "changed": {
+   "price_from": [
+    4400000,
+    null
+   ],
+   "currency": [
+    "AED",
+    null
+   ],
+   "title_type": [
+    "freehold",
+    null
+   ],
+   "guaranteed_language": [
+    false,
+    null
+   ],
+   "completion_year": [
+    2030,
+    null
+   ],
+   "permit_claim": [
+    false,
+    null
+   ],
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "macaria-puerto-vallarta-grupo-origen",
+  "name": "Macaria",
+  "changed": {
+   "guaranteed_language": [
+    false,
+    null
+   ],
+   "permit_claim": [
+    false,
+    null
+   ],
+   "plans_published": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "ozalia-temozon-grupo-acber",
+  "name": "Ozalia Temozón",
+  "changed": {
+   "price_from": [
+    1879000,
+    null
+   ],
+   "currency": [
+    "MXN",
+    null
+   ],
+   "completion_year": [
+    2029,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "alliance-centropolis-alliance-group",
+  "name": "Alliance Centropolis",
+  "changed": {
+   "plans_published": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "armani-residences-masaryk-mira",
+  "name": "Armani Residences Masaryk",
+  "changed": {
+   "completion_year": [
+    2027,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "vista-balito-mogan-grupo-meridional",
+  "name": "Vista Balito",
+  "changed": {
+   "price_from": [
+    null,
+    310000
+   ],
+   "currency": [
+    null,
+    "EUR"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "raseljkina-pazdigrad-quatro-company",
+  "name": "Rašeljkina",
+  "changed": {
+   "completion_year": [
+    2026,
+    null
+   ],
+   "permit_claim": [
+    true,
+    false
+   ],
+   "permit_number": [
+    "Klasa: UP/I-361-03/23-01/000166",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "the-court-carvoeiro-carvoeiro-branco",
+  "name": "The Court",
+  "changed": {
+   "guaranteed_language": [
+    true,
+    false
+   ],
+   "advertised_yield_pct": [
+    5,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "penha-living-bolder-addsolid",
+  "name": "Penha Living Bolder",
+  "changed": {
+   "price_from": [
+    260000,
+    null
+   ],
+   "currency": [
+    "EUR",
+    null
+   ],
+   "completion_year": [
+    2027,
+    null
+   ],
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "the-anti-galerie-hotel-trazos-urbanos",
+  "name": "The Anti Galerie Hotel",
+  "changed": {
+   "price_from": [
+    535820000,
+    null
+   ],
+   "currency": [
+    "COP",
+    null
+   ],
+   "guaranteed_language": [
+    true,
+    false
+   ],
+   "completion_year": [
+    2026,
+    null
+   ],
+   "escrow_or_guarantee": [
+    "Fiducia Backed by Alianza Fiduciaria",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "aila-sunset-residences-rodney-bay",
+  "name": "Sunset Residences at A'ILA Resorts",
+  "changed": {
+   "price_from": [
+    559000,
+    null
+   ],
+   "currency": [
+    "USD",
+    null
+   ],
+   "guaranteed_language": [
+    true,
+    false
+   ],
+   "advertised_yield_pct": [
+    8,
+    null
+   ],
+   "completion_year": [
+    2026,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "nashville-edition-residences-tidal",
+  "name": "The Residences at The Nashville EDITION",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "ritz-carlton-reserve-residences-cotton-bay",
+  "name": "Ritz-Carlton Reserve Residences at Cotton Bay",
+  "changed": {
+   "completion_year": [
+    2027,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "gaia-residences-hollywood-alta",
+  "name": "Gaia Residences",
+  "changed": {
+   "price_from": [
+    null,
+    400000
+   ],
+   "currency": [
+    null,
+    "USD"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "priors-gate-birmingham-bunnywell-homes",
+  "name": "Priors Gate",
+  "changed": {
+   "title_type": [
+    "leasehold",
+    null
+   ],
+   "lease_years_base": [
+    999,
+    null
+   ],
+   "plans_published": [
+    true,
+    false
+   ]
+  }
  }
 ]
