@@ -24,6 +24,62 @@
 <script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',region:["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});try{if(localStorage.getItem('kb-consent')==='yes')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}</script><script>addEventListener("load",function(){setTimeout(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V";document.head.appendChild(s)},1500)})</script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Kolaboro", "item": "https://kolaboro.com/"}, {"@type": "ListItem", "position": 2, "name": "Investors", "item": "https://kolaboro.com/investors/"}]}</script>
 <link rel="alternate" type="application/rss+xml" title="Kolaboro: what we shipped" href="/feed.xml">
+<style>
+.inv-toc{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.inv-toc a{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:2px solid var(--ink);border-radius:999px;font-weight:700;font-size:.92rem;text-decoration:none;color:var(--ink);background:#fff}
+.inv-toc a:hover{background:var(--ink);color:var(--paper)}
+.inv-toc a:focus-visible,.inv-tw:focus-visible,.inv-calc select:focus-visible{outline:3px solid var(--hivis);outline-offset:2px}
+#traction h2,#market h2,#money h2,#moat h2,#unproven h2{margin-top:6px}
+.inv-intro{max-width:68ch;color:var(--ink-2);margin:12px 0 0}
+.inv-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:24px}
+.inv-stats .stat{background:#fff;border:2px solid var(--ink);border-radius:18px;padding:16px 18px}
+.inv-stats .stat b{display:block;font-stretch:125%;font-weight:850;font-size:clamp(1.5rem,2.6vw,2.2rem);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.inv-stats .stat span{font-size:.9rem;color:var(--muted)}
+.inv-stats .stat i{font-style:normal}
+.inv-stats .stat:last-child{grid-column:span 2}
+.inv-src{font-size:.86rem;color:var(--muted);margin-top:14px;max-width:80ch}
+.inv-src a{color:inherit}
+.inv-err{color:#9A2B00}
+.inv-facts{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:26px}
+.inv-facts>div{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px}
+.inv-list{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:10px}
+.inv-list li{padding-left:18px;position:relative}
+.inv-list li::before{content:"";position:absolute;left:0;top:.6em;width:7px;height:7px;border-radius:2px;background:var(--hivis)}
+.inv-tw{overflow-x:auto;margin-top:22px;border:1px solid var(--line);border-radius:16px;background:#fff;-webkit-overflow-scrolling:touch}
+.inv-t{width:100%;border-collapse:collapse;font-size:.95rem;min-width:720px}
+.inv-t th,.inv-t td{text-align:left;vertical-align:top;padding:12px 14px;border-bottom:1px solid var(--line)}
+.inv-t thead th{font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);background:var(--paper)}
+.inv-t tbody tr:last-child th,.inv-t tbody tr:last-child td{border-bottom:0}
+.inv-t a{color:var(--ink);overflow-wrap:anywhere}
+.inv-num{min-width:560px}
+.inv-num td{font-variant-numeric:tabular-nums;white-space:nowrap}
+.inv-tot th,.inv-tot td{font-weight:800;background:var(--paper)}
+.inv-gap td{color:var(--muted)}
+.gaps{min-width:860px}
+.inv-h3{margin-top:40px}
+.inv-calc{margin-top:22px;background:var(--ink);color:var(--paper);border-radius:20px;padding:22px}
+.inv-calc label{display:block;font-weight:700;margin-bottom:10px}
+.inv-calc select{font:inherit;min-height:44px;padding:0 14px;border-radius:12px;border:2px solid var(--paper);background:var(--ink);color:var(--paper)}
+.inv-calc p{margin:14px 0 0;font-size:1.05rem}
+.inv-calc .inv-src{color:#AEB6BE;font-size:.86rem}
+.inv-assume{margin-top:22px;max-width:80ch}
+.inv-assume ol{padding-left:1.3em;display:grid;gap:8px;margin-top:10px}
+.inv-ladder{list-style:none;padding:0;margin:24px 0 0;display:grid;gap:12px}
+.inv-ladder li{display:grid;grid-template-columns:110px 1fr;gap:16px;align-items:start;background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 20px}
+.inv-ladder h3{margin:0 0 6px;font-size:1.1rem}
+.inv-ladder p{margin:0;color:var(--ink-2)}
+.inv-ladder a{color:var(--ink)}
+.inv-tag{display:inline-block;justify-self:start;font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;padding:5px 10px;border-radius:999px;white-space:nowrap}
+.inv-tag.live{background:#DDF1E9;color:var(--ok)}
+.inv-tag.plan{background:var(--concrete);color:var(--ink-2)}
+.moat{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px}
+.moat .tile p{margin:0 0 10px}
+.moat .tile p:last-child{margin:0}
+.moat .tile a{color:var(--ink);font-weight:700}
+@media (max-width:900px){.inv-stats{grid-template-columns:1fr 1fr}.inv-facts,.moat{grid-template-columns:1fr}}
+@media (max-width:560px){.inv-ladder li{grid-template-columns:1fr;gap:8px}.inv-stats .stat{padding:14px}}
+@media (max-width:700px){.inv-tw.gapw{border:0;background:transparent;overflow:visible}.gaps,.gaps tbody,.gaps tr,.gaps th,.gaps td{display:block;min-width:0;width:auto}.gaps thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}.gaps tr{background:#fff;border:1px solid var(--line);border-radius:16px;margin-bottom:12px;padding:6px 0}.gaps th,.gaps td{border:0;padding:8px 16px}.gaps th{font-size:1.05rem}.gaps td::before{content:attr(data-l);display:block;font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:2px}}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -42,7 +98,8 @@
   </div>
 </header>
 <main id="main">
-<section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / Investors</p><h1>The trust layer for buying property abroad.</h1><p class="lead">Kolaboro turns local people into AI-trained buyer's agents and turns every inspection into a public trust record of projects and developers.</p></div></section><section class="sec"><div class="wrap prose">
+<section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / Investors</p><h1>The trust layer for buying property abroad.</h1><p class="lead">Kolaboro turns local people into AI-trained buyer's agents and turns every inspection into a public trust record of projects and developers.</p>
+<nav class="inv-toc" aria-label="On this page"><a href="#traction">Traction today</a><a href="#market">Market size</a><a href="#money">How we make money</a><a href="#moat">Why it is hard to copy</a><a href="#unproven">Not proven yet</a><a href="#start">Contact</a></nav></div></section><section class="sec"><div class="wrap prose">
 <h2 style="margin-top:0">The problem</h2>
 <p>People buy homes in other countries without seeing the land, the permits or the construction. The developer has lawyers, salespeople and local knowledge. The buyer has a PDF. Fear of exactly this stops many more people from buying at all.</p>
 <h2>Why now</h2>
@@ -53,23 +110,128 @@
 </ul>
 <h2>What kind of company this is</h2>
 <ul>
-<li><b>An AI-native service.</b> Buyers don't get software to figure it out themselves. We sell the work: a verified answer, with evidence, in 7 days.</li>
+<li><b>An AI-native service.</b> Buyers don't get software to figure it out themselves. We sell the work: a verified answer, with evidence, usually within 7 days.</li>
 <li><b>Experts made with AI.</b> Our own research agent reads what developers promise. Local agents without professional credentials, trained and checked by AI and by us, verify it on site.</li>
 <li><b>Built for AI assistants too.</b> Our research and methodology are published in machine-readable form, so the AI assistants people use to plan a purchase abroad can rely on them.</li>
-</ul>
-<h2>What we sell</h2>
-<ul>
-<li><b>Buyers:</b> pre-purchase checks, construction monitoring and a buyer's agent fee.</li>
-<li><b>Developers:</b> verification and a live Trust Score badge. Payment never changes the Score.</li>
-<li><b>Data:</b> developer and project trust data for banks, insurers and property portals.</li>
-<li><b>Payments (roadmap):</b> milestone escrow with licensed partners, released when our agent verifies the work.</li>
 </ul>
 <h2>Why it compounds</h2>
 <p>Every buyer we protect adds evidence to the Trust Score. A better Score attracts honest developers and more buyers, and every agent we train opens a new city without opening an office.</p>
 <h2>Go-to-market</h2>
 <p>Our customers are Americans, Australians and Europeans buying abroad. We start in Bali, the high-risk market we know best, then Mexico, where US buyers face the same problem. Our founder has sold over €15M of real estate to international buyers and runs travel media with more than 400,000 followers, which gives us a direct line to the people who buy abroad.</p>
 <h2>Talk to us</h2>
-<p>If you invest in marketplaces, proptech, fintech or the future of work, we'd like to hear from you.</p>
+<p>If you invest in marketplaces, proptech, fintech or the future of work, we'd like to hear from you. Below: where we really are, how big the market is with sources, and what we have not proven yet.</p>
+</div></section>
+
+<section class="sec alt" id="traction"><div class="wrap">
+  <p class="eyebrow">Live numbers</p>
+  <h2>Traction today, in real numbers</h2>
+  <p class="inv-intro">These figures load live from our own systems every time you open this page. Nothing here is typed in by hand.</p>
+  <div class="inv-stats" aria-live="polite">
+    <div class="stat"><b data-k="analyze">…</b><span>free desk reviews run by our research agent</span></div>
+    <div class="stat"><b data-k="analyze7">…</b><span>of them in the last 7 days</span></div>
+    <div class="stat"><b data-k="stamps">…</b><span>evidence fingerprints timestamped through OpenTimestamps</span></div>
+    <div class="stat"><b data-k="stampsok">…</b><span>of those already confirmed in a Bitcoin block</span></div>
+    <div class="stat"><b data-k="projects">…</b><span>off-plan projects in the database</span></div>
+    <div class="stat"><b data-k="markets">…</b><span>markets in <i data-k="countries">…</i> countries</span></div>
+    <div class="stat"><b data-k="claims">…</b><span>developer claims tested against registers, courts and press</span></div>
+  </div>
+  <p class="inv-src">Usage counters: <a href="/api/kb/stats">/api/kb/stats</a>, generated <span data-k="statsdate">…</span>. Database: <a href="/data/bali-cases.json">/data/bali-cases.json</a>, updated <span data-k="dbdate">…</span>. <span class="inv-err" hidden>A live source did not load just now; those figures show n/a rather than an old number.</span></p>
+  <div class="inv-facts">
+    <div><h3>Where we are, plainly</h3>
+      <ul class="inv-list">
+        <li><b>Launching in Bali.</b> The first market with local agents on the ground.</li>
+        <li><b>First agents being recruited.</b> The academy and the agent field app are live; the network is not built yet.</li>
+        <li><b>First paid checks: in progress.</b> No paid case has been completed yet.</li>
+        <li><b>Desk research is live everywhere else.</b> Our research agent reads developer pages and official registers in every market above, with no agent visit.</li>
+      </ul></div>
+    <div><h3>Read the raw data yourself</h3>
+      <ul class="inv-list">
+        <li><a href="/metrics">Open metrics</a>: the same counters, with history.</li>
+        <li><a href="/database">The database</a>: every project on six checks.</li>
+        <li><a href="/docs/api#open">Open data API</a>: JSON and CSV, no key.</li>
+        <li><a href="/changelog">Changelog</a>: everything we ship, dated.</li>
+      </ul></div>
+  </div>
+</div></section>
+
+<section class="sec" id="market"><div class="wrap">
+  <p class="eyebrow">Sources, not slides</p>
+  <h2>Market size, with sources</h2>
+  <p class="inv-intro">Official or regulator-based figures for markets we already cover in the database. Each one names its source and year and links to the page we read. Where we could not find a reliable public figure, we leave it out.</p>
+  <div class="inv-tw" role="region" aria-label="Market figures with sources" tabindex="0">
+  <table class="inv-t">
+    <thead><tr><th scope="col">Market</th><th scope="col">What is counted</th><th scope="col">Year</th><th scope="col">Figure</th><th scope="col">Source</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Dubai</th><td>Off-plan sales transactions, all buyers (this source does not split by nationality)</td><td>2025</td><td><b>149,290</b> transactions worth AED 448.1 billion: 69% of all sales by volume</td><td><a href="https://dxbinteract.com/news/dubai-property-market-records-2025-686-billion-sales" rel="noopener">DXBinteract, data from the Dubai Land Department</a></td></tr>
+      <tr><th scope="row">Spain</th><td>Home purchases by foreigners (residents and non-residents)</td><td>2024</td><td><b>14.6%</b> of all home purchases, close to <b>93,000</b>. 20.13% of foreigners' purchases were new homes</td><td><a href="https://www.registradores.org/documents/33383/148210/ERI%2BAnuario%2B2024.pdf" rel="noopener">Colegio de Registradores, Estadística Registral Inmobiliaria, Anuario 2024</a></td></tr>
+      <tr><th scope="row">Portugal</th><td>Homes bought by buyers with a tax address outside Portugal</td><td>2025</td><td><b>8,471</b> homes worth EUR 3,389 million, about 5% of all transactions</td><td><a href="https://www.aiccopn.pt/wp-content/uploads/2026/04/20260323-Mercado-Imobiliario-IPHAB.pdf" rel="noopener">INE (Statistics Portugal), compiled by AICCOPN</a></td></tr>
+      <tr><th scope="row">Thailand</th><td>Condo units transferred to foreigners</td><td>2025</td><td><b>14,899</b> units worth THB 60.92 billion (2024: 14,573 units, THB 68.18 billion)</td><td>Real Estate Information Center (REIC), as reported by <a href="https://www.khaosodenglish.com/featured/2026/03/04/china-still-tops-thai-condo-market-myanmar-jumps-to-no-2/" rel="noopener">Khaosod English</a> and, for 2024, <a href="https://www.nationthailand.com/business/property/40046926" rel="noopener">The Nation</a></td></tr>
+      <tr><th scope="row">Turkey</th><td>House sales to foreigners</td><td>2025</td><td><b>21,534</b> homes, out of close to 1.7 million total sales (2024: 23,781)</td><td>TurkStat, as reported by <a href="https://www.dailysabah.com/business/economy/house-sales-to-foreigners-in-turkiye-at-lowest-in-9-years-in-2025" rel="noopener">Daily Sabah and Anadolu Agency</a> and, for 2024, <a href="https://www.dailysabah.com/business/economy/turkiye-house-sales-bounce-back-to-grow-by-over-20-in-2024" rel="noopener">Daily Sabah</a></td></tr>
+      <tr class="inv-gap"><th scope="row">Bali and Indonesia</th><td colspan="4">No reliable public count of foreign buyers exists that we could find. Indonesia does not publish one. We do not estimate it, even though it is our launch market.</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h3 class="inv-h3">A bottom-up estimate, with every assumption shown</h3>
+  <p class="inv-intro">This is an estimate, not a forecast. It multiplies the sourced counts above by the prices published on <a href="/pricing">our pricing page</a>. It does not convert currencies, so it needs no exchange rate.</p>
+  <div class="inv-tw" role="region" aria-label="Bottom-up estimate by market" tabindex="0">
+  <table class="inv-t inv-num">
+    <thead><tr><th scope="col">Market</th><th scope="col">Buyers per year used</th><th scope="col">If each paid for a check (€490)</th><th scope="col">If each used the full ladder (€3,678)</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Dubai</th><td>149,290</td><td>€73.2M</td><td>€549.1M</td></tr>
+      <tr><th scope="row">Spain</th><td>18,700</td><td>€9.2M</td><td>€68.8M</td></tr>
+      <tr><th scope="row">Turkey</th><td>21,534</td><td>€10.6M</td><td>€79.2M</td></tr>
+      <tr><th scope="row">Thailand</th><td>14,899</td><td>€7.3M</td><td>€54.8M</td></tr>
+      <tr><th scope="row">Portugal</th><td>8,471</td><td>€4.2M</td><td>€31.2M</td></tr>
+      <tr class="inv-tot"><th scope="row">Total</th><td>212,894</td><td>€104.3M</td><td>€783.0M</td></tr>
+      <tr><th scope="row">Total without Dubai</th><td>63,604</td><td>€31.2M</td><td>€233.9M</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <div class="inv-calc">
+    <label for="capture">If this share of those buyers paid Kolaboro</label>
+    <select id="capture"><option value="0.005">0.5%</option><option value="0.01" selected>1%</option><option value="0.02">2%</option><option value="0.05">5%</option></select>
+    <p id="captureOut" aria-live="polite">That would be 2,129 buyers a year: about €1.0M from checks alone, or €7.8M if each also took monitoring and a buyer's agent.</p>
+    <p class="inv-src">The share is a choice for illustration. We have no paid conversion data yet.</p>
+  </div>
+  <div class="inv-assume">
+    <h3>Assumptions</h3>
+    <ol>
+      <li><b>Dubai:</b> all 149,290 off-plan transactions, because the source does not publish buyer nationality. It includes UAE residents and nationals, so it overstates foreign buyers. That is why we also show the total without Dubai.</li>
+      <li><b>Spain:</b> close to 93,000 purchases by foreigners times 20.13% new homes, about 18,700. New homes stand in for off-plan. "Foreigners" includes foreigners who live in Spain.</li>
+      <li><b>Turkey, Thailand, Portugal:</b> all purchases by foreigners, because no source we found splits off-plan from completed homes. These counts are a ceiling.</li>
+      <li><b>One transaction counts as one buyer.</b> Some buyers buy more than one unit, which overstates buyers.</li>
+      <li><b>Full ladder per buyer, €3,678:</b> a €490 check, plus €99 a month of monitoring for 12 months (€1,188; the 12 months is our assumption, not a sourced build time), plus the €2,000 minimum buyer's agent fee (the real fee is 1% of the price, so this is a floor).</li>
+      <li><b>Not counted:</b> Bali, Mexico and every other market we track, B2B data revenue and repeat checks.</li>
+    </ol>
+  </div>
+</div></section>
+
+<section class="sec alt" id="money"><div class="wrap">
+  <p class="eyebrow">Business model</p>
+  <h2>How Kolaboro makes money</h2>
+  <p class="inv-intro">Buyers pay. Developers never pay Kolaboro, and paying is not possible. Each step below is marked live only if a buyer or a business can use it today.</p>
+  <ol class="inv-ladder">
+    <li><span class="inv-tag live">Live</span><div><h3>Free desk review</h3><p>Paste a project's website and our research agent shows what the developer promises and what to verify, in about a minute. Free, no card. It is how buyers find us. <a href="/check">Try it</a></p></div></li>
+    <li><span class="inv-tag live">Live</span><div><h3>Pre-purchase check, €490</h3><p>Title, permits, developer record, contract red flags and a site visit with GPS video, usually within 7 days. The price is published and payment works; first paid checks are in progress. <a href="/pricing">Pricing</a></p></div></li>
+    <li><span class="inv-tag live">Live</span><div><h3>Construction monitoring, €99 a month</h3><p>A GPS-stamped site visit each month and a "go" or "hold" before every payment, from first payment to keys. Recurring revenue for the length of the build.</p></div></li>
+    <li><span class="inv-tag live">Live</span><div><h3>Buyer's agent, 1% of the price, minimum €2,000</h3><p>Someone on the buyer's side for the whole purchase. Offered on request.</p></div></li>
+    <li><span class="inv-tag live">Live, free</span><div><h3>Open data API</h3><p>Every anonymous project and market as JSON and CSV under CC BY 4.0, and a pilot API for agencies, lenders and lawyers, free during the pilot. It builds distribution, not revenue yet. <a href="/docs/api#open">API docs</a> · <a href="/api-pilot">Pilot</a></p></div></li>
+    <li><span class="inv-tag plan">Planned</span><div><h3>Lender and insurer data</h3><p>Project risk data for banks that finance off-plan purchases, and delay signals for insurers of buyer deposits. <a href="/roadmap">Roadmap</a></p></div></li>
+    <li><span class="inv-tag plan">Planned</span><div><h3>Portal and agency products</h3><p>Webhook alerts and white-label checks for portals and agencies. The live listing badge exists today and is free.</p></div></li>
+    <li><span class="inv-tag plan">Planned</span><div><h3>Milestone escrow with licensed partners</h3><p>Money released only when an agent verifies the work. We do not hold client money today.</p></div></li>
+  </ol>
+</div></section>
+
+<section class="sec" id="moat"><div class="wrap">
+  <p class="eyebrow">Defensibility</p>
+  <h2>Why this is hard to copy</h2>
+  <div class="moat">
+    <div class="tile"><h3>A data history nobody can backfill</h3><p>Every day our agent reads developer pages and fingerprints what it read. Today's seal covers <b data-k="seal">…</b> project pages, anchored in Bitcoin so nobody, including us, can change the date later. We record what changed on each project page and when: <b data-k="changes">…</b> changes detected so far. A competitor starting today cannot go back and collect what a developer said last year.</p><p><a href="/database">The database</a> · <a href="/verify">Verify evidence</a></p></div>
+    <div class="tile"><h3>An open standard we wrote</h3><p>The Off-Plan Disclosure Standard lists what every project should publish so a buyer can check it. It is free to cite under CC BY 4.0. When developers, portals and journalists use it, they use our definitions and point back to our data.</p><p><a href="/standard/">The standard</a></p></div>
+    <div class="tile"><h3>Agents with signed evidence</h3><p>Local agents, trained and checked by AI and by us, capture photos signed on the phone with time, GPS and device. Each fingerprint goes into a chain a lawyer can check. The network is being recruited in Bali now; each trained agent opens a city without an office.</p><p><a href="/agents">How agents work</a></p></div>
+    <div class="tile"><h3>Developers can answer, but never pay</h3><p>Every developer can reply to any finding with documents, free, and the reply is shown next to the finding. Because payment is impossible, the Score cannot be bought, which is the reason buyers can trust it and a reason a paid-listing business cannot copy it.</p><p><a href="/developers/reply/">Right of reply</a> · <a href="/independence">Independence</a></p></div>
+  </div>
 </div></section>
 <section class="sec alt" id="scale"><div class="wrap">
   <h2>Why this gets better at scale</h2>
@@ -79,6 +241,23 @@
       <p class="muted" style="font-size:.82rem;margin-bottom:0">Target gross margin per €490 check. First order: agent €150, review €40, fees €30, AI €1. Repeat orders: a short update visit.</p></div>
     <div><h3>Real estate first. Then any job that needs trusted eyes on the ground.</h3><p>The engine is the same everywhere: an AI copilot, people who live there, senior review and GPS-stamped evidence. Every new vertical runs on the same trained network.</p>
       <div class="verts"><span class="on">Off-plan property</span><span>Insurance claims</span><span>Hotel and short-let audits</span><span>Factory and supplier checks</span><span>Used cars and equipment</span><span>KYC site visits</span><span>Construction loans</span></div></div>
+  </div>
+</div></section>
+<section class="sec" id="unproven"><div class="wrap">
+  <p class="eyebrow">Honest gaps</p>
+  <h2>What we have not proven yet, and how we will</h2>
+  <p class="inv-intro">These are the questions we would ask in your seat. For each one: what is true today, the next concrete test, and the number that would settle it.</p>
+  <div class="inv-tw gapw" role="region" aria-label="Open questions and tests" tabindex="0">
+  <table class="inv-t gaps">
+    <thead><tr><th scope="col">Not proven yet</th><th scope="col">Today</th><th scope="col">Next test</th><th scope="col">Metric that proves it</th></tr></thead>
+    <tbody>
+      <tr><th scope="row">Paying customers at scale</th><td data-l="Today">Free desk reviews run; first paid checks in progress.</td><td data-l="Next test">Offer the €490 check to every buyer who runs a desk review on a Bali project.</td><td data-l="Metric that proves it">Share of desk reviews that become paid checks, and the cost to win one paying buyer.</td></tr>
+      <tr><th scope="row">Agent quality in the field</th><td data-l="Today">Academy and agent field app live; first agents being recruited.</td><td data-l="Next test">Send a second agent to repeat a random share of visits and compare the findings.</td><td data-l="Metric that proves it">Share of visits where the second agent agrees, report time, and buyer rating per agent.</td></tr>
+      <tr><th scope="row">Developer response rate</th><td data-l="Today">Right of reply is live; projects stay anonymous until developers have had 10 working days to reply.</td><td data-l="Next test">Contact every developer whose project gets a finished check, with the findings and the reply link.</td><td data-l="Metric that proves it">Share of developers who reply with documents, and how many claims those documents confirm.</td></tr>
+      <tr><th scope="row">B2B demand from lenders and portals</th><td data-l="Today">Open API and a free pilot API are live; lender and insurer products are planned.</td><td data-l="Next test">Offer pilot keys to lenders, portals and law firms in our first markets.</td><td data-l="Metric that proves it">Active pilot keys, daily calls per key, and how many pilots agree to a paid contract.</td></tr>
+      <tr><th scope="row">Unit economics per case</th><td data-l="Today">Target cost per first check is published above; no paid case completed yet.</td><td data-l="Next test">Record agent time, review time, AI cost and fees on every paid case.</td><td data-l="Metric that proves it">Real gross margin on first and repeat checks, and monitoring months per buyer.</td></tr>
+    </tbody>
+  </table>
   </div>
 </div></section>
 <section class="start" id="start"><div class="wrap start-grid">
@@ -189,6 +368,36 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   document.body.appendChild(b);
   b.addEventListener('click', function(){ window.scrollTo({ top: 0, behavior: 'smooth' }); });
   window.addEventListener('scroll', function(){ b.classList.toggle('on', window.scrollY > window.innerHeight * 1.5); }, { passive: true });
+})();
+</script>
+<script>
+(function(){
+  var fmt = function(n){ return (typeof n === 'number' && isFinite(n)) ? n.toLocaleString('en-US') : null; };
+  var fdate = function(s){ if(!s) return null; var d = new Date(s.length === 10 ? s + 'T00:00:00Z' : s); if(isNaN(d)) return null; return d.toLocaleDateString('en-GB',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'}); };
+  var set = function(k,v){ document.querySelectorAll('[data-k="'+k+'"]').forEach(function(e){ e.textContent = v == null ? '' : v; }); };
+  var fail = function(keys){ keys.forEach(function(k){ set(k,'n/a'); }); var e = document.querySelector('.inv-err'); if(e) e.hidden = false; };
+  fetch('/api/kb/stats',{cache:'no-store'}).then(function(r){ if(!r.ok) throw 0; return r.json(); }).then(function(s){
+    var r = s.runs || {}, r7 = s.runs_7d || {};
+    set('analyze', fmt(r.analyze)); set('analyze7', fmt(r7.analyze));
+    set('stamps', fmt(s.stamps)); set('stampsok', fmt(s.stamps_confirmed));
+    set('statsdate', fdate(s.generated_at));
+  }).catch(function(){ fail(['analyze','analyze7','stamps','stampsok','statsdate']); });
+  fetch('/data/bali-cases.json?t=' + Math.floor(Date.now()/6e5)).then(function(r){ if(!r.ok) throw 0; return r.json(); }).then(function(d){
+    var db = d.db || {};
+    set('projects', fmt(db.projects != null ? db.projects : (d.cases || []).length));
+    set('markets', fmt(db.markets != null ? db.markets : d.markets));
+    set('countries', fmt(db.countries != null ? db.countries : d.countries));
+    set('claims', fmt(db.claims_total));
+    set('dbdate', fdate(db.updated || d.updated));
+    set('changes', fmt(db.changes_detected));
+    set('seal', d.seal ? fmt(d.seal.count) : null);
+  }).catch(function(){ fail(['projects','markets','countries','claims','dbdate','changes','seal']); });
+  var BUYERS = 212894, CHECK = 490, LADDER = 490 + 99*12 + 2000;
+  var sel = document.getElementById('capture'), out = document.getElementById('captureOut');
+  var m = function(x){ return '€' + (x/1e6).toFixed(1) + 'M'; };
+  var upd = function(){ var p = parseFloat(sel.value), b = BUYERS*p;
+    out.textContent = 'That would be ' + Math.round(b).toLocaleString('en-US') + ' buyers a year: about ' + m(b*CHECK) + ' from checks alone, or ' + m(b*LADDER) + ' if each also took monitoring and a buyer\'s agent.'; };
+  if(sel && out){ sel.addEventListener('change', upd); upd(); }
 })();
 </script>
 </body>
