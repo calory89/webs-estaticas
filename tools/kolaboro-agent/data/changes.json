@@ -2175,5 +2175,763 @@
     false
    ]
   }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "aravita-residence",
+  "name": "Aravita Residence",
+  "changed": {
+   "title_type": [
+    null,
+    "leasehold"
+   ],
+   "lease_years_base": [
+    null,
+    31
+   ],
+   "extension_promised": [
+    null,
+    true
+   ],
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "j-hills",
+  "name": "J-Hills",
+  "changed": {
+   "title_type": [
+    null,
+    "leasehold"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "secret-inshi",
+  "name": "SECRET by INSHI",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "park-hyatt-los-cabos-residences-cabo-del-sol",
+  "name": "Park Hyatt Los Cabos Residences at Cabo Del Sol",
+  "changed": {
+   "price_from": [
+    5475000,
+    null
+   ],
+   "currency": [
+    "USD",
+    null
+   ],
+   "completion_year": [
+    2025,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "vaya-vaya-la-cruz-de-huanacaxtle",
+  "name": "Vaya Vaya",
+  "changed": {
+   "price_from": [
+    1328397,
+    null
+   ],
+   "currency": [
+    "USD",
+    null
+   ],
+   "completion_year": [
+    2027,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "ebano-santa-maria-panama",
+  "name": "Ebano",
+  "changed": {
+   "price_from": [
+    null,
+    563560
+   ],
+   "currency": [
+    null,
+    "USD"
+   ],
+   "completion_year": [
+    null,
+    2030
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "x-the-building-san-francisco-panama",
+  "name": "X The Building",
+  "changed": {
+   "price_from": [
+    null,
+    227800
+   ],
+   "currency": [
+    null,
+    "USD"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "west-side-punta-cana",
+  "name": "West Side Punta Cana (WestSide Residences)",
+  "changed": {
+   "price_from": [
+    null,
+    139800
+   ],
+   "currency": [
+    null,
+    "USD"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "edition-residences-miami-edgewater",
+  "name": "Edition Residences Miami",
+  "changed": {
+   "price_from": [
+    1700000,
+    null
+   ],
+   "currency": [
+    "USD",
+    null
+   ],
+   "completion_year": [
+    2028,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "mandarin-oriental-residences-boca-raton",
+  "name": "Mandarin Oriental Residences Boca Raton",
+  "changed": {
+   "escrow_or_guarantee": [
+    "title companies holding their escrow deposits",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "masteri-grand-view-global-city-hcmc",
+  "name": "Masteri Grand View",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "eaton-park-thu-duc-hcmc",
+  "name": "Eaton Park",
+  "changed": {
+   "price_from": [
+    120000000,
+    null
+   ],
+   "currency": [
+    "VND",
+    null
+   ],
+   "title_type": [
+    "freehold",
+    null
+   ],
+   "lease_years_base": [
+    50,
+    null
+   ],
+   "completion_year": [
+    null,
+    2027
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "sun-ponte-residence-da-nang",
+  "name": "Sun Ponte Residence",
+  "changed": {
+   "guaranteed_language": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "cocobay-da-nang",
+  "name": "Cocobay Da Nang",
+  "changed": {
+   "advertised_yield_pct": [
+    12,
+    null
+   ],
+   "completion_year": [
+    null,
+    2029
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "fortis-residences-makati",
+  "name": "Fortis Residences",
+  "changed": {
+   "price_from": [
+    null,
+    14394000
+   ],
+   "currency": [
+    null,
+    "PHP"
+   ],
+   "completion_year": [
+    2027,
+    null
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "mandtra-residences-tower-3-mandaue",
+  "name": "Mandtra Residences Tower 3 (Phase 2)",
+  "changed": {
+   "permit_claim": [
+    true,
+    false
+   ],
+   "permit_number": [
+    "PLS RO07-21-085; PLS RO07-21-087",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "lio-tourism-estate-el-nido",
+  "name": "Lio Tourism Estate",
+  "changed": {
+   "price_from": [
+    null,
+    45200000
+   ],
+   "permit_claim": [
+    true,
+    false
+   ],
+   "permit_number": [
+    "HL 32054, HL 34289, PLS 04B-007",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "elounda-hills-crete",
+  "name": "Elounda Hills",
+  "changed": {
+   "completion_year": [
+    2028,
+    null
+   ],
+   "permit_claim": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "dubovica-budva-residential-complex",
+  "name": "New residential complex in Dubovica",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "molum-hotel-residences-dalmatia",
+  "name": "Molum Hotel & Residences",
+  "changed": {
+   "advertised_yield_pct": [
+    4,
+    5
+   ],
+   "completion_year": [
+    2024,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "abora-adeje-tenerife",
+  "name": "Abora",
+  "changed": {
+   "price_from": [
+    null,
+    394955
+   ],
+   "currency": [
+    null,
+    "EUR"
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "carena-el-medano-tenerife",
+  "name": "Carena",
+  "changed": {
+   "price_from": [
+    null,
+    450000
+   ],
+   "currency": [
+    null,
+    "EUR"
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "son-cladera-palma-new-development",
+  "name": "Exclusive new development in Son Cladera (EOS)",
+  "changed": {
+   "price_from": [
+    425000,
+    null
+   ],
+   "currency": [
+    "EUR",
+    null
+   ],
+   "completion_year": [
+    2027,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "prata-riverside-village-lisbon",
+  "name": "Prata Riverside Village",
+  "changed": {
+   "price_from": [
+    750000,
+    null
+   ],
+   "currency": [
+    "EUR",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "azura-beach-residences-3-4-al-mouj",
+  "name": "Azura Beach Residences 3 & 4",
+  "changed": {
+   "price_from": [
+    null,
+    69000
+   ],
+   "currency": [
+    null,
+    "OMR"
+   ],
+   "title_type": [
+    "freehold",
+    null
+   ],
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "anjuna-palms-uluwatu",
+  "name": "Anjuna Palms",
+  "changed": {
+   "price_from": [
+    189000,
+    190000
+   ],
+   "title_type": [
+    "leasehold",
+    null
+   ],
+   "lease_years_base": [
+    30,
+    null
+   ],
+   "extension_promised": [
+    true,
+    null
+   ],
+   "advertised_yield_pct": [
+    null,
+    17.54
+   ],
+   "completion_year": [
+    2026,
+    null
+   ],
+   "escrow_or_guarantee": [
+    "Claimed Bank BRI 100% refund guarantee",
+    "Bank BRI fully guarantees the investment amount and offers a 100% refund if the property is not delivered on time"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "seren-house-pererenan",
+  "name": "Seren House",
+  "changed": {
+   "price_from": [
+    247000,
+    165000
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "oxo-the-residences-nyanyi",
+  "name": "OXO The Residences",
+  "changed": {
+   "price_from": [
+    250000,
+    8000000000
+   ],
+   "currency": [
+    "USD",
+    "IDR"
+   ],
+   "title_type": [
+    "hgb",
+    null
+   ],
+   "completion_year": [
+    2026,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "dasa-ubud-balitecture",
+  "name": "Dasa Ubud",
+  "changed": {
+   "lease_years_base": [
+    60,
+    30
+   ],
+   "advertised_yield_pct": [
+    13,
+    15
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "umah-ubud-balitecture",
+  "name": "Umah Ubud",
+  "changed": {
+   "price_from": [
+    199000,
+    null
+   ],
+   "currency": [
+    "USD",
+    null
+   ],
+   "title_type": [
+    "leasehold",
+    null
+   ],
+   "lease_years_base": [
+    60,
+    null
+   ],
+   "extension_promised": [
+    true,
+    null
+   ],
+   "advertised_yield_pct": [
+    13.9,
+    null
+   ],
+   "completion_year": [
+    2027,
+    null
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "parq-ubud-tegallalang",
+  "name": "Parq Ubud",
+  "changed": {
+   "price_from": [
+    59800,
+    2550
+   ],
+   "title_type": [
+    "leasehold",
+    null
+   ],
+   "advertised_yield_pct": [
+    14,
+    15
+   ],
+   "completion_year": [
+    2025,
+    2024
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "azura-complex-nusa-dua",
+  "name": "Azura Complex Nusa Dua",
+  "changed": {
+   "price_from": [
+    102800,
+    100000
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "mawatu-labuan-bajo",
+  "name": "Mawatu",
+  "changed": {
+   "completion_year": [
+    2023,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "querencia-dovec-group",
+  "name": "Querencia",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9468,
+    9471
+   ],
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "rhea-by-sansiri",
+  "name": "Rhea by Sansiri",
+  "changed": {
+   "title_type": [
+    null,
+    "leasehold"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "sky-tower-first-projects",
+  "name": "Sky Tower",
+  "changed": {
+   "permit_number": [
+    "Wafi license 75/1",
+    "75/1"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "casa-blake-costa-palmas-irongate",
+  "name": "Casa Blake at Costa Palmas",
+  "changed": {
+   "currency": [
+    "USD",
+    null
+   ],
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "oystra-richmind",
+  "name": "Oystra",
+  "changed": {
+   "price_from": [
+    2586888,
+    2400000
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "alliance-centropolis-alliance-group",
+  "name": "Alliance Centropolis",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "vista-balito-mogan-grupo-meridional",
+  "name": "Vista Balito",
+  "changed": {
+   "price_from": [
+    310000,
+    null
+   ],
+   "currency": [
+    "EUR",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "boavista-tower-porto-mesmo-valor",
+  "name": "Boavista Tower",
+  "changed": {
+   "price_from": [
+    489900,
+    289900
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "265-elmer-one-centum-real-estate",
+  "name": "265 Elmer One Apartments",
+  "changed": {
+   "guaranteed_language": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "udaondo-buenos-aires-landmark-developments",
+  "name": "Udaondo Buenos Aires",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Fideicomiso Buenos Aires Landmark, used by the developer to buy the land in 2018. No buyer escrow or guarantee mentioned.",
+    "Fideicomiso Buenos Aires Landmark (mentioned as the vehicle that bought the land at a 2018 public auction; no buyer escrow or guarantee described)"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "nashville-edition-residences-tidal",
+  "name": "The Residences at The Nashville EDITION",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "gaia-residences-hollywood-alta",
+  "name": "Gaia Residences",
+  "changed": {
+   "price_from": [
+    400000,
+    null
+   ],
+   "currency": [
+    "USD",
+    null
+   ]
+  }
  }
 ]
