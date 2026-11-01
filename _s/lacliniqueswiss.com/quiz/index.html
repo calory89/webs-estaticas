@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="script-src 'unsafe-inline' https://unpkg.com https://www.googletagmanager.com https://www.clarity.ms https://*.clarity.ms https://static.cloudflareinsights.com; worker-src 'self' blob:; base-uri 'self'; object-src 'none'; form-action 'self' mailto:; upgrade-insecure-requests">
+<script>if(window.top!==window.self){try{window.top.location=window.self.location}catch(e){document.documentElement.style.display='none'}}</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>How are you ageing? A 2-minute test · La Clinique Swiss</title>
 <meta name="description" content="Ten questions on sleep, fitness, strength, food, stress and check-ups. See how you are ageing and what to change first. Free, two minutes.">
@@ -387,11 +389,6 @@ footer .legal{max-width:90ch;line-height:1.55}
 .fx{display:block;font-family:var(--f-mono);font-size:.74rem;color:var(--on-deep-muted);letter-spacing:.06em;width:100%}
 .price-chip .fx{order:3;flex-basis:100%;width:100%}
 .fx-big{margin:-.6rem 0 1rem}
-.cpn{margin-top:2rem;padding-top:1.4rem;border-top:1px solid rgba(238,243,240,.16);max-width:46ch}
-.cpn label{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--on-deep-muted)}
-.cpn input{width:100%;accent-color:#ff5468;margin:.6rem 0;padding:0;border:0;background:none}
-.cpn p{color:var(--on-deep-muted)}
-.cpn b{color:var(--on-deep);font-family:var(--f-display);font-weight:400;font-size:1.5rem}
 .story{padding-block:0 clamp(5rem,10vw,8rem)}
 .story-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:2rem 4rem;align-items:center}
 .story h2{font-size:var(--s4);margin:.8rem 0 1.2rem}
@@ -468,6 +465,7 @@ body.menu-open .mbar,body.menu-open .totop,body.menu-open .nudge{display:none!im
 .compare h2{font-size:var(--s4);max-width:16ch;margin-bottom:2rem}
 .cmp-wrap{overflow-x:auto}
 .cmp{width:100%;border-collapse:collapse;min-width:560px;font-size:.98rem}
+@media (max-width:640px){.cmp{min-width:0;font-size:.86rem}.cmp th,.cmp td{padding:.7rem .45rem}.cmp thead th{font-size:.62rem;letter-spacing:.06em}}
 .cmp th,.cmp td{text-align:left;padding:1rem;border-bottom:1px solid var(--line);vertical-align:top}
 .cmp thead th{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500}
 .cmp tbody th{font-weight:500}

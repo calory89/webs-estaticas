@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta http-equiv="Content-Security-Policy" content="script-src 'unsafe-inline' https://unpkg.com https://www.googletagmanager.com https://www.clarity.ms https://*.clarity.ms https://static.cloudflareinsights.com; worker-src 'self' blob:; base-uri 'self'; object-src 'none'; form-action 'self' mailto:; upgrade-insecure-requests">
+<script>if(window.top!==window.self){try{window.top.location=window.self.location}catch(e){document.documentElement.style.display='none'}}</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>A gift of good years for your parents · La Clinique Swiss</title>
 <meta name="description" content="Give your parents a lifetime longevity membership: 31 markers a year, a physician, a coach and six nights a year on an island in Indonesia. From €6,500, once.">
@@ -410,11 +412,6 @@ footer .legal{max-width:90ch;line-height:1.55}
 .fx{display:block;font-family:var(--f-mono);font-size:.74rem;color:var(--on-deep-muted);letter-spacing:.06em;width:100%}
 .price-chip .fx{order:3;flex-basis:100%;width:100%}
 .fx-big{margin:-.6rem 0 1rem}
-.cpn{margin-top:2rem;padding-top:1.4rem;border-top:1px solid rgba(238,243,240,.16);max-width:46ch}
-.cpn label{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--on-deep-muted)}
-.cpn input{width:100%;accent-color:#ff5468;margin:.6rem 0;padding:0;border:0;background:none}
-.cpn p{color:var(--on-deep-muted)}
-.cpn b{color:var(--on-deep);font-family:var(--f-display);font-weight:400;font-size:1.5rem}
 .story{padding-block:0 clamp(5rem,10vw,8rem)}
 .story-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:2rem 4rem;align-items:center}
 .story h2{font-size:var(--s4);margin:.8rem 0 1.2rem}
@@ -491,6 +488,7 @@ body.menu-open .mbar,body.menu-open .totop,body.menu-open .nudge{display:none!im
 .compare h2{font-size:var(--s4);max-width:16ch;margin-bottom:2rem}
 .cmp-wrap{overflow-x:auto}
 .cmp{width:100%;border-collapse:collapse;min-width:560px;font-size:.98rem}
+@media (max-width:640px){.cmp{min-width:0;font-size:.86rem}.cmp th,.cmp td{padding:.7rem .45rem}.cmp thead th{font-size:.62rem;letter-spacing:.06em}}
 .cmp th,.cmp td{text-align:left;padding:1rem;border-bottom:1px solid var(--line);vertical-align:top}
 .cmp thead th{font-family:var(--f-mono);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500}
 .cmp tbody th{font-weight:500}
@@ -889,7 +887,7 @@ body.drawer-open .mbar,body.drawer-open .toast,body.drawer-open .nudge{display:n
   </div>
 </nav>
 <nav class="dots" id="dots" aria-label="Chapters">
-  <a href="#top" data-l="Start"></a><a href="#journey-1" data-l="The journey"></a><a href="#manifesto" data-l="Why"></a><a href="#ages" data-l="For you"></a><a href="#years" data-l="50 years"></a><a href="#markers" data-l="Markers"></a><a href="#week" data-l="Your week"></a><a href="#price" data-l="Price"></a><a href="#transfer" data-l="Yours"></a><a href="#reserve" data-l="Your place"></a><a href="#faq" data-l="Questions"></a>
+  <a href="#top" data-l="Start" aria-label="Start"></a><a href="#habits" data-l="Live longer" aria-label="Live longer"></a><a href="#journey-1" data-l="The journey" aria-label="The journey"></a><a href="#manifesto" data-l="Why" aria-label="Why"></a><a href="#ages" data-l="For you" aria-label="For you"></a><a href="#years" data-l="50 years" aria-label="50 years"></a><a href="#markers" data-l="Markers" aria-label="Markers"></a><a href="#week" data-l="Your week" aria-label="Your week"></a><a href="#price" data-l="Price" aria-label="Price"></a><a href="#transfer" data-l="Yours" aria-label="Yours"></a><a href="#reserve" data-l="Your place" aria-label="Your place"></a><a href="#faq" data-l="Questions" aria-label="Questions"></a>
 </nav>
 <div class="mnav" id="mnav" hidden>
   <a href="#journey-1">Where it is</a><a href="#how">How it works</a><a href="#week">Your week</a><a href="#markers">The 31 markers</a><a href="#island">The island</a><a href="#price">Price</a><a href="#transfer">Transfer</a><a href="#faq">Questions</a>
@@ -1239,11 +1237,6 @@ body.drawer-open .mbar,body.drawer-open .toast,body.drawer-open .nudge{display:n
     <div class="rv">
       <p class="for2"><b>For two.</b> Your private cabin sleeps up to 2 people. Bring your partner, a friend, your mother.</p>
       <p class="peryear">About €130 for each year of membership, for a cabin for two, your panel, your physician, your team and your week on the island. Plus €150 housekeeping on the years you come.</p>
-      <div class="cpn">
-        <label for="yrs">If you come for <output id="yrsOut">20</output> years</label>
-        <input type="range" id="yrs" min="1" max="50" value="20">
-        <p>Your membership works out at <b id="cpnOut">€54</b> a night, with your panel, physician and coaching included. Many single longevity weeks at European clinics cost more than this entire membership.</p>
-      </div>
     </div>
     <div class="plan rv">
       <h3>One payment. Nothing else.</h3>
@@ -1409,7 +1402,7 @@ body.drawer-open .mbar,body.drawer-open .toast,body.drawer-open .nudge{display:n
 <footer>
   <div class="wrap">
     <div class="ft"><span>La Clinique Swiss · Karimunjawa, Indonesia</span><span>carlos@equinoxinvestmentgroup.com<button class="copy" type="button" id="cp">Copy</button></span></div>
-    <nav class="ftlinks" aria-label="More"><a href="/quiz/">How are you ageing?</a><a href="/for/parents/">For parents</a><a href="/for/couples/">For couples</a><a href="/for/founders/">For founders</a><a href="/ambassadors/">Ambassadors</a><a href="/physicians/">For physicians</a><a href="/journal/">Journal</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav>
+    <nav class="ftlinks" aria-label="More"><a href="/quiz/">How are you ageing?</a><a href="/for/parents/">For parents</a><a href="/for/couples/">For couples</a><a href="/for/founders/">For founders</a><a href="/ambassadors/">Ambassadors</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></nav>
     <nav class="ftlinks" aria-label="Language"><a href="/">English</a><a href="/es/">Español</a><a href="/de/">Deutsch</a></nav>
     <p class="legal">Operated by Equinox Investment Group, LLC. La Clinique Swiss does not guarantee specific medical outcomes. Health services are delivered under qualified medical supervision. Future residences in Europe and Latin America are planned and not yet built; their locations and opening dates may change, and nights there are subject to availability once each one opens. The membership is not an investment and does not promise any return. Transfers depend on an interested buyer from the same country. Nothing on this page is medical, financial or legal advice.</p>
   </div>
@@ -1590,10 +1583,6 @@ body.drawer-open .mbar,body.drawer-open .toast,body.drawer-open .nudge{display:n
   if (chart && 'IntersectionObserver' in window && !reduce && chart.getBoundingClientRect().top > innerHeight){ chart.classList.add('pre');
     var cio = new IntersectionObserver(function(es){ if(es[0].isIntersecting){ chart.classList.remove('pre'); cio.disconnect(); } }, {threshold:.4}); cio.observe(chart); }
 
-  // cost per night
-  var yrs = document.getElementById('yrs'), yrsOut = document.getElementById('yrsOut'), cpnOut = document.getElementById('cpnOut');
-  function cpn(){ var n=+yrs.value; yrsOut.textContent = n; cpnOut.textContent = '€' + Math.round(6500/(n*6)).toLocaleString('en-US'); }
-  yrs.addEventListener('input', cpn); yrs.addEventListener('change', function(){ track('cpn_calc',{years:+yrs.value}); }); cpn();
 
   // approximate local currency (EUR is the contract currency)
   var FX = {'United States':['USD','$',1.08],'Canada':['CAD','C$',1.48],'United Kingdom':['GBP','£',0.85],'Switzerland':['CHF','CHF ',0.94],'Australia':['AUD','A$',1.65],'New Zealand':['NZD','NZ$',1.8],'Singapore':['SGD','S$',1.45],'Hong Kong':['HKD','HK$',8.4],'Denmark':['DKK','',7.46],'Sweden':['SEK','',11.4],'Norway':['NOK','',11.7],'Mexico':['MXN','MX$',20],'Brazil':['BRL','R$',6],'United Arab Emirates':['AED','AED ',3.97],'Saudi Arabia':['SAR','SAR ',4.05],'Qatar':['QAR','QAR ',3.93],'Japan':['JPY','¥',165],'Indonesia':['IDR','Rp ',17500],'India':['INR','₹',90],'Poland':['PLN','',4.3],'Czechia':['CZK','',25],'South Africa':['ZAR','R ',20],'Thailand':['THB','฿',38],'Malaysia':['MYR','RM ',5]};
@@ -1652,7 +1641,7 @@ body.drawer-open .mbar,body.drawer-open .toast,body.drawer-open .nudge{display:n
     mapTag.style.opacity = spinning ? 0 : 1;
     if (mapObj.getLayer('route')) mapObj.setPaintProperty('route','line-opacity', t.dataset.route || +a[2] < 3 ? 1 : 0.35);
     var onSite = !!t.dataset.site;
-    try { mapObj.setPaintProperty('site-fill','fill-opacity', onSite ? .22 : 0); mapObj.setPaintProperty('site-line','line-opacity', onSite ? 1 : 0); } catch(e){}
+    try { if (mapObj.getLayer('site-fill')) { mapObj.setPaintProperty('site-fill','fill-opacity', onSite ? .22 : 0); mapObj.setPaintProperty('site-line','line-opacity', onSite ? 1 : 0); } } catch(e){}
     if (window.__siteLbl) window.__siteLbl.classList.toggle('on', onSite);
     document.getElementById('map').classList.toggle('net', !!t.dataset.net);
     track('journey_step',{tag:t.dataset.tag}); }
@@ -1836,10 +1825,12 @@ body.drawer-open .mbar,body.drawer-open .toast,body.drawer-open .nudge{display:n
   // ---------- consent ----------
   var consent = document.getElementById('consent');
   function loadClarity(){ if (window.clarity) return; (function(c,l,a,r,i,t,y){ c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)}; t=l.createElement(r); t.async=1; t.src="https://www.clarity.ms/tag/"+i; y=l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t,y); })(window,document,"clarity","script","wqn50nb6kp"); clarity("set","site","lacliniqueswiss"); clarity("set","h1_variant",ab); }
-  function setConsent(yes){ try{ localStorage.setItem('lcs_consent2', yes ? 'yes' : 'no'); }catch(e){} consent.hidden = true;
+  function ccookie(yes){ try { document.cookie = 'lcs_consent=' + (yes ? 'all' : 'none') + '; Max-Age=31536000; Path=/; SameSite=Lax; Secure'; } catch(e){} }
+  function setConsent(yes){ try{ localStorage.setItem('lcs_consent2', yes ? 'yes' : 'no'); }catch(e){} ccookie(yes); consent.hidden = true;
     try { gtag('consent','update',{analytics_storage: yes?'granted':'denied', ad_storage: yes?'granted':'denied', ad_user_data: yes?'granted':'denied', ad_personalization: yes?'granted':'denied'}); } catch(e){}
     if (yes) loadClarity(); }
   var cv = null; try { cv = localStorage.getItem('lcs_consent2'); } catch(e){}
+  if (cv && document.cookie.indexOf('lcs_consent=') < 0) ccookie(cv === 'yes');
   if (cv === 'yes') loadClarity(); else if (!cv) setTimeout(function(){ consent.hidden = false; }, 1800);
   document.getElementById('cYes').addEventListener('click', function(){ setConsent(true); });
   document.getElementById('cNo').addEventListener('click', function(){ setConsent(false); });
