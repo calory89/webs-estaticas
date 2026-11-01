@@ -5103,5 +5103,171 @@
     "Registro de Incorporação R13 da Matrícula nº 135.051"
    ]
   }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "secret-inshi",
+  "name": "SECRET by INSHI",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "dubovica-budva-residential-complex",
+  "name": "New residential complex in Dubovica",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "samana-ocean-crest-dubai-islands",
+  "name": "Samana Ocean Crest",
+  "changed": {
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "comfort-by-orbi-orbi-group",
+  "name": "Comfort by Orbi",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "al-mare-green-midtown-group",
+  "name": "Al Mare Green",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9489,
+    9490
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "rhea-by-sansiri",
+  "name": "Rhea by Sansiri",
+  "changed": {
+   "price_from": [
+    140918,
+    140818
+   ],
+   "title_type": [
+    null,
+    "leasehold"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "elaris-sky-object-1",
+  "name": "ELAR1S Sky (Elaris Sky)",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Escrow account 19517041 at Abu Dhabi Islamic Bank",
+    "Escrow account 19517041 at Abu Dhabi Islamic Bank. Payments for units in this project go into this account."
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "arancia-yards-beyond",
+  "name": "Arancia Yards by Beyond",
+  "changed": {
+   "permit_number": [
+    "project #4480",
+    "project number 4480"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "casa-blake-costa-palmas-irongate",
+  "name": "Casa Blake at Costa Palmas",
+  "changed": {
+   "currency": [
+    null,
+    "USD"
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "alliance-centropolis-alliance-group",
+  "name": "Alliance Centropolis",
+  "changed": {
+   "completion_year": [
+    2028,
+    2029
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "boavista-tower-porto-mesmo-valor",
+  "name": "Boavista Tower",
+  "changed": {
+   "price_from": [
+    289900,
+    489900
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "udaondo-buenos-aires-landmark-developments",
+  "name": "Udaondo Buenos Aires",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Fideicomiso Buenos Aires Landmark (used to buy the land at public auction in 2018)",
+    "Fideicomiso Buenos Aires Landmark, the trust that bought the land in a 2018 public auction; no buyer escrow or bank guarantee mentioned"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "harmony-ocean-front-ja-russi",
+  "name": "Harmony Ocean Front",
+  "changed": {
+   "permit_number": [
+    "Registro de Incorporação R13 da Matrícula nº 135.051",
+    "R13 da Matrícula nº 135.051 do 1º Ofício de Registro de Imóveis de Balneário Camboriú"
+   ]
+  }
  }
 ]
