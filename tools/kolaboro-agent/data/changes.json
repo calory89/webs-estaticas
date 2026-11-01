@@ -4429,5 +4429,296 @@
     null
    ]
   }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "the-zero-nai-yang",
+  "name": "The Zero Nai Yang",
+  "changed": {
+   "price_from": [
+    4940000,
+    4712625
+   ],
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "morros-vita-serena-del-mar",
+  "name": "Morros Vita",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Alianza Fiduciaria, entidad encargada de velar por la correcta administración de los recursos; vinculación de compradores al esquema fiduciario",
+    "Fiduciary scheme administered by Alianza Fiduciaria: \"entidad encargada de velar por la correcta administración de los recursos\""
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "widen-by-sansiri-sathorn",
+  "name": "Widen by Sansiri",
+  "changed": {
+   "price_from": [
+    926000,
+    925000
+   ],
+   "title_type": [
+    null,
+    "freehold"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "samana-ocean-crest-dubai-islands",
+  "name": "Samana Ocean Crest",
+  "changed": {
+   "plans_published": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "samana-sky-views-dpc",
+  "name": "Samana Sky Views",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "azizi-venice-14-dubai-south",
+  "name": "Azizi Venice 14",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "crystal-garden-cap-cana-gesproin",
+  "name": "Crystal Garden Cap Cana",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "querencia-dovec-group",
+  "name": "Querencia",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9479,
+    9486
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "becici-sea-view-building-value-one",
+  "name": "New residential building 200 m from Bečići beach (building 5)",
+  "changed": {
+   "price_from": [
+    203831,
+    217827
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "bansko-complex-near-ski-lift-suprimmo",
+  "name": "New residential complex near the ski lift, Bansko",
+  "changed": {
+   "price_from": [
+    43446,
+    55143
+   ],
+   "permit_number": [
+    null,
+    "Act 14"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "ellington-sands-i-ellington",
+  "name": "Ellington Sands I",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "rhea-by-sansiri",
+  "name": "Rhea by Sansiri",
+  "changed": {
+   "title_type": [
+    "freehold",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "quattro-del-mar-rak-properties",
+  "name": "Quattro Del Mar",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "arancia-yards-beyond",
+  "name": "Arancia Yards by Beyond",
+  "changed": {
+   "permit_number": [
+    "project number 4480",
+    "project #4480"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "minori-luxury-seminyak-eco-invest-group",
+  "name": "Minori Luxury Seminyak",
+  "changed": {
+   "price_from": [
+    284050,
+    299000
+   ],
+   "escrow_or_guarantee": [
+    "Contractually guaranteed 6% net annual return for two years; no escrow, bank guarantee or trust mentioned",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "the-boon-condo-bophut-b2-development",
+  "name": "The Boon Condo",
+  "changed": {
+   "price_from": [
+    91500,
+    91400
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "gianfranco-ferre-residences-mira",
+  "name": "Gianfranco Ferré Residences",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "botanica-luxury-krabi",
+  "name": "Botanica Luxury Krabi",
+  "changed": {
+   "price_from": [
+    493657,
+    493000
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "the-ivory-chang-phueak-home-development-group",
+  "name": "The IVORY",
+  "changed": {
+   "title_type": [
+    null,
+    "freehold"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "penha-living-bolder-addsolid",
+  "name": "Penha Living Bolder",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "moon-gate-hotel-spa-antigua",
+  "name": "Moon Gate Hotel & Spa (suites)",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "udaondo-buenos-aires-landmark-developments",
+  "name": "Udaondo Buenos Aires",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Fideicomiso Buenos Aires Landmark (described as the vehicle that bought the ex Tiro Federal land at auction)",
+    "Fideicomiso Buenos Aires Landmark, which bought the land at public auction in 2018 for u$s 150 millones"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "shoreline-al-marjan-damac",
+  "name": "Shoreline by DAMAC",
+  "changed": {
+   "price_from": [
+    4534000,
+    4540000
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "nobu-residences-al-marjan-enevoria",
+  "name": "Nobu Hotel and Residences Al Marjan Island",
+  "changed": {
+   "price_from": [
+    4793000,
+    4800000
+   ]
+  }
  }
 ]
