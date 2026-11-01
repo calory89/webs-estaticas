@@ -97,7 +97,7 @@
    "theme": "Money and escrow",
    "title": "Deposit protection finder",
    "desc": "Shows which protection exists in each market and how to ask for it.",
-   "status": "next"
+   "status": "shipped"
   },
   {
    "n": 15,
@@ -181,7 +181,7 @@
    "theme": "Data products for business",
    "title": "Developer benchmark report",
    "desc": "Each developer sees how its disclosure compares with its market.",
-   "status": "next"
+   "status": "shipped"
   },
   {
    "n": 27,
@@ -601,7 +601,7 @@
    "theme": "Buyer experience",
    "title": "Personal checklist",
    "desc": "Questions tailored to the country and property type.",
-   "status": "next"
+   "status": "shipped"
   },
   {
    "n": 87,
