@@ -11,10 +11,10 @@
   function $(i){ return document.getElementById(i); }
   function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; }); }
   function n(x){ return (+x || 0).toLocaleString('en'); }
-  var S = { m: '', t: '', q: '', sort: 'best', lim: 24 };
+  var S = { m: '', t: '', q: '', sort: 'best', lim: 24, st: '' };
   function full(c){ return (c.max || 0) === 6 && (c.score || 0) === 6 && !(c.flags || []).length; }
   function okk(c, k){ var ck = c.checks || {}; return k === 'permit' ? ck.permit === 2 : k === 'escrow' ? ck.escrow === true : k === 'progress' ? ck.progress != null : !!ck[k]; }
-  function tierOk(c){ return !S.t || (S.t === 'full' ? full(c) : S.t === 'verified' ? (c.vscore || 0) >= 4 : c.tier === S.t); }
+  function tierOk(c){ if (S.st && c.stage !== S.st) return false; return !S.t || (S.t === 'full' ? full(c) : S.t === 'verified' ? (c.vscore || 0) >= 4 : c.tier === S.t); }
   function stat(){
     var mk = {}, ct = {}; C.forEach(function(c){ mk[c.market] = 1; ct[c.country] = 1; });
     var permit = C.filter(function(c){ return c.checks && c.checks.permit === 2; }).length, escw = C.filter(function(c){ return c.checks && c.checks.escrow === true; }).length,
@@ -35,7 +35,7 @@
   }
   function card(c){
     var t = TIER[c.tier] || TIER.mixed, ck = c.checks || {};
-    var meta = [c.band, c.title ? c.title.replace('_', ' ') + (c.lease ? ' ' + c.lease + ' yrs' : '') : null, c.done ? 'completion ' + c.done : 'no completion date', c.yield ? c.yield + '% yield advertised' : null].filter(Boolean).join(' · ');
+    var meta = [c.stage ? (c.stage === 'under construction' ? 'Under construction' : 'Off-plan') : null, c.band, c.title ? c.title.replace('_', ' ') + (c.lease ? ' ' + c.lease + ' yrs' : '') : null, c.done ? 'completion ' + c.done : 'no completion date', c.yield ? c.yield + '% yield advertised' : null].filter(Boolean).join(' · ');
     var R = ck.researched || CK.map(function(k){ return k[0]; }), mx = c.max || R.length;
     var ticks = CK.map(function(k){ if (R.indexOf(k[0]) < 0) return ''; var v = ck[k[0]], ok = k[0] === 'permit' ? v === 2 : k[0] === 'progress' ? v != null : v === true;
       var half = k[0] === 'permit' && v === 1, txt = k[0] === 'progress' && v != null ? (typeof v === 'number' ? 'Construction progress published (' + v + '%)' : 'Construction progress published (dated updates)') : half ? 'Permit claimed, number not published' : k[1];
@@ -76,6 +76,7 @@
   function bind(){
     $('kmk').onchange = function(){ S.m = this.value; S.lim = 24; render(); };
     $('ksort').onchange = function(){ S.sort = this.value; render(); };
+    if ($('kst2')) $('kst2').onchange = function(){ S.st = this.value; S.lim = 24; render(); };
     $('kq').oninput = function(){ S.q = this.value.trim(); S.lim = 24; render(); };
     $('ktier').onclick = function(e){ var b = e.target.closest('button'); if (!b) return; S.t = b.dataset.t; S.lim = 24; this.querySelectorAll('button').forEach(function(x){ x.classList.toggle('on', x === b); }); render(); };
     $('cgrid').addEventListener('click', function(e){
