@@ -230,6 +230,46 @@ def _claims(p):
 def _filled(v):
     return v not in (None, '', [], {})
 
+def _overdue(p):
+    """Months past the promised handover while the project is not completed (None if on time or unknown)."""
+    st = str(p.get('stage') or '').lower()
+    if 'complet' in st or 'handed' in st:
+        return None
+    h = str((p.get('facts') or {}).get('handover_promised') or (p.get('seed') or {}).get('completion') or '')
+    m = re.search(r'(20\d\d)(?:\s*-?\s*(?:Q([1-4])|-(\d\d)))?', h)
+    if not m:
+        return None
+    y = int(m.group(1)); mo = (int(m.group(2)) * 3) if m.group(2) else (int(m.group(3)) if m.group(3) else 12)
+    t = datetime.now(timezone.utc).date(); late = (t.year - y) * 12 + (t.month - mo)
+    return late if late > 0 else None
+
+
+def duplicates(projects):
+    """Internal: likely duplicate listings (same market and similar name, or locations within 150 m)."""
+    import math
+    out = []; P = [p for p in projects if p.get('market')]
+    words = lambda p: set(w for w in re.findall(r'[a-z0-9]+', (p.get('name') or '').lower()) if len(w) > 2 and w not in ('the', 'residence', 'residences', 'villas', 'villa', 'tower', 'project', 'apartments', 'by'))
+    for i, a in enumerate(P):
+        for b in P[i + 1:]:
+            if a['market'] != b['market']:
+                continue
+            why = []
+            wa, wb = words(a), words(b)
+            if wa and wb and len(wa & wb) / len(wa | wb) >= 0.6:
+                why.append('similar name')
+            fa, fb = a.get('facts') or {}, b.get('facts') or {}
+            try:
+                if None not in (fa.get('lat'), fa.get('lng'), fb.get('lat'), fb.get('lng')):
+                    d = 6371000 * math.hypot(math.radians(fb['lat'] - fa['lat']), math.radians(fb['lng'] - fa['lng']) * math.cos(math.radians(fa['lat'])))
+                    if d < 150:
+                        why.append('%d m apart' % d)
+            except Exception:
+                pass
+            if why:
+                out.append({'a': a.get('slug'), 'b': b.get('slug'), 'market': a['market'], 'why': why})
+    return out
+
+
 def db_stats(projects, cases):
     src = set(); facts = 0; claims = {'verified': 0, 'unverified': 0, 'contradicted': 0}; lv = {l: 0 for l in LEVELS}; deep = 0; ckn = 0
     for p in projects:
@@ -250,7 +290,9 @@ def db_stats(projects, cases):
             'deep_profiles': deep, 'checks_by_level': lv, 'checks_rated': ckn,
             'stages': {k: sum(1 for c in cases if c.get('stage') == k) for k in ('off-plan', 'under construction', 'completed')},
             'all_six_public': sum(1 for c in cases if c['max'] == 6 and c['score'] == 6 and not c['flags']),
-            'with_flags': sum(1 for c in cases if c['flags'])}
+            'with_flags': sum(1 for c in cases if c['flags']),
+            'overdue': sum(1 for c in cases if c.get('overdue')), 'overdue_avg_months': round(statistics.mean([c['overdue'] for c in cases if c.get('overdue')]), 1) if any(c.get('overdue') for c in cases) else None,
+            'delayed': sum(1 for c in cases if c.get('delay'))}
 
 def public_cases(projects, latest):
     out = []; n = {}
@@ -278,7 +320,7 @@ def public_cases(projects, latest):
                     'checks': ck, 'score': int(score), 'max': mx, 'flags': fl, 'notes': notes, 'tier': tier,
                     'read': read or bool(p.get('sources')), 'checked': _date(rec.get('checked', '') or p.get('added', '')), 'invited': _date(p['invited']) if p.get('invited') else None,
                     'q': q[:6], 'verified': _verification(p), 'vscore': sum(1 for l in (_verification(p) or {}).values() if l in ('registry', 'independent')) if _verification(p) else None,
-                    'claims': _claims(p), 'stage': (lambda st: 'completed' if 'complet' in st or 'handed' in st else 'under construction' if 'construct' in st else 'off-plan' if 'off' in st or 'plan' in st else None)(str(p.get('stage') or '').lower()), 'delay': (p.get('facts') or {}).get('delay_months'), 'profile': sum(1 for k in FACT_KEYS if _filled((p.get('facts') or {}).get(k))) or None})
+                    'claims': _claims(p), 'stage': (lambda st: 'completed' if 'complet' in st or 'handed' in st else 'under construction' if 'construct' in st else 'off-plan' if 'off' in st or 'plan' in st else None)(str(p.get('stage') or '').lower()), 'delay': (p.get('facts') or {}).get('delay_months'), 'overdue': _overdue(p), 'profile': sum(1 for k in FACT_KEYS if _filled((p.get('facts') or {}).get(k))) or None})
     out.sort(key=lambda c: (0 if c['invited'] else 1, 0 if c['market'] == 'Bali' else 1, c['market'], c['region'], c['id']))
     res = {'updated': TODAY, 'markets': len({c['market'] for c in out}), 'countries': len({c['country'] for c in out}), 'note': 'Anonymised until verification is complete. Advertised claims, not verified facts.', 'cases': out}
     res['db'] = db_stats(projects, out)
@@ -354,6 +396,7 @@ def main():
     markets = sorted({p.get('market', 'Bali') for p in projects})
     runs_pub = [{k: r[k] for k in ('date', 'mode', 'pages_ok', 'pages_failed', 'changes')} for r in runs]
     json.dump({"updated": TODAY, "projects": len(projects), "markets": {m: aggregates(latest, runs_pub, m) for m in markets}}, open(os.path.join(os.path.dirname(os.path.abspath(public_out)), 'world-claims.json'), 'w'), ensure_ascii=False, indent=1)
+    json.dump(duplicates(projects), open(os.path.join(DATA, 'duplicates.json'), 'w'), ensure_ascii=False, indent=1)
     json.dump(public_cases(projects, latest), open(os.path.join(os.path.dirname(os.path.abspath(public_out)), 'bali-cases.json'), 'w'), ensure_ascii=False, indent=1)
     print(json.dumps(run))
 
