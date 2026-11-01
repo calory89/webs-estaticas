@@ -3760,5 +3760,178 @@
     false
    ]
   }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "natha-loka",
+  "name": "Natha Loka Eco Village",
+  "changed": {
+   "advertised_yield_pct": [
+    7,
+    14
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "secret-inshi",
+  "name": "SECRET by INSHI",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "palm-jebel-ali-frond-a-villas",
+  "name": "Palm Jebel Ali - Frond A Villas",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "avrupa-konutlari-gunesli-artas",
+  "name": "Avrupa Konutları Güneşli",
+  "changed": {
+   "plans_published": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9472,
+    9474
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "becici-sea-view-building-value-one",
+  "name": "New residential building 200 m from Bečići beach (building 5)",
+  "changed": {
+   "price_from": [
+    217827,
+    203831
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "ellington-sands-i-ellington",
+  "name": "Ellington Sands I",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "sky-tower-first-projects",
+  "name": "Sky Tower",
+  "changed": {
+   "price_from": [
+    1180000,
+    1700000
+   ],
+   "guaranteed_language": [
+    false,
+    true
+   ],
+   "permit_number": [
+    "75/1",
+    "Wafi license 75/1"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "bluewaters-bay-meraas",
+  "name": "Bluewaters Bay",
+  "changed": {
+   "price_from": [
+    2850000,
+    2900000
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "casa-blake-costa-palmas-irongate",
+  "name": "Casa Blake at Costa Palmas",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "botanica-luxury-krabi",
+  "name": "Botanica Luxury Krabi",
+  "changed": {
+   "price_from": [
+    493658,
+    493657
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "penha-living-bolder-addsolid",
+  "name": "Penha Living Bolder",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "perlita-gardens-udc",
+  "name": "Perlita Gardens",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "udaondo-buenos-aires-landmark-developments",
+  "name": "Udaondo Buenos Aires",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Fideicomiso Buenos Aires Landmark (named as the trust that bought the land at a 2018 public auction; no buyer escrow or guarantee mentioned)",
+    "Fideicomiso Buenos Aires Landmark (trust that bought the land at public auction in 2018; no buyer escrow or guarantee described)"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "city-walk-love-lane-liverpool-habitia",
+  "name": "City Walk",
+  "changed": {
+   "permit_claim": [
+    true,
+    false
+   ]
+  }
  }
 ]
