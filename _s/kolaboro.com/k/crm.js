@@ -190,11 +190,11 @@
     dr.querySelectorAll('[data-nd]').forEach(function(b){ b.onclick = function(){ act('note_done', { id: +b.dataset.nd, done: b.dataset.v === 'true' }); }; });
     dr.querySelectorAll('[data-ndel]').forEach(function(b){ b.onclick = function(){ if (confirm('Delete this note?')) act('del_note', { id: +b.dataset.ndel }); }; });
     $('crm-tpl').onchange = function(){ var t = TPL[+this.value]; if (!t || this.value === '') return; location.href = 'mailto:' + encodeURIComponent(l.email) + '?subject=' + encodeURIComponent(tpl(t[1], l)) + '&body=' + encodeURIComponent(tpl(t[2], l)); if (has()) act('add_note', { lead_id: l.id, user_id: u ? u.id : '', kind: 'email', body: 'Sent template: ' + t[0] }); this.value = ''; };
-    var as = $('crm-as'); if (as) as.onclick = function(){ A.rpc('kolaboro_admin', { p_key: A.pw(), p_action: 'impersonate', p_payload: { user_id: u.id } }).then(function(d){ if (d.token) window.open('/portal?as=' + d.token, '_blank'); }); };
+    var as = $('crm-as'); if (as) as.onclick = function(){ A.rpc('kolaboro_admin', { p_key: A.pw(), p_action: 'impersonate', p_payload: { user_id: u.id } }).then(function(d){ if (d.token) window.open('/portal#as=' + d.token, '_blank', 'noopener'); }); };
   }
   function csv(rows){
     var F = Array.isArray(rows) ? rows : filtered(), c = ['created_at','name','email','phone','country','plan','status','src','medium','campaign','referrer','landing','learn','who','bring','tags','next_action','value_eur'];
-    var t = c.join(',') + '\n' + F.map(function(l){ return c.map(function(k){ var v = k === 'status' ? stOf(l) : k === 'tags' ? (l.tags || []).join('|') : l[k]; v = String(v == null ? '' : v); if (/^[=+\-@]/.test(v)) v = "'" + v; return '"' + v.replace(/"/g, '""') + '"'; }).join(','); }).join('\n');
+    var t = c.join(',') + '\n' + F.map(function(l){ return c.map(function(k){ var v = k === 'status' ? stOf(l) : k === 'tags' ? (l.tags || []).join('|') : l[k]; v = String(v == null ? '' : v); if (/^[\s]*[=+\-@\t\r]/.test(v)) v = "'" + v; return '"' + v.replace(/"/g, '""') + '"'; }).join(','); }).join('\n');
     var a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([t], { type: 'text/csv' })); a.download = 'kolaboro-crm-' + today() + '.csv'; a.click();
   }
   document.addEventListener('kbadm', function(e){ D = e.detail; render(); });

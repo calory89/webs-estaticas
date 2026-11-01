@@ -2,7 +2,7 @@
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Your case | Kolaboro</title><meta name="robots" content="noindex,nofollow"><link rel="icon" href="/k/favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#17212B">
 <link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/k/app.css?v=c20f3234be">
-<script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script><script>if(!window.clarity)(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z4eqcmaic7");</script>
+
 <link rel="manifest" href="/portal/manifest.webmanifest"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="/agents/icon-192.png">
 </head><body>
 <header class="ap-top"><div class="ap-top-in"><a class="ap-brand" href="/portal"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4v24M8 16 23 6.5M8 16l15 9.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="24" cy="6" r="3.4" fill="currentColor"/><circle cx="24" cy="26" r="3.4" fill="currentColor"/><circle cx="8" cy="16" r="4.2" fill="#FF5B14"/></svg>kolaboro</a><span class="ap-muted" style="color:#9FB0BF" id="who"></span><span class="ap-sp"></span>
@@ -28,7 +28,8 @@ var KB = (function(){
   var STAGE_HELP = ['We confirm your payment and the project details.','We collect the contract, brochure and what you were promised.','Your agent checks the land certificate at the land office.','We confirm the building permit (PBG) in the official system.','Your agent visits the site: GPS-stamped photos and video.','Your written report with a clear verdict.'];
   var VERD = { pending:['In progress','pending'], safe:['No red flags','safe'], hold:['Hold payments','hold'], stop:["Don't pay yet",'stop'] };
   var q = new URLSearchParams(location.search);
-  if (q.get('as')) { KB.set('kb-token-as', q.get('as'), true); history.replaceState(null, '', '/portal'); }
+  var hm = location.hash.match(/as=([a-f0-9]{20,80})/), qa = q.get('as');
+  if (hm || qa) { KB.set('kb-token-as', hm ? hm[1] : qa, true); history.replaceState(null, '', '/portal'); }
   var TOKEN = KB.get('kb-token-as') || KB.get('kb-token'), D = null, CUR = null, deskBusy = {};
   if (!TOKEN) { location.href = '/login'; return; }
   if (!KB.get('kb-token-as') && KB.get('kb-role') === 'agent') { location.href = '/agents/me'; return; }
@@ -47,6 +48,7 @@ var KB = (function(){
     h += sinceHtml();
     if (q.get('welcome') === 'free') h += '<div class="ap-banner ok">✓ Your free account is ready. Projects you save with ☆ in the database now appear here on every device.</div>';
     else if (q.get('welcome')) h += '<div class="ap-banner ok">✓ Your account is ready and your case is open. Add your project details below so your agent can start.</div>';
+    if (u.verified === false && !u.demo && !u.admin_view) h += '<div class="ap-banner warn" style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between"><span>✉️ <b>Confirm your email.</b> We sent a link to ' + esc(u.email) + '. We need it to match your PayPal payment to your case automatically.</span><button class="ap-chip" id="rsv" style="background:#17212B">Send the link again</button></div>';
     if (u.status === 'pending') h += '<div class="ap-banner warn">⏳ Waiting for PayPal to confirm your payment. It usually arrives automatically within minutes. If you paid with a different email than this account, tell us in the chat. You can already add your project details.</div>';
     if (D.cases.length > 1) h += '<div class="ap-cases">' + D.cases.map(function(x){ return '<button data-c="' + x.id + '" class="' + (x.id === CUR ? 'on' : '') + '"><b>' + esc(x.project_name || x.code) + '</b><small>' + esc(x.code) + ' · ' + (x.paid ? STAGES[x.stage] : 'Not paid yet') + '</small></button>'; }).join('') + '</div>';
     if (!c) { $('app').innerHTML = h + homeHtml(u); bindPlus(null); return; }
@@ -55,7 +57,7 @@ var KB = (function(){
     var steps = STAGES.map(function(s, i){ var cls = (i < st || (i === st && st === 5 && c.report_url)) ? 'done' : (i === st ? 'now' : ''); return '<li class="' + cls + '">' + s + '<small>' + (stageDate(c, i) || (i === 5 && c.eta ? 'due ' + fmt(c.eta) : '')) + '</small></li>'; }).join('');
     h += '<div class="ap-grid"><div class="ap-col">';
     h += '<section class="ap-card ap-hero"><p class="ap-k">Case ' + esc(c.code) + ' · opened ' + fmt(c.created_at) + '</p><h1>' + esc(c.project_name || (c.project_url ? c.project_url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '') : 'Your project')) + '</h1>' +
-      '<p style="margin:0;color:#C9D0D6;position:relative;z-index:1">' + esc([c.developer, c.location, c.price_text].filter(Boolean).join(' · ') || 'Add the project details so your agent knows exactly what to check.') + (c.project_url ? ' · <a href="' + esc(c.project_url) + '" target="_blank" rel="noopener">website ↗</a>' : '') + '</p>' +
+      '<p style="margin:0;color:#C9D0D6;position:relative;z-index:1">' + esc([c.developer, c.location, c.price_text].filter(Boolean).join(' · ') || 'Add the project details so your agent knows exactly what to check.') + (/^https?:\/\//i.test(c.project_url || '') ? ' · <a href="' + esc(c.project_url) + '" target="_blank" rel="noopener noreferrer">website ↗</a>' : '') + '</p>' +
       '<div class="ap-badges"><span class="ap-badge ' + v[1] + '">' + (c.verdict === 'pending' ? '● ' : '') + v[0] + '</span>' + (c.paid ? '' : '<span class="ap-badge hold">' + (firstCase && u.status === 'pending' ? 'Confirming payment' : 'Not paid yet') + '</span>') + (c.eta && st < 5 ? '<span class="ap-badge">Report due ' + fmt(c.eta) + (days(c.eta) >= 0 ? ' · ' + days(c.eta) + ' days' : '') + '</span>' : '') + '</div>' +
       '<ol class="ap-steps">' + steps + '</ol>' +
       '<div class="ap-now"><span class="ap-k">Now</span><div style="margin-top:4px">' + esc(c.stage_note || STAGE_HELP[st]) + '</div></div></section>';
@@ -92,6 +94,7 @@ var KB = (function(){
     $('app').innerHTML = h; if (window.KBX) KBX(c, D, TOKEN); bindPlus(c);
     var ch = $('chat'); if (ch) ch.scrollTop = ch.scrollHeight;
     document.querySelectorAll('[data-c]').forEach(function(b){ b.onclick = function(){ CUR = b.dataset.c; render(); }; });
+    var rsv = $('rsv'); if (rsv) rsv.onclick = function(){ rsv.disabled = true; call('resend_verify').then(function(){ KB.toast('Sent. Check your inbox and spam folder.'); }); };
     $('df').addEventListener('submit', function(e){ e.preventDefault(); var o = { case_id: c.id }; new FormData(e.target).forEach(function(v, k){ o[k] = v; }); load('update_case', o).then(function(){ KB.toast('Saved'); }); });
     $('mf').addEventListener('submit', function(e){ e.preventDefault(); var t = e.target.body.value.trim(); if (!t) return; e.target.querySelector('button').disabled = true; load('message', { case_id: c.id, body: t }); });
     $('mf').body.addEventListener('keydown', function(e){ if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) $('mf').requestSubmit(); });
@@ -164,6 +167,7 @@ var KB = (function(){
       }); });
   }
   function bindPlus(c){
+    var rsv = $('rsv'); if (rsv && !rsv.onclick) rsv.onclick = function(){ rsv.disabled = true; call('resend_verify').then(function(){ KB.toast('Sent. Check your inbox and spam folder.'); }); };
     var hf = $('hf'); if (hf) hf.onsubmit = function(e){ e.preventDefault(); var v = hf.u.value.trim(); if (!v) return; hf.querySelector('button').disabled = true; load('new_case', { project_url: v }).then(function(){ if (D.cases[0]) { CUR = D.cases[0].id; render(); KB.toast('Case opened. The desk review starts now.'); } }); };
     document.querySelectorAll('[data-unsave]').forEach(function(b){ b.onclick = function(){ var r = b.dataset.unsave; try { if (window.KBWatch) KBWatch.remove(r); else { var L = JSON.parse(localStorage.getItem('kb_watch') || '[]'); localStorage.setItem('kb_watch', JSON.stringify(L.filter(function(x){ return String(x.id).toUpperCase() !== r.toUpperCase(); }))); } } catch (x) {} load('unsave_project', { ref: r }); }; });
     if (c) {

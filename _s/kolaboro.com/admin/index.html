@@ -115,7 +115,7 @@ function leads(){var r=flt();$('lt').innerHTML='<tr><th>When</th><th>Type</th><t
   return '<tr><td>'+when(l.created_at)+'</td><td><span class="pill p-'+esc(l.plan)+'">'+esc(l.plan||'other')+'</span></td><td><b>'+esc(l.name)+'</b><br><a href="mailto:'+esc(l.email)+'">'+esc(l.email)+'</a>'+(l.phone?'<br>'+esc(l.phone):'')+'</td><td><select data-id="'+l.id+'">'+['new','contacted','qualified','proposal','won','lost'].map(function(s){var cur={paid:'won',no:'lost'}[l.status]||l.status||'new';return '<option'+(cur===s?' selected':'')+'>'+s+'</option>'}).join('')+'</select></td><td>'+esc(l.country)+'</td><td>'+url+'</td><td><details><summary>'+esc((l.who||'').slice(0,40))+'</summary><p>'+esc(l.bring)+'</p><p class="muted">'+esc(l.source)+' · '+esc(l.lang)+' '+esc(l.week)+'</p></details></td></tr>'}).join('');
   $('lt').querySelectorAll('select').forEach(function(s){s.onchange=function(){rpc('kolaboro_admin',{p_key:PW,p_action:'set_status',p_payload:{id:s.dataset.id,status:s.value}}).then(load)}})}
 ['q','pf','sf'].forEach(function(i){$(i).addEventListener('input',leads)});
-$('csv').onclick=function(){var r=flt(),c=['created_at','plan','status','name','email','phone','country','learn','who','bring','source','lang'];var t=c.join(',')+'\n'+r.map(function(l){return c.map(function(k){return '"'+String(l[k]==null?'':l[k]).replace(/"/g,'""')+'"'}).join(',')}).join('\n');var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([t],{type:'text/csv'}));a.download='kolaboro-leads.csv';a.click()};
+$('csv').onclick=function(){var r=flt(),c=['created_at','plan','status','name','email','phone','country','learn','who','bring','source','lang'];var t=c.join(',')+'\n'+r.map(function(l){return c.map(function(k){var v=String(l[k]==null?'':l[k]);if(/^[\s]*[=+\-@\t\r]/.test(v))v="'"+v;return '"'+v.replace(/"/g,'""')+'"'}).join(',')}).join('\n');var a=document.createElement('a');a.href=URL.createObjectURL(new Blob([t],{type:'text/csv'}));a.download='kolaboro-leads.csv';a.click()};
 function pays(){var P=D.payments,tot={};P.forEach(function(p){tot[p.currency]=(tot[p.currency]||0)+(+p.amount||0)});
   $('pk').innerHTML=[['Payments',P.length],['Total',Object.keys(tot).map(function(c){return c+' '+tot[c].toLocaleString()}).join(' · ')||'0'],['Clicked pay',ev('pay_click')],['Back from PayPal',ev('paypal_return')]].map(function(x){return '<div class="kpi"><span>'+x[0]+'</span><b>'+x[1]+'</b></div>'}).join('');
   $('ptab').innerHTML='<tr><th>Date</th><th>Name / email</th><th>Amount</th><th>Product</th><th>PayPal ID</th><th></th></tr>'+P.map(function(p){return '<tr><td>'+esc(p.paid_at)+'</td><td>'+esc(p.name)+'<br>'+esc(p.email)+'</td><td><b>'+esc(p.currency)+' '+esc(p.amount)+'</b></td><td>'+esc(p.product)+'</td><td>'+esc(p.ref)+'</td><td><button class="btn2" data-del="'+p.id+'">Delete</button></td></tr>'}).join('')||'<tr><td>No payments recorded yet.</td></tr>';
@@ -158,7 +158,7 @@ function detail(u,c){ var r=(c.desk&&c.desk.report)||null;
   if (c.messages.some(function(m){return !m.admin&&!m.read})) rpc('kolaboro_admin',{p_key:PW,p_action:'mark_read',p_payload:{case_id:c.id}});
   $('cf').onsubmit=function(e){e.preventDefault();var o={id:c.id};new FormData(e.target).forEach(function(v,k){o[k]=v});if(+o.stage===c.stage&&!o.log_note)delete o.stage;rpc('kolaboro_admin',{p_key:PW,p_action:'case_update',p_payload:o}).then(load)};
   $('cmf').onsubmit=function(e){e.preventDefault();var t=e.target.body.value.trim();if(!t)return;rpc('kolaboro_admin',{p_key:PW,p_action:'admin_message',p_payload:{case_id:c.id,body:t}}).then(load)};
-  $('asu').onclick=function(){rpc('kolaboro_admin',{p_key:PW,p_action:'impersonate',p_payload:{user_id:u.id}}).then(function(d){if(d.token)window.open('/portal?as='+d.token,'_blank')})};
+  $('asu').onclick=function(){rpc('kolaboro_admin',{p_key:PW,p_action:'impersonate',p_payload:{user_id:u.id}}).then(function(d){if(d.token)window.open('/portal#as='+d.token,'_blank','noopener')})};
   $('uact').onclick=function(){rpc('kolaboro_admin',{p_key:PW,p_action:'set_user',p_payload:{id:u.id,status:u.status==='active'?'pending':'active'}}).then(load)};
   $('urp').onclick=function(){var p=prompt('New password for '+u.email+' (min 8). Send it to them by email.');if(p)rpc('kolaboro_admin',{p_key:PW,p_action:'reset_password',p_payload:{user_id:u.id,password:p}}).then(function(d){alert(d.error?'Too short':'Password changed')})};
   $('udel').onclick=function(){if(confirm('Delete '+u.email+' and all their cases? This cannot be undone.'))rpc('kolaboro_admin',{p_key:PW,p_action:'delete_user',p_payload:{user_id:u.id}}).then(function(){CSEL=null;load()})};
@@ -192,7 +192,7 @@ PW=st('kb-admin')||''; if(PW)load();
 })();
 </script><script src="/k/ops.js?v=cff90ae77e"></script>
 <script src="/k/ops2.js?v=e6abdb8c2f"></script>
-<script src="/k/crm.js?v=2ea12c0247"></script>
+<script src="/k/crm.js?v=ccbdc47880"></script>
 <script src="/k/adm2.js?v=f3d736b6ca"></script>
 <script>document.addEventListener('click',function(e){var i=e.target.closest&&e.target.closest('img.ag-photo');if(!i)return;var w=window.open('','_blank');if(!w)return;w.opener=null;var im=w.document.createElement('img');im.src=i.src;im.style.maxWidth='100%';w.document.body.appendChild(im);});</script>
 </body></html>

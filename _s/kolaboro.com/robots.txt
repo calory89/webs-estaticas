@@ -1,6 +1,7 @@
 User-agent: *
 Disallow: /admin
 Disallow: /portal
+Disallow: /verify/
 Disallow: /reset/
 Disallow: /shared/
 Disallow: /agents/me

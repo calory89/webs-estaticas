@@ -294,7 +294,11 @@ async function ppIpn(req, env, ctx) {
     if (!ok) return;
     const p = new URLSearchParams(new TextDecoder('latin1').decode(raw));
     if (p.get('test_ipn') === '1') return;
-    await payEvent(env, { p_source: 'paypal_ipn', p_txn: p.get('txn_id') || '', p_status: p.get('payment_status') || '', p_email: p.get('payer_email') || '', p_amount: parseFloat(p.get('mc_gross')) || null, p_currency: p.get('mc_currency') || '', p_item: p.get('item_name') || p.get('item_name1') || p.get('transaction_subject') || '' });
+    // the money must have gone to Kolaboro's PayPal account, not to whoever built the button
+    const want = String(env.KB_PP_RECEIVER || '').toLowerCase().trim(), got = [p.get('receiver_email'), p.get('business')].map(x => String(x || '').toLowerCase().trim());
+    if (!want || got.indexOf(want) < 0) return;
+    const st = p.get('payment_status') || '', refund = /^(Refunded|Reversed|Canceled_Reversal)$/i.test(st);
+    await payEvent(env, { p_source: 'paypal_ipn', p_txn: (refund ? p.get('parent_txn_id') : p.get('txn_id')) || '', p_status: p.get('payment_status') || '', p_email: p.get('payer_email') || '', p_amount: parseFloat(p.get('mc_gross')) || null, p_currency: p.get('mc_currency') || '', p_item: p.get('item_name') || p.get('item_name1') || p.get('transaction_subject') || '' });
   })());
   return new Response('', { status: 200 });
 }
