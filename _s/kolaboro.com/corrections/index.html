@@ -24,6 +24,7 @@
 <script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',region:["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});try{if(localStorage.getItem('kb-consent')==='yes')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}</script><script>addEventListener("load",function(){setTimeout(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V";document.head.appendChild(s)},1500)})</script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Kolaboro", "item": "https://kolaboro.com/"}, {"@type": "ListItem", "position": 2, "name": "Corrections", "item": "https://kolaboro.com/corrections/"}]}</script>
 <link rel="alternate" type="application/rss+xml" title="Kolaboro: what we shipped" href="/feed.xml">
+<style>.clist{display:grid;gap:8px;padding-left:22px}</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -43,7 +44,24 @@
 </header>
 <main id="main">
 <section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / Corrections</p><h1>Corrections and replies</h1><p class="lead">When we get something wrong, we fix it and record it here. Developers can also reply on any project page.</p></div></section><section class="sec"><div class="wrap prose">
-<p><b>No corrections yet.</b> Every change to a published Trust Score will be listed here with the date, what changed and why.</p>
+<h2>Accuracy check, November 2026</h2>
+<p>On 1 November 2026 we drew 50 projects at random from the database (the sample is fixed by a monthly seed, so it cannot be picked afterwards) and re-checked every one of their 485 tested claims against the cited source. The re-check was done by separate AI agents that had not done the original research; it is an automated second check, not a human audit. A human review of the same sample is next.</p>
+<ul><li><b>450</b> claims: the source supports what we published.</li><li><b>10</b> claims: the source does not support it. All 10 are corrected below.</li><li><b>25</b> claims could not be checked: the site blocks automated readers, sits behind a paywall or no longer loads. They stay as published and go to the human review.</li></ul>
+<p><b>Error rate among checkable claims: 10 of 460 (2.2%).</b> Several other claims were confirmed but rated one level too high (for example a portal copying a register counted as the register itself); we are tightening those levels in the next research round.</p>
+<h2>Corrections log</h2>
+<ol class="clist">
+<li><b>1 Nov 2026 · <a href="/p/?id=SYD-003">SYD-003</a></b>: "consent covers residential levels up to Level 54" changed to contradicted. The council consent lists Level 53 as the top residential level; Level 54 is plant.</li>
+<li><b>1 Nov 2026 · <a href="/p/?id=BRA-004">BRA-004</a></b>: a size conflict (41 vs 410 m²) changed from contradicted to unverified. The cited page no longer shows it.</li>
+<li><b>1 Nov 2026 · <a href="/p/?id=ORL-003">ORL-003</a></b>: "Phase 1 of 22 units completed" changed from verified to unverified. The cited listing does not mention it; only developer and agent pages do.</li>
+<li><b>1 Nov 2026 · <a href="/p/?id=ORL-003">ORL-003</a></b>: "construction of Phase 2 started" changed from unverified to contradicted. The developer's own site says Phase 2 is in pre-construction.</li>
+<li><b>1 Nov 2026 · <a href="/p/?id=NBO-002">NBO-002</a></b>: starting price changed from contradicted to unverified. The cited developer page matches the claim; the higher figure is only on agent pages.</li>
+<li><b>1 Nov 2026 · <a href="/p/?id=BALI-034">BALI-034</a></b>: "freehold apartments" changed from contradicted to unverified. The cited decree sets minimum prices for foreigners and does not itself rule on freehold.</li>
+<li><b>1 Nov 2026 · <a href="/p/?id=BAH-003">BAH-003</a></b>: "expected returns up to 7%" changed from verified to unverified. The source is the developer's press release republished unedited, not an independent source.</li>
+<li><b>1 Nov 2026 · <a href="/p/?id=DXB-005">DXB-005</a></b>: developer identity changed from contradicted to verified. The register lists the project company among the developer's registered entities.</li>
+<li><b>1 Nov 2026 · <a href="/p/?id=CAB-008">CAB-008</a></b>: "nearby hotel opened August 2026" changed from verified to unverified. The source announced the opening in advance.</li>
+<li><b>1 Nov 2026 · <a href="/p/?id=AUH-014">AUH-014</a></b>: "under construction" changed from contradicted to verified. The register also labels the project under construction.</li>
+</ol>
+<p class="muted">The monthly sampling script and the rules for scoring are open: <a href="/open/scoring.py">scoring.py</a>. See also <a href="/data-policy/">how we collect data</a>.</p>
 <h2>How to request a correction</h2>
 <ol><li>Write to us with the project page link and what you think is wrong.</li><li>Attach the evidence: a document, a registry extract or a dated photo.</li><li>We reply within 10 working days. If the evidence holds, we update the page and log the change here.</li></ol>
 <h2>Removal requests</h2>
