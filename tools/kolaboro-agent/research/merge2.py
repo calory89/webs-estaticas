@@ -71,6 +71,17 @@ def main(pfile, wfile):
                 problems.append('incomplete %s' % p.get('name')); continue
             key = re.sub(r'\W+', '', ((p.get('name') or '') + (p.get('developer') or '')).lower())
             slug = re.sub(r'[^a-z0-9]+', '-', (p.get('slug') or p['name']).lower()).strip('-')[:70]
+            same = by_slug.get(slug)
+            if same is None:
+                same = next((x for x in W['projects'] if re.sub(r'\W+', '', ((x.get('name') or '') + (x.get('developer') or '')).lower()) == key), None)
+            if same is not None and same.get('added') == '2026-10-31' and not same.get('found_by'):
+                # same project from a research file merged earlier: refresh it with the latest version
+                q = prep(p); q['slug'] = same['slug']; q['added'] = same['added']
+                q.setdefault('docs_url', q['url'])
+                q['sources'] = sorted(set((same.get('sources') or []) + q['sources']))
+                if q != same:
+                    same.clear(); same.update(q); rep['refreshed'] += 1
+                continue
             if key in names or slug in by_slug or similar(dict(p), [x for x in (P['projects'] + W['projects'])]): rep['duplicate'] += 1; continue
             p = prep(p); p['slug'] = slug; p['added'] = '2026-10-31'
             p.setdefault('docs_url', p['url'])
