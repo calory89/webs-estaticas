@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="light dark">
+<title>Offline | JuriMatch</title>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+  :root { --bg: #f7f5f0; --card: #ffffff; --fg: #17241e; --muted: #5b6660; --primary: #1e3a2f; --primary-fg: #f7f5f0; --border: #e3ded3; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #111814; --card: #18221d; --fg: #eef0ec; --muted: #a3ada7; --primary: #8fc3a7; --primary-fg: #0f1a14; --border: #2a3630; }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 24px 16px; background: var(--bg); color: var(--fg); font: 16px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { width: 100%; max-width: 460px; background: var(--card); border: 1px solid var(--border); border-radius: 20px; padding: 32px 24px; text-align: center; }
+  .mark { font-weight: 600; letter-spacing: -0.01em; font-size: 20px; margin: 0 0 20px; }
+  svg { display: block; margin: 0 auto 16px; width: 72px; height: 72px; }
+  h1 { font-size: 24px; line-height: 1.25; margin: 0 0 8px; }
+  p { margin: 0 0 20px; color: var(--muted); }
+  button { appearance: none; border: 0; border-radius: 999px; background: var(--primary); color: var(--primary-fg); font: inherit; font-weight: 600; padding: 12px 22px; cursor: pointer; min-height: 44px; }
+  button:focus-visible, a:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
+  section { margin-top: 24px; text-align: left; border-top: 1px solid var(--border); padding-top: 20px; }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin: 0 0 10px; }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li + li { margin-top: 8px; }
+  a { color: var(--primary); text-underline-offset: 3px; overflow-wrap: anywhere; }
+  .hint { font-size: 13px; margin: 12px 0 0; }
+</style>
+</head>
+<body>
+<main>
+  <p class="mark" aria-hidden="true" style="color: var(--fg)">JuriMatch</p>
+  <svg viewBox="0 0 72 72" aria-hidden="true" focusable="false">
+    <circle cx="36" cy="36" r="34" fill="none" stroke="currentColor" stroke-opacity="0.15" stroke-width="2"/>
+    <path d="M18 31a26 26 0 0 1 36 0M24 38a17 17 0 0 1 24 0M30 45a8 8 0 0 1 12 0" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+    <circle cx="36" cy="52" r="3" fill="currentColor"/>
+    <path d="M16 16l40 40" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+  </svg>
+  <h1 id="t">You are offline</h1>
+  <p id="b">This page needs a connection. It will load by itself when you are back online.</p>
+  <button id="retry" type="button">Try again</button>
+  <section id="tools" hidden>
+    <h2 id="h">Tools you used, available offline</h2>
+    <ul id="list"></ul>
+  </section>
+</main>
+<script>
+(function () {
+  var S = {
+    en: ["You are offline", "This page needs a connection. It will load by itself when you are back online.", "Try again", "Tools you used, available offline"],
+    es: ["Sin conexión", "Esta página necesita conexión. Se cargará sola cuando vuelva a estar en línea.", "Reintentar", "Herramientas que usó, disponibles sin conexión"],
+    de: ["Keine Verbindung", "Diese Seite braucht eine Verbindung. Sie lädt von selbst, sobald Sie wieder online sind.", "Erneut versuchen", "Genutzte Werkzeuge, auch offline verfügbar"],
+    fr: ["Vous êtes hors ligne", "Cette page a besoin d'une connexion. Elle se chargera d'elle-même dès votre retour en ligne.", "Réessayer", "Outils déjà utilisés, disponibles hors ligne"],
+    it: ["Sei offline", "Questa pagina richiede una connessione. Si caricherà da sola quando tornerai online.", "Riprova", "Strumenti già usati, disponibili offline"],
+    pl: ["Brak połączenia", "Ta strona wymaga połączenia. Wczyta się sama, gdy wrócisz do sieci.", "Spróbuj ponownie", "Używane narzędzia, dostępne offline"],
+    pt: ["Você está sem conexão", "Esta página precisa de conexão. Ela vai carregar sozinha quando você voltar a ficar on-line.", "Tentar de novo", "Ferramentas que você usou, disponíveis sem conexão"]
+  };
+  var m = /^\/(es|de|fr|it|pl|pt-br)(\/|$)/.exec(location.pathname);
+  var code = m ? m[1].slice(0, 2) : (navigator.language || "en").slice(0, 2).toLowerCase();
+  var s = S[code] || S.en;
+  document.documentElement.lang = code === "pt" ? "pt-BR" : (S[code] ? code : "en");
+  document.getElementById("t").textContent = s[0];
+  document.getElementById("b").textContent = s[1];
+  document.getElementById("retry").textContent = s[2];
+  document.getElementById("h").textContent = s[3];
+  document.title = s[0] + " | JuriMatch";
+  document.getElementById("retry").addEventListener("click", function () { location.reload(); });
+  window.addEventListener("online", function () { location.reload(); });
+  fetch("/__jm/visited.json", { cache: "no-store" }).then(function (r) { return r.ok ? r.json() : []; }).then(function (list) {
+    if (!Array.isArray(list) || !list.length) return;
+    var ul = document.getElementById("list");
+    list.slice(0, 12).forEach(function (v) {
+      if (!v || typeof v.path !== "string" || v.path.charAt(0) !== "/") return;
+      var li = document.createElement("li");
+      var a = document.createElement("a");
+      a.href = v.path;
+      a.textContent = String(v.title || v.path).replace(/\s*\|\s*JuriMatch\s*$/, "");
+      li.appendChild(a);
+      ul.appendChild(li);
+    });
+    if (ul.children.length) document.getElementById("tools").hidden = false;
+  }).catch(function () {});
+})();
+</script>
+</body>
+</html>
