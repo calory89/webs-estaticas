@@ -1,6 +1,26 @@
 [
  {
   "d": "2026-11-01",
+  "k": "data",
+  "t": "State of Off-Plan 2026 report: 646 projects, 6,419 claims, what developers publish and what holds up"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Off-plan Transparency Index: 73 markets ranked, embeddable by journalists"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Satellite watch extended to 27 market areas, with a yearly change check for project sites"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Weekly re-check of Thailand's environmental approval register for every Thai project"
+ },
+ {
+  "d": "2026-11-01",
   "k": "feature",
   "t": "Open data API, no key: every project, market and the transparency index, JSON and CSV"
  },
