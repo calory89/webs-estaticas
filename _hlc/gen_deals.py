@@ -776,7 +776,7 @@ def main():
                  "validThrough": f.get('ida'), "category": "Vuelo", "itemOffered": {"@type": "Flight", "name": f"{f.get('origen')} → {f.get('destino')}",
                  "departureAirport": {"@type": "Airport", "iataCode": f.get('origen_iata'), "name": f.get('origen')},
                  "arrivalAirport": {"@type": "Airport", "iataCode": f.get('destino_iata'), "name": f.get('destino')}, "departureTime": f.get('ida')}}
-        art = {"@type": "Article", "headline": title[:110], "description": excerpt, "image": f"{url}og.jpg", "datePublished": x.get('approved_at'), "dateModified": x.get('approved_at'), "inLanguage": "es-ES",
+        art = {"@type": "Article", "headline": title[:110], "description": excerpt, "image": f"{url}og.jpg", "datePublished": x.get('approved_at'), "dateModified": checked(x) or x.get('approved_at'), "inLanguage": "es-ES",
                "author": {"@type": "Organization", "name": "Happy Low Cost", "url": SITE + '/'}, "publisher": {"@type": "Organization", "name": "Happy Low Cost", "logo": {"@type": "ImageObject", "url": f"{SITE}/hlc/brand/icon-512.png"}}, "mainEntityOfPage": url}
         rel = related(x, deals)
         rel_html = ''.join(card(y) for y in rel)
@@ -1040,7 +1040,7 @@ def main():
     def u(loc, lm=None):
         return f'<url><loc>{loc}</loc>' + (f'<lastmod>{lm[:10]}</lastmod>' if lm else '') + '</url>'
     lm0 = deals[0]['approved_at'] if deals else today
-    urls = [u(f'{SITE}/chollos/', lm0)] + [u(f"{SITE}/chollos/{x['slug']}/", x.get('approved_at')) for x in deals]
+    urls = [u(f'{SITE}/chollos/', lm0)] + [u(f"{SITE}/chollos/{x['slug']}/", checked(x) or x.get('approved_at')) for x in deals]
     urls += [u(f'{SITE}/chollos/{k}/', lm0) for k in sorted(gen) if (k.startswith('desde/') and k[6:] in origins) or (k.startswith('a/') and k[2:] in conts)]
     _live = {f'desde/{slugify(x["facts"].get("origen_pais") or "")}/{slugify(x["facts"].get("origen") or "")}' for x in deals} | {f'ideas/{k}' for k, h, n in ideas_links if n}
     urls += [u(f'{SITE}/chollos/{k}/', lm0) for k in sorted(gen) if k in _live]
@@ -1051,6 +1051,8 @@ def main():
     for sm in ('chollos-sitemap.xml', 'destinos-sitemap.xml'):
         if sm not in si:
             si = si.replace('</sitemapindex>', f'\t<sitemap>\n\t\t<loc>{SITE}/{sm}</loc>\n\t</sitemap>\n</sitemapindex>')
+        # lastmod en el índice: Google y Bing recrawlean antes los sitemaps que cambian
+        si = re.sub(rf'(<loc>{re.escape(SITE)}/{re.escape(sm)}</loc>)(\s*<lastmod>[^<]*</lastmod>)?', rf'\1\n\t\t<lastmod>{today}</lastmod>', si)
     open('sitemap_index.xml', 'w', encoding='utf-8').write(si)
     json.dump(sorted(d_ for d_ in os.listdir('chollos') if os.path.isfile(os.path.join('chollos', d_, 'index.html')) and d_ not in ('ver', 'desde', 'a')), open(os.path.join('chollos', 'hechos.json'), 'w'))
     print('deals', len(deals), 'origins', len(origins), 'conts', len(conts), 'guides', len(dlinks))

@@ -365,7 +365,7 @@ def main():
     guides_hub = ''.join(f'<a class="hub-l" href="/en/destinations/{G.en_dest_slug(s_)}/">{e(NAMES.get(s_, g["name"]))}</a>' for s_, g in dmap.items())
     org = {"@type": "Organization", "@id": f"{SITE}/#org", "name": "Happy Low Cost", "url": f"{SITE}/en/", "logo": f"{SITE}/hlc/brand/icon-512.png", "foundingDate": "2012",
            "sameAs": ["https://www.facebook.com/happylowcostofficialpage/", "https://www.instagram.com/happylowcost/", "https://twitter.com/happylowcost"],
-           "contactPoint": {"@type": "ContactPoint", "contactType": "customer support", "email": "carlos@equinoxinvestmentgroup.com", "availableLanguage": ["es", "en"]}, "publishingPrinciples": f"{SITE}/en/how-we-verify/"}
+           "contactPoint": {"@type": "ContactPoint", "contactType": "customer support", "url": "https://www.happylowcost.com/contacto/", "availableLanguage": ["es", "en"]}, "publishingPrinciples": f"{SITE}/en/how-we-verify/"}
     web = {"@type": "WebSite", "url": f"{SITE}/en/", "name": "Happy Low Cost", "inLanguage": "en", "publisher": {"@id": f"{SITE}/#org"},
            "potentialAction": {"@type": "SearchAction", "target": {"@type": "EntryPoint", "urlTemplate": f"{SITE}/en/search/?q={{search_term_string}}"}, "query-input": "required name=search_term_string"}}
     page = head('Happy Low Cost · We hunt the cheapest flights in the world', f"Verified cheap flight deals from every continent{f', from €{cheapest}' if cheapest else ''}. Error fares and flash sales, checked before we publish them.",
@@ -512,7 +512,8 @@ def main():
     si = open('sitemap_index.xml', encoding='utf-8').read()
     if 'en-sitemap.xml' not in si:
         si = si.replace('</sitemapindex>', f'\t<sitemap>\n\t\t<loc>{SITE}/en-sitemap.xml</loc>\n\t</sitemap>\n</sitemapindex>')
-        open('sitemap_index.xml', 'w', encoding='utf-8').write(si)
+    si = re.sub(rf'(<loc>{re.escape(SITE)}/en-sitemap\.xml</loc>)(\s*<lastmod>[^<]*</lastmod>)?', rf'\1\n\t\t<lastmod>{datetime.date.today().isoformat()}</lastmod>', si)
+    open('sitemap_index.xml', 'w', encoding='utf-8').write(si)
     # remove English pages of deals that have gone
     if os.path.isdir('en/deals'):
         import shutil

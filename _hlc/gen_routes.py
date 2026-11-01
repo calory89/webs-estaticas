@@ -3,7 +3,7 @@
 El texto lo escribe la función hlc-routes de Supabase con la API de Claude (créditos de Carlos);
 este script solo descarga ese contenido y monta el HTML estático. Ejecutar desde la raíz de la rama pub/happylowcost.com,
 después de gen_deals.py y gen_en.py, y antes de `HLC_ONLY=vuelos python3 _hlc/build.py`."""
-import os, sys, json, html, shutil, urllib.request
+import os, re, sys, json, html, shutil, urllib.request, datetime
 from urllib.parse import quote
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import gen_deals as G  # noqa: E402
@@ -213,6 +213,7 @@ def main():
     for sm in ('vuelos-sitemap.xml', 'flights-sitemap.xml'):
         if sm not in si:
             si = si.replace('</sitemapindex>', f'\t<sitemap>\n\t\t<loc>{SITE}/{sm}</loc>\n\t</sitemap>\n</sitemapindex>')
+        si = re.sub(rf'(<loc>{re.escape(SITE)}/{re.escape(sm)}</loc>)(\s*<lastmod>[^<]*</lastmod>)?', rf'\1\n\t\t<lastmod>{datetime.date.today().isoformat()}</lastmod>', si)
     open('sitemap_index.xml', 'w', encoding='utf-8').write(si)
     stamp = urllib.request.urlopen(urllib.request.Request(FEED.replace('action=feed', 'action=stamp'), headers={'User-Agent': 'hlc-build'}), timeout=60).read().decode()
     open('vuelos/feed.sha', 'w').write(stamp)
