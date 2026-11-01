@@ -1,0 +1,952 @@
+[
+ {
+  "slug": "trump-tower-jeddah-dar-global",
+  "name": "Trump Tower Jeddah",
+  "developer": "Dar Global (DarGlobal Holdings Real Estate; LSE: DAR), Trump name under licence",
+  "area": "Jeddah Corniche, Ash Shati",
+  "country": "Saudi Arabia",
+  "market": "Saudi Arabia",
+  "stage": "under construction",
+  "url": "https://darglobal.co.uk/trump-tower-jeddah",
+  "docs_url": "https://darglobal.co.uk/trump-tower-jeddah",
+  "permit_number": null,
+  "docs_listed": [
+   "unit types 1-4BR and 3-4BR penthouses, 70 to 365 m2",
+   "completion December 2029",
+   "brochure PDF with floor plans per type and floor",
+   "payment plan 20% on signing then 10% instalments tied to floor completion, 10% on handover (agent pages)",
+   "escrow at Emirates NBD (agent page)",
+   "service charge SAR 75 per m2 (agent page)"
+  ],
+  "note": "47-floor, 561-residence Trump-branded tower on the Jeddah Corniche by London-listed Dar Global; main works contract awarded to Arabian Construction Company in Nov 2025 after foundations were completed, completion scheduled Q4 2029. No Wafi licence number published on the pages opened (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 3917760,
+   "currency": "SAR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Agent Palmera states buyer money is held in escrow at Emirates NBD; Dar Global FY25 results report US$618.0m of restricted project escrow cash group-wide",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Agent Omnia states parent Dar Al Arkan has delivered more than 15,300 homes over about 29 years; Dar Global FY25 results list cumulative contracted sales of 3,824 units but no delivered count",
+   "units": 561,
+   "payment_plan": "20% on signing, then 10% instalments at ground floor, podium, 5th, 10th, 15th, 20th, 30th floor completion, 10% on completion; 5% fee on completion",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No Wafi or REGA licence number on Dar Global page, brochure or agent pages opened",
+   "escrow": "Palmera agent page: escrow at Emirates NBD; Dar Global FY25 RNS: restricted escrow cash US$618.0m across projects",
+   "progress": "Dar Global press release 26 Nov 2025: enabling and foundation works complete, main works awarded to ACC; FY25 results: status under construction",
+   "plans": "Dar Global brochure PDF publishes floor plans for every unit type and floor",
+   "record": "Parent Dar Al Arkan delivery figure (15,300 homes) stated by agent Omnia only",
+   "returns": "No guaranteed return language; Omnia states it does not guarantee rental yield"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "independent",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Main works contract awarded to Arabian Construction Company after enabling and foundation works",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.meed.com/arabian-construction-company-wins-trump-tower-jeddah"
+   },
+   {
+    "claim": "Project value SAR 2 billion, 47 floors",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.zawya.com/en/projects/construction/dar-global-onboards-main-contractor-for-trump-tower-jeddah-tc4xr81t"
+   },
+   {
+    "claim": "561 residences, under construction, scheduled completion Q4 2029",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.londonstockexchange.com/en/news/article/DAR/full-year-results/17497067"
+   },
+   {
+    "claim": "Developer is London-listed with audited FY25 accounts",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.londonstockexchange.com/en/news/article/DAR/full-year-results/17497067"
+   },
+   {
+    "claim": "Buyer payments held in escrow at Emirates NBD",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.palmera.realestate/saudi-arabia/property/trump-tower-jeddah/"
+   },
+   {
+    "claim": "Group holds restricted project escrow balances (US$618.0m at 31 Dec 2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.londonstockexchange.com/en/news/article/DAR/full-year-results/17497067"
+   },
+   {
+    "claim": "Wafi off-plan licence number",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://darglobal.co.uk/trump-tower-jeddah"
+   },
+   {
+    "claim": "Starting price SAR 3,917,760 for 2BR (agents quote between SAR 1.76M and 3.95M as entry prices)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.palmera.realestate/saudi-arabia/property/trump-tower-jeddah/"
+   },
+   {
+    "claim": "Freehold and open to non-Saudi buyers (zone confirmed per unit)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://royalprince.realestate/projects/trump-tower-jeddah"
+   },
+   {
+    "claim": "Trump Organization does not own, develop or sell the property; name used under licence",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://cdn.darglobal.co.uk/D_Gx_Trump_Tower_Jeddah_brochure_EN_compressed_a39fdb181c.pdf"
+   },
+   {
+    "claim": "Parent Dar Al Arkan delivered more than 15,300 homes",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.omniacapitalgroup.com/en/developments/trump-tower-jeddah"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "London, UK (listed); operations Riyadh, Saudi Arabia",
+   "developer_company": "Dar Global PLC; project owner DarGlobal Holdings Real Estate (brochure)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "London Stock Exchange (DAR), audited FY25 results published 10-11 Mar 2026",
+   "construction_start": "2025-11",
+   "handover_promised": "2029-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "3BR penthouse",
+    "4BR penthouse"
+   ],
+   "size_min_m2": 70,
+   "size_max_m2": 365,
+   "price_min": 3917760,
+   "price_max": 19357190,
+   "currency": "SAR",
+   "deposit_pct": 20,
+   "payment_plan": "20/70/10, construction instalments tied to floor completion",
+   "foreign_ownership": "freehold, non-Saudi eligibility subject to zone (agent statements)",
+   "rental_programme": null,
+   "service_charge": "SAR 75 per m2 of built-up area (agent Palmera)",
+   "brand": "Trump (licensed)",
+   "amenities": [
+    "Trump Private Club",
+    "infinity pool",
+    "kids pool",
+    "spa",
+    "fitness centre",
+    "yoga studio",
+    "restaurant and bar",
+    "concierge"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Wafi off-plan programme, Real Estate General Authority (REGA)",
+   "brochure_url": "https://cdn.darglobal.co.uk/D_Gx_Trump_Tower_Jeddah_brochure_EN_compressed_a39fdb181c.pdf"
+  },
+  "verified_score": 2,
+  "positives": [
+   "Developer is LSE-listed and reports the project in audited results",
+   "Main contractor award and completed foundations confirmed by MEED and Zawya",
+   "Payments tied to floor completion milestones",
+   "Full floor plans in the brochure"
+  ],
+  "flags": [],
+  "sources": [
+   "https://darglobal.co.uk/trump-tower-jeddah",
+   "https://cdn.darglobal.co.uk/D_Gx_Trump_Tower_Jeddah_brochure_EN_compressed_a39fdb181c.pdf",
+   "https://darglobal.co.uk/press/darglobal-appoints-acc-for-main-works-as-trump-tower-jeddah-rises",
+   "https://www.meed.com/arabian-construction-company-wins-trump-tower-jeddah",
+   "https://www.zawya.com/en/projects/construction/dar-global-onboards-main-contractor-for-trump-tower-jeddah-tc4xr81t",
+   "https://www.londonstockexchange.com/en/news/article/DAR/full-year-results/17497067",
+   "https://www.palmera.realestate/saudi-arabia/property/trump-tower-jeddah/",
+   "https://royalprince.realestate/projects/trump-tower-jeddah",
+   "https://www.omniacapitalgroup.com/en/developments/trump-tower-jeddah",
+   "https://jiwak.com/properties/863/show"
+  ]
+ },
+ {
+  "slug": "dyar-al-haram-arabian-dyar",
+  "name": "Dyar Al Haram (Phase 1 towers and Phase 2)",
+  "developer": "Arabian Dyar Real Estate Development Company",
+  "area": "Masar Destination, Makkah",
+  "country": "Saudi Arabia",
+  "market": "Saudi Arabia",
+  "stage": "under construction",
+  "url": "https://arabiandyar.re-platform.io/en/projects/dyar-alharam/",
+  "docs_url": "https://arabiandyar.re-platform.io/en/projects/dyar-alharam/",
+  "permit_number": null,
+  "docs_listed": [
+   "layouts A1 to A5, B1 to B3 and penthouse with sizes",
+   "starting price USD 100,000 for 1BR",
+   "delivery July 2027 / mid 2027",
+   "brochure with floor plans and 10-year structural warranty",
+   "one construction photo under 'Construction Dynamics' (undated)"
+  ],
+  "note": "Residential towers 550 m from the Grand Mosque in Masar Makkah, an area REGA lists for non-Saudi (Muslim) ownership; phase 2 (three towers, about 1,000 units) launched Nov 2025 and the developer lists delivery mid 2027. No Wafi licence number, escrow details or progress figure published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 100000,
+   "currency": "USD",
+   "title": "freehold (Muslim non-Saudis only in Makkah)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 4000,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No Wafi licence number on developer page or brochure",
+   "escrow": "Nothing published",
+   "progress": "Developer page shows status 'Under Construction' and a single undated photo; no figure",
+   "plans": "Developer page layouts A1 to penthouse and brochure floor plans (72 to 242 m2)",
+   "record": "Zawya press release says Arabian Dyar will be the first developer to deliver more than 400 units in Masar by 2026, i.e. nothing delivered yet",
+   "returns": "No guaranteed return language seen"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Phase 2 of three towers and about 1,000 units launched Nov 2025, project of about 4,000 units in 13 towers completing 2032",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.thenationalnews.com/business/property/2025/11/18/saudi-developer-arabian-dyar-seeks-foreign-buyers-for-next-phase-of-26bn-makkah-project/"
+   },
+   {
+    "claim": "Masar is a REGA-designated zone where non-Saudis may own (Muslims only in Makkah)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.agbi.com/real-estate/2026/06/saudi-arabia-opens-up-property-market-to-foreigners/"
+   },
+   {
+    "claim": "Starting price USD 100,000 for a 72.6 m2 1BR",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.thenationalnews.com/business/property/2025/11/18/saudi-developer-arabian-dyar-seeks-foreign-buyers-for-next-phase-of-26bn-makkah-project/"
+   },
+   {
+    "claim": "Delivery July 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://arabiandyar.re-platform.io/en/projects/dyar-alharam/"
+   },
+   {
+    "claim": "Two towers being finalised for completion at end of 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://beyondmakkah.com/news/makkah-biggest-real-estate-projects"
+   },
+   {
+    "claim": "Contractor ACUD building the towers, construction ongoing since 2022",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://acud.sa/projects/dyar-alharam-towers/"
+   },
+   {
+    "claim": "Phase 1 of 400 units almost sold out",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thenationalnews.com/business/property/2025/11/18/saudi-developer-arabian-dyar-seeks-foreign-buyers-for-next-phase-of-26bn-makkah-project/"
+   },
+   {
+    "claim": "Wafi off-plan licence and escrow account",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://arabiandyar.re-platform.io/en/projects/dyar-alharam/"
+   },
+   {
+    "claim": "10-year warranty on structure and insulation",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://aldyar.sa/wp-content/uploads/2025/03/Dyar-Alharam-Tower-2-Brochure-En-March.pdf"
+   },
+   {
+    "claim": "Developer has delivered completed units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.zawya.com/en/press-release/companies-news/arabian-dyar-unveils-dyar-al-haram-phase-2-qew5e1cd"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Saudi Arabia",
+   "developer_company": "Arabian Dyar Real Estate Development Company",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2022",
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR penthouse"
+   ],
+   "size_min_m2": 71.4,
+   "size_max_m2": 241.6,
+   "price_min": 100000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Makkah ownership limited to Saudi companies and Muslim individuals (REGA rules as reported by AGBI)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "parking",
+    "furniture",
+    "gym",
+    "smart home",
+    "cafes",
+    "pool",
+    "kids zone"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Wafi off-plan programme, REGA",
+   "brochure_url": "https://aldyar.sa/wp-content/uploads/2025/03/Dyar-Alharam-Tower-2-Brochure-En-March.pdf"
+  },
+  "verified_score": 1,
+  "positives": [
+   "Within a REGA-listed foreign-ownership zone",
+   "Contractor and independent press confirm towers under construction",
+   "Floor plans and unit sizes published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://arabiandyar.re-platform.io/en/projects/dyar-alharam/",
+   "https://aldyar.sa/wp-content/uploads/2025/03/Dyar-Alharam-Tower-2-Brochure-En-March.pdf",
+   "https://www.thenationalnews.com/business/property/2025/11/18/saudi-developer-arabian-dyar-seeks-foreign-buyers-for-next-phase-of-26bn-makkah-project/",
+   "https://www.zawya.com/en/press-release/companies-news/arabian-dyar-unveils-dyar-al-haram-phase-2-qew5e1cd",
+   "https://acud.sa/projects/dyar-alharam-towers/",
+   "https://acud.sa/projects/dyar-alharam-2/",
+   "https://beyondmakkah.com/news/makkah-biggest-real-estate-projects",
+   "https://www.agbi.com/real-estate/2026/06/saudi-arabia-opens-up-property-market-to-foreigners/"
+  ]
+ },
+ {
+  "slug": "manazel-alhadawi-diriyah-company",
+  "name": "Manazel AlHadawi",
+  "developer": "Diriyah Company (PIF-owned)",
+  "area": "Media and Innovation District, Diriyah Gate, Riyadh",
+  "country": "Saudi Arabia",
+  "market": "Saudi Arabia",
+  "stage": "off-plan",
+  "url": "https://www.diriyahcompany.sa/en/diriyah-living/our-residences/alhadawi",
+  "docs_url": "https://www.diriyahcompany.sa/en/diriyah-living/our-residences/alhadawi",
+  "permit_number": null,
+  "docs_listed": [
+   "unit sizes studio 59 m2 to 4BR 290 m2 and penthouses",
+   "starting price below SAR 1.7M (launch from SAR 1.6M)",
+   "brochure with dimensioned floor plans",
+   "service charge applies (amount not stated)",
+   "completion Q4 2028, handover Q1 2029 (marketing agent page)"
+  ],
+  "note": "First residential release of 239 low-rise Najdi-style homes in Diriyah's Media and Innovation District, launched off-plan at Cityscape Nov 2025 with BEC Arabia awarded the plots contract; Diriyah Gate is a REGA-designated foreign ownership zone. No Wafi licence number, escrow or progress figure published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1600000,
+   "currency": "SAR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 239,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No Wafi licence number on Diriyah Company page or brochure; brochure states it was produced prior to planning approval and start of construction",
+   "escrow": "Nothing published",
+   "progress": "Only contract award (BEC Arabia) reported; no progress figure or dated updates",
+   "plans": "Brochure (hosted by agent fana.sa) with dimensioned plans for studio to penthouse; sizes on developer FAQ",
+   "record": "Diriyah's first fully in-house residential project; AGBI reports Ritz-Carlton residences sold out with move-in expected in 2026, no completed residential handover verified",
+   "returns": "No guaranteed returns language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "239 homes launched off-plan at Cityscape Global 2025, from SAR 1.6M",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.spa.gov.sa/en/N2446461"
+   },
+   {
+    "claim": "BEC Arabia awarded the contract for the Manazel AlHadawi plots",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.argaam.com/en/article/articledetail/id/1859625"
+   },
+   {
+    "claim": "Project area about 76,000 m2, Diriyah Company fully responsible for development and construction",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.argaam.com/en/article/articledetail/id/1859625"
+   },
+   {
+    "claim": "Diriyah Gate is a designated zone for non-Saudi ownership",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.agbi.com/real-estate/2026/06/saudi-arabia-opens-up-property-market-to-foreigners/"
+   },
+   {
+    "claim": "Completion Q4 2028, handover Q1 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://realestatemarketing.wgroupksa.com/al-hadawi-project/"
+   },
+   {
+    "claim": "Total of 479 units (agent) versus 239 units (developer)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://www.spa.gov.sa/en/N2446461"
+   },
+   {
+    "claim": "Wafi off-plan licence and escrow account",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.diriyahcompany.sa/en/diriyah-living/our-residences/alhadawi"
+   },
+   {
+    "claim": "Diriyah residential sales above US$4bn and Ritz-Carlton residences 140 units sold",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.agbi.com/real-estate/2026/01/diriyah-claims-4bn-home-sales-ahead-of-property-law-change/"
+   },
+   {
+    "claim": "Construction started",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.oftmw.com/projects/manazel-al-hadawi/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Riyadh, Saudi Arabia",
+   "developer_company": "Diriyah Company (owned by the Public Investment Fund)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2029-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR duplex",
+    "3BR penthouse",
+    "4BR penthouse"
+   ],
+   "size_min_m2": 58,
+   "size_max_m2": 290,
+   "price_min": 1600000,
+   "price_max": null,
+   "currency": "SAR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold in REGA-designated Diriyah Gate zone",
+   "rental_programme": null,
+   "service_charge": "applies, amount not published",
+   "brand": null,
+   "amenities": [
+    "indoor and outdoor lounges",
+    "swimming pools",
+    "basement parking",
+    "wellness area",
+    "gym",
+    "retail and F&B",
+    "Wadi Hanifah views"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Wafi off-plan programme, REGA",
+   "brochure_url": "https://fana.sa/wp-content/uploads/2026/02/AL_HADAWI.pdf"
+  },
+  "verified_score": 0,
+  "positives": [
+   "Government-owned master developer",
+   "Launch, price and contractor confirmed by Saudi Press Agency and Argaam",
+   "Detailed floor plans with room dimensions"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.diriyahcompany.sa/en/diriyah-living/our-residences/alhadawi",
+   "https://www.diriyahcompany.sa/en/news/diriyah-company-launches-239-premium-homes-in-new-manazel-alHadawi-residential-area-alongside-major-contract-awards-worth-$1.5-billion-(sar-5.7-billion)",
+   "https://www.spa.gov.sa/en/N2446461",
+   "https://www.argaam.com/en/article/articledetail/id/1859625",
+   "https://fana.sa/wp-content/uploads/2026/02/AL_HADAWI.pdf",
+   "https://realestatemarketing.wgroupksa.com/al-hadawi-project/",
+   "https://www.oftmw.com/projects/manazel-al-hadawi/",
+   "https://www.agbi.com/real-estate/2026/01/diriyah-claims-4bn-home-sales-ahead-of-property-law-change/",
+   "https://www.agbi.com/real-estate/2026/06/saudi-arabia-opens-up-property-market-to-foreigners/"
+  ]
+ },
+ {
+  "slug": "four-seasons-private-residences-shura-island-red-sea-global",
+  "name": "Four Seasons Private Residences Red Sea at Shura Island",
+  "developer": "Red Sea Global (PIF-owned), with Four Seasons",
+  "area": "Shura Island, The Red Sea destination",
+  "country": "Saudi Arabia",
+  "market": "Saudi Arabia",
+  "stage": "under construction",
+  "url": "https://www.fourseasons.com/residences/private_residences/redseashuraisland/",
+  "docs_url": "https://press.fourseasons.com/news-releases/2025/new-four-seasons-private-residences-red-sea-shura-island/",
+  "permit_number": null,
+  "docs_listed": [
+   "75 villas: 43 Dune Villas and 32 Waterside Villas, 3 to 5BR, 414 to 534 m2",
+   "opening date 2026 (Four Seasons page)",
+   "handover at end of 2025 (RSG launch release Jan 2025)",
+   "architect Foster + Partners, interiors Goddard Littlefair",
+   "over half of residences secured (Oct 2025)"
+  ],
+  "note": "75 Four Seasons-branded villas next to Shura Links golf course on Red Sea Global's main island; RSG said in Jan 2025 Shura homes would be ready for handover at end of 2025, while Four Seasons now lists opening in 2026. No permit, escrow, progress figure, plans or prices published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "SAR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "RSG release (Apr 2026): SLS The Red Sea Residences on Shura Island welcomed first homeowners, the first completed residential community on the island; RSG reports 11 hotels open at The Red Sea (May 2026)",
+   "units": 75,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence number on Four Seasons or RSG pages",
+   "escrow": "Nothing published",
+   "progress": "No figure; only an opening year (2026)",
+   "plans": "Sizes only, no floor plans on the pages opened",
+   "record": "RSG delivered SLS The Red Sea Residences (Apr 2026) and opened Four Seasons Resort (May 2026)",
+   "returns": "No guaranteed language on developer pages; one sales agent (opr.ae) advertises 10-12% ROI potential for the separate Resort Residences"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "75 Private Residences (43 Dune, 32 Waterside), 414 to 534 m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://press.fourseasons.com/news-releases/2025/new-four-seasons-private-residences-red-sea-shura-island/"
+   },
+   {
+    "claim": "Shura residences ready for handover at end of 2025",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.fourseasons.com/residences/private_residences/redseashuraisland/"
+   },
+   {
+    "claim": "Residences open to international buyers as well as Saudis",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.arabnews.com/node/2590090/%7B%7B"
+   },
+   {
+    "claim": "The Red Sea is within REGA's designated foreign ownership areas (giga-projects)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.agbi.com/real-estate/2026/06/saudi-arabia-opens-up-property-market-to-foreigners/"
+   },
+   {
+    "claim": "RSG had SAR 1.8bn of residential sales, foreigners about 20% of transactions",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.agbi.com/real-estate/2026/06/saudi-arabia-opens-up-property-market-to-foreigners/"
+   },
+   {
+    "claim": "Four Seasons Resort on Shura opened to guests 20 May 2026, JV with Kingdom Holding, Riyad Bank SAR 2bn debt",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://redseaglobal.com/en/media-center/news/first-guests-arrive-at-four-seasons-resort-and-residences-red-sea/"
+   },
+   {
+    "claim": "SLS residences on Shura completed and handed over",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://redseaglobal.com/en/media-center/news/shura-island-residences-welcomes-first-homeowners1/"
+   },
+   {
+    "claim": "Over half of residences secured (Oct 2025)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://press.fourseasons.com/news-releases/2025/new-four-seasons-private-residences-red-sea-shura-island/"
+   },
+   {
+    "claim": "Wafi licence or escrow for the villas",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.fourseasons.com/residences/private_residences/redseashuraisland/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Riyadh, Saudi Arabia",
+   "developer_company": "Red Sea Global (Public Investment Fund company)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026",
+   "original_handover": "2025-Q4 (RSG, Jan 2025)",
+   "delay_months": null,
+   "unit_types": [
+    "3BR villa",
+    "4BR villa",
+    "5BR villa"
+   ],
+   "size_min_m2": 414,
+   "size_max_m2": 534,
+   "price_min": null,
+   "price_max": null,
+   "currency": "SAR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold, open to international buyers per RSG CFO",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Four Seasons Private Residences",
+   "amenities": [
+    "Shura Links 18-hole golf",
+    "residents-only clubhouse",
+    "private infinity pools",
+    "fitness centre",
+    "beach",
+    "wellness facilities"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Wafi off-plan programme, REGA",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "Government-owned master developer that has delivered a neighbouring residential community",
+   "Destination infrastructure (airport, resorts) already operating",
+   "Open to foreign buyers"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.fourseasons.com/residences/private_residences/redseashuraisland/",
+   "https://press.fourseasons.com/news-releases/2025/new-four-seasons-private-residences-red-sea-shura-island/",
+   "https://redseaglobal.com/en/media-center/news/red-sea-global-introduces-red-sea-residences/",
+   "https://redseaglobal.com/en/media-center/news/shura-island-residences-welcomes-first-homeowners1/",
+   "https://redseaglobal.com/en/media-center/news/first-guests-arrive-at-four-seasons-resort-and-residences-red-sea/",
+   "https://www.arabnews.com/node/2590090/%7B%7B",
+   "https://www.agbi.com/real-estate/2026/06/saudi-arabia-opens-up-property-market-to-foreigners/",
+   "https://opr.ae/projects/four-seasons-resort-residences-shura-island-saudi-arabia"
+  ]
+ },
+ {
+  "slug": "al-yazan-phase-1a-va-group",
+  "name": "Al Yazan (Phase 1A)",
+  "developer": "VA Group (seller: Muttrah Pier LLC), in partnership with OMRAN Group",
+  "area": "Muttrah waterfront, Port Sultan Qaboos, Muscat",
+  "country": "Oman",
+  "market": "Oman",
+  "stage": "off-plan",
+  "url": "https://vagrp.com/projects/al-yazan/",
+  "docs_url": "https://vagrp.com/projects/al-yazan/",
+  "permit_number": null,
+  "docs_listed": [
+   "169 apartments in two G+14 towers, studio to 4BR penthouse and garden duplexes",
+   "22 floor plan layouts",
+   "three payment plans (20/50/30 milestone, 50/50, monthly 2%)",
+   "estimated completion H1 2029",
+   "fact sheet naming Muttrah Pier LLC as developer and seller",
+   "project bank account 'Muttrah Pier Al Yazan Phase 1A' at Sohar International Bank",
+   "resale after 40% paid"
+  ],
+  "note": "First release of 169 freehold apartments on Muttrah's waterfront, launched to brokers on 1 Oct 2026 from OMR 66,900 with completion estimated H1 2029; the Ministry of Heritage and Tourism signed the ITC agreement for the Port Sultan Qaboos Waterfront with OMRAN on 5 Oct 2026, though official statements do not name Al Yazan or VA Group (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 66900,
+   "currency": "OMR",
+   "title": "freehold (ITC)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-H1",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Fact sheet and payment plan name a project bank account 'Muttrah Pier Al Yazan Phase 1A' at Sohar International Bank SAOG; not explicitly labelled escrow",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 169,
+   "payment_plan": "20% on booking, 10% at 6 months, 10% podium, 10% roof slab, 10% facade, 10% finishes, 30% on handover (two other options)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Developer claims ITC status; no licence or approval number published",
+   "escrow": "Project-named bank account at Sohar International in the fact sheet and payment plan PDFs",
+   "progress": "Just launched; no construction updates",
+   "plans": "Floor plans for all 22 layouts on the developer page (per Al Tareq summary) and sizes in fact sheet",
+   "record": "No completed VA Group projects named on pages opened",
+   "returns": "Developer page cites market yields of 6-8% for Oman generally; agent Tamkeen shows 7.5-8.8% indicative gross yield marked 'not a guarantee'"
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "developer",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Al Yazan has ITC status allowing foreign freehold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vagrp.com/projects/al-yazan/"
+   },
+   {
+    "claim": "Port Sultan Qaboos Waterfront received an ITC agreement from the Ministry of Heritage and Tourism (5 Oct 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.omanobserver.om/article/1197278/oman/tourism/itc-license-agreement-signed-for-sultan-qaboos-port-waterfront-project"
+   },
+   {
+    "claim": "Al Yazan is part of the Port Sultan Qaboos Waterfront masterplan with OMRAN",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vagrp.com/news/al-yazan-national-museum-real-estate-partners/"
+   },
+   {
+    "claim": "169 units in Phase 1A, prices from OMR 66,900",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://jiwak.com/files/properties/5407dfd8024c569bbb5f68f243abadbca6ba17e4.pdf"
+   },
+   {
+    "claim": "Starting price from OMR 110,000 (one agent) versus OMR 66,900 (developer)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://aqaroestates.com/communities/al-yazan-muttrah-freehold-itc-apartments/"
+   },
+   {
+    "claim": "Studio size 45 m2 (agent, without balcony) versus 51 m2 (with balcony)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://jiwak.com/files/properties/5407dfd8024c569bbb5f68f243abadbca6ba17e4.pdf"
+   },
+   {
+    "claim": "Buyer payments go to a dedicated project account at Sohar International Bank",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://jiwak.com/files/properties/0b87827b4a3bdf3d0d6f968960a909351cb82fd4.pdf"
+   },
+   {
+    "claim": "Oman law requires off-plan payments into a project escrow account (Royal Decree 30/2018, Real Estate Regulation Law RD 79/2025)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.palmera.realestate/oman/guides/aida-yiti/"
+   },
+   {
+    "claim": "Estimated completion H1 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vagrp.com/projects/al-yazan/"
+   },
+   {
+    "claim": "Developer has completed projects elsewhere",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.omniacapitalgroup.com/en/developers/va-group"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": "Muttrah Pier LLC, part of VA Group (fact sheet)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2029-H1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "3BR garden duplex",
+    "4BR penthouse"
+   ],
+   "size_min_m2": 51,
+   "size_max_m2": 334,
+   "price_min": 66900,
+   "price_max": null,
+   "currency": "OMR",
+   "deposit_pct": 20,
+   "payment_plan": "20/50/30 milestone, 50/50 or 20% plus 27 monthly 2% and 26% at handover",
+   "foreign_ownership": "freehold for all nationalities if within ITC (developer claim)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "podium pool",
+    "padel",
+    "kids play area",
+    "yoga and wellness zone",
+    "barbecue",
+    "coworking",
+    "20,000 m2 park",
+    "400 m promenade"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ministry of Heritage and Tourism (ITC); Ministry of Housing and Urban Planning (developer licence and escrow)",
+   "brochure_url": "https://jiwak.com/files/properties/5407dfd8024c569bbb5f68f243abadbca6ba17e4.pdf"
+  },
+  "verified_score": 0,
+  "positives": [
+   "Construction-milestone payment plan",
+   "Named project bank account published",
+   "Masterplan ITC agreement confirmed by Oman Observer"
+  ],
+  "flags": [],
+  "sources": [
+   "https://vagrp.com/projects/al-yazan/",
+   "https://vagrp.com/news/al-yazan-national-museum-real-estate-partners/",
+   "https://jiwak.com/files/properties/5407dfd8024c569bbb5f68f243abadbca6ba17e4.pdf",
+   "https://jiwak.com/files/properties/0b87827b4a3bdf3d0d6f968960a909351cb82fd4.pdf",
+   "https://altareqgroup.com/en/knowledge/al-yazan-muttrah-2026",
+   "https://www.omanobserver.om/article/1197278/oman/tourism/itc-license-agreement-signed-for-sultan-qaboos-port-waterfront-project",
+   "https://www.zawya.com/en/projects/agreement-signed-to-transform-port-sultan-qaboos-waterfront-1532475",
+   "https://tamkeenhomes.com/freehold-living/al-yazan/",
+   "https://aqaroestates.com/communities/al-yazan-muttrah-freehold-itc-apartments/",
+   "https://www.omniacapitalgroup.com/en/developers/va-group",
+   "https://muscatgates.com/muttrah-waterfront-port-sultan-qaboos-project/"
+  ]
+ }
+]

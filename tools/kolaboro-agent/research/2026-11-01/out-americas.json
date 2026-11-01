@@ -479,7 +479,7 @@
     "claim": "Construction authorizations can proceed (court moratorium on felling remained in force May 2026)",
     "status": "contradicted",
     "by": "independent",
-    "source": "https://ticotimes.net/2026/05/23/costa-rica-court-keeps-papagayo-hotel-development-restrictions-in-place"
+    "source": "https://ticotimes.net/?p=194965"
    },
    {
     "claim": "Land held under the state Papagayo tourism concession administered by ICT",
@@ -601,7 +601,7 @@
    "https://ticotimes.net/2026/04/22/costa-rica-developers-challenge-court-ruling-halting-tourism-project-in-papagayo",
    "https://ticotimes.net/2026/06/20/enormous-papagayo-resort-collides-with-costa-ricas-forest-law",
    "https://ticotimes.net/2025/06/18/bahia-papagayo-project-clears-hurdle-as-court-rejects-environmental-appeal",
-   "https://ticotimes.net/2026/05/23/costa-rica-court-keeps-papagayo-hotel-development-restrictions-in-place",
+   "https://ticotimes.net/?p=194965",
    "https://ticotimes.net/2025/08/09/costa-rica-investigates-bahia-papagayo-over-illegal-logging-allegations"
   ]
  },
@@ -808,10 +808,10 @@
    "maintenance estimate USD 2.50-3 per m2 per month (agent)",
    "CONFOTUR status claimed, no resolution number"
   ],
-  "note": "Condo-hotel of two towers (about 192-196 units) by MORPH on the Las Iguanas course, under construction since about May 2025 with delivery listed for August 2027; agents list 2BR units of 85.5 m2 at USD 440,000. Developer projects 8-11% ROI as illustrative only; a promotional magazine article cites a projected 19.19% cash-on-cash return. (checked 31 Oct 2026)",
+  "note": "196-residence condo-hotel by MORPH on the Las Iguanas course, under construction with delivery scheduled August 2027; developer prices 2BR from USD 475,000 (agents list one at USD 440,000), cites 89% sold and publishes dated progress photos. Projected 8-11% ROI is labelled illustrative, not guaranteed; a promotional magazine article cites a projected 19.19% cash-on-cash return. (checked 31 Oct 2026)",
   "added": "2026-10-31",
   "seed": {
-   "price": 440000,
+   "price": 475000,
    "currency": "USD",
    "title": "freehold",
    "lease_base": null,
@@ -828,7 +828,7 @@
    "developer_delivered": "Gesproin Group: 8 completed projects including Garden Los Corales (El Caribe); Golf Garden in Cocotal; presence since 2017 (inmobiliario.do)",
    "units": 196,
    "payment_plan": "USD 5,000 reservation, 25% at contract, 45% monthly or quarterly during construction, 30% before delivery",
-   "price_per_m2": 5145
+   "price_per_m2": 4525
   },
   "disclosure": {
    "permit": false,
@@ -843,7 +843,7 @@
   "evidence": {
    "permit": "CONFOTUR qualification claimed by developer and a promotional article; no resolution or construction licence number published",
    "escrow": "No escrow, fideicomiso or bank guarantee mentioned on agent pages; developer site blocked on re-check",
-   "progress": "Developer site publishes dated work-progress photography (recorded on prior check; site could not be reopened 31 Oct 2026); agents list 'En construccion', start May 2025",
+   "progress": "Developer FAQ (31 Oct 2026): construction already under way and dated work-progress photography published; agents list 'En construccion', start May 2025; no %",
    "plans": "Floor-plan library on developer site; unit m2 on agent listings",
    "record": "El Caribe reports Gesproin completed 8 projects including Garden Los Corales and Golf Garden (Cocotal); inmobiliario.do (14 Oct 2026) says active since 2017",
    "returns": "Developer: 8-11% projected ROI labelled illustrative, not guaranteed. Canadian Real Estate Magazine article (Apr 2025, promotional) cites projected 19.19% cash-on-cash; no guarantee wording found"
@@ -923,6 +923,12 @@
     "status": "unverified",
     "by": "none",
     "source": "https://www.drlistings.com/fr/property/crystal-garden-sea-and-golf-2-and-3-br-condos-and-penthouses-cap-cana-las-iguanas-12732/"
+   },
+   {
+    "claim": "2BR from USD 475,000, penthouse from 700,000, 3BR from 740,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://crystalgardencondos.com/"
    }
   ],
   "facts": {
@@ -942,9 +948,9 @@
     "penthouse"
    ],
    "size_min_m2": 85.52,
-   "size_max_m2": null,
+   "size_max_m2": 208,
    "price_min": 440000,
-   "price_max": null,
+   "price_max": 740000,
    "currency": "USD",
    "deposit_pct": 25,
    "payment_plan": "USD 5,000 reservation, 25% at contract, 45% during construction, 30% before delivery",
@@ -1167,6 +1173,1042 @@
    "https://www.newswire.com/news/punta-pacifica-realty-launches-sales-of-vervana-new-nature-resort-in-22388707",
    "https://www.casasolution.com/developments/vervana-beach-condos",
    "https://www.remax-centralamerica.com/panama/pedasi/oceanfront-003244131110"
+  ]
+ },
+ {
+  "slug": "amalfi-tower-cartagena",
+  "name": "Amalfi Tower",
+  "developer": "Developer not named on site (sales contact via URBA Colombia)",
+  "stage": "under construction",
+  "area": "Bocagrande, Cartagena",
+  "country": "Colombia",
+  "market": "Colombia",
+  "url": "https://amalfitower.com/",
+  "docs_url": "https://amalfitower.com/faq/",
+  "permit_number": null,
+  "docs_listed": [
+   "typologies with m2 and COP 'from' prices (56.4 m2 single-level, 110.6 m2 duplex, 313.5 m2 penthouse)",
+   "avance de obra page: superstructure at floor 6, tower crane and placing boom installed",
+   "bimonthly progress reports with photos and video to buyers",
+   "Alianza Fiduciaria named for buyer payments",
+   "payment plan 5% + 26 monthly instalments to 40%, 60% Jan 2028",
+   "Urbacolombia company book PDF with delivered projects",
+   "licences 'available on request', no number"
+  ],
+  "note": "30-storey, 122-unit beachfront tower in Bocagrande, under construction since 2024 with the superstructure at floor 6 and delivery estimated 2028 (La Haus: February 2028); one-bed units of 56.4 m2 from COP 1,163,043,600. Buyer payments go through Alianza Fiduciaria; constructor Urbacolombia says it joined as partner in 2024 alongside another promoter. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1163043600,
+   "currency": "COP",
+   "title": "freehold (propiedad horizontal)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "Buyers are linked to Alianza Fiduciaria before paying the 5% reservation and instalments; a sponsored 2024 radio piece says the project reached break-even and moved to full real-estate fiducia financed by Banco de Occidente",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Urbacolombia (constructor and partner): Torre Baruka, Infinity Sky Club, Bora Hogar Plus (Bucaramanga/Giron) finished; claims 2,000+ homes delivered since 2013, per company book on amalfitower.com",
+   "units": 122,
+   "payment_plan": "5% reservation, 26 interest-free monthly instalments to 40%, 60% in Jan 2028 by mortgage or own funds",
+   "price_per_m2": 20621340
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "FAQ says all construction, environmental and municipal licences are in place, copies on request; no licence or curaduria number published",
+   "escrow": "Alianza Fiduciaria named on site and on La Haus listing",
+   "progress": "Avance de obra page: superstructure at floor 6, crane and placing boom installed early this year; no % or dated photo log public",
+   "plans": "Typologies with area, bedrooms and features; no floor-plan drawings",
+   "record": "Urbacolombia company book lists finished projects (Torre Baruka, Infinity Sky Club, Bora Hogar Plus, Amaranthus) and 2,000+ homes delivered",
+   "returns": "Tourist construction licence claimed and short stays allowed per future RPH; no yield figures or guarantee"
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "developer",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "All construction licences and environmental permits in force",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://amalfitower.com/faq/"
+   },
+   {
+    "claim": "Buyer payments handled by Alianza Fiduciaria",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.lahaus.com/pd/cartagena/amalfi-tower"
+   },
+   {
+    "claim": "Break-even reached and full fiducia with Banco de Occidente financing (sponsored radio content)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.wradio.com.co/2024/09/30/amalfi-tower-tu-apartamento-frente-al-mar/"
+   },
+   {
+    "claim": "Construction began 2024, superstructure at floor 6",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://amalfitower.com/avance-de-obra/"
+   },
+   {
+    "claim": "Delivery estimated 2028 (La Haus: Feb 2028)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.lahaus.com/pd/cartagena/amalfi-tower"
+   },
+   {
+    "claim": "122 units on 30 floors",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://amalfitower.com/faq/"
+   },
+   {
+    "claim": "56.4 m2 unit from COP 1,163,043,600",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://amalfitower.com/apartamento/"
+   },
+   {
+    "claim": "Urbacolombia delivered 2,000+ homes since 2013",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.amalfitower.com/docs/Book-URBACOLOMBIA-Amalfi-Tower-2026.pdf"
+   },
+   {
+    "claim": "Developer (promoter) entity named",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://amalfitower.com/faq/"
+   },
+   {
+    "claim": "Title study reviewed, plot free of liens (portal check)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.lahaus.com/pd/cartagena/amalfi-tower"
+   },
+   {
+    "claim": "Tourist licence allows short-term rental",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://amalfitower.com/faq/"
+   },
+   {
+    "claim": "Height 173 m (sponsored radio piece)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.wradio.com.co/2024/09/30/amalfi-tower-tu-apartamento-frente-al-mar/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2012,
+   "developer_hq": "Bucaramanga, Colombia (Urbacolombia)",
+   "developer_company": "Constructora Urbacolombia SAS (partner and constructor); promoter not named",
+   "developer_projects_delivered": 4,
+   "developer_units_delivered": 2000,
+   "listed_or_audited": null,
+   "construction_start": "2024",
+   "handover_promised": "2028-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR duplex",
+    "3BR penthouse"
+   ],
+   "size_min_m2": 56.4,
+   "size_max_m2": 313.5,
+   "price_min": 1163043600,
+   "price_max": null,
+   "currency": "COP",
+   "deposit_pct": 5,
+   "payment_plan": "5% reservation, instalments to 40%, 60% at delivery",
+   "foreign_ownership": "Direct ownership open to foreigners; USD pricing and digital purchase offered",
+   "rental_programme": "Short-stay rental allowed subject to future RPH; no figures",
+   "service_charge": "About COP 8,000 per m2 per month (La Haus)",
+   "brand": null,
+   "amenities": [
+    "infinity pool floor 7",
+    "gym floor 13",
+    "sauna and steam",
+    "games room",
+    "TV lounge",
+    "24/7 concierge",
+    "biometric access",
+    "valet"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Curaduria Urbana de Cartagena (licencia de construccion)",
+   "brochure_url": "https://www.amalfitower.com/docs/Book-URBACOLOMBIA-Amalfi-Tower-2026.pdf"
+  },
+  "positives": [
+   "Named fiduciary (Alianza Fiduciaria) for buyer payments",
+   "Construction progress stated by floor with bimonthly buyer reports",
+   "Constructor names finished projects",
+   "10-year structural warranty under Colombian law stated",
+   "No guaranteed returns"
+  ],
+  "flags": [],
+  "sources": [
+   "https://amalfitower.com/faq/",
+   "https://amalfitower.com/",
+   "https://amalfitower.com/avance-de-obra/",
+   "https://amalfitower.com/apartamento/",
+   "https://www.amalfitower.com/docs/Book-URBACOLOMBIA-Amalfi-Tower-2026.pdf",
+   "https://www.lahaus.com/pd/cartagena/amalfi-tower",
+   "https://www.wradio.com.co/2024/09/30/amalfi-tower-tu-apartamento-frente-al-mar/",
+   "https://proyectos.habitarcaribe.com/proyectos/amalfi-tower"
+  ]
+ },
+ {
+  "slug": "vista-ponta-negra-mirantes",
+  "name": "Vista Ponta Negra",
+  "developer": "Mirantes",
+  "stage": "under construction",
+  "area": "Ponta Negra / Capim Macio, Natal",
+  "country": "Brazil",
+  "market": "Brazil",
+  "url": "https://www.lp.soumirantes.com.br/",
+  "docs_url": "https://soumirantes.com.br/empreendimentos/vistapontanegra",
+  "permit_number": "Registro de incorporacao Matricula 70566 R-02, 7o Oficio de Notas e Registro Imobiliario de Natal",
+  "docs_listed": [
+   "registro de incorporacao number and SPE name (book footer)",
+   "46% of works executed (landing page)",
+   "Tower A delivery Dec 2026, Tower B Jun 2028",
+   "5 floor-plan types 58 to 78.85 m2 (digital book)",
+   "up to 60 instalments",
+   "projected rent up to R$56k net a year",
+   "'valorizacao garantida' wording"
+  ],
+  "note": "Two towers (Leme with a 36th-floor rooftop club, and Mare) a minute from Av. Roberto Freire; developer states 46% of works done, Tower A delivery by Dec 2026 and Tower B by Jun 2028, with units of 58-78.85 m2 offered by agents from R$399,900. Incorporation is registered (Matricula 70566 R-02) but marketing promises 'valorizacao garantida' and up to R$56k net rent a year. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 399900,
+   "currency": "BRL",
+   "title": "freehold (condominio)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": true,
+   "permit_number": "Matricula 70566 R-02 (registro de incorporacao, 7o Oficio Natal)",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 46,
+   "developer_delivered": "Mirantes: 14 years, 4,000+ apartments delivered (landing page); the digital book says 3,000+ delivered on time; developments in Natal and Joao Pessoa",
+   "units": null,
+   "payment_plan": "Up to 60 instalments; Caixa associative financing signings began Oct 2025",
+   "price_per_m2": 6000
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Digital book footer: ML6 Empreendimentos Imobiliarios SPE Ltda, registro de incorporacao Matricula 70566 R-02 at the 7th registry office of Natal (not checked in the registry itself)",
+   "escrow": "No patrimonio de afetacao or escrow stated; Caixa financing signings reported Oct 2025",
+   "progress": "Landing page: 46% of works executed; one agent says Tower Leme structure already built",
+   "plans": "Digital book shows 5 plan types (58 to 78.85 m2) per tower",
+   "record": "4,000+ apartments delivered (landing) vs 3,000+ (book); Caixa rating AA claimed",
+   "returns": "'Valorizacao garantida' and projection of up to R$56k net rent a year"
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Incorporation registered under Matricula 70566 R-02",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://soumirantes.com.br/api/wp-content/uploads/2025/03/Book_Digital_Vista.pdf"
+   },
+   {
+    "claim": "46% of works executed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.lp.soumirantes.com.br/"
+   },
+   {
+    "claim": "Tower A delivery by Dec 2026 (portal Apto shows Dec 2027)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://apto.vc/br/rn/natal/ponta-negra/vista-ponta-negra"
+   },
+   {
+    "claim": "Tower B delivery June 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.lp.soumirantes.com.br/"
+   },
+   {
+    "claim": "Caixa financing signings began 16 Oct 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://pordentrodorn.com.br/2025/10/16/vista-ponta-negra-se-destaca/"
+   },
+   {
+    "claim": "Mirantes rated AA by Caixa",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.lp.soumirantes.com.br/"
+   },
+   {
+    "claim": "4,000+ apartments delivered (book says 3,000+)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://soumirantes.com.br/api/wp-content/uploads/2025/03/Book_Digital_Vista.pdf"
+   },
+   {
+    "claim": "Projected up to R$56k net rent per year",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.lp.soumirantes.com.br/"
+   },
+   {
+    "claim": "'Valorizacao garantida' (guaranteed appreciation)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.lp.soumirantes.com.br/"
+   },
+   {
+    "claim": "2BR 66.65 m2 from R$399,900 (agent)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://casanovabrasil.com/imovel/apartamento-a-venda-no-bairro-capim-macio-em-natal-rn/292"
+   },
+   {
+    "claim": "All Mirantes projects hold Caixa Selo Casa Azul",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.lp.soumirantes.com.br/"
+   },
+   {
+    "claim": "Project launched officially May 2025 (portal says launch Jan 2024)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://cafecomnoticiasrn.com.br/2025/05/19/mirantes-empreendimentos-apresenta-vista-ponta-negra-em-evento-exclusivo-para-corretores-convidados/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2012,
+   "developer_hq": "Natal, Brazil",
+   "developer_company": "ML6 Empreendimentos Imobiliarios SPE Ltda (project SPE); Mirantes Empreendimentos",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 4000,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 58,
+   "size_max_m2": 78.85,
+   "price_min": 399900,
+   "price_max": 464551,
+   "currency": "BRL",
+   "deposit_pct": null,
+   "payment_plan": "Up to 60 instalments, Caixa financing",
+   "foreign_ownership": "Direct freehold; foreigners may buy urban property in Brazil (CPF required); not stated by developer",
+   "rental_programme": "Short-term rental projection up to R$56k net/year, R$12k/month in high season",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "rooftop club (36th floor)",
+    "sushi and wine bar",
+    "spa",
+    "coworking",
+    "pools",
+    "gym",
+    "multisport court",
+    "playground"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Registro de Imoveis de Natal (incorporacao, Lei 4.591) and Prefeitura de Natal (alvara)",
+   "brochure_url": "https://soumirantes.com.br/api/wp-content/uploads/2025/03/Book_Digital_Vista.pdf"
+  },
+  "positives": [
+   "Registered incorporation number and SPE published",
+   "Construction percentage published",
+   "Floor plans for all five types",
+   "Caixa financing reported in local press"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.lp.soumirantes.com.br/",
+   "https://soumirantes.com.br/api/wp-content/uploads/2025/03/Book_Digital_Vista.pdf",
+   "https://soumirantes.com.br/empreendimentos/vistapontanegra",
+   "https://pordentrodorn.com.br/2025/10/16/vista-ponta-negra-se-destaca/",
+   "https://casanovabrasil.com/imovel/apartamento-a-venda-no-bairro-capim-macio-em-natal-rn/292",
+   "https://apto.vc/br/rn/natal/ponta-negra/vista-ponta-negra",
+   "https://cafecomnoticiasrn.com.br/2025/05/19/mirantes-empreendimentos-apresenta-vista-ponta-negra-em-evento-exclusivo-para-corretores-convidados/",
+   "https://catalogueimoveis.com.br/imovel/venda/apartamentos/natal/ponta-negra-mirantes-vista-ponta-negra/4669"
+  ]
+ },
+ {
+  "slug": "ambar-residences-orlando-big-key-group",
+  "name": "Ambar Residences Orlando (Apartments by Marriott Bonvoy)",
+  "developer": "The Big Key Group",
+  "stage": "off-plan",
+  "area": "Four Corners, 3251 Secret Lake Drive, Kissimmee",
+  "country": "USA",
+  "market": "Orlando",
+  "url": "https://www.travelweekly.com/Travel-News/Hotel-News/Marriott-a-partner-for-Ambar-Residences-Orlando",
+  "docs_url": "https://thebigkeygroup.com/projects",
+  "permit_number": null,
+  "docs_listed": [
+   "322 furnished condo-hotel units in three seven-storey buildings on 11 acres",
+   "floor plans studio to 3BR, 531-1,185 sq ft (agent PDFs)",
+   "deposit schedule 5/10/5/10/70 (agent)",
+   "HOA about USD 0.85 per sq ft (agent)",
+   "owner use capped at 30 days a year by Osceola County code",
+   "developer entity Archies Investments LLC licensing the Marriott brand"
+  ],
+  "note": "First for-sale Apartments by Marriott Bonvoy project in the US: 322 furnished condo-hotel units in three seven-storey buildings about five miles from Disney, priced about USD 364k to 768k; groundbreaking was planned for early 2026 and trade press now cites opening in Q1 to late 2028. It is The Big Key Group's first project, and owner use is limited to 30 days a year. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 364000,
+   "currency": "USD",
+   "title": "freehold condo-hotel unit",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 322,
+   "payment_plan": "5% at contract, 10% at 30 days, 5% at 120 days, 10% at groundbreaking, 70% at closing",
+   "price_per_m2": 7458
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building permit or county approval number published",
+   "escrow": "Deposit schedule published by agents (30% before closing) but no escrow agent named in pages seen",
+   "progress": "Developer site says 'Groundbreaking 2026'; CoStar (Apr 2026) calls it 'underway'; no dated photos or %",
+   "plans": "Studio, 1BR, 2BR and 3BR floor-plan PDFs with Florida 718.503 disclaimers (agent site)",
+   "record": "CoStar reports Ambar is The Big Key Group's first project",
+   "returns": "Optional rental program via Marriott reservations; no yields or guarantee"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Developer entity Archies Investments LLC is a registered Florida LLC (doc L22000356559, filed 12 Aug 2022, active)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.sunbizdaily.com/filings/L22000356559/archies-investments-llc/"
+   },
+   {
+    "claim": "Archies Investments LLC raised capital under SEC Form D exempt offerings (2022, 2024)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.sec.gov/cgi-bin/browse-edgar?CIK=0001956062&action=getcompany&count=40&owner=include"
+   },
+   {
+    "claim": "322 residences in three seven-storey buildings on 11 acres",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.travelweekly.com/Travel-News/Hotel-News/Marriott-a-partner-for-Ambar-Residences-Orlando"
+   },
+   {
+    "claim": "Licensed Apartments by Marriott Bonvoy brand, first for-sale in US",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.travelweekly.com/Travel-News/Hotel-News/Marriott-a-partner-for-Ambar-Residences-Orlando"
+   },
+   {
+    "claim": "Construction began early 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.bldup.com/posts/pioneering-marriott-bonvoy-condo-hotel-launches-sales-near-walt-disney-world-in-kissimmee"
+   },
+   {
+    "claim": "Completion 2028 (Q1 2028 per HB To Go, late 2028 per Travel Trade Desk)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://togo.hotelbusiness.com/article/room-to-own-ambar-residences-orlando-to-be-first-apartments-by-marriott-bonvoy-property-in-u-s/"
+   },
+   {
+    "claim": "Plan scaled down from 403 units (2023) and 348 units (2024) to 322",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.growthspotter.com/2025/12/04/marriott-bonvoy-resort-near-disney-slated-to-open-in-2028/"
+   },
+   {
+    "claim": "Prices from mid-USD 300,000s to mid-700,000s",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.growthspotter.com/2025/12/04/marriott-bonvoy-resort-near-disney-slated-to-open-in-2028/"
+   },
+   {
+    "claim": "Big Key Group has delivered previous projects",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.costar.com/article/305223941/residential-style-lodging-expands-to-meet-changing-traveler-behavior-developer-says"
+   },
+   {
+    "claim": "Big Key holds about 80% equity as GP with outside LPs",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://traveltradedesk.com/articles/apartments-by-marriott-sets-first-u-s-branded-residential-in-orlando-e2b655d9"
+   },
+   {
+    "claim": "Owners hold full title, not timeshare; owner use max 30 days a year",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://togo.hotelbusiness.com/article/room-to-own-ambar-residences-orlando-to-be-first-apartments-by-marriott-bonvoy-property-in-u-s/"
+   },
+   {
+    "claim": "Deposits held in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.lucasmiami.com/new-development/ambar-residences-orlando"
+   },
+   {
+    "claim": "Building permit issued by Osceola County",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thebigkeygroup.com/projects"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Miami, USA",
+   "developer_company": "Archies Investments LLC (Florida doc L22000356559), managed by Secret Lake Developer Group LLC; brand The Big Key Group",
+   "developer_projects_delivered": 0,
+   "developer_units_delivered": 0,
+   "listed_or_audited": "Private; SEC Form D exempt offerings filed 2022 and 2024",
+   "construction_start": "2026",
+   "handover_promised": "2028",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "1BR + den",
+    "2BR",
+    "2BR + den",
+    "3BR"
+   ],
+   "size_min_m2": 49,
+   "size_max_m2": 110,
+   "price_min": 364000,
+   "price_max": 768000,
+   "currency": "USD",
+   "deposit_pct": 30,
+   "payment_plan": "5/10/5/10 before and at groundbreaking, 70% at closing",
+   "foreign_ownership": "Fee simple condo unit; no restriction on foreign buyers",
+   "rental_programme": "Optional Marriott-reserved rental program managed by Coury Hospitality; revenue share, no figures",
+   "service_charge": "About USD 0.85 per sq ft per month (agent)",
+   "brand": "Apartments by Marriott Bonvoy",
+   "amenities": [
+    "resort pool with cabanas",
+    "fitness center",
+    "yoga and sauna",
+    "restaurant",
+    "indoor-outdoor bar",
+    "cafe market",
+    "event lawns",
+    "pet areas"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Osceola County Building Department",
+   "brochure_url": "https://www.realtyinorlando.com/uploads/agent-1/Floor%20Plans/Ambar%20Residences/ambar-residences-studio-floorplan.pdf"
+  },
+  "positives": [
+   "Floor plans and unit-level prices published",
+   "Developer entity and capital raises visible in state and SEC registries",
+   "Brand licence and project scope confirmed by trade press",
+   "No guaranteed rental returns; Florida 718.503 disclosure documents referenced"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.travelweekly.com/Travel-News/Hotel-News/Marriott-a-partner-for-Ambar-Residences-Orlando",
+   "https://orlandoambar.com/",
+   "https://otj.com/projects/ambar-residences-orlando/",
+   "https://thebigkeygroup.com/projects",
+   "https://www.growthspotter.com/2025/12/04/marriott-bonvoy-resort-near-disney-slated-to-open-in-2028/",
+   "https://www.costar.com/article/305223941/residential-style-lodging-expands-to-meet-changing-traveler-behavior-developer-says",
+   "https://traveltradedesk.com/articles/apartments-by-marriott-sets-first-u-s-branded-residential-in-orlando-e2b655d9",
+   "https://www.bldup.com/posts/pioneering-marriott-bonvoy-condo-hotel-launches-sales-near-walt-disney-world-in-kissimmee",
+   "https://togo.hotelbusiness.com/article/room-to-own-ambar-residences-orlando-to-be-first-apartments-by-marriott-bonvoy-property-in-u-s/",
+   "https://www.realtyinorlando.com/uploads/agent-1/Floor%20Plans/Ambar%20Residences/ambar-residences-studio-floorplan.pdf",
+   "https://www.lucasmiami.com/new-development/ambar-residences-orlando",
+   "https://www.sunbizdaily.com/filings/L22000356559/archies-investments-llc/",
+   "https://www.sec.gov/cgi-bin/browse-edgar?CIK=0001956062&action=getcompany&count=40&owner=include"
+  ]
+ },
+ {
+  "slug": "viceroy-residences-austin-pearlstone",
+  "name": "Viceroy Residences Austin",
+  "developer": "Pearlstone Partners",
+  "stage": "under construction",
+  "area": "Old West Austin / Clarksville, 300 & 301 Pressler St",
+  "country": "USA",
+  "market": "Austin",
+  "url": "https://www.viceroyresidencesaustin.com/",
+  "docs_url": "https://www.pearlstonepartners.com/portfolio/viceroy-residences-austin/",
+  "permit_number": null,
+  "docs_listed": [
+   "146 residences in two six-storey buildings, completion Q4 2027",
+   "press release with amenities, designers and price range (under USD 1m to over 6m)",
+   "floor plan on Zillow developer listing",
+   "sales gallery address and sales agent (Christie's @properties Lone Star)",
+   "developer portfolio page lists 206 residences, 299,000 net sq ft"
+  ],
+  "note": "146 Viceroy-branded condos in two six-storey buildings between downtown and Lady Bird Lake, formerly The Belvedere; City of Austin building permits 2022-132320 BP and 2022-132321 BP (issued 31 Aug 2022) are active, construction started about March 2025 and completion is scheduled Q4 2027, with prices from about USD 999,000. Permit records describe 207 units across the two buildings versus 146 marketed. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 999000,
+   "currency": "USD",
+   "title": "freehold condominium",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Pearlstone Partners with ATCO delivered Vesper (84 East Ave, 41 storeys, 284 condos) in April 2024, per Towers.net and ATCO",
+   "units": 146,
+   "payment_plan": null,
+   "price_per_m2": 11727
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Developer publishes no permit number. City of Austin open data shows building permits 2022-132320 BP (300 Pressler, 116 units, USD 60m valuation) and 2022-132321 BP (301 Pressler, 91 units), issued 31 Aug 2022, status Active; plus 2026 pool and utility permits",
+   "escrow": "No escrow or deposit terms published",
+   "progress": "Developer says 'under construction' only. The Real Deal and Austin Business Daily report construction started March 2025; Groundbreak tracks it as under construction; 2026 trade permits issued",
+   "plans": "Floor plan on Zillow developer listing (input record); none on project site",
+   "record": "Vesper delivered April 2024 (Towers.net, ATCO); press release cites USD 800m developed locally",
+   "returns": "No rental or return claims"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 3,
+  "claims": [
+   {
+    "claim": "Building permits for two six-storey multifamily buildings issued and active",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://data.austintexas.gov/resource/3syk-w9eu.json?original_address1=300%20PRESSLER%20ST"
+   },
+   {
+    "claim": "146 residences (permits record 116 + 91 = 207 units; developer portfolio page says 206)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://data.austintexas.gov/resource/3syk-w9eu.json?original_address1=300%20PRESSLER%20ST"
+   },
+   {
+    "claim": "Under construction (started March 2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://therealdeal.com/texas/2026/07/23/austin-is-getting-another-branded-condo-complex/"
+   },
+   {
+    "claim": "Completion Q4 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.viceroyresidencesaustin.com/press-release/"
+   },
+   {
+    "claim": "USD 154.5m construction loan from Benefit Street Partners",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://therealdeal.com/texas/2026/07/23/austin-is-getting-another-branded-condo-complex/"
+   },
+   {
+    "claim": "Prices from under USD 1m to over USD 6m (press: USD 800k to 6m)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.statesman.com/business/real-estate/article/viceroy-residences-clarksville-austin-22355765.php"
+   },
+   {
+    "claim": "Viceroy brand licensed, first Texas residences",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.statesman.com/business/real-estate/article/viceroy-residences-clarksville-austin-22355765.php"
+   },
+   {
+    "claim": "Pearlstone delivered Vesper (284 condos) in 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://austin.towers.net/the-vesper-condo-tower-wraps-up-in-downtown-austins-rainey-street-district/"
+   },
+   {
+    "claim": "Units reduced from 247 to 146 since announcement",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://austinbusinessdaily.com/viceroy-residences-to-brand-235m-luxury-condo-project-in-austin"
+   },
+   {
+    "claim": "Phase 2 of 40-50 units has no timeline",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://austinbusinessdaily.com/viceroy-residences-to-brand-235m-luxury-condo-project-in-austin"
+   },
+   {
+    "claim": "Deposits held in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.viceroyresidencesaustin.com/"
+   },
+   {
+    "claim": "Groundbreak initially said groundbreaking Sep 2026, corrected to work under 2022 permits",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.groundbreak.city/austin/viceroy-residences-austin-300-pressler-street"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Austin, USA",
+   "developer_company": "Pearlstone Partners",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-03",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "penthouse"
+   ],
+   "size_min_m2": 71,
+   "size_max_m2": 390,
+   "price_min": 999000,
+   "price_max": 6000000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Fee simple condominium; no foreign restriction",
+   "rental_programme": "None stated",
+   "service_charge": null,
+   "brand": "Viceroy Hotels & Residences",
+   "amenities": [
+    "75-ft pool with lap lane",
+    "pool bar",
+    "fitness center",
+    "wellness spa with cold plunge and saunas",
+    "co-working",
+    "sports simulator lounge",
+    "secure garage",
+    "Butler Trail access"
+   ],
+   "lat": 30.268,
+   "lng": -97.761,
+   "permit_authority": "City of Austin Development Services Department",
+   "brochure_url": null
+  },
+  "positives": [
+   "Active city building permits on public record",
+   "Construction financing and start date reported by independent press",
+   "Developer has a delivered high-rise condo (Vesper)",
+   "No guaranteed returns"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.viceroyresidencesaustin.com/",
+   "https://www.pearlstonepartners.com/portfolio/viceroy-residences-austin/",
+   "https://www.viceroyresidencesaustin.com/press-release/",
+   "https://data.austintexas.gov/resource/3syk-w9eu.json?original_address1=300%20PRESSLER%20ST",
+   "https://therealdeal.com/texas/2026/07/23/austin-is-getting-another-branded-condo-complex/",
+   "https://austinbusinessdaily.com/viceroy-residences-to-brand-235m-luxury-condo-project-in-austin",
+   "https://www.statesman.com/business/real-estate/article/viceroy-residences-clarksville-austin-22355765.php",
+   "https://www.groundbreak.city/austin/viceroy-residences-austin-300-pressler-street",
+   "https://austin.towers.net/the-vesper-condo-tower-wraps-up-in-downtown-austins-rainey-street-district/",
+   "https://www.zillow.com/community/viceroy-residences-austin/459752607_zpid/"
+  ]
+ },
+ {
+  "slug": "ora-by-casa-tua-fortune",
+  "name": "ORA by Casa Tua",
+  "developer": "Fortune International Group",
+  "stage": "off-plan",
+  "area": "Brickell, 1210 Brickell Ave",
+  "country": "USA",
+  "market": "Miami",
+  "url": "https://orabycasatuavip.com/ora-by-casa-tua-faq/",
+  "docs_url": "https://fortuneintlgroup.com/our-story/",
+  "permit_number": null,
+  "docs_listed": [
+   "deposit structure 10/10/10/10/60 with groundbreaking and closing dates",
+   "escrow and title agent First American Title, non-interest escrow",
+   "15-day rescission under Florida Chapter 718",
+   "prices USD 990k to 4.35m (studios to 4BR, excluding penthouses)",
+   "maintenance USD 1.99 per sq ft",
+   "construction start Q4 2027, completion Q4 2030",
+   "3-night minimum rentals, Casa Tua Hospitality manages rentals"
+  ],
+  "note": "77-floor, 533-unit short-term-rental tower at 1210 Brickell Ave that launched sales in 2023 (about 45% presold by July 2024); groundbreaking first expected in 2025 and then by Q1 2026 has not happened, and the broker FAQ now gives construction start Q4 2027 and completion Q4 2030. Deposits are held in a non-interest escrow with First American Title; a city permit application was filed in June 2025. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 990000,
+   "currency": "USD",
+   "title": "freehold condominium",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "Deposits held in a non-interest escrow account; escrow and title agent First American Title (broker FAQ); 15-day rescission under Florida Chapter 718",
+   "progress_pct": null,
+   "developer_delivered": "Fortune International Group: Jade Residences at Brickell Bay, Jade Beach, Jade Ocean, Jade Signature (completed 2018, per The Real Deal), Ritz-Carlton Residences Sunny Isles Beach",
+   "units": 533,
+   "payment_plan": "10% at contract, 10% at 90 days, 10% at groundbreaking, 10% 90 days later, 60% at closing",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit number published. Florida YIMBY reported a new-construction permit application filed with the City of Miami on 19 Jun 2025 (78 storeys, 533 units, USD 201.1m hard cost); no issued permit found",
+   "escrow": "Broker FAQ names First American Title as escrow and title agent, non-interest account",
+   "progress": "Not started: broker FAQ gives construction start Q4 2027; independent reports found no groundbreaking, contractor or construction loan as of Sep-Oct 2026",
+   "plans": "Broker site refers to floor plans page; not reviewed, none on developer pages seen",
+   "record": "The Real Deal (2018) confirms Jade Signature completed, Fortune's fourth Jade building",
+   "returns": "Short-term rentals allowed with 3-night minimum; no return figures or guarantee"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 2,
+  "claims": [
+   {
+    "claim": "Construction to start 2025 (2024 statement), then by end Q1 2026",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://therealdeal.com/miami/2025/08/20/fortune-taps-eb-5-for-ora-by-casa-tua-brickell-tower/"
+   },
+   {
+    "claim": "Construction start Q4 2027 (same broker FAQ lists groundbreaking deposit at Q1 2027)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://orabycasatuavip.com/ora-by-casa-tua-faq/"
+   },
+   {
+    "claim": "Completion Q4 2030 (2024 press: delivery 2028)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.hauteresidence.com/fortune-international-group-closes-on-36-08m-pre-development-financing-loan-for-their-latest-brickell-project/"
+   },
+   {
+    "claim": "Site acquired and USD 36.08m pre-development loan from Amerant Bank",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://therealdeal.com/miami/2024/07/10/fortune-scores-36m-loan-for-casa-tua-condo-tower-in-brickell/"
+   },
+   {
+    "claim": "About 45% presold (July 2024)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://therealdeal.com/miami/2024/07/10/fortune-scores-36m-loan-for-casa-tua-condo-tower-in-brickell/"
+   },
+   {
+    "claim": "Construction permit application filed 19 Jun 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://floridayimby.com/2025/07/new-construction-permit-application-filed-for-78-story-ora-by-casa-tua-in-brickell-miami.html"
+   },
+   {
+    "claim": "533 units on 77 floors (official site says 540; permit application 78 storeys)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.hauteresidence.com/news/ora-by-casa-tua-540-residences-in-a-77-story-brickell-tower/"
+   },
+   {
+    "claim": "Deposits held in escrow with First American Title",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://orabycasatuavip.com/ora-by-casa-tua-faq/"
+   },
+   {
+    "claim": "EB-5 designation filed with USCIS",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://therealdeal.com/miami/2025/08/20/fortune-taps-eb-5-for-ora-by-casa-tua-brickell-tower/"
+   },
+   {
+    "claim": "Fortune completed Jade Signature (192 units) in 2018",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://therealdeal.com/miami/2018/02/01/fortune-international-group-and-premier-developers-complete-two-major-condo-projects/"
+   },
+   {
+    "claim": "Prices from USD 990k (TRD Aug 2025: from USD 900k; launch 2023: from 800k)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://therealdeal.com/miami/2025/08/20/fortune-taps-eb-5-for-ora-by-casa-tua-brickell-tower/"
+   },
+   {
+    "claim": "Short-term rental allowed, 3-night minimum",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://therealdeal.com/miami/2025/08/20/fortune-taps-eb-5-for-ora-by-casa-tua-brickell-tower/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Miami, USA",
+   "developer_company": "Fortune International Group; site legal notice in the name of 1210 Brickell LLC (per agent page)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2030-Q4",
+   "original_handover": "2028",
+   "delay_months": 24,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "penthouse"
+   ],
+   "size_min_m2": 45,
+   "size_max_m2": 223,
+   "price_min": 990000,
+   "price_max": 4350000,
+   "currency": "USD",
+   "deposit_pct": 40,
+   "payment_plan": "10/10/10/10 before and after groundbreaking, 60% at closing",
+   "foreign_ownership": "Fee simple condominium; personal, corporate or trust ownership allowed",
+   "rental_programme": "Short-term rentals, 3-night minimum, Casa Tua Hospitality management; no figures",
+   "service_charge": "USD 1.99 per sq ft per month",
+   "brand": "Casa Tua",
+   "amenities": [
+    "four Casa Tua restaurants",
+    "rooftop pool deck",
+    "creative workspaces",
+    "content-creation rooms",
+    "bar lounges",
+    "fully furnished residences"
+   ],
+   "lat": 25.761,
+   "lng": -80.192,
+   "permit_authority": "City of Miami Building Department",
+   "brochure_url": null
+  },
+  "positives": [
+   "Named escrow and title agent and statutory 15-day rescission",
+   "Developer has a long, independently reported delivery record",
+   "Site purchase and pre-development loan confirmed by press",
+   "No guaranteed returns"
+  ],
+  "flags": [
+   {
+    "text": "The Real Deal reported in August 2025 that construction was expected to start by end Q1 2026; independent trackers found no groundbreaking, contractor or construction loan by Sep-Oct 2026, and the broker FAQ now lists start Q4 2027 and completion Q4 2030.",
+    "source": "https://therealdeal.com/miami/2025/08/20/fortune-taps-eb-5-for-ora-by-casa-tua-brickell-tower/"
+   }
+  ],
+  "sources": [
+   "https://orabycasatuavip.com/ora-by-casa-tua-faq/",
+   "https://fortuneintlgroup.com/our-story/",
+   "https://therealdeal.com/miami/2023/03/09/fortunes-ora-by-casa-tua-launches-sales-of-short-term-rental-condo-tower-in-brickell/",
+   "https://therealdeal.com/miami/2024/07/10/fortune-scores-36m-loan-for-casa-tua-condo-tower-in-brickell/",
+   "https://therealdeal.com/miami/2025/08/20/fortune-taps-eb-5-for-ora-by-casa-tua-brickell-tower/",
+   "https://floridayimby.com/2025/07/new-construction-permit-application-filed-for-78-story-ora-by-casa-tua-in-brickell-miami.html",
+   "https://floridayimby.com/2024/07/site-and-financing-secured-for-77-story-ora-by-casa-tua-in-miamis-brickell-financial-district.html",
+   "https://www.hauteresidence.com/fortune-international-group-closes-on-36-08m-pre-development-financing-loan-for-their-latest-brickell-project/",
+   "https://www.hauteresidence.com/news/ora-by-casa-tua-540-residences-in-a-77-story-brickell-tower/",
+   "https://www.rehubmiami.com/blog/ora-casa-tua-brickell-guide",
+   "https://joshsteinrealtor.com/new-construction/ora-by-casa-tua/",
+   "https://therealdeal.com/miami/2018/02/01/fortune-international-group-and-premier-developers-complete-two-major-condo-projects/"
   ]
  }
 ]

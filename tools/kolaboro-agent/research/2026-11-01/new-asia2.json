@@ -165,8 +165,8 @@
     "spa with plunge pool",
     "co-working"
    ],
-   "lat": 14.556,
-   "lng": 121.021,
+   "lat": null,
+   "lng": null,
    "permit_authority": "DHSUD (Certificate of Registration and License to Sell)",
    "brochure_url": null
   },
@@ -193,5 +193,590 @@
    "all_six": false
   },
   "verified_score": 3
+ },
+ {
+  "slug": "haraya-residences-shang-robinsons",
+  "name": "Haraya Residences",
+  "developer": "Shang Robinsons Properties, Inc. (Shang Properties and Robinsons Land JV)",
+  "area": "Bridgetowne Destination Estate, Pasig City, Metro Manila",
+  "country": "Philippines",
+  "market": "Philippines",
+  "stage": "under construction",
+  "url": "https://shangpropertiesinternationalsales.com/project/haraya-residences/",
+  "docs_url": "https://harayaresidences.com/",
+  "seed": {
+   "price": null,
+   "currency": "PHP",
+   "title": "condominium (CCT)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q3",
+   "permit_claim": true,
+   "permit_number": "DHSUD Provisional License to Sell No. 2537 (issued 3 Nov 2022) per website; LS No. 489 per technical brochure",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Brochure names Shang Properties' completed luxury projects: Shang Grand Tower, The St. Francis Shangri-La Place, One Shangri-La Place, Shang Salcedo Place, Shang Residences at Wack Wack, Horizon Homes at Shangri-La at the Fort; JV sister project Aurelia Residences (BGC)",
+   "units": 895,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "developer: DHSUD Provisional LTS No. 2537, date issued 3 Nov 2022, DHSUD NCR AA-2026/06-5155 (website footer and LTS page)",
+   "developer: completion South Tower 31 Jul 2028, North Tower 30 Sep 2028",
+   "developer: 21 unit floor plan PDFs (North and South Towers)",
+   "developer: technical brochure Jan 2026 with unit sizes, unit mix, LS No. 489",
+   "developer: quarterly construction updates Q1, Q2, Q3 2026",
+   "developer: FAQ with 533 + 362 units, 57 and 45 residential floors, 702 parking"
+  ],
+  "note": "Two-tower luxury condo by the Shang Properties and Robinsons Land JV in Pasig; DHSUD lists PLS 489 (Nov 2022) and LS 0002524 (Jun 2026) for the project, while the website shows LTS No. 2537; Q3 2026 update reports formworks at Level 50 South and Level 35 North, completion targeted Jul and Sep 2028. (checked 31 Oct 2026)",
+  "evidence": {
+   "permit": "Website footer and /license-to-sell page: 'DHSUD Provisional License to Sell No. 2537, Date Issued: 3 November 2022'; technical brochure: 'DHSUD LS No.: 489'; DHSUD list (lumingon mirror) shows PLS 489 (Nov 2022) and LS 0002524 (Jun 2026), no entry for 2537 found",
+   "escrow": null,
+   "progress": "Developer construction updates Q1-Q3 2026; Q3 2026: formworks Level 50 South Tower, Level 35 North Tower; BusinessWorld (11 May 2026) reports 26th and 16th floors reached",
+   "plans": "Floor plans page with downloadable PDFs per unit type; technical brochure with typical floor plan",
+   "record": "Brochure lists completed Shang Properties projects (developer statement only)",
+   "returns": "No rental guarantee or yield language found"
+  },
+  "positives": [
+   "License to Sell number, issue date and completion dates printed on every page",
+   "Quarterly dated construction updates with floor levels",
+   "Unit-by-unit floor plan PDFs published",
+   "Separate DHSUD advertising approval number shown"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project holds DHSUD provisional License to Sell (Nov 2022)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/haraya-residences--4e1dcf099ca04d03bdb649c04675c47f"
+   },
+   {
+    "claim": "LTS number is 2537 (website)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/haraya-residences--4e1dcf099ca04d03bdb649c04675c47f"
+   },
+   {
+    "claim": "Further LTS LS 0002524 issued Jun 2026 to Shang Robinsons Properties",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/haraya-residences--d90dfd66688543e28a5d5346f794c9ff"
+   },
+   {
+    "claim": "Developer is a JV of Shang Properties and Robinsons Land",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://bworldonline.com/corporate/2026/05/11/748615/shang-robinsons-venture-advances-haraya-residences-project/"
+   },
+   {
+    "claim": "Construction reached 26th floor South and 16th floor North (Apr 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://bworldonline.com/corporate/2026/05/11/748615/shang-robinsons-venture-advances-haraya-residences-project/"
+   },
+   {
+    "claim": "Formworks at Level 50 South, Level 35 North (Q3 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://harayaresidences.com/haraya-residences-construction-update-q3-2026/"
+   },
+   {
+    "claim": "Completion South Jul 2028, North Sep 2028",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://bworldonline.com/corporate/2026/05/11/748615/shang-robinsons-venture-advances-haraya-residences-project/"
+   },
+   {
+    "claim": "South Tower 558 units over 57 floors",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://bworldonline.com/corporate/2026/05/11/748615/shang-robinsons-venture-advances-haraya-residences-project/"
+   },
+   {
+    "claim": "South Tower unit count 533 (FAQ) vs 558 (brochure)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://harayaresidences.com/brochures-faqs/"
+   },
+   {
+    "claim": "Shang delivered Shang Grand Tower, One Shangri-La Place and others",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://harayaresidences.com/app/uploads/2026/01/Haraya-Residences-Technical-Brochure-South-Tower-01-09-2026.pdf"
+   },
+   {
+    "claim": "Price",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://shangpropertiesinternationalsales.com/project/haraya-residences/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Metro Manila, Philippines",
+   "developer_company": "Shang Robinsons Properties, Inc. (land owner Robinsons Land Corporation)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Parents Shang Properties, Inc. and Robinsons Land Corporation are PSE-listed",
+   "construction_start": null,
+   "handover_promised": "2028-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "penthouse 4BR"
+   ],
+   "size_min_m2": 60,
+   "size_max_m2": 555,
+   "price_min": null,
+   "price_max": null,
+   "currency": "PHP",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Condominium unit within the 40% foreign-ownership cap",
+   "rental_programme": "None stated; 24-hour management by Shang Properties Management Services",
+   "service_charge": null,
+   "brand": "Shang Properties",
+   "amenities": [
+    "tropical pool",
+    "kiddie pool",
+    "jacuzzi",
+    "gym and sauna",
+    "chef's kitchen",
+    "library",
+    "game room",
+    "children's play area"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "DHSUD (License to Sell, advertising approval)",
+   "brochure_url": "https://harayaresidences.com/app/uploads/2026/01/Haraya-Residences-Technical-Brochure-South-Tower-01-09-2026.pdf"
+  },
+  "sources": [
+   "https://harayaresidences.com/",
+   "https://harayaresidences.com/license-to-sell/",
+   "https://harayaresidences.com/floor-plans/",
+   "https://harayaresidences.com/brochures-faqs/",
+   "https://harayaresidences.com/app/uploads/2026/01/Haraya-Residences-Technical-Brochure-South-Tower-01-09-2026.pdf",
+   "https://harayaresidences.com/haraya-residences-construction-update-q3-2026/",
+   "https://shangpropertiesinternationalsales.com/project/haraya-residences/",
+   "https://bworldonline.com/corporate/2026/05/11/748615/shang-robinsons-venture-advances-haraya-residences-project/",
+   "http://www.buildmartasean.com/article/news/haraya-residences-in-bridgetowne-estate-pasig-city",
+   "https://lumingon.com/license-to-sell/haraya-residences--4e1dcf099ca04d03bdb649c04675c47f",
+   "https://lumingon.com/license-to-sell/haraya-residences--d90dfd66688543e28a5d5346f794c9ff"
+  ],
+  "permit_number": "DHSUD Provisional License to Sell No. 2537 (issued 3 Nov 2022) per website; LS No. 489 per technical brochure",
+  "added": "2026-10-31",
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "verified_score": 2
+ },
+ {
+  "slug": "moncello-crest-dmci-homes",
+  "name": "Moncello Crest",
+  "developer": "DMCI Project Developers, Inc. (DMCI Homes Leisure Residences)",
+  "area": "Sitio Bato, Brgy. Poblacion, Tuba, Benguet (near Baguio City)",
+  "country": "Philippines",
+  "market": "Philippines",
+  "stage": "off-plan",
+  "url": "https://www.dmcisales.com/p/moncello-crest.html",
+  "docs_url": "https://www.dmcihomes.com/whats-new/news/dmci-homes-continues-strong-performance-in-leisure-market-expands-in-tuba-benguet-project",
+  "seed": {
+   "price": 8100000,
+   "currency": "PHP",
+   "title": "condominium (condotel) unit, foreign buyers subject to ownership rules",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": true,
+   "permit_number": "DHSUD License to Sell No. 0001243; DHSUD Registration CAR-REM-AA-041924-010",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "DMCI Homes Leisure Residences completed Solmera Coast, San Juan, Batangas (BusinessWorld, Jun 2024)",
+   "units": null,
+   "payment_plan": "PHP 30,000 reservation; promo terms or 30% downpayment over the build period; balance by bank or DMCI in-house financing",
+   "price_per_m2": 234783
+  },
+  "docs_listed": [
+   "sales site: DHSUD LTS No. 0001243 and registration CAR-REM-AA-041924-010",
+   "sales site: price list as of 2 Oct 2026, PHP 8.1M to 18.1M, 248 units available",
+   "sales site: floor plans by unit type, site development plan, 360 tour",
+   "sales site: turnover Blanca Nov 2028, Ciela and Silva Aug 2029",
+   "sales site: rental pool terms 30% owners / 5% condo corp / 65% operator, 10+10 year lease",
+   "developer news: 84% of Blanca reserved, PHP 4.9B (May 2025)"
+  ],
+  "note": "Three-tower highland condotel by PSE-listed DMCI Holdings' homes unit, 7 km from Baguio; DHSUD lists LS 0001243 for Blanca (target completion May 2029) and LS 0002755 for Silva and Ciela (Jan 2032), later than the Nov 2028 and Aug 2029 turnover dates marketed; owners get 30% of room revenue, no guarantee. (checked 31 Oct 2026)",
+  "evidence": {
+   "permit": "LTS No. 0001243 and DHSUD registration printed on the sales page; DHSUD list (lumingon mirror) confirms LS 0001243 (Apr 2024) for Bldg A Blanca and LS 0002755 (Jan 2025) for Silva and Ciela, owner DMCI Project Developers, Inc.",
+   "escrow": null,
+   "progress": "No construction progress or dated site photos published; sales page status 'Pre-Selling'",
+   "plans": "Unit floor plans by type (Studio A-F, 1BR A, 2BR A) and site development plan on the sales page",
+   "record": "BusinessWorld (6 Jun 2024) reports completion of Solmera Coast in San Juan, Batangas",
+   "returns": "Rental pool shares revenue (owners 30%); developer news gave projections of about PHP 16,300 a month for a studio at 35% occupancy, presented as projections, no guarantee"
+  },
+  "positives": [
+   "LTS number and DHSUD registration printed on the sales page and confirmed on the DHSUD list",
+   "Live price list with dated inventory",
+   "Rental pool revenue split and lease term disclosed in full",
+   "Parent DMCI Holdings is PSE-listed"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "DHSUD License to Sell No. 0001243 (Blanca)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/moncello-crest-bldg-a-blanca--15bde7b382984c508d18fd8f342b5870"
+   },
+   {
+    "claim": "Silva and Ciela licensed (LS 0002755)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/moncello-crest-b-silva-c-ciela--3e190ff519e64a49862bc189f8e30c3f"
+   },
+   {
+    "claim": "Developer entity DMCI Project Developers, Inc.",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/moncello-crest-bldg-a-blanca--15bde7b382984c508d18fd8f342b5870"
+   },
+   {
+    "claim": "Blanca turnover Nov 2028",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/moncello-crest-bldg-a-blanca--15bde7b382984c508d18fd8f342b5870"
+   },
+   {
+    "claim": "Ciela and Silva turnover Aug 2029",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://lumingon.com/license-to-sell/moncello-crest-b-silva-c-ciela--3e190ff519e64a49862bc189f8e30c3f"
+   },
+   {
+    "claim": "84% of Blanca reserved, about PHP 4.9B",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://bworldonline.com/corporate/2025/05/30/675904/dmci-homes-says-reservation-sales-at-benguet-condotel-hit-p4-9-billion/"
+   },
+   {
+    "claim": "PHP 6B project budget, 522 units launched in Blanca",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://bworldonline.com/corporate/2024/06/06/599948/dmci-allots-p6b-for-eco-agri-condotel-project-in-benguet/"
+   },
+   {
+    "claim": "Developer completed Solmera Coast",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://bworldonline.com/corporate/2024/06/06/599948/dmci-allots-p6b-for-eco-agri-condotel-project-in-benguet/"
+   },
+   {
+    "claim": "Prices from PHP 7.95M (2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://bworldonline.com/corporate/2025/05/30/675904/dmci-homes-says-reservation-sales-at-benguet-condotel-hit-p4-9-billion/"
+   },
+   {
+    "claim": "Owners receive 30% of rental revenue",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.colliers.com/en-ph/research/property-market-intelligence-dmci-moncello-crest-benguet-prestige-filinvest-appleone-cagayan-de-oro"
+   },
+   {
+    "claim": "Income about PHP 16,300 a month for a studio at 35% occupancy",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dmcihomes.com/whats-new/news/dmci-homes-leisure-brand-launches-eco-agri-condotel-near-baguio-city"
+   },
+   {
+    "claim": "Construction stage",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dmcisales.com/p/moncello-crest.html"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1999,
+   "developer_hq": "Makati, Philippines",
+   "developer_company": "DMCI Project Developers, Inc. (DMCI Homes), unit of DMCI Holdings, Inc.",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Parent DMCI Holdings, Inc. is PSE-listed (DMC)",
+   "construction_start": null,
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 34.5,
+   "size_max_m2": 91.5,
+   "price_min": 8100000,
+   "price_max": 18100000,
+   "currency": "PHP",
+   "deposit_pct": 30,
+   "payment_plan": "PHP 30,000 reservation; promo terms or 30% regular downpayment; balance via bank or in-house financing",
+   "foreign_ownership": "Condominium unit; foreign buyers subject to the 40% condominium foreign-ownership cap",
+   "rental_programme": "Individual Rental Pool Program run by a hotel operator: owners 30%, condo corp 5%, operator 65% of room revenue; 10-year lease auto-renewed 10 years; 30-36 complimentary nights",
+   "service_charge": "Association dues handled by the hotel operator under the rental pool",
+   "brand": "DMCI Homes Leisure Residences",
+   "amenities": [
+    "heated outdoor jacuzzi",
+    "fire pits",
+    "restaurant",
+    "cafe",
+    "spa",
+    "gym",
+    "convention center",
+    "sky deck"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "DHSUD (License to Sell and project registration)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.dmcisales.com/p/moncello-crest.html",
+   "https://www.dmcihomes.com/whats-new/news/dmci-homes-leisure-brand-launches-eco-agri-condotel-near-baguio-city",
+   "https://www.dmcihomes.com/whats-new/news/dmci-homes-continues-strong-performance-in-leisure-market-expands-in-tuba-benguet-project",
+   "https://bworldonline.com/corporate/2024/06/06/599948/dmci-allots-p6b-for-eco-agri-condotel-project-in-benguet/",
+   "https://bworldonline.com/corporate/2025/05/30/675904/dmci-homes-says-reservation-sales-at-benguet-condotel-hit-p4-9-billion/",
+   "https://www.colliers.com/en-ph/research/property-market-intelligence-dmci-moncello-crest-benguet-prestige-filinvest-appleone-cagayan-de-oro",
+   "https://lumingon.com/license-to-sell/moncello-crest-bldg-a-blanca--15bde7b382984c508d18fd8f342b5870",
+   "https://lumingon.com/license-to-sell/moncello-crest-b-silva-c-ciela--3e190ff519e64a49862bc189f8e30c3f"
+  ],
+  "permit_number": "DHSUD License to Sell No. 0001243; DHSUD Registration CAR-REM-AA-041924-010",
+  "added": "2026-10-31",
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verified_score": 2
+ },
+ {
+  "slug": "palmyra-siargao-wellbuild",
+  "name": "Palmyra Siargao",
+  "developer": "Wellbuild Development Corp.",
+  "area": "Brgy. Cancohoy, Del Carmen, Siargao Island, Surigao del Norte",
+  "country": "Philippines",
+  "market": "Philippines",
+  "stage": "off-plan",
+  "url": "https://palmyrasiargao.com/",
+  "docs_url": "https://palmyrasiargao.com/",
+  "seed": {
+   "price": null,
+   "currency": "PHP",
+   "title": "condominium",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 250,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "developer site: resort and residences positioning only (site unreachable for full read)",
+   "news: about 250 units, 164 studios of 35 sq m, 1BR about 60 sq m, 2BR 80-90 sq m, max 3 storeys",
+   "news: phase one 1.79 ha of an 8 ha site, completion within four years of Jul 2026",
+   "news: site development and road works underway, commercial construction from Aug 2026"
+  ],
+  "note": "PHP 2B low-rise resort township billed as Siargao's first condominium project, launched at an investors' night in Cebu on 24 Jul 2026 by Wellbuild Development Corp.; no License to Sell number is published and none was found in DHSUD-sourced LTS databases (current to Jun 2026). (checked 31 Oct 2026)",
+  "evidence": {
+   "permit": "No LTS number published; searches for Palmyra and Wellbuild in DHSUD-sourced LTS databases (ren.ph, lumingon) returned no record",
+   "escrow": null,
+   "progress": "Only news statements that road works and land preparation are underway (Jul 2026); no developer progress page",
+   "plans": "No unit plans found; unit sizes only in news reports",
+   "record": "No completed projects found; company LinkedIn page gives founding year 2025",
+   "returns": "No guaranteed or yield language found in the sources read"
+  },
+  "positives": [
+   "Municipal backing and project scale reported by two national newspapers",
+   "Low-rise (3-storey) plan with on-site septage treatment and rainwater harvesting reported"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project holds a DHSUD License to Sell",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ren.ph/verify/lts"
+   },
+   {
+    "claim": "Developer is Wellbuild Development Corp.",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.philstar.com/the-freeman/cebu-business/2026/07/30/2545744/siargao-launches-first-condo-township-worth-p2-billion"
+   },
+   {
+    "claim": "First condominium project in Siargao",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://smninewschannel.com/p2-b-palmyra-township-sa-siargao-magpapalakas-sa-turismo-at-kabuhayan/"
+   },
+   {
+    "claim": "PHP 2 billion project on 8 ha, phase one 1.79 ha",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.philstar.com/the-freeman/cebu-business/2026/07/30/2545744/siargao-launches-first-condo-township-worth-p2-billion"
+   },
+   {
+    "claim": "About 250 units including 164 studios",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.philstar.com/the-freeman/cebu-business/2026/07/30/2545744/siargao-launches-first-condo-township-worth-p2-billion"
+   },
+   {
+    "claim": "Phase one completion within four years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.philstar.com/the-freeman/cebu-business/2026/07/30/2545744/siargao-launches-first-condo-township-worth-p2-billion"
+   },
+   {
+    "claim": "Site development and road works underway",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.philstar.com/the-freeman/cebu-business/2026/07/30/2545744/siargao-launches-first-condo-township-worth-p2-billion"
+   },
+   {
+    "claim": "Launch and investors' night held 24 Jul 2026 in Cebu",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.manilatimes.net/2026/07/29/regions/siargaos-palmyra-project-to-merge-luxury-living-with-environmental-conservation/2393832"
+   },
+   {
+    "claim": "Developer track record",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://linkedin.com/company/wellbuild-development-corporation"
+   },
+   {
+    "claim": "Price",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://palmyrasiargao.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2025,
+   "developer_hq": "Mandaue City, Cebu, Philippines",
+   "developer_company": "Wellbuild Development Corporation",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 35,
+   "size_max_m2": 90,
+   "price_min": null,
+   "price_max": null,
+   "currency": "PHP",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "destination resort",
+    "lifestyle commercial district",
+    "island food village",
+    "boardwalks",
+    "landscaped open space"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "DHSUD (License to Sell); Del Carmen municipality (development permit)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://palmyrasiargao.com/",
+   "https://www.philstar.com/the-freeman/cebu-business/2026/07/30/2545744/siargao-launches-first-condo-township-worth-p2-billion",
+   "https://www.manilatimes.net/2026/07/29/regions/siargaos-palmyra-project-to-merge-luxury-living-with-environmental-conservation/2393832",
+   "https://smninewschannel.com/p2-b-palmyra-township-sa-siargao-magpapalakas-sa-turismo-at-kabuhayan/",
+   "https://linkedin.com/company/wellbuild-development-corporation",
+   "https://ren.ph/verify/lts?q=palmyra",
+   "https://lumingon.com/license-to-sell?q=palmyra",
+   "https://ren.ph/verify/lts"
+  ],
+  "permit_number": null,
+  "added": "2026-10-31",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verified_score": 1
  }
 ]

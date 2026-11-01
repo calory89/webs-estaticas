@@ -1,0 +1,189 @@
+[
+ {
+  "slug": "senna-tower-fg-empreendimentos",
+  "name": "Senna Tower",
+  "developer": "FG Empreendimentos (with Senna Brands and Grupo Havan)",
+  "area": "Barra Sul, Balneario Camboriu, Santa Catarina",
+  "country": "Brazil",
+  "market": "Brazil",
+  "stage": "off-plan",
+  "url": "https://rocksinvestments.com/senna-tower-balneario-camboriu/",
+  "docs_url": "https://www.sennatower.com/",
+  "permit_number": "Incorporacao registered R-5, matricula 67.763, 2o Registro de Imoveis de Balneario Camboriu/SC",
+  "docs_listed": [
+   "registro de incorporacao R-5 matricula 67.763 (site footer and brochure)",
+   "unit mix: 204 apartments, 18 suspended mansions, duplex and triplex penthouses",
+   "unit sizes 300 to 903 m2",
+   "amenity and engineering descriptions (tuned mass damper, LEED Platinum target)",
+   "developer track record: 60+ projects, about 5,500 units",
+   "agent page: prices from BRL 32M, completion estimate 2033-2035"
+  ],
+  "note": "Supertall residential tower by FG Empreendimentos with incorporacao registered as R-5 of matricula 67.763 at the 2nd property registry of Balneario Camboriu; 228 units of 300 to 903 m2 marketed from about BRL 32M. No handover date or progress figure is published by the developer (checked 31 Oct 2026).",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 32000000,
+   "currency": "BRL",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": true,
+   "permit_number": "R-5, matricula 67.763, 2o RI Balneario Camboriu",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "FG Empreendimentos states 40+ years, more than 60 large projects delivered and about 5,500 units (sennatower.com); One Tower built with Havan",
+   "units": 228,
+   "payment_plan": null,
+   "price_per_m2": 106700
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "sennatower.com and the 2025 sales book state 'Incorporacao registrada no R-5 da matricula 67.763, do 2o Registro de Imoveis de Balneario Camboriu/SC'. Trade press (Resumo Imobiliario, Sep 2026) repeats it from the site; no registry certificate opened.",
+   "escrow": "No patrimonio de afetacao or escrow arrangement stated on the developer site or agent page.",
+   "progress": "No % published. Resumo Imobiliario cites a Balneario Camboriu city hall note of 27 Mar 2026 that included a visit to the Senna Tower construction site; agent page says groundbreaking in H2 2025.",
+   "plans": "Unit descriptions with sizes only; no floor plan drawings found on the official site or agent page.",
+   "record": "Developer states 60+ megaprojects and about 5,500 units delivered; One Tower (with Havan) named.",
+   "returns": "No guaranteed rental or yield language on official site or agent page."
+  },
+  "claims": [
+   {
+    "claim": "Incorporacao registered as R-5 of matricula 67.763 at 2o RI Balneario Camboriu",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sennatower.com/"
+   },
+   {
+    "claim": "Site has active construction (city hall included site visit, Mar 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.resumoimobiliario.com.br/lancamentos/senna-tower-balneario-camboriu-o-que-e-oficial"
+   },
+   {
+    "claim": "228 units in total",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.resumoimobiliario.com.br/lancamentos/senna-tower-balneario-camboriu-o-que-e-oficial"
+   },
+   {
+    "claim": "Approx BRL 3 billion investment by FG and Havan",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.resumoimobiliario.com.br/lancamentos/senna-tower-balneario-camboriu-o-que-e-oficial"
+   },
+   {
+    "claim": "EIV and environmental installation licence approved (per 2024 release)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.resumoimobiliario.com.br/lancamentos/senna-tower-balneario-camboriu-o-que-e-oficial"
+   },
+   {
+    "claim": "Height over 500 m; world's tallest residential tower",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sennatower.com/"
+   },
+   {
+    "claim": "FG delivered 60+ projects, about 5,500 units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sennatower.com/"
+   },
+   {
+    "claim": "Completion 2033-2035 (agent estimate); no date on official site",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rocksinvestments.com/senna-tower-balneario-camboriu/"
+   },
+   {
+    "claim": "Prices from BRL 32M, penthouses BRL 200-300M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rocksinvestments.com/senna-tower-balneario-camboriu/"
+   },
+   {
+    "claim": "Foreigners can own on the same terms as Brazilians (CPF needed)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rocksinvestments.com/senna-tower-balneario-camboriu/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Balneario Camboriu, Brazil",
+   "developer_company": null,
+   "developer_projects_delivered": 60,
+   "developer_units_delivered": 5500,
+   "listed_or_audited": null,
+   "construction_start": "2025-07",
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "5-suite apartment",
+    "suspended mansion",
+    "duplex penthouse",
+    "triplex penthouse"
+   ],
+   "size_min_m2": 300,
+   "size_max_m2": 903,
+   "price_min": 32000000,
+   "price_max": 300000000,
+   "currency": "BRL",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold; foreigners buy directly with a CPF tax number (agent page)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Senna (Ayrton Senna brand)",
+   "amenities": [
+    "heated pool",
+    "wellness centre and spa",
+    "gym and pilates",
+    "party halls at about 460 m",
+    "market",
+    "sports courts",
+    "car elevator to units",
+    "8 high-speed elevators"
+   ],
+   "lat": -26.999,
+   "lng": -48.635,
+   "permit_authority": "Cartorio de Registro de Imoveis (incorporacao, Lei 4.591/1964); Prefeitura de Balneario Camboriu (alvara)",
+   "brochure_url": "https://lancamento.invexo.com.br/wp-content/uploads/2025/11/book-senna-tower-balneario-camboriu-sc.pdf"
+  },
+  "positives": [
+   "Incorporacao registration number and registry office published on every page, as Brazilian law requires",
+   "Large developer with a stated 60+ project and 5,500 unit track record",
+   "No guaranteed return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.sennatower.com/",
+   "https://rocksinvestments.com/senna-tower-balneario-camboriu/",
+   "https://www.resumoimobiliario.com.br/lancamentos/senna-tower-balneario-camboriu-o-que-e-oficial",
+   "https://lancamento.invexo.com.br/wp-content/uploads/2025/11/book-senna-tower-balneario-camboriu-sc.pdf",
+   "https://blog.varelaimob.com/senna-tower-registro-da-incorporacao/"
+  ],
+  "verified_score": 1
+ }
+]

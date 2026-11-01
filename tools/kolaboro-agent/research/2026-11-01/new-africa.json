@@ -1,0 +1,1163 @@
+[
+ {
+  "slug": "viva-calodyne-realist-development",
+  "name": "Viva Calodyne (Villas and Apartments)",
+  "developer": "Realist Development Ltd (SPVs Viva Calodyne One Ltd and Viva Calodyne Two Ltd)",
+  "area": "Calodyne / Saint Francois, Riviere du Rempart",
+  "country": "Mauritius",
+  "market": "Mauritius",
+  "stage": "off-plan",
+  "url": "https://www.barnes-mauritius.com/en/our-programs/new-project-off-plan-calodyne-calodyne-107",
+  "docs_url": "https://www.vivacalodyne.mu/VivaCalodyneVILLAS_Residence_En.html",
+  "permit_number": null,
+  "docs_listed": [
+   "PDS scheme stated (residency for non-citizens)",
+   "villa sizes 267 m2 and 521 m2, apartments 115 to 138 m2, penthouses 348 to 389 m2",
+   "agent price lists (EUR and MUR)",
+   "delivery date (agents: June 2028 or November 2028)",
+   "EDB register: Viva Calodyne One Ltd (20 villas) and Viva Calodyne Two Ltd (24 apartments, 4 penthouses), both PDS Certificate"
+  ],
+  "note": "Boutique PDS estate of 20 villas plus 24 apartments and 4 penthouses on the north coast; both SPVs hold a PDS Certificate on the EDB approved list. Agents quote MUR 17.5m to 51.4m and delivery in 2028, and an agent reported in Aug 2026 that construction had just started (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 17500000,
+   "currency": "MUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Realist Development names one earlier project, Coconut Grove (Pereybere apartments), which an agent described as being in its delivery phase in Aug 2026; no completed handovers documented",
+   "units": 48,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Developer says the project is built under the Property Development Scheme; EDB list of approved PDS projects shows PDS Certificate for both SPVs, but no certificate or building permit number is published",
+   "escrow": "No escrow, bank guarantee or completion guarantee mentioned on developer or agent pages",
+   "progress": "No progress figure or dated photos from the developer; agent Luxury Nest wrote on 22 Aug 2026 that construction had just begun",
+   "plans": "Only unit sizes and descriptions; no floor plans found on vivacalodyne.mu or agent pages opened",
+   "record": "Only earlier project is Coconut Grove (Pereybere), described in Aug 2026 as in delivery phase; testimonials on the developer site are unattributed",
+   "returns": "No guaranteed rental or yield language"
+  },
+  "positives": [
+   "Both project companies appear on the EDB official list of approved PDS projects with PDS Certificate status",
+   "Freehold title with residence permit eligibility above USD 375,000",
+   "Agents publish unit-level prices and sizes"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Viva Calodyne villas approved under the PDS (20 villas, wellness centre, kids corner)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://edbmauritius.org/wp-content/uploads/2022/10/List-of-Approved-PDS-Projects.pdf"
+   },
+   {
+    "claim": "Viva Calodyne apartments approved under the PDS (24 apartments, 4 penthouses)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://edbmauritius.org/wp-content/uploads/2022/10/List-of-Approved-PDS-Projects.pdf"
+   },
+   {
+    "claim": "Non-citizen buyers above USD 375,000 qualify for residence",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://new.edbmauritius.com/schemes"
+   },
+   {
+    "claim": "Delivery June 2028",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.barnes-mauritius.com/en/our-programs/new-project-off-plan-calodyne-calodyne-107"
+   },
+   {
+    "claim": "Construction has started (Aug 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://fr.linkedin.com/posts/luxury-nest_merci-%C3%A0-toute-l%C3%A9quipe-de-realist-development-activity-7496831803375349761-gyat"
+   },
+   {
+    "claim": "Prices from MUR 17.5m (apartments) to MUR 51.4m (villas)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertycloud.mu/blog/a-new-life-awaits-at-viva-calodyne"
+   },
+   {
+    "claim": "Developer has delivered projects on time (testimonials)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.realistdevelopment.com/"
+   },
+   {
+    "claim": "Coconut Grove, the developer's previous project, is in delivery",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.coconutgrove.mu/"
+   },
+   {
+    "claim": "Buyer payments protected by escrow or completion guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.vivacalodyne.mu/"
+   },
+   {
+    "claim": "Freehold ownership for foreigners",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://new.edbmauritius.com/schemes"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Pointe aux Canonniers, Mauritius",
+   "developer_company": "Viva Calodyne One Ltd and Viva Calodyne Two Ltd (EDB PDS list), promoter Realist Development",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-08",
+   "handover_promised": "2028-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "3BR penthouse",
+    "3-4BR villa"
+   ],
+   "size_min_m2": 115,
+   "size_max_m2": 521,
+   "price_min": 17500000,
+   "price_max": 51364800,
+   "currency": "MUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold under PDS, residence permit above USD 375,000",
+   "rental_programme": "none",
+   "service_charge": "managing agent (syndic) services stated, no figure",
+   "brand": null,
+   "amenities": [
+    "2,000 m2 garden",
+    "lap pool",
+    "wellness centre",
+    "kids corner",
+    "private pools for Signature Villas",
+    "gated entrance",
+    "jogging track"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Economic Development Board (PDS certificate); District Council of Riviere du Rempart (building permit)",
+   "brochure_url": "https://d21tw07c6rnmp0.cloudfront.net/media/uploads/811/brochures/project-ND140.pdf"
+  },
+  "sources": [
+   "https://edbmauritius.org/wp-content/uploads/2022/10/List-of-Approved-PDS-Projects.pdf",
+   "https://new.edbmauritius.com/schemes",
+   "https://www.vivacalodyne.mu/",
+   "https://www.vivacalodyne.mu/VivaCalodyneVILLAS_Residence_En.html",
+   "https://www.realistdevelopment.com/",
+   "https://www.coconutgrove.mu/",
+   "https://www.barnes-mauritius.com/en/our-programs/new-project-off-plan-calodyne-calodyne-107",
+   "https://www.propertycloud.mu/blog/a-new-life-awaits-at-viva-calodyne",
+   "https://seeff.mu/development/sunnyside/",
+   "https://www.engelvoelkers.com/mu/en/projects/f2a28a93-543b-5268-9919-e7d8d8c34292",
+   "https://d21tw07c6rnmp0.cloudfront.net/media/uploads/811/brochures/project-ND140.pdf",
+   "https://fr.linkedin.com/posts/luxury-nest_merci-%C3%A0-toute-l%C3%A9quipe-de-realist-development-activity-7496831803375349761-gyat"
+  ],
+  "verified_score": 1
+ },
+ {
+  "slug": "the-welnest-balaclava-valio-sur-mer",
+  "name": "The Welnest",
+  "developer": "Valio sur Mer Development Company Ltd (with The Welnest Villas Ltd and The Welnest Residences Ltd; Ramtoola family)",
+  "area": "Balaclava / Turtle Bay",
+  "country": "Mauritius",
+  "market": "Mauritius",
+  "stage": "under construction",
+  "url": "https://www.propertycloud.mu/fr/a-vendre/appartements-stnd301565",
+  "docs_url": "https://thewelnest.com/penthouses_new_layout/",
+  "permit_number": null,
+  "docs_listed": [
+   "EDB PDS approval stated in brochure",
+   "penthouse floor plans with room-by-room areas and prices (from USD 835,000)",
+   "Maritim Hotels partnership and rental management",
+   "agent: 2BR from USD 400,000, interest-free staged payments to delivery",
+   "EDB register: three SPVs (Valio sur Mer, Welnest Villas, Welnest Residences)"
+  ],
+  "note": "Resort-adjacent PDS next to the Maritim hotel launched in 2021; agents marketed Blocks E and F in May 2025 and still list units off-plan, while an agent page once gave villa delivery as March 2023. All three project companies appear on the EDB approved PDS list (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 400000,
+   "currency": "USD",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 97,
+   "payment_plan": "interest-free staged payment plan until delivery (agent listing)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": false,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Brochure says the project is approved by the EDB under the PDS Regulations 2015; no certificate or building permit number published. EDB list confirms PDS Certificate for Valio sur Mer (38 apartments, 12 penthouses) and The Welnest Villas (15 villas, 3 plots), and a Letter of Approval for The Welnest Residences (24 apartments, 5 penthouses)",
+   "escrow": "Nothing published about escrow or a completion guarantee",
+   "progress": "Only agent posts (May 2025: works progressing fast, Blocks E and F released); no percentage or dated developer updates",
+   "plans": "Developer page publishes penthouse floor plans with detailed area tables",
+   "record": "No previously completed project by the promoter is named",
+   "returns": "PropertyCloud listing advertises hotel management with 'potentiel de revenus locatifs garantis' (guaranteed rental income potential); developer brochure only mentions Maritim rental management"
+  },
+  "positives": [
+   "Three project companies all appear on the official EDB approved PDS list",
+   "Detailed floor plans with net and built areas published by the developer",
+   "Interest-free staged payments to delivery reported by agents"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Approved by the EDB under the PDS Regulations 2015",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://edbmauritius.org/wp-content/uploads/2022/10/List-of-Approved-PDS-Projects.pdf"
+   },
+   {
+    "claim": "Project of 47 units (2021 launch)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://edbmauritius.org/wp-content/uploads/2022/10/List-of-Approved-PDS-Projects.pdf"
+   },
+   {
+    "claim": "Villas to be delivered March 2023",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.barnes-mauritius.com/en/our-programs/balaclava-off-plan-luxury-villas-3-bedrooms-13"
+   },
+   {
+    "claim": "Construction under way with Blocks E and F released (May 2025)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.linkedin.com/feed/update/urn:li:activity:7332653538684080128"
+   },
+   {
+    "claim": "Construction completed (portal status field)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.propertycloud.mu/fr/a-vendre/appartements-stnd301565"
+   },
+   {
+    "claim": "Rental management by Maritim Hotels",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://seeff.mu/wp-content/uploads/2023/09/Project-Brochure.pdf"
+   },
+   {
+    "claim": "Guaranteed rental income potential",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertycloud.mu/fr/a-vendre/appartements-stnd301565"
+   },
+   {
+    "claim": "Penthouses from USD 835,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thewelnest.com/penthouses_new_layout/"
+   },
+   {
+    "claim": "Permanent residence for non-citizen buyer and family",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://new.edbmauritius.com/schemes"
+   },
+   {
+    "claim": "Buyer payments protected",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thewelnest.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Port Louis, Mauritius",
+   "developer_company": "Valio sur Mer Development Company Ltd, The Welnest Villas Ltd, The Welnest Residences Ltd (44 St Georges Street, Port Louis, per EDB list)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": "2023-Q1 (villas, agent page)",
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "3-5BR duplex penthouse",
+    "3-4BR villa",
+    "serviced plot"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": 402,
+   "price_min": 400000,
+   "price_max": 1325000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": "interest-free staged payments until delivery (agent)",
+   "foreign_ownership": "freehold under PDS with residence permit",
+   "rental_programme": "rental management by Maritim Hotels (no figures)",
+   "service_charge": null,
+   "brand": "Maritim (partner hotel)",
+   "amenities": [
+    "leisure heart with restaurant",
+    "pool and pool bar",
+    "fitness centre with sauna and hammam",
+    "rooftop bistro",
+    "kids zone",
+    "access to Maritim resort facilities",
+    "beach access"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Economic Development Board (PDS); Pamplemousses District Council (building permit)",
+   "brochure_url": "https://seeff.mu/wp-content/uploads/2023/09/Project-Brochure.pdf"
+  },
+  "sources": [
+   "https://edbmauritius.org/wp-content/uploads/2022/10/List-of-Approved-PDS-Projects.pdf",
+   "https://new.edbmauritius.com/schemes",
+   "https://thewelnest.com/",
+   "https://thewelnest.com/penthouses_new_layout/",
+   "https://seeff.mu/wp-content/uploads/2023/09/Project-Brochure.pdf",
+   "https://stanford-realty.com/en/properties/balaclava-welnest-ph-3-br",
+   "https://www.barnes-mauritius.com/en/our-programs/balaclava-off-plan-luxury-villas-3-bedrooms-13",
+   "https://www.propertycloud.mu/fr/a-vendre/appartements-stnd301565",
+   "https://www.linkedin.com/feed/update/urn:li:activity:7332653538684080128",
+   "https://immo-ile-maurice.com/the-welnest-pds-balaclava-ile-maurice/"
+  ],
+  "verified_score": 1
+ },
+ {
+  "slug": "the-spring-anahita-beau-champ-alteo",
+  "name": "The Spring, Anahita Beau Champ",
+  "developer": "Alteo Limited (Anahita Beau Champ Ltd)",
+  "area": "Beau Champ, Flacq (east coast)",
+  "country": "Mauritius",
+  "market": "Mauritius",
+  "stage": "off-plan",
+  "url": "https://zentima.com/properties/the-spring",
+  "docs_url": "https://property.anahitamauritius.com/en/new-villas/the-spring/",
+  "permit_number": null,
+  "docs_listed": [
+   "72 apartments (1-3BR), 26 townhouses, 6 villas",
+   "brochure with site plan, unit plans and sizes (55 to 175 m2)",
+   "VEFA payment milestones per unit type (10% + 15% + 5% then calls by construction stage)",
+   "indicative prices MUR 9.3m to 34.75m",
+   "agent unit list with handover 02/2029",
+   "Smart City scheme, residence permit above USD 375,000"
+  ],
+  "note": "New phase of Alteo's Anahita Beau Champ smart city, unveiled June 2026 and sold off-plan under VEFA with stage-based calls for funds; agents give handover February 2029 or Q1 2029. Alteo is SEM-listed and its audited reports describe VEFA villa construction and the first Beau Champ villa was handed over in Aug 2026 (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 9300000,
+   "currency": "MUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q1",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Alteo developed Anahita IRS (all serviced plots sold, villas delivered) and handed over the first off-plan villa at Anahita Beau Champ (Villa C10, L'Echo des Champs) in Aug 2026; stated in Alteo Integrated Report 2025 and developer posts",
+   "units": 104,
+   "payment_plan": "VEFA: 10% at reservation, 15% at deed notice, 5% at deed, then stage calls (apartments: 5/10/10/15/10/15/5) to handover",
+   "price_per_m2": 169091
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building permit or certificate number published; Anahita Beau Champ Ltd is on the EDB list of Smart City certificate holders and Alteo states the certificate was obtained in 2024",
+   "escrow": "VEFA stage payments are published but no escrow account, bank guarantee or completion guarantee is named",
+   "progress": "Phase is off-plan; developer posts dated progress for other phases of the estate (Oct 2026) but nothing for The Spring",
+   "plans": "Brochure (May 2026) shows site plan and unit plans for apartments, townhouses and villas",
+   "record": "Alteo Integrated Report 2025 (audited group) reports VEFA villa construction, Anahita IRS plot and villa sales; first Beau Champ off-plan villa handed over Aug 2026",
+   "returns": "Brochure and project page mention rental investment use but no guaranteed income or yield"
+  },
+  "positives": [
+   "Developer is a Stock Exchange of Mauritius listed group with audited accounts",
+   "Smart City certificate holder on the EDB list",
+   "Payment calls tied to construction milestones, 5% held to handover",
+   "Unit plans, sizes and unit-level prices published"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Anahita Beau Champ holds a Smart City certificate",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://residency.mu/acquire/smart-city-scheme/"
+   },
+   {
+    "claim": "Anahita Beau Champ smart city promoted by Alteo Group",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://residency.mu/wp-content/uploads/2021/06/List-Smart-City-projects-with-contact-details-2025.pdf"
+   },
+   {
+    "claim": "Alteo is listed and reports VEFA villa revenue at Anahita",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.stockexchangeofmauritius.com/media/11714/alteo_abridged_30062025.pdf"
+   },
+   {
+    "claim": "Construction of the first off-plan apartments at Beau Champ began in Q1 FY26",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://alteo.mu/wp-content/uploads/2025/11/Integrated_Report_2025.pdf"
+   },
+   {
+    "claim": "First off-plan villa at Beau Champ handed over Aug 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://linkedin.com/company/anahita-mauritius-estate"
+   },
+   {
+    "claim": "Handover February 2029 (agent)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://zentima.com/properties/the-spring"
+   },
+   {
+    "claim": "Delivery not communicated (Barnes)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.barnes-mauritius.com/programmes-neufs/the-spring-anahita-beau-champ-vefa-appartements-beau-champ-99"
+   },
+   {
+    "claim": "Prices from MUR 9.3m (1BR 55 m2)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://property.anahitamauritius.com/en/new-villas/the-spring/"
+   },
+   {
+    "claim": "Residence permit for purchases of USD 375,000 or more in a smart city",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://residency.mu/acquire/smart-city-scheme/"
+   },
+   {
+    "claim": "Buyer funds protected by completion guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://s3.entegral.net/files/10945/Brochure-The-Spring-EN_compressed-9640e8ddc90f4f1e98172aee24cfc898.pdf"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Beau Champ, Mauritius",
+   "developer_company": "Anahita Beau Champ Ltd, wholly owned by Alteo Ltd",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Alteo Limited listed on the Stock Exchange of Mauritius; audited annual accounts (FY to 30 June)",
+   "construction_start": null,
+   "handover_promised": "2029-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "3BR townhouse",
+    "3BR villa"
+   ],
+   "size_min_m2": 55,
+   "size_max_m2": 175,
+   "price_min": 9300000,
+   "price_max": 34750000,
+   "currency": "MUR",
+   "deposit_pct": 10,
+   "payment_plan": "VEFA milestone calls, 5% at handover",
+   "foreign_ownership": "freehold under Smart City scheme, residence permit above USD 375,000",
+   "rental_programme": "none stated",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "Spring Park",
+    "Zeste pool and cafe",
+    "Clavis international school",
+    "beach and boat club (Amarela)",
+    "golf nearby",
+    "productive gardens",
+    "sports centre"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Economic Development Board (Smart City certificate); Flacq District Council (building permit)",
+   "brochure_url": "https://s3.entegral.net/files/10945/Brochure-The-Spring-EN_compressed-9640e8ddc90f4f1e98172aee24cfc898.pdf"
+  },
+  "sources": [
+   "https://blog.anahitamauritius.com/property/the-spring-a-new-residential-neighbourhood/",
+   "https://property.anahitamauritius.com/en/new-villas/the-spring/",
+   "https://s3.entegral.net/files/10945/Brochure-The-Spring-EN_compressed-9640e8ddc90f4f1e98172aee24cfc898.pdf",
+   "https://zentima.com/properties/the-spring",
+   "https://www.barnes-mauritius.com/programmes-neufs/the-spring-anahita-beau-champ-vefa-appartements-beau-champ-99",
+   "https://www.engelvoelkers.com/mu/en/exposes/33e6d76f-a2cb-51cb-b3b7-37690a0b02de",
+   "https://alteo.mu/wp-content/uploads/2025/11/Integrated_Report_2025.pdf",
+   "https://www.stockexchangeofmauritius.com/media/11714/alteo_abridged_30062025.pdf",
+   "https://www.stockexchangeofmauritius.com/media/11947/alteo-abridged-30092025.pdf",
+   "https://linkedin.com/company/anahita-mauritius-estate",
+   "https://residency.mu/acquire/smart-city-scheme/",
+   "https://residency.mu/wp-content/uploads/2021/06/List-Smart-City-projects-with-contact-details-2025.pdf",
+   "https://www.lexpressproperty.com/en/news-advices/invest/these-smart-cities-are-shaping-the-mauritius-of-tomorrow.html"
+  ],
+  "verified_score": 2
+ },
+ {
+  "slug": "marassi-red-sea-emaar-misr",
+  "name": "Marassi Red Sea (Phase 1)",
+  "developer": "Emaar Misr for Development S.A.E. (with Citystars Properties / Golden Coast as land partner)",
+  "area": "Soma Bay / Safaga, Red Sea",
+  "country": "Egypt",
+  "market": "Egypt",
+  "stage": "off-plan",
+  "url": "https://enterpriseam.com/egypt/2026/09/15/emaar-misr-signs-egp-14-bn-in-construction-contracts-for-marassi-red-sea/",
+  "docs_url": "https://www.emaarmisr.com/our-communities/marassi-red-sea/",
+  "permit_number": null,
+  "docs_listed": [
+   "community page with dated construction update (September 2025)",
+   "Laguna Villas & Townhomes brochure (Apr 2026) with unit types R-6A to TH-1C, 164 to 345 m2 gross",
+   "fully finished units",
+   "Marina Bay, Marina Waterfront, Marina Shore and Marina Views residences (sizes only)",
+   "press: EGP 20bn phase-1 construction contracts, handover 2029"
+  ],
+  "note": "2,426-feddan resort near Hurghada signed with Citystars in Sept 2025; Emaar Misr awarded about EGP 20bn of phase-1 contracts (Arabian Construction Co, Rowad, Innovo) with handover in 2029. Emaar publishes sizes and brochures but no prices or payment plan; portals quote apartments from EGP 11m (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 11000000,
+   "currency": "EGP",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Emaar Misr delivered Marassi North Coast, Mivida and Uptown Cairo; audited H1 2026 statements show revenue from units handed over in these projects and completed land registration for them",
+   "units": null,
+   "payment_plan": "portals: instalments up to 7 years; Emaar Misr accounts note schedules up to 8 years generally",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence, decree or building permit number published by Emaar Misr or portals",
+   "escrow": "Nothing published on escrow or deposit protection; Egypt has no mandatory off-plan escrow and payments go to the developer",
+   "progress": "Community page shows a dated construction update (September 2025); Zawya reported in Aug 2026 that site grading for phase 1 was nearing completion",
+   "plans": "Emaar brochure for Laguna Villas & Townhomes shows typology plans and gross areas",
+   "record": "EGX-listed; reviewed interim statements to 30 June 2026 show handover revenue at Marassi, Uptown Cairo, Mivida and Cairo Gate",
+   "returns": "No guaranteed return language from Emaar; a portal mentions 'rental returns' generically"
+  },
+  "positives": [
+   "Developer listed on the Egyptian Exchange with reviewed financial statements",
+   "Main construction contracts awarded and reported by independent press, with 2029 handover",
+   "Dated construction updates and unit brochures on the developer site"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "EGP 900bn development agreement with Citystars signed Sept 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://enterpriseam.com/egypt/2026/09/15/emaar-misr-signs-egp-14-bn-in-construction-contracts-for-marassi-red-sea/"
+   },
+   {
+    "claim": "Phase-1 construction contracts of about EGP 20bn awarded",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://enterpriseam.com/egypt/2026/09/15/emaar-misr-signs-egp-14-bn-in-construction-contracts-for-marassi-red-sea/"
+   },
+   {
+    "claim": "Site grading for phase 1 nearing completion (Aug 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.zawya.com/en/projects/emaar-misr-lines-up-358mln-villa-contracts-for-marassi-red-sea-project-419855"
+   },
+   {
+    "claim": "Phase-1 handover in 2029",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://enterpriseam.com/egypt/2026/09/15/emaar-misr-signs-egp-14-bn-in-construction-contracts-for-marassi-red-sea/"
+   },
+   {
+    "claim": "Phase-1 sales above EGP 80bn",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://enterpriseam.com/egypt/2026/09/15/emaar-misr-signs-egp-14-bn-in-construction-contracts-for-marassi-red-sea/"
+   },
+   {
+    "claim": "Emaar Misr is a registered Egyptian joint stock company (commercial register No. 12841) listed on EGX since 2015",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://static.mubasher.info/File.Mix_Announcement_File/871D51C9-B833-4510-B206-BA3DC35395BB.pdf"
+   },
+   {
+    "claim": "Emaar Misr has delivered units at Marassi, Uptown Cairo and Mivida",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://static.mubasher.info/File.Mix_Announcement_File/871D51C9-B833-4510-B206-BA3DC35395BB.pdf"
+   },
+   {
+    "claim": "Land registered in Emaar Misr's name",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://static.mubasher.info/File.Mix_Announcement_File/871D51C9-B833-4510-B206-BA3DC35395BB.pdf"
+   },
+   {
+    "claim": "Apartments from EGP 11m, villas EGP 42m to 95m",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://elbayt.com/en/real-estate/marassi-red-sea-in-soma-bay-launch-highlights-pricing-guide"
+   },
+   {
+    "claim": "Vida branded residences launched 14 Sept 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://d5realty.com/vida-branded-residences-marassi-red-sea/"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emaarmisr.com/our-communities/marassi-red-sea/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2005,
+   "developer_hq": "Cairo, Egypt",
+   "developer_company": "Emaar Misr for Development S.A.E., commercial register No. 12841 (16 March 2005); subsidiary of Emaar Properties PJSC",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Listed on the Egyptian Exchange (EMFD.CA) since March 2015; reviewed interim statements to 30 June 2026",
+   "construction_start": "2026-09",
+   "handover_promised": "2029",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR chalet",
+    "townhouse",
+    "twin house",
+    "villa",
+    "water home"
+   ],
+   "size_min_m2": 65,
+   "size_max_m2": 647,
+   "price_min": 11000000,
+   "price_max": 95000000,
+   "currency": "EGP",
+   "deposit_pct": null,
+   "payment_plan": "instalments up to 7 years (portal)",
+   "foreign_ownership": "freehold; Egyptian law allows foreigners to own a limited number of residential units",
+   "rental_programme": "Vida-branded residences reported; no figures",
+   "service_charge": null,
+   "brand": "Vida (Emaar Hospitality)",
+   "amenities": [
+    "12 hotels planned",
+    "3 marinas",
+    "swimmable lagoons",
+    "1.5 km infinity beach",
+    "Marassi Wonders entertainment zone",
+    "500+ retail and dining outlets",
+    "longevity and wellness centre"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Tourism Development Authority / Red Sea Governorate (resort land); building licences by the competent authority",
+   "brochure_url": "https://www.emaarmisr.com/wp-content/uploads/2026/02/Emaar-Misr-Marassi-Red-Sea-Brochures-APR26-Laguna-Villas-Townhomes.pdf"
+  },
+  "sources": [
+   "https://www.emaarmisr.com/our-communities/marassi-red-sea/",
+   "https://www.emaarmisr.com/wp-content/uploads/2026/02/Emaar-Misr-Marassi-Red-Sea-Brochures-APR26-Laguna-Villas-Townhomes.pdf",
+   "https://enterpriseam.com/egypt/2026/09/15/emaar-misr-signs-egp-14-bn-in-construction-contracts-for-marassi-red-sea/",
+   "https://www.zawya.com/en/projects/emaar-misr-lines-up-358mln-villa-contracts-for-marassi-red-sea-project-419855",
+   "https://d5realty.com/vida-branded-residences-marassi-red-sea/",
+   "https://elbayt.com/en/real-estate/marassi-red-sea-in-soma-bay-launch-highlights-pricing-guide",
+   "https://static.mubasher.info/File.Mix_Announcement_File/871D51C9-B833-4510-B206-BA3DC35395BB.pdf",
+   "https://foudalens.com/disclosures/EMFD.CA/financial_statement/2026-08-09_292592_1.pdf",
+   "https://www.zawya.com/en/capital-markets/emaar-misr-posts-41.9-yoy-hike-in-consolidated-profits-in-h1-2026-426243"
+  ],
+  "verified_score": 2
+ },
+ {
+  "slug": "southmed-talaat-moustafa-group",
+  "name": "SouthMED",
+  "developer": "Talaat Moustafa Group Holding (TMG), under a development agreement with the landowner",
+  "area": "Km 165 Alexandria-Matrouh Road, El Dabaa, North Coast",
+  "country": "Egypt",
+  "market": "Egypt",
+  "stage": "under construction",
+  "url": "https://dailynewsegypt.com/2026/06/05/talaat-moustafa-group-leads-north-coast-construction-race-with-record-execution-rates-at-southmed/",
+  "docs_url": "https://talaatmoustafa.com/communities/southmed/",
+  "permit_number": null,
+  "docs_listed": [
+   "23m m2 master plan, 8 km beach, marina, golf, Four Seasons hospitality",
+   "typology names (Villa Types 3 to 6, Chalet Type C)",
+   "investor presentation 1H 2026: ~25k units sold, >60k planned, first-phase delivery 2029",
+   "press: chalets from EGP 12m, 1.5% down payment, up to 15 years"
+  ],
+  "note": "Mega coastal destination launched July 2024 and sold under TMG's asset-light development agreement with the landowner; TMG reports EGP 510bn+ of sales and about 25,000 units sold. TMG's investor deck gives first-phase delivery in 2029 while press reports say 2028; a consultant report says phase-1 concrete works are complete (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 12000000,
+   "currency": "EGP",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "TMG delivered Al Rehab City, Madinaty (120k-unit city, largely sold), Al Rabwa, May Fair and Virginia Beach; stated in TMG investor presentation and listed-company reports",
+   "units": 60000,
+   "payment_plan": "down payment from 1.5%, instalments up to 15 years (press citing The Board Consulting)",
+   "price_per_m2": 123711
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence or building permit number published",
+   "escrow": "No escrow or deposit protection published; under the asset-light model TMG earns fees on sales and collections for the landowner",
+   "progress": "No developer progress figure or dated photos found; The Board Consulting report (Daily News Egypt, June 2026) says phase-1 concrete works are complete",
+   "plans": "Developer page names villa and chalet typologies but no floor plan drawings were confirmed",
+   "record": "EGX-listed TMG reports delivered cities (Rehab, Madinaty) and a backlog of ~44,000 units excluding SouthMED in its 1H 2026 investor presentation",
+   "returns": "No guaranteed return language"
+  },
+  "positives": [
+   "Developer is a large EGX-listed group with a long delivery record",
+   "Very low down payment and long instalment plans reported",
+   "Independent consultant reports visible construction progress on phase 1"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "First-phase delivery in 2029",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.dailynewsegypt.com/2026/08/18/southmed-project-sales-reach-egp-520bn-as-north-coast-drives-egyptian-real-estate-market/"
+   },
+   {
+    "claim": "Phase-1 concrete works completed (June 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://dailynewsegypt.com/2026/06/05/talaat-moustafa-group-leads-north-coast-construction-race-with-record-execution-rates-at-southmed/"
+   },
+   {
+    "claim": "Cumulative sales above EGP 500bn by mid-2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.dailynewsegypt.com/2026/07/05/tmg-holding-posts-egp-219-1bn-in-h1-2026-sales/"
+   },
+   {
+    "claim": "About 25,000 units sold, more than 60,000 planned",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://talaatmoustafa.com/Upload/TMGH%20IRP%20-%201H%202026.pdf"
+   },
+   {
+    "claim": "TMG develops under an asset-light agreement with the landowner (not on TMG balance sheet)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.dailynewsegypt.com/2024/12/23/tmg-sales-exceed-10bn-in-2024-solidifying-regional-real-estate-leadership/"
+   },
+   {
+    "claim": "USD 21bn investment and USD 35bn expected sales",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.reuters.com/world/middle-east/egypts-talaat-moustafa-group-invest-21-bln-north-coast-development-2024-07-02/"
+   },
+   {
+    "claim": "TMG has delivered large communities such as Madinaty and Rehab",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://talaatmoustafa.com/upload/TMG%20Holding%20First%20Half%20Ending%20June%2030,%202025%20Earning%20Release.%20August%202025.pdf"
+   },
+   {
+    "claim": "Chalets of 97 m2 from EGP 12m, 1.5% down payment, 15 years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dailynewsegypt.com/2026/06/05/talaat-moustafa-group-leads-north-coast-construction-race-with-record-execution-rates-at-southmed/"
+   },
+   {
+    "claim": "Four Seasons hospitality at SouthMED",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://southmed.talaatmoustafa.com/english/"
+   },
+   {
+    "claim": "Land ownership by the named landowner",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://talaatmoustafa.com/upload/TMGH%20IR%20presentation%20September%202024.pdf"
+   },
+   {
+    "claim": "Building permits issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://talaatmoustafa.com/communities/southmed/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Cairo, Egypt",
+   "developer_company": "Talaat Moustafa Group Holding (EGX: TMGH)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Listed on the Egyptian Exchange; audited annual and reviewed interim accounts",
+   "construction_start": null,
+   "handover_promised": "2029",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "chalet",
+    "twin house",
+    "villa",
+    "beachfront villa",
+    "marina apartment",
+    "branded residence"
+   ],
+   "size_min_m2": 97,
+   "size_max_m2": 501,
+   "price_min": 12000000,
+   "price_max": 91200000,
+   "currency": "EGP",
+   "deposit_pct": 1.5,
+   "payment_plan": "1.5% booking, quarterly instalments up to 15 years",
+   "foreign_ownership": "freehold; foreigners may own a limited number of units in Egypt",
+   "rental_programme": "none stated",
+   "service_charge": null,
+   "brand": "Four Seasons (hospitality)",
+   "amenities": [
+    "8 km beach",
+    "107 km swimmable lagoons",
+    "international marina",
+    "18-hole golf",
+    "theme park",
+    "sports centre",
+    "open-air mall"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "New Urban Communities Authority / North Coast development authorities",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://talaatmoustafa.com/communities/southmed/",
+   "https://southmed.talaatmoustafa.com/english/",
+   "https://talaatmoustafa.com/tmg-introduces-southmed/",
+   "https://talaatmoustafa.com/Upload/TMGH%20IRP%20-%201H%202026.pdf",
+   "https://talaatmoustafa.com/upload/TMGH%20IR%20presentation%20September%202024.pdf",
+   "https://talaatmoustafa.com/upload/TMG%20Holding%20First%20Half%20Ending%20June%2030,%202025%20Earning%20Release.%20August%202025.pdf",
+   "https://dailynewsegypt.com/2026/06/05/talaat-moustafa-group-leads-north-coast-construction-race-with-record-execution-rates-at-southmed/",
+   "https://www.dailynewsegypt.com/2026/08/18/southmed-project-sales-reach-egp-520bn-as-north-coast-drives-egyptian-real-estate-market/",
+   "https://www.dailynewsegypt.com/2026/07/05/tmg-holding-posts-egp-219-1bn-in-h1-2026-sales/",
+   "https://www.dailynewsegypt.com/2024/12/23/tmg-sales-exceed-10bn-in-2024-solidifying-regional-real-estate-leadership/",
+   "https://www.reuters.com/world/middle-east/egypts-talaat-moustafa-group-invest-21-bln-north-coast-development-2024-07-02/",
+   "https://www.businessmen-me.com/en/1252/talaat-moustafa-boosts-delivery-pace-across-flagship-developments"
+  ],
+  "verified_score": 2
+ },
+ {
+  "slug": "la-casa-resort-hurghada-sama-developments",
+  "name": "LA CASA Resort",
+  "developer": "Sama Hurghada Developments (Sama Developments)",
+  "area": "Intercontinental Area, Hurghada",
+  "country": "Egypt",
+  "market": "Egypt",
+  "stage": "off-plan",
+  "url": "https://mamoproperty.com/la-casa-resort-boutique-apartments-in-intercontinental-hurghada-new-development-by-sama/",
+  "docs_url": "https://al-yaseen-developments.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "88 apartments in two buildings on 1,500 m2, basement + ground + 3 floors",
+   "studio to 3BR, 40 to 115 m2, Super Lux finishing",
+   "35% down payment, 8 quarterly payments over 2 years, 10% cash discount, 7% maintenance at delivery",
+   "agent prices from EUR 23,836 to 27,000",
+   "construction start May 2026; delivery November 2027 or August 2028 depending on agent",
+   "developer site: list of delivered projects with years"
+  ],
+  "note": "Small boutique block sold mainly through Hurghada agents to European buyers; agents disagree on delivery (November 2027 vs August 2028) and starting price. The developer's own site lists a dozen delivered Hurghada buildings but nothing independent confirms them, and no permit or deposit protection is published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 23836,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Developer website lists delivered Hurghada projects including Sama 1 (2010), The Green House (2015), Al Kawthar Jewel (2017), Lotus Tower (2020), Juliana Beach Resort, Sama Sky and Sama Diamond (2022); one agent instead cites 'Stone Heights' (244 units)",
+   "units": 88,
+   "payment_plan": "35% down, balance in 8 quarterly instalments over 2 years; 10% cash discount; 7% maintenance at delivery",
+   "price_per_m2": 596
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building licence or permit number published by the developer or agents",
+   "escrow": "No escrow or guarantee; agents state instalments are paid directly to the developer",
+   "progress": "Agents say construction was planned to start May 2026; no dated photos or figures found",
+   "plans": "Agents advise buyers to ask for the floor plan; no plans published",
+   "record": "Developer website names 12 delivered projects with years and locations; not independently confirmed",
+   "returns": "Agents mention rental demand but no guaranteed income"
+  },
+  "positives": [
+   "Payment plan, unit sizes and cash discount are published in detail",
+   "Developer names a list of earlier delivered buildings with years",
+   "Short instalment period limits exposure before handover"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Delivery November 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://hurghadiansproperty.com/projects/la-casa-resort/"
+   },
+   {
+    "claim": "Construction started May 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mamoproperty.com/la-casa-resort-boutique-apartments-in-intercontinental-hurghada-new-development-by-sama/"
+   },
+   {
+    "claim": "Price from EUR 23,836",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://mamoproperty.com/property/la-casa-resort-intercontinental-hurghada-new-development-by-sama/"
+   },
+   {
+    "claim": "88 apartments on a 1,500 m2 plot",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://hurghadianspropertydevelopment.com/la-casa-resort/"
+   },
+   {
+    "claim": "Developer delivered 12 projects in Hurghada since 2010",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://al-yaseen-developments.com/"
+   },
+   {
+    "claim": "Developer delivered Stone Heights (244 units)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thehorizonrealestate.com/area/la-casa-residential-resort/"
+   },
+   {
+    "claim": "Freehold ownership with full rights for foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mamoproperty.com/la-casa-resort-boutique-apartments-in-intercontinental-hurghada-new-development-by-sama/"
+   },
+   {
+    "claim": "Registered contract with the developer",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mamoproperty.com/la-casa-resort-boutique-apartments-in-intercontinental-hurghada-new-development-by-sama/"
+   },
+   {
+    "claim": "Developer company is registered (commercial register)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://al-yaseen-developments.com/page87045256.html"
+   },
+   {
+    "claim": "Building licence issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://hurghadiansproperty.com/projects/la-casa-resort/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Hurghada, Egypt",
+   "developer_company": null,
+   "developer_projects_delivered": 12,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-05",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "retail"
+   ],
+   "size_min_m2": 40,
+   "size_max_m2": 115,
+   "price_min": 23836,
+   "price_max": 73525,
+   "currency": "EUR",
+   "deposit_pct": 35,
+   "payment_plan": "35% + 8 quarterly payments",
+   "foreign_ownership": "freehold apartment ownership (agents)",
+   "rental_programme": "none",
+   "service_charge": "7% maintenance deposit at delivery",
+   "brand": null,
+   "amenities": [
+    "central swimming pool",
+    "basement",
+    "fully finished units"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Hurghada City Council / Red Sea Governorate",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://mamoproperty.com/la-casa-resort-boutique-apartments-in-intercontinental-hurghada-new-development-by-sama/",
+   "https://mamoproperty.com/property/la-casa-resort-intercontinental-hurghada-new-development-by-sama/",
+   "https://hurghadiansproperty.com/projects/la-casa-resort/",
+   "https://hurghadianspropertydevelopment.com/la-casa-resort/",
+   "https://thehorizonrealestate.com/area/la-casa-residential-resort/",
+   "https://al-yaseen-developments.com/",
+   "https://al-yaseen-developments.com/page87045256.html"
+  ],
+  "verified_score": 0
+ }
+]

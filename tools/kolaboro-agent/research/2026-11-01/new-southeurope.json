@@ -201,8 +201,8 @@
     "underground parking",
     "supermarket"
    ],
-   "lat": 35.925,
-   "lng": 14.488,
+   "lat": null,
+   "lng": null,
    "permit_authority": "Planning Authority (Malta)",
    "brochure_url": null
   },
@@ -371,8 +371,8 @@
     "video intercom",
     "double glazing"
    ],
-   "lat": 35.925,
-   "lng": 14.475,
+   "lat": null,
+   "lng": null,
    "permit_authority": "Planning Authority (Malta)",
    "brochure_url": null
   },
@@ -570,8 +570,8 @@
     "car-free environment",
     "seafront"
    ],
-   "lat": 35.893,
-   "lng": 14.533,
+   "lat": null,
+   "lng": null,
    "permit_authority": "Planning Authority (Malta)",
    "brochure_url": null
   },
@@ -925,8 +925,8 @@
     "park views",
     "350 m from the sea"
    ],
-   "lat": 37.886,
-   "lng": 23.734,
+   "lat": null,
+   "lng": null,
    "permit_authority": "Greek building service (YDOM) / Ministry for Ellinikon special plan",
    "brochure_url": null
   },
@@ -1277,10 +1277,2300 @@
     "clubhouse access",
     "housekeeping"
    ],
-   "lat": 38.71,
-   "lng": -9.135,
+   "lat": null,
+   "lng": null,
    "permit_authority": "Camara Municipal de Lisboa",
    "brochure_url": "https://andoliving.com/wp-content/uploads/2025/07/Newspaper_Pedras-Negras_EN_low.pdf"
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "nouvelle-vague-antibes-kaufman-broad",
+  "name": "Nouvelle Vague",
+  "developer": "Kaufman & Broad",
+  "area": "195 chemin du Petit Four, Antibes",
+  "country": "France",
+  "market": "French Riviera",
+  "stage": "under construction",
+  "url": "https://www.immoneuf.com/programme/annonce-immobilier-neuf/antibes-06-g8853/p420839",
+  "docs_url": "https://www.superneuf.com/annonces/programme-neuf-antibes-06600-s92ek2",
+  "permit_number": "PC 006 004 24 A0028",
+  "docs_listed": [
+   "lot list with surfaces, floors and prices",
+   "plans per lot on request",
+   "works in progress (travaux en cours)",
+   "delivery Q3 2027 (09/2027)",
+   "VEFA legal guarantees incl. GFA",
+   "promotional discount to 31 Oct 2026"
+  ],
+  "note": "54 flats in two buildings (21 social) by listed developer Kaufman & Broad under permit PC 006 004 24 A0028 granted 27 Nov 2024; works in progress, sold in VEFA from about EUR 201,000 to 434,000 with delivery now shown as Q3 2027 on portals versus Q1 2027 on VefaConnect (checked 31 Oct 2026).",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 201000,
+   "currency": "EUR",
+   "title": "freehold (VEFA)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": true,
+   "permit_number": "PC 006 004 24 A0028",
+   "plans_published": true,
+   "escrow": "VEFA with statutory garantie financiere d'achevement (GFA) stated on listing pages; guarantor not named",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Kaufman & Broad is a listed national developer with about 240 programmes listed on VefaConnect; no Antibes deliveries named on the pages opened",
+   "units": 54,
+   "payment_plan": "VEFA staged payments by construction stage (statutory)",
+   "price_per_m2": 8638
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "evidence": {
+   "permit": "Permit PC 06 004 24 A0028, granted 27/11/2024 to Kaufman & Broad for 54 units (21 social), reproduced by Antibes residents' association Antibeton from the urbanisme notice and by PSS archi; not shown on the developer listing; the 27/11/2024 housing permit for 195 chemin du Petit Four (parcels AT34, AT342, 2,850 m2) appears in Sit@del data mirrored by basedespermis.fr",
+   "escrow": "VEFA sale with GFA, GPA, biennale and decennale guarantees stated (VefaConnect; vefa-riviera guide); GFA is mandatory for VEFA under French law",
+   "progress": "Superneuf listing marks 'travaux en cours'; PSS lists status 'en construction'",
+   "plans": "Plan per lot ('Plan et Infos') on Superneuf; 'Recevoir le plan' on Immoneuf",
+   "record": "Kaufman & Broad is a national developer listed on Euronext Paris",
+   "returns": "No guaranteed returns; marketed for LMNP / LLI / Jeanbrun tax schemes"
+  },
+  "positives": [
+   "Permit number and grant date traceable",
+   "Statutory VEFA completion guarantee (GFA)",
+   "Lot-by-lot prices and surfaces published",
+   "Large listed developer"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.vefaconnect.com/program/nouvelle-vague-06600/",
+   "https://www.superneuf.com/annonces/programme-neuf-antibes-06600-s92ek2",
+   "https://www.immoneuf.com/programme/annonce-immobilier-neuf/antibes-06-g8853/p420839",
+   "https://antibeton.communiquer.net/2024/05/26/195petitfour/",
+   "https://www.pss-archi.eu/immeubles/FR-06004-95725.html",
+   "https://basedespermis.fr/permis-de-construire-antibes-06004"
+  ],
+  "verification": {
+   "permit": "registry",
+   "escrow": "developer",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Permit PC 006 004 24 A0028 granted 27 Nov 2024 (2,850 m2, parcels AT34/AT342)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://basedespermis.fr/permis-de-construire-antibes-06004"
+   },
+   {
+    "claim": "54 units incl. 21 social, 2,850 m2 floor area",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.pss-archi.eu/immeubles/FR-06004-95725.html"
+   },
+   {
+    "claim": "Delivery Q1 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.immoneuf.com/programme/annonce-immobilier-neuf/antibes-06-g8853/p420839"
+   },
+   {
+    "claim": "Works in progress",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.pss-archi.eu/immeubles/FR-06004-95725.html"
+   },
+   {
+    "claim": "Prices from EUR 201,000",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.immoneuf.com/programme/annonce-immobilier-neuf/antibes-06-g8853/p420839"
+   },
+   {
+    "claim": "GFA completion guarantee in place",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.vefaconnect.com/program/nouvelle-vague-06600/"
+   },
+   {
+    "claim": "Developer is Kaufman & Broad",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://antibeton.communiquer.net/2024/05/26/195petitfour/"
+   },
+   {
+    "claim": "Rooftop pool and solariums",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.superneuf.com/annonces/programme-neuf-antibes-06600-s92ek2"
+   },
+   {
+    "claim": "Freehold apartments with no guaranteed rent",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.superneuf.com/annonces/programme-neuf-antibes-06600-s92ek2"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Courbevoie, France",
+   "developer_company": "Kaufman & Broad (registration not shown on pages opened)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Listed on Euronext Paris",
+   "construction_start": null,
+   "handover_promised": "2027-Q3",
+   "original_handover": "2027-Q1",
+   "delay_months": 6,
+   "unit_types": [
+    "studio",
+    "2-room",
+    "3-room"
+   ],
+   "size_min_m2": 23.27,
+   "size_max_m2": 48.2,
+   "price_min": 201000,
+   "price_max": 434000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": "VEFA staged calls for funds",
+   "foreign_ownership": "Freehold, no restriction on foreign buyers",
+   "rental_programme": "none (tax schemes LMNP, LLI, Jeanbrun mentioned)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "rooftop pool",
+    "rooftop solariums",
+    "underground parking",
+    "bike storage",
+    "cellars",
+    "private outdoor space for each flat"
+   ],
+   "lat": 43.598,
+   "lng": 7.119,
+   "permit_authority": "Mairie d'Antibes, service urbanisme",
+   "brochure_url": null
+  },
+  "verified_score": 2
+ },
+ {
+  "slug": "angelina-antibes-marignan",
+  "name": "Angelina",
+  "developer": "Marignan (Marignan Cote d'Azur; permit holder SNC IP1R)",
+  "area": "487 chemin du Petit Four, La Fontonne, Antibes",
+  "country": "France",
+  "market": "French Riviera",
+  "stage": "under construction",
+  "url": "https://www.marignan-immobilier.com/habiter/programmes-neufs/angelina-antibes-01097",
+  "docs_url": "https://www.marignan-immobilier.com/habiter/programmes-neufs/angelina-antibes-01097",
+  "permit_number": "PC 006004 23 A0106",
+  "docs_listed": [
+   "price from EUR 399,000 and monthly equivalent",
+   "4 remaining lots, 2 to 4 rooms",
+   "delivery Q1 2027",
+   "48 flats with private outdoor space",
+   "specification list (agent page)"
+  ],
+  "note": "48-flat VEFA scheme (20 social, 4 BRS) under permit 006004 23 A0106 granted 25 Apr 2024, with works opened 29 Jan 2025 per the national Sit@del permit data; developer shows delivery Q1 2027 and 4 lots left from EUR 399,000 (checked 31 Oct 2026).",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 399000,
+   "currency": "EUR",
+   "title": "freehold (VEFA)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q1",
+   "permit_claim": false,
+   "permit_number": "PC 006004 23 A0106",
+   "plans_published": false,
+   "escrow": "VEFA with statutory garantie d'achevement / GFA stated on agent guide page; guarantor not named",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Marignan is a national developer; no delivered programmes named on the pages opened",
+   "units": 48,
+   "payment_plan": "VEFA staged calls for funds",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Developer page publishes no permit number; PC 00600423A0106 (granted 25/04/2024, 48 units, applicant SNC IP1R) is in Sit@del data mirrored by basedespermis.fr and VefaConnect, and in the residents' association permit history",
+   "escrow": "Agent page (VEFA Riviera) lists the garantie financiere d'achevement as obligatory at signing; developer page silent",
+   "progress": "Sit@del: works opened (DOC) 29/01/2025, no completion declaration yet; agent: 'travaux en cours'",
+   "plans": "No floor plans published on pages opened",
+   "record": "No delivered projects named on the project page",
+   "returns": "No guaranteed returns; tax schemes listed"
+  },
+  "positives": [
+   "Permit, site opening date and unit mix traceable in national permit data",
+   "Statutory VEFA completion guarantee"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.marignan-immobilier.com/habiter/programmes-neufs/angelina-antibes-01097",
+   "https://vefa-riviera.fr/programmes-neufs-cote-dazur/antibes/angelina/",
+   "https://antibeton.communiquer.net/2022/04/13/487-ch-du-petit-four/",
+   "https://basedespermis.fr/autorisation-pc-00600423a0106-2024-04-25",
+   "https://basedespermis.fr/permis-de-construire-antibes-06004",
+   "https://www.vefaconnect.com/projets-a-venir/antibes/06004/487-chemi-du-petit-four-139/"
+  ],
+  "verification": {
+   "permit": "registry",
+   "escrow": "developer",
+   "progress": "registry",
+   "plans": "none",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building permit granted for 48 flats",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://basedespermis.fr/autorisation-pc-00600423a0106-2024-04-25"
+   },
+   {
+    "claim": "Construction started",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://basedespermis.fr/autorisation-pc-00600423a0106-2024-04-25"
+   },
+   {
+    "claim": "Delivery Q1 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.marignan-immobilier.com/habiter/programmes-neufs/angelina-antibes-01097"
+   },
+   {
+    "claim": "48 apartments (developer meta text says 41)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.vefaconnect.com/projets-a-venir/antibes/06004/487-chemi-du-petit-four-139/"
+   },
+   {
+    "claim": "Developer entity is Marignan",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://basedespermis.fr/autorisation-pc-00600423a0106-2024-04-25"
+   },
+   {
+    "claim": "Prices from EUR 399,000",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://vefa-riviera.fr/programmes-neufs-cote-dazur/antibes/angelina/"
+   },
+   {
+    "claim": "Unit mix T2 to T4 only",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://basedespermis.fr/autorisation-pc-00600423a0106-2024-04-25"
+   },
+   {
+    "claim": "Permit history changed several times since 2022 (Promogim to Marignan)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://antibeton.communiquer.net/2022/04/13/487-ch-du-petit-four/"
+   },
+   {
+    "claim": "GFA completion guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vefa-riviera.fr/programmes-neufs-cote-dazur/antibes/angelina/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": "Marignan Cote d'Azur; permit applicant SNC IP1R",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-01",
+   "handover_promised": "2027-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "T1",
+    "T2",
+    "T3",
+    "T4"
+   ],
+   "size_min_m2": 39,
+   "size_max_m2": 92,
+   "price_min": 282000,
+   "price_max": 668000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": "VEFA staged",
+   "foreign_ownership": "Freehold, no restriction on foreign buyers",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "two-level underground parking",
+    "cellar per flat",
+    "bike storage",
+    "photovoltaic roof",
+    "landscaped courtyard",
+    "sea views from upper floors"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Mairie d'Antibes, service urbanisme",
+   "brochure_url": null
+  },
+  "verified_score": 2
+ },
+ {
+  "slug": "villa-botanica-nice-sully-immobilier",
+  "name": "Villa Botanica",
+  "developer": "Sully Immobilier (seller SCCV AR Villermont)",
+  "area": "25 avenue Villermont, Liberation, Nice",
+  "country": "France",
+  "market": "French Riviera",
+  "stage": "under construction",
+  "url": "https://sully-immobilier.fr/programme/482-villa-botanica/",
+  "docs_url": "https://sully-immobilier.fr/programme/482-villa-botanica/",
+  "permit_number": "PC 006 088 22 S0241",
+  "docs_listed": [
+   "available lots with surface, floor and price",
+   "plan per lot on portals",
+   "brochure download",
+   "delivery Q4 2027",
+   "works in progress",
+   "seller company SCCV AR Villermont RCS Grasse 983 534 017"
+  ],
+  "note": "Small 15-flat VEFA building in Nice Liberation under permit 006 088 22 S 0241 (granted 1 Feb 2023); national Sit@del data shows works opened only on 30 Mar 2026, and the developer now gives delivery Q4 2027, with 3 lots left from EUR 335,000 (checked 31 Oct 2026).",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 335000,
+   "currency": "EUR",
+   "title": "freehold (VEFA)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": "PC 006 088 22 S0241",
+   "plans_published": true,
+   "escrow": "VEFA with statutory GFA (stated by VefaConnect for this programme); guarantor not named",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Sully Immobilier (Orleans, SIRET 790 238 075) shows 610 reviews on Superneuf; no delivered Nice schemes named on pages opened",
+   "units": 15,
+   "payment_plan": "VEFA staged calls for funds",
+   "price_per_m2": 7528
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Developer page refers buyers to 'le permis de construire' but gives no number; PC 00608822S0241 (15 flats, 936 m2, parcel LS82) is in Sit@del data mirrored by basedespermis.fr, PSS and nice2030 (holder SAS Casigui)",
+   "escrow": "VEFA guarantees incl. GFA listed on VefaConnect; not on developer page",
+   "progress": "Developer and portals: 'travaux en cours'; Sit@del: works opened 30/03/2026",
+   "plans": "Plan per lot on Superneuf ('Plan et Infos'); brochure download on developer page",
+   "record": "No delivered projects named on the pages opened",
+   "returns": "No guaranteed returns"
+  },
+  "positives": [
+   "Seller company and RCS number published",
+   "Lot prices and surfaces published",
+   "Permit and works-start date traceable in national permit data"
+  ],
+  "flags": [],
+  "sources": [
+   "https://sully-immobilier.fr/programme/482-villa-botanica/",
+   "https://logements.sully-immobilier.fr/landings/filrouge/?region=provence-alpes-cote-d-azur",
+   "https://www.immoneuf.com/programme/annonce-immobilier-neuf/nice-06-g8979/p5400088",
+   "https://www.superneuf.com/annonces/programme-neuf-nice-06000-s6xo4t",
+   "https://www.vefaconnect.com/program/villa-botanica-06000/",
+   "https://basedespermis.fr/autorisation-pc-00608822s0241-2023-02-01",
+   "https://www.pss-archi.eu/au2531790",
+   "http://nice2030.free.fr/PC_delivres_chantier.php",
+   "https://www.vefaconnect.com/projets-a-venir/nice/06088/25-a-av-villermont-684/"
+  ],
+  "verification": {
+   "permit": "registry",
+   "escrow": "developer",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Permit for 15 flats at 25A av. Villermont granted 1 Feb 2023",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://basedespermis.fr/autorisation-pc-00608822s0241-2023-02-01"
+   },
+   {
+    "claim": "Works in progress",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://basedespermis.fr/autorisation-pc-00608822s0241-2023-02-01"
+   },
+   {
+    "claim": "Delivery Q1 2027 (earlier listing)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://basedespermis.fr/autorisation-pc-00608822s0241-2023-02-01"
+   },
+   {
+    "claim": "Delivery Q4 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sully-immobilier.fr/programme/482-villa-botanica/"
+   },
+   {
+    "claim": "Unit mix 2 to 4 rooms (VefaConnect says up to 5-room duplex)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.pss-archi.eu/au2531790"
+   },
+   {
+    "claim": "Seller SCCV AR Villermont registered RCS Grasse 983 534 017",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sully-immobilier.fr/programme/482-villa-botanica/"
+   },
+   {
+    "claim": "Permit holder is the developer",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "http://nice2030.free.fr/PC_delivres_chantier.php"
+   },
+   {
+    "claim": "Prices from EUR 335,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.immoneuf.com/programme/annonce-immobilier-neuf/nice-06-g8979/p5400088"
+   },
+   {
+    "claim": "GFA completion guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.vefaconnect.com/program/villa-botanica-06000/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Orleans, France (SCCV address Valbonne)",
+   "developer_company": "SCCV AR Villermont, RCS Grasse 983 534 017; Sully Immobilier SIRET 790 238 075 00010",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-03",
+   "handover_promised": "2027-Q4",
+   "original_handover": "2027-Q1",
+   "delay_months": 9,
+   "unit_types": [
+    "2-room",
+    "3-room",
+    "4-room"
+   ],
+   "size_min_m2": 44.5,
+   "size_max_m2": 81.5,
+   "price_min": 335000,
+   "price_max": 679000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": "VEFA staged",
+   "foreign_ownership": "Freehold, no restriction on foreign buyers",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private secured parking",
+    "bike storage",
+    "balconies and terraces",
+    "heat pump",
+    "video entry"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ville de Nice, urbanisme",
+   "brochure_url": null
+  },
+  "verified_score": 2
+ },
+ {
+  "slug": "the-units-milano-abitarein",
+  "name": "The Units",
+  "developer": "Abitare In S.p.A.",
+  "area": "Via Traiano / via Grosotto, Portello, Milan",
+  "country": "Italy",
+  "market": "Italy",
+  "stage": "under construction",
+  "url": "https://abitarein.com/it/progetti/the-units",
+  "docs_url": "https://abitarein.com/it/progetti/the-units",
+  "permit_number": null,
+  "docs_listed": [
+   "price from EUR 540,000",
+   "two three-room layouts with total and loggia areas",
+   "works completion end 2026",
+   "energy class A1",
+   "group: advances guaranteed by insurance fideiussione (company filings)"
+  ],
+  "note": "Small 11-flat block in Portello by Milan-listed AbitareIn; works were awarded in April 2023 for about 16 months, but the developer page now shows completion at end 2026. Group filings state buyer advances are covered by insurance fideiussioni, while Milan permit red tape has delayed its pipeline (checked 31 Oct 2026).",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 540000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "Group press releases: advances under preliminary contracts guaranteed by insurance fideiussione (D.Lgs. 122/2005)",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "AbitareIn completed Palazzo Sintesy (Rubattino, deeds from April 2026, EUR 60m) and is delivering Porta Naviglio Grande building 2 (company press release and broker report)",
+   "units": 11,
+   "payment_plan": null,
+   "price_per_m2": 5400
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permesso di costruire number on the project page",
+   "escrow": "Company press release: 'anticipi contrattualizzati (garantiti da polizza fideiussoria assicurativa)'; fideiussione is mandatory under D.Lgs. 122/2005",
+   "progress": "Only 'ultimazione lavori fine 2026'; no dated site updates on the page",
+   "plans": "Layout names and areas only, no plans",
+   "record": "Listed company releases and Intermonte broker note name completed and delivering projects",
+   "returns": "No guaranteed returns"
+  },
+  "positives": [
+   "Developer is listed and audited, with periodic disclosures",
+   "Buyer advances covered by insurance guarantee per company filings"
+  ],
+  "flags": [
+   {
+    "text": "Intermonte reported FY2025 results hit by Milan council permit red tape and project delays, plus about EUR 4m extra costs on Porta Naviglio Grande after an urgent contractor replacement.",
+    "source": "https://www.borsaitaliana.it/media/star/db/pdf/40603987.pdf"
+   }
+  ],
+  "sources": [
+   "https://abitarein.com/it/progetti/the-units",
+   "https://www.monitorimmobiliare.it/monitorimmobiliare/notizia/abitarein-the-units-chiusa-la-gara-per-i-lavori-di-costruzione_2023-04-19131811/",
+   "https://www.borsaitaliana.it/media/star/db/pdf/40603987.pdf",
+   "https://euroborsa.it/public/euroborsa/Comunicati_Stampa/Abitare_In/20085_163216_2026_oneinfo.pdf",
+   "https://www.websim.it/notizie/small-mid-cap/notizie/abitarein-i-risultati-del-terzo-trimestre-ricavi-a-52-3-mln/"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "independent",
+   "progress": "contradicted",
+   "plans": "none",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Works contract awarded April 2023, about 16 months",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.monitorimmobiliare.it/monitorimmobiliare/notizia/abitarein-the-units-chiusa-la-gara-per-i-lavori-di-costruzione_2023-04-19131811/"
+   },
+   {
+    "claim": "Works completion end 2026",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.monitorimmobiliare.it/monitorimmobiliare/notizia/abitarein-the-units-chiusa-la-gara-per-i-lavori-di-costruzione_2023-04-19131811/"
+   },
+   {
+    "claim": "Project counted among those under development in 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.borsaitaliana.it/media/star/db/pdf/40603987.pdf"
+   },
+   {
+    "claim": "Buyer advances guaranteed by insurance fideiussione",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://euroborsa.it/public/euroborsa/Comunicati_Stampa/Abitare_In/20085_163216_2026_oneinfo.pdf"
+   },
+   {
+    "claim": "Developer listed with audited accounts",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.borsaitaliana.it/media/star/db/pdf/40603987.pdf"
+   },
+   {
+    "claim": "11 apartments",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.monitorimmobiliare.it/monitorimmobiliare/notizia/abitarein-the-units-chiusa-la-gara-per-i-lavori-di-costruzione_2023-04-19131811/"
+   },
+   {
+    "claim": "Prices from EUR 540,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://abitarein.com/it/progetti/the-units"
+   },
+   {
+    "claim": "Permesso di costruire issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://abitarein.com/it/progetti/the-units"
+   },
+   {
+    "claim": "Energy class A1",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://abitarein.com/it/progetti/the-units"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Milan, Italy",
+   "developer_company": "Abitare In S.p.A. (ABIT.MI)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Listed on Borsa Italiana (Euronext Milan STAR per broker note); FY to 30 Sep",
+   "construction_start": "2023-04",
+   "handover_promised": "2026-Q4",
+   "original_handover": "2024-Q3",
+   "delay_months": 27,
+   "unit_types": [
+    "3-room"
+   ],
+   "size_min_m2": 100,
+   "size_max_m2": 106,
+   "price_min": 540000,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private terraces and loggias",
+    "two windowed bathrooms",
+    "energy class A1"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Comune di Milano",
+   "brochure_url": null
+  },
+  "verified_score": 2
+ },
+ {
+  "slug": "le-gemme-vercana-lake-como",
+  "name": "Le Gemme",
+  "developer": "Not named (marketed by Tre Pievi and Casadamare)",
+  "area": "Vercana, upper Lake Como",
+  "country": "Italy",
+  "market": "Italy",
+  "stage": "off-plan",
+  "url": "https://trepievi.co.uk/property/modern-apartments-vercana-with-lake-view/",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "Block C prices from EUR 900,000 + 10% VAT",
+   "unit sizes 100-112 m2",
+   "timeline: start May 2026, Villa C early 2028, Villas B and A mid-2029",
+   "advance payments secured by bank guarantees (agent)",
+   "specification on request"
+  ],
+  "note": "Lake-view scheme of 12 flats in three small villas with two infinity pools, marketed by local agents from EUR 900,000 plus VAT; agents state advances are covered by bank or insurance guarantees but publish conflicting unit counts and delivery dates, and no developer or permit is named (checked 31 Oct 2026).",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 900000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "Agents: 'All advance payments are secured by bank guarantees' (Tre Pievi); insurance cover for deposits (Casadamare)",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 12,
+   "payment_plan": null,
+   "price_per_m2": 9000
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permesso di costruire number or claim on either agent page",
+   "escrow": "Tre Pievi: advance payments secured by bank guarantees; Casadamare: insurance coverage guaranteeing the deposit",
+   "progress": "Only planned dates; construction start given as May 2026, no updates",
+   "plans": "No plans; specification 'on request'",
+   "record": "Developer not named",
+   "returns": "No guaranteed returns"
+  },
+  "positives": [
+   "Deposit guarantee stated by agents (required by D.Lgs. 122/2005)",
+   "Phased timeline published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://trepievi.co.uk/property/modern-apartments-vercana-with-lake-view/",
+   "https://casadamare.com/listings/vendita-prenotasi-appartamenti-di-nuova-costruzione-vercana-cl-994/"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "contradicted",
+   "plans": "none",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "12 units in three villas",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://casadamare.com/listings/vendita-prenotasi-appartamenti-di-nuova-costruzione-vercana-cl-994/"
+   },
+   {
+    "claim": "Delivery of Villa C early 2028",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://casadamare.com/listings/vendita-prenotasi-appartamenti-di-nuova-costruzione-vercana-cl-994/"
+   },
+   {
+    "claim": "Construction start May 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://trepievi.co.uk/property/modern-apartments-vercana-with-lake-view/"
+   },
+   {
+    "claim": "Advance payments secured by bank guarantees",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://trepievi.co.uk/property/modern-apartments-vercana-with-lake-view/"
+   },
+   {
+    "claim": "Prices from EUR 900,000 + VAT",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://trepievi.co.uk/property/modern-apartments-vercana-with-lake-view/"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://trepievi.co.uk/property/modern-apartments-vercana-with-lake-view/"
+   },
+   {
+    "claim": "Developer identity and company registration",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://trepievi.co.uk/property/modern-apartments-vercana-with-lake-view/"
+   },
+   {
+    "claim": "Energy class A4",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://casadamare.com/listings/vendita-prenotasi-appartamenti-di-nuova-costruzione-vercana-cl-994/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-05",
+   "handover_promised": "2028-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR"
+   ],
+   "size_min_m2": 100,
+   "size_max_m2": 124,
+   "price_min": 900000,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "two infinity pools",
+    "lake views",
+    "lift",
+    "garage included",
+    "ground-floor gardens",
+    "roof gardens"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Comune di Vercana",
+   "brochure_url": null
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "the-court-carvoeiro-carvoeiro-branco",
+  "name": "The Court",
+  "developer": "Carvoeiro Branco",
+  "area": "Salicos, Carvoeiro, Lagoa",
+  "country": "Portugal",
+  "market": "Algarve",
+  "stage": "under construction",
+  "url": "https://thecourt.pt/",
+  "docs_url": "https://thecourt.pt/apartments/",
+  "permit_number": null,
+  "docs_listed": [
+   "interactive availability by block with unit prices and areas",
+   "unit plans ('Planos') per apartment",
+   "brochure and plans downloads",
+   "guaranteed 5% return for first three years",
+   "amenities list"
+  ],
+  "note": "104 furnished studio to two-bedroom apartments in two buildings with padel courts, pools and gym, from EUR 295,000; the developer advertises a guaranteed 5% (net) return for the first three years and says construction is on schedule for summer 2027. No licence number or escrow published (checked 31 Oct 2026).",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 295000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 5,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Carvoeiro Branco states nearly 20 years in the Algarve; lists Atrium Liberdade (33 flats, fully sold, advanced construction), Primelife, Atrium Arade II, Palacio Santa Isabel among its schemes (company pages)",
+   "units": 104,
+   "payment_plan": null,
+   "price_per_m2": 4811
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No alvara or licence number on the project site",
+   "escrow": "No deposit protection published",
+   "progress": "Developer and sponsored article (Aug 2026) state construction progressing on schedule towards summer 2027; LinkedIn construction updates (Sep 2026)",
+   "plans": "Each unit page has 'Planos'; brochure archive has 'Planos The Court'",
+   "record": "Developer brochure archive and LinkedIn name its other Lagoa schemes; no delivery dates verified",
+   "returns": "Homepage: 'guaranteed 5% return in the first three years'; LinkedIn: 'guaranteed 5% net return for the first three years'"
+  },
+  "positives": [
+   "Live unit availability with prices and plans per apartment",
+   "Wide on-site amenities"
+  ],
+  "flags": [],
+  "sources": [
+   "https://thecourt.pt/",
+   "https://thecourt.pt/apartments/",
+   "https://thecourt.pt/pt/apartments/apartment-a20/",
+   "https://carvoeirobranco.com/pt-pt/category/noticias/brochuras/",
+   "http://new.theportugalnews.com/news/2026-08-17/the-court-carvoeiro-live-holiday-or-invest/1069162",
+   "https://linkedin.com/company/carvoeirobranco",
+   "https://brancorealestate.com/",
+   "https://sunnysteve.com/new-developments/"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Guaranteed 5% net return for three years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thecourt.pt/"
+   },
+   {
+    "claim": "Completion summer 2027, on schedule",
+    "status": "unverified",
+    "by": "none",
+    "source": "http://new.theportugalnews.com/news/2026-08-17/the-court-carvoeiro-live-holiday-or-invest/1069162"
+   },
+   {
+    "claim": "104 apartments in two buildings",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thecourt.pt/"
+   },
+   {
+    "claim": "Prices from EUR 295,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://brancorealestate.com/"
+   },
+   {
+    "claim": "Building licence issued by Camara Municipal de Lagoa",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thecourt.pt/"
+   },
+   {
+    "claim": "Developer delivered earlier Lagoa schemes",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://carvoeirobranco.com/pt-pt/category/noticias/brochuras/"
+   },
+   {
+    "claim": "Deposit protection",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thecourt.pt/"
+   },
+   {
+    "claim": "Fully furnished apartments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thecourt.pt/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Lagoa, Algarve, Portugal",
+   "developer_company": "Carvoeiro Branco (registration not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 80.6,
+   "size_max_m2": 161.2,
+   "price_min": 295000,
+   "price_max": 850000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold",
+   "rental_programme": "Investment option with guaranteed 5% (net) return for first three years; flexible rental option",
+   "service_charge": null,
+   "brand": "Algarve Health Club (gym)",
+   "amenities": [
+    "indoor and outdoor pools",
+    "4 padel courts",
+    "multisport field",
+    "gym and wellness centre",
+    "restaurant and bar",
+    "24/7 reception and security",
+    "bike rental",
+    "rooftop jacuzzis on top floor"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Camara Municipal de Lagoa",
+   "brochure_url": "https://carvoeirobranco.com/pt-pt/category/noticias/brochuras/"
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "azuya-seed-ancao-from-norfin",
+  "name": "Azuya Seed (formerly The Shores Residences)",
+  "developer": "From: / Norfin SGOIC (Arrow Global group)",
+  "area": "Ancao, between Quinta do Lago and Vale do Lobo, Loule",
+  "country": "Portugal",
+  "market": "Algarve",
+  "stage": "off-plan",
+  "url": "https://www.idealista.pt/news/imobiliario/construcao/2026/09/15/77653-investimento-de-62-milhoes-eleva-fasquia-do-luxo-residencial-algarvio",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "21 apartments T1+1 to T4+1, 117-318 m2",
+   "prices from EUR 990,000",
+   "GDV EUR 62.3m",
+   "completion mid-2028",
+   "serviced living with rental management"
+  ],
+  "note": "Beachfront scheme of 21 apartments bought from Vanguard Properties and relaunched in Sep 2026 by Arrow's From: with Norfin SGOIC as developer; prices from EUR 990,000 and completion mid-2028 (early 2028 in one release). Known only from press releases and news; no licence, plans, escrow or progress published (checked 31 Oct 2026).",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 990000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Arrow Global group owns and operates Algarve resorts incl. Vilamoura World, Monte Rei, Hilton Vilamoura (Jornal Economico / BiG news); sister scheme Azuya Salt launched Dec 2025",
+   "units": 21,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence number in any release or article",
+   "escrow": "None published",
+   "progress": "Not started per announcements; completion target only",
+   "plans": "No plans found",
+   "record": "National press describes Arrow's Portuguese portfolio (Vilamoura World, Monte Rei, hotels)",
+   "returns": "Rental management service offered; no guaranteed return stated"
+  },
+  "positives": [
+   "Backed by a large regulated fund manager (Norfin SGOIC)",
+   "Size range and starting price disclosed"
+  ],
+  "flags": [],
+  "sources": [
+   "https://jornaleconomico.sapo.pt/noticias/arrow-vai-investir-62-milhoes-em-projeto-comprado-a-vanguard-no-ancao/",
+   "https://www.idealista.pt/news/imobiliario/construcao/2026/09/15/77653-investimento-de-62-milhoes-eleva-fasquia-do-luxo-residencial-algarvio",
+   "https://diarioimobiliario.pt/Azuya-Seed-21-novos-apartamentos-de-luxo-entre-Quinta-do-Lago-e-Vale-do-Lobo",
+   "https://sapo.pt/artigo/azuya-seed-reforca-oferta-residencial-premium-entre-quinta-do-lago-e-vale-do-lobo-6aab49b1dd9c0099fb354dd0",
+   "https://studio-jv.com/noticias/reportugal-destaca-lancamento-do-azuya-seed-projeto-com-interiores-do-studio-jv/",
+   "https://www.big.pt/InformacaoMercados/Noticias/Index/329142"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project bought from Vanguard Properties and renamed",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://jornaleconomico.sapo.pt/noticias/arrow-vai-investir-62-milhoes-em-projeto-comprado-a-vanguard-no-ancao/"
+   },
+   {
+    "claim": "21 apartments, 117-318 m2",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://diarioimobiliario.pt/Azuya-Seed-21-novos-apartamentos-de-luxo-entre-Quinta-do-Lago-e-Vale-do-Lobo"
+   },
+   {
+    "claim": "Completion mid-2028",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://studio-jv.com/noticias/reportugal-destaca-lancamento-do-azuya-seed-projeto-com-interiores-do-studio-jv/"
+   },
+   {
+    "claim": "Investment / GDV EUR 62.3m",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.idealista.pt/news/imobiliario/construcao/2026/09/15/77653-investimento-de-62-milhoes-eleva-fasquia-do-luxo-residencial-algarvio"
+   },
+   {
+    "claim": "Prices from EUR 990,000",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://jornaleconomico.sapo.pt/noticias/arrow-vai-investir-62-milhoes-em-projeto-comprado-a-vanguard-no-ancao/"
+   },
+   {
+    "claim": "Developed by Norfin SGOIC (Arrow subsidiary)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.big.pt/InformacaoMercados/Noticias/Index/329142"
+   },
+   {
+    "claim": "Building licence issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://jornaleconomico.sapo.pt/noticias/arrow-vai-investir-62-milhoes-em-projeto-comprado-a-vanguard-no-ancao/"
+   },
+   {
+    "claim": "Deposit protection",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://diarioimobiliario.pt/Azuya-Seed-21-novos-apartamentos-de-luxo-entre-Quinta-do-Lago-e-Vale-do-Lobo"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Lisbon, Portugal",
+   "developer_company": "Norfin SGOIC (fund manager, Arrow Global group); From: (sales and strategy)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "T1+1",
+    "T2",
+    "T3",
+    "T4+1"
+   ],
+   "size_min_m2": 117,
+   "size_max_m2": 318,
+   "price_min": 990000,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold",
+   "rental_programme": "Rental management service as part of serviced living; no figures",
+   "service_charge": null,
+   "brand": "Azuya",
+   "amenities": [
+    "spa",
+    "indoor and outdoor pools",
+    "gym",
+    "cowork",
+    "kids club",
+    "housekeeping",
+    "private pools in some units"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Camara Municipal de Loule",
+   "brochure_url": null
+  },
+  "verified_score": 1
+ },
+ {
+  "slug": "varino-09-dubai-madeira-varino",
+  "name": "Varino 09 ('Dubai' Madeira)",
+  "developer": "Varino (AFA and Socicorreia groups)",
+  "area": "Rua do Vale da Ajuda, Ajuda / Piornais, Sao Martinho, Funchal",
+  "country": "Portugal",
+  "market": "Madeira",
+  "stage": "under construction",
+  "url": "https://www.varino.pt/en/dubai-madeira",
+  "docs_url": "https://www.varino.pt/en/dubai-madeira",
+  "permit_number": null,
+  "docs_listed": [
+   "masterplan: 9 buildings, 400 apartments, 9.3k m2 green areas",
+   "building pages Varino 07, 08, 09",
+   "Golden Residence programme text",
+   "portal listings with price per m2 and delivery quarter"
+  ],
+  "note": "Varino 09 is a two-block building of 104 apartments in the 9-building, about EUR 300m 'Dubai' Madeira scheme in west Funchal, first presented in 2022 for full completion in 2028. Varino 05 was completed at end 2023, but portal listings for sister building Varino 07 still show 'under construction' against a Q4 2024 completion date (checked 31 Oct 2026).",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 360000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Varino 05 (34 apartments) completed end 2023 and Varino 06 built in Lisbon in 2024 (NiT, May 2025)",
+   "units": 104,
+   "payment_plan": null,
+   "price_per_m2": 3956
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence number on developer site or listings",
+   "escrow": "None published",
+   "progress": "No dated progress on the developer site; listings only show 'em construcao'",
+   "plans": "No floor plans on the pages opened",
+   "record": "NiT reports Varino 05 completed end 2023 and Varino 06 in Lisbon 2024; DNoticias reports the group partners",
+   "returns": "No guaranteed returns; Golden Residence programme promoted"
+  },
+  "positives": [
+   "Developer partners are established Madeira construction groups (AFA, Socicorreia)",
+   "Earlier building in the same scheme completed"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.varino.pt/en/dubai-madeira",
+   "https://www.varino.pt/dubai-madeira",
+   "https://www.nit.pt/fora-de-casa/na-cidade/o-empreendimento-de-luxo-com-400-apartamentos-que-esta-a-nascer-na-madeira",
+   "https://www.dnoticias.pt/2022/7/7/318882-varino-investe-300-milhoes-de-euros-no-dubai-madeira/",
+   "https://www.imovirtual.com/pt/empreendimento/varino-7-dubai-madeira-ID1iB4Z",
+   "https://www.imovirtual.com/pt/resultados/comprar/empreendimento/ilha-da-madeira/funchal",
+   "https://www.idealista.pt/comprar-empreendimentos/funchal/"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "none",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Scheme of 9 buildings and about 400 apartments, EUR 300m",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.dnoticias.pt/2022/7/7/318882-varino-investe-300-milhoes-de-euros-no-dubai-madeira/"
+   },
+   {
+    "claim": "Full completion 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.nit.pt/fora-de-casa/na-cidade/o-empreendimento-de-luxo-com-400-apartamentos-que-esta-a-nascer-na-madeira"
+   },
+   {
+    "claim": "Varino 05 completed end 2023",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.nit.pt/fora-de-casa/na-cidade/o-empreendimento-de-luxo-com-400-apartamentos-que-esta-a-nascer-na-madeira"
+   },
+   {
+    "claim": "Varino 07 completion Q4 2024 / 2025",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.imovirtual.com/pt/empreendimento/varino-7-dubai-madeira-ID1iB4Z"
+   },
+   {
+    "claim": "Varino 09 has 104 apartments in two blocks",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.nit.pt/fora-de-casa/na-cidade/o-empreendimento-de-luxo-com-400-apartamentos-que-esta-a-nascer-na-madeira"
+   },
+   {
+    "claim": "Prices from EUR 360,000 for a 91 m2 T1",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.nit.pt/fora-de-casa/na-cidade/o-empreendimento-de-luxo-com-400-apartamentos-que-esta-a-nascer-na-madeira"
+   },
+   {
+    "claim": "Largest private investment in Madeira",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.varino.pt/en/dubai-madeira"
+   },
+   {
+    "claim": "Building licence issued by Camara Municipal do Funchal",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.varino.pt/en/dubai-madeira"
+   },
+   {
+    "claim": "Deposit protection",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.varino.pt/en/dubai-madeira"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2016,
+   "developer_hq": "Funchal, Madeira, Portugal",
+   "developer_company": "Varino (owned by AFA and Socicorreia groups); portal advertiser Terrace Benefit, Lda (Porto)",
+   "developer_projects_delivered": 2,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "T1",
+    "T2",
+    "T3"
+   ],
+   "size_min_m2": 91,
+   "size_max_m2": 317,
+   "price_min": 360000,
+   "price_max": 1715000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "rooftop pools and solariums",
+    "gym",
+    "10 commercial units",
+    "parking",
+    "sea and Cabo Girao views"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Camara Municipal do Funchal",
+   "brochure_url": null
+  },
+  "verified_score": 1
+ },
+ {
+  "slug": "the-hills-virtudes-funchal-interpatium",
+  "name": "The Hills",
+  "developer": "Grupo Interpatium",
+  "area": "Virtudes, Sao Martinho, Funchal",
+  "country": "Portugal",
+  "market": "Madeira",
+  "stage": "under construction",
+  "url": "https://interpatium.pt/portfolio/the-hills/",
+  "docs_url": "https://interpatium.pt/portfolio/the-hills/",
+  "permit_number": null,
+  "docs_listed": [
+   "104 T1/T2 units, 88-230 m2",
+   "unit price table and plans (SuperCasa listing)",
+   "8 blocks of 3 floors, pool and gardens",
+   "energy class A"
+  ],
+  "note": "Private condominium of 104 T1 and T2 flats in 8 low-rise blocks with pool, from EUR 390,000; Publico (Jul 2026) reports a EUR 30m investment, about 90% sold and completion due Sep 2027, while a portal lists delivery as Dec 2025. No licence number or deposit protection published (checked 31 Oct 2026).",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 390000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Interpatium states over 25 years of building and development in Madeira and lists projects such as Solar da Nora, Villas Boa Nova, The Vista, Madalenas Palace, Diamond Estates (developer site)",
+   "units": 104,
+   "payment_plan": null,
+   "price_per_m2": 4382
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence number on developer page or listings",
+   "escrow": "None published",
+   "progress": "Only a completion target (Sep 2027 per Publico); no dated site updates",
+   "plans": "SuperCasa listing has 'Ver planta' per unit",
+   "record": "Developer 'Outros Projetos' page lists several Funchal schemes with sales tables and plans",
+   "returns": "No guaranteed returns"
+  },
+  "positives": [
+   "Unit prices and plans published",
+   "Average price of about EUR 4,600/m2 disclosed to press"
+  ],
+  "flags": [],
+  "sources": [
+   "https://interpatium.pt/portfolio/the-hills/",
+   "https://interpatium.pt/portfolio/the-hills-funchal/",
+   "https://interpatium.pt/outros-projetos/",
+   "https://supercasa.pt/empreendimento-the-hills/e2039923",
+   "https://sava.pt/projects/the-hills/",
+   "https://imobiliario.publico.pt/noticias/novo-condominio-the-hills-reforca-oferta-residencial-premium-funchal/"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "developer",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "104 apartments, EUR 30m investment",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://imobiliario.publico.pt/noticias/novo-condominio-the-hills-reforca-oferta-residencial-premium-funchal/"
+   },
+   {
+    "claim": "About 90% of units sold",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://imobiliario.publico.pt/noticias/novo-condominio-the-hills-reforca-oferta-residencial-premium-funchal/"
+   },
+   {
+    "claim": "Completion September 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://sava.pt/projects/the-hills/"
+   },
+   {
+    "claim": "Unit sizes 88 to 230 m2",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://sava.pt/projects/the-hills/"
+   },
+   {
+    "claim": "Prices from EUR 390,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://supercasa.pt/empreendimento-the-hills/e2039923"
+   },
+   {
+    "claim": "Building licence issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://interpatium.pt/portfolio/the-hills/"
+   },
+   {
+    "claim": "Developer delivered earlier Funchal projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://interpatium.pt/outros-projetos/"
+   },
+   {
+    "claim": "Deposit protection",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://interpatium.pt/portfolio/the-hills/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Funchal, Madeira, Portugal",
+   "developer_company": "Grupo Interpatium (registration not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q3",
+   "original_handover": "2025-Q4",
+   "delay_months": null,
+   "unit_types": [
+    "T1",
+    "T2",
+    "penthouse"
+   ],
+   "size_min_m2": 59,
+   "size_max_m2": 234,
+   "price_min": 390000,
+   "price_max": 890000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "pool with solarium",
+    "gardens",
+    "parking space and storage per flat",
+    "visitor parking",
+    "sea views"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Camara Municipal do Funchal",
+   "brochure_url": null
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "spatia-melides-eurosuez",
+  "name": "Spatia Melides",
+  "developer": "Eurosuez Real Estate",
+  "area": "Melides, Grandola (Comporta-Melides coast)",
+  "country": "Portugal",
+  "market": "Portugal",
+  "stage": "under construction",
+  "url": "https://www.eurosuez.com/portfolio/spatiamelides",
+  "docs_url": "https://www.eurosuez.com/portfolio/spatiamelides",
+  "permit_number": null,
+  "docs_listed": [
+   "137 units on 170 ha (developer)",
+   "villa types with sizes and plot areas (agent)",
+   "prices from EUR 5.99m",
+   "hotel opens 2027, first residences from Sep 2026",
+   "pre-2010 planning consent claim",
+   "hotel-managed rental programme"
+  ],
+  "note": "Branded villas and residences with a five-star hotel on a 170 ha estate, which the agents say holds pre-2010 planning consent that survives Grandola's Dec 2024 masterplan limits. Phase 1 started in Aug 2023 with delivery promised by end 2024; first homes are now expected from Sep 2026 and the hotel in 2027, from EUR 5.99m (checked 31 Oct 2026).",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 5990000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Eurosuez states Spatia Comporta hotel, villas and infrastructure delivered and operating; 550 hospitality and residential units in its group (developer site)",
+   "units": 137,
+   "payment_plan": null,
+   "price_per_m2": 12224
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Agents state 'rare pre-2010 planning consent' and consent before the Dec 2024 masterplan revision; no licence or alvara number published",
+   "escrow": "None published",
+   "progress": "Developer LinkedIn Aug 2023: Phase 1 construction underway; developer site status 'in construction'; agent: first residences from Sep 2026",
+   "plans": "Sizes and plot areas only; no floor plans on pages opened",
+   "record": "Developer site: Spatia Comporta delivered and operating",
+   "returns": "Hotel-managed rental programme offered; no guaranteed return"
+  },
+  "positives": [
+   "Freehold villas on very large private plots",
+   "Developer builds and operates its own hotels (integrated model)"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.eurosuez.com/portfolio/spatiamelides",
+   "https://www.eurosuez.com/",
+   "https://www.eurosuez.com/portfolio",
+   "https://www.johndwood-international.com/featured-property/melides-comporta-portugal",
+   "https://www.linkedin.com/feed/update/urn:li:activity:7499811432180502528",
+   "https://www.linkedin.com/posts/eurosuez_spatiamelides-newbeginnings-luxuryliving-activity-7101852404853161985-jxlH"
+  ],
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "none",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Planning consent pre-dates 2010 and survives the Dec 2024 Grandola masterplan",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.johndwood-international.com/featured-property/melides-comporta-portugal"
+   },
+   {
+    "claim": "Phase 1 delivery by end 2024",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.linkedin.com/feed/update/urn:li:activity:7499811432180502528"
+   },
+   {
+    "claim": "First residences from September 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.linkedin.com/feed/update/urn:li:activity:7499811432180502528"
+   },
+   {
+    "claim": "137 units",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.johndwood-international.com/featured-property/melides-comporta-portugal"
+   },
+   {
+    "claim": "Prices from EUR 5.99m",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.johndwood-international.com/featured-property/melides-comporta-portugal"
+   },
+   {
+    "claim": "Spatia Comporta delivered and operating",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.eurosuez.com/"
+   },
+   {
+    "claim": "Spatia is a member of Design Hotels (Marriott Bonvoy)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.eurosuez.com/"
+   },
+   {
+    "claim": "Freehold ownership",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.johndwood-international.com/featured-property/melides-comporta-portugal"
+   },
+   {
+    "claim": "Deposit protection",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.eurosuez.com/portfolio/spatiamelides"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Portugal",
+   "developer_company": "Eurosuez Real Estate (registration not published)",
+   "developer_projects_delivered": 1,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2023-08",
+   "handover_promised": "2026-Q3",
+   "original_handover": "2024-Q4",
+   "delay_months": 21,
+   "unit_types": [
+    "cabana",
+    "residence",
+    "4BR villa",
+    "5BR villa",
+    "estate"
+   ],
+   "size_min_m2": 490,
+   "size_max_m2": 665,
+   "price_min": 5990000,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold",
+   "rental_programme": "Hotel-managed rental programme, no figures",
+   "service_charge": null,
+   "brand": "Spatia (Design Hotels member, per developer)",
+   "amenities": [
+    "five-star hotel",
+    "beach club",
+    "owners' club",
+    "spa",
+    "indoor and outdoor pools",
+    "tennis, padel, pickleball",
+    "restaurants",
+    "concierge and housekeeping"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Camara Municipal de Grandola",
+   "brochure_url": null
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "boavista-tower-porto-mesmo-valor",
+  "name": "Boavista Tower",
+  "developer": "Mesmo Valor (Grupo MESMOVALOR)",
+  "area": "Avenida da Boavista, Ramalde, Porto",
+  "country": "Portugal",
+  "market": "Portugal",
+  "stage": "off-plan",
+  "url": "https://www.realcollection.pt/imovel-venda-apartamento-t2-6221565",
+  "docs_url": "https://www.mesmovalor.pt/empreendimentos",
+  "permit_number": null,
+  "docs_listed": [
+   "unit listing with private area, balcony and parking",
+   "unit plan ('Planta') on agent listing",
+   "launch payment plan 20/10/10/10/50",
+   "'loteamento aprovado' (subdivision approved)",
+   "works to start by end 2026, 48 months"
+  ],
+  "note": "Two-building scheme with a 21-storey tower and 249 T1/T2 flats on Avenida da Boavista, in pre-launch at up to 20% discount; agents state the subdivision (loteamento) is approved, works start by end 2026 and delivery is about 2030. Floors, build time, payment plan and price range differ between press and agents (checked 31 Oct 2026).",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 330000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 249,
+   "payment_plan": "20% CPCV; 10% at start of works; 10% at 10% of slabs; 10% at concrete structure completion; 50% at deed (agent); another portal shows 15/15/10/10/50",
+   "price_per_m2": 7453
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Agent: 'O loteamento encontra-se aprovado'; no alvara or licence number published",
+   "escrow": "None published; 50% paid before deed under the launch plan",
+   "progress": "Not started; start planned Q4 2026",
+   "plans": "Real Collection listing includes unit plan",
+   "record": "No delivered projects named on pages opened (developer projects page returned no content)",
+   "returns": "No guaranteed returns; 'capital appreciation' language only"
+  },
+  "positives": [
+   "Detailed launch payment schedule published",
+   "Unit-level areas and prices published by agents"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.mesmovalor.pt/empreendimentos",
+   "https://www.idealista.pt/news/imobiliario/habitacao/2026/08/25/77310-mesmo-valor-investe-75-milhoes-em-torre-de-24-andares-na-boavista",
+   "https://www.realcollection.pt/imovel-venda-apartamento-t2-6221565",
+   "https://sava.pt/projects/boavista-tower/",
+   "https://www.idealista.pt/geo/comprar-empreendimentos/boavista-8/",
+   "https://www.realestate.com.au/international/pt/boavista-porto-lisbon-310109799206/"
+  ],
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "249 apartments, EUR 75m investment",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.idealista.pt/news/imobiliario/habitacao/2026/08/25/77310-mesmo-valor-investe-75-milhoes-em-torre-de-24-andares-na-boavista"
+   },
+   {
+    "claim": "Tower of 24 floors",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.realcollection.pt/imovel-venda-apartamento-t2-6221565"
+   },
+   {
+    "claim": "Build time 42 months from Q4 2026",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.realcollection.pt/imovel-venda-apartamento-t2-6221565"
+   },
+   {
+    "claim": "Prices EUR 250,000 to 500,000",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://sava.pt/projects/boavista-tower/"
+   },
+   {
+    "claim": "Subdivision (loteamento) approved",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.realcollection.pt/imovel-venda-apartamento-t2-6221565"
+   },
+   {
+    "claim": "Payment plan 20/10/10/10/50",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://sava.pt/projects/boavista-tower/"
+   },
+   {
+    "claim": "VAT cut to 6% passed on as about 10% discount",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.idealista.pt/news/imobiliario/habitacao/2026/08/25/77310-mesmo-valor-investe-75-milhoes-em-torre-de-24-andares-na-boavista"
+   },
+   {
+    "claim": "Developer track record",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.mesmovalor.pt/empreendimentos"
+   },
+   {
+    "claim": "Deposit protection",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.realcollection.pt/imovel-venda-apartamento-t2-6221565"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Porto, Portugal",
+   "developer_company": "Mesmo Valor (registration not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2030",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "T1 Smart",
+    "T1+1",
+    "T2 Smart",
+    "T2"
+   ],
+   "size_min_m2": 40,
+   "size_max_m2": 76,
+   "price_min": 330000,
+   "price_max": 555000,
+   "currency": "EUR",
+   "deposit_pct": 20,
+   "payment_plan": "20/10/10/10/50 (agent) or 15/15/10/10/50 (portal)",
+   "foreign_ownership": "Freehold",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "gym",
+    "rooftop",
+    "over 500 m2 of amenities",
+    "over 1,000 m2 of outdoor space",
+    "private parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Camara Municipal do Porto",
+   "brochure_url": null
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "aenaon-park-residences-crystal-waters",
+  "name": "Aenaon Park Residences",
+  "developer": "Crystal Waters (London HQ)",
+  "area": "Faliro Bay, Neo Faliro, Athens Riviera",
+  "country": "Greece",
+  "market": "Greece",
+  "stage": "off-plan",
+  "url": "https://www.aenaonparkresidencesbycrystalwaters.com/",
+  "docs_url": "https://www.aenaonparkresidencesbycrystalwaters.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: description, members' club, location, London contact only",
+   "agents: 126 units in 3 buildings of 7 floors",
+   "prices EUR 280,000-410,000, 35-65 m2",
+   "guaranteed rental 4% a year, operator-backed (agent)",
+   "delivery Q4 2027 or Phase 1 Q3 2027 and Phase 2 Q1 2028",
+   "brochure without pricing"
+  ],
+  "note": "Three 7-storey seafront blocks with about 126 flats and a private members' club near Neo Faliro metro, sold mainly to Golden Visa buyers with a guaranteed rental return quoted by agents. Agents disagree on the Golden Visa threshold (EUR 250,000 versus EUR 800,000 Zone A), rental use and delivery dates, and the developer site names no company, permit or plans (checked 31 Oct 2026).",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 280000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 4,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 126,
+   "payment_plan": "Phase 1 / Phase 2 pricing (no schedule published)",
+   "price_per_m2": 8000
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": false,
+   "score": 0,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building permit number or claim on developer site or agent pages",
+   "escrow": "None published",
+   "progress": "No construction status; delivery dates only",
+   "plans": "No floor plans found; brochure lists blocks A, B, C",
+   "record": "Developer site gives only a London address; no completed projects named",
+   "returns": "Avla Real Estate: 'Rental guarantee: 4% / year (operator-backed)'; Avla also says 'hands-off Airbnb/long-term rental' while Aurea notes Golden Visa properties cannot be let short-term under Law 5100/2024"
+  },
+  "positives": [
+   "One agent (Aurea Greece) discloses the Zone A EUR 800,000 Golden Visa threshold and the short-term rental ban under Law 5100/2024"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.aenaonparkresidencesbycrystalwaters.com/",
+   "https://aurea-greece.com/golden-visa/aenaon-park.html",
+   "https://www.avlarealestate.com/en/post/aenaon-park-residences-a0135-feasibility-report",
+   "https://investment.londonist.co.uk/storage/2756/Neo_Faliro_Residence_EN_no_pricing.pdf"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "none",
+   "record": "none",
+   "no_guaranteed_returns": "contradicted"
+  },
+  "claims": [
+   {
+    "claim": "Golden Visa eligible from EUR 250,000",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://aurea-greece.com/golden-visa/aenaon-park.html"
+   },
+   {
+    "claim": "Rental guarantee 4% a year, operator-backed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.avlarealestate.com/en/post/aenaon-park-residences-a0135-feasibility-report"
+   },
+   {
+    "claim": "Delivery Q4 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.avlarealestate.com/en/post/aenaon-park-residences-a0135-feasibility-report"
+   },
+   {
+    "claim": "126 residences in 3 buildings",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://aurea-greece.com/golden-visa/aenaon-park.html"
+   },
+   {
+    "claim": "Prices from EUR 280,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.avlarealestate.com/en/post/aenaon-park-residences-a0135-feasibility-report"
+   },
+   {
+    "claim": "Short-term rental allowed for Golden Visa holders ('hands-off Airbnb')",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://aurea-greece.com/golden-visa/aenaon-park.html"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aenaonparkresidencesbycrystalwaters.com/"
+   },
+   {
+    "claim": "Developer company identity and registration",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aenaonparkresidencesbycrystalwaters.com/"
+   },
+   {
+    "claim": "Clean title, condominium ownership registered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.avlarealestate.com/en/post/aenaon-park-residences-a0135-feasibility-report"
+   },
+   {
+    "claim": "Deposit protection",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aenaonparkresidencesbycrystalwaters.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "London, United Kingdom",
+   "developer_company": "Crystal Waters (no registration published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 35,
+   "size_max_m2": 65,
+   "price_min": 280000,
+   "price_max": 410000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": "two-phase pricing",
+   "foreign_ownership": "Freehold; marketed for the Greek Golden Visa",
+   "rental_programme": "Operator-backed guaranteed rent of 4% a year quoted by an agent",
+   "service_charge": "About EUR 40/month incl. club (one agent)",
+   "brand": "Crystal Waters",
+   "amenities": [
+    "rooftop pool and bar",
+    "private members' club",
+    "spa and gym",
+    "restaurant and cafe",
+    "business centre",
+    "children's areas",
+    "24/7 security",
+    "valet parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Municipality building service (YDOM), Attica",
+   "brochure_url": "https://investment.londonist.co.uk/storage/2756/Neo_Faliro_Residence_EN_no_pricing.pdf"
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "penha-living-bolder-addsolid",
+  "name": "Penha Living Bolder",
+  "developer": "ADDSOLID",
+  "area": "Penha de Franca, Lisbon",
+  "country": "Portugal",
+  "market": "Lisbon",
+  "stage": "off-plan",
+  "url": "https://addsolid.com/en/penha-living-bolder",
+  "docs_url": "https://addsolid.com/en/penha-living-bolder",
+  "permit_number": null,
+  "docs_listed": [
+   "unit table with gross private, outdoor and total areas and status",
+   "townhouse floor plans PDF",
+   "brochure PDF",
+   "finishes map",
+   "completion 3Q 2027",
+   "townhouse prices EUR 975,000 and 990,000"
+  ],
+  "note": "Small EUR 6.5m scheme of 14 flats (all sold) and two T3+1 townhouses (EUR 975,000 and 990,000 still available), completion 3Q 2027. The developer publishes a full unit table, brochure and plans but no licence number, escrow or construction updates (checked 31 Oct 2026).",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 260000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 16,
+   "payment_plan": null,
+   "price_per_m2": 3960
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence or alvara number published",
+   "escrow": "None published",
+   "progress": "Completion target only; no dated construction updates",
+   "plans": "Townhouse plans PDF (PLB_TB.pdf) and brochure with layouts",
+   "record": "No delivered projects named on the pages opened",
+   "returns": "No guaranteed returns"
+  },
+  "positives": [
+   "Complete unit table with areas and sold status",
+   "Plans and finishes map downloadable",
+   "Energy pre-certification A (flats) and A+ NZEB (townhouses) stated"
+  ],
+  "flags": [],
+  "sources": [
+   "https://addsolid.com/en/penha-living-bolder",
+   "https://addsolid.com/pt/penha-living-bolder",
+   "https://addsolid.com/images/projectos/Penha_Living_Bolder/brochure/Brochura-Bolder_v3.4_compressed.pdf",
+   "https://addsolid.com/images/projectos/Penha_Living_Bolder/plantas/PLB_TB.pdf",
+   "https://addsolid.com/pt/insights/penha-de-franca-recebe-novo-projecto-residencial-de-6-5-meur",
+   "https://www.nit.pt/fora-de-casa/na-cidade/lisboa-vai-ter-um-edificio-residencialpensado-para-jovens-compradores"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Investment EUR 6.5m, completion 3Q 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://addsolid.com/pt/insights/penha-de-franca-recebe-novo-projecto-residencial-de-6-5-meur"
+   },
+   {
+    "claim": "14 apartments and 2 townhouses (headline says 15 units)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://addsolid.com/en/penha-living-bolder"
+   },
+   {
+    "claim": "Prices from EUR 260,000",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.nit.pt/fora-de-casa/na-cidade/lisboa-vai-ter-um-edificio-residencialpensado-para-jovens-compradores"
+   },
+   {
+    "claim": "Completion Q3 2027",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.nit.pt/fora-de-casa/na-cidade/lisboa-vai-ter-um-edificio-residencialpensado-para-jovens-compradores"
+   },
+   {
+    "claim": "All 14 apartments sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://addsolid.com/en/penha-living-bolder"
+   },
+   {
+    "claim": "Building licence issued by Camara Municipal de Lisboa",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://addsolid.com/en/penha-living-bolder"
+   },
+   {
+    "claim": "Developer company and track record",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://addsolid.com/en/penha-living-bolder"
+   },
+   {
+    "claim": "Deposit protection",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://addsolid.com/en/penha-living-bolder"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Portugal",
+   "developer_company": "ADDSOLID (registration not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "T0",
+    "T1",
+    "T2",
+    "T2 duplex",
+    "T3 duplex",
+    "T3+1 townhouse"
+   ],
+   "size_min_m2": 41,
+   "size_max_m2": 250,
+   "price_min": 260000,
+   "price_max": 990000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "rooftop",
+    "co-working room",
+    "private parking",
+    "bike area",
+    "photovoltaic panels",
+    "private terraces and patios"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Camara Municipal de Lisboa",
+   "brochure_url": "https://addsolid.com/images/projectos/Penha_Living_Bolder/brochure/Brochura-Bolder_v3.4_compressed.pdf"
   },
   "verified_score": 0
  }

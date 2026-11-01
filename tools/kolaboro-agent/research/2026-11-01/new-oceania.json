@@ -1,0 +1,184 @@
+[
+ {
+  "slug": "miru-residences-hakuba-shc",
+  "name": "Miru Residences Hakuba",
+  "developer": "The SHC Group with Ecclesia Asset Management",
+  "area": "Happo-one, Hakuba Village, Nagano",
+  "country": "Japan",
+  "market": "Hakuba",
+  "stage": "under construction",
+  "url": "https://uchijapan.com/developments/miru-residences-hakuba",
+  "docs_url": "https://www.nisaderealestate.com/latest-projects/miru-residences-hakuba/",
+  "permit_number": null,
+  "docs_listed": [
+   "unit types and from-sizes (studio 34 m2 to 3BR 94 m2)",
+   "individual unit prices on agent listings",
+   "2026 site photos",
+   "completion October 2027 (agent listing)",
+   "operator named: Miru Collection"
+  ],
+  "note": "30-unit ski-in ski-out condominium next to the Happo-one lift, sold through Hakuba agents; 22 of 30 reserved or sold by June 2026 and opening targeted for winter 2027. No building confirmation number, deposit protection, floor plans or title wording found on any page (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 114840000,
+   "currency": "JPY",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Uchi listing says The SHC Group is behind Miru Kyoto and Miru Niseko; Ecclesia brought Wander Tokyo and Far East Village Honmachi and Namba",
+   "units": 30,
+   "payment_plan": null,
+   "price_per_m2": 2145000
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building confirmation (kenchiku kakunin) number on agent or project pages",
+   "escrow": "Nothing published on deposit protection or payment terms",
+   "progress": "2026 dated site photos on the Uchi development page; no percentage",
+   "plans": "Photos only, no floor plans",
+   "record": "Agent page names prior Miru Kyoto and Miru Niseko projects by the same group",
+   "returns": "Rental appeal described qualitatively, no guaranteed or yield figures"
+  },
+  "positives": [
+   "Unit prices and sizes published per unit on agent listings",
+   "No guaranteed rental return language",
+   "Named operator (Miru Collection) for the rental pool"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "30 residences in total",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://uchijapan.com/news/miru-residences-hakuba-down-to-final-8-units-as-sales-momentum-builds"
+   },
+   {
+    "claim": "22 of 30 units reserved or sold (June 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://uchijapan.com/news/miru-residences-hakuba-down-to-final-8-units-as-sales-momentum-builds"
+   },
+   {
+    "claim": "Completion October 2027 / open winter 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://uchijapan.com/properties/miru-residences-hakuba-406-2-bedroom-dual-key-unit"
+   },
+   {
+    "claim": "Completion 2027-28 (second agent wording)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.nisaderealestate.com/latest-projects/miru-residences-hakuba/"
+   },
+   {
+    "claim": "Prices from around JPY 80m",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://uchijapan.com/developments/miru-residences-hakuba"
+   },
+   {
+    "claim": "Building confirmation obtained",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.nisaderealestate.com/latest-projects/miru-residences-hakuba/"
+   },
+   {
+    "claim": "Developer delivered Miru Kyoto and Miru Niseko",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://uchijapan.com/developments/miru-residences-hakuba"
+   },
+   {
+    "claim": "Developer legal entity registered in Japan",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://uchijapan.com/properties/miru-residences-hakuba-406-2-bedroom-dual-key-unit"
+   },
+   {
+    "claim": "Deposit protected",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://uchijapan.com/developments/miru-residences-hakuba"
+   },
+   {
+    "claim": "Freehold title for foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://uchijapan.com/properties/miru-residences-hakuba-406-2-bedroom-dual-key-unit"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "1.5BR tatami",
+    "2BR dual-key",
+    "3BR dual-key"
+   ],
+   "size_min_m2": 34,
+   "size_max_m2": 100,
+   "price_min": 114840000,
+   "price_max": 206800000,
+   "currency": "JPY",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": "Managed by Miru Collection, no figures stated",
+   "service_charge": null,
+   "brand": "Miru Collection",
+   "amenities": [
+    "ski-in ski-out",
+    "fully furnished",
+    "hotel services"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Nagano Prefecture or designated inspection body (building confirmation)",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "sources": [
+   "https://uchijapan.com/developments/miru-residences-hakuba",
+   "https://www.nisaderealestate.com/latest-projects/miru-residences-hakuba/",
+   "https://uchijapan.com/news/miru-residences-hakuba-down-to-final-8-units-as-sales-momentum-builds",
+   "https://uchijapan.com/properties/miru-residences-hakuba-406-2-bedroom-dual-key-unit",
+   "https://uchijapan.com/news/miru-residences-hakuba-ski-in-ski-out-living"
+  ]
+ }
+]

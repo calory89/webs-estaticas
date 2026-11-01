@@ -1818,5 +1818,1523 @@
    "https://brainsre.news/taylor-wimpey-espana-murcia-siena-residencial/",
    "https://alicanteplaza.es/taylor-wimpey-entregas-viviendas-2024"
   ]
+ },
+ {
+  "slug": "aro-residences-platja-daro-metrovacesa",
+  "name": "Aro Residences",
+  "developer": "Metrovacesa",
+  "area": "Platja d'Aro, Costa Brava (Girona)",
+  "country": "Spain",
+  "market": "Spain",
+  "stage": "under construction",
+  "url": "https://metrovacesa.com/en/developments/girona/playa-de-aro/aro-residences",
+  "docs_url": "https://metrovacesa.com/en/developments/girona/playa-de-aro/aro-residences",
+  "permit_number": null,
+  "docs_listed": [
+   "price from EUR 375,000 plus 10% VAT, garage and storage included",
+   "typology table (2BR from 82.8 m2)",
+   "floor plans per type and general plan",
+   "energy rating A, Domum and Sello Verde",
+   "architect BINARQ",
+   "'Under construction' label, milestone dates blank",
+   "blog: planning permission obtained (26 May 2025)"
+  ],
+  "note": "82 homes in five blocks near Parc dels Estanys, 750 m from Platja Gran, EUR 20.5 million; Metrovacesa announced the licence in May 2025 and labels the project 'under construction', with prices from EUR 375,000 plus VAT and plans published but no milestone dates, licence number or guarantee details. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 375000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Metrovacesa, listed national developer; states 15 active developments and 1,100+ homes under development in Catalonia",
+   "units": 82,
+   "payment_plan": null,
+   "price_per_m2": 4529
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Blog and brainsre report the building licence obtained (May 2025), no number",
+   "escrow": "No deposit guarantee statement; 'promoter bank' field only",
+   "progress": "Page says 'Under construction!' but milestone dates are blank and no dated photos",
+   "plans": "Plans per typology plus general plan",
+   "record": "Listed developer with long record",
+   "returns": "No yield language"
+  },
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building licence obtained (May 2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/metrovacesa-82-viviendas-costa-brava-inversion-20m/"
+   },
+   {
+    "claim": "82 homes in five blocks, 2-3BR",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/metrovacesa-82-viviendas-costa-brava-inversion-20m/"
+   },
+   {
+    "claim": "Investment about EUR 20.5 million",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/metrovacesa-82-viviendas-costa-brava-inversion-20m/"
+   },
+   {
+    "claim": "Under construction",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/developments/girona/playa-de-aro/aro-residences"
+   },
+   {
+    "claim": "3-bedroom homes available (table lists only 2BR)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/developments/girona/playa-de-aro/aro-residences"
+   },
+   {
+    "claim": "Price from EUR 375,000 plus VAT",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/developments/girona/playa-de-aro/aro-residences"
+   },
+   {
+    "claim": "Delivery date",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/developments/girona/playa-de-aro/aro-residences"
+   },
+   {
+    "claim": "Deposit guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/developments/girona/playa-de-aro/aro-residences"
+   },
+   {
+    "claim": "Energy rating A",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://metrovacesa.com/en/developments/girona/playa-de-aro/aro-residences"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Madrid, Spain",
+   "developer_company": "Metrovacesa S.A. (listed)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Listed on the Spanish stock exchange",
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 82.8,
+   "size_max_m2": 157.5,
+   "price_min": 375000,
+   "price_max": 436500,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "communal pool",
+    "green areas",
+    "children's playground",
+    "garage",
+    "storage room"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ajuntament de Castell-Platja d'Aro",
+   "brochure_url": null
+  },
+  "verified_score": 2,
+  "positives": [
+   "Licence grant reported by independent trade press",
+   "Prices and plans published",
+   "Listed developer"
+  ],
+  "flags": [],
+  "sources": [
+   "https://metrovacesa.com/en/developments/girona/playa-de-aro/aro-residences",
+   "https://metrovacesa.com/en/blog/metrovacesa-obtains-planning-permission-for-aro-residences-its-new-project-on-the-costa-brava",
+   "https://brainsre.news/metrovacesa-82-viviendas-costa-brava-inversion-20m/"
+  ]
+ },
+ {
+  "slug": "waves-santa-eulalia-ncalma-homes",
+  "name": "Waves",
+  "developer": "NCalma Homes (NCalma Group)",
+  "area": "Santa Eulària des Riu, Ibiza",
+  "country": "Spain",
+  "market": "Balearics",
+  "stage": "off-plan",
+  "url": "https://www.lucasfox.com/new-development/waves-ibiza.html",
+  "docs_url": "https://www.aplaceinthesun.com/new-developments/details/ncalma-homes-waves-in-santa-eulalia-del-río-ibiza-spain-from-825-000",
+  "permit_number": null,
+  "docs_listed": [
+   "1-4BR apartments, prices from EUR 750,000 (Lucas Fox) or EUR 825,000 (A Place in the Sun)",
+   "4BR from EUR 3,619,000",
+   "completion late 2027 (APITS) or Q1 2028 (Lucas Fox)",
+   "club house, rooftop infinity pool, fitness, 24h security",
+   "no plans, licence, guarantee or payment plan"
+  ],
+  "note": "Large apartment complex by Santa Eulària's NCalma Group near the marina, first presented in Oct 2020 as 100 apartments and relaunched in Aug 2024 as 95; agents now quote completion between late 2027 and Q1 2028 and prices from EUR 750,000 to 825,000, with no licence, guarantee, plans or progress published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 750000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "NCalma opened the Aguas de Ibiza Grand Luxe hotel in Santa Eulària in 2004 (NouDiari); Waves Marina (32 apartments) reported under construction for 2025 completion (La Voz de Ibiza)",
+   "units": 95,
+   "payment_plan": null,
+   "price_per_m2": 12097
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence mentioned on listings or in press",
+   "escrow": "No deposit guarantee stated",
+   "progress": "APITS ad calls it 'under construction' but no figure or dated update; Lucas Fox gives no status",
+   "plans": "No floor plans",
+   "record": "Hotel Aguas de Ibiza (2004) named by NouDiari; no residential completions confirmed",
+   "returns": "'Excellent' or 'secure long-term investment' wording but no yield or guarantee"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "100 apartments (2020 presentation)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.noudiari.es/2020/10/presentan-the-waves-con-100-apartamentos-y-una-zona-residencial-de-17-000-metros-cuadrados-en-santa-eularia/"
+   },
+   {
+    "claim": "95 apartments (2024 relaunch)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://lavozdeibiza.com/?p=59508"
+   },
+   {
+    "claim": "Completion late 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.lucasfox.com/new-development/waves-ibiza.html"
+   },
+   {
+    "claim": "Under construction",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aplaceinthesun.com/new-developments/details/ncalma-homes-waves-in-santa-eulalia-del-río-ibiza-spain-from-825-000"
+   },
+   {
+    "claim": "Prices from EUR 750,000",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.aplaceinthesun.com/new-developments/details/ncalma-homes-waves-in-santa-eulalia-del-río-ibiza-spain-from-825-000"
+   },
+   {
+    "claim": "Developer opened Aguas de Ibiza hotel in 2004",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.noudiari.es/?p=310921"
+   },
+   {
+    "claim": "Plot over 17,000 m2 near Santa Eulària marina",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.noudiari.es/2020/10/presentan-the-waves-con-100-apartamentos-y-una-zona-residencial-de-17-000-metros-cuadrados-en-santa-eularia/"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.lucasfox.com/new-development/waves-ibiza.html"
+   },
+   {
+    "claim": "Deposit guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.lucasfox.com/new-development/waves-ibiza.html"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2004,
+   "developer_hq": "Santa Eulària des Riu, Ibiza, Spain",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q1",
+   "original_handover": "2027-Q4",
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": 62,
+   "size_max_m2": null,
+   "price_min": 750000,
+   "price_max": 3619000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "club house",
+    "rooftop infinity pool",
+    "heated pool",
+    "fitness and wellness",
+    "parking",
+    "storage",
+    "24h security"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ajuntament de Santa Eulària des Riu",
+   "brochure_url": null
+  },
+  "verified_score": 1,
+  "positives": [
+   "Developer is an established local hospitality group",
+   "No guaranteed return figures"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.lucasfox.com/new-development/waves-ibiza.html",
+   "https://www.aplaceinthesun.com/new-developments/details/ncalma-homes-waves-in-santa-eulalia-del-río-ibiza-spain-from-825-000",
+   "https://www.noudiari.es/2020/10/presentan-the-waves-con-100-apartamentos-y-una-zona-residencial-de-17-000-metros-cuadrados-en-santa-eularia/",
+   "https://www.noudiari.es/?p=310921",
+   "https://lavozdeibiza.com/?p=59508"
+  ]
+ },
+ {
+  "slug": "kosmos-torremolinos-kronos-homes",
+  "name": "Kosmos",
+  "developer": "Kronos Homes (Kronos Investment Management Spain S.L.)",
+  "area": "El Pinillo, Torremolinos",
+  "country": "Spain",
+  "market": "Costa del Sol",
+  "stage": "off-plan",
+  "url": "https://www.realista.com/listings/177534/",
+  "docs_url": "https://www.kronoshomes.com/en/projects/malaga/kosmos/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer page: status 'Launch', amenities, sales office address",
+   "104 homes, 2-3BR (press)",
+   "agency prices EUR 405,000 to 802,000",
+   "2BR 95 m2 at EUR 437,000, estimated delivery Q4 2028 (Realista)",
+   "floor plan PDF on agency listing",
+   "energy rating A, BREEAM in progress (press)"
+  ],
+  "note": "Kronos Homes' 104-apartment, EUR 40 million scheme by HCP in Torremolinos; the developer page still says 'Launch' while April 2026 press says works have started, agents quote EUR 405,000 to 802,000 and delivery Q4 2028, and no licence or deposit guarantee is published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 405000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 104,
+   "payment_plan": null,
+   "price_per_m2": 4600
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence status on developer page, agency listings or press",
+   "escrow": "Not stated anywhere",
+   "progress": "Developer: 'Launch'; The Spanish Eye (Apr 2026): construction started; no dated updates or %",
+   "plans": "Floor plan PDF on Realista listing (agent), none on developer page",
+   "record": "Sources describe pipeline (4,600 homes promoted) but name no delivered project with units",
+   "returns": "No yield language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "104 homes, EUR 40 million investment",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://brainsre.news/kronos-101-millones-270-viviendas-mijas-torremolinos/"
+   },
+   {
+    "claim": "Construction has started (Apr 2026)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.thespanisheye.com/2026/04/29/pictured-kronos-homes-launches-new-developments-in-torremolinos-and-mijas/"
+   },
+   {
+    "claim": "Developer page status 'Launch'",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.kronoshomes.com/en/projects/malaga/kosmos/"
+   },
+   {
+    "claim": "Prices EUR 405,000 to 545,000 (press) vs up to EUR 802,000 (agency)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.bcpartners.es/property/kosmos"
+   },
+   {
+    "claim": "Estimated delivery Q4 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.realista.com/listings/177534/"
+   },
+   {
+    "claim": "Energy rating A, BREEAM in progress",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://brainsre.news/kronos-101-millones-270-viviendas-mijas-torremolinos/"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.kronoshomes.com/en/projects/malaga/kosmos/"
+   },
+   {
+    "claim": "Deposit guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.kronoshomes.com/en/projects/malaga/kosmos/"
+   },
+   {
+    "claim": "Kronos started a separate 125-home Torremolinos project in 2024 (EUR 41m)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.merca2.es/2024/05/07/kronos-homes-torremolinos-1664542/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": "Kronos Investment Management Spain S.L. (named as data controller on developer site)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": 95,
+   "size_max_m2": null,
+   "price_min": 405000,
+   "price_max": 802000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "outdoor pool",
+    "heated pool",
+    "spa",
+    "gym",
+    "coworking",
+    "sea views"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ayuntamiento de Torremolinos",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "Unit count and investment confirmed in trade press",
+   "No guaranteed return marketing"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.kronoshomes.com/en/projects/malaga/kosmos/",
+   "https://brainsre.news/kronos-101-millones-270-viviendas-mijas-torremolinos/",
+   "https://www.thespanisheye.com/2026/04/29/pictured-kronos-homes-launches-new-developments-in-torremolinos-and-mijas/",
+   "https://www.realista.com/listings/177534/",
+   "https://www.bcpartners.es/property/kosmos",
+   "https://www.merca2.es/2024/05/07/kronos-homes-torremolinos-1664542/"
+  ]
+ },
+ {
+  "slug": "sonne-finestrat-sonne-investments",
+  "name": "SONNE Finestrat",
+  "developer": "SONNE Investments & Management Solutions S.L.",
+  "area": "Finestrat",
+  "country": "Spain",
+  "market": "Costa Blanca",
+  "stage": "off-plan",
+  "url": "https://www.aplaceinthesun.com/new-developments/details/sonne-investments-sonne-finestrat-in-finestrat-alicante-spain-from-355-000",
+  "docs_url": "https://www.luxinmo.com/property/8097",
+  "permit_number": null,
+  "docs_listed": [
+   "48 homes in four three-floor blocks, gated",
+   "unit table EUR 335,000 (reduced offer) to 470,000 with internal, terrace and garden m2",
+   "parking and storage included",
+   "agency: 'in project', year built 2028",
+   "one floor plan image on agency listing",
+   "ground floor with private pool up to EUR 613,000 (agency)"
+  ],
+  "note": "48-apartment gated scheme in Finestrat advertised by SONNE Investments & Management Solutions S.L. from EUR 335,000; agencies list it as 'in project' with 2028 as build year, and no licence, guarantee, payment plan or developer track record is published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 335000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 48,
+   "payment_plan": null,
+   "price_per_m2": 3327
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence on developer advert or agency listings",
+   "escrow": "Not stated",
+   "progress": "Agency says 'in project'; no dated updates",
+   "plans": "One floor plan image on Luxinmo listing; developer advert has unit area table only",
+   "record": "No delivered projects named; company not found in registry searches",
+   "returns": "No yield or guarantee language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "48 homes in a gated community",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aplaceinthesun.com/new-developments/details/sonne-investments-sonne-finestrat-in-finestrat-alicante-spain-from-355-000"
+   },
+   {
+    "claim": "Prices from EUR 335,000 (reduced) vs from EUR 355,000 (agency text) vs from EUR 395,000 (agency card)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.luxinmo.com/property/8097"
+   },
+   {
+    "claim": "Completion 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.luxinmo.com/property/8097"
+   },
+   {
+    "claim": "Project at design stage ('in project')",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.luxinmo.com/property/8097"
+   },
+   {
+    "claim": "Developer company SONNE Investments & Management Solutions S.L. registered",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aplaceinthesun.com/new-developments/details/sonne-investments-sonne-finestrat-in-finestrat-alicante-spain-from-355-000"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aplaceinthesun.com/new-developments/details/sonne-investments-sonne-finestrat-in-finestrat-alicante-spain-from-355-000"
+   },
+   {
+    "claim": "Deposit guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aplaceinthesun.com/new-developments/details/sonne-investments-sonne-finestrat-in-finestrat-alicante-spain-from-355-000"
+   },
+   {
+    "claim": "Parking and storage included in price",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aplaceinthesun.com/new-developments/details/sonne-investments-sonne-finestrat-in-finestrat-alicante-spain-from-355-000"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": "SONNE Investments & Management Solutions S.L. (registration number not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "2BR penthouse"
+   ],
+   "size_min_m2": 99,
+   "size_max_m2": 135.7,
+   "price_min": 335000,
+   "price_max": 613000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "gated community",
+    "communal pool",
+    "parking",
+    "storage",
+    "private gardens on ground floor"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ayuntamiento de Finestrat",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "Detailed unit price and area table",
+   "No guaranteed return marketing"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.aplaceinthesun.com/new-developments/details/sonne-investments-sonne-finestrat-in-finestrat-alicante-spain-from-355-000",
+   "https://www.luxinmo.com/property/8097"
+  ]
+ },
+ {
+  "slug": "etherna-homes-ii-estepona-neinor",
+  "name": "Etherna Homes II",
+  "developer": "Neinor Homes (promoter Neinor Península S.L.U.)",
+  "area": "Valle Romano Norte, Estepona",
+  "country": "Spain",
+  "market": "Costa del Sol",
+  "stage": "under construction",
+  "url": "https://www.neinorhomes.com/en/promocion/etherna-homes-ii/",
+  "docs_url": "https://www.neinorhomes.com/uploads/promociones/documentos/2320//dosier_promociones/0000000003608846.PDF",
+  "permit_number": "Expediente 9710/2018 (Ayuntamiento de Estepona)",
+  "docs_listed": [
+   "information dossier: licence expediente 9710/2018",
+   "deposit insurance with ASERTA",
+   "special account at Kutxabank",
+   "promoter Neinor Península S.L.U., Registro Mercantil Madrid hoja M-712404",
+   "plot R3, sector SUP-T05 Valle Romano Norte",
+   "works stage: under construction; estimated completion and delivery Q2 2028",
+   "144 homes in 6 low-rise buildings, 75 sold (52%)",
+   "prices EUR 305,000 to 558,000 incl. VAT, 76-134 m2 built",
+   "specifications PDF, brochure, virtual model and visit"
+  ],
+  "note": "144 one- to three-bed homes in six low-rise blocks at Valle Romano, Estepona; Neinor's dossier publishes licence expediente 9710/2018, ASERTA deposit insurance, a Kutxabank special account and delivery in Q2 2028 (Realista says May 2028), with 52% sold and prices from EUR 305,000. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 305000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q2",
+   "permit_claim": true,
+   "permit_number": "Expediente 9710/2018 (Ayuntamiento de Estepona)",
+   "plans_published": true,
+   "escrow": "Amounts paid on account insured by ASERTA; special account at Kutxabank ES55 2095 0581 8091 2638 5460 (information dossier)",
+   "progress_pct": null,
+   "developer_delivered": "Neinor Homes, listed developer; earlier delivered developments listed on its site and in press (e.g. Sa Llosa Homes, Menorca)",
+   "units": 144,
+   "payment_plan": null,
+   "price_per_m2": 4005
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Dossier: licence expediente 9710/2018, Ayuntamiento de Estepona (a 2018 file number for a 2028 delivery; date not given)",
+   "escrow": "Dossier names ASERTA as insurer of advance payments and Kutxabank special account",
+   "progress": "Dossier only says 'en fase de construcción'; no %, dated photos or work progress link",
+   "plans": "Unit plans on project page",
+   "record": "Neinor delivered developments (Estrategias de Inversión, Jan 2025)",
+   "returns": "No rental or yield language"
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "developer",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Licence expediente 9710/2018",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.neinorhomes.com/uploads/promociones/documentos/2320//dosier_promociones/0000000003608846.PDF"
+   },
+   {
+    "claim": "Advance payments insured by ASERTA",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.neinorhomes.com/uploads/promociones/documentos/2320//dosier_promociones/0000000003608846.PDF"
+   },
+   {
+    "claim": "Under construction",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.realista.com/listings/98464/"
+   },
+   {
+    "claim": "Delivery Q2 2028 (dossier) and May 2028 (agent)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.realista.com/listings/98464/"
+   },
+   {
+    "claim": "75 of 144 homes sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.neinorhomes.com/en/promocion/etherna-homes-ii/"
+   },
+   {
+    "claim": "Prices EUR 305,000 to 558,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.neinorhomes.com/en/promocion/etherna-homes-ii/"
+   },
+   {
+    "claim": "Promoter Neinor Península S.L.U. registered in Madrid (M-712404)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.neinorhomes.com/uploads/promociones/documentos/2320//dosier_promociones/0000000003608846.PDF"
+   },
+   {
+    "claim": "Neinor delivered comparable developments",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.estrategiasdeinversion.com/actualidad/noticias/bolsa-espana/neinor-homes-finaliza-y-entrega-las-viviendas-n-775765"
+   },
+   {
+    "claim": "Neinor listed with H1 2026 results",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.idealista.com/news/node/909340"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2015,
+   "developer_hq": "Madrid, Spain",
+   "developer_company": "Neinor Península S.L.U., Registro Mercantil de Madrid tomo 40098, folio 125, hoja M-712404",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Parent Neinor Homes listed on the Spanish stock exchange",
+   "construction_start": null,
+   "handover_promised": "2028-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 76.15,
+   "size_max_m2": 134.13,
+   "price_min": 305000,
+   "price_max": 558000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "pool",
+    "gym",
+    "gourmet lounge",
+    "gardens",
+    "gated and guarded",
+    "golf and sea views",
+    "parking and storage included"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ayuntamiento de Estepona",
+   "brochure_url": "https://promociones.neinorhomes.com/etherna-homes-en-ii/"
+  },
+  "verified_score": 1,
+  "positives": [
+   "Licence file, deposit insurer and special account published",
+   "Delivery quarter published and consistent across sources",
+   "Listed parent developer"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.neinorhomes.com/en/promocion/etherna-homes-ii/",
+   "https://www.neinorhomes.com/uploads/promociones/documentos/2320//dosier_promociones/0000000003608846.PDF",
+   "https://www.realista.com/listings/98464/",
+   "https://www.estrategiasdeinversion.com/actualidad/noticias/bolsa-espana/neinor-homes-finaliza-y-entrega-las-viviendas-n-775765",
+   "https://www.idealista.com/news/node/909340"
+  ]
+ },
+ {
+  "slug": "roma-platja-daro-unnamed-developer",
+  "name": "Roma",
+  "developer": "Not named (marketed by Lucas Fox)",
+  "area": "Platja d'Aro, Costa Brava (Girona)",
+  "country": "Spain",
+  "market": "Spain",
+  "stage": "off-plan",
+  "url": "https://lucasfox.com/new-development/roma.html",
+  "docs_url": "https://lucasfox.com/new-development/roma.html",
+  "permit_number": null,
+  "docs_listed": [
+   "53 apartments in 4 blocks",
+   "1BR from EUR 205,000, 2BR from EUR 270,000, 3BR from EUR 355,000",
+   "parking and storage optional extras",
+   "expected delivery summer 2027",
+   "promotional image only, no plans"
+  ],
+  "note": "53 apartments in four blocks in Platja d'Aro marketed by Lucas Fox from EUR 205,000 with delivery expected summer 2027; the listing names no developer and publishes no licence, deposit guarantee, plans or construction status. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 205000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 53,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Not mentioned",
+   "escrow": "Not mentioned",
+   "progress": "No construction status, only expected delivery summer 2027",
+   "plans": "No floor plans, one promotional image",
+   "record": "Developer not named",
+   "returns": "No yield language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "53 apartments in four blocks",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lucasfox.com/new-development/roma.html"
+   },
+   {
+    "claim": "Prices from EUR 205,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lucasfox.com/new-development/roma.html"
+   },
+   {
+    "claim": "Expected delivery summer 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lucasfox.com/new-development/roma.html"
+   },
+   {
+    "claim": "Developer identity disclosed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lucasfox.com/new-development/roma.html"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lucasfox.com/new-development/roma.html"
+   },
+   {
+    "claim": "Deposit guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lucasfox.com/new-development/roma.html"
+   },
+   {
+    "claim": "Construction started",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lucasfox.com/new-development/roma.html"
+   },
+   {
+    "claim": "Parking and storage sold separately",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://lucasfox.com/new-development/roma.html"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 205000,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ajuntament de Castell-Platja d'Aro",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "Entry prices per bedroom type published",
+   "No guaranteed return marketing"
+  ],
+  "flags": [],
+  "sources": [
+   "https://lucasfox.com/new-development/roma.html"
+  ]
+ },
+ {
+  "slug": "creative-homes-bulevar-iii-malaga-neinor",
+  "name": "Creative Homes Bulevar III",
+  "developer": "Neinor Homes (promoter Pegasus Holdco S.L.)",
+  "area": "Teatinos, Málaga city",
+  "country": "Spain",
+  "market": "Costa del Sol",
+  "stage": "off-plan",
+  "url": "https://www.neinorhomes.com/en/promocion/creative-homes-bulevar-iii/",
+  "docs_url": "https://www.neinorhomes.com/uploads/promociones/documentos/6214//dosier_promociones/0000000003636403.PDF",
+  "permit_number": null,
+  "docs_listed": [
+   "information dossier: 'project pending building licence'",
+   "BBVA bank guarantee (aval) on advance payments plus legal interest, effective once licence obtained",
+   "promoter Pegasus Holdco S.L., CIF B-88223722, Registro Mercantil Madrid hoja M681891",
+   "estimated end of works Aug 2028, delivery Nov 2028",
+   "93 homes, 1-4BR; listed units EUR 344,000 to 495,000 incl. VAT",
+   "garage and storage included",
+   "specifications PDF, brochure (Feb 2026), virtual model and visit"
+  ],
+  "note": "93-home block on Calle Ortega y Gasset, Málaga, on sale through Neinor for the Pegasus Holdco vehicle; the dossier openly states the building licence is still pending, promises a BBVA bank guarantee once it is granted, and estimates delivery in Nov 2028. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 344000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "BBVA bank guarantee (aval) on amounts paid on account plus legal interest, effective once the building licence is granted; deposits into a special account (bank not named)",
+   "progress_pct": null,
+   "developer_delivered": "Neinor Homes, listed developer; delivered developments listed on its site and in press (e.g. Sa Llosa Homes, Menorca)",
+   "units": 93,
+   "payment_plan": null,
+   "price_per_m2": 3731
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Dossier states 'Proyecto pendiente de licencia de obras'",
+   "escrow": "Dossier: BBVA aval covering advance payments plus legal interest, effective after the licence and first payments",
+   "progress": "Pending licence, no works; only estimated dates (end of works Aug 2028, delivery Nov 2028)",
+   "plans": "Unit plans on project page",
+   "record": "Neinor delivered developments (Estrategias de Inversión, Jan 2025)",
+   "returns": "No yield language"
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "developer",
+   "progress": "none",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building licence pending",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.neinorhomes.com/uploads/promociones/documentos/6214//dosier_promociones/0000000003636403.PDF"
+   },
+   {
+    "claim": "BBVA bank guarantee on advance payments once licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.neinorhomes.com/uploads/promociones/documentos/6214//dosier_promociones/0000000003636403.PDF"
+   },
+   {
+    "claim": "Promoter Pegasus Holdco S.L. (B88223722) is a registered real estate company, audited by Deloitte",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.datoscif.es/empresa/bowdoin-sl"
+   },
+   {
+    "claim": "Neinor works with Orion Capital Managers as co-investor in Pegasus-type vehicles (Calpe example)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://iberian.property/news/residential/neinor-homes-begins-construction-of-a-new-residential-development-in-calpe/"
+   },
+   {
+    "claim": "Estimated delivery November 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.neinorhomes.com/uploads/promociones/documentos/6214//dosier_promociones/0000000003636403.PDF"
+   },
+   {
+    "claim": "93 homes, prices EUR 344,000 to 495,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.neinorhomes.com/en/promocion/creative-homes-bulevar-iii/"
+   },
+   {
+    "claim": "Neinor delivered comparable developments",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.estrategiasdeinversion.com/actualidad/noticias/bolsa-espana/neinor-homes-finaliza-y-entrega-las-viviendas-n-775765"
+   },
+   {
+    "claim": "Garage and storage included",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.neinorhomes.com/en/promocion/creative-homes-bulevar-iii/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2015,
+   "developer_hq": "Madrid, Spain",
+   "developer_company": "Pegasus Holdco S.L., CIF B-88223722, Registro Mercantil de Madrid tomo 38.325, folio 1, hoja M-681891",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Neinor Homes listed; Pegasus Holdco audited by Deloitte (BORME via datoscif)",
+   "construction_start": null,
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": 92.2,
+   "size_max_m2": 131.14,
+   "price_min": 344000,
+   "price_max": 495000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "garage",
+    "storage room"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ayuntamiento de Málaga (Gerencia de Urbanismo)",
+   "brochure_url": "https://www.neinorhomes.com/uploads/galeria/566/CATALOGO_CREATIVE_HOMES_III_120226.pdf"
+  },
+  "verified_score": 1,
+  "positives": [
+   "Developer openly discloses that the licence is pending",
+   "Named bank guarantor (BBVA) and promoter registry details",
+   "Listed managing developer"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.neinorhomes.com/en/promocion/creative-homes-bulevar-iii/",
+   "https://www.neinorhomes.com/uploads/promociones/documentos/6214//dosier_promociones/0000000003636403.PDF",
+   "https://www.datoscif.es/empresa/bowdoin-sl",
+   "https://iberian.property/news/residential/neinor-homes-begins-construction-of-a-new-residential-development-in-calpe/",
+   "https://www.estrategiasdeinversion.com/actualidad/noticias/bolsa-espana/neinor-homes-finaliza-y-entrega-las-viviendas-n-775765"
+  ]
+ },
+ {
+  "slug": "essenza-santa-eulalia-unnamed-developer",
+  "name": "Essenza",
+  "developer": "Not named (marketed by Lucas Fox)",
+  "area": "Siesta, Santa Eulària des Riu, Ibiza",
+  "country": "Spain",
+  "market": "Balearics",
+  "stage": "off-plan",
+  "url": "https://www.lucasfox.com/new-development/essenzasantaeulalia.html",
+  "docs_url": "https://www.lucasfox.com/new-development/essenzasantaeulalia.html",
+  "permit_number": null,
+  "docs_listed": [
+   "12 five-bedroom villas, 5 available",
+   "from EUR 4,470,000",
+   "completion Q4 2029",
+   "private pools 45-65 m2, terraces 128-144 m2, private garage",
+   "no plans, licence or guarantee"
+  ],
+  "note": "12 five-bedroom villas in Siesta, Santa Eulària, marketed by Lucas Fox from EUR 4.47 million with completion set for Q4 2029; no developer, licence, guarantee, plans or construction status is published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 4470000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 12,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Not mentioned",
+   "escrow": "Not mentioned",
+   "progress": "No build stage given; completion Q4 2029",
+   "plans": "None",
+   "record": "Developer not named",
+   "returns": "No yield language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "12 villas, 5 available",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.lucasfox.com/new-development/essenzasantaeulalia.html"
+   },
+   {
+    "claim": "From EUR 4,470,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.lucasfox.com/new-development/essenzasantaeulalia.html"
+   },
+   {
+    "claim": "Completion Q4 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.lucasfox.com/new-development/essenzasantaeulalia.html"
+   },
+   {
+    "claim": "Living space over 610 m2 vs 'sizes from 646 m2'",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.lucasfox.com/new-development/essenzasantaeulalia.html"
+   },
+   {
+    "claim": "Developer identity disclosed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.lucasfox.com/new-development/essenzasantaeulalia.html"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.lucasfox.com/new-development/essenzasantaeulalia.html"
+   },
+   {
+    "claim": "Deposit guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.lucasfox.com/new-development/essenzasantaeulalia.html"
+   },
+   {
+    "claim": "Each villa has a private pool and garage",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.lucasfox.com/new-development/essenzasantaeulalia.html"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2029-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "5BR villa"
+   ],
+   "size_min_m2": 610,
+   "size_max_m2": 646,
+   "price_min": 4470000,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pools",
+    "large terraces",
+    "private garage"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ajuntament de Santa Eulària des Riu",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "No guaranteed return marketing"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.lucasfox.com/new-development/essenzasantaeulalia.html"
+  ]
+ },
+ {
+  "slug": "playa-de-torres-villajoyosa-unnamed-developer",
+  "name": "New development in Playa de Torres",
+  "developer": "Not named (marketed by Luxinmo Real Estate)",
+  "area": "Playa de Torres, Villajoyosa",
+  "country": "Spain",
+  "market": "Costa Blanca",
+  "stage": "under construction",
+  "url": "https://luxinmo.com/new-developments/831637",
+  "docs_url": "https://luxinmo.com/new-developments/831637",
+  "permit_number": null,
+  "docs_listed": [
+   "3 listed units: 2BR 92 m2 EUR 380,000, 2BR ground floor 102 m2 EUR 345,500, 3BR penthouse 164 m2 EUR 686,000",
+   "status 'Under Construction'",
+   "completion Q3 2028",
+   "photos only, plans on request"
+  ],
+  "note": "Unnamed developer's 1-3 bed apartment scheme at Playa de Torres between Villajoyosa and Benidorm, listed by Luxinmo as under construction for Q3 2028 with units from EUR 345,500; no developer, licence, guarantee or plans published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 345500,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": 3387
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Not stated",
+   "escrow": "Not stated",
+   "progress": "Label 'Under Construction' only, no dated photos or figure",
+   "plans": "Not provided; on request",
+   "record": "Developer not named",
+   "returns": "No yield language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Under construction",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://luxinmo.com/new-developments/831637"
+   },
+   {
+    "claim": "Completion Q3 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://luxinmo.com/new-developments/831637"
+   },
+   {
+    "claim": "1, 2 and 3 bedroom units (only 2-3BR listed)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://luxinmo.com/new-developments/831637"
+   },
+   {
+    "claim": "Prices EUR 345,500 to 686,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://luxinmo.com/new-developments/831637"
+   },
+   {
+    "claim": "Developer identity disclosed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://luxinmo.com/new-developments/831637"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://luxinmo.com/new-developments/831637"
+   },
+   {
+    "claim": "Deposit guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://luxinmo.com/new-developments/831637"
+   },
+   {
+    "claim": "Total unit count",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://luxinmo.com/new-developments/831637"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR penthouse"
+   ],
+   "size_min_m2": 92,
+   "size_max_m2": 164,
+   "price_min": 345500,
+   "price_max": 686000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ajuntament de la Vila Joiosa",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "Unit prices and sizes published",
+   "No guaranteed return marketing"
+  ],
+  "flags": [],
+  "sources": [
+   "https://luxinmo.com/new-developments/831637"
+  ]
  }
 ]

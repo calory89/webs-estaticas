@@ -2399,25 +2399,211 @@
   ]
  },
  {
-  "slug": "dusit-thani-residences-ajman-aqaar",
-  "name": "Dusit Thani Residences Ajman",
-  "developer": "Aqaar (Ajman Properties Corporation)",
-  "area": "Al Nakhil 2, Ajman Corniche",
+  "slug": "aya-beachfront-residences-deyaar",
+  "name": "AYA Beachfront Residences",
+  "developer": "Deyaar Development PJSC",
+  "area": "Al Khor Waterfront, Al Raudah",
   "country": "UAE",
-  "market": "Ajman",
+  "market": "Umm Al Quwain",
   "stage": "off-plan",
-  "url": "https://www.propertyfinder.ae/en/new-projects/aqaar-properties/dusit-thani-residences",
-  "docs_url": "https://dusitthaniresidencesajman.com/",
+  "url": "https://www.propertyfinder.ae/en/new-projects/lp/umm-al-quwain?page=2",
+  "docs_url": "https://www.deyaar.ae/en/construction-update/",
   "permit_number": null,
   "docs_listed": [
-   "Property Finder: launch price AED 2.09M, 5/36/19/40 plan with 40% post-handover",
-   "328 apartments 1 to 4BR, 20 residential floors, 675,000 sq ft built area",
-   "construction start 15 Mar 2026, completion Dec 2028"
+   "developer construction update page: shoring and services relocation 100% complete, main works imminent, completion Q4 2027",
+   "sales brochure with floor plans and payment plan (442 residences, B+G+8F+R)",
+   "Property Finder: from AED 1.095M, delivery Q2 2028"
   ],
-  "note": "First internationally branded residential tower in Ajman, 328 apartments under a Dusit International brand agreement announced Feb 2026, with completion listed for December 2028 and 40% payable after handover. Launch coverage is press releases and partner content; no permit, escrow, progress, floor plans or delivered Aqaar projects are published (checked 31 Oct 2026)",
+  "note": "Deyaar's first Umm Al Quwain project, 442 beachfront residences launched Feb 2025 from AED 1.1M; the developer's own update says shoring is complete and main works are about to start while it still shows Q4 2027 completion (Property Finder shows Q2 2028). Deyaar is DFM-listed and Khaleej Times reported over 2,100 units handed over in 2026; no escrow or registration number is published (checked 31 Oct 2026)",
   "added": "2026-10-31",
   "seed": {
-   "price": 2090753,
+   "price": 1095000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 8,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Deyaar handed over more than 2,100 units in Dubai in 2026, incl. Regalia, Jannat, Talia Residences and Tria (Khaleej Times Oct 2026; Gulf Property)",
+   "units": 442,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No UAQ registration number published",
+   "escrow": null,
+   "progress": "Deyaar construction update page: 100% completion of shoring enabling works and services relocation; main works to commence",
+   "plans": "Sales brochure section 'Floorplan and technicals'",
+   "record": "Khaleej Times 23 Oct 2026: over 2,100 homes handed over since start of 2026",
+   "returns": "Gulf News quotes the CEO on yields of '8%, even higher'; not a guarantee"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "independent"
+  },
+  "claims": [
+   {
+    "claim": "Launched Feb 2025 as Deyaar's first UAQ project",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://gulfnews.com/business/property/for-umm-al-quwain-project-deyaar-plans-mix-of-old-and-new-1.500046685"
+   },
+   {
+    "claim": "Completion Q4 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.deyaar.ae/en/construction-update/"
+   },
+   {
+    "claim": "Main construction works not yet started (shoring complete)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.deyaar.ae/en/construction-update/"
+   },
+   {
+    "claim": "Deyaar handed over 2,100+ units in 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.khaleejtimes.com/business/deyaar-posts-27-profit-growth-to-dh5415-million-as-property-handovers-exceed-2100-units"
+   },
+   {
+    "claim": "Developer is listed (DFM)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.zawya.com/en/projects/construction/dubais-deyaar-launches-its-first-major-residential-project-in-umm-al-quwain-438034"
+   },
+   {
+    "claim": "Rental yields of 8% or higher (CEO)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://gulfnews.com/business/property/for-umm-al-quwain-project-deyaar-plans-mix-of-old-and-new-1.500046685"
+   },
+   {
+    "claim": "Prices from AED 1.1M",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://gulfnews.com/business/property/for-umm-al-quwain-project-deyaar-plans-mix-of-old-and-new-1.500046685"
+   },
+   {
+    "claim": "442 residences",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://homeblocks.io/wp-content/uploads/2025/04/AYA-BEACHFRONT-BROCHURES-AND-PAYMENT-PLAN_compressed.pdf"
+   },
+   {
+    "claim": "Freehold for foreign buyers in UAQ",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://gulfnews.com/business/property/for-umm-al-quwain-project-deyaar-plans-mix-of-old-and-new-1.500046685"
+   },
+   {
+    "claim": "Escrow account for buyer payments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.deyaar.ae/en/construction-update/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2002,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Deyaar Development PJSC",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 2100,
+   "listed_or_audited": "Listed on Dubai Financial Market; publishes quarterly results",
+   "construction_start": "2025",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "3BR duplex beach home",
+    "4BR duplex beach home",
+    "penthouse",
+    "sky villa"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 1095000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold (as listed)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "35+ amenities",
+    "beachfront",
+    "smart home",
+    "wellness facilities"
+   ],
+   "lat": 25.57,
+   "lng": 55.56,
+   "permit_authority": null,
+   "brochure_url": "https://homeblocks.io/wp-content/uploads/2025/04/AYA-BEACHFRONT-BROCHURES-AND-PAYMENT-PLAN_compressed.pdf"
+  },
+  "verified_score": 2,
+  "positives": [
+   "Listed developer with independently reported 2026 handovers",
+   "Developer publishes dated construction updates",
+   "Floor plans in sales brochure"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.propertyfinder.ae/en/new-projects/lp/umm-al-quwain?page=2",
+   "https://www.deyaar.ae/en/construction-update/",
+   "https://homeblocks.io/wp-content/uploads/2025/04/AYA-BEACHFRONT-BROCHURES-AND-PAYMENT-PLAN_compressed.pdf",
+   "https://gulfnews.com/business/property/for-umm-al-quwain-project-deyaar-plans-mix-of-old-and-new-1.500046685",
+   "https://www.zawya.com/en/projects/construction/dubais-deyaar-launches-its-first-major-residential-project-in-umm-al-quwain-438034",
+   "https://www.deyaar.ae/en/media_center/deyaar-continues-its-growth-journey-and-achievesaed-266-6-million-net-profit-before-tax-31-6-profit-jumpin-h1-2025/",
+   "https://www.khaleejtimes.com/business/deyaar-posts-27-profit-growth-to-dh5415-million-as-property-handovers-exceed-2100-units",
+   "https://www.thegulfproperty.com/articles/deyaar-hands-over-711-homes-in-dso-as-2026-deliveries-cross-2-100"
+  ]
+ },
+ {
+  "slug": "amra-residences-citi-developers",
+  "name": "AMRA Residences",
+  "developer": "Citi Developers",
+  "area": "Al Raudah (Blue Carbon lagoon)",
+  "country": "UAE",
+  "market": "Umm Al Quwain",
+  "stage": "off-plan",
+  "url": "https://www.propertyfinder.ae/en/new-projects/lp/umm-al-quwain?page=2",
+  "docs_url": "https://www.accessnewswire.com/newsroom/en/business-and-professional-services/citi-developers-announces-amra-the-worlds-first-integrative-wellness-resort",
+  "permit_number": null,
+  "docs_listed": [
+   "Property Finder: Amra from AED 690K, delivery Q4 2028",
+   "press: three towers, 816 to 820 serviced residences, 70/30 plan with 3 years post-handover",
+   "phase 2 (Amra Residences 2): construction start 19 Feb 2026, delivery Dec 2029, plan 10/60/30"
+  ],
+  "note": "Three-tower 'wellness resort' of about 820 fully serviced studios to 4BR apartments in Al Raudah, launched Nov to Dec 2025 from AED 690K with Q4 2028 completion and a 70/30 post-handover plan. Coverage is press-wire and partner content; the developer names earlier towers only as launched or under construction, and no permit, escrow, progress or plans are published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 690000,
    "currency": "AED",
    "title": "freehold",
    "lease_base": null,
@@ -2432,8 +2618,8 @@
    "progress_pct": null,
    "progress_updates": false,
    "developer_delivered": null,
-   "units": 328,
-   "payment_plan": "5% at launch, 36% during construction, 19% on handover, 40% post-handover",
+   "units": 820,
+   "payment_plan": "70% during construction, 30% over 3 years after handover",
    "price_per_m2": null
   },
   "disclosure": {
@@ -2447,16 +2633,373 @@
    "all_six": false
   },
   "evidence": {
-   "permit": "No Ajman project registration number published",
+   "permit": "No UAQ registration number published",
    "escrow": null,
+   "progress": "None published for phase 1; phase 2 lists only a construction start date",
+   "plans": "No floor plans on pages opened",
+   "record": "Release says earlier towers ARYA, Allura, Agua, Aveline were launched and under construction; no completed project named",
+   "returns": "Investor wording only; no guarantee or figure"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Three towers with 816 fully furnished apartments, from AED 690K, handover Q4 2028",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://servicedapartmentnews.com/news/serviced-residences/amra-residences-uae/"
+   },
+   {
+    "claim": "820 residences (press release)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://servicedapartmentnews.com/news/serviced-residences/amra-residences-uae/"
+   },
+   {
+    "claim": "Sell-out of developer's previous five towers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://pinionnewswire.com/press-release/citi-developers-announces-amra-the-worlds-first-integrative-wellness-resort/"
+   },
+   {
+    "claim": "Developer has delivered completed projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.accessnewswire.com/newsroom/en/business-and-professional-services/citi-developers-announces-amra-the-worlds-first-integrative-wellness-resort"
+   },
+   {
+    "claim": "World's first integrative wellness resort",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.khaleejtimes.com/kt-network/citi-developers-unveils-amra-the-worlds-first-integrative-wellness-resort"
+   },
+   {
+    "claim": "Phase 2 construction started 19 Feb 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/citi-developers/amra-residences-2"
+   },
+   {
+    "claim": "Phase 2 prices from AED 215K (page text) vs AED 790K (launch price)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/citi-developers/amra-residences-2"
+   },
+   {
+    "claim": "Freehold for foreign buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/citi-developers/amra-residences-2"
+   },
+   {
+    "claim": "Escrow account for buyer payments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.accessnewswire.com/newsroom/en/business-and-professional-services/citi-developers-announces-amra-the-worlds-first-integrative-wellness-resort"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Citi Developers",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 690000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": null,
+   "payment_plan": "70/30 with 3 years post-handover",
+   "foreign_ownership": "freehold (as listed)",
+   "rental_programme": "Fully serviced residences with Valor Hospitality named as partner; no figures",
+   "service_charge": null,
+   "brand": "AMRA Resorts (developer's own brand)",
+   "amenities": [
+    "cryotherapy and hyperbaric chambers",
+    "hydrotherapy pools",
+    "yoga pavilions",
+    "rooftop beach club",
+    "private marina",
+    "bowling alley"
+   ],
+   "lat": 25.55,
+   "lng": 55.58,
+   "permit_authority": null,
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "positives": [
+   "30% of price payable over 3 years after handover"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.propertyfinder.ae/en/new-projects/lp/umm-al-quwain?page=2",
+   "https://www.propertyfinder.ae/en/new-projects/citi-developers/amra-residences-2",
+   "https://www.accessnewswire.com/newsroom/en/business-and-professional-services/citi-developers-announces-amra-the-worlds-first-integrative-wellness-resort",
+   "https://www.khaleejtimes.com/kt-network/citi-developers-unveils-amra-the-worlds-first-integrative-wellness-resort",
+   "https://servicedapartmentnews.com/news/serviced-residences/amra-residences-uae/",
+   "https://pinionnewswire.com/press-release/citi-developers-announces-amra-the-worlds-first-integrative-wellness-resort/"
+  ]
+ },
+ {
+  "slug": "river-cove-residences-sobha",
+  "name": "River Cove Residences (Sobha City Abu Dhabi)",
+  "developer": "Sobha Realty (Sobha Realty LLC SPC)",
+  "area": "Al Bahyah (next to Yas Island)",
+  "country": "UAE",
+  "market": "Abu Dhabi",
+  "stage": "off-plan",
+  "url": "https://alnair.ae/en/abu-dhabi/project/river-cove-residences",
+  "docs_url": "https://thesobhacity.com/",
+  "permit_number": "20260000980688 (ADREC project number)",
+  "docs_listed": [
+   "Sobha City page: 1BR 568 to 608 sq ft and 2BR 1,012 to 1,212 sq ft from AED 1.31M",
+   "payment plan 20/40/40 with instalment schedule, completion Dec 2029",
+   "service charge about AED 16 per sq ft",
+   "registry mirror: project no. 20260000980688, escrow First Abu Dhabi Bank, construction 0%, 532 units"
+  ],
+  "note": "Two waterfront towers of 1 and 2 bedroom apartments in Sobha's first Abu Dhabi masterplan, launched April 2026 with a 20/40/40 plan and December 2029 completion. ADX Interact shows project no. 20260000980688 registered 9 Sep 2026, escrow at First Abu Dhabi Bank, 0% construction and 62 of 532 units sold, while one portal calls it sold out (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1310000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q4",
+   "permit_claim": true,
+   "permit_number": "20260000980688 (ADREC project number)",
+   "plans_published": false,
+   "escrow": "Escrow bank First Abu Dhabi Bank PJSC (ADX Interact registry mirror)",
+   "progress_pct": 0,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 532,
+   "payment_plan": "20% on booking, 40% in eight 5% instalments over 36 months, 40% on completion",
+   "price_per_m2": 24830
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "ADX Interact registry mirror: Project No. 20260000980688, registered 9 Sept 2026",
+   "escrow": "ADX Interact: Escrow Bank First Abu Dhabi Bank P.J.S.C.",
+   "progress": "ADX Interact and Alnair: 0% construction",
+   "plans": "Floor plans offered on request only; sizes listed",
+   "record": "No delivered projects named on pages opened",
+   "returns": "Villament release mentions 'high ROI potential' but no figure or guarantee"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project registered with ADREC (no. 20260000980688)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://adxinteract.com/abu-dhabi-new-projects/river-cove-residences"
+   },
+   {
+    "claim": "Escrow account at First Abu Dhabi Bank",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://adxinteract.com/abu-dhabi-new-projects/river-cove-residences"
+   },
+   {
+    "claim": "Construction 0%",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://adxinteract.com/abu-dhabi-new-projects/river-cove-residences"
+   },
+   {
+    "claim": "Project is under construction (NAHY)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://nahyrealestate.com/handover/river-cove-residences"
+   },
+   {
+    "claim": "Sold out (Alnair)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://alnair.ae/en/abu-dhabi/project/river-cove-residences"
+   },
+   {
+    "claim": "Registered developer is Sobha Realty LLC SPC",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://adxinteract.com/abu-dhabi-new-projects/river-cove-residences"
+   },
+   {
+    "claim": "Completion December 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thesobhacity.com/"
+   },
+   {
+    "claim": "Starting price AED 1.31M (developer) vs 1.35M (Alnair)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://alnair.ae/en/news/sobha-unveils-river-cove-residences-in-abu-dhabi-with-early-buyer-eoi-from-aed-35k"
+   },
+   {
+    "claim": "Freehold ownership",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://alnair.ae/en/abu-dhabi/project/river-cove-residences"
+   },
+   {
+    "claim": "Phase 1 of Sobha City is 470 units (developer) vs 532 units for River Cove alone (registry)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://thesobhacity.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Sobha Realty - L.L.C - S.P.C (registry mirror)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2029-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR waterfront villament"
+   ],
+   "size_min_m2": 53,
+   "size_max_m2": 237,
+   "price_min": 1310000,
+   "price_max": 4980000,
+   "currency": "AED",
+   "deposit_pct": 20,
+   "payment_plan": "20/40/40",
+   "foreign_ownership": "freehold (as listed)",
+   "rental_programme": null,
+   "service_charge": "about AED 16 per sq ft (developer page); AED 172.22 per sq m (Alnair)",
+   "brand": null,
+   "amenities": [
+    "2 km waterfront promenade",
+    "Greg Norman par-3 golf",
+    "pool",
+    "gym",
+    "play courts"
+   ],
+   "lat": 24.52,
+   "lng": 54.66,
+   "permit_authority": "Abu Dhabi Real Estate Centre (ADREC) via DARI",
+   "brochure_url": null
+  },
+  "verified_score": 3,
+  "positives": [
+   "Registry-mirror project number and named escrow bank",
+   "Clear instalment schedule published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://alnair.ae/en/abu-dhabi/project/river-cove-residences",
+   "https://thesobhacity.com/",
+   "https://adxinteract.com/abu-dhabi-new-projects/river-cove-residences",
+   "https://alnair.ae/en/news/sobha-unveils-river-cove-residences-in-abu-dhabi-with-early-buyer-eoi-from-aed-35k",
+   "https://nahyrealestate.com/handover/river-cove-residences"
+  ]
+ },
+ {
+  "slug": "dusit-thani-residences-ajman-aqaar",
+  "name": "Dusit Thani Residences Ajman",
+  "developer": "Aqaar (Ajman Properties Corporation)",
+  "area": "Al Nakhil 2, Ajman Corniche",
+  "country": "UAE",
+  "market": "Ajman",
+  "stage": "off-plan",
+  "url": "https://www.propertyfinder.ae/en/new-projects/aqaar-properties/dusit-thani-residences",
+  "docs_url": "https://dusitthaniresidencesajman.com/",
+  "permit_number": "537 (Ajman project registration number)",
+  "docs_listed": [
+   "Property Finder: launch price AED 2.09M, 5/36/19/40 plan with 40% post-handover",
+   "328 apartments 1 to 4BR, 20 residential floors, 675,000 sq ft built area",
+   "construction start 15 Mar 2026, completion Dec 2028",
+   "Ajman government open data: registration no. 537, status Under construction, escrow 11187132019 at Ajman Bank, 335 units"
+  ],
+  "note": "First internationally branded residential tower in Ajman under a Dusit International brand agreement announced Feb 2026, with completion listed for December 2028 and 40% payable after handover. Ajman's official project register (30 Jun 2026) lists it as no. 537, under construction, with escrow account 11187132019 at Ajman Bank and 335 units versus 328 marketed; no progress figure, floor plans or delivered Aqaar projects are published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 2090753,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": true,
+   "permit_number": "537 (Ajman project registration number)",
+   "plans_published": false,
+   "escrow": "Escrow account 11187132019 at Ajman Bank PSC (Ajman Department of Land and Real Estate Regulation open data, 30 Jun 2026)",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 328,
+   "payment_plan": "5% at launch, 36% during construction, 19% on handover, 40% post-handover",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Ajman Department of Land and Real Estate Regulation open data: project registration number 537",
+   "escrow": "Same register: account trustee Ajman Bank PSC, escrow account 11187132019",
    "progress": "Only a construction start date on Property Finder",
    "plans": "No floor plans on pages opened",
    "record": "Developer site says 'most trusted developer since 2016' but names no completed project",
    "returns": "Developer site says 'built for long-term returns' with no figure or guarantee"
   },
   "verification": {
-   "permit": "none",
-   "escrow": "none",
+   "permit": "registry",
+   "escrow": "registry",
    "progress": "none",
    "plans": "none",
    "record": "none",
@@ -2506,16 +3049,28 @@
     "source": "https://www.propertyfinder.ae/en/new-projects/aqaar-properties/dusit-thani-residences"
    },
    {
-    "claim": "Escrow account opened with an Ajman-accredited bank",
-    "status": "unverified",
-    "by": "none",
-    "source": "https://ajmanre.gov.ae/en/services/"
+    "claim": "Project registered in Ajman (no. 537), status Under construction",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://data.ajman.ae/api/explore/v2.1/catalog/datasets/real-estate-projects/records?limit=30&where=search(%22dusit%22)"
+   },
+   {
+    "claim": "Escrow account 11187132019 at Ajman Bank",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://data.ajman.ae/api/explore/v2.1/catalog/datasets/real-estate-projects/records?limit=30&where=search(%22dusit%22)"
+   },
+   {
+    "claim": "328 apartments (marketing) vs 335 registered units",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://data.ajman.ae/api/explore/v2.1/catalog/datasets/real-estate-projects/records?limit=30&where=search(%22dusit%22)"
    }
   ],
   "facts": {
    "developer_founded": 2016,
    "developer_hq": "Ajman, UAE",
-   "developer_company": "Ajman Properties Corporation (Aqaar)",
+   "developer_company": "Ajman Properties Corporation - Aqaar (Ajman register)",
    "developer_projects_delivered": null,
    "developer_units_delivered": null,
    "listed_or_audited": null,
@@ -2553,8 +3108,9 @@
    "permit_authority": "Ajman Department of Land and Real Estate Regulation",
    "brochure_url": null
   },
-  "verified_score": 0,
+  "verified_score": 2,
   "positives": [
+   "Registration number and escrow account confirmed on Ajman's official open-data register",
    "Large post-handover share (40%) limits pre-completion exposure",
    "International hospitality brand with oversight role"
   ],
@@ -2565,7 +3121,9 @@
    "https://www.zawya.com/en/press-release/companies-news/aqaar-and-dusit-international-launch-dusit-thani-residences-ajman-361797",
    "https://www.khaleejtimes.com/kt-network/aqaar-and-dusit-international-launch-dusit-thani-residences-ajman",
    "https://www.cbnme.com/news/aqaar-partners-with-dusit-international-to-launch-dusit-thani-residences-in-ajman/",
-   "https://ajmanre.gov.ae/en/services/"
+   "https://ajmanre.gov.ae/en/services/",
+   "https://data.ajman.ae/api/explore/v2.1/catalog/datasets/real-estate-projects/records?limit=30&where=search(%22dusit%22)",
+   "https://data.ajman.ae/explore/dataset/real-estate-projects/information/"
   ]
  },
  {
@@ -2578,13 +3136,14 @@
   "stage": "off-plan",
   "url": "https://www.propertyfinder.ae/en/new-projects/tiger-group/tiger-downtown-ajman",
   "docs_url": "https://tigergroup.ae/EventsAndNewsDetails/21261",
-  "permit_number": null,
+  "permit_number": "529 (Ajman project registration number, Orchid)",
   "docs_listed": [
    "Property Finder: launch price AED 366K, plan 20/40/10/30, construction start 7 Apr 2026, completion Dec 2028",
    "developer release: 76 buildings, Orchid Towers phase 1, handover Q4 2028, all nationalities",
-   "press: 70/30 plan, entry price about AED 420K"
+   "press: 70/30 plan, entry price about AED 420K",
+   "Ajman government open data: Orchid registration no. 529 under main project Tiger Down Town, Under construction, escrow 3868488399902 at Emirates Islamic Bank, 1,331 units"
   ],
-  "note": "Lagoon master community of 76 buildings marketed at USD 10bn, with phase 1 Orchid Towers (six towers of furnished studios to penthouses) targeted for Q4 2028 and ownership for all nationalities. Coverage is the developer release and partner content; plot area, price and payment plan differ between sources and no permit, escrow, progress or plans are published (checked 31 Oct 2026)",
+  "note": "Lagoon master community of 76 buildings marketed at USD 10bn, with phase 1 Orchid Towers targeted for Q4 2028 and ownership for all nationalities. Ajman's official project register lists Orchid as no. 529 (Tiger Properties Branch 01), under construction, with 1,331 units and escrow account 3868488399902 at Emirates Islamic Bank; plot area, price and payment plan differ between sources and no progress figure or plans are published (checked 31 Oct 2026)",
   "added": "2026-10-31",
   "seed": {
    "price": 366000,
@@ -2595,38 +3154,38 @@
    "guaranteed_language": false,
    "yield_pct": null,
    "completion": "2028-Q4",
-   "permit_claim": false,
-   "permit_number": null,
+   "permit_claim": true,
+   "permit_number": "529 (Ajman project registration number, Orchid)",
    "plans_published": false,
-   "escrow": null,
+   "escrow": "Escrow account 3868488399902 at Emirates Islamic Bank (Ajman Department of Land and Real Estate Regulation open data, 30 Jun 2026)",
    "progress_pct": null,
    "progress_updates": false,
    "developer_delivered": "Developer release: Tiger Properties has delivered more than 270 residential and commercial projects across several emirates (no list on pages opened)",
-   "units": null,
+   "units": 1331,
    "payment_plan": "20% at launch, 40% during construction, 10% on handover, 30% post-handover (Property Finder); 70/30 in press",
    "price_per_m2": null
   },
   "disclosure": {
-   "permit": false,
-   "escrow": false,
+   "permit": true,
+   "escrow": true,
    "progress": false,
    "plans": false,
    "record": true,
    "no_guaranteed_returns": true,
-   "score": 2,
+   "score": 4,
    "all_six": false
   },
   "evidence": {
-   "permit": "No Ajman registration number published",
-   "escrow": null,
+   "permit": "Ajman Department of Land and Real Estate Regulation open data: project registration number 529 (Orchid, main project Tigar Down Town)",
+   "escrow": "Same register: account trustee Emirates Islamic Bank, escrow account 3868488399902",
    "progress": "Only a construction start date on Property Finder; lagoon excavation planned in parallel",
    "plans": "No floor plans on pages opened",
    "record": "Developer release claims 270+ delivered projects without naming them",
    "returns": "No guaranteed return language"
   },
   "verification": {
-   "permit": "none",
-   "escrow": "none",
+   "permit": "registry",
+   "escrow": "registry",
    "progress": "none",
    "plans": "none",
    "record": "developer",
@@ -2682,16 +3241,28 @@
     "source": "https://www.propertyfinder.ae/en/new-projects/tiger-group/tiger-downtown-ajman"
    },
    {
-    "claim": "Escrow account opened",
-    "status": "unverified",
-    "by": "none",
-    "source": "https://www.propertyfinder.ae/en/new-projects/tiger-group/tiger-downtown-ajman"
+    "claim": "Phase 1 Orchid registered in Ajman (no. 529), status Under construction",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://data.ajman.ae/api/explore/v2.1/catalog/datasets/real-estate-projects/records?limit=30&where=search(%22orchid%22)"
+   },
+   {
+    "claim": "Escrow account 3868488399902 at Emirates Islamic Bank",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://data.ajman.ae/api/explore/v2.1/catalog/datasets/real-estate-projects/records?limit=30&where=search(%22orchid%22)"
+   },
+   {
+    "claim": "Registered developer is Tiger Properties - Branch 01",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://data.ajman.ae/api/explore/v2.1/catalog/datasets/real-estate-projects/records?limit=30&where=search(%22orchid%22)"
    }
   ],
   "facts": {
    "developer_founded": 1976,
    "developer_hq": "Sharjah/Dubai, UAE",
-   "developer_company": "Tiger Properties, real estate arm of Tiger Holding (established 1976 per release)",
+   "developer_company": "Tiger Properties - Branch 01 (Ajman register); real estate arm of Tiger Holding",
    "developer_projects_delivered": null,
    "developer_units_delivered": null,
    "listed_or_audited": null,
@@ -2731,8 +3302,9 @@
    "permit_authority": "Ajman Department of Land and Real Estate Regulation",
    "brochure_url": null
   },
-  "verified_score": 0,
+  "verified_score": 2,
   "positives": [
+   "Registration number and escrow account confirmed on Ajman's official open-data register",
    "30% of price payable after handover",
    "Large established developer group (per its own release)"
   ],
@@ -2743,7 +3315,9 @@
    "https://www.zawya.com/en/business/real-estate/tiger-properties-unveils-10bln-lagoon-front-premium-city-in-ajman-369897",
    "https://gulfnews.com/business/property/tiger-properties-launches-tiger-downtown-ajman-with-10-billion-investment-1.500375101",
    "https://www.khaleejtimes.com/business/property/tiger-properties-launches-tiger-downtown-ajman-with-10-billion-investment",
-   "https://www.einpresswire.com/article/881534843/tiger-properties-launches-usd-10-billion-tiger-downtown-ajman-opens-bookings-for-phase-1"
+   "https://www.einpresswire.com/article/881534843/tiger-properties-launches-usd-10-billion-tiger-downtown-ajman-opens-bookings-for-phase-1",
+   "https://data.ajman.ae/api/explore/v2.1/catalog/datasets/real-estate-projects/records?limit=30&where=search(%22orchid%22)",
+   "https://data.ajman.ae/explore/dataset/real-estate-projects/information/"
   ]
  },
  {
@@ -2756,8 +3330,9 @@
   "stage": "under construction",
   "url": "https://www.propertyfinder.ae/en/new-projects/al-zorah-development/sealine-residence",
   "docs_url": "https://jre.ae/projects/sealine-residence",
-  "permit_number": null,
+  "permit_number": "501 (Ajman project registration number)",
   "docs_listed": [
+   "Ajman government open data: registration no. 501, Under construction, escrow 537796920007 at ADCB, 103 units",
    "escrow no. 011000155013 (JRE, Found)",
    "construction 8% complete (JRE, Impala, Found)",
    "construction 15 Jul 2024 to 31 Dec 2026",
@@ -2765,7 +3340,7 @@
    "two payment plans incl. 3 years post-handover (Bayut)",
    "service charge AED 23 per sq ft"
   ],
-  "note": "Ten-storey Al Zorah building of 1 to 3 bedroom apartments and duplexes with escrow no. 011000155013 published by agencies; build progress is reported at only 8% while handover is still listed for December 2026, which looks unlikely to hold. EMSTEEL reported supplying rebar to the project in June 2026 (checked 31 Oct 2026)",
+  "note": "Ten-storey Al Zorah building registered in Ajman as no. 501 (103 units, under construction) with escrow account 537796920007 at ADCB; agencies publish a different escrow number (011000155013) and 8% progress while handover is still listed for December 2026, which looks unlikely to hold. The register shows Al Zorah's Seaside Hills Residence (90 units) and other phases completed (checked 31 Oct 2026)",
   "added": "2026-10-31",
   "seed": {
    "price": 1362862,
@@ -2776,49 +3351,49 @@
    "guaranteed_language": false,
    "yield_pct": null,
    "completion": "2026-Q4",
-   "permit_claim": false,
-   "permit_number": null,
+   "permit_claim": true,
+   "permit_number": "501 (Ajman project registration number)",
    "plans_published": true,
-   "escrow": "Escrow account no. 011000155013 (published by JRE and Found Group)",
+   "escrow": "Ajman register: escrow account 537796920007 at ADCB; agencies publish a different number (011000155013)",
    "progress_pct": 8,
    "progress_updates": false,
-   "developer_delivered": "Seaside Hills Residences at Al Zorah listed as Ready on Property Finder",
-   "units": null,
+   "developer_delivered": "Ajman register lists completed Al Zorah projects: Seaside Hills Residence (90 units), Golf Villas phase 1 (29 units), Golf Estate (10 units) and Seaside Hills villas",
+   "units": 103,
    "payment_plan": "10% booking, 40% during construction, 50% on handover; or 10/40/10 plus 40% over 3 years after handover",
    "price_per_m2": 16470
   },
   "disclosure": {
-   "permit": false,
+   "permit": true,
    "escrow": true,
    "progress": true,
    "plans": true,
    "record": true,
    "no_guaranteed_returns": true,
-   "score": 5,
-   "all_six": false
+   "score": 6,
+   "all_six": true
   },
   "evidence": {
-   "permit": "No Ajman registration number published",
-   "escrow": "JRE and Found Group: escrow account no. 011000155013; Impala: escrow registered",
+   "permit": "Ajman Department of Land and Real Estate Regulation open data: project registration number 501",
+   "escrow": "Ajman register: ADCB escrow 537796920007; JRE and Found Group publish 011000155013 (contradiction)",
    "progress": "JRE, Impala and Found: 8% complete",
    "plans": "JRE lists floor plan document; Property Finder unit types",
-   "record": "Property Finder lists Seaside Hills by Al Zorah as Ready",
+   "record": "Ajman register: Seaside Hills Residence (no. 416, 90 units), Golf Villas phase 1, Golf Estate listed as Completed",
    "returns": "No guaranteed return language"
   },
   "verification": {
-   "permit": "none",
-   "escrow": "developer",
+   "permit": "registry",
+   "escrow": "contradicted",
    "progress": "developer",
    "plans": "developer",
-   "record": "developer",
+   "record": "registry",
    "returns": "developer"
   },
   "claims": [
    {
     "claim": "Escrow account no. 011000155013",
-    "status": "unverified",
-    "by": "none",
-    "source": "https://foundgroup.ae/new-launches/sealine-residence-ref-op-1592"
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://data.ajman.ae/api/explore/v2.1/catalog/datasets/real-estate-projects/records?limit=30&where=search(%22sealine%22)"
    },
    {
     "claim": "Construction 8% complete",
@@ -2841,8 +3416,8 @@
    {
     "claim": "Number of residences (19 per JRE, 26 on offer per Impala, 5 buildings per Property Finder)",
     "status": "contradicted",
-    "by": "none",
-    "source": "https://jre.ae/projects/sealine-residence"
+    "by": "registry",
+    "source": "https://data.ajman.ae/api/explore/v2.1/catalog/datasets/real-estate-projects/records?limit=30&where=search(%22sealine%22)"
    },
    {
     "claim": "Payment plan 10/50/40 vs 10/40/50 vs 10/80/10",
@@ -2864,16 +3439,22 @@
    },
    {
     "claim": "Developer delivered Seaside Hills (Ready)",
-    "status": "unverified",
-    "by": "none",
-    "source": "https://www.propertyfinder.ae/en/new-projects/lp/ajman"
+    "status": "verified",
+    "by": "registry",
+    "source": "https://data.ajman.ae/api/explore/v2.1/catalog/datasets/real-estate-projects/records?limit=30&where=search(%22seaside%20hills%22)"
+   },
+   {
+    "claim": "Project registered in Ajman (no. 501), status Under construction",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://data.ajman.ae/api/explore/v2.1/catalog/datasets/real-estate-projects/records?limit=30&where=search(%22sealine%22)"
    }
   ],
   "facts": {
    "developer_founded": null,
    "developer_hq": "Ajman, UAE",
-   "developer_company": "Al Zorah Development Company",
-   "developer_projects_delivered": null,
+   "developer_company": "Al Zorah Development (Private) Company Limited (Ajman register)",
+   "developer_projects_delivered": 3,
    "developer_units_delivered": null,
    "listed_or_audited": null,
    "construction_start": "2024-07",
@@ -2910,10 +3491,10 @@
    "permit_authority": "Ajman Department of Land and Real Estate Regulation",
    "brochure_url": null
   },
-  "verified_score": 0,
+  "verified_score": 2,
   "positives": [
-   "Escrow account number published by agencies",
-   "Progress percentage published",
+   "Registration number confirmed on Ajman's official register",
+   "Developer's earlier Al Zorah phases listed as completed on the register",
    "Post-handover plan available"
   ],
   "flags": [],
@@ -2924,7 +3505,10 @@
    "https://foundgroup.ae/new-launches/sealine-residence-ref-op-1592",
    "https://www.bayut.com/buildings/sealine-residence/",
    "https://news.mesteel.com/emsteel-supplies-es600-rebar-for-al-zorah-residential-developments/",
-   "https://www.propertyfinder.ae/en/new-projects/lp/ajman"
+   "https://www.propertyfinder.ae/en/new-projects/lp/ajman",
+   "https://data.ajman.ae/api/explore/v2.1/catalog/datasets/real-estate-projects/records?limit=30&where=search(%22sealine%22)",
+   "https://data.ajman.ae/api/explore/v2.1/catalog/datasets/real-estate-projects/records?limit=30&where=search(%22seaside%20hills%22)",
+   "https://data.ajman.ae/explore/dataset/real-estate-projects/information/"
   ]
  }
 ]

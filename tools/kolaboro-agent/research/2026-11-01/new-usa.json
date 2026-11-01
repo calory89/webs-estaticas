@@ -1,0 +1,956 @@
+[
+ {
+  "slug": "the-launiu-ward-village-howard-hughes",
+  "name": "The Launiu Ward Village",
+  "developer": "Howard Hughes Communities (Victoria Ward, Limited)",
+  "area": "Ward Village, Kaka'ako, Honolulu",
+  "country": "USA",
+  "market": "Hawaii",
+  "stage": "under construction",
+  "url": "https://www.hiestates.com/new-developments/the-launiu-ward-village/",
+  "docs_url": "https://ward-village.prezly.com/ward-villager-breaks-ground-on-the-launiu-ward-villager",
+  "permit_number": "HCDA KAK 23-001",
+  "docs_listed": [
+   "HCDA development permit file KAK 23-001 with staff report and application (state agency)",
+   "486 residences, studios to 3BR",
+   "groundbreaking 21 Oct 2025 (developer press release)",
+   "67% under contract at 30 Jun 2025, 71% at end 2025 (developer releases)",
+   "price range USD 700,000 to 4.4M (agent)"
+  ],
+  "note": "486-unit tower at 928 Ala Moana Blvd by Howard Hughes (NYSE: HHH) under HCDA permit file KAK 23-001; ground broken 21 Oct 2025 and about 71% presold at end 2025. No unit floor plans, escrow details or firm completion date published on pages we could open (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 700000,
+   "currency": "USD",
+   "title": "fee simple condominium",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": true,
+   "permit_number": "HCDA KAK 23-001",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Howard Hughes: eight sold-out Ward Village towers (Waiea, Anaha, Ae'o, Ke Kilohana, 'A'ali'i, Ko'ula, Victoria Place, Ulana) per Aloha State Daily and developer releases",
+   "units": 486,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "HCDA project page and staff report list development permit file KAK 23-001 (Master Plan Permit PL MASP 13.1.3), applicant Victoria Ward, Limited, 486 units, TMK (1) 2-1-056:001; developer pages do not quote the number",
+   "escrow": null,
+   "progress": "Groundbreaking 21 Oct 2025 announced by developer and reported by Hawaii News Now and Aloha State Daily; no % published",
+   "plans": "Only unit mix counts (140 studios, 137 1BR, 143 2BR, 65 3BR) on agent page; floor plans by request",
+   "record": "Eight Ward Village towers sold out and delivered, listed by Aloha State Daily (Oct 2026) and developer releases; parent is NYSE-listed",
+   "returns": "No rental return or guarantee language on developer release or agent page"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Development permit KAK 23-001 filed with HCDA by Victoria Ward, Limited for 486 units",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dbedt.hawaii.gov/hcda/files/2023/03/Launiu-Presentation-Hearing-Staff-Report-Final.pdf"
+   },
+   {
+    "claim": "HCDA decision and order on the permit published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dbedt.hawaii.gov/hcda/launiu/"
+   },
+   {
+    "claim": "Project has 486 homes",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dbedt.hawaii.gov/hcda/launiu/"
+   },
+   {
+    "claim": "Construction started (groundbreaking Oct 2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.hawaiinewsnow.com/2025/10/23/ward-village-breaks-ground-new-residential-retail-tower/"
+   },
+   {
+    "claim": "67% (324 units) under contract at 30 Jun 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.hawaiinewsnow.com/2025/10/23/ward-village-breaks-ground-new-residential-retail-tower/"
+   },
+   {
+    "claim": "About 71% presold at end 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ward-village.prezly.com/ward-villager-reports-record-2025-residential-sales-and-major-community-milestones"
+   },
+   {
+    "claim": "Estimated completion 2027 (agent)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.hiestates.com/new-developments/the-launiu-ward-village/"
+   },
+   {
+    "claim": "Agent FAQ says construction start around Q3 2024",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.hawaiinewsnow.com/2025/10/23/ward-village-breaks-ground-new-residential-retail-tower/"
+   },
+   {
+    "claim": "Prices from USD 700,000 to 4.4M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.hiestates.com/new-developments/the-launiu-ward-village/"
+   },
+   {
+    "claim": "Developer delivered seven earlier sold-out towers at Ward Village",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://alohastatedaily.com/2026/10/19/whats-happening-in-ward-village/"
+   },
+   {
+    "claim": "No reserved (affordable) housing units in this tower",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dbedt.hawaii.gov/hcda/files/2023/03/Launiu-Presentation-Hearing-Staff-Report-Final.pdf"
+   },
+   {
+    "claim": "Buyer deposits held by a named escrow depository",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.hiestates.com/new-developments/the-launiu-ward-village/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "The Woodlands, Texas, USA",
+   "developer_company": "Victoria Ward, Limited (HCDA applicant); parent Howard Hughes Holdings Inc.",
+   "developer_projects_delivered": 8,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Howard Hughes Holdings Inc., NYSE: HHH",
+   "construction_start": "2025-10",
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 700000,
+   "price_max": 4400000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Fee simple condominium title; no restrictions on foreign buyers stated",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "public open space about 21,000 sq ft",
+    "ground-floor retail"
+   ],
+   "lat": 21.293,
+   "lng": -157.858,
+   "permit_authority": "Hawaii Community Development Authority (HCDA)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Development permit file and staff report public on the state HCDA site",
+   "Developer is NYSE-listed with eight completed Ward Village towers",
+   "Groundbreaking and presale levels reported by independent press",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.hiestates.com/new-developments/the-launiu-ward-village/",
+   "https://ward-village.prezly.com/ward-villager-breaks-ground-on-the-launiu-ward-villager",
+   "https://ward-village.prezly.com/ward-villager-reports-record-2025-residential-sales-and-major-community-milestones",
+   "https://dbedt.hawaii.gov/hcda/launiu/",
+   "https://dbedt.hawaii.gov/hcda/files/2023/03/Launiu-Presentation-Hearing-Staff-Report-Final.pdf",
+   "https://www.hawaiinewsnow.com/2025/10/23/ward-village-breaks-ground-new-residential-retail-tower/",
+   "https://alohastatedaily.com/2026/10/19/whats-happening-in-ward-village/"
+  ],
+  "verified_score": 3
+ },
+ {
+  "slug": "ilima-ward-village-howard-hughes",
+  "name": "'Ilima Ward Village",
+  "developer": "Howard Hughes Communities (Victoria Ward, Limited) with Discovery Land Company",
+  "area": "Ward Village, Kaka'ako, Honolulu",
+  "country": "USA",
+  "market": "Hawaii",
+  "stage": "off-plan",
+  "url": "https://www.hawaiinewsnow.com/2026/09/29/ward-village-breaks-ground-ilima-melia-residential-towers/",
+  "docs_url": "https://broker.wardvillage.com/wp-content/uploads/2026/02/Ilima-Real-Estate-Guide-English.pdf",
+  "permit_number": "HCDA KAK 23-038",
+  "docs_listed": [
+   "developer real estate guide with 30 floor plans and sizes (1,782 to 5,252 sq ft)",
+   "HCDA development permit file KAK 23-038 (Land Block 4 Project 2, 148 units)",
+   "groundbreaking 28 Sep 2026",
+   "expected opening 2030 (press)",
+   "broker licence numbers RB-21701 and RB-21654-2"
+  ],
+  "note": "148-residence, 33-storey tower at 1200 Ala Moana Blvd by Howard Hughes with Discovery Land Co.; HCDA permit file KAK 23-038, ground broken 28 Sep 2026 and opening expected in 2030. Developer guide publishes 30 floor plans but no prices, escrow terms or completion date (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "USD",
+   "title": "fee simple condominium",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030",
+   "permit_claim": true,
+   "permit_number": "HCDA KAK 23-038",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Howard Hughes: eight sold-out Ward Village towers including Waiea, Anaha, Ae'o, Ke Kilohana, Victoria Place and Ulana (Aloha State Daily, Oct 2026)",
+   "units": 148,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "HCDA staff report for KAK 23-038: Ward Village Land Block 4 Project 2 (Block E), applicant Victoria Ward, Limited, 1200 Ala Moana Blvd, 148 units, matching 'Ilima's 148 homes",
+   "escrow": null,
+   "progress": "Groundbreaking held 28 Sep 2026 per Hawaii News Now and Aloha State Daily; no % published",
+   "plans": "Developer real estate guide lists 30 floor plans with plan codes and approximate sizes for levels 7 to 33",
+   "record": "Eight completed sold-out Ward Village towers named by independent press; parent NYSE: HHH",
+   "returns": "Guide and press carry no rental or return language"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "HCDA permit file KAK 23-038 for 148 units at 1200 Ala Moana Blvd",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dbedt.hawaii.gov/hcda/files/2023/06/1.-Staff-Report-Block-E-Presentation-Hearing-Final-07-20-2023.pdf"
+   },
+   {
+    "claim": "Tower has 148 residences over 33 storeys",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.hawaiinewsnow.com/2026/09/29/ward-village-breaks-ground-ilima-melia-residential-towers/"
+   },
+   {
+    "claim": "Ground broken Sept 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://alohastatedaily.com/2026/10/19/whats-happening-in-ward-village/"
+   },
+   {
+    "claim": "Expected to open in 2030",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.hawaiinewsnow.com/2026/09/29/ward-village-breaks-ground-ilima-melia-residential-towers/"
+   },
+   {
+    "claim": "Melia and 'Ilima together about 60% presold, 220 units contracted in 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ward-village.prezly.com/ward-villager-reports-record-2025-residential-sales-and-major-community-milestones"
+   },
+   {
+    "claim": "220 pre-sales across the two towers per Howard Hughes earnings",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://alohastatedaily.com/2026/10/19/whats-happening-in-ward-village/"
+   },
+   {
+    "claim": "Developer legal entity named in sales guide",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://broker.wardvillage.com/wp-content/uploads/2026/02/Ilima-Real-Estate-Guide-English.pdf"
+   },
+   {
+    "claim": "Developer delivered eight earlier Ward Village towers",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://alohastatedaily.com/2026/10/19/whats-happening-in-ward-village/"
+   },
+   {
+    "claim": "Prices published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.hiestates.com/new-developments/melia-ward-village/"
+   },
+   {
+    "claim": "Deposits held in escrow (escrow agent named)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://broker.wardvillage.com/wp-content/uploads/2026/02/Ilima-Real-Estate-Guide-English.pdf"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "The Woodlands, Texas, USA",
+   "developer_company": "Victoria Ward, Limited (HCDA applicant); brokers Ward Village Properties, LLC RB-21701 and Discovery Makena Realty, LLC RB-21654-2",
+   "developer_projects_delivered": 8,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Howard Hughes Holdings Inc., NYSE: HHH",
+   "construction_start": "2026-09",
+   "handover_promised": "2030",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "5BR",
+    "6BR penthouse"
+   ],
+   "size_min_m2": 166,
+   "size_max_m2": 488,
+   "price_min": null,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Fee simple condominium; not restricted for foreigners (no statement found)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Discovery Land Company residential experience",
+   "amenities": [
+    "ground-floor retail",
+    "Robert A.M. Stern design"
+   ],
+   "lat": 21.292,
+   "lng": -157.853,
+   "permit_authority": "Hawaii Community Development Authority (HCDA)",
+   "brochure_url": "https://broker.wardvillage.com/wp-content/uploads/2026/02/Ilima-Real-Estate-Guide-English.pdf"
+  },
+  "positives": [
+   "Full set of 30 floor plans with sizes published by developer",
+   "Permit file public on HCDA site and matches unit count",
+   "Listed developer with delivered towers next door"
+  ],
+  "flags": [],
+  "sources": [
+   "https://broker.wardvillage.com/wp-content/uploads/2026/02/Ilima-Real-Estate-Guide-English.pdf",
+   "https://dbedt.hawaii.gov/hcda/files/2023/06/1.-Staff-Report-Block-E-Presentation-Hearing-Final-07-20-2023.pdf",
+   "https://www.hawaiinewsnow.com/2026/09/29/ward-village-breaks-ground-ilima-melia-residential-towers/",
+   "https://alohastatedaily.com/2026/10/19/whats-happening-in-ward-village/",
+   "https://ward-village.prezly.com/ward-villager-reports-record-2025-residential-sales-and-major-community-milestones",
+   "https://www.hiestates.com/new-developments/melia-ward-village/"
+  ],
+  "verified_score": 3
+ },
+ {
+  "slug": "mahana-ward-village-howard-hughes",
+  "name": "Mahana Ward Village",
+  "developer": "Howard Hughes Communities (Victoria Ward, Limited)",
+  "area": "Ward Village, Kaka'ako, Honolulu",
+  "country": "USA",
+  "market": "Hawaii",
+  "stage": "off-plan",
+  "url": "https://www.hiestates.com/new-developments/mahana-ward-village/",
+  "docs_url": "https://communities.howardhughes.com/press-releases/mahana-ward-village-generates-strong-early-demand-ahead-of-gallery-opening/",
+  "permit_number": "HCDA KAK 23-027 (amended by KAK 25-045)",
+  "docs_listed": [
+   "HCDA permit KAK 23-027 approved 6 Sep 2023, amendment KAK 25-045 to 451 units",
+   "HCDA report: anticipated construction start 2028",
+   "451 residences, studio to 3BR",
+   "sales gallery opened 8 Aug 2026",
+   "agent: unit sizes 456 to 1,532 sq ft, completion estimate 2031"
+  ],
+  "note": "451-unit tower at 423 Ward Ave; HCDA permit KAK 23-027 approved Sep 2023 and amended under KAK 25-045, with construction anticipated to start in 2028. Sales gallery opened Aug 2026; no prices, floor plans or escrow terms published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "USD",
+   "title": "fee simple condominium",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2031",
+   "permit_claim": true,
+   "permit_number": "HCDA KAK 23-027 / KAK 25-045",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Howard Hughes: first eight Ward Village mixed-use towers sold out (developer release Aug 2026; Aloha State Daily Oct 2026)",
+   "units": 451,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "HCDA staff report: KAK 25-045 amends KAK 23-027 (original approval 6 Sep 2023), applicant Victoria Ward, Limited, 423 Ward Ave, TMK (1) 2-3-002:116 (por.), units 340 to 451",
+   "escrow": null,
+   "progress": "Not started; HCDA report gives anticipated construction start 2028",
+   "plans": "Only size ranges on an agent page; no floor plans from developer",
+   "record": "Eight completed Ward Village towers named in developer release and independent press",
+   "returns": "No return language in developer release"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "registry",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Original HCDA approval KAK 23-027 on 6 Sep 2023",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dbedt.hawaii.gov/hcda/files/2026/01/Mahana-Staff-Reports-2026_Presentation-signed.pdf"
+   },
+   {
+    "claim": "Amendment KAK 25-045 raising units to 451 and tower height to 399.5 ft",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dbedt.hawaii.gov/hcda/files/2026/01/Mahana-Staff-Reports-2026_Presentation-signed.pdf"
+   },
+   {
+    "claim": "451 residences",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dbedt.hawaii.gov/hcda/files/2026/01/Mahana-Staff-Reports-2026_Presentation-signed.pdf"
+   },
+   {
+    "claim": "Agent lists 450 units",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://www.hiestates.com/new-developments/mahana-ward-village/"
+   },
+   {
+    "claim": "Construction to start within about a year depending on presales",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://alohastatedaily.com/2026/10/19/whats-happening-in-ward-village/"
+   },
+   {
+    "claim": "Anticipated construction start 2028",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dbedt.hawaii.gov/hcda/files/2026/01/Mahana-Staff-Reports-2026_Presentation-signed.pdf"
+   },
+   {
+    "claim": "Completion estimate 2031 (agent)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.hiestates.com/new-developments/mahana-ward-village/"
+   },
+   {
+    "claim": "Sales gallery opened 8 Aug 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://alohastatedaily.com/2026/08/05/mahana-ward-village-sales-gallery-to-open-aug-8/"
+   },
+   {
+    "claim": "Strong early demand",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://communities.howardhughes.com/press-releases/mahana-ward-village-generates-strong-early-demand-ahead-of-gallery-opening/"
+   },
+   {
+    "claim": "First eight Ward Village towers sold out",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://alohastatedaily.com/2026/10/19/whats-happening-in-ward-village/"
+   },
+   {
+    "claim": "No reserved housing units in Mahana",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dbedt.hawaii.gov/hcda/files/2026/01/Mahana-Staff-Reports-2026_Presentation-signed.pdf"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "The Woodlands, Texas, USA",
+   "developer_company": "Victoria Ward, Limited (HCDA applicant)",
+   "developer_projects_delivered": 8,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Howard Hughes Holdings Inc., NYSE: HHH",
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 42,
+   "size_max_m2": 142,
+   "price_min": null,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Fee simple condominium; no foreign restriction stated",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "resort pool",
+    "fitness pool",
+    "spa",
+    "owners lounge",
+    "fitness center",
+    "sports lounge",
+    "cold plunge",
+    "BBQ cabanas"
+   ],
+   "lat": 21.296,
+   "lng": -157.857,
+   "permit_authority": "Hawaii Community Development Authority (HCDA)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Permit history and construction timetable public on state HCDA site",
+   "Listed developer with eight delivered towers in the same district",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.hiestates.com/new-developments/mahana-ward-village/",
+   "https://communities.howardhughes.com/press-releases/mahana-ward-village-generates-strong-early-demand-ahead-of-gallery-opening/",
+   "https://dbedt.hawaii.gov/hcda/files/2026/01/Mahana-Staff-Reports-2026_Presentation-signed.pdf",
+   "https://alohastatedaily.com/2026/08/05/mahana-ward-village-sales-gallery-to-open-aug-8/",
+   "https://alohastatedaily.com/2026/10/19/whats-happening-in-ward-village/"
+  ],
+  "verified_score": 3
+ },
+ {
+  "slug": "waldorf-astoria-residences-miami-pmg",
+  "name": "Waldorf Astoria Hotel & Residences Miami",
+  "developer": "Property Markets Group (PMG Downtown Developers, LP) with Greybrook Realty Partners",
+  "area": "Downtown Miami (300 Biscayne Blvd)",
+  "country": "USA",
+  "market": "Miami",
+  "stage": "under construction",
+  "url": "https://joshsteinrealtor.com/new-construction/waldorf-astoria-miami/",
+  "docs_url": "https://static.millionluxury.com/spinfile/Spin/Data/Estate/File/Waldorf Astoria Residences Miami - Fact Sheet EN.pdf",
+  "permit_number": "DBPR condominium filing PR77094",
+  "docs_listed": [
+   "developer fact sheet: 360 residences, 205 hotel keys, team, Section 718.503 disclaimer",
+   "Florida DBPR developer filing PR77094 '300 Biscayne Residences, a Condo' (PMG Downtown Developers, LP)",
+   "City of Miami phased vertical permit approved 10 Jan 2024 (Florida YIMBY, no number)",
+   "construction at 60 of 100 floors in Feb 2026 (Florida YIMBY)",
+   "listings from USD 3.39M, HOA USD 1,809 to 6,199 per month (agent)"
+  ],
+  "note": "100-storey supertall at 300 Biscayne Blvd filed with Florida DBPR as '300 Biscayne Residences, a Condo' (PR77094, PMG Downtown Developers, LP); concrete reached the 60th floor in Feb 2026 and delivery is expected in 2028. Developer materials publish no escrow agent, floor plans or permit number (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 3388700,
+   "currency": "USD",
+   "title": "freehold (fee simple condominium)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": true,
+   "permit_number": "DBPR PR77094",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 60,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 387,
+   "payment_plan": "Average deposit about 40% per PMG (via agent citing Florida Trend); schedule not published",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Florida DBPR developer summary extract lists PR77094 '300 Biscayne Residences, a Condo', developer PMG Downtown Developers, LP, Dade; City of Miami phased vertical permit approved 10 Jan 2024 per Florida YIMBY (permit number not quoted)",
+   "escrow": "Nothing project-specific published. Florida Statute 718.202 requires deposits up to 10% in escrow with an independent agent and lets amounts above 10% be used for construction if the contract says so; PMG reports average deposits of about 40%",
+   "progress": "Florida YIMBY 25 Feb 2026: concrete poured through 60 of 100 floors; 60% is floors poured, not a developer completion figure",
+   "plans": "Fact sheet gives unit types only; agent page has no floor plans",
+   "record": "PMG has earlier DBPR condo filings (Echo Brickell PR75879, Muse PR75978, Echo Aventura PR75809) but no delivered-project list on the pages opened",
+   "returns": "No rental guarantee or yield language on fact sheet or agent page"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Condominium filed with Florida DBPR (PR77094, PMG Downtown Developers, LP)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv"
+   },
+   {
+    "claim": "PMG affiliates filed earlier Miami condos (Echo Brickell, Muse, Echo Aventura)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv"
+   },
+   {
+    "claim": "Phased vertical building permit approved Jan 2024, value USD 426M",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://floridayimby.com/2024/01/miamis-building-department-issues-phased-vertical-permit-for-100-story-supertall-waldorf-astoria-hotel-residences.html"
+   },
+   {
+    "claim": "Concrete through 60 of 100 floors (Feb 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://floridayimby.com/?p=38304"
+   },
+   {
+    "claim": "360 residences (fact sheet)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://floridayimby.com/?p=38304"
+   },
+   {
+    "claim": "Completion 2027 (Wikipedia infobox, PMG portfolio)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://floridayimby.com/?p=38304"
+   },
+   {
+    "claim": "Delivery 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://floridayimby.com/?p=38304"
+   },
+   {
+    "claim": "Buyer deposits up to 10% held in escrow (statutory)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://m.flsenate.gov/Statutes/718.202"
+   },
+   {
+    "claim": "Average buyer deposit about 40%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://joshsteinrealtor.com/new-construction/waldorf-astoria-miami/"
+   },
+   {
+    "claim": "Hilton manages; brand licence can be terminated",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://static.millionluxury.com/spinfile/Spin/Data/Estate/File/Waldorf Astoria Residences Miami - Fact Sheet EN.pdf"
+   },
+   {
+    "claim": "Units listed from USD 3.39M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://joshsteinrealtor.com/new-construction/waldorf-astoria-miami/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Miami, USA",
+   "developer_company": "PMG Downtown Developers, LP (DBPR developer of record)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2022",
+   "handover_promised": "2028",
+   "original_handover": "2027",
+   "delay_months": null,
+   "unit_types": [
+    "junior suite",
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "penthouse"
+   ],
+   "size_min_m2": 168,
+   "size_max_m2": 329,
+   "price_min": 3388700,
+   "price_max": 10701000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Fee simple condominium, no restriction on foreign buyers",
+   "rental_programme": "Rentals allowed within condominium rules (agent); no programme figures",
+   "service_charge": "HOA USD 1,809 to 6,199 per month (agent listings)",
+   "brand": "Waldorf Astoria (Hilton)",
+   "amenities": [
+    "hotel services by Hilton",
+    "205-key hotel"
+   ],
+   "lat": 25.778,
+   "lng": -80.188,
+   "permit_authority": "City of Miami Building Department; Florida DBPR Division of Condominiums for condo filing",
+   "brochure_url": "https://static.millionluxury.com/spinfile/Spin/Data/Estate/File/Waldorf Astoria Residences Miami - Fact Sheet EN.pdf"
+  },
+  "positives": [
+   "Condo filing confirmed in Florida DBPR registry",
+   "Construction past the 60th floor reported by independent press",
+   "Statutory escrow of deposits up to 10% under Florida 718.202",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://joshsteinrealtor.com/new-construction/waldorf-astoria-miami/",
+   "https://static.millionluxury.com/spinfile/Spin/Data/Estate/File/Waldorf Astoria Residences Miami - Fact Sheet EN.pdf",
+   "https://floridayimby.com/?p=38304",
+   "https://floridayimby.com/2024/01/miamis-building-department-issues-phased-vertical-permit-for-100-story-supertall-waldorf-astoria-hotel-residences.html",
+   "https://en.wikipedia.org/wiki/Waldorf_Astoria_Miami",
+   "https://www2.myfloridalicense.com/condos-timeshares-mobile-homes/public-records/",
+   "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv",
+   "https://m.flsenate.gov/Statutes/718.202"
+  ],
+  "verified_score": 3
+ },
+ {
+  "slug": "mercedes-benz-places-miami-jds",
+  "name": "Mercedes-Benz Places Miami",
+  "developer": "JDS Development Group (191 SW 12 Owner LLC), with Fontainebleau Development",
+  "area": "Brickell, Miami",
+  "country": "USA",
+  "market": "Miami",
+  "stage": "under construction",
+  "url": "https://www.millionluxury.com/brickell/mercedes-benz-places-miami",
+  "docs_url": "https://www.millionluxury.com/brickell/mercedes-benz-places-miami",
+  "permit_number": "DBPR condominium filings PR77491 and PR77492",
+  "docs_listed": [
+   "price list by unit type from USD 715,500 (studio 541 sq ft) to 3BR USD 2,795,500",
+   "floor plans download (agent)",
+   "estimated completion Q4 2027 (agent)",
+   "Florida DBPR filings PR77491/PR77492 '1 Southside Park Condo South/North' (191 SW 12 Owner LLC)"
+  ],
+  "note": "791-condo, 67-storey branded tower in Brickell filed with Florida DBPR as 1 Southside Park Condo North and South (191 SW 12 Owner LLC). A lender filed a foreclosure suit in April 2026 over an USD 80.4M loan; in Sept 2026 term sheets for a USD 1.11B construction package led by J.P. Morgan were reported as signed but not closed (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 715500,
+   "currency": "USD",
+   "title": "freehold (fee simple condominium)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": true,
+   "permit_number": "DBPR PR77491 / PR77492",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 791,
+   "payment_plan": null,
+   "price_per_m2": 14236
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Florida DBPR developer summary lists PR77491 '1 Southside Park Condo South' and PR77492 '1 Southside Park Condo North', developer 191 SW 12 Owner LLC; The Real Deal places the project on 145 to 191 SW 12th Street. No building permit number published",
+   "escrow": "Nothing project-specific published; Florida 718.202 statutory escrow of deposits up to 10% applies",
+   "progress": "The Real Deal (Apr 2026) describes the project as under construction with completion delayed; no % or dated developer update found",
+   "plans": "Agent page offers floor plan downloads and a price list by unit type with sizes",
+   "record": "JDS describes this as its first Miami project; New York record not documented on pages opened",
+   "returns": "No guaranteed-return language on agent page"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Condo filed with Florida DBPR as two condominiums (North and South) by 191 SW 12 Owner LLC",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv"
+   },
+   {
+    "claim": "Completion Q4 2027",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://therealdeal.com/miami/2026/04/08/heres-where-michael-sterns-miami-condo-projects-stand"
+   },
+   {
+    "claim": "Construction timeline remains unchanged (JDS)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://therealdeal.com/miami/2026/04/08/heres-where-michael-sterns-miami-condo-projects-stand"
+   },
+   {
+    "claim": "Foreclosure suit by Cottonwood affiliate over USD 80.4M principal, matured Jan 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://therealdeal.com/miami/2026/04/08/heres-where-michael-sterns-miami-condo-projects-stand"
+   },
+   {
+    "claim": "USD 1.11B construction financing led by J.P. Morgan",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://commercialobserver.com/2026/09/mercedes-benz-miami-construction-jpmorgan/"
+   },
+   {
+    "claim": "791 residences",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://commercialobserver.com/2026/09/mercedes-benz-miami-construction-jpmorgan/"
+   },
+   {
+    "claim": "Presales of about USD 450M",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://therealdeal.com/miami/2026/04/08/heres-where-michael-sterns-miami-condo-projects-stand"
+   },
+   {
+    "claim": "Prices from USD 715,500",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.millionluxury.com/brickell/mercedes-benz-places-miami"
+   },
+   {
+    "claim": "Fontainebleau Development joined as partner",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://commercialobserver.com/2026/09/mercedes-benz-miami-construction-jpmorgan/"
+   },
+   {
+    "claim": "Buyer deposits held in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://m.flsenate.gov/Statutes/718.202"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "New York / Miami, USA",
+   "developer_company": "191 SW 12 Owner LLC (DBPR developer of record)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "1BR+den",
+    "2BR",
+    "2BR+den",
+    "3BR"
+   ],
+   "size_min_m2": 50,
+   "size_max_m2": 152,
+   "price_min": 715500,
+   "price_max": 3200000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Fee simple condominium, no restriction on foreign buyers",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Mercedes-Benz Places",
+   "amenities": [
+    "130,000 sq ft of amenities",
+    "174-key hotel",
+    "public park"
+   ],
+   "lat": 25.762,
+   "lng": -80.197,
+   "permit_authority": "City of Miami Building Department; Florida DBPR Division of Condominiums",
+   "brochure_url": null
+  },
+  "positives": [
+   "Condo filings confirmed in Florida DBPR registry",
+   "Price list with sizes and floor plans published by agent",
+   "No guaranteed-return language"
+  ],
+  "flags": [
+   {
+    "text": "The Real Deal reported in April 2026 that a Cottonwood Group affiliate filed a foreclosure suit against the JDS entity, claiming about USD 80.4M principal plus interest on a loan that matured in January 2025; JDS said it was securing new financing",
+    "source": "https://therealdeal.com/miami/2026/04/08/heres-where-michael-sterns-miami-condo-projects-stand"
+   },
+   {
+    "text": "Commercial Observer reported in Sept 2026 that term sheets for a USD 1.11B construction package had been signed but the deal had not closed",
+    "source": "https://commercialobserver.com/2026/09/mercedes-benz-miami-construction-jpmorgan/"
+   }
+  ],
+  "sources": [
+   "https://www.millionluxury.com/brickell/mercedes-benz-places-miami",
+   "https://therealdeal.com/miami/2026/04/08/heres-where-michael-sterns-miami-condo-projects-stand",
+   "https://www.costar.com/article/2103036/developer-to-finalize-financing-for-mercedes-benz-tower-in-miami-after-foreclosure-suit",
+   "https://commercialobserver.com/2026/09/mercedes-benz-miami-construction-jpmorgan/",
+   "https://www2.myfloridalicense.com/sto/file_download/extracts/developersummary.csv",
+   "https://m.flsenate.gov/Statutes/718.202"
+  ],
+  "verified_score": 2
+ }
+]

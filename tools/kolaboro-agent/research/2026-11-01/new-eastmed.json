@@ -1160,5 +1160,2661 @@
    "https://www.newdaypropertyturkey.com/en-US/housing-project/continuing/51/1"
   ],
   "verified_score": 0
+ },
+ {
+  "slug": "naftikos-residences-cybarco",
+  "name": "Naftikos Residences",
+  "developer": "Cybarco (Lanitis Group)",
+  "area": "Agios Athanasios / Agios Nikolaos, Limassol",
+  "country": "Cyprus",
+  "market": "Cyprus",
+  "stage": "under construction",
+  "url": "https://antariahomes.com/en/project/naftikosresidences/",
+  "docs_url": "https://www.cybarco.com/project/naftikos-residences/",
+  "permit_number": null,
+  "docs_listed": [
+   "live price list by unit (EUR 780,000 to 1,520,000)",
+   "brochure with unit schedule (internal, covered terrace, roof terrace areas) and specification",
+   "37 two- and three-bedroom apartments incl. 7 penthouses, energy class A",
+   "portal: key handover Q3 2027"
+  ],
+  "note": "Two five-storey blocks with 37 apartments 50 m from the sea in Limassol by Cybarco, the Lanitis Group developer behind Limassol Marina and Trilogy; CBN reported the project under construction in Jan 2026 and a portal recorded it about 50% built on 6 Oct 2026. Handover listed for Q3 2027; no permit number or deposit protection published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 780000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Cybarco (since 1945) names delivered landmarks Limassol Marina, The Oval, Sea Gallery Villas, Akamas Bay Villas and Trilogy; CBN reports Trilogy phase two being handed over in 2026",
+   "units": 37,
+   "payment_plan": null,
+   "price_per_m2": 6724
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No planning or building permit number published",
+   "escrow": "No escrow or bank guarantee stated",
+   "progress": "CBN (Jan 2026) reports construction under way; ailiste.app records '50% ready seen on site, 6 Oct 2026' (observer figure, not developer)",
+   "plans": "Brochure PDF gives full unit schedule and specification; portals show unit plans",
+   "record": "Brochure lists delivered projects; CBN independently reports Trilogy handovers",
+   "returns": "No yield or guarantee language"
+  },
+  "positives": [
+   "Long-established developer (since 1945) with independently reported deliveries",
+   "Full price list per unit published on the developer site",
+   "Energy class A and detailed specification published"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Naftikos Residences is under construction (Jan 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.cbn.com.cy/article/125313/cybarco-several-projects-underway-in-limassol-nicosia-and-paphos-trilogy-to-be-completed-this-year-pics"
+   },
+   {
+    "claim": "About 50% built when seen on site 6 Oct 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://ailiste.app/projects/naftikos-residences/"
+   },
+   {
+    "claim": "Project in off-plan stage (portal, Jan 2026)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://dom.com.cy/en/live/complexes/luxury-complex-limassol/naftikos-cybarco/"
+   },
+   {
+    "claim": "Key handover Q3 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://antariahomes.com/en/project/naftikosresidences/"
+   },
+   {
+    "claim": "Cybarco delivering Trilogy phase two in 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.cbn.com.cy/article/125313/cybarco-several-projects-underway-in-limassol-nicosia-and-paphos-trilogy-to-be-completed-this-year-pics"
+   },
+   {
+    "claim": "Cybarco is part of the Lanitis Group and active since 1945",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cybarco.com/wp-content/uploads/2025/03/Naftikos-Residences-Brochure.pdf"
+   },
+   {
+    "claim": "Prices from EUR 780,000 (developer list) vs from EUR 740,000 (header) vs from EUR 720,000 (portal)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.cybarco.com/project/naftikos-residences/"
+   },
+   {
+    "claim": "37 apartments including 7 penthouses",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cybarco.com/project/naftikos-residences/"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cybarco.com/project/naftikos-residences/"
+   },
+   {
+    "claim": "Deposit protection for buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cybarco.com/project/naftikos-residences/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1945,
+   "developer_hq": "Limassol, Cyprus",
+   "developer_company": "Cybarco Development (Lanitis Group)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": 109,
+   "size_max_m2": 179,
+   "price_min": 780000,
+   "price_max": 1520000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold title; non-EU buyers need Council of Ministers permission under Cyprus law",
+   "rental_programme": "management and rentals via subsidiary BeCyprus (no figures)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "communal pool",
+    "roof garden",
+    "landscaped gardens",
+    "private parking",
+    "storage",
+    "smart home features"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Limassol District Local Government Organisation (EOA Lemesou)",
+   "brochure_url": "https://www.cybarco.com/wp-content/uploads/2025/03/Naftikos-Residences-Brochure.pdf"
+  },
+  "sources": [
+   "https://www.cybarco.com/project/naftikos-residences/",
+   "https://www.cybarco.com/wp-content/uploads/2025/03/Naftikos-Residences-Brochure.pdf",
+   "https://ailiste.app/projects/naftikos-residences/",
+   "https://antariahomes.com/en/project/naftikosresidences/",
+   "https://dom.com.cy/en/live/complexes/luxury-complex-limassol/naftikos-cybarco/",
+   "https://www.cbn.com.cy/article/125313/cybarco-several-projects-underway-in-limassol-nicosia-and-paphos-trilogy-to-be-completed-this-year-pics"
+  ],
+  "verified_score": 2
+ },
+ {
+  "slug": "klimona-river-klimona-development",
+  "name": "Klimona River",
+  "developer": "Klimona Development",
+  "area": "Agios Tychonas, Limassol",
+  "country": "Cyprus",
+  "market": "Cyprus",
+  "stage": "under construction",
+  "url": "https://klimona.life/klimonariveren",
+  "docs_url": "https://klimona.life/klimonariveren",
+  "permit_number": null,
+  "docs_listed": [
+   "price list per unit (EUR 670,000 to 1,200,000 excl. VAT)",
+   "unit areas incl. gardens and terraces",
+   "renders, site plan and floor plans tabs",
+   "overall construction progress 18%",
+   "delivery December 2027",
+   "project team: contractor CAPC Construction, architect Phi Studio, engineer Loizou & Shamantis",
+   "claim: building permit obtained before 31 Oct 2023 (5% VAT)"
+  ],
+  "note": "Boutique scheme of 14 three- to five-bedroom apartments in two low-rise buildings near Amathus, sold directly by a small Limassol developer that has not yet completed a project; it publishes per-unit prices, an 18% construction figure and a December 2027 delivery, but no permit number (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 670000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 18,
+   "developer_delivered": null,
+   "units": 14,
+   "payment_plan": "instalments during construction",
+   "price_per_m2": 6091
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "States the building permit was obtained before 31 Oct 2023; no permit number",
+   "escrow": "None stated",
+   "progress": "Developer publishes 18% overall progress and says it posts photo and video site reports",
+   "plans": "Floor plans tab and full unit area schedule on the project page",
+   "record": "Developer's four projects are all under construction or in design (rating.cy profile); none completed",
+   "returns": "No yield claims; after-sales rental management offered"
+  },
+  "positives": [
+   "Per-unit price list and areas published",
+   "Named contractor, architect and engineers",
+   "Architect independently lists the project at construction stage"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building permit obtained before 31 Oct 2023",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://klimona.life/klimonariveren"
+   },
+   {
+    "claim": "Reduced 5% VAT applies to all apartments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://klimona.life/klimonariveren"
+   },
+   {
+    "claim": "Construction 18% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://klimona.life/"
+   },
+   {
+    "claim": "Project at construction stage (architect portfolio)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://phistudio.org/project/klimona-river"
+   },
+   {
+    "claim": "Delivery December 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://klimona.life/klimonariveren"
+   },
+   {
+    "claim": "Prices from EUR 670,000 excl. VAT",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://klimona.life/klimonariveren"
+   },
+   {
+    "claim": "Team has 25 years of experience",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://klimona.life/"
+   },
+   {
+    "claim": "Developer has completed projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.rating.cy/en/developers/klimona-development"
+   },
+   {
+    "claim": "Sister project Klimona Heights delivery late 2026 (apartments listed for July 2028 on same page)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://klimona.life/klimonaheightsen"
+   },
+   {
+    "claim": "Purchase qualifies for Cyprus Permanent Residency",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://klimona.life/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Limassol, Cyprus",
+   "developer_company": null,
+   "developer_projects_delivered": 0,
+   "developer_units_delivered": 0,
+   "listed_or_audited": null,
+   "construction_start": "2024",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR",
+    "4BR",
+    "penthouse 4-5BR"
+   ],
+   "size_min_m2": 110,
+   "size_max_m2": 160,
+   "price_min": 670000,
+   "price_max": 1200000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": "instalments during construction",
+   "foreign_ownership": "freehold title; non-EU buyers need Council of Ministers permission",
+   "rental_programme": "developer offers property management and rentals (no figures)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "communal pool",
+    "children's playground",
+    "BBQ area",
+    "private gardens",
+    "underfloor heating",
+    "heat pumps",
+    "jacuzzi on penthouses"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Limassol District Local Government Organisation",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://klimona.life/klimonariveren",
+   "https://klimona.life/",
+   "https://klimona.life/klimonaheightsen",
+   "https://www.rating.cy/en/developers/klimona-development",
+   "https://phistudio.org/project/klimona-river"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "caesar-cliff-afik-group",
+  "name": "Caesar Cliff (new phase)",
+  "developer": "Afik Group (Afik Construction Ltd)",
+  "area": "Esentepe, Kyrenia district",
+  "country": "Northern Cyprus",
+  "market": "Northern Cyprus",
+  "stage": "off-plan",
+  "url": "https://karoxhomes.com/en/projects/caesar-cliff",
+  "docs_url": "https://caesarcliff.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "unit sizes: studio 41 m2, 1+1 68 m2, 2+1 108 m2, semi-detached villa 112 m2",
+   "interest-free installment plans (30-50% down, 36-84 months, varies by agent)",
+   "agents: prices GBP 117,000 to 375,000, delivery June 2027",
+   "85,000 m2 site, 100 m from beach"
+  ],
+  "note": "Afik Group's Esentepe resort is selling a new phase from GBP 117,000 with agent-quoted delivery dates ranging from Q1 2027 to 2028. A Republic of Cyprus court jailed former Afik director Simon Aykut for five years in Oct 2025 over usurping Greek Cypriot land, naming Caesar Cliff among six complexes built without the owners' consent (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 117000,
+   "currency": "GBP",
+   "title": "TRNC title (land subject to pre-1974 Greek Cypriot ownership claims per Republic of Cyprus court)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Afik says Caesar Resort (Iskele) has over 5,000 of 7,000 units sold and Caesar Beach (220 units) completed; earlier Caesar Cliff phases operating with rental office",
+   "units": 296,
+   "payment_plan": "interest-free installments; 30-50% down, balance over 36-84 months (varies by agent)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No TRNC building permit number published",
+   "escrow": "None stated",
+   "progress": "No progress figure or dated updates for the new phase; agents call it 'coming soon'",
+   "plans": "Unit types and sizes on caesarcliff.com; floor plans on agent pages",
+   "record": "Earlier Caesar Cliff phases and Caesar Resort exist and are referenced by the court case and news; developer gives unit counts",
+   "returns": "Rental office mentioned, no yield or guarantee"
+  },
+  "positives": [
+   "Interest-free installment plans",
+   "Earlier phases of the resort are built and operating"
+  ],
+  "flags": [
+   {
+    "text": "The Nicosia Criminal Court sentenced former Afik Group director and shareholder Simon Aykut to five years in prison on 24 Oct 2025 after he pleaded guilty to 40 charges over the development and sale of Greek Cypriot-owned land; Caesar Cliff was one of six complexes named.",
+    "source": "https://cyprus-mail.com/2025/10/24/aykut-jailed-for-five-years"
+   },
+   {
+    "text": "AP reported the sentence and that Cypriot authorities are pursuing developers and realtors selling Greek Cypriot properties in the north.",
+    "source": "https://apnews.com/article/cyprus-illegal-property-development-israeli-bfdff5c2b653446de1bb3987e42aac6c"
+   },
+   {
+    "text": "Cyprus Mail reported in Mar 2026 that MPs said construction had resumed on some of the developments named in the case.",
+    "source": "https://cyprus-mail.com/2026/03/03/construction-on-aykuts-developments-in-the-north-resumes"
+   }
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Caesar Cliff built on land of displaced Greek Cypriots without owners' consent (court finding on guilty plea)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://en.politis.com.cy/politics/politics-cyprus-divided/964474/five-year-prison-sentence-for-simon-aykut-over-property-usurpation"
+   },
+   {
+    "claim": "Developer offers freehold title to buyers",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://cyprus-mail.com/2026/04/17/aykut-transferred-to-israel-to-serve-out-remaining-sentence-over-property-usurpation-case"
+   },
+   {
+    "claim": "Completion June 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://karoxhomes.com/en/projects/caesar-cliff"
+   },
+   {
+    "claim": "Completion Q1 2027 (another agent)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://caesar-cliff.com/"
+   },
+   {
+    "claim": "Complex completed in 2023, readiness 2028 (third agent)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://cypria.homes/projects/caesar-cliff/"
+   },
+   {
+    "claim": "Prices from GBP 117,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://excellencecyprus.com/projects/cliff/"
+   },
+   {
+    "claim": "296 units planned (278 apartments and 18 villas)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://caesar-cliff.com/"
+   },
+   {
+    "claim": "Caesar Resort has over 5,000 of 7,000 units sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://uinvestgroup.com/northern-cyprus/developers/afik-group/"
+   },
+   {
+    "claim": "Afik Construction Ltd is planning further mass housing at İskele/Yarköy (TRNC environmental public consultation notice)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://cevre.gov.ct.tr/en-us/HABERLER/af%c4%b0k-construct%c4%b0on-ltde-a%c4%b0t-toplu-konut-projes%c4%b0-hk"
+   },
+   {
+    "claim": "Construction resumed on some Aykut-linked developments in 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://cyprus-mail.com/2026/03/03/construction-on-aykuts-developments-in-the-north-resumes"
+   },
+   {
+    "claim": "Building permit issued for the new phase",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://caesarcliff.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1995,
+   "developer_hq": "Iskele, Northern Cyprus (sales office at Caesar Resort); office in Ankara",
+   "developer_company": "Afik Construction Ltd",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1+1",
+    "2+1",
+    "3+1 villa",
+    "semi-detached villa"
+   ],
+   "size_min_m2": 38,
+   "size_max_m2": 200,
+   "price_min": 117000,
+   "price_max": 375000,
+   "currency": "GBP",
+   "deposit_pct": 30,
+   "payment_plan": "interest-free installments, 30-50% down",
+   "foreign_ownership": "TRNC title deed; foreigners need a purchase permit from the TRNC Council of Ministers; title not recognised by the Republic of Cyprus",
+   "rental_programme": "on-site rental and maintenance office (no figures)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "indoor and outdoor pools",
+    "gym",
+    "sauna",
+    "tennis court",
+    "mini-golf",
+    "beach bar",
+    "restaurants",
+    "supermarket"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "TRNC Ministry / Esentepe-Kyrenia municipality (unrecognised authorities)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://caesarcliff.com/",
+   "https://www.afikgroup.com/projects.html",
+   "https://karoxhomes.com/en/projects/caesar-cliff",
+   "https://excellencecyprus.com/projects/cliff/",
+   "https://cypria.homes/projects/caesar-cliff/",
+   "https://caesar-cliff.com/",
+   "https://uinvestgroup.com/northern-cyprus/developers/afik-group/",
+   "https://cevre.gov.ct.tr/en-us/HABERLER/af%c4%b0k-construct%c4%b0on-ltde-a%c4%b0t-toplu-konut-projes%c4%b0-hk",
+   "https://cyprus-mail.com/2025/10/24/aykut-jailed-for-five-years",
+   "https://apnews.com/article/cyprus-illegal-property-development-israeli-bfdff5c2b653446de1bb3987e42aac6c",
+   "https://en.politis.com.cy/politics/politics-cyprus-divided/964474/five-year-prison-sentence-for-simon-aykut-over-property-usurpation",
+   "https://cyprus-mail.com/2026/04/17/aykut-transferred-to-israel-to-serve-out-remaining-sentence-over-property-usurpation-case",
+   "https://cyprus-mail.com/2026/03/03/construction-on-aykuts-developments-in-the-north-resumes"
+  ],
+  "verified_score": 1
+ },
+ {
+  "slug": "d-point-long-beach-dovec",
+  "name": "D-Point",
+  "developer": "Döveç Group (Döveç Construction)",
+  "area": "Long Beach, Iskele",
+  "country": "Northern Cyprus",
+  "market": "Northern Cyprus",
+  "stage": "under construction",
+  "url": "https://northerncyprusforsale.com/projects/d-point/",
+  "docs_url": "https://www.dovecgroup.com/en/projects/d-point",
+  "permit_number": null,
+  "docs_listed": [
+   "405 units (studio to 3+1, offices, shops)",
+   "delivery December 2028; construction started May 2025",
+   "floor plans by unit type with prices (studio 34 m2 from GBP 132,000)",
+   "agent price list Aug 2026 (83 units available, from GBP 127,000)",
+   "payment plan 35% down, 45% to handover, 20% over 12 months after",
+   "rental management service after handover"
+  ],
+  "note": "Mixed-use 405-unit scheme with a business centre and aqua park at Long Beach by Döveç, which lists six delivered projects since 2019; construction began May 2025 with delivery set for December 2028. No permit number, deposit protection or progress figure is published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 132000,
+   "currency": "GBP",
+   "title": "TRNC title deed",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Döveç lists six delivered projects: Four Seasons Life I (2019), Courtyard Long Beach (2021), Sky Sakarya (2023), Panorama (2023), Four Seasons Life II (2024), La Isla Villas (Feb 2025); claims 5,000+ homes over 36 years",
+   "units": 405,
+   "payment_plan": "35% down, 45% until handover, 20% over 12 months after handover",
+   "price_per_m2": 3882
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Developer says zoning and permits are handled with ministry and municipality; no number",
+   "escrow": "None stated; 20% of price paid after handover",
+   "progress": "Only 'construction started May 2025'; regular visual reports promised to buyers but none public",
+   "plans": "Floor plans per type on developer and agent pages",
+   "record": "Developer and a third-party profile list six delivered projects with dates",
+   "returns": "Rental management offered; satisofisi notes no rental income is guaranteed"
+  },
+  "positives": [
+   "Established local developer with dated delivered projects",
+   "20% of the price is paid after handover",
+   "Unit-level price list available via agents",
+   "Member of the Cyprus Turkish Building Contractors Association (KTIMB)"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction started May 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dovecgroup.com/en/projects/d-point"
+   },
+   {
+    "claim": "Delivery December 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dovecgroup.com/en/projects/d-point"
+   },
+   {
+    "claim": "405 units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://satisofisi.com/en/projeler/kibris/iskele/long-beach/d-point"
+   },
+   {
+    "claim": "Studio from GBP 132,000 (developer) vs GBP 127,000 (agent list Aug 2026)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://northerncyprusforsale.com/projects/d-point/"
+   },
+   {
+    "claim": "Studio net 34 m2 (developer) vs 42.63 m2 (agent)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://primekibris.com/en/projects/d-point"
+   },
+   {
+    "claim": "Döveç delivered six projects 2019-2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://uinvestgroup.com/northern-cyprus/developers/"
+   },
+   {
+    "claim": "36 years and 5,000+ homes",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dovecgroup.com/en/north-cyprus-construction-company"
+   },
+   {
+    "claim": "Sister project Querencia delivery: March 2027 (developer) vs April 2026 / August 2026 (agents)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.dovecgroup.com/en/north-cyprus-construction-company"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dovecgroup.com/en/projects/d-point"
+   },
+   {
+    "claim": "Deposit protection for buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dovecgroup.com/en/projects/d-point"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1989,
+   "developer_hq": "Sakarya, Famagusta, Northern Cyprus",
+   "developer_company": "Döveç Construction",
+   "developer_projects_delivered": 6,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-05",
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1+1",
+    "2+1",
+    "3+1",
+    "office",
+    "shop"
+   ],
+   "size_min_m2": 34,
+   "size_max_m2": 134,
+   "price_min": 127000,
+   "price_max": 251000,
+   "currency": "GBP",
+   "deposit_pct": 35,
+   "payment_plan": "35/45/20 with 12 months post-handover",
+   "foreign_ownership": "TRNC title deed with Council of Ministers purchase permit; TRNC titles are not recognised by the Republic of Cyprus",
+   "rental_programme": "Döveç professional rental management (no figures)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "aqua park",
+    "swimming pool",
+    "children's pool",
+    "business centre",
+    "co-working",
+    "EV charging",
+    "24/7 security",
+    "generator"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "TRNC Ministry of Interior / Iskele Municipality (unrecognised authorities)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.dovecgroup.com/en/projects/d-point",
+   "https://www.dovecgroup.com/en/north-cyprus-construction-company",
+   "https://www.dovecgroup.com/en/north-cyprus-construction-projects",
+   "https://satisofisi.com/en/projeler/kibris/iskele/long-beach/d-point",
+   "https://northerncyprusforsale.com/projects/d-point/",
+   "https://primekibris.com/en/projects/d-point",
+   "https://www.hangiev.com/dpoint/en",
+   "https://uinvestgroup.com/northern-cyprus/developers/"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "raseljkina-pazdigrad-quatro-company",
+  "name": "Rašeljkina",
+  "developer": "Quatro Company d.o.o.",
+  "area": "Pazdigrad, Split",
+  "country": "Croatia",
+  "market": "Croatia",
+  "stage": "under construction",
+  "url": "https://www.quatrocompany.hr/projekti/raseljkina/",
+  "docs_url": "https://www.quatrocompany.hr/projekti/raseljkina/",
+  "permit_number": "Klasa: UP/I-361-03/23-01/000166 (building permit issued 08.07.2024, final 19.08.2024)",
+  "docs_listed": [
+   "building permit Klasa UP/I-361-03/23-01/000166, issue and finality dates",
+   "cadastral parcel 7427/1 k.o. Split, 3,044 m2",
+   "35 apartments in 4 volumes, 74 garage spaces, floor-by-floor layout description",
+   "construction start Dec 2024, completion autumn 2026",
+   "dated price list (10.09.2026): penthouse B8 EUR 1,547,802.50",
+   "individual unit pages with floor and area",
+   "list of eight completed buildings with addresses and cadastral parcels"
+  ],
+  "note": "35-apartment complex in Pazdigrad, Split, by a local developer that names eight completed buildings with addresses and parcels; the building permit class number and dates are published, construction started Dec 2024 and completion is planned for autumn 2026. Only the penthouse remains on the dated price list (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1547802,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": true,
+   "permit_number": "Klasa: UP/I-361-03/23-01/000166 (building permit issued 08.07.2024, final 19.08.2024)",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Developer names completed buildings in Split with addresses and cadastral parcels: Sunčani dvori, Morska vila 1-6, Vukovarska golubica, and Bel Etage (built by Pulić&Partneri d.o.o.)",
+   "units": 35,
+   "payment_plan": null,
+   "price_per_m2": 8767
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Permit class number, issue date and finality date on the developer project page",
+   "escrow": "No escrow or bank guarantee stated",
+   "progress": "Only start (Dec 2024) and planned completion (autumn 2026) published; no figure or dated photos",
+   "plans": "Unit pages list floor and area; no drawings seen in text",
+   "record": "Eight completed buildings named with street addresses and cadastral parcels, checkable in the land registry",
+   "returns": "No yield or guarantee language"
+  },
+  "positives": [
+   "Building permit number with issue and finality dates published",
+   "Completed buildings identified by address and cadastral parcel",
+   "Dated price list"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building permit Klasa UP/I-361-03/23-01/000166 issued 08.07.2024 and final 19.08.2024",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.quatrocompany.hr/projekti/raseljkina/"
+   },
+   {
+    "claim": "Project on cadastral parcel 7427/1 k.o. Split",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.quatrocompany.hr/projekti/raseljkina/"
+   },
+   {
+    "claim": "Construction started December 2024",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.quatrocompany.hr/projekti/raseljkina/"
+   },
+   {
+    "claim": "Completion autumn 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.quatrocompany.hr/projekti/raseljkina/"
+   },
+   {
+    "claim": "Penthouse B8 price EUR 1,547,802.50 on 10.09.2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.quatrocompany.hr/cijene/"
+   },
+   {
+    "claim": "Developer completed Morska vila 1-6, Sunčani dvori and Vukovarska golubica",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.quatrocompany.hr/projekti/"
+   },
+   {
+    "claim": "Unit pages describe location as Žnjan while project page says Pazdigrad",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.quatrocompany.hr/stanovi/raseljkina-stan-c3/"
+   },
+   {
+    "claim": "Bel Etage 2 also being built by the developer on parcel 10260/37 k.o. Split",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.quatrocompany.hr/projekti/"
+   },
+   {
+    "claim": "Penthouse B8 includes 3 parking spaces (46.76 m2) and storage; total area 248.19 m2, sales area 176.55 m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.quatrocompany.hr/cijene/"
+   },
+   {
+    "claim": "Deposit protection for buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.quatrocompany.hr/projekti/raseljkina/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Makarska 20, Split, Croatia",
+   "developer_company": "Quatro Company d.o.o. (earlier projects via Pulić&Partneri d.o.o.)",
+   "developer_projects_delivered": 9,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-12",
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": 72.06,
+   "size_max_m2": 176.55,
+   "price_min": null,
+   "price_max": 1547802,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold; EU buyers on equal terms, non-EU buyers need reciprocity approval from the Ministry of Justice",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "two-level underground garage (74 spaces)",
+    "lifts to garage",
+    "heat pump underfloor heating",
+    "smart home system",
+    "courtyard"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "City of Split, Administrative Department for Construction",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.quatrocompany.hr/projekti/raseljkina/",
+   "https://www.quatrocompany.hr/projekti/",
+   "https://www.quatrocompany.hr/cijene/",
+   "https://www.quatrocompany.hr/stanovi/raseljkina-stan-c3/",
+   "https://www.quatrocompany.hr/stanovi/raseljkina-stan-d4/"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "movenpick-residences-kvarner-bay-ecm-partners",
+  "name": "Mövenpick Hotel & Residences Kvarner Bay",
+  "developer": "ECM Partners",
+  "area": "Novi Vinodolski, Kvarner",
+  "country": "Croatia",
+  "market": "Croatia",
+  "stage": "under construction",
+  "url": "https://regent.hr/en/new-builds/new-vinodolski-movenpick-residences-kvarner-bay",
+  "docs_url": "https://www.dreamcroatia.com/en/property/apartments-in-resort-movenpick-hotel-residences-kvarner-bay-5126-3-1",
+  "permit_number": null,
+  "docs_listed": [
+   "304 branded residences in 35 buildings, 131 in first phase",
+   "unit sizes 43-143 m2 and price range EUR 338,416 to 1,517,369",
+   "payment plan 10% at preliminary contract, 90% on completion",
+   "first-phase completion Q3 2026",
+   "optional rental programme run by NV Adria Condos and Mövenpick; furnishing package mandatory for rental",
+   "Accor loyalty status for owners"
+  ],
+  "note": "Branded residences beside the new Mövenpick resort in Novi Vinodolski, developed by Slovenian investor ECM Partners; the hotel opened in July 2026 (HrTurizam) and first-phase residences were due in Q3 2026, sold with only 10% down and 90% on completion. Prices from about EUR 338,000; no permit number published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 338416,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "No escrow named, but only 10% is paid at preliminary contract and 90% on completion",
+   "progress_pct": null,
+   "developer_delivered": "ECM Partners says it has invested nearly EUR 1 billion and completed 28 projects in Central and Southeast Europe (Diplomacy&Commerce); the resort hotel itself opened July 2026 (HrTurizam)",
+   "units": 304,
+   "payment_plan": "10% at preliminary contract, 90% on completion",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit number published",
+   "escrow": "No escrow or guarantee named; payment structure (10/90) limits buyer exposure but is not deposit protection",
+   "progress": "HrTurizam reports the resort hotel opened 30 July 2026; residences first phase stated for Q3 2026",
+   "plans": "Sizes and types listed by agents; plans offered on request only",
+   "record": "ECM Partners 28 completed projects (press); resort opening independently reported",
+   "returns": "Optional rental programme, no yield figure or guarantee"
+  },
+  "positives": [
+   "90% of the price payable only on completion",
+   "Hotel and resort facilities already operating (opened July 2026)",
+   "International brand (Accor Mövenpick) and optional, not mandatory, rental programme"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Resort opened in Novi Vinodolski in July 2026 with 200 jobs",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://en.hrturizam.hr/new-luxury-resort-on-Kvarner-opened-Movenpick-Hotel-Residences"
+   },
+   {
+    "claim": "Total investment exceeds EUR 250 million, led by ECM Partners",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://en.hrturizam.hr/new-luxury-resort-on-Kvarner-opened-Movenpick-Hotel-Residences"
+   },
+   {
+    "claim": "304 residences",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://en.hrturizam.hr/new-luxury-resort-on-Kvarner-opened-Movenpick-Hotel-Residences"
+   },
+   {
+    "claim": "First-phase residences completed Q3 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dreamcroatia.com/en/property/apartments-in-resort-movenpick-hotel-residences-kvarner-bay-5126-3-1"
+   },
+   {
+    "claim": "Residences fully furnished and move-in ready (launch event) vs sold unfurnished with optional furnishing package (agent)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.diplomacyandcommerce.rs/new-luxury-hotel-in-kvarner-unveiled-against-belgrades-most-spectacular-sunset/"
+   },
+   {
+    "claim": "Starting price EUR 345,000 (HrTurizam) vs EUR 338,416 (Regent) vs EUR 362,476 (Savills)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://en.hrturizam.hr/new-luxury-resort-on-Kvarner-opened-Movenpick-Hotel-Residences"
+   },
+   {
+    "claim": "ECM Partners has completed 28 projects and invested nearly EUR 1 billion",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.diplomacyandcommerce.rs/new-luxury-hotel-in-kvarner-unveiled-against-belgrades-most-spectacular-sunset/"
+   },
+   {
+    "claim": "Payment 10% at preliminary contract, balance on completion",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://regent.hr/en/new-builds/new-vinodolski-movenpick-residences-kvarner-bay"
+   },
+   {
+    "claim": "Purchase not subject to VAT (agent) vs VAT included in the price (same agent page)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://regent.hr/en/new-builds/new-vinodolski-movenpick-residences-kvarner-bay"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://regent.hr/en/new-builds/new-vinodolski-movenpick-residences-kvarner-bay"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Slovenia",
+   "developer_company": "ECM Partners",
+   "developer_projects_delivered": 28,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "2BR penthouse"
+   ],
+   "size_min_m2": 43,
+   "size_max_m2": 143,
+   "price_min": 338416,
+   "price_max": 1517369,
+   "currency": "EUR",
+   "deposit_pct": 10,
+   "payment_plan": "10/90",
+   "foreign_ownership": "freehold; EU buyers on equal terms, non-EU subject to reciprocity",
+   "rental_programme": "optional programme managed by NV Adria Condos with Mövenpick Hotels & Resorts; no figures",
+   "service_charge": null,
+   "brand": "Mövenpick (Accor)",
+   "amenities": [
+    "Thalasso spa",
+    "three pool zones",
+    "private beach",
+    "padel court",
+    "panoramic gym",
+    "owners' lounge",
+    "kids club",
+    "underground garage with EV chargers"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Primorje-Gorski Kotar County, Administrative Department for Construction",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.dreamcroatia.com/en/property/apartments-in-resort-movenpick-hotel-residences-kvarner-bay-5126-3-1",
+   "https://regent.hr/en/new-builds/new-vinodolski-movenpick-residences-kvarner-bay",
+   "https://en.hrturizam.hr/new-luxury-resort-on-Kvarner-opened-Movenpick-Hotel-Residences",
+   "https://www.diplomacyandcommerce.rs/new-luxury-hotel-in-kvarner-unveiled-against-belgrades-most-spectacular-sunset/"
+  ],
+  "verified_score": 2
+ },
+ {
+  "slug": "tirana-boulevard-pajtoni-group",
+  "name": "Tirana Boulevard",
+  "developer": "Pajtoni Group (Pajtoni Business Center)",
+  "area": "New Boulevard (Bulevardi i Ri), Tirana",
+  "country": "Albania",
+  "market": "Albania",
+  "stage": "under construction",
+  "url": "https://www.kerko360.al/listing/apartament-1-1-bulevardi-ri-tirane-ne-shitje-292735",
+  "docs_url": "https://pajtonigroup.al/tirana-boulevard/",
+  "permit_number": null,
+  "docs_listed": [
+   "25 floors above ground, 4 basement levels, 80,000 m2 built area",
+   "design MVRDV (Winy Maas), engineering Arup, contractor KRON Construction",
+   "prices from EUR 2,100/m2 (Aug 2025)",
+   "dated progress posts: shell at basement -2 (Aug 2025), 'advanced construction' (Sep 2026)",
+   "unit listing with floor plan, energy class A+, delivery December 2029",
+   "'guaranteed future appreciation' marketing language"
+  ],
+  "note": "MVRDV-designed 25-storey mixed-use tower by the train station on Tirana's New Boulevard, with Arup engineering and KRON Construction as builder; the developer posts dated site updates and a unit listing gives December 2029 handover. Marketing promises 'guaranteed future appreciation'; no permit number or deposit protection is published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 204930,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": null,
+   "completion": "2029-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": "flexible payment options (no terms published)",
+   "price_per_m2": 2100
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": false,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building permit (leje ndërtimi) number published",
+   "escrow": "None stated",
+   "progress": "Developer blog Aug 2025 (shell phase at basement -2) and LinkedIn posts Jan, Jun and Sep 2026",
+   "plans": "Unit listings on kerko360 include floor plans (planimetritë)",
+   "record": "No completed residential projects named on pages opened",
+   "returns": "Project blog promises 'guaranteed potential for price increases' and 'guaranteed future appreciation'"
+  },
+  "positives": [
+   "Internationally known design and engineering firms named (MVRDV, Arup)",
+   "Dated construction updates and concrete testing posts",
+   "Energy class A+ stated on unit listing"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction at shell phase, basement -2, in Aug 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tiranaboulevard.al/en/blog-en/why-investing-in-apartments-on-tiranas-new-boulevard-is-a-smart-move-2/"
+   },
+   {
+    "claim": "Project in advanced construction phase (Sep 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.linkedin.com/posts/pajtoni-group_tiranaboulevard-pajtonigroup-sht%C3%ABpiajuaj-activity-7505919853057257473-bHdq"
+   },
+   {
+    "claim": "Delivery December 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.kerko360.al/listing/apartament-1-1-bulevardi-ri-tirane-ne-shitje-292735"
+   },
+   {
+    "claim": "Designed by MVRDV and engineered by Arup",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tiranaboulevard.al/en/blog-en/why-investing-in-apartments-on-tiranas-new-boulevard-is-a-smart-move-2/"
+   },
+   {
+    "claim": "Contractor KRON Construction with Planit Consulting",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.linkedin.com/posts/tirana-boulevard-project_tiranaboulevard-uts01-activity-7419638646984826880-HZyv"
+   },
+   {
+    "claim": "Guaranteed future appreciation",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tiranaboulevard.al/en/blog-en/why-investing-in-apartments-on-tiranas-new-boulevard-is-a-smart-move-2/"
+   },
+   {
+    "claim": "Prices from EUR 2,100/m2 (Aug 2025) vs listing EUR 204,930 for 89 m2 gross (about EUR 2,300/m2)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.kerko360.al/listing/apartament-1-1-bulevardi-ri-tirane-ne-shitje-292735"
+   },
+   {
+    "claim": "First high-rise under construction on the New Boulevard",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tiranaboulevard.al/en/blog-en/why-investing-in-apartments-on-tiranas-new-boulevard-is-a-smart-move-2/"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://pajtonigroup.al/tirana-boulevard/"
+   },
+   {
+    "claim": "Mortgage registration in process for units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.kerko360.al/listing/apartament-1-1-bulevardi-ri-tirane-ne-shitje-292735"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2020,
+   "developer_hq": "Tirana-Durrës km 1, Pajtoni Business Center, Albania",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2029-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1+1",
+    "2+1",
+    "penthouse",
+    "office",
+    "retail"
+   ],
+   "size_min_m2": 89,
+   "size_max_m2": null,
+   "price_min": 204930,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold; foreigners can buy apartments on the same terms as Albanians",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "4-level underground parking",
+    "14 high-speed lifts",
+    "residents' gym",
+    "green terrace",
+    "24-hour security",
+    "retail",
+    "storage units"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Municipality of Tirana / National Territorial Council (KKT)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://pajtonigroup.al/tirana-boulevard/",
+   "https://tiranaboulevard.al/en/blog-en/why-investing-in-apartments-on-tiranas-new-boulevard-is-a-smart-move-2/",
+   "https://www.kerko360.al/listing/apartament-1-1-bulevardi-ri-tirane-ne-shitje-292735",
+   "https://www.linkedin.com/posts/pajtoni-group_tiranaboulevard-pajtonigroup-sht%C3%ABpiajuaj-activity-7505919853057257473-bHdq",
+   "https://www.linkedin.com/posts/tirana-boulevard-project_tiranaboulevard-uts01-activity-7419638646984826880-HZyv",
+   "https://linkedin.com/company/tirana-boulevard-project",
+   "https://usluga.al/new-developments-tirana/en"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "parkland-residence-durres-eagle-hills",
+  "name": "Parkland Residence (Durrës Yachts & Marina)",
+  "developer": "Durrës Marina sha (Eagle Hills with Albanian state agency ASDC)",
+  "area": "Durrës Yachts & Marina, Durrës",
+  "country": "Albania",
+  "market": "Albania",
+  "stage": "under construction",
+  "url": "https://www.kredium.com/international-real-estate/project/parkland",
+  "docs_url": "https://www.durresyachtsmarina.com/durres-yachts-marina-launches-another-iconic-residence-get-to-know-your-home-at-parkland-residence/",
+  "permit_number": null,
+  "docs_listed": [
+   "launch event 18 April 2024, 181 apartments (1-3 bedrooms) in a 7-storey building",
+   "launch prices EUR 110,000-400,000, EUR 1,800-2,800/m2 (press)",
+   "reservation fee EUR 1,200 and 7 instalments (press)",
+   "handover June 2027 (agent) / Q4 2026 (other agent)",
+   "monthly construction posts on social networks (developer statement to press)"
+  ],
+  "note": "Seven-storey, 181-apartment building near the central park of Eagle Hills' Durrës marina, launched in April 2024 when, per Monitor/Zeri, sales opened before the building permit was issued. In May 2026 the national inspectorate IKMT confirmed two other completed towers in the same project had sunk 28 cm and 18 cm and ordered reinforcement (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 110000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 181,
+   "payment_plan": "EUR 1,200 non-refundable reservation, then 7 instalments (press, Apr 2024)",
+   "price_per_m2": 1800
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit number for Parkland published; press reported reservations opened before the permit, expected 6-7 months later. IKMT cites permit 2349/12 prot. of 10.09.2023 for the first two towers only",
+   "escrow": "None stated",
+   "progress": "Developer told Balkanweb it posts monthly updates on social networks and refuses site visits; no Parkland-specific figure found",
+   "plans": "Plans shown at launch event; not found published online",
+   "record": "First towers in the project were completed only in 2026 and are under IKMT reinforcement order; Eagle Hills' record elsewhere not verified here",
+   "returns": "No yield or guarantee language seen"
+  },
+  "positives": [
+   "State agency ASDC is a 33% partner in the project company",
+   "Large international developer group (Eagle Hills)"
+  ],
+  "flags": [
+   {
+    "text": "Albania's National Inspectorate for the Protection of Territory (IKMT) confirmed on 13 May 2026 that two buildings of the Durrës Marina project had subsided by 28 cm and 18 cm and asked the company to carry out urgent reinforcement.",
+    "source": "https://ikmt.gov.al/deklarate/"
+   },
+   {
+    "text": "Reporter.al reported that whistleblowers and subcontractors linked the subsidence to inadequate foundations in sandy port ground; IKMT did not state a cause.",
+    "source": "https://www.reporter.al/en/2026/05/13/probe-confirms-subsidence-of-two-buildings-at-billion-euro-durres-marina-project/"
+   },
+   {
+    "text": "Monitor (via Zeri) reported in April 2024 that Parkland reservations opened before the building permit was obtained.",
+    "source": "https://zeri.ai/ekonomi/durres-yachts-marina-mimet-e-apartamenteve-shtrenjtohen-me-8-ne-1-muaj-v-i197989"
+   }
+  ],
+  "verification": {
+   "permit": "contradicted",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "contradicted",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Parkland reservations opened 18 April 2024 before the building permit was issued",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://zeri.ai/ekonomi/durres-yachts-marina-mimet-e-apartamenteve-shtrenjtohen-me-8-ne-1-muaj-v-i197989"
+   },
+   {
+    "claim": "181 apartments, 7 floors, EUR 1,800-2,800/m2 at launch",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://zeri.ai/ekonomi/durres-yachts-marina-mimet-e-apartamenteve-shtrenjtohen-me-8-ne-1-muaj-v-i197989"
+   },
+   {
+    "claim": "Two completed towers in the project subsided 28 cm and 18 cm (IKMT, May 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://ikmt.gov.al/deklarate/"
+   },
+   {
+    "claim": "First towers held permit 2349/12 prot. dated 10.09.2023 under KKT decision 34 of 01.08.2023",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://ikmt.gov.al/deklarate/"
+   },
+   {
+    "claim": "Handover Q4 2026 (one agent) vs June 2027 (another agent)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://dxboffplan.com/properties/parkland-durres-yachts-and-marina-albania/"
+   },
+   {
+    "claim": "Portal shows a project number, AED prices and 224 'DLD-registered' transactions for Parkland, which are Dubai registry fields that do not apply in Albania",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://dxboffplan.com/properties/parkland-durres-yachts-and-marina-albania/"
+   },
+   {
+    "claim": "Developer posts monthly site updates and does not allow site visits",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.balkanweb.com/en/durres-yacht-marina-construction-ideas-in-durres-today-this-company-sold-the-next-residence-in-the-air-but-what-happens-in-the-construction-site/"
+   },
+   {
+    "claim": "State agency holds 33% of the project",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.jarniascyril.com/international-real-estate/invest-in-real-estate-albania/invest-in-durres-real-estate-complete-guide/"
+   },
+   {
+    "claim": "Parkland construction progress",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.durresyachtsmarina.com/durres-yachts-marina-launches-another-iconic-residence-get-to-know-your-home-at-parkland-residence/"
+   },
+   {
+    "claim": "Buyer deposits protected",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.durresyachtsmarina.com/durres-yachts-marina-launches-another-iconic-residence-get-to-know-your-home-at-parkland-residence/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2014,
+   "developer_hq": "Abu Dhabi, UAE (Eagle Hills); project company in Durrës",
+   "developer_company": "Durrës Marina sha",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q2",
+   "original_handover": "2026-Q4 (agent)",
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 61,
+   "size_max_m2": 141,
+   "price_min": 110000,
+   "price_max": 400000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": "reservation EUR 1,200 plus 7 instalments",
+   "foreign_ownership": "freehold apartment ownership open to foreigners",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "inner courtyard pool",
+    "ground-floor retail and dining",
+    "marina",
+    "central park",
+    "promenade"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "National Territorial Council (KKT) / National Territorial Planning Agency",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.durresyachtsmarina.com/durres-yachts-marina-launches-another-iconic-residence-get-to-know-your-home-at-parkland-residence/",
+   "https://www.kredium.com/international-real-estate/project/parkland",
+   "https://dxboffplan.com/properties/parkland-durres-yachts-and-marina-albania/",
+   "https://zeri.ai/ekonomi/durres-yachts-marina-mimet-e-apartamenteve-shtrenjtohen-me-8-ne-1-muaj-v-i197989",
+   "https://www.balkanweb.com/en/durres-yacht-marina-construction-ideas-in-durres-today-this-company-sold-the-next-residence-in-the-air-but-what-happens-in-the-construction-site/",
+   "https://ikmt.gov.al/deklarate/",
+   "https://www.reporter.al/en/2026/05/13/probe-confirms-subsidence-of-two-buildings-at-billion-euro-durres-marina-project/",
+   "https://www.voxnews.al/english/aktualitet/ikmt-godina-ne-durres-marina-eshte-ulur-me-28-centimetra-kompania-te--i116380",
+   "https://www.jarniascyril.com/international-real-estate/invest-in-real-estate-albania/invest-in-durres-real-estate-complete-guide/"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "twin-tower-sofia-glavbolgarstroy-smart-consultants",
+  "name": "Twin Tower",
+  "developer": "SMART Consultants and Glavbolgarstroy (GBS Invest); permit holder Sunrise Capital EAD",
+  "area": "Hladilnika, Lozenets, Sofia",
+  "country": "Bulgaria",
+  "market": "Bulgaria",
+  "stage": "under construction",
+  "url": "https://novostroitelstvo.org/proekti/twin-tower/",
+  "docs_url": "https://novostroitelstvo.org/proekti/twin-tower/",
+  "permit_number": "Building permit No. 29 of 27.02.2024 (Chief Architect of Sofia Municipality, in force 16.03.2024)",
+  "docs_listed": [
+   "building permit No. 29 / 27.02.2024, holder Sunrise Capital EAD, cadastral ID 68134.903.201",
+   "24 floors, 2 linked buildings, 289 homes, 34,626 m2 above-ground area, 423 parking spaces",
+   "groundbreaking 21 May 2024; foundations and basements done Oct 2025 (GBS)",
+   "schedule: structure 2025-26, facades and Act 14 2026-27, Act 16 November 2028",
+   "asking prices EUR 2,711-2,850/m2; maintenance fee EUR 1/m2 per month (Barnes listing)",
+   "Cattelan Italia furnished common areas, pool, gym, co-working, 24/7 concierge"
+  ],
+  "note": "24-storey twin residential tower with 289 homes in Sofia's Hladilnika by SMART Consultants and contractor-investor Glavbolgarstroy; the building permit (No. 29 of 27 Feb 2024) is listed in the Sofia chief architect register mirror, groundbreaking was reported in May 2024 and Act 16 is now set for November 2028 versus mid-2028 at launch (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": true,
+   "permit_number": "Building permit No. 29 of 27.02.2024 (Chief Architect of Sofia Municipality, in force 16.03.2024)",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Glavbolgarstroy is a major Bulgarian contractor and main contractor here; the neighbouring Smart Tower is by the same company (novostroitelstvo); no delivered unit count published",
+   "units": 289,
+   "payment_plan": null,
+   "price_per_m2": 2711
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Permit No. 29 of 27.02.2024 found in akt16.org register (data from Sofia Municipality NAG public register): holder Sunrise Capital EAD, closed complex of two residential buildings, in force 16.03.2024",
+   "escrow": "No escrow; analysts advise tying instalments to Act 14/15/16 stages, but no schedule published by developer",
+   "progress": "Groundbreaking 21 May 2024 (business.dir.bg); level 0 with foundations and basements Oct 2025 (GBS via novostroitelstvo)",
+   "plans": "No unit plans seen in sources opened",
+   "record": "Glavbolgarstroy named as investor and main contractor; independent press coverage of groundbreaking; neighbouring Smart Tower by the same company",
+   "returns": "No yield or guarantee language"
+  },
+  "positives": [
+   "Building permit verifiable in the Sofia chief architect public register",
+   "Large established contractor is co-investor and main contractor",
+   "Bulgarian Act 14/15/16 system gives buyers checkable construction stages"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building permit No. 29 of 27.02.2024 issued to Sunrise Capital EAD, in force 16.03.2024",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://akt16.org/register/permits/29-27022024/"
+   },
+   {
+    "claim": "Permit covers two residential buildings with apartments, studios, offices and underground garages on cadastral ID 68134.903.201",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://akt16.org/register/permits/29-27022024/"
+   },
+   {
+    "claim": "Construction started with groundbreaking in May 2024; project worth BGN 120 million",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://business.dir.bg/imoti/startira-izgrazhdaneto-na-twin-tower"
+   },
+   {
+    "claim": "Completion mid-2028 (at launch, May 2024)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://business.dir.bg/imoti/startira-izgrazhdaneto-na-twin-tower"
+   },
+   {
+    "claim": "Act 16 November 2028 (current)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://novostroitelstvo.org/proekti/twin-tower/"
+   },
+   {
+    "claim": "Foundations and underground levels complete by Oct 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://novostroitelstvo.org/proekti/twin-tower/"
+   },
+   {
+    "claim": "150 of the apartments reserved at launch",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://business.dir.bg/imoti/startira-izgrazhdaneto-na-twin-tower"
+   },
+   {
+    "claim": "Prices from EUR 1,800-1,900/m2 excl. VAT at launch, now EUR 2,711-2,850/m2",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://business.dir.bg/imoti/startira-izgrazhdaneto-na-twin-tower"
+   },
+   {
+    "claim": "Built area 520,000 m2 (press) vs 34,626 m2 above-ground (permit analysis)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://business.dir.bg/imoti/startira-izgrazhdaneto-na-twin-tower"
+   },
+   {
+    "claim": "Investors Glavbolgarstroy and SMART Consultants; Glavbolgarstroy main contractor",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://business.dir.bg/imoti/startira-izgrazhdaneto-na-twin-tower"
+   },
+   {
+    "claim": "Buyer deposits protected",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://novostroitelstvo.org/proekti/twin-tower/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Sofia, Bulgaria",
+   "developer_company": "Sunrise Capital EAD (permit holder)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-05",
+   "handover_promised": "2028-Q4",
+   "original_handover": "2028 mid-year",
+   "delay_months": 5,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "sky villa"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold apartments open to foreigners (land restrictions apply to non-EU buyers)",
+   "rental_programme": "none",
+   "service_charge": "EUR 1 per m2 per month (Barnes listing via novostroitelstvo)",
+   "brand": "Cattelan Italia (common areas)",
+   "amenities": [
+    "pool",
+    "gym",
+    "café and bakery",
+    "kids areas",
+    "event hall",
+    "co-working",
+    "24/7 concierge",
+    "423 underground parking spaces"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Chief Architect of Sofia Municipality (NAG)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://akt16.org/register/permits/29-27022024/",
+   "https://novostroitelstvo.org/proekti/twin-tower/",
+   "https://business.dir.bg/imoti/startira-izgrazhdaneto-na-twin-tower",
+   "https://akt16.org/data/"
+  ],
+  "verified_score": 3
+ },
+ {
+  "slug": "marea-blu-villas-sveti-vlas",
+  "name": "Maréa Blu Beachfront Private Villas",
+  "developer": "Not named on project site",
+  "area": "Sveti Vlas, Nessebar municipality",
+  "country": "Bulgaria",
+  "market": "Bulgaria",
+  "stage": "off-plan",
+  "url": "https://mareablu.bg/en/",
+  "docs_url": "https://mareablu.bg/en/",
+  "permit_number": null,
+  "docs_listed": [
+   "17 villas (7 first-line, 10 second-line) on about 10 acres",
+   "stage timeline: building permit 2025, Act 14 Q3 2026, Act 15 Q2 2027, Act 16 Q3 2027",
+   "per-villa floor areas and prices (EUR 445,833 to 629,166 excl. VAT)",
+   "villa type layouts (4BR first line, 3BR second line)"
+  ],
+  "note": "Collection of 17 sea-front villas next to Onyx Beach Residence in Sveti Vlas with per-villa prices from EUR 445,833 excl. VAT; the site gives a permit-to-Act-16 timeline (permit 2025, Act 14 Q3 2026, Act 16 Q3 2027) but names no developer, no permit number and no current stage (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 445833,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 17,
+   "payment_plan": null,
+   "price_per_m2": 1500
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Timeline lists '2025 Building Permit' without number or issuing body",
+   "escrow": "None stated",
+   "progress": "Only a planned stage timeline; no statement whether Act 14 (due Q3 2026) was reached, no dated photos",
+   "plans": "Floor-by-floor areas and room layouts per villa",
+   "record": "Developer not identified on the site",
+   "returns": "Investment language ('proven potential') but no yield or guarantee"
+  },
+  "positives": [
+   "Per-villa prices and areas published, with and without VAT",
+   "Bulgarian stage certificates (Act 14/15/16) give checkable milestones"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building permit obtained in 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mareablu.bg/en/"
+   },
+   {
+    "claim": "Act 14 in Q3 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mareablu.bg/en/"
+   },
+   {
+    "claim": "Act 16 and completion Q3 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mareablu.bg/en/"
+   },
+   {
+    "claim": "Only complex in Sveti Vlas with exclusive access to a private beach",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mareablu.bg/en/"
+   },
+   {
+    "claim": "Sea view safeguarded for life with no possibility of future development",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mareablu.bg/en/"
+   },
+   {
+    "claim": "First-line Type 1 villas are 294.33 m2 with 3 bathrooms, while villas 6 and 7 are listed at 271 m2 with 4 bathrooms",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://mareablu.bg/en/"
+   },
+   {
+    "claim": "First-line villa price EUR 629,166 excl. VAT (EUR 755,000 incl. VAT)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mareablu.bg/en/"
+   },
+   {
+    "claim": "Developer identity",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mareablu.bg/en/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR villa",
+    "4BR villa"
+   ],
+   "size_min_m2": 271,
+   "size_max_m2": 297.3,
+   "price_min": 445833,
+   "price_max": 629166,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "buildings can be owned by foreigners; non-EU individuals cannot own the land directly (company or right-of-building structures used)",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private infinity pools",
+    "gardens",
+    "covered verandas",
+    "outdoor fireplace",
+    "controlled access",
+    "24/7 video surveillance",
+    "parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Nessebar Municipality (chief architect)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://mareablu.bg/en/"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "montes-by-missoni-yalikavak-rma-holding",
+  "name": "Montes by Missoni",
+  "developer": "RMA Holding (RMA Development)",
+  "area": "Gökçebel, Yalıkavak, Bodrum",
+  "country": "Turkey",
+  "market": "Bodrum",
+  "stage": "under construction",
+  "url": "https://jamesandaysegul.com/property/missoni-branded-residences-and-villas-in-yalikavak-bodrum/",
+  "docs_url": "https://montesmissoni.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "Missoni-branded villas and garden residences on a 22,000 m2 hillside site",
+   "unit count stated as 50, 53 or 54 in different sources",
+   "prices from EUR 6,600/m2 (press) / 1+1 from USD 950,000 (agent)",
+   "agent payment plan 50% down plus 50% over 12 months",
+   "handover summer 2027 / June 2027",
+   "show home opened July 2026"
+  ],
+  "note": "Missoni-branded boutique scheme of about 53 villas and residences in Yalıkavak by RMA Holding, a USD 40 million project whose construction began in 2025 (Milliyet) with handovers planned from summer 2027; 20% was reported sold in four months. No permit number, deposit protection or progress figure is published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 950000,
+   "currency": "USD",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 53,
+   "payment_plan": "agent: 50% down, 50% over 12 months",
+   "price_per_m2": 6600
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No yapı ruhsatı number or date published",
+   "escrow": "No Building Completion Insurance or guarantee mentioned",
+   "progress": "Milliyet (May 2026) says construction started last year; show home opened July 2026; no figure or dated site photos",
+   "plans": "Unit types listed; no floor plans found on pages opened",
+   "record": "RMA Holding active since 2009 in real estate, hotels and restaurants; no completed residential project named",
+   "returns": "Investment language only; no yield or guarantee"
+  },
+  "positives": [
+   "Brand partnership confirmed on Missoni's own website",
+   "Low density: about 53 units on 22,000 m2 with private pools",
+   "Covered by national press (Milliyet, Ekonomist)"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Montes by Missoni is developed in partnership with RMA Holding",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.missoni.com/en-am/missoni-real-estate-bodrum.html"
+   },
+   {
+    "claim": "Construction started in 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.milliyet.com.tr/ekonomi/bodrumda-ikonik-zigzaglar-yukseliyor-7587432"
+   },
+   {
+    "claim": "Construction planned to start winter 2025 (Dec 2024 announcement)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.emlaknews.com.tr/haberler/bodrumdaki-montes-by-missoni-satisa-cikti/"
+   },
+   {
+    "claim": "USD 40 million investment, handovers from summer 2027",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ekonomist.com.tr/makale/bodrum-yalikavak-ta-40-milyon-dolara-proje-gerceklestiriyor-74490"
+   },
+   {
+    "claim": "Number of units: 54 (Dec 2024, developer site), 53 (press 2026), 50 (Turkish developer site)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.montesbymissoni.com/"
+   },
+   {
+    "claim": "20% of units sold in four months",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.milliyet.com.tr/ekonomi/bodrumda-ikonik-zigzaglar-yukseliyor-7587432"
+   },
+   {
+    "claim": "Prices from EUR 6,600/m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.milliyet.com.tr/ekonomi/bodrumda-ikonik-zigzaglar-yukseliyor-7587432"
+   },
+   {
+    "claim": "Unit mix 1-2BR garden flats and 3-4BR villas (2024) vs 2+1 to 4+1 residences (2026)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.emlaknews.com.tr/haberler/bodrumdaki-montes-by-missoni-satisa-cikti/"
+   },
+   {
+    "claim": "Suitable for Turkish citizenship by investment",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://jamesandaysegul.com/property/missoni-branded-residences-and-villas-in-yalikavak-bodrum/"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://montesmissoni.com/"
+   },
+   {
+    "claim": "Completion insurance or guarantee for buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://montesmissoni.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2009,
+   "developer_hq": "Istanbul, Turkey",
+   "developer_company": "RMA Development (RMA Holding group)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025",
+   "handover_promised": "2027-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1+1",
+    "2+1",
+    "3+1",
+    "4+1",
+    "villa"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 950000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 50,
+   "payment_plan": "50% down, 50% over 12 months (agent)",
+   "foreign_ownership": "freehold title deed (tapu) open to most foreign nationals",
+   "rental_programme": "none stated; maintenance and repair services on site",
+   "service_charge": null,
+   "brand": "Missoni",
+   "amenities": [
+    "private pools and gardens",
+    "communal pool",
+    "Cozy restaurant",
+    "sports facilities",
+    "children's play area",
+    "lounge areas",
+    "access to Missoni Beach (planned 2027)"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Bodrum Municipality",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://montesmissoni.com/",
+   "https://www.montesbymissoni.com/",
+   "https://www.missoni.com/en-am/missoni-real-estate-bodrum.html",
+   "https://www.milliyet.com.tr/ekonomi/bodrumda-ikonik-zigzaglar-yukseliyor-7587432",
+   "https://www.ekonomist.com.tr/makale/bodrum-yalikavak-ta-40-milyon-dolara-proje-gerceklestiriyor-74490",
+   "https://www.emlaknews.com.tr/haberler/bodrumdaki-montes-by-missoni-satisa-cikti/",
+   "https://bodrumcitylife.com/bodrumdaki-yeni-yasam-adresi-montes-by-missoni-ilk-kez-kapilarini-acti/",
+   "https://www.instyle.com.tr/pop-kultur/bodrum-yalikavakta-luksun-yeni-adresi-montes-by-missoni/",
+   "https://jamesandaysegul.com/property/missoni-branded-residences-and-villas-in-yalikavak-bodrum/"
+  ],
+  "verified_score": 1
+ },
+ {
+  "slug": "luviya-antalya-rguzel-group",
+  "name": "Luviya",
+  "developer": "RGüzel Group (RGüzel Yapı İnşaat)",
+  "area": "Topçular, Aspendos Boulevard, Muratpaşa",
+  "country": "Turkey",
+  "market": "Antalya",
+  "stage": "under construction",
+  "url": "https://antalyamoydom.com.tr/projects/luviya-antalya-mixed-use-project-apartments-mall-hotel-offices-for-sale",
+  "docs_url": "https://www.rguzelgroup.com/en/luviya",
+  "permit_number": null,
+  "docs_listed": [
+   "730 apartments (1+1 to 5+1, 77-289 m2), 104 Mövenpick-branded residences, office block, 300-bed hotel, 175-store mall",
+   "six published floor plans",
+   "delivery Q4 2028 / December 2028",
+   "payment: 25% down and 48 months, or 40% down and 60 months (agent); 36-month instalments (2025 campaign)",
+   "Aug 2025 press release: reinforced-concrete works at 20% project-wide",
+   "prices TRY 14 million (1+1) to 53 million (4+1) (press, Sep 2026)"
+  ],
+  "note": "Large mixed-use scheme on the former Antbirlik site in Antalya with 730 apartments, Mövenpick-branded residences, a hotel and a mall; the developer reported 20% of the concrete frame done in Aug 2025, but Antalya Körfez reported in Sep 2026 that the site had been idle for about six months while pre-sales continued. Delivery is advertised for late 2028 (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 14000000,
+   "currency": "TRY",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 20,
+   "developer_delivered": "RGüzel Group cites 610,000 m2 of construction in Antalya and names residential schemes La Mare Lara, Viva Kundu, Palma Residence and Kundu Kanyon on its site",
+   "units": 834,
+   "payment_plan": "25% down + 48 months, or 40% down + 60 months (agent)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit number published; press covers zoning decisions (Muratpaşa council decision 99 of 01.03.2017) only",
+   "escrow": "No Building Completion Insurance or bank guarantee mentioned despite 730-unit pre-sales",
+   "progress": "Developer press release Aug 2025: reinforced-concrete works at 20%; Antalya Körfez Apr 2026: blocks rising; Sep 2026: site idle about six months, rough frame done in two phases",
+   "plans": "Six floor plans published (satisofisi)",
+   "record": "Developer names several Antalya residential projects and hotels; no unit delivery figures",
+   "returns": "No yield or guarantee language"
+  },
+  "positives": [
+   "Detailed engineering disclosures (422 ground surveys, raft foundation, C40 concrete) in developer release",
+   "International hotel brand (Accor Mövenpick) named for branded residences",
+   "Floor plans published"
+  ],
+  "flags": [
+   {
+    "text": "Antalya Körfez Gazetesi reported on 22 Sep 2026 that work at the Luviya site had been largely stopped for about six months, with machinery parked and four tower cranes idle, while online pre-sales continued; the company had made no public statement.",
+    "source": "https://www.antalyakorfez.com/luviya-projesinde-6-aydir-sessizlik-500-milyon-dolarlik-yatirim-beklemede"
+   },
+   {
+    "text": "Yeni Alanya reported the same stoppage and cited a journalist's claim that foreign buyers were preparing legal action; the claim was not confirmed and the company did not respond.",
+    "source": "https://www.yenialanya.com/alanyali-ridvan-guzelin-luviya-santiyesi-6-aydir-durdu"
+   }
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Reinforced-concrete works at 20% project-wide (Aug 2025)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakpencerem.com.tr/antalya-nin-dev-karma-yasam-projesi-luviya-da-ilk-bloklar-yukselmeye-basladi/114968"
+   },
+   {
+    "claim": "Construction proceeding quickly, blocks rising (Apr 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.antalyakorfez.com/antalyanin-kalbine-yapilacak-olan-yeni-devasa-avmde-bloklar-yukseliyor"
+   },
+   {
+    "claim": "Construction under way toward delivery (developer) vs site idle about six months (Sep 2026 press)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.antalyakorfez.com/luviya-projesinde-6-aydir-sessizlik-500-milyon-dolarlik-yatirim-beklemede"
+   },
+   {
+    "claim": "Construction started in 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.yenialanya.com/alanyali-ridvan-guzelin-luviya-santiyesi-6-aydir-durdu"
+   },
+   {
+    "claim": "Delivery 2028 (developer, Aug 2025) / Q4 2028 (agent) / Dec 2028 (portal)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://satisofisi.com/en/projeler/turkiye/antalya/muratpasa/luviya"
+   },
+   {
+    "claim": "Partner said in May 2025 the project would complete in 2027-2028",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.antalyakorfez.com/luviya-projesinde-6-aydir-sessizlik-500-milyon-dolarlik-yatirim-beklemede"
+   },
+   {
+    "claim": "730 apartments plus 104 branded residences, hotel and 175-store mall",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.antalyakorfez.com/luviya-projesinde-6-aydir-sessizlik-500-milyon-dolarlik-yatirim-beklemede"
+   },
+   {
+    "claim": "Mall leasable area 50,000 m2 (press, group site) vs 55,000 m2 (developer release)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.emlakpencerem.com.tr/antalya-nin-dev-karma-yasam-projesi-luviya-da-ilk-bloklar-yukselmeye-basladi/114968"
+   },
+   {
+    "claim": "Prices TRY 14 million to 53 million",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.yenialanya.com/alanyali-ridvan-guzelin-luviya-santiyesi-6-aydir-durdu"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.rguzelgroup.com/en/luviya"
+   },
+   {
+    "claim": "Completion insurance or guarantee for buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.rguzelgroup.com/en/luviya"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Aspendos Bulvarı 119-A, Muratpaşa, Antalya, Turkey",
+   "developer_company": "RGüzel Yapı İnşaat (RGüzel Group)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025",
+   "handover_promised": "2028-Q4",
+   "original_handover": "2027-2028 (partner, May 2025)",
+   "delay_months": null,
+   "unit_types": [
+    "1+1",
+    "2+1",
+    "3+1",
+    "4+1",
+    "5+1",
+    "branded residence"
+   ],
+   "size_min_m2": 77,
+   "size_max_m2": 289,
+   "price_min": 14000000,
+   "price_max": 53000000,
+   "currency": "TRY",
+   "deposit_pct": 25,
+   "payment_plan": "25% down + 48 months or 40% down + 60 months",
+   "foreign_ownership": "freehold title deed (tapu) open to most foreign nationals",
+   "rental_programme": "none stated",
+   "service_charge": null,
+   "brand": "Mövenpick (branded residences and hotel, Accor)",
+   "amenities": [
+    "51,000 m2 landscaping",
+    "multiple pools incl. silent pool",
+    "5-star hotel",
+    "175-store mall",
+    "office block",
+    "gastronomy and entertainment venues"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Muratpaşa Municipality",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.rguzelgroup.com/en/luviya",
+   "https://rguzelgroup.com/",
+   "https://antalyamoydom.com.tr/projects/luviya-antalya-mixed-use-project-apartments-mall-hotel-offices-for-sale",
+   "https://satisofisi.com/en/projeler/turkiye/antalya/muratpasa/luviya",
+   "https://www.emlakpencerem.com.tr/antalya-nin-dev-karma-yasam-projesi-luviya-da-ilk-bloklar-yukselmeye-basladi/114968",
+   "https://www.antalyakorfez.com/antalyanin-kalbine-yapilacak-olan-yeni-devasa-avmde-bloklar-yukseliyor",
+   "https://www.antalyakorfez.com/luviya-projesinde-6-aydir-sessizlik-500-milyon-dolarlik-yatirim-beklemede",
+   "https://www.yenialanya.com/alanyali-ridvan-guzelin-luviya-santiyesi-6-aydir-durdu"
+  ],
+  "verified_score": 0
+ },
+ {
+  "slug": "batiyakasi-2-etap-kartal-emlak-konut-yildizlar",
+  "name": "Batıyakası 2. Etap",
+  "developer": "Emlak Konut GYO (landowner) with Yıldızlar İnşaat ve Ticaret A.Ş. (contractor, revenue-sharing)",
+  "area": "Esentepe, Kartal",
+  "country": "Turkey",
+  "market": "Istanbul",
+  "stage": "off-plan",
+  "url": "https://batiyakasi.com/",
+  "docs_url": "https://satis.emlakkonut.com.tr/proje/batiyakasi",
+  "permit_number": "Building permits dated 23.06.2023, No. 190 (per block), Kartal Municipality, listed in KAP valuation report 25-228",
+  "docs_listed": [
+   "independent valuation report 25-228 (31.12.2025) on Emlak Konut investor-relations site: permit table, title deed, contract terms",
+   "land 12711 ada 1 parsel, 63,845.89 m2, owned 1/1 by Emlak Konut GYO",
+   "revenue-sharing contract 23.11.2021 (notary no. 62832), total sales revenue TRY 2.6bn, company share 35%",
+   "site supervision firm Roma 34 Yapı Denetim",
+   "1+1 to 5+1 apartments and terraced homes; open-air shopping street",
+   "sales office in Kartal; Emlak Konut sales portal"
+  ],
+  "note": "Second phase of Emlak Konut GYO's Batıyakası scheme by the Millet Bahçesi in Kartal, built and sold by Yıldızlar İnşaat under a 2021 revenue-sharing contract. Permits were issued 23 Jun 2023, but the independent valuer recorded in Dec 2024 and again in Dec 2025 that construction had not started, against a 2022 target of occupancy from Q4 2025; unit count rose from 1,148 to 1,431 between reports (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "TRY",
+   "title": "freehold (Emlak Konut land, revenue-sharing)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": true,
+   "permit_number": "Building permits dated 23.06.2023, No. 190 (per block), Kartal Municipality, listed in KAP valuation report 25-228",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 0,
+   "developer_delivered": "Emlak Konut GYO is Borsa Istanbul-listed and reports thousands of units sold per quarter across completed and ongoing projects (Q1 2025 activity report); phase 1 of Batıyakası is part of the same scheme",
+   "units": 1431,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Valuation report 25-228 (independent valuer Yetkin, published via Emlak Konut/KAP) tabulates new-building permits dated 23.06.2023 No. 190 for blocks A, B and others",
+   "escrow": "No Building Completion Insurance or bank guarantee stated on pages opened",
+   "progress": "Independent valuer states 'construction has not yet started' at 06.12.2024 and 31.12.2025 (progress 0%)",
+   "plans": "Unit type tables only; no floor plans opened",
+   "record": "Emlak Konut GYO is a listed state-linked developer with audited reporting; Yıldızlar İnşaat built phase 1 partner role not separately verified",
+   "returns": "No yield or guarantee language"
+  },
+  "positives": [
+   "Land ownership, permits and contract terms disclosed in independent valuation reports filed on KAP",
+   "Listed landowner partner with public disclosure duties",
+   "Licensed site supervision firm named"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "registry",
+   "plans": "none",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building permits issued 23.06.2023 (No. 190) for the blocks",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://yatirimciiliskileri.emlakkonut.com.tr/public/pdf/2025-gayri-deg-raporlari/228-25-228-emlak-konut-bati-yakasi-2-etap-kap.pdf"
+   },
+   {
+    "claim": "Land 12711 ada 1 parsel owned 1/1 by Emlak Konut GYO (deed 14.10.2021, journal 36023)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://kap.org.tr/tr/api/file/download/4028328d9373bab00193b5ef10cf1f85"
+   },
+   {
+    "claim": "Revenue-sharing contract with Yıldızlar İnşaat signed 23.11.2021, TRY 2.6bn total revenue, 35% company share",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://yatirimciiliskileri.emlakkonut.com.tr/public/pdf/2025-gayri-deg-raporlari/228-25-228-emlak-konut-bati-yakasi-2-etap-kap.pdf"
+   },
+   {
+    "claim": "Construction started (report wording 'inşaatına başlanan')",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://yatirimciiliskileri.emlakkonut.com.tr/public/pdf/2025-gayri-deg-raporlari/228-25-228-emlak-konut-bati-yakasi-2-etap-kap.pdf"
+   },
+   {
+    "claim": "Construction had not started as of 31.12.2025",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://yatirimciiliskileri.emlakkonut.com.tr/public/pdf/2025-gayri-deg-raporlari/228-25-228-emlak-konut-bati-yakasi-2-etap-kap.pdf"
+   },
+   {
+    "claim": "Occupancy targeted from Q4 2025 at the earliest (2022 ÇED filing)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://emlakkulisi.com/batiyakasi-2-etap-geliyor-emlak-konut-gyo-kartal-arazisine-975-konut-ve-126-dukkanlik-yeni-proje/733937"
+   },
+   {
+    "claim": "975 homes and 126 shops (2022 ÇED) vs 1,148 units (Dec 2024 report) vs 1,431 units (Dec 2025 report)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://kap.org.tr/tr/api/file/download/4028328d9373bab00193b5ef10cf1f85"
+   },
+   {
+    "claim": "Valuation at completion TRY 16.72bn excl. VAT (Dec 2025)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://yatirimciiliskileri.emlakkonut.com.tr/public/pdf/2025-gayri-deg-raporlari/228-25-228-emlak-konut-bati-yakasi-2-etap-kap.pdf"
+   },
+   {
+    "claim": "Site supervision by Roma 34 Yapı Denetim Ltd.",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://yatirimciiliskileri.emlakkonut.com.tr/public/pdf/2025-gayri-deg-raporlari/228-25-228-emlak-konut-bati-yakasi-2-etap-kap.pdf"
+   },
+   {
+    "claim": "Completion insurance or guarantee for buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://satis.emlakkonut.com.tr/proje/batiyakasi"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Istanbul, Turkey",
+   "developer_company": "Emlak Konut Gayrimenkul Yatırım Ortaklığı A.Ş.; contractor Yıldızlar İnşaat ve Ticaret A.Ş.",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Emlak Konut GYO listed on Borsa Istanbul; independent valuation reports filed on KAP",
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": "2025-Q4 (earliest occupancy, 2022 ÇED filing)",
+   "delay_months": null,
+   "unit_types": [
+    "1+1",
+    "2+1",
+    "3+1",
+    "4+1",
+    "duplex",
+    "commercial"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "TRY",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold title deed (tapu) open to most foreign nationals",
+   "rental_programme": "none",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "open-air shopping street",
+    "remote-working areas",
+    "children's parks",
+    "terraced homes",
+    "next to Kartal Millet Bahçesi and lake"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kartal Municipality",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://satis.emlakkonut.com.tr/proje/batiyakasi",
+   "https://emlakkonut.com.tr/tr-TR/batiyakasi",
+   "https://batiyakasi.com/",
+   "https://yatirimciiliskileri.emlakkonut.com.tr/public/pdf/2025-gayri-deg-raporlari/228-25-228-emlak-konut-bati-yakasi-2-etap-kap.pdf",
+   "https://kap.org.tr/tr/api/file/download/4028328d9373bab00193b5ef10cf1f85",
+   "https://emlakkulisi.com/batiyakasi-2-etap-geliyor-emlak-konut-gyo-kartal-arazisine-975-konut-ve-126-dukkanlik-yeni-proje/733937",
+   "https://emlakproject.com/konut-firsatlari/batiyakasi-2-etap-geliyor/35992",
+   "https://yatirimciiliskileri.emlakkonut.com.tr/public/pdf/01-ocak-31-mart-2025-faaliyet-raporu.pdf"
+  ],
+  "verified_score": 3
+ },
+ {
+  "slug": "milan-towers-mahmutlar-milan-group",
+  "name": "Milan Towers",
+  "developer": "Milan Group",
+  "area": "Mahmutlar, Alanya",
+  "country": "Turkey",
+  "market": "Alanya",
+  "stage": "under construction",
+  "url": "https://h24immobilien.de/en/towers/",
+  "docs_url": "https://www.milangrouptr.com/projects-2-1",
+  "permit_number": null,
+  "docs_listed": [
+   "2 blocks of 12 floors, 109 apartments (1+1, 2+1, 3+1, duplex penthouses), 63-173 m2",
+   "starting price EUR 210,000 (developer) / EUR 225,000 (agent) / EUR 280,000 (other agents)",
+   "construction photo gallery and progress note (formwork, rebar, walls, concrete on A and B blocks)",
+   "agent: dated construction photos Aug and Oct 2025; completion August 2027",
+   "agent: progress 81%, start 01.12.2024, delivery 31.12.2026",
+   "developer list of finished projects (Milan 21, Milan Residence 1 and 2, River Residence, Glada Court, Family Garden, Milan Villa)"
+  ],
+  "note": "Two 12-storey towers with 109 apartments on the Mahmutlar seafront by Milan Group, which lists finished Alanya projects back to 2007; the developer posts site photos and says end of 2026, while one agent now gives August 2027 and another reports 81% progress. No permit number or deposit protection is published (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 210000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 81,
+   "developer_delivered": "Developer lists finished projects in Alanya: Milan 21 (2021), Milan Villa Kargıcak (2021), Milan Residence 2 (94 apartments, 2012), Milan Residence 1, River Residence, Glada Court (2007), Family Garden Gazipaşa (2024)",
+   "units": 109,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Developer refers to permissions from Alanya Municipality for design changes; no permit number or date",
+   "escrow": "None stated, although the scheme exceeds the 30-unit threshold for statutory pre-sale guarantees",
+   "progress": "Developer photo gallery and progress text; agent H24 shows construction photos dated Aug and Oct 2025; agent Felix Homes states 81%",
+   "plans": "Unit sizes listed; no floor plans in pages opened",
+   "record": "Developer lists completed projects with years and unit counts",
+   "returns": "Agent H24 offers letting through its hotel operation; no yield or guarantee"
+  },
+  "positives": [
+   "Developer with a list of completed Alanya projects since 2007",
+   "Agent separates visualisations from dated construction photos",
+   "Indoor and outdoor pools, generator and on-site facilities planned"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Completion end of 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.milangrouptr.com/projects-2-1"
+   },
+   {
+    "claim": "Completion August 2027 'as stated by the developer' (agent)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://h24immobilien.de/en/towers/"
+   },
+   {
+    "claim": "Construction 81% complete; start 01.12.2024",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://felixhomesalanya.com/realty/75"
+   },
+   {
+    "claim": "Shell under construction in Aug and Oct 2025 (dated photos)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://h24immobilien.de/en/towers/"
+   },
+   {
+    "claim": "Project 20 m from the beach (developer) vs 1.4 km from the beach (agent)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://felixhomesalanya.com/realty/75"
+   },
+   {
+    "claim": "Starting price EUR 210,000 (developer) vs EUR 225,000 and EUR 280,000 (agents)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.seaside-alanya.com/tr/property/milan-towers-residence-in-mahmutlar-"
+   },
+   {
+    "claim": "109 apartments in 2 blocks of 12 floors",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.seaside-alanya.com/tr/property/milan-towers-residence-in-mahmutlar-"
+   },
+   {
+    "claim": "Developer completed Milan Residence 2 (94 apartments, 2012) and other projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.milangrouptr.com/projects"
+   },
+   {
+    "claim": "Building permit issued by Alanya Municipality",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.milangrouptr.com/tr/projects-2-1"
+   },
+   {
+    "claim": "Completion insurance or guarantee for buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.milangrouptr.com/projects-2-1"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Alanya, Turkey",
+   "developer_company": null,
+   "developer_projects_delivered": 7,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-12",
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1+1",
+    "2+1",
+    "3+1",
+    "duplex penthouse"
+   ],
+   "size_min_m2": 45,
+   "size_max_m2": 173,
+   "price_min": 210000,
+   "price_max": 698500,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "freehold title deed (tapu) open to most foreign nationals",
+   "rental_programme": "agent H24 offers letting via its hotel operation (no figures)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "indoor and outdoor pools",
+    "fitness centre",
+    "sauna and steam room",
+    "Turkish bath",
+    "home cinema",
+    "restaurant",
+    "generator",
+    "24/7 CCTV"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Alanya Municipality",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.milangrouptr.com/projects-2-1",
+   "https://www.milangrouptr.com/tr/projects-2-1",
+   "https://www.milangrouptr.com/projects",
+   "https://h24immobilien.de/en/towers/",
+   "https://www.seaside-alanya.com/tr/property/milan-towers-residence-in-mahmutlar-",
+   "https://felixhomesalanya.com/realty/75"
+  ],
+  "verified_score": 0
  }
 ]

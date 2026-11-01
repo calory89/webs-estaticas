@@ -175,7 +175,7 @@
    "currency": "AUD",
    "deposit_pct": null,
    "payment_plan": null,
-   "foreign_ownership": "Strata title; foreign buyers generally need FIRB approval (not stated on listing)",
+   "foreign_ownership": null,
    "rental_programme": null,
    "service_charge": null,
    "brand": null,
@@ -742,7 +742,7 @@
    "currency": "AUD",
    "deposit_pct": null,
    "payment_plan": null,
-   "foreign_ownership": "Strata title; foreign buyers generally need FIRB approval (not stated by developer)",
+   "foreign_ownership": null,
    "rental_programme": null,
    "service_charge": null,
    "brand": null,
@@ -928,7 +928,7 @@
    "currency": "AUD",
    "deposit_pct": 2.5,
    "payment_plan": "2.5% deposit offer or deposit bond; balance at settlement",
-   "foreign_ownership": "Strata title; foreign buyers generally need FIRB approval (not stated on listing)",
+   "foreign_ownership": null,
    "rental_programme": null,
    "service_charge": null,
    "brand": null,
@@ -1021,7 +1021,6 @@
   "sources": [
    "https://hydemetropolitan.com.au",
    "https://www.apartments.com.au/new-apartments/hyde-metropolitan-sydney-133-141-liverpool-street-sydney-nsw-2000",
-   "https://production-urban-next-git-ude-461-urban-ninja.vercel.app/news/qld/morris-releases-second-tower-at-crest-broadbeach-after-tower-one-sales-success",
    "https://meetings.cityofsydney.nsw.gov.au/documents/d4554/Printed decision Development Application 133-141 Liverpool Street Sydney - D2022495.pdf?T=5",
    "https://en.wikipedia.org/wiki/Hyde_Metropolitan",
    "https://realcommercial.com.au/news/sydneys-apartments-back-on-song-as-city-tower-kicks-off",
@@ -1128,7 +1127,7 @@
    "currency": "AUD",
    "deposit_pct": null,
    "payment_plan": null,
-   "foreign_ownership": "Strata title; foreign buyers generally need FIRB approval (not stated by developer)",
+   "foreign_ownership": null,
    "rental_programme": null,
    "service_charge": null,
    "brand": null,
@@ -1509,7 +1508,7 @@
    "currency": "GBP",
    "deposit_pct": null,
    "payment_plan": "GBP 5,000 reservation fee (Savills)",
-   "foreign_ownership": "Leasehold to 3025; no restriction on foreign buyers in England",
+   "foreign_ownership": "Leasehold to 3025 (Savills)",
    "rental_programme": null,
    "service_charge": "GBP 6.52-6.86 per sq ft per year (Savills)",
    "brand": null,
@@ -1695,7 +1694,7 @@
    "currency": "GBP",
    "deposit_pct": 15,
    "payment_plan": "15% on exchange, 85% on completion",
-   "foreign_ownership": "999-year leasehold; no restriction on foreign buyers in England",
+   "foreign_ownership": "999-year leasehold (portal listing)",
    "rental_programme": null,
    "service_charge": "GBP 7,605 per year for a 1,088 sq ft 3BR (Zoopla)",
    "brand": null,
@@ -1879,7 +1878,7 @@
    "currency": "GBP",
    "deposit_pct": null,
    "payment_plan": null,
-   "foreign_ownership": "990-year leasehold (conflicting dates on listing); no restriction on foreign buyers in England",
+   "foreign_ownership": "990-year leasehold (conflicting dates on listing)",
    "rental_programme": "None stated; 'up to 6% projected yields'",
    "service_charge": "Est. GBP 3.52/sq ft (also shown as TBC); insurance est. GBP 0.80/sq ft; parking GBP 100/space/yr",
    "brand": null,
@@ -2071,7 +2070,7 @@
    "currency": "JPY",
    "deposit_pct": null,
    "payment_plan": null,
-   "foreign_ownership": "Freehold condominium unit; Japan has no restriction on foreign ownership",
+   "foreign_ownership": "Freehold condominium unit (listing)",
    "rental_programme": "Optional pooled hotel programme, owners share 30% of total gross room revenue; operator covers operating costs (listing)",
    "service_charge": null,
    "brand": "Hotel101",
@@ -2089,5 +2088,1610 @@
    "brochure_url": null
   },
   "verified_score": 2
+ },
+ {
+  "slug": "quill-resort-okinawa-nskre",
+  "name": "QUILL RESORT OKINAWA",
+  "developer": "Nippon Steel Kowa Real Estate, Mitsubishi Estate Residence, Cosmos Initia, Yugaf Holdings",
+  "area": "Motobu",
+  "country": "Japan",
+  "market": "Okinawa",
+  "url": "https://www.nskre.co.jp/english/company/news/2025/20250820.html",
+  "docs_url": "https://www.nskre.co.jp/english/company/news/2025/20250820.html",
+  "permit_number": null,
+  "docs_listed": [
+   "230 condominium hotel suites, each 50 m2 or more, 17 floors plus basement",
+   "site 9,809.99 m2, total floor area 21,158.26 m2 at 383-1 Yonazaki-baru, Yamakawa, Motobu",
+   "phase 1 sales from 20 Aug 2025, registration from 27 Sep 2025",
+   "completion late Dec 2027, opening spring 2028",
+   "contractor Yabu Doken; design supervision Tokyu Architects & Engineers; operator Maedasangyo Hotels",
+   "sales by Tokyu Resort, Mitsubishi Estate Residence, NSKRE",
+   "no prices published in releases"
+  ],
+  "note": "230-suite condominium hotel (50 m2+ suites, 17 floors) on a 9,810 m2 hillside site in Motobu, northern Okinawa, by NSKRE, Mitsubishi Estate Residence, Cosmos Initia and Yugaf Holdings; owners can rent units through operator Maedasangyo Hotels. Phase 1 sales began Aug 2025; completion planned late Dec 2027. No prices, building confirmation number or construction progress published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "NSKRE company brochure names completed condominiums such as LIVIO Tower Hazawa Yokohama Kokudai (357 units, 2023) and LIVIO City Funabashi Kitanarashino (488 units, 2025)",
+   "units": 230,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No building confirmation (kakunin) number in the releases opened; the full property summary on a sales site was not found",
+   "escrow": null,
+   "progress": "No construction start or progress published; only planned completion late Dec 2027",
+   "plans": "Only described as suites of 50 m2+ with kitchen and laundry; no plans published",
+   "record": "NSKRE English brochure lists completed condominiums with years and unit counts (developer-published)",
+   "returns": "No yield, guarantee or revenue-share figures stated"
+  },
+  "positives": [
+   "Backed by large listed Japanese developers"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.nskre.co.jp/english/company/news/2025/20250820.html",
+   "https://www.nskre.co.jp/company/news/2025/08/docs/20250820.pdf",
+   "https://www.nskre.co.jp/english/company/news/2026/03/docs/e-20250820.pdf",
+   "https://travel.watch.impress.co.jp/docs/news/2053482.html",
+   "https://ryukyushimpo.jp/prtimes/entry-4678998.html",
+   "https://www.estie.jp/portal/en/article/2ot4bAsPnXA9XWLwypRUkN",
+   "https://www.nskre.co.jp/company/brochure/pdf/brochure_english.pdf?d=260105"
+  ],
+  "stage": "off-plan",
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project site at 383-1 Yonazaki-baru, Yamakawa, Motobu (9,809.99 m2)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.nskre.co.jp/english/company/news/2025/20250820.html"
+   },
+   {
+    "claim": "230 suites in 17 floors plus basement",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.estie.jp/portal/en/article/2ot4bAsPnXA9XWLwypRUkN"
+   },
+   {
+    "claim": "Completion late December 2027, opening spring 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://travel.watch.impress.co.jp/docs/news/2053482.html"
+   },
+   {
+    "claim": "Contractor Yabu Doken appointed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ryukyushimpo.jp/prtimes/entry-4678998.html"
+   },
+   {
+    "claim": "Building confirmation obtained",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.nskre.co.jp/company/news/2025/08/docs/20250820.pdf"
+   },
+   {
+    "claim": "Construction has started",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.nskre.co.jp/english/company/news/2026/03/docs/e-20250820.pdf"
+   },
+   {
+    "claim": "Units sold under strata (condominium) ownership",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.nskre.co.jp/company/news/2025/08/docs/20250820.pdf"
+   },
+   {
+    "claim": "Operator Maedasangyo Hotels will run the hotel rental programme",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ryukyushimpo.jp/prtimes/entry-4678998.html"
+   },
+   {
+    "claim": "NSKRE delivered named condominiums (e.g. LIVIO Tower Hazawa Yokohama Kokudai, 2023)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.nskre.co.jp/company/brochure/pdf/brochure_english.pdf?d=260105"
+   },
+   {
+    "claim": "Prices published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.estie.jp/portal/en/article/2ot4bAsPnXA9XWLwypRUkN"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1952,
+   "developer_hq": "Tokyo, Japan",
+   "developer_company": "Nippon Steel Kowa Real Estate Co., Ltd. (formed Oct 2012 by merger; predecessor Kowa Real Estate est. 1952), with Mitsubishi Estate Residence, Cosmos Initia and Yugaf Holdings",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "suite 50 m2+"
+   ],
+   "size_min_m2": 50,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "JPY",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Strata condominium ownership (developer release)",
+   "rental_programme": "Units rented as hotel rooms by Maedasangyo Hotels when owners are away; no figures stated",
+   "service_charge": null,
+   "brand": "QUILL RESORT",
+   "amenities": [
+    "suites with kitchen and washer",
+    "balconies (except ground floor)",
+    "sea views toward Ie, Minna and Sesoko islands"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Okinawa Prefecture / designated inspection body (building confirmation under Building Standards Act)",
+   "brochure_url": null
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "mondomio-okinawa-onna-fuchaku-daiwa-house",
+  "name": "Mondomio Okinawa Resort Onna Village Fuchaku",
+  "developer": "Daiwa House",
+  "area": "Onna Village",
+  "country": "Japan",
+  "market": "Okinawa",
+  "url": "https://sumaity.com/mansion_new/prop_13475/",
+  "docs_url": "https://uchijapan.com/news/okinawa-resort-condo-shows-growing-second-home-investment-appeal",
+  "permit_number": "BVJ-FUK24-10-0001 (4 Apr 2024); BVJ-FUK24-11-0001 (19 Dec 2024); BVJ-FUK24-12-0001 (27 Mar 2026)",
+  "docs_listed": [
+   "103 units, RC 13 storeys, lots 394-1, 394-2, 397-4, 397-5 Fuchaku, Onna",
+   "1LDK-2LDK, 56.53-73.67 m2; 8 floor plan types published",
+   "Phase 2 (15-18 units) JPY 58.98m-170.98m",
+   "building confirmation numbers BVJ-FUK24-10-0001, -11-0001, -12-0001 in property summary",
+   "contractor TSUCHIYA Co., Ltd.",
+   "completion and handover March 2028",
+   "management fee JPY 33,800-44,100/month, repair reserve JPY 11,900-15,500/month",
+   "minpaku-compatible floors 5-9 (180 days/yr cap), no income guarantee"
+  ],
+  "note": "Daiwa House resort condo of 103 units (13 storeys, RC) in Fuchaku, Onna Village, built by TSUCHIYA with building confirmation numbers BVJ-FUK24-10-0001, -11-0001 and -12-0001 in the property summary; Phase 1 (45 units) went on sale Apr 2026 and Phase 2 at JPY 58.98m to 170.98m in Aug 2026, with completion and handover in March 2028. Rental use is optional minpaku or monthly letting with no income guarantee. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 58980000,
+   "currency": "JPY",
+   "title": "freehold (shared land ownership)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": true,
+   "permit_number": "BVJ-FUK24-10-0001 (4 Apr 2024); BVJ-FUK24-11-0001 (19 Dec 2024); BVJ-FUK24-12-0001 (27 Mar 2026)",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Daiwa House: PREMIST Chatan Araha Beach Residence, 29 units, built 2022 (Mitsui Fudosan Realty listing)",
+   "units": 103,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Property summary on sumaity.com lists building confirmation numbers BVJ-FUK24-10-0001 (4 Apr 2024), BVJ-FUK24-11-0001 (19 Dec 2024) and BVJ-FUK24-12-0001 (27 Mar 2026), issued via Bureau Veritas Japan; not checked against a public register",
+   "escrow": null,
+   "progress": "Described as under construction (uchijapan, Aug 2026); no figure or dated photos",
+   "plans": "Eight floor plan types (A to I) with sizes 56.53-73.67 m2 on the listing",
+   "record": "PREMIST Chatan Araha Beach Residence (29 units, 2022) credited to Daiwa House on a Mitsui Fudosan Realty listing; another Mondomio (Chatan Araha Beach, 41 units) is due March 2027",
+   "returns": "Daiwa House release says rental demand and income are not guaranteed"
+  },
+  "positives": [
+   "Phase prices published",
+   "Large domestic developer"
+  ],
+  "flags": [],
+  "sources": [
+   "https://uchijapan.com/news/okinawa-resort-condo-shows-growing-second-home-investment-appeal",
+   "https://sumaity.com/mansion_new/prop_13475/",
+   "https://kyodonewsprwire.jp/release/202608284911",
+   "https://sumaity.com/mansion_new/prop_12906/",
+   "https://resort.mf-realty.jp/en/area/okinawa/premist-chatan/outline/"
+  ],
+  "stage": "under construction",
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building confirmation granted (BVJ-FUK24-10-0001 and amendments)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sumaity.com/mansion_new/prop_13475/"
+   },
+   {
+    "claim": "103 units, 13 storeys, RC, contractor TSUCHIYA",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kyodonewsprwire.jp/release/202608284911"
+   },
+   {
+    "claim": "Completion and handover March 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kyodonewsprwire.jp/release/202608284911"
+   },
+   {
+    "claim": "Under construction",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://uchijapan.com/news/okinawa-resort-condo-shows-growing-second-home-investment-appeal"
+   },
+   {
+    "claim": "Phase 2 prices JPY 58.98m-170.98m",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sumaity.com/mansion_new/prop_13475/"
+   },
+   {
+    "claim": "Phase 1 of 45 units launched 17 Apr 2026, about 70% of buyers from outside Okinawa",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kyodonewsprwire.jp/release/202608284911"
+   },
+   {
+    "claim": "First 100+ unit new condominium in Onna Village since 2010 (Real Estate Economic Institute data)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kyodonewsprwire.jp/release/202608284911"
+   },
+   {
+    "claim": "Land held in shared ownership (freehold) with the units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sumaity.com/mansion_new/prop_13475/"
+   },
+   {
+    "claim": "Rental income not guaranteed; minpaku capped at 180 days",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kyodonewsprwire.jp/release/202608284911"
+   },
+   {
+    "claim": "Daiwa House completed PREMIST Chatan Araha Beach Residence (2022)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://resort.mf-realty.jp/en/area/okinawa/premist-chatan/outline/"
+   },
+   {
+    "claim": "Deposit protection (tetsukekin hozen) stated",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sumaity.com/mansion_new/prop_13475/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1955,
+   "developer_hq": "Osaka, Japan",
+   "developer_company": "Daiwa House Industry Co., Ltd. (Okinawa Branch as seller; agent Soft Life Co., Ltd.)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Daiwa House Industry is listed on the Tokyo Stock Exchange (not checked in a filing)",
+   "construction_start": "2024",
+   "handover_promised": "2028-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1LDK",
+    "2LDK"
+   ],
+   "size_min_m2": 56.53,
+   "size_max_m2": 73.67,
+   "price_min": 58980000,
+   "price_max": 170980000,
+   "currency": "JPY",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold condominium with shared land ownership (property summary)",
+   "rental_programme": "Optional minpaku via introduced operator on floors 5-9 (max 180 days/yr) or monthly rentals; no income guarantee",
+   "service_charge": "Management fee JPY 33,800-44,100/month; repair reserve JPY 11,900-15,500/month plus one-time JPY 678,400-884,000",
+   "brand": "Mondomio",
+   "amenities": [
+    "golf simulator",
+    "BBQ terrace",
+    "fitness room",
+    "large communal bath with sauna",
+    "lounges",
+    "external management by Daiwa Life Next"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Designated confirmation inspection body (Bureau Veritas Japan) under the Building Standards Act",
+   "brochure_url": null
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "fairway-latitude-fairway-holdings",
+  "name": "Fairway Latitude",
+  "developer": "Fairway Holdings",
+  "area": "Kirulapone, Colombo 05",
+  "country": "Sri Lanka",
+  "market": "Sri Lanka",
+  "url": "https://latitude.fairwayproperties.lk/",
+  "docs_url": "https://latitude.fairwayproperties.lk/",
+  "permit_number": null,
+  "docs_listed": [
+   "176 apartments, 27 floors, 360 parking bays",
+   "2BR 923 sq ft from LKR 56m; 3BR 1,417-1,554 sq ft from LKR 78m (site); FT launch report: from LKR 59m and 90m",
+   "unit type plans B1/B2, A1/A2, C1, D1, E1/E2 with sizes",
+   "eight floors structurally complete (undated)",
+   "completion Q1 2028",
+   "reservation fee LKR 1.5m, 28-month payment plan (Daily FT)",
+   "six completed projects named"
+  ],
+  "note": "176-apartment, 27-floor tower at No. 7 High Level Road, Kirulapone (Colombo 05), relaunched in Jan 2026 with construction under way, eight floors structurally complete and completion scheduled for Q1 2028; 2-bed from LKR 56m. The same site was launched in Jan 2017 as 'Latitude by Fairway' (20 floors, 120 units) with completion promised for end 2019. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 56000000,
+   "currency": "LKR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Fairway SkyGardens, Rajagiriya (127 apartments + 2 penthouses, handed over Nov 2014, Daily FT); also Fairway Elements, Fairway Galle, Fairmount Urban Oasis, Fairway Urban Homes, Fairway on the Waterfront (developer site); 1,000+ apartments across six projects",
+   "units": 176,
+   "payment_plan": "LKR 1.5m reservation, 28-month payment plan (Daily FT, Jan 2026)",
+   "price_per_m2": 653061,
+   "progress_updates": true
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Developer site: eight of 27 floors structurally complete (undated); Daily FT (22 Jan 2026) reported construction commenced and six floors completed at relaunch",
+   "plans": "Developer site lists unit types B1/B2, A1/A2, C1, D1, E1/E2 with sizes",
+   "record": "Daily FT (1 Dec 2014) reported the handover of Fairway SkyGardens, Rajagiriya (127 apartments and two penthouses, 31 storeys); Daily FT (Jan 2026) cites 1,000+ apartments across six completed projects",
+   "returns": "No guarantee or yield"
+  },
+  "positives": [
+   "Construction progress published",
+   "Named completed projects since 2004",
+   "Unit types and sizes published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://latitude.fairwayproperties.lk/",
+   "https://www.ft.lk/business/Fairway-Latitude-launches-with-a-vision-of-sustainable-urban-luxury/34-787270",
+   "https://archives1.sundayobserver.lk/2017/02/26/business/latitude-apartment-project-launched-kirulapone",
+   "https://www.dailymirror.lk/other/Fairway-Holdings-launches-Latitude-by-Fairway/117-122995",
+   "https://www.ft.lk/Business/fairway-skygardens-welcomes-its-homeowners/34-371969"
+  ],
+  "stage": "under construction",
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction has commenced, six floors complete at Jan 2026 relaunch",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ft.lk/business/Fairway-Latitude-launches-with-a-vision-of-sustainable-urban-luxury/34-787270"
+   },
+   {
+    "claim": "Eight floors structurally complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://latitude.fairwayproperties.lk/"
+   },
+   {
+    "claim": "Completion Q1 2028",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.dailymirror.lk/other/Fairway-Holdings-launches-Latitude-by-Fairway/117-122995"
+   },
+   {
+    "claim": "Project first launched 2017 (20 floors, 120 units, completion end 2019)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://archives1.sundayobserver.lk/2017/02/26/business/latitude-apartment-project-launched-kirulapone"
+   },
+   {
+    "claim": "2BR from LKR 56m, 3BR from LKR 78m",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.ft.lk/business/Fairway-Latitude-launches-with-a-vision-of-sustainable-urban-luxury/34-787270"
+   },
+   {
+    "claim": "UDA / Colombo Municipal Council approval published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://latitude.fairwayproperties.lk/"
+   },
+   {
+    "claim": "Fairway delivered Fairway SkyGardens (handed over Nov 2014)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ft.lk/Business/fairway-skygardens-welcomes-its-homeowners/34-371969"
+   },
+   {
+    "claim": "Over 1,000 apartments completed across six projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.ft.lk/business/Fairway-Latitude-launches-with-a-vision-of-sustainable-urban-luxury/34-787270"
+   },
+   {
+    "claim": "Fairway Holdings formed in 2003",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.ft.lk/Business/fairway-skygardens-welcomes-its-homeowners/34-371969"
+   },
+   {
+    "claim": "Buyer payments held in escrow or bank-guaranteed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://latitude.fairwayproperties.lk/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2003,
+   "developer_hq": "Colombo, Sri Lanka",
+   "developer_company": "Fairway Holdings (Pvt) Ltd (registration number not published)",
+   "developer_projects_delivered": 6,
+   "developer_units_delivered": 1000,
+   "listed_or_audited": null,
+   "construction_start": "2025",
+   "handover_promised": "2028-Q1",
+   "original_handover": "2019-Q4",
+   "delay_months": 99,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "4BR penthouse"
+   ],
+   "size_min_m2": 84,
+   "size_max_m2": 268,
+   "price_min": 56000000,
+   "price_max": null,
+   "currency": "LKR",
+   "deposit_pct": null,
+   "payment_plan": "LKR 1.5m reservation, 28-month payment plan",
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "rooftop infinity pool",
+    "rooftop terrace",
+    "function hall",
+    "fitness centre",
+    "concierge",
+    "convenience store",
+    "24/7 security",
+    "backup power"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Urban Development Authority / Colombo Municipal Council; Condominium Management Authority for condominium plans",
+   "brochure_url": null
+  },
+  "verified_score": 2
+ },
+ {
+  "slug": "residences-melia-seychelles-seafront",
+  "name": "The Residences at Meliá Seychelles",
+  "developer": "Seafront Development Ltd",
+  "area": "Mahé (Eden Island marina)",
+  "country": "Seychelles",
+  "market": "Seychelles",
+  "url": "https://www.pamgolding.co.za/property-development/seychelles/residences-at-melia-seychelles",
+  "docs_url": "https://www.pamgolding.co.za/property-development/seychelles/residences-at-melia-seychelles",
+  "permit_number": null,
+  "docs_listed": [
+   "68 freehold branded residences (40 South Block in hotel rental pool, 28 North Block private) + 120 hotel keys",
+   "penthouse 3BR 256 m2 + 62 m2 balcony, floor plan PDF",
+   "USD 500k-1.5m range; from ZAR 8,192,610 on Pam Golding",
+   "'Guaranteed rental returns available for early buyers'",
+   "5% guaranteed minimum net yield for 3 years for first 20 South Block buyers (news)",
+   "owners get six weeks personal use under the rental scheme",
+   "contractor Green Island Construction Company (news)"
+  ],
+  "note": "68 freehold Meliá-branded residences beside a 120-key hotel on reclaimed land near Eden Island, developed by Seafront Development Ltd (Land Marine Ltd 51%, Albwardy's ASB Limited 49%); buildings reached roof height in Oct 2024 for a Q1 2026 completion, but the Pam Golding listing still shows under construction and no opening was found. Early buyers offered a guaranteed 5% net yield for three years. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 500000,
+   "currency": "USD",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 5,
+   "completion": "2026",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 68,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": false,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Seychelles News Agency (11 Oct 2024): main buildings at roof height, completion expected Q1 2026; Travel News (28 Oct 2024) says construction well under way; Pam Golding listing still says under construction; no % or later dated update",
+   "plans": "Penthouse plan PDF on Pam Golding page",
+   "record": "Albwardy (49% shareholder via ASB Limited) is linked by Four Seasons to resorts in Mahe and Desroches, but no delivered residences by Seafront Development Ltd are named",
+   "returns": "Pam Golding: 'Guaranteed rental returns available for early buyers'; SNA and Travel News report a guaranteed minimum 5% net yield for three years for the first 20 South Block buyers"
+  },
+  "positives": [
+   "Freehold title",
+   "Floor plan published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.pamgolding.co.za/property-development/seychelles/residences-at-melia-seychelles",
+   "https://seychellesnewsagency.com/articles/21363/the-residences-at-melia-seychelles-expected-to-open-doors-in-2026",
+   "https://www.travelnews.co.za/article/new-seychelles-resort-opening-2026",
+   "https://press.fourseasons.com/news-releases/2024/new-four-seasons-in-zanzibar/"
+  ],
+  "stage": "under construction",
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "none",
+   "returns": "independent"
+  },
+  "claims": [
+   {
+    "claim": "Developer Seafront Development Ltd is owned 51% by Land Marine Ltd and 49% by ASB Limited (Albwardy)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://seychellesnewsagency.com/articles/21363/the-residences-at-melia-seychelles-expected-to-open-doors-in-2026"
+   },
+   {
+    "claim": "Main buildings reached roof height (Oct 2024)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://seychellesnewsagency.com/articles/21363/the-residences-at-melia-seychelles-expected-to-open-doors-in-2026"
+   },
+   {
+    "claim": "Completion Q1 2026 and opening early 2026",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.pamgolding.co.za/property-development/seychelles/residences-at-melia-seychelles"
+   },
+   {
+    "claim": "Contractor Green Island Construction Company",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://seychellesnewsagency.com/articles/21363/the-residences-at-melia-seychelles-expected-to-open-doors-in-2026"
+   },
+   {
+    "claim": "Freehold title for buyers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pamgolding.co.za/property-development/seychelles/residences-at-melia-seychelles"
+   },
+   {
+    "claim": "Prices USD 500,000-1,500,000",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.travelnews.co.za/article/new-seychelles-resort-opening-2026"
+   },
+   {
+    "claim": "Guaranteed minimum 5% net yield for 3 years for first 20 South Block buyers",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://seychellesnewsagency.com/articles/21363/the-residences-at-melia-seychelles-expected-to-open-doors-in-2026"
+   },
+   {
+    "claim": "Government sanction / planning approval number published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pamgolding.co.za/property-development/seychelles/residences-at-melia-seychelles"
+   },
+   {
+    "claim": "Meliá manages hotel and rental pool",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.travelnews.co.za/article/new-seychelles-resort-opening-2026"
+   },
+   {
+    "claim": "Albwardy has delivered resorts in the Seychelles with Four Seasons",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://press.fourseasons.com/news-releases/2024/new-four-seasons-in-zanzibar/"
+   },
+   {
+    "claim": "Deposits held in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pamgolding.co.za/property-development/seychelles/residences-at-melia-seychelles"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Victoria, Seychelles",
+   "developer_company": "Seafront Development Ltd (Seychelles); shareholders Land Marine Ltd 51%, ASB Limited (Albwardy Investment LLC) 49%",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "apartment",
+    "3BR penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": 256,
+   "price_min": 500000,
+   "price_max": 1500000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold (listing); Seychelles normally requires government sanction for non-Seychellois purchases (not stated on listing)",
+   "rental_programme": "South Block units in Meliá hotel rental pool; guaranteed minimum 5% net yield for 3 years for first 20 buyers; six weeks owner use",
+   "service_charge": null,
+   "brand": "Meliá Hotels & Resorts",
+   "amenities": [
+    "48m infinity pool",
+    "Meliá spa and wellness centre",
+    "three restaurants",
+    "rooftop bar",
+    "conference centre",
+    "marina access",
+    "gym"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Seychelles Planning Authority; Ministry sanction for foreign purchase",
+   "brochure_url": null
+  },
+  "verified_score": 2
+ },
+ {
+  "slug": "nikki-beach-residences-antigua-ayre",
+  "name": "Nikki Beach Residences Antigua",
+  "developer": "White Sand Development Ltd (Ayre Group)",
+  "area": "Jolly Beach",
+  "country": "Antigua and Barbuda",
+  "market": "Antigua",
+  "url": "https://www.nestseekers.com/5290003/jolly-harbour-saint-mary-antigua-and-barbuda-2br-2-bedroom-apartment",
+  "docs_url": "https://luxurylondon.co.uk/property/nikki-beach-residences-antigua-to-go-on-market-2026/",
+  "permit_number": null,
+  "docs_listed": [
+   "134 residences (127 studio-3BR apartments, 7 four-bedroom villas) plus 82-84 hotel keys",
+   "1-3BR from USD 1.2m, villas from USD 5.5m",
+   "2BR 145 m2 from USD 1,649,000",
+   "residences completion Q4 2029, resort opening 2030 (news)",
+   "CBI eligibility claimed",
+   "architect HKS, interiors Roam"
+  ],
+  "note": "134 Nikki Beach branded residences at Jolly Beach by Ayre Group's White Sand Development Ltd, a USD 400m resort first unveiled for sale in early 2026, from USD 1.2m; completion is reported for Q4 2029 with the resort opening in 2030, but no construction status, approval or deposit terms are published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1200000,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 134,
+   "payment_plan": null,
+   "price_per_m2": 11372
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No planning approval, Cabinet approval or CBI project approval number published; CBI eligibility only claimed",
+   "escrow": null,
+   "progress": "Caribbean National Weekly (Feb 2026) covers the unveiling and timeline but not whether construction has begun",
+   "plans": "No plans on listings",
+   "record": "Only Nikki Beach Hospitality Group's Dubai residences are cited; no completed projects by White Sand Development or Ayre Group named",
+   "returns": "No rental terms or guarantee"
+  },
+  "positives": [
+   "Unit sizes and prices on agency listings"
+  ],
+  "flags": [],
+  "sources": [
+   "https://luxurylondon.co.uk/property/nikki-beach-residences-antigua-to-go-on-market-2026/",
+   "https://aplaceinthesun.com/property/details/ap4177934/nikki-beach-residences",
+   "https://www.nestseekers.com/5290003/jolly-harbour-saint-mary-antigua-and-barbuda-2br-2-bedroom-apartment",
+   "https://www.caribbeannationalweekly.com/travel/nikki-beach-and-ayre-group-unveil-branded-residences-in-antigua/"
+  ],
+  "stage": "off-plan",
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Developer White Sand Development Ltd is an Ayre Group subsidiary",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.caribbeannationalweekly.com/travel/nikki-beach-and-ayre-group-unveil-branded-residences-in-antigua/"
+   },
+   {
+    "claim": "Residences complete Q4 2029, resort opens 2030",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.caribbeannationalweekly.com/travel/nikki-beach-and-ayre-group-unveil-branded-residences-in-antigua/"
+   },
+   {
+    "claim": "134 residences and 82 hotel rooms",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.caribbeannationalweekly.com/travel/nikki-beach-and-ayre-group-unveil-branded-residences-in-antigua/"
+   },
+   {
+    "claim": "Residences from USD 1.2m, villas from USD 5.5m",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://luxurylondon.co.uk/property/nikki-beach-residences-antigua-to-go-on-market-2026/"
+   },
+   {
+    "claim": "Residences approved under Antigua and Barbuda CBI programme",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.caribbeannationalweekly.com/travel/nikki-beach-and-ayre-group-unveil-branded-residences-in-antigua/"
+   },
+   {
+    "claim": "Construction under way",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://luxurylondon.co.uk/property/nikki-beach-residences-antigua-to-go-on-market-2026/"
+   },
+   {
+    "claim": "USD 400m total development value",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://luxurylondon.co.uk/property/nikki-beach-residences-antigua-to-go-on-market-2026/"
+   },
+   {
+    "claim": "Developer has delivered prior residential projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.caribbeannationalweekly.com/travel/nikki-beach-and-ayre-group-unveil-branded-residences-in-antigua/"
+   },
+   {
+    "claim": "Deposits held in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://aplaceinthesun.com/property/details/ap4177934/nikki-beach-residences"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Antigua and Barbuda",
+   "developer_company": "White Sand Development Ltd (Ayre Group, founder Calvin Ayre)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2029-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR villa"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 1200000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Not stated; CBI eligibility claimed",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Nikki Beach",
+   "amenities": [
+    "beach club",
+    "oceanfront pools",
+    "11,000 sq ft spa",
+    "kids club",
+    "aquatic centre",
+    "yoga deck",
+    "gym",
+    "boat tender dock"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Development Control Authority, Antigua and Barbuda; CBI Unit for investment eligibility",
+   "brochure_url": null
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "one-and-only-private-homes-fiji",
+  "name": "One&Only Private Homes, Fiji",
+  "developer": "Not named (One&Only / Kerzner brand)",
+  "area": "Nacula Island, Yasawa Group",
+  "country": "Fiji",
+  "market": "Fiji",
+  "url": "https://www.bayleys.co.nz/listings/residential/south-pacific-islands/fiji/6-balawi-beach-nacula-island-fiji-yasawa-island-group-5000422",
+  "docs_url": "https://www.bayleys.co.nz/listings/residential/south-pacific-islands/fiji/6-balawi-beach-nacula-island-fiji-yasawa-island-group-5000422",
+  "permit_number": null,
+  "docs_listed": [
+   "3-5BR off-plan homes (listed unit 6 Balawi Beach: 3BR, 3 bath, pool)",
+   "price on application",
+   "resort opening late 2029 (subject to change)",
+   "optional rental participation (no terms)",
+   "artist impressions only; limited initial release"
+  ],
+  "note": "Off-plan 3 to 5 bedroom One&Only branded homes at Balawi Beach, Nacula Island (Yasawa Group), price on application, sold through Bayleys with the resort scheduled to open in late 2029 (subject to change); no developer entity, title, approval, deposit terms or construction status is published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No approval or lease number on the listing",
+   "escrow": null,
+   "progress": "Sold off-plan, images are artist impressions; no construction status",
+   "plans": "No plans",
+   "record": "Legal developer not named; One&Only is the brand and operator",
+   "returns": "Optional rental participation, no figures or guarantee"
+  },
+  "positives": [
+   "No guaranteed return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.bayleys.co.nz/listings/residential/south-pacific-islands/fiji/6-balawi-beach-nacula-island-fiji-yasawa-island-group-5000422"
+  ],
+  "stage": "off-plan",
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Resort scheduled to open late 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.bayleys.co.nz/listings/residential/south-pacific-islands/fiji/6-balawi-beach-nacula-island-fiji-yasawa-island-group-5000422"
+   },
+   {
+    "claim": "One&Only's first resort and private residential destination in the South Pacific",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.bayleys.co.nz/listings/residential/south-pacific-islands/fiji/6-balawi-beach-nacula-island-fiji-yasawa-island-group-5000422"
+   },
+   {
+    "claim": "Homes in 3, 4 and 5 bedroom configurations",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.bayleys.co.nz/listings/residential/south-pacific-islands/fiji/6-balawi-beach-nacula-island-fiji-yasawa-island-group-5000422"
+   },
+   {
+    "claim": "Developer or landowning entity named",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.bayleys.co.nz/listings/residential/south-pacific-islands/fiji/6-balawi-beach-nacula-island-fiji-yasawa-island-group-5000422"
+   },
+   {
+    "claim": "Title type for foreign buyers (freehold or lease) stated",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.bayleys.co.nz/listings/residential/south-pacific-islands/fiji/6-balawi-beach-nacula-island-fiji-yasawa-island-group-5000422"
+   },
+   {
+    "claim": "Optional rental participation available",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.bayleys.co.nz/listings/residential/south-pacific-islands/fiji/6-balawi-beach-nacula-island-fiji-yasawa-island-group-5000422"
+   },
+   {
+    "claim": "Construction started",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.bayleys.co.nz/listings/residential/south-pacific-islands/fiji/6-balawi-beach-nacula-island-fiji-yasawa-island-group-5000422"
+   },
+   {
+    "claim": "Deposits held in trust",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.bayleys.co.nz/listings/residential/south-pacific-islands/fiji/6-balawi-beach-nacula-island-fiji-yasawa-island-group-5000422"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2029-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR",
+    "4BR",
+    "5BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": "Optional rental participation, no terms published",
+   "service_charge": null,
+   "brand": "One&Only (Kerzner)",
+   "amenities": [
+    "private pool"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Fiji Department of Town and Country Planning; iTaukei Land Trust Board or Lands Department for leases",
+   "brochure_url": null
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "four-seasons-nevis-peak-residences-integrum",
+  "name": "Four Seasons Nevis Peak Residences",
+  "developer": "The Integrum Group with F.S.R Estates",
+  "area": "Pinney's Beach, Nevis",
+  "country": "St Kitts and Nevis",
+  "market": "St Kitts and Nevis",
+  "url": "https://fsrenevis.com/?p=6794",
+  "docs_url": "https://fsrenevis.com/?p=6794",
+  "permit_number": null,
+  "docs_listed": [
+   "52 residences, 1-4BR incl. penthouses, in four buildings (58 units in six buildings per Jul 2024 report)",
+   "from USD 1.4m",
+   "unit sizes about 1,725-3,730 sq ft (WIC News)",
+   "groundbreaking 8 Apr 2025 with Premier Mark Brantley present",
+   "sold through Sotheby's International Realty St Kitts and Nevis",
+   "CBI participation mentioned",
+   "interiors Ward & Co; architects Brisbane O'Garro Alvaranga"
+  ],
+  "note": "Four Seasons-branded Nevis Peak residences along the 7th and 8th fairways at Pinney's Beach, by The Integrum Group with F.S.R Estates Limited, from USD 1.4m; groundbreaking was held 8 April 2025 (unit count reported as 52 in four buildings, earlier 58 in six) with no completion date, approval or progress published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1400000,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 52,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Developer news page reports the 8 Apr 2025 groundbreaking attended by the Nevis Premier; no later update, figure or completion date",
+   "plans": "No plans",
+   "record": "No completed residences or units delivered by Integrum or F.S.R Estates named in sources opened",
+   "returns": "Property management offered, no guarantee"
+  },
+  "positives": [
+   "Branded operator and established resort"
+  ],
+  "flags": [],
+  "sources": [
+   "https://fsrenevis.com/?p=6794",
+   "https://fsrenevis.com/new-luxury-private-residences-at-the-four-seasons-resort-nevis/",
+   "https://wicnews.com/saint-kitts-nevis/four-seasons-resort-nevis-builds-58-additional-luxury-residences"
+  ],
+  "stage": "off-plan",
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Groundbreaking held 8 April 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://fsrenevis.com/?p=6794"
+   },
+   {
+    "claim": "52 residences in four buildings",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://wicnews.com/saint-kitts-nevis/four-seasons-resort-nevis-builds-58-additional-luxury-residences"
+   },
+   {
+    "claim": "Residences from USD 1.4m",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://fsrenevis.com/new-luxury-private-residences-at-the-four-seasons-resort-nevis/"
+   },
+   {
+    "claim": "Groundbreaking planned for early 2024",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://fsrenevis.com/?p=6794"
+   },
+   {
+    "claim": "Built with F.S.R Estates Limited",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://wicnews.com/saint-kitts-nevis/four-seasons-resort-nevis-builds-58-additional-luxury-residences"
+   },
+   {
+    "claim": "Purchase qualifies for St Kitts and Nevis CBI",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://fsrenevis.com/?p=6794"
+   },
+   {
+    "claim": "Completion date published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://fsrenevis.com/?p=6794"
+   },
+   {
+    "claim": "Development approval published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://fsrenevis.com/?p=6794"
+   },
+   {
+    "claim": "Deposits held in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://fsrenevis.com/new-luxury-private-residences-at-the-four-seasons-resort-nevis/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": "The Integrum Group (David Chekemian, Richard Maltz) with F.S.R Estates Limited; marketed as Four Seasons Resort Estates",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-04",
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "penthouse"
+   ],
+   "size_min_m2": 160,
+   "size_max_m2": 347,
+   "price_min": 1400000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Not stated; CBI participation mentioned",
+   "rental_programme": "Property management offered; no figures",
+   "service_charge": null,
+   "brand": "Four Seasons",
+   "amenities": [
+    "Four Seasons resort services",
+    "Robert Trent Jones II golf course",
+    "Pinney's Beach"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Nevis Island Administration (Physical Planning)",
+   "brochure_url": null
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "la-wisteria-siolim-sea-breeze",
+  "name": "La Wisteria",
+  "developer": "Sea Breeze Group",
+  "area": "Siolim, North Goa",
+  "country": "India",
+  "market": "Goa",
+  "url": "https://www.ghar.tv/la-wisteria-siolim-north-goa-okiw948797134",
+  "docs_url": "https://www.ghar.tv/la-wisteria-siolim-north-goa-okiw948797134",
+  "permit_number": "PRGO04252441",
+  "docs_listed": [
+   "Goa RERA PRGO04252441 (listing)",
+   "80 1-2BHK apartments with private pools",
+   "1BHK 1,150 sq ft, 2BHK 1,750 sq ft built-up",
+   "INR 1.55-2.35 Cr",
+   "possession Dec 2027",
+   "projected ROI up to 10% and INR 7,000/night rental estimate (developer)",
+   "INR 100 crore stated investment"
+  ],
+  "note": "80 boutique apartments with private pools in Siolim by Sea Breeze Group (La Wisteria founder and CEO Arpit Bansal), listed with Goa RERA registration PRGO04252441, priced INR 1.55 to 2.35 Cr with possession targeted for December 2027; the developer projects up to 10% annual ROI. The RERA number could not be checked on the Goa RERA portal. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 15500000,
+   "currency": "INR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 10,
+   "completion": "2027-Q4",
+   "permit_claim": true,
+   "permit_number": "PRGO04252441",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 80,
+   "payment_plan": null,
+   "price_per_m2": 145077
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "RERA PRGO04252441 shown on ghar.tv listing; Construction World says 'RERA-approved' without a number; the Goa RERA portal could not be opened to confirm",
+   "escrow": null,
+   "progress": "Listing gives no status (only buyer comments say under construction); no figure or dated update",
+   "plans": "Only built-up areas",
+   "record": "No completed projects of Sea Breeze Group or La Wisteria named",
+   "returns": "Developer: potential returns of up to 10% annually, INR 7,000 daily rental and INR 10 lakh+ net per year at 60% occupancy for a 1BHK; projections, not guaranteed"
+  },
+  "positives": [
+   "RERA registration number published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.ghar.tv/la-wisteria-siolim-north-goa-okiw948797134",
+   "https://www.constructionworld.in/amp/Latest-Construction-News/sea-breeze-launches-la-wisteria-in-siolim--goa/74420"
+  ],
+  "stage": "off-plan",
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Registered with Goa RERA as PRGO04252441",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.ghar.tv/la-wisteria-siolim-north-goa-okiw948797134"
+   },
+   {
+    "claim": "80 apartments, each with a private pool",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.constructionworld.in/amp/Latest-Construction-News/sea-breeze-launches-la-wisteria-in-siolim--goa/74420"
+   },
+   {
+    "claim": "Possession December 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.constructionworld.in/amp/Latest-Construction-News/sea-breeze-launches-la-wisteria-in-siolim--goa/74420"
+   },
+   {
+    "claim": "Prices INR 1.55-2.35 Cr",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.ghar.tv/la-wisteria-siolim-north-goa-okiw948797134"
+   },
+   {
+    "claim": "Up to 10% annual return",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.constructionworld.in/amp/Latest-Construction-News/sea-breeze-launches-la-wisteria-in-siolim--goa/74420"
+   },
+   {
+    "claim": "1BHK nets over INR 10 lakh a year at 60% occupancy",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.constructionworld.in/amp/Latest-Construction-News/sea-breeze-launches-la-wisteria-in-siolim--goa/74420"
+   },
+   {
+    "claim": "Siolim apartment values rose 200% in two years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.constructionworld.in/amp/Latest-Construction-News/sea-breeze-launches-la-wisteria-in-siolim--goa/74420"
+   },
+   {
+    "claim": "Construction under way",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.ghar.tv/la-wisteria-siolim-north-goa-okiw948797134"
+   },
+   {
+    "claim": "Developer has delivered earlier projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.constructionworld.in/amp/Latest-Construction-News/sea-breeze-launches-la-wisteria-in-siolim--goa/74420"
+   },
+   {
+    "claim": "Buyer funds held in RERA designated account",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.ghar.tv/la-wisteria-siolim-north-goa-okiw948797134"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Goa, India",
+   "developer_company": "Sea Breeze Group / La Wisteria (founder and CEO Arpit Bansal); legal entity not published",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BHK",
+    "2BHK"
+   ],
+   "size_min_m2": 107,
+   "size_max_m2": 163,
+   "price_min": 15500000,
+   "price_max": 23500000,
+   "currency": "INR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": "Projected INR 7,000/night and up to 10% annual return (developer projection)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pool in every unit",
+    "swimming pool",
+    "gym",
+    "steam room",
+    "3,000+ sq ft central lagoon",
+    "children's play area",
+    "natural pond"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Goa Real Estate Regulatory Authority (registration); Town and Country Planning / local panchayat (building licence)",
+   "brochure_url": null
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "osten-tower-ii-gnv-group",
+  "name": "Osten Tower II",
+  "developer": "GNV Group",
+  "area": "Puerto Madero (Dique 1, Distrito Madero Harbour)",
+  "country": "Argentina",
+  "market": "Buenos Aires",
+  "url": "https://www.cronista.com/negocios/con-una-inversion-de-us-95-millones-gnv-group-arranco-la-construccion-de-una-torre-residencial-de-33-pisos",
+  "docs_url": "https://www.cronista.com/negocios/con-una-inversion-de-us-95-millones-gnv-group-arranco-la-construccion-de-una-torre-residencial-de-33-pisos",
+  "permit_number": null,
+  "docs_listed": [
+   "33-floor tower, 200+ units 40-310 m2, penthouse near 1,000 m2",
+   "from USD 197,000, about USD 5,000/m2",
+   "30% on signing (boleto), payments at floor 10 and 20 slabs, instalments during construction",
+   "construction start reported Mar 2026, completion Dec 2028",
+   "about 45% pre-sold",
+   "architect PFZ Pfeifer-Zurdo; GNV self-manages construction"
+  ],
+  "note": "33-floor tower at Dique 1, Puerto Madero (part of Distrito Madero Harbour), designed by Pfeifer-Zurdo, which started construction in March 2026 with delivery scheduled for December 2028; from USD 197,000 (about USD 5,000/m2) with 30% due on signing and about 45% sold in pre-sale. GNV's first Osten tower is due for delivery at end 2026, so no completed residential project is named. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 197000,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 200,
+   "payment_plan": "30% on signing, payments at floor 10 and 20 slabs, instalments during construction",
+   "price_per_m2": 5000
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": "No fideicomiso or deposit guarantee mentioned",
+   "progress": "El Cronista (12 Mar 2026) reported construction had started; no figure or dated photos since",
+   "plans": "No plans in source",
+   "record": "Osten Tower I (launched 2022, sold out) is due for delivery at end 2026; no completed GNV residential projects named",
+   "returns": "No guarantee"
+  },
+  "positives": [
+   "Payments tied to construction milestones",
+   "USD price per m2 published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.cronista.com/negocios/con-una-inversion-de-us-95-millones-gnv-group-arranco-la-construccion-de-una-torre-residencial-de-33-pisos"
+  ],
+  "stage": "off-plan",
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction started (Mar 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.cronista.com/negocios/con-una-inversion-de-us-95-millones-gnv-group-arranco-la-construccion-de-una-torre-residencial-de-33-pisos"
+   },
+   {
+    "claim": "Delivery December 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cronista.com/negocios/con-una-inversion-de-us-95-millones-gnv-group-arranco-la-construccion-de-una-torre-residencial-de-33-pisos"
+   },
+   {
+    "claim": "Units from USD 197,000 (about USD 5,000/m2)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cronista.com/negocios/con-una-inversion-de-us-95-millones-gnv-group-arranco-la-construccion-de-una-torre-residencial-de-33-pisos"
+   },
+   {
+    "claim": "About 45% of units pre-sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cronista.com/negocios/con-una-inversion-de-us-95-millones-gnv-group-arranco-la-construccion-de-una-torre-residencial-de-33-pisos"
+   },
+   {
+    "claim": "USD 95m investment across Osten Towers I and II",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cronista.com/negocios/con-una-inversion-de-us-95-millones-gnv-group-arranco-la-construccion-de-una-torre-residencial-de-33-pisos"
+   },
+   {
+    "claim": "Osten Tower I sold out and due end 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cronista.com/negocios/con-una-inversion-de-us-95-millones-gnv-group-arranco-la-construccion-de-una-torre-residencial-de-33-pisos"
+   },
+   {
+    "claim": "Building permit (permiso de obra) number published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cronista.com/negocios/con-una-inversion-de-us-95-millones-gnv-group-arranco-la-construccion-de-una-torre-residencial-de-33-pisos"
+   },
+   {
+    "claim": "Buyer funds protected in a fideicomiso",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cronista.com/negocios/con-una-inversion-de-us-95-millones-gnv-group-arranco-la-construccion-de-una-torre-residencial-de-33-pisos"
+   },
+   {
+    "claim": "GNV has delivered previous residential towers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.cronista.com/negocios/con-una-inversion-de-us-95-millones-gnv-group-arranco-la-construccion-de-una-torre-residencial-de-33-pisos"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Buenos Aires, Argentina",
+   "developer_company": "GNV Group (president and founder Alejandro Ginevra); legal entity not published",
+   "developer_projects_delivered": 0,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-03",
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": 40,
+   "size_max_m2": 310,
+   "price_min": 197000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 30,
+   "payment_plan": "30% on signing, payments at floor 10 and 20 slabs, instalments during construction",
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Osten",
+   "amenities": [
+    "wellness center",
+    "spa",
+    "business center",
+    "padel court",
+    "pickleball court"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Gobierno de la Ciudad de Buenos Aires (permiso de obra)",
+   "brochure_url": null
+  },
+  "verified_score": 1
  }
 ]
