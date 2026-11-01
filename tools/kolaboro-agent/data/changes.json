@@ -1427,5 +1427,97 @@
     289900
    ]
   }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "natha-loka",
+  "name": "Natha Loka Eco Village",
+  "changed": {
+   "advertised_yield_pct": [
+    14,
+    7
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "ebruli-basaksehir",
+  "name": "Ebruli Başakşehir",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Devlet Güvenceli Yatırım",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "al-mare-green-midtown-group",
+  "name": "Al Mare Green",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9464,
+    9466
+   ],
+   "plans_published": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "bansko-complex-near-ski-lift-suprimmo",
+  "name": "New residential complex near the ski lift, Bansko",
+  "changed": {
+   "price_from": [
+    55143,
+    43446
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "sky-tower-first-projects",
+  "name": "Sky Tower",
+  "changed": {
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "boavista-tower-porto-mesmo-valor",
+  "name": "Boavista Tower",
+  "changed": {
+   "price_from": [
+    289900,
+    489900
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "udaondo-buenos-aires-landmark-developments",
+  "name": "Udaondo Buenos Aires",
+  "changed": {
+   "escrow_or_guarantee": [
+    "El grupo, a través del Fideicomiso Buenos Aires Landmark, compró en una subasta pública el terreno del ex Tiro Federal por u$s 150 millones.",
+    "Fideicomiso Buenos Aires Landmark (named as the vehicle that bought the ex Tiro Federal land at public auction in 2018; no buyer escrow described)"
+   ]
+  }
  }
 ]
