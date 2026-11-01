@@ -2933,5 +2933,832 @@
     null
    ]
   }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "samani-villa-pecatu-phase-2",
+  "name": "Samani Villa Pecatu (Phase 2)",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "grand-solaire-pattaya",
+  "name": "Grand Solaire Pattaya",
+  "changed": {
+   "guaranteed_language": [
+    null,
+    false
+   ],
+   "completion_year": [
+    null,
+    2026
+   ],
+   "permit_claim": [
+    null,
+    false
+   ],
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "the-crest-samui",
+  "name": "The Crest Residences",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "copacabana-coral-reef-jomtien",
+  "name": "Copacabana Coral Reef Jomtien",
+  "changed": {
+   "title_type": [
+    null,
+    "freehold"
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "hunab-ku-sanctuary-tulum",
+  "name": "Hunab-Ku Sanctuary",
+  "changed": {
+   "price_from": [
+    null,
+    176000
+   ],
+   "currency": [
+    null,
+    "USD"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "morros-vita-serena-del-mar",
+  "name": "Morros Vita",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Fiduciary scheme administered by Alianza Fiduciaria; buyers linked to the fiduciario scheme",
+    "Alianza Fiduciaria, entidad encargada de velar por la correcta administración de los recursos; vinculación de compradores al esquema fiduciario"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "one-seputeh-residences-kl",
+  "name": "One Seputeh Residences",
+  "changed": {
+   "completion_year": [
+    2030,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "crown-penang",
+  "name": "Crown Penang",
+  "changed": {
+   "price_from": [
+    129536,
+    783000
+   ],
+   "currency": [
+    "GBP",
+    "MYR"
+   ],
+   "completion_year": [
+    2029,
+    2028
+   ],
+   "permit_claim": [
+    false,
+    true
+   ],
+   "permit_number": [
+    null,
+    "MBPP/OSC-PB307/2024"
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "krrish-square-colombo",
+  "name": "Krrish Square",
+  "changed": {
+   "title_type": [
+    null,
+    "leasehold"
+   ],
+   "lease_years_base": [
+    null,
+    99
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "ryowha-hirafu-luxury-resort-villas",
+  "name": "Ryowha Hirafu luxury resort and villas (unnamed)",
+  "changed": {
+   "completion_year": [
+    2028,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "visionnaire-residences-tower-limassol",
+  "name": "Visionnaire Residences Tower",
+  "changed": {
+   "price_from": [
+    875000,
+    null
+   ],
+   "currency": [
+    "EUR",
+    null
+   ],
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "caesar-blue-quatro-villas-iskele",
+  "name": "Caesar Blue Quatro Villas",
+  "changed": {
+   "guaranteed_language": [
+    false,
+    true
+   ],
+   "completion_year": [
+    2025,
+    null
+   ],
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "dubovica-budva-residential-complex",
+  "name": "New residential complex in Dubovica",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "top-hill-residence-novigrad",
+  "name": "Top Hill Residence I & II",
+  "changed": {
+   "price_from": [
+    null,
+    233310
+   ],
+   "currency": [
+    null,
+    "EUR"
+   ],
+   "permit_claim": [
+    false,
+    true
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "bashayer-modon-hudayriyat",
+  "name": "Bashayer",
+  "changed": {
+   "price_from": [
+    2350000,
+    2500000
+   ],
+   "advertised_yield_pct": [
+    5,
+    null
+   ],
+   "completion_year": [
+    2029,
+    2030
+   ],
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "hayat-flora-kucukcekmece",
+  "name": "Hayat Flora",
+  "changed": {
+   "completion_year": [
+    null,
+    2029
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "ebruli-basaksehir",
+  "name": "Ebruli Başakşehir",
+  "changed": {
+   "price_from": [
+    281000,
+    null
+   ],
+   "currency": [
+    "USD",
+    null
+   ],
+   "guaranteed_language": [
+    true,
+    false
+   ],
+   "advertised_yield_pct": [
+    6,
+    null
+   ],
+   "completion_year": [
+    2027,
+    null
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "altintas-700-unit-project-aksu",
+  "name": "700-apartment project in Altıntaş (Altıntaş Park Yaşam listing)",
+  "changed": {
+   "price_from": [
+    82777,
+    null
+   ],
+   "currency": [
+    "GBP",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "hacienda-ras-el-hekma",
+  "name": "Hacienda Ras El Hekma",
+  "changed": {
+   "price_from": [
+    11000000,
+    null
+   ],
+   "currency": [
+    "EGP",
+    null
+   ],
+   "completion_year": [
+    2030,
+    null
+   ],
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "ogami-nobu-ras-el-hekma",
+  "name": "Ogami (Nobu)",
+  "changed": {
+   "price_from": [
+    17000000,
+    18843300
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "katameya-coast-phase-2",
+  "name": "Katameya Coast Phase 2",
+  "changed": {
+   "price_from": [
+    11000000,
+    null
+   ],
+   "currency": [
+    "EGP",
+    null
+   ],
+   "completion_year": [
+    2030,
+    null
+   ],
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "crystal-garden-cap-cana-gesproin",
+  "name": "Crystal Garden Cap Cana",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "ora-by-casa-tua-fortune",
+  "name": "ORA by Casa Tua",
+  "changed": {
+   "price_from": [
+    null,
+    900000
+   ],
+   "currency": [
+    null,
+    "USD"
+   ],
+   "completion_year": [
+    null,
+    2030
+   ],
+   "plans_published": [
+    false,
+    true
+   ],
+   "escrow_or_guarantee": [
+    null,
+    "Deposits held in a non-interest-bearing escrow account; Escrow and Title Agent: First American Title"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "querencia-dovec-group",
+  "name": "Querencia",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "avrupa-konutlari-gunesli-artas",
+  "name": "Avrupa Konutları Güneşli",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "yalikavak-loft-akfen-gyo",
+  "name": "Yalıkavak Loft (Muğla Yalıkavak Bodrum Project)",
+  "changed": {
+   "permit_claim": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9471,
+    9472
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "becici-sea-view-building-value-one",
+  "name": "New residential building 200 m from Bečići beach (building 5)",
+  "changed": {
+   "price_from": [
+    203831,
+    217827
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "skypark-lucean-jomtien-lunique",
+  "name": "Skypark Lucean Jomtien Pattaya",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "nine-collective-wasl",
+  "name": "Nine Collective",
+  "changed": {
+   "price_from": [
+    null,
+    4400000
+   ],
+   "currency": [
+    null,
+    "AED"
+   ],
+   "title_type": [
+    null,
+    "freehold"
+   ],
+   "guaranteed_language": [
+    null,
+    false
+   ],
+   "completion_year": [
+    null,
+    2030
+   ],
+   "permit_claim": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "elaris-sky-object-1",
+  "name": "ELAR1S Sky (Elaris Sky)",
+  "changed": {
+   "permit_number": [
+    "#4019",
+    "4019"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "casa-blake-costa-palmas-irongate",
+  "name": "Casa Blake at Costa Palmas",
+  "changed": {
+   "currency": [
+    null,
+    "USD"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "macaria-puerto-vallarta-grupo-origen",
+  "name": "Macaria",
+  "changed": {
+   "guaranteed_language": [
+    null,
+    false
+   ],
+   "permit_claim": [
+    null,
+    false
+   ],
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "ozalia-temozon-grupo-acber",
+  "name": "Ozalia Temozón",
+  "changed": {
+   "price_from": [
+    null,
+    1879000
+   ],
+   "currency": [
+    null,
+    "MXN"
+   ],
+   "completion_year": [
+    null,
+    2029
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "alliance-centropolis-alliance-group",
+  "name": "Alliance Centropolis",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "armani-residences-masaryk-mira",
+  "name": "Armani Residences Masaryk",
+  "changed": {
+   "completion_year": [
+    null,
+    2027
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "raseljkina-pazdigrad-quatro-company",
+  "name": "Rašeljkina",
+  "changed": {
+   "completion_year": [
+    null,
+    2026
+   ],
+   "permit_claim": [
+    false,
+    true
+   ],
+   "permit_number": [
+    null,
+    "Klasa: UP/I-361-03/23-01/000166"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "the-court-carvoeiro-carvoeiro-branco",
+  "name": "The Court",
+  "changed": {
+   "guaranteed_language": [
+    false,
+    true
+   ],
+   "advertised_yield_pct": [
+    null,
+    5
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "boavista-tower-porto-mesmo-valor",
+  "name": "Boavista Tower",
+  "changed": {
+   "price_from": [
+    289900,
+    489900
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "penha-living-bolder-addsolid",
+  "name": "Penha Living Bolder",
+  "changed": {
+   "price_from": [
+    null,
+    260000
+   ],
+   "currency": [
+    null,
+    "EUR"
+   ],
+   "completion_year": [
+    null,
+    2027
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "perlita-gardens-udc",
+  "name": "Perlita Gardens",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "the-anti-galerie-hotel-trazos-urbanos",
+  "name": "The Anti Galerie Hotel",
+  "changed": {
+   "price_from": [
+    null,
+    535820000
+   ],
+   "currency": [
+    null,
+    "COP"
+   ],
+   "guaranteed_language": [
+    false,
+    true
+   ],
+   "completion_year": [
+    null,
+    2026
+   ],
+   "escrow_or_guarantee": [
+    null,
+    "Fiducia Backed by Alianza Fiduciaria"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "aila-sunset-residences-rodney-bay",
+  "name": "Sunset Residences at A'ILA Resorts",
+  "changed": {
+   "price_from": [
+    null,
+    559000
+   ],
+   "currency": [
+    null,
+    "USD"
+   ],
+   "guaranteed_language": [
+    false,
+    true
+   ],
+   "advertised_yield_pct": [
+    null,
+    8
+   ],
+   "completion_year": [
+    null,
+    2026
+   ],
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "udaondo-buenos-aires-landmark-developments",
+  "name": "Udaondo Buenos Aires",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Fideicomiso Buenos Aires Landmark (mentioned as the vehicle that bought the land at a 2018 public auction; no buyer escrow or guarantee described)",
+    "Fideicomiso Buenos Aires Landmark (named as the trust that bought the land at a 2018 public auction; no buyer escrow or guarantee mentioned)"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "ritz-carlton-reserve-residences-cotton-bay",
+  "name": "Ritz-Carlton Reserve Residences at Cotton Bay",
+  "changed": {
+   "completion_year": [
+    null,
+    2027
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "priors-gate-birmingham-bunnywell-homes",
+  "name": "Priors Gate",
+  "changed": {
+   "title_type": [
+    null,
+    "leasehold"
+   ],
+   "lease_years_base": [
+    null,
+    999
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "marina-bay-city-marketed-as-nesara-bay-city-by-lux-property",
+  "name": "Marina Bay City (marketed as Nesara Bay City by LUX Property Group)",
+  "changed": {
+   "price_from": [
+    null,
+    25000
+   ],
+   "currency": [
+    null,
+    "AUD"
+   ],
+   "advertised_yield_pct": [
+    null,
+    20
+   ],
+   "permit_claim": [
+    false,
+    true
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "ashiyana-heights-phuket",
+  "name": "Ashiyana Heights",
+  "changed": {
+   "price_from": [
+    null,
+    2990000
+   ],
+   "currency": [
+    null,
+    "THB"
+   ],
+   "completion_year": [
+    null,
+    2028
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "etro-residences-phuket-gardens-of-eden-phuket",
+  "name": "ETRO Residences Phuket (Gardens of Eden)",
+  "changed": {
+   "guaranteed_language": [
+    null,
+    false
+   ],
+   "permit_claim": [
+    null,
+    false
+   ],
+   "plans_published": [
+    null,
+    false
+   ]
+  }
  }
 ]

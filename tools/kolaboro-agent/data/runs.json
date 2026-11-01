@@ -133,5 +133,14 @@
   "changes": 46,
   "model": "claude-haiku-5-5",
   "usd_estimate": 0.799
+ },
+ {
+  "date": "2026-11-01",
+  "mode": "ai",
+  "pages_ok": 572,
+  "pages_failed": 74,
+  "changes": 49,
+  "model": "claude-haiku-5-5",
+  "usd_estimate": 0.841
  }
 ]
