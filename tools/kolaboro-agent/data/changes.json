@@ -1519,5 +1519,119 @@
     "Fideicomiso Buenos Aires Landmark (named as the vehicle that bought the ex Tiro Federal land at public auction in 2018; no buyer escrow described)"
    ]
   }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "natha-loka",
+  "name": "Natha Loka Eco Village",
+  "changed": {
+   "advertised_yield_pct": [
+    7,
+    14
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "secret-inshi",
+  "name": "SECRET by INSHI",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9466,
+    9467
+   ],
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "rhea-by-sansiri",
+  "name": "Rhea by Sansiri",
+  "changed": {
+   "title_type": [
+    "leasehold",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "nasim-al-bahr-residences-adnh",
+  "name": "Nasim Al Bahr Residences (The Luxury Collection)",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "oystra-richmind",
+  "name": "Oystra",
+  "changed": {
+   "price_from": [
+    2400000,
+    2586888
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "gianfranco-ferre-residences-mira",
+  "name": "Gianfranco Ferré Residences",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "botanica-luxury-krabi",
+  "name": "Botanica Luxury Krabi",
+  "changed": {
+   "price_from": [
+    493657,
+    493658
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "the-ivory-chang-phueak-home-development-group",
+  "name": "The IVORY",
+  "changed": {
+   "title_type": [
+    null,
+    "freehold"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "udaondo-buenos-aires-landmark-developments",
+  "name": "Udaondo Buenos Aires",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Fideicomiso Buenos Aires Landmark (named as the vehicle that bought the ex Tiro Federal land at public auction in 2018; no buyer escrow described)",
+    "Fideicomiso Buenos Aires Landmark, used by the developer to buy the land in 2018. No buyer escrow or guarantee mentioned."
+   ]
+  }
  }
 ]
