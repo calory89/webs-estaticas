@@ -1,5 +1,374 @@
 [
  {
+  "slug": "serenity-village",
+  "name": "Serenity Village",
+  "developer": "Global Bali Home",
+  "area": "Wanayu, Bedulu (near Ubud)",
+  "country": "Indonesia",
+  "market": "Bali",
+  "url": "https://www.globalbalihome.com/project-serenity-village.html",
+  "docs_url": "https://www.globalbalihome.com/project-serenity-village.html",
+  "invited": "2026-10-28",
+  "added": "2026-10-31",
+  "status": "active",
+  "stage": "off-plan",
+  "docs_listed": [
+   "25 villas (1-2 BR), 6 of 25 available",
+   "entry from Rp 2.27-2.3B",
+   "handover Q3 2027",
+   "notarized 30-year leasehold with extension rights",
+   "construction insured (Allianz named as insurance partner: contractors all-risk, property, liability)",
+   "shared infinity pool and onsite cafe",
+   "10-15% annual yield and ~80% occupancy (homepage)",
+   "page last updated May 2026"
+  ],
+  "note": "25-villa entry-level complex in the Wanayu area near Ubud by Global Bali Home from Rp 2.27B, Q3 2027 handover, on a notarized 30-year lease with extension rights and Allianz construction insurance. The developer was founded in 2023 and has no completed project yet; its first project, Serenity Villas, was promised for Q2 2026 on its homepage and is now listed by an agent for September 2026. No permit number, escrow, progress or floor plans published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 2270000000,
+   "currency": "IDR",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "extension rights (developer); agent listing: 30+30 with extension 'guaranteed with a prepaid deposit'",
+   "guaranteed_language": false,
+   "yield_pct": 15,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 25,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Handover Q3 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.globalbalihome.com/project-serenity-village.html"
+   },
+   {
+    "claim": "Notarized 30-year leasehold with extension rights",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.globalbalihome.com/project-serenity-village.html"
+   },
+   {
+    "claim": "Construction insured with Allianz (contractors all-risk)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.globalbalihome.com/about.html"
+   },
+   {
+    "claim": "Developer has delivered a completed project",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.globalbalihome.com/about.html"
+   },
+   {
+    "claim": "First project Serenity Villas handover Q2 2026 (homepage) vs construction completion September 2026 (agent listing)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://bali.realestate/property/o17216/"
+   },
+   {
+    "claim": "43 villas in portfolio (homepage) vs 42 villas designed and under development (About page)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.globalbalihome.com/about.html"
+   },
+   {
+    "claim": "10-15% annual yield, ~80% occupancy",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.globalbalihome.com"
+   },
+   {
+    "claim": "Land zoned Orange R-4 for tourism (agent listing)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bali.realestate/property/o17245/"
+   },
+   {
+    "claim": "Building permit (PBG) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.globalbalihome.com/project-serenity-village.html"
+   },
+   {
+    "claim": "Founder is a Wall Street veteran with 25+ years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.globalbalihome.com/about.html"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2023,
+   "developer_hq": "Jl. Raya Wanayu No.13, Bedulu, Blahbatuh, Gianyar, Bali, Indonesia (per agent listing)",
+   "developer_company": null,
+   "developer_projects_delivered": 0,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR villa",
+    "2BR villa"
+   ],
+   "size_min_m2": 50,
+   "size_max_m2": 84,
+   "price_min": 2270000000,
+   "price_max": null,
+   "currency": "IDR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Notarized leasehold 30 years with extension rights",
+   "rental_programme": "BaliSuperHost management; 10-15% projected yield, ~80% occupancy (no guarantee)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "shared infinity pool",
+    "onsite cafe",
+    "private pool (agent listing)",
+    "co-working",
+    "waterfall trails"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Gianyar Regency (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": "Allianz construction insurance (contractors all-risk, property, liability) stated; no escrow, bank guarantee or deposit insurance",
+   "progress": "Only 'Last updated: May 2026' page stamp; no construction updates",
+   "plans": "No floor plans; 'Layouts & Interiors' is a photo gallery",
+   "record": "About page: 'three years on the ground', '42 villas designed & under development'; partner contractors' past resorts listed, no completed Global Bali Home project",
+   "returns": "Homepage '10-15% annual yield', '~80% projected occupancy'; no guarantee wording"
+  },
+  "positives": [
+   "Notarized lease with extension rights stated",
+   "Construction insurance partner named",
+   "Unit availability shown"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.globalbalihome.com/project-serenity-village.html",
+   "https://www.globalbalihome.com",
+   "https://www.globalbalihome.com/about.html",
+   "https://bali.realestate/property/o17245/",
+   "https://bali.realestate/property/o17216/"
+  ],
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "suku-residences",
+  "name": "Suku Residences",
+  "developer": "Balitecture",
+  "area": "Uluwatu",
+  "country": "Indonesia",
+  "market": "Bali",
+  "url": "https://www.balitecture.com/developments/suku-residences",
+  "docs_url": "https://www.balitecture.com/developments/suku-residences",
+  "invited": "2026-10-28",
+  "added": "2026-10-31",
+  "status": "active",
+  "stage": "off-plan",
+  "docs_listed": [
+   "9 villas, 7 reserved; 3BR from $355,000 (236 m2), 4BR $649,000 (312 m2)",
+   "build 108-312 m2, land 105-358 m2",
+   "lease 30+30 years",
+   "start early 2026, completion mid 2027",
+   "site plan and aerial context",
+   "$5,000 deposit to reserve",
+   "Pink Zone (tourism) claim",
+   "12-18% projected yields, 15-20% off-plan appreciation"
+  ],
+  "note": "Nine-villa wellness community in Uluwatu by Balitecture from $355,000 on a 30+30-year lease, with 7 of 9 reserved, construction start 'early 2026' and completion mid 2027, though the page still says 'pre-sale open, first in at pre-construction pricing'. Balitecture names six sold-out past developments; no permit number, escrow, progress or floor plans are published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 355000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "+30 years (30+30)",
+   "guaranteed_language": false,
+   "yield_pct": 18,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Balitecture 'Past Developments' marked Sold Out: Dasa Uluwatu (12 villas, page says completed), Casa Uluwatu (8), Desa Hut (7), Sapta Cemagi (7), Casa Cemagi, Tukad Huts",
+   "units": 9,
+   "payment_plan": "$5,000 reservation deposit; balance schedule not published on page",
+   "price_per_m2": 1504
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction start early 2026, completion mid 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.balitecture.com/developments/suku-residences"
+   },
+   {
+    "claim": "Still at pre-sale / pre-construction pricing (Oct 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.balitecture.com/developments/suku-residences"
+   },
+   {
+    "claim": "7 of 9 villas reserved",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.balitecture.com/developments/suku-residences"
+   },
+   {
+    "claim": "Pink Zone, 'fully licensed for tourist accommodation'",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.balitecture.com/developments/suku-residences"
+   },
+   {
+    "claim": "30+30 year leasehold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.balitecture.com/developments/suku-residences"
+   },
+   {
+    "claim": "Dasa Uluwatu (12 villas) completed and sold out",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.balitecture.com/developments/dasa-uluwatu"
+   },
+   {
+    "claim": "Dasa Uluwatu won a 2025 International Property Award",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.balitecture.com/developments/dasa-uluwatu"
+   },
+   {
+    "claim": "Price from $355,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.balitecture.com/developments/suku-residences"
+   },
+   {
+    "claim": "Projected yields 12-18%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.balitecture.com/developments/suku-residences"
+   },
+   {
+    "claim": "Building permit (PBG) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.balitecture.com/developments/suku-residences"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Jl. Pemelisan Agung, Tibubeneng, Badung, Bali, Indonesia",
+   "developer_company": null,
+   "developer_projects_delivered": 6,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR villa",
+    "4BR villa"
+   ],
+   "size_min_m2": 108,
+   "size_max_m2": 312,
+   "price_min": 355000,
+   "price_max": 649000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": "$5,000 reservation deposit",
+   "foreign_ownership": "Leasehold 30 years + 30 years extension",
+   "rental_programme": "Balitecture management available; 12-18% projected yields (no guarantee)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pool",
+    "butler service",
+    "beach shuttle",
+    "24/7 security",
+    "sauna and ice bath (4BR)",
+    "concierge"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Badung Regency (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": "'Pink Zone - legally licensed for short-term rentals'; no permit number",
+   "escrow": "Only a $5,000 reservation deposit described",
+   "progress": "No construction updates; page still says 'Pre-sale open'",
+   "plans": "Site plan and aerial context only",
+   "record": "balitecture.com/portfolio 'Past Developments' marked Sold Out; Dasa Uluwatu page 'Sold Out - Completed'",
+   "returns": "'12-18% projected yields'; no guarantee wording"
+  },
+  "positives": [
+   "Lease term and extension stated (30+30)",
+   "Completed prior developments named",
+   "Unit sizes and prices per type published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.balitecture.com/developments/suku-residences",
+   "https://www.balitecture.com/portfolio",
+   "https://www.balitecture.com/developments/dasa-uluwatu"
+  ],
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
   "slug": "temple-heights",
   "name": "Temple Heights",
   "developer": "Investland Bali",
@@ -191,6 +560,196 @@
    "https://investlandbali.com/listing/amari-villas-i",
    "https://www.adaur.ee/eestlased-muusid-balil-kaks-suurt-arendust-valja-ja-kaivitasid-uued-ehitusetapid/",
    "https://arileht.delfi.ee/artikkel/120407465/eesti-ettevotjad-avasid-bali-saarel-kontori-ning-kaivitasid-seal-ka-uue-ehitusfirma"
+  ],
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "vodopad",
+  "name": "VODOPAD",
+  "developer": "MOVE Property Group",
+  "area": "Kedewatan, Ubud",
+  "country": "Indonesia",
+  "market": "Bali",
+  "url": "https://movepropertygroup.com",
+  "docs_url": "https://movepropertygroup.com",
+  "added": "2026-10-31",
+  "status": "active",
+  "stage": "under construction",
+  "docs_listed": [
+   "22 apartments, 34-55 m2, from $69,000 (studio), $82,000 panoramic, $89,000 two-room",
+   "readiness 95%, handover 2026",
+   "leasehold 30 years + 25 extension",
+   "yield scenarios 11.5-18.5% (realistic 14.9%)",
+   "site plan aerial view",
+   "address and GPS coordinates (Jl. Mpu Tantular, Kedewatan)",
+   "portfolio of built and operating projects in Ubud (AURA, GANIYAR, KELIKI, MASON Ubud)"
+  ],
+  "note": "22-apartment boutique residence by a waterfall in Kedewatan, Ubud by MOVE Property Group, from $69,000, stated 95% ready with 2026 handover and a 30+25-year lease. MOVE names four operating Ubud projects but says '5 delivered'; portals list 21 units and Q2 2027 completion, and the page says 'returns are ensured' ('доходность обеспечена'); no permit number, escrow or unit floor plans (checked 31 Oct 2026)",
+  "seed": {
+   "price": 69000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "+25 years (30+25)",
+   "guaranteed_language": true,
+   "yield_pct": 14.9,
+   "completion": "2026",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 95,
+   "developer_delivered": "MOVE portfolio 'already built and operating in Ubud': AURA Apartments (8 units), GANIYAR townhouses (3), KELIKI Apartments (4), MASON Ubud boutique hotel (5 rooms); site also says '5 delivered projects'",
+   "units": 22,
+   "payment_plan": null,
+   "price_per_m2": 2029
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "none",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction 95% complete, handover 2026",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://vodopad-ubud.com/"
+   },
+   {
+    "claim": "22 apartments (portals: 21 units)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/ubud/vodopad-ubud"
+   },
+   {
+    "claim": "Leasehold 30 + 25 years (one portal lists freehold)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://bali.realestate/property/vodopad-8154/"
+   },
+   {
+    "claim": "Founded on Bali in 2020 (portal says 2015)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://rumavi.com/en/new-developments/indonesia/ubud/vodopad-ubud"
+   },
+   {
+    "claim": "5 delivered projects (only 4 named)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://movepropertygroup.com"
+   },
+   {
+    "claim": "AURA, GANIYAR, KELIKI and MASON Ubud built and operating",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://movepropertygroup.com"
+   },
+   {
+    "claim": "Returns ensured ('Капитал размещён - доходность обеспечена')",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://movepropertygroup.com"
+   },
+   {
+    "claim": "Realistic yield 14.9%, 62.5% value growth after completion",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://movepropertygroup.com"
+   },
+   {
+    "claim": "Price from $69,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://movepropertygroup.com"
+   },
+   {
+    "claim": "Pink zone land with independent due diligence (developer brochure)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://movepropertygroup.com"
+   },
+   {
+    "claim": "Building permit (PBG) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://movepropertygroup.com"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2020,
+   "developer_hq": "Ubud, Bali, Indonesia",
+   "developer_company": null,
+   "developer_projects_delivered": 4,
+   "developer_units_delivered": 20,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio 34 m2",
+    "panoramic studio 40 m2",
+    "2-room 55 m2"
+   ],
+   "size_min_m2": 34,
+   "size_max_m2": 55,
+   "price_min": 69000,
+   "price_max": 89000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Leasehold 30 years + 25 years extension",
+   "rental_programme": "Management company chosen by tender before completion; scenarios 11.5-18.5%, 'returns ensured' wording",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "pool",
+    "gym",
+    "tropical garden",
+    "reception and concierge",
+    "24/7 security",
+    "waterfall setting"
+   ],
+   "lat": -8.482,
+   "lng": 115.25,
+   "permit_authority": "Gianyar Regency (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Page states 'Готовность 95%' and 'Сдача 2026'; portals (vodopad-ubud.com, Rumavi) give completion Q2 2027",
+   "plans": "Unit types with areas and an aerial site plan; no unit floor-plan drawings",
+   "record": "Portfolio block lists AURA, GANIYAR, KELIKI and MASON Ubud as built and operating, with occupancy figures",
+   "returns": "Management section: 'Капитал размещён - доходность обеспечена' (capital placed, returns ensured) and 'гарантия дальнейшего успешного управления'"
+  },
+  "positives": [
+   "Construction 95% complete per developer",
+   "Four completed and operating developer projects named",
+   "Exact address and coordinates published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://movepropertygroup.com",
+   "https://vodopad-ubud.com/",
+   "https://rumavi.com/en/new-developments/indonesia/ubud/vodopad-ubud",
+   "https://bali.realestate/property/vodopad-8154/"
   ],
   "verified_score": 0,
   "permit_number": null
@@ -2480,6 +3039,192 @@
    "https://kalunadevelopment.com/about-us/",
    "https://kalunadevelopment.com/",
    "https://impalarealestate.com/off-plan/developers/kaluna-development/"
+  ],
+  "verified_score": 0,
+  "permit_number": null
+ },
+ {
+  "slug": "samani-villa-pecatu-phase-2",
+  "name": "Samani Villa Pecatu (Phase 2)",
+  "developer": "Miraland",
+  "area": "Pecatu, Uluwatu",
+  "country": "Indonesia",
+  "market": "Bali",
+  "url": "https://samanivillapecatu.com/",
+  "docs_url": "https://miraland.id/wp-content/uploads/2026/03/PRICE-LIST-WEB.pdf",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "under construction",
+  "docs_listed": [
+   "Phase 2: 7 Modern and 3 Luxury villas; Phase 1 sold out",
+   "unit floor plans (denah): Swastika 147 m2 / 140 m2 land, Maheswara 364/435 m2, Juwita Ningrat 505/600 m2",
+   "price list PDF (Mar 2026): Swastika from Rp 4.662B freehold (SHM) or $281,833 leasehold; Maheswara Rp 14.02B; Juwita Ningrat Rp 20.01B",
+   "price includes PBG & SLF, SHM, furniture",
+   "site meta: '30 unit ... dijual lengkap IMB'",
+   "purchase roadmap PDF: SPR, SPPJB, staged DP + VAT, construction per schedule, AJB, certificate name transfer",
+   "projected ROI section"
+  ],
+  "note": "Phase 2 of Samani Villa Pecatu by PT Miraland, 10 villas 30 m from Jalan Raya Uluwatu, from Rp 4.662B freehold (SHM, Indonesian buyers) or $281,833 leasehold, with unit floor plans, a price list that says PBG and SLF are included, and a purchase roadmap ending in certificate transfer. Antara and local press reported Phase 1 sold out in four months and 60% built in Feb 2025; no permit number, escrow or dated Phase 2 progress (checked 31 Oct 2026)",
+  "seed": {
+   "price": 4662000000,
+   "currency": "IDR",
+   "title": "freehold (SHM) for Indonesian buyers; leasehold price in USD for foreigners",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 10,
+   "payment_plan": "Booking fee (SPR), SPPJB, staged down payment plus VAT, construction per agreed terms, AJB at handover; KPR mortgage possible (roadmap PDF)",
+   "price_per_m2": 31714286
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Phase 1 sold out within four months of its Feb 2024 launch",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://updatebali.com/miraland-resmi-luncurkan-proyek-tahap-kedua-samani-villa-pecatu-dengan-desain-modern-tropis/"
+   },
+   {
+    "claim": "Phase 1 had 22 units (developer page) vs 23 units (Antara)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://bali.antaranews.com/berita/370901/pengembang-lokal-baca-tren-minat-wisatawan-beli-vila-hijau-dan-anti-banjir"
+   },
+   {
+    "claim": "Phase 1 construction 60% and on schedule (Feb 2025)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://updatebali.com/miraland-resmi-luncurkan-proyek-tahap-kedua-samani-villa-pecatu-dengan-desain-modern-tropis/"
+   },
+   {
+    "claim": "Samani is Miraland's fourth project",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://updatebali.com/miraland-resmi-luncurkan-proyek-tahap-kedua-samani-villa-pecatu-dengan-desain-modern-tropis/"
+   },
+   {
+    "claim": "Price includes PBG and SLF (building permit and occupancy certificate)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://miraland.id/wp-content/uploads/2026/03/PRICE-LIST-WEB.pdf"
+   },
+   {
+    "claim": "Villas sold 'complete with IMB'",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samanivillapecatu.com/"
+   },
+   {
+    "claim": "Freehold SHM title transferred to buyer via notary",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samanivillapecatu.com/wp-content/uploads/2025/03/Roadmap-Proses-pembelian-properti-Update.pdf"
+   },
+   {
+    "claim": "Price from Rp 4.662B (press in Feb 2025 quoted about Rp 1-2B per unit)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://bali.antaranews.com/berita/370901/pengembang-lokal-baca-tren-minat-wisatawan-beli-vila-hijau-dan-anti-banjir"
+   },
+   {
+    "claim": "Projected ROI (figure not in page text)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samanivillapecatu.com/"
+   },
+   {
+    "claim": "Deposit protected in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samanivillapecatu.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Jalan Pura Tangi Pecatu, Kuta Selatan, Badung, Bali, Indonesia",
+   "developer_company": "PT Miraland (registration number not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR Swastika",
+    "4BR Maheswara",
+    "5+2BR Juwita Ningrat"
+   ],
+   "size_min_m2": 147,
+   "size_max_m2": 505,
+   "price_min": 4662000000,
+   "price_max": 20007550000,
+   "currency": "IDR",
+   "deposit_pct": null,
+   "payment_plan": "SPR booking, SPPJB, staged DP plus VAT, AJB at handover",
+   "foreign_ownership": "SHM freehold for Indonesians; separate USD leasehold price for foreigners (term not stated)",
+   "rental_programme": "Miraland property management; 'Proyeksi ROI' section",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pool",
+    "one gate system",
+    "24h security",
+    "cafe and co-working",
+    "lobby",
+    "villa maintenance"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Badung Regency (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": "Price list: 'Harga Termasuk ... PBG & SLF'; site meta '30 unit ... Dijual Lengkap IMB'; no permit number",
+   "escrow": null,
+   "progress": "Roadmap PDF only says construction follows the agreed schedule; press (Feb 2025) quoted Phase 1 at 60%; no dated Phase 2 updates",
+   "plans": "Unit pages show 'DENAH UNIT' floor plans (Swastika, Maheswara, Juwita Ningrat)",
+   "record": "Phase 1 sold out per press; no completed and handed-over Miraland project named",
+   "returns": "'Proyeksi ROI' section; no guarantee wording found"
+  },
+  "positives": [
+   "Unit floor plans and full price list published",
+   "Step-by-step purchase and title-transfer roadmap published",
+   "Independent press coverage of Phase 1 sales"
+  ],
+  "flags": [],
+  "sources": [
+   "https://samanivillapecatu.com/",
+   "https://samanivillapecatu.com/unit-swastika/",
+   "https://samanivillapecatu.com/wp-content/uploads/2025/03/Roadmap-Proses-pembelian-properti-Update.pdf",
+   "https://miraland.id/wp-content/uploads/2026/03/PRICE-LIST-WEB.pdf",
+   "https://bali.antaranews.com/berita/370901/pengembang-lokal-baca-tren-minat-wisatawan-beli-vila-hijau-dan-anti-banjir",
+   "https://updatebali.com/miraland-resmi-luncurkan-proyek-tahap-kedua-samani-villa-pecatu-dengan-desain-modern-tropis/"
   ],
   "verified_score": 0,
   "permit_number": null

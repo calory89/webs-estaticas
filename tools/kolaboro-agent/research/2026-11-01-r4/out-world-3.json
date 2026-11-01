@@ -1,0 +1,206 @@
+[
+ {
+  "slug": "riviera-tower-ellinikon",
+  "name": "Riviera Tower",
+  "developer": "Lamda Development",
+  "status": "sold out",
+  "stage": "under construction",
+  "area": "Ellinikon (former Elliniko airport), Athens Riviera",
+  "country": "Greece",
+  "market": "Greece",
+  "url": "https://www.iefimerida.gr/english/greeces-tallest-residential-tower-reaches-full-200-meter-height-shifts-interior",
+  "docs_url": "https://www.lamdadev.com/sites/default/files/2026-06/ld-annual-report-2025-1.pdf",
+  "permit_number": null,
+  "docs_listed": [
+   "building permit issued August 2022 (date only, no number)",
+   "foundations completed October 2023",
+   "44th floor reached March 2026, triggering a c. EUR 60m contractual payment (Lamda annual report 2025)",
+   "50th floor and full 200 m height reached (Q1 2026 results call, July 2026)",
+   "delivery to owners targeted summer 2027",
+   "architect Foster + Partners with Tombazis; engineer Buro Happold; contractor Bouygues Batiment International / AKTOR JV",
+   "LEED Gold target",
+   "all apartments sold before construction"
+  ],
+  "note": "50-storey, 200 m residential tower at The Ellinikon by Athens-listed Lamda Development; the frame topped out in mid-2026, works have moved to MEP and interiors and Lamda targets handover to owners in summer 2027. All roughly 170 apartments were pre-sold (press reports 170 to 173 units, average about EUR 3.66m and EUR 14,000/m2 per Axia data), so there is no primary stock left. No permit number or deposit protection is published. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": null,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Lamda Development (listed on Athens Exchange) operates four completed malls including The Mall Athens, Golden Hall and Mediterranean Cosmos plus Flisvos Marina, per its 2025 annual report; no residential handovers at Ellinikon yet",
+   "units": 170,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Press reports the building permit was issued in August 2022 after a multi-ministry approval, but no permit number is published by Lamda or the press",
+   "escrow": "No escrow, bank guarantee or deposit protection published; Greece has no mandatory off-plan escrow and none is stated",
+   "progress": "Dated milestones published by Lamda in audited annual report and results calls: foundations Oct 2023, 44th floor Mar 2026, 50th floor / 200 m mid-2026; a portal summary of the H1 2026 call quotes about 70% complete",
+   "plans": "No floor plans found for the tower; units are sold out and marketed only through press",
+   "record": "Lamda is listed on the Athens Exchange with audited accounts; it has built and operates several malls and marinas, though Ellinikon homes will be its first large residential deliveries",
+   "returns": "No rental or guaranteed-return language; units were sold to owner buyers"
+  },
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 3,
+  "claims": [
+   {
+    "claim": "Building permit issued in August 2022",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.iefimerida.gr/english/greeces-tallest-residential-tower-reaches-full-200-meter-height-shifts-interior"
+   },
+   {
+    "claim": "Building permit number published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.iefimerida.gr/english/greeces-tallest-residential-tower-reaches-full-200-meter-height-shifts-interior"
+   },
+   {
+    "claim": "Structure reached 50 floors / 200 m",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://exa.ai/library/markets/stocks/LAMDA/earnings/FY2026/Q1/transcript"
+   },
+   {
+    "claim": "44th floor milestone in March 2026 triggered a c. EUR 60m contractual payment",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.lamdadev.com/sites/default/files/2026-06/ld-annual-report-2025-1.pdf"
+   },
+   {
+    "claim": "All apartments sold out before construction",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.naftemporiki.gr/english/1974054/the-ellinikon-delivery-of-important-projects-will-begin-in-2027/"
+   },
+   {
+    "claim": "Number of apartments: 170",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.naftemporiki.gr/english/1974054/the-ellinikon-delivery-of-important-projects-will-begin-in-2027/"
+   },
+   {
+    "claim": "Average price about EUR 3.66m per unit and EUR 14,036/m2 (Axia data, 171 units, EUR 626m)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://instanews.gr/103253/ellada/meso-megethos-261-t-m-poso-kostizoyn-oi-polyteleis-katoikies-ston-oyranoxysti-toy-ellinikoy-poy-einai-sold-out.html"
+   },
+   {
+    "claim": "Delivery to owners in summer 2027",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://www.ot.gr/2026/03/07/english-edition/lamda-development-riviera-galleria-ready-in-spring-2027/"
+   },
+   {
+    "claim": "Contractor Bouygues Batiment International / AKTOR JV, design Foster + Partners",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.iefimerida.gr/english/greeces-tallest-residential-tower-reaches-full-200-meter-height-shifts-interior"
+   },
+   {
+    "claim": "Developer is a listed company with audited accounts",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.lamdadev.com/sites/default/files/2026-06/ld-annual-report-2025-1.pdf"
+   },
+   {
+    "claim": "Building costs rose after units were sold, margin below target (developer risk, not buyer)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.greekprops.com/areas/riviera-tower-athens/"
+   },
+   {
+    "claim": "Contractor page earlier showed 2026 delivery, now summer or end 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.greekprops.com/areas/riviera-tower-athens/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1977,
+   "developer_hq": "Maroussi, Athens, Greece",
+   "developer_company": "LAMDA Development S.A. (Athens Exchange: LAMDA)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Listed on Athens Exchange; audited annual report 2025 published",
+   "construction_start": "2023-05",
+   "handover_promised": "2027-Q3",
+   "original_handover": "2026 (contractor page as reported by GreekProps)",
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "4BR",
+    "penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold title open to foreigners in Greece; about 40% of Ellinikon homes sold to foreigners per Lamda",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "seafront location",
+    "LEED Gold target",
+    "landscaping by doxiadis+",
+    "Foster + Partners design"
+   ],
+   "lat": 37.866,
+   "lng": 23.731,
+   "permit_authority": "Hellenic Ministry of Environment and Energy / urban planning services (special Ellinikon framework)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Developer is an Athens-listed company with audited accounts",
+   "Dated construction milestones reported in filings and results calls",
+   "Frame complete at 200 m, interiors under way",
+   "Named top-tier contractor, architect and engineer",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.iefimerida.gr/english/greeces-tallest-residential-tower-reaches-full-200-meter-height-shifts-interior",
+   "https://www.lamdadev.com/sites/default/files/2026-06/ld-annual-report-2025-1.pdf",
+   "https://exa.ai/library/markets/stocks/LAMDA/earnings/FY2026/Q1/transcript",
+   "https://www.naftemporiki.gr/english/1974054/the-ellinikon-delivery-of-important-projects-will-begin-in-2027/",
+   "https://www.naftemporiki.gr/english/2076853/riviera-tower-the-tallest-green-residential-skyscraper-in-the-mediterranean-nears-completion-200-meters-high-and-170-apartments/",
+   "https://www.ot.gr/2026/03/07/english-edition/lamda-development-riviera-galleria-ready-in-spring-2027/",
+   "https://instanews.gr/103253/ellada/meso-megethos-261-t-m-poso-kostizoyn-oi-polyteleis-katoikies-ston-oyranoxysti-toy-ellinikoy-poy-einai-sold-out.html",
+   "https://www.athens24.com/news/ellinikon-draws-17000-buyer-inquiries-from-110-countries-whos-buying-and-why.html",
+   "https://www.greekprops.com/areas/riviera-tower-athens/"
+  ]
+ }
+]

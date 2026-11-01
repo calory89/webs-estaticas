@@ -1797,5 +1797,202 @@
    "https://habitarcaribe.com/suite-venta-serena-del-mar-cartagena-de-indias/9014126",
    "https://empresite.eleconomistaamerica.co/MORROS-7-SAS.html"
   ]
+ },
+ {
+  "slug": "reserva-natural-san-jose-natura-itagui",
+  "name": "Reserva Natural San José Natura",
+  "developer": "Acierto Inmobiliario",
+  "status": "stalled",
+  "stage": "under construction",
+  "area": "Nuevo Guayabal, Itagüí (Medellín metropolitan area), Antioquia",
+  "country": "Colombia",
+  "market": "Medellín",
+  "url": "https://www.elcolombiano.com/antioquia/alianza-fiduciaria-pagara-afectados-proyecto-san-jose-natura-itagui-HO39405417",
+  "docs_url": "https://acierto.com.co/proyectos/reserva-san-jose-natura/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer page still online: 3 towers of 30 floors, 63-68 m2 built (58-61 m2 private), 2-3BR",
+   "payment terms COP 2,000,000 reservation, 30% down payment, 70% before delivery",
+   "'avance de obra': stage 1 excavation, piles, pile caps and tie beams finished",
+   "fiducia with Alianza Fiduciaria (per court reports)"
+  ],
+  "note": "629-apartment non-VIS project in Itagüí due in 2023 whose works stopped in late 2022 with only foundations done; in July 2026 the Superintendencia Financiera (jurisdictional function) ordered Alianza Fiduciaria to refund one buyer's COP 67-70m with indexation, finding it kept releasing about COP 1,500m to a promoter with roughly COP 1m in capital after works stopped. Developer Acierto Inmobiliario has been in Supersociedades reorganization since 2022 with some 14,000 affected buyers across its projects; the project page is still online. (checked 1 Nov 2026)",
+  "added": "2026-10-30",
+  "seed": {
+   "price": null,
+   "currency": "COP",
+   "title": "freehold (propiedad horizontal), never deeded to buyers",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2023 (original; works halted late 2022)",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "Buyer payments went into a fiducia administered by Alianza Fiduciaria; the regulator found funds were still released after works stopped",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 629,
+   "payment_plan": "COP 2,000,000 reservation; 30% down payment; 70% before delivery via mortgage or own funds",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence number on the developer page or in coverage",
+   "escrow": "Fiducia with Alianza Fiduciaria confirmed by the Superintendencia Financiera ruling reported in La FM and El Colombiano; the same ruling found the trustee failed its duties and disbursed after the halt",
+   "progress": "Developer page shows only stage-1 foundation works (undated); press (Jul 2026) says works paralysed since Sep/Dec 2022 and the second stage never started",
+   "plans": "Only unit areas and room counts; no plans",
+   "record": "Developer in Supersociedades reorganization; Semana reports about 14,000 affected buyers across dozens of projects; El Colombiano says 100+ projects with conflicts",
+   "returns": "No yield or guarantee; owner-occupier stratum 3 housing"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "contradicted",
+   "progress": "contradicted",
+   "plans": "none",
+   "record": "contradicted",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "629 apartments to be completed in 2023",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.elcolombiano.com/antioquia/alianza-fiduciaria-pagara-afectados-proyecto-san-jose-natura-itagui-HO39405417"
+   },
+   {
+    "claim": "Construction progressing (developer 'avance de obra' section)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.lafm.com.co/sociedad/condenan-alianza-fiduciaria-incumplimientos-406243"
+   },
+   {
+    "claim": "Buyer funds protected by fiducia with Alianza Fiduciaria",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.lafm.com.co/sociedad/condenan-alianza-fiduciaria-incumplimientos-406243"
+   },
+   {
+    "claim": "Superfinanciera ordered Alianza Fiduciaria to refund one buyer (COP 67-70m indexed), July 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://enotroangulo.com.co/superfinanciera-condeno-a-fiducia-por-proyecto-abandonado/"
+   },
+   {
+    "claim": "About COP 1,500m disbursed after works stopped (to Apr 2023)",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://www.lafm.com.co/sociedad/condenan-alianza-fiduciaria-incumplimientos-406243"
+   },
+   {
+    "claim": "Promoter company had about COP 1m in capital for a COP 122bn project",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://www.lafm.com.co/sociedad/condenan-alianza-fiduciaria-incumplimientos-406243"
+   },
+   {
+    "claim": "Land not fully paid (buyer's lawyer)",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://www.lafm.com.co/sociedad/condenan-alianza-fiduciaria-incumplimientos-406243"
+   },
+   {
+    "claim": "Same lot used for a second project (Flora, VIS) also stalled below 50%",
+    "status": "unverified",
+    "by": "independent",
+    "source": "https://www.elcolombiano.com/antioquia/alianza-fiduciaria-pagara-afectados-proyecto-san-jose-natura-itagui-HO39405417"
+   },
+   {
+    "claim": "Acierto Inmobiliario under Supersociedades reorganization, about 14,000 buyers affected",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.semana.com/nacion/medellin/articulo/descalabro-inmobiliario-14000-compradores-y-las-posibles-irregularidades-en-multimillonarios-proyectos-de-vivienda-en-colombia/202559/"
+   },
+   {
+    "claim": "Developer manager denies fraud and says banks are reactivating projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.semana.com/nacion/medellin/articulo/descalabro-inmobiliario-14000-compradores-y-las-posibles-irregularidades-en-multimillonarios-proyectos-de-vivienda-en-colombia/202559/"
+   },
+   {
+    "claim": "Three towers of 30 floors, 58-61 m2 private area",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://acierto.com.co/proyectos/reserva-san-jose-natura/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Medellín, Colombia",
+   "developer_company": "Acierto Inmobiliario (in reorganization before Supersociedades); project promoter company not named",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": "2023",
+   "delay_months": null,
+   "unit_types": [
+    "2BR + study",
+    "3BR"
+   ],
+   "size_min_m2": 58,
+   "size_max_m2": 68,
+   "price_min": null,
+   "price_max": null,
+   "currency": "COP",
+   "deposit_pct": 30,
+   "payment_plan": "COP 2m reservation, 30% down payment, 70% before delivery",
+   "foreign_ownership": "Foreigners may own property in Colombia directly",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Curaduria / Secretaria de Planeacion de Itagui",
+   "brochure_url": null
+  },
+  "positives": [
+   "Buyer funds were placed in a regulated fiducia, which a regulator has now ordered to refund at least one buyer"
+  ],
+  "flags": [
+   {
+    "text": "Construction halted since late 2022 on a project due in 2023; second stage never started",
+    "source": "https://www.lafm.com.co/sociedad/condenan-alianza-fiduciaria-incumplimientos-406243"
+   },
+   {
+    "text": "Superintendencia Financiera (jurisdictional delegation) ruled in July 2026 that Alianza Fiduciaria breached information and diligence duties and ordered repayment of about COP 67-70m to one buyer; about 50 similar actions reported",
+    "source": "https://www.elcolombiano.com/antioquia/alianza-fiduciaria-pagara-afectados-proyecto-san-jose-natura-itagui-HO39405417"
+   },
+   {
+    "text": "Ruling cited funds released to the promoter after the halt and lack of information to buyers",
+    "source": "https://enotroangulo.com.co/superfinanciera-condeno-a-fiducia-por-proyecto-abandonado/"
+   },
+   {
+    "text": "Semana reported Acierto Inmobiliario in Supersociedades reorganization with about 14,000 affected buyers and debts of COP 1.075 trillion; manager denies fraud",
+    "source": "https://www.semana.com/nacion/medellin/articulo/descalabro-inmobiliario-14000-compradores-y-las-posibles-irregularidades-en-multimillonarios-proyectos-de-vivienda-en-colombia/202559/"
+   }
+  ],
+  "sources": [
+   "https://www.elcolombiano.com/antioquia/alianza-fiduciaria-pagara-afectados-proyecto-san-jose-natura-itagui-HO39405417",
+   "https://www.lafm.com.co/sociedad/condenan-alianza-fiduciaria-incumplimientos-406243",
+   "https://enotroangulo.com.co/superfinanciera-condeno-a-fiducia-por-proyecto-abandonado/",
+   "https://laeradeltigre.com/estafas-inmobiliarias-cuando-la-fiduciaria-tambien-tiene-que-pagar/",
+   "https://acierto.com.co/proyectos/reserva-san-jose-natura/",
+   "https://www.semana.com/nacion/medellin/articulo/descalabro-inmobiliario-14000-compradores-y-las-posibles-irregularidades-en-multimillonarios-proyectos-de-vivienda-en-colombia/202559/"
+  ]
  }
 ]

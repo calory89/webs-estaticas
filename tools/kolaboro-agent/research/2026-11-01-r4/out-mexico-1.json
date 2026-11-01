@@ -2034,5 +2034,408 @@
   "permit_number": null,
   "added": "2026-10-28",
   "verified_score": 0
+ },
+ {
+  "slug": "park-hyatt-los-cabos-residences-cabo-del-sol",
+  "name": "Park Hyatt Los Cabos Residences at Cabo Del Sol",
+  "developer": "SOMA Group",
+  "area": "Cabo Del Sol, Los Cabos",
+  "country": "Mexico",
+  "market": "Los Cabos",
+  "stage": "completed",
+  "status": "completed",
+  "url": "https://parkhyattloscabosresidences.com/",
+  "docs_url": "https://parkhyattloscabosresidences.com/",
+  "docs_listed": [
+   "19 residences (11 villas, 8 apartments) by Sordo Madaleno",
+   "residential building 'completed and fully sold'; remaining villas for sale",
+   "villa type areas (e.g. 727 m2 living, 232 m2 outdoor, 971 m2 total)",
+   "optional Park Hyatt rental programme",
+   "hotel amenities list"
+  ],
+  "note": "19 Park Hyatt-branded residences (11 villas, 8 apartments) by SOMA Group at Cabo del Sol; Hyatt announced the hotel's opening on 15 Dec 2025 and the developer site now says the residential building is completed and sold out, with remaining villas from about USD 10.5M (apartments had started at USD 5.475M). Two villas closed at USD 10.5M and 11.9M on the BCS MLS; no plans, permit, escrow or SOMA delivery list is published on the residences site. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 5475000,
+   "currency": "USD",
+   "title": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2025-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 100,
+   "progress_updates": false,
+   "developer_delivered": "SOMA Group (Mexico City), stated 50+ / 85+ years of development experience by agents and press; no delivered projects listed on the residences site",
+   "units": 19,
+   "payment_plan": null,
+   "price_per_m2": null,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit or licence number published",
+   "escrow": "No escrow or fideicomiso details published",
+   "progress": "Completed: Hyatt newsroom (15 Dec 2025) announced Park Hyatt Cabo del Sol open with 11 villas and 8 apartments for purchase, turnkey; residences site says residential building completed and fully sold; BCS MLS records villa closings",
+   "plans": "Only area tables per villa type; no floor plans found",
+   "record": "SOMA Group's track record is only described in general terms ('over 50 years', '85+ years') by press and agents; no delivered projects named on the residences site",
+   "returns": "Optional Park Hyatt rental programme; no return figures or guarantees"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Park Hyatt Cabo del Sol opened (announced 15 Dec 2025) with 11 villas and 8 apartments for purchase",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://newsroom.hyatt.com/ParkHyattCabodelSolOpening"
+   },
+   {
+    "claim": "Residential building completed and fully sold; villas remain",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://parkhyattloscabosresidences.com/"
+   },
+   {
+    "claim": "Villas 2 and 5 closed at USD 10.5M and 11.9M (BCS MLS)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://caboforsale.mx/guide/tourist-corridor/cabo-del-sol/park-hyatt/"
+   },
+   {
+    "claim": "Residences slated to debut late 2025 (March 2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://resident.com/real-estate-news/2025/03/28/park-hyatt-los-cabos-residences-at-cabo-del-sol-introduces-landmark-living-to-mexicos-luxury-coastline"
+   },
+   {
+    "claim": "Hotel opening summer / late Q2 2025",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://rlhproperties.com/portfolio/park-hyatt-loscabos-en/"
+   },
+   {
+    "claim": "Hotel has 163 rooms (RLH, Cabo del Sol) vs 163 rooms plus 88 suites (Hyatt release)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://cabodelsol.com/resorts/"
+   },
+   {
+    "claim": "Apartments from USD 5.475M; villas from USD 10.5M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://resident.com/real-estate-news/2025/03/28/park-hyatt-los-cabos-residences-at-cabo-del-sol-introduces-landmark-living-to-mexicos-luxury-coastline"
+   },
+   {
+    "claim": "Villa 4 listed at USD 11.9M, 5 bedrooms",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.firstcallgolf.com/home-front/feature/2025-03-31/park-hyatt-los-cabos-residences-at-cabo-del-sol-cabo-san-lucas-b-c-s-mexico"
+   },
+   {
+    "claim": "SOMA Group has 50+ years of development experience",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.elevatedmagazines.com/single-post/park-hyatt-los-cabos-resort-residences"
+   },
+   {
+    "claim": "SOMA Group has 85+ years of development expertise",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.alekcarreragroup.com/parkhyatt-cabo"
+   },
+   {
+    "claim": "Owners may join the Park Hyatt rental programme",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://parkhyattloscabosresidences.com/"
+   },
+   {
+    "claim": "Building permit or escrow published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://parkhyattloscabosresidences.com/"
+   }
+  ],
+  "facts": {
+   "developer_hq": "Mexico City, Mexico",
+   "developer_company": "SOMA Group (hotel owner per Hyatt: RLH Properties)",
+   "construction_start": null,
+   "handover_promised": "2025-Q4",
+   "original_handover": "2025-Q2 (hotel, per RLH Jan 2025)",
+   "unit_types": [
+    "4BR apartment",
+    "5BR penthouse",
+    "5BR villa",
+    "6BR villa"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": 971,
+   "price_min": 5475000,
+   "price_max": 12000000,
+   "currency": "USD",
+   "foreign_ownership": "Not stated; coastal restricted zone, so foreigners hold through a bank fideicomiso",
+   "rental_programme": "Optional Park Hyatt-managed rental programme; no figures",
+   "brand": "Park Hyatt (Hyatt Hotels Corporation)",
+   "amenities": [
+    "beach club",
+    "spa with 10 treatment rooms",
+    "fitness center",
+    "kids club",
+    "pools",
+    "two restaurants and bar",
+    "Cabo del Sol golf course",
+    "Cove Club membership option"
+   ],
+   "permit_authority": "Municipio de Los Cabos",
+   "brochure_url": null,
+   "developer_founded": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "delay_months": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "lat": null,
+   "lng": null
+  },
+  "positives": [
+   "Built and operating under the Park Hyatt brand",
+   "Third-party records of villa sales",
+   "Hotel opening confirmed by Hyatt"
+  ],
+  "flags": [],
+  "sources": [
+   "https://parkhyattloscabosresidences.com/",
+   "https://newsroom.hyatt.com/ParkHyattCabodelSolOpening",
+   "https://resident.com/real-estate-news/2025/03/28/park-hyatt-los-cabos-residences-at-cabo-del-sol-introduces-landmark-living-to-mexicos-luxury-coastline",
+   "https://www.alekcarreragroup.com/parkhyatt-cabo",
+   "https://caboforsale.mx/guide/tourist-corridor/cabo-del-sol/park-hyatt/",
+   "https://cabodelsol.com/resorts/",
+   "https://rlhproperties.com/portfolio/park-hyatt-loscabos-en/",
+   "https://www.elevatedmagazines.com/single-post/park-hyatt-los-cabos-resort-residences",
+   "https://www.firstcallgolf.com/home-front/feature/2025-03-31/park-hyatt-los-cabos-residences-at-cabo-del-sol-cabo-san-lucas-b-c-s-mexico"
+  ],
+  "permit_number": null,
+  "added": "2026-10-30",
+  "verified_score": 1
+ },
+ {
+  "slug": "dos-piedras-residences-cabo-corridor",
+  "name": "Dos Piedras Residences (DOS PIEDRAS Living)",
+  "developer": null,
+  "area": "El Tezal-West, Cabo San Lucas (Calle Hacienda Gpe., Mz 5, Lotes 10 y 11)",
+  "country": "Mexico",
+  "market": "Los Cabos",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://bobcadez.realgeeks.com/property/26-1744/",
+  "docs_url": "https://www.pincali.com/en/home/residencias-de-lujo-en-el-tezal-desde-590-000usd",
+  "docs_listed": [
+   "MLS listings 26-1744, 26-1745, 26-1761 (10 studios and 3 residences, 3 storeys)",
+   "delivery anticipated December 2027",
+   "prices USD 189,000 (51 m2 studio) to USD 708,000 (295.85 m2 penthouse)",
+   "HOA USD 5,300 per year on 2BR (MLS); seller financing offered",
+   "MLS title type 'Contract'",
+   "street address El Tezal, Cabo San Lucas",
+   "brochure and price list attached on Pincali (agent Buserfin Real Estate)"
+  ],
+  "note": "13-unit boutique tower (10 studios, 3 residences) in El Tezal, Cabo San Lucas, listed on the BCS MLS as pre-construction with delivery December 2027 and prices from USD 189,000 (studio) to USD 708,000 (penthouse); the old record's USD 598,000 was a 2-bed residence. No developer is named in any listing (only agent Buserfin Real Estate), MLS 'year built' fields disagree (2026 vs 2027), title is listed as 'Contract', and no permit, escrow, plans or progress are published. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 189000,
+   "currency": "USD",
+   "title": "contract (MLS title type); fideicomiso not stated",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 13,
+   "payment_plan": "Seller (owner) financing offered per MLS; terms not published",
+   "price_per_m2": 3706,
+   "lease_base": null,
+   "extension": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit or licence number in any listing",
+   "escrow": "No escrow or fideicomiso; MLS title field says 'Contract' and 'Seller Financing Offered: Yes'",
+   "progress": "MLS construction field 'Pre-Construction'; no progress published",
+   "plans": "No floor plans visible; brochure and price-list files are attached on Pincali but only sizes are shown in listing text",
+   "record": "No developer named; listings by Buserfin Real Estate",
+   "returns": "Mentions 'rental potential'; no figures or guarantees"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "13 units: 10 studios and 3 private residences",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bobcadez.realgeeks.com/property/26-1744/"
+   },
+   {
+    "claim": "Delivery anticipated December 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://diamanterealtors.com/listing/26-1761/"
+   },
+   {
+    "claim": "Year built 2026 (MLS 26-1744) vs 2027 (MLS 26-1745, 26-1761)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://bobcadez.realgeeks.com/property/26-1744/"
+   },
+   {
+    "claim": "Studios from USD 189,000 for 51 m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pincali.com/en/home/departamentos-con-financiamento-en-el-tezal"
+   },
+   {
+    "claim": "2BR from USD 590,000 (161-172 m2) and USD 598,000 (1,850 sq ft)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://diamanterealtors.com/listing/26-1761/"
+   },
+   {
+    "claim": "Penthouse 295.85 m2 at USD 708,000 with ocean view",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://cabobeachrealty.com/idx/Dos-Piedras-Residences-Cabo-Corridor-mls_26-1745/"
+   },
+   {
+    "claim": "Title held by contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://cabobeachrealty.com/idx/Dos-Piedras-Residences-Cabo-Corridor-mls_26-1745/"
+   },
+   {
+    "claim": "Developer identity published",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.pincali.com/en/home/residencias-de-lujo-en-el-tezal-desde-590-000usd"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bobcadez.realgeeks.com/property/26-1744/"
+   },
+   {
+    "claim": "Deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bobcadez.realgeeks.com/property/26-1744/"
+   },
+   {
+    "claim": "Seller has a PROFECO-registered sales contract",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rpca.profeco.gob.mx/"
+   },
+   {
+    "claim": "HOA fee USD 5,300 per year for a 2BR",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://diamanterealtors.com/listing/26-1761/"
+   }
+  ],
+  "facts": {
+   "developer_company": null,
+   "handover_promised": "2027-Q4",
+   "unit_types": [
+    "studio",
+    "2BR",
+    "4BR penthouse"
+   ],
+   "size_min_m2": 51,
+   "size_max_m2": 295.85,
+   "price_min": 189000,
+   "price_max": 708000,
+   "currency": "USD",
+   "payment_plan": "Owner financing offered",
+   "foreign_ownership": "MLS title type 'Contract'; coastal restricted zone requires a bank fideicomiso for foreigners, not stated",
+   "service_charge": "HOA USD 5,300 per year (2BR); USD 3,800 (studio, Pincali)",
+   "amenities": [
+    "pool",
+    "owners' rooftop terrace",
+    "elevator",
+    "covered parking",
+    "BBQ area",
+    "24h security"
+   ],
+   "permit_authority": "Municipio de Los Cabos",
+   "brochure_url": null,
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "original_handover": null,
+   "delay_months": null,
+   "deposit_pct": null,
+   "rental_programme": null,
+   "brand": null,
+   "lat": null,
+   "lng": null
+  },
+  "positives": [
+   "Street address, unit count and delivery month published on MLS",
+   "USD price disclosure under NOM-247"
+  ],
+  "flags": [],
+  "sources": [
+   "https://bobcadez.realgeeks.com/property/26-1744/",
+   "https://diamanterealtors.com/listing/26-1761/",
+   "https://www.pincali.com/en/home/residencias-de-lujo-en-el-tezal-desde-590-000usd",
+   "https://www.pincali.com/en/home/departamentos-con-financiamento-en-el-tezal",
+   "https://cabobeachrealty.com/idx/Dos-Piedras-Residences-Cabo-Corridor-mls_26-1745/",
+   "https://www.sandoves.com.mx/property/residencias-de-lujo-en-el-tezal-desde-590-000usd",
+   "https://laidbacklegacy.ruuster.com/agent/darren-oconnor/iframe/c14a4f6c-e501-488e-8abd-a3a000b3f9e9?hideBackground=true&listingsPerPage=8&nextButtonPosition=left",
+   "https://rpca.profeco.gob.mx/"
+  ],
+  "permit_number": null,
+  "added": "2026-10-30",
+  "verified_score": 0
  }
 ]

@@ -1198,5 +1198,533 @@
    "https://kinnara.asia/blog/can-foreigners-buy-property-indonesia",
    "https://www.ahp.id/?p=2955"
   ]
+ },
+ {
+  "slug": "xamaras-wellness-retreat",
+  "name": "Xamaras Wellness Retreat",
+  "developer": "Xamaras Group",
+  "area": "Lombok Tengah",
+  "country": "Indonesia",
+  "market": "Lombok",
+  "url": "https://xamarasgroup.com/xamaras-wellness-retreat",
+  "docs_url": "https://heyzine.com/flip-book/xamaraswellnessretreat_EN",
+  "permit_number": null,
+  "docs_listed": [
+   "22 villas (18 Luxury 100 m2 + 4 Presidential 200 m2), 12 available ('45% sold')",
+   "80-year leasehold on freehold land (website); dossier headline says '80-year freehold opportunity'",
+   "project dossier flipbook (market, masterplan, villa types, benchmark rates)",
+   "status 'Off-plan' on page and dossier",
+   "site 22,266 m2, coordinates 8.88 S, 116.25 E",
+   "flexible payment plan (no terms); floor plans on request",
+   "group claims 15-20% projected rental return and 15-20% land appreciation"
+  ],
+  "note": "22-villa wellness resort on 2.2 ha near Mawun on an 80-year lease, still labelled off-plan with 12 villas left; no price, payment terms, completion date, PBG, escrow or progress is published, and the dossier headline calls the lease an '80-year freehold opportunity', which conflicts with both the website and Indonesian law. The group names one completed villa that now takes guests (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "off-plan",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": "leasehold",
+   "lease_base": 80,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Xamaras Group: Xamaras Villa in the hills above Kuta, 'the first completed Xamaras home', open for nightly stays (xamarasgroup.com/xamaras-villa)",
+   "units": 22,
+   "payment_plan": "Flexible payment plan (no terms published)",
+   "yield_pct": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Project status off-plan; 22 villas with 12 available ('45% sold')",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://heyzine.com/flip-book/xamaraswellnessretreat_EN"
+   },
+   {
+    "claim": "Dossier headline 'An exclusive 80-year freehold opportunity' versus website '80-year leasehold on a freehold land property'",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.ahp.id/?p=2955"
+   },
+   {
+    "claim": "An 80-year lease from an Indonesian Hak Milik owner gives the buyer a lease, not ownership of the land",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://kinnara.asia/blog/can-foreigners-buy-property-indonesia"
+   },
+   {
+    "claim": "Site of 22,266 m2 above the south coast at about 8.88 S, 116.25 E",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://xamarasgroup.com/xamaras-wellness-retreat"
+   },
+   {
+    "claim": "Xamaras Villa is completed and taking guests (5.0 on Google from 4 reviews quoted on the page)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://xamarasgroup.com/xamaras-villa"
+   },
+   {
+    "claim": "Group builds on the legacy of Hakuna Matata Properties (no link to that firm's projects published)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://xamarasgroup.com/"
+   },
+   {
+    "claim": "15-20% projected annual rental return and 15-20% land price appreciation in prime spots",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://xamarasgroup.com/"
+   },
+   {
+    "claim": "Only luxury wellness choice in Lombok, '100% of the luxury wellness market share from Day 1' (dossier)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://heyzine.com/flip-book/xamaraswellnessretreat_EN"
+   },
+   {
+    "claim": "No building permit, completion date or price published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://xamarasgroup.com/xamaras-wellness-retreat"
+   },
+   {
+    "claim": "No registered company name published for the Xamaras Group",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://xamarasgroup.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Lombok Tengah, Indonesia",
+   "developer_company": null,
+   "developer_projects_delivered": 1,
+   "developer_units_delivered": 1,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "Luxury Villa (1BR)",
+    "Presidential Villa (2BR)"
+   ],
+   "size_min_m2": 100,
+   "size_max_m2": 200,
+   "price_min": null,
+   "price_max": null,
+   "currency": null,
+   "deposit_pct": null,
+   "payment_plan": "Flexible payment plan (no terms published)",
+   "foreign_ownership": "80-year leasehold on Hak Milik (freehold) land owned by an Indonesian",
+   "rental_programme": "Managed through property management partners (Airbnb, Booking, Expedia); group projects 15-20% returns",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "spa",
+    "yoga and pilates studios",
+    "gym",
+    "hammam and sauna",
+    "ice bath",
+    "two-level infinity pool",
+    "signature restaurant",
+    "padel courts"
+   ],
+   "lat": -8.88,
+   "lng": 116.25,
+   "permit_authority": "Kabupaten Lombok Tengah (PBG via SIMBG)",
+   "brochure_url": "https://cdnm.heyzine.com/files/uploaded/v3/86be74532541cd6e55720762717094ffa8068886.pdf"
+  },
+  "evidence": {
+   "permit": "No PBG or permit mentioned on the page or in the dossier",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "Page and dossier both say 'Off-plan'; no progress published",
+   "plans": "Floor plans only on request",
+   "record": "Group names one completed home, Xamaras Villa, open for nightly stays",
+   "returns": "Group homepage cites 15-20% projected rental return; no guarantee language"
+  },
+  "positives": [
+   "Units, sizes and availability published",
+   "Downloadable dossier",
+   "Site coordinates published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://xamarasgroup.com/",
+   "https://xamarasgroup.com/xamaras-villa",
+   "https://xamarasgroup.com/xamaras-wellness-retreat",
+   "https://heyzine.com/flip-book/xamaraswellnessretreat_EN",
+   "https://cdnm.heyzine.com/files/uploaded/v3/86be74532541cd6e55720762717094ffa8068886.pdf",
+   "https://www.ahp.id/?p=2955",
+   "https://kinnara.asia/blog/can-foreigners-buy-property-indonesia"
+  ]
+ },
+ {
+  "slug": "xamaras-tribe-villas",
+  "name": "Xamaras Tribe Villas",
+  "developer": "Xamaras Group",
+  "area": "Lombok Tengah",
+  "country": "Indonesia",
+  "market": "Lombok",
+  "url": "https://xamarasgroup.com/xamaras-tribe-villas",
+  "docs_url": "https://heyzine.com/flip-book/xamarastribevillas_WEB_EN",
+  "permit_number": null,
+  "docs_listed": [
+   "20 bamboo villas on 7,000 m2: Wing (8), Crescent (7), Nest (5, sold out); 74.6-78.8 m2",
+   "80-year leasehold on freehold land",
+   "'80% COMPLETION' label on group homepage (undated)",
+   "dossier: 'Project status 50% to completion', available units as of 8 Sep 2026, '80% sold out', price rise on 31 Oct 2026",
+   "earlier dossier: estimated investment values EUR 109,000-189,000, 'assured earnings' wording, estimated ROI 13.9-22.2%",
+   "villa size, pool size and availability per type"
+  ],
+  "note": "20 bamboo villas on a 7,000 m2 ridge above Mawun on an 80-year lease, with 4 villas left; the group homepage says '80% completion' but its own dossier dated 8 September 2026 says '50% to completion' and '80% sold out', so the 80% figure appears to describe sales, not building. An earlier dossier priced units at EUR 109,000-189,000 with 'assured earnings' wording; no PBG, escrow or floor plans are published (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "under construction",
+  "seed": {
+   "price": 109000,
+   "currency": "EUR",
+   "title": "leasehold",
+   "lease_base": 80,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 50,
+   "developer_delivered": "Xamaras Group: Xamaras Villa in the hills above Kuta, 'the first completed Xamaras home', open for nightly stays (xamarasgroup.com/xamaras-villa)",
+   "units": 20,
+   "yield_pct": null,
+   "payment_plan": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "none",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Project at '80% completion' (group homepage) versus '50% to completion' in the dossier dated 8 Sep 2026, which also says '80% sold out'",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://heyzine.com/flip-book/xamarastribevillas_WEB_EN"
+   },
+   {
+    "claim": "20 villas, 4 available (Wing 2 of 8, Crescent 2 of 7, Nest sold out)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://xamarasgroup.com/xamaras-tribe-villas"
+   },
+   {
+    "claim": "Crescent Villa size 78.76 m2 on the website versus 70.67 m2 in the dossier",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://heyzine.com/flip-book/xamarastribevillas_WEB_EN"
+   },
+   {
+    "claim": "Estimated investment values EUR 109,000 (ground) to EUR 189,000 (summit); launch price EUR 89,000 in 2023 (earlier dossier)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://cdnc.heyzine.com/flip-book/pdf/e98edf862d2d4aa7143972f01878901104e4a91f-3.pdf"
+   },
+   {
+    "claim": "Earlier dossier promised 'assured earnings' and 'predictable income' with estimated ROI of 13.9% to 22.2%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://cdnc.heyzine.com/flip-book/pdf/e98edf862d2d4aa7143972f01878901104e4a91f-3.pdf"
+   },
+   {
+    "claim": "Earlier dossier headline 'An exclusive 80-year freehold opportunity' for a leasehold product",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.ahp.id/?p=2955"
+   },
+   {
+    "claim": "80-year leasehold on Hak Milik land is a lease from an Indonesian owner, not ownership",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://kinnara.asia/blog/can-foreigners-buy-property-indonesia"
+   },
+   {
+    "claim": "Xamaras Villa is completed and taking guests",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://xamarasgroup.com/xamaras-villa"
+   },
+   {
+    "claim": "Site on the ridge above Mawun and Tampah at about 8.88 S, 116.24 E (hero banner says 8.90 S, 116.28 E)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://xamarasgroup.com/xamaras-tribe-villas"
+   },
+   {
+    "claim": "No building permit, escrow or completion date published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://xamarasgroup.com/xamaras-tribe-villas"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Lombok Tengah, Indonesia",
+   "developer_company": null,
+   "developer_projects_delivered": 1,
+   "developer_units_delivered": 1,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "Wing Villa (1BR)",
+    "Crescent Villa (1BR)",
+    "Nest Villa (1BR)"
+   ],
+   "size_min_m2": 70.67,
+   "size_max_m2": 78.76,
+   "price_min": 109000,
+   "price_max": 189000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "80-year leasehold on Hak Milik land owned by an Indonesian",
+   "rental_programme": "Managed by property management partners; benchmark occupancy 76-89% in dossier; no guarantee on the current pages",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pools",
+    "outdoor kitchens",
+    "sea views",
+    "bamboo and stone construction"
+   ],
+   "lat": -8.88,
+   "lng": 116.24,
+   "permit_authority": "Kabupaten Lombok Tengah (PBG via SIMBG)",
+   "brochure_url": "https://cdnm.heyzine.com/files/uploaded/v3/da01769d44929c9d534fd8196f1a1b53c8d45468.pdf"
+  },
+  "evidence": {
+   "permit": "No PBG or permit mentioned",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "Homepage: '80-YEAR LEASEHOLD · 80% COMPLETION' (undated); dossier dated 8 Sep 2026: 'Project status 50% to completion'",
+   "plans": "No floor plans; sizes and pool sizes per type only",
+   "record": "Group names one completed home, Xamaras Villa",
+   "returns": "No guarantee on current pages; an earlier dossier used 'assured earnings' and estimated ROI up to 22.16% without the word 'guaranteed'"
+  },
+  "positives": [
+   "Availability per villa type published",
+   "Dated dossier with construction status",
+   "Sizes per villa type published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://xamarasgroup.com/",
+   "https://xamarasgroup.com/xamaras-tribe-villas",
+   "https://xamarasgroup.com/xamaras-villa",
+   "https://heyzine.com/flip-book/xamarastribevillas_WEB_EN",
+   "https://cdnm.heyzine.com/files/uploaded/v3/da01769d44929c9d534fd8196f1a1b53c8d45468.pdf",
+   "https://cdnc.heyzine.com/flip-book/pdf/e98edf862d2d4aa7143972f01878901104e4a91f-3.pdf",
+   "https://www.ahp.id/?p=2955",
+   "https://kinnara.asia/blog/can-foreigners-buy-property-indonesia"
+  ]
+ },
+ {
+  "slug": "terratamo-lombok",
+  "name": "terrātamo",
+  "developer": "PT Terra Ventures Lombok",
+  "area": "Kuta, South Lombok",
+  "country": "Indonesia",
+  "market": "Lombok",
+  "url": "https://terratamo-sanctuary.lovable.app/",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "three owner-held villas, private waitlist",
+   "status labels: design completed, construction commencing, opening late 2027",
+   "pricing, floor plans and unit selection shared only with waitlist",
+   "investment memorandum on request",
+   "entity PT Terra Ventures Lombok (copyright line)"
+  ],
+  "note": "Waitlist page for three villas in Kuta, South Lombok, says design is completed, construction is commencing and opening is late 2027; pricing, floor plans and the investment memorandum are shared only privately, and no PBG, escrow, title type, location or track record is published. No independent mention of the project or PT Terra Ventures Lombok was found (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "off-plan",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 3,
+   "yield_pct": null,
+   "payment_plan": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "Design completed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://terratamo-sanctuary.lovable.app/"
+   },
+   {
+    "claim": "Construction commencing (no date)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://terratamo-sanctuary.lovable.app/"
+   },
+   {
+    "claim": "Opening late 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://terratamo-sanctuary.lovable.app/"
+   },
+   {
+    "claim": "Three villas in Kuta, South Lombok (no exact site published)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://terratamo-sanctuary.lovable.app/"
+   },
+   {
+    "claim": "Villas are 'owner-held' (title type not stated; foreigners cannot hold Hak Milik)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.ahp.id/?p=2955"
+   },
+   {
+    "claim": "Developer entity is PT Terra Ventures Lombok (no registration number; no independent record found)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://terratamo-sanctuary.lovable.app/"
+   },
+   {
+    "claim": "Pricing and floor plans shared only with a private circle",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://terratamo-sanctuary.lovable.app/"
+   },
+   {
+    "claim": "No permit, escrow or completed projects mentioned",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://terratamo-sanctuary.lovable.app/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Kuta, South Lombok, Indonesia",
+   "developer_company": "PT Terra Ventures Lombok (no registration number published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "villa"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": null,
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Kabupaten Lombok Tengah (PBG via SIMBG)",
+   "brochure_url": null
+  },
+  "evidence": {
+   "permit": "No PBG or permit mentioned",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "Status labels only ('Construction: Commencing'), no date or figure",
+   "plans": "Floor plans shared only privately",
+   "record": "No completed projects named",
+   "returns": "No return figures or guarantee language"
+  },
+  "positives": [
+   "Legal entity named",
+   "No return promises made"
+  ],
+  "flags": [],
+  "sources": [
+   "https://terratamo-sanctuary.lovable.app/",
+   "https://www.ahp.id/?p=2955"
+  ]
  }
 ]

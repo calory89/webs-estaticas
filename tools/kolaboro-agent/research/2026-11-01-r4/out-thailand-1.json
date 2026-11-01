@@ -1196,6 +1196,199 @@
   ]
  },
  {
+  "slug": "grand-solaire-pattaya",
+  "name": "Grand Solaire Pattaya",
+  "developer": "SLR Development",
+  "area": "Pattaya",
+  "country": "Thailand",
+  "market": "Pattaya",
+  "url": "https://www.grandsolaire.com/",
+  "docs_url": null,
+  "permit_number": "EIA approval ทส 1010.5/17038 (15 Dec 2020, report 14910)",
+  "docs_listed": [
+   "67 storeys, 2,470 residences on 14.5 rai, Thappraya Road Soi 15",
+   "SLR Development Co., Ltd. reg. no. 0205561042805",
+   "floor plan and unit plans pages",
+   "foreign and Thai ownership payment schedules",
+   "sinking fund 500 THB/m2, maintenance 40 THB/m2",
+   "expected completion end 2026",
+   "undated construction update video"
+  ],
+  "note": "67-storey, 2,470-unit tower on Thappraya Road with floor and unit plans, payment schedules and expected completion end 2026; the ONEP register confirms its EIA (ทส 1010.5/17038, 15 Dec 2020) and lists it under construction, and agent updates show the structure at 66 levels in January 2026, but the developer publishes no price, permit number, escrow or completed project (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "under construction",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": "2026-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 2470,
+   "payment_plan": "Option A: 25% after 14 days, 16.25% every 4 months, 10% on completion; Option B: THB 100,000 booking, 15%, 6.25% every 4 months, 60% on completion",
+   "progress_updates": true
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "verified_score": 2,
+  "evidence": {
+   "permit": "Developer publishes no permit or EIA number. ONEP lists report 14910 'GRAND SOLAIRE', Thappraya Road, Nong Prue, owner S.L.R. Development Co., Ltd. (0205561042805, registered 21 Nov 2018, active), approval letter ทส 1010.5/17038 dated 15/12/2563 (15 Dec 2020), status approved to build / under construction. The same company also holds an EIA for Grand Solaire Noble (2025, not yet built)",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "Developer site has only an undated 'Construction update' video. Agent THAI investproperty posts dated updates (latest June 2026) and says construction began January 2022; neoTHAI (28 Jan 2026) relays that 66 of 67 levels are built; ONEP status under construction",
+   "plans": "Floor plan and unit plans pages",
+   "record": "No completed project named; the company's ONEP record lists only Grand Solaire and Grand Solaire Noble",
+   "returns": "No guaranteed return language on the developer site; agent page advertises 'rental income 6-8%'"
+  },
+  "claims": [
+   {
+    "claim": "EIA approved for Grand Solaire",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=9919"
+   },
+   {
+    "claim": "SLR Development Co., Ltd. reg. no. 0205561042805 registered and active",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/owner-detail?owner_id=7767"
+   },
+   {
+    "claim": "Project under construction",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=9919"
+   },
+   {
+    "claim": "Structure at 66 of 67 levels (Jan 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://neothai.com/news/construction/2184.html"
+   },
+   {
+    "claim": "Expected completion end 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.grandsolaire.com/"
+   },
+   {
+    "claim": "2,470 residences",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.thai-investproperty.com/en/projects/grand-solaire/"
+   },
+   {
+    "claim": "Construction began January 2022",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thai-investproperty.com/en/projects/grand-solaire/"
+   },
+   {
+    "claim": "Foreign quota 99% sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thai-investproperty.com/en/projects/grand-solaire/"
+   },
+   {
+    "claim": "Developer has completed projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://eia.onep.go.th/eia/owner-detail?owner_id=7767"
+   },
+   {
+    "claim": "Deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.grandsolaire.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2018,
+   "developer_hq": "Thappraya Road, Nong Prue, Bang Lamung, Chonburi, Thailand",
+   "developer_company": "S.L.R. Development Co., Ltd., 0205561042805 (registered 21 Nov 2018)",
+   "developer_projects_delivered": 0,
+   "developer_units_delivered": 0,
+   "listed_or_audited": null,
+   "construction_start": "2022-01",
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "pool suite",
+    "penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": 1260,
+   "price_min": null,
+   "price_max": null,
+   "currency": null,
+   "deposit_pct": 25,
+   "payment_plan": "Foreign: THB 100,000 booking, 25% after 14 days, 16.25% every 4 months, 10% on completion; Thai: THB 100,000, 15%, 6.25% every 4 months, 60% on completion",
+   "foreign_ownership": "Freehold condominium unit (foreign ownership schedule offered)",
+   "rental_programme": null,
+   "service_charge": "Maintenance THB 40/m2 per month; sinking fund THB 500/m2",
+   "brand": null,
+   "amenities": [
+    "wave pool",
+    "tennis and badminton courts",
+    "sky yoga club",
+    "gym",
+    "onsen and spa",
+    "pitch-and-putt",
+    "business lounge"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "ONEP (EIA approval); Nong Prue municipality (building permit)",
+   "brochure_url": null
+  },
+  "positives": [
+   "EIA approval confirmed on the ONEP register",
+   "Developer registration number published and matches the register",
+   "Payment schedules and running costs published",
+   "Construction reported near topping out (66 of 67 levels) in January 2026"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.grandsolaire.com/",
+   "https://www.grandsolaire.com/floor-plan/",
+   "https://www.grandsolaire.com/unit-plans/",
+   "https://eia.onep.go.th/eia/detail?id=9919",
+   "https://eia.onep.go.th/eia/detail?id=14697",
+   "https://eia.onep.go.th/eia/owner-detail?owner_id=7767",
+   "https://www.thai-investproperty.com/en/projects/grand-solaire/",
+   "https://www.thai-investproperty.com/en/constructions/",
+   "https://neothai.com/news/construction/2184.html",
+   "https://novasia.estate/en/projects/grand-solaire/"
+  ]
+ },
+ {
   "slug": "riviera-beverly-hills-residences",
   "name": "The Riviera Beverly Hills Residences",
   "developer": "The Riviera Group Thailand",
@@ -1583,6 +1776,538 @@
    "https://eia.onep.go.th/eia/detail?id=6792",
    "https://therivieragroupthailand.com/category/news-2026/",
    "https://therivieragroupthailand.com/about-us"
+  ]
+ },
+ {
+  "slug": "naga-kiri-villas-lamai",
+  "name": "Naga Kiri Villas Lamai",
+  "developer": "Samui Paradise Group",
+  "area": "Lamai, Koh Samui",
+  "country": "Thailand",
+  "market": "Koh Samui",
+  "url": "https://samuiparadisegroup.com/naga-kiri-villas-lamai/",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "price THB 7,500,000 on project page (homepage card THB 11,500,000)",
+   "3 bed (page shows 3,5), land 450 m2, building 279 m2",
+   "freehold (via Thai company) or 30-year lease with contractual 30-year renewal",
+   "12-month delivery",
+   "master plan images",
+   "payment 30/25/20/18/7 by stage",
+   "company no. 0845566024656 (site footer)"
+  ],
+  "note": "3-bed pool villas in Lamai with 279 m2 built on 450 m2 plots, priced THB 7.5M on the project page but THB 11.5M on the homepage, freehold via a Thai company or a 30-year lease, 12-month delivery and staged payments; the seller is registered as a 2023 real estate broker with THB 2M capital despite claiming 150+ villas delivered, and no permit, escrow or dated progress is published (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "off-plan",
+  "seed": {
+   "price": 7500000,
+   "currency": "THB",
+   "title": "freehold (Thai company) or leasehold",
+   "lease_base": 30,
+   "extension": "30-year renewal (contractual commitment from landowner)",
+   "guaranteed_language": false,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "payment_plan": "30% contract, 25% structure, 20% walls and roof, 18% finishing, 7% handover and land transfer",
+   "price_per_m2": 26882
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "contradicted",
+   "returns": "developer"
+  },
+  "verified_score": 0,
+  "evidence": {
+   "permit": "No permit, licence or approval number published; small villa project, no EIA required",
+   "escrow": "Payments are released by construction stage; no escrow, bank guarantee or deposit protection stated",
+   "progress": "'Construction progress' heading with no dated photos or figures in page text",
+   "plans": "Master plan images; land and building sizes per villa",
+   "record": "Homepage says '15 years of expertise and 150+ villas delivered', but the about page attributes the 150+ villas to the lead project manager, no completed project is named with a handover date, and the DBD record (via Creden) shows Samui Paradise Group Co., Ltd. 0845566024656 registered on 19 Oct 2023 with THB 2M capital and its business type as a real estate agent/broker (TSIC 68201)",
+   "returns": "No guaranteed return language on the project page; homepage cites 'Annual Rental ROI 10%' for Koh Samui"
+  },
+  "claims": [
+   {
+    "claim": "Developer company Samui Paradise Group Co., Ltd. 0845566024656 is registered and active",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://data.creden.co/company/general/0845566024656"
+   },
+   {
+    "claim": "Over 15 years of expertise and 150+ villas delivered by the developer",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://data.creden.co/company/general/0845566024656"
+   },
+   {
+    "claim": "Company is a property developer",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://data.creden.co/company/general/0845566024656"
+   },
+   {
+    "claim": "Building permit obtained",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samuiparadisegroup.com/naga-kiri-villas-lamai/"
+   },
+   {
+    "claim": "Construction progress",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samuiparadisegroup.com/naga-kiri-villas-lamai/"
+   },
+   {
+    "claim": "Deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samuiparadisegroup.com/naga-kiri-villas-lamai/"
+   },
+   {
+    "claim": "Land ownership by the lessor / landowner",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samuiparadisegroup.com/naga-kiri-villas-lamai/"
+   },
+   {
+    "claim": "Price THB 7,500,000",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://samuiparadisegroup.com/"
+   },
+   {
+    "claim": "Freehold available (via Thai company structure)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samuiparadisegroup.com/naga-kiri-villas-lamai/"
+   },
+   {
+    "claim": "12-month delivery",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samuiparadisegroup.com/naga-kiri-villas-lamai/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2023,
+   "developer_hq": "Maret, Koh Samui, Surat Thani, Thailand",
+   "developer_company": "Samui Paradise Group Co., Ltd., 0845566024656 (registered 19 Oct 2023, capital THB 2,000,000; registered business: real estate agent/broker)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Not listed; files annual statements (2023-2025) per DBD mirror",
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR villa"
+   ],
+   "size_min_m2": 279,
+   "size_max_m2": 279,
+   "price_min": 7500000,
+   "price_max": 11500000,
+   "currency": "THB",
+   "deposit_pct": null,
+   "payment_plan": "30% contract, 25% structure, 20% walls and roof, 18% finishing, 7% handover",
+   "foreign_ownership": "Freehold only through a Thai company, or 30-year registered lease with a contractual 30-year renewal",
+   "rental_programme": "None by developer; refers buyers to third-party villa managers (homepage cites 10% annual rental ROI for Samui, not guaranteed)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pool",
+    "rooftop pavilion",
+    "tropical garden",
+    "automated gate",
+    "private parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Koh Samui municipality (building permit); Land Office Koh Samui (lease registration)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Staged payments tied to construction milestones",
+   "Developer company registration number published and active",
+   "Land and building sizes published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://samuiparadisegroup.com/naga-kiri-villas-lamai/",
+   "https://samuiparadisegroup.com/",
+   "https://samuiparadisegroup.com/about-us/",
+   "https://data.creden.co/company/general/0845566024656"
+  ]
+ },
+ {
+  "slug": "nichakul-villas-lamai",
+  "name": "Nichakul Villas Lamai",
+  "developer": "Samui Paradise Group",
+  "area": "Lamai, Koh Samui",
+  "country": "Thailand",
+  "market": "Koh Samui",
+  "url": "https://samuiparadisegroup.com/nichakul-villas-lamai/",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "2-3 bed villas from THB 7.9M",
+   "30-year leasehold (project page)",
+   "12-month delivery",
+   "master plan",
+   "payment THB 500,000 reservation then 30/25/20/20/5"
+  ],
+  "note": "2-3 bed sea-view villas in Lamai from THB 7.9M on a 30-year leasehold with 12-month delivery and staged payments; the seller is registered as a 2023 real estate broker with THB 2M capital despite claiming 150+ villas delivered, and no permit, escrow, unit sizes or dated progress is published (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "off-plan",
+  "seed": {
+   "price": 7900000,
+   "currency": "THB",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "payment_plan": "THB 500,000 reservation, 30% contract, 25% structure, 20% walls and roof, 20% finishing, 5% handover and land transfer"
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "contradicted",
+   "returns": "developer"
+  },
+  "verified_score": 0,
+  "evidence": {
+   "permit": "No permit, licence or approval number published; small villa project, no EIA required",
+   "escrow": "Payments are released by construction stage; no escrow, bank guarantee or deposit protection stated",
+   "progress": "No dated progress published",
+   "plans": "Master plan only; no villa sizes on the page",
+   "record": "Homepage says '15 years of expertise and 150+ villas delivered', but the about page attributes the 150+ villas to the lead project manager, no completed project is named with a handover date, and the DBD record (via Creden) shows Samui Paradise Group Co., Ltd. 0845566024656 registered on 19 Oct 2023 with THB 2M capital and its business type as a real estate agent/broker (TSIC 68201)",
+   "returns": "No guaranteed return language on the project page; homepage cites 'Annual Rental ROI 10%' for Koh Samui"
+  },
+  "claims": [
+   {
+    "claim": "Developer company Samui Paradise Group Co., Ltd. 0845566024656 is registered and active",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://data.creden.co/company/general/0845566024656"
+   },
+   {
+    "claim": "Over 15 years of expertise and 150+ villas delivered by the developer",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://data.creden.co/company/general/0845566024656"
+   },
+   {
+    "claim": "Company is a property developer",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://data.creden.co/company/general/0845566024656"
+   },
+   {
+    "claim": "Building permit obtained",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samuiparadisegroup.com/nichakul-villas-lamai/"
+   },
+   {
+    "claim": "Construction progress",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samuiparadisegroup.com/nichakul-villas-lamai/"
+   },
+   {
+    "claim": "Deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samuiparadisegroup.com/nichakul-villas-lamai/"
+   },
+   {
+    "claim": "Land ownership by the lessor / landowner",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samuiparadisegroup.com/nichakul-villas-lamai/"
+   },
+   {
+    "claim": "Price from THB 7,900,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samuiparadisegroup.com/nichakul-villas-lamai/"
+   },
+   {
+    "claim": "30-year leasehold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samuiparadisegroup.com/nichakul-villas-lamai/"
+   },
+   {
+    "claim": "12-month delivery",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samuiparadisegroup.com/nichakul-villas-lamai/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2023,
+   "developer_hq": "Maret, Koh Samui, Surat Thani, Thailand",
+   "developer_company": "Samui Paradise Group Co., Ltd., 0845566024656 (registered 19 Oct 2023, capital THB 2,000,000; registered business: real estate agent/broker)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Not listed; files annual statements (2023-2025) per DBD mirror",
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR villa",
+    "3BR villa"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 7900000,
+   "price_max": null,
+   "currency": "THB",
+   "deposit_pct": null,
+   "payment_plan": "THB 500,000 reservation, 30% contract, 25% structure, 20% walls and roof, 20% finishing, 5% handover",
+   "foreign_ownership": "30-year registered leasehold",
+   "rental_programme": "None by developer; refers buyers to third-party villa managers (homepage cites 10% annual rental ROI for Samui, not guaranteed)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "infinity pool",
+    "panoramic sea views",
+    "indoor and outdoor living"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Koh Samui municipality (building permit); Land Office Koh Samui (lease registration)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Staged payments tied to construction milestones",
+   "Developer company registration number published and active"
+  ],
+  "flags": [],
+  "sources": [
+   "https://samuiparadisegroup.com/nichakul-villas-lamai/",
+   "https://samuiparadisegroup.com/",
+   "https://samuiparadisegroup.com/about-us/",
+   "https://data.creden.co/company/general/0845566024656"
+  ]
+ },
+ {
+  "slug": "ulu-villas-lamai",
+  "name": "ULU Villas Lamai",
+  "developer": "Samui Paradise Group",
+  "area": "Lamai, Koh Samui",
+  "country": "Thailand",
+  "market": "Koh Samui",
+  "url": "https://samuiparadisegroup.com/ulu-villas-lamai-koh-samui/",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "15 four-bed villas, about 390 m2 living, land 512-620 m2, from THB 11.9M",
+   "30-year leasehold (project page)",
+   "15-month delivery",
+   "master plan",
+   "payment 10/20/30/30/10 by stage"
+  ],
+  "note": "15 four-bed villas of about 390 m2 in Lamai from THB 11.9M on a 30-year leasehold with 15-month delivery; the seller is registered as a 2023 real estate broker with THB 2M capital despite claiming 150+ villas delivered, and no permit, escrow or dated progress is published (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "status": "active",
+  "stage": "off-plan",
+  "seed": {
+   "price": 11900000,
+   "currency": "THB",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": null,
+   "guaranteed_language": false,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 15,
+   "payment_plan": "10% reservation, 20% contract, 30% structure, 30% finishing, 10% handover and land transfer",
+   "price_per_m2": 30513
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "contradicted",
+   "returns": "developer"
+  },
+  "verified_score": 0,
+  "evidence": {
+   "permit": "No permit, licence or approval number published; 15-villa project, no EIA required",
+   "escrow": "Payments are released by construction stage; no escrow, bank guarantee or deposit protection stated; 10% is taken at reservation",
+   "progress": "No dated progress published",
+   "plans": "Master plan; villa and land sizes",
+   "record": "Homepage says '15 years of expertise and 150+ villas delivered', but the about page attributes the 150+ villas to the lead project manager, no completed project is named with a handover date, and the DBD record (via Creden) shows Samui Paradise Group Co., Ltd. 0845566024656 registered on 19 Oct 2023 with THB 2M capital and its business type as a real estate agent/broker (TSIC 68201)",
+   "returns": "No guaranteed return language on the project page; homepage cites 'Annual Rental ROI 10%' for Koh Samui"
+  },
+  "claims": [
+   {
+    "claim": "Developer company Samui Paradise Group Co., Ltd. 0845566024656 is registered and active",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://data.creden.co/company/general/0845566024656"
+   },
+   {
+    "claim": "Over 15 years of expertise and 150+ villas delivered by the developer",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://data.creden.co/company/general/0845566024656"
+   },
+   {
+    "claim": "Company is a property developer",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://data.creden.co/company/general/0845566024656"
+   },
+   {
+    "claim": "Building permit obtained",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samuiparadisegroup.com/ulu-villas-lamai-koh-samui/"
+   },
+   {
+    "claim": "Construction progress",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samuiparadisegroup.com/ulu-villas-lamai-koh-samui/"
+   },
+   {
+    "claim": "Deposits protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samuiparadisegroup.com/ulu-villas-lamai-koh-samui/"
+   },
+   {
+    "claim": "Land ownership by the lessor / landowner",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samuiparadisegroup.com/ulu-villas-lamai-koh-samui/"
+   },
+   {
+    "claim": "Price from THB 11,900,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samuiparadisegroup.com/ulu-villas-lamai-koh-samui/"
+   },
+   {
+    "claim": "15 villas, about 390 m2 each",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samuiparadisegroup.com/ulu-villas-lamai-koh-samui/"
+   },
+   {
+    "claim": "15-month delivery",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://samuiparadisegroup.com/ulu-villas-lamai-koh-samui/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2023,
+   "developer_hq": "Maret, Koh Samui, Surat Thani, Thailand",
+   "developer_company": "Samui Paradise Group Co., Ltd., 0845566024656 (registered 19 Oct 2023, capital THB 2,000,000; registered business: real estate agent/broker)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Not listed; files annual statements (2023-2025) per DBD mirror",
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "4BR villa"
+   ],
+   "size_min_m2": 390,
+   "size_max_m2": 390,
+   "price_min": 11900000,
+   "price_max": null,
+   "currency": "THB",
+   "deposit_pct": 10,
+   "payment_plan": "10% reservation, 20% contract, 30% structure, 30% finishing, 10% handover",
+   "foreign_ownership": "30-year registered leasehold",
+   "rental_programme": "None by developer; refers buyers to third-party villa managers (homepage cites 10% annual rental ROI for Samui, not guaranteed)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pool",
+    "jacuzzi",
+    "rooftop pavilion and sala",
+    "sun deck",
+    "tropical garden",
+    "parking for 2 cars"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Koh Samui municipality (building permit); Land Office Koh Samui (lease registration)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Unit count and villa size published",
+   "Staged payments tied to construction milestones",
+   "Developer company registration number published and active"
+  ],
+  "flags": [],
+  "sources": [
+   "https://samuiparadisegroup.com/ulu-villas-lamai-koh-samui/",
+   "https://samuiparadisegroup.com/",
+   "https://samuiparadisegroup.com/about-us/",
+   "https://data.creden.co/company/general/0845566024656"
   ]
  }
 ]

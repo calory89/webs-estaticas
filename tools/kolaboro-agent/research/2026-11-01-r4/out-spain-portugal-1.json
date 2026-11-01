@@ -2019,6 +2019,599 @@
   ]
  },
  {
+  "slug": "vilamoura-terracota",
+  "name": "Terracota",
+  "developer": "Vilamoura World",
+  "area": "Vilamoura (Loule)",
+  "country": "Portugal",
+  "market": "Algarve",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.vilamouraworld.com/real-estate/terracota/",
+  "docs_url": "https://www.vilamouraworld.com/real-estate/terracota/",
+  "permit_number": null,
+  "docs_listed": [
+   "87 apartments, T2 to T4, 78/79 to 157 m2",
+   "price 'Starting at 700,000 EUR'",
+   "4 floor-plan PDFs (T2, T3, T4, rooftop) with gross private and exterior areas",
+   "A+ energy, AQUA+ and LiderA A certification claims",
+   "collective solar self-consumption community",
+   "no completion date, progress update or licence on the developer page",
+   "agent listing (Benoit Properties): estimated completion Q2 2027, payment plan 20/10/10/10/50, 'rental yield 7%'"
+  ],
+  "note": "87 T2 to T4 apartments in a pine-wooded condominium 10 minutes from Vilamoura centre, now 'starting at 700,000 EUR' (420,000 EUR at launch); press reported construction from May 2024 with completion in May 2026, while a current agent listing gives Q2 2027. The developer page shows no alvara, completion date or progress. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 700000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 7,
+   "completion": "2027-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 87,
+   "payment_plan": "Agent listing: 10,000 EUR reservation, 20% at contract (less reservation), 10% at 60, 120 and 180 days, 50% at deed (Q2 2027)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No alvara or licence number on the developer page or press",
+   "escrow": "No deposit guarantee or escrow mentioned",
+   "progress": "Developer page has no progress update; 2024 press: works began early May 2024, completion expected May 2026; agent listing now says estimated completion Q2 2027",
+   "plans": "Four floor-plan PDFs (T2, T3, T4, rooftop) on the developer page; the same four files are also linked from The Uncommon page",
+   "record": "No named completed residential projects with unit counts found for Vilamoura World / Vilamoura Lusotur",
+   "returns": "Developer page has no return language; agent listing states 'Rendimento do arrendamento: 7%' (not described as guaranteed)"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "verified_score": 0,
+  "claims": [
+   {
+    "claim": "87 apartments, T2 to T4, 78 to 157 m2",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://postal.pt/economia/vilamoura-apresenta-projetos-imobiliarios-terracota-e-nobilus/"
+   },
+   {
+    "claim": "Construction began early May 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://postal.pt/economia/vilamoura-apresenta-projetos-imobiliarios-terracota-e-nobilus/"
+   },
+   {
+    "claim": "Completion May 2026",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.benoitproperties.com/pt-pt/property/terracota/"
+   },
+   {
+    "claim": "Estimated completion Q2 2027 (agent)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.benoitproperties.com/pt-pt/property/terracota/"
+   },
+   {
+    "claim": "Prices start at 700,000 EUR (launch price 420,000 EUR)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.essential-algarve.com/property/vilamoura-just-launched-its-latest-real-estate-projects-terracota-and-nobilus/"
+   },
+   {
+    "claim": "About 20% sold at launch (2024)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.barlavento.pt/terracota-e-nobilus-sao-os-novos-projetos-imobiliarios-em-vilamoura/"
+   },
+   {
+    "claim": "Construction licence (alvara) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.vilamouraworld.com/real-estate/terracota/"
+   },
+   {
+    "claim": "Deposits protected",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.vilamouraworld.com/real-estate/terracota/"
+   },
+   {
+    "claim": "A+ energy, AQUA+ and LiderA A certifications",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.vilamouraworld.com/real-estate/terracota/"
+   },
+   {
+    "claim": "Rental yield 7% (agent)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.benoitproperties.com/pt-pt/property/terracota/"
+   },
+   {
+    "claim": "Developer is Vilamoura Lusotur, part of Arrow Global",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://constructorasanjose.com/en/n_SANJOSE-Portugal-realizara-la-Fase-II-de-The-Uncommon-Beach-Residences-Vilamoura-Quarteira-Loule-Algarve_1969.html"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Vilamoura, Quarteira, Portugal",
+   "developer_company": "Vilamoura Lusotur (part of Arrow Global), per contractor SANJOSE; trading as Vilamoura World (registration number not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-05",
+   "handover_promised": "2027-Q2",
+   "original_handover": "2026-05",
+   "delay_months": 13,
+   "unit_types": [
+    "T2",
+    "T3",
+    "T4",
+    "penthouse with rooftop"
+   ],
+   "size_min_m2": 78,
+   "size_max_m2": 157,
+   "price_min": 700000,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": 20,
+   "payment_plan": "Agent listing: 20% at contract, 3 x 10% within 180 days, 50% at deed",
+   "foreign_ownership": "Freehold (propriedade plena); no restriction on foreign buyers",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "pool with sand beach",
+    "private gardens",
+    "rooftops",
+    "gym and spa",
+    "underground parking and storage",
+    "co-working",
+    "playground",
+    "smart home"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Camara Municipal de Loule (alvara de construcao)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Floor plans with gross private and exterior areas published",
+   "Construction start reported by regional press (May 2024)",
+   "Sustainability certifications and solar community stated"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.vilamouraworld.com/real-estate/terracota/",
+   "https://www.vilamouraworld.com/real-estate/",
+   "https://www.essential-algarve.com/property/vilamoura-just-launched-its-latest-real-estate-projects-terracota-and-nobilus/",
+   "https://postal.pt/economia/vilamoura-apresenta-projetos-imobiliarios-terracota-e-nobilus/",
+   "https://www.barlavento.pt/terracota-e-nobilus-sao-os-novos-projetos-imobiliarios-em-vilamoura/",
+   "https://www.benoitproperties.com/pt-pt/property/terracota/",
+   "https://constructorasanjose.com/en/n_SANJOSE-Portugal-realizara-la-Fase-II-de-The-Uncommon-Beach-Residences-Vilamoura-Quarteira-Loule-Algarve_1969.html",
+   "https://www.vilamouraworld.com/wp-content/uploads/2025/02/Apartamentos-Tipo-T2.pdf"
+  ]
+ },
+ {
+  "slug": "palmares-signature-apartments-ii",
+  "name": "Signature Apartments II",
+  "developer": "Palmares Ocean Living & Golf",
+  "area": "Lagos / Odiaxere",
+  "country": "Portugal",
+  "market": "Algarve",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.palmaresliving.com/real-estate/singature-apartments-2/",
+  "docs_url": "https://www.palmaresliving.com/real-estate/singature-apartments-2/",
+  "permit_number": null,
+  "docs_listed": [
+   "44 apartments from 600,000 EUR, fully furnished and equipped",
+   "6 floor-plan PDFs (T1 to T3 duplex)",
+   "virtual tour",
+   "brochure and pricing on request",
+   "'Investment Potential ... attractive rental income' (no figure on page)",
+   "resort page: Phase II 'now under way'; Phase I sold out",
+   "footer: Palmares Signature Apartments RNET no. 10685"
+  ],
+  "note": "Second phase (44 apartments, from 600,000 EUR) of the RCR Arquitectes-designed Signature Apartments at Palmares, Lagos; completion was first reported for Q1 2025 and in June 2026 for the end of June 2026, when the promoter also advertised a guaranteed 5% net return for three years. Phase I (37 units) is registered as a tourist apartment complex (RNET 10685, opened 2023). (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 600000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 5,
+   "completion": "2026-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Phase I Signature Apartments: 37 tourist apartments, RNET 10685 registered 17 Jan 2023, opened 2023 (Turismo de Portugal RNT)",
+   "units": 44,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No alvara for Phase II; the RNET number in the footer (10685) is the tourism registration of Phase I, not a construction licence",
+   "escrow": "No deposit guarantee or escrow mentioned",
+   "progress": "Developer pages only say Phase II is 'under way'; press: completion due Q1 2025 (Apr 2023) and end of June 2026 (Jun 2026); no figure or dated photos",
+   "plans": "6 floor-plan PDFs for T1, T1+1, T1+1 duplex, T2, T2+1, T3 duplex",
+   "record": "Phase I: 37 apartments in the Turismo de Portugal register (RNET 10685, opened 2023, operator Palmares - Companhia de Empreendimentos Turisticos de Lagos, NIPC 500210446)",
+   "returns": "Barlavento (9 Jun 2026): promoter offers a guaranteed net return of 5% for the first three years; project page cites 'attractive rental income'"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "independent"
+  },
+  "verified_score": 3,
+  "claims": [
+   {
+    "claim": "Phase I Signature Apartments delivered and operating (37 units, opened 2023)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://rnt.turismodeportugal.pt/RNT/RNET.aspx?nr=10685"
+   },
+   {
+    "claim": "Operator is Palmares - Companhia de Empreendimentos Turisticos de Lagos S.A. (NIPC 500210446)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://rnt.turismodeportugal.pt/RNT/RNET.aspx?nr=10685"
+   },
+   {
+    "claim": "Phase II has 44 apartments",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.barlavento.pt/palmares-ultimas-unidades-signature-apartments/"
+   },
+   {
+    "claim": "Phase II completion Q1 2025",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.barlavento.pt/palmares-ultimas-unidades-signature-apartments/"
+   },
+   {
+    "claim": "Phase II completion end of June 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.barlavento.pt/palmares-ultimas-unidades-signature-apartments/"
+   },
+   {
+    "claim": "Guaranteed net return of 5% for the first three years",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.barlavento.pt/palmares-ultimas-unidades-signature-apartments/"
+   },
+   {
+    "claim": "80% sold (June 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.barlavento.pt/palmares-ultimas-unidades-signature-apartments/"
+   },
+   {
+    "claim": "Prices from 600,000 EUR",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://echoboomer.pt/signature-apartments-resort-palmares-ocean-living-golf-recebem-hospedes/"
+   },
+   {
+    "claim": "Construction licence (alvara) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.palmaresliving.com/real-estate/singature-apartments-2/"
+   },
+   {
+    "claim": "Deposits protected",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.palmaresliving.com/real-estate/singature-apartments-2/"
+   },
+   {
+    "claim": "Designed by RCR Arquitectes (Pritzker Prize)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://echoboomer.pt/signature-apartments-resort-palmares-ocean-living-golf-recebem-hospedes/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Odiaxere, Lagos, Portugal",
+   "developer_company": "Palmares - Companhia de Empreendimentos Turisticos de Lagos S.A., NIPC 500210446 (RNT register, PPRC report)",
+   "developer_projects_delivered": 1,
+   "developer_units_delivered": 37,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026-Q2",
+   "original_handover": "2025-Q1",
+   "delay_months": 15,
+   "unit_types": [
+    "T1",
+    "T1+1",
+    "T1+1 duplex",
+    "T2",
+    "T2+1",
+    "T3 duplex"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 600000,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold (propriedade plena); no restriction on foreign buyers",
+   "rental_programme": "Tourist exploitation option with own use in selected periods; guaranteed 5% net for 3 years reported (Barlavento, Jun 2026)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pool per unit type",
+    "shared gardens",
+    "private garage",
+    "resort pools",
+    "27-hole golf course",
+    "clubhouse",
+    "tennis and padel",
+    "fully furnished"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Camara Municipal de Lagos (alvara de construcao)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Phase I by the same promoter is completed and in the national tourism register (37 units, opened 2023)",
+   "Six floor plans published",
+   "Pritzker-winning architects named"
+  ],
+  "flags": [
+   {
+    "text": "Barlavento reported (9 Jun 2026) that the promoter offers a guaranteed net return of 5% for the first three years on Signature Apartments.",
+    "source": "https://www.barlavento.pt/palmares-ultimas-unidades-signature-apartments/"
+   },
+   {
+    "text": "Completion of Phase II was reported for Q1 2025 in April 2023 and for the end of June 2026 in June 2026, a slip of about 15 months.",
+    "source": "https://echoboomer.pt/signature-apartments-resort-palmares-ocean-living-golf-recebem-hospedes/"
+   }
+  ],
+  "sources": [
+   "https://www.palmaresliving.com/real-estate/singature-apartments-2/",
+   "https://rnt.turismodeportugal.pt/RNT/RNET.aspx?nr=10685",
+   "https://www.palmaresliving.com/wp-content/uploads/2026/07/Annual-Evaluation-Report-PPRC-PALMARES.pdf",
+   "https://www.barlavento.pt/palmares-ultimas-unidades-signature-apartments/",
+   "https://echoboomer.pt/signature-apartments-resort-palmares-ocean-living-golf-recebem-hospedes/"
+  ]
+ },
+ {
+  "slug": "vilamoura-the-uncommon",
+  "name": "The Uncommon",
+  "developer": "Vilamoura World",
+  "area": "Vilamoura (Loule)",
+  "country": "Portugal",
+  "market": "Algarve",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.vilamouraworld.com/real-estate/the-uncommon/",
+  "docs_url": "https://www.vilamouraworld.com/real-estate/the-uncommon/",
+  "permit_number": null,
+  "docs_listed": [
+   "92 apartments, T1 to T4, 64 to 251 m2, beachfront",
+   "price 'Starting at 740,000 EUR' (lower on the same page: 'From 530.000 EUR')",
+   "floor-plan PDFs (the same four files linked from the Terracota page)",
+   "brochure download button",
+   "concierge, housekeeping, maintenance services",
+   "The Vista Club membership benefits",
+   "A+ energy, AQUA+ and LiderA A certification claims"
+  ],
+  "note": "92 beachfront T1 to T4 apartments in Vilamoura; contractor SANJOSE says it completed Phase I (earthworks, foundations, concrete structure) and in March 2026 was awarded Phase II (finishes, installations, landscaping) by Vilamoura Lusotur, part of Arrow Global. The page gives two different starting prices (740,000 and 530,000 EUR) and no completion date, alvara or progress update. (checked 1 Nov 2026)",
+  "added": "2026-10-28",
+  "seed": {
+   "price": 740000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 92,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No alvara or licence number",
+   "escrow": "No deposit guarantee or escrow mentioned",
+   "progress": "Developer page silent; contractor SANJOSE reports Phase I structure complete and Phase II finishes awarded (Mar 2026)",
+   "plans": "Floor-plan download buttons, but they point to the same four PDFs used on the Terracota page (T2, T3, T4, rooftop; blocks A to C), so they may not be specific to this project; no T1 plan",
+   "record": "No named completed residential projects with unit counts found for Vilamoura World / Vilamoura Lusotur",
+   "returns": "No guaranteed returns; exclusive agent describes an optional professionally managed rental programme with no figures"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "verified_score": 1,
+  "claims": [
+   {
+    "claim": "92 residences with parking, outdoor pools and common areas",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://constructorasanjose.com/en/n_SANJOSE-Portugal-realizara-la-Fase-II-de-The-Uncommon-Beach-Residences-Vilamoura-Quarteira-Loule-Algarve_1969.html"
+   },
+   {
+    "claim": "Phase I (earthworks, indirect foundations, concrete structure, over 20,000 m2 gross area) completed",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://constructorasanjose.com/en/n_SANJOSE-Portugal-realizara-la-Fase-II-de-The-Uncommon-Beach-Residences-Vilamoura-Quarteira-Loule-Algarve_1969.html"
+   },
+   {
+    "claim": "Developer is Vilamoura Lusotur, part of Arrow Global",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://constructorasanjose.com/en/n_SANJOSE-Portugal-realizara-la-Fase-II-de-The-Uncommon-Beach-Residences-Vilamoura-Quarteira-Loule-Algarve_1969.html"
+   },
+   {
+    "claim": "Prices start at 740,000 EUR",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.vilamouraworld.com/real-estate/the-uncommon/"
+   },
+   {
+    "claim": "Completion date",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.vilamouraworld.com/real-estate/the-uncommon/"
+   },
+   {
+    "claim": "Construction licence (alvara) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.vilamouraworld.com/real-estate/the-uncommon/"
+   },
+   {
+    "claim": "Deposits protected",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.vilamouraworld.com/real-estate/the-uncommon/"
+   },
+   {
+    "claim": "Floor plans specific to The Uncommon",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.vilamouraworld.com/real-estate/the-uncommon/"
+   },
+   {
+    "claim": "Optional managed rental programme",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.essential-algarve.com/property/the-uncommon-brings-a-new-kind-of-coastal-living-to-vilamoura/"
+   },
+   {
+    "claim": "Fine & Country Algarve is the exclusive agency",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.essential-algarve.com/property/the-uncommon-brings-a-new-kind-of-coastal-living-to-vilamoura/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Vilamoura, Quarteira, Portugal",
+   "developer_company": "Vilamoura Lusotur (part of Arrow Global), per contractor SANJOSE; trading as Vilamoura World (registration number not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "T1",
+    "T2",
+    "T3",
+    "T4",
+    "penthouse with rooftop pool"
+   ],
+   "size_min_m2": 64,
+   "size_max_m2": 251,
+   "price_min": 740000,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold (propriedade plena); no restriction on foreign buyers",
+   "rental_programme": "Optional professionally managed rental programme (agent interview, no figures)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "beach access",
+    "concierge",
+    "housekeeping",
+    "maintenance",
+    "outdoor pools",
+    "private parking",
+    "rooftop pools",
+    "The Vista Club membership"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Camara Municipal de Loule (alvara de construcao)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Main contractor (SANJOSE, listed group) publicly reports structure complete and finishing phase awarded",
+   "No guaranteed-return marketing"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.vilamouraworld.com/real-estate/the-uncommon/",
+   "https://www.vilamouraworld.com/real-estate/",
+   "https://constructorasanjose.com/en/n_SANJOSE-Portugal-realizara-la-Fase-II-de-The-Uncommon-Beach-Residences-Vilamoura-Quarteira-Loule-Algarve_1969.html",
+   "https://www.essential-algarve.com/property/the-uncommon-brings-a-new-kind-of-coastal-living-to-vilamoura/",
+   "https://www.vilamouraworld.com/wp-content/uploads/2025/02/Apartamentos-Tipo-T2.pdf"
+  ]
+ },
+ {
   "slug": "abora-adeje-tenerife",
   "name": "Abora",
   "developer": "Metrovacesa",
