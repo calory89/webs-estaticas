@@ -1071,3 +1071,6 @@ pre.mail{white-space:pre-wrap;font-family:inherit;font-size:1rem;background:#fff
 .st-shipped .rm-n{background:var(--ok);color:#fff;border-color:var(--ok)}
 @media (max-width:760px){.rm-l{grid-template-columns:1fr}}
 .si em.k-building{background:rgba(255,255,255,.12);color:#E9E7E0;border:1px dashed rgba(255,255,255,.35)}
+.rp-form{display:grid;gap:14px}.rp-form textarea{font:inherit;padding:12px;border-radius:12px;border:1px solid var(--line);width:100%}
+.rp-chk{display:flex;gap:10px;align-items:flex-start;font-size:.92rem}.rp-chk input{width:20px;height:20px;margin-top:2px}.rp-msg{font-weight:600;margin:6px 0 0}
+.rp-steps{padding-left:20px;display:grid;gap:6px}
