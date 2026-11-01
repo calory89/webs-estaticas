@@ -656,5 +656,297 @@
     null
    ]
   }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "biom",
+  "name": "Biom",
+  "changed": {
+   "price_from": [
+    145000,
+    null
+   ],
+   "currency": [
+    "USD",
+    null
+   ],
+   "title_type": [
+    "leasehold",
+    null
+   ],
+   "lease_years_base": [
+    50,
+    null
+   ],
+   "advertised_yield_pct": [
+    12,
+    null
+   ],
+   "completion_year": [
+    2027,
+    null
+   ],
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "manta-livin",
+  "name": "Manta Livin",
+  "changed": {
+   "price_from": [
+    95000,
+    11000
+   ],
+   "title_type": [
+    "leasehold",
+    null
+   ],
+   "advertised_yield_pct": [
+    22,
+    11
+   ],
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "nara-villas",
+  "name": "Nara Villas",
+  "changed": {
+   "title_type": [
+    "leasehold",
+    null
+   ],
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "oasis-iii",
+  "name": "Oasis III",
+  "changed": {
+   "price_from": [
+    327500,
+    360000
+   ],
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "secret-inshi",
+  "name": "SECRET by INSHI",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "suku-residences",
+  "name": "Suku Residences",
+  "changed": {
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "breig-edem-i-villas",
+  "name": "EDEM I Villas",
+  "changed": {
+   "price_from": [
+    327500,
+    357500
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "ebano-santa-maria-panama",
+  "name": "Ebano",
+  "changed": {
+   "guaranteed_language": [
+    null,
+    false
+   ],
+   "permit_claim": [
+    null,
+    false
+   ],
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "morros-vita-serena-del-mar",
+  "name": "Morros Vita",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ],
+   "escrow_or_guarantee": [
+    "Fiduciary scheme administered by Alianza Fiduciaria; buyers linked to the fiduciary scheme",
+    "Fiduciary scheme administered by Alianza Fiduciaria; buyers linked to the fiduciario scheme"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "palm-jebel-ali-frond-a-villas",
+  "name": "Palm Jebel Ali - Frond A Villas",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "comfort-by-orbi-orbi-group",
+  "name": "Comfort by Orbi",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "al-mare-green-midtown-group",
+  "name": "Al Mare Green",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "querencia-dovec-group",
+  "name": "Querencia",
+  "changed": {
+   "price_from": [
+    209001,
+    208993
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "avrupa-konutlari-gunesli-artas",
+  "name": "Avrupa Konutları Güneşli",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9446,
+    9459
+   ],
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "becici-sea-view-building-value-one",
+  "name": "New residential building 200 m from Bečići beach (building 5)",
+  "changed": {
+   "price_from": [
+    203922,
+    217827
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "parkview-residence-limar-homes",
+  "name": "Parkview Residence",
+  "changed": {
+   "price_from": [
+    250000,
+    null
+   ],
+   "currency": [
+    "EUR",
+    null
+   ],
+   "completion_year": [
+    null,
+    2026
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "sea-cliff-imtiaz",
+  "name": "Sea Cliff by Imtiaz",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Bank United Bank Limited (Management Office) Escrow number 200927479",
+    "Bank United Bank Limited (Management Office), Escrow number 200927479"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "waterstone-st-leonards-sekisui-house",
+  "name": "Waterstone",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "rhea-by-sansiri",
+  "name": "Rhea by Sansiri",
+  "changed": {
+   "title_type": [
+    null,
+    "leasehold"
+   ]
+  }
  }
 ]
