@@ -104,14 +104,14 @@
    "theme": "Money and escrow",
    "title": "Currency exposure tool",
    "desc": "How much a payment plan costs if the currency moves 10% or 20%.",
-   "status": "next"
+   "status": "shipped"
   },
   {
    "n": 16,
    "theme": "Money and escrow",
    "title": "Late handover compensation calculator",
    "desc": "What the contract says you are owed for each month of delay.",
-   "status": "next"
+   "status": "shipped"
   },
   {
    "n": 17,
@@ -139,7 +139,7 @@
    "theme": "Money and escrow",
    "title": "Resale exit check",
    "desc": "What the contract allows if you need to sell before handover.",
-   "status": "next"
+   "status": "shipped"
   },
   {
    "n": 21,
