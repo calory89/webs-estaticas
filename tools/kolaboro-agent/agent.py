@@ -338,7 +338,7 @@ def public_cases(projects, latest):
     regw = (load(os.path.join(DATA, 'registry-watch.json'), {}) or {}).get('projects', {})
     for c in out:
         sx = sat.get(c.get('_slug'))
-        if sx and sx.get('status') in ('visible change', 'no visible change'):
+        if sx and (sx.get('status') == 'visible change' or (sx.get('status') == 'no visible change' and (sx.get('changed_pct') or 0) < 1.5)):
             c['sat'] = {'status': sx['status'], 'changed_pct': sx.get('changed_pct'), 'date': sx.get('date')}
         lt = latest.get(c.get('_slug')) or {}
         if lt.get('sha256'):
