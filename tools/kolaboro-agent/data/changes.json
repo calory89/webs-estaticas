@@ -1106,5 +1106,170 @@
     true
    ]
   }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "j-hills",
+  "name": "J-Hills",
+  "changed": {
+   "title_type": [
+    null,
+    "leasehold"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "ebruli-basaksehir",
+  "name": "Ebruli Başakşehir",
+  "changed": {
+   "price_from": [
+    281000,
+    407000
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "comfort-by-orbi-orbi-group",
+  "name": "Comfort by Orbi",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "querencia-dovec-group",
+  "name": "Querencia",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "avrupa-konutlari-gunesli-artas",
+  "name": "Avrupa Konutları Güneşli",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9460,
+    9462
+   ],
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "ellington-sands-i-ellington",
+  "name": "Ellington Sands I",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "mondomio-okinawa-onna-fuchaku-daiwa-house",
+  "name": "Mondomio Okinawa Resort Onna Village Fuchaku",
+  "changed": {
+   "title_type": [
+    null,
+    "freehold"
+   ],
+   "permit_claim": [
+    false,
+    true
+   ],
+   "permit_number": [
+    null,
+    "第BVJ-FUK24-10-0001号（令和6年04月04日）/第BVJ-FUK24-11-0001号（令和6年12月19日）/第BVJ-FUK24-12-0001号（令和8年03月27日）"
+   ],
+   "plans_published": [
+    false,
+    true
+   ],
+   "escrow_or_guarantee": [
+    null,
+    "（公社）不動産保証協会会員 (listed as seller/agent membership; no escrow or guarantee terms stated)"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "rhea-by-sansiri",
+  "name": "Rhea by Sansiri",
+  "changed": {
+   "price_from": [
+    140918,
+    140917
+   ],
+   "title_type": [
+    "leasehold",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "le-conde-2-bkk1-wangfu",
+  "name": "Le Condé 2 BKK1",
+  "changed": {
+   "price_from": [
+    null,
+    158056
+   ],
+   "currency": [
+    null,
+    "USD"
+   ],
+   "title_type": [
+    null,
+    "freehold"
+   ],
+   "guaranteed_language": [
+    false,
+    true
+   ],
+   "advertised_yield_pct": [
+    null,
+    6
+   ],
+   "completion_year": [
+    null,
+    2029
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "mamsha-palm-aldar",
+  "name": "Mamsha Palm",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
  }
 ]
