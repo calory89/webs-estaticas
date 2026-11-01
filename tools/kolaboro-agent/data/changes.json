@@ -5269,5 +5269,163 @@
     "R13 da Matrícula nº 135.051 do 1º Ofício de Registro de Imóveis de Balneário Camboriú"
    ]
   }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "morros-vita-serena-del-mar",
+  "name": "Morros Vita",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Fiduciary scheme administered by Alianza Fiduciaria; buyers to be linked to the fiduciary scheme ('vinculación de compradores al esquema fiduciario')",
+    "Fiduciary scheme administered by Alianza Fiduciaria, which 'vela por la correcta administración de los recursos'; buyers are linked to the 'esquema fiduciario'"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "dubovica-budva-residential-complex",
+  "name": "New residential complex in Dubovica",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "samana-sky-views-dpc",
+  "name": "Samana Sky Views",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "azizi-venice-14-dubai-south",
+  "name": "Azizi Venice 14",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "crystal-garden-cap-cana-gesproin",
+  "name": "Crystal Garden Cap Cana",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "comfort-by-orbi-orbi-group",
+  "name": "Comfort by Orbi",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "avrupa-konutlari-gunesli-artas",
+  "name": "Avrupa Konutları Güneşli",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9490,
+    9491
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "becici-sea-view-building-value-one",
+  "name": "New residential building 200 m from Bečići beach (building 5)",
+  "changed": {
+   "price_from": [
+    217827,
+    203831
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "rhea-by-sansiri",
+  "name": "Rhea by Sansiri",
+  "changed": {
+   "price_from": [
+    140818,
+    140918
+   ],
+   "title_type": [
+    "leasehold",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "botanica-luxury-krabi",
+  "name": "Botanica Luxury Krabi",
+  "changed": {
+   "extension_promised": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "the-ivory-chang-phueak-home-development-group",
+  "name": "The IVORY",
+  "changed": {
+   "price_from": [
+    62300,
+    62257
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "city-walk-love-lane-liverpool-habitia",
+  "name": "City Walk",
+  "changed": {
+   "permit_claim": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "harmony-ocean-front-ja-russi",
+  "name": "Harmony Ocean Front",
+  "changed": {
+   "permit_number": [
+    "R13 da Matrícula nº 135.051 do 1º Ofício de Registro de Imóveis de Balneário Camboriú",
+    "Registro de Incorporação R13 da Matrícula nº 135.051"
+   ]
+  }
  }
 ]
