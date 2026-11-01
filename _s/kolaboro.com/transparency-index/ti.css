@@ -53,7 +53,7 @@
 .ti-count{color:var(--muted);font-size:.92rem;margin:0}
 .ti-tools .btn{margin-left:auto;min-height:44px}
 .ti-leg{display:flex;flex-wrap:wrap;align-items:center;gap:4px 14px;font-size:.85rem;color:var(--muted);margin-top:14px}
-.ti-leg .sw{margin-right:-8px}
+.ti-leg .nw{white-space:nowrap}
 /* table */
 .ti-tw{overflow-x:auto;margin-top:10px;border:1px solid var(--line);border-radius:14px;background:var(--paper)}
 .ti-t{width:100%;border-collapse:collapse;font-size:.92rem;min-width:880px}
