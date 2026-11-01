@@ -2328,5 +2328,342 @@
    "all_six": false
   },
   "verified_score": 3
+ },
+ {
+  "slug": "arise-hill-sansai-ornsirin",
+  "name": "Arise Hill",
+  "developer": "Ornsirin Holding PCL (SET: ORN); EIA project owner North Home Co., Ltd.",
+  "area": "San Sai Noi, San Sai (Highway 118, Chiang Mai to Doi Nang Kaew)",
+  "country": "Thailand",
+  "market": "Chiang Mai",
+  "stage": "under construction",
+  "url": "https://ornsirin.co.th/en/property-item/arise-hill/",
+  "docs_url": "https://ornsirin.co.th/en/property-item/arise-hill/",
+  "seed": {
+   "price": 2000000,
+   "currency": "THB",
+   "title": "freehold condominium unit (foreign quota)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": "EIA approval ทส 1009.5/9584 (10 Apr 2025), report 256711-17",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "North Home Co., Ltd. (Ornsirin group): ONEP register lists The Astra and Astra Sky River condominiums in Chiang Mai as opened and operating; ORN SET FY2025 snapshot reports 2,108 MB sales revenue",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "developer: pet-friendly condo from 2M THB",
+   "developer: studio 27-32 sq m, 1BR 29-35, 1BR plus 37-39, 2BR 54-56 sq m with downloadable room plans and 360 degree views",
+   "developer: pool, public park, fitness; brochure, English and Chinese pages"
+  ],
+  "note": "Pet-friendly condominium on Highway 118 in San Sai by SET-listed Ornsirin, from 2M THB with room plans for four unit types. ONEP register shows EIA approved 10 Apr 2025 (ทส 1009.5/9584) for North Home Co., Ltd., status under construction; no completion date, unit count or progress published. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "Not published by developer. ONEP register report 256711-17, approval ทส 1009.5/9584 dated 10/04/2568, owner บริษัท นอร์ทโฮม จำกัด, Highway 118 San Sai Noi, status approved, under construction",
+   "escrow": null,
+   "progress": "No progress figure or dated update on developer page; register confirms construction",
+   "plans": "Developer page offers room plan downloads for studio, 1BR, 1BR plus and 2BR",
+   "record": "ONEP register: The Astra (North Home Co., Ltd.) and Astra Sky River opened and operating; ORN is SET-listed",
+   "returns": "No guaranteed return or yield on developer page"
+  },
+  "positives": [
+   "ONEP register confirms EIA approval and construction",
+   "Group's earlier Chiang Mai condos listed as operating on the register",
+   "Room plans for every unit type published"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project has an approved EIA",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=14344"
+   },
+   {
+    "claim": "Construction under way",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=14344"
+   },
+   {
+    "claim": "Located in San Sai, Chiang Mai",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=14344"
+   },
+   {
+    "claim": "Developer group delivered The Astra condominium",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=5333"
+   },
+   {
+    "claim": "Developer group delivered Astra Sky River",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=10127"
+   },
+   {
+    "claim": "Ornsirin is SET-listed",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://lssmedia.setlink.set.or.th/2025/YE/ORN-YE68-ListedCompanySnapshot-EN.html"
+   },
+   {
+    "claim": "Prices from 2M THB",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ornsirin.co.th/en/property-item/arise-hill/"
+   },
+   {
+    "claim": "Pets allowed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ornsirin.co.th/en/property-item/arise-hill/"
+   },
+   {
+    "claim": "Completion date published",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ornsirin.co.th/en/property-item/arise-hill/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Chiang Mai, Thailand",
+   "developer_company": "North Home Co., Ltd. (ONEP owner), subsidiary of Ornsirin Holding PCL",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Stock Exchange of Thailand (ORN); FY2025 sales revenue 2,108 MB",
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "1BR plus",
+    "2BR"
+   ],
+   "size_min_m2": 27,
+   "size_max_m2": 56,
+   "price_min": 2000000,
+   "price_max": null,
+   "currency": "THB",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold condominium unit in the 49% foreign quota",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Arise",
+   "amenities": [
+    "swimming pool",
+    "public park",
+    "fitness",
+    "pet zones"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "ONEP Expert Review Committee (EIA); San Sai local authority (building permit)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://ornsirin.co.th/en/property-item/arise-hill/",
+   "https://eia.onep.go.th/eia/detail?id=14344",
+   "https://eia.onep.go.th/eia/detail?id=5333",
+   "https://eia.onep.go.th/eia/detail?id=10127",
+   "https://lssmedia.setlink.set.or.th/2025/YE/ORN-YE68-ListedCompanySnapshot-EN.html"
+  ],
+  "permit_number": "EIA approval ทส 1009.5/9584 (10 Apr 2025), report 256711-17",
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 3
+ },
+ {
+  "slug": "prime-villa-samui-supalai",
+  "name": "Prime Villa Samui",
+  "developer": "Supalai PCL (SET: SPALI)",
+  "area": "Koh Samui (map point near Lipa Noi side of the island)",
+  "country": "Thailand",
+  "market": "Koh Samui",
+  "stage": "off-plan",
+  "url": "https://www.supalai.com/en/project",
+  "docs_url": "https://www.supalai.com/en/project/house/prime-villa-samui",
+  "seed": {
+   "price": 17590000,
+   "currency": "THB",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Supalai lists ready-to-move-in projects on its site (e.g. Supalai Scenic Bay Condo, Supalai Kram Khao Tao); ONEP register lists Supalai Icon Sathorn as opened and operating",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "developer: new pool villa project on Koh Samui, from 17.59M THB (project listing)",
+   "developer: registration form for 3 to 5+ bedroom villas, budgets above THB 7 million, buyer purpose incl. vacation home and rental",
+   "developer: map pin 9.4908, 99.9264 and graphic map",
+   "developer: agent registration and referral promotions for Phuket and Koh Samui"
+  ],
+  "note": "New pool villa project by Supalai on Koh Samui, listed from 17.59M THB with registration open for 3 to 5+ bedroom villas; the page gives no unit count, plans, tenure, permit or completion date and no ONEP record was found. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "No permit number published; no ONEP record found under the project name",
+   "escrow": null,
+   "progress": "No construction information published",
+   "plans": "Page menu lists a floor plan section but no plans were shown in the page content",
+   "record": "Supalai site lists ready-to-move-in projects; ONEP register shows Supalai Icon Sathorn approved to operate and operating (juristic person formed)",
+   "returns": "No guaranteed return or yield published"
+  },
+  "positives": [
+   "Large listed developer with completed projects on the ONEP register",
+   "Project location pin published"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Prime Villa Samui is a new Supalai project",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.supalai.com/en/project"
+   },
+   {
+    "claim": "Prices from 17.59M THB",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.supalai.com/en/project"
+   },
+   {
+    "claim": "Villas of 3 to 5+ bedrooms",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.supalai.com/en/project/house/prime-villa-samui"
+   },
+   {
+    "claim": "Project holds an EIA or building permit",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://eia.onep.go.th/services/web/open-api/eia-list?page=1"
+   },
+   {
+    "claim": "Supalai has delivered completed condominiums",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://eia.onep.go.th/eia/detail?id=10597"
+   },
+   {
+    "claim": "Location at 9.4908, 99.9264 on Koh Samui",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.supalai.com/en/project/house/prime-villa-samui"
+   },
+   {
+    "claim": "Ownership structure for foreigners stated",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.supalai.com/en/project/house/prime-villa-samui"
+   },
+   {
+    "claim": "Completion date stated",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.supalai.com/en/project/house/prime-villa-samui"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Bangkok, Thailand",
+   "developer_company": "Supalai Public Company Limited",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR villa",
+    "4BR villa",
+    "5BR villa"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 17590000,
+   "price_max": null,
+   "currency": "THB",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Supalai",
+   "amenities": [],
+   "lat": 9.491,
+   "lng": 99.926,
+   "permit_authority": "Koh Samui City Municipality (building permit); Department of Lands (land allocation if applicable)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.supalai.com/en/project/house/prime-villa-samui",
+   "https://www.supalai.com/en/project",
+   "https://eia.onep.go.th/eia/detail?id=10597",
+   "https://eia.onep.go.th/services/web/open-api/eia-list?page=1"
+  ],
+  "permit_number": null,
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 1
  }
 ]

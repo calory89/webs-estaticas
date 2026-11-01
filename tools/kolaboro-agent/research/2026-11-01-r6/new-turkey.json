@@ -1782,5 +1782,356 @@
   "added": "2026-11-01",
   "verified_score": 1,
   "permit_number": "Başakşehir Municipality building permits 26, 27, 28, 29, 30, 31 dated 21.01.2025 (blocks A1, A2, B1, B2, C, D)"
+ },
+ {
+  "slug": "tual-golyaka-dag-holding",
+  "name": "Tual Gölyaka",
+  "developer": "DAĞ Mimarlık ve Mühendislik Yapı Gayrimenkul Tic. San. A.Ş. (Dağ Holding), Emlak Konut GYO landowner (revenue sharing)",
+  "area": "Firuzköy / Gölyaka, Avcılar (west shore of Küçükçekmece Lake)",
+  "country": "Turkey",
+  "market": "Istanbul",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.emlakplatform.com.tr/en/projects/tual-golyaka",
+  "docs_url": "https://tualgolyaka.com/",
+  "docs_listed": [
+   "developer site: first stage of Emlak Konut's 1.8 million m2 Gölyaka district, raft foundations, pool and sauna, gallery",
+   "Emlak Konut year-end 2024 appraisal (Net Kurumsal, 27 Dec 2024): Avcılar Municipality permits 24-1 to 24-18 (06.03.2023) and 54-1 to 54-15 (07.03.2022), overall construction level 14%",
+   "Emlak Konut appraisal: revenue-sharing contract of 26.08.2022 with DAĞ (35% Emlak Konut share)",
+   "portal: from USD 160,212, 35% down and 72 instalments, delivery 30 May 2027, 70% complete"
+  ],
+  "note": "Low-rise first stage of Emlak Konut's new Gölyaka district in Avcılar, built by Dağ Holding under an Aug 2022 revenue-sharing contract. Emlak Konut's year-end 2024 appraisal lists 33 block permits from Avcılar Municipality and an overall construction level of 14%, while a portal now shows 70% and delivery on 30 May 2027 on a 72-month plan. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 160212,
+   "currency": "USD",
+   "title": "freehold (sale contract until title deed)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q2",
+   "permit_claim": false,
+   "permit_number": "Avcılar Municipality building permits 24-1 to 24-18 dated 06.03.2023 (parcel 811/7) and 54-1 to 54-15 dated 07.03.2022 (parcel 811/8)",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 14,
+   "progress_updates": false,
+   "developer_delivered": "Dağ Holding press item on its site: '30 Bin Konut Üretti' (30,000 homes produced); 35 years in real estate",
+   "units": null,
+   "payment_plan": "35% down, 72 instalments (portal)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Permit numbers per block listed in Emlak Konut appraisal of 27 Dec 2024; not on the developer site",
+   "escrow": "None published; portal says 'government guarantee' without detail",
+   "progress": "Appraisal 27 Dec 2024: overall construction level 14%; portal (updated 8 Jun 2026) shows 70% without source",
+   "plans": "No floor plans visible on the developer site text",
+   "record": "Dağ Holding site cites 30,000 homes produced and 35 years in real estate",
+   "returns": "No yield or guarantee on the developer site"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building permits for 33 blocks issued by Avcılar Municipality (2022-2023)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.emlakkonut.com.tr/images/uploads/original/a48f859f932e4f4484862426aa9c4715.pdf"
+   },
+   {
+    "claim": "Revenue-sharing contract dated 26.08.2022 with DAĞ, 35% Emlak Konut share",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.emlakkonut.com.tr/images/uploads/original/a48f859f932e4f4484862426aa9c4715.pdf"
+   },
+   {
+    "claim": "Construction level 14% at end 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.emlakkonut.com.tr/images/uploads/original/a48f859f932e4f4484862426aa9c4715.pdf"
+   },
+   {
+    "claim": "Construction 70% complete (2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/tual-golyaka"
+   },
+   {
+    "claim": "Delivery 30 May 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/tual-golyaka"
+   },
+   {
+    "claim": "181 apartments in 7 blocks",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.emlakkonut.com.tr/images/uploads/original/a48f859f932e4f4484862426aa9c4715.pdf"
+   },
+   {
+    "claim": "No negative municipal decisions on the parcels",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.emlakkonut.com.tr/images/uploads/original/a48f859f932e4f4484862426aa9c4715.pdf"
+   },
+   {
+    "claim": "Dağ Holding produced 30,000 homes",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dagholding.com.tr/"
+   },
+   {
+    "claim": "Government guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/tual-golyaka"
+   },
+   {
+    "claim": "Prices from USD 160,212",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/tual-golyaka"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Başakşehir, Istanbul, Turkey",
+   "developer_company": "DAĞ Mimarlık ve Mühendislik Yapı Gayrimenkul Ticaret Sanayi A.Ş.",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 30000,
+   "listed_or_audited": "Landowner Emlak Konut GYO listed on Borsa Istanbul; SPK-licensed appraisal",
+   "construction_start": "2022-03",
+   "handover_promised": "2027-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "3BR duplex",
+    "4BR duplex",
+    "5BR duplex",
+    "villa"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 160212,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 35,
+   "payment_plan": "35% down, 72 instalments",
+   "foreign_ownership": "Freehold title deed available to foreigners in Turkey",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Tual",
+   "amenities": [
+    "swimming pool",
+    "sauna",
+    "relaxation areas",
+    "lake views"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Avcılar Municipality",
+   "brochure_url": null
+  },
+  "positives": [
+   "Permit numbers and an independent construction level published in an SPK-licensed appraisal",
+   "Landowner is listed Emlak Konut GYO"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.emlakkonut.com.tr/images/uploads/original/a48f859f932e4f4484862426aa9c4715.pdf",
+   "https://www.emlakkonut.com.tr/TR-tr/gayrimenkul-degerleme-raporlari",
+   "https://tualgolyaka.com/",
+   "https://dagholding.com.tr/",
+   "https://www.emlakplatform.com.tr/en/projects/tual-golyaka"
+  ],
+  "added": "2026-11-01",
+  "verified_score": 2,
+  "permit_number": "Avcılar Municipality building permits 24-1 to 24-18 dated 06.03.2023 (parcel 811/7) and 54-1 to 54-15 dated 07.03.2022 (parcel 811/8)"
+ },
+ {
+  "slug": "evora-izmir-teknik-yapi-halk-gyo",
+  "name": "Evora İzmir",
+  "developer": "Teknik Yapı Teknik Yapılar San. ve Tic. A.Ş. - Halk Gayrimenkul Yatırım Ortaklığı A.Ş. joint venture, Emlak Konut GYO landowner (revenue sharing)",
+  "area": "Umurbey Mahallesi, Alsancak, Konak, İzmir",
+  "country": "Turkey",
+  "market": "Izmir",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.evoraizmir.com/",
+  "docs_url": "https://www.evoraizmir.com/",
+  "docs_listed": [
+   "developer site (TR, EN, AR): concept, social facilities (500-person ballroom, 485-seat conference hall, hotel), floor plans section, catalogue, show flat, virtual tour",
+   "Emlak Konut appraisal EMLKKNT-2024-041 (5 Jun 2024): permit table (Konak Municipality permits 71 and 75 of 2018 and 2020, amendments 11.04.2022), overall construction level 51.19%",
+   "Emlak Konut appraisal: revenue-sharing with Teknik Yapı - Halk GYO JV, 35% Emlak Konut share; no permit breaches found on site"
+  ],
+  "note": "Mixed-use towers next to the Kordon in Alsancak, İzmir, built by a Teknik Yapı and Halk GYO joint venture on Emlak Konut land and marketed in Turkish, English and Arabic. Emlak Konut's June 2024 appraisal lists permits first issued in 2018 and 2020 and puts construction at 51.19%; no newer progress figure or delivery date was found. (checked 1 Nov 2026)",
+  "seed": {
+   "price": null,
+   "currency": "TRY",
+   "title": "freehold (title deed after kat irtifakı)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": "Konak Municipality building permits no. 71 (27.09.2018, parcel 7700/1), no. 75 (02.11.2018, parcel 7698/1), nos. 75 and 71 (30.06.2020, parcels 8110/1 and 8115/3), amendments 11.04.2022",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 51.19,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Permit list with dates and numbers in Emlak Konut appraisal EMLKKNT-2024-041 (published on the Emlak Konut appraisal page); not on the developer site",
+   "escrow": "None published",
+   "progress": "Appraisal of 5 Jun 2024 states overall construction level 51.19%; nothing newer found",
+   "plans": "Developer site has a 'Kat Planları / Tüm Planlar' section",
+   "record": "No delivered projects named on the developer site text opened",
+   "returns": "Site slogan 'Kazanç orada' (profit is there) but no yield or guarantee"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building permits issued 2018-2020 with 2022 amendments",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.emlakkonut.com.tr/images/uploads/original/121ffb4c90db42448dfcbcc3031413f4.pdf"
+   },
+   {
+    "claim": "Revenue-sharing with Teknik Yapı - Halk GYO JV, 35% Emlak Konut share",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.emlakkonut.com.tr/images/uploads/original/121ffb4c90db42448dfcbcc3031413f4.pdf"
+   },
+   {
+    "claim": "Construction 51.19% complete (June 2024)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.emlakkonut.com.tr/images/uploads/original/121ffb4c90db42448dfcbcc3031413f4.pdf"
+   },
+   {
+    "claim": "No permit breaches found on site",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.emlakkonut.com.tr/images/uploads/original/121ffb4c90db42448dfcbcc3031413f4.pdf"
+   },
+   {
+    "claim": "Block A has 79 aparthotel units",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.emlakkonut.com.tr/images/uploads/original/121ffb4c90db42448dfcbcc3031413f4.pdf"
+   },
+   {
+    "claim": "Luxury hotel service, ballroom and conference hall",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.evoraizmir.com/"
+   },
+   {
+    "claim": "25 minutes to the airport, next to the tram",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.evoraizmir.com/"
+   },
+   {
+    "claim": "Long build: first permits 2018, about half built by mid-2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.emlakkonut.com.tr/images/uploads/original/121ffb4c90db42448dfcbcc3031413f4.pdf"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Istanbul, Turkey",
+   "developer_company": "Teknik Yapı Teknik Yapılar San. ve Tic. A.Ş.; Halk Gayrimenkul Yatırım Ortaklığı A.Ş.",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Halk GYO and landowner Emlak Konut GYO listed on Borsa Istanbul; SPK-licensed appraisal",
+   "construction_start": "2018-09",
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "apartments",
+    "aparthotel units",
+    "offices",
+    "shops"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "TRY",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold title deed available to foreigners in Turkey; site offered in Arabic and English",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Evora",
+   "amenities": [
+    "hotel",
+    "500-person ballroom",
+    "485-seat conference hall",
+    "art workshops",
+    "shopping",
+    "food and beverage"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Konak Municipality",
+   "brochure_url": null
+  },
+  "positives": [
+   "Permit list and independent construction level in an SPK-licensed appraisal",
+   "Joint venture partner and landowner are listed companies"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.emlakkonut.com.tr/images/uploads/original/121ffb4c90db42448dfcbcc3031413f4.pdf",
+   "https://www.emlakkonut.com.tr/TR-tr/gayrimenkul-degerleme-raporlari",
+   "https://www.evoraizmir.com/"
+  ],
+  "added": "2026-11-01",
+  "verified_score": 2,
+  "permit_number": "Konak Municipality building permits no. 71 (27.09.2018, parcel 7700/1), no. 75 (02.11.2018, parcel 7698/1), nos. 75 and 71 (30.06.2020, parcels 8110/1 and 8115/3), amendments 11.04.2022"
  }
 ]
