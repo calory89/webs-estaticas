@@ -1714,7 +1714,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "795725a7f7381bd4174253ddbcd40366be88319e0b528646be1e697f3f46141a",
+    "sha256": "75d75bd84f1e03339a661b506fe4ff66871cc5a667174b4c22beac213dc1c8b1",
     "date": "2026-11-01"
    },
    "history": [
@@ -3741,7 +3741,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "10db011e0dde7594c9a0b3922be87954bed21f5ec63d5a06dfe1c445241ad29d",
+    "sha256": "6e319cd4a4433a91db04170e775c1f5e3575d3a281e4d2b3e1b98974d88feb0f",
     "date": "2026-11-01"
    },
    "history": [
@@ -4011,7 +4011,7 @@
    "overdue": null,
    "profile": 11,
    "fp": {
-    "sha256": "ded1dd8d9ddd3faddc52f32210dda79d21149fb9d497900cf53cf83fc1521476",
+    "sha256": "1aefa4735ea2984ab9a8aeadfc2f435531dcaca26bd77e8ca1ce87cc2eff382c",
     "date": "2026-11-01"
    },
    "history": [
@@ -4058,10 +4058,10 @@
      "to": false
     },
     {
-     "d": "2026-10-31",
+     "d": "2026-11-01",
      "f": "plans published",
-     "from": null,
-     "to": true
+     "from": false,
+     "to": null
     }
    ]
   },
@@ -6170,7 +6170,7 @@
     "date": "2026-11-01"
    },
    "fp": {
-    "sha256": "0f0b6570be017949b065641de5974fc6df73cd4f7f0dacb1a8863a7710ccbf94",
+    "sha256": "e2c6d046d9a7c631df447f2adc63e325bb345c00a9bb0463cd2ad8c696e329e5",
     "date": "2026-11-01"
    },
    "history": [
@@ -6179,6 +6179,12 @@
      "f": "plans published",
      "from": true,
      "to": null
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": null,
+     "to": true
     }
    ]
   },
@@ -6308,7 +6314,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "3880db297721a5b2716320f2ea05cefc85648ff3d82662f4ce4ea4cb7268d44f",
+    "sha256": "615380d844b3a234b19e05c079a6ba31e198142c98905dabb2d47c14eaadc26a",
     "date": "2026-11-01"
    }
   },
@@ -7357,7 +7363,7 @@
    "overdue": null,
    "profile": 14,
    "fp": {
-    "sha256": "2b227a6baa024b6276566f17951d6503ab7614cd8b4993daa5797bb86e9c5840",
+    "sha256": "97f0cdda069862f73115367fba93cf5ac3ce21bb8292b216be3243eb7becdb6c",
     "date": "2026-11-01"
    },
    "history": [
@@ -7671,7 +7677,7 @@
     "date": "2026-11-01"
    },
    "fp": {
-    "sha256": "b00442c2c6b06f0731e0ae6a315933a8db9d80d45f363a1f385d3f5846ee7704",
+    "sha256": "3cee03c6e97b4bf856ce5a8f3c1bc7f083074473aa144ac48108352ac49e6df9",
     "date": "2026-11-01"
    },
    "history": [
@@ -8945,7 +8951,7 @@
    "overdue": null,
    "profile": 14,
    "fp": {
-    "sha256": "4ea3b7711c8c4f6ac06cdb13178ec191d39a5e670ca74d8314fee14abb9073c7",
+    "sha256": "58fe6e18f212bf9c1f7e793bddc46f7fc830f8e999f75ade563390c1779655aa",
     "date": "2026-11-01"
    },
    "history": [
@@ -9144,7 +9150,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "8f0c922af68d9b1fb8ae55ad4946435a164a8fdee1e3f0451e302b2be2ddf622",
+    "sha256": "a745751e2d5fc628c87700b624ce8d4ea1a5cfa5b224992b20d8c344057fd4ac",
     "date": "2026-11-01"
    }
   },
@@ -10203,7 +10209,7 @@
    "checked": "1 Nov 2026",
    "invited": null,
    "q": [
-    "Permit Registro de Incorporação R13 da Matrícula nº 135.051 is published: does it exist in the official register and match this plot?",
+    "Permit Registro de Incorporação R13 da Matrícula nº 135.051 do 1º O is published: does it exist in the official register and match this plot?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
@@ -10227,7 +10233,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "ff2205ac1d0d1b078c9cbf7dbcb1ec2aee3f3e989644532594a510338b1f4fdf",
+    "sha256": "7091c605931de437f484d0d7a6eec3b6555fa15a459205870389cf1683d6b742",
     "date": "2026-11-01"
    }
   },
@@ -10423,7 +10429,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "f26cedb6c7d971dfbf546741312a799f2a72a0f5e8a609d65bf7c4c0f5f23a19",
+    "sha256": "bc8a8e9fb447cd62eb3e68aa615d612bf3212d42e3df0b6503b35ea89fd11866",
     "date": "2026-11-01"
    }
   },
@@ -10487,7 +10493,7 @@
    "overdue": null,
    "profile": 19,
    "fp": {
-    "sha256": "dbf7fc9f1871d55c31314c22f3f3076d53b38974a1040d772193fdf54aafd3f3",
+    "sha256": "b470d3add2937d8d36dc0c569ed3b7b655db07ab5db6746d6b4b0b1f723a8e3a",
     "date": "2026-11-01"
    }
   },
@@ -12250,7 +12256,7 @@
    "overdue": null,
    "profile": 16,
    "fp": {
-    "sha256": "9f27f9d241379de53562b219a6d593426a4f2e11611084a2fad33f792c9cb3f8",
+    "sha256": "dae033c284f6dcb8f0325a47e99d6909412238715a225f0919406ac48cc6a7d0",
     "date": "2026-11-01"
    },
    "history": [
@@ -13199,7 +13205,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "59bc7d35aaf47e363a36a7ec65326421e6031c17a7677b3387ffd76bc54a9d0f",
+    "sha256": "f7a6b1e2dc155579314f7fa763777a0d3877d2a0a2de7a67164588eb07066f90",
     "date": "2026-11-01"
    }
   },
@@ -14639,7 +14645,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "e59ac9f7ccd014064d0b6c43a9706706a121ca8c63679183d5e7ff9f00d9f281",
+    "sha256": "0b202ff38e04e3ecd0b34f7f02b9196dfe20ec1c82973aa39fa8b2e4f2451322",
     "date": "2026-11-01"
    }
   },
@@ -14769,7 +14775,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "c5a750c844d8f5ed66469e8b11e352b5a7cafb0a7404726a4e91e5dfc4b33178",
+    "sha256": "fe009f1d0c942ceeab8f6179dfbab5f7d87a77a40a05f611ff2552c2a3bce197",
     "date": "2026-11-01"
    }
   },
@@ -14833,7 +14839,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "4d499c417924319a28074f5c3aaadff16c14105f60e875004c379929adb7f8e3",
+    "sha256": "93493189567db8a66e191cf14e463828d2cd7aea88101ddeb4034ec49c9669e9",
     "date": "2026-11-01"
    }
   },
@@ -16123,7 +16129,7 @@
    "overdue": null,
    "profile": 16,
    "fp": {
-    "sha256": "4ef18011940b6dc0c805d6c1bfc5f2db0360badaffc69033b7bacf8e744ce210",
+    "sha256": "a1babb87584c177bd6d72d2e666b7a69f7b8bf914f97cdadb86247a1988d1288",
     "date": "2026-11-01"
    },
    "history": [
@@ -16150,6 +16156,12 @@
      "f": "plans published",
      "from": true,
      "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
     }
    ]
   },
@@ -18439,7 +18451,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "3242cebfb329fe6d3f77fd22af420d33635bc94f579c35f061c2caa945a7e4d4",
+    "sha256": "32e23ff0872c9e73d88935257f61acc0902c21ed45745ec97a5913bf204324d0",
     "date": "2026-11-01"
    },
    "history": [
@@ -18472,6 +18484,12 @@
      "f": "plans published",
      "from": false,
      "to": true
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
     }
    ]
   },
@@ -20087,7 +20105,7 @@
    "checked": "1 Nov 2026",
    "invited": null,
    "q": [
-    "Permit 4019 is published: does it exist in the official register and match this plot?",
+    "Permit #4019 is published: does it exist in the official register and match this plot?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2028: does progress on site match?"
    ],
@@ -20110,7 +20128,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "f4a687ecef56589eea1dfd767d19bee94a0861509725a74d4f2c4aadd9f16751",
+    "sha256": "73e3f4381d32f7f19e629ae2b1d70a613cc0f213ed6133a4117dc2feade82b9d",
     "date": "2026-11-01"
    }
   },
@@ -21319,7 +21337,7 @@
    "overdue": null,
    "profile": 16,
    "fp": {
-    "sha256": "4c750fb45f00b176505e124f78984fc4623631e69cdd6a207e8296fe7953c552",
+    "sha256": "0631d471722cd1eb5d5b05e4f86bbc55c52ca51477d4361c5942f14f6b883488",
     "date": "2026-11-01"
    }
   },
@@ -21449,7 +21467,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "336b27018768f666666f323c36c64cc826a1b5dfe20d287b3817bf46442943a2",
+    "sha256": "c1078ed8f862171c92fa6e0eda2845fdc11bc68064eaab33af9198a9bae66413",
     "date": "2026-11-01"
    }
   },
@@ -21580,7 +21598,7 @@
    "overdue": null,
    "profile": 8,
    "fp": {
-    "sha256": "b8f895524bc341560f00491afcf7959d5e96bde90687ab63f6f7f9a917d5d59d",
+    "sha256": "0ca9565a8bbd2afd8592b16c5fabe6dea05252d4f59b60aa4632518161151297",
     "date": "2026-11-01"
    }
   },
@@ -22361,7 +22379,7 @@
    "overdue": null,
    "profile": 10,
    "fp": {
-    "sha256": "b3800e6b4c10df6e778711ad270dea89893c5cb5f600015b66d14ecbbc31cfaf",
+    "sha256": "98241109df88498d4d1518c649172bc5bfb0cfdd099d79f5a4f0a630060d71bf",
     "date": "2026-11-01"
    },
    "history": [
@@ -22459,7 +22477,7 @@
    "overdue": null,
    "profile": 11,
    "fp": {
-    "sha256": "e4cdc4f9d6ea6273ca23154225bdbc1e6e34186f83332527ae3c585cb27b2526",
+    "sha256": "8e5a5b51d9b8b4bbec9fab2686365be86f892b3541206a5cf751502c424d25fb",
     "date": "2026-11-01"
    },
    "history": [
@@ -22492,6 +22510,12 @@
      "f": "plans published",
      "from": true,
      "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
     },
     {
      "d": "2026-10-31",
@@ -22562,7 +22586,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "3a151956b8a6b5cc3a64ca3bc22f525ebe587b2ef38c590c3a36729c823107ba",
+    "sha256": "1015f2748f1968af38cb9cdcf36d61f4101243463c9ef3e0b27fafb383d24970",
     "date": "2026-11-01"
    }
   },
@@ -22627,7 +22651,7 @@
    "overdue": null,
    "profile": 17,
    "fp": {
-    "sha256": "093867796003f17f35ca4f63c1051531f4e50b001dfdd00dc472f05f2b6272d7",
+    "sha256": "9985f61a066fadd81371db0713f6b002fe16b08e5e74dff359f44464786d9c8b",
     "date": "2026-11-01"
    },
    "history": [
@@ -24221,7 +24245,7 @@
    "overdue": null,
    "profile": 14,
    "fp": {
-    "sha256": "d40d586aa67e598b06d503c4dbc1c4af0708b2e73f0fa8abe5ae04ab97a2ebd8",
+    "sha256": "fbeccc4a6a4b885ccc066b81198c3648ed28c235de50f14265061ae964c204cf",
     "date": "2026-11-01"
    }
   },
@@ -24692,7 +24716,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "d04c41f6979c195f28a042d6ab5dd35b93fde920473e739c8518d7a331588bef",
+    "sha256": "e0a03741a616e4fc0f47915064da48a7e244fc4727cf3a03c17ccb305ad8f95b",
     "date": "2026-11-01"
    }
   },
@@ -24824,7 +24848,7 @@
    "overdue": null,
    "profile": 10,
    "fp": {
-    "sha256": "dd2715119462e2d0c794c37f92392be5eac65e940a16fa2951fa9a0d45b45fba",
+    "sha256": "87be73e5589946c292d950fd4dcfe7933b293f40b6b5c577e0e41d89e990fc1d",
     "date": "2026-11-01"
    }
   },
@@ -25170,7 +25194,7 @@
    "overdue": null,
    "profile": 16,
    "fp": {
-    "sha256": "dc6d408ef0cf2c77611230bc7bd7b47a47d5f694c6203932dc324f17c547d266",
+    "sha256": "21082c0ff5c41182593193a6500c55eae74f727acf16334cc9b2e86c7851de20",
     "date": "2026-11-01"
    }
   },
@@ -25306,7 +25330,7 @@
    "overdue": null,
    "profile": 20,
    "fp": {
-    "sha256": "68564063e33aeccd5add65ad0c951b5495457d290b56a32d6ffc8ff9d2755c20",
+    "sha256": "3c98ce85e09b05ccc1c448243803432a3456bde5bf45c933fa3b5b4bfe705f5e",
     "date": "2026-11-01"
    },
    "history": [
@@ -25742,7 +25766,7 @@
    "overdue": null,
    "profile": 10,
    "fp": {
-    "sha256": "0b6511f6f0d48f21ef3a8a354e701cf2d6b5eb7183827b3a7093278bccc5376c",
+    "sha256": "615cad6ef237ce3f70e2a71407fc6971ae2ec58a13e1d383dc9eb3588b8ee72d",
     "date": "2026-11-01"
    }
   },
@@ -26739,7 +26763,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "574299bb3952fcac270b7ea971f93ed87faebd13a1071708028098738bfdda9c",
+    "sha256": "020952568843d325260f13cb84d6f26d3217c4f45e11243df56afd9dfd9255d8",
     "date": "2026-11-01"
    },
    "register": {
@@ -26881,7 +26905,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "bd587beb8487efaf69eed14ffb7615b6cfc61300c14e1855c5f82248480ab407",
+    "sha256": "a12a38c81454f6e64ad44985d7454d9796160973a5cebfbdf23de1ddd93e44de",
     "date": "2026-11-01"
    }
   },
@@ -27862,7 +27886,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "dc97e9ea9c3c02be14243be643de7f8ab09d91f816d3d606a8db9cd7f417b4a8",
+    "sha256": "706a6a7c98176d05fc676ef6c4ae9e586ae5e36571782d126fed788337eae01d",
     "date": "2026-11-01"
    },
    "history": [
@@ -27895,6 +27919,12 @@
      "f": "plans published",
      "from": true,
      "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
     }
    ]
   },
@@ -29803,7 +29833,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "6abb08e355ed1c73f54af0fc014216f22ce626084b4e9ce05f16d5ca61e506da",
+    "sha256": "cea01ca8230159aa0181354d1939068c12be54bfca81a56e1cc1645cff126623",
     "date": "2026-11-01"
    }
   },
@@ -30140,7 +30170,7 @@
    "overdue": null,
    "profile": 14,
    "fp": {
-    "sha256": "c741be4d486678b109365e5a7ac20240941b909fb7b63f7963cdf5e7ba97b059",
+    "sha256": "2c101c7cdd45aec138c9ae89c7800a6386c84c2f676c86a253a554d4af4ea045",
     "date": "2026-11-01"
    }
   },
@@ -30674,7 +30704,7 @@
    "country": "Mexico",
    "region": "Los Cabos",
    "docs": false,
-   "plans": true,
+   "plans": false,
    "band": "$400k and up",
    "done": 2027,
    "title": "fideicomiso (restricted zone)",
@@ -30685,7 +30715,7 @@
     "permit": 0,
     "escrow": null,
     "progress": null,
-    "plans": true,
+    "plans": false,
     "record": true,
     "returns_ok": true,
     "researched": [
@@ -30697,7 +30727,7 @@
      "returns_ok"
     ]
    },
-   "score": 3,
+   "score": 2,
    "max": 6,
    "flags": [],
    "notes": [],
@@ -30729,7 +30759,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "5dafebd05dd3d392102e9d368bad1cda0568284a8ba2130133fd001cb67a68e5",
+    "sha256": "c4a3fd61666dc8ab7e7759d635f72b7caa4bfb62b754810506270d071a8efc46",
     "date": "2026-11-01"
    },
    "history": [
@@ -30756,6 +30786,12 @@
      "f": "plans published",
      "from": false,
      "to": true
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
     }
    ]
   },
@@ -32516,7 +32552,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "b2bcb36cfe4204f91330dd4a6aaf73aa80d5261005a8501767fa0902c7c56dc7",
+    "sha256": "da831842771d0cac10adc7bf02e48b219dea1a2ac90a98d4b1e9d6f6a5ac2588",
     "date": "2026-11-01"
    }
   },
@@ -33527,7 +33563,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "bad1b9012a86cec092914bec26770f861b248f81b52745b5a843e478740e96ea",
+    "sha256": "45fa890da73f623a9a86be1c655a3073cc24748c506323120f64f953b15b71de",
     "date": "2026-11-01"
    }
   },
@@ -33856,7 +33892,7 @@
    "overdue": 35,
    "profile": 10,
    "fp": {
-    "sha256": "8931fd055c2d28d26e1d9747ea9fc82afbe33b0c8e36bd60ef3c8302c0ae7a42",
+    "sha256": "622e4ecbf8681a3d7e826a8eb729c7fc8e4f224f9b7012c6afb7dc8501d046c0",
     "date": "2026-11-01"
    }
   },
@@ -34862,7 +34898,7 @@
     "date": "2026-11-01"
    },
    "fp": {
-    "sha256": "31fee24177cbe86bdc8538a0f9d6384b9c5e106002377924fa81b6d3f61a0a54",
+    "sha256": "926148a4ef4f5cb1f23d3c90b8ff1f35bc19ed61f34f0bfc0573a0e9b8f8d1a0",
     "date": "2026-11-01"
    }
   },
@@ -35066,7 +35102,7 @@
     "date": "2026-11-01"
    },
    "fp": {
-    "sha256": "e8c16fdbdbaad8462338695605fc05375c585d8f5849c34da836a69e41323206",
+    "sha256": "05833b3eb89a0b60f7af22a5c677920f18cef79a4ae0d61bb27088dc84070877",
     "date": "2026-11-01"
    }
   },
@@ -35336,7 +35372,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "5dfed160246e0af79d164e741107e1b076f62457ba4d8985dc20bbe7c4badaf5",
+    "sha256": "87fd1513d090403580fb0f2d5f78e1d891056c3be7aa8ec05144920ea453c234",
     "date": "2026-11-01"
    },
    "history": [
@@ -35481,7 +35517,7 @@
    "overdue": null,
    "profile": 10,
    "fp": {
-    "sha256": "4f79bf7c99052e29d67f007a6a9fa15cf7fde891f0bc3ae2a4f78323a280c4fe",
+    "sha256": "7ec1c3576e81371ac133a91abac170f5c3d79852b84d3e5c045c42b426d52ff9",
     "date": "2026-11-01"
    }
   },
@@ -36348,7 +36384,7 @@
    "overdue": null,
    "profile": 10,
    "fp": {
-    "sha256": "c0c7faa7cb1e47db66aba5161a23efbc004135d1ebfb3d9da071e58c36ba7492",
+    "sha256": "fd50b6b62bec9b57b14637b7d096dfb3c4807a68541762c2ddaa48ab433a01a6",
     "date": "2026-11-01"
    }
   },
@@ -36543,7 +36579,7 @@
    "overdue": null,
    "profile": 10,
    "fp": {
-    "sha256": "fba2de6da9a484257211a25252d31204d633c366e0f78c4739c58f7ffde7c619",
+    "sha256": "6a1f3b4e99d49692b575b265106f6706ca1f339f45cda302b813bc34ec83d8d5",
     "date": "2026-11-01"
    },
    "history": [
@@ -37549,7 +37585,7 @@
    "overdue": null,
    "profile": 16,
    "fp": {
-    "sha256": "eadb6175b62a2607e4e726742c2f3bb4976953f2867967d12d953f145e456207",
+    "sha256": "7110a265e6d487c7cc42bfafb22ef2b5d43f3690e81442e87c3437eb3804339c",
     "date": "2026-11-01"
    },
    "history": [
@@ -37582,6 +37618,12 @@
      "f": "plans published",
      "from": false,
      "to": true
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
     }
    ]
   },
@@ -39852,7 +39894,7 @@
    "overdue": null,
    "profile": 11,
    "fp": {
-    "sha256": "d59f6f3c3859349aff972da5798472026a46f015abf0bdbcc542d073c83ad9ff",
+    "sha256": "ebb6ab2f3b221889b862ee5c23d323e6a4cc6a37438082250110b5852373a6d9",
     "date": "2026-11-01"
    },
    "register": {
@@ -39924,7 +39966,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "28bb0e4c186da61b0cbd58f8c21a5fc79c06adcfe375b007f0bf8d62e9c82e88",
+    "sha256": "1051fb409a524d12ede892e6e5d47ca5e3ab8227c816755bc8962d55a50240a4",
     "date": "2026-11-01"
    },
    "register": {
@@ -41799,7 +41841,7 @@
    "plans": true,
    "band": "$100k to $200k",
    "done": 2028,
-   "title": "freehold (foreign quota units) or leasehold",
+   "title": "leasehold",
    "lease": null,
    "yield": null,
    "units": 295,
@@ -41828,6 +41870,7 @@
    "checked": "1 Nov 2026",
    "invited": null,
    "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
@@ -41851,7 +41894,7 @@
    "overdue": null,
    "profile": 14,
    "fp": {
-    "sha256": "b50c6013221859546d695cc9c843c66e0124af6a556577a8d9a739e54357586c",
+    "sha256": "2a972ff68903253d060735d0a54a25aa8cc133404ca4c3987e606cdf6e5a8b1e",
     "date": "2026-11-01"
    }
   },
@@ -42845,7 +42888,7 @@
    "overdue": null,
    "profile": 5,
    "fp": {
-    "sha256": "80f5ad81080e34d48d592433c997777ddabbbcdc96a812d1e9032a4cbc2f9a1d",
+    "sha256": "63bb9f2d747a3d346030b637893f7fae7fb6a25a1a193c6f46d454762a4d90dd",
     "date": "2026-11-01"
    }
   },
@@ -43115,7 +43158,7 @@
    "region": "Portugal",
    "docs": false,
    "plans": true,
-   "band": "$200k to $400k",
+   "band": "$400k and up",
    "done": 2030,
    "title": "freehold",
    "lease": null,
@@ -43169,7 +43212,7 @@
    "overdue": null,
    "profile": 14,
    "fp": {
-    "sha256": "2eb08f47a82a47d3c492b97ec17cdce7faf5d92da07e3203fb7e26e880eb9397",
+    "sha256": "42df930de805a31c322138b9fd61531541552a48fb8d077f668b420f1204f0b0",
     "date": "2026-11-01"
    }
   },
@@ -44255,7 +44298,7 @@
    "overdue": null,
    "profile": 8,
    "fp": {
-    "sha256": "d82a83a98f087585ceaaebe1fee9852c613581173e91078fa40fad84198078b1",
+    "sha256": "50a69530d2894db5a6c2c17c19954255dd706e7359566bc358d03da5320fa188",
     "date": "2026-11-01"
    },
    "history": [
@@ -46687,7 +46730,7 @@
    "country": "Saudi Arabia",
    "region": "Saudi Arabia",
    "docs": true,
-   "plans": true,
+   "plans": false,
    "band": "$400k and up",
    "done": 2026,
    "title": "freehold",
@@ -46698,7 +46741,7 @@
     "permit": 2,
     "escrow": null,
     "progress": null,
-    "plans": true,
+    "plans": false,
     "record": false,
     "returns_ok": false,
     "researched": [
@@ -46710,16 +46753,16 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 1,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "caution",
    "read": true,
    "checked": "1 Nov 2026",
    "invited": null,
    "q": [
-    "Permit Wafi license 75/1 is published: does it exist in the official register and match this plot?",
+    "Permit 75/1 is published: does it exist in the official register and match this plot?",
     "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2026: does progress on site match?",
@@ -46744,7 +46787,7 @@
    "overdue": null,
    "profile": 7,
    "fp": {
-    "sha256": "e99854dc2524633953a875def67421b2ac4d1875b276618026fde3b4d8b8bd81",
+    "sha256": "5bd9d792b92108f435f0eb171c71d65ff9cc3bd521111d409b7a10da89df8341",
     "date": "2026-11-01"
    },
    "history": [
@@ -46759,6 +46802,12 @@
      "f": "guaranteed-return language",
      "from": false,
      "to": true
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": null
     }
    ]
   },
@@ -48462,7 +48511,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "7a1eb77b0268b855b87c038b5cdac261b24be86381ae8f3739392f994a5a2cc8",
+    "sha256": "27e144f34ad8c2eb44634527e380671d929eba4938734196d4b73682c08e115a",
     "date": "2026-11-01"
    }
   },
@@ -48859,7 +48908,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "f387e325543b3b4a0fd53a428991ce4cf9fc7089608ababd18e8c7f2fe5b1616",
+    "sha256": "fbacc1bddb473ff0a8d78006c4b1b875722963e1adcd255a773582da64c4d4d9",
     "date": "2026-11-01"
    }
   },
@@ -51775,7 +51824,7 @@
   "overdue": 26,
   "overdue_avg_months": 7.2,
   "delayed": 94,
-  "changes_detected": 222,
+  "changes_detected": 232,
   "sat_watched": 85,
   "sat_no_change": 20,
   "register_watched": 21
@@ -51783,7 +51832,7 @@
  "seal": {
   "date": "2026-11-01",
   "count": 694,
-  "root": "0b0118aaf93600279269ffeae310c2188d8a5ab3a3138daf6bdb29fcda9af820",
+  "root": "e66c1c1bff270b1ae37747a08cccfd4a2785b79b9088e462eed5d604d0f16215",
   "method": "root = sha256 of the lines \"ID SHA256\" (one per project with a fingerprint, sorted by id, each ending with a newline); each SHA256 is the hash of the developer page text as read by the agent; the root is timestamped in Bitcoin through OpenTimestamps",
   "stamped": true
  },
@@ -51791,37 +51840,142 @@
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Public roadmap: 100 features, 23 shipped, 10 building, every one tracked"
+   "t": "Public roadmap: 42 of 100 features shipped, every one tracked"
   },
   {
    "d": "2026-11-01",
-   "k": "building",
-   "t": "Building now: Payment plan risk score"
+   "k": "feature",
+   "t": "Deposit protection finder: Shows which protection exists in each market and how to ask for it"
   },
   {
    "d": "2026-11-01",
-   "k": "building",
-   "t": "Building now: Total cost of ownership"
+   "k": "feature",
+   "t": "Personal checklist: Questions tailored to the country and property type"
   },
   {
    "d": "2026-11-01",
-   "k": "building",
-   "t": "Building now: Portal verification badge"
+   "k": "feature",
+   "t": "Developer benchmark report: Each developer sees how its disclosure compares with its market"
   },
   {
    "d": "2026-11-01",
-   "k": "building",
-   "t": "Building now: Stalled-site alerts"
+   "k": "feature",
+   "t": "Public roadmap: 39 of 100 features shipped, every one tracked"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Currency exposure tool: How much a payment plan costs if the currency moves 10% or 20%"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Late handover compensation calculator: What the contract says you are owed for each month of delay"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Resale exit check: What the contract allows if you need to sell before handover"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Public roadmap: 36 of 100 features shipped, every one tracked"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Market match: Tell us budget and goals; see markets ranked by transparency"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Total cost of ownership: Price plus fees, taxes, service charges and financing, per market"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Payment plan risk score: Every payment plan scored for money at risk before works exist"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Public roadmap: 33 of 100 features shipped, every one tracked"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Open disclosure standard: A public, versioned list of what every off-plan project should publish"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Template documents: Free templates for escrow letters, progress reports and permit pages"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Public roadmap: 31 of 100 features shipped, every one tracked"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Press data desk: Ready-made charts and numbers for journalists, updated daily"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Public roadmap: 30 of 100 features shipped, every one tracked"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Watchlist: Save projects and see what changed since your last visit"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Project dossier download: A printable file per project with checks, claims and questions"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Data quality score: How complete our information is for each project"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Public roadmap: 27 of 100 features shipped, every one tracked"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Open source scoring code: The scoring rules published so anyone can reproduce a score"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Public roadmap: 26 of 100 features shipped, every one tracked"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Market feeds: A feed per market of new projects and changes"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Stalled-site alerts: Alert when a site shows no change for months"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Portal verification badge: Listing portals show a live Kolaboro badge for each project"
   },
   {
    "d": "2026-11-01",
    "k": "building",
    "t": "Building now: Telegram bot"
-  },
-  {
-   "d": "2026-11-01",
-   "k": "building",
-   "t": "Building now: Watchlist"
   },
   {
    "d": "2026-11-01",
@@ -51882,111 +52036,6 @@
    "d": "2026-11-01",
    "k": "feature",
    "t": "Open data API, no key: every project, market and the transparency index, JSON and CSV"
-  },
-  {
-   "d": "2026-11-01",
-   "k": "feature",
-   "t": "Chrome extension: check any off-plan project page in one click"
-  },
-  {
-   "d": "2026-11-01",
-   "k": "feature",
-   "t": "A file for every project: six checks, verification levels and what changed on the developer's page"
-  },
-  {
-   "d": "2026-11-01",
-   "k": "feature",
-   "t": "Compare up to 4 projects side by side"
-  },
-  {
-   "d": "2026-11-01",
-   "k": "feature",
-   "t": "Plain-language search: try \"Bali under construction with permit\""
-  },
-  {
-   "d": "2026-11-01",
-   "k": "feature",
-   "t": "Payment plan to your calendar, with a reminder 7 days before each payment"
-  },
-  {
-   "d": "2026-11-01",
-   "k": "feature",
-   "t": "Overdue watcher: months past the promised handover on every case"
-  },
-  {
-   "d": "2026-11-01",
-   "k": "feature",
-   "t": "Daily automatic quality check of every page on mobile and desktop"
-  },
-  {
-   "d": "2026-11-01",
-   "k": "feature",
-   "t": "RSS and JSON feeds of everything we ship"
-  },
-  {
-   "d": "2026-11-01",
-   "k": "data",
-   "t": "All 646 projects re-verified: 6,419 developer claims tested against registers, courts and press"
-  },
-  {
-   "d": "2026-11-01",
-   "k": "data",
-   "t": "Malaysia TEDUH and Philippines DHSUD licence checks: expired licences and approved delays found"
-  },
-  {
-   "d": "2026-11-01",
-   "k": "data",
-   "t": "Thailand ONEP register: 2 condos found selling before environmental approval"
-  },
-  {
-   "d": "2026-11-01",
-   "k": "data",
-   "t": "Mexico PROFECO contract register checks: one sales registration belonged to a laundry"
-  },
-  {
-   "d": "2026-11-01",
-   "k": "data",
-   "t": "Abu Dhabi ADREC inspections and RAK RERA permit list added: % built straight from the regulator"
-  },
-  {
-   "d": "2026-11-01",
-   "k": "feature",
-   "t": "New stage filter: completed but still selling"
-  },
-  {
-   "d": "2026-11-01",
-   "k": "feature",
-   "t": "Public database page: verification levels, disclosure distribution, every market"
-  },
-  {
-   "d": "2026-11-01",
-   "k": "data",
-   "t": "+212 projects in one day, round 3: USA, Caribbean, Gulf, Africa, Japan, Australia"
-  },
-  {
-   "d": "2026-11-01",
-   "k": "feature",
-   "t": "Stage on every case: off-plan or under construction"
-  },
-  {
-   "d": "2026-11-01",
-   "k": "auto",
-   "t": "+6 new projects found and checked by the daily research agent (Lombok, Phuket)"
-  },
-  {
-   "d": "2026-11-01",
-   "k": "auto",
-   "t": "20 changes detected on developer pages by the research agent"
-  },
-  {
-   "d": "2026-11-01",
-   "k": "auto",
-   "t": "10 changes detected on developer pages by the research agent"
-  },
-  {
-   "d": "2026-11-01",
-   "k": "auto",
-   "t": "11 changes detected on developer pages by the research agent"
   }
  ]
 }
