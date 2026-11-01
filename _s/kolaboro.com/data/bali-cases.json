@@ -1714,7 +1714,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "c19550eb859993fa6c2cc3edcd5cd7d92be5f6865dea129155fc5404efbf32fe",
+    "sha256": "d063dde06e4db23ea59f92de2e8ae6bef07708819e747f61ee17da43f9f93291",
     "date": "2026-11-01"
    },
    "history": [
@@ -3741,7 +3741,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "24097ba83f360dfe059a11aa9d99390bda090121982d4c6a696942106ba6138a",
+    "sha256": "fcd3e4ef7b3530ecc8ea2f9dcfecb78e54b14cd5b705854548a1e94f39630a45",
     "date": "2026-11-01"
    },
    "history": [
@@ -3955,7 +3955,7 @@
    "country": "Indonesia",
    "region": "Ubud",
    "docs": false,
-   "plans": true,
+   "plans": false,
    "band": "Under $100k",
    "done": 2027,
    "title": "leasehold (Hak Sewa)",
@@ -3966,7 +3966,7 @@
     "permit": 0,
     "escrow": null,
     "progress": null,
-    "plans": true,
+    "plans": false,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -3978,11 +3978,11 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 1,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "caution",
    "read": true,
    "checked": "1 Nov 2026",
    "invited": null,
@@ -4011,7 +4011,7 @@
    "overdue": null,
    "profile": 11,
    "fp": {
-    "sha256": "e844114a3b2e720783ec7339ae82dd6fe0c4130a19c49853680755dda4c21df3",
+    "sha256": "5026b8a5c272acfa8f82fa0d2eb748897ddd38a32e3dc578c3694d90898bdda8",
     "date": "2026-11-01"
    },
    "history": [
@@ -6314,7 +6314,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "d29e30b01a58b622048132d810039528dba1115e664a99b4ff3e9dc143945f64",
+    "sha256": "abc11efbaeaef02ae88de91e8911cd55a5d23f897830354560a4a4c210c4920a",
     "date": "2026-11-01"
    }
   },
@@ -7363,7 +7363,7 @@
    "overdue": null,
    "profile": 14,
    "fp": {
-    "sha256": "fb5664107b7718013b0334bebb5306bc8ad2e21765a8ece86f250fa739c20b10",
+    "sha256": "2505a65642792f66a8d97b5afee67c92d941cac3cde9093cdb85cf671324663e",
     "date": "2026-11-01"
    },
    "history": [
@@ -7677,7 +7677,7 @@
     "date": "2026-11-01"
    },
    "fp": {
-    "sha256": "3cee03c6e97b4bf856ce5a8f3c1bc7f083074473aa144ac48108352ac49e6df9",
+    "sha256": "352f33483a27bf7b51454a89352fed888e51c390c4241d1b1555b6d5e04de8b4",
     "date": "2026-11-01"
    },
    "history": [
@@ -7755,7 +7755,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "1ecba5dc4d24d977a59e161dcdea0ee9f23df209c78fd395498dbfa43fd9b672",
+    "sha256": "793f6dc94afa2c5aaff8e94a83934433ec5aff015773e7251db10cc080a8cef9",
     "date": "2026-11-01"
    }
   },
@@ -8951,7 +8951,7 @@
    "overdue": null,
    "profile": 14,
    "fp": {
-    "sha256": "4ea3b7711c8c4f6ac06cdb13178ec191d39a5e670ca74d8314fee14abb9073c7",
+    "sha256": "fe73c2c982d6974b66dc6b6489ce773528a8bf7f795ebaf64021dccc8116da41",
     "date": "2026-11-01"
    },
    "history": [
@@ -9150,7 +9150,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "37c861e50611a994357b0fefde6c1780b763e80eb907bf0dfff247cab86a4eb0",
+    "sha256": "7b325276c28a96a8f671ebc760b3515ff3e5d56d0258570a043d36bd66513b6f",
     "date": "2026-11-01"
    }
   },
@@ -9279,7 +9279,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "699f23a12bf84feef637a8c4035d233d9abbabe92b9a8cf386b44fc45009a76d",
+    "sha256": "42698c6c71239014d0d21deb145f93f7550329966ebec0ea0d42d95409ce08dd",
     "date": "2026-11-01"
    }
   },
@@ -10209,7 +10209,7 @@
    "checked": "1 Nov 2026",
    "invited": null,
    "q": [
-    "Permit Registro de Incorporação R13 da Matrícula nº 135.051 is published: does it exist in the official register and match this plot?",
+    "Permit R13 da Matrícula nº 135.051 do 1º Ofício de Registro de Imóv is published: does it exist in the official register and match this plot?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
@@ -10233,7 +10233,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "ff2205ac1d0d1b078c9cbf7dbcb1ec2aee3f3e989644532594a510338b1f4fdf",
+    "sha256": "7091c605931de437f484d0d7a6eec3b6555fa15a459205870389cf1683d6b742",
     "date": "2026-11-01"
    }
   },
@@ -10429,7 +10429,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "970b7979bd81b161552909d9b03ceb410bee558e40bc0da722a2d5172de7d5a5",
+    "sha256": "cc2d468e3a38399f3ce89ef10719f0964826026ad49d686a69ae7eee3fa673d0",
     "date": "2026-11-01"
    }
   },
@@ -10493,7 +10493,7 @@
    "overdue": null,
    "profile": 19,
    "fp": {
-    "sha256": "a6879b96ec30fd774a17ba6145cb7573b1ca1fc91c34e2b96051c2f4f89ad3fc",
+    "sha256": "64a842e3b9be370dad604d9578a2384fa3e429f64e3fee5978c0846dbfb4ba8c",
     "date": "2026-11-01"
    }
   },
@@ -11812,7 +11812,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "368ab040229ed81f4cfa2fa6068a70a8e6e777111cce1c7ffe218d0bb9e713c4",
+    "sha256": "2dd8134c9e764f0f510f063207dc12ee860d25ace285221f4f74ba59bf85f35d",
     "date": "2026-11-01"
    }
   },
@@ -13210,7 +13210,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "7579541ab38d2837ad54e1abd7e164e33d304f98e58f18cf97da87966c7aa122",
+    "sha256": "1e20b4acd775c511a53d975236f8c4e302421f14f04412a68187cd175a4532db",
     "date": "2026-11-01"
    }
   },
@@ -14650,7 +14650,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "899b47d21b5b58cc8fe6a6ce68c470777fbaf2c1ee59d337298d862ad102a248",
+    "sha256": "f274f66272ee85873421cec318ebfa9186e948ef18a6f48c6bf0641a0b26f917",
     "date": "2026-11-01"
    }
   },
@@ -14780,7 +14780,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "3e545cd340987a6c7fd0be2d2933a1a70d40fb418e5e872eb3191482639b017a",
+    "sha256": "b7e8c8fab09356663cad75b6b30aaea8d6be49172cfb35a21002c1b1aca0000d",
     "date": "2026-11-01"
    }
   },
@@ -14844,7 +14844,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "0397c0b0ec314531cdb70a0fb512d1a73096ab41ffeb4ef1bdfb507cbc0f6bbb",
+    "sha256": "5c58ef8f450c84b6a63b911d3c9eb86014c0d0ac69ace90898b6b65cc55c2d65",
     "date": "2026-11-01"
    }
   },
@@ -18013,7 +18013,7 @@
    "overdue": null,
    "profile": 17,
    "fp": {
-    "sha256": "7e2acf22cf84b738fe8a475717351c6fac9cc52ce8c067f755817c151301dbf5",
+    "sha256": "d5ce3527f9daf66cd801d1f9dfd5e25bbd8b3d8474cd0e0591d37987adde2fc3",
     "date": "2026-11-01"
    },
    "history": [
@@ -18022,6 +18022,12 @@
      "f": "plans published",
      "from": true,
      "to": null
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": null,
+     "to": true
     },
     {
      "d": "2026-10-31",
@@ -18456,7 +18462,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "32d6a9a04d0569057c712ff3ea2822e5092517e0fb064067f0e72ff4790ef4c2",
+    "sha256": "1a885328b4901a666580e4c61a284e67b99079b2b1b0de939a7452fb62d25f48",
     "date": "2026-11-01"
    },
    "history": [
@@ -20133,7 +20139,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "d192cfbdc06a3e27de777ad91b4236251bb7df5bd759b5f328a264608a462ff2",
+    "sha256": "c38f24a73d8796e44c88945531b983ad7906bbf88ed2eb093eeb90d149338cca",
     "date": "2026-11-01"
    }
   },
@@ -20305,7 +20311,7 @@
    "checked": "1 Nov 2026",
    "invited": null,
    "q": [
-    "Permit project #4480 is published: does it exist in the official register and match this plot?",
+    "Permit project number 4480 is published: does it exist in the official register and match this plot?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2028: does progress on site match?"
    ],
@@ -20328,7 +20334,7 @@
    "overdue": null,
    "profile": 17,
    "fp": {
-    "sha256": "e6c835854bdc4e17b09057c591f0fbe7bea53a5ec2e0e510fc8ea1ca5e4fe1d7",
+    "sha256": "84b48d79f07e7bbd8d21aa2f3623ea7595cb44bad948b826ee65e7cc32988d89",
     "date": "2026-11-01"
    }
   },
@@ -20943,7 +20949,7 @@
    "overdue": null,
    "profile": 8,
    "fp": {
-    "sha256": "f59897ff115d692224f5a5fab96130ef1805b0fa93b38d09f7c640b0d80cd501",
+    "sha256": "eeb7d719d57e93b5fc94fb405cc6f767206324482cfc8fbbb3b9f0c974378340",
     "date": "2026-11-01"
    }
   },
@@ -21472,7 +21478,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "c1078ed8f862171c92fa6e0eda2845fdc11bc68064eaab33af9198a9bae66413",
+    "sha256": "336b27018768f666666f323c36c64cc826a1b5dfe20d287b3817bf46442943a2",
     "date": "2026-11-01"
    }
   },
@@ -21603,7 +21609,7 @@
    "overdue": null,
    "profile": 8,
    "fp": {
-    "sha256": "987f7606cb459a8773a3ae20f443f8dba440c2fa036259530855b5ff619e0058",
+    "sha256": "82eee0f11cacddd4f647bf7f45620cc77beea35505a409da99b5522c55c88f27",
     "date": "2026-11-01"
    }
   },
@@ -22384,7 +22390,7 @@
    "overdue": null,
    "profile": 10,
    "fp": {
-    "sha256": "b3800e6b4c10df6e778711ad270dea89893c5cb5f600015b66d14ecbbc31cfaf",
+    "sha256": "5a8bf738c6bd1fb6be72f6e5de731682209a06776d6295bde7705b20bf8804c5",
     "date": "2026-11-01"
    },
    "history": [
@@ -22411,6 +22417,12 @@
      "f": "plans published",
      "from": false,
      "to": null
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": null,
+     "to": false
     },
     {
      "d": "2026-10-31",
@@ -22482,7 +22494,7 @@
    "overdue": null,
    "profile": 11,
    "fp": {
-    "sha256": "f755acf7d1dedcd07644e4777cf9334774ed73782d13ef0f1b45516372b2ec5e",
+    "sha256": "e4cdc4f9d6ea6273ca23154225bdbc1e6e34186f83332527ae3c585cb27b2526",
     "date": "2026-11-01"
    },
    "history": [
@@ -22529,7 +22541,7 @@
      "to": false
     },
     {
-     "d": "2026-10-31",
+     "d": "2026-11-01",
      "f": "plans published",
      "from": false,
      "to": true
@@ -22597,7 +22609,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "b77472fe44e6ffec3cf0b24f63e47911b7d8c9afd952dea6d26257cc25e8abd0",
+    "sha256": "e9d2f9b52155e51b87dfe75c6c4716e5f4b85290d200bdd1924c9618553c062d",
     "date": "2026-11-01"
    }
   },
@@ -22609,7 +22621,7 @@
    "docs": false,
    "plans": true,
    "band": "Price not stated",
-   "done": 2028,
+   "done": 2029,
    "title": "freehold",
    "lease": null,
    "yield": 10,
@@ -22640,7 +22652,7 @@
    "invited": null,
    "q": [
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2028: does progress on site match?",
+    "Completion advertised for 2029: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
@@ -22662,7 +22674,7 @@
    "overdue": null,
    "profile": 17,
    "fp": {
-    "sha256": "fb6e321f0ecb16a53ecee26b00271e574fde203431768ca41888cc26dabb0abd",
+    "sha256": "9985f61a066fadd81371db0713f6b002fe16b08e5e74dff359f44464786d9c8b",
     "date": "2026-11-01"
    },
    "history": [
@@ -24256,7 +24268,7 @@
    "overdue": null,
    "profile": 14,
    "fp": {
-    "sha256": "7370d4b4b155821995635c1ee18a841d86fa6457e51fb1da461ee4cc08d69ed7",
+    "sha256": "f863abe73c4f3fe42d71930fb64c57dfdfdd226682c94801a5ec5763f4a2ce1a",
     "date": "2026-11-01"
    }
   },
@@ -24727,7 +24739,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "16744516f42b61d5473d2e1c1f8fba2d7461c33d02f04e18fea60b17b79e80dd",
+    "sha256": "8a1366859e96ebf1a2c1cb4bd463ad54fcd5f149e4fb090ec838a078337692c3",
     "date": "2026-11-01"
    }
   },
@@ -24859,7 +24871,7 @@
    "overdue": null,
    "profile": 10,
    "fp": {
-    "sha256": "87be73e5589946c292d950fd4dcfe7933b293f40b6b5c577e0e41d89e990fc1d",
+    "sha256": "acdc77274b859dbd5d3f818ef7ae27410cc25eb732ac31edf8efe35331621915",
     "date": "2026-11-01"
    }
   },
@@ -25205,7 +25217,7 @@
    "overdue": null,
    "profile": 16,
    "fp": {
-    "sha256": "e2f137ad5b176e892833be22b2e0bd35c6621b6c92f95f816ed7c5896d6ceac4",
+    "sha256": "eb609e1af8a2cab6490ecdff27437d3a84b2d47a2f7d6c07d4f53cbf9fc11a79",
     "date": "2026-11-01"
    }
   },
@@ -25341,7 +25353,7 @@
    "overdue": null,
    "profile": 20,
    "fp": {
-    "sha256": "23ad0dc7fcf89e6ec7c221fb7aeb0a95fc1722c1ab74d5a3fc3e039f9a4843c1",
+    "sha256": "f6ff8f56cdf826d5fe854f9a817e88c8c7b9eaab1fee982f233a693f8c6e8deb",
     "date": "2026-11-01"
    },
    "history": [
@@ -25777,7 +25789,7 @@
    "overdue": null,
    "profile": 10,
    "fp": {
-    "sha256": "aaa7e2bb56d1b53466d04e2b7f46f3fe2d5f376b9e08c311149b85d4902f4645",
+    "sha256": "d67a1015a8d41629479bdf80d8fab73356054f4398c6d546b6e9725ed2e64f11",
     "date": "2026-11-01"
    }
   },
@@ -26774,7 +26786,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "020952568843d325260f13cb84d6f26d3217c4f45e11243df56afd9dfd9255d8",
+    "sha256": "6f05e1b9d691e33a09a9ea1bc074250711a525f5483a34f96fe513433619047b",
     "date": "2026-11-01"
    },
    "register": {
@@ -27627,7 +27639,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "ba5d2285195cae5d5b6df10dd0dba7a3484ef53e2a5edfc0cac27512c3a38f64",
+    "sha256": "b44265d6615df7eee5bd2e4de3787a72dfa5afafbcee237c5673ee8fb03b707c",
     "date": "2026-11-01"
    }
   },
@@ -27897,7 +27909,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "25772b7c50a1abf41ba172e1f2910f9d62aa3864098e2b297c5a628b42bd6330",
+    "sha256": "4180812582a9f307d506e3864e93b5555533b9e0ea93a1b4f30be461ad4b92dd",
     "date": "2026-11-01"
    },
    "history": [
@@ -30181,7 +30193,7 @@
    "overdue": null,
    "profile": 14,
    "fp": {
-    "sha256": "c326f312f38a59f8839a53f383aa82dbe64c27f3a6d70647b00125b2ec5cd7dd",
+    "sha256": "e6407c057c1da12e57190902baf73ef8672fc5fc6e7f321584eefd7ecc2fea5d",
     "date": "2026-11-01"
    }
   },
@@ -30715,7 +30727,7 @@
    "country": "Mexico",
    "region": "Los Cabos",
    "docs": false,
-   "plans": false,
+   "plans": true,
    "band": "$400k and up",
    "done": 2027,
    "title": "fideicomiso (restricted zone)",
@@ -30726,7 +30738,7 @@
     "permit": 0,
     "escrow": null,
     "progress": null,
-    "plans": false,
+    "plans": true,
     "record": true,
     "returns_ok": true,
     "researched": [
@@ -30738,7 +30750,7 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 3,
    "max": 6,
    "flags": [],
    "notes": [],
@@ -30770,7 +30782,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "c4a3fd61666dc8ab7e7759d635f72b7caa4bfb62b754810506270d071a8efc46",
+    "sha256": "3fb99663869128efa3f03b04aa20fc0f5c680b872a09f32ad34ab4fe5dc5573e",
     "date": "2026-11-01"
    },
    "history": [
@@ -30803,6 +30815,12 @@
      "f": "plans published",
      "from": true,
      "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
     }
    ]
   },
@@ -32299,7 +32317,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "6a1bd8fcffe43cde84e34f31a1f6a7a92c654dbea43ed63b3366c4a361147be5",
+    "sha256": "1ab2bc742f5067f99603fbf54db71f1d78e5c3e301db63cdf75a729d294d1b3d",
     "date": "2026-11-01"
    }
   },
@@ -33057,7 +33075,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "5881886438003bc1e8e3380d17d7cd14051e0a90f6a33d43741ad66d88cceec9",
+    "sha256": "5502f59a6587eda42f9f72dd0b9e49d7b546707a48ae513eb81cc0d4e1d4a17f",
     "date": "2026-11-01"
    }
   },
@@ -33574,7 +33592,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "6a372e82e87b2bd57b356b7682f95e748bede6806ec426f3052752f8f0e3e727",
+    "sha256": "d99c3f624a818ef7a7c6de6aedb7186fa50a35c5068cc5bc348451f7bf05525d",
     "date": "2026-11-01"
    }
   },
@@ -35383,7 +35401,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "8278c48dba847250828e57eaf4f2adb2fbc59b70fee175651ece27da876462c6",
+    "sha256": "e051c79ebcb92743d7a550097e6cb4c5ff74deafc10e762012a4615fca0de85b",
     "date": "2026-11-01"
    },
    "history": [
@@ -35398,6 +35416,12 @@
      "f": "plans published",
      "from": null,
      "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": null
     }
    ]
   },
@@ -35528,7 +35552,7 @@
    "overdue": null,
    "profile": 10,
    "fp": {
-    "sha256": "abd3021f6517c42c1ef6a45e7b1e83642441dbc3dda2a40feb3256afb0729461",
+    "sha256": "745a74805fc500ad5859002e2112a083083f4ee7f3864c109d27be8ec75c2974",
     "date": "2026-11-01"
    }
   },
@@ -36317,7 +36341,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "d03be8112d775ad03b238f521a6433bfe920c0752765fe24998e2352957498d0",
+    "sha256": "245cc09a7a5602d1b868a535ce280b1b1a75fc592cf3aa766d460fd6a1e8caa9",
     "date": "2026-11-01"
    },
    "history": [
@@ -36395,7 +36419,7 @@
    "overdue": null,
    "profile": 10,
    "fp": {
-    "sha256": "7a8dca22cea05831b923c968383e659ed87906822031264961e9eeb6e14deb66",
+    "sha256": "cf65ff089703d7794127346def23fd99c8d52ddc1432842681dbfec57f47820c",
     "date": "2026-11-01"
    }
   },
@@ -37596,7 +37620,7 @@
    "overdue": null,
    "profile": 16,
    "fp": {
-    "sha256": "c16de4b5781e1523fcd7eac8db61929aeeea6186d01feafdbdd126ac9e2ab9a6",
+    "sha256": "7ff2a6ca67bb24b71740f04d567721757c768449f79c375a22331f3fe9a8d108",
     "date": "2026-11-01"
    },
    "history": [
@@ -41852,7 +41876,7 @@
    "plans": true,
    "band": "$100k to $200k",
    "done": 2028,
-   "title": "freehold (foreign quota units) or leasehold",
+   "title": "leasehold",
    "lease": null,
    "yield": null,
    "units": 295,
@@ -41881,6 +41905,7 @@
    "checked": "1 Nov 2026",
    "invited": null,
    "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
@@ -41904,7 +41929,7 @@
    "overdue": null,
    "profile": 14,
    "fp": {
-    "sha256": "b50c6013221859546d695cc9c843c66e0124af6a556577a8d9a739e54357586c",
+    "sha256": "a6ddad5135003558a8ce5a773ea4eb94080c1429635b0decb5a408ac21a01659",
     "date": "2026-11-01"
    }
   },
@@ -43168,7 +43193,7 @@
    "region": "Portugal",
    "docs": false,
    "plans": true,
-   "band": "$200k to $400k",
+   "band": "$400k and up",
    "done": 2030,
    "title": "freehold",
    "lease": null,
@@ -43222,7 +43247,7 @@
    "overdue": null,
    "profile": 14,
    "fp": {
-    "sha256": "a1ee52f19c351b36604f9155e4df653fdd438355ad2c36938b20e60cea7bdd03",
+    "sha256": "4cd49419209803fd07119c87ecb6f28b8b674799480d888fd77c8e6517c472c1",
     "date": "2026-11-01"
    }
   },
@@ -48521,7 +48546,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "ef1d1088eb9556aadc4c9ee285a29838f972f236548f39b5cfcfdce27bba956f",
+    "sha256": "30fbc535d8c1f6a59f383ab2fbc4e3786ff84809ec273ac477a0db3234a032e3",
     "date": "2026-11-01"
    }
   },
@@ -48918,7 +48943,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "fbacc1bddb473ff0a8d78006c4b1b875722963e1adcd255a773582da64c4d4d9",
+    "sha256": "cfaae58b4a4e21f47d37a0d0557601dc834865f7eff15df5a0b2ec5abdfd514c",
     "date": "2026-11-01"
    }
   },
@@ -51838,7 +51863,7 @@
   "overdue": 26,
   "overdue_avg_months": 7.2,
   "delayed": 94,
-  "changes_detected": 237,
+  "changes_detected": 244,
   "sat_watched": 85,
   "sat_no_change": 20,
   "register_watched": 21
@@ -51846,7 +51871,7 @@
  "seal": {
   "date": "2026-11-01",
   "count": 695,
-  "root": "127a99e8f9b137a51e309ad9f1620d606d51fa4fcf9a00d6501854044e559470",
+  "root": "094693025892aeaed4245b56788238f8e8dd683fa4ea707b246a34cbe3eed398",
   "method": "root = sha256 of the lines \"ID SHA256\" (one per project with a fingerprint, sorted by id, each ending with a newline); each SHA256 is the hash of the developer page text as read by the agent; the root is timestamped in Bitcoin through OpenTimestamps",
   "stamped": true
  },
@@ -51854,202 +51879,242 @@
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Public roadmap: 48 of 100 features shipped, every one tracked"
+   "t": "Public roadmap: 49 of 100 features shipped, every one tracked",
+   "u": "/roadmap"
   },
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Government dashboard: Market-level transparency data for regulators, free"
+   "t": "Localised sites: The site in Russian, Chinese, German, French, Arabic and Dutch",
+   "u": "/de/"
   },
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Research licence: Bulk data and history for investors and analysts"
+   "t": "Government dashboard: Market-level transparency data for regulators, free",
+   "u": "/regulators/"
   },
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Partner program for lawyers: Lawyers refer buyers and get case files in return"
+   "t": "Research licence: Bulk data and history for investors and analysts",
+   "u": "/data/licence/"
   },
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Refund tracker: Track refund requests to developers with dated evidence"
+   "t": "Partner program for lawyers: Lawyers refer buyers and get case files in return",
+   "u": "/lawyers/"
   },
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Public roadmap: 44 of 100 features shipped, every one tracked"
+   "t": "Refund tracker: Track refund requests to developers with dated evidence",
+   "u": "/tools/refund-tracker/"
   },
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Developer response portal: Developers answer findings with documents, free, before anything is published"
+   "t": "Developer response portal: Developers answer findings with documents, free, before anything is published",
+   "u": "/developers/reply/"
   },
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Right of reply on every case: The developer's answer shown next to every finding"
+   "t": "Right of reply on every case: The developer's answer shown next to every finding",
+   "u": "/developers/reply/"
   },
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Public roadmap: 42 of 100 features shipped, every one tracked"
+   "t": "Deposit protection finder: Shows which protection exists in each market and how to ask for it",
+   "u": "/tools/deposit-protection/"
   },
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Deposit protection finder: Shows which protection exists in each market and how to ask for it"
+   "t": "Personal checklist: Questions tailored to the country and property type",
+   "u": "/tools/my-checklist/"
   },
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Personal checklist: Questions tailored to the country and property type"
+   "t": "Developer benchmark report: Each developer sees how its disclosure compares with its market",
+   "u": "/compare/"
   },
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Developer benchmark report: Each developer sees how its disclosure compares with its market"
+   "t": "Currency exposure tool: How much a payment plan costs if the currency moves 10% or 20%",
+   "u": "/tools/currency-risk/"
   },
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Public roadmap: 39 of 100 features shipped, every one tracked"
+   "t": "Late handover compensation calculator: What the contract says you are owed for each month of delay",
+   "u": "/tools/delay-compensation/"
   },
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Currency exposure tool: How much a payment plan costs if the currency moves 10% or 20%"
+   "t": "Resale exit check: What the contract allows if you need to sell before handover",
+   "u": "/tools/resale-exit/"
   },
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Late handover compensation calculator: What the contract says you are owed for each month of delay"
+   "t": "Market match: Tell us budget and goals; see markets ranked by transparency",
+   "u": "/tools/market-match/"
   },
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Resale exit check: What the contract allows if you need to sell before handover"
+   "t": "Total cost of ownership: Price plus fees, taxes, service charges and financing, per market",
+   "u": "/tools/total-cost/"
   },
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Public roadmap: 36 of 100 features shipped, every one tracked"
+   "t": "Payment plan risk score: Every payment plan scored for money at risk before works exist",
+   "u": "/tools/payment-risk/"
   },
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Market match: Tell us budget and goals; see markets ranked by transparency"
+   "t": "Open disclosure standard: A public, versioned list of what every off-plan project should publish",
+   "u": "/standard/"
   },
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Total cost of ownership: Price plus fees, taxes, service charges and financing, per market"
+   "t": "Template documents: Free templates for escrow letters, progress reports and permit pages",
+   "u": "/developers/templates/"
   },
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Payment plan risk score: Every payment plan scored for money at risk before works exist"
+   "t": "Press data desk: Ready-made charts and numbers for journalists, updated daily",
+   "u": "/press/data/"
   },
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Public roadmap: 33 of 100 features shipped, every one tracked"
+   "t": "Watchlist: Save projects and see what changed since your last visit",
+   "u": "/watchlist/"
   },
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Open disclosure standard: A public, versioned list of what every off-plan project should publish"
+   "t": "Project dossier download: A printable file per project with checks, claims and questions",
+   "u": "/cases"
   },
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Template documents: Free templates for escrow letters, progress reports and permit pages"
+   "t": "Data quality score: How complete our information is for each project",
+   "u": "/cases"
   },
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Public roadmap: 31 of 100 features shipped, every one tracked"
+   "t": "Open source scoring code: The scoring rules published so anyone can reproduce a score",
+   "u": "/open/scoring.py"
   },
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Press data desk: Ready-made charts and numbers for journalists, updated daily"
+   "t": "Market feeds: A feed per market of new projects and changes",
+   "u": "/docs/api#open"
   },
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Public roadmap: 30 of 100 features shipped, every one tracked"
+   "t": "Stalled-site alerts: Alert when a site shows no change for months",
+   "u": "/feed/alerts.xml"
   },
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Watchlist: Save projects and see what changed since your last visit"
-  },
-  {
-   "d": "2026-11-01",
-   "k": "feature",
-   "t": "Project dossier download: A printable file per project with checks, claims and questions"
-  },
-  {
-   "d": "2026-11-01",
-   "k": "feature",
-   "t": "Data quality score: How complete our information is for each project"
-  },
-  {
-   "d": "2026-11-01",
-   "k": "feature",
-   "t": "Public roadmap: 27 of 100 features shipped, every one tracked"
-  },
-  {
-   "d": "2026-11-01",
-   "k": "feature",
-   "t": "Open source scoring code: The scoring rules published so anyone can reproduce a score"
-  },
-  {
-   "d": "2026-11-01",
-   "k": "feature",
-   "t": "Public roadmap: 26 of 100 features shipped, every one tracked"
-  },
-  {
-   "d": "2026-11-01",
-   "k": "feature",
-   "t": "Market feeds: A feed per market of new projects and changes"
-  },
-  {
-   "d": "2026-11-01",
-   "k": "feature",
-   "t": "Stalled-site alerts: Alert when a site shows no change for months"
-  },
-  {
-   "d": "2026-11-01",
-   "k": "feature",
-   "t": "Portal verification badge: Listing portals show a live Kolaboro badge for each project"
+   "t": "Portal verification badge: Listing portals show a live Kolaboro badge for each project",
+   "u": "/docs/api#open"
   },
   {
    "d": "2026-11-01",
    "k": "building",
-   "t": "Building now: Telegram bot"
+   "t": "Building now: Telegram bot",
+   "u": "/changelog"
   },
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Check it yourself: guide to 52 official registers in 19 markets"
+   "t": "Check it yourself: guide to 52 official registers in 19 markets",
+   "u": "/registers/"
   },
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Satellite timelapse of 27 development areas since 2023"
+   "t": "Satellite timelapse of 27 development areas since 2023",
+   "u": "/satellite/"
   },
   {
    "d": "2026-11-01",
    "k": "data",
-   "t": "+115 new projects in one day, round 5: Caribbean, Latin America, Europe, Africa, Asia, Gulf, US, UK and Oceania"
+   "t": "+115 new projects in one day, round 5: Caribbean, Latin America, Europe, Africa, Asia, Gulf, US, UK and Oceania",
+   "u": "/database"
   },
   {
    "d": "2026-11-01",
    "k": "feature",
-   "t": "Ask the database: plain-language questions answered by AI from the data"
+   "t": "Ask the database: plain-language questions answered by AI from the data",
+   "u": "/database#ask"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "A page for every market with its transparency index and every project",
+   "u": "/transparency-index/"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Evidence fingerprints: every developer page read is sealed daily in Bitcoin",
+   "u": "/verify"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Live view of the machine behind the data: every automated job and its last run",
+   "u": "/database#machine"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "data",
+   "t": "State of Off-Plan 2026 report: 646 projects, 6,419 claims, what developers publish and what holds up",
+   "u": "/report/state-of-off-plan-2026/"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Off-plan Transparency Index: 73 markets ranked, embeddable by journalists",
+   "u": "/transparency-index/"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Satellite watch extended to 27 market areas, with a yearly change check for project sites",
+   "u": "/satellite/"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Weekly re-check of Thailand's environmental approval register for every Thai project",
+   "u": "/registers/"
+  },
+  {
+   "d": "2026-11-01",
+   "k": "feature",
+   "t": "Open data API, no key: every project, market and the transparency index, JSON and CSV",
+   "u": "/transparency-index/"
   }
  ]
 }
