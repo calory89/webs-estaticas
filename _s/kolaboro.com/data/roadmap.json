@@ -566,14 +566,14 @@
    "theme": "Buyer experience",
    "title": "Watchlist",
    "desc": "Save projects and see what changed since your last visit.",
-   "status": "building"
+   "status": "shipped"
   },
   {
    "n": 82,
    "theme": "Buyer experience",
    "title": "Project dossier download",
    "desc": "A printable file per project with checks, claims and questions.",
-   "status": "building"
+   "status": "shipped"
   },
   {
    "n": 83,
@@ -629,7 +629,7 @@
    "theme": "Buyer experience",
    "title": "Data quality score",
    "desc": "How complete our information is for each project.",
-   "status": "building"
+   "status": "shipped"
   },
   {
    "n": 91,
