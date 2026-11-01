@@ -155,6 +155,3 @@
 - [Advogados que só cobram se você ganhar](https://jurimatch.com/pt-br): home
 - [Seus direitos no Brasil, passo a passo](https://jurimatch.com/pt-br/guias): index
 - [Modelo grátis de carta de reclamação](https://jurimatch.com/pt-br/ferramentas/carta-de-reclamacao)
-
-## Full text
-- [Guides, glossary, comparisons and tools in full](https://jurimatch.com/llms-full.txt)
