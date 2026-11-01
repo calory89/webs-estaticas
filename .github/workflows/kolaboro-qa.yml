@@ -1,0 +1,29 @@
+name: Kolaboro QA
+# Daily check of every kolaboro.com page on mobile and desktop: broken links, JS errors, failed assets, overflow.
+# A failed run means something on the live site needs fixing (GitHub emails the repo owner).
+on:
+  schedule:
+    - cron: '23 5 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  qa:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: tools/kolaboro-qa
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install Playwright
+        run: cd tools/kolaboro-qa && npm init -y >/dev/null && npm i playwright@1.47.2 >/dev/null && npx playwright install --with-deps chromium >/dev/null
+      - name: Crawl kolaboro.com
+        run: cd tools/kolaboro-qa && KB_QA_OUT=$RUNNER_TEMP/qa.json node crawl.js
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: kolaboro-qa
+          path: ${{ runner.temp }}/qa.json
