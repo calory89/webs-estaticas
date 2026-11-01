@@ -186,7 +186,7 @@ def _questions(c):
     if c.get('guaranteed_language'): q.append('"Guaranteed" returns: who guarantees them, and what happens if they can\'t pay?')
     if c.get('permit_claim'): q.append('A building permit is claimed: does it exist in the official system and match this plot?')
     else: q.append('No building permit mentioned: ask for the number before paying.')
-    if c.get('permit_number'): q.insert(0, 'Permit %s is published: does it exist in the official register and match this plot?' % str(c['permit_number'])[:60])
+    if c.get('permit_number'): q.insert(0, 'A permit number is published: does it exist in the official register and match this plot?')
     if c.get('completion_year'): q.append('Completion advertised for %s: does progress on site match?' % c['completion_year'])
     return q[:5]
 
@@ -332,6 +332,10 @@ def public_cases(projects, latest):
         fl = _flag_cats(p.get('flags')); notes = [n for n in _flag_cats(p.get('flags'), NOTE_CATS) if not fl]
         tier = 'caution' if fl or score <= 1 else 'clear' if score >= (3 if mx == 3 else 4) else 'mixed'
         q = _questions(m)
+        for pn in {str(x) for x in (m.get('permit_number'), p.get('permit_number'), s.get('permit_number')) if x}:
+            # projects stay anonymous: a permit number could be looked up in a register to identify the developer
+            q = [x.replace(pn, 'the published number') for x in q]
+        q = [re.sub(r'\b[A-Z]{0,6}[-/ ]?\d[\d/.-]{5,}\b', 'the published number', x) if re.search(r'(?i)permit|licen|pbg|eia|number', x) else x for x in q]
         if ck['escrow'] is not True: q.append('No deposit protection published: will your payments go into an escrow or trust account in your name?')
         for f in fl[:2]: q.insert(0, f + ' in public sources: ask the developer for the current status, in writing.')
         for f in notes[:1]: q.insert(0, f + ': ask for the correct figures in writing before paying.')
@@ -366,7 +370,7 @@ def public_cases(projects, latest):
             c['fp'] = {'sha256': lt['sha256'], 'date': lt.get('sealed') or lt.get('checked')}
         rw = regw.get(c.get('_slug'))
         if rw:
-            c['register'] = {k: rw.get(k) for k in ('register', 'item', 'status', 'detail', 'checked')}
+            c['register'] = {k: rw.get(k) for k in ('register', 'item', 'status', 'checked')}   # no approval numbers: they would identify the project
         h = hist.get(c.get('_slug'))
         if h:
             c['history'] = sorted(h, key=lambda x: x['d'] or '', reverse=True)[:8]
