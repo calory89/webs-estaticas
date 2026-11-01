@@ -1,0 +1,2178 @@
+[
+ {
+  "slug": "layan-green-park-phase-2",
+  "url": "https://layangreenpark.com/",
+  "docs_url": "https://layangreenpark.com/phase2",
+  "permit_number": null,
+  "docs_listed": [
+   "land title deed No. 70026 (16,673 m2) and No. 36931 (Phase 1)",
+   "company registrations 0835563004301 and 0835562015261",
+   "building permit and EIA certificate stated as obtained (no numbers)",
+   "Phase 2 dated construction timeline Jun 2023 to Dec 2026 with online camera",
+   "project master plan",
+   "unit plans and prices page",
+   "rental pool 60% of net income, 8.5% yield claim",
+   "interest-free 3-payment plan"
+  ],
+  "note": "Phase 2 from $215,712 (36.72 m2), end of construction December 2026; the site says the building permit and EIA certificate were obtained but gives no numbers, advertises an 8.5% yield and a 'guaranteed 60% share' of net rental income, and Phase 1 owners already have keys (checked 31 Oct 2026)",
+  "seed": {
+   "price": 215712,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 8.5,
+   "completion": "2026",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Layan Green Park Phase 1 (9,940 m2, same group) completed; site says Phase 1 owners have received their keys (layangreenpark.com)",
+   "units": null,
+   "payment_plan": "Interest-free installment plan in three payments up to the handover notice",
+   "price_per_m2": 5875
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Phase 2 page lists 'Obtaining the necessary documents: building permit, EIA certificate' as a completed stage; no permit or EIA number published",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "Phase 2 page shows dated stages (structure Jun 2023 to Aug 2025, finishing to Dec 2026) and an online construction camera; says Phase 2 is 'nearing completion'",
+   "plans": "Project master plan and unit plans/prices pages published",
+   "record": "Homepage: Phase 1 'Construction completed', owners 'have already received their keys'",
+   "returns": "Income page: 'Yield 8.5% per year' and 'You receive a guaranteed 60% share of the net rental income'"
+  },
+  "positives": [
+   "Title deed numbers and developer company registration numbers published",
+   "Phase 1 of the same project is completed and operating",
+   "Dated Phase 2 construction timeline and live camera"
+  ],
+  "flags": [
+   {
+    "text": "The Thaiger reported a Kazakh investor filed a police complaint alleging he was misled into investing in the Layan Green Park project and received no returns; the accused were not the listed developer companies.",
+    "source": "https://devth.thethaiger.com/th/news/phuket/kazakh-man-reports-phuket-investment-scam-run-by-ukrainian-and-thai-men"
+   },
+   {
+    "text": "Orda reported in October 2025 that the partners' dispute over Layan Green Park was settled, with mutual claims withdrawn and Vadim Bukhkalov keeping management.",
+    "source": "https://en.orda.kz/settlement-reached-in-phuket-over-layan-green-park-eco-condo-dispute-8665"
+   }
+  ],
+  "sources": [
+   "https://layangreenpark.com/",
+   "https://layangreenpark.com/phase2",
+   "https://layangreenpark.com/construction",
+   "https://layangreenpark.com/about",
+   "https://layangreenpark.com/income/program",
+   "https://layangreenpark.com/layout",
+   "https://devth.thethaiger.com/th/news/phuket/kazakh-man-reports-phuket-investment-scam-run-by-ukrainian-and-thai-men",
+   "https://en.orda.kz/settlement-reached-in-phuket-over-layan-green-park-eco-condo-dispute-8665"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "riviera-malibu-residences",
+  "url": "https://therivieragroupthailand.com/the-riviera-malibu-residences/",
+  "docs_url": "https://therivieragroupthailand.com/the-riviera-malibu-residences/",
+  "permit_number": null,
+  "docs_listed": [
+   "land area 2 rai 275 sq.wah",
+   "buildable 26,957 m2 / saleable 14,815 m2",
+   "275 units with unit mix and sizes",
+   "floor plans section",
+   "construction start Oct 2023, expected completion Dec 2026",
+   "news: permanent electrical connection (8 Jul 2026), on track for year-end completion (19 Jul 2026)"
+  ],
+  "note": "Freehold 30-floor, 275-unit tower on Pratumnak Soi 5 with floor plans, construction start October 2023 and expected completion December 2026; July 2026 news posts report it on schedule, but no permit, EIA number or escrow is published (checked 31 Oct 2026)",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "The Riviera Group: The Riviera Ocean Drive (43 floors, 513 rooms, completed 2023), The Riviera Monaco (40 floors, 412 rooms, completed 2022) and The Riviera Jomtien named as completed (news page, Jul 2026)",
+   "units": 275,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit, licence or approval number published on the pages opened",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "News posts dated 8 Jul 2026 (permanent electrical connection) and 19 Jul 2026 (aerial/site photos, on track for year-end completion)",
+   "plans": "Project page has a Floor plans section and unit sizes per type",
+   "record": "News page lists Ocean Drive (2023), Monaco (2022) and Jomtien as completed winners",
+   "returns": "No guaranteed return language found"
+  },
+  "positives": [
+   "Dated construction news in 2026",
+   "Developer has named completed towers in Pattaya",
+   "Unit mix and sizes published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://therivieragroupthailand.com/the-riviera-malibu-residences/",
+   "https://therivieragroupthailand.com/category/news-2026/",
+   "https://therivieragroupthailand.com/about-us"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "citygate-de-phuket",
+  "url": "https://citygatedephuket.com/",
+  "docs_url": "https://citygatedephuket.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer Citygate Exclusive Developments Co., Ltd.",
+   "project area 5-2-69.5 rai (9,078 m2)",
+   "325 units in 4 buildings, 7 storeys",
+   "floor plans for every level (G to roof)",
+   "8 unit plans 46-191 m2",
+   "monthly construction photos, latest Sept 2026 (Building C structure complete)",
+   "sale kit PDF"
+  ],
+  "note": "325-unit, four-building condo near Kamala Beach with floor-by-floor and unit plans and monthly site photos through September 2026 (Building C structure complete); price only on request and no permit, EIA number or escrow published (checked 31 Oct 2026)",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 325,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit, licence or approval number published on the pages opened",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "Monthly construction photos (Jul, Aug, Sep 2026); text says Building C structure is complete and Building B pile caps under way",
+   "plans": "Floor plans for every level and eight unit plans",
+   "record": "No completed projects by the developer named on the site",
+   "returns": "No guaranteed return language found"
+  },
+  "positives": [
+   "Monthly dated construction photos",
+   "Full floor and unit plans",
+   "Developer company and land area published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://citygatedephuket.com/",
+   "https://citygatedephuket.com/files/citygate-de-phuket-salekit-en.pdf"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "the-one-naiharn",
+  "url": "https://theonephuket.com/theonenaiharn/eng",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "completion date September 2026",
+   "developer THE ONE PHUKET CO. LTD., reg. no. 0835551011987",
+   "196 apartments, 7 floors, 13 layouts",
+   "hotel license with Burasari Group (no number)",
+   "layouts and prices section",
+   "project presentation PDF (Google Drive)"
+  ],
+  "note": "Condo-hotel of 196 apartments near Nai Harn with completion September 2026, 13 layouts and a stated hotel license managed by Burasari Group; the construction-progress section has no dated content in the page text and no permit number, escrow or completed projects are published (checked 31 Oct 2026)",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 196,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Page states a hotel license with Burasari Group as manager; no licence or permit number",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "Section titled 'Current updates and construction phases' but no dated photos or figures in the page text",
+   "plans": "Layouts published (types A-1 to E-1 with sizes)",
+   "record": "Group pages list current projects (Aura, Ashram, Panorama Kata) but no completed project",
+   "returns": "No guaranteed return language for this project (a 28% return claim refers to a different project)"
+  },
+  "positives": [
+   "Developer registration number published",
+   "Layouts with sizes published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://theonephuket.com/theonenaiharn/eng",
+   "https://theonephuket.com/"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "the-zero-nai-yang",
+  "url": "https://thezeronaiyang.com/",
+  "docs_url": "https://thezeronaiyang.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "now marketed as Silhouette by The Zero Phuket",
+   "EIA approved badge (no number)",
+   "150 residences, 5 storeys, 29.5-108 m2",
+   "base prices from THB 4,940,000",
+   "completion Q2 2028",
+   "freehold for foreigners within quota",
+   "rental pool 70% of net income",
+   "payment plan reserve THB 100,000 then instalments"
+  ],
+  "note": "Now sold as Silhouette by The Zero Phuket: 150 freehold residences from THB 4.94M with completion Q2 2028 and an 'EIA approved' badge without a number; floor plans only on request, no escrow or progress updates, and founder's UK projects named (checked 31 Oct 2026)",
+  "seed": {
+   "price": 4940000,
+   "currency": "THB",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q2",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "The Zero SW20 (London, 35 apartments) completed and fully sold in 2023; earlier UK schemes named (Elizabeth Court 2001, The Ambassador 2003, Powell House 2004, Glebelands House 2012, The Ridge 2017) per thezeronaiyang.com",
+   "units": 150,
+   "payment_plan": "THB 100,000 reservation, payment on contract, instalments during construction, balance on handover",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "'EIA APPROVED' badge on site; Nation Thailand (26 Mar 2026) also says both Zero projects carry EIA approval; no number published",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "No construction progress published",
+   "plans": "Floor plans sent only on request ('Get Prices & Floor Plans')",
+   "record": "Site names UK projects by year and says The Zero SW20 was fully sold on completion in 2023",
+   "returns": "Rental pool pays 70% of net income; no guaranteed return language"
+  },
+  "positives": [
+   "EIA approval stated by developer and press",
+   "Founder's completed UK projects named",
+   "Base prices per unit type published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://thezeronaiyang.com/",
+   "https://www.nationthailand.com/business/property/40064300"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "samudra-villas",
+  "url": "https://samudravillas.com/",
+  "docs_url": "https://samudravillas.com/who-we-are",
+  "permit_number": null,
+  "docs_listed": [
+   "documents table: HGB certificate, PKKPR and PBG building permit marked 'Available' (no numbers)",
+   "notary-held escrow option (FAQ)",
+   "milestone tracker updated 23 Oct 2026 (earthworks in progress since Oct 2026)",
+   "floor plans",
+   "company reg. 4025081552104973",
+   "named contractor PT Lombok Biru Jaya Konstruksi and engineer",
+   "guaranteed fixed income option for 3 years"
+  ],
+  "note": "Six EUR 255,000 villas on HGB land; the developer lists its PBG building permit and PKKPR as 'Available' without numbers, offers notary escrow, and a tracker dated 23 Oct 2026 shows earthworks under way with villa construction from January 2027; it also sells a guaranteed fixed income for 3 years (checked 31 Oct 2026)",
+  "seed": {
+   "price": 255000,
+   "currency": "EUR",
+   "title": "HGB via PT PMA",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "FAQ: an independent notary can hold funds in escrow and release them on milestone completion (optional)",
+   "progress_pct": 0,
+   "developer_delivered": null,
+   "units": 6,
+   "payment_plan": "Milestone-based payments; bilingual notarized contract",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": false,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Who-we-are page lists 'PBG - building permit' and 'PKKPR' as Available; numbers not published",
+   "escrow": "FAQ answer: independent notary can hold funds in escrow, released on milestones",
+   "progress": "Milestone tracker updated 23 Oct 2026: land, survey, design completed, terracing and earthworks in progress since Oct 2026; villa construction not yet started",
+   "plans": "Ground and first floor plans published",
+   "record": "No completed projects by the developer; only the contractor's past villas mentioned",
+   "returns": "'Guaranteed Return: Fixed income guaranteed for the first 3 years, regardless of occupancy'"
+  },
+  "positives": [
+   "Document checklist with PBG and PKKPR status",
+   "Notary escrow option stated",
+   "Dated milestone tracker",
+   "Named contractor, architect and engineer"
+  ],
+  "flags": [],
+  "sources": [
+   "https://samudravillas.com/",
+   "https://samudravillas.com/who-we-are",
+   "https://samudravillas.com/investment",
+   "https://samudravillas.com/assets/index-etUMNeYM.js"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "lithos-bespoke-residences",
+  "url": "https://propertieslombok.com/lithos/",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "phase pricing table EUR 139,000 to 169,000 (40-yr) and up to 189,000 (80-yr)",
+   "40-yr leasehold or 80-yr HGB/freehold option",
+   "155 m2 three-level unit description",
+   "milestone payments 30/25/25/10/10",
+   "handover Q3 2027 (phases 1+2)",
+   "projected ROI 15-18% (not guaranteed)",
+   "drone/progress reports only for members"
+  ],
+  "note": "Phase pricing from EUR 139,000 on a 40-year lease (80-year option), handover Q3 2027 and milestone payments; site says construction is active with site preparation but progress reports go only to members, and no PBG number, escrow or track record is published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 139000,
+   "currency": "EUR",
+   "title": "leasehold",
+   "lease_base": 40,
+   "extension": "40-year 'legacy' extension (80 years total) or HGB",
+   "guaranteed_language": false,
+   "yield_pct": 16.4,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": "30% signing, 25% foundation and superstructure, 25% roof and glazing, 10% fit-out and MEP, 10% handover",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No PBG or other permit number published",
+   "escrow": "Payments tied to verified milestones; no escrow or bank guarantee stated",
+   "progress": "'Construction active, site preparation underway' with no date or figure; drone reports only for members",
+   "plans": "No floor plans published, only a unit description",
+   "record": "No completed projects named (site copyright Razzaque Paradise Properties)",
+   "returns": "Projected ROI 15-18% and 16.4% example; not described as guaranteed"
+  },
+  "positives": [
+   "Phase prices and payment milestones published",
+   "Handover quarter published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://propertieslombok.com/lithos/",
+   "https://propertieslombok.com/"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "enadia-seaview-collection",
+  "url": "https://seaview-haven-hub.lovable.app/",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "five freehold villas, 2 sold",
+   "price table USD 245K-280K construction phase, 265K-300K completed",
+   "planned timeline: kick-off Jul 2026, foundation Dec 2026, structure May 2027, finishing Sep 2027",
+   "site masterplan 1,300 m2",
+   "projected net ROI 12-15%",
+   "USD 5,000 reservation, 30% on signing"
+  ],
+  "note": "Five freehold villas above Selong Belanak from USD 245,000 with a planned timeline to September 2027 and projected (not guaranteed) ROI; no PBG, escrow, dated progress or developer track record is published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 245000,
+   "currency": "USD",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 5,
+   "payment_plan": "USD 5,000 reservation, 30% on agreement signing",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No PBG or permit mentioned",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "Only a planned schedule; no dated progress photos or figures",
+   "plans": "Site masterplan published",
+   "record": "Team described generally ('fifty years of building'); no completed projects named",
+   "returns": "ROI labelled projected; no guarantee"
+  },
+  "positives": [
+   "Construction-phase and completed prices published",
+   "Planned milestone dates published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://seaview-haven-hub.lovable.app/"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "vega-condominium",
+  "url": "https://vegacondominium.com/",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "147 units, studios 34 m2 and 1-bed 52 m2",
+   "price from THB 3,475,000; THB 115,833/m2",
+   "floor plans",
+   "foreign quota freehold",
+   "payment plan 30/30/20/15/5 tied to milestones",
+   "handover March 2028",
+   "sinking fund THB 700/m2, CAM THB 75/m2"
+  ],
+  "note": "147-unit condo in Bang Tao from THB 3,475,000 (THB 115,833/m2) with floor plans, milestone payments and planned handover March 2028; no permit, EIA, escrow or progress data and no completed projects confirmed (checked 31 Oct 2026)",
+  "seed": {
+   "price": 3475000,
+   "currency": "THB",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 147,
+   "payment_plan": "THB 200,000 reservation, 30% contract, 30% foundation, 20% roof, 15% interior, 5% transfer",
+   "price_per_m2": 115833
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit, licence or approval number published on the pages opened",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "Schedule only on request; no progress published",
+   "plans": "Studio and 1-bed floor plans",
+   "record": "Site names a portfolio (Sirius Condominium, Proxima Villas, Capella Villas) but does not state any as completed",
+   "returns": "No guaranteed return language"
+  },
+  "positives": [
+   "Price per m2 and running costs published",
+   "Payment plan tied to construction milestones"
+  ],
+  "flags": [],
+  "sources": [
+   "https://vegacondominium.com/"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "grand-solaire-pattaya",
+  "url": "https://www.grandsolaire.com/",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "67 storeys, 2,470 residences on 14.5 rai",
+   "SLR Development Co., Ltd. reg. no. 0205561042805",
+   "floor plan and unit plans pages",
+   "two payment schedules",
+   "sinking fund 500 THB/m2, maintenance 40 THB/m2",
+   "expected completion end 2026",
+   "undated construction update video"
+  ],
+  "note": "67-storey, 2,470-unit tower on Thappraya Road with floor and unit plans, payment schedules and expected completion end 2026; construction update is an undated video and no price, permit, escrow or completed projects are published (checked 31 Oct 2026)",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 2470,
+   "payment_plan": "Option A: 25% after 14 days, 16.25% every 4 months, 10% on completion; Option B: THB 100,000 booking, 15%, 6.25% every 4 months, 60% on completion",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit, licence or approval number published on the pages opened",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "Embedded 'Construction update' video with no date or figure",
+   "plans": "Floor plan and unit plans pages",
+   "record": "No completed projects named on the site",
+   "returns": "No guaranteed return language"
+  },
+  "positives": [
+   "Developer registration number published",
+   "Payment schedules and fees published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.grandsolaire.com/",
+   "https://www.grandsolaire.com/floor-plan/",
+   "https://www.grandsolaire.com/unit-plans/"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "riviera-beverly-hills-residences",
+  "url": "https://therivieragroupthailand.com/beverly-hills-residences-in-pattaya/",
+  "docs_url": "https://therivieragroupthailand.com/beverly-hills-residences-in-pattaya/",
+  "permit_number": null,
+  "docs_listed": [
+   "land area 5 rai",
+   "buildable 32,696 m2 / residential 17,824 m2",
+   "469 residences in 3 buildings",
+   "room types studio to 3 bed",
+   "construction start Feb 2026, completion Jun 2028"
+  ],
+  "note": "Freehold low-rise project of 469 residences in three buildings in Jomtien, construction start February 2026 and completion June 2028; no price, floor plans, progress updates, permit number or escrow published (checked 31 Oct 2026)",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "The Riviera Group: The Riviera Ocean Drive (43 floors, 513 rooms, completed 2023), The Riviera Monaco (40 floors, 412 rooms, completed 2022) and The Riviera Jomtien named as completed (news page, Jul 2026)",
+   "units": 469,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit, licence or approval number published on the pages opened",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "No construction updates for this project on the project page or 2026 news page",
+   "plans": "No floor or unit plans on the project page",
+   "record": "News page lists Ocean Drive (2023), Monaco (2022) and Jomtien as completed",
+   "returns": "No guaranteed return language found"
+  },
+  "positives": [
+   "Construction start and completion dates published",
+   "Developer has named completed towers in Pattaya"
+  ],
+  "flags": [],
+  "sources": [
+   "https://therivieragroupthailand.com/beverly-hills-residences-in-pattaya/",
+   "https://therivieragroupthailand.com/category/news-2026/",
+   "https://therivieragroupthailand.com/about-us"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "riviera-santa-monica",
+  "url": "https://therivieragroupthailand.com/santa-monica-in-jomtien/",
+  "docs_url": "https://therivieragroupthailand.com/santa-monica-in-jomtien/",
+  "permit_number": null,
+  "docs_listed": [
+   "land area 3.2 rai",
+   "buildable 36,928 m2 / residential 18,687 m2",
+   "447 residences with unit counts and size ranges",
+   "124 parking spaces",
+   "construction start Oct 2025, finish Nov 2028",
+   "states backing from Thai commercial banks"
+  ],
+  "note": "Freehold 34-storey tower with 447 residences in Jomtien, construction October 2025 to November 2028, unit counts and size ranges listed; no price, floor plans, progress updates, permit number or escrow published (checked 31 Oct 2026)",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "The Riviera Group: The Riviera Ocean Drive (43 floors, 513 rooms, completed 2023), The Riviera Monaco (40 floors, 412 rooms, completed 2022) and The Riviera Jomtien named as completed (news page, Jul 2026)",
+   "units": 447,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit, licence or approval number published on the pages opened",
+   "escrow": "Page says the developer is 'backed by strong financial support from leading Commercial Thai Banks'; no escrow or deposit protection stated",
+   "progress": "No construction updates for this project",
+   "plans": "Unit counts and size ranges only; no floor or unit plans",
+   "record": "News page lists Ocean Drive (2023), Monaco (2022) and Jomtien as completed",
+   "returns": "No guaranteed return language found"
+  },
+  "positives": [
+   "Unit mix with size ranges published",
+   "Construction start and finish dates published",
+   "Developer has named completed towers in Pattaya"
+  ],
+  "flags": [],
+  "sources": [
+   "https://therivieragroupthailand.com/santa-monica-in-jomtien/",
+   "https://therivieragroupthailand.com/category/news-2026/",
+   "https://therivieragroupthailand.com/about-us"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "naga-kiri-villas-lamai",
+  "url": "https://samuiparadisegroup.com/naga-kiri-villas-lamai/",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "price from THB 7,500,000 (group homepage also lists THB 11,500,000)",
+   "freehold (Thai company) or 30-year leasehold with renewal",
+   "12-month delivery",
+   "master plan images and brochure PDF",
+   "staged payment plan",
+   "company no. 0845566024656"
+  ],
+  "note": "3-bed pool villas in Lamai from THB 7.5M, freehold via Thai company or 30-year lease, 12-month delivery and staged payments; the progress section has no dated content and no permit or escrow is published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 7500000,
+   "currency": "THB",
+   "title": null,
+   "lease_base": 30,
+   "extension": "30-year renewal (contractual commitment)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Samui Paradise Group homepage: '150+ villas delivered across Koh Samui'; Green Hills Villas Lamai marked sold out",
+   "units": null,
+   "payment_plan": "5% deposit during due diligence, 25% on contract, three 20-25% construction milestones, 5% on handover (group FAQ)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit, licence or approval number published on the pages opened",
+   "escrow": "Payments released by construction stage; no escrow stated",
+   "progress": "'Construction progress' heading with no dated photos or figures in page text",
+   "plans": "Master plan images and brochure",
+   "record": "Homepage claims 150+ villas delivered; Green Hills Villas sold out",
+   "returns": "No guaranteed return language on the project page"
+  },
+  "positives": [
+   "Staged payments tied to construction",
+   "Company registration number published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://samuiparadisegroup.com/naga-kiri-villas-lamai/",
+   "https://samuiparadisegroup.com/",
+   "https://samuiparadisegroup.com/about-us/"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "the-title-coralina-kamala",
+  "url": "https://coralinakamala.com/",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "564 apartments in 8 seven-storey buildings + 5 commercial units",
+   "prices by type from THB 4,284,000",
+   "master plan",
+   "construction start Q2 2026, completion Q2 2028",
+   "0% instalment during construction"
+  ],
+  "note": "564-unit project 400 m from Kamala Beach from THB 4,284,000 with construction Q2 2026 to Q2 2028; developer Rhom Bho Property PCL (SET-listed) has begun transfers at The Title Legendary Bang-Tao, but no permit, EIA, escrow or progress is published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 4284000,
+   "currency": "THB",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Rhom Bho Property PCL SET snapshot: commencement of property transfers for The Title Legendary Bang-Tao",
+   "units": 564,
+   "payment_plan": "0% instalment during the construction period",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit, licence or approval number published on the pages opened",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "No construction progress published",
+   "plans": "Master plan only (keeps earlier check)",
+   "record": "SET listed-company snapshot names transfers at The Title Legendary Bang-Tao; FazWaz names Rhom Bho as developer",
+   "returns": "'High rental yield' wording only; no guarantee"
+  },
+  "positives": [
+   "Developer is a SET-listed company",
+   "Prices by unit type published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://coralinakamala.com/",
+   "https://www.fazwaz.co.th/en/projects/thailand/phuket/kathu/kamala/the-title-coralina-kamala",
+   "https://lssmedia.setlink.set.or.th/2025/YE/TITLE-YE68-ListedCompanySnapshot-EN.html"
+  ],
+  "status": "active",
+  "developer": "Rhom Bho Property PCL (The Title)"
+ },
+ {
+  "slug": "selo-suites",
+  "url": "https://seloproperties.co/selo-suites",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "1-bed suites from USD 179,000 (USD 189,000 with plunge pool)",
+   "floor plan",
+   "HGB via PT PMA or long-term lease",
+   "9-12 month build after 50% or 75% down payment",
+   "45% share of net rental revenue",
+   "completed villas page (Selong Selo Resort)"
+  ],
+  "note": "1-bed suites from USD 179,000 with floor plan, built 9-12 months after the down payment, inside the operating Selong Selo Resort whose completed villas are shown; no PBG, escrow or progress data published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 179000,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Selo Properties: operating Selong Selo Resort & Villas with completed villas named (Villa 1G, Villa Cullen, Villa Manju, Villa Serasi) on seloproperties.co/completed-villas",
+   "units": null,
+   "payment_plan": "50% or 75% down payment, build starts on receipt",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No PBG or permit number published",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "Construction starts only after down payment; no progress published",
+   "plans": "Floor plan published",
+   "record": "Completed villas page names four built villas in an operating resort",
+   "returns": "45% revenue share; no guaranteed return language"
+  },
+  "positives": [
+   "Developer has an operating resort with named completed villas",
+   "Floor plan and prices published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://seloproperties.co/selo-suites",
+   "https://seloproperties.co/completed-villas",
+   "https://seloproperties.co/developer",
+   "https://seloproperties.co/faq"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "nichakul-villas-lamai",
+  "url": "https://samuiparadisegroup.com/nichakul-villas-lamai/",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "2-3 bed villas from THB 7.9M",
+   "30-year leasehold (project page)",
+   "12-month delivery",
+   "master plan and brochure",
+   "payment structure from THB 500,000"
+  ],
+  "note": "2-3 bed villas in Lamai from THB 7.9M; the project page now states a 30-year leasehold (homepage card says freehold), 12-month delivery and staged payments; no permit, escrow or dated progress published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 7900000,
+   "currency": "THB",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Samui Paradise Group homepage: '150+ villas delivered across Koh Samui'; Green Hills Villas Lamai marked sold out",
+   "units": null,
+   "payment_plan": "THB 500,000 then stages at structure, walls/roof and finishing",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit, licence or approval number published on the pages opened",
+   "escrow": "Payments released by construction stage; no escrow stated",
+   "progress": "No dated progress published",
+   "plans": "Master plan and brochure",
+   "record": "Homepage claims 150+ villas delivered; Green Hills Villas sold out",
+   "returns": "No guaranteed return language on the project page"
+  },
+  "positives": [
+   "Staged payments tied to construction"
+  ],
+  "flags": [],
+  "sources": [
+   "https://samuiparadisegroup.com/nichakul-villas-lamai/",
+   "https://samuiparadisegroup.com/",
+   "https://samuiparadisegroup.com/about-us/"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "ulu-villas-lamai",
+  "url": "https://samuiparadisegroup.com/ulu-villas-lamai-koh-samui/",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "15 four-bed villas ~390 m2 from THB 11.9M",
+   "30-year leasehold (project page)",
+   "15-month delivery",
+   "master plan and brochure",
+   "staged payments"
+  ],
+  "note": "15 four-bed villas of about 390 m2 in Lamai from THB 11.9M; project page now states a 30-year leasehold, 15-month delivery and staged payments; no permit, escrow or dated progress published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 11900000,
+   "currency": "THB",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Samui Paradise Group homepage: '150+ villas delivered across Koh Samui'; Green Hills Villas Lamai marked sold out",
+   "units": 15,
+   "payment_plan": "Stages at structure and finishing (group FAQ: 5% / 25% / three milestones / 5%)",
+   "price_per_m2": 30513
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit, licence or approval number published on the pages opened",
+   "escrow": "Payments released by construction stage; no escrow stated",
+   "progress": "No dated progress published",
+   "plans": "Master plan and brochure",
+   "record": "Homepage claims 150+ villas delivered; Green Hills Villas sold out",
+   "returns": "No guaranteed return language on the project page"
+  },
+  "positives": [
+   "Unit count and size published",
+   "Staged payments tied to construction"
+  ],
+  "flags": [],
+  "sources": [
+   "https://samuiparadisegroup.com/ulu-villas-lamai-koh-samui/",
+   "https://samuiparadisegroup.com/",
+   "https://samuiparadisegroup.com/about-us/"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "lendang-luar-2030",
+  "url": "https://lombokid.com/en/developments/lendang-luar",
+  "docs_url": "https://lombokid.com/en/legal",
+  "permit_number": null,
+  "docs_listed": [
+   "district masterplan (4 zones)",
+   "nine villa types EUR 38,000-259,000",
+   "show villa built",
+   "legal notice: PT Lombok Urban Development",
+   "track record: Lombok Souls 35 villas operating, 70+ villas delivered",
+   "disclaimer: projections do not guarantee returns"
+  ],
+  "note": "100-villa district in Senggigi/Malimbu with nine types from EUR 38,000 and a built show villa; the developer names Lombok Souls (35 villas, operating) and says 70+ villas delivered, but no PBG, escrow, completion date or dated progress is published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 38000,
+   "currency": "EUR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Lombok International Development: Lombok Souls (35 villas, fully operational, launched 2023) and Kelapa Lodge; '70+ villas delivered' (lombokid.com/en/about and homepage)",
+   "units": 100,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Mentions backing from the DPMPTSP one-stop service and 'land and building permits' generally; no PBG number",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "Says construction under way since 2024 and a show villa is built; no dated progress or figure for this district",
+   "plans": "Masterplan with villa types (keeps earlier check)",
+   "record": "About page names Lombok Souls (35 villas operating) and Kelapa Lodge",
+   "returns": "Disclaimer: projections 'do not guarantee returns'"
+  },
+  "positives": [
+   "Named completed and operating projects",
+   "Explicit no-guarantee disclaimer",
+   "Legal entity published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://lombokid.com/en/developments/lendang-luar",
+   "https://lombokid.com/en/about",
+   "https://lombokid.com/en/legal",
+   "https://lombokid.com/en/"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "the-crest-samui",
+  "url": "https://thewavegroupsamui.com/the-crest-residence-beachfront-villa/",
+  "docs_url": "https://thewavegroupsamui.com/the-crest-residence-beachfront-villa/",
+  "permit_number": null,
+  "docs_listed": [
+   "thecrestsamui.com now redirects to the developer site",
+   "leasehold, 27 villas phase 1 of 28 residences",
+   "estimated completion 2027",
+   "master plan",
+   "villa types (Signature, Diamond)"
+  ],
+  "note": "thecrestsamui.com now redirects to The Wave Real Estate Group site, which lists The Crest as 27 leasehold beachfront villas in Bang Po with estimated completion 2027 and a master plan; no price, permit, escrow or progress published (checked 31 Oct 2026)",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": "leasehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "The Wave Real Estate Group (since 2013): The Wave I & II, K-Waltz, Coast Breeze (29 units, fully sold out); '5 projects, 100+ pool villas' (thewavegroupsamui.com/about-us)",
+   "units": 27,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit, licence or approval number published on the pages opened",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "No construction progress published",
+   "plans": "Master plan (keeps earlier check)",
+   "record": "About page names earlier projects and Coast Breeze (29 units) as fully sold out; 100+ pool villas",
+   "returns": "No guaranteed return language"
+  },
+  "positives": [
+   "Developer has named earlier projects in Koh Samui"
+  ],
+  "flags": [],
+  "sources": [
+   "https://thecrestsamui.com/",
+   "https://thewavegroupsamui.com/the-crest-residence-beachfront-villa/",
+   "https://thewavegroupsamui.com/about-us/"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "copacabana-coral-reef-jomtien",
+  "url": "https://copacabanacoralreef.com/",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "freehold",
+   "1,972 units on 13 rai 84.5 sq.wah",
+   "master plan",
+   "floor-by-floor plans",
+   "unit plans"
+  ],
+  "note": "Freehold 1,972-unit project on 13 rai in Jomtien with master plan, floor and unit plans; no developer name, price, completion date, permit, escrow or progress published (checked 31 Oct 2026)",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 1972,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit, licence or approval number published on the pages opened",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "No construction progress published",
+   "plans": "Master plan, floor plans and unit plans",
+   "record": "Developer not named on the site",
+   "returns": "No guaranteed return language"
+  },
+  "positives": [
+   "Floor and unit plans published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://copacabanacoralreef.com/"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "vibe-town-karon",
+  "url": "https://vibekaron.com/",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "freehold within foreign quota",
+   "pre-sale prices from $86,000; $3,300/m2",
+   "299 units, completion Q4 2029",
+   "payment by construction stage after THB 200,000 reservation",
+   "layouts shown are from Vibe Residence",
+   "floor plans on request"
+  ],
+  "note": "Second ESM Company Group condo in Karon, pre-sale from $86,000 ($3,300/m2) with completion Q4 2029 and stage payments; floor plans only on request, the group's first project completes Q4 2028, and no permit, escrow or progress is published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 86000,
+   "currency": "USD",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 299,
+   "payment_plan": "THB 200,000 reservation, then payments at construction start, foundations, structure, finishing and handover",
+   "price_per_m2": 3300
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit, licence or approval number published on the pages opened",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "Not started (sales launch); no progress published",
+   "plans": "Floor plans only on request; layouts shown belong to another project",
+   "record": "Developer's first project Vibe Residence Karon completes Q4 2028; nothing delivered named",
+   "returns": "No guaranteed return language"
+  },
+  "positives": [
+   "Price per m2 and stage payments published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://vibekaron.com/"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "saraya-beach-lombok",
+  "url": "https://sarayalombok.com/masterplan/",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "interactive masterplan with lot availability",
+   "six villa types 60-220 m2 with prices from A$249,000",
+   "leasehold or freehold via PT PMA",
+   "rental model: 60% of revenue to owners with projected rates"
+  ],
+  "note": "Resort villas in Sekotong from A$249,000 across six types with masterplan and lot availability, leasehold or PT PMA options and a projected 60% revenue share; no completion date, PBG, escrow, progress or track record published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 249000,
+   "currency": "AUD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": 4150
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No PBG or permit mentioned",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "No construction progress published",
+   "plans": "Masterplan and villa sizes per type (keeps earlier check)",
+   "record": "No completed projects named",
+   "returns": "Rental income shown as projected; no guarantee"
+  },
+  "positives": [
+   "Prices and sizes for all six villa types published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://sarayalombok.com/masterplan/",
+   "https://sarayalombok.com/accommodation/aegean/"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "xamaras-wellness-retreat",
+  "url": "https://xamarasgroup.com/xamaras-wellness-retreat",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "22 villas (18 Luxury + 4 Presidential), 12 available",
+   "80-year leasehold",
+   "project dossier flipbook",
+   "labelled off-plan on group homepage",
+   "flexible payment plan"
+  ],
+  "note": "22-villa wellness resort on an 80-year lease, labelled off-plan with 12 villas left and a downloadable dossier; no price, floor plans, completion date, PBG, escrow or progress published (checked 31 Oct 2026)",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": "leasehold",
+   "lease_base": 80,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Xamaras Group: Xamaras Villa above Kuta described as 'the first completed Xamaras home', now taking guests (xamarasgroup.com)",
+   "units": 22,
+   "payment_plan": "Flexible payment plan (no terms published)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No PBG or permit mentioned",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "Homepage labels it 'OFF-PLAN'; no progress published",
+   "plans": "Floor plans only on request",
+   "record": "Group names one completed home, Xamaras Villa",
+   "returns": "Mentions high ROI potential and 15-20% yields in prime spots; no guarantee"
+  },
+  "positives": [
+   "Units and availability published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://xamarasgroup.com/xamaras-wellness-retreat",
+   "https://xamarasgroup.com/",
+   "https://xamarasgroup.com/xamaras-villa"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "xamaras-tribe-villas",
+  "url": "https://xamarasgroup.com/xamaras-tribe-villas",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "bamboo villas on 7,000 m2, three types 74-79 m2",
+   "80-year leasehold on freehold land",
+   "project dossier",
+   "'80% completion' label on group homepage",
+   "availability per type"
+  ],
+  "note": "Bamboo villas on a 7,000 m2 ridge site with an 80-year lease; the group homepage labels the project at 80% completion and shows availability per villa type, but no price, PBG, escrow or floor plans are published (checked 31 Oct 2026)",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": "leasehold",
+   "lease_base": 80,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 80,
+   "developer_delivered": "Xamaras Group: Xamaras Villa above Kuta described as 'the first completed Xamaras home', now taking guests (xamarasgroup.com)",
+   "units": 20,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No PBG or permit mentioned",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "Group homepage cards: '80-YEAR LEASEHOLD · 80% COMPLETION' (undated)",
+   "plans": "No floor plans published",
+   "record": "Group names one completed home, Xamaras Villa",
+   "returns": "No guaranteed return language"
+  },
+  "positives": [
+   "Construction percentage published",
+   "Availability per villa type published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://xamarasgroup.com/xamaras-tribe-villas",
+   "https://xamarasgroup.com/",
+   "https://xamarasgroup.com/xamaras-villa"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "terratamo-lombok",
+  "url": "https://terratamo-sanctuary.lovable.app/",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "three villas, private waitlist",
+   "status: design completed, construction commencing",
+   "opening late 2027",
+   "entity PT Terra Ventures Lombok"
+  ],
+  "note": "Waitlist site for three villas in Kuta says design completed, construction commencing and opening late 2027; pricing and floor plans are shared only privately and no PBG, escrow or track record is published (checked 31 Oct 2026)",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 3,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No PBG or permit mentioned",
+   "escrow": "No escrow, trust account, bank guarantee or deposit insurance published",
+   "progress": "Status labels only ('Construction: Commencing'), no date or figure",
+   "plans": "Floor plans shared only privately",
+   "record": "No completed projects named",
+   "returns": "No guaranteed return language"
+  },
+  "positives": [
+   "Legal entity named"
+  ],
+  "flags": [],
+  "sources": [
+   "https://terratamo-sanctuary.lovable.app/"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "nativa-tulum",
+  "url": "https://nativatulum.mx/",
+  "docs_url": "https://nativatulum.mx/nosotros/",
+  "permit_number": null,
+  "docs_listed": [
+   "typologies with m2 and prices in MXN and USD",
+   "claims monthly construction updates (none found)",
+   "developer CV and featured-projects PDFs",
+   "counters: 45 years, 3,000+ homes delivered",
+   "bank bridge loan (credito puente) claim",
+   "international transfer data PDF"
+  ],
+  "note": "Lowest unit 2,252,515 MXN after discount (list 2,502,794 MXN); developer cites 45 years and 3,000+ homes delivered and a bank bridge loan, but no licencia de construccion, fideicomiso escrow, dated progress or delivery date is published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 2252515,
+   "currency": "MXN",
+   "title": "fideicomiso",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Claims a bank 'crédito puente' (developer bridge loan); no bank named",
+   "progress_pct": null,
+   "developer_delivered": "Grupo Avica / Canteras Peninsulares: '3,000+ viviendas entregadas', 45 years; featured projects PDF names Kuxtal (Playa del Carmen, 2017), Townsquare (2018) and others",
+   "units": null,
+   "payment_plan": "10% down payment option",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licencia de construccion or other permit number published",
+   "escrow": "Only a developer bridge loan (credito puente) is claimed; no fideicomiso, escrow or deposit guarantee for buyers",
+   "progress": "Says monthly avances de obra are available but none are published on the site or blog",
+   "plans": "Typology plans with m2",
+   "record": "Nosotros page counters: 3,000+ homes delivered; featured projects PDF",
+   "returns": "No guaranteed return language"
+  },
+  "positives": [
+   "Developer track record figures and project portfolio published",
+   "Prices per typology in MXN and USD"
+  ],
+  "flags": [],
+  "sources": [
+   "https://nativatulum.mx/",
+   "https://nativatulum.mx/nosotros/",
+   "https://nativatulum.mx/blog-es/",
+   "https://nativatulum.mx/assets/proyectos_destacados.pdf"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "hunab-ku-sanctuary-tulum",
+  "url": "https://hunabkusanctuary.com/",
+  "docs_url": "https://hunabkusanctuary.com/wp-content/uploads/2026/04/Hunab-Ku-ENG-2026.pdf",
+  "permit_number": null,
+  "docs_listed": [
+   "brochure PDF (2026)",
+   "per-typology prices from USD 176,000 and m2",
+   "'real-time construction progress' gallery (April 2026 overview)",
+   "projected ROI tables (not guaranteed)"
+  ],
+  "note": "Condo-hotel by Home Tulum from USD 176,000 with an April 2026 construction-progress gallery and projected (not guaranteed) ROI; no licencia, fideicomiso, floor plans, delivery date or track record published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 176000,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licencia de construccion or permit number published",
+   "escrow": "No fideicomiso or escrow published",
+   "progress": "Construction progress gallery with 'April 2026 overview'",
+   "plans": "Sizes per typology only; no floor plans",
+   "record": "No completed Home Tulum projects named",
+   "returns": "Appreciation 'not guaranteed'; ROI shown as estimate"
+  },
+  "positives": [
+   "Dated construction progress gallery",
+   "Prices and sizes per typology"
+  ],
+  "flags": [],
+  "sources": [
+   "https://hunabkusanctuary.com/",
+   "https://hunabkusanctuary.com/wp-content/uploads/2026/04/Hunab-Ku-ENG-2026.pdf"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "zamajal-tulum",
+  "url": "https://zamajal.com/",
+  "docs_url": "https://zamajal.com/wp-content/uploads/2025/03/disponibilidad.pdf",
+  "permit_number": null,
+  "docs_listed": [
+   "floor plans section",
+   "availability PDF",
+   "per-typology prices from 2,765,934 MXN",
+   "360 showroom",
+   "lot address (Region 08, Mz 600, Lote 04)",
+   "'Entregas diciembre del 2025' still shown"
+  ],
+  "note": "Units from 2,765,934 MXN by Grupo Malica; the site still states 'Entregas diciembre del 2025', a date already passed, with no progress update, licencia, fideicomiso or completed projects confirmed (checked 31 Oct 2026)",
+  "seed": {
+   "price": 2765934,
+   "currency": "MXN",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2025",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": "Reserve with 20,000 MXN",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licencia de construccion or permit number published",
+   "escrow": "No fideicomiso or escrow published",
+   "progress": "No construction progress published; delivery date Dec 2025 has passed",
+   "plans": "Floor plans section",
+   "record": "Grupo Malica site names projects (Hotel Extended Suites Queretaro and Merida, Puerta del Sur, Residencia San Javier, La Molienda) but does not state which are completed",
+   "returns": "No guaranteed return language"
+  },
+  "positives": [
+   "Floor plans and availability PDF published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://zamajal.com/",
+   "https://zamajal.com/wp-content/uploads/2025/03/disponibilidad.pdf",
+   "https://malica.com.mx/"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "tcc-park-garden-tulum",
+  "url": "https://www.tulumcountryclub.com/es/propiedades/park-garden",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "floor plan downloads per typology",
+   "20 homes on ~300 m2 lots",
+   "309 m2 from USD 598,000 / 300 m2 from USD 602,000",
+   "direct developer financing, reserve from USD 5,000"
+  ],
+  "note": "20-home boutique phase from USD 598,000 inside Grupo Pinero's Tulum Country Club with downloadable plans and direct financing; no licencia, fideicomiso, construction status, delivery date or named completed homes on the pages opened (checked 31 Oct 2026)",
+  "seed": {
+   "price": 598000,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 20,
+   "payment_plan": "Reserve from USD 5,000; developer financing from 30% down at 5-7%",
+   "price_per_m2": 1935
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licencia de construccion or permit number published",
+   "escrow": "Financing page says 'Garantia de Pinero y Bahia Principe' and 'Seguridad en la compra'; no fideicomiso or escrow described",
+   "progress": "No construction progress published",
+   "plans": "Plan download per typology",
+   "record": "No completed homes or delivered phases named on pages opened",
+   "returns": "No guaranteed return language"
+  },
+  "positives": [
+   "Plans and m2 per typology",
+   "In-house financing terms published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.tulumcountryclub.com/es/propiedades/park-garden",
+   "https://www.tulumcountryclub.com/es/financiamiento"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "tcc-helices-tulum",
+  "url": "https://www.tulumcountryclub.com/es/propiedades/apartamento-helices",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "floor plan download",
+   "124 m2 typology at USD 530,526",
+   "header 'from USD 320,000'",
+   "direct developer financing"
+  ],
+  "note": "Header says from USD 320,000 while the only typology listed (124 m2) is USD 530,526; plan download and in-house financing, but no licencia, fideicomiso, construction status or delivery date (checked 31 Oct 2026)",
+  "seed": {
+   "price": 320000,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": "Reserve from USD 5,000; developer financing from 30% down at 5-7%",
+   "price_per_m2": 4278
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licencia de construccion or permit number published",
+   "escrow": "Generic 'Garantia de Pinero y Bahia Principe'; no fideicomiso or escrow described",
+   "progress": "No construction progress published",
+   "plans": "Plan download",
+   "record": "No completed homes or delivered phases named on pages opened",
+   "returns": "No guaranteed return language"
+  },
+  "positives": [
+   "Plan and m2 published",
+   "In-house financing terms published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.tulumcountryclub.com/es/propiedades/apartamento-helices",
+   "https://www.tulumcountryclub.com/es/financiamiento"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "aldea-tulum-plus",
+  "url": "https://www.aldeatulumplus.com/",
+  "docs_url": "https://issuu.com/urbanhomesdevelopers/docs/aldea_tulum_presentacion_2024",
+  "permit_number": null,
+  "docs_listed": [
+   "from 1,450,000 MXN for 71 m2",
+   "brochure (Issuu and PDF)",
+   "Matterport 360 tours",
+   "spec list",
+   "deeded parking ('estacionamiento escriturado')",
+   "delivered furnished"
+  ],
+  "note": "From 1,450,000 MXN for a 71 m2 two-bed unit delivered furnished; no licencia, fideicomiso, floor plans, progress or delivery date published and no completed projects named (checked 31 Oct 2026)",
+  "seed": {
+   "price": 1450000,
+   "currency": "MXN",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": 20423
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licencia de construccion or permit number published",
+   "escrow": "No fideicomiso or escrow published",
+   "progress": "No construction progress published",
+   "plans": "No floor plans",
+   "record": "No completed projects named",
+   "returns": "No guaranteed return language"
+  },
+  "positives": [
+   "Price and size published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.aldeatulumplus.com/",
+   "https://www.aldeatulumplus.com/_files/ugd/6785c5_bfca3ba8fdf04722bbd35ffcbdd65fa6.pdf"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "sadasi-via-verde-playa",
+  "url": "https://www.sadasi.com/playa-del-carmen-quintana-roo/via-verde",
+  "docs_url": "https://www.sadasi.com/contratos-de-adhesion",
+  "permit_number": null,
+  "docs_listed": [
+   "per-model prices from 1,233,100 MXN",
+   "registered adhesion contract templates incl. preventa purchase contract (CANADEVI 08-2022)",
+   "group record 400,000+ homes built"
+  ],
+  "note": "Models from 1,233,100 MXN; Grupo Sadasi publishes its registered consumer contract templates (incl. presale) and states 400,000+ homes built, but no licencia, fideicomiso, plans or construction status for this project (checked 31 Oct 2026)",
+  "seed": {
+   "price": 1233100,
+   "currency": "MXN",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Grupo Sadasi: more than 40 years and over 400,000 homes built, 45+ active developments in 12 states (sadasi.com/grupo-sadasi)",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licencia de construccion number published",
+   "escrow": "Registered adhesion contract templates published; no fideicomiso or escrow for deposits",
+   "progress": "No construction progress published",
+   "plans": "No floor plans",
+   "record": "Group page: 400,000+ homes built",
+   "returns": "No guaranteed return language"
+  },
+  "positives": [
+   "Registered consumer contract templates published",
+   "Large verified housebuilder"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.sadasi.com/playa-del-carmen-quintana-roo/via-verde",
+   "https://www.sadasi.com/contratos-de-adhesion",
+   "https://www.sadasi.com/grupo-sadasi"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "sadasi-almazara-playa",
+  "url": "https://www.sadasi.com/playa-del-carmen-quintana-roo/almazara-conjunto-residencial",
+  "docs_url": "https://www.sadasi.com/contratos-de-adhesion",
+  "permit_number": null,
+  "docs_listed": [
+   "per-model prices from 2,190,000 MXN",
+   "registered adhesion contract templates (CANADEVI)",
+   "Altta Homes brand",
+   "group record 400,000+ homes built"
+  ],
+  "note": "Models from 2,190,000 MXN under the Altta Homes brand with generic registered contract templates; group states 400,000+ homes built, but no licencia, fideicomiso, plans or construction status for this project (checked 31 Oct 2026)",
+  "seed": {
+   "price": 2190000,
+   "currency": "MXN",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Grupo Sadasi: more than 40 years and over 400,000 homes built, 45+ active developments in 12 states (sadasi.com/grupo-sadasi)",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licencia de construccion number published",
+   "escrow": "Registered adhesion contract templates published; no fideicomiso or escrow for deposits",
+   "progress": "No construction progress published",
+   "plans": "No floor plans",
+   "record": "Group page: 400,000+ homes built",
+   "returns": "No guaranteed return language"
+  },
+  "positives": [
+   "Registered consumer contract templates published",
+   "Large verified housebuilder"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.sadasi.com/playa-del-carmen-quintana-roo/almazara-conjunto-residencial",
+   "https://www.sadasi.com/contratos-de-adhesion",
+   "https://www.sadasi.com/grupo-sadasi"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "residences-by-the-fives-playa",
+  "url": "https://www.residencesbythefives.com/",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "price-from per resort (Downtown USD 155,000, Beach USD 259,000)",
+   "owner club and worry-free rental programme",
+   "describes operating hotels: The Fives Beach, Downtown (133 suites), Oceanfront (93 suites)"
+  ],
+  "note": "Residences from USD 155,000 (Downtown) and USD 259,000 (Beach) inside resorts the page describes as operating hotels; 'certeza juridica' marketing but no licencia, fideicomiso, plans or construction data (checked 31 Oct 2026)",
+  "seed": {
+   "price": 155000,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "TM Grupo Inmobiliario (50+ years): operating The Fives Beach, The Fives Downtown (133 suites) and The Fives Oceanfront (93 suites) per residencesbythefives.com",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licencia or permit number published",
+   "escrow": "No fideicomiso or escrow published",
+   "progress": "No construction progress published (page describes operating resorts)",
+   "plans": "No floor plans",
+   "record": "Page names three operating resorts by the developer",
+   "returns": "Generic advice text only; no guaranteed return offered"
+  },
+  "positives": [
+   "Developer operates the named resorts"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.residencesbythefives.com/"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "bodhi-tulum",
+  "url": "https://bodhitulum.com/",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "41 residences of 1-3 bedrooms on 10,000 m2",
+   "brochure on request",
+   "claims value will increase 30% by delivery"
+  ],
+  "note": "41 residences on 10,000 m2; states 'buy an apartment now, and upon delivery, its value will have incresead by 30%' with no prices, plans, permits, developer name or dates published (checked 31 Oct 2026)",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 41,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": false,
+   "score": 0,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licencia or permit number published",
+   "escrow": "No fideicomiso or escrow published",
+   "progress": "No construction progress published",
+   "plans": "No floor plans",
+   "record": "Developer not named",
+   "returns": "Promises a 30% value increase on delivery (treated as guaranteed-return language)"
+  },
+  "positives": [],
+  "flags": [],
+  "sources": [
+   "https://bodhitulum.com/"
+  ],
+  "status": "active"
+ }
+]

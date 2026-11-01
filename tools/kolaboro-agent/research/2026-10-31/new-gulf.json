@@ -1,0 +1,3267 @@
+[
+ {
+  "slug": "altan-emaar",
+  "name": "Altan",
+  "developer": "Emaar Properties (registered entity Dubai Creek Harbour L.L.C)",
+  "area": "Dubai Creek Harbour (Green Gate)",
+  "country": "UAE",
+  "market": "Dubai",
+  "url": "https://dubairealestateiq.com/project/altan",
+  "docs_url": "https://www.emaar.com/en/properties/altan-at-dubai-creek-harbour",
+  "permit_number": "1567347778",
+  "docs_listed": [
+   "DLD project number 3608 (DLD register mirrors)",
+   "Trakheesi permit number 1567347778 (Choueri broker page)",
+   "escrow Emirates NBD account 0205668118511 (DDA/DLD data on Lankea, Takween Aldar)",
+   "DLD inspection history: 0% Mar 2025 to 11.06% on 2 Jul 2026",
+   "registered completion 31 Jul 2029",
+   "developer: price from AED 1,813,888, 17 units available, sizes 757 to 4,080 sq ft",
+   "factsheet with unit mix and dated 10/70/20 instalment schedule",
+   "floor plan drawings (Emaar via portals)"
+  ],
+  "note": "Single 479 unit tower in Green Gate, Dubai Creek Harbour; DLD register shows 11.06% built at the 2 Jul 2026 inspection against a registered completion of 31 Jul 2029, escrow at Emirates NBD. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1813888,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q3",
+   "permit_claim": true,
+   "permit_number": "1567347778",
+   "plans_published": true,
+   "escrow": "Emirates NBD escrow account 0205668118511, per DLD/DDA project data (Lankea, Takween Aldar) and DLD register mirrors",
+   "progress_pct": 11.06,
+   "progress_updates": false,
+   "developer_delivered": "Emaar Development states over 80,500 residential units delivered in the UAE since 2002 (DFM results filing, Feb 2026)",
+   "units": 479,
+   "payment_plan": "10% on booking, 70% in dated instalments during construction, 20% on completion (Jul 2029)",
+   "price_per_m2": 25791
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "evidence": {
+   "permit": "DLD project 3608 registered 24 Mar 2025 (dubairealestateiq, datadubai DLD register); permit 1567347778 on Choueri broker page",
+   "escrow": "Emirates NBD account 0205668118511 (Lankea DDA data, Takween Aldar); escrow bank Emirates NBD on DLD register mirror",
+   "progress": "DLD inspections 0% (17 Mar 2025), 4.44% (19 Sep 2025), 6.73% (31 Dec 2025), 9.28% (17 Mar 2026), 11.06% (2 Jul 2026)",
+   "plans": "Emaar factsheet unit table and floor plan drawings republished by EZRE and Schmidt & Partner",
+   "record": "Emaar Development Q4 2025 results on DFM: over 80,500 residential units delivered since 2002",
+   "returns": "No guaranteed rental or ROI language found on developer or portal pages"
+  },
+  "positives": [
+   "Five dated DLD inspections published, steady progress",
+   "Escrow bank and account number public",
+   "Listed developer with exchange-filed delivery record"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dubairealestateiq.com/project/altan",
+   "https://datadubai.ae/projects/altan/",
+   "https://www.lankea.com/en/projects/altan",
+   "https://www.emaar.com/en/properties/altan-at-dubai-creek-harbour",
+   "https://choueri-uae.com/project/altan/",
+   "https://takweenaldar.ae/en/off-plan/project/altan",
+   "https://www.schmidtandpartner.com/off-plan/altan-by-emaar",
+   "https://ezre.ae/projects/altan/floor-plans",
+   "https://homeblocks.io/wp-content/uploads/2025/05/ALTAN_DCH_FACT_SHEET_compressed.pdf",
+   "https://feeds.dfm.ae/documents/2026/Feb/12/54f34a1e-707c-4a43-aad6-e5c29cb52900/Emaar%20Development%20Q4.pdf",
+   "https://www.mitchellscommercialrealty.com/off-plan/altan"
+  ],
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project registered with DLD (project 3608)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/altan"
+   },
+   {
+    "claim": "Escrow account at Emirates NBD",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://datadubai.ae/projects/altan/"
+   },
+   {
+    "claim": "Construction under way, 11.06% at last inspection",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/altan"
+   },
+   {
+    "claim": "Handover Q3 2029",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.mitchellscommercialrealty.com/off-plan/altan"
+   },
+   {
+    "claim": "479 residential units",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://datadubai.ae/projects/altan/"
+   },
+   {
+    "claim": "Emaar has delivered over 80,500 UAE units",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://feeds.dfm.ae/documents/2026/Feb/12/54f34a1e-707c-4a43-aad6-e5c29cb52900/Emaar%20Development%20Q4.pdf"
+   },
+   {
+    "claim": "Price from AED 1,813,888",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emaar.com/en/properties/altan-at-dubai-creek-harbour"
+   },
+   {
+    "claim": "Trakheesi permit 1567347778",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://choueri-uae.com/project/altan/"
+   },
+   {
+    "claim": "Freehold for all nationalities",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.schmidtandpartner.com/off-plan/altan-by-emaar"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1997,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Dubai Creek Harbour L.L.C (DLD developer no. 1224)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 80500,
+   "listed_or_audited": "Emaar Properties and Emaar Development listed on Dubai Financial Market",
+   "construction_start": "2025-06",
+   "handover_promised": "2029-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "3BR townhouse"
+   ],
+   "size_min_m2": 70,
+   "size_max_m2": 379,
+   "price_min": 1813888,
+   "price_max": 6951888,
+   "currency": "AED",
+   "deposit_pct": 10,
+   "payment_plan": "10/70/20, instalments dated Jul 2025 to Jul 2029",
+   "foreign_ownership": "Freehold (Dubai freehold zone)",
+   "rental_programme": null,
+   "service_charge": "AED 20 per sq ft (Takween Aldar listing)",
+   "brand": null,
+   "amenities": [
+    "gym",
+    "adult and kids pools",
+    "multi-sport court",
+    "running track",
+    "BBQ area",
+    "multipurpose hall",
+    "podium deck",
+    "playground"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA (Dubai Development Authority zone)",
+   "brochure_url": "https://homeblocks.io/wp-content/uploads/2025/05/ALTAN_DCH_FACT_SHEET_compressed.pdf"
+  },
+  "verified_score": 4
+ },
+ {
+  "slug": "nad-al-sheba-gardens-phase-7-meraas",
+  "name": "Nad Al Sheba Gardens Phase 7",
+  "developer": "Meraas",
+  "area": "Nad Al Sheba First (Meydan)",
+  "country": "UAE",
+  "market": "Dubai",
+  "url": "https://www.prop971.com/project/PRJ-MER-NIAI2",
+  "docs_url": "https://alnair.ae/en/dubai/compound/nad-al-sheba-gardens-phase-7",
+  "permit_number": "1791004663",
+  "docs_listed": [
+   "registry block: escrow Emirates NBD 0205865423608, 273 units, project value AED 690M (Prop971)",
+   "DLD inspection 4.01% on 12 Aug 2026",
+   "registered start 28 Jan 2025, completion 15 Feb 2028",
+   "DLD project number 3446 (Disruptive Estate)",
+   "permit number 1791004663 (West Gate broker page)",
+   "layouts and prices 3BR townhouse to 7BR villa",
+   "brochure and floor plan PDFs (Doment, JRE)"
+  ],
+  "note": "260 townhouses and villas in Nad Al Sheba First; DLD data shows 4.01% built at the 12 Aug 2026 inspection and a registered completion of 15 Feb 2028, marketed handover Q3 2028, escrow at Emirates NBD; the community's Phase 3 ran past its registered completion date. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 4430000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q3",
+   "permit_claim": true,
+   "permit_number": "1791004663",
+   "plans_published": true,
+   "escrow": "Emirates NBD escrow account 0205865423608 (DLD data on Prop971 and Doment)",
+   "progress_pct": 4.01,
+   "progress_updates": false,
+   "developer_delivered": "Earlier phases of the same community: Phase 2 (217 homes) completed Dec 2024 on the DLD record and Phase 1 delivered (dxbrealtor citing DLD data); Phase 3 was 97.03% at the 30 Jul 2026 DLD inspection, past its registered 19 Apr 2026 completion",
+   "units": 273,
+   "payment_plan": null,
+   "price_per_m2": 17628
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "evidence": {
+   "permit": "Project ACTIVE on DLD official data (Doment); DLD project 3446 (Disruptive Estate); permit 1791004663 on West Gate broker page",
+   "escrow": "Emirates NBD 0205865423608 in Prop971 registry block and Doment 'Verified by DLD'",
+   "progress": "4.01% at inspection of 12 Aug 2026 (Prop971 registry); Doment shows an earlier 2.7%",
+   "plans": "Floor plan PDF linked on Doment and JRE; layouts with sizes on Prop971",
+   "record": "DLD record (via dxbrealtor): Nad Al Sheba Gardens Phase 2 completed Dec 2024; Phase 3 overran its registered completion date; Prop971 profile also lists 29 completed projects",
+   "returns": "No guaranteed returns language found"
+  },
+  "positives": [
+   "Escrow account number and DLD inspection data public",
+   "Project value and unit breakdown filed with DLD"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.prop971.com/project/PRJ-MER-NIAI2",
+   "https://alnair.ae/en/dubai/compound/nad-al-sheba-gardens-phase-7",
+   "https://doment.ai/projects/nad-al-sheba-gardens-phase-7-by-meraas",
+   "https://disruptiveestate.com/off-plan/nad-al-sheba-gardens-phase-7",
+   "https://jre.ae/projects/nad-al-sheba-gardens-phase-7",
+   "https://westgatedubai.com/zh-CN/%E8%AE%A1%E5%88%92/nad-al-sheba-%E8%8A%B1%E5%9B%AD-7-by-meras/",
+   "https://www.dxbrealtor.ai/answers/nad-al-sheba-gardens-handover-date/",
+   "https://www.linkedin.com/posts/meraas_meraas-nadalshebagardens-constructionprogress-activity-7486379749934706688-W9bW"
+  ],
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "registry",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Registered with DLD and active",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://doment.ai/projects/nad-al-sheba-gardens-phase-7-by-meraas"
+   },
+   {
+    "claim": "Escrow at Emirates NBD",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.prop971.com/project/PRJ-MER-NIAI2"
+   },
+   {
+    "claim": "Construction started Jan 2025",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://doment.ai/projects/nad-al-sheba-gardens-phase-7-by-meraas"
+   },
+   {
+    "claim": "Construction 4.01% complete (Aug 2026)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.prop971.com/project/PRJ-MER-NIAI2"
+   },
+   {
+    "claim": "Handover Q3 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.prop971.com/project/PRJ-MER-NIAI2"
+   },
+   {
+    "claim": "Meraas has 29 completed projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.prop971.com/project/PRJ-MER-NIAI2"
+   },
+   {
+    "claim": "Earlier phase (Phase 2) completed Dec 2024",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.dxbrealtor.ai/answers/nad-al-sheba-gardens-handover-date/"
+   },
+   {
+    "claim": "Completion 15 Feb 2028 (DLD) vs 31 Aug 2028 (Property Finder)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://www.dxbrealtor.ai/answers/nad-al-sheba-gardens-handover-date/"
+   },
+   {
+    "claim": "Price from AED 4.43M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.prop971.com/project/PRJ-MER-NIAI2"
+   },
+   {
+    "claim": "Permit number 1791004663",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://westgatedubai.com/zh-CN/%E8%AE%A1%E5%88%92/nad-al-sheba-%E8%8A%B1%E5%9B%AD-7-by-meras/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2007,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-01",
+   "handover_promised": "2028-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR townhouse",
+    "4BR villa",
+    "5BR villa",
+    "6BR villa",
+    "7BR villa"
+   ],
+   "size_min_m2": 251,
+   "size_max_m2": 809,
+   "price_min": 4430000,
+   "price_max": 23540000,
+   "currency": "AED",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold",
+   "rental_programme": null,
+   "service_charge": "AED 6 per sq ft (JRE); 64.58 AED/m2 (Alnair)",
+   "brand": null,
+   "amenities": [
+    "outdoor pool",
+    "gym",
+    "sports field",
+    "children's play area",
+    "lounge",
+    "private pools (villas)"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA",
+   "brochure_url": null
+  },
+  "verified_score": 4
+ },
+ {
+  "slug": "the-hillgate-ellington",
+  "name": "The Hillgate",
+  "developer": "Ellington Properties (Ellington Properties Development L.L.C)",
+  "area": "Dubai Silicon Oasis",
+  "country": "UAE",
+  "market": "Dubai",
+  "url": "https://www.prop971.com/project/PRJ-ELL-UIVN4",
+  "docs_url": "https://app.ellington.ae/the-hillgate/configuration.html",
+  "permit_number": "0359314974",
+  "docs_listed": [
+   "DLD project 3594, two towers, 356 units",
+   "escrow First Abu Dhabi Bank 4031224708340005",
+   "DLD inspections 0% (Mar 2025), 1.11% (Feb 2026), 3.12% (4 Jun 2026)",
+   "registered completion 30 Jun 2028",
+   "permit number 0359314974 (HBS broker listing)",
+   "developer: unit mix per tower, size ranges, floor plates",
+   "payment plan 20/50/30 (Prop971)",
+   "anticipated service charge AED 16 per sq ft"
+  ],
+  "note": "Two towers with 356 units in Dubai Silicon Oasis; DLD register shows 3.12% built on 4 Jun 2026 and a registered completion of 30 Jun 2028, while portals still advertise handover in Q4 2027. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1280000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q2",
+   "permit_claim": true,
+   "permit_number": "0359314974",
+   "plans_published": true,
+   "escrow": "First Abu Dhabi Bank escrow account 4031224708340005 (official DLD project data on Homesearch, Prop971)",
+   "progress_pct": 3.12,
+   "progress_updates": false,
+   "developer_delivered": "Prop971 developer profile lists Ellington with 30 completed projects (portal figure)",
+   "units": 356,
+   "payment_plan": "20% on booking, 50% during construction, 30% on handover (Prop971); 70/30 per Mitchells brief",
+   "price_per_m2": 17734
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "evidence": {
+   "permit": "DLD project 3594, registered 24 Jul 2025 (dubairealestateiq, Homesearch official DLD data); permit 0359314974 on HBS listing",
+   "escrow": "FAB 4031224708340005, 'Source: official Dubai Land Department project data' (Homesearch)",
+   "progress": "3.12% at DLD inspection 4 Jun 2026; inspection photos on dxbpropy",
+   "plans": "Ellington configuration page with floor plates; per-layout areas in Mitchells brief",
+   "record": "Prop971 profile: 30 completed projects, 6,930 units",
+   "returns": "No guaranteed returns language found; HBS listing mentions rental yield potential without figures"
+  },
+  "positives": [
+   "Escrow bank and account number public",
+   "DLD inspection photos published",
+   "Developer publishes unit counts per tower"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.prop971.com/project/PRJ-ELL-UIVN4",
+   "https://dubairealestateiq.com/project/the-hillgate",
+   "https://app.ellington.ae/the-hillgate/configuration.html",
+   "https://www.mitchellscommercialrealty.com/projects/the-hillgate",
+   "https://listings.hbsdubai.com/en/building/the-hillgate-by-ellington-properties-dubai/",
+   "https://www.homesearch.ae/for-sale/off-plan/ellington/the-hillgate-3594",
+   "https://dxbpropy.ai/offplan/the-hillgate-dubai-silicon-oasis-1017"
+  ],
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Registered with DLD (project 3594)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.homesearch.ae/for-sale/off-plan/ellington/the-hillgate-3594"
+   },
+   {
+    "claim": "Escrow at First Abu Dhabi Bank",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.homesearch.ae/for-sale/off-plan/ellington/the-hillgate-3594"
+   },
+   {
+    "claim": "Construction started Mar 2025, 3.12% by Jun 2026",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/the-hillgate"
+   },
+   {
+    "claim": "Handover Q4 2027 (portals, HBS 1 Dec 2027)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/the-hillgate"
+   },
+   {
+    "claim": "356 units in two towers",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.mitchellscommercialrealty.com/projects/the-hillgate"
+   },
+   {
+    "claim": "Freehold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://app.ellington.ae/the-hillgate/configuration.html"
+   },
+   {
+    "claim": "Ellington has 30 completed projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.prop971.com/project/PRJ-ELL-UIVN4"
+   },
+   {
+    "claim": "Permit number 0359314974",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://listings.hbsdubai.com/en/building/the-hillgate-by-ellington-properties-dubai/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2014,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Ellington Properties Development L.L.C (DLD developer 1117)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-03",
+   "handover_promised": "2028-Q2",
+   "original_handover": "2027-Q4 (portal marketing)",
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "2BR+study",
+    "3BR",
+    "3BR duplex",
+    "4BR duplex"
+   ],
+   "size_min_m2": 39,
+   "size_max_m2": 376,
+   "price_min": 1280000,
+   "price_max": 4340000,
+   "currency": "AED",
+   "deposit_pct": 20,
+   "payment_plan": "20/50/30",
+   "foreign_ownership": "Freehold",
+   "rental_programme": null,
+   "service_charge": "AED 16 per sq ft anticipated (developer)",
+   "brand": null,
+   "amenities": [
+    "lap pool",
+    "leisure pool",
+    "clubhouse",
+    "fitness studio",
+    "yoga studio",
+    "kids areas",
+    "EV charging"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA (Dubai Silicon Oasis Authority zone)",
+   "brochure_url": null
+  },
+  "verified_score": 3
+ },
+ {
+  "slug": "oak-yard-one-yard",
+  "name": "Oak Yard",
+  "developer": "ONE YARD (One Yard Real Estate Development L.L.C)",
+  "area": "Jumeirah Village Circle",
+  "country": "UAE",
+  "market": "Dubai",
+  "url": "https://alnair.ae/en/dubai/project/oak-yard",
+  "docs_url": null,
+  "permit_number": "1617402201",
+  "docs_listed": [
+   "permit 1617402201 with expiry 20 Jun 2026 (Alnair)",
+   "escrow Mashreq Bank 019500000733",
+   "DLD project 3473, 26.16% at inspection 25 Jun 2026, registered completion 15 Feb 2027",
+   "prices AED 1.19M to 7.02M",
+   "payment plan 70/30 and construction-linked plan",
+   "floor plans, brochure, master plan (portal documents)"
+  ],
+  "note": "Small JVC building by a first-time Dubai developer; DLD data shows 26.16% built on 25 Jun 2026 against a registered completion of 15 Feb 2027, and the advertising permit shown on Alnair expired on 20 Jun 2026. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1192004,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q1",
+   "permit_claim": true,
+   "permit_number": "1617402201",
+   "plans_published": true,
+   "escrow": "Mashreq Bank escrow account 019500000733 (Alnair; DLD open data on UAE Property Checker)",
+   "progress_pct": 26.16,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 191,
+   "payment_plan": "70/30: 24% on booking, 46% during construction, 30% on handover (Alnair)",
+   "price_per_m2": 13386
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Alnair: permit 1617402201, expiry 20 Jun 2026; DLD project no. 3473 (UAE Property Checker, DLD open data)",
+   "escrow": "Mashreq 019500000733 listed on DLD open data",
+   "progress": "26.16% at DLD inspection 25 Jun 2026; UAE Property Checker rates it behind plan",
+   "plans": "Floor plans on Alnair unit section and JRE documents",
+   "record": "No completed Dubai project found; Insider profile describes a developer with no Dubai history",
+   "returns": "No guaranteed returns; one agent page cites 'up to 30% resale potential' with no guarantee"
+  },
+  "positives": [
+   "Escrow account and DLD project number public",
+   "DLD progress data available"
+  ],
+  "flags": [],
+  "sources": [
+   "https://alnair.ae/en/dubai/project/oak-yard",
+   "https://uaepropertychecker.com/projects/oakyard-residences",
+   "https://jre.ae/projects/oak-yard",
+   "https://www.propertyindex.ae/dubai/jumeirah-village-circle-district-10-oak-yard",
+   "https://insider-realestate.com/en/developers/one-yard",
+   "https://oak-yard-residences.alba.homes/",
+   "https://alnair.ae/en/dubai/project/oak-yard/news/pay-linked-to-construction-progress-for-fully-furnished-units"
+  ],
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Registered with DLD (project 3473)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://uaepropertychecker.com/projects/oakyard-residences"
+   },
+   {
+    "claim": "Escrow at Mashreq Bank",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://uaepropertychecker.com/projects/oakyard-residences"
+   },
+   {
+    "claim": "Handover Q1 2027",
+    "status": "unverified",
+    "by": "registry",
+    "source": "https://uaepropertychecker.com/projects/oakyard-residences"
+   },
+   {
+    "claim": "Construction 26% complete",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://uaepropertychecker.com/projects/oakyard-residences"
+   },
+   {
+    "claim": "Advertising permit valid",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://alnair.ae/en/dubai/project/oak-yard"
+   },
+   {
+    "claim": "Developer delivered previous projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://insider-realestate.com/en/developers/one-yard"
+   },
+   {
+    "claim": "191 registered units (vs 45 residences on JRE)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://www.propertyindex.ae/dubai/jumeirah-village-circle-district-10-oak-yard"
+   },
+   {
+    "claim": "Freehold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://alnair.ae/en/dubai/project/oak-yard"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": "ONE YARD REAL ESTATE DEVELOPMENT L.L.C",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-09",
+   "handover_promised": "2027-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "duplex"
+   ],
+   "size_min_m2": 68,
+   "size_max_m2": 524,
+   "price_min": 1192004,
+   "price_max": 7020321,
+   "currency": "AED",
+   "deposit_pct": 24,
+   "payment_plan": "70/30 or construction-linked 20% down",
+   "foreign_ownership": "Freehold",
+   "rental_programme": null,
+   "service_charge": "AED 5,000 per unit per year fixed (Alnair); 16 AED per sq ft (JRE)",
+   "brand": null,
+   "amenities": [
+    "pool",
+    "gym",
+    "kids play area",
+    "coworking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Dubai Land Department / RERA",
+   "brochure_url": null
+  },
+  "verified_score": 3
+ },
+ {
+  "slug": "forest-city-2-hz-development",
+  "name": "Forest City 2",
+  "developer": "HZ Development (Al Helal Al Zahaby Real Estate Development L.L.C)",
+  "area": "Dubailand Residence Complex (Wadi Al Safa 5)",
+  "country": "UAE",
+  "market": "Dubai",
+  "url": "https://alnair.ae/en/dubai/project/forest-city-2",
+  "docs_url": "https://hzdeveloper.ae/",
+  "permit_number": "2074757256",
+  "docs_listed": [
+   "permit 2074757256, expiry 14 Aug 2026 (Alnair)",
+   "escrow Emirates Islamic Bank 3717370312516",
+   "DLD project 3727, 194 units, 0.02% built at 26 Jun 2026 inspection",
+   "registered completion 1 Jun 2027",
+   "prices AED 720,888 to 1,974,888, studio to 3BR",
+   "service charge by unit type"
+  ],
+  "note": "194 unit tower in DLRC; DLD register shows 0.02% built at the 26 Jun 2026 inspection against a registered completion of 1 Jun 2027, and the permit shown on Alnair expired on 14 Aug 2026. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 720888,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q2",
+   "permit_claim": true,
+   "permit_number": "2074757256",
+   "plans_published": true,
+   "escrow": "Emirates Islamic Bank escrow account 3717370312516 (Alnair; escrow bank on DLD register mirror)",
+   "progress_pct": 0.02,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 194,
+   "payment_plan": "60/40 (Alnair); 50/50 with 10% down (Proprain)",
+   "price_per_m2": 11238
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Alnair permit 2074757256 (expired 14 Aug 2026); DLD project 3727 registered 15 Aug 2025",
+   "escrow": "Emirates Islamic 3717370312516 on Alnair; DLD register mirror lists Emirates Islamic Bank",
+   "progress": "DLD inspections 0% (1 May 2025) and 0.02% (26 Jun 2026); Alnair shows 1.2%",
+   "plans": "Alnair unit layouts and floor plans section",
+   "record": "Developer site lists one Dubailand plot and no named completed project",
+   "returns": "No guaranteed returns language found"
+  },
+  "positives": [
+   "Escrow account public",
+   "Low entry price"
+  ],
+  "flags": [],
+  "sources": [
+   "https://alnair.ae/en/dubai/project/forest-city-2",
+   "https://dubairealestateiq.com/project/forest-city-tower-2",
+   "https://crownkey.ae/off-plan/forest-city-2/",
+   "https://www.proprain.com/projects/forest-city-2/",
+   "https://hzdeveloper.ae/",
+   "https://exa.ai/library/place/30ldfpqld7v"
+  ],
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Registered with DLD (project 3727)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/forest-city-tower-2"
+   },
+   {
+    "claim": "Escrow at Emirates Islamic Bank",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/forest-city-tower-2"
+   },
+   {
+    "claim": "Handover Q2 2027",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/forest-city-tower-2"
+   },
+   {
+    "claim": "Construction under way",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://dubairealestateiq.com/project/forest-city-tower-2"
+   },
+   {
+    "claim": "Advertising permit valid",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://alnair.ae/en/dubai/project/forest-city-2"
+   },
+   {
+    "claim": "Developer track record",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://hzdeveloper.ae/"
+   },
+   {
+    "claim": "Price from AED 720,888",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://alnair.ae/en/dubai/project/forest-city-2"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": "AL HELAL AL ZAHABY REAL ESTATE DEVELOPMENT L.L.C (DLD developer 1124)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-06",
+   "handover_promised": "2027-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 42,
+   "size_max_m2": 164,
+   "price_min": 720888,
+   "price_max": 1974888,
+   "currency": "AED",
+   "deposit_pct": null,
+   "payment_plan": "60/40 or 50/50",
+   "foreign_ownership": "Freehold",
+   "rental_programme": null,
+   "service_charge": "150.69 AED/m2 per year (Alnair)",
+   "brand": null,
+   "amenities": [
+    "pool",
+    "kids play area",
+    "BBQ area",
+    "yoga space",
+    "clubhouse",
+    "cinema",
+    "running track"
+   ],
+   "lat": 25.087,
+   "lng": 55.379,
+   "permit_authority": "Dubai Land Department / RERA",
+   "brochure_url": null
+  },
+  "verified_score": 3
+ },
+ {
+  "slug": "gardenia-bay-aldar",
+  "name": "Gardenia Bay",
+  "developer": "Aldar Properties",
+  "area": "Yas Island",
+  "country": "UAE",
+  "market": "Abu Dhabi",
+  "url": "https://greatfinehome.com/en/listing/sale/listingProject/360",
+  "docs_url": "https://www.aldar.com/properties/en/gardeniabay",
+  "permit_number": "20230000070554",
+  "docs_listed": [
+   "ADREC project no. 20230000070554, registered 31 Jul 2023 (broker page)",
+   "escrow FAB 4031221018122040 (broker page)",
+   "launch Aug 2023, first phase handover Q2 2027 (WAM)",
+   "contractor appointed Sep 2024 (MEED)",
+   "Aldar construction update: 11% Q4 2025, piling complete (agent blog)",
+   "developer: amenities list, 'last phase' marketing"
+  ],
+  "note": "2,434 home waterfront community on Yas Island launched in Aug 2023 with Q2 2027 handover for phase one; escrow and ADREC project numbers appear only on a broker page, and no floor plans or prices were found on pages opened. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q2",
+   "permit_claim": true,
+   "permit_number": "20230000070554",
+   "plans_published": false,
+   "escrow": "First Abu Dhabi Bank escrow 4031221018122040 with ADREC project no. 20230000070554 (broker page Great Fine Home)",
+   "progress_pct": 11,
+   "progress_updates": false,
+   "developer_delivered": "Aldar completed 1,075 homes in Q1 2026 and targets 3,500+ handovers in 2026 (ADX press release, The National)",
+   "units": 2434,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "ADREC project number on a broker page only; not confirmed on DARI (not publicly browsable)",
+   "escrow": "FAB account on broker page only",
+   "progress": "11% at Q4 2025 per Aldar update quoted by Royal LP; Aqqaar shows 16% (owner-reported)",
+   "plans": "No floor plans found on pages opened",
+   "record": "ADX filing 26 Mar 2026: 1,075 homes completed Q1 2026",
+   "returns": "No guaranteed returns language found"
+  },
+  "positives": [
+   "Listed developer with exchange-filed delivery figures",
+   "Independent news confirms launch timetable and contractor"
+  ],
+  "flags": [],
+  "sources": [
+   "https://greatfinehome.com/en/listing/sale/listingProject/360",
+   "https://www.aldar.com/properties/en/gardeniabay",
+   "https://www.wam.ae/en/article/hszrhswp-aldar-launches-%E2%80%98gardenia-bay%E2%80%99-new-yas-island",
+   "https://www.meed.com/aldar-appoints-gardenia-bay-project-contractor",
+   "https://royallp.com/blog-post/yas-island-aldar-construction-update-q4-2025/",
+   "https://www.aqqaar.com/market/off-plan/gardenia-bay",
+   "https://apigateway.adx.ae/adx/cdn/1.0/content/download/4790961",
+   "https://www.thenationalnews.com/business/property/2026/03/26/aldars-2026-handover-schedule-unaffected-by-conflict-as-128bn-in-contracts-are-awarded/"
+  ],
+  "verification": {
+   "permit": "developer",
+   "escrow": "developer",
+   "progress": "developer",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Phase one handover Q2 2027",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.meed.com/aldar-appoints-gardenia-bay-project-contractor"
+   },
+   {
+    "claim": "2,434 homes in the community",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.wam.ae/en/article/hszrhswp-aldar-launches-%E2%80%98gardenia-bay%E2%80%99-new-yas-island"
+   },
+   {
+    "claim": "Main contractor appointed",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.meed.com/aldar-appoints-gardenia-bay-project-contractor"
+   },
+   {
+    "claim": "Escrow at FAB",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://greatfinehome.com/en/listing/sale/listingProject/360"
+   },
+   {
+    "claim": "ADREC project registered 2023",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://greatfinehome.com/en/listing/sale/listingProject/360"
+   },
+   {
+    "claim": "Construction 11% (Q4 2025)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://royallp.com/blog-post/yas-island-aldar-construction-update-q4-2025/"
+   },
+   {
+    "claim": "Aldar on track for 3,500+ handovers in 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.thenationalnews.com/business/property/2026/03/26/aldars-2026-handover-schedule-unaffected-by-conflict-as-128bn-in-contracts-are-awarded/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Abu Dhabi, UAE",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Aldar Properties listed on Abu Dhabi Securities Exchange (ADX)",
+   "construction_start": "2024-Q1",
+   "handover_promised": "2027-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold (Yas Island investment zone)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "urban beach club",
+    "pool",
+    "gym",
+    "co-working",
+    "house cinema",
+    "kids nursery",
+    "padel",
+    "dog park"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Abu Dhabi Real Estate Centre (ADREC) via DARI",
+   "brochure_url": null
+  },
+  "verified_score": 1
+ },
+ {
+  "slug": "tara-park-modon",
+  "name": "Tara Park",
+  "developer": "Modon Properties PJSC",
+  "area": "Al Reem Island",
+  "country": "UAE",
+  "market": "Abu Dhabi",
+  "url": "https://www.modon.com/real-estate/tara-park",
+  "docs_url": "https://www.modon.com/real-estate/tara-park",
+  "permit_number": "202649000129376",
+  "docs_listed": [
+   "developer factsheet: 1 to 3BR, sizes 81 to 238 m2, average prices",
+   "payment plan 40/60 (5% booking, 35% staggered, 60% on completion)",
+   "unit count 494 in two towers",
+   "handover early Q2 2030 (project page) vs Q4 2029 (Reem Island page)",
+   "escrow Emirates Islamic 5038513485304 and project no. 202649000129376 (broker page)"
+  ],
+  "note": "494 apartments in two towers opposite Reem Mall, launched May 2026; Modon's own pages give two different handover dates (Q2 2030 and Q4 2029) and no construction progress was found. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1680000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030-Q2",
+   "permit_claim": true,
+   "permit_number": "202649000129376",
+   "plans_published": false,
+   "escrow": "Emirates Islamic Bank escrow 5038513485304 with project no. 202649000129376 (broker page Great Fine Home)",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 494,
+   "payment_plan": "40/60: 5% on booking, 35% staggered to Apr 2030, 60% on completion",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Project number only on a broker page",
+   "escrow": "Escrow number only on a broker page",
+   "progress": "None published",
+   "plans": "Factsheet with size ranges only; floor plans offered on request by channel partner",
+   "record": "No delivered projects stated on pages opened",
+   "returns": "No guaranteed returns language found"
+  },
+  "positives": [
+   "Developer publishes unit count, size ranges and payment schedule dates"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.modon.com/real-estate/tara-park",
+   "https://www.modon.com/real-estate/reem-island",
+   "https://greatfinehome.com/en/listing/sale/listingProject/724",
+   "https://www.zawya.com/en/press-release/companies-news/modon-launches-tara-park-on-reem-island-as-abu-dhabis-off-plan-pipeline-expands-341200",
+   "https://investindxb.com/wp-content/uploads/2026/04/MODON-TARA-PARK-2-FACTSHEET-investindxb.pdf",
+   "https://modonrealty.com/projects/tara-park"
+  ],
+  "verification": {
+   "permit": "developer",
+   "escrow": "developer",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "494 units in two towers",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.modon.com/real-estate/tara-park"
+   },
+   {
+    "claim": "Handover early Q2 2030",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.modon.com/real-estate/reem-island"
+   },
+   {
+    "claim": "Escrow at Emirates Islamic",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://greatfinehome.com/en/listing/sale/listingProject/724"
+   },
+   {
+    "claim": "Freehold, Golden Visa above AED 2M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.zawya.com/en/press-release/companies-news/modon-launches-tara-park-on-reem-island-as-abu-dhabis-off-plan-pipeline-expands-341200"
+   },
+   {
+    "claim": "Average 1BR price AED 1.68M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.modon.com/real-estate/tara-park"
+   },
+   {
+    "claim": "Six towers (factsheet) vs two towers (project page)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://investindxb.com/wp-content/uploads/2026/04/MODON-TARA-PARK-2-FACTSHEET-investindxb.pdf"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Abu Dhabi, UAE",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Modon Holding listed on ADX (parent)",
+   "construction_start": null,
+   "handover_promised": "2030-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 81,
+   "size_max_m2": 238,
+   "price_min": 1680000,
+   "price_max": 3680000,
+   "currency": "AED",
+   "deposit_pct": 5,
+   "payment_plan": "40/60",
+   "foreign_ownership": "Freehold",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "central pool",
+    "padel court",
+    "multi-sport court",
+    "fitness studio",
+    "jogging track",
+    "co-working",
+    "children's playroom",
+    "retail courtyard"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Abu Dhabi Real Estate Centre (ADREC) via DARI",
+   "brochure_url": null
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "sensi-saadiyat-reportage",
+  "name": "Sensi Saadiyat",
+  "developer": "Reportage Properties",
+  "area": "Saadiyat Island",
+  "country": "UAE",
+  "market": "Abu Dhabi",
+  "url": "https://www.prop971.com/project/PRJ-REP-QC720",
+  "docs_url": null,
+  "permit_number": "20250000731926",
+  "docs_listed": [
+   "escrow FAB 4031227067337002",
+   "project no. 20250000731926, registration date 3 Feb 2026 (broker page)",
+   "89 units in 2 buildings",
+   "construction start 3 Feb 2026 (Prop971)",
+   "layout list 2BR to 4BR with prices",
+   "handover Q2 2029, payment plan 30/70"
+  ],
+  "note": "89 villas and apartments on Saadiyat Island registered in Feb 2026; escrow and project numbers appear on agent pages, no construction progress figure is published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 3130000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q2",
+   "permit_claim": true,
+   "permit_number": "20250000731926",
+   "plans_published": false,
+   "escrow": "First Abu Dhabi Bank escrow 4031227067337002 (Prop971 registry block, Great Fine Home)",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Khaleej Times (2019) reported Reportage delivered Leonardo Residence, 177 apartments in Masdar City",
+   "units": 89,
+   "payment_plan": "30/70",
+   "price_per_m2": 30995
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Project number on broker page; not checked on DARI",
+   "escrow": "FAB account on Prop971 and broker page",
+   "progress": "Only a construction start date (3 Feb 2026)",
+   "plans": "Layout names and sizes only, no drawings found",
+   "record": "Khaleej Times 2019: Leonardo Residence (177 apartments) delivered; Oasis Residence 2 and Gate in handover",
+   "returns": "No guaranteed returns language found"
+  },
+  "positives": [
+   "Escrow account number public",
+   "Small project (89 units)"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.prop971.com/project/PRJ-REP-QC720",
+   "https://greatfinehome.com/en/listing/sale/listingProject/371",
+   "https://www.khaleejtimes.com/business/property/reportage-properties-to-deliver-5-projects-in-3-years"
+  ],
+  "verification": {
+   "permit": "developer",
+   "escrow": "developer",
+   "progress": "none",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Escrow at FAB",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.prop971.com/project/PRJ-REP-QC720"
+   },
+   {
+    "claim": "Registered with authority Feb 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://greatfinehome.com/en/listing/sale/listingProject/371"
+   },
+   {
+    "claim": "Handover Q2 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.prop971.com/project/PRJ-REP-QC720"
+   },
+   {
+    "claim": "Reportage has delivered completed projects",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.khaleejtimes.com/business/property/reportage-properties-to-deliver-5-projects-in-3-years"
+   },
+   {
+    "claim": "Reportage has 20 completed projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.prop971.com/project/PRJ-REP-QC720"
+   },
+   {
+    "claim": "Price from AED 3.13M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.prop971.com/project/PRJ-REP-QC720"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2014,
+   "developer_hq": "Abu Dhabi, UAE",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-02",
+   "handover_promised": "2029-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": 101,
+   "size_max_m2": 443,
+   "price_min": 3130000,
+   "price_max": 12860000,
+   "currency": "AED",
+   "deposit_pct": 30,
+   "payment_plan": "30/70",
+   "foreign_ownership": "Freehold",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Abu Dhabi Real Estate Centre (ADREC) via DARI",
+   "brochure_url": null
+  },
+  "verified_score": 1
+ },
+ {
+  "slug": "manchester-city-yas-residences-ohana",
+  "name": "Manchester City Yas Residences by Ohana",
+  "developer": "Ohana Development (Ohana Real Estate Development and Construction LLC)",
+  "area": "Yas Canal, Yas Island",
+  "country": "UAE",
+  "market": "Abu Dhabi",
+  "url": "https://mancityyasresidences.ohana.ae/",
+  "docs_url": "https://mancityyasresidences.ohana.ae/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer site: typologies with average prices, plot and BUA areas",
+   "payment plans 35/65, 30/70, 25/75 with dated instalments",
+   "digital brochure with floor plans",
+   "ADREC: first project with EOIs registered on Madhmoun into a government preparatory escrow (WAM)",
+   "Phase 2 EOI 10 Oct 2026, launch 20 Oct 2026, handover Q3 2030 (sales site)"
+  ],
+  "note": "Manchester City branded villa and apartment community on Yas Canal launched Feb 2026 with 2029 completion; ADREC put its EOIs through a government managed escrow, but no project registration number, construction progress or developer completions were found. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 3750000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "EOI funds held in a government managed preparatory escrow account under ADREC via Madhmoun (WAM, Feb 2026); project escrow bank not published",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 2000,
+   "payment_plan": "Non-UAE nationals 35/65: 5% on SPA, six 5% instalments Feb 2027 to Jul 2029, 65% on completion",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No ADREC project number or Madhmoun permit published on pages opened",
+   "escrow": "WAM and Gulf News: EOIs registered on Madhmoun with funds in government managed preparatory escrow",
+   "progress": "None published; phase 2 still at EOI stage in Oct 2026",
+   "plans": "Floor plans in digital brochure (uhpae.com PDF)",
+   "record": "Developer claims 35 years of experience; no named completed project found",
+   "returns": "No guaranteed returns language found; CFG disclaims responsibility for project statements (GRAF summary)"
+  },
+  "positives": [
+   "EOI money ring-fenced under ADREC oversight",
+   "Dated payment schedule published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://mancityyasresidences.ohana.ae/",
+   "https://ohanadevelopments.ae/",
+   "https://www.wam.ae/en/article/bysbi4m-adrec-launches-digital-eoi-registration-for",
+   "https://gulfnews.com/business/property/abu-dhabi-now-requires-digital-registration-for-off-plan-property-interest-1.500444959",
+   "https://www.ohana.ae/news/ohana-development-launches-aed-15-billion-manchester-city-yas-residences-by-ohana-in-abu-dhabi/",
+   "https://uhpae.com/static/projects/manchester-city-yas-residences/digitalbrochuremanchestercityyasresidences.pdf",
+   "https://graf.ae/ohana/manchester-city-yas/"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "independent",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "EOIs registered through ADREC Madhmoun escrow",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.wam.ae/en/article/bysbi4m-adrec-launches-digital-eoi-registration-for"
+   },
+   {
+    "claim": "AED 15 billion, 2,000+ units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.ohana.ae/news/ohana-development-launches-aed-15-billion-manchester-city-yas-residences-by-ohana-in-abu-dhabi/"
+   },
+   {
+    "claim": "Completion 2029 (launch) vs Q3 2030 (phase 2 site)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://ohanadevelopments.ae/"
+   },
+   {
+    "claim": "Manchester City brand under licence from CFG",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://graf.ae/ohana/manchester-city-yas/"
+   },
+   {
+    "claim": "Developer track record of 35 years",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://files.alnair.ae/uploads/2026/2/01/89/01897f90920bc06548d8334a565867ab.pdf"
+   },
+   {
+    "claim": "Townhouses from AED 3.75M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mancityyasresidences.ohana.ae/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Abu Dhabi, UAE",
+   "developer_company": "OHANA REAL ESTATE DEVELOPMENT AND CONSTRUCTION LLC",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2029",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "penthouse",
+    "townhouse",
+    "duplex",
+    "4BR villa",
+    "5BR villa",
+    "maisonette"
+   ],
+   "size_min_m2": 46,
+   "size_max_m2": 1370,
+   "price_min": 2000000,
+   "price_max": 29500000,
+   "currency": "AED",
+   "deposit_pct": 5,
+   "payment_plan": "35/65 (non-UAE nationals)",
+   "foreign_ownership": "Freehold",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Manchester City (City Football Group licence)",
+   "amenities": [
+    "Manchester City training academy",
+    "canal promenade",
+    "marina",
+    "rooftop pools",
+    "City Lounge"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Abu Dhabi Real Estate Centre (ADREC) via DARI and Madhmoun",
+   "brochure_url": "https://uhpae.com/static/projects/manchester-city-yas-residences/digitalbrochuremanchestercityyasresidences.pdf"
+  },
+  "verified_score": 1
+ },
+ {
+  "slug": "quattro-del-mar-rak-properties",
+  "name": "Quattro Del Mar",
+  "developer": "RAK Properties PJSC",
+  "area": "Hayat Island, Mina Al Arab",
+  "country": "UAE",
+  "market": "Ras Al Khaimah",
+  "url": "https://www.propertyfinder.ae/en/new-projects/rak-properties/quattro-del-mar",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "listed on RAK RERA off-plan project register (RAK Municipality)",
+   "RAK Properties 2025 annual report: 25% overall, superstructure 64.6%",
+   "construction start 21 Apr 2024, expected completion 1 Jun 2027 (Property Finder)",
+   "floor plan drawings published by RAK Properties (EZRE)",
+   "prices from AED 6,692,000 for remaining units",
+   "payment plan 10/10/80 (portals) or 10/30/60 (Property Finder)"
+  ],
+  "note": "Four interconnected 12 floor towers on Hayat Island; on the RAK RERA off-plan register and 25% complete per RAK Properties' 2025 annual report, with handover dates varying between Dec 2026 and Jun 2027 across listings. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 6692000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q2",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 25,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": "10% booking, 10% during construction, 80% on handover (remaining stock)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Project named on RAK RERA updated off-plan project list (sanad.mun.rak.ae); no registration number published",
+   "escrow": "No escrow bank or account found for this project",
+   "progress": "25% overall per RAK Properties 2025 annual report (Property News International)",
+   "plans": "Floor plan drawings for 5 unit types on EZRE, labelled as published by RAK Properties",
+   "record": "No delivered-unit figure found on pages opened",
+   "returns": "No guaranteed returns language found"
+  },
+  "positives": [
+   "Registration confirmed on the official RAK RERA list",
+   "Progress reported in an annual report of a listed company"
+  ],
+  "flags": [],
+  "sources": [
+   "https://sanad.mun.rak.ae/docs/en/rera-updated-developers-list",
+   "https://www.propertynewsint.com/news/rak-properties-releases-construction-update-on-8-projects",
+   "https://www.propertyfinder.ae/en/new-projects/rak-properties/quattro-del-mar",
+   "https://ezre.ae/projects/quattro-del-mar/floor-plans",
+   "https://offplan.ae/projects/quattro-del-mar",
+   "https://www.rakcapitals.ae/projects/quattro-del-mar"
+  ],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project registered with RAK RERA",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://sanad.mun.rak.ae/docs/en/rera-updated-developers-list"
+   },
+   {
+    "claim": "Construction 25% complete",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.propertynewsint.com/news/rak-properties-releases-construction-update-on-8-projects"
+   },
+   {
+    "claim": "Handover Dec 2026 (portals) vs Jun 2027 (Property Finder)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/rak-properties/quattro-del-mar"
+   },
+   {
+    "claim": "Sold out (Property Finder) vs 14 units available (offplan.ae)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://offplan.ae/projects/quattro-del-mar"
+   },
+   {
+    "claim": "Escrow account exists",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://offplan.ae/projects/quattro-del-mar"
+   },
+   {
+    "claim": "Freehold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.ae/en/new-projects/rak-properties/quattro-del-mar"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Ras Al Khaimah, UAE",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "RAK Properties listed on ADX; 2025 annual report",
+   "construction_start": "2024-04",
+   "handover_promised": "2027-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "2.5BR",
+    "3BR",
+    "penthouse",
+    "townhouse",
+    "duplex"
+   ],
+   "size_min_m2": 179,
+   "size_max_m2": 394,
+   "price_min": 6692000,
+   "price_max": 11597000,
+   "currency": "AED",
+   "deposit_pct": 10,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "beach access",
+    "kids play area",
+    "social lounge",
+    "open air wellness",
+    "gym"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "RAK Municipality Real Estate Regulatory Administration (RERA)",
+   "brochure_url": null
+  },
+  "verified_score": 2
+ },
+ {
+  "slug": "ice-beach-major-developments",
+  "name": "Ice Beach",
+  "developer": "Major Developments (Major Development 3 FZ-LLC)",
+  "area": "Al Marjan Island / Marjan Beach",
+  "country": "UAE",
+  "market": "Ras Al Khaimah",
+  "url": "https://dubainary.com/off-plan/major-developments-ice-beach",
+  "docs_url": "https://ice-beach.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "listed on RAK RERA off-plan project register as ICE Beach, Major Development 3 FZ-LLC",
+   "developer site: AED 1.7B project value, EOI open",
+   "floor plans and brochure downloads (portals)",
+   "prices from AED 1.45M to 1.53M for 1BR",
+   "post-handover plan 20/40/10/30 or 5/65/10/20",
+   "construction start Q1 2026, handover Q2 2030"
+  ],
+  "note": "AED 1.7 billion beachfront tower near Wynn Al Marjan; on the RAK RERA off-plan register but no escrow bank, permit number or construction progress is published, and listings place it in three different districts. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1453500,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030-Q2",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 81,
+   "payment_plan": "20% booking, 40% to 50% during construction, 10% on handover, 20% to 30% over 20 months after handover",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Named on RAK RERA off-plan list; no number published",
+   "escrow": "Agent page says payments go to the registered escrow account; no bank or account published",
+   "progress": "Portal shows 0% with construction start Q1 2026; no developer update",
+   "plans": "Floor plan PDFs on Dubainary and Emirates.Estate",
+   "record": "No completed project found; sister company Manta Bay is on the off-plan register",
+   "returns": "Agent page states 'No guaranteed returns'"
+  },
+  "positives": [
+   "Registration confirmed on the official RAK RERA list",
+   "Unit level prices and floor plans published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://sanad.mun.rak.ae/docs/en/rera-updated-developers-list",
+   "https://ice-beach.com/",
+   "https://dubainary.com/off-plan/major-developments-ice-beach",
+   "https://www.rak.realestate/ice-beach-by-major/",
+   "https://emirates.estate/property/ice-beach-709416/",
+   "https://www.rakcapitals.ae/projects/ice-beach"
+  ],
+  "verification": {
+   "permit": "registry",
+   "escrow": "developer",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Registered with RAK RERA",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://sanad.mun.rak.ae/docs/en/rera-updated-developers-list"
+   },
+   {
+    "claim": "Escrow protected",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.rak.realestate/ice-beach-by-major/"
+   },
+   {
+    "claim": "Handover Q2 2030",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dubainary.com/off-plan/major-developments-ice-beach"
+   },
+   {
+    "claim": "Location Marjan Beach (developer) vs Nad Al Sili / Al Hamra Industrial (portals)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://emirates.estate/property/ice-beach-709416/"
+   },
+   {
+    "claim": "81 units (Dubainary) vs 113 units (RAK Capitals)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.rakcapitals.ae/projects/ice-beach"
+   },
+   {
+    "claim": "Project value AED 1.7B",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ice-beach.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-Q1",
+   "handover_promised": "2030-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR duplex",
+    "3BR",
+    "penthouse",
+    "retail"
+   ],
+   "size_min_m2": 51,
+   "size_max_m2": 482,
+   "price_min": 1453500,
+   "price_max": 16500000,
+   "currency": "AED",
+   "deposit_pct": 20,
+   "payment_plan": "post-handover 20/40/10/30",
+   "foreign_ownership": "Freehold",
+   "rental_programme": null,
+   "service_charge": "AED 16 per sq ft (Dubainary)",
+   "brand": null,
+   "amenities": [
+    "swimming pools",
+    "ice caviar lounge",
+    "sky ice lounge",
+    "beach access"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "RAK Municipality Real Estate Regulatory Administration (RERA)",
+   "brochure_url": null
+  },
+  "verified_score": 1
+ },
+ {
+  "slug": "sora-beach-residences-aark",
+  "name": "Sora Beach Residences",
+  "developer": "AARK Developers (AARK DEVELOPERS FZ-LLC)",
+  "area": "Al Marjan Island",
+  "country": "UAE",
+  "market": "Ras Al Khaimah",
+  "url": "https://www.directdxb.com/projects/aark-developers-sora-beach-residences",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "listed on RAK RERA off-plan project register",
+   "prices from AED 2,754,888 (1BR) to 13,955,888 (4BR)",
+   "floor plans per unit type (DirectDXB)",
+   "payment plan 60/40",
+   "brochure: B+G+18, 663 units, handover Q4 2027"
+  ],
+  "note": "Beachfront apartments and villas on Al Marjan Island registered with RAK RERA; portals advertise Q4 2026 handover and 109 units while the developer brochure says Q4 2027 and 663 units, and no escrow or progress is published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 2754888,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 663,
+   "payment_plan": "60% during construction, 40% on handover",
+   "price_per_m2": 33739
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Named on RAK RERA off-plan list; no number published",
+   "escrow": "Nothing published",
+   "progress": "Nothing published",
+   "plans": "Floor plans for 1 to 4BR on DirectDXB",
+   "record": "No completed project found",
+   "returns": "No guaranteed returns language found"
+  },
+  "positives": [
+   "Registration confirmed on the official RAK RERA list",
+   "Unit prices and plans published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://sanad.mun.rak.ae/docs/en/rera-updated-developers-list",
+   "https://www.directdxb.com/projects/aark-developers-sora-beach-residences",
+   "https://www.seafront.ae/project/sora-beach-residences-1001272",
+   "https://propick.ae/en/project/sora_beach_residences",
+   "https://storage.propick.ae/projects/1181/brochure/sora-beach-residences-brochure17779423223546.pdf"
+  ],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Registered with RAK RERA",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://sanad.mun.rak.ae/docs/en/rera-updated-developers-list"
+   },
+   {
+    "claim": "Handover Q4 2026 (portals) vs Q4 2027 (brochure)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://storage.propick.ae/projects/1181/brochure/sora-beach-residences-brochure17779423223546.pdf"
+   },
+   {
+    "claim": "109 units (Propick) vs 663 units (brochure)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://propick.ae/en/project/sora_beach_residences"
+   },
+   {
+    "claim": "Escrow account",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.directdxb.com/projects/aark-developers-sora-beach-residences"
+   },
+   {
+    "claim": "Freehold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.directdxb.com/projects/aark-developers-sora-beach-residences"
+   },
+   {
+    "claim": "600 m of beach frontage",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.directdxb.com/projects/aark-developers-sora-beach-residences"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": "AARK DEVELOPERS FZ-LLC",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": "2026-Q4 (portal listings)",
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "villa"
+   ],
+   "size_min_m2": 82,
+   "size_max_m2": 289,
+   "price_min": 2754888,
+   "price_max": 13955888,
+   "currency": "AED",
+   "deposit_pct": null,
+   "payment_plan": "60/40",
+   "foreign_ownership": "Freehold",
+   "rental_programme": null,
+   "service_charge": "24.99 AED per sq ft (Propick)",
+   "brand": null,
+   "amenities": [
+    "indoor pool",
+    "gym",
+    "beach club",
+    "infinity sky bar",
+    "cinema",
+    "kids play area"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "RAK Municipality Real Estate Regulatory Administration (RERA)",
+   "brochure_url": "https://storage.propick.ae/projects/1181/brochure/sora-beach-residences-brochure17779423223546.pdf"
+  },
+  "verified_score": 1
+ },
+ {
+  "slug": "the-gate-6-aljada-arada",
+  "name": "The Gate 6 at Aljada",
+  "developer": "Arada",
+  "area": "Aljada (West Boulevard)",
+  "country": "UAE",
+  "market": "Sharjah",
+  "url": "https://www.arada.com/en/latest-news/arada-launches-the-gate-6-a-new-premium-residential-hub-at-sharjah-megaproject-aljada/",
+  "docs_url": "https://www.arada.com/en/latest-news/arada-launches-the-gate-6-a-new-premium-residential-hub-at-sharjah-megaproject-aljada/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer release: 220 units, 1 to 4BR, from AED 970,000",
+   "5% down, 30% over two years, 65% on completion",
+   "construction under way after AED 2B contracts for 14 Aljada buildings in Q1 2026",
+   "freehold for all nationalities (agent page)"
+  ],
+  "note": "220 apartment block in Arada's Aljada launched Mar 2026; Arada says construction is under way, but no project registration number, escrow account, plans or handover date were found. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 970000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 220,
+   "payment_plan": "5% down payment, 30% over two years, 65% on completion",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No SRERD registration number published",
+   "escrow": "Sharjah escrow law in force since Jan 2026 (Savills) but no project account stated",
+   "progress": "Developer says construction under way; no figure or dated update",
+   "plans": "None found",
+   "record": "No delivered-unit figure opened",
+   "returns": "No guaranteed returns language found"
+  },
+  "positives": [
+   "Low deposit (5%)",
+   "Sharjah escrow regime now mandatory for off-plan"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.arada.com/en/latest-news/arada-launches-the-gate-6-a-new-premium-residential-hub-at-sharjah-megaproject-aljada/",
+   "https://alroyarealestate.com/en/projects/the-gate-6-aljada-sharjah/",
+   "https://pdf.euro.savills.co.uk/uae/sharjah/savills-me--sharjah-residential-mim-q1-2026.pdf",
+   "https://azdxbproperties.com/blog/sharjah-freehold-projects-list/"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction under way",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.arada.com/en/latest-news/arada-launches-the-gate-6-a-new-premium-residential-hub-at-sharjah-megaproject-aljada/"
+   },
+   {
+    "claim": "Freehold for all nationalities",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://alroyarealestate.com/en/projects/the-gate-6-aljada-sharjah/"
+   },
+   {
+    "claim": "Escrow protected",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://pdf.euro.savills.co.uk/uae/sharjah/savills-me--sharjah-residential-mim-q1-2026.pdf"
+   },
+   {
+    "claim": "Prices from AED 970,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.arada.com/en/latest-news/arada-launches-the-gate-6-a-new-premium-residential-hub-at-sharjah-megaproject-aljada/"
+   },
+   {
+    "claim": "Handover date",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://alroyarealestate.com/en/projects/the-gate-6-aljada-sharjah/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Sharjah, UAE",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-Q1",
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 970000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": 5,
+   "payment_plan": "5/30/65",
+   "foreign_ownership": "Freehold in approved Aljada development (per agent; no public government list)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "indoor gym",
+    "adults and kids pools",
+    "outdoor gym",
+    "playground",
+    "smart home"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Sharjah Real Estate Registration Department (SRERD)",
+   "brochure_url": null
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "seef-residences-alef",
+  "name": "Seef Residences",
+  "developer": "Alef Group",
+  "area": "Al Khan",
+  "country": "UAE",
+  "market": "Sharjah",
+  "url": "https://www.wam.ae/en/article/c2u6pi7-alef-group-launches-aed12-billion-seef-residences",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "WAM: launched 20 Oct 2026, 862 units, AED 1.2B",
+   "anticipated completion 30 Sep 2030",
+   "launch prices 1BR AED 895,000, 2BR AED 1.295M, 3BR AED 2.195M",
+   "EOIs equal to 150% of units in one hour"
+  ],
+  "note": "AED 1.2 billion waterfront launch in Al Khan with 862 units and anticipated completion on 30 Sep 2030; at EOI stage, with no registration, escrow, plans or delivery record published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 895000,
+   "currency": "AED",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 862,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "None published",
+   "escrow": "None published for this project",
+   "progress": "Launched 20 Oct 2026, not started",
+   "plans": "None found",
+   "record": "None opened",
+   "returns": "No guaranteed returns language in WAM report"
+  },
+  "positives": [
+   "Completion date stated to the day (30 Sep 2030)"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.wam.ae/en/article/c2u6pi7-alef-group-launches-aed12-billion-seef-residences",
+   "https://keyspacerealty.com/sharjahs-new-escrow-law-explained/"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Launched 20 Oct 2026 with 862 units",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.wam.ae/en/article/c2u6pi7-alef-group-launches-aed12-billion-seef-residences"
+   },
+   {
+    "claim": "EOIs at 150% of units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.wam.ae/en/article/c2u6pi7-alef-group-launches-aed12-billion-seef-residences"
+   },
+   {
+    "claim": "Completion 30 Sep 2030",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.wam.ae/en/article/c2u6pi7-alef-group-launches-aed12-billion-seef-residences"
+   },
+   {
+    "claim": "Escrow account",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://keyspacerealty.com/sharjahs-new-escrow-law-explained/"
+   },
+   {
+    "claim": "Title open to foreigners",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.wam.ae/en/article/c2u6pi7-alef-group-launches-aed12-billion-seef-residences"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Sharjah, UAE",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2030-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 895000,
+   "price_max": null,
+   "currency": "AED",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "beach frontage",
+    "canal waterfront",
+    "promenade",
+    "resort-style amenities"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Sharjah Real Estate Registration Department (SRERD)",
+   "brochure_url": null
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "creekside-residence-al-zorah",
+  "name": "Creekside Residence",
+  "developer": "Al Zorah Development Company (Ajman Government and Solidere International JV)",
+  "area": "Al Zorah City",
+  "country": "UAE",
+  "market": "Ajman",
+  "url": "https://offplan.ae/projects/creekside-residence",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "prices AED 846,462 to 4,630,758",
+   "floor plans in gallery (offplan.ae)",
+   "payment plan 10/20/10/60 over 3 years after handover",
+   "construction start 12 May 2025, end 31 Mar 2028, 3% readiness (JRE)",
+   "101 residences, one building"
+  ],
+  "note": "101 unit building by the creek in Al Zorah City with Q1 2028 handover and 60% payable after handover; JRE notes no escrow number in available documentation and progress is shown at 3%. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 846462,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 3,
+   "progress_updates": false,
+   "developer_delivered": "Developer profile names The Oberoi Beach Resort, Al Zorah Golf Club and SeaSide Hills as completed (agent page)",
+   "units": 101,
+   "payment_plan": "10% booking, 20% in 4 instalments, 10% on handover, 60% over 36 months after handover",
+   "price_per_m2": 17936
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No Ajman RERA (ARRA) number published",
+   "escrow": "JRE: no escrow number in available documentation",
+   "progress": "3% readiness (JRE portal)",
+   "plans": "Floor plans in offplan.ae gallery",
+   "record": "Impala profile names completed Oberoi resort, golf club, SeaSide Hills",
+   "returns": "No guaranteed returns language found"
+  },
+  "positives": [
+   "Government-backed master developer",
+   "Long post-handover plan"
+  ],
+  "flags": [],
+  "sources": [
+   "https://offplan.ae/projects/creekside-residence",
+   "https://jre.ae/projects/creekside-residence",
+   "https://ezre.ae/projects/creekside-residence/payment-plan",
+   "https://impalarealestate.com/off-plan/developers/al-zorah-development-company/",
+   "https://www.bayut.com/buildings/creekside-residence-al-zorah/"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Handover Q1 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://jre.ae/projects/creekside-residence"
+   },
+   {
+    "claim": "Construction 3% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://jre.ae/projects/creekside-residence"
+   },
+   {
+    "claim": "Escrow account",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://jre.ae/projects/creekside-residence"
+   },
+   {
+    "claim": "JV of Ajman Government and Solidere International",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://impalarealestate.com/off-plan/developers/al-zorah-development-company/"
+   },
+   {
+    "claim": "Freehold for all nationalities",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://impalarealestate.com/off-plan/developers/al-zorah-development-company/"
+   },
+   {
+    "claim": "Payment plan 10/20/10/60 (EZRE) vs 5/45/10/40 (Bayut)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.bayut.com/buildings/creekside-residence-al-zorah/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2007,
+   "developer_hq": "Ajman, UAE",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-05",
+   "handover_promised": "2028-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 47,
+   "size_max_m2": 268,
+   "price_min": 846462,
+   "price_max": 4630758,
+   "currency": "AED",
+   "deposit_pct": 10,
+   "payment_plan": "10/20/10/60",
+   "foreign_ownership": "Freehold (Al Zorah freehold and free zone area)",
+   "rental_programme": null,
+   "service_charge": "AED 18 per sq ft (JRE)",
+   "brand": null,
+   "amenities": [
+    "beach club",
+    "pool",
+    "gym",
+    "spa",
+    "kids play area",
+    "golf fairways"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ajman Real Estate Regulatory Agency (ARRA)",
+   "brochure_url": null
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "sustainable-city-yiti-phase-2-sdic",
+  "name": "The Sustainable City - Yiti (Phase Two)",
+  "developer": "Sustainable Development & Investment Company (Diamond Developers / SEE Holding and OMRAN JV)",
+  "area": "Yiti, Muscat",
+  "country": "Oman",
+  "market": "Oman",
+  "url": "https://muscatgates.com/yiti/en/",
+  "docs_url": "https://thesustainablecity-yiti.com/news/",
+  "permit_number": null,
+  "docs_listed": [
+   "dated newsroom: infrastructure 96% (Dec 2024), 25 million safe hours (Jul 2026)",
+   "dated drone photos Dec 2024 to Jul 2026",
+   "phase two ~500 homes, handover advertised Dec 2027 (Tamlik)",
+   "apartments from OMR 85,000; villas 50% after handover over 3 or 5 years",
+   "home floor plans and specs (agent page)",
+   "listed by Oman News Agency among ITCs being implemented"
+  ],
+  "note": "Second release of about 500 homes in Oman's net-zero ITC at Yiti with Dec 2027 handover advertised; the community's own full-operation target slipped from 2025 to 2026, and no escrow account or permit number is published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 85000,
+   "currency": "OMR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Developer states phase one sold out; Diamond Developers built The Sustainable City Dubai (developer statements, not independently checked)",
+   "units": 500,
+   "payment_plan": "Villas 50% during construction and 50% over 3 or 5 years after handover",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Oman News Agency lists Yiti Sustainable City among licensed ITCs under implementation; no licence number",
+   "escrow": "No project escrow account stated",
+   "progress": "Dated newsroom milestones and drone photos (developer and agent)",
+   "plans": "Floor plans per home on Muscat Gates",
+   "record": "Developer statement that phase one sold out and Dubai Sustainable City built",
+   "returns": "No guaranteed returns; agent cites utility savings, not rental returns"
+  },
+  "positives": [
+   "Dated construction milestones published",
+   "Freehold ITC title for foreigners"
+  ],
+  "flags": [],
+  "sources": [
+   "https://muscatgates.com/yiti/en/",
+   "https://thesustainablecity-yiti.com/news/",
+   "https://tamlik.om/itc/sustainable-city-yiti/phase-two",
+   "https://omannews.gov.om/topics/en/80/show/112463",
+   "https://www.palmera.realestate/oman/guides/aida-yiti/",
+   "https://www.omanobserver.om/article/1191973/business/tourism/high-end-tourism-projects-advancing-across-oman"
+  ],
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Licensed ITC under implementation",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://omannews.gov.om/topics/en/80/show/112463"
+   },
+   {
+    "claim": "Phase two handover Dec 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tamlik.om/itc/sustainable-city-yiti/phase-two"
+   },
+   {
+    "claim": "Community fully operational 2025 (original) now 2026",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.palmera.realestate/oman/guides/aida-yiti/"
+   },
+   {
+    "claim": "Freehold for all nationalities",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://muscatgates.com/yiti/en/"
+   },
+   {
+    "claim": "Nikki Beach resort 81.2% complete end 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.omanobserver.om/article/1191973/business/tourism/high-end-tourism-projects-advancing-across-oman"
+   },
+   {
+    "claim": "Escrow account",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://muscatgates.com/yiti/en/"
+   },
+   {
+    "claim": "Apartments from OMR 85,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://muscatgates.com/yiti/en/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2022,
+   "developer_hq": "Muscat, Oman",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": "2025 (community full operation, later 2026)",
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "3BR villa",
+    "4BR villa"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 85000,
+   "price_max": null,
+   "currency": "OMR",
+   "deposit_pct": null,
+   "payment_plan": "villas 50/50 with 3 or 5 year post-handover",
+   "foreign_ownership": "Freehold in Integrated Tourism Complex",
+   "rental_programme": null,
+   "service_charge": "Villas zero service charge per developer",
+   "brand": "Nikki Beach (serviced residences collection)",
+   "amenities": [
+    "7.4 km green spine",
+    "school",
+    "mosque",
+    "clinic",
+    "marina",
+    "urban farming",
+    "equestrian centre"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ministry of Heritage and Tourism (ITC licence); Ministry of Housing and Urban Planning (title)",
+   "brochure_url": null
+  },
+  "verified_score": 1
+ },
+ {
+  "slug": "luma-residences-muscat-bay",
+  "name": "Luma Residences",
+  "developer": "Muscat Bay (Saraya Bandar Jissah, OMRAN and Saraya Holding JV)",
+  "area": "Bandar Jissah, Muscat Bay",
+  "country": "Oman",
+  "market": "Oman",
+  "url": "https://uinvestgroup.com/property/luma-residence-bandar-jissah-muscat-bay-oman/",
+  "docs_url": "https://www.muscatbay.com/wp-content/uploads/2026/03/Luma-Brochure_En-Lo.pdf",
+  "permit_number": null,
+  "docs_listed": [
+   "launched 12 Jan 2026 under patronage of the Minister of Housing (Oman Observer, Muscat Daily)",
+   "240 freehold units, RO 20M, 37,000 m2 BUA",
+   "project finance agreement with Ahli Bank",
+   "prices from OMR 115,541 (2BR apartment)",
+   "8 instalment plan, 50% on completion, handover Q1 2029",
+   "developer brochure PDF"
+  ],
+  "note": "240 apartments, townhouses and villas in the established Muscat Bay resort, launched Jan 2026 with bank project finance and Q1 2029 handover; no escrow account, permit number or construction progress is published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 115541,
+   "currency": "OMR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Muscat Daily and Oman Observer report the earlier Zen project 90% sold and entering handover in 2026; phase one of 255 homes completed in 2019 (uinvest summary of Oman Observer)",
+   "units": 240,
+   "payment_plan": "2.5% booking, 7.5% at SPA, 5% at 6 and 12 months, 3 x 10% construction milestones, 50% on completion",
+   "price_per_m2": 1022
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence number published",
+   "escrow": "Agent notes reservation documents normally name escrow; none published",
+   "progress": "None published",
+   "plans": "Brochure seen, no unit plans confirmed",
+   "record": "Muscat Daily, Oman Observer on Zen handover; Jumeirah Muscat Bay opened 2022",
+   "returns": "No guaranteed returns language found"
+  },
+  "positives": [
+   "Independent press coverage of launch and bank financing",
+   "Developer with delivered homes in the same community"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.muscatdaily.com/2026/01/13/muscat-bay-launches-luma-residences-with-r020mn-investment/",
+   "https://www.omanobserver.om/article/1182615/business/economy/luma-residences-unveiled-with-ro-20-million-investment",
+   "https://uinvestgroup.com/property/luma-residence-bandar-jissah-muscat-bay-oman/",
+   "https://uinvestgroup.com/muscat-bay-oman-guide/",
+   "https://www.muscatbay.com/wp-content/uploads/2026/03/Luma-Brochure_En-Lo.pdf"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "240 freehold units, RO 20M investment",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.omanobserver.om/article/1182615/business/economy/luma-residences-unveiled-with-ro-20-million-investment"
+   },
+   {
+    "claim": "Project financing agreement with Ahli Bank",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.muscatdaily.com/2026/01/13/muscat-bay-launches-luma-residences-with-r020mn-investment/"
+   },
+   {
+    "claim": "Earlier Zen project in handover",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.muscatdaily.com/2026/01/13/muscat-bay-launches-luma-residences-with-r020mn-investment/"
+   },
+   {
+    "claim": "Handover Q1 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://uinvestgroup.com/property/luma-residence-bandar-jissah-muscat-bay-oman/"
+   },
+   {
+    "claim": "Escrow account",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://uinvestgroup.com/property/luma-residence-bandar-jissah-muscat-bay-oman/"
+   },
+   {
+    "claim": "About 82% sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://uinvestgroup.com/muscat-bay-oman-guide/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2007,
+   "developer_hq": "Muscat, Oman",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 255,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2029-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR apartment",
+    "townhouse",
+    "3BR villa"
+   ],
+   "size_min_m2": 106,
+   "size_max_m2": 300,
+   "price_min": 115541,
+   "price_max": 250000,
+   "currency": "OMR",
+   "deposit_pct": 2.5,
+   "payment_plan": "50/50, 8 instalments",
+   "foreign_ownership": "Freehold in Integrated Tourism Complex",
+   "rental_programme": null,
+   "service_charge": "8.27 OMR/m2 apartments, 6.27 OMR/m2 villas (agent page)",
+   "brand": null,
+   "amenities": [],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ministry of Heritage and Tourism (ITC); Ministry of Housing and Urban Planning",
+   "brochure_url": "https://www.muscatbay.com/wp-content/uploads/2026/03/Luma-Brochure_En-Lo.pdf"
+  },
+  "verified_score": 1
+ },
+ {
+  "slug": "trump-tower-jeddah-dar-global",
+  "name": "Trump Tower Jeddah",
+  "developer": "Dar Global (DAR Global Holdings for Real Estate, KSA)",
+  "area": "Jeddah Corniche",
+  "country": "Saudi Arabia",
+  "market": "Saudi Arabia",
+  "url": "https://www.palmera.realestate/saudi-arabia/property/trump-tower-jeddah/",
+  "docs_url": "https://darglobal.co.uk/press/darglobal-appoints-acc-for-main-works-as-trump-tower-jeddah-rises",
+  "permit_number": null,
+  "docs_listed": [
+   "47 floors, SAR 2B project value",
+   "enabling and foundation works complete, main contract to ACC Nov 2025 (MEED, Zawya)",
+   "escrow at Emirates NBD (agent page)",
+   "completion Dec 2029",
+   "remaining stock: 2BR from SAR 3,917,760",
+   "floor-linked payment plan 20% + 10% stages"
+  ],
+  "note": "47 storey Trump-licensed tower on the Jeddah Corniche; foundations are complete and the SAR 2 billion main works contract went to Arabian Construction Company in Nov 2025, completion Dec 2029; no Wafi licence number was found. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 3917760,
+   "currency": "SAR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "Emirates NBD escrow (agent page Palmera); no account number",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": "20% on signing, eight 10% instalments tied to floors, 10% on completion",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No Wafi licence number found",
+   "escrow": "Palmera states escrow at Emirates NBD",
+   "progress": "MEED and Zawya: enabling and foundations complete, main contract awarded 26 Nov 2025",
+   "plans": "Unit size ranges only",
+   "record": "No delivered-unit figure opened for Dar Global",
+   "returns": "No guaranteed returns language found"
+  },
+  "positives": [
+   "Independent reports confirm foundations complete and main contractor appointed",
+   "Listed developer (LSE: DAR)"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.palmera.realestate/saudi-arabia/property/trump-tower-jeddah/",
+   "https://darglobal.co.uk/press/darglobal-appoints-acc-for-main-works-as-trump-tower-jeddah-rises",
+   "https://www.meed.com/arabian-construction-company-wins-trump-tower-jeddah",
+   "https://www.zawya.com/en/economy/gcc/dar-global-awards-main-contract-for-531mln-trump-tower-jeddah-nlipkw3g",
+   "https://www.reuters.com/world/middle-east/dar-global-trump-organization-launch-10-billion-saudi-developments-2026-01-11/",
+   "https://rega.gov.sa/en/media-center/news-announcements/rega-non-saudi-property-ownership-system-enters-into-force-as-of-today/",
+   "https://www.palmera.realestate/saudi-arabia/blog/off-plan-saudi-arabia-payment-plans-escrow-risk/"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Foundations complete, main contractor ACC appointed",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.meed.com/arabian-construction-company-wins-trump-tower-jeddah"
+   },
+   {
+    "claim": "SAR 2B project, 47 floors",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.zawya.com/en/economy/gcc/dar-global-awards-main-contract-for-531mln-trump-tower-jeddah-nlipkw3g"
+   },
+   {
+    "claim": "Escrow at Emirates NBD",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.palmera.realestate/saudi-arabia/property/trump-tower-jeddah/"
+   },
+   {
+    "claim": "Completion Dec 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.palmera.realestate/saudi-arabia/property/trump-tower-jeddah/"
+   },
+   {
+    "claim": "Foreigners can own (Jeddah approved zone)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rega.gov.sa/en/media-center/news-announcements/rega-non-saudi-property-ownership-system-enters-into-force-as-of-today/"
+   },
+   {
+    "claim": "Wafi off-plan licence",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.palmera.realestate/saudi-arabia/blog/off-plan-saudi-arabia-payment-plans-escrow-risk/"
+   },
+   {
+    "claim": "Developer is London-listed",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.reuters.com/world/middle-east/dar-global-trump-organization-launch-10-billion-saudi-developments-2026-01-11/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2017,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Dar Global PLC listed on London Stock Exchange (DAR)",
+   "construction_start": null,
+   "handover_promised": "2029-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR",
+    "penthouse"
+   ],
+   "size_min_m2": 70,
+   "size_max_m2": 365,
+   "price_min": 3917760,
+   "price_max": 19357190,
+   "currency": "SAR",
+   "deposit_pct": 20,
+   "payment_plan": "20% then floor-linked 10% stages",
+   "foreign_ownership": "Freehold for non-Saudis inside approved Jeddah zones (law in force 22 Jan 2026); unit eligibility not checked",
+   "rental_programme": null,
+   "service_charge": "SAR 75 per m2 (agent page)",
+   "brand": "Trump (licence from The Trump Organization)",
+   "amenities": [
+    "Trump Club",
+    "pool",
+    "children's pool",
+    "gym",
+    "EV-ready parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Real Estate General Authority (REGA) Wafi programme",
+   "brochure_url": null
+  },
+  "verified_score": 1
+ },
+ {
+  "slug": "sky-tower-first-projects",
+  "name": "Sky Tower",
+  "developer": "First Projects",
+  "area": "Al Ulaya, Downtown Riyadh",
+  "country": "Saudi Arabia",
+  "market": "Saudi Arabia",
+  "url": "https://www.propertyfinder.sa/en/new-projects/first-projects/sky",
+  "docs_url": null,
+  "permit_number": "Wafi 75/1",
+  "docs_listed": [
+   "Wafi license 75/1 (Property Finder)",
+   "construction started 1 Mar 2023, expected completion 31 Dec 2026",
+   "launch price SAR 1.2M (from SAR 1,180,000)",
+   "studio to 3BR and duplexes on King Fahd Road"
+  ],
+  "note": "Residential tower on King Fahd Road in Al Ulaya with a Wafi licence number shown on Property Finder and completion due 31 Dec 2026; no escrow, plans, progress figures or developer record were found, and foreign-ownership eligibility of the plot is unconfirmed. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1180000,
+   "currency": "SAR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": true,
+   "permit_number": "Wafi 75/1",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Wafi license 75/1 on Property Finder listing; not checked on REGA Wafi",
+   "escrow": "None published",
+   "progress": "Only start and expected completion dates",
+   "plans": "None",
+   "record": "None found",
+   "returns": "No guaranteed returns language found"
+  },
+  "positives": [
+   "Wafi licence number published",
+   "Near completion on the stated timeline"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.propertyfinder.sa/en/new-projects/first-projects/sky",
+   "https://rega.gov.sa/en/eservices/wafi-off-plan-sales-and-lease/",
+   "https://www.palmera.realestate/saudi-arabia/blog/off-plan-saudi-arabia-payment-plans-escrow-risk/"
+  ],
+  "verification": {
+   "permit": "developer",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Wafi license 75/1",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.sa/en/new-projects/first-projects/sky"
+   },
+   {
+    "claim": "Completion 31 Dec 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.sa/en/new-projects/first-projects/sky"
+   },
+   {
+    "claim": "Freehold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.sa/en/new-projects/first-projects/sky"
+   },
+   {
+    "claim": "Escrow account",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.palmera.realestate/saudi-arabia/blog/off-plan-saudi-arabia-payment-plans-escrow-risk/"
+   },
+   {
+    "claim": "Plot inside an approved non-Saudi ownership zone",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.palmera.realestate/saudi-arabia/blog/off-plan-saudi-arabia-payment-plans-escrow-risk/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2023-03",
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "duplex"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 1180000,
+   "price_max": null,
+   "currency": "SAR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold claimed; non-Saudi zone eligibility not confirmed",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "gym",
+    "indoor pool",
+    "jacuzzi",
+    "steam room"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Real Estate General Authority (REGA) Wafi programme",
+   "brochure_url": null
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "marassi-views-eagle-hills",
+  "name": "Marassi Views",
+  "developer": "Eagle Hills (Binaa Al Bahrain, JV with Diyar Al Muharraq)",
+  "area": "Marassi Al Bahrain, Diyar Al Muharraq",
+  "country": "Bahrain",
+  "market": "Bahrain",
+  "url": "https://www.propertyfinder.bh/en/new-projects/eagle-hills/marassi-views",
+  "docs_url": "https://binaaeaglehills.com/project-updates/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer monthly project updates Dec 2025 to May 2026",
+   "construction started 17 Dec 2025, completion 31 Mar 2028 (Property Finder)",
+   "studio to 4BR from BHD 79,888 (current sheet) / launch BHD 67,888",
+   "payment plan 15% on SPA, quarterly 5% to handover Feb 2028, 3% quarterly to Dec 2031",
+   "service charge BHD 1.5 per m2",
+   "freehold for all nationalities"
+  ],
+  "note": "Beachfront apartment building in Marassi Al Bahrain started Dec 2025 with handover Feb or Mar 2028; the developer posts monthly site updates, but no RERA registration number, escrow account or floor plans were found. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 79888,
+   "currency": "BHD",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Diyar Al Muharraq states Marassi Shores Residences (289 apartments) handed over; Property Finder lists Marassi Bay and Marassi Terraces as ready",
+   "units": null,
+   "payment_plan": "15% on SPA, 15% Dec 2026, 5% quarterly to Feb 2028 handover, 3% quarterly to Dec 2031",
+   "price_per_m2": 1452
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No Bahrain RERA project registration number published",
+   "escrow": "None published",
+   "progress": "Monthly update pages Dec 2025 to May 2026 on binaaeaglehills.com; agent states 25% complete",
+   "plans": "Sizes per type only",
+   "record": "Diyar Al Muharraq page on Marassi Shores handover; earlier Marassi phases listed as ready",
+   "returns": "No guaranteed returns language found"
+  },
+  "positives": [
+   "Monthly developer construction updates",
+   "Post-handover plan to 2031"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.propertyfinder.bh/en/new-projects/eagle-hills/marassi-views",
+   "https://binaaeaglehills.com/project-updates/",
+   "https://askre.com/bahrain-new-projects/marassi-views/",
+   "https://www.diyar.bh/en/investment-details/5/marassi-al-bahrain",
+   "https://www.propertyfinder.bh/en/new-projects/dev/eagle-hills",
+   "https://www.propertyfinder.bh/en/plp/buy/apartment-for-sale-muharraq-governorate-diyar-al-muharraq-marassi-al-bahrain-54771785.html"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction started Dec 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.bh/en/new-projects/eagle-hills/marassi-views"
+   },
+   {
+    "claim": "Handover Feb 2028 (ASK) vs Mar 2028 (Property Finder)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://askre.com/bahrain-new-projects/marassi-views/"
+   },
+   {
+    "claim": "25% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.bh/en/plp/buy/apartment-for-sale-muharraq-governorate-diyar-al-muharraq-marassi-al-bahrain-54771785.html"
+   },
+   {
+    "claim": "Freehold for all nationalities",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://askre.com/bahrain-new-projects/marassi-views/"
+   },
+   {
+    "claim": "Earlier Marassi buildings handed over",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.diyar.bh/en/investment-details/5/marassi-al-bahrain"
+   },
+   {
+    "claim": "Escrow account",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://askre.com/bahrain-new-projects/marassi-views/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Abu Dhabi, UAE",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-12",
+   "handover_promised": "2028-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": 53,
+   "size_max_m2": 393,
+   "price_min": 67888,
+   "price_max": 400888,
+   "currency": "BHD",
+   "deposit_pct": 15,
+   "payment_plan": "15/15 then quarterly, post-handover to 2031",
+   "foreign_ownership": "Freehold",
+   "rental_programme": null,
+   "service_charge": "BHD 1.5 per m2",
+   "brand": null,
+   "amenities": [
+    "beach access",
+    "temperature-controlled pools",
+    "gym",
+    "children's play zones",
+    "BBQ areas",
+    "promenade"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Real Estate Regulatory Authority (RERA) Bahrain",
+   "brochure_url": null
+  },
+  "verified_score": 0
+ }
+]

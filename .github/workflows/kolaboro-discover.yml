@@ -5,6 +5,9 @@ name: Kolaboro discovery agent
 on:
   schedule:
     - cron: '41 3 * * *'
+    - cron: '17 9 * * *'
+    - cron: '29 15 * * *'
+    - cron: '53 21 * * *'
   workflow_dispatch:
     inputs:
       min_usd:
@@ -13,6 +16,9 @@ on:
       max_usd:
         description: "Maximum spend this run (USD)"
         default: "3"
+      force:
+        description: "Run even if today's minimum is already spent (1 = yes)"
+        default: ""
 permissions:
   contents: write
   actions: write
@@ -33,6 +39,7 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           KB_DISCOVER_MIN_USD: ${{ github.event.inputs.min_usd || '2' }}
           KB_DISCOVER_MAX_USD: ${{ github.event.inputs.max_usd || '3' }}
+          KB_DISCOVER_FORCE: ${{ github.event.inputs.force || '' }}
         run: python3 tools/kolaboro-agent/discover.py | tee "$RUNNER_TEMP/discover.out"
       - name: Save on main
         id: save

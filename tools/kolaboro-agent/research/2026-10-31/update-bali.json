@@ -1,0 +1,3090 @@
+[
+ {
+  "slug": "amani-melasti",
+  "url": "https://www.teus-group.com/amani-melasti",
+  "docs_url": "https://www.teus-group.com/amani-melasti",
+  "permit_number": null,
+  "docs_listed": [
+   "entry price from $157,000",
+   "90 hotel rooms over 5 floors, 27-71 m2",
+   "yield claim 14-18% per annum",
+   "dated construction updates (Sep 2026 update posted 13 Oct 2026; Wyndham show-unit sign-off 26 Oct 2026)",
+   "Rumavi: staged payment plan tied to construction, completion Q2 2027"
+  ],
+  "note": "90-room Wyndham-branded hotel-unit project on the Bukit with entry price from $157,000 on the developer page, dated monthly construction updates and a 14-18% yield claim; the TEUS About page advertises 'guaranteed income at the level of 6-8% per annum in the first years'. No permit number, escrow or lease term published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 157000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 18,
+   "completion": "2027-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 90,
+   "payment_plan": "10% booking, 20% at PPJB, 20% foundation, 20% main structure, 15% MEP/finishing, 15% at handover (Rumavi)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": false,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Developer news 'Amani Melasti - September 2026' (13.10.2026): masonry fully completed, show unit done, electrical and plastering started; no % given",
+   "plans": "Only room types with sizes (27-71 m2) listed, no floor-plan drawings found",
+   "record": "Parent Zhytlobud-2 claims 1M+ m2 built, but no completed TEUS project in Bali is named as delivered",
+   "returns": "About page: 'Guaranteed income at the level of 6-8% per annum in the first years of investment'; project page: 'returns of up to 14-18% per annum' and 'guaranteeing capital gains'"
+  },
+  "positives": [
+   "Monthly dated construction updates on developer site",
+   "Wyndham operator named; show unit signed off by Wyndham in Oct 2026",
+   "Rumavi lists payment milestones tied to construction stages"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.teus-group.com/amani-melasti",
+   "https://www.teus-group.com/about-us",
+   "https://www.teus-group.com/news/amani-melasti----september-2026",
+   "https://www.teus-group.com/news/wyndham-approves-the-amani-melasti-show-unit",
+   "https://rumavi.com/en/new-developments/indonesia/ungasan/amani-melasti-by-wyndham"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "anjuna-bay",
+  "url": "https://theanjunabay.com",
+  "docs_url": "https://theanjunabay.com",
+  "permit_number": null,
+  "docs_listed": [
+   "construction progress updates page (last updated 12 Aug 2026) per phase",
+   "siteplan",
+   "estimated ROI up to 16-18%",
+   "brochures behind form",
+   "OffPlan: Bank BRI delivery guarantee, from $190,000",
+   "Rumavi: 30+20 year leasehold"
+  ],
+  "note": "8.5-10 ha cliff-front community at Thomas Beach by PT Thomas Beach Village, from $190,000, with a dated construction-progress page per phase and a Bank BRI on-time delivery refund guarantee stated on the OffPlan listing. Returns are described as 'estimated' or 'projected' (16-18%); no permit number published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 190000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "+20 years (30+20, per Rumavi)",
+   "guaranteed_language": false,
+   "yield_pct": 18,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "Bank BRI guarantee offering a full refund if not delivered on time (Anjuna Palms), stated on OffPlan listing",
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": "OffPlan listing: 'Bank BRI delivery guarantee' and 'full refund if the property is not delivered on time' (Palms collection)",
+   "progress": "theanjunabay.com/progress-updates, last updated 12 August 2026, per-phase works (Aurora foundations LV-8, Penthouses plastering, Shops paving)",
+   "plans": "Siteplan only; unit plans behind brochure form",
+   "record": "Rumavi lists developer founded 2024 with no completed projects",
+   "returns": "Developer: 'estimated Return on Investment (ROI) of up to 16%' and 18.00%; OffPlan: 'developer-projected returns'; no guarantee wording"
+  },
+  "positives": [
+   "Dated construction-progress page per phase",
+   "Bank-backed on-time delivery refund guarantee stated on listing",
+   "Operating company named (PT Thomas Beach Village)"
+  ],
+  "flags": [],
+  "sources": [
+   "https://theanjunabay.com",
+   "https://theanjunabay.com/progress-updates/",
+   "https://theanjunabay.com/anjuna-apartments/",
+   "https://offplan.so/projects/the-anjuna-bay-uluwatu",
+   "https://rumavi.com/en/new-developments/indonesia/uluwatu/anjuna-apartments"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "aravita-residence",
+  "url": "https://aravitaresidence.com",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "floor plans per type (1-4 BR, 51-173 m2)",
+   "general (master) plan",
+   "payment schedule: 25% then interest-free instalments over 2.5 years",
+   "construction completion Q3 2028",
+   "developer named: High Quality Construction"
+  ],
+  "note": "75 private-pool villas near Sawangan Beach by High Quality Construction, from $175,000 (Rumavi), with floor plans and an interest-free 2.5-year instalment plan on a third-party marketing site (TOPS.ME). Completion Q3 2028; tenure, permit, escrow and progress are not published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 175000,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 75,
+   "payment_plan": "25% first payment, balance in interest-free instalments over 2.5 years",
+   "price_per_m2": 3431
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": null,
+   "plans": "aravitaresidence.com 'Aravita Residence floor plans' section with layouts for 1BR 51 m2 to 4BR 173 m2",
+   "record": "Site claims '3 completed projects in Bali' and 70 in Russia but names none",
+   "returns": "No yield or guarantee wording on the project site"
+  },
+  "positives": [
+   "Floor plans for every villa type published",
+   "Interest-free developer instalments over 2.5 years"
+  ],
+  "flags": [],
+  "sources": [
+   "https://aravitaresidence.com",
+   "https://rumavi.com/en/new-developments/indonesia/nusa-dua/aravita-residence"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "bingin-ocean-villas",
+  "url": "https://rumavi.com/en/new-developments/indonesia/bingin/bingin-ocean-villas",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "33 units, 2-bedroom villas",
+   "29+30 year leasehold",
+   "completion Q1 2027"
+  ],
+  "note": "33 two-bedroom villas in Bingin listed on Rumavi with a 29+30-year leasehold and Q1 2027 completion; no developer website, price, permit, plans or progress found. Rumavi itself warns that the developer identity and IMB/PBG status need verification (checked 31 Oct 2026)",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": "leasehold",
+   "lease_base": 29,
+   "extension": "+30 years (29+30, per Rumavi)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 33,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": null,
+   "plans": null,
+   "record": "Rumavi: 'Developer identity not publicly disclosed - track record cannot be verified independently'",
+   "returns": "No guarantee wording on listing"
+  },
+  "positives": [
+   "Long 29+30-year lease term stated"
+  ],
+  "flags": [],
+  "sources": [
+   "https://rumavi.com/en/new-developments/indonesia/bingin/bingin-ocean-villas"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "biom",
+  "url": "https://biomdevelopment.com",
+  "docs_url": "https://biomdevelopment.com",
+  "permit_number": null,
+  "docs_listed": [
+   "77 units: studios, apartments, townhouses, villas",
+   "prices per unit type from $145,000 (Rp 2.47 bln)",
+   "leasehold 35+20 years; freehold HGB via PT PMA for villas",
+   "master plan",
+   "handover Q4 2027",
+   "0% instalments tied to construction milestones",
+   "12% ROI calculator ('actual returns may vary')",
+   "independent construction audit by PT Quality Control Group"
+  ],
+  "note": "77-unit residential project inside Nuanu Creative City by PT. Biom Development Group, from $145,000 on a 35+20-year leasehold (HGB freehold for villas from $450,000), handover Q4 2027. Master plan and 12% projected ROI published; no permit number, escrow, dated progress or unit floor plans (checked 31 Oct 2026)",
+  "seed": {
+   "price": 145000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 35,
+   "extension": "+20 years priority right at pre-agreed terms (35+20)",
+   "guaranteed_language": false,
+   "yield_pct": 12,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 77,
+   "payment_plan": "0% interest instalments across construction milestones",
+   "price_per_m2": 4143
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Only 'Construction underway' with no date or figure",
+   "plans": "Master plan only; unit plans in gated presentation",
+   "record": "Team named (Nuanu founder Sergey Solonin), but no completed Biom project listed",
+   "returns": "'12% annual ROI ... Actual returns may vary'; no guarantee"
+  },
+  "positives": [
+   "Lease term and extension mechanism stated (35+20)",
+   "Independent construction auditor named (PT Quality Control Group)",
+   "Per-unit prices and sizes published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://biomdevelopment.com",
+   "https://offplan.so/projects/biom-nuanu"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "coco-hills",
+  "url": "https://cocodevelopmentgroup.com/coco-hills-resort-bali/",
+  "docs_url": "https://cocodevelopmentgroup.com/coco-hills-resort-bali/",
+  "permit_number": null,
+  "docs_listed": [
+   "95 properties, from EUR 131,980 taxes included",
+   "12-17% average ROI estimate, 5-6 years payback",
+   "development roadmap: construction start 15 Aug 2025, grand opening 15 Aug 2027",
+   "payment milestones (20% payable from rental income or resale profit)",
+   "homepage construction-progress link for COCO Hills (Instagram post, May 2026 image)",
+   "completed/open COCO resorts listed on homepage"
+  ],
+  "note": "95-unit lifestyle resort in Bingin from EUR 131,980 with a published construction roadmap (start Aug 2025, opening Aug 2027) and 12-17% estimated ROI; COCO lists several operating resorts (Coco Boulevard, Lifestyle Resort Bali, Coco Mansion, Coco Lifestyle Residence). No permit number, escrow, floor plans or lease term published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 131980,
+   "currency": "EUR",
+   "title": "leasehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 17,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "COCO homepage lists operating projects open for stays: The Coco Boulevard (11 apartments, Bingin), Lifestyle Resort Bali (62 apartments, Bingin), The Coco Mansion (10 apartments, Seseh), Coco Lifestyle Residence (14 apartments, Seseh)",
+   "units": 95,
+   "payment_plan": "Milestones at construction start, 50% and 75% construction; 20% payable from rental income or resale profit",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Homepage 'Construction Progress' section links COCO Hills to a dated Instagram progress post (image uploaded 2026/05); project page roadmap gives target dates only",
+   "plans": null,
+   "record": "Homepage project grid marks Coco Boulevard, Lifestyle Resort Bali, Coco Mansion and Coco Lifestyle Residence as OPEN / BOOK YOUR STAY",
+   "returns": "'12-17% average return on investment' / 'annual ROI estimated'; no guarantee wording"
+  },
+  "positives": [
+   "Several completed and operating COCO resorts named",
+   "Dated construction roadmap and milestone payments published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://cocodevelopmentgroup.com/",
+   "https://cocodevelopmentgroup.com/coco-hills-resort-bali/",
+   "https://rumavi.com/en/new-developments/indonesia/bingin/coco-hills-resort"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "core-villas",
+  "url": "https://www.coreconceptliving.com/core-villas/ownership",
+  "docs_url": "https://www.coreconceptliving.com/core-villas/ownership",
+  "permit_number": null,
+  "docs_listed": [
+   "master plan with plot sizes (358-451 m2)",
+   "detailed floor plans per remaining villa with room areas",
+   "price per m2 of built area (Rp 18.2-20.1 M)",
+   "price list and net-yield schedule behind form",
+   "payments tied to construction milestones, final instalment on SLF handover",
+   "Villa Morada marked Delivered"
+  ],
+  "note": "17-villa Phase 1 community in Seseh, Munggu by PT Core Group Indonesia, three villas left, with detailed per-plot floor plans and built-area pricing (Rp 18.2-20.1 M per m2). The developer says payments follow construction milestones and the last instalment is due on SLF handover; no PBG number, escrow or dated progress published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 246000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 27,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Villa Morada, six-bedroom riverside estate in Tumbak Bayuh, marked 'Delivered' on the CORE development page",
+   "units": 17,
+   "payment_plan": "Staged by construction milestones; final instalment due on SLF handover and defect clearance",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Press post 'Compliance is a feature' (20 Jul 2026) describes PBG-before-pour and SLF process but publishes no permit number",
+   "escrow": "States buyer funds are 'handled as client funds and applied to the build'; no escrow account or bank guarantee named",
+   "progress": "Real photos of a built reference villa, but no dated construction updates",
+   "plans": "Ownership page: ground and first floor plans per remaining villa with room-by-room areas",
+   "record": "Development page: 'Villa Morada - Delivered - Tumbak Bayuh'",
+   "returns": "Net-yield schedule behind a form; no guarantee wording"
+  },
+  "positives": [
+   "Detailed floor plans and price per m2 for each available villa",
+   "Final payment tied to SLF certificate handover",
+   "Delivered prior project named"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.coreconceptliving.com",
+   "https://www.coreconceptliving.com/core-villas/ownership",
+   "https://www.coreconceptliving.com/press/compliance-is-a-feature",
+   "https://www.coreconceptliving.com/development"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "elysium-eco-city",
+  "url": "https://breig-property.com/projects/elysium-eco-city",
+  "docs_url": "https://breig-property.com/projects/elysium-eco-city",
+  "permit_number": null,
+  "docs_listed": [
+   "status: Sales Launch",
+   "from $97,000; units 24-261 m2",
+   "12% annual yield (ROI)",
+   "completion Q1-Q4 2028 by type",
+   "25% down payment",
+   "floor plans, legal documents and financial model on request",
+   "completed BREIG projects listed (Aquamarine, Baliwood, Garden Villa, Oasis)"
+  ],
+  "note": "Sales-launch eco-resort in Pererenan by BREIG from $97,000 with 12% ROI, 25% down payment and Q4 2028 completion; floor plans and 'developer contracts and licences' are only on request. The footer NIB belongs to PT Next Level Group as the website and marketing operator, not a project permit (checked 31 Oct 2026)",
+  "seed": {
+   "price": 97000,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 12,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "BREIG site lists completed projects: Aquamarine I-III, Baliwood I-II, Garden Villa I-II, Oasis I, II and IV, Red Sunset I-II, River Villa, VESNA (Canggu/Pererenan)",
+   "units": null,
+   "payment_plan": "25% down payment",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Only 'Legal documents: developer contracts and licences' on request; footer NIB 0106220001589 is PT Next Level Group as website/marketing operator",
+   "escrow": null,
+   "progress": "Status 'Sales Launch'; no construction updates",
+   "plans": "'Request floor plans' buttons only",
+   "record": "Footer 'Completed Real Estate' list and project cards marked Completed (Aquamarine I-III, Baliwood I-II, etc.)",
+   "returns": "'Annual yield (ROI) 12%'; no guarantee wording"
+  },
+  "positives": [
+   "Developer lists many completed Bali projects",
+   "25-year construction warranty stated"
+  ],
+  "flags": [],
+  "sources": [
+   "https://breig-property.com/projects/elysium-eco-city"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "every-bali",
+  "url": "https://every-bali.com",
+  "docs_url": "https://every-bali.com",
+  "permit_number": null,
+  "docs_listed": [
+   "villa and apartment unit list with sizes (34-185 m2)",
+   "leasehold 40 years (30+10) plus 20-year extension 'guaranteed'",
+   "final payment only after quality inspection and key handover",
+   "'Everything is legal' block: due diligence, land certificate, leasing agreements (no numbers)",
+   "up to 12% per annum income claim"
+  ],
+  "note": "Sport-and-recovery themed villa and apartment complex in Ungasan by PT Bali Sunlit Commune with a 40-year lease (30+10) plus a 20-year extension and final payment due only after inspection and key handover. Returns are 'up to 12% a year' with no guarantee wording; no price, permit number, plans or progress published (checked 31 Oct 2026)",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": "leasehold",
+   "lease_base": 40,
+   "extension": "+20 years 'guaranteed extension' (40 = 30+10 included in price)",
+   "guaranteed_language": false,
+   "yield_pct": 12,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": "Final payment only after unit quality inspection and key handover",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "'EVERYTHING IS LEGAL' block lists due diligence, land certificate and lease agreements but no PBG/IMB number",
+   "escrow": null,
+   "progress": null,
+   "plans": "Unit sizes only, no plan drawings",
+   "record": null,
+   "returns": "'Earn up to 12% a year'; the word 'guaranteed' is used only for the 20-year lease extension"
+  },
+  "positives": [
+   "Final payment held until inspection and key handover",
+   "Lease term and extension stated (40+20)"
+  ],
+  "flags": [],
+  "sources": [
+   "https://every-bali.com"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "j-hills",
+  "url": "https://worldestate.homes/en/indonesia/bali/j-hills/",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "from $99,900, units from 22 m2, 1-2 bedrooms",
+   "delivery Q2 2027",
+   "lease 33+26 years",
+   "payment plan 35% then 65% in 7 interest-free payments",
+   "developer named: PT Homevibe Development Group"
+  ],
+  "note": "High-rise apartments and townhouses in Jimbaran by PT Homevibe Development Group from $99,900, Q2 2027 delivery and a 33+26-year lease, per agency listings; no developer website, permit number, escrow, plans or progress found. The listing calls the developer 'proven' but names no completed project (checked 31 Oct 2026)",
+  "seed": {
+   "price": 99900,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 33,
+   "extension": "+26 years (33+26, per World Estate listing)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": "35% initial, 65% in 7 interest-free instalments",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": null,
+   "plans": "Layouts offered only via 'Find out the cost' request",
+   "record": "Listing claims 'proven track record and successful projects in Bali' without naming any",
+   "returns": "OffPlan: Est. ROI 'On request'; no guarantee wording"
+  },
+  "positives": [
+   "Lease term with extension stated (33+26)",
+   "Interest-free instalment plan published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://worldestate.homes/en/indonesia/bali/j-hills/",
+   "https://offplan.so/projects/j-hills-jimbaran"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "lyvin-uluwatu",
+  "url": "https://lyvinproperties.co/uluwatu",
+  "docs_url": "https://lyvinproperties.co/uluwatu",
+  "permit_number": null,
+  "docs_listed": [
+   "44 apartments, 14 remaining",
+   "unit prices $396,000-$550,000 incl. 11% VAT; $3,963-$4,919 per m2",
+   "floor plans per apartment type (Tower A and B, 78.7-142.7 m2)",
+   "master plan",
+   "lease 35 years + 20-year priority extension (55 total)",
+   "completion Q4 2028",
+   "company NIB with OSS verification link",
+   "completed projects page"
+  ],
+  "note": "44-unit serviced apartment project in Pecatu by PT Lyvin Properties Indonesia, from $396,000 incl. VAT, Q4 2028 completion, 35+20-year sublease, with floor plans and a company NIB linked to the government OSS verifier. Lyvin lists Melasti Apartments, Melasti Villas and Lyvin Bingin as completed and operating; no escrow or construction progress published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 396000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 35,
+   "extension": "+20 years priority right to extend (55 total)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Completed projects page: Lyvin Melasti Apartments (operating since 2024), Lyvin Melasti Villas (25 villas, since 2025), Lyvin Bingin (since 2026)",
+   "units": 44,
+   "payment_plan": null,
+   "price_per_m2": 3963
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Footer 'NIB 2302220057448' for PT Lyvin Properties Indonesia, linked to ui-login.oss.go.id verification; this is the developer's business ID, not a PBG",
+   "escrow": null,
+   "progress": null,
+   "plans": "Floor plans for Tower A and Tower B unit types with areas",
+   "record": "lyvinproperties.co/completed lists three operating projects with start years",
+   "returns": "Financial model on request; no guarantee wording"
+  },
+  "positives": [
+   "Developer NIB published with government OSS verification link",
+   "Floor plans and price per m2 published",
+   "Lease term and extension stated (35+20)",
+   "Three completed and operating projects named",
+   "Developer company business ID (NIB 2302220057448) published with a link to the government OSS check"
+  ],
+  "flags": [],
+  "sources": [
+   "https://lyvinproperties.co/uluwatu",
+   "https://lyvinproperties.co/completed"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "magnum-resort-sanur",
+  "url": "https://magnumestate.com/projects/sanur",
+  "docs_url": "https://magnumestate.com/projects/sanur",
+  "permit_number": null,
+  "docs_listed": [
+   "from $531,000 (1BR 101 m2), 2BR from $1,050,000, penthouse 337 m2",
+   "projected ROI 11.6% (9.5% year 1 to 13.5% year 5), 'projections are estimates'",
+   "property ownership term 50 years",
+   "0% instalment plan from 18 months",
+   "floor plans on request",
+   "developer page: 'every project is built under its own PBG' (no number)"
+  ],
+  "note": "Oceanfront apartment resort in Sanur by Magnum Estate (site operated by PT Indonesia Capital Sanur) from $531,000 with a 50-year ownership term, 18-month 0% instalments and an 11.6% projected ROI marked as estimates. Magnum says each project has its own PBG and names Magnum Resort Berawa among delivered work, but publishes no permit number, escrow, plans or Sanur progress (checked 31 Oct 2026)",
+  "seed": {
+   "price": 531000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 50,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 11.6,
+   "completion": "2027",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Magnum developer page: 'delivered 8 projects and 575 units since 2019' (also described as delivered or under construction); names Magnum Resort Berawa (190 m rooftop pool) as an operating project",
+   "units": null,
+   "payment_plan": "0% instalment plan from 18 months",
+   "price_per_m2": 5257
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "magnumestate.com/bali-real-estate-developer: 'Every project is built under its own Indonesian building permit (PBG)', no number; footer shows only an NPWP tax number for PT Indonesia Capital Sanur",
+   "escrow": null,
+   "progress": null,
+   "plans": "'View floor plan & prices' and 'Full presentation, floor plan and private terms' on request",
+   "record": "Projects page: 'has delivered 8 projects and 575 units since 2019'; Magnum Resort Berawa named",
+   "returns": "'Projected ROI 11.6%' and 'Projections are estimates and may vary'"
+  },
+  "positives": [
+   "Developer with named operating projects in Bali",
+   "Ownership term (50 years) and instalment terms stated",
+   "Returns labelled as projections"
+  ],
+  "flags": [
+   {
+    "text": "Regulator action reported at the same developer's Berawa project: Bali authorities and DPRD Bali members stopped work in Aug 2025 over missing Amdal and PBG documents (Bali.live; no developer response in the report). Not about the Sanur project.",
+    "source": "https://bali.live/p/construction-of-magnum-resort-in-bali-halted-due-to-lack-of-documentation"
+   }
+  ],
+  "sources": [
+   "https://magnumestate.com/projects/sanur",
+   "https://magnumestate.com/projects",
+   "https://magnumestate.com/bali-real-estate-developer",
+   "https://bali.live/p/construction-of-magnum-resort-in-bali-halted-due-to-lack-of-documentation"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "manta-livin",
+  "url": "https://bigbaligroup.com/manta-livin",
+  "docs_url": "https://bigbaligroup.com/manta-livin",
+  "permit_number": null,
+  "docs_listed": [
+   "unit layouts with room areas (30-144 m2)",
+   "master plan stage 1: 85 apartments, 16 Haven villas, 3 Delmar villas, 2 Shell villas",
+   "current prices from $110,000 (1.95 bln IDR), 30% first instalment",
+   "ROI 10-14% per type",
+   "construction start Q2 2026, completion Q4 2027",
+   "lease 25 years + 25-year 'guaranteed extension'",
+   "'Guaranteed return' heading"
+  ],
+  "note": "3D-printed wellness resort of 106 apartments and villas on a Bukit cliff by BIG BALI GROUP, current prices from $110,000, construction from Q2 2026 to Q4 2027 and a 25+25-year lease. Layouts are published, but the page carries a 'Guaranteed return' heading and no permit number, escrow, progress or delivered projects (checked 31 Oct 2026)",
+  "seed": {
+   "price": 110000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 25,
+   "extension": "+25 years 'guaranteed extension' (25+25)",
+   "guaranteed_language": true,
+   "yield_pct": 14,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 106,
+   "payment_plan": "30% first instalment, instalments up to 24 months",
+   "price_per_m2": 3667
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": false,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Only 'Pink zone, fully compliant with all legal and environmental standards'; no number",
+   "escrow": null,
+   "progress": "Only planned dates (construction start 2Q 2026)",
+   "plans": "Layout tabs with room-by-room areas for Seaborne, Swell, Shell, Haven and Delmar units",
+   "record": null,
+   "returns": "Page section headed 'Guaranteed return'; ROI 'from 10-14%'"
+  },
+  "positives": [
+   "Unit layouts with room areas published",
+   "Lease term and extension stated (25+25)"
+  ],
+  "flags": [],
+  "sources": [
+   "https://bigbaligroup.com/manta-livin",
+   "https://offplan.so/projects/manta-livin-uluwatu"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "nara-villas",
+  "url": "https://www.balitecture.com/developments/nara-villas",
+  "docs_url": "https://www.balitecture.com/developments/nara-villas",
+  "permit_number": null,
+  "docs_listed": [
+   "6 villas, 3 sold; 2BR from $269,000 (153 m2), 3BR $329,000 (226 m2)",
+   "lease 30+30 years",
+   "completion Q4 2027",
+   "masterplan",
+   "10-14% projected return, 'Projections, not guarantees'",
+   "$5,000 deposit refundable for 14 days; five 20% progress payments by bill of quantities",
+   "floor plans only in brochure"
+  ],
+  "note": "Six pre-sale villas in Uluwatu by Balitecture from $269,000 on a 30+30-year lease with Q4 2027 completion, five 20% payments tied to construction and returns labelled 'projections, not guarantees'. Balitecture lists sold-out completed communities (Dasa Uluwatu, Casa Uluwatu, Sapta Cemagi and others) but publishes no permit number, escrow, progress or floor plans (checked 31 Oct 2026)",
+  "seed": {
+   "price": 269000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "+30 years (30+30)",
+   "guaranteed_language": false,
+   "yield_pct": 14,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Balitecture portfolio 'Completed & Sold Out' developments: Dasa Uluwatu (12 villas), Casa Uluwatu (8), Desa Hut (7), Sapta Cemagi (7), Casa Cemagi, Tukad Huts; claims 200+ villas designed and delivered",
+   "units": 6,
+   "payment_plan": "$5,000 refundable deposit, then five 20% progress payments tied to construction (bill of quantities)",
+   "price_per_m2": 1758
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "'Pink Zone - legally licensed for short-term rentals' and SIUP-4 licence mentioned, no permit number",
+   "escrow": "Only a $5,000 deposit refundable for 14 days or until signing; no escrow",
+   "progress": "Drone footage of the empty plot ('The Site Today'), undated",
+   "plans": "Masterplan only; floor plans in downloadable brochure",
+   "record": "balitecture.com/portfolio 'Completed & Sold Out' past developments list",
+   "returns": "'10 to 14% projected annual return ... Projections, not guarantees'"
+  },
+  "positives": [
+   "Lease term and extension stated (30+30)",
+   "Payments tied to construction progress",
+   "Completed prior developments named",
+   "Returns explicitly labelled as not guaranteed"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.balitecture.com/developments/nara-villas",
+   "https://www.balitecture.com/portfolio"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "natha-loka",
+  "url": "https://realestate.sevenstonesindonesia.com/natha-loka/",
+  "docs_url": "https://realestate.sevenstonesindonesia.com/natha-loka/",
+  "permit_number": null,
+  "docs_listed": [
+   "8-hectare eco village in Kemetug, Tabanan",
+   "1BR from $191,000 (90 m2 build, 1,000 m2 land), 2BR $265,000, 3BR $340,000",
+   "30-year leasehold, transferable",
+   "ROI forecast 14-17% (7-14% passive income) based on 50% occupancy",
+   "brochure download"
+  ],
+  "note": "Jungle villa eco village in Tabanan marketed by Seven Stones Indonesia from $191,000 on a 30-year transferable leasehold, with a 14-17% ROI forecast based on 50% occupancy. No permit number, escrow, progress, floor plans, completion date or delivered projects published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 191000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 17,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": "'Flexible payment options' (no schedule)",
+   "price_per_m2": 2122
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": null,
+   "plans": "Only build and land sizes per type",
+   "record": null,
+   "returns": "'ROI Forecast 14%-17%' and '*based on 50% monthly room occupancy'; no guarantee"
+  },
+  "positives": [
+   "Lease term (30 years) and per-type prices and sizes published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://realestate.sevenstonesindonesia.com/natha-loka/",
+   "https://offplan.so/projects/natha-loka-tabanan"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "oasis-iii",
+  "url": "https://breig-property.com/projects/oasis-iii",
+  "docs_url": "https://breig-property.com/projects/oasis-iii",
+  "permit_number": null,
+  "docs_listed": [
+   "status: Construction",
+   "smart villas/townhouses from $360,000 (91 m2)",
+   "12-14% ROI forecast",
+   "completion Q4 2026",
+   "30% down payment",
+   "floor plans, legal documents and financial model on request",
+   "completed BREIG projects listed"
+  ],
+  "note": "Apartments and smart villas in Berawa by BREIG from $360,000 with Q4 2026 completion, status 'Construction' and 12-14% ROI forecast; floor plans and 'developer contracts and licences' only on request. BREIG lists many completed projects, but the footer NIB is for the website/marketing operator, not this project (checked 31 Oct 2026)",
+  "seed": {
+   "price": 360000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 14,
+   "completion": "2026-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "BREIG site lists completed projects: Aquamarine I-III, Baliwood I-II, Garden Villa I-II, Oasis I, II and IV, Red Sunset I-II, River Villa, VESNA",
+   "units": null,
+   "payment_plan": "30% down payment",
+   "price_per_m2": 3956
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Legal documents on request; footer NIB 0106220001589 belongs to PT Next Level Group as website/marketing operator",
+   "escrow": null,
+   "progress": "Status label 'Construction' only, no dated update or %",
+   "plans": "'Request floor plans' only",
+   "record": "Projects page cards marked Completed (Aquamarine I-III, Baliwood I-II, etc.)",
+   "returns": "'Annual yield (ROI) 12-14%'; no guarantee"
+  },
+  "positives": [
+   "Developer lists many completed Bali projects including earlier Oasis phases"
+  ],
+  "flags": [],
+  "sources": [
+   "https://breig-property.com/projects/oasis-iii",
+   "https://breig-property.com/projects"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "octasun",
+  "url": "https://sevensky-bali.com/octasun",
+  "docs_url": "https://sevensky-bali.com/octasun",
+  "permit_number": null,
+  "docs_listed": [
+   "26 villas, 5 types 120-180 m2, prices $536,000-$938,000",
+   "master plan",
+   "construction timeline with completed stages (earthworks Q1 2025 to electrical Q3 2025), interior finishing Q2 2026, completion Q1 2027",
+   "ready show unit",
+   "up to 12% annually in USD",
+   "developer About page lists PBG and OSS certificates (no numbers in text)",
+   "press links"
+  ],
+  "note": "26-villa complex near Pandawa Beach by Seven Sky Villas, now priced from $536,000, with a dated construction timeline (structure, roof and electrical completed in 2025, interior finishing in Q2 2026, completion Q1 2027) and a ready show unit. The developer lists a PBG and OSS certificate among its licences but no number appears in the page text (checked 31 Oct 2026)",
+  "seed": {
+   "price": 536000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 12,
+   "completion": "2027-Q1",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 26,
+   "payment_plan": null,
+   "price_per_m2": 4123
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "About page: 'Building construction permit - PBG' and 'PBG License Document' listed, no number in text",
+   "escrow": null,
+   "progress": "OctaSun 'Construction Process': earthworks and foundations completed 1Q 2025, frame and walls 2Q 2025, roof and electrical 3Q 2025, interior finishing 'right now' 2Q 2026, completion 1Q 2027",
+   "plans": "Master plan and villa sizes only",
+   "record": "About page lists a 'Completed - Townhouses' project without name, location or units",
+   "returns": "'Up to 12% annually in USD'; no guarantee"
+  },
+  "positives": [
+   "Dated stage-by-stage construction timeline",
+   "Show unit built and open for viewing",
+   "Per-villa prices and sizes published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://sevensky-bali.com/octasun",
+   "https://sevensky-bali.com/about",
+   "https://offplan.so/projects/octa-sun-residence-pandawa"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "prive-pererenan",
+  "url": "https://urbanescape.id/prive-en/",
+  "docs_url": "https://urbanescape.id/prive-en/",
+  "permit_number": null,
+  "docs_listed": [
+   "18 villas, 1-4 BR, 73-261 m2",
+   "prices from 4.48 bln IDR (1BR) to 12.63 bln IDR (4BR)",
+   "completion Q3 2027",
+   "leasehold 32 years after key handover + 25-year priority extension",
+   "ROI scenarios 10.6-12.1% (realistic/optimistic), payback 8-11 years",
+   "PBG claimed, no number",
+   "100% self-financed by owner",
+   "previous projects named: Berawa Week, Bingin Elements"
+  ],
+  "note": "18 double-height villas in Pererenan by Urban Escape from 4.48 bln IDR, completion Q3 2027, on a 32-year lease counted from key handover plus a 25-year priority extension. The page says construction runs under a government-issued PBG and names prior projects Berawa Week and Bingin Elements, but shows no permit number, escrow, progress or floor plans (plans are in the gated deck) (checked 31 Oct 2026)",
+  "seed": {
+   "price": 4480000000,
+   "currency": "IDR",
+   "title": "leasehold",
+   "lease_base": 32,
+   "extension": "+25 years priority extension; 32 years counted from key handover",
+   "guaranteed_language": false,
+   "yield_pct": 12.1,
+   "completion": "2027-Q3",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Urban Escape cites its past projects Berawa Week and Bingin Elements as operating with payouts to owners (Privé page)",
+   "units": 18,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "'Government-Issued Construction Permit (PBG) - All construction is backed by an official state permit'; no number shown",
+   "escrow": "States project is 100% self-financed by the owner; no escrow or bank guarantee",
+   "progress": null,
+   "plans": "Unit types and sizes listed; layout images are interior renders, floor plans only in the downloadable deck",
+   "record": "'proven through our past success with Berawa Week and Bingin Elements'",
+   "returns": "ROI scenarios (pessimistic to optimistic, 10.6% realistic); the word 'guarantees' is used only about self-financing"
+  },
+  "positives": [
+   "Lease term with extension stated and counted from handover (32+25)",
+   "Prior Urban Escape projects named",
+   "Unit prices and sizes per type published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://urbanescape.id/prive-en/",
+   "https://urbanescape.id/ru/prive/"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "secret-inshi",
+  "url": "https://worldestate.homes/en/indonesia/bali/secret-by-inshi/",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "villas, apartments and penthouses in Ubud, 1-3 BR from 41.49 m2",
+   "from $95,400",
+   "delivery Q1 2027",
+   "30% initial payment, 70% in 0% instalments up to two years",
+   "developer named: INSHI Development and PREDMET.CONSTRUCTION"
+  ],
+  "note": "Jungle-view villas, apartments and penthouses in Ubud by INSHI Development with PREDMET.CONSTRUCTION, from $95,400, delivery Q1 2027 and a 30/70 instalment plan, per agency listings. No developer website, lease term, permit number, escrow, plans or progress found (checked 31 Oct 2026)",
+  "seed": {
+   "price": 95400,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": "30% initial, 70% in 0% instalments up to two years",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": null,
+   "plans": "Layouts offered only on request ('Get prices and layouts')",
+   "record": null,
+   "returns": "OffPlan: Est. ROI 'On request'; no guarantee wording"
+  },
+  "positives": [
+   "Interest-free instalment plan published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://worldestate.homes/en/indonesia/bali/secret-by-inshi/",
+   "https://offplan.so/projects/secret-by-inshi-ubud"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "segara",
+  "url": "https://axoradevelopments.com",
+  "docs_url": "https://axoradevelopments.com",
+  "permit_number": null,
+  "docs_listed": [
+   "78 beachfront studios, apartments and penthouses in Seseh, Phase 1 releasing",
+   "leasehold-with-extension structure (term not shown), PT PMA option",
+   "price list, floor plans and payment plans only in emailed brochure",
+   "developer claims 158,000+ sqm delivered and 140 completed units"
+  ],
+  "note": "78-residence beachfront project in Seseh by Axora Developments, Phase 1 now releasing, with prices, floor plans and payment terms only in an emailed brochure. Axora claims 140 completed units but names no completed project; no permit number, escrow, progress or lease term on the page (checked 31 Oct 2026)",
+  "seed": {
+   "price": 79000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 34,
+   "extension": "extension offered (term not stated on current page)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 78,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": null,
+   "plans": "Floor plans listed as brochure content behind a form",
+   "record": "Claims '158,000+ sqm delivered' and '140 completed units' without naming completed projects",
+   "returns": "No yield or guarantee wording on page"
+  },
+  "positives": [
+   "In-house design, build and rental management stated"
+  ],
+  "flags": [],
+  "sources": [
+   "https://axoradevelopments.com"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "serenity-village",
+  "url": "https://www.globalbalihome.com/project-serenity-village.html",
+  "docs_url": "https://www.globalbalihome.com/project-serenity-village.html",
+  "permit_number": null,
+  "docs_listed": [
+   "25 villas (1-2 BR), 6 available",
+   "entry from Rp 2.27-2.3B",
+   "handover Q3 2027",
+   "notarized 30-year leasehold with extension rights",
+   "construction insured (Allianz named as insurance partner on About page)",
+   "master plan",
+   "page last updated May 2026"
+  ],
+  "note": "25-villa entry-level complex near Ubud by Global Bali Home from Rp 2.27B, Q3 2027 handover, on a notarized 30-year lease with extension rights and insured construction. Only a master plan is shown; no permit number, escrow, dated progress or completed Global Bali Home project is published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 2270000000,
+   "currency": "IDR",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "extension rights (homepage); 30+30 stated for sister project",
+   "guaranteed_language": false,
+   "yield_pct": 15,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 25,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": "Construction insurance (Allianz partner) stated, but no escrow, bank guarantee or deposit insurance",
+   "progress": "Only 'Last updated: May 2026' page stamp; no construction updates",
+   "plans": "Master plan image only; 'Layouts & Interiors' is a photo gallery",
+   "record": "About page credits partner contractors' past resorts, not completed Global Bali Home developments",
+   "returns": "Homepage '10-15% annual yield' and '~80% projected occupancy'; no guarantee wording"
+  },
+  "positives": [
+   "Notarized 30-year lease with extension rights",
+   "Construction insurance stated",
+   "Unit availability shown"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.globalbalihome.com/project-serenity-village.html",
+   "https://www.globalbalihome.com",
+   "https://www.globalbalihome.com/about.html"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "suku-residences",
+  "url": "https://www.balitecture.com/developments/suku-residences",
+  "docs_url": "https://www.balitecture.com/developments/suku-residences",
+  "permit_number": null,
+  "docs_listed": [
+   "9 villas, 7 reserved; 3BR from $355,000 (236 m2), 4BR $649,000 (312 m2)",
+   "lease 30+30 years",
+   "start early 2026, completion mid 2027",
+   "site masterplan",
+   "$5,000 deposit, five 20% progress payments",
+   "floor plans only in brochure"
+  ],
+  "note": "Nine-villa wellness community in Uluwatu by Balitecture from $355,000 on a 30+30-year lease, start early 2026 and completion mid 2027, with 7 of 9 reserved. Payments are five 20% instalments tied to construction; no permit number, escrow, dated progress or floor plans on the page (checked 31 Oct 2026)",
+  "seed": {
+   "price": 355000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "+30 years (30+30)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Balitecture portfolio 'Completed & Sold Out' developments: Dasa Uluwatu (12 villas), Casa Uluwatu (8), Desa Hut (7), Sapta Cemagi (7), Casa Cemagi, Tukad Huts",
+   "units": 9,
+   "payment_plan": "$5,000 deposit, then five 20% progress payments tied to construction milestones",
+   "price_per_m2": 1504
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Pink Zone compliance claimed, no permit number",
+   "escrow": "Only a refundable $5,000 reservation deposit",
+   "progress": "FAQ promises 'regular site updates' to buyers; none published",
+   "plans": "Site plan and masterplan only; floor plans in brochure",
+   "record": "balitecture.com/portfolio past developments marked Sold Out",
+   "returns": "No guarantee wording on the Suku page"
+  },
+  "positives": [
+   "Lease term and extension stated (30+30)",
+   "Payments tied to construction milestones",
+   "Completed prior developments named"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.balitecture.com/developments/suku-residences",
+   "https://www.balitecture.com/portfolio"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "temple-heights",
+  "url": "https://investlandbali.com/listing/temple-heights",
+  "docs_url": "https://investlandbali.com/listing/temple-heights",
+  "permit_number": null,
+  "docs_listed": [
+   "15 loft and riverside villas, unit availability table",
+   "prices from $182,000 (Rp 3.22B), riverside $220,000",
+   "floor plans per unit type (loft and riverside)",
+   "master plan",
+   "lease 25+25 years",
+   "project timeline bar at 40%, handover January 2027",
+   "payment: 10% refundable booking, 50% first payment, monthly instalments, last payment on handover",
+   "net annual ROI from 9.34%"
+  ],
+  "note": "15 two-bedroom riverside lofts in Padonan by Investland Bali from $182,000, 25+25-year lease, handover January 2027, with unit floor plans, a live availability table and a project timeline at 40%. Investland's Amari Villas I is shown 100% completed; no permit number or escrow published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 182000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 25,
+   "extension": "+25 years (25+25, 50 total)",
+   "guaranteed_language": false,
+   "yield_pct": 9.34,
+   "completion": "2027-01",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 40,
+   "developer_delivered": "Investland site shows Amari Villas I (12 villas, Padonan) with project timeline 100% 'Completed'",
+   "units": 15,
+   "payment_plan": "10% refundable booking fee, 50% first payment (incl. booking), monthly payments during construction, last payment on handover",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit number on listing",
+   "escrow": "Booking fee refundable during due diligence only; no escrow",
+   "progress": "Listing project timeline progress bar at 40% with handover January 2027",
+   "plans": "Floor Plan 'View' per unit links to loft-floor-plan.jpg and riverside-floor-plan.jpg",
+   "record": "investlandbali.com/listing/amari-villas-i timeline 100 'Completed'",
+   "returns": "'From 9.34% net Annual ROI'; no guarantee wording"
+  },
+  "positives": [
+   "Construction progress percentage published",
+   "Floor plans and unit-level availability",
+   "Lease term and extension stated (25+25)",
+   "Final payment due on handover"
+  ],
+  "flags": [],
+  "sources": [
+   "https://investlandbali.com/listing/temple-heights",
+   "https://investlandbali.com/listing/amari-villas-i"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "vodopad",
+  "url": "https://movepropertygroup.com",
+  "docs_url": "https://movepropertygroup.com",
+  "permit_number": null,
+  "docs_listed": [
+   "22 apartments, 34-55 m2, from $69,000 (studio), $82,000 panoramic, $89,000 two-room",
+   "readiness 95%, handover 2026",
+   "leasehold 30 years + 25 extension",
+   "yield scenarios 11.5-18.5% (realistic 14.9%)",
+   "site plan aerial view",
+   "portfolio of built and operating projects in Ubud (AURA, GANIYAR, KELIKI, MASON Ubud)"
+  ],
+  "note": "22-apartment boutique residence by a waterfall in Ubud by MOVE Property Group, from $69,000, stated 95% ready with 2026 handover and a 30+25-year lease. MOVE names four built and operating Ubud projects, but the page says 'returns are ensured' (Russian: 'доходность обеспечена') and shows no permit number, escrow or unit floor plans (checked 31 Oct 2026)",
+  "seed": {
+   "price": 69000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "+25 years (30+25)",
+   "guaranteed_language": true,
+   "yield_pct": 14.9,
+   "completion": "2026",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 95,
+   "developer_delivered": "MOVE portfolio 'already built and operating in Ubud': AURA Apartments (8 units), GANIYAR townhouses (3), KELIKI Apartments (4), MASON Ubud boutique hotel (5 rooms)",
+   "units": 22,
+   "payment_plan": null,
+   "price_per_m2": 2029
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Page states 'Готовность 95%' (95% ready) and 'Сдача 2026'",
+   "plans": "Unit types with prices and an aerial site plan; no unit floor-plan drawings",
+   "record": "Portfolio block lists AURA, GANIYAR, KELIKI and MASON Ubud as built and operating, with occupancy figures",
+   "returns": "Management section: 'Капитал размещён, доходность обеспечена' (capital placed, returns ensured) and 'гарантия дальнейшего успешного управления'"
+  },
+  "positives": [
+   "Construction 95% complete per developer",
+   "Four completed and operating developer projects named",
+   "Lease term and extension stated (30+25)"
+  ],
+  "flags": [],
+  "sources": [
+   "https://movepropertygroup.com"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "avalon-om-club-house",
+  "url": "https://avalonbali.com/projects/om",
+  "docs_url": "https://avalonbali.com/news/permit-granted",
+  "permit_number": null,
+  "docs_listed": [
+   "18 apartments (1-2 BR), from $240,000 (3.9B IDR) incl. taxes",
+   "progress 90%",
+   "completion 2026",
+   "leasehold 25+25 years",
+   "projected ROI 12% with forecast table",
+   "news: building permit granted 22 Oct 2023 (no number)",
+   "dated construction news (concrete frame Dec 2024, glazing Feb 2025, final checks 6 Sep 2026)",
+   "Ribas Hotels management"
+  ],
+  "note": "18-apartment club house in Berawa by Avalon from $240,000 (3.9B IDR), shown 90% complete with 2026 completion, a 25+25-year lease and a dated news log (permit granted Oct 2023, frame done Dec 2024, final checks Sep 2026). The permit news gives no PBG number; no escrow, floor plans or completed earlier project (checked 31 Oct 2026)",
+  "seed": {
+   "price": 240000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 25,
+   "extension": "+25 years (25+25)",
+   "guaranteed_language": false,
+   "yield_pct": 12,
+   "completion": "2026",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 90,
+   "developer_delivered": null,
+   "units": 18,
+   "payment_plan": null,
+   "price_per_m2": 3871
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "News 'Permit Granted' (22 Oct 2023): OM 'has officially received its building permit'; no permit number shown",
+   "escrow": null,
+   "progress": "Project page 'Progress 90%'; news 'OM Club House: Final Checks' dated 6 September 2026",
+   "plans": "Apartment sizes only (62 m2), no plan drawings",
+   "record": "OM is Avalon's first project per its news log; no completed project named",
+   "returns": "'12% Projected ROI'; site articles state figures 'are not guaranteed'"
+  },
+  "positives": [
+   "Construction progress % and dated news log",
+   "Permit grant announced with date",
+   "Lease term and extension stated (25+25)"
+  ],
+  "flags": [],
+  "sources": [
+   "https://avalonbali.com/projects/om",
+   "https://avalonbali.com/news/permit-granted",
+   "https://avalonbali.com/news"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "avalon-buddha-club-house",
+  "url": "https://avalonbali.com/projects/buddha",
+  "docs_url": "https://avalonbali.com/news/buddha-club-house-latest-construction-update",
+  "permit_number": null,
+  "docs_listed": [
+   "130 apartments, from $128,000 (2.1B IDR) incl. taxes",
+   "completion 2028",
+   "leasehold 32+32 years",
+   "projected ROI 12-15%, 85% occupancy forecast",
+   "dated construction updates (latest 23 Jul 2026)",
+   "Ribas management"
+  ],
+  "note": "130-unit apart-hotel in Berawa by Avalon from $128,000 (2.1B IDR), 32+32-year lease and 2028 completion, with dated construction updates on the developer news page (latest 23 July 2026). No permit number, escrow, floor plans or progress percentage published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 128000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 32,
+   "extension": "+32 years (32+32)",
+   "guaranteed_language": false,
+   "yield_pct": 15,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 130,
+   "payment_plan": null,
+   "price_per_m2": 4267
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "News 'Buddha Club House: Latest Construction Update' dated 23 July 2026 (piles, capping beam, concrete tests); no %",
+   "plans": "Unit sizes only (30-33 m2)",
+   "record": "No completed Avalon project named",
+   "returns": "'12% Projected ROI'; no guarantee wording"
+  },
+  "positives": [
+   "Dated construction updates",
+   "Lease term and extension stated (32+32)"
+  ],
+  "flags": [],
+  "sources": [
+   "https://avalonbali.com/projects/buddha",
+   "https://avalonbali.com/news/buddha-club-house-latest-construction-update"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "amari-villas-iii",
+  "url": "https://investlandbali.com/listing/amari-villas-iii",
+  "docs_url": "https://investlandbali.com/listing/amari-villas-iii",
+  "permit_number": null,
+  "docs_listed": [
+   "1-bed loft villas from $171,360 (Rp 3.01B), 50.4 m2 units",
+   "ground and first floor plans",
+   "unit table (sold/booked)",
+   "project timeline bar at 60%, handover Q2 2026",
+   "lease 25+15 years",
+   "payment: 10% refundable booking, 50% first payment, monthly, last on handover",
+   "net ROI from 9.93%"
+  ],
+  "note": "1-bed loft villas in Padonan by Investland Bali from $171,360 with ground and first floor plans, a unit table now showing all units sold or booked and a timeline bar at 60% against a Q2 2026 handover. Amari Villas I is shown 100% completed; no permit number or escrow published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 171360,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 25,
+   "extension": "+15 years (25+15)",
+   "guaranteed_language": false,
+   "yield_pct": 9.93,
+   "completion": "2026-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 60,
+   "developer_delivered": "Investland site shows Amari Villas I (12 villas, Padonan) with project timeline 100% 'Completed'",
+   "units": 25,
+   "payment_plan": "10% refundable booking fee, 50% first payment, monthly payments during construction, last payment on handover",
+   "price_per_m2": 3400
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Listing project timeline progress bar at 60% (handover Q2 2026, not marked complete)",
+   "plans": "GF-PLAN and FF-PLAN images on listing",
+   "record": "investlandbali.com/listing/amari-villas-i timeline 100 'Completed'",
+   "returns": "'From 9.93% net Annual ROI'; no guarantee wording"
+  },
+  "positives": [
+   "Construction progress percentage published",
+   "Floor plans published",
+   "Final payment due on handover",
+   "Prior phase shown completed"
+  ],
+  "flags": [],
+  "sources": [
+   "https://investlandbali.com/listing/amari-villas-iii",
+   "https://investlandbali.com/listing/amari-villas-i"
+  ],
+  "status": "sold out"
+ },
+ {
+  "slug": "element-residence-bali",
+  "url": "https://investlandbali.com/listing/element-residence-bali",
+  "docs_url": "https://investlandbali.com/listing/element-residence-bali",
+  "permit_number": null,
+  "docs_listed": [
+   "107 apartments, 40-163 m2, from $167,637 (Rp 2.97B)",
+   "'Building Permit (PBG) Obtained' (no number)",
+   "50-year leasehold",
+   "contractual 10% net annual return for first five years (Cross Hotels management)",
+   "contractor named: Pulau Intan",
+   "payment: $3,000 booking, 50% first payment, monthly, last on handover"
+  ],
+  "note": "107-apartment project in Nelayan, Canggu by Investland Bali with Wahi Group from $167,637 on a 50-year leasehold, stating 'PBG obtained' without a number and offering 'a contractual 10% net annual return for the first five years'. No escrow, progress figure, floor plans or completion date published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 167637,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 50,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 10,
+   "completion": null,
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Investland site shows Amari Villas I (12 villas, Padonan) with project timeline 100% 'Completed'",
+   "units": 107,
+   "payment_plan": "$3,000 refundable booking fee, 50% first payment, monthly payments during construction, last payment on handover",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "'Building Permit (PBG) Obtained - Fully Certified and Legally Secure', no number",
+   "escrow": null,
+   "progress": "No timeline shown on this listing",
+   "plans": "No floor plan images on listing",
+   "record": "Investland Amari Villas I shown 100% completed",
+   "returns": "'deliver a contractual 10% net annual return for the first five years'"
+  },
+  "positives": [
+   "PBG stated as obtained before construction",
+   "Named tier-one contractor (Pulau Intan)",
+   "Final payment due on handover"
+  ],
+  "flags": [],
+  "sources": [
+   "https://investlandbali.com/listing/element-residence-bali",
+   "https://investlandbali.com",
+   "https://investlandbali.com/listing/amari-villas-i"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "the-one-by-almal-nusa-dua",
+  "url": "https://opr.ae/projects/the-one-almal-nusa-dua-bali",
+  "docs_url": "https://www.theonebyalmal.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "studios from $98,371; 1BR from $180,320; 2BR villas from $476,675",
+   "handover Q3 2027",
+   "leasehold 25+15 years",
+   "projected ROI 17-22% at 75-82% occupancy (developer calculation)",
+   "18-month plan: 25% on signing, six 12.5% payments every 3 months",
+   "floor plans behind a lead form",
+   "contractor named: 888 Design & Build with D-Group",
+   "Wyndham Registry Collection operator appointed (Mar 2026)"
+  ],
+  "note": "Studios, apartments, townhouses and villas in Nusa Dua by Dubai-based ALMAL Real Estate Development, from $98,371 on a 25+15-year lease, Q3 2027 handover and an 18-month instalment plan, with Wyndham's Registry Collection appointed as operator in March 2026. The developer site shows only contact details; no permit number, escrow, progress, open floor plans or completed Bali project found (checked 31 Oct 2026)",
+  "seed": {
+   "price": 98371,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 25,
+   "extension": "+15 years (25+15)",
+   "guaranteed_language": false,
+   "yield_pct": 22,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 154,
+   "payment_plan": "25% on signing, then six payments of 12.5% every three months (18 months)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Antara related-news list shows a headline that ALMAL 'Secures Building Permit' (16 Oct 2026), but no permit number was found",
+   "escrow": null,
+   "progress": null,
+   "plans": "'Download All Floor Plans' opens a lead-capture modal",
+   "record": "OPR cites 'over USD 2B in delivered project value' without naming a delivered project; its listed RAK hotel is not yet handed over",
+   "returns": "'Projected ROI: 17-22%' from developer calculations; not presented as guaranteed"
+  },
+  "positives": [
+   "Named international hotel operator (Wyndham Registry Collection)",
+   "Instalment schedule and lease term published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.theonebyalmal.com/",
+   "https://opr.ae/projects/the-one-almal-nusa-dua-bali",
+   "https://en.antaranews.com/amp/news/408758/almal-real-estate-development-appoints-wyndham-hotels-resorts-for-the-one-by-almal-bali-nusa-dua-a-registry-collection-hotel",
+   "https://www.bernama.com/lite/news.php?id=2534008"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "sanuuri-riverside-residences",
+  "url": "https://investlandbali.com/listing/sanuuri",
+  "docs_url": "https://investlandbali.com/listing/sanuuri",
+  "permit_number": null,
+  "docs_listed": [
+   "18 villas and lofts plus apartments, 46-124 m2",
+   "from $147,725",
+   "floor plans for loft, apartment and villa types",
+   "masterplan",
+   "50-year leasehold"
+  ],
+  "note": "Serviced apartments, lofts and pool villas two minutes from Sanur beach by Investland Bali from $147,725 on a 50-year leasehold, with floor plans and a masterplan on the listing. Investland's Amari Villas I is shown completed; no permit number, escrow, progress or completion date published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 147725,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 50,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Investland site shows Amari Villas I (12 villas, Padonan) with project timeline 100% 'Completed'",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": null,
+   "plans": "Floor plan images on listing (loft-floorplan1, unit6-floorplan, villa1-floorplan, villa3-floorplan1) and masterplan",
+   "record": "Investland Amari Villas I shown 100% completed",
+   "returns": "No guarantee wording"
+  },
+  "positives": [
+   "Floor plans for each unit type published",
+   "Lease term stated (50 years)",
+   "Prior Investland project shown completed"
+  ],
+  "flags": [],
+  "sources": [
+   "https://investlandbali.com/listing/sanuuri",
+   "https://investlandbali.com/listing/amari-villas-i"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "breig-edem-i-villas",
+  "url": "https://breig-property.com/projects/edem-i-villas",
+  "docs_url": "https://breig-property.com/projects/edem-i-villas",
+  "permit_number": null,
+  "docs_listed": [
+   "status: Construction",
+   "2BR villas 191 m2 from $357,500",
+   "11% ROI",
+   "completion Q3 2027",
+   "30% down payment",
+   "floor plans, legal documents and financial model on request"
+  ],
+  "note": "Greek-style private-pool villas in the Nusa Dua hills by BREIG from $357,500, status 'Construction', Q3 2027 completion and 30% down payment; plans and 'developer contracts and licences' only on request. The footer NIB 0106220001589 is PT Next Level Group as website/marketing operator, not a project permit (checked 31 Oct 2026)",
+  "seed": {
+   "price": 357500,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 11,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "BREIG site lists completed projects: Aquamarine I-III, Baliwood I-II, Garden Villa I-II, Oasis I, II and IV, Red Sunset I-II, River Villa, VESNA",
+   "units": null,
+   "payment_plan": "30% down payment",
+   "price_per_m2": 1872
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Footer NIB 0106220001589 is stated to belong to PT Next Level Group as operator of the website and marketing services; no project permit",
+   "escrow": null,
+   "progress": "Status label 'Construction' only",
+   "plans": "'Request floor plans' only",
+   "record": "Completed BREIG projects listed on the page",
+   "returns": "'Annual yield (ROI) 11%'; no guarantee"
+  },
+  "positives": [
+   "Developer lists many completed Bali projects"
+  ],
+  "flags": [],
+  "sources": [
+   "https://breig-property.com/projects/edem-i-villas",
+   "https://breig-property.com/projects"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "breig-edem-ii-santorini",
+  "url": "https://breig-property.com/projects/edem-ii-santorini",
+  "docs_url": "https://breig-property.com/projects/edem-ii-santorini",
+  "permit_number": null,
+  "docs_listed": [
+   "status: Sales Launch",
+   "condo villas from $94,950, apartments from $105,000, villas 1-3 BR",
+   "11-14% ROI",
+   "completion Q1-Q4 2028",
+   "30% down payment",
+   "floor plans, availability chart, legal documents on request"
+  ],
+  "note": "Sales-launch apartments, condo villas and villas in the Nusa Dua hills by BREIG from $94,950 with Q1-Q4 2028 completion and 11-14% ROI forecast; plans and legal documents only on request. The footer NIB is the website/marketing operator's, not a project permit (checked 31 Oct 2026)",
+  "seed": {
+   "price": 94950,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 14,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "BREIG site lists completed projects: Aquamarine I-III, Baliwood I-II, Garden Villa I-II, Oasis I, II and IV, Red Sunset I-II, River Villa, VESNA",
+   "units": null,
+   "payment_plan": "30% down payment",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Footer NIB 0106220001589 belongs to PT Next Level Group as website/marketing operator",
+   "escrow": null,
+   "progress": "Status 'Sales Launch'",
+   "plans": "'Request floor plans' only",
+   "record": "Completed BREIG projects listed on the page",
+   "returns": "'Annual yield (ROI) 11-14%'; no guarantee"
+  },
+  "positives": [
+   "Developer lists many completed Bali projects"
+  ],
+  "flags": [],
+  "sources": [
+   "https://breig-property.com/projects/edem-ii-santorini",
+   "https://breig-property.com/projects"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "lb-ubud-dream",
+  "url": "https://ubuddream.com/",
+  "docs_url": "https://loyobondar.com/en/",
+  "permit_number": null,
+  "docs_listed": [
+   "41 villas and apartments, 18-103 m2",
+   "apartments from 1.1 bln IDR (LB homepage)",
+   "layouts section per unit type",
+   "general plan",
+   "construction completion Q3 2027",
+   "payment: 30% down, five 14% payments every 3 months, last at transfer of rights",
+   "LB homepage construction feed Oct 2026: villa MEP 93%, partition walls 97%, roofing 94%, finishing 26%, apartment excavation 28%",
+   "LB completed projects listed"
+  ],
+  "note": "41 villas and apartments in Ubud by LOYO & BONDAR from 1.1 bln IDR, completion Q3 2027, with layouts, a quarterly instalment schedule and an October 2026 construction feed (villa roofing 94%, finishing 26%, apartment excavation 28%). LB lists five completed projects; no permit number, escrow or tenure published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 1100000000,
+   "currency": "IDR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "LB homepage 'Completed Projects': Jungle Flower Villas (Ubud), U Villas (Bukit), Loyo Villas (Ubud), Melasti Dream (Bukit), XO Canggu (Canggu)",
+   "units": 41,
+   "payment_plan": "30% down payment, then five 14% payments every 3 months, final at transfer of ownership rights",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "loyobondar.com 'Our Construction' October 2026: villa MEP 93%, partition walls 97%, roofing 94%, finishing 26%; apartment excavation 28% (no single overall %)",
+   "plans": "ubuddream.com 'Ubud Dream layouts' per unit type with areas",
+   "record": "LB homepage lists five completed projects by name",
+   "returns": "No yield guarantee on the project page"
+  },
+  "positives": [
+   "Dated, work-by-work construction percentages",
+   "Five completed developer projects named",
+   "Instalments tied to a published schedule"
+  ],
+  "flags": [],
+  "sources": [
+   "https://ubuddream.com/",
+   "https://loyobondar.com/en/"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "lb-xo-pandawa",
+  "url": "https://xo-project.com/pandawa",
+  "docs_url": "https://loyobondar.com/en/",
+  "permit_number": null,
+  "docs_listed": [
+   "one-bedroom apartments from 1.8 bln IDR, two-bed villas from 5.9 bln IDR",
+   "yield 'from 14%'",
+   "master plan (genplan)",
+   "3D tour",
+   "listed as 'Freehold apartments' on LB's Melasti Arcade page",
+   "LB construction feed Oct 2026 shows XO Pandawa 'Завершен' (completed)"
+  ],
+  "note": "Apartments and two-bed villas near Pandawa Beach by LOYO & BONDAR from 1.8 bln IDR with a 'from 14%' yield claim and a master plan; an LB page labels them freehold. LB's October 2026 construction feed marks XO Pandawa as completed ('Завершен'); no permit number, escrow or unit floor plans published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 1800000000,
+   "currency": "IDR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 14,
+   "completion": "2026",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "LB homepage 'Completed Projects': Jungle Flower Villas, U Villas, Loyo Villas, Melasti Dream, XO Canggu",
+   "units": 45,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "loyobondar.com 'Our Construction' entry 'October 2026 | XO PANDAWA | Завершен' (completed)",
+   "plans": "Master plan (genplan) only, no unit floor plans",
+   "record": "LB homepage lists five completed projects by name",
+   "returns": "'от 14% доходность' (from 14% yield); no guarantee wording"
+  },
+  "positives": [
+   "Developer marks construction completed in Oct 2026 feed",
+   "Completed developer projects named"
+  ],
+  "flags": [],
+  "sources": [
+   "https://xo-project.com/pandawa",
+   "https://loyobondar.com/en/",
+   "https://loyo-development.com/melastiarcade"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "kaluna-umalas-reserve",
+  "url": "https://kalunadevelopment.com/projects/umalas-reserve/",
+  "docs_url": "https://kalunadevelopment.com/projects/umalas-reserve/",
+  "permit_number": null,
+  "docs_listed": [
+   "4BR villa 218 m2 building / 250 m2 land, $380,000",
+   "ground and first floor layout",
+   "pay 60% until handover, balance over up to 5 years after handover",
+   "30+30 year leasehold (projects page)",
+   "ROI 9-18% (projects page)",
+   "per-unit OCBC bank guarantee (About page)"
+  ],
+  "note": "Two off-plan 4-bed wellness villas in Umalas by Kaluna Development at $380,000 on a 30+30-year lease, with published floor layouts, 60% payable until handover and a per-unit OCBC bank guarantee against non-completion. No permit number or construction progress published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 380000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "+30 years (30+30)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Per-unit OCBC bank guarantee: 'a legitimate, certified, bank-issued letter should the project fail to complete and operate. Issued per unit by OCBC' (sample downloadable via form)",
+   "progress_pct": null,
+   "developer_delivered": "Kaluna projects page lists ready-unit villas with rental data (Casa de Fiero, Casa Amadeo, Casa da Tove) and sold projects (The Palms, Casa Amani, Villa Khaya, Casa de Tulla, Casa Amora, Casa Benita); About page claims 120 villas delivered since 2013",
+   "units": 2,
+   "payment_plan": "60% until handover, remaining 40% (plus premium) in instalments up to 5 years after handover",
+   "price_per_m2": 1743
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit number for this project (Kaluna shows 'PBG Obtained' only for Vasana)",
+   "escrow": "Per-unit OCBC bank guarantee: 'a legitimate, certified, bank-issued letter should the project fail to complete and operate. Issued per unit by OCBC' (sample downloadable via form)",
+   "progress": null,
+   "plans": "Project page 'FLOOR LAYOUT' drawings per unit type",
+   "record": "Kaluna projects page lists ready-unit villas with rental data (Casa de Fiero, Casa Amadeo, Casa da Tove) and sold projects (The Palms, Casa Amani, Villa Khaya, Casa de Tulla, Casa Amora, Casa Benita); About page claims 120 villas delivered since 2013",
+   "returns": "ROI ranges (e.g. 9-18%); 'Guaranteed by OCBC Bank' refers to completion, not returns"
+  },
+  "positives": [
+   "Per-unit bank guarantee against non-completion",
+   "Floor layouts published",
+   "Lease term and extension stated (30+30)",
+   "Named completed and ready villas"
+  ],
+  "flags": [],
+  "sources": [
+   "https://kalunadevelopment.com/projects/umalas-reserve/",
+   "https://kalunadevelopment.com/about-us/",
+   "https://kalunadevelopment.com/projects/"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "kaluna-berawa-signature",
+  "url": "https://kalunadevelopment.com/projects/berawa-signature/",
+  "docs_url": "https://kalunadevelopment.com/projects/berawa-signature/",
+  "permit_number": null,
+  "docs_listed": [
+   "1-3BR loft villas: 1BR $136,500 (65 m2), 2BR $168,000, 3BR $290,000",
+   "floor layouts per unit type",
+   "live availability map",
+   "pay 60% until handover, 5-year post-handover instalments",
+   "30+30 year leasehold, ROI 9-19% (About page)",
+   "per-unit OCBC bank guarantee"
+  ],
+  "note": "Off-plan 1-3 bed loft villas in Berawa by Kaluna Development from $136,500 on a 30+30-year lease, with floor layouts, a live availability map, 60%-until-handover terms and a per-unit OCBC bank guarantee against non-completion. No permit number or construction progress published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 136500,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "+30 years (30+30)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Per-unit OCBC bank guarantee: 'a legitimate, certified, bank-issued letter should the project fail to complete and operate. Issued per unit by OCBC' (sample downloadable via form)",
+   "progress_pct": null,
+   "developer_delivered": "Kaluna projects page lists ready-unit villas with rental data (Casa de Fiero, Casa Amadeo, Casa da Tove) and sold projects (The Palms, Casa Amani, Villa Khaya, Casa de Tulla, Casa Amora, Casa Benita); About page claims 120 villas delivered since 2013",
+   "units": null,
+   "payment_plan": "60% until handover, remaining 40% (plus premium) in instalments up to 5 years after handover",
+   "price_per_m2": 2100
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit number for this project (Kaluna shows 'PBG Obtained' only for Vasana)",
+   "escrow": "Per-unit OCBC bank guarantee: 'a legitimate, certified, bank-issued letter should the project fail to complete and operate. Issued per unit by OCBC' (sample downloadable via form)",
+   "progress": null,
+   "plans": "Project page 'FLOOR LAYOUT' drawings per unit type",
+   "record": "Kaluna projects page lists ready-unit villas with rental data (Casa de Fiero, Casa Amadeo, Casa da Tove) and sold projects (The Palms, Casa Amani, Villa Khaya, Casa de Tulla, Casa Amora, Casa Benita); About page claims 120 villas delivered since 2013",
+   "returns": "ROI ranges (e.g. 9-18%); 'Guaranteed by OCBC Bank' refers to completion, not returns"
+  },
+  "positives": [
+   "Per-unit bank guarantee against non-completion",
+   "Floor layouts published",
+   "Lease term and extension stated (30+30)",
+   "Named completed and ready villas"
+  ],
+  "flags": [],
+  "sources": [
+   "https://kalunadevelopment.com/projects/berawa-signature/",
+   "https://kalunadevelopment.com/about-us/",
+   "https://kalunadevelopment.com/projects/"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "kaluna-tumbak-signature",
+  "url": "https://kalunadevelopment.com/projects/tumbak-signature/",
+  "docs_url": "https://kalunadevelopment.com/projects/tumbak-signature/",
+  "permit_number": null,
+  "docs_listed": [
+   "1-3BR loft villas: 1BR IDR 1.89B (51.25 m2), 2BR IDR 2.952B, 3BR IDR 3.78B",
+   "unit-level floor layouts",
+   "18 units, 6 sold",
+   "pay 60% until handover, 5-year post-handover instalments",
+   "30+30 year leasehold, ROI 8-21% (About page)",
+   "per-unit OCBC bank guarantee"
+  ],
+  "note": "18 off-plan loft villas in Tumbak Bayuh by Kaluna Development from IDR 1.89B on a 30+30-year lease, with unit-level floor layouts, 60%-until-handover terms and a per-unit OCBC bank guarantee against non-completion. No permit number or construction progress published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 1890000000,
+   "currency": "IDR",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "+30 years (30+30)",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Per-unit OCBC bank guarantee: 'a legitimate, certified, bank-issued letter should the project fail to complete and operate. Issued per unit by OCBC' (sample downloadable via form)",
+   "progress_pct": null,
+   "developer_delivered": "Kaluna projects page lists ready-unit villas with rental data (Casa de Fiero, Casa Amadeo, Casa da Tove) and sold projects (The Palms, Casa Amani, Villa Khaya, Casa de Tulla, Casa Amora, Casa Benita); About page claims 120 villas delivered since 2013",
+   "units": 18,
+   "payment_plan": "60% until handover, remaining 40% (plus premium) in instalments up to 5 years after handover",
+   "price_per_m2": 36878049
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit number for this project (Kaluna shows 'PBG Obtained' only for Vasana)",
+   "escrow": "Per-unit OCBC bank guarantee: 'a legitimate, certified, bank-issued letter should the project fail to complete and operate. Issued per unit by OCBC' (sample downloadable via form)",
+   "progress": null,
+   "plans": "Project page 'FLOOR LAYOUT' drawings per unit type",
+   "record": "Kaluna projects page lists ready-unit villas with rental data (Casa de Fiero, Casa Amadeo, Casa da Tove) and sold projects (The Palms, Casa Amani, Villa Khaya, Casa de Tulla, Casa Amora, Casa Benita); About page claims 120 villas delivered since 2013",
+   "returns": "ROI ranges (e.g. 9-18%); 'Guaranteed by OCBC Bank' refers to completion, not returns"
+  },
+  "positives": [
+   "Per-unit bank guarantee against non-completion",
+   "Floor layouts published",
+   "Lease term and extension stated (30+30)",
+   "Named completed and ready villas"
+  ],
+  "flags": [],
+  "sources": [
+   "https://kalunadevelopment.com/projects/tumbak-signature/",
+   "https://kalunadevelopment.com/about-us/",
+   "https://kalunadevelopment.com/projects/"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "samani-villa-pecatu-phase-2",
+  "url": "https://samanivillapecatu.com/",
+  "docs_url": "https://samanivillapecatu.com/wp-content/uploads/2025/03/Roadmap-Proses-pembelian-properti-Update.pdf",
+  "permit_number": null,
+  "docs_listed": [
+   "Phase 2: 7 Modern and 3 Luxury villas; Phase 1 sold out",
+   "unit floor plans (denah), e.g. Swastika 147 m2 building / 140 m2 land",
+   "pricelist and site plan sections",
+   "purchase roadmap PDF: SPR, SPPJB, staged DP + VAT, construction per agreed schedule, BPHTB/notary, handover and certificate name transfer",
+   "projected ROI section"
+  ],
+  "note": "Phase 2 of Samani Villa Pecatu by Miraland, 10 villas 30 m from Jalan Raya Uluwatu, with unit floor plans and a purchase roadmap PDF that ends in certificate name transfer to the buyer (aimed at Indonesian buyers). No price in page text, no permit number, escrow, dated progress or completed earlier phase published (checked 31 Oct 2026)",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 10,
+   "payment_plan": "Booking fee (SPR), SPPJB, staged down payment plus VAT, then construction per agreed terms (roadmap PDF)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Roadmap PDF only describes construction 'according to the agreed schedule'; no dated updates",
+   "plans": "Unit pages show 'DENAH UNIT' floor plans (e.g. Swastika)",
+   "record": "Only 'Phase 1 Sold Out' in 4 months; no completed project stated",
+   "returns": "'Proyeksi ROI' (projected ROI) section; no guarantee wording found"
+  },
+  "positives": [
+   "Unit floor plans published",
+   "Step-by-step purchase and title-transfer roadmap published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://samanivillapecatu.com/",
+   "https://samanivillapecatu.com/unit-swastika/",
+   "https://samanivillapecatu.com/artikel-menarik/",
+   "https://samanivillapecatu.com/wp-content/uploads/2025/03/Roadmap-Proses-pembelian-properti-Update.pdf"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "bocoa-jimbaran",
+  "url": "https://bocoajimbaran.com/",
+  "docs_url": "https://bocoajimbaran.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "4 private-pool villas, 63-147 m2 buildings on 173-313 m2 land",
+   "1BR XL, 3BR A and 3BR B types",
+   "live availability",
+   "floor plans and prices only in brochure",
+   "developer Wahi Group, design Homeboys Projects",
+   "earlier Bocoa Canggu (18 villas) and Bocoa Uluwatu (40 villas) sold out"
+  ],
+  "note": "Four private-pool villas a five-minute walk from Jimbaran beach by Wahi Group, designed by Homeboys Projects, with building and land sizes per villa; prices and floor plans only in the brochure. The site cites Bocoa Canggu (18 villas) as an operating complex with AirDNA rankings; no tenure, permit number, escrow or progress published (checked 31 Oct 2026)",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Site: Bocoa Canggu, Pererenan (18 villas) 'now one of Bali's best-performing villa complexes', two villas ranked in Canggu's AirDNA top ten; Bocoa Uluwatu (40 villas) sold out before completion",
+   "units": 4,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": null,
+   "plans": "'Get the brochure: Floor plans, prices and availability' behind a form",
+   "record": "'The Bocoa story' section: Bocoa Canggu 18 villas operating and ranked on AirDNA",
+   "returns": "No yield figure or guarantee wording"
+  },
+  "positives": [
+   "Earlier Bocoa project operating with public performance ranking",
+   "Building and land sizes per villa published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://bocoajimbaran.com/"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "avalon-tao-club-house",
+  "url": "https://avalonbali.com/projects/tao",
+  "docs_url": "https://avalonbali.com/projects/tao",
+  "permit_number": null,
+  "docs_listed": [
+   "129 smart apartments, studios 24-28 m2 from $89,000 (1.4B IDR)",
+   "completion 2028",
+   "leasehold 32+32 years",
+   "projected ROI 12-14%",
+   "project presentation news (21 Mar 2025)",
+   "Ribas Hotels management"
+  ],
+  "note": "129 smart apartments in Pererenan by Avalon from $89,000 (1.4B IDR), 32+32-year lease and 2028 completion, managed by Ribas Hotels. No permit number, escrow, floor plans, construction progress or completed developer project published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 89000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 32,
+   "extension": "+32 years (32+32)",
+   "guaranteed_language": false,
+   "yield_pct": 14,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 129,
+   "payment_plan": null,
+   "price_per_m2": 3296
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Only a project presentation news item (21 March 2025); no construction updates",
+   "plans": "Unit sizes only",
+   "record": "No completed Avalon project named",
+   "returns": "'12% Projected ROI'; no guarantee wording"
+  },
+  "positives": [
+   "Lease term and extension stated (32+32)",
+   "Per-unit prices and sizes listed"
+  ],
+  "flags": [],
+  "sources": [
+   "https://avalonbali.com/projects/tao",
+   "https://avalonbali.com/news"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "serenity-estates-ubud",
+  "url": "https://www.globalbalihome.com/project-serenity-estates.html",
+  "docs_url": "https://www.globalbalihome.com/project-serenity-estates.html",
+  "permit_number": null,
+  "docs_listed": [
+   "4 villas on 3.5-14 are plots, 3 available",
+   "unit-by-unit price table Rp 5.34B-20.49B",
+   "handover Q1 2027",
+   "30-year lease + 'guaranteed 30-year extension', notarized in English and Bahasa",
+   "construction covered by international insurance policy",
+   "master plan",
+   "~10% projected annual value growth"
+  ],
+  "note": "Four large-plot villas near Ubud by Global Bali Home from Rp 5.34B to Rp 20.49B with a unit price table, Q1 2027 handover, a notarized 30+30-year lease and insured construction. No permit number, escrow, floor plans, dated progress or completed developer projects are published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 5340000000,
+   "currency": "IDR",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "+30 years 'guaranteed extension', notarized in English and Bahasa",
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 4,
+   "payment_plan": null,
+   "price_per_m2": 34451613
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": "Construction insurance only ('international insurance policy'); no deposit protection",
+   "progress": null,
+   "plans": "Master plan image only",
+   "record": "No completed Global Bali Home project named",
+   "returns": "'~10% annual value growth' projection; 'guaranteed' used only for the lease extension"
+  },
+  "positives": [
+   "Unit-level price and availability table",
+   "Lease term and extension stated (30+30), bilingual notarized",
+   "Construction insurance stated"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.globalbalihome.com/project-serenity-estates.html",
+   "https://www.globalbalihome.com/about.html"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "addressbali-pererenan",
+  "url": "https://addressbali.com/",
+  "docs_url": "https://addressbali.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "46 beachfront residences, 50-150 m2 (studios to master penthouses)",
+   "delivery date Aug 2027",
+   "27-year leasehold, extendable",
+   "15.5% ROI p.a. headline; ROI calculator with 'actual returns may vary' disclaimer",
+   "brochure download"
+  ],
+  "note": "46 beachfront residences at Lima Beach, Pererenan, with Aug 2027 delivery, a 27-year extendable leasehold and a 15.5% ROI headline backed by a calculator marked 'actual returns may vary'. No price, permit number, escrow, plans, progress or named developer track record published (checked 31 Oct 2026)",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": "leasehold",
+   "lease_base": 27,
+   "extension": "extendable (term not stated)",
+   "guaranteed_language": false,
+   "yield_pct": 15.5,
+   "completion": "2027-08",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 46,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": null,
+   "plans": "Unit-type slider and brochure only; no floor-plan drawings found",
+   "record": "'Led by experienced developers with a consistent track record' without names or projects",
+   "returns": "'15,5% ROI p.a.'; calculator note 'Actual returns may vary'"
+  },
+  "positives": [
+   "Delivery month and lease term stated",
+   "Return projections carry a clear disclaimer"
+  ],
+  "flags": [],
+  "sources": [
+   "https://addressbali.com/"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "bali-benefit-reimagined-villas-ubud-2",
+  "url": "https://balibenefit.com/",
+  "docs_url": "https://balibenefit.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "Re:Imagined Villas Ubud 2 from $140,000, 4 of 12 available",
+   "leasehold 30+25 years",
+   "ROI 12% headline",
+   "FAQ: 1% per month on paid amount for construction delays",
+   "FAQ: own capital covers 30% (lease, documents, foundation); rest of construction financed through sales",
+   "FAQ: notarized land lease signed after construction and handover",
+   "financial model and presentation on request"
+  ],
+  "note": "12 villas in Ubud by PT Bali Benefit Group from $140,000 on a 30+25-year lease with a 12% ROI headline; the FAQ promises 1% per month on paid amounts for delays but also says construction beyond the first 30% is financed through sales and the notarized lease is signed only after handover. No permit number, escrow, plans, progress or named completed project (checked 31 Oct 2026)",
+  "seed": {
+   "price": 140000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "+25 years (30+25)",
+   "guaranteed_language": false,
+   "yield_pct": 12,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 12,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": "No escrow; FAQ says payments go by SWIFT to the company account and construction after the first 30% is 'financed through sales'",
+   "progress": null,
+   "plans": "Financial model and presentation on request only",
+   "record": "Claims a construction partner with '18 years and 100+ units delivered' and a co-founder who 'developed 13 villas', none named",
+   "returns": "'ROI 12%' and 'Our track record of 12% returns'; no guarantee of returns"
+  },
+  "positives": [
+   "Contractual delay compensation stated (1% per month of paid amount)",
+   "Lease term and extension stated (30+25)"
+  ],
+  "flags": [],
+  "sources": [
+   "https://balibenefit.com/"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "lb-pandawa-dream",
+  "url": "https://lb-dreams.com/pandawadream",
+  "docs_url": "https://loyobondar.com/en/",
+  "permit_number": null,
+  "docs_listed": [
+   "apartments, villas, penthouses and smart villas",
+   "price per m2 IDR 36.9M",
+   "30% down, instalments until end of construction",
+   "'guaranteed yield when buying 2 units'",
+   "LB construction feed Oct 2026: Block A slab reinforcement 95%, slab pour 90%; Block B excavation 95%"
+  ],
+  "note": "All-in-one complex near Pandawa Beach by LOYO & BONDAR priced at IDR 36.9M per m2 (smart villas from 1.4 bln IDR) with instalments until completion and an October 2026 construction feed (Block A slab 90% poured). The page advertises 'guaranteed yield when buying 2 units'; no permit number, escrow, plans or tenure published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 1400000000,
+   "currency": "IDR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 8,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "LB homepage 'Completed Projects': Jungle Flower Villas, U Villas, Loyo Villas, Melasti Dream, XO Canggu",
+   "units": null,
+   "payment_plan": "30% first payment, instalments until end of construction",
+   "price_per_m2": 36900000
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "loyobondar.com October 2026: Block A reinforcement 95%, slab concrete pouring 90%; Block B excavation 95%",
+   "plans": "Unit types only",
+   "record": "LB homepage lists five completed projects by name",
+   "returns": "lb-dreams.com: 'гарантированная доходность при покупке 2 юнитов' (guaranteed yield when buying 2 units)"
+  },
+  "positives": [
+   "Dated construction progress with percentages",
+   "Completed developer projects named",
+   "Price per m2 published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://lb-dreams.com/pandawadream",
+   "https://loyobondar.com/en/"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "loyo-melasti-arcade",
+  "url": "https://loyo-development.com/melastiarcade",
+  "docs_url": "https://loyobondar.com/en/",
+  "permit_number": null,
+  "docs_listed": [
+   "13 apartments and 6 penthouses from 1.8 bln IDR",
+   "projected ROI 17%",
+   "LB construction feed Oct 2026: basement waterproofing done, 2nd floor slab formwork stripped, trench backfill 25%"
+  ],
+  "note": "Closed complex of 13 apartments and 6 penthouses near Melasti by Loyo Development (LOYO & BONDAR) from 1.8 bln IDR with 17% projected ROI and an October 2026 construction update (basement waterproofed, 2nd-floor slab done). No permit number, escrow, plans or tenure published (checked 31 Oct 2026)",
+  "seed": {
+   "price": 1800000000,
+   "currency": "IDR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 17,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "LB homepage 'Completed Projects': Jungle Flower Villas, U Villas, Loyo Villas, Melasti Dream, XO Canggu",
+   "units": 19,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "loyobondar.com October 2026: basement waterproofing completed, 2nd floor slab formwork stripped, backfilling 25%",
+   "plans": null,
+   "record": "LB homepage lists five completed projects by name",
+   "returns": "'прогнозируемый ROI 17%' (projected); no guarantee"
+  },
+  "positives": [
+   "Dated construction progress",
+   "Completed developer projects named"
+  ],
+  "flags": [],
+  "sources": [
+   "https://loyo-development.com/melastiarcade",
+   "https://loyobondar.com/en/"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "618-flower-estate",
+  "url": "https://618development.com/projects/flower-estate",
+  "docs_url": "https://618development.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "20 villas (2-3 BR) inside Nuanu",
+   "pre-sale pricing from IDR 8,100,000,000 (payment in rupiah)",
+   "completion Q1 2027",
+   "freehold available for Indonesian citizens",
+   "room-by-room design descriptions",
+   "developer project list: The Collection Vol.1 completed Q2 2025, Vol.2 completion Q1 2026"
+  ],
+  "note": "20 orangery-style villas inside Nuanu by 618 Development, pre-sale from IDR 8.1B with Q1 2027 completion and freehold available to Indonesian citizens. 618 shows The Collection Vol.1 (4 villas) as completed in Q2 2025; no permit number, escrow, floor plans or construction progress for Flower Estate (checked 31 Oct 2026)",
+  "seed": {
+   "price": 8100000000,
+   "currency": "IDR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "618 homepage: The Collection Vol.1, 4 three-bedroom villas, 'Completed Q2 2025'",
+   "units": 20,
+   "payment_plan": "All payment in rupiah (no schedule published)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": null,
+   "plans": "Room descriptions and renders only",
+   "record": "618development.com project list: 'The Collection Vol.1 ... Completed Q2 2025'",
+   "returns": "No yield or guarantee wording"
+  },
+  "positives": [
+   "Earlier 618 project shown completed",
+   "Completion quarter and pre-sale price published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://618development.com/projects/flower-estate",
+   "https://618development.com/"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "serenity-villas-ubud",
+  "url": "https://www.globalbalihome.com/project-serenity-villas.html",
+  "docs_url": "https://www.globalbalihome.com/project-serenity-villas.html",
+  "permit_number": null,
+  "docs_listed": [
+   "12 villas, 3 available",
+   "unit table: Rp 6.15B-6.87B for available units (homepage range Rp 6.03B-6.87B)",
+   "handover Q2 2026",
+   "10-15% projected yield, ~80% occupancy",
+   "construction insurance",
+   "master plan",
+   "page last updated May 2026"
+  ],
+  "note": "12-villa project near Ubud by Global Bali Home with 3 units left at Rp 6.15B-6.87B, a Q2 2026 handover date and 10-15% projected yield. The page (last updated May 2026) does not say whether handover happened; no permit number, escrow, plans, progress or lease term specific to this project (checked 31 Oct 2026)",
+  "seed": {
+   "price": 6150000000,
+   "currency": "IDR",
+   "title": "leasehold",
+   "lease_base": 30,
+   "extension": "extension rights per Global Bali Home homepage",
+   "guaranteed_language": false,
+   "yield_pct": 15,
+   "completion": "2026-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 12,
+   "payment_plan": null,
+   "price_per_m2": 29285714
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": "Construction insurance only; no deposit protection",
+   "progress": "No construction updates; Q2 2026 handover date not confirmed as met",
+   "plans": "Master plan image only",
+   "record": "No completed Global Bali Home project named",
+   "returns": "'10-15% Projected Yield'; no guarantee wording"
+  },
+  "positives": [
+   "Unit-level price and availability table",
+   "Construction insurance stated"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.globalbalihome.com/project-serenity-villas.html",
+   "https://www.globalbalihome.com",
+   "https://www.globalbalihome.com/about.html"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "alex-villas-laguna-complex-7",
+  "url": "https://alexvillasgroup.com/developments/complex-7",
+  "docs_url": "https://alexvillasgroup.com/developments/complex-7",
+  "permit_number": null,
+  "docs_listed": [
+   "327 units (87 villas, 240 apartments) on 25,871 m2, 1,800 m from the ocean",
+   "unit types with sizes (106-335 m2 villas, 43-198 m2 apartments), price on request",
+   "explicit statement: construction schedule subject to PBG issuance; no completion date until permit and financing are finalised",
+   "leasehold",
+   "developer list: Complexes 1-6 and AV Base villas marked Completed"
+  ],
+  "note": "327-unit 'city within a city' in Canggu by Alex Villas Group (87 villas, 240 apartments) whose page states openly that construction timing depends on a PBG not yet issued and on financing, so no completion date is published. Alex Villas lists Complexes 1-6 and AV Base villas as completed; no price, permit number, escrow, plans or progress (checked 31 Oct 2026)",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": "leasehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Alex Villas developments page marks Completed: Berawa Complex 1, BB Complex 2, Pererenan Complex 3, Banana Complex 4, Finns Complex 5, Echo Beach Complex 6, White Villas and Grey Villas (AV Base)",
+   "units": 327,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Page: 'The construction schedule is subject to the issuance of the Building Permit (PBG)' (not yet issued)",
+   "escrow": null,
+   "progress": "No construction started per page; launch 'Subject to permit issuance'",
+   "plans": "Unit types and sizes only",
+   "record": "alexvillasgroup.com/developments lists six numbered complexes and AV Base villas as Completed",
+   "returns": "Avg. occupancy 'N/A'; no yield or guarantee wording"
+  },
+  "positives": [
+   "Developer openly states PBG not yet issued and withholds a completion date",
+   "Six completed earlier complexes named"
+  ],
+  "flags": [],
+  "sources": [
+   "https://alexvillasgroup.com/developments/complex-7",
+   "https://alexvillasgroup.com/developments"
+  ],
+  "status": "active"
+ },
+ {
+  "slug": "lb-pandawa-hills",
+  "url": "https://pandawahills.com/en",
+  "docs_url": "https://loyobondar.com/en/",
+  "permit_number": null,
+  "docs_listed": [
+   "villas (1-3 BR) and apartments up to 43 m2",
+   "completion Q4 2026",
+   "rooftop restaurant and cinema",
+   "3D tour, room tour",
+   "LB construction feed Oct 2026: partition walls erected, plumbing rough-in and roofing completed",
+   "in-house Loyo Management"
+  ],
+  "note": "Villas and apartments near Pandawa Beach by LOYO & BONDAR with Q4 2026 completion and an October 2026 construction update (walls, plumbing rough-in and roofing done). No price, permit number, escrow, plans or tenure published (checked 31 Oct 2026)",
+  "seed": {
+   "price": null,
+   "currency": null,
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "LB homepage 'Completed Projects': Jungle Flower Villas, U Villas, Loyo Villas, Melasti Dream, XO Canggu",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "loyobondar.com October 2026: partition walls erected, plumbing rough-in completed, roofing works completed",
+   "plans": "Apartment size only (up to 43 m2)",
+   "record": "LB homepage lists five completed projects by name",
+   "returns": "No yield or guarantee wording"
+  },
+  "positives": [
+   "Dated construction progress",
+   "Completed developer projects named"
+  ],
+  "flags": [],
+  "sources": [
+   "https://pandawahills.com/en",
+   "https://loyobondar.com/en/"
+  ],
+  "status": "active"
+ }
+]

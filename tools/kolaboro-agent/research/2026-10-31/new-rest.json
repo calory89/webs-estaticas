@@ -1,0 +1,353 @@
+[
+ {
+  "slug": "nobu-residences-manchester-salboy",
+  "name": "Nobu Residences Manchester (Viadux 2)",
+  "developer": "Salboy (Salboy Central Limited)",
+  "area": "Great Bridgewater Street, city centre",
+  "country": "United Kingdom",
+  "market": "Manchester",
+  "url": "https://noburesidencesmanchester.com",
+  "docs_url": "https://salboy.com/development/nobu-hotel-restaurant-residences-manchester/",
+  "permit_number": "139715/FO/2024",
+  "docs_listed": [
+   "price from GBP 600,000 (project site)",
+   "452 Nobu-branded residences, 76 storeys, 160-room hotel",
+   "amenities list (pool, spa, gym, podium garden, concierge)",
+   "groundbreaking news Nov and Dec 2025",
+   "waiting list form only, no floor plans, no payment plan",
+   "Nobu licence disclaimer naming Salboy Central Limited"
+  ],
+  "note": "Salboy's 76-storey, 452-residence Nobu tower above the Viadux arches won Manchester planning consent (ref 139715/FO/2024) in 2025, broke ground in Nov 2025 and is reported for 2031 completion; the project site lists residences from GBP 600,000 via a waiting list. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 600000,
+   "currency": "GBP",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2031",
+   "permit_claim": false,
+   "permit_number": "139715/FO/2024",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Viadux phase 1 (40 storeys, 375 apartments, Great Bridgewater St) completed 2024 per Wikipedia summary; Salboy site lists no project as completed",
+   "units": 452,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Planning reference 139715/FO/2024 reported by Place North West (approval Apr 2025, reheard and re-approved May 2025); not published on the developer pages",
+   "escrow": null,
+   "progress": "Developer news posts dated 13 Nov 2025 and 11 Dec 2025 on the groundbreaking; no percentage or later photos",
+   "plans": "No floor plans; project site only offers a waiting list",
+   "record": "Viadux phase 1 by Salboy (375 apartments) completed 2024 per Wikipedia; Salboy site has a Completed Sites category but names no completed project on the Nobu page",
+   "returns": "No rental guarantee or yield figures on the project site or Salboy page"
+  },
+  "positives": [
+   "Planning consent granted and reheard by Manchester City Council in 2025",
+   "Same developer and contractor (Domis) completed the neighbouring Viadux phase 1 tower",
+   "Developer entity Salboy Central Limited is active on Companies House with accounts filed to Mar 2025",
+   "No guaranteed return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://noburesidencesmanchester.com",
+   "https://salboy.com/development/nobu-hotel-restaurant-residences-manchester/",
+   "https://www.pbctoday.co.uk/news/projects/robert-de-niro-attends-nobu-manchester-groundbreaking-ceremony/157066/",
+   "https://aapnews.aap.com.au/news/cision20251219AE50717",
+   "https://www.placenorthwest.co.uk/uks-tallest-tower-outside-of-london-among-manchester-approvals/",
+   "https://en.wikipedia.org/wiki/Viadux",
+   "https://find-and-update.company-information.service.gov.uk/company/10027959"
+  ],
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Planning permission granted (139715/FO/2024)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.placenorthwest.co.uk/uks-tallest-tower-outside-of-london-among-manchester-approvals/"
+   },
+   {
+    "claim": "Developer entity Salboy Central Limited is registered",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://find-and-update.company-information.service.gov.uk/company/10027959"
+   },
+   {
+    "claim": "Groundbreaking held Nov 2025, construction under way",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.pbctoday.co.uk/news/projects/robert-de-niro-attends-nobu-manchester-groundbreaking-ceremony/157066/"
+   },
+   {
+    "claim": "Completion 2031",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pbctoday.co.uk/news/projects/robert-de-niro-attends-nobu-manchester-groundbreaking-ceremony/157066/"
+   },
+   {
+    "claim": "Residences from GBP 600,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://noburesidencesmanchester.com"
+   },
+   {
+    "claim": "Earlier press figure: apartments from GBP 500,000",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.pbctoday.co.uk/news/projects/robert-de-niro-attends-nobu-manchester-groundbreaking-ceremony/157066/"
+   },
+   {
+    "claim": "Developer delivered Viadux phase 1 (375 apartments, 2024)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://en.wikipedia.org/wiki/Viadux"
+   },
+   {
+    "claim": "Deposit protection or escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://noburesidencesmanchester.com"
+   },
+   {
+    "claim": "452 branded residences and 160-room hotel",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.placenorthwest.co.uk/uks-tallest-tower-outside-of-london-among-manchester-approvals/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Salford, United Kingdom",
+   "developer_company": "Salboy Central Limited, Companies House 10027959 (incorporated 26 Feb 2016)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Private company; accounts filed at Companies House to 31 Mar 2025",
+   "construction_start": "2025-11",
+   "handover_promised": "2031",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "apartments",
+    "penthouses"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 600000,
+   "price_max": null,
+   "currency": "GBP",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "No restriction on foreign buyers in England; tenure (leasehold or other) not published",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Nobu (licensed to Salboy Central Limited)",
+   "amenities": [
+    "swimming pool",
+    "spa",
+    "gym",
+    "podium garden",
+    "24/7 concierge",
+    "Nobu restaurant",
+    "event spaces"
+   ],
+   "lat": 53.475,
+   "lng": -2.248,
+   "permit_authority": "Manchester City Council (planning)",
+   "brochure_url": null
+  },
+  "verified_score": 3
+ },
+ {
+  "slug": "edition-birmingham-centenary-tower-sphere-select",
+  "name": "Edition Birmingham, Centenary Tower",
+  "developer": "Sphere Group with Select Property",
+  "area": "Brindley Drive, Centenary Square (B1)",
+  "country": "United Kingdom",
+  "market": "Birmingham",
+  "url": "https://app.zoopla.co.uk/new-homes/details/70520402",
+  "docs_url": null,
+  "permit_number": null,
+  "docs_listed": [
+   "agent listing: 2BR 758 sq ft from GBP 418,000, completion Q2 2028",
+   "agent listing: GBP 5,000 reservation, 10% on exchange, further 10%",
+   "agent listing: projected 6% yield and 12% capital growth (not guaranteed)",
+   "Connells listing: leasehold from GBP 337,263, lease term awaiting details",
+   "amenities list (20 m pool, spa, sky lounge, gym)"
+  ],
+  "note": "Two-tower, 581-home scheme on the former Paradise Circus car park: the 149-unit Park Residence is sold out for 2027 and the 45-storey, 432-unit Centenary Tower is on sale for Q2 2028, with leasehold units listed from GBP 337,263. Building Safety Regulator gateway 2 approval and a GBP 145m Midgard contract are reported. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 337263,
+   "currency": "GBP",
+   "title": "leasehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 6,
+   "completion": "2028-Q2",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 432,
+   "payment_plan": "GBP 5,000 reservation, 10% on exchange, further 10% later, balance on completion (agent listing)",
+   "price_per_m2": 5936
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Gateway 2 (Building Safety Regulator) approval reported by Place North West and Building; no planning or BSR reference published on listings",
+   "escrow": null,
+   "progress": "Construction 'fully under way' reported in Mar 2026 press; no developer progress figure or dated photos found",
+   "plans": "No floor plans on the listings opened",
+   "record": "No completed projects named by Sphere Group or Select Property on the pages opened",
+   "returns": "Agent shows a projected 6% yield and 12% predicted growth, described as projections, not guarantees"
+  },
+  "positives": [
+   "Main contract (GBP 145m, Midgard) and institutional funders (PGIM Real Estate, Eldridge) reported in trade press",
+   "Building Safety Regulator gateway 2 approval reported",
+   "First tower (Park Residence) fully sold and due 2027"
+  ],
+  "flags": [],
+  "sources": [
+   "https://app.zoopla.co.uk/new-homes/details/70520402",
+   "https://media.rightmove.co.uk/33k/32172/169335959/32172_DIG113125_DOC_01_0000.pdf",
+   "https://www.placemidlands.co.uk/edition-birmingham-sells-all-149-apartments-in-park-residence-scheme/",
+   "https://www.placemidlands.co.uk/sphere-breaks-ground-on-edition-birmingham-towers/",
+   "https://www.building.co.uk/news/gateway-2-sign-off-for-46-storey-residential-tower-scheme-in-central-birmingham/5139478.article",
+   "https://www.expressandstar.com/news/local-hubs/birmingham/2025/10/16/edition-birmingham-reaches-milestone-as-all-apartments-at-luxury-park-residence-tower-sold-out"
+  ],
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building Safety Regulator gateway 2 approval granted",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.building.co.uk/news/gateway-2-sign-off-for-46-storey-residential-tower-scheme-in-central-birmingham/5139478.article"
+   },
+   {
+    "claim": "Construction under way with Midgard as main contractor",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.placemidlands.co.uk/sphere-breaks-ground-on-edition-birmingham-towers/"
+   },
+   {
+    "claim": "Centenary Tower completion Q2 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://app.zoopla.co.uk/new-homes/details/70520402"
+   },
+   {
+    "claim": "Park Residence sold out, more than 130 Centenary Tower units sold",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.placemidlands.co.uk/edition-birmingham-sells-all-149-apartments-in-park-residence-scheme/"
+   },
+   {
+    "claim": "Projected 6% yield",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://app.zoopla.co.uk/new-homes/details/70520402"
+   },
+   {
+    "claim": "Leasehold tenure, lease length not stated",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://media.rightmove.co.uk/33k/32172/169335959/32172_DIG113125_DOC_01_0000.pdf"
+   },
+   {
+    "claim": "Planning permission number",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.placemidlands.co.uk/sphere-breaks-ground-on-edition-birmingham-towers/"
+   },
+   {
+    "claim": "Deposit protection",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://app.zoopla.co.uk/new-homes/details/70520402"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": 70.4,
+   "price_min": 337263,
+   "price_max": null,
+   "currency": "GBP",
+   "deposit_pct": 10,
+   "payment_plan": "GBP 5,000 reservation, 10% on exchange, further 10%, balance on completion",
+   "foreign_ownership": "Leasehold flat; no restriction on foreign buyers in England",
+   "rental_programme": "none stated; agent projects 6% yield",
+   "service_charge": "not stated (ask agent)",
+   "brand": null,
+   "amenities": [
+    "20 m swimming pool",
+    "spa and hydropool",
+    "gym",
+    "sky lounge",
+    "climbing wall",
+    "cinema terrace",
+    "24/7 concierge"
+   ],
+   "lat": 52.481,
+   "lng": -1.909,
+   "permit_authority": "Birmingham City Council (planning); Building Safety Regulator (high-rise gateway 2)",
+   "brochure_url": null
+  },
+  "verified_score": 2
+ }
+]

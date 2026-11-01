@@ -44,7 +44,7 @@ MARKETS = [
     ('Gold Coast', 'Australia', 'Queensland development approval, ASIC'), ('Sydney', 'Australia', 'NSW planning portal'), ('Melbourne', 'Australia', 'Victoria planning'),
     ('New Zealand', 'New Zealand', 'council resource consent'), ('Fiji', 'Fiji', 'approval'),
     ('Riviera Maya', 'Mexico', 'licencia de construccion, fideicomiso, PROFECO contract'), ('Los Cabos', 'Mexico', 'licencia de construccion'),
-    ('Puerto Vallarta', 'Mexico', 'licencia de construccion'), ('Merida', 'Mexico', 'licencia de construccion'), ('Costa Rica', 'Costa Rica', 'SETENA, CFIA permit'),
+    ('Puerto Vallarta', 'Mexico', 'licencia de construccion'), ('Mérida', 'Mexico', 'licencia de construccion'), ('Costa Rica', 'Costa Rica', 'SETENA, CFIA permit'),
     ('Panama', 'Panama', 'MIVIOT approval'), ('Dominican Republic', 'Dominican Republic', 'CONFOTUR, MOPC permit'), ('Colombia', 'Colombia', 'licencia de construccion, fiducia'),
     ('Brazil', 'Brazil', 'registro de incorporacao'), ('Uruguay', 'Uruguay', 'permiso de construccion'), ('Miami', 'USA', 'Florida DBPR condo filing, escrow under statute 718'),
     ('Orlando', 'USA', 'county permits, DBPR'), ('Austin', 'USA', 'city permits'), ('Puerto Rico', 'USA', 'OGPe permits'), ('Turks and Caicos', 'Turks and Caicos', 'planning approval'),
@@ -236,6 +236,7 @@ def call(prompt, B):
 
 
 def main():
+    global MIN_USD, MAX_USD
     os.makedirs(DATA, exist_ok=True)
     logp = os.path.join(DATA, 'discover-log.json'); log = load(logp, [])
     wp = os.path.join(HERE, 'projects-world.json'); W = load(wp, {'projects': []})
@@ -245,7 +246,12 @@ def main():
     run = {'date': TODAY, 'calls': 0, 'usd': 0.0, 'searches': 0, 'added': 0, 'rejected': {}, 'markets': [], 'model': None}
     if not KEY:
         print('no ANTHROPIC_API_KEY: nothing to do'); return
-    B = Budget()
+    done_today = sum(r.get('usd', 0) for r in log if r.get('date') == TODAY)
+    if done_today >= MIN_USD and not os.environ.get('KB_DISCOVER_FORCE'):
+        print(f'already spent ${done_today:.2f} today: nothing to do'); return
+    B = Budget(); B.usd = 0.0
+    if not os.environ.get('KB_DISCOVER_FORCE'):
+        MIN_USD = max(0.0, MIN_USD - done_today); MAX_USD = max(0.0, MAX_USD - done_today)
     start = int(hashlib.md5(TODAY.encode()).hexdigest(), 16) % len(MARKETS)
     i = 0; added = []
     def rej(r): run['rejected'][r] = run['rejected'].get(r, 0) + 1

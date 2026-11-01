@@ -1,0 +1,3312 @@
+[
+ {
+  "slug": "coronella-living-tm",
+  "name": "Coronella Living by TM",
+  "developer": "TM Grupo Inmobiliario",
+  "area": "Torrevieja (La Coronelita)",
+  "country": "Spain",
+  "market": "Spain",
+  "url": "https://www.tmgrupoinmobiliario.com/en/properties/U83-01_new-build-apartment-beach-alicante-torrevieja-coronella-living-by-tm",
+  "docs_url": "https://www.tmgrupoinmobiliario.com/en/properties/U83-01_new-build-apartment-beach-alicante-torrevieja-coronella-living-by-tm",
+  "permit_number": "Licencia de obra mayor, expediente 65716/2022 (Torrevieja Junta de Gobierno Local, 17 May 2024)",
+  "docs_listed": [
+   "price list per unit EUR 272,000 to 445,000",
+   "downloadable plans per unit",
+   "building permit PDF: Torrevieja town hall notice of licence (exp. 65716/2022) for 13 blocks, 112 homes",
+   "digital catalogue and promotion PDF",
+   "undated site photos and webcam image",
+   "headline delivery 30 Aug 2027, unit tables Aug 2027 to Jul 2028"
+  ],
+  "note": "112 two and three bedroom bungalows in La Coronelita, Torrevieja, from EUR 272,000 to 445,000, headline delivery 30 Aug 2027 with some units to Jul 2028. The page links the Torrevieja town hall licence (exp. 65716/2022, granted 17 May 2024 to TM company Villaviñas SL); no deposit guarantee or dated progress is published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 272000,
+   "currency": "EUR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": true,
+   "permit_number": "Licencia de obra mayor, expediente 65716/2022 (Torrevieja, 17 May 2024)",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "TM about page: more than 25,000 properties delivered since 1969; names earlier projects such as Viñamar (1,800 properties), Riomar, Veramar and Benidorm towers",
+   "units": 112,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Developer page links COB828713.pdf: Torrevieja Junta de Gobierno Local notice (session 17 May 2024) granting licencia de obra mayor exp. 65716/2022 to Villaviñas SL (B03457462) for 13 blocks of 112 homes, sector 27 La Coronelita; e-signed, verifiable at torrevieja.sedelectronica.es",
+   "escrow": null,
+   "progress": "Only undated site photos and a webcam image; no % or dated update",
+   "plans": "'Download plans' link per unit",
+   "record": "TM about page: over 25,000 properties delivered since 1969, named projects",
+   "returns": "No rental or yield promises on the page"
+  },
+  "positives": [
+   "Town hall building licence document published on the project page",
+   "Per-unit prices, plans and delivery months published",
+   "Developer entity Villaviñas SL is registered, audited by Deloitte"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.tmgrupoinmobiliario.com/en/properties/U83-01_new-build-apartment-beach-alicante-torrevieja-coronella-living-by-tm",
+   "https://static.tmgrupoinmobiliario.com/media/fases/documentos/COB828713.pdf",
+   "https://www.tmgrupoinmobiliario.com/en/about-us",
+   "https://filings.es/spain/company/villavinas-sociedad-limitada-b03457462",
+   "https://www.empresia.es/empresa/villavinas/",
+   "https://infonif.economia3.com/ficha-empresa/villavinas-sl"
+  ],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building licence granted (exp. 65716/2022)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://static.tmgrupoinmobiliario.com/media/fases/documentos/COB828713.pdf"
+   },
+   {
+    "claim": "Licence covers 112 homes in 13 blocks at La Coronelita",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://static.tmgrupoinmobiliario.com/media/fases/documentos/COB828713.pdf"
+   },
+   {
+    "claim": "Promoter Villaviñas SL is a registered company (B03457462, Registro Mercantil Alicante)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://filings.es/spain/company/villavinas-sociedad-limitada-b03457462"
+   },
+   {
+    "claim": "Delivery 30 Aug 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.tmgrupoinmobiliario.com/en/properties/U83-01_new-build-apartment-beach-alicante-torrevieja-coronella-living-by-tm"
+   },
+   {
+    "claim": "Prices from EUR 272,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.tmgrupoinmobiliario.com/en/properties/U83-01_new-build-apartment-beach-alicante-torrevieja-coronella-living-by-tm"
+   },
+   {
+    "claim": "Deposits protected by bank guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.tmgrupoinmobiliario.com/en/properties/U83-01_new-build-apartment-beach-alicante-torrevieja-coronella-living-by-tm"
+   },
+   {
+    "claim": "More than 25,000 properties delivered since 1969",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.tmgrupoinmobiliario.com/en/about-us"
+   },
+   {
+    "claim": "Construction under way",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.tmgrupoinmobiliario.com/en/properties/U83-01_new-build-apartment-beach-alicante-torrevieja-coronella-living-by-tm"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1969,
+   "developer_hq": "Torrevieja, Spain",
+   "developer_company": "Villaviñas SL, CIF B03457462 (Registro Mercantil de Alicante, hoja A11519), part of TM Grupo Inmobiliario",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 25000,
+   "listed_or_audited": "Not listed; Villaviñas SL accounts audited by Deloitte SL (registry data)",
+   "construction_start": null,
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR bungalow",
+    "3BR bungalow"
+   ],
+   "size_min_m2": 84,
+   "size_max_m2": 204,
+   "price_min": 272000,
+   "price_max": 445000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "swimming pools",
+    "jacuzzis",
+    "green spaces",
+    "children's play area",
+    "storage rooms",
+    "parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ayuntamiento de Torrevieja (Junta de Gobierno Local), licencia de obra mayor",
+   "brochure_url": "https://static.tmgrupoinmobiliario.com/media/fases/catalogos/COB966923.pdf"
+  },
+  "verified_score": 1
+ },
+ {
+  "slug": "tm-tower-benidorm-tm",
+  "name": "TM Tower",
+  "developer": "TM Grupo Inmobiliario",
+  "area": "Benidorm (Playa Poniente)",
+  "country": "Spain",
+  "market": "Spain",
+  "url": "https://www.luxinmo.com/new-developments/742359",
+  "docs_url": "https://www.tmgrupoinmobiliario.com/en/properties/U68-04_beach-apartments-sea-views-spain-benidorm-costa-blanca-north-tm-tower-by-tm",
+  "permit_number": "Licencia de obra mayor (proyecto básico), expediente 28377/2024 (Benidorm Junta de Gobierno Local, 25 Aug 2025)",
+  "docs_listed": [
+   "developer: prices EUR 607,000 to 2,317,000, 75-243 m2",
+   "developer: download plans per unit",
+   "developer: building permit PDF (Benidorm licence exp. 28377/2024)",
+   "developer: catalogues, specifications, energy labels",
+   "developer: all listed units delivery Aug 2028",
+   "news: underground phase complete (El Debate, Jun 2026)"
+  ],
+  "note": "64-floor tower of 260 homes 150 m from Poniente beach, Benidorm, from EUR 607,000 to 2.3M with delivery shown as Aug 2028. The developer page links Benidorm's licence for the basic project (exp. 28377/2024, granted 25 Aug 2025) and per-unit plans; no deposit guarantee or progress figure is published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 607000,
+   "currency": "EUR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q3",
+   "permit_claim": true,
+   "permit_number": "Licencia de obra mayor, expediente 28377/2024 (Benidorm, 25 Aug 2025)",
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "TM about page: more than 25,000 properties delivered since 1969; earlier Benidorm towers Sunset Dreams, Sunset Waves, Sunset Cliffs, Sunset Sailors, Eagle Tower named in TM blog",
+   "units": 260,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Developer page links COB010198.pdf: Benidorm Junta de Gobierno Local, 25 Aug 2025, licence for basic project of 260 homes, garage, storage, pools, parcel ZE 1-1 PP 2/1 Poniente, exp. 28377/2024, applicant Villaviñas SLU",
+   "escrow": null,
+   "progress": "Developer shows a site photo and a webcam image, undated; El Debate (Jun 2026) reported underground phase complete",
+   "plans": "'Download plans' per unit on developer page",
+   "record": "TM about page: over 25,000 properties delivered",
+   "returns": "No guaranteed rental language"
+  },
+  "positives": [
+   "Town hall licence document published",
+   "Per-unit prices and plans published",
+   "Independent press confirms works under way"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.luxinmo.com/new-developments/742359",
+   "https://www.tmgrupoinmobiliario.com/en/properties/U68-04_beach-apartments-sea-views-spain-benidorm-costa-blanca-north-tm-tower-by-tm",
+   "https://static.tmgrupoinmobiliario.com/media/fases/documentos/COB010198.pdf",
+   "https://www.tmgrupoinmobiliario.com/en/about-us",
+   "https://www.eldebate.com/espana/comunidad-valenciana/20260622/benidorm-desafia-cielo-torre-residencial-alta-europa-emerge-suelo_430240_amp.html",
+   "https://alicanteplaza.es/newsletter/boletin.php?i=1001478",
+   "https://blog.tmgrupoinmobiliario.com/en/2025/09/23/tm-tower-this-is-what-europes-tallest-residential-skyscraper-will-be-like/",
+   "https://filings.es/spain/company/villavinas-sociedad-limitada-b03457462"
+  ],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Benidorm licence granted for 260 homes (exp. 28377/2024)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://static.tmgrupoinmobiliario.com/media/fases/documentos/COB010198.pdf"
+   },
+   {
+    "claim": "Licence is for the basic project (proyecto básico)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://static.tmgrupoinmobiliario.com/media/fases/documentos/COB010198.pdf"
+   },
+   {
+    "claim": "Construction under way",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.eldebate.com/espana/comunidad-valenciana/20260622/benidorm-desafia-cielo-torre-residencial-alta-europa-emerge-suelo_430240_amp.html"
+   },
+   {
+    "claim": "Promoter Villaviñas SLU is a registered company",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://filings.es/spain/company/villavinas-sociedad-limitada-b03457462"
+   },
+   {
+    "claim": "Delivery Aug 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.tmgrupoinmobiliario.com/en/properties/U68-04_beach-apartments-sea-views-spain-benidorm-costa-blanca-north-tm-tower-by-tm"
+   },
+   {
+    "claim": "Prices from EUR 607,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.tmgrupoinmobiliario.com/en/properties/U68-04_beach-apartments-sea-views-spain-benidorm-costa-blanca-north-tm-tower-by-tm"
+   },
+   {
+    "claim": "Deposits protected by bank guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.tmgrupoinmobiliario.com/en/properties/U68-04_beach-apartments-sea-views-spain-benidorm-costa-blanca-north-tm-tower-by-tm"
+   },
+   {
+    "claim": "Tallest residential building in Europe",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://landing.tmgrupoinmobiliario.com/splash/spain-benidorm-alicante-poniente-beach-tm-tower-en/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1969,
+   "developer_hq": "Torrevieja, Spain",
+   "developer_company": "Villaviñas SLU, CIF B03457462 (Registro Mercantil de Alicante)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 25000,
+   "listed_or_audited": "Not listed; Villaviñas SL accounts audited by Deloitte SL (registry data)",
+   "construction_start": null,
+   "handover_promised": "2028-Q3",
+   "original_handover": "2028-Q4 (TM blog, Sep 2025)",
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": 75,
+   "size_max_m2": 243,
+   "price_min": 607000,
+   "price_max": 2317000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "climate-controlled pools",
+    "gym",
+    "cinema room",
+    "wellness spaces",
+    "sports area",
+    "sky bar and observatory",
+    "parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ayuntamiento de Benidorm (Junta de Gobierno Local), licencia de obra mayor",
+   "brochure_url": "https://static.tmgrupoinmobiliario.com/media/fases/catalogos/COB947040.pdf"
+  },
+  "verified_score": 2
+ },
+ {
+  "slug": "infinity-paguera-taylor-wimpey",
+  "name": "Infinity",
+  "developer": "Taylor Wimpey España",
+  "area": "Paguera, Mallorca",
+  "country": "Spain",
+  "market": "Spain",
+  "url": "https://taylorwimpeyspain.com/property/infinity-paguera-mallorca/",
+  "docs_url": "https://taylorwimpeyspain.com/property/infinity-paguera-mallorca/",
+  "permit_number": null,
+  "docs_listed": [
+   "prices by type from EUR 900,000 to 1,945,000 excl. VAT",
+   "plans for all layouts",
+   "progress video labelled 10/2026",
+   "digital brochure, quality specifications PDF, energy certificate (cadastral ref. 07011A00500446)",
+   "phase 1 handover Nov 2028 (unit cards 02-11-2028)",
+   "buyers guide: all payments covered by bank guarantee or insurance policy"
+  ],
+  "note": "79 two and three bedroom sea-view apartments in five buildings at Carrer Toni Munar Cerdà 9, Paguera, from EUR 900,000 plus VAT, phase 1 handover Nov 2028. Plans, an Oct 2026 progress video and a written payment-guarantee policy are published, but no licence number. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 900000,
+   "currency": "EUR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Taylor Wimpey España: all amounts paid are guaranteed by bank guarantee or insurance policy under the Building Regulations Law; policy issued about 30 working days after each payment (buyers guide)",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Taylor Wimpey España: 'Building homes on the Spanish coast for over 65 years' (no count of homes published)",
+   "units": 79,
+   "payment_plan": "Reservation EUR 6,000 or 12,000; 30% plus VAT at private contract; balance at deed on completion",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No licence number; energy certificate gives cadastral reference 07011A00500446 only. Buyers guide says the building permit is sent with the draft contract",
+   "escrow": "Buyers guide 'Payment guarantees for homes under construction' and TWE blog: all amounts paid bank or insurance-policy guaranteed",
+   "progress": "Progress video labelled 10/2026; no % published",
+   "plans": "'Plans' links for all layouts",
+   "record": "65 years building on the Spanish coast stated; parent Taylor Wimpey plc is listed",
+   "returns": "No rental guarantee or yield on the page"
+  },
+  "positives": [
+   "Written deposit-guarantee policy (bank guarantee or insurance) published",
+   "Full price list by unit type and plans",
+   "Dated construction video (Oct 2026)",
+   "Energy rating A certificate published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://taylorwimpeyspain.com/property/infinity-paguera-mallorca/",
+   "https://taylorwimpeyspain.com/buyers-guide/",
+   "https://taylorwimpeyspain.com/blog/expert-insights-what-do-you-pay-and-when-when-buying-a-home-off-plan-in-spain/",
+   "https://taylorwimpeyspain.com/wp-content/uploads/2025/10/Infinity-Paguera-0001_Certificado-de-eficiencia-energetica.pdf",
+   "https://taylorwimpeyspain.com/es/taylor-wimpey-espana-lanza-una-promocion-de-79-viviendas-en-mallorca/",
+   "https://taylorwimpeyspain.com/wp-content/uploads/2025/10/INFINITY-Memoria-calidades-ENG-10Julio2026_min.pdf",
+   "https://taylorwimpeyspain.com/?p=246897"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Payments guaranteed by bank guarantee or insurance policy",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/buyers-guide/"
+   },
+   {
+    "claim": "Phase 1 handover November 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/property/infinity-paguera-mallorca/"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/buyers-guide/"
+   },
+   {
+    "claim": "Plot is cadastral reference 07011A00500446, Calvià",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/wp-content/uploads/2025/10/Infinity-Paguera-0001_Certificado-de-eficiencia-energetica.pdf"
+   },
+   {
+    "claim": "79 apartments in five buildings, EUR 64M investment",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/es/taylor-wimpey-espana-lanza-una-promocion-de-79-viviendas-en-mallorca/"
+   },
+   {
+    "claim": "Energy rating A",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/wp-content/uploads/2025/10/Infinity-Paguera-0001_Certificado-de-eficiencia-energetica.pdf"
+   },
+   {
+    "claim": "Prices from EUR 900,000 plus VAT",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://taylorwimpeyspain.com/property/infinity-paguera-mallorca/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Spain (parent Taylor Wimpey plc, UK)",
+   "developer_company": "Taylor Wimpey de España SAU",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Parent Taylor Wimpey plc is listed on the London Stock Exchange",
+   "construction_start": null,
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "2BR penthouse",
+    "3BR penthouse"
+   ],
+   "size_min_m2": 92,
+   "size_max_m2": 111,
+   "price_min": 900000,
+   "price_max": 1945000,
+   "currency": "EUR",
+   "deposit_pct": 30,
+   "payment_plan": "Reservation EUR 6,000/12,000; 30% plus VAT at contract; balance at deed",
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "five infinity pools",
+    "landscaped gardens",
+    "lift",
+    "storeroom",
+    "parking with EV pre-installation",
+    "underfloor heating",
+    "aerothermy"
+   ],
+   "lat": 39.546,
+   "lng": 2.449,
+   "permit_authority": "Ajuntament de Calvià, licencia de obra mayor",
+   "brochure_url": "https://catalog.taylorwimpeyspain.com/infinity-paguera-eng/"
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "the-kove-kronos-homes",
+  "name": "The Kove",
+  "developer": "Kronos Homes",
+  "area": "Mijas",
+  "country": "Spain",
+  "market": "Costa del Sol",
+  "url": "https://kronoshomes.com/en/projects/malaga/the-kove",
+  "docs_url": "https://kronoshomes.com/en/projects/malaga/the-kove",
+  "permit_number": null,
+  "docs_listed": [
+   "price tables from EUR 385,000 (another page version from EUR 395,000)",
+   "sizes 79-109 m2, penthouses 91-97 m2",
+   "status shown as 'In Commercialization' and 'Works Initiated' on two page versions",
+   "contractor award to SANJOSE (Pintura Virila / Kronos) announced 7 Apr 2026"
+  ],
+  "note": "166 one to three bedroom homes in six buildings in Mijas from EUR 385,000; La Opinión de Málaga and Diario Sur reported works started in Apr 2026 with SANJOSE as builder. The developer page publishes prices and sizes but no delivery date, licence, deposit guarantee or plan files. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 385000,
+   "currency": "EUR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Kronos Homes delivered Eden (142 homes) and Ipanema (140 homes) in Mijas among 638 homes in Andalucía (Observatorio Inmobiliario, Sep 2024); group delivered 1,500 homes in 2024 (El País)",
+   "units": 166,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Developer page shows status label only; works start reported by La Opinión de Málaga and Diario Sur (28 Apr 2026)",
+   "plans": "'Plan' column but no files",
+   "record": "Observatorio Inmobiliario: Eden (Mijas, 142), Ipanema (La Cala de Mijas, 140), Soho, Oasis 325 delivered; El País: 1,500 homes delivered in 2024",
+   "returns": "No guaranteed rental language"
+  },
+  "positives": [
+   "Prices and unit sizes published",
+   "Named contractor (SANJOSE) and architects",
+   "Developer has delivered other Mijas schemes (Eden, Ipanema)"
+  ],
+  "flags": [],
+  "sources": [
+   "https://kronoshomes.com/en/projects/malaga/the-kove",
+   "https://www.kronoshomes.com/en/projects/malaga/the-kove/",
+   "https://www.laopiniondemalaga.es/malaga/2026/04/28/kronos-homes-inicia-obras-malaga-270-viviendas-mijas-torremolinos-129617944.html",
+   "https://www.diariosur.es/costadelsol/kronos-homes-comienza-obras-270-viviendas-torremolinos-20260428143657-nt.html",
+   "https://gruposanjose.biz/english/n_SANJOSE-construira-el-Complejo-Residencial-The-Kove-Kronos-en-Mijas-Malaga_1973",
+   "https://observatorioinmobiliario.es/noticias/residencial/kronos-se-afianza-en-el-residencial-andaluz-con-una-inversi%C3%B3n-de-m%C3%A1s-de-200-millones/",
+   "https://elpais.com/economia/negocios/2025-07-23/kronos-la-promotora-sin-ansias-de-crecer.html",
+   "https://brainsre.news/kronos-homes-entregara-1-000-viviendas-2022/",
+   "https://hcparquitectos.com/es/projects/the-kove-es/",
+   "https://www.thespanisheye.com/2026/04/29/pictured-kronos-homes-launches-new-developments-in-torremolinos-and-mijas/",
+   "https://brainsre.news/kronos-101-millones-270-viviendas-mijas-torremolinos/"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction started (Apr 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.laopiniondemalaga.es/malaga/2026/04/28/kronos-homes-inicia-obras-malaga-270-viviendas-mijas-torremolinos-129617944.html"
+   },
+   {
+    "claim": "166 homes in six buildings",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://gruposanjose.biz/english/n_SANJOSE-construira-el-Complejo-Residencial-The-Kove-Kronos-en-Mijas-Malaga_1973"
+   },
+   {
+    "claim": "Main contractor SANJOSE",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://gruposanjose.biz/english/n_SANJOSE-construira-el-Complejo-Residencial-The-Kove-Kronos-en-Mijas-Malaga_1973"
+   },
+   {
+    "claim": "Developer has delivered earlier Costa del Sol projects",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://observatorioinmobiliario.es/noticias/residencial/kronos-se-afianza-en-el-residencial-andaluz-con-una-inversi%C3%B3n-de-m%C3%A1s-de-200-millones/"
+   },
+   {
+    "claim": "Building licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kronoshomes.com/en/projects/malaga/the-kove"
+   },
+   {
+    "claim": "Prices from EUR 385,000 (La Opinión saw EUR 359,000 to 500,000 in Apr 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.laopiniondemalaga.es/malaga/2026/04/28/kronos-homes-inicia-obras-malaga-270-viviendas-mijas-torremolinos-129617944.html"
+   },
+   {
+    "claim": "Deposits protected by bank guarantee",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kronoshomes.com/en/projects/malaga/the-kove"
+   },
+   {
+    "claim": "Delivery date",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kronoshomes.com/en/projects/malaga/the-kove"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2014,
+   "developer_hq": "Madrid, Spain",
+   "developer_company": "Pintura Virila (Kronos Homes), per SANJOSE contract notice",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Not listed (founders said no plan to list, Brains RE 2022)",
+   "construction_start": "2026-04",
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": 79,
+   "size_max_m2": 109,
+   "price_min": 385000,
+   "price_max": 565000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "two pools",
+    "spa",
+    "gym",
+    "coworking",
+    "gardens"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ayuntamiento de Mijas, licencia de obra mayor",
+   "brochure_url": null
+  },
+  "verified_score": 2
+ },
+ {
+  "slug": "comfort-by-orbi-orbi-group",
+  "name": "Comfort by Orbi",
+  "developer": "Orbi Group",
+  "area": "Khimshiashvili, Batumi",
+  "country": "Georgia",
+  "market": "Georgia",
+  "url": "https://korter.ge/en/comfort-by-orbi-batumi",
+  "docs_url": "https://orbi.ge/project/comfort-by-orbi",
+  "permit_number": null,
+  "docs_listed": [
+   "portal: dated construction photos Nov 2023 to Oct 2026",
+   "portal: about 580 apartments, 34 floors, cadastral number 05.24.08.138 (not a permit)",
+   "portal: developer units sold, resale from USD 23,000 (USD 1,023-1,291 per m2)",
+   "developer: project page with enquiry form only",
+   "other portals describe the building as completed (HomeRadar, Sivrce)"
+  ],
+  "note": "Orbi Group tower at Niko Pirosmani St 21a, Batumi; Korter shows one 34-floor, 580-unit building under construction with dated photos to Oct 2026 and developer stock sold out, while HomeRadar and Sivrce list it as completed. No completion date, permit number, plans or deposit protection published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 23000,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Orbi Group site lists Orbi Sea Towers as a 'Completed Seaside Project' and Orbi City among its projects",
+   "units": 580,
+   "payment_plan": "Full payment; other options by consultation (portal)",
+   "price_per_m2": 1023
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Only cadastral number 05.24.08.138",
+   "escrow": null,
+   "progress": "Korter photo spots dated to Oct 2026; HomeRadar and Sivrce say completed, Sivrce lists 120 flats and 10 floors, so sources disagree",
+   "plans": "Not published (HomeRadar: 'layouts are not published')",
+   "record": "Orbi Group projects page names Orbi Sea Towers as completed",
+   "returns": "No guaranteed income mentioned"
+  },
+  "positives": [
+   "Dated construction photos since late 2023",
+   "Per-m2 resale prices visible"
+  ],
+  "flags": [],
+  "sources": [
+   "https://korter.ge/en/comfort-by-orbi-batumi",
+   "https://orbi.ge/project/comfort-by-orbi",
+   "https://wwworbi.orbi.ge/projects",
+   "https://homeradar.ge/projects/comfort-by-orbi",
+   "https://sivrce.ge/en/mshenebare-binebi/orbi-comfort",
+   "https://estate-georgia.ge/en/property/comfort-by-orbi"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building under construction (Korter)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://homeradar.ge/projects/comfort-by-orbi"
+   },
+   {
+    "claim": "34 floors and about 580 apartments",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://sivrce.ge/en/mshenebare-binebi/orbi-comfort"
+   },
+   {
+    "claim": "Developer apartments sold out",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://korter.ge/en/comfort-by-orbi-batumi"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://korter.ge/en/comfort-by-orbi-batumi"
+   },
+   {
+    "claim": "Orbi Group has completed projects in Batumi (Orbi Sea Towers)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://wwworbi.orbi.ge/projects"
+   },
+   {
+    "claim": "Resale prices from USD 23,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://korter.ge/en/comfort-by-orbi-batumi"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Batumi, Georgia",
+   "developer_company": "Orbi Group (legal entity not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 22,
+   "size_max_m2": 44,
+   "price_min": 23000,
+   "price_max": 45000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": "Full payment; other options at sales office",
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "underground parking",
+    "courtyard",
+    "children's playground",
+    "24/7 CCTV",
+    "high-speed lifts"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Batumi City Hall (construction permit)",
+   "brochure_url": null
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "al-mare-green-midtown-group",
+  "name": "Al Mare Green",
+  "developer": "Midtown Group",
+  "area": "Makhinjauri, Batumi",
+  "country": "Georgia",
+  "market": "Georgia",
+  "url": "https://korter.ge/en/al-mare-green-batumi",
+  "docs_url": "https://korter.ge/en/al-mare-green-batumi",
+  "permit_number": null,
+  "docs_listed": [
+   "portal: dated construction photos Mar 2025 to Oct 2026",
+   "portal: layouts studio to 4-room, 29-114 m2, prices on request",
+   "portal: delivery Q4 2027",
+   "portal: cadastral number 05.34.23.776 (not a permit)",
+   "portal: TBC Bank mortgage or full payment",
+   "intermediary (Alori): 'guaranteed +20% buyback' on promotional units from 1 Jan 2027"
+  ],
+  "note": "12-floor building at Tbilisi St 1, Makhinjauri, Batumi, due Q4 2027 with dated site photos to Oct 2026 and layouts of 29-114 m2; prices on request. An intermediary, Alori International Holdings, markets a 'guaranteed +20% buyback' said to be in the developer's contract; no permit number or deposit protection is published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Korter: Midtown Group completed Harmonia (Luka Asatiani St 67) and Al Mare (Zgvispiri St 4, completed 2022); Midtown site marks Harmonia as delivered",
+   "units": null,
+   "payment_plan": "Full payment or bank mortgage (TBC Bank); milestone schedule per intermediary",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Only cadastral number 05.34.23.776",
+   "escrow": null,
+   "progress": "Korter photos dated Mar 2025 to Oct 2026; no %",
+   "plans": "Layouts studio to 4-room on Korter",
+   "record": "Korter developer page: Harmonia and Al Mare (2022) completed",
+   "returns": "Alori: 'Guaranteed Buyback: 20%+ (Jan 2027)', 'structured contractually with the developer'; Korter mentions rental potential only"
+  },
+  "positives": [
+   "Delivery quarter published",
+   "Dated construction photos",
+   "Apartment layouts and sizes published",
+   "Two earlier Batumi buildings named as completed"
+  ],
+  "flags": [],
+  "sources": [
+   "https://korter.ge/en/al-mare-green-batumi",
+   "https://korter.ge/en/midtown-group",
+   "https://www.midtowngroup.ge/",
+   "https://www.aloriinternationalholdings.com/investment-opportunity/beachside-residential-tower----batumi-georgia",
+   "https://batumi.estate/en/developers/midtown-group"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "contradicted"
+  },
+  "claims": [
+   {
+    "claim": "Guaranteed +20% buyback from 1 Jan 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aloriinternationalholdings.com/investment-opportunity/beachside-residential-tower----batumi-georgia"
+   },
+   {
+    "claim": "Delivery Q4 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://korter.ge/en/al-mare-green-batumi"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://korter.ge/en/al-mare-green-batumi"
+   },
+   {
+    "claim": "Midtown completed Al Mare (2022) and Harmonia",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://korter.ge/en/midtown-group"
+   },
+   {
+    "claim": "Founded 2014 (Korter) or 2015 (Batumi Estate, Alori)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://batumi.estate/en/developers/midtown-group"
+   },
+   {
+    "claim": "Bank mortgage available from TBC Bank",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://korter.ge/en/al-mare-green-batumi"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2014,
+   "developer_hq": "Batumi, Georgia",
+   "developer_company": "Midtown Group LLC (registration number not published)",
+   "developer_projects_delivered": 2,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": 29,
+   "size_max_m2": 114,
+   "price_min": null,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": "Full payment or TBC Bank mortgage",
+   "foreign_ownership": null,
+   "rental_programme": "Developer offers apartment management and rental services (Korter); intermediary advertises guaranteed 20%+ buyback",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "reception",
+    "underground parking",
+    "three lifts",
+    "children's playground",
+    "gas heating",
+    "storage lockers"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Batumi City Hall (construction permit)",
+   "brochure_url": null
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "querencia-dovec-group",
+  "name": "Querencia",
+  "developer": "Döveç Group",
+  "area": "İskele (Long Beach)",
+  "country": "Northern Cyprus",
+  "market": "Northern Cyprus",
+  "url": "https://www.emlakplatform.com.tr/tr/projects/querencia-long-beach",
+  "docs_url": "https://www.dovecgroup.com/en/projects/querencia",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: 705 units, from GBP 146,000, delivery March 2027",
+   "developer: studio 39 m2 plan, brochure (fliphtml5), 360 tour",
+   "developer: professional rental management system, no figures",
+   "portal: 55% complete, delivery 01.06.2027, 4 blocks of 28 floors on 34,850 m2",
+   "portal: 35% down, 20 instalments; 8% expected yield; title 'sözleşme' (contract)"
+  ],
+  "note": "705 units in four 28-floor blocks opposite Long Beach, İskele, from GBP 146,000; Döveç lists delivery March 2027 while Emlak Platform shows 55% complete and 01.06.2027. Döveç says it has delivered over 5,000 homes since 1989; no permit number or deposit protection is published and title is by contract. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 146000,
+   "currency": "GBP",
+   "title": "contract (sözleşme)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 8,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 55,
+   "progress_updates": false,
+   "developer_delivered": "Döveç Group: founded 1989, 'over 5,000 homes delivered' (about page)",
+   "units": 705,
+   "payment_plan": "35% down payment, then 20 instalments",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Emlak Platform: project completion 55%",
+   "plans": "Studio plan on Döveç page; portal lists unit sizes",
+   "record": "dovecgroup.com/en/about: over 5,000 homes delivered",
+   "returns": "Portal lists 8% expected yield; Döveç mentions rental management with no guarantee"
+  },
+  "positives": [
+   "Construction % published (55%)",
+   "Instalment plan published",
+   "Developer states over 5,000 homes delivered since 1989"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.emlakplatform.com.tr/tr/projects/querencia-long-beach",
+   "https://www.dovecgroup.com/en/projects/querencia",
+   "https://www.dovecgroup.com/en/about"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Delivery March 2027 (Döveç) vs 01.06.2027 (portal)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/tr/projects/querencia-long-beach"
+   },
+   {
+    "claim": "Construction 55% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/tr/projects/querencia-long-beach"
+   },
+   {
+    "claim": "Over 5,000 homes delivered since 1989",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dovecgroup.com/en/about"
+   },
+   {
+    "claim": "Prices from GBP 146,000 (portal shows from USD 209,001)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dovecgroup.com/en/projects/querencia"
+   },
+   {
+    "claim": "Expected 8% rental yield",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/tr/projects/querencia-long-beach"
+   },
+   {
+    "claim": "Title by contract (sözleşme), not a title deed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/tr/projects/querencia-long-beach"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.dovecgroup.com/en/projects/querencia"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1989,
+   "developer_hq": "Northern Cyprus",
+   "developer_company": "Döveç Group (legal entity not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 5000,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "2BR duplex",
+    "4BR duplex",
+    "5BR duplex",
+    "penthouse"
+   ],
+   "size_min_m2": 39,
+   "size_max_m2": 251,
+   "price_min": 146000,
+   "price_max": null,
+   "currency": "GBP",
+   "deposit_pct": 35,
+   "payment_plan": "35% down, 20 instalments",
+   "foreign_ownership": "Sale contract (sözleşme); title deed not stated",
+   "rental_programme": "Professional rental management system, no figures (developer); 8% expected yield (portal)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "spa",
+    "beach club",
+    "infinity pool",
+    "concierge",
+    "gym",
+    "aqua park",
+    "24/7 security",
+    "EV charging"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "TRNC Town Planning Department and local municipality",
+   "brochure_url": "https://online.fliphtml5.com/ulawp/ucfd/"
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "avrupa-konutlari-gunesli-artas",
+  "name": "Avrupa Konutları Güneşli",
+  "developer": "Artaş Holding",
+  "area": "Güneşli, Bağcılar",
+  "country": "Turkey",
+  "market": "Istanbul",
+  "url": "https://www.emlakplatform.com.tr/en/projects/avrupa-konutlari-gunesli",
+  "docs_url": "https://www.artasholding.com/en-us/project/avrupa-konutlari-gunesli/",
+  "permit_number": null,
+  "docs_listed": [
+   "portal: 80% complete, delivery 30.07.2027",
+   "portal: 1+1 to 3+1, 75-205 m2, from USD 295,000; avg USD 3,104 per m2",
+   "portal: 60% down, 6 instalments; 5% expected yield; easement title",
+   "developer: 1,556 homes, 11 blocks, 24 shops, 72,148 m2 land, e-catalogue",
+   "developer milestones: construction started 2025; long list of completed Avrupa Konutları projects",
+   "trade press: EIA 'not required' decisions; land registered to İÇDAŞ and Metal Yapı Konut under revenue-sharing deal"
+  ],
+  "note": "1,556 homes in 11 blocks plus 24 shops at Devekaldırımı Cad. 19, Güneşli, shown as 80% complete with delivery 30.07.2027 and prices from USD 295,000. Trade press reports Ministry EIA-exemption decisions and that the land belongs to İÇDAŞ and Metal Yapı Konut under a revenue-sharing deal; no permit number or deposit protection is published and title is easement until completion. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 295000,
+   "currency": "USD",
+   "title": "easement (kat irtifakı)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 5,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 80,
+   "progress_updates": false,
+   "developer_delivered": "Artaş milestones page lists completed Avrupa Konutları projects with unit counts (e.g. Atakent 1: 1,368; TEM: 3,100; Atakent 3: 2,292; Tema İstanbul: 3,531; Esentepe: 865 in 2024); 'over 45,000 homes' under the brand",
+   "units": 1556,
+   "payment_plan": "60% down, 6 instalments (portal); Dec 2025 launch campaign 30% down, 18 months 0% interest (Emlak Kulisi)",
+   "price_per_m2": 3104
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit number from developer or portal; Emlak Kulisi (Aug 2023) and EmlakNews (Jul 2025) report Ministry 'ÇED Gerekli Değildir' decision and capacity-increase application on parcel 2587 ada 23",
+   "escrow": null,
+   "progress": "Emlak Platform: project completion 80%; Artaş milestones: construction started 2025",
+   "plans": "Floor plan images on portal",
+   "record": "Artaş milestones page: named completed projects with unit counts since 2006",
+   "returns": "Expected 5% yield, not guaranteed"
+  },
+  "positives": [
+   "Developer publishes a dated list of completed projects with unit counts",
+   "Construction % published",
+   "Land parcel and EIA history reported in trade press"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.emlakplatform.com.tr/en/projects/avrupa-konutlari-gunesli",
+   "https://www.artasholding.com/en-us/project/avrupa-konutlari-gunesli/",
+   "https://www.artasholding.com/en-us/corporate/milestones/",
+   "https://www.artasholding.com/en/kurumsal/artas-hakkinda/",
+   "https://www.emlaknews.com.tr/haberler/avrupa-konutlari-guneslide-kapasite-artisi-1556-konut-ve-24-ticari-unite-geliyor/",
+   "https://www.emlaknews.com.tr/haberler/avrupa-konutlari-gunesli-1-312-konuttan-olusacak/",
+   "https://emlakkulisi.com/avrupa-konutlari-gunesli-resmen-basliyor-artastan-icdas-ve-metal-yapi-konutun-arazisine-1312-yeni-konut-geliyor/780282",
+   "https://emlakkulisi.com/avrupa-konutlari-gunesli-yuzde-30-pesinat-ve-18-ay-0-faizle-satisa-cikti-bin-556-konutluk-yeni-proje/824328",
+   "https://www.paradergi.com.tr/sektorler/2025/12/17/artas-holding-3-yeni-projesinde-satislara-basladi",
+   "https://www.bosphorusbrokers.com/ru/properties/avrupa-konutlari-gunesli/"
+  ],
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "EIA 'not required' decision obtained",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://emlakkulisi.com/avrupa-konutlari-gunesli-resmen-basliyor-artastan-icdas-ve-metal-yapi-konutun-arazisine-1312-yeni-konut-geliyor/780282"
+   },
+   {
+    "claim": "Land owned by İÇDAŞ and Metal Yapı Konut, built under revenue-sharing contract",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.emlaknews.com.tr/haberler/avrupa-konutlari-guneslide-kapasite-artisi-1556-konut-ve-24-ticari-unite-geliyor/"
+   },
+   {
+    "claim": "1,556 homes and 24 shops in 11 blocks",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://emlakkulisi.com/avrupa-konutlari-gunesli-yuzde-30-pesinat-ve-18-ay-0-faizle-satisa-cikti-bin-556-konutluk-yeni-proje/824328"
+   },
+   {
+    "claim": "Construction 80% complete",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/avrupa-konutlari-gunesli"
+   },
+   {
+    "claim": "Delivery 30.07.2027 (portal) vs Sept 2027 (EIA file)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.emlaknews.com.tr/haberler/avrupa-konutlari-guneslide-kapasite-artisi-1556-konut-ve-24-ticari-unite-geliyor/"
+   },
+   {
+    "claim": "Over 45,000 homes delivered under Avrupa Konutları",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.artasholding.com/en/kurumsal/artas-hakkinda/"
+   },
+   {
+    "claim": "Building permit (yapı ruhsatı) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/avrupa-konutlari-gunesli"
+   },
+   {
+    "claim": "Expected 5% rental yield",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/avrupa-konutlari-gunesli"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1977,
+   "developer_hq": "Istanbul, Turkey",
+   "developer_company": "Artaş İnşaat (Artaş Holding)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 45000,
+   "listed_or_audited": "Group company Avrupakent GYO was offered to the public in 2023 (Artaş milestones)",
+   "construction_start": "2025",
+   "handover_promised": "2027-Q3",
+   "original_handover": "2026-Q1 (2023 EIA file, 1,312-unit version)",
+   "delay_months": 18,
+   "unit_types": [
+    "1+1",
+    "2+1",
+    "3+1",
+    "4+1"
+   ],
+   "size_min_m2": 75,
+   "size_max_m2": 205,
+   "price_min": 295000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 60,
+   "payment_plan": "60% down, 6 instalments (portal)",
+   "foreign_ownership": "Easement title (kat irtifakı) until completion, then condominium title; portal lists citizenship-eligible",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "two pools",
+    "landscaped ponds",
+    "sauna",
+    "restaurant and cafe",
+    "2,043 parking spaces",
+    "commercial units"
+   ],
+   "lat": 41.045,
+   "lng": 28.829,
+   "permit_authority": "Bağcılar district municipality (yapı ruhsatı); EIA by Ministry of Environment, Urbanisation and Climate Change",
+   "brochure_url": null
+  },
+  "verified_score": 1
+ },
+ {
+  "slug": "yalikavak-loft-akfen-gyo",
+  "name": "Yalıkavak Loft (Muğla Yalıkavak Bodrum Project)",
+  "developer": "Akfen GYO (Akfen REIT)",
+  "area": "Yalıkavak, Bodrum",
+  "country": "Turkey",
+  "market": "Bodrum",
+  "url": "https://akfengyo.com.tr/en/portfolio/projects/ongoing-projects/mugla-yalikavak-bodrum-project/",
+  "docs_url": "https://akfengyo.com.tr/en/portfolio/projects/ongoing-projects/mugla-yalikavak-bodrum-project/",
+  "permit_number": "Bodrum Municipality yapı ruhsatı 2018/792-1 to 29 (23.11.2018); name-change ruhsat 2022/754-1 to 29 (15.11.2022)",
+  "docs_listed": [
+   "developer: 29 villas on 22,197 m2, completion and handover 2026",
+   "developer-published SPK valuation report (31.12.2025): building permit numbers, TKGM title record, block-by-block progress 70-100%",
+   "KAP H1 2026 report: construction works completed, awaiting permits for provisional acceptance",
+   "investor presentation May 2026: total investment EUR 61.3M, expected sales EUR 78.4M, planned delivery Q3 2026"
+  ],
+  "note": "Listed REIT Akfen GYO's 29 villas (Yalıkavak Loft) on parcel 696 ada 69, Yalıkavak. Its published valuation report cites Bodrum building permits 2018/792 and 2022/754 and found blocks 70-100% built at 31 Dec 2025, and a KAP filing says works were complete by Q2 2026 pending acceptance permits; no prices, plans or deposit terms are published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q3",
+   "permit_claim": true,
+   "permit_number": "Bodrum yapı ruhsatı 2018/792-1 to 29 (23.11.2018); 2022/754-1 to 29 (15.11.2022)",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Akfen İnşaat (contractor and group company) states over USD 3.5bn of construction projects completed since 1986 (KAP H1 2026 report)",
+   "units": 29,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Valuation report SM-25-SPK-043 on akfengyo.com.tr: Bodrum Belediyesi approved architectural project 11.09.2018; yeni yapı ruhsatı 2018/792-1..29 of 23.11.2018; name-change ruhsat 2022/754-1..29 of 15.11.2022",
+   "escrow": null,
+   "progress": "Valuation (31.12.2025): blocks at 90%, two blocks 70%, show villa 100%; KAP H1 2026: works completed, provisional acceptance pending",
+   "plans": "Approved project described in valuation report; no unit plans published",
+   "record": "KAP H1 2026: Akfen İnşaat completed projects worth over USD 3.5bn",
+   "returns": "None mentioned"
+  },
+  "positives": [
+   "Permit numbers and title record published in an SPK-licensed valuation report",
+   "Developer is a Borsa Istanbul-listed REIT with KAP filings",
+   "No encumbrances on title per TKGM record (11.12.2025)"
+  ],
+  "flags": [],
+  "sources": [
+   "https://akfengyo.com.tr/en/portfolio/projects/ongoing-projects/mugla-yalikavak-bodrum-project/",
+   "https://akfengyo.com.tr/wp-content/uploads/2026/01/Yalikavak-Loft.pdf",
+   "https://kap.org.tr/tr/api/file/download/4028328d9f52dddd019fd35d67383db7",
+   "https://storage.fintables.com/media/uploads/kap-attachments/AKFEN%20GYO_Yatirimci%20Sunumu_13_Mayis_2026.pdf",
+   "https://akfengyo.com.tr/yatirimci-iliskileri/raporlar/faaliyet-raporlari/"
+  ],
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building permits issued (2018/792, renamed 2022/754)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://akfengyo.com.tr/wp-content/uploads/2026/01/Yalikavak-Loft.pdf"
+   },
+   {
+    "claim": "Land owned by Akfen GYO since 15.09.2022, no encumbrances",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://akfengyo.com.tr/wp-content/uploads/2026/01/Yalikavak-Loft.pdf"
+   },
+   {
+    "claim": "Construction works completed by Q2 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://kap.org.tr/tr/api/file/download/4028328d9f52dddd019fd35d67383db7"
+   },
+   {
+    "claim": "Blocks 70-100% built at 31 Dec 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://akfengyo.com.tr/wp-content/uploads/2026/01/Yalikavak-Loft.pdf"
+   },
+   {
+    "claim": "Planned delivery Q3 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://storage.fintables.com/media/uploads/kap-attachments/AKFEN%20GYO_Yatirimci%20Sunumu_13_Mayis_2026.pdf"
+   },
+   {
+    "claim": "Expected sales revenue EUR 78.4M for 29 villas",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://storage.fintables.com/media/uploads/kap-attachments/AKFEN%20GYO_Yatirimci%20Sunumu_13_Mayis_2026.pdf"
+   },
+   {
+    "claim": "Developer is a listed REIT filing on KAP",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://kap.org.tr/tr/api/file/download/4028328d9f52dddd019fd35d67383db7"
+   },
+   {
+    "claim": "Occupancy permit (iskan) obtained",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://kap.org.tr/tr/api/file/download/4028328d9f52dddd019fd35d67383db7"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Ankara, Turkey",
+   "developer_company": "Akfen Gayrimenkul Yatırım Ortaklığı A.Ş. (Akfen GYO)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Listed on Borsa Istanbul (AKFGY), independent audit and KAP disclosures",
+   "construction_start": "2022-10",
+   "handover_promised": "2026-Q3",
+   "original_handover": "2026 (developer page)",
+   "delay_months": null,
+   "unit_types": [
+    "villa type A",
+    "villa type B",
+    "villa type C"
+   ],
+   "size_min_m2": 134,
+   "size_max_m2": 145,
+   "price_min": null,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold title deed (TKGM) once condominium title is issued",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pool per villa",
+    "sea and forest views"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Bodrum Municipality (yapı ruhsatı)",
+   "brochure_url": null
+  },
+  "verified_score": 3
+ },
+ {
+  "slug": "vlora-marina-balfin",
+  "name": "Vlora Marina",
+  "developer": "Balfin Real Estate (Balfin Group)",
+  "area": "Vlorë",
+  "country": "Albania",
+  "market": "Albania",
+  "url": "https://aplaceinthesun.com/new-developments/details/balfin-real-estate-vlora-marina-in-vlore-albania-from-426-000",
+  "docs_url": "https://balfinrealestate.com/vlora-marina-apartments/",
+  "permit_number": null,
+  "docs_listed": [
+   "Balfin page: 800+ apartments, 73 commercial units, Marriott hotel, 150 branded apartments, 400+ berths, 277,500 m2 built area",
+   "project site: block-by-block progress newsletter (B3/B4 frame done, B2 at level +2, B1/C2/C3 start Sep 2026)",
+   "project site: first residential units due end 2027; 'up to 25%' on initial sections (Nov 2025)",
+   "ad supplied by Vlora Marina on A Place in the Sun: 1BR EUR 426,000, 2BR EUR 492,000, 'guaranteed incomes thanks to the renting program'",
+   "business registry: KKT building permits for several blocks"
+  ],
+  "note": "Marina district in Vlorë with 800+ apartments, a Marriott hotel and branded apartments; the project site publishes block-level progress and says first units finish by end 2027. The Albanian registry shows the developer company is Marina Residences Vlorë sh.p.k., with KKT building permits for several blocks, and that Balfin exited it in Dec 2023; a project-supplied ad promises 'guaranteed incomes' without terms. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 426000,
+   "currency": "EUR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 800,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": false,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Not published by the project. Registry (QKB extract on opencorporates.al) lists KKT decisions: development permit Nr. 27 of 16.03.2022; building permits Nr. 10 and 11 of 27.11.2024 (Block 7, C1 and B1); KKT agenda 25.09.2024 for Phase 1 blocks",
+   "escrow": null,
+   "progress": "vloramarina.com newsletter with block-level status; Nov 2025 article: up to 25% on initial sections",
+   "plans": "Mood boards only",
+   "record": null,
+   "returns": "A Place in the Sun ad supplied by Vlora Marina: 'Guaranteed incomes thanks to the renting program'"
+  },
+  "positives": [
+   "Block-by-block construction updates published",
+   "Building permits for several blocks appear in the official business registry"
+  ],
+  "flags": [
+   {
+    "text": "IRL (Oct 2024) reported that Balfin left the developer company Marina Residences Vlorë in Dec 2023 while still marketing the project, and questioned how the adjacent state land was allocated without competition; the registry confirms Balfin's exit.",
+    "source": "https://irl.mk/a-dark-glimpse-into-albania-s-touristic-future-the-players-behind-vlora-marina/"
+   }
+  ],
+  "sources": [
+   "https://aplaceinthesun.com/new-developments/details/balfin-real-estate-vlora-marina-in-vlore-albania-from-426-000",
+   "https://balfinrealestate.com/vlora-marina-apartments/",
+   "https://vloramarina.com/newsletter-vm-en/",
+   "https://vloramarina.com/vlora-marinas-progress-construction-works-for-the-first-residential-units-will-be-completed-in-2027/",
+   "https://vloramarina.com/vlora-marina-from-vision-to-reality/",
+   "https://www.opencorporates.al/sq/nipt/M12103049U",
+   "https://opencorporates.al/documents/dokumenta/1785339760Rend_Dite_KKT_27-nentor_2024.pdf",
+   "https://irl.mk/a-dark-glimpse-into-albania-s-touristic-future-the-players-behind-vlora-marina/",
+   "https://vloramarina.com/?p=210267",
+   "https://balfinrealestate.com/?p=1898"
+  ],
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Developer is Balfin Real Estate",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://www.opencorporates.al/sq/nipt/M12103049U"
+   },
+   {
+    "claim": "KKT building permits granted for residential blocks (e.g. Nr. 10 and 11 of 27.11.2024)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.opencorporates.al/sq/nipt/M12103049U"
+   },
+   {
+    "claim": "Developer company Marina Residences Vlorë sh.p.k. registered (NIPT M12103049U)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.opencorporates.al/sq/nipt/M12103049U"
+   },
+   {
+    "claim": "First residential units completed by end 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vloramarina.com/vlora-marinas-progress-construction-works-for-the-first-residential-units-will-be-completed-in-2027/"
+   },
+   {
+    "claim": "Eastern breakwater completed",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://vloramarina.com/vlora-marinas-progress-construction-works-for-the-first-residential-units-will-be-completed-in-2027/"
+   },
+   {
+    "claim": "Guaranteed incomes from rental programme",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://aplaceinthesun.com/new-developments/details/balfin-real-estate-vlora-marina-in-vlore-albania-from-426-000"
+   },
+   {
+    "claim": "Marriott hotel and 150 branded apartments",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://balfinrealestate.com/vlora-marina-apartments/"
+   },
+   {
+    "claim": "Land leased from the state for strategic investment",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://irl.mk/a-dark-glimpse-into-albania-s-touristic-future-the-players-behind-vlora-marina/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": "Marina Residences Vlorë sh.p.k., NIPT M12103049U (registered 10.08.2021; 99.9% owned by Marina di Valona sh.p.k.)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 133.06,
+   "size_max_m2": 151.93,
+   "price_min": 426000,
+   "price_max": 492000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": "'Renting program' with 'guaranteed incomes', no terms (project-supplied ad)",
+   "service_charge": null,
+   "brand": "Marriott (hotel and branded residences)",
+   "amenities": [
+    "marina with 400+ berths",
+    "indoor and infinity pools",
+    "gym",
+    "private beach access",
+    "promenade",
+    "parks"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "National Territorial Council (KKT)",
+   "brochure_url": null
+  },
+  "verified_score": 1
+ },
+ {
+  "slug": "marina-waters-durres-eagle-hills",
+  "name": "Marina Waters Residence (Durrës Yachts & Marina)",
+  "developer": "Eagle Hills",
+  "area": "Durrës",
+  "country": "Albania",
+  "market": "Albania",
+  "url": "https://dxboffplan.com/properties/marina-waters-durres-yachts-and-marina-albania/",
+  "docs_url": "https://www.durresyachtsmarina.com/marina-waters-residence/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer page: 1-3 bedroom apartments and townhouses, amenities, fact sheet and brochure",
+   "developer fact sheet: ground+6 block, 17-floor tower, 152 apartments plus 8 duplexes",
+   "agent portal: completion Q4 2026, payment 10/50/40 (also called 60/40)",
+   "registry: KKTU building permits for several Durrës Marina buildings (2025)"
+  ],
+  "note": "Marina Waters in Eagle Hills' Durrës Yachts & Marina: a ground+6 block, a 17-floor tower and townhouses with 152 apartments and 8 duplexes (developer fact sheet). The developer page gives no prices, completion date, plans or progress; an agent lists Q4 2026. The Albanian registry shows developer Durrës Marina sh.a. (67% Eagle Hills, 33% state port authority) holds several 2025 KKTU building permits, none named for Marina Waters. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "EUR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 160,
+   "payment_plan": "10% booking, 50% construction milestones, 40% handover (agent; also called 60/40)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "None published. Registry lists KKTU permits for Durrës Marina sh.a. incl. Nr. 16 of 28.01.2025 for a 1, 3, 6-7 and 18-storey building; the registry does not say which project it is",
+   "escrow": null,
+   "progress": null,
+   "plans": "Fact sheet has no unit plans",
+   "record": null,
+   "returns": "Agent says 'high ROI' with no figure or guarantee"
+  },
+  "positives": [
+   "Developer company and its building permits are visible in the official business registry",
+   "State port authority holds 33% of the developer company"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.durresyachtsmarina.com/marina-waters-residence/",
+   "https://www.durresyachtsmarina.com/wp-content/uploads/2023/10/marina-waters-residence-fact-sheet-english.pdf",
+   "https://dxboffplan.com/properties/marina-waters-durres-yachts-and-marina-albania/",
+   "https://opencorporates.al/sq/nipt/M31423504A",
+   "https://durreslajm.al/durres-marina-nuk-ndalet-hedh-hapin-e-radhes-video/",
+   "https://www.ultimatetiranacityguide.com/developments-durres-yachts-marina.html",
+   "https://intellinews.com/eagle-hills-launches-2-5bn-superyacht-port-project-in-albania-despite-fierce-opposition-263836"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Developer company Durrës Marina sh.a. registered, 67% Eagle Hills and 33% state",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://opencorporates.al/sq/nipt/M31423504A"
+   },
+   {
+    "claim": "KKTU building permit specifically for Marina Waters",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://opencorporates.al/sq/nipt/M31423504A"
+   },
+   {
+    "claim": "152 apartments and 8 duplexes",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.durresyachtsmarina.com/wp-content/uploads/2023/10/marina-waters-residence-fact-sheet-english.pdf"
+   },
+   {
+    "claim": "Completion Q4 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dxboffplan.com/properties/marina-waters-durres-yachts-and-marina-albania/"
+   },
+   {
+    "claim": "Payment plan 10/50/40",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dxboffplan.com/properties/marina-waters-durres-yachts-and-marina-albania/"
+   },
+   {
+    "claim": "First two buildings of the project received KKT permits in Aug 2023",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://durreslajm.al/durres-marina-nuk-ndalet-hedh-hapin-e-radhes-video/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Abu Dhabi, UAE (Eagle Hills)",
+   "developer_company": "Durrës Marina sh.a., NIPT M31423504A (67% Eagle Hills Real Estate Development, 33% Albanian Seaports Development Company)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "duplex townhouse"
+   ],
+   "size_min_m2": 61,
+   "size_max_m2": 142,
+   "price_min": null,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": 10,
+   "payment_plan": "10% booking, 50% milestones, 40% handover (agent)",
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "pool",
+    "gym",
+    "lounge areas",
+    "24/7 security",
+    "courtyard garden",
+    "marina promenade access"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "National Territorial Council (KKT/KKTU)",
+   "brochure_url": "https://www.durresyachtsmarina.com/wp-content/uploads/2023/10/marina-waters-residence-fact-sheet-english.pdf"
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "developer": "Ünal Group",
+  "area": "Alanya",
+  "country": "Turkey",
+  "market": "Antalya",
+  "url": "https://www.emlakplatform.com.tr/en/projects/mevacity-alanya",
+  "docs_url": "https://mevacity.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "portal: 40% complete, delivery 30.12.2026, 600 units in 10 blocks on 25,000 m2",
+   "portal: 1+1 46 m2 to 5+1 221 m2; avg USD 3,586 per m2; 35% down, 24 instalments; 7% expected yield",
+   "developer (Ünsal Group): 600 flats, 10 blocks, 25,500 m2 land, 2,000 m2 pool",
+   "Hepsiemlak: delivery Q4 2026, under construction",
+   "KonutProjeleri: lists it as delivered in 2026"
+  ],
+  "note": "600 apartments in 10 blocks in Yukarı Çıplaklı, Alanya, shown as 40% complete with delivery 30.12.2026; the developer's own sites name it Ünsal Group (Ankara), not Ünal Group. One portal lists the project as already delivered, so status is disputed; no permit number or deposit protection is published and title is easement. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "USD",
+   "title": "easement (kat irtifakı)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 7,
+   "completion": "2026-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 40,
+   "progress_updates": false,
+   "developer_delivered": "Ünsal Group site: '10,562 families made homeowners', 46 projects and ventures; named Ankara projects without completion dates",
+   "units": 600,
+   "payment_plan": "35% down payment, then 24 instalments; 3% cash discount",
+   "price_per_m2": 3586
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Emlak Platform: project completion 40%; Hepsiemlak: under construction, Q4 2026; KonutProjeleri says delivered 2026",
+   "plans": "Floor plan images on portal",
+   "record": "unsalgroup.com: 10,562 families housed, 46 projects",
+   "returns": "Expected 7% yield on portal, not guaranteed; developer suggests renting out"
+  },
+  "positives": [
+   "Construction % and instalment plan published",
+   "Developer publishes its own project site"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.emlakplatform.com.tr/en/projects/mevacity-alanya",
+   "https://unsalgroup.com/proje/mevacity-alanya",
+   "https://unsalgroup.com/",
+   "https://mevacity.com/",
+   "https://konutprojeleri.com/mevacity-alanya",
+   "https://www.hepsiemlak.com/proje/antalya-alanya/mevacity-alanya-projesi-6929",
+   "https://mevacity.com/tr/kurumsal/yonetim-kurulu-baskanimizin-mesaji",
+   "https://juanarealestate.com/en/project/mevacity-alanya"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Developer is Ünal Group (portal)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://unsalgroup.com/proje/mevacity-alanya"
+   },
+   {
+    "claim": "40% complete, delivery 30.12.2026",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://konutprojeleri.com/mevacity-alanya"
+   },
+   {
+    "claim": "600 apartments in 10 blocks",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://unsalgroup.com/proje/mevacity-alanya"
+   },
+   {
+    "claim": "10,562 families made homeowners",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://unsalgroup.com/"
+   },
+   {
+    "claim": "Expected 7% rental yield",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/mevacity-alanya"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.emlakplatform.com.tr/en/projects/mevacity-alanya"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Ankara, Turkey",
+   "developer_company": "Ünsal Group (Ünsal Şirketler Grubu); legal entity not published",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 10562,
+   "listed_or_audited": null,
+   "construction_start": "2024",
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1+1",
+    "2+1",
+    "3+1 duplex",
+    "4+1 duplex",
+    "5+1 penthouse"
+   ],
+   "size_min_m2": 46,
+   "size_max_m2": 221,
+   "price_min": null,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 35,
+   "payment_plan": "35% down, 24 instalments",
+   "foreign_ownership": "Easement title (kat irtifakı) until completion",
+   "rental_programme": "None stated; 7% expected yield on portal",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "2,000 m2 pools",
+    "aquapark",
+    "indoor heated pool",
+    "sauna and hamam",
+    "cinema room",
+    "bowling and billiards",
+    "free beach shuttle",
+    "open and closed parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Alanya Municipality (yapı ruhsatı)",
+   "brochure_url": null
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "ferreiros-residences-yard-properties",
+  "name": "Ferreiros Residences",
+  "developer": "Yard Properties",
+  "area": "Funchal (historic centre)",
+  "country": "Portugal",
+  "market": "Portugal",
+  "url": "https://yardproperties.pt/projects/ferreiros-residences/",
+  "docs_url": "https://yardproperties.pt/projects/ferreiros-residences/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: 14 apartments, 1-2 bedrooms, energy class A/A+, private parking, 'under construction', brochure on request",
+   "agent (Sotheby's): 6 units EUR 520,000-913,000, 70-128 m2, floor plan per unit",
+   "aggregator (Sava): completion Q4 2027",
+   "press (Nov 2024): deliveries late 2026 to early 2027, financed by BPI"
+  ],
+  "note": "14 one and two bedroom apartments at Rua dos Ferreiros 178, central Funchal; six remain at EUR 520,000 to 913,000 with unit plans on Sotheby's. Launch press promised deliveries late 2026 to early 2027, an aggregator now shows Q4 2027 and a Sotheby's unit page calls it recently completed, so status is unclear; no permit or deposit protection is published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 520000,
+   "currency": "EUR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Yard Properties completed 355 Outubro, Lisbon (18 apartments, construction completed by Apr 2024), per its project site and idealista",
+   "units": 14,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Developer says only 'under construction'; Sotheby's unit page says 'recently completed development'; Sava shows Q4 2027",
+   "plans": "Floor plan per unit on Sotheby's development page",
+   "record": "355outubro.com: construction completed (Apr 2024); idealista: 'nova construção concluída'; Diário Imobiliário: Outubro 355 completed",
+   "returns": "None"
+  },
+  "positives": [
+   "Unit prices and floor plans published by the selling agent",
+   "Developer's earlier Lisbon building was completed",
+   "Bank financing (BPI) reported"
+  ],
+  "flags": [],
+  "sources": [
+   "https://yardproperties.pt/projects/ferreiros-residences/",
+   "https://www.sothebysrealtypt.com/developments/ferreiros-residence-funchal-funchal-se_pt1_989",
+   "https://www.sothebysrealtypt.com/properties/flat-funchal-se-funchal_pt1_82853",
+   "https://sava.pt/en/projects/ferreiros-residence/",
+   "https://diarioimobiliario.pt/Ferreiros-Residences-um-novo-projecto-de-luxo-no-centro-do-Funchal",
+   "https://www.355outubro.com/",
+   "https://www.idealista.pt/empreendimento/33425781/",
+   "https://www.idealista.pt/en/news/node/66688",
+   "https://yardproperties.pt/pt/projetos/355-outubro/"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Deliveries late 2026 to early 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://sava.pt/en/projects/ferreiros-residence/"
+   },
+   {
+    "claim": "Development recently completed (Sotheby's)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://yardproperties.pt/projects/ferreiros-residences/"
+   },
+   {
+    "claim": "Developer completed 355 Outubro in Lisbon",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.idealista.pt/empreendimento/33425781/"
+   },
+   {
+    "claim": "Project financed by BPI",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://diarioimobiliario.pt/Ferreiros-Residences-um-novo-projecto-de-luxo-no-centro-do-Funchal"
+   },
+   {
+    "claim": "Prices from EUR 520,000 (launch: from EUR 385,000)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.sothebysrealtypt.com/developments/ferreiros-residence-funchal-funchal-se_pt1_989"
+   },
+   {
+    "claim": "Building licence (alvará) issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://yardproperties.pt/projects/ferreiros-residences/"
+   },
+   {
+    "claim": "Energy class A and A+",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://yardproperties.pt/projects/ferreiros-residences/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Lisbon, Portugal",
+   "developer_company": "Yard Properties (legal entity not published)",
+   "developer_projects_delivered": 1,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027",
+   "original_handover": "2026-Q4 to 2027-Q1 (Diário Imobiliário, Nov 2024)",
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 70.15,
+   "size_max_m2": 127.65,
+   "price_min": 520000,
+   "price_max": 913000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pool",
+    "private parking",
+    "restored historic facade"
+   ],
+   "lat": 32.651,
+   "lng": -16.91,
+   "permit_authority": "Câmara Municipal do Funchal (licença/alvará de construção)",
+   "brochure_url": null
+  },
+  "verified_score": 1
+ },
+ {
+  "slug": "becici-sea-view-building-value-one",
+  "name": "New residential building 200 m from Bečići beach (building 5)",
+  "developer": "VALUE.ONE",
+  "area": "Bečići, Budva",
+  "country": "Montenegro",
+  "market": "Montenegro",
+  "url": "https://realting.com/montenegro/new-buildings/27295",
+  "docs_url": "https://en.value1estates.com/object/2547",
+  "permit_number": null,
+  "docs_listed": [
+   "agency (VALUE.ONE): 1BR 52 m2 EUR 182,000; 3BR 84 m2 EUR 294,000",
+   "6 floors, 39 apartments, completion 2027",
+   "payment 35% at signing, 20/15/15/10% every six months, 5% on completion",
+   "'fifth building by the same developer, previous four completed and occupied' (developer not named)"
+  ],
+  "note": "Fifth building of an unnamed developer's scheme on the Adriatic Highway in Bečići: 6 floors, 39 apartments, completion 2027, from EUR 182,000 (52 m2). VALUE.ONE is the selling agency, not the developer; no permit, plans, progress or deposit protection published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 182000,
+   "currency": "EUR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 39,
+   "payment_plan": "35% signing, 20%, 15%, 15%, 10% at six-month intervals, 5% on completion",
+   "price_per_m2": 3500
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Not stated",
+   "plans": "None",
+   "record": "Agency says four earlier buildings are completed and occupied but does not name the developer or buildings, so not verifiable",
+   "returns": "None"
+  },
+  "positives": [
+   "Stage-linked instalment plan published",
+   "Per-unit prices and sizes published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://en.value1estates.com/object/2547",
+   "https://en.value1estates.com/object/2548",
+   "https://realting.com/montenegro/new-buildings/27295"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "VALUE.ONE is the developer",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://en.value1estates.com/object/2547"
+   },
+   {
+    "claim": "Previous four buildings completed and occupied",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://en.value1estates.com/object/2547"
+   },
+   {
+    "claim": "Completion 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://en.value1estates.com/object/2547"
+   },
+   {
+    "claim": "Prices from EUR 182,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://en.value1estates.com/object/2547"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://realting.com/montenegro/new-buildings/27295"
+   },
+   {
+    "claim": "200 m from the beach",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://en.value1estates.com/object/2548"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 52,
+   "size_max_m2": 84,
+   "price_min": 182000,
+   "price_max": 294000,
+   "currency": "EUR",
+   "deposit_pct": 35,
+   "payment_plan": "35/20/15/15/10/5 over construction",
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "lift",
+    "parking",
+    "air conditioning",
+    "sea views"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Municipality of Budva / Ministry of Spatial Planning (construction registration)",
+   "brochure_url": null
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "podstrana-modern-apartments-eurovilla",
+  "name": "Modern apartments under construction near the sea, Podstrana",
+  "developer": "Not named (listed by Eurovilla)",
+  "area": "Podstrana, Split",
+  "country": "Croatia",
+  "market": "Croatia",
+  "url": "https://eurovilla.hr/en/project/podstrana-modern-apartments-under-construction-near-the-sea/1042/",
+  "docs_url": "https://eurovilla.hr/en/project/podstrana-modern-apartments-under-construction-near-the-sea/1042/",
+  "permit_number": null,
+  "docs_listed": [
+   "agency: 10 apartments in two semi-detached P+2 buildings, 5 available",
+   "agency: EUR 180,000-389,000 incl. VAT (available units EUR 180,000-376,000)",
+   "agency: move-in beginning of 2027, energy class A+",
+   "250 m from the sea"
+  ],
+  "note": "Ten apartments in two semi-detached ground-plus-two buildings 250 m from the sea in Podstrana, EUR 180,000-389,000 including VAT, move-in early 2027, five still available. Developer not named; no permit, plans, progress or deposit protection published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 180000,
+   "currency": "EUR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 10,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "'Under construction' only",
+   "plans": "Photos only",
+   "record": null,
+   "returns": "None"
+  },
+  "positives": [
+   "Prices include VAT and buyer pays no transfer tax (agency)",
+   "Energy class A+ stated"
+  ],
+  "flags": [],
+  "sources": [
+   "https://eurovilla.hr/en/project/podstrana-modern-apartments-under-construction-near-the-sea/1042/"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Move-in beginning of 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://eurovilla.hr/en/project/podstrana-modern-apartments-under-construction-near-the-sea/1042/"
+   },
+   {
+    "claim": "Under construction",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://eurovilla.hr/en/project/podstrana-modern-apartments-under-construction-near-the-sea/1042/"
+   },
+   {
+    "claim": "Energy class A+",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://eurovilla.hr/en/project/podstrana-modern-apartments-under-construction-near-the-sea/1042/"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://eurovilla.hr/en/project/podstrana-modern-apartments-under-construction-near-the-sea/1042/"
+   },
+   {
+    "claim": "Prices EUR 180,000-389,000 incl. VAT",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://eurovilla.hr/en/project/podstrana-modern-apartments-under-construction-near-the-sea/1042/"
+   },
+   {
+    "claim": "250 m from the sea",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://eurovilla.hr/en/project/podstrana-modern-apartments-under-construction-near-the-sea/1042/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 35,
+   "size_max_m2": 93,
+   "price_min": 180000,
+   "price_max": 389000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "parking",
+    "garden terraces",
+    "roof terraces",
+    "multisplit air conditioning",
+    "sea view"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Split-Dalmatia County administration (građevinska dozvola)",
+   "brochure_url": null
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "parkview-residence-limar-homes",
+  "name": "Parkview Residence",
+  "developer": "Limar Homes",
+  "area": "Southern Athens",
+  "country": "Greece",
+  "market": "Greece",
+  "url": "https://www.limarhomes.com/projects",
+  "docs_url": "https://www.limarhomes.com/news/project-launch-or-parkview-residences-by-limar-homes-or-golden-visa-eligible",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: Zervou 71, Kallithea; 13 units, 26-54 m2, 1-2 bedrooms, completion 2026",
+   "developer press release: from EUR 250,000, 'Golden Visa eligible'",
+   "agents (Benoit, European Property): from EUR 199,750, 6% yield, completion Q1 2027",
+   "agents: EUR 5,000 reservation, 30% at contract, 30% five months after construction start (est. Jun 2026), 40% on completion (Oct 2026)"
+  ],
+  "note": "13 studio to two-bedroom units (26-54 m2) at Zervou 71, Kallithea, marketed from EUR 250,000 (agents: EUR 199,750) as Golden Visa eligible, completion 2026 (agents: Q1 2027). Greek law has required EUR 800,000 and at least 120 m2 for a Golden Visa property in Attica since 2024 unless it is a change-of-use or listed-building case, so the eligibility claim conflicts with official rules; no permit, plans or progress published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 250000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 6,
+   "completion": "2026",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Limar Homes cites earlier projects Aura Residences, Portside Residence and La Liviera (PAD Magazine); completion not independently confirmed",
+   "units": 13,
+   "payment_plan": "EUR 5,000 reservation; 30% at contract; 30% five months after construction start; 40% on completion (agents)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "None; agents' payment plan implies construction start around Jan 2026",
+   "plans": "Layouts offered on request only",
+   "record": "Earlier projects named in launch article",
+   "returns": "Agents list 6% rental yield, not guaranteed"
+  },
+  "positives": [
+   "Street address, unit count and size range published",
+   "Payment plan tied to construction stages (agents)"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.limarhomes.com/projects",
+   "https://www.limarhomes.com/news/project-launch-or-parkview-residences-by-limar-homes-or-golden-visa-eligible",
+   "https://www.accessnewswire.com/newsroom/en/real-estate/limar-homes-launches-new-golden-visa-eligible-development-in-southern-athens-1103264",
+   "https://www.padmagazine.co.uk/business-money-legal-jobs/parkview-residence-limar-homes-introduces-luxury-golden-visa-eligible-homes-in-southern-athens/31762/",
+   "https://www.benoitproperties.com/property/parkview-residences/",
+   "https://europeanproperty.com/real-estate/parkview-residences-athens-greece/",
+   "https://migration.gov.gr/wp-content/uploads/2024/10/9%CE%95%CE%B3%CE%BA%CF%8D%CE%BA%CE%BB%CE%B9%CE%BF%CF%82-Golden-24.9.2024-FINAL.pdf",
+   "https://stegasi.gov.gr/programs/afxisi-oriou-elachistis-ependysis-se-akinita-gia-apoktisi-golden-visa/",
+   "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gr/technical/tax/tax-alerts/2026/law-alert-golden-visa-may-2026.pdf",
+   "https://propertyacross.com/property/parkview-residences-kallithea/"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Golden Visa eligible from EUR 250,000",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://migration.gov.gr/wp-content/uploads/2024/10/9%CE%95%CE%B3%CE%BA%CF%8D%CE%BA%CE%BB%CE%B9%CE%BF%CF%82-Golden-24.9.2024-FINAL.pdf"
+   },
+   {
+    "claim": "Prices from EUR 250,000 (agents: EUR 199,750)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://europeanproperty.com/real-estate/parkview-residences-athens-greece/"
+   },
+   {
+    "claim": "Completion 2026 (agents: Q1 2027)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.benoitproperties.com/property/parkview-residences/"
+   },
+   {
+    "claim": "Golden Visa units suit short-term (Airbnb) rental (agents); law bars short-term letting of Golden Visa properties",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.ey.com/content/dam/ey-unified-site/ey-com/en-gr/technical/tax/tax-alerts/2026/law-alert-golden-visa-may-2026.pdf"
+   },
+   {
+    "claim": "13 apartments at Zervou 71, Kallithea",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.limarhomes.com/projects"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.limarhomes.com/projects"
+   },
+   {
+    "claim": "6% rental yield",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.benoitproperties.com/property/parkview-residences/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Athens, Greece",
+   "developer_company": "Limar Homes (legal entity and GEMI number not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR duplex"
+   ],
+   "size_min_m2": 26,
+   "size_max_m2": 54,
+   "price_min": 199750,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": 30,
+   "payment_plan": "EUR 5,000 reservation; 30%/30%/40%",
+   "foreign_ownership": "Freehold (agents)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private underground parking",
+    "balconies",
+    "private jacuzzis on some units",
+    "furniture packs"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Local Building Service (YDOM) via the e-Adeies system",
+   "brochure_url": null
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "imperio-skyline-imperio-properties",
+  "name": "Imperio Skyline",
+  "developer": "Imperio Properties",
+  "area": "Germasogeia, Limassol",
+  "country": "Cyprus",
+  "market": "Cyprus",
+  "url": "https://skyline.imperioproperties.com/residences/",
+  "docs_url": "https://www.imperioproperties.com/skyline/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: 1-2 bed apartments, 3-bed houses and villas, from EUR 295,000 + VAT (project page)",
+   "developer LinkedIn (30 Sep 2026): Block A ground floor up, Block B two storeys, Block C foundations; over 85% sold; from EUR 315,000 + VAT; EPC class A",
+   "contractor Multipro: expected completion 2028",
+   "news: 70 residences, works begun (Jun 2026)"
+  ],
+  "note": "Gated community of 70 apartments, houses and villas north of Germasogeia, Limassol; Imperio's Sep 2026 update says over 85% sold, blocks from foundations to two storeys, prices from EUR 315,000 plus VAT. Contractor Multipro gives completion 2028; no permits, plans or deposit protection are published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 315000,
+   "currency": "EUR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Imperio completed two phases of Sunset Gardens, Limassol (CBN, Jan 2025)",
+   "units": 70,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Developer LinkedIn 30 Sep 2026 block-by-block status; DOM and Inbusiness (Jun 2026): works under way",
+   "plans": "Not on the residences page",
+   "record": "CBN: two phases of Sunset Gardens completed",
+   "returns": "Developer says 'attractive rental return' and offers rental management, no figure or guarantee"
+  },
+  "positives": [
+   "Dated block-by-block construction update",
+   "Named contractor with stated completion year",
+   "Earlier Sunset Gardens community completed"
+  ],
+  "flags": [],
+  "sources": [
+   "https://skyline.imperioproperties.com/residences/",
+   "https://www.imperioproperties.com/skyline/",
+   "https://www.imperioproperties.com/se-ekseliksi-oi-ergasies-gia-tio-imperio-skyline/",
+   "https://www.linkedin.com/posts/imperio-properties_imperioskyline-limassol-cyprus-activity-7511026550302085121-J8Ah",
+   "https://www.multipro.com.cy/project/imperio-skyline-limassol/",
+   "https://dom.com.cy/en/live/digest/the-construction-of-the-imperio-skyline-complex-has-begun-in-limassol/",
+   "https://cbn.com.cy/article/2025/1/24/817478/imperio-skyline-the-new-major-residential-development-coming-to-limassol",
+   "https://skyline.imperioproperties.com/masterplan/"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction under way with contractor Multipro",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://dom.com.cy/en/live/digest/the-construction-of-the-imperio-skyline-complex-has-begun-in-limassol/"
+   },
+   {
+    "claim": "Expected completion 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.multipro.com.cy/project/imperio-skyline-limassol/"
+   },
+   {
+    "claim": "Over 85% sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.linkedin.com/posts/imperio-properties_imperioskyline-limassol-cyprus-activity-7511026550302085121-J8Ah"
+   },
+   {
+    "claim": "Prices from EUR 315,000 + VAT (project page: EUR 295,000)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.linkedin.com/posts/imperio-properties_imperioskyline-limassol-cyprus-activity-7511026550302085121-J8Ah"
+   },
+   {
+    "claim": "Imperio completed Sunset Gardens",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://cbn.com.cy/article/2025/1/24/817478/imperio-skyline-the-new-major-residential-development-coming-to-limassol"
+   },
+   {
+    "claim": "Planning and building permits issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://skyline.imperioproperties.com/residences/"
+   },
+   {
+    "claim": "Energy class A",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.linkedin.com/posts/imperio-properties_imperioskyline-limassol-cyprus-activity-7511026550302085121-J8Ah"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Limassol, Cyprus",
+   "developer_company": "Imperio Properties (legal entity not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-06",
+   "handover_promised": "2028",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR house",
+    "villa"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 315000,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": "Property and rental management by Imperio, no figures",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "clubhouse with pool",
+    "gym",
+    "co-working space",
+    "residents' lounge",
+    "PV panels",
+    "EV charging",
+    "CCTV"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Limassol District Administration or municipality (planning and building permits)",
+   "brochure_url": null
+  },
+  "verified_score": 2
+ },
+ {
+  "slug": "residences-monsanto-gestilar",
+  "name": "Residences Monsanto",
+  "developer": "Gestilar",
+  "area": "Algés, Oeiras (Lisbon)",
+  "country": "Portugal",
+  "market": "Portugal",
+  "url": "https://www.portugalhomes.com/property/4813/monsanto-residences",
+  "docs_url": "https://www.gestilar.com/pt/apartamentos-novos-miraflores-lisboa-monsanto",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: Alameda Eng. José Mattos e Silva, Algés; from EUR 685,000; unit plans ('Ver planta'); progress gauge 8% (not updated)",
+   "developer LinkedIn (24 Sep 2026): 56% construction executed",
+   "contractor MAP (Sep 2026): structure entering final phase, 14 floors plus 2 parking levels",
+   "press (Mar 2025): works started, 40 homes 170-351 m2, EUR 685,000-1.9M, delivery 2027, 70% sold"
+  ],
+  "note": "40 large apartments in a 13-14 storey building at Alameda Eng. José Mattos e Silva, Algés, EUR 685,000 to 1.9M, delivery 2027. Gestilar posted 56% construction in Sep 2026 and contractor MAP says the structure is in its final phase; plans are published but no licence or deposit protection. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 685000,
+   "currency": "EUR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 56,
+   "progress_updates": true,
+   "developer_delivered": "Gestilar: 3,300 homes delivered since 2009 (about page); first Lisbon project Residences Miraflores, 111 apartments, 100% completed (Público, Jul 2024)",
+   "units": 40,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Gestilar LinkedIn 24 Sep 2026: 56%; developer web gauge still 8%; contractor MAP Sep 2026: structure in final phase",
+   "plans": "'Ver planta' links per unit on developer page",
+   "record": "Gestilar about page: 3,300 delivered; Público: Miraflores 111 units completed; EjePrime: 776 homes delivered in 2024",
+   "returns": "None"
+  },
+  "positives": [
+   "Construction % published (56%, Sep 2026)",
+   "Unit plans on developer page",
+   "Developer delivered Residences Miraflores nearby"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.gestilar.com/es/pisos-obra-nueva-lisboa-monsanto",
+   "https://www.gestilar.com/pt/apartamentos-novos-miraflores-lisboa-monsanto",
+   "https://es.linkedin.com/posts/gestilar_gestilar-residences-monsanto-activity-7508784070760509441-T8L8",
+   "https://pt.linkedin.com/posts/map-engenharia-construcao_gestilarresidencesmonsanto-evolu%C3%A7%C3%A3odaobra-activity-7504093172319408129-xSvF",
+   "https://mapengenhariaeconstrucao.pt/gestilar-residences-monsanto/",
+   "https://www.gestilar.com/es/sobre-gestilar",
+   "https://imobiliario.publico.pt/noticias/espanhola-gestilar-investe-60-milhoes-euros-novo-projeto-miraflores/",
+   "https://www.ejeprime.com/content/diversificacion-y-control-las-claves-de-la-estrategia-de-gestilar",
+   "https://www.iberian.property/news/residential/gestilar-invests-eur35m-in-its-second-residential-project-in-lisbon/",
+   "https://www.portugalhomes.com/property/4813/monsanto-residences",
+   "https://reportugal.vidaimobiliaria.com/atualidade/construcao/espanhola-gestilar-arranca-com-construcao-residences-monsanto/"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction started Mar 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://mapengenhariaeconstrucao.pt/gestilar-residences-monsanto/"
+   },
+   {
+    "claim": "56% executed (Sep 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://es.linkedin.com/posts/gestilar_gestilar-residences-monsanto-activity-7508784070760509441-T8L8"
+   },
+   {
+    "claim": "Structure entering final phase (Sep 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://pt.linkedin.com/posts/map-engenharia-construcao_gestilarresidencesmonsanto-evolu%C3%A7%C3%A3odaobra-activity-7504093172319408129-xSvF"
+   },
+   {
+    "claim": "Delivery 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.iberian.property/news/residential/gestilar-invests-eur35m-in-its-second-residential-project-in-lisbon/"
+   },
+   {
+    "claim": "Developer completed Residences Miraflores (111 units)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://imobiliario.publico.pt/noticias/espanhola-gestilar-investe-60-milhoes-euros-novo-projeto-miraflores/"
+   },
+   {
+    "claim": "3,300 homes delivered since 2009",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.gestilar.com/es/sobre-gestilar"
+   },
+   {
+    "claim": "Building licence issued by Oeiras",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.gestilar.com/pt/apartamentos-novos-miraflores-lisboa-monsanto"
+   },
+   {
+    "claim": "Prices EUR 685,000 to 1.9M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.iberian.property/news/residential/gestilar-invests-eur35m-in-its-second-residential-project-in-lisbon/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2009,
+   "developer_hq": "Madrid, Spain",
+   "developer_company": "Gestilar (legal entity not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 3300,
+   "listed_or_audited": null,
+   "construction_start": "2025-03",
+   "handover_promised": "2027",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR",
+    "4BR",
+    "5BR penthouse"
+   ],
+   "size_min_m2": 170,
+   "size_max_m2": 351,
+   "price_min": 685000,
+   "price_max": 1900000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "pool",
+    "gym",
+    "sports court",
+    "children's playground",
+    "garage",
+    "storage rooms"
+   ],
+   "lat": 38.71,
+   "lng": -9.224,
+   "permit_authority": "Câmara Municipal de Oeiras (licença/alvará de construção)",
+   "brochure_url": null
+  },
+  "verified_score": 2
+ },
+ {
+  "slug": "bansko-complex-near-ski-lift-suprimmo",
+  "name": "New residential complex near the ski lift, Bansko",
+  "developer": "Not named (listed by Suprimmo)",
+  "area": "Bansko",
+  "country": "Bulgaria",
+  "market": "Bulgaria",
+  "url": "https://www.suprimmo.net/property-142255-new-residential-complex-in-bansko-just-a-few-minutes-walk-from-the-center-and-the-ski-lift/",
+  "docs_url": "https://www.suprimmo.net/property-142255-new-residential-complex-in-bansko-just-a-few-minutes-walk-from-the-center-and-the-ski-lift/",
+  "permit_number": null,
+  "docs_listed": [
+   "agency: 12 apartments over 4 floors, 10 for sale, 33-151 m2",
+   "agency: prices EUR 43,446-188,750 (header) vs EUR 55,143-241,600 excl. VAT (text); EUR 1,250-1,300 per m2",
+   "agency: Act 14 obtained, Act 15 expected Sep 2026, Act 16 planned Nov 2026",
+   "agency: floor plan PDF; 10% on preliminary contract; EUR 2,000 non-refundable reservation"
+  ],
+  "note": "Four-floor building of 12 apartments about 10 minutes walk from the Bansko ski lift; Act 14 is obtained and Act 16 is planned for Nov 2026. Prices on the page conflict (from EUR 43,446 vs 55,143 excl. VAT); developer not named, no permit number or deposit protection. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 43446,
+   "currency": "EUR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 12,
+   "payment_plan": "EUR 2,000 reservation; 10% on preliminary contract; later stages not stated",
+   "price_per_m2": 1250
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Act 14 (rough construction) obtained; Act 15 expected Sep 2026; Act 16 planned Nov 2026; no %",
+   "plans": "Downloadable floor plan PDF",
+   "record": null,
+   "returns": "None; mentions year-round rental potential"
+  },
+  "positives": [
+   "Statutory construction acts (Act 14, 15, 16) and dates stated",
+   "Floor plans downloadable"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.suprimmo.net/property-142255-new-residential-complex-in-bansko-just-a-few-minutes-walk-from-the-center-and-the-ski-lift/",
+   "https://www.suprimmo.net/get-prop-plans/property-plans/142255_fp.pdf"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Act 14 obtained",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.suprimmo.net/property-142255-new-residential-complex-in-bansko-just-a-few-minutes-walk-from-the-center-and-the-ski-lift/"
+   },
+   {
+    "claim": "Act 16 (occupancy) planned Nov 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.suprimmo.net/property-142255-new-residential-complex-in-bansko-just-a-few-minutes-walk-from-the-center-and-the-ski-lift/"
+   },
+   {
+    "claim": "Prices from EUR 43,446 vs 55,143 excl. VAT",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.suprimmo.net/property-142255-new-residential-complex-in-bansko-just-a-few-minutes-walk-from-the-center-and-the-ski-lift/"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.suprimmo.net/property-142255-new-residential-complex-in-bansko-just-a-few-minutes-walk-from-the-center-and-the-ski-lift/"
+   },
+   {
+    "claim": "10 minutes walk to the ski lift",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.suprimmo.net/property-142255-new-residential-complex-in-bansko-just-a-few-minutes-walk-from-the-center-and-the-ski-lift/"
+   },
+   {
+    "claim": "12 apartments over four floors",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.suprimmo.net/property-142255-new-residential-complex-in-bansko-just-a-few-minutes-walk-from-the-center-and-the-ski-lift/"
+   },
+   {
+    "claim": "Deposits protected",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.suprimmo.net/property-142255-new-residential-complex-in-bansko-just-a-few-minutes-walk-from-the-center-and-the-ski-lift/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": 33,
+   "size_max_m2": 151,
+   "price_min": 43446,
+   "price_max": 241600,
+   "currency": "EUR",
+   "deposit_pct": 10,
+   "payment_plan": "EUR 2,000 reservation; 10% at preliminary contract",
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "lift",
+    "parking spaces and garages"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Bansko Municipality (building permit); Act 16 commissioning via DNSK",
+   "brochure_url": "https://www.suprimmo.net/get-prop-plans/property-plans/142255_fp.pdf"
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "ferragudo-village-benoit-properties",
+  "name": "Ferragudo Village",
+  "developer": "Not named on listing (supplied by Benoit Properties)",
+  "area": "Ferragudo, Lagoa",
+  "country": "Portugal",
+  "market": "Algarve",
+  "url": "https://video.aplaceinthesun.com/property/details/ap3877798/ferragudo-village-algarve-portugal",
+  "docs_url": "https://www.benoitproperties.com/property/ferragudo-village/",
+  "permit_number": null,
+  "docs_listed": [
+   "supplier (Benoit): 2-3 bed apartments and villas from EUR 600,000, completion Q1 2028, 4% yield, freehold",
+   "listing (European Property / APITS): apartments from EUR 590,000, villas from EUR 1.5M, completion Q4 2027",
+   "payment: EUR 10,000 reservation; 20% at contract; 10% after architectural approval; 15% at 6 and 15% at 12 months after construction start; 40% at deed",
+   "features match Pestana Ferragudo Village (new 18-hole golf course, villa plots, Pestana Resort Card), which the listing does not name"
+  ],
+  "note": "Apartments from about EUR 590,000-600,000 and villas in a new golf community near Ferragudo; the supplier now shows completion Q1 2028, up from Q4 2027. The features match Pestana Residences' Pestana Ferragudo Village (226 apartments, 91 plots, first homes due early 2027 per press), but the listing does not name the developer; no permit, plans or progress published and a payment tranche is tied to a future architectural approval. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 590000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 4,
+   "completion": "2028-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": "EUR 10,000 reservation; 20% at contract; 10% after architectural approval; 15% at 6 and 15% at 12 months after construction start; 40% at deed",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Payment plan refers to an architectural approval still to come",
+   "escrow": null,
+   "progress": null,
+   "plans": "'3 Bedroom Floorplans' listed but none shown",
+   "record": "Developer not named on listing; if it is Pestana, Pestana names completed residences (Alvor Atlântico, Gramacho, Carvoeiro Golf) on pestana.com, not checked against this listing",
+   "returns": "4% rental yield stated, not guaranteed"
+  },
+  "positives": [
+   "Payment schedule published",
+   "Freehold tenure stated"
+  ],
+  "flags": [],
+  "sources": [
+   "https://video.aplaceinthesun.com/property/details/ap3877798/ferragudo-village-algarve-portugal",
+   "https://www.benoitproperties.com/property/ferragudo-village/",
+   "https://europeanproperty.com/real-estate/ferragudo-village-algarve-portugal-2/",
+   "https://pestanaferragudo.com/",
+   "https://www.idealista.pt/en/news/luxury-real-estate-in-portugal/2025/05/20/69655-pestana-ferragudo-village-a-new-residential-project-blending-luxury-and",
+   "https://www.construir.pt/2025/05/13/pestana-residences-reforca-aposta-no-algarve-com-novo-projecto-residencial",
+   "https://bo.proppycrm.com/ContentFiles/18872/168.DiscoverPestanaFerragudoVillageSeptember2025.pdf?mode=crop&quality=90",
+   "https://www.pestana.com/en/residences",
+   "https://www.portugalhomes.com/properties-for-sale/brand-new-3-bed-villas-on-brand-new-golf-course-in-ferragudo"
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Developer is Pestana Residences (inferred from matching features, not stated)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://pestanaferragudo.com/"
+   },
+   {
+    "claim": "Completion Q4 2027 (listing) vs Q1 2028 (Benoit) vs early 2027 (Pestana press)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.idealista.pt/en/news/luxury-real-estate-in-portugal/2025/05/20/69655-pestana-ferragudo-village-a-new-residential-project-blending-luxury-and"
+   },
+   {
+    "claim": "Architectural approval still pending",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://europeanproperty.com/real-estate/ferragudo-village-algarve-portugal-2/"
+   },
+   {
+    "claim": "4% rental yield",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.benoitproperties.com/property/ferragudo-village/"
+   },
+   {
+    "claim": "Access to seven golf courses and resort card",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.benoitproperties.com/property/ferragudo-village/"
+   },
+   {
+    "claim": "Apartments from EUR 590,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://europeanproperty.com/real-estate/ferragudo-village-algarve-portugal-2/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q1",
+   "original_handover": "2027-Q4",
+   "delay_months": 3,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "villa"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 590000,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": "EUR 10,000 reservation; 20%; 10% after architectural approval; 15%; 15%; 40% at deed",
+   "foreign_ownership": "Freehold (supplier)",
+   "rental_programme": "4% rental yield stated, no programme terms",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pools",
+    "gardens",
+    "golf access",
+    "resort card"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Câmara Municipal de Lagoa (licença/alvará de construção)",
+   "brochure_url": null
+  },
+  "verified_score": 0
+ }
+]

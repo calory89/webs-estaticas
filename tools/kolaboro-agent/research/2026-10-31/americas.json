@@ -1,0 +1,1325 @@
+[
+ {
+  "slug": "kempinski-grace-bay-jtre",
+  "name": "Kempinski Grace Bay Residences",
+  "developer": "JTRE (with Kempinski Hotels)",
+  "area": "Grace Bay, Providenciales",
+  "country": "Turks and Caicos Islands",
+  "market": "Turks and Caicos",
+  "url": "https://theturksandcaicos.com/developments/kempinski-grace-bay/",
+  "docs_url": "https://theturksandcaicos.com/developments/kempinski-grace-bay/",
+  "permit_number": null,
+  "docs_listed": [
+   "unit price list (studio to 5BR, from $600,000)",
+   "floor plans and site plan links",
+   "progress payment schedule 10/15/15/15/45",
+   "completion target Q1 2028",
+   "strata fee estimate $18-21 per sq ft per year",
+   "rental split 50/50, rental program mandatory"
+  ],
+  "note": "119 condo residences and four villas on 11 acres of Grace Bay; ground broken in late 2025 with completion targeted for Q1 2028. Christie's TCI publishes unit prices from $600,000 and a staged payment schedule tied to construction milestones. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 600000,
+   "currency": "USD",
+   "title": "freehold (strata)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 123,
+   "payment_plan": "10% at SPA, 15% at construction start, 15% at floor slab, 15% at roof, 45% at completion",
+   "price_per_m2": 15270
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Groundbreaking reported by Caribbean Journal and Hotel Management (Dec 2025); no progress figure or dated photos found on sales pages",
+   "plans": "Christie's TCI development page links floor plans and site plan",
+   "record": "Articles describe JTRE as a European developer but name no completed projects",
+   "returns": "Rental program described (50% owner split); no guaranteed returns"
+  },
+  "positives": [
+   "Staged payments tied to construction milestones rather than calendar dates",
+   "Strata fee estimate and 10% stamp duty disclosed up front",
+   "Freehold strata title for foreign buyers"
+  ],
+  "flags": [],
+  "sources": [
+   "https://theturksandcaicos.com/developments/kempinski-grace-bay/",
+   "https://www.caribjournal.com/2025/12/12/new-kempinski-residential-resort-breaks-ground-in-turks-and-caicos/",
+   "https://www.hotelmanagement.net/development/kempinski-jtre-break-ground-luxury-grace-bay-project-turks-and-caicos",
+   "https://www.newslinetci.com/post/sales-begin-for-kempinski-grace-bay-residences-a-refined-beachfront-retreat-in-turks-and-caicos",
+   "https://listings.tcrea.com/listing/Providenciales-PR/A313-The-Kempinski-Grace-Bay/37hvv",
+   "https://www.engelvoelkers.com/tc/en/exposes/b0bb1f70-19d8-5974-9bcb-2e934eec939d"
+  ]
+ },
+ {
+  "slug": "la-sagesse-collection-residences-range",
+  "name": "The La Sagesse Collection Residences",
+  "developer": "Range Developments Group",
+  "area": "La Sagesse Bay, St. David",
+  "country": "Grenada",
+  "market": "Grenada",
+  "url": "https://www.rangedevelopmentsgroup.com/the-la-sagesse-collection-residences",
+  "docs_url": "https://www.rangedevelopmentsgroup.com/the-la-sagesse-collection-residences",
+  "permit_number": null,
+  "docs_listed": [
+   "unit mix: 36 studios, 20 1BR, 38 2BR",
+   "opening 2027",
+   "project progress / construction updates section (May 2026)",
+   "Grenada CBI government-approved pathway"
+  ],
+  "note": "94 sea-view apartments beside Six Senses La Sagesse and InterContinental Grenada, sold as a government-approved Citizenship by Investment real estate option; opening moved from 2026 (older page) to 2027 (current page). No prices published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 0,
+   "developer_delivered": "Range Developments: Park Hyatt St. Kitts (opened 2017, 126 rooms) and operational Six Senses La Sagesse, stated on rangedevelopmentsgroup.com",
+   "units": 94,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Described as a government-approved CBI project; no approval number published",
+   "escrow": null,
+   "progress": "Developer page has a dated 'Project Progress, Construction Updates & Site Milestones' section (May 2026); no % published, 0 used as placeholder",
+   "plans": "No floor plans on the project page",
+   "record": "Park Hyatt St. Kitts and Six Senses La Sagesse named as delivered on the group homepage and CBI page",
+   "returns": "CBI page mentions 'potential rental income'; no guarantee"
+  },
+  "positives": [
+   "Developer has named, operating Caribbean resorts",
+   "Exact unit mix published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.rangedevelopmentsgroup.com/the-la-sagesse-collection-residences",
+   "https://rangedevelopments.com/the-la-sagesse-collection/",
+   "https://www.rangedevelopmentsgroup.com/cbi-grenada",
+   "https://www.rangedevelopmentsgroup.com/"
+  ]
+ },
+ {
+  "slug": "cipriani-residences-punta-del-este-cipriani",
+  "name": "Cipriani Resort Residences Punta del Este (Torre I)",
+  "developer": "Cipriani (Giuseppe Cipriani) / Playa Brava developer entity",
+  "area": "Playa Brava, Punta del Este",
+  "country": "Uruguay",
+  "market": "Uruguay",
+  "url": "https://ciprianiresidencespuntadeleste.com/",
+  "docs_url": "https://ciprianiresidencespuntadeleste.com/residences/",
+  "permit_number": null,
+  "docs_listed": [
+   "floor plans PDF (2BR corner to penthouse, interior and total areas)",
+   "brochure PDF with specifications",
+   "residence types: corner, half floor, full floor, penthouse"
+  ],
+  "note": "55-storey Torre I (about 260 m) of the Rafael Vinoly masterplan, under construction by CRIBA at roughly a floor a week per March 2026 press; Phase 1 (restored Hotel San Rafael, casino) was scheduled to open Oct 2025. No prices published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Phase 1 restoration of Hotel San Rafael, casino and convention centre completed per iProfesional (Mar 2026); Cipriani brand operating since 1931",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Progress reported only in press (iProfesional Mar 2026, Montevideo Portal Jun 2025), not on the developer site",
+   "plans": "Cipriani_Floorplans.pdf published with room-by-room areas",
+   "record": "iProfesional reports the first phase (hotel, casino, convention centre) completed before Torre I started",
+   "returns": "No rental returns advertised"
+  },
+  "positives": [
+   "Detailed floor plans with interior and exterior areas",
+   "Developer-stated interior vs total area methodology"
+  ],
+  "flags": [],
+  "sources": [
+   "https://ciprianiresidencespuntadeleste.com/",
+   "https://ciprianiresidencespuntadeleste.com/residences/",
+   "https://ciprianiresidencespuntadeleste.com/wp-content/uploads/2025/11/Cipriani_Floorplans.pdf",
+   "https://ciprianiresidencespuntadeleste.com/corner-and-half-floor-residences/",
+   "https://ciprianiresidencespuntadeleste.com/wp-content/uploads/2025/11/Cipriani-PDE-Brochure_English.pdf",
+   "https://www.iprofesional.com/realestate/451167-como-sera-la-torre-mas-alta-de-uruguay-que-ya-se-construye-en-punta-del-este",
+   "https://www.montevideo.com.uy/Negocios-y-Tendencias/Cipriani--Cumplimos-y-tenemos-el-apoyo-total-del-gobierno--uc926928"
+  ]
+ },
+ {
+  "slug": "six-senses-residences-belize-crdg",
+  "name": "Six Senses Residences Belize (Emerald Caye)",
+  "developer": "CRDG LLC",
+  "area": "Emerald Caye, off Ambergris Caye",
+  "country": "Belize",
+  "market": "Belize",
+  "url": "https://emeraldcaye.com/",
+  "docs_url": "https://emeraldcaye.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "villas from $3.75M",
+   "16 overwater villas (2BR 4,387 sq ft, 4BR 7,891 sq ft)",
+   "debut 2028",
+   "managed rental program"
+  ],
+  "note": "16 two- and four-bedroom overwater branded residences plus a 40-suite Six Senses resort; sales launched April 2026 with construction stated as underway and opening slated for 2028. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 3750000,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 16,
+   "payment_plan": null,
+   "price_per_m2": 9200
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Press release (Apr 2026) says construction is underway; no figure or dated photos",
+   "plans": "Unit sizes described, no plan drawings published",
+   "record": "CRDG described as having deep roots in Belize; no completed projects named",
+   "returns": "Managed rental program mentioned; no guaranteed returns"
+  },
+  "positives": [
+   "Starting price published on developer site",
+   "Unit sizes for both villa types published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://emeraldcaye.com/",
+   "https://resident.com/press-releases/2026/04/02/sales-launch-at-six-senses-residences-belize-a-new-overwater-residential-development-on-emerald-caye"
+  ]
+ },
+ {
+  "slug": "aruna-belize-phase-4",
+  "name": "Aruna Resort Phase 4",
+  "developer": "Aruna Belize (developer name not published on listing)",
+  "area": "West Ambergris Caye, San Pedro",
+  "country": "Belize",
+  "market": "Belize",
+  "url": "https://www.lunarealtybelize.com/aruna/",
+  "docs_url": "https://www.lunarealtybelize.com/aruna/",
+  "permit_number": null,
+  "docs_listed": [
+   "Phase 4 pre-construction model list with prices and sq ft",
+   "developer financing",
+   "Phases 1-3 sold out"
+  ],
+  "note": "Eco resort community on the west side of Ambergris Caye; Phase 4 pre-construction models from $265,000 (794 sq ft studio) to $759,900, with developer financing. Earlier phases sold out and resale units are already rented. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 265000,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Phases 1-3 sold out and completed units (e.g. canal-front suite R9 'ready for rental') listed for resale, per Luna Realty",
+   "units": null,
+   "payment_plan": "Developer financing available (terms not published)",
+   "price_per_m2": 3593
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": null,
+   "plans": "Model names and sizes only, no drawings",
+   "record": "Earlier phases at the same resort are built and being resold",
+   "returns": "No guaranteed returns"
+  },
+  "positives": [
+   "Low entry price with full model price list",
+   "Earlier phases already delivered at same site"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.lunarealtybelize.com/aruna/"
+  ]
+ },
+ {
+  "slug": "ocean-drive-beachfront-residences-four-seasons-puerto-rico",
+  "name": "Ocean Drive Beachfront Residences, Buildings VII and VIII",
+  "developer": "Bahia Beach Resort (Four Seasons Private Residences Puerto Rico)",
+  "area": "Bahia Beach, Rio Grande",
+  "country": "Puerto Rico",
+  "market": "Puerto Rico",
+  "url": "https://www.oceandrivepuertorico.com/ocean-drive-beachfront-residences",
+  "docs_url": "https://www.oceandrivepuertorico.com/ocean-drive-beachfront-residences",
+  "permit_number": null,
+  "docs_listed": [
+   "per-unit floor plans and interior sq ft",
+   "Building VI ready for delivery Feb 2026",
+   "Buildings VII and VIII under construction, delivery winter 2027",
+   "optional Four Seasons rental program"
+  ],
+  "note": "Three to five-bedroom beachfront condos (3,380 to 3,920 sq ft) at the Four Seasons Bahia Beach resort; Building VI is delivered and Buildings VII and VIII are selling under construction for winter 2027. No prices published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "USD",
+   "title": "fee simple condominium",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Building VI of Ocean Drive delivered from Feb 2026, stated on the project site; Four Seasons resort and first residences delivered late 2025 per Christie's PR",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Buildings VII and VIII stated as under construction, no figure",
+   "plans": "Floor plan link per unit",
+   "record": "Previous building in the same series delivered",
+   "returns": "Optional rental program, no guarantee"
+  },
+  "positives": [
+   "Same-series building already delivered",
+   "Interior areas published per unit"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.oceandrivepuertorico.com/ocean-drive-beachfront-residences",
+   "https://christiesrealestatepr.com/blog/puerto-ricos-luxury-development-projects"
+  ]
+ },
+ {
+  "slug": "tortuga-bay-phase-ii-schaible",
+  "name": "Tortuga Bay Phase II",
+  "developer": "Tortuga Bay (Michael Schaible)",
+  "area": "Hotel Zone, San Jose del Cabo",
+  "country": "Mexico",
+  "market": "Los Cabos",
+  "url": "https://tortugabay.com/",
+  "docs_url": "https://tortugabay.com/wp-content/uploads/2026/02/Tortuga-Bay_Brochure_Esp_2026.pdf",
+  "permit_number": null,
+  "docs_listed": [
+   "2026 price list per unit (Buildings B and C)",
+   "residence floor plans with interior, terrace and pool areas",
+   "Phase II construction started"
+  ],
+  "note": "Boutique beachfront condos between Hyatt Ziva and Viceroy; the Feb 2026 brochure says Phase II construction has started and lists available units from $900,000 to $2.45M penthouses. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 900000,
+   "currency": "USD",
+   "title": "fideicomiso (restricted zone)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Phase I of Tortuga Bay is operating with owners and guests on site; developer active in Los Cabos since 1986, per tortugabay.com and brochure",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Brochure states Phase II construction has begun; no figure or dated photos",
+   "plans": "Brochure includes residence plans A to G with areas",
+   "record": "Existing Phase I on the same site; developer since 1986",
+   "returns": "No returns advertised"
+  },
+  "positives": [
+   "Unit-by-unit price list with sold units marked",
+   "Plans with interior and terrace areas"
+  ],
+  "flags": [],
+  "sources": [
+   "https://tortugabay.com/",
+   "https://tortugabay.com/wp-content/uploads/2026/02/Tortuga-Bay_Brochure_Esp_2026.pdf"
+  ]
+ },
+ {
+  "slug": "hideaways-los-cabos-black-development",
+  "name": "Hideaways Los Cabos (Trademark Collection by Wyndham)",
+  "developer": "Black Development Group",
+  "area": "San Jose del Cabo",
+  "country": "Mexico",
+  "market": "Los Cabos",
+  "url": "https://www.pincali.com/en/home/preventa-exclusiva-hideaways-los-cabos",
+  "docs_url": "https://hideaways-cabo.com/eng",
+  "permit_number": null,
+  "docs_listed": [
+   "unit types loft to 4BR corner (69.96 to 185.98 m2)",
+   "prices $399,000 to $879,000 (portal)",
+   "estimated delivery 2028"
+  ],
+  "note": "Branded condo-hotel of 96 units in three towers operated under Wyndham's Trademark Collection; portal lists lofts from $399,000 and delivery estimated 2028, while a 2025 developer article targeted a 2026 opening. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 399000,
+   "currency": "USD",
+   "title": "fideicomiso (restricted zone)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 96,
+   "payment_plan": null,
+   "price_per_m2": 5703
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": null,
+   "plans": "Unit sizes listed, no plans",
+   "record": "Developer says it has a 'successful project in Los Cabos' but names none delivered",
+   "returns": "Site cites 13.3% area appreciation; no guaranteed returns"
+  },
+  "positives": [
+   "International hotel brand affiliation (Wyndham)"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.pincali.com/en/home/preventa-exclusiva-hideaways-los-cabos",
+   "https://www.pincali.com/inmueble/preventa-exclusiva-hideaways-los-cabos",
+   "https://hideaways-cabo.com/eng",
+   "https://blackdg.com/en/home/",
+   "https://blackdg.com/en/por-que-los-desarrolladores-e-inversionistas-eligen-a-black-development-group-para-crecer-en-el-sector-turistico-2-2/"
+  ]
+ },
+ {
+  "slug": "davenue-puerto-vallarta-dgroup",
+  "name": "D'Avenue Puerto Vallarta (Phase One)",
+  "developer": "DGROUP",
+  "area": "Fluvial Vallarta",
+  "country": "Mexico",
+  "market": "Puerto Vallarta",
+  "url": "https://davenuevallarta.com/",
+  "docs_url": "https://davenuevallarta.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "nine floor plans with live availability per unit",
+   "MXN price list, from MXN 4.33M (USD 241k ref)",
+   "three payment plans",
+   "monthly construction photos (19 months, latest Sep 2026)",
+   "delivery Sep 2027",
+   "refundable MXN 100,000 deposit"
+  ],
+  "note": "74-residence tower in Fluvial Vallarta, delivery September 2027; the developer publishes per-unit pricing, nine floor plans and monthly level-by-level construction photography. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 4330000,
+   "currency": "MXN",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 0,
+   "developer_delivered": "DGROUP states five condominium buildings delivered in Puerto Vallarta 2017-2025 (not named on the page)",
+   "units": 74,
+   "payment_plan": "20/80 list; 30/60/10 staged (-7%); 80/20 capital-forward (max discount)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Monthly dated photo galleries per level, latest drone Sep 2026; no % published, 0 used as placeholder",
+   "plans": "Nine floor plans with m2 and availability",
+   "record": "Five delivered buildings claimed, unnamed",
+   "returns": "Publishes resale-over-launch figures (+38%, +94%) for past buildings; no guarantee"
+  },
+  "positives": [
+   "Fully refundable reservation deposit",
+   "Monthly construction photos since foundations",
+   "Developer publishes USD 2,933 per m2 from-price"
+  ],
+  "flags": [],
+  "sources": [
+   "https://davenuevallarta.com/",
+   "https://davenuevallarta.com/construction-updates"
+  ]
+ },
+ {
+  "slug": "alero-vallarta-sten",
+  "name": "ALERO Vallarta",
+  "developer": "STEN Casas del Pacifico",
+  "area": "5 de Diciembre, downtown Puerto Vallarta",
+  "country": "Mexico",
+  "market": "Puerto Vallarta",
+  "url": "https://alerovallarta.com/",
+  "docs_url": "https://alerovallarta.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "per-unit price, area and status (11 of 26 available, Sep 2026)",
+   "five unit layouts with interior and terrace m2",
+   "fideicomiso handled by sales agent"
+  ],
+  "note": "26-condo pre-sale building three minutes' walk from the beach; studios from MXN 5,035,286 (about USD 296k), availability updated 24 Sep 2026. No delivery date published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 5035286,
+   "currency": "MXN",
+   "title": "fideicomiso (restricted zone)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 26,
+   "payment_plan": null,
+   "price_per_m2": 88931
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": null,
+   "plans": "Layout per condo type with interior and terrace areas",
+   "record": "Team claims 25+ years and 100+ projects around the bay, none named",
+   "returns": "Rental management offered as separate service, no returns stated"
+  },
+  "positives": [
+   "Per-unit live availability and prices",
+   "Rental management separated from the sale"
+  ],
+  "flags": [],
+  "sources": [
+   "https://alerovallarta.com/"
+  ]
+ },
+ {
+  "slug": "xook-temozon-norte-grupo-orve",
+  "name": "XO'OK Temozon Norte (Etapa 1)",
+  "developer": "Grupo Orve",
+  "area": "Temozon Norte, Merida",
+  "country": "Mexico",
+  "market": "Mérida",
+  "url": "https://www.luumorealestate.com/desarrollos/xook/",
+  "docs_url": "https://www.lunaespecialistas.com/proyecto-xook",
+  "permit_number": null,
+  "docs_listed": [
+   "delivery 31 Mar 2028 plus up to 6 months extension",
+   "typologies 31-83 m2",
+   "MXN 10,000 reservation, 25% down",
+   "7-stage masterplan"
+  ],
+  "note": "112 apartments in two towers in Temozon Norte with a contractual delivery date of 31 March 2028 plus up to six months; prices from MXN 1,942,621 on the agent page. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1942621,
+   "currency": "MXN",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 112,
+   "payment_plan": "MXN 10,000 reservation, 25% down (up to 30 months), balance own funds or bank credit",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Agent page has an 'avances de obra' section but no dated developer update or figure",
+   "plans": "Sizes only",
+   "record": null,
+   "returns": "No guaranteed returns"
+  },
+  "positives": [
+   "Delivery date and extension limit stated",
+   "Maintenance prepayment and contingency fund disclosed"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.luumorealestate.com/desarrollos/xook/",
+   "https://www.lunaespecialistas.com/proyecto-xook"
+  ]
+ },
+ {
+  "slug": "bahia-papagayo-enjoy-grupo-laguna",
+  "name": "Bahia Papagayo Phase 1",
+  "developer": "Enjoy Group and Grupo Laguna (joint venture)",
+  "area": "Playa Panama, Papagayo Gulf",
+  "country": "Costa Rica",
+  "market": "Costa Rica",
+  "url": "https://bahiapapagayo.com/wp-content/uploads/2026/01/BP-FAQ.pdf",
+  "docs_url": "https://bahiapapagayo.com/wp-content/uploads/2026/01/BP-FAQ.pdf",
+  "permit_number": null,
+  "docs_listed": [
+   "deposit schedules per product",
+   "HOA fee ranges",
+   "Phase 1: 72 condos and 32 villas, completion Q2-Q3 2027",
+   "construction start conditional on 50% sales",
+   "warranty terms"
+  ],
+  "note": "320-acre community in the Papagayo Concession; Phase 1 (72 condos, 32 villas) was to start construction in Q1 2026 once 50% sold, with completion expected Q2-Q3 2027. Prices not in FAQ. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "USD",
+   "title": "Papagayo Concession",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Grupo Laguna: 70+ completed projects; Enjoy Group: 7 hotels and 19+ restaurants in Costa Rica, stated in developer FAQ",
+   "units": 104,
+   "payment_plan": "Condos 10/10/10/15/55; villas 15/15/10/10/50; Solea milestone-based 15/15/10/10/50",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Only water permit (AyA) mentioned; no construction permit number",
+   "escrow": null,
+   "progress": null,
+   "plans": "Not in FAQ",
+   "record": "Developer FAQ states Grupo Laguna's 70+ completed projects",
+   "returns": "Rentals allowed, official program later; no guarantee"
+  },
+  "positives": [
+   "Construction start tied to a 50% sales threshold, stated openly",
+   "HOA fees disclosed"
+  ],
+  "flags": [],
+  "sources": [
+   "https://bahiapapagayo.com/wp-content/uploads/2026/01/BP-FAQ.pdf"
+  ]
+ },
+ {
+  "slug": "numandi-residences-consudespro-armabloque",
+  "name": "Numandi Residences",
+  "developer": "Desarrollo Condominio Numandi S.A. (Consudespro and Armabloque)",
+  "area": "Playa Avellanas, Guanacaste",
+  "country": "Costa Rica",
+  "market": "Costa Rica",
+  "url": "https://terraazulrealestate.com/numandi-residences-playa-avellanas/",
+  "docs_url": "https://terraazulrealestate.com/numandi-residences-playa-avellanas/",
+  "permit_number": null,
+  "docs_listed": [
+   "3, 4 and 5BR floor plans",
+   "prices from $807,000",
+   "payment split 30% lot / 70% construction milestones",
+   "80 homes in three phases"
+  ],
+  "note": "80 single-storey modular homes in three phases near Playa Avellanas, master-planned by Gensler; pre-construction homes from $807,000 with construction payments tied to milestones. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 807000,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 80,
+   "payment_plan": "30% lot purchase, 70% construction payments at foundation, structure and completion milestones",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": null,
+   "plans": "Floor plans for 3, 4, 5BR on agent page",
+   "record": "Partners cite 40+ years in the region, no named deliveries",
+   "returns": "No returns advertised"
+  },
+  "positives": [
+   "Construction payments tied to building milestones",
+   "Floor plans published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://terraazulrealestate.com/numandi-residences-playa-avellanas/"
+  ]
+ },
+ {
+  "slug": "crystal-garden-cap-cana-gesproin",
+  "name": "Crystal Garden Cap Cana",
+  "developer": "Gesproin Group",
+  "area": "Las Iguanas golf, Cap Cana",
+  "country": "Dominican Republic",
+  "market": "Dominican Republic",
+  "url": "https://crystalgardencondos.com/",
+  "docs_url": "https://crystalgardencondos.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "floor-plan library",
+   "prices 2BR $475k, PH $700k, 3BR $740k",
+   "delivery Aug 2027",
+   "dated work-progress photography",
+   "CONFOTUR qualification",
+   "projected ROI 8-11% (not guaranteed)"
+  ],
+  "note": "196-residence condo-hotel on the Las Iguanas course with delivery scheduled August 2027; developer cites 89% sold and publishes dated progress photos. Projected 8-11% ROI is labelled illustrative, not guaranteed. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 475000,
+   "currency": "USD",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 8,
+   "completion": "2027-Q3",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 0,
+   "developer_delivered": "Gesproin Group: Crystal Garden is the 17th project in its portfolio, per developer site (projects not named)",
+   "units": 196,
+   "payment_plan": null,
+   "price_per_m2": 4525
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "CONFOTUR qualification claimed with no resolution number",
+   "escrow": null,
+   "progress": "Site says dated work-progress photography is published; no %, 0 used as placeholder",
+   "plans": "Browsable floor-plan library",
+   "record": "Portfolio of 17 developments claimed, unnamed",
+   "returns": "8-11% projected ROI stated as illustrative, not a guarantee"
+  },
+  "positives": [
+   "Prices and plan library public",
+   "Projections explicitly labelled as not guaranteed"
+  ],
+  "flags": [],
+  "sources": [
+   "https://crystalgardencondos.com/"
+  ]
+ },
+ {
+  "slug": "vervana-playa-venao-frapan",
+  "name": "Vervana Phase I and II",
+  "developer": "FRAPAN-Invest Corp.",
+  "area": "Playa Venao, Los Santos",
+  "country": "Panama",
+  "market": "Panama",
+  "url": "https://www.frapan-invest.com/en/luxury-apartments-by-the-sea/",
+  "docs_url": "https://www.frapan-invest.com/en/luxury-apartments-by-the-sea/",
+  "permit_number": null,
+  "docs_listed": [
+   "phase timeline: Phase I Feb 2026 to Sep 2027, Phase II Feb 2027 to Sep 2028",
+   "unit list with sizes, prices and availability (Apr 2026)",
+   "70% paid on completion"
+  ],
+  "note": "Beach resort next to Playa Venao: 20 beach condos in Phase I (construction began Feb 2026, end Sep 2027) and condos, penthouses and villas in Phase II; prices from $450,000. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 450000,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 50,
+   "payment_plan": "Staged payments during construction, 70% on completion",
+   "price_per_m2": 5114
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Construction start date stated (Feb 2026), no figure or photos",
+   "plans": "Sizes only",
+   "record": null,
+   "returns": "No returns advertised"
+  },
+  "positives": [
+   "70% of price due only at completion",
+   "Unit availability dated"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.frapan-invest.com/en/luxury-apartments-by-the-sea/"
+  ]
+ },
+ {
+  "slug": "amalfi-tower-cartagena",
+  "name": "Amalfi Tower",
+  "developer": "Developer not named on site (sales contact via URBA Colombia)",
+  "area": "Bocagrande, Cartagena",
+  "country": "Colombia",
+  "market": "Colombia",
+  "url": "https://amalfitower.com/faq/",
+  "docs_url": "https://amalfitower.com/faq/",
+  "permit_number": null,
+  "docs_listed": [
+   "fiduciary: Alianza Fiduciaria",
+   "payment plan 5% + 26 monthly to 40%, 60% Jan 2028",
+   "construction at level 6 of superstructure",
+   "delivery 2028",
+   "licences claimed, copies on request"
+  ],
+  "note": "30-storey beachfront tower of 122 units in Bocagrande; buyer payments go through Alianza Fiduciaria, construction began 2024 and is at level 6, delivery 2028. Prices quoted in USD on request. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "Buyers are linked to Alianza Fiduciaria before paying the reservation and instalments",
+   "progress_pct": 0,
+   "developer_delivered": null,
+   "units": 122,
+   "payment_plan": "5% reservation, 26 interest-free monthly instalments to 40%, 60% in Jan 2028",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "FAQ says all construction licences are in place and copies available on request; no number published",
+   "escrow": "Alianza Fiduciaria named",
+   "progress": "FAQ: superstructure at level 6, bimonthly reports to buyers; no %, 0 used as placeholder",
+   "plans": "Not published",
+   "record": null,
+   "returns": "No returns advertised"
+  },
+  "positives": [
+   "Payments routed through a named fiduciary",
+   "10-year structural warranty stated"
+  ],
+  "flags": [],
+  "sources": [
+   "https://amalfitower.com/faq/"
+  ]
+ },
+ {
+  "slug": "vista-ponta-negra-mirantes",
+  "name": "Vista Ponta Negra",
+  "developer": "Mirantes",
+  "area": "Ponta Negra, Natal",
+  "country": "Brazil",
+  "market": "Brazil",
+  "url": "https://www.lp.soumirantes.com.br/",
+  "docs_url": "https://www.lp.soumirantes.com.br/",
+  "permit_number": null,
+  "docs_listed": [
+   "46% of works executed",
+   "Tower A delivery Dec 2026, Tower B Jun 2028",
+   "2 and 3BR units",
+   "projected rental R$56k net per year",
+   "payment in up to 60 instalments"
+  ],
+  "note": "Two-tower development a minute from Av. Roberto Freire; developer states 46% of works done and Tower A delivery by Dec 2026. Marketing promises 'valorizacao garantida' and up to R$56k net rent a year. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "currency": "BRL",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 46,
+   "developer_delivered": "Mirantes: 14 years, 4,000+ apartments delivered, stated on developer page",
+   "units": null,
+   "payment_plan": "Up to 60 instalments",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "46% of works executed stated by developer",
+   "plans": "Not published on landing page",
+   "record": "4,000+ apartments delivered claimed",
+   "returns": "Advertises 'valorizacao garantida' and projected R$56k net per year"
+  },
+  "positives": [
+   "Construction percentage published",
+   "Large delivered volume claimed"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.lp.soumirantes.com.br/"
+  ]
+ },
+ {
+  "slug": "ambar-residences-orlando-big-key-group",
+  "name": "Ambar Residences Orlando (Apartments by Marriott Bonvoy)",
+  "developer": "The Big Key Group",
+  "area": "Kissimmee",
+  "country": "United States",
+  "market": "Orlando",
+  "url": "https://www.travelweekly.com/Travel-News/Hotel-News/Marriott-a-partner-for-Ambar-Residences-Orlando",
+  "docs_url": "https://orlandoambar.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "322 furnished residences, studio to 3BR",
+   "from $363,900 (agent listing)",
+   "deposits 5% rising to 30% by 180 days, 70% at closing",
+   "groundbreaking Q1/Q2 2026, delivery 2028",
+   "30 days owner use, Marriott-run rentals"
+  ],
+  "note": "First for-sale Apartments by Marriott Bonvoy project in the US: 322 furnished condo-hotel units in three seven-storey buildings five miles from Disney, construction expected early 2026 and completion 2028. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 363900,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 322,
+   "payment_plan": "5% at signing rising to 30% by 180 days, 70% at closing",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": null,
+   "plans": "Not published",
+   "record": null,
+   "returns": "Agent cites market occupancy and ADR; no guaranteed returns"
+  },
+  "positives": [
+   "Major hotel operator handles rentals",
+   "Deposit schedule published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.travelweekly.com/Travel-News/Hotel-News/Marriott-a-partner-for-Ambar-Residences-Orlando",
+   "https://orlandoambar.com/",
+   "https://otj.com/projects/ambar-residences-orlando/",
+   "https://www.re.cr/en/usa/overseasdevelopments__ambar-residences-orlando-apartaments-by-marriott-bonvoy",
+   "https://usa.propertyshelf.com/en/real-estate-by-type/residential-sale/rs2600013"
+  ]
+ },
+ {
+  "slug": "viceroy-residences-austin-pearlstone",
+  "name": "Viceroy Residences Austin",
+  "developer": "Pearlstone Partners",
+  "area": "Old West Austin, Pressler Street",
+  "country": "United States",
+  "market": "Austin",
+  "url": "https://www.viceroyresidencesaustin.com/",
+  "docs_url": "https://www.pearlstonepartners.com/portfolio/viceroy-residences-austin/",
+  "permit_number": null,
+  "docs_listed": [
+   "146 residences in two buildings",
+   "from $999,000 (A3 plan, 917 sq ft)",
+   "completion Q4 2027",
+   "floor plan listing",
+   "under construction"
+  ],
+  "note": "146 Viceroy-branded condos between downtown and Lady Bird Lake, under construction with completion scheduled Q4 2027; sales launched Aug 2026 with plans from $999,000. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 999000,
+   "currency": "USD",
+   "title": "freehold condominium",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Pearlstone Partners developed Vesper (84 East Ave, 41 storeys, 284 residences), complete and move-in ready, per vesperatx.com",
+   "units": 146,
+   "payment_plan": null,
+   "price_per_m2": 11727
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Under construction per developer; no figure or dated photos",
+   "plans": "A3 Central floor plan on Zillow developer listing",
+   "record": "Vesper delivered in Austin",
+   "returns": "No returns advertised"
+  },
+  "positives": [
+   "Developer delivered a 284-unit Austin tower",
+   "Completion quarter published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.viceroyresidencesaustin.com/",
+   "https://www.pearlstonepartners.com/portfolio/viceroy-residences-austin/",
+   "https://www.zillow.com/community/viceroy-residences-austin/459752607_zpid/",
+   "https://www.spyglassrealty.com/blog/viceroy-residences-austin-first-branded-luxury-tower",
+   "https://hoodline.com/2026/07/luxury-hotel-name-crashes-austin-condo-scene-on-pressler-street-6972913/",
+   "https://vesperatx.com/the-fab-property-group-to-lead-sales-at-vesper/"
+  ]
+ },
+ {
+  "slug": "ora-by-casa-tua-fortune",
+  "name": "ORA by Casa Tua",
+  "developer": "Fortune International Group",
+  "area": "Brickell, Miami",
+  "country": "United States",
+  "market": "Miami",
+  "url": "https://orabycasatuavip.com/ora-by-casa-tua-faq/",
+  "docs_url": "https://orabycasatuavip.com/ora-by-casa-tua-faq/",
+  "permit_number": null,
+  "docs_listed": [
+   "prices $990K to $4.35M",
+   "deposits 10/10/10/10/60",
+   "escrow and title agent First American Title",
+   "15-day rescission (FL 718)",
+   "construction Q4 2027 to Q4 2030",
+   "3-night minimum rentals"
+  ],
+  "note": "77-floor, 533-unit short-term-rental tower at 1210 Brickell Ave; sales opened in 2023 but construction is now expected Q4 2027 with completion Q4 2030. Deposits held in escrow with First American Title. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 990000,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "Deposits held in a non-interest escrow account; escrow and title agent First American Title",
+   "progress_pct": null,
+   "developer_delivered": "Fortune International Group: Jade Residences at Brickell Bay (2004), Jade Beach, Jade Ocean, Jade Signature (2018), Ritz-Carlton Residences Sunny Isles Beach (2019), per fortuneintlgroup.com",
+   "units": 533,
+   "payment_plan": "10% contract, 10% at 90 days, 10% at groundbreaking, 10% 90 days later, 60% at closing",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": "First American Title named as escrow agent",
+   "progress": "Not started (construction start Q4 2027)",
+   "plans": "Broker FAQ links a floor plans page, not reviewed",
+   "record": "Named delivered towers on developer site",
+   "returns": "Short-term rentals allowed; no guaranteed returns"
+  },
+  "positives": [
+   "Named escrow agent and statutory 15-day rescission",
+   "Long delivered track record in Miami"
+  ],
+  "flags": [],
+  "sources": [
+   "https://orabycasatuavip.com/ora-by-casa-tua-faq/",
+   "https://therealdeal.com/miami/2023/03/09/fortunes-ora-by-casa-tua-launches-sales-of-short-term-rental-condo-tower-in-brickell/",
+   "https://fortuneintlgroup.com/our-story/",
+   "https://therealdeal.com/miami/2018/02/01/fortune-international-group-and-premier-developers-complete-two-major-condo-projects/"
+  ]
+ }
+]

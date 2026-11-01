@@ -1,0 +1,1357 @@
+[
+ {
+  "slug": "sea-cliff-imtiaz",
+  "name": "Sea Cliff by Imtiaz",
+  "developer": "Imtiaz Developments (Imtiaz Luxury Real Estate Development L.L.C)",
+  "area": "Dubai Islands",
+  "country": "UAE",
+  "market": "Dubai",
+  "url": "https://alnair.ae/en/dubai/project/seacliff-by-imtiaz",
+  "docs_url": "https://imtiaz.ae/property/sea-cliff",
+  "permit_number": "0705061242",
+  "docs_listed": [
+   "Trakheesi permit number 0705061242, expiry 31 Dec 2026 (Alnair)",
+   "escrow United Bank Limited, account 200927479 (Alnair, DLD data pages)",
+   "DLD project number 4306",
+   "developer: construction progress 7% overall, estimated completion Q1 2028",
+   "developer: monthly construction history photos Jan to Aug 2026",
+   "brochure and factsheet PDFs, unit mix 1BR to 4BR duplex",
+   "payment plan 20/30/50 (Property Finder), 50/50 on factsheet"
+  ],
+  "note": "170 units in one 18 floor building on Dubai Islands; developer page shows 7% overall progress and Q1 2028 completion, DLD inspection of 20 Jul 2026 recorded 4.71% and a registered completion of 15 Aug 2028. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 2215354,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": true,
+   "permit_number": "0705061242",
+   "plans_published": true,
+   "escrow": "Escrow at United Bank Limited (Management Office), account 200927479, per DLD data shown on Alnair and Prop971",
+   "progress_pct": 7,
+   "developer_delivered": "Imtiaz states it handed over Beach Walk by Imtiaz, the first completed residential project on Dubai Islands (imtiaz.ae press release)",
+   "units": 170,
+   "payment_plan": "20% at launch, 30% during construction, 50% on handover (Property Finder); factsheet shows a 50/50 plan",
+   "price_per_m2": 19737
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 6,
+   "all_six": true
+  },
+  "evidence": {
+   "permit": "Alnair regulatory block: permit number 0705061242, expiry 31 Dec 2026; DLD project 4306",
+   "escrow": "Alnair and Prop971: United Bank Limited escrow account 200927479",
+   "progress": "imtiaz.ae: 7% overall, construction history photos by month; DLD inspections 0% (Dec 2025), 1.11% (Apr 2026), 4.71% (Jul 2026)",
+   "plans": "Alnair floor plans section and factsheet with unit types and minimum sizes",
+   "record": "Imtiaz press release names Beach Walk as handed over",
+   "returns": "No guaranteed returns language found"
+  },
+  "positives": [
+   "All six disclosure checks are published",
+   "Dated monthly construction photos on the developer site",
+   "Escrow bank and account number publicly listed"
+  ],
+  "flags": [],
+  "sources": [
+   "https://imtiaz.ae/property/sea-cliff",
+   "https://imtiaz.ae/construction-history/sea-cliff",
+   "https://imtiaz.ae/news-and-press/imtiaz-expands-its-dubai-islands-portfolio-with-groundbreaking-of-dh600-million-sea-cliff-residence",
+   "https://alnair.ae/en/dubai/project/seacliff-by-imtiaz",
+   "https://www.propertyfinder.ae/en/new-projects/imtiaz-developments/seacliff",
+   "https://www.mitchellscommercialrealty.com/projects/sea-cliff",
+   "https://www.prop971.com/project/PRJ-IMT-XJH4U",
+   "https://www.mitchellscommercialrealty.com/downloads/sea-cliff/SEA_CLIFF_FACTSHEET.pdf"
+  ]
+ },
+ {
+  "slug": "ellington-sands-i-ellington",
+  "name": "Ellington Sands I",
+  "developer": "Ellington Properties (Ellington Properties Development L.L.C)",
+  "area": "Dubai Islands (Island A)",
+  "country": "UAE",
+  "market": "Dubai",
+  "url": "https://www.propertyfinder.ae/en/new-projects/ellington/ellington-sands",
+  "docs_url": "https://ellington-sands.ellingtonproperties.ae/",
+  "permit_number": "DLD project 4139",
+  "docs_listed": [
+   "DLD project number 4139",
+   "escrow Commercial Bank of Dubai, account 1010060836 (DLD data pages)",
+   "DLD inspection 0.37% on 5 Jun 2026",
+   "developer: payment plan 20% booking, staged to 70% before completion, 30% on completion",
+   "floor plan PDFs for Sands I and II",
+   "project brief: 1BR to 4BR penthouse, service charge AED 18/sqft"
+  ],
+  "note": "471 registered homes on Dubai Islands; DLD lists 0.37% built at its 5 Jun 2026 inspection and a registered completion of 31 Dec 2028, while the developer brief states Q2 2028. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 2149000,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": true,
+   "permit_number": "DLD project 4139",
+   "plans_published": true,
+   "escrow": "Escrow at Commercial Bank of Dubai, account 1010060836, per DLD register data",
+   "progress_pct": 0.37,
+   "developer_delivered": null,
+   "units": 471,
+   "payment_plan": "20% booking, 10% at 60 days, 10% at 120 days, 5% at 240 and 360 days, 5% at each of 20/30/40/50% construction, 30% on completion",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "DLD project number 4139 on DLD data pages",
+   "escrow": "Commercial Bank of Dubai account 1010060836",
+   "progress": "DLD inspection 5 Jun 2026: 0.37%",
+   "plans": "Floor plan PDFs for Sands I and II, Property Finder layouts",
+   "record": null,
+   "returns": "No guaranteed returns language found"
+  },
+  "positives": [
+   "Payment instalments after year one are tied to construction percentages",
+   "Escrow account number publicly listed"
+  ],
+  "flags": [],
+  "sources": [
+   "https://ellington-sands.ellingtonproperties.ae/",
+   "https://www.propertyfinder.ae/en/new-projects/ellington/ellington-sands",
+   "https://www.mitchellscommercialrealty.com/projects/ellington-sands",
+   "https://www.mitchellscommercialrealty.com/off-plan/ellington-sands-i",
+   "https://www.homesearch.ae/for-sale/off-plan/ellington/ellington-sands-i-4139",
+   "https://continentalclub.ae/project/ellington-sands-1-dubai-islands/",
+   "https://bayut-production.s3.eu-central-1.amazonaws.com/file/1445407/c6ce25e1252c4631bfafb091fac85b15.pdf"
+  ]
+ },
+ {
+  "slug": "golf-dale-emaar",
+  "name": "Golf Dale",
+  "developer": "Emaar (Emaar Dubai South DWC LLC)",
+  "area": "Emaar South",
+  "country": "UAE",
+  "market": "Dubai",
+  "url": "https://jre.ae/projects/golf-dale",
+  "docs_url": "https://jre.ae/projects/golf-dale",
+  "permit_number": "DLD project 3427",
+  "docs_listed": [
+   "DLD project number 3427",
+   "escrow Abu Dhabi Commercial Bank, escrow number 11134281920033 (JRE)",
+   "DLD inspection 0.27% on 30 Apr 2026",
+   "brochure, floor plan and master plan documents (JRE)",
+   "payment plan 10/70/20"
+  ],
+  "note": "200 units in two towers plus townhouses; DLD lists 0.27% built at its 30 Apr 2026 inspection, construction start 23 May 2025 and completion 31 Dec 2028. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 2701888,
+   "currency": "AED",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": true,
+   "permit_number": "DLD project 3427",
+   "plans_published": true,
+   "escrow": "Escrow at Abu Dhabi Commercial Bank, escrow number 11134281920033",
+   "progress_pct": 0.27,
+   "developer_delivered": null,
+   "units": 200,
+   "payment_plan": "10% on booking, 70% during construction, 20% on handover",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "DLD project number 3427",
+   "escrow": "ADCB escrow, number 11134281920033 on JRE",
+   "progress": "DLD inspections 0% (Nov 2024), 0.27% (Apr 2026)",
+   "plans": "JRE lists floor plan document",
+   "record": null,
+   "returns": "No guaranteed returns language found"
+  },
+  "positives": [
+   "Escrow bank and number publicly listed",
+   "DLD inspection history published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://jre.ae/projects/golf-dale",
+   "https://dubairealestateiq.com/project/golf-dale",
+   "https://continentalclub.ae/project/golf-dale-emaar-south/",
+   "https://mulki.ae/off-plan/dubai-world-central/golf-dale"
+  ]
+ },
+ {
+  "slug": "sky-gate-tower-tiger",
+  "name": "Sky Gate Tower",
+  "developer": "Tiger Properties",
+  "area": "Jumeirah Village Triangle",
+  "country": "UAE",
+  "market": "Dubai",
+  "url": "https://dxbpropy.ai/offplan/sky-gate-tower-jumeirah-village-triangle-3244",
+  "docs_url": "https://uaepropertychecker.com/projects/sky-gate-tower",
+  "permit_number": "DLD project 4120",
+  "docs_listed": [
+   "DLD project number 4120",
+   "escrow Abu Dhabi Commercial Bank, account 10487681920050",
+   "DLD inspections 0% (Sep 2025), 1.56% (Mar 2026), 4.68% (Oct 2026)",
+   "price from AED 600,000, 5 year flexible plan"
+  ],
+  "note": "431 unit tower in JVT; DLD recorded 4.68% built on 7 Oct 2026 against a registered completion of 29 Feb 2028. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 600000,
+   "currency": "AED",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q1",
+   "permit_claim": true,
+   "permit_number": "DLD project 4120",
+   "plans_published": false,
+   "escrow": "Escrow at Abu Dhabi Commercial Bank, account 10487681920050",
+   "progress_pct": 4.68,
+   "developer_delivered": null,
+   "units": 431,
+   "payment_plan": "5 year flexible payment plan (details not published)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "DLD project number 4120",
+   "escrow": "ADCB account 10487681920050",
+   "progress": "DLD inspection 7 Oct 2026: 4.68%",
+   "plans": null,
+   "record": null,
+   "returns": "No guaranteed returns language found"
+  },
+  "positives": [
+   "Escrow account number publicly listed",
+   "Three dated DLD inspections published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dxbpropy.ai/offplan/sky-gate-tower-jumeirah-village-triangle-3244",
+   "https://uaepropertychecker.com/projects/sky-gate-tower",
+   "https://dubairealestateiq.com/project/sky-gate-tower",
+   "https://www.cevitas.ae/en/projects/sky-gate-tower"
+  ]
+ },
+ {
+  "slug": "sunstone-imkan",
+  "name": "Sunstone",
+  "developer": "IMKAN Properties",
+  "area": "Al Reem Island (Makers District)",
+  "country": "UAE",
+  "market": "Abu Dhabi",
+  "url": "https://jre.ae/projects/sunstone",
+  "docs_url": "https://imkan.ae/projects/makers-district/sunstone",
+  "permit_number": null,
+  "docs_listed": [
+   "escrow account 14409377920002 (Equity Edge)",
+   "developer: floor plans section for 1 to 4 bedroom units",
+   "payment plan 10/40/50",
+   "construction start 12 Jan 2026, completion Sep 2028 (Property Finder)",
+   "build progress not reported (Impala)"
+  ],
+  "note": "Boutique tower of about 30 to 31 units on Al Reem Island; construction started 12 Jan 2026 per Property Finder, completion scheduled Q3 2028, no progress figure published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 2643777,
+   "currency": "AED",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Escrow account 14409377920002 listed by Equity Edge",
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 30,
+   "payment_plan": "10% on booking, 40% during construction, 50% on handover",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": "Equity Edge: escrow account 14409377920002",
+   "progress": "Impala: build progress not reported yet",
+   "plans": "imkan.ae floor plans section",
+   "record": null,
+   "returns": "No guaranteed returns language found"
+  },
+  "positives": [
+   "Floor plans on the developer page",
+   "Escrow account number published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://imkan.ae/projects/makers-district/sunstone",
+   "https://jre.ae/projects/sunstone",
+   "https://www.equityedge.ae/off-plan/projects/sunstone",
+   "https://impalarealestate.com/projects/sunstone/",
+   "https://www.propertyfinder.ae/en/new-projects/imkan/sunstone-residences"
+  ]
+ },
+ {
+  "slug": "the-beach-vista-range",
+  "name": "The Beach Vista",
+  "developer": "Range Developments",
+  "area": "Al Marjan Island",
+  "country": "UAE",
+  "market": "Ras Al Khaimah",
+  "url": "https://jre.ae/projects/the-beach-vista",
+  "docs_url": "https://jre.ae/projects/the-beach-vista",
+  "permit_number": null,
+  "docs_listed": [
+   "escrow account 01434279175",
+   "construction 2% complete",
+   "brochure, floor plan and master plan documents",
+   "construction start Oct 2024, end Dec 2027"
+  ],
+  "note": "Small beachfront building opposite the Wynn Al Marjan site; 2BR units from AED 4.52M, 2% construction progress shown, completion Q4 2027. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 4522098,
+   "currency": "AED",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Escrow account 01434279175 under the RAK framework",
+   "progress_pct": 2,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": "JRE: escrow account 01434279175",
+   "progress": "JRE: 2% complete",
+   "plans": "JRE floor plan document",
+   "record": null,
+   "returns": "No guaranteed returns language found"
+  },
+  "positives": [
+   "Escrow account number published",
+   "Floor plan document available"
+  ],
+  "flags": [],
+  "sources": [
+   "https://jre.ae/projects/the-beach-vista",
+   "https://victaura.com/en/insights/escrow-and-the-payment-plan/"
+  ]
+ },
+ {
+  "slug": "amazi-hawana-salalah-muriya",
+  "name": "Amazi at Hawana Salalah",
+  "developer": "Muriya (Orascom Development and OMRAN)",
+  "area": "Hawana Salalah, Dhofar",
+  "country": "Oman",
+  "market": "Oman",
+  "url": "https://www.palmera.realestate/oman/property/amazi-hawana-salalah/",
+  "docs_url": "https://muriya.om/construction-updates",
+  "permit_number": null,
+  "docs_listed": [
+   "escrow Sohar International, account holder Salalah Beach Tourism Development SAOC, IBAN published (Palmera)",
+   "developer: construction updates page, last updated 27 Jul 2026",
+   "phase one close to 80% complete, handover Q1 2027 (Muriya release Sep 2026)",
+   "payment plan 10% then 12 x 7.5% quarterly",
+   "chalets and villas 58 to 243 sqm"
+  ],
+  "note": "Phase one of 150 waterfront villas inside the Hawana Salalah ITC; Muriya said in Sep 2026 it is close to 80% complete with handover in Q1 2027, while its construction page dated 27 Jul 2026 shows 51% for an active 196 unit development. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 109889,
+   "currency": "OMR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "Escrow at Sohar International, account holder Salalah Beach Tourism Development SAOC, IBAN published on Palmera listing",
+   "progress_pct": 80,
+   "developer_delivered": "Muriya construction page: 1,748 units in completed communities, including Marina (138), Hawana Lagoons (260) and Forest Island (208) fully handed over",
+   "units": 150,
+   "payment_plan": "10% down, then twelve 7.5% quarterly instalments over 36 months",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": "Palmera: Sohar International escrow with account holder and IBAN",
+   "progress": "AFP press release and Oman Observer: close to 80% (Sep 2026); muriya.om: 51% (27 Jul 2026)",
+   "plans": null,
+   "record": "muriya.om lists completed communities and handed over unit counts",
+   "returns": "Agency page cites 10.2% est. yield and past ROIs; no guarantee stated"
+  },
+  "positives": [
+   "Developer publishes a construction updates page with dated figures",
+   "Delivered communities named with unit counts",
+   "Escrow account details published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://muriya.om/construction-updates",
+   "https://www.afp.com/en/agency/inside-afp/external-press-releases/moving-forward-oman-orascom-samih-sawiris-and-muriya-keep",
+   "https://www.omanobserver.om/article/1195551/business/tourism/muriya-plans-1000-room-hotel-expansion-across-oman",
+   "https://tamlik.om/itc/hawana-salalah/amazi",
+   "https://www.palmera.realestate/oman/property/amazi-hawana-salalah/"
+  ]
+ },
+ {
+  "slug": "bayview-bahrain-bay-binaa",
+  "name": "Bayview",
+  "developer": "Binaa Al Bahrain (powered by Eagle Hills)",
+  "area": "Bahrain Bay, Manama",
+  "country": "Bahrain",
+  "market": "Bahrain",
+  "url": "https://askre.com/bahrain-new-projects/bayview/",
+  "docs_url": "https://binaaeaglehills.com/project-updates/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: monthly Bayview project updates Jan to May 2026",
+   "brochure PDF (cover carries an unlabelled reference D2025/03/1026)",
+   "prices from BHD 94,888, sizes 67 to 150 sqm",
+   "payment plan 10% on signing staged to Dec 2031",
+   "handover Dec 2028"
+  ],
+  "note": "Four buildings on the Bahrain Bay waterfront, freehold for all nationalities, 1BR to 3BR from BHD 94,888 with handover in December 2028. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 94888,
+   "currency": "BHD",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-12",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Binaa site lists Marassi Residence, Vida Beach Resort, Address Beach Resort, Marassi Galleria and Marassi Shores Residences among its milestones",
+   "units": null,
+   "payment_plan": "10% on signing, 10% May 2027, eight 6% instalments to Apr 2029 (handover Dec 2028), eight 4% instalments to Dec 2031",
+   "price_per_m2": 1416
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Brochure cover shows D2025/03/1026 with no label; not counted as a licence number",
+   "escrow": null,
+   "progress": "binaaeaglehills.com project updates for Bayview, Jan to May 2026",
+   "plans": null,
+   "record": "Binaa homepage milestones list",
+   "returns": "No guaranteed returns language found"
+  },
+  "positives": [
+   "Monthly dated project updates on developer site",
+   "Post handover payment plan to 2031"
+  ],
+  "flags": [],
+  "sources": [
+   "https://binaaeaglehills.com/project-updates/",
+   "https://binaaeaglehills.com/",
+   "https://binaaeaglehills.com/wp-content/uploads/2025/06/binaa-bayview-brochure.pdf",
+   "https://askre.com/bahrain-new-projects/bayview/",
+   "https://www.avirorealestate.com/bayview"
+  ]
+ },
+ {
+  "slug": "les-vagues-elie-saab-dar-global",
+  "name": "Les Vagues by Elie Saab",
+  "developer": "Dar Global (with Qetaifan Projects)",
+  "area": "Qetaifan Island North, Lusail",
+  "country": "Qatar",
+  "market": "Qatar",
+  "url": "https://www.omniacapitalgroup.com/en/developments/les-vagues-by-elie-saab",
+  "docs_url": "https://darglobal.co.uk/les-vagues",
+  "permit_number": null,
+  "docs_listed": [
+   "unit sizes 84 to 389 sqm, 1 to 3 bedrooms",
+   "completion December 2027",
+   "70 residences, sales launched Oct 2022",
+   "payment plan 20/70/10 (agency)"
+  ],
+  "note": "Seafront branded residences on Qetaifan Island North; construction began Dec 2023 and completion is scheduled for December 2027; no permit, escrow or progress figure found on the developer page. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 2000000,
+   "currency": "QAR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 70,
+   "payment_plan": "20% on reservation, 70% during construction, 10% on handover (agency)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": null,
+   "plans": null,
+   "record": null,
+   "returns": "No guaranteed returns language found"
+  },
+  "positives": [
+   "Freehold zone, residence permit threshold cleared per agency"
+  ],
+  "flags": [],
+  "sources": [
+   "https://darglobal.co.uk/les-vagues",
+   "https://darglobal.co.uk/partners/elie-saab",
+   "https://www.omniacapitalgroup.com/en/developments/les-vagues-by-elie-saab",
+   "https://www.qetaifanprojects.com/projects/"
+  ]
+ },
+ {
+  "slug": "four-seasons-private-residences-jeddah-midad",
+  "name": "Four Seasons Private Residences Jeddah",
+  "developer": "Midad Real Estate Investment Company",
+  "area": "Jeddah Corniche",
+  "country": "Saudi Arabia",
+  "market": "Saudi Arabia",
+  "url": "https://www.palmera.realestate/saudi-arabia/property/four-seasons-private-residences-jeddah/",
+  "docs_url": "https://www.palmera.realestate/saudi-arabia/property/four-seasons-private-residences-jeddah/",
+  "permit_number": null,
+  "docs_listed": [
+   "76 residences above a 247 room Four Seasons hotel",
+   "sizes 167.7 to 1,162.5 sqm",
+   "payment plan SAR 50,000 booking, 35%, 5 x 10%, 15% at handover",
+   "completion June 2027",
+   "suspended bridges finished Nov 2024"
+  ],
+  "note": "Four SOM designed towers on the Jeddah Corniche; 26 of 76 residences listed as available from SAR 6.7M with completion in June 2027; no Wafi licence or escrow number on the page. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 6716214,
+   "currency": "SAR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-06",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 76,
+   "payment_plan": "SAR 50,000 booking, 35% on signing, five 10% instalments every two months, 15% on handover",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Dated milestone: suspended bridges finished in November 2024",
+   "plans": null,
+   "record": null,
+   "returns": "No guaranteed returns language found"
+  },
+  "positives": [
+   "Live unit by unit availability published by developer per agency"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.palmera.realestate/saudi-arabia/property/four-seasons-private-residences-jeddah/",
+   "https://www.palmera.realestate/saudi-arabia/blog/off-plan-saudi-arabia-payment-plans-escrow-risk/",
+   "https://rega.gov.sa/en/media-center/news-announcements/rega-non-saudi-property-ownership-system-enters-into-force-as-of-today/"
+  ]
+ },
+ {
+  "slug": "trump-plaza-jeddah-dar-global",
+  "name": "Trump Plaza Jeddah",
+  "developer": "Dar Global",
+  "area": "King Abdulaziz Road, Jeddah",
+  "country": "Saudi Arabia",
+  "market": "Saudi Arabia",
+  "url": "https://www.palmera.realestate/saudi-arabia/property/trump-plaza-jeddah/",
+  "docs_url": "https://www.palmera.realestate/saudi-arabia/property/trump-plaza-jeddah/",
+  "permit_number": null,
+  "docs_listed": [
+   "escrow at Alinma Bank",
+   "unit sizes 70 to 332 sqm, Executive and Park Residences",
+   "seven stage construction linked payment plan",
+   "completion December 2030",
+   "service charge SAR 75/sqm"
+  ],
+  "note": "Mixed use district with furnished apartments and townhouses, sold to any nationality; payments are tied to construction stages and held in escrow at Alinma Bank, completion December 2030. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1464134,
+   "currency": "SAR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030-12",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "Escrow at Alinma Bank (account number not published)",
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": "20% signing, 10% basement, 20% third floor slab, 20% sixth floor slab, 20% facade, 10% finishing, 5% handover",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": "Palmera: money held in escrow at Alinma Bank",
+   "progress": null,
+   "plans": null,
+   "record": null,
+   "returns": "No guaranteed returns language found"
+  },
+  "positives": [
+   "Payments tied to construction milestones",
+   "Escrow bank named"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.palmera.realestate/saudi-arabia/property/trump-plaza-jeddah/",
+   "https://www.palmera.realestate/saudi-arabia/ar/property/trump-plaza-jeddah/"
+  ]
+ },
+ {
+  "slug": "amare-seafront-villas-misr-italia",
+  "name": "Amare Seafront Villas (Solare Ras El Hekma)",
+  "developer": "Misr Italia Properties",
+  "area": "Ras El Hekma, North Coast",
+  "country": "Egypt",
+  "market": "Egypt",
+  "url": "https://www.propertyfinder.eg/en/new-projects/lp/north-coast/ras-al-hekma",
+  "docs_url": "https://dailynewsegypt.com/2026/08/09/misr-italia-showcases-solare-progress-launches-amare-seafront-villas-in-ras-el-hekma/",
+  "permit_number": null,
+  "docs_listed": [
+   "launch price EGP 5,530,644, delivery Q4 2028 (Property Finder)",
+   "420 villas and 270 cabanas",
+   "developer media tour Aug 2026: 90% of concrete works for cabanas, 80% for villas, 70% land grading"
+  ],
+  "note": "Seafront villa district inside Solare at km 199; Misr Italia reported in Aug 2026 that 80% of villa concrete works and 90% of cabana concrete works were done, targeting delivery within two years. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 5530644,
+   "currency": "EGP",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": 80,
+   "developer_delivered": null,
+   "units": 690,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Daily News Egypt and Shore Africa report developer figures from Aug 2026 media tour",
+   "plans": null,
+   "record": null,
+   "returns": "No guaranteed returns language found"
+  },
+  "positives": [
+   "Structural works well advanced at launch per developer"
+  ],
+  "flags": [],
+  "sources": [
+   "https://dailynewsegypt.com/2026/08/09/misr-italia-showcases-solare-progress-launches-amare-seafront-villas-in-ras-el-hekma/",
+   "https://shore.africa/2026/08/08/misr-italia-launches-161-million-villas/",
+   "https://www.propertyfinder.eg/en/new-projects/lp/north-coast/ras-al-hekma"
+  ]
+ },
+ {
+  "slug": "the-grand-central-hivernage-horizon-morocco",
+  "name": "The Grand Central Hivernage",
+  "developer": "Horizon Morocco",
+  "area": "Hivernage, Marrakech",
+  "country": "Morocco",
+  "market": "Marrakech",
+  "url": "https://www.marocimmo.com/en/new/the-grand-central-hivernage-city-residences",
+  "docs_url": "https://www.the-grand-central.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "lots from MAD 938,000 to MAD 6.2M",
+   "1 to 4 bedroom apartments and duplexes, 39 to 161 sqm",
+   "payment plan 30/30/40",
+   "open to foreign and non-resident buyers",
+   "480 homes, delivery Q4 2028 (MarocImmo)"
+  ],
+  "note": "480 home city residence on Avenue Hassan II, open to foreign buyers, from MAD 938,000 with delivery in Q4 2028; no permit, guarantee or progress data published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 938000,
+   "currency": "MAD",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 480,
+   "payment_plan": "30% on reservation, 30% 12 months after start, 40% on delivery",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": "Site says reservation is secured by legalised contracts; no guarantee or escrow named",
+   "progress": null,
+   "plans": null,
+   "record": "MarocImmo says several delivered projects but names none",
+   "returns": "No guaranteed returns language found"
+  },
+  "positives": [
+   "Final 40% payable at title deed, financeable by bank"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.the-grand-central.com/",
+   "https://www.marocimmo.com/en/new/the-grand-central-hivernage-city-residences",
+   "https://www.mvimmobilier.com/nos-biens/the-grand-central-hivernage-marrakech/"
+  ]
+ },
+ {
+  "slug": "amanzira-aquasol",
+  "name": "Amanzira",
+  "developer": "AquaSol Ltd",
+  "area": "Tamarin, Black River",
+  "country": "Mauritius",
+  "market": "Mauritius",
+  "url": "https://gadait-international.com/en/projects/tamarin/amanzira-eco-villas-tamarin-mauritius/",
+  "docs_url": "https://gadait-international.com/en/projects/tamarin/amanzira-eco-villas-tamarin-mauritius/",
+  "permit_number": "BLP3-BRDC-2026-511",
+  "docs_listed": [
+   "building and land use permit BLP3-BRDC-2026-511 (16 Jun 2026)",
+   "EDB letter of approval ref EDB/HPD/AML/27062 (6 May 2026)",
+   "25% deposit held in escrow by the notary; extrinsic completion guarantee on the deed",
+   "price list 24 Sep 2026, lot by lot",
+   "Villa Ra floor plans and room by room areas",
+   "stage payments 30/5/35/25/5"
+  ],
+  "note": "Nine PDS villas on 1.14 ha in Tamarin from EUR 860,625; permit and EDB approval references are published, deposits sit in notary escrow and the deed carries a completion guarantee, build period 24 months from deed. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 860625,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": true,
+   "permit_number": "BLP3-BRDC-2026-511",
+   "plans_published": true,
+   "escrow": "Reservation deposit of 25% held in escrow by the programme notary; extrinsic completion guarantee on the deed of sale",
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 9,
+   "payment_plan": "25% deposit (escrow), 30% at deed incl. deposit, 5% foundations, 35% weathertight, 25% completion, 5% keys",
+   "price_per_m2": 5977
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "BLP3-BRDC-2026-511 and EDB/HPD/AML/27062",
+   "escrow": "Notary escrow plus completion guarantee",
+   "progress": null,
+   "plans": "Villa Ra plans and Amanzi room areas published",
+   "record": null,
+   "returns": "No guaranteed returns language found"
+  },
+  "positives": [
+   "Permit and EDB approval numbers published",
+   "Deposit held by notary, not the developer",
+   "Lot by lot price list"
+  ],
+  "flags": [],
+  "sources": [
+   "https://gadait-international.com/en/projects/tamarin/amanzira-eco-villas-tamarin-mauritius/",
+   "https://edbmauritius.org/wp-content/uploads/2022/10/EDB-PDS-regulations.pdf"
+  ]
+ },
+ {
+  "slug": "maisons-de-bonneval-property-lab",
+  "name": "Maisons de Bonneval",
+  "developer": "Property Lab (Belouget Investments Ltd)",
+  "area": "Domaine de Belouguet, Tamarin",
+  "country": "Mauritius",
+  "market": "Mauritius",
+  "url": "https://gadait-international.com/en/projects/tamarin/maisons-de-bonneval-domaine-de-belouguet-tamarin-villas-mauritius/",
+  "docs_url": "https://gadait-international.com/en/projects/tamarin/maisons-de-bonneval-domaine-de-belouguet-tamarin-villas-mauritius/",
+  "permit_number": null,
+  "docs_listed": [
+   "PDS certificate received 3 Sep 2025",
+   "building permit from Black River District Council (no number shown)",
+   "completion guarantee approved by MauBank",
+   "Sep 2026 price list: villas 5 and 6 at EUR 1.85M and 1.75M",
+   "schedule of areas per room"
+  ],
+  "note": "Seven PDS family villas; villas 1 to 3 sold, villa 4 due Feb/Mar 2027 and phase 2 villas built in 18 months, with a MauBank completion guarantee. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 1750000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "Completion guarantee approved by MauBank",
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 7,
+   "payment_plan": null,
+   "price_per_m2": 5743
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Building permit and PDS certificate stated, no number",
+   "escrow": "MauBank completion guarantee",
+   "progress": null,
+   "plans": "Floor plans only sent by email on request",
+   "record": null,
+   "returns": "No guaranteed returns language found"
+  },
+  "positives": [
+   "Bank completion guarantee named",
+   "Detailed area schedule published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://gadait-international.com/en/projects/tamarin/maisons-de-bonneval-domaine-de-belouguet-tamarin-villas-mauritius/"
+  ]
+ },
+ {
+  "slug": "blue-vista-flow-properties",
+  "name": "Blue Vista",
+  "developer": "Flow Property Development",
+  "area": "La Plantation Marguery, Black River",
+  "country": "Mauritius",
+  "market": "Mauritius",
+  "url": "https://www.pamgolding.mu/en/property-details/offer/tamarin/property/132466/discover-blue-vista-a-pinnacle-of-luxury-living-in-black-river-mauritius.html",
+  "docs_url": "https://flowproperties.mu/property/blue-vista/",
+  "permit_number": null,
+  "docs_listed": [
+   "status under construction, last unit available",
+   "10 units: 4 villas, 2 penthouses, 4 apartments",
+   "price EUR 2.9M",
+   "developer LinkedIn: ground broken Sep 2025, delivery 2027 (May 2026 post)"
+  ],
+  "note": "Ten unit PDS project facing Le Morne; under construction since Sep 2025 with delivery targeted in 2027, last villa listed at EUR 2.9M. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 2900000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Flow names The WaterClub PDS (22 units, La Balise) and Studio 5 business park as earlier projects; Equinoxe (8 units) sold out",
+   "units": 10,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "PDS stated, no number",
+   "escrow": null,
+   "progress": "Dated developer updates Sep 2025 and May 2026",
+   "plans": null,
+   "record": "flowproperties.mu projects list and LinkedIn",
+   "returns": "No guaranteed returns language found"
+  },
+  "positives": [
+   "Developer posts dated construction updates"
+  ],
+  "flags": [],
+  "sources": [
+   "https://flowproperties.mu/property/blue-vista/",
+   "https://flowproperties.mu/projects/",
+   "https://linkedin.com/company/flow-properties",
+   "https://www.pamgolding.mu/en/property-details/offer/tamarin/property/132466/discover-blue-vista-a-pinnacle-of-luxury-living-in-black-river-mauritius.html",
+   "https://sothebysrealty.mu/print/?pid=83478"
+  ]
+ },
+ {
+  "slug": "soul-fumba-cps-africa",
+  "name": "The Soul Fumba",
+  "developer": "CPS Africa",
+  "area": "Fumba Town",
+  "country": "Tanzania",
+  "market": "Zanzibar",
+  "url": "https://fumbatown.agency/en/projects/the-soul-fumba",
+  "docs_url": "https://thesoulfumba.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "building by building schedule updated Feb 2026 (SF1 to SF4)",
+   "milestone payment plan tied to certified construction stages",
+   "floor plans on sales platform, sizes 36 to 152 sqm",
+   "99 year ZIPA leasehold, residency permit above USD 100,000",
+   "exclusive rental operator TOC"
+  ],
+  "note": "220 timber built resort apartments in Fumba Town from USD 129,900; first buildings due end 2026, whole resort 2028; payments follow independently certified milestones. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 129900,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": 99,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "CPS states over 1,400 units sold and about 700 delivered in Fumba Town; first 16 Moyoni Bay units handed over",
+   "units": 220,
+   "payment_plan": "25% + 5% fee on signing, 20% construction start, 20% substructure, 15% materials on site, 15% superstructure, 5% handover",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "ZIPA-registered development stated, no number",
+   "escrow": "Milestone payments independently certified; no escrow named",
+   "progress": "FAQ schedule updated Feb 2026; Fumba Times Sep 2026 says first two buildings erected",
+   "plans": "Sales platform floor plans and layouts",
+   "record": "thesoulfumba.com FAQ: about 700 units delivered",
+   "returns": "Mentions estimated 10% annual appreciation and a guaranteed fair revenue share between owners, not a guaranteed return"
+  },
+  "positives": [
+   "Payments only after certified milestones",
+   "Large delivered track record in Fumba Town"
+  ],
+  "flags": [],
+  "sources": [
+   "https://thesoulfumba.com/",
+   "https://thesoulfumba.com/faqs/",
+   "https://fumbatown.agency/en/projects/the-soul-fumba",
+   "https://fumba.town/2026/09/15/more-soul-for-the-island/",
+   "https://cps.africa/faq/",
+   "https://moyoni.zanzibarproperty.co.tz/"
+  ]
+ },
+ {
+  "slug": "shivo-towers-shivo",
+  "name": "Shivo Towers",
+  "developer": "Shivo (Shivo Tanzania)",
+  "area": "Paje",
+  "country": "Tanzania",
+  "market": "Zanzibar",
+  "url": "https://realtarea.com/en/project/shivo-towers-paje/",
+  "docs_url": "https://www.byshivo.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "165 apartments plus 4 penthouses",
+   "floor plan downloads for Mezzanine and Presidential collections",
+   "prices from USD 117,000",
+   "estimated yields 8 to 12% (investment guide, stated as estimates)",
+   "5 year payment plans"
+  ],
+  "note": "Two tower apartment project 100 m from Paje beach, from USD 117,000, completion 2027 to 2028; developer markets estimated yields and appreciation but publishes no permit, escrow or progress figure. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 117000,
+   "currency": "USD",
+   "title": "leasehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 9,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 165,
+   "payment_plan": "20% down, 70% in stages, 10% on completion, or 3 and 5 year plans",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": null,
+   "plans": "Floor plan downloads on collection pages",
+   "record": null,
+   "returns": "Estimated 9 to 12% yields and an estimated 100% value appreciation; stated as estimates, no guarantee"
+  },
+  "positives": [
+   "Floor plans downloadable"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.byshivo.com/",
+   "https://www.byshivo.com/properties/luxury-zanzibar-apartments/the-mezzanine-collection/",
+   "https://www.byshivo.com/properties/luxury-zanzibar-apartments/presidential-suites/",
+   "https://www.byshivo.com/wp-content/uploads/2025/05/Investment-Informational-Guide-for-Zanzibar-by-Shivo-Tanzania-Updated.pdf",
+   "https://realtarea.com/en/project/shivo-towers-paje/"
+  ]
+ },
+ {
+  "slug": "156-elara-mi-vida",
+  "name": "156 Elara",
+  "developer": "Mi Vida Homes",
+  "area": "Tatu City, Kiambu",
+  "country": "Kenya",
+  "market": "Nairobi",
+  "url": "https://ufanizirealestate.co.ke/projects/156-elara",
+  "docs_url": "https://mividahomes.com/developments/156-elara/",
+  "permit_number": null,
+  "docs_listed": [
+   "prices from KES 26.125M",
+   "floor plans per layout",
+   "payment plan 20/10/70",
+   "phase 1 of 72 homes, construction Q2 2026 to Q2 2028",
+   "groundbreaking April 2026"
+  ],
+  "note": "156 townhouses and duplexes in Tatu City from KES 26.1M; groundbreaking held April 2026, phase 1 completion targeted Q2 2028. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 26125000,
+   "currency": "KES",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": null,
+   "units": 156,
+   "payment_plan": "20% on letter of offer, 10% on sale agreement, 70% quarterly during construction",
+   "price_per_m2": 159299
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Agency page: groundbreaking April 2026",
+   "plans": "Ufanizi floor plans per layout",
+   "record": "Developer claims 100% on time delivery but names no projects on page",
+   "returns": "Brochure has no yield forecast; no guarantee"
+  },
+  "positives": [
+   "Published floor plans",
+   "Construction linked quarterly payments"
+  ],
+  "flags": [],
+  "sources": [
+   "https://mividahomes.com/developments/156-elara/",
+   "https://ufanizirealestate.co.ke/projects/156-elara",
+   "https://primevale.co.ke/developments/156-elara",
+   "https://realtors.co.ke/property/luxury-3-4-bedroom-duplexes-townhouses-in-tatu-city-156-elara/",
+   "https://bektu.com/blog/nairobi-briefing-2026-04-24"
+  ]
+ },
+ {
+  "slug": "mont-reve-berman-brothers",
+  "name": "Mont Reve",
+  "developer": "Berman Brothers Group (BBG)",
+  "area": "Sea Point, Cape Town",
+  "country": "South Africa",
+  "market": "Cape Town",
+  "url": "https://montreve.co.za/",
+  "docs_url": "https://montreve.co.za/",
+  "permit_number": null,
+  "docs_listed": [
+   "21 apartments in final release, R12,995,000 to R41,995,000 with EUR equivalents",
+   "deposit paid into transferring attorney's interest bearing account",
+   "anticipated completion November 2026",
+   "builder R+N Master Builders, attorney Strauss Daly"
+  ],
+  "note": "Mixed use building of 116 units in Sea Point with 21 apartments left; construction nearing completion with occupation expected November 2026. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 12995000,
+   "currency": "ZAR",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-11",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "Deposit held in the transferring attorney's (Strauss Daly) interest bearing account",
+   "progress_pct": null,
+   "developer_delivered": "BBG names its Atlantic Seaboard projects Dolce Vita and Station House",
+   "units": 116,
+   "payment_plan": "10% deposit plus bond, or 30% deposit with balance before lodgement",
+   "price_per_m2": 170987
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": "FAQ: deposit into transferring attorney's interest bearing account",
+   "progress": "Only 'nearing completion', no dated figure",
+   "plans": null,
+   "record": "Homepage names Dolce Vita and Station House",
+   "returns": "FAQ cites average Cape Town growth of 7%, no guarantee"
+  },
+  "positives": [
+   "Deposit held by attorneys, not developer",
+   "Named completed projects"
+  ],
+  "flags": [],
+  "sources": [
+   "https://montreve.co.za/",
+   "https://montreve.co.za/faqs/"
+  ]
+ }
+]

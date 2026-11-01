@@ -1,0 +1,1578 @@
+[
+ {
+  "slug": "aruna-belize-phase-4",
+  "name": "Aruna Resort Phase 4",
+  "developer": "Aruna Belize (developer name not published on listing)",
+  "area": "West Ambergris Caye, San Pedro",
+  "country": "Belize",
+  "market": "Belize",
+  "url": "https://www.lunarealtybelize.com/aruna/",
+  "docs_url": "https://www.lunarealtybelize.com/aruna/",
+  "permit_number": null,
+  "docs_listed": [
+   "nine pre-construction models with price and size (studio to 4BR, condos and pool homes)",
+   "prices US$265,000 to US$759,900",
+   "masterplan availability chart updated June 2026",
+   "developer financing available (terms not published)",
+   "amenities: lagoon, canal-front lots, solar power, rainwater harvesting"
+  ],
+  "note": "Phase 4 of an operating eco resort community 1.3 miles west of San Pedro Town; nine pre-construction models from US$265,000 (794 sq ft studio) to US$759,900 (4BR pool home), with developer financing. The resort officially opened in April 2025 under co-owners Malek Smith and Justin Ferguson and is managed by Remington Hospitality, per the San Pedro Sun and Hotel Business. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "developer_delivered": "Aruna Resort & Villas, phases 1-3 built and sold out; resort officially opened 11 Apr 2025, per San Pedro Sun",
+   "progress_pct": null,
+   "progress_updates": false,
+   "price_per_m2": 3593
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true
+  },
+  "evidence": {
+   "permit": null,
+   "escrow": null,
+   "progress": "Phase 4 described only as pre-construction; no dates or photos",
+   "plans": "Model names and sizes only, no drawings on the listing page",
+   "record": "San Pedro Sun reports the official opening of Aruna Resort on 11 Apr 2025; Hotel Business reports Remington Hospitality took over management",
+   "returns": "No rental returns or guarantees on the listing"
+  },
+  "positives": [
+   "Earlier phases at the same resort are built and operating",
+   "Clear price and size per model published",
+   "Professional hotel operator (Remington Hospitality) manages the resort"
+  ],
+  "flags": [],
+  "sources": [
+   "https://caribbeanlifestyle.com/?p=19266",
+   "https://hotelbusiness.com/remington-expands-cala-portfolio-with-new-belize-resort/",
+   "https://www.lunarealtybelize.com/aruna/",
+   "https://www.sanpedrosun.com/?p=112470"
+  ],
+  "verification": {
+   "permit": {
+    "level": "none",
+    "evidence": "No permit or DOE clearance found for Phase 4"
+   },
+   "escrow": {
+    "level": "none",
+    "evidence": "Not published"
+   },
+   "progress": {
+    "level": "none",
+    "evidence": "No progress published for Phase 4"
+   },
+   "plans": {
+    "level": "none",
+    "evidence": "No drawings published"
+   },
+   "record": {
+    "level": "independent",
+    "evidence": "San Pedro Sun (Apr 2025) reported the resort's official opening; Hotel Business reported Remington Hospitality management"
+   },
+   "returns": {
+    "level": "developer",
+    "evidence": "No returns language"
+   }
+  },
+  "claims": [
+   {
+    "claim": "Phases 1-3 sold out and built",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.sanpedrosun.com/?p=112470"
+   },
+   {
+    "claim": "Resort managed by a hotel operator",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://hotelbusiness.com/remington-expands-cala-portfolio-with-new-belize-resort/"
+   },
+   {
+    "claim": "Phase 4 prices from US$265,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.lunarealtybelize.com/aruna/"
+   },
+   {
+    "claim": "Developer financing available",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.lunarealtybelize.com/aruna/"
+   },
+   {
+    "claim": "Phase 4 construction permits in place",
+    "status": "unverified",
+    "by": "none",
+    "source": null
+   },
+   {
+    "claim": "Phase 4 completion date",
+    "status": "unverified",
+    "by": "none",
+    "source": null
+   },
+   {
+    "claim": "Original resort launch Spring 2022",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.sanpedrosun.com/?p=112470"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "San Pedro, Belize",
+   "developer_company": null,
+   "developer_projects_delivered": 1,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "1BR loft",
+    "duplex",
+    "2BR",
+    "3BR",
+    "4BR",
+    "1BR condo"
+   ],
+   "size_min_m2": 49,
+   "size_max_m2": 337,
+   "price_min": 265000,
+   "price_max": 759900,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": "Developer financing available (terms not published)",
+   "foreign_ownership": null,
+   "rental_programme": "Resort managed by Remington Hospitality; rental terms not published",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "lagoon and canals",
+    "reef access",
+    "over-the-water restaurant",
+    "solar power",
+    "rainwater harvesting",
+    "high-speed internet",
+    "shuttle to San Pedro"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Belize Department of the Environment and Central Building Authority",
+   "brochure_url": null
+  }
+ },
+ {
+  "slug": "cipriani-residences-punta-del-este-cipriani",
+  "name": "Cipriani Resort Residences Punta del Este (Torre I)",
+  "developer": "Cipriani (Giuseppe Cipriani) / Playa Brava developer entity",
+  "area": "Playa Brava, Punta del Este",
+  "country": "Uruguay",
+  "market": "Uruguay",
+  "url": "https://ciprianiresidencespuntadeleste.com/",
+  "docs_url": "https://ciprianiresidencespuntadeleste.com/residences/",
+  "permit_number": null,
+  "docs_listed": [
+   "residence types: corner and half-floor, full-floor",
+   "floor plans PDF with room areas",
+   "English brochure",
+   "amenities list (pool, spa, gym, concierge via Cipriani resort)",
+   "sales gallery address, Parada 11 Playa Brava"
+  ],
+  "note": "First residential tower (Torre I, 55 storeys, about 260 m) of the Rafael Vinoly masterplan on the former Hotel San Rafael site, built by CRIBA; the Junta Departamental de Maldonado approved the 320 m masterplan with 282 residential units in Dec 2022. Press reports about 50% of Torre I sold at around US$11,500 per m2, but the hotel and casino opening slipped from Oct 2026 to 2027. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": null,
+   "price_per_m2": null,
+   "units": 65,
+   "completion": "2027",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true
+  },
+  "evidence": {
+   "permit": "Junta Departamental de Maldonado approval (Dec 2022) reported by Focus Gaming News; no resolution or permit number published by the developer or press",
+   "escrow": "Developer site says nothing about deposit protection or trust",
+   "progress": "Developer site only says 'now under construction'; floor-a-week progress reported by iProfesional (Mar 2026) is press, not a developer update",
+   "plans": "Cipriani_Floorplans.pdf published with room-by-room areas",
+   "record": "Phase 1 (hotel, casino, event centre) is not yet open: Montevideo Portal (Jul 2026) reports the opening postponed to 2027; Cipriani's Uruguay real estate record has no completed project. Brand operates restaurants and hotels elsewhere",
+   "returns": "No rental returns advertised"
+  },
+  "positives": [
+   "Masterplan approved by the Junta Departamental de Maldonado with municipal milestones",
+   "Detailed floor plans with room areas published",
+   "Large reported investment (over US$600M) and visible vertical construction reported in press"
+  ],
+  "flags": [
+   {
+    "text": "Montevideo Portal reported in July 2026 that the San Rafael hotel opening, earlier targeted for October 2026, was postponed to 2027; the company cited SUNCA union strikes, while the union said the builder was already behind schedule.",
+    "source": "https://www.montevideo.com.uy/Noticias/Aplazan-la-inauguracion-del-nuevo-proyecto-San-Rafael-en-Punta-del-Este-sera-durante-2027-uc969473"
+   }
+  ],
+  "sources": [
+   "https://ciprianiresidencespuntadeleste.com/",
+   "https://ciprianiresidencespuntadeleste.com/corner-and-half-floor-residences/",
+   "https://ciprianiresidencespuntadeleste.com/residences/",
+   "https://ciprianiresidencespuntadeleste.com/wp-content/uploads/2025/11/Cipriani-PDE-Brochure_English.pdf",
+   "https://ciprianiresidencespuntadeleste.com/wp-content/uploads/2025/11/Cipriani_Floorplans.pdf",
+   "https://focusgn.com/latinoamerica/la-junta-departamental-de-maldonado-aprobo-el-proyecto-de-cipriani",
+   "https://www.bloomberglinea.com/latinoamerica/uruguay/cipriani-vendio-penthouse-de-us17-millones-en-complejo-de-lujo-de-punta-del-este-avanzan-las-obras/",
+   "https://www.elobservador.com.uy/cafe-y-negocios/a-seis-anos-del-anuncio-el-megaproyecto-cipriani-punta-del-este-avanza-una-inversion-que-supera-los-us-600-millones-n6004134",
+   "https://www.iprofesional.com/realestate/451167-como-sera-la-torre-mas-alta-de-uruguay-que-ya-se-construye-en-punta-del-este",
+   "https://www.montevideo.com.uy/Negocios-y-Tendencias/Cipriani--Cumplimos-y-tenemos-el-apoyo-total-del-gobierno--uc926928",
+   "https://www.montevideo.com.uy/Noticias/Aplazan-la-inauguracion-del-nuevo-proyecto-San-Rafael-en-Punta-del-Este-sera-durante-2027-uc969473"
+  ],
+  "verification": {
+   "permit": {
+    "level": "independent",
+    "evidence": "Focus Gaming News (15 Dec 2022) reports the Junta Departamental de Maldonado approved the project (320 m max height, 282 units) conditioned on starting works; no number published"
+   },
+   "escrow": {
+    "level": "none",
+    "evidence": "No deposit protection found"
+   },
+   "progress": {
+    "level": "independent",
+    "evidence": "iProfesional (Mar 2026) reports Torre I rising about one floor a week; Montevideo Portal (Jul 2026) reports strike-related delays"
+   },
+   "plans": {
+    "level": "developer",
+    "evidence": "Developer floor plans PDF only"
+   },
+   "record": {
+    "level": "contradicted",
+    "evidence": "Earlier note said Phase 1 was completed; Montevideo Portal (24 Jul 2026) reports the hotel has not opened and opening moved to 2027"
+   },
+   "returns": {
+    "level": "developer",
+    "evidence": "No returns language on developer site"
+   }
+  },
+  "claims": [
+   {
+    "claim": "Masterplan approved by Maldonado authorities",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://focusgn.com/latinoamerica/la-junta-departamental-de-maldonado-aprobo-el-proyecto-de-cipriani"
+   },
+   {
+    "claim": "Torre I now under construction",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.iprofesional.com/realestate/451167-como-sera-la-torre-mas-alta-de-uruguay-que-ya-se-construye-en-punta-del-este"
+   },
+   {
+    "claim": "Hotel and casino opening October 2026",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.montevideo.com.uy/Noticias/Aplazan-la-inauguracion-del-nuevo-proyecto-San-Rafael-en-Punta-del-Este-sera-durante-2027-uc969473"
+   },
+   {
+    "claim": "First apartment deliveries from 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.bloomberglinea.com/latinoamerica/uruguay/cipriani-vendio-penthouse-de-us17-millones-en-complejo-de-lujo-de-punta-del-este-avanzan-las-obras/"
+   },
+   {
+    "claim": "About 50% of Torre I sold, around US$11,500 per m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.elobservador.com.uy/cafe-y-negocios/a-seis-anos-del-anuncio-el-megaproyecto-cipriani-punta-del-este-avanza-una-inversion-que-supera-los-us-600-millones-n6004134"
+   },
+   {
+    "claim": "Penthouse sold for US$17.1 million",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.bloomberglinea.com/latinoamerica/uruguay/cipriani-vendio-penthouse-de-us17-millones-en-complejo-de-lujo-de-punta-del-este-avanzan-las-obras/"
+   },
+   {
+    "claim": "Investment over US$600 million",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.elobservador.com.uy/cafe-y-negocios/a-seis-anos-del-anuncio-el-megaproyecto-cipriani-punta-del-este-avanza-una-inversion-que-supera-los-us-600-millones-n6004134"
+   },
+   {
+    "claim": "Deposits held in trust or escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": null
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": "Fosara S.A. named as the represented company at the 2022 Junta approval (Focus Gaming News); no developer entity published on the sales site",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-03",
+   "handover_promised": "2027",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "corner residence",
+    "half-floor residence",
+    "full-floor residence",
+    "penthouse"
+   ],
+   "size_min_m2": 203,
+   "size_max_m2": 810,
+   "price_min": null,
+   "price_max": 17100000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Uruguay allows foreign freehold ownership; structure not stated by developer",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Cipriani",
+   "amenities": [
+    "24-hour dining",
+    "pool and spa",
+    "gym",
+    "indoor and outdoor sports",
+    "event rooms",
+    "concierge",
+    "casino"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Intendencia de Maldonado / Junta Departamental de Maldonado",
+   "brochure_url": "https://ciprianiresidencespuntadeleste.com/wp-content/uploads/2025/11/Cipriani-PDE-Brochure_English.pdf"
+  }
+ },
+ {
+  "slug": "davenue-puerto-vallarta-dgroup",
+  "name": "D'Avenue Puerto Vallarta (Phase One)",
+  "developer": "DGROUP",
+  "area": "Fluvial Vallarta",
+  "country": "Mexico",
+  "market": "Puerto Vallarta",
+  "url": "https://davenuevallarta.com/",
+  "docs_url": "https://davenuevallarta.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "per-type pricing USD 241k to 508k (MXN 4.33M up), 80/20 plan",
+   "nine unit types with m2 and live availability",
+   "three payment plans incl. 30/60/10 (-7%) and 80/20",
+   "refundable MXN 100,000 reservation",
+   "monthly construction photo galleries Jan to Oct 2026 (787 photos over 20 months), drone 15 Oct 2026",
+   "five delivered DGROUP buildings named with MLS resale data",
+   "delivery September 2027"
+  ],
+  "note": "74-residence first phase of a tower in Fluvial Vallarta, delivery September 2027; DGROUP publishes per-unit pricing from about USD 241k, nine plan types and monthly level-by-level construction photography (latest October 2026, photos up to level 14). It names five delivered buildings (D'Terrace, D'Residences, D'esire, D'Toscana, D'Vine), though agent listings show D'Vine's delivery moved from Dec 2023 to Jan 2025. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "price": 4330000,
+   "currency": "MXN",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "DGROUP: five condo buildings delivered 2017-2025 (D'Terrace, D'Residences, D'esire, D'Vine in Zona Romantica; D'Toscana in Nuevo Vallarta), named on davenuevallarta.com",
+   "payment_plan": "20/80 list; 30/60/10 staged (-7%); 80/20 capital-forward (max discount); MXN 100,000 refundable reservation"
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true
+  },
+  "evidence": {
+   "permit": "No municipal licence number, legal entity or PROFECO contract registration published",
+   "escrow": "No fideicomiso or deposit protection stated; only that the reservation deposit is refundable",
+   "progress": "Monthly dated photo galleries per level, latest October 2026 with drone shots 15 Oct 2026; no % published",
+   "plans": "Nine plan types with m2 and availability",
+   "record": "Five delivered buildings named; MLS Vallarta and Mexhome list D'esire and D'Vine as D'Group projects",
+   "returns": "Publishes resale-over-launch figures (+38%, +94%) with a 'past sales do not guarantee future prices' disclaimer; no guarantee"
+  },
+  "positives": [
+   "Monthly dated construction photography by level",
+   "Live per-unit pricing and availability",
+   "Five earlier buildings named, with resale data sourced to MLS",
+   "Refundable reservation deposit"
+  ],
+  "flags": [],
+  "sources": [
+   "https://davenuevallarta.com/",
+   "https://davenuevallarta.com/construction-updates",
+   "https://mexhome.com/dev/dvine-puerto-vallarta",
+   "https://tropicasa.com/property/dvine-504/33099",
+   "https://www.mlsvallarta.com/development/DESIR"
+  ],
+  "verification": {
+   "permit": {
+    "level": "none",
+    "evidence": "No licence from the Municipality of Puerto Vallarta found"
+   },
+   "escrow": {
+    "level": "none",
+    "evidence": "Nothing published"
+   },
+   "progress": {
+    "level": "developer",
+    "evidence": "Developer photo galleries only; agent MLS listings of D'Avenue units exist but add no stage data"
+   },
+   "plans": {
+    "level": "developer",
+    "evidence": "Developer plans"
+   },
+   "record": {
+    "level": "developer",
+    "evidence": "MLS Vallarta and agent listings attribute D'esire, D'Vine, D'Terrace and D'Residence to D'Group; these are sales listings, not independent records"
+   },
+   "returns": {
+    "level": "developer",
+    "evidence": "No guarantee"
+   }
+  },
+  "claims": [
+   {
+    "claim": "Delivery September 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://davenuevallarta.com/"
+   },
+   {
+    "claim": "Structure up to level 14 (Oct 2026 photos)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://davenuevallarta.com/construction-updates"
+   },
+   {
+    "claim": "Five buildings delivered 2017-2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.mlsvallarta.com/development/DESIR"
+   },
+   {
+    "claim": "D'Vine delivered on its original date (Dec 2023)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://tropicasa.com/property/dvine-504/33099"
+   },
+   {
+    "claim": "Resale gains of +38% and +94% over launch",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://davenuevallarta.com/"
+   },
+   {
+    "claim": "74 residences in Phase One",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://davenuevallarta.com/"
+   },
+   {
+    "claim": "Construction licence issued",
+    "status": "unverified",
+    "by": "none",
+    "source": null
+   },
+   {
+    "claim": "Purchase contract registered with PROFECO",
+    "status": "unverified",
+    "by": "none",
+    "source": null
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Puerto Vallarta, Mexico",
+   "developer_company": null,
+   "developer_projects_delivered": 5,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-03",
+   "handover_promised": "2027-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR garden",
+    "2BR garden",
+    "1BR",
+    "2BR",
+    "3BR penthouse"
+   ],
+   "size_min_m2": 78,
+   "size_max_m2": 153,
+   "price_min": 4330000,
+   "price_max": null,
+   "currency": "MXN",
+   "deposit_pct": 20,
+   "payment_plan": "20/80 list; 30/60/10 staged (-7%); 80/20 capital-forward",
+   "foreign_ownership": "Bank trust (fideicomiso) in the restricted coastal zone (not stated on page)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "two infinity pools",
+    "two hot tubs",
+    "gym",
+    "pickleball courts",
+    "kids club",
+    "pet park",
+    "24-hour security",
+    "underground parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Municipality of Puerto Vallarta (licencia de construccion)",
+   "brochure_url": null
+  }
+ },
+ {
+  "slug": "hideaways-los-cabos-black-development",
+  "name": "Hideaways Los Cabos (Trademark Collection by Wyndham)",
+  "developer": "Black Development Group",
+  "area": "San Jose del Cabo",
+  "country": "Mexico",
+  "market": "Los Cabos",
+  "url": "https://www.pincali.com/en/home/preventa-exclusiva-hideaways-los-cabos",
+  "docs_url": "https://hideaways-cabo.com/eng",
+  "permit_number": null,
+  "docs_listed": [
+   "96 units in 3 towers (developer site)",
+   "unit types loft to 4BR corner, about 742 to 2,000+ sq ft",
+   "14 amenities listed",
+   "privacy notice names Hideaways Valle, S.A. de C.V.",
+   "portal: lofts from US$399,000, delivery estimated 2028"
+  ],
+  "note": "Branded condo-hotel in a gated community above San Jose Bay operated under Wyndham's Hideaways / Trademark Collection label; the developer site lists 96 units in three towers and names Hideaways Valle, S.A. de C.V., while July 2025 press reported 125 residences and a late-2026 opening against the portal's 2028 delivery estimate. Lofts from US$399,000 on Pincali. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "progress_pct": null,
+   "progress_updates": false
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true
+  },
+  "evidence": {
+   "permit": "No municipal licence or environmental authorisation number published",
+   "escrow": "No fideicomiso or deposit protection stated",
+   "progress": "No construction updates on the developer site",
+   "plans": "Unit sizes listed, no plans",
+   "record": "Black Development Group claims a 'successful project in Los Cabos' but names no delivered project; press names three founding entrepreneurs without past deliveries",
+   "returns": "Site cites 13.3% area appreciation; no guaranteed returns"
+  },
+  "positives": [
+   "Developer legal entity named in the privacy notice (Hideaways Valle, S.A. de C.V.)",
+   "International hotel group (Wyndham) attached to operations"
+  ],
+  "flags": [],
+  "sources": [
+   "https://blackdg.com/en/home/",
+   "https://blackdg.com/en/por-que-los-desarrolladores-e-inversionistas-eligen-a-black-development-group-para-crecer-en-el-sector-turistico-2-2/",
+   "https://hideaways-cabo.com/eng",
+   "https://newsinamerica.com/pdcc/turismo/2025/los-cabos-wyndham-llegara-con-marca-de-lujo-hideaways-en-2026/",
+   "https://thecabosun.com/new-luxury-los-cabos-wyndham-resort-will-open-its-doors-to-tourists-next-year/",
+   "https://www.pincali.com/en/home/preventa-exclusiva-hideaways-los-cabos",
+   "https://www.pincali.com/inmueble/preventa-exclusiva-hideaways-los-cabos"
+  ],
+  "verification": {
+   "permit": {
+    "level": "none",
+    "evidence": "Nothing found"
+   },
+   "escrow": {
+    "level": "none",
+    "evidence": "Nothing found"
+   },
+   "progress": {
+    "level": "none",
+    "evidence": "No progress published by anyone"
+   },
+   "plans": {
+    "level": "none",
+    "evidence": "No plans"
+   },
+   "record": {
+    "level": "none",
+    "evidence": "No delivered project named"
+   },
+   "returns": {
+    "level": "developer",
+    "evidence": "Appreciation figure only, no guarantee"
+   }
+  },
+  "claims": [
+   {
+    "claim": "96 units in three towers",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://thecabosun.com/new-luxury-los-cabos-wyndham-resort-will-open-its-doors-to-tourists-next-year/"
+   },
+   {
+    "claim": "Opening late 2026",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.pincali.com/en/home/preventa-exclusiva-hideaways-los-cabos"
+   },
+   {
+    "claim": "Delivery estimated 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pincali.com/en/home/preventa-exclusiva-hideaways-los-cabos"
+   },
+   {
+    "claim": "Wyndham partnership",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://newsinamerica.com/pdcc/turismo/2025/los-cabos-wyndham-llegara-con-marca-de-lujo-hideaways-en-2026/"
+   },
+   {
+    "claim": "Lofts from US$399,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.pincali.com/en/home/preventa-exclusiva-hideaways-los-cabos"
+   },
+   {
+    "claim": "13.3% area appreciation",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://hideaways-cabo.com/eng"
+   },
+   {
+    "claim": "Construction licence in place",
+    "status": "unverified",
+    "by": "none",
+    "source": null
+   },
+   {
+    "claim": "Developer has a delivered Los Cabos project",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://blackdg.com/en/home/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": "Hideaways Valle, S.A. de C.V. (named in site privacy notice)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028",
+   "original_handover": "2026",
+   "delay_months": null,
+   "unit_types": [
+    "loft",
+    "1.5BR",
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": 69,
+   "size_max_m2": 186,
+   "price_min": 399000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Bank trust (fideicomiso) in the restricted coastal zone",
+   "rental_programme": "Condo-hotel operated under Wyndham brand; terms not published",
+   "service_charge": null,
+   "brand": "Hideaways / Trademark Collection by Wyndham",
+   "amenities": [
+    "infinity pool",
+    "jacuzzi",
+    "gym",
+    "sports bar",
+    "pickleball court",
+    "fire pit",
+    "business centre",
+    "grab and go"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Municipality of Los Cabos; SEMARNAT",
+   "brochure_url": null
+  }
+ },
+ {
+  "slug": "kempinski-grace-bay-jtre",
+  "name": "Kempinski Grace Bay Residences",
+  "developer": "JTRE (with Kempinski Hotels)",
+  "area": "Grace Bay, Providenciales",
+  "country": "Turks and Caicos Islands",
+  "market": "Turks and Caicos",
+  "url": "https://theturksandcaicos.com/developments/kempinski-grace-bay/",
+  "docs_url": "https://theturksandcaicos.com/developments/kempinski-grace-bay/",
+  "permit_number": null,
+  "docs_listed": [
+   "unit price list (1BR to 5BR, $600,000 to $7,750,000 on current listings)",
+   "floor plans and site plan links",
+   "progress payment schedule 10/15/15/15/45 tied to milestones",
+   "completion target Q1 2028",
+   "strata fee estimate $18-21 per sq ft per year",
+   "rental split 50/50, rental program mandatory and Kempinski-managed",
+   "press: tower crane raised and vertical construction started (Aug 2026)"
+  ],
+  "note": "119 condo residences and four villas on 11 acres of Grace Bay by Slovak developer JTRE; ground broken Nov 2025 and Caribbean Journal reported vertical construction under way in Aug 2026, with completion targeted for Q1 2028. Christie's TCI lists units from $600,000 to $7.75M with payments tied to construction milestones. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "developer_delivered": "JTRE (Bratislava, founded 1996): over 50 projects including Eurovea, River Park, Panorama Towers and Grand Hotel Kempinski High Tatras, per Wikipedia",
+   "progress_pct": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true
+  },
+  "evidence": {
+   "permit": "No planning or building permit number published on the sales page or in press releases",
+   "escrow": "Sales page does not say where deposits are held",
+   "progress": "Dated progress reported in press: groundbreaking Nov 2025 (Newsfile release), tower crane and second-floor forming reported by Caribbean Journal on 6 Aug 2026 citing a JTRE update; no % figure",
+   "plans": "Christie's TCI development page links floor plans and site plan",
+   "record": "JTRE named completed projects (Eurovea, River Park, Panorama Towers, Grand Hotel Kempinski High Tatras, Triptych Bankside London) are documented on Wikipedia",
+   "returns": "Mandatory Kempinski rental program with 50/50 split; STR occupancy of 87% for similar resorts cited; no guaranteed returns"
+  },
+  "positives": [
+   "Staged payments tied to construction milestones rather than calendar dates",
+   "Strata fee estimate and 10% stamp duty disclosed up front",
+   "Freehold strata title with no foreign ownership restriction stated",
+   "Developer has a long, documented delivery record in Slovakia and London"
+  ],
+  "flags": [],
+  "sources": [
+   "https://en.wikipedia.org/wiki/JTRE",
+   "https://listings.tcrea.com/listing/Providenciales-PR/A313-The-Kempinski-Grace-Bay/37hvv",
+   "https://theturksandcaicos.com/developments/kempinski-grace-bay/",
+   "https://www.caribjournal.com/2025/12/12/new-kempinski-residential-resort-breaks-ground-in-turks-and-caicos/",
+   "https://www.caribjournal.com/2026/08/06/turks-and-caicos-kempinski-progress/",
+   "https://www.engelvoelkers.com/tc/en/exposes/b0bb1f70-19d8-5974-9bcb-2e934eec939d",
+   "https://www.hotelmanagement.net/development/kempinski-jtre-break-ground-luxury-grace-bay-project-turks-and-caicos",
+   "https://www.newsfilecorp.com/release/275033/Kempinski-Grace-Bay-Breaks-Ground-on-Turks-and-Caicos-Iconic-Grace-Bay-Beach",
+   "https://www.newslinetci.com/post/sales-begin-for-kempinski-grace-bay-residences-a-refined-beachfront-retreat-in-turks-and-caicos"
+  ],
+  "verification": {
+   "permit": {
+    "level": "none",
+    "evidence": "No TCI planning permission number found in sales pages, press or government notices searched"
+   },
+   "escrow": {
+    "level": "none",
+    "evidence": "No deposit holding arrangement published"
+   },
+   "progress": {
+    "level": "independent",
+    "evidence": "Caribbean Journal (6 Aug 2026) reports tower crane raised and second-floor forming; HotelManagement.net reports groundbreaking and construction under way"
+   },
+   "plans": {
+    "level": "developer",
+    "evidence": "Floor plans only on the broker development page"
+   },
+   "record": {
+    "level": "independent",
+    "evidence": "Wikipedia article on JTRE lists completed projects with references (Eurovea, River Park, Panorama Towers, Kempinski High Tatras)"
+   },
+   "returns": {
+    "level": "developer",
+    "evidence": "Rental terms (50/50, mandatory) only on broker page; no guarantee anywhere"
+   }
+  },
+  "claims": [
+   {
+    "claim": "Ground broken and construction under way",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.hotelmanagement.net/development/kempinski-jtre-break-ground-luxury-grace-bay-project-turks-and-caicos"
+   },
+   {
+    "claim": "Vertical construction started, tower crane raised (Aug 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.caribjournal.com/2026/08/06/turks-and-caicos-kempinski-progress/"
+   },
+   {
+    "claim": "119 residences and four villas",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.hotelmanagement.net/development/kempinski-jtre-break-ground-luxury-grace-bay-project-turks-and-caicos"
+   },
+   {
+    "claim": "Completion Q1 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theturksandcaicos.com/developments/kempinski-grace-bay/"
+   },
+   {
+    "claim": "Groundbreaking announced Nov 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.newsfilecorp.com/release/275033/Kempinski-Grace-Bay-Breaks-Ground-on-Turks-and-Caicos-Iconic-Grace-Bay-Beach"
+   },
+   {
+    "claim": "JTRE has delivered 50+ projects",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://en.wikipedia.org/wiki/JTRE"
+   },
+   {
+    "claim": "Prices from $600,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theturksandcaicos.com/developments/kempinski-grace-bay/"
+   },
+   {
+    "claim": "Planning permission granted",
+    "status": "unverified",
+    "by": "none",
+    "source": null
+   },
+   {
+    "claim": "Deposits protected in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": null
+   },
+   {
+    "claim": "87% occupancy for similar resorts",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://theturksandcaicos.com/developments/kempinski-grace-bay/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1996,
+   "developer_hq": "Bratislava, Slovakia",
+   "developer_company": "JTRE (controlled by J&T Real Estate Holding Limited)",
+   "developer_projects_delivered": 50,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-11",
+   "handover_promised": "2028-Q1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "5BR",
+    "villa"
+   ],
+   "size_min_m2": 39,
+   "size_max_m2": 353,
+   "price_min": 600000,
+   "price_max": 7750000,
+   "currency": "USD",
+   "deposit_pct": 10,
+   "payment_plan": "10% at SPA, 15% at construction start, 15% at floor slab, 15% at roof, 45% at completion",
+   "foreign_ownership": "Freehold strata title (fee simple); no foreign ownership restriction stated; 10% stamp duty above $500,000",
+   "rental_programme": "Mandatory Kempinski-managed rental program, 50/50 revenue split, unlimited owner use",
+   "service_charge": "Estimated $18-21 per sq ft per year excluding insurance",
+   "brand": "Kempinski",
+   "amenities": [
+    "beachfront on Grace Bay",
+    "Kempinski-managed hotel and rental services",
+    "low-density 11-acre site"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "TCI Physical Planning Board / Department of Planning",
+   "brochure_url": null
+  }
+ },
+ {
+  "slug": "la-sagesse-collection-residences-range",
+  "name": "The La Sagesse Collection Residences",
+  "developer": "Range Developments Group",
+  "area": "La Sagesse Bay, St. David",
+  "country": "Grenada",
+  "market": "Grenada",
+  "url": "https://www.rangedevelopmentsgroup.com/the-la-sagesse-collection-residences",
+  "docs_url": "https://www.rangedevelopmentsgroup.com/the-la-sagesse-collection-residences",
+  "permit_number": "GCBI-AP-0025-036",
+  "docs_listed": [
+   "unit mix: 36 studios, 20 1BR, 38 2BR (94 residences)",
+   "opening 2027",
+   "monthly construction photo archive Oct 2025 to Oct 2026",
+   "master plan images",
+   "CBI pathway described (no approval number on developer page)"
+  ],
+  "note": "Residences beside Six Senses La Sagesse and the InterContinental Grenada (opening Nov 2026), sold as a Grenada Citizenship by Investment option; the Government Gazette of 3 Oct 2025 granted Approved Project status GCBI-AP-0025-036 to Range Developments 2 (Grenada) Ltd. The developer page lists 94 units and 2027 opening, while the gazette report describes 60 two-bedroom residences; no prices or floor plans are published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "permit_claim": true,
+   "permit_number": "GCBI-AP-0025-036",
+   "progress_pct": null,
+   "progress_updates": true,
+   "units": 94,
+   "developer_delivered": "Range Developments: Park Hyatt St. Kitts, Kempinski (now InterContinental) Cabrits Dominica, Six Senses La Sagesse (opened Apr 2024), per IMI Daily and Caribbean Journal"
+  },
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true
+  },
+  "evidence": {
+   "permit": "CBI Approved Project status GCBI-AP-0025-036 dated 23 Jun 2025, gazetted 3 Oct 2025, reported by NOW Grenada and Caribbean Focus; the developer page itself shows no number",
+   "escrow": "No deposit protection stated",
+   "progress": "Developer page has a monthly construction photo archive from Oct 2025 to Oct 2026 (Nov 2025 empty); no % figure",
+   "plans": "No floor plans or unit sizes on the project page",
+   "record": "Caribbean Journal (Aug 2026) confirms Six Senses La Sagesse opened Apr 2024 and names Park Hyatt St. Kitts and InterContinental Dominica Cabrits as Range projects",
+   "returns": "No rental figures or guarantees on the project page"
+  },
+  "positives": [
+   "Official CBI Approved Project number exists in the Grenada Government Gazette",
+   "Developer has opened three Caribbean resorts, including the adjacent Six Senses",
+   "Monthly construction photos published"
+  ],
+  "flags": [
+   {
+    "text": "IMI Daily reported in March 2019 that Range Developments shelved planned projects in Saint Lucia and Saint Kitts that were subject to legal arbitration; Range declined to explain.",
+    "source": "https://www.imidaily.com/caribbean/range-picks-grenada-for-third-caribbean-cbi-project-after-disappointments-in-st-lucia-st-kitts/"
+   }
+  ],
+  "sources": [
+   "https://nowgrenada.com/2025/10/third-cbi-project-approved-for-range-developments/",
+   "https://rangedevelopments.com/the-la-sagesse-collection/",
+   "https://www.caribbeanfocus.com/?p=33118",
+   "https://www.caribjournal.com/2026/08/10/grenada-intercontinental-resort-caribbean/",
+   "https://www.imidaily.com/caribbean/range-picks-grenada-for-third-caribbean-cbi-project-after-disappointments-in-st-lucia-st-kitts/",
+   "https://www.rangedevelopmentsgroup.com/",
+   "https://www.rangedevelopmentsgroup.com/cbi-grenada",
+   "https://www.rangedevelopmentsgroup.com/the-la-sagesse-collection-residences"
+  ],
+  "verification": {
+   "permit": {
+    "level": "registry",
+    "evidence": "Government Gazette notice under s.4 Citizenship by Investment Act 2013 (3 Oct 2025), status GCBI-AP-0025-036, as reported by NOW Grenada and Caribbean Focus; gazette PDF itself not opened"
+   },
+   "escrow": {
+    "level": "none",
+    "evidence": "No escrow or deposit protection found"
+   },
+   "progress": {
+    "level": "developer",
+    "evidence": "Only developer photo archive; press confirms the neighbouring resorts, not the residences' stage"
+   },
+   "plans": {
+    "level": "none",
+    "evidence": "No plans published"
+   },
+   "record": {
+    "level": "independent",
+    "evidence": "Caribbean Journal and IMI Daily name Range's completed Park Hyatt St. Kitts, Dominica resort and Six Senses La Sagesse"
+   },
+   "returns": {
+    "level": "developer",
+    "evidence": "No returns language found"
+   }
+  },
+  "claims": [
+   {
+    "claim": "Government-approved CBI real estate project",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://nowgrenada.com/2025/10/third-cbi-project-approved-for-range-developments/"
+   },
+   {
+    "claim": "94 residences (36 studios, 20 1BR, 38 2BR)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.caribbeanfocus.com/?p=33118"
+   },
+   {
+    "claim": "Opening 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.rangedevelopmentsgroup.com/the-la-sagesse-collection-residences"
+   },
+   {
+    "claim": "Six Senses La Sagesse delivered by the same developer",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.caribjournal.com/2026/08/10/grenada-intercontinental-resort-caribbean/"
+   },
+   {
+    "claim": "Park Hyatt St. Kitts delivered",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.imidaily.com/caribbean/range-picks-grenada-for-third-caribbean-cbi-project-after-disappointments-in-st-lucia-st-kitts/"
+   },
+   {
+    "claim": "Developer entity Range Developments 2 (Grenada) Ltd",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://nowgrenada.com/2025/10/third-cbi-project-approved-for-range-developments/"
+   },
+   {
+    "claim": "Construction under way (monthly photos)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.rangedevelopmentsgroup.com/the-la-sagesse-collection-residences"
+   },
+   {
+    "claim": "Deposits protected",
+    "status": "unverified",
+    "by": "none",
+    "source": null
+   }
+  ],
+  "facts": {
+   "developer_founded": 2011,
+   "developer_hq": "Dubai, UAE",
+   "developer_company": "Range Developments 2 (Grenada) Ltd",
+   "developer_projects_delivered": 3,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-10",
+   "handover_promised": "2027",
+   "original_handover": "2026",
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": 144,
+   "price_min": null,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Privately owned residence; qualifies for Grenada Citizenship by Investment (minimum government fee US$50,000 per application reported)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "beachfront",
+    "sea views from all units",
+    "access to Six Senses La Sagesse",
+    "access to InterContinental Grenada"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Government of Grenada (CBI Approved Project status, Investment Migration Agency); Physical Planning Unit for building",
+   "brochure_url": null
+  }
+ },
+ {
+  "slug": "ocean-drive-beachfront-residences-four-seasons-puerto-rico",
+  "name": "Ocean Drive Beachfront Residences, Buildings VII and VIII",
+  "developer": "Bahia Beach Resort (Four Seasons Private Residences Puerto Rico)",
+  "area": "Bahia Beach, Rio Grande",
+  "country": "Puerto Rico",
+  "market": "Puerto Rico",
+  "url": "https://www.oceandrivepuertorico.com/ocean-drive-beachfront-residences",
+  "docs_url": "https://www.oceandrivepuertorico.com/ocean-drive-beachfront-residences",
+  "permit_number": null,
+  "docs_listed": [
+   "Building VI unit list with sizes (3,380 to 5,818 sq ft)",
+   "floor plan per Building VI unit",
+   "Buildings VII and VIII under construction, delivery winter 2027",
+   "optional Four Seasons rental program",
+   "furniture package and club membership included",
+   "developer named: BBP Partners, LLC (Four Seasons trademark licence disclaimer)"
+  ],
+  "note": "Three- and four-bedroom furnished beachfront condos (3,380 to 5,818 sq ft) at Four Seasons Resort and Residences Puerto Rico, Bahia Beach, developed by BBP Partners, LLC with Paulson Puerto Rico; Building VI is listed as ready for delivery and Buildings VII and VIII are selling under construction for winter 2027. No prices published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "developer_delivered": "Building VI of Ocean Drive listed as ready for delivery from Feb 2026 on the project site (meta text says Dec 2025); Bahia Beach resort owned by Paulson Puerto Rico and partners, rebranded Four Seasons per Four Seasons press release Dec 2024",
+   "progress_pct": null,
+   "progress_updates": false
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true
+  },
+  "evidence": {
+   "permit": "No OGPe permit or condominium registration number published",
+   "escrow": "Not stated",
+   "progress": "Buildings VII and VIII stated as under construction with no figure or dated photos",
+   "plans": "Floor plan link per Building VI unit",
+   "record": "Previous building in the same Ocean Drive series listed as delivered on the developer site",
+   "returns": "Optional Four Seasons-managed rental program, no figures or guarantee"
+  },
+  "positives": [
+   "Developer legal entity (BBP Partners, LLC) and brand licence status disclosed",
+   "Floor plans per unit published",
+   "Fully furnished delivery with club membership included"
+  ],
+  "flags": [],
+  "sources": [
+   "https://christiesrealestatepr.com/blog/puerto-ricos-luxury-development-projects",
+   "https://press.fourseasons.com/news-releases/2024/new-four-seasons-in-puerto-rico/",
+   "https://www.elnuevodia.com/brandstudio/four-seasons-private-residences-of-puerto-rico/notas/four-seasons-private-residences-puerto-rico-redefine-las-residencias-de-ultralujo-en-bahia-beach/",
+   "https://www.oceandrivepuertorico.com/ocean-drive-beachfront-residences"
+  ],
+  "verification": {
+   "permit": {
+    "level": "none",
+    "evidence": "No OGPe permit or Puerto Rico condominium filing found"
+   },
+   "escrow": {
+    "level": "none",
+    "evidence": "Not published"
+   },
+   "progress": {
+    "level": "developer",
+    "evidence": "Only developer and sponsored El Nuevo Dia content (Nov 2025) state Buildings VII and VIII completion by end 2027"
+   },
+   "plans": {
+    "level": "developer",
+    "evidence": "Developer floor plans"
+   },
+   "record": {
+    "level": "developer",
+    "evidence": "Building VI delivery stated only by developer and sponsored content; Four Seasons press release confirms Paulson ownership of the resort, not unit deliveries"
+   },
+   "returns": {
+    "level": "developer",
+    "evidence": "No returns figures published"
+   }
+  },
+  "claims": [
+   {
+    "claim": "Developer is BBP Partners, LLC licensing Four Seasons marks",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.oceandrivepuertorico.com/ocean-drive-beachfront-residences"
+   },
+   {
+    "claim": "Resort owned by Paulson Puerto Rico with partners, managed by Four Seasons",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://press.fourseasons.com/news-releases/2024/new-four-seasons-in-puerto-rico/"
+   },
+   {
+    "claim": "Building VI delivered from Feb 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.oceandrivepuertorico.com/ocean-drive-beachfront-residences"
+   },
+   {
+    "claim": "Building VI delivery date (Dec 2025 vs Jan 2026 vs Feb 2026)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.elnuevodia.com/brandstudio/four-seasons-private-residences-of-puerto-rico/notas/four-seasons-private-residences-puerto-rico-redefine-las-residencias-de-ultralujo-en-bahia-beach/"
+   },
+   {
+    "claim": "Buildings VII and VIII delivery winter 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.oceandrivepuertorico.com/ocean-drive-beachfront-residences"
+   },
+   {
+    "claim": "US$200 million investment",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.elnuevodia.com/brandstudio/four-seasons-private-residences-of-puerto-rico/notas/four-seasons-private-residences-puerto-rico-redefine-las-residencias-de-ultralujo-en-bahia-beach/"
+   },
+   {
+    "claim": "Construction permits issued",
+    "status": "unverified",
+    "by": "none",
+    "source": null
+   },
+   {
+    "claim": "Deposits held in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": null
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Rio Grande, Puerto Rico",
+   "developer_company": "BBP Partners, LLC",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR",
+    "4BR",
+    "penthouse"
+   ],
+   "size_min_m2": 314,
+   "size_max_m2": 540,
+   "price_min": null,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Fee simple condominium",
+   "rental_programme": "Optional rental program managed by Four Seasons",
+   "service_charge": null,
+   "brand": "Four Seasons Private Residences",
+   "amenities": [
+    "private pools (ground floor and penthouse)",
+    "private elevator",
+    "beach club and cabanas",
+    "fitness and wellness centre",
+    "golf club",
+    "concierge and in-residence dining",
+    "furniture package"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Oficina de Gerencia de Permisos (OGPe), Puerto Rico",
+   "brochure_url": null
+  }
+ },
+ {
+  "slug": "six-senses-residences-belize-crdg",
+  "name": "Six Senses Residences Belize (Emerald Caye)",
+  "developer": "CRDG LLC",
+  "area": "Emerald Caye, off Ambergris Caye",
+  "country": "Belize",
+  "market": "Belize",
+  "url": "https://emeraldcaye.com/",
+  "docs_url": "https://emeraldcaye.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "16 villas, from US$3.75M",
+   "sizes 4,400 to 7,600 sq ft indoor and outdoor",
+   "amenities list (two restaurants, spa, pools, beach club at Secret Beach)",
+   "intro video and enquiry form",
+   "disclaimer: not owned, developed or sold by IHG or Six Senses"
+  ],
+  "note": "16 Six Senses branded overwater or oceanfront residences beside a 40-suite overwater resort on 28-acre Emerald Caye off San Pedro, by CRDG LLC; prices from US$3.75M and opening slated for 2028. The developer site now describes three- and five-bedroom villas, while April 2026 press described two- and four-bedroom plans. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "units": 16,
+   "price_per_m2": null,
+   "progress_pct": null,
+   "progress_updates": false
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true
+  },
+  "evidence": {
+   "permit": "No environmental clearance or building permit number on the site or in press",
+   "escrow": "Not stated",
+   "progress": "Hospitality Design (Apr 2026) says under construction; no figure, dated photos or developer updates",
+   "plans": "Sizes only, no plan drawings",
+   "record": "Site footer names only CRDG LLC; no completed projects named",
+   "returns": "No rental figures or guarantees on the site"
+  },
+  "positives": [
+   "Global hotel brand (Six Senses, IHG) attached, with opening year 2028 stated in trade press",
+   "Starting price published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://emeraldcaye.com/",
+   "https://hospitalitydesign.com/news/six-senses-unveils-overwater-residences-in-belize/189585",
+   "https://resident.com/press-releases/2026/04/02/sales-launch-at-six-senses-residences-belize-a-new-overwater-residential-development-on-emerald-caye",
+   "https://www.travelweekly.com/Travel-News/Hotel-News/Six-Senses-overwater-resort-coming-to-Belize"
+  ],
+  "verification": {
+   "permit": {
+    "level": "none",
+    "evidence": "No Belize DOE environmental clearance or building permit found in DOE notices reported by San Pedro Sun or elsewhere"
+   },
+   "escrow": {
+    "level": "none",
+    "evidence": "Not published"
+   },
+   "progress": {
+    "level": "developer",
+    "evidence": "Under construction stated in a developer press release and repeated by trade press; no independent site report"
+   },
+   "plans": {
+    "level": "none",
+    "evidence": "No plans published"
+   },
+   "record": {
+    "level": "none",
+    "evidence": "No delivered projects named for CRDG LLC"
+   },
+   "returns": {
+    "level": "developer",
+    "evidence": "No returns advertised"
+   }
+  },
+  "claims": [
+   {
+    "claim": "16 residences from US$3.75M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://emeraldcaye.com/"
+   },
+   {
+    "claim": "Opening 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.travelweekly.com/Travel-News/Hotel-News/Six-Senses-overwater-resort-coming-to-Belize"
+   },
+   {
+    "claim": "Under construction",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://hospitalitydesign.com/news/six-senses-unveils-overwater-residences-in-belize/189585"
+   },
+   {
+    "claim": "Two- and four-bedroom plans (4,387 and 7,891 sq ft)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://emeraldcaye.com/"
+   },
+   {
+    "claim": "Six Senses branded (IHG)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://emeraldcaye.com/"
+   },
+   {
+    "claim": "Environmental clearance granted",
+    "status": "unverified",
+    "by": "none",
+    "source": null
+   },
+   {
+    "claim": "CRDG LLC has delivered prior projects",
+    "status": "unverified",
+    "by": "none",
+    "source": null
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": "CRDG LLC",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BR villa",
+    "5BR villa"
+   ],
+   "size_min_m2": 409,
+   "size_max_m2": 706,
+   "price_min": 3750000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Six Senses (IHG Hotels & Resorts)",
+   "amenities": [
+    "overwater bar and two restaurants",
+    "oceanfront pools",
+    "spa and fitness centre",
+    "yoga pavilion",
+    "kids club",
+    "private beach club at Secret Beach"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Belize Department of the Environment (environmental clearance) and local building authority",
+   "brochure_url": null
+  }
+ },
+ {
+  "slug": "tortuga-bay-phase-ii-schaible",
+  "name": "Tortuga Bay Phase II",
+  "developer": "Tortuga Bay (Michael Schaible)",
+  "area": "Hotel Zone, San Jose del Cabo",
+  "country": "Mexico",
+  "market": "Los Cabos",
+  "url": "https://tortugabay.com/",
+  "docs_url": "https://tortugabay.com/wp-content/uploads/2026/02/Tortuga-Bay_Brochure_Esp_2026.pdf",
+  "permit_number": null,
+  "docs_listed": [
+   "Feb 2026 Spanish brochure with residence plans A to G and areas",
+   "price and availability section (units from US$900,000 to US$2.45M penthouses in brochure)",
+   "purchase order and KYC forms (PDF)",
+   "property management brochure",
+   "amenities list (pools, gym, pickleball, dog park, turtle nursery, Tortuga Plaza)"
+  ],
+  "note": "Boutique beachfront condos in the San Jose del Cabo Hotel Zone between Hyatt Ziva and Viceroy, by Cabo pioneer Michael Schaible (Baja Properties, since 1986); Phase II of about 92 condos restarted after 2008 deposits were refunded, and the Feb 2026 brochure says construction has started with units from US$900,000. No delivery date, permit or deposit protection is published. (checked 31 Oct 2026)",
+  "added": "2026-10-31",
+  "seed": {
+   "units": 92,
+   "developer_delivered": "Tortuga Bay Phase I (33 condos, sold out and operating), Las Mananitas (120 units), El Conquistador, Mar y Sol and other Los Cabos condos, per Gringo Gazette interview and tortugabay.com",
+   "progress_pct": null,
+   "progress_updates": false
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true
+  },
+  "evidence": {
+   "permit": "No municipal licence or SEMARNAT authorisation number published",
+   "escrow": "Not stated; developer offers a 'personal guarantee' of build quality only",
+   "progress": "Brochure states Phase II construction has begun; no figure or dated photos",
+   "plans": "Brochure includes residence plans A to G with areas",
+   "record": "Phase I on the same site is built and occupied; Gringo Gazette names Las Mananitas (120 units) and other earlier Schaible projects",
+   "returns": "No returns advertised"
+  },
+  "positives": [
+   "Phase I on the same beachfront site is completed and occupied",
+   "Developer has more than 35 years building in Los Cabos",
+   "Residence plans with areas published",
+   "Developer refunded 2008 deposits when the project paused, per his own account"
+  ],
+  "flags": [],
+  "sources": [
+   "https://bajasmart.com/blog/tortuga-bay-beachfront-condos-san-jose-del-cabo",
+   "https://gringogazette.com/a-brief-history-of-cabo-real-estate/",
+   "https://tortugabay.com/",
+   "https://tortugabay.com/wp-content/uploads/2026/02/Tortuga-Bay_Brochure_Esp_2026.pdf"
+  ],
+  "verification": {
+   "permit": {
+    "level": "none",
+    "evidence": "No Los Cabos licence or SEMARNAT MIA found in searches"
+   },
+   "escrow": {
+    "level": "none",
+    "evidence": "Not published"
+   },
+   "progress": {
+    "level": "developer",
+    "evidence": "Only the developer brochure says construction started"
+   },
+   "plans": {
+    "level": "developer",
+    "evidence": "Developer brochure plans"
+   },
+   "record": {
+    "level": "developer",
+    "evidence": "Phase I is visible as an operating condo complex in agent listings (Baja Smart: 33 condos), but delivery history comes from a promotional interview with the developer"
+   },
+   "returns": {
+    "level": "developer",
+    "evidence": "No returns language"
+   }
+  },
+  "claims": [
+   {
+    "claim": "Phase I of 33 condos built and sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bajasmart.com/blog/tortuga-bay-beachfront-condos-san-jose-del-cabo"
+   },
+   {
+    "claim": "Developer active in Los Cabos since 1986",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://gringogazette.com/a-brief-history-of-cabo-real-estate/"
+   },
+   {
+    "claim": "Phase II construction has started",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tortugabay.com/wp-content/uploads/2026/02/Tortuga-Bay_Brochure_Esp_2026.pdf"
+   },
+   {
+    "claim": "Phase II of 92 condos from just under US$1M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://gringogazette.com/a-brief-history-of-cabo-real-estate/"
+   },
+   {
+    "claim": "Construction licence and environmental authorisation in place",
+    "status": "unverified",
+    "by": "none",
+    "source": null
+   },
+   {
+    "claim": "Deposits protected (fideicomiso or escrow)",
+    "status": "unverified",
+    "by": "none",
+    "source": null
+   },
+   {
+    "claim": "Delivery date",
+    "status": "unverified",
+    "by": "none",
+    "source": null
+   }
+  ],
+  "facts": {
+   "developer_founded": 1986,
+   "developer_hq": "San Jose del Cabo, Mexico",
+   "developer_company": null,
+   "developer_projects_delivered": 6,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 900000,
+   "price_max": 2450000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Bank trust (fideicomiso) in the restricted coastal zone",
+   "rental_programme": "Property management service offered (brochure); no figures",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "heated pool and jacuzzis",
+    "ocean-view gym",
+    "pickleball courts",
+    "dog park",
+    "sea turtle nursery",
+    "Tortuga Plaza restaurants and shops",
+    "underground parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Municipality of Los Cabos (licencia de construccion); SEMARNAT for coastal environmental impact",
+   "brochure_url": "https://tortugabay.com/wp-content/uploads/2026/02/Tortuga-Bay_Brochure_Esp_2026.pdf"
+  }
+ }
+]
