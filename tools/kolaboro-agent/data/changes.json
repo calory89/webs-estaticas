@@ -4231,5 +4231,104 @@
     null
    ]
   }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "natha-loka",
+  "name": "Natha Loka Eco Village",
+  "changed": {
+   "advertised_yield_pct": [
+    7,
+    14
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "crystal-garden-cap-cana-gesproin",
+  "name": "Crystal Garden Cap Cana",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "comfort-by-orbi-orbi-group",
+  "name": "Comfort by Orbi",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "avrupa-konutlari-gunesli-artas",
+  "name": "Avrupa Konutları Güneşli",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9476,
+    9478
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "marassi-views-eagle-hills",
+  "name": "Marassi Views",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "alliance-centropolis-alliance-group",
+  "name": "Alliance Centropolis",
+  "changed": {
+   "completion_year": [
+    2028,
+    2029
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "sealine-residence-al-zorah",
+  "name": "Sealine Residence",
+  "changed": {
+   "plans_published": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-01",
+  "slug": "udaondo-buenos-aires-landmark-developments",
+  "name": "Udaondo Buenos Aires",
+  "changed": {
+   "escrow_or_guarantee": [
+    null,
+    "Fideicomiso Buenos Aires Landmark (described as the vehicle that bought the ex Tiro Federal land at auction)"
+   ]
+  }
  }
 ]
