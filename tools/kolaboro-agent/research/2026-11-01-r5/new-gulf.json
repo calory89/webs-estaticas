@@ -1013,7 +1013,7 @@
    "escrow": "none",
    "progress": "developer",
    "plans": "none",
-   "record": "independent",
+   "record": "none",
    "returns": "developer"
   },
   "claims": [
@@ -1131,7 +1131,7 @@
    "https://gulfnews.com/gn-focus/a-year-of-momentum-how-bnw-developments-drives-ras-al-khaimahs-real-estate-boom-1.500491392",
    "https://mun.rak.ae/wp-content/uploads/%D9%82%D8%A7%D8%A6%D9%85%D8%A9-%D8%A7%D9%84%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9-%D9%84%D8%B3%D9%86%D8%A9-2026.pdf"
   ],
-  "verified_score": 1
+  "verified_score": 0
  },
  {
   "slug": "hayyan-alef-group",
@@ -2129,7 +2129,7 @@
   "verification": {
    "permit": "none",
    "escrow": "none",
-   "progress": "independent",
+   "progress": "none",
    "plans": "none",
    "record": "none",
    "returns": "developer"
@@ -2247,6 +2247,564 @@
    "https://kvland.com/property/opal-residential-project-muscat-hills/",
    "https://www.palmera.realestate/oman/guides/muscat-hills/"
   ],
+  "verified_score": 0
+ },
+ {
+  "slug": "palace-residences-marassi-al-bahrain-eagle-hills",
+  "name": "Palace Residences Marassi Al Bahrain",
+  "developer": "Eagle Hills Diyar Company W.L.L. (Eagle Hills JV with Diyar Al Muharraq)",
+  "area": "Marassi Al Bahrain, Diyar Al Muharraq",
+  "country": "Bahrain",
+  "market": "Bahrain",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.propertyfinder.bh/en/new-projects/eagle-hills/palace-residences",
+  "docs_url": "https://binaaeaglehills.com/eagle-hills-diyar-appoints-kooheji-contractors-for-palace-residences-marassi-al-bahrain-and-marassi-views-with-a-total-project-cost-of-147-million-dollars/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer fact sheet: legal entity, named escrow account and bank, consultant, G+10, 172 serviced apartments and 4 retail units, handover June 2027",
+   "unit mix with average sizes",
+   "payment schedule 10% instalments to 20% on handover",
+   "floor plans by layout type (portal)",
+   "Emaar Hospitality to manage residences"
+  ],
+  "note": "Ten-storey beachfront block of 172 Emaar-managed serviced apartments at Marassi Al Bahrain, launched Aug 2024; the developer fact sheet names a dedicated 'Palace Residences Escrow Account' at Al Salam Bank Bahrain and Kooheji Contractors was appointed in Nov 2024. Handover June 2027; no RERA licence number or progress percentage on pages opened (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 101000,
+   "currency": "BHD",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Developer fact sheet: 'Palace Residences Escrow Account' at Al Salam Bank Bahrain B.S.C., main branch Manama",
+   "progress_pct": null,
+   "developer_delivered": "Eagle Hills Diyar holds 10 RERA development licences; Bahrain RERA data reported by Al Bilad (Jan 2026) show 23 licensed projects fully completed with escrow closed across developers",
+   "units": 172,
+   "payment_plan": "10% on SPA, then 10% every four months to Dec 2026, 20% on handover June 2027 (fact sheet); portal 10/70/20",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No RERA off-plan licence number on fact sheet or portal",
+   "escrow": "Fact sheet names escrow account and bank; Bahrain Bourse filing (2016) confirms Al Salam Bank as escrow agent for Marassi Al Bahrain under Law 28 of 2014",
+   "progress": "Contractor appointment (Nov 2024) only; no % or dated photos",
+   "plans": "Portal shows floor plans per layout type; fact sheet gives unit sizes",
+   "record": "Al Bilad (RERA data, Jan 2026): Eagle Hills Diyar leads with 10 licensed projects; earlier Marassi phases (Marassi Bay, Marassi Terraces) listed as ready",
+   "returns": "No guaranteed return language"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "independent",
+   "progress": "none",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Dedicated escrow account at Al Salam Bank Bahrain",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://jiwak.com/files/properties/ac952b65b34ffbe8bd0e884dd6cc7c63e7ded13a.pdf"
+   },
+   {
+    "claim": "Al Salam Bank is escrow agent for Marassi Al Bahrain developments under Bahrain escrow law",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://bahrainbourse.com/sysimages/companyannouncement/documents/Alsalam_EN.pdf_26615.pdf"
+   },
+   {
+    "claim": "Kooheji Contractors appointed to build Palace Residences (172 units) and Marassi Views",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://binaaeaglehills.com/eagle-hills-diyar-appoints-kooheji-contractors-for-palace-residences-marassi-al-bahrain-and-marassi-views-with-a-total-project-cost-of-147-million-dollars/"
+   },
+   {
+    "claim": "Launched Aug 2024 with Emaar Hospitality managing residences",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.gulfconstructiononline.com/Article/386960/new-homes-launched-at-marassi-al-bahrain"
+   },
+   {
+    "claim": "Construction start June 2024 (fact sheet) vs 17 Dec 2025 (portal)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.propertyfinder.bh/en/new-projects/eagle-hills/palace-residences"
+   },
+   {
+    "claim": "Handover June 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://jiwak.com/files/properties/ac952b65b34ffbe8bd0e884dd6cc7c63e7ded13a.pdf"
+   },
+   {
+    "claim": "Eagle Hills Diyar holds 10 RERA development licences",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.albiladpress.com/news/2026/6307/finance/972040.html"
+   },
+   {
+    "claim": "Open to all nationalities, freehold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://jiwak.com/files/properties/ac952b65b34ffbe8bd0e884dd6cc7c63e7ded13a.pdf"
+   },
+   {
+    "claim": "Studios from BHD 101,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.bh/en/new-projects/eagle-hills/palace-residences"
+   },
+   {
+    "claim": "RERA off-plan sale licence number",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.rera.gov.bh/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Manama, Bahrain (Eagle Hills HQ Abu Dhabi)",
+   "developer_company": "Eagle Hills Diyar Company W.L.L.",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-06",
+   "handover_promised": "2027-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "retail"
+   ],
+   "size_min_m2": 53,
+   "size_max_m2": 322,
+   "price_min": 101000,
+   "price_max": null,
+   "currency": "BHD",
+   "deposit_pct": 10,
+   "payment_plan": "construction-linked instalments, 20% on handover",
+   "foreign_ownership": "freehold, open to all nationalities",
+   "rental_programme": "serviced apartments managed by Emaar Hospitality Group, no figures",
+   "service_charge": null,
+   "brand": "Palace Residences (Emaar Hospitality)",
+   "amenities": [
+    "temperature-controlled infinity pool",
+    "indoor pool",
+    "gym",
+    "private cinema",
+    "kids area",
+    "community garden",
+    "beach promenade",
+    "cafe"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Real Estate Regulatory Authority (RERA) Bahrain",
+   "brochure_url": "https://jiwak.com/files/properties/ac952b65b34ffbe8bd0e884dd6cc7c63e7ded13a.pdf"
+  },
+  "positives": [
+   "Escrow account and bank named in developer documents",
+   "Main contractor named",
+   "Bahrain law requires per-project escrow for off-plan sales"
+  ],
+  "flags": [],
+  "sources": [
+   "https://jiwak.com/files/properties/ac952b65b34ffbe8bd0e884dd6cc7c63e7ded13a.pdf",
+   "https://www.propertyfinder.bh/en/new-projects/eagle-hills/palace-residences",
+   "https://www.zawya.com/en/press-release/companies-news/eagle-hills-international-introduces-palace-residences-marassi-al-bahrain-tuwobluf",
+   "https://bahrainbourse.com/sysimages/companyannouncement/documents/Alsalam_EN.pdf_26615.pdf",
+   "https://www.gulfconstructiononline.com/Article/386960/new-homes-launched-at-marassi-al-bahrain",
+   "https://binaaeaglehills.com/eagle-hills-diyar-appoints-kooheji-contractors-for-palace-residences-marassi-al-bahrain-and-marassi-views-with-a-total-project-cost-of-147-million-dollars/",
+   "https://www.albiladpress.com/news/2026/6307/finance/972040.html",
+   "https://www.rera.gov.bh/",
+   "https://www.propertyfinder.bh/en/new-projects"
+  ],
+  "verified_score": 2
+ },
+ {
+  "slug": "canal-bay-qetaifan-taameer",
+  "name": "Canal Bay (Qetaifan Island North)",
+  "developer": "TAAMEER Real Estate Projects Group (Taameer Group)",
+  "area": "Qetaifan Island North, Lusail",
+  "country": "Qatar",
+  "market": "Qatar",
+  "stage": "off-plan",
+  "status": "active",
+  "url": "https://www.propertyfinder.qa/en/new-projects/taameer-development/canal-bay",
+  "docs_url": "https://canalbay.taameergroup.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "district unveiled Sep 2026: 783 residential apartments, 382 hotel apartments, 579 hotel rooms along a 580 m corniche",
+   "launch price QAR 2.45-2.5M (portal)",
+   "40% down payment, 60% post-handover (portal)",
+   "delivery July 2028 (portal)",
+   "layout types with one size (67 m2) on portal"
+  ],
+  "note": "Large mixed-use waterfront district by Qatari developer Taameer on Qetaifan Island North in Lusail, a freehold area for foreigners; unveiled 30 Sep 2026 with 783 apartments plus hotel components, portal delivery July 2028. Taameer announced handovers at Al Mayyas (The Pearl) in Oct 2026 and is preparing SKALA Tower for December 2026 (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 2450000,
+   "currency": "QAR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "developer_delivered": "Handovers began at Al Mayyas by Al Mirqab Living on The Pearl (7 Oct 2026, The Peninsula); SKALA Tower in final stages for Dec 2026",
+   "units": 783,
+   "payment_plan": "40% down payment, 60% post-handover (portal)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No Ministry of Municipality or off-plan registration number published",
+   "escrow": "Not stated on project site or portal",
+   "progress": "Portal gives construction start 15 Feb 2026 only; no % or photos",
+   "plans": "Portal lists layout types without plans or sizes (one 67 m2 type)",
+   "record": "The Peninsula (11 Oct 2026): handovers began at Al Mayyas on The Pearl; SKALA Tower handover preparations reported",
+   "returns": "No guaranteed returns"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "783 residential apartments, 382 hotel apartments, 579 hotel rooms",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.qatarliving.com/en/article/taameer-group-unveils-canal-bay-an-integrated-waterfront-district-on-qetaifan-island-north"
+   },
+   {
+    "claim": "Construction started 15 Feb 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.qa/en/new-projects/taameer-development/canal-bay"
+   },
+   {
+    "claim": "Delivery July 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://qatar.alsafaqa.com/en/developers/taameer-development/projects/canal-bay-466417cb"
+   },
+   {
+    "claim": "Qetaifan Island North (Lusail) is a freehold area for non-Qataris",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.omniacapitalgroup.com/en/developments/les-vagues-by-elie-saab"
+   },
+   {
+    "claim": "Taameer began handovers at Al Mayyas on The Pearl",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://thepeninsulaqatar.com/article/11/10/2026/taameer-al-mirqab-living-announce-beginning-of-handover-at-al-mayyas-by-al-mirqab-living-on-the-pearl-island"
+   },
+   {
+    "claim": "SKALA Tower completion targeted Dec 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://thepeninsulaqatar.com/article/04/10/2026/taameer-group-announces-handover-preparations-for-skala-tower-in-lusail-waterfront"
+   },
+   {
+    "claim": "Taameer established 2008",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.qetaifanprojects.com/tameer/"
+   },
+   {
+    "claim": "Starting price QAR 2.45M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.propertyfinder.qa/en/new-projects/taameer-development/canal-bay"
+   },
+   {
+    "claim": "Escrow account",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://canalbay.taameergroup.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2008,
+   "developer_hq": "Lusail, Qatar",
+   "developer_company": "TAAMEER Real Estate Projects Group",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-02",
+   "handover_promised": "2028-Q3",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "3BR",
+    "hotel apartments"
+   ],
+   "size_min_m2": 67,
+   "size_max_m2": null,
+   "price_min": 2450000,
+   "price_max": null,
+   "currency": "QAR",
+   "deposit_pct": 40,
+   "payment_plan": "40/60 with 60% after handover (portal)",
+   "foreign_ownership": "freehold in Lusail freehold area (agent statements)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "Canal Walk promenade",
+    "air-conditioned walkways",
+    "beach access",
+    "indoor pool",
+    "gym",
+    "landscaped parks",
+    "retail and dining"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ministry of Municipality; Real Estate Regulatory Authority (Aqarat), Qatar",
+   "brochure_url": null
+  },
+  "positives": [
+   "Developer has recent handovers reported in national press",
+   "Large share of the price payable after handover"
+  ],
+  "flags": [],
+  "sources": [
+   "https://canalbay.taameergroup.com/",
+   "https://www.taameergroup.com/",
+   "https://www.qetaifanprojects.com/tameer/",
+   "https://www.qatarliving.com/en/article/taameer-group-unveils-canal-bay-an-integrated-waterfront-district-on-qetaifan-island-north",
+   "https://www.propertyfinder.qa/en/new-projects/taameer-development/canal-bay",
+   "https://qatar.alsafaqa.com/en/developers/taameer-development/projects/canal-bay-466417cb",
+   "https://thepeninsulaqatar.com/article/11/10/2026/taameer-al-mirqab-living-announce-beginning-of-handover-at-al-mayyas-by-al-mirqab-living-on-the-pearl-island",
+   "https://thepeninsulaqatar.com/article/04/10/2026/taameer-group-announces-handover-preparations-for-skala-tower-in-lusail-waterfront",
+   "https://www.omniacapitalgroup.com/en/developments/les-vagues-by-elie-saab"
+  ],
   "verified_score": 1
+ },
+ {
+  "slug": "neptune-interiors-by-mouawad-dar-global",
+  "name": "Neptune, Interiors by Mouawad",
+  "developer": "Dar Global PLC (LSE: DAR), interiors licensed from Mouawad",
+  "area": "SEDRA (ROSHN community), North Riyadh",
+  "country": "Saudi Arabia",
+  "market": "Saudi Arabia",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.omniacapitalgroup.com/en/developments/neptune-interiors-by-mouawad",
+  "docs_url": "https://darglobal.co.uk/neptune",
+  "permit_number": null,
+  "docs_listed": [
+   "5BR branded villas, 300-448 m2 (developer)",
+   "status under development, completion December 2027 (developer)",
+   "online residence navigator (developer)",
+   "launch value SAR 880M, 200 villas (Mouawad press release)",
+   "H1 2025 results: revenue recognised after sales and construction milestones, on schedule for Q4 2027",
+   "project site: from SAR 6,000,000, 90/10 payment plan"
+  ],
+  "note": "Dar Global's first Saudi project: 200 five-bedroom villas inside ROSHN's SEDRA community in north Riyadh with Mouawad-designed interiors, under construction for December 2027. Dar Global's audited reporting confirms construction milestones reached by H1 2025; SEDRA was named among Riyadh zones open to non-Saudi buyers in June 2026 (per agent). No Wafi licence number published on pages opened (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 6000000,
+   "currency": "SAR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": "Saudi off-plan licences require an escrow agreement with a licensed bank (REGA Wafi rules); Dar Global reports restricted project escrow balances group-wide in its results; no project escrow bank named",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 200,
+   "payment_plan": "90% during construction, 10% on completion (project site)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No Wafi off-plan licence number on developer page, project site or agent page",
+   "escrow": "REGA Wafi licence requirements include a bank escrow agreement; Dar Global results report restricted escrow cash, but no Neptune escrow bank named",
+   "progress": "Dar Global H1 2025 results (LSE RNS): key construction milestones achieved, on schedule for Q4 2027; developer page 'under development'",
+   "plans": "Sizes per villa given; layouts via online navigator not seen as plans",
+   "record": "Dar Global has no completed project named on pages opened; parent Dar Al Arkan record not verified in this round",
+   "returns": "No guaranteed returns"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "registry",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "200 villas, SAR 880M project value, launched Sep 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://markets.ft.com/data/announce/full?dockey=1323-17247830-43M69PEDPJMB5G3259E8DCGJTO"
+   },
+   {
+    "claim": "Construction milestones reached allowing revenue recognition in H1 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://shareprices.com/rns/dar-global-half-year-2025-results-9w55d7y1o7oeb7i/"
+   },
+   {
+    "claim": "Completion Q4 2027 / December 2027",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://markets.ft.com/data/announce/full?dockey=1323-17247830-43M69PEDPJMB5G3259E8DCGJTO"
+   },
+   {
+    "claim": "Handover date quoted at launch has moved out",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.omniacapitalgroup.com/en/developments/neptune-interiors-by-mouawad"
+   },
+   {
+    "claim": "Villas of 4 and 5 bedrooms (launch) vs 5 bedrooms only (current)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.mouawad.com/int-en/2024-09-23-dar-global-and-mouawad.html"
+   },
+   {
+    "claim": "Non-Saudi ownership law in force from 22 Jan 2026 (Riyadh and Jeddah zones)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://rega.gov.sa/en/media-center/news-announcements/rega-non-saudi-property-ownership-system-enters-into-force-as-of-today/"
+   },
+   {
+    "claim": "SEDRA named among approved Riyadh zones for non-Saudis (23 Jun 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.omniacapitalgroup.com/en/developments/neptune-interiors-by-mouawad"
+   },
+   {
+    "claim": "Off-plan licences require a bank escrow agreement",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://rega.gov.sa/en/rega-services/platforms/wafi-off-plan-sales-and-lease/"
+   },
+   {
+    "claim": "Price from SAR 6M (project site) vs SAR 2.7M-4M+ on portals",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.neptunevilla.com/"
+   },
+   {
+    "claim": "Wafi licence number for Neptune",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://darglobal.co.uk/neptune"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "London, UK (listed); operations Riyadh, Saudi Arabia",
+   "developer_company": "Dar Global PLC",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "London Stock Exchange (DAR); half-year and full-year results published",
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "5BR villa"
+   ],
+   "size_min_m2": 300,
+   "size_max_m2": 448,
+   "price_min": 6000000,
+   "price_max": null,
+   "currency": "SAR",
+   "deposit_pct": null,
+   "payment_plan": "90/10 (project site)",
+   "foreign_ownership": "freehold for non-Saudis in approved Riyadh zones under the 2026 law (subject to REGA eligibility)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Interiors by Mouawad (licensed)",
+   "amenities": [
+    "private gardens",
+    "terraces or roof gardens",
+    "EV charging",
+    "maid and driver rooms",
+    "majlis",
+    "SEDRA parks, schools and mosques"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Real Estate General Authority (REGA), Wafi off-plan programme",
+   "brochure_url": null
+  },
+  "positives": [
+   "Listed developer with construction milestones disclosed in market filings",
+   "Saudi off-plan law requires escrow and REGA licensing"
+  ],
+  "flags": [],
+  "sources": [
+   "https://darglobal.co.uk/neptune",
+   "https://darglobal.co.uk/partners/Mouawad",
+   "https://www.neptunevilla.com/",
+   "https://www.mouawad.com/int-en/2024-09-23-dar-global-and-mouawad.html",
+   "https://markets.ft.com/data/announce/full?dockey=1323-17247830-43M69PEDPJMB5G3259E8DCGJTO",
+   "https://shareprices.com/rns/dar-global-half-year-2025-results-9w55d7y1o7oeb7i/",
+   "https://www.omniacapitalgroup.com/en/developments/neptune-interiors-by-mouawad",
+   "https://rega.gov.sa/en/media-center/news-announcements/rega-non-saudi-property-ownership-system-enters-into-force-as-of-today/",
+   "https://rega.gov.sa/en/rega-services/platforms/wafi-off-plan-sales-and-lease/"
+  ],
+  "verified_score": 2
  }
 ]

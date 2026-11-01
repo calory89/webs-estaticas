@@ -1932,5 +1932,949 @@
    "all_six": false
   },
   "verified_score": 0
+ },
+ {
+  "slug": "cloud-infinity-premium-villas-shree-yagna",
+  "name": "Cloud Infinity Premium Villas (Eleva by Hiranandani)",
+  "developer": "M/S Shree Yagna Builders and Developers (partnership firm); PMC Hiranandani Communities",
+  "area": "Bainguinim, Tiswadi, North Goa",
+  "country": "India",
+  "market": "Goa",
+  "stage": "off-plan",
+  "url": "https://shreeyagnagroup.com/",
+  "docs_url": "https://rera.goa.gov.in/reraApp/viewProjectDetailPage?projectID=K%2F1VHwpie2h3yQchyO3xIQ%3D%3D",
+  "seed": {
+   "price": null,
+   "currency": "INR",
+   "title": "freehold villa with conveyance deed; open to Indian residents, NRIs and OCIs, not to other foreign nationals",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2030-Q4",
+   "permit_claim": true,
+   "permit_number": "PRGO03262696",
+   "plans_published": false,
+   "escrow": "Goa RERA registration condition: 70% of buyer receipts (or all receipts if receivables are below cost) must be kept in a separate scheduled-bank account for construction and land cost",
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Shree Yagna says it has completed three villa projects, including Cloud 7 Villas (Anjuna) and Delight Estate (Hyderabad); its RERA filing lists no projects launched in the last five years",
+   "units": 44,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "Goa RERA: registration PRGO03262696 (16 Mar 2026 to 31 Dec 2030), status New Project Launch, estimated cost INR 92.25 crore",
+   "Goa RERA: inventory 44 villas in four blocks plus 8 shops, carpet areas per block",
+   "Goa RERA: quarterly building progress (excavation 25%, basement and plinth 6%), external works not started",
+   "Goa RERA: TCP Technical Clearance Order TIS/11393/BAVTCP/2026/145 for villas A1-D11, clubhouse and pools",
+   "agent: 3 and 4 BHK villas, Eleva by Hiranandani PMC model, prices on request"
+  ],
+  "note": "44-villa gated scheme near Panjim by a small Goa partnership firm, marketed under the Eleva by Hiranandani project-management banner (announced Sep 2026). The Goa RERA record confirms registration PRGO03262696 to Dec 2030, a TCP technical clearance and early works (excavation 25%), and imposes the RERA separate-account rule; prices and floor plans are only on request, and buyers must be Indian residents, NRIs or OCIs. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "Goa RERA project page and registration certificate PRGO03262696; TCP Technical Clearance TIS/11393/BAVTCP/2026/145 uploaded on RERA",
+   "escrow": "RERA registration certificate condition (iii): 70% of amounts realised in a separate scheduled-bank account; bank not named publicly",
+   "progress": "RERA quarterly building details: excavation 25%, basement and plinth 6%, superstructure 0%",
+   "plans": "No villa floor plans published; sizes and prices on enquiry (agent)",
+   "record": "Developer site lists Cloud 7 Villas Anjuna and Delight Estate Hyderabad as completed; RERA promoter record shows no projects launched in last 5 years",
+   "returns": "Optional rental management mentioned; no guaranteed return or yield"
+  },
+  "positives": [
+   "Full RERA record with quarterly progress and approvals",
+   "Statutory separate-account rule for buyer money",
+   "Technical clearance from Goa TCP published"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Goa RERA registration PRGO03262696 valid to 31 Dec 2030",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://rera.goa.gov.in/reraApp/download?DOC_ID=qwFrj0vjLPOnUsfMkwkZlw%3D%3D"
+   },
+   {
+    "claim": "Promoter is Shree Yagna Builders and Developers (partnership)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://rera.goa.gov.in/reraApp/viewProjectDetailPage?projectID=K%2F1VHwpie2h3yQchyO3xIQ%3D%3D"
+   },
+   {
+    "claim": "Technical clearance granted by TCP for 44 villas and clubhouse",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://rera.goa.gov.in/reraApp/download?DOC_ID=MUNnKiM+GyWudbVHjkOS3w%3D%3D"
+   },
+   {
+    "claim": "Buyer money held in a separate bank account (70%)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://rera.goa.gov.in/reraApp/download?DOC_ID=qwFrj0vjLPOnUsfMkwkZlw%3D%3D"
+   },
+   {
+    "claim": "Works started (excavation 25%)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://rera.goa.gov.in/reraApp/viewProjectDetailPage?projectID=K%2F1VHwpie2h3yQchyO3xIQ%3D%3D"
+   },
+   {
+    "claim": "44 villas in blocks A to D",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://rera.goa.gov.in/reraApp/viewProjectDetailPage?projectID=K%2F1VHwpie2h3yQchyO3xIQ%3D%3D"
+   },
+   {
+    "claim": "Developer is Hiranandani",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://rera.goa.gov.in/reraApp/viewProjectDetailPage?projectID=K%2F1VHwpie2h3yQchyO3xIQ%3D%3D"
+   },
+   {
+    "claim": "Developer completed three villa projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://shreeyagnagroup.com/"
+   },
+   {
+    "claim": "Project located at Kadamba, Goa (developer site)",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://rera.goa.gov.in/reraApp/viewProjectDetailPage?projectID=K%2F1VHwpie2h3yQchyO3xIQ%3D%3D"
+   },
+   {
+    "claim": "Construction licence issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rera.goa.gov.in/reraApp/download?DOC_ID=MUNnKiM+GyWudbVHjkOS3w%3D%3D"
+   },
+   {
+    "claim": "No guaranteed rental return",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://shreeyagnagroup.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Alto Porvorim, North Goa, India",
+   "developer_company": "M/S Shree Yagna Builders and Developers (partnership firm)",
+   "developer_projects_delivered": 3,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-03",
+   "handover_promised": "2030-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "3BHK villa",
+    "4BHK villa"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "INR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Indian law limits purchase to resident Indians, NRIs and OCI cardholders; other foreign nationals cannot buy",
+   "rental_programme": "Optional rental management (developer), no figures",
+   "service_charge": null,
+   "brand": "Eleva by Hiranandani (PMC)",
+   "amenities": [
+    "clubhouse",
+    "swimming pools",
+    "gated compound",
+    "private pools",
+    "concierge",
+    "power backup"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Goa RERA (registration); Town and Country Planning Department (technical clearance); village panchayat (construction licence)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://shreeyagnagroup.com/",
+   "https://rera.goa.gov.in/reraApp/viewProjectDetailPage?projectID=K%2F1VHwpie2h3yQchyO3xIQ%3D%3D",
+   "https://rera.goa.gov.in/reraApp/download?DOC_ID=qwFrj0vjLPOnUsfMkwkZlw%3D%3D",
+   "https://rera.goa.gov.in/reraApp/download?DOC_ID=MUNnKiM+GyWudbVHjkOS3w%3D%3D",
+   "https://synergyinfracon.com/projects/cloud-infinity-premium-villas",
+   "https://www.aurumproptech.in/pulse/rera/goa/north-goa/cloud-infinity-premium-villas/prgo03262696"
+  ],
+  "permit_number": "PRGO03262696",
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "verified_score": 3
+ },
+ {
+  "slug": "odom-living-urban-living-solutions",
+  "name": "Odom Living",
+  "developer": "Urban Living Solutions (ULS Cambodia)",
+  "area": "160B Preah Norodom Blvd, Tonle Bassac, Chamkar Mon, Phnom Penh",
+  "country": "Cambodia",
+  "market": "Cambodia",
+  "stage": "under construction",
+  "url": "https://www.odomphnompenh.com/construction-updates/",
+  "docs_url": "https://www.odomphnompenh.com/construction-updates/",
+  "seed": {
+   "price": 275000,
+   "currency": "USD",
+   "title": "strata title (freehold) for units above ground floor, within 70% foreign quota",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": 18.3,
+   "progress_updates": true,
+   "developer_delivered": "ULS delivered Rose Apple Square in Phnom Penh (agent RielProperty, 'reported')",
+   "units": 138,
+   "payment_plan": "10% at SPA, 80% instalments, 10% at handover (realestate.com.kh); other agents show 20/40/40",
+   "price_per_m2": 3526
+  },
+  "docs_listed": [
+   "developer: monthly dated construction updates Jun 2025 to Sep 2026 (5-level basement done Apr 2026, retail podium 90% Sep 2026)",
+   "developer update 25 Sep 2026: overall progress 18.30% (as reported by NovAsia)",
+   "agents: 22 residential floors, 138 units, unit types 1A 78 sqm to 4BR 262 sqm with prices USD 275k to 1.1M",
+   "agent: designed by Kite Studio Architecture (Singapore), freehold strata title",
+   "older ULS page: handover Q4 2024 (superseded)"
+  ],
+  "note": "138-unit residential tower within the ODOM mixed-use scheme on Norodom Boulevard, sold to foreigners on strata title. The developer posts monthly updates (basement finished April 2026, podium 90% in Sep 2026, overall 18.3%), but handover has slipped from an earlier Q4 2024 target to 2027 and no permit number, escrow or registry record was found. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "No construction permit number published by developer or agents",
+   "escrow": null,
+   "progress": "Developer construction updates page (dated monthly); NovAsia cites the 25 Sep 2026 report of 18.30% overall; realestate.com.kh shows 37% built",
+   "plans": "Agents publish unit types with net areas (ERA Cambodia, realestate.com.kh)",
+   "record": "RielProperty lists Rose Apple Square as delivered by ULS ('reported'); no independent confirmation opened",
+   "returns": "No guaranteed rental return or yield found"
+  },
+  "positives": [
+   "Regular dated construction updates from the developer",
+   "Low-density tower with published unit prices",
+   "Strata title route for foreigners above ground floor"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Five-level basement completed April 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.odomphnompenh.com/construction-updates/"
+   },
+   {
+    "claim": "Overall progress 18.30% (Sep 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://novasia.estate/en/projects/odom-living/"
+   },
+   {
+    "claim": "37% built",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.realestate.com.kh/new-developments/odom-living/"
+   },
+   {
+    "claim": "Handover Q4 2024",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://novasia.estate/en/projects/odom-living/"
+   },
+   {
+    "claim": "Completion Q4 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.eracambodia.com/odom-living"
+   },
+   {
+    "claim": "30 floors (agent) versus 22 residential floors (developer material)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.realestate.com.kh/new-developments/odom-living/"
+   },
+   {
+    "claim": "Construction permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.odomphnompenh.com/construction-updates/"
+   },
+   {
+    "claim": "ULS delivered Rose Apple Square",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.rielproperty.com/property/odom-living-phnom-penh/"
+   },
+   {
+    "claim": "Prices from USD 275,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.eracambodia.com/odom-living"
+   },
+   {
+    "claim": "Foreigners can hold strata title",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.rielproperty.com/property/odom-living-phnom-penh/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2017,
+   "developer_hq": "Phnom Penh, Cambodia",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2027-Q4",
+   "original_handover": "2024-Q4",
+   "delay_months": 36,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "4BR"
+   ],
+   "size_min_m2": 78,
+   "size_max_m2": 262,
+   "price_min": 275000,
+   "price_max": 1100000,
+   "currency": "USD",
+   "deposit_pct": 10,
+   "payment_plan": "10/80/10 or 20/40/40 depending on agent",
+   "foreign_ownership": "Strata title above ground floor; foreign ownership capped at 70% of private floor area (Sub-Decree 82)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "5-level underground parking",
+    "retail podium Odom Square",
+    "sky bridge",
+    "De Dietrich appliances",
+    "smart locks",
+    "double balconies"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ministry of Land Management, Urban Planning and Construction / Phnom Penh Capital Hall",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.odomphnompenh.com/construction-updates/",
+   "https://novasia.estate/en/projects/odom-living/",
+   "https://www.realestate.com.kh/new-developments/odom-living/",
+   "https://www.eracambodia.com/odom-living",
+   "https://www.rielproperty.com/property/odom-living-phnom-penh/",
+   "https://nhsmcambodia.com/odom-construction/"
+  ],
+  "permit_number": null,
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "skyhaus-colombo-crystal-property-group",
+  "name": "Skyhaus",
+  "developer": "Crystal Property Group (CPG)",
+  "area": "Colombo 07 (facing Viharamahadevi Park)",
+  "country": "Sri Lanka",
+  "market": "Sri Lanka",
+  "stage": "under construction",
+  "url": "https://cpg.lk/projects/skyhaus/",
+  "docs_url": "https://cpg.lk/projects/skyhaus/",
+  "seed": {
+   "price": 960000,
+   "currency": "USD",
+   "title": null,
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "CPG lists The Six Weligama (6 villas, launched 2023, sold out) and Crystal Sands Hikkaduwa (24 suites, 2022), operated by its The One Group of Hotels (developer site)",
+   "units": 28,
+   "payment_plan": null,
+   "price_per_m2": 3226
+  },
+  "docs_listed": [
+   "developer: 28 four-bedroom penthouses, two per floor, levels 2-16, 'Under construction', 2028",
+   "developer: East and West floor plans (3,300 and 3,200 sq ft), prices from USD 965,000 and 960,000, 8 units available",
+   "developer: architects Shiho and Taro Okabe",
+   "developer home page: 'Starting from USD 1,000,000', status 'In development'"
+  ],
+  "note": "Boutique all-penthouse tower of 28 four-bedroom homes overlooking Viharamahadevi Park, priced in US dollars from about USD 960,000 with 8 units left; the developer labels it under construction with a 2028 date. No approval number, construction update, title details for foreigners, deposit protection or independent record was found. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "No UDA or building approval number published",
+   "escrow": null,
+   "progress": "Project page says 'Under construction' with no dated update or percentage",
+   "plans": "Developer publishes East and West floor plans with areas",
+   "record": "Developer portfolio lists The Six Weligama and Crystal Sands Hikkaduwa; no independent confirmation opened",
+   "returns": "No yield or guaranteed return on the Skyhaus page"
+  },
+  "positives": [
+   "Floor plans and USD prices per unit type published",
+   "Very low density (two homes per floor)"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project is under construction",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://cpg.lk/projects/skyhaus/"
+   },
+   {
+    "claim": "Completion 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://cpg.lk/projects/skyhaus/"
+   },
+   {
+    "claim": "Prices from USD 960,000 (project page) versus USD 1,000,000 (home page)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://cpg.lk/"
+   },
+   {
+    "claim": "28 residences, two per floor",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://cpg.lk/projects/skyhaus/"
+   },
+   {
+    "claim": "Building approval obtained",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://cpg.lk/projects/skyhaus/"
+   },
+   {
+    "claim": "CPG delivered The Six Weligama and Crystal Sands Hikkaduwa",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://cpg.lk/"
+   },
+   {
+    "claim": "Foreign buyers can take title",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://cpg.lk/projects/skyhaus/"
+   },
+   {
+    "claim": "Deposit protection in place",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://cpg.lk/projects/skyhaus/"
+   },
+   {
+    "claim": "No guaranteed rental return",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://cpg.lk/projects/skyhaus/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2018,
+   "developer_hq": "Sri Lanka",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "4BR penthouse"
+   ],
+   "size_min_m2": 297,
+   "size_max_m2": 307,
+   "price_min": 960000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private lift lobby",
+    "private terraces",
+    "24/7 residential team",
+    "park views"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Urban Development Authority / Colombo Municipal Council",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://cpg.lk/projects/skyhaus/",
+   "https://cpg.lk/"
+  ],
+  "permit_number": null,
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 0
+ },
+ {
+  "slug": "amiba-bukit-bintang-amiba",
+  "name": "Amiba Bukit Bintang (formerly IBN Bukit Bintang)",
+  "developer": "Amiba Bukit Bintang Sdn Bhd",
+  "area": "Jalan Berangan, Bukit Bintang, Kuala Lumpur",
+  "country": "Malaysia",
+  "market": "Malaysia",
+  "stage": "off-plan",
+  "url": "https://amibabukitbintang.com.my/",
+  "docs_url": "https://hims.kpkt.gov.my/files/31090/31090-1/IKLAN_BROSUR_01.pdf",
+  "seed": {
+   "price": 1353000,
+   "currency": "MYR",
+   "title": "freehold (hakmilik kekal)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q4",
+   "permit_claim": true,
+   "permit_number": "31090-1/10-2029/0804(N)-(S)",
+   "plans_published": true,
+   "escrow": "Developer names no HDA account; TEDUH records a Schedule H (Jadual H) agreement type under the statutory Housing Development Account regime; land charged to United Overseas Bank",
+   "progress_pct": 0,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 440,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "registry-hosted brochure: developer licence 31090/07-2030/0146(N) (7 Jul 2025 to 6 Jul 2030), building plan BP T4 OSC 2026 1045 (7), freehold, land charged to UOB",
+   "brochure: 440 serviced apartments, 68 storeys, typical floor plans by level, unit sizes from 539 sq ft, prices to RM18.33M, expected completion Dec 2029",
+   "TEDUH: advertising and sales permit 31090-1/10-2029/0804(N)-(S) from 28 Oct 2026, status 'Belum Mula' (not started), 0%",
+   "TEDUH: earlier IBN Bukit Bintang project on the same site by KKH Development Sdn Bhd recorded as 'Sakit' (ailing) at 22.12%, developer wound up",
+   "developer site: register-interest page only"
+  ],
+  "note": "68-storey freehold serviced-apartment tower relaunched in Oct 2026 by a new entity on the Jalan Berangan site of IBN Bukit Bintang, a 2019 project that TEDUH records as 'sick' at 22.12% after its developer KKH Development Sdn Bhd was wound up. The new permit, building plan and Dec 2029 completion are in official records, but the new developer has no delivered project and TEDUH shows the new phase as not started. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "TEDUH: permit 31090-1/10-2029/0804(N)-(S) valid 28 Oct 2026 to 27 Oct 2029 and developer licence 31090/07-2030/0146(A); brochure gives building plan BP T4 OSC 2026 1045 (7)",
+   "escrow": "TEDUH: Jadual H agreement type; brochure discloses UOB charge on the land; no HDA account details",
+   "progress": "TEDUH: 'Belum Mula', 0.00%; myBina records structural works since Sep 2019 under the old project; old IBN project at 22.12% on TEDUH",
+   "plans": "Registry-hosted brochure includes facilities plans and typical floor plans with unit types A to F1",
+   "record": "New single-project company; predecessor developer on the site was wound up with recorded offences (TEDUH)",
+   "returns": "No guaranteed return or yield on site or brochure"
+  },
+  "positives": [
+   "New sales permit and building plan number on official records",
+   "Freehold title disclosed with encumbrance",
+   "Relaunch of a stalled site under KPKT oversight"
+  ],
+  "flags": [
+   {
+    "text": "KPKT's TEDUH register lists the earlier project on this site, IBN Bukit Bintang, as 'Sakit' (ailing) at 22.12% complete, with its developer KKH Development Sdn Bhd marked as wound up ('Digulung') and as having recorded offences ('Ada Kesalahan'); its vacant possession date had already been extended to Sep 2024.",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/19748-1"
+   }
+  ],
+  "verification": {
+   "permit": "registry",
+   "escrow": "registry",
+   "progress": "registry",
+   "plans": "registry",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Sales permit 31090-1/10-2029/0804(N)-(S) issued",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/31090-1"
+   },
+   {
+    "claim": "Developer licence 31090/07-2030/0146 valid to Jul 2030",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/31090-1"
+   },
+   {
+    "claim": "440 units priced RM1.353M to RM18.33M",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/31090-1"
+   },
+   {
+    "claim": "Expected completion Dec 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://hims.kpkt.gov.my/files/31090/31090-1/IKLAN_BROSUR_01.pdf"
+   },
+   {
+    "claim": "Construction status of new project",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/31090-1"
+   },
+   {
+    "claim": "Site previously IBN Bukit Bintang, stalled at 22.12%",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/19748-1"
+   },
+   {
+    "claim": "Previous developer wound up",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://teduh.kpkt.gov.my/api/projek-swasta/19748-1"
+   },
+   {
+    "claim": "IBN Bukit Bintang was to complete in 2Q2023",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://theedgemalaysia.com/article/ibn-corp-hopes-establish-foothold-malaysian-market"
+   },
+   {
+    "claim": "Construction started Sep 2019, target completion Mar 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.mybina.com.my/project/59737-amiba-bukit-bintang-jalan-berangan-services-apartment-and-hotel-previously-known-as-ibn-bukit-bintang"
+   },
+   {
+    "claim": "Freehold land",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://theedgemalaysia.com/article/ibn-bukit-bintang-gets-ground"
+   },
+   {
+    "claim": "Building plan BP T4 OSC 2026 1045 (7) approved",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://hims.kpkt.gov.my/files/31090/31090-1/IKLAN_BROSUR_01.pdf"
+   },
+   {
+    "claim": "No guaranteed return",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://amibabukitbintang.com.my/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Kuala Lumpur (business) / Johor Bahru (registered), Malaysia",
+   "developer_company": "Amiba Bukit Bintang Sdn Bhd (developer licence 31090/07-2030/0146)",
+   "developer_projects_delivered": 0,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2029-Q4",
+   "original_handover": "2022-Q4",
+   "delay_months": null,
+   "unit_types": [
+    "1+1BR",
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": 50,
+   "size_max_m2": 620,
+   "price_min": 1353000,
+   "price_max": 18332150,
+   "currency": "MYR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold strata title; foreigners in KL subject to the RM1M minimum price (all units above it)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "clubhouse level 66",
+    "pool",
+    "gym",
+    "library",
+    "games room",
+    "minimart",
+    "multipurpose hall"
+   ],
+   "lat": 3.146,
+   "lng": 101.714,
+   "permit_authority": "KPKT / Jabatan Perumahan Negara; DBKL (building plan)",
+   "brochure_url": "https://hims.kpkt.gov.my/files/31090/31090-1/IKLAN_BROSUR_01.pdf"
+  },
+  "sources": [
+   "https://amibabukitbintang.com.my/",
+   "https://hims.kpkt.gov.my/files/31090/31090-1/IKLAN_BROSUR_01.pdf",
+   "https://teduh.kpkt.gov.my/api/projek-swasta/31090-1",
+   "https://teduh.kpkt.gov.my/api/projek-swasta/19748-1",
+   "https://proptools.my/projects/amiba-bukit-bintang",
+   "https://www.mybina.com.my/project/59737-amiba-bukit-bintang-jalan-berangan-services-apartment-and-hotel-previously-known-as-ibn-bukit-bintang",
+   "https://theedgemalaysia.com/article/ibn-bukit-bintang-gets-ground",
+   "https://theedgemalaysia.com/article/ibn-corp-hopes-establish-foothold-malaysian-market"
+  ],
+  "permit_number": "31090-1/10-2029/0804(N)-(S)",
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": true,
+   "escrow": true,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 5,
+   "all_six": false
+  },
+  "verified_score": 4
+ },
+ {
+  "slug": "lao-center-vientiane-qiancheng",
+  "name": "Lao Center",
+  "developer": "Qiancheng Group (Qiancheng Yi Co., Ltd. / Qiancheng Real Estate Investment Co., Ltd.)",
+  "area": "Khouvieng Road, Phapho Village, Sisattanak District, Vientiane",
+  "country": "Laos",
+  "market": "Laos",
+  "stage": "under construction",
+  "url": "https://qiancheng.hk/index.php?lang=en",
+  "docs_url": "https://qiancheng.hk/news/shownews.php?id=684",
+  "seed": {
+   "price": 140400,
+   "currency": "USD",
+   "title": "condominium unit ownership certificate under the 2024 Condominium Decree (land not owned); agent says title handled under Ministry of Finance supervision",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": 7,
+   "completion": "2028-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Annex building (12 storeys) of the same project completed and opened Dec 2025 to Mar 2026 (developer and KPL); group founded Oct 2023, no other delivered project",
+   "units": 953,
+   "payment_plan": "agent: 30% down payment, permanent residence application after 30% paid; floors 5-17 sold as hotel leaseback units",
+   "price_per_m2": 2700
+  },
+  "docs_listed": [
+   "developer: monthly 'home letter' construction updates (Sep 2025, Dec 2025, Jun 2026, Jul 2026), main tower at floor 15 by 31 Jul 2026",
+   "developer: annex completed and in use, HQ moved in (Dec 2025)",
+   "agent: unit types 52.3 to 157.95 sqm, from USD 2,200 to 3,500 per sqm, average USD 2,700",
+   "agent: floors 5-17 hotel leaseback 10 years at 7% pre-tax annual return paid quarterly; handover planned before 30 May 2028",
+   "state news agency KPL: 46-storey tallest hotel-condo in Laos, construction began Oct 2024, completion 2028"
+  ],
+  "note": "46-storey, roughly 155 m hotel and condominium tower in central Vientiane by a Chinese-run group founded in 2023; the state news agency KPL confirms construction since Oct 2024 and a 2028 target, and the developer's monthly updates put the main tower at floor 15 in July 2026. Agents market a 10-year hotel leaseback paying 7% a year and a residence-permit route, while no permit number, escrow or deposit protection is published. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "No construction permit or condominium business licence number published",
+   "escrow": null,
+   "progress": "Developer monthly updates with dated floor counts (floor 10 in Jun 2026, floor 15 by 31 Jul 2026); KPL (Dec 2025) confirms construction under way",
+   "plans": "Agents publish unit types A, B, G, E with areas and layouts",
+   "record": "Annex of the same project completed (developer, KPL); developer group only formed in Oct 2023",
+   "returns": "AIAIG listing: floors 5-17 leaseback for 10 years at 7% annual pre-tax return paid quarterly"
+  },
+  "positives": [
+   "Construction start and target confirmed by Lao state news agency",
+   "Detailed monthly construction updates",
+   "Annex building already completed and occupied"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction began October 2024, completion 2028",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://kpl.gov.la/En/detail.aspx/detail.aspx?id=96063"
+   },
+   {
+    "claim": "Tallest hotel-condominium in Laos, 46 storeys",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://kpl.gov.la/En/detail.aspx/detail.aspx?id=96063"
+   },
+   {
+    "claim": "Project partner is the Ministry of Public Security",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://kpl.gov.la/En/detail.aspx/detail.aspx?id=96063"
+   },
+   {
+    "claim": "Developed under the auspices of the Ministry of National Defense",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://rentsbuy.com/property/6690-strategic-investment-in-central-vientiane-lao-center-mixed-use-condos-now-selling/"
+   },
+   {
+    "claim": "Main tower at floor 15 by 31 Jul 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://qiancheng.hk/index.php?lang=en"
+   },
+   {
+    "claim": "Annex building completed and opened",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://kpl.gov.la/En/detail.aspx/detail.aspx?id=96063"
+   },
+   {
+    "claim": "10-year hotel leaseback at 7% annual return",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aiaig.com/property/10842-lao-center-premium-star-development-vientiane"
+   },
+   {
+    "claim": "Buyers obtain Lao permanent residence after paying 30%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.aiaig.com/property/10842-lao-center-premium-star-development-vientiane"
+   },
+   {
+    "claim": "Foreigners can hold registered condominium units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://bambooroutes.com/blogs/news/laos-foreigner"
+   },
+   {
+    "claim": "Prices from USD 2,200 per sqm",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://rentsbuy.com/property/6690-strategic-investment-in-central-vientiane-lao-center-mixed-use-condos-now-selling/"
+   },
+   {
+    "claim": "Construction permit and condominium licence held",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://qiancheng.hk/index.php?lang=en"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2023,
+   "developer_hq": "Vientiane, Laos",
+   "developer_company": "Qiancheng Yi Co., Ltd. (Qiancheng Group)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024-10",
+   "handover_promised": "2028-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 52.3,
+   "size_max_m2": 165,
+   "price_min": 140400,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 30,
+   "payment_plan": "30% down payment then instalments (agent)",
+   "foreign_ownership": "Registered condominium unit under the 2019 Land Law and 2024 Condominium Decree; land not owned; foreign cap reported at 70% of units",
+   "rental_programme": "Floors 5-17 hotel leaseback, 10 years, 7% pre-tax annual return paid quarterly (agent)",
+   "service_charge": "USD 1.5 per sqm per month (agent)",
+   "brand": null,
+   "amenities": [
+    "five-star hotel",
+    "glass outdoor pool",
+    "fitness centre",
+    "shopping centre",
+    "conference and banquet halls",
+    "about 500 parking spaces with EV chargers"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Vientiane Department of Public Works and Transport (construction); Ministry of Natural Resources and Environment / DONRE (condominium title)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://qiancheng.hk/index.php?lang=en",
+   "https://qiancheng.hk/news/shownews.php?id=684",
+   "https://qiancheng.hk/news/shownews.php?id=672",
+   "https://qiancheng.hk/news/shownews.php?id=661&lang=en",
+   "https://kpl.gov.la/En/detail.aspx/detail.aspx?id=96063",
+   "https://www.aiaig.com/property/10842-lao-center-premium-star-development-vientiane",
+   "https://rentsbuy.com/property/6690-strategic-investment-in-central-vientiane-lao-center-mixed-use-condos-now-selling/",
+   "https://bambooroutes.com/blogs/news/laos-foreigner"
+  ],
+  "permit_number": null,
+  "added": "2026-11-01",
+  "status": "active",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": false,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 2
  }
 ]

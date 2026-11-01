@@ -2002,5 +2002,726 @@
   "verified_score": 0,
   "status": "active",
   "added": "2026-11-01"
+ },
+ {
+  "slug": "solea-jaco-beach-kapital-group",
+  "name": "Solea Jaco Beach (Tower 1)",
+  "developer": "The Kapital Group",
+  "area": "Jaco Beach, Garabito, Puntarenas",
+  "country": "Costa Rica",
+  "market": "Costa Rica",
+  "stage": "under construction",
+  "url": "https://realtyonegroup.cr/en-US/properties/F24883E1",
+  "docs_url": "https://www.solea.cr/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: types A to D, 84 to 118 sq m, from USD 303,000 to 425,000; 'Tower 1 90% sold', 'Construction underway, delivery Q4 2027', 'titled beachfront living'",
+   "developer group site: 2 oceanfront buildings, 308 residences, 1.8 ha",
+   "developer: 'demand guarantees a stable return on investment' (rentabilidad section)",
+   "contractor EVCO: Solea Jaco start April 2026, 27 levels, 20,450 sq m",
+   "agents: earlier timelines (start mid-2025, completion end-2026), reservation USD 1,000 or 5,000, USD 250 trust (fiduciary) fee, 20% at PSA or 30/70 plans, US-style financing"
+  ],
+  "note": "Two-tower, 308-unit beachfront condo project in Jaco by The Kapital Group; the contractor dates the start of Tower 1 to April 2026 and the developer now promises Q4 2027. Agent listings show the timeline slipping from an end-2026 completion, and the developer's site says demand 'guarantees' a stable return. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 303000,
+   "currency": "USD",
+   "title": "titled condominium (filial) per developer; beachfront maritime zone status not stated",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": true,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Agents mention a USD 250 non-refundable fiduciary fee at reservation, implying a trust; trustee not named",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Group claims over 600,000 sq m developed and USD 1bn in transactions; projects not itemised with dates",
+   "units": 308,
+   "payment_plan": "USD 1,000 to 5,000 reservation, 20% at PSA then construction milestones, or 30% during construction and 70% at delivery",
+   "price_per_m2": 3607
+  },
+  "evidence": {
+   "permit": "No SETENA viability, municipal permit or CFIA number published",
+   "escrow": "Agent listing: 'Tarifa fiduciaria adicional de USD 250'; no trustee or escrow terms published by developer",
+   "progress": "Developer says construction under way; contractor EVCO lists start April 2026; no % or dated photos",
+   "plans": "Developer publishes unit types A to D with sizes and floor plan images; brochure with floor plans offered by agents",
+   "record": "Group site claims 600,000 sq m developed; no named completed projects opened",
+   "returns": "Developer site: growing demand 'garantiza un retorno de inversion estable'"
+  },
+  "positives": [
+   "Unit types, sizes and prices published",
+   "Named general contractor with stated start date",
+   "Payments tied to construction milestones"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction under way",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.evco.cr/"
+   },
+   {
+    "claim": "Delivery Q4 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://terraqueabeachproperties.com/property/pre-sale-oceanview-condos-with-2-and-3-bedrooms-in-the-heart-of-jaco-beach/"
+   },
+   {
+    "claim": "Construction start mid-2025",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.evco.cr/"
+   },
+   {
+    "claim": "Tower 1 is 90% sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.solea.cr/"
+   },
+   {
+    "claim": "Project totals 2 buildings and 308 residences",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thekapitalgroup.com/"
+   },
+   {
+    "claim": "Tower of 27 levels, 20,450 sq m",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.evco.cr/"
+   },
+   {
+    "claim": "Units are titled (not concession land)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.solea.cr/"
+   },
+   {
+    "claim": "Deposits held in a trust (fiduciary fee charged)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://realtyonegroup.cr/es-CR/properties/19A0D580"
+   },
+   {
+    "claim": "Demand guarantees a stable return on investment",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://solea.cr/es/"
+   },
+   {
+    "claim": "Developer has developed over 600,000 sq m",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thekapitalgroup.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "San Jose, Costa Rica",
+   "developer_company": "The Kapital Group (registration not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-04",
+   "handover_promised": "2027-Q4",
+   "original_handover": "2026-Q4",
+   "delay_months": 12,
+   "unit_types": [
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 84,
+   "size_max_m2": 118,
+   "price_min": 303000,
+   "price_max": 554000,
+   "currency": "USD",
+   "deposit_pct": 20,
+   "payment_plan": "20% at PSA plus milestone instalments, or 30/70",
+   "foreign_ownership": "Foreigners can own titled property in Costa Rica directly",
+   "rental_programme": "Short and long-term rental suggested; no programme figures",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "oceanfront pool",
+    "beachfront jacuzzis",
+    "gym",
+    "sports lounge",
+    "coworking",
+    "fire pit",
+    "surf storage",
+    "24/7 security"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Municipalidad de Garabito (construction permit); SETENA (environmental viability); CFIA",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.solea.cr/",
+   "https://solea.cr/es/",
+   "https://thekapitalgroup.com/",
+   "https://www.evco.cr/",
+   "https://live.solea.cr/virtual-portal/",
+   "https://realtyonegroup.cr/en-US/properties/F24883E1",
+   "https://realtyonegroup.cr/es-CR/properties/19A0D580",
+   "https://realtyonegroup.cr/es-CR/properties/3E9F8C37",
+   "https://terraqueabeachproperties.com/property/pre-sale-oceanview-condos-with-2-and-3-bedrooms-in-the-heart-of-jaco-beach/",
+   "https://www.encuentra24.com/costa-rica-es/bienes-raices-venta-de-propiedades-apartamentos/solea-jaco-apartamentos-frente-al-mar-en-preventa/32834225"
+  ],
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": false,
+   "score": 1,
+   "all_six": false
+  },
+  "verified_score": 0,
+  "status": "active",
+  "added": "2026-11-01"
+ },
+ {
+  "slug": "apres-coco-del-mar-efc-group",
+  "name": "APRES (East Tower)",
+  "developer": "EFC Group (sales: Acierto Panama)",
+  "area": "Calle Andres Mojica and Av. Cincuentenario, Coco del Mar, San Francisco, Panama City",
+  "country": "Panama",
+  "market": "Panama City",
+  "stage": "off-plan",
+  "url": "https://www.lifenroi.com/es/propiedades/apres",
+  "docs_url": "https://apresresidences.com.pa/es/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: 'APRES East' 50 floors, wellness amenities, EFC Group 25+ years",
+   "developer project list: completed towers named (Yacht Club Tower, Evolution Tower, Bicsa Financial Center, Metropolitan Park, Loma Vista Tower)",
+   "sales agent Acierto: two towers of 49 and 35 levels, 2BR 64 sq m, 2BR 85 sq m, 3BR 95 sq m, from USD 257,200, typical floor plan",
+   "agent: 232 apartments, delivery 2029, pre-sale",
+   "agent microsite: HOA B/. 2.50 per sq m, 'ROI est. 5 to 7% annual', room dimensions per type"
+  ],
+  "note": "Pre-sale wellness-themed tower (first of two) in Coco del Mar by EFC Group, designed by arango+ with Bettis Tarazi interiors, delivery 2029. Tower height is given as 49 or 50 floors and the 64 sq m type is called both a 2BR and a studio; no permit, trust or escrow details are published. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 257200,
+   "currency": "USD",
+   "title": "freehold horizontal property (PH) title; foreigners may own directly",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 5,
+   "completion": "2029",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "EFC Group lists completed buildings in Panama City incl. Yacht Club Tower, Evolution Tower (hotel and offices), Bicsa Financial Center, Metropolitan Park, Loma Vista Tower (developer site)",
+   "units": 232,
+   "payment_plan": null,
+   "price_per_m2": 4019
+  },
+  "evidence": {
+   "permit": "No municipal construction permit or MiAmbiente EIA resolution published",
+   "escrow": "No escrow or fideicomiso stated",
+   "progress": "Pre-sale; no construction start or progress",
+   "plans": "Agent publishes Model A/B/C plans and a typical floor plan; microsite gives room dimensions",
+   "record": "Developer project page names completed towers; no dates or independent confirmation opened",
+   "returns": "Agent microsite shows 'ROI est. 5 to 7% annual'; not described as guaranteed"
+  },
+  "positives": [
+   "Developer with named completed towers in Panama City",
+   "Unit plans, sizes and starting prices published",
+   "HOA rate disclosed"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Tower has 50 floors",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://aciertopty.com/en/Proyecto/apres/"
+   },
+   {
+    "claim": "232 apartments in the first tower",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.lifenroi.com/es/propiedades/apres"
+   },
+   {
+    "claim": "Delivery 2029",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.lifenroi.com/es/propiedades/apres"
+   },
+   {
+    "claim": "Prices from USD 257,200",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://aciertopty.com/en/Proyecto/apres/"
+   },
+   {
+    "claim": "64 sq m unit is a two-bedroom",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://buypanamarealestate.com/"
+   },
+   {
+    "claim": "Estimated ROI 5 to 7% a year",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://buypanamarealestate.com/"
+   },
+   {
+    "claim": "EFC Group has 25+ years of experience and completed Yacht Club Tower, Evolution Tower",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.efcgroup.com.pa/proyectos/"
+   },
+   {
+    "claim": "Construction permit and EIA approved",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://apresresidences.com.pa/es/"
+   },
+   {
+    "claim": "No guaranteed returns",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://apresresidences.com.pa/es/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Panama City, Panama",
+   "developer_company": "EFC Group (registration not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2029",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 64,
+   "size_max_m2": 95,
+   "price_min": 257200,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Foreigners can own titled PH units in Panama City; residency programmes cited by agents",
+   "rental_programme": "No operator; agent estimates ROI 5 to 7%",
+   "service_charge": "HOA B/. 2.50 per sq m (agent)",
+   "brand": null,
+   "amenities": [
+    "infinity pool",
+    "500 sq m gym",
+    "health centre",
+    "yoga and mindfulness rooms",
+    "coworking",
+    "pet park",
+    "running track",
+    "panoramic rooftop"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Municipio de Panama (construction permit); MiAmbiente (EIA)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://apresresidences.com.pa/es/",
+   "https://aciertopty.com/en/Proyecto/apres/",
+   "https://aciertopty.com/Proyecto/apres/",
+   "https://www.efcgroup.com.pa/proyectos/",
+   "https://www.lifenroi.com/es/propiedades/apres",
+   "https://buypanamarealestate.com/",
+   "https://cocodelmar.com.co/"
+  ],
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 0,
+  "status": "active",
+  "added": "2026-11-01"
+ },
+ {
+  "slug": "proyecto-alejandria-inlevel",
+  "name": "Proyecto Alejandria",
+  "developer": "InLevel",
+  "area": "Carrera 38 # 2 Sur-151, barrio Alejandria, El Poblado, Medellin",
+  "country": "Colombia",
+  "market": "Medellín",
+  "stage": "off-plan",
+  "url": "https://inlevel.co/proyecto-alejandria",
+  "docs_url": "https://inlevel.co/proyecto-alejandria",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: 61 apartasuites plus 4 shops, rooftop and terrace (67 registrable units)",
+   "developer: suites 18 to 54 sq m, from COP 299M",
+   "developer: per-floor building plans and 6 unit types",
+   "developer: lot data (CBML 14160110049, 1,162.33 sq m, POT zone Z5_CN5_18)",
+   "developer: timeline - design and licence Sep 2025 to Mar 2026, sales from Jan 2026, 24-month build 'to start'",
+   "developer: claims 'legal short-rental licence', optional HostWE rental pool"
+  ],
+  "note": "Small short-stay apartasuite building planned in El Poblado's Alejandria barrio, selling since January 2026 with construction not yet started. The developer claims a legal short-rental licence but publishes no licence or sales radicado number, and the project does not appear on Medellin's published list of projects that filed sales documents. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 299000000,
+   "currency": "COP",
+   "title": "freehold (independent matricula per unit, per developer)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 61,
+   "payment_plan": null,
+   "price_per_m2": 16611111
+  },
+  "evidence": {
+   "permit": "Developer says it holds a 'licencia legal de renta corta' but gives no licence resolution or sales radicado; its own timeline put licensing at Sep 2025 to Mar 2026. Not found on Medellin's list of projects compliant with Decreto 1077/2015 (checked Nov 2026)",
+   "escrow": "No fiduciaria or encargo fiduciario named",
+   "progress": "Construction 'por iniciar' (not started)",
+   "plans": "Per-floor plans and six unit types published",
+   "record": "No completed projects named",
+   "returns": "Mentions higher nightly rates for jacuzzi suites (+35% tarifa); no guaranteed return"
+  },
+  "positives": [
+   "Floor plans and unit sizes published",
+   "Lot identifiers and zoning parameters published, allowing checks against POT",
+   "Developer timeline openly shows construction not started"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Project holds a legal short-rental licence",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://inlevel.co/proyecto-alejandria"
+   },
+   {
+    "claim": "Project registered with Medellin for sales (radicado de ventas)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.medellin.gov.co/es/secretaria-gestion-y-control-territorial/subsecretaria-de-control-urbanistico/enajenaciones/proyectos-de-vivienda-decreto-1077-de-2015/"
+   },
+   {
+    "claim": "Lot zoned Z5_CN5_18 with max build index 1.4",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://inlevel.co/proyecto-alejandria"
+   },
+   {
+    "claim": "61 apartasuites from COP 299M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://inlevel.co/proyecto-alejandria"
+   },
+   {
+    "claim": "Construction will take 24 months",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://inlevel.co/proyecto-alejandria"
+   },
+   {
+    "claim": "Short-term rental permitted at this location",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.medellin.gov.co/es/sala-de-prensa/noticias/viviendas-turisticas-que-dice-el-acuerdo-48-de-2014-y-que-plantea-la-revision-de-mediano-plazo-del-pot-2026/"
+   },
+   {
+    "claim": "Each unit gets an independent matricula",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://inlevel.co/proyecto-alejandria"
+   },
+   {
+    "claim": "No guaranteed rental return",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://inlevel.co/proyecto-alejandria"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Medellin, Colombia",
+   "developer_company": "InLevel (legal entity not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "suite 18 sq m",
+    "suite 27 sq m balcony",
+    "jacuzzi suite 31-38 sq m",
+    "2BR 54 sq m",
+    "XL 53 sq m"
+   ],
+   "size_min_m2": 18,
+   "size_max_m2": 54,
+   "price_min": 299000000,
+   "price_max": null,
+   "currency": "COP",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Foreigners can buy directly in Colombia; register investment with Banco de la Republica",
+   "rental_programme": "Optional HostWE rental pool or self-management under house rules",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "rooftop terrace",
+    "rooftop jacuzzi",
+    "gym",
+    "lock-off units",
+    "4 ground-floor shops"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Curadurias Urbanas de Medellin (licence); Subsecretaria de Control Urbanistico (sales radicado)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://inlevel.co/proyecto-alejandria",
+   "https://www.medellin.gov.co/es/secretaria-gestion-y-control-territorial/subsecretaria-de-control-urbanistico/enajenaciones/proyectos-de-vivienda-decreto-1077-de-2015/",
+   "https://www.medellin.gov.co/es/sala-de-prensa/noticias/viviendas-turisticas-que-dice-el-acuerdo-48-de-2014-y-que-plantea-la-revision-de-mediano-plazo-del-pot-2026/"
+  ],
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 0,
+  "status": "active",
+  "added": "2026-11-01"
+ },
+ {
+  "slug": "bela-beach-front-homes-gran-pacifica-eci",
+  "name": "BELA Beach Front Homes (Gran Pacifica)",
+  "developer": "ECI Development (Gran Pacifica Beach & Golf Resort)",
+  "area": "Asuchillo beach, Gran Pacifica, Villa El Carmen, Managua department",
+  "country": "Nicaragua",
+  "market": "Nicaragua",
+  "stage": "under construction",
+  "url": "https://ecidevelopment.com/destination/nicaragua/",
+  "docs_url": "https://ecidevelopment.com/community/gran-pacifica-resort/bela/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: BELA community map with site-by-site availability (sites 2, 3, 6, 13, 15, 16 available; BELA 04 move-in ready)",
+   "developer: home models with interior and exterior sq ft and prices (e.g. 2BR 1,065 sq ft USD 429,900; Poseidon 3BR USD 499,500; Apollo 3BR USD 499,900)",
+   "developer: HOA USD 286 + tax, closing costs and optional furniture packages itemised",
+   "developer: three pools and sea wall already built",
+   "news (La Prensa 2013): 200 lots sold, 56 homes built, 300-home target by 2018"
+  ],
+  "note": "Beachfront eco-home neighbourhood inside ECI Development's 2,500-acre Gran Pacifica resort, sold home-by-home with one model move-in ready and other sites to be built. Prices, closing costs and HOA are itemised, but no permits, escrow, build schedule or title details are published, and the resort fell well short of the 300-home-by-2018 goal reported in 2013. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 429900,
+   "currency": "USD",
+   "title": "freehold (Nicaragua permits foreign ownership; coastal zone rules apply) - not stated for BELA",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Gran Pacifica: 56 homes built by Jan 2013 (La Prensa); over 130 homes built by 2023 (ECI CEO article); EVA tiny homes 50 of 73 completed (developer)",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": 4346
+  },
+  "evidence": {
+   "permit": "No MARENA environmental permit, municipal permit or INTUR registration number published",
+   "escrow": "No escrow or deposit protection stated",
+   "progress": "Community map marks one home move-in ready and others available; no construction schedule or dated photos",
+   "plans": "Model pages give room counts and interior/exterior square footage per model",
+   "record": "La Prensa (2013) reported 56 homes built at Gran Pacifica; ECI CEO wrote in 2023 that over 130 homes are built",
+   "returns": "Vacation rental mentioned for the resort; no guarantee or yield"
+  },
+  "positives": [
+   "Developer active at the site for about 20 years with delivered homes reported by national press",
+   "All-in costs (HOA, closing, furniture) itemised per model",
+   "Some homes already built and move-in ready"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Gran Pacifica had 56 homes built and 200 lots sold by 2013",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.laprensani.com/2013/01/21/economia/131515-otro-proyecto-de-lujo-en-el-pacifico"
+   },
+   {
+    "claim": "300-home colonial village completed by 2018",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://free-cities.org/live-more-freely-in-latin-america"
+   },
+   {
+    "claim": "Over 130 homes built at Gran Pacifica",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://free-cities.org/live-more-freely-in-latin-america"
+   },
+   {
+    "claim": "Development spans about 2,400 to 2,500 acres with 3.5 miles of beach",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://ticotimes.net/2007/09/28/large-developments-seek-social-sustainability"
+   },
+   {
+    "claim": "BELA 2BR home priced USD 429,900 plus HOA USD 286",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ecidevelopment.com/community/gran-pacifica-resort/bela/"
+   },
+   {
+    "claim": "Three pools and sea wall already built at BELA",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ecidevelopment.com/destination/nicaragua/"
+   },
+   {
+    "claim": "BELA 04 is move-in ready",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ecidevelopment.com/community/gran-pacifica-resort/bela/"
+   },
+   {
+    "claim": "Environmental and construction permits held for BELA",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ecidevelopment.com/community/gran-pacifica-resort/bela/"
+   },
+   {
+    "claim": "No guaranteed rental return",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://ecidevelopment.com/community/gran-pacifica-resort/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": null,
+   "developer_company": "ECI Development; Gran Pacifica (registration not published)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": 130,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR house",
+    "3BR house"
+   ],
+   "size_min_m2": 99,
+   "size_max_m2": 171,
+   "price_min": 429900,
+   "price_max": 499900,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Foreigners may own titled property in Nicaragua; beachfront public-zone limits apply",
+   "rental_programme": "Resort vacation rental programme mentioned; no figures",
+   "service_charge": "HOA USD 286 per month + tax",
+   "brand": null,
+   "amenities": [
+    "three pools",
+    "sea wall",
+    "beach access (Asuchillo surf break)",
+    "nine-hole golf",
+    "clubhouse and restaurants",
+    "community gardens"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Alcaldia de Villa El Carmen (construction); MARENA (environmental); INTUR (tourism incentives)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://ecidevelopment.com/community/gran-pacifica-resort/bela/",
+   "https://ecidevelopment.com/community/gran-pacifica-resort/",
+   "https://ecidevelopment.com/destination/nicaragua/",
+   "https://www.laprensani.com/2013/01/21/economia/131515-otro-proyecto-de-lujo-en-el-pacifico",
+   "https://free-cities.org/live-more-freely-in-latin-america",
+   "https://ticotimes.net/2007/09/28/large-developments-seek-social-sustainability"
+  ],
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "verified_score": 1,
+  "status": "active",
+  "added": "2026-11-01"
  }
 ]

@@ -1138,5 +1138,583 @@
   "status": "active",
   "added": "2026-11-01",
   "permit_number": "City of Austin BP 2025-091151 (condo lobby finish-out; floors 3-18 permits 2025-091157 to 2025-091230)"
+ },
+ {
+  "slug": "westminster-tower-london-square",
+  "name": "Westminster Tower",
+  "developer": "London Square (Aldar Properties)",
+  "area": "Albert Embankment, Lambeth",
+  "country": "United Kingdom",
+  "market": "London",
+  "stage": "under construction",
+  "url": "https://londonsquare.co.uk/developments/westminster-tower",
+  "docs_url": "https://londonsquare.co.uk/developments/westminster-tower",
+  "docs_listed": [
+   "developer: 30 residences, 2 and 3 bedroom plus penthouses, from GBP 2.5M",
+   "factsheet: completion Q3/Q4 2027, 999-year lease from 1 Jan 2027, service charge est. GBP 13.50 psf, managing agent, 10-year build warranty",
+   "factsheet: reservation GBP 10,000, 20% on exchange, 5% after 6 months, 75% on completion; solicitor panel",
+   "Lambeth planning 24/02358/VOC (granted 12 Dec 2024) and 25/03650/NMC (granted 15 Dec 2025)"
+  ],
+  "note": "Conversion of a 1983 office tower opposite Parliament into 30 flats with three added storeys, from GBP 2.5M on 999-year leases. Lambeth granted the varied consent 24/02358/VOC in Dec 2024 and main works started in July 2026 after Building Safety Regulator Gateway 2 sign-off; the developer factsheet still says Q3/Q4 2027 completion, while the Standard reported a 2026 target in 2024 and trackers now say 2028. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 2500000,
+   "currency": "GBP",
+   "title": "leasehold",
+   "lease_base": 999,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": true,
+   "permit_number": "Lambeth planning 24/02358/VOC",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 30,
+   "payment_plan": "GBP 10,000 reservation; 20% on exchange; 5% six months after exchange; 75% on completion",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "Developer does not publish a planning reference. Lambeth register (via PlanIndex) shows 24/02358/VOC granted 12 Dec 2024 (variation of 14/02756/FUL; 34 residential units on upper levels) and 25/03650/NMC granted 15 Dec 2025; conditions application 26/02456/DET awaiting decision.",
+   "escrow": "Factsheet gives payment stages and a solicitor panel but says nothing about how deposits are protected.",
+   "progress": "No progress updates on developer pages. Construction Enquirer (22 Jul 2026) reports Downwell started main works after BSR Gateway Two approval.",
+   "plans": "Factsheet lists apartment types by floor (2BR floors 2-3, 3BR floors 4-14, panoramic floor 15, duplex penthouse 16-17) but no floor plans.",
+   "record": "Factsheet says London Square was founded in 2010 and is owned by Aldar; no completed schemes named on the project materials.",
+   "returns": "No rental or yield language."
+  },
+  "claims": [
+   {
+    "claim": "Planning consent for residential conversion granted",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://planindex.co.uk/planning-applications/lambeth/25-03650-nmc"
+   },
+   {
+    "claim": "30 residences",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://planindex.co.uk/planning-applications/lambeth/25-03650-nmc"
+   },
+   {
+    "claim": "Main construction started July 2026 after BSR Gateway 2",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.constructionenquirer.com/2026/07/22/downwell-gets-going-on-westminster-tower-job/"
+   },
+   {
+    "claim": "Completion Q3/Q4 2027",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.oftmw.com/projects/westminster-tower/"
+   },
+   {
+    "claim": "Original completion target 2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.standard.co.uk/business/westminster-tower-parliament-apartments-abu-dhabi-office-conversion-property-b1196826.html"
+   },
+   {
+    "claim": "Developer bought the tower for GBP 40.8M from CLS in 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.standard.co.uk/business/eighties-riverside-tower-to-be-converted-to-luxury-flats-after-ps40-million-sale-b1151522.html"
+   },
+   {
+    "claim": "London Square is owned by Aldar",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.theconstructionindex.co.uk/news/view/westminster-tower-revamp-approved"
+   },
+   {
+    "claim": "Prices from GBP 2.5M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://londonsquare.co.uk/developments/westminster-tower"
+   },
+   {
+    "claim": "999-year lease",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://londonsquare.co.uk/images/uploads/docs/15621_Westminster_Tower_Factsheet_2pp_v2_DIGITAL_AW.pdf"
+   },
+   {
+    "claim": "10-year build warranty",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://londonsquare.co.uk/images/uploads/docs/15621_Westminster_Tower_Factsheet_2pp_v2_DIGITAL_AW.pdf"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2010,
+   "developer_hq": "London, United Kingdom",
+   "developer_company": "London Square (owned by Aldar Properties PJSC)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Parent Aldar Properties listed on ADX",
+   "construction_start": "2026-07",
+   "handover_promised": "2027-Q4",
+   "original_handover": "2026",
+   "delay_months": 12,
+   "unit_types": [
+    "2BR",
+    "3BR",
+    "4BR duplex penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": 400,
+   "price_min": 2500000,
+   "price_max": null,
+   "currency": "GBP",
+   "deposit_pct": 20,
+   "payment_plan": "10,000 reservation; 20% exchange; 5% at 6 months; 75% completion",
+   "foreign_ownership": "999-year leasehold, open to overseas buyers (2% SDLT surcharge)",
+   "rental_programme": null,
+   "service_charge": "Estimated GBP 13.50 psf per year",
+   "brand": null,
+   "amenities": [
+    "24-hour concierge",
+    "fitness suite",
+    "screening room",
+    "residents' lounge",
+    "reading room",
+    "private meeting rooms",
+    "gated parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "London Borough of Lambeth (planning); Building Safety Regulator (higher-risk building approval)",
+   "brochure_url": "https://londonsquare.co.uk/images/uploads/docs/15621_Westminster_Tower_Factsheet_2pp_v2_DIGITAL_AW.pdf"
+  },
+  "positives": [
+   "Planning history public on the Lambeth register",
+   "Building Safety Regulator Gateway 2 approval reported before main works",
+   "Clear payment schedule and service charge estimate published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://londonsquare.co.uk/developments/westminster-tower",
+   "https://londonsquare.co.uk/images/uploads/docs/15621_Westminster_Tower_Factsheet_2pp_v2_DIGITAL_AW.pdf",
+   "https://planindex.co.uk/planning-applications/lambeth/25-03650-nmc",
+   "https://www.constructionenquirer.com/2026/07/22/downwell-gets-going-on-westminster-tower-job/",
+   "https://downwell.group/news/london-square-appoints-downwell-group-for-landmark-westminster-tower-redevelopment/",
+   "https://www.standard.co.uk/business/westminster-tower-parliament-apartments-abu-dhabi-office-conversion-property-b1196826.html",
+   "https://www.standard.co.uk/business/eighties-riverside-tower-to-be-converted-to-luxury-flats-after-ps40-million-sale-b1151522.html",
+   "https://www.theconstructionindex.co.uk/news/view/westminster-tower-revamp-approved",
+   "https://www.oftmw.com/projects/westminster-tower/"
+  ],
+  "verified_score": 2,
+  "status": "active",
+  "added": "2026-11-01",
+  "permit_number": "Lambeth planning 24/02358/VOC"
+ },
+ {
+  "slug": "kingfisher-red-bank-riverside-fec",
+  "name": "Kingfisher, Red Bank Riverside",
+  "developer": "Far East Consortium International (FEC); planning applicant Northern Gateway (FEC) No.11 Limited",
+  "area": "Red Bank, Victoria North, Manchester",
+  "country": "United Kingdom",
+  "market": "Manchester",
+  "stage": "off-plan",
+  "url": "https://www.crowncontinental.com/property/kingfisher-red-bank-riverside",
+  "docs_url": "https://www.redbankriverside.co.uk/",
+  "docs_listed": [
+   "developer: Kingfisher now launched, 1 to 3 bedroom homes, Victoria North regeneration",
+   "agent: 30 storeys, 322 homes, 1BR from GBP 250,000 (43.8 sq m), 2BR from GBP 375,000 (70.7 sq m)",
+   "FEC: HG Construction appointed Oct 2026 for NT02 and NT03 (Falcon, Kingfisher, Midrise), NT03 start early 2027",
+   "Manchester planning 136814/FO/2023 (1,551 homes, plots NT02 to NT04)"
+  ],
+  "note": "30-storey, 322-home tower in FEC's Red Bank Riverside, sold to Hong Kong and Singapore buyers since 2024 with completion once set for 2028. FEC now says NT03 (Falcon, Kingfisher, Midrise) will start in early 2027 under HG Construction, and the Telegraph reports buyers were told Kingfisher will not complete until 31 Dec 2030, with long-stop dates pushed two years further. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 250000,
+   "currency": "GBP",
+   "title": "leasehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 6.5,
+   "completion": "2030-Q4",
+   "permit_claim": true,
+   "permit_number": "Manchester planning 136814/FO/2023",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "FEC names completed Manchester schemes Meadow Side and New Cross Central; Victoria Riverside (634 homes) completed 2026 per FEC news",
+   "units": 322,
+   "payment_plan": null,
+   "price_per_m2": 5708
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "No planning reference on the project site. Manchester committee report shows 136814/FO/2023 (applicant Northern Gateway (FEC) No.11 Limited) approved 31 Aug 2023 for 1,551 homes on NT02 to NT04; FEC confirms Kingfisher is in NT03.",
+   "escrow": "Nothing published on deposit protection; Telegraph reports long-stop dates (when buyers may reclaim deposits) moved to two years after 2030.",
+   "progress": "No updates on the project site. FEC (21 Oct 2026) says NT03 construction expected to start early 2027 pending BSR Gateway 2; HG Construction says Gateway 2 has been secured.",
+   "plans": "Agent offers floor plans on request; none published.",
+   "record": "FEC (HKEX listed since 1972) completed Victoria Riverside in 2026 and earlier Manchester schemes Meadow Side and New Cross Central.",
+   "returns": "Developer site has no yield claim; agent CSI Prop advertises '+6.5% rental yields' (not guaranteed)."
+  },
+  "claims": [
+   {
+    "claim": "Planning permission granted for the NT02 to NT04 scheme",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://democracy.manchester.gov.uk/documents/s41742/136814%20Dantzic%20Street%20back%20up.pdf"
+   },
+   {
+    "claim": "Completion Q2 2028",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.telegraph.co.uk/business/2026/06/20/burnhams-4bn-manchester-new-town-delayed-by-two-years/"
+   },
+   {
+    "claim": "Construction under way",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.constructionenquirer.com/2026/10/21/hg-lands-225m-quartet-of-manchester-towers/"
+   },
+   {
+    "claim": "BSR Gateway 2 approval secured",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://fecil.uk/latest-news/fec-appoints-hg-construction-to-lead-latest-red-bank-development-in-225-million-contracts/"
+   },
+   {
+    "claim": "Contractor appointed (HG Construction, GBP 225M)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.constructionenquirer.com/2026/10/21/hg-lands-225m-quartet-of-manchester-towers/"
+   },
+   {
+    "claim": "322 homes over 30 storeys",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.telegraph.co.uk/business/2026/06/20/burnhams-4bn-manchester-new-town-delayed-by-two-years/"
+   },
+   {
+    "claim": "Developer is HKEX-listed FEC with delivered Manchester schemes",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.telegraph.co.uk/business/2026/06/20/burnhams-4bn-manchester-new-town-delayed-by-two-years/"
+   },
+   {
+    "claim": "HK$755M of Kingfisher flats pre-sold (FEC annual report)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.telegraph.co.uk/business/2026/06/20/burnhams-4bn-manchester-new-town-delayed-by-two-years/"
+   },
+   {
+    "claim": "1BR from GBP 250,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.crowncontinental.com/property/kingfisher-red-bank-riverside"
+   },
+   {
+    "claim": "6.5% rental yields",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://csiprop.com/kingfisher-manchester-uk/"
+   },
+   {
+    "claim": "Deposits protected",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.redbankriverside.co.uk/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 1972,
+   "developer_hq": "Hong Kong (UK office London, Manchester office since 2016)",
+   "developer_company": "Northern Gateway (FEC) No.11 Limited (planning applicant)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": "Hong Kong Stock Exchange (Far East Consortium International, 0035)",
+   "construction_start": null,
+   "handover_promised": "2030-Q4",
+   "original_handover": "2028-Q2",
+   "delay_months": 30,
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 43.8,
+   "size_max_m2": 96.8,
+   "price_min": 250000,
+   "price_max": null,
+   "currency": "GBP",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Leasehold, open to overseas buyers",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "six-storey clubhouse",
+    "gym",
+    "co-working",
+    "dining rooms",
+    "podium gardens",
+    "City River Park nearby"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Manchester City Council (planning); Building Safety Regulator (Gateway 2)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Detailed planning consent on public record",
+   "Large HKEX-listed developer in a council joint venture",
+   "Contractor appointed in Oct 2026"
+  ],
+  "flags": [
+   {
+    "text": "The Telegraph reported (20 Jun 2026) that buyers were told Kingfisher will not complete until 31 Dec 2030, versus 2028 announced in 2025, with long-stop dates extended two years beyond that; a source linked the delays to contractor payment issues.",
+    "source": "https://www.telegraph.co.uk/business/2026/06/20/burnhams-4bn-manchester-new-town-delayed-by-two-years/"
+   },
+   {
+    "text": "Dimsum Daily reported a March 2026 construction update in which Red Bank Riverside dates slipped, citing Building Safety Act Gateway approvals and design changes.",
+    "source": "https://www.dimsumdaily.hk/hong-kong-investors-jolted-as-twin-manchester-property-schemes-face-fresh-delays/"
+   }
+  ],
+  "sources": [
+   "https://www.redbankriverside.co.uk/",
+   "https://www.crowncontinental.com/property/kingfisher-red-bank-riverside",
+   "https://csiprop.com/kingfisher-manchester-uk/",
+   "https://democracy.manchester.gov.uk/documents/s41742/136814%20Dantzic%20Street%20back%20up.pdf",
+   "https://fecil.uk/latest-news/fec-appoints-hg-construction-to-lead-latest-red-bank-development-in-225-million-contracts/",
+   "https://www.hgconstruction.co.uk/hg-to-deliver-895-homes-across-four-buildings-nt02-nt03-at-red-bank-riverside-manchester/",
+   "https://www.constructionenquirer.com/2026/10/21/hg-lands-225m-quartet-of-manchester-towers/",
+   "https://www.telegraph.co.uk/business/2026/06/20/burnhams-4bn-manchester-new-town-delayed-by-two-years/",
+   "https://www.dimsumdaily.hk/hong-kong-investors-jolted-as-twin-manchester-property-schemes-face-fresh-delays/",
+   "https://fecil.uk/media/"
+  ],
+  "verified_score": 3,
+  "status": "active",
+  "added": "2026-11-01",
+  "permit_number": "Manchester planning 136814/FO/2023"
+ },
+ {
+  "slug": "the-landmark-mermaid-beach-aniko",
+  "name": "The Landmark, Mermaid Beach",
+  "developer": "Aniko Group (builder Aniko Constructions)",
+  "area": "Mermaid Waters / Mermaid Beach, Gold Coast",
+  "country": "Australia",
+  "market": "Gold Coast",
+  "stage": "under construction",
+  "url": "https://www.apartments.com.au/news/qld/aniko-group-breaks-ground-on-2-5-billion-the-landmark-in-mermaid-beach",
+  "docs_url": "https://thelandmarkmermaidbeach.com.au/",
+  "docs_listed": [
+   "developer: four towers on a shared podium, 2BR plus study and 3BR residences, register for info",
+   "developer portfolio: completed and sold-out projects Athena Quays, Athena Residences, 35 Grant Avenue, No.1 Grant Avenue",
+   "news: council approval Dec 2023 for 821 residences (modified to 891), stage 1 of 240 apartments under construction since June 2025",
+   "agent: from AUD 1,495,000, completion late 2028"
+  ],
+  "note": "Four-tower, roughly 890-apartment mixed-use precinct by Gold Coast builder-developer Aniko on a 1.13 ha site at 14 Seaview Avenue next to Pacific Fair, approved by City of Gold Coast in Dec 2023. Stage 1 (240 apartments) began construction in June 2025 with Aniko's own construction arm and was then due in 2027; agents now quote late 2028, and Aniko says the second tower has passed AUD 100M in sales. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 1495000,
+   "currency": "AUD",
+   "title": "freehold strata title",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": true,
+   "permit_number": "City of Gold Coast OPW/2025/665 (operational works, 14 Seaview Ave)",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Aniko lists completed projects Athena Quays, Athena Residences, 35 Grant Avenue and No.1 Grant Avenue (Hope Island); Ocean Road Magazine reports completion of its AUD 500M Hope Island redevelopment and Orama (Chevron Island) nearing completion mid-2026",
+   "units": 891,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "evidence": {
+   "permit": "No approval number on the developer site. PlanningAlerts (from the City of Gold Coast register) shows OPW/2025/665 operational works at 14 Seaview Avenue lodged 4 Jun 2025; news reports council MCU approval in Dec 2023 and a later change application; an agent cites MCU/2007/2700386, which the council description shows is an old shop and office approval, so it is not relied on.",
+   "escrow": "Nothing published; Queensland law requires off-plan deposits to be held in trust, but the developer does not state the trust account.",
+   "progress": "No developer updates. apartments.com.au (Jun 2025) reported construction of stage 1 under way; Ocean Road Magazine (Jul 2026) says both Landmark towers are under construction.",
+   "plans": "Site describes 2BR plus study and 3BR layouts; no plans published.",
+   "record": "Aniko portfolio lists sold-out completed projects; independent magazine coverage confirms Hope Island redevelopment completed.",
+   "returns": "No rental return claims."
+  },
+  "claims": [
+   {
+    "claim": "Operational works application lodged for 14 Seaview Avenue (OPW/2025/665)",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://www.planningalerts.org.au/applications/3303544"
+   },
+   {
+    "claim": "Council approved the four-tower precinct in Dec 2023",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.theurbandeveloper.com/articles/aniko-mermaid-beach-gold-coast-mixed-use-approval"
+   },
+   {
+    "claim": "Council approval number MCU/2007/2700386",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://offplanproperties.com.au/projects/the-landmark-mermaid-beach-mermaid-beach/"
+   },
+   {
+    "claim": "Stage 1 construction started June 2025",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.apartments.com.au/news/qld/aniko-group-breaks-ground-on-2-5-billion-the-landmark-in-mermaid-beach"
+   },
+   {
+    "claim": "Stage 1 completes in 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://offplanproperties.com.au/projects/the-landmark-mermaid-beach-mermaid-beach/"
+   },
+   {
+    "claim": "First tower sold out, AUD 100M sales in second tower",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.oceanroadmagazine.com.au/aniko-group-showcases-final-opportunities-at-chevron-islands-premier-residential-address/"
+   },
+   {
+    "claim": "Developer completed earlier Gold Coast projects",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.oceanroadmagazine.com.au/aniko-group-showcases-final-opportunities-at-chevron-islands-premier-residential-address/"
+   },
+   {
+    "claim": "Total of 891 apartments after modification",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.theurbandeveloper.com/articles/aniko-mermaid-tower-upsize-plans-gold-coast-queensland"
+   },
+   {
+    "claim": "Prices from AUD 1,495,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://offplanproperties.com.au/projects/the-landmark-mermaid-beach-mermaid-beach/"
+   },
+   {
+    "claim": "Deposits held in trust",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thelandmarkmermaidbeach.com.au/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Gold Coast, Australia",
+   "developer_company": null,
+   "developer_projects_delivered": 4,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-06",
+   "handover_promised": "2028",
+   "original_handover": "2027",
+   "delay_months": null,
+   "unit_types": [
+    "2BR + study",
+    "3BR"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 1495000,
+   "price_max": null,
+   "currency": "AUD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold strata; foreign buyers need FIRB approval (new dwellings)",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Hotel brand for 53-storey tower not named",
+   "amenities": [
+    "lagoon pool",
+    "indoor lap pool",
+    "spa and sauna",
+    "gym",
+    "Pilates studio",
+    "golf simulator",
+    "pickleball court",
+    "cinema"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "City of Gold Coast (development approval and operational works)",
+   "brochure_url": null
+  },
+  "positives": [
+   "Builder-developer constructs in-house",
+   "Developer has a list of completed and sold-out local projects",
+   "Council approval and works applications visible on public records"
+  ],
+  "flags": [],
+  "sources": [
+   "https://thelandmarkmermaidbeach.com.au/",
+   "https://www.aniko.com.au/",
+   "https://www.apartments.com.au/news/qld/aniko-group-breaks-ground-on-2-5-billion-the-landmark-in-mermaid-beach",
+   "https://www.theurbandeveloper.com/articles/aniko-mermaid-beach-gold-coast-mixed-use-approval",
+   "https://www.theurbandeveloper.com/articles/aniko-mermaid-tower-upsize-plans-gold-coast-queensland",
+   "https://www.planningalerts.org.au/applications/3303544",
+   "https://offplanproperties.com.au/projects/the-landmark-mermaid-beach-mermaid-beach/",
+   "https://www.oceanroadmagazine.com.au/aniko-group-showcases-final-opportunities-at-chevron-islands-premier-residential-address/"
+  ],
+  "verified_score": 3,
+  "status": "active",
+  "added": "2026-11-01",
+  "permit_number": "City of Gold Coast OPW/2025/665 (operational works, 14 Seaview Ave)"
  }
 ]

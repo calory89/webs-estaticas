@@ -2140,5 +2140,742 @@
   },
   "permit_number": null,
   "verified_score": 0
+ },
+ {
+  "slug": "ocean-pearl-swakopmund-pha-property",
+  "name": "Ocean Pearl",
+  "developer": "PHA Property CC (PHA Property Group)",
+  "status": "active",
+  "stage": "off-plan",
+  "area": "Mile 4, Extension 1 (Erf 4910), Swakopmund",
+  "country": "Namibia",
+  "market": "Namibia",
+  "url": "https://phaproperty.com/developments/ocean-pearl-swakopmund/",
+  "docs_url": "https://phaproperty.com/wp-content/uploads/2026/07/Broschure-Phase-1-Unit-1-to-8.pdf",
+  "docs_listed": [
+   "developer: 16 three-bedroom townhouses of about 203 to 206 m2; phase 1 units 1 to 8 selling",
+   "developer: unit-by-unit phase 1 prices N$3,500,000 to N$3,620,000",
+   "developer: construction start November 2026, phase 1 completion November 2027",
+   "developer brochure (25 pages): Type A and B ground and first floor layouts per unit",
+   "developer: N$50,000 non-refundable deposit"
+  ],
+  "note": "A 16-unit townhouse scheme on Erf 4910 in Swakopmund's Mile 4 by local builder-developer PHA Property (established 2015), with phase 1 units priced from N$3.5M for about 205 m2. The developer says construction starts in November 2026 with phase 1 complete in November 2027, and its brochure carries unit layouts and per-unit prices. It markets the homes as 'Air B&B friendly' but publishes no approval number, deposit protection or completed projects; the N$50,000 deposit is non-refundable. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 3500000,
+   "currency": "NAD",
+   "title": "sectional title (freehold)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 16,
+   "payment_plan": "N$50,000 non-refundable deposit; balance terms not published",
+   "price_per_m2": 17073
+  },
+  "evidence": {
+   "permit": "No Swakopmund municipality building plan approval or sectional title scheme number published",
+   "escrow": "Deposit stated as non-refundable; no trust account or guarantee mentioned",
+   "progress": "Construction scheduled to start November 2026; nothing built yet",
+   "plans": "Brochure shows Type A and Type B layouts with per-unit yards",
+   "record": "Developer says it was established in 2015 but names no completed developments",
+   "returns": "'Excellent investment opportunity (Air B&B friendly)'; no figures or guarantee"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction starts November 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://phaproperty.com/developments/ocean-pearl-swakopmund/"
+   },
+   {
+    "claim": "Phase 1 completion November 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://phaproperty.com/developments/ocean-pearl-swakopmund/"
+   },
+   {
+    "claim": "16 townhouses of 203 to 206 m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://phaproperty.com/developments/ocean-pearl-swakopmund/"
+   },
+   {
+    "claim": "Phase 1 prices N$3.5M to N$3.62M",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://phaproperty.com/wp-content/uploads/2026/07/Broschure-Phase-1-Unit-1-to-8.pdf"
+   },
+   {
+    "claim": "Developer established in 2015 (PHA Property CC)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://phaproperty.com/"
+   },
+   {
+    "claim": "Site is Erf 4910, Mile 4 Extension 1",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://phaproperty.com/"
+   },
+   {
+    "claim": "Building plans approved by Swakopmund municipality",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://phaproperty.com/developments/ocean-pearl-swakopmund/"
+   },
+   {
+    "claim": "Deposit protected in trust",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://phaproperty.com/developments/ocean-pearl-swakopmund/"
+   },
+   {
+    "claim": "Suitable for short-term letting",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://phaproperty.com/developments/ocean-pearl-swakopmund/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2015,
+   "developer_hq": "Swakopmund, Namibia",
+   "developer_company": "PHA Property CC (owner Pieter Lensing)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2026-11",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "townhouse 3BR"
+   ],
+   "size_min_m2": 203,
+   "size_max_m2": 206,
+   "price_min": 3500000,
+   "price_max": 3620000,
+   "currency": "NAD",
+   "deposit_pct": null,
+   "payment_plan": "N$50,000 non-refundable deposit",
+   "foreign_ownership": "Sectional title; foreigners may buy urban residential property in Namibia",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "double garage",
+    "private yard per unit",
+    "main-bedroom balcony",
+    "scullery",
+    "study nook"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Municipality of Swakopmund; Surveyor-General / Deeds Office (sectional title)",
+   "brochure_url": "https://phaproperty.com/wp-content/uploads/2026/07/Broschure-Phase-1-Unit-1-to-8.pdf"
+  },
+  "positives": [
+   "Per-unit prices and layouts published",
+   "Clear construction start and completion dates stated",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://phaproperty.com/developments/ocean-pearl-swakopmund/",
+   "https://phaproperty.com/",
+   "https://phaproperty.com/wp-content/uploads/2026/07/Broschure-Phase-1-Unit-1-to-8.pdf"
+  ],
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "permit_number": null,
+  "verified_score": 0
+ },
+ {
+  "slug": "avida-kigali-delta-developers",
+  "name": "Avida",
+  "developer": "Delta Developers (Fortico Group; site operated by Delta One Ltd)",
+  "status": "active",
+  "stage": "under construction",
+  "area": "Kacyiru, beside Kigali Golf Course",
+  "country": "Rwanda",
+  "market": "Kigali",
+  "url": "https://avida-kigali.com/",
+  "docs_url": "https://avida-kigali.com/",
+  "docs_listed": [
+   "developer: 92 residences on 10 residential floors (15 floors above street), 7 typologies, studios to penthouses from USD 60,000",
+   "developer: payment plan 30% contract, 30% structure complete, 30% tiling complete, 10% handover",
+   "developer: progress tracker updated 26 Oct 2026 (site preparation and foundations complete, structure in progress)",
+   "developer: interactive unit availability with floor plans (marked illustrative)",
+   "developer: estimated handover December 2028, 'not guaranteed'",
+   "group site: delivered Kinyinya Villas, Meraki, Ohana; 'double-digit annual returns' claimed for completed projects"
+  ],
+  "note": "A 92-unit tower beside the Kigali Golf Course by Delta Developers, the development arm of Kigali-based Fortico Group, priced from USD 60,000 for a studio with handover estimated for December 2028. The developer's tracker (26 Oct 2026) shows foundations and basements complete and structure in progress, and the payment plan is tied to structure and tiling milestones. The group names delivered schemes (Meraki, Ohana) that are now rented through its own manager, but completion years differ between its two websites. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 60000,
+   "currency": "USD",
+   "title": "sectional title (Rwanda allows foreign ownership of apartments; land under long lease)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Developer and group sites name Kinyinya Villas, Meraki Residence (Kimihurura) and Ohana Residence (Nyarutarama) as delivered; Ohana and Meraki are listed for rent by group manager Urban Property Management",
+   "units": 92,
+   "payment_plan": "30% on contract, 30% on completion of structure, 30% on completion of tiling, 10% on handover",
+   "price_per_m2": null
+  },
+  "evidence": {
+   "permit": "No City of Kigali building permit or RDB registration number published",
+   "escrow": "No escrow or bank guarantee; payments go to the developer at construction milestones",
+   "progress": "Developer tracker 'last updated 26 October 2026': site preparation and foundations completed, structure in progress, monthly photo caption Oct 2026",
+   "plans": "Unit selector shows floor plans per unit, described as illustrative in the terms",
+   "record": "Developer names four earlier projects with years; British Chamber of Commerce in Rwanda spotlight (Oct 2026) lists Meraki, Ohana, Aluna and Avida; Ohana is let through the group's manager",
+   "returns": "No guarantee; group site claims buyers 'consistently achieve double-digit annual returns' on completed projects without published data"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "independent",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Foundations and basements completed, structure in progress (Oct 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avida-kigali.com/"
+   },
+   {
+    "claim": "Handover December 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avida-kigali.com/"
+   },
+   {
+    "claim": "92 residences, studios from USD 60,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://elimo.rw/developments.php"
+   },
+   {
+    "claim": "Developer delivered Meraki, Ohana and Aluna residences",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.linkedin.com/posts/british-chamber-of-commerce_bccr-memberspotlight-deltadevelopers-activity-7516066364667863041-kEyI"
+   },
+   {
+    "claim": "Aluna Residence delivered in 2026 ahead of schedule",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://vibe.rw/property/aluna-residence-redefining-high-end-urban-living-in-kigali/"
+   },
+   {
+    "claim": "Meraki delivered 2024 and Ohana 2025",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://fortico-group.com/"
+   },
+   {
+    "claim": "Buyers achieve double-digit annual returns",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://fortico-group.com/"
+   },
+   {
+    "claim": "89% of units sold off-plan",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://fortico-group.com/"
+   },
+   {
+    "claim": "Targeting EDGE green certification",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avida-kigali.com/"
+   },
+   {
+    "claim": "City of Kigali building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avida-kigali.com/"
+   },
+   {
+    "claim": "Buyer payments protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://avida-kigali.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Kigali, Rwanda",
+   "developer_company": "Delta One Ltd (site operator) for Delta Developers, Fortico Group",
+   "developer_projects_delivered": 3,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 60000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": 30,
+   "payment_plan": "30/30/30/10 milestone plan",
+   "foreign_ownership": "Foreigners can own apartments in Rwanda; land is held on long-term state lease",
+   "rental_programme": "On-site property management, optional furniture package, rental disbursement abroad; no figures",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "bistro and cafe",
+    "spa and nail salon",
+    "pool",
+    "gym",
+    "secured parking",
+    "golf course views",
+    "solar power"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "City of Kigali (building permit); Rwanda Development Board",
+   "brochure_url": null
+  },
+  "positives": [
+   "Dated progress tracker and milestone-linked payments",
+   "Developer's earlier schemes are completed and operating as rentals",
+   "Terms state openly that the 2028 date is an estimate"
+  ],
+  "flags": [],
+  "sources": [
+   "https://avida-kigali.com/",
+   "https://fortico-group.com/",
+   "https://www.linkedin.com/posts/british-chamber-of-commerce_bccr-memberspotlight-deltadevelopers-activity-7516066364667863041-kEyI",
+   "https://vibe.rw/property/aluna-residence-redefining-high-end-urban-living-in-kigali/",
+   "https://vibe.rw/property/ohana-residence-luxury-lakeside-living-in-the-heart-of-kigali/",
+   "https://elimo.rw/developments.php",
+   "https://urban-rwanda.com/for-rent"
+  ],
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 4,
+   "all_six": false
+  },
+  "permit_number": null,
+  "verified_score": 1
+ },
+ {
+  "slug": "regalia-residence-imaani-homes",
+  "name": "Regalia Residence",
+  "developer": "Imaani Homes",
+  "status": "active",
+  "stage": "off-plan",
+  "area": "Airport Residential Area, Accra",
+  "country": "Ghana",
+  "market": "Accra",
+  "url": "https://regalia.imaanihomes.com/",
+  "docs_url": "https://regalia.imaanihomes.com/residences",
+  "docs_listed": [
+   "developer: five unit types, studio 30 to 40 m2 from USD 107,000 incl. VAT; other prices on request",
+   "developer: 3BR 135 m2, penthouses 257 to 280 m2; floor plans and payment plans only on request",
+   "developer blog: twelve-storey building, groundbreaking scheduled June 2026",
+   "developer blog: earlier projects JAK Royale and The Ivy Townhomes sold out; Alexis Residence (Tesano) 96% complete",
+   "news (MyJoyOnline, Mar 2026): launch article citing Airport Residential short-let yields 'up to 22%'"
+  ],
+  "note": "A twelve-storey apartment building in Accra's Airport Residential Area by Imaani Homes, launched in early 2026 with studios from USD 107,000 including VAT and diaspora buyers as a main target. The developer said groundbreaking was scheduled for June 2026; no start of works has been confirmed. It cites two sold-out earlier projects and Alexis Residence at 96% complete, but publishes no permit, plans, escrow or payment terms, which are sent only on request. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 107000,
+   "currency": "USD",
+   "title": "leasehold (non-citizens limited to leases of up to 50 years under Ghana's Land Act 2020)",
+   "lease_base": 50,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Developer blog names JAK Royale and The Ivy Townhomes as delivered and sold out, and Alexis Residence (Tesano) as 96% complete in 2026",
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": 2675
+  },
+  "evidence": {
+   "permit": "No Accra Metropolitan Assembly building permit or EPA permit number published",
+   "escrow": "No escrow or deposit protection stated",
+   "progress": "Developer blog: groundbreaking scheduled June 2026; no site updates after that",
+   "plans": "Unit sizes listed; floor plans only sent after an enquiry form",
+   "record": "Developer names JAK Royale and The Ivy Townhomes as completed; no independent confirmation found",
+   "returns": "No guarantee; launch coverage cites area yields of 'up to 22%' short-term and 8 to 11% long-term"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "developer",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Regalia launched as an off-plan project in Airport Residential Area",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.myjoyonline.com/introducing-regalia-residence-accras-new-luxury-standard/"
+   },
+   {
+    "claim": "Groundbreaking scheduled for June 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://imaanihomes.com/blog/top-luxury-apartments-in-airport-residential-area-2026/"
+   },
+   {
+    "claim": "Studios from USD 107,000 including VAT",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://regalia.imaanihomes.com/residences"
+   },
+   {
+    "claim": "Twelve-storey building",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://imaanihomes.com/blog/top-luxury-apartments-in-airport-residential-area-2026/"
+   },
+   {
+    "claim": "JAK Royale and The Ivy Townhomes delivered on time and sold out",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://imaanihomes.com/blog/introducing-regalia-residence-accras-new-standard-for-luxury-living-at-airport-residential/"
+   },
+   {
+    "claim": "Alexis Residence 96% complete with handover July 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://imaanihomes.com/blog/top-luxury-apartments-in-airport-residential-area-2026/"
+   },
+   {
+    "claim": "Founders' firm Iridak Roofing Systems completed over 25,000 projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.myjoyonline.com/introducing-regalia-residence-accras-new-luxury-standard/"
+   },
+   {
+    "claim": "Airport Residential short-let yields up to 22%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.myjoyonline.com/introducing-regalia-residence-accras-new-luxury-standard/"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://regalia.imaanihomes.com/"
+   },
+   {
+    "claim": "Buyer payments protected by escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://regalia.imaanihomes.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Williams Height, Kwabena Duffour Rd, Airport Residential Area, Accra, Ghana",
+   "developer_company": "Imaani Homes",
+   "developer_projects_delivered": 2,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "studio",
+    "1BR",
+    "2BR",
+    "3BR",
+    "penthouse"
+   ],
+   "size_min_m2": 30,
+   "size_max_m2": 280,
+   "price_min": 107000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Leasehold; foreigners may hold leases of up to 50 years in Ghana",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "rooftop infinity pool",
+    "private courtyard",
+    "fitness centre",
+    "sauna and steam",
+    "sky lounge",
+    "co-working lounge",
+    "concierge",
+    "basement parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Accra Metropolitan Assembly / Ayawaso West Municipal Assembly (building permit); EPA Ghana",
+   "brochure_url": null
+  },
+  "positives": [
+   "Entry price published including VAT",
+   "Developer names earlier completed projects that can be visited",
+   "No guaranteed-return language from the developer"
+  ],
+  "flags": [],
+  "sources": [
+   "https://regalia.imaanihomes.com/",
+   "https://regalia.imaanihomes.com/residences",
+   "https://imaanihomes.com/blog/introducing-regalia-residence-accras-new-standard-for-luxury-living-at-airport-residential/",
+   "https://imaanihomes.com/blog/top-luxury-apartments-in-airport-residential-area-2026/",
+   "https://www.myjoyonline.com/introducing-regalia-residence-accras-new-luxury-standard/"
+  ],
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "permit_number": null,
+  "verified_score": 0
+ },
+ {
+  "slug": "botanik-garden-marrakech-aedge-partners",
+  "name": "Botanik Garden",
+  "developer": "AEDGE Partners",
+  "status": "active",
+  "stage": "off-plan",
+  "area": "Route d'Amizmiz, Marrakech",
+  "country": "Morocco",
+  "market": "Marrakech",
+  "url": "https://botanikgarden.ma/",
+  "docs_url": "https://botanikgarden.ma/",
+  "docs_listed": [
+   "developer: 52 villas in a gated estate, four models (Jennah, Noor, Ayla, Lyne), private pools, padel, rooftops",
+   "developer: Villa Jennah 530 m2 built on 721 to 1,158 m2 plots",
+   "news (L'Economiste, Le Matin, Mar 2026): launch, villas from MAD 4.6M, 375 to 530 m2 built, architect Kacem Benhayoun",
+   "portal (Agenz): from MAD 4,612,500, 25 villas available, delivery in three phases from summer 2027 to H1 2028"
+  ],
+  "note": "A gated estate of 52 four-bedroom villas on the Route d'Amizmiz by Casablanca real estate private equity firm AEDGE Partners (founded 2021), launched in March 2026 with villas from MAD 4.6M according to L'Economiste and Le Matin. A portal lists phased delivery from summer 2027 to the first half of 2028 and 25 villas still available; the developer site publishes no dates, plans, price list or VEFA guarantee. Morocco allows foreigners to buy freehold outside agricultural land. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 4612500,
+   "currency": "MAD",
+   "title": "freehold (titre foncier; open to foreign buyers outside agricultural land)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-H1",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 52,
+   "payment_plan": null,
+   "price_per_m2": 12300
+  },
+  "evidence": {
+   "permit": "No Marrakech commune building permit (autorisation de construire) number published",
+   "escrow": "No VEFA completion or refund guarantee (Law 44-00 / 107-12) mentioned on developer site",
+   "progress": "Portal says under construction with phased delivery; Le Matin (30 Mar 2026) says 'en cours de développement'; no developer progress updates",
+   "plans": "Developer site shows villa model sizes; no floor plans",
+   "record": "AEDGE Partners founded 2021; no completed residential projects named",
+   "returns": "No yield or guarantee advertised"
+  },
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "none",
+   "no_guaranteed_returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "52 villas launched by AEDGE Partners on the Route d'Amizmiz",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.leconomiste.com/flash-infos/immobilier-residentiel-aedge-partners-devoile-botanik-garden-a-marrakech/"
+   },
+   {
+    "claim": "Villas from MAD 4.6M",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://lematin.ma/regions/marrakech-un-nouveau-projet-residentiel-lance-sur-la-route-damezmiz/337452"
+   },
+   {
+    "claim": "Built areas 375 to 530 m2",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.leconomiste.com/flash-infos/immobilier-residentiel-aedge-partners-devoile-botanik-garden-a-marrakech/"
+   },
+   {
+    "claim": "Architect Kacem Benhayoun",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.leconomiste.com/flash-infos/immobilier-residentiel-aedge-partners-devoile-botanik-garden-a-marrakech/"
+   },
+   {
+    "claim": "Phased delivery summer 2027 to H1 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://agenz.ma/en/immobilier-neuf/immo-marrakech/route-d-amezmiz/botanik-garden"
+   },
+   {
+    "claim": "Under construction",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://agenz.ma/en/immobilier-neuf/immo-marrakech/route-d-amezmiz/botanik-garden"
+   },
+   {
+    "claim": "Plot sizes from 412 m2",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://agenz.ma/en/immobilier-neuf/immo-marrakech/route-d-amezmiz/botanik-garden"
+   },
+   {
+    "claim": "Developer founded 2021 in Casablanca",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://linkedin.com/company/aedge-partners"
+   },
+   {
+    "claim": "Building permit issued",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://botanikgarden.ma/"
+   },
+   {
+    "claim": "VEFA bank completion guarantee in place",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://botanikgarden.ma/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2021,
+   "developer_hq": "Casablanca, Morocco",
+   "developer_company": "AEDGE Partners",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028-H1",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "villa 4BR"
+   ],
+   "size_min_m2": 375,
+   "size_max_m2": 530,
+   "price_min": 4612500,
+   "price_max": null,
+   "currency": "MAD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold under titre foncier; foreigners barred only from agricultural land",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pools",
+    "padel court",
+    "children's play area",
+    "landscaped gardens",
+    "rooftops with Atlas views",
+    "24/7 gated security"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Commune of Marrakech / Agence Urbaine de Marrakech",
+   "brochure_url": null
+  },
+  "positives": [
+   "Launch, prices and villa sizes reported by two national newspapers",
+   "No guaranteed-return language"
+  ],
+  "flags": [],
+  "sources": [
+   "https://botanikgarden.ma/",
+   "https://www.leconomiste.com/flash-infos/immobilier-residentiel-aedge-partners-devoile-botanik-garden-a-marrakech/",
+   "https://lematin.ma/regions/marrakech-un-nouveau-projet-residentiel-lance-sur-la-route-damezmiz/337452",
+   "https://agenz.ma/en/immobilier-neuf/immo-marrakech/route-d-amezmiz/botanik-garden",
+   "https://linkedin.com/company/aedge-partners"
+  ],
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "permit_number": null,
+  "verified_score": 0
  }
 ]

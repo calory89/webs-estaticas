@@ -1689,5 +1689,753 @@
   "permit_number": null,
   "verified_score": 0,
   "status": "active"
+ },
+ {
+  "slug": "tomas-ribeiro-79-vanguard-properties",
+  "name": "Tomás Ribeiro 79",
+  "developer": "Vanguard Properties",
+  "area": "Rua Tomás Ribeiro 79, Avenidas Novas (Saldanha / Marquês de Pombal)",
+  "country": "Portugal",
+  "market": "Lisbon",
+  "stage": "under construction",
+  "url": "https://www.vangproperties.com/pt/lisboa-real-estate/tomas-ribeiro-79/",
+  "docs_url": "https://www.vangproperties.com/pt/lisboa-real-estate/tomas-ribeiro-79/",
+  "seed": {
+   "price": 1650000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2026-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Vanguard Properties lists completed projects including Castilho 203, Infinity (Lisbon), White Shell, Terras da Comporta and Foz do Tejo on its portfolio page",
+   "units": 21,
+   "payment_plan": null,
+   "price_per_m2": 15031
+  },
+  "docs_listed": [
+   "developer: unit-by-unit table with gross private area, balcony, terrace, parking, price or SOLD/RESERVED, and plan links",
+   "developer: 21 apartments T2 to T4 over 8 floors, architect Studio JV, interiors Quiet Studios",
+   "developer: sales start January 2025, completion 'TBA'",
+   "Público (Nov 2025): under construction, EUR 35m investment, completion expected end of 2026",
+   "Studio JV / (re)portugal (Jan 2025): contractor DST, 18-month build, average EUR 12,000/m2",
+   "flatin.pt: Lisbon municipal case files e-EDI/2024/615 to 625 and e-EDI/2026/601 (alterations, under licensing)"
+  ],
+  "note": "21 luxury flats in Avenidas Novas by Vanguard Properties, built by DST; Público reported in Nov 2025 that it was under construction with completion due at the end of 2026, while the developer now shows completion as 'TBA'. Prices from EUR 1.65m and plans are published per unit; no permit number, progress figure or deposit protection is published. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "No alvará number published; a portal mirrors Lisbon municipal case numbers (alteration requests under licensing) but no granted licence number",
+   "escrow": null,
+   "progress": "No % or dated progress on developer page; Público reports the project under construction (Nov 2025)",
+   "plans": "Plan links ('Ver') for every unit in the developer's availability table",
+   "record": "Developer portfolio marks several projects as completed (Castilho 203, Infinity, White Shell, Terras da Comporta, Foz do Tejo)",
+   "returns": "No yield or guarantee advertised"
+  },
+  "positives": [
+   "Unit-level prices, areas and availability published",
+   "Construction status and contractor reported by independent press",
+   "Developer with several completed Lisbon projects"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Under construction (Nov 2025)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://imobiliario.publico.pt/noticias/vanguard-properties-investe-35-milhoes-novo-projeto-reabilitacao-lisboa/"
+   },
+   {
+    "claim": "Completion end of 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://imobiliario.publico.pt/noticias/vanguard-properties-investe-35-milhoes-novo-projeto-reabilitacao-lisboa/"
+   },
+   {
+    "claim": "Completion 2027 (portal)",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://construcaonova.pt/empreendimentos/tomas-ribeiro-79-apartamentos-de-luxo-em-lisboa/"
+   },
+   {
+    "claim": "21 apartments, T2 to T4, 110 to 302 m2",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://imobiliario.publico.pt/noticias/vanguard-properties-investe-35-milhoes-novo-projeto-reabilitacao-lisboa/"
+   },
+   {
+    "claim": "Investment EUR 35m (EUR 30m at launch)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://imobiliario.publico.pt/noticias/vanguard-properties-investe-35-milhoes-novo-projeto-reabilitacao-lisboa/"
+   },
+   {
+    "claim": "Contractor DST, 18-month build",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://studio-jv.com/noticias/reportugal-destaca-lancamento-do-tomas-ribeiro-79-projeto-do-studio-jv-em-lisboa/"
+   },
+   {
+    "claim": "Lisbon municipal licensing case files exist for the site",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://flatin.pt/en/new-developments/developer/vanguard-properties/"
+   },
+   {
+    "claim": "Prices from EUR 1.65m",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.vangproperties.com/pt/lisboa-real-estate/tomas-ribeiro-79/"
+   },
+   {
+    "claim": "Neighbouring Rua Tomás Ribeiro 89 project being sold by Vanguard",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://jornaleconomico.sapo.pt/noticias/vanguard-properties-contrata-cbre-para-vender-tomas-ribeiro-a-mexto-property/"
+   },
+   {
+    "claim": "Developer has completed Castilho 203 and Infinity",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.vangproperties.com/pt/real-estate-portugal/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Lisbon, Portugal",
+   "developer_company": "Vanguard Properties (legal entity not published on page)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025",
+   "handover_promised": "2026-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "T2",
+    "T3",
+    "T4"
+   ],
+   "size_min_m2": 109.77,
+   "size_max_m2": 302.05,
+   "price_min": 1650000,
+   "price_max": 2625000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold, open to foreign buyers",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "indoor pool",
+    "sauna",
+    "24h concierge",
+    "private parking"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Câmara Municipal de Lisboa",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.vangproperties.com/pt/lisboa-real-estate/tomas-ribeiro-79/",
+   "https://www.vangproperties.com/pt/real-estate-portugal/",
+   "https://imobiliario.publico.pt/noticias/vanguard-properties-investe-35-milhoes-novo-projeto-reabilitacao-lisboa/",
+   "https://studio-jv.com/noticias/reportugal-destaca-lancamento-do-tomas-ribeiro-79-projeto-do-studio-jv-em-lisboa/",
+   "https://flatin.pt/en/new-developments/developer/vanguard-properties/",
+   "https://construcaonova.pt/empreendimentos/tomas-ribeiro-79-apartamentos-de-luxo-em-lisboa/",
+   "https://jornaleconomico.sapo.pt/noticias/vanguard-properties-contrata-cbre-para-vender-tomas-ribeiro-a-mexto-property/"
+  ],
+  "added": "2026-11-01",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "permit_number": null,
+  "verified_score": 1,
+  "status": "active"
+ },
+ {
+  "slug": "tasvan-lombok-selong-belanak-tasvan",
+  "name": "Tasvan Lombok (1-bedroom villas)",
+  "developer": "Tasvan (Bali-based developer and villa manager; legal entity not published)",
+  "area": "Selong Belanak, Central Lombok",
+  "country": "Indonesia",
+  "market": "Lombok",
+  "stage": "off-plan",
+  "url": "https://tasvan.com/1br-villa-lombok/",
+  "docs_url": "https://tasvan.com/1br-villa-lombok/",
+  "seed": {
+   "price": 1850000000,
+   "currency": "IDR",
+   "title": "leasehold",
+   "lease_base": 80,
+   "extension": "80 years structured as 30 + 30 + 20 with no extension cost within the term (developer)",
+   "guaranteed_language": false,
+   "yield_pct": 15,
+   "completion": "2028-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": "Developer says payments after the notarial agreement go to a 'notary escrow account' released by construction milestone; no notary or bank named",
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 28,
+   "payment_plan": "10% Aug 2026 (first contract), 10% Dec 2026 (notary), 20% Feb 2027, 20% Aug 2027, 20% 'Feb 2027' (as printed), 15% Jul 2028, 5% Nov 2028 at handover",
+   "price_per_m2": 37000000
+  },
+  "docs_listed": [
+   "developer: 28 one-bedroom villas, 50 m2 built on 70 m2 land, on a 10,000 m2 site 3 km from Selong Belanak beach",
+   "developer: masterplan, 3D visual, from IDR 1.85bn",
+   "developer: projected ROI 15% at 60% occupancy, break-even 7.5 years (labelled projected)",
+   "developer: notary escrow account for milestone payments, 20 to 24 month build",
+   "agent Bel-Air International: same layouts from EUR 89,900 (1BR), EUR 189,900 (2BR), EUR 329,900 (4BR), handover Nov 2028, separate PT PMA price scale"
+  ],
+  "note": "28 small one-bedroom pool villas near Selong Belanak sold on an 80-year lease by Bali villa operator Tasvan, with construction due to start in early 2027 and handover in November 2028. The developer says milestone payments go into a notary escrow account but names no notary, publishes no permit, and its own payment table lists February 2027 twice. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "No PBG or permit number published",
+   "escrow": "Developer page: payments 'secured through a notary escrow account based on each construction milestone'; no account holder named",
+   "progress": "Construction not started; payment schedule implies start around Feb 2027",
+   "plans": "Masterplan and villa layout (living, dining, kitchen, bedroom on 70 m2) published",
+   "record": "Tasvan site shows Bali projects on sale and villas it manages, but no named completed development of its own",
+   "returns": "Projected ROI 15% at 60% occupancy, presented as a projection, not a guarantee"
+  },
+  "positives": [
+   "Price, plot and built area published",
+   "Milestone payment schedule with only 20% before construction start",
+   "Payments said to be held in notary escrow"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "none",
+   "plans": "developer",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "28 one-bedroom villas on 10,000 m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tasvan.com/1br-villa-lombok/"
+   },
+   {
+    "claim": "Payments held in a notary escrow account",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tasvan.com/1br-villa-lombok/"
+   },
+   {
+    "claim": "80-year leasehold (30+30+20) with no extension cost",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tasvan.com/1br-villa-lombok/"
+   },
+   {
+    "claim": "Projected ROI 15% at 60% occupancy",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tasvan.com/1br-villa-lombok/"
+   },
+   {
+    "claim": "Handover November 2028",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.belair-international.com/en/projects/selong-belanak"
+   },
+   {
+    "claim": "Price from IDR 1.85bn (developer) vs EUR 89,900 (agent)",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.belair-international.com/en/projects/selong-belanak"
+   },
+   {
+    "claim": "Restaurant, reception and gym on site",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.belair-international.com/en/projects/selong-belanak"
+   },
+   {
+    "claim": "Buyers do not need a PT PMA company",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tasvan.com/1br-villa-lombok/"
+   },
+   {
+    "claim": "Building permit obtained",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://tasvan.com/1br-villa-lombok/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Bali, Indonesia",
+   "developer_company": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2027-02",
+   "handover_promised": "2028-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "1BR villa (Tasvan page)",
+    "2BR villa and 4BR villa (agent)"
+   ],
+   "size_min_m2": 50,
+   "size_max_m2": 179,
+   "price_min": 1850000000,
+   "price_max": null,
+   "currency": "IDR",
+   "deposit_pct": 10,
+   "payment_plan": "Seven milestones from 10% deposit to 5% at handover",
+   "foreign_ownership": "80-year leasehold; optional PT PMA purchase per agent; no freehold for foreigners",
+   "rental_programme": "Professional rental management offered; projected ROI 15%",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pools",
+    "dining area",
+    "reception",
+    "gym"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Central Lombok Regency (PBG via OSS)",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://tasvan.com/1br-villa-lombok/",
+   "https://tasvan.com/",
+   "https://www.belair-international.com/en/projects/selong-belanak"
+  ],
+  "added": "2026-11-01",
+  "disclosure": {
+   "permit": false,
+   "escrow": true,
+   "progress": false,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "permit_number": null,
+  "verified_score": 0,
+  "status": "active"
+ },
+ {
+  "slug": "the-residences-vale-do-lobo-kronos-homes",
+  "name": "The Residences Vale do Lobo",
+  "developer": "Kronos Homes (owner and operator of Vale do Lobo since 2023, Davidson Kempner-led consortium)",
+  "area": "Vale do Lobo, Almancil (Loulé), beside Royal Course 10th hole",
+  "country": "Portugal",
+  "market": "Algarve",
+  "stage": "under construction",
+  "url": "https://www.valedolobo.com/en/the-residences-vale-do-lobo/",
+  "docs_url": "https://www.valedolobo.com/en/the-residences-vale-do-lobo/",
+  "seed": {
+   "price": 850000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2027-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Kronos Homes has delivered Algarve schemes such as Monte Santo Resort, Flamingos Salgados and Marriott Residences Salgados (listed as ready to move in by SunnySteve); Kronos reported EUR 140m of Algarve unit sales in 2023 to 2024 (Portugal Resident)",
+   "units": 44,
+   "payment_plan": "30% on reservation/contract, 70% on completion (developer page); 20%/80% reported at 2025 launch",
+   "price_per_m2": null
+  },
+  "docs_listed": [
+   "developer: 44 units (25 apartments, 10 linked villas, 9 townhouses), architect Broadway Malyan, FAQ, payment plan 30/70",
+   "developer LinkedIn: construction updates Jan, Apr and Aug 2026 (structure stage), contractor ACA",
+   "The Portugal News (Oct 2026, advertiser content): waterproofing complete, masonry under way, 60% sold",
+   "The Portugal News / idealista (Jun 2025): construction began, 40% reserved, completion from Q4 2027",
+   "agent: apartments 125 to 237 m2 from EUR 1,474,000; townhouses from EUR 850,000; villas from EUR 3,360,000"
+  ],
+  "note": "First new homes at Vale do Lobo in two decades: 44 apartments, townhouses and linked villas by resort owner Kronos Homes, under construction since mid-2025 with completion expected from Q4 2027 and about 60% sold. The developer publishes dated construction updates and a 30/70 payment plan but no licence number, floor plans or deposit guarantee; the resort's former owners are on trial in Portugal's Operação Marquês case over CGD financing. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "No alvará number published",
+   "escrow": null,
+   "progress": "Dated construction updates on Vale do Lobo and Kronos LinkedIn (Jan, Apr, Aug 2026); press reports start of works June 2025 and structure/masonry stage Oct 2026; no % published",
+   "plans": "No floor plans on the developer page (sizes via agents only)",
+   "record": "Kronos Homes delivered several Algarve developments; sales figures reported by Portugal Resident",
+   "returns": "No guarantee or yield advertised"
+  },
+  "positives": [
+   "Resort owner is the developer; construction start reported by independent press",
+   "Dated construction updates",
+   "Majority of payment due only on completion"
+  ],
+  "flags": [
+   {
+    "text": "Former Vale do Lobo shareholders are being tried in Portugal's Operação Marquês case, accused of paying bribes to obtain more than EUR 200m of CGD loans to buy the resort; the current owner Kronos Homes acquired the resort in 2023 and is not a party.",
+    "source": "https://observador.pt/2025/09/17/operacao-marques-ex-diretor-executivo-de-vale-do-lobo-garante-que-cgd-queria-um-peso-maior-na-sociedade-do-resort/"
+   }
+  ],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "independent",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Construction began in 2025 (June/September)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.idealista.pt/en/news/luxury-real-estate-in-portugal/2025/06/30/70188-the-residences-at-vale-do-lobo-40-reserved-as-portugal-s-top-new-luxury"
+   },
+   {
+    "claim": "Structures emerging, waterproofing complete (Oct 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.theportugalnews.com/news/2026-10-23/discover-the-residences-vale-do-lobo/1104958"
+   },
+   {
+    "claim": "44 units: 25 apartments, 10 linked villas, 9 townhouses",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.idealista.pt/en/news/luxury-real-estate-in-portugal/2025/06/30/70188-the-residences-at-vale-do-lobo-40-reserved-as-portugal-s-top-new-luxury"
+   },
+   {
+    "claim": "Kronos Homes owns and operates Vale do Lobo since 2023",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.portugalresident.com/kronos-homes-appoints-alda-filipe-as-new-real-estate-group-partner/"
+   },
+   {
+    "claim": "Completion 2027 (from Q4 2027)",
+    "status": "unverified",
+    "by": "none",
+    "source": "http://crm.theportugalnews.com/news/2025-06-13/40-of-the-residences-vale-do-lobo-already-reserved-as-construction-begins/98500"
+   },
+   {
+    "claim": "Payment plan 30% deposit, 70% on completion",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "http://crm.theportugalnews.com/news/2025-06-13/40-of-the-residences-vale-do-lobo-already-reserved-as-construction-begins/98500"
+   },
+   {
+    "claim": "60% sold (Oct 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.theportugalnews.com/news/2026-10-23/discover-the-residences-vale-do-lobo/1104958"
+   },
+   {
+    "claim": "Built to BREEAM standards",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.essential-algarve.com/property/demand-for-resort-living-grows-as-more-than-half-of-the-residences-vale-do-lobo-already-reserved/"
+   },
+   {
+    "claim": "Part of a EUR 200m, 227-home programme in four phases",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.idealista.pt/en/news/luxury-real-estate-in-portugal/2025/06/30/70188-the-residences-at-vale-do-lobo-40-reserved-as-portugal-s-top-new-luxury"
+   },
+   {
+    "claim": "Townhouses from EUR 850,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://propertyacross.com/property/the-residences-at-vale-do-lobo-algarve/"
+   },
+   {
+    "claim": "Kronos Homes recorded EUR 140m Algarve sales in 2023 to 2024",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.portugalresident.com/kronos-homes-appoints-alda-filipe-as-new-real-estate-group-partner/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Madrid, Spain (Kronos Real Estate Group)",
+   "developer_company": "Kronos Homes (Vale do Lobo resort company; legal entity not published on page)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-06",
+   "handover_promised": "2027-Q4",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2-4BR apartments",
+    "2-4BR townhouses",
+    "4BR linked villas"
+   ],
+   "size_min_m2": 125,
+   "size_max_m2": 298,
+   "price_min": 850000,
+   "price_max": 3360000,
+   "currency": "EUR",
+   "deposit_pct": 30,
+   "payment_plan": "30% on reservation/contract, 70% on completion",
+   "foreign_ownership": "Freehold, open to foreign buyers",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": "Vale do Lobo",
+   "amenities": [
+    "communal and private pools",
+    "resort membership",
+    "golf",
+    "spa and gym",
+    "tennis and padel",
+    "24-hour security",
+    "two parking spaces per unit"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Câmara Municipal de Loulé",
+   "brochure_url": null
+  },
+  "sources": [
+   "https://www.valedolobo.com/en/the-residences-vale-do-lobo/",
+   "https://www.theportugalnews.com/news/2026-10-23/discover-the-residences-vale-do-lobo/1104958",
+   "http://crm.theportugalnews.com/news/2025-06-13/40-of-the-residences-vale-do-lobo-already-reserved-as-construction-begins/98500",
+   "https://www.idealista.pt/en/news/luxury-real-estate-in-portugal/2025/06/30/70188-the-residences-at-vale-do-lobo-40-reserved-as-portugal-s-top-new-luxury",
+   "https://www.essential-algarve.com/property/demand-for-resort-living-grows-as-more-than-half-of-the-residences-vale-do-lobo-already-reserved/",
+   "https://www.linkedin.com/posts/vale-do-lobo_the-residences-progress-april-2026-activity-7445038402510458880-J-zi",
+   "https://www.linkedin.com/posts/alda-filipe-7027a01_the-residences-progress-january-2026-activity-7421635318036074496-URMI",
+   "https://propertyacross.com/property/the-residences-at-vale-do-lobo-algarve/",
+   "https://www.portugalresident.com/kronos-homes-appoints-alda-filipe-as-new-real-estate-group-partner/",
+   "https://observador.pt/2025/09/17/operacao-marques-ex-diretor-executivo-de-vale-do-lobo-garante-que-cgd-queria-um-peso-maior-na-sociedade-do-resort/",
+   "https://sunnysteve.com/new-developments/"
+  ],
+  "added": "2026-11-01",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "permit_number": null,
+  "verified_score": 2,
+  "status": "active"
+ },
+ {
+  "slug": "serestar-javea-talvion",
+  "name": "Serestar Jávea",
+  "developer": "Talvion (promoter and manager) with Serestar Homes (marketing and cooperative manager)",
+  "area": "Calle Arquitecto Urteaga, Jávea / Xàbia (historic centre)",
+  "country": "Spain",
+  "market": "Costa Blanca",
+  "stage": "off-plan",
+  "url": "https://serestarhomes.com/project/serestar-javea/",
+  "docs_url": "https://serestarhomes.com/project/serestar-javea/",
+  "seed": {
+   "price": 248000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Talvion told investors it has completed two earlier projects in Jávea (2020 and 2022) and manages 33 projects; Serestar's purchase guide claims more than 450 homes delivered; no completed project is named on the project page",
+   "units": 85,
+   "payment_plan": null,
+   "price_per_m2": 3100
+  },
+  "docs_listed": [
+   "developer site: 85 homes of 2 and 3 bedrooms, 65 to 90 m2 built, 5 floors, plans tab, 360 tour, specification, commercial dossier (Oct 2026), purchase guide",
+   "developer site: 'Urban Resort' amenities (pool, gym, wellness with sauna, gourmet room, solar PV, aerothermal)",
+   "Alicante Plaza / Javea.com (Mar 2026): urban conformity certificate obtained, licence expected the following month, 26-month build, 20% sold, prices EUR 248,000 to 352,000, 80 to 112 m2",
+   "SodaCrowd: licence 'in process', EUR 24.7m total investment, EUR 2m crowdfunded equity, projected investor IRR 17.3%",
+   "Observatorio Inmobiliario (Apr 2026): buyer-investor scheme from EUR 230,000 with estimated 15% to 20% return reducing final price"
+  ],
+  "note": "85-home block in Jávea's old town promoted by Valencia-based Talvion, part-funded through the CNMV-licensed crowdfunding platform SodaCrowd; in March 2026 the licence was still in process with works planned from May 2026 and a 26-month build. Plans and specifications are published, but no licence number, deposit guarantee or progress update, and unit sizes and entry prices differ between sources. (checked 1 Nov 2026)",
+  "evidence": {
+   "permit": "News and the crowdfunding page say the licence was in process (urban conformity certificate obtained) as of Feb to Mar 2026; no licence number published since",
+   "escrow": null,
+   "progress": "No construction update published; works were planned to start May 2026",
+   "plans": "Plans tab and specification PDF on the project page",
+   "record": "Developer claims (Talvion two prior Jávea projects, Serestar 450+ homes delivered) without named completed projects",
+   "returns": "No rental guarantee; a separate buyer-investor vehicle quotes an estimated 15% to 20% return, presented as an estimate"
+  },
+  "positives": [
+   "Financing structure disclosed in independent press (equity, crowdfunding, LTC 52%)",
+   "Plans, specification and dossier downloadable",
+   "Central location with listed amenities"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building licence in process, urban conformity certificate obtained (Mar 2026)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://alicanteplaza.es/alicanteplaza/plaza-inmobiliaria-alicante/sodacrowd-impulsa-una-promocion-de-85-viviendas-en-javea-con-una-rentabilidad-estimada-del-173-anual"
+   },
+   {
+    "claim": "Licence granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://serestarhomes.com/project/serestar-javea/"
+   },
+   {
+    "claim": "85 homes of 2 and 3 bedrooms",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.javea.com/promocion-85-viviendas-oportunidad-inversion-inmobiliaria/"
+   },
+   {
+    "claim": "Homes of 65 to 90 m2 built",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.javea.com/promocion-85-viviendas-oportunidad-inversion-inmobiliaria/"
+   },
+   {
+    "claim": "Prices EUR 248,000 to 352,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.javea.com/promocion-85-viviendas-oportunidad-inversion-inmobiliaria/"
+   },
+   {
+    "claim": "20% of homes sold (Mar 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.javea.com/promocion-85-viviendas-oportunidad-inversion-inmobiliaria/"
+   },
+   {
+    "claim": "Total investment EUR 24.7m with EUR 5m equity, EUR 2m via SodaCrowd",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://alicanteplaza.es/alicanteplaza/plaza-inmobiliaria-alicante/sodacrowd-impulsa-una-promocion-de-85-viviendas-en-javea-con-una-rentabilidad-estimada-del-173-anual"
+   },
+   {
+    "claim": "26-month execution period",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sodacrowd.com/proyectos/javea"
+   },
+   {
+    "claim": "Talvion manages 33 projects",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.talvion.com/proyectos/"
+   },
+   {
+    "claim": "Serestar has delivered 450+ homes",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://serestarhomes.com/wp-content/uploads/2025/09/20250704-Guia-de-Compra-Serestar-Residenciales.pdf"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Valencia, Spain",
+   "developer_company": "Talvion (legal entity not published on project page)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": "2028",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 65,
+   "size_max_m2": 112,
+   "price_min": 248000,
+   "price_max": 352000,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold, open to foreign buyers",
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "communal pool",
+    "gym",
+    "wellness area with sauna and hydromassage",
+    "gourmet room",
+    "private terraces",
+    "garage and storage",
+    "solar PV",
+    "aerothermal climate"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ajuntament de Xàbia (licencia de obras)",
+   "brochure_url": "https://serestarhomes.com/wp-content/uploads/2026/10/20261029_SerestarJavea_V5.pdf"
+  },
+  "sources": [
+   "https://serestarhomes.com/project/serestar-javea/",
+   "https://serestarhomes.com/wp-content/uploads/2026/10/20261029_SerestarJavea_V5.pdf",
+   "https://serestarhomes.com/wp-content/uploads/2025/09/20250704-Guia-de-Compra-Serestar-Residenciales.pdf",
+   "https://www.javea.com/promocion-85-viviendas-oportunidad-inversion-inmobiliaria/",
+   "https://alicanteplaza.es/alicanteplaza/plaza-inmobiliaria-alicante/sodacrowd-impulsa-una-promocion-de-85-viviendas-en-javea-con-una-rentabilidad-estimada-del-173-anual",
+   "https://sodacrowd.com/proyectos/javea",
+   "https://observatorioinmobiliario.es/noticias/residencial/talvion-lanza-un-nuevo-desarrollo-residencial-en-javea-con-financiacion-innovadora-2/",
+   "https://www.talvion.com/proyectos/"
+  ],
+  "added": "2026-11-01",
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": true,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "permit_number": null,
+  "verified_score": 1,
+  "status": "active"
  }
 ]

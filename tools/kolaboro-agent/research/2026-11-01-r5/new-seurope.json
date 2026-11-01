@@ -2179,5 +2179,575 @@
   "verified_score": 1,
   "added": "2026-11-01",
   "status": "active"
+ },
+ {
+  "slug": "fix-residences-thessaloniki-dimand",
+  "name": "FIX Residences",
+  "developer": "DIMAND S.A. (Euronext Athens listed; co-investor ELVIAL)",
+  "area": "26th October Street, western gateway, Thessaloniki",
+  "country": "Greece",
+  "market": "Greece",
+  "stage": "off-plan",
+  "url": "https://sothebysrealty.gr/dev-project/fix-residences-thessaloniki/",
+  "docs_url": "https://fix.dimand.gr/residences/",
+  "docs_listed": [
+   "developer: 19,800 m2, 96 homes, 9 floors, 147 parking spaces, unit mix (5 penthouses 180-340 m2, 23 x 3BR, 21 x 2BR, 47 x 1BR)",
+   "developer: FIX masterplan page (Foster + Partners), Hilton-branded hotels, LEED Gold target",
+   "developer investor presentation (Apr 2026): FIX (Filma) work in progress 4.3%, GDV EUR 205.8M, completion 2027 for the wider scheme",
+   "exclusive agent (Greece Sotheby's): 95 homes 63-339 m2, guide prices EUR 420,000 to 4.22M, completion end 2029",
+   "press: building permits awaited, licensing expected H1 2027; METKA doing deep foundation works"
+  ],
+  "note": "95-96 Foster + Partners-designed homes in the FIX brewery regeneration in Thessaloniki by Athens-listed DIMAND, priced EUR 420,000 to 4.22M and marketed internationally by Greece Sotheby's with completion targeted for end 2029. Powergame reports that sales launched while the building permits are still awaited (expected H1 2027), with only foundation works under way. No permit number, deposit protection or residential progress figure is published. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 420000,
+   "currency": "EUR",
+   "title": "freehold",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q4",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "DIMAND investor presentation lists completed projects Piraeus Tower (2024, 100% WIP) and Patissia offices (2025), and DI Terna (2026)",
+   "units": 95,
+   "payment_plan": null,
+   "price_per_m2": 6670
+  },
+  "evidence": {
+   "permit": "No permit: Powergame (7 Oct 2026) says METKA is awaiting the issuance of building permits, licensing expected to complete in H1 2027",
+   "escrow": null,
+   "progress": "Press reports deep foundation works by METKA; investor presentation shows 4.3% WIP for the whole FIX site, not the residential building",
+   "plans": "Unit mix and size ranges published; floor plans not visible",
+   "record": "Listed company presentation names completed Piraeus Tower and Patissia office projects",
+   "returns": "No yield or guarantee; Golden Visa eligibility for some units mentioned"
+  },
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building permits issued",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.powergame.gr/en/real-estate/15429/dimands-luxury-homes-at-historic-fix-prices-revealed/"
+   },
+   {
+    "claim": "Foundation works have started",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.powergame.gr/en/real-estate/15429/dimands-luxury-homes-at-historic-fix-prices-revealed/"
+   },
+   {
+    "claim": "Completion end of 2029",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.euro2day.gr/en/article/2372358/dimand-greece-sothebys-international-realty-takes"
+   },
+   {
+    "claim": "Prices from EUR 420,000 to 4.22M",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.voria.gr/article/thessaloniki-fix-residences-kinitikotita-kai-propoliseis-me-timi-ekkinisis-apo-420000-eyro"
+   },
+   {
+    "claim": "2BR from EUR 815,000",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.voria.gr/article/thessaloniki-fix-residences-kinitikotita-kai-propoliseis-me-timi-ekkinisis-apo-420000-eyro"
+   },
+   {
+    "claim": "96 homes and 147 parking spaces",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.euro2day.gr/en/article/2372358/dimand-greece-sothebys-international-realty-takes"
+   },
+   {
+    "claim": "Deposits taken on 10 apartments by mid-2026",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.voria.gr/article/thessaloniki-fix-residences-kinitikotita-kai-propoliseis-me-timi-ekkinisis-apo-420000-eyro"
+   },
+   {
+    "claim": "Designed by Foster + Partners",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://www.fosterandpartners.com/news/foster-plus-partners-unveils-regenerative-masterplan-for-heritage-site-in-thessaloniki"
+   },
+   {
+    "claim": "Developer delivered Piraeus Tower",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://dimand.gr/wp/wp-content/uploads/2026/06/2-Corporate-Presentation-for-HEFAMA-17.04.2026-show-fin.pdf"
+   },
+   {
+    "claim": "Some units qualify for Golden Visa (EUR 800,000, 120 m2)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://sothebysrealty.gr/dev-project/fix-residences-thessaloniki/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Maroussi, Athens, Greece",
+   "developer_company": "DIMAND S.A.",
+   "listed_or_audited": "Listed on Euronext Athens; investor presentation based on Dec 2025 valuation reports",
+   "construction_start": "2026",
+   "handover_promised": "2029-Q4",
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR",
+    "penthouse",
+    "duplex penthouse"
+   ],
+   "size_min_m2": 63,
+   "size_max_m2": 339,
+   "price_min": 420000,
+   "price_max": 4220000,
+   "foreign_ownership": "Freehold; Golden Visa possible for qualifying units",
+   "brand": "Hilton hotels on the wider FIX site (not the residences)",
+   "amenities": [
+    "24-hour reception and security",
+    "concierge",
+    "residents' lounge",
+    "two underground parking levels",
+    "private storage",
+    "landscaped public square"
+   ],
+   "lat": 40.645,
+   "lng": 22.925,
+   "permit_authority": "Thessaloniki building authority (YDOM) / Ministry of Culture for listed buildings",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "original_handover": null,
+   "delay_months": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brochure_url": null
+  },
+  "positives": [
+   "Listed developer with public investor reporting",
+   "Prices and size ranges covered by independent press"
+  ],
+  "flags": [],
+  "sources": [
+   "https://fix.dimand.gr/residences/",
+   "https://fix.dimand.gr/",
+   "https://dimand.gr/en/projects/fix/",
+   "https://sothebysrealty.gr/dev-project/fix-residences-thessaloniki/",
+   "https://www.powergame.gr/en/real-estate/15429/dimands-luxury-homes-at-historic-fix-prices-revealed/",
+   "https://www.euro2day.gr/en/article/2372358/dimand-greece-sothebys-international-realty-takes",
+   "https://www.voria.gr/article/thessaloniki-fix-residences-kinitikotita-kai-propoliseis-me-timi-ekkinisis-apo-420000-eyro",
+   "https://dimand.gr/wp/wp-content/uploads/2026/06/2-Corporate-Presentation-for-HEFAMA-17.04.2026-show-fin.pdf",
+   "https://www.fosterandpartners.com/news/foster-plus-partners-unveils-regenerative-masterplan-for-heritage-site-in-thessaloniki"
+  ],
+  "permit_number": null,
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 2,
+  "added": "2026-11-01",
+  "status": "active"
+ },
+ {
+  "slug": "horizon-towers-larnaca-slk",
+  "name": "Horizon Towers (Phase 1, Towers 1-2)",
+  "developer": "SLK Development (Shajrawi Leibovich Karekla Developments Ltd)",
+  "area": "Livadia (former refinery area), Larnaca",
+  "country": "Cyprus",
+  "market": "Cyprus",
+  "stage": "off-plan",
+  "url": "https://horizon-towers.com/",
+  "docs_url": "https://www.horizon-larnaca.com/",
+  "docs_listed": [
+   "developer: 6 residential towers, about 530 units, 16-20 floors, shops, offices and restaurants, 400 m from the sea",
+   "developer: 1BR up to 70 m2, 2BR up to 123 m2, 3BR up to 142 m2, delivery Q3 2029, availability page for Phase One",
+   "developer: in-house rental management with an external tourism partner",
+   "developer Hebrew presale site for Israeli buyers: last 3-room flats from EUR 585,000 + VAT",
+   "partner Develeco (Sep 2026): Phase 1 permits secured and construction started"
+  ],
+  "note": "Six-tower, roughly 530-unit scheme 400 m from the sea in Livadia, Larnaca, by Israeli-Cypriot SLK Development, sold heavily to Israeli buyers with delivery promised for Q3 2029. Philenews (Oct 2026) reports the Larnaca district authority has issued a planning permit for the first two towers while the building permit is still being examined, and SLK says 57 of 99 Phase 1 flats are sold; a partner site claims permits are secured and works started. No permit number, escrow or progress figure is published. (checked 1 Nov 2026)",
+  "seed": {
+   "price": 585000,
+   "currency": "EUR",
+   "title": "freehold (title deeds; non-EU buyers need Council of Ministers permission)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2029-Q3",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": "Developer says its wider group has delivered more than 17,000 residential units, mainly in Israel; none named in Cyprus",
+   "units": 99,
+   "payment_plan": null,
+   "price_per_m2": null
+  },
+  "evidence": {
+   "permit": "Philenews via Tala News (22 Oct 2026): EOA Larnaca issued planning permit for two 84 m, 20-floor buildings and a 6-floor building; building permit application under examination. No number published",
+   "escrow": null,
+   "progress": "Partner Develeco says construction started (Sep 2026); contradicted by the pending building permit reported in Oct 2026",
+   "plans": "Maximum unit sizes only; agent BNO says downloadable floor plans are not verified",
+   "record": "Group claims 17,000 units delivered worldwide; Cyprus projects (Lumina Mare) still under construction",
+   "returns": "Rental management promises 'high occupancy' and 'maximized returns' with no figure or guarantee"
+  },
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "contradicted",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Planning permit issued for Phase 1 towers",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://talanews.blogspot.com/2026/10/tower-200-million-in-livadia-larnaca.html"
+   },
+   {
+    "claim": "Building permit issued for Phase 1",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://talanews.blogspot.com/2026/10/tower-200-million-in-livadia-larnaca.html"
+   },
+   {
+    "claim": "Construction of Phase 1 has started",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://develeco.com.cy/partnerships/horizon-towers"
+   },
+   {
+    "claim": "57 of 99 Phase 1 apartments sold",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://talanews.blogspot.com/2026/10/tower-200-million-in-livadia-larnaca.html"
+   },
+   {
+    "claim": "Project value about EUR 200 million, 528 homes",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://news.cyprus-property-buyers.com/2026/08/01/livadia-larnaca-property-boom-investment/id=00172865"
+   },
+   {
+    "claim": "Delivery Q3 2029",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.dextekgroup.com/projects/horizon-towers"
+   },
+   {
+    "claim": "Group delivered over 17,000 residential units",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://slk-larnaca.com/"
+   },
+   {
+    "claim": "400 m from the sea",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://talanews.blogspot.com/2026/10/tower-200-million-in-livadia-larnaca.html"
+   },
+   {
+    "claim": "3-room flats from EUR 585,000 + VAT",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://horizon-towers.com/"
+   },
+   {
+    "claim": "Second phase (towers 3-6) to start after 2030",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://talanews.blogspot.com/2026/10/tower-200-million-in-livadia-larnaca.html"
+   }
+  ],
+  "facts": {
+   "developer_hq": "Larnaca, Cyprus (group based in Israel)",
+   "developer_company": "Shajrawi Leibovich Karekla (SLK) Developments Ltd",
+   "developer_units_delivered": 17000,
+   "handover_promised": "2029-Q3",
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_max_m2": 142,
+   "price_min": 585000,
+   "foreign_ownership": "Freehold; non-EU buyers need Council of Ministers permission",
+   "rental_programme": "In-house management company with Issta (Kishrei Teufa) for short and long lets, no figures",
+   "amenities": [
+    "residents' pools",
+    "rooftop infinity pools",
+    "gym",
+    "spa",
+    "padel court",
+    "children's play areas",
+    "concierge",
+    "parking"
+   ],
+   "lat": 34.946,
+   "lng": 33.62,
+   "permit_authority": "Larnaca District Local Government Organisation (EOA Larnaca)",
+   "developer_founded": null,
+   "developer_projects_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "original_handover": null,
+   "delay_months": null,
+   "size_min_m2": null,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "service_charge": null,
+   "brand": null,
+   "brochure_url": null
+  },
+  "positives": [
+   "Planning permit for Phase 1 reported by the permitting authority's president",
+   "Delivery quarter and unit size caps published"
+  ],
+  "flags": [],
+  "sources": [
+   "https://www.horizon-larnaca.com/",
+   "https://horizon-towers.com/",
+   "https://slk-larnaca.com/",
+   "https://develeco.com.cy/partnerships/horizon-towers",
+   "https://horizon.bnodevelopments.com/",
+   "https://www.dextekgroup.com/projects/horizon-towers",
+   "https://talanews.blogspot.com/2026/10/tower-200-million-in-livadia-larnaca.html",
+   "https://news.cyprus-property-buyers.com/2026/08/01/livadia-larnaca-property-boom-investment/id=00172865"
+  ],
+  "permit_number": null,
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": true,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 1,
+  "added": "2026-11-01",
+  "status": "active"
+ },
+ {
+  "slug": "forest-seaview-varna-forest-club",
+  "name": "Forest SeaView",
+  "developer": "Forest Club Varna OOD (Forest Club brand)",
+  "area": "SO Alen Mak, k.k. Chaika, Varna (project office at Baba Alino 464)",
+  "country": "Bulgaria",
+  "market": "Bulgaria",
+  "stage": "off-plan",
+  "url": "https://forestclub.bg/en/projects/forest_seaview",
+  "docs_url": "https://forestclub.bg/en/projects/forest_seaview",
+  "docs_listed": [
+   "developer (English): three 5-storey buildings, 20,000 m2, apartments 58-124 m2, from EUR 1,629/m2",
+   "developer: presale announcement with 'BUILDING PERMIT No. 56/23.04.2025'",
+   "developer: construction specification (monolithic RC frame, Wienerberger Porotherm 250 mm, mineral wool 100 mm, PVC windows class C)",
+   "developer: planned heated pool, SPA, fitness, restaurant, supermarket, underground parking",
+   "Varna AGUP 2025 register: permit 56/23.04.2025 for a multi-family building in complex Forest Sea View, section No. 4, plot 10135.2515.3701"
+  ],
+  "note": "Presale of a three-building, 5-storey apartment complex near Varna by Forest Club Varna OOD from EUR 1,629/m2, marketed in English. The published permit No. 56/23.04.2025 is confirmed in Varna's AGUP register but covers only section No. 4. Bulgarian media report that Forest Club Varna is the company behind the separate unpermitted Baba Alino complex, that buyers there paid under reservation agreements, and that the Varna District Court placed a lien on the company's properties in July 2026. (checked 1 Nov 2026)",
+  "seed": {
+   "price": null,
+   "currency": "EUR",
+   "title": "freehold (apartment ownership)",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": true,
+   "permit_number": "56/23.04.2025",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": null,
+   "payment_plan": null,
+   "price_per_m2": 1629
+  },
+  "evidence": {
+   "permit": "Developer publishes Building Permit No. 56/23.04.2025; the Varna AGUP 2025 register lists it for 'multi-family residential building in complex Forest Sea View, section No. 4' in SO Alen Mak, k.k. Chaika, so it covers one section, not all three buildings",
+   "escrow": null,
+   "progress": "Presale only; no construction data",
+   "plans": "No floor plans visible on the project page",
+   "record": "Developer page refers to earlier Forest Village and Forest Club House units; media report those Baba Alino buildings were built without permits, so no clean delivery record is shown",
+   "returns": "No yield or guarantee wording"
+  },
+  "verification": {
+   "permit": "registry",
+   "escrow": "none",
+   "progress": "none",
+   "plans": "none",
+   "record": "contradicted",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Building permit No. 56/23.04.2025 issued",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://agup.varna.bg/index.php/rs-agup-2022-25"
+   },
+   {
+    "claim": "The permit covers the whole three-building complex",
+    "status": "contradicted",
+    "by": "registry",
+    "source": "https://agup.varna.bg/index.php/rs-agup-2022-25"
+   },
+   {
+    "claim": "Project located about 15 minutes from Varna beaches",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://forestclub.bg/en/projects/forest_seaview"
+   },
+   {
+    "claim": "Prices from EUR 1,629/m2",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://forestclub.bg/en/projects/forest_seaview"
+   },
+   {
+    "claim": "Forest Club Varna OOD owns the Baba Alino complex reported as illegal",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://novini.bg/article/2026053107103118735"
+   },
+   {
+    "claim": "Buyers at the Baba Alino complex signed only reservation agreements without permits shown",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://fakti.bg/en/bulgaria/1062900-advokat-tomov-potarpevshi-ot-shemata-baba-alino-plashtali-do-50-ot-stoinostta-na-imotite-bez-predvaritelni-dogovori"
+   },
+   {
+    "claim": "Court imposed a lien on Forest Club Varna properties",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://novini.bg/article/2026070806462113543"
+   },
+   {
+    "claim": "Developer has delivered earlier Forest Village and Forest Club House units legally",
+    "status": "contradicted",
+    "by": "independent",
+    "source": "https://www.novinite.com/articles/238983/Baba+Alino+Case+in+Bulgaria+Deepens%3A+Stolen+Water%2C+Fake+Contracts%2C+New+Illegal+Complex+Close+By"
+   },
+   {
+    "claim": "Heated pool, SPA and fitness centre included",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://forestclub.bg/en/projects/forest_seaview"
+   }
+  ],
+  "facts": {
+   "developer_hq": "Varna, Bulgaria (head office Bratya Shkorpil 2)",
+   "developer_company": "Forest Club Varna OOD (formerly Asperia OOD per novini.bg)",
+   "unit_types": [
+    "1BR",
+    "2BR",
+    "3BR"
+   ],
+   "size_min_m2": 58,
+   "size_max_m2": 124,
+   "foreign_ownership": "Foreigners can own apartments in Bulgaria; land ownership restricted for non-EU buyers",
+   "amenities": [
+    "heated outdoor pool",
+    "SPA",
+    "fitness",
+    "restaurant",
+    "underground parking",
+    "playgrounds",
+    "rope park",
+    "supermarket"
+   ],
+   "permit_authority": "Varna municipality, Chief Architect (AGUP)",
+   "developer_founded": null,
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": null,
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "price_min": null,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "rental_programme": null,
+   "service_charge": null,
+   "brand": null,
+   "lat": null,
+   "lng": null,
+   "brochure_url": null
+  },
+  "positives": [
+   "Building permit number published and found in the municipal register (for section 4)"
+  ],
+  "flags": [
+   {
+    "text": "Novini.bg reported in May 2026 that Forest Club Varna OOD is the owner company of the unpermitted complex in the Baba Alino forest area near Varna.",
+    "source": "https://novini.bg/article/2026053107103118735"
+   },
+   {
+    "text": "Novini.bg reported in July 2026 that the Varna District Court imposed a lien on properties of Forest Club Varna in a claim by a Dutch family seeking repayment for a Baba Alino apartment.",
+    "source": "https://novini.bg/article/2026070806462113543"
+   },
+   {
+    "text": "Novinite reported in June 2026 that authorities exposed 104 buildings built without permits at Baba Alino in a Natura 2000 zone, and that Forest Club buyers had signed only reservation agreements; the investor disputes are before the courts.",
+    "source": "https://www.novinite.com/articles/238983/Baba+Alino+Case+in+Bulgaria+Deepens%3A+Stolen+Water%2C+Fake+Contracts%2C+New+Illegal+Complex+Close+By"
+   }
+  ],
+  "sources": [
+   "https://forestclub.bg/en/projects/forest_seaview",
+   "https://agup.varna.bg/index.php/rs-agup-2022-25",
+   "https://fakti.bg/en/bulgaria/1062900-advokat-tomov-potarpevshi-ot-shemata-baba-alino-plashtali-do-50-ot-stoinostta-na-imotite-bez-predvaritelni-dogovori",
+   "https://fakti.bg/razsledvania/1063366-anatomia-na-tainia-grad-v-baba-alino-institucionalen-chadar-milioni-v-rezervacii-i-bageri-v-gorata",
+   "https://novini.bg/article/2026053107103118735",
+   "https://novini.bg/article/2026070806462113543",
+   "https://www.novinite.com/articles/238983/Baba+Alino+Case+in+Bulgaria+Deepens%3A+Stolen+Water%2C+Fake+Contracts%2C+New+Illegal+Complex+Close+By"
+  ],
+  "permit_number": "56/23.04.2025",
+  "disclosure": {
+   "permit": true,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "verified_score": 1,
+  "added": "2026-11-01",
+  "status": "active"
  }
 ]

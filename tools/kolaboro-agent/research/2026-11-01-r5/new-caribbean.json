@@ -1741,5 +1741,564 @@
    "https://www.cipsaintlucia.com/approved-real-estate-and-enterprise-projects",
    "https://realtystlucia.com/st-lucia-real-estate-market-update-september-2026/"
   ]
+ },
+ {
+  "slug": "the-gardens-harbour-island-colwood",
+  "name": "The Gardens, Harbour Island",
+  "developer": "Colwood Properties Ltd (developed by Elmsbridge)",
+  "area": "Harbour Island, Jolly Harbour, St Mary's",
+  "country": "Antigua and Barbuda",
+  "market": "Antigua",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.thegardensantigua.com/villas/",
+  "docs_url": "https://www.thegardensantigua.com/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: villa designs with sq ft (Aloe 2BR 2,042 sq ft, Neem 3BR 2,557 sq ft, Hummingbird 3BR 2,882 sq ft, garden cottage add-on)",
+   "developer: whole ownership US$1.3M to US$1.75M, one-sixth fractional shares from US$300,000",
+   "developer: states whole and shared ownership approved for citizenship by investment",
+   "developer: construction update article (May 2023), Instagram posts on remaining homesites",
+   "developer: team page naming owner and developer"
+  ],
+  "note": "Plot-and-build community of 36 to 37 turnkey villas on Harbour Island in Jolly Harbour, with whole ownership and one-sixth shares. Colwood Properties Ltd - The Gardens appears on the Antigua CIU list of approved development projects. Construction of individual villas has been under way since at least 2023; the developer says 90% is sold and three homesites remain, from US$1.4M. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 1300000,
+   "currency": "USD",
+   "title": "freehold (plot plus construction); fractional one-sixth shares also offered",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": null,
+   "units": 37,
+   "payment_plan": null,
+   "price_per_m2": 6834
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 2,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No planning permission number; CIU approval is a programme listing, not a building permit",
+   "escrow": null,
+   "progress": "Dated construction update (3 May 2023, walls up and roof under way on plot 118); recent social posts say 90% sold, no % complete",
+   "plans": "Villa types described with bedroom counts and sq ft but no floor plan drawings found on the pages opened",
+   "record": "Team page says Elmsbridge has decades of experience and award wins, and the owner redeveloped Jolly Harbour; no completed projects named",
+   "returns": "Full management and rental solution offered; no guarantee or yield"
+  },
+  "positives": [
+   "Listed on the official Antigua CIU approved development projects list",
+   "Prices and villa sizes published"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "none",
+   "progress": "developer",
+   "plans": "none",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Approved for citizenship by investment",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://cip.gov.ag/investment-options/real-estate/approved-development-projects/"
+   },
+   {
+    "claim": "Developer entity is Colwood Properties Ltd",
+    "status": "verified",
+    "by": "registry",
+    "source": "https://cip.gov.ag/investment-options/real-estate/approved-development-projects/"
+   },
+   {
+    "claim": "36 villa plots",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://thegardensantigua.com/article/construction-update-at-the-gardens/"
+   },
+   {
+    "claim": "Whole villas from US$1.3M",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://www.thegardensantigua.com/aloe-garden-villa/"
+   },
+   {
+    "claim": "90% sold, three homesites left",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thegardensantigua.com/aloe-garden-villa/"
+   },
+   {
+    "claim": "Construction under way (May 2023 update)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://thegardensantigua.com/article/construction-update-at-the-gardens/"
+   },
+   {
+    "claim": "Fractional shares from US$300,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thegardensantigua.com/"
+   },
+   {
+    "claim": "Elmsbridge won International Property Awards",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thegardensantigua.com/team/"
+   },
+   {
+    "claim": "Planning permission granted",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.thegardensantigua.com/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "Jolly Harbour, Antigua",
+   "developer_company": "Colwood Properties Ltd. - The Gardens (CIU list)",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2023-05",
+   "handover_promised": null,
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR villa",
+    "3BR villa",
+    "4BR villa",
+    "garden cottage add-on"
+   ],
+   "size_min_m2": 190,
+   "size_max_m2": 268,
+   "price_min": 1300000,
+   "price_max": 1750000,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Freehold; non-citizens need an Alien Landholding Licence (exempt for CIP purchases)",
+   "rental_programme": "Full management and rental solution (no figures)",
+   "service_charge": null,
+   "brand": null,
+   "amenities": [
+    "private pools",
+    "gardens",
+    "Jolly Harbour golf course",
+    "marina",
+    "sports village"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Development Control Authority, Antigua and Barbuda",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "sources": [
+   "https://www.thegardensantigua.com/",
+   "https://www.thegardensantigua.com/villas/",
+   "https://www.thegardensantigua.com/team/",
+   "https://www.thegardensantigua.com/aloe-garden-villa/",
+   "https://thegardensantigua.com/article/construction-update-at-the-gardens/",
+   "https://cip.gov.ag/investment-options/real-estate/approved-development-projects/"
+  ]
+ },
+ {
+  "slug": "one-true-blue-beach-goldblat",
+  "name": "ONE True Blue Beach Hotel & Residences (Tapestry Collection by Hilton)",
+  "developer": "Golden Coast Ltd. (Goldblat)",
+  "area": "True Blue Bay, St George's",
+  "country": "Grenada",
+  "market": "Grenada",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://realestatehub.ntltrust.com/grenada/st-george/one-true-blue/",
+  "docs_url": "https://1truebluebeach.com/",
+  "permit_number": "CBI Approved Project Status GCBI-AP-0024-035",
+  "docs_listed": [
+   "developer: agent-referral site stating Hilton Tapestry Collection branding and government-approved CBI pathway, investment from US$270k",
+   "agent: about 70 hotel keys plus 18 freehold residences (later 50 rooms and 17 residences)",
+   "agent: Class B hotel shares from US$280,000 with 5-year hold, one week a year and 50/50 revenue share",
+   "agent: developer guidance ADR US$300-350, occupancy 65-75%",
+   "developer LinkedIn: under construction, opening targeted Q3 2028"
+  ],
+  "note": "Boutique Hilton Tapestry Collection hotel with freehold branded residences on 1.3 acres at True Blue Bay. The Government Gazette (14 Feb 2025) granted Golden Coast Ltd. Approved Project Status GCBI-AP-0024-035 under the CBI Act; construction began in 2024. Opening has moved from 2027 to Q2 or Q3 2028 and the published key count has fallen from 70 to 50. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 280000,
+   "currency": "USD",
+   "title": "Class B hotel shares (CBI) or freehold residences",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": null,
+   "completion": "2028-Q3",
+   "permit_claim": true,
+   "permit_number": "GCBI-AP-0024-035",
+   "plans_published": false,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": false,
+   "developer_delivered": null,
+   "units": 68,
+   "payment_plan": "CBI share purchase with staged payments per SPA (terms not published)",
+   "price_per_m2": null
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": false,
+   "plans": false,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 1,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "Developer pages say 'government-approved' without a number; the CBI Approved Project Status number GCBI-AP-0024-035 comes from the Gazette notice reported by NOW Grenada. No building permit number found",
+   "escrow": "Agent profile says staged payments per SPA/escrow terms 'TBC in buyer pack'; nothing stated by developer",
+   "progress": "Construction start 2024 reported by NOW Grenada; developer statement relayed by a buyer guide that the superstructure is nearing completion; no dated photos or %",
+   "plans": "No floor plans published",
+   "record": "First project of Goldblat (founded 2017 per its LinkedIn)",
+   "returns": "50/50 revenue share and developer ADR and occupancy guidance; no guaranteed return"
+  },
+  "positives": [
+   "Gazetted CBI approved-project status with a number",
+   "International hotel brand (Hilton Tapestry Collection)"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "independent",
+   "escrow": "none",
+   "progress": "independent",
+   "plans": "none",
+   "record": "none",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Approved Project under the Grenada CBI Act (GCBI-AP-0024-035)",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://nowgrenada.com/2025/02/70-room-hotel-is-latest-cbi-approved-project/"
+   },
+   {
+    "claim": "Developer is Golden Coast Ltd.",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://nowgrenada.com/2025/02/70-room-hotel-is-latest-cbi-approved-project/"
+   },
+   {
+    "claim": "Construction began in 2024",
+    "status": "verified",
+    "by": "independent",
+    "source": "https://nowgrenada.com/2025/02/70-room-hotel-is-latest-cbi-approved-project/"
+   },
+   {
+    "claim": "Opening in 2027",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://linkedin.com/company/goldblat"
+   },
+   {
+    "claim": "70 hotel keys and 18 residences",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://danmerriam.com/development-guides/hilton-residences-grenada"
+   },
+   {
+    "claim": "Superstructure nearing completion",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://danmerriam.com/development-guides/hilton-residences-grenada"
+   },
+   {
+    "claim": "Hilton Tapestry Collection branding",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://1truebluebeach.com/"
+   },
+   {
+    "claim": "CBI shares from US$280,000 including transfer fees",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://propertyacross.com/property/one-true-blue-beach-hilton-grenada/"
+   },
+   {
+    "claim": "ADR US$300-350 and 65-75% occupancy",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://realestatehub.ntltrust.com/grenada/st-george/one-true-blue/"
+   },
+   {
+    "claim": "Site acquired in 2018",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://mygrenadasolutions.com/one-true-blue-beach-grenadas-latest-cbi-opportunity/"
+   },
+   {
+    "claim": "Buyer funds held in escrow",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://propertyacross.com/property/one-true-blue-beach-hilton-grenada/"
+   }
+  ],
+  "facts": {
+   "developer_founded": 2017,
+   "developer_hq": "St George's, Grenada",
+   "developer_company": "Golden Coast Ltd. (Gazette notice); brand Goldblat",
+   "developer_projects_delivered": 0,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2024",
+   "handover_promised": "2028-Q3",
+   "original_handover": "2027",
+   "delay_months": 12,
+   "unit_types": [
+    "hotel share (Class B)",
+    "studio",
+    "1BR",
+    "2BR",
+    "penthouse"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 280000,
+   "price_max": null,
+   "currency": "USD",
+   "deposit_pct": null,
+   "payment_plan": null,
+   "foreign_ownership": "Hotel shares for CBI (5-year hold) or freehold residences; Alien Landholding Licence applies to non-CBI freehold",
+   "rental_programme": "Hotel shares: 50/50 revenue split, one week a year; residences: optional managed rental",
+   "service_charge": null,
+   "brand": "Tapestry Collection by Hilton",
+   "amenities": [
+    "pool",
+    "rooftop lounge",
+    "beach club",
+    "wellness spaces",
+    "open-air gym",
+    "co-working"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Physical Planning Unit, Grenada; Investment Migration Agency for CBI approval",
+   "brochure_url": null
+  },
+  "verified_score": 2,
+  "sources": [
+   "https://1truebluebeach.com/",
+   "https://linkedin.com/company/goldblat",
+   "https://nowgrenada.com/2025/02/70-room-hotel-is-latest-cbi-approved-project/",
+   "https://mygrenadasolutions.com/one-true-blue-beach-grenadas-latest-cbi-opportunity/",
+   "https://realestatehub.ntltrust.com/grenada/st-george/one-true-blue/",
+   "https://propertyacross.com/property/one-true-blue-beach-hilton-grenada/",
+   "https://danmerriam.com/development-guides/hilton-residences-grenada",
+   "https://imagrenada.gd/citizenship-by-investment-2/"
+  ]
+ },
+ {
+  "slug": "baia-vista-rebirth-development",
+  "name": "Baia Vista (Phase 1 and Phase 2)",
+  "developer": "Rebirth Development (The Hague) for Isla Caribbean Realty",
+  "area": "Hofi Sint Joris, Koraal Tabak, Willemstad",
+  "country": "Curacao",
+  "market": "Curacao",
+  "stage": "under construction",
+  "status": "active",
+  "url": "https://www.vastiva.nl/woningaanbod/koop/curacao/westpunt/koraal-tabak/appartement-baia-vista-appartement/",
+  "docs_url": "https://baiavista.com/masterplan/",
+  "permit_number": null,
+  "docs_listed": [
+   "developer: dated masterplan timeline (land bought Jan 2025, phase 1 works from Oct 2025, delivery May 2027)",
+   "developer: construction update summer 2026 (penthouse floors being poured, highest point reached on first blocks)",
+   "developer: phase 2 indicative planning (permit expected Q4 2026, construction start Q2 2027)",
+   "developer: purchase step plan (first payment to developer account at Maduro & Curiel Bank, notarial transfer of apartment right, stage payments checked by an independent party)",
+   "developer: team page naming architect, site supervisor (Lucid) and main contractor (Huron Construction)",
+   "developer: rental analysis claiming about 6% expected net yield",
+   "agent: phase 2 ground-floor 2BR, 147 m2, EUR 405,000, delivery end 2028"
+  ],
+  "note": "Gated apartment resort of about 175 homes on Curacao's north-east coast marketed mainly to Dutch buyers. Phase 1 (40 apartments and penthouses) has been under construction since Oct 2025 with delivery planned for May 2027; phase 2 (60 homes) is selling before its building permit, which the developer expects in Q4 2026. Units are sold under a purchase and construction agreement with notarial transfer of title and stage payments. (checked 1 Nov 2026)",
+  "added": "2026-11-01",
+  "seed": {
+   "price": 405000,
+   "currency": "EUR",
+   "title": "freehold apartment right (appartementsrecht) on eigendom land",
+   "lease_base": null,
+   "extension": null,
+   "guaranteed_language": false,
+   "yield_pct": 6,
+   "completion": "2027-Q2",
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow": null,
+   "progress_pct": null,
+   "progress_updates": true,
+   "developer_delivered": "Rebirth Development says it has delivered many housing, hotel and office projects in the Netherlands (none named on the Baia Vista site); first Curacao project",
+   "units": 175,
+   "payment_plan": "First instalment on signing the purchase and construction agreement, notarial transfer, then construction-stage instalments checked by an independent party",
+   "price_per_m2": 2755
+  },
+  "disclosure": {
+   "permit": false,
+   "escrow": false,
+   "progress": true,
+   "plans": true,
+   "record": false,
+   "no_guaranteed_returns": true,
+   "score": 3,
+   "all_six": false
+  },
+  "evidence": {
+   "permit": "No permit number; developer says phase 2 licensing is expected in Q4 2026, after sales started",
+   "escrow": "No escrow or bank guarantee stated; first payment goes to the developer's own MCB account, buyer receives notarial title to the apartment right before construction, and stage payments are checked by an independent party",
+   "progress": "Dated masterplan milestones and a summer 2026 construction update with specific works",
+   "plans": "Purchase pack includes technical description and drawings; phase plans (masterplan) and agent unit pages with sizes",
+   "record": "Developer claims numerous Dutch projects but names none; first project on Curacao",
+   "returns": "Developer rental analysis: expected net return around 6% (6-7%), described as an expectation, not guaranteed"
+  },
+  "positives": [
+   "Frequent dated construction updates",
+   "Buyer takes notarial title before construction and pays in stages",
+   "Named contractor and independent site supervisor"
+  ],
+  "flags": [],
+  "verification": {
+   "permit": "none",
+   "escrow": "developer",
+   "progress": "developer",
+   "plans": "developer",
+   "record": "developer",
+   "returns": "developer"
+  },
+  "claims": [
+   {
+    "claim": "Phase 1 construction started Oct 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://baiavista.com/masterplan/"
+   },
+   {
+    "claim": "Highest point reached on first blocks (summer 2026)",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://baiavista.com/bouwupdate-zomer-2026/"
+   },
+   {
+    "claim": "Phase 1 delivery May 2027",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://baiavista.com/masterplan/"
+   },
+   {
+    "claim": "Phase 2 sales started 18 May 2026",
+    "status": "contradicted",
+    "by": "none",
+    "source": "https://baiavista.com/masterplan/"
+   },
+   {
+    "claim": "Phase 2 building permit expected Q4 2026",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://baiavista.com/en/lancering-baia-vista-fase-2/"
+   },
+   {
+    "claim": "Land (42,000 m2) bought by Isla Caribbean Realty in Jan 2025",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://baiavista.com/masterplan/"
+   },
+   {
+    "claim": "Expected net rental return around 6%",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://baiavista.com/huuranalyse-rond-6-rendement-bij-baia-vista/"
+   },
+   {
+    "claim": "Stage payments checked by an independent party",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://baiavista.com/stappenplan/"
+   },
+   {
+    "claim": "Phase 2 apartment 147 m2 at EUR 405,000",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://www.vastiva.nl/woningaanbod/koop/curacao/westpunt/koraal-tabak/appartement-baia-vista-appartement/"
+   },
+   {
+    "claim": "Rebirth Development delivered numerous projects in the Netherlands",
+    "status": "unverified",
+    "by": "none",
+    "source": "https://baiavista.com/over-ons/"
+   }
+  ],
+  "facts": {
+   "developer_founded": null,
+   "developer_hq": "The Hague, Netherlands",
+   "developer_company": "Rebirth Development (a YOUNG. company); landowner Isla Caribbean Realty",
+   "developer_projects_delivered": null,
+   "developer_units_delivered": null,
+   "listed_or_audited": null,
+   "construction_start": "2025-10",
+   "handover_promised": "2027-Q2",
+   "original_handover": null,
+   "delay_months": null,
+   "unit_types": [
+    "2BR apartment",
+    "penthouse",
+    "semi-detached house"
+   ],
+   "size_min_m2": null,
+   "size_max_m2": null,
+   "price_min": 405000,
+   "price_max": null,
+   "currency": "EUR",
+   "deposit_pct": null,
+   "payment_plan": "Purchase and construction agreement with stage payments",
+   "foreign_ownership": "Freehold apartment right on eigendom land, transferred by notary; no restriction on foreign buyers",
+   "rental_programme": "Optional developer rental and management service",
+   "service_charge": "VvE (owners' association) fees, amount not published",
+   "brand": null,
+   "amenities": [
+    "swimming pools",
+    "pool decks",
+    "communal tropical garden",
+    "gated access"
+   ],
+   "lat": null,
+   "lng": null,
+   "permit_authority": "Ministerie van Verkeer, Vervoer en Ruimtelijke Planning (VVRP), Curacao",
+   "brochure_url": null
+  },
+  "verified_score": 0,
+  "sources": [
+   "https://baiavista.com/masterplan/",
+   "https://baiavista.com/en/lancering-baia-vista-fase-2/",
+   "https://baiavista.com/bouwupdate-zomer-2026/",
+   "https://baiavista.com/stappenplan/",
+   "https://baiavista.com/faq/",
+   "https://baiavista.com/over-ons/",
+   "https://baiavista.com/huuranalyse-rond-6-rendement-bij-baia-vista/",
+   "https://www.vastiva.nl/woningaanbod/koop/curacao/westpunt/koraal-tabak/appartement-baia-vista-appartement/"
+  ]
  }
 ]
