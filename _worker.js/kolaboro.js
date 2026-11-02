@@ -580,10 +580,39 @@ async function apiV1(req, u, env, ctx) {
 
 // ---------- Open data API (no key): projects, markets, stats, CSV, feeds ----------
 const OPEN_FIELDS = ['id', 'market', 'country', 'region', 'stage', 'band', 'done', 'title', 'lease', 'units', 'score', 'max', 'vscore', 'tier', 'delay'];
-async function openData() {
+// The open dataset, with its SHA-256 fingerprint (the same file anyone can download at /data/bali-cases.json).
+let OPEN_MEMO = { t: 0, v: null };
+async function openLoad() {
+  if (OPEN_MEMO.v && Date.now() - OPEN_MEMO.t < 60000) return OPEN_MEMO.v;
   const r = await fetch('https://kolaboro.com/data/bali-cases.json', { cf: { cacheTtl: 600, cacheEverything: true } });
-  return r.json();
+  const txt = await r.text(), v = { d: JSON.parse(txt), sha: await sha(txt), bytes: txt.length };
+  OPEN_MEMO = { t: Date.now(), v }; return v;
 }
+async function openData() { return (await openLoad()).d; }
+// ---------- Merkle tree over the research agent's page fingerprints (RFC 6962 style: leaf = H(0x00 || line), node = H(0x01 || left || right),
+// an unpaired last node is promoted unchanged). One line per project with a fingerprint: "ID SHA256", sorted by id.
+const te = new TextEncoder();
+async function h256(bytes) { return new Uint8Array(await crypto.subtle.digest('SHA-256', bytes)); }
+const toHex = u => [...u].map(x => x.toString(16).padStart(2, '0')).join('');
+async function mLeaf(line) { const b = te.encode(line), x = new Uint8Array(b.length + 1); x[0] = 0; x.set(b, 1); return h256(x); }
+async function mNode(l, r) { const x = new Uint8Array(65); x[0] = 1; x.set(l, 1); x.set(r, 33); return h256(x); }
+async function merkle(lines, index) {
+  let level = []; for (const l of lines) level.push(await mLeaf(l));
+  if (!level.length) return { root: toHex(await h256(new Uint8Array(0))), path: [] };
+  const path = []; let i = index;
+  while (level.length > 1) {
+    const next = [];
+    for (let k = 0; k < level.length; k += 2) {
+      if (k + 1 < level.length) { next.push(await mNode(level[k], level[k + 1])); if (i === k) path.push({ side: 'R', hash: toHex(level[k + 1]) }); else if (i === k + 1) path.push({ side: 'L', hash: toHex(level[k]) }); }
+      else next.push(level[k]);
+    }
+    if (i != null && i >= 0) i = Math.floor(i / 2);
+    level = next;
+  }
+  return { root: toHex(level[0]), path };
+}
+const fpOf = c => (c.fp && typeof c.fp === 'object' ? c.fp.sha256 : c.fp) || '';
+function fpLines(cases) { return cases.filter(c => /^[0-9a-f]{64}$/.test(fpOf(c))).slice().sort((a, b) => a.id < b.id ? -1 : a.id > b.id ? 1 : 0).map(c => c.id + ' ' + fpOf(c)); }
 function openProject(c) {
   const o = {}; OPEN_FIELDS.forEach(k => { o[k] = c[k] === undefined ? null : c[k]; });
   const ck = c.checks || {};
@@ -614,6 +643,11 @@ const OPEN_DOC = {
     'GET /api/open/projects': 'projects; filters: market, country, stage (off-plan|under construction|completed), min_public (0-6), min_confirmed (0-6), all_six (1), flags (1|0), limit (max 1000), offset',
     'GET /api/open/projects.csv': 'same filters, CSV',
     'GET /api/open/projects/{id}': 'one project, e.g. /api/open/projects/BALI-014',
+    'GET /api/open/proof/{id}': 'Merkle inclusion proof that a project page fingerprint is in the daily root recorded in the public log (kolaboro.com/log)',
+    'GET /api/open/changes?since=YYYY-MM-DD': 'every recorded change to a project field since a date, newest first',
+    'GET /api/open/log': 'the public append-only log: one hash-chained head per day, each timestamped in Bitcoin',
+    'GET /api/open/log-input': 'what goes into today\'s log head: dataset SHA-256 and the Merkle root of page fingerprints',
+    'Headers': 'every answer carries x-kolaboro-dataset-sha256 (fingerprint of the dataset file it came from) and an ETag; send If-None-Match to get 304 when nothing changed',
     'GET /api/open/markets': 'per-market statistics and the transparency index (0-100)',
     'GET /api/open/markets.csv': 'same, CSV',
     'GET /api/open/openapi.json': 'OpenAPI 3.1 description',
@@ -645,8 +679,35 @@ export async function open(req, u) {
   if (req.method === 'OPTIONS') return cors(new Response(null, { status: 204 }));
   if (path === '/api/open' || path === '/api/open/docs') return openResp(OPEN_DOC);
   if (path === '/api/open/openapi.json') return openResp(openapiSpec());
-  let d; try { d = await openData(); } catch (e) { return openResp({ error: 'data_unavailable' }, null, 30); }
+  let L; try { L = await openLoad(); } catch (e) { return openResp({ error: 'data_unavailable' }, null, 30); }
+  const res = await openRoutes(req, u, path, L);
+  if (!res || !/json|csv|xml/.test(res.headers.get('content-type') || '')) return res;
+  // every answer carries the fingerprint of the dataset it came from, and supports conditional requests
+  const tag = '"' + L.sha.slice(0, 20) + '-' + (await sha(u.pathname + u.search)).slice(0, 8) + '"', h = new Headers(res.headers);
+  h.set('x-kolaboro-dataset-sha256', L.sha); h.set('etag', tag); h.append('access-control-expose-headers', 'x-kolaboro-dataset-sha256, etag');
+  if ((req.headers.get('if-none-match') || '') === tag && res.status === 200) return new Response(null, { status: 304, headers: h });
+  return new Response(res.body, { status: res.status, headers: h });
+}
+async function openRoutes(req, u, path, L) {
+  const d = L.d;
   const cases = d.cases || [], meta = { updated: d.updated, license: OPEN_DOC.license, note: OPEN_DOC.note };
+  if (path === '/api/open/log-input') { const lines = fpLines(cases), m = await merkle(lines, null); return openResp({ date: new Date().toISOString().slice(0, 10), updated: d.updated, dataset_sha256: L.sha, dataset_bytes: L.bytes, projects_root: m.root, projects_count: lines.length }, null, 60); }
+  if (path === '/api/open/log') { try { return openResp(await rpc('kolaboro_log_public', {}), null, 300); } catch (e) { return openResp({ error: 'log_unavailable' }, null, 30); } }
+  let dpath = path; try { dpath = decodeURIComponent(path); } catch (e) {}
+  const pm = dpath.match(/^\/api\/open\/proof\/([A-Za-z0-9 -]{3,20})$/);
+  if (pm) {
+    const c = cases.find(x => x.id.toLowerCase() === pm[1].toLowerCase());
+    if (!c || !/^[0-9a-f]{64}$/.test(fpOf(c))) return new Response(JSON.stringify({ error: 'not_found' }), { status: 404, headers: { 'content-type': 'application/json', 'access-control-allow-origin': '*' } });
+    const lines = fpLines(cases), line = c.id + ' ' + fpOf(c), idx = lines.indexOf(line), m = await merkle(lines, idx);
+    return openResp({ project: c.id, page_fingerprint_date: (c.fp && c.fp.date) || null, line, leaf: toHex(await mLeaf(line)), index: idx, leaves: lines.length, path: m.path, projects_root: m.root, dataset_sha256: L.sha, updated: d.updated,
+      method: 'leaf = SHA-256(0x00 || line); node = SHA-256(0x01 || left || right); an unpaired last node is promoted; lines are "ID SHA256" for every project with a page fingerprint, sorted. The root is recorded daily in the public log at kolaboro.com/log and timestamped in Bitcoin.' });
+  }
+  if (path === '/api/open/changes') {
+    const since = /^\d{4}-\d{2}-\d{2}$/.test(u.searchParams.get('since') || '') ? u.searchParams.get('since') : new Date(Date.now() - 7 * 864e5).toISOString().slice(0, 10), out = [];
+    cases.forEach(c => (c.history || []).forEach(x => { if (x.d && x.d > since) out.push({ date: x.d, project: c.id, market: c.market, field: x.f, from: x.from === undefined ? null : x.from, to: x.to === undefined ? null : x.to }); }));
+    out.sort((a, b) => a.date < b.date ? 1 : a.date > b.date ? -1 : a.project < b.project ? -1 : 1);
+    return openResp({ ...meta, since, count: out.length, changes: out.slice(0, 2000) }, null, 300);
+  }
   if (path === '/api/open/stats') return openResp({ ...meta, projects: cases.length, markets: d.markets, countries: d.countries, ...(d.db || {}) });
   if (path === '/api/open/summary') return openResp({ updated: d.updated, projects: cases.length, markets: d.markets, countries: d.countries, db: d.db || {}, seal: d.seal || null, ships: (d.ships || []).slice(0, 20) });
   if (path === '/api/open/markets') return openResp({ ...meta, method: 'transparency_index = 60% average public-disclosure score + 30% average confirmed score + 10% share without public problems; markets with 3+ projects', markets: marketStats(cases) });
@@ -661,7 +722,8 @@ export async function open(req, u) {
     }
     return openResp({ ...meta, total: all.length, offset: off, limit: lim, projects: page });
   }
-  const m = path.match(/^\/api\/open\/projects\/([A-Za-z0-9-]{3,20})$/);
+  let dp2 = path; try { dp2 = decodeURIComponent(path); } catch (e) {}
+  const m = dp2.match(/^\/api\/open\/projects\/([A-Za-z0-9 -]{3,20})$/);
   if (m) { const c = cases.find(x => x.id.toLowerCase() === m[1].toLowerCase()); return c ? openResp({ ...meta, project: openProject(c), questions: c.q || [], flags: c.flags || [], notes: c.notes || [] }) : new Response(JSON.stringify({ error: 'not_found' }), { status: 404, headers: { 'content-type': 'application/json', 'access-control-allow-origin': '*' } }); }
   if (path === '/feed/alerts.xml' || ((path === '/feed.xml' || path === '/feed.json') && u.searchParams.get('market'))) {
     const mk = (u.searchParams.get('market') || '').toLowerCase();

@@ -37,9 +37,25 @@
     for (var yy = 1; yy < h - 1; yy++) for (var xx = 1; xx < w - 1; xx++){ var k = yy * w + xx, l = 4 * g[k] - g[k-1] - g[k+1] - g[k-w] - g[k+w]; n++; var dl = l - m; m += dl / n; m2 += dl * (l - m); }
     return { blur: Math.round(m2 / n), light: Math.round(sum / (w * h)) };
   }
-  function prep(file){
+  // 64-bit difference hash (dHash): 9x8 grey thumbnail, one bit per horizontal neighbour comparison. Near-identical photos differ by a few bits.
+  function dhash(canvas){
+    var c = document.createElement('canvas'); c.width = 9; c.height = 8; var x = c.getContext('2d'); x.drawImage(canvas, 0, 0, 9, 8);
+    var d = x.getImageData(0, 0, 9, 8).data, g = [], bits = '', hex = '';
+    for (var i = 0; i < 72; i++) g.push(.299 * d[i*4] + .587 * d[i*4+1] + .114 * d[i*4+2]);
+    for (var yy = 0; yy < 8; yy++) for (var xx = 0; xx < 8; xx++) bits += g[yy*9+xx] > g[yy*9+xx+1] ? '1' : '0';
+    for (var k = 0; k < 64; k += 4) hex += parseInt(bits.slice(k, k + 4), 2).toString(16);
+    return hex;
+  }
+  // one-time capture code from the server, burned into the photo corner with the time, before the fingerprint is taken
+  function burn(c, code){
+    if (!code) return; var x = c.getContext('2d'), fs = Math.max(14, Math.round(c.width / 45)), t = 'KB ' + code + ' · ' + new Date().toISOString().slice(0, 16).replace('T', ' ') + ' UTC';
+    x.font = '700 ' + fs + 'px system-ui, sans-serif'; var w = x.measureText(t).width + fs;
+    x.fillStyle = 'rgba(0,0,0,.55)'; x.fillRect(c.width - w - 8, c.height - fs * 1.8 - 8, w, fs * 1.8);
+    x.fillStyle = '#fff'; x.fillText(t, c.width - w - 8 + fs / 2, c.height - fs * .6 - 8);
+  }
+  function prep(file, code){
     return new Promise(function(res, rej){
-      var r = new FileReader(); r.onload = function(){ var im = new Image(); im.onload = function(){ var s = Math.min(1, 1600 / Math.max(im.width, im.height)), c = document.createElement('canvas'); c.width = Math.round(im.width * s); c.height = Math.round(im.height * s); c.getContext('2d').drawImage(im, 0, 0, c.width, c.height); var q = quality(c), u = c.toDataURL('image/jpeg', .82); res({ url: u, w: c.width, h: c.height, blur: q.blur, light: q.light }); }; im.onerror = rej; im.src = r.result; }; r.onerror = rej; r.readAsDataURL(file);
+      var r = new FileReader(); r.onload = function(){ var im = new Image(); im.onload = function(){ var s = Math.min(1, 1600 / Math.max(im.width, im.height)), c = document.createElement('canvas'); c.width = Math.round(im.width * s); c.height = Math.round(im.height * s); c.getContext('2d').drawImage(im, 0, 0, c.width, c.height); var q = quality(c), ph = dhash(c); burn(c, code); var u = c.toDataURL('image/jpeg', .82); res({ phash: ph, url: u, w: c.width, h: c.height, blur: q.blur, light: q.light }); }; im.onerror = rej; im.src = r.result; }; r.onerror = rej; r.readAsDataURL(file);
     });
   }
   function gps(){
@@ -102,10 +118,11 @@
   function photo(t, step, file, label){
     var old = label.innerHTML; label.classList.add('busy'); label.firstChild && (label.lastChild.textContent = ' Checking…');
     var taken = new Date().toISOString();
-    prep(file).then(function(p){
+    var code = null;
+    (navigator.onLine ? call('code', { task_id: t.id }).then(function(r){ code = r && r.code || null; }).catch(function(){}) : Promise.resolve()).then(function(){ return prep(file, code); }).then(function(p){
       return crypto.subtle.digest('SHA-256', b64bytes(p.url)).then(function(h){
         var c = POS ? POS.coords : {}, age = POS ? (Date.now() - POS.timestamp) / 1000 : null;
-        return send('photo', { task_id: t.id, step: step, file: p.url, sha256: hex(h), lat: c.latitude, lng: c.longitude, acc: age != null && age < 120 ? c.accuracy : (c.accuracy ? c.accuracy + 500 : null), taken_at: (file.lastModified && Math.abs(Date.now() - file.lastModified) < 20 * 60000) ? new Date(file.lastModified).toISOString() : taken, blur: p.blur, light: p.light, w: p.w, h: p.h, device: navigator.userAgent.slice(0, 110) });
+        return send('photo', { task_id: t.id, step: step, file: p.url, sha256: hex(h), lat: c.latitude, lng: c.longitude, acc: age != null && age < 120 ? c.accuracy : (c.accuracy ? c.accuracy + 500 : null), taken_at: (file.lastModified && Math.abs(Date.now() - file.lastModified) < 20 * 60000) ? new Date(file.lastModified).toISOString() : taken, blur: p.blur, light: p.light, w: p.w, h: p.h, phash: p.phash, code: code, device: navigator.userAgent.slice(0, 110) });
       });
     }).then(function(d){ if (d) after(d); else { label.innerHTML = old; label.classList.remove('busy'); render(); } }).catch(function(e){ label.innerHTML = old; KB.toast('Could not upload: ' + (e.message || e)); });
   }
