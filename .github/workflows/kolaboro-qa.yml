@@ -24,6 +24,11 @@ jobs:
         run: cd tools/kolaboro-qa && KB_QA_OUT=$RUNNER_TEMP/qa.json node crawl.js
         continue-on-error: true
         id: crawl
+      - name: Reproduce every Trust Score from the open code and data
+        if: always()
+        continue-on-error: true
+        id: repro
+        run: cd tools/kolaboro-qa && KB_QA_OUT=$RUNNER_TEMP/qa.json python3 reproduce.py
       - uses: actions/upload-artifact@v4
         if: always()
         with:
