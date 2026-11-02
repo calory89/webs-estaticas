@@ -59191,6 +59191,7 @@ var TX = {
 		equip: "Equipment",
 		extras: "Extras",
 		access: "Access",
+		perNight: "/ night",
 		book: "See prices on Booking",
 		site: "Hotel website",
 		sources: "Sources",
@@ -59231,6 +59232,7 @@ var TX = {
 		equip: "Equipamiento",
 		extras: "Extras",
 		access: "Acceso",
+		perNight: "/ noche",
 		book: "Ver precios en Booking",
 		site: "Web del hotel",
 		sources: "Fuentes",
@@ -59259,6 +59261,7 @@ var CSS_GYM = `.gym{max-width:1100px;margin:0 auto}.gym .crumbs{font-size:13px;o
 .gcard .ph small{position:absolute;right:8px;bottom:8px;font-size:10px;background:#000a;color:#fff;border-radius:6px;padding:3px 6px}
 .gcard .gchips{position:absolute;left:12px;top:14px;display:flex;gap:6px;flex-wrap:wrap;z-index:2}.gcard .gchips span{margin:0!important;display:inline-flex;align-items:center;white-space:nowrap;line-height:1.2;width:auto;height:auto;font-size:12px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;padding:5px 10px;border-radius:99px;background:#fff;color:#10213a}
 .gcard .gchips .top{background:#10213a;color:#fff}
+.gcard .gprice{position:absolute;right:12px;bottom:12px;z-index:2;pointer-events:none}
 .gcard .bd{padding:16px 18px 18px;display:flex;flex-direction:column;gap:10px;flex:1}.gcard h2{font-size:22px;line-height:1.2;margin:0}.gcard .meta{font-size:14px;color:var(--muted)}
 .gcard p{margin:0;font-size:15px;line-height:1.55}.gcard dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:14px}.gcard dt{font-weight:600;color:var(--muted)}.gcard dd{margin:0}
 .gcard .warn{font-size:13px;color:#8a5a00;background:rgba(184,134,11,.1);border-radius:8px;padding:8px 10px}
@@ -59278,7 +59281,30 @@ var host = (u) => {
 	}
 };
 var bookingFor = (p, city) => CJ_BOOKING(p.bookingUrl ?? `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(`${p.hotel}, ${city.city}`)}`, "t3gym");
-function card$1(t, p, city, L, cityImg, slug) {
+var bkKey = (u) => (u ?? "").match(/\/hotel\/[a-z]{2}\/[^.?#/]+/)?.[0] ?? "";
+var nameKey = (n) => (n ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+async function cityPrices(id) {
+	const out = /* @__PURE__ */ new Map();
+	const c = await cityData(id).catch(() => null);
+	for (const h of c?.hotels ?? []) {
+		const n = h.offer?.nightly;
+		if (!n || n <= 0) continue;
+		const v = {
+			nightly: n,
+			checked: h.booking?.checked
+		};
+		const k = bkKey(h.booking?.url);
+		if (k) out.set(k, v);
+		if (h.name) out.set(nameKey(h.name), v);
+	}
+	return out;
+}
+var priceFor = (prices, p) => prices.get(bkKey(p.bookingUrl)) ?? prices.get(nameKey(p.hotel));
+var isoOf = (s) => {
+	const d = new Date(s ?? "");
+	return Number.isNaN(d.getTime()) ? "" : d.toISOString().slice(0, 10);
+};
+function card$1(t, p, city, L, cityImg, slug, price) {
 	const x = TX[L];
 	const chips = `<div class="gchips"><span>${esc(x.tier[t])}</span>${city.best === t ? `<span class="top">${esc(x.best)}</span>` : ""}</div>`;
 	if (!p) return `<article class="gcard ${t} empty"><div class="bd">${chips.replace("class=\"gchips\"", "class=\"gchips\" style=\"position:static\"")}<p>${esc(x.none)}</p><small>${esc(x.tierNote[t])}</small></div></article>`;
@@ -59292,7 +59318,7 @@ function card$1(t, p, city, L, cityImg, slug) {
 	if (g.extras?.length) rows.push(`<dt>${esc(x.extras)}</dt><dd>${esc(g.extras.join(" · "))}</dd>`);
 	if (g.access) rows.push(`<dt>${esc(x.access)}</dt><dd>${esc(g.access)}</dd>`);
 	const stars = p.stars ? `${"★".repeat(p.stars)} · ` : "";
-	return `<article class="gcard ${t}" id="${t}"><div class="ph">${chips}${img ? `<img src="${ESC_URL(img)}" alt="${esc(`${p.hotel}, ${city.city}`)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='${esc(cityImg ?? "")}'"><small>${esc(credit)}</small>` : ""}</div>
+	return `<article class="gcard ${t}" id="${t}"><div class="ph">${chips}${price ? `<span class="pricetag gprice" data-eur="${price.nightly}" title="${esc(Y[L].priceRef(isoOf(price.checked) || "2026"))}"><span class="v">${money(price.nightly)}</span><small> ${esc(x.perNight)}</small></span>` : ""}${img ? `<img src="${ESC_URL(img)}" alt="${esc(`${p.hotel}, ${city.city}`)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='${esc(cityImg ?? "")}'"><small>${esc(credit)}</small>` : ""}</div>
 <div class="bd"><h2>${esc(p.hotel)}</h2><div class="meta">${stars}${esc(p.area ?? city.city)}</div><p>${esc(L === "es" ? p.summary_es : p.summary_en)}</p>${rows.length ? `<dl>${rows.join("")}</dl>` : ""}${p.confidence === "low" ? `<p class="warn">${esc(x.low)}</p>` : ""}
 <div class="ctas"><a class="btn" href="${esc(bookingFor(p, city))}" rel="sponsored nofollow noopener" target="_blank" data-t="gym_booking" data-city="${esc(slug)}" data-cat="${t}" data-p="booking">${esc(x.book)}</a>${p.website ? `<a class="lnk" href="${esc(p.website)}" rel="nofollow noopener" target="_blank">${esc(x.site)} →</a>` : ""}</div>
 <div class="src">${esc(x.sources)}: ${p.sources.map((s) => `<a href="${esc(s)}" rel="nofollow noopener" target="_blank">${esc(host(s))}</a>`).join("")}</div></div></article>`;
@@ -59312,13 +59338,14 @@ async function gymCityPage(urlSlug, Lx) {
 	const cityImg = ic ? `/api/img/${encodeURIComponent(ic.id)}/mid` : void 0;
 	const path = `/gyms/${slug}`;
 	const picks = TIERS.map((t) => [t, city.tiers[t]]);
+	const prices = await cityPrices(id);
 	const names = picks.filter(([, p]) => p).map(([t, p]) => `${p.hotel} (${x.tier[t].toLowerCase()})`);
 	const bestReason = L === "es" ? city.bestReason_es : city.bestReason_en;
 	const bestPick = city.best ? city.tiers[city.best] : null;
 	const body = `<style>${CSS_GYM}</style><div class="gym"><nav class="crumbs"><a href="${P(L, "/")}">Top3Hotels</a> › <a href="${P(L, "/gyms")}">${esc(x.crumbs)}</a> › ${esc(city.city)}</nav>
 <h1>${esc(x.h1(city.city))}<em>.</em></h1><p class="lead">${esc(x.lead)}</p>${city.checked ? `<p class="upd">${esc(x.checked)}: ${esc(city.checked)}</p>` : ""}
 ${bestPick && bestReason ? `<p class="best"><b>${esc(x.best)}:</b> ${esc(bestPick.hotel)}. ${esc(bestReason)}</p>` : ""}
-<div class="gcards">${picks.map(([t, p]) => card$1(t, p, city, L, cityImg, slug)).join("")}</div>
+<div class="gcards">${picks.map(([t, p]) => card$1(t, p, city, L, cityImg, slug, p ? priceFor(prices, p) : void 0)).join("")}</div>
 <div class="method"><b>${esc(x.how)}.</b> ${esc(x.howBody)}</div>
 ${ic ? `<p><a href="${P(L, `/${slug}`)}">${esc(x.hotels(city.city))} →</a></p>` : ""}</div>`;
 	const items = picks.filter(([, p]) => p).map(([t, p], i) => ({
@@ -59343,6 +59370,7 @@ ${ic ? `<p><a href="${P(L, `/${slug}`)}">${esc(x.hotels(city.city))} →</a></p>
 			}],
 			description: L === "es" ? p.summary_es : p.summary_en,
 			...p.photo?.url ? { image: p.photo.url } : {},
+			...((n) => n ? { priceRange: `from ${money(n)} per night (reference)` } : {})(priceFor(prices, p)?.nightly),
 			additionalProperty: {
 				"@type": "PropertyValue",
 				name: "category",
@@ -62072,7 +62100,7 @@ async function handleSeo(request, env) {
 }
 var serverEntryPromise;
 async function getServerEntry() {
-	if (!serverEntryPromise) serverEntryPromise = import("./server-CHjaaH6M.mjs").then((m) => m.default ?? m);
+	if (!serverEntryPromise) serverEntryPromise = import("./server-D6e3SX7c.mjs").then((m) => m.default ?? m);
 	return serverEntryPromise;
 }
 async function normalizeCatastrophicSsrResponse(response) {

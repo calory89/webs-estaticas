@@ -1,326 +1,871 @@
 import { C as getStylesheetHref, M as createLRUCache, N as invariant, P as decodePath, b as createInlineCssPlaceholderAsset, k as rootRouteId, v as GLOBAL_TSR, x as createInlineCssStyleAsset, y as TSR_SCRIPT_BARRIER_ID } from "./react-router+[...].mjs";
-import { Buffer } from "node:buffer";
-//#region node_modules/seroval/dist/index.js
-var SYM_ASYNC_ITERATOR = Symbol.asyncIterator;
-var SYM_HAS_INSTANCE = Symbol.hasInstance;
-var SYM_IS_CONCAT_SPREADABLE = Symbol.isConcatSpreadable;
-var SYM_ITERATOR = Symbol.iterator;
-var SYM_MATCH = Symbol.match;
-var SYM_MATCH_ALL = Symbol.matchAll;
-var SYM_REPLACE = Symbol.replace;
-var SYM_SEARCH = Symbol.search;
-var SYM_SPECIES = Symbol.species;
-var SYM_SPLIT = Symbol.split;
-var SYM_TO_PRIMITIVE = Symbol.toPrimitive;
-var SYM_TO_STRING_TAG = Symbol.toStringTag;
-var SYM_UNSCOPABLES = Symbol.unscopables;
-var TEMPORAL_TYPE_NAME = {
-	[0]: "Instant",
-	[1]: "Duration",
-	[2]: "PlainDate",
-	[3]: "PlainDateTime",
-	[4]: "PlainMonthDay",
-	[5]: "PlainTime",
-	[6]: "PlainYearMonth",
-	[7]: "ZonedDateTime"
+//#region node_modules/unenv/dist/runtime/polyfill/globalthis.mjs
+var globalthis_default = globalThis;
+//#endregion
+//#region node_modules/seroval/dist/esm/production/index.mjs
+var L = ((i) => (i[i.AggregateError = 1] = "AggregateError", i[i.ArrowFunction = 2] = "ArrowFunction", i[i.ErrorPrototypeStack = 4] = "ErrorPrototypeStack", i[i.ObjectAssign = 8] = "ObjectAssign", i[i.BigIntTypedArray = 16] = "BigIntTypedArray", i[i.RegExp = 32] = "RegExp", i))(L || {});
+var v$1 = Symbol.asyncIterator;
+var dr = Symbol.hasInstance;
+var R = Symbol.isConcatSpreadable;
+var C = Symbol.iterator;
+var gr = Symbol.match;
+var yr = Symbol.matchAll;
+var Nr = Symbol.replace;
+var br = Symbol.search;
+var vr = Symbol.species;
+var Cr = Symbol.split;
+var Ar = Symbol.toPrimitive;
+var P$1 = Symbol.toStringTag;
+var Er = Symbol.unscopables;
+var nt = {
+	0: "Symbol.asyncIterator",
+	1: "Symbol.hasInstance",
+	2: "Symbol.isConcatSpreadable",
+	3: "Symbol.iterator",
+	4: "Symbol.match",
+	5: "Symbol.matchAll",
+	6: "Symbol.replace",
+	7: "Symbol.search",
+	8: "Symbol.species",
+	9: "Symbol.split",
+	10: "Symbol.toPrimitive",
+	11: "Symbol.toStringTag",
+	12: "Symbol.unscopables"
 };
-var SYMBOL_REF = {
-	[0]: SYM_ASYNC_ITERATOR,
-	[1]: SYM_HAS_INSTANCE,
-	[2]: SYM_IS_CONCAT_SPREADABLE,
-	[3]: SYM_ITERATOR,
-	[4]: SYM_MATCH,
-	[5]: SYM_MATCH_ALL,
-	[6]: SYM_REPLACE,
-	[7]: SYM_SEARCH,
-	[8]: SYM_SPECIES,
-	[9]: SYM_SPLIT,
-	[10]: SYM_TO_PRIMITIVE,
-	[11]: SYM_TO_STRING_TAG,
-	[12]: SYM_UNSCOPABLES
+var Ce = {
+	[v$1]: 0,
+	[dr]: 1,
+	[R]: 2,
+	[C]: 3,
+	[gr]: 4,
+	[yr]: 5,
+	[Nr]: 6,
+	[br]: 7,
+	[vr]: 8,
+	[Cr]: 9,
+	[Ar]: 10,
+	[P$1]: 11,
+	[Er]: 12
 };
-function createSymbolStringTable() {
-	const result = {};
-	for (let i = 0; i <= 12; i++) result[i] = SYMBOL_REF[i].description;
-	return result;
-}
-var SYMBOL_STRING = /* @__PURE__ */ createSymbolStringTable();
-function createInverseSymbolTable() {
-	const result = {};
-	for (let i = 0; i <= 12; i++) result[SYMBOL_REF[i]] = i;
-	return result;
-}
-var INV_SYMBOL_REF = /* @__PURE__ */ createInverseSymbolTable();
-var CONSTANT_STRING = {
-	[2]: "!0",
-	[3]: "!1",
-	[1]: "void 0",
-	[0]: "null",
-	[4]: "-0",
-	[5]: "1/0",
-	[6]: "-1/0",
-	[7]: "0/0"
+var ot = {
+	0: v$1,
+	1: dr,
+	2: R,
+	3: C,
+	4: gr,
+	5: yr,
+	6: Nr,
+	7: br,
+	8: vr,
+	9: Cr,
+	10: Ar,
+	11: P$1,
+	12: Er
 };
-var CONSTANT_VAL = {
-	[2]: true,
-	[3]: false,
-	[1]: void 0,
-	[0]: null,
-	[4]: -0,
-	[5]: Infinity,
-	[6]: -Infinity,
-	[7]: NaN
+var at = {
+	2: "!0",
+	3: "!1",
+	1: "void 0",
+	0: "null",
+	4: "-0",
+	5: "1/0",
+	6: "-1/0",
+	7: "0/0"
 };
-var ERROR_CONSTRUCTOR = {
-	[0]: Error,
-	[1]: EvalError,
-	[2]: RangeError,
-	[3]: ReferenceError,
-	[4]: SyntaxError,
-	[5]: TypeError,
-	[6]: URIError
+var o$1 = void 0;
+var st = {
+	2: !0,
+	3: !1,
+	1: o$1,
+	0: null,
+	4: -0,
+	5: Number.POSITIVE_INFINITY,
+	6: Number.NEGATIVE_INFINITY,
+	7: NaN
 };
-function createErrorConstructorStringTable() {
-	const result = {};
-	for (let i = 0; i <= 6; i++) result[i] = ERROR_CONSTRUCTOR[i].name;
-	return result;
-}
-var ERROR_CONSTRUCTOR_STRING = /* @__PURE__ */ createErrorConstructorStringTable();
-function createSerovalNode(t, i, s, c, m, p, e, a, f, b, o, l) {
-	if (c === void 0 && m === void 0 && p === void 0 && e === void 0 && a === void 0 && f === void 0 && b === void 0 && o === void 0 && l === void 0) return {
-		t,
-		i,
-		s
-	};
+var Ae = {
+	0: "Error",
+	1: "EvalError",
+	2: "RangeError",
+	3: "ReferenceError",
+	4: "SyntaxError",
+	5: "TypeError",
+	6: "URIError"
+};
+var it = {
+	0: Error,
+	1: EvalError,
+	2: RangeError,
+	3: ReferenceError,
+	4: SyntaxError,
+	5: TypeError,
+	6: URIError
+};
+function c$1(e, r, t, n, a, s, i, u, l, g, S, d) {
 	return {
-		t,
-		i,
-		s,
-		c,
-		m,
-		p,
-		e,
-		a,
-		f,
-		b,
-		o,
-		l
+		t: e,
+		i: r,
+		s: t,
+		c: n,
+		m: a,
+		p: s,
+		e: i,
+		a: u,
+		f: l,
+		b: g,
+		o: S,
+		l: d
 	};
 }
-function createConstantNode(value) {
-	return createSerovalNode(2, void 0, value);
+function B$1(e) {
+	return c$1(2, o$1, e, o$1, o$1, o$1, o$1, o$1, o$1, o$1, o$1, o$1);
 }
-var TRUE_NODE = /* @__PURE__ */ createConstantNode(2);
-var FALSE_NODE = /* @__PURE__ */ createConstantNode(3);
-var UNDEFINED_NODE = /* @__PURE__ */ createConstantNode(1);
-var NULL_NODE = /* @__PURE__ */ createConstantNode(0);
-var NEG_ZERO_NODE = /* @__PURE__ */ createConstantNode(4);
-var INFINITY_NODE = /* @__PURE__ */ createConstantNode(5);
-var NEG_INFINITY_NODE = /* @__PURE__ */ createConstantNode(6);
-var NAN_NODE = /* @__PURE__ */ createConstantNode(7);
-var MIN_JSON_STRINGIFY_LENGTH = 64;
-var NEEDS_ESCAPE = /["\\\n\r\b\t\f<\u2028\u2029]/;
-var JSON_ESCAPE_DIFFERENCES = /[\x00-\x07\x0b\x0e-\x1f\ud800-\udfff]/;
-var LESS_THAN = /</g;
-var LINE_SEPARATOR = /\u2028/g;
-var PARAGRAPH_SEPARATOR = /\u2029/g;
-function escapeCharCode(code) {
-	switch (code) {
-		case 34: return "\\\"";
-		case 92: return "\\\\";
-		case 10: return "\\n";
-		case 13: return "\\r";
-		case 8: return "\\b";
-		case 9: return "\\t";
-		case 12: return "\\f";
-		case 60: return "\\x3C";
-		case 8232: return "\\u2028";
-		case 8233: return "\\u2029";
-		default: return;
+var J$1 = B$1(2);
+var Z = B$1(3);
+var Ee = B$1(1);
+var Ie = B$1(0);
+var ut = B$1(4);
+var lt = B$1(5);
+var ct = B$1(6);
+var ft = B$1(7);
+function dn(e) {
+	switch (e) {
+		case "\"": return "\\\"";
+		case "\\": return "\\\\";
+		case `
+`: return "\\n";
+		case "\r": return "\\r";
+		case "\b": return "\\b";
+		case "	": return "\\t";
+		case "\f": return "\\f";
+		case "<": return "\\x3C";
+		case "\u2028": return "\\u2028";
+		case "\u2029": return "\\u2029";
+		default: return o$1;
 	}
 }
-function serializeString(str) {
-	if (!NEEDS_ESCAPE.test(str)) return str;
-	if (str.length >= MIN_JSON_STRINGIFY_LENGTH && !JSON_ESCAPE_DIFFERENCES.test(str)) {
-		let result = JSON.stringify(str).slice(1, -1);
-		if (result.includes("<")) result = result.replace(LESS_THAN, "\\x3C");
-		if (result.includes("\u2028")) result = result.replace(LINE_SEPARATOR, "\\u2028");
-		if (result.includes("\u2029")) result = result.replace(PARAGRAPH_SEPARATOR, "\\u2029");
-		return result;
-	}
-	let result = "";
-	let lastPos = 0;
-	let replacement;
-	for (let i = 0, len = str.length; i < len; i++) {
-		replacement = escapeCharCode(str.charCodeAt(i));
-		if (replacement) {
-			result += str.slice(lastPos, i) + replacement;
-			lastPos = i + 1;
-		}
-	}
-	return result + str.slice(lastPos);
+function y$1(e) {
+	let r = "", t = 0, n;
+	for (let a = 0, s = e.length; a < s; a++) n = dn(e[a]), n && (r += e.slice(t, a) + n, t = a + 1);
+	return t === 0 ? r = e : r += e.slice(t), r;
 }
-var JSON_COMPATIBLE = /^(?:[^"\\\x00-\x1f]|\\["\\nrbtf])*$/;
-var ESCAPE_SEQUENCE = /(\\\\|\\"|\\n|\\r|\\b|\\t|\\f|\\u2028|\\u2029|\\x3C)/g;
-function deserializeString(str) {
-	if (typeof str !== "string") return str.replace(ESCAPE_SEQUENCE, deserializeString);
-	let index = str.indexOf("\\");
-	if (index === -1) return str;
-	if (JSON_COMPATIBLE.test(str)) return JSON.parse("\"" + str + "\"");
-	let result = "";
-	let lastPos = 0;
-	const last = str.length - 1;
-	while (index !== -1 && index < last) {
-		let replacement;
-		let length = 2;
-		switch (str.charCodeAt(index + 1)) {
-			case 92:
-				replacement = "\\";
-				break;
-			case 34:
-				replacement = "\"";
-				break;
-			case 110:
-				replacement = "\n";
-				break;
-			case 114:
-				replacement = "\r";
-				break;
-			case 98:
-				replacement = "\b";
-				break;
-			case 116:
-				replacement = "	";
-				break;
-			case 102:
-				replacement = "\f";
-				break;
-			case 120:
-				if (str.startsWith("3C", index + 2)) {
-					replacement = "<";
-					length = 4;
-				}
-				break;
-			case 117: if (str.startsWith("2028", index + 2)) {
-				replacement = "\u2028";
-				length = 6;
-			} else if (str.startsWith("2029", index + 2)) {
-				replacement = "\u2029";
-				length = 6;
-			}
-		}
-		if (replacement) {
-			result += str.slice(lastPos, index) + replacement;
-			lastPos = index + length;
-			index = str.indexOf("\\", lastPos);
-		} else index = str.indexOf("\\", index + 1);
+function gn(e) {
+	switch (e) {
+		case "\\\\": return "\\";
+		case "\\\"": return "\"";
+		case "\\n": return `
+`;
+		case "\\r": return "\r";
+		case "\\b": return "\b";
+		case "\\t": return "	";
+		case "\\f": return "\f";
+		case "\\x3C": return "<";
+		case "\\u2028": return "\u2028";
+		case "\\u2029": return "\u2029";
+		default: return e;
 	}
-	return result + str.slice(lastPos);
 }
-var STEP_ERROR_CODES = {
+function h$1(e) {
+	return e.replace(/(\\\\|\\"|\\n|\\r|\\b|\\t|\\f|\\u2028|\\u2029|\\x3C)/g, gn);
+}
+var U = "__SEROVAL_REFS__";
+var le$1 = "$R";
+var Re = `self.${le$1}`;
+function yn(e) {
+	return e == null ? `${Re}=${Re}||[]` : `(${Re}=${Re}||{})["${y$1(e)}"]=[]`;
+}
+var Ir = /* @__PURE__ */ new Map();
+var j$1 = /* @__PURE__ */ new Map();
+function Rr(e) {
+	return Ir.has(e);
+}
+function bn(e) {
+	return j$1.has(e);
+}
+function St(e) {
+	if (Rr(e)) return Ir.get(e);
+	throw new Pe(e);
+}
+function mt(e) {
+	if (bn(e)) return j$1.get(e);
+	throw new xe(e);
+}
+typeof globalThis != "undefined" ? Object.defineProperty(globalThis, U, {
+	value: j$1,
+	configurable: !0,
+	writable: !1,
+	enumerable: !1
+}) : typeof window != "undefined" ? Object.defineProperty(window, U, {
+	value: j$1,
+	configurable: !0,
+	writable: !1,
+	enumerable: !1
+}) : typeof self != "undefined" ? Object.defineProperty(self, U, {
+	value: j$1,
+	configurable: !0,
+	writable: !1,
+	enumerable: !1
+}) : typeof globalthis_default != "undefined" && Object.defineProperty(globalthis_default, U, {
+	value: j$1,
+	configurable: !0,
+	writable: !1,
+	enumerable: !1
+});
+function Te(e) {
+	return e instanceof EvalError ? 1 : e instanceof RangeError ? 2 : e instanceof ReferenceError ? 3 : e instanceof SyntaxError ? 4 : e instanceof TypeError ? 5 : e instanceof URIError ? 6 : 0;
+}
+function vn(e) {
+	let r = Ae[Te(e)];
+	return e.name !== r ? { name: e.name } : e.constructor.name !== r ? { name: e.constructor.name } : {};
+}
+function $(e, r) {
+	let t = vn(e), n = Object.getOwnPropertyNames(e);
+	for (let a = 0, s = n.length, i; a < s; a++) i = n[a], i !== "name" && i !== "message" && (i === "stack" ? r & 4 && (t = t || {}, t[i] = e[i]) : (t = t || {}, t[i] = e[i]));
+	return t;
+}
+function Oe(e) {
+	return Object.isFrozen(e) ? 3 : Object.isSealed(e) ? 2 : Object.isExtensible(e) ? 0 : 1;
+}
+function we(e) {
+	switch (e) {
+		case Number.POSITIVE_INFINITY: return lt;
+		case Number.NEGATIVE_INFINITY: return ct;
+	}
+	return e !== e ? ft : Object.is(e, -0) ? ut : c$1(0, o$1, e, o$1, o$1, o$1, o$1, o$1, o$1, o$1, o$1, o$1);
+}
+function X(e) {
+	return c$1(1, o$1, y$1(e), o$1, o$1, o$1, o$1, o$1, o$1, o$1, o$1, o$1);
+}
+function he(e) {
+	return c$1(3, o$1, "" + e, o$1, o$1, o$1, o$1, o$1, o$1, o$1, o$1, o$1);
+}
+function dt(e) {
+	return c$1(4, e, o$1, o$1, o$1, o$1, o$1, o$1, o$1, o$1, o$1, o$1);
+}
+function ze(e, r) {
+	let t = r.valueOf();
+	return c$1(5, e, t !== t ? "" : r.toISOString(), o$1, o$1, o$1, o$1, o$1, o$1, o$1, o$1, o$1);
+}
+function _e(e, r) {
+	return c$1(6, e, o$1, y$1(r.source), r.flags, o$1, o$1, o$1, o$1, o$1, o$1, o$1);
+}
+function gt(e, r) {
+	return c$1(17, e, Ce[r], o$1, o$1, o$1, o$1, o$1, o$1, o$1, o$1, o$1);
+}
+function yt(e, r) {
+	return c$1(18, e, y$1(St(r)), o$1, o$1, o$1, o$1, o$1, o$1, o$1, o$1, o$1);
+}
+function ce(e, r, t) {
+	return c$1(25, e, t, y$1(r), o$1, o$1, o$1, o$1, o$1, o$1, o$1, o$1);
+}
+function ke(e, r, t) {
+	return c$1(9, e, o$1, o$1, o$1, o$1, o$1, t, o$1, o$1, Oe(r), o$1);
+}
+function De(e, r) {
+	return c$1(21, e, o$1, o$1, o$1, o$1, o$1, o$1, r, o$1, o$1, o$1);
+}
+function Fe(e, r, t) {
+	return c$1(15, e, o$1, r.constructor.name, o$1, o$1, o$1, o$1, t, r.byteOffset, o$1, r.length);
+}
+function Be(e, r, t) {
+	return c$1(16, e, o$1, r.constructor.name, o$1, o$1, o$1, o$1, t, r.byteOffset, o$1, r.length);
+}
+function Ve(e, r, t) {
+	return c$1(20, e, o$1, o$1, o$1, o$1, o$1, o$1, t, r.byteOffset, o$1, r.byteLength);
+}
+function Me(e, r, t) {
+	return c$1(13, e, Te(r), o$1, y$1(r.message), t, o$1, o$1, o$1, o$1, o$1, o$1);
+}
+function Le(e, r, t) {
+	return c$1(14, e, Te(r), o$1, y$1(r.message), t, o$1, o$1, o$1, o$1, o$1, o$1);
+}
+function Ue(e, r) {
+	return c$1(7, e, o$1, o$1, o$1, o$1, o$1, r, o$1, o$1, o$1, o$1);
+}
+function je(e, r) {
+	return c$1(28, o$1, o$1, o$1, o$1, o$1, o$1, [e, r], o$1, o$1, o$1, o$1);
+}
+function Ye(e, r) {
+	return c$1(30, o$1, o$1, o$1, o$1, o$1, o$1, [e, r], o$1, o$1, o$1, o$1);
+}
+function qe(e, r, t) {
+	return c$1(31, e, o$1, o$1, o$1, o$1, o$1, t, r, o$1, o$1, o$1);
+}
+function We(e, r) {
+	return c$1(32, e, o$1, o$1, o$1, o$1, o$1, o$1, r, o$1, o$1, o$1);
+}
+function Ke(e, r) {
+	return c$1(33, e, o$1, o$1, o$1, o$1, o$1, o$1, r, o$1, o$1, o$1);
+}
+function Ge(e, r) {
+	return c$1(34, e, o$1, o$1, o$1, o$1, o$1, o$1, r, o$1, o$1, o$1);
+}
+function He(e, r, t, n) {
+	return c$1(35, e, t, o$1, o$1, o$1, o$1, r, o$1, o$1, o$1, n);
+}
+var { toString: bs } = Object.prototype;
+var Cn = {
 	parsing: 1,
 	serialization: 2,
 	deserialization: 3
 };
-function getErrorMessageProd(type) {
-	return `Seroval Error (step: ${STEP_ERROR_CODES[type]})`;
+function An(e) {
+	return `Seroval Error (step: ${Cn[e]})`;
 }
-var SerovalError = class extends Error {
-	constructor(type, cause) {
-		super(getErrorMessageProd(type));
-		this.cause = cause;
+var En = (e, r) => An(e);
+var fe = class extends Error {
+	constructor(t, n) {
+		super(En(t, n));
+		this.cause = n;
 	}
 };
-var SerovalParserError = class extends SerovalError {
-	constructor(cause) {
-		super("parsing", cause);
+var _ = class extends fe {
+	constructor(r) {
+		super("parsing", r);
 	}
 };
-var SerovalSerializationError = class extends SerovalError {
-	constructor(cause) {
-		super("serialization", cause);
+var Je = class extends fe {
+	constructor(r) {
+		super("deserialization", r);
 	}
 };
-var SerovalDeserializationError = class extends SerovalError {
-	constructor(cause) {
-		super("deserialization", cause);
-	}
-};
-function getSpecificErrorMessage(code) {
-	return `Seroval Error (specific: ${code})`;
+function k(e) {
+	return `Seroval Error (specific: ${e})`;
 }
-var SerovalUnsupportedTypeError = class extends Error {
-	constructor(value) {
-		super(getSpecificErrorMessage(1));
-		this.value = value;
+var x$1 = class extends Error {
+	constructor(t) {
+		super(k(1));
+		this.value = t;
 	}
 };
-var SerovalUnsupportedNodeError = class extends Error {
-	constructor(node) {
-		super(getSpecificErrorMessage(2));
+var z = class extends Error {
+	constructor(r) {
+		super(k(2));
 	}
 };
-var SerovalMissingPluginError = class extends Error {
-	constructor(tag) {
-		super(getSpecificErrorMessage(3));
+var Q$1 = class extends Error {
+	constructor(r) {
+		super(k(3));
 	}
 };
-var SerovalMissingInstanceError = class extends Error {
-	constructor(tag) {
-		super(getSpecificErrorMessage(4));
+var V = class extends Error {
+	constructor(r) {
+		super(k(4));
 	}
 };
-var SerovalMissingReferenceForIdError = class extends Error {
-	constructor(id) {
-		super(getSpecificErrorMessage(6));
+var Pe = class extends Error {
+	constructor(t) {
+		super(k(5));
+		this.value = t;
 	}
 };
-var SerovalUnknownTypedArrayError = class extends Error {
-	constructor(name) {
-		super(getSpecificErrorMessage(7));
+var xe = class extends Error {
+	constructor(r) {
+		super(k(6));
 	}
 };
-var SerovalMalformedNodeError = class extends Error {
-	constructor(node) {
-		super(getSpecificErrorMessage(8));
+var Ze = class extends Error {
+	constructor(r) {
+		super(k(7));
 	}
 };
-var SerovalConflictedNodeIdError = class extends Error {
-	constructor(node) {
-		super(getSpecificErrorMessage(9));
+var O$1 = class extends Error {
+	constructor(r) {
+		super(k(8));
 	}
 };
-var SerovalDepthLimitError = class extends Error {
-	constructor(limit) {
-		super(getSpecificErrorMessage(10));
+var M$1 = class extends Error {
+	constructor(r) {
+		super(k(9));
 	}
 };
-var SerovalLiveStreamError = class extends Error {
-	constructor(reason) {
-		super(getSpecificErrorMessage(12));
-		this.reason = reason;
+var Y = class {
+	constructor(r, t) {
+		this.value = r;
+		this.replacement = t;
 	}
 };
-function getErrorConstructor(error) {
-	for (let i = 1; i <= 6; i++) if (error instanceof ERROR_CONSTRUCTOR[i]) return i;
-	return 0;
+var ee$1 = () => {
+	let e = {
+		p: 0,
+		s: 0,
+		f: 0
+	};
+	return e.p = new Promise((r, t) => {
+		e.s = r, e.f = t;
+	}), e;
+};
+var In = (e, r) => {
+	e.s(r), e.p.s = 1, e.p.v = r;
+};
+var Rn = (e, r) => {
+	e.f(r), e.p.s = 2, e.p.v = r;
+};
+var bt = ee$1.toString();
+var vt = In.toString();
+var Ct = Rn.toString();
+var xr = () => {
+	let e = [], r = [], t = !0, n = !1, a = 0, s = (l, g, S) => {
+		for (S = 0; S < a; S++) r[S] && r[S][g](l);
+	}, i = (l, g, S, d) => {
+		for (g = 0, S = e.length; g < S; g++) d = e[g], !t && g === S - 1 ? l[n ? "return" : "throw"](d) : l.next(d);
+	}, u = (l, g) => (t && (g = a++, r[g] = l), i(l), () => {
+		t && (r[g] = r[a], r[a--] = void 0);
+	});
+	return {
+		__SEROVAL_STREAM__: !0,
+		on: (l) => u(l),
+		next: (l) => {
+			t && (e.push(l), s(l, "next"));
+		},
+		throw: (l) => {
+			t && (e.push(l), s(l, "throw"), t = !1, n = !1, r.length = 0);
+		},
+		return: (l) => {
+			t && (e.push(l), s(l, "return"), t = !1, n = !0, r.length = 0);
+		}
+	};
+};
+var At = xr.toString();
+var Tr = (e) => (r) => () => {
+	let t = 0, n = {
+		[e]: () => n,
+		next: () => {
+			if (t > r.d) return {
+				done: !0,
+				value: void 0
+			};
+			let a = t++, s = r.v[a];
+			if (a === r.t) throw s;
+			return {
+				done: a === r.d,
+				value: s
+			};
+		}
+	};
+	return n;
+};
+var Et = Tr.toString();
+var Or = (e, r) => (t) => () => {
+	let n = 0, a = -1, s = !1, i = [], u = [], l = (S = 0, d = u.length) => {
+		for (; S < d; S++) u[S].s({
+			done: !0,
+			value: void 0
+		});
+	};
+	t.on({
+		next: (S) => {
+			let d = u.shift();
+			d && d.s({
+				done: !1,
+				value: S
+			}), i.push(S);
+		},
+		throw: (S) => {
+			let d = u.shift();
+			d && d.f(S), l(), a = i.length, s = !0, i.push(S);
+		},
+		return: (S) => {
+			let d = u.shift();
+			d && d.s({
+				done: !0,
+				value: S
+			}), l(), a = i.length, i.push(S);
+		}
+	});
+	let g = {
+		[e]: () => g,
+		next: () => {
+			if (a === -1) {
+				let G = n++;
+				if (G >= i.length) {
+					let tt = r();
+					return u.push(tt), tt.p;
+				}
+				return {
+					done: !1,
+					value: i[G]
+				};
+			}
+			if (n > a) return {
+				done: !0,
+				value: void 0
+			};
+			let S = n++, d = i[S];
+			if (S !== a) return {
+				done: !1,
+				value: d
+			};
+			if (s) throw d;
+			return {
+				done: !0,
+				value: d
+			};
+		}
+	};
+	return g;
+};
+var It = Or.toString();
+var wr = (e) => {
+	let r = atob(e), t = r.length, n = new Uint8Array(t);
+	for (let a = 0; a < t; a++) n[a] = r.charCodeAt(a);
+	return n.buffer;
+};
+var Rt = wr.toString();
+function $e(e) {
+	return "__SEROVAL_SEQUENCE__" in e;
 }
-function getErrorOptions(error, features) {
-	const options = Object.create(null);
-	const construct = ERROR_CONSTRUCTOR_STRING[getErrorConstructor(error)];
-	if (error.name !== construct) options.name = error.name;
-	else if (error.constructor.name !== construct) options.name = error.constructor.name;
-	for (const name of Object.getOwnPropertyNames(error)) if (name !== "name" && name !== "message" && (name !== "stack" || features & 4)) options[name] = error[name];
-	return options;
+function hr(e, r, t) {
+	return {
+		__SEROVAL_SEQUENCE__: !0,
+		v: e,
+		t: r,
+		d: t
+	};
 }
-function getObjectFlag(obj) {
-	if (Object.isExtensible(obj)) return 0;
-	if (Object.isFrozen(obj)) return 3;
-	if (Object.isSealed(obj)) return 2;
-	return 1;
+function Xe(e) {
+	let r = [], t = -1, n = -1, a = e[C]();
+	for (;;) try {
+		let s = a.next();
+		if (r.push(s.value), s.done) {
+			n = r.length - 1;
+			break;
+		}
+	} catch (s) {
+		t = r.length, r.push(s);
+	}
+	return hr(r, t, n);
 }
-function getTypedArrayConstructor(name) {
-	switch (name) {
+var Pn = Tr(C);
+function Pt(e) {
+	return Pn(e);
+}
+var xt = {};
+var Tt = {};
+var Ot = {
+	0: {},
+	1: {},
+	2: {},
+	3: {},
+	4: {},
+	5: {}
+};
+var wt = {
+	0: "[]",
+	1: bt,
+	2: vt,
+	3: Ct,
+	4: At,
+	5: Rt
+};
+function Qe(e) {
+	return "__SEROVAL_STREAM__" in e;
+}
+function re$1() {
+	return xr();
+}
+function er(e) {
+	let r = re$1(), t = e[v$1]();
+	async function n() {
+		try {
+			let a = await t.next();
+			a.done ? r.return(a.value) : (r.next(a.value), await n());
+		} catch (a) {
+			r.throw(a);
+		}
+	}
+	return n().catch(() => {}), r;
+}
+var xn = Or(v$1, ee$1);
+function ht(e) {
+	return xn(e);
+}
+async function zr(e) {
+	try {
+		return [1, await e];
+	} catch (r) {
+		return [0, r];
+	}
+}
+function me(e, r) {
+	return {
+		plugins: r.plugins,
+		mode: e,
+		marked: /* @__PURE__ */ new Set(),
+		features: 63 ^ (r.disabledFeatures || 0),
+		refs: r.refs || /* @__PURE__ */ new Map(),
+		depthLimit: r.depthLimit || 1e3
+	};
+}
+function pe(e, r) {
+	e.marked.add(r);
+}
+function _r(e, r) {
+	let t = e.refs.size;
+	return e.refs.set(r, t), t;
+}
+function rr(e, r) {
+	let t = e.refs.get(r);
+	return t != null ? (pe(e, t), {
+		type: 1,
+		value: dt(t)
+	}) : {
+		type: 0,
+		value: _r(e, r)
+	};
+}
+function q(e, r) {
+	let t = rr(e, r);
+	return t.type === 1 ? t : Rr(r) ? {
+		type: 2,
+		value: yt(t.value, r)
+	} : t;
+}
+function I(e, r) {
+	let t = q(e, r);
+	if (t.type !== 0) return t.value;
+	if (r in Ce) return gt(t.value, r);
+	throw new x$1(r);
+}
+function D$1(e, r) {
+	let t = rr(e, Ot[r]);
+	return t.type === 1 ? t.value : c$1(26, t.value, r, o$1, o$1, o$1, o$1, o$1, o$1, o$1, o$1, o$1);
+}
+function tr(e) {
+	let r = rr(e, xt);
+	return r.type === 1 ? r.value : c$1(27, r.value, o$1, o$1, o$1, o$1, o$1, o$1, I(e, C), o$1, o$1, o$1);
+}
+function nr(e) {
+	let r = rr(e, Tt);
+	return r.type === 1 ? r.value : c$1(29, r.value, o$1, o$1, o$1, o$1, o$1, [D$1(e, 1), I(e, v$1)], o$1, o$1, o$1, o$1);
+}
+function or(e, r, t, n) {
+	return c$1(t ? 11 : 10, e, o$1, o$1, o$1, n, o$1, o$1, o$1, o$1, Oe(r), o$1);
+}
+function ar(e, r, t, n) {
+	return c$1(8, r, o$1, o$1, o$1, o$1, {
+		k: t,
+		v: n
+	}, o$1, D$1(e, 0), o$1, o$1, o$1);
+}
+function _t(e, r, t) {
+	return c$1(22, r, t, o$1, o$1, o$1, o$1, o$1, D$1(e, 1), o$1, o$1, o$1);
+}
+function sr(e, r, t) {
+	let n = new Uint8Array(t), a = "";
+	for (let s = 0, i = n.length; s < i; s++) a += String.fromCharCode(n[s]);
+	return c$1(19, r, y$1(btoa(a)), o$1, o$1, o$1, o$1, o$1, D$1(e, 5), o$1, o$1, o$1);
+}
+function te(e, r) {
+	return {
+		base: me(e, r),
+		child: void 0
+	};
+}
+var Dr = class {
+	constructor(r, t) {
+		this._p = r;
+		this.depth = t;
+	}
+	parse(r) {
+		return N$1(this._p, this.depth, r);
+	}
+};
+async function On(e, r, t) {
+	let n = [];
+	for (let a = 0, s = t.length; a < s; a++) a in t ? n[a] = await N$1(e, r, t[a]) : n[a] = 0;
+	return n;
+}
+async function wn(e, r, t, n) {
+	return ke(t, n, await On(e, r, n));
+}
+async function Fr(e, r, t) {
+	let n = Object.entries(t), a = [], s = [];
+	for (let i = 0, u = n.length; i < u; i++) a.push(y$1(n[i][0])), s.push(await N$1(e, r, n[i][1]));
+	return C in t && (a.push(I(e.base, C)), s.push(je(tr(e.base), await N$1(e, r, Xe(t))))), v$1 in t && (a.push(I(e.base, v$1)), s.push(Ye(nr(e.base), await N$1(e, r, er(t))))), P$1 in t && (a.push(I(e.base, P$1)), s.push(X(t[P$1]))), R in t && (a.push(I(e.base, R)), s.push(t[R] ? J$1 : Z)), {
+		k: a,
+		v: s
+	};
+}
+async function kr(e, r, t, n, a) {
+	return or(t, n, a, await Fr(e, r, n));
+}
+async function hn(e, r, t, n) {
+	return De(t, await N$1(e, r, n.valueOf()));
+}
+async function zn(e, r, t, n) {
+	return Fe(t, n, await N$1(e, r, n.buffer));
+}
+async function _n(e, r, t, n) {
+	return Be(t, n, await N$1(e, r, n.buffer));
+}
+async function kn(e, r, t, n) {
+	return Ve(t, n, await N$1(e, r, n.buffer));
+}
+async function kt(e, r, t, n) {
+	let a = $(n, e.base.features);
+	return Me(t, n, a ? await Fr(e, r, a) : o$1);
+}
+async function Dn(e, r, t, n) {
+	let a = $(n, e.base.features);
+	return Le(t, n, a ? await Fr(e, r, a) : o$1);
+}
+async function Fn(e, r, t, n) {
+	let a = [], s = [];
+	for (let [i, u] of n.entries()) a.push(await N$1(e, r, i)), s.push(await N$1(e, r, u));
+	return ar(e.base, t, a, s);
+}
+async function Bn(e, r, t, n) {
+	let a = [];
+	for (let s of n.keys()) a.push(await N$1(e, r, s));
+	return Ue(t, a);
+}
+async function Dt(e, r, t, n) {
+	let a = e.base.plugins;
+	if (a) for (let s = 0, i = a.length; s < i; s++) {
+		let u = a[s];
+		if (u.parse.async && u.test(n)) return ce(t, u.tag, await u.parse.async(n, new Dr(e, r), { id: t }));
+	}
+	return o$1;
+}
+async function Vn(e, r, t, n) {
+	let [a, s] = await zr(n);
+	return c$1(12, t, a, o$1, o$1, o$1, o$1, o$1, await N$1(e, r, s), o$1, o$1, o$1);
+}
+function Mn(e, r, t, n, a) {
+	let s = [], i = t.on({
+		next: (u) => {
+			pe(this.base, r), N$1(this, e, u).then((l) => {
+				s.push(We(r, l));
+			}, (l) => {
+				a(l), i();
+			});
+		},
+		throw: (u) => {
+			pe(this.base, r), N$1(this, e, u).then((l) => {
+				s.push(Ke(r, l)), n(s), i();
+			}, (l) => {
+				a(l), i();
+			});
+		},
+		return: (u) => {
+			pe(this.base, r), N$1(this, e, u).then((l) => {
+				s.push(Ge(r, l)), n(s), i();
+			}, (l) => {
+				a(l), i();
+			});
+		}
+	});
+}
+async function Ln(e, r, t, n) {
+	return qe(t, D$1(e.base, 4), await new Promise(Mn.bind(e, r, t, n)));
+}
+async function Un(e, r, t, n) {
+	let a = [];
+	for (let s = 0, i = n.v.length; s < i; s++) a[s] = await N$1(e, r, n.v[s]);
+	return He(t, a, n.t, n.d);
+}
+async function jn(e, r, t, n) {
+	if (Array.isArray(n)) return wn(e, r, t, n);
+	if (Qe(n)) return Ln(e, r, t, n);
+	if ($e(n)) return Un(e, r, t, n);
+	let a = n.constructor;
+	if (a === Y) return N$1(e, r, n.replacement);
+	let s = await Dt(e, r, t, n);
+	if (s) return s;
+	switch (a) {
+		case Object: return kr(e, r, t, n, !1);
+		case o$1: return kr(e, r, t, n, !0);
+		case Date: return ze(t, n);
+		case Error:
+		case EvalError:
+		case RangeError:
+		case ReferenceError:
+		case SyntaxError:
+		case TypeError:
+		case URIError: return kt(e, r, t, n);
+		case Number:
+		case Boolean:
+		case String:
+		case BigInt: return hn(e, r, t, n);
+		case ArrayBuffer: return sr(e.base, t, n);
+		case Int8Array:
+		case Int16Array:
+		case Int32Array:
+		case Uint8Array:
+		case Uint16Array:
+		case Uint32Array:
+		case Uint8ClampedArray:
+		case Float32Array:
+		case Float64Array: return zn(e, r, t, n);
+		case DataView: return kn(e, r, t, n);
+		case Map: return Fn(e, r, t, n);
+		case Set: return Bn(e, r, t, n);
+	}
+	if (a === Promise || n instanceof Promise) return Vn(e, r, t, n);
+	let i = e.base.features;
+	if (i & 32 && a === RegExp) return _e(t, n);
+	if (i & 16) switch (a) {
+		case BigInt64Array:
+		case BigUint64Array: return _n(e, r, t, n);
+		default: break;
+	}
+	if (i & 1 && typeof AggregateError != "undefined" && (a === AggregateError || n instanceof AggregateError)) return Dn(e, r, t, n);
+	if (n instanceof Error) return kt(e, r, t, n);
+	if (C in n || v$1 in n) return kr(e, r, t, n, !!a);
+	throw new x$1(n);
+}
+async function Yn(e, r, t) {
+	let n = q(e.base, t);
+	if (n.type !== 0) return n.value;
+	let a = await Dt(e, r, n.value, t);
+	if (a) return a;
+	throw new x$1(t);
+}
+async function N$1(e, r, t) {
+	if (r >= e.base.depthLimit) throw new M$1(e.base.depthLimit);
+	switch (typeof t) {
+		case "boolean": return t ? J$1 : Z;
+		case "undefined": return Ee;
+		case "string": return X(t);
+		case "number": return we(t);
+		case "bigint": return he(t);
+		case "object":
+			if (t) {
+				let n = q(e.base, t);
+				return n.type === 0 ? await jn(e, r + 1, n.value, t) : n.value;
+			}
+			return Ie;
+		case "symbol": return I(e.base, t);
+		case "function": return Yn(e, r, t);
+		default: throw new x$1(t);
+	}
+}
+async function ne(e, r) {
+	try {
+		return await N$1(e, 0, r);
+	} catch (t) {
+		throw t instanceof _ ? t : new _(t);
+	}
+}
+var oe$1 = ((t) => (t[t.Vanilla = 1] = "Vanilla", t[t.Cross = 2] = "Cross", t))(oe$1 || {});
+function ai(e) {
+	return e;
+}
+function Ft(e, r) {
+	for (let t = 0, n = r.length; t < n; t++) {
+		let a = r[t];
+		e.has(a) || (e.add(a), a.extends && Ft(e, a.extends));
+	}
+}
+function A$1(e) {
+	if (e) {
+		let r = /* @__PURE__ */ new Set();
+		return Ft(r, e), [...r];
+	}
+}
+function Bt(e) {
+	switch (e) {
 		case "Int8Array": return Int8Array;
 		case "Int16Array": return Int16Array;
 		case "Int32Array": return Int32Array;
@@ -332,843 +877,997 @@ function getTypedArrayConstructor(name) {
 		case "Float64Array": return Float64Array;
 		case "BigInt64Array": return BigInt64Array;
 		case "BigUint64Array": return BigUint64Array;
-		default: throw new SerovalUnknownTypedArrayError(name);
+		default: throw new Ze(e);
 	}
 }
-var typedArrayNameGetter;
-function getTypedArrayName(value) {
-	if (!typedArrayNameGetter) typedArrayNameGetter = Object.getOwnPropertyDescriptor(Object.getPrototypeOf(Int8Array.prototype), Symbol.toStringTag).get;
-	return typedArrayNameGetter.call(value);
-}
-function createNumberNode(value) {
-	switch (value) {
-		case Number.POSITIVE_INFINITY: return INFINITY_NODE;
-		case Number.NEGATIVE_INFINITY: return NEG_INFINITY_NODE;
+function de$1(e) {
+	switch (e) {
+		case "constructor":
+		case "__proto__":
+		case "prototype":
+		case "__defineGetter__":
+		case "__defineSetter__":
+		case "__lookupGetter__":
+		case "__lookupSetter__": return !1;
+		default: return !0;
 	}
-	if (value !== value) return NAN_NODE;
-	if (Object.is(value, -0)) return NEG_ZERO_NODE;
-	return createSerovalNode(0, void 0, value);
 }
-function createStringNode(value) {
-	return createSerovalNode(1, void 0, serializeString(value));
-}
-function createBigIntNode(current) {
-	return createSerovalNode(3, void 0, "" + current);
-}
-function createIndexedValueNode(id) {
-	return createSerovalNode(4, id);
-}
-function createDateNode(id, current) {
-	const timestamp = current.valueOf();
-	return createSerovalNode(5, id, timestamp === timestamp ? current.toISOString() : "");
-}
-function createTemporalNode(id, type, current) {
-	return createSerovalNode(36, id, current.toString(), type);
-}
-var getRegExpSource = Object.getOwnPropertyDescriptor(RegExp.prototype, "source").get;
-var getRegExpFlags = Object.getOwnPropertyDescriptor(RegExp.prototype, "flags").get;
-function createRegExpNode(id, current) {
-	return createSerovalNode(6, id, void 0, serializeString(getRegExpSource.call(current)), getRegExpFlags.call(current));
-}
-function createWKSymbolNode(id, current) {
-	return createSerovalNode(17, id, INV_SYMBOL_REF[current]);
-}
-function createReferenceNode(id, referenceId) {
-	return createSerovalNode(18, id, serializeString(referenceId));
-}
-function createPluginNode(id, tag, value) {
-	return createSerovalNode(25, id, value, serializeString(tag));
-}
-function createArrayNode(id, current, parsedItems) {
-	return createSerovalNode(9, id, void 0, void 0, void 0, void 0, void 0, parsedItems, void 0, void 0, getObjectFlag(current));
-}
-function createBoxedNode(id, boxed) {
-	return createSerovalNode(21, id, void 0, void 0, void 0, void 0, void 0, void 0, boxed);
-}
-var MAX_TYPED_ARRAY_LENGTH = 1e6;
-function createViewNode(type, id, current, buffer) {
-	const isDataView = type === 20;
-	const size = isDataView ? current.byteLength : current.length;
-	if (size > MAX_TYPED_ARRAY_LENGTH) throw new SerovalUnsupportedTypeError(current);
-	return createSerovalNode(type, id, void 0, isDataView ? void 0 : getTypedArrayName(current), void 0, void 0, void 0, void 0, buffer, current.byteOffset, void 0, size);
-}
-function createErrorNode(type, id, current, options) {
-	return createSerovalNode(type, id, getErrorConstructor(current), void 0, serializeString(current.message), options);
-}
-function createSetNode(id, items) {
-	return createSerovalNode(7, id, void 0, void 0, void 0, void 0, void 0, items);
-}
-function createIteratorFactoryInstanceNode(type, factory, items) {
-	return createSerovalNode(type, void 0, void 0, void 0, void 0, void 0, void 0, [factory, items]);
-}
-function createStreamConstructorNode(id, factory, sequence, live) {
-	return createSerovalNode(31, id, void 0, void 0, void 0, void 0, void 0, sequence, factory, void 0, void 0, live);
-}
-function createStreamEventNode(type, id, parsed) {
-	return createSerovalNode(type, id, void 0, void 0, void 0, void 0, void 0, void 0, parsed);
-}
-function createSequenceNode(id, sequence, throwAt, doneAt) {
-	return createSerovalNode(35, id, throwAt, void 0, void 0, void 0, void 0, sequence, void 0, void 0, void 0, doneAt);
-}
-function isLiveStream(value) {
-	return value instanceof LiveStream;
-}
-/**
-* A single-consumer stream for incremental serialization. Unlike
-* `createStream`, it keeps no history: at most one event is held, and the
-* producer operation that sent it settles only when the consumer accepts it.
-*
-* An internal class rather than a tagged POJO: identity is checked with
-* `instanceof`, which untrusted input cannot forge. The class is exported
-* because bundlers cannot drop an unexported top-level class.
-*/
-var LiveStream = class {
-	constructor(options) {
-		this.consumed = false;
-		this.closed = false;
-		this.cancelled = false;
-		this.options = options;
+function Vt(e) {
+	switch (e) {
+		case v$1:
+		case R:
+		case P$1:
+		case C: return !0;
+		default: return !1;
 	}
-	deliver(reader, record) {
-		record.delivered = true;
-		reader.resolve({
-			event: record.event,
-			accept: () => {
-				if (this.pending === record && record.delivered) {
-					const terminal = record.event.type !== "next";
-					record.event = void 0;
-					this.pending = void 0;
-					const resolve = record.resolve;
-					record.resolve = void 0;
-					record.reject = void 0;
-					if (terminal) {
-						this.closed = true;
-						this.options = void 0;
-						const waiter = this.waiting;
-						this.waiting = void 0;
-						waiter?.reject(new SerovalLiveStreamError("closed"));
-					}
-					resolve?.();
-				}
-			}
-		});
+}
+var qn = 1e6;
+var Wn = 1e4;
+var Kn = 2e4;
+function Lt(e, r) {
+	switch (r) {
+		case 3: return Object.freeze(e);
+		case 1: return Object.preventExtensions(e);
+		case 2: return Object.seal(e);
+		default: return e;
 	}
-	/** @internal */
-	push(event) {
-		if (this.cancelled) return Promise.reject(this.cancelReason);
-		if (this.closed) return Promise.reject(new SerovalLiveStreamError("closed"));
-		if (this.pending) return Promise.reject(new SerovalLiveStreamError("pending"));
-		return new Promise((resolve, reject) => {
-			const record = {
-				event,
-				delivered: false,
-				resolve,
-				reject
-			};
-			this.pending = record;
-			if (this.waiting) {
-				const waiter = this.waiting;
-				this.waiting = void 0;
-				this.deliver(waiter, record);
-			}
-		});
-	}
-	cancel(reason) {
-		if (this.cancelled || this.closed) return;
-		this.cancelled = true;
-		this.cancelReason = reason;
-		const record = this.pending;
-		const waiter = this.waiting;
-		this.pending = void 0;
-		this.waiting = void 0;
-		const callbackOwner = this.options;
-		this.options = void 0;
-		if (record) {
-			record.event = void 0;
-			const reject = record.reject;
-			record.resolve = void 0;
-			record.reject = void 0;
-			reject?.(reason);
-		}
-		if (waiter) waiter.reject(reason);
-		callbackOwner?.onCancel?.(reason);
-	}
-	read() {
-		if (this.cancelled) return Promise.reject(this.cancelReason);
-		if (this.closed) return Promise.reject(new SerovalLiveStreamError("closed"));
-		if (this.waiting) return Promise.reject(new SerovalLiveStreamError("reading"));
-		return new Promise((resolve, reject) => {
-			const next = {
-				resolve,
-				reject
-			};
-			if (this.pending && !this.pending.delivered) this.deliver(next, this.pending);
-			else this.waiting = next;
-		});
-	}
-	consume() {
-		if (this.consumed) throw new SerovalLiveStreamError("consumed");
-		this.consumed = true;
-		return {
-			read: () => this.read(),
-			cancel: (reason) => this.cancel(reason)
-		};
-	}
-	/**
-	* Consumes the stream through a replay-style listener, accepting each
-	* event as soon as it has been delivered. Use `consume` or `pump` when
-	* acceptance must wait for processing.
-	*/
-	on(listener) {
-		const wrap = (key) => (value, accept) => {
-			listener[key](value);
-			accept();
-		};
-		return this.pump({
-			next: wrap("next"),
-			throw: wrap("throw"),
-			return: wrap("return")
-		});
-	}
-	/**
-	* Consumes the stream into a sink that controls acceptance. Returns the
-	* cancel function.
-	* @internal
-	*/
-	pump(sink) {
-		const consumer = this.consume();
-		let current = sink;
-		function next() {
-			consumer.read().then((delivery) => {
-				const target = current;
-				if (!target) return;
-				const event = delivery.event;
-				let failure;
-				let failed = false;
-				try {
-					failure = target[event.type](event.type === "throw" ? event.error : event.value, delivery.accept);
-				} catch (error) {
-					failed = true;
-					failure = error;
-				}
-				if (failed || failure !== void 0) {
-					current = void 0;
-					try {
-						consumer.cancel(failure);
-					} finally {
-						target.done?.();
-					}
-					return;
-				}
-				if (event.type === "next") {
-					next();
-					return;
-				}
-				current = void 0;
-				target.done?.();
-			}, (reason) => {
-				const target = current;
-				current = void 0;
-				target?.error?.(reason);
-			});
-		}
-		next();
-		return consumer.cancel;
-	}
-};
-/**
-* An opaque reference allows hiding values from the serializer.
-*/
-var OpaqueReference = class {
-	constructor(value, replacement) {
-		this.value = value;
-		this.replacement = replacement;
-	}
-};
-var PROMISE_CONSTRUCTOR = () => {
-	const resolver = {
-		p: 0,
-		s: 0,
-		f: 0
+}
+var Gn = 1e3;
+function Ut(e, r) {
+	var n;
+	let t = r.refs || /* @__PURE__ */ new Map();
+	return "types" in t || Object.assign(t, { types: /* @__PURE__ */ new Map() }), {
+		mode: e,
+		plugins: r.plugins,
+		refs: t,
+		features: (n = r.features) != null ? n : 63 ^ (r.disabledFeatures || 0),
+		depthLimit: r.depthLimit || Gn
 	};
-	resolver.p = new Promise((resolve, reject) => {
-		resolver.s = resolve;
-		resolver.f = reject;
-	});
-	return resolver;
-};
-var PROMISE_SUCCESS = (resolver, data) => {
-	resolver.s(data);
-	resolver.p.s = 1;
-	resolver.p.v = data;
-};
-var PROMISE_FAILURE = (resolver, data) => {
-	resolver.f(data);
-	resolver.p.s = 2;
-	resolver.p.v = data;
-};
-var SERIALIZED_PROMISE_CONSTRUCTOR = /* @__PURE__ */ PROMISE_CONSTRUCTOR.toString();
-var SERIALIZED_PROMISE_SUCCESS = /* @__PURE__ */ PROMISE_SUCCESS.toString();
-var SERIALIZED_PROMISE_FAILURE = /* @__PURE__ */ PROMISE_FAILURE.toString();
-var STREAM_CONSTRUCTOR = (live) => {
-	const buffer = [];
-	const listeners = [];
-	let alive = true;
-	let success = false;
-	let count = 0;
-	const internal = {
-		flush(value, mode, x) {
-			live > 1 || buffer.push(value);
-			for (x = 0; x < count; x++) {
-				const listener = listeners[x];
-				if (listener) listener[mode](value);
-			}
-		},
-		up(listener, x, z, current) {
-			for (x = 0, z = buffer.length; x < z; x++) {
-				current = buffer[x];
-				if (!alive && x === z - 1) listener[success ? "return" : "throw"](current);
-				else listener.next(current);
-			}
-		},
-		on(listener, temp = 0) {
-			if (live > 1) throw new Error("Stream consumed");
-			let subscribed = alive;
-			if (alive) {
-				for (temp = 0; temp < count; temp++) if (!listeners[temp]) break;
-				if (temp === count) count++;
-				listeners[temp] = listener;
-			}
-			internal.up(listener);
-			if (live) {
-				live = 2;
-				buffer.length = 0;
-			}
-			return () => {
-				if (alive && subscribed) {
-					subscribed = false;
-					listeners[temp] = void 0;
-					while (count > 0 && !listeners[count - 1]) count--;
-					listeners.length = count;
-				}
-			};
-		}
-	};
+}
+function jt(e) {
 	return {
-		__SEROVAL_STREAM__: true,
-		on(listener) {
-			return internal.on(listener);
-		},
-		next(value) {
-			if (alive) internal.flush(value, "next");
-		},
-		throw(value) {
-			if (alive) {
-				internal.flush(value, "throw");
-				alive = false;
-				success = false;
-				listeners.length = 0;
-			}
-		},
-		return(value) {
-			if (alive) {
-				internal.flush(value, "return");
-				alive = false;
-				success = true;
-				listeners.length = 0;
-			}
-		}
+		mode: 1,
+		base: Ut(1, e),
+		child: o$1,
+		state: { marked: new Set(e.markedRefs) }
 	};
+}
+var Br = class {
+	constructor(r, t) {
+		this._p = r;
+		this.depth = t;
+	}
+	deserialize(r) {
+		return p(this._p, this.depth, r);
+	}
 };
-var SERIALIZED_STREAM_CONSTRUCTOR = /* @__PURE__ */ STREAM_CONSTRUCTOR.toString();
-var ITERATOR_CONSTRUCTOR = (symbol) => (sequence) => () => {
-	let index = 0;
-	const instance = {
-		[symbol]() {
-			return instance;
-		},
-		next() {
-			if (index > sequence.d) return {
-				done: true,
-				value: void 0
-			};
-			const currentIndex = index++;
-			const data = sequence.v[currentIndex];
-			if (currentIndex === sequence.t) throw data;
-			return {
-				done: currentIndex === sequence.d,
-				value: data
-			};
-		}
-	};
-	return instance;
-};
-var SERIALIZED_ITERATOR_CONSTRUCTOR = /* @__PURE__ */ ITERATOR_CONSTRUCTOR.toString();
-var ASYNC_ITERATOR_CONSTRUCTOR = (symbol, createPromise) => (stream) => () => {
-	let count = 0;
-	let doneAt = -1;
-	let isThrow = false;
-	const buffer = [];
-	const pending = [];
-	const internal = { finalize(i = 0, len = pending.length) {
-		for (; i < len; i++) pending[i].s({
-			done: true,
-			value: void 0
-		});
-	} };
-	stream.on({
-		next(value) {
-			const temp = pending.shift();
-			if (temp) temp.s({
-				done: false,
-				value
-			});
-			buffer.push(value);
-		},
-		throw(value) {
-			const temp = pending.shift();
-			if (temp) temp.f(value);
-			internal.finalize();
-			doneAt = buffer.length;
-			isThrow = true;
-			buffer.push(value);
-		},
-		return(value) {
-			const temp = pending.shift();
-			if (temp) temp.s({
-				done: true,
-				value
-			});
-			internal.finalize();
-			doneAt = buffer.length;
-			buffer.push(value);
-		}
+function qt(e, r) {
+	if (r < 0 || !Number.isFinite(r) || !Number.isInteger(r)) throw new O$1({
+		t: 4,
+		i: r
 	});
-	const instance = {
-		[symbol]() {
-			return instance;
-		},
-		next() {
-			if (doneAt === -1) {
-				const index = count++;
-				if (index >= buffer.length) {
-					const temp = createPromise();
-					pending.push(temp);
-					return temp.p;
-				}
-				return {
-					done: false,
-					value: buffer[index]
-				};
-			}
-			if (count > doneAt) return {
-				done: true,
-				value: void 0
-			};
-			const index = count++;
-			const value = buffer[index];
-			if (index !== doneAt) return {
-				done: false,
-				value
-			};
-			if (isThrow) throw value;
-			return {
-				done: true,
-				value
-			};
-		}
-	};
-	return instance;
-};
-var SERIALIZED_ASYNC_ITERATOR_CONSTRUCTOR = /* @__PURE__ */ ASYNC_ITERATOR_CONSTRUCTOR.toString();
-var ARRAY_BUFFER_CONSTRUCTOR = (b64) => {
-	const decoded = atob(b64);
-	const length = decoded.length;
-	const arr = new Uint8Array(length);
-	for (let i = 0; i < length; i++) arr[i] = decoded.charCodeAt(i);
-	return arr.buffer;
-};
-var SERIALIZED_ARRAY_BUFFER_CONSTRUCTOR = /* @__PURE__ */ ARRAY_BUFFER_CONSTRUCTOR.toString();
-/**
-* An internal class rather than a tagged POJO: identity is checked with
-* `instanceof`, which untrusted input cannot forge. The class is exported
-* because bundlers cannot drop an unexported top-level class.
-* The eval-based `deserialize` path still rebuilds a `{__SEROVAL_SEQUENCE__…}`
-* POJO from embedded source - it has no access to this class - so a value read
-* back through `deserialize` is not an instance and, by design, is not treated
-* as a genuine Sequence on re-serialization.
-*/
-var Sequence = class {
-	constructor(values, throwAt, doneAt) {
-		this.v = values;
-		this.t = throwAt;
-		this.d = doneAt;
-	}
-};
-function isSequence(value) {
-	return value instanceof Sequence;
+	if (e.refs.has(r)) throw new Error("Conflicted ref id: " + r);
 }
-function createSequence(values, throwAt, doneAt) {
-	return new Sequence(values, throwAt, doneAt);
+function Hn(e, r, t) {
+	return qt(e.base, r), e.state.marked.has(r) && e.base.refs.set(r, t), t;
 }
-function createSequenceFromIterable(source) {
-	const values = [];
-	let throwsAt = -1;
-	let doneAt = -1;
-	const iterator = source[SYM_ITERATOR]();
-	for (;;) try {
-		const value = iterator.next();
-		values.push(value.value);
-		if (value.done) {
-			doneAt = values.length - 1;
-			break;
-		}
-	} catch (error) {
-		throwsAt = values.length;
-		doneAt = throwsAt;
-		values.push(error);
-		break;
-	}
-	return createSequence(values, throwsAt, doneAt);
+function Jn(e, r, t) {
+	return qt(e.base, r), e.base.refs.set(r, t), t;
 }
-var createIterator = /* @__PURE__ */ ITERATOR_CONSTRUCTOR(SYM_ITERATOR);
-function sequenceToIterator(sequence) {
-	return createIterator(sequence);
+function b(e, r, t) {
+	return e.mode === 1 ? Hn(e, r, t) : Jn(e, r, t);
 }
-var ITERATOR = {};
-var ASYNC_ITERATOR = {};
-/**
-* Placeholder references
-*/
-var SPECIAL_REFS = {
-	[0]: {},
-	[1]: {},
-	[2]: {},
-	[3]: {},
-	[4]: {},
-	[5]: {}
-};
-var SPECIAL_REF_STRING = {
-	[0]: "[]",
-	[1]: SERIALIZED_PROMISE_CONSTRUCTOR,
-	[2]: SERIALIZED_PROMISE_SUCCESS,
-	[3]: SERIALIZED_PROMISE_FAILURE,
-	[4]: SERIALIZED_STREAM_CONSTRUCTOR,
-	[5]: SERIALIZED_ARRAY_BUFFER_CONSTRUCTOR
-};
-/**
-* An internal class rather than a tagged POJO: identity is checked with
-* `instanceof`, which untrusted input cannot forge. The class is exported
-* because bundlers cannot drop an unexported top-level class.
-*
-* The behavior is intentionally duplicated from `STREAM_CONSTRUCTOR`. That
-* constructor's source is embedded verbatim into the eval-based `deserialize`
-* output, which has no access to this class, so the two cannot be shared. A
-* stream read back through `deserialize` is therefore a plain POJO and, by
-* design, is not treated as a genuine Stream on re-serialization. Keep the two
-* implementations in sync.
-*/
-var Stream = class {
-	constructor(live) {
-		this.buffer = [];
-		this.listeners = [];
-		this.alive = true;
-		this.success = false;
-		this.count = 0;
-		this.live = live;
-	}
-	flush(value, mode) {
-		this.live > 1 || this.buffer.push(value);
-		for (let x = 0; x < this.count; x++) this.listeners[x]?.[mode](value);
-	}
-	replay(listener) {
-		for (let x = 0, z = this.buffer.length; x < z; x++) {
-			const current = this.buffer[x];
-			if (!this.alive && x === z - 1) listener[this.success ? "return" : "throw"](current);
-			else listener.next(current);
+function Vr(e, r, t) {
+	if (Object.hasOwn(r, t)) return r[t];
+	throw new O$1(e);
+}
+function Zn(e, r) {
+	return b(e, r.i, mt(h$1(r.s)));
+}
+function $n(e, r, t) {
+	let n = t.a, a = n.length, s = b(e, t.i, new Array(a));
+	for (let i = 0, u; i < a; i++) u = n[i], u && (s[i] = p(e, r, u));
+	return Lt(s, t.o), s;
+}
+function Mt(e, r, t) {
+	de$1(r) ? e[r] = t : Object.defineProperty(e, r, {
+		value: t,
+		configurable: !0,
+		enumerable: !0,
+		writable: !0
+	});
+}
+function Xn(e, r, t, n, a) {
+	if (typeof n == "string") Mt(t, h$1(n), p(e, r, a));
+	else {
+		let s = p(e, r, n);
+		switch (typeof s) {
+			case "string":
+				Mt(t, s, p(e, r, a));
+				break;
+			case "symbol":
+				Vt(s) && (t[s] = p(e, r, a));
+				break;
+			default: throw new O$1(n);
 		}
 	}
-	on(listener) {
-		if (this.live > 1) throw new Error("Stream consumed");
-		let subscribed = this.alive;
-		let temp = 0;
-		if (subscribed) {
-			for (; temp < this.count; temp++) if (!this.listeners[temp]) break;
-			if (temp === this.count) this.count++;
-			this.listeners[temp] = listener;
-		}
-		this.replay(listener);
-		if (this.live) {
-			this.live = 2;
-			this.buffer.length = 0;
-		}
-		return () => {
-			if (this.alive && subscribed) {
-				subscribed = false;
-				this.listeners[temp] = void 0;
-				while (this.count > 0 && !this.listeners[this.count - 1]) this.count--;
-				this.listeners.length = this.count;
-			}
-		};
-	}
-	/**
-	* Returns the events of a stream that has ended, without subscribing, so a
-	* live receiver is not consumed. The last value is the `return` or `throw`
-	* value. Returns `undefined` while the stream is open, or when a live
-	* receiver was already consumed and has no events left.
-	* @internal
-	*/
-	endedEvents() {
-		if (this.alive || this.live > 1) return void 0;
-		return {
-			values: this.buffer.slice(),
-			success: this.success
-		};
-	}
-	next(value) {
-		if (this.alive) this.flush(value, "next");
-	}
-	throw(value) {
-		if (this.alive) {
-			this.flush(value, "throw");
-			this.alive = false;
-			this.success = false;
-			this.listeners.length = 0;
-		}
-	}
-	return(value) {
-		if (this.alive) {
-			this.flush(value, "return");
-			this.alive = false;
-			this.success = true;
-			this.listeners.length = 0;
-		}
-	}
-};
-function isStream(value) {
-	return value instanceof Stream || isLiveStream(value);
 }
-function createStream() {
-	return new Stream();
+function Wt(e, r, t) {
+	e.base.refs.types.set(r, t);
 }
-var createAsyncIterable = /* @__PURE__ */ ASYNC_ITERATOR_CONSTRUCTOR(SYM_ASYNC_ITERATOR, PROMISE_CONSTRUCTOR);
-function streamToAsyncIterable(stream) {
-	return createAsyncIterable(stream);
+function ge(e, r, t, n) {
+	if (e.base.refs.types.get(t) !== n) throw new O$1(r);
 }
-async function promiseToResult(current) {
+function Kt(e, r, t, n) {
+	let a = t.k;
+	if (a.length > 0) for (let i = 0, u = t.v, l = a.length; i < l; i++) Xn(e, r, n, a[i], u[i]);
+	return n;
+}
+function Qn(e, r, t) {
+	let n = b(e, t.i, t.t === 10 ? {} : Object.create(null));
+	return Kt(e, r, t.p, n), Lt(n, t.o), n;
+}
+function eo(e, r) {
+	return b(e, r.i, new Date(r.s));
+}
+function ro(e, r) {
+	if (e.base.features & 32) {
+		let t = h$1(r.c);
+		if (t.length > Kn) throw new O$1(r);
+		return b(e, r.i, new RegExp(t, r.m));
+	}
+	throw new z(r);
+}
+function to(e, r, t) {
+	let n = b(e, t.i, /* @__PURE__ */ new Set());
+	for (let a = 0, s = t.a, i = s.length; a < i; a++) n.add(p(e, r, s[a]));
+	return n;
+}
+function no(e, r, t) {
+	let n = b(e, t.i, /* @__PURE__ */ new Map());
+	for (let a = 0, s = t.e.k, i = t.e.v, u = s.length; a < u; a++) n.set(p(e, r, s[a]), p(e, r, i[a]));
+	return n;
+}
+function oo(e, r) {
+	if (r.s.length > qn) throw new O$1(r);
+	return b(e, r.i, wr(h$1(r.s)));
+}
+function ao(e, r, t) {
+	var u;
+	let n = Bt(t.c), a = p(e, r, t.f), s = (u = t.b) != null ? u : 0;
+	if (s < 0 || s > a.byteLength) throw new O$1(t);
+	return b(e, t.i, new n(a, s, t.l));
+}
+function so(e, r, t) {
+	var i;
+	let n = p(e, r, t.f), a = (i = t.b) != null ? i : 0;
+	if (a < 0 || a > n.byteLength) throw new O$1(t);
+	return b(e, t.i, new DataView(n, a, t.l));
+}
+function Gt(e, r, t, n) {
+	if (t.p) {
+		let a = Kt(e, r, t.p, {});
+		Object.defineProperties(n, Object.getOwnPropertyDescriptors(a));
+	}
+	return n;
+}
+function io(e, r, t) {
+	return Gt(e, r, t, b(e, t.i, new AggregateError([], h$1(t.m))));
+}
+function uo(e, r, t) {
+	let n = Vr(t, it, t.s);
+	return Gt(e, r, t, b(e, t.i, new n(h$1(t.m))));
+}
+function lo(e, r, t) {
+	let n = ee$1(), a = b(e, t.i, n.p), s = p(e, r, t.f);
+	return t.s ? n.s(s) : n.f(s), a;
+}
+function co(e, r, t) {
+	return b(e, t.i, Object(p(e, r, t.f)));
+}
+function fo(e, r, t) {
+	let n = e.base.plugins;
+	if (n) {
+		let a = h$1(t.c);
+		for (let s = 0, i = n.length; s < i; s++) {
+			let u = n[s];
+			if (u.tag === a) return b(e, t.i, u.deserialize(t.s, new Br(e, r), { id: t.i }));
+		}
+	}
+	throw new Q$1(t.c);
+}
+function So(e, r) {
+	let t = b(e, r.i, b(e, r.s, ee$1()).p);
+	return Wt(e, r.s, 22), t;
+}
+function mo(e, r, t) {
+	let n = e.base.refs.get(t.i);
+	if (n) return ge(e, t, t.i, 22), n.s(p(e, r, t.a[1])), o$1;
+	throw new V("Promise");
+}
+function po(e, r, t) {
+	let n = e.base.refs.get(t.i);
+	if (n) return ge(e, t, t.i, 22), n.f(p(e, r, t.a[1])), o$1;
+	throw new V("Promise");
+}
+function go(e, r, t) {
+	p(e, r, t.a[0]);
+	return Pt(p(e, r, t.a[1]));
+}
+function yo(e, r, t) {
+	p(e, r, t.a[0]);
+	return ht(p(e, r, t.a[1]));
+}
+function No(e, r, t) {
+	let n = b(e, t.i, re$1());
+	Wt(e, t.i, 31);
+	let a = t.a, s = a.length;
+	if (s) for (let i = 0; i < s; i++) p(e, r, a[i]);
+	return n;
+}
+function bo(e, r, t) {
+	let n = e.base.refs.get(t.i);
+	if (n) return ge(e, t, t.i, 31), n.next(p(e, r, t.f)), o$1;
+	throw new V("Stream");
+}
+function vo(e, r, t) {
+	let n = e.base.refs.get(t.i);
+	if (n) return ge(e, t, t.i, 31), n.throw(p(e, r, t.f)), o$1;
+	throw new V("Stream");
+}
+function Co(e, r, t) {
+	let n = e.base.refs.get(t.i);
+	if (n) return ge(e, t, t.i, 31), n.return(p(e, r, t.f)), o$1;
+	throw new V("Stream");
+}
+function Ao(e, r, t) {
+	return p(e, r, t.f), o$1;
+}
+function Eo(e, r, t) {
+	return p(e, r, t.a[1]), o$1;
+}
+function Io(e, r, t) {
+	let n = b(e, t.i, hr([], t.s, t.l));
+	for (let a = 0, s = t.a.length; a < s; a++) n.v[a] = p(e, r, t.a[a]);
+	return n;
+}
+function p(e, r, t) {
+	if (r > e.base.depthLimit) throw new M$1(e.base.depthLimit);
+	switch (r += 1, t.t) {
+		case 2: return Vr(t, st, t.s);
+		case 0: return Number(t.s);
+		case 1: return h$1(String(t.s));
+		case 3:
+			if (String(t.s).length > Wn) throw new O$1(t);
+			return BigInt(t.s);
+		case 4: return e.base.refs.get(t.i);
+		case 18: return Zn(e, t);
+		case 9: return $n(e, r, t);
+		case 10:
+		case 11: return Qn(e, r, t);
+		case 5: return eo(e, t);
+		case 6: return ro(e, t);
+		case 7: return to(e, r, t);
+		case 8: return no(e, r, t);
+		case 19: return oo(e, t);
+		case 16:
+		case 15: return ao(e, r, t);
+		case 20: return so(e, r, t);
+		case 14: return io(e, r, t);
+		case 13: return uo(e, r, t);
+		case 12: return lo(e, r, t);
+		case 17: return Vr(t, ot, t.s);
+		case 21: return co(e, r, t);
+		case 25: return fo(e, r, t);
+		case 22: return So(e, t);
+		case 23: return mo(e, r, t);
+		case 24: return po(e, r, t);
+		case 28: return go(e, r, t);
+		case 30: return yo(e, r, t);
+		case 31: return No(e, r, t);
+		case 32: return bo(e, r, t);
+		case 33: return vo(e, r, t);
+		case 34: return Co(e, r, t);
+		case 27: return Ao(e, r, t);
+		case 29: return Eo(e, r, t);
+		case 35: return Io(e, r, t);
+		default: throw new z(t);
+	}
+}
+function ir(e, r) {
 	try {
-		return [1, await current];
-	} catch (e) {
-		return [0, e];
+		return p(e, 0, r);
+	} catch (t) {
+		throw new Je(t);
 	}
 }
-function encodeArrayBuffer$1(current) {
-	const bytes = new Uint8Array(current);
-	if (typeof bytes.toBase64 === "function") return bytes.toBase64();
-	let result = "";
-	for (let i = 0, len = bytes.length; i < len; i++) result += String.fromCharCode(bytes[i]);
-	return btoa(result);
+var Ro = () => T;
+var Po = Ro.toString();
+var Ht = /=>/.test(Po);
+function ur(e, r) {
+	return Ht ? (e.length === 1 ? e[0] : "(" + e.join(",") + ")") + "=>" + (r.startsWith("{") ? "(" + r + ")" : r) : "function(" + e.join(",") + "){return " + r + "}";
 }
-var MIN_NATIVE_BASE64_LENGTH = 512;
-function encodeArrayBuffer(current) {
-	if (typeof Buffer !== "undefined") return Buffer.from(current).toString("base64");
-	return encodeArrayBuffer$1(current);
+function Jt(e, r) {
+	return Ht ? (e.length === 1 ? e[0] : "(" + e.join(",") + ")") + "=>{" + r + "}" : "function(" + e.join(",") + "){" + r + "}";
 }
-function decodeArrayBuffer(source) {
-	if (source.length < MIN_NATIVE_BASE64_LENGTH || typeof Buffer === "undefined") return ARRAY_BUFFER_CONSTRUCTOR(source);
-	const decoded = atob(source);
-	const buffer = new ArrayBuffer(decoded.length);
-	Buffer.from(buffer).write(decoded, "latin1");
-	return buffer;
+var Xt = "hjkmoquxzABCDEFGHIJKLNPQRTUVWXYZ$_";
+var Zt = Xt.length;
+var Qt = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789$_";
+var $t = Qt.length;
+function Mr(e) {
+	let r = e % Zt, t = Xt[r];
+	for (e = (e - r) / Zt; e > 0;) r = e % $t, t += Qt[r], e = (e - r) / $t;
+	return t;
 }
-function createPlugin(plugin) {
-	return plugin;
+var xo = /^[$A-Z_][0-9A-Z_$]*$/i;
+function Lr(e) {
+	let r = e[0];
+	return (r === "$" || r === "_" || r >= "A" && r <= "Z" || r >= "a" && r <= "z") && xo.test(e);
 }
-function dedupePlugins(deduped, plugins) {
-	for (let i = 0, len = plugins.length; i < len; i++) {
-		const current = plugins[i];
-		if (!deduped.has(current)) {
-			deduped.add(current);
-			if (current.extends) dedupePlugins(deduped, current.extends);
-		}
+function Ne(e) {
+	switch (e.t) {
+		case 0: return e.s + "=" + e.v;
+		case 2: return e.s + ".set(" + e.k + "," + e.v + ")";
+		case 1: return e.s + ".add(" + e.v + ")";
+		case 3: return e.s + ".delete(" + e.k + ")";
+		case 4: return "Object.defineProperty(" + e.s + ",\"__proto__\",{value:" + e.k + ",configurable:!0,enumerable:!0,writable:!0})";
 	}
 }
-var RESOLVED_PLUGINS = /* @__PURE__ */ new WeakMap();
-function matchResolved(resolved, plugins, added) {
-	for (let i = 0, len = plugins.length; i < len; i++) {
-		const current = plugins[i];
-		if (current === resolved[added]) {
-			added++;
-			if (current.extends) {
-				added = matchResolved(resolved, current.extends, added);
-				if (added === -1) return -1;
-			}
-		} else {
-			const index = resolved.indexOf(current);
-			if (index === -1 || index >= added) return -1;
-		}
+function To(e) {
+	let r = [], t = e[0];
+	for (let n = 1, a = e.length, s, i = t; n < a; n++) s = e[n], s.t === 0 && s.v === i.v ? t = {
+		t: 0,
+		s: s.s,
+		k: o$1,
+		v: Ne(t)
+	} : s.t === 2 && s.s === i.s ? t = {
+		t: 2,
+		s: Ne(t),
+		k: s.k,
+		v: s.v
+	} : s.t === 1 && s.s === i.s ? t = {
+		t: 1,
+		s: Ne(t),
+		k: o$1,
+		v: s.v
+	} : s.t === 3 && s.s === i.s ? t = {
+		t: 3,
+		s: Ne(t),
+		k: s.k,
+		v: o$1
+	} : (r.push(t), t = s), i = s;
+	return r.push(t), r;
+}
+function sn(e) {
+	if (e.length) {
+		let r = "", t = To(e);
+		for (let n = 0, a = t.length; n < a; n++) r += Ne(t[n]) + ",";
+		return r;
 	}
-	return added;
+	return o$1;
 }
-function resolvePlugins(plugins) {
-	if (plugins) {
-		const cached = RESOLVED_PLUGINS.get(plugins);
-		if (cached && matchResolved(cached, plugins, 0) === cached.length) return cached;
-		const deduped = /* @__PURE__ */ new Set();
-		dedupePlugins(deduped, plugins);
-		const resolved = [...deduped];
-		RESOLVED_PLUGINS.set(plugins, resolved);
-		return resolved;
-	}
-}
-/**
-* Returns the plugins that are tested for plain objects. It is the same array
-* when no plugin sets `skipPlainObjects`.
-*/
-function getPlainObjectPlugins(plugins) {
-	if (plugins) {
-		for (let i = 0, len = plugins.length; i < len; i++) if (plugins[i].skipPlainObjects) {
-			const result = plugins.filter((plugin) => !plugin.skipPlainObjects);
-			return result.length ? result : void 0;
-		}
-	}
-	return plugins;
-}
-var GLOBAL_CONTEXT_R = `self.\$R`;
-function getCrossReferenceHeader(id) {
-	if (id == null) return `${GLOBAL_CONTEXT_R}=${GLOBAL_CONTEXT_R}||[]`;
-	return `(${GLOBAL_CONTEXT_R}=${GLOBAL_CONTEXT_R}||{})["${serializeString(id)}"]=[]`;
-}
-var REFERENCE = /* @__PURE__ */ new Map();
-var INV_REFERENCE = /* @__PURE__ */ new Map();
-function hasReference(id) {
-	return INV_REFERENCE.has(id);
-}
-function getReferenceID(value) {
-	return REFERENCE.get(value);
-}
-function getReference(id) {
-	if (hasReference(id)) return INV_REFERENCE.get(id);
-	throw new SerovalMissingReferenceForIdError(id);
-}
-function createBaseParserContext(options) {
+var Oo = "Object.create(null)";
+var wo = "new Set";
+var ho = "new Map";
+var zo = "Promise.resolve";
+var _o = "Promise.reject";
+var ko = {
+	3: "Object.freeze",
+	2: "Object.seal",
+	1: "Object.preventExtensions",
+	0: o$1
+};
+function un(e, r) {
 	return {
-		plugins: options.plugins,
-		plainObjectPlugins: getPlainObjectPlugins(options.plugins),
-		marked: /* @__PURE__ */ new Set(),
-		features: 127 ^ (options.disabledFeatures ?? 0),
-		refs: options.refs ?? /* @__PURE__ */ new Map(),
-		depthLimit: options.depthLimit || 1e3,
-		compactArrayBufferViews: options.compactArrayBufferViews ?? false
+		mode: e,
+		plugins: r.plugins,
+		features: r.features,
+		marked: new Set(r.markedRefs),
+		stack: [],
+		flags: [],
+		assignments: []
 	};
 }
-/**
-* Returns the plugins to test for an object. Plain objects, whose prototype is
-* `Object.prototype`, skip the plugins that set `skipPlainObjects`. Checking
-* the prototype as well as `constructor` keeps instances whose prototype has
-* no own `constructor` property from skipping those plugins.
-*/
-function getObjectPlugins(ctx, current, currentClass) {
-	return currentClass === Object && Object.getPrototypeOf(current) === Object.prototype ? ctx.plainObjectPlugins : ctx.plugins;
+function cr(e) {
+	return {
+		mode: 2,
+		base: un(2, e),
+		state: e,
+		child: o$1
+	};
 }
-/**
-* Ensures that the value (based on an identifier) has been visited by the parser.
-* @param ctx
-* @param id
-*/
-function markParserRef(ctx, id) {
-	ctx.marked.add(id);
-}
-/**
-* Creates an identifier for a value
-* @param ctx
-* @param current
-*/
-function createIndexForValue(ctx, current) {
-	const id = ctx.refs.size;
-	ctx.refs.set(current, id);
-	return id;
-}
-function getNodeForIndexedValue(ctx, current) {
-	const registeredId = ctx.refs.get(current);
-	if (registeredId != null) {
-		markParserRef(ctx, registeredId);
-		return createIndexedValueNode(registeredId);
+var Ur = class {
+	constructor(r) {
+		this._p = r;
 	}
-	return createIndexForValue(ctx, current);
+	serialize(r) {
+		return f$1(this._p, r);
+	}
+};
+function Fo(e, r) {
+	let t = e.valid.get(r);
+	t ?? (t = e.valid.size, e.valid.set(r, t));
+	let n = e.vars[t];
+	return n ?? (n = Mr(t), e.vars[t] = n), n;
 }
-function getReferenceNode(ctx, current) {
-	const indexed = getNodeForIndexedValue(ctx, current);
-	if (typeof indexed !== "number") return indexed;
-	const referenceId = getReferenceID(current);
-	return referenceId === void 0 ? indexed : createReferenceNode(indexed, referenceId);
+function Bo(e) {
+	return le$1 + "[" + e + "]";
 }
-/**
-* Parsing methods
-*/
-function parseWellKnownSymbol(ctx, current) {
-	const ref = getReferenceNode(ctx, current);
-	if (typeof ref !== "number") return ref;
-	if (current in INV_SYMBOL_REF) return createWKSymbolNode(ref, current);
-	throw new SerovalUnsupportedTypeError(current);
+function m$1(e, r) {
+	return e.mode === 1 ? Fo(e.state, r) : Bo(r);
 }
-function parseSpecialReference(ctx, ref) {
-	const result = getNodeForIndexedValue(ctx, SPECIAL_REFS[ref]);
-	if (typeof result !== "number") return result;
-	return createSerovalNode(26, result, ref);
+function w$1(e, r) {
+	e.marked.add(r);
 }
-function parseIteratorFactory(ctx) {
-	const result = getNodeForIndexedValue(ctx, ITERATOR);
-	if (typeof result !== "number") return result;
-	return createSerovalNode(27, result, void 0, void 0, void 0, void 0, void 0, void 0, parseWellKnownSymbol(ctx, SYM_ITERATOR));
+function jr(e, r) {
+	return e.marked.has(r);
 }
-function parseAsyncIteratorFactory(ctx) {
-	const result = getNodeForIndexedValue(ctx, ASYNC_ITERATOR);
-	if (typeof result !== "number") return result;
-	return createSerovalNode(29, result, void 0, void 0, void 0, void 0, void 0, [parseSpecialReference(ctx, 1), parseWellKnownSymbol(ctx, SYM_ASYNC_ITERATOR)]);
+function qr(e, r, t) {
+	r !== 0 && (w$1(e.base, t), e.base.flags.push({
+		type: r,
+		value: m$1(e, t)
+	}));
 }
-function getTemporalType(currentClass) {
-	switch (currentClass) {
-		case Temporal.Instant: return 0;
-		case Temporal.Duration: return 1;
-		case Temporal.PlainDate: return 2;
-		case Temporal.PlainDateTime: return 3;
-		case Temporal.PlainMonthDay: return 4;
-		case Temporal.PlainTime: return 5;
-		case Temporal.PlainYearMonth: return 6;
-		case Temporal.ZonedDateTime: return 7;
-		default: return;
+function Vo(e) {
+	let r = "";
+	for (let t = 0, n = e.flags, a = n.length; t < a; t++) {
+		let s = n[t];
+		r += ko[s.type] + "(" + s.value + "),";
+	}
+	return r;
+}
+function ln(e) {
+	let r = sn(e.assignments), t = Vo(e);
+	return r ? t ? r + t : r : t;
+}
+function Wr(e, r, t) {
+	e.assignments.push({
+		t: 0,
+		s: r,
+		k: o$1,
+		v: t
+	});
+}
+function Mo(e, r, t) {
+	e.base.assignments.push({
+		t: 1,
+		s: m$1(e, r),
+		k: o$1,
+		v: t
+	});
+}
+function ye$1(e, r, t, n) {
+	e.base.assignments.push({
+		t: 2,
+		s: m$1(e, r),
+		k: t,
+		v: n
+	});
+}
+function en(e, r, t) {
+	e.base.assignments.push({
+		t: 3,
+		s: m$1(e, r),
+		k: t,
+		v: o$1
+	});
+}
+function be(e, r, t, n) {
+	Wr(e.base, m$1(e, r) + "[" + t + "]", n);
+}
+function Yr(e, r, t, n) {
+	if (!de$1(t)) {
+		e.base.assignments.push({
+			t: 4,
+			s: m$1(e, r),
+			k: n,
+			v: o$1
+		});
+		return;
+	}
+	Wr(e.base, m$1(e, r) + "." + t, n);
+}
+function Lo(e, r, t, n) {
+	Wr(e.base, m$1(e, r) + ".v[" + t + "]", n);
+}
+function F$1(e, r) {
+	return r.t === 4 && e.stack.includes(r.i);
+}
+function ae(e, r, t) {
+	return e.mode === 1 && !jr(e.base, r) ? t : m$1(e, r) + "=" + t;
+}
+function Uo(e) {
+	return U + ".get(\"" + e.s + "\")";
+}
+function rn(e, r, t, n) {
+	return t ? F$1(e.base, t) ? (w$1(e.base, r), be(e, r, n, m$1(e, t.i)), "") : f$1(e, t) : "";
+}
+function jo(e, r) {
+	let t = r.i, n = r.a, a = n.length;
+	if (a > 0) {
+		e.base.stack.push(t);
+		let s = rn(e, t, n[0], 0), i = s === "";
+		for (let u = 1, l; u < a; u++) l = rn(e, t, n[u], u), s += "," + l, i = l === "";
+		return e.base.stack.pop(), qr(e, r.o, r.i), "[" + s + (i ? ",]" : "]");
+	}
+	return "[]";
+}
+function tn(e, r, t, n) {
+	if (typeof t == "string") {
+		let a = Number(t), s = a >= 0 && a.toString() === t || Lr(t);
+		if (F$1(e.base, n)) {
+			let i = m$1(e, n.i);
+			return w$1(e.base, r.i), s && a !== a ? Yr(e, r.i, t, i) : be(e, r.i, s ? t : "\"" + t + "\"", i), "";
+		}
+		return de$1(t) ? (s ? t : "\"" + t + "\"") + ":" + f$1(e, n) : "[\"" + t + "\"]:" + f$1(e, n);
+	}
+	return "[" + f$1(e, t) + "]:" + f$1(e, n);
+}
+function cn(e, r, t) {
+	let n = t.k, a = n.length;
+	if (a > 0) {
+		let s = t.v;
+		e.base.stack.push(r.i);
+		let i = tn(e, r, n[0], s[0]);
+		for (let u = 1, l = i; u < a; u++) l = tn(e, r, n[u], s[u]), i += (l && i && ",") + l;
+		return e.base.stack.pop(), "{" + i + "}";
+	}
+	return "{}";
+}
+function Yo(e, r) {
+	return qr(e, r.o, r.i), cn(e, r, r.p);
+}
+function qo(e, r, t, n) {
+	let a = cn(e, r, t);
+	return a !== "{}" ? "Object.assign(" + n + "," + a + ")" : n;
+}
+function Wo(e, r, t, n, a) {
+	let s = e.base, i = f$1(e, a), u = Number(n), l = u >= 0 && u.toString() === n || Lr(n);
+	if (F$1(s, a)) l && u !== u ? Yr(e, r.i, n, i) : be(e, r.i, l ? n : "\"" + n + "\"", i);
+	else {
+		let g = s.assignments;
+		s.assignments = t, l && u !== u ? Yr(e, r.i, n, i) : be(e, r.i, l ? n : "\"" + n + "\"", i), s.assignments = g;
 	}
 }
-function getObjectClass(current) {
-	const currentClass = current.constructor;
-	if (typeof currentClass !== "function") {
-		const proto = Object.getPrototypeOf(current);
-		return proto === null ? void 0 : proto.constructor;
+function Ko(e, r, t, n, a) {
+	if (typeof n == "string") Wo(e, r, t, n, a);
+	else {
+		let s = e.base, i = s.stack;
+		s.stack = [];
+		let u = f$1(e, a);
+		s.stack = i;
+		let l = s.assignments;
+		s.assignments = t, be(e, r.i, f$1(e, n), u), s.assignments = l;
 	}
-	return currentClass;
 }
-/**
-* Decides how an object is parsed. Shared by the sync, stream and async
-* parsers so the class checks and feature gates live in one place.
-*/
-function getObjectKind(current, currentClass, features) {
-	switch (currentClass) {
-		case Object: return 1;
-		case void 0: return 2;
-		case Date: return 3;
+function Go(e, r, t) {
+	let n = t.k, a = n.length;
+	if (a > 0) {
+		let s = [], i = t.v;
+		e.base.stack.push(r.i);
+		for (let u = 0; u < a; u++) Ko(e, r, s, n[u], i[u]);
+		return e.base.stack.pop(), sn(s);
+	}
+	return o$1;
+}
+function Kr(e, r, t) {
+	if (r.p) {
+		let n = e.base;
+		if (n.features & 8) t = qo(e, r, r.p, t);
+		else {
+			w$1(n, r.i);
+			let a = Go(e, r, r.p);
+			if (a) return "(" + ae(e, r.i, t) + "," + a + m$1(e, r.i) + ")";
+		}
+	}
+	return t;
+}
+function Ho(e, r) {
+	return qr(e, r.o, r.i), Kr(e, r, Oo);
+}
+function Jo(e) {
+	return "new Date(\"" + e.s + "\")";
+}
+function Zo(e, r) {
+	if (e.base.features & 32) return "/" + h$1(r.c) + "/" + r.m;
+	throw new z(r);
+}
+function nn(e, r, t) {
+	let n = e.base;
+	return F$1(n, t) ? (w$1(n, r), Mo(e, r, m$1(e, t.i)), "") : f$1(e, t);
+}
+function $o(e, r) {
+	let t = wo, n = r.a, a = n.length, s = r.i;
+	if (a > 0) {
+		e.base.stack.push(s);
+		let i = nn(e, s, n[0]);
+		for (let u = 1, l = i; u < a; u++) l = nn(e, s, n[u]), i += (l && i && ",") + l;
+		e.base.stack.pop(), i && (t += "([" + i + "])");
+	}
+	return t;
+}
+function on(e, r, t, n, a) {
+	let s = e.base;
+	if (F$1(s, t)) {
+		let i = m$1(e, t.i);
+		if (w$1(s, r), F$1(s, n)) return ye$1(e, r, i, m$1(e, n.i)), "";
+		if (n.t !== 4 && n.i != null && jr(s, n.i)) {
+			let l = "(" + f$1(e, n) + ",[" + a + "," + a + "])";
+			return ye$1(e, r, i, m$1(e, n.i)), en(e, r, a), l;
+		}
+		let u = s.stack;
+		return s.stack = [], ye$1(e, r, i, f$1(e, n)), s.stack = u, "";
+	}
+	if (F$1(s, n)) {
+		let i = m$1(e, n.i);
+		if (w$1(s, r), t.t !== 4 && t.i != null && jr(s, t.i)) {
+			let l = "(" + f$1(e, t) + ",[" + a + "," + a + "])";
+			return ye$1(e, r, m$1(e, t.i), i), en(e, r, a), l;
+		}
+		let u = s.stack;
+		return s.stack = [], ye$1(e, r, f$1(e, t), i), s.stack = u, "";
+	}
+	return "[" + f$1(e, t) + "," + f$1(e, n) + "]";
+}
+function Xo(e, r) {
+	let t = ho, n = r.e.k, a = n.length, s = r.i, i = r.f, u = m$1(e, i.i), l = e.base;
+	if (a > 0) {
+		let g = r.e.v;
+		l.stack.push(s);
+		let S = on(e, s, n[0], g[0], u);
+		for (let d = 1, G = S; d < a; d++) G = on(e, s, n[d], g[d], u), S += (G && S && ",") + G;
+		l.stack.pop(), S && (t += "([" + S + "])");
+	}
+	return i.t === 26 && (w$1(l, i.i), t = "(" + f$1(e, i) + "," + t + ")"), t;
+}
+function Qo(e, r) {
+	return W(e, r.f) + "(\"" + r.s + "\")";
+}
+function ea(e, r) {
+	return "new " + r.c + "(" + f$1(e, r.f) + "," + r.b + "," + r.l + ")";
+}
+function ra(e, r) {
+	return "new DataView(" + f$1(e, r.f) + "," + r.b + "," + r.l + ")";
+}
+function ta(e, r) {
+	let t = r.i;
+	e.base.stack.push(t);
+	let n = Kr(e, r, "new AggregateError([],\"" + r.m + "\")");
+	return e.base.stack.pop(), n;
+}
+function na(e, r) {
+	return Kr(e, r, "new " + Ae[r.s] + "(\"" + r.m + "\")");
+}
+function oa(e, r) {
+	let t, n = r.f, a = r.i, s = r.s ? zo : _o, i = e.base;
+	if (F$1(i, n)) {
+		let u = m$1(e, n.i);
+		t = s + (r.s ? "().then(" + ur([], u) + ")" : "().catch(" + Jt([], "throw " + u) + ")");
+	} else {
+		i.stack.push(a);
+		let u = f$1(e, n);
+		i.stack.pop(), t = s + "(" + u + ")";
+	}
+	return t;
+}
+function aa(e, r) {
+	return "Object(" + f$1(e, r.f) + ")";
+}
+function W(e, r) {
+	let t = f$1(e, r);
+	return r.t === 4 ? t : "(" + t + ")";
+}
+function sa(e, r) {
+	if (e.mode === 1) throw new z(r);
+	return "(" + ae(e, r.s, W(e, r.f) + "()") + ").p";
+}
+function ia(e, r) {
+	if (e.mode === 1) throw new z(r);
+	return W(e, r.a[0]) + "(" + m$1(e, r.i) + "," + f$1(e, r.a[1]) + ")";
+}
+function ua(e, r) {
+	if (e.mode === 1) throw new z(r);
+	return W(e, r.a[0]) + "(" + m$1(e, r.i) + "," + f$1(e, r.a[1]) + ")";
+}
+function la(e, r) {
+	let t = e.base.plugins;
+	if (t) for (let n = 0, a = t.length; n < a; n++) {
+		let s = t[n];
+		if (s.tag === r.c) return e.child ??= new Ur(e), s.serialize(r.s, e.child, { id: r.i });
+	}
+	throw new Q$1(r.c);
+}
+function ca(e, r) {
+	let t = "", n = !1;
+	return r.f.t !== 4 && (w$1(e.base, r.f.i), t = "(" + f$1(e, r.f) + ",", n = !0), t += ae(e, r.i, "(" + Et + ")(" + m$1(e, r.f.i) + ")"), n && (t += ")"), t;
+}
+function fa(e, r) {
+	return W(e, r.a[0]) + "(" + f$1(e, r.a[1]) + ")";
+}
+function Sa(e, r) {
+	let t = r.a[0], n = r.a[1], a = e.base, s = "";
+	t.t !== 4 && (w$1(a, t.i), s += "(" + f$1(e, t)), n.t !== 4 && (w$1(a, n.i), s += (s ? "," : "(") + f$1(e, n)), s && (s += ",");
+	let i = ae(e, r.i, "(" + It + ")(" + m$1(e, n.i) + "," + m$1(e, t.i) + ")");
+	return s ? s + i + ")" : i;
+}
+function ma(e, r) {
+	return W(e, r.a[0]) + "(" + f$1(e, r.a[1]) + ")";
+}
+function pa(e, r) {
+	let t = ae(e, r.i, W(e, r.f) + "()"), n = r.a.length;
+	if (n) {
+		let a = f$1(e, r.a[0]);
+		for (let s = 1; s < n; s++) a += "," + f$1(e, r.a[s]);
+		return "(" + t + "," + a + "," + m$1(e, r.i) + ")";
+	}
+	return t;
+}
+function da(e, r) {
+	return m$1(e, r.i) + ".next(" + f$1(e, r.f) + ")";
+}
+function ga(e, r) {
+	return m$1(e, r.i) + ".throw(" + f$1(e, r.f) + ")";
+}
+function ya(e, r) {
+	return m$1(e, r.i) + ".return(" + f$1(e, r.f) + ")";
+}
+function an(e, r, t, n) {
+	let a = e.base;
+	return F$1(a, n) ? (w$1(a, r), Lo(e, r, t, m$1(e, n.i)), "") : f$1(e, n);
+}
+function Na(e, r) {
+	let t = r.a, n = t.length, a = r.i;
+	if (n > 0) {
+		e.base.stack.push(a);
+		let s = an(e, a, 0, t[0]);
+		for (let i = 1, u = s; i < n; i++) u = an(e, a, i, t[i]), s += (u && s && ",") + u;
+		if (e.base.stack.pop(), s) return "{__SEROVAL_SEQUENCE__:!0,v:[" + s + "],t:" + r.s + ",d:" + r.l + "}";
+	}
+	return "{__SEROVAL_SEQUENCE__:!0,v:[],t:-1,d:0}";
+}
+function ba(e, r) {
+	switch (r.t) {
+		case 17: return nt[r.s];
+		case 18: return Uo(r);
+		case 9: return jo(e, r);
+		case 10: return Yo(e, r);
+		case 11: return Ho(e, r);
+		case 5: return Jo(r);
+		case 6: return Zo(e, r);
+		case 7: return $o(e, r);
+		case 8: return Xo(e, r);
+		case 19: return Qo(e, r);
+		case 16:
+		case 15: return ea(e, r);
+		case 20: return ra(e, r);
+		case 14: return ta(e, r);
+		case 13: return na(e, r);
+		case 12: return oa(e, r);
+		case 21: return aa(e, r);
+		case 22: return sa(e, r);
+		case 25: return la(e, r);
+		case 26: return wt[r.s];
+		case 35: return Na(e, r);
+		default: throw new z(r);
+	}
+}
+function f$1(e, r) {
+	switch (r.t) {
+		case 2: return at[r.s];
+		case 0: return "" + r.s;
+		case 1: return "\"" + r.s + "\"";
+		case 3: return r.s + "n";
+		case 4: return m$1(e, r.i);
+		case 23: return ia(e, r);
+		case 24: return ua(e, r);
+		case 27: return ca(e, r);
+		case 28: return fa(e, r);
+		case 29: return Sa(e, r);
+		case 30: return ma(e, r);
+		case 31: return pa(e, r);
+		case 32: return da(e, r);
+		case 33: return ga(e, r);
+		case 34: return ya(e, r);
+		default: return ae(e, r.i, ba(e, r));
+	}
+}
+function Sr(e, r) {
+	let t = f$1(e, r), n = r.i;
+	if (n == null) return t;
+	let a = ln(e.base), s = m$1(e, n), i = e.state.scopeId, u = i == null ? "" : le$1, l = a ? "(" + t + "," + a + s + ")" : t;
+	if (u === "") return r.t === 10 && !a ? "(" + l + ")" : l;
+	let g = i == null ? "()" : "(" + le$1 + "[\"" + y$1(i) + "\"])";
+	return "(" + ur([u], l) + ")" + g;
+}
+var Hr = class {
+	constructor(r, t) {
+		this._p = r;
+		this.depth = t;
+	}
+	parse(r) {
+		return E$1(this._p, this.depth, r);
+	}
+};
+var Jr = class {
+	constructor(r, t) {
+		this._p = r;
+		this.depth = t;
+	}
+	parse(r) {
+		return E$1(this._p, this.depth, r);
+	}
+	parseWithError(r) {
+		return K(this._p, this.depth, r);
+	}
+	isAlive() {
+		return this._p.state.alive;
+	}
+	pushPendingState() {
+		et(this._p);
+	}
+	popPendingState() {
+		ve(this._p);
+	}
+	onParse(r) {
+		se(this._p, r);
+	}
+	onError(r) {
+		Xr(this._p, r);
+	}
+	addCleanup(r) {
+		this._p.state.cleanups.push(r);
+	}
+};
+function va(e) {
+	return {
+		alive: !0,
+		pending: 0,
+		initial: !0,
+		buffer: [],
+		onParse: e.onParse,
+		onError: e.onError,
+		onDone: e.onDone,
+		cleanups: []
+	};
+}
+function Zr(e) {
+	return {
+		type: 2,
+		base: me(2, e),
+		state: va(e)
+	};
+}
+function Ca(e, r, t) {
+	let n = [];
+	for (let a = 0, s = t.length; a < s; a++) a in t ? n[a] = E$1(e, r, t[a]) : n[a] = 0;
+	return n;
+}
+function Aa(e, r, t, n) {
+	return ke(t, n, Ca(e, r, n));
+}
+function $r(e, r, t) {
+	let n = Object.entries(t), a = [], s = [];
+	for (let i = 0, u = n.length; i < u; i++) a.push(y$1(n[i][0])), s.push(E$1(e, r, n[i][1]));
+	return C in t && (a.push(I(e.base, C)), s.push(je(tr(e.base), E$1(e, r, Xe(t))))), v$1 in t && (a.push(I(e.base, v$1)), s.push(Ye(nr(e.base), E$1(e, r, e.type === 1 ? re$1() : er(t))))), P$1 in t && (a.push(I(e.base, P$1)), s.push(X(t[P$1]))), R in t && (a.push(I(e.base, R)), s.push(t[R] ? J$1 : Z)), {
+		k: a,
+		v: s
+	};
+}
+function Gr(e, r, t, n, a) {
+	return or(t, n, a, $r(e, r, n));
+}
+function Ea(e, r, t, n) {
+	return De(t, E$1(e, r, n.valueOf()));
+}
+function Ia(e, r, t, n) {
+	return Fe(t, n, E$1(e, r, n.buffer));
+}
+function Ra(e, r, t, n) {
+	return Be(t, n, E$1(e, r, n.buffer));
+}
+function Pa(e, r, t, n) {
+	return Ve(t, n, E$1(e, r, n.buffer));
+}
+function fn(e, r, t, n) {
+	let a = $(n, e.base.features);
+	return Me(t, n, a ? $r(e, r, a) : o$1);
+}
+function xa(e, r, t, n) {
+	let a = $(n, e.base.features);
+	return Le(t, n, a ? $r(e, r, a) : o$1);
+}
+function Ta(e, r, t, n) {
+	let a = [], s = [];
+	for (let [i, u] of n.entries()) a.push(E$1(e, r, i)), s.push(E$1(e, r, u));
+	return ar(e.base, t, a, s);
+}
+function Oa(e, r, t, n) {
+	let a = [];
+	for (let s of n.keys()) a.push(E$1(e, r, s));
+	return Ue(t, a);
+}
+function wa(e, r, t, n) {
+	let a = qe(t, D$1(e.base, 4), []);
+	return e.type === 1 || (et(e), n.on({
+		next: (s) => {
+			if (e.state.alive) {
+				let i = K(e, r, s);
+				i && se(e, We(t, i));
+			}
+		},
+		throw: (s) => {
+			if (e.state.alive) {
+				let i = K(e, r, s);
+				i && se(e, Ke(t, i));
+			}
+			ve(e);
+		},
+		return: (s) => {
+			if (e.state.alive) {
+				let i = K(e, r, s);
+				i && se(e, Ge(t, i));
+			}
+			ve(e);
+		}
+	})), a;
+}
+function ha(e, r, t) {
+	if (this.state.alive) {
+		let n = K(this, r, t);
+		n && se(this, c$1(23, e, o$1, o$1, o$1, o$1, o$1, [D$1(this.base, 2), n], o$1, o$1, o$1, o$1)), ve(this);
+	}
+}
+function za(e, r, t) {
+	if (this.state.alive) {
+		let n = K(this, r, t);
+		n && se(this, c$1(24, e, o$1, o$1, o$1, o$1, o$1, [D$1(this.base, 3), n], o$1, o$1, o$1, o$1));
+	}
+	ve(this);
+}
+function _a(e, r, t, n) {
+	let a = _r(e.base, {});
+	return e.type === 2 && (et(e), n.then(ha.bind(e, a, r), za.bind(e, a, r))), _t(e.base, t, a);
+}
+function ka(e, r, t, n, a) {
+	for (let s = 0, i = a.length; s < i; s++) {
+		let u = a[s];
+		if (u.parse.sync && u.test(n)) return ce(t, u.tag, u.parse.sync(n, new Hr(e, r), { id: t }));
+	}
+	return o$1;
+}
+function Da(e, r, t, n, a) {
+	for (let s = 0, i = a.length; s < i; s++) {
+		let u = a[s];
+		if (u.parse.stream && u.test(n)) return ce(t, u.tag, u.parse.stream(n, new Jr(e, r), { id: t }));
+	}
+	return o$1;
+}
+function Sn(e, r, t, n) {
+	let a = e.base.plugins;
+	return a ? e.type === 1 ? ka(e, r, t, n, a) : Da(e, r, t, n, a) : o$1;
+}
+function Fa(e, r, t, n) {
+	let a = [];
+	for (let s = 0, i = n.v.length; s < i; s++) a[s] = E$1(e, r, n.v[s]);
+	return He(t, a, n.t, n.d);
+}
+function Ba(e, r, t, n, a) {
+	switch (a) {
+		case Object: return Gr(e, r, t, n, !1);
+		case o$1: return Gr(e, r, t, n, !0);
+		case Date: return ze(t, n);
 		case Error:
 		case EvalError:
 		case RangeError:
 		case ReferenceError:
 		case SyntaxError:
 		case TypeError:
-		case URIError: return 4;
+		case URIError: return fn(e, r, t, n);
 		case Number:
 		case Boolean:
 		case String:
-		case BigInt: return 6;
-		case ArrayBuffer: return 7;
+		case BigInt: return Ea(e, r, t, n);
+		case ArrayBuffer: return sr(e.base, t, n);
 		case Int8Array:
 		case Int16Array:
 		case Int32Array:
@@ -1177,2023 +1876,152 @@ function getObjectKind(current, currentClass, features) {
 		case Uint32Array:
 		case Uint8ClampedArray:
 		case Float32Array:
-		case Float64Array: return 8;
-		case DataView: return 10;
-		case Map: return 11;
-		case Set: return 12;
+		case Float64Array: return Ia(e, r, t, n);
+		case DataView: return Pa(e, r, t, n);
+		case Map: return Ta(e, r, t, n);
+		case Set: return Oa(e, r, t, n);
 	}
-	if (currentClass === Promise || current instanceof Promise) return 13;
-	if (features & 32 && currentClass === RegExp) return 14;
-	if (features & 16 && (currentClass === BigInt64Array || currentClass === BigUint64Array)) return 9;
-	if (features & 1 && typeof AggregateError !== "undefined" && (currentClass === AggregateError || current instanceof AggregateError)) return 5;
-	if (features & 64 && typeof Temporal !== "undefined" && getTemporalType(currentClass) != null) return 15;
-	if (current instanceof Error) return 4;
-	if (SYM_ITERATOR in current || SYM_ASYNC_ITERATOR in current) return 16;
-	return 0;
-}
-function createObjectNode(id, current, empty, record) {
-	return createSerovalNode(empty ? 11 : 10, id, void 0, void 0, void 0, record, void 0, void 0, void 0, void 0, getObjectFlag(current));
-}
-/**
-* Gets the sentinel node for a Map. Call it before parsing the entries, so
-* that an outer Map declares the sentinel before any Map inside it uses it.
-*/
-function parseMapSentinel(ctx) {
-	return parseSpecialReference(ctx, 0);
-}
-function createMapNode(id, sentinel, k, v) {
-	return createSerovalNode(8, id, void 0, void 0, void 0, void 0, {
-		k,
-		v
-	}, void 0, sentinel);
-}
-function createPromiseConstructorNode(ctx, id, resolver) {
-	return createSerovalNode(22, id, resolver, void 0, void 0, void 0, void 0, void 0, parseSpecialReference(ctx, 1));
-}
-function getArrayBufferView(ctx, current) {
-	if (!ctx.compactArrayBufferViews) return current;
-	const buffer = new Uint8Array(current.buffer, current.byteOffset, current.byteLength).slice().buffer;
-	return new (current instanceof DataView ? DataView : getTypedArrayConstructor(getTypedArrayName(current)))(buffer);
-}
-function createArrayBufferNode(ctx, id, current) {
-	return createSerovalNode(19, id, encodeArrayBuffer(current), void 0, void 0, void 0, void 0, void 0, parseSpecialReference(ctx, 5));
-}
-function createAsyncParserContext(options) {
-	return { base: createBaseParserContext(options) };
-}
-async function parseItems$1(ctx, depth, current) {
-	const len = current.length;
-	const nodes = new Array(len);
-	for (let i = 0, node; i < len; i++) if (i in current) {
-		node = parseValueAsync(ctx, depth, current[i]);
-		nodes[i] = node instanceof Promise ? await node : node;
-	} else nodes[i] = 0;
-	return nodes;
-}
-async function parseArray$1(ctx, depth, id, current) {
-	return createArrayNode(id, current, await parseItems$1(ctx, depth, current));
-}
-async function parseProperties$1(ctx, depth, properties) {
-	const keys = Object.keys(properties);
-	const len = keys.length;
-	const keyNodes = new Array(len);
-	const valueNodes = new Array(len);
-	for (let i = 0, key, node; i < len; i++) {
-		key = keys[i];
-		keyNodes[i] = serializeString(key);
-		node = parseValueAsync(ctx, depth, properties[key]);
-		valueNodes[i] = node instanceof Promise ? await node : node;
+	if (a === Promise || n instanceof Promise) return _a(e, r, t, n);
+	let s = e.base.features;
+	if (s & 32 && a === RegExp) return _e(t, n);
+	if (s & 16) switch (a) {
+		case BigInt64Array:
+		case BigUint64Array: return Ra(e, r, t, n);
+		default: break;
 	}
-	if (SYM_ITERATOR in properties) {
-		keyNodes.push(parseWellKnownSymbol(ctx.base, SYM_ITERATOR));
-		valueNodes.push(createIteratorFactoryInstanceNode(28, parseIteratorFactory(ctx.base), await parseAsync(ctx, depth, createSequenceFromIterable(properties))));
-	}
-	if (SYM_ASYNC_ITERATOR in properties) {
-		keyNodes.push(parseWellKnownSymbol(ctx.base, SYM_ASYNC_ITERATOR));
-		valueNodes.push(createIteratorFactoryInstanceNode(30, parseAsyncIteratorFactory(ctx.base), await parseAsyncIterable$1(ctx, depth, properties)));
-	}
-	if (SYM_TO_STRING_TAG in properties) {
-		keyNodes.push(parseWellKnownSymbol(ctx.base, SYM_TO_STRING_TAG));
-		valueNodes.push(createStringNode(properties[SYM_TO_STRING_TAG]));
-	}
-	if (SYM_IS_CONCAT_SPREADABLE in properties) {
-		keyNodes.push(parseWellKnownSymbol(ctx.base, SYM_IS_CONCAT_SPREADABLE));
-		valueNodes.push(properties[SYM_IS_CONCAT_SPREADABLE] ? TRUE_NODE : FALSE_NODE);
-	}
-	return {
-		k: keyNodes,
-		v: valueNodes
-	};
+	if (s & 1 && typeof AggregateError != "undefined" && (a === AggregateError || n instanceof AggregateError)) return xa(e, r, t, n);
+	if (n instanceof Error) return fn(e, r, t, n);
+	if (C in n || v$1 in n) return Gr(e, r, t, n, !!a);
+	throw new x$1(n);
 }
-async function parsePlainObject$1(ctx, depth, id, current, empty) {
-	return createObjectNode(id, current, empty, await parseProperties$1(ctx, depth, current));
+function Va(e, r, t, n) {
+	if (Array.isArray(n)) return Aa(e, r, t, n);
+	if (Qe(n)) return wa(e, r, t, n);
+	if ($e(n)) return Fa(e, r, t, n);
+	let a = n.constructor;
+	if (a === Y) return E$1(e, r, n.replacement);
+	return Sn(e, r, t, n) || Ba(e, r, t, n, a);
 }
-async function parseBoxed$1(ctx, depth, id, current) {
-	return createBoxedNode(id, await parseAsync(ctx, depth, current.valueOf()));
+function Ma(e, r, t) {
+	let n = q(e.base, t);
+	if (n.type !== 0) return n.value;
+	let a = Sn(e, r, n.value, t);
+	if (a) return a;
+	throw new x$1(t);
 }
-async function parseView$1(ctx, depth, type, id, current) {
-	current = getArrayBufferView(ctx.base, current);
-	return createViewNode(type, id, current, await parseAsync(ctx, depth, current.buffer));
-}
-async function parseError$1(ctx, depth, type, id, current) {
-	const options = getErrorOptions(current, ctx.base.features);
-	return createErrorNode(type, id, current, options ? await parseProperties$1(ctx, depth, options) : void 0);
-}
-async function parseMap$1(ctx, depth, id, current) {
-	const sentinel = parseMapSentinel(ctx.base);
-	const keyNodes = new Array(current.size);
-	const valueNodes = new Array(current.size);
-	let node;
-	let i = 0;
-	for (const [key, value] of current.entries()) {
-		node = parseValueAsync(ctx, depth, key);
-		keyNodes[i] = node instanceof Promise ? await node : node;
-		node = parseValueAsync(ctx, depth, value);
-		valueNodes[i] = node instanceof Promise ? await node : node;
-		i++;
-	}
-	return createMapNode(id, sentinel, keyNodes, valueNodes);
-}
-async function parseSet$1(ctx, depth, id, current) {
-	const items = new Array(current.size);
-	let node;
-	let i = 0;
-	for (const item of current.keys()) {
-		node = parseValueAsync(ctx, depth, item);
-		items[i++] = node instanceof Promise ? await node : node;
-	}
-	return createSetNode(id, items);
-}
-async function parsePlugin$1(ctx, depth, id, current, currentPlugins) {
-	if (currentPlugins) for (let i = 0, len = currentPlugins.length; i < len; i++) {
-		const plugin = currentPlugins[i];
-		if (plugin.parse.async && plugin.test(current)) return createPluginNode(id, plugin.tag, await plugin.parse.async(current, {
-			parse: (value) => parseAsync(ctx, depth, value),
-			parseStreamSource(source) {
-				if (depth >= ctx.base.depthLimit) throw new SerovalDepthLimitError(ctx.base.depthLimit);
-				return parseAsyncIterable$1(ctx, depth + 1, source);
-			}
-		}, { id }));
-	}
-}
-async function parsePromise$1(ctx, depth, id, current) {
-	const [status, result] = await promiseToResult(current);
-	return createSerovalNode(12, id, status, void 0, void 0, void 0, void 0, void 0, await parseAsync(ctx, depth, result));
-}
-function parseStreamHandle(depth, id, current, resolve, reject) {
-	const sequence = [];
-	let unparsed = 0;
-	let ended = false;
-	let settled = false;
-	const fail = (error) => {
-		if (!settled) {
-			settled = true;
-			try {
-				cleanup(error);
-			} catch {}
-			reject(error);
-		}
-	};
-	const handle = (type) => (value, accept) => {
-		if (settled) return;
-		markParserRef(this.base, id);
-		const slot = sequence.push(void 0) - 1;
-		unparsed++;
-		if (type !== 32) ended = true;
-		parseAsync(this, depth, value).then((data) => {
-			if (!settled) {
-				sequence[slot] = createStreamEventNode(type, id, data);
-				unparsed--;
-				accept?.();
-				if (ended && unparsed === 0) {
-					settled = true;
-					try {
-						cleanup();
-					} catch (error) {
-						reject(error);
-						return;
-					}
-					resolve(sequence);
-				}
-			}
-		}, fail);
-	};
-	const listener = {
-		next: handle(32),
-		throw: handle(33),
-		return: handle(34)
-	};
-	const cleanup = isLiveStream(current) ? current.pump(listener) : current.on(listener);
-}
-async function parseStream$1(ctx, depth, id, current) {
-	return createStreamConstructorNode(id, parseSpecialReference(ctx.base, 4), await new Promise(parseStreamHandle.bind(ctx, depth, id, current)));
-}
-/**
-* Collects an async iterable into a replay node, one value at a time.
-*/
-async function parseAsyncIterable$1(ctx, depth, current) {
-	const id = createIndexForValue(ctx.base, {});
-	const reference = parseSpecialReference(ctx.base, 4);
-	const iterator = current[SYM_ASYNC_ITERATOR]();
-	const sequence = [];
-	for (;;) {
-		let result;
-		try {
-			result = await iterator.next();
-		} catch (error) {
-			markParserRef(ctx.base, id);
-			sequence.push(createStreamEventNode(33, id, await parseAsync(ctx, depth, error)));
-			break;
-		}
-		markParserRef(ctx.base, id);
-		let parsed;
-		try {
-			parsed = await parseAsync(ctx, depth, result.value);
-		} catch (error) {
-			Promise.resolve().then(() => iterator.return?.()).catch(() => {});
-			throw error;
-		}
-		sequence.push(createStreamEventNode(result.done ? 34 : 32, id, parsed));
-		if (result.done) break;
-	}
-	return createStreamConstructorNode(id, reference, sequence);
-}
-async function parseSequence$1(ctx, depth, id, current) {
-	const len = current.v.length;
-	const nodes = new Array(len);
-	for (let i = 0, node; i < len; i++) {
-		node = parseValueAsync(ctx, depth, current.v[i]);
-		nodes[i] = node instanceof Promise ? await node : node;
-	}
-	return createSequenceNode(id, nodes, current.t, current.d);
-}
-async function parseObjectAsync(ctx, depth, id, current) {
-	if (Array.isArray(current)) return parseArray$1(ctx, depth, id, current);
-	if (isStream(current)) return parseStream$1(ctx, depth, id, current);
-	if (isSequence(current)) return parseSequence$1(ctx, depth, id, current);
-	const currentClass = getObjectClass(current);
-	if (currentClass === OpaqueReference) return parseAsync(ctx, depth, current.replacement);
-	const parsed = await parsePlugin$1(ctx, depth, id, current, getObjectPlugins(ctx.base, current, currentClass));
-	if (parsed) return parsed;
-	if (currentClass === Object) return parsePlainObject$1(ctx, depth, id, current, false);
-	switch (getObjectKind(current, currentClass, ctx.base.features)) {
-		case 2: return parsePlainObject$1(ctx, depth, id, current, true);
-		case 3: return createDateNode(id, current);
-		case 4: return parseError$1(ctx, depth, 13, id, current);
-		case 5: return parseError$1(ctx, depth, 14, id, current);
-		case 6: return parseBoxed$1(ctx, depth, id, current);
-		case 7: return createArrayBufferNode(ctx.base, id, current);
-		case 8: return parseView$1(ctx, depth, 15, id, current);
-		case 9: return parseView$1(ctx, depth, 16, id, current);
-		case 10: return parseView$1(ctx, depth, 20, id, current);
-		case 11: return parseMap$1(ctx, depth, id, current);
-		case 12: return parseSet$1(ctx, depth, id, current);
-		case 13: return parsePromise$1(ctx, depth, id, current);
-		case 14: return createRegExpNode(id, current);
-		case 15: return createTemporalNode(id, getTemporalType(currentClass), current);
-		case 16: return parsePlainObject$1(ctx, depth, id, current, !!currentClass);
-		default: throw new SerovalUnsupportedTypeError(current);
-	}
-}
-async function parseFunctionAsync(ctx, depth, current) {
-	const ref = getReferenceNode(ctx.base, current);
-	if (typeof ref !== "number") return ref;
-	const plugin = await parsePlugin$1(ctx, depth, ref, current, ctx.base.plugins);
-	if (plugin) return plugin;
-	throw new SerovalUnsupportedTypeError(current);
-}
-/**
-* Parses primitives and already-seen values synchronously; only objects and
-* functions come back as a Promise. Errors are thrown synchronously, which
-* an async caller turns into a rejection as before.
-*/
-function parseValueAsync(ctx, depth, current) {
-	if (depth >= ctx.base.depthLimit) throw new SerovalDepthLimitError(ctx.base.depthLimit);
-	switch (typeof current) {
-		case "boolean": return current ? TRUE_NODE : FALSE_NODE;
-		case "undefined": return UNDEFINED_NODE;
-		case "string": return createStringNode(current);
-		case "number": return createNumberNode(current);
-		case "bigint": return createBigIntNode(current);
+function E$1(e, r, t) {
+	if (r >= e.base.depthLimit) throw new M$1(e.base.depthLimit);
+	switch (typeof t) {
+		case "boolean": return t ? J$1 : Z;
+		case "undefined": return Ee;
+		case "string": return X(t);
+		case "number": return we(t);
+		case "bigint": return he(t);
 		case "object":
-			if (current) {
-				const ref = getReferenceNode(ctx.base, current);
-				return typeof ref === "number" ? parseObjectAsync(ctx, depth + 1, ref, current) : ref;
+			if (t) {
+				let n = q(e.base, t);
+				return n.type === 0 ? Va(e, r + 1, n.value, t) : n.value;
 			}
-			return NULL_NODE;
-		case "symbol": return parseWellKnownSymbol(ctx.base, current);
-		case "function": return parseFunctionAsync(ctx, depth, current);
-		default: throw new SerovalUnsupportedTypeError(current);
+			return Ie;
+		case "symbol": return I(e.base, t);
+		case "function": return Ma(e, r, t);
+		default: throw new x$1(t);
 	}
 }
-async function parseAsync(ctx, depth, current) {
-	return await parseValueAsync(ctx, depth, current);
+function se(e, r) {
+	e.state.initial ? e.state.buffer.push(r) : Qr(e, r, !1);
 }
-async function parseTopAsync(ctx, current) {
+function Xr(e, r) {
+	if (e.state.onError) e.state.onError(r);
+	else throw r instanceof _ ? r : new _(r);
+}
+function mn(e) {
+	e.state.onDone && e.state.onDone();
+	for (let r = 0, t = e.state.cleanups.length; r < t; r++) e.state.cleanups[r]();
+}
+function Qr(e, r, t) {
 	try {
-		return await parseAsync(ctx, 0, current);
-	} catch (error) {
-		throw error instanceof SerovalParserError ? error : new SerovalParserError(error);
+		e.state.onParse(r, t);
+	} catch (n) {
+		Xr(e, n);
 	}
 }
-function isValidKey(key) {
-	switch (key) {
-		case "constructor":
-		case "__proto__":
-		case "prototype":
-		case "__defineGetter__":
-		case "__defineSetter__":
-		case "__lookupGetter__":
-		case "__lookupSetter__": return false;
-		default: return true;
-	}
+function et(e) {
+	e.state.pending++;
 }
-function isValidSymbol(symbol) {
-	switch (symbol) {
-		case SYM_ASYNC_ITERATOR:
-		case SYM_IS_CONCAT_SPREADABLE:
-		case SYM_TO_STRING_TAG:
-		case SYM_ITERATOR: return true;
-		default: return false;
-	}
+function ve(e) {
+	--e.state.pending <= 0 && mn(e);
 }
-var DEFAULT_MAX_BASE64_LENGTH = 1e6;
-var MAX_BIGINT_LENGTH = 1e4;
-var MAX_REGEXP_SOURCE_LENGTH = 2e4;
-function applyObjectFlag(obj, flag) {
-	switch (flag) {
-		case 3: return Object.freeze(obj);
-		case 1: return Object.preventExtensions(obj);
-		case 2: return Object.seal(obj);
-		default: return obj;
-	}
-}
-var DEFAULT_DEPTH_LIMIT = 1e3;
-function createBaseDeserializerContext(options) {
-	const maxBase64Length = options.maxBase64Length ?? DEFAULT_MAX_BASE64_LENGTH;
-	if (!Number.isSafeInteger(maxBase64Length) || maxBase64Length < 0) throw new RangeError("maxBase64Length must be a non-negative safe integer");
-	const refs = options.refs ?? /* @__PURE__ */ new Map();
-	if (!("types" in refs)) Object.assign(refs, { types: /* @__PURE__ */ new Map() });
-	return {
-		plugins: options.plugins,
-		refs,
-		features: options.features ?? 127 ^ (options.disabledFeatures ?? 0),
-		depthLimit: options.depthLimit || DEFAULT_DEPTH_LIMIT,
-		maxBase64Length
-	};
-}
-function createVanillaDeserializerContext(options) {
-	return {
-		base: createBaseDeserializerContext(options),
-		marked: new Set(options.markedRefs)
-	};
-}
-function guardIndexedValue(ctx, id) {
-	const node = {
-		t: 4,
-		i: id
-	};
-	if (id < 0 || !Number.isInteger(id)) throw new SerovalMalformedNodeError(node);
-	if (ctx.refs.has(id)) throw new SerovalConflictedNodeIdError(node);
-}
-function isThennable(value) {
-	return !!value && (typeof value === "object" || typeof value === "function") && "then" in value && typeof value.then === "function";
-}
-var ignoreRejection = () => {};
-function assignIndexedValue$1(ctx, id, value) {
-	guardIndexedValue(ctx.base, id);
-	if (value instanceof Promise) value.catch(ignoreRejection);
-	const marked = ctx.marked;
-	if (!marked || marked.has(id)) ctx.base.refs.set(id, value);
-	return value;
-}
-function deserializeKnownValue(node, record, key) {
-	if (Object.hasOwn(record, key)) return record[key];
-	throw new SerovalMalformedNodeError(node);
-}
-function deserializeReference(ctx, node) {
-	return assignIndexedValue$1(ctx, node.i, getReference(deserializeString(node.s)));
-}
-function validateNodeList(node, list) {
-	if (!Array.isArray(list)) throw new SerovalMalformedNodeError(node);
-}
-function deserializeArray(ctx, depth, node) {
-	const items = node.a;
-	validateNodeList(node, items);
-	const len = items.length;
-	const result = assignIndexedValue$1(ctx, node.i, new Array(len));
-	for (let i = 0, item; i < len; i++) {
-		item = items[i];
-		if (item) result[i] = deserialize$1(ctx, depth, item);
-	}
-	applyObjectFlag(result, node.o);
-	return result;
-}
-function assignStringProperty(object, key, value) {
-	if (isValidKey(key)) object[key] = value;
-	else Object.defineProperty(object, key, {
-		value,
-		configurable: true,
-		enumerable: true,
-		writable: true
-	});
-}
-function assignProperty(ctx, depth, object, key, value) {
-	if (typeof key === "string") assignStringProperty(object, deserializeString(key), deserialize$1(ctx, depth, value));
-	else {
-		const actual = deserialize$1(ctx, depth, key);
-		switch (typeof actual) {
-			case "string":
-				assignStringProperty(object, actual, deserialize$1(ctx, depth, value));
-				break;
-			case "symbol":
-				if (isValidSymbol(actual)) object[actual] = deserialize$1(ctx, depth, value);
-				break;
-			default: throw new SerovalMalformedNodeError(key);
-		}
-	}
-}
-function assignNodeType(ctx, id, type) {
-	ctx.base.refs.types.set(id, type);
-}
-function validateNodeType(ctx, node, id, type) {
-	if (ctx.base.refs.types.get(id) !== type) throw new SerovalMalformedNodeError(node);
-}
-function deserializeProperties(ctx, depth, node, result) {
-	const keys = node.k;
-	validateNodeList(node, keys);
-	validateNodeList(node, node.v);
-	const len = keys.length;
-	if (len > 0) for (let i = 0, vals = node.v; i < len; i++) assignProperty(ctx, depth, result, keys[i], vals[i]);
-	return result;
-}
-function deserializeObject(ctx, depth, node) {
-	const result = assignIndexedValue$1(ctx, node.i, node.t === 10 ? {} : Object.create(null));
-	deserializeProperties(ctx, depth, node.p, result);
-	applyObjectFlag(result, node.o);
-	return result;
-}
-function deserializeDate(ctx, node) {
-	return assignIndexedValue$1(ctx, node.i, new Date(node.s));
-}
-function deserializeTemporal(ctx, node) {
-	if (!(ctx.base.features & 64)) throw new SerovalUnsupportedNodeError(node);
-	const construct = Temporal[deserializeKnownValue(node, TEMPORAL_TYPE_NAME, node.c)];
-	return assignIndexedValue$1(ctx, node.i, construct.from(node.s));
-}
-function deserializeRegExp(ctx, node) {
-	if (ctx.base.features & 32) {
-		const source = deserializeString(node.c);
-		if (source.length > MAX_REGEXP_SOURCE_LENGTH) throw new SerovalMalformedNodeError(node);
-		return assignIndexedValue$1(ctx, node.i, new RegExp(source, node.m));
-	}
-	throw new SerovalUnsupportedNodeError(node);
-}
-function deserializeSet(ctx, depth, node) {
-	const result = assignIndexedValue$1(ctx, node.i, /* @__PURE__ */ new Set());
-	validateNodeList(node, node.a);
-	for (let i = 0, items = node.a, len = items.length; i < len; i++) result.add(deserialize$1(ctx, depth, items[i]));
-	return result;
-}
-function deserializeMap(ctx, depth, node) {
-	const result = assignIndexedValue$1(ctx, node.i, /* @__PURE__ */ new Map());
-	validateNodeList(node, node.e.k);
-	validateNodeList(node, node.e.v);
-	for (let i = 0, keys = node.e.k, vals = node.e.v, len = keys.length; i < len; i++) result.set(deserialize$1(ctx, depth, keys[i]), deserialize$1(ctx, depth, vals[i]));
-	return result;
-}
-function deserializeArrayBuffer(ctx, node) {
-	if (typeof node.s !== "string") throw new SerovalMalformedNodeError(node);
-	if (node.s.length > ctx.base.maxBase64Length) throw new RangeError("ArrayBuffer exceeds maxBase64Length (" + ctx.base.maxBase64Length + ")");
-	const buffer = decodeArrayBuffer(deserializeString(node.s));
-	return assignIndexedValue$1(ctx, node.i, buffer);
-}
-function deserializeView(ctx, depth, node, construct) {
-	const source = deserialize$1(ctx, depth, node.f);
-	if (!(source instanceof ArrayBuffer)) throw new SerovalMalformedNodeError(node);
-	const offset = node.b ?? 0;
-	if (offset < 0 || offset > source.byteLength) throw new SerovalMalformedNodeError(node);
-	return assignIndexedValue$1(ctx, node.i, construct ? new construct(source, offset, node.l) : new DataView(source, offset, node.l));
-}
-function deserializeDictionary(ctx, depth, node, result) {
-	if (node.p) {
-		const fields = deserializeProperties(ctx, depth, node.p, {});
-		Object.defineProperties(result, Object.getOwnPropertyDescriptors(fields));
-	}
-	return result;
-}
-function deserializeAggregateError(ctx, depth, node) {
-	return deserializeDictionary(ctx, depth, node, assignIndexedValue$1(ctx, node.i, new AggregateError([], deserializeString(node.m))));
-}
-function deserializeError(ctx, depth, node) {
-	const construct = deserializeKnownValue(node, ERROR_CONSTRUCTOR, node.s);
-	return deserializeDictionary(ctx, depth, node, assignIndexedValue$1(ctx, node.i, new construct(deserializeString(node.m))));
-}
-function deserializePromise(ctx, depth, node) {
-	const deferred = PROMISE_CONSTRUCTOR();
-	const result = assignIndexedValue$1(ctx, node.i, deferred.p);
-	const deserialized = deserialize$1(ctx, depth, node.f);
-	if (isThennable(deserialized)) throw new SerovalMalformedNodeError(node.f);
-	if (node.s) deferred.s(deserialized);
-	else deferred.f(deserialized);
-	return result;
-}
-function deserializeBoxed(ctx, depth, node) {
-	return assignIndexedValue$1(ctx, node.i, Object(deserialize$1(ctx, depth, node.f)));
-}
-function deserializePlugin(ctx, depth, node) {
-	const currentPlugins = ctx.base.plugins;
-	if (currentPlugins) {
-		const tag = deserializeString(node.c);
-		for (let i = 0, len = currentPlugins.length; i < len; i++) {
-			const plugin = currentPlugins[i];
-			if (plugin.tag === tag) return assignIndexedValue$1(ctx, node.i, plugin.deserialize(node.s, { deserialize: (current) => deserialize$1(ctx, depth, current) }, { id: node.i }));
-		}
-	}
-	throw new SerovalMissingPluginError(node.c);
-}
-function deserializePromiseConstructor(ctx, node) {
-	const value = assignIndexedValue$1(ctx, node.i, assignIndexedValue$1(ctx, node.s, PROMISE_CONSTRUCTOR()).p);
-	assignNodeType(ctx, node.s, 22);
-	ctx.base.pending?.add(node.s);
-	return value;
-}
-function deserializePromiseFulfill(ctx, depth, node) {
-	const deferred = ctx.base.refs.get(node.i);
-	if (deferred) {
-		validateNodeType(ctx, node, node.i, 22);
-		const deserialized = deserialize$1(ctx, depth, node.a[1]);
-		if (isThennable(deserialized)) throw new SerovalMalformedNodeError(node.a[1]);
-		if (node.t === 23) deferred.s(deserialized);
-		else deferred.f(deserialized);
-		ctx.base.pending?.delete(node.i);
-		return;
-	}
-	throw new SerovalMissingInstanceError("Promise");
-}
-function deserializeIteratorFactoryInstance(ctx, depth, node) {
-	deserialize$1(ctx, depth, node.a[0]);
-	const source = deserialize$1(ctx, depth, node.a[1]);
-	if (!isSequence(source)) throw new SerovalMalformedNodeError(node.a[1]);
-	return sequenceToIterator(source);
-}
-function deserializeAsyncIteratorFactoryInstance(ctx, depth, node) {
-	deserialize$1(ctx, depth, node.a[0]);
-	const source = deserialize$1(ctx, depth, node.a[1]);
-	if (!isStream(source)) throw new SerovalMalformedNodeError(node.a[1]);
-	return streamToAsyncIterable(source);
-}
-function deserializeStreamConstructor(ctx, depth, node) {
-	const result = assignIndexedValue$1(ctx, node.i, new Stream(node.l === 1 ? 1 : void 0));
-	assignNodeType(ctx, node.i, 31);
-	ctx.base.pending?.add(node.i);
-	const items = node.a;
-	validateNodeList(node, items);
-	const len = items.length;
-	if (len) for (let i = 0; i < len; i++) deserialize$1(ctx, depth, items[i]);
-	return result;
-}
-function deserializeStreamCall(ctx, depth, node, method) {
-	const deferred = ctx.base.refs.get(node.i);
-	if (deferred) {
-		validateNodeType(ctx, node, node.i, 31);
-		deferred[method](deserialize$1(ctx, depth, node.f));
-		if (method !== "next") ctx.base.pending?.delete(node.i);
-		return;
-	}
-	throw new SerovalMissingInstanceError("Stream");
-}
-function deserializeIteratorFactory(ctx, depth, node) {
-	deserialize$1(ctx, depth, node.f);
-}
-function deserializeAsyncIteratorFactory(ctx, depth, node) {
-	deserialize$1(ctx, depth, node.a[1]);
-}
-function isSequenceIndex(value, size) {
-	return Number.isInteger(value) && value >= -1 && value < size;
-}
-function deserializeSequence(ctx, depth, node) {
-	validateNodeList(node, node.a);
-	const size = node.a.length;
-	if (!(isSequenceIndex(node.s, size) && isSequenceIndex(node.l, size))) throw new SerovalMalformedNodeError(node);
-	const result = assignIndexedValue$1(ctx, node.i, createSequence([], node.s, node.l));
-	assignNodeType(ctx, node.i, 35);
-	for (let i = 0; i < size; i++) result.v[i] = deserialize$1(ctx, depth, node.a[i]);
-	return result;
-}
-function deserialize$1(ctx, depth, node) {
-	if (depth > ctx.base.depthLimit) throw new SerovalDepthLimitError(ctx.base.depthLimit);
-	depth += 1;
-	switch (node.t) {
-		case 2: return deserializeKnownValue(node, CONSTANT_VAL, node.s);
-		case 0: return Number(node.s);
-		case 1: return deserializeString(String(node.s));
-		case 3:
-			if (String(node.s).length > MAX_BIGINT_LENGTH) throw new SerovalMalformedNodeError(node);
-			return BigInt(node.s);
-		case 4: return ctx.base.refs.get(node.i);
-		case 18: return deserializeReference(ctx, node);
-		case 9: return deserializeArray(ctx, depth, node);
-		case 10:
-		case 11: return deserializeObject(ctx, depth, node);
-		case 5: return deserializeDate(ctx, node);
-		case 6: return deserializeRegExp(ctx, node);
-		case 7: return deserializeSet(ctx, depth, node);
-		case 8: return deserializeMap(ctx, depth, node);
-		case 19: return deserializeArrayBuffer(ctx, node);
-		case 16:
-		case 15: return deserializeView(ctx, depth, node, getTypedArrayConstructor(node.c));
-		case 20: return deserializeView(ctx, depth, node);
-		case 14: return deserializeAggregateError(ctx, depth, node);
-		case 13: return deserializeError(ctx, depth, node);
-		case 12: return deserializePromise(ctx, depth, node);
-		case 17: return deserializeKnownValue(node, SYMBOL_REF, node.s);
-		case 21: return deserializeBoxed(ctx, depth, node);
-		case 25: return deserializePlugin(ctx, depth, node);
-		case 22: return deserializePromiseConstructor(ctx, node);
-		case 23:
-		case 24: return deserializePromiseFulfill(ctx, depth, node);
-		case 28: return deserializeIteratorFactoryInstance(ctx, depth, node);
-		case 30: return deserializeAsyncIteratorFactoryInstance(ctx, depth, node);
-		case 31: return deserializeStreamConstructor(ctx, depth, node);
-		case 32: return deserializeStreamCall(ctx, depth, node, "next");
-		case 33: return deserializeStreamCall(ctx, depth, node, "throw");
-		case 34: return deserializeStreamCall(ctx, depth, node, "return");
-		case 27: return deserializeIteratorFactory(ctx, depth, node);
-		case 29: return deserializeAsyncIteratorFactory(ctx, depth, node);
-		case 35: return deserializeSequence(ctx, depth, node);
-		case 36: return deserializeTemporal(ctx, node);
-		default: throw new SerovalUnsupportedNodeError(node);
-	}
-}
-function deserializeTop(ctx, node) {
+function K(e, r, t) {
 	try {
-		return deserialize$1(ctx, 0, node);
-	} catch (error) {
-		throw new SerovalDeserializationError(error);
+		return E$1(e, r, t);
+	} catch (n) {
+		return Xr(e, n), o$1;
 	}
 }
-var RETURN = () => T;
-var IS_MODERN = /* @__PURE__ */ (/* @__PURE__ */ RETURN.toString()).includes("=>");
-function createFunction(parameters, body) {
-	if (IS_MODERN) return (parameters.length === 1 ? parameters[0] : "(" + parameters.join(",") + ")") + "=>" + (body.startsWith("{") ? "(" + body + ")" : body);
-	return "function(" + parameters.join(",") + "){return " + body + "}";
-}
-function createEffectfulFunction(parameters, body) {
-	if (IS_MODERN) return (parameters.length === 1 ? parameters[0] : "(" + parameters.join(",") + ")") + "=>{" + body + "}";
-	return "function(" + parameters.join(",") + "){" + body + "}";
-}
-var REF_START_CHARS = "hjkmoquxzABCDEFGHIJKLNPQRTUVWXYZ$_";
-var REF_START_CHARS_LEN = 34;
-var REF_CHARS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789$_";
-var REF_CHARS_LEN = 64;
-function getIdentifier(index) {
-	let mod = index % REF_START_CHARS_LEN;
-	let ref = REF_START_CHARS[mod];
-	index = (index - mod) / REF_START_CHARS_LEN;
-	while (index > 0) {
-		mod = index % REF_CHARS_LEN;
-		ref += REF_CHARS[mod];
-		index = (index - mod) / REF_CHARS_LEN;
-	}
-	return ref;
-}
-function isValidIdentifier(name) {
-	const len = name.length;
-	for (let i = 0; i < len; i++) {
-		const code = name.charCodeAt(i);
-		if (!(code >= 97 && code <= 122 || code >= 65 && code <= 90 || code >= 48 && code <= 57 && i > 0 || code === 95 || code === 36)) return false;
-	}
-	return len > 0;
-}
-function getAssignmentExpression(assignment) {
-	switch (assignment.t) {
-		case 0: return assignment.s + "=" + assignment.v;
-		case 2: return assignment.s + ".set(" + assignment.k + "," + assignment.v + ")";
-		case 1: return assignment.s + ".add(" + assignment.v + ")";
-		case 3: return assignment.s + ".delete(" + assignment.k + ")";
-		case 4: return "Object.defineProperty(" + assignment.s + ",\"__proto__\",{value:" + assignment.k + ",configurable:!0,enumerable:!0,writable:!0})";
-	}
-}
-var MAX_ASSIGNMENT_CHAIN_LENGTH = 100;
-function resolveAssignments(assignments, chainValues = true) {
-	if (!assignments.length) return void 0;
-	let previous = assignments[0];
-	let expression = getAssignmentExpression(previous);
-	let result = "";
-	let chainLength = 1;
-	for (let index = 1, length = assignments.length; index < length; index++) {
-		const assignment = assignments[index];
-		if (chainLength === MAX_ASSIGNMENT_CHAIN_LENGTH) {
-			result += expression + ",";
-			expression = getAssignmentExpression(assignment);
-			chainLength = 0;
-		} else if (chainValues && assignment.t === 0 && previous.t === 0 && assignment.v === previous.v) expression = assignment.s + "=" + expression;
-		else if (assignment.t === 2 && previous.t === 2 && assignment.s === previous.s) expression += ".set(" + assignment.k + "," + assignment.v + ")";
-		else if (assignment.t === 1 && previous.t === 1 && assignment.s === previous.s) expression += ".add(" + assignment.v + ")";
-		else if (assignment.t === 3 && previous.t === 2 && assignment.s === previous.s) expression += ".delete(" + assignment.k + ")";
-		else {
-			result += expression + ",";
-			expression = getAssignmentExpression(assignment);
-			chainLength = 0;
-		}
-		chainLength++;
-		previous = assignment;
-	}
-	return result + expression + ",";
-}
-var NULL_CONSTRUCTOR = "Object.create(null)";
-var SET_CONSTRUCTOR = "new Set";
-var MAP_CONSTRUCTOR = "new Map";
-var PROMISE_RESOLVE = "Promise.resolve";
-var PROMISE_REJECT = "Promise.reject";
-var OBJECT_FLAG_CONSTRUCTOR = {
-	[3]: "Object.freeze",
-	[2]: "Object.seal",
-	[1]: "Object.preventExtensions",
-	[0]: void 0
-};
-function createBaseSerializerContext(mode, options) {
-	return {
-		mode,
-		plugins: options.plugins,
-		features: options.features,
-		marked: Array.isArray(options.markedRefs) ? new Set(options.markedRefs) : options.markedRefs,
-		stack: [],
-		flags: [],
-		assignments: [],
-		assignAll: mode === 2 && !options.assignSharedRefsOnly
-	};
-}
-function createCrossSerializerContext(options) {
-	return {
-		mode: 2,
-		base: createBaseSerializerContext(2, options),
-		state: options
-	};
-}
-/**
-* Creates the reference param (identifier) from the given reference ID
-* Calling this function means the value has been referenced somewhere
-*/
-function getVanillaRefParam(state, index) {
-	/**
-	* Creates a new reference ID from a given reference ID
-	* This new reference ID means that the reference itself
-	* has been referenced at least once, and is used to generate
-	* the variables
-	*/
-	let actualIndex = state.valid.get(index);
-	if (actualIndex == null) {
-		actualIndex = state.valid.size;
-		state.valid.set(index, actualIndex);
-	}
-	let identifier = state.vars[actualIndex];
-	if (identifier == null) {
-		identifier = getIdentifier(actualIndex);
-		state.vars[actualIndex] = identifier;
-	}
-	return identifier;
-}
-function getCrossRefParam(id) {
-	return "$R[" + id + "]";
-}
-/**
-* Converts the ID of a reference into a identifier string
-* that is used to refer to the object instance in the
-* generated script.
-*/
-function getRefParam(ctx, id) {
-	return ctx.mode === 1 ? getVanillaRefParam(ctx.state, id) : getCrossRefParam(id);
-}
-function markSerializerRef(ctx, id) {
-	ctx.marked.add(id);
-}
-function isSerializerRefMarked(ctx, id) {
-	return ctx.marked.has(id);
-}
-function pushObjectFlag(ctx, flag, id) {
-	if (flag !== 0) {
-		markSerializerRef(ctx.base, id);
-		ctx.base.flags.push({
-			type: flag,
-			value: getRefParam(ctx, id)
-		});
-	}
-}
-function resolveFlags(ctx) {
-	let result = "";
-	for (let i = 0, current = ctx.flags, len = current.length; i < len; i++) {
-		const flag = current[i];
-		result += OBJECT_FLAG_CONSTRUCTOR[flag.type] + "(" + flag.value + "),";
-	}
-	return result;
-}
-function resolvePatches(ctx) {
-	const assignments = resolveAssignments(ctx.assignments);
-	const flags = resolveFlags(ctx);
-	if (assignments) {
-		if (flags) return assignments + flags;
-		return assignments;
-	}
-	return flags;
-}
-/**
-* Generates the inlined assignment for the reference
-* This is different from the assignments array as this one
-* signifies creation rather than mutation
-*/
-function createAssignment(ctx, source, value) {
-	ctx.assignments.push({
-		t: 0,
-		s: source,
-		k: void 0,
-		v: value
-	});
-}
-function createAddAssignment(ctx, ref, value) {
-	ctx.base.assignments.push({
-		t: 1,
-		s: getRefParam(ctx, ref),
-		k: void 0,
-		v: value
-	});
-}
-function createSetAssignment(ctx, ref, key, value) {
-	ctx.base.assignments.push({
-		t: 2,
-		s: getRefParam(ctx, ref),
-		k: key,
-		v: value
-	});
-}
-function createDeleteAssignment(ctx, ref, key) {
-	ctx.base.assignments.push({
-		t: 3,
-		s: getRefParam(ctx, ref),
-		k: key,
-		v: void 0
-	});
-}
-function createArrayAssign(ctx, ref, index, value) {
-	createAssignment(ctx.base, getRefParam(ctx, ref) + "[" + index + "]", value);
-}
-function createObjectAssign(ctx, ref, key, value) {
-	if (key === "__proto__") {
-		ctx.base.assignments.push({
-			t: 4,
-			s: getRefParam(ctx, ref),
-			k: value,
-			v: void 0
-		});
-		return;
-	}
-	createAssignment(ctx.base, getRefParam(ctx, ref) + "." + key, value);
-}
-function createSequenceAssign(ctx, ref, index, value) {
-	createAssignment(ctx.base, getRefParam(ctx, ref) + ".v[" + index + "]", value);
-}
-/**
-* Checks if the value is in the stack. Stack here is a reference
-* structure to know if a object is to be accessed in a TDZ.
-*/
-function getKeyKind(key) {
-	const first = key.charCodeAt(0);
-	if (first >= 48 && first <= 57) {
-		const check = Number(key);
-		return check >= 0 && check.toString() === key ? 2 : 0;
-	}
-	if (key === "Infinity") return 2;
-	return isValidIdentifier(key) ? 1 : 0;
-}
-function isIndexedValueInStack(ctx, node) {
-	return node.t === 4 && ctx.stack.includes(node.i);
-}
-/**
-* Checks if the node, or any node inside it, is read from more than one
-* place. Such a node must not be created inside a deferred assignment,
-* because the places that read it may run before the assignment does.
-*/
-function hasMarkedNode(ctx, node) {
-	if (Array.isArray(node)) {
-		for (let i = 0, len = node.length; i < len; i++) if (hasMarkedNode(ctx, node[i])) return true;
-		return false;
-	}
-	if (node == null || typeof node !== "object") return false;
-	const current = node;
-	if (current.t !== 4 && typeof current.i === "number" && isSerializerRefMarked(ctx, current.i)) return true;
-	for (const key in current) if (hasMarkedNode(ctx, current[key])) return true;
-	return false;
-}
-/**
-* Produces an assignment expression. `id` generates a reference
-* parameter (through `getRefParam`) and has the option to
-* return the reference parameter directly or assign a value to
-* it.
-*/
-function assignIndexedValue(ctx, index, value) {
-	if (!ctx.base.assignAll && !isSerializerRefMarked(ctx.base, index)) return value;
-	/**
-	* In cross-reference, we have to assume that
-	* every reference are going to be referenced
-	* in the future, and so we need to store
-	* all of it into the reference array.
-	*
-	* otherwise in vanilla, we only do this if it
-	* is actually referenced. `assignSharedRefsOnly` gives cross-reference
-	* output the vanilla behavior.
-	*/
-	return getRefParam(ctx, index) + "=" + value;
-}
-function serializeReference(node) {
-	return "__SEROVAL_REFS__.get(\"" + node.s + "\")";
-}
-function serializeArrayItem(ctx, id, item, index) {
-	if (item) {
-		if (isIndexedValueInStack(ctx.base, item)) {
-			markSerializerRef(ctx.base, id);
-			createArrayAssign(ctx, id, index, getRefParam(ctx, item.i));
-			return "";
-		}
-		return serialize$1(ctx, item);
-	}
-	return "";
-}
-function serializeArray(ctx, node) {
-	const id = node.i;
-	const list = node.a;
-	const len = list.length;
-	if (len > 0) {
-		ctx.base.stack.push(id);
-		let values = serializeArrayItem(ctx, id, list[0], 0);
-		let isHoley = values === "";
-		for (let i = 1, item; i < len; i++) {
-			item = serializeArrayItem(ctx, id, list[i], i);
-			values += "," + item;
-			isHoley = item === "";
-		}
-		ctx.base.stack.pop();
-		pushObjectFlag(ctx, node.o, node.i);
-		return "[" + values + (isHoley ? ",]" : "]");
-	}
-	return "[]";
-}
-function serializeProperty(ctx, source, key, val) {
-	if (typeof key === "string") {
-		const kind = getKeyKind(key);
-		if (isIndexedValueInStack(ctx.base, val)) {
-			const refParam = getRefParam(ctx, val.i);
-			markSerializerRef(ctx.base, source.i);
-			if (kind === 1) createObjectAssign(ctx, source.i, key, refParam);
-			else createArrayAssign(ctx, source.i, kind === 2 ? key : "\"" + key + "\"", refParam);
-			return "";
-		}
-		if (key !== "__proto__") return (kind === 0 ? "\"" + key + "\"" : key) + ":" + serialize$1(ctx, val);
-		return "[\"" + key + "\"]:" + serialize$1(ctx, val);
-	}
-	return "[" + serialize$1(ctx, key) + "]:" + serialize$1(ctx, val);
-}
-function serializeProperties(ctx, source, record) {
-	const keys = record.k;
-	const len = keys.length;
-	if (len > 0) {
-		const values = record.v;
-		ctx.base.stack.push(source.i);
-		let result = serializeProperty(ctx, source, keys[0], values[0]);
-		for (let i = 1, item; i < len; i++) {
-			item = serializeProperty(ctx, source, keys[i], values[i]);
-			result += (item && result && ",") + item;
-		}
-		ctx.base.stack.pop();
-		return "{" + result + "}";
-	}
-	return "{}";
-}
-function serializeObject(ctx, node) {
-	pushObjectFlag(ctx, node.o, node.i);
-	return serializeProperties(ctx, node, node.p);
-}
-function serializeWithObjectAssign(ctx, source, value, serialized) {
-	const fields = serializeProperties(ctx, source, value);
-	if (fields !== "{}") return "Object.assign(" + serialized + "," + fields + ")";
-	return serialized;
-}
-function serializeStringKeyAssignment(ctx, source, mainAssignments, key, value) {
-	const base = ctx.base;
-	const serialized = serialize$1(ctx, value);
-	const parentAssignment = base.assignments;
-	if (!isIndexedValueInStack(base, value)) base.assignments = mainAssignments;
-	createKeyAssign(ctx, source.i, getKeyKind(key), key, serialized);
-	base.assignments = parentAssignment;
-}
-function createKeyAssign(ctx, ref, kind, key, value) {
-	if (kind === 1) createObjectAssign(ctx, ref, key, value);
-	else createArrayAssign(ctx, ref, kind === 2 ? key : "\"" + key + "\"", value);
-}
-function serializeAssignment(ctx, source, mainAssignments, key, value) {
-	if (typeof key === "string") serializeStringKeyAssignment(ctx, source, mainAssignments, key, value);
-	else {
-		const base = ctx.base;
-		const parent = base.stack;
-		base.stack = [];
-		const serialized = serialize$1(ctx, value);
-		base.stack = parent;
-		const parentAssignment = base.assignments;
-		base.assignments = mainAssignments;
-		createArrayAssign(ctx, source.i, serialize$1(ctx, key), serialized);
-		base.assignments = parentAssignment;
-	}
-}
-function serializeAssignments(ctx, source, node) {
-	const keys = node.k;
-	const len = keys.length;
-	if (len > 0) {
-		const mainAssignments = [];
-		const values = node.v;
-		ctx.base.stack.push(source.i);
-		for (let i = 0; i < len; i++) serializeAssignment(ctx, source, mainAssignments, keys[i], values[i]);
-		ctx.base.stack.pop();
-		return resolveAssignments(mainAssignments, false);
-	}
-}
-function serializeDictionary(ctx, node, init) {
-	if (node.p) {
-		const base = ctx.base;
-		if (base.features & 8 && !node.p.k.includes("__proto__")) init = serializeWithObjectAssign(ctx, node, node.p, init);
-		else {
-			markSerializerRef(base, node.i);
-			const assignments = serializeAssignments(ctx, node, node.p);
-			if (assignments) return "(" + assignIndexedValue(ctx, node.i, init) + "," + assignments + getRefParam(ctx, node.i) + ")";
-		}
-	}
-	return init;
-}
-function serializeNullConstructor(ctx, node) {
-	pushObjectFlag(ctx, node.o, node.i);
-	return serializeDictionary(ctx, node, NULL_CONSTRUCTOR);
-}
-function serializeDate(node) {
-	return "new Date(\"" + node.s + "\")";
-}
-function serializeTemporal(ctx, node) {
-	if (ctx.base.features & 64) return "Temporal." + TEMPORAL_TYPE_NAME[node.c] + ".from(\"" + node.s + "\")";
-	throw new SerovalUnsupportedNodeError(node);
-}
-function serializeRegExp(ctx, node) {
-	if (ctx.base.features & 32) {
-		if (node.c.includes("\\x3C")) return "new RegExp(\"" + node.c + "\",\"" + node.m + "\")";
-		return "/" + deserializeString(node.c) + "/" + node.m;
-	}
-	throw new SerovalUnsupportedNodeError(node);
-}
-function serializeSetItem(ctx, id, item) {
-	const base = ctx.base;
-	if (isIndexedValueInStack(base, item)) {
-		markSerializerRef(base, id);
-		createAddAssignment(ctx, id, getRefParam(ctx, item.i));
-		return "";
-	}
-	return serialize$1(ctx, item);
-}
-function serializeSet(ctx, node) {
-	let serialized = SET_CONSTRUCTOR;
-	const items = node.a;
-	const size = items.length;
-	const id = node.i;
-	if (size > 0) {
-		ctx.base.stack.push(id);
-		let result = serializeSetItem(ctx, id, items[0]);
-		for (let i = 1, item; i < size; i++) {
-			item = serializeSetItem(ctx, id, items[i]);
-			result += (item && result && ",") + item;
-		}
-		ctx.base.stack.pop();
-		if (result) serialized += "([" + result + "])";
-	}
-	return serialized;
-}
-function serializeMapEntry(ctx, id, key, val, getSentinel) {
-	const base = ctx.base;
-	if (isIndexedValueInStack(base, key)) {
-		const keyRef = getRefParam(ctx, key.i);
-		markSerializerRef(base, id);
-		if (isIndexedValueInStack(base, val)) {
-			createSetAssignment(ctx, id, keyRef, getRefParam(ctx, val.i));
-			return "";
-		}
-		if (val.t !== 4 && val.i != null && hasMarkedNode(base, val)) {
-			markSerializerRef(base, val.i);
-			const sentinel = getSentinel();
-			const serialized = "(" + serialize$1(ctx, val) + ",[" + sentinel + "," + sentinel + "])";
-			createSetAssignment(ctx, id, keyRef, getRefParam(ctx, val.i));
-			createDeleteAssignment(ctx, id, sentinel);
-			return serialized;
-		}
-		const parent = base.stack;
-		base.stack = [];
-		createSetAssignment(ctx, id, keyRef, serialize$1(ctx, val));
-		base.stack = parent;
-		return "";
-	}
-	if (isIndexedValueInStack(base, val)) {
-		const valueRef = getRefParam(ctx, val.i);
-		markSerializerRef(base, id);
-		if (key.t !== 4 && key.i != null && hasMarkedNode(base, key)) {
-			markSerializerRef(base, key.i);
-			const sentinel = getSentinel();
-			const serialized = "(" + serialize$1(ctx, key) + ",[" + sentinel + "," + sentinel + "])";
-			createSetAssignment(ctx, id, getRefParam(ctx, key.i), valueRef);
-			createDeleteAssignment(ctx, id, sentinel);
-			return serialized;
-		}
-		const parent = base.stack;
-		base.stack = [];
-		createSetAssignment(ctx, id, serialize$1(ctx, key), valueRef);
-		base.stack = parent;
-		return "";
-	}
-	return "[" + serialize$1(ctx, key) + "," + serialize$1(ctx, val) + "]";
-}
-function serializeMap(ctx, node) {
-	let serialized = MAP_CONSTRUCTOR;
-	const keys = node.e.k;
-	const size = keys.length;
-	const id = node.i;
-	const sentinel = node.f;
-	let sentinelRef;
-	const getSentinel = () => {
-		if (sentinelRef == null) {
-			sentinelRef = getRefParam(ctx, sentinel.i);
-			if (ctx.mode === 1) ctx.state.sentinels.add(ctx.state.valid.get(sentinel.i));
-		}
-		return sentinelRef;
-	};
-	const base = ctx.base;
-	if (size > 0) {
-		const vals = node.e.v;
-		base.stack.push(id);
-		let result = serializeMapEntry(ctx, id, keys[0], vals[0], getSentinel);
-		for (let i = 1, item; i < size; i++) {
-			item = serializeMapEntry(ctx, id, keys[i], vals[i], getSentinel);
-			result += (item && result && ",") + item;
-		}
-		base.stack.pop();
-		if (result) serialized += "([" + result + "])";
-	}
-	if (ctx.mode === 2 && sentinel.t === 26) {
-		markSerializerRef(base, sentinel.i);
-		serialized = "(" + serialize$1(ctx, sentinel) + "," + serialized + ")";
-	}
-	return serialized;
-}
-function serializeArrayBuffer(ctx, node) {
-	return getConstructor(ctx, node.f) + "(\"" + node.s + "\")";
-}
-function serializeView(ctx, node) {
-	return "new " + (node.t === 20 ? "DataView" : node.c) + "(" + serialize$1(ctx, node.f) + "," + node.b + "," + node.l + ")";
-}
-function serializeAggregateError(ctx, node) {
-	const id = node.i;
-	ctx.base.stack.push(id);
-	const serialized = serializeDictionary(ctx, node, "new AggregateError([],\"" + node.m + "\")");
-	ctx.base.stack.pop();
-	return serialized;
-}
-function serializeError(ctx, node) {
-	return serializeDictionary(ctx, node, "new " + ERROR_CONSTRUCTOR_STRING[node.s] + "(\"" + node.m + "\")");
-}
-function serializePromise(ctx, node) {
-	let serialized;
-	const fulfilled = node.f;
-	const id = node.i;
-	const promiseConstructor = node.s ? PROMISE_RESOLVE : PROMISE_REJECT;
-	const base = ctx.base;
-	if (isIndexedValueInStack(base, fulfilled)) {
-		const ref = getRefParam(ctx, fulfilled.i);
-		serialized = promiseConstructor + (node.s ? "().then(" + createFunction([], ref) + ")" : "().catch(" + createEffectfulFunction([], "throw " + ref) + ")");
-	} else {
-		base.stack.push(id);
-		const result = serialize$1(ctx, fulfilled);
-		base.stack.pop();
-		serialized = promiseConstructor + "(" + result + ")";
-	}
-	return serialized;
-}
-function serializeBoxed(ctx, node) {
-	return "Object(" + serialize$1(ctx, node.f) + ")";
-}
-function getConstructor(ctx, node) {
-	const current = serialize$1(ctx, node);
-	return node.t === 4 ? current : "(" + current + ")";
-}
-function serializePromiseConstructor(ctx, node) {
-	if (ctx.mode === 1) throw new SerovalUnsupportedNodeError(node);
-	return "(" + assignIndexedValue(ctx, node.s, getConstructor(ctx, node.f) + "()") + ").p";
-}
-function serializePromiseResult(ctx, node) {
-	if (ctx.mode === 1) throw new SerovalUnsupportedNodeError(node);
-	return getConstructor(ctx, node.a[0]) + "(" + getRefParam(ctx, node.i) + "," + serialize$1(ctx, node.a[1]) + ")";
-}
-function serializePlugin(ctx, node) {
-	const currentPlugins = ctx.base.plugins;
-	if (currentPlugins) for (let i = 0, len = currentPlugins.length; i < len; i++) {
-		const plugin = currentPlugins[i];
-		if (plugin.tag === node.c) return plugin.serialize(node.s, { serialize: (current) => serialize$1(ctx, current) }, { id: node.i });
-	}
-	throw new SerovalMissingPluginError(node.c);
-}
-function serializeIteratorFactory(ctx, node) {
-	let result = "";
-	let initialized = false;
-	if (node.f.t !== 4) {
-		markSerializerRef(ctx.base, node.f.i);
-		result = "(" + serialize$1(ctx, node.f) + ",";
-		initialized = true;
-	}
-	result += assignIndexedValue(ctx, node.i, "(" + SERIALIZED_ITERATOR_CONSTRUCTOR + ")(" + getRefParam(ctx, node.f.i) + ")");
-	if (initialized) result += ")";
-	return result;
-}
-function serializeIteratorFactoryInstance(ctx, node) {
-	return getConstructor(ctx, node.a[0]) + "(" + serialize$1(ctx, node.a[1]) + ")";
-}
-function serializeAsyncIteratorFactory(ctx, node) {
-	const promise = node.a[0];
-	const symbol = node.a[1];
-	const base = ctx.base;
-	let result = "";
-	if (promise.t !== 4) {
-		markSerializerRef(base, promise.i);
-		result += "(" + serialize$1(ctx, promise);
-	}
-	if (symbol.t !== 4) {
-		markSerializerRef(base, symbol.i);
-		result += (result ? "," : "(") + serialize$1(ctx, symbol);
-	}
-	if (result) result += ",";
-	const iterator = assignIndexedValue(ctx, node.i, "(" + SERIALIZED_ASYNC_ITERATOR_CONSTRUCTOR + ")(" + getRefParam(ctx, symbol.i) + "," + getRefParam(ctx, promise.i) + ")");
-	if (result) return result + iterator + ")";
-	return iterator;
-}
-function serializeStreamConstructor(ctx, node) {
-	const result = assignIndexedValue(ctx, node.i, getConstructor(ctx, node.f) + (node.l === 1 ? "(1)" : "()"));
-	const len = node.a.length;
-	if (len) {
-		let values = serialize$1(ctx, node.a[0]);
-		for (let i = 1; i < len; i++) values += "," + serialize$1(ctx, node.a[i]);
-		return "(" + result + "," + values + "," + getRefParam(ctx, node.i) + ")";
-	}
-	return result;
-}
-function serializeStreamCall(ctx, node, method) {
-	return getRefParam(ctx, node.i) + "." + method + "(" + serialize$1(ctx, node.f) + ")";
-}
-function serializeSequenceItem(ctx, id, index, item) {
-	const base = ctx.base;
-	if (isIndexedValueInStack(base, item)) {
-		markSerializerRef(base, id);
-		createSequenceAssign(ctx, id, index, getRefParam(ctx, item.i));
-		return "";
-	}
-	return serialize$1(ctx, item);
-}
-function serializeSequence(ctx, node) {
-	const items = node.a;
-	const size = items.length;
-	const id = node.i;
-	if (size > 0) {
-		ctx.base.stack.push(id);
-		let result = serializeSequenceItem(ctx, id, 0, items[0]);
-		for (let i = 1, item; i < size; i++) {
-			item = serializeSequenceItem(ctx, id, i, items[i]);
-			result += (item && result && ",") + item;
-		}
-		ctx.base.stack.pop();
-		if (result) return "{__SEROVAL_SEQUENCE__:!0,v:[" + result + "],t:" + node.s + ",d:" + node.l + "}";
-	}
-	return "{__SEROVAL_SEQUENCE__:!0,v:[],t:-1,d:0}";
-}
-function serializeAssignable(ctx, node) {
-	switch (node.t) {
-		case 17: return SYMBOL_STRING[node.s];
-		case 18: return serializeReference(node);
-		case 9: return serializeArray(ctx, node);
-		case 10: return serializeObject(ctx, node);
-		case 11: return serializeNullConstructor(ctx, node);
-		case 5: return serializeDate(node);
-		case 6: return serializeRegExp(ctx, node);
-		case 7: return serializeSet(ctx, node);
-		case 8: return serializeMap(ctx, node);
-		case 19: return serializeArrayBuffer(ctx, node);
-		case 16:
-		case 15:
-		case 20: return serializeView(ctx, node);
-		case 14: return serializeAggregateError(ctx, node);
-		case 13: return serializeError(ctx, node);
-		case 12: return serializePromise(ctx, node);
-		case 21: return serializeBoxed(ctx, node);
-		case 22: return serializePromiseConstructor(ctx, node);
-		case 25: return serializePlugin(ctx, node);
-		case 26: return SPECIAL_REF_STRING[node.s];
-		case 35: return serializeSequence(ctx, node);
-		case 36: return serializeTemporal(ctx, node);
-		default: throw new SerovalUnsupportedNodeError(node);
-	}
-}
-function serialize$1(ctx, node) {
-	switch (node.t) {
-		case 2: return CONSTANT_STRING[node.s];
-		case 0: return "" + node.s;
-		case 1: return "\"" + node.s + "\"";
-		case 3: return node.s + "n";
-		case 4: return getRefParam(ctx, node.i);
-		case 23:
-		case 24: return serializePromiseResult(ctx, node);
-		case 27: return serializeIteratorFactory(ctx, node);
-		case 28:
-		case 30: return serializeIteratorFactoryInstance(ctx, node);
-		case 29: return serializeAsyncIteratorFactory(ctx, node);
-		case 31: return serializeStreamConstructor(ctx, node);
-		case 32: return serializeStreamCall(ctx, node, "next");
-		case 33: return serializeStreamCall(ctx, node, "throw");
-		case 34: return serializeStreamCall(ctx, node, "return");
-		default: return assignIndexedValue(ctx, node.i, serializeAssignable(ctx, node));
-	}
-}
-function serializeCross(ctx, tree) {
-	const result = serialize$1(ctx, tree);
-	const id = tree.i;
-	if (id == null) return result;
-	const patches = resolvePatches(ctx.base);
-	const ref = getRefParam(ctx, id);
-	const scopeId = ctx.state.scopeId;
-	const params = scopeId == null ? "" : "$R";
-	let body = result;
-	if (patches) {
-		if (!ctx.base.assignAll && !result.startsWith(ref + "=")) body = ref + "=" + result;
-		body = "(" + body + "," + patches + ref + ")";
-	}
-	if (params === "") {
-		if (tree.t === 10 && !patches) return "(" + body + ")";
-		return body;
-	}
-	const args = scopeId == null ? "()" : "($R[\"" + serializeString(scopeId) + "\"])";
-	return "(" + createFunction([params], body) + ")" + args;
-}
-function wrapSerializationError(error) {
-	return error instanceof SerovalSerializationError ? error : new SerovalSerializationError(error);
-}
-function serializeTopCross(ctx, tree) {
-	try {
-		return serializeCross(ctx, tree);
-	} catch (error) {
-		throw wrapSerializationError(error);
-	}
-}
-function parseItems(ctx, depth, current) {
-	const len = current.length;
-	const nodes = new Array(len);
-	for (let i = 0; i < len; i++) if (i in current) nodes[i] = parseSOS(ctx, depth, current[i]);
-	else nodes[i] = 0;
-	return nodes;
-}
-function parseArray(ctx, depth, id, current) {
-	return createArrayNode(id, current, parseItems(ctx, depth, current));
-}
-function parseProperties(ctx, depth, properties) {
-	const keys = Object.keys(properties);
-	const len = keys.length;
-	const keyNodes = new Array(len);
-	const valueNodes = new Array(len);
-	for (let i = 0, key; i < len; i++) {
-		key = keys[i];
-		keyNodes[i] = serializeString(key);
-		valueNodes[i] = parseSOS(ctx, depth, properties[key]);
-	}
-	if (SYM_ITERATOR in properties) {
-		keyNodes.push(parseWellKnownSymbol(ctx.base, SYM_ITERATOR));
-		valueNodes.push(createIteratorFactoryInstanceNode(28, parseIteratorFactory(ctx.base), parseSOS(ctx, depth, createSequenceFromIterable(properties))));
-	}
-	if (SYM_ASYNC_ITERATOR in properties) {
-		keyNodes.push(parseWellKnownSymbol(ctx.base, SYM_ASYNC_ITERATOR));
-		valueNodes.push(createIteratorFactoryInstanceNode(30, parseAsyncIteratorFactory(ctx.base), parseAsyncIterable(ctx, depth, properties)));
-	}
-	if (SYM_TO_STRING_TAG in properties) {
-		keyNodes.push(parseWellKnownSymbol(ctx.base, SYM_TO_STRING_TAG));
-		valueNodes.push(createStringNode(properties[SYM_TO_STRING_TAG]));
-	}
-	if (SYM_IS_CONCAT_SPREADABLE in properties) {
-		keyNodes.push(parseWellKnownSymbol(ctx.base, SYM_IS_CONCAT_SPREADABLE));
-		valueNodes.push(properties[SYM_IS_CONCAT_SPREADABLE] ? TRUE_NODE : FALSE_NODE);
-	}
-	return {
-		k: keyNodes,
-		v: valueNodes
-	};
-}
-function parseAsyncIterable(ctx, depth, current) {
-	if (ctx.type !== 2) throw new SerovalUnsupportedTypeError(current);
-	const id = createIndexForValue(ctx.base, {});
-	const result = createStreamConstructorNode(id, parseSpecialReference(ctx.base, 4), []);
-	ctx.state.iterable(ctx, depth, id, current);
-	return result;
-}
-function parsePlainObject(ctx, depth, id, current, empty) {
-	return createObjectNode(id, current, empty, parseProperties(ctx, depth, current));
-}
-function parseBoxed(ctx, depth, id, current) {
-	return createBoxedNode(id, parseSOS(ctx, depth, current.valueOf()));
-}
-function parseView(ctx, depth, type, id, current) {
-	current = getArrayBufferView(ctx.base, current);
-	return createViewNode(type, id, current, parseSOS(ctx, depth, current.buffer));
-}
-function parseError(ctx, depth, type, id, current) {
-	const options = getErrorOptions(current, ctx.base.features);
-	return createErrorNode(type, id, current, options ? parseProperties(ctx, depth, options) : void 0);
-}
-function parseMap(ctx, depth, id, current) {
-	const sentinel = parseMapSentinel(ctx.base);
-	const keyNodes = new Array(current.size);
-	const valueNodes = new Array(current.size);
-	let i = 0;
-	for (const [key, value] of current.entries()) {
-		keyNodes[i] = parseSOS(ctx, depth, key);
-		valueNodes[i] = parseSOS(ctx, depth, value);
-		i++;
-	}
-	return createMapNode(id, sentinel, keyNodes, valueNodes);
-}
-function parseSet(ctx, depth, id, current) {
-	const items = new Array(current.size);
-	let i = 0;
-	for (const item of current.keys()) items[i++] = parseSOS(ctx, depth, item);
-	return createSetNode(id, items);
-}
-/**
-* Sends the events of a stream that has ended, so the copy gets all of them.
-* A stream that is still open throws, because the other sync modes cannot
-* send its later events.
-*/
-function parseEndedStream(ctx, depth, id, current) {
-	const events = current.endedEvents();
-	if (!events) throw new SerovalUnsupportedTypeError(current);
-	const values = events.values;
-	const last = values.length - 1;
-	const sequence = new Array(values.length);
-	if (last >= 0) markParserRef(ctx.base, id);
-	for (let i = 0; i <= last; i++) sequence[i] = createStreamEventNode(i < last ? 32 : events.success ? 34 : 33, id, parseSOS(ctx, depth, values[i]));
-	return sequence;
-}
-function parseStream(ctx, depth, id, current) {
-	const reference = parseSpecialReference(ctx.base, 4);
-	if (ctx.type === 2) {
-		const result = createStreamConstructorNode(id, reference, []);
-		ctx.state.stream(ctx, depth, id, current);
-		return result;
-	}
-	return createStreamConstructorNode(id, reference, parseEndedStream(ctx, depth, id, current));
-}
-function parseLiveStream(ctx, depth, id, current) {
-	if (ctx.type !== 2) throw new SerovalUnsupportedTypeError(current);
-	const result = createStreamConstructorNode(id, parseSpecialReference(ctx.base, 4), [], 1);
-	ctx.state.live(ctx, depth, id, current);
-	return result;
-}
-function parsePromise(ctx, depth, id, current) {
-	if (ctx.type !== 2) throw new SerovalUnsupportedTypeError(current);
-	const resolver = createIndexForValue(ctx.base, {});
-	ctx.state.promise(ctx, resolver, depth, current);
-	return createPromiseConstructorNode(ctx.base, id, resolver);
-}
-function parsePluginSync(ctx, depth, id, current, currentPlugins) {
-	for (let i = 0, len = currentPlugins.length; i < len; i++) {
-		const plugin = currentPlugins[i];
-		if (plugin.parse.sync && plugin.test(current)) return createPluginNode(id, plugin.tag, plugin.parse.sync(current, { parse: (value) => parseSOS(ctx, depth, value) }, { id }));
-	}
-}
-function parsePlugin(ctx, depth, id, current, currentPlugins) {
-	if (currentPlugins) return ctx.type === 1 ? parsePluginSync(ctx, depth, id, current, currentPlugins) : ctx.state.plugin(ctx, depth, id, current, currentPlugins);
-}
-function parseSequence(ctx, depth, id, current) {
-	const len = current.v.length;
-	const nodes = new Array(len);
-	for (let i = 0; i < len; i++) nodes[i] = parseSOS(ctx, depth, current.v[i]);
-	return createSequenceNode(id, nodes, current.t, current.d);
-}
-function parseObjectPhase2(ctx, depth, id, current, currentClass) {
-	if (currentClass === Object) return parsePlainObject(ctx, depth, id, current, false);
-	switch (getObjectKind(current, currentClass, ctx.base.features)) {
-		case 2: return parsePlainObject(ctx, depth, id, current, true);
-		case 3: return createDateNode(id, current);
-		case 4: return parseError(ctx, depth, 13, id, current);
-		case 5: return parseError(ctx, depth, 14, id, current);
-		case 6: return parseBoxed(ctx, depth, id, current);
-		case 7: return createArrayBufferNode(ctx.base, id, current);
-		case 8: return parseView(ctx, depth, 15, id, current);
-		case 9: return parseView(ctx, depth, 16, id, current);
-		case 10: return parseView(ctx, depth, 20, id, current);
-		case 11: return parseMap(ctx, depth, id, current);
-		case 12: return parseSet(ctx, depth, id, current);
-		case 13: return parsePromise(ctx, depth, id, current);
-		case 14: return createRegExpNode(id, current);
-		case 15: return createTemporalNode(id, getTemporalType(currentClass), current);
-		case 16: return parsePlainObject(ctx, depth, id, current, !!currentClass);
-		default: throw new SerovalUnsupportedTypeError(current);
-	}
-}
-function parseObject(ctx, depth, id, current) {
-	if (Array.isArray(current)) return parseArray(ctx, depth, id, current);
-	if (isStream(current)) return isLiveStream(current) ? parseLiveStream(ctx, depth, id, current) : parseStream(ctx, depth, id, current);
-	if (isSequence(current)) return parseSequence(ctx, depth, id, current);
-	const currentClass = getObjectClass(current);
-	if (currentClass === OpaqueReference) return parseSOS(ctx, depth, current.replacement);
-	const parsed = parsePlugin(ctx, depth, id, current, getObjectPlugins(ctx.base, current, currentClass));
-	if (parsed) return parsed;
-	return parseObjectPhase2(ctx, depth, id, current, currentClass);
-}
-function parseFunction(ctx, depth, current) {
-	const ref = getReferenceNode(ctx.base, current);
-	if (typeof ref !== "number") return ref;
-	const plugin = parsePlugin(ctx, depth, ref, current, ctx.base.plugins);
-	if (plugin) return plugin;
-	throw new SerovalUnsupportedTypeError(current);
-}
-function parseSOS(ctx, depth, current) {
-	if (depth >= ctx.base.depthLimit) throw new SerovalDepthLimitError(ctx.base.depthLimit);
-	switch (typeof current) {
-		case "boolean": return current ? TRUE_NODE : FALSE_NODE;
-		case "undefined": return UNDEFINED_NODE;
-		case "string": return createStringNode(current);
-		case "number": return createNumberNode(current);
-		case "bigint": return createBigIntNode(current);
-		case "object":
-			if (current) {
-				const ref = getReferenceNode(ctx.base, current);
-				return typeof ref === "number" ? parseObject(ctx, depth + 1, ref, current) : ref;
-			}
-			return NULL_NODE;
-		case "symbol": return parseWellKnownSymbol(ctx.base, current);
-		case "function": return parseFunction(ctx, depth, current);
-		default: throw new SerovalUnsupportedTypeError(current);
-	}
-}
-/**
-* Streaming parse mode. Everything here is reached through the function
-* fields of the stream parser state, which only `createStreamParserContext`
-* sets, so synchronous consumers (`serialize`, `toJSON`) never bundle it.
-*/
-function createStreamParsePluginContext(ctx, depth) {
-	const state = ctx.state;
-	function parse(current) {
-		state.parsing++;
-		try {
-			return parseSOS(ctx, depth, current);
-		} finally {
-			state.parsing--;
-			if (!state.alive) releaseParserValues(ctx);
-		}
-	}
-	return {
-		parse,
-		parseStreamSource(current) {
-			state.parsing++;
+function rt(e, r) {
+	let t = K(e, 0, r);
+	t && (Qr(e, t, !0), e.state.initial = !1, La(e, e.state), e.state.pending <= 0 && mr(e));
+}
+function La(e, r) {
+	for (let t = 0, n = r.buffer.length; t < n; t++) Qr(e, r.buffer[t], !1);
+}
+function mr(e) {
+	e.state.alive && (mn(e), e.state.alive = !1);
+}
+async function lu(e, r = {}) {
+	return await ne(te(2, {
+		plugins: A$1(r.plugins),
+		disabledFeatures: r.disabledFeatures,
+		refs: r.refs
+	}), e);
+}
+function pn(e, r) {
+	let t = A$1(r.plugins), n = Zr({
+		plugins: t,
+		refs: r.refs,
+		disabledFeatures: r.disabledFeatures,
+		onParse(a, s) {
+			let i = cr({
+				plugins: t,
+				features: n.base.features,
+				scopeId: r.scopeId,
+				markedRefs: n.base.marked
+			}), u;
 			try {
-				if (depth >= ctx.base.depthLimit) throw new SerovalDepthLimitError(ctx.base.depthLimit);
-				const id = createIndexForValue(ctx.base, {});
-				const node = createStreamConstructorNode(id, parseSpecialReference(ctx.base, 4), [], 1);
-				iterateAsync(ctx, depth + 1, id, current, true);
-				return node;
-			} finally {
-				state.parsing--;
-				if (!state.alive) releaseParserValues(ctx);
-			}
-		},
-		parseWithError(current) {
-			try {
-				return parse(current);
-			} catch (error) {
-				stopStreamParse(ctx, 1, error);
+				u = Sr(i, a);
+			} catch (l) {
+				r.onError && r.onError(l);
 				return;
 			}
+			r.onSerialize(u, s);
 		},
-		isAlive: () => state.alive,
-		pushPendingState: () => {
-			pushPendingState(ctx);
-		},
-		popPendingState: () => {
-			popPendingState(ctx);
-		},
-		onParse(node) {
-			if (state.alive) {
-				state.queue.push({
-					node,
-					initial: false,
-					accept: void 0
-				});
-				drainOutput(ctx);
-			}
-		},
-		onError(error) {
-			stopStreamParse(ctx, 1, error);
-		},
-		addCleanup(callback) {
-			addCleanup(ctx, callback);
-		}
-	};
-}
-function getStreamParsePluginContext(ctx, depth) {
-	const contexts = ctx.state.pluginContexts;
-	return contexts[depth] ?? (contexts[depth] = createStreamParsePluginContext(ctx, depth));
-}
-function addCleanup(ctx, callback) {
-	if (ctx.state.alive) ctx.state.cleanups.push(callback);
-	else callback();
-}
-function parsePluginStream(ctx, depth, id, current, currentPlugins) {
-	for (let i = 0, len = currentPlugins.length; i < len; i++) {
-		const plugin = currentPlugins[i];
-		if (plugin.parse.stream && plugin.test(current)) return createPluginNode(id, plugin.tag, plugin.parse.stream(current, getStreamParsePluginContext(ctx, depth), { id }));
-	}
-}
-/**
-* One listener shape serves both `Stream.on` (no accept) and
-* `LiveStream.pump` (accept tied to record acceptance). Handlers return the
-* parse error so the pump can stop the source.
-*/
-function streamListener(ctx, depth, id, subscription) {
-	const handle = (type, terminal) => (value, accept) => {
-		let failure = void 0;
-		if (ctx.state.alive) try {
-			failure = parseEvent(ctx, depth, value, createStreamEventNode.bind(null, type, id), accept);
-		} catch (error) {
-			if (!subscription?.active) throw error;
-			subscription.failure ?? (subscription.failure = { value: error });
-			failure = error;
-		}
-		if (terminal && !accept) popPendingState(ctx);
-		return failure;
-	};
-	return {
-		next: handle(32, false),
-		throw: handle(33, true),
-		return: handle(34, true),
-		done() {
-			popPendingState(ctx);
-		},
-		error(reason) {
-			if (ctx.state.alive) stopStreamParse(ctx, 1, reason);
-		}
-	};
-}
-function subscribeStream(ctx, depth, id, current) {
-	pushPendingState(ctx);
-	const subscription = {
-		active: true,
-		failure: void 0
-	};
-	let cleanup;
-	try {
-		cleanup = current.on(streamListener(ctx, depth, id, subscription));
-	} finally {
-		subscription.active = false;
-	}
-	try {
-		addCleanup(ctx, cleanup);
-	} catch (error) {
-		subscription.failure ?? (subscription.failure = { value: error });
-	}
-	const failure = subscription.failure;
-	subscription.failure = void 0;
-	if (failure) throw failure.value;
-}
-function consumeLiveStream(ctx, depth, id, current) {
-	const cancel = current.pump(streamListener(ctx, depth, id));
-	pushPendingState(ctx);
-	addCleanup(ctx, () => {
-		cancel(ctx.state.reason);
+		onError: r.onError,
+		onDone: r.onDone
 	});
+	return rt(n, e), mr.bind(null, n);
 }
-function wrapPromiseResult(ctx, type, id, node) {
-	return createSerovalNode(type, id, void 0, void 0, void 0, void 0, void 0, [parseSpecialReference(ctx.base, type === 23 ? 2 : 3), node], void 0, void 0, void 0, void 0);
-}
-function handlePromise(type, id, depth, data) {
-	if (this.state.alive) parseEvent(this, depth, data, wrapPromiseResult.bind(null, this, type, id), void 0);
-	popPendingState(this);
-}
-function watchPromise(ctx, resolver, depth, current) {
-	pushPendingState(ctx);
-	current.then(handlePromise.bind(ctx, 23, resolver, depth), handlePromise.bind(ctx, 24, resolver, depth));
-}
-function returnIterator(iterator) {
-	Promise.resolve().then(() => iterator.return?.()).catch(() => {});
-}
-/**
-* Drives an async iterator directly. The next value is pulled only after the
-* record for the previous one has been accepted, and cancellation returns
-* the iterator once.
-*/
-function iterateAsync(ctx, depth, id, current, forwardReason) {
-	const iterator = current[SYM_ASYNC_ITERATOR]();
-	const listener = streamListener(ctx, depth, id);
-	let active = true;
-	function stop() {
-		if (active) {
-			active = false;
-			if (forwardReason) try {
-				Promise.resolve(iterator.return?.(ctx.state.reason)).catch(() => {});
-			} catch {}
-			else returnIterator(iterator);
-		}
-	}
-	function pull() {
-		if (active) iterator.next().then((result) => {
-			if (active) {
-				if (result.done) {
-					active = false;
-					listener.return(result.value, void 0);
-				} else if (listener.next(result.value, pull) !== void 0) {
-					stop();
-					listener.done();
-				}
-			}
-		}, (error) => {
-			if (active) {
-				active = false;
-				listener.throw(error, void 0);
-			}
-		});
-	}
-	pushPendingState(ctx);
-	addCleanup(ctx, stop);
-	pull();
-}
-function createStreamParserState(options) {
-	return {
-		alive: true,
-		pending: 0,
-		parsing: 0,
-		queue: [],
-		writing: false,
-		inFlight: void 0,
-		reason: void 0,
-		onParse: options.onParse,
-		onError: options.onError,
-		onDone: options.onDone,
-		cleanups: [],
-		pluginContexts: [],
-		stream: subscribeStream,
-		live: consumeLiveStream,
-		promise: watchPromise,
-		iterable: iterateAsync,
-		plugin: parsePluginStream
-	};
-}
-function createStreamParserContext(options) {
-	return {
-		type: 2,
-		base: createBaseParserContext(options),
-		state: createStreamParserState(options)
-	};
-}
-function pushPendingState(ctx) {
-	if (ctx.state.alive) ctx.state.pending++;
-}
-function popPendingState(ctx) {
-	if (ctx.state.alive) {
-		ctx.state.pending--;
-		checkStreamParse(ctx);
-	}
-}
-/**
-* Parses a value that arrived after the root. Its record is queued before
-* parsing starts so that records discovered inside it follow it, and it is
-* dropped again if parsing fails. Returns the parse error after reporting
-* it, or `undefined`.
-*/
-function parseEvent(ctx, depth, value, wrap, accept) {
-	const state = ctx.state;
-	const record = {
-		node: void 0,
-		initial: false,
-		accept
-	};
-	let failure;
-	state.queue.push(record);
-	state.parsing++;
-	try {
-		record.node = wrap(parseSOS(ctx, depth, value));
-	} catch (error) {
-		failure = { value: error };
-	} finally {
-		state.parsing--;
-		if (!state.alive) releaseParserValues(ctx);
-	}
-	if (failure) stopStreamParse(ctx, 1, failure.value);
-	else drainOutput(ctx);
-	return failure?.value;
-}
-/**
-* Emits queued records one at a time. A callback that returns a promise
-* pauses emission until it settles; the source event behind the record is
-* accepted only after that.
-*/
-function drainOutput(ctx) {
-	const state = ctx.state;
-	if (state.writing || state.parsing > 0) return;
-	while (state.alive && state.queue.length > 0) {
-		const record = state.queue.shift();
-		if (!record.node) continue;
-		let pending;
-		state.writing = true;
-		state.inFlight = record;
-		state.parsing++;
-		try {
-			if (!state.onParse) throw new Error("Stream output callback is unavailable");
-			const result = state.onParse(record.node, record.initial);
-			if (result !== null && (typeof result === "object" || typeof result === "function")) {
-				const then = Reflect.get(result, "then");
-				if (typeof then === "function") pending = new Promise((resolve, reject) => {
-					Reflect.apply(then, result, [resolve, reject]);
-				});
-			}
-		} catch (error) {
-			releaseRecord(record);
-			stopStreamParse(ctx, 1, error);
-			return;
-		} finally {
-			state.parsing--;
-			if (!state.alive) releaseParserValues(ctx);
-		}
-		record.node = void 0;
-		if (pending) {
-			if (!state.alive) releaseRecord(record);
-			pending.then(() => {
-				state.writing = false;
-				state.inFlight = void 0;
-				if (state.alive) {
-					const accept = record.accept;
-					releaseRecord(record);
-					accept?.();
-					drainOutput(ctx);
-				}
-			}, (error) => {
-				state.writing = false;
-				state.inFlight = void 0;
-				releaseRecord(record);
-				stopStreamParse(ctx, 1, error);
-			});
-			return;
-		}
-		if (!state.alive) {
-			releaseRecord(record);
-			return;
-		}
-		state.writing = false;
-		state.inFlight = void 0;
-		const accept = record.accept;
-		releaseRecord(record);
-		accept?.();
-	}
-	checkStreamParse(ctx);
-}
-function checkStreamParse(ctx) {
-	const state = ctx.state;
-	if (state.alive && state.parsing === 0 && state.pending <= 0 && state.queue.length === 0 && !state.writing) stopStreamParse(ctx, 0);
-}
-function startStreamParse(ctx, current) {
-	const state = ctx.state;
-	let parsed;
-	let failure;
-	state.parsing++;
-	try {
-		parsed = parseSOS(ctx, 0, current);
-	} catch (error) {
-		failure = { value: error };
-	} finally {
-		state.parsing--;
-		if (!state.alive) releaseParserValues(ctx);
-	}
-	if (failure) if (state.alive) stopStreamParse(ctx, 1, failure.value);
-	else throw failure.value;
-	else if (parsed && state.alive) {
-		state.queue.unshift({
-			node: parsed,
-			initial: true,
-			accept: void 0
-		});
-		drainOutput(ctx);
-	}
-}
-function runCleanups(state) {
-	const cleanups = state.cleanups;
-	let failure;
-	state.cleanups = [];
-	for (const record of state.queue) releaseRecord(record);
-	state.queue.length = 0;
-	if (state.inFlight) releaseRecord(state.inFlight);
-	state.inFlight = void 0;
-	for (let i = 0, len = cleanups.length; i < len; i++) try {
-		cleanups[i]();
-	} catch (error) {
-		failure ?? (failure = { value: error });
-	}
-	if (failure) throw failure.value;
-}
-function releaseRecord(record) {
-	record.node = void 0;
-	record.accept = void 0;
-}
-function releaseParserValues(ctx) {
-	ctx.base.refs = /* @__PURE__ */ new Map();
-	ctx.base.marked.clear();
-	ctx.base.plugins = void 0;
-	ctx.base.plainObjectPlugins = void 0;
-	ctx.state.pluginContexts = [];
-	if (ctx.state.parsing === 0) ctx.state.reason = void 0;
-}
-/**
-* Ends the parse once: `onDone` on success, `onError` on failure, and every
-* cleanup either way.
-*/
-function stopStreamParse(ctx, mode, reason) {
-	const state = ctx.state;
-	if (state.alive) {
-		state.alive = false;
-		const onError = state.onError;
-		const onDone = state.onDone;
-		if (mode === 1 && !onError && !(reason instanceof SerovalParserError)) reason = new SerovalParserError(reason);
-		state.reason = reason;
-		state.onParse = void 0;
-		state.onError = void 0;
-		state.onDone = void 0;
-		state.writing = false;
-		state.parsing++;
-		let failure;
-		try {
-			if (mode === 1) if (onError) onError(reason);
-			else throw reason;
-			else if (mode === 0) onDone?.();
-		} catch (error) {
-			failure = { value: error };
-		}
-		try {
-			runCleanups(state);
-		} catch (error) {
-			failure ?? (failure = { value: error });
-		} finally {
-			state.parsing--;
-			releaseParserValues(ctx);
-			state.pending = 0;
-		}
-		if (failure) throw failure.value;
-	}
-}
-function destroyStreamParse(ctx, reason) {
-	stopStreamParse(ctx, 2, reason);
-}
-async function toCrossJSONAsync(source, options = {}) {
-	const plugins = resolvePlugins(options.plugins);
-	return await parseTopAsync(createAsyncParserContext({
-		compactArrayBufferViews: options.compactArrayBufferViews,
-		depthLimit: options.depthLimit,
-		plugins,
-		disabledFeatures: options.disabledFeatures,
-		refs: options.refs
-	}), source);
-}
-function crossSerializeStream(source, options) {
-	const plugins = resolvePlugins(options.plugins);
-	const onSerialize = options.onSerialize;
-	const scopeId = options.scopeId;
-	const ctx = createStreamParserContext({
-		compactArrayBufferViews: options.compactArrayBufferViews,
-		depthLimit: options.depthLimit,
-		plugins,
-		refs: options.refs,
-		disabledFeatures: options.disabledFeatures,
-		onParse(node, initial) {
-			const serial = createCrossSerializerContext({
-				plugins,
-				features: ctx.base.features,
-				scopeId,
-				markedRefs: ctx.base.marked
-			});
-			return onSerialize(serializeTopCross(serial, node), initial);
-		},
-		onError: options.onError,
-		onDone: options.onDone
+function cu(e, r) {
+	let n = Zr({
+		plugins: A$1(r.plugins),
+		refs: r.refs,
+		disabledFeatures: r.disabledFeatures,
+		depthLimit: r.depthLimit,
+		onParse: r.onParse,
+		onError: r.onError,
+		onDone: r.onDone
 	});
-	startStreamParse(ctx, source);
-	return destroyStreamParse.bind(null, ctx);
+	return rt(n, e), mr.bind(null, n);
 }
-function toCrossJSONStream(source, options) {
-	const plugins = resolvePlugins(options.plugins);
-	const ctx = createStreamParserContext({
-		compactArrayBufferViews: options.compactArrayBufferViews,
-		plugins,
-		refs: options.refs,
-		disabledFeatures: options.disabledFeatures,
-		depthLimit: options.depthLimit,
-		onParse: options.onParse,
-		onError: options.onError,
-		onDone: options.onDone
-	});
-	startStreamParse(ctx, source);
-	return destroyStreamParse.bind(null, ctx);
-}
-function fromJSON(source, options = {}) {
-	const plugins = resolvePlugins(options.plugins);
-	const disabledFeatures = options.disabledFeatures ?? 0;
-	const sourceFeatures = source.f ?? 127;
-	return deserializeTop(createVanillaDeserializerContext({
-		depthLimit: options.depthLimit,
-		maxBase64Length: options.maxBase64Length,
-		plugins,
-		markedRefs: source.m,
-		features: sourceFeatures & ~disabledFeatures,
-		disabledFeatures
-	}), source.t);
+function Ou(e, r = {}) {
+	var i;
+	let t = A$1(r.plugins), n = r.disabledFeatures || 0, a = (i = e.f) != null ? i : 63;
+	return ir(jt({
+		plugins: t,
+		markedRefs: e.m,
+		features: a & ~n,
+		disabledFeatures: n
+	}), e.t);
 }
 //#endregion
 //#region node_modules/@tanstack/router-core/dist/esm/ssr/serializer/transformer.js
@@ -3207,7 +2035,7 @@ function createSerializationAdapter(opts) {
 /** Create a Seroval plugin for server-side serialization only. */
 /* @__NO_SIDE_EFFECTS__ */
 function makeSsrSerovalPlugin(serializationAdapter, options) {
-	return /* @__PURE__ */ createPlugin({
+	return /* @__PURE__ */ ai({
 		tag: "$TSR/t/" + serializationAdapter.key,
 		test: serializationAdapter.test,
 		parse: { stream(value, ctx, _data) {
@@ -3223,7 +2051,7 @@ function makeSsrSerovalPlugin(serializationAdapter, options) {
 /** Create a Seroval plugin for client/server symmetric (de)serialization. */
 /* @__NO_SIDE_EFFECTS__ */
 function makeSerovalPlugin(serializationAdapter) {
-	return /* @__PURE__ */ createPlugin({
+	return /* @__PURE__ */ ai({
 		tag: "$TSR/t/" + serializationAdapter.key,
 		test: serializationAdapter.test,
 		parse: {
@@ -3331,7 +2159,7 @@ var RAW_STREAM_FACTORY_CONSTRUCTOR_TEXT = (stream) => {
 var FACTORY_BINARY = `(s=>new ReadableStream({start(c){s.on({next(b){try{const d=atob(b),a=new Uint8Array(d.length);for(let i=0;i<d.length;i++)a[i]=d.charCodeAt(i);c.enqueue(a)}catch(_){}},throw(e){c.error(e)},return(){try{c.close()}catch(_){}}})}}))`;
 var FACTORY_TEXT = `(s=>{const e=new TextEncoder();return new ReadableStream({start(c){s.on({next(v){try{if(typeof v==='string'){c.enqueue(e.encode(v))}else{const d=atob(v.$b64),a=new Uint8Array(d.length);for(let i=0;i<d.length;i++)a[i]=d.charCodeAt(i);c.enqueue(a)}}catch(_){}},throw(x){c.error(x)},return(){try{c.close()}catch(_){}}})}})})`;
 function toBinaryStream(readable) {
-	const stream = createStream();
+	const stream = re$1();
 	const reader = readable.getReader();
 	(async () => {
 		try {
@@ -3352,7 +2180,7 @@ function toBinaryStream(readable) {
 	return stream;
 }
 function toTextStream(readable) {
-	const stream = createStream();
+	const stream = re$1();
 	const reader = readable.getReader();
 	const decoder = new TextDecoder("utf-8", { fatal: true });
 	(async () => {
@@ -3390,9 +2218,9 @@ function toTextStream(readable) {
 * - 'binary': Always base64 encode (default)
 * - 'text': Try UTF-8 first, fallback to base64 for invalid UTF-8
 */
-var RawStreamSSRPlugin = /* @__PURE__ */ createPlugin({
+var RawStreamSSRPlugin = /* @__PURE__ */ ai({
 	tag: "tss/RawStream",
-	extends: [/* @__PURE__ */ createPlugin({
+	extends: [/* @__PURE__ */ ai({
 		tag: "tss/RawStreamFactory",
 		test(value) {
 			return value === RAW_STREAM_FACTORY_BINARY;
@@ -3414,7 +2242,7 @@ var RawStreamSSRPlugin = /* @__PURE__ */ createPlugin({
 		deserialize(_node, _ctx, _data) {
 			return RAW_STREAM_FACTORY_BINARY;
 		}
-	}), /* @__PURE__ */ createPlugin({
+	}), /* @__PURE__ */ ai({
 		tag: "tss/RawStreamFactoryText",
 		test(value) {
 			return value === RAW_STREAM_FACTORY_TEXT;
@@ -3446,7 +2274,7 @@ var RawStreamSSRPlugin = /* @__PURE__ */ createPlugin({
 			return {
 				hint: ctx.parse(value.hint),
 				factory: ctx.parse(factory),
-				stream: ctx.parse(createStream())
+				stream: ctx.parse(re$1())
 			};
 		},
 		async async(value, ctx, _data) {
@@ -3486,7 +2314,7 @@ var RawStreamSSRPlugin = /* @__PURE__ */ createPlugin({
 /* @__NO_SIDE_EFFECTS__ */
 function createRawStreamRPCPlugin(onRawStream) {
 	let nextStreamId = 1;
-	return /* @__PURE__ */ createPlugin({
+	return /* @__PURE__ */ ai({
 		tag: "tss/RawStream",
 		test(value) {
 			return value instanceof RawStream;
@@ -3517,7 +2345,7 @@ function createRawStreamRPCPlugin(onRawStream) {
 * this plugin serializes only the `message` part of an Error
 * this helps with serializing e.g. a ZodError which has functions attached that cannot be serialized
 */
-var ShallowErrorPlugin = /* @__PURE__ */ createPlugin({
+var ShallowErrorPlugin = /* @__PURE__ */ ai({
 	tag: "$TSR/Error",
 	test(value) {
 		return value instanceof Error;
@@ -3540,140 +2368,99 @@ var ShallowErrorPlugin = /* @__PURE__ */ createPlugin({
 		return new Error(ctx.deserialize(node.message));
 	}
 });
-//#endregion
-//#region node_modules/seroval-plugins/dist/web.js
-var READABLE_STREAM_FACTORY = {};
-var READABLE_STREAM_FACTORY_CONSTRUCTOR = (stream) => new ReadableStream({ start(controller) {
-	stream.on({
-		next(value) {
+var o = {};
+var P = (e) => new ReadableStream({ start: (r) => {
+	e.on({
+		next: (a) => {
 			try {
-				controller.enqueue(value);
-			} catch (_error) {}
+				r.enqueue(a);
+			} catch (t) {}
 		},
-		throw(value) {
-			controller.error(value);
+		throw: (a) => {
+			r.error(a);
 		},
-		return() {
+		return: () => {
 			try {
-				controller.close();
-			} catch (_error) {}
+				r.close();
+			} catch (a) {}
 		}
 	});
 } });
-var ReadableStreamFactoryPlugin = /* @__PURE__ */ createPlugin({
+var ee = ai({
 	tag: "seroval-plugins/web/ReadableStreamFactory",
-	test(value) {
-		return value === READABLE_STREAM_FACTORY;
+	test(e) {
+		return e === o;
 	},
 	parse: {
 		sync() {
-			return READABLE_STREAM_FACTORY;
+			return o;
 		},
 		async async() {
-			return await Promise.resolve(READABLE_STREAM_FACTORY);
+			return await Promise.resolve(o);
 		},
 		stream() {
-			return READABLE_STREAM_FACTORY;
+			return o;
 		}
 	},
 	serialize() {
-		return READABLE_STREAM_FACTORY_CONSTRUCTOR.toString();
+		return P.toString();
 	},
 	deserialize() {
-		return READABLE_STREAM_FACTORY;
+		return o;
 	}
 });
-function toAsyncIterable(value) {
-	return { [Symbol.asyncIterator]() {
-		const reader = value.getReader();
-		let active = true;
-		let reading = false;
-		const release = () => {
-			try {
-				reader.releaseLock();
-			} catch {}
-		};
-		return {
-			async next() {
-				if (!active) return {
-					done: true,
-					value: void 0
-				};
-				reading = true;
-				let result;
-				try {
-					result = await reader.read();
-				} catch (error) {
-					reading = false;
-					release();
-					if (!active) return {
-						done: true,
-						value: void 0
-					};
-					active = false;
-					throw error;
-				}
-				reading = false;
-				if (!active || result.done) {
-					active = false;
-					release();
-					return {
-						done: true,
-						value: void 0
-					};
-				}
-				return result;
-			},
-			return(reason) {
-				if (active) {
-					active = false;
-					try {
-						reader.cancel(reason).catch(() => {});
-					} catch {}
-					if (!reading) release();
-				}
-				return Promise.resolve({
-					done: true,
-					value: void 0
-				});
-			}
-		};
-	} };
+async function N(e, r) {
+	try {
+		let a = await r.read();
+		a.done ? (e.return(a.value), r.releaseLock()) : (e.next(a.value), await N(e, r));
+	} catch (a) {
+		e.throw(a);
+	}
+}
+function re(e) {
+	e.cancel().catch(() => {}), e.releaseLock();
+}
+function w(e) {
+	let r = re$1(), a = e.getReader(), t = re.bind(null, a);
+	return N(r, a).catch(t), [r, t];
 }
 //#endregion
 //#region node_modules/@tanstack/router-core/dist/esm/ssr/serializer/seroval-plugins.js
 var defaultSerovalPlugins = [
 	ShallowErrorPlugin,
 	RawStreamSSRPlugin,
-	/* @__PURE__ */ createPlugin({
+	ai({
 		tag: "seroval/plugins/web/ReadableStream",
-		extends: [ReadableStreamFactoryPlugin],
-		skipPlainObjects: true,
-		test(value) {
-			if (typeof ReadableStream === "undefined") return false;
-			return value instanceof ReadableStream;
+		extends: [ee],
+		test(e) {
+			return typeof ReadableStream == "undefined" ? !1 : e instanceof ReadableStream;
 		},
 		parse: {
-			async async(value, ctx) {
+			sync(e, r) {
 				return {
-					factory: await ctx.parse(READABLE_STREAM_FACTORY),
-					stream: await ctx.parseStreamSource(toAsyncIterable(value))
+					factory: r.parse(o),
+					stream: r.parse(re$1())
 				};
 			},
-			stream(value, ctx) {
+			async async(e, r) {
 				return {
-					factory: ctx.parse(READABLE_STREAM_FACTORY),
-					stream: ctx.parseStreamSource(toAsyncIterable(value))
+					factory: await r.parse(o),
+					stream: await r.parse(w(e)[0])
+				};
+			},
+			stream(e, r) {
+				let [a, t] = w(e);
+				return r.addCleanup(t), {
+					factory: r.parse(o),
+					stream: r.parse(a)
 				};
 			}
 		},
-		serialize(node, ctx) {
-			return "(" + ctx.serialize(node.factory) + ")(" + ctx.serialize(node.stream) + ")";
+		serialize(e, r) {
+			return "(" + r.serialize(e.factory) + ")(" + r.serialize(e.stream) + ")";
 		},
-		deserialize(node, ctx) {
-			const stream = ctx.deserialize(node.stream);
-			if (!isStream(stream)) throw new Error("Expected a stream source.");
-			return READABLE_STREAM_FACTORY_CONSTRUCTOR(stream);
+		deserialize(e, r) {
+			return P(r.deserialize(e.stream));
 		}
 	})
 ];
@@ -3706,7 +2493,7 @@ function dehydrateMatch(match) {
 	if (match.globalNotFound) dehydratedMatch.g = true;
 	return dehydratedMatch;
 }
-var INITIAL_SCRIPTS = [getCrossReferenceHeader(SCOPE_ID), tsrScript_default];
+var INITIAL_SCRIPTS = [yn(SCOPE_ID), tsrScript_default];
 var ScriptBuffer = class {
 	constructor(injectScript) {
 		this._scriptBarrierLifted = false;
@@ -4016,7 +2803,7 @@ function attachRouterServerSsrUtils({ router, manifest, getRequestAssets }) {
 				scriptBuffer.flush();
 				signalSerializationComplete();
 			};
-			crossSerializeStream(dehydratedRouter, {
+			pn(dehydratedRouter, {
 				refs: /* @__PURE__ */ new Map(),
 				plugins,
 				onSerialize: (data, initial) => {
@@ -4225,4 +3012,4 @@ function mergeHeaders(...headers) {
 	}, new Headers());
 }
 //#endregion
-export { defaultSerovalPlugins as a, makeSerovalPlugin as c, toCrossJSONStream as d, getOrigin as i, fromJSON as l, attachRouterServerSsrUtils as n, createRawStreamRPCPlugin as o, getNormalizedURL as r, createSerializationAdapter as s, mergeHeaders as t, toCrossJSONAsync as u };
+export { defaultSerovalPlugins as a, makeSerovalPlugin as c, lu as d, getOrigin as i, Ou as l, attachRouterServerSsrUtils as n, createRawStreamRPCPlugin as o, getNormalizedURL as r, createSerializationAdapter as s, mergeHeaders as t, cu as u };
