@@ -972,7 +972,7 @@ var seeds = [
 * without touching components. Dates are appended at click time when known.
 */
 function buildAffiliateUrl(slug) {
-	return `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(slug.replace(/-/g, " "))}`;
+	return `/find?q=${encodeURIComponent(slug.replace(/-/g, " "))}`;
 }
 var HOTELS = seeds.map((seed) => ({
 	...seed,
