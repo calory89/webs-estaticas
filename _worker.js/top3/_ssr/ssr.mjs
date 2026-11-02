@@ -29188,6 +29188,8 @@ function card$1(t, p, city, L, cityImg, slug) {
 <div class="ctas"><a class="btn" href="${esc(bookingFor(p, city))}" rel="sponsored nofollow noopener" target="_blank" data-t="gym_booking" data-city="${esc(slug)}" data-cat="${t}" data-p="booking">${esc(x.book)}</a>${p.website ? `<a class="lnk" href="${esc(p.website)}" rel="nofollow noopener" target="_blank">${esc(x.site)} →</a>` : ""}</div>
 <div class="src">${esc(x.sources)}: ${p.sources.map((s) => `<a href="${esc(s)}" rel="nofollow noopener" target="_blank">${esc(host(s))}</a>`).join("")}</div></div></article>`;
 }
+/** Whole hotel card opens Booking (city cards and gym cards); buttons, links and toggles keep their own action. */
+var CARD_CLICK = `<style>article.card,article.gcard:not(.empty){cursor:pointer}</style><script>document.addEventListener('click',function(e){var c=e.target.closest&&e.target.closest('article.card,article.gcard');if(!c||e.defaultPrevented)return;if(e.target.closest('a,button,summary,details,input,select,label,textarea'))return;try{if(String(getSelection()).length>2)return}catch(_){}var b=c.querySelector('a.btn');if(b)b.click()});<\/script>`;
 async function gymCityPage(urlSlug, Lx) {
 	const { pub, toId, byId } = await slugs();
 	const id = toId(urlSlug);
@@ -29245,6 +29247,7 @@ ${ic ? `<p><a href="${P(L, `/${slug}`)}">${esc(x.hotels(city.city))} →</a></p>
 		description: x.desc(city.city, names),
 		path,
 		body,
+		scripts: CARD_CLICK,
 		alts: GYM_LANGS,
 		...bestPick?.photo?.url ?? cityImg ? { image: bestPick?.photo?.url ?? `https://www.top3hotels.com${cityImg}` } : {},
 		ld: [{
@@ -30200,7 +30203,7 @@ ${why.length ? `<ul class="why">${why.map((w) => `<li>${esc(w)}</li>`).join("")}
 <div class="trust"><span><b>${fmtInt(b.count)}</b> Booking.com ${esc(t.reviews)}</span>${ex.loc ? `<span>${esc(t.location)} <b>${ex.loc}</b></span>` : ""}<span class="live">${esc(M[L].live(fmtLive(isoDay(b.checked))))}</span></div>
 ${ex.pros?.length ? `<ul class="pc"><li class="pro"><small>${esc(t.guestsSay)}</small>${esc(ex.pros[0])}</li>${ex.cons?.[0] ? `<li class="con">${esc(ex.cons[0])}</li>` : ""}</ul>` : `<p style="margin:0;font-size:14px">${esc(h.evidence?.shortReason ?? h.reason ?? "")}</p>`}
 ${tags.length ? `<ul class="chips">${tags.map((x) => `<li>${esc(t.tags[x] ?? x)}</li>`).join("")}</ul>` : ""}
-<div class="price"><span>${esc(t.refRate)} · ${esc(range(o.checkin, o.checkout))} · 2 adults</span><span class="total" data-total="${o.nightly ?? ""}" hidden></span></div>
+<div class="price"><span>${esc(t.refRate)}</span><span class="total" data-total="${o.nightly ?? ""}" hidden></span></div>
 ${o.checkout && dayMs(o.checkout) < Date.now() ? `<p class="cnote">${esc(NOTE[L].past(range(o.checkin, o.checkout)))}</p>` : ""}${isHostel(h) ? `<p class="cnote">${esc(NOTE[L].hostel)}</p>` : ""}${h.sameAs ? `<p class="cnote">${esc(NOTE[L].same(h.sameAs))}</p>` : ""}
 ${link ? `<a class="btn" href="${esc(link)}" rel="sponsored nofollow noopener" target="_blank" data-t="check_availability" data-city="${esc(city.slug)}" data-cat="${k}" data-p="booking">${esc(t.checkPrice)} ↗</a><p class="disc">${esc(Z[L].disc)}</p><a class="alt" href="${esc(altSearch(k, o.nightly, b.stars, city))}" rel="sponsored nofollow noopener" target="_blank" data-t="alt_click" data-city="${esc(city.slug)}" data-cat="${k}" data-p="booking-alt">${esc(ALT_TXT[L])} →</a>` : ""}
 ${review ? `<a class="alt" href="${esc(review)}" data-t="review_click" data-city="${esc(city.slug)}" data-cat="${k}">${esc(L === "es" ? "Leer el análisis completo" : L === "en" ? "Read the full review" : "Full review (English)")} →</a>` : ""}
@@ -30442,7 +30445,7 @@ ${same.length ? `<section aria-labelledby="more"><h2 id="more">${esc(t.moreIn(cn
 		ld,
 		...image ? { image } : {},
 		langs: true,
-		scripts: mapScript(hs, sights)
+		scripts: mapScript(hs, sights) + CARD_CLICK
 	});
 }
 async function tileFor(c, h, L, extra = "") {
@@ -31988,7 +31991,7 @@ var server_default = { async fetch(request, env, ctx) {
 		const readRequest = request.method === "GET" || request.method === "HEAD";
 		if (url.pathname === "/top3hotels.html" && readRequest) return Response.redirect(new URL("/" + url.search, url).href, 301);
 		if (url.pathname === "/" && readRequest) {
-			const html = request.method === "HEAD" ? null : (await import("./home-CuUHsvOB.mjs")).default;
+			const html = request.method === "HEAD" ? null : (await import("./home-qZJzGrgl.mjs")).default;
 			return new Response(html, {
 				status: 200,
 				headers: {
