@@ -2,6 +2,66 @@
  {
   "d": "2026-11-02",
   "k": "feature",
+  "t": "Public log: one hash-chained line a day fixes the dataset, page fingerprints, site evidence and admin audit trail, timestamped in Bitcoin",
+  "u": "/log/"
+ },
+ {
+  "d": "2026-11-02",
+  "k": "feature",
+  "t": "Merkle inclusion proofs: check that any one of 804 sealed page fingerprints is in the logged root, in your browser",
+  "u": "/verify/#proof"
+ },
+ {
+  "d": "2026-11-02",
+  "k": "feature",
+  "t": "Every open API answer carries the SHA-256 of the dataset it came from, with ETags for conditional requests",
+  "u": "/api/open"
+ },
+ {
+  "d": "2026-11-02",
+  "k": "feature",
+  "t": "Change feed API: every recorded change to a project field since any date",
+  "u": "/api/open/changes"
+ },
+ {
+  "d": "2026-11-02",
+  "k": "feature",
+  "t": "Tamper-evident admin audit trail: every admin action hash-chained and re-verified before each log line",
+  "u": "/log/"
+ },
+ {
+  "d": "2026-11-02",
+  "k": "feature",
+  "t": "Trust Scores reproduced every day from the open scoring code and the open dataset: 884 of 884 match",
+  "u": "/status"
+ },
+ {
+  "d": "2026-11-02",
+  "k": "feature",
+  "t": "Recycled-photo detection: a perceptual hash of every site photo is compared with all other cases",
+  "u": "/agents"
+ },
+ {
+  "d": "2026-11-02",
+  "k": "feature",
+  "t": "Plot-boundary geofence: every site photo measured against the plot polygon, not just the map pin",
+  "u": "/agents"
+ },
+ {
+  "d": "2026-11-02",
+  "k": "feature",
+  "t": "One-time capture codes from the server burned into each site photo, binding it to that visit",
+  "u": "/agents"
+ },
+ {
+  "d": "2026-11-02",
+  "k": "feature",
+  "t": "kolaboro-verify.js: open-source checker (MIT, no dependencies) with test vectors from real records",
+  "u": "/open/kolaboro-verify.js"
+ },
+ {
+  "d": "2026-11-02",
+  "k": "feature",
   "t": "Status page now shows the daily end-to-end self-test, email delivery and site quality, measured by the system itself",
   "u": "/status/"
  },
