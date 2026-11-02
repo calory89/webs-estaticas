@@ -30,9 +30,14 @@ jobs:
           git status --porcelain | wc -l
           git diff --stat | tail -5
           git status --porcelain | cut -c4- | awk -F/ '{print $1"/"$2}' | sort | uniq -c | sort -rn | head -40
-          total=$(( $(git ls-files | wc -l) + $(git status --porcelain --untracked-files=all | grep -c '^??' || true) ))
-          echo "total=$total"
-          if [ "${{ github.event.inputs.branch }}" = "pub/_lovable" ] && [ $total -gt 95000 ]; then echo "too many files"; exit 1; fi
+          # Count what each Cloudflare Pages project deploys from pub/_lovable (limit 20,000 files per deployment):
+          # web-lovable drops _s/realhunt.co and _s/go.realhunt.co in its build (realhunt.co is served from the
+          # realhunt-media project, root _s/realhunt.co); _worker.js/ is the worker, not static files.
+          total=$(find . -type f -not -path './.git/*' | wc -l)
+          wl=$(find . -type f -not -path './.git/*' -not -path './_s/realhunt.co/*' -not -path './_s/go.realhunt.co/*' -not -path './_worker.js/*' | wc -l)
+          rhm=$(find ./_s/realhunt.co -type f 2>/dev/null | wc -l)
+          echo "files in branch=$total web-lovable deploy=$wl realhunt-media deploy=$rhm (limit 20000 each)"
+          if [ "${{ github.event.inputs.branch }}" = "pub/_lovable" ] && { [ $wl -gt 19500 ] || [ $rhm -gt 19500 ]; }; then echo "too many files for a Cloudflare Pages deployment"; exit 1; fi
       - name: Commit
         if: ${{ github.event.inputs.dry_run != 'true' }}
         env:
