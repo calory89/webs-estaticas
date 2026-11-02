@@ -18748,6 +18748,20 @@ async function tileFor(c, h, L, extra = "") {
 	const img = h.gallery?.find((g) => g.src)?.src ?? (cx[c.id]?.hero?.img ? `/api/img/${c.id}/small` : void 0);
 	return `<a class="tile ${catKey(h)}" href="${P(L, "/" + c.slug)}">${img ? `<img src="${esc(img)}" alt="" width="480" height="300" loading="lazy" referrerpolicy="no-referrer"${fbAttr([...(h.gallery ?? []).map((g) => g.src).filter((s) => s && s !== img).slice(0, 3), `/api/img/${c.id}/small`])}>` : ""}<div><strong>${esc(h.name)}</strong>${esc(c.city)}, ${esc(countryName(c, L))} · ${esc(label(h, L))} · ${h.booking?.score?.toFixed(1) ?? "–"}/10 · ${money(h.offer?.nightly)}${extra}</div></a>`;
 }
+/* Country intro built only from catalogue facts (cheapest Budget pick, best guest score, five-star Luxury picks). */
+function countryIntro(rows, cname, L) {
+  if (L !== "en" && L !== "es") return "";
+  const hs = rows.filter((r) => r.d).flatMap((r) => r.d.hotels.map((h) => ({ h, c: r.c })));
+  const cheap = hs.filter((x) => x.h.category === "Budget" && x.h.offer?.nightly).sort((a, b) => a.h.offer.nightly - b.h.offer.nightly)[0];
+  const top = hs.filter((x) => x.h.booking?.score).sort((a, b) => b.h.booking.score - a.h.booking.score)[0];
+  const lux = hs.filter((x) => x.h.category === "Luxury");
+  const five = lux.filter((x) => x.h.booking?.stars === 5).length;
+  if (!cheap || !top) return "";
+  const s = top.h.booking.score.toFixed(1);
+  return L === "es"
+    ? `<p class="intro">La opción Económico más barata de ${esc(cname)} es ${esc(cheap.h.name)} en ${esc(cheap.c.city)}, unos ${money(cheap.h.offer.nightly)} la noche (precio de referencia). La nota más alta entre nuestras elecciones es la de ${esc(top.h.name)} en ${esc(top.c.city)} (${s.replace(".", ",")}/10 en Booking.com). ${lux.length === 1 ? (five ? "Nuestra elección de Lujo es un hotel de cinco estrellas." : "Nuestra elección de Lujo no es un hotel de cinco estrellas.") : `${five} de nuestras ${lux.length} elecciones de Lujo son hoteles de cinco estrellas.`}</p>`
+    : `<p class="intro">The cheapest Budget pick in ${esc(cname)} is ${esc(cheap.h.name)} in ${esc(cheap.c.city)}, about ${money(cheap.h.offer.nightly)} a night (reference price). The highest guest score among our picks belongs to ${esc(top.h.name)} in ${esc(top.c.city)} (${s}/10 on Booking.com). ${lux.length === 1 ? (five ? "Our Luxury pick is a five-star hotel." : "Our Luxury pick is not a five-star hotel.") : `${five} of our ${lux.length} Luxury picks are five-star hotels.`}</p>`;
+}
 async function countryPage(cslug, L) {
 	const { byCountry } = await data();
 	const list = byCountry.get(cslug);
@@ -18786,7 +18800,7 @@ async function countryPage(cslug, L) {
 	}];
 	const tiles = await Promise.all(rows.filter((r) => r.d).map(({ c, d }) => tileFor(c, d.hotels[1], L)));
 	const body = `<p class="crumbs"><a href="${P(L, "/")}">${esc(t.home)}</a> › <a href="${P(L, "/destinations")}">${esc(t.allDest)}</a> › ${esc(cname)}</p>
-<h1>${esc(t.countryH1(cname))}<em>.</em></h1><p class="lead">${esc(t.countryLead(list.length))}</p>
+<h1>${esc(t.countryH1(cname))}<em>.</em></h1><p class="lead">${esc(t.countryLead(list.length))}</p>${countryIntro(rows, cname, L)}
 <div class="tiles">${tiles.join("")}</div>
 <section><div class="tablewrap"><table><thead><tr><th>${esc(t.allDest)}</th><th>${esc(t.cat.Budget)}</th><th>${esc(t.cat["Best Value"])}</th><th>${esc(t.cat.Luxury)}</th></tr></thead><tbody>
 ${rows.filter((r) => r.d).map(({ c, d }) => `<tr><td><a href="${P(L, "/" + c.slug)}"><strong>${esc(c.city)}</strong></a></td>${d.hotels.map((h) => `<td>${esc(h.name)}<br><small>${h.booking?.score?.toFixed(1) ?? "–"}/10 · ${money(h.offer?.nightly)}</small></td>`).join("")}</tr>`).join("")}
