@@ -580,6 +580,20 @@ async function apiV1(req, u, env, ctx) {
 
 // ---------- Open data API (no key): projects, markets, stats, CSV, feeds ----------
 const OPEN_FIELDS = ['id', 'market', 'country', 'region', 'stage', 'band', 'done', 'title', 'lease', 'units', 'score', 'max', 'vscore', 'tier', 'delay'];
+// ---------- Ed25519 signatures on open answers. Private key only in the Cloudflare secret KB_SIGN_KEY; public key at /.well-known/kolaboro-keys.json
+let SIGN_KEY = null;
+async function signKey(env) {
+  if (SIGN_KEY || !env || !env.KB_SIGN_KEY) return SIGN_KEY;
+  const der = Uint8Array.from(atob(env.KB_SIGN_KEY), c => c.charCodeAt(0));
+  for (const alg of [{ name: 'Ed25519' }, { name: 'NODE-ED25519', namedCurve: 'NODE-ED25519' }]) { try { SIGN_KEY = await crypto.subtle.importKey('pkcs8', der, alg, false, ['sign']); SIGN_KEY._alg = alg; break; } catch (e) {} }
+  return SIGN_KEY;
+}
+async function signBody(env, text) {
+  const k = await signKey(env); if (!k) return null;
+  const msg = te.encode('kolaboro-sig-v1\n' + await sha(text));
+  const sig = new Uint8Array(await crypto.subtle.sign(k._alg || { name: 'Ed25519' }, k, msg));
+  let b = ''; sig.forEach(x => { b += String.fromCharCode(x); }); return btoa(b);
+}
 // The open dataset, with its SHA-256 fingerprint (the same file anyone can download at /data/bali-cases.json).
 let OPEN_MEMO = { t: 0, v: null };
 async function openLoad() {
@@ -647,6 +661,8 @@ const OPEN_DOC = {
     'GET /api/open/changes?since=YYYY-MM-DD': 'every recorded change to a project field since a date, newest first',
     'GET /api/open/log': 'the public append-only log: one hash-chained head per day, each timestamped in Bitcoin',
     'GET /api/open/log-input': 'what goes into today\'s log head: dataset SHA-256 and the Merkle root of page fingerprints',
+    'GET /api/open/receipt/{evidence_id}': 'signed receipt for one piece of site evidence: its SHA-256, position in the case hash chain and times',
+    'Signatures': 'every answer is signed: x-kolaboro-signature = base64 Ed25519 over \'kolaboro-sig-v1\\n\' + SHA-256 hex of the body; key id in x-kolaboro-key-id; public keys at /.well-known/kolaboro-keys.json',
     'Headers': 'every answer carries x-kolaboro-dataset-sha256 (fingerprint of the dataset file it came from) and an ETag; send If-None-Match to get 304 when nothing changed',
     'GET /api/open/markets': 'per-market statistics and the transparency index (0-100)',
     'GET /api/open/markets.csv': 'same, CSV',
@@ -674,7 +690,7 @@ function openResp(body, type, maxAge) {
   return new Response(typeof body === 'string' ? body : JSON.stringify(body, null, 1), { headers: h });
 }
 const xesc = t => String(t).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-export async function open(req, u) {
+export async function open(req, u, env) {
   const path = u.pathname.replace(/\/+$/, '');
   if (req.method === 'OPTIONS') return cors(new Response(null, { status: 204 }));
   if (path === '/api/open' || path === '/api/open/docs') return openResp(OPEN_DOC);
@@ -686,7 +702,9 @@ export async function open(req, u) {
   const tag = '"' + L.sha.slice(0, 20) + '-' + (await sha(u.pathname + u.search)).slice(0, 8) + '"', h = new Headers(res.headers);
   h.set('x-kolaboro-dataset-sha256', L.sha); h.set('etag', tag); h.append('access-control-expose-headers', 'x-kolaboro-dataset-sha256, etag');
   if ((req.headers.get('if-none-match') || '').split(',').map(x => x.trim().replace(/^W\//, '')).indexOf(tag) >= 0 && res.status === 200) return new Response(null, { status: 304, headers: h });
-  return new Response(res.body, { status: res.status, headers: h });
+  const body = await res.text();
+  try { const sg = await signBody(env, body); if (sg) { h.set('x-kolaboro-signature', sg); h.set('x-kolaboro-key-id', (env && env.KB_SIGN_KID) || 'kb'); h.set('access-control-expose-headers', 'x-kolaboro-dataset-sha256, etag, x-kolaboro-signature, x-kolaboro-key-id'); } } catch (e) {}
+  return new Response(body, { status: res.status, headers: h });
 }
 async function openRoutes(req, u, path, L) {
   const d = L.d;
@@ -694,6 +712,10 @@ async function openRoutes(req, u, path, L) {
   if (path === '/api/open/log-input') { const lines = fpLines(cases), m = await merkle(lines, null); return openResp({ date: new Date().toISOString().slice(0, 10), updated: d.updated, dataset_sha256: L.sha, dataset_bytes: L.bytes, projects_root: m.root, projects_count: lines.length }, null, 60); }
   if (path === '/api/open/log') { try { return openResp(await rpc('kolaboro_log_public', {}), null, 300); } catch (e) { return openResp({ error: 'log_unavailable' }, null, 30); } }
   let dpath = path; try { dpath = decodeURIComponent(path); } catch (e) {}
+  const rm = path.match(/^\/api\/open\/receipt\/(\d{1,12})$/);
+  if (rm) { let r = null; try { r = await rpc('kolaboro_evidence_receipt', { p_id: +rm[1] }); } catch (e) {}
+    if (!r || r.error) return new Response(JSON.stringify({ error: 'not_found' }), { status: 404, headers: { 'content-type': 'application/json', 'access-control-allow-origin': '*' } });
+    return openResp({ receipt: 'kolaboro-evidence-receipt-v1', ...r, note: 'This answer is signed by Kolaboro (x-kolaboro-signature). Check the signature with the public key at /.well-known/kolaboro-keys.json, and the file with its SHA-256.' }, null, 300); }
   const pm = dpath.match(/^\/api\/open\/proof\/([A-Za-z0-9 -]{3,20})$/);
   if (pm) {
     const c = cases.find(x => x.id.toLowerCase() === pm[1].toLowerCase());

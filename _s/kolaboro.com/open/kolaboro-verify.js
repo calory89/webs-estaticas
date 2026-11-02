@@ -1,4 +1,4 @@
-/*! kolaboro-verify 1.0.0 (2 Nov 2026), MIT licence. Independent checks of Kolaboro's public records, in the browser or Node 18+.
+/*! kolaboro-verify 1.1.0 (2 Nov 2026), MIT licence. Independent checks of Kolaboro's public records, in the browser or Node 18+.
  *  No dependency, no network call of its own: you pass it what you downloaded, it tells you whether it adds up.
  *
  *  KV.verifyProof(proof)          -> true if a project's page fingerprint is inside the daily Merkle root (GET /api/open/proof/{id})
@@ -6,6 +6,8 @@
  *  KV.verifyLog(heads)            -> { ok, checked, errors[] }: every head recomputes and links to the previous one
  *  KV.sha256Hex(textOrBytes)      -> SHA-256 of a file you downloaded (e.g. /data/bali-cases.json) to compare with dataset_sha256
  *  KV.verifyEvidenceLines(lines, root) -> true if "ID SHA256" lines hash to the evidence root recorded in the log
+ *  KV.verifySignature(bodyText, signatureB64, publicKeyRawB64) -> true if Kolaboro signed this exact answer (Ed25519;
+ *       headers x-kolaboro-signature / x-kolaboro-key-id; keys at https://kolaboro.com/.well-known/kolaboro-keys.json)
  *  Each log head is also timestamped in Bitcoin: GET https://kolaboro.com/api/kb/stamp?hash=HEAD returns the OpenTimestamps proof,
  *  which you can check with the official tools (opentimestamps.org).
  */
@@ -41,6 +43,12 @@
     });
   }
   function verifyEvidenceLines(lines, rootHex) { return sha256Hex(lines.map(function (l) { return l + '\n'; }).join('')).then(function (h) { return h === rootHex; }); }
-  var KV = { version: '1.0.0', sha256Hex: sha256Hex, verifyProof: verifyProof, canonical: canonical, headHash: headHash, verifyLog: verifyLog, verifyEvidenceLines: verifyEvidenceLines };
+  function b64(s) { var b = (typeof atob === 'function') ? atob(s) : Buffer.from(s, 'base64').toString('binary'); var u = new Uint8Array(b.length); for (var i = 0; i < b.length; i++) u[i] = b.charCodeAt(i); return u; }
+  function verifySignature(body, sigB64, pubRawB64) {
+    return sha256Hex(body).then(function (h) {
+      return C.subtle.importKey('raw', b64(pubRawB64), { name: 'Ed25519' }, false, ['verify']).then(function (k) { return C.subtle.verify({ name: 'Ed25519' }, k, b64(sigB64), te.encode('kolaboro-sig-v1\n' + h)); });
+    }).catch(function () { return false; });
+  }
+  var KV = { version: '1.1.0', verifySignature: verifySignature, sha256Hex: sha256Hex, verifyProof: verifyProof, canonical: canonical, headHash: headHash, verifyLog: verifyLog, verifyEvidenceLines: verifyEvidenceLines };
   if (typeof module !== 'undefined' && module.exports) module.exports = KV; else root.KV = KV;
 })(typeof self !== 'undefined' ? self : this);

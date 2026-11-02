@@ -53,7 +53,7 @@
 <h2>All lines</h2><div class="lg-box"><table class="lg-t"><thead><tr><th>Day</th><th>Line (head)</th><th>Contents</th><th>Check</th></tr></thead><tbody id="lg-rows"><tr><td colspan="4">Loading…</td></tr></tbody></table></div>
 <h2>Check it yourself</h2><p>The rule, so you can recompute any line with any SHA-256 tool:</p><div class="lg-box"><pre>head = SHA-256( "kolaboro-log-v1|" + day + "|" + dataset_sha256 + "|" + projects_root + "|" + projects_count + "|"
                 + evidence_root + "|" + evidence_items + "|" + audit_head + "|" + audit_count + "|" + previous head or "genesis" )</pre></div>
-<p>Or use our open-source checker, <a href="/open/kolaboro-verify.js">kolaboro-verify.js</a> (MIT, no dependencies, browser or Node 18+), with <a href="/open/test-vectors.json">test vectors</a> taken from real records:</p>
+<p>The log itself is served signed: <code>/api/open/log</code> carries an Ed25519 signature in <code>x-kolaboro-signature</code>, checkable with the public key at <a href="/.well-known/kolaboro-keys.json">/.well-known/kolaboro-keys.json</a>.</p><p>Or use our open-source checker, <a href="/open/kolaboro-verify.js">kolaboro-verify.js</a> (MIT, no dependencies, browser or Node 18+), with <a href="/open/test-vectors.json">test vectors</a> taken from real records:</p>
 <div class="lg-box"><pre>const KV = require('./kolaboro-verify.js');
 const log = await (await fetch('https://kolaboro.com/api/open/log')).json();
 console.log(await KV.verifyLog(log.heads));              // { ok: true, checked: N, errors: [] }

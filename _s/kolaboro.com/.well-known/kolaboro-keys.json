@@ -1,0 +1,8 @@
+{
+ "issuer": "Kolaboro (kolaboro.com), operated by Equinox Investment Group LLC",
+ "purpose": "Signs answers of the open data API (/api/open/*), the public log and evidence receipts.",
+ "signature_format": "Header x-kolaboro-signature = base64 Ed25519 signature of the UTF-8 message 'kolaboro-sig-v1\\n' + SHA-256 hex of the exact response body; header x-kolaboro-key-id names the key.",
+ "keys": [
+  {"kid": "kb-f2e04da5878f8c51", "alg": "Ed25519", "public_key_raw_b64": "rnY6UvDI+L6e8j3a+UPwmddQJFapkfmEXWwHuXzdmzw=", "public_key_spki_b64": "MCowBQYDK2VwAyEArnY6UvDI+L6e8j3a+UPwmddQJFapkfmEXWwHuXzdmzw=", "created": "2026-11-02", "status": "active"}
+ ]
+}
