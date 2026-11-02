@@ -6512,5 +6512,234 @@
     16950000
    ]
   }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "j-hills",
+  "name": "J-Hills",
+  "changed": {
+   "title_type": [
+    "leasehold",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "natha-loka",
+  "name": "Natha Loka Eco Village",
+  "changed": {
+   "advertised_yield_pct": [
+    7,
+    14
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "secret-inshi",
+  "name": "SECRET by INSHI",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "comfort-by-orbi-orbi-group",
+  "name": "Comfort by Orbi",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9521,
+    9523
+   ],
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "becici-sea-view-building-value-one",
+  "name": "New residential building 200 m from Bečići beach (building 5)",
+  "changed": {
+   "price_from": [
+    217827,
+    203050
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "rhea-by-sansiri",
+  "name": "Rhea by Sansiri",
+  "changed": {
+   "price_from": [
+    140819,
+    140818
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "the-ivory-chang-phueak-home-development-group",
+  "name": "The IVORY",
+  "changed": {
+   "title_type": [
+    null,
+    "freehold"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "penha-living-bolder-addsolid",
+  "name": "Penha Living Bolder",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "udaondo-buenos-aires-landmark-developments",
+  "name": "Udaondo Buenos Aires",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Fideicomiso Buenos Aires Landmark (land purchase vehicle; no buyer escrow or guarantee mentioned)",
+    "Fideicomiso Buenos Aires Landmark (page says the group bought the ex Tiro Federal land through this trust in 2018; no buyer escrow described)"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "city-walk-love-lane-liverpool-habitia",
+  "name": "City Walk",
+  "changed": {
+   "permit_claim": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "anava-samui-zhongfa",
+  "name": "ANAVA Samui Oceanview Condominium",
+  "changed": {
+   "price_from": [
+    3737499,
+    3737500
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "nidapark-kucukyali-buyukada-tahincioglu",
+  "name": "Nidapark Küçükyalı (Büyükada phase)",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "next-gardens-kvariati-next-group",
+  "name": "NEXT Gardens",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "wing-samui-condo-phase-2",
+  "name": "Wing Samui Condo (Phase 2)",
+  "changed": {
+   "price_from": [
+    2990000,
+    2989999
+   ],
+   "plans_published": [
+    null,
+    false
+   ],
+   "escrow_or_guarantee": [
+    null,
+    "5 year optional buy back guarantee"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "antalya-suites-sur-yapi",
+  "name": "Sur Yapı Antalya Suites",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ],
+   "escrow_or_guarantee": [
+    null,
+    "government-guaranteed project"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "prime-villa-samui-supalai",
+  "name": "Prime Villa Samui",
+  "changed": {
+   "price_from": [
+    17.59,
+    17590000
+   ],
+   "currency": [
+    null,
+    "THB"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "yekta-golden-valley-yekta-homes",
+  "name": "Yekta Golden Valley",
+  "changed": {
+   "price_from": [
+    7126,
+    7127
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "amanvari-residences-aman-private-villas-at-costa-palmas-los",
+  "name": "Amanvari Residences (Aman Private Villas) at Costa Palmas",
+  "changed": {
+   "price_from": [
+    16950000,
+    36000000
+   ]
+  }
  }
 ]
