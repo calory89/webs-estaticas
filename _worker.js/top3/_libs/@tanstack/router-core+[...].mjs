@@ -365,8 +365,10 @@ function createDateNode(id, current) {
 function createTemporalNode(id, type, current) {
 	return createSerovalNode(36, id, current.toString(), type);
 }
+var getRegExpSource = Object.getOwnPropertyDescriptor(RegExp.prototype, "source").get;
+var getRegExpFlags = Object.getOwnPropertyDescriptor(RegExp.prototype, "flags").get;
 function createRegExpNode(id, current) {
-	return createSerovalNode(6, id, void 0, serializeString(current.source), current.flags);
+	return createSerovalNode(6, id, void 0, serializeString(getRegExpSource.call(current)), getRegExpFlags.call(current));
 }
 function createWKSymbolNode(id, current) {
 	return createSerovalNode(17, id, INV_SYMBOL_REF[current]);
@@ -1140,7 +1142,7 @@ function getTemporalType(currentClass) {
 }
 function getObjectClass(current) {
 	const currentClass = current.constructor;
-	if (currentClass !== void 0 && typeof currentClass !== "function") {
+	if (typeof currentClass !== "function") {
 		const proto = Object.getPrototypeOf(current);
 		return proto === null ? void 0 : proto.constructor;
 	}
@@ -1540,7 +1542,7 @@ function isThennable(value) {
 var ignoreRejection = () => {};
 function assignIndexedValue$1(ctx, id, value) {
 	guardIndexedValue(ctx.base, id);
-	if (ctx.base.pending && value instanceof Promise) value.catch(ignoreRejection);
+	if (value instanceof Promise) value.catch(ignoreRejection);
 	const marked = ctx.marked;
 	if (!marked || marked.has(id)) ctx.base.refs.set(id, value);
 	return value;
@@ -1854,7 +1856,7 @@ function getAssignmentExpression(assignment) {
 	}
 }
 var MAX_ASSIGNMENT_CHAIN_LENGTH = 100;
-function resolveAssignments(assignments) {
+function resolveAssignments(assignments, chainValues = true) {
 	if (!assignments.length) return void 0;
 	let previous = assignments[0];
 	let expression = getAssignmentExpression(previous);
@@ -1866,7 +1868,7 @@ function resolveAssignments(assignments) {
 			result += expression + ",";
 			expression = getAssignmentExpression(assignment);
 			chainLength = 0;
-		} else if (assignment.t === 0 && previous.t === 0 && assignment.v === previous.v) expression = assignment.s + "=" + expression;
+		} else if (chainValues && assignment.t === 0 && previous.t === 0 && assignment.v === previous.v) expression = assignment.s + "=" + expression;
 		else if (assignment.t === 2 && previous.t === 2 && assignment.s === previous.s) expression += ".set(" + assignment.k + "," + assignment.v + ")";
 		else if (assignment.t === 1 && previous.t === 1 && assignment.s === previous.s) expression += ".add(" + assignment.v + ")";
 		else if (assignment.t === 3 && previous.t === 2 && assignment.s === previous.s) expression += ".delete(" + assignment.k + ")";
@@ -2191,7 +2193,7 @@ function serializeAssignments(ctx, source, node) {
 		ctx.base.stack.push(source.i);
 		for (let i = 0; i < len; i++) serializeAssignment(ctx, source, mainAssignments, keys[i], values[i]);
 		ctx.base.stack.pop();
-		return resolveAssignments(mainAssignments);
+		return resolveAssignments(mainAssignments, false);
 	}
 }
 function serializeDictionary(ctx, node, init) {
@@ -3669,7 +3671,9 @@ var defaultSerovalPlugins = [
 			return "(" + ctx.serialize(node.factory) + ")(" + ctx.serialize(node.stream) + ")";
 		},
 		deserialize(node, ctx) {
-			return READABLE_STREAM_FACTORY_CONSTRUCTOR(ctx.deserialize(node.stream));
+			const stream = ctx.deserialize(node.stream);
+			if (!isStream(stream)) throw new Error("Expected a stream source.");
+			return READABLE_STREAM_FACTORY_CONSTRUCTOR(stream);
 		}
 	})
 ];

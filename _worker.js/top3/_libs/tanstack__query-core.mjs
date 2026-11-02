@@ -1391,7 +1391,7 @@ var Query = class extends Removable {
 	* @see {@link Query#isStale}
 	* @example
 	* ```ts
-	* const isStale = query.isStaleByTime(1000 * 60)
+	* const isStale = query.isStaleByTime(60 * 1000)
 	* ```
 	*/
 	isStaleByTime(staleTime = 0) {

@@ -10147,21 +10147,53 @@ var overrides_default = {
 		"checked": "23 Oct 2026",
 		"reason": "The best-rated official 5-star hotel we found in Canggu on Booking.com: 9.1/10 from 799 guest reviews."
 	} },
-	"dakar-senegal": { "Luxury": {
-		"id": 98428,
-		"name": "Pullman Dakar Teranga",
-		"area": "Dakar",
-		"address": "10 Rue Colbert",
-		"lat": 14.667689,
-		"lng": -17.430656,
-		"url": "https://www.booking.com/hotel/sn/dakar-teranga.html",
-		"score": 8.1,
-		"count": 265,
-		"stars": 5,
-		"total": 1207.4,
-		"checked": "23 Oct 2026",
-		"reason": "The best-rated official 5-star hotel we found in Dakar on Booking.com: 8.1/10 from 265 guest reviews."
-	} },
+	"dakar-senegal": {
+		"Luxury": {
+			"id": 98428,
+			"name": "Pullman Dakar Teranga",
+			"area": "Dakar",
+			"address": "10 Rue Colbert",
+			"lat": 14.667689,
+			"lng": -17.430656,
+			"url": "https://www.booking.com/hotel/sn/dakar-teranga.html",
+			"score": 8.1,
+			"count": 265,
+			"stars": 5,
+			"total": 1207.4,
+			"checked": "23 Oct 2026",
+			"reason": "The best-rated official 5-star hotel we found in Dakar on Booking.com: 8.1/10 from 265 guest reviews."
+		},
+		"Best Value": {
+			"id": 11110049,
+			"name": "Azalaï Hôtel Dakar",
+			"area": "Fann",
+			"address": "Route de la Corniche Ouest, Fann Résidence",
+			"lat": 14.678981,
+			"lng": -17.459454,
+			"url": "https://www.booking.com/hotel/sn/azalai-dakar.html",
+			"score": 8.1,
+			"count": 765,
+			"stars": 4,
+			"total": 514.36,
+			"checked": "27 Oct 2026",
+			"reason": "Central Fann hotel rated 8.1 from 765 Booking.com reviews: good value close to the sights."
+		},
+		"Budget": {
+			"id": 12468493,
+			"name": "Wakola Hotel Cheikh Anta DIOP",
+			"area": "Fass, Dakar",
+			"address": "25 Avenue Cheikh Anta Diop",
+			"lat": 14.68835,
+			"lng": -17.456018,
+			"url": "https://www.booking.com/hotel/sn/wakola-cheikh-anta-diop.html",
+			"score": 8.4,
+			"count": 102,
+			"stars": 3,
+			"total": 286.6,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Fass, Dakar, rated 8.4 from 102 Booking.com reviews."
+		}
+	},
 	"mahon-spain": { "Luxury": {
 		"id": 6375718,
 		"name": "Cristine Bedfor Mahon Boutique Hotel",
@@ -10177,21 +10209,38 @@ var overrides_default = {
 		"checked": "23 Oct 2026",
 		"reason": "The best-rated official 5-star hotel we found in Mahón on Booking.com: 9.2/10 from 232 guest reviews."
 	} },
-	"indianapolis-united-states": { "Luxury": {
-		"id": 42842,
-		"name": "Conrad Indianapolis",
-		"area": "Indianapolis",
-		"address": "50 West Washington Street",
-		"lat": 39.767259,
-		"lng": -86.159345,
-		"url": "https://www.booking.com/hotel/us/conrad-indianapolis.html",
-		"score": 8.3,
-		"count": 131,
-		"stars": 5,
-		"total": 607.57,
-		"checked": "23 Oct 2026",
-		"reason": "The best-rated official 5-star hotel we found in Indianapolis on Booking.com: 8.3/10 from 131 guest reviews."
-	} },
+	"indianapolis-united-states": {
+		"Luxury": {
+			"id": 42842,
+			"name": "Conrad Indianapolis",
+			"area": "Indianapolis",
+			"address": "50 West Washington Street",
+			"lat": 39.767259,
+			"lng": -86.159345,
+			"url": "https://www.booking.com/hotel/us/conrad-indianapolis.html",
+			"score": 8.3,
+			"count": 131,
+			"stars": 5,
+			"total": 607.57,
+			"checked": "23 Oct 2026",
+			"reason": "The best-rated official 5-star hotel we found in Indianapolis on Booking.com: 8.3/10 from 131 guest reviews."
+		},
+		"Budget": {
+			"id": 181273,
+			"name": "Holiday Inn - Indianapolis Downtown by IHG",
+			"area": "Downtown Indianapolis",
+			"address": "515 S West Street",
+			"lat": 39.760095,
+			"lng": -86.166916,
+			"url": "https://www.booking.com/hotel/us/comfort-suites-indianapolis-city-centre.html",
+			"score": 7.4,
+			"count": 501,
+			"stars": 3,
+			"total": 279.47,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Indianapolis, rated 7.4 from 501 Booking.com reviews."
+		}
+	},
 	"iasi-romania": { "Luxury": {
 		"id": 178950,
 		"name": "Pleiada Boutique Hotel & Spa",
@@ -10208,64 +10257,64 @@ var overrides_default = {
 		"reason": "The best-rated official 5-star hotel we found in Iași on Booking.com: 9.3/10 from 1,385 guest reviews."
 	} },
 	"hurghada-egypt": { "Luxury": {
-		"id": 8985201,
-		"name": "Pickalbatros Blu Spa Resort - Adults Friendly 16 Years Plus - Couples Only - Ultra All-Inclusive",
-		"area": "Hurghada",
-		"address": "El Corniche St., Al Mamsha El Seyahi,  . Village Road , Hurghada , Red Sea",
-		"lat": 27.182645,
-		"lng": 33.824915,
-		"url": "https://www.booking.com/hotel/eg/pickalbatros-blu-spa-resort-adults-friendly-16-years-plus.html",
-		"score": 9.6,
-		"count": 3565,
+		"id": 379692,
+		"name": "Sea Star Beau Rivage Hotel",
+		"area": "Dahar",
+		"address": "Al Hilal - Military Hospital Street",
+		"lat": 27.265616,
+		"lng": 33.804409,
+		"url": "https://www.booking.com/hotel/eg/sea-star-beau-rivage.html",
+		"score": 8,
+		"count": 230,
 		"stars": 5,
-		"total": 697.42,
-		"checked": "23 Oct 2026",
-		"reason": "The best-rated official 5-star hotel we found in Hurghada on Booking.com: 9.6/10 from 3,565 guest reviews."
+		"total": 258.11,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Dahar, rated 8.0 from 230 Booking.com reviews."
 	} },
 	"taranto-italy": { "Luxury": {
-		"id": 14678,
-		"name": "Relais Histò San Pietro Sul Mar Piccolo",
-		"area": "Taranto",
-		"address": "Via Sant'Andrea, Circummarpiccolo",
-		"lat": 40.508399,
-		"lng": 17.316234,
-		"url": "https://www.booking.com/hotel/it/histo-san-pietro-sul-mar-piccolo.html",
-		"score": 9.3,
-		"count": 119,
-		"stars": 5,
-		"total": 873.68,
-		"checked": "23 Oct 2026",
-		"reason": "The best-rated official 5-star hotel we found in Taranto on Booking.com: 9.3/10 from 119 guest reviews."
+		"id": 332045,
+		"name": "Hotel Europa",
+		"area": "Taranto Old Town",
+		"address": "Via Roma 2",
+		"lat": 40.47474,
+		"lng": 17.236865,
+		"url": "https://www.booking.com/hotel/it/europa-taranto.html",
+		"score": 9.1,
+		"count": 1547,
+		"stars": 4,
+		"total": 246,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Taranto Old Town rated 9.1/10 from 1,547 Booking.com reviews."
 	} },
 	"olsztyn-poland": { "Luxury": {
-		"id": 546134,
-		"name": "Hotel Marina Club",
+		"id": 440454,
+		"name": "Tiffi Boutique Hotel",
 		"area": "Olsztyn",
-		"address": "Siła 100",
-		"lat": 53.710222,
-		"lng": 20.376903,
-		"url": "https://www.booking.com/hotel/pl/marina-golf-club.html",
-		"score": 9.4,
-		"count": 2028,
-		"stars": 5,
-		"total": 329.39,
-		"checked": "23 Oct 2026",
-		"reason": "The best-rated official 5-star hotel we found in Olsztyn on Booking.com: 9.4/10 from 2,028 guest reviews."
+		"address": "ul. Żeglarska 7",
+		"lat": 53.781582,
+		"lng": 20.450318,
+		"url": "https://www.booking.com/hotel/pl/yacht-club-tiffi-olsztyn.html",
+		"score": 9,
+		"count": 757,
+		"stars": 4,
+		"total": 227.84,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Olsztyn rated 9.0/10 from 757 Booking.com reviews."
 	} },
 	"obidos-portugal": { "Luxury": {
-		"id": 536563,
-		"name": "The Beachfront - Praia D'El Rey Golf & Beach Resort",
-		"area": "Óbidos",
-		"address": "Avenida D. Pedro I, nº30",
-		"lat": 39.399169,
-		"lng": -9.273866,
-		"url": "https://www.booking.com/hotel/pt/the-beachfront-praia-d-el-rey-golf-beach-resort.html",
-		"score": 9,
-		"count": 373,
-		"stars": 5,
-		"total": 408.6,
-		"checked": "23 Oct 2026",
-		"reason": "The best-rated official 5-star hotel we found in Óbidos on Booking.com: 9.0/10 from 373 guest reviews."
+		"id": 385501,
+		"name": "Pousada Castelo de Obidos",
+		"area": "Medieval town",
+		"address": "Paço Real",
+		"lat": 39.363278,
+		"lng": -9.157052,
+		"url": "https://www.booking.com/hotel/pt/pousada-de-abidos-castelo-de-abidos.html",
+		"score": 8.3,
+		"count": 713,
+		"stars": 4,
+		"total": 489.6,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Medieval town rated 8.3/10 from 713 Booking.com reviews."
 	} },
 	"sunderland-united-kingdom": { "Luxury": {
 		"id": 13545644,
@@ -10357,21 +10406,38 @@ var overrides_default = {
 		"checked": "23 Oct 2026",
 		"reason": "The best-rated official 5-star hotel we found in Haarlem on Booking.com: 9.0/10 from 1,119 guest reviews."
 	} },
-	"salalah-oman": { "Luxury": {
-		"id": 2014752,
-		"name": "Al Baleed Resort Salalah by Anantara",
-		"area": "Salalah",
-		"address": "P.O. Box 360, P.C. 214 Al Mansurah Street, Al Baleed, Salalah, Sultunate of Oman",
-		"lat": 17.009874,
-		"lng": 54.146817,
-		"url": "https://www.booking.com/hotel/om/al-baleed-resort-salalah-by-anantara.html",
-		"score": 8.9,
-		"count": 337,
-		"stars": 5,
-		"total": 724.38,
-		"checked": "23 Oct 2026",
-		"reason": "The best-rated official 5-star hotel we found in Salalah on Booking.com: 8.9/10 from 337 guest reviews."
-	} },
+	"salalah-oman": {
+		"Luxury": {
+			"id": 2014752,
+			"name": "Al Baleed Resort Salalah by Anantara",
+			"area": "Salalah",
+			"address": "P.O. Box 360, P.C. 214 Al Mansurah Street, Al Baleed, Salalah, Sultunate of Oman",
+			"lat": 17.009874,
+			"lng": 54.146817,
+			"url": "https://www.booking.com/hotel/om/al-baleed-resort-salalah-by-anantara.html",
+			"score": 8.9,
+			"count": 337,
+			"stars": 5,
+			"total": 724.38,
+			"checked": "23 Oct 2026",
+			"reason": "The best-rated official 5-star hotel we found in Salalah on Booking.com: 8.9/10 from 337 guest reviews."
+		},
+		"Budget": {
+			"id": 1461760,
+			"name": "Muscat International Hotel Plaza",
+			"area": "Salalah centre",
+			"address": "23 July St., opposite Sultan Qaboos Mosque",
+			"lat": 17.014879,
+			"lng": 54.091792,
+			"url": "https://www.booking.com/hotel/om/muscat-internatonal-plaza-salalah.html",
+			"score": 7.9,
+			"count": 409,
+			"stars": 3,
+			"total": 97.63,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Salalah centre, rated 7.9 from 409 Booking.com reviews."
+		}
+	},
 	"ponte-de-lima-portugal": { "Luxury": {
 		"id": 367480,
 		"name": "Carmo's Boutique Hotel - Small Luxury Hotels of the World",
@@ -10507,35 +10573,67 @@ var overrides_default = {
 		"checked": "23 Oct 2026",
 		"reason": "The best-rated official 5-star hotel we found in Bentonville on Booking.com: 9.4/10 from 32 guest reviews."
 	} },
-	"phoenix-united-states": { "Luxury": {
-		"id": 263665,
-		"name": "JW Marriott Phoenix Desert Ridge Resort & Spa",
-		"area": "Phoenix",
-		"address": "5350 East Marriott Drive",
-		"lat": 33.683452,
-		"lng": -111.966063,
-		"url": "https://www.booking.com/hotel/us/jw-marriott-phoenix-desert-ridge-resort.html",
-		"score": 8.6,
-		"count": 70,
-		"stars": 5,
-		"total": 1638.87,
-		"checked": "23 Oct 2026",
-		"reason": "The best-rated official 5-star hotel we found in Phoenix on Booking.com: 8.6/10 from 70 guest reviews."
-	} },
+	"phoenix-united-states": {
+		"Luxury": {
+			"id": 358629,
+			"name": "Renaissance Phoenix Downtown Hotel",
+			"area": "Downtown Phoenix",
+			"address": "100 N 1st St",
+			"lat": 33.44936,
+			"lng": -112.07322,
+			"url": "https://www.booking.com/hotel/us/phoenix-50-eastadams.html",
+			"score": 7.6,
+			"count": 100,
+			"stars": 5,
+			"total": 993.56,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Downtown Phoenix, rated 7.6 from 100 Booking.com reviews."
+		},
+		"Budget": {
+			"id": 59801,
+			"name": "Best Western Downtown Phoenix",
+			"area": "Downtown Phoenix",
+			"address": "620 N 6th St",
+			"lat": 33.454982,
+			"lng": -112.066538,
+			"url": "https://www.booking.com/hotel/us/best-western-downtown-phoenix.html",
+			"score": 7.9,
+			"count": 379,
+			"stars": 3,
+			"total": 413.07,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Phoenix, rated 7.9 from 379 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 3206906,
+			"name": "Hampton Inn & Suites Phoenix Downtown",
+			"area": "Downtown Phoenix",
+			"address": "77 E Polk St",
+			"lat": 33.45213,
+			"lng": -112.072922,
+			"url": "https://www.booking.com/hotel/us/hampton-inn-suites-phoenix-downtown.html",
+			"score": 8.8,
+			"count": 766,
+			"stars": 3,
+			"total": 482.06,
+			"checked": "27 Oct 2026",
+			"reason": "Central Downtown Phoenix hotel rated 8.8 from 766 Booking.com reviews: good value close to the sights."
+		}
+	},
 	"mytilene-greece": { "Luxury": {
-		"id": 265824,
-		"name": "Elysion Hotel",
-		"area": "Mytilene",
-		"address": "Neapoli",
-		"lat": 39.068865,
-		"lng": 26.593861,
-		"url": "https://www.booking.com/hotel/gr/elysion.html",
-		"score": 8.9,
-		"count": 482,
-		"stars": 5,
-		"total": 228.8,
-		"checked": "23 Oct 2026",
-		"reason": "The best-rated official 5-star hotel we found in Mytilene on Booking.com: 8.9/10 from 482 guest reviews."
+		"id": 273019,
+		"name": "Theofilos Paradise Boutique Hotel",
+		"area": "Mytilene centre",
+		"address": "Skra 7",
+		"lat": 39.106489,
+		"lng": 26.559408,
+		"url": "https://www.booking.com/hotel/gr/theofilos-paradise-boutique.html",
+		"score": 9.2,
+		"count": 579,
+		"stars": 4,
+		"total": 253.5,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Mytilene centre rated 9.2/10 from 579 Booking.com reviews."
 	} },
 	"balneario-camboriu-brazil": { "Luxury": {
 		"id": 11387136,
@@ -10598,19 +10696,19 @@ var overrides_default = {
 		"reason": "The best-rated official 5-star hotel we found in Nafplio on Booking.com: 7.7/10 from 153 guest reviews."
 	} },
 	"nusa-penida-indonesia": { "Luxury": {
-		"id": 12077759,
-		"name": "Semaya Beach Resort",
-		"area": "Nusa Penida",
-		"address": "7J39+J3F, Suana, Nusa Penida, Klungkung Regency, Bali 80771",
-		"lat": -8.745938,
-		"lng": 115.617672,
-		"url": "https://www.booking.com/hotel/id/nusa-penida-beach-resort.html",
-		"score": 9.5,
-		"count": 775,
-		"stars": 5,
-		"total": 391.09,
-		"checked": "23 Oct 2026",
-		"reason": "The best-rated official 5-star hotel we found in Nusa Penida on Booking.com: 9.5/10 from 775 guest reviews."
+		"id": 9295885,
+		"name": "Deep Roots Dive & Yoga Resort",
+		"area": "Ped",
+		"address": "Dusun Pendem, Desa Ped",
+		"lat": -8.69052,
+		"lng": 115.513199,
+		"url": "https://www.booking.com/hotel/id/deep-roots-dive-amp-yoga-resort.html",
+		"score": 9.6,
+		"count": 269,
+		"stars": 4,
+		"total": 201.02,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Ped rated 9.6/10 from 269 Booking.com reviews."
 	} },
 	"colima-mexico": { "Luxury": {
 		"id": 398386,
@@ -10627,21 +10725,38 @@ var overrides_default = {
 		"checked": "23 Oct 2026",
 		"reason": "The best-rated official 5-star hotel we found in Colima on Booking.com: 8.1/10 from 74 guest reviews."
 	} },
-	"horta-portugal": { "Luxury": {
-		"id": 16663552,
-		"name": "The Book Hotel",
-		"area": "Horta",
-		"address": "Largo do Bpo. Dom Alexandre 8",
-		"lat": 38.540761,
-		"lng": -28.623989,
-		"url": "https://www.booking.com/hotel/pt/the-book.html",
-		"score": 9.6,
-		"count": 38,
-		"stars": 5,
-		"total": 306,
-		"checked": "23 Oct 2026",
-		"reason": "The best-rated official 5-star hotel we found in Horta on Booking.com: 9.6/10 from 38 guest reviews."
-	} },
+	"horta-portugal": {
+		"Luxury": {
+			"id": 16663552,
+			"name": "The Book Hotel",
+			"area": "Horta",
+			"address": "Largo do Bpo. Dom Alexandre 8",
+			"lat": 38.540761,
+			"lng": -28.623989,
+			"url": "https://www.booking.com/hotel/pt/the-book.html",
+			"score": 9.6,
+			"count": 38,
+			"stars": 5,
+			"total": 306,
+			"checked": "23 Oct 2026",
+			"reason": "The best-rated official 5-star hotel we found in Horta on Booking.com: 9.6/10 from 38 guest reviews."
+		},
+		"Budget": {
+			"id": 40514,
+			"name": "Azoris Faial Garden – Resort Hotel",
+			"area": "Horta",
+			"address": "Rua Consul Dabney",
+			"lat": 38.53074,
+			"lng": -28.627726,
+			"url": "https://www.booking.com/hotel/pt/fayal-resort.html",
+			"score": 8.1,
+			"count": 1073,
+			"stars": 4,
+			"total": 117.3,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Horta, rated 8.1 from 1,073 Booking.com reviews."
+		}
+	},
 	"apia-samoa": { "Luxury": {
 		"id": 353054,
 		"name": "Sheraton Samoa Aggie Grey's Hotel & Bungalows",
@@ -10732,21 +10847,38 @@ var overrides_default = {
 		"checked": "23 Oct 2026",
 		"reason": "The best-rated official 5-star hotel we found in Ferrara on Booking.com: 8.5/10 from 528 guest reviews."
 	} },
-	"conwy-united-kingdom": { "Luxury": {
-		"id": 11956279,
-		"name": "The Manor Boutique Hotel Restaurant and Bar",
-		"area": "Conwy",
-		"address": "the manor, gorse hill caravan park, trefriw road, conwy",
-		"lat": 53.259653,
-		"lng": -3.831228,
-		"url": "https://www.booking.com/hotel/gb/the-manor-boutique-restaurant-and-bar-conwy.html",
-		"score": 9,
-		"count": 546,
-		"stars": 5,
-		"total": 325.83,
-		"checked": "23 Oct 2026",
-		"reason": "The best-rated official 5-star hotel we found in Conwy on Booking.com: 9.0/10 from 546 guest reviews."
-	} },
+	"conwy-united-kingdom": {
+		"Luxury": {
+			"id": 11956279,
+			"name": "The Manor Boutique Hotel Restaurant and Bar",
+			"area": "Conwy",
+			"address": "the manor, gorse hill caravan park, trefriw road, conwy",
+			"lat": 53.259653,
+			"lng": -3.831228,
+			"url": "https://www.booking.com/hotel/gb/the-manor-boutique-restaurant-and-bar-conwy.html",
+			"score": 9,
+			"count": 546,
+			"stars": 5,
+			"total": 325.83,
+			"checked": "23 Oct 2026",
+			"reason": "The best-rated official 5-star hotel we found in Conwy on Booking.com: 9.0/10 from 546 guest reviews."
+		},
+		"Best Value": {
+			"id": 231069,
+			"name": "The Quay Hotel and Spa",
+			"area": "Deganwy",
+			"address": "Deganwy Quay",
+			"lat": 53.291156,
+			"lng": -3.82865,
+			"url": "https://www.booking.com/hotel/gb/thequayhotel.html",
+			"score": 8.9,
+			"count": 3103,
+			"stars": 4,
+			"total": 317.89,
+			"checked": "27 Oct 2026",
+			"reason": "Central Deganwy hotel rated 8.9 from 3,103 Booking.com reviews: good value close to the sights."
+		}
+	},
 	"preston-united-kingdom": { "Luxury": {
 		"id": 1970305,
 		"name": "No.10 Preston",
@@ -10762,21 +10894,53 @@ var overrides_default = {
 		"checked": "23 Oct 2026",
 		"reason": "The best-rated official 5-star hotel we found in Preston on Booking.com: 8.8/10 from 478 guest reviews."
 	} },
-	"naples-florida-united-states": { "Luxury": {
-		"id": 188256,
-		"name": "The Ritz-Carlton Naples",
-		"area": "Naples, Florida",
-		"address": "280 Vanderbilt Beach Road",
-		"lat": 26.251951,
-		"lng": -81.821301,
-		"url": "https://www.booking.com/hotel/us/ritz-carlton-naples.html",
-		"score": 9.3,
-		"count": 81,
-		"stars": 5,
-		"total": 3051.2,
-		"checked": "23 Oct 2026",
-		"reason": "The best-rated official 5-star hotel we found in Naples, Florida on Booking.com: 9.3/10 from 81 guest reviews."
-	} },
+	"naples-florida-united-states": {
+		"Luxury": {
+			"id": 251e3,
+			"name": "Naples Bay Resort and Marina",
+			"area": "Downtown Naples",
+			"address": "1500 5th Avenue South",
+			"lat": 26.138815,
+			"lng": -81.785397,
+			"url": "https://www.booking.com/hotel/us/naples-bay-resort.html",
+			"score": 9.1,
+			"count": 261,
+			"stars": 4,
+			"total": 1144.26,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Naples rated 9.1/10 from 261 Booking.com reviews."
+		},
+		"Budget": {
+			"id": 456800,
+			"name": "La Quinta by Wyndham Naples Downtown",
+			"area": "Downtown Naples",
+			"address": "1555 5th Avenue South",
+			"lat": 26.139511,
+			"lng": -81.783377,
+			"url": "https://www.booking.com/hotel/us/la-quinta-naples-downtown.html",
+			"score": 8,
+			"count": 2232,
+			"stars": 3,
+			"total": 190.66,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Naples, rated 8.0 from 2,232 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 1067830,
+			"name": "Naples Park Central Hotel",
+			"area": "Downtown Naples",
+			"address": "40 Tamiami Trail North",
+			"lat": 26.147763,
+			"lng": -81.795395,
+			"url": "https://www.booking.com/hotel/us/naples-park-central.html",
+			"score": 8.8,
+			"count": 2388,
+			"stars": 3,
+			"total": 266.33,
+			"checked": "27 Oct 2026",
+			"reason": "Central Downtown Naples hotel rated 8.8 from 2,388 Booking.com reviews: good value close to the sights."
+		}
+	},
 	"mui-ne-vietnam": { "Luxury": {
 		"id": 9194505,
 		"name": "The Anam Mui Ne",
@@ -10898,19 +11062,19 @@ var overrides_default = {
 		"reason": "No eligible 5-star hotel came up in Boca Raton, so this is our upscale alternative: a 4-star rated 8.6/10 from 125 Booking.com reviews."
 	} },
 	"dalat-vietnam": { "Luxury": {
-		"id": 1561468,
-		"name": "Swiss-Belresort Tuyen Lam",
-		"area": "Dalat",
-		"address": "Zone 7&8, Tuyen Lam Lake Tourist Area, Ward 3",
-		"lat": 11.882835,
-		"lng": 108.451771,
-		"url": "https://www.booking.com/hotel/vn/swiss-belresort-tuyen-lam.html",
-		"score": 8.9,
-		"count": 256,
-		"stars": 4,
-		"total": 125.62,
-		"checked": "23 Oct 2026",
-		"reason": "No eligible 5-star hotel came up in Dalat, so this is our upscale alternative: a 4-star rated 8.9/10 from 256 Booking.com reviews."
+		"id": 265264,
+		"name": "Dalat Palace Heritage Hotel",
+		"area": "Da Lat Centre",
+		"address": "02 Tran Phu, Ward 3",
+		"lat": 11.93671,
+		"lng": 108.440353,
+		"url": "https://www.booking.com/hotel/vn/dalat-palace.html",
+		"score": 8.7,
+		"count": 177,
+		"stars": 5,
+		"total": 198.31,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Da Lat Centre, rated 8.7 from 177 Booking.com reviews."
 	} },
 	"quimper-france": { "Luxury": {
 		"id": 3411582,
@@ -10972,21 +11136,38 @@ var overrides_default = {
 		"checked": "23 Oct 2026",
 		"reason": "No eligible 5-star hotel came up in Lugo, so this is our upscale alternative: a 4-star rated 9.1/10 from 803 Booking.com reviews."
 	} },
-	"boise-united-states": { "Luxury": {
-		"id": 909801,
-		"name": "The Anniversary Inn - Boise",
-		"area": "Boise",
-		"address": "1575 South Lusk Avenue",
-		"lat": 43.604001,
-		"lng": -116.214841,
-		"url": "https://www.booking.com/hotel/us/the-anniversary-inn-boise.html",
-		"score": 8.7,
-		"count": 101,
-		"stars": 4,
-		"total": 380.45,
-		"checked": "23 Oct 2026",
-		"reason": "No eligible 5-star hotel came up in Boise, so this is our upscale alternative: a 4-star rated 8.7/10 from 101 Booking.com reviews."
-	} },
+	"boise-united-states": {
+		"Luxury": {
+			"id": 909801,
+			"name": "The Anniversary Inn - Boise",
+			"area": "Boise",
+			"address": "1575 South Lusk Avenue",
+			"lat": 43.604001,
+			"lng": -116.214841,
+			"url": "https://www.booking.com/hotel/us/the-anniversary-inn-boise.html",
+			"score": 8.7,
+			"count": 101,
+			"stars": 4,
+			"total": 380.45,
+			"checked": "23 Oct 2026",
+			"reason": "No eligible 5-star hotel came up in Boise, so this is our upscale alternative: a 4-star rated 8.7/10 from 101 Booking.com reviews."
+		},
+		"Budget": {
+			"id": 185179,
+			"name": "Hampton Inn & Suites Boise-Downtown",
+			"area": "Downtown Boise",
+			"address": "495 South Capitol Boulevard",
+			"lat": 43.612172,
+			"lng": -116.205319,
+			"url": "https://www.booking.com/hotel/us/hampton-inn-suites-boise-downtown.html",
+			"score": 8.8,
+			"count": 465,
+			"stars": 3,
+			"total": 473.33,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Boise, rated 8.8 from 465 Booking.com reviews."
+		}
+	},
 	"carmel-united-states": { "Luxury": {
 		"id": 423881,
 		"name": "La Playa Hotel",
@@ -11017,21 +11198,38 @@ var overrides_default = {
 		"checked": "23 Oct 2026",
 		"reason": "No eligible 5-star hotel came up in Quedlinburg, so this is our upscale alternative: a 4-star rated 8.6/10 from 802 Booking.com reviews."
 	} },
-	"miskolc-hungary": { "Luxury": {
-		"id": 7162239,
-		"name": "Premier Hotel Miskolc",
-		"area": "Miskolc",
-		"address": "Arany Janos tér 1 MIskolc, Arany Janos ter 1",
-		"lat": 48.10773,
-		"lng": 20.787909,
-		"url": "https://www.booking.com/hotel/hu/premier-miskolc.html",
-		"score": 8.9,
-		"count": 1323,
-		"stars": 4,
-		"total": 305.05,
-		"checked": "23 Oct 2026",
-		"reason": "No eligible 5-star hotel came up in Miskolc, so this is our upscale alternative: a 4-star rated 8.9/10 from 1,323 Booking.com reviews."
-	} },
+	"miskolc-hungary": {
+		"Luxury": {
+			"id": 7162239,
+			"name": "Premier Hotel Miskolc",
+			"area": "Miskolc",
+			"address": "Arany Janos tér 1 MIskolc, Arany Janos ter 1",
+			"lat": 48.10773,
+			"lng": 20.787909,
+			"url": "https://www.booking.com/hotel/hu/premier-miskolc.html",
+			"score": 8.9,
+			"count": 1323,
+			"stars": 4,
+			"total": 305.05,
+			"checked": "23 Oct 2026",
+			"reason": "No eligible 5-star hotel came up in Miskolc, so this is our upscale alternative: a 4-star rated 8.9/10 from 1,323 Booking.com reviews."
+		},
+		"Budget": {
+			"id": 75550,
+			"name": "Hotel Pannonia",
+			"area": "Miskolc centre",
+			"address": "Kossuth u. 2",
+			"lat": 48.102995,
+			"lng": 20.781707,
+			"url": "https://www.booking.com/hotel/hu/pannonia.html",
+			"score": 8.2,
+			"count": 524,
+			"stars": 2,
+			"total": 162.8,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Miskolc centre, rated 8.2 from 524 Booking.com reviews."
+		}
+	},
 	"den-bosch-netherlands": { "Luxury": {
 		"id": 171136,
 		"name": "Good Seasons Hotel Den Bosch",
@@ -11197,21 +11395,38 @@ var overrides_default = {
 		"checked": "23 Oct 2026",
 		"reason": "No eligible 5-star hotel came up in Ascona, so this is our upscale alternative: a 4-star rated 9.2/10 from 246 Booking.com reviews."
 	} },
-	"basingstoke-united-kingdom": { "Luxury": {
-		"id": 5641844,
-		"name": "Village Hotel Basingstoke",
-		"area": "Basingstoke",
-		"address": "Basing View",
-		"lat": 51.268084,
-		"lng": -1.077534,
-		"url": "https://www.booking.com/hotel/gb/village-basingstoke.html",
-		"score": 8.5,
-		"count": 2554,
-		"stars": 4,
-		"total": 620.63,
-		"checked": "23 Oct 2026",
-		"reason": "No eligible 5-star hotel came up in Basingstoke, so this is our upscale alternative: a 4-star rated 8.5/10 from 2,554 Booking.com reviews."
-	} },
+	"basingstoke-united-kingdom": {
+		"Luxury": {
+			"id": 5641844,
+			"name": "Village Hotel Basingstoke",
+			"area": "Basingstoke",
+			"address": "Basing View",
+			"lat": 51.268084,
+			"lng": -1.077534,
+			"url": "https://www.booking.com/hotel/gb/village-basingstoke.html",
+			"score": 8.5,
+			"count": 2554,
+			"stars": 4,
+			"total": 620.63,
+			"checked": "23 Oct 2026",
+			"reason": "No eligible 5-star hotel came up in Basingstoke, so this is our upscale alternative: a 4-star rated 8.5/10 from 2,554 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 34474,
+			"name": "Holiday Inn Basingstoke by IHG",
+			"area": "Basingstoke",
+			"address": "Grove Road",
+			"lat": 51.253808,
+			"lng": -1.080143,
+			"url": "https://www.booking.com/hotel/gb/holiday-inn.html",
+			"score": 7.4,
+			"count": 923,
+			"stars": 4,
+			"total": 379.72,
+			"checked": "27 Oct 2026",
+			"reason": "Central Basingstoke hotel rated 7.4 from 923 Booking.com reviews: good value close to the sights."
+		}
+	},
 	"tartu-estonia": { "Luxury": {
 		"id": 1995331,
 		"name": "V Spa & Conference Hotel",
@@ -11241,95 +11456,82 @@ var overrides_default = {
 		"total": 429.6,
 		"checked": "23 Oct 2026",
 		"reason": "No eligible 5-star hotel came up in Soria, so this is our upscale alternative: a 4-star rated 9.6/10 from 244 Booking.com reviews."
-	} }
-};
-/* 27 Oct 2026: central replacements for airport / far-from-centre picks */
-var overrides_central_2710 = {
-	"albuquerque-united-states": {
-		"Luxury": {
-			"id": 293691,
-			"name": "Hotel Andaluz Albuquerque, Curio Collection By Hilton",
-			"area": "Downtown",
-			"address": "125 2nd St. NW",
-			"lat": 35.085002,
-			"lng": -106.649217,
-			"url": "https://www.booking.com/hotel/us/andaluz.html",
-			"score": 8.5,
-			"count": 120,
-			"stars": 4,
-			"total": 380.01,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown rated 8.5/10 from 120 Booking.com reviews."
-		}
-	},
-	"alnwick-united-kingdom": {
-		"Best Value": {
-			"id": 605942,
-			"name": "The Oaks Hotel",
-			"area": "Alnwick",
-			"address": "South Road",
-			"lat": 55.408385,
-			"lng": -1.693598,
-			"url": "https://www.booking.com/hotel/gb/the-oaks.html",
-			"score": 8.5,
-			"count": 1570,
-			"stars": 3,
-			"total": 262.7,
-			"checked": "27 Oct 2026",
-			"reason": "Central Alnwick hotel rated 8.5 from 1,570 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"amritsar-india": {
-		"Luxury": {
-			"id": 5922875,
-			"name": "Courtyard by Marriott Amritsar",
-			"area": "Mall Road",
-			"address": "52 Mall Road",
-			"lat": 31.639831,
-			"lng": 74.888578,
-			"url": "https://www.booking.com/hotel/in/courtyard-amritsar.html",
-			"score": 8.5,
-			"count": 869,
-			"stars": 5,
-			"total": 250.62,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Mall Road, rated 8.5 from 869 Booking.com reviews."
-		}
-	},
-	"aurangabad-india": {
-		"Best Value": {
-			"id": 74209,
-			"name": "Amarpreet, Chhatrapati Sambhajinagar - AM Hotel Kollection",
-			"area": "Jalna Road",
-			"address": "Amarpreet Chowk, Jalna Road",
-			"lat": 19.875677,
-			"lng": 75.334977,
-			"url": "https://www.booking.com/hotel/in/amarpreet.html",
-			"score": 7.6,
-			"count": 150,
-			"stars": 4,
-			"total": 128.26,
-			"checked": "27 Oct 2026",
-			"reason": "Central Jalna Road hotel rated 7.6 from 150 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"aurora-united-states": {
-		"Budget": {
-			"id": 391749,
-			"name": "La Quinta by Wyndham Denver Gateway Park",
-			"area": "Gateway Park",
-			"address": "4460 Peoria Street",
-			"lat": 39.777025,
-			"lng": -104.846129,
-			"url": "https://www.booking.com/hotel/us/laquinta-inn.html",
-			"score": 8.1,
-			"count": 1640,
-			"stars": 3,
-			"total": 197.16,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Gateway Park, rated 8.1 from 1,640 Booking.com reviews."
-		}
-	},
+	} },
+	"albuquerque-united-states": { "Luxury": {
+		"id": 293691,
+		"name": "Hotel Andaluz Albuquerque, Curio Collection By Hilton",
+		"area": "Downtown",
+		"address": "125 2nd St. NW",
+		"lat": 35.085002,
+		"lng": -106.649217,
+		"url": "https://www.booking.com/hotel/us/andaluz.html",
+		"score": 8.5,
+		"count": 120,
+		"stars": 4,
+		"total": 380.01,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown rated 8.5/10 from 120 Booking.com reviews."
+	} },
+	"alnwick-united-kingdom": { "Best Value": {
+		"id": 605942,
+		"name": "The Oaks Hotel",
+		"area": "Alnwick",
+		"address": "South Road",
+		"lat": 55.408385,
+		"lng": -1.693598,
+		"url": "https://www.booking.com/hotel/gb/the-oaks.html",
+		"score": 8.5,
+		"count": 1570,
+		"stars": 3,
+		"total": 262.7,
+		"checked": "27 Oct 2026",
+		"reason": "Central Alnwick hotel rated 8.5 from 1,570 Booking.com reviews: good value close to the sights."
+	} },
+	"amritsar-india": { "Luxury": {
+		"id": 5922875,
+		"name": "Courtyard by Marriott Amritsar",
+		"area": "Mall Road",
+		"address": "52 Mall Road",
+		"lat": 31.639831,
+		"lng": 74.888578,
+		"url": "https://www.booking.com/hotel/in/courtyard-amritsar.html",
+		"score": 8.5,
+		"count": 869,
+		"stars": 5,
+		"total": 250.62,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Mall Road, rated 8.5 from 869 Booking.com reviews."
+	} },
+	"aurangabad-india": { "Best Value": {
+		"id": 74209,
+		"name": "Amarpreet, Chhatrapati Sambhajinagar - AM Hotel Kollection",
+		"area": "Jalna Road",
+		"address": "Amarpreet Chowk, Jalna Road",
+		"lat": 19.875677,
+		"lng": 75.334977,
+		"url": "https://www.booking.com/hotel/in/amarpreet.html",
+		"score": 7.6,
+		"count": 150,
+		"stars": 4,
+		"total": 128.26,
+		"checked": "27 Oct 2026",
+		"reason": "Central Jalna Road hotel rated 7.6 from 150 Booking.com reviews: good value close to the sights."
+	} },
+	"aurora-united-states": { "Budget": {
+		"id": 391749,
+		"name": "La Quinta by Wyndham Denver Gateway Park",
+		"area": "Gateway Park",
+		"address": "4460 Peoria Street",
+		"lat": 39.777025,
+		"lng": -104.846129,
+		"url": "https://www.booking.com/hotel/us/laquinta-inn.html",
+		"score": 8.1,
+		"count": 1640,
+		"stars": 3,
+		"total": 197.16,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Gateway Park, rated 8.1 from 1,640 Booking.com reviews."
+	} },
 	"austin-unitedstates": {
 		"Luxury": {
 			"id": 4671457,
@@ -11345,59 +11547,68 @@ var overrides_central_2710 = {
 			"total": 1927.36,
 			"checked": "27 Oct 2026",
 			"reason": "A 5-star hotel in Downtown Austin, rated 9.2 from 96 Booking.com reviews."
-		}
-	},
-	"bandar-seri-begawan-brunei": {
-		"Luxury": {
-			"id": 250692,
-			"name": "Radisson Hotel Brunei Darussalam",
-			"area": "City centre",
-			"address": "Jalan Tasek",
-			"lat": 4.89478,
-			"lng": 114.942076,
-			"url": "https://www.booking.com/hotel/bn/radisson-brunei-darussalam.html",
-			"score": 8.5,
-			"count": 702,
-			"stars": 4,
-			"total": 322.64,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in City centre rated 8.5/10 from 702 Booking.com reviews."
-		}
-	},
-	"bangkok-thailand": {
+		},
 		"Budget": {
-			"id": 2421306,
-			"name": "New Siam Palace Ville Hotel",
-			"area": "Bangkok Old Town",
-			"address": "56 Trok Rong Mhai, Chao Fa Rd",
-			"lat": 13.760169,
-			"lng": 100.493267,
-			"url": "https://www.booking.com/hotel/th/new-siam-palace-ville.html",
-			"score": 7.9,
-			"count": 6022,
+			"id": 9717923,
+			"name": "Fairfield Inn & Suites Austin Downtown",
+			"area": "Rainey Street, Downtown Austin",
+			"address": "76 East Avenue",
+			"lat": 30.25888,
+			"lng": -97.737936,
+			"url": "https://www.booking.com/hotel/us/fairfield-by-marriott-inn-suites-austin-downtown.html",
+			"score": 8.9,
+			"count": 67,
 			"stars": 3,
-			"total": 174.14,
+			"total": 603.08,
 			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Bangkok Old Town, rated 7.9 from 6,022 Booking.com reviews."
+			"reason": "A central budget pick in Rainey Street, Downtown Austin, rated 8.9 from 67 Booking.com reviews."
 		}
 	},
-	"belem-brazil": {
-		"Best Value": {
-			"id": 292792,
-			"name": "Hotel Princesa Louçã",
-			"area": "City centre",
-			"address": "Avenida Presidente Vargas, 882",
-			"lat": -1.453572,
-			"lng": -48.494051,
-			"url": "https://www.booking.com/hotel/br/hotel-princesa-belem.html",
-			"score": 8.4,
-			"count": 4099,
-			"stars": 4,
-			"total": 174.63,
-			"checked": "27 Oct 2026",
-			"reason": "Central City centre hotel rated 8.4 from 4,099 Booking.com reviews: good value close to the sights."
-		}
-	},
+	"bandar-seri-begawan-brunei": { "Luxury": {
+		"id": 250692,
+		"name": "Radisson Hotel Brunei Darussalam",
+		"area": "City centre",
+		"address": "Jalan Tasek",
+		"lat": 4.89478,
+		"lng": 114.942076,
+		"url": "https://www.booking.com/hotel/bn/radisson-brunei-darussalam.html",
+		"score": 8.5,
+		"count": 702,
+		"stars": 4,
+		"total": 322.64,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in City centre rated 8.5/10 from 702 Booking.com reviews."
+	} },
+	"bangkok-thailand": { "Budget": {
+		"id": 2421306,
+		"name": "New Siam Palace Ville Hotel",
+		"area": "Bangkok Old Town",
+		"address": "56 Trok Rong Mhai, Chao Fa Rd",
+		"lat": 13.760169,
+		"lng": 100.493267,
+		"url": "https://www.booking.com/hotel/th/new-siam-palace-ville.html",
+		"score": 7.9,
+		"count": 6022,
+		"stars": 3,
+		"total": 174.14,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Bangkok Old Town, rated 7.9 from 6,022 Booking.com reviews."
+	} },
+	"belem-brazil": { "Best Value": {
+		"id": 292792,
+		"name": "Hotel Princesa Louçã",
+		"area": "City centre",
+		"address": "Avenida Presidente Vargas, 882",
+		"lat": -1.453572,
+		"lng": -48.494051,
+		"url": "https://www.booking.com/hotel/br/hotel-princesa-belem.html",
+		"score": 8.4,
+		"count": 4099,
+		"stars": 4,
+		"total": 174.63,
+		"checked": "27 Oct 2026",
+		"reason": "Central City centre hotel rated 8.4 from 4,099 Booking.com reviews: good value close to the sights."
+	} },
 	"bethlehem-united-states": {
 		"Best Value": {
 			"id": 321374,
@@ -11430,23 +11641,21 @@ var overrides_central_2710 = {
 			"reason": "A central budget pick in Bethlehem, rated 8.5 from 418 Booking.com reviews."
 		}
 	},
-	"birmingham-alabama-united-states": {
-		"Luxury": {
-			"id": 11076295,
-			"name": "The Painted Lady",
-			"area": "Five Points South",
-			"address": "2143 2nd Avenue South",
-			"lat": 33.511777,
-			"lng": -86.80065,
-			"url": "https://www.booking.com/hotel/us/the-painted-lady-birmingham.html",
-			"score": 8.9,
-			"count": 197,
-			"stars": 4,
-			"total": 319.46,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Five Points South rated 8.9/10 from 197 Booking.com reviews."
-		}
-	},
+	"birmingham-alabama-united-states": { "Luxury": {
+		"id": 11076295,
+		"name": "The Painted Lady",
+		"area": "Five Points South",
+		"address": "2143 2nd Avenue South",
+		"lat": 33.511777,
+		"lng": -86.80065,
+		"url": "https://www.booking.com/hotel/us/the-painted-lady-birmingham.html",
+		"score": 8.9,
+		"count": 197,
+		"stars": 4,
+		"total": 319.46,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Five Points South rated 8.9/10 from 197 Booking.com reviews."
+	} },
 	"bogor-indonesia": {
 		"Best Value": {
 			"id": 1280257,
@@ -11462,59 +11671,68 @@ var overrides_central_2710 = {
 			"total": 136.72,
 			"checked": "27 Oct 2026",
 			"reason": "Central Bogor Tengah hotel rated 8.3 from 93 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"bogota-colombia": {
-		"Best Value": {
-			"id": 604400,
-			"name": "Hotel Estelar Calle 100",
-			"area": "Chapinero",
-			"address": "Calle 100 N° 14 46",
-			"lat": 4.684772,
-			"lng": -74.047055,
-			"url": "https://www.booking.com/hotel/co/estelar-calle-100.html",
-			"score": 9.0,
-			"count": 953,
-			"stars": 4,
-			"total": 172.44,
-			"checked": "27 Oct 2026",
-			"reason": "Central Chapinero hotel rated 9.0 from 953 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"bozeman-united-states": {
-		"Best Value": {
-			"id": 2234130,
-			"name": "SpringHill Suites by Marriott Bozeman",
-			"area": "Bozeman",
-			"address": "1601 Baxter Lane",
-			"lat": 45.698783,
-			"lng": -111.0542,
-			"url": "https://www.booking.com/hotel/us/springhill-suites-by-marriott-bozeman.html",
-			"score": 8.8,
-			"count": 223,
-			"stars": 3,
-			"total": 309.57,
-			"checked": "27 Oct 2026",
-			"reason": "Central Bozeman hotel rated 8.8 from 223 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"braga-portugal": {
+		},
 		"Luxury": {
-			"id": 235755,
-			"name": "Meliá Braga Hotel & Spa",
-			"area": "Braga",
-			"address": "Av. General Carrilho da Silva Pinto",
-			"lat": 41.556669,
-			"lng": -8.396623,
-			"url": "https://www.booking.com/hotel/pt/melia-braga-spa.html",
-			"score": 8.8,
-			"count": 1817,
-			"stars": 5,
-			"total": 308,
+			"id": 6810833,
+			"name": "Swiss-Belinn Bogor",
+			"area": "Bogor Timur",
+			"address": "Jalan Pajajaran Indah V",
+			"lat": -6.611101,
+			"lng": 106.814593,
+			"url": "https://www.booking.com/hotel/id/swiss-belinn-bogor.html",
+			"score": 8.4,
+			"count": 106,
+			"stars": 4,
+			"total": 94.83,
 			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Braga, rated 8.8 from 1,817 Booking.com reviews."
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Bogor Timur rated 8.4/10 from 106 Booking.com reviews."
 		}
 	},
+	"bogota-colombia": { "Best Value": {
+		"id": 604400,
+		"name": "Hotel Estelar Calle 100",
+		"area": "Chapinero",
+		"address": "Calle 100 N° 14 46",
+		"lat": 4.684772,
+		"lng": -74.047055,
+		"url": "https://www.booking.com/hotel/co/estelar-calle-100.html",
+		"score": 9,
+		"count": 953,
+		"stars": 4,
+		"total": 172.44,
+		"checked": "27 Oct 2026",
+		"reason": "Central Chapinero hotel rated 9.0 from 953 Booking.com reviews: good value close to the sights."
+	} },
+	"bozeman-united-states": { "Best Value": {
+		"id": 2234130,
+		"name": "SpringHill Suites by Marriott Bozeman",
+		"area": "Bozeman",
+		"address": "1601 Baxter Lane",
+		"lat": 45.698783,
+		"lng": -111.0542,
+		"url": "https://www.booking.com/hotel/us/springhill-suites-by-marriott-bozeman.html",
+		"score": 8.8,
+		"count": 223,
+		"stars": 3,
+		"total": 309.57,
+		"checked": "27 Oct 2026",
+		"reason": "Central Bozeman hotel rated 8.8 from 223 Booking.com reviews: good value close to the sights."
+	} },
+	"braga-portugal": { "Luxury": {
+		"id": 235755,
+		"name": "Meliá Braga Hotel & Spa",
+		"area": "Braga",
+		"address": "Av. General Carrilho da Silva Pinto",
+		"lat": 41.556669,
+		"lng": -8.396623,
+		"url": "https://www.booking.com/hotel/pt/melia-braga-spa.html",
+		"score": 8.8,
+		"count": 1817,
+		"stars": 5,
+		"total": 308,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Braga, rated 8.8 from 1,817 Booking.com reviews."
+	} },
 	"burbank-united-states": {
 		"Budget": {
 			"id": 56648,
@@ -11562,25 +11780,38 @@ var overrides_central_2710 = {
 			"total": 449.96,
 			"checked": "27 Oct 2026",
 			"reason": "A 5-star hotel in Seomyeon, rated 8.9 from 2,746 Booking.com reviews."
-		}
-	},
-	"cairo-egypt": {
-		"Luxury": {
-			"id": 247640,
-			"name": "Kempinski Nile Hotel, Cairo",
-			"area": "Garden City",
-			"address": "12 Ahmed Ragheb Street, Corniche El Nil",
-			"lat": 30.038658,
-			"lng": 31.230344,
-			"url": "https://www.booking.com/hotel/eg/kempinski-nile-cairo.html",
-			"score": 8.6,
-			"count": 2926,
-			"stars": 5,
-			"total": 647.21,
+		},
+		"Best Value": {
+			"id": 5129061,
+			"name": "Avani Central Busan",
+			"area": "Seomyeon",
+			"address": "133 Jeonpo-daero, Nam-gu",
+			"lat": 35.148606,
+			"lng": 129.065627,
+			"url": "https://www.booking.com/hotel/kr/avani-central-busan.html",
+			"score": 8.7,
+			"count": 888,
+			"stars": 4,
+			"total": 249.97,
 			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Garden City, rated 8.6 from 2,926 Booking.com reviews."
+			"reason": "Central Seomyeon hotel rated 8.7 from 888 Booking.com reviews: good value close to the sights."
 		}
 	},
+	"cairo-egypt": { "Luxury": {
+		"id": 247640,
+		"name": "Kempinski Nile Hotel, Cairo",
+		"area": "Garden City",
+		"address": "12 Ahmed Ragheb Street, Corniche El Nil",
+		"lat": 30.038658,
+		"lng": 31.230344,
+		"url": "https://www.booking.com/hotel/eg/kempinski-nile-cairo.html",
+		"score": 8.6,
+		"count": 2926,
+		"stars": 5,
+		"total": 647.21,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Garden City, rated 8.6 from 2,926 Booking.com reviews."
+	} },
 	"calgary-canada": {
 		"Budget": {
 			"id": 285681,
@@ -11613,91 +11844,51 @@ var overrides_central_2710 = {
 			"reason": "Central Downtown Calgary hotel rated 8.1 from 199 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"chula-vista-united-states": {
-		"Best Value": {
-			"id": 181361,
-			"name": "Best Western Plus Marina Gateway Hotel",
-			"area": "Bayfront",
-			"address": "800 Bay Marina Drive",
-			"lat": 32.658958,
-			"lng": -117.109567,
-			"url": "https://www.booking.com/hotel/us/best-western-marina-gateway.html",
-			"score": 8.8,
-			"count": 899,
-			"stars": 3,
-			"total": 299.93,
-			"checked": "27 Oct 2026",
-			"reason": "Central Bayfront hotel rated 8.8 from 899 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"cincinnati-united-states": {
-		"Budget": {
-			"id": 430946,
-			"name": "Hampton Inn & Suites Newport/Cincinnati, KY",
-			"area": "Cincinnati Riverfront",
-			"address": "275 Columbia Street",
-			"lat": 39.093041,
-			"lng": -84.498109,
-			"url": "https://www.booking.com/hotel/us/travelodge-newport1.html",
-			"score": 8.7,
-			"count": 905,
-			"stars": 3,
-			"total": 218.97,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Cincinnati Riverfront, rated 8.7 from 905 Booking.com reviews."
-		}
-	},
-	"colorado-springs-united-states": {
-		"Best Value": {
-			"id": 8154390,
-			"name": "SpringHill Suites by Marriott Colorado Springs Downtown",
-			"area": "Downtown Colorado Springs",
-			"address": "402 South Tejon Street",
-			"lat": 38.82828,
-			"lng": -104.82401,
-			"url": "https://www.booking.com/hotel/us/springhill-suites-by-marriott-colorado-springs-downtown.html",
-			"score": 8.0,
-			"count": 119,
-			"stars": 3,
-			"total": 331.69,
-			"checked": "27 Oct 2026",
-			"reason": "Central Downtown Colorado Springs hotel rated 8.0 from 119 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"conwy-united-kingdom": {
-		"Best Value": {
-			"id": 231069,
-			"name": "The Quay Hotel and Spa",
-			"area": "Deganwy",
-			"address": "Deganwy Quay",
-			"lat": 53.291156,
-			"lng": -3.82865,
-			"url": "https://www.booking.com/hotel/gb/thequayhotel.html",
-			"score": 8.9,
-			"count": 3103,
-			"stars": 4,
-			"total": 317.89,
-			"checked": "27 Oct 2026",
-			"reason": "Central Deganwy hotel rated 8.9 from 3,103 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"dakar-senegal": {
-		"Best Value": {
-			"id": 11110049,
-			"name": "Azalaï Hôtel Dakar",
-			"area": "Fann",
-			"address": "Route de la Corniche Ouest, Fann Résidence",
-			"lat": 14.678981,
-			"lng": -17.459454,
-			"url": "https://www.booking.com/hotel/sn/azalai-dakar.html",
-			"score": 8.1,
-			"count": 765,
-			"stars": 4,
-			"total": 514.36,
-			"checked": "27 Oct 2026",
-			"reason": "Central Fann hotel rated 8.1 from 765 Booking.com reviews: good value close to the sights."
-		}
-	},
+	"chula-vista-united-states": { "Best Value": {
+		"id": 181361,
+		"name": "Best Western Plus Marina Gateway Hotel",
+		"area": "Bayfront",
+		"address": "800 Bay Marina Drive",
+		"lat": 32.658958,
+		"lng": -117.109567,
+		"url": "https://www.booking.com/hotel/us/best-western-marina-gateway.html",
+		"score": 8.8,
+		"count": 899,
+		"stars": 3,
+		"total": 299.93,
+		"checked": "27 Oct 2026",
+		"reason": "Central Bayfront hotel rated 8.8 from 899 Booking.com reviews: good value close to the sights."
+	} },
+	"cincinnati-united-states": { "Budget": {
+		"id": 430946,
+		"name": "Hampton Inn & Suites Newport/Cincinnati, KY",
+		"area": "Cincinnati Riverfront",
+		"address": "275 Columbia Street",
+		"lat": 39.093041,
+		"lng": -84.498109,
+		"url": "https://www.booking.com/hotel/us/travelodge-newport1.html",
+		"score": 8.7,
+		"count": 905,
+		"stars": 3,
+		"total": 218.97,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Cincinnati Riverfront, rated 8.7 from 905 Booking.com reviews."
+	} },
+	"colorado-springs-united-states": { "Best Value": {
+		"id": 8154390,
+		"name": "SpringHill Suites by Marriott Colorado Springs Downtown",
+		"area": "Downtown Colorado Springs",
+		"address": "402 South Tejon Street",
+		"lat": 38.82828,
+		"lng": -104.82401,
+		"url": "https://www.booking.com/hotel/us/springhill-suites-by-marriott-colorado-springs-downtown.html",
+		"score": 8,
+		"count": 119,
+		"stars": 3,
+		"total": 331.69,
+		"checked": "27 Oct 2026",
+		"reason": "Central Downtown Colorado Springs hotel rated 8.0 from 119 Booking.com reviews: good value close to the sights."
+	} },
 	"dar-es-salaam-tanzania": {
 		"Best Value": {
 			"id": 4689454,
@@ -11713,26 +11904,39 @@ var overrides_central_2710 = {
 			"total": 194.05,
 			"checked": "27 Oct 2026",
 			"reason": "Central Upanga East hotel rated 8.3 from 929 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"doha-qatar": {
+		},
 		"Budget": {
-			"id": 9147317,
-			"name": "ibis Doha",
-			"area": "Al Muntazah",
-			"address": "Badr Street, C Ring Road",
-			"lat": 25.270102,
-			"lng": 51.514096,
-			"url": "https://www.booking.com/hotel/qa/ibis-doha.html",
-			"score": 8.8,
-			"count": 3519,
+			"id": 569734,
+			"name": "Tiffany Diamond Hotels Ltd - Indira Gandhi street",
+			"area": "Kisutu",
+			"address": "Indira Gandhi / Morogoro Road Junction",
+			"lat": -6.818325,
+			"lng": 39.28442,
+			"url": "https://www.booking.com/hotel/tz/tiffany-diamond.html",
+			"score": 8.1,
+			"count": 319,
 			"stars": 3,
-			"total": 114.87,
+			"total": 169.08,
 			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Al Muntazah, rated 8.8 from 3,519 Booking.com reviews."
+			"reason": "A central budget pick in Kisutu, rated 8.1 from 319 Booking.com reviews."
 		}
 	},
-	"dubai": {
+	"doha-qatar": { "Budget": {
+		"id": 9147317,
+		"name": "ibis Doha",
+		"area": "Al Muntazah",
+		"address": "Badr Street, C Ring Road",
+		"lat": 25.270102,
+		"lng": 51.514096,
+		"url": "https://www.booking.com/hotel/qa/ibis-doha.html",
+		"score": 8.8,
+		"count": 3519,
+		"stars": 3,
+		"total": 114.87,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Al Muntazah, rated 8.8 from 3,519 Booking.com reviews."
+	} },
+	dubai: {
 		"Budget": {
 			"id": 7629108,
 			"name": "Rove City Walk",
@@ -11747,93 +11951,98 @@ var overrides_central_2710 = {
 			"total": 207.16,
 			"checked": "27 Oct 2026",
 			"reason": "A central budget pick in Al Wasl, rated 9.1 from 8,452 Booking.com reviews."
-		}
-	},
-	"durban-southafrica": {
-		"Luxury": {
-			"id": 15401,
-			"name": "Blue Waters Hotel",
-			"area": "Golden Mile",
-			"address": "175 Snell Parade",
-			"lat": -29.840074,
-			"lng": 31.035063,
-			"url": "https://www.booking.com/hotel/za/blue-waters.html",
-			"score": 8.5,
-			"count": 19528,
-			"stars": 4,
-			"total": 256.97,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Golden Mile rated 8.5/10 from 19,528 Booking.com reviews."
-		}
-	},
-	"durham-united-states": {
+		},
 		"Best Value": {
-			"id": 713937,
-			"name": "Hilton Garden Inn Durham-University Medical Center",
-			"area": "Duke / West Main",
-			"address": "2102 West Main Street",
-			"lat": 36.007086,
-			"lng": -78.924751,
-			"url": "https://www.booking.com/hotel/us/garden-inn-durham-university-medical-center.html",
-			"score": 8.6,
-			"count": 127,
-			"stars": 3,
-			"total": 331.25,
-			"checked": "27 Oct 2026",
-			"reason": "Central Duke / West Main hotel rated 8.6 from 127 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"enniskillen-united-kingdom": {
-		"Best Value": {
-			"id": 37570,
-			"name": "Westville Hotel",
-			"area": "Enniskillen",
-			"address": "14-20 Tempo Road",
-			"lat": 54.343028,
-			"lng": -7.627046,
-			"url": "https://www.booking.com/hotel/gb/westville.html",
-			"score": 8.8,
-			"count": 822,
+			"id": 73581,
+			"name": "Rose Rayhaan by Rotana - Dubai",
+			"area": "Trade Centre, Dubai",
+			"address": "Sheikh Zayed Road",
+			"lat": 25.211921,
+			"lng": 55.276412,
+			"url": "https://www.booking.com/hotel/ae/rose-rotana-dubai.html",
+			"score": 8.3,
+			"count": 4794,
 			"stars": 4,
-			"total": 300.91,
+			"total": 283.74,
 			"checked": "27 Oct 2026",
-			"reason": "Central Enniskillen hotel rated 8.8 from 822 Booking.com reviews: good value close to the sights."
+			"reason": "Central Trade Centre, Dubai hotel rated 8.3 from 4,794 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"estepona-spain": {
-		"Budget": {
-			"id": 10773215,
-			"name": "Hotel Boutique La Brisa del Mar",
-			"area": "Old town",
-			"address": "78 Calle Málaga",
-			"lat": 36.426028,
-			"lng": -5.143604,
-			"url": "https://www.booking.com/hotel/es/boutique-la-brisa-del-mar.html",
-			"score": 9.1,
-			"count": 482,
-			"stars": 3,
-			"total": 230.84,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Old town, rated 9.1 from 482 Booking.com reviews."
-		}
-	},
-	"faro-portugal": {
-		"Budget": {
-			"id": 179196,
-			"name": "Hotel Made inn Faro",
-			"area": "Faro City Centre",
-			"address": "Rua Miguel Bombarda 64",
-			"lat": 37.020287,
-			"lng": -7.940137,
-			"url": "https://www.booking.com/hotel/pt/residencial-afonso-iii.html",
-			"score": 8.1,
-			"count": 5025,
-			"stars": 2,
-			"total": 134,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Faro City Centre, rated 8.1 from 5,025 Booking.com reviews."
-		}
-	},
+	"durban-southafrica": { "Luxury": {
+		"id": 15401,
+		"name": "Blue Waters Hotel",
+		"area": "Golden Mile",
+		"address": "175 Snell Parade",
+		"lat": -29.840074,
+		"lng": 31.035063,
+		"url": "https://www.booking.com/hotel/za/blue-waters.html",
+		"score": 8.5,
+		"count": 19528,
+		"stars": 4,
+		"total": 256.97,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Golden Mile rated 8.5/10 from 19,528 Booking.com reviews."
+	} },
+	"durham-united-states": { "Best Value": {
+		"id": 713937,
+		"name": "Hilton Garden Inn Durham-University Medical Center",
+		"area": "Duke / West Main",
+		"address": "2102 West Main Street",
+		"lat": 36.007086,
+		"lng": -78.924751,
+		"url": "https://www.booking.com/hotel/us/garden-inn-durham-university-medical-center.html",
+		"score": 8.6,
+		"count": 127,
+		"stars": 3,
+		"total": 331.25,
+		"checked": "27 Oct 2026",
+		"reason": "Central Duke / West Main hotel rated 8.6 from 127 Booking.com reviews: good value close to the sights."
+	} },
+	"enniskillen-united-kingdom": { "Best Value": {
+		"id": 37570,
+		"name": "Westville Hotel",
+		"area": "Enniskillen",
+		"address": "14-20 Tempo Road",
+		"lat": 54.343028,
+		"lng": -7.627046,
+		"url": "https://www.booking.com/hotel/gb/westville.html",
+		"score": 8.8,
+		"count": 822,
+		"stars": 4,
+		"total": 300.91,
+		"checked": "27 Oct 2026",
+		"reason": "Central Enniskillen hotel rated 8.8 from 822 Booking.com reviews: good value close to the sights."
+	} },
+	"estepona-spain": { "Budget": {
+		"id": 10773215,
+		"name": "Hotel Boutique La Brisa del Mar",
+		"area": "Old town",
+		"address": "78 Calle Málaga",
+		"lat": 36.426028,
+		"lng": -5.143604,
+		"url": "https://www.booking.com/hotel/es/boutique-la-brisa-del-mar.html",
+		"score": 9.1,
+		"count": 482,
+		"stars": 3,
+		"total": 230.84,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Old town, rated 9.1 from 482 Booking.com reviews."
+	} },
+	"faro-portugal": { "Budget": {
+		"id": 179196,
+		"name": "Hotel Made inn Faro",
+		"area": "Faro City Centre",
+		"address": "Rua Miguel Bombarda 64",
+		"lat": 37.020287,
+		"lng": -7.940137,
+		"url": "https://www.booking.com/hotel/pt/residencial-afonso-iii.html",
+		"score": 8.1,
+		"count": 5025,
+		"stars": 2,
+		"total": 134,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Faro City Centre, rated 8.1 from 5,025 Booking.com reviews."
+	} },
 	"florianopolis-brazil": {
 		"Best Value": {
 			"id": 285396,
@@ -11849,42 +12058,53 @@ var overrides_central_2710 = {
 			"total": 235.05,
 			"checked": "27 Oct 2026",
 			"reason": "Central City Centre hotel rated 9.1 from 2,970 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"forli-italy": {
-		"Luxury": {
-			"id": 87527,
-			"name": "Best Western Hotel Globus City",
-			"area": "Forlì",
-			"address": "Via Traiano Imperatore 4",
-			"lat": 44.247328,
-			"lng": 12.079119,
-			"url": "https://www.booking.com/hotel/it/globus-city.html",
-			"score": 8.6,
-			"count": 482,
-			"stars": 4,
-			"total": 308.5,
+		},
+		"Budget": {
+			"id": 718144,
+			"name": "Ibis Florianopolis",
+			"area": "Florianópolis City Centre",
+			"address": "Avenida Rio Branco 37",
+			"lat": -27.592466,
+			"lng": -48.558131,
+			"url": "https://www.booking.com/hotel/br/ibis-florianopolis.html",
+			"score": 8.7,
+			"count": 2664,
+			"stars": 3,
+			"total": 204.01,
 			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Forlì rated 8.6/10 from 482 Booking.com reviews."
+			"reason": "A central budget pick in Florianópolis City Centre, rated 8.7 from 2,664 Booking.com reviews."
 		}
 	},
-	"foz-do-iguacu-brazil": {
-		"Luxury": {
-			"id": 244874,
-			"name": "Nadai Confort Hotel e Spa",
-			"area": "City Centre",
-			"address": "Av. República Argentina, 1332",
-			"lat": -25.534581,
-			"lng": -54.581183,
-			"url": "https://www.booking.com/hotel/br/nadai-confort.html",
-			"score": 8.8,
-			"count": 1043,
-			"stars": 4,
-			"total": 355.82,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in City Centre rated 8.8/10 from 1,043 Booking.com reviews."
-		}
-	},
+	"forli-italy": { "Luxury": {
+		"id": 87527,
+		"name": "Best Western Hotel Globus City",
+		"area": "Forlì",
+		"address": "Via Traiano Imperatore 4",
+		"lat": 44.247328,
+		"lng": 12.079119,
+		"url": "https://www.booking.com/hotel/it/globus-city.html",
+		"score": 8.6,
+		"count": 482,
+		"stars": 4,
+		"total": 308.5,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Forlì rated 8.6/10 from 482 Booking.com reviews."
+	} },
+	"foz-do-iguacu-brazil": { "Luxury": {
+		"id": 244874,
+		"name": "Nadai Confort Hotel e Spa",
+		"area": "City Centre",
+		"address": "Av. República Argentina, 1332",
+		"lat": -25.534581,
+		"lng": -54.581183,
+		"url": "https://www.booking.com/hotel/br/nadai-confort.html",
+		"score": 8.8,
+		"count": 1043,
+		"stars": 4,
+		"total": 355.82,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in City Centre rated 8.8/10 from 1,043 Booking.com reviews."
+	} },
 	"geneva-switzerland": {
 		"Budget": {
 			"id": 182052,
@@ -11917,74 +12137,51 @@ var overrides_central_2710 = {
 			"reason": "Central Saint-Gervais / Les Grottes hotel rated 7.8 from 2,036 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"hakodate-japan": {
-		"Luxury": {
-			"id": 8610484,
-			"name": "fav HAKODATE",
-			"area": "Bay area",
-			"address": "Otemachi 20-15",
-			"lat": 41.771382,
-			"lng": 140.725698,
-			"url": "https://www.booking.com/hotel/jp/fav-hakodate.html",
-			"score": 9.0,
-			"count": 1171,
-			"stars": 4,
-			"total": 351.98,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Bay area rated 9.0/10 from 1,171 Booking.com reviews."
-		}
-	},
-	"hyderabad-india": {
-		"Luxury": {
-			"id": 237300,
-			"name": "Hyderabad Marriott Hotel & Convention Centre",
-			"area": "Hussain Sagar",
-			"address": "Tank Bund Road, opposite Hussain Sagar Lake",
-			"lat": 17.424116,
-			"lng": 78.487642,
-			"url": "https://www.booking.com/hotel/in/hyderabad-marriott-convention-centre.html",
-			"score": 8.2,
-			"count": 715,
-			"stars": 5,
-			"total": 188.52,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Hussain Sagar, rated 8.2 from 715 Booking.com reviews."
-		}
-	},
-	"indianapolis-united-states": {
-		"Budget": {
-			"id": 181273,
-			"name": "Holiday Inn - Indianapolis Downtown by IHG",
-			"area": "Downtown Indianapolis",
-			"address": "515 S West Street",
-			"lat": 39.760095,
-			"lng": -86.166916,
-			"url": "https://www.booking.com/hotel/us/comfort-suites-indianapolis-city-centre.html",
-			"score": 7.4,
-			"count": 501,
-			"stars": 3,
-			"total": 279.47,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Indianapolis, rated 7.4 from 501 Booking.com reviews."
-		}
-	},
-	"jaipur-india": {
-		"Luxury": {
-			"id": 74714,
-			"name": "Rambagh Palace",
-			"area": "Rambagh",
-			"address": "Bhawani Singh Road",
-			"lat": 26.898158,
-			"lng": 75.808089,
-			"url": "https://www.booking.com/hotel/in/rambagh-palace.html",
-			"score": 9.2,
-			"count": 131,
-			"stars": 5,
-			"total": 1929.59,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Rambagh, rated 9.2 from 131 Booking.com reviews."
-		}
-	},
+	"hakodate-japan": { "Luxury": {
+		"id": 8610484,
+		"name": "fav HAKODATE",
+		"area": "Bay area",
+		"address": "Otemachi 20-15",
+		"lat": 41.771382,
+		"lng": 140.725698,
+		"url": "https://www.booking.com/hotel/jp/fav-hakodate.html",
+		"score": 9,
+		"count": 1171,
+		"stars": 4,
+		"total": 351.98,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Bay area rated 9.0/10 from 1,171 Booking.com reviews."
+	} },
+	"hyderabad-india": { "Luxury": {
+		"id": 237300,
+		"name": "Hyderabad Marriott Hotel & Convention Centre",
+		"area": "Hussain Sagar",
+		"address": "Tank Bund Road, opposite Hussain Sagar Lake",
+		"lat": 17.424116,
+		"lng": 78.487642,
+		"url": "https://www.booking.com/hotel/in/hyderabad-marriott-convention-centre.html",
+		"score": 8.2,
+		"count": 715,
+		"stars": 5,
+		"total": 188.52,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Hussain Sagar, rated 8.2 from 715 Booking.com reviews."
+	} },
+	"jaipur-india": { "Luxury": {
+		"id": 74714,
+		"name": "Rambagh Palace",
+		"area": "Rambagh",
+		"address": "Bhawani Singh Road",
+		"lat": 26.898158,
+		"lng": 75.808089,
+		"url": "https://www.booking.com/hotel/in/rambagh-palace.html",
+		"score": 9.2,
+		"count": 131,
+		"stars": 5,
+		"total": 1929.59,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Rambagh, rated 9.2 from 131 Booking.com reviews."
+	} },
 	"johannesburg-southafrica": {
 		"Budget": {
 			"id": 2849996,
@@ -11994,7 +12191,7 @@ var overrides_central_2710 = {
 			"lat": -26.183429,
 			"lng": 28.020762,
 			"url": "https://www.booking.com/hotel/za/garden-court-milpark-braamfontein.html",
-			"score": 8.0,
+			"score": 8,
 			"count": 2826,
 			"stars": 3,
 			"total": 131.48,
@@ -12032,144 +12229,143 @@ var overrides_central_2710 = {
 			"total": 228.22,
 			"checked": "27 Oct 2026",
 			"reason": "A 5-star hotel in BBD Bagh, rated 8.1 from 1,055 Booking.com reviews."
-		}
-	},
-	"lijiang-china": {
-		"Luxury": {
-			"id": 738700,
-			"name": "Hotel Indigo Lijiang Ancient Town by IHG",
-			"area": "Dayan Old Town",
-			"address": "111 Xing Wen Alley, Qi Yi Street",
-			"lat": 26.865415,
-			"lng": 100.238987,
-			"url": "https://www.booking.com/hotel/cn/indigo-lijiang-ancient-town.html",
-			"score": 9.3,
-			"count": 77,
-			"stars": 5,
-			"total": 292.01,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Dayan Old Town, rated 9.3 from 77 Booking.com reviews."
-		}
-	},
-	"los-angeles-unitedstates": {
-		"Luxury": {
-			"id": 8114987,
-			"name": "Conrad Los Angeles",
-			"area": "Downtown Los Angeles",
-			"address": "100 South Grand Ave.",
-			"lat": 34.055678,
-			"lng": -118.248709,
-			"url": "https://www.booking.com/hotel/us/conrad-los-angeles.html",
-			"score": 8.7,
-			"count": 188,
-			"stars": 5,
-			"total": 902.16,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Downtown Los Angeles, rated 8.7 from 188 Booking.com reviews."
-		}
-	},
-	"louisville-united-states": {
-		"Budget": {
-			"id": 1534705,
-			"name": "Holiday Inn Express & Suites Downtown Louisville by IHG",
-			"area": "Downtown Louisville",
-			"address": "800 West Market Street",
-			"lat": 38.255759,
-			"lng": -85.763614,
-			"url": "https://www.booking.com/hotel/us/holiday-inn-express-suites-downtown-louisville.html",
-			"score": 8.4,
-			"count": 653,
-			"stars": 3,
-			"total": 261.05,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Louisville, rated 8.4 from 653 Booking.com reviews."
-		}
-	},
-	"lucca-italy": {
-		"Luxury": {
-			"id": 2523642,
-			"name": "Palazzo Dipinto",
-			"area": "Centro Storico",
-			"address": "Piazza del Palazzo Dipinto 27",
-			"lat": 43.843246,
-			"lng": 10.500416,
-			"url": "https://www.booking.com/hotel/it/palazzo-dipinto-lucca.html",
-			"score": 9.3,
-			"count": 641,
+		},
+		"Best Value": {
+			"id": 251366,
+			"name": "Peerless Hotel Kolkata",
+			"area": "Chowringhee, Kolkata",
+			"address": "12 Jawahar Lal Nehru Road",
+			"lat": 22.562288,
+			"lng": 88.351412,
+			"url": "https://www.booking.com/hotel/in/the-peerless-inn.html",
+			"score": 7.8,
+			"count": 725,
 			"stars": 4,
-			"total": 658,
+			"total": 205.88,
 			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Centro Storico rated 9.3/10 from 641 Booking.com reviews."
+			"reason": "Central Chowringhee, Kolkata hotel rated 7.8 from 725 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"luxembourg-city-luxembourg": {
-		"Budget": {
-			"id": 3634565,
-			"name": "Hôtel JJ32 Luxembourg Centre Gare",
-			"area": "Gare",
-			"address": "32 Rue Joseph Junck",
-			"lat": 49.600789,
-			"lng": 6.131015,
-			"url": "https://www.booking.com/hotel/lu/jj32.html",
-			"score": 8.1,
-			"count": 2026,
-			"stars": 3,
-			"total": 333.42,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Gare, rated 8.1 from 2,026 Booking.com reviews."
-		}
-	},
-	"lynchburg-united-states": {
-		"Luxury": {
-			"id": 3122705,
-			"name": "The Virginian Lynchburg, Curio Collection By Hilton",
-			"area": "Downtown Lynchburg",
-			"address": "712 Church Street",
-			"lat": 37.415424,
-			"lng": -79.14406,
-			"url": "https://www.booking.com/hotel/us/the-virginian-lynchburg-curio-collection-by-hilton.html",
-			"score": 9.2,
-			"count": 154,
-			"stars": 4,
-			"total": 444.97,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Lynchburg rated 9.2/10 from 154 Booking.com reviews."
-		}
-	},
-	"male-maldives": {
-		"Budget": {
-			"id": 9854862,
-			"name": "Beehive Premier",
-			"area": "Malé",
-			"address": "Raiyvilla Hingun",
-			"lat": 4.171398,
-			"lng": 73.516294,
-			"url": "https://www.booking.com/hotel/mv/beehive-premier-male.html",
-			"score": 8.0,
-			"count": 1081,
-			"stars": 3,
-			"total": 263.26,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Malé, rated 8.0 from 1,081 Booking.com reviews."
-		}
-	},
-	"medan-indonesia": {
-		"Budget": {
-			"id": 268642,
-			"name": "Swiss-Belinn Medan",
-			"area": "Medan",
-			"address": "Jalan Surabaya No. 88",
-			"lat": 3.583357,
-			"lng": 98.685146,
-			"url": "https://www.booking.com/hotel/id/my-dream.html",
-			"score": 8.0,
-			"count": 242,
-			"stars": 3,
-			"total": 59.27,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Medan, rated 8.0 from 242 Booking.com reviews."
-		}
-	},
+	"lijiang-china": { "Luxury": {
+		"id": 738700,
+		"name": "Hotel Indigo Lijiang Ancient Town by IHG",
+		"area": "Dayan Old Town",
+		"address": "111 Xing Wen Alley, Qi Yi Street",
+		"lat": 26.865415,
+		"lng": 100.238987,
+		"url": "https://www.booking.com/hotel/cn/indigo-lijiang-ancient-town.html",
+		"score": 9.3,
+		"count": 77,
+		"stars": 5,
+		"total": 292.01,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Dayan Old Town, rated 9.3 from 77 Booking.com reviews."
+	} },
+	"los-angeles-unitedstates": { "Luxury": {
+		"id": 8114987,
+		"name": "Conrad Los Angeles",
+		"area": "Downtown Los Angeles",
+		"address": "100 South Grand Ave.",
+		"lat": 34.055678,
+		"lng": -118.248709,
+		"url": "https://www.booking.com/hotel/us/conrad-los-angeles.html",
+		"score": 8.7,
+		"count": 188,
+		"stars": 5,
+		"total": 902.16,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Downtown Los Angeles, rated 8.7 from 188 Booking.com reviews."
+	} },
+	"louisville-united-states": { "Budget": {
+		"id": 1534705,
+		"name": "Holiday Inn Express & Suites Downtown Louisville by IHG",
+		"area": "Downtown Louisville",
+		"address": "800 West Market Street",
+		"lat": 38.255759,
+		"lng": -85.763614,
+		"url": "https://www.booking.com/hotel/us/holiday-inn-express-suites-downtown-louisville.html",
+		"score": 8.4,
+		"count": 653,
+		"stars": 3,
+		"total": 261.05,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Downtown Louisville, rated 8.4 from 653 Booking.com reviews."
+	} },
+	"lucca-italy": { "Luxury": {
+		"id": 2523642,
+		"name": "Palazzo Dipinto",
+		"area": "Centro Storico",
+		"address": "Piazza del Palazzo Dipinto 27",
+		"lat": 43.843246,
+		"lng": 10.500416,
+		"url": "https://www.booking.com/hotel/it/palazzo-dipinto-lucca.html",
+		"score": 9.3,
+		"count": 641,
+		"stars": 4,
+		"total": 658,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Centro Storico rated 9.3/10 from 641 Booking.com reviews."
+	} },
+	"luxembourg-city-luxembourg": { "Budget": {
+		"id": 3634565,
+		"name": "Hôtel JJ32 Luxembourg Centre Gare",
+		"area": "Gare",
+		"address": "32 Rue Joseph Junck",
+		"lat": 49.600789,
+		"lng": 6.131015,
+		"url": "https://www.booking.com/hotel/lu/jj32.html",
+		"score": 8.1,
+		"count": 2026,
+		"stars": 3,
+		"total": 333.42,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Gare, rated 8.1 from 2,026 Booking.com reviews."
+	} },
+	"lynchburg-united-states": { "Luxury": {
+		"id": 3122705,
+		"name": "The Virginian Lynchburg, Curio Collection By Hilton",
+		"area": "Downtown Lynchburg",
+		"address": "712 Church Street",
+		"lat": 37.415424,
+		"lng": -79.14406,
+		"url": "https://www.booking.com/hotel/us/the-virginian-lynchburg-curio-collection-by-hilton.html",
+		"score": 9.2,
+		"count": 154,
+		"stars": 4,
+		"total": 444.97,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Lynchburg rated 9.2/10 from 154 Booking.com reviews."
+	} },
+	"male-maldives": { "Budget": {
+		"id": 9854862,
+		"name": "Beehive Premier",
+		"area": "Malé",
+		"address": "Raiyvilla Hingun",
+		"lat": 4.171398,
+		"lng": 73.516294,
+		"url": "https://www.booking.com/hotel/mv/beehive-premier-male.html",
+		"score": 8,
+		"count": 1081,
+		"stars": 3,
+		"total": 263.26,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Malé, rated 8.0 from 1,081 Booking.com reviews."
+	} },
+	"medan-indonesia": { "Budget": {
+		"id": 268642,
+		"name": "Swiss-Belinn Medan",
+		"area": "Medan",
+		"address": "Jalan Surabaya No. 88",
+		"lat": 3.583357,
+		"lng": 98.685146,
+		"url": "https://www.booking.com/hotel/id/my-dream.html",
+		"score": 8,
+		"count": 242,
+		"stars": 3,
+		"total": 59.27,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Medan, rated 8.0 from 242 Booking.com reviews."
+	} },
 	"muscat-oman": {
 		"Best Value": {
 			"id": 6212367,
@@ -12202,57 +12398,6 @@ var overrides_central_2710 = {
 			"reason": "A 5-star hotel in Al Ghubra, rated 9.2 from 1,377 Booking.com reviews."
 		}
 	},
-	"nusa-penida-indonesia": {
-		"Luxury": {
-			"id": 9295885,
-			"name": "Deep Roots Dive & Yoga Resort",
-			"area": "Ped",
-			"address": "Dusun Pendem, Desa Ped",
-			"lat": -8.69052,
-			"lng": 115.513199,
-			"url": "https://www.booking.com/hotel/id/deep-roots-dive-amp-yoga-resort.html",
-			"score": 9.6,
-			"count": 269,
-			"stars": 4,
-			"total": 201.02,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Ped rated 9.6/10 from 269 Booking.com reviews."
-		}
-	},
-	"obidos-portugal": {
-		"Luxury": {
-			"id": 385501,
-			"name": "Pousada Castelo de Obidos",
-			"area": "Medieval town",
-			"address": "Paço Real",
-			"lat": 39.363278,
-			"lng": -9.157052,
-			"url": "https://www.booking.com/hotel/pt/pousada-de-abidos-castelo-de-abidos.html",
-			"score": 8.3,
-			"count": 713,
-			"stars": 4,
-			"total": 489.6,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Medieval town rated 8.3/10 from 713 Booking.com reviews."
-		}
-	},
-	"olsztyn-poland": {
-		"Luxury": {
-			"id": 440454,
-			"name": "Tiffi Boutique Hotel",
-			"area": "Olsztyn",
-			"address": "ul. Żeglarska 7",
-			"lat": 53.781582,
-			"lng": 20.450318,
-			"url": "https://www.booking.com/hotel/pl/yacht-club-tiffi-olsztyn.html",
-			"score": 9.0,
-			"count": 757,
-			"stars": 4,
-			"total": 227.84,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Olsztyn rated 9.0/10 from 757 Booking.com reviews."
-		}
-	},
 	"osijek-croatia": {
 		"Budget": {
 			"id": 174313,
@@ -12268,25 +12413,38 @@ var overrides_central_2710 = {
 			"total": 177.4,
 			"checked": "27 Oct 2026",
 			"reason": "A central budget pick in Osijek, rated 8.2 from 294 Booking.com reviews."
-		}
-	},
-	"queretaro-mexico": {
+		},
 		"Luxury": {
-			"id": 1843515,
-			"name": "Hotel Criol",
-			"area": "Historic centre",
-			"address": "Río de la Loza Norte 6, Centro",
-			"lat": 20.594386,
-			"lng": -100.388585,
-			"url": "https://www.booking.com/hotel/mx/criol.html",
-			"score": 9.0,
-			"count": 840,
-			"stars": 5,
-			"total": 166.78,
+			"id": 20789,
+			"name": "Hotel Waldinger",
+			"area": "Osijek Centre",
+			"address": "Zupanijska 8",
+			"lat": 45.558718,
+			"lng": 18.675948,
+			"url": "https://www.booking.com/hotel/hr/waldinger.html",
+			"score": 9.2,
+			"count": 398,
+			"stars": 4,
+			"total": 332.8,
 			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Historic centre, rated 9.0 from 840 Booking.com reviews."
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Osijek Centre rated 9.2/10 from 398 Booking.com reviews."
 		}
 	},
+	"queretaro-mexico": { "Luxury": {
+		"id": 1843515,
+		"name": "Hotel Criol",
+		"area": "Historic centre",
+		"address": "Río de la Loza Norte 6, Centro",
+		"lat": 20.594386,
+		"lng": -100.388585,
+		"url": "https://www.booking.com/hotel/mx/criol.html",
+		"score": 9,
+		"count": 840,
+		"stars": 5,
+		"total": 166.78,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Historic centre, rated 9.0 from 840 Booking.com reviews."
+	} },
 	"regina-canada": {
 		"Best Value": {
 			"id": 534332,
@@ -12302,6 +12460,21 @@ var overrides_central_2710 = {
 			"total": 234.91,
 			"checked": "27 Oct 2026",
 			"reason": "Central Regina hotel rated 8.7 from 244 Booking.com reviews: good value close to the sights."
+		},
+		"Budget": {
+			"id": 373473,
+			"name": "Wingate by Wyndham Regina",
+			"area": "Downtown Regina",
+			"address": "1700 Broad Street",
+			"lat": 50.451628,
+			"lng": -104.606648,
+			"url": "https://www.booking.com/hotel/ca/wingate-by-wyndham-regina.html",
+			"score": 7.7,
+			"count": 545,
+			"stars": 3,
+			"total": 188.11,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Regina, rated 7.7 from 545 Booking.com reviews."
 		}
 	},
 	"samsun-turkiye": {
@@ -12351,161 +12524,158 @@ var overrides_central_2710 = {
 			"total": 1315.87,
 			"checked": "27 Oct 2026",
 			"reason": "A 5-star hotel in Downtown San Diego, rated 8.2 from 222 Booking.com reviews."
-		}
-	},
-	"san-jose-costarica": {
-		"Luxury": {
-			"id": 350607,
-			"name": "Radisson San Jose-Costa Rica",
-			"area": "Barrio Tournón",
-			"address": "Calle Central y Tercera Av 15, Barrio Tournón",
-			"lat": 9.943103,
-			"lng": -84.076918,
-			"url": "https://www.booking.com/hotel/cr/radisson-europa.html",
-			"score": 8.1,
-			"count": 2668,
-			"stars": 5,
-			"total": 283.56,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Barrio Tournón, rated 8.1 from 2,668 Booking.com reviews."
-		}
-	},
-	"san-jose-united-states": {
+		},
 		"Best Value": {
-			"id": 1948003,
-			"name": "AC Hotel by Marriott San Jose Downtown",
-			"area": "Downtown San Jose",
-			"address": "350 West Santa Clara Street",
-			"lat": 37.333222,
-			"lng": -121.896161,
-			"url": "https://www.booking.com/hotel/us/ac-by-marriott-san-jose-downtown.html",
-			"score": 8.7,
-			"count": 379,
-			"stars": 3,
-			"total": 623.51,
-			"checked": "27 Oct 2026",
-			"reason": "Central Downtown San Jose hotel rated 8.7 from 379 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"santa-marta-colombia": {
-		"Luxury": {
-			"id": 539417,
-			"name": "Hotel Boutique Don Pepe",
-			"area": "Centro Histórico",
-			"address": "Calle 16 No. 1C-92",
-			"lat": 11.244136,
-			"lng": -74.213304,
-			"url": "https://www.booking.com/hotel/co/boutique-don-pepe.html",
-			"score": 8.6,
-			"count": 254,
-			"stars": 5,
-			"total": 426.04,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Centro Histórico, rated 8.6 from 254 Booking.com reviews."
-		}
-	},
-	"shanghai-china": {
-		"Budget": {
-			"id": 6973768,
-			"name": "Shanghai Fish Inn People Square",
-			"area": "Huangpu",
-			"address": "No.135 Jiangying Road",
-			"lat": 31.229366,
-			"lng": 121.468206,
-			"url": "https://www.booking.com/hotel/cn/shang-hai-zi-yu-ju-ren-min-yan-chang-dian-shanghai12.html",
-			"score": 8.8,
-			"count": 300,
-			"stars": 2,
-			"total": 116.99,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Huangpu, rated 8.8 from 300 Booking.com reviews."
-		}
-	},
-	"sihanoukville-cambodia": {
-		"Luxury": {
-			"id": 1569085,
-			"name": "Queenco Entertainment Resort",
-			"area": "Victory Beach",
-			"address": "Victory Beach, Mohavithey Krong",
-			"lat": 10.637393,
-			"lng": 103.501208,
-			"url": "https://www.booking.com/hotel/kh/queenco-amp-casino-tower.html",
-			"score": 9.4,
-			"count": 193,
-			"stars": 5,
-			"total": 478.26,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Victory Beach, rated 9.4 from 193 Booking.com reviews."
-		}
-	},
-	"spokane-united-states": {
-		"Luxury": {
-			"id": 1240331,
-			"name": "The Davenport Grand, Autograph Collection",
-			"area": "Downtown Spokane",
-			"address": "333 West Spokane Falls Boulevard",
-			"lat": 47.659977,
-			"lng": -117.416864,
-			"url": "https://www.booking.com/hotel/us/the-davenport-grand-autograph-collection.html",
-			"score": 8.7,
-			"count": 553,
+			"id": 263697,
+			"name": "Courtyard by Marriott San Diego Downtown",
+			"area": "Downtown San Diego",
+			"address": "530 Broadway",
+			"lat": 32.715951,
+			"lng": -117.159536,
+			"url": "https://www.booking.com/hotel/us/courtyard-san-diego-downtown.html",
+			"score": 8.3,
+			"count": 652,
 			"stars": 4,
-			"total": 316.95,
+			"total": 390.23,
 			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Spokane rated 8.7/10 from 553 Booking.com reviews."
+			"reason": "Central Downtown San Diego hotel rated 8.3 from 652 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"taipei-taiwan": {
-		"Best Value": {
-			"id": 73014,
-			"name": "les suites taipei ching cheng",
-			"area": "Songshan",
-			"address": "No.12, Chingcheng Street",
-			"lat": 25.052679,
-			"lng": 121.545112,
-			"url": "https://www.booking.com/hotel/tw/lessuitescc.html",
-			"score": 9.0,
-			"count": 477,
-			"stars": 4,
-			"total": 399.93,
-			"checked": "27 Oct 2026",
-			"reason": "Central Songshan hotel rated 9.0 from 477 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"tilburg-netherlands": {
-		"Budget": {
-			"id": 10330,
-			"name": "ibis Tilburg",
-			"area": "Tilburg",
-			"address": "Dr. Hub van Doorneweg 105",
-			"lat": 51.541731,
-			"lng": 5.050849,
-			"url": "https://www.booking.com/hotel/nl/ibistilburg.html",
-			"score": 8.0,
-			"count": 493,
-			"stars": 3,
-			"total": 207.84,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Tilburg, rated 8.0 from 493 Booking.com reviews."
-		}
-	},
-	"toronto-canada": {
-		"Budget": {
-			"id": 13541170,
-			"name": "La TUMU",
-			"area": "Church-Wellesley Village",
-			"address": "29 Wellesley Street East",
-			"lat": 43.664923,
-			"lng": -79.382908,
-			"url": "https://www.booking.com/hotel/ca/la-tumu.html",
-			"score": 7.3,
-			"count": 103,
-			"stars": 3,
-			"total": 349.77,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Church-Wellesley Village, rated 7.3 from 103 Booking.com reviews."
-		}
-	},
+	"san-jose-costarica": { "Luxury": {
+		"id": 350607,
+		"name": "Radisson San Jose-Costa Rica",
+		"area": "Barrio Tournón",
+		"address": "Calle Central y Tercera Av 15, Barrio Tournón",
+		"lat": 9.943103,
+		"lng": -84.076918,
+		"url": "https://www.booking.com/hotel/cr/radisson-europa.html",
+		"score": 8.1,
+		"count": 2668,
+		"stars": 5,
+		"total": 283.56,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Barrio Tournón, rated 8.1 from 2,668 Booking.com reviews."
+	} },
+	"san-jose-united-states": { "Best Value": {
+		"id": 1948003,
+		"name": "AC Hotel by Marriott San Jose Downtown",
+		"area": "Downtown San Jose",
+		"address": "350 West Santa Clara Street",
+		"lat": 37.333222,
+		"lng": -121.896161,
+		"url": "https://www.booking.com/hotel/us/ac-by-marriott-san-jose-downtown.html",
+		"score": 8.7,
+		"count": 379,
+		"stars": 3,
+		"total": 623.51,
+		"checked": "27 Oct 2026",
+		"reason": "Central Downtown San Jose hotel rated 8.7 from 379 Booking.com reviews: good value close to the sights."
+	} },
+	"santa-marta-colombia": { "Luxury": {
+		"id": 539417,
+		"name": "Hotel Boutique Don Pepe",
+		"area": "Centro Histórico",
+		"address": "Calle 16 No. 1C-92",
+		"lat": 11.244136,
+		"lng": -74.213304,
+		"url": "https://www.booking.com/hotel/co/boutique-don-pepe.html",
+		"score": 8.6,
+		"count": 254,
+		"stars": 5,
+		"total": 426.04,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Centro Histórico, rated 8.6 from 254 Booking.com reviews."
+	} },
+	"shanghai-china": { "Budget": {
+		"id": 6973768,
+		"name": "Shanghai Fish Inn People Square",
+		"area": "Huangpu",
+		"address": "No.135 Jiangying Road",
+		"lat": 31.229366,
+		"lng": 121.468206,
+		"url": "https://www.booking.com/hotel/cn/shang-hai-zi-yu-ju-ren-min-yan-chang-dian-shanghai12.html",
+		"score": 8.8,
+		"count": 300,
+		"stars": 2,
+		"total": 116.99,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Huangpu, rated 8.8 from 300 Booking.com reviews."
+	} },
+	"sihanoukville-cambodia": { "Luxury": {
+		"id": 1569085,
+		"name": "Queenco Entertainment Resort",
+		"area": "Victory Beach",
+		"address": "Victory Beach, Mohavithey Krong",
+		"lat": 10.637393,
+		"lng": 103.501208,
+		"url": "https://www.booking.com/hotel/kh/queenco-amp-casino-tower.html",
+		"score": 9.4,
+		"count": 193,
+		"stars": 5,
+		"total": 478.26,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Victory Beach, rated 9.4 from 193 Booking.com reviews."
+	} },
+	"spokane-united-states": { "Luxury": {
+		"id": 1240331,
+		"name": "The Davenport Grand, Autograph Collection",
+		"area": "Downtown Spokane",
+		"address": "333 West Spokane Falls Boulevard",
+		"lat": 47.659977,
+		"lng": -117.416864,
+		"url": "https://www.booking.com/hotel/us/the-davenport-grand-autograph-collection.html",
+		"score": 8.7,
+		"count": 553,
+		"stars": 4,
+		"total": 316.95,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Spokane rated 8.7/10 from 553 Booking.com reviews."
+	} },
+	"taipei-taiwan": { "Best Value": {
+		"id": 73014,
+		"name": "les suites taipei ching cheng",
+		"area": "Songshan",
+		"address": "No.12, Chingcheng Street",
+		"lat": 25.052679,
+		"lng": 121.545112,
+		"url": "https://www.booking.com/hotel/tw/lessuitescc.html",
+		"score": 9,
+		"count": 477,
+		"stars": 4,
+		"total": 399.93,
+		"checked": "27 Oct 2026",
+		"reason": "Central Songshan hotel rated 9.0 from 477 Booking.com reviews: good value close to the sights."
+	} },
+	"tilburg-netherlands": { "Budget": {
+		"id": 10330,
+		"name": "ibis Tilburg",
+		"area": "Tilburg",
+		"address": "Dr. Hub van Doorneweg 105",
+		"lat": 51.541731,
+		"lng": 5.050849,
+		"url": "https://www.booking.com/hotel/nl/ibistilburg.html",
+		"score": 8,
+		"count": 493,
+		"stars": 3,
+		"total": 207.84,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Tilburg, rated 8.0 from 493 Booking.com reviews."
+	} },
+	"toronto-canada": { "Budget": {
+		"id": 13541170,
+		"name": "La TUMU",
+		"area": "Church-Wellesley Village",
+		"address": "29 Wellesley Street East",
+		"lat": 43.664923,
+		"lng": -79.382908,
+		"url": "https://www.booking.com/hotel/ca/la-tumu.html",
+		"score": 7.3,
+		"count": 103,
+		"stars": 3,
+		"total": 349.77,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Church-Wellesley Village, rated 7.3 from 103 Booking.com reviews."
+	} },
 	"tucson-united-states": {
 		"Luxury": {
 			"id": 9027265,
@@ -12536,108 +12706,83 @@ var overrides_central_2710 = {
 			"total": 164.63,
 			"checked": "27 Oct 2026",
 			"reason": "A central budget pick in Downtown Tucson, rated 7.3 from 407 Booking.com reviews."
-		}
-	},
-	"tulum-mexico": {
-		"Luxury": {
-			"id": 2003149,
-			"name": "Una Vida",
-			"area": "Tulum Centre",
-			"address": "Avenida Tulum",
-			"lat": 20.211295,
-			"lng": -87.47483,
-			"url": "https://www.booking.com/hotel/mx/una-vida.html",
-			"score": 9.1,
-			"count": 337,
-			"stars": 5,
-			"total": 365.89,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Tulum Centre, rated 9.1 from 337 Booking.com reviews."
-		}
-	},
-	"ulaanbaatar-mongolia": {
-		"Luxury": {
-			"id": 1316987,
-			"name": "Shangri-La Ulaanbaatar",
-			"area": "Sukhbaatar",
-			"address": "19 Olympic Street, Sukhbaatar District",
-			"lat": 47.913189,
-			"lng": 106.920396,
-			"url": "https://www.booking.com/hotel/mn/shangri-la-ulaanbaatar.html",
-			"score": 8.4,
-			"count": 118,
-			"stars": 5,
-			"total": 610.2,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Sukhbaatar, rated 8.4 from 118 Booking.com reviews."
-		}
-	},
-	"valdosta-united-states": {
-		"Budget": {
-			"id": 296306,
-			"name": "Holiday Inn Valdosta Conference Center by IHG",
-			"area": "Valdosta",
-			"address": "1805 West Hill Avenue",
-			"lat": 30.819673,
-			"lng": -83.311032,
-			"url": "https://www.booking.com/hotel/us/holiday-inn-valdosta-hotels.html",
-			"score": 8.6,
-			"count": 238,
-			"stars": 3,
-			"total": 223.97,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Valdosta, rated 8.6 from 238 Booking.com reviews."
-		}
-	},
-	"winnipeg-canada": {
-		"Luxury": {
-			"id": 912926,
-			"name": "Inn at the Forks",
-			"area": "The Forks",
-			"address": "75 Forks Market Road",
-			"lat": 49.887908,
-			"lng": -97.129524,
-			"url": "https://www.booking.com/hotel/ca/inn-at-the-forks-winnipeg.html",
-			"score": 8.6,
-			"count": 210,
-			"stars": 4,
-			"total": 381.73,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in The Forks rated 8.6/10 from 210 Booking.com reviews."
-		}
-	},
-	"phoenix-united-states": {
-		"Budget": {
-			"id": 59801,
-			"name": "Best Western Downtown Phoenix",
-			"area": "Downtown Phoenix",
-			"address": "620 N 6th St",
-			"lat": 33.454982,
-			"lng": -112.066538,
-			"url": "https://www.booking.com/hotel/us/best-western-downtown-phoenix.html",
-			"score": 7.9,
-			"count": 379,
-			"stars": 3,
-			"total": 413.07,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Phoenix, rated 7.9 from 379 Booking.com reviews."
 		},
 		"Best Value": {
-			"id": 3206906,
-			"name": "Hampton Inn & Suites Phoenix Downtown",
-			"area": "Downtown Phoenix",
-			"address": "77 E Polk St",
-			"lat": 33.45213,
-			"lng": -112.072922,
-			"url": "https://www.booking.com/hotel/us/hampton-inn-suites-phoenix-downtown.html",
+			"id": 7609839,
+			"name": "Hampton Inn Tucson Downtown, Az",
+			"area": "Downtown Tucson",
+			"address": "141 South Stone Ave.",
+			"lat": 32.219838,
+			"lng": -110.970627,
+			"url": "https://www.booking.com/hotel/us/hampton-inn-tucson-downtown-az.html",
 			"score": 8.8,
-			"count": 766,
+			"count": 242,
 			"stars": 3,
-			"total": 482.06,
+			"total": 284.99,
 			"checked": "27 Oct 2026",
-			"reason": "Central Downtown Phoenix hotel rated 8.8 from 766 Booking.com reviews: good value close to the sights."
+			"reason": "Central Downtown Tucson hotel rated 8.8 from 242 Booking.com reviews: good value close to the sights."
 		}
 	},
+	"tulum-mexico": { "Luxury": {
+		"id": 2003149,
+		"name": "Una Vida",
+		"area": "Tulum Centre",
+		"address": "Avenida Tulum",
+		"lat": 20.211295,
+		"lng": -87.47483,
+		"url": "https://www.booking.com/hotel/mx/una-vida.html",
+		"score": 9.1,
+		"count": 337,
+		"stars": 5,
+		"total": 365.89,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Tulum Centre, rated 9.1 from 337 Booking.com reviews."
+	} },
+	"ulaanbaatar-mongolia": { "Luxury": {
+		"id": 1316987,
+		"name": "Shangri-La Ulaanbaatar",
+		"area": "Sukhbaatar",
+		"address": "19 Olympic Street, Sukhbaatar District",
+		"lat": 47.913189,
+		"lng": 106.920396,
+		"url": "https://www.booking.com/hotel/mn/shangri-la-ulaanbaatar.html",
+		"score": 8.4,
+		"count": 118,
+		"stars": 5,
+		"total": 610.2,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Sukhbaatar, rated 8.4 from 118 Booking.com reviews."
+	} },
+	"valdosta-united-states": { "Budget": {
+		"id": 296306,
+		"name": "Holiday Inn Valdosta Conference Center by IHG",
+		"area": "Valdosta",
+		"address": "1805 West Hill Avenue",
+		"lat": 30.819673,
+		"lng": -83.311032,
+		"url": "https://www.booking.com/hotel/us/holiday-inn-valdosta-hotels.html",
+		"score": 8.6,
+		"count": 238,
+		"stars": 3,
+		"total": 223.97,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Valdosta, rated 8.6 from 238 Booking.com reviews."
+	} },
+	"winnipeg-canada": { "Luxury": {
+		"id": 912926,
+		"name": "Inn at the Forks",
+		"area": "The Forks",
+		"address": "75 Forks Market Road",
+		"lat": 49.887908,
+		"lng": -97.129524,
+		"url": "https://www.booking.com/hotel/ca/inn-at-the-forks-winnipeg.html",
+		"score": 8.6,
+		"count": 210,
+		"stars": 4,
+		"total": 381.73,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in The Forks rated 8.6/10 from 210 Booking.com reviews."
+	} },
 	"incheon-south-korea": {
 		"Best Value": {
 			"id": 1174077,
@@ -12653,294 +12798,7 @@ var overrides_central_2710 = {
 			"total": 307.91,
 			"checked": "27 Oct 2026",
 			"reason": "Central Songdo hotel rated 8.7 from 753 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"akron-united-states": {
-		"Best Value": {
-			"id": 1532200,
-			"name": "Courtyard by Marriott Akron Downtown",
-			"area": "Downtown Akron",
-			"address": "41 Furnace Street",
-			"lat": 41.0885,
-			"lng": -81.515,
-			"url": "https://www.booking.com/hotel/us/courtyard-by-marriott-akron-downtown.html",
-			"score": 8.1,
-			"count": 154,
-			"stars": 3,
-			"total": 392.62,
-			"checked": "27 Oct 2026",
-			"reason": "Central Downtown Akron hotel rated 8.1 from 154 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"boise-united-states": {
-		"Budget": {
-			"id": 185179,
-			"name": "Hampton Inn & Suites Boise-Downtown",
-			"area": "Downtown Boise",
-			"address": "495 South Capitol Boulevard",
-			"lat": 43.612172,
-			"lng": -116.205319,
-			"url": "https://www.booking.com/hotel/us/hampton-inn-suites-boise-downtown.html",
-			"score": 8.8,
-			"count": 465,
-			"stars": 3,
-			"total": 473.33,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Boise, rated 8.8 from 465 Booking.com reviews."
-		}
-	},
-	"des-moines-united-states": {
-		"Budget": {
-			"id": 1045780,
-			"name": "Hampton Inn & Suites Des Moines Downtown",
-			"area": "Downtown Des Moines",
-			"address": "120 South West Water Street",
-			"lat": 41.584195,
-			"lng": -93.617541,
-			"url": "https://www.booking.com/hotel/us/hampton-inn-amp-suites-des-moines-downtown.html",
-			"score": 8.6,
-			"count": 279,
-			"stars": 3,
-			"total": 211.98,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Des Moines, rated 8.6 from 279 Booking.com reviews."
-		}
-	},
-	"houston-united-states": {
-		"Budget": {
-			"id": 512722,
-			"name": "Best Western Plus Downtown Inn & Suites",
-			"area": "Downtown Houston",
-			"address": "915 W Dallas Street",
-			"lat": 29.757684,
-			"lng": -95.377231,
-			"url": "https://www.booking.com/hotel/us/best-western-plus-downtown-inn-suites.html",
-			"score": 8.5,
-			"count": 902,
-			"stars": 3,
-			"total": 243.36,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Houston, rated 8.5 from 902 Booking.com reviews."
-		}
-	},
-	"miami-unitedstates": {
-		"Best Value": {
-			"id": 262683,
-			"name": "SpringHill Suites Miami Downtown/Medical Center",
-			"area": "Health District",
-			"address": "1311 Northwest 10th Avenue",
-			"lat": 25.786628,
-			"lng": -80.210453,
-			"url": "https://www.booking.com/hotel/us/springhill-suites-miami-arts-health-district.html",
-			"score": 7.1,
-			"count": 417,
-			"stars": 3,
-			"total": 363.12,
-			"checked": "27 Oct 2026",
-			"reason": "Central Health District hotel rated 7.1 from 417 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"tampa-united-states": {
-		"Best Value": {
-			"id": 4637640,
-			"name": "Hampton Inn Tampa Downtown Channel District",
-			"area": "Channel District",
-			"address": "1155 East Kennedy Boulevard",
-			"lat": 27.950163,
-			"lng": -82.44849,
-			"url": "https://www.booking.com/hotel/us/hampton-inn-tampa-downtown-channel-district-fl.html",
-			"score": 8.8,
-			"count": 1261,
-			"stars": 3,
-			"total": 592.83,
-			"checked": "27 Oct 2026",
-			"reason": "Central Channel District hotel rated 8.8 from 1,261 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"luton-unitedkingdom": {
-		"Best Value": {
-			"id": 2701360,
-			"name": "Linton Hotel Luton",
-			"area": "Luton",
-			"address": "136 Tennyson Road",
-			"lat": 51.867315,
-			"lng": -0.417531,
-			"url": "https://www.booking.com/hotel/gb/linton-luton.html",
-			"score": 7.2,
-			"count": 1377,
-			"stars": 3,
-			"total": 185.08,
-			"checked": "27 Oct 2026",
-			"reason": "Central Luton hotel rated 7.2 from 1,377 Booking.com reviews: good value close to the sights."
-		}
-	}
-};
-for (const [cid, v] of Object.entries(overrides_central_2710)) overrides_default[cid] = Object.assign({}, overrides_default[cid] || {}, v);
-/* 27 Oct 2026 (round 2): airport-free and central replacements */
-var overrides_central_2710b = {
-	"crawley-united-kingdom": {
-		"Best Value": {
-			"id": 2055255,
-			"name": "The Maple Manor Hotel",
-			"area": "Ifield, Crawley",
-			"address": "Charlwood Road",
-			"lat": 51.143092,
-			"lng": -0.202582,
-			"url": "https://www.booking.com/hotel/gb/the-maple-manor.html",
-			"score": 8.2,
-			"count": 1449,
-			"stars": 4,
-			"total": 243.12,
-			"checked": "27 Oct 2026",
-			"reason": "Central Ifield, Crawley hotel rated 8.2 from 1,449 Booking.com reviews: good value close to the sights."
 		},
-		"Luxury": {
-			"id": 33888,
-			"name": "Alexander House Hotel & Utopia Spa",
-			"area": "Turners Hill",
-			"address": "East Street, Turners Hill",
-			"lat": 51.107166,
-			"lng": -0.06889,
-			"url": "https://www.booking.com/hotel/gb/alexander-house-and-utopia-spa.html",
-			"score": 7.8,
-			"count": 470,
-			"stars": 5,
-			"total": 568.39,
-			"checked": "27 Oct 2026",
-			"reason": "The closest well-rated hotel without an airport name, in Turners Hill, rated 7.8 from 470 Booking.com reviews."
-		},
-		"Budget": {
-			"id": 33977,
-			"name": "Reigate Manor Hotel",
-			"area": "Reigate",
-			"address": "Reigate Hill",
-			"lat": 51.249812,
-			"lng": -0.202716,
-			"url": "https://www.booking.com/hotel/gb/best-western-reigate-manor.html",
-			"score": 7.7,
-			"count": 950,
-			"stars": 3,
-			"total": 238.82,
-			"checked": "27 Oct 2026",
-			"reason": "The closest well-rated hotel without an airport name, in Reigate, rated 7.7 from 950 Booking.com reviews."
-		}
-	},
-	"new-delhi-india": {
-		"Budget": {
-			"id": 546375,
-			"name": "Hotel Stay Well Dx",
-			"area": "Paharganj",
-			"address": "3499-3500, Desh Bandhu Gupta Road, Pahar Ganj",
-			"lat": 28.644162,
-			"lng": 77.215654,
-			"url": "https://www.booking.com/hotel/in/stay-well-dx.html",
-			"score": 8.8,
-			"count": 622,
-			"stars": 3,
-			"total": 42.74,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Paharganj, rated 8.8 from 622 Booking.com reviews."
-		}
-	},
-	"columbus-united-states": {
-		"Budget": {
-			"id": 184150,
-			"name": "Holiday Inn Columbus Dwtn-Capitol Square by IHG",
-			"area": "Downtown Columbus",
-			"address": "175 East Town Street",
-			"lat": 39.959098,
-			"lng": -82.994806,
-			"url": "https://www.booking.com/hotel/us/holiday-inn-columbus-downtown-capital-square.html",
-			"score": 7.7,
-			"count": 585,
-			"stars": 3,
-			"total": 262.86,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Columbus, rated 7.7 from 585 Booking.com reviews."
-		}
-	},
-	"accra-ghana": {
-		"Budget": {
-			"id": 16678074,
-			"name": "FLORIA - Sky Suites",
-			"area": "Labone",
-			"address": "Palace Mall",
-			"lat": 5.571351,
-			"lng": -0.167309,
-			"url": "https://www.booking.com/hotel/gh/floria-sky-suites.html",
-			"score": 8.5,
-			"count": 27,
-			"stars": 3,
-			"total": 144.48,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Labone, rated 8.5 from 27 Booking.com reviews."
-		}
-	},
-	"salt-lake-city-united-states": {
-		"Budget": {
-			"id": 283488,
-			"name": "SureStay by Best Western Salt Lake City Downtown",
-			"area": "Downtown Salt Lake City",
-			"address": "1009 S Main St",
-			"lat": 40.747105,
-			"lng": -111.890764,
-			"url": "https://www.booking.com/hotel/us/americas-best-inn-and-suites-salt-lake-city.html",
-			"score": 7.0,
-			"count": 502,
-			"stars": 2,
-			"total": 193.6,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Salt Lake City, rated 7.0 from 502 Booking.com reviews."
-		},
-		"Best Value": {
-			"id": 907790,
-			"name": "The Anniversary Inn - South Temple",
-			"area": "South Temple",
-			"address": "678 East South Temple",
-			"lat": 40.768961,
-			"lng": -111.871393,
-			"url": "https://www.booking.com/hotel/us/the-anniversary-inn-salt-lake-city.html",
-			"score": 7.0,
-			"count": 121,
-			"stars": 4,
-			"total": 451.62,
-			"checked": "27 Oct 2026",
-			"reason": "Central South Temple hotel rated 7.0 from 121 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"ta-if-saudi-arabia": {
-		"Best Value": {
-			"id": 312215,
-			"name": "Awaliv Hotel",
-			"area": "Shobra",
-			"address": "Abu Baker As Siddiq Street, Shobra",
-			"lat": 21.286953,
-			"lng": 40.41927,
-			"url": "https://www.booking.com/hotel/sa/awaliv-international.html",
-			"score": 9.0,
-			"count": 992,
-			"stars": 4,
-			"total": 212.61,
-			"checked": "27 Oct 2026",
-			"reason": "Central Shobra hotel rated 9.0 from 992 Booking.com reviews: good value close to the sights."
-		},
-		"Luxury": {
-			"id": 9774303,
-			"name": "Le Reve Hotel Taif",
-			"area": "Shihar, Taif",
-			"address": "Shihar Road",
-			"lat": 21.248335,
-			"lng": 40.414011,
-			"url": "https://www.booking.com/hotel/sa/le-reve.html",
-			"score": 9.9,
-			"count": 1223,
-			"stars": 4,
-			"total": 310.31,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Shihar, Taif rated 9.9/10 from 1,223 Booking.com reviews."
-		}
-	},
-	"incheon-south-korea": {
 		"Budget": {
 			"id": 2914669,
 			"name": "Toyoko Inn Incheon Bupyeong",
@@ -12972,6 +12830,380 @@ var overrides_central_2710b = {
 			"reason": "A 5-star hotel in Songdo, rated 8.6 from 366 Booking.com reviews."
 		}
 	},
+	"akron-united-states": {
+		"Best Value": {
+			"id": 1532200,
+			"name": "Courtyard by Marriott Akron Downtown",
+			"area": "Downtown Akron",
+			"address": "41 Furnace Street",
+			"lat": 41.0885,
+			"lng": -81.515,
+			"url": "https://www.booking.com/hotel/us/courtyard-by-marriott-akron-downtown.html",
+			"score": 8.1,
+			"count": 154,
+			"stars": 3,
+			"total": 392.62,
+			"checked": "27 Oct 2026",
+			"reason": "Central Downtown Akron hotel rated 8.1 from 154 Booking.com reviews: good value close to the sights."
+		},
+		"Budget": {
+			"id": 1181735,
+			"name": "Hilton Garden Inn Akron",
+			"area": "East Akron",
+			"address": "1307 East Market Street",
+			"lat": 41.064962,
+			"lng": -81.480215,
+			"url": "https://www.booking.com/hotel/us/hilton-garden-inn-akron.html",
+			"score": 8.3,
+			"count": 291,
+			"stars": 3,
+			"total": 400.92,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in East Akron, rated 8.3 from 291 Booking.com reviews."
+		},
+		"Luxury": {
+			"id": 5657933,
+			"name": "BLU-Tique, Akron, a Tribute Portfolio Hotel",
+			"area": "Downtown Akron",
+			"address": "1 S. Main Street",
+			"lat": 41.084908,
+			"lng": -81.516613,
+			"url": "https://www.booking.com/hotel/us/innquest-roommaster.html",
+			"score": 8.5,
+			"count": 58,
+			"stars": 4,
+			"total": 429.01,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Akron rated 8.5/10 from 58 Booking.com reviews."
+		}
+	},
+	"des-moines-united-states": { "Budget": {
+		"id": 1045780,
+		"name": "Hampton Inn & Suites Des Moines Downtown",
+		"area": "Downtown Des Moines",
+		"address": "120 South West Water Street",
+		"lat": 41.584195,
+		"lng": -93.617541,
+		"url": "https://www.booking.com/hotel/us/hampton-inn-amp-suites-des-moines-downtown.html",
+		"score": 8.6,
+		"count": 279,
+		"stars": 3,
+		"total": 211.98,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Downtown Des Moines, rated 8.6 from 279 Booking.com reviews."
+	} },
+	"houston-united-states": {
+		"Budget": {
+			"id": 512722,
+			"name": "Best Western Plus Downtown Inn & Suites",
+			"area": "Downtown Houston",
+			"address": "915 W Dallas Street",
+			"lat": 29.757684,
+			"lng": -95.377231,
+			"url": "https://www.booking.com/hotel/us/best-western-plus-downtown-inn-suites.html",
+			"score": 8.5,
+			"count": 902,
+			"stars": 3,
+			"total": 243.36,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Houston, rated 8.5 from 902 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 4989542,
+			"name": "Cambria Hotel Houston Downtown Convention Center",
+			"area": "Downtown Houston",
+			"address": "1314 Texas Avenue",
+			"lat": 29.75803,
+			"lng": -95.359582,
+			"url": "https://www.booking.com/hotel/us/cambria-houston-downtown-convention-center.html",
+			"score": 8.4,
+			"count": 1846,
+			"stars": 4,
+			"total": 305.47,
+			"checked": "27 Oct 2026",
+			"reason": "Central Downtown Houston hotel rated 8.4 from 1,846 Booking.com reviews: good value close to the sights."
+		},
+		"Luxury": {
+			"id": 184636,
+			"name": "Four Seasons Hotel Houston",
+			"area": "Downtown Houston",
+			"address": "1300 Lamar Street",
+			"lat": 29.754184,
+			"lng": -95.362595,
+			"url": "https://www.booking.com/hotel/us/four-seasons-houston.html",
+			"score": 9,
+			"count": 60,
+			"stars": 5,
+			"total": 1567.19,
+			"checked": "27 Oct 2026",
+			"reason": "A 5-star hotel in Downtown Houston, rated 9 from 60 Booking.com reviews."
+		}
+	},
+	"miami-unitedstates": { "Best Value": {
+		"id": 262683,
+		"name": "SpringHill Suites Miami Downtown/Medical Center",
+		"area": "Health District",
+		"address": "1311 Northwest 10th Avenue",
+		"lat": 25.786628,
+		"lng": -80.210453,
+		"url": "https://www.booking.com/hotel/us/springhill-suites-miami-arts-health-district.html",
+		"score": 7.1,
+		"count": 417,
+		"stars": 3,
+		"total": 363.12,
+		"checked": "27 Oct 2026",
+		"reason": "Central Health District hotel rated 7.1 from 417 Booking.com reviews: good value close to the sights."
+	} },
+	"tampa-united-states": {
+		"Best Value": {
+			"id": 247179,
+			"name": "The Barrymore Hotel Tampa Riverwalk",
+			"area": "Downtown Tampa",
+			"address": "111 West Fortune Street",
+			"lat": 27.953256,
+			"lng": -82.463794,
+			"url": "https://www.booking.com/hotel/us/howard-johnson-plaza-tampa.html",
+			"score": 8.3,
+			"count": 3134,
+			"stars": 3,
+			"total": 486,
+			"checked": "27 Oct 2026",
+			"reason": "Central Downtown Tampa hotel rated 8.3 from 3,134 Booking.com reviews: good value close to the sights."
+		},
+		"Budget": {
+			"id": 4637639,
+			"name": "Home2 Suites By Hilton Tampa Downtown Channel District",
+			"area": "Channel District",
+			"address": "1155 East Kennedy Boulevard",
+			"lat": 27.950163,
+			"lng": -82.44849,
+			"url": "https://www.booking.com/hotel/us/home2-suites-by-hilton-tampa-downtown-channel-district.html",
+			"score": 8.9,
+			"count": 503,
+			"stars": 3,
+			"total": 591.4,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Channel District, rated 8.9 from 503 Booking.com reviews."
+		},
+		"Luxury": {
+			"id": 522035,
+			"name": "Hotel Flor Tampa Downtown, Tapestry Collection By Hilton",
+			"area": "Downtown Tampa",
+			"address": "905 N. Florida Ave",
+			"lat": 27.95203,
+			"lng": -82.4586,
+			"url": "https://www.booking.com/hotel/us/hotel-flor-tampa-downtown-tapestry-collection-by-hilton.html",
+			"score": 8.1,
+			"count": 235,
+			"stars": 4,
+			"total": 671.53,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Tampa rated 8.1/10 from 235 Booking.com reviews."
+		}
+	},
+	"luton-unitedkingdom": {
+		"Best Value": {
+			"id": 2701360,
+			"name": "Linton Hotel Luton",
+			"area": "Luton",
+			"address": "136 Tennyson Road",
+			"lat": 51.867315,
+			"lng": -.417531,
+			"url": "https://www.booking.com/hotel/gb/linton-luton.html",
+			"score": 7.2,
+			"count": 1377,
+			"stars": 3,
+			"total": 185.08,
+			"checked": "27 Oct 2026",
+			"reason": "Central Luton hotel rated 7.2 from 1,377 Booking.com reviews: good value close to the sights."
+		},
+		"Budget": {
+			"id": 220889,
+			"name": "Thistle Express London Luton",
+			"area": "Luton Town Centre",
+			"address": "The Mall",
+			"lat": 51.879432,
+			"lng": -.414616,
+			"url": "https://www.booking.com/hotel/gb/thistleluton.html",
+			"score": 7.8,
+			"count": 7010,
+			"stars": 3,
+			"total": 161.2,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Luton Town Centre, rated 7.8 from 7,010 Booking.com reviews."
+		},
+		"Luxury": {
+			"id": 8712797,
+			"name": "Spark by Hilton Luton",
+			"area": "Luton Town Centre",
+			"address": "2/4 Mill Street",
+			"lat": 51.88262,
+			"lng": -.417606,
+			"url": "https://www.booking.com/hotel/gb/sadie-best-western-at-luton.html",
+			"score": 8.4,
+			"count": 1747,
+			"stars": 4,
+			"total": 217.29,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Luton Town Centre rated 8.4/10 from 1,747 Booking.com reviews."
+		}
+	},
+	"crawley-united-kingdom": {
+		"Best Value": {
+			"id": 2055255,
+			"name": "The Maple Manor Hotel",
+			"area": "Ifield, Crawley",
+			"address": "Charlwood Road",
+			"lat": 51.143092,
+			"lng": -.202582,
+			"url": "https://www.booking.com/hotel/gb/the-maple-manor.html",
+			"score": 8.2,
+			"count": 1449,
+			"stars": 4,
+			"total": 243.12,
+			"checked": "27 Oct 2026",
+			"reason": "Central Ifield, Crawley hotel rated 8.2 from 1,449 Booking.com reviews: good value close to the sights."
+		},
+		"Luxury": {
+			"id": 33888,
+			"name": "Alexander House Hotel & Utopia Spa",
+			"area": "Turners Hill",
+			"address": "East Street, Turners Hill",
+			"lat": 51.107166,
+			"lng": -.06889,
+			"url": "https://www.booking.com/hotel/gb/alexander-house-and-utopia-spa.html",
+			"score": 7.8,
+			"count": 470,
+			"stars": 5,
+			"total": 568.39,
+			"checked": "27 Oct 2026",
+			"reason": "The closest well-rated hotel without an airport name, in Turners Hill, rated 7.8 from 470 Booking.com reviews."
+		},
+		"Budget": {
+			"id": 33977,
+			"name": "Reigate Manor Hotel",
+			"area": "Reigate",
+			"address": "Reigate Hill",
+			"lat": 51.249812,
+			"lng": -.202716,
+			"url": "https://www.booking.com/hotel/gb/best-western-reigate-manor.html",
+			"score": 7.7,
+			"count": 950,
+			"stars": 3,
+			"total": 238.82,
+			"checked": "27 Oct 2026",
+			"reason": "The closest well-rated hotel without an airport name, in Reigate, rated 7.7 from 950 Booking.com reviews."
+		}
+	},
+	"new-delhi-india": { "Budget": {
+		"id": 546375,
+		"name": "Hotel Stay Well Dx",
+		"area": "Paharganj",
+		"address": "3499-3500, Desh Bandhu Gupta Road, Pahar Ganj",
+		"lat": 28.644162,
+		"lng": 77.215654,
+		"url": "https://www.booking.com/hotel/in/stay-well-dx.html",
+		"score": 8.8,
+		"count": 622,
+		"stars": 3,
+		"total": 42.74,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Paharganj, rated 8.8 from 622 Booking.com reviews."
+	} },
+	"columbus-united-states": { "Budget": {
+		"id": 184150,
+		"name": "Holiday Inn Columbus Dwtn-Capitol Square by IHG",
+		"area": "Downtown Columbus",
+		"address": "175 East Town Street",
+		"lat": 39.959098,
+		"lng": -82.994806,
+		"url": "https://www.booking.com/hotel/us/holiday-inn-columbus-downtown-capital-square.html",
+		"score": 7.7,
+		"count": 585,
+		"stars": 3,
+		"total": 262.86,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Downtown Columbus, rated 7.7 from 585 Booking.com reviews."
+	} },
+	"accra-ghana": { "Budget": {
+		"id": 16678074,
+		"name": "FLORIA - Sky Suites",
+		"area": "Labone",
+		"address": "Palace Mall",
+		"lat": 5.571351,
+		"lng": -.167309,
+		"url": "https://www.booking.com/hotel/gh/floria-sky-suites.html",
+		"score": 8.5,
+		"count": 27,
+		"stars": 3,
+		"total": 144.48,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Labone, rated 8.5 from 27 Booking.com reviews."
+	} },
+	"salt-lake-city-united-states": {
+		"Budget": {
+			"id": 283488,
+			"name": "SureStay by Best Western Salt Lake City Downtown",
+			"area": "Downtown Salt Lake City",
+			"address": "1009 S Main St",
+			"lat": 40.747105,
+			"lng": -111.890764,
+			"url": "https://www.booking.com/hotel/us/americas-best-inn-and-suites-salt-lake-city.html",
+			"score": 7,
+			"count": 502,
+			"stars": 2,
+			"total": 193.6,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Downtown Salt Lake City, rated 7.0 from 502 Booking.com reviews."
+		},
+		"Best Value": {
+			"id": 907790,
+			"name": "The Anniversary Inn - South Temple",
+			"area": "South Temple",
+			"address": "678 East South Temple",
+			"lat": 40.768961,
+			"lng": -111.871393,
+			"url": "https://www.booking.com/hotel/us/the-anniversary-inn-salt-lake-city.html",
+			"score": 7,
+			"count": 121,
+			"stars": 4,
+			"total": 451.62,
+			"checked": "27 Oct 2026",
+			"reason": "Central South Temple hotel rated 7.0 from 121 Booking.com reviews: good value close to the sights."
+		}
+	},
+	"ta-if-saudi-arabia": {
+		"Best Value": {
+			"id": 312215,
+			"name": "Awaliv Hotel",
+			"area": "Shobra",
+			"address": "Abu Baker As Siddiq Street, Shobra",
+			"lat": 21.286953,
+			"lng": 40.41927,
+			"url": "https://www.booking.com/hotel/sa/awaliv-international.html",
+			"score": 9,
+			"count": 992,
+			"stars": 4,
+			"total": 212.61,
+			"checked": "27 Oct 2026",
+			"reason": "Central Shobra hotel rated 9.0 from 992 Booking.com reviews: good value close to the sights."
+		},
+		"Luxury": {
+			"id": 9774303,
+			"name": "Le Reve Hotel Taif",
+			"area": "Shihar, Taif",
+			"address": "Shihar Road",
+			"lat": 21.248335,
+			"lng": 40.414011,
+			"url": "https://www.booking.com/hotel/sa/le-reve.html",
+			"score": 9.9,
+			"count": 1223,
+			"stars": 4,
+			"total": 310.31,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Shihar, Taif rated 9.9/10 from 1,223 Booking.com reviews."
+		}
+	},
 	"windsor-unitedkingdom": {
 		"Budget": {
 			"id": 6685415,
@@ -12979,7 +13211,7 @@ var overrides_central_2710b = {
 			"area": "Windsor City Centre",
 			"address": "134 Peascod Street",
 			"lat": 51.482494,
-			"lng": -0.60773,
+			"lng": -.60773,
 			"url": "https://www.booking.com/hotel/gb/goswell-house.html",
 			"score": 8.6,
 			"count": 476,
@@ -12987,25 +13219,38 @@ var overrides_central_2710b = {
 			"total": 297.98,
 			"checked": "27 Oct 2026",
 			"reason": "A central budget pick in Windsor City Centre, rated 8.6 from 476 Booking.com reviews."
-		}
-	},
-	"sanford-united-states": {
+		},
 		"Luxury": {
-			"id": 252898,
-			"name": "The Westin Lake Mary, Orlando North",
-			"area": "Lake Mary",
-			"address": "2974 International Parkway",
-			"lat": 28.788446,
-			"lng": -81.358851,
-			"url": "https://www.booking.com/hotel/us/westin-lake-mary.html",
-			"score": 8.1,
-			"count": 184,
+			"id": 200685,
+			"name": "Sir Christopher Wren Hotel",
+			"area": "Windsor City Centre",
+			"address": "Thames Street",
+			"lat": 51.485328,
+			"lng": -.607974,
+			"url": "https://www.booking.com/hotel/gb/scw.html",
+			"score": 8.4,
+			"count": 1828,
 			"stars": 4,
-			"total": 364.07,
+			"total": 481.93,
 			"checked": "27 Oct 2026",
-			"reason": "The closest well-rated hotel without an airport name, in Lake Mary, rated 8.1 from 184 Booking.com reviews."
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Windsor City Centre rated 8.4/10 from 1,828 Booking.com reviews."
 		}
 	},
+	"sanford-united-states": { "Luxury": {
+		"id": 252898,
+		"name": "The Westin Lake Mary, Orlando North",
+		"area": "Lake Mary",
+		"address": "2974 International Parkway",
+		"lat": 28.788446,
+		"lng": -81.358851,
+		"url": "https://www.booking.com/hotel/us/westin-lake-mary.html",
+		"score": 8.1,
+		"count": 184,
+		"stars": 4,
+		"total": 364.07,
+		"checked": "27 Oct 2026",
+		"reason": "The closest well-rated hotel without an airport name, in Lake Mary, rated 8.1 from 184 Booking.com reviews."
+	} },
 	"slough-unitedkingdom": {
 		"Budget": {
 			"id": 200701,
@@ -13013,7 +13258,7 @@ var overrides_central_2710b = {
 			"area": "Slough",
 			"address": "Cippenham Lane",
 			"lat": 51.508937,
-			"lng": -0.614256,
+			"lng": -.614256,
 			"url": "https://www.booking.com/hotel/gb/copthornewindsor.html",
 			"score": 7.9,
 			"count": 3247,
@@ -13021,6 +13266,21 @@ var overrides_central_2710b = {
 			"total": 161.4,
 			"checked": "27 Oct 2026",
 			"reason": "A central budget pick in Slough, rated 7.9 from 3,247 Booking.com reviews."
+		},
+		"Luxury": {
+			"id": 108913,
+			"name": "Holiday Inn Slough Windsor by IHG",
+			"area": "Slough centre",
+			"address": "1 Church Street, Chalvey",
+			"lat": 51.507841,
+			"lng": -.61119,
+			"url": "https://www.booking.com/hotel/gb/courtyard.html",
+			"score": 7.8,
+			"count": 3392,
+			"stars": 4,
+			"total": 213.74,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Slough centre rated 7.8/10 from 3,392 Booking.com reviews."
 		}
 	},
 	"cedar-rapids-united-states": {
@@ -13055,38 +13315,6 @@ var overrides_central_2710b = {
 			"reason": "Central Northeast Cedar Rapids hotel rated 8.2 from 100 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"luton-unitedkingdom": {
-		"Budget": {
-			"id": 220889,
-			"name": "Thistle Express London Luton",
-			"area": "Luton Town Centre",
-			"address": "The Mall",
-			"lat": 51.879432,
-			"lng": -0.414616,
-			"url": "https://www.booking.com/hotel/gb/thistleluton.html",
-			"score": 7.8,
-			"count": 7010,
-			"stars": 3,
-			"total": 161.2,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Luton Town Centre, rated 7.8 from 7,010 Booking.com reviews."
-		},
-		"Luxury": {
-			"id": 8712797,
-			"name": "Spark by Hilton Luton",
-			"area": "Luton Town Centre",
-			"address": "2/4 Mill Street",
-			"lat": 51.88262,
-			"lng": -0.417606,
-			"url": "https://www.booking.com/hotel/gb/sadie-best-western-at-luton.html",
-			"score": 8.4,
-			"count": 1747,
-			"stars": 4,
-			"total": 217.29,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Luton Town Centre rated 8.4/10 from 1,747 Booking.com reviews."
-		}
-	},
 	"namur-belgium": {
 		"Luxury": {
 			"id": 307315,
@@ -13102,25 +13330,38 @@ var overrides_central_2710b = {
 			"total": 278.9,
 			"checked": "27 Oct 2026",
 			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Namur Old Town rated 8.6/10 from 2,007 Booking.com reviews."
-		}
-	},
-	"cochabamba-bolivia": {
+		},
 		"Best Value": {
-			"id": 11325426,
-			"name": "Hotel Aranjuez Cochabamba",
-			"area": "Cochabamba",
-			"address": "563 Buenos Aires",
-			"lat": -17.374008,
-			"lng": -66.154396,
-			"url": "https://www.booking.com/hotel/bo/aranjuez-cochabamba.html",
-			"score": 8.4,
-			"count": 31,
-			"stars": 4,
-			"total": 161.03,
+			"id": 20171,
+			"name": "Ibis Namur Centre",
+			"area": "Namur centre",
+			"address": "Rue du Premier Lanciers 10",
+			"lat": 50.466335,
+			"lng": 4.871066,
+			"url": "https://www.booking.com/hotel/be/ibisnamur.html",
+			"score": 8.1,
+			"count": 1823,
+			"stars": 3,
+			"total": 204.08,
 			"checked": "27 Oct 2026",
-			"reason": "Central Cochabamba hotel rated 8.4 from 31 Booking.com reviews: good value close to the sights."
+			"reason": "Central Namur centre hotel rated 8.1 from 1,823 Booking.com reviews: good value close to the sights."
 		}
 	},
+	"cochabamba-bolivia": { "Best Value": {
+		"id": 11325426,
+		"name": "Hotel Aranjuez Cochabamba",
+		"area": "Cochabamba",
+		"address": "563 Buenos Aires",
+		"lat": -17.374008,
+		"lng": -66.154396,
+		"url": "https://www.booking.com/hotel/bo/aranjuez-cochabamba.html",
+		"score": 8.4,
+		"count": 31,
+		"stars": 4,
+		"total": 161.03,
+		"checked": "27 Oct 2026",
+		"reason": "Central Cochabamba hotel rated 8.4 from 31 Booking.com reviews: good value close to the sights."
+	} },
 	"salvador-brazil": {
 		"Luxury": {
 			"id": 1940259,
@@ -13130,150 +13371,119 @@ var overrides_central_2710b = {
 			"lat": -12.975692,
 			"lng": -38.513394,
 			"url": "https://www.booking.com/hotel/br/fera-palace.html",
-			"score": 9.0,
+			"score": 9,
 			"count": 659,
 			"stars": 5,
 			"total": 735.55,
 			"checked": "27 Oct 2026",
 			"reason": "A 5-star hotel in Historic Centre Salvador, rated 9.0 from 659 Booking.com reviews."
-		}
-	},
-	"hamilton-canada": {
+		},
 		"Budget": {
-			"id": 410506,
-			"name": "Staybridge Suites Hamilton - Downtown by IHG",
-			"area": "Downtown Hamilton",
-			"address": "20 Caroline Street South",
-			"lat": 43.257911,
-			"lng": -79.876171,
-			"url": "https://www.booking.com/hotel/ca/staybridge-suites-hamilton-downtown.html",
-			"score": 8.0,
-			"count": 491,
-			"stars": 3,
-			"total": 236.82,
+			"id": 1523673,
+			"name": "Aquarena Hotel",
+			"area": "Salvador",
+			"address": "Rua Rodolfo Pimentel, 241",
+			"lat": -12.98176,
+			"lng": -38.495933,
+			"url": "https://www.booking.com/hotel/br/aquarena-suites-salvador.html",
+			"score": 8.3,
+			"count": 1603,
+			"stars": 2,
+			"total": 95.67,
 			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Hamilton, rated 8.0 from 491 Booking.com reviews."
+			"reason": "A central budget pick in Salvador, rated 8.3 from 1,603 Booking.com reviews."
 		}
 	},
-	"shenzhen-china": {
-		"Budget": {
-			"id": 12465143,
-			"name": "Shenzhen Jiangsu Hotel",
-			"area": "Futian",
-			"address": "2066 Caitian South Road, Futian",
-			"lat": 22.54446,
-			"lng": 114.068997,
-			"url": "https://www.booking.com/hotel/cn/shen-zhen-jiang-su-bin-guan.html",
-			"score": 8.5,
-			"count": 40,
-			"stars": 3,
-			"total": 125.58,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Futian, rated 8.5 from 40 Booking.com reviews."
-		}
-	},
-	"osijek-croatia": {
-		"Luxury": {
-			"id": 20789,
-			"name": "Hotel Waldinger",
-			"area": "Osijek Centre",
-			"address": "Zupanijska 8",
-			"lat": 45.558718,
-			"lng": 18.675948,
-			"url": "https://www.booking.com/hotel/hr/waldinger.html",
-			"score": 9.2,
-			"count": 398,
-			"stars": 4,
-			"total": 332.8,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Osijek Centre rated 9.2/10 from 398 Booking.com reviews."
-		}
-	},
-	"hurghada-egypt": {
-		"Luxury": {
-			"id": 379692,
-			"name": "Sea Star Beau Rivage Hotel",
-			"area": "Dahar",
-			"address": "Al Hilal - Military Hospital Street",
-			"lat": 27.265616,
-			"lng": 33.804409,
-			"url": "https://www.booking.com/hotel/eg/sea-star-beau-rivage.html",
-			"score": 8.0,
-			"count": 230,
-			"stars": 5,
-			"total": 258.11,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Dahar, rated 8.0 from 230 Booking.com reviews."
-		}
-	},
-	"narbonne-france": {
-		"Luxury": {
-			"id": 3679500,
-			"name": "Hôtel Le C - Boutique Hôtel",
-			"area": "Narbonne Centre",
-			"address": "15 Rue de Suffren",
-			"lat": 43.184197,
-			"lng": 3.010169,
-			"url": "https://www.booking.com/hotel/fr/le-c-boutique-narbonne.html",
-			"score": 8.8,
-			"count": 607,
-			"stars": 4,
-			"total": 263.24,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Narbonne Centre rated 8.8/10 from 607 Booking.com reviews."
-		}
-	},
-	"erfurt-germany": {
-		"Best Value": {
-			"id": 61323,
-			"name": "Hotel Alma Am Anger",
-			"area": "Erfurt Old Town",
-			"address": "Anger 50/51",
-			"lat": 50.975009,
-			"lng": 11.031769,
-			"url": "https://www.booking.com/hotel/de/erfuzumnordhotel.html",
-			"score": 8.5,
-			"count": 3211,
-			"stars": 4,
-			"total": 306.65,
-			"checked": "27 Oct 2026",
-			"reason": "Central Erfurt Old Town hotel rated 8.5 from 3,211 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"essen-germany": {
-		"Luxury": {
-			"id": 3256579,
-			"name": "NH Essen",
-			"area": "Stadtkern",
-			"address": "Am Porscheplatz 9",
-			"lat": 51.458189,
-			"lng": 7.014051,
-			"url": "https://www.booking.com/hotel/de/nh-essen-essen12.html",
-			"score": 8.6,
-			"count": 3015,
-			"stars": 4,
-			"total": 291.9,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Stadtkern rated 8.6/10 from 3,015 Booking.com reviews."
-		}
-	},
-	"chandigarh-india": {
-		"Budget": {
-			"id": 804216,
-			"name": "Hotel Icon",
-			"area": "Sector 8",
-			"address": "SCO 58-61, Sector 8C",
-			"lat": 30.734113,
-			"lng": 76.797215,
-			"url": "https://www.booking.com/hotel/in/icon.html",
-			"score": 7.8,
-			"count": 250,
-			"stars": 3,
-			"total": 110.13,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Sector 8, rated 7.8 from 250 Booking.com reviews."
-		}
-	},
+	"hamilton-canada": { "Budget": {
+		"id": 410506,
+		"name": "Staybridge Suites Hamilton - Downtown by IHG",
+		"area": "Downtown Hamilton",
+		"address": "20 Caroline Street South",
+		"lat": 43.257911,
+		"lng": -79.876171,
+		"url": "https://www.booking.com/hotel/ca/staybridge-suites-hamilton-downtown.html",
+		"score": 8,
+		"count": 491,
+		"stars": 3,
+		"total": 236.82,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Downtown Hamilton, rated 8.0 from 491 Booking.com reviews."
+	} },
+	"shenzhen-china": { "Budget": {
+		"id": 12465143,
+		"name": "Shenzhen Jiangsu Hotel",
+		"area": "Futian",
+		"address": "2066 Caitian South Road, Futian",
+		"lat": 22.54446,
+		"lng": 114.068997,
+		"url": "https://www.booking.com/hotel/cn/shen-zhen-jiang-su-bin-guan.html",
+		"score": 8.5,
+		"count": 40,
+		"stars": 3,
+		"total": 125.58,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Futian, rated 8.5 from 40 Booking.com reviews."
+	} },
+	"narbonne-france": { "Luxury": {
+		"id": 3679500,
+		"name": "Hôtel Le C - Boutique Hôtel",
+		"area": "Narbonne Centre",
+		"address": "15 Rue de Suffren",
+		"lat": 43.184197,
+		"lng": 3.010169,
+		"url": "https://www.booking.com/hotel/fr/le-c-boutique-narbonne.html",
+		"score": 8.8,
+		"count": 607,
+		"stars": 4,
+		"total": 263.24,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Narbonne Centre rated 8.8/10 from 607 Booking.com reviews."
+	} },
+	"erfurt-germany": { "Best Value": {
+		"id": 61323,
+		"name": "Hotel Alma Am Anger",
+		"area": "Erfurt Old Town",
+		"address": "Anger 50/51",
+		"lat": 50.975009,
+		"lng": 11.031769,
+		"url": "https://www.booking.com/hotel/de/erfuzumnordhotel.html",
+		"score": 8.5,
+		"count": 3211,
+		"stars": 4,
+		"total": 306.65,
+		"checked": "27 Oct 2026",
+		"reason": "Central Erfurt Old Town hotel rated 8.5 from 3,211 Booking.com reviews: good value close to the sights."
+	} },
+	"essen-germany": { "Luxury": {
+		"id": 3256579,
+		"name": "NH Essen",
+		"area": "Stadtkern",
+		"address": "Am Porscheplatz 9",
+		"lat": 51.458189,
+		"lng": 7.014051,
+		"url": "https://www.booking.com/hotel/de/nh-essen-essen12.html",
+		"score": 8.6,
+		"count": 3015,
+		"stars": 4,
+		"total": 291.9,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Stadtkern rated 8.6/10 from 3,015 Booking.com reviews."
+	} },
+	"chandigarh-india": { "Budget": {
+		"id": 804216,
+		"name": "Hotel Icon",
+		"area": "Sector 8",
+		"address": "SCO 58-61, Sector 8C",
+		"lat": 30.734113,
+		"lng": 76.797215,
+		"url": "https://www.booking.com/hotel/in/icon.html",
+		"score": 7.8,
+		"count": 250,
+		"stars": 3,
+		"total": 110.13,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Sector 8, rated 7.8 from 250 Booking.com reviews."
+	} },
 	"banyuwangi-indonesia": {
 		"Budget": {
 			"id": 1310599,
@@ -13313,7 +13523,7 @@ var overrides_central_2710b = {
 			"lat": -8.219769,
 			"lng": 114.352788,
 			"url": "https://www.booking.com/hotel/id/aston-banyuwangi-city.html",
-			"score": 8.0,
+			"score": 8,
 			"count": 201,
 			"stars": 4,
 			"total": 119.99,
@@ -13321,57 +13531,36 @@ var overrides_central_2710b = {
 			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Giri rated 8.0/10 from 201 Booking.com reviews."
 		}
 	},
-	"bogor-indonesia": {
-		"Luxury": {
-			"id": 6810833,
-			"name": "Swiss-Belinn Bogor",
-			"area": "Bogor Timur",
-			"address": "Jalan Pajajaran Indah V",
-			"lat": -6.611101,
-			"lng": 106.814593,
-			"url": "https://www.booking.com/hotel/id/swiss-belinn-bogor.html",
-			"score": 8.4,
-			"count": 106,
-			"stars": 4,
-			"total": 94.83,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Bogor Timur rated 8.4/10 from 106 Booking.com reviews."
-		}
-	},
-	"ancona-italy": {
-		"Best Value": {
-			"id": 84473,
-			"name": "Grand Hotel Passetto",
-			"area": "Passetto",
-			"address": "Via Thaon De Revel 1",
-			"lat": 43.613899,
-			"lng": 13.534616,
-			"url": "https://www.booking.com/hotel/it/grand-passetto.html",
-			"score": 8.8,
-			"count": 967,
-			"stars": 4,
-			"total": 316.0,
-			"checked": "27 Oct 2026",
-			"reason": "Central Passetto hotel rated 8.8 from 967 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"benevento-italy": {
-		"Budget": {
-			"id": 4797664,
-			"name": "Albergo Della Corte",
-			"area": "Benevento Centre",
-			"address": "Vico Papa Vittorio III 7",
-			"lat": 41.131624,
-			"lng": 14.781024,
-			"url": "https://www.booking.com/hotel/it/albergo-della-corte-benevento1.html",
-			"score": 7.9,
-			"count": 489,
-			"stars": 3,
-			"total": 170.0,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Benevento Centre, rated 7.9 from 489 Booking.com reviews."
-		}
-	},
+	"ancona-italy": { "Best Value": {
+		"id": 84473,
+		"name": "Grand Hotel Passetto",
+		"area": "Passetto",
+		"address": "Via Thaon De Revel 1",
+		"lat": 43.613899,
+		"lng": 13.534616,
+		"url": "https://www.booking.com/hotel/it/grand-passetto.html",
+		"score": 8.8,
+		"count": 967,
+		"stars": 4,
+		"total": 316,
+		"checked": "27 Oct 2026",
+		"reason": "Central Passetto hotel rated 8.8 from 967 Booking.com reviews: good value close to the sights."
+	} },
+	"benevento-italy": { "Budget": {
+		"id": 4797664,
+		"name": "Albergo Della Corte",
+		"area": "Benevento Centre",
+		"address": "Vico Papa Vittorio III 7",
+		"lat": 41.131624,
+		"lng": 14.781024,
+		"url": "https://www.booking.com/hotel/it/albergo-della-corte-benevento1.html",
+		"score": 7.9,
+		"count": 489,
+		"stars": 3,
+		"total": 170,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Benevento Centre, rated 7.9 from 489 Booking.com reviews."
+	} },
 	"lamezia-terme-italy": {
 		"Best Value": {
 			"id": 12494,
@@ -13384,7 +13573,7 @@ var overrides_central_2710b = {
 			"score": 8.1,
 			"count": 309,
 			"stars": 4,
-			"total": 180.0,
+			"total": 180,
 			"checked": "27 Oct 2026",
 			"reason": "Central Sambiase hotel rated 8.1 from 309 Booking.com reviews: good value close to the sights."
 		},
@@ -13396,48 +13585,29 @@ var overrides_central_2710b = {
 			"lat": 38.972497,
 			"lng": 16.315784,
 			"url": "https://www.booking.com/hotel/it/savant.html",
-			"score": 8.0,
+			"score": 8,
 			"count": 133,
 			"stars": 4,
-			"total": 220.0,
+			"total": 220,
 			"checked": "27 Oct 2026",
 			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Nicastro rated 8.0/10 from 133 Booking.com reviews."
 		}
 	},
-	"latina-italy": {
-		"Budget": {
-			"id": 567307,
-			"name": "Garden Hotel",
-			"area": "Latina",
-			"address": "Via Del Lido 129",
-			"lat": 41.448645,
-			"lng": 12.890028,
-			"url": "https://www.booking.com/hotel/it/garden-latina1.html",
-			"score": 7.2,
-			"count": 501,
-			"stars": 3,
-			"total": 196.2,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Latina, rated 7.2 from 501 Booking.com reviews."
-		}
-	},
-	"taranto-italy": {
-		"Luxury": {
-			"id": 332045,
-			"name": "Hotel Europa",
-			"area": "Taranto Old Town",
-			"address": "Via Roma 2",
-			"lat": 40.47474,
-			"lng": 17.236865,
-			"url": "https://www.booking.com/hotel/it/europa-taranto.html",
-			"score": 9.1,
-			"count": 1547,
-			"stars": 4,
-			"total": 246.0,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Taranto Old Town rated 9.1/10 from 1,547 Booking.com reviews."
-		}
-	},
+	"latina-italy": { "Budget": {
+		"id": 567307,
+		"name": "Garden Hotel",
+		"area": "Latina",
+		"address": "Via Del Lido 129",
+		"lat": 41.448645,
+		"lng": 12.890028,
+		"url": "https://www.booking.com/hotel/it/garden-latina1.html",
+		"score": 7.2,
+		"count": 501,
+		"stars": 3,
+		"total": 196.2,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Latina, rated 7.2 from 501 Booking.com reviews."
+	} },
 	"abidjan-ivory-coast": {
 		"Luxury": {
 			"id": 6958197,
@@ -13485,25 +13655,38 @@ var overrides_central_2710b = {
 			"total": 469.99,
 			"checked": "27 Oct 2026",
 			"reason": "A 5-star hotel in Bostandyk, rated 8.9 from 911 Booking.com reviews."
-		}
-	},
-	"mombasa-kenya": {
-		"Luxury": {
-			"id": 1137024,
-			"name": "Bahari Beach Hotel",
-			"area": "Nyali",
-			"address": "Mt Kenya Road, Nyali Beach",
-			"lat": -4.035322,
-			"lng": 39.71813,
-			"url": "https://www.booking.com/hotel/ke/bahari-beach.html",
-			"score": 8.4,
-			"count": 466,
+		},
+		"Best Value": {
+			"id": 2501211,
+			"name": "Plaza Hotel Almaty",
+			"area": "Almaty centre",
+			"address": "Kozhamkulov Street 215/120",
+			"lat": 43.249356,
+			"lng": 76.916985,
+			"url": "https://www.booking.com/hotel/kz/the-plaza-almaty.html",
+			"score": 8.2,
+			"count": 426,
 			"stars": 4,
-			"total": 501.43,
+			"total": 252.55,
 			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Nyali rated 8.4/10 from 466 Booking.com reviews."
+			"reason": "Central Almaty centre hotel rated 8.2 from 426 Booking.com reviews: good value close to the sights."
 		}
 	},
+	"mombasa-kenya": { "Luxury": {
+		"id": 1137024,
+		"name": "Bahari Beach Hotel",
+		"area": "Nyali",
+		"address": "Mt Kenya Road, Nyali Beach",
+		"lat": -4.035322,
+		"lng": 39.71813,
+		"url": "https://www.booking.com/hotel/ke/bahari-beach.html",
+		"score": 8.4,
+		"count": 466,
+		"stars": 4,
+		"total": 501.43,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Nyali rated 8.4/10 from 466 Booking.com reviews."
+	} },
 	"cancun-mexico": {
 		"Best Value": {
 			"id": 78143,
@@ -13536,74 +13719,66 @@ var overrides_central_2710b = {
 			"reason": "A 5-star hotel in Zona Hotelera (north), rated 8.8 from 3,407 Booking.com reviews."
 		}
 	},
-	"swakopmund-namibia": {
-		"Luxury": {
-			"id": 628048,
-			"name": "Hansa Hotel Swakopmund",
-			"area": "Swakopmund Centre",
-			"address": "3 Hendrik Witbooi Street",
-			"lat": -22.677085,
-			"lng": 14.5262,
-			"url": "https://www.booking.com/hotel/na/hansa-swakopmund.html",
-			"score": 9.0,
-			"count": 472,
-			"stars": 4,
-			"total": 322.72,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Swakopmund Centre rated 9.0/10 from 472 Booking.com reviews."
-		}
-	},
-	"lagos-nigeria": {
-		"Budget": {
-			"id": 12149479,
-			"name": "Presken Kuramo Waters, Victoria Island",
-			"area": "Victoria Island",
-			"address": "322a Akin Ogunlewe Road",
-			"lat": 6.425768,
-			"lng": 3.435874,
-			"url": "https://www.booking.com/hotel/ng/presken-kuramo-waters-lagos.html",
-			"score": 7.8,
-			"count": 245,
-			"stars": 3,
-			"total": 125.6,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Victoria Island, rated 7.8 from 245 Booking.com reviews."
-		}
-	},
-	"krynica-zdroj-poland": {
-		"Budget": {
-			"id": 256614,
-			"name": "Hotel NAT Krynica Zdrój",
-			"area": "Krynica Zdrój Centre",
-			"address": "Ul. Pilsudskiego 24",
-			"lat": 49.425143,
-			"lng": 20.956485,
-			"url": "https://www.booking.com/hotel/pl/dwl-jagiellonka.html",
-			"score": 8.6,
-			"count": 463,
-			"stars": 3,
-			"total": 137.93,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Krynica Zdrój Centre, rated 8.6 from 463 Booking.com reviews."
-		}
-	},
-	"braganca-portugal": {
-		"Luxury": {
-			"id": 264854,
-			"name": "Hotel Estalagem Turismo",
-			"area": "Braganca",
-			"address": "Cabeca Boa, Estrada De Turismo",
-			"lat": 41.788115,
-			"lng": -6.755613,
-			"url": "https://www.booking.com/hotel/pt/estalagem-turismo.html",
-			"score": 8.1,
-			"count": 1341,
-			"stars": 4,
-			"total": 140.0,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Braganca rated 8.1/10 from 1,341 Booking.com reviews."
-		}
-	},
+	"swakopmund-namibia": { "Luxury": {
+		"id": 628048,
+		"name": "Hansa Hotel Swakopmund",
+		"area": "Swakopmund Centre",
+		"address": "3 Hendrik Witbooi Street",
+		"lat": -22.677085,
+		"lng": 14.5262,
+		"url": "https://www.booking.com/hotel/na/hansa-swakopmund.html",
+		"score": 9,
+		"count": 472,
+		"stars": 4,
+		"total": 322.72,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Swakopmund Centre rated 9.0/10 from 472 Booking.com reviews."
+	} },
+	"lagos-nigeria": { "Budget": {
+		"id": 12149479,
+		"name": "Presken Kuramo Waters, Victoria Island",
+		"area": "Victoria Island",
+		"address": "322a Akin Ogunlewe Road",
+		"lat": 6.425768,
+		"lng": 3.435874,
+		"url": "https://www.booking.com/hotel/ng/presken-kuramo-waters-lagos.html",
+		"score": 7.8,
+		"count": 245,
+		"stars": 3,
+		"total": 125.6,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Victoria Island, rated 7.8 from 245 Booking.com reviews."
+	} },
+	"krynica-zdroj-poland": { "Budget": {
+		"id": 256614,
+		"name": "Hotel NAT Krynica Zdrój",
+		"area": "Krynica Zdrój Centre",
+		"address": "Ul. Pilsudskiego 24",
+		"lat": 49.425143,
+		"lng": 20.956485,
+		"url": "https://www.booking.com/hotel/pl/dwl-jagiellonka.html",
+		"score": 8.6,
+		"count": 463,
+		"stars": 3,
+		"total": 137.93,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Krynica Zdrój Centre, rated 8.6 from 463 Booking.com reviews."
+	} },
+	"braganca-portugal": { "Luxury": {
+		"id": 264854,
+		"name": "Hotel Estalagem Turismo",
+		"area": "Braganca",
+		"address": "Cabeca Boa, Estrada De Turismo",
+		"lat": 41.788115,
+		"lng": -6.755613,
+		"url": "https://www.booking.com/hotel/pt/estalagem-turismo.html",
+		"score": 8.1,
+		"count": 1341,
+		"stars": 4,
+		"total": 140,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Braganca rated 8.1/10 from 1,341 Booking.com reviews."
+	} },
 	"jeddah-saudiarabia": {
 		"Budget": {
 			"id": 8349726,
@@ -13636,74 +13811,36 @@ var overrides_central_2710b = {
 			"reason": "Central Al Rawda hotel rated 9.1 from 2,107 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"busan-southkorea": {
-		"Best Value": {
-			"id": 5129061,
-			"name": "Avani Central Busan",
-			"area": "Seomyeon",
-			"address": "133 Jeonpo-daero, Nam-gu",
-			"lat": 35.148606,
-			"lng": 129.065627,
-			"url": "https://www.booking.com/hotel/kr/avani-central-busan.html",
-			"score": 8.7,
-			"count": 888,
-			"stars": 4,
-			"total": 249.97,
-			"checked": "27 Oct 2026",
-			"reason": "Central Seomyeon hotel rated 8.7 from 888 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"lleida-spain": {
-		"Luxury": {
-			"id": 90710,
-			"name": "NH Lleida Pirineos",
-			"area": "Lleida Centre",
-			"address": "Passeig de Ronda 63",
-			"lat": 41.617083,
-			"lng": 0.613266,
-			"url": "https://www.booking.com/hotel/es/nhpirineos.html",
-			"score": 8.5,
-			"count": 2644,
-			"stars": 4,
-			"total": 189.92,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Lleida Centre rated 8.5/10 from 2,644 Booking.com reviews."
-		}
-	},
-	"dar-es-salaam-tanzania": {
-		"Budget": {
-			"id": 569734,
-			"name": "Tiffany Diamond Hotels Ltd - Indira Gandhi street",
-			"area": "Kisutu",
-			"address": "Indira Gandhi / Morogoro Road Junction",
-			"lat": -6.818325,
-			"lng": 39.28442,
-			"url": "https://www.booking.com/hotel/tz/tiffany-diamond.html",
-			"score": 8.1,
-			"count": 319,
-			"stars": 3,
-			"total": 169.08,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Kisutu, rated 8.1 from 319 Booking.com reviews."
-		}
-	},
-	"denizli-turkiye": {
-		"Luxury": {
-			"id": 328105,
-			"name": "North Point Hotel",
-			"area": "Denizli Centre",
-			"address": "Fevzi Cakmak Bulvari No:129",
-			"lat": 37.766049,
-			"lng": 29.100279,
-			"url": "https://www.booking.com/hotel/tr/north-point-denizli.html",
-			"score": 8.5,
-			"count": 86,
-			"stars": 4,
-			"total": 184.94,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Denizli Centre rated 8.5/10 from 86 Booking.com reviews."
-		}
-	},
+	"lleida-spain": { "Luxury": {
+		"id": 90710,
+		"name": "NH Lleida Pirineos",
+		"area": "Lleida Centre",
+		"address": "Passeig de Ronda 63",
+		"lat": 41.617083,
+		"lng": .613266,
+		"url": "https://www.booking.com/hotel/es/nhpirineos.html",
+		"score": 8.5,
+		"count": 2644,
+		"stars": 4,
+		"total": 189.92,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Lleida Centre rated 8.5/10 from 2,644 Booking.com reviews."
+	} },
+	"denizli-turkiye": { "Luxury": {
+		"id": 328105,
+		"name": "North Point Hotel",
+		"area": "Denizli Centre",
+		"address": "Fevzi Cakmak Bulvari No:129",
+		"lat": 37.766049,
+		"lng": 29.100279,
+		"url": "https://www.booking.com/hotel/tr/north-point-denizli.html",
+		"score": 8.5,
+		"count": 86,
+		"stars": 4,
+		"total": 184.94,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Denizli Centre rated 8.5/10 from 86 Booking.com reviews."
+	} },
 	"trabzon-turkiye": {
 		"Best Value": {
 			"id": 1630673,
@@ -13719,6 +13856,21 @@ var overrides_central_2710b = {
 			"total": 136.99,
 			"checked": "27 Oct 2026",
 			"reason": "Central Trabzon City Center hotel rated 8.8 from 1,042 Booking.com reviews: good value close to the sights."
+		},
+		"Budget": {
+			"id": 3588192,
+			"name": "Life Point Hotel",
+			"area": "Trabzon City Center",
+			"address": "Kemerkaya Mahallesi Halkevi Caddesi No:27",
+			"lat": 41.007035,
+			"lng": 39.727777,
+			"url": "https://www.booking.com/hotel/tr/life-point-trabzon-ili1.html",
+			"score": 8.3,
+			"count": 372,
+			"stars": 3,
+			"total": 188.1,
+			"checked": "27 Oct 2026",
+			"reason": "A central budget pick in Trabzon City Center, rated 8.3 from 372 Booking.com reviews."
 		}
 	},
 	"abu-dhabi-unitedarabemirates": {
@@ -13760,9 +13912,9 @@ var overrides_central_2710b = {
 			"area": "Weavering, Maidstone",
 			"address": "Bearsted Road, Weavering",
 			"lat": 51.285125,
-			"lng": 0.546114,
+			"lng": .546114,
 			"url": "https://www.booking.com/hotel/gb/hilton-maidstone.html",
-			"score": 8.0,
+			"score": 8,
 			"count": 5096,
 			"stars": 4,
 			"total": 271.89,
@@ -13775,9 +13927,9 @@ var overrides_central_2710b = {
 			"area": "Maidstone",
 			"address": "Sandling Road",
 			"lat": 51.279949,
-			"lng": 0.519793,
+			"lng": .519793,
 			"url": "https://www.booking.com/hotel/gb/innkeeper-s-lodge-maidstone.html",
-			"score": 8.0,
+			"score": 8,
 			"count": 1232,
 			"stars": 4,
 			"total": 334.34,
@@ -13785,140 +13937,96 @@ var overrides_central_2710b = {
 			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Maidstone rated 8.0/10 from 1,232 Booking.com reviews."
 		}
 	},
-	"norwich-united-kingdom": {
-		"Luxury": {
-			"id": 35715,
-			"name": "Holiday Inn Norwich, Ipswich Road by IHG",
-			"area": "Norwich",
-			"address": "Ipswich Road",
-			"lat": 52.600884,
-			"lng": 1.28098,
-			"url": "https://www.booking.com/hotel/gb/holiday-inn-norwich.html",
-			"score": 8.1,
-			"count": 1516,
-			"stars": 4,
-			"total": 339.12,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Norwich rated 8.1/10 from 1,516 Booking.com reviews."
-		}
-	},
-	"peterborough-unitedkingdom": {
-		"Luxury": {
-			"id": 222855,
-			"name": "The Bull Hotel; Sure Hotel Collection by Best Western",
-			"area": "Peterborough City Centre",
-			"address": "Westgate",
-			"lat": 52.574544,
-			"lng": -0.241957,
-			"url": "https://www.booking.com/hotel/gb/the-bullhotel.html",
-			"score": 8.4,
-			"count": 2405,
-			"stars": 4,
-			"total": 270.82,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Peterborough City Centre rated 8.4/10 from 2,405 Booking.com reviews."
-		}
-	},
-	"southampton-united-kingdom": {
-		"Budget": {
-			"id": 177869,
-			"name": "The Elizabeth House Hotel",
-			"area": "Southampton",
-			"address": "42-44 The Avenue",
-			"lat": 50.919339,
-			"lng": -1.403879,
-			"url": "https://www.booking.com/hotel/gb/the-elizabeth-house.html",
-			"score": 8.1,
-			"count": 2920,
-			"stars": 3,
-			"total": 214.94,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Southampton, rated 8.1 from 2,920 Booking.com reviews."
-		}
-	},
-	"doncaster-united-kingdom": {
-		"Budget": {
-			"id": 34495,
-			"name": "Regent Hotel Doncaster",
-			"area": "Doncaster Centre",
-			"address": "Regent Square",
-			"lat": 53.521831,
-			"lng": -1.127193,
-			"url": "https://www.booking.com/hotel/gb/regent-doncaster.html",
-			"score": 7.4,
-			"count": 559,
-			"stars": 3,
-			"total": 226.88,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Doncaster Centre, rated 7.4 from 559 Booking.com reviews."
-		}
-	},
-	"akron-united-states": {
-		"Budget": {
-			"id": 1181735,
-			"name": "Hilton Garden Inn Akron",
-			"area": "East Akron",
-			"address": "1307 East Market Street",
-			"lat": 41.064962,
-			"lng": -81.480215,
-			"url": "https://www.booking.com/hotel/us/hilton-garden-inn-akron.html",
-			"score": 8.3,
-			"count": 291,
-			"stars": 3,
-			"total": 400.92,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in East Akron, rated 8.3 from 291 Booking.com reviews."
-		},
-		"Luxury": {
-			"id": 5657933,
-			"name": "BLU-Tique, Akron, a Tribute Portfolio Hotel",
-			"area": "Downtown Akron",
-			"address": "1 S. Main Street",
-			"lat": 41.084908,
-			"lng": -81.516613,
-			"url": "https://www.booking.com/hotel/us/innquest-roommaster.html",
-			"score": 8.5,
-			"count": 58,
-			"stars": 4,
-			"total": 429.01,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Akron rated 8.5/10 from 58 Booking.com reviews."
-		}
-	},
-	"atlanta-united-states": {
-		"Budget": {
-			"id": 28533,
-			"name": "Hampton Inn Atlanta-Georgia Tech-Downtown",
-			"area": "Downtown Atlanta",
-			"address": "244 North Avenue Northwest",
-			"lat": 33.770956,
-			"lng": -84.395728,
-			"url": "https://www.booking.com/hotel/us/hampton-inn-tech-downtown.html",
-			"score": 8.3,
-			"count": 432,
-			"stars": 3,
-			"total": 378.08,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Atlanta, rated 8.3 from 432 Booking.com reviews."
-		}
-	},
-	"bossier-city-united-states": {
-		"Luxury": {
-			"id": 183954,
-			"name": "Hilton Shreveport",
-			"area": "Downtown Shreveport",
-			"address": "104 Market Street, Shreveport",
-			"lat": 32.51747,
-			"lng": -93.751103,
-			"url": "https://www.booking.com/hotel/us/hilton-shreveport.html",
-			"score": 8.3,
-			"count": 284,
-			"stars": 4,
-			"total": 282.31,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Shreveport rated 8.3/10 from 284 Booking.com reviews."
-		}
-	},
+	"norwich-united-kingdom": { "Luxury": {
+		"id": 35715,
+		"name": "Holiday Inn Norwich, Ipswich Road by IHG",
+		"area": "Norwich",
+		"address": "Ipswich Road",
+		"lat": 52.600884,
+		"lng": 1.28098,
+		"url": "https://www.booking.com/hotel/gb/holiday-inn-norwich.html",
+		"score": 8.1,
+		"count": 1516,
+		"stars": 4,
+		"total": 339.12,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Norwich rated 8.1/10 from 1,516 Booking.com reviews."
+	} },
+	"peterborough-unitedkingdom": { "Luxury": {
+		"id": 222855,
+		"name": "The Bull Hotel; Sure Hotel Collection by Best Western",
+		"area": "Peterborough City Centre",
+		"address": "Westgate",
+		"lat": 52.574544,
+		"lng": -.241957,
+		"url": "https://www.booking.com/hotel/gb/the-bullhotel.html",
+		"score": 8.4,
+		"count": 2405,
+		"stars": 4,
+		"total": 270.82,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Peterborough City Centre rated 8.4/10 from 2,405 Booking.com reviews."
+	} },
+	"southampton-united-kingdom": { "Budget": {
+		"id": 177869,
+		"name": "The Elizabeth House Hotel",
+		"area": "Southampton",
+		"address": "42-44 The Avenue",
+		"lat": 50.919339,
+		"lng": -1.403879,
+		"url": "https://www.booking.com/hotel/gb/the-elizabeth-house.html",
+		"score": 8.1,
+		"count": 2920,
+		"stars": 3,
+		"total": 214.94,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Southampton, rated 8.1 from 2,920 Booking.com reviews."
+	} },
+	"doncaster-united-kingdom": { "Budget": {
+		"id": 34495,
+		"name": "Regent Hotel Doncaster",
+		"area": "Doncaster Centre",
+		"address": "Regent Square",
+		"lat": 53.521831,
+		"lng": -1.127193,
+		"url": "https://www.booking.com/hotel/gb/regent-doncaster.html",
+		"score": 7.4,
+		"count": 559,
+		"stars": 3,
+		"total": 226.88,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Doncaster Centre, rated 7.4 from 559 Booking.com reviews."
+	} },
+	"atlanta-united-states": { "Budget": {
+		"id": 28533,
+		"name": "Hampton Inn Atlanta-Georgia Tech-Downtown",
+		"area": "Downtown Atlanta",
+		"address": "244 North Avenue Northwest",
+		"lat": 33.770956,
+		"lng": -84.395728,
+		"url": "https://www.booking.com/hotel/us/hampton-inn-tech-downtown.html",
+		"score": 8.3,
+		"count": 432,
+		"stars": 3,
+		"total": 378.08,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Downtown Atlanta, rated 8.3 from 432 Booking.com reviews."
+	} },
+	"bossier-city-united-states": { "Luxury": {
+		"id": 183954,
+		"name": "Hilton Shreveport",
+		"area": "Downtown Shreveport",
+		"address": "104 Market Street, Shreveport",
+		"lat": 32.51747,
+		"lng": -93.751103,
+		"url": "https://www.booking.com/hotel/us/hilton-shreveport.html",
+		"score": 8.3,
+		"count": 284,
+		"stars": 4,
+		"total": 282.31,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Shreveport rated 8.3/10 from 284 Booking.com reviews."
+	} },
 	"bradenton-united-states": {
 		"Budget": {
 			"id": 192170,
@@ -13998,57 +14106,51 @@ var overrides_central_2710b = {
 			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 3-star in Downtown Bryan rated 9.3/10 from 29 Booking.com reviews."
 		}
 	},
-	"cape-coral-united-states": {
-		"Best Value": {
-			"id": 181379,
-			"name": "Hampton Inn & Suites Cape Coral / Fort Myers",
-			"area": "Cape Coral",
-			"address": "619 South East 47th Terrace",
-			"lat": 26.563971,
-			"lng": -81.960074,
-			"url": "https://www.booking.com/hotel/us/hampton-inn-suites-cape-coral.html",
-			"score": 7.8,
-			"count": 285,
-			"stars": 3,
-			"total": 248.43,
-			"checked": "27 Oct 2026",
-			"reason": "Central Cape Coral hotel rated 7.8 from 285 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"columbia-united-states": {
-		"Budget": {
-			"id": 13206666,
-			"name": "Tru By Hilton Columbia Downtown",
-			"area": "Downtown Columbia",
-			"address": "400 Gervais Street",
-			"lat": 33.996891,
-			"lng": -81.045771,
-			"url": "https://www.booking.com/hotel/us/tru-by-hilton-columbia-downtown.html",
-			"score": 9.0,
-			"count": 281,
-			"stars": 3,
-			"total": 232.75,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Columbia, rated 9.0 from 281 Booking.com reviews."
-		}
-	},
-	"dayton-united-states": {
-		"Best Value": {
-			"id": 263428,
-			"name": "Marriott at the University of Dayton",
-			"area": "University of Dayton",
-			"address": "1414 South Patterson Boulevard",
-			"lat": 39.737332,
-			"lng": -84.191194,
-			"url": "https://www.booking.com/hotel/us/dayton-marriott.html",
-			"score": 9.0,
-			"count": 139,
-			"stars": 3,
-			"total": 314.75,
-			"checked": "27 Oct 2026",
-			"reason": "Central University of Dayton hotel rated 9.0 from 139 Booking.com reviews: good value close to the sights."
-		}
-	},
+	"cape-coral-united-states": { "Best Value": {
+		"id": 181379,
+		"name": "Hampton Inn & Suites Cape Coral / Fort Myers",
+		"area": "Cape Coral",
+		"address": "619 South East 47th Terrace",
+		"lat": 26.563971,
+		"lng": -81.960074,
+		"url": "https://www.booking.com/hotel/us/hampton-inn-suites-cape-coral.html",
+		"score": 7.8,
+		"count": 285,
+		"stars": 3,
+		"total": 248.43,
+		"checked": "27 Oct 2026",
+		"reason": "Central Cape Coral hotel rated 7.8 from 285 Booking.com reviews: good value close to the sights."
+	} },
+	"columbia-united-states": { "Budget": {
+		"id": 13206666,
+		"name": "Tru By Hilton Columbia Downtown",
+		"area": "Downtown Columbia",
+		"address": "400 Gervais Street",
+		"lat": 33.996891,
+		"lng": -81.045771,
+		"url": "https://www.booking.com/hotel/us/tru-by-hilton-columbia-downtown.html",
+		"score": 9,
+		"count": 281,
+		"stars": 3,
+		"total": 232.75,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Downtown Columbia, rated 9.0 from 281 Booking.com reviews."
+	} },
+	"dayton-united-states": { "Best Value": {
+		"id": 263428,
+		"name": "Marriott at the University of Dayton",
+		"area": "University of Dayton",
+		"address": "1414 South Patterson Boulevard",
+		"lat": 39.737332,
+		"lng": -84.191194,
+		"url": "https://www.booking.com/hotel/us/dayton-marriott.html",
+		"score": 9,
+		"count": 139,
+		"stars": 3,
+		"total": 314.75,
+		"checked": "27 Oct 2026",
+		"reason": "Central University of Dayton hotel rated 9.0 from 139 Booking.com reviews: good value close to the sights."
+	} },
 	"daytona-beach-united-states": {
 		"Budget": {
 			"id": 300526,
@@ -14081,23 +14183,21 @@ var overrides_central_2710b = {
 			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Daytona Beach oceanfront rated 8.6/10 from 1,807 Booking.com reviews."
 		}
 	},
-	"fort-lauderdale-united-states": {
-		"Budget": {
-			"id": 1059164,
-			"name": "Victoria Park Hotel",
-			"area": "Victoria Park",
-			"address": "855 Northeast 20th Avenue",
-			"lat": 26.135904,
-			"lng": -80.119753,
-			"url": "https://www.booking.com/hotel/us/the-victoria-park.html",
-			"score": 8.6,
-			"count": 994,
-			"stars": 3,
-			"total": 289.32,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Victoria Park, rated 8.6 from 994 Booking.com reviews."
-		}
-	},
+	"fort-lauderdale-united-states": { "Budget": {
+		"id": 1059164,
+		"name": "Victoria Park Hotel",
+		"area": "Victoria Park",
+		"address": "855 Northeast 20th Avenue",
+		"lat": 26.135904,
+		"lng": -80.119753,
+		"url": "https://www.booking.com/hotel/us/the-victoria-park.html",
+		"score": 8.6,
+		"count": 994,
+		"stars": 3,
+		"total": 289.32,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Victoria Park, rated 8.6 from 994 Booking.com reviews."
+	} },
 	"madison-united-states": {
 		"Budget": {
 			"id": 727789,
@@ -14107,7 +14207,7 @@ var overrides_central_2710b = {
 			"lat": 43.073007,
 			"lng": -89.393299,
 			"url": "https://www.booking.com/hotel/us/johnson-street-suites-madison-downtown.html",
-			"score": 9.0,
+			"score": 9,
 			"count": 477,
 			"stars": 3,
 			"total": 252.49,
@@ -14162,70 +14262,6 @@ var overrides_central_2710b = {
 			"reason": "Central Downtown Melbourne hotel rated 8.6 from 404 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"naples-florida-united-states": {
-		"Luxury": {
-			"id": 251000,
-			"name": "Naples Bay Resort and Marina",
-			"area": "Downtown Naples",
-			"address": "1500 5th Avenue South",
-			"lat": 26.138815,
-			"lng": -81.785397,
-			"url": "https://www.booking.com/hotel/us/naples-bay-resort.html",
-			"score": 9.1,
-			"count": 261,
-			"stars": 4,
-			"total": 1144.26,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Naples rated 9.1/10 from 261 Booking.com reviews."
-		},
-		"Budget": {
-			"id": 456800,
-			"name": "La Quinta by Wyndham Naples Downtown",
-			"area": "Downtown Naples",
-			"address": "1555 5th Avenue South",
-			"lat": 26.139511,
-			"lng": -81.783377,
-			"url": "https://www.booking.com/hotel/us/la-quinta-naples-downtown.html",
-			"score": 8.0,
-			"count": 2232,
-			"stars": 3,
-			"total": 190.66,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Naples, rated 8.0 from 2,232 Booking.com reviews."
-		},
-		"Best Value": {
-			"id": 1067830,
-			"name": "Naples Park Central Hotel",
-			"area": "Downtown Naples",
-			"address": "40 Tamiami Trail North",
-			"lat": 26.147763,
-			"lng": -81.795395,
-			"url": "https://www.booking.com/hotel/us/naples-park-central.html",
-			"score": 8.8,
-			"count": 2388,
-			"stars": 3,
-			"total": 266.33,
-			"checked": "27 Oct 2026",
-			"reason": "Central Downtown Naples hotel rated 8.8 from 2,388 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"phoenix-united-states": {
-		"Luxury": {
-			"id": 358629,
-			"name": "Renaissance Phoenix Downtown Hotel",
-			"area": "Downtown Phoenix",
-			"address": "100 N 1st St",
-			"lat": 33.44936,
-			"lng": -112.07322,
-			"url": "https://www.booking.com/hotel/us/phoenix-50-eastadams.html",
-			"score": 7.6,
-			"count": 100,
-			"stars": 5,
-			"total": 993.56,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Downtown Phoenix, rated 7.6 from 100 Booking.com reviews."
-		}
-	},
 	"richmond-united-states": {
 		"Budget": {
 			"id": 298371,
@@ -14235,7 +14271,7 @@ var overrides_central_2710b = {
 			"lat": 37.540739,
 			"lng": -77.443267,
 			"url": "https://www.booking.com/hotel/us/holiday-inn-express-richmond-downtown.html",
-			"score": 8.0,
+			"score": 8,
 			"count": 633,
 			"stars": 2,
 			"total": 264.23,
@@ -14250,7 +14286,7 @@ var overrides_central_2710b = {
 			"lat": 37.541082,
 			"lng": -77.438903,
 			"url": "https://www.booking.com/hotel/us/moxy-richmond-downtown.html",
-			"score": 8.0,
+			"score": 8,
 			"count": 215,
 			"stars": 3,
 			"total": 298.87,
@@ -14258,106 +14294,36 @@ var overrides_central_2710b = {
 			"reason": "Central Downtown Richmond hotel rated 8.0 from 215 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"tampa-united-states": {
-		"Budget": {
-			"id": 4637639,
-			"name": "Home2 Suites By Hilton Tampa Downtown Channel District",
-			"area": "Channel District",
-			"address": "1155 East Kennedy Boulevard",
-			"lat": 27.950163,
-			"lng": -82.44849,
-			"url": "https://www.booking.com/hotel/us/home2-suites-by-hilton-tampa-downtown-channel-district.html",
-			"score": 8.9,
-			"count": 503,
-			"stars": 3,
-			"total": 591.4,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Channel District, rated 8.9 from 503 Booking.com reviews."
-		},
-		"Luxury": {
-			"id": 522035,
-			"name": "Hotel Flor Tampa Downtown, Tapestry Collection By Hilton",
-			"area": "Downtown Tampa",
-			"address": "905 N. Florida Ave",
-			"lat": 27.95203,
-			"lng": -82.4586,
-			"url": "https://www.booking.com/hotel/us/hotel-flor-tampa-downtown-tapestry-collection-by-hilton.html",
-			"score": 8.1,
-			"count": 235,
-			"stars": 4,
-			"total": 671.53,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Tampa rated 8.1/10 from 235 Booking.com reviews."
-		}
-	},
-	"taos-united-states": {
-		"Best Value": {
-			"id": 301489,
-			"name": "Hilton Tapestry Collection, Hotel Don Fernando De Taos",
-			"area": "Taos",
-			"address": "1005 Paseo Del Pueblo Sur",
-			"lat": 36.385403,
-			"lng": -105.5851,
-			"url": "https://www.booking.com/hotel/us/don-fernando.html",
-			"score": 8.0,
-			"count": 243,
-			"stars": 4,
-			"total": 230.94,
-			"checked": "27 Oct 2026",
-			"reason": "Central Taos hotel rated 8.0 from 243 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"tucson-united-states": {
-		"Best Value": {
-			"id": 7609839,
-			"name": "Hampton Inn Tucson Downtown, Az",
-			"area": "Downtown Tucson",
-			"address": "141 South Stone Ave.",
-			"lat": 32.219838,
-			"lng": -110.970627,
-			"url": "https://www.booking.com/hotel/us/hampton-inn-tucson-downtown-az.html",
-			"score": 8.8,
-			"count": 242,
-			"stars": 3,
-			"total": 284.99,
-			"checked": "27 Oct 2026",
-			"reason": "Central Downtown Tucson hotel rated 8.8 from 242 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"dalat-vietnam": {
-		"Luxury": {
-			"id": 265264,
-			"name": "Dalat Palace Heritage Hotel",
-			"area": "Da Lat Centre",
-			"address": "02 Tran Phu, Ward 3",
-			"lat": 11.93671,
-			"lng": 108.440353,
-			"url": "https://www.booking.com/hotel/vn/dalat-palace.html",
-			"score": 8.7,
-			"count": 177,
-			"stars": 5,
-			"total": 198.31,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Da Lat Centre, rated 8.7 from 177 Booking.com reviews."
-		}
-	},
-	"pune-india": {
-		"Budget": {
-			"id": 1060462,
-			"name": "Hotel Shreyas",
-			"area": "Deccan Gymkhana",
-			"address": "1242 B, Apte Road, Deccan Gymkhana",
-			"lat": 18.518179,
-			"lng": 73.84297,
-			"url": "https://www.booking.com/hotel/in/shreyas-pune.html",
-			"score": 7.9,
-			"count": 127,
-			"stars": 3,
-			"total": 68.58,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Deccan Gymkhana, rated 7.9 from 127 Booking.com reviews."
-		}
-	},
+	"taos-united-states": { "Best Value": {
+		"id": 301489,
+		"name": "Hilton Tapestry Collection, Hotel Don Fernando De Taos",
+		"area": "Taos",
+		"address": "1005 Paseo Del Pueblo Sur",
+		"lat": 36.385403,
+		"lng": -105.5851,
+		"url": "https://www.booking.com/hotel/us/don-fernando.html",
+		"score": 8,
+		"count": 243,
+		"stars": 4,
+		"total": 230.94,
+		"checked": "27 Oct 2026",
+		"reason": "Central Taos hotel rated 8.0 from 243 Booking.com reviews: good value close to the sights."
+	} },
+	"pune-india": { "Budget": {
+		"id": 1060462,
+		"name": "Hotel Shreyas",
+		"area": "Deccan Gymkhana",
+		"address": "1242 B, Apte Road, Deccan Gymkhana",
+		"lat": 18.518179,
+		"lng": 73.84297,
+		"url": "https://www.booking.com/hotel/in/shreyas-pune.html",
+		"score": 7.9,
+		"count": 127,
+		"stars": 3,
+		"total": 68.58,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Deccan Gymkhana, rated 7.9 from 127 Booking.com reviews."
+	} },
 	"chesterfield-united-kingdom": {
 		"Budget": {
 			"id": 569844,
@@ -14373,12 +14339,23 @@ var overrides_central_2710b = {
 			"total": 260.91,
 			"checked": "27 Oct 2026",
 			"reason": "A central budget pick in Chesterfield, rated 8.3 from 995 Booking.com reviews."
+		},
+		"Luxury": {
+			"id": 13929039,
+			"name": "SPIRE VIEW at THE SPREAD EAGLE",
+			"area": "Chesterfield town centre",
+			"address": "7 Beetwell Street",
+			"lat": 53.234065,
+			"lng": -1.42701,
+			"url": "https://www.booking.com/hotel/gb/spire-view-at-the-spread-eagle.html",
+			"score": 8.7,
+			"count": 550,
+			"stars": 4,
+			"total": 265.45,
+			"checked": "27 Oct 2026",
+			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Chesterfield town centre rated 8.7/10 from 550 Booking.com reviews."
 		}
-	}
-};
-for (const [cid, v] of Object.entries(overrides_central_2710b)) overrides_default[cid] = Object.assign({}, overrides_default[cid] || {}, v);
-/* 27 Oct 2026 (round 3): aparthotels, same-building duplicates and far picks replaced with central hotels */
-var overrides_central_2710c = {
+	},
 	"madrid-spain": {
 		"Budget": {
 			"id": 2033272,
@@ -14411,40 +14388,36 @@ var overrides_central_2710c = {
 			"reason": "Central Centro, Madrid hotel rated 9.4 from 5,834 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"amsterdam-netherlands": {
-		"Best Value": {
-			"id": 10192,
-			"name": "Hotel Estheréa",
-			"area": "Amsterdam City Centre",
-			"address": "Singel 303 - 309",
-			"lat": 52.370473,
-			"lng": 4.888491,
-			"url": "https://www.booking.com/hotel/nl/estherea.html",
-			"score": 9.1,
-			"count": 3377,
-			"stars": 4,
-			"total": 589.58,
-			"checked": "27 Oct 2026",
-			"reason": "Central Amsterdam City Centre hotel rated 9.1 from 3,377 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"aalst-belgium": {
-		"Budget": {
-			"id": 174732,
-			"name": "Hotel Royal Astrid",
-			"area": "Aalst centre",
-			"address": "Keizersplein 27",
-			"lat": 50.936861,
-			"lng": 4.035512,
-			"url": "https://www.booking.com/hotel/be/royal-astrid.html",
-			"score": 8.8,
-			"count": 359,
-			"stars": 3,
-			"total": 250.0,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Aalst centre, rated 8.8 from 359 Booking.com reviews."
-		}
-	},
+	"amsterdam-netherlands": { "Best Value": {
+		"id": 10192,
+		"name": "Hotel Estheréa",
+		"area": "Amsterdam City Centre",
+		"address": "Singel 303 - 309",
+		"lat": 52.370473,
+		"lng": 4.888491,
+		"url": "https://www.booking.com/hotel/nl/estherea.html",
+		"score": 9.1,
+		"count": 3377,
+		"stars": 4,
+		"total": 589.58,
+		"checked": "27 Oct 2026",
+		"reason": "Central Amsterdam City Centre hotel rated 9.1 from 3,377 Booking.com reviews: good value close to the sights."
+	} },
+	"aalst-belgium": { "Budget": {
+		"id": 174732,
+		"name": "Hotel Royal Astrid",
+		"area": "Aalst centre",
+		"address": "Keizersplein 27",
+		"lat": 50.936861,
+		"lng": 4.035512,
+		"url": "https://www.booking.com/hotel/be/royal-astrid.html",
+		"score": 8.8,
+		"count": 359,
+		"stars": 3,
+		"total": 250,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Aalst centre, rated 8.8 from 359 Booking.com reviews."
+	} },
 	"abuja-nigeria": {
 		"Budget": {
 			"id": 12752163,
@@ -14469,7 +14442,7 @@ var overrides_central_2710c = {
 			"lat": 9.068868,
 			"lng": 7.48276,
 			"url": "https://www.booking.com/hotel/ng/musada-luxury-hotels-and-suites.html",
-			"score": 8.0,
+			"score": 8,
 			"count": 538,
 			"stars": 4,
 			"total": 143.61,
@@ -14477,176 +14450,156 @@ var overrides_central_2710c = {
 			"reason": "Central Wuse, Abuja hotel rated 8 from 538 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"aix-en-provence-france": {
-		"Budget": {
-			"id": 287944,
-			"name": "Hôtel Paul",
-			"area": "Aix-en-Provence centre",
-			"address": "10 avenue Pasteur",
-			"lat": 43.533363,
-			"lng": 5.446056,
-			"url": "https://www.booking.com/hotel/fr/paul.html",
-			"score": 8.7,
-			"count": 1630,
-			"stars": 2,
-			"total": 181.26,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Aix-en-Provence centre, rated 8.7 from 1,630 Booking.com reviews."
-		}
-	},
-	"alba-italy": {
-		"Budget": {
-			"id": 401449,
-			"name": "Albergo San Lorenzo",
-			"area": "Alba old town",
-			"address": "Piazza Rossetti 6",
-			"lat": 44.701091,
-			"lng": 8.037467,
-			"url": "https://www.booking.com/hotel/it/albergo-san-lorenzo.html",
-			"score": 8.1,
-			"count": 1134,
-			"stars": 2,
-			"total": 262.0,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Alba old town, rated 8.1 from 1,134 Booking.com reviews."
-		}
-	},
-	"albufeira-portugal": {
-		"Budget": {
-			"id": 171596,
-			"name": "INATEL Albufeira Hotel",
-			"area": "Albufeira centre",
-			"address": "Av. Infante D.Henrique",
-			"lat": 37.087193,
-			"lng": -8.242745,
-			"url": "https://www.booking.com/hotel/pt/inatel-albufeira.html",
-			"score": 8.2,
-			"count": 1258,
-			"stars": 3,
-			"total": 121.28,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Albufeira centre, rated 8.2 from 1,258 Booking.com reviews."
-		}
-	},
-	"bento-goncalves-brazil": {
-		"Luxury": {
-			"id": 5274469,
-			"name": "Hotel Laghetto Estação",
-			"area": "Bento Gonçalves centre",
-			"address": "Rua Dez de Novembro, 120",
-			"lat": -29.173629,
-			"lng": -51.519927,
-			"url": "https://www.booking.com/hotel/br/laghetto-viverone-estacao.html",
-			"score": 8.8,
-			"count": 2382,
-			"stars": 4,
-			"total": 132.59,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Bento Gonçalves centre rated 8.8/10 from 2,382 Booking.com reviews."
-		}
-	},
-	"bhopal-india": {
-		"Budget": {
-			"id": 707666,
-			"name": "The Bhopal Grande",
-			"area": "Shyamala Hills, Bhopal",
-			"address": "30 Nadir Colony, Shyamala Hills",
-			"lat": 23.241304,
-			"lng": 77.383069,
-			"url": "https://www.booking.com/hotel/in/the-bhopal-grande.html",
-			"score": 9.0,
-			"count": 9,
-			"stars": 3,
-			"total": 50.33,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Shyamala Hills, Bhopal, rated 9 from 9 Booking.com reviews."
-		}
-	},
-	"bielsko-biaa-poland": {
-		"Best Value": {
-			"id": 710356,
-			"name": "Hotel Grępielnia",
-			"area": "Bielsko-Biała centre",
-			"address": "ul. Partyzantów 22",
-			"lat": 49.816631,
-			"lng": 19.043459,
-			"url": "https://www.booking.com/hotel/pl/apartamenty-grapielnia.html",
-			"score": 8.6,
-			"count": 627,
-			"stars": 4,
-			"total": 206.68,
-			"checked": "27 Oct 2026",
-			"reason": "Central Bielsko-Biała centre hotel rated 8.6 from 627 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"binz-germany": {
-		"Budget": {
-			"id": 373876,
-			"name": "Ostsee-Rittergut-Rügen - BinzHotel & OrdensKapelle",
-			"area": "Binz",
-			"address": "Rabenstraße 5 - 5b",
-			"lat": 54.392902,
-			"lng": 13.608091,
-			"url": "https://www.booking.com/hotel/de/binzhotel-landhaus-waechter.html",
-			"score": 8.6,
-			"count": 467,
-			"stars": 3,
-			"total": 177.0,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Binz, rated 8.6 from 467 Booking.com reviews."
-		}
-	},
-	"birmingham-united-kingdom": {
-		"Best Value": {
-			"id": 6726551,
-			"name": "Aloft by Marriott Birmingham Eastside",
-			"area": "Eastside, Birmingham",
-			"address": "4 Woodcock Street",
-			"lat": 52.485291,
-			"lng": -1.884622,
-			"url": "https://www.booking.com/hotel/gb/aloft-birmingham-eastside.html",
-			"score": 8.7,
-			"count": 3229,
-			"stars": 4,
-			"total": 428.68,
-			"checked": "27 Oct 2026",
-			"reason": "Central Eastside, Birmingham hotel rated 8.7 from 3,229 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"bournemouth-united-kingdom": {
-		"Budget": {
-			"id": 225924,
-			"name": "Applewood Hotel",
-			"area": "Bournemouth City Centre",
-			"address": "Durley Road",
-			"lat": 50.718028,
-			"lng": -1.887543,
-			"url": "https://www.booking.com/hotel/gb/kingswoodhotel.html",
-			"score": 8.8,
-			"count": 1620,
-			"stars": 3,
-			"total": 187.85,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Bournemouth City Centre, rated 8.8 from 1,620 Booking.com reviews."
-		}
-	},
-	"bridgetown-barbados": {
-		"Budget": {
-			"id": 336914,
-			"name": "Coconut Court Beach Hotel",
-			"area": "Garrison, Bridgetown",
-			"address": "The Garrison Historic Area",
-			"lat": 13.075912,
-			"lng": -59.601509,
-			"url": "https://www.booking.com/hotel/bb/coconut-court-beach.html",
-			"score": 8.0,
-			"count": 390,
-			"stars": 3,
-			"total": 513.24,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Garrison, Bridgetown, rated 8 from 390 Booking.com reviews."
-		}
-	},
+	"aix-en-provence-france": { "Budget": {
+		"id": 287944,
+		"name": "Hôtel Paul",
+		"area": "Aix-en-Provence centre",
+		"address": "10 avenue Pasteur",
+		"lat": 43.533363,
+		"lng": 5.446056,
+		"url": "https://www.booking.com/hotel/fr/paul.html",
+		"score": 8.7,
+		"count": 1630,
+		"stars": 2,
+		"total": 181.26,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Aix-en-Provence centre, rated 8.7 from 1,630 Booking.com reviews."
+	} },
+	"alba-italy": { "Budget": {
+		"id": 401449,
+		"name": "Albergo San Lorenzo",
+		"area": "Alba old town",
+		"address": "Piazza Rossetti 6",
+		"lat": 44.701091,
+		"lng": 8.037467,
+		"url": "https://www.booking.com/hotel/it/albergo-san-lorenzo.html",
+		"score": 8.1,
+		"count": 1134,
+		"stars": 2,
+		"total": 262,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Alba old town, rated 8.1 from 1,134 Booking.com reviews."
+	} },
+	"albufeira-portugal": { "Budget": {
+		"id": 171596,
+		"name": "INATEL Albufeira Hotel",
+		"area": "Albufeira centre",
+		"address": "Av. Infante D.Henrique",
+		"lat": 37.087193,
+		"lng": -8.242745,
+		"url": "https://www.booking.com/hotel/pt/inatel-albufeira.html",
+		"score": 8.2,
+		"count": 1258,
+		"stars": 3,
+		"total": 121.28,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Albufeira centre, rated 8.2 from 1,258 Booking.com reviews."
+	} },
+	"bento-goncalves-brazil": { "Luxury": {
+		"id": 5274469,
+		"name": "Hotel Laghetto Estação",
+		"area": "Bento Gonçalves centre",
+		"address": "Rua Dez de Novembro, 120",
+		"lat": -29.173629,
+		"lng": -51.519927,
+		"url": "https://www.booking.com/hotel/br/laghetto-viverone-estacao.html",
+		"score": 8.8,
+		"count": 2382,
+		"stars": 4,
+		"total": 132.59,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Bento Gonçalves centre rated 8.8/10 from 2,382 Booking.com reviews."
+	} },
+	"bhopal-india": { "Budget": {
+		"id": 707666,
+		"name": "The Bhopal Grande",
+		"area": "Shyamala Hills, Bhopal",
+		"address": "30 Nadir Colony, Shyamala Hills",
+		"lat": 23.241304,
+		"lng": 77.383069,
+		"url": "https://www.booking.com/hotel/in/the-bhopal-grande.html",
+		"score": 9,
+		"count": 9,
+		"stars": 3,
+		"total": 50.33,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Shyamala Hills, Bhopal, rated 9 from 9 Booking.com reviews."
+	} },
+	"bielsko-biaa-poland": { "Best Value": {
+		"id": 710356,
+		"name": "Hotel Grępielnia",
+		"area": "Bielsko-Biała centre",
+		"address": "ul. Partyzantów 22",
+		"lat": 49.816631,
+		"lng": 19.043459,
+		"url": "https://www.booking.com/hotel/pl/apartamenty-grapielnia.html",
+		"score": 8.6,
+		"count": 627,
+		"stars": 4,
+		"total": 206.68,
+		"checked": "27 Oct 2026",
+		"reason": "Central Bielsko-Biała centre hotel rated 8.6 from 627 Booking.com reviews: good value close to the sights."
+	} },
+	"binz-germany": { "Budget": {
+		"id": 373876,
+		"name": "Ostsee-Rittergut-Rügen - BinzHotel & OrdensKapelle",
+		"area": "Binz",
+		"address": "Rabenstraße 5 - 5b",
+		"lat": 54.392902,
+		"lng": 13.608091,
+		"url": "https://www.booking.com/hotel/de/binzhotel-landhaus-waechter.html",
+		"score": 8.6,
+		"count": 467,
+		"stars": 3,
+		"total": 177,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Binz, rated 8.6 from 467 Booking.com reviews."
+	} },
+	"birmingham-united-kingdom": { "Best Value": {
+		"id": 6726551,
+		"name": "Aloft by Marriott Birmingham Eastside",
+		"area": "Eastside, Birmingham",
+		"address": "4 Woodcock Street",
+		"lat": 52.485291,
+		"lng": -1.884622,
+		"url": "https://www.booking.com/hotel/gb/aloft-birmingham-eastside.html",
+		"score": 8.7,
+		"count": 3229,
+		"stars": 4,
+		"total": 428.68,
+		"checked": "27 Oct 2026",
+		"reason": "Central Eastside, Birmingham hotel rated 8.7 from 3,229 Booking.com reviews: good value close to the sights."
+	} },
+	"bournemouth-united-kingdom": { "Budget": {
+		"id": 225924,
+		"name": "Applewood Hotel",
+		"area": "Bournemouth City Centre",
+		"address": "Durley Road",
+		"lat": 50.718028,
+		"lng": -1.887543,
+		"url": "https://www.booking.com/hotel/gb/kingswoodhotel.html",
+		"score": 8.8,
+		"count": 1620,
+		"stars": 3,
+		"total": 187.85,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Bournemouth City Centre, rated 8.8 from 1,620 Booking.com reviews."
+	} },
+	"bridgetown-barbados": { "Budget": {
+		"id": 336914,
+		"name": "Coconut Court Beach Hotel",
+		"area": "Garrison, Bridgetown",
+		"address": "The Garrison Historic Area",
+		"lat": 13.075912,
+		"lng": -59.601509,
+		"url": "https://www.booking.com/hotel/bb/coconut-court-beach.html",
+		"score": 8,
+		"count": 390,
+		"stars": 3,
+		"total": 513.24,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Garrison, Bridgetown, rated 8 from 390 Booking.com reviews."
+	} },
 	"caldas-novas-brazil": {
 		"Budget": {
 			"id": 322556,
@@ -14679,40 +14632,36 @@ var overrides_central_2710c = {
 			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Caldas Novas centre rated 8.8/10 from 287 Booking.com reviews."
 		}
 	},
-	"cape-town-southafrica": {
-		"Budget": {
-			"id": 19243,
-			"name": "ONOMO Hotel Cape Town – Inn On The Square",
-			"area": "Cape Town CBD",
-			"address": "Greenmarket Square",
-			"lat": -33.922575,
-			"lng": 18.419669,
-			"url": "https://www.booking.com/hotel/za/onomo-hotel-cape-town.html",
-			"score": 7.6,
-			"count": 1314,
-			"stars": 3,
-			"total": 200.85,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Cape Town CBD, rated 7.6 from 1,314 Booking.com reviews."
-		}
-	},
-	"cascais-portugal": {
-		"Budget": {
-			"id": 7584311,
-			"name": "Kavia Hotel do Largo",
-			"area": "Cascais centre",
-			"address": "Beco Esconso Nº2",
-			"lat": 38.698068,
-			"lng": -9.4209,
-			"url": "https://www.booking.com/hotel/pt/kavia-do-largo.html",
-			"score": 7.9,
-			"count": 1439,
-			"stars": 3,
-			"total": 180.53,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Cascais centre, rated 7.9 from 1,439 Booking.com reviews."
-		}
-	},
+	"cape-town-southafrica": { "Budget": {
+		"id": 19243,
+		"name": "ONOMO Hotel Cape Town – Inn On The Square",
+		"area": "Cape Town CBD",
+		"address": "Greenmarket Square",
+		"lat": -33.922575,
+		"lng": 18.419669,
+		"url": "https://www.booking.com/hotel/za/onomo-hotel-cape-town.html",
+		"score": 7.6,
+		"count": 1314,
+		"stars": 3,
+		"total": 200.85,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Cape Town CBD, rated 7.6 from 1,314 Booking.com reviews."
+	} },
+	"cascais-portugal": { "Budget": {
+		"id": 7584311,
+		"name": "Kavia Hotel do Largo",
+		"area": "Cascais centre",
+		"address": "Beco Esconso Nº2",
+		"lat": 38.698068,
+		"lng": -9.4209,
+		"url": "https://www.booking.com/hotel/pt/kavia-do-largo.html",
+		"score": 7.9,
+		"count": 1439,
+		"stars": 3,
+		"total": 180.53,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Cascais centre, rated 7.9 from 1,439 Booking.com reviews."
+	} },
 	"castelldefels-spain": {
 		"Budget": {
 			"id": 280117,
@@ -14722,7 +14671,7 @@ var overrides_central_2710c = {
 			"lat": 41.281564,
 			"lng": 1.985752,
 			"url": "https://www.booking.com/hotel/es/ibis-barcelona-castelldefels.html",
-			"score": 8.0,
+			"score": 8,
 			"count": 2563,
 			"stars": 2,
 			"total": 199.82,
@@ -14745,108 +14694,81 @@ var overrides_central_2710c = {
 			"reason": "Central Castelldefels centre hotel rated 8.4 from 6,212 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"cherkasy-ukraine": {
-		"Luxury": {
-			"id": 499493,
-			"name": "Cherkasy Palace",
-			"area": "Cherkasy centre",
-			"address": "Verhnya Gorova Street 145",
-			"lat": 49.435067,
-			"lng": 32.081399,
-			"url": "https://www.booking.com/hotel/ua/apelsin.html",
-			"score": 8.8,
-			"count": 1312,
-			"stars": 4,
-			"total": 122.72,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Cherkasy centre rated 8.8/10 from 1,312 Booking.com reviews."
-		}
-	},
-	"cluj-napoca-romania": {
-		"Best Value": {
-			"id": 265609,
-			"name": "Hotel Alexis",
-			"area": "Cluj-Napoca centre",
-			"address": "Dorobantilor 26",
-			"lat": 46.771938,
-			"lng": 23.602596,
-			"url": "https://www.booking.com/hotel/ro/alexis.html",
-			"score": 9.2,
-			"count": 527,
-			"stars": 3,
-			"total": 137.82,
-			"checked": "27 Oct 2026",
-			"reason": "Central Cluj-Napoca centre hotel rated 9.2 from 527 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"concepcion-chile": {
-		"Budget": {
-			"id": 92121,
-			"name": "Hotel Alborada",
-			"area": "Concepción centre",
-			"address": "Barros Arana 457",
-			"lat": -36.827351,
-			"lng": -73.053117,
-			"url": "https://www.booking.com/hotel/cl/alborada.html",
-			"score": 8.3,
-			"count": 2257,
-			"stars": 4,
-			"total": 119.88,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Concepción centre, rated 8.3 from 2,257 Booking.com reviews."
-		}
-	},
-	"dakar-senegal": {
-		"Budget": {
-			"id": 12468493,
-			"name": "Wakola Hotel Cheikh Anta DIOP",
-			"area": "Fass, Dakar",
-			"address": "25 Avenue Cheikh Anta Diop",
-			"lat": 14.68835,
-			"lng": -17.456018,
-			"url": "https://www.booking.com/hotel/sn/wakola-cheikh-anta-diop.html",
-			"score": 8.4,
-			"count": 102,
-			"stars": 3,
-			"total": 286.6,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Fass, Dakar, rated 8.4 from 102 Booking.com reviews."
-		}
-	},
-	"desenzano-del-garda-italy": {
-		"Budget": {
-			"id": 84395,
-			"name": "Hotel Europa",
-			"area": "Desenzano lakefront",
-			"address": "Lungolago C. Battisti 71",
-			"lat": 45.475644,
-			"lng": 10.538034,
-			"url": "https://www.booking.com/hotel/it/europa-desenzano-del-garda.html",
-			"score": 9.0,
-			"count": 1608,
-			"stars": 3,
-			"total": 219.65,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Desenzano lakefront, rated 9 from 1,608 Booking.com reviews."
-		}
-	},
-	"dijon-france": {
-		"Budget": {
-			"id": 46296,
-			"name": "Hôtel République",
-			"area": "Dijon Old Town",
-			"address": "3 rue du Nord",
-			"lat": 47.325701,
-			"lng": 5.044781,
-			"url": "https://www.booking.com/hotel/fr/republique-dijon.html",
-			"score": 8.1,
-			"count": 2343,
-			"stars": 2,
-			"total": 148.4,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Dijon Old Town, rated 8.1 from 2,343 Booking.com reviews."
-		}
-	},
+	"cherkasy-ukraine": { "Luxury": {
+		"id": 499493,
+		"name": "Cherkasy Palace",
+		"area": "Cherkasy centre",
+		"address": "Verhnya Gorova Street 145",
+		"lat": 49.435067,
+		"lng": 32.081399,
+		"url": "https://www.booking.com/hotel/ua/apelsin.html",
+		"score": 8.8,
+		"count": 1312,
+		"stars": 4,
+		"total": 122.72,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Cherkasy centre rated 8.8/10 from 1,312 Booking.com reviews."
+	} },
+	"cluj-napoca-romania": { "Best Value": {
+		"id": 265609,
+		"name": "Hotel Alexis",
+		"area": "Cluj-Napoca centre",
+		"address": "Dorobantilor 26",
+		"lat": 46.771938,
+		"lng": 23.602596,
+		"url": "https://www.booking.com/hotel/ro/alexis.html",
+		"score": 9.2,
+		"count": 527,
+		"stars": 3,
+		"total": 137.82,
+		"checked": "27 Oct 2026",
+		"reason": "Central Cluj-Napoca centre hotel rated 9.2 from 527 Booking.com reviews: good value close to the sights."
+	} },
+	"concepcion-chile": { "Budget": {
+		"id": 92121,
+		"name": "Hotel Alborada",
+		"area": "Concepción centre",
+		"address": "Barros Arana 457",
+		"lat": -36.827351,
+		"lng": -73.053117,
+		"url": "https://www.booking.com/hotel/cl/alborada.html",
+		"score": 8.3,
+		"count": 2257,
+		"stars": 4,
+		"total": 119.88,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Concepción centre, rated 8.3 from 2,257 Booking.com reviews."
+	} },
+	"desenzano-del-garda-italy": { "Budget": {
+		"id": 84395,
+		"name": "Hotel Europa",
+		"area": "Desenzano lakefront",
+		"address": "Lungolago C. Battisti 71",
+		"lat": 45.475644,
+		"lng": 10.538034,
+		"url": "https://www.booking.com/hotel/it/europa-desenzano-del-garda.html",
+		"score": 9,
+		"count": 1608,
+		"stars": 3,
+		"total": 219.65,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Desenzano lakefront, rated 9 from 1,608 Booking.com reviews."
+	} },
+	"dijon-france": { "Budget": {
+		"id": 46296,
+		"name": "Hôtel République",
+		"area": "Dijon Old Town",
+		"address": "3 rue du Nord",
+		"lat": 47.325701,
+		"lng": 5.044781,
+		"url": "https://www.booking.com/hotel/fr/republique-dijon.html",
+		"score": 8.1,
+		"count": 2343,
+		"stars": 2,
+		"total": 148.4,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Dijon Old Town, rated 8.1 from 2,343 Booking.com reviews."
+	} },
 	"farnborough-united-kingdom": {
 		"Budget": {
 			"id": 103860,
@@ -14854,7 +14776,7 @@ var overrides_central_2710c = {
 			"area": "Farnborough centre",
 			"address": "68 Farnborough Road",
 			"lat": 51.281843,
-			"lng": -0.752911,
+			"lng": -.752911,
 			"url": "https://www.booking.com/hotel/gb/thefalcon.html",
 			"score": 7.1,
 			"count": 768,
@@ -14869,7 +14791,7 @@ var overrides_central_2710c = {
 			"area": "Farnborough",
 			"address": "Lynchford Road",
 			"lat": 51.273907,
-			"lng": -0.756045,
+			"lng": -.756045,
 			"url": "https://www.booking.com/hotel/gb/holiday-inn-farnborough.html",
 			"score": 8.5,
 			"count": 949,
@@ -14879,142 +14801,111 @@ var overrides_central_2710c = {
 			"reason": "Central Farnborough hotel rated 8.5 from 949 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"fribourg-switzerland": {
-		"Best Value": {
-			"id": 65279,
-			"name": "Hôtel de la Rose",
-			"area": "Fribourg Old Town",
-			"address": "Murtengasse 1",
-			"lat": 46.806567,
-			"lng": 7.161292,
-			"url": "https://www.booking.com/hotel/ch/roserribourgschweizswitzerland.html",
-			"score": 8.0,
-			"count": 1793,
-			"stars": 3,
-			"total": 301.39,
-			"checked": "27 Oct 2026",
-			"reason": "Central Fribourg Old Town hotel rated 8 from 1,793 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"geelong-australia": {
-		"Luxury": {
-			"id": 487626,
-			"name": "Novotel Geelong",
-			"area": "Geelong waterfront",
-			"address": "10-14 Eastern Beach Road",
-			"lat": -38.14496,
-			"lng": 144.363496,
-			"url": "https://www.booking.com/hotel/au/novotel-geelong.html",
-			"score": 7.7,
-			"count": 1760,
-			"stars": 4,
-			"total": 438.2,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Geelong waterfront rated 7.7/10 from 1,760 Booking.com reviews."
-		}
-	},
-	"glasgow-unitedkingdom": {
-		"Best Value": {
-			"id": 6822334,
-			"name": "Maldron Hotel Glasgow City",
-			"area": "Glasgow City Centre",
-			"address": "Renfrew Street",
-			"lat": 55.86548,
-			"lng": -4.255551,
-			"url": "https://www.booking.com/hotel/gb/maldron-glasgow.html",
-			"score": 8.7,
-			"count": 10299,
-			"stars": 4,
-			"total": 339.6,
-			"checked": "27 Oct 2026",
-			"reason": "Central Glasgow City Centre hotel rated 8.7 from 10,299 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"grenoble-france": {
-		"Budget": {
-			"id": 250266,
-			"name": "Hôtel Gloria",
-			"area": "Grenoble centre",
-			"address": "12 Rue Aristide Berges",
-			"lat": 45.191438,
-			"lng": 5.718498,
-			"url": "https://www.booking.com/hotel/fr/gallia-grenoble.html",
-			"score": 8.0,
-			"count": 484,
-			"stars": 2,
-			"total": 160.0,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Grenoble centre, rated 8 from 484 Booking.com reviews."
-		}
-	},
-	"hanoi-vietnam": {
-		"Budget": {
-			"id": 8307217,
-			"name": "Golden Sun Hotel",
-			"area": "Hoan Kiem Old Quarter",
-			"address": "33 Hang Quat Street",
-			"lat": 21.032656,
-			"lng": 105.849305,
-			"url": "https://www.booking.com/hotel/vn/golden-sun-amp-spa.html",
-			"score": 9.0,
-			"count": 2805,
-			"stars": 3,
-			"total": 120.99,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Hoan Kiem Old Quarter, rated 9 from 2,805 Booking.com reviews."
-		}
-	},
-	"heidelberg-germany": {
-		"Best Value": {
-			"id": 9464637,
-			"name": "ATLANTIC Hotel Heidelberg",
-			"area": "Bahnstadt, Heidelberg",
-			"address": "Europaplatz 1",
-			"lat": 49.403328,
-			"lng": 8.673722,
-			"url": "https://www.booking.com/hotel/de/atlantic-heidelberg.html",
-			"score": 8.8,
-			"count": 4523,
-			"stars": 4,
-			"total": 314.38,
-			"checked": "27 Oct 2026",
-			"reason": "Central Bahnstadt, Heidelberg hotel rated 8.8 from 4,523 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"hersonissos-greece": {
-		"Budget": {
-			"id": 7436116,
-			"name": "Sea Breeze Hotel",
-			"area": "Limenas Hersonissou",
-			"address": "Antoniou Kassaveti & 25 Martiou, 17",
-			"lat": 35.315225,
-			"lng": 25.396684,
-			"url": "https://www.booking.com/hotel/gr/sea-breeze-hotel.html",
-			"score": 9.1,
-			"count": 439,
-			"stars": 3,
-			"total": 140.7,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Limenas Hersonissou, rated 9.1 from 439 Booking.com reviews."
-		}
-	},
-	"horta-portugal": {
-		"Budget": {
-			"id": 40514,
-			"name": "Azoris Faial Garden – Resort Hotel",
-			"area": "Horta",
-			"address": "Rua Consul Dabney",
-			"lat": 38.53074,
-			"lng": -28.627726,
-			"url": "https://www.booking.com/hotel/pt/fayal-resort.html",
-			"score": 8.1,
-			"count": 1073,
-			"stars": 4,
-			"total": 117.3,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Horta, rated 8.1 from 1,073 Booking.com reviews."
-		}
-	},
+	"fribourg-switzerland": { "Best Value": {
+		"id": 65279,
+		"name": "Hôtel de la Rose",
+		"area": "Fribourg Old Town",
+		"address": "Murtengasse 1",
+		"lat": 46.806567,
+		"lng": 7.161292,
+		"url": "https://www.booking.com/hotel/ch/roserribourgschweizswitzerland.html",
+		"score": 8,
+		"count": 1793,
+		"stars": 3,
+		"total": 301.39,
+		"checked": "27 Oct 2026",
+		"reason": "Central Fribourg Old Town hotel rated 8 from 1,793 Booking.com reviews: good value close to the sights."
+	} },
+	"geelong-australia": { "Luxury": {
+		"id": 487626,
+		"name": "Novotel Geelong",
+		"area": "Geelong waterfront",
+		"address": "10-14 Eastern Beach Road",
+		"lat": -38.14496,
+		"lng": 144.363496,
+		"url": "https://www.booking.com/hotel/au/novotel-geelong.html",
+		"score": 7.7,
+		"count": 1760,
+		"stars": 4,
+		"total": 438.2,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Geelong waterfront rated 7.7/10 from 1,760 Booking.com reviews."
+	} },
+	"glasgow-unitedkingdom": { "Best Value": {
+		"id": 6822334,
+		"name": "Maldron Hotel Glasgow City",
+		"area": "Glasgow City Centre",
+		"address": "Renfrew Street",
+		"lat": 55.86548,
+		"lng": -4.255551,
+		"url": "https://www.booking.com/hotel/gb/maldron-glasgow.html",
+		"score": 8.7,
+		"count": 10299,
+		"stars": 4,
+		"total": 339.6,
+		"checked": "27 Oct 2026",
+		"reason": "Central Glasgow City Centre hotel rated 8.7 from 10,299 Booking.com reviews: good value close to the sights."
+	} },
+	"grenoble-france": { "Budget": {
+		"id": 250266,
+		"name": "Hôtel Gloria",
+		"area": "Grenoble centre",
+		"address": "12 Rue Aristide Berges",
+		"lat": 45.191438,
+		"lng": 5.718498,
+		"url": "https://www.booking.com/hotel/fr/gallia-grenoble.html",
+		"score": 8,
+		"count": 484,
+		"stars": 2,
+		"total": 160,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Grenoble centre, rated 8 from 484 Booking.com reviews."
+	} },
+	"hanoi-vietnam": { "Budget": {
+		"id": 8307217,
+		"name": "Golden Sun Hotel",
+		"area": "Hoan Kiem Old Quarter",
+		"address": "33 Hang Quat Street",
+		"lat": 21.032656,
+		"lng": 105.849305,
+		"url": "https://www.booking.com/hotel/vn/golden-sun-amp-spa.html",
+		"score": 9,
+		"count": 2805,
+		"stars": 3,
+		"total": 120.99,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Hoan Kiem Old Quarter, rated 9 from 2,805 Booking.com reviews."
+	} },
+	"heidelberg-germany": { "Best Value": {
+		"id": 9464637,
+		"name": "ATLANTIC Hotel Heidelberg",
+		"area": "Bahnstadt, Heidelberg",
+		"address": "Europaplatz 1",
+		"lat": 49.403328,
+		"lng": 8.673722,
+		"url": "https://www.booking.com/hotel/de/atlantic-heidelberg.html",
+		"score": 8.8,
+		"count": 4523,
+		"stars": 4,
+		"total": 314.38,
+		"checked": "27 Oct 2026",
+		"reason": "Central Bahnstadt, Heidelberg hotel rated 8.8 from 4,523 Booking.com reviews: good value close to the sights."
+	} },
+	"hersonissos-greece": { "Budget": {
+		"id": 7436116,
+		"name": "Sea Breeze Hotel",
+		"area": "Limenas Hersonissou",
+		"address": "Antoniou Kassaveti & 25 Martiou, 17",
+		"lat": 35.315225,
+		"lng": 25.396684,
+		"url": "https://www.booking.com/hotel/gr/sea-breeze-hotel.html",
+		"score": 9.1,
+		"count": 439,
+		"stars": 3,
+		"total": 140.7,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Limenas Hersonissou, rated 9.1 from 439 Booking.com reviews."
+	} },
 	"kemer-turkiye": {
 		"Budget": {
 			"id": 7176481,
@@ -15047,23 +14938,21 @@ var overrides_central_2710c = {
 			"reason": "Central Kemer centre hotel rated 8.5 from 175 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"krakow-poland": {
-		"Best Value": {
-			"id": 1850028,
-			"name": "Mercure Krakow Stare Miasto",
-			"area": "Kleparz, Kraków",
-			"address": "Pawia 18 B",
-			"lat": 50.066754,
-			"lng": 19.944759,
-			"url": "https://www.booking.com/hotel/pl/mercure-krakow-stare-miasto.html",
-			"score": 9.3,
-			"count": 3091,
-			"stars": 4,
-			"total": 202.82,
-			"checked": "27 Oct 2026",
-			"reason": "Central Kleparz, Kraków hotel rated 9.3 from 3,091 Booking.com reviews: good value close to the sights."
-		}
-	},
+	"krakow-poland": { "Best Value": {
+		"id": 1850028,
+		"name": "Mercure Krakow Stare Miasto",
+		"area": "Kleparz, Kraków",
+		"address": "Pawia 18 B",
+		"lat": 50.066754,
+		"lng": 19.944759,
+		"url": "https://www.booking.com/hotel/pl/mercure-krakow-stare-miasto.html",
+		"score": 9.3,
+		"count": 3091,
+		"stars": 4,
+		"total": 202.82,
+		"checked": "27 Oct 2026",
+		"reason": "Central Kleparz, Kraków hotel rated 9.3 from 3,091 Booking.com reviews: good value close to the sights."
+	} },
 	"le-havre-france": {
 		"Budget": {
 			"id": 213578,
@@ -15071,7 +14960,7 @@ var overrides_central_2710c = {
 			"area": "Perret, Le Havre",
 			"address": "121 Rue De Paris",
 			"lat": 49.488497,
-			"lng": 0.107342,
+			"lng": .107342,
 			"url": "https://www.booking.com/hotel/fr/citotel-le-marly.html",
 			"score": 7.7,
 			"count": 170,
@@ -15086,7 +14975,7 @@ var overrides_central_2710c = {
 			"area": "Le Havre centre",
 			"address": "23, Cours De La République",
 			"lat": 49.493344,
-			"lng": 0.124318,
+			"lng": .124318,
 			"url": "https://www.booking.com/hotel/fr/hotelterminuslehavre.html",
 			"score": 8.2,
 			"count": 564,
@@ -15096,108 +14985,96 @@ var overrides_central_2710c = {
 			"reason": "Central Le Havre centre hotel rated 8.2 from 564 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"le-mans-france": {
-		"Budget": {
-			"id": 182388,
-			"name": "The Originals City, Hôtel Chantecler, Le Mans",
-			"area": "Le Mans centre",
-			"address": "50 Rue De La Pelouse",
-			"lat": 47.998404,
-			"lng": 0.192959,
-			"url": "https://www.booking.com/hotel/fr/chantecler.html",
-			"score": 7.9,
-			"count": 1078,
-			"stars": 3,
-			"total": 173.8,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Le Mans centre, rated 7.9 from 1,078 Booking.com reviews."
-		}
-	},
-	"leicester-unitedkingdom": {
-		"Best Value": {
-			"id": 5728536,
-			"name": "Novotel Leicester",
-			"area": "Leicester City Centre",
-			"address": "2 Great Central Square",
-			"lat": 52.636879,
-			"lng": -1.139759,
-			"url": "https://www.booking.com/hotel/gb/novotel-leicester.html",
-			"score": 8.8,
-			"count": 2994,
-			"stars": 4,
-			"total": 395.48,
-			"checked": "27 Oct 2026",
-			"reason": "Central Leicester City Centre hotel rated 8.8 from 2,994 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"leipzig-germany": {
-		"Best Value": {
-			"id": 1761763,
-			"name": "INNSiDE by Meliá Leipzig",
-			"area": "Mitte, Leipzig",
-			"address": "Gottschedstraße 1",
-			"lat": 51.339771,
-			"lng": 12.370545,
-			"url": "https://www.booking.com/hotel/de/innside-by-melia-leipzig.html",
-			"score": 8.6,
-			"count": 4250,
-			"stars": 4,
-			"total": 280.25,
-			"checked": "27 Oct 2026",
-			"reason": "Central Mitte, Leipzig hotel rated 8.6 from 4,250 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"liepaja-latvia": {
-		"Budget": {
-			"id": 26057,
-			"name": "Liva Hotel",
-			"area": "Liepāja centre",
-			"address": "Lielā iela 11",
-			"lat": 56.508898,
-			"lng": 21.012282,
-			"url": "https://www.booking.com/hotel/lv/liva.html",
-			"score": 8.6,
-			"count": 7045,
-			"stars": 3,
-			"total": 108.0,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Liepāja centre, rated 8.6 from 7,045 Booking.com reviews."
-		}
-	},
-	"lille-france": {
-		"Budget": {
-			"id": 45885,
-			"name": "ibis Styles Lille Centre Gare Beffroi",
-			"area": "Lille Centre",
-			"address": "172 Rue Pierre Mauroy",
-			"lat": 50.632382,
-			"lng": 3.067943,
-			"url": "https://www.booking.com/hotel/fr/ibis-styles-lille-centre-gare-beffroi.html",
-			"score": 7.9,
-			"count": 3592,
-			"stars": 3,
-			"total": 192.08,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Lille Centre, rated 7.9 from 3,592 Booking.com reviews."
-		}
-	},
-	"limassol-cyprus": {
-		"Budget": {
-			"id": 17202,
-			"name": "Pefkos City Hotel",
-			"area": "Limassol city",
-			"address": "Misiaouli & Kavazoglou Str, 70",
-			"lat": 34.674359,
-			"lng": 33.025787,
-			"url": "https://www.booking.com/hotel/cy/pefkos.html",
-			"score": 9.0,
-			"count": 1772,
-			"stars": 3,
-			"total": 259.2,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Limassol city, rated 9 from 1,772 Booking.com reviews."
-		}
-	},
+	"le-mans-france": { "Budget": {
+		"id": 182388,
+		"name": "The Originals City, Hôtel Chantecler, Le Mans",
+		"area": "Le Mans centre",
+		"address": "50 Rue De La Pelouse",
+		"lat": 47.998404,
+		"lng": .192959,
+		"url": "https://www.booking.com/hotel/fr/chantecler.html",
+		"score": 7.9,
+		"count": 1078,
+		"stars": 3,
+		"total": 173.8,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Le Mans centre, rated 7.9 from 1,078 Booking.com reviews."
+	} },
+	"leicester-unitedkingdom": { "Best Value": {
+		"id": 5728536,
+		"name": "Novotel Leicester",
+		"area": "Leicester City Centre",
+		"address": "2 Great Central Square",
+		"lat": 52.636879,
+		"lng": -1.139759,
+		"url": "https://www.booking.com/hotel/gb/novotel-leicester.html",
+		"score": 8.8,
+		"count": 2994,
+		"stars": 4,
+		"total": 395.48,
+		"checked": "27 Oct 2026",
+		"reason": "Central Leicester City Centre hotel rated 8.8 from 2,994 Booking.com reviews: good value close to the sights."
+	} },
+	"leipzig-germany": { "Best Value": {
+		"id": 1761763,
+		"name": "INNSiDE by Meliá Leipzig",
+		"area": "Mitte, Leipzig",
+		"address": "Gottschedstraße 1",
+		"lat": 51.339771,
+		"lng": 12.370545,
+		"url": "https://www.booking.com/hotel/de/innside-by-melia-leipzig.html",
+		"score": 8.6,
+		"count": 4250,
+		"stars": 4,
+		"total": 280.25,
+		"checked": "27 Oct 2026",
+		"reason": "Central Mitte, Leipzig hotel rated 8.6 from 4,250 Booking.com reviews: good value close to the sights."
+	} },
+	"liepaja-latvia": { "Budget": {
+		"id": 26057,
+		"name": "Liva Hotel",
+		"area": "Liepāja centre",
+		"address": "Lielā iela 11",
+		"lat": 56.508898,
+		"lng": 21.012282,
+		"url": "https://www.booking.com/hotel/lv/liva.html",
+		"score": 8.6,
+		"count": 7045,
+		"stars": 3,
+		"total": 108,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Liepāja centre, rated 8.6 from 7,045 Booking.com reviews."
+	} },
+	"lille-france": { "Budget": {
+		"id": 45885,
+		"name": "ibis Styles Lille Centre Gare Beffroi",
+		"area": "Lille Centre",
+		"address": "172 Rue Pierre Mauroy",
+		"lat": 50.632382,
+		"lng": 3.067943,
+		"url": "https://www.booking.com/hotel/fr/ibis-styles-lille-centre-gare-beffroi.html",
+		"score": 7.9,
+		"count": 3592,
+		"stars": 3,
+		"total": 192.08,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Lille Centre, rated 7.9 from 3,592 Booking.com reviews."
+	} },
+	"limassol-cyprus": { "Budget": {
+		"id": 17202,
+		"name": "Pefkos City Hotel",
+		"area": "Limassol city",
+		"address": "Misiaouli & Kavazoglou Str, 70",
+		"lat": 34.674359,
+		"lng": 33.025787,
+		"url": "https://www.booking.com/hotel/cy/pefkos.html",
+		"score": 9,
+		"count": 1772,
+		"stars": 3,
+		"total": 259.2,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Limassol city, rated 9 from 1,772 Booking.com reviews."
+	} },
 	"llanes-spain": {
 		"Budget": {
 			"id": 1359715,
@@ -15210,7 +15087,7 @@ var overrides_central_2710c = {
 			"score": 8.6,
 			"count": 368,
 			"stars": 2,
-			"total": 130.0,
+			"total": 130,
 			"checked": "27 Oct 2026",
 			"reason": "A central budget pick in Llanes old town, rated 8.6 from 368 Booking.com reviews."
 		},
@@ -15225,7 +15102,7 @@ var overrides_central_2710c = {
 			"score": 8.4,
 			"count": 3338,
 			"stars": 3,
-			"total": 148.0,
+			"total": 148,
 			"checked": "27 Oct 2026",
 			"reason": "Central Llanes hotel rated 8.4 from 3,338 Booking.com reviews: good value close to the sights."
 		},
@@ -15240,79 +15117,56 @@ var overrides_central_2710c = {
 			"score": 8.4,
 			"count": 1638,
 			"stars": 4,
-			"total": 144.0,
+			"total": 144,
 			"checked": "27 Oct 2026",
 			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Llanes centre rated 8.4/10 from 1,638 Booking.com reviews."
 		}
 	},
-	"marmaris-turkiye": {
-		"Budget": {
-			"id": 10178584,
-			"name": "FIFTY5 Suite Hotel",
-			"area": "Marmaris centre",
-			"address": "Çıldır Mahallesi 107/1 Sok No 7",
-			"lat": 36.850658,
-			"lng": 28.26402,
-			"url": "https://www.booking.com/hotel/tr/fifty5-suite.html",
-			"score": 8.1,
-			"count": 465,
-			"stars": 3,
-			"total": 120.0,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Marmaris centre, rated 8.1 from 465 Booking.com reviews."
-		}
-	},
-	"milan-italy": {
-		"Budget": {
-			"id": 81191,
-			"name": "Hotel Canada",
-			"area": "Milan City Centre",
-			"address": "Via Santa Sofia 16",
-			"lat": 45.45731,
-			"lng": 9.191093,
-			"url": "https://www.booking.com/hotel/it/canadamilan.html",
-			"score": 8.7,
-			"count": 2310,
-			"stars": 3,
-			"total": 476.8,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Milan City Centre, rated 8.7 from 2,310 Booking.com reviews."
-		}
-	},
-	"miskolc-hungary": {
-		"Budget": {
-			"id": 75550,
-			"name": "Hotel Pannonia",
-			"area": "Miskolc centre",
-			"address": "Kossuth u. 2",
-			"lat": 48.102995,
-			"lng": 20.781707,
-			"url": "https://www.booking.com/hotel/hu/pannonia.html",
-			"score": 8.2,
-			"count": 524,
-			"stars": 2,
-			"total": 162.8,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Miskolc centre, rated 8.2 from 524 Booking.com reviews."
-		}
-	},
-	"montpellier-france": {
-		"Budget": {
-			"id": 272001,
-			"name": "Hôtel Des Arts, Artisanal et Indépendant",
-			"area": "Montpellier City-Centre",
-			"address": "6 boulevard Victor Hugo",
-			"lat": 43.606476,
-			"lng": 3.877872,
-			"url": "https://www.booking.com/hotel/fr/des-arts-montpellier.html",
-			"score": 8.2,
-			"count": 1093,
-			"stars": 2,
-			"total": 203.76,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Montpellier City-Centre, rated 8.2 from 1,093 Booking.com reviews."
-		}
-	},
+	"marmaris-turkiye": { "Budget": {
+		"id": 10178584,
+		"name": "FIFTY5 Suite Hotel",
+		"area": "Marmaris centre",
+		"address": "Çıldır Mahallesi 107/1 Sok No 7",
+		"lat": 36.850658,
+		"lng": 28.26402,
+		"url": "https://www.booking.com/hotel/tr/fifty5-suite.html",
+		"score": 8.1,
+		"count": 465,
+		"stars": 3,
+		"total": 120,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Marmaris centre, rated 8.1 from 465 Booking.com reviews."
+	} },
+	"milan-italy": { "Budget": {
+		"id": 81191,
+		"name": "Hotel Canada",
+		"area": "Milan City Centre",
+		"address": "Via Santa Sofia 16",
+		"lat": 45.45731,
+		"lng": 9.191093,
+		"url": "https://www.booking.com/hotel/it/canadamilan.html",
+		"score": 8.7,
+		"count": 2310,
+		"stars": 3,
+		"total": 476.8,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Milan City Centre, rated 8.7 from 2,310 Booking.com reviews."
+	} },
+	"montpellier-france": { "Budget": {
+		"id": 272001,
+		"name": "Hôtel Des Arts, Artisanal et Indépendant",
+		"area": "Montpellier City-Centre",
+		"address": "6 boulevard Victor Hugo",
+		"lat": 43.606476,
+		"lng": 3.877872,
+		"url": "https://www.booking.com/hotel/fr/des-arts-montpellier.html",
+		"score": 8.2,
+		"count": 1093,
+		"stars": 2,
+		"total": 203.76,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Montpellier City-Centre, rated 8.2 from 1,093 Booking.com reviews."
+	} },
 	"munich-germany": {
 		"Budget": {
 			"id": 26266,
@@ -15322,7 +15176,7 @@ var overrides_central_2710c = {
 			"lat": 48.138063,
 			"lng": 11.557413,
 			"url": "https://www.booking.com/hotel/de/metropol.html",
-			"score": 9.0,
+			"score": 9,
 			"count": 4588,
 			"stars": 3,
 			"total": 1140.2,
@@ -15340,725 +15194,551 @@ var overrides_central_2710c = {
 			"score": 8.9,
 			"count": 3048,
 			"stars": 4,
-			"total": 1480.0,
+			"total": 1480,
 			"checked": "27 Oct 2026",
 			"reason": "Central Altstadt-Lehel, Munich hotel rated 8.9 from 3,048 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"nha-trang-vietnam": {
-		"Best Value": {
-			"id": 9920811,
-			"name": "Aaron Boutique Hotel",
-			"area": "Nha Trang centre",
-			"address": "16 Biet Thu Street, Loc Tho Ward",
-			"lat": 12.235908,
-			"lng": 109.194799,
-			"url": "https://www.booking.com/hotel/vn/aaron-boutique.html",
-			"score": 8.8,
-			"count": 1425,
-			"stars": 4,
-			"total": 60.57,
-			"checked": "27 Oct 2026",
-			"reason": "Central Nha Trang centre hotel rated 8.8 from 1,425 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"nice-france": {
-		"Best Value": {
-			"id": 366859,
-			"name": "Arome Hôtel",
-			"area": "Nice City Centre",
-			"address": "65, Rue de la Buffa",
-			"lat": 43.69606,
-			"lng": 7.256702,
-			"url": "https://www.booking.com/hotel/fr/connexion.html",
-			"score": 8.6,
-			"count": 801,
-			"stars": 3,
-			"total": 177.38,
-			"checked": "27 Oct 2026",
-			"reason": "Central Nice City Centre hotel rated 8.6 from 801 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"nimes-france": {
-		"Best Value": {
-			"id": 57302,
-			"name": "Novotel Atria Nimes Centre",
-			"area": "Nîmes centre",
-			"address": "5 boulevard de Prague",
-			"lat": 43.835421,
-			"lng": 4.363404,
-			"url": "https://www.booking.com/hotel/fr/atria-nimes-centre.html",
-			"score": 8.5,
-			"count": 414,
-			"stars": 4,
-			"total": 254.5,
-			"checked": "27 Oct 2026",
-			"reason": "Central Nîmes centre hotel rated 8.5 from 414 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"olhao-portugal": {
-		"Best Value": {
-			"id": 11131089,
-			"name": "B&B HOTEL Olhão Algarve",
-			"area": "Olhão",
-			"address": "100 Avenida Dom João VI",
-			"lat": 37.034119,
-			"lng": -7.839762,
-			"url": "https://www.booking.com/hotel/pt/b-amp-b-olhao-algarve.html",
-			"score": 8.3,
-			"count": 2090,
-			"stars": 3,
-			"total": 112.9,
-			"checked": "27 Oct 2026",
-			"reason": "Central Olhão hotel rated 8.3 from 2,090 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"orvieto-italy": {
-		"Budget": {
-			"id": 13755,
-			"name": "Hotel Corso",
-			"area": "Orvieto old town",
-			"address": "Corso Cavour 343",
-			"lat": 42.719868,
-			"lng": 12.116498,
-			"url": "https://www.booking.com/hotel/it/corso-orvieto.html",
-			"score": 8.3,
-			"count": 898,
-			"stars": 3,
-			"total": 297.2,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Orvieto old town, rated 8.3 from 898 Booking.com reviews."
-		}
-	},
-	"parma-italy": {
-		"Best Value": {
-			"id": 372934,
-			"name": "Hotel Button",
-			"area": "Parma City Centre",
-			"address": "Borgo Della Salina 7",
-			"lat": 44.800643,
-			"lng": 10.328788,
-			"url": "https://www.booking.com/hotel/it/button.html",
-			"score": 8.4,
-			"count": 3421,
-			"stars": 3,
-			"total": 184.4,
-			"checked": "27 Oct 2026",
-			"reason": "Central Parma City Centre hotel rated 8.4 from 3,421 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"passau-germany": {
-		"Luxury": {
-			"id": 264724,
-			"name": "Altstadt-Hotel Passau",
-			"area": "Passau Old Town",
-			"address": "Bräugasse 23-29",
-			"lat": 48.574379,
-			"lng": 13.473281,
-			"url": "https://www.booking.com/hotel/de/altstadt-passau.html",
-			"score": 9.0,
-			"count": 1865,
-			"stars": 4,
-			"total": 318.0,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Passau Old Town rated 9/10 from 1,865 Booking.com reviews."
-		}
-	},
-	"pau-france": {
-		"Budget": {
-			"id": 225515,
-			"name": "Ostal Pau Universite - Sure Hotel Collection by Best Western",
-			"area": "Pau",
-			"address": "38 rue Ronsard",
-			"lat": 43.318971,
-			"lng": -0.358644,
-			"url": "https://www.booking.com/hotel/fr/alhotel.html",
-			"score": 8.5,
-			"count": 1057,
-			"stars": 3,
-			"total": 165.08,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Pau, rated 8.5 from 1,057 Booking.com reviews."
-		}
-	},
-	"porto-moniz-portugal": {
-		"Best Value": {
-			"id": 38921,
-			"name": "Hotel Euro Moniz",
-			"area": "Porto Moniz",
-			"address": "Rua das Alfarrobeiras, 4",
-			"lat": 32.867152,
-			"lng": -17.169037,
-			"url": "https://www.booking.com/hotel/pt/euromoniz.html",
-			"score": 8.7,
-			"count": 1780,
-			"stars": 4,
-			"total": 322.56,
-			"checked": "27 Oct 2026",
-			"reason": "Central Porto Moniz hotel rated 8.7 from 1,780 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"punta-arenas-chile": {
-		"Luxury": {
-			"id": 255548,
-			"name": "Hotel Diego de Almagro Punta Arenas",
-			"area": "Punta Arenas centre",
-			"address": "Avenida Colón, 1290",
-			"lat": -53.16324,
-			"lng": -70.897243,
-			"url": "https://www.booking.com/hotel/cl/diego-de-almagro-punta-arenas.html",
-			"score": 8.3,
-			"count": 1452,
-			"stars": 4,
-			"total": 295.22,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Punta Arenas centre rated 8.3/10 from 1,452 Booking.com reviews."
-		}
-	},
-	"rennes-france": {
-		"Budget": {
-			"id": 79638,
-			"name": "Garden Hotel Rennes Centre Gare",
-			"area": "Rennes centre",
-			"address": "3 Rue Duhamel",
-			"lat": 48.108868,
-			"lng": -1.673457,
-			"url": "https://www.booking.com/hotel/fr/garden.html",
-			"score": 8.3,
-			"count": 2792,
-			"stars": 3,
-			"total": 254.6,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Rennes centre, rated 8.3 from 2,792 Booking.com reviews."
-		}
-	},
-	"riga-latvia": {
-		"Best Value": {
-			"id": 26004,
-			"name": "Hestia Hotel Jugend",
-			"area": "Centre, Riga",
-			"address": "Pulkveža Brieža iela 11",
-			"lat": 56.960543,
-			"lng": 24.105635,
-			"url": "https://www.booking.com/hotel/lv/hestia-hotel-jugend.html",
-			"score": 8.7,
-			"count": 5629,
-			"stars": 4,
-			"total": 118.4,
-			"checked": "27 Oct 2026",
-			"reason": "Central Centre, Riga hotel rated 8.7 from 5,629 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"riyadh-saudiarabia": {
-		"Budget": {
-			"id": 9481397,
-			"name": "Comfort Hotel Riyadh Olaya",
-			"area": "Al Olaya, Riyadh",
-			"address": "Al-Thumamah Valley St, Al Olaya",
-			"lat": 24.706898,
-			"lng": 46.677238,
-			"url": "https://www.booking.com/hotel/sa/comfort-riyadh-olaya.html",
-			"score": 8.9,
-			"count": 1463,
-			"stars": 3,
-			"total": 280.25,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Al Olaya, Riyadh, rated 8.9 from 1,463 Booking.com reviews."
-		}
-	},
-	"sabadell-spain": {
-		"Best Value": {
-			"id": 91626,
-			"name": "Hotel Urpí",
-			"area": "Sabadell centre",
-			"address": "Sant Matíes, 5",
-			"lat": 41.553127,
-			"lng": 2.105746,
-			"url": "https://www.booking.com/hotel/es/urpisabadell.html",
-			"score": 7.6,
-			"count": 1255,
-			"stars": 3,
-			"total": 227.92,
-			"checked": "27 Oct 2026",
-			"reason": "Central Sabadell centre hotel rated 7.6 from 1,255 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"salalah-oman": {
-		"Budget": {
-			"id": 1461760,
-			"name": "Muscat International Hotel Plaza",
-			"area": "Salalah centre",
-			"address": "23 July St., opposite Sultan Qaboos Mosque",
-			"lat": 17.014879,
-			"lng": 54.091792,
-			"url": "https://www.booking.com/hotel/om/muscat-internatonal-plaza-salalah.html",
-			"score": 7.9,
-			"count": 409,
-			"stars": 3,
-			"total": 97.63,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Salalah centre, rated 7.9 from 409 Booking.com reviews."
-		}
-	},
-	"san-miguel-de-allende-mexico": {
-		"Luxury": {
-			"id": 2444885,
-			"name": "Hotel Casa Blanca 7",
-			"area": "Centro Histórico",
-			"address": "Juárez 7, Zona Centro",
-			"lat": 20.914764,
-			"lng": -100.741934,
-			"url": "https://www.booking.com/hotel/mx/casa-blanca-7.html",
-			"score": 9.3,
-			"count": 62,
-			"stars": 5,
-			"total": 1269.25,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Centro Histórico, rated 9.3 from 62 Booking.com reviews."
-		}
-	},
-	"salou-spain": {
-		"Budget": {
-			"id": 90406,
-			"name": "Num Hotel",
-			"area": "Salou City Centre",
-			"address": "Carrer del Nord, 8",
-			"lat": 41.076751,
-			"lng": 1.132434,
-			"url": "https://www.booking.com/hotel/es/regentearagon.html",
-			"score": 8.3,
-			"count": 1934,
-			"stars": 4,
-			"total": 142.92,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Salou City Centre, rated 8.3 from 1,934 Booking.com reviews."
-		}
-	},
-	"santiago-chile": {
-		"Best Value": {
-			"id": 174540,
-			"name": "Hotel Panamericano",
-			"area": "Santiago City Centre",
-			"address": "Teatinos 320",
-			"lat": -33.43979,
-			"lng": -70.655514,
-			"url": "https://www.booking.com/hotel/cl/panamericano-santiago.html",
-			"score": 8.8,
-			"count": 4049,
-			"stars": 3,
-			"total": 139.56,
-			"checked": "27 Oct 2026",
-			"reason": "Central Santiago City Centre hotel rated 8.8 from 4,049 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"sarande-albania": {
-		"Budget": {
-			"id": 1429246,
-			"name": "Hotel Real",
-			"area": "Sarandë centre",
-			"address": "Rr. Skenderbeu",
-			"lat": 39.874144,
-			"lng": 20.007565,
-			"url": "https://www.booking.com/hotel/al/real.html",
-			"score": 9.2,
-			"count": 439,
-			"stars": 3,
-			"total": 90.0,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Sarandë centre, rated 9.2 from 439 Booking.com reviews."
-		}
-	},
-	"stresa-italy": {
-		"Budget": {
-			"id": 15950842,
-			"name": "Hotel Luina",
-			"area": "Stresa centre",
-			"address": "Via Giuseppe Garibaldi, 21",
-			"lat": 45.883534,
-			"lng": 8.541483,
-			"url": "https://www.booking.com/hotel/it/luina-stresa.html",
-			"score": 8.2,
-			"count": 94,
-			"stars": 2,
-			"total": 244.0,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Stresa centre, rated 8.2 from 94 Booking.com reviews."
-		}
-	},
-	"toulon-france": {
-		"Best Value": {
-			"id": 50061,
-			"name": "Hôtel Amirauté",
-			"area": "Toulon centre",
-			"address": "4, rue Adolphe Guiol",
-			"lat": 43.125132,
-			"lng": 5.929607,
-			"url": "https://www.booking.com/hotel/fr/amiraute.html",
-			"score": 8.3,
-			"count": 1152,
-			"stars": 3,
-			"total": 177.44,
-			"checked": "27 Oct 2026",
-			"reason": "Central Toulon centre hotel rated 8.3 from 1,152 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"toulouse-france": {
-		"Budget": {
-			"id": 51924,
-			"name": "Hotel Albert 1er",
-			"area": "Capitole, Toulouse",
-			"address": "8 rue Rivals",
-			"lat": 43.606032,
-			"lng": 1.444919,
-			"url": "https://www.booking.com/hotel/fr/hotelalberttoulouse.html",
-			"score": 8.8,
-			"count": 837,
-			"stars": 3,
-			"total": 253.2,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Capitole, Toulouse, rated 8.8 from 837 Booking.com reviews."
-		}
-	},
-	"trapani-italy": {
-		"Budget": {
-			"id": 486706,
-			"name": "Hotel Moderno",
-			"area": "Trapani City Centre",
-			"address": "Via Tenente Genovese 20",
-			"lat": 38.016204,
-			"lng": 12.509152,
-			"url": "https://www.booking.com/hotel/it/moderno-trapani.html",
-			"score": 8.6,
-			"count": 745,
-			"stars": 2,
-			"total": 168.64,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Trapani City Centre, rated 8.6 from 745 Booking.com reviews."
-		}
-	},
-	"trieste-italy": {
-		"Budget": {
-			"id": 89116,
-			"name": "Hotel James Joyce",
-			"area": "Trieste Old Town",
-			"address": "Via Cavazzeni 7",
-			"lat": 45.648472,
-			"lng": 13.76764,
-			"url": "https://www.booking.com/hotel/it/james-joyce.html",
-			"score": 8.5,
-			"count": 1299,
-			"stars": 3,
-			"total": 216.7,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Trieste Old Town, rated 8.5 from 1,299 Booking.com reviews."
-		}
-	},
-	"verona-italy": {
-		"Best Value": {
-			"id": 5373431,
-			"name": "Boutique Hotel Touring",
-			"area": "Verona Historical Centre",
-			"address": "Via Quintino Sella 5",
-			"lat": 45.441889,
-			"lng": 10.996925,
-			"url": "https://www.booking.com/hotel/it/touring-verona.html",
-			"score": 9.2,
-			"count": 1916,
-			"stars": 3,
-			"total": 414.0,
-			"checked": "27 Oct 2026",
-			"reason": "Central Verona Historical Centre hotel rated 9.2 from 1,916 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"versailles-france": {
-		"Budget": {
-			"id": 428542,
-			"name": "Hotel des Lys",
-			"area": "Versailles centre",
-			"address": "16 rue Richaud",
-			"lat": 48.80721,
-			"lng": 2.134073,
-			"url": "https://www.booking.com/hotel/fr/richaud.html",
-			"score": 8.5,
-			"count": 1343,
-			"stars": 3,
-			"total": 258.12,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Versailles centre, rated 8.5 from 1,343 Booking.com reviews."
-		}
-	},
-	"vichy-france": {
-		"Budget": {
-			"id": 44891,
-			"name": "Hôtel Le Biarritz - Vichy",
-			"area": "Vichy centre",
-			"address": "3, rue Grangier",
-			"lat": 46.12432,
-			"lng": 3.42432,
-			"url": "https://www.booking.com/hotel/fr/biarritz.html",
-			"score": 8.5,
-			"count": 883,
-			"stars": 3,
-			"total": 161.8,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Vichy centre, rated 8.5 from 883 Booking.com reviews."
-		}
-	},
-	"vitoria-gasteiz-spain": {
-		"Best Value": {
-			"id": 91179,
-			"name": "Silken Ciudad de Vitoria",
-			"area": "Vitoria-Gasteiz centre",
-			"address": "Portal de Castilla, 8",
-			"lat": 42.843553,
-			"lng": -2.680584,
-			"url": "https://www.booking.com/hotel/es/ciudaddevitoria.html",
-			"score": 8.8,
-			"count": 9303,
-			"stars": 4,
-			"total": 222.99,
-			"checked": "27 Oct 2026",
-			"reason": "Central Vitoria-Gasteiz centre hotel rated 8.8 from 9,303 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"tampa-united-states": {
-		"Best Value": {
-			"id": 247179,
-			"name": "The Barrymore Hotel Tampa Riverwalk",
-			"area": "Downtown Tampa",
-			"address": "111 West Fortune Street",
-			"lat": 27.953256,
-			"lng": -82.463794,
-			"url": "https://www.booking.com/hotel/us/howard-johnson-plaza-tampa.html",
-			"score": 8.3,
-			"count": 3134,
-			"stars": 3,
-			"total": 486.0,
-			"checked": "27 Oct 2026",
-			"reason": "Central Downtown Tampa hotel rated 8.3 from 3,134 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"vodice-croatia": {
-		"Luxury": {
-			"id": 3402519,
-			"name": "Hotel Scala d'Oro",
-			"area": "Vodice",
-			"address": "22 Ulica Lasan Ante Kabalera",
-			"lat": 43.759563,
-			"lng": 15.787564,
-			"url": "https://www.booking.com/hotel/hr/scala-d-39-oro.html",
-			"score": 9.0,
-			"count": 662,
-			"stars": 4,
-			"total": 206.23,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Vodice rated 9/10 from 662 Booking.com reviews."
-		}
-	},
-	"slough-unitedkingdom": {
-		"Luxury": {
-			"id": 108913,
-			"name": "Holiday Inn Slough Windsor by IHG",
-			"area": "Slough centre",
-			"address": "1 Church Street, Chalvey",
-			"lat": 51.507841,
-			"lng": -0.61119,
-			"url": "https://www.booking.com/hotel/gb/courtyard.html",
-			"score": 7.8,
-			"count": 3392,
-			"stars": 4,
-			"total": 213.74,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Slough centre rated 7.8/10 from 3,392 Booking.com reviews."
-		}
-	},
-	"salvador-brazil": {
-		"Budget": {
-			"id": 1523673,
-			"name": "Aquarena Hotel",
-			"area": "Salvador",
-			"address": "Rua Rodolfo Pimentel, 241",
-			"lat": -12.98176,
-			"lng": -38.495933,
-			"url": "https://www.booking.com/hotel/br/aquarena-suites-salvador.html",
-			"score": 8.3,
-			"count": 1603,
-			"stars": 2,
-			"total": 95.67,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Salvador, rated 8.3 from 1,603 Booking.com reviews."
-		}
-	},
-	"kolkata-india": {
-		"Best Value": {
-			"id": 251366,
-			"name": "Peerless Hotel Kolkata",
-			"area": "Chowringhee, Kolkata",
-			"address": "12 Jawahar Lal Nehru Road",
-			"lat": 22.562288,
-			"lng": 88.351412,
-			"url": "https://www.booking.com/hotel/in/the-peerless-inn.html",
-			"score": 7.8,
-			"count": 725,
-			"stars": 4,
-			"total": 205.88,
-			"checked": "27 Oct 2026",
-			"reason": "Central Chowringhee, Kolkata hotel rated 7.8 from 725 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"portsmouth-united-kingdom": {
-		"Luxury": {
-			"id": 36885,
-			"name": "Portsmouth Marriott Hotel",
-			"area": "Portsmouth",
-			"address": "Southampton Road",
-			"lat": 50.845879,
-			"lng": -1.090704,
-			"url": "https://www.booking.com/hotel/gb/portsmouth-marriott.html",
-			"score": 8.3,
-			"count": 2403,
-			"stars": 4,
-			"total": 358.23,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Portsmouth rated 8.3/10 from 2,403 Booking.com reviews."
-		}
-	},
-	"le-puy-en-velay-france": {
-		"Budget": {
-			"id": 23784,
-			"name": "B&B HOTEL Le Puy-en-Velay",
-			"area": "Vals-près-le-Puy",
-			"address": "2 Avenue Charles Massot",
-			"lat": 45.029532,
-			"lng": 3.87664,
-			"url": "https://www.booking.com/hotel/fr/brivas.html",
-			"score": 8.6,
-			"count": 1337,
-			"stars": 2,
-			"total": 135.6,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Vals-près-le-Puy, rated 8.6 from 1,337 Booking.com reviews."
-		}
-	},
-	"almaty-kazakhstan": {
-		"Best Value": {
-			"id": 2501211,
-			"name": "Plaza Hotel Almaty",
-			"area": "Almaty centre",
-			"address": "Kozhamkulov Street 215/120",
-			"lat": 43.249356,
-			"lng": 76.916985,
-			"url": "https://www.booking.com/hotel/kz/the-plaza-almaty.html",
-			"score": 8.2,
-			"count": 426,
-			"stars": 4,
-			"total": 252.55,
-			"checked": "27 Oct 2026",
-			"reason": "Central Almaty centre hotel rated 8.2 from 426 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"altoona-united-states": {
-		"Luxury": {
-			"id": 2230610,
-			"name": "Wingate by Wyndham Altoona Downtown/Medical Center",
-			"area": "Downtown Altoona",
-			"address": "909 Chestnut Avenue",
-			"lat": 40.51841,
-			"lng": -78.398753,
-			"url": "https://www.booking.com/hotel/us/wingate-by-wyndham-altoona.html",
-			"score": 8.3,
-			"count": 412,
-			"stars": 3,
-			"total": 235.5,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 3-star in Downtown Altoona rated 8.3/10 from 412 Booking.com reviews."
-		}
-	},
-	"ann-arbor-united-states": {
-		"Budget": {
-			"id": 1483188,
-			"name": "Residence Inn by Marriott Ann Arbor Downtown",
-			"area": "Downtown Ann Arbor",
-			"address": "120 West Huron Street",
-			"lat": 42.281502,
-			"lng": -83.749466,
-			"url": "https://www.booking.com/hotel/us/residence-inn-ann-arbor-downtown.html",
-			"score": 8.3,
-			"count": 56,
-			"stars": 3,
-			"total": 403.46,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Ann Arbor, rated 8.3 from 56 Booking.com reviews."
-		}
-	},
-	"antequera-spain": {
-		"Budget": {
-			"id": 5328709,
-			"name": "Hotel Manzanito",
-			"area": "Antequera centre",
-			"address": "Plaza San Sebastián, 4",
-			"lat": 37.016369,
-			"lng": -4.559611,
-			"url": "https://www.booking.com/hotel/es/manzanito.html",
-			"score": 8.3,
-			"count": 3788,
-			"stars": 2,
-			"total": 120.0,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Antequera centre, rated 8.3 from 3,788 Booking.com reviews."
-		}
-	},
-	"badajoz-spain": {
-		"Budget": {
-			"id": 10293890,
-			"name": "Akla Hotel Badajoz",
-			"area": "Badajoz old town",
-			"address": "38 Melendez Valdéz",
-			"lat": 38.879835,
-			"lng": -6.972495,
-			"url": "https://www.booking.com/hotel/es/adealba-badajoz.html",
-			"score": 9.1,
-			"count": 1435,
-			"stars": 2,
-			"total": 149.2,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Badajoz old town, rated 9.1 from 1,435 Booking.com reviews."
-		}
-	},
-	"brentwood-united-states": {
-		"Budget": {
-			"id": 191243,
-			"name": "Holiday Inn Express Hotel & Suites Nashville Brentwood 65S",
-			"area": "Brentwood",
-			"address": "5566 Franklin Pike Circle",
-			"lat": 36.041845,
-			"lng": -86.780924,
-			"url": "https://www.booking.com/hotel/us/holiday-inn-express-suites-brentwood-north-nashville-area.html",
-			"score": 8.4,
-			"count": 191,
-			"stars": 2,
-			"total": 238.43,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Brentwood, rated 8.4 from 191 Booking.com reviews."
-		}
-	},
-	"casper-united-states": {
-		"Best Value": {
-			"id": 282406,
-			"name": "Hilton Garden Inn Casper",
-			"area": "Casper",
-			"address": "1150 North Poplar Street",
-			"lat": 42.862553,
-			"lng": -106.333945,
-			"url": "https://www.booking.com/hotel/us/hilton-garden-inn-casper.html",
-			"score": 8.5,
-			"count": 136,
-			"stars": 3,
-			"total": 313.29,
-			"checked": "27 Oct 2026",
-			"reason": "Central Casper hotel rated 8.5 from 136 Booking.com reviews: good value close to the sights."
-		}
-	},
+	"nha-trang-vietnam": { "Best Value": {
+		"id": 9920811,
+		"name": "Aaron Boutique Hotel",
+		"area": "Nha Trang centre",
+		"address": "16 Biet Thu Street, Loc Tho Ward",
+		"lat": 12.235908,
+		"lng": 109.194799,
+		"url": "https://www.booking.com/hotel/vn/aaron-boutique.html",
+		"score": 8.8,
+		"count": 1425,
+		"stars": 4,
+		"total": 60.57,
+		"checked": "27 Oct 2026",
+		"reason": "Central Nha Trang centre hotel rated 8.8 from 1,425 Booking.com reviews: good value close to the sights."
+	} },
+	"nice-france": { "Best Value": {
+		"id": 366859,
+		"name": "Arome Hôtel",
+		"area": "Nice City Centre",
+		"address": "65, Rue de la Buffa",
+		"lat": 43.69606,
+		"lng": 7.256702,
+		"url": "https://www.booking.com/hotel/fr/connexion.html",
+		"score": 8.6,
+		"count": 801,
+		"stars": 3,
+		"total": 177.38,
+		"checked": "27 Oct 2026",
+		"reason": "Central Nice City Centre hotel rated 8.6 from 801 Booking.com reviews: good value close to the sights."
+	} },
+	"nimes-france": { "Best Value": {
+		"id": 57302,
+		"name": "Novotel Atria Nimes Centre",
+		"area": "Nîmes centre",
+		"address": "5 boulevard de Prague",
+		"lat": 43.835421,
+		"lng": 4.363404,
+		"url": "https://www.booking.com/hotel/fr/atria-nimes-centre.html",
+		"score": 8.5,
+		"count": 414,
+		"stars": 4,
+		"total": 254.5,
+		"checked": "27 Oct 2026",
+		"reason": "Central Nîmes centre hotel rated 8.5 from 414 Booking.com reviews: good value close to the sights."
+	} },
+	"olhao-portugal": { "Best Value": {
+		"id": 11131089,
+		"name": "B&B HOTEL Olhão Algarve",
+		"area": "Olhão",
+		"address": "100 Avenida Dom João VI",
+		"lat": 37.034119,
+		"lng": -7.839762,
+		"url": "https://www.booking.com/hotel/pt/b-amp-b-olhao-algarve.html",
+		"score": 8.3,
+		"count": 2090,
+		"stars": 3,
+		"total": 112.9,
+		"checked": "27 Oct 2026",
+		"reason": "Central Olhão hotel rated 8.3 from 2,090 Booking.com reviews: good value close to the sights."
+	} },
+	"orvieto-italy": { "Budget": {
+		"id": 13755,
+		"name": "Hotel Corso",
+		"area": "Orvieto old town",
+		"address": "Corso Cavour 343",
+		"lat": 42.719868,
+		"lng": 12.116498,
+		"url": "https://www.booking.com/hotel/it/corso-orvieto.html",
+		"score": 8.3,
+		"count": 898,
+		"stars": 3,
+		"total": 297.2,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Orvieto old town, rated 8.3 from 898 Booking.com reviews."
+	} },
+	"parma-italy": { "Best Value": {
+		"id": 372934,
+		"name": "Hotel Button",
+		"area": "Parma City Centre",
+		"address": "Borgo Della Salina 7",
+		"lat": 44.800643,
+		"lng": 10.328788,
+		"url": "https://www.booking.com/hotel/it/button.html",
+		"score": 8.4,
+		"count": 3421,
+		"stars": 3,
+		"total": 184.4,
+		"checked": "27 Oct 2026",
+		"reason": "Central Parma City Centre hotel rated 8.4 from 3,421 Booking.com reviews: good value close to the sights."
+	} },
+	"passau-germany": { "Luxury": {
+		"id": 264724,
+		"name": "Altstadt-Hotel Passau",
+		"area": "Passau Old Town",
+		"address": "Bräugasse 23-29",
+		"lat": 48.574379,
+		"lng": 13.473281,
+		"url": "https://www.booking.com/hotel/de/altstadt-passau.html",
+		"score": 9,
+		"count": 1865,
+		"stars": 4,
+		"total": 318,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Passau Old Town rated 9/10 from 1,865 Booking.com reviews."
+	} },
+	"pau-france": { "Budget": {
+		"id": 225515,
+		"name": "Ostal Pau Universite - Sure Hotel Collection by Best Western",
+		"area": "Pau",
+		"address": "38 rue Ronsard",
+		"lat": 43.318971,
+		"lng": -.358644,
+		"url": "https://www.booking.com/hotel/fr/alhotel.html",
+		"score": 8.5,
+		"count": 1057,
+		"stars": 3,
+		"total": 165.08,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Pau, rated 8.5 from 1,057 Booking.com reviews."
+	} },
+	"porto-moniz-portugal": { "Best Value": {
+		"id": 38921,
+		"name": "Hotel Euro Moniz",
+		"area": "Porto Moniz",
+		"address": "Rua das Alfarrobeiras, 4",
+		"lat": 32.867152,
+		"lng": -17.169037,
+		"url": "https://www.booking.com/hotel/pt/euromoniz.html",
+		"score": 8.7,
+		"count": 1780,
+		"stars": 4,
+		"total": 322.56,
+		"checked": "27 Oct 2026",
+		"reason": "Central Porto Moniz hotel rated 8.7 from 1,780 Booking.com reviews: good value close to the sights."
+	} },
+	"punta-arenas-chile": { "Luxury": {
+		"id": 255548,
+		"name": "Hotel Diego de Almagro Punta Arenas",
+		"area": "Punta Arenas centre",
+		"address": "Avenida Colón, 1290",
+		"lat": -53.16324,
+		"lng": -70.897243,
+		"url": "https://www.booking.com/hotel/cl/diego-de-almagro-punta-arenas.html",
+		"score": 8.3,
+		"count": 1452,
+		"stars": 4,
+		"total": 295.22,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Punta Arenas centre rated 8.3/10 from 1,452 Booking.com reviews."
+	} },
+	"rennes-france": { "Budget": {
+		"id": 79638,
+		"name": "Garden Hotel Rennes Centre Gare",
+		"area": "Rennes centre",
+		"address": "3 Rue Duhamel",
+		"lat": 48.108868,
+		"lng": -1.673457,
+		"url": "https://www.booking.com/hotel/fr/garden.html",
+		"score": 8.3,
+		"count": 2792,
+		"stars": 3,
+		"total": 254.6,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Rennes centre, rated 8.3 from 2,792 Booking.com reviews."
+	} },
+	"riga-latvia": { "Best Value": {
+		"id": 26004,
+		"name": "Hestia Hotel Jugend",
+		"area": "Centre, Riga",
+		"address": "Pulkveža Brieža iela 11",
+		"lat": 56.960543,
+		"lng": 24.105635,
+		"url": "https://www.booking.com/hotel/lv/hestia-hotel-jugend.html",
+		"score": 8.7,
+		"count": 5629,
+		"stars": 4,
+		"total": 118.4,
+		"checked": "27 Oct 2026",
+		"reason": "Central Centre, Riga hotel rated 8.7 from 5,629 Booking.com reviews: good value close to the sights."
+	} },
+	"riyadh-saudiarabia": { "Budget": {
+		"id": 9481397,
+		"name": "Comfort Hotel Riyadh Olaya",
+		"area": "Al Olaya, Riyadh",
+		"address": "Al-Thumamah Valley St, Al Olaya",
+		"lat": 24.706898,
+		"lng": 46.677238,
+		"url": "https://www.booking.com/hotel/sa/comfort-riyadh-olaya.html",
+		"score": 8.9,
+		"count": 1463,
+		"stars": 3,
+		"total": 280.25,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Al Olaya, Riyadh, rated 8.9 from 1,463 Booking.com reviews."
+	} },
+	"sabadell-spain": { "Best Value": {
+		"id": 91626,
+		"name": "Hotel Urpí",
+		"area": "Sabadell centre",
+		"address": "Sant Matíes, 5",
+		"lat": 41.553127,
+		"lng": 2.105746,
+		"url": "https://www.booking.com/hotel/es/urpisabadell.html",
+		"score": 7.6,
+		"count": 1255,
+		"stars": 3,
+		"total": 227.92,
+		"checked": "27 Oct 2026",
+		"reason": "Central Sabadell centre hotel rated 7.6 from 1,255 Booking.com reviews: good value close to the sights."
+	} },
+	"san-miguel-de-allende-mexico": { "Luxury": {
+		"id": 2444885,
+		"name": "Hotel Casa Blanca 7",
+		"area": "Centro Histórico",
+		"address": "Juárez 7, Zona Centro",
+		"lat": 20.914764,
+		"lng": -100.741934,
+		"url": "https://www.booking.com/hotel/mx/casa-blanca-7.html",
+		"score": 9.3,
+		"count": 62,
+		"stars": 5,
+		"total": 1269.25,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Centro Histórico, rated 9.3 from 62 Booking.com reviews."
+	} },
+	"salou-spain": { "Budget": {
+		"id": 90406,
+		"name": "Num Hotel",
+		"area": "Salou City Centre",
+		"address": "Carrer del Nord, 8",
+		"lat": 41.076751,
+		"lng": 1.132434,
+		"url": "https://www.booking.com/hotel/es/regentearagon.html",
+		"score": 8.3,
+		"count": 1934,
+		"stars": 4,
+		"total": 142.92,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Salou City Centre, rated 8.3 from 1,934 Booking.com reviews."
+	} },
+	"santiago-chile": { "Best Value": {
+		"id": 174540,
+		"name": "Hotel Panamericano",
+		"area": "Santiago City Centre",
+		"address": "Teatinos 320",
+		"lat": -33.43979,
+		"lng": -70.655514,
+		"url": "https://www.booking.com/hotel/cl/panamericano-santiago.html",
+		"score": 8.8,
+		"count": 4049,
+		"stars": 3,
+		"total": 139.56,
+		"checked": "27 Oct 2026",
+		"reason": "Central Santiago City Centre hotel rated 8.8 from 4,049 Booking.com reviews: good value close to the sights."
+	} },
+	"sarande-albania": { "Budget": {
+		"id": 1429246,
+		"name": "Hotel Real",
+		"area": "Sarandë centre",
+		"address": "Rr. Skenderbeu",
+		"lat": 39.874144,
+		"lng": 20.007565,
+		"url": "https://www.booking.com/hotel/al/real.html",
+		"score": 9.2,
+		"count": 439,
+		"stars": 3,
+		"total": 90,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Sarandë centre, rated 9.2 from 439 Booking.com reviews."
+	} },
+	"stresa-italy": { "Budget": {
+		"id": 15950842,
+		"name": "Hotel Luina",
+		"area": "Stresa centre",
+		"address": "Via Giuseppe Garibaldi, 21",
+		"lat": 45.883534,
+		"lng": 8.541483,
+		"url": "https://www.booking.com/hotel/it/luina-stresa.html",
+		"score": 8.2,
+		"count": 94,
+		"stars": 2,
+		"total": 244,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Stresa centre, rated 8.2 from 94 Booking.com reviews."
+	} },
+	"toulon-france": { "Best Value": {
+		"id": 50061,
+		"name": "Hôtel Amirauté",
+		"area": "Toulon centre",
+		"address": "4, rue Adolphe Guiol",
+		"lat": 43.125132,
+		"lng": 5.929607,
+		"url": "https://www.booking.com/hotel/fr/amiraute.html",
+		"score": 8.3,
+		"count": 1152,
+		"stars": 3,
+		"total": 177.44,
+		"checked": "27 Oct 2026",
+		"reason": "Central Toulon centre hotel rated 8.3 from 1,152 Booking.com reviews: good value close to the sights."
+	} },
+	"toulouse-france": { "Budget": {
+		"id": 51924,
+		"name": "Hotel Albert 1er",
+		"area": "Capitole, Toulouse",
+		"address": "8 rue Rivals",
+		"lat": 43.606032,
+		"lng": 1.444919,
+		"url": "https://www.booking.com/hotel/fr/hotelalberttoulouse.html",
+		"score": 8.8,
+		"count": 837,
+		"stars": 3,
+		"total": 253.2,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Capitole, Toulouse, rated 8.8 from 837 Booking.com reviews."
+	} },
+	"trapani-italy": { "Budget": {
+		"id": 486706,
+		"name": "Hotel Moderno",
+		"area": "Trapani City Centre",
+		"address": "Via Tenente Genovese 20",
+		"lat": 38.016204,
+		"lng": 12.509152,
+		"url": "https://www.booking.com/hotel/it/moderno-trapani.html",
+		"score": 8.6,
+		"count": 745,
+		"stars": 2,
+		"total": 168.64,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Trapani City Centre, rated 8.6 from 745 Booking.com reviews."
+	} },
+	"trieste-italy": { "Budget": {
+		"id": 89116,
+		"name": "Hotel James Joyce",
+		"area": "Trieste Old Town",
+		"address": "Via Cavazzeni 7",
+		"lat": 45.648472,
+		"lng": 13.76764,
+		"url": "https://www.booking.com/hotel/it/james-joyce.html",
+		"score": 8.5,
+		"count": 1299,
+		"stars": 3,
+		"total": 216.7,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Trieste Old Town, rated 8.5 from 1,299 Booking.com reviews."
+	} },
+	"verona-italy": { "Best Value": {
+		"id": 5373431,
+		"name": "Boutique Hotel Touring",
+		"area": "Verona Historical Centre",
+		"address": "Via Quintino Sella 5",
+		"lat": 45.441889,
+		"lng": 10.996925,
+		"url": "https://www.booking.com/hotel/it/touring-verona.html",
+		"score": 9.2,
+		"count": 1916,
+		"stars": 3,
+		"total": 414,
+		"checked": "27 Oct 2026",
+		"reason": "Central Verona Historical Centre hotel rated 9.2 from 1,916 Booking.com reviews: good value close to the sights."
+	} },
+	"versailles-france": { "Budget": {
+		"id": 428542,
+		"name": "Hotel des Lys",
+		"area": "Versailles centre",
+		"address": "16 rue Richaud",
+		"lat": 48.80721,
+		"lng": 2.134073,
+		"url": "https://www.booking.com/hotel/fr/richaud.html",
+		"score": 8.5,
+		"count": 1343,
+		"stars": 3,
+		"total": 258.12,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Versailles centre, rated 8.5 from 1,343 Booking.com reviews."
+	} },
+	"vichy-france": { "Budget": {
+		"id": 44891,
+		"name": "Hôtel Le Biarritz - Vichy",
+		"area": "Vichy centre",
+		"address": "3, rue Grangier",
+		"lat": 46.12432,
+		"lng": 3.42432,
+		"url": "https://www.booking.com/hotel/fr/biarritz.html",
+		"score": 8.5,
+		"count": 883,
+		"stars": 3,
+		"total": 161.8,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Vichy centre, rated 8.5 from 883 Booking.com reviews."
+	} },
+	"vitoria-gasteiz-spain": { "Best Value": {
+		"id": 91179,
+		"name": "Silken Ciudad de Vitoria",
+		"area": "Vitoria-Gasteiz centre",
+		"address": "Portal de Castilla, 8",
+		"lat": 42.843553,
+		"lng": -2.680584,
+		"url": "https://www.booking.com/hotel/es/ciudaddevitoria.html",
+		"score": 8.8,
+		"count": 9303,
+		"stars": 4,
+		"total": 222.99,
+		"checked": "27 Oct 2026",
+		"reason": "Central Vitoria-Gasteiz centre hotel rated 8.8 from 9,303 Booking.com reviews: good value close to the sights."
+	} },
+	"vodice-croatia": { "Luxury": {
+		"id": 3402519,
+		"name": "Hotel Scala d'Oro",
+		"area": "Vodice",
+		"address": "22 Ulica Lasan Ante Kabalera",
+		"lat": 43.759563,
+		"lng": 15.787564,
+		"url": "https://www.booking.com/hotel/hr/scala-d-39-oro.html",
+		"score": 9,
+		"count": 662,
+		"stars": 4,
+		"total": 206.23,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Vodice rated 9/10 from 662 Booking.com reviews."
+	} },
+	"portsmouth-united-kingdom": { "Luxury": {
+		"id": 36885,
+		"name": "Portsmouth Marriott Hotel",
+		"area": "Portsmouth",
+		"address": "Southampton Road",
+		"lat": 50.845879,
+		"lng": -1.090704,
+		"url": "https://www.booking.com/hotel/gb/portsmouth-marriott.html",
+		"score": 8.3,
+		"count": 2403,
+		"stars": 4,
+		"total": 358.23,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Portsmouth rated 8.3/10 from 2,403 Booking.com reviews."
+	} },
+	"le-puy-en-velay-france": { "Budget": {
+		"id": 23784,
+		"name": "B&B HOTEL Le Puy-en-Velay",
+		"area": "Vals-près-le-Puy",
+		"address": "2 Avenue Charles Massot",
+		"lat": 45.029532,
+		"lng": 3.87664,
+		"url": "https://www.booking.com/hotel/fr/brivas.html",
+		"score": 8.6,
+		"count": 1337,
+		"stars": 2,
+		"total": 135.6,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Vals-près-le-Puy, rated 8.6 from 1,337 Booking.com reviews."
+	} },
+	"altoona-united-states": { "Luxury": {
+		"id": 2230610,
+		"name": "Wingate by Wyndham Altoona Downtown/Medical Center",
+		"area": "Downtown Altoona",
+		"address": "909 Chestnut Avenue",
+		"lat": 40.51841,
+		"lng": -78.398753,
+		"url": "https://www.booking.com/hotel/us/wingate-by-wyndham-altoona.html",
+		"score": 8.3,
+		"count": 412,
+		"stars": 3,
+		"total": 235.5,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 3-star in Downtown Altoona rated 8.3/10 from 412 Booking.com reviews."
+	} },
+	"ann-arbor-united-states": { "Budget": {
+		"id": 1483188,
+		"name": "Residence Inn by Marriott Ann Arbor Downtown",
+		"area": "Downtown Ann Arbor",
+		"address": "120 West Huron Street",
+		"lat": 42.281502,
+		"lng": -83.749466,
+		"url": "https://www.booking.com/hotel/us/residence-inn-ann-arbor-downtown.html",
+		"score": 8.3,
+		"count": 56,
+		"stars": 3,
+		"total": 403.46,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Downtown Ann Arbor, rated 8.3 from 56 Booking.com reviews."
+	} },
+	"antequera-spain": { "Budget": {
+		"id": 5328709,
+		"name": "Hotel Manzanito",
+		"area": "Antequera centre",
+		"address": "Plaza San Sebastián, 4",
+		"lat": 37.016369,
+		"lng": -4.559611,
+		"url": "https://www.booking.com/hotel/es/manzanito.html",
+		"score": 8.3,
+		"count": 3788,
+		"stars": 2,
+		"total": 120,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Antequera centre, rated 8.3 from 3,788 Booking.com reviews."
+	} },
+	"badajoz-spain": { "Budget": {
+		"id": 10293890,
+		"name": "Akla Hotel Badajoz",
+		"area": "Badajoz old town",
+		"address": "38 Melendez Valdéz",
+		"lat": 38.879835,
+		"lng": -6.972495,
+		"url": "https://www.booking.com/hotel/es/adealba-badajoz.html",
+		"score": 9.1,
+		"count": 1435,
+		"stars": 2,
+		"total": 149.2,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Badajoz old town, rated 9.1 from 1,435 Booking.com reviews."
+	} },
+	"brentwood-united-states": { "Budget": {
+		"id": 191243,
+		"name": "Holiday Inn Express Hotel & Suites Nashville Brentwood 65S",
+		"area": "Brentwood",
+		"address": "5566 Franklin Pike Circle",
+		"lat": 36.041845,
+		"lng": -86.780924,
+		"url": "https://www.booking.com/hotel/us/holiday-inn-express-suites-brentwood-north-nashville-area.html",
+		"score": 8.4,
+		"count": 191,
+		"stars": 2,
+		"total": 238.43,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Brentwood, rated 8.4 from 191 Booking.com reviews."
+	} },
+	"casper-united-states": { "Best Value": {
+		"id": 282406,
+		"name": "Hilton Garden Inn Casper",
+		"area": "Casper",
+		"address": "1150 North Poplar Street",
+		"lat": 42.862553,
+		"lng": -106.333945,
+		"url": "https://www.booking.com/hotel/us/hilton-garden-inn-casper.html",
+		"score": 8.5,
+		"count": 136,
+		"stars": 3,
+		"total": 313.29,
+		"checked": "27 Oct 2026",
+		"reason": "Central Casper hotel rated 8.5 from 136 Booking.com reviews: good value close to the sights."
+	} },
 	"dallas-united-states": {
 		"Budget": {
 			"id": 2186378,
@@ -16091,463 +15771,246 @@ var overrides_central_2710c = {
 			"reason": "Central Main Street District, Dallas hotel rated 8.4 from 1,181 Booking.com reviews: good value close to the sights."
 		}
 	},
-	"darlington-united-kingdom": {
-		"Luxury": {
-			"id": 115510,
-			"name": "Bannatyne Hotel Darlington",
-			"area": "Darlington",
-			"address": "Southend Avenue",
-			"lat": 54.522252,
-			"lng": -1.560893,
-			"url": "https://www.booking.com/hotel/gb/thenewgrangehotel.html",
-			"score": 8.1,
-			"count": 1751,
-			"stars": 4,
-			"total": 342.58,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Darlington rated 8.1/10 from 1,751 Booking.com reviews."
-		}
-	},
-	"mytilene-greece": {
-		"Luxury": {
-			"id": 273019,
-			"name": "Theofilos Paradise Boutique Hotel",
-			"area": "Mytilene centre",
-			"address": "Skra 7",
-			"lat": 39.106489,
-			"lng": 26.559408,
-			"url": "https://www.booking.com/hotel/gr/theofilos-paradise-boutique.html",
-			"score": 9.2,
-			"count": 579,
-			"stars": 4,
-			"total": 253.5,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Mytilene centre rated 9.2/10 from 579 Booking.com reviews."
-		}
-	},
-	"namur-belgium": {
-		"Best Value": {
-			"id": 20171,
-			"name": "Ibis Namur Centre",
-			"area": "Namur centre",
-			"address": "Rue du Premier Lanciers 10",
-			"lat": 50.466335,
-			"lng": 4.871066,
-			"url": "https://www.booking.com/hotel/be/ibisnamur.html",
-			"score": 8.1,
-			"count": 1823,
-			"stars": 3,
-			"total": 204.08,
-			"checked": "27 Oct 2026",
-			"reason": "Central Namur centre hotel rated 8.1 from 1,823 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"kielce-poland": {
-		"Luxury": {
-			"id": 591528,
-			"name": "Hotel Willa Hueta",
-			"area": "Kielce centre",
-			"address": "Ul. Juliusza Słowackiego 25",
-			"lat": 50.863782,
-			"lng": 20.631243,
-			"url": "https://www.booking.com/hotel/pl/willa-hueta.html",
-			"score": 8.8,
-			"count": 795,
-			"stars": 4,
-			"total": 158.98,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Kielce centre rated 8.8/10 from 795 Booking.com reviews."
-		}
-	},
-	"omaha-united-states": {
-		"Budget": {
-			"id": 10384055,
-			"name": "Moxy Omaha Downtown",
-			"area": "Downtown Omaha",
-			"address": "409 South 12th Street",
-			"lat": 41.25623,
-			"lng": -95.9316,
-			"url": "https://www.booking.com/hotel/us/moxy-omaha-downtown.html",
-			"score": 8.3,
-			"count": 296,
-			"stars": 3,
-			"total": 250.76,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Omaha, rated 8.3 from 296 Booking.com reviews."
-		}
-	},
-	"regina-canada": {
-		"Budget": {
-			"id": 373473,
-			"name": "Wingate by Wyndham Regina",
-			"area": "Downtown Regina",
-			"address": "1700 Broad Street",
-			"lat": 50.451628,
-			"lng": -104.606648,
-			"url": "https://www.booking.com/hotel/ca/wingate-by-wyndham-regina.html",
-			"score": 7.7,
-			"count": 545,
-			"stars": 3,
-			"total": 188.11,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Regina, rated 7.7 from 545 Booking.com reviews."
-		}
-	},
-	"santa-fe-united-states": {
-		"Budget": {
-			"id": 277420,
-			"name": "El Sendero Inn, an Ascend Collection Hotel",
-			"area": "Santa Fe centre",
-			"address": "311 Old Santa Fe Trail",
-			"lat": 35.68507,
-			"lng": -105.936952,
-			"url": "https://www.booking.com/hotel/us/garrett-s-desert-inn.html",
-			"score": 8.4,
-			"count": 1554,
-			"stars": 4,
-			"total": 370.05,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Santa Fe centre, rated 8.4 from 1,554 Booking.com reviews."
-		}
-	},
-	"savannah-unitedstates": {
-		"Budget": {
-			"id": 250149,
-			"name": "Springhill Suites by Marriott Savannah Downtown Historic District",
-			"area": "Historic Savannah",
-			"address": "150 Montgomery Street",
-			"lat": 32.078114,
-			"lng": -81.096523,
-			"url": "https://www.booking.com/hotel/us/springhill-suites-by-marriott-savannah-downtown-historic-district.html",
-			"score": 8.6,
-			"count": 1081,
-			"stars": 3,
-			"total": 342.22,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Historic Savannah, rated 8.6 from 1,081 Booking.com reviews."
-		}
-	},
-	"shimla-india": {
-		"Luxury": {
-			"id": 78785,
-			"name": "The Oberoi Cecil",
-			"area": "Shimla",
-			"address": "Chaura Maidan",
-			"lat": 31.103213,
-			"lng": 77.154611,
-			"url": "https://www.booking.com/hotel/in/the-oberoi-cecil.html",
-			"score": 9.5,
-			"count": 256,
-			"stars": 5,
-			"total": 543.39,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Shimla, rated 9.5 from 256 Booking.com reviews."
-		}
-	},
-	"trabzon-turkiye": {
-		"Budget": {
-			"id": 3588192,
-			"name": "Life Point Hotel",
-			"area": "Trabzon City Center",
-			"address": "Kemerkaya Mahallesi Halkevi Caddesi No:27",
-			"lat": 41.007035,
-			"lng": 39.727777,
-			"url": "https://www.booking.com/hotel/tr/life-point-trabzon-ili1.html",
-			"score": 8.3,
-			"count": 372,
-			"stars": 3,
-			"total": 188.1,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Trabzon City Center, rated 8.3 from 372 Booking.com reviews."
-		}
-	},
-	"windsor-unitedkingdom": {
-		"Luxury": {
-			"id": 200685,
-			"name": "Sir Christopher Wren Hotel",
-			"area": "Windsor City Centre",
-			"address": "Thames Street",
-			"lat": 51.485328,
-			"lng": -0.607974,
-			"url": "https://www.booking.com/hotel/gb/scw.html",
-			"score": 8.4,
-			"count": 1828,
-			"stars": 4,
-			"total": 481.93,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Windsor City Centre rated 8.4/10 from 1,828 Booking.com reviews."
-		}
-	},
-	"austin-unitedstates": {
-		"Budget": {
-			"id": 9717923,
-			"name": "Fairfield Inn & Suites Austin Downtown",
-			"area": "Rainey Street, Downtown Austin",
-			"address": "76 East Avenue",
-			"lat": 30.25888,
-			"lng": -97.737936,
-			"url": "https://www.booking.com/hotel/us/fairfield-by-marriott-inn-suites-austin-downtown.html",
-			"score": 8.9,
-			"count": 67,
-			"stars": 3,
-			"total": 603.08,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Rainey Street, Downtown Austin, rated 8.9 from 67 Booking.com reviews."
-		}
-	},
-	"biloxi-united-states": {
-		"Budget": {
-			"id": 275860,
-			"name": "Best Western Oak Manor",
-			"area": "Biloxi",
-			"address": "886 Beach Boulevard",
-			"lat": 30.394736,
-			"lng": -88.891606,
-			"url": "https://www.booking.com/hotel/us/best-western-plus-oak-manor.html",
-			"score": 7.9,
-			"count": 741,
-			"stars": 3,
-			"total": 167.33,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Biloxi, rated 7.9 from 741 Booking.com reviews."
-		}
-	},
-	"charlotte-united-states": {
-		"Budget": {
-			"id": 42235,
-			"name": "Hampton Inn Charlotte Uptown",
-			"area": "Uptown Charlotte",
-			"address": "530 E. Martin Luther King Jr. Blvd",
-			"lat": 35.22018,
-			"lng": -80.842228,
-			"url": "https://www.booking.com/hotel/us/hampton-inn-charlotte-uptown.html",
-			"score": 8.4,
-			"count": 452,
-			"stars": 3,
-			"total": 296.22,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Uptown Charlotte, rated 8.4 from 452 Booking.com reviews."
-		}
-	},
-	"corpus-christi-united-states": {
-		"Budget": {
-			"id": 58959,
-			"name": "Best Western Corpus Christi",
-			"area": "Downtown Corpus Christi",
-			"address": "300 North Shoreline Boulevard",
-			"lat": 27.794105,
-			"lng": -97.392618,
-			"url": "https://www.booking.com/hotel/us/b-w-marina-grand-corpus-christi-texas.html",
-			"score": 8.2,
-			"count": 548,
-			"stars": 3,
-			"total": 222.09,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Downtown Corpus Christi, rated 8.2 from 548 Booking.com reviews."
-		}
-	},
-	"dubai": {
-		"Best Value": {
-			"id": 73581,
-			"name": "Rose Rayhaan by Rotana - Dubai",
-			"area": "Trade Centre, Dubai",
-			"address": "Sheikh Zayed Road",
-			"lat": 25.211921,
-			"lng": 55.276412,
-			"url": "https://www.booking.com/hotel/ae/rose-rotana-dubai.html",
-			"score": 8.3,
-			"count": 4794,
-			"stars": 4,
-			"total": 283.74,
-			"checked": "27 Oct 2026",
-			"reason": "Central Trade Centre, Dubai hotel rated 8.3 from 4,794 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"florianopolis-brazil": {
-		"Budget": {
-			"id": 718144,
-			"name": "Ibis Florianopolis",
-			"area": "Florianópolis City Centre",
-			"address": "Avenida Rio Branco 37",
-			"lat": -27.592466,
-			"lng": -48.558131,
-			"url": "https://www.booking.com/hotel/br/ibis-florianopolis.html",
-			"score": 8.7,
-			"count": 2664,
-			"stars": 3,
-			"total": 204.01,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Florianópolis City Centre, rated 8.7 from 2,664 Booking.com reviews."
-		}
-	},
-	"houston-united-states": {
-		"Best Value": {
-			"id": 4989542,
-			"name": "Cambria Hotel Houston Downtown Convention Center",
-			"area": "Downtown Houston",
-			"address": "1314 Texas Avenue",
-			"lat": 29.75803,
-			"lng": -95.359582,
-			"url": "https://www.booking.com/hotel/us/cambria-houston-downtown-convention-center.html",
-			"score": 8.4,
-			"count": 1846,
-			"stars": 4,
-			"total": 305.47,
-			"checked": "27 Oct 2026",
-			"reason": "Central Downtown Houston hotel rated 8.4 from 1,846 Booking.com reviews: good value close to the sights."
-		},
-		"Luxury": {
-			"id": 184636,
-			"name": "Four Seasons Hotel Houston",
-			"area": "Downtown Houston",
-			"address": "1300 Lamar Street",
-			"lat": 29.754184,
-			"lng": -95.362595,
-			"url": "https://www.booking.com/hotel/us/four-seasons-houston.html",
-			"score": 9.0,
-			"count": 60,
-			"stars": 5,
-			"total": 1567.19,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Downtown Houston, rated 9 from 60 Booking.com reviews."
-		}
-	},
-	"kandy-srilanka": {
-		"Best Value": {
-			"id": 9584646,
-			"name": "Lake Avenue Hotel Kandy",
-			"area": "Kandy City Centre",
-			"address": "No 14 Anagarika Dharmapala Mawatha",
-			"lat": 7.291025,
-			"lng": 80.644411,
-			"url": "https://www.booking.com/hotel/lk/lake-avenue.html",
-			"score": 8.6,
-			"count": 760,
-			"stars": 4,
-			"total": 175.12,
-			"checked": "27 Oct 2026",
-			"reason": "Central Kandy City Centre hotel rated 8.6 from 760 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"kingston-canada": {
-		"Luxury": {
-			"id": 275202,
-			"name": "Kingston Marriott Hotel",
-			"area": "Downtown Kingston",
-			"address": "285 King Street East",
-			"lat": 44.229353,
-			"lng": -76.481594,
-			"url": "https://www.booking.com/hotel/ca/four-points-by-sheraton-kingston.html",
-			"score": 8.5,
-			"count": 494,
-			"stars": 4,
-			"total": 286.26,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Kingston rated 8.5/10 from 494 Booking.com reviews."
-		}
-	},
-	"larnaca-cyprus": {
-		"Luxury": {
-			"id": 3540491,
-			"name": "Radisson Blu Hotel, Larnaca",
-			"area": "Larnaca",
-			"address": "2, Atlantidon street",
-			"lat": 34.931383,
-			"lng": 33.637433,
-			"url": "https://www.booking.com/hotel/cy/radisson-blu-larnaca.html",
-			"score": 8.5,
-			"count": 1552,
-			"stars": 5,
-			"total": 474.36,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Larnaca, rated 8.5 from 1,552 Booking.com reviews."
-		}
-	},
-	"lovina-indonesia": {
-		"Luxury": {
-			"id": 403404,
-			"name": "The Lovina",
-			"area": "Kalibukbuk, Lovina",
-			"address": "Jl. Mas Lovina, Kalibukbuk",
-			"lat": -8.154251,
-			"lng": 115.030959,
-			"url": "https://www.booking.com/hotel/id/lovina-beach-resort.html",
-			"score": 9.0,
-			"count": 378,
-			"stars": 5,
-			"total": 177.41,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Kalibukbuk, Lovina, rated 9 from 378 Booking.com reviews."
-		}
-	},
-	"lefkada-greece": {
-		"Luxury": {
-			"id": 242589,
-			"name": "Hotel Lefkas",
-			"area": "Lefkada Town",
-			"address": "Filippa Panagou 2",
-			"lat": 38.834975,
-			"lng": 20.710264,
-			"url": "https://www.booking.com/hotel/gr/lefkas.html",
-			"score": 8.0,
-			"count": 968,
-			"stars": 3,
-			"total": 103.0,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 3-star in Lefkada Town rated 8/10 from 968 Booking.com reviews."
-		}
-	},
-	"manila-philippines": {
-		"Luxury": {
-			"id": 778247,
-			"name": "The Manila Hotel",
-			"area": "Ermita, Manila",
-			"address": "One Rizal Park",
-			"lat": 14.58363,
-			"lng": 120.973865,
-			"url": "https://www.booking.com/hotel/ph/the-manila-hotel.html",
-			"score": 8.8,
-			"count": 807,
-			"stars": 5,
-			"total": 265.82,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Ermita, Manila, rated 8.8 from 807 Booking.com reviews."
-		}
-	},
-	"roses-spain": {
-		"Luxury": {
-			"id": 94221,
-			"name": "Hotel Maritim 4 Superior",
-			"area": "Santa Margarida, Roses",
-			"address": "Jacinto Benavente 2-10",
-			"lat": 42.264821,
-			"lng": 3.161512,
-			"url": "https://www.booking.com/hotel/es/maritim.html",
-			"score": 8.5,
-			"count": 3516,
-			"stars": 4,
-			"total": 249.42,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Santa Margarida, Roses rated 8.5/10 from 3,516 Booking.com reviews."
-		}
-	},
-	"san-diego-unitedstates": {
-		"Best Value": {
-			"id": 263697,
-			"name": "Courtyard by Marriott San Diego Downtown",
-			"area": "Downtown San Diego",
-			"address": "530 Broadway",
-			"lat": 32.715951,
-			"lng": -117.159536,
-			"url": "https://www.booking.com/hotel/us/courtyard-san-diego-downtown.html",
-			"score": 8.3,
-			"count": 652,
-			"stars": 4,
-			"total": 390.23,
-			"checked": "27 Oct 2026",
-			"reason": "Central Downtown San Diego hotel rated 8.3 from 652 Booking.com reviews: good value close to the sights."
-		}
-	},
+	"darlington-united-kingdom": { "Luxury": {
+		"id": 115510,
+		"name": "Bannatyne Hotel Darlington",
+		"area": "Darlington",
+		"address": "Southend Avenue",
+		"lat": 54.522252,
+		"lng": -1.560893,
+		"url": "https://www.booking.com/hotel/gb/thenewgrangehotel.html",
+		"score": 8.1,
+		"count": 1751,
+		"stars": 4,
+		"total": 342.58,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Darlington rated 8.1/10 from 1,751 Booking.com reviews."
+	} },
+	"kielce-poland": { "Luxury": {
+		"id": 591528,
+		"name": "Hotel Willa Hueta",
+		"area": "Kielce centre",
+		"address": "Ul. Juliusza Słowackiego 25",
+		"lat": 50.863782,
+		"lng": 20.631243,
+		"url": "https://www.booking.com/hotel/pl/willa-hueta.html",
+		"score": 8.8,
+		"count": 795,
+		"stars": 4,
+		"total": 158.98,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Kielce centre rated 8.8/10 from 795 Booking.com reviews."
+	} },
+	"omaha-united-states": { "Budget": {
+		"id": 10384055,
+		"name": "Moxy Omaha Downtown",
+		"area": "Downtown Omaha",
+		"address": "409 South 12th Street",
+		"lat": 41.25623,
+		"lng": -95.9316,
+		"url": "https://www.booking.com/hotel/us/moxy-omaha-downtown.html",
+		"score": 8.3,
+		"count": 296,
+		"stars": 3,
+		"total": 250.76,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Downtown Omaha, rated 8.3 from 296 Booking.com reviews."
+	} },
+	"santa-fe-united-states": { "Budget": {
+		"id": 277420,
+		"name": "El Sendero Inn, an Ascend Collection Hotel",
+		"area": "Santa Fe centre",
+		"address": "311 Old Santa Fe Trail",
+		"lat": 35.68507,
+		"lng": -105.936952,
+		"url": "https://www.booking.com/hotel/us/garrett-s-desert-inn.html",
+		"score": 8.4,
+		"count": 1554,
+		"stars": 4,
+		"total": 370.05,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Santa Fe centre, rated 8.4 from 1,554 Booking.com reviews."
+	} },
+	"savannah-unitedstates": { "Budget": {
+		"id": 250149,
+		"name": "Springhill Suites by Marriott Savannah Downtown Historic District",
+		"area": "Historic Savannah",
+		"address": "150 Montgomery Street",
+		"lat": 32.078114,
+		"lng": -81.096523,
+		"url": "https://www.booking.com/hotel/us/springhill-suites-by-marriott-savannah-downtown-historic-district.html",
+		"score": 8.6,
+		"count": 1081,
+		"stars": 3,
+		"total": 342.22,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Historic Savannah, rated 8.6 from 1,081 Booking.com reviews."
+	} },
+	"shimla-india": { "Luxury": {
+		"id": 78785,
+		"name": "The Oberoi Cecil",
+		"area": "Shimla",
+		"address": "Chaura Maidan",
+		"lat": 31.103213,
+		"lng": 77.154611,
+		"url": "https://www.booking.com/hotel/in/the-oberoi-cecil.html",
+		"score": 9.5,
+		"count": 256,
+		"stars": 5,
+		"total": 543.39,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Shimla, rated 9.5 from 256 Booking.com reviews."
+	} },
+	"biloxi-united-states": { "Budget": {
+		"id": 275860,
+		"name": "Best Western Oak Manor",
+		"area": "Biloxi",
+		"address": "886 Beach Boulevard",
+		"lat": 30.394736,
+		"lng": -88.891606,
+		"url": "https://www.booking.com/hotel/us/best-western-plus-oak-manor.html",
+		"score": 7.9,
+		"count": 741,
+		"stars": 3,
+		"total": 167.33,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Biloxi, rated 7.9 from 741 Booking.com reviews."
+	} },
+	"charlotte-united-states": { "Budget": {
+		"id": 42235,
+		"name": "Hampton Inn Charlotte Uptown",
+		"area": "Uptown Charlotte",
+		"address": "530 E. Martin Luther King Jr. Blvd",
+		"lat": 35.22018,
+		"lng": -80.842228,
+		"url": "https://www.booking.com/hotel/us/hampton-inn-charlotte-uptown.html",
+		"score": 8.4,
+		"count": 452,
+		"stars": 3,
+		"total": 296.22,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Uptown Charlotte, rated 8.4 from 452 Booking.com reviews."
+	} },
+	"corpus-christi-united-states": { "Budget": {
+		"id": 58959,
+		"name": "Best Western Corpus Christi",
+		"area": "Downtown Corpus Christi",
+		"address": "300 North Shoreline Boulevard",
+		"lat": 27.794105,
+		"lng": -97.392618,
+		"url": "https://www.booking.com/hotel/us/b-w-marina-grand-corpus-christi-texas.html",
+		"score": 8.2,
+		"count": 548,
+		"stars": 3,
+		"total": 222.09,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Downtown Corpus Christi, rated 8.2 from 548 Booking.com reviews."
+	} },
+	"kandy-srilanka": { "Best Value": {
+		"id": 9584646,
+		"name": "Lake Avenue Hotel Kandy",
+		"area": "Kandy City Centre",
+		"address": "No 14 Anagarika Dharmapala Mawatha",
+		"lat": 7.291025,
+		"lng": 80.644411,
+		"url": "https://www.booking.com/hotel/lk/lake-avenue.html",
+		"score": 8.6,
+		"count": 760,
+		"stars": 4,
+		"total": 175.12,
+		"checked": "27 Oct 2026",
+		"reason": "Central Kandy City Centre hotel rated 8.6 from 760 Booking.com reviews: good value close to the sights."
+	} },
+	"kingston-canada": { "Luxury": {
+		"id": 275202,
+		"name": "Kingston Marriott Hotel",
+		"area": "Downtown Kingston",
+		"address": "285 King Street East",
+		"lat": 44.229353,
+		"lng": -76.481594,
+		"url": "https://www.booking.com/hotel/ca/four-points-by-sheraton-kingston.html",
+		"score": 8.5,
+		"count": 494,
+		"stars": 4,
+		"total": 286.26,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Downtown Kingston rated 8.5/10 from 494 Booking.com reviews."
+	} },
+	"larnaca-cyprus": { "Luxury": {
+		"id": 3540491,
+		"name": "Radisson Blu Hotel, Larnaca",
+		"area": "Larnaca",
+		"address": "2, Atlantidon street",
+		"lat": 34.931383,
+		"lng": 33.637433,
+		"url": "https://www.booking.com/hotel/cy/radisson-blu-larnaca.html",
+		"score": 8.5,
+		"count": 1552,
+		"stars": 5,
+		"total": 474.36,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Larnaca, rated 8.5 from 1,552 Booking.com reviews."
+	} },
+	"lovina-indonesia": { "Luxury": {
+		"id": 403404,
+		"name": "The Lovina",
+		"area": "Kalibukbuk, Lovina",
+		"address": "Jl. Mas Lovina, Kalibukbuk",
+		"lat": -8.154251,
+		"lng": 115.030959,
+		"url": "https://www.booking.com/hotel/id/lovina-beach-resort.html",
+		"score": 9,
+		"count": 378,
+		"stars": 5,
+		"total": 177.41,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Kalibukbuk, Lovina, rated 9 from 378 Booking.com reviews."
+	} },
+	"lefkada-greece": { "Luxury": {
+		"id": 242589,
+		"name": "Hotel Lefkas",
+		"area": "Lefkada Town",
+		"address": "Filippa Panagou 2",
+		"lat": 38.834975,
+		"lng": 20.710264,
+		"url": "https://www.booking.com/hotel/gr/lefkas.html",
+		"score": 8,
+		"count": 968,
+		"stars": 3,
+		"total": 103,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 3-star in Lefkada Town rated 8/10 from 968 Booking.com reviews."
+	} },
+	"manila-philippines": { "Luxury": {
+		"id": 778247,
+		"name": "The Manila Hotel",
+		"area": "Ermita, Manila",
+		"address": "One Rizal Park",
+		"lat": 14.58363,
+		"lng": 120.973865,
+		"url": "https://www.booking.com/hotel/ph/the-manila-hotel.html",
+		"score": 8.8,
+		"count": 807,
+		"stars": 5,
+		"total": 265.82,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Ermita, Manila, rated 8.8 from 807 Booking.com reviews."
+	} },
+	"roses-spain": { "Luxury": {
+		"id": 94221,
+		"name": "Hotel Maritim 4 Superior",
+		"area": "Santa Margarida, Roses",
+		"address": "Jacinto Benavente 2-10",
+		"lat": 42.264821,
+		"lng": 3.161512,
+		"url": "https://www.booking.com/hotel/es/maritim.html",
+		"score": 8.5,
+		"count": 3516,
+		"stars": 4,
+		"total": 249.42,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Santa Margarida, Roses rated 8.5/10 from 3,516 Booking.com reviews."
+	} },
 	"seoul-southkorea": {
 		"Budget": {
 			"id": 99177,
@@ -16572,7 +16035,7 @@ var overrides_central_2710c = {
 			"lat": 37.565212,
 			"lng": 126.980731,
 			"url": "https://www.booking.com/hotel/kr/lotte-seoul-seoul.html",
-			"score": 9.0,
+			"score": 9,
 			"count": 2069,
 			"stars": 5,
 			"total": 1071.72,
@@ -16580,263 +16043,202 @@ var overrides_central_2710c = {
 			"reason": "A 5-star hotel in Jung-gu, Seoul, rated 9 from 2,069 Booking.com reviews."
 		}
 	},
-	"tampico-mexico": {
-		"Luxury": {
-			"id": 317111,
-			"name": "HS HOTSSON Hotel Tampico",
-			"area": "Tampico",
-			"address": "Avenida Hidalgo 2000, Colonia Smith",
-			"lat": 22.240661,
-			"lng": -97.870288,
-			"url": "https://www.booking.com/hotel/mx/camino-real-tampico.html",
-			"score": 8.6,
-			"count": 270,
-			"stars": 5,
-			"total": 378.6,
-			"checked": "27 Oct 2026",
-			"reason": "A 5-star hotel in Tampico, rated 8.6 from 270 Booking.com reviews."
-		}
-	},
-	"yantai-china": {
-		"Budget": {
-			"id": 15245951,
-			"name": "No 53 Chaoyang Street Hotel",
-			"area": "Zhifu, Yantai",
-			"address": "No. 53 Chaoyang Street, Zhifu District",
-			"lat": 37.544431,
-			"lng": 121.402142,
-			"url": "https://www.booking.com/hotel/cn/zhao-yang-wen-bao-yi-zhu-jiu-dian.html",
-			"score": 9.4,
-			"count": 6,
-			"stars": 4,
-			"total": 88.15,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Zhifu, Yantai, rated 9.4 from 6 Booking.com reviews."
-		}
-	},
-	"bikaner-india": {
-		"Budget": {
-			"id": 12588798,
-			"name": "Partap Mahal",
-			"area": "Bikaner old city",
-			"address": "Near head post office, behind Junagarh fort",
-			"lat": 28.021809,
-			"lng": 73.315768,
-			"url": "https://www.booking.com/hotel/in/partap-mahal.html",
-			"score": 8.9,
-			"count": 39,
-			"stars": 3,
-			"total": 124.33,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Bikaner old city, rated 8.9 from 39 Booking.com reviews."
-		}
-	},
-	"plymouth-united-states": {
-		"Luxury": {
-			"id": 12044449,
-			"name": "Cambria Hotel & Suites Plymouth",
-			"area": "Plymouth",
-			"address": "26 Plaza Way",
-			"lat": 41.95,
-			"lng": -70.71896,
-			"url": "https://www.booking.com/hotel/us/cambria-suites-plymouth.html",
-			"score": 8.2,
-			"count": 119,
-			"stars": 4,
-			"total": 250.02,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Plymouth rated 8.2/10 from 119 Booking.com reviews."
-		}
-	},
-	"bytom-poland": {
-		"Best Value": {
-			"id": 483420,
-			"name": "B&B HOTEL Bytom",
-			"area": "Bytom",
-			"address": "ul. Strzelców Bytomskich 87",
-			"lat": 50.372317,
-			"lng": 18.89403,
-			"url": "https://www.booking.com/hotel/pl/prime.html",
-			"score": 8.6,
-			"count": 1183,
-			"stars": 3,
-			"total": 99.43,
-			"checked": "27 Oct 2026",
-			"reason": "Central Bytom hotel rated 8.6 from 1,183 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"mulhouse-france": {
-		"Budget": {
-			"id": 51623,
-			"name": "Best Western Mulhouse Salvator Centre",
-			"area": "Mulhouse centre",
-			"address": "29 Passage Central",
-			"lat": 47.74771,
-			"lng": 7.34183,
-			"url": "https://www.booking.com/hotel/fr/interhotelsalvator.html",
-			"score": 8.1,
-			"count": 1461,
-			"stars": 3,
-			"total": 167.64,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Mulhouse centre, rated 8.1 from 1,461 Booking.com reviews."
-		}
-	},
-	"watford-unitedkingdom": {
-		"Best Value": {
-			"id": 221968,
-			"name": "Best Western White House Hotel",
-			"area": "Watford centre",
-			"address": "27-31 Upton Road",
-			"lat": 51.656378,
-			"lng": -0.401913,
-			"url": "https://www.booking.com/hotel/gb/whitehousehotel.html",
-			"score": 7.1,
-			"count": 3296,
-			"stars": 3,
-			"total": 284.19,
-			"checked": "27 Oct 2026",
-			"reason": "Central Watford centre hotel rated 7.1 from 3,296 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"basingstoke-united-kingdom": {
-		"Best Value": {
-			"id": 34474,
-			"name": "Holiday Inn Basingstoke by IHG",
-			"area": "Basingstoke",
-			"address": "Grove Road",
-			"lat": 51.253808,
-			"lng": -1.080143,
-			"url": "https://www.booking.com/hotel/gb/holiday-inn.html",
-			"score": 7.4,
-			"count": 923,
-			"stars": 4,
-			"total": 379.72,
-			"checked": "27 Oct 2026",
-			"reason": "Central Basingstoke hotel rated 7.4 from 923 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"chemnitz-germany": {
-		"Luxury": {
-			"id": 63486,
-			"name": "co56 Chemnitz",
-			"area": "Chemnitz",
-			"address": "Salzstr. 56",
-			"lat": 50.847107,
-			"lng": 12.916336,
-			"url": "https://www.booking.com/hotel/de/co56-hotel-chemnitz.html",
-			"score": 8.3,
-			"count": 1986,
-			"stars": 4,
-			"total": 238.35,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Chemnitz rated 8.3/10 from 1,986 Booking.com reviews."
-		}
-	},
-	"ipswich-united-kingdom": {
-		"Best Value": {
-			"id": 35725,
-			"name": "Holiday Inn Ipswich by IHG",
-			"area": "Ipswich",
-			"address": "London Road",
-			"lat": 52.046275,
-			"lng": 1.105328,
-			"url": "https://www.booking.com/hotel/gb/holiday-inn-ipswich.html",
-			"score": 8.0,
-			"count": 1404,
-			"stars": 4,
-			"total": 363.0,
-			"checked": "27 Oct 2026",
-			"reason": "Central Ipswich hotel rated 8 from 1,404 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"darmstadt-germany": {
-		"Luxury": {
-			"id": 405351,
-			"name": "IntercityHotel Darmstadt",
-			"area": "Darmstadt centre",
-			"address": "Poststr. 12",
-			"lat": 49.873399,
-			"lng": 8.631574,
-			"url": "https://www.booking.com/hotel/de/intercityhotel-darmstadt.html",
-			"score": 8.0,
-			"count": 1222,
-			"stars": 4,
-			"total": 226.44,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Darmstadt centre rated 8/10 from 1,222 Booking.com reviews."
-		}
-	},
-	"tarifa-spain": {
-		"Best Value": {
-			"id": 1472442,
-			"name": "Aristoy - by Grupo Tribu",
-			"area": "Tarifa old town",
-			"address": "Calderón de la Barca, 3",
-			"lat": 36.013359,
-			"lng": -5.60347,
-			"url": "https://www.booking.com/hotel/es/aristoy.html",
-			"score": 9.0,
-			"count": 807,
-			"stars": 2,
-			"total": 158.02,
-			"checked": "27 Oct 2026",
-			"reason": "Central Tarifa old town hotel rated 9 from 807 Booking.com reviews: good value close to the sights."
-		}
-	},
-	"chesterfield-united-kingdom": {
-		"Luxury": {
-			"id": 13929039,
-			"name": "SPIRE VIEW at THE SPREAD EAGLE",
-			"area": "Chesterfield town centre",
-			"address": "7 Beetwell Street",
-			"lat": 53.234065,
-			"lng": -1.42701,
-			"url": "https://www.booking.com/hotel/gb/spire-view-at-the-spread-eagle.html",
-			"score": 8.7,
-			"count": 550,
-			"stars": 4,
-			"total": 265.45,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Chesterfield town centre rated 8.7/10 from 550 Booking.com reviews."
-		}
-	},
-	"rovaniemi-finland": {
-		"Luxury": {
-			"id": 37066,
-			"name": "Santa's Hotel Santa Claus",
-			"area": "Rovaniemi centre",
-			"address": "Korkalonkatu 29",
-			"lat": 66.502812,
-			"lng": 25.732335,
-			"url": "https://www.booking.com/hotel/fi/santas-hotel-santa-claus.html",
-			"score": 8.7,
-			"count": 743,
-			"stars": 4,
-			"total": 424.0,
-			"checked": "27 Oct 2026",
-			"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Rovaniemi centre rated 8.7/10 from 743 Booking.com reviews."
-		}
-	},
-	"vancouver-united-states": {
-		"Budget": {
-			"id": 7715810,
-			"name": "Hotel Indigo Vancouver Waterfront-Portland by IHG",
-			"area": "Vancouver Waterfront",
-			"address": "550 Waterfront Way",
-			"lat": 45.625843,
-			"lng": -122.681558,
-			"url": "https://www.booking.com/hotel/us/indigo-vancouver-dwtn-portland-area-an-ihg.html",
-			"score": 9.0,
-			"count": 104,
-			"stars": 3,
-			"total": 443.68,
-			"checked": "27 Oct 2026",
-			"reason": "A central budget pick in Vancouver Waterfront, rated 9 from 104 Booking.com reviews."
-		}
-	}
+	"tampico-mexico": { "Luxury": {
+		"id": 317111,
+		"name": "HS HOTSSON Hotel Tampico",
+		"area": "Tampico",
+		"address": "Avenida Hidalgo 2000, Colonia Smith",
+		"lat": 22.240661,
+		"lng": -97.870288,
+		"url": "https://www.booking.com/hotel/mx/camino-real-tampico.html",
+		"score": 8.6,
+		"count": 270,
+		"stars": 5,
+		"total": 378.6,
+		"checked": "27 Oct 2026",
+		"reason": "A 5-star hotel in Tampico, rated 8.6 from 270 Booking.com reviews."
+	} },
+	"yantai-china": { "Budget": {
+		"id": 15245951,
+		"name": "No 53 Chaoyang Street Hotel",
+		"area": "Zhifu, Yantai",
+		"address": "No. 53 Chaoyang Street, Zhifu District",
+		"lat": 37.544431,
+		"lng": 121.402142,
+		"url": "https://www.booking.com/hotel/cn/zhao-yang-wen-bao-yi-zhu-jiu-dian.html",
+		"score": 9.4,
+		"count": 6,
+		"stars": 4,
+		"total": 88.15,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Zhifu, Yantai, rated 9.4 from 6 Booking.com reviews."
+	} },
+	"bikaner-india": { "Budget": {
+		"id": 12588798,
+		"name": "Partap Mahal",
+		"area": "Bikaner old city",
+		"address": "Near head post office, behind Junagarh fort",
+		"lat": 28.021809,
+		"lng": 73.315768,
+		"url": "https://www.booking.com/hotel/in/partap-mahal.html",
+		"score": 8.9,
+		"count": 39,
+		"stars": 3,
+		"total": 124.33,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Bikaner old city, rated 8.9 from 39 Booking.com reviews."
+	} },
+	"plymouth-united-states": { "Luxury": {
+		"id": 12044449,
+		"name": "Cambria Hotel & Suites Plymouth",
+		"area": "Plymouth",
+		"address": "26 Plaza Way",
+		"lat": 41.95,
+		"lng": -70.71896,
+		"url": "https://www.booking.com/hotel/us/cambria-suites-plymouth.html",
+		"score": 8.2,
+		"count": 119,
+		"stars": 4,
+		"total": 250.02,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Plymouth rated 8.2/10 from 119 Booking.com reviews."
+	} },
+	"bytom-poland": { "Best Value": {
+		"id": 483420,
+		"name": "B&B HOTEL Bytom",
+		"area": "Bytom",
+		"address": "ul. Strzelców Bytomskich 87",
+		"lat": 50.372317,
+		"lng": 18.89403,
+		"url": "https://www.booking.com/hotel/pl/prime.html",
+		"score": 8.6,
+		"count": 1183,
+		"stars": 3,
+		"total": 99.43,
+		"checked": "27 Oct 2026",
+		"reason": "Central Bytom hotel rated 8.6 from 1,183 Booking.com reviews: good value close to the sights."
+	} },
+	"mulhouse-france": { "Budget": {
+		"id": 51623,
+		"name": "Best Western Mulhouse Salvator Centre",
+		"area": "Mulhouse centre",
+		"address": "29 Passage Central",
+		"lat": 47.74771,
+		"lng": 7.34183,
+		"url": "https://www.booking.com/hotel/fr/interhotelsalvator.html",
+		"score": 8.1,
+		"count": 1461,
+		"stars": 3,
+		"total": 167.64,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Mulhouse centre, rated 8.1 from 1,461 Booking.com reviews."
+	} },
+	"watford-unitedkingdom": { "Best Value": {
+		"id": 221968,
+		"name": "Best Western White House Hotel",
+		"area": "Watford centre",
+		"address": "27-31 Upton Road",
+		"lat": 51.656378,
+		"lng": -.401913,
+		"url": "https://www.booking.com/hotel/gb/whitehousehotel.html",
+		"score": 7.1,
+		"count": 3296,
+		"stars": 3,
+		"total": 284.19,
+		"checked": "27 Oct 2026",
+		"reason": "Central Watford centre hotel rated 7.1 from 3,296 Booking.com reviews: good value close to the sights."
+	} },
+	"chemnitz-germany": { "Luxury": {
+		"id": 63486,
+		"name": "co56 Chemnitz",
+		"area": "Chemnitz",
+		"address": "Salzstr. 56",
+		"lat": 50.847107,
+		"lng": 12.916336,
+		"url": "https://www.booking.com/hotel/de/co56-hotel-chemnitz.html",
+		"score": 8.3,
+		"count": 1986,
+		"stars": 4,
+		"total": 238.35,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Chemnitz rated 8.3/10 from 1,986 Booking.com reviews."
+	} },
+	"ipswich-united-kingdom": { "Best Value": {
+		"id": 35725,
+		"name": "Holiday Inn Ipswich by IHG",
+		"area": "Ipswich",
+		"address": "London Road",
+		"lat": 52.046275,
+		"lng": 1.105328,
+		"url": "https://www.booking.com/hotel/gb/holiday-inn-ipswich.html",
+		"score": 8,
+		"count": 1404,
+		"stars": 4,
+		"total": 363,
+		"checked": "27 Oct 2026",
+		"reason": "Central Ipswich hotel rated 8 from 1,404 Booking.com reviews: good value close to the sights."
+	} },
+	"darmstadt-germany": { "Luxury": {
+		"id": 405351,
+		"name": "IntercityHotel Darmstadt",
+		"area": "Darmstadt centre",
+		"address": "Poststr. 12",
+		"lat": 49.873399,
+		"lng": 8.631574,
+		"url": "https://www.booking.com/hotel/de/intercityhotel-darmstadt.html",
+		"score": 8,
+		"count": 1222,
+		"stars": 4,
+		"total": 226.44,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Darmstadt centre rated 8/10 from 1,222 Booking.com reviews."
+	} },
+	"tarifa-spain": { "Best Value": {
+		"id": 1472442,
+		"name": "Aristoy - by Grupo Tribu",
+		"area": "Tarifa old town",
+		"address": "Calderón de la Barca, 3",
+		"lat": 36.013359,
+		"lng": -5.60347,
+		"url": "https://www.booking.com/hotel/es/aristoy.html",
+		"score": 9,
+		"count": 807,
+		"stars": 2,
+		"total": 158.02,
+		"checked": "27 Oct 2026",
+		"reason": "Central Tarifa old town hotel rated 9 from 807 Booking.com reviews: good value close to the sights."
+	} },
+	"rovaniemi-finland": { "Luxury": {
+		"id": 37066,
+		"name": "Santa's Hotel Santa Claus",
+		"area": "Rovaniemi centre",
+		"address": "Korkalonkatu 29",
+		"lat": 66.502812,
+		"lng": 25.732335,
+		"url": "https://www.booking.com/hotel/fi/santas-hotel-santa-claus.html",
+		"score": 8.7,
+		"count": 743,
+		"stars": 4,
+		"total": 424,
+		"checked": "27 Oct 2026",
+		"reason": "No eligible 5-star hotel came up close to the centre, so this is our upscale alternative: a 4-star in Rovaniemi centre rated 8.7/10 from 743 Booking.com reviews."
+	} },
+	"vancouver-united-states": { "Budget": {
+		"id": 7715810,
+		"name": "Hotel Indigo Vancouver Waterfront-Portland by IHG",
+		"area": "Vancouver Waterfront",
+		"address": "550 Waterfront Way",
+		"lat": 45.625843,
+		"lng": -122.681558,
+		"url": "https://www.booking.com/hotel/us/indigo-vancouver-dwtn-portland-area-an-ihg.html",
+		"score": 9,
+		"count": 104,
+		"stars": 3,
+		"total": 443.68,
+		"checked": "27 Oct 2026",
+		"reason": "A central budget pick in Vancouver Waterfront, rated 9 from 104 Booking.com reviews."
+	} }
 };
-for (const [cid, v] of Object.entries(overrides_central_2710c)) overrides_default[cid] = Object.assign({}, overrides_default[cid] || {}, v);
 var PICKS;
 function allPicks() {
 	if (!PICKS) PICKS = (async () => {
@@ -16930,7 +16332,7 @@ async function cityStats() {
 	}
 	return [...by.values()];
 }
-var TX = {
+var TX$1 = {
 	en: {
 		od_t: "Open data: hotel picks for 1,295 cities",
 		od_d: "Download the Top3Hotels dataset (CSV or JSON): three hotel picks per city with guest scores, review counts and reference prices. Free to reuse under CC BY 4.0.",
@@ -17016,7 +16418,7 @@ var TX = {
 		more: "Ver los tres hoteles"
 	}
 };
-var tx = (L) => TX[L] ?? TX.en;
+var tx = (L) => TX$1[L] ?? TX$1.en;
 var GROWTH_LANGS = ["en", "es"];
 var fmt = (n) => n == null ? "" : money(n);
 var sc = (n) => n == null ? "" : n.toFixed(1);
@@ -17775,6 +17177,12140 @@ var MANIFEST = JSON.stringify({
 });
 var CSS_DP = ".t3dp-btn{all:unset;box-sizing:border-box;display:block;width:100%;min-height:30px;cursor:pointer;font:600 15px/1.3 Inter,system-ui,sans-serif;color:#16202e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}\n.t3dp-btn.empty{color:#7a8594;font-weight:500}\n.t3dp-btn:focus-visible{outline:2px solid #d83b51;outline-offset:3px;border-radius:6px}\n.t3-citybar .t3dp-btn,form .t3dp-btn{font-size:14px;padding:8px 10px;border:1px solid rgba(127,127,127,.3);border-radius:10px;background:rgba(127,127,127,.06);color:inherit;margin-top:4px}\nhtml.t3dp-open,html.t3dp-open body{overflow:hidden}\nhtml.t3dp-open #v2-sticky,html.t3dp-open .sticky3,html.t3dp-open [class*=lang-toast],html.t3dp-open .t3-langbar{display:none!important}\n.t3dp{position:fixed;inset:0;z-index:2147483000;display:flex;align-items:center;justify-content:center;font-family:Inter,system-ui,sans-serif;color:#16202e}\n.t3dp[hidden]{display:none}\n.t3dp-bd{position:absolute;inset:0;background:rgba(10,16,26,.45);backdrop-filter:blur(2px)}\n.t3dp-p{position:relative;background:#fff;border-radius:22px;box-shadow:0 30px 80px rgba(0,0,0,.35);width:min(680px,94vw);max-height:92vh;display:flex;flex-direction:column;padding:16px 18px 14px;animation:t3dpIn .18s ease-out}\n@keyframes t3dpIn{from{transform:translateY(12px);opacity:0}to{transform:none;opacity:1}}\n.t3dp-h{display:flex;align-items:center;gap:8px}\n.t3dp-s{all:unset;cursor:pointer;flex:1;border:1.5px solid #e3e7ee;border-radius:14px;padding:8px 12px;display:flex;flex-direction:column;gap:2px;min-width:0}\n.t3dp-s small{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#7a8594}\n.t3dp-s b{font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}\n.t3dp-s.on{border-color:#d83b51;box-shadow:0 0 0 3px rgba(216,59,81,.12)}\n.t3dp-ar{color:#9aa3af}\n.t3dp-c{all:unset;cursor:pointer;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-size:16px;color:#4a5566;flex:none}\n.t3dp-c:hover{background:#f1f3f6}\n.t3dp-hint{margin:10px 2px 10px;font-size:13px;color:#4a5566;min-height:18px}\n.t3dp-wk{display:none}\n.t3dp-nav{display:flex;justify-content:space-between;position:relative;height:0;z-index:2;pointer-events:none}\n.t3dp-nav[hidden]{display:none}\n.t3dp-nav button{all:unset;pointer-events:auto;cursor:pointer;width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-size:22px;color:#16202e;background:#fff;border:1px solid #e3e7ee}\n.t3dp-nav button:disabled{opacity:.3;cursor:default}\n.t3dp-ms{display:grid;grid-template-columns:1fr 1fr;gap:26px;overflow:auto;padding:4px 2px}\n.t3dp-m h4{margin:4px 0 10px!important;padding:0!important;line-height:34px;font-family:inherit!important;text-align:center;font-size:15px;font-weight:700;text-transform:capitalize}\n.t3dp-g{display:grid;grid-template-columns:repeat(7,1fr);row-gap:2px}\n.t3dp-g button{all:unset;box-sizing:border-box;cursor:pointer;height:42px;display:grid;place-items:center;font-size:14px;font-weight:500;border-radius:999px;position:relative;z-index:0}\n.t3dp-g button:hover:not(:disabled){background:#f1f3f6}\n.t3dp-g button:disabled{color:#c3c9d2;cursor:default;text-decoration:line-through;text-decoration-color:#e3e7ee}\n.t3dp-g button.td{font-weight:800;color:#d83b51}\n.t3dp-g button.in,.t3dp-g button.pv{border-radius:0;background:#fde8eb}\n.t3dp-g button.pv{background:#fdf1f3}\n.t3dp-g button.a,.t3dp-g button.b{background:#16202e!important;color:#fff!important;font-weight:700}\n.t3dp-g button.a{border-radius:999px 0 0 999px}.t3dp-g button.b{border-radius:0 999px 999px 0}\n.t3dp-g button.a:not(.b):last-child,.t3dp-g button.a.lone{border-radius:999px}\n.t3dp-f{display:flex;align-items:center;gap:10px;border-top:1px solid #eef1f5;margin-top:10px;padding-top:12px}\n.t3dp-clr{all:unset;cursor:pointer;font-size:14px;font-weight:600;text-decoration:underline;color:#16202e;padding:8px 4px}\n.t3dp-n{flex:1;text-align:center;font-size:14px;font-weight:600;color:#4a5566}\n.t3dp-ok{all:unset;cursor:pointer;background:#d83b51;color:#fff;font-weight:700;font-size:15px;padding:12px 26px;border-radius:12px}\n.t3dp-ok:disabled{background:#e9b9c1;cursor:default}\n@media (max-width:720px){\n.t3dp{align-items:flex-end}\n.t3dp-p{width:100%;max-height:88vh;border-radius:22px 22px 0 0;padding:14px 14px calc(12px + env(safe-area-inset-bottom));animation:t3dpUp .22s ease-out}\n@keyframes t3dpUp{from{transform:translateY(40%)}to{transform:none}}\n.t3dp-wk{display:grid;grid-template-columns:repeat(7,1fr);text-align:center;font-size:11px;font-weight:700;color:#7a8594;padding:4px 0 6px;border-bottom:1px solid #eef1f5}\n.t3dp-ms{grid-template-columns:1fr;gap:18px;flex:1;-webkit-overflow-scrolling:touch}\n.t3dp-g button{height:46px;font-size:15px}\n.t3dp-ok{flex:none}\n}\n@media (prefers-color-scheme:dark){.t3dp-p{background:#141c28;color:#eef2f7}.t3dp-s{border-color:#2a3647}.t3dp-g button:hover:not(:disabled),.t3dp-c:hover{background:#1f2a3a}.t3dp-g button.in,.t3dp-g button.pv{background:#3a2230}.t3dp-g button.a,.t3dp-g button.b{background:#eef2f7!important;color:#141c28!important}.t3dp-nav button{background:#141c28;border-color:#2a3647;color:#eef2f7}.t3dp-f{border-color:#22303f}.t3dp-clr{color:#eef2f7}.t3dp-g button:disabled{color:#4a5566}}\n/* destination suggestions must sit above the date fields */\n.search .field:first-child{z-index:40}\n.search .suggestions{z-index:50!important;box-shadow:0 18px 40px rgba(0,0,0,.18)!important;max-height:min(360px,55vh);overflow:auto;background:#fff!important}\nbody:has(#destination:focus) #v2-sticky,body:has(.cityq:focus) #v2-sticky{display:none!important}\nbody.t3-herovis #v2-sticky{transform:translateY(160%)!important}\n\n.t3-citybar .t3dp-btn{border:0!important;background:none!important;padding:2px 0!important;margin:0!important;font-size:15px!important}\n@media (max-width:720px){.v3-quick{flex-wrap:nowrap!important;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}.v3-quick::-webkit-scrollbar{display:none}.v3-quick button{flex:none}}\n.t3dp-m h4{position:relative}.t3dp-mv{all:unset;cursor:pointer;position:absolute;top:50%;transform:translateY(-50%);width:34px;height:34px;border-radius:50%;display:grid;place-items:center;font-size:22px;line-height:1;border:1px solid #e3e7ee;background:#fff;color:#16202e}.t3dp-mv.l{left:0}.t3dp-mv.r{right:0}.t3dp-mv:disabled{opacity:.3;cursor:default}.t3dp-mv:hover:not(:disabled){background:#f1f3f6}\n@media (prefers-color-scheme:dark){.t3dp-mv{background:#141c28;border-color:#2a3647;color:#eef2f7}}\n";
 var JS_DP = "/* Top3Hotels range date picker: one sheet for check-in + check-out, replaces the native date pickers.\n   The real <input type=date> fields stay in the DOM (hidden) so every existing handler keeps working. */\n(function () {\n  if (window.T3DP) return;\n  var L = (document.documentElement.lang || 'en').slice(0, 2);\n  var TX = {\n    en: { add: 'Add date', ci: 'Check in', co: 'Check out', n1: 'night', n: 'nights', clear: 'Clear', done: 'Done', pickCo: 'Now pick your check-out', pickCi: 'Pick your check-in', max: 'Max. 30 nights' },\n    es: { add: 'Elegir fecha', ci: 'Entrada', co: 'Salida', n1: 'noche', n: 'noches', clear: 'Borrar', done: 'Listo', pickCo: 'Ahora elige la salida', pickCi: 'Elige la entrada', max: 'Máx. 30 noches' },\n    de: { add: 'Datum wählen', ci: 'Anreise', co: 'Abreise', n1: 'Nacht', n: 'Nächte', clear: 'Löschen', done: 'Fertig', pickCo: 'Jetzt Abreise wählen', pickCi: 'Anreise wählen', max: 'Max. 30 Nächte' },\n    fr: { add: 'Choisir', ci: 'Arrivée', co: 'Départ', n1: 'nuit', n: 'nuits', clear: 'Effacer', done: 'OK', pickCo: 'Choisissez le départ', pickCi: \"Choisissez l'arrivée\", max: '30 nuits max.' },\n    it: { add: 'Scegli data', ci: 'Arrivo', co: 'Partenza', n1: 'notte', n: 'notti', clear: 'Cancella', done: 'Fatto', pickCo: 'Ora scegli la partenza', pickCi: \"Scegli l'arrivo\", max: 'Max 30 notti' },\n    pt: { add: 'Escolher', ci: 'Entrada', co: 'Saída', n1: 'noite', n: 'noites', clear: 'Limpar', done: 'Pronto', pickCo: 'Agora escolha a saída', pickCi: 'Escolha a entrada', max: 'Máx. 30 noites' },\n    da: { add: 'Vælg dato', ci: 'Indtjekning', co: 'Udtjekning', n1: 'nat', n: 'nætter', clear: 'Ryd', done: 'Færdig', pickCo: 'Vælg nu udtjekning', pickCi: 'Vælg indtjekning', max: 'Maks. 30 nætter' }\n  };\n  var t = TX[L] || TX.en;\n  var loc = document.documentElement.lang || 'en';\n  var DAY = 864e5;\n  function iso(d) { return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }\n  function parse(s) { if (!s || !/^\\d{4}-\\d{2}-\\d{2}$/.test(s)) return null; var p = s.split('-'); return new Date(+p[0], +p[1] - 1, +p[2]); }\n  function today() { var d = new Date(); d.setHours(0, 0, 0, 0); return d; }\n  function nights(a, b) { return Math.round((b - a) / DAY); }\n  var fmtShort = new Intl.DateTimeFormat(loc, { weekday: 'short', day: 'numeric', month: 'short' });\n  var fmtMonth = new Intl.DateTimeFormat(loc, { month: 'long', year: 'numeric' });\n  var wk = []; for (var i = 0; i < 7; i++) wk.push(new Intl.DateTimeFormat(loc, { weekday: 'narrow' }).format(new Date(2024, 0, 1 + i)));\n  function fire(el) { el.dispatchEvent(new Event('input', { bubbles: true })); el.dispatchEvent(new Event('change', { bubbles: true })); }\n\n  /* sheet */\n  var sh, st = {};\n  function build() {\n    sh = document.createElement('div'); sh.className = 't3dp'; sh.hidden = true;\n    sh.innerHTML = '<div class=\"t3dp-bd\" data-x></div><div class=\"t3dp-p\" role=\"dialog\" aria-modal=\"true\" aria-label=\"' + t.ci + ' / ' + t.co + '\">' +\n      '<div class=\"t3dp-h\"><button type=\"button\" class=\"t3dp-s\" data-s=\"0\"><small>' + t.ci + '</small><b></b></button><span class=\"t3dp-ar\">→</span><button type=\"button\" class=\"t3dp-s\" data-s=\"1\"><small>' + t.co + '</small><b></b></button><button type=\"button\" class=\"t3dp-c\" data-x aria-label=\"Close\">✕</button></div>' +\n      '<p class=\"t3dp-hint\" aria-live=\"polite\"></p><div class=\"t3dp-wk\"></div><div class=\"t3dp-nav\"><button type=\"button\" data-m=\"-1\" aria-label=\"Previous month\">‹</button><button type=\"button\" data-m=\"1\" aria-label=\"Next month\">›</button></div><div class=\"t3dp-ms\"></div>' +\n      '<div class=\"t3dp-f\"><button type=\"button\" class=\"t3dp-clr\">' + t.clear + '</button><span class=\"t3dp-n\"></span><button type=\"button\" class=\"t3dp-ok\">' + t.done + '</button></div></div>';\n    document.body.appendChild(sh);\n    sh.querySelector('.t3dp-wk').innerHTML = wk.map(function (w) { return '<span>' + w + '</span>'; }).join('');\n    sh.addEventListener('click', function (e) {\n      var x = e.target.closest('[data-x]'); if (x) return close();\n      var d = e.target.closest('button[data-d]'); if (d && !d.disabled) return pick(parse(d.dataset.d));\n      var m = e.target.closest('[data-m]'); if (m) { st.off = Math.max(0, st.off + (+m.dataset.m)); return render(); }\n      var s = e.target.closest('[data-s]'); if (s) { st.phase = +s.dataset.s; if (st.phase === 0) { } return render(); }\n      if (e.target.closest('.t3dp-clr')) { st.a = st.b = null; st.phase = 0; return render(); }\n      if (e.target.closest('.t3dp-ok')) return apply(true);\n    });\n    sh.addEventListener('mouseover', function (e) { var d = e.target.closest('button[data-d]'); if (d && st.phase === 1 && st.a) { st.hov = parse(d.dataset.d); paint(); } });\n    document.addEventListener('keydown', function (e) { if (!sh.hidden && e.key === 'Escape') close(); });\n  }\n  function monthHTML(y, m) {\n    var first = new Date(y, m, 1), lead = (first.getDay() + 6) % 7, days = new Date(y, m + 1, 0).getDate(), td = today(), h = '';\n    for (var i = 0; i < lead; i++) h += '<span></span>';\n    for (var d = 1; d <= days; d++) {\n      var dt = new Date(y, m, d), k = iso(dt), dis = dt < td || (st.phase === 1 && st.a && dt > st.a && nights(st.a, dt) > 30);\n      h += '<button type=\"button\" data-d=\"' + k + '\"' + (dis ? ' disabled' : '') + (+dt === +td ? ' class=\"td\"' : '') + ' aria-label=\"' + fmtShort.format(dt) + '\">' + d + '</button>';\n    }\n    return '<div class=\"t3dp-m\"><h4>' + fmtMonth.format(first) + '</h4><div class=\"t3dp-g\">' + h + '</div></div>';\n  }\n  function render() {\n    var base = today(), many = matchMedia('(max-width: 720px)').matches, n = many ? 12 : 2, h = '';\n    for (var i = 0; i < n; i++) { var dm = new Date(base.getFullYear(), base.getMonth() + (many ? 0 : st.off) + i, 1); h += monthHTML(dm.getFullYear(), dm.getMonth()); }\n    var ms = sh.querySelector('.t3dp-ms'); ms.innerHTML = h;\n    sh.querySelector('.t3dp-nav').hidden = true;\n    if (!many) {\n      var hs = ms.querySelectorAll('.t3dp-m h4');\n      hs[0].insertAdjacentHTML('afterbegin', '<button type=\"button\" class=\"t3dp-mv l\" data-m=\"-1\" aria-label=\"Previous month\"' + (st.off <= 0 ? ' disabled' : '') + '>‹</button>');\n      hs[hs.length - 1].insertAdjacentHTML('beforeend', '<button type=\"button\" class=\"t3dp-mv r\" data-m=\"1\" aria-label=\"Next month\">›</button>');\n    }\n    paint();\n  }\n  function paint() {\n    var a = st.a, b = st.b || (st.phase === 1 && a && st.hov && st.hov > a ? st.hov : null);\n    sh.querySelectorAll('button[data-d]').forEach(function (el) {\n      var d = parse(el.dataset.d), on = a && +d === +a, off = b && +d === +b;\n      el.classList.toggle('a', !!on); el.classList.toggle('b', !!off); el.classList.toggle('lone', !!(on && !b));\n      el.classList.toggle('in', !!(a && b && d > a && d < b));\n      el.classList.toggle('pv', !!(a && !st.b && b && d > a && d <= b));\n    });\n    var s = sh.querySelectorAll('.t3dp-s');\n    s[0].querySelector('b').textContent = st.a ? fmtShort.format(st.a) : t.add;\n    s[1].querySelector('b').textContent = st.b ? fmtShort.format(st.b) : t.add;\n    s[0].classList.toggle('on', st.phase === 0); s[1].classList.toggle('on', st.phase === 1);\n    var nn = st.a && st.b ? nights(st.a, st.b) : 0;\n    sh.querySelector('.t3dp-n').textContent = nn ? nn + ' ' + (nn === 1 ? t.n1 : t.n) : '';\n    sh.querySelector('.t3dp-hint').textContent = st.phase === 1 && st.a && !st.b ? t.pickCo + ' · ' + t.max : (!st.a ? t.pickCi : '');\n    sh.querySelector('.t3dp-ok').disabled = !(st.a && st.b);\n  }\n  function pick(d) {\n    if (st.phase === 0 || !st.a || d <= st.a) { st.a = d; st.b = null; st.phase = 1; st.hov = null; render(); return; }\n    st.b = d; st.hov = null; paint();\n    apply(false); setTimeout(close, 260);\n  }\n  function apply(andClose) {\n    if (!st.a || !st.b || !st.pair) return;\n    var ci = st.pair.ci, co = st.pair.co;\n    ci.value = iso(st.a); fire(ci);\n    co.value = iso(st.b); fire(co);\n    sync(st.pair);\n    try { document.dispatchEvent(new CustomEvent('t3:dates', { detail: { root: st.pair.root, ci: ci.value, co: co.value } })); } catch (_) {}\n    if (andClose) close();\n  }\n  function open(pair, phase) {\n    if (!sh) build();\n    st.pair = pair; st.a = parse(pair.ci.value); st.b = parse(pair.co.value);\n    if (st.a && st.a < today()) { st.a = st.b = null; }\n    st.phase = phase === 1 && st.a ? 1 : 0; if (st.phase === 0) { } st.off = 0; st.hov = null;\n    if (st.a) { var td = today(); st.off = Math.max(0, (st.a.getFullYear() - td.getFullYear()) * 12 + st.a.getMonth() - td.getMonth()); }\n    sh.hidden = false; document.documentElement.classList.add('t3dp-open');\n    render();\n    if (matchMedia('(max-width: 720px)').matches && st.a) {\n      var el = sh.querySelector('[data-d=\"' + iso(st.a) + '\"]'); if (el) { var m = el.closest('.t3dp-m'); if (m) m.scrollIntoView({ block: 'start' }); }\n    } else sh.querySelector('.t3dp-ms').scrollTop = 0;\n  }\n  function close() { if (!sh) return; sh.hidden = true; document.documentElement.classList.remove('t3dp-open'); }\n\n  /* attach to every check-in/check-out pair */\n  function label(el) { var d = parse(el.value); return d ? fmtShort.format(d) : t.add; }\n  function sync(pair) { pair.bi.textContent = label(pair.ci); pair.bo.textContent = label(pair.co); pair.bi.classList.toggle('empty', !pair.ci.value); pair.bo.classList.toggle('empty', !pair.co.value); }\n  function q(root, k) { return root.querySelector('#' + k + ',[name=' + k + '],[data-sync=' + k + ']'); }\n  function attach(root) {\n    var ci = q(root, 'checkin'), co = q(root, 'checkout');\n    if (!ci || !co || ci.dataset.t3dp || ci.type !== 'date') return;\n    var pair = { ci: ci, co: co, root: root }; root.__t3pair = pair;\n    [ci, co].forEach(function (inp, k) {\n      inp.dataset.t3dp = '1'; inp.classList.add('t3dp-real'); inp.style.display = 'none'; inp.tabIndex = -1; inp.setAttribute('aria-hidden', 'true');\n      var b = document.createElement('button'); b.type = 'button'; b.className = 't3dp-btn';\n      b.setAttribute('aria-haspopup', 'dialog'); b.setAttribute('aria-label', k ? t.co : t.ci);\n      inp.insertAdjacentElement('afterend', b);\n      b.addEventListener('click', function (e) { e.preventDefault(); e.stopPropagation(); open(pair, k); });\n      inp.addEventListener('change', function () { sync(pair); }); inp.addEventListener('input', function () { sync(pair); });\n      if (k) pair.bo = b; else pair.bi = b;\n    });\n    var lab = root.querySelectorAll('label[for=\"checkin\"],label[for=\"checkout\"]');\n    lab.forEach(function (l) { l.addEventListener('click', function (e) { e.preventDefault(); open(pair, l.getAttribute('for') === 'checkout' ? 1 : 0); }); });\n    sync(pair);\n    setInterval(function () { sync(pair); }, 1500);\n  }\n  function scan() { document.querySelectorAll('.search,.t3-citybar,form').forEach(attach); }\n  window.T3DP = { scan: scan, open: open, openFor: function (root, ph) { scan(); if (root && root.__t3pair) open(root.__t3pair, ph || 0); } };\n  var hero = document.querySelector('.hero');\n  if (hero && document.querySelector('.hero .search') && 'IntersectionObserver' in window) new IntersectionObserver(function (es) { document.body.classList.toggle('t3-herovis', es[0].isIntersecting); }, { threshold: 0.15 }).observe(hero);\n  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', scan); else scan();\n  new MutationObserver(function () { clearTimeout(scan.t); scan.t = setTimeout(scan, 120); }).observe(document.documentElement, { childList: true, subtree: true });\n})();\n";
+/**
+* "Best hotel gyms" pages: /gyms (index) and /gyms/<city-slug>, in English and Spanish (/es/...).
+* Data: src/generated/gyms.json, built from data/gyms/<slug>.json by tools/gyms/build.py.
+* One hotel per tier (luxury = 5 stars, standard = 4 stars, budget = 3 stars or less), judged on the gym only.
+*/
+var G = {
+	"aalborg-denmark": {
+		"city": "Aalborg",
+		"country": "Denmark",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Two 4-star city hotels list 24-hour gyms; no equipment or size details are published for either.",
+		"bestReason_es": "Dos hoteles de 4 estrellas del centro indican gimnasios abiertos 24 horas; no se publican detalles de equipos ni tamaño.",
+		"luxuryNote": "No 5-star hotel with a confirmed gym found in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Scandic Aalborg City",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/dk/scandicaalborgscity.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Listed with a 24-hour health club. Size and equipment are not published.",
+				"summary_es": "Indica un health club abierto las 24 horas. No se publican tamaño ni equipos.",
+				"sources": ["https://www.expedia.co.uk/Aalborg-Hotels-Hotel-With-Gym.0-0-d6023934-thotelwithgym.Travel-Guide-Filter-Hotels"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/689388860.jpg?k=c155609f25b79eba9bcb13870e88d30bf5508dc339754b99d31ea557aa1c01ea&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Mortens Kro Boutique Hotel",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/dk/mortens-kro-city-deluxe.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Listed with a 24-hour fitness facility. Size and equipment are not published.",
+				"summary_es": "Indica una instalación de fitness abierta las 24 horas. No se publican tamaño ni equipos.",
+				"sources": ["https://www.expedia.co.uk/Aalborg-Hotels-Hotel-With-Gym.0-0-d6023934-thotelwithgym.Travel-Guide-Filter-Hotels"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/787648899.jpg?k=3a2fd1b9ae189468a3d9fa29d5f4f74dd846024c6948c9b83910d4ff86ab7943&o=",
+					"gym": false
+				}
+			},
+			"budget": null
+		}
+	},
+	"aalst-belgium": {
+		"city": "Aalst",
+		"country": "Belgium",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Only 4-star in Aalst with a fitness room and sauna free for guests that we could confirm.",
+		"bestReason_es": "El único 4 estrellas de Aalst con sala de fitness y sauna gratis para huéspedes que hemos podido confirmar.",
+		"luxuryNote": "No 5-star hotel with a gym confirmed in the city",
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Keizershof Hotel Aalst",
+				"stars": 4,
+				"area": "Centre (Korte Nieuwstraat)",
+				"bookingUrl": "https://www.booking.com/hotel/be/keizershofhotelaalst.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Sauna"],
+					"access": "Free for guests"
+				},
+				"summary_en": "Fitness center and sauna free for guests. No size or equipment details published.",
+				"summary_es": "Centro de fitness y sauna gratis para huéspedes. No se publican datos de tamaño ni equipamiento.",
+				"sources": ["https://www.hotelgyms.com/hotels/be/aalst/keizershof-hotel-aalst/20466"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/141397316.jpg?k=cb2606b07e312e62bebc82af84630d6226a4835a347ca457309b67aecec7a4f7&o=",
+					"gym": false
+				}
+			},
+			"budget": null
+		}
+	},
+	"aarhus-denmark": {
+		"city": "Aarhus",
+		"country": "Denmark",
+		"checked": "2026-11-02",
+		"best": "budget",
+		"bestReason_en": "A 3-star hotel gym with weights, machines and a squat rack, free for all guests, with CrossFit-style training.",
+		"bestReason_es": "Un gimnasio de hotel de 3 estrellas con pesas, máquinas y rack de sentadillas, gratis para todos los huéspedes, con entrenamiento tipo CrossFit.",
+		"luxuryNote": "No 5-star hotel with a confirmed gym found in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Comwell Aarhus Dolce by Wyndham",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/dk/comwell-aarhus.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness center", "Separate fitness room"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Two fitness areas, a fitness center and a fitness room, described by guests as well-equipped and clean. Size and hours are not published.",
+				"summary_es": "Dos zonas de fitness, un centro y una sala, descritas por los huéspedes como bien equipadas y limpias. No se publican tamaño ni horario.",
+				"sources": ["https://www.travelmyth.ie/Aarhus/Hotels/gym", "https://www.priceline.com/hotel-deals/en-us/P5000428776/H45514305/comwell-aarhus-dolce-by-wyndham.ssp"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/222604914.jpg?k=0bd2a288033b40a10dd58c4bcf37cfed9121838d6f43dd9fbf2af80e8a9d128f&o=",
+					"gym": true
+				}
+			},
+			"standard": null,
+			"budget": {
+				"hotel": "Hotel Oasia Aarhus City",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/dk/city-oasia.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Weights",
+						"Machines",
+						"Squat rack"
+					],
+					"extras": ["Conditioning, CrossFit and strength training", "Exit to outdoor courtyard"],
+					"access": "Free for all guests"
+				},
+				"summary_en": "A bright lower-floor gym with weights, machines and a squat rack, free for guests. It is set up for conditioning, CrossFit and strength training.",
+				"summary_es": "Un gimnasio luminoso en la planta baja con pesas, máquinas y rack de sentadillas, gratis para los huéspedes. Está preparado para acondicionamiento, CrossFit y fuerza.",
+				"sources": ["https://www.travelmyth.ie/Aarhus/Hotels/gym", "https://www.priceline.com/hotel-deals/en-us/P5000428776/H14289704/hotel-oasia-aarhus-city.ssp"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/307605019.jpg?k=ed38d075c9bbcd1744bc21e40535aad6e87bee21d5573150d74b1bf4690351e0&o=",
+					"gym": true
+				}
+			}
+		}
+	},
+	"addis-ababa-ethiopia": {
+		"city": "Addis Ababa",
+		"country": "Ethiopia",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 235 m2 gym with a 24-hour health club, the largest measured gym found in the city.",
+		"bestReason_es": "Un gimnasio de 235 m2 con club de salud 24 horas, el mayor gimnasio medido que se encontró en la ciudad.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hyatt Regency Addis Ababa",
+				"stars": 5,
+				"area": "Kirkos",
+				"bookingUrl": "https://www.booking.com/hotel/et/hyatt-regency-addis-ababa.html",
+				"website": null,
+				"gym": {
+					"sizeM2": 235,
+					"hours": "24h",
+					"equipment": ["Cardio and weight-training equipment"],
+					"extras": ["Spa"],
+					"access": "Complimentary for guests"
+				},
+				"summary_en": "A 235 m2 gym with cardio and weight equipment, free for guests. A 24-hour health club is listed.",
+				"summary_es": "Gimnasio de 235 m2 con equipo de cardio y pesas, gratis para huéspedes. Se indica un club de salud abierto 24 horas.",
+				"sources": ["https://www.expedia.co.uk/Addis-Ababa-Hotels-Hotel-With-Gym.0-0-d289-thotelwithgym.Travel-Guide-Filter-Hotels", "https://www.travelmyth.co.uk/Addis-Ababa/Hotels/gym"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/931843212.jpg?k=5150db18a2808aeea0277f83fde42823f9f3c370567d1dd04729cfeed2ab9ee1&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Best Western Plus Addis Ababa",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/et/bestwestern-plus-bole.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Fitness centre"],
+					"extras": ["Health club", "Steam room"],
+					"access": null
+				},
+				"summary_en": "A 24-hour fitness centre with a health club and steam room is listed. Size and equipment are not published.",
+				"summary_es": "Se indica un centro de fitness abierto 24 horas, con club de salud y baño de vapor. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.expedia.co.uk/Addis-Ababa-Hotels-Hotel-With-Gym.0-0-d289-thotelwithgym.Travel-Guide-Filter-Hotels"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/698398937.jpg?k=ff5343099cfb4c563b87cb8320d66801958100679f35796a4c7dfbfc322700bf&o=",
+					"gym": false
+				}
+			},
+			"budget": {
+				"hotel": "Hotel Lobelia",
+				"stars": null,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/et/lobelia.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Weights",
+						"Machines",
+						"Treadmill"
+					],
+					"extras": ["Steam room"],
+					"access": null
+				},
+				"summary_en": "Gym and steam room. Reviews mention weights, machines and a working treadmill, with some equipment issues.",
+				"summary_es": "Gimnasio y baño de vapor. Las reseñas mencionan pesas, máquinas y una cinta que funciona, con algunos problemas de equipamiento.",
+				"sources": ["https://www.travelmyth.co.uk/Addis-Ababa/Hotels/gym", "https://www.expedia.co.uk/Addis-Ababa-Hotels-Hotel-With-Gym.0-0-d289-thotelwithgym.Travel-Guide-Filter-Hotels"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/616368467.jpg?k=488876e4f92435839e4b2baabd97d36923c28638b646023c227389c3b04ad849&o=",
+					"gym": false
+				}
+			}
+		}
+	},
+	"adelaide-australia": {
+		"city": "Adelaide",
+		"country": "Australia",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Open 24 hours with cardio, strength machines and a wide selection of free weights.",
+		"bestReason_es": "Abierto las 24 horas, con cardio, máquinas de fuerza y una amplia selección de peso libre.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "The Playford Hotel Adelaide - MGallery Collection",
+				"stars": 5,
+				"area": "North Terrace",
+				"bookingUrl": null,
+				"website": "https://mgallery.accor.com/en/hotels/8789/wellness/wellness-fitness.html",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Cardio equipment",
+						"Strength-training machines",
+						"Wide selection of free weights"
+					],
+					"extras": [],
+					"access": "Exclusively for hotel guests"
+				},
+				"summary_en": "The Playford Fitness Centre is open 24 hours and has cardio equipment, strength machines and a wide selection of free weights. Guests only.",
+				"summary_es": "El Playford Fitness Centre abre las 24 horas y tiene cardio, máquinas de fuerza y una amplia selección de peso libre. Solo para huéspedes.",
+				"sources": ["https://mgallery.accor.com/en/hotels/8789/wellness/wellness-fitness.html"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"airdrie-canada": {
+		"city": "Airdrie",
+		"country": "Canada",
+		"checked": "2026-11-02",
+		"best": "budget",
+		"bestReason_en": "A confirmed fitness centre, but only a basic one rated Poor on GymFactor.",
+		"bestReason_es": "Un gimnasio confirmado, pero básico y valorado como Poor en GymFactor.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": null,
+			"budget": {
+				"hotel": "Wingate by Wyndham Airdrie",
+				"stars": null,
+				"area": "Airdrie",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness center"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Has a fitness center rated Poor on GymFactor. Size, hours and equipment are not published.",
+				"summary_es": "Tiene un gimnasio valorado como Poor en GymFactor. No se publican tamaño, horario ni equipamiento.",
+				"sources": ["https://www.hotelgyms.com/hotels/ca/airdrie/wingate-by-wyndham-airdrie/1795002"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"aix-en-provence-france": {
+		"city": "Aix-en-Provence",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Only Aix-en-Provence hotel with gym equipment confirmed on its official page: treadmill, bike and weight bench.",
+		"bestReason_es": "El único hotel de Aix-en-Provence con equipamiento confirmado en su página oficial: cinta, bicicleta y banco de pesas.",
+		"luxuryNote": "No 5-star hotel with a gym confirmed in the city",
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Grand Hôtel Roi René Aix-en-Provence Centre - MGallery Collection",
+				"stars": null,
+				"area": "Centre (5 min walk from Cours Mirabeau)",
+				"bookingUrl": null,
+				"website": "https://mgallery.accor.com/en/hotels/1169/wellness-fitness.html",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Treadmill",
+						"Exercise bike",
+						"Weight training bench"
+					],
+					"extras": ["Outdoor pool", "Heated pool"],
+					"access": null
+				},
+				"summary_en": "A small fitness room with a treadmill, a bike and a weight training bench, with natural light. The hotel also has an outdoor pool.",
+				"summary_es": "Una pequeña sala de fitness con cinta de correr, bicicleta y banco de pesas, con luz natural. El hotel también tiene piscina exterior.",
+				"sources": ["https://mgallery.accor.com/en/hotels/1169/wellness-fitness.html", "https://all.accor.com/a/en/destination/city/hotels-aix-en-provence-v0043/fitness.html"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"aix-les-bains-france": {
+		"city": "Aix-les-Bains",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "A 4-star hotel with a fitness room plus a spa with two heated pools.",
+		"bestReason_es": "Un hotel de 4 estrellas con sala de fitness y un spa con dos piscinas climatizadas.",
+		"luxuryNote": "No 5-star hotel with a gym confirmed in the city",
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Hôtel Mercure Aix-les-Bains Domaine de Marlioz",
+				"stars": 4,
+				"area": "Domaine de Marlioz",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Indoor heated pool",
+						"Outdoor heated pool",
+						"Sauna",
+						"Hammam"
+					],
+					"access": null
+				},
+				"summary_en": "A fitness room is listed, with no details on equipment or hours. The spa has an indoor heated pool, a sauna and a hammam, and there is also an outdoor heated pool.",
+				"summary_es": "Se indica una sala de fitness, sin detalles de equipamiento ni horario. El spa tiene piscina interior climatizada, sauna y hammam, y hay también una piscina exterior climatizada.",
+				"sources": ["https://www.staycation.co/fr/hotels/spa-2h-hotel-mercure-aixlesbains-domaine-de-marlioz-6388"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"ajaccio-france": {
+		"city": "Ajaccio",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A fitness centre inside a hotel with spa, sauna and pool; no equipment details found.",
+		"bestReason_es": "Un centro de fitness en un hotel con spa, sauna y piscina; no se encontraron detalles del equipamiento.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Sofitel Golfe d'Ajaccio Thalassa Sea & Spa",
+				"stars": null,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Spa",
+						"Sauna",
+						"Swimming pool"
+					],
+					"access": "Fitness centre listed among hotel amenities"
+				},
+				"summary_en": "A fitness centre is listed among the amenities, alongside a spa, sauna and swimming pool. GymFactor rating is okay; size, equipment and hours are not given.",
+				"summary_es": "Se indica un centro de fitness entre los servicios, junto a spa, sauna y piscina. La valoración GymFactor es aceptable; no constan tamaño, equipamiento ni horario.",
+				"sources": ["https://www.hotelgyms.com/hotels/fr/ajaccio/sofitel-golfe-dajaccio-thalassa-sea-and-spa/57373"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Radisson Blu Resort & Spa, Ajaccio Bay",
+				"stars": null,
+				"area": null,
+				"bookingUrl": null,
+				"website": "https://www.radissonhotels.com/fr-fr/hotels/radisson-blu-resort-ajaccio-bay-spa",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Spa", "Indoor pool"],
+					"access": "Fitness centre with no access restriction listed; spa and indoor pool are 13+"
+				},
+				"summary_en": "A fitness centre is listed under fitness and wellness, with a spa and indoor pool. No details on equipment, size or hours.",
+				"summary_es": "Se indica un centro de fitness en la sección de fitness y bienestar, con spa y piscina interior. Sin detalles de equipamiento, tamaño ni horario.",
+				"sources": ["https://www.radissonhotels.com/fr-fr/hotels/radisson-blu-resort-ajaccio-bay-spa/services"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"alajuela-costa-rica": {
+		"city": "Alajuela",
+		"country": "Costa Rica",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "24-hour gym with Technogym machines, cardio and weights.",
+		"bestReason_es": "Gimnasio 24 horas con máquinas Technogym, cardio y pesas.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Residence Inn by Marriott San Jose Alajuela el Coyol",
+				"stars": 4,
+				"area": "El Coyol",
+				"bookingUrl": null,
+				"website": "https://www.marriott.com/en-us/hotels/sjoac-ac-hotel-heredia-belen/overview/",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Technogym machine",
+						"Cardio machines",
+						"Weights"
+					],
+					"extras": [],
+					"access": "Complimentary"
+				},
+				"summary_en": "Fitness centre with Technogym equipment, cardio machines and weights, listed as a 24-hour gym and free for guests. Size is not published.",
+				"summary_es": "Centro de fitness con equipamiento Technogym, máquinas de cardio y pesas, indicado como gimnasio 24 horas y gratuito para huéspedes. No se publica el tamaño.",
+				"sources": ["https://www.marriott.com/en-us/hotels/sjoac-ac-hotel-heredia-belen/overview/", "https://www.travelocity.com/4Star-Alajuela-Hotels.s40-0-d11901.Travel-Guide-Filter-Hotels"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": {
+				"hotel": "Courtyard by Marriott San Jose Airport Alajuela",
+				"stars": 3,
+				"area": "Airport area",
+				"bookingUrl": "https://www.booking.com/hotel/cr/courtyard-by-marriott-san-jose-airport-alajuela.html",
+				"website": "https://www.marriott.com/hotels/travel/sjoap/",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Treadmills", "Ellipticals"],
+					"extras": [],
+					"access": "Complimentary"
+				},
+				"summary_en": "A 24-hour fitness centre with treadmills and ellipticals, free for guests. Guests describe it as clean and functional. Size is not published.",
+				"summary_es": "Centro de fitness 24 horas con cintas y elípticas, gratuito para huéspedes. Los huéspedes lo describen como limpio y funcional. No se publica el tamaño.",
+				"sources": ["https://www.marriott.com/hotels/travel/sjoap/", "https://www.travelmyth.co.uk/Alajuela-Costa-Rica/Hotels/gym-accessible"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/515672594.jpg?k=66c6240ef03dc234481fb485b2d0b3f299e887913ff2ce438b22ea7955fba9c0&o=",
+					"gym": true
+				}
+			}
+		}
+	},
+	"amboise-france": {
+		"city": "Amboise",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A Technogym fitness room next to a rock-carved spa with sauna and hammam.",
+		"bestReason_es": "Una sala de fitness Technogym junto a un spa excavado en la roca con sauna y hammam.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Relais d'Amboise",
+				"stars": 5,
+				"area": "Lussault-sur-Loire",
+				"bookingUrl": null,
+				"website": "https://static-new.lhw.com/hotel/Relais-dAmboise-Amboise-France/services-amenities/spa",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Technogym fitness room with strength equipment"],
+					"extras": ["Spa des Roches (sauna, hammam, jacuzzi, cold plunge)", "Outdoor heated pool (seasonal)"],
+					"access": null
+				},
+				"summary_en": "A Technogym fitness room with strength equipment, plus a spa with sauna, hammam and cold plunge. The hotel was closed for renovation until 2026, so confirm it is open.",
+				"summary_es": "Sala de fitness Technogym con equipo de fuerza, más un spa con sauna, hammam e inmersión fría. El hotel estuvo cerrado por reforma hasta 2026, conviene confirmar que está abierto.",
+				"sources": [
+					"https://www.staysomedays.com/hotel/relais-damboise",
+					"https://static-new.lhw.com/hotel/Relais-dAmboise-Amboise-France/services-amenities/spa",
+					"https://www.hotels.com/ho460439"
+				],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"amiens-france": {
+		"city": "Amiens",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Only a fitness room confirmed in most hotels; the Kyriad Prestige adds a spa with steam room.",
+		"bestReason_es": "Casi todos los hoteles solo confirman una sala de fitness; el Kyriad Prestige añade un spa con baño de vapor.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "You Hotel Amiens - Handwritten Collection",
+				"stars": 4,
+				"area": "Near Amiens station",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness room"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Has a fitness room described as fully equipped. Size, equipment and hours are not published.",
+				"summary_es": "Tiene una sala de fitness descrita como totalmente equipada. No se publican tamaño, equipamiento ni horario.",
+				"sources": [
+					"https://www.dayuse.com/hotels/france/you-hotel-amiens-handwritten-collection-janvier-2026",
+					"https://www.travelocity.ca/Amiens-Hotels-You-Hotel-Amiens-Handwritten-Collection.h123989463.Hotel-Information",
+					"https://www.expedia.co.uk/Amiens-Hotels-Hotel-With-Gym.0-0-d4726-thotelwithgym.Travel-Guide-Filter-Hotels"
+				],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Kyriad Prestige Hôtel and Spa, Amiens Nord",
+				"stars": 4,
+				"area": "Poulainville (about 8 km north of the centre)",
+				"bookingUrl": "https://www.booking.com/hotel/fr/kyriad-prestige-amiens-poulainville-hotel-and-spa.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness centre"],
+					"extras": ["Spa with steam room", "Indoor hot tubs"],
+					"access": null
+				},
+				"summary_en": "Has a fitness centre plus a spa with steam room. Equipment and hours are not published; it is in Poulainville, outside the city centre.",
+				"summary_es": "Tiene un centro de fitness y un spa con baño de vapor. No se publican equipamiento ni horario; está en Poulainville, fuera del centro.",
+				"sources": ["https://www.expedia.co.id/Poulainville-Hotels-Kyriad-Prestige-Amiens-Poulainville-Hotel-And-SPA.h30444622.Hotel-Information"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/185813969.jpg?k=9246eb3624423f4d082228ec985ed40c655c817df8e9de008d3f086a64a13821&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Holiday Inn Express Amiens",
+				"stars": 3,
+				"area": "Boulevard d'Alsace Lorraine, near the station",
+				"bookingUrl": "https://www.booking.com/hotel/fr/express-by-holiday-inn.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness centre"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Lists a fitness centre. Size, equipment and hours are not published.",
+				"summary_es": "Indica un centro de fitness. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.kayak.fr/Amiens-Hotels-Holiday-Inn-Express-Amiens.5389.ksp"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/512678076.jpg?k=8b26ef11c83388369116e96caf2d011fd89a436be4a739659436fed68c5a7fe8&o=",
+					"gym": true
+				}
+			}
+		}
+	},
+	"andorra-la-vella-andorra": {
+		"city": "Andorra la Vella",
+		"country": "Andorra",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The 5-star option with a gym plus sauna and indoor pool, though equipment details are not published.",
+		"bestReason_es": "La opción de 5 estrellas con gimnasio, sauna y piscina cubierta, aunque no se publica el equipamiento.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Andorra Park Hotel",
+				"stars": 5,
+				"area": "Centro (Les Canals)",
+				"bookingUrl": "https://www.booking.com/hotel/ad/andorraparkhotel.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Sauna",
+						"Indoor pool",
+						"Seasonal outdoor pool",
+						"Spa"
+					],
+					"access": "Guests"
+				},
+				"summary_en": "A fitness centre with a sauna and an indoor pool, plus a seasonal outdoor pool and spa. Size, hours and equipment are not published.",
+				"summary_es": "Un centro de fitness con sauna y piscina cubierta, además de piscina exterior de temporada y spa. No se publican tamaño, horario ni equipamiento.",
+				"sources": ["https://www.hotelgyms.com/hotels/ad/andorra-la-vella/andorra-park-hotel/16812", "https://widgets.hotels.com/de1634148-am2/gym-hotels-andorra-la-vella-andorra"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/113168901.jpg?k=1bfd8fab017264993da75990120cf31c38d642a9d506ef29f11e5ddd31ad2e40&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Mercure Andorra",
+				"stars": 4,
+				"area": "Centro (Carrer de la Roda)",
+				"bookingUrl": "https://www.booking.com/hotel/ad/mercure-andorra.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Cardio machines", "Strength machines"],
+					"extras": [
+						"Indoor pool",
+						"Hot tub",
+						"Turkish bath",
+						"Sauna"
+					],
+					"access": "Gym and wellness area free for guests"
+				},
+				"summary_en": "Gym with cardio and strength machines, free for guests, with an indoor pool, sauna and Turkish bath. One reviewer said the machines needed updating.",
+				"summary_es": "Gimnasio con máquinas de cardio y fuerza, gratis para huéspedes, con piscina cubierta, sauna y baño turco. Un huésped comentó que las máquinas necesitaban renovarse.",
+				"sources": ["https://www.hotelgyms.com/hotels/ad/andorra-la-vella/mercure-andorra/16854", "https://www.priceline.com/hotel-deals/en-us/P5000226786/H1864005/mercure-andorra.ssp"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/934406533.jpg?k=b5be0bbe01e6fd1c19db4a270264dd12eca23d9672da62bb28b70bdd8ae40d28&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"angers-france": {
+		"city": "Angers",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Only hotel with a described fitness centre; a guest calls it functional.",
+		"bestReason_es": "El único hotel con un centro de fitness descrito; un huésped lo califica de funcional.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Novotel Angers Centre Gare",
+				"stars": 4,
+				"area": "Centre Gare",
+				"bookingUrl": "https://www.booking.com/hotel/fr/novotel-angers-centre-gare.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness centre"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Described as a well-equipped fitness centre; one reviewer calls it functional but not the best. Size and hours are not published.",
+				"summary_es": "Descrito como un centro de fitness bien equipado; un huésped lo llama funcional pero no el mejor. No se publican tamaño ni horario.",
+				"sources": ["https://www.expedia.co.uk/Angers-Hotels-Hotel-With-Gym.0-0-d6128-thotelwithgym.Travel-Guide-Filter-Hotels", "https://www.expedia.ie/Angers-Hotels-Novotel-Angers-Centre-Gare.h48435769.Hotel-Information"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/907396068.jpg?k=8c8147455207ded749eb7cc66bd28b4a9b866cf562f42669e4ba7d114b9935fc&o=",
+					"gym": false
+				}
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"annecy-france": {
+		"city": "Annecy",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Technogym fitness room plus a 600 m2 spa on the lake shore.",
+		"bestReason_es": "Sala de fitness Technogym más un spa de 600 m2 junto al lago.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "L'Impérial Palace",
+				"stars": 4,
+				"area": "Lake Annecy shore",
+				"bookingUrl": "https://www.booking.com/hotel/fr/imperial-palace.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Technogym equipment"],
+					"extras": ["Cristal Spa 600 m2 with pool, sauna, steam room", "Health club"],
+					"access": null
+				},
+				"summary_en": "Fitness room with Technogym equipment, plus a 600 m2 Cristal Spa with pool, sauna and hammam. Size and hours of the gym are not published.",
+				"summary_es": "Sala de fitness con equipos Technogym y un spa Cristal de 600 m2 con piscina, sauna y hammam. No se publican tamaño ni horario del gimnasio.",
+				"sources": [
+					"https://www.media.france.fr/en/node/1863",
+					"https://www.luxe-magazine.com/en/article/8232-limperial_palace.html",
+					"https://www.expedia.co.uk/Annecy-Hotels-Hotel-With-Gym.0-0-d2532-thotelwithgym.Travel-Guide-Filter-Hotels"
+				],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/34380351.jpg?k=471b97ac3a61fc61c74e1a25df9b3e1c4fb2c3b76b7f1e3bfcf2603152d0a5e7&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Splendid Hotel Lac d'Annecy - Handwritten Collection",
+				"stars": 4,
+				"area": "Lake Annecy",
+				"bookingUrl": "https://www.booking.com/hotel/fr/splendid-hotel-annecy.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Fitness facilities"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Fitness facilities listed as open 24 hours. Size and equipment are not published.",
+				"summary_es": "Instalaciones de fitness indicadas como abiertas 24 horas. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.expedia.co.uk/Annecy-Hotels-Hotel-With-Gym.0-0-d2532-thotelwithgym.Travel-Guide-Filter-Hotels"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/934242636.jpg?k=26c5e81ae02177f503c8c66979120bc18b8a6a1cffe1c6777a0201e0d303b61a&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "ROYAL Annecy Apparthôtel",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Fitness facilities"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Fitness facilities listed as open 24 hours. Size and equipment are not published.",
+				"summary_es": "Instalaciones de fitness indicadas como abiertas 24 horas. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.expedia.co.uk/Annecy-Hotels-Hotel-With-Gym.0-0-d2532-thotelwithgym.Travel-Guide-Filter-Hotels"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"antibes-france": {
+		"city": "Antibes",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Technogym fitness room plus a spa with sauna, jacuzzi and hammam.",
+		"bestReason_es": "Sala de fitness Technogym más un spa con sauna, jacuzzi y hammam.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Royal Antibes",
+				"stars": 4,
+				"area": "Juan-les-Pins",
+				"bookingUrl": "https://www.booking.com/hotel/fr/residence-royal.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Technogym fitness room"],
+					"extras": ["Royal Spa with sauna, jacuzzi, hammam (on reservation)", "Private beach in season"],
+					"access": null
+				},
+				"summary_en": "Technogym fitness room and a spa with sauna, jacuzzi and hammam. Size and hours are not published.",
+				"summary_es": "Sala de fitness Technogym y un spa con sauna, jacuzzi y hammam. No se publican tamaño ni horario.",
+				"sources": ["https://cotedazurfrance.com/offers/hotel-royal-antibes-antibes-en-2828156/", "https://www.expedia.com.sg/Antibes-Hotels-Royal-Antibes.h1223368.Hotel-Information"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/86293345.jpg?k=abe41b8b3f34659c141a0e272c77d13836317f00f774701f939e447469b4bbcf&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "The 1932 Hotel & Spa Cap d'Antibes - MGallery",
+				"stars": null,
+				"area": "Juan-les-Pins",
+				"bookingUrl": "https://www.booking.com/hotel/fr/legrandpavois.html",
+				"website": "https://mgallery.accor.com/en/hotels/B9Q4/wellness-fitness.html",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Bike",
+						"Rowing machine",
+						"Weight-training machines"
+					],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Gym open 24 hours with a bike, rowing machine and weight machines. One guest review calls it disappointing; star rating not found in a source.",
+				"summary_es": "Gimnasio abierto 24 horas con bicicleta, remo y máquinas de pesas. Una reseña lo califica de decepcionante; no se encontró la categoría en ninguna fuente.",
+				"sources": ["https://mgallery.accor.com/en/hotels/B9Q4/wellness-fitness.html", "https://www.expedia.com.au/Cannes-Hotels-Hotel-Le-Grand-Pavois-Antibes-Juan-Les-Pins.h880003.Hotel-Information"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/933143547.jpg?k=aab29c3faf06cea3d7caf2b16cc8372525ac43a7085868870ed9c10924c60c66&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"antwerp-belgium": {
+		"city": "Antwerp",
+		"country": "Belgium",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Only Antwerp hotel gym with confirmed hours and equipment, though it is compact.",
+		"bestReason_es": "El único gimnasio de hotel de Amberes con horario y equipamiento confirmados, aunque es compacto.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "NH Collection Antwerp Centre",
+				"stars": null,
+				"area": "Centre",
+				"bookingUrl": null,
+				"website": "https://nh-hotels.com/en/hotel/nh-collection-antwerp-centre",
+				"gym": {
+					"sizeM2": null,
+					"hours": "06:00-23:00",
+					"equipment": [
+						"Treadmill",
+						"Stationary bike",
+						"Nordic walking machine",
+						"Loose weights"
+					],
+					"extras": ["Towels and water provided"],
+					"access": "Free for guests"
+				},
+				"summary_en": "A compact gym on the lobby floor, open 06:00 to 23:00, with a treadmill, stationary bike, Nordic walking machine and loose weights. Towels and water are provided.",
+				"summary_es": "Un gimnasio compacto en la planta del vestíbulo, abierto de 06:00 a 23:00, con cinta de correr, bicicleta estática, máquina de marcha nórdica y pesas sueltas. Incluye toallas y agua.",
+				"sources": ["https://nh-hotels.com/en/hotel/nh-collection-antwerp-centre/services"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"arcachon-france": {
+		"city": "Arcachon",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Only hotels with gym confirmed are a 5-star, a 4-star spa hotel and a 24h 3-star.",
+		"bestReason_es": "Los únicos hoteles con gimnasio confirmado son un 5 estrellas, un 4 estrellas con spa y un 3 estrellas 24h.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Les Vagues Hôtel & Spa",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/les-vagues-amp-spa.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Gym"],
+					"extras": ["Spa", "Private outdoor hot tubs in some rooms"],
+					"access": null
+				},
+				"summary_en": "Has a gym and a spa. Size, equipment and hours are not published.",
+				"summary_es": "Tiene gimnasio y spa. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.expedia.co.uk/Arcachon-Hotels-Hotel-With-Gym.0-0-d4730-thotelwithgym.Travel-Guide-Filter-Hotels"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/585049126.jpg?k=b7adc3519c5812776e728c5f6c01a5ee7e395d4462344e7480e2b66d66cacc48&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Hôtel & Spa - Thalazur Arcachon",
+				"stars": 4,
+				"area": "Plage des Abatilles",
+				"bookingUrl": "https://www.booking.com/hotel/fr/arcachon.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness centre"],
+					"extras": [
+						"Thalassotherapy spa",
+						"Indoor pool",
+						"Sauna"
+					],
+					"access": null
+				},
+				"summary_en": "Fitness centre alongside a thalassotherapy spa, indoor pool and sauna. GymFactor rates the gym Poor; size and hours are not published.",
+				"summary_es": "Centro de fitness junto a un spa de talasoterapia, piscina cubierta y sauna. GymFactor valora el gimnasio como Pobre; no se publican tamaño ni horario.",
+				"sources": [
+					"https://www.expedia.co.uk/Arcachon-Hotels-Hotel-With-Gym.0-0-d4730-thotelwithgym.Travel-Guide-Filter-Hotels",
+					"https://www.hotelgyms.com/hotels/fr/arcachon/thalazur-arcachon-hotel-and-spa/57335",
+					"https://www.expedia.ie/Arcachon-Hotels-Hotel-Spa-Les-Bains-DArguin-By-Thalazur.h788284.Hotel-Information"
+				],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/69585045.jpg?k=ad8fa051c3fa6b36f03081074966beee437b750f280ee304e76f465e3c623bd3&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Arcanse by Inwood Hotels",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/de-la-plage-arcachon.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Fitness facilities"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Fitness facilities listed as open 24 hours. Size and equipment are not published.",
+				"summary_es": "Instalaciones de fitness indicadas como abiertas 24 horas. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.expedia.co.uk/Arcachon-Hotels-Hotel-With-Gym.0-0-d4730-thotelwithgym.Travel-Guide-Filter-Hotels"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/888235391.jpg?k=08d81a8d6a6d8c4292df3da1c3738ba28a42e6be7820d86fb1b3feb769581b3e&o=",
+					"gym": false
+				}
+			}
+		}
+	},
+	"arica-chile": {
+		"city": "Arica",
+		"country": "Chile",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Gym with Pilates and fitness classes plus a spa and several pools; no other Arica hotel gym had details.",
+		"bestReason_es": "Gimnasio con clases de Pilates y fitness, además de spa y varias piscinas; ningún otro gimnasio de hotel de Arica tenía detalles.",
+		"luxuryNote": "No 5-star hotel with a gym confirmed in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Antay Hotel & Spa",
+				"stars": 4,
+				"area": "Arica",
+				"bookingUrl": "https://www.booking.com/hotel/cl/antay-spa.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Pilates and fitness classes",
+						"Spa with sauna",
+						"2 indoor pools",
+						"4 outdoor pools"
+					],
+					"access": "For hotel guests"
+				},
+				"summary_en": "Gym with Pilates and fitness classes; one guest calls it very complete. Spa with sauna and hydrotherapy, and 2 indoor and 4 outdoor pools. Hours and equipment are not published.",
+				"summary_es": "Gimnasio con clases de Pilates y fitness; un huésped lo describe como muy completo. Spa con sauna e hidroterapia, y 2 piscinas cubiertas y 4 exteriores. No publican horario ni equipamiento.",
+				"sources": [
+					"https://mob.expedia.ae/Arica-Hotels-Antay-Hotel-Spa.h27409997.Hotel-Information",
+					"https://hoteles.com/en/de1634888-am2/gym-hotels-arica-chile",
+					"https://www.bestday.com.mx/hoteles/h-1259817/antay-hotel-spa"
+				],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/143621615.jpg?k=a9e4116e307636a6b04dda81050ef299c9f64c1de8933c506d8b331bc95af522&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Novotel Arica",
+				"stars": 4,
+				"area": "Arica",
+				"bookingUrl": "https://www.booking.com/hotel/cl/novotel-arica.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Seasonal outdoor pool"],
+					"access": null
+				},
+				"summary_en": "Has a gym listed among its amenities and a seasonal outdoor pool. No details on size, equipment or hours.",
+				"summary_es": "Tiene gimnasio entre sus servicios y piscina exterior de temporada. Sin datos de tamaño, equipamiento ni horario.",
+				"sources": ["https://hoteles.com/en/de1634888-am2/gym-hotels-arica-chile", "https://www.despegar.com.mx/hoteles/h-4445985/novotel-arica-arica"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/914993825.jpg?k=849cb7bf83de9eb60146c080a1e4a9e703f38773a958da8e37accdf958840130&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"arles-france": {
+		"city": "Arles",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Technogym room of about 24 m2 with free weights, plus a 250 m2 spa.",
+		"bestReason_es": "Sala Technogym de unos 24 m2 con peso libre, más un spa de 250 m2.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Jules César Hotel & Spa Arles - MGallery Collection",
+				"stars": 5,
+				"area": "Boulevard des Lices",
+				"bookingUrl": "https://www.booking.com/hotel/fr/jules-cesar.html",
+				"website": "https://all.accor.com/hotel/9736/index.en.shtml",
+				"gym": {
+					"sizeM2": 24,
+					"hours": null,
+					"equipment": ["Technogym treadmill, exercise bike, elliptical trainer", "Weight bench and free weights"],
+					"extras": ["250 m2 CINQ MONDES spa with sauna, hammam, jacuzzi", "Seasonal heated outdoor pool"],
+					"access": "Spa access EUR 20 for 2 hours for hotel guests"
+				},
+				"summary_en": "Fitness room of about 24 m2 with Technogym cardio, a bench and free weights. Hours are not published.",
+				"summary_es": "Sala de fitness de unos 24 m2 con cardio Technogym, banco y peso libre. No se publica el horario.",
+				"sources": ["https://all.accor.com/hotel/9736/index.en.shtml"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/933336929.jpg?k=abcd50c93f051c044fab169a5341d2996fdbcc8433b7e3d566ffdb1c3ce17e9d&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Hôtel Arles Plaza",
+				"stars": 4,
+				"area": "Avenue Sadi Carnot",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness room (sources disagree)"],
+					"extras": ["Heated pool", "Hammam and jacuzzi"],
+					"access": null
+				},
+				"summary_en": "One listing mentions a fitness room for guests, another says guests get free use of a nearby fitness centre. Treat as unconfirmed.",
+				"summary_es": "Un listado menciona una sala de fitness para huéspedes y otro indica uso gratuito de un gimnasio cercano. Sin confirmar.",
+				"sources": ["https://www.myprovence.fr/les-guides/hebergements/hotels/arles/arles-plaza", "https://uk.hotels.com/de1748506-am2/gym-hotels-arles-and-vicinity-france"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"arras-france": {
+		"city": "Arras",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Fitness room inside a 400 m2 spa with indoor pool; other hotels only list a gym.",
+		"bestReason_es": "Sala de fitness dentro de un spa de 400 m2 con piscina cubierta; los demás hoteles solo indican gimnasio.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Best Western Plus Le Fairway Hôtel & Spa Golf d'Arras",
+				"stars": 4,
+				"area": "Anzin-Saint-Aubin (Arras)",
+				"bookingUrl": "https://www.booking.com/hotel/fr/best-western-plus-le-fairway-spa-golf-d-arras.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness room with modern equipment"],
+					"extras": ["400 m2 Cinq Mondes spa with hammam, sauna, hot tub", "Indoor pool"],
+					"access": null
+				},
+				"summary_en": "Fitness room with modern equipment inside a 400 m2 spa area with indoor pool, hammam and sauna. Size and hours of the gym are not published; it is in Anzin-Saint-Aubin next to Arras.",
+				"summary_es": "Sala de fitness con equipos modernos dentro de un spa de 400 m2 con piscina cubierta, hammam y sauna. No se publican tamaño ni horario; está en Anzin-Saint-Aubin, junto a Arras.",
+				"sources": ["https://www.voyage-prive.com/ppl/voyage-france-hauts-de-france-best-western-plus-le-fairway-hotel-and-spa-golf-d-arras/69317", "https://www.lastminute.com/hotels/france/anzin-saint-aubin/best-western-plus-le-fairway-hotel-spa-golf-darras_hid-10001427"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/834455354.jpg?k=0c1e66ae9dc6398dc1ae18bff7da36eaaae308ae9f738f611ef0db8a8153e1bc&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Mercure Arras Centre Gare",
+				"stars": 4,
+				"area": "Boulevard Carnot",
+				"bookingUrl": "https://www.booking.com/hotel/fr/mercure-atria-arras-centre.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Gym"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Lists a gym among amenities. Size, equipment and hours are not published.",
+				"summary_es": "Indica un gimnasio entre sus servicios. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.expedia.ie/Arras-Hotels-Mercure-Arras-Centre-Gare.h15526.Hotel-Information"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/878959444.jpg?k=3ce2266a7dacfeb97e248459d569b1aa4c3bb60d98d1450dfb776a500c1abe0a&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Holiday Inn Express Arras",
+				"stars": 3,
+				"area": "Rue du Docteur Brassart",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness centre"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Lists a fitness centre. GymFactor rates it Poor; size, equipment and hours are not published.",
+				"summary_es": "Indica un centro de fitness. GymFactor lo valora como Pobre; no se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.expedia.com/Arras-Hotels-Holiday-Inn-Express-Arras.h1382435.Hotel-Information", "https://www.hotelgyms.com/hotels/fr/arras/holiday-inn-express-arras/218679"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"aswan-egypt": {
+		"city": "Aswan",
+		"country": "Egypt",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Round-the-clock gym access plus steam room and indoor and outdoor pools.",
+		"bestReason_es": "Acceso al gimnasio a cualquier hora, además de baño de vapor y piscinas interior y exterior.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Old Cataract, Aswan",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/eg/old-cataract-aswan-operated-by-mandarin-oriental.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": [
+						"Steam room",
+						"Indoor pool",
+						"Outdoor pool"
+					],
+					"access": null
+				},
+				"summary_en": "Expedia lists round-the-clock gym access, a steam room and indoor and outdoor pools. Size and equipment are not published.",
+				"summary_es": "Expedia indica acceso al gimnasio a cualquier hora, baño de vapor y piscinas interior y exterior. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.expedia.co.uk/Aswan-Hotels-Hotel-With-Gym.0-0-d434-thotelwithgym.Travel-Guide-Filter-Hotels"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/863044695.jpg?k=d81b2e6ed65f97eafbe7a4b94466f95896f53ed31d7b6254e8496df94f2ed9eb&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Obelisk Nile Hotel Aswan",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/eg/pyramisa-isis-corniche-aswan-resort.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Expedia lists a well-equipped fitness centre. Size, equipment and hours are not published.",
+				"summary_es": "Expedia indica un centro de fitness bien equipado. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.expedia.co.uk/Aswan-Hotels-Hotel-With-Gym.0-0-d434-thotelwithgym.Travel-Guide-Filter-Hotels", "https://www.booking.com/fourstars/city/eg/aswan.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/183993208.jpg?k=045ccb03e8cf95d139610c1ee617e48848fe39e6bfc2a7cd342791d34bd41c84&o=",
+					"gym": false
+				}
+			},
+			"budget": null
+		}
+	},
+	"avignon-france": {
+		"city": "Avignon",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Two fitness centres plus a spa with indoor pool, rated well equipped by guests.",
+		"bestReason_es": "Dos gimnasios más un spa con piscina interior, valorados por los huéspedes como bien equipados.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hotel d'Europe",
+				"stars": 5,
+				"area": "City Centre",
+				"bookingUrl": "https://www.booking.com/hotel/fr/d-europe.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Listed with a fitness room and massage room. No size, equipment or hours are published in the sources found.",
+				"summary_es": "Figura con sala de fitness y sala de masajes. En las fuentes consultadas no hay tamaño, equipamiento ni horario.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Avignon/Hotels/gym",
+					"https://sg.trip.com/hotels/gym/city/fr/avignon.html",
+					"https://uk.hotels.com/de542925-am2/gym-hotels-avignon-france"
+				],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/77447329.jpg?k=223dbc16c318eb57d2d4d72d69c8a9bebe899226fbbf1587b43b972abacdf58c&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Mercure Avignon TGV Hotel and Spa",
+				"stars": 4,
+				"area": "Quartier Ouest",
+				"bookingUrl": "https://www.booking.com/hotel/fr/expresshiavignon.html",
+				"website": "https://all.accor.com/hotel/B6F6/index.en.shtml",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Modern and varied cardio and fitness equipment", "Two fitness centres"],
+					"extras": ["Spa with indoor pool and sauna (guests over 15)", "Outdoor heated pool, April to September"],
+					"access": "Guests"
+				},
+				"summary_en": "Two fitness centres with modern equipment, plus a spa with indoor pool and sauna. Guests call it well equipped for cardio but on the smaller side.",
+				"summary_es": "Dos gimnasios con equipamiento moderno, además de un spa con piscina interior y sauna. Los huéspedes lo describen como bien equipado para cardio pero algo pequeño.",
+				"sources": [
+					"https://all.accor.com/hotel/B6F6/index.en.shtml",
+					"https://www.travelmyth.co.uk/Avignon/Hotels/gym",
+					"https://uk.hotels.com/de542925-am2/gym-hotels-avignon-france"
+				],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/766142631.jpg?k=531b611c17f3c3ac8ad1a88b5e18a981a8c0a3af26ab2a5b7d7cdacf1ee207af&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "ApartHotel Sainte-Marthe",
+				"stars": null,
+				"area": "Quartier Nord",
+				"bookingUrl": "https://www.booking.com/hotel/fr/ra-c-sidence-sainte-marthe.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Small ground-floor gym with basic equipment"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "A small, simple ground-floor gym, described by guests as adequate for basic workouts. Some guests say the equipment needs maintenance.",
+				"summary_es": "Un gimnasio pequeño y sencillo en la planta baja, adecuado para entrenamientos básicos según los huéspedes. Algunos indican que el equipo necesita mantenimiento.",
+				"sources": ["https://www.travelmyth.co.uk/Avignon/Hotels/gym", "https://sg.trip.com/hotels/gym/city/fr/avignon.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/792947433.jpg?k=cf5a8fa4f4c0884007d5bb28b8b4f21bc68b4b59fa3b467031e91b5ba23d66b8&o=",
+					"gym": true
+				}
+			}
+		}
+	},
+	"bad-hofgastein-austria": {
+		"city": "Bad Hofgastein",
+		"country": "Austria",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Technogym equipment with free weights, though open only 7:00 to 20:00.",
+		"bestReason_es": "Equipamiento Technogym con peso libre, aunque solo abre de 7:00 a 20:00.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "DAS.GOLDBERG",
+				"stars": null,
+				"area": "Bad Hofgastein centre",
+				"bookingUrl": "https://www.booking.com/hotel/at/das-goldberg.html",
+				"website": "https://www.dasgoldberg.at/",
+				"gym": {
+					"sizeM2": null,
+					"hours": "07:00-20:00",
+					"equipment": [
+						"Technogym equipment",
+						"Treadmills",
+						"Cross trainers",
+						"Ergometers",
+						"Free weights",
+						"Functional training equipment"
+					],
+					"extras": ["Spa and sauna areas"],
+					"access": "Included for hotel guests"
+				},
+				"summary_en": "A Technogym fitness room with treadmills, cross trainers, ergometers, free weights and functional training gear, open daily 7:00 to 20:00. No supervised classes in the room.",
+				"summary_es": "Una sala de fitness Technogym con cintas, elípticas, ergómetros, peso libre y material de entrenamiento funcional, abierta a diario de 7:00 a 20:00. Sin clases dirigidas en la sala.",
+				"sources": ["https://www.dasgoldberg.at/en/natures-nest/fitness/"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/933633633.jpg?k=15b4bce467ad677527873edd9d98784f9df21fcf1fe972734177b93c7e2c3614&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"bad-ischl-austria": {
+		"city": "Bad Ischl",
+		"country": "Austria",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Only hotel in Bad Ischl with a confirmed gym area.",
+		"bestReason_es": "El único hotel de Bad Ischl con una zona de gimnasio confirmada.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Stadthotel Goldenes Schiff",
+				"stars": 4,
+				"area": "Town centre, on the Traun river",
+				"bookingUrl": "https://www.booking.com/hotel/at/goldenesschiff.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Saunas",
+						"Steam room",
+						"Relaxation area over the river"
+					],
+					"access": "Fitness area for guests"
+				},
+				"summary_en": "A fitness area next to the saunas and relaxation area. No size, equipment or hours are published. The 4 comes from a hotels.com property class.",
+				"summary_es": "Una zona de fitness junto a las saunas y la zona de relax. No hay datos de tamaño, equipamiento ni horario. El 4 viene de la clase de propiedad de hotels.com.",
+				"sources": ["https://ca.trip.com/hotels/bad-ischl-gym/hotels-c36926f4", "https://za.hotels.com/ho290615/hotel-goldenes-schiff-bad-ischl-austria"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/286382021.jpg?k=08aa1cf166426f83f7134333d7a8eed2caf3cdf85a8eb6d6d1dd53f91517c3d8&o=",
+					"gym": false
+				}
+			},
+			"budget": null
+		}
+	},
+	"bahia-blanca-argentina": {
+		"city": "Bahia Blanca",
+		"country": "Argentina",
+		"checked": "2026-11-02",
+		"best": "budget",
+		"bestReason_en": "The only Bahia Blanca hotel found that states it has a gym.",
+		"bestReason_es": "El único hotel de Bahía Blanca encontrado que indica tener gimnasio.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": null,
+			"budget": {
+				"hotel": "Hotel Argos",
+				"stars": null,
+				"area": "Centro (España 149)",
+				"bookingUrl": "https://www.booking.com/hotel/ar/argos.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": "Guests"
+				},
+				"summary_en": "Expedia lists a gym and a business centre. No size, hours or equipment are published.",
+				"summary_es": "Expedia indica que tiene gimnasio y centro de negocios. No se publican tamaño, horario ni equipamiento.",
+				"sources": ["https://www.travelocity.com/Bahia-Blanca-Hotels-Hotels-With-Fitness-Center.0-0-d564-tHotelswithFitnessCenter.Travel-Guide-Filter-Hotels", "https://www.expedia.ie/Bahia-Blanca-Hotels-Hotel-Argos.h15419317.Hotel-Information"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/16230640.jpg?k=6a916176ffddbd24e908cdc4d79173845df3dff5b5a80762589da84f30290f2c&o=",
+					"gym": true
+				}
+			}
+		}
+	},
+	"baku-azerbaijan": {
+		"city": "Baku",
+		"country": "Azerbaijan",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Technogym and free-weight equipment, personal trainers, a group studio and a 3,500 m2 two-floor spa.",
+		"bestReason_es": "Equipamiento Technogym y peso libre, entrenadores personales, sala de clases y un spa de 3.500 m2 en dos plantas.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Fairmont Baku, Flame Towers",
+				"stars": 5,
+				"area": "Flame Towers",
+				"bookingUrl": null,
+				"website": "https://www.fairmont.com/baku/",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Technogym machines",
+						"Free weights",
+						"Kinesis equipment",
+						"Cardio machines",
+						"Power Plates"
+					],
+					"extras": [
+						"Indoor heated pool",
+						"Outdoor pool (seasonal)",
+						"Spa (3,500 m2)",
+						"Personal trainers",
+						"Group exercise studio"
+					],
+					"access": "Hotel gym; pool and spa access listed separately"
+				},
+				"summary_en": "Technogym machines, free weights, Kinesis equipment and Power Plates, with certified personal trainers and a group exercise studio. The spa covers 3,500 m2 over two floors and includes an indoor pool.",
+				"summary_es": "Máquinas Technogym, peso libre, equipos Kinesis y Power Plate, con entrenadores personales certificados y sala de clases colectivas. El spa ocupa 3.500 m2 en dos plantas e incluye piscina cubierta.",
+				"sources": ["https://www.fairmont.com/de/hotels/baku/fairmont-baku-flame-towers/wellness.html"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Radisson Hotel Baku",
+				"stars": null,
+				"area": "Baku",
+				"bookingUrl": null,
+				"website": "https://www.radissonhotels.com/en-us/hotels/radisson-hotel-baku",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Cardio machines",
+						"Free weights",
+						"Resistance equipment"
+					],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Open 24 hours with cardio machines, free weights and resistance equipment. No size or other details are published.",
+				"summary_es": "Abierto 24 horas, con máquinas de cardio, peso libre y equipos de resistencia. No se publican el tamaño ni otros detalles.",
+				"sources": ["https://www.radissonhotels.com/en-us/hotels/radisson-hotel-baku/fitness-wellness"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"banff-canada": {
+		"city": "Banff",
+		"country": "Canada",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "24-hour fitness centre with classes and personal trainers, plus lap and heated outdoor pools.",
+		"bestReason_es": "Gimnasio abierto 24 horas con clases y entrenadores personales, además de piscina de largos y piscina exterior climatizada.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Fairmont Banff Springs",
+				"stars": null,
+				"area": "Banff",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Fitness centre"],
+					"extras": [
+						"Fitness and yoga classes",
+						"Personal trainers",
+						"32 m lap pool",
+						"20 m heated outdoor pool",
+						"Sauna",
+						"Spa"
+					],
+					"access": null
+				},
+				"summary_en": "A fitness centre open 24 hours, with fitness and yoga classes and certified personal trainers. Rated Good on GymFactor.",
+				"summary_es": "Un gimnasio abierto 24 horas, con clases de fitness y yoga y entrenadores personales certificados. Valorado como Good en GymFactor.",
+				"sources": ["https://www.banff-springs-hotel.com/wp-content/uploads/2021/12/Fairmont-Banff-Springs-Fitness-Schedule.pdf", "https://www.hotelgyms.com/hotels/ca/banff/fairmont-banff-springs/294554"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	barcelona: {
+		"city": "Barcelona",
+		"country": "Spain",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 300 m2 gym open 24 hours for guests, with custom fitness programs.",
+		"bestReason_es": "Un gimnasio de 300 m2 abierto 24 horas para huéspedes, con programas de fitness a medida.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "W Barcelona",
+				"stars": null,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": 300,
+					"hours": "24h",
+					"equipment": ["Machines with audiovisual features for music or TV"],
+					"extras": [
+						"Custom fitness programs",
+						"Pilates and yoga on SUP boards",
+						"Nike running sessions",
+						"Bliss Spa"
+					],
+					"access": "For hotel guests"
+				},
+				"summary_en": "A 300 m2 gym open 24 hours for hotel guests, with custom fitness programs. Extras include SUP yoga, Nike running sessions and a spa.",
+				"summary_es": "Un gimnasio de 300 m2 abierto 24 horas para huéspedes, con programas de fitness a medida. Ofrece yoga en tablas SUP, sesiones de running con Nike y spa.",
+				"sources": ["https://www.foreverbarcelona.com/?p=17517"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Hotel SB Diagonal Zero Barcelona",
+				"stars": null,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Life Fitness machines", "17 inch screens on cardio equipment"],
+					"extras": [
+						"Spa with warm indoor pool",
+						"Jacuzzi",
+						"Sauna",
+						"Turkish bath"
+					],
+					"access": null
+				},
+				"summary_en": "A 700 m2 wellness center with Life Fitness machines and screens on the cardio equipment. It has a warm indoor pool, sauna and Turkish bath.",
+				"summary_es": "Un centro de bienestar de 700 m2 con máquinas Life Fitness y pantallas en los equipos de cardio. Tiene piscina cubierta templada, sauna y baño turco.",
+				"sources": ["https://www.foreverbarcelona.com/?p=17517"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"barranquilla-colombia": {
+		"city": "Barranquilla",
+		"country": "Colombia",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Internal gym with a pool and spa facilities; no equipment details are published.",
+		"bestReason_es": "Gimnasio interno con piscina y spa; no se publican detalles del equipamiento.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hotel Dann Carlton Barranquilla",
+				"stars": null,
+				"area": "Buenavista",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Swimming pool", "Spa"],
+					"access": null
+				},
+				"summary_en": "Has an internal gym, a swimming pool and spa facilities. Size, equipment and hours are not published.",
+				"summary_es": "Tiene gimnasio interno, piscina y spa. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.hotelgyms.com/hotels/co/barranquilla/hotel-dann-carlton-barranquilla/316644"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"barueri-brazil": {
+		"city": "Barueri",
+		"country": "Brazil",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Only option with published gym hours, plus an indoor pool and massage services.",
+		"bestReason_es": "La única opción con horario de gimnasio publicado, además de piscina cubierta y masajes.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Radisson Hotel Alphaville",
+				"stars": 4,
+				"area": "Alphaville",
+				"bookingUrl": "https://www.booking.com/hotel/br/radisson-alphaville.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "Mon-Fri 6:00-22:00, Sat 9:00-13:00",
+					"equipment": ["Fitness centre"],
+					"extras": ["Indoor pool", "Massage services"],
+					"access": "Guests"
+				},
+				"summary_en": "Fitness centre open weekdays 6:00 to 22:00 and Saturdays 9:00 to 13:00, with an indoor pool and massages. Size and equipment are not published.",
+				"summary_es": "Centro de fitness abierto de lunes a viernes de 6:00 a 22:00 y sábados de 9:00 a 13:00, con piscina cubierta y masajes. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.hotels.com/ho276855", "https://hotels.com/de143871-am2/gym-hotels-barueri-brazil"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/613780897.jpg?k=dc52567163a9f0253694e43999e64eaa9ffe23cd7d5a16346a2bdb947837a58b&o=",
+					"gym": true
+				}
+			},
+			"standard": null,
+			"budget": {
+				"hotel": "Blue Tree Premium Alphaville",
+				"stars": null,
+				"area": "Alphaville",
+				"bookingUrl": "https://www.booking.com/hotel/br/blue-tree-premium-alphaville.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness centre"],
+					"extras": ["Indoor pool", "Spa with massage"],
+					"access": "Guests"
+				},
+				"summary_en": "Fitness centre with an indoor pool and a spa offering massage. Size, equipment and hours are not published.",
+				"summary_es": "Centro de fitness con piscina cubierta y spa con masajes. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://zh.hotels.com/ho537074/lan-shu-a-er-fa-cun-ding-ji-jiu-dian-ba-lu-ye-li-ba-xi", "https://hotels.com/de143871-am2/gym-hotels-barueri-brazil"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/826016938.jpg?k=8974c0252617f03b8471bf805eac83857baed0468e0b8dc39f25adb869a70bdc&o=",
+					"gym": true
+				}
+			}
+		}
+	},
+	"battambang-cambodia": {
+		"city": "Battambang",
+		"country": "Cambodia",
+		"checked": "2026-11-02",
+		"best": "budget",
+		"bestReason_en": "The only Battambang hotel with a confirmed fitness centre, plus an outdoor pool and sauna.",
+		"bestReason_es": "El único hotel de Battambang con gimnasio confirmado, además de piscina exterior y sauna.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": null,
+			"budget": {
+				"hotel": "Classy Hotel",
+				"stars": null,
+				"area": "Battambang",
+				"bookingUrl": "https://sp.booking.com/hotel/kh/classy.en-gb.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness centre"],
+					"extras": [
+						"Outdoor pool",
+						"Sauna",
+						"Massage"
+					],
+					"access": null
+				},
+				"summary_en": "A fitness centre with an outdoor pool and sauna. Rated Okay on GymFactor, with no size or equipment details published.",
+				"summary_es": "Un gimnasio con piscina exterior y sauna. Valorado como Okay en GymFactor, sin datos publicados de tamaño ni equipamiento.",
+				"sources": ["https://www.hotelgyms.com/hotels/kh/battambang/classy-hotel/822835"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/31212865.jpg?k=79d1b4a4707872ebf69a03df3f7ee5f6c19052bbb2048a8139d10a539228207e&o=",
+					"gym": true
+				}
+			}
+		}
+	},
+	"bauru-brazil": {
+		"city": "Bauru",
+		"country": "Brazil",
+		"checked": "2026-11-02",
+		"best": "budget",
+		"bestReason_en": "Only a basic fitness centre could be confirmed.",
+		"bestReason_es": "Solo se pudo confirmar un gimnasio básico.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": null,
+			"budget": {
+				"hotel": "Ibis Styles Bauru",
+				"stars": null,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "HotelGyms lists a fitness centre and rates it Poor. No size, equipment or hours were found.",
+				"summary_es": "HotelGyms indica un gimnasio y lo valora como pobre. No se encontraron datos de tamaño, equipamiento ni horario.",
+				"sources": ["https://www.hotelgyms.com/hotels/br/bauru/ibis-styles-bauru/427810"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"beijing-china": {
+		"city": "Beijing",
+		"country": "China",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 3,500 m2 fitness club with a 25 m indoor pool, five class studios and an MMA ring.",
+		"bestReason_es": "Un club de fitness de 3.500 m2 con piscina interior de 25 m, cinco salas de clases y un ring de MMA.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "JEN Beijing by Shangri-La",
+				"stars": 5,
+				"area": "Guomao, CBD",
+				"bookingUrl": "https://www.booking.com/hotel/cn/xin-guo-mao-fan-dian.html",
+				"website": null,
+				"gym": {
+					"sizeM2": 3500,
+					"hours": null,
+					"equipment": ["Personal training areas"],
+					"extras": [
+						"25 m indoor pool with skylight",
+						"MMA boxing ring",
+						"Five group-class studios",
+						"Steam room, sauna and whirlpool"
+					],
+					"access": null
+				},
+				"summary_en": "The Trainyard fitness centre covers about 3,500 m2 over two levels. It has a 25 m indoor pool, an MMA ring, five class studios and personal training areas.",
+				"summary_es": "El centro Trainyard ocupa unos 3.500 m2 en dos plantas. Tiene piscina interior de 25 m, un ring de MMA, cinco salas de clases y zonas de entrenamiento personal.",
+				"sources": [
+					"https://www.bluebiz.com/en/bluebook/bluebook/a-new-hotel-for-fitness-fans-in-beijing/",
+					"https://fivestaralliance.com/4star-hotels/beijing/hotel-jen-beijing",
+					"https://www.ca.kayak.com/Beijing-Hotels-Hotel-Jen-Beijing-by-Shangri-La.2659702.ksp"
+				],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/295690156.jpg?k=9bab9fe68825d5949cc4cf9bd207e2def8462dafb2566a4d9d933fc4c3607cca&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Park Plaza Beijing Wangfujing",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/cn/park-plaza-beijing-wangfujing.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Exercise and cardio machines", "Free weights"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "A fitness centre open 24 hours with cardio machines and free weights. Size is not published.",
+				"summary_es": "Un gimnasio abierto 24 horas con máquinas de cardio y peso libre. No se publica el tamaño.",
+				"sources": ["https://www.distantjourneys.co.uk/hotels/park-plaza-hotel-beijing/"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/806503094.jpg?k=67237d3a99151abf33c0d82453e415f235990b62981f188d2477db7999aa8ac1&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"belem-brazil": {
+		"city": "Belém",
+		"country": "Brazil",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Only a gym listing could be confirmed; no size or equipment details found.",
+		"bestReason_es": "Solo se pudo confirmar que tiene gimnasio; no se encontraron datos de tamaño ni equipamiento.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Tivoli Maiorana Belém Pará Hotel",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Listed with a gym (academia) on Trip.com. No size, equipment or hours were found.",
+				"summary_es": "Aparece con gimnasio (academia) en Trip.com. No se encontraron datos de tamaño, equipamiento ni horario.",
+				"sources": ["https://br.trip.com/hotels/gym/city/br/belem.html", "https://traveleon.ai/hotels/tivoli-maiorana-belem-para-hotel-13860808"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"belo-horizonte-brazil": {
+		"city": "Belo Horizonte",
+		"country": "Brazil",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Open 24 hours with cardio and strength equipment, a heated indoor pool and saunas.",
+		"bestReason_es": "Abierto 24 horas con equipos de cardio y fuerza, piscina cubierta climatizada y saunas.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Ouro Minas Hotel Belo Horizonte Dolce",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": null,
+				"website": "https://www.wyndhamhotels.com/pt-br/dolce/belo-horizonte-brazil/ouro-minas-hotel-belo-horizonte-dolce/services-amenities",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Cardio machines", "Strength-training equipment"],
+					"extras": [
+						"Heated indoor pool",
+						"Hot tub",
+						"Dry sauna",
+						"Steam sauna"
+					],
+					"access": null
+				},
+				"summary_en": "The fitness centre is open 24 hours with cardio machines and strength equipment. The hotel has a heated indoor pool, hot tub, and dry and steam saunas.",
+				"summary_es": "El gimnasio abre las 24 horas, con máquinas de cardio y equipos de fuerza. El hotel tiene piscina cubierta climatizada, jacuzzi y saunas seca y de vapor.",
+				"sources": ["https://www.wyndhamhotels.com/pt-br/dolce/belo-horizonte-brazil/ouro-minas-hotel-belo-horizonte-dolce/services-amenities"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"bento-goncalves-brazil": {
+		"city": "Bento Gonçalves",
+		"country": "Brazil",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 24-hour health club and fitness centre plus a spa, though gym details are thin.",
+		"bestReason_es": "Club de salud y gimnasio 24 horas más spa, aunque hay pocos datos del gimnasio.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Spa do Vinho Hotel & Condomínio Vitivinícola",
+				"stars": 5,
+				"area": "Vale dos Vinhedos",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": ["Pool", "Spa"],
+					"access": null
+				},
+				"summary_en": "Hoteles.com lists a 24-hour health club and fitness centre, plus a pool and spa. No size or equipment details were found, and one guide does not mention a gym.",
+				"summary_es": "Hoteles.com indica un club de salud y gimnasio 24 horas, además de piscina y spa. No se encontraron datos de tamaño ni equipamiento, y una guía no menciona gimnasio.",
+				"sources": ["https://www.hoteles.com/en/ho258823/spa-do-vinho-hotel-condominio-vitivinicola-bento-goncalves-brazil", "https://www.buenasdicas.com/melhores-hoteis-bento-goncalves-13552/"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"besancon-france": {
+		"city": "Besançon",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "budget",
+		"bestReason_en": "Only hotel with a listed fitness facility found in Besançon, plus a sauna.",
+		"bestReason_es": "El único hotel con instalación de fitness indicada que se encontró en Besançon, además de sauna.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": null,
+			"budget": {
+				"hotel": "All Suites Besançon",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Sauna"],
+					"access": null
+				},
+				"summary_en": "A fitness facility and a sauna are listed. Size, equipment and hours are not published.",
+				"summary_es": "Se indican una instalación de fitness y una sauna. No se publican tamaño, equipos ni horarios.",
+				"sources": ["https://www.hotelgyms.com/hotels/fr/besancon/all-suites-besancon/272531"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"beziers-france": {
+		"city": "Béziers",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Only confirmed hotel gym in Béziers, with a sauna and hammam.",
+		"bestReason_es": "El único gimnasio de hotel confirmado en Béziers, con sauna y hammam.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Hôtel In Situ",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Sauna", "Hammam"],
+					"access": "Sauna and hammam free for guests by reservation, daily 08:00 to 21:00"
+				},
+				"summary_en": "A fitness centre is listed, but equipment and hours are not published. The sauna and hammam are free for guests by reservation.",
+				"summary_es": "Se indica un centro de fitness, pero no se publican equipos ni horarios. La sauna y el hammam son gratuitos para los huéspedes con reserva.",
+				"sources": ["https://www.hotelgyms.com/hotels/fr/beziers/hotel-in-situ/1400155"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"biarritz-france": {
+		"city": "Biarritz",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Ocean-facing fitness room inside a 3,000 m2 thalassotherapy spa with a heated seawater pool.",
+		"bestReason_es": "Sala de fitness con vistas al océano dentro de un spa de talasoterapia de más de 3.000 m2 con piscina de agua de mar climatizada.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Sofitel Biarritz Le Miramar Thalassa Sea & Spa",
+				"stars": 5,
+				"area": "Côte des Basques",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["High-tech fitness room facing the ocean"],
+					"extras": [
+						"Private coaching",
+						"Aqua gym",
+						"Pilates",
+						"Heated seawater indoor pool",
+						"Sauna and hammam",
+						"Thalassotherapy spa of over 3,000 m2"
+					],
+					"access": "Fitness room listed among the hotel amenities"
+				},
+				"summary_en": "A high-tech fitness room facing the ocean, with private coaching, aqua gym and Pilates. It sits within a spa of over 3,000 m2 with a heated seawater pool, sauna and hammam.",
+				"summary_es": "Una sala de fitness de alta tecnología con vistas al océano, con entrenamiento privado, aquagym y pilates. Forma parte de un spa de más de 3.000 m2 con piscina de agua de mar climatizada, sauna y hammam.",
+				"sources": ["https://www.hotelgyms.com/hotels/fr/biarritz/sofitel-biarritz-le-miramar-thalassa/57371", "https://www.guide-du-paysbasque.com/en/tourism/accommodation/hotels/biarritz-53/sofitel-biarritz-le-miramar-thalassa-sea-et-spa-5115.html"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"blankenberge-belgium": {
+		"city": "Blankenberge",
+		"country": "Belgium",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Fitness area plus indoor pool, two saunas and a hammam.",
+		"bestReason_es": "Zona de fitness con piscina cubierta, dos saunas y hammam.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Beach Palace Hotel by CW Hotel Collection",
+				"stars": 5,
+				"area": "Seafront",
+				"bookingUrl": "https://www.booking.com/hotel/be/beachpalace.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Gym/fitness listed"],
+					"extras": ["Spa area with hot tub"],
+					"access": null
+				},
+				"summary_en": "Listed with a gym and a spa area. Star rating differs by source (5 on Hotels.com, 4 on ChooseWhere), and no equipment details were found.",
+				"summary_es": "Figura con gimnasio y zona de spa. La categoría varía según la fuente (5 en Hotels.com, 4 en ChooseWhere) y no se encontraron datos de equipamiento.",
+				"sources": ["https://hotels.com/de59350-am2/gym-hotels-blankenberge-belgium", "https://choosewhere.com/blankenberge-four-and-five-star-luxury-hotels"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/650254960.jpg?k=5039bccfb03fdb1a68942309ff9c2abcf245727ab824f28a4135d765d73fd78e&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Hotel Aazaert by WP Hotels",
+				"stars": 4,
+				"area": "Blankenberge",
+				"bookingUrl": "https://www.booking.com/hotel/be/aazaert.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness area"],
+					"extras": [
+						"Indoor pool",
+						"Two saunas",
+						"Hammam",
+						"Relaxation room",
+						"Massages (extra fee)"
+					],
+					"access": null
+				},
+				"summary_en": "Fitness area with an indoor pool, two saunas and a hammam. No equipment details published.",
+				"summary_es": "Zona de fitness con piscina cubierta, dos saunas y hammam. No se publican datos de equipamiento.",
+				"sources": ["https://www.secretescapes.com/relaxing-flanders-spa-stay-on-the-north-sea-refundable-hotel-hotel-aazaert-belgium/sale-hotel", "https://hotels.com/de59350-am2/gym-hotels-blankenberge-belgium"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/595681616.jpg?k=00ffff7af58607f3d9c624cc71764c4ed9641681147da2cd1294227ab1f393b2&o=",
+					"gym": false
+				}
+			},
+			"budget": null
+		}
+	},
+	"blois-france": {
+		"city": "Blois",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Only confirmed hotel gym in Blois, with free 24-hour access and weights plus cardio.",
+		"bestReason_es": "El único gimnasio de hotel confirmado en Blois, con acceso libre las 24 horas, pesas y cardio.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Mercure Blois Centre",
+				"stars": 4,
+				"area": "Centre",
+				"bookingUrl": null,
+				"website": "https://all.accor.com/hotel/1621/index.en.shtml",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Weightlifting equipment", "Cardio equipment"],
+					"extras": [],
+					"access": "Free access for guests, 24 hours a day"
+				},
+				"summary_en": "A fitness room with weightlifting and cardio equipment, free to use 24 hours a day. Size and equipment brands are not listed, and guest ratings for the wellness area are low.",
+				"summary_es": "Una sala de fitness con equipos de pesas y cardio, de uso libre las 24 horas. No se indican el tamaño ni las marcas, y las valoraciones del área de bienestar son bajas.",
+				"sources": ["https://all.accor.com/hotel/1621/index.en.shtml"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"blumenau-brazil": {
+		"city": "Blumenau",
+		"country": "Brazil",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The only 5-star hotel with a gym, plus a full-service spa and outdoor pool.",
+		"bestReason_es": "El único hotel de 5 estrellas con gimnasio, además de spa completo y piscina exterior.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Villa do Vale Boutique Hotel",
+				"stars": 5,
+				"area": "Centro (Rua Petrópolis)",
+				"bookingUrl": "https://www.booking.com/hotel/br/villa-do-vale-boutique-bistro.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Gym"],
+					"extras": ["Spa Life with massage and hot tub", "Outdoor pool (9:00-21:00)"],
+					"access": "Guests"
+				},
+				"summary_en": "Gym for guests next to the Spa Life spa, which has massages and a hot tub, and an outdoor pool open 9:00 to 21:00. Equipment and gym hours are not published.",
+				"summary_es": "Gimnasio para huéspedes junto al spa Spa Life, con masajes y jacuzzi, y piscina exterior abierta de 9:00 a 21:00. No se publican equipamiento ni horario del gimnasio.",
+				"sources": ["https://www.wotif.com/Itajai-Hotels-Villa-Do-Vale-Boutique-Hotel.h29098861.Hotel-Information", "https://us.trip.com/hotels/gym/city/br/blumenau.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/882855028.jpg?k=48517a6d4813f6cd18ef663d08879241ac92ccc27165de4dec94c812004ed76c&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Hotel Caiuá Blumenau",
+				"stars": 4,
+				"area": "Centro (Rua 7 de Setembro)",
+				"bookingUrl": "https://www.booking.com/hotel/br/caiua-blumenau.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness centre"],
+					"extras": [],
+					"access": "Guests"
+				},
+				"summary_en": "Fitness centre listed among the hotel amenities. No pool is listed, and size, equipment and hours are not published.",
+				"summary_es": "Centro de fitness incluido entre los servicios del hotel. No figura piscina y no se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.priceline.com/hotel-deals/en-us/P5000470042/H229641104/hotel-caiua-blumenau.ssp", "https://us.trip.com/hotels/gym/city/br/blumenau.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/498105630.jpg?k=05d182c93ee18dd3fbeee9b2c4d3272de15b2125658504cfc450acfc81299ad4&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Plaza Blumenau Hotel",
+				"stars": null,
+				"area": "Centro (Rua Sete de Setembro)",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness room"],
+					"extras": ["Outdoor pool"],
+					"access": "Guests"
+				},
+				"summary_en": "Fitness room and an outdoor pool. A guest review calls the gym and pool limited.",
+				"summary_es": "Sala de fitness y piscina exterior. Un huésped describe el gimnasio y la piscina como limitados.",
+				"sources": ["https://hoteles.com/ho144713/plaza-blumenau-hotel-blumenau-brasil", "https://us.trip.com/hotels/gym/city/br/blumenau.html"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"boa-vista-brazil": {
+		"city": "Boa Vista",
+		"country": "Brazil",
+		"checked": "2026-11-02",
+		"best": "budget",
+		"bestReason_en": "The only Boa Vista hotel with a confirmed gym; no further gym details are published.",
+		"bestReason_es": "El único hotel de Boa Vista con gimnasio confirmado; no se publican más detalles del gimnasio.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": null,
+			"budget": {
+				"hotel": "Ibis Styles Boa Vista",
+				"stars": 3,
+				"area": "Av. João Alencar",
+				"bookingUrl": null,
+				"website": "https://all.accor.com/hotel/B306/index.en.shtml",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness centre"],
+					"extras": [],
+					"access": "Guests"
+				},
+				"summary_en": "Fitness centre listed among on-site services. No pool, and size, equipment and hours are not published.",
+				"summary_es": "Centro de fitness incluido entre los servicios del hotel. Sin piscina y no se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://all.accor.com/hotel/B306/index.en.shtml", "https://ph.trip.com/hotels/gym/city/br/boa-vista.html"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"bogota-colombia": {
+		"city": "Bogotá",
+		"country": "Colombia",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Technogym cardio, free weights and personal trainers, next to a spa with steam rooms and a hydrotherapy pool.",
+		"bestReason_es": "Cardio Technogym, peso libre y entrenadores personales, junto a un spa con baños de vapor y piscina de hidroterapia.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "W Bogota",
+				"stars": null,
+				"area": "Zona T / Chicó",
+				"bookingUrl": null,
+				"website": "https://www.marriott.com/en-us/hotels/bogwh-w-bogota/experiences",
+				"gym": {
+					"sizeM2": null,
+					"hours": "05:30-22:00",
+					"equipment": [
+						"Technogym cardio machines with individual TVs",
+						"Strength machines",
+						"Free weights",
+						"Treadmills, ellipticals, bikes, rowers and stair climbers"
+					],
+					"extras": [
+						"Personal trainers",
+						"Steam rooms",
+						"Hydrotherapy pool (AWAY Spa)",
+						"Monthly membership available"
+					],
+					"access": "Free for in-house guests, minimum age 17"
+				},
+				"summary_en": "Fourth-floor FIT centre with Technogym cardio, strength machines, free weights and personal trainers. Open 5:30 to 22:00, next to the AWAY Spa with steam rooms and a hydrotherapy pool.",
+				"summary_es": "Centro FIT en la cuarta planta con cardio Technogym, máquinas de fuerza, peso libre y entrenadores personales. Abierto de 5:30 a 22:00, junto al AWAY Spa con baños de vapor y piscina de hidroterapia.",
+				"sources": ["https://www.marriott.com/en-us/hotels/bogwh-w-bogota/experiences"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"bordeaux-france": {
+		"city": "Bordeaux",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Fitness centre attached to the Spa Guerlain, with an indoor pool, hammam and sauna.",
+		"bestReason_es": "Centro de fitness unido al Spa Guerlain, con piscina cubierta, hammam y sauna.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "InterContinental Bordeaux Le Grand Hotel",
+				"stars": 5,
+				"area": "Centre historique (opposite the Grand Théâtre)",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Spa Guerlain",
+						"Indoor swimming pool",
+						"Hammam",
+						"Sauna"
+					],
+					"access": null
+				},
+				"summary_en": "The fitness centre is part of the Spa Guerlain, which also has an indoor pool, hammam and sauna. Equipment and hours are not published on the sources found.",
+				"summary_es": "El centro de fitness forma parte del Spa Guerlain, que también tiene piscina cubierta, hammam y sauna. Los equipos y horarios no constan en las fuentes encontradas.",
+				"sources": ["https://www.hotelgyms.com/hotels/fr/bordeaux/intercontinental-bordeaux-le-grand-hotel-an-ihg-hotel/78833"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"boucherville-canada": {
+		"city": "Boucherville",
+		"country": "Canada",
+		"checked": "2026-11-02",
+		"best": "budget",
+		"bestReason_en": "A fitness room plus indoor pool and sauna, the only gym hotel confirmed in Boucherville.",
+		"bestReason_es": "Sala de fitness con piscina cubierta y sauna, el único hotel con gimnasio confirmado en Boucherville.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": null,
+			"budget": {
+				"hotel": "Imperia Hotel & Suites Boucherville",
+				"stars": null,
+				"area": "Boulevard de Montarville",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness room"],
+					"extras": ["Indoor pool", "Sauna"],
+					"access": null
+				},
+				"summary_en": "Lists a fitness room, an indoor pool and a sauna. No size, hours or equipment details are published.",
+				"summary_es": "Cuenta con sala de fitness, piscina cubierta y sauna. No se publican tamaño, horario ni equipamiento.",
+				"sources": ["https://www.quebecvacances.com/fr/hebergement/imperia-hotel-et-suites-boucherville"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"bourges-france": {
+		"city": "Bourges",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Only confirmed hotel gym in Bourges, with cardio and strength machines.",
+		"bestReason_es": "El único gimnasio de hotel confirmado en Bourges, con máquinas de cardio y fuerza.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Hôtel de Bourbon - Mercure Bourges",
+				"stars": 4,
+				"area": "Centre",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Cardio machines", "Strength machines"],
+					"extras": [],
+					"access": "On-site fitness centre for guests"
+				},
+				"summary_en": "An on-site fitness centre with cardio and strength machines. The hotel has no spa, and one review summary says the gym falls short for some guests.",
+				"summary_es": "Un centro de fitness en el hotel con máquinas de cardio y fuerza. El hotel no tiene spa y un resumen de opiniones indica que el gimnasio se queda corto para algunos huéspedes.",
+				"sources": ["https://www.travelmyth.ie/Bourges/Hotels/Hotel-De-Bourbon-Grand-Hotel-Mercure-Bourges_tmid159542"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"brasilia-brazil": {
+		"city": "Brasília",
+		"country": "Brazil",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Over 1,000 m2 on two floors, which the hotel describes as the largest hotel gym in Brazil.",
+		"bestReason_es": "Más de 1.000 m2 en dos plantas, que el hotel describe como el mayor gimnasio de hotel de Brasil.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Meliá Brasil 21",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": null,
+				"website": "https://www.melia.com/pt/hoteis/brasil/brasilia/melia-brasil-21/index.htm",
+				"gym": {
+					"sizeM2": 1e3,
+					"hours": null,
+					"equipment": ["Full strength and cardio equipment", "Separate functional training area"],
+					"extras": [
+						"Heated rooftop pool",
+						"Sauna",
+						"Spa"
+					],
+					"access": "Evolve Gym for guests"
+				},
+				"summary_en": "The Evolve Gym covers over 1,000 m2 on two floors, with a separate functional training area. The hotel also has a heated rooftop pool, a sauna and a spa.",
+				"summary_es": "El Evolve Gym ocupa más de 1.000 m2 en dos plantas, con una zona aparte de entrenamiento funcional. El hotel tiene además piscina climatizada en la azotea, sauna y spa.",
+				"sources": ["https://www.melia.com/pt/hoteis/brasil/brasilia/melia-brasil-21/index.htm"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"bregenz-austria": {
+		"city": "Bregenz",
+		"country": "Austria",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Free gym of roughly 90 to 110 m2 with sauna, the best-documented gym in Bregenz.",
+		"bestReason_es": "Gimnasio gratuito de unos 90 a 110 m2 con sauna, el mejor documentado de Bregenz.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Hotel Schwärzler",
+				"stars": 4,
+				"area": "Bregenz",
+				"bookingUrl": "https://www.booking.com/hotel/at/schwarzler.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Equipment not itemised"],
+					"extras": [
+						"Sauna",
+						"Infrared cabin",
+						"Sun bed"
+					],
+					"access": "Free for guests"
+				},
+				"summary_en": "A gym of about 110 units (110 m2 per HotelGyms, 110 square yards per the Booking text) that guests use free, with sauna and infrared cabin. Equipment is not listed and HotelGyms rates it Poor.",
+				"summary_es": "Un gimnasio de unos 110 (110 m2 según HotelGyms, 110 yardas cuadradas según el texto de Booking) de uso gratuito, con sauna y cabina de infrarrojos. No se detalla el equipamiento y HotelGyms lo califica como Poor.",
+				"sources": [
+					"https://www.hotelgyms.com/hotels/at/bregenz/hotel-schwarzler/70483",
+					"https://www.myboutiquehotel.com/en/boutique-hotels-bregenz/hotel-schwarzler.html",
+					"https://www.priceline.com/hotel-deals/en-us/P5000218485/H7039003/hotel-schwarzler.ssp"
+				],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/297181353.jpg?k=0d9cee1eb24f0b8d62714ba7fe80bde0cbab6d8d6f1fc004e86c0ced83331a22&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"brest-france": {
+		"city": "Brest",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Only confirmed hotel gym in Brest, with cardio machines, an indoor pool and a sauna.",
+		"bestReason_es": "El único gimnasio de hotel confirmado en Brest, con máquinas de cardio, piscina cubierta y sauna.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Oceania Le Conti Brest",
+				"stars": 4,
+				"area": "Centre (Rue Emile Zola)",
+				"bookingUrl": null,
+				"website": "https://oceaniahotels.com/en/oceania-le-conti-brest",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Elliptical trainer",
+						"Treadmill",
+						"Rowing machine"
+					],
+					"extras": ["Heated indoor pool", "Sauna"],
+					"access": "Free for guests during their stay"
+				},
+				"summary_en": "A small fitness room with an elliptical trainer, a treadmill and a rowing machine, free for guests. The hotel also has a heated indoor pool and a sauna.",
+				"summary_es": "Una sala de fitness pequeña con elíptica, cinta de correr y remo, gratuita para los huéspedes. El hotel también tiene piscina cubierta climatizada y sauna.",
+				"sources": ["https://oceaniahotels.com/en/oceania-le-conti-brest", "https://oceaniahotels.com/en/oceania-le-conti-brest/wellness-spa"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"bridgetown-barbados": {
+		"city": "Bridgetown",
+		"country": "Barbados",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Open 24/7 with weights, cardio, classes and personal trainers, plus sauna and hot tub.",
+		"bestReason_es": "Abierto 24/7 con pesas, cardio, clases y entrenadores personales, además de sauna y jacuzzi.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Hilton Barbados Resort",
+				"stars": null,
+				"area": "Needham's Point",
+				"bookingUrl": null,
+				"website": "https://www.hilton.com/en/hotels/bgihihh-hilton-barbados-resort/",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Weights", "Cardio machines"],
+					"extras": [
+						"Wellness classes",
+						"Personal trainers",
+						"Sauna",
+						"Hot tub",
+						"Spa"
+					],
+					"access": "Free for guests"
+				},
+				"summary_en": "A fitness centre with weights and cardio machines, open 24/7, with wellness classes and personal trainers. Guests can also use a sauna and hot tub.",
+				"summary_es": "Un gimnasio con pesas y máquinas de cardio, abierto 24/7, con clases de bienestar y entrenadores personales. Los huéspedes también pueden usar sauna y jacuzzi.",
+				"sources": ["https://www.hilton.com/en/hotels/bgihihh-hilton-barbados-resort/things-to-do", "https://www.hotelgyms.com/hotels/bb/bridgetown/hilton-barbados-resort/325745"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"brisbane-australia": {
+		"city": "Brisbane",
+		"country": "Australia",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Open 24 hours with free weights and Technogym machines, plus a heated pool and spa.",
+		"bestReason_es": "Abierto 24 horas, con peso libre y máquinas Technogym, además de piscina climatizada y spa.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Stamford Plaza Brisbane",
+				"stars": 5,
+				"area": "CBD (Edward Street)",
+				"bookingUrl": null,
+				"website": "https://stamford.com.au/hotels/stamford-plaza-brisbane-hotel/hotel-features/",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Free weights",
+						"Technogym treadmills, steppers and rowing machines",
+						"Stretch and yoga area"
+					],
+					"extras": [
+						"Heated pool",
+						"Spa",
+						"Outdoor sundeck"
+					],
+					"access": "Free for hotel guests"
+				},
+				"summary_en": "A 24-hour gym on level 3 with free weights, Technogym treadmills, steppers and rowers, and a stretch area. Free for guests, with a heated pool and spa.",
+				"summary_es": "Gimnasio 24 horas en la planta 3 con peso libre, cintas, steppers y remos Technogym y zona de estiramientos. Gratis para huéspedes, con piscina climatizada y spa.",
+				"sources": ["https://stamford.com.au/hotels/stamford-plaza-brisbane-hotel/hotel-features/"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"brno-czechia": {
+		"city": "Brno",
+		"country": "Czechia",
+		"checked": "2026-11-02",
+		"best": "budget",
+		"bestReason_en": "A club gym with dumbbells, a cross workout cage and cardio zone, open 7:00 to 22:00, at a 3-star hotel.",
+		"bestReason_es": "Un gimnasio tipo club con mancuernas, jaula de cross workout y zona de cardio, abierto de 7:00 a 22:00, en un hotel de 3 estrellas.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Grand Palace Brno",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/cz/barcelo-brno-palace-brno.html",
+				"website": "https://grandpalace.cz/en/",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Treadmill",
+						"Exercise bikes",
+						"Rowing machine",
+						"Weight bench"
+					],
+					"extras": [
+						"Finnish sauna (24h)",
+						"Bio sauna",
+						"Steam bath",
+						"Massage"
+					],
+					"access": "Free for hotel guests"
+				},
+				"summary_en": "A small basement gym open 24 hours with cardio machines and a weight bench, next to a sauna area. Size is not published.",
+				"summary_es": "Un gimnasio pequeño en la planta -1 abierto 24 horas con máquinas de cardio y un banco de pesas, junto a una zona de sauna. No se publica el tamaño.",
+				"sources": ["https://grandpalace.cz/en/", "https://www.expedia.com/Brno-Hotels-Barcelo-Brno-Palace.h2851241.Hotel-Information"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/671662462.jpg?k=ff0e9469b03d95135ac4adb293cbf51e2e777d101c82fc85f88156f8041f262e&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Courtyard by Marriott Brno",
+				"stars": 4,
+				"area": "Holandska",
+				"bookingUrl": "https://www.booking.com/hotel/cz/courtyard-marriot-brno.html",
+				"website": "https://www.marriott.com/en-us/hotels/brqcy-courtyard-brno/overview/",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": ["Top-floor location with city views"],
+					"access": "Complimentary"
+				},
+				"summary_en": "A complimentary fitness centre on the top floor with city views, listed as open 24 hours. Size and equipment are not published.",
+				"summary_es": "Un centro de fitness gratuito en la última planta con vistas a la ciudad, indicado como abierto las 24 horas. No se publican tamaño ni equipos.",
+				"sources": ["https://www.marriott.com/en-us/hotels/brqcy-courtyard-brno/overview/", "https://www.expedia.co.uk/Brno-Hotels-Hotel-With-Gym.0-0-d686-thotelwithgym.Travel-Guide-Filter-Hotels"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/644783710.jpg?k=b617f2706693b81701db9fa4df591bbaf92a2c3c961301d80f0c0cbf3f1ffe80&o=",
+					"gym": false
+				}
+			},
+			"budget": {
+				"hotel": "eFi Palace Hotel",
+				"stars": 3,
+				"area": "Bratislavska",
+				"bookingUrl": "https://www.booking.com/hotel/cz/efi-brno.html",
+				"website": "https://www.efipalace.cz/en/fitness",
+				"gym": {
+					"sizeM2": null,
+					"hours": "Mon-Sat 7:00-22:00, Sun and holidays 7:00-20:00",
+					"equipment": [
+						"Multi-functional weight equipment",
+						"Dumbbells",
+						"Cross Workout cage",
+						"Cardio zone"
+					],
+					"extras": [
+						"Sauna and wellness",
+						"Outdoor pool for guests in summer",
+						"Free indoor parking"
+					],
+					"access": "Hotel guests and public (130-150 CZK per 2 hours)"
+				},
+				"summary_en": "An intimate club gym with weight machines, dumbbells, a Cross Workout cage and a cardio zone. Open 7:00 to 22:00 Monday to Saturday.",
+				"summary_es": "Un gimnasio tipo club con máquinas de pesas, mancuernas, jaula de Cross Workout y zona de cardio. Abierto de 7:00 a 22:00 de lunes a sábado.",
+				"sources": ["https://www.efipalace.cz/en/fitness", "https://www.efipalace.cz/en/"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/372251429.jpg?k=864a522ed714edd066807f5160a34483d8fb8914927488e24ee4d888a0e1a387&o=",
+					"gym": true
+				}
+			}
+		}
+	},
+	"brossard-canada": {
+		"city": "Brossard",
+		"country": "Canada",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Listed with a large gymnasium and an indoor pool.",
+		"bestReason_es": "Figura con un gran gimnasio y piscina cubierta.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Courtyard by Marriott Montreal Brossard",
+				"stars": null,
+				"area": "Brossard",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Large gymnasium"],
+					"extras": ["Indoor pool"],
+					"access": null
+				},
+				"summary_en": "The tourism listing mentions a large gymnasium and an indoor pool. No size, hours or equipment details are published.",
+				"summary_es": "La ficha turística menciona un gran gimnasio y piscina cubierta. No se publican tamaño, horario ni equipamiento.",
+				"sources": ["https://www.bonjourquebec.com/en/listing/accommodation/marriott-courtyard-brossard/05iw"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"bruges-belgium": {
+		"city": "Bruges",
+		"country": "Belgium",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Fitness centre plus a cellar wellness area with hammam, sauna and Turkish bath.",
+		"bestReason_es": "Centro de fitness y zona wellness en las bodegas con hammam, sauna y baño turco.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Dukes' Palace Brugge",
+				"stars": 5,
+				"area": "Near the Markt",
+				"bookingUrl": "https://www.booking.com/hotel/be/dukes-palace.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness center"],
+					"extras": ["Sauna", "Spa"],
+					"access": null
+				},
+				"summary_en": "Fitness center with sauna and spa in a 15th-century former ducal palace. No equipment details published.",
+				"summary_es": "Centro de fitness con sauna y spa en un antiguo palacio ducal del siglo XV. No se publican datos de equipamiento.",
+				"sources": ["https://www.hotelgyms.com/hotels/be/bruges/dukes-palace-brugge/21393"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/19113940.jpg?k=86366631270c35b2f14dae3ca7cdbf09fb387e1fd9d8c3248f44d22371a07b41&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Grand Hotel Casselbergh",
+				"stars": 4,
+				"area": "Historic centre",
+				"bookingUrl": "https://www.booking.com/hotel/be/grand-casselbergh.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness centre"],
+					"extras": [
+						"Hammam",
+						"Sauna",
+						"Turkish bath",
+						"Massages"
+					],
+					"access": null
+				},
+				"summary_en": "Fitness centre with a wellness area in 16th-century cellars, including hammam, sauna and Turkish bath. No equipment details published.",
+				"summary_es": "Centro de fitness con zona wellness en bodegas del siglo XVI, con hammam, sauna y baño turco. No se publican datos de equipamiento.",
+				"sources": ["https://www.hotelgyms.com/hotels/be/bruges/grand-hotel-casselbergh/174697"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/538593365.jpg?k=3ba23312d3f5885a7b339bee61d175d488c7ea6824eb4925ebfb229f83b81bc2&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"brussels-belgium": {
+		"city": "Brussels",
+		"country": "Belgium",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "A full club with 16 fitness zones, classes, pools and tennis courts, far larger than a hotel fitness room.",
+		"bestReason_es": "Un club completo con 16 zonas de fitness, clases, piscinas y pistas de tenis, mucho más grande que una sala de fitness de hotel.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Steigenberger Icon Wiltcher's",
+				"stars": 5,
+				"area": "Avenue Louise",
+				"bookingUrl": null,
+				"website": "https://hrewards.com/en/steigenberger-icon-wiltchers-bruessel",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Treadmills",
+						"Stationary bikes",
+						"Climbers",
+						"Arm and leg machines",
+						"Weight station with kettlebells"
+					],
+					"extras": ["Complimentary towels and water", "Aspria Spa below the hotel (paid)"],
+					"access": "Free for guests with keycard"
+				},
+				"summary_en": "A first-floor fitness centre open 24 hours with cardio machines, a weight station and kettlebells. The Aspria Spa below the hotel costs 45 EUR extra.",
+				"summary_es": "Un gimnasio en la primera planta abierto 24 horas, con máquinas de cardio, estación de pesas y kettlebells. El spa Aspria bajo el hotel cuesta 45 EUR aparte.",
+				"sources": ["https://hrewards.com/en/steigenberger-icon-wiltchers-bruessel/wellness-spa"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Aspria Royal La Rasante Hotel & Spa",
+				"stars": null,
+				"area": "Rue Sombre 56",
+				"bookingUrl": null,
+				"website": "https://www.aspria.com/",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["16 fitness zones"],
+					"extras": [
+						"Group classes",
+						"Swimming pools",
+						"Sauna",
+						"Turkish bath",
+						"Hot tub",
+						"Tennis courts"
+					],
+					"access": "Aspria club"
+				},
+				"summary_en": "An Aspria health club with 16 fitness zones, group classes, pools, sauna, Turkish bath and tennis courts. Hours and equipment details are not published.",
+				"summary_es": "Un club de salud Aspria con 16 zonas de fitness, clases colectivas, piscinas, sauna, baño turco y pistas de tenis. No se publican horario ni detalle del equipamiento.",
+				"sources": ["https://www.hotelgyms.com/hotels/be/brussel/aspria-royal-la-rasante-hotel-and-spa/287257"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"buenos-aires-argentina": {
+		"city": "Buenos Aires",
+		"country": "Argentina",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Faena is the only Buenos Aires hotel gym found with a gym-specific top rating (Amazing GymFactor), though no equipment details are published.",
+		"bestReason_es": "Faena es el único gimnasio de hotel de Buenos Aires con la máxima valoración específica de gimnasio (Amazing GymFactor), aunque no se publica el equipamiento.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Faena Hotel Buenos Aires",
+				"stars": 5,
+				"area": "Puerto Madero",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": "Guests"
+				},
+				"summary_en": "Listed as a state-of-the-art fitness centre and rated Amazing GymFactor on HotelGyms. Size, hours and equipment are not published.",
+				"summary_es": "Descrito como centro de fitness de última generación y valorado como Amazing GymFactor en HotelGyms. No se publican tamaño, horario ni equipamiento.",
+				"sources": ["https://www.hotelgyms.com/hotels/ar/buenos-aires/faena-hotel-buenos-aires/186044"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Pestana Buenos Aires",
+				"stars": 4,
+				"area": "Centro (Carlos Pellegrini 877)",
+				"bookingUrl": "https://www.booking.com/hotel/ar/pestana-buenos-aires.html",
+				"website": "https://pestana.com/uk/hotel/pestana-buenos-aires/facilities",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Gym with machines and equipment for a workout"],
+					"extras": [
+						"Heated indoor pool",
+						"Jacuzzi",
+						"Dry sauna",
+						"Turkish bath"
+					],
+					"access": "Guests"
+				},
+				"summary_en": "A well-equipped gym with a heated indoor pool, jacuzzi and sauna. The pool is reported to close at 8 pm.",
+				"summary_es": "Un gimnasio bien equipado con piscina cubierta climatizada, jacuzzi y sauna. Según una reseña, la piscina cierra a las 20:00.",
+				"sources": ["https://pestana.com/uk/hotel/pestana-buenos-aires/facilities", "https://sg.hotels.com/es/ho211368/pestana-buenos-aires-hotel-buenos-aires-argentina"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/849360959.jpg?k=0b3c7e55b7a1be810b3fba11f0aa243c99d257c87e88e5f857523737e84fdd44&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"burnaby-canada": {
+		"city": "Burnaby",
+		"country": "Canada",
+		"checked": "2026-11-02",
+		"best": "budget",
+		"bestReason_en": "A complimentary fitness centre, but only basic equipment is confirmed.",
+		"bestReason_es": "Un gimnasio gratuito, pero solo se confirma equipamiento básico.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": null,
+			"budget": {
+				"hotel": "Element Vancouver Metrotown",
+				"stars": null,
+				"area": "Metrotown",
+				"bookingUrl": null,
+				"website": "https://www.marriott.com/en-us/hotels/yvrel-element-vancouver-metrotown/overview",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Treadmill", "Exercise bike"],
+					"extras": [],
+					"access": "Complimentary"
+				},
+				"summary_en": "A complimentary fitness centre called Motion, with a treadmill and bike shown in photos. Size and hours are not published.",
+				"summary_es": "Un gimnasio gratuito llamado Motion, con cinta de correr y bicicleta en las fotos. No se publican tamaño ni horario.",
+				"sources": ["https://www.marriott.com/en-us/hotels/yvrel-element-vancouver-metrotown/overview"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"caen-france": {
+		"city": "Caen",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Only confirmed hotel gym in Caen, with a spa that has a Finnish sauna and hammam.",
+		"bestReason_es": "El único gimnasio de hotel confirmado en Caen, con un spa con sauna finlandesa y hammam.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Hôtel Restaurant Le Dauphin et le Spa du Prieuré",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Spa with Finnish sauna and hammam"],
+					"access": "Spa available for an extra charge, by reservation"
+				},
+				"summary_en": "A fitness centre is listed, with no details on equipment or hours. The spa has a Finnish sauna and hammam, available for an extra charge.",
+				"summary_es": "Se indica un centro de fitness, sin detalles de equipos ni horarios. El spa tiene sauna finlandesa y hammam, con coste adicional.",
+				"sources": ["https://www.hotelgyms.com/hotels/fr/caen/hotel-restaurant-le-dauphin-et-le-spa-du-prieure/78804"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"cairns-australia": {
+		"city": "Cairns",
+		"country": "Australia",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "5-star hotel with a 24-hour gym and a full spa.",
+		"bestReason_es": "Hotel de 5 estrellas con gimnasio 24 horas y spa completo.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Crystalbrook Flynn",
+				"stars": 5,
+				"area": "Cairns CBD",
+				"bookingUrl": "https://www.booking.com/hotel/au/flynn-a-crystalbrook-collection.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["On-site gym"],
+					"extras": ["Full-service spa"],
+					"access": "Free for guests"
+				},
+				"summary_en": "A 24-hour on-site gym at a 5-star hotel, with a full-service spa. No equipment list was published.",
+				"summary_es": "Gimnasio en el hotel abierto 24 horas en un 5 estrellas, con spa completo. No hay lista de equipamiento publicada.",
+				"sources": ["https://www.expedia.co.uk/Cairns-Hotels-Hotel-With-Gym.0-0-d553248635404168639-thotelwithgym.Travel-Guide-Filter-Hotels"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/276380661.jpg?k=81cce22fb480c65ee8d84b4d6559433eac1ddc74511f3d5063729ca8974c91a1&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Cairns Sheridan Hotel",
+				"stars": 4,
+				"area": "Cairns CBD",
+				"bookingUrl": "https://www.booking.com/hotel/au/quality-sheridan-plaza.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness facilities"],
+					"extras": ["Massage room"],
+					"access": "Free for guests"
+				},
+				"summary_en": "Described as having top fitness facilities, plus a massage room. No equipment or hours were listed.",
+				"summary_es": "Descrito como con muy buenas instalaciones de fitness, además de sala de masajes. No se indican equipos ni horario.",
+				"sources": ["https://www.expedia.co.uk/Cairns-Hotels-Hotel-With-Gym.0-0-d553248635404168639-thotelwithgym.Travel-Guide-Filter-Hotels", "https://au.trip.com/hotels/gym/city/au/cairns.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/26570005.jpg?k=ac0914611699249d03abd1e7cf39a1f1ff4e42a66743b6249888aae78ec9581e&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"cairo-egypt": {
+		"city": "Cairo",
+		"country": "Egypt",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Only confirmed option: a 24-hour health club with sauna and steam room.",
+		"bestReason_es": "Única opción confirmada: club de salud abierto 24 horas con sauna y baño de vapor.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Conrad Cairo",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Modern fitness equipment"],
+					"extras": [
+						"Sauna",
+						"Steam room",
+						"Massage rooms"
+					],
+					"access": "Health club for hotel guests"
+				},
+				"summary_en": "Open 24 hours with modern fitness equipment, plus sauna, steam room and massage rooms. GymFactor rating is Good; no size or equipment list found.",
+				"summary_es": "Abierto 24 horas con equipamiento moderno, además de sauna, baño de vapor y salas de masaje. Valoración GymFactor: buena; no se encontró tamaño ni lista de equipos.",
+				"sources": ["https://www.hotelgyms.com/hotels/eg/cairo/conrad-cairo/47685"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"caldas-novas-brazil": {
+		"city": "Caldas Novas",
+		"country": "Brazil",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A free gym inside a thermal resort with a spa, sauna and many pools; the budget pick shows more equipment but no spa.",
+		"bestReason_es": "Gimnasio gratuito dentro de un resort termal con spa, sauna y muchas piscinas; la opción económica muestra más equipamiento pero sin spa.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Ecologic Ville Resort",
+				"stars": 4,
+				"area": "Bandeirantes (Av. Presidente Juscelino Kubitschek)",
+				"bookingUrl": "https://www.booking.com/hotel/br/ecologic-ville-resort-caldas-novas12345.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness room"],
+					"extras": [
+						"Spa with massage",
+						"Sauna",
+						"Jacuzzi",
+						"Thermal and cold pools"
+					],
+					"access": "Free gym listed by the hotel"
+				},
+				"summary_en": "Fitness room listed as a free gym, inside a resort with a spa, sauna, jacuzzi and thermal and cold pools. A guest review asks for better cleaning and equipment upkeep. Star rating differs by source (3 or 4).",
+				"summary_es": "Sala de fitness indicada como gimnasio gratuito, dentro de un resort con spa, sauna, jacuzzi y piscinas termales y frías. Un huésped pide mejor limpieza y mantenimiento de los equipos. La categoría varía según la fuente (3 o 4 estrellas).",
+				"sources": [
+					"https://book.omnibees.com/chain/1263/hotel/13151?lang=en-US",
+					"https://www.travelmyth.co.uk/Goias/Hotels/gym-four_star",
+					"https://nz.trip.com/hotels/caldas-novas-hotel-detail-3121269/ecologic-ville-resort"
+				],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/361360764.jpg?k=df4b5d4e10d516d962495f463e51365bbfac035c42fb702ecaa9dcc6c13e9cc6&o=",
+					"gym": false
+				}
+			},
+			"standard": null,
+			"budget": {
+				"hotel": "Lacqua Di Roma I Via Caldas",
+				"stars": 3,
+				"area": "Caldas Novas",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Treadmills",
+						"Ellipticals",
+						"Weight machines"
+					],
+					"extras": [],
+					"access": "Guests"
+				},
+				"summary_en": "Gym photo captioned as having treadmills, ellipticals and weight machines. Size and hours are not published.",
+				"summary_es": "Foto del gimnasio descrita con cintas de correr, elípticas y máquinas de pesas. No se publican tamaño ni horario.",
+				"sources": ["https://ms.hotels.com/en/nh11045478-am2/gym-hotels-in-prive-das-caldas-caldas-novas-brazil"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"calgary-canada": {
+		"city": "Calgary",
+		"country": "Canada",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Life Fitness cardio with touch screens and a free weights area, with guest-only access.",
+		"bestReason_es": "Cardio Life Fitness con pantallas táctiles y zona de peso libre, con acceso solo para huéspedes.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Calgary Marriott Downtown Hotel",
+				"stars": null,
+				"area": "Downtown",
+				"bookingUrl": null,
+				"website": "https://www.marriott.com/en-us/hotels/yycdt-calgary-marriott-downtown-hotel/experiences/fitness/",
+				"gym": {
+					"sizeM2": null,
+					"hours": "Page lists both 24h and 5:00 to 23:00",
+					"equipment": [
+						"Life Fitness Elevation Series Discover cardio machines with 19 inch touch screens",
+						"Treadmills, ellipticals, recumbent bikes",
+						"Free weights",
+						"Strength training equipment"
+					],
+					"extras": ["Free towels, water and headphones"],
+					"access": "Hotel guests only"
+				},
+				"summary_en": "Life Fitness cardio machines with touch screens, free weights and strength equipment. Hours are shown inconsistently on the hotel page.",
+				"summary_es": "Máquinas de cardio Life Fitness con pantalla táctil, peso libre y equipos de fuerza. El horario aparece de forma incoherente en la web del hotel.",
+				"sources": ["https://www.marriott.com/en-us/hotels/yycdt-calgary-marriott-downtown-hotel/experiences/fitness/"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"cali-colombia": {
+		"city": "Cali",
+		"country": "Colombia",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Fitness center with a pool, sauna and spa on site.",
+		"bestReason_es": "Gimnasio con piscina, sauna y spa en el hotel.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "InterContinental Cali",
+				"stars": null,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Swimming pool",
+						"Sauna",
+						"Spa"
+					],
+					"access": null
+				},
+				"summary_en": "Has a fitness center rated Okay on HotelGyms, with a pool, sauna and spa. Size, equipment and hours are not published.",
+				"summary_es": "Tiene un gimnasio valorado como Aceptable en HotelGyms, con piscina, sauna y spa. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.hotelgyms.com/hotels/co/cali/hotel-intercontinental-cali/294162"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"campinas-brazil": {
+		"city": "Campinas",
+		"country": "Brazil",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "The only Campinas hotel gym with confirmed equipment details, next to an outdoor pool.",
+		"bestReason_es": "El único gimnasio de hotel de Campinas con equipamiento confirmado, junto a una piscina exterior.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Meliá Campinas",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": null,
+				"website": "https://www.melia.com/pt/hoteis/brasil/campinas/melia-campinas/servicos.htm",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"3 treadmills",
+						"1 elliptical",
+						"Multifunction machine for chest, back and legs",
+						"Dumbbells 1 to 10 kg",
+						"Bench"
+					],
+					"extras": [
+						"Outdoor pool",
+						"Dry sauna",
+						"Massage room",
+						"Changing rooms"
+					],
+					"access": "For hotel guests"
+				},
+				"summary_en": "A small gym beside the outdoor pool with 3 treadmills, an elliptical, a multifunction machine and dumbbells from 1 to 10 kg. It has a dry sauna and changing rooms.",
+				"summary_es": "Un gimnasio pequeño junto a la piscina exterior, con 3 cintas, una elíptica, una máquina multifunción y mancuernas de 1 a 10 kg. Tiene sauna seca y vestuarios.",
+				"sources": ["https://passageirodeprimeira.com/como-e-se-hospedar-no-melia-campinas", "https://www.melia.com/pt/hoteis/brasil/campinas/melia-campinas/servicos.htm"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"campo-grande-brazil": {
+		"city": "Campo Grande",
+		"country": "Brazil",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Fitness centre with treadmills and weight machines plus a pool, at the highest-rated hotel with a gym in the city.",
+		"bestReason_es": "Centro de fitness con cintas de correr y máquinas de pesas, además de piscina, en el hotel con gimnasio de mayor categoría de la ciudad.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Hotel Deville Prime Campo Grande",
+				"stars": null,
+				"area": "Carandá Bosque (Av. Mato Grosso)",
+				"bookingUrl": "https://www.booking.com/hotel/br/deville-prime-campo-grande.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Treadmills", "Weight machines"],
+					"extras": ["Pool"],
+					"access": "Guests"
+				},
+				"summary_en": "Fitness centre with treadmills and weight machines, plus a pool. Size and hours are not published. Hotels.com lists the hotel at 4.5 stars.",
+				"summary_es": "Centro de fitness con cintas de correr y máquinas de pesas, además de piscina. No se publican tamaño ni horario. Hotels.com lo clasifica con 4,5 estrellas.",
+				"sources": ["https://au.hotels.com/de1634659-am2/gym-hotels-campo-grande-brazil", "https://www.hotelgyms.com/hotels/br/campo-grande/deville-prime-campo-grande/1285515"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/893421498.jpg?k=b1f14b5c3855db47c74f6900ad7aa85c1f98328544338df984aab4541ef74fb9&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Novotel Campo Grande",
+				"stars": 4,
+				"area": "Carandá Bosque (Av. Mato Grosso)",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Gym"],
+					"extras": ["Outdoor pool (8:00-20:00)"],
+					"access": "Guests"
+				},
+				"summary_en": "Gym listed among the amenities, with an outdoor pool open 8:00 to 20:00. No spa, and equipment and hours are not published.",
+				"summary_es": "Gimnasio incluido entre los servicios, con piscina exterior abierta de 8:00 a 20:00. Sin spa y no se publican equipamiento ni horario.",
+				"sources": ["https://www.orbitz.com/es/Campo-Grande-Hoteles-Novotel-Campo-Grande.h118739.Informacion-Hotel", "https://au.hotels.com/de1634659-am2/gym-hotels-campo-grande-brazil"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": {
+				"hotel": "Indaiá Park Hotel",
+				"stars": null,
+				"area": "Amambai",
+				"bookingUrl": "https://www.booking.com/hotel/br/indaia-park.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Treadmills",
+						"Elliptical machines",
+						"Weight equipment"
+					],
+					"extras": [],
+					"access": "Guests"
+				},
+				"summary_en": "Fitness centre shown with treadmills, elliptical machines and weight equipment. Size and hours are not published. Hotels.com lists the hotel at 3.5 stars.",
+				"summary_es": "Centro de fitness con cintas de correr, elípticas y equipo de pesas. No se publican tamaño ni horario. Hotels.com lo clasifica con 3,5 estrellas.",
+				"sources": ["https://au.hotels.com/de1634659-am2/gym-hotels-campo-grande-brazil"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/727963843.jpg?k=24da1d769eea81c349409fc76bf20dbb3566aa1de39cf6660e5691bce8317f8d&o=",
+					"gym": true
+				}
+			}
+		}
+	},
+	"campos-do-jordao-brazil": {
+		"city": "Campos do Jordao",
+		"country": "Brazil",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The only 5-star pick with a confirmed gym (mountain view), plus heated pool, sauna and spa.",
+		"bestReason_es": "El único 5 estrellas con gimnasio confirmado (con vistas a la montaña), además de piscina climatizada, sauna y spa.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Ort Hotel",
+				"stars": 5,
+				"area": "Vila Natal",
+				"bookingUrl": null,
+				"website": "https://www.orthotel.com.br/",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Gym with mountain view"],
+					"extras": [
+						"Heated indoor and outdoor pools",
+						"Sauna",
+						"Spa",
+						"Yoga and Pilates"
+					],
+					"access": "Guests"
+				},
+				"summary_en": "A gym with a mountain view, alongside heated indoor and outdoor pools, a sauna and a spa. No size, hours or equipment list found.",
+				"summary_es": "Un gimnasio con vistas a la montaña, junto a piscinas climatizadas interior y exterior, sauna y spa. No se encontraron tamaño, horario ni lista de equipos.",
+				"sources": [
+					"https://quantocustaviajar.com/blog/ort-hotel",
+					"https://www.hoteles.com/ho1830157376/ort-hotel-campos-do-jordao-brasil",
+					"https://www.hoteis.com/de1905866-am2/hoteis-academia-campos-do-jordao-brasil/",
+					"https://www.orthotel.com.br/"
+				],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Hotel Vila Inglesa",
+				"stars": null,
+				"area": "Jardim Primavera",
+				"bookingUrl": "https://www.booking.com/hotel/br/hotel-villa-inglesa.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Fitness room"],
+					"extras": ["Spa", "Outdoor pool"],
+					"access": "Guests"
+				},
+				"summary_en": "A fitness room open 24 hours, with a spa and an outdoor pool. No equipment details found.",
+				"summary_es": "Una sala de fitness abierta 24 horas, con spa y piscina exterior. No se encontraron detalles del equipamiento.",
+				"sources": [
+					"https://www.hoteles.com/ho558022/hotel-vila-inglesa-campos-do-jordao-brasil",
+					"https://www.hoteis.com/de1905866-am2/hoteis-academia-campos-do-jordao-brasil/",
+					"https://www.queroviajarmais.com/hoteis-em-campos-do-jordao/"
+				],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/833183168.jpg?k=8ad676970a2601eec06f6f30dbfba66c4c7bdc5cc0ee7b1ceba267da2b29d447&o=",
+					"gym": false
+				}
+			},
+			"budget": null
+		}
+	},
+	"canberra-australia": {
+		"city": "Canberra",
+		"country": "Australia",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Described as one of the largest hotel gyms in Australia, at 1,090 m2, with free daily classes and a pool.",
+		"bestReason_es": "Descrito como uno de los mayores gimnasios de hotel de Australia, con 1.090 m2, clases diarias gratuitas y piscina.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hyatt Hotel Canberra",
+				"stars": 5,
+				"area": "Yarralumla",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": 1090,
+					"hours": null,
+					"equipment": ["Weights and training room"],
+					"extras": [
+						"Complimentary group classes, up to four daily (yoga, boxing, Pilates, water aerobics)",
+						"Five-lane 16 m pool",
+						"Outdoor tennis court",
+						"On-site trainers and a nutritionist"
+					],
+					"access": null
+				},
+				"summary_en": "A 1,090 m2 gym, called one of the largest hotel gyms in Australia. Up to four complimentary classes a day, a five-lane 16 m pool, tennis court, trainers and a nutritionist.",
+				"summary_es": "Gimnasio de 1.090 m2, citado como uno de los mayores gimnasios de hotel de Australia. Hasta cuatro clases gratuitas al día, piscina de cinco carriles de 16 m, pista de tenis, entrenadores y nutricionista.",
+				"sources": ["https://qantas.com/travelinsider/en/experiences/stay-fit-and-relax/the-best-hotel-gyms-in-australia.html"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"canela-brazil": {
+		"city": "Canela",
+		"country": "Brazil",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Only Canela hotel with a gym described as well equipped and open 24 hours.",
+		"bestReason_es": "El único hotel de Canela con un gimnasio descrito como bien equipado y abierto 24 horas.",
+		"luxuryNote": "No 5-star hotel with a confirmed gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "DoubleTree by Hilton Caracol Canela",
+				"stars": 4,
+				"area": "Canela",
+				"bookingUrl": "https://www.booking.com/hotel/br/double-tree-by-hilton-caracol.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Well-equipped gym with quality equipment (guest review summary)"],
+					"extras": ["Pool (reviews mixed on size and heating)"],
+					"access": "Guests"
+				},
+				"summary_en": "A 24-hour fitness center that guest reviews describe as well equipped. No size or equipment list found.",
+				"summary_es": "Un gimnasio abierto 24 horas que los huéspedes describen como bien equipado. No se encontraron tamaño ni lista de equipos.",
+				"sources": ["https://ca.hotels.com/ho3681328128", "https://hotel.routard.com/hotel/br/double-tree-by-hilton-caracol.en-gb.html?aid=304142"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/930498569.jpg?k=ac3d8f2ed16f8f0acd7eb7e8f27310e5d1e1c58594e3e1e8a7010496c963c894&o=",
+					"gym": false
+				}
+			},
+			"standard": null,
+			"budget": {
+				"hotel": "Hotel Hospedaria Provençal",
+				"stars": null,
+				"area": "Canela",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Gym"],
+					"extras": [],
+					"access": "Guests"
+				},
+				"summary_en": "Listed with a gym among its facilities. No size, hours or equipment details found.",
+				"summary_es": "Figura con gimnasio entre sus instalaciones. No se encontraron tamaño, horario ni detalles del equipamiento.",
+				"sources": ["https://hotels.com/de159561-am2/gym-hotels-canela-brazil"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"cannes-france": {
+		"city": "Cannes",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Only Cannes hotel with a confirmed 24/7 renovated fitness centre and a terrace.",
+		"bestReason_es": "El único hotel de Cannes con un centro de fitness renovado confirmado, abierto 24 horas y con terraza.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hôtel Barrière Le Majestic Cannes",
+				"stars": 5,
+				"area": "La Croisette",
+				"bookingUrl": null,
+				"website": "https://hotelsbarriere.com/en/cannes/le-majestic",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Cardio training area"],
+					"extras": ["Personal training room", "Outdoor terrace of about 40 m2"],
+					"access": null
+				},
+				"summary_en": "A renovated fitness centre open every day 24/7, with a cardio area and a personal training room. A moving platform opens onto a terrace of about 40 m2.",
+				"summary_es": "Un centro de fitness renovado, abierto todos los días las 24 horas, con zona de cardio y sala de entrenamiento personal. Una plataforma móvil da acceso a una terraza de unos 40 m2.",
+				"sources": ["https://hotelsbarriere.com/en/cannes/le-majestic/experiences/fitness-center"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"caraguatatuba-brazil": {
+		"city": "Caraguatatuba",
+		"country": "Brazil",
+		"checked": "2026-11-02",
+		"best": "budget",
+		"bestReason_en": "Only hotel in Caraguatatuba with a gym visible in photos (cardio and weight equipment).",
+		"bestReason_es": "El único hotel de Caraguatatuba con gimnasio visible en fotos (cardio y pesas).",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": null,
+			"budget": {
+				"hotel": "Hampton by Hilton Caraguatatuba Serramar",
+				"stars": 3,
+				"area": "Pontal, near Serramar Parque Shopping",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Cardio machines",
+						"Weight-training equipment",
+						"Mirror wall"
+					],
+					"extras": ["Pool with city and mountain views"],
+					"access": "Guests"
+				},
+				"summary_en": "A fitness room with cardio machines and weight-training equipment, listed among popular amenities. No size or hours found.",
+				"summary_es": "Una sala de fitness con máquinas de cardio y equipos de musculación, entre los servicios destacados. No se encontraron tamaño ni horario.",
+				"sources": [
+					"https://www.hoteis.com/ho3826025696/hampton-by-hilton-caraguatatuba-serramar/",
+					"https://nz.hotels.com/de154939-am2/gym-hotels-caraguatatuba-brazil",
+					"https://hotel.routard.com/hotel/br/hampton-by-hilton-caraguatatuba-serramar.en-gb.html?aid=304142"
+				],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"caxias-do-sul-brazil": {
+		"city": "Caxias do Sul",
+		"country": "Brazil",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Fitness center plus heated indoor pool and dry sauna, though guests call the gym simple.",
+		"bestReason_es": "Centro de fitness con piscina interior climatizada y sauna seca, aunque los huéspedes describen el gimnasio como sencillo.",
+		"luxuryNote": "No 5-star hotel with a confirmed gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Blue Tree Towers Caxias do Sul",
+				"stars": 4,
+				"area": "São Pelegrino",
+				"bookingUrl": "https://www.booking.com/hotel/br/blue-tree-towers-caxias-do-sul.html",
+				"website": "https://www.bluetree.com.br/en/hotel/blue-tree-towers-caxias-do-sul",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness center"],
+					"extras": ["Heated indoor pool", "Dry sauna"],
+					"access": "Guests"
+				},
+				"summary_en": "A fitness center with a heated indoor pool and dry sauna. One guest review calls the gym simple but functional.",
+				"summary_es": "Un centro de fitness con piscina interior climatizada y sauna seca. Una reseña de huéspedes lo describe como sencillo pero funcional.",
+				"sources": [
+					"https://www.bluetree.com.br/hotel/blue-tree-towers-caxias-do-sul/",
+					"https://www.hoteles.com/en/ho229756/blue-tree-towers-caxias-do-sul-caxias-do-sul-brazil",
+					"https://ca.hotels.com/es/de1695229-am2/gimnasio-hoteles-caxias-do-sul-y-alrededores-brasil"
+				],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/33722222.jpg?k=b2abbf246f91adb06cc831dc3a087c165299e3c3b690c3bbe77c65346829d1ba&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Intercity Caxias do Sul",
+				"stars": 4,
+				"area": "Next to Iguatemi Shopping",
+				"bookingUrl": "https://www.booking.com/hotel/br/intercity-premium-caxias-do-sul.html",
+				"website": "https://www.intercityhoteis.com.br/en/hotel-caxias-do-sul/hotel-intercity-caxias-do-sul",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness centre"],
+					"extras": [
+						"Indoor pool",
+						"Outdoor pool",
+						"Hot tub"
+					],
+					"access": "Guests, fitness activities may carry extra charges"
+				},
+				"summary_en": "A fitness centre with indoor and outdoor pools and a hot tub, about 50 m from Iguatemi Shopping. No size or equipment details found.",
+				"summary_es": "Un centro de fitness con piscinas interior y exterior y jacuzzi, a unos 50 m del centro comercial Iguatemi. No se encontraron tamaño ni detalles del equipamiento.",
+				"sources": ["https://hotels.edreams.net/hotel/br/intercity-premium-caxias-do-sul.en-gb.html", "https://ca.hotels.com/es/de1695229-am2/gimnasio-hoteles-caxias-do-sul-y-alrededores-brasil"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/134809003.jpg?k=f9cf59add29763fdb133ffe96f94f26e428cdb25045ea25f579c9615487bc234&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Cosmos Hotel",
+				"stars": null,
+				"area": "Caxias do Sul",
+				"bookingUrl": "https://www.booking.com/hotel/br/cosmos.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Gym"],
+					"extras": [],
+					"access": "Guests"
+				},
+				"summary_en": "Listed with a gym and parking, plus a cafe and garden. No size, hours or equipment details found.",
+				"summary_es": "Figura con gimnasio y aparcamiento, además de cafetería y jardín. No se encontraron tamaño, horario ni detalles del equipamiento.",
+				"sources": ["https://ca.hotels.com/es/de1695229-am2/gimnasio-hoteles-caxias-do-sul-y-alrededores-brasil"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/783189958.jpg?k=f288aff2f04badd312c79e2c731f7f915cdf9370ccd92634096e745c7467c528&o=",
+					"gym": true
+				}
+			}
+		}
+	},
+	"ceske-budejovice-czechia": {
+		"city": "Ceske Budejovice",
+		"country": "Czechia",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "The only Ceske Budejovice hotel found with a gym listed under its wellness features.",
+		"bestReason_es": "El único hotel de Ceske Budejovice encontrado con un gimnasio incluido entre sus servicios de bienestar.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Clarion Congress Hotel České Budějovice",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/cz/gomel.html",
+				"website": "https://www.choicehotels.com/hotel/cs011",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "A gym is listed among the hotel's features and wellness services. Size, hours and equipment are not published.",
+				"summary_es": "El hotel incluye un gimnasio entre sus servicios y de bienestar. No se publican tamaño, horario ni equipos.",
+				"sources": ["https://destinia.com/en/hotels/europe/czech-republic/south-bohemian-region/ceske-budejovice/clarion-congress-hotel-ceske-budejovice/ho-73650", "https://www.soccatours.com/football-training-camp/czechia/suedboehmen/clarion-congress-hotel"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/783818961.jpg?k=1f8cf9c842111a05521cc77f43d4f2da58a836faebc2609dcafe7ba0b6b3959f&o=",
+					"gym": false
+				}
+			},
+			"budget": null
+		}
+	},
+	"chalon-sur-saone-france": {
+		"city": "Chalon-sur-Saône",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "budget",
+		"bestReason_en": "A hotel with a confirmed gym, plus a spa with steam room.",
+		"bestReason_es": "Un hotel con gimnasio confirmado, además de spa con baño de vapor.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": null,
+			"budget": {
+				"hotel": "Le Saint-Georges Hotel & Spa",
+				"stars": null,
+				"area": "City centre (Avenue Jean Jaurès, by the station)",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Gym (equipment not detailed)"],
+					"extras": [
+						"Spa",
+						"Steam room",
+						"Sauna (mentioned in guest reviews)"
+					],
+					"access": "For guests"
+				},
+				"summary_en": "A gym is listed among the amenities, with an on-site spa and a steam room. Size, equipment and hours are not published.",
+				"summary_es": "El hotel indica un gimnasio entre sus servicios, con spa y baño de vapor. No se publican el tamaño, el equipamiento ni el horario.",
+				"sources": ["https://www.expedia.co.nz/Chalon-Sur-Saone-Hotels-Le-Saint-Georges.h894896.Hotel-Information", "https://france-hotel-guide.com/en/24228-saint-georges-hotel-spa-chalon-sur-saone-en.php"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"chantilly-france": {
+		"city": "Chantilly",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "A fitness centre with indoor and outdoor pools, sauna and hammam, on a resort with its own golf course.",
+		"bestReason_es": "Un centro de fitness con piscinas interior y exterior, sauna y hammam, en un resort con campo de golf propio.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Mercure Chantilly Resort & Conventions",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness centre (equipment not detailed)"],
+					"extras": [
+						"Indoor pool",
+						"Outdoor pool",
+						"Sauna",
+						"Hammam",
+						"18-hole golf course"
+					],
+					"access": "For guests"
+				},
+				"summary_en": "A 4-star resort with a fitness centre, indoor and outdoor pools, a sauna and a hammam. It also has an 18-hole golf course on its grounds.",
+				"summary_es": "Un resort de 4 estrellas con centro de fitness, piscinas interior y exterior, sauna y hammam. Tiene además un campo de golf de 18 hoyos.",
+				"sources": ["https://cvent.com/venues/chantilly/hotel/mercure-chantilly-resort-conventions/venue-a403e3d4-84b6-4b3b-8e0f-00e9f675daa7"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"charlottetown-canada": {
+		"city": "Charlottetown",
+		"country": "Canada",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "A downtown fitness centre with city views, plus an indoor pool and whirlpool.",
+		"bestReason_es": "Un gimnasio en el centro con vistas a la ciudad, además de piscina cubierta y jacuzzi.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Delta Hotels Prince Edward",
+				"stars": null,
+				"area": "Downtown (Queen Street)",
+				"bookingUrl": null,
+				"website": "https://www.marriott.com/hotels/travel/yygdp-delta-prince-edward",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness centre with floor-to-ceiling windows"],
+					"extras": ["Indoor pool", "Whirlpool"],
+					"access": null
+				},
+				"summary_en": "A fitness centre with floor-to-ceiling windows over downtown, next to an indoor pool and whirlpool. Size, hours and equipment are not published.",
+				"summary_es": "Un gimnasio con ventanales sobre el centro, junto a piscina cubierta y jacuzzi. No se publican tamaño, horario ni equipamiento.",
+				"sources": ["https://www.marriott.com/hotels/travel/yygdp-delta-prince-edward"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"chatham-canada": {
+		"city": "Chatham",
+		"country": "Canada",
+		"checked": "2026-11-02",
+		"best": "budget",
+		"bestReason_en": "Only a gym listed as an amenity, with no further detail.",
+		"bestReason_es": "Solo figura un gimnasio como servicio, sin más detalles.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": null,
+			"budget": {
+				"hotel": "Comfort Inn Chatham",
+				"stars": 2.5,
+				"area": "Richmond Street",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Gym"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Lists a gym among its amenities, with no hours, equipment or size published.",
+				"summary_es": "Figura un gimnasio entre sus servicios, sin horario, equipamiento ni tamaño publicados.",
+				"sources": ["https://expedia.com/Ontario-hotels-Comfort-Inn-Chatham.h2079.Hotel-information"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"chengdu-china": {
+		"city": "Chengdu",
+		"country": "China",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 24-hour gym plus an indoor pool on the 48th floor.",
+		"bestReason_es": "Un gimnasio abierto 24 horas y una piscina interior en la planta 48.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Waldorf Astoria Chengdu",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/cn/waldorf-astoria-chengdu.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": ["Indoor pool on the 48th floor", "Spa with 6 private suites"],
+					"access": null
+				},
+				"summary_en": "A 24-hour fitness centre, with an indoor pool on the 48th floor and a spa. Size and equipment are not published.",
+				"summary_es": "Un gimnasio abierto 24 horas, con piscina interior en la planta 48 y spa. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.hotelgyms.com/hotels/cn/chengdu/waldorf-astoria-chengdu/2056690", "https://za.hotels.com/ho616707/waldorf-astoria-chengdu-chengdu-china"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/483796068.jpg?k=bf55975cf45d4343fb5968b6837f69687f6c8cd5a90d06a9245e6c60963743bc&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Dorsett Chengdu",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": null,
+				"website": "https://www.dorsetthotels.com/dorsett-chengdu/hotel-amenities/",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Cardio and fitness equipment", "Weights"],
+					"extras": ["Gym on the 4th floor"],
+					"access": "Room keycard"
+				},
+				"summary_en": "A 24-hour gym on the 4th floor with cardio equipment and weights, opened with the room keycard. Size is not published.",
+				"summary_es": "Un gimnasio abierto 24 horas en la planta 4 con equipos de cardio y pesas, al que se accede con la tarjeta de la habitación. No se publica el tamaño.",
+				"sources": ["https://www.dorsetthotels.com/dorsett-chengdu/hotel-amenities/", "https://momondo.ie/hotels/chengdu/Dorsett-Chengdu.mhd483764.ksp"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"chilliwack-canada": {
+		"city": "Chilliwack",
+		"country": "Canada",
+		"checked": "2026-11-02",
+		"best": "budget",
+		"bestReason_en": "A confirmed fitness centre with an indoor pool, but only basic and rated Poor on GymFactor.",
+		"bestReason_es": "Un gimnasio confirmado con piscina cubierta, pero básico y valorado como Poor en GymFactor.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": null,
+			"budget": {
+				"hotel": "Hampton Inn by Hilton Chilliwack",
+				"stars": null,
+				"area": "Chilliwack",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness centre"],
+					"extras": ["Indoor pool"],
+					"access": null
+				},
+				"summary_en": "A fitness centre with an indoor pool, rated Poor on GymFactor. Size, hours and equipment are not published.",
+				"summary_es": "Un gimnasio con piscina cubierta, valorado como Poor en GymFactor. No se publican tamaño, horario ni equipamiento.",
+				"sources": ["https://www.hotelgyms.com/hotels/ca/chilliwack/hampton-inn-by-hilton-chilliwack/788752"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"chongqing-china": {
+		"city": "Chongqing",
+		"country": "China",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 24-hour gym with LifeFitness equipment, a yoga room and a pool with city views.",
+		"bestReason_es": "Un gimnasio 24 horas con equipos LifeFitness, sala de yoga y piscina con vistas a la ciudad.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Conrad Chongqing",
+				"stars": null,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/cn/conrad-chongqing.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["LifeFitness equipment", "Separate strength and cardio areas"],
+					"extras": [
+						"Yoga room",
+						"Indoor pool in a floating acrylic enclosure",
+						"Spa on the 55th floor"
+					],
+					"access": null
+				},
+				"summary_en": "A 24-hour gym with LifeFitness machines, separate strength and cardio areas and a yoga room. Size is not published.",
+				"summary_es": "Un gimnasio 24 horas con máquinas LifeFitness, zonas separadas de fuerza y cardio y sala de yoga. No se publica el tamaño.",
+				"sources": ["https://www.hilton.com/en/hotels/ckgcici-conrad-chongqing/hotel-info/", "https://www.hotels.com/ho3277363520/conrad-chongqing-chongqing-china"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/555557434.jpg?k=1044008ade85b49089997f87c479e067a7bad2cb9042a23f64cf8a15bb76c7f3&o=",
+					"gym": false
+				}
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"clermont-ferrand-france": {
+		"city": "Clermont-Ferrand",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "A 4-star hotel with a fitness room open 24 hours.",
+		"bestReason_es": "Un hotel de 4 estrellas con sala de fitness abierta las 24 horas.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Novotel Suites Clermont-Ferrand Polydome",
+				"stars": 4,
+				"area": "Avenue de la République",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Fitness room (equipment not detailed)"],
+					"extras": [],
+					"access": "For guests"
+				},
+				"summary_en": "A 4-star suite hotel with a fitness room open 24 hours. Size and equipment are not published.",
+				"summary_es": "Un hotel de apartamentos de 4 estrellas con sala de fitness abierta 24 horas. No se publican el tamaño ni el equipamiento.",
+				"sources": ["https://www.hotelgyms.com/hotels/fr/clermont-ferrand/novotel-suites-clermont-ferrand-polydome/57292"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"cochabamba-bolivia": {
+		"city": "Cochabamba",
+		"country": "Bolivia",
+		"checked": "2026-11-02",
+		"best": "budget",
+		"bestReason_en": "The only Cochabamba option with a gym and pool both listed.",
+		"bestReason_es": "La única opción de Cochabamba con gimnasio y piscina en la lista.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": null,
+			"budget": {
+				"hotel": "Apartasuites By Gran Hotel Cochabamba",
+				"stars": null,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness center"],
+					"extras": ["Pool", "Waterslide"],
+					"access": "Fitness center at the aparthotel"
+				},
+				"summary_en": "Listed with a fitness center, a pool and a waterslide. No details on equipment or hours could be confirmed.",
+				"summary_es": "Figura con centro de fitness, piscina y tobogán. No se pudo confirmar información sobre equipamiento ni horario.",
+				"sources": ["https://hotels.com/de1636303-am2/gym-hotels-cochabamba-bolivia"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"cognac-france": {
+		"city": "Cognac",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 5-star hotel with a confirmed fitness centre, plus indoor and outdoor pools and a spa.",
+		"bestReason_es": "Un hotel de 5 estrellas con centro de fitness confirmado, además de piscinas interior y exterior y spa.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hotel Chais Monnet & Spa",
+				"stars": 5,
+				"area": "Avenue Paul Martell",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness centre (equipment not detailed)"],
+					"extras": [
+						"Indoor pool",
+						"Outdoor pool",
+						"Spa",
+						"Jacuzzi",
+						"Hammam",
+						"Sauna"
+					],
+					"access": "For guests"
+				},
+				"summary_en": "A 5-star hotel with a fitness centre and a spa with indoor and outdoor pools, jacuzzi, hammam and sauna. Gym size, equipment and hours are not published.",
+				"summary_es": "Un hotel de 5 estrellas con centro de fitness y un spa con piscinas interior y exterior, jacuzzi, hammam y sauna. No se publican el tamaño del gimnasio, el equipamiento ni el horario.",
+				"sources": ["https://www.hotels.com/ho876037952/hotel-chais-monnet-spa-cognac-france", "https://theluxuryeditor.com/accommodation/hotel-chais-monnet-spa/"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"colmar-france": {
+		"city": "Colmar",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 24-hour gym with an indoor pool and a Clarins spa.",
+		"bestReason_es": "Gimnasio abierto 24 horas con piscina cubierta y spa Clarins.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "L'Esquisse Hotel & Spa Colmar - MGallery Collection",
+				"stars": 5,
+				"area": "Centre ville (near Parc du Champ de Mars)",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Gym (equipment not detailed)"],
+					"extras": [
+						"Indoor pool (8:00 to 20:00)",
+						"Clarins spa",
+						"Hot tub"
+					],
+					"access": "For guests"
+				},
+				"summary_en": "A 5-star hotel with a gym open 24 hours, an indoor pool and a Clarins spa. Equipment and size are not published.",
+				"summary_es": "Un hotel de 5 estrellas con gimnasio abierto 24 horas, piscina cubierta y spa Clarins. No se publican el equipamiento ni el tamaño.",
+				"sources": ["https://www.expedia.com/Colmar-Hotels-LEsquisse-Hotel-Spa-Colmar-MGallery.h174835.Hotel-Information"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Novotel Suites Colmar Centre",
+				"stars": 4,
+				"area": "Centre (Rue Bartholdi)",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness centre (equipment not detailed)"],
+					"extras": ["Spa"],
+					"access": "For guests"
+				},
+				"summary_en": "A 4-star hotel with a fitness centre and a spa, a few minutes' walk from Little Venice. Gym size, equipment and hours are not published.",
+				"summary_es": "Un hotel de 4 estrellas con centro de fitness y spa, a pocos minutos a pie de la Petite Venise. No se publican el tamaño del gimnasio, el equipamiento ni el horario.",
+				"sources": ["https://www.orbitz.com/Colmar-Hotels-Novotel-Suites-Colmar-Centre.h22870113.Hotel-Information"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"compiegne-france": {
+		"city": "Compiègne",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "A 4-star hotel with a gym open 24 hours and a full spa.",
+		"bestReason_es": "Un hotel de 4 estrellas con gimnasio abierto 24 horas y spa completo.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Kyriad Prestige Compiègne Hotel & Spa",
+				"stars": 4,
+				"area": "Avenue Marcelin Berthelot",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Gym (equipment not detailed)"],
+					"extras": ["Spa"],
+					"access": "For guests"
+				},
+				"summary_en": "A 4-star hotel with a gym open 24 hours and a full spa. Size and equipment are not published.",
+				"summary_es": "Un hotel de 4 estrellas con gimnasio abierto 24 horas y spa completo. No se publican el tamaño ni el equipamiento.",
+				"sources": ["https://es.hoteles.com/en/ho272398/kyriad-compiegne-compiegne-france/"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"concepcion-chile": {
+		"city": "Concepcion",
+		"country": "Chile",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Only a listed fitness room is confirmed; no size or equipment is published.",
+		"bestReason_es": "Solo se confirma una sala de fitness; no se publican tamaño ni equipamiento.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Hotel Costanera Concepcion",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": "Guests"
+				},
+				"summary_en": "A 4-star hotel with a fitness room listed among its amenities. Size, equipment and hours are not published.",
+				"summary_es": "Un hotel de 4 estrellas con sala de fitness entre sus servicios. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.es.momondo.com/hoteles/concepcion/Mercure-Concepcion.mhd2611448.ksp", "https://www.hotelgyms.com/hotels/cl/concepcion/mercure-concepcion/1628686"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"copenhagen-denmark": {
+		"city": "Copenhagen",
+		"country": "Denmark",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Open 24 hours with barbells, dumbbells, kettlebells, cables and classes.",
+		"bestReason_es": "Abierto 24 horas con barras, mancuernas, kettlebells, poleas y clases.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Radisson Blu Scandinavia Hotel, Copenhagen",
+				"stars": null,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Strength and cardio machines",
+						"Barbells",
+						"Dumbbells",
+						"Kettlebells",
+						"Cable stations"
+					],
+					"extras": ["Outdoor training terrace", "Group classes in cardio, boxing and weightlifting"],
+					"access": "Sporting Health Club Scandinavia on the 4th floor"
+				},
+				"summary_en": "The Sporting Health Club on the 4th floor is open 24 hours, with barbells, dumbbells, kettlebells and cables. It has an outdoor terrace and group classes.",
+				"summary_es": "El Sporting Health Club de la 4.ª planta abre 24 horas, con barras, mancuernas, kettlebells y poleas. Tiene terraza exterior y clases en grupo.",
+				"sources": ["https://www.radissonhotels.com/en-us/hotels/radisson-blu-copenhagen-scandinavia/fitness-wellness"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"cordoba-argentina": {
+		"city": "Córdoba",
+		"country": "Argentina",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The only Córdoba hotel found with a 24-hour gym and an indoor pool.",
+		"bestReason_es": "El único hotel de Córdoba encontrado con gimnasio 24 horas y piscina cubierta.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Quinto Centenario Hotel",
+				"stars": 5,
+				"area": "Centro",
+				"bookingUrl": "https://www.booking.com/hotel/ar/sheraton-cordoba.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": ["Indoor pool", "Seasonal outdoor pool (Nov to Feb)"],
+					"access": "Guests"
+				},
+				"summary_en": "A gym open 24 hours, with an indoor pool and a seasonal outdoor pool. Size and equipment are not published; the 24h and pool facts come from the Sheraton Cordoba listing at the same booking address.",
+				"summary_es": "Un gimnasio abierto 24 horas, con piscina cubierta y piscina exterior de temporada. No se publican tamaño ni equipamiento; los datos de 24h y piscina proceden de la ficha del Sheraton Cordoba en la misma dirección de reserva.",
+				"sources": [
+					"https://za.hotels.com/de12344-am2/gym-hotels-cordoba-argentina",
+					"https://www.wotif.com/Las-Rabonas-Hotels-Sheraton-Cordoba-Hotel.h67287.Hotel-Information",
+					"https://www.booking.com/hotel/ar/sheraton-cordoba.html"
+				],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/422271325.jpg?k=8421e3a1381cf182a2eea9939934862850033e64a199f653ec592863264a34ad&o=",
+					"gym": true
+				}
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"cotonou-benin": {
+		"city": "Cotonou",
+		"country": "Benin",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The only 5-star in the list, with a fitness centre, heated indoor pool and spa.",
+		"bestReason_es": "El único 5 estrellas de la lista, con centro de fitness, piscina cubierta climatizada y spa.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Sofitel Cotonou Marina Hotel & Spa",
+				"stars": 5,
+				"area": "Boulevard de la Marina",
+				"bookingUrl": null,
+				"website": "https://sofitel.accor.com/en/hotels/B845.html",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness centre"],
+					"extras": [
+						"Heated indoor pool",
+						"Sofitel Spa Signature by KOS Paris",
+						"Trainers"
+					],
+					"access": "Fitness centre at the hotel"
+				},
+				"summary_en": "A well-equipped fitness centre with trainers, next to a heated indoor pool and a spa. Size, equipment and hours are not published.",
+				"summary_es": "Un centro de fitness bien equipado con entrenadores, junto a una piscina cubierta climatizada y un spa. No se publican el tamaño, el equipamiento ni el horario.",
+				"sources": ["https://sofitel.accor.com/en/hotels/B845.html", "https://hotels.com/de65683-am2/gym-hotels-cotonou-benin"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Sun Beach Hotel",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness centre"],
+					"extras": [],
+					"access": "Fitness centre available to guests"
+				},
+				"summary_en": "Listed with a fitness centre. No further details on equipment or hours could be confirmed.",
+				"summary_es": "Figura con un centro de fitness. No se pudo confirmar más información sobre equipamiento ni horario.",
+				"sources": ["https://hotels.com/de65683-am2/gym-hotels-cotonou-benin"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": {
+				"hotel": "Golden Tulip Le Diplomate Cotonou",
+				"stars": null,
+				"area": null,
+				"bookingUrl": null,
+				"website": "https://diplomate-cotonou.goldentulip.com/ja",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Exercise equipment"],
+					"extras": ["Pool", "Spa"],
+					"access": "Gym at the hotel"
+				},
+				"summary_en": "Listed with a gym that has exercise equipment, plus a pool and a spa. Equipment details and hours are not published.",
+				"summary_es": "Figura con un gimnasio con equipos de ejercicio, además de piscina y spa. No se publican detalles del equipamiento ni el horario.",
+				"sources": ["https://hotels.com/de65683-am2/gym-hotels-cotonou-benin"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"cuenca-ecuador": {
+		"city": "Cuenca",
+		"country": "Ecuador",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The only Cuenca hotel found with a gym plus heated pool, sauna and steam room.",
+		"bestReason_es": "El único hotel de Cuenca con gimnasio más piscina climatizada, sauna y baño de vapor entre los encontrados.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Oro Verde Cuenca",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/ec/oro-verde-cuenca.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Cardio equipment", "Weights"],
+					"extras": [
+						"Heated outdoor pool",
+						"Sauna",
+						"Steam room"
+					],
+					"access": null
+				},
+				"summary_en": "Travelmyth lists cardio and lifting equipment, with a heated outdoor pool, sauna and steam room. Size and hours are not published.",
+				"summary_es": "Travelmyth indica equipos de cardio y pesas, con piscina exterior climatizada, sauna y baño de vapor. No se publican tamaño ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Cuenca-Azuay/Hotels/gym", "https://www.booking.com/fivestars/city/ec/cuenca.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/911966762.jpg?k=6c9171b3fb4faf78d522a0faa600059e3fb0b53af9f4decedcfc4434f9f8e939&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "TRYP by Wyndham Cuenca Zahir",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/ec/zahir-360.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Listed with a fitness room. No size, equipment or hours are published.",
+				"summary_es": "Figura con sala de fitness. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://ca.trip.com/hotels/gym/city/ec/cuenca.html", "https://www.booking.com/fourstars/city/ec/cuenca.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/694068857.jpg?k=07c29e3d69016d7b26bf1814b8b5bbaf363742b06541d6a7570119db286d7d2f&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Hotel Santiago de Compostella Suites",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/ec/santiago-de-compostella-suite.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Listed with fitness facilities. No size, equipment or hours are published.",
+				"summary_es": "Figura con instalaciones de fitness. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Cuenca-Azuay/Hotels/gym", "https://www.booking.com/threestars/city/ec/cuenca.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/808251956.jpg?k=a8a9cdf2385114bc14797ed018221e5f18432992091f0b865431c09a30de7b67&o=",
+					"gym": true
+				}
+			}
+		}
+	},
+	"cuiaba-brazil": {
+		"city": "Cuiaba",
+		"country": "Brazil",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The only Cuiaba hotel found with a 24-hour gym, plus sauna, spa and tennis court.",
+		"bestReason_es": "El único hotel de Cuiabá con gimnasio 24 horas encontrado, además de sauna, spa y pista de tenis.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hotel Inter Cuiabá",
+				"stars": null,
+				"area": "Jardim Leblon",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Gym"],
+					"extras": [
+						"Sauna",
+						"Spa",
+						"Adults-only outdoor pool",
+						"Tennis court"
+					],
+					"access": "Guests"
+				},
+				"summary_en": "A 24-hour gym with a sauna, spa, outdoor pool and tennis court. Official star rating not confirmed (listed as 4.5 on Hotels.com).",
+				"summary_es": "Un gimnasio abierto 24 horas con sauna, spa, piscina exterior y pista de tenis. La categoría oficial no está confirmada (4,5 en Hotels.com).",
+				"sources": [
+					"https://www.logitravel.pt/hoteis/brasil/region-centro-oeste-brasil/cuiaba-mt/hotel-inter-cuiaba--hotel-1071647",
+					"https://hotels.com/de138311-am2/gym-hotels-cuiaba-and-vicinity-brazil",
+					"https://br.trip.com/hotels/gym/city/br/cuiaba.html"
+				],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Hotel Gran Odara",
+				"stars": 4,
+				"area": "Cuiabá",
+				"bookingUrl": "https://www.booking.com/hotel/br/gran-odara.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Treadmill", "Weight machines"],
+					"extras": ["Pool", "Sauna"],
+					"access": "Guests"
+				},
+				"summary_en": "A gym with treadmills and weight machines, plus a pool and sauna. Rated 9.4/10 by 733 reviewers on Hotels.com, though not specifically for the gym.",
+				"summary_es": "Un gimnasio con cintas de correr y máquinas de pesas, además de piscina y sauna. Valorado con 9,4/10 por 733 opiniones en Hotels.com, aunque no por el gimnasio en concreto.",
+				"sources": ["https://hotels.com/de138311-am2/gym-hotels-cuiaba-and-vicinity-brazil", "https://www.queroviajarmais.com/hoteis-5-estrelas-em-cuiaba/"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/608261834.jpg?k=3f49a00cfc4b4d4480b5923e457af8ecce50e846ee1bb5f62dd602fa5b2a6339&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Advanced Hotel e Flats",
+				"stars": 3,
+				"area": "Cuiabá",
+				"bookingUrl": "https://www.booking.com/hotel/br/advanced-business-amp-flats.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Treadmills", "Weight machines"],
+					"extras": [],
+					"access": "Guests"
+				},
+				"summary_en": "A gym with treadmills and weight machines, based on photo descriptions. No size or hours found.",
+				"summary_es": "Un gimnasio con cintas de correr y máquinas de pesas, según las fotos. No se encontraron tamaño ni horario.",
+				"sources": ["https://hotels.com/de138311-am2/gym-hotels-cuiaba-and-vicinity-brazil"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/293153238.jpg?k=9c660a858576394848aa5d8f2efcf7f5974692639a57e41d4ac0b93101b20c45&o=",
+					"gym": true
+				}
+			}
+		}
+	},
+	"curitiba-brazil": {
+		"city": "Curitiba",
+		"country": "Brazil",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The only Curitiba hotel found with a confirmed 5-star rating, a gym, sauna and indoor pool.",
+		"bestReason_es": "El único hotel de Curitiba encontrado con 5 estrellas confirmadas, gimnasio, sauna y piscina cubierta.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Radisson Hotel Curitiba",
+				"stars": 5,
+				"area": "Batel",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Equipped gym (equipment not itemized)"],
+					"extras": [
+						"Small indoor pool",
+						"Sauna",
+						"Massage"
+					],
+					"access": "Internal hotel gym"
+				},
+				"summary_en": "A 5-star hotel in Batel with an equipped internal gym, a small indoor pool and a sauna. Size, hours and equipment are not published in the sources found.",
+				"summary_es": "Hotel de 5 estrellas en Batel con gimnasio interno equipado, piscina cubierta pequeña y sauna. Los datos de tamaño, horario y equipamiento no constan en las fuentes encontradas.",
+				"sources": ["https://www.hotelgyms.com/hotels/br/curitiba/radisson-hotel-curitiba/250414"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": {
+				"hotel": "Hotel Centro Europeu",
+				"stars": 3,
+				"area": "Centro (Praça General Osório)",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": "Fitness centre listed among hotel amenities"
+				},
+				"summary_en": "A 3-star downtown hotel with a fitness centre listed. HotelGyms rates its gym as Poor.",
+				"summary_es": "Hotel de 3 estrellas en el centro con gimnasio indicado. HotelGyms valora su gimnasio como pobre.",
+				"sources": ["https://www.hotelgyms.com/hotels/br/curitiba/hotel-centro-europeu/13689"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"dalian-china": {
+		"city": "Dalian",
+		"country": "China",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Fully equipped gym with personal trainers, plus a 25 m indoor pool, sauna and steam room.",
+		"bestReason_es": "Gimnasio completo con entrenadores personales, además de piscina interior de 25 m, sauna y baño de vapor.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Conrad Dalian",
+				"stars": 5,
+				"area": "Zhongshan District",
+				"bookingUrl": "https://www.booking.com/hotel/cn/conrad-dalian.html",
+				"website": "https://www.hilton.com/en/hotels/dlczdci-conrad-dalian/amenities",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Weights and cardio machines"],
+					"extras": [
+						"25 m indoor pool",
+						"Sauna and steam room",
+						"Personal fitness instructors"
+					],
+					"access": null
+				},
+				"summary_en": "Fully equipped fitness centre with weights and cardio machines, next to a 25 m indoor pool, sauna and steam room. Size and hours are not published.",
+				"summary_es": "Centro de fitness completo con pesas y máquinas de cardio, junto a una piscina interior de 25 m, sauna y baño de vapor. No se publican tamaño ni horario.",
+				"sources": [
+					"https://www.hilton.com/en/hotels/dlczdci-conrad-dalian/amenities",
+					"https://au.hotels.com/de211605-am2/gym-hotels-dalian-china",
+					"https://www.hotels.com/ho395681"
+				],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/490806062.jpg?k=fd2991650600cf2104d8ae55cee303c4bc35054eeff5cf4cf43c1383f3efbd81&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Hotel Nikko Dalian",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/cn/nikko-dalian.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Treadmills"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Listed among Dalian hotels with a gym, with treadmills shown in the listing photo. No size, hours or further equipment found.",
+				"summary_es": "Aparece entre los hoteles de Dalian con gimnasio, con cintas de correr en la foto del anuncio. No se encontraron tamaño, horario ni más equipamiento.",
+				"sources": ["https://au.hotels.com/de211605-am2/gym-hotels-dalian-china"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/181798128.jpg?k=51454ddcfe007e5753d5ff49ff2ffbf7319af75089361ca974606e33f3dcaf62&o=",
+					"gym": false
+				}
+			},
+			"budget": null
+		}
+	},
+	"darwin-australia": {
+		"city": "Darwin",
+		"country": "Australia",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "24-hour rooftop gym with cardio machines and weights.",
+		"bestReason_es": "Gimnasio en la azotea abierto 24 horas con cardio y pesas.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hilton Darwin",
+				"stars": 5,
+				"area": "Darwin CBD (Mitchell Street)",
+				"bookingUrl": "https://www.booking.com/hotel/au/hilton-darwin.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness center"],
+					"extras": ["Outdoor pool"],
+					"access": "Free for guests"
+				},
+				"summary_en": "A fitness center with harbour views at a 5-star hotel. Size, hours and equipment were not published.",
+				"summary_es": "Un centro de fitness con vistas al puerto en un hotel de 5 estrellas. No se publican tamaño, horario ni equipamiento.",
+				"sources": ["https://www.priceline.com/hotel-deals/en-us/P3000040009/H4997305/hilton-darwin.ssp"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/473641115.jpg?k=fd6a7cc6725a655510a195071dad09236354b863fe3739134b42d06b19efbe17&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Courtyard by Marriott Darwin",
+				"stars": 4,
+				"area": "Darwin Waterfront",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Cardio machines",
+						"Weights",
+						"Yoga balls"
+					],
+					"extras": ["Rooftop location"],
+					"access": "Free for guests"
+				},
+				"summary_en": "A 24-hour rooftop fitness centre with cardio machines, weights and yoga balls.",
+				"summary_es": "Un centro de fitness en la azotea abierto 24 horas, con máquinas de cardio, pesas y balones de yoga.",
+				"sources": ["https://www.expedia.co.uk/Darwin-Hotels-Hotel-With-Gym.0-0-d6131317-thotelwithgym.Travel-Guide-Filter-Hotels"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"dax-france": {
+		"city": "Dax",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "A 4-star hotel with an internal gym and a 1,800 m2 spa with a thermal pool.",
+		"bestReason_es": "Un hotel de 4 estrellas con gimnasio propio y un spa de 1.800 m2 con piscina termal.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Hotel & Spa Vacances Bleues Le Splendid",
+				"stars": 4,
+				"area": "Cours de Verdun",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Internal gym (equipment not detailed)"],
+					"extras": ["Spa of about 1,800 m2", "Thermal pool"],
+					"access": "For guests"
+				},
+				"summary_en": "A 4-star hotel with an internal gym and a spa of about 1,800 m2 with a thermal pool. The gym itself is rated poor on HotelGyms, so the draw here is the spa.",
+				"summary_es": "Un hotel de 4 estrellas con gimnasio propio y un spa de unos 1.800 m2 con piscina termal. HotelGyms valora el gimnasio como pobre, así que el atractivo es el spa.",
+				"sources": ["https://www.hotelgyms.com/hotels/fr/dax/hotel-and-spa-vacances-bleues-le-splendid/57250"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"deauville-france": {
+		"city": "Deauville",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 5-star hotel with a fitness centre, a spa and a pool in central Deauville.",
+		"bestReason_es": "Un hotel de 5 estrellas con centro de fitness, spa y piscina en el centro de Deauville.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hôtel Barrière Le Royal Deauville",
+				"stars": 5,
+				"area": "Centre (near the casino)",
+				"bookingUrl": "https://www.booking.com/hotel/fr/royal-barriere.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness centre (equipment not detailed)"],
+					"extras": ["Spa with hammam", "Outdoor pool"],
+					"access": "For guests"
+				},
+				"summary_en": "A 5-star hotel with a fitness centre, a spa with a hammam and an outdoor pool. Gym size, equipment and hours are not published.",
+				"summary_es": "Un hotel de 5 estrellas con centro de fitness, spa con hammam y piscina exterior. No se publican el tamaño del gimnasio, el equipamiento ni el horario.",
+				"sources": ["https://www.wotif.com/Deauville-Hotels-Hotel-Barriere-Le-Royal-Deauville.h425562.Hotel-Information"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/772363383.jpg?k=f34e28246184e2edae847dd96611e892c9df1c5891e9d3c7918406985c8d64a9&o=",
+					"gym": false
+				}
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"dinan-france": {
+		"city": "Dinan",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "A 4-star hotel with a fitness room listing cardio machines, plus a heated seasonal outdoor pool and jacuzzi.",
+		"bestReason_es": "Un hotel de 4 estrellas con sala de fitness y máquinas de cardio, además de piscina exterior climatizada de temporada y jacuzzi.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Mercure Dinan Port Le Jerzual",
+				"stars": 4,
+				"area": "Port",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Treadmill",
+						"Recumbent exercise bike",
+						"Rowing machine",
+						"Elliptical trainer"
+					],
+					"extras": ["Heated outdoor pool (seasonal)", "8-person jacuzzi"],
+					"access": "For guests"
+				},
+				"summary_en": "A fitness room with a treadmill, recumbent bike, rowing machine and elliptical trainer. It has a heated seasonal outdoor pool and an 8-person jacuzzi.",
+				"summary_es": "Una sala de fitness con cinta de correr, bicicleta reclinada, remo y elíptica. Tiene piscina exterior climatizada de temporada y jacuzzi para 8 personas.",
+				"sources": ["https://destinia.com/en/h/h156131-hotel-mercure-dinan-port-le-jerzual"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"dinard-france": {
+		"city": "Dinard",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "A 4-star thalasso hotel with a sport studio for guests aged 16 and over.",
+		"bestReason_es": "Un hotel de talasoterapia de 4 estrellas con sala deportiva para huéspedes de 16 años o más.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Hôtel Emeria Dinard Thalasso & Spa",
+				"stars": 4,
+				"area": "Avenue du Château Hébert",
+				"bookingUrl": "https://sp.booking.com/hotel/fr/thalassa-dinard.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Sport studio (equipment not detailed)"],
+					"extras": ["Thalasso", "Spa"],
+					"access": "Guests aged 16 and over"
+				},
+				"summary_en": "A 4-star thalasso and spa hotel with a sport studio open to guests aged 16 and over. Size, equipment and hours are not published.",
+				"summary_es": "Un hotel de talasoterapia y spa de 4 estrellas con sala deportiva para huéspedes de 16 años o más. No se publican el tamaño, el equipamiento ni el horario.",
+				"sources": ["https://www.hotelgyms.com/hotels/fr/dinard/novotel-thalassa-dinard/57316", "https://www.brittanytourism.com/plan-my-holiday/things-to-do-see/all-activities/emeria-dinard-hotel-thalasso-spa-dinard-en-2077232/"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/246948725.jpg?k=abef92dd96189b228cf169cd0375a9afbfabd80f194b9014f8de3fc32d236a40&o=",
+					"gym": false
+				}
+			},
+			"budget": null
+		}
+	},
+	dubai: {
+		"city": "Dubai",
+		"country": "United Arab Emirates",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 1,000 sqm Technogym studio with a Smith machine, classes, personal training, pool and spa.",
+		"bestReason_es": "Un estudio Technogym de 1.000 m2 con máquina Smith, clases, entrenamiento personal, piscina y spa.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Fairmont Dubai",
+				"stars": 5,
+				"area": "Business Bay",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": 1e3,
+					"hours": null,
+					"equipment": [
+						"Technogym",
+						"Smith machine",
+						"Isolation leg machines",
+						"Barbell plates up to 120 kg",
+						"Dumbbells up to 20 kg"
+					],
+					"extras": [
+						"Kickboxing and spin classes",
+						"Personal training",
+						"Pool",
+						"Spa"
+					],
+					"access": null
+				},
+				"summary_en": "A 1,000 sqm studio with Technogym equipment, a Smith machine, plates up to 120 kg and dumbbells up to 20 kg. Offers kickboxing and spin classes and personal training.",
+				"summary_es": "Un estudio de 1.000 m2 con equipos Technogym, máquina Smith, discos de hasta 120 kg y mancuernas de hasta 20 kg. Ofrece clases de kickboxing y spinning y entrenamiento personal.",
+				"sources": ["https://barbellsabroad.com/hotel-gyms/hotel-gyms-dubai/"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Radisson Blu Hotel, Dubai Media City",
+				"stars": 4,
+				"area": "Dubai Media City",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Smith machine",
+						"Dumbbells and weight plates",
+						"Multi-station cardio"
+					],
+					"extras": ["Yoga and Zumba classes", "Mobility space"],
+					"access": null
+				},
+				"summary_en": "A Smith machine, dumbbells, plates and yoga and Zumba classes. One review calls the gym a little dated and cramped.",
+				"summary_es": "Máquina Smith, mancuernas, discos y clases de yoga y Zumba. Una reseña describe el gimnasio como algo anticuado y estrecho.",
+				"sources": ["https://barbellsabroad.com/hotel-gyms/hotel-gyms-dubai/"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"dubrovnik-croatia": {
+		"city": "Dubrovnik",
+		"country": "Croatia",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Only tier confirmed; a seven-station gym with a fitness coach and indoor pool.",
+		"bestReason_es": "Única categoría confirmada; gimnasio de siete estaciones con entrenador y piscina cubierta.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hotel Excelsior Dubrovnik",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Seven-station gym"],
+					"extras": ["Fitness coach", "Indoor pool"],
+					"access": "Not stated"
+				},
+				"summary_en": "A seven-station gym with a fitness coach who gives advice, and an indoor pool. Size and hours are not published.",
+				"summary_es": "Gimnasio de siete estaciones con un entrenador que asesora, y piscina cubierta. No se publican el tamaño ni el horario.",
+				"sources": ["https://www.tripexpert.com/dubrovnik/hotels/hotel-excelsior-dubrovnik/fitness-center"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"dunkerque-france": {
+		"city": "Dunkerque",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "A 4-star hotel with a gym listed, a 5-minute walk from the station.",
+		"bestReason_es": "Un hotel de 4 estrellas con gimnasio indicado, a 5 minutos a pie de la estación.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Mercure Dunkerque Centre Gare",
+				"stars": 4,
+				"area": "Centre (Rue Florence Arthaud, by the station)",
+				"bookingUrl": "https://sp.booking.com/hotel/fr/mercure-dunkerque-centre-gare.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Gym (equipment not detailed)"],
+					"extras": [],
+					"access": "For guests"
+				},
+				"summary_en": "A 4-star hotel with a gym listed among its amenities, about 5 minutes on foot from Dunkerque station. No details on size, equipment or hours.",
+				"summary_es": "Un hotel de 4 estrellas con gimnasio indicado entre sus servicios, a unos 5 minutos a pie de la estación de Dunkerque. Sin datos de tamaño, equipamiento ni horario.",
+				"sources": ["https://www.expedia.com.my/Dunkirk-Hotels-Mercure-Dunkerque-Centre-Gare.h87548666.Hotel-Information"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/934250856.jpg?k=518eddd7eccc300a551a591485ffd861bf8ce88f4478c3d18163118187d12cd7&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"fortaleza-brazil": {
+		"city": "Fortaleza",
+		"country": "Brazil",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 5-star hotel with a gym, pool, sauna and spa, the only confirmed 5-star gym found in Fortaleza.",
+		"bestReason_es": "Hotel de 5 estrellas con gimnasio, piscina, sauna y spa, el único gimnasio de 5 estrellas confirmado en Fortaleza.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Vila Galé Fortaleza",
+				"stars": 5,
+				"area": "Praia do Futuro",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Swimming pool",
+						"Sauna",
+						"Spa"
+					],
+					"access": "Fitness centre listed among hotel amenities"
+				},
+				"summary_en": "A 5-star hotel in Praia do Futuro with a fitness centre, pool, sauna and spa. HotelGyms rates its gym as Poor and gives no size or equipment.",
+				"summary_es": "Hotel de 5 estrellas en Praia do Futuro con gimnasio, piscina, sauna y spa. HotelGyms valora su gimnasio como pobre y no indica tamaño ni equipamiento.",
+				"sources": ["https://www.hotelgyms.com/hotels/br/fortaleza/vila-gale-fortaleza/11886"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"foz-do-iguacu-brazil": {
+		"city": "Foz do Iguaçu",
+		"country": "Brazil",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 5-star resort with a fitness centre and an Okay GymFactor rating on HotelGyms.",
+		"bestReason_es": "Resort de 5 estrellas con gimnasio y valoración GymFactor aceptable en HotelGyms.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Bourbon Cataratas do Iguaçu Resort",
+				"stars": 5,
+				"area": "Avenida das Cataratas (km 2.5)",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Day spa with massage and sauna (extra charge)"],
+					"access": "Fitness centre listed among resort amenities"
+				},
+				"summary_en": "A 5-star resort with a fitness centre, rated Okay by HotelGyms. Spa and sauna are available for an extra charge; size and equipment are not published.",
+				"summary_es": "Resort de 5 estrellas con gimnasio, valorado como aceptable por HotelGyms. El spa y la sauna se pagan aparte; no constan tamaño ni equipamiento.",
+				"sources": ["https://www.hotelgyms.com/hotels/br/foz-do-iguacu/bourbon-cataratas-do-iguacu-resort/242649"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"fredericton-canada": {
+		"city": "Fredericton",
+		"country": "Canada",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "A 24-hour gym with a steam room and both indoor and outdoor pools.",
+		"bestReason_es": "Gimnasio abierto 24 horas con sauna de vapor y piscinas interior y exterior.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Delta Hotels by Marriott Fredericton",
+				"stars": null,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": [
+						"Steam room",
+						"Indoor pool",
+						"Outdoor pool"
+					],
+					"access": null
+				},
+				"summary_en": "A 24-hour gym with a steam room, plus an indoor and an outdoor pool. No equipment details found.",
+				"summary_es": "Gimnasio abierto 24 horas con sauna de vapor, además de piscina interior y exterior. No se encontraron datos del equipamiento.",
+				"sources": ["https://www.wotif.com/Evansdale-Hotels-Delta-Hotels-By-Marriott-Fredericton.h25236.Hotel-Information"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"gaborone-botswana": {
+		"city": "Gaborone",
+		"country": "Botswana",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "The only Gaborone hotel described with a 24-hour gym.",
+		"bestReason_es": "El único hotel de Gaborone descrito con gimnasio de 24 horas.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Avani Gaborone Resort & Casino",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": [],
+					"access": "Gym at the resort"
+				},
+				"summary_en": "Described as having a 24-hour gym. No details on size or equipment could be confirmed.",
+				"summary_es": "Descrito con gimnasio de 24 horas. No se pudo confirmar el tamaño ni el equipamiento.",
+				"sources": ["https://www.orbitz.com/Gaborone-Hotels-Hotels-With-Fitness-Center.0-0-d1284-tHotelswithFitnessCenter.Travel-Guide-Filter-Hotels"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": {
+				"hotel": "Cresta President",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Weights",
+						"Exercise bike",
+						"Treadmill"
+					],
+					"extras": [],
+					"access": "Gym at the hotel"
+				},
+				"summary_en": "A guest describes a small gym with weights, a bike and a treadmill. Hours are not published.",
+				"summary_es": "Un huésped describe un gimnasio pequeño con pesas, una bicicleta y una cinta de correr. No se publica el horario.",
+				"sources": ["https://www.orbitz.com/Gaborone-Hotels-Hotels-With-Fitness-Center.0-0-d1284-tHotelswithFitnessCenter.Travel-Guide-Filter-Hotels"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"geelong-australia": {
+		"city": "Geelong",
+		"country": "Australia",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "24-hour fitness centre with an indoor pool.",
+		"bestReason_es": "Gimnasio abierto 24 horas con piscina cubierta.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Crowne Plaza Geelong by IHG",
+				"stars": null,
+				"area": "Waterfront Precinct",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Fitness centre"],
+					"extras": ["Indoor pool"],
+					"access": "Free for guests"
+				},
+				"summary_en": "A 24-hour fitness centre open to all guests, with an indoor pool. Expedia lists it at 4.5 stars; no equipment details were published.",
+				"summary_es": "Un centro de fitness abierto 24 horas para todos los huéspedes, con piscina cubierta. Expedia lo valora con 4,5 estrellas; no hay detalles del equipamiento.",
+				"sources": ["https://www.expedia.co.uk/Geelong-Hotels-Hotel-With-Gym.0-0-d6123247-thotelwithgym.Travel-Guide-Filter-Hotels"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Quest Geelong",
+				"stars": 4,
+				"area": "Waterfront Precinct",
+				"bookingUrl": "https://www.booking.com/hotel/au/quest-geelong.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Fitness centre"],
+					"extras": [],
+					"access": "Free for guests"
+				},
+				"summary_en": "A 24-hour fitness centre at a 4-star aparthotel. Equipment was not described.",
+				"summary_es": "Un centro de fitness abierto 24 horas en un aparthotel de 4 estrellas. No se describe el equipamiento.",
+				"sources": ["https://www.expedia.co.uk/Geelong-Hotels-Hotel-With-Gym.0-0-d6123247-thotelwithgym.Travel-Guide-Filter-Hotels", "https://www.travelmyth.ie/Geelong-Victoria/Hotels/gym"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/710543937.jpg?k=989cb58f741c2dd79dd05e304b1ef09f2bbb6d0e73760b7339d241515d645a11&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"ghent-belgium": {
+		"city": "Ghent",
+		"country": "Belgium",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Only gym confirmed with 24-hour access, free for guests, and strength equipment.",
+		"bestReason_es": "El único gimnasio confirmado con acceso 24 horas, gratis para huéspedes y con equipo de fuerza.",
+		"luxuryNote": "No 5-star hotel with a gym confirmed in the city",
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Ghent Marriott Hotel",
+				"stars": 4,
+				"area": "Centre (Drabstraat)",
+				"bookingUrl": "https://www.booking.com/hotel/be/ghent-marriott.html",
+				"website": "https://www.marriott.com/nl/hotels/gnemc-ghent-marriott-hotel/",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Strength-training equipment"],
+					"extras": [],
+					"access": "Free for guests"
+				},
+				"summary_en": "Modern fitness center open at any time of day or night, free for guests, with strength-training equipment. Size and equipment list not published.",
+				"summary_es": "Gimnasio moderno abierto a cualquier hora, gratis para huéspedes, con equipo de fuerza. No se publican tamaño ni lista de equipos.",
+				"sources": ["https://www.marriott.com/nl/hotels/gnemc-ghent-marriott-hotel/"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/612973939.jpg?k=68ce827edf6ddc3da905a374a2c271b44911eac8a6e1c5312ec2339a332da782&o=",
+					"gym": false
+				}
+			},
+			"budget": null
+		}
+	},
+	"gold-coast-australia": {
+		"city": "Gold Coast",
+		"country": "Australia",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Spacious Technogym gym with capped membership, paid classes and a spa with plunge pool.",
+		"bestReason_es": "Gimnasio amplio con equipos Technogym, aforo limitado, clases de pago y spa con piscina de inmersión.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Palazzo Versace, Gold Coast",
+				"stars": 5,
+				"area": "Main Beach",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Technogym equipment"],
+					"extras": ["Classes at $20 (yoga, Pilates, boxing, circuit training, metabolic conditioning)", "Aurora Spa with plunge pool"],
+					"access": "Membership numbers are capped"
+				},
+				"summary_en": "A spacious gym with Technogym equipment, timber floors and glass doors onto a private garden. Membership is capped and classes cost $20.",
+				"summary_es": "Gimnasio amplio con equipos Technogym, suelos de madera y puertas de cristal a un jardín privado. El aforo es limitado y las clases cuestan 20 dólares.",
+				"sources": ["https://qantas.com/travelinsider/en/experiences/stay-fit-and-relax/the-best-hotel-gyms-in-australia.html"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"graz-austria": {
+		"city": "Graz",
+		"country": "Austria",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Technogym gym on the top floor next to a free rooftop sauna.",
+		"bestReason_es": "Gimnasio Technogym en la última planta junto a una sauna gratuita en la azotea.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Schlossberghotel",
+				"stars": 4,
+				"area": "Schlossberg, old town",
+				"bookingUrl": "https://www.booking.com/hotel/at/schlossberg.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Rooftop pool (seasonal)",
+						"Sauna",
+						"Steam room"
+					],
+					"access": "Free gym access for guests"
+				},
+				"summary_en": "A fitness centre with free guest access, a sauna and a seasonal rooftop pool. No size, equipment or hours are published.",
+				"summary_es": "Un centro de fitness de acceso gratuito para huéspedes, con sauna y piscina de azotea de temporada. No hay datos de tamaño, equipamiento ni horario.",
+				"sources": ["https://www.myboutiquehotel.com/en/boutique-hotels-graz/schlossberghotel.html", "https://ca.hotels.com/de1633766-am2/gym-hotels-graz-austria"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/818245241.jpg?k=1ef8f203adcacabf66fd333da1d82ca0fede06a7704b4df07bfa3e6864fa6847&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Hotel Weitzer Graz",
+				"stars": 4,
+				"area": "Centre of Graz",
+				"bookingUrl": "https://www.booking.com/hotel/at/dasweitzer.html",
+				"website": "https://hotelweitzer.com/en/the-hotel/rooftopsauna-gym",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Technogym equipment",
+						"Dumbbells",
+						"Treadmill",
+						"Training machines"
+					],
+					"extras": ["Free Finnish rooftop sauna with panoramic view"],
+					"access": "Gym on the 5th floor, in the attic"
+				},
+				"summary_en": "A fitness room on the top floor with Technogym equipment, dumbbells and a treadmill, beside a free Finnish sauna with a rooftop view. Size and hours are not stated.",
+				"summary_es": "Una sala de fitness en la última planta con equipamiento Technogym, mancuernas y cinta de correr, junto a una sauna finlandesa gratuita con vistas a los tejados. No se indican tamaño ni horario.",
+				"sources": ["https://hotelweitzer.com/en/the-hotel/rooftopsauna-gym", "https://ca.hotels.com/de1633766-am2/gym-hotels-graz-austria"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/316076855.jpg?k=b3efcd6a36c8abb17da1f65fc183e0f8a220eaa9d03a09cdb259bcd295498c26&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"grenoble-france": {
+		"city": "Grenoble",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Fitness machines in a wellness room with a steam bath.",
+		"bestReason_es": "Máquinas de fitness en una sala de bienestar con baño de vapor.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Park Hôtel Grenoble - MGallery",
+				"stars": 4,
+				"area": "Place Paul Mistral",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness machines"],
+					"extras": ["Steam bath", "Experience shower"],
+					"access": "For guests"
+				},
+				"summary_en": "Fitness machines in a wellness room that also has a steam bath and an experience shower. HotelGyms rates the gym as poor, and size and hours are not published.",
+				"summary_es": "Máquinas de fitness en una sala de bienestar que también tiene baño de vapor y ducha de sensaciones. HotelGyms valora el gimnasio como pobre y no se publican el tamaño ni el horario.",
+				"sources": ["https://www.hotelgyms.com/hotels/fr/grenoble/park-hotel-grenoble-mgallery/235594", "https://www.thehotelguru.com/en-gb/hotel/park-hotel-grenoble-grenoble"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": {
+				"hotel": "Hipark by Adagio Grenoble",
+				"stars": 3,
+				"area": "Rue Auguste Genin",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness room (equipment not detailed)"],
+					"extras": [],
+					"access": "For guests"
+				},
+				"summary_en": "An aparthotel with a fitness room. HotelGyms rates the gym as poor and gives no size, equipment or hours.",
+				"summary_es": "Un aparthotel con sala de fitness. HotelGyms valora el gimnasio como pobre y no indica tamaño, equipamiento ni horario.",
+				"sources": ["https://www.hotelgyms.com/hotels/fr/grenoble/hipark-by-adagio-grenoble/236314"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"guangzhou-china": {
+		"city": "Guangzhou",
+		"country": "China",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "24-hour access for guests, free weights and cardio, with sauna, steam room and personal training.",
+		"bestReason_es": "Acceso 24 horas para huéspedes, peso libre y cardio, con sauna, baño de vapor y entrenamiento personal.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Langham Place, Guangzhou",
+				"stars": 5,
+				"area": "Haizhu District",
+				"bookingUrl": "https://www.booking.com/hotel/cn/langhamplacehotel-guangzhou.html",
+				"website": "https://LanghamHotels.com/en/the-langham/guangzhou/wellness/fitness-and-wellness/",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h for in-house guests; 7am to 10pm for outside guests",
+					"equipment": ["Cardio machines with audiovisual systems", "Free weights"],
+					"extras": [
+						"Steam room and sauna",
+						"Personal training (30 min RMB 350, 60 min RMB 480)",
+						"Indoor pool"
+					],
+					"access": "In-house guests"
+				},
+				"summary_en": "Fitness studio on the 4th floor with cardio machines and free weights, open 24 hours to in-house guests. Changing rooms have a sauna and steam room. Size is not published.",
+				"summary_es": "Estudio de fitness en la planta 4 con máquinas de cardio y peso libre, abierto 24 horas para huéspedes. Los vestuarios tienen sauna y baño de vapor. No se publica el tamaño.",
+				"sources": [
+					"https://LanghamHotels.com/en/the-langham/guangzhou/wellness/fitness-and-wellness/",
+					"https://uk.hotels.com/de189799-am2/gym-hotels-guangzhou-china",
+					"https://www.hotels.com/ho456442"
+				],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/52529691.jpg?k=7003e18d59ddb2efb9094ec69e32451b981ec0d85020166c4178585fb349d223&o=",
+					"gym": true
+				}
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"guilin-china": {
+		"city": "Guilin",
+		"country": "China",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Cardio and strength equipment plus an outdoor pool and water massage pool.",
+		"bestReason_es": "Equipos de cardio y fuerza, además de piscina exterior y piscina de hidromasaje.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Sheraton Guilin Hotel",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/cn/sheraton-guilin.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Cardio equipment", "Strength training equipment"],
+					"extras": ["Outdoor pool", "Water massage pool"],
+					"access": null
+				},
+				"summary_en": "Fitness centre with cardio and strength equipment, next to an outdoor pool and a water massage pool. Size and hours are not published.",
+				"summary_es": "Centro de fitness con equipos de cardio y fuerza, junto a una piscina exterior y otra de hidromasaje. No se publican tamaño ni horario.",
+				"sources": ["https://lotustours.net/french/hotel/GX-GL-SGH.html", "https://uk.hotels.com/de229835-am2/gym-hotels-guilin-china"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/891636079.jpg?k=57495a9fd92500bc90389632cccf6f919a9d412085d728df603663f544f4e6b6&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Four Points By Sheraton Guilin, Lingui",
+				"stars": 4,
+				"area": "Lingui",
+				"bookingUrl": "https://www.booking.com/hotel/cn/gui-lin-lin-gui-hua-yang-nian-fu-peng-xi-lai-deng-jiu-dian.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Listed among Guilin hotels with a gym. No size, hours or equipment details found.",
+				"summary_es": "Aparece entre los hoteles de Guilin con gimnasio. No se encontraron tamaño, horario ni equipamiento.",
+				"sources": ["https://uk.hotels.com/de229835-am2/gym-hotels-guilin-china"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/725564804.jpg?k=b4657b3db55785b1f9a97131551e3437cb2acb63a640b4b92cfd6033f415588e&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"halifax-canada": {
+		"city": "Halifax",
+		"country": "Canada",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Only a fitness centre and an indoor heated pool could be confirmed.",
+		"bestReason_es": "Solo se pudo confirmar un gimnasio y una piscina cubierta climatizada.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "The Westin Nova Scotian",
+				"stars": null,
+				"area": "Downtown",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Indoor heated pool"],
+					"access": null
+				},
+				"summary_en": "The hotel lists a fitness centre and an indoor heated pool. No size, equipment or hours found.",
+				"summary_es": "El hotel indica un gimnasio y una piscina cubierta climatizada. No se encontraron tamaño, equipamiento ni horario.",
+				"sources": ["https://www.hotelgyms.com/hotels/ca/halifax/westin-nova-scotian/76429"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"hamilton-canada": {
+		"city": "Hamilton",
+		"country": "Canada",
+		"checked": "2026-11-02",
+		"best": "budget",
+		"bestReason_en": "The only Hamilton hotel found with a confirmed 24-hour fitness centre and indoor pool.",
+		"bestReason_es": "El único hotel de Hamilton encontrado con centro de fitness 24 horas confirmado y piscina interior.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": null,
+			"budget": {
+				"hotel": "Sheraton Hamilton Hotel",
+				"stars": 3,
+				"area": "Downtown, King Street West",
+				"bookingUrl": "https://www.booking.com/hotel/ca/s-hamilton.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Fitness centre"],
+					"extras": ["Indoor pool"],
+					"access": "Guests"
+				},
+				"summary_en": "A 24-hour fitness centre and an indoor pool, next to the Art Gallery of Hamilton. No size or equipment details found.",
+				"summary_es": "Un centro de fitness abierto 24 horas y piscina interior, junto a la Art Gallery of Hamilton. No se encontraron tamaño ni detalles del equipamiento.",
+				"sources": ["https://hotelscombined.com.sg/Hotel/Sheraton_Hamilton_Hotel.htm", "https://ca.hotels.com/de1633548-am2/gym-hotels-hamilton-ontario"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/658823374.jpg?k=145192cd8ef516935195f4535258d91632c8f50d4cf9eb8fd5a3057744cbfcd6&o=",
+					"gym": false
+				}
+			}
+		}
+	},
+	"hangzhou-china": {
+		"city": "Hangzhou",
+		"country": "China",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Open 24 hours with Power Plate and TRX, plus an indoor heated pool and sauna.",
+		"bestReason_es": "Abierto 24 horas con Power Plate y TRX, además de piscina cubierta climatizada y sauna.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Grand Hyatt Hangzhou",
+				"stars": 5,
+				"area": "West Lake",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Cardio machines",
+						"Strength training machines",
+						"Power Plate platforms",
+						"TRX trainers"
+					],
+					"extras": [
+						"Indoor heated pool",
+						"Sauna",
+						"Massage"
+					],
+					"access": null
+				},
+				"summary_en": "Gym open 24 hours with cardio and strength machines, Power Plate platforms and TRX trainers. The hotel has a year-round indoor heated pool and a sauna.",
+				"summary_es": "Gimnasio abierto 24 horas con máquinas de cardio y fuerza, plataformas Power Plate y TRX. El hotel tiene piscina cubierta climatizada todo el año y sauna.",
+				"sources": ["https://www.hotelgyms.com/hotels/cn/hangzhou/grand-hyatt-hangzhou/399800"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"harbin-china": {
+		"city": "Harbin",
+		"country": "China",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A well-equipped fitness centre with an Excellent Gym label on HotelGyms, plus pool, sauna and steam bath.",
+		"bestReason_es": "Gimnasio bien equipado con la etiqueta Excelente en HotelGyms, además de piscina, sauna y baño de vapor.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Shangri-La Hotel, Harbin",
+				"stars": null,
+				"area": "Daoli",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Outdoor pool",
+						"Sauna",
+						"Steam bath",
+						"Massage"
+					],
+					"access": null
+				},
+				"summary_en": "Described as a well-equipped fitness centre and labelled Excellent Gym on HotelGyms. The health club has an outdoor pool, sauna and steam bath. Equipment details are not published.",
+				"summary_es": "Descrito como gimnasio bien equipado y con la etiqueta Excelente en HotelGyms. El club de salud tiene piscina exterior, sauna y baño de vapor. No se publican detalles del equipamiento.",
+				"sources": ["https://www.hotelgyms.com/hotels/cn/harbin/shangri-la-hotel-harbin/245689"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"hasselt-belgium": {
+		"city": "Hasselt",
+		"country": "Belgium",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Mini-gym plus free entrance to an associated health and leisure club.",
+		"bestReason_es": "Mini gimnasio y entrada gratuita a un club de salud y ocio asociado.",
+		"luxuryNote": "No 5-star hotel with a gym confirmed in the city",
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Holiday Inn Hasselt",
+				"stars": 4,
+				"area": "City centre",
+				"bookingUrl": "https://www.booking.com/hotel/be/hihasselt.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Dumbbells up to about 7 kg"],
+					"extras": ["Sauna", "Health and leisure club access"],
+					"access": "Free for guests"
+				},
+				"summary_en": "Small mini-gym with dumbbells up to about 7 kg and a sauna, plus free entrance to a health and leisure club. One guest review reports the sauna out of order.",
+				"summary_es": "Mini gimnasio con mancuernas de hasta unos 7 kg y sauna, además de entrada gratuita a un club de salud y ocio. Una reseña indica que la sauna estaba fuera de servicio.",
+				"sources": ["https://www.hotelgyms.com/hotels/be/hasselt/holiday-inn-hasselt/20125", "https://www.expedia.com/Hasselt-Hoteles-Holiday-Inn-Hasselt.h17212.Informacion-Hotel"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/363836357.jpg?k=32c6525736cfed7350b9b3133a16900573c07f0f23639440735cd90bb85fb1b0&o=",
+					"gym": false
+				}
+			},
+			"budget": null
+		}
+	},
+	"helsinki-finland": {
+		"city": "Helsinki",
+		"country": "Finland",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "A health club of over 2,000 m2 attached to the hotel, far larger than any hotel fitness room.",
+		"bestReason_es": "Un club de salud de más de 2.000 m2 junto al hotel, mucho mayor que cualquier sala de fitness de hotel.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hotel Kämp",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": null,
+				"website": "https://hotelkamp.com/",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h for hotel guests",
+					"equipment": ["Technogym equipment"],
+					"extras": ["Kämp Spa", "Sauna"],
+					"access": "Guests use their room key; minimum age 16"
+				},
+				"summary_en": "Technogym equipment in the Kämp Spa Gym, open around the clock to hotel guests. Sauna and spa on site.",
+				"summary_es": "Equipamiento Technogym en el gimnasio del Kämp Spa, abierto las 24 horas para huéspedes. Sauna y spa en el hotel.",
+				"sources": ["https://hotelkamp.com/en/kamp-wellness/gym-and-membership"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Crowne Plaza Helsinki - Hesperia",
+				"stars": 4,
+				"area": "Töölö (Mannerheimintie)",
+				"bookingUrl": null,
+				"website": "https://finland.ihg.com/crowne-plaza-helsinki-hesperia/en",
+				"gym": {
+					"sizeM2": 2e3,
+					"hours": null,
+					"equipment": [
+						"Star Trac",
+						"Techno Gym",
+						"Life Fitness",
+						"Gym80"
+					],
+					"extras": [
+						"Renovated indoor pool",
+						"Finnish sauna",
+						"Free group classes for guests (subject to availability)",
+						"Fitness testing"
+					],
+					"access": "Forever Töölö Fitness Club, gym and pool included in room rate"
+				},
+				"summary_en": "Forever Töölö Fitness Club, over 2,000 m2 on the ground floor, with Star Trac, Techno Gym, Life Fitness and Gym80 equipment. Pool, sauna and group classes are included for guests.",
+				"summary_es": "Forever Töölö Fitness Club, de más de 2.000 m2 en la planta baja, con equipos Star Trac, Techno Gym, Life Fitness y Gym80. Piscina, sauna y clases en grupo incluidas para huéspedes.",
+				"sources": ["https://finland.ihg.com/en/hotels/crowne-plaza-helsinki-hesperia/wellness", "https://visitfinland.com/en/product/a4bccd79-73e2-4ec6-9209-c4e2d0f51990/crowne-plaza-helsinki-hesperia"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"hobart-australia": {
+		"city": "Hobart",
+		"country": "Australia",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "24-hour fitness centre at a 5-star hotel.",
+		"bestReason_es": "Centro de fitness abierto 24 horas en un hotel de 5 estrellas.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "The Tasman, a Luxury Collection Hotel, Hobart",
+				"stars": 5,
+				"area": "Hobart waterfront",
+				"bookingUrl": "https://www.booking.com/hotel/au/the-tasman-a-luxury-collection-hobart.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Fitness centre"],
+					"extras": [],
+					"access": "Free for guests"
+				},
+				"summary_en": "A 24-hour accessible fitness centre at a 5-star hotel. Equipment was not described.",
+				"summary_es": "Un centro de fitness accesible abierto 24 horas en un hotel de 5 estrellas. No se describe el equipamiento.",
+				"sources": ["https://www.expedia.co.uk/Hobart-Hotels-Hotel-With-Gym.0-0-d6052485-thotelwithgym.Travel-Guide-Filter-Hotels"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/430863869.jpg?k=e6cbb7aff35121c3a3e47c7b9d6eab00eac28d0adcdfe4cb047b8224ce9904bd&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Vibe Hotel Hobart",
+				"stars": 4,
+				"area": "Hobart",
+				"bookingUrl": "https://www.booking.com/hotel/au/vibe-hobart.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Modern gym"],
+					"extras": ["Indoor pool", "Outdoor pool"],
+					"access": "Free for guests"
+				},
+				"summary_en": "A modern gym with both an indoor and an outdoor pool. Size, hours and equipment were not published.",
+				"summary_es": "Un gimnasio moderno con piscina cubierta y exterior. No se publican tamaño, horario ni equipamiento.",
+				"sources": ["https://www.expedia.co.uk/Hobart-Hotels-Hotel-With-Gym.0-0-d6052485-thotelwithgym.Travel-Guide-Filter-Hotels"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/434528189.jpg?k=f10c2591f3677f171e346a65d8f564c8bfe69e24a414c5a3c9cfa63166d1586c&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"hurghada-egypt": {
+		"city": "Hurghada",
+		"country": "Egypt",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "24-hour gym with Life Fitness equipment and yoga at a 5-star resort.",
+		"bestReason_es": "Gimnasio abierto las 24 horas con equipos Life Fitness y yoga en un resort de 5 estrellas.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "The Oberoi, Sahl Hasheesh",
+				"stars": 5,
+				"area": "Sahl Hasheesh",
+				"bookingUrl": "https://www.booking.com/hotel/eg/the-oberoi-sahl-hasheesh-hurghada.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Life Fitness equipment"],
+					"extras": [
+						"Yoga",
+						"Steam rooms",
+						"Outdoor tennis courts"
+					],
+					"access": null
+				},
+				"summary_en": "Expedia lists 24-hour gym access and tennis courts, and the resort spa describes Life Fitness equipment. Size is not published.",
+				"summary_es": "Expedia indica acceso al gimnasio las 24 horas y pistas de tenis, y el spa del resort menciona equipos Life Fitness. No se publica el tamaño.",
+				"sources": ["https://www.expedia.co.uk/Hurghada-Hotels-Hotel-With-Gym.0-0-d1512-thotelwithgym.Travel-Guide-Filter-Hotels", "https://www.hotelgyms.com/hotels/eg/hurghada/the-oberoi-beach-resort-sahl-hasheesh/326620"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/67592056.jpg?k=1dbfbf8a4ad8ef0d132ac1a8310796aa77852cfe46158d33ecec96d09a66313c&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Sunrise Aqua Joy Resort",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/eg/mirage-new-hawaii-resort-amp-spa.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Travelmyth review summaries praise the well-maintained equipment and staff. Size and hours are not published.",
+				"summary_es": "Los resúmenes de reseñas de Travelmyth elogian el equipamiento bien mantenido y el personal. No se publican tamaño ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Hurghada/Hotels/gym-four_star", "https://www.booking.com/fourstars/city/eg/hurghada.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/235507008.jpg?k=41f1963baf3b95fe28745cf28ab1f471ce10fa78de3ca3f5d12ace0cbf16fe28&o=",
+					"gym": false
+				}
+			},
+			"budget": null
+		}
+	},
+	"hyeres-france": {
+		"city": "Hyères",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "The only Hyères hotel with a gym confirmed in this research; details are limited.",
+		"bestReason_es": "El único hotel de Hyères con gimnasio confirmado en esta investigación; los datos son limitados.",
+		"luxuryNote": "No 5-star hotel with a gym confirmed in the city",
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Mercure Hyères Centre Côte d'Azur",
+				"stars": 4,
+				"area": "Centre (Avenue Ambroise Thomas)",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Swimming pool",
+						"Terrace",
+						"Garden"
+					],
+					"access": null
+				},
+				"summary_en": "A 4-star city-centre hotel that lists a fitness centre. Size, equipment and hours are not published.",
+				"summary_es": "Un hotel de 4 estrellas en el centro que cuenta con centro de fitness. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.hotelgyms.com/hotels/fr/hyeres/mercure-hyeres-centre-cote-dazur/57062"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"innsbruck-austria": {
+		"city": "Innsbruck",
+		"country": "Austria",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "24/7 free gym with dumbbells and a cable tower, linked to a larger gym across the street.",
+		"bestReason_es": "Gimnasio gratuito 24/7 con mancuernas y torre de poleas, conectado con un gimnasio mayor al otro lado de la calle.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "STAGE 12 Hotel by Penz",
+				"stars": 4,
+				"area": "Innsbruck",
+				"bookingUrl": "https://www.booking.com/hotel/at/stage-12.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": ["Spa with two saunas and a steam bath (18+)"],
+					"access": "Free for guests"
+				},
+				"summary_en": "A clean, well-equipped but minimalist gym reportedly open around the clock, with a spa of two saunas and a steam bath. Equipment is not itemised.",
+				"summary_es": "Un gimnasio limpio y bien equipado pero minimalista, abierto según reseñas las 24 horas, con spa de dos saunas y baño de vapor. No se detalla el equipamiento.",
+				"sources": ["https://www.travelmyth.ie/Innsbruck/Hotels/gym", "https://www.expedia.com/Innsbruck-Hotels-Hotels-With-Fitness-Center.0-0-d6051204-tHotelswithFitnessCenter.Travel-Guide-Filter-Hotels"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/131080231.jpg?k=3a7b58d0fb28bfd109acf1ef7df22133aa6a671e438084a450960063687790b1&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "AC Hotel by Marriott Innsbruck",
+				"stars": 4,
+				"area": "Wilten",
+				"bookingUrl": "https://www.booking.com/hotel/at/tc-hotel-austria.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Treadmills",
+						"Exercise bike",
+						"Many dumbbells",
+						"Cable tower"
+					],
+					"extras": ["Sauna", "Steam room"],
+					"access": "Free for guests; linked to a larger gym across the street"
+				},
+				"summary_en": "A modern, clean gym open 24/7 with treadmills, a bike, many dumbbells and a cable tower. Some guests call it small.",
+				"summary_es": "Un gimnasio moderno y limpio abierto 24/7 con cintas de correr, una bicicleta, muchas mancuernas y una torre de poleas. Algunos huéspedes lo consideran pequeño.",
+				"sources": ["https://www.travelmyth.ie/Innsbruck/Hotels/gym", "https://www.expedia.com/Innsbruck-Hotels-Hotels-With-Fitness-Center.0-0-d6051204-tHotelswithFitnessCenter.Travel-Guide-Filter-Hotels"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/626983450.jpg?k=98c00a76ea256ab4138693f24eb99175682eb1113ce3ab8da87bff9beb3b73bf&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"kelowna-canada": {
+		"city": "Kelowna",
+		"country": "Canada",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Top-floor gym with high-end cardio and free weights, plus steam showers and a rooftop pool.",
+		"bestReason_es": "Gimnasio en la planta superior con cardio de gama alta y peso libre, además de duchas de vapor y piscina en la azotea.",
+		"luxuryNote": "No 5-star hotel with a confirmed gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "The Royal Kelowna",
+				"stars": 4,
+				"area": "Downtown (Water Street)",
+				"bookingUrl": null,
+				"website": "https://www.theroyalkelowna.com/",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"High-end cardio equipment",
+						"Free weights",
+						"Steam showers",
+						"Lockers"
+					],
+					"extras": ["Rooftop heated infinity pool", "Rooftop hot tub"],
+					"access": "Guests"
+				},
+				"summary_en": "A top-floor gym with high-end cardio equipment and free weights, steam showers and lockers, next to a rooftop pool.",
+				"summary_es": "Un gimnasio en la planta superior con cardio de gama alta y peso libre, duchas de vapor y taquillas, junto a una piscina en la azotea.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Kelowna-Central-Okanagan/Hotels/gym",
+					"https://www.theroyalkelowna.com/",
+					"https://ca.hotels.com/de1633483-am2/gym-hotels-kelowna-british-columbia",
+					"https://ca.hotels.com/de1633483-st4/four-star-hotels-kelowna-british-columbia"
+				],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Delta Hotels by Marriott Grand Okanagan Resort",
+				"stars": 4,
+				"area": "Downtown, lakefront",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Comprehensive fitness center with modern equipment"],
+					"extras": [
+						"Indoor and outdoor pools",
+						"Hot tubs",
+						"Spa"
+					],
+					"access": "Guests"
+				},
+				"summary_en": "A fitness center with modern equipment, plus indoor and outdoor pools, hot tubs and a spa. No size or hours found.",
+				"summary_es": "Un centro de fitness con equipamiento moderno, además de piscinas interior y exterior, jacuzzis y spa. No se encontraron tamaño ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Kelowna-Central-Okanagan/Hotels/gym", "https://hoteles.com/ho112778/delta-hotels-by-marriott-grand-okanagan-resort-kelowna-canada"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": {
+				"hotel": "Best Western Plus Kelowna Hotel & Suites",
+				"stars": 3,
+				"area": "Dilworth Mountain",
+				"bookingUrl": null,
+				"website": "https://www.bestwestern.com/it_IT/book/hotels-in-kelowna/best-western-plus-kelowna-hotel-suites/propertyCode.62001.html",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Treadmills",
+						"Elliptical",
+						"Recumbent bike",
+						"Multi-trainer pulley",
+						"Free weights",
+						"Exercise balls"
+					],
+					"extras": ["Heated indoor mineral pool", "Two outdoor hot tubs"],
+					"access": "Guests"
+				},
+				"summary_en": "A gym with treadmills, elliptical, recumbent bike, a pulley trainer and free weights, plus a heated indoor mineral pool.",
+				"summary_es": "Un gimnasio con cintas, elíptica, bicicleta reclinada, polea multifunción y peso libre, además de una piscina mineral interior climatizada.",
+				"sources": ["https://www.travelmyth.co.uk/Kelowna-Central-Okanagan/Hotels/gym", "https://ca.hotels.com/de1633483-st3/three-star-hotels-kelowna-british-columbia"],
+				"confidence": "medium",
+				"photo": null
+			}
+		}
+	},
+	"kingston-canada": {
+		"city": "Kingston",
+		"country": "Canada",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Open 24 hours, with an indoor rooftop pool in the same hotel.",
+		"bestReason_es": "Abierto 24 horas, con piscina cubierta en la azotea del mismo hotel.",
+		"luxuryNote": "No 5-star hotel in the city (the 4-star listing shows no 5-star hotels)",
+		"tiers": {
+			"luxury": {
+				"hotel": "Delta Hotels by Marriott Kingston Waterfront",
+				"stars": 4,
+				"area": "Downtown waterfront",
+				"bookingUrl": "https://www.booking.com/hotel/ca/radisson-kingston-harbourfront.html",
+				"website": "https://www.marriott.com/en-us/hotels/ygkdk-delta-hotels-kingston-waterfront/overview/",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": ["Indoor rooftop pool", "Whirlpool"],
+					"access": "Complimentary for guests"
+				},
+				"summary_en": "A 24-hour fitness centre, free for guests, with an indoor rooftop pool and whirlpool. Size and equipment are not published.",
+				"summary_es": "Gimnasio abierto 24 horas y gratuito para huéspedes, con piscina cubierta en la azotea y jacuzzi. No publican el tamaño ni el equipamiento.",
+				"sources": [
+					"https://www.marriott.com/en-us/hotels/ygkdk-delta-hotels-kingston-waterfront/overview/",
+					"https://canadianaffair.com/destinations/canada/ontario/kingston/hotels/delta-hotels-by-marriott-kingston-waterfront",
+					"https://www.expedia.com/es/Kingston-Hoteles-Delta-Hotels-By-Marriott-Kingston-Waterfront.h18430.Informacion-Hotel"
+				],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/627988068.jpg?k=3c838bcfe5f9fdd1cf12adf223bab5a7f6f1802d4c0b1d3985fbe8460f946852&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Residence Inn by Marriott Kingston Water's Edge",
+				"stars": 4,
+				"area": "Waterfront",
+				"bookingUrl": "https://www.booking.com/hotel/ca/residence-inn-kingston-water-s-edge.html",
+				"website": "https://www.marriott.com/ygkri",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Well-equipped fitness center (details not listed)"],
+					"extras": ["Indoor pool", "Whirlpool"],
+					"access": "Complimentary for guests"
+				},
+				"summary_en": "A complimentary fitness center described as well equipped, plus an indoor pool and whirlpool. Size, equipment list and hours are not published.",
+				"summary_es": "Gimnasio gratuito descrito como bien equipado, con piscina cubierta y jacuzzi. No publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.marriott.com/ygkri", "https://ae.trip.com/hotels/star4/city/ca/kingston-1.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/682116276.jpg?k=21a8fee9c49db9528f55d7b47fcb2bc2ef8027f2d3ae34118ad1088d33d058b1&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"kitzbuhel-austria": {
+		"city": "Kitzbühel",
+		"country": "Austria",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 288 m2 gym open around the clock with a supervised training programme.",
+		"bestReason_es": "Un gimnasio de 288 m2 abierto todo el día con programa de entrenamiento supervisado.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Grand Tirolia Kitzbühel",
+				"stars": 5,
+				"area": "Kitzbühel",
+				"bookingUrl": "https://www.booking.com/hotel/at/grand-tirolia-kitzbuhel.html",
+				"website": "https://grand-tirolia-kitzbuehel.hommage-hotels.com/",
+				"gym": {
+					"sizeM2": 288,
+					"hours": "24h",
+					"equipment": ["Equipment not itemised"],
+					"extras": [
+						"Three yoga rooms",
+						"Weekly supervised training and functional exercise programme",
+						"Spa"
+					],
+					"access": "Grand Alps Fitness"
+				},
+				"summary_en": "Grand Alps Fitness covers 288 m2 and is open every day around the clock. It adds three yoga rooms and a weekly supervised training programme. Equipment brands are not listed.",
+				"summary_es": "Grand Alps Fitness ocupa 288 m2 y abre todos los días las 24 horas. Incluye tres salas de yoga y un programa semanal de entrenamiento supervisado. No se indican marcas de equipamiento.",
+				"sources": ["https://grand-tirolia-kitzbuehel.hommage-hotels.com/en/body-mind/grand-alps-fitness/", "https://ph.hotels.com/de1811916-am2/gym-hotels-kitzbuehel-and-vicinity-austria"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/741257430.jpg?k=3d4eca5e37565aafd75d4c4bcfe3969a3c452ee7e1f462af7b7cbf53c6cca434&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Hotel Kaiserhof Kitzbühel",
+				"stars": 4,
+				"area": "Kitzbühel",
+				"bookingUrl": "https://www.booking.com/hotel/at/best-western-premier-kaiserhof-kitzbuhel.html",
+				"website": "https://kitz.hotel-kaiserhof.at/en/hotel/spa",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Cardio, strength and weight training equipment"],
+					"extras": [
+						"Panorama indoor pool",
+						"Steam room",
+						"Saunas"
+					],
+					"access": "Fitness centre with Kitzbüheler Horn views"
+				},
+				"summary_en": "A fitness centre with cardio, strength and weight equipment and mountain views, next to a panorama indoor pool, steam room and saunas. Size and hours are not stated.",
+				"summary_es": "Un centro de fitness con equipos de cardio, fuerza y pesas y vistas a la montaña, junto a piscina cubierta panorámica, baño de vapor y saunas. No se indican tamaño ni horario.",
+				"sources": ["https://kitz.hotel-kaiserhof.at/en/hotel/spa", "https://www.booking.com/hotel/at/best-western-premier-kaiserhof-kitzbuhel.en-gb.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/827232516.jpg?k=0404b15802284e5f09dfaa16592a5ad9adacf731c3b66e04988790d8e95b7fbc&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"klagenfurt-austria": {
+		"city": "Klagenfurt",
+		"country": "Austria",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Only Klagenfurt hotel with a confirmed training area of 142 m2, Precor equipment and daily guest classes.",
+		"bestReason_es": "El único hotel de Klagenfurt con una zona de entrenamiento confirmada de 142 m2, equipos Precor y clases diarias para huéspedes.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Das Seepark - Move & Relax",
+				"stars": 4,
+				"area": "Lendkanal (Universitätsstraße)",
+				"bookingUrl": "https://www.booking.com/hotel/at/seepark-congress-spa-klagenfurt-am-worthersee.html",
+				"website": "https://www.dasseepark.at/en",
+				"gym": {
+					"sizeM2": 142,
+					"hours": null,
+					"equipment": [
+						"Precor equipment",
+						"Queenax",
+						"Dumbbells and barbells",
+						"Cardio machines",
+						"Icaros training devices"
+					],
+					"extras": [
+						"Group courses (yoga, TRX, functional training)",
+						"25 m sports pool",
+						"Guided runs"
+					],
+					"access": "All group courses included for hotel guests"
+				},
+				"summary_en": "A 142 m2 indoor training area with Precor equipment, a Queenax, dumbbells and barbells. Group courses are included for guests, and there is a 25 m sports pool.",
+				"summary_es": "Una zona de entrenamiento interior de 142 m2 con equipos Precor, un Queenax, mancuernas y barras. Las clases en grupo están incluidas para los huéspedes y hay una piscina deportiva de 25 m.",
+				"sources": ["https://www.dasseepark.at/en/move-relax/fitness-room-group-trainings", "https://www.dasseepark.at/en"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/925701857.jpg?k=e5c64d89d76678126518787aea83715963671b87399e75b8b823f9b9e2cba8f5&o=",
+					"gym": true
+				}
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"knokke-heist-belgium": {
+		"city": "Knokke-Heist",
+		"country": "Belgium",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Fitness area with heated indoor pool, sauna and hammam.",
+		"bestReason_es": "Zona de fitness con piscina cubierta climatizada, sauna y hammam.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "La Réserve Resort",
+				"stars": 5,
+				"area": "Knokke",
+				"bookingUrl": "https://www.booking.com/hotel/be/la-reserve-resort.html",
+				"website": "https://la-reserve.be/",
+				"gym": {
+					"sizeM2": null,
+					"hours": "07:00-20:00",
+					"equipment": ["Fitness room"],
+					"extras": [
+						"Heated indoor pool",
+						"Sauna",
+						"Hammam",
+						"Spa treatments"
+					],
+					"access": "Pool free for guests; fitness access terms not stated"
+				},
+				"summary_en": "Fitness area open 7:00 to 20:00 daily, next to a heated indoor pool, sauna and hammam. Equipment and size not published.",
+				"summary_es": "Zona de fitness abierta de 7:00 a 20:00 todos los días, junto a piscina cubierta climatizada, sauna y hammam. No se publican equipamiento ni tamaño.",
+				"sources": ["https://la-reserve.be/en/node/54", "https://hotels.easyjet.com/hotel/be/la-reserve-resort.en-gb.html?aid=356980"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/650262847.jpg?k=9c2b7a510a7c73322e1897dd744361ff4f66528a0b3a81c89437489635e0ebeb&o=",
+					"gym": true
+				}
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"kortrijk-belgium": {
+		"city": "Kortrijk",
+		"country": "Belgium",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The only 5-star hotel in the list with a free fitness room, plus a spa with sauna, hamam and steam room.",
+		"bestReason_es": "El único hotel de 5 estrellas de la lista con sala de fitness gratuita, además de spa con sauna, hamam y baño de vapor.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Cobergher Hotel",
+				"stars": 5,
+				"area": "Centre (Onze-Lieve-Vrouwestraat)",
+				"bookingUrl": "https://www.booking.com/hotel/be/cobergher.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness room"],
+					"extras": [
+						"Spa and wellness centre",
+						"Sauna",
+						"Hamam",
+						"Steam room"
+					],
+					"access": "Free for guests"
+				},
+				"summary_en": "Fitness room with free access for guests, next to a spa with sauna, hamam and steam room. Equipment and hours are not published.",
+				"summary_es": "Sala de fitness de acceso gratuito para huéspedes, junto a un spa con sauna, hamam y baño de vapor. No se publican equipamiento ni horario.",
+				"sources": ["https://www.myboutiquehotel.com/nl/boutique-hotels-kortrijk/cobergher-hotel.html", "https://www.expedia.co.uk/Kortrijk-Hotels-Hotel-With-Gym.0-0-d8289-thotelwithgym.Travel-Guide-Filter-Hotels"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/568693143.jpg?k=a1d7b3b54f7d1d96b287799ecdb425ecdb62c262e336c52ee66b0612449322d1&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Parkhotel Kortrijk",
+				"stars": 4,
+				"area": "Station (Stationsplein)",
+				"bookingUrl": "https://www.booking.com/hotel/be/parkhotel_kortrijk.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness centre"],
+					"extras": [
+						"Indoor pool",
+						"Sauna",
+						"Steam bath"
+					],
+					"access": "Gym in the South Wing wellness area"
+				},
+				"summary_en": "Fitness centre in the wellness area of the South Wing, with an indoor pool, sauna and steam bath. Equipment and hours are not published.",
+				"summary_es": "Centro de fitness en la zona de bienestar del ala sur, con piscina cubierta, sauna y baño de vapor. No se publican equipamiento ni horario.",
+				"sources": ["https://www.hotelgyms.com/hotels/be/kortrijk/parkhotel/20542", "https://www.expedia.co.uk/Kortrijk-Hotels-Hotel-With-Gym.0-0-d8289-thotelwithgym.Travel-Guide-Filter-Hotels"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/539939726.jpg?k=ffc75a09b99b654854db54810829796e705f5122db287cd1b6a760764af7ec68&o=",
+					"gym": false
+				}
+			},
+			"budget": null
+		}
+	},
+	"kunming-china": {
+		"city": "Kunming",
+		"country": "China",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The only Kunming hotel with a confirmed fitness centre, plus an indoor heated pool.",
+		"bestReason_es": "El único hotel de Kunming con gimnasio confirmado, además de piscina cubierta climatizada.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Sofitel Kunming",
+				"stars": null,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Indoor heated pool", "Spa"],
+					"access": null
+				},
+				"summary_en": "Has a fitness centre rated Okay on HotelGyms and an indoor heated pool. Size, equipment and hours are not published.",
+				"summary_es": "Tiene un gimnasio valorado como Aceptable en HotelGyms y una piscina cubierta climatizada. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.hotelgyms.com/hotels/cn/kunming/sofitel-kunming/1635837"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"la-baule-france": {
+		"city": "La Baule",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 5-star resort hotel with a fitness centre, pool, sauna and spa; the only tier confirmed.",
+		"bestReason_es": "Un hotel resort de 5 estrellas con centro de fitness, piscina, sauna y spa; es el único nivel confirmado.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hôtel Barrière Le Royal La Baule",
+				"stars": 5,
+				"area": "Avenue Pierre Loti",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Swimming pool",
+						"Sauna",
+						"Spa"
+					],
+					"access": null
+				},
+				"summary_en": "A 5-star hotel that lists a fitness centre alongside a pool, sauna and spa. Gym size, equipment and hours are not published in the sources found.",
+				"summary_es": "Un hotel de 5 estrellas con centro de fitness, además de piscina, sauna y spa. Los tamaños, equipamiento y horarios del gimnasio no constan en las fuentes encontradas.",
+				"sources": ["https://www.hotelgyms.com/hotels/fr/la-baule/hotel-barriere-le-royal-la-baule/53386", "https://www.hotelsbarriere.com/en/la-baule/activities/le-royal-health-club.html"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"la-paz-bolivia": {
+		"city": "La Paz",
+		"country": "Bolivia",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "A confirmed fitness centre with locker rooms, plus a spa and sauna.",
+		"bestReason_es": "Un centro de fitness confirmado con vestuarios, además de spa y sauna.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Stannum Boutique Hotel & Spa",
+				"stars": 4,
+				"area": "Downtown (Avenida Arce)",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness centre"],
+					"extras": [
+						"Spa and wellness centre",
+						"Sauna",
+						"Locker rooms"
+					],
+					"access": "Fitness centre at the hotel"
+				},
+				"summary_en": "A fitness centre with locker rooms, next to a spa and sauna. Size, equipment and hours are not published.",
+				"summary_es": "Un centro de fitness con vestuarios, junto a un spa y una sauna. No se publican el tamaño, el equipamiento ni el horario.",
+				"sources": ["https://www.myboutiquehotel.com/en/boutique-hotels-la-paz/stannum-boutique-hotel-spa.html", "https://www.expedia.com/Destinations-In-La-Paz-Hotels-With-Fitness-Center.0-0-d6297090-tHotelswithFitnessCenter.Hotel-Filter-Destinations"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"la-rochelle-france": {
+		"city": "La Rochelle",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "A 4-star hotel with a gym inside a wellness centre with sauna, hammam and hot tubs.",
+		"bestReason_es": "Un hotel de 4 estrellas con gimnasio dentro de un centro de bienestar con sauna, hammam y jacuzzis.",
+		"luxuryNote": "No 5-star hotel with a gym confirmed in the city",
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Central Park Hôtel & Spa",
+				"stars": 4,
+				"area": "Avenue Jean Guiton",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Sauna (extra cost)",
+						"Hammam (extra cost)",
+						"Hot tubs (extra cost)",
+						"Massages"
+					],
+					"access": null
+				},
+				"summary_en": "A 4-star hotel with a gym in its wellness centre, 10 minutes on foot from the centre. Sauna, hammam and hot tubs are paid extras; gym size and equipment are not published.",
+				"summary_es": "Un hotel de 4 estrellas con gimnasio en su centro de bienestar, a 10 minutos a pie del centro. La sauna, el hammam y los jacuzzis son de pago; no se publican tamaño ni equipamiento del gimnasio.",
+				"sources": ["https://www.hotelgyms.com/hotels/fr/la-rochelle/central-park-hotel-and-spa/1846352"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"larnaca-cyprus": {
+		"city": "Larnaca",
+		"country": "Cyprus",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Fully equipped fitness centre plus spa at a 5-star beach resort.",
+		"bestReason_es": "Centro de fitness totalmente equipado y spa en un resort de playa de 5 estrellas.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Golden Bay Beach Hotel",
+				"stars": 5,
+				"area": "Larnaca-Dhekelia Road",
+				"bookingUrl": "https://www.booking.com/hotel/cy/golden-bay-beach.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fully equipped fitness centre (details not listed)"],
+					"extras": [
+						"Spa with massage and beauty treatments",
+						"Heated indoor pool and outdoor pool",
+						"Sauna and steam bath"
+					],
+					"access": null
+				},
+				"summary_en": "An internal fully equipped fitness centre with a spa, sauna and steam bath. Size, equipment list and hours are not published.",
+				"summary_es": "Un centro de fitness interno totalmente equipado con spa, sauna y baño de vapor. No se publican tamaño, lista de equipos ni horario.",
+				"sources": ["https://www.hotelgyms.com/hotels/cy/larnaka/golden-bay-beach-hotel/17229", "https://www.onthebeach.ie/hotels/cyprus/larnaca/golden-bay-beach-hotel"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/266007214.jpg?k=dbbc154442b1fc429eff9469a7503acfbf52a35d130a80cc1e7631794ef0a54c&o=",
+					"gym": true
+				}
+			},
+			"standard": null,
+			"budget": {
+				"hotel": "Rise Urban Art Hotel",
+				"stars": null,
+				"area": "Kimonos Avenue",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": 60,
+					"hours": "24h",
+					"equipment": ["2 cardio machines", "1 multi-station"],
+					"extras": [],
+					"access": "Free for guests"
+				},
+				"summary_en": "A gym of about 60 m2 with 2 cardio machines and a multi-station, free for guests. The hotel lists a 24-hour fitness center.",
+				"summary_es": "Un gimnasio de unos 60 m2 con 2 máquinas de cardio y una multiestación, gratis para huéspedes. El hotel indica un centro de fitness abierto 24 horas.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Larnaca-Cyprus/Hotels/gym",
+					"https://www.lastminute.com/hotels/cyprus/larnaca/rise-street-art-hotel_hid-180238",
+					"https://www.priceline.com/hotel-deals/en-us/P5000013091/H17318205/rise-hotel.ssp"
+				],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"le-touquet-paris-plage-france": {
+		"city": "Le Touquet-Paris-Plage",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 5-star hotel with a fitness centre of cardio and weight equipment, open daily 7:00 to 22:00.",
+		"bestReason_es": "Un hotel de 5 estrellas con centro de fitness con cardio y pesas, abierto cada día de 7:00 a 22:00.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hôtel Barrière Le Westminster",
+				"stars": 5,
+				"area": "Centre",
+				"bookingUrl": "https://booking.com/hotel/fr/westminsterhotel.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "7:00 to 22:00 daily",
+					"equipment": [
+						"Cross trainers",
+						"Treadmills",
+						"Weight lifting equipment"
+					],
+					"extras": ["Spa Shiseido (separate)"],
+					"access": null
+				},
+				"summary_en": "Fitness centre with cross trainers, treadmills and weight equipment, open daily from 7:00 to 22:00. No pool is mentioned for the gym; Spa Shiseido is listed separately.",
+				"summary_es": "Centro de fitness con elípticas, cintas de correr y equipos de pesas, abierto cada día de 7:00 a 22:00. No se menciona piscina; el Spa Shiseido figura aparte.",
+				"sources": ["https://www.hotelsbarriere.com/en/le-touquet-paris-plage/le-westminster/experiences/espace-fitness", "https://www.hotelsbarriere.com/en/la-baule/activities/le-royal-health-club.html"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/272422759.jpg?k=b703196e2c057667c5974a4d441552c7379d9888f8720fd7cd47670a978276dd&o=",
+					"gym": true
+				}
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"leuven-belgium": {
+		"city": "Leuven",
+		"country": "Belgium",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 24-hour fitness room with free weights, rower and cross trainer; the other options publish less detail.",
+		"bestReason_es": "Sala de fitness 24 horas con pesas libres, remo y elíptica; las demás opciones publican menos detalle.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "pentahotel Leuven",
+				"stars": 4,
+				"area": "Centre (Alfons Smetsplein)",
+				"bookingUrl": "https://www.booking.com/hotel/be/pentahotel-leuven.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Free weights",
+						"Elliptical machine",
+						"Rowing machine",
+						"Stationary bicycle"
+					],
+					"extras": [],
+					"access": "Guests"
+				},
+				"summary_en": "A 24-hour fitness centre on the first floor with free weights, an elliptical, a rower and a stationary bike. A guest review calls it small but decently equipped.",
+				"summary_es": "Centro de fitness 24 horas en la primera planta con pesas libres, elíptica, remo y bicicleta estática. Un huésped lo describe como pequeño pero bien equipado.",
+				"sources": ["https://www.orbitz.com/Leuven-Hotels-Pentahotel-Leuven.h3756.Hotel-Information", "https://www.expedia.co.uk/Leuven-Hotels-Hotel-With-Gym.0-0-d5176-thotelwithgym.Travel-Guide-Filter-Hotels"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/733889982.jpg?k=bcf9da8cc8cf8ac98bbd83549c7e6f2da639118588bf05b17e5095d3edb6742f&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Novotel Leuven Centrum",
+				"stars": 4,
+				"area": "Centre (Vuurkruisenlaan)",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Fitness centre"],
+					"extras": [],
+					"access": "Guests"
+				},
+				"summary_en": "Fitness centre open 24 hours. No pool or spa, and no equipment details are published.",
+				"summary_es": "Centro de fitness abierto 24 horas. Sin piscina ni spa, y no se publican detalles del equipamiento.",
+				"sources": ["https://www.travelocity.com/es/Leuven-Hoteles-Novotel-Leuven-Centrum.h892422.Informacion-Hotel", "https://www.expedia.co.uk/Leuven-Hotels-Hotel-With-Gym.0-0-d5176-thotelwithgym.Travel-Guide-Filter-Hotels"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": {
+				"hotel": "Park Inn by Radisson Leuven",
+				"stars": null,
+				"area": "Martelarenlaan",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness room"],
+					"extras": [],
+					"access": "Free for guests"
+				},
+				"summary_en": "On-site fitness space, free for guests. Size, equipment and hours are not published.",
+				"summary_es": "Espacio de fitness en el hotel, gratis para huéspedes. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.hotelgyms.com/hotels/be/leuven/park-inn-by-radisson-leuven/h21960", "https://www.expedia.co.uk/Leuven-Hotels-Hotel-With-Gym.0-0-d5176-thotelwithgym.Travel-Guide-Filter-Hotels"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"liege-belgium": {
+		"city": "Liège",
+		"country": "Belgium",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "The only Liège hotel with a gym, pool and sauna combination that could be confirmed, with coaches on site.",
+		"bestReason_es": "El único hotel de Lieja con gimnasio, piscina y sauna que se pudo confirmar, con entrenadores en el hotel.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Van der Valk Sélys Liège Hotel & Spa",
+				"stars": 4,
+				"area": "Mont Saint-Martin",
+				"bookingUrl": "https://www.booking.com/hotel/be/van-der-valk-selys-liege.html",
+				"website": "https://www.vandervalkhotelgroup.com/en/hotels/hotel-selys-liege",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Cardio and strength equipment"],
+					"extras": [
+						"Sports coaches on site",
+						"Indoor pool",
+						"Sauna",
+						"Osmose spa"
+					],
+					"access": "Osmose Fitness at the hotel"
+				},
+				"summary_en": "Osmose Fitness has modern cardio and strength equipment, with sports coaches on site. The hotel also has a pool, a sauna and a spa.",
+				"summary_es": "Osmose Fitness cuenta con equipos modernos de cardio y fuerza, con entrenadores en el hotel. También hay piscina, sauna y spa.",
+				"sources": ["https://www.vandervalkhotelgroup.com/en/hotels/hotel-selys-liege", "https://www.voyage-prive.com/ppl/voyage-belgique-liege-van-der-valk-hotel-selys/67471"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/260904191.jpg?k=d7074b74b09dce403f5289619090dd60f426e089b046bc6cf08a72373882c1c2&o=",
+					"gym": false
+				}
+			},
+			"budget": null
+		}
+	},
+	"lille-france": {
+		"city": "Lille",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 5-star hotel with a spa and fitness centre free for guests; reported open 24 hours.",
+		"bestReason_es": "Un hotel de 5 estrellas con spa y centro de fitness gratis para huéspedes; según las fuentes, abierto 24 horas.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hôtel Barrière Lille",
+				"stars": 5,
+				"area": "Near Lille-Europe station",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h (per one travel blog)",
+					"equipment": [
+						"Treadmill",
+						"Stationary bike",
+						"Multi-gym",
+						"Dumbbells"
+					],
+					"extras": [
+						"Indoor pool",
+						"Spa",
+						"Sauna"
+					],
+					"access": "Free spa and fitness access for guests"
+				},
+				"summary_en": "Described as a compact but well-kept gym with cardio, a multi-gym and dumbbells, reported open 24 hours. Guests get free access to the spa and fitness centre.",
+				"summary_es": "Descrito como un gimnasio compacto pero cuidado, con cardio, multiestación y mancuernas, abierto 24 horas según un blog. Los huéspedes acceden gratis al spa y al centro de fitness.",
+				"sources": ["https://eurovistatrips.com/5-star-hotels-lille-24-hour-gym/", "https://www.hotelgyms.com/hotels/fr/lille/hotel-barriere-lille/177301"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Crowne Plaza Lille",
+				"stars": 4,
+				"area": "Euralille",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h (per one travel blog)",
+					"equipment": [
+						"Treadmill",
+						"Elliptical",
+						"Free weights"
+					],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "A 4-star hotel in Euralille with a gym reported to have a treadmill, elliptical and free weights, open 24 hours. Size is not published.",
+				"summary_es": "Un hotel de 4 estrellas en Euralille con gimnasio con cinta, elíptica y pesas libres, abierto 24 horas según un blog. No se publica el tamaño.",
+				"sources": ["https://eurovistatrips.com/5-star-hotels-lille-24-hour-gym/", "https://www.hotelgyms.com/hotels/fr/euralille/crowne-plaza-euralille/51471"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"limassol-cyprus": {
+		"city": "Limassol",
+		"country": "Cyprus",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Technogym equipment with tailor-made programmes from qualified trainers, next to a spa with indoor pool.",
+		"bestReason_es": "Equipamiento Technogym con programas a medida de entrenadores cualificados, junto a un spa con piscina interior.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Four Seasons Hotel",
+				"stars": 5,
+				"area": "Amathountos Avenue",
+				"bookingUrl": "https://www.booking.com/hotel/cy/four-seasons-limassol.html",
+				"website": "https://fourseasons.com.cy/le-club-actif",
+				"gym": {
+					"sizeM2": null,
+					"hours": "Mon-Fri 07:00-21:00, weekends and holidays 07:00-20:00",
+					"equipment": ["Full range of Technogym equipment", "Functional exercise studio"],
+					"extras": [
+						"Qualified trainers for tailor-made programmes on request",
+						"Spa with indoor heated pool, sauna, two steam rooms, ice room",
+						"Tennis and padel courts"
+					],
+					"access": "Guests over 16"
+				},
+				"summary_en": "Le Club Actif has Technogym equipment and a functional exercise studio, with trainers on request. It is on the lower ground level next to the spa.",
+				"summary_es": "Le Club Actif tiene equipamiento Technogym y un estudio de ejercicio funcional, con entrenadores bajo petición. Está en la planta baja inferior junto al spa.",
+				"sources": [
+					"https://fourseasons.com.cy/le-club-actif",
+					"https://www.priceline.com/hotel-deals/en-us/P5000013114/H3166405/four-seasons-hotel.ssp",
+					"https://www.expedia.co.uk/Limassol-Hotels-Hotel-With-Gym.0-0-d5192-thotelwithgym.Travel-Guide-Filter-Hotels"
+				],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/682321422.jpg?k=389087093b46c385e08195789f3636aeb96cdf74d6029ae96b87775a031ce6f7&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "NYX Hotel Limassol by Leonardo Hotels",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/cy/nyx-limassol-by-leonardo-hotels-limassol.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Cardio machines",
+						"Cross trainers",
+						"Free weights"
+					],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "A 24-hour gym with cardio machines, cross trainers and free weights. Guests describe it as compact and sometimes very hot.",
+				"summary_es": "Un gimnasio abierto 24 horas con máquinas de cardio, elípticas y peso libre. Los huéspedes lo describen como compacto y a veces muy caluroso.",
+				"sources": ["https://www.travelmyth.co.uk/Limassol-Cyprus/Hotels/gym", "https://www.expedia.co.uk/Limassol-Hotels-Hotel-With-Gym.0-0-d5192-thotelwithgym.Travel-Guide-Filter-Hotels"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/474873032.jpg?k=7a02fabea041ea616a38277b14c2d93ac00eeda7e6af196bb20bcd639c4074f5&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"limoges-france": {
+		"city": "Limoges",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "The only Limoges hotel with a gym confirmed in this research; details are limited.",
+		"bestReason_es": "El único hotel de Limoges con gimnasio confirmado en esta investigación; los datos son limitados.",
+		"luxuryNote": "No 5-star hotel with a gym confirmed in the city",
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Novotel Limoges Le Lac",
+				"stars": 4,
+				"area": "Lac d'Uzurat",
+				"bookingUrl": null,
+				"website": "https://www.destination-limoges.com/en/hotels/hotel-novotel-limoges-le-lac/",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Outdoor swimming pool"],
+					"access": null
+				},
+				"summary_en": "A 4-star hotel with a fitness room and an outdoor pool. Size, equipment and hours are not published.",
+				"summary_es": "Un hotel de 4 estrellas con sala de fitness y piscina exterior. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.destination-limoges.com/en/hotels/hotel-novotel-limoges-le-lac/"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"linz-austria": {
+		"city": "Linz",
+		"country": "Austria",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Only Linz hotel with a confirmed full gym and a linked leisure club, though size and equipment are not published.",
+		"bestReason_es": "El único hotel de Linz con gimnasio completo confirmado y un club de ocio asociado, aunque no se publican tamaño ni equipamiento.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Courtyard by Marriott Linz",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/at/courtyard-linz.html",
+				"website": "https://www.marriott.com/en-us/hotels/lnzcy-courtyard-linz/overview/",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fully equipped gym"],
+					"extras": ["Sauna", "Steam bath"],
+					"access": "Free for guests (Euro Freizeit & Fitness Club)"
+				},
+				"summary_en": "Marriott lists a Euro Freizeit & Fitness Club with a fully equipped gym, sauna and steam bath, free for guests. Size and hours are not published.",
+				"summary_es": "Marriott indica un Euro Freizeit & Fitness Club con gimnasio totalmente equipado, sauna y baño de vapor, gratis para huéspedes. No se publican tamaño ni horario.",
+				"sources": ["https://www.marriott.com/en-us/hotels/lnzcy-courtyard-linz/overview/", "https://www.hotelgyms.com/hotels/at/linz/courtyard-by-marriott-linz/74629"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/643125743.jpg?k=f65ac31a118bbbbc3a81e09068b348c74f272b38c358ecf06a9bc5846689bea7&o=",
+					"gym": false
+				}
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"london-canada": {
+		"city": "London",
+		"country": "Canada",
+		"checked": "2026-11-02",
+		"best": "budget",
+		"bestReason_en": "Confirmed 24-hour access, though size and equipment are not published and the gym is rated poor.",
+		"bestReason_es": "Acceso 24 horas confirmado, aunque no se publican tamaño ni equipamiento y el gimnasio tiene mala valoración.",
+		"luxuryNote": "No 5-star hotel with a gym confirmed in the city",
+		"tiers": {
+			"luxury": null,
+			"standard": null,
+			"budget": {
+				"hotel": "Courtyard by Marriott London",
+				"stars": null,
+				"area": "Exeter Road, off Highway 401",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": ["Towels provided"],
+					"access": "Accessible to guests"
+				},
+				"summary_en": "A fitness centre open 24 hours for guests. Size and equipment are not listed, and HotelGyms rates it a poor GymFactor.",
+				"summary_es": "Un centro de fitness abierto 24 horas para huéspedes. No se indican tamaño ni equipamiento, y HotelGyms lo valora con un GymFactor bajo.",
+				"sources": ["https://www.hotelgyms.com/hotels/ca/london/courtyard-by-marriott-london/186096"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	london: {
+		"city": "London",
+		"country": "United Kingdom",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 620 m2 club gym with three studios, over 40 classes a week and a resident physiotherapist.",
+		"bestReason_es": "Un gimnasio de club de 620 m2 con tres estudios, más de 40 clases a la semana y fisioterapeuta residente.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "The Ned",
+				"stars": 5,
+				"area": "City of London, near St Paul's Cathedral",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": 620,
+					"hours": null,
+					"equipment": ["Cardio, strength and training equipment across three studios"],
+					"extras": [
+						"40+ classes a week",
+						"Personal trainers",
+						"Resident physiotherapist",
+						"Sports masseuse"
+					],
+					"access": "Part of the Club Gym and Spa"
+				},
+				"summary_en": "About 620 m2 across three studios, part of the Club Gym and Spa. It offers over 40 classes a week, personal trainers and a resident physiotherapist.",
+				"summary_es": "Unos 620 m2 repartidos en tres estudios, dentro del Club Gym and Spa. Ofrece más de 40 clases a la semana, entrenadores personales y fisioterapeuta residente.",
+				"sources": ["https://www.hotelgyms.com/blog/find-the-best-hotel-gyms-in-london"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "K West Hotel & Spa",
+				"stars": 4,
+				"area": "Shepherd's Bush",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Cardio and resistance machines",
+						"Free weights and barbell",
+						"Mats and Swiss balls"
+					],
+					"extras": [
+						"Spa",
+						"Herbal steam room",
+						"Hydrotherapy pool",
+						"Spin classes"
+					],
+					"access": "Open 24 hours for hotel guests"
+				},
+				"summary_en": "Open 24 hours for guests, with cardio and resistance machines, a barbell and spin classes. The K Spa includes a hydrotherapy pool and steam room.",
+				"summary_es": "Abierto 24 horas para huéspedes, con máquinas de cardio y resistencia, barra y clases de spinning. El K Spa incluye piscina de hidroterapia y sala de vapor.",
+				"sources": ["https://www.hotelgyms.com/blog/find-the-best-hotel-gyms-in-london", "https://barbellsabroad.com/hotel-gyms/hotel-gyms-london/"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"lourdes-france": {
+		"city": "Lourdes",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 5-star hotel listing a fitness centre plus a spa with heated indoor pool and saunas.",
+		"bestReason_es": "Un hotel de 5 estrellas con centro de fitness, además de spa con piscina cubierta climatizada y saunas.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Belfry & Spa by Ligne St Barth",
+				"stars": 5,
+				"area": "Historic centre (Rue de la Grotte)",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Spa",
+						"Heated indoor pool",
+						"Jacuzzis",
+						"Saunas"
+					],
+					"access": null
+				},
+				"summary_en": "A 5-star hotel in a private park that lists a fitness centre, with a spa, heated indoor pool, jacuzzis and saunas. Gym size, equipment and hours are not published.",
+				"summary_es": "Un hotel de 5 estrellas en un parque privado con centro de fitness, spa, piscina cubierta climatizada, jacuzzis y saunas. No se publican tamaño, equipamiento ni horario del gimnasio.",
+				"sources": ["https://www.hotelgyms.com/hotels/fr/lourdes/belfry-and-spa-by-ligne-st-barth/209796"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"luxor-egypt": {
+		"city": "Luxor",
+		"country": "Egypt",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Machine-based gym with a separate spa, but hours are limited to 07:00-22:00 and size is not published.",
+		"bestReason_es": "Gimnasio con máquinas y spa aparte, pero con horario de 07:00 a 22:00 y sin tamaño publicado.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Steigenberger Nile Palace",
+				"stars": 5,
+				"area": "East Bank",
+				"bookingUrl": "https://www.booking.com/hotel/eg/steigenberger-nile-palace-luxor.html",
+				"website": "https://hrewards.com/en/steigenberger-nile-palace-luxor/wellness-spa",
+				"gym": {
+					"sizeM2": null,
+					"hours": "07:00-22:00",
+					"equipment": [
+						"Treadmills",
+						"Ergometers",
+						"Strength machines"
+					],
+					"extras": ["Spa with saunas", "Outdoor pools"],
+					"access": null
+				},
+				"summary_en": "The hotel lists treadmills, ergometers and strength machines, open daily 07:00 to 22:00. Size is not published.",
+				"summary_es": "El hotel indica cintas, ergómetros y máquinas de fuerza, abierto a diario de 07:00 a 22:00. No se publica el tamaño.",
+				"sources": ["https://hrewards.com/en/steigenberger-nile-palace-luxor/wellness-spa", "https://www.expedia.co.uk/Luxor-Hotels-Hotel-With-Gym.0-0-d2181-thotelwithgym.Travel-Guide-Filter-Hotels"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/520473784.jpg?k=183c0863529ab6a6fcc707a1b473722c404da45c1e7ce02f0af421cc3707c882&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Aracan Eatabe Luxor Hotel",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/eg/el-luxor.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Expedia lists good fitness facilities. Size, equipment and hours are not published.",
+				"summary_es": "Expedia indica buenas instalaciones de fitness. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.expedia.co.uk/Luxor-Hotels-Hotel-With-Gym.0-0-d2181-thotelwithgym.Travel-Guide-Filter-Hotels", "https://www.booking.com/fourstars/city/eg/luxor.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/723316947.jpg?k=3ce8bb3c81f574a8c65cfbdf1413bd67f7418513d43dab5173b221c6dd3d14a2&o=",
+					"gym": false
+				}
+			},
+			"budget": null
+		}
+	},
+	"lyon-france": {
+		"city": "Lyon",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "A 2,500 m2 wellness area with fitness centre, indoor and outdoor pools, free for guests.",
+		"bestReason_es": "Una zona de bienestar de 2.500 m2 con centro de fitness y piscinas interior y exterior, gratis para huéspedes.",
+		"luxuryNote": "No 5-star hotel with a gym confirmed in the city",
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Hôtel Lyon Métropole",
+				"stars": 4,
+				"area": "Quai Joseph Gillet (north, 3 km from centre)",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness centre"],
+					"extras": [
+						"Indoor pool",
+						"Seasonal outdoor pool",
+						"Hammam",
+						"Saunas",
+						"Hot tub",
+						"4 tennis courts"
+					],
+					"access": "Free for guests (well-being area)"
+				},
+				"summary_en": "A 4-star hotel with a 2,500 m2 well-being area that includes the fitness centre, indoor and seasonal outdoor pools, hammam and saunas. Guests use it free; the gym itself is not described in detail.",
+				"summary_es": "Un hotel de 4 estrellas con una zona de bienestar de 2.500 m2 que incluye el centro de fitness, piscinas interior y exterior de temporada, hammam y saunas. Los huéspedes la usan gratis; el gimnasio no se describe en detalle.",
+				"sources": ["https://www.hotelgyms.com/hotels/fr/lyon/hotel-lyon-metropole/53418"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": {
+				"hotel": "Hotel Lyon-Ouest",
+				"stars": 3,
+				"area": "Banks of the Saône",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "A 3-star hotel on the Saône with an on-site fitness room. No size, equipment or hours are published.",
+				"summary_es": "Un hotel de 3 estrellas junto al Saona con sala de fitness. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.hotelgyms.com/hotels/fr/lyon/hotel-lyon-ouest/400054"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"madrid-spain": {
+		"city": "Madrid",
+		"country": "Spain",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The strongest free-weight section of any Madrid hotel gym, plus an indoor pool and spa.",
+		"bestReason_es": "La mejor zona de peso libre de los gimnasios de hotel de Madrid, con piscina cubierta y spa.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Four Seasons Hotel Madrid",
+				"stars": 5,
+				"area": "Centro",
+				"bookingUrl": null,
+				"website": "https://www.fourseasons.com/madrid/",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Dumbbells up to 50 kg",
+						"Several bench press stations",
+						"Strength machines"
+					],
+					"extras": [
+						"Indoor pool",
+						"Spa",
+						"Personal training"
+					],
+					"access": "Free for guests"
+				},
+				"summary_en": "Widely rated the best hotel gym in Madrid, with dumbbells up to 50 kg and several bench press stations. Open 24 hours, with an indoor pool and spa.",
+				"summary_es": "Considerado el mejor gimnasio de hotel de Madrid, con mancuernas de hasta 50 kg y varios bancos de press. Abierto 24 horas, con piscina cubierta y spa.",
+				"sources": ["https://eurovistatrips.com/best-gym-madrid-hotels/", "https://eurovistatrips.com/best-gym-facilities-5-star-hotels-madrid/"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Hotel Claridge Madrid",
+				"stars": 4,
+				"area": "Retiro (Conde de Casal)",
+				"bookingUrl": "https://www.booking.com/hotel/es/claridge.html",
+				"website": null,
+				"gym": {
+					"sizeM2": 1500,
+					"hours": "24h",
+					"equipment": [
+						"200+ training spots",
+						"Nearly 30 Life Fitness cardio machines",
+						"Wide range of weight training equipment"
+					],
+					"extras": [
+						"Certified trainers",
+						"Group classes",
+						"Seasonal outdoor pool"
+					],
+					"access": "Altafit gym club inside the hotel, free for guests"
+				},
+				"summary_en": "A 1,500 m2 Altafit club inside the hotel with more than 200 training spots and nearly 30 Life Fitness cardio machines, open 24 hours with trainers.",
+				"summary_es": "Un club Altafit de 1.500 m2 dentro del hotel, con más de 200 puestos de entrenamiento y casi 30 máquinas de cardio Life Fitness, abierto 24 horas y con entrenadores.",
+				"sources": ["https://www.hotelgyms.com/blog/find-the-best-hotel-gyms-in-madrid", "https://hotelcentro.org/es/claridge/"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/602914498.jpg?k=6f8556b5dc0709764fd93e4f6f0ec5c275b72f9d7761cc906cfa3e9b02f66047&o=",
+					"gym": false
+				}
+			},
+			"budget": {
+				"hotel": "B&B Hotel Madrid Centro",
+				"stars": null,
+				"area": "Centro (Calle de la Montera)",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Basic equipment"],
+					"extras": [],
+					"access": "Compact fitness room for guests"
+				},
+				"summary_en": "A compact fitness room with basic equipment, near Gran Via. Fine for a short session, not for heavy lifting.",
+				"summary_es": "Una sala de fitness compacta con equipamiento básico, cerca de Gran Vía. Sirve para una sesión corta, no para levantar mucho peso.",
+				"sources": ["https://eurovistatrips.com/affordable-hotels-madrid-fitness-center/"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"makarska-croatia": {
+		"city": "Makarska",
+		"country": "Croatia",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Only options found are fitness rooms inside hotel wellness areas, with little published detail.",
+		"bestReason_es": "Las únicas opciones halladas son salas de fitness dentro de zonas wellness de hoteles, con pocos detalles publicados.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Aminess Laurel Khalani Hotel",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/hr/aminess-khalani-beach.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Indoor pool and two outdoor pools", "Spa"],
+					"access": null
+				},
+				"summary_en": "Fitness centre inside the indoor pool area, which one reviewer calls small. No size, hours or equipment found.",
+				"summary_es": "Centro de fitness dentro de la zona de la piscina interior, que un cliente describe como pequeño. No se encontraron tamaño, horario ni equipamiento.",
+				"sources": ["https://www.hotels.com/ho2361853152", "https://hotels.com/de623218-am2/gym-hotels-makarska-croatia"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/378380211.jpg?k=770733e11e9fb4e0597a8521dcd9d4a848a8ac6ccfefe153f22156f06c249d3a&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Hotel Antonio",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/hr/antonio-makarska1234567.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Listed among Makarska hotels with a gym. No size, hours or equipment details found.",
+				"summary_es": "Aparece entre los hoteles de Makarska con gimnasio. No se encontraron tamaño, horario ni equipamiento.",
+				"sources": ["https://hotels.com/de623218-am2/gym-hotels-makarska-croatia"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/883079031.jpg?k=09d75ed7bdaa3c464977bfd992f2d7b8f0b1f9791725d64f814ab4fe65c19db2&o=",
+					"gym": false
+				}
+			},
+			"budget": null
+		}
+	},
+	"manama-bahrain": {
+		"city": "Manama",
+		"country": "Bahrain",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Two fitness centres, one ladies-only, with Hoist ROC-IT strength equipment designed with Harley Pasternak.",
+		"bestReason_es": "Dos gimnasios, uno solo para mujeres, con equipos de fuerza Hoist ROC-IT diseñados con Harley Pasternak.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Four Seasons Hotel Bahrain Bay",
+				"stars": 5,
+				"area": "Bahrain Bay",
+				"bookingUrl": null,
+				"website": "https://www.fourseasons.com/bahrain/",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Hoist ROC-IT strength equipment"],
+					"extras": [
+						"Ladies-only gym",
+						"Spa",
+						"Sauna"
+					],
+					"access": "Guest facility"
+				},
+				"summary_en": "Two fitness centres, one of them ladies-only, designed by Four Seasons fitness advisor Harley Pasternak and equipped with Hoist ROC-IT strength machines. Size and hours are not published.",
+				"summary_es": "Dos gimnasios, uno solo para mujeres, diseñados por el asesor de fitness de Four Seasons Harley Pasternak y equipados con máquinas de fuerza Hoist ROC-IT. No se publican el tamaño ni el horario.",
+				"sources": ["https://www.fourseasons.com/bahrain/services-and-amenities/", "https://www.hotelgyms.com/hotels/bh/manama/four-seasons-hotel-bahrain-bay/1304357"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"marseille-france": {
+		"city": "Marseille",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Technogym machines, free weights and a yoga studio, open 24 hours, with a spa and indoor pool.",
+		"bestReason_es": "Máquinas Technogym, peso libre y estudio de yoga, abierto 24 horas, con spa y piscina cubierta.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "InterContinental Marseille - Hotel Dieu",
+				"stars": 5,
+				"area": "Old Port (historic quarter)",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h (per one travel blog)",
+					"equipment": ["Technogym machines", "Free weights"],
+					"extras": [
+						"Yoga studio",
+						"Spa with hammam and sauna",
+						"Indoor pool",
+						"Personal training (paid)"
+					],
+					"access": null
+				},
+				"summary_en": "Reported to have Technogym machines, free weights and a separate yoga studio, open 24 hours. The hotel also has a Clarins spa with hammam, sauna and indoor pool (spa access is extra for guests).",
+				"summary_es": "Según las fuentes, tiene máquinas Technogym, peso libre y un estudio de yoga aparte, abierto 24 horas. El hotel también tiene spa Clarins con hammam, sauna y piscina cubierta (acceso al spa de pago para huéspedes).",
+				"sources": ["https://eurovistatrips.com/best-gym-facilities-5-star-hotels-marseille/", "https://www.hotelgyms.com/hotels/fr/marseille/intercontinental-marseille-hotel-dieu/443299"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"mechelen-belgium": {
+		"city": "Mechelen",
+		"country": "Belgium",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "The only Mechelen hotel with a confirmed fitness centre, plus a hammam and sauna.",
+		"bestReason_es": "El único hotel de Malinas con centro de fitness confirmado, además de hammam y sauna.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Novotel Mechelen Centrum",
+				"stars": 4,
+				"area": "Centre (Van Beethovenstraat)",
+				"bookingUrl": "https://www.booking.com/hotel/be/novotelmechelencentrum.html",
+				"website": "https://all.accor.com/hotel/3154/index.en.shtml",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness centre"],
+					"extras": ["Hammam", "Sauna"],
+					"access": "Fitness centre at the hotel"
+				},
+				"summary_en": "A fully equipped fitness centre with a hammam and sauna. Size, equipment and hours are not published.",
+				"summary_es": "Un centro de fitness totalmente equipado con hammam y sauna. No se publican el tamaño, el equipamiento ni el horario.",
+				"sources": ["https://all.accor.com/hotel/3154/index.en.shtml", "https://www.hotelgyms.com/hotels/be/mechelen/novotel-mechelen-centrum/20257"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/914462299.jpg?k=473d76ad8f2af456059154b9fec5a62ce5a059ff5b31746f4836b9cdb60208e8&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"medellin-colombia": {
+		"city": "Medellín",
+		"country": "Colombia",
+		"checked": "2026-11-02",
+		"best": null,
+		"bestReason_en": "Evidence is thin; no hotel stands out on size or free weights.",
+		"bestReason_es": "La información es escasa; ningún hotel destaca por tamaño o peso libre.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "InterContinental Medellín",
+				"stars": null,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Treadmill",
+						"Elliptical machines",
+						"Free weights",
+						"Stationary bike"
+					],
+					"extras": ["Heated outdoor pool", "Spa"],
+					"access": "Gym listed as a hotel feature, access rules not stated"
+				},
+				"summary_en": "Gym with treadmill, elliptical machines, free weights and a stationary bike, plus a heated outdoor pool and spa. Size and hours are not published.",
+				"summary_es": "Gimnasio con cinta, elípticas, peso libre y bicicleta estática, además de piscina exterior climatizada y spa. No se publican el tamaño ni el horario.",
+				"sources": ["https://qap.www.ihg.com/intercontinental/hotels/us/en/medellin/mdeha/hoteldetail/amenities", "https://www.hotelgyms.com/hotels/co/medellin/hotel-intercontinental-medellin/263474"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Four Points by Sheraton Medellín",
+				"stars": null,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "06:00-22:00",
+					"equipment": [
+						"Treadmills",
+						"Elliptical machines",
+						"Exercise bikes",
+						"Free weights",
+						"Weight machines",
+						"Multi-exercise machine"
+					],
+					"extras": [],
+					"access": "Free for hotel guests"
+				},
+				"summary_en": "Fitness room open 06:00 to 22:00 with cardio machines, free weights and weight machines. Free for guests; size not published.",
+				"summary_es": "Sala de fitness abierta de 6:00 a 22:00 con máquinas de cardio, peso libre y máquinas de musculación. Gratis para huéspedes; no se publica el tamaño.",
+				"sources": ["https://www.marriott.com/hotels/hotel-information/fitness-spa-services/mdefp-four-points-medellin"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"melbourne-australia": {
+		"city": "Melbourne",
+		"country": "Australia",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Gym and exercise studio with group classes and personal trainers, next to a pool, spa and saunas.",
+		"bestReason_es": "Gimnasio y estudio de ejercicio con clases grupales y entrenadores personales, junto a piscina, spa y saunas.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "The Langham, Melbourne",
+				"stars": 5,
+				"area": "Southbank",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Cross trainers", "Bikes and treadmills with internet-enabled touch screens"],
+					"extras": [
+						"Group classes (meditation, yoga, Pilates, boxing)",
+						"Personal trainers",
+						"Indoor heated pool",
+						"Spa, steam rooms and saunas"
+					],
+					"access": "Chuan Health Club, classes at $20 per session"
+				},
+				"summary_en": "Gym and exercise studio on the 10th floor, above a pool, spa, steam rooms and saunas. Group classes cost $20 and personal trainers can be booked.",
+				"summary_es": "Gimnasio y estudio de ejercicio en la planta 10, sobre la piscina, el spa, los baños de vapor y las saunas. Las clases grupales cuestan 20 dólares y se puede reservar entrenador personal.",
+				"sources": ["https://qantas.com/travelinsider/en/experiences/stay-fit-and-relax/the-best-hotel-gyms-in-australia.html", "https://www.tripexpert.com/melbourne/hotels/the-langham-melbourne/fitness-center"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"mendoza-argentina": {
+		"city": "Mendoza",
+		"country": "Argentina",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Full range of cardio equipment and free weights with an indoor lap pool and spa.",
+		"bestReason_es": "Gama completa de cardio y peso libre, con piscina cubierta para largos y spa.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "InterContinental Mendoza",
+				"stars": 5,
+				"area": "Mendoza city",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Full range of cardio equipment", "Free weights"],
+					"extras": ["Indoor lap pool", "Spa"],
+					"access": "Guests"
+				},
+				"summary_en": "A fully equipped fitness center with cardio equipment and free weights, plus an indoor lap pool and spa. Size and hours are not published.",
+				"summary_es": "Un centro de fitness completo con cardio y peso libre, además de piscina cubierta para largos y spa. No se publican tamaño ni horario.",
+				"sources": ["https://www.friendlyplanet.com/hotels/intercontinental-mendoza.html", "https://www.frommers.com/destinations/mendoza/hotels/intercontinental-mendoza"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Amérian Executive Hotel Mendoza",
+				"stars": 4,
+				"area": "Centro (San Lorenzo 660)",
+				"bookingUrl": "https://www.booking.com/hotel/ar/executive.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Outdoor pool (8:00 to 20:00)", "Sauna"],
+					"access": "Guests"
+				},
+				"summary_en": "A gym described by one guest as well equipped, with an outdoor pool and a sauna. Equipment and hours are not published.",
+				"summary_es": "Un gimnasio que un huésped describe como bien equipado, con piscina exterior y sauna. No se publican equipamiento ni horario.",
+				"sources": ["https://www.travelocity.com/Mendoza-Hotels-Amerian-Executive-Mendoza-Hotel.h1762809.Hotel-Information"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/647751692.jpg?k=517c14038607c6493b10970e65fb4d38a1782073538b387c5e61ae7bdb4d519c&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"montpellier-france": {
+		"city": "Montpellier",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 400 m2 gym with group classes and personal programmes, inside a 2,150 m2 spa estate.",
+		"bestReason_es": "Un gimnasio de 400 m2 con clases colectivas y programas personales, dentro de un spa de 2.150 m2.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Domaine de Verchant & Spa - Relais & Châteaux",
+				"stars": 5,
+				"area": "Castelnau-le-Lez",
+				"bookingUrl": "https://www.booking.com/hotel/fr/domaine-de-verchant.html",
+				"website": "https://www.domainedeverchant.com/en/",
+				"gym": {
+					"sizeM2": 400,
+					"hours": null,
+					"equipment": ["Latest-technology fitness equipment (not itemised)"],
+					"extras": [
+						"Group classes",
+						"Personal fitness programmes",
+						"2,150 m2 spa and wellness area",
+						"Outdoor pool"
+					],
+					"access": "Guests"
+				},
+				"summary_en": "A 400 m2 fitness club with group classes and personal programmes. The hotel is in Castelnau-le-Lez, next to Montpellier.",
+				"summary_es": "Un club de fitness de 400 m2 con clases colectivas y programas personales. El hotel está en Castelnau-le-Lez, junto a Montpellier.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Languedoc-Roussillon/Hotels/gym",
+					"https://www.domainedeverchant.com/en/",
+					"https://hotels.com/de1748167-am2/gym-hotels-montpellier-and-vicinity-france"
+				],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/65799965.jpg?k=1fc0069fb8a81702d0086215ec68c70a921b73c9b51b499a422ea724163aa31c&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Radisson Blu Hotel, Montpellier",
+				"stars": 4,
+				"area": "Le Corum",
+				"bookingUrl": "https://www.booking.com/hotel/fr/http-www-booking-com-fr-crowneplaza-montpellier-html.html",
+				"website": "https://www.radissonhotels.com/en-us/hotels/radisson-blu-montpellier/fitness",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Cardio equipment",
+						"Weights",
+						"Strength training machines"
+					],
+					"extras": [],
+					"access": "Free for guests"
+				},
+				"summary_en": "A fitness room with cardio, weights and strength machines, open 24 hours and free for guests. Size is not published.",
+				"summary_es": "Una sala de fitness con cardio, pesas y máquinas de fuerza, abierta 24 horas y gratuita para huéspedes. No se publica el tamaño.",
+				"sources": ["https://www.radissonhotels.com/en-us/hotels/radisson-blu-montpellier/fitness", "https://hotels.com/de1748167-am2/gym-hotels-montpellier-and-vicinity-france"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/807674560.jpg?k=979c8439278362b9ae741245292e2edd000c4e7e461961d5ed5ceb42c18bb433&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"montreal-canada": {
+		"city": "Montreal",
+		"country": "Canada",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Open around the clock with free weights, bench press and Cybex equipment, free for guests.",
+		"bestReason_es": "Abierto las 24 horas con peso libre, press de banca y equipos Cybex, gratis para huéspedes.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Hotel Omni Mont-Royal",
+				"stars": null,
+				"area": "Downtown",
+				"bookingUrl": null,
+				"website": "https://www.omnihotels.com/hotels/montreal-mont-royal",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Cybex equipment",
+						"Free weights",
+						"Bench press",
+						"StairMaster",
+						"Treadmills and stationary bikes"
+					],
+					"extras": ["Get Fit Kits for in-room workouts"],
+					"access": "Free for guests with room key, minimum age 16"
+				},
+				"summary_en": "A third-floor gym open around the clock with Cybex equipment, free weights, a bench press and a StairMaster. Free for guests, with in-room Get Fit Kits from the concierge.",
+				"summary_es": "Un gimnasio en la tercera planta abierto las 24 horas con equipos Cybex, peso libre, press de banca y StairMaster. Gratis para huéspedes, con kits de ejercicio para la habitación.",
+				"sources": ["https://www.omnihotels.com/hotels/montreal-mont-royal/wellness/fitness-center"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"mulhouse-france": {
+		"city": "Mulhouse",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 24/7 fitness room with weight machines, free weights and cardio, plus a 24/7 sauna.",
+		"bestReason_es": "Una sala de fitness abierta 24/7 con máquinas de pesas, peso libre y cardio, además de sauna 24/7.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Mercure Mulhouse Centre",
+				"stars": 4,
+				"area": "Place du Général de Gaulle",
+				"bookingUrl": "https://www.booking.com/hotel/fr/mercure-mulhouse-centre.html",
+				"website": "https://all.accor.com/hotel/1264/index.en.shtml",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24/7",
+					"equipment": [
+						"Weight machines",
+						"Weight bench",
+						"Treadmill",
+						"Rowing machine",
+						"Exercise bike",
+						"Cross-trainer"
+					],
+					"extras": ["Sauna and relaxation room, 24/7"],
+					"access": "Guests"
+				},
+				"summary_en": "A fitness room open 24/7 with weight machines, a bench, treadmill, rower, bike and cross-trainer. A sauna and relaxation room are available around the clock. Size is not published.",
+				"summary_es": "Una sala de fitness abierta 24/7 con máquinas de pesas, banco, cinta, remo, bici y elíptica. Hay sauna y sala de relax a cualquier hora. No se publica el tamaño.",
+				"sources": ["https://all.accor.com/hotel/1264/index.en.shtml", "https://www.travelmyth.co.uk/Lutterbach/Hotels/gym"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/933201722.jpg?k=98eea803965f0400914620edcad4f31adbebc9126881ab452325cced16e67e29&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Hotel du Parc - Centre Ville",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/du-parc.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Listed with a fitness centre. No size, equipment or hours are published in the sources found.",
+				"summary_es": "Figura con centro de fitness. En las fuentes consultadas no hay tamaño, equipamiento ni horario.",
+				"sources": ["https://ie.hotels.com/de507550-am2/gym-hotels-mulhouse-france"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/22389382.jpg?k=be64a1fca78bbda6c6087e6312433fa5063126ac95459e8833b93fe896964d14&o=",
+					"gym": false
+				}
+			},
+			"budget": {
+				"hotel": "Best Western Mulhouse Salvator Centre",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/interhotelsalvator.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "Open every day",
+					"equipment": ["Top-floor gym"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "A gym on the top floor, open every day. No size or equipment list is published.",
+				"summary_es": "Un gimnasio en la planta superior, abierto todos los días. No se publica tamaño ni lista de equipos.",
+				"sources": ["https://www.travelmyth.co.uk/Lutterbach/Hotels/gym", "https://ie.hotels.com/de507550-am2/gym-hotels-mulhouse-france"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/472880080.jpg?k=7a96575e56312e494bcb6baa1bddb9de412f4f0194ee890c9a87eba83f322486&o=",
+					"gym": false
+				}
+			}
+		}
+	},
+	"nadi-fiji": {
+		"city": "Nadi",
+		"country": "Fiji",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Life Fitness cardio, free weights, free daily classes and personal training.",
+		"bestReason_es": "Cardio Life Fitness, peso libre, clases diarias gratuitas y entrenamiento personal.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Sofitel Fiji Resort & Spa",
+				"stars": 5,
+				"area": "Denarau Island",
+				"bookingUrl": "https://www.booking.com/hotel/fj/fiji-resort-and-spa.html",
+				"website": "https://www.sofitel-fiji.com/",
+				"gym": {
+					"sizeM2": null,
+					"hours": "06:00-20:00",
+					"equipment": [
+						"Life Fitness cardio machines",
+						"Free weights",
+						"Training bench, dumbbells, barbells, kettlebells"
+					],
+					"extras": [
+						"Complimentary group fitness classes",
+						"Personal training",
+						"Lockers, towels, water station"
+					],
+					"access": "Free for guests aged 15+"
+				},
+				"summary_en": "Life Fitness cardio plus free weights, open 06:00 to 20:00. Free group classes run through the week and personal training is offered. Size is not published.",
+				"summary_es": "Cardio Life Fitness y peso libre, abierto de 06:00 a 20:00. Hay clases grupales gratuitas durante la semana y entrenamiento personal. No se publica el tamaño.",
+				"sources": [
+					"https://www.sofitel-fiji.com/wellness/fitness-center/",
+					"https://www.sofitel-fiji.com/",
+					"https://www.travelmyth.co.uk/Fiji/Hotels/gym"
+				],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/763900741.jpg?k=b60465db1d7dc91f062856d941d618a7198c5139c4190ad73af420aef588ff06&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Tanoa International Hotel",
+				"stars": null,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/fj/tanoa-international.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Treadmills",
+						"Weights",
+						"Machines"
+					],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "A 24-hour gym with treadmills, weights and machines. Some reviewers call it small. Official stars were not confirmed.",
+				"summary_es": "Gimnasio abierto 24 horas con cintas, pesas y máquinas. Algunos huéspedes lo consideran pequeño. No se confirmaron las estrellas oficiales.",
+				"sources": ["https://www.travelmyth.co.uk/Fiji/Hotels/gym"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/223840258.jpg?k=70ca6ceb49dc95d3a755d05678a2bafc0cbb56c0edfd63884304060bb9e0e3a1&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"nancy-france": {
+		"city": "Nancy",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "A free 24-hour gym plus a spa with sauna, steam room and an indoor heated pool.",
+		"bestReason_es": "Un gimnasio gratuito 24 horas, además de spa con sauna, hammam y piscina interior climatizada.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Mercure Nancy Centre Gare",
+				"stars": 4,
+				"area": "Gare",
+				"bookingUrl": "https://www.booking.com/hotel/fr/park-inn.html",
+				"website": "https://all.accor.com/hotel/A038/index.en.shtml",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24/7",
+					"equipment": [
+						"Treadmill",
+						"Weight bench",
+						"Elliptical trainer"
+					],
+					"extras": [],
+					"access": "Guests"
+				},
+				"summary_en": "A 24/7 fitness centre with a treadmill, weight bench and elliptical trainer. Size is not published.",
+				"summary_es": "Un centro de fitness 24/7 con cinta, banco de pesas y elíptica. No se publica el tamaño.",
+				"sources": ["https://all.accor.com/hotel/A038/index.en.shtml", "https://uk.hotels.com/de533402-am2/gym-hotels-nancy-france"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/914573192.jpg?k=18d888360fc13150b4d5a90da2e6ef1e5e0a8b63249f6b7abed33a6c8f15ae30&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Best Western Plus Crystal, Hotel & Spa",
+				"stars": 4,
+				"area": "Rue Chanzy",
+				"bookingUrl": "https://www.booking.com/hotel/fr/crystal.html",
+				"website": "https://book.bestwestern.it/EN/hotel_in_Nancy_93449.aspx",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": ["Spa with sauna and steam room (50 min per guest per night)", "Indoor heated pool, 8:00 to 22:00"],
+					"access": "Complimentary"
+				},
+				"summary_en": "A complimentary gym open 24 hours, with a spa (sauna, steam room) and an indoor heated pool. Equipment and size are not published.",
+				"summary_es": "Un gimnasio gratuito abierto 24 horas, con spa (sauna, hammam) y piscina interior climatizada. No se publican equipos ni tamaño.",
+				"sources": ["https://book.bestwestern.it/EN/hotel_in_Nancy_93449.aspx", "https://uk.hotels.com/de533402-am2/gym-hotels-nancy-france"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/775886977.jpg?k=035430bd8f78e9ecb82e5ecd050728c5f9a755bf39a91378182011a9aeb6eadb&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Nemea Appart Hotel Home Suite Nancy Centre",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/nemea-nancy-appart.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Treadmills",
+						"Stationary bikes",
+						"Weight machines"
+					],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "A gym with treadmills, stationary bikes and weight machines, shown in the listing photos. Size and hours are not published.",
+				"summary_es": "Un gimnasio con cintas, bicicletas estáticas y máquinas de pesas, según las fotos del anuncio. No se publican tamaño ni horario.",
+				"sources": ["https://uk.hotels.com/de533402-am2/gym-hotels-nancy-france"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/565920273.jpg?k=3b1c02157fadfdd17173712987196ecb7af512ccca0cc0749574feb705eb8544&o=",
+					"gym": true
+				}
+			}
+		}
+	},
+	"nanjing-china": {
+		"city": "Nanjing",
+		"country": "China",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Internal gym rated Good on HotelGyms, with indoor and outdoor pools.",
+		"bestReason_es": "Gimnasio interno valorado como Bueno en HotelGyms, con piscinas interior y exterior.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "InterContinental Nanjing",
+				"stars": null,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Indoor pool",
+						"Outdoor pool",
+						"Spa"
+					],
+					"access": null
+				},
+				"summary_en": "Internal gym rated Good on HotelGyms. Indoor and outdoor pools are on the 8th floor, with a spa. Size and equipment are not published.",
+				"summary_es": "Gimnasio interno valorado como Bueno en HotelGyms. Las piscinas interior y exterior están en la planta 8, con spa. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.hotelgyms.com/hotels/cn/nanjing/intercontinental-nanjing/270857"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"nantes-france": {
+		"city": "Nantes",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A gym with modern machines and a sauna in a free wellness area, though guests call it small.",
+		"bestReason_es": "Un gimnasio con máquinas modernas y sauna en una zona wellness gratuita, aunque los huéspedes lo consideran pequeño.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "OKKO Hotels Nantes Centre Ville",
+				"stars": 4,
+				"area": "Centre",
+				"bookingUrl": "https://www.booking.com/hotel/fr/okko-hotels-nantes-chac-teau.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Sport machines"],
+					"extras": ["Sauna", "Free wellness area in the Club"],
+					"access": "Free wellness area"
+				},
+				"summary_en": "Sport machines and a sauna sit in a free wellness area. Reviewers say the equipment is modern and well maintained but the gym is small.",
+				"summary_es": "Máquinas deportivas y sauna en una zona wellness gratuita. Los usuarios indican que el equipo es moderno y está bien cuidado, pero el gimnasio es pequeño.",
+				"sources": [
+					"https://www.hotelgyms.com/hotels/fr/nantes/okko-hotels-nantes-chateau/832317",
+					"https://www.travelmyth.co.uk/Loire-Atlantique/Hotels/gym-four_star",
+					"https://uk.hotels.com/de1747837-am2/gym-hotels-nantes-and-vicinity-france"
+				],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/26253726.jpg?k=218bd342270b30b7345355fac5a369c01faa59576eaf6c0170b92f47900d650c&o=",
+					"gym": true
+				}
+			},
+			"standard": null,
+			"budget": {
+				"hotel": "Citadines Confluent Nantes",
+				"stars": null,
+				"area": "Confluent",
+				"bookingUrl": "https://www.booking.com/hotel/fr/citadines-confluent-nantes.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Pool"],
+					"access": null
+				},
+				"summary_en": "An aparthotel with a gym and pool, which reviewers describe as clean and well maintained. No size or equipment list is published. Star rating not found in the sources.",
+				"summary_es": "Un aparthotel con gimnasio y piscina, que los usuarios describen como limpios y bien cuidados. No se publica tamaño ni equipamiento. No se encontró la categoría en las fuentes.",
+				"sources": ["https://www.travelmyth.co.uk/Loire-Atlantique/Hotels/gym-four_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/222297703.jpg?k=ed11f20e89807ee0dd22ea365c1af7d3482514f8b5f238233629fbd947d31cce&o=",
+					"gym": false
+				}
+			}
+		}
+	},
+	"narbonne-france": {
+		"city": "Narbonne",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 5-star resort with a fitness area, spa and heated pool, but no published equipment details.",
+		"bestReason_es": "Un resort de 5 estrellas con zona de fitness, spa y piscina climatizada, pero sin detalles publicados del equipamiento.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Château L'Hospitalet Wine Resort Beach & Spa",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/le-chateau-lhospitalet.html",
+				"website": "https://www.chateau-hospitalet.com/en/",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Spa", "Heated outdoor pool, seasonal"],
+					"access": null
+				},
+				"summary_en": "A fitness corner sits alongside the spa and heated pool. Size, equipment and hours are not published.",
+				"summary_es": "Hay una zona de fitness junto al spa y la piscina climatizada. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.chateau-hospitalet.com/en/", "https://www.expedia.com/Narbonne-Hotels-Hotels-With-Fitness-Center.0-0-d6050703-tHotelswithFitnessCenter.Travel-Guide-Filter-Hotels"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/137484751.jpg?k=aff6235ee13dfdbbbbf2601ca7e330f197a4d395762d3ea8b12bb5036174425c&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Novotel Narbonne Sud",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/narbonne-sud.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Free access to a nearby fitness centre"],
+					"access": null
+				},
+				"summary_en": "Has an on-site fitness room and free access to a nearby fitness centre. No size or equipment details are published.",
+				"summary_es": "Tiene sala de fitness en el hotel y acceso gratuito a un gimnasio cercano. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.expedia.com/Narbonne-Hotels-Hotels-With-Fitness-Center.0-0-d6050703-tHotelswithFitnessCenter.Travel-Guide-Filter-Hotels", "https://id.hotels.com/en/de1644381-am2/gym-hotels-narbonne-france"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/914372780.jpg?k=22d313399552b0aa6311b63f562e273d97e677ea58fab771cb6a4eb994905c53&o=",
+					"gym": false
+				}
+			},
+			"budget": null
+		}
+	},
+	"newcastle-australia": {
+		"city": "Newcastle",
+		"country": "Australia",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "24-hour fitness centre at the highest-rated 4-star option found.",
+		"bestReason_es": "Centro de fitness abierto 24 horas en la opción de 4 estrellas mejor valorada.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Little National Hotel Newcastle",
+				"stars": 4,
+				"area": "Newcastle",
+				"bookingUrl": "https://www.booking.com/hotel/au/little-national-newcastle.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Fitness centre"],
+					"extras": [],
+					"access": "Free for guests"
+				},
+				"summary_en": "A 24-hour fitness centre at a 4-star hotel. Equipment was not described.",
+				"summary_es": "Un centro de fitness abierto 24 horas en un hotel de 4 estrellas. No se describe el equipamiento.",
+				"sources": ["https://www.expedia.co.uk/Newcastle-Hotels-Hotel-With-Gym.0-0-d6047788-thotelwithgym.Travel-Guide-Filter-Hotels"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/549747053.jpg?k=875a6c323c1b65973294d2f7a4be98bcbc4f89be99f601b57cfa90e7f12bf676&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Crown on Darby",
+				"stars": 4,
+				"area": "Newcastle",
+				"bookingUrl": "https://www.booking.com/hotel/au/crown-on-darby-pty-ltd.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness facilities"],
+					"extras": [],
+					"access": "Free for guests"
+				},
+				"summary_en": "Accessible fitness facilities at a 4-star hotel. No hours or equipment details were published.",
+				"summary_es": "Instalaciones de fitness accesibles en un hotel de 4 estrellas. No se publican horario ni equipamiento.",
+				"sources": ["https://www.expedia.co.uk/Newcastle-Hotels-Hotel-With-Gym.0-0-d6047788-thotelwithgym.Travel-Guide-Filter-Hotels"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/120661513.jpg?k=7f6255b9d034dc159d89e7c43cb9aca0c2d234a5570d4041f3f878ff33e9b890&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"niagara-falls-canada": {
+		"city": "Niagara Falls",
+		"country": "Canada",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Precor cardio, strength machines and free weights on a dedicated floor, open around the clock with Falls views.",
+		"bestReason_es": "Cardio Precor, máquinas de fuerza y peso libre en una planta propia, abierto todo el día y con vistas a las cataratas.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Niagara Falls Marriott Fallsview Hotel & Spa",
+				"stars": 5,
+				"area": "Fallsview",
+				"bookingUrl": "https://www.booking.com/hotel/ca/marriott-niagara-falls-fallsview-spa.html",
+				"website": "https://www.marriott.com/de/hotels/iagnf-niagara-falls-marriott-fallsview-hotel-and-spa/experiences",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Cardio machines",
+						"Strength equipment",
+						"Free weights",
+						"Universal gym"
+					],
+					"extras": [
+						"Indoor pool",
+						"Whirlpool",
+						"Burning Springs Spa & Thermal Pools"
+					],
+					"access": "Complimentary for guests"
+				},
+				"summary_en": "Cardio, strength equipment and free weights, with an indoor pool and an on-site thermal spa. Hotel pages disagree on hours (24/7 versus 6 am to 11 pm).",
+				"summary_es": "Cardio, máquinas de fuerza y peso libre, con piscina cubierta y spa termal en el hotel. Las páginas del hotel no coinciden en el horario (24/7 o de 6:00 a 23:00).",
+				"sources": ["https://www.marriott.com/de/hotels/iagnf-niagara-falls-marriott-fallsview-hotel-and-spa/experiences", "https://www.niagarafallshotels.com/hotels/marriott-niagara-falls-fallsview-spa"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/444167451.jpg?k=f39de0aada137e0cc0dd66ad5bce148563057a40f2d0e5e8a94773aaa52986c0&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Hilton Niagara Falls/Fallsview Hotel and Suites",
+				"stars": 4,
+				"area": "Fallsview",
+				"bookingUrl": "https://www.booking.com/hotel/ca/hilton-niagara-falls-fallsview.html",
+				"website": "https://niagarafallshilton.com/pool",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Precor cardio equipment",
+						"Strength training equipment",
+						"Free weights"
+					],
+					"extras": [
+						"Infinity pool",
+						"Splash pool",
+						"Falls views",
+						"Dedicated floor with key card access"
+					],
+					"access": "Room key card entry"
+				},
+				"summary_en": "Latest Precor equipment, strength gear and free weights on a dedicated floor, open around the clock with views of the Falls. Guest reviews on Hotels.com call the gym excellent and well maintained.",
+				"summary_es": "Equipos Precor, máquinas de fuerza y peso libre en una planta propia, abierto todo el día y con vistas a las cataratas. Las reseñas de Hotels.com describen el gimnasio como excelente y bien cuidado.",
+				"sources": [
+					"https://niagarafallshilton.com/pool",
+					"https://www.expedia.com.ph/Niagara-Falls-Hotels-Hilton-Niagara-FallsFallsview-Hotel-Suites.h463153.Hotel-Information",
+					"https://ca.hotels.com/ho169940/hilton-niagara-falls-fallsview-hotel-suites-niagara-falls-canada"
+				],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/927346311.jpg?k=7cbfc483143ce69f6f47cf41bdff1131655a4aa436f7420400e618beb382dec7&o=",
+					"gym": false
+				}
+			},
+			"budget": {
+				"hotel": "Fairfield by Marriott Niagara Falls, Canada",
+				"stars": 3,
+				"area": "Ferry St",
+				"bookingUrl": "https://www.booking.com/hotel/ca/fairfield-by-marriott-niagara-falls-canada.html",
+				"website": "https://www.marriott.com/en-us/hotels/iagif-fairfield-niagara-falls-canada/overview/",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Cardio machines",
+						"Peloton",
+						"Free weights",
+						"Yoga mat area"
+					],
+					"extras": ["Indoor pool"],
+					"access": "Complimentary for guests"
+				},
+				"summary_en": "Cardio, Peloton, free weights and a yoga mat area, open at all hours and free for guests. Indoor pool on site.",
+				"summary_es": "Cardio, Peloton, peso libre y zona de yoga, abierto a todas horas y gratuito para huéspedes. Piscina cubierta en el hotel.",
+				"sources": ["https://www.marriott.com/en-us/hotels/iagif-fairfield-niagara-falls-canada/overview/", "https://sa.trip.com/hotels/niagara-falls-hotel-detail-76115908/fairfield-niagara-falls-canada"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/751328215.jpg?k=79806fd7b00193e242a13c4b73b0786b1fba37ced5618573152d8e9d875ca374&o=",
+					"gym": true
+				}
+			}
+		}
+	},
+	"nice-france": {
+		"city": "Nice",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 24/7 fitness centre with Life Fitness equipment, a yoga studio and personal training.",
+		"bestReason_es": "Un centro de fitness 24/7 con equipos Life Fitness, estudio de yoga y entrenamiento personal.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Le Meridien Nice",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/lemeridiennice.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24/7",
+					"equipment": [
+						"Life Fitness equipment",
+						"Cardio and weight machines",
+						"Free weights"
+					],
+					"extras": ["Yoga studio", "Personal training"],
+					"access": null
+				},
+				"summary_en": "A fitness centre open 24/7 with Life Fitness machines, free weights and a yoga studio. Personal training is available. Size is not published.",
+				"summary_es": "Un centro de fitness abierto 24/7 con máquinas Life Fitness, peso libre y estudio de yoga. Hay entrenamiento personal. No se publica el tamaño.",
+				"sources": ["https://eurovistatrips.com/best-5-star-hotels-nice-gym/"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/554201579.jpg?k=89cb10336db69e55624b045e1d01b786066eb5805bb196d2d0825f15c914002b&o=",
+					"gym": false
+				}
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"nicosia-cyprus": {
+		"city": "Nicosia",
+		"country": "Cyprus",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The only Nicosia hotel with a branded gym and spa club offering more than 25 classes a week.",
+		"bestReason_es": "El único hotel de Nicosia con un club de gimnasio y spa propio que ofrece más de 25 clases a la semana.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hilton Park Nicosia",
+				"stars": 5,
+				"area": "Engomi",
+				"bookingUrl": "https://www.booking.com/hotel/cy/hilton-park-nicosia.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fully-equipped fitness centre (Sana Hiltonia Gym and Spa)"],
+					"extras": [
+						"More than 25 classes per week (aerobics, yoga, pilates)",
+						"Trainers and instructors",
+						"Indoor and outdoor pools",
+						"Sauna and steam room",
+						"Whirlpool"
+					],
+					"access": null
+				},
+				"summary_en": "The in-house Sana Hiltonia Gym and Spa runs more than 25 classes a week with trainers on hand. Size, hours and equipment list are not published.",
+				"summary_es": "El Sana Hiltonia Gym and Spa del hotel ofrece más de 25 clases a la semana con entrenadores. No se publican tamaño, horario ni lista de equipos.",
+				"sources": [
+					"https://medium.com/holidays-in-paphos-cyprus/hilton-park-nicosia-an-overview-b6f2b2b1aa32",
+					"https://www.priceline.com/hotel-deals/en-us/P5000056360/H1702204/hilton-park-nicosia.ssp",
+					"https://www.hotelgyms.com/hotels/cy/sort/hilton-nicosia/17193"
+				],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/484069612.jpg?k=79caca0a614e9fee19e8f6c069b4ff0a7de3267caaa016b2ce842bdc3e0cc0ea&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Cleopatra Hotel",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/cy/cleopatra.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fully equipped gym"],
+					"extras": [
+						"Steam bath",
+						"Sauna",
+						"Seasonal outdoor pool (roughly May to October)"
+					],
+					"access": null
+				},
+				"summary_en": "A fully equipped gym with steam bath and sauna available when the gym is open. No size, hours or equipment details are published.",
+				"summary_es": "Un gimnasio completamente equipado con baño de vapor y sauna disponibles cuando el gimnasio está abierto. No se publican tamaño, horario ni equipos.",
+				"sources": ["https://www.hotelgyms.com/hotels/cy/nicosia/cleopatra-hotel/341532", "https://www.priceline.com/hotel-deals/en-us/P5000056360/H3164505/cleopatra-hotel.ssp"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/474267843.jpg?k=ae44da1c2335217f13b5cf06403ec5d8759d6705415173a173a6d521cfb735ce&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"north-vancouver-canada": {
+		"city": "North Vancouver",
+		"country": "Canada",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A fitness centre with a yoga studio, 25 m indoor pool, sauna and steam room in the same hotel.",
+		"bestReason_es": "Gimnasio con estudio de yoga, piscina cubierta de 25 m, sauna y baño de vapor en el mismo hotel.",
+		"luxuryNote": "No 5-star hotel with a gym confirmed in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Pinnacle Hotel at the Pier",
+				"stars": 4,
+				"area": "Lower Lonsdale waterfront",
+				"bookingUrl": "https://www.booking.com/hotel/ca/pinnacle-at-the-pier.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness centre (equipment not listed)"],
+					"extras": [
+						"25 m indoor pool",
+						"Yoga studio",
+						"Sauna",
+						"Steam room",
+						"Hot tub"
+					],
+					"access": "For hotel guests"
+				},
+				"summary_en": "Fitness centre with a yoga studio, a 25 m heated indoor pool, sauna, steam room and hot tub. Equipment and hours are not published.",
+				"summary_es": "Gimnasio con estudio de yoga, piscina climatizada cubierta de 25 m, sauna, baño de vapor y jacuzzi. No publican equipamiento ni horario.",
+				"sources": ["https://hotels.edreams.net/hotel/ca/pinnacle-at-the-pier.en-gb.html", "https://www.orbitz.com/Vancouver-Hotels-Pinnacle-Hotel-At-The-Pier.h3049471.Hotel-Information"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/120902660.jpg?k=43e66adae74d7a2a7e86f004907de2b46ad8fa9f6b55bd9c214ea0075d6bf1e3&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Coast Lonsdale Quay Hotel",
+				"stars": 4,
+				"area": "Lonsdale Quay",
+				"bookingUrl": null,
+				"website": "https://www.coasthotels.com/coast-lonsdale-quay-hotel/services",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Treadmills",
+						"Elliptical machine",
+						"Multi-functional gym"
+					],
+					"extras": [],
+					"access": "For hotel guests"
+				},
+				"summary_en": "A 24-hour fitness centre with treadmills, an elliptical machine and a multi-functional gym. No pool listed.",
+				"summary_es": "Gimnasio abierto 24 horas con cintas de correr, una elíptica y una máquina multifunción. No tiene piscina.",
+				"sources": ["https://www.coasthotels.com/coast-lonsdale-quay-hotel/services", "https://za.hotels.com/ho133210/lonsdale-quay-hotel-north-vancouver-canada"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"odense-denmark": {
+		"city": "Odense",
+		"country": "Denmark",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Open 24 hours and free for guests, the only Odense gym with confirmed round-the-clock free access.",
+		"bestReason_es": "Abierto las 24 horas y gratis para huéspedes, el único gimnasio de Odense con acceso gratuito confirmado a cualquier hora.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Scandic Odense",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/dk/scandic-odense.html",
+				"website": "https://www.scandichotels.com/hotels/denmark/odense/scandic-odense",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": [],
+					"access": "Free of charge for guests"
+				},
+				"summary_en": "The hotel describes a modern gym open every day around the clock, free for guests. Size and equipment are not published.",
+				"summary_es": "El hotel describe un gimnasio moderno abierto todos los días a cualquier hora y gratis para huéspedes. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.scandichotels.com/hotels/denmark/odense/scandic-odense", "https://www.expedia.co.uk/Odense-Hotels-Hotel-With-Gym.0-0-d2638-thotelwithgym.Travel-Guide-Filter-Hotels"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/654337653.jpg?k=488c69e46ece7c739718cb8df7c6d836bf84016404f173a0e1bf012322786e4d&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "First Hotel Grand",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/dk/first-grand.html",
+				"website": "https://www.firsthotels.com/hotels/denmark/odense/first-hotel-grand/",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Expedia lists 24-hour fitness facilities. Guest reviews call the gym clean and adequately equipped.",
+				"summary_es": "Expedia indica instalaciones de fitness abiertas las 24 horas. Los huéspedes describen el gimnasio como limpio y con equipamiento adecuado.",
+				"sources": ["https://www.expedia.co.uk/Odense-Hotels-Hotel-With-Gym.0-0-d2638-thotelwithgym.Travel-Guide-Filter-Hotels", "https://www.travelmyth.co.uk/Funen/Hotels/gym-four_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/56824977.jpg?k=158397b5bb1e6922ce1b3b944fc11cc6208958a981fa499eda5e38bc1d85464a&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Aiden by Best Western Odense",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/dk/aiden-by-best-western-odense.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Listed with a fitness room. No size, equipment or hours are published.",
+				"summary_es": "Figura con sala de fitness. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://ca.trip.com/hotels/gym/city/dk/odense.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/832643392.jpg?k=eacd5cf109a9f5f4c9d0bcba4bbfe54f6066d1c9acf84b506584fa6cbaee64b6&o=",
+					"gym": true
+				}
+			}
+		}
+	},
+	"olomouc-czechia": {
+		"city": "Olomouc",
+		"country": "Czechia",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "A large gym at the neighbouring sports centre, free for guests, with cardio, weights, hot yoga and personal training.",
+		"bestReason_es": "Un gimnasio grande en el centro deportivo contiguo, gratis para los huéspedes, con cardio, pesas, hot yoga y entrenamiento personal.",
+		"luxuryNote": "No 5-star hotel with a confirmed gym found in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Nutrend World",
+				"stars": null,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/cz/nutrend-world.html",
+				"website": "https://nutrendworld.cz/en/fitness",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness centre"],
+					"extras": ["Health club", "Yoga and fitness classes on site"],
+					"access": "Unlimited fitness entry for hotel guests"
+				},
+				"summary_en": "Hotel guests get unlimited fitness entry, and the property lists a health club with yoga and fitness classes. Size, hours and equipment are not published. Expedia shows 4.5 stars.",
+				"summary_es": "Los huéspedes tienen entrada ilimitada al fitness y el alojamiento cuenta con un health club con clases de yoga y fitness. No se publican tamaño, horario ni equipos. Expedia muestra 4,5 estrellas.",
+				"sources": ["https://www.expedia.co.uk/Olomouc-Hotels-Hotel-With-Gym.0-0-d9208-thotelwithgym.Travel-Guide-Filter-Hotels", "https://www.nutrendworld.cz/en/"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/560467979.jpg?k=91b2607bc6939dd1c5e80ee3c5005d7e15d4a6e2e705a955639b625d02c40b3f&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "NH Collection Olomouc Congress",
+				"stars": null,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/cz/olomouc-congress.html",
+				"website": "https://www.nh-hotels.com/en/hotel/nh-collection-olomouc-congress/services",
+				"gym": {
+					"sizeM2": null,
+					"hours": "Mon-Fri 6:00-22:00, Sat-Sun 7:00-22:00",
+					"equipment": ["Treadmills, cross trainers and exercise bikes", "Weights"],
+					"extras": ["Milon circle, hot pilates and hot yoga classes", "Personal training available"],
+					"access": "Free for guests"
+				},
+				"summary_en": "A large gym at the neighbouring sports centre with cardio machines and weights, free for guests. Hot pilates and hot yoga classes and personal training are offered. Expedia shows 4.5 stars.",
+				"summary_es": "Un gimnasio grande en el centro deportivo vecino con máquinas de cardio y pesas, gratis para los huéspedes. Ofrece clases de hot pilates y hot yoga y entrenamiento personal. Expedia muestra 4,5 estrellas.",
+				"sources": ["https://www.nh-hotels.com/en/hotel/nh-collection-olomouc-congress/services", "https://www.expedia.co.uk/Olomouc-Hotels-Hotel-With-Gym.0-0-d9208-thotelwithgym.Travel-Guide-Filter-Hotels"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/652459490.jpg?k=7e2a275c6695399d3549df1e9f2617eedd829620e3e3be4c83e40a1e906fb548&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"opatija-croatia": {
+		"city": "Opatija",
+		"country": "Croatia",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Only tier confirmed; fitness area with free access inside a wellness and spa centre.",
+		"bestReason_es": "Única categoría confirmada; zona de fitness con acceso gratuito dentro de un centro wellness y spa.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hotel Ambasador",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Swimming pool",
+						"Sauna",
+						"Spa"
+					],
+					"access": "Free for guests (Wellness & Spa Centre with fitness area)"
+				},
+				"summary_en": "Fitness area inside the Wellness & Spa Centre, free for guests, with pools and a spa relaxation zone. Equipment, size and hours are not confirmed.",
+				"summary_es": "Zona de fitness dentro del centro Wellness & Spa, gratuita para huéspedes, con piscinas y zona de relax. No se confirman equipos, tamaño ni horario.",
+				"sources": ["https://www.hotelgyms.com/hotels/hr/opatija/hotel-ambasador-liburnia/20795"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"osijek-croatia": {
+		"city": "Osijek",
+		"country": "Croatia",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Only hotel found with a confirmed gym, plus sauna, steam room and hot tub.",
+		"bestReason_es": "El único hotel con gimnasio confirmado, además de sauna, baño de vapor y jacuzzi.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Hotel Osijek",
+				"stars": 4,
+				"area": "Riverside",
+				"bookingUrl": "https://www.booking.com/hotel/hr/osijek.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Sauna",
+						"Steam room",
+						"Hot tub",
+						"Spa"
+					],
+					"access": null
+				},
+				"summary_en": "Fitness centre with a sauna, steam room and hot tub. GymFactor rates the gym Poor and gives no size, hours or equipment.",
+				"summary_es": "Centro de fitness con sauna, baño de vapor y jacuzzi. GymFactor valora el gimnasio como Poor y no indica tamaño, horario ni equipamiento.",
+				"sources": ["https://hotels.com/ho364951/hotel-osijek-osijek-croatia", "https://www.hotelgyms.com/hotels/hr/osijek/hotel-osijek/174277"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/826523248.jpg?k=2ad03bfb865fadb10aa581213903e2cea2e020c686b2c7c9b334fea35d45d04b&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"ottawa-canada": {
+		"city": "Ottawa",
+		"country": "Canada",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Technogym machines and free weights, with an Art Deco indoor pool in the same health club.",
+		"bestReason_es": "Máquinas Technogym y peso libre, con una piscina cubierta Art Deco en el mismo club.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Fairmont Château Laurier",
+				"stars": null,
+				"area": "Downtown",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Technogym machines",
+						"Treadmills and ellipticals",
+						"Schwinn Pro Spin Bike",
+						"Concept 2 rower",
+						"Leg press and chest press",
+						"Free weights"
+					],
+					"extras": ["Art Deco indoor pool", "Registered massage therapy"],
+					"access": "Free for hotel guests; paid memberships for Ottawa residents"
+				},
+				"summary_en": "A health club with Technogym machines, a Concept 2 rower and free weights, plus an Art Deco indoor pool. Free for guests; locals can buy memberships.",
+				"summary_es": "Un club de salud con máquinas Technogym, remo Concept 2 y peso libre, además de una piscina cubierta Art Deco. Gratis para huéspedes; los residentes pueden comprar membresías.",
+				"sources": ["https://www.fairmont.com/de/hotels/ottawa/fairmont-chateau-laurier/wellness.html", "https://www.travelmyth.ie/Ottawa/Hotels/gym"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"budget": {
+				"hotel": "Homewood Suites By Hilton Ottawa Downtown",
+				"stars": null,
+				"area": "Downtown",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Modern, well-maintained equipment"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "A recently renovated gym with modern equipment and 24-hour access, according to guest reviews.",
+				"summary_es": "Un gimnasio renovado hace poco con equipamiento moderno y acceso 24 horas, según las opiniones de huéspedes.",
+				"sources": ["https://www.travelmyth.ie/Ottawa/Hotels/gym"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"oulu-finland": {
+		"city": "Oulu",
+		"country": "Finland",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 24-hour gym and sauna, the best confirmed option in a city with little published gym detail.",
+		"bestReason_es": "Gimnasio abierto 24 horas y sauna, la mejor opción confirmada en una ciudad con poca información publicada.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Scandic Oulu City",
+				"stars": 4,
+				"area": "City Centre",
+				"bookingUrl": "https://www.booking.com/hotel/fi/scandic-oulu.html",
+				"website": "https://www.scandichotels.com/hotels/finland/oulu/scandic-oulu-city",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": ["Sauna (17:00-22:00)"],
+					"access": null
+				},
+				"summary_en": "A gym open at all times plus a gender-separated sauna open 17:00 to 22:00. Equipment and size are not published.",
+				"summary_es": "Gimnasio abierto a todas horas y sauna separada por sexos de 17:00 a 22:00. No se publican equipamiento ni tamaño.",
+				"sources": [
+					"https://www.scandichotels.com/hotels/finland/oulu/scandic-oulu-city",
+					"https://www.kayak.com/Oulu-Hotels-Scandic-Oulu-City.160931.ksp",
+					"https://www.expedia.com/Destinations-In-Oulu-Hotels-With-Fitness-Center.0-0-d6056249-tHotelswithFitnessCenter.Hotel-Filter-Destinations"
+				],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/328714094.jpg?k=caaeb0b974c5131c920b19417e43b9aa5eb64cbfc22e1e287be36a2df917ca78&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Original Sokos Hotel Arina",
+				"stars": null,
+				"area": "City Centre",
+				"bookingUrl": "https://www.booking.com/hotel/fi/sokos-arina.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": ["Sauna"],
+					"access": null
+				},
+				"summary_en": "A 24-hour gym and sauna are listed. Official stars were not confirmed (one listing shows 4.5).",
+				"summary_es": "Se indican gimnasio 24 horas y sauna. No se confirmaron las estrellas oficiales (un listado muestra 4,5).",
+				"sources": ["https://www.orbitz.com/Oulu-Hotels-Hotels-With-Fitness-Center.0-0-d2717-tHotelswithFitnessCenter.Travel-Guide-Filter-Hotels", "https://www.expedia.com/Destinations-In-Oulu-Hotels-With-Fitness-Center.0-0-d6056249-tHotelswithFitnessCenter.Hotel-Filter-Destinations"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/298797146.jpg?k=a07b578acf8e6b83a96a1b594b87724b7b2a3cf7d68d552c3f4b1ed7d8f333f6&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Hotel Lasaretti",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/fi/lasaretti.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "A 24-hour gym is listed. No equipment or size details are published.",
+				"summary_es": "Se indica un gimnasio abierto 24 horas. No se publican detalles de equipamiento ni tamaño.",
+				"sources": ["https://www.orbitz.com/Oulu-Hotels-Hotels-With-Fitness-Center.0-0-d2717-tHotelswithFitnessCenter.Travel-Guide-Filter-Hotels", "https://www.expedia.com/Destinations-In-Oulu-Hotels-With-Fitness-Center.0-0-d6056249-tHotelswithFitnessCenter.Hotel-Filter-Destinations"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/191517657.jpg?k=37a69fb60dee254ff9248dc809607a1e1bf52216d4e67ac03758fd52d83634df&o=",
+					"gym": false
+				}
+			}
+		}
+	},
+	"paphos-cyprus": {
+		"city": "Paphos",
+		"country": "Cyprus",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "The only Paphos hotel found with a documented health club: cardio, weights, classes, indoor pool, sauna and steam bath.",
+		"bestReason_es": "El único hotel de Paphos con un health club documentado: cardio, pesas, clases, piscina cubierta, sauna y baño de vapor.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Elysium",
+				"stars": 5,
+				"area": "Queen Verenikis Street",
+				"bookingUrl": "https://www.booking.com/hotel/cy/elysium-paphos.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Opium Health Spa",
+						"Sauna",
+						"Multi-level outdoor pool",
+						"2 tennis courts"
+					],
+					"access": null
+				},
+				"summary_en": "Listed as a 5-star beachfront hotel with a gym described as well-equipped. No size, hours or equipment details are published.",
+				"summary_es": "Hotel de 5 estrellas frente al mar con un gimnasio descrito como bien equipado. No se publican tamaño, horario ni equipos.",
+				"sources": ["https://www.hotelgyms.com/hotels/cy/paphos/elysium/43917", "https://www.travelmyth.co.uk/Cyprus/Hotels/gym"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/867001452.jpg?k=5b410d91788aea27a01fc41c3f04877acaf652476ad457874f95584b5325bd4b&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Alexander The Great Beach Hotel",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/cy/alexander-the-great-beach.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Cardio machines", "Weights"],
+					"extras": [
+						"Fitness classes",
+						"Indoor pool",
+						"Sauna",
+						"Steam bath",
+						"Spa"
+					],
+					"access": null
+				},
+				"summary_en": "A health club with cardio machines and weights, fitness classes, an indoor pool, sauna and steam bath. Size and hours are not published.",
+				"summary_es": "Un health club con máquinas de cardio y pesas, clases de fitness, piscina cubierta, sauna y baño de vapor. No se publican tamaño ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Cyprus/Hotels/gym", "https://www.frommers.com/destinations/paphos/hotels/alexander-the-great-beach-hotel"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/338583149.jpg?k=d7a3e0c72b5f52756deb8cedebaa5370fdce24bab21ba6d16c159b6174660c54&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	paris: {
+		"city": "Paris",
+		"country": "France",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "24-hour gym with free weights up to 50 kg, an indoor pool and personal trainers.",
+		"bestReason_es": "Gimnasio 24 horas con peso libre de hasta 50 kg, piscina cubierta y entrenadores personales.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Four Seasons Hotel George V Paris",
+				"stars": null,
+				"area": "8th arrondissement, near the Champs-Elysees",
+				"bookingUrl": null,
+				"website": "https://www.fourseasons.com/paris/",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Life Fitness machines",
+						"Treadmills and ellipticals",
+						"Free weights up to 50 kg",
+						"Stretching area"
+					],
+					"extras": [
+						"17 m indoor pool",
+						"Steam rooms",
+						"Personal trainers",
+						"Spa yoga"
+					],
+					"access": "Hotel guests and Spa members only"
+				},
+				"summary_en": "Open 24 hours with Life Fitness machines and free weights up to 50 kg. It has a 17 m indoor pool, steam rooms and personal trainers.",
+				"summary_es": "Abierto 24 horas, con máquinas Life Fitness y peso libre de hasta 50 kg. Tiene piscina cubierta de 17 m, baños de vapor y entrenadores personales.",
+				"sources": ["https://eurovistatrips.com/best-hotels-paris-fitness-center/", "https://www.fourseasons.com/paris/spa/fitness/"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Novotel Paris Centre Tour Eiffel",
+				"stars": null,
+				"area": "15th arrondissement, near the Eiffel Tower",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Treadmills",
+						"Bikes",
+						"Ellipticals",
+						"Free weights up to 20 kg"
+					],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "A small gym open 24 hours with treadmills, bikes, ellipticals and free weights up to 20 kg.",
+				"summary_es": "Un gimnasio pequeño abierto 24 horas con cintas de correr, bicicletas, elípticas y peso libre de hasta 20 kg.",
+				"sources": ["https://eurovistatrips.com/best-hotels-paris-fitness-center/"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"perth-australia": {
+		"city": "Perth",
+		"country": "Australia",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 24-hour fitness centre with an outdoor pool; no further gym details are published.",
+		"bestReason_es": "Un centro de fitness 24 horas con piscina exterior; no hay más datos publicados del gimnasio.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Pan Pacific Perth",
+				"stars": 5,
+				"area": "Perth CBD",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": ["Outdoor swimming pool"],
+					"access": null
+				},
+				"summary_en": "A fitness centre open 24 hours, with an outdoor pool. Size and equipment are not published.",
+				"summary_es": "Centro de fitness abierto 24 horas, con piscina exterior. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.hotelgyms.com/hotels/au/perth/pan-pacific-perth/282161"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"phnom-penh-cambodia": {
+		"city": "Phnom Penh",
+		"country": "Cambodia",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "24-hour guest access with a skyline-view gym and personal training offered.",
+		"bestReason_es": "Acceso de 24 horas para huéspedes, con gimnasio con vistas al skyline y entrenamiento personal.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Rosewood Phnom Penh",
+				"stars": null,
+				"area": "Wat Phnom area",
+				"bookingUrl": null,
+				"website": "https://www.rosewoodhotels.com/en/phnom-penh/wellness/fitness",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h for hotel guests",
+					"equipment": ["State-of-the-art equipment"],
+					"extras": ["Personal training", "Membership for non-guests (6 am to 9 pm)"],
+					"access": "24-hour access for in-house guests"
+				},
+				"summary_en": "A naturally lit fitness centre overlooking the city skyline, open 24 hours to guests. Personal training and outside memberships are available.",
+				"summary_es": "Un centro de fitness con luz natural y vistas al skyline, abierto 24 horas para huéspedes. Ofrece entrenamiento personal y membresías para no huéspedes.",
+				"sources": ["https://www.rosewoodhotels.com/en/phnom-penh/wellness/fitness"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"porec-croatia": {
+		"city": "Poreč",
+		"country": "Croatia",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "24/7 gym plus a daily Stay Fit programme with trainer-led sessions.",
+		"bestReason_es": "Gimnasio 24/7 y programa diario Stay Fit con sesiones dirigidas por entrenadores.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Valamar Collection Marea Suites",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": null,
+				"website": "https://www.valamar.com/en/hotels-porec/valamar-marea-suites/sport-activities",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24/7",
+					"equipment": [],
+					"extras": [
+						"Stay Fit programme with group workouts, yoga and aqua sessions (1 June to 1 September)",
+						"Individual training by reservation",
+						"Outdoor fitness equipment at nearby sports courts"
+					],
+					"access": null
+				},
+				"summary_en": "Gym and fitness open 24/7, with a Stay Fit group programme and individual training by reservation. Size and equipment are not published.",
+				"summary_es": "Gimnasio y fitness abiertos 24/7, con programa grupal Stay Fit y entrenamiento individual con reserva. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.valamar.com/en/hotels-porec/valamar-marea-suites/sport-activities"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Valamar Diamant Hotel",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/hr/diamant.html",
+				"website": "https://www.valamar.com/en/hotels-porec/valamar-diamant-hotel/sport-activities",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Cardian Fitness & Recovery with trainer-led workouts",
+						"Indoor and outdoor 25 m pools",
+						"Sauna",
+						"Stay Fit programme"
+					],
+					"access": null
+				},
+				"summary_en": "Fitness centre with trainer-led workouts at Cardian Fitness & Recovery, plus indoor and outdoor 25 m pools. Size and equipment are not published.",
+				"summary_es": "Centro de fitness con entrenamientos dirigidos en Cardian Fitness & Recovery, además de piscinas interior y exterior de 25 m. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.valamar.com/en/hotels-porec/valamar-diamant-hotel/sport-activities", "https://www.hotelgyms.com/hotels/hr/porec/hotel-valamar-diamant/19703"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/899434816.jpg?k=29d72f16b4c27d7c3194b920c4d442c61e0bfdc897ce23f3a4ce2c1d79e8aebd&o=",
+					"gym": false
+				}
+			},
+			"budget": null
+		}
+	},
+	"prague-czechia": {
+		"city": "Prague",
+		"country": "Czechia",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Dedicated 200 m2 Technogym gym open 24 hours.",
+		"bestReason_es": "Gimnasio Technogym de 200 m2 abierto las 24 horas.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Four Seasons Hotel Prague",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Cardio machines with TV monitors", "Free weights"],
+					"extras": ["Saunas", "Massage rooms"],
+					"access": "For guests"
+				},
+				"summary_en": "A small gym with cardio machines and free weights, with separate saunas for men and women. Reviewers note it has no natural light.",
+				"summary_es": "Un gimnasio pequeño con máquinas de cardio y peso libre, y saunas separadas para hombres y mujeres. Los comentarios señalan que no tiene luz natural.",
+				"sources": ["https://tripexpert.com/prague/hotels/four-seasons-hotel-prague/fitness-center"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Radisson Blu Hotel, Prague",
+				"stars": null,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": 200,
+					"hours": "24h",
+					"equipment": [
+						"Technogym treadmills and ellipticals",
+						"Free weights",
+						"Strength machines"
+					],
+					"extras": ["Yoga and stretching area", "Air conditioning"],
+					"access": "Free for guests"
+				},
+				"summary_en": "A 200 m2 Technogym gym open 24 hours, with free weights, strength machines and a yoga area.",
+				"summary_es": "Un gimnasio Technogym de 200 m2 abierto 24 horas, con peso libre, máquinas de fuerza y zona de yoga.",
+				"sources": ["https://www.radissonhotels.com/en-us/hotels/radisson-blu-prague/fitness-wellness"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"puerto-varas-chile": {
+		"city": "Puerto Varas",
+		"country": "Chile",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A gym with an indoor pool, sauna and spa; size and equipment are not published.",
+		"bestReason_es": "Un gimnasio con piscina interior, sauna y spa; no se publican tamaño ni equipamiento.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Wyndham Puerto Varas Pettra",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/cl/cumbres-puerto-varas.html",
+				"website": "https://wyndhamhotels.com/wyndham/puerto-varas-chile/wyndham-puerto-varas-pettra/overview",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Modern gym"],
+					"extras": [
+						"Indoor pool",
+						"Sauna",
+						"Spa with facial treatments and massage"
+					],
+					"access": "Guests"
+				},
+				"summary_en": "A modern gym next to an indoor pool, sauna and spa. Size, equipment and hours are not published.",
+				"summary_es": "Un gimnasio moderno junto a una piscina interior, sauna y spa. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.es.momondo.com/hoteles/puerto-varas/Hotel-Cumbres-Puerto-Varas.mhd331929.ksp", "https://www.hotelgyms.com/hotels/cl/puerto-varas/hotel-cumbres-puerto-varas/270411"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/874470486.jpg?k=8306d46882cf45df41fe7760af28188b1a02087617d9f12e99400400f042d508&o=",
+					"gym": true
+				}
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"pula-croatia": {
+		"city": "Pula",
+		"country": "Croatia",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Gym inside a 550 m2 wellness area with a sea-water indoor pool, Turkish bath and saunas.",
+		"bestReason_es": "Gimnasio dentro de un área wellness de 550 m2 con piscina interior de agua de mar, baño turco y saunas.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Grand Hotel Brioni Pula, A Radisson Collection Hotel",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/hr/brioni.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Two-level spa and wellness centre (Gemma Di Brioni)", "Swimming pool"],
+					"access": null
+				},
+				"summary_en": "A fitness centre is listed among the facilities, plus a two-level spa and a pool. Gym size, equipment and hours are not published.",
+				"summary_es": "Figura un centro de fitness entre las instalaciones, además de un spa de dos niveles y una piscina. No se publican tamaño, equipamiento ni horario del gimnasio.",
+				"sources": ["https://ie.secretescapes.com/grand-hotel-brioni-pula-a-radisson-collection-hotel-pula-istria-croatia/sale-hotel", "https://ca.trip.com/hotels/gym/city/hr/pula.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/574953706.jpg?k=98e37a2352419b95cf6b0aa34e0c5f92e250f3c643aefb5a79727cbf9d95c504&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Park Plaza Histria Pula",
+				"stars": 4,
+				"area": "Verudela",
+				"bookingUrl": "https://www.booking.com/hotel/hr/park-plaza-histria-pula.html",
+				"website": "https://www.arenahotels.com/en/hotel/park-plaza-histria/facilities",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fully equipped gym (details not listed)"],
+					"extras": [
+						"550 m2 wellness and spa area",
+						"Indoor sea-water pool (12.5 x 25 m)",
+						"Outdoor sea-water pool",
+						"Finnish sauna, Turkish bath, ice bath",
+						"Fitness classes (yoga, Pilates, HIIT, Aqua Gym)"
+					],
+					"access": null
+				},
+				"summary_en": "A fully equipped gym sits within a 550 m2 wellness area with an indoor sea-water pool, saunas and a Turkish bath. Gym size and hours are not published.",
+				"summary_es": "Un gimnasio totalmente equipado dentro de un área wellness de 550 m2 con piscina interior de agua de mar, saunas y baño turco. No se publican tamaño ni horario del gimnasio.",
+				"sources": [
+					"https://www.hotelgyms.com/hotels/hr/pula/park-plaza-histria-pula/372783",
+					"https://www.arenahotels.com/en/hotel/park-plaza-histria/facilities",
+					"https://tophotels.com/hotel/croatia/park-plaza-histria-hotel-pula"
+				],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/647704084.jpg?k=6f000b07c93a2db4e1b0193bc3223a1f66110013553e7a68ff3030e3a8071641&o=",
+					"gym": false
+				}
+			},
+			"budget": null
+		}
+	},
+	"punta-arenas-chile": {
+		"city": "Punta Arenas",
+		"country": "Chile",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "A 4-star hotel with a gym and a spa with sauna and steam bath; no size or equipment published.",
+		"bestReason_es": "Un hotel de 4 estrellas con gimnasio y spa con sauna y baño de vapor; no se publican tamaño ni equipamiento.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Hotel Cabo de Hornos",
+				"stars": 4,
+				"area": "Plaza Muñoz Gamero",
+				"bookingUrl": "https://www.booking.com/hotel/cl/cabo-de-hornos.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Spa with massages",
+						"Sauna",
+						"Steam bath"
+					],
+					"access": null
+				},
+				"summary_en": "A 4-star hotel in Plaza Muñoz Gamero with a gym and a spa with sauna and steam bath. Size, equipment and hours are not published.",
+				"summary_es": "Un hotel de 4 estrellas en la Plaza Muñoz Gamero con gimnasio y spa con sauna y baño de vapor. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.es.momondo.com/hoteles/punta-arenas/Hotel-Cabo-De-Hornos.mhd49357.ksp"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/687321588.jpg?k=dfddb74aed42b6afc2f40cdef686ee86179828a6322566f6c60b05dcc13e7e86&o=",
+					"gym": false
+				}
+			},
+			"budget": null
+		}
+	},
+	"qingdao-china": {
+		"city": "Qingdao",
+		"country": "China",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A health club with a 25 m pool, sauna and steam room alongside the gym.",
+		"bestReason_es": "Un club de salud con piscina de 25 m, sauna y baño de vapor junto al gimnasio.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Shangri-La Hotel, Qingdao",
+				"stars": null,
+				"area": "Shinan",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"25 m pool",
+						"Children's pool",
+						"Sauna",
+						"Steam room",
+						"Spa"
+					],
+					"access": null
+				},
+				"summary_en": "Fitness centre rated Good on HotelGyms, within a Health Club with a 25 m pool, sauna and steam room. Size and equipment are not published.",
+				"summary_es": "Gimnasio valorado como Bueno en HotelGyms, dentro de un Health Club con piscina de 25 m, sauna y baño de vapor. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.hotelgyms.com/hotels/cn/qingdao/shangri-la-hotel-qingdao/243787"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"quebec-city-canada": {
+		"city": "Quebec City",
+		"country": "Canada",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Gym open 24/7 with a pool, whirlpool, steam bath and dry sauna.",
+		"bestReason_es": "Gimnasio abierto 24 horas con piscina, jacuzzi, baño de vapor y sauna seca.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Fairmont Le Château Frontenac",
+				"stars": null,
+				"area": "Old Quebec",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": [
+						"Pool",
+						"Whirlpool",
+						"Steam bath",
+						"Dry sauna"
+					],
+					"access": null
+				},
+				"summary_en": "Gym open 24/7, with a pool, whirlpool, steam bath and dry sauna. No equipment details found.",
+				"summary_es": "Gimnasio abierto 24 horas, con piscina, jacuzzi, baño de vapor y sauna seca. No se encontraron datos del equipamiento.",
+				"sources": ["https://www.travelmyth.ie/Canada/Hotels/gym"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"quito-ecuador": {
+		"city": "Quito",
+		"country": "Ecuador",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Only confirmed option: a hotel gym with two pools, tennis and squash courts and a spa.",
+		"bestReason_es": "Única opción confirmada: gimnasio de hotel con dos piscinas, pistas de tenis y squash y spa.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Swissotel Quito",
+				"stars": 5,
+				"area": "Quito",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"2 pools",
+						"Tennis and squash courts",
+						"Sauna",
+						"Spa"
+					],
+					"access": "For hotel guests"
+				},
+				"summary_en": "Has a fitness center, two pools, tennis and squash courts, a sauna and a spa. No equipment details found.",
+				"summary_es": "Tiene gimnasio, dos piscinas, pistas de tenis y squash, sauna y spa. No se encontraron detalles del equipamiento.",
+				"sources": ["https://www.hotelgyms.com/hotels/ec/quito/swissotel-quito/249917", "https://www.priceline.com/hotel-deals/en-us/P5000469696/H5345005/swissotel-quito.ssp"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"recife-brazil": {
+		"city": "Recife",
+		"country": "Brazil",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "A 4-star beachfront hotel with an equipped fitness centre and sauna; no larger gym could be confirmed.",
+		"bestReason_es": "Hotel de 4 estrellas frente a la playa con gimnasio equipado y sauna; no se pudo confirmar un gimnasio mayor.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Grand Mercure Recife Boa Viagem",
+				"stars": 4,
+				"area": "Boa Viagem",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Equipped fitness centre (equipment not itemized)"],
+					"extras": ["Sauna", "Spa and beauty services on request"],
+					"access": "For hotel guests"
+				},
+				"summary_en": "A 4-star hotel facing Boa Viagem Beach with an equipped fitness centre for guests and a sauna. Size, hours and equipment are not published.",
+				"summary_es": "Hotel de 4 estrellas frente a la playa de Boa Viagem con gimnasio equipado para huéspedes y sauna. No constan tamaño, horario ni equipamiento.",
+				"sources": ["https://www.hotelgyms.com/hotels/br/recife/grand-mercure-recife-boa-viagem/241806"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"regina-canada": {
+		"city": "Regina",
+		"country": "Canada",
+		"checked": "2026-11-02",
+		"best": "budget",
+		"bestReason_en": "Only Regina hotel gym confirmed: full cardio and resistance equipment, open 24 hours.",
+		"bestReason_es": "El único gimnasio de hotel confirmado en Regina: cardio y resistencia completos, abierto 24 horas.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": null,
+			"budget": {
+				"hotel": "Delta Hotels by Marriott Regina",
+				"stars": null,
+				"area": "Downtown",
+				"bookingUrl": "https://www.booking.com/hotel/ca/delta-regina.html",
+				"website": "https://www.marriott.com/en-us/hotels/yqrdr-delta-hotels-regina",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Full line of cardio equipment", "Resistance weight training equipment"],
+					"extras": ["Indoor pool with waterslide", "Whirlpool"],
+					"access": "Complimentary for guests"
+				},
+				"summary_en": "Full line of cardio and resistance weight equipment, open 24 hours and free for guests. Indoor pool with waterslide. Listed at 3.5 stars on Hotels.com, so tier is approximate.",
+				"summary_es": "Equipamiento completo de cardio y pesas de resistencia, abierto 24 horas y gratuito para huéspedes. Piscina cubierta con tobogán. Aparece con 3,5 estrellas en Hotels.com, por lo que el nivel es aproximado.",
+				"sources": [
+					"https://www.marriott.com/en-us/hotels/yqrdr-delta-hotels-regina",
+					"https://www.orbitz.com/es/Regina-Hoteles-Delta-Hotels-By-Marriott-Regina.h422943.Informacion-Hotel",
+					"https://ca.hotels.com/ho540376/delta-hotels-by-marriott-regina-regina-canada"
+				],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/512253557.jpg?k=08d70934bc74c552822316269cc278707c63b4fcc62da5dff06ff06d318b6cb2&o=",
+					"gym": false
+				}
+			}
+		}
+	},
+	"rio-de-janeiro-brazil": {
+		"city": "Rio de Janeiro",
+		"country": "Brazil",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 5-star Copacabana hotel with gym classes, pool, sauna and a full spa.",
+		"bestReason_es": "Hotel de 5 estrellas en Copacabana con clases en el gimnasio, piscina, sauna y spa completo.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Fairmont Rio de Janeiro Copacabana",
+				"stars": 5,
+				"area": "Copacabana",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Gym classes",
+						"Swimming pool",
+						"Sauna",
+						"Willow Stream Spa"
+					],
+					"access": "Free for guests"
+				},
+				"summary_en": "A 5-star hotel on Copacabana Beach where guests can use the fitness centre and gym classes, plus pool, sauna and spa. HotelGyms rates the gym as Poor and gives no size or equipment.",
+				"summary_es": "Hotel de 5 estrellas en la playa de Copacabana donde los huéspedes pueden usar el gimnasio y sus clases, además de piscina, sauna y spa. HotelGyms valora el gimnasio como pobre y no indica tamaño ni equipamiento.",
+				"sources": ["https://www.hotelgyms.com/hotels/br/rio-de-janeiro/fairmont-rio-de-janeiro-copacabana/11825"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	rome: {
+		"city": "Rome",
+		"country": "Italy",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A full spa and fitness complex with a heated indoor pool, the largest wellness area among the Rome hotels reviewed.",
+		"bestReason_es": "Un complejo completo de spa y fitness con piscina climatizada cubierta, la mayor zona de bienestar de los hoteles de Roma revisados.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Rome Cavalieri, A Waldorf Astoria Hotel",
+				"stars": 5,
+				"area": "Hilltop location overlooking Mediterranean pines",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Cardio machines", "Free weights"],
+					"extras": [
+						"Heated indoor pool",
+						"Yoga classes",
+						"Spa (2,000 m2 spa and fitness area combined)"
+					],
+					"access": null
+				},
+				"summary_en": "A 2,000 m2 spa and fitness center (figure covers both) with cardio machines, free weights and yoga classes. It also has a heated indoor pool.",
+				"summary_es": "Un centro de spa y fitness de 2.000 m2 (la cifra incluye ambos) con máquinas de cardio, peso libre y clases de yoga. También tiene piscina climatizada cubierta.",
+				"sources": ["https://eurovistatrips.com/top-hotels-in-rome-with-fitness-center/"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Hotel Locarno",
+				"stars": 4,
+				"area": "Near Piazza del Popolo",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Treadmills",
+						"Stationary bikes",
+						"Free weights"
+					],
+					"extras": ["Complimentary bicycles"],
+					"access": null
+				},
+				"summary_en": "A small but functional fitness room with treadmills, stationary bikes and free weights. Free bicycles are available to guests.",
+				"summary_es": "Una sala de fitness pequeña pero funcional con cintas de correr, bicicletas estáticas y peso libre. Los huéspedes tienen bicicletas gratuitas.",
+				"sources": ["https://eurovistatrips.com/top-hotels-in-rome-with-fitness-center/"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"rovaniemi-finland": {
+		"city": "Rovaniemi",
+		"country": "Finland",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Santasport adds a health club with classes and an indoor pool to the hotel gym.",
+		"bestReason_es": "Santasport suma un health club con clases y piscina cubierta al gimnasio del hotel.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Scandic Pohjanhovi",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/fi/scandic-pohjanhovi.html",
+				"website": "https://www.scandichotels.com/hotels/finland/rovaniemi/scandic-pohjanhovi",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Several machines, cardio and weights (reviews)"],
+					"extras": ["Indoor pool 07:00-22:00", "Sauna 17:00-22:00"],
+					"access": null
+				},
+				"summary_en": "A 24-hour gym described by reviewers as big with several machines, plus an indoor pool and sauna. Size is not published.",
+				"summary_es": "Gimnasio 24 horas que los huéspedes describen como grande y con varias máquinas, además de piscina cubierta y sauna. No se publica el tamaño.",
+				"sources": ["https://www.expedia.co.uk/Rovaniemi-Hotels-Scandic-Pohjanhovi.h53384.Hotel-Information", "https://www.scandichotels.com/hotels/finland/rovaniemi/scandic-pohjanhovi"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/914808898.jpg?k=cdd11764ea8674bfe6883e3d4a4ce881ac9ad33dd4d78ee396f83caa013cd0b3&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Santasport Apartment Hotel",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/fi/santasport-apartment.html",
+				"website": "https://www.santasport.fi/en/accommodation/",
+				"gym": {
+					"sizeM2": null,
+					"hours": "Free guest day gym 06:00-16:00 (seasonal)",
+					"equipment": [],
+					"extras": [
+						"Health club with fitness classes including yoga",
+						"Indoor pool",
+						"Spa"
+					],
+					"access": "Free day gym for guests"
+				},
+				"summary_en": "Listed with an extensive health club, fitness classes including yoga and an indoor pool. Guests get a free day gym between 06:00 and 16:00, seasonal.",
+				"summary_es": "Figura con un amplio health club, clases de fitness incluido yoga y piscina cubierta. Los huéspedes tienen gimnasio diurno gratis de 06:00 a 16:00, según temporada.",
+				"sources": ["https://www.expedia.co.uk/Rovaniemi-Hotels-Hotel-With-Gym.0-0-d3059-thotelwithgym.Travel-Guide-Filter-Hotels", "https://www.santasport.fi/en/accommodation/"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/905468950.jpg?k=f2bb01eec978a7bee5dc6b41190e74ffc9270906e1fcec6371859d9c3c0410ef&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"rovinj-croatia": {
+		"city": "Rovinj",
+		"country": "Croatia",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Only tier confirmed; gym inside a wellness and spa centre with a full class programme.",
+		"bestReason_es": "Única categoría confirmada; gimnasio dentro de un centro wellness y spa con programa de clases.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hotel Lone",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": null,
+				"website": "https://www.maistra.com/hotel-lone-rovinj/fun-sport",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Gym equipment (not itemised)"],
+					"extras": [
+						"Wellness & Spa Centre",
+						"Zumba",
+						"HIIT",
+						"Yoga",
+						"SUP yoga",
+						"Pilates",
+						"Nordic walking"
+					],
+					"access": "Not stated"
+				},
+				"summary_en": "Gym inside the Wellness&Spa Centre, with classes such as Zumba, HIIT, yoga and Pilates. Class availability is reduced outside 15 June to 15 September.",
+				"summary_es": "Gimnasio dentro del centro Wellness&Spa, con clases como zumba, HIIT, yoga y pilates. Hay menos actividades fuera del 15 de junio al 15 de septiembre.",
+				"sources": ["https://www.maistra.com/hotel-lone-rovinj/fun-sport", "https://www.soccatours.com/en/football-training-camp/croatia/istria/hotel-lone"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"salta-argentina": {
+		"city": "Salta",
+		"country": "Argentina",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Open 24 hours with classes, plus a spa, sauna and hammam.",
+		"bestReason_es": "Abierto 24 horas con clases, y además spa, sauna y hammam.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hotel Alejandro I - Affiliated by Meliá",
+				"stars": 5,
+				"area": "Centro",
+				"bookingUrl": null,
+				"website": "https://www.melia.com/en/hotels/argentina/salta/hotel-alejandro-5956",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Cardio and weight equipment"],
+					"extras": [
+						"Pilates and fitness classes",
+						"Spa",
+						"Sauna",
+						"Hammam",
+						"Hot tub"
+					],
+					"access": "Free for guests"
+				},
+				"summary_en": "A 24-hour gym with cardio and weight equipment and fitness classes. The hotel adds a spa, sauna and hammam, though some guests mention older cardio machines.",
+				"summary_es": "Gimnasio abierto 24 horas con equipos de cardio y pesas y clases de fitness. El hotel suma spa, sauna y hammam, aunque algunos huéspedes mencionan máquinas de cardio antiguas.",
+				"sources": ["https://www.expedia.ie/Salta-Hotels-Alejandro-I-Hotel.h1430239.Hotel-Information", "https://www.travelmyth.co.uk/Salta/Hotels/gym"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Design Suites Salta",
+				"stars": 4,
+				"area": "Centro histórico (Pasaje Castro)",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Gym inside a health club"],
+					"extras": [
+						"Dry sauna",
+						"Wet sauna",
+						"Massage room"
+					],
+					"access": "Free for guests"
+				},
+				"summary_en": "A gym inside an on-site health club, with dry and wet saunas and a massage room. HotelGyms rates the gym itself as poor.",
+				"summary_es": "Un gimnasio dentro de un health club del hotel, con sauna seca y húmeda y sala de masajes. HotelGyms valora el gimnasio como flojo.",
+				"sources": ["https://www.hotelgyms.com/hotels/ar/salta/design-suites-salta/79800", "https://www.travelmyth.co.uk/Salta/Hotels/gym"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"salzburg-austria": {
+		"city": "Salzburg",
+		"country": "Austria",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Only 5-star pick with a confirmed fitness centre, linked to a spa with sauna and steam bath; gym size is not published.",
+		"bestReason_es": "El único 5 estrellas con centro de fitness confirmado, conectado a un spa con sauna y baño de vapor; no se publica el tamaño del gimnasio.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Sheraton Grand Salzburg",
+				"stars": 5,
+				"area": "Auerspergstraße",
+				"bookingUrl": "https://www.booking.com/hotel/at/sheratonsalzburg.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness centre (equipment not listed)"],
+					"extras": [
+						"Sauna",
+						"Steam bath",
+						"Massages on request",
+						"Link to Paracelsus Bad & Kurhaus"
+					],
+					"access": "Guests"
+				},
+				"summary_en": "A fitness centre with sauna and steam bath, connected to the Paracelsus Bad & Kurhaus. Size, hours and equipment are not published.",
+				"summary_es": "Un centro de fitness con sauna y baño de vapor, conectado al Paracelsus Bad & Kurhaus. No se publican tamaño, horario ni equipamiento.",
+				"sources": ["https://www.dayuse.com/hotels/austria/sheraton-grand-salzburg", "https://www.hotelgyms.com/hotels/at/salzburg/sheraton-grand-salzburg/70282"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/484947802.jpg?k=71375eb30142f2236d3b8e63b3b7798a7924d4fd66c4c9c281dd93bf71991aff&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Parkhotel Brunauer",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/at/parkhotel-brunauer.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness equipment (not itemised)"],
+					"extras": ["Sauna", "Relaxation room"],
+					"access": "Guests"
+				},
+				"summary_en": "A fitness room with a sauna and relaxation room. Equipment is not itemised.",
+				"summary_es": "Una sala de fitness con sauna y sala de relax. El equipamiento no está detallado.",
+				"sources": ["https://www.hotelgyms.com/hotels/at/salzburg/parkhotel-brunauer/73651"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"san-carlos-de-bariloche-argentina": {
+		"city": "San Carlos de Bariloche",
+		"country": "Argentina",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Gym with cardio, weights and Pilates and spinning classes, plus indoor and outdoor pools and a full spa.",
+		"bestReason_es": "Gimnasio con cardio, pesas y clases de Pilates y spinning, además de piscinas cubierta y exterior y spa completo.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Llao Llao Hotel & Resort, Golf-Spa",
+				"stars": 5,
+				"area": "Llao Llao",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Cardio equipment",
+						"Weight equipment",
+						"Treadmills facing the golf course"
+					],
+					"extras": [
+						"Pilates and spinning classes",
+						"Indoor heated pool",
+						"Outdoor infinity pool",
+						"Full-service spa"
+					],
+					"access": "For hotel guests"
+				},
+				"summary_en": "A modern gym with cardio and weight equipment, with treadmills facing the golf course. Pilates and spinning classes, heated indoor pool, outdoor infinity pool and a full spa.",
+				"summary_es": "Gimnasio moderno con equipos de cardio y pesas, y cintas con vistas al campo de golf. Clases de Pilates y spinning, piscina cubierta climatizada, piscina infinita exterior y spa completo.",
+				"sources": ["https://www.oyster.com/es/argentina/hotels/llao-llao-hotel-and-resort-golf-spa/"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Cacique Inacayal Lake Hotel & Spa",
+				"stars": 4,
+				"area": "Bariloche",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Spa with pool",
+						"Hot tub",
+						"Saunas"
+					],
+					"access": "Fitness centre listed among hotel amenities"
+				},
+				"summary_en": "Lists a fitness centre, but no equipment, size or hours are published. The separate spa has a pool, hot tub and saunas.",
+				"summary_es": "Indica un centro de fitness, pero no hay datos publicados de equipamiento, tamaño ni horario. El spa independiente tiene piscina, jacuzzi y saunas.",
+				"sources": ["https://www.hotelgyms.com/hotels/ar/san-carlos-de-bariloche/cacique-inacayal-lake-hotel-and-spa/186038"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"santa-fe-argentina": {
+		"city": "Santa Fe",
+		"country": "Argentina",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Only 4-star hotel found in the city with a gym and a sauna.",
+		"bestReason_es": "Único hotel de 4 estrellas encontrado en la ciudad con gimnasio y sauna.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "InterTower Hotel",
+				"stars": 4,
+				"area": "Santa Fe city (San Jerónimo 2779)",
+				"bookingUrl": "https://www.booking.com/hotel/ar/holiday-inn-santa-fe.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness room"],
+					"extras": [
+						"Sauna",
+						"Massage room",
+						"Mud bath"
+					],
+					"access": "Free for guests"
+				},
+				"summary_en": "A fitness room in a 4-star spa hotel, with a sauna and massage room. No size, hours or equipment details were published.",
+				"summary_es": "Una sala de fitness en un hotel spa de 4 estrellas, con sauna y sala de masajes. No hay datos publicados de tamaño, horario ni equipamiento.",
+				"sources": [
+					"https://www.travelocity.com/Santa-Fe-Hotels-InterTower-Hotel.h9845278.Hotel-Information",
+					"https://www.hotelgyms.com/hotels/ar/santa-fe/intertower-hotel/382357",
+					"https://ca.trip.com/gym/province/ar-santa-fe.html"
+				],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/39913752.jpg?k=6c2f752cbc8c114f2924bb6fc6d8e8be99e63e0e44fd5c5b126b769d7c207a80&o=",
+					"gym": true
+				}
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"santiago-chile": {
+		"city": "Santiago",
+		"country": "Chile",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 24-hour Technogym gym with free weights up to 22 kg, verified by HotelGyms.com.",
+		"bestReason_es": "Un gimnasio Technogym abierto 24 horas con peso libre de hasta 22 kg, verificado por HotelGyms.com.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "The Ritz-Carlton, Santiago",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/cl/ritz-carlton-santiago.html",
+				"website": "https://www.ritzcarlton.com/en/hotels/sclrz-the-ritz-carlton-santiago/",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Technogym equipment",
+						"5-9 cardio machines",
+						"1-4 strength machines",
+						"Dumbbells up to 22 kg"
+					],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "A 24-hour Technogym gym with a few treadmills and bikes and free weights up to 22 kg. HotelGyms.com rates it as basic and gives no size.",
+				"summary_es": "Un gimnasio Technogym abierto 24 horas con algunas cintas y bicicletas y peso libre de hasta 22 kg. HotelGyms.com lo califica de básico y no indica el tamaño.",
+				"sources": ["https://www.hotelgyms.com/hotels/cl/santiago/the-ritz-carlton-santiago/h864"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/797650403.jpg?k=80e58a15bb9e45b5437d9e7ad9e3d630390f0bf00627bcd21b25f2ff9ba4cee6&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Pullman Santiago El Bosque",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/cl/pullman-el-bosque.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Swimming pool on the 18th floor"],
+					"access": null
+				},
+				"summary_en": "A fitness centre and swimming pool on the 18th floor with city views. Size, equipment and hours are not published.",
+				"summary_es": "Un gimnasio y una piscina en la planta 18 con vistas a la ciudad. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.hotelgyms.com/hotels/cl/santiago/hotel-pullman-santiago-el-bosque-ex-atton/248858"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/914890423.jpg?k=a871bba49b169f71c856da9303560faf2e73c0498c07cd0e21fc59f5ff71bf6b&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"santo-domingo-dominicanrepublic": {
+		"city": "Santo Domingo",
+		"country": "Dominican Republic",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 24-hour complimentary gym in a 5-star hotel, though size and equipment are not published.",
+		"bestReason_es": "Un gimnasio gratuito abierto las 24 horas en un hotel de 5 estrellas, aunque no se publican tamaño ni equipamiento.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "JW Marriott Hotel Santo Domingo",
+				"stars": 5,
+				"area": "Piantini",
+				"bookingUrl": "https://www.booking.com/hotel/do/jw-marriott-santo-domingo-santo-domingo2.html",
+				"website": "https://www.marriott.com/en-us/hotels/sdqjw-jw-marriott-hotel-santo-domingo/overview/",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": [],
+					"access": "Complimentary"
+				},
+				"summary_en": "The hotel lists a complimentary 24-hour fitness center. Size and equipment are not published.",
+				"summary_es": "El hotel indica un gimnasio gratuito abierto las 24 horas. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.marriott.com/en-us/hotels/sdqjw-jw-marriott-hotel-santo-domingo/overview/", "https://www.travelocity.com/Malecon-Hotels-JW-Marriott-Hotel-Santo-Domingo.h7998330.Hotel-Information"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/459618183.jpg?k=301b6e6cc4b7e79097f9edf8b3c374b2650fd0ca8be2e7eade5b37e1a86f9bb8&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Embassy Suites by Hilton Santo Domingo",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/do/hilton-embassy-suites.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Listed with a 24-hour gym. No size or equipment details are published.",
+				"summary_es": "Figura con gimnasio abierto las 24 horas. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.orbitz.com/Destinations-In-Distrito-Nacional-Hotels-With-Fitness-Center.0-0-d6242774-tHotelswithFitnessCenter.Hotel-Filter-Destinations"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/486115054.jpg?k=287154faa0bf2855cc69a3c61e8fc613ba776ad177f3b512bef19b3b0381119d&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Ramada by Wyndham Princess Santo Domingo",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/do/santo-domingo-princess-y-casino.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Listed with a 24-hour gym. No size or equipment details are published.",
+				"summary_es": "Figura con gimnasio abierto las 24 horas. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.orbitz.com/Destinations-In-Distrito-Nacional-Hotels-With-Fitness-Center.0-0-d6242774-tHotelswithFitnessCenter.Hotel-Filter-Destinations"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/206263256.jpg?k=8abd45b07b34bb4e4085b9452b6a32cbf065564ef23666adcb386391287f1fa1&o=",
+					"gym": true
+				}
+			}
+		}
+	},
+	"sao-paulo-brazil": {
+		"city": "São Paulo",
+		"country": "Brazil",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 5-star hotel with a 24-hour fitness centre, rated Perfect by HotelGyms.",
+		"bestReason_es": "Hotel de 5 estrellas con gimnasio abierto 24 horas, valorado como perfecto por HotelGyms.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "InterContinental São Paulo",
+				"stars": 5,
+				"area": "Jardins (near Avenida Paulista)",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": ["Outdoor pool"],
+					"access": "Hotel fitness centre"
+				},
+				"summary_en": "A 5-star hotel about a block from Avenida Paulista with a 24-hour fitness centre and an outdoor pool. HotelGyms gives its gym a Perfect rating; size and equipment are not published.",
+				"summary_es": "Hotel de 5 estrellas a una manzana de la Avenida Paulista con gimnasio abierto 24 horas y piscina exterior. HotelGyms le da valoración perfecta; no constan tamaño ni equipamiento.",
+				"sources": ["https://www.hotelgyms.com/hotels/br/sao-paulo/intercontinental-sao-paulo/255344"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"sarajevo-bosniaandherzegovina": {
+		"city": "Sarajevo",
+		"country": "Bosnia and Herzegovina",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 5-star with a confirmed fitness centre, sauna and spa.",
+		"bestReason_es": "Un 5 estrellas con centro de fitness, sauna y spa confirmados.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Radon Plaza",
+				"stars": 5,
+				"area": "Džemala Bijedića",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness center"],
+					"extras": ["Sauna", "Spa"],
+					"access": "Fitness center at the hotel"
+				},
+				"summary_en": "A fitness center with a sauna and spa. Size, equipment and hours are not published, and the gym is rated poor on GymFactor.",
+				"summary_es": "Un centro de fitness con sauna y spa. No se publican el tamaño, el equipamiento ni el horario, y el gimnasio tiene una valoración baja en GymFactor.",
+				"sources": ["https://www.hotelgyms.com/hotels/ba/sarajevo/radon-plaza/98259"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"sarande-albania": {
+		"city": "Sarandë",
+		"country": "Albania",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "A 4-star hotel with a confirmed gym and spa access, plus indoor and outdoor pools.",
+		"bestReason_es": "Un hotel de 4 estrellas con gimnasio confirmado y acceso al spa, además de piscinas cubierta y exterior.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Andon Lapa Hotel & Spa",
+				"stars": 4,
+				"area": "Sarandë (Mitat Hoxha)",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Indoor pool",
+						"Outdoor pool",
+						"Hot tub",
+						"Sauna",
+						"Spa"
+					],
+					"access": "Guests can use the spa and gym"
+				},
+				"summary_en": "A fitness center with spa access, an indoor and an outdoor pool, hot tub and sauna. Size, hours and equipment are not published.",
+				"summary_es": "Un centro de fitness con acceso al spa, piscina cubierta y exterior, jacuzzi y sauna. No se publican tamaño, horario ni equipamiento.",
+				"sources": ["https://www.priceline.com/hotel-deals/en-us/P5000070637/H35346303/andon-lapa-hotel-spa.ssp", "https://stay.albaniavisit.com/andon-lapa-hotel-spa/"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"saskatoon-canada": {
+		"city": "Saskatoon",
+		"country": "Canada",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Only Saskatoon hotel gym confirmed as open 24 hours at a 4-star hotel with an indoor pool.",
+		"bestReason_es": "Gimnasio de hotel de 4 estrellas confirmado en Saskatoon, abierto 24 horas y con piscina cubierta.",
+		"luxuryNote": "No 5-star hotel with a gym confirmed in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Delta Hotels by Marriott Bessborough",
+				"stars": 4,
+				"area": "Downtown",
+				"bookingUrl": "https://www.booking.com/hotel/ca/delta-bessborough.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": ["Indoor pool", "Hot tub"],
+					"access": null
+				},
+				"summary_en": "A 24-hour fitness center at a 4-star hotel with an indoor pool and hot tub. Size and equipment are not published.",
+				"summary_es": "Gimnasio abierto 24 horas en un hotel de 4 estrellas, con piscina cubierta y jacuzzi. No publican tamaño ni equipamiento.",
+				"sources": ["https://ca.hotels.com/ho144656/delta-hotels-by-marriott-bessborough-saskatoon-canada", "https://expedia.com/Saskatoon-Downtown-hotels-Delta-Hotels-by-Marriott-Bessborough.h173377.Hotel-information"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"seefeld-in-tirol-austria": {
+		"city": "Seefeld in Tirol",
+		"country": "Austria",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "A 325 m2 Technogym fitness centre with strength machines and an Octagon zone, the biggest confirmed in Seefeld.",
+		"bestReason_es": "Un centro de fitness Technogym de 325 m2 con máquinas de fuerza y zona Octagon, el mayor confirmado en Seefeld.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Alpin Resort Sacher",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": null,
+				"website": "https://seefeld.sacher.com/en/alpin-resort-sacher/good-to-know/",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Modern fitness room"],
+					"extras": [
+						"Fitness classes",
+						"Yoga classes",
+						"Personal trainer"
+					],
+					"access": "Guests"
+				},
+				"summary_en": "A modern fitness room in the wellness area, with classes and a personal trainer. Size, hours and equipment are not published.",
+				"summary_es": "Una sala de fitness moderna en la zona de bienestar, con clases y entrenador personal. No se publican tamaño, horario ni equipamiento.",
+				"sources": ["https://www.myboutiquehotel.com/en/boutique-hotels-seefeld-in-tirol/alpin-resort-sacher.html", "https://www.secretescapes.com/hotel-sacher-seefeld-seefeld-in-tyrol-tyrol-austria/sale-hotel"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Krumers Alpin – Your Mountain Oasis",
+				"stars": 4,
+				"area": "Krinz",
+				"bookingUrl": "https://www.booking.com/hotel/at/hotelundspaseefeld.html",
+				"website": "https://www.krumers.com/en/fitness-centre",
+				"gym": {
+					"sizeM2": 325,
+					"hours": null,
+					"equipment": [
+						"Technogym Selection 900 strength machines (cable, leg press, pulldown, shoulder press)",
+						"Technogym skillbike, rower, ergometer, treadmill, cross-trainer",
+						"Octagon zone with pull-up bar, battle rope, punching bag"
+					],
+					"extras": ["3,400 m2 spa", "Fitness coach for equipment introduction"],
+					"access": "Free for guests"
+				},
+				"summary_en": "A 325 m2 fitness centre with Technogym cardio and strength machines and an Octagon zone with battle rope and punching bag. Linked to a 3,400 m2 spa.",
+				"summary_es": "Un centro de fitness de 325 m2 con cardio y máquinas de fuerza Technogym y una zona Octagon con cuerdas de batalla y saco de boxeo. Conectado a un spa de 3.400 m2.",
+				"sources": ["https://www.krumers.com/en/fitness-centre", "https://www.seefeld.com/en/hotel-tyrol/hotel-search-and-book/seefeld-in-tirol/hotel/a-krumers-alpin-resort-spa"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/208411258.jpg?k=2b7c2577c7704f7002b950632657f72171d458f5c8262c27476c0230a2b8f874&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"shanghai-china": {
+		"city": "Shanghai",
+		"country": "China",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Free weights up to 100 lb, bench stations, indoor and outdoor pools, sauna and squash.",
+		"bestReason_es": "Peso libre de hasta 100 lb, bancos de press, piscinas interior y exterior, sauna y squash.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "The Portman Ritz-Carlton, Shanghai",
+				"stars": null,
+				"area": "Jing'an (Nanjing West Road)",
+				"bookingUrl": null,
+				"website": "https://www.ritzcarlton.com/en/hotels/china/shanghai/spa/fitness-center",
+				"gym": {
+					"sizeM2": null,
+					"hours": "06:30-23:00",
+					"equipment": [
+						"Free weights up to 100 lb",
+						"Incline and flat bench press stations",
+						"Weight machines",
+						"Treadmills, stair climbers, bikes, rowers and cross trainers"
+					],
+					"extras": [
+						"Indoor pool",
+						"Outdoor pool",
+						"Sauna",
+						"Steam room",
+						"Squash",
+						"Pilates and aerobics",
+						"Personal training"
+					],
+					"access": "Complimentary for in-house guests"
+				},
+				"summary_en": "Free weights up to 100 lb, incline and flat bench stations and a full set of cardio machines. Open 6:30 to 23:00, with indoor and outdoor pools, sauna, steam room and squash.",
+				"summary_es": "Peso libre de hasta 100 lb, bancos de press inclinado y plano y una gama completa de cardio. Abierto de 6:30 a 23:00, con piscinas interior y exterior, sauna, baño de vapor y squash.",
+				"sources": ["https://www.ritzcarlton.com/en/hotels/china/shanghai/spa/fitness-center"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"sharm-el-sheikh-egypt": {
+		"city": "Sharm El Sheikh",
+		"country": "Egypt",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "24-hour gym in its own two-storey building with classes and personal trainers.",
+		"bestReason_es": "Gimnasio abierto las 24 horas en un edificio propio de dos plantas, con clases y entrenadores personales.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Four Seasons Resort Sharm El Sheikh",
+				"stars": null,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/eg/four-seasons-sharm-el-sheikh.html",
+				"website": "https://www.fourseasons.com/sharmelsheikh/spa/",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Cardiovascular machines", "Weight-training machines"],
+					"extras": [
+						"Fitness classes",
+						"Yoga studio",
+						"Personal trainers",
+						"Four outdoor tennis courts"
+					],
+					"access": null
+				},
+				"summary_en": "The fitness centre sits in a two-storey building, open 24 hours, with cardio and weight machines, a class schedule and personal trainers. Size is not published.",
+				"summary_es": "El centro de fitness ocupa un edificio de dos plantas, abierto las 24 horas, con máquinas de cardio y pesas, horario de clases y entrenadores personales. No se publica el tamaño.",
+				"sources": ["https://www.fourseasons.com/sharmelsheikh/spa/", "https://www.expedia.com.sg/h885065.Hotel-Information"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/222478078.jpg?k=accf58c766c9f3163f537f5e6f06f13d413f14ced457d9bed8f4aa76267defea&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "DoubleTree by Hilton Sharm El Sheikh Sharm Bay",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/eg/hilton-sharks-bay-resort.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Travelmyth review summaries describe the gym as well-staffed. Size, equipment and hours are not published.",
+				"summary_es": "Los resúmenes de reseñas de Travelmyth describen el gimnasio como bien atendido. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Sharm-El-Sheikh/Hotels/gym-four_star", "https://www.booking.com/fourstars/city/eg/sharm-el-sheikh.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/654427202.jpg?k=258460edd00345a97eb3b9c9fe3d4e850eb9b8c0df7d2c9ee91d5e3ee865e0f0&o=",
+					"gym": false
+				}
+			},
+			"budget": null
+		}
+	},
+	"sheki-azerbaijan": {
+		"city": "Sheki",
+		"country": "Azerbaijan",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Only hotel in Sheki with a confirmed fitness center and a sports trainer, plus a spa.",
+		"bestReason_es": "El único hotel de Sheki con gimnasio confirmado y entrenador deportivo, además de spa.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Sheki Palace Hotel",
+				"stars": 5,
+				"area": "Akhundzadeh Avenue",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness center", "Sports trainer"],
+					"extras": [
+						"Sauna",
+						"Turkish bath",
+						"Steam room",
+						"Massages"
+					],
+					"access": "Guest facility"
+				},
+				"summary_en": "Has a fitness center and a sports trainer, with a sauna, Turkish bath and steam room at Zogal Spa. Star rating differs by source (5-star on TopHotels, class 3 on Expedia).",
+				"summary_es": "Tiene gimnasio y entrenador deportivo, con sauna, baño turco y sala de vapor en el spa Zogal. La categoría varía según la fuente (5 estrellas en TopHotels, clase 3 en Expedia).",
+				"sources": ["https://tophotels.com/hotel/azerbaijan/sheki-palace-hotel-shaki", "https://www.expedia.co.uk/Sheki-Hotels-Sheki-Palace-Hotel.h33301439.Hotel-Information"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"shenzhen-china": {
+		"city": "Shenzhen",
+		"country": "China",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Rated a good hotel gym on HotelGyms, with indoor and outdoor pools and a spa.",
+		"bestReason_es": "Valorado como buen gimnasio de hotel en HotelGyms, con piscinas interior y exterior y spa.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Four Seasons Hotel Shenzhen",
+				"stars": null,
+				"area": "Futian",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Indoor pool",
+						"Outdoor pool",
+						"Sauna",
+						"Spa"
+					],
+					"access": null
+				},
+				"summary_en": "Has a fitness centre rated Good on HotelGyms, with an indoor and an outdoor pool, sauna and spa. Size and equipment are not published.",
+				"summary_es": "Tiene un gimnasio valorado como Bueno en HotelGyms, con piscina interior y exterior, sauna y spa. No se publican el tamaño ni el equipamiento.",
+				"sources": ["https://www.hotelgyms.com/hotels/cn/shenzhen/four-seasons-hotel-shenzhen/696559"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"sibenik-croatia": {
+		"city": "Šibenik",
+		"country": "Croatia",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Gym within a spa area with indoor pool complex and sauna.",
+		"bestReason_es": "Gimnasio dentro de una zona de spa con complejo de piscinas interiores y sauna.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Amadria Park Hotel Ivan",
+				"stars": 4,
+				"area": "Solaris resort",
+				"bookingUrl": "https://www.booking.com/hotel/hr/ivan.html",
+				"website": "https://www.amadriapark.com/en/hotels/hotel-ivan",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Mediterranean Garden Spa and Wellness",
+						"Indoor pool complex",
+						"Sauna"
+					],
+					"access": "Listed as a paid amenity"
+				},
+				"summary_en": "A gym inside the Mediterranean Garden Spa and Wellness area, which has an indoor pool complex and sauna. The hotel lists the fitness centre as a paid amenity; size and hours are not published.",
+				"summary_es": "Un gimnasio dentro del Mediterranean Garden Spa and Wellness, con complejo de piscinas interiores y sauna. El hotel indica el centro de fitness como servicio de pago; no se publican tamaño ni horario.",
+				"sources": ["https://www.amadriapark.com/en/hotels/hotel-ivan"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/849266008.jpg?k=e779fe19d3b16d80eae333e1caff835874808f6f430b315636dd4c2f277b72e2&o=",
+					"gym": false
+				}
+			},
+			"budget": null
+		}
+	},
+	"siem-reap-cambodia": {
+		"city": "Siem Reap",
+		"country": "Cambodia",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 3,200 m2 Technogym fitness and wellness complex with a saltwater pool.",
+		"bestReason_es": "Un complejo de fitness y bienestar de 3.200 m2 con Technogym y piscina de agua salada.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Sokha Siem Reap Resort & Convention Center",
+				"stars": null,
+				"area": "Siem Reap",
+				"bookingUrl": null,
+				"website": "https://sokhahotels.com.kh/siemreap/facilities/fitness-plus",
+				"gym": {
+					"sizeM2": 3200,
+					"hours": "6:00 to 22:00",
+					"equipment": ["Technogym equipment", "Yoga and meditation area"],
+					"extras": [
+						"Saltwater pool",
+						"Jasmine Spa",
+						"Sauna",
+						"Jacuzzi",
+						"Classes"
+					],
+					"access": null
+				},
+				"summary_en": "A 3,200 m2 Sokha Fitness facility with Technogym equipment and a yoga area, open 6:00 to 22:00. It shares a saltwater pool with the Jasmine Spa.",
+				"summary_es": "Un centro Sokha Fitness de 3.200 m2 con equipos Technogym y zona de yoga, abierto de 6:00 a 22:00. Comparte una piscina de agua salada con el Jasmine Spa.",
+				"sources": ["https://sokhahotels.com.kh/siemreap/facilities/fitness-plus", "https://sokhahotels.com.kh/siemreap/media-centre/sokha-fulfills-market-demand-to-open-3200sqm-sokha-fitness-in-siem-reap"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"sihanoukville-cambodia": {
+		"city": "Sihanoukville",
+		"country": "Cambodia",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "A confirmed modern gym at a beachside resort with an infinity pool.",
+		"bestReason_es": "Un gimnasio moderno confirmado en un resort frente a la playa con piscina infinita.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Novotel Sihanoukville Holiday Resort",
+				"stars": null,
+				"area": "Sihanoukville",
+				"bookingUrl": null,
+				"website": "https://all.accor.com/hotel/A611/index.en.shtml",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Gym and fitness center"],
+					"extras": ["Beachside infinity pool"],
+					"access": null
+				},
+				"summary_en": "A modern gym and fitness center at a beachside resort with an infinity pool. Size, hours and equipment are not published.",
+				"summary_es": "Un gimnasio moderno en un resort frente a la playa con piscina infinita. No se publican tamaño, horario ni equipamiento.",
+				"sources": ["https://all.accor.com/hotel/A611/index.en.shtml"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"sofia-bulgaria": {
+		"city": "Sofia",
+		"country": "Bulgaria",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 5-star hotel with a 24/7 Technogym fitness centre and a full wellness area.",
+		"bestReason_es": "Hotel de 5 estrellas con gimnasio Technogym abierto 24/7 y zona de bienestar completa.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hyatt Regency Sofia",
+				"stars": 5,
+				"area": "Centre (Vasil Levski Square)",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Technogym equipment"],
+					"extras": [
+						"Indoor hydrotherapy pool",
+						"Steam room",
+						"Salt therapy room",
+						"Hammam",
+						"Saunas"
+					],
+					"access": "Hotel fitness centre"
+				},
+				"summary_en": "A 5-star hotel on Vasil Levski Square with a 24/7 fitness centre using Technogym equipment. The hotel wellness area has an indoor hydrotherapy pool, steam room, hammam and saunas.",
+				"summary_es": "Hotel de 5 estrellas en la plaza Vasil Levski con gimnasio abierto 24/7 y equipos Technogym. La zona de bienestar del hotel tiene piscina de hidroterapia cubierta, baño de vapor, hammam y saunas.",
+				"sources": ["https://www.hotelgyms.com/hotels/bg/sofia/hyatt-regency-sofia/6202941"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"split-croatia": {
+		"city": "Split",
+		"country": "Croatia",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Open 24 hours with Matrix equipment on the 17th floor, plus a wellness area with indoor pool.",
+		"bestReason_es": "Abierto 24 horas con equipamiento Matrix en la planta 17, más una zona wellness con piscina interior.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hotel Ambasador",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/hr/ambasador-split1.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "Opens at 8 am (per guest reviews)",
+					"equipment": ["Minimal equipment, no weights under 6 kg (per guest review)"],
+					"extras": ["Spa with steam room and sauna"],
+					"access": null
+				},
+				"summary_en": "A fitness centre and a separate fitness room are listed, with a spa. Guests describe the gym as small and busy at peak times.",
+				"summary_es": "Se indica un centro de fitness y una sala de fitness aparte, además de un spa. Los huéspedes lo describen como pequeño y concurrido en horas punta.",
+				"sources": ["https://www.priceline.com/hotel-deals/en-us/P5000195219/H126812405/hotel-ambasador.ssp", "https://www.travelmyth.ie/Split/Hotels/gym"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/409372182.jpg?k=0a9106f9b8c7a4255f1c8500f5ef9b5952981f113ed9b7ac49b04ec1526eec01&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "AC Hotel by Marriott Split",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/hr/ac-by-marriott-split.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Matrix equipment", "Treadmills with views"],
+					"extras": ["Indoor pool, whirlpool, steam bath and Finnish sauna (guests 16+)"],
+					"access": null
+				},
+				"summary_en": "A fitness centre on the 17th floor with Matrix equipment, open around the clock. A wellness area with indoor pool and sauna is also available.",
+				"summary_es": "Un centro de fitness en la planta 17 con equipamiento Matrix, abierto las 24 horas. También hay una zona wellness con piscina interior y sauna.",
+				"sources": [
+					"https://www.britishairways.com/en-gb/destinations/hotel-information/Split/AC-Hotel-by-Marriott-Split/HR-SPU-1226600",
+					"https://www.soccatours.com/football-training-camp/croatia/dalmatia/ac-marriott-hotel-split",
+					"https://www.travelmyth.ie/Split/Hotels/gym"
+				],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/643810463.jpg?k=afc282b5fb857cf669287ca0c8065ea16ba0c6118bae93d87a833260afbbc4d6&o=",
+					"gym": false
+				}
+			},
+			"budget": null
+		}
+	},
+	"st-john-s-canada": {
+		"city": "St. John's",
+		"country": "Canada",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "24-hour gym with an indoor pool and hot tub; the other hotel adds a sauna but lists no hours.",
+		"bestReason_es": "Gimnasio 24 horas con piscina cubierta y jacuzzi; el otro hotel añade sauna pero no indica horario.",
+		"luxuryNote": "No 5-star hotel with a gym confirmed in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Delta Hotels by Marriott St. John's Conference Centre",
+				"stars": 4,
+				"area": "Downtown",
+				"bookingUrl": "https://www.booking.com/hotel/ca/st-johns-conference-center.html",
+				"website": "https://marriott.com/en-us/hotels/yytds-delta-hotels-st-johns-conference-centre/overview",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Cardio equipment", "Strength equipment"],
+					"extras": [
+						"Indoor pool",
+						"Jacuzzi",
+						"Sauna"
+					],
+					"access": "Complimentary for guests"
+				},
+				"summary_en": "Fitness centre with cardio and strength equipment, free for guests, plus an indoor pool, jacuzzi and sauna. Size and hours are not published.",
+				"summary_es": "Gimnasio con equipos de cardio y fuerza, gratuito para huéspedes, además de piscina cubierta, jacuzzi y sauna. No publican tamaño ni horario.",
+				"sources": ["https://marriott.com/en-us/hotels/yytds-delta-hotels-st-johns-conference-centre/overview", "https://my.canadianaffair.com/hotels/hotels-in-canada/hotels-in-newfoundland-and-labrador/hotels-in-st-johns/delta-hotels-by-marriott-st-johns-conference-centre"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/586396687.jpg?k=896cd94e4ae5c959319b9c12cdfa267b14454678c25f02947eb4c748874ac1ae&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Sheraton Hotel Newfoundland",
+				"stars": null,
+				"area": "Cavendish Square",
+				"bookingUrl": "https://www.booking.com/hotel/ca/sheraton-newfoundland.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": ["Indoor pool", "Hot tub"],
+					"access": null
+				},
+				"summary_en": "A 24-hour gym on site, with an indoor pool and hot tub. Official star rating not confirmed; equipment and size are not published.",
+				"summary_es": "Gimnasio abierto 24 horas en el hotel, con piscina cubierta y jacuzzi. No se ha confirmado la categoría oficial de estrellas; no publican equipamiento ni tamaño.",
+				"sources": ["https://www.travelocity.com/Newfoundland-Hotels-Hotels-With-Fitness-Center.0-0-d6057674-tHotelswithFitnessCenter.Travel-Guide-Filter-Hotels", "https://dk.trip.com/hotels/gym/city/ca/st-john-s.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/630192904.jpg?k=2e35dea1b11d6dffaacc6c6cf9fd43dd85f94504044719d3f9825805149b46ab&o=",
+					"gym": false
+				}
+			},
+			"budget": null
+		}
+	},
+	"suva-fiji": {
+		"city": "Suva",
+		"country": "Fiji",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The only Suva hotel found with a confirmable gym.",
+		"bestReason_es": "El único hotel de Suva encontrado con un gimnasio confirmable.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Grand Pacific Hotel",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/fj/grand-pacific.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Gym described by guests as small but adequate"],
+					"extras": [
+						"Fitness studio",
+						"Outdoor pool",
+						"Spa"
+					],
+					"access": null
+				},
+				"summary_en": "Listed as a 5-star property. Guests call the gym small but adequate. Size, equipment and hours are not published.",
+				"summary_es": "Figura como propiedad de 5 estrellas. Los huéspedes describen el gimnasio como pequeño pero suficiente. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.expedia.co.uk/Fiji-Hotels-Grand-Pacific-Hotel.h8838401.Hotel-Information"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/476844821.jpg?k=b02a955676589317de2515d05c0b8fd56961fae4f064e9a7cb02415f8df5eea6&o=",
+					"gym": true
+				}
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"suzhou-china": {
+		"city": "Suzhou",
+		"country": "China",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "24-hour fitness centre with a full-size indoor pool, tennis courts, sauna and whirlpools.",
+		"bestReason_es": "Gimnasio abierto 24 horas con piscina cubierta de tamaño completo, pistas de tenis, sauna y jacuzzis.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Shangri-La Suzhou",
+				"stars": null,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": [
+						"Full-size indoor pool",
+						"Outdoor tennis courts",
+						"Sauna",
+						"Whirlpools",
+						"Spa"
+					],
+					"access": null
+				},
+				"summary_en": "Fitness centre open 24 hours, rated Good on HotelGyms. The hotel has a full-size indoor pool, tennis courts, sauna and whirlpools. Equipment is not published.",
+				"summary_es": "Gimnasio abierto 24 horas, valorado como Bueno en HotelGyms. El hotel tiene piscina cubierta de tamaño completo, pistas de tenis, sauna y jacuzzis. No se publica el equipamiento.",
+				"sources": ["https://www.hotelgyms.com/hotels/cn/suzhou/shangri-la-suzhou/256536"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"sydney-australia": {
+		"city": "Sydney",
+		"country": "Australia",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Open 24 hours with free weights, an assault treadmill and strength machines.",
+		"bestReason_es": "Abierto 24 horas, con peso libre, cinta assault y máquinas de fuerza.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "The Fullerton Hotel Sydney",
+				"stars": 5,
+				"area": "CBD (financial district)",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Cardiovascular equipment",
+						"Free weights",
+						"Assault treadmill",
+						"Strength machines"
+					],
+					"extras": [],
+					"access": "Fitness centre on the 6th floor"
+				},
+				"summary_en": "Sixth-floor fitness centre open 24 hours, 7 days a week, with cardio equipment, free weights, an assault treadmill and strength machines.",
+				"summary_es": "Centro de fitness en la planta 6 abierto las 24 horas, los 7 días de la semana, con cardio, peso libre, cinta assault y máquinas de fuerza.",
+				"sources": ["https://www.hotelgyms.com/blog/find-the-best-hotel-gyms-in-sydney"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"tallinn-estonia": {
+		"city": "Tallinn",
+		"country": "Estonia",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Club 26 on the 26th floor has a gym with free weights plus a 16 m pool and two saunas.",
+		"bestReason_es": "El Club 26, en la planta 26, tiene gimnasio con peso libre, piscina de 16 m y dos saunas.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Swissotel Tallinn",
+				"stars": 5,
+				"area": "City centre (Tornimäe)",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Indoor pool",
+						"Saunas",
+						"Spa"
+					],
+					"access": "For hotel guests"
+				},
+				"summary_en": "Has a fitness and spa area with an indoor pool and several saunas. GymFactor rating is Good; no equipment details found.",
+				"summary_es": "Tiene zona de fitness y spa con piscina cubierta y varias saunas. Valoración GymFactor: buena; no se encontraron detalles del equipamiento.",
+				"sources": ["https://www.hotelgyms.com/hotels/ee/tallinn/swissotel-tallinn/24585"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Radisson Blu Hotel Olümpia",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Cardio equipment",
+						"Toning equipment",
+						"Free weights"
+					],
+					"extras": [
+						"16 m pool with in-pool treadmills",
+						"Finnish sauna",
+						"Sanarium",
+						"26th floor relaxation area"
+					],
+					"access": "Club 26 on the 26th floor"
+				},
+				"summary_en": "Club 26 on the 26th floor has a gym with cardio, toning equipment and free weights. It also has a 16 m pool, a Finnish sauna and a sanarium.",
+				"summary_es": "El Club 26, en la planta 26, tiene gimnasio con cardio, máquinas de tonificación y peso libre. También tiene piscina de 16 m, sauna finlandesa y sanarium.",
+				"sources": ["https://www.radissonhotels.com/en-us/hotels/radisson-blu-tallinn-olumpia/spa"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"tampere-finland": {
+		"city": "Tampere",
+		"country": "Finland",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "The only Tampere hotel found with a gym described as part of a full gym and spa complex.",
+		"bestReason_es": "El único hotel de Tampere encontrado con un gimnasio descrito como parte de un complejo completo de gimnasio y spa.",
+		"luxuryNote": "No 5-star hotel with a gym confirmed in the city",
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Holiday Club Tampere Spa",
+				"stars": null,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Saunas",
+						"Hot tubs",
+						"Pools",
+						"Massages on request"
+					],
+					"access": "On-site fitness centre for guests"
+				},
+				"summary_en": "An on-site fitness centre inside a modern gym and spa complex with saunas, hot tubs and pools. Size, equipment and hours are not listed in the source.",
+				"summary_es": "Un centro de fitness en el propio hotel dentro de un complejo moderno de gimnasio y spa con saunas, jacuzzis y piscinas. El tamaño, el equipamiento y el horario no constan en la fuente.",
+				"sources": ["https://www.hotelgyms.com/hotels/fi/tampere/holiday-club-tampere-spa/289168"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"tartu-estonia": {
+		"city": "Tartu",
+		"country": "Estonia",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The only Tartu hotel found with a described fitness club plus saunas.",
+		"bestReason_es": "El único hotel de Tartu encontrado con un club de fitness descrito y saunas.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Lydia Hotel",
+				"stars": 4,
+				"area": "Old Town",
+				"bookingUrl": "https://www.booking.com/hotel/ee/lydia.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness club with a variety of exercise options"],
+					"extras": ["Spa lounge with saunas"],
+					"access": null
+				},
+				"summary_en": "Described as a 4-star superior hotel in the Old Town with a well-equipped fitness club and a spa lounge with saunas. Size and hours are not published in the source.",
+				"summary_es": "Descrito como hotel superior de 4 estrellas en el casco antiguo, con un club de fitness bien equipado y un spa con saunas. La fuente no indica tamaño ni horario.",
+				"sources": ["https://www.travelmyth.ie/Tartu-Estonia/Hotels/gym"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/756240519.jpg?k=1594de330619d109da1828a67e212a9ec38ad749368181f9553ab9a9f5fa1feb&o=",
+					"gym": false
+				}
+			},
+			"standard": null,
+			"budget": {
+				"hotel": "Hestia Hotel Hugo",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/ee/hugo-stay.html",
+				"website": "https://www.hestiahotels.com/hugo/en/",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Treadmills", "Exercise bikes"],
+					"extras": [],
+					"access": "Free, included in the stay"
+				},
+				"summary_en": "Apartment hotel with a free gym. Reviewers mention treadmills and exercise bikes but also few machines and no windows.",
+				"summary_es": "Apart-hotel con gimnasio gratuito. Los huéspedes mencionan cintas y bicicletas, pero también pocas máquinas y ninguna ventana.",
+				"sources": ["https://www.travelmyth.ie/Tartu-Estonia/Hotels/gym", "https://www.priceline.com/hotel-deals/en-us/P5000440761/H340105004/hestia-hotel-hugo.ssp"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/917240435.jpg?k=696d7e047771f3dbb250fb973e1e6ce42ffd8620027000c265f34d8b7404f884&o=",
+					"gym": true
+				}
+			}
+		}
+	},
+	"tirana-albania": {
+		"city": "Tirana",
+		"country": "Albania",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The only Tirana hotel gym with a published size (250 m2) and a full free-weight list, plus a 600 m2 spa.",
+		"bestReason_es": "El único gimnasio de hotel de Tirana con tamaño publicado (250 m2) y lista completa de peso libre, además de un spa de 600 m2.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Maritim Hotel Plaza Tirana",
+				"stars": 5,
+				"area": "Sheshi Italia",
+				"bookingUrl": "https://www.booking.com/hotel/al/the-plaza-tirana.html",
+				"website": "https://maritim.com/en/hotels/albania/plaza-tirana",
+				"gym": {
+					"sizeM2": 250,
+					"hours": null,
+					"equipment": [
+						"Treadmills, bikes, rowers and ellipticals",
+						"Multi-station machines",
+						"Benches",
+						"Dumbbell and barbell sets",
+						"Kettlebells",
+						"ARKE equipment"
+					],
+					"extras": [
+						"OBLIVION Wellness Spa (600 m2)",
+						"Finnish sauna",
+						"Turkish bath",
+						"Yoga room"
+					],
+					"access": "Free for guests"
+				},
+				"summary_en": "A 250 m2 gym with cardio machines, benches, dumbbell and barbell sets and kettlebells, with equipment by ARKE. The hotel also has a 600 m2 spa with sauna and Turkish bath.",
+				"summary_es": "Un gimnasio de 250 m2 con máquinas de cardio, bancos, mancuernas, barras y kettlebells, con equipamiento ARKE. El hotel tiene además un spa de 600 m2 con sauna y baño turco.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Albania/Hotels/gym",
+					"https://maritim.com/en/hotels/albania/plaza-tirana",
+					"https://www.hotelgyms.com/hotels/al/tirana/tirana-marriott-hotel/9323782"
+				],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/285551218.jpg?k=fc6202a20df2f3a404e618aaca867db78a30067652eec90d164634c24c93ce5e&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Hilton Garden Inn Tirana",
+				"stars": 4,
+				"area": "Near Skanderbeg Square (Bulevardi Gjergj Fishta)",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Cardio machines", "Free weights"],
+					"extras": [],
+					"access": "Guests"
+				},
+				"summary_en": "A fitness center with cardio machines and free weights. No size, hours or pool are published.",
+				"summary_es": "Un centro de fitness con máquinas de cardio y peso libre. No se publican tamaño, horario ni piscina.",
+				"sources": ["https://www.priceline.com/hotel-deals/en-us/P5000254183/H57033106/hilton-garden-inn-tirana.ssp", "https://www.travelmyth.ie/Tirana/Hotels/gym"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	tokyo: {
+		"city": "Tokyo",
+		"country": "Japan",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "The only Tokyo hotel gym reviewed with a power rack and weight plates, plus Technogym and Hammer Strength.",
+		"bestReason_es": "El único gimnasio de hotel de Tokio revisado con rack de potencia y discos, además de Technogym y Hammer Strength.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Shangri-La Hotel Tokyo",
+				"stars": null,
+				"area": "Marunouchi",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Dumbbells up to 30 kg",
+						"Smith machine",
+						"Cardio and strength machines"
+					],
+					"extras": [
+						"Aerobics studio",
+						"Yoga studio",
+						"Pool",
+						"Jacuzzi",
+						"Sauna"
+					],
+					"access": null
+				},
+				"summary_en": "Open 24 hours with dumbbells up to 30 kg and a Smith machine, but no free barbell. Separate aerobics and yoga studios, a pool and a sauna.",
+				"summary_es": "Abierto 24 horas, con mancuernas de hasta 30 kg y máquina Smith, pero sin barra libre. Tiene estudios de aeróbic y yoga, piscina y sauna.",
+				"sources": ["https://barbellsabroad.com/hotel-gyms/best-hotel-gyms-in-tokyo/"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "The Prince Sakura Tower Tokyo",
+				"stars": null,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "06:00-22:00",
+					"equipment": [
+						"Dumbbells up to 30 kg",
+						"Power rack with weight plates",
+						"Technogym",
+						"Skillmill",
+						"Hammer Strength"
+					],
+					"extras": ["Yoga, pilates and martial arts classes"],
+					"access": null
+				},
+				"summary_en": "Open 6am to 10pm with a power rack and plates, dumbbells up to 30 kg, Technogym and Hammer Strength. Yoga, pilates and martial arts classes.",
+				"summary_es": "Abierto de 6:00 a 22:00 con rack de potencia y discos, mancuernas de hasta 30 kg, Technogym y Hammer Strength. Clases de yoga, pilates y artes marciales.",
+				"sources": ["https://barbellsabroad.com/hotel-gyms/best-hotel-gyms-in-tokyo/"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"toronto-canada": {
+		"city": "Toronto",
+		"country": "Canada",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "A 6,500 sq ft fitness centre inside the 90,000 sq ft 10XTO athletic centre, open 24/7 and free for guests.",
+		"bestReason_es": "Un gimnasio de 6.500 sq ft dentro del centro atlético 10XTO de 90.000 sq ft, abierto 24 horas y gratis para huéspedes.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Four Seasons Hotel Toronto",
+				"stars": 5,
+				"area": "Yorkville",
+				"bookingUrl": null,
+				"website": "https://www.fourseasons.com/toronto/",
+				"gym": {
+					"sizeM2": 325,
+					"hours": "24h",
+					"equipment": [
+						"Life Fitness cardio equipment",
+						"HOIST and Atlantis strength equipment",
+						"Expanded dumbbell selection",
+						"Multiple cable systems",
+						"Kettlebells",
+						"Turf zone with sled"
+					],
+					"extras": ["Private movement studio"],
+					"access": "In-house guests and private residents"
+				},
+				"summary_en": "A 3,500 sq ft (325 m2) fitness centre on the eighth floor, newly renovated, with Life Fitness cardio, HOIST and Atlantis strength gear and a turf zone. Open 24 hours, with staff on site from 6 am to 9 pm.",
+				"summary_es": "Un gimnasio de 325 m2 (3.500 sq ft) en la planta ocho, recién renovado, con cardio Life Fitness, equipos de fuerza HOIST y Atlantis y una zona de césped. Abierto 24 horas, con personal de 6:00 a 21:00.",
+				"sources": ["https://press.fourseasons.com/toronto/hotel-news/2026/renovated-fitness-centre"],
+				"confidence": "high",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Hotel X Toronto",
+				"stars": null,
+				"area": "Exhibition Place",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": 604,
+					"hours": "24h",
+					"equipment": [
+						"Treadmills, ellipticals and stationary bikes",
+						"Stairmaster",
+						"Weight machines",
+						"Barbells and dumbbells",
+						"Kettlebells and medicine balls",
+						"TRX, rings and pull-up bars"
+					],
+					"extras": ["Part of the 90,000 sq ft 10XTO athletic centre", "Group classes for a fee"],
+					"access": "Free for hotel guests"
+				},
+				"summary_en": "A 6,500 sq ft (about 604 m2) fitness centre within the 90,000 sq ft 10XTO athletic centre, open 24/7 and free for hotel guests. Group classes are paid.",
+				"summary_es": "Un gimnasio de 6.500 sq ft (unos 604 m2) dentro del centro atlético 10XTO de 90.000 sq ft, abierto 24 horas y gratis para huéspedes. Las clases en grupo son de pago.",
+				"sources": ["https://chris-castellano-1jby.squarespace.com/blog/2019/12/27/best-hotel-gyms-in-toronto", "https://www.travelmyth.ie/Canada/Hotels/gym"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"townsville-australia": {
+		"city": "Townsville",
+		"country": "Australia",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Only hotel in the city with a confirmed 24-hour gym.",
+		"bestReason_es": "El único hotel de la ciudad con un gimnasio de 24 horas confirmado.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "The Ville Resort-Casino",
+				"stars": null,
+				"area": "Sir Leslie Thiess Drive, near the ferry terminal",
+				"bookingUrl": "https://www.booking.com/hotel/au/the-ville-resort-casino.html",
+				"website": "https://www.theville.com.au/",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Outdoor pool", "Spa"],
+					"access": "Fitness centre for guests"
+				},
+				"summary_en": "A fitness centre is listed, with no size, equipment or hours published. There is an outdoor pool and a full-service spa. The listing shows a 4.5 property class, not an official star rating.",
+				"summary_es": "Figura un centro de fitness, sin datos de tamaño, equipamiento ni horario. Hay piscina exterior y spa. El anuncio indica una clase de propiedad de 4,5, no una categoría oficial de estrellas.",
+				"sources": ["https://lookup.hotels.com/ho105576/the-ville-resort-casino-townsville-australia"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/208778236.jpg?k=0b3ab317397b002c9b325915b588d9cb565a8e5aa0251c70068248a3671507bd&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Hotel Grand Chancellor Townsville",
+				"stars": 4,
+				"area": "City centre (Flinders Street)",
+				"bookingUrl": "https://www.booking.com/hotel/au/hotel-grand-chancellor-townsville.html",
+				"website": "https://grandchancellorhotels.com/hotel-grand-chancellor-townsville/",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Treadmills",
+						"Cardio machines",
+						"Extensive range of equipment (not itemised)"
+					],
+					"extras": ["Rooftop pool (level 20)"],
+					"access": "Gym on level 3"
+				},
+				"summary_en": "A 24-hour gym on level 3 with treadmills and other cardio machines, plus a rooftop pool on level 20. Free weights are not described.",
+				"summary_es": "Un gimnasio abierto 24 horas en la planta 3 con cintas de correr y otras máquinas de cardio, y piscina en la azotea en la planta 20. No se describen pesas libres.",
+				"sources": [
+					"https://grandchancellorhotels.com/hotel-grand-chancellor-townsville/hotel-information/fitness-amenities",
+					"https://townsvilleenterprise.com.au/townsville-north-queensland-trade-portal/hotel-grand-chancellor-townsville-tz5jy7",
+					"https://www.expedia.com.au/Townsville-Hotels-Hotel-Grand-Chancellor-Townsville.h16326.Hotel-Information"
+				],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/51240139.jpg?k=969d7c015f4dd4f0bf923262951a61e9e3a55085c2517231fe255cd104b60863&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"trogir-croatia": {
+		"city": "Trogir",
+		"country": "Croatia",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Only hotel with a confirmed gym; free for guests with sauna and indoor hot tub.",
+		"bestReason_es": "Único hotel con gimnasio confirmado; gratis para huéspedes con sauna y jacuzzi interior.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Hotel Brown Beach House & Spa",
+				"stars": 4,
+				"area": "Put Gradine",
+				"bookingUrl": "https://www.booking.com/hotel/hr/brown-beach-house.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Sauna",
+						"Indoor hot tub",
+						"Relaxation area",
+						"Personal trainer services",
+						"Spa centre"
+					],
+					"access": "Free for guests"
+				},
+				"summary_en": "An internal gym, free for guests, with sauna, indoor hot tub and a relaxation area. Gym size, equipment and hours are not published.",
+				"summary_es": "Un gimnasio interno, gratis para huéspedes, con sauna, jacuzzi interior y zona de relax. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.hotelgyms.com/hotels/hr/trogir/hotel-brown-beach-house-and-spa/1852402", "https://www.priceline.com/hotel-deals/en-us/P5000304924/H44975603/hotel-brown-beach-house-spa.ssp"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/240780441.jpg?k=cc360028f65e8bd2daf101a71ac2206da9a3857013eb7d27b26dfea6de7f4651&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"turku-finland": {
+		"city": "Turku",
+		"country": "Finland",
+		"checked": "2026-11-02",
+		"best": "budget",
+		"bestReason_en": "A 9th-floor fitness room plus free access to a 24/7 Technogym club with free weights and a cycling hall 500 m away.",
+		"bestReason_es": "Sala de fitness en la planta 9 y acceso gratuito a un club Technogym 24 h con peso libre y sala de ciclismo a 500 m.",
+		"luxuryNote": "No 5-star hotel with a gym confirmed in the city",
+		"tiers": {
+			"luxury": null,
+			"standard": null,
+			"budget": {
+				"hotel": "Original Sokos Hotel Kupittaa",
+				"stars": null,
+				"area": "Kupittaa",
+				"bookingUrl": null,
+				"website": "https://www.sokoshotels.fi/en/hotels/turku/original-sokos-hotel-kupittaa",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24/7 (M&M Kuntotalo Kupittaa)",
+					"equipment": [
+						"Technogym equipment",
+						"Free weight area",
+						"Cardio loft",
+						"Stretching room"
+					],
+					"extras": [
+						"Large indoor cycling hall",
+						"Group exercise classes",
+						"Saunas",
+						"Bookable massages"
+					],
+					"access": "Free for guests: 9th-floor hotel fitness room and M&M Kuntotalo Kupittaa, about 500 m away"
+				},
+				"summary_en": "The hotel has a fitness room on the 9th floor. Guests also get free access to M&M Kuntotalo Kupittaa, about 500 m away, open 24/7 with Technogym equipment, a free weight area and a large cycling hall.",
+				"summary_es": "El hotel tiene una sala de fitness en la planta 9. Los huéspedes también tienen acceso gratuito a M&M Kuntotalo Kupittaa, a unos 500 m, abierto 24/7 con equipos Technogym, zona de peso libre y una gran sala de ciclismo.",
+				"sources": ["https://www.sokoshotels.fi/en/hotels/turku/original-sokos-hotel-kupittaa/gym", "https://www.sokoshotels.fi/en/hotels/turku/original-sokos-hotel-kupittaa"],
+				"confidence": "medium",
+				"photo": null
+			}
+		}
+	},
+	"ushuaia-argentina": {
+		"city": "Ushuaia",
+		"country": "Argentina",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A modern fitness centre with sauna and spa; no further gym details are published.",
+		"bestReason_es": "Un centro de fitness moderno con sauna y spa; no hay más datos publicados del gimnasio.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Arakur Ushuaia Resort & Spa",
+				"stars": 5,
+				"area": "Ushuaia",
+				"bookingUrl": "https://www.booking.com/hotel/ar/arakur-ushuaia.en-gb.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Sauna", "Spa"],
+					"access": "Massage treatments available for an extra fee"
+				},
+				"summary_en": "A modern fitness centre with a sauna and a spa on site. Size, equipment and hours are not published.",
+				"summary_es": "Centro de fitness moderno con sauna y spa en el hotel. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.hotelgyms.com/hotels/ar/ushuaia/arakur-ushuaia-resort-and-spa/1066887"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/61092669.jpg?k=967c175253572cc031c91255774a114e8262db4bdced88230030b3dec2485ea6&o=",
+					"gym": true
+				}
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"vaasa-finland": {
+		"city": "Vaasa",
+		"country": "Finland",
+		"checked": "2026-11-02",
+		"best": "budget",
+		"bestReason_en": "Only gym found with a confirmed fitness centre; no detail on size or equipment.",
+		"bestReason_es": "El único gimnasio encontrado con centro de fitness confirmado; sin detalles de tamaño ni equipamiento.",
+		"luxuryNote": "No 5-star hotel with a gym confirmed in the city",
+		"tiers": {
+			"luxury": null,
+			"standard": null,
+			"budget": {
+				"hotel": "Scandic Vaasa",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": null,
+				"website": "https://www.scandichotels.com/vaasa",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Sauna"],
+					"access": "Fitness centre listed among hotel amenities"
+				},
+				"summary_en": "A fitness centre is listed among the amenities, with a sauna. GymFactor rating is poor and no equipment details are given.",
+				"summary_es": "Hay un centro de fitness entre los servicios, con sauna. La valoración GymFactor es baja y no hay detalles del equipamiento.",
+				"sources": ["https://www.hotelgyms.com/hotels/fi/vaasa/scandic-vaasa/180162", "https://www.expedia.co.uk/Vaasa-Hotels-Hotel-With-Gym.0-0-d3673-thotelwithgym.Travel-Guide-Filter-Hotels"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"vancouver-canada": {
+		"city": "Vancouver",
+		"country": "Canada",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Technogym equipment reopened in February 2026, next to a spa with a pool.",
+		"bestReason_es": "Equipamiento Technogym reabierto en febrero de 2026, junto a un spa con piscina.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Fairmont Pacific Rim",
+				"stars": 5,
+				"area": "Coal Harbour",
+				"bookingUrl": null,
+				"website": "https://fairmont.com/pacific-rim-vancouver/",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Technogym equipment"],
+					"extras": ["Adjoining Willow Stream Spa with pool and steam", "Personal training"],
+					"access": null
+				},
+				"summary_en": "Gym reopened in February 2026 with the latest Technogym equipment. It adjoins the Willow Stream Spa, which has a pool and steam room.",
+				"summary_es": "Gimnasio reabierto en febrero de 2026 con equipos Technogym de última generación. Está junto al spa Willow Stream, que tiene piscina y sauna de vapor.",
+				"sources": ["https://www.hotelgyms.com/blog/?p=5064", "https://www.travelmyth.ie/Canada/Hotels/gym"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Sheraton Vancouver Wall Centre",
+				"stars": 4,
+				"area": "Downtown",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "Daily 6am-11pm",
+					"equipment": [
+						"Newer Cybex machines",
+						"Older Life Fitness units",
+						"Separate rooms by equipment type"
+					],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "A spacious gym with separate rooms by equipment type, newer Cybex machines and older Life Fitness units. Open daily from 6 am to 11 pm.",
+				"summary_es": "Un gimnasio amplio con salas separadas por tipo de equipo, máquinas Cybex nuevas y unidades Life Fitness más antiguas. Abierto a diario de 6:00 a 23:00.",
+				"sources": ["https://www.hotelgyms.com/blog/?p=5064"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"victoria-canada": {
+		"city": "Victoria",
+		"country": "Canada",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Open 24 hours with free weights, a multi-gym and two saunas, plus an indoor pool.",
+		"bestReason_es": "Abierto 24 horas, con peso libre, multiestación y dos saunas, además de piscina cubierta.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Fairmont Empress",
+				"stars": null,
+				"area": "Inner Harbour",
+				"bookingUrl": null,
+				"website": "https://www.fairmont-empress.com/",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Free weights",
+						"Multi-gym",
+						"Rowing machine",
+						"Stair climbers",
+						"Treadmills, ellipticals and stationary bikes"
+					],
+					"extras": [
+						"Two saunas",
+						"Indoor heated pool and whirlpool",
+						"Willow Stream spa"
+					],
+					"access": "Free for registered guests, 16+ only"
+				},
+				"summary_en": "Open 24 hours with free weights, a multi-gym, rowing machine, stair climbers and cardio machines. Two saunas and an indoor pool are on site.",
+				"summary_es": "Abierto 24 horas, con peso libre, multiestación, remo, escaladoras y máquinas de cardio. Hay dos saunas y piscina cubierta.",
+				"sources": ["https://www.fairmont-empress.com/play/pool-fitness"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Victoria Marriott Inner Harbour",
+				"stars": null,
+				"area": "Downtown (Humboldt Street)",
+				"bookingUrl": null,
+				"website": "https://www.marriott.com/en-us/hotels/yyjmc-victoria-marriott-inner-harbour/overview",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Fully equipped fitness centre (equipment not itemized)"],
+					"extras": ["Indoor pool", "Outdoor terrace"],
+					"access": "Complimentary"
+				},
+				"summary_en": "A 24-hour fitness centre that the hotel calls fully equipped, next to an indoor pool and an outdoor terrace. Equipment is not itemized.",
+				"summary_es": "Centro de fitness abierto 24 horas que el hotel describe como totalmente equipado, junto a una piscina cubierta y una terraza exterior. No detalla el equipamiento.",
+				"sources": ["https://www.marriott.com/en-us/hotels/yyjmc-victoria-marriott-inner-harbour/overview"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"vienna-austria": {
+		"city": "Vienna",
+		"country": "Austria",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Open 24 hours and part of a hotel health club with indoor pool, sauna and steam bath.",
+		"bestReason_es": "Abierto 24 horas y dentro de un health club con piscina cubierta, sauna y baño de vapor.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Vienna Marriott Hotel",
+				"stars": 5,
+				"area": "Innere Stadt (Ringstrasse, Parkring)",
+				"bookingUrl": "https://booking.com/hotel/at/vienna-marriott.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Fully equipped gym"],
+					"extras": [
+						"Indoor pool",
+						"Spa area",
+						"Sauna",
+						"Steam bath"
+					],
+					"access": "Health club for guests"
+				},
+				"summary_en": "A fully equipped gym open 24 hours, with a heated indoor pool, spa area, sauna and steam bath. Equipment details are not published in the sources found.",
+				"summary_es": "Gimnasio completo abierto 24 horas, con piscina cubierta climatizada, spa, sauna y baño de vapor. Las fuentes consultadas no detallan el equipamiento.",
+				"sources": ["https://www.hotelgyms.com/hotels/at/wien/vienna-marriott-hotel/74602", "https://www.britishairways.com/en-gb/destinations/hotel-information/Viena/Vienna-Marriott-Hotel/AT-VIE-1515180"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/843435924.jpg?k=e8a0641916a1bef132ee64b1913ca53caaa459e8b04ec567c729665b46c9f286&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Novotel Wien Hauptbahnhof",
+				"stars": 4,
+				"area": "Favoriten (10th District, next to main station)",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Cardio machines", "Strength-training machines"],
+					"extras": ["Pool", "Sauna"],
+					"access": "Free for guests"
+				},
+				"summary_en": "24-hour gym with cardio and strength-training machines, plus a pool and sauna. Size is not stated.",
+				"summary_es": "Gimnasio abierto 24 horas con máquinas de cardio y de fuerza, además de piscina y sauna. No se indica el tamaño.",
+				"sources": ["https://eurovistatrips.com/4-star-hotels-vienna-24-hour-gym/"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"villach-austria": {
+		"city": "Villach",
+		"country": "Austria",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "An 800 m2 Vitality Club with Technogym equipment and classes, far bigger than any other confirmed gym in Villach.",
+		"bestReason_es": "Un Vitality Club de 800 m2 con equipos Technogym y clases, mucho mayor que cualquier otro gimnasio confirmado en Villach.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "voco Villach",
+				"stars": 4,
+				"area": "Drau river, next to Congress Center",
+				"bookingUrl": "https://www.booking.com/hotel/at/holiday-inn-villach.html",
+				"website": "https://villach.at/congress-center/hotels/hotel?lang=en-us",
+				"gym": {
+					"sizeM2": 800,
+					"hours": "06:30-22:00",
+					"equipment": ["Technogym weight and cardio machines"],
+					"extras": ["Yoga and fitness room with classes", "Sauna, steam bath, sanarium"],
+					"access": "Free for guests on business rate; Vitality Club membership also sold"
+				},
+				"summary_en": "An 800 m2 Vitality Club with Technogym weight and cardio machines, open 06:30 to 22:00. Includes a classes room, sauna and steam bath.",
+				"summary_es": "Un Vitality Club de 800 m2 con máquinas Technogym de peso y cardio, abierto de 06:30 a 22:00. Incluye sala de clases, sauna y baño de vapor.",
+				"sources": ["https://villach.at/congress-center/hotels/hotel?lang=en-us"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/269851077.jpg?k=d281e2dc15f74efe61e6b7311f90b258603342142c2808c67eed12a383463c74&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Thermenhotel Karawankenhof",
+				"stars": 4,
+				"area": "Warmbad Villach",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness centre (equipment not listed)"],
+					"extras": ["Free access to Kärnten Therme", "Saunas, steam baths, pools"],
+					"access": "Guests"
+				},
+				"summary_en": "A fitness centre plus free access to the connected Kärnten Therme with pools, saunas and steam baths. Gym size and equipment are not published.",
+				"summary_es": "Un centro de fitness y acceso gratuito a la Kärnten Therme conectada, con piscinas, saunas y baños de vapor. No se publican tamaño ni equipamiento del gimnasio.",
+				"sources": ["https://www.hotelgyms.com/hotels/at/villach/thermenhotel-karawankenhof/383208"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"vodice-croatia": {
+		"city": "Vodice",
+		"country": "Croatia",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Gym included in the rate, with four pools, tennis courts and a spa on site.",
+		"bestReason_es": "Gimnasio incluido en la tarifa, con cuatro piscinas, pistas de tenis y spa en el hotel.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Hotel Olympia",
+				"stars": 4,
+				"area": "Ljudevita Gaja",
+				"bookingUrl": "https://www.booking.com/hotel/hr/olympia.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Sauna",
+						"Four pools (three outdoor, one indoor)",
+						"Tennis courts",
+						"Spa and wellness centre"
+					],
+					"access": "Included in the price"
+				},
+				"summary_en": "A wellness and fitness centre with sauna, rated a good gym by HotelGyms. Size, equipment and hours are not published.",
+				"summary_es": "Un centro de wellness y fitness con sauna, valorado como buen gimnasio por HotelGyms. No se publican tamaño, equipamiento ni horario.",
+				"sources": [
+					"https://www.hotelgyms.com/hotels/hr/vodice/hotel-olympia/19972",
+					"https://www.hrvaska.net/en/hotels/vodice/hotel-olympia.htm",
+					"https://traveleon.ai/hotels/hotel-olympia-9726375"
+				],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/599206699.jpg?k=330f8650c5defcaaae26c341d101b91e3acba406283ad7a47f8fabd0e169ce52&o=",
+					"gym": false
+				}
+			},
+			"budget": null
+		}
+	},
+	"wels-austria": {
+		"city": "Wels",
+		"country": "Austria",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 142 m2 air-conditioned Technogym training area, free for all guests.",
+		"bestReason_es": "Una zona de entrenamiento Technogym con aire acondicionado de 142 m2, gratis para todos los huéspedes.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Hotel Ploberger",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/at/hotel-ploberger.html",
+				"website": "https://www.hotel-ploberger.at/hotel-in-wels-with-sauna-and-gym/",
+				"gym": {
+					"sizeM2": 142,
+					"hours": "06:30-22:00",
+					"equipment": ["Technogym strength and cardio machines"],
+					"extras": [
+						"Sauna",
+						"Relaxation room",
+						"Protein shakes on site"
+					],
+					"access": "Free for all guests"
+				},
+				"summary_en": "A 142 m2 air-conditioned training area with Technogym strength and cardio machines, next to a sauna. Hours listed as 06:30 to 22:00.",
+				"summary_es": "Una zona de entrenamiento con aire acondicionado de 142 m2 con máquinas Technogym de fuerza y cardio, junto a una sauna. Horario indicado de 06:30 a 22:00.",
+				"sources": ["https://www.hotel-ploberger.at/hotel-in-wels-with-sauna-and-gym/"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/763497970.jpg?k=dec6450f51c53cb49d68b96c700e95b82c2eeaefe66fad44558e5019d1e17206&o=",
+					"gym": true
+				}
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"whistler-canada": {
+		"city": "Whistler",
+		"country": "Canada",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Peloton bikes, TRX and a gear-lending program, with heated indoor and outdoor pools.",
+		"bestReason_es": "Bicicletas Peloton, TRX y préstamo de material, con piscinas climatizadas interior y exterior.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Fairmont Chateau Whistler",
+				"stars": 5,
+				"area": "Blackcomb Mountain base",
+				"bookingUrl": null,
+				"website": "https://www.fairmont.com/whistler/",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Cardio machines",
+						"Strength machines",
+						"Dumbbells"
+					],
+					"extras": [
+						"Heated outdoor pools",
+						"Hot tubs",
+						"Cedar saunas",
+						"Full-service spa"
+					],
+					"access": "Guest access, details not confirmed"
+				},
+				"summary_en": "A modest fitness room with cardio and strength machines, backed by a Health Club with heated outdoor pools, hot tubs and cedar saunas. Hotelgyms.com rates the gym 2 out of 5.",
+				"summary_es": "Una sala de fitness modesta con máquinas de cardio y fuerza, apoyada por un Health Club con piscinas exteriores climatizadas, jacuzzis y saunas de cedro. Hotelgyms.com valora el gimnasio con 2 de 5.",
+				"sources": ["https://www.hotelgyms.com/hotels/ca/whistler/fairmont-chateau-whistler/h541"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "The Westin Resort & Spa, Whistler",
+				"stars": null,
+				"area": "Whistler Village",
+				"bookingUrl": null,
+				"website": "https://www.marriott.com/en-us/hotels/ysewi-the-westin-resort-and-spa-whistler/overview/",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Cardio and weight machines",
+						"TRX functional training",
+						"Peloton bikes"
+					],
+					"extras": [
+						"Sauna and steam rooms",
+						"Heated indoor and outdoor pools with hot tubs",
+						"Gear lending (Hyperice, Bala)",
+						"Spa"
+					],
+					"access": "Complimentary for guests"
+				},
+				"summary_en": "WestinWORKOUT studio with cardio and weight machines, TRX and Peloton bikes. Guests can borrow recovery and strength gear, and use sauna, steam rooms and heated pools.",
+				"summary_es": "Estudio WestinWORKOUT con máquinas de cardio y pesas, TRX y bicicletas Peloton. Los huéspedes pueden pedir prestado material de recuperación y fuerza, y usar sauna, baño de vapor y piscinas climatizadas.",
+				"sources": ["https://www.marriott.com/en-us/hotels/ysewi-the-westin-resort-and-spa-whistler/overview/", "https://tripexpert.com/whistler/hotels/the-westin-resort-and-spa-whistler/fitness-center"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"windsor-canada": {
+		"city": "Windsor",
+		"country": "Canada",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "One of few Windsor hotels with a documented gym, plus an indoor pool and sauna.",
+		"bestReason_es": "Uno de los pocos hoteles de Windsor con gimnasio documentado, además de piscina cubierta y sauna.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Caesars Windsor",
+				"stars": 4,
+				"area": "Downtown (Riverside Drive)",
+				"bookingUrl": null,
+				"website": "https://www.wyndhamhotels.com/en-ca/caesars-rewards/windsor-ontario/caesars-windsor/services-amenities",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Latest cardio machines", "Strength training equipment"],
+					"extras": ["Year-round indoor pool and hot tub", "Sauna"],
+					"access": null
+				},
+				"summary_en": "A fitness centre with cardio machines and strength equipment, plus a year-round indoor pool, hot tub and sauna. Size and hours are not published.",
+				"summary_es": "Centro de fitness con máquinas de cardio y equipo de fuerza, además de piscina cubierta todo el año, jacuzzi y sauna. No se publican superficie ni horario.",
+				"sources": ["https://www.wyndhamhotels.com/en-ca/caesars-rewards/windsor-ontario/caesars-windsor/services-amenities", "https://www.priceline.com/hotel-deals/h14661505/CA/Ontario/Windsor/Caesars-Windsor-Hotel-and-Casino.html"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"winnipeg-canada": {
+		"city": "Winnipeg",
+		"country": "Canada",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "24-hour gym on the 21st floor with Technogym equipment, a saltwater pool and sauna.",
+		"bestReason_es": "Gimnasio 24 horas en la planta 21 con equipos Technogym, piscina de agua salada y sauna.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Fairmont Winnipeg",
+				"stars": 5,
+				"area": "Downtown",
+				"bookingUrl": null,
+				"website": "https://www.fairmont.com/winnipeg/",
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Technogym treadmills, ellipticals and bikes",
+						"Strength machines",
+						"Free weights"
+					],
+					"extras": ["Indoor saltwater pool (12 m)", "Dry sauna"],
+					"access": "Free for hotel guests"
+				},
+				"summary_en": "A 24-hour fitness centre on the 21st floor with Technogym cardio, strength machines and free weights. It has a 12 m indoor saltwater pool and a dry sauna.",
+				"summary_es": "Centro de fitness 24 horas en la planta 21 con cardio Technogym, máquinas de fuerza y peso libre. Tiene piscina cubierta de agua salada de 12 m y sauna seca.",
+				"sources": ["https://www.fairmont.com/ar/hotels/winnipeg/fairmont-winnipeg/wellness.html", "https://www.hotelgyms.com/hotels/ca/winnipeg/fairmont-winnipeg/h42303"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"xian-china": {
+		"city": "Xi’an",
+		"country": "China",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Gym open 24 hours with an indoor heated pool and spa.",
+		"bestReason_es": "Gimnasio abierto 24 horas con piscina cubierta climatizada y spa.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Shangri-La Xi'an",
+				"stars": null,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": ["Indoor heated pool", "Spa"],
+					"access": null
+				},
+				"summary_en": "Gym open 24 hours, rated Okay on HotelGyms, with an indoor heated pool and spa massages. Size and equipment are not published.",
+				"summary_es": "Gimnasio abierto 24 horas, valorado como Aceptable en HotelGyms, con piscina cubierta climatizada y masajes en el spa. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.hotelgyms.com/hotels/cn/xian/shangri-la-xian/358333"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"yantai-china": {
+		"city": "Yantai",
+		"country": "China",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "24-hour fitness centre rated Great on HotelGyms, with an indoor pool.",
+		"bestReason_es": "Gimnasio abierto 24 horas valorado como Excelente en HotelGyms, con piscina cubierta.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hilton Yantai Golden Coast",
+				"stars": null,
+				"area": "Golden Coast",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": ["Indoor pool", "Kids Club"],
+					"access": null
+				},
+				"summary_en": "A 24-hour fitness centre rated Great on HotelGyms, with an indoor swimming pool. Size and equipment are not published.",
+				"summary_es": "Gimnasio abierto 24 horas valorado como Excelente en HotelGyms, con piscina cubierta. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.hotelgyms.com/hotels/cn/yantai/hilton-yantai-golden-coast/1819023"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"yaounde-cameroon": {
+		"city": "Yaounde",
+		"country": "Cameroon",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 24-hour health club with yoga classes at the only 5-star found with a gym.",
+		"bestReason_es": "Un club de salud abierto 24 horas con clases de yoga en el único 5 estrellas encontrado con gimnasio.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hilton Yaounde",
+				"stars": 5,
+				"area": "Yaounde",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Health club"],
+					"extras": ["Yoga classes"],
+					"access": null
+				},
+				"summary_en": "A 24-hour health club with on-site yoga classes. No size or equipment list is published.",
+				"summary_es": "Un club de salud abierto 24 horas con clases de yoga. No se publican tamaño ni lista de equipos.",
+				"sources": ["https://www.expedia.com/Yaounde-Hotels-Hotels-With-Fitness-Center.0-0-d3886-tHotelswithFitnessCenter.Travel-Guide-Filter-Hotels"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Le Lagon Club & Affaires",
+				"stars": 4,
+				"area": "Yaounde",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Well-equipped fitness facilities"],
+					"extras": ["Full-service spa"],
+					"access": null
+				},
+				"summary_en": "Listed with well-equipped fitness facilities and a full-service spa. No size, hours or equipment details are published.",
+				"summary_es": "Figura con instalaciones de fitness bien equipadas y spa completo. No se publican tamaño, horario ni equipamiento.",
+				"sources": ["https://www.expedia.com/Yaounde-Hotels-Hotels-With-Fitness-Center.0-0-d3886-tHotelswithFitnessCenter.Travel-Guide-Filter-Hotels"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"yerevan-armenia": {
+		"city": "Yerevan",
+		"country": "Armenia",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Full cardio, free weights and strength machines, with a seasonal outdoor pool and a weekly aqua aerobics class.",
+		"bestReason_es": "Cardio completo, peso libre y máquinas de fuerza, con piscina exterior de temporada y una clase semanal de aquagym.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Armenia Marriott Hotel Yerevan",
+				"stars": 5,
+				"area": "Republic Square",
+				"bookingUrl": null,
+				"website": "https://www.marriott.com/hotels/travel/evnmc-armenia-marriott-hotel-yerevan/",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Treadmills",
+						"Ellipticals",
+						"Exercise bikes",
+						"Stair climbers",
+						"Rowing machines",
+						"Free weights",
+						"Weight machines"
+					],
+					"extras": ["Seasonal outdoor pool", "Weekly aqua aerobics class (Saturday mornings)"],
+					"access": "Complimentary for guests"
+				},
+				"summary_en": "A complimentary fitness centre with a full range of cardio machines, free weights and weight machines. Seasonal outdoor pool and a free aqua aerobics class on Saturday mornings.",
+				"summary_es": "Gimnasio gratuito para huéspedes con una gama completa de cardio, peso libre y máquinas de pesas. Piscina exterior de temporada y clase gratuita de aquagym los sábados por la mañana.",
+				"sources": ["https://www.marriott.com/ru/hotels/evnmc-armenia-marriott-hotel-yerevan/experiences/", "https://www.marriott.com/en-us/destinations/armenia/fitness-center-hotels.mi"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Courtyard by Marriott Yerevan",
+				"stars": 4,
+				"area": "Yerevan",
+				"bookingUrl": null,
+				"website": "https://www.marriott.com/hotels/travel/evncy/",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": "Fitness centre listed by Marriott"
+				},
+				"summary_en": "Marriott lists a fitness centre at this hotel, but no size, equipment or hours are published.",
+				"summary_es": "Marriott indica un centro de fitness en este hotel, pero no se publica tamaño, equipamiento ni horario.",
+				"sources": ["https://www.marriott.com/en-us/destinations/armenia/fitness-center-hotels.mi"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"zadar-croatia": {
+		"city": "Zadar",
+		"country": "Croatia",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Only tier confirmed; a large fitness room next to a 2,500 m2 wellness area.",
+		"bestReason_es": "Única categoría confirmada; una sala de fitness grande junto a una zona wellness de 2.500 m2.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": {
+				"hotel": "Falkensteiner Club Funimation Hotel Borik",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Large, well-equipped fitness room (not itemised)"],
+					"extras": [
+						"Heated indoor and outdoor pools",
+						"Sauna area",
+						"Massage on request"
+					],
+					"access": "Included for guests"
+				},
+				"summary_en": "A large fitness room described as well equipped, with a 2,500 m2 wellness area with heated indoor and outdoor pools and saunas. Equipment list and hours are not published.",
+				"summary_es": "Una sala de fitness grande y bien equipada, con una zona wellness de 2.500 m2 con piscinas climatizadas interior y exterior y saunas. No se publican la lista de equipos ni el horario.",
+				"sources": ["https://www.soccatours.com/en/football-training-camp/croatia/dalmatia/falkensteiner-club-funimation-hotel-borik"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"zagreb-croatia": {
+		"city": "Zagreb",
+		"country": "Croatia",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Large fitness area with a pool and saunas, free for guests.",
+		"bestReason_es": "Zona de fitness amplia con piscina y saunas, gratis para huéspedes.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "The Westin Zagreb",
+				"stars": 5,
+				"area": "Kršnjavoga 1",
+				"bookingUrl": null,
+				"website": "https://marriott.com/en-us/hotels/zagwi-the-westin-zagreb/experiences",
+				"gym": {
+					"sizeM2": 1500,
+					"hours": "6:30-22:30",
+					"equipment": [
+						"Free weights",
+						"Cardio machines",
+						"Strength machines",
+						"Rowing machines"
+					],
+					"extras": [
+						"17 m indoor pool",
+						"Finnish and Turkish saunas",
+						"Spa"
+					],
+					"access": "Free for guests"
+				},
+				"summary_en": "A 1,500 m2 fitness area is listed, open 6:30 to 22:30 with free weights and cardio and strength machines. It has a heated indoor pool and saunas. Sources disagree on whether the size covers the gym alone.",
+				"summary_es": "Se indica una zona de fitness de 1.500 m2, abierta de 6:30 a 22:30, con peso libre y máquinas de cardio y fuerza. Tiene piscina cubierta climatizada y saunas. Las fuentes no aclaran si la superficie es solo del gimnasio.",
+				"sources": ["https://www.hotelgyms.com/hotels/hr/zagreb/the-westin-zagreb/19713", "https://marriott.com/en-us/hotels/zagwi-the-westin-zagreb/experiences"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "DoubleTree by Hilton Zagreb",
+				"stars": null,
+				"area": "Business district (Grada Vukovara 269a)",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Cardio and weight equipment"],
+					"extras": [
+						"Indoor pool",
+						"Turkish bath",
+						"Finnish sauna",
+						"Spa"
+					],
+					"access": "Included in room rate"
+				},
+				"summary_en": "A large top-floor gym with city views, rated Perfect GymFactor by HotelGyms. It has an indoor pool, Turkish bath and sauna.",
+				"summary_es": "Un gimnasio amplio en la última planta con vistas a la ciudad, valorado Perfect GymFactor por HotelGyms. Tiene piscina cubierta, baño turco y sauna.",
+				"sources": ["https://www.hotelgyms.com/hotels/hr/zagreb/doubletree-by-hilton-zagreb/404076", "https://www.tripexpert.com/zagreb/hotels/doubletree-by-hilton-zagreb/fitness-center"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"zell-am-see-austria": {
+		"city": "Zell am See",
+		"country": "Austria",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "A 300+ m2 Technogym gym plus a 70 m2 fitness room with daily supervised programmes.",
+		"bestReason_es": "Un gimnasio Technogym de más de 300 m2 más una sala de fitness de 70 m2 con programas supervisados a diario.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Salzburgerhof, das 5-Sterne Hotel von Zell am See",
+				"stars": 5,
+				"area": "Auerspergstraße",
+				"bookingUrl": "https://www.booking.com/hotel/at/wellness-golf-und-geniesserhotel-salzburgerhof.html",
+				"website": "https://www.salzburgerhof.at/ar/wellness-spa/fitness",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Technogym treadmill, ergometer, fitness station", "Weight training with dumbbells"],
+					"extras": [
+						"Personal training (25 min EUR 55, 50 min EUR 95)",
+						"Indoor golf",
+						"3,500 m2 wellness area"
+					],
+					"access": "Guests"
+				},
+				"summary_en": "A Technogym gym with treadmill, ergometer and dumbbells overlooking the outdoor pool. Size and hours are not published.",
+				"summary_es": "Un gimnasio Technogym con cinta, ergómetro y mancuernas con vistas a la piscina exterior. No se publican tamaño ni horario.",
+				"sources": ["https://www.salzburgerhof.at/ar/wellness-spa/fitness"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/516071334.jpg?k=f906fd3d8c2eaadf81e902c01d2c4dea1fe5d24144079d116b2b74e37c8922b2&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Superior Sport und Familienresort Alpenblick",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/at/sporthotel-alpenblick.html",
+				"website": "https://alpenblick.at/en/spa-wellness/overview",
+				"gym": {
+					"sizeM2": 300,
+					"hours": null,
+					"equipment": ["Technogym cardio and weight-training machines", "Separate 70 m2 fitness room"],
+					"extras": [
+						"FitMindBody programme 7 days a week with workouts and yoga",
+						"Personal coach optional",
+						"Water World and Sauna World"
+					],
+					"access": "Included in the room rate"
+				},
+				"summary_en": "SEGL'S Power Place is over 300 m2 with Technogym machines, plus a separate 70 m2 fitness room. A supervised workout and yoga programme runs seven days a week.",
+				"summary_es": "SEGL'S Power Place tiene más de 300 m2 con máquinas Technogym, además de una sala de fitness independiente de 70 m2. Hay un programa supervisado de entrenamiento y yoga los siete días.",
+				"sources": ["https://alpenblick.at/en/spa-wellness/overview"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/514451061.jpg?k=3a71c0040ff2acefae3c25288207118f3ec824ab7b236fbab7c5b082d858e671&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	}
+};
+var TIERS = [
+	"luxury",
+	"standard",
+	"budget"
+];
+var GYM_LANGS = ["en", "es"];
+/** Gym data is keyed by catalogue id ("madrid-spain"); public URLs use the city slug ("madrid"). */
+async function slugs() {
+	const { byId, bySlug } = await data();
+	const pub = (id) => byId.get(id)?.slug ?? id;
+	const toId = (s) => G[s] ? s : bySlug.get(s)?.id;
+	return {
+		pub,
+		toId,
+		byId
+	};
+}
+var gymPaths = async () => {
+	const { pub } = await slugs();
+	return ["/gyms", ...Object.keys(G).map((id) => `/gyms/${pub(id)}`)];
+};
+var TX = {
+	en: {
+		tier: {
+			luxury: "Luxury",
+			standard: "Mid-range",
+			budget: "Budget"
+		},
+		tierNote: {
+			luxury: "5-star hotels",
+			standard: "4-star hotels",
+			budget: "3 stars or less"
+		},
+		h1: (c) => `The best hotel gyms in ${c}`,
+		title: (c) => `Best hotel gyms in ${c}: luxury, mid-range and budget | Top3Hotels`,
+		desc: (c, n) => `The hotel with the best gym in ${c} at every budget: ${n.join(", ")}. Judged on the gym only: size, equipment, hours and extras.`,
+		lead: "One hotel per budget, picked for its gym, not its lobby. Size, equipment, opening hours and extras, with sources.",
+		best: "Best gym in the city",
+		size: "Size",
+		hours: "Hours",
+		h24: "Open 24 hours",
+		equip: "Equipment",
+		extras: "Extras",
+		access: "Access",
+		book: "See prices on Booking",
+		site: "Hotel website",
+		sources: "Sources",
+		low: "Limited information: confirm the gym with the hotel before booking.",
+		none: "We could not confirm a hotel gym in this category.",
+		photoGym: "Gym photo: Booking.com",
+		photoHotel: "Hotel photo: Booking.com",
+		photoCity: "City photo",
+		how: "How we choose",
+		howBody: "We look only at the gym: size, free weights and machines, opening hours, extras like a pool or sauna, and what guests say about it. Categories follow the official star rating. Every fact comes from a public source listed under each hotel. Links to Booking.com are affiliate links: if you book, we may earn a commission at no cost to you.",
+		checked: "Checked",
+		crumbs: "Hotel gyms",
+		hotels: (c) => `The 3 best hotels in ${c}`,
+		idxTitle: "Best hotel gyms, city by city | Top3Hotels",
+		idxH1: "The best hotel gyms, city by city",
+		idxDesc: "The hotel with the best gym in every city we cover, at three budgets: luxury, mid-range and budget.",
+		cities: "cities"
+	},
+	es: {
+		tier: {
+			luxury: "Lujo",
+			standard: "Estándar",
+			budget: "Económico"
+		},
+		tierNote: {
+			luxury: "Hoteles de 5 estrellas",
+			standard: "Hoteles de 4 estrellas",
+			budget: "3 estrellas o menos"
+		},
+		h1: (c) => `Los mejores gimnasios de hotel en ${c}`,
+		title: (c) => `Mejores gimnasios de hotel en ${c}: lujo, estándar y económico | Top3Hotels`,
+		desc: (c, n) => `El hotel con el mejor gimnasio de ${c} en cada presupuesto: ${n.join(", ")}. Valoramos solo el gimnasio: tamaño, equipamiento, horario y extras.`,
+		lead: "Un hotel por presupuesto, elegido por su gimnasio, no por su recepción. Tamaño, equipamiento, horario y extras, con fuentes.",
+		best: "El mejor gimnasio de la ciudad",
+		size: "Tamaño",
+		hours: "Horario",
+		h24: "Abierto 24 horas",
+		equip: "Equipamiento",
+		extras: "Extras",
+		access: "Acceso",
+		book: "Ver precios en Booking",
+		site: "Web del hotel",
+		sources: "Fuentes",
+		low: "Información limitada: confirma el gimnasio con el hotel antes de reservar.",
+		none: "No hemos podido confirmar un gimnasio de hotel en esta categoría.",
+		photoGym: "Foto del gimnasio: Booking.com",
+		photoHotel: "Foto del hotel: Booking.com",
+		photoCity: "Foto de la ciudad",
+		how: "Cómo elegimos",
+		howBody: "Miramos solo el gimnasio: tamaño, peso libre y máquinas, horario, extras como piscina o sauna, y lo que dicen los huéspedes. Las categorías siguen la clasificación oficial de estrellas. Cada dato sale de una fuente pública que enlazamos bajo cada hotel. Los enlaces a Booking.com son de afiliado: si reservas, podemos ganar una comisión sin coste para ti.",
+		checked: "Revisado",
+		crumbs: "Gimnasios de hotel",
+		hotels: (c) => `Los 3 mejores hoteles de ${c}`,
+		idxTitle: "Mejores gimnasios de hotel, ciudad por ciudad | Top3Hotels",
+		idxH1: "Los mejores gimnasios de hotel, ciudad por ciudad",
+		idxDesc: "El hotel con el mejor gimnasio de cada ciudad que cubrimos, en tres presupuestos: lujo, estándar y económico.",
+		cities: "ciudades"
+	}
+};
+var CSS_GYM = `.gym{max-width:1100px;margin:0 auto}.gym .crumbs{font-size:13px;opacity:.7;margin:8px 0 14px}.gym .crumbs a{color:inherit}
+.gym h1{font-size:clamp(30px,5vw,46px);line-height:1.08;margin:0 0 10px}.gym .lead{font-size:18px;line-height:1.5;opacity:.85;margin:0 0 6px;max-width:760px}.gym .upd{font-size:13px;opacity:.65;margin:0 0 22px}
+.gcards{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin:10px 0 26px}
+.gcard{position:relative;display:flex;flex-direction:column;border:1px solid var(--line);border-radius:18px;overflow:hidden;background:var(--card);box-shadow:var(--shadow)}
+.gcard:before{content:"";position:absolute;left:0;right:0;top:0;height:4px;background:var(--c);z-index:2}.gcard.luxury{--c:#b8860b}.gcard.standard{--c:#d83b51}.gcard.budget{--c:#1f7a5a}
+.gcard .ph{position:relative;aspect-ratio:4/3;background:#dfe8f2;overflow:hidden}.gcard .ph img{width:100%;height:100%;object-fit:cover;display:block}
+.gcard .ph small{position:absolute;right:8px;bottom:8px;font-size:10px;background:#000a;color:#fff;border-radius:6px;padding:3px 6px}
+.gcard .gchips{position:absolute;left:12px;top:14px;display:flex;gap:6px;flex-wrap:wrap;z-index:2}.gcard .gchips span{margin:0!important;display:inline-flex;align-items:center;white-space:nowrap;line-height:1.2;width:auto;height:auto;font-size:12px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;padding:5px 10px;border-radius:99px;background:#fff;color:#10213a}
+.gcard .gchips .top{background:#10213a;color:#fff}
+.gcard .bd{padding:16px 18px 18px;display:flex;flex-direction:column;gap:10px;flex:1}.gcard h2{font-size:22px;line-height:1.2;margin:0}.gcard .meta{font-size:14px;color:var(--muted)}
+.gcard p{margin:0;font-size:15px;line-height:1.55}.gcard dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:14px}.gcard dt{font-weight:600;color:var(--muted)}.gcard dd{margin:0}
+.gcard .warn{font-size:13px;color:#8a5a00;background:rgba(184,134,11,.1);border-radius:8px;padding:8px 10px}
+.gcard .ctas{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto;padding-top:6px}.gcard .btn{min-height:44px}.gcard .lnk{align-self:center;font-size:14px}
+.gcard .src{font-size:12px;opacity:.7}.gcard .src a{color:inherit;margin-right:8px}
+.gcard.empty .bd{justify-content:center;text-align:center;color:var(--muted);min-height:180px}
+.gym .best{border-left:3px solid #10213a;background:rgba(127,127,127,.07);padding:12px 16px;border-radius:8px;margin:0 0 16px;font-size:15px}
+.gym .method{border-left:3px solid #d83b51;background:rgba(216,59,81,.06);padding:12px 16px;border-radius:8px;font-size:14px;line-height:1.55;margin:20px 0}
+.gym .clist{columns:3 220px;padding:0;list-style:none}.gym .clist li{margin:3px 0;break-inside:avoid}.gym .clist h2{font-size:18px;margin:16px 0 4px}
+@media(prefers-color-scheme:dark){.gcard .gchips span{background:#e8eef6}.gcard .warn{color:#f0c36b}}`;
+var ESC_URL = (u) => esc(u);
+var host = (u) => {
+	try {
+		return new URL(u).hostname.replace(/^www\./, "");
+	} catch {
+		return u;
+	}
+};
+var bookingFor = (p, city) => CJ_BOOKING(p.bookingUrl ?? `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(`${p.hotel}, ${city.city}`)}`, "t3gym");
+function card$1(t, p, city, L, cityImg, slug) {
+	const x = TX[L];
+	const chips = `<div class="gchips"><span>${esc(x.tier[t])}</span>${city.best === t ? `<span class="top">${esc(x.best)}</span>` : ""}</div>`;
+	if (!p) return `<article class="gcard ${t} empty"><div class="bd">${chips.replace("class=\"gchips\"", "class=\"gchips\" style=\"position:static\"")}<p>${esc(x.none)}</p><small>${esc(x.tierNote[t])}</small></div></article>`;
+	const g = p.gym ?? {};
+	const img = p.photo?.url ?? cityImg;
+	const credit = p.photo?.url ? p.photo.gym ? x.photoGym : x.photoHotel : x.photoCity;
+	const rows = [];
+	if (g.sizeM2) rows.push(`<dt>${esc(x.size)}</dt><dd>${g.sizeM2.toLocaleString(L === "es" ? "es-ES" : "en-GB")} m²</dd>`);
+	if (g.hours) rows.push(`<dt>${esc(x.hours)}</dt><dd>${esc(/^24/.test(g.hours) ? x.h24 : g.hours)}</dd>`);
+	if (g.equipment?.length) rows.push(`<dt>${esc(x.equip)}</dt><dd>${esc(g.equipment.join(" · "))}</dd>`);
+	if (g.extras?.length) rows.push(`<dt>${esc(x.extras)}</dt><dd>${esc(g.extras.join(" · "))}</dd>`);
+	if (g.access) rows.push(`<dt>${esc(x.access)}</dt><dd>${esc(g.access)}</dd>`);
+	const stars = p.stars ? `${"★".repeat(p.stars)} · ` : "";
+	return `<article class="gcard ${t}" id="${t}"><div class="ph">${chips}${img ? `<img src="${ESC_URL(img)}" alt="${esc(`${p.hotel}, ${city.city}`)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='${esc(cityImg ?? "")}'"><small>${esc(credit)}</small>` : ""}</div>
+<div class="bd"><h2>${esc(p.hotel)}</h2><div class="meta">${stars}${esc(p.area ?? city.city)}</div><p>${esc(L === "es" ? p.summary_es : p.summary_en)}</p>${rows.length ? `<dl>${rows.join("")}</dl>` : ""}${p.confidence === "low" ? `<p class="warn">${esc(x.low)}</p>` : ""}
+<div class="ctas"><a class="btn" href="${esc(bookingFor(p, city))}" rel="sponsored nofollow noopener" target="_blank" data-t="gym_booking" data-city="${esc(slug)}" data-cat="${t}" data-p="booking">${esc(x.book)}</a>${p.website ? `<a class="lnk" href="${esc(p.website)}" rel="nofollow noopener" target="_blank">${esc(x.site)} →</a>` : ""}</div>
+<div class="src">${esc(x.sources)}: ${p.sources.map((s) => `<a href="${esc(s)}" rel="nofollow noopener" target="_blank">${esc(host(s))}</a>`).join("")}</div></div></article>`;
+}
+async function gymCityPage(urlSlug, Lx) {
+	const { pub, toId, byId } = await slugs();
+	const id = toId(urlSlug);
+	const city = id ? G[id] : void 0;
+	if (!id || !city) return null;
+	const slug = pub(id);
+	if (slug !== urlSlug) return Response.redirect(`${SITE}${P(Lx === "es" ? "es" : "en", `/gyms/${slug}`)}`, 301);
+	const L = Lx === "es" ? "es" : "en";
+	const x = TX[L];
+	const ic = byId.get(id);
+	const cityImg = ic ? `/api/img/${encodeURIComponent(ic.id)}/mid` : void 0;
+	const path = `/gyms/${slug}`;
+	const picks = TIERS.map((t) => [t, city.tiers[t]]);
+	const names = picks.filter(([, p]) => p).map(([t, p]) => `${p.hotel} (${x.tier[t].toLowerCase()})`);
+	const bestReason = L === "es" ? city.bestReason_es : city.bestReason_en;
+	const bestPick = city.best ? city.tiers[city.best] : null;
+	const body = `<style>${CSS_GYM}</style><div class="gym"><nav class="crumbs"><a href="${P(L, "/")}">Top3Hotels</a> › <a href="${P(L, "/gyms")}">${esc(x.crumbs)}</a> › ${esc(city.city)}</nav>
+<h1>${esc(x.h1(city.city))}<em>.</em></h1><p class="lead">${esc(x.lead)}</p>${city.checked ? `<p class="upd">${esc(x.checked)}: ${esc(city.checked)}</p>` : ""}
+${bestPick && bestReason ? `<p class="best"><b>${esc(x.best)}:</b> ${esc(bestPick.hotel)}. ${esc(bestReason)}</p>` : ""}
+<div class="gcards">${picks.map(([t, p]) => card$1(t, p, city, L, cityImg, slug)).join("")}</div>
+<div class="method"><b>${esc(x.how)}.</b> ${esc(x.howBody)}</div>
+${ic ? `<p><a href="${P(L, `/${slug}`)}">${esc(x.hotels(city.city))} →</a></p>` : ""}</div>`;
+	const items = picks.filter(([, p]) => p).map(([t, p], i) => ({
+		"@type": "ListItem",
+		position: i + 1,
+		item: {
+			"@type": "Hotel",
+			name: p.hotel,
+			...p.stars ? { starRating: {
+				"@type": "Rating",
+				ratingValue: p.stars
+			} } : {},
+			address: {
+				"@type": "PostalAddress",
+				addressLocality: city.city,
+				addressCountry: city.country
+			},
+			amenityFeature: [{
+				"@type": "LocationFeatureSpecification",
+				name: "Fitness center",
+				value: true
+			}],
+			description: L === "es" ? p.summary_es : p.summary_en,
+			...p.photo?.url ? { image: p.photo.url } : {},
+			additionalProperty: {
+				"@type": "PropertyValue",
+				name: "category",
+				value: x.tier[t]
+			}
+		}
+	}));
+	return page({
+		L,
+		title: x.title(city.city),
+		description: x.desc(city.city, names),
+		path,
+		body,
+		alts: GYM_LANGS,
+		...bestPick?.photo?.url ?? cityImg ? { image: bestPick?.photo?.url ?? `https://www.top3hotels.com${cityImg}` } : {},
+		ld: [{
+			"@context": "https://schema.org",
+			"@type": "ItemList",
+			name: x.h1(city.city),
+			url: `${SITE}${P(L, path)}`,
+			itemListElement: items
+		}, {
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			itemListElement: [
+				{
+					"@type": "ListItem",
+					position: 1,
+					name: "Top3Hotels",
+					item: `${SITE}${P(L, "/")}`
+				},
+				{
+					"@type": "ListItem",
+					position: 2,
+					name: x.crumbs,
+					item: `${SITE}${P(L, "/gyms")}`
+				},
+				{
+					"@type": "ListItem",
+					position: 3,
+					name: city.city,
+					item: `${SITE}${P(L, path)}`
+				}
+			]
+		}]
+	});
+}
+async function gymIndexPage(Lx) {
+	const { pub } = await slugs();
+	const L = Lx === "es" ? "es" : "en";
+	const x = TX[L];
+	const byCountry = /* @__PURE__ */ new Map();
+	for (const [slug, c] of Object.entries(G)) {
+		const list = byCountry.get(c.country) ?? [];
+		list.push([slug, c]);
+		byCountry.set(c.country, list);
+	}
+	const countries = [...byCountry.keys()].sort((a, b) => a.localeCompare(b));
+	const body = `<style>${CSS_GYM}</style><div class="gym"><nav class="crumbs"><a href="${P(L, "/")}">Top3Hotels</a> › ${esc(x.crumbs)}</nav>
+<h1>${esc(x.idxH1)}<em>.</em></h1><p class="lead">${esc(x.idxDesc)}</p><p class="upd">${Object.keys(G).length} ${esc(x.cities)}</p>
+${countries.map((c) => `<h2 style="font-size:20px;margin:22px 0 6px">${esc(c)}</h2><ul class="clist">${byCountry.get(c).sort((a, b) => a[1].city.localeCompare(b[1].city)).map(([s, ci]) => `<li><a href="${P(L, `/gyms/${pub(s)}`)}">${esc(ci.city)}</a></li>`).join("")}</ul>`).join("")}
+<div class="method"><b>${esc(x.how)}.</b> ${esc(x.howBody)}</div></div>`;
+	return page({
+		L,
+		title: x.idxTitle,
+		description: x.idxDesc,
+		path: "/gyms",
+		body,
+		alts: GYM_LANGS,
+		ld: [{
+			"@context": "https://schema.org",
+			"@type": "CollectionPage",
+			name: x.idxH1,
+			url: `${SITE}${P(L, "/gyms")}`
+		}]
+	});
+}
+/** Small link for the city page. */
+var gymLink = (id, slug, L) => G[id] ? `<p class="note" style="margin:10px 0"><a href="${P(L === "es" ? "es" : "en", `/gyms/${slug}`)}" data-t="gym_link" data-city="${esc(slug)}">🏋️ ${esc(TX[L === "es" ? "es" : "en"].h1(G[id].city))} →</a></p>` : "";
 /**
 * Server-rendered SEO layer for Top3Hotels (v2).
 *
@@ -18871,7 +30407,7 @@ async function cityPage(city, L) {
 <form class="plan" action="/" method="get"><input type="hidden" name="city" value="${esc(city.slug)}"><label>${esc(t.checkIn)}<input type="date" name="checkin"></label><label>${esc(t.checkOut)}<input type="date" name="checkout"></label>${guestSel}${curSel}<button class="btn" type="submit" data-t="dates_submit" data-city="${esc(city.slug)}">${esc(t.seeDates)}</button><div class="quick"><span>${esc(xt.quick)}:</span><button type="button" data-quick="-1">${esc(xt.thisWeekend)}</button><button type="button" data-quick="-2">${esc(xt.nextWeekend)}</button><button type="button" data-quick="30">${esc(xt.inAMonth)}</button></div></form>
 <div class="cards" id="hotels">${hs.map((h, i) => card(h, city, i, L, sights, hero?.img ? `/api/img/${city.id}/big` : void 0, hpLive.has(hotelSlug(h.name, city.slug)) ? P(hpL.get(hotelSlug(h.name, city.slug))?.includes(L) ? L : "en", `/hotel/${hotelSlug(h.name, city.slug)}`) : void 0)).join("")}</div>
 <p class="more-links" style="margin:14px 0 4px;font-size:15px"><a href="${P(GROWTH_LANGS.includes(L) ? L : "en", `/compare-picks/${city.slug}`)}">${L === "es" ? "Comparar los tres hoteles" : "Compare the three hotels side by side"}</a>${(sights ?? []).length ? ` · ${L === "es" ? "Hoteles cerca de" : "Hotels near"}: ${(sights ?? []).slice(0, 6).map((x) => `<a href="${P(GROWTH_LANGS.includes(L) ? L : "en", `/near/${city.slug}/${x.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/&/g, " and ").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`)}">${esc(x.name)}</a>`).join(", ")}` : ""}</p>${GROWTH_LANGS.includes(L) ? voteWidget(L, city.slug) : ""}
-<aside class="curator"><span class="av" aria-hidden="true">CO</span><div><h3>${esc(M[L].curatorT)}</h3><p>${esc(M[L].curatorB)}</p><p style="margin-top:6px"><a href="/how-we-choose">${esc(M[L].how)} →</a><a href="/affiliate-disclosure">${esc(M[L].money)} →</a></p></div></aside>${guideFor(city.slug) ? `<p class="note" style="margin:14px 0"><a href="/guides/${guideFor(city.slug).slug}">📖 ${esc(guideFor(city.slug).h1)}: areas, tips and our three picks →</a></p>` : ""}
+${gymLink(city.id, city.slug, L)}<aside class="curator"><span class="av" aria-hidden="true">CO</span><div><h3>${esc(M[L].curatorT)}</h3><p>${esc(M[L].curatorB)}</p><p style="margin-top:6px"><a href="/how-we-choose">${esc(M[L].how)} →</a><a href="/affiliate-disclosure">${esc(M[L].money)} →</a></p></div></aside>${guideFor(city.slug) ? `<p class="note" style="margin:14px 0"><a href="/guides/${guideFor(city.slug).slug}">📖 ${esc(guideFor(city.slug).h1)}: areas, tips and our three picks →</a></p>` : ""}
 <p class="note">${esc(t.refRate)}: ${esc(dates)}, 2 adults, 1 room · ${esc(checkedText)}.</p>
 <div class="sharebar"><span>${esc(xt.share)}:</span><button type="button" data-shareimg="${esc(JSON.stringify({
 			slug: city.slug,
@@ -20088,8 +31624,13 @@ async function sitemapFor(L) {
 		"/imprint",
 		"/affiliate-disclosure",
 		"/guides",
-		...POSTS.map((x) => `/guides/${x.slug}`)
-	].map((p) => `<url><loc>${SITE}${p}</loc><lastmod>${SNAPSHOT_DATE}</lastmod></url>`).join("\n") + "\n" : L === "es" ? ["/guides", ...POSTS_ES.map((x) => `/guides/${x.slug}`)].map((x) => `<url><loc>${SITE}/es${x}</loc><lastmod>${SNAPSHOT_DATE}</lastmod></url>`).join("\n") + "\n" : "";
+		...POSTS.map((x) => `/guides/${x.slug}`),
+		...await gymPaths()
+	].map((p) => `<url><loc>${SITE}${p}</loc><lastmod>${SNAPSHOT_DATE}</lastmod></url>`).join("\n") + "\n" : L === "es" ? [
+		"/guides",
+		...POSTS_ES.map((x) => `/guides/${x.slug}`),
+		...await gymPaths()
+	].map((x) => `<url><loc>${SITE}/es${x}</loc><lastmod>${SNAPSHOT_DATE}</lastmod></url>`).join("\n") + "\n" : "";
 	const growth = GROWTH_LANGS.includes(L) ? [
 		"/open-data",
 		"/hotel-price-index",
@@ -20300,6 +31841,12 @@ async function handleSeo(request, env) {
 			"cache-control": "public, max-age=3600, s-maxage=86400"
 		} });
 	}
+	if (p === "/gyms") return html(await gymIndexPage("en"));
+	const gy = p.match(/^\/gyms\/([a-z0-9-]+)\/?$/);
+	if (gy) {
+		const out = await gymCityPage(gy[1], "en");
+		return out instanceof Response ? out : out ? html(out) : null;
+	}
 	let L = "en";
 	const lm = p.match(/^\/(es|de|fr|it|pt|da)(\/.*)?$/);
 	if (lm) {
@@ -20311,6 +31858,13 @@ async function handleSeo(request, env) {
 		if (L === "es" && gde) {
 			const out = guidePage(gde[1], "es");
 			return out ? html(out) : null;
+		}
+		if (L === "es" && p === "/gyms") return html(await gymIndexPage("es"));
+		const gye = p.match(/^\/gyms\/([a-z0-9-]+)\/?$/);
+		if (gye) {
+			if (L !== "es") return Response.redirect(`${SITE}${p}`, 302);
+			const out = await gymCityPage(gye[1], "es");
+			return out instanceof Response ? out : out ? html(out) : null;
 		}
 	}
 	{
@@ -20406,7 +31960,7 @@ async function handleSeo(request, env) {
 }
 var serverEntryPromise;
 async function getServerEntry() {
-	if (!serverEntryPromise) serverEntryPromise = import("./server-CbvFkyG6.mjs").then((m) => m.default ?? m);
+	if (!serverEntryPromise) serverEntryPromise = import("./server-CHjaaH6M.mjs").then((m) => m.default ?? m);
 	return serverEntryPromise;
 }
 async function normalizeCatastrophicSsrResponse(response) {
@@ -20434,7 +31988,7 @@ var server_default = { async fetch(request, env, ctx) {
 		const readRequest = request.method === "GET" || request.method === "HEAD";
 		if (url.pathname === "/top3hotels.html" && readRequest) return Response.redirect(new URL("/" + url.search, url).href, 301);
 		if (url.pathname === "/" && readRequest) {
-			const html = request.method === "HEAD" ? null : (await import("./home-ojFoXWiQ.mjs")).default;
+			const html = request.method === "HEAD" ? null : (await import("./home-CuUHsvOB.mjs")).default;
 			return new Response(html, {
 				status: 200,
 				headers: {

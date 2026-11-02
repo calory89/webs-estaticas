@@ -2,4 +2,6 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
+# Summary and open data for AI assistants: https://www.top3hotels.com/llms.txt
+# Open data (CC BY 4.0): https://www.top3hotels.com/open-data
 Sitemap: https://www.top3hotels.com/sitemap.xml
