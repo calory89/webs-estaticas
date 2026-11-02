@@ -73,5 +73,13 @@
  "expected": {
   "verifyProof": true,
   "verifyLog": true
+ },
+ "signature": {
+  "url": "/api/open/receipt/27",
+  "body": "{\n \"receipt\": \"kolaboro-evidence-receipt-v1\",\n \"kind\": \"document\",\n \"prev\": null,\n \"chain\": \"d8dbe4fd912f073284dcebac8bfad9f6c750377644dca74858365cb39a5e001a\",\n \"sha256\": \"8a96523af606e7650e95f5e5c54f3566ef3109ea5db31f630558aec3939bc8ee\",\n \"in_plot\": null,\n \"taken_at\": \"2026-10-14T07:12:00+00:00\",\n \"evidence_id\": 27,\n \"recorded_at\": \"2026-10-30T08:34:15.0809+00:00\",\n \"gps_recorded\": false,\n \"bitcoin_stamp\": null,\n \"capture_code_ok\": null,\n \"note\": \"This answer is signed by Kolaboro (x-kolaboro-signature). Check the signature with the public key at /.well-known/kolaboro-keys.json, and the file with its SHA-256.\"\n}",
+  "signature": "YC97eH76VquTaGhRz5iurC6kFHyzS5XfXT/UR0BDfJoJJcXT9k7Jr+bu8MaGz2wuSXjBWf06+4tYMrFpSJCOCQ==",
+  "key_id": "kb-f2e04da5878f8c51",
+  "public_key_raw_b64": "rnY6UvDI+L6e8j3a+UPwmddQJFapkfmEXWwHuXzdmzw=",
+  "expected": true
  }
 }
