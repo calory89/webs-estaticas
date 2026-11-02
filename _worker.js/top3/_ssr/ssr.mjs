@@ -18301,7 +18301,7 @@ function page(o) {
 <title>${esc(o.title)}</title><meta name="description" content="${esc(o.description)}">
 ${o.noindex ? "<meta name=\"robots\" content=\"noindex,follow\">" : `<link rel="canonical" href="${esc(url)}"><meta name="robots" content="index,follow,max-image-preview:large">`}${alt}
 <meta property="og:site_name" content="Top3Hotels"><meta property="og:type" content="website"><meta property="og:url" content="${esc(url)}"><meta property="og:title" content="${esc(o.title)}"><meta property="og:description" content="${esc(o.description)}"><meta property="og:image" content="${esc(image)}">${image.endsWith("/og.png") ? '<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">' : ""}<meta property="og:image:alt" content="${esc(o.title)}"><meta property="og:locale" content="${t.htmlLang}">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(o.title)}"><meta name="twitter:description" content="${esc(o.description)}"><meta name="twitter:image" content="${esc(image)}">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@mrstartups"><meta name="twitter:creator" content="@mrstartups"><meta name="twitter:title" content="${esc(o.title)}"><meta name="twitter:description" content="${esc(o.description)}"><meta name="twitter:image" content="${esc(image)}">
 <meta name="theme-color" content="#f7f8fa" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0e1520" media="(prefers-color-scheme: dark)"><meta name="color-scheme" content="light dark"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <style>${CSS}
 ${CSS_PLUS}
@@ -19110,10 +19110,10 @@ ${pillars(n)}
 <div class="prose">
 <h2>Why we exist</h2><p>Booking a hotel should not take an evening. Big booking sites show hundreds of options, sponsored placements and filters. We do the shortlisting for you, with the same rules in every city, so you can decide in seconds and book with confidence.</p>
 <h2>What makes us different</h2><ul><li><b>Three picks, not three hundred.</b> One per budget level, always in the same order.</li><li><b>No paid rankings.</b> A hotel cannot pay to be included, moved up or kept in a list.</li><li><b>Sourced and dated.</b> Guest scores, review counts and reference prices come from Booking.com and show the date we checked them.</li><li><b>Useful context.</b> Walking time to the best-known sights, what guests praise and what they criticise, and who each hotel suits best.</li></ul>
-<h2>Who is behind Top3Hotels</h2><p>Top3Hotels is an independent project of ${esc(BRAND.entity)} (${esc(BRAND.place)}), founded by ${esc(BRAND.founder)}, a growth and travel-tech entrepreneur based between Denmark and Spain. The editorial rules are public on <a href="/how-we-choose">How we choose</a>.</p>
+<h2>Who is behind Top3Hotels</h2><div class="founder"><img src="${esc(FOUNDER.photo)}" alt="Carlos de Ory, founder of Top3Hotels" width="160" height="240" loading="lazy" referrerpolicy="no-referrer" onerror="this.outerHTML='<span class=&quot;fav&quot; aria-hidden=&quot;true&quot;>CO</span>'"><div><p><b>${esc(FOUNDER.name)}, founder.</b> ${esc(FOUNDER.bioEn)}</p><p lang="es"><b>En español.</b> ${esc(FOUNDER.bioEs)}</p><p class="flinks">${FOUNDER.sameAs.map((u) => `<a href="${esc(u)}" rel="me noopener" target="_blank">${esc(u.replace(/^https:\/\/(www\.)?/, "").replace(/\/$/, ""))}</a>`).join(" · ")}</p></div></div><p>Top3Hotels is an independent project of ${esc(BRAND.entity)} (${esc(BRAND.place)}). The editorial rules are public on <a href="/how-we-choose">How we choose</a>.</p><style>.founder{display:flex;gap:20px;align-items:flex-start;margin:8px 0 18px}.founder img,.founder .fav{flex:none;width:120px;height:180px;object-fit:cover;border-radius:16px;background:#e8edf3}.founder .fav{display:grid;place-items:center;font:600 34px Fraunces,Georgia,serif;color:var(--ink)}.founder p{margin:0 0 10px}.flinks{font-size:14px}.flinks a{color:inherit}@media(max-width:560px){.founder{flex-direction:column}}</style>
 <h2>How we make money</h2><p>When you book through some of our links we may earn a commission from the booking site, at no extra cost to you. Commissions never influence which hotels we pick.</p>
 <p><a class="btn" href="/how-we-choose">How we choose</a> <a class="btn ghost" href="/partners">For hotels &amp; partners</a></p></div>`,
-		ld: [orgLd(), { "@context": "https://schema.org", "@type": "Person", name: BRAND.founder, jobTitle: "Founder", url: `${SITE}/about`, worksFor: { "@type": "Organization", name: "Top3Hotels", url: SITE } }]
+		ld: [orgLd(), founderLd()]
 	});
 }
 async function methodPage() {
@@ -19213,6 +19213,15 @@ function legalPage(kind) {
 		body: `${crumbsEn(title)}<h1>${esc(title)}<em>.</em></h1><div class="prose">${html2}</div>`
 	});
 }
+/* Founder facts for /about and schema (only public, confirmed profiles; no personal location). */
+var FOUNDER = {
+  name: "Carlos de Ory",
+  photo: "https://www.carlosdeory.com/assets/cdo/carlos.jpg",
+  sameAs: ["https://www.carlosdeory.com/", "https://www.linkedin.com/in/carlosdeory/", "https://x.com/mrstartups", "https://www.instagram.com/carlosdeory/", "https://www.youtube.com/@CarlosDeOry", "https://www.facebook.com/happylowcostofficialpage"],
+  bioEn: "Carlos de Ory is a Spanish entrepreneur and the founder of Top3Hotels. He has run an affiliate-marketing business for more than 11 years, best known for Happy Low Cost, a travel deals community with more than 400,000 followers. His background is in growth: he leads AI, SEO and performance marketing for his own companies and works as a growth marketer and CMO. Earlier in his career he worked in talent acquisition at Robert Half and Kraft Heinz.",
+  bioEs: "Carlos de Ory es un emprendedor español y el fundador de Top3Hotels. Lleva más de 11 años al frente de un negocio de marketing de afiliación, conocido sobre todo por Happy Low Cost, una comunidad de ofertas de viaje con más de 400.000 seguidores. Su perfil es de crecimiento: dirige la IA, el SEO y el marketing de resultados de sus propias empresas y trabaja como growth marketer y CMO. Antes trabajó en captación de talento en Robert Half y Kraft Heinz.",
+};
+var founderLd = () => ({ "@context": "https://schema.org", "@type": "Person", "@id": `${SITE}/about#founder`, name: FOUNDER.name, jobTitle: "Founder", description: FOUNDER.bioEn, image: FOUNDER.photo, url: `${SITE}/about`, sameAs: FOUNDER.sameAs, knowsAbout: ["Affiliate marketing", "Growth marketing", "Search engine optimization", "Performance marketing", "Artificial intelligence", "Travel"], worksFor: { "@type": "Organization", name: "Top3Hotels", url: SITE } });
 function orgLd() {
 	return {
 		"@context": "https://schema.org",
@@ -19228,7 +19237,9 @@ function orgLd() {
 		},
 		founder: {
 			"@type": "Person",
-			name: BRAND.founder
+			"@id": `${SITE}/about#founder`,
+			name: BRAND.founder,
+			sameAs: FOUNDER.sameAs
 		}
 	};
 }
