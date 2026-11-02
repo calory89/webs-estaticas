@@ -73,6 +73,7 @@
 - [Technology: the verification engine](https://kolaboro.com/technology/)
 - [Verify evidence](https://kolaboro.com/verify/)
 - [Status](https://kolaboro.com/status/)
+- [Public log: daily hash-chained heads timestamped in Bitcoin](https://kolaboro.com/log/)
 - [Open data and API](https://kolaboro.com/docs/api/)
 
 ## Facts

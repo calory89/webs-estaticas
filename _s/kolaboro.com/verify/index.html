@@ -65,7 +65,14 @@ document.getElementById('chfile').onchange = function(){ var f = this.files[0]; 
   function step(){ if (i >= ev.length) return Promise.resolve(); var e = ev[i]; return sha((prev || 'genesis:' + d.case_id) + '|' + e.sha256 + '|' + e.kind + '|' + iso(e.taken_at)).then(function(h){ if (h !== e.chain || (e.prev || null) !== prev) bad.push((i + 1) + '. ' + vesc(e.title || e.kind)); prev = e.chain; i++; return step(); }); }
   return step().then(function(){ o.innerHTML = bad.length ? '<div class="vf-no"><b>' + bad.length + ' item(s) do not match</b><p>' + bad.join('<br>') + '</p></div>' : '<div class="vf-ok"><b>✓ All ' + (+ev.length || 0) + ' items chain correctly</b><p>Case ' + vesc(d.case || '') + '. Last fingerprint <code style="word-break:break-all">' + vesc(prev) + '</code>. <a href="/verify/?hash=' + encodeURIComponent(String(prev || '')) + '">See its timestamp</a>.</p></div>'; });
 }).catch(function(){ o.innerHTML = '<div class="vf-no"><b>That file isn\'t a Kolaboro evidence file</b></div>'; }); };
-})();</script></main>
+})();</script><section class="sec" id="proof"><div class="wrap" style="max-width:860px"><h2>Check that a project's record was sealed</h2>
+<p>Our research agent fingerprints every developer page it reads. All fingerprints go into one Merkle root that is written to the <a href="/log/">public log</a> and timestamped in Bitcoin. Type a project ID: your browser fetches a short proof and recomputes the root itself.</p>
+<form id="pv-f" style="display:flex;gap:8px;flex-wrap:wrap"><input id="pv-id" placeholder="e.g. BALI-014" style="flex:1;min-width:180px;min-height:46px;border:1px solid #D8D6CE;border-radius:12px;padding:0 12px;font:inherit"><button class="btn btn-hi" type="submit">Check the proof</button></form>
+<div id="pv-o" style="margin-top:12px"></div>
+<h2 style="margin-top:36px">Check a dataset you downloaded</h2>
+<p>Drop a copy of <a href="/data/bali-cases.json">bali-cases.json</a>. Your browser computes its SHA-256 and looks for it in the public log. Every <a href="/api/open">API</a> answer also tells you which dataset it came from, in the <code>x-kolaboro-dataset-sha256</code> header.</p>
+<input type="file" id="pv-file" accept=".json,application/json"><div id="pv-fo" style="margin-top:10px"></div>
+<p style="font-size:.88rem;color:#4A5661">These checks run on <a href="/open/kolaboro-verify.js">kolaboro-verify.js</a>, our open-source checker (MIT). You can run the same code on your own machine.</p></div></section></main>
 <div class="mcta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="cta_sticky">Protect my purchase</a></div>
 <footer>
   <div class="wrap">
@@ -107,7 +114,7 @@ document.getElementById('chfile').onchange = function(){ var f = this.files[0]; 
         <li><a href="/independence">Independence</a></li>
         <li><a href="/security">Security and your data</a></li>
         <li><a href="/technology">Technology</a></li>
-        <li><a href="/status">System status</a></li>
+        <li><a href="/status">System status</a></li><li><a href="/log/">Public log</a></li>
         <li><a href="/metrics">Open metrics</a></li>
       </ul></div>
       <div><h4>Kolaboro</h4><ul>
@@ -208,5 +215,15 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   window.addEventListener('scroll', function(){ b.classList.toggle('on', window.scrollY > window.innerHeight * 1.5); }, { passive: true });
 })();
 </script>
-</body>
+<script src="/open/kolaboro-verify.js"></script><script>(function(){
+function esc(t){return String(t==null?'':t).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+var LOG=null;function log(){return LOG||(LOG=fetch('/api/open/log').then(function(r){return r.json()}).then(function(d){return d.heads||[]}).catch(function(){return []}))}
+var f=document.getElementById('pv-f');if(!f)return;
+f.onsubmit=function(e){e.preventDefault();var id=document.getElementById('pv-id').value.trim(),o=document.getElementById('pv-o');if(!id)return;o.innerHTML='<p>Fetching the proof…</p>';
+ fetch('/api/open/proof/'+encodeURIComponent(id)).then(function(r){return r.json()}).then(function(p){if(p.error){o.innerHTML='<p>No sealed page fingerprint for '+esc(id)+'. Check the ID on the <a href="/database/">database</a>.</p>';return}
+  return Promise.all([KV.verifyProof(p),log()]).then(function(x){var ok=x[0],H=x[1],inlog=H.filter(function(h){return h.projects_root===p.projects_root})[0];
+   o.innerHTML='<div style="background:#fff;border:1px solid #E2E0D8;border-radius:14px;padding:14px"><p style="margin:0 0 6px"><b>'+(ok?'✓ The proof checks out.':'✗ The proof does not check out.')+'</b> '+esc(p.project)+' page fingerprint <code>'+esc(p.line.split(' ')[1].slice(0,16))+'…</code>'+(p.page_fingerprint_date?' (read '+esc(p.page_fingerprint_date)+')':'')+' is leaf '+(p.index+1)+' of '+p.leaves+'; '+p.path.length+' hashes lead to root <code>'+esc(p.projects_root.slice(0,16))+'…</code>.</p><p style="margin:0">'+(inlog?'This exact root is in the public log line of <b>'+esc(inlog.day)+'</b>, timestamped in Bitcoin: <a href="/api/kb/stamp?hash='+esc(inlog.head)+'" target="_blank" rel="noopener">proof</a>.':'The data was updated after the last log line; this root goes into the next line (written daily at 07:15 UTC).')+'</p></div>';});
+ }).catch(function(){o.innerHTML='<p>Could not fetch the proof just now.</p>'});};
+document.getElementById('pv-file').onchange=function(){var fl=this.files[0],o=document.getElementById('pv-fo');if(!fl)return;o.textContent='Computing…';fl.arrayBuffer().then(function(b){return Promise.all([KV.sha256Hex(new Uint8Array(b)),log()])}).then(function(x){var h=x[0],m=x[1].filter(function(l){return l.dataset_sha256===h})[0];o.innerHTML='SHA-256 <code>'+esc(h)+'</code><br>'+(m?'✓ Matches the dataset fixed in the public log on <b>'+esc(m.day)+'</b>.':'Not in the log. It may be a version published between two log lines, or the file was changed.')})};
+})();</script></body>
 </html>

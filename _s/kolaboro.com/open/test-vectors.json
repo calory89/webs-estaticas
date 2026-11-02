@@ -1,0 +1,77 @@
+{
+ "generated": "2026-11-02",
+ "note": "Real records from kolaboro.com. Every check in kolaboro-verify.js must return true for these and false if any character changes.",
+ "proof": {
+  "project": "BALI-014",
+  "page_fingerprint_date": "2026-11-02",
+  "line": "BALI-014 c4bc7b793b6989228e5342b99187f49451e1572f3925ac1ba1d84323b96c9507",
+  "leaf": "eaa5235935af1bf7556f0c475b1b19f357472f34f06729884a3c2406681b480c",
+  "index": 69,
+  "leaves": 804,
+  "path": [
+   {
+    "side": "L",
+    "hash": "8961aca4151cadbde25cdfab7d9a5e5db09c599291ce837d8071c317b5a478da"
+   },
+   {
+    "side": "R",
+    "hash": "6282f97e4b2ad0d83c635982ca5d19580fb396798a0e9ac1adac512d7708d790"
+   },
+   {
+    "side": "L",
+    "hash": "c933e41274a7bad93c85bc8d167496c657f615bde848f7520149cca90bcdf4ad"
+   },
+   {
+    "side": "R",
+    "hash": "68f4fd4a6fb3b6c449ae9fc811d01aec8cec3c86e3d8bb057b3690c819a81130"
+   },
+   {
+    "side": "R",
+    "hash": "cb6ae4e7dc7264eaaea7c3b9421b848212d8ba496539cb014931f54159b09c56"
+   },
+   {
+    "side": "R",
+    "hash": "49ddb3601bcfae3330ba786fc616ee67552a8e7f26052254698e39edd69bf5b4"
+   },
+   {
+    "side": "L",
+    "hash": "7e78287b8d3b79be42750e15b95693bc2f03e1b1cad02371cbc792ec9855ed40"
+   },
+   {
+    "side": "R",
+    "hash": "50fe9abb142dbda2e53896c479569591a64870fa9f54c635aee8e35b63157d7f"
+   },
+   {
+    "side": "R",
+    "hash": "ca24b1b0de1c8737072dbf991d4adbeb41133b631c0b268d9ae02f96161669be"
+   },
+   {
+    "side": "R",
+    "hash": "3bdcb26b6364de56d0c9963561edd45727edbfabb3725d457e9e0dfeeeac5020"
+   }
+  ],
+  "projects_root": "ff6487b284ad97ad98ba593367e0b4111251d0d9e35b68e9641bc7a86f737fe4",
+  "dataset_sha256": "195e333223aa6f393bac430c6a652fb17d556a10cff6d73e979c46bc3d0617a4",
+  "updated": "2026-11-02",
+  "method": "leaf = SHA-256(0x00 || line); node = SHA-256(0x01 || left || right); an unpaired last node is promoted; lines are \"ID SHA256\" for every project with a page fingerprint, sorted. The root is recorded daily in the public log at kolaboro.com/log and timestamped in Bitcoin."
+ },
+ "log_heads": [
+  {
+   "day": "2026-11-02",
+   "head": "c49eb556dbecd8e0a641a1b264135476fe3944689000711ae7c1d2586b99e73a",
+   "prev": null,
+   "audit_head": null,
+   "audit_count": 0,
+   "audit_intact": true,
+   "evidence_root": "09c8e1969183ce404843d09763f2f5eedd6b356fae9b6a7a06b8505a342877a4",
+   "projects_root": "ff6487b284ad97ad98ba593367e0b4111251d0d9e35b68e9641bc7a86f737fe4",
+   "dataset_sha256": "195e333223aa6f393bac430c6a652fb17d556a10cff6d73e979c46bc3d0617a4",
+   "evidence_items": 7,
+   "projects_count": 804
+  }
+ ],
+ "expected": {
+  "verifyProof": true,
+  "verifyLog": true
+ }
+}

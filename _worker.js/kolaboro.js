@@ -685,7 +685,7 @@ export async function open(req, u) {
   // every answer carries the fingerprint of the dataset it came from, and supports conditional requests
   const tag = '"' + L.sha.slice(0, 20) + '-' + (await sha(u.pathname + u.search)).slice(0, 8) + '"', h = new Headers(res.headers);
   h.set('x-kolaboro-dataset-sha256', L.sha); h.set('etag', tag); h.append('access-control-expose-headers', 'x-kolaboro-dataset-sha256, etag');
-  if ((req.headers.get('if-none-match') || '') === tag && res.status === 200) return new Response(null, { status: 304, headers: h });
+  if ((req.headers.get('if-none-match') || '').split(',').map(x => x.trim().replace(/^W\//, '')).indexOf(tag) >= 0 && res.status === 200) return new Response(null, { status: 304, headers: h });
   return new Response(res.body, { status: res.status, headers: h });
 }
 async function openRoutes(req, u, path, L) {
