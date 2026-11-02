@@ -207,7 +207,7 @@ async function dynamicPage(path, m, ctx) {
 // /sitemap.xml built from the manifest (indexable pages only) plus hand-verified firm profiles
 // and blog posts from the database. Cached 1 h at the edge.
 // One URL per screen: old or duplicate paths answer with a permanent redirect.
-const REDIRECTS = { '/login': '/auth', '/signin': '/auth', '/sign-in': '/auth', '/firm-listing': '/for-lawyers', '/fees': '/how-it-works', '/guides': '/site-map' };
+const REDIRECTS = { '/login': '/auth', '/signin': '/auth', '/sign-in': '/auth', '/firm-listing': '/for-lawyers', '/fees': '/how-it-works', '/guides': '/site-map', '/for-lawyers/founding': '/founding-firms', '/founding': '/founding-firms' };
 
 export async function route(req, u, env, ctx) {
   const to = REDIRECTS[normPath(u.pathname)];

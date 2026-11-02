@@ -150,7 +150,7 @@ export default {
     }
     // reelrole.com: candidate videos from the Cloudflare edge cache (see reelrole.js media()).
     if (host === 'reelrole.com' && (req.method === 'GET' || req.method === 'HEAD') && u.pathname.startsWith('/stream/')) { if (!rr) rr = await import('./reelrole.js'); return rr.media(req, u, ctx); }
-    if (host === 'jurimatch.com' && req.method === 'GET' && /^\/(sitemap\.xml|login|signin|sign-in|firm-listing|fees|guides)\/?$/.test(u.pathname)) { if (!jm) jm = await import('./jurimatch.js'); const sm = await jm.route(req, u, env, ctx); if (sm) return sm; }
+    if (host === 'jurimatch.com' && req.method === 'GET' && /^\/(sitemap\.xml|login|signin|sign-in|firm-listing|fees|guides|founding|for-lawyers\/founding)\/?$/.test(u.pathname)) { if (!jm) jm = await import('./jurimatch.js'); const sm = await jm.route(req, u, env, ctx); if (sm) return sm; }
     const r = await this.siteRaw(req, env, ctx, u, host);
     if (host === 'realhunt.co' && req.method === 'GET' && /text\/html/.test(r.headers.get('content-type') || '')) return new HTMLRewriter().on('head', { element(e) { e.prepend("<script>/*rh-img-fb*/(function(){var M='https://realhunt-media.pages.dev/';document.addEventListener('error',function(e){var t=e.target;if(!t||t.tagName!=='IMG'||t.__rhfb)return;var s=t.currentSrc||t.getAttribute('src')||'';if(s.indexOf(M)!==0)return;t.__rhfb=1;e.stopImmediatePropagation();if(t.srcset)t.removeAttribute('srcset');t.src='https://realhunt.co/'+s.slice(M.length);},true);})();</script>", { html: true }); } }).on('body', { element(e) { e.append('<script src="/__k/kcheck.js?v=6" defer></script>', { html: true }); } }).transform(r);
     // jurimatch.com: per-URL title, description and canonical in the HTML (see jurimatch.js).

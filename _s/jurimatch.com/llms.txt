@@ -2,7 +2,7 @@
 
 > Search engine for no-win-no-fee lawyers and litigation funders. 6,900+ no-win-no-fee firms indexed in 133 countries, 697 hand-verified. JuriMatch is not a law firm and gives no legal advice.
 
-## Facts (as of 2026-11-01)
+## Facts (as of 2026-11-02)
 - Firms indexed from public research that advertise no-win-no-fee, contingency or funded work: 6,990
 - Firms whose fee terms our team checked by hand on their own website: 697
 - Countries with at least 20 indexed firms: 133; countries with a hand-verified firm: 54
@@ -205,3 +205,6 @@
 - [Modelo grátis de carta de reclamação](https://jurimatch.com/pt-br/ferramentas/carta-de-reclamacao)
 - [Voo atrasado ou cancelado na Europa? Calcule o que podem lhe dever](https://jurimatch.com/pt-br/ferramentas/indenizacao-voo)
 - [Quanto tempo tenho para entrar na Justiça?](https://jurimatch.com/pt-br/ferramentas/prazo-de-prescricao)
+
+## Full text
+- [Guides, glossary, comparisons and tools in full](https://jurimatch.com/llms-full.txt)
