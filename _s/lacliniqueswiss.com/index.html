@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="Content-Security-Policy" content="script-src 'unsafe-inline' https://unpkg.com https://www.googletagmanager.com https://www.clarity.ms https://*.clarity.ms https://static.cloudflareinsights.com https://lacliniqueswiss.com/cdn-cgi/scripts/ https://lacliniqueswiss.com/cdn-cgi/zaraz/ https://connect.facebook.net; worker-src 'self' blob:; base-uri 'self'; object-src 'none'; form-action 'self' mailto:; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="script-src 'unsafe-inline' https://unpkg.com https://www.googletagmanager.com https://www.clarity.ms https://*.clarity.ms https://static.cloudflareinsights.com https://lacliniqueswiss.com/cdn-cgi/scripts/ https://lacliniqueswiss.com/cdn-cgi/zaraz/ https://connect.facebook.net https://app.cal.com; worker-src 'self' blob:; base-uri 'self'; object-src 'none'; form-action 'self' mailto:; upgrade-insecure-requests">
 <script>if(window.top!==window.self){try{window.top.location=window.self.location}catch(e){document.documentElement.style.display='none'}}</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>La Clinique Swiss · Your longevity clinic hotel, 30 years renewable, €3,500 VAT included</title>
@@ -1331,11 +1331,13 @@ body.drawer-open .mbar,body.drawer-open .toast,body.drawer-open .nudge{display:n
       <p class="done-p" id="doneP">Your request is saved. Here is what happens next.</p>
       <ol class="next">
         <li><b>Within two working days</b> we write to confirm your place for your country.</li>
-        <li><b>A group call on Thursdays at 18:30</b> (Madrid time, 30 minutes, up to 10 people) to answer every question.</li>
+        <li><b>A group call on Thursdays at 17:30 London time</b> (30 minutes, up to 10 people) to answer every question.</li>
         <li><b>Your membership terms</b> to read calmly. Nothing is charged before you sign.</li>
       </ol>
       <a class="btn btn-red" id="calBtn" href="https://cal.com/team/luxury-beach-residence/info-call-la-clinique-swiss" target="_blank" rel="noopener">Join a Thursday call</a>
       <a class="btn btn-ghost" href="/dossier.pdf" target="_blank" rel="noopener" data-ev="dossier_download">Download the dossier (PDF)</a>
+      <p class="cal-h" style="margin:1.6rem 0 .6rem;font-weight:600">Choose your Thursday</p>
+      <div id="calInline" hidden style="min-height:560px;width:100%;border-radius:14px;overflow:hidden;background:#fff"></div>
       <button class="btn btn-ghost" type="button" id="shareBtn">Copy link for a friend</button>
     </div>
     </div>
@@ -1387,7 +1389,7 @@ body.drawer-open .mbar,body.drawer-open .toast,body.drawer-open .nudge{display:n
 <aside class="nudge" id="nudge" hidden aria-label="Talk to us">
   <button type="button" class="x" id="nx" aria-label="Close">×</button>
   <b>Still thinking?</b>
-  <p>Join a free group call, Thursdays at 18:30 Madrid time. Ask anything, no commitment.</p>
+  <p>Join a free group call, Thursdays at 17:30 London time. Ask anything, no commitment.</p>
   <a class="btn btn-red" href="https://cal.com/team/luxury-beach-residence/info-call-la-clinique-swiss" target="_blank" rel="noopener" data-ev="call_click_nudge">Book a call</a>
 </aside>
 <div class="drawer" id="drawer" hidden aria-modal="true" role="dialog" aria-labelledby="drawerH">
@@ -1541,6 +1543,7 @@ body.drawer-open .mbar,body.drawer-open .toast,body.drawer-open .nudge{display:n
     track('page_view', {page_path:'/thank-you', page_title:'Thank you'}); track('conversion_thank_you');
     document.getElementById('doneH').textContent = 'Welcome, ' + lead.name + '.';
     document.getElementById('doneP').textContent = 'Your request for ' + lead.country + ' is saved. We will write to ' + lead.email + '. Here is what happens next.';
+    try { var ci=document.getElementById('calInline'); if (ci && !ci.dataset.on) { ci.dataset.on='1'; ci.hidden=false; (function (C, A, L) { var p = function (a, ar) { a.q.push(ar); }; var d = C.document; C.Cal = C.Cal || function () { var cal = C.Cal; var ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement('script')).src = A; cal.loaded = true; } if (ar[0] === L) { var api = function () { p(api, arguments); }; var namespace = ar[1]; api.q = api.q || []; if (typeof namespace === 'string') { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ['initNamespace', namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, 'https://app.cal.com/embed/embed.js', 'init'); Cal('init','lcs',{origin:'https://cal.com'}); Cal.ns.lcs('inline',{elementOrSelector:'#calInline',calLink:'team/luxury-beach-residence/info-call-la-clinique-swiss',config:{layout:'month_view',name:lead.name,email:lead.email,theme:'light'}}); Cal.ns.lcs('ui',{hideEventTypeDetails:true,layout:'month_view',cssVarsPerTheme:{light:{'cal-brand':'#24211d'}}}); Cal.ns.lcs('on',{action:'bookingSuccessful',callback:function(){ track('call_booked'); try{ if(window.fbq) fbq('track','Schedule'); }catch(e){} }}); } } catch(e){}
     try { var u = new URL(document.getElementById('calBtn').href); u.searchParams.set('name', lead.name); u.searchParams.set('email', lead.email); document.getElementById('calBtn').href = u.toString(); } catch(e){}
     done.scrollIntoView({block:'nearest', behavior:'smooth'});
   }
