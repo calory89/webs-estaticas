@@ -85590,7 +85590,7 @@ var SOCIAL_TXT = {
 };
 var CSS_SOCIAL = `.t3-sp{display:flex;justify-content:center;margin:10px 0 0}.t3-social{display:inline-flex;align-items:center;gap:10px;padding:4px 14px 4px 5px;border-radius:999px;border:1px solid rgba(127,127,127,.22);background:rgba(127,127,127,.06);color:inherit!important;font-size:13px;line-height:1.25;text-decoration:none!important;max-width:100%}
 .t3-social:hover{border-color:#1877f2}.t3-social .av{display:inline-flex;flex:none}.t3-social .av img{width:24px;height:24px;border-radius:50%;border:2px solid var(--bg,#fff);object-fit:cover;margin-left:-8px;background:#ddd}.t3-social .av img:first-child{margin-left:0}
-.t3-social b{font-weight:700}.t3-social .fb{color:#1877f2;font-weight:600}@media(max-width:520px){.t3-social{font-size:12px;white-space:nowrap}.t3-social .pre,.t3-social .av img:nth-child(4){display:none}}header.top nav a{white-space:nowrap}@media(max-width:1380px){.hide-md{display:none!important}}`;
+.t3-social b{font-weight:700}.t3-social .fb{color:#1259c3;font-weight:600}@media(max-width:520px){.t3-social{font-size:12px;white-space:nowrap}.t3-social .pre,.t3-social .av img:nth-child(4){display:none}}header.top nav a{white-space:nowrap}@media(max-width:1380px){.hide-md{display:none!important}}`;
 var socialPill = (L) => {
 	if (L !== "es") return "";
 	const [a, b] = SOCIAL_TXT[L] ?? SOCIAL_TXT["en"];
@@ -85851,7 +85851,7 @@ function page(o) {
 	return `<!doctype html><html lang="${t.htmlLang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(o.title)}</title><meta name="description" content="${esc(o.description)}">
 ${o.noindex ? "<meta name=\"robots\" content=\"noindex,follow\">" : `<link rel="canonical" href="${esc(url)}"><meta name="robots" content="index,follow,max-image-preview:large">`}${alt}
-<meta property="og:site_name" content="Top3Hotels"><meta property="og:type" content="website"><meta property="og:url" content="${esc(url)}"><meta property="og:title" content="${esc(o.title)}"><meta property="og:description" content="${esc(o.description)}"><meta property="og:image" content="${esc(image)}"><meta property="og:locale" content="${t.htmlLang}">
+<meta property="og:site_name" content="Top3Hotels"><meta property="og:type" content="website"><meta property="og:url" content="${esc(url)}"><meta property="og:title" content="${esc(o.title)}"><meta property="og:description" content="${esc(o.description)}"><meta property="og:image" content="${esc(image)}">${image.endsWith("/og.png") ? '<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">' : ""}<meta property="og:image:alt" content="${esc(o.title)}"><meta property="og:locale" content="${t.htmlLang}">
 <meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="${esc(o.title)}"><meta name="twitter:description" content="${esc(o.description)}"><meta name="twitter:image" content="${esc(image)}">
 <meta name="theme-color" content="#f7f8fa" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0e1520" media="(prefers-color-scheme: dark)"><meta name="color-scheme" content="light dark"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <style>${CSS}
@@ -85859,7 +85859,7 @@ ${CSS_PLUS}
 ${CSS_TRUST}${CSS_ALT}
 ${CSS_MORE}
 ${CSS_SOCIAL}
-${CSS_DP}</style><link rel="manifest" href="/manifest.webmanifest">
+${CSS_DP}</style><link rel="preconnect" href="https://cf.bstatic.com"><link rel="manifest" href="/manifest.webmanifest">
 ${(o.ld ?? []).map((x) => `<script type="application/ld+json">${json(x)}<\/script>`).join("")}
 <script>window.t3track=function(e,p){try{(window.dataLayer=window.dataLayer||[]).push(Object.assign({event:e},p||{}));if(window.gtag)gtag('event',e,p||{});if(window.plausible)plausible(e,{props:p||{}})}catch(_){}};document.addEventListener('click',function(ev){var a=ev.target.closest&&ev.target.closest('[data-t]');if(a)t3track(a.dataset.t,{city:a.dataset.city,category:a.dataset.cat,provider:a.dataset.p})});<\/script>
 ${consentScript(Z[o.L])}</head><body><div class="wrap">
@@ -86248,7 +86248,7 @@ async function cityPage(city, L) {
 		path,
 		body: `<p class="crumbs"><a href="${P(L, "/")}">${esc(t.home)}</a> › <a href="${P(L, `/country/${city.cslug}`)}">${esc(cname)}</a> › ${esc(city.city)}</p>
 <div class="hero${hero?.img ? "" : " noimg"}">${hero?.img ? `<img src="/api/img/${esc(city.id)}/big" srcset="/api/img/${esc(city.id)}/small 500w, /api/img/${esc(city.id)}/mid 960w, /api/img/${esc(city.id)}/big 1280w" sizes="(max-width: 960px) 100vw, 1180px" alt="${esc(city.city)}" fetchpriority="high" onerror="this.onerror=null;this.src='/api/img/${esc(city.id)}/orig'">` : ""}
-<div class="in"><p class="eyebrow">${esc(cname)} · 3 · ${esc(t.ourPick)}</p><h1>${esc(t.h1(city.city))}<em>.</em></h1><p class="lead">${esc(t.lead(sample))}</p></div>${hero?.page ? `<small>${esc(t.photo)}: <a href="${esc(hero.page)}" rel="nofollow noopener" target="_blank">Wikimedia Commons</a></small>` : ""}</div>
+<div class="in"><p class="eyebrow">${esc(cname)} · 3 · ${esc(t.ourPick)}</p><h1>${esc(t.h1(city.city))}<em>.</em></h1><p class="lead">${esc(t.lead(sample))}</p><p class="lead answer">${esc(description)}</p></div>${hero?.page ? `<small>${esc(t.photo)}: <a href="${esc(hero.page)}" rel="nofollow noopener" target="_blank">Wikimedia Commons</a></small>` : ""}</div>
 <p class="byline"><span class="ok">${esc(xt.reviewed(updated))}</span><span class="ok">${esc(xt.independent)}</span><span class="ok">${esc(xt.noPaid)}</span></p>${flights}${in1}${jump}<span hidden data-track="${esc(JSON.stringify({
 			s: city.slug,
 			c: city.city
@@ -86650,7 +86650,7 @@ ${pillars(n)}
 <h2>Who is behind Top3Hotels</h2><p>Top3Hotels is an independent project of ${esc(BRAND.entity)} (${esc(BRAND.place)}), founded by ${esc(BRAND.founder)}, a growth and travel-tech entrepreneur based between Denmark and Spain. The editorial rules are public on <a href="/how-we-choose">How we choose</a>.</p>
 <h2>How we make money</h2><p>When you book through some of our links we may earn a commission from the booking site, at no extra cost to you. Commissions never influence which hotels we pick.</p>
 <p><a class="btn" href="/how-we-choose">How we choose</a> <a class="btn ghost" href="/partners">For hotels &amp; partners</a></p></div>`,
-		ld: [orgLd()]
+		ld: [orgLd(), { "@context": "https://schema.org", "@type": "Person", name: BRAND.founder, jobTitle: "Founder", url: `${SITE}/about`, worksFor: { "@type": "Organization", name: "Top3Hotels", url: SITE } }]
 	});
 }
 async function methodPage() {
