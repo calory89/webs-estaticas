@@ -1096,3 +1096,36 @@ a.si{color:inherit;text-decoration:none}a.si:hover{background:rgba(255,255,255,.
 @media (max-width:560px){.hero h1{font-size:clamp(2.5rem,11.5vw,3.3rem)}.hero .lead{font-size:1.05rem;margin-top:18px}}
 @media (max-width:560px){.hero .hero-check button{flex:1 1 100%}.hero .hero-cta .btn{width:100%;justify-content:center;text-align:center}.hero-sub{text-wrap:pretty}}
 .hero .lead,.hero-sub{text-wrap:pretty}
+/* Buying alone vs with Kolaboro, 2 Nov: visual comparison (desktop: one dark Kolaboro column; phone: one card per question) */
+#compare h2{max-width:none!important}
+.vs{margin-top:32px;display:grid;grid-template-columns:minmax(150px,.9fr) minmax(0,1fr) minmax(0,1.15fr);column-gap:0}
+.vs-head,.vs-row{display:contents}
+.vs-h{padding:18px 22px 14px;font-weight:800;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase}
+.vs-ha{color:#6B7681}
+.vs-hk{background:var(--ink,#17212B);color:#fff;border-radius:22px 22px 0 0;display:flex;align-items:center;gap:10px}
+.vs-logo{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:7px;background:var(--hi,#FF5B14);color:#111;font-size:.8rem;letter-spacing:0}
+.vs-q,.vs-a,.vs-k{padding:20px 22px;border-top:1px solid var(--line,#DAD7CF)}
+.vs-q{font-weight:800;font-size:1.02rem;line-height:1.3;color:var(--ink,#17212B);padding-left:0}
+.vs-a{color:#5B6670;display:flex;gap:12px;align-items:flex-start;line-height:1.45}
+.vs-k{background:var(--ink,#17212B);color:#fff;display:flex;gap:12px;align-items:flex-start;line-height:1.45;font-weight:650;border-top-color:rgba(255,255,255,.1)}
+.vs-row.vs-last .vs-k{border-radius:0 0 22px 22px;padding-bottom:26px}
+.vs i{flex:none;width:22px;height:22px;margin-top:1px}
+.vs i svg{width:22px;height:22px;display:block}
+.vs-x svg circle{fill:#F3DCD5}.vs-x svg path{stroke:#B4361C}
+.vs-ok svg circle{fill:#1E9E6A}.vs-ok svg path{stroke:#fff}
+.vs-tag{display:none}
+.vs-row:hover .vs-q{color:var(--hivis-ink,#B83A05)}
+.vs-more{margin-top:28px}
+@media (max-width:760px){
+ .vs{display:block;margin-top:22px}
+ .vs-head{display:none}
+ .vs-row{display:block;background:#fff;border:1px solid var(--line,#DAD7CF);border-radius:18px;overflow:hidden;margin-bottom:12px}
+ .vs-q{padding:16px 16px 10px;border:0;font-size:1rem}
+ .vs-a,.vs-k{border:0;padding:12px 16px;flex-wrap:wrap}
+ .vs-a{background:#F7F5F0}
+ .vs-row.vs-last .vs-k{border-radius:0;padding-bottom:14px}
+ .vs-tag{display:block;width:100%;font-size:.7rem;font-weight:800;letter-spacing:.07em;text-transform:uppercase;margin-bottom:-4px}
+ .vs-a .vs-tag{color:#6B7681}.vs-k .vs-tag{color:#FF8A55}
+ .vs-a>span:last-child,.vs-k>span:last-child{flex:1;min-width:0}
+}
+@media (max-width:760px){.vs-more .btn{width:100%;justify-content:center;text-align:center}}
