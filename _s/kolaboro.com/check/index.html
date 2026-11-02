@@ -225,7 +225,7 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
         lis.forEach(function(l){ l.classList.remove('run'); l.classList.add('ok2'); });
         if (s !== 200 || !d.report) { render_err(d.error); save(email, 'Desk review failed: ' + (d.error || s)); if (!email) { copyBox('Desk review not read automatically (' + (d.error || s) + '): ' + url); r29pos(); } return; }
         save(email, 'Desk review: ' + (d.report.summary || '') + ' | attention: ' + (d.report.attention || ''));
-        setTimeout(function(){ render(d); tools(); if (!email) copyBox(d.report.summary); }, 500);
+        setTimeout(function(){ render(d); if (d.not_property || d.report.page_kind === 'not_real_estate') return; tools(); if (!email) copyBox(d.report.summary); }, 500);
       }).catch(function(){ clearInterval(tick); clearInterval(el); render_err('network'); save(email, 'Desk review failed: network'); if (!email) { copyBox('Desk review failed (network): ' + url); r29pos(); } });
     setTimeout(function(){ if ($('az-first').textContent === 'Starting…') $('az-first').textContent = 'Reading the website now'; }, 1200);
    }
@@ -313,7 +313,7 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
     var r = d.report || {}, att = (r.attention || 'medium').toLowerCase();
     if (d.not_property || r.page_kind === 'not_real_estate') {
       $('az-4').innerHTML = '<p class="az-k">Desk review</p><h2>' + esc(d.host) + ' is not a property project</h2>' +
-        '<p class="lead">' + esc(r.site_about ? 'It looks like ' + r.site_about.replace(/^(a|an|the)\s+/i, function(x){ return x.toLowerCase(); }) + '.' : 'We could not find anything about a property for sale on this page.') + ' There is nothing for us to check here.</p>' +
+        '<p class="lead">' + esc(r.site_about ? 'It looks like ' + (/^(a|an|the)\s/i.test(r.site_about) ? r.site_about.charAt(0).toLowerCase() + r.site_about.slice(1) : (/^[aeiou]/i.test(r.site_about) ? 'an ' : 'a ') + r.site_about.charAt(0).toLowerCase() + r.site_about.slice(1)).replace(/\.$/, '') + '.' : 'We could not find anything about a property for sale on this page.') + ' There is nothing for us to check here.</p>' +
         '<p>Kolaboro reviews the website of an <b>off-plan project</b>, a <b>developer</b> or a <b>property listing</b>. Paste the page of the home you want to buy, for example the project page on the developer\'s site or the listing on a portal.</p>' +
         '<p><button class="btn btn-hi" type="button" id="az-again">Check another link</button></p>';
       show(4); var ag = $('az-again'); if (ag) ag.onclick = function(){ $('az-url').value = ''; show(1); setTimeout(function(){ $('az-url').focus(); }, 300); };
