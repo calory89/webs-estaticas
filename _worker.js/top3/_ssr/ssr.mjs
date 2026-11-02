@@ -16430,7 +16430,7 @@ function table(L, rows, cols) {
 		return `<td>${p?.nightly ? `<b>${fmt(p.nightly)}</b> <small>${esc(p.name)}${p.score ? ` · ${sc(p.score)}` : ""}</small>` : ""}</td>`;
 	}).join("")}</tr>`).join("")}</tbody></table></div>`;
 }
-var CSS$1 = `<style>.ix{width:100%;border-collapse:collapse;font-size:15px;margin:10px 0 26px}.ix th,.ix td{padding:9px 8px;border-bottom:1px solid rgba(127,127,127,.22);text-align:left;vertical-align:top}.ix th{font-size:12px;text-transform:uppercase;letter-spacing:.05em;opacity:.7}.ix small{opacity:.7}.ix b{white-space:nowrap}.gw{max-width:980px;margin:0 auto;padding:28px 16px 40px}.gw h1{font-size:clamp(28px,5vw,44px);line-height:1.1;margin:0 0 12px}.gw .lead{font-size:19px;color:var(--muted);max-width:720px}.gw h2{margin:34px 0 8px}.dl{display:inline-block;margin:6px 10px 6px 0;padding:12px 18px;border-radius:12px;background:#0b3b8c;color:#fff!important;text-decoration:none;font-weight:700}.note{font-size:14px;opacity:.75}</style>`;
+var CSS$1 = `<style>.ix{width:100%;border-collapse:collapse;font-size:15px;margin:10px 0 26px}.ix th,.ix td{padding:9px 8px;border-bottom:1px solid rgba(127,127,127,.22);text-align:left;vertical-align:top}.ix th{font-size:12px;text-transform:uppercase;letter-spacing:.05em;opacity:.7}.ix small{opacity:.7}.ix b{white-space:nowrap}.gw{max-width:980px;margin:0 auto;padding:28px 16px 40px}.gw h1{font-size:clamp(28px,5vw,44px);line-height:1.1;margin:0 0 12px}.gw .lead{font-size:19px;color:var(--muted);max-width:720px}.gw h2{margin:34px 0 8px}.dl{display:inline-block;margin:6px 10px 6px 0;padding:12px 18px;border-radius:12px;background:#0b3b8c;color:#fff!important;text-decoration:none;font-weight:700}.note{font-size:14px;color:var(--muted)}</style>`;
 async function openDataPage(L) {
 	const t = tx(L);
 	const n = (await allPicks()).length;
@@ -85477,7 +85477,7 @@ var CSS_BLOG = `.post{max-width:760px;margin:0 auto}.post .crumbs{font-size:13px
 .post .method{border-left:3px solid #d83b51;background:rgba(216,59,81,.06);padding:12px 16px;border-radius:8px;font-size:15px;line-height:1.55;margin:22px 0}
 .pick{border:1px solid rgba(127,127,127,.25);border-radius:14px;padding:18px 20px;margin:18px 0}.pick-h{display:flex;flex-direction:column;gap:6px}
 .pick h3{margin:0;font-size:22px}.pick .chip{align-self:flex-start;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:4px 10px;border-radius:99px;background:rgba(127,127,127,.12)}
-.pick-budget .chip{color:#1f7a5a}.pick-value .chip{color:#d83b51}.pick-lux .chip{color:#b8860b}
+.pick-budget .chip{color:#15603f}.pick-value .chip{color:#a8213a}.pick-lux .chip{color:#7a5200}
 .pick .facts{list-style:none;padding:0;margin:10px 0;display:flex;flex-wrap:wrap;gap:6px 16px}.pick .facts li{font-size:14px;margin:0;opacity:.9}
 .pick .catch{font-size:15px;opacity:.9}.pick .ctas{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 0}
 .tablewrap{overflow-x:auto;-webkit-overflow-scrolling:touch}.post table{width:100%;border-collapse:collapse;font-size:15px}.post th,.post td{text-align:left;padding:8px 10px;border-bottom:1px solid rgba(127,127,127,.2);vertical-align:top}
@@ -85521,7 +85521,7 @@ function guidePage(slug, L = "en") {
 	const body = `<style>${CSS_BLOG}</style><article class="post"><nav class="crumbs"><a href="${P(L, "/")}">Top3Hotels</a> › <a href="${P(L, "/guides")}">${esc(g.guides)}</a></nav>
 <h1>${esc(p.h1)}</h1><p class="dek">${esc(p.dek)}</p><p class="by">${esc(g.by)} ${esc(p.author)} · ${esc(g.upd)} ${fmtDate(p.updated, L)} · ${p.mins} ${esc(g.read)}</p>
 ${postBody(p.body)}
-<p class="note" style="font-size:13px;opacity:.7;margin-top:28px">${esc(g.aff)} <a href="/affiliate-disclosure">${esc(g.how)}</a>.</p>
+<p class="note" style="font-size:13px;color:var(--ink);margin-top:28px">${esc(g.aff)} <a href="/affiliate-disclosure">${esc(g.how)}</a>.</p>
 <div class="more"><h2 style="margin-top:0">${esc(g.more)}</h2><ul>${others.map((o) => `<li><a href="${P(L, `/guides/${o.slug}`)}">${esc(o.h1)}</a></li>`).join("")}</ul></div></article>`;
 	return page({
 		L,
