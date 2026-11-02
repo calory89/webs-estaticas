@@ -17698,7 +17698,7 @@ var G = {
 				"hotel": "HOTEL ASTRAL",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ci/astral.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -18170,7 +18170,7 @@ var G = {
 				"hotel": "The Playford Hotel Adelaide - MGallery Collection",
 				"stars": 5,
 				"area": "North Terrace",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/au/the-sebel-playford-adelaide.html",
 				"website": "https://mgallery.accor.com/en/hotels/8789/wellness/wellness-fitness.html",
 				"gym": {
 					"sizeM2": null,
@@ -18316,7 +18316,7 @@ var G = {
 				"hotel": "Quinta Real Aguascalientes",
 				"stars": 5,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/quinta-real-aguascalientes.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -18361,7 +18361,7 @@ var G = {
 				"hotel": "Hilton Garden Inn Aguascalientes",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/hilton-garden-inn-aguascalientes.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -18489,7 +18489,7 @@ var G = {
 				"hotel": "Grand Hôtel Roi René Aix-en-Provence Centre - MGallery Collection",
 				"stars": null,
 				"area": "Centre (5 min walk from Cours Mirabeau)",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/grand-mercure-roi-rene.html",
 				"website": "https://mgallery.accor.com/en/hotels/1169/wellness-fitness.html",
 				"gym": {
 					"sizeM2": null,
@@ -18561,7 +18561,7 @@ var G = {
 				"hotel": "Sofitel Golfe d'Ajaccio Thalassa Sea & Spa",
 				"stars": null,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/thalassa-porticcio.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -18584,7 +18584,7 @@ var G = {
 				"hotel": "Radisson Blu Resort & Spa, Ajaccio Bay",
 				"stars": null,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/radisson-blu-resort.html",
 				"website": "https://www.radissonhotels.com/fr-fr/hotels/radisson-blu-resort-ajaccio-bay-spa",
 				"gym": {
 					"sizeM2": null,
@@ -18674,7 +18674,7 @@ var G = {
 				"hotel": "Ajman Beach Hotel",
 				"stars": 3,
 				"area": "Beachfront",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ae/ajman-beach.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -18795,7 +18795,7 @@ var G = {
 				"hotel": "Residence Inn by Marriott San Jose Alajuela el Coyol",
 				"stars": 4,
 				"area": "El Coyol",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/cr/residence-inn-by-marriott-san-jose-alajuela-el-coyol.html",
 				"website": "https://www.marriott.com/en-us/hotels/sjoac-ac-hotel-heredia-belen/overview/",
 				"gym": {
 					"sizeM2": null,
@@ -18852,7 +18852,7 @@ var G = {
 				"hotel": "Mary Hotels Alanya",
 				"stars": 5,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/tr/sirius-deluxe.html",
 				"website": null,
 				"gym": {
 					"sizeM2": 105,
@@ -18933,7 +18933,7 @@ var G = {
 				"hotel": "Hotel Giacomo Morra Alba - Handwritten Collection",
 				"stars": 4,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/it/savona.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -19047,7 +19047,7 @@ var G = {
 				"hotel": "Alfagar Village",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/pt/alfagarresort.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -21408,7 +21408,7 @@ var G = {
 				"hotel": "Hotel Fuente del Sol",
 				"stars": 4,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/es/la-fuente-del-sol.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -21560,7 +21560,7 @@ var G = {
 				"hotel": "NH Collection Antwerp Centre",
 				"stars": null,
 				"area": "Centre",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/be/nh-collection-antwerp-centre.html",
 				"website": "https://nh-hotels.com/en/hotel/nh-collection-antwerp-centre",
 				"gym": {
 					"sizeM2": null,
@@ -21846,7 +21846,7 @@ var G = {
 				"hotel": "Kempinski Hotel Aqaba",
 				"stars": 5,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/jo/kempinski-aqaba.html",
 				"website": "https://www.kempinski.com/hotel-aqaba/overview",
 				"gym": {
 					"sizeM2": null,
@@ -22362,7 +22362,7 @@ var G = {
 				"hotel": "Hôtel Arles Plaza",
 				"stars": 4,
 				"area": "Avenue Sadi Carnot",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/arlescamargue.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -22472,7 +22472,7 @@ var G = {
 				"hotel": "Holiday Inn Express Arras",
 				"stars": 3,
 				"area": "Rue du Docteur Brassart",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/express-by-holiday-inn-arras.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -22787,7 +22787,7 @@ var G = {
 				"hotel": "Park Inn by Radisson Hotel Astana",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/kz/park-inn-by-radisson-astana.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -23656,7 +23656,7 @@ var G = {
 				"hotel": "Fairfield House Hotel",
 				"stars": 4,
 				"area": "Seafront",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/gb/fairfieldhouse.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -23850,7 +23850,7 @@ var G = {
 				"hotel": "Maritim Hotel Bad Homburg",
 				"stars": 4,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/de/maritim-kurhaushotel-bad-homburg.html",
 				"website": "https://www.maritim.com/en/hotels/germany/hotel-bad-homburg",
 				"gym": {
 					"sizeM2": null,
@@ -24147,7 +24147,7 @@ var G = {
 				"hotel": "Fairmont Baku, Flame Towers",
 				"stars": 5,
 				"area": "Flame Towers",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/az/fairmont-baku.html",
 				"website": "https://www.fairmont.com/baku/",
 				"gym": {
 					"sizeM2": null,
@@ -24178,7 +24178,7 @@ var G = {
 				"hotel": "Radisson Hotel Baku",
 				"stars": null,
 				"area": "Baku",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/az/radisson-hotel-baku.html",
 				"website": "https://www.radissonhotels.com/en-us/hotels/radisson-hotel-baku",
 				"gym": {
 					"sizeM2": null,
@@ -24266,7 +24266,7 @@ var G = {
 				"hotel": "Hotel Kumala Pantai",
 				"stars": 3,
 				"area": "Legian",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/id/kumala-pantai.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -24373,7 +24373,7 @@ var G = {
 				"hotel": "Fairmont Banff Springs",
 				"stars": null,
 				"area": "Banff",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ca/fairmont-banff-srpings.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -24468,7 +24468,7 @@ var G = {
 				"hotel": "Hotel Amber Sukhumvit 85",
 				"stars": 3,
 				"area": "Sukhumvit",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/th/at-mind-executive-suites.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -24533,7 +24533,7 @@ var G = {
 				"hotel": "W Barcelona",
 				"stars": null,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/es/w-barcelona.html",
 				"website": null,
 				"gym": {
 					"sizeM2": 300,
@@ -24557,7 +24557,7 @@ var G = {
 				"hotel": "Hotel SB Diagonal Zero Barcelona",
 				"stars": null,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/es/diagonal-zero.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -24718,7 +24718,7 @@ var G = {
 				"hotel": "Hotel Dann Carlton Barranquilla",
 				"stars": null,
 				"area": "Buenavista",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/co/promotora-dann-carlton-barranquilla.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -25557,7 +25557,7 @@ var G = {
 				"hotel": "Tivoli Maiorana Belém Pará Hotel",
 				"stars": 5,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/br/tivoli-maiorana-belem-para.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -25759,7 +25759,7 @@ var G = {
 				"hotel": "Ouro Minas Hotel Belo Horizonte Dolce",
 				"stars": 5,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/br/ouro-minas-palace.html",
 				"website": "https://www.wyndhamhotels.com/pt-br/dolce/belo-horizonte-brazil/ouro-minas-hotel-belo-horizonte-dolce/services-amenities",
 				"gym": {
 					"sizeM2": null,
@@ -25844,7 +25844,7 @@ var G = {
 				"hotel": "San Fermín by Dorobe",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/es/sanfermin.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -25968,7 +25968,7 @@ var G = {
 				"hotel": "Hotel Bulevard",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/es/bulevard.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -26092,7 +26092,7 @@ var G = {
 				"hotel": "Spa do Vinho Hotel & Condomínio Vitivinícola",
 				"stars": 5,
 				"area": "Vale dos Vinhedos",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/br/hotelspavinho.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -26551,7 +26551,7 @@ var G = {
 				"hotel": "Hôtel In Situ",
 				"stars": 4,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/l-39-in-situ.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -26642,7 +26642,7 @@ var G = {
 				"hotel": "Sofitel Biarritz Le Miramar Thalassa Sea & Spa",
 				"stars": 5,
 				"area": "Côte des Basques",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/thalassa-miramar-biarritz.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -27161,7 +27161,7 @@ var G = {
 				"hotel": "B&B HOTEL Birmingham Centre",
 				"stars": 3,
 				"area": "City centre",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/gb/pentahotel-birmingham.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -27549,7 +27549,7 @@ var G = {
 				"hotel": "Mercure Blois Centre",
 				"stars": 4,
 				"area": "Centre",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/mercure-blois-centre.html",
 				"website": "https://all.accor.com/hotel/1621/index.en.shtml",
 				"gym": {
 					"sizeM2": null,
@@ -27624,7 +27624,7 @@ var G = {
 				"hotel": "Plaza Blumenau Hotel",
 				"stars": null,
 				"area": "Centro (Rua Sete de Setembro)",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/br/plaza-blumenau.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -27687,7 +27687,7 @@ var G = {
 				"hotel": "Swiss-Belcourt Bogor",
 				"stars": 4,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/id/swiss-belcourt-bogor.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -27739,7 +27739,7 @@ var G = {
 				"hotel": "W Bogota",
 				"stars": null,
 				"area": "Zona T / Chicó",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/co/w-bogota.html",
 				"website": "https://www.marriott.com/en-us/hotels/bogwh-w-bogota/experiences",
 				"gym": {
 					"sizeM2": null,
@@ -27894,7 +27894,7 @@ var G = {
 				"hotel": "Residence - Palais Hörtenberg",
 				"stars": null,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/it/hortenberg-homes.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -27951,7 +27951,7 @@ var G = {
 				"hotel": "Dorint Hotel Bonn",
 				"stars": 4,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/de/hilton-bonn.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -27970,7 +27970,7 @@ var G = {
 				"hotel": "Hotel Gustav-Stresemann-Institut",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/de/gustav-stresemann-institut.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -28000,7 +28000,7 @@ var G = {
 				"hotel": "InterContinental Bordeaux Le Grand Hotel",
 				"stars": 5,
 				"area": "Centre historique (opposite the Grand Théâtre)",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/grand-hotel-bordeaux-spa.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -28039,7 +28039,7 @@ var G = {
 				"hotel": "Imperia Hotel & Suites Boucherville",
 				"stars": null,
 				"area": "Boulevard de Montarville",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ca/imperia-et-suites-boucherville.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -28070,7 +28070,7 @@ var G = {
 				"hotel": "Hôtel de Bourbon - Mercure Bourges",
 				"stars": 4,
 				"area": "Centre",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/grand-mercure-bourges-de-bourbon.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -28295,7 +28295,7 @@ var G = {
 				"hotel": "Meliá Brasil 21",
 				"stars": 5,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/br/melia-brasil-21.html",
 				"website": "https://www.melia.com/pt/hoteis/brasil/brasilia/melia-brasil-21/index.htm",
 				"gym": {
 					"sizeM2": 1e3,
@@ -28775,7 +28775,7 @@ var G = {
 				"hotel": "Oceania Le Conti Brest",
 				"stars": 4,
 				"area": "Centre (Rue Emile Zola)",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/hotel-le-continental.html",
 				"website": "https://oceaniahotels.com/en/oceania-le-conti-brest",
 				"gym": {
 					"sizeM2": null,
@@ -28811,7 +28811,7 @@ var G = {
 				"hotel": "Hilton Barbados Resort",
 				"stars": null,
 				"area": "Needham's Point",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/bb/barbados-needhamspoint.html",
 				"website": "https://www.hilton.com/en/hotels/bgihihh-hilton-barbados-resort/",
 				"gym": {
 					"sizeM2": null,
@@ -28922,7 +28922,7 @@ var G = {
 				"hotel": "Stamford Plaza Brisbane",
 				"stars": 5,
 				"area": "CBD (Edward Street)",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/au/stamford-plaza-brisbane.html",
 				"website": "https://stamford.com.au/hotels/stamford-plaza-brisbane-hotel/hotel-features/",
 				"gym": {
 					"sizeM2": null,
@@ -29010,7 +29010,7 @@ var G = {
 				"hotel": "Hampton by Hilton Bristol City Centre",
 				"stars": 3,
 				"area": "City Centre",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/gb/hampton-by-hilton-bristol-city-centre.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -29137,7 +29137,7 @@ var G = {
 				"hotel": "Courtyard by Marriott Montreal Brossard",
 				"stars": null,
 				"area": "Brossard",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ca/courtyard-montreal-brossard.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -29229,7 +29229,7 @@ var G = {
 				"hotel": "Steigenberger Icon Wiltcher's",
 				"stars": 5,
 				"area": "Avenue Louise",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/be/steigenberger-grandhotel.html",
 				"website": "https://hrewards.com/en/steigenberger-icon-wiltchers-bruessel",
 				"gym": {
 					"sizeM2": null,
@@ -29254,7 +29254,7 @@ var G = {
 				"hotel": "Aspria Royal La Rasante Hotel & Spa",
 				"stars": null,
 				"area": "Rue Sombre 56",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/be/aspria-royal-la-rasante.html",
 				"website": "https://www.aspria.com/",
 				"gym": {
 					"sizeM2": null,
@@ -29551,7 +29551,7 @@ var G = {
 				"hotel": "Faena Hotel Buenos Aires",
 				"stars": 5,
 				"area": "Puerto Madero",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ar/faena-hotel-buenos-aires.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -29671,7 +29671,7 @@ var G = {
 				"hotel": "Element Vancouver Metrotown",
 				"stars": null,
 				"area": "Metrotown",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ca/element-vancouver-metrotown.html",
 				"website": "https://www.marriott.com/en-us/hotels/yvrel-element-vancouver-metrotown/overview",
 				"gym": {
 					"sizeM2": null,
@@ -29764,7 +29764,7 @@ var G = {
 				"hotel": "Holiday Inn Bursa - City Centre by IHG",
 				"stars": 4,
 				"area": "City centre",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/tr/holiday-inn-bursa-city-centre-bursa.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -29795,7 +29795,7 @@ var G = {
 				"hotel": "Ananti at Busan Cove",
 				"stars": 5,
 				"area": "Gijang",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/kr/hilton-busan.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -29824,7 +29824,7 @@ var G = {
 				"hotel": "Avani Central Busan",
 				"stars": 4,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/kr/avani-central-busan.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -30017,7 +30017,7 @@ var G = {
 				"hotel": "Medano Hotel and Spa",
 				"stars": 4,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/medano-and-suites.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -30036,7 +30036,7 @@ var G = {
 				"hotel": "Seven Crown Express & Suites by Kavia",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/seven-crown.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -30448,7 +30448,7 @@ var G = {
 				"hotel": "Calgary Marriott Downtown Hotel",
 				"stars": null,
 				"area": "Downtown",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ca/calgary-marriott.html",
 				"website": "https://www.marriott.com/en-us/hotels/yycdt-calgary-marriott-downtown-hotel/experiences/fitness/",
 				"gym": {
 					"sizeM2": null,
@@ -30484,7 +30484,7 @@ var G = {
 				"hotel": "InterContinental Cali",
 				"stars": null,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/co/intercontinental-cali.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -30689,7 +30689,7 @@ var G = {
 				"hotel": "Holiday Inn Campeche by IHG",
 				"stars": 5,
 				"area": "Seafront",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/holiday-inn-campeche.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -30730,7 +30730,7 @@ var G = {
 				"hotel": "City Express by Marriott Campeche",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/city-express-campeche.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -30761,7 +30761,7 @@ var G = {
 				"hotel": "Meliá Campinas",
 				"stars": 4,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/br/melia-campinas.html",
 				"website": "https://www.melia.com/pt/hoteis/brasil/campinas/melia-campinas/servicos.htm",
 				"gym": {
 					"sizeM2": null,
@@ -30825,7 +30825,7 @@ var G = {
 				"hotel": "Novotel Campo Grande",
 				"stars": 4,
 				"area": "Carandá Bosque (Av. Mato Grosso)",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/br/campo-grande.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -30983,7 +30983,7 @@ var G = {
 				"hotel": "Hyatt Hotel Canberra",
 				"stars": 5,
 				"area": "Yarralumla",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/au/hyatt-canberra.html",
 				"website": null,
 				"gym": {
 					"sizeM2": 1090,
@@ -31239,7 +31239,7 @@ var G = {
 				"hotel": "Hôtel Barrière Le Majestic Cannes",
 				"stars": 5,
 				"area": "La Croisette",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/majestic-barriere.html",
 				"website": "https://hotelsbarriere.com/en/cannes/le-majestic",
 				"gym": {
 					"sizeM2": null,
@@ -31350,7 +31350,7 @@ var G = {
 				"hotel": "CampusKey Cape Town",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/za/campuskey-staycations.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -31382,7 +31382,7 @@ var G = {
 				"hotel": "Hampton by Hilton Caraguatatuba Serramar",
 				"stars": 3,
 				"area": "Pontal, near Serramar Parque Shopping",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/br/hampton-by-hilton-caraguatatuba-serramar.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -31480,7 +31480,7 @@ var G = {
 				"hotel": "The Halston",
 				"stars": 4,
 				"area": "City Centre",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/gb/the-halston-aparthotel.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -31854,7 +31854,7 @@ var G = {
 				"hotel": "Gran Hotel Rey Don Jaime",
 				"stars": 4,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/es/granhotelreydonjaime.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -31889,7 +31889,7 @@ var G = {
 				"hotel": "RH Silene Hotel & Spa 4 Sup",
 				"stars": 4,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/es/del-golf.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -32268,7 +32268,7 @@ var G = {
 				"hotel": "Ibis Styles Cayenne Centre Amazonia",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/gf/best-westerm-amazonia.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -32820,7 +32820,7 @@ var G = {
 				"hotel": "Mercure Chantilly Resort & Conventions",
 				"stars": 4,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/mercure-chantilly-resort-conventions.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -32858,7 +32858,7 @@ var G = {
 				"hotel": "Delta Hotels Prince Edward",
 				"stars": null,
 				"area": "Downtown (Queen Street)",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ca/delta-prince-edward.html",
 				"website": "https://www.marriott.com/hotels/travel/yygdp-delta-prince-edward",
 				"gym": {
 					"sizeM2": null,
@@ -32891,7 +32891,7 @@ var G = {
 				"hotel": "Comfort Inn Chatham",
 				"stars": 2.5,
 				"area": "Richmond Street",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ca/comfort-inn-catham.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -33154,7 +33154,7 @@ var G = {
 				"hotel": "Dorsett Chengdu",
 				"stars": 4,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/cn/dorsett-grand-chengdu.html",
 				"website": "https://www.dorsetthotels.com/dorsett-chengdu/hotel-amenities/",
 				"gym": {
 					"sizeM2": null,
@@ -33481,7 +33481,7 @@ var G = {
 				"hotel": "99 The Gallery Hotel",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/th/99-the-gallery.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -33555,7 +33555,7 @@ var G = {
 				"hotel": "Chayadol Resort - SHA Extra Plus",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/th/chayadol-boutique-resort.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -33732,7 +33732,7 @@ var G = {
 				"hotel": "Holiday Inn & Suites Chihuahua Expo by IHG",
 				"stars": 5,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/holiday-inn-suites.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -33755,7 +33755,7 @@ var G = {
 				"hotel": "Four Points by Sheraton Distrito Uno Chihuahua",
 				"stars": 4,
 				"area": "Distrito Uno",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/four-points-by-sheraton-distrito-uno-chihuahua.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -33806,7 +33806,7 @@ var G = {
 				"hotel": "Hampton Inn by Hilton Chilliwack",
 				"stars": null,
 				"area": "Chilliwack",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ca/hampton-inn-by-hilton-chilliwack.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -34293,7 +34293,7 @@ var G = {
 				"hotel": "Hampton Inn by Hilton Ciudad Victoria",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/hampton-inn-by-hilton-ciudad-victoria.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -34324,7 +34324,7 @@ var G = {
 				"hotel": "Novotel Suites Clermont-Ferrand Polydome",
 				"stars": 4,
 				"area": "Avenue de la République",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/clermont-ferrand-polydome.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -34462,7 +34462,7 @@ var G = {
 				"hotel": "Fiesta Inn Coatzacoalcos",
 				"stars": 4,
 				"area": "Beachfront",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/fiesta-inn-coatzacoalcos.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -34525,7 +34525,7 @@ var G = {
 				"hotel": "Hotel Chais Monnet & Spa",
 				"stars": 5,
 				"area": "Avenue Paul Martell",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/chais-monnet.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -34809,7 +34809,7 @@ var G = {
 				"hotel": "L'Esquisse Hotel & Spa Colmar - MGallery Collection",
 				"stars": 5,
 				"area": "Centre ville (near Parc du Champ de Mars)",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/colmar-champ-de-mars.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -34832,7 +34832,7 @@ var G = {
 				"hotel": "Novotel Suites Colmar Centre",
 				"stars": 4,
 				"area": "Centre (Rue Bartholdi)",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/novotel-suites-colmar-centre.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -35137,7 +35137,7 @@ var G = {
 				"hotel": "Kyriad Prestige Compiègne Hotel & Spa",
 				"stars": 4,
 				"area": "Avenue Marcelin Berthelot",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/kyriad-prestige-compiegne.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -35379,7 +35379,7 @@ var G = {
 				"hotel": "Radisson Blu Scandinavia Hotel, Copenhagen",
 				"stars": null,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/dk/radisson-sas-scandinavia.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -35938,7 +35938,7 @@ var G = {
 				"hotel": "Sofitel Cotonou Marina Hotel & Spa",
 				"stars": 5,
 				"area": "Boulevard de la Marina",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/bj/sofitel-cotonou-marina-spa.html",
 				"website": "https://sofitel.accor.com/en/hotels/B845.html",
 				"gym": {
 					"sizeM2": null,
@@ -35980,7 +35980,7 @@ var G = {
 				"hotel": "Golden Tulip Le Diplomate Cotonou",
 				"stars": null,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/bj/golden-tulip-le-diplomate.html",
 				"website": "https://diplomate-cotonou.goldentulip.com/ja",
 				"gym": {
 					"sizeM2": null,
@@ -36041,7 +36041,7 @@ var G = {
 				"hotel": "Radisson Blu Hotel, Cottbus",
 				"stars": 4,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/de/radisson-sas.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -36195,7 +36195,7 @@ var G = {
 				"hotel": "Dreams Cozumel Cape Resort & Spa",
 				"stars": 4,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/dreams-cozumel-cape-resort-amp-spa.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -36765,7 +36765,7 @@ var G = {
 				"hotel": "Hotel Inter Cuiabá",
 				"stars": null,
 				"area": "Jardim Leblon",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/br/hotel-inter-cuiaba.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -37037,7 +37037,7 @@ var G = {
 				"hotel": "Radisson Hotel Curitiba",
 				"stars": 5,
 				"area": "Batel",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/br/radisson-curitiba.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -37756,7 +37756,7 @@ var G = {
 				"hotel": "Courtyard by Marriott Darwin",
 				"stars": 4,
 				"area": "Darwin Waterfront",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/au/hhotel.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -37792,7 +37792,7 @@ var G = {
 				"hotel": "Hotel & Spa Vacances Bleues Le Splendid",
 				"stars": 4,
 				"area": "Cours de Verdun",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/vacances-bleues-splendid-dax.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -38460,7 +38460,7 @@ var G = {
 				"hotel": "Mercure Dinan Port Le Jerzual",
 				"stars": 4,
 				"area": "Port",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/bestwesternhoteljerzual.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -38870,7 +38870,7 @@ var G = {
 				"hotel": "Fairmont Dubai",
 				"stars": 5,
 				"area": "Business Bay",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ae/the-fairmont-dubai.html",
 				"website": null,
 				"gym": {
 					"sizeM2": 1e3,
@@ -38900,7 +38900,7 @@ var G = {
 				"hotel": "Radisson Blu Hotel, Dubai Media City",
 				"stars": 4,
 				"area": "Dubai Media City",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ae/radisson-sas-media-city.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -39016,7 +39016,7 @@ var G = {
 				"hotel": "Hotel Excelsior Dubrovnik",
 				"stars": 5,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/hr/hotelexcelsiordubrovnik.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -39070,7 +39070,7 @@ var G = {
 				"hotel": "Wyndham Duisburger Hof",
 				"stars": 4,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/de/steigenbergerduisburgerhof.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -41749,7 +41749,7 @@ var G = {
 				"hotel": "Vila Galé Fortaleza",
 				"stars": 5,
 				"area": "Praia do Futuro",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/br/vila-gale-fortaleza-fortaleza.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -41866,7 +41866,7 @@ var G = {
 				"hotel": "Bourbon Cataratas do Iguaçu Resort",
 				"stars": 5,
 				"area": "Avenida das Cataratas (km 2.5)",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/br/bourbon-cataratas.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -41994,7 +41994,7 @@ var G = {
 				"hotel": "Delta Hotels by Marriott Fredericton",
 				"stars": null,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ca/delta-fredericton.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -42359,7 +42359,7 @@ var G = {
 				"hotel": "Hotel Oriental Express Fukuoka Nakasu Kawabata",
 				"stars": 3,
 				"area": "Nakasu Kawabata",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/jp/oriental-express-fukuoka-nakasu-kawabata.html",
 				"website": null,
 				"gym": {
 					"sizeM2": 28.65,
@@ -43241,7 +43241,7 @@ var G = {
 				"hotel": "Crowne Plaza Geelong by IHG",
 				"stars": null,
 				"area": "Waterfront Precinct",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/au/crowne-plaza-geelong-by-ihg.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -43989,7 +43989,7 @@ var G = {
 				"hotel": "Palazzo Versace, Gold Coast",
 				"stars": 5,
 				"area": "Main Beach",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/au/imperial-hotel-gold-coast.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -44483,7 +44483,7 @@ var G = {
 				"hotel": "Park Hôtel Grenoble - MGallery",
 				"stars": 4,
 				"area": "Place Paul Mistral",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/park-grenoble.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -44731,7 +44731,7 @@ var G = {
 				"hotel": "Victoria Ejecutivo",
 				"stars": 4,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/victoria-express-guadalajara.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -45133,7 +45133,7 @@ var G = {
 				"hotel": "Vale de São Torcato Hotel Rural",
 				"stars": null,
 				"area": "São Torcato",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/pt/vale-s-torcato-houses-and-wine-bar.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -45277,7 +45277,7 @@ var G = {
 				"hotel": "Hotel Resol Hakodate",
 				"stars": 3,
 				"area": "Hakodate Station",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/jp/resol-hakodate.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -45343,7 +45343,7 @@ var G = {
 				"hotel": "The Westin Nova Scotian",
 				"stars": null,
 				"area": "Downtown",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ca/nova-scotia.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -45544,7 +45544,7 @@ var G = {
 				"hotel": "Grand Hyatt Hangzhou",
 				"stars": 5,
 				"area": "West Lake",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/cn/hyatt-regency-hangzhou.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -45585,7 +45585,7 @@ var G = {
 				"hotel": "Shangri-La Hotel, Harbin",
 				"stars": null,
 				"area": "Daoli",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/cn/shangri-la-harbin.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -45965,7 +45965,7 @@ var G = {
 				"hotel": "Hotel Kämp",
 				"stars": 5,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fi/swhotelkamphelsinki.html",
 				"website": "https://hotelkamp.com/",
 				"gym": {
 					"sizeM2": null,
@@ -46988,7 +46988,7 @@ var G = {
 				"hotel": "Mercure Hyères Centre Côte d'Azur",
 				"stars": 4,
 				"area": "Centre (Avenue Ambroise Thomas)",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/hyeres-cote-d-azur.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -48097,7 +48097,7 @@ var G = {
 				"hotel": "Hilton Garden Inn Izmir Bayrakli",
 				"stars": 4,
 				"area": "Bayraklı",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/tr/hilton-garden-inn-izmir-bayrakli.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -48276,7 +48276,7 @@ var G = {
 				"hotel": "Red Fox by Lemon Tree Hotels, Jaipur",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/in/red-fox-jaipur.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -49719,7 +49719,7 @@ var G = {
 				"hotel": "The Royal Kelowna",
 				"stars": 4,
 				"area": "Downtown (Water Street)",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ca/the-royal-private-residence-club.html",
 				"website": "https://www.theroyalkelowna.com/",
 				"gym": {
 					"sizeM2": null,
@@ -49748,7 +49748,7 @@ var G = {
 				"hotel": "Delta Hotels by Marriott Grand Okanagan Resort",
 				"stars": 4,
 				"area": "Downtown, lakefront",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ca/delta-grand-okanagan-resort.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -49771,7 +49771,7 @@ var G = {
 				"hotel": "Best Western Plus Kelowna Hotel & Suites",
 				"stars": 3,
 				"area": "Dilworth Mountain",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ca/best-western-kelowna.html",
 				"website": "https://www.bestwestern.com/it_IT/book/hotels-in-kelowna/best-western-plus-kelowna-hotel-suites/propertyCode.62001.html",
 				"gym": {
 					"sizeM2": null,
@@ -50605,7 +50605,7 @@ var G = {
 				"hotel": "The Lindsay",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/in/lindsay.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -51260,7 +51260,7 @@ var G = {
 				"hotel": "Sofitel Kunming",
 				"stars": null,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/cn/sofitel-kunming.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -51532,7 +51532,7 @@ var G = {
 				"hotel": "Hôtel Barrière Le Royal La Baule",
 				"stars": 5,
 				"area": "Avenue Pierre Loti",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/royal-thalasso-barriere.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -51569,7 +51569,7 @@ var G = {
 				"hotel": "Stannum Boutique Hotel & Spa",
 				"stars": 4,
 				"area": "Downtown (Avenida Arce)",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/bo/stannum-boutique.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -51682,7 +51682,7 @@ var G = {
 				"hotel": "Central Park Hôtel & Spa",
 				"stars": 4,
 				"area": "Avenue Jean Guiton",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/central-park-amp-spa.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -51864,7 +51864,7 @@ var G = {
 				"hotel": "Costa D'Oiro Ambiance Village",
 				"stars": 4,
 				"area": "Praia Dona Ana",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/pt/costadoiroambiancevillage.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -52034,7 +52034,7 @@ var G = {
 				"hotel": "Rise Urban Art Hotel",
 				"stars": null,
 				"area": "Kimonos Avenue",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/cy/easyhotel-larnaka.html",
 				"website": null,
 				"gym": {
 					"sizeM2": 60,
@@ -52999,7 +52999,7 @@ var G = {
 				"hotel": "Novotel Leuven Centrum",
 				"stars": 4,
 				"area": "Centre (Vuurkruisenlaan)",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/be/novotelleuvencentrum.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -53018,7 +53018,7 @@ var G = {
 				"hotel": "Park Inn by Radisson Leuven",
 				"stars": null,
 				"area": "Martelarenlaan",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/be/park-inn-leuven.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -53152,7 +53152,7 @@ var G = {
 				"hotel": "Hôtel Barrière Lille",
 				"stars": 5,
 				"area": "Near Lille-Europe station",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/barriere-lille.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -53365,7 +53365,7 @@ var G = {
 				"hotel": "Novotel Limoges Le Lac",
 				"stars": 4,
 				"area": "Lac d'Uzurat",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/limoges-le-lac.html",
 				"website": "https://www.destination-limoges.com/en/hotels/hotel-novotel-limoges-le-lac/",
 				"gym": {
 					"sizeM2": null,
@@ -53768,7 +53768,7 @@ var G = {
 				"hotel": "WUD hotel",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/si/wud.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -54132,7 +54132,7 @@ var G = {
 				"hotel": "Courtyard by Marriott London",
 				"stars": null,
 				"area": "Exeter Road, off Highway 401",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ca/london-ontario-exeter-road.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -54162,7 +54162,7 @@ var G = {
 				"hotel": "The Ned",
 				"stars": 5,
 				"area": "City of London, near St Paul's Cathedral",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/gb/the-ned.html",
 				"website": null,
 				"gym": {
 					"sizeM2": 620,
@@ -54186,7 +54186,7 @@ var G = {
 				"hotel": "K West Hotel & Spa",
 				"stars": 4,
 				"area": "Shepherd's Bush",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/gb/hotelindigolondonkwestbyihg.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -54226,7 +54226,7 @@ var G = {
 				"hotel": "Belfry & Spa by Ligne St Barth",
 				"stars": 5,
 				"area": "Historic centre (Rue de la Grotte)",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/hoteldelagrotte.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -54263,7 +54263,7 @@ var G = {
 				"hotel": "Wyndham Loutraki Poseidon Resort",
 				"stars": 5,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/gr/poseidon-resort.html",
 				"website": "https://www.wyndhamhotels.com/el-gr/wyndham/loutraki-greece/wyndham-loutraki-poseidon-resort/overview",
 				"gym": {
 					"sizeM2": null,
@@ -54299,7 +54299,7 @@ var G = {
 				"hotel": "The Lovina",
 				"stars": 5,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/id/lovina-beach-resort.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -54357,7 +54357,7 @@ var G = {
 				"hotel": "Pullman Luang Prabang",
 				"stars": 5,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/la/pullman-luang-prabang.html",
 				"website": "https://pullman.accor.com/en/hotels/luang-prabang/9112.html",
 				"gym": {
 					"sizeM2": null,
@@ -54406,7 +54406,7 @@ var G = {
 				"hotel": "Aurora Backpackers Hostel",
 				"stars": null,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/la/luangprabang-aurora-hostel.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -55261,7 +55261,7 @@ var G = {
 				"hotel": "Hôtel Lyon Métropole",
 				"stars": 4,
 				"area": "Quai Joseph Gillet (north, 3 km from centre)",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/lyon-metropole.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -55433,7 +55433,7 @@ var G = {
 				"hotel": "Four Seasons Hotel Madrid",
 				"stars": 5,
 				"area": "Centro",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/es/four-seasons-madrid.html",
 				"website": "https://www.fourseasons.com/madrid/",
 				"gym": {
 					"sizeM2": null,
@@ -55490,7 +55490,7 @@ var G = {
 				"hotel": "B&B Hotel Madrid Centro",
 				"stars": null,
 				"area": "Centro (Calle de la Montera)",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/es/b-amp-b-puerta-del-sol.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -56075,7 +56075,7 @@ var G = {
 				"hotel": "Four Seasons Hotel Bahrain Bay",
 				"stars": 5,
 				"area": "Bahrain Bay",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/bh/four-seasons-bahrain.html",
 				"website": "https://www.fourseasons.com/bahrain/",
 				"gym": {
 					"sizeM2": null,
@@ -56234,7 +56234,7 @@ var G = {
 				"hotel": "Hotel H2O",
 				"stars": 4,
 				"area": "Manila Ocean Park",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ph/h2o.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -56253,7 +56253,7 @@ var G = {
 				"hotel": "Amelie Hotel Manila",
 				"stars": 3,
 				"area": "Malate",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ph/amelie-manila.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -56492,7 +56492,7 @@ var G = {
 				"hotel": "InterContinental Marseille - Hotel Dieu",
 				"stars": 5,
 				"area": "Old Port (historic quarter)",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/marseille-dieu.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -56921,7 +56921,7 @@ var G = {
 				"hotel": "InterContinental Medellín",
 				"stars": null,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/co/intercontinental-medellin.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -56945,7 +56945,7 @@ var G = {
 				"hotel": "Four Points by Sheraton Medellín",
 				"stars": null,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/co/four-points-by-sheraton-medellin.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -56983,7 +56983,7 @@ var G = {
 				"hotel": "The Langham, Melbourne",
 				"stars": 5,
 				"area": "Southbank",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/au/the-langham-melbourne.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -57166,7 +57166,7 @@ var G = {
 				"hotel": "Youssef Exceptionnel Merida",
 				"stars": 4,
 				"area": "Centro, near the US consulate",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/youssef-exceptionnel.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -57774,7 +57774,7 @@ var G = {
 				"hotel": "Phoenix Seagaia Ocean Tower",
 				"stars": 5,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/jp/sheraton-grande-ocean-resort-miyazaki.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -58027,7 +58027,7 @@ var G = {
 				"hotel": "Tulia House",
 				"stars": null,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ke/tulia-house.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -58178,7 +58178,7 @@ var G = {
 				"hotel": "Fiesta Inn Monterrey Tecnologico",
 				"stars": 4,
 				"area": "Tecnológico",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/fiesta-inn-monterrey-tecnologico.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -58197,7 +58197,7 @@ var G = {
 				"hotel": "Hilton Garden Inn Monterrey Obispado",
 				"stars": 3,
 				"area": "Obispado",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/hilton-garden-inn-monterrey-obispado.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -58297,7 +58297,7 @@ var G = {
 				"hotel": "Hotel Omni Mont-Royal",
 				"stars": null,
 				"area": "Downtown",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ca/omni-mont-royal.html",
 				"website": "https://www.omnihotels.com/hotels/montreal-mont-royal",
 				"gym": {
 					"sizeM2": null,
@@ -58422,7 +58422,7 @@ var G = {
 				"hotel": "Fiesta Inn Morelia Altozano",
 				"stars": 4,
 				"area": "Altozano",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/fiesta-inn-morelia-altozano.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -59204,7 +59204,7 @@ var G = {
 				"hotel": "HOTEL STRATA NAHA",
 				"stars": 4,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/jp/strata-naha.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -59411,7 +59411,7 @@ var G = {
 				"hotel": "InterContinental Nanjing",
 				"stars": null,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/cn/intercontinental-nanjing.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -59733,7 +59733,7 @@ var G = {
 				"hotel": "Naxos Green Village Hotel",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/gr/naxos-village.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -61074,7 +61074,7 @@ var G = {
 				"hotel": "The Kleep Jungle Resort",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/id/the-kleep-jungle-resort-klungkung-regency.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -61582,7 +61582,7 @@ var G = {
 				"hotel": "Hotel Abest Grande Okayama",
 				"stars": 3,
 				"area": "Okayama Station",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/jp/hoteruabesutogurandegang-shan.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -61881,7 +61881,7 @@ var G = {
 				"hotel": "Hotel Ambasador",
 				"stars": 5,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/hr/ambasador.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -62130,7 +62130,7 @@ var G = {
 				"hotel": "Aloft by Marriott Osaka Umeda",
 				"stars": 4,
 				"area": "Umeda",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/jp/aloft-osaka-dojima.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -62433,7 +62433,7 @@ var G = {
 				"hotel": "Fairmont Château Laurier",
 				"stars": null,
 				"area": "Downtown",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ca/fairmont-chateau-laurier.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -62459,7 +62459,7 @@ var G = {
 				"hotel": "Homewood Suites By Hilton Ottawa Downtown",
 				"stars": null,
 				"area": "Downtown",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ca/homewood-suites-by-hilton-ottawa-downtown.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -62885,7 +62885,7 @@ var G = {
 				"hotel": "Pakse hotel & Restaurant",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/la/pakse.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -63357,7 +63357,7 @@ var G = {
 				"hotel": "Four Seasons Hotel George V Paris",
 				"stars": null,
 				"area": "8th arrondissement, near the Champs-Elysees",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/four-seasons-george-v-paris.html",
 				"website": "https://www.fourseasons.com/paris/",
 				"gym": {
 					"sizeM2": null,
@@ -63386,7 +63386,7 @@ var G = {
 				"hotel": "Novotel Paris Centre Tour Eiffel",
 				"stars": null,
 				"area": "15th arrondissement, near the Eiffel Tower",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/novotel-paris-tour-eiffel.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -63559,7 +63559,7 @@ var G = {
 				"hotel": "Royal Cliff Beach Hotel Pattaya",
 				"stars": 5,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/th/royal-cliff-beach-resort.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -63589,7 +63589,7 @@ var G = {
 				"hotel": "Siamese Hotel Pattaya, BW Signature Collection",
 				"stars": 4,
 				"area": "Pattaya North",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/th/the-siamese.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -63848,7 +63848,7 @@ var G = {
 				"hotel": "Pan Pacific Perth",
 				"stars": 5,
 				"area": "Perth CBD",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/au/pan-pacific-perth.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -64116,7 +64116,7 @@ var G = {
 				"hotel": "Rosewood Phnom Penh",
 				"stars": null,
 				"area": "Wat Phnom area",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/kh/rosewood-phnom-penh-phnom-penh1.html",
 				"website": "https://www.rosewoodhotels.com/en/phnom-penh/wellness/fitness",
 				"gym": {
 					"sizeM2": null,
@@ -64458,7 +64458,7 @@ var G = {
 				"hotel": "Devossion By Live Aqua Playa del Carmen All Inclusive - Adults Only",
 				"stars": 5,
 				"area": "Centro, 1a Avenida and Calle 26",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/devossion-by-live-aqua-playa-del-carmen.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -65856,7 +65856,7 @@ var G = {
 				"hotel": "Four Seasons Hotel Prague",
 				"stars": 5,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/cz/four-seasons-prague.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -65875,7 +65875,7 @@ var G = {
 				"hotel": "Radisson Blu Hotel, Prague",
 				"stars": null,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/cz/radisson-blu-hotel-prague.html",
 				"website": null,
 				"gym": {
 					"sizeM2": 200,
@@ -65987,7 +65987,7 @@ var G = {
 				"hotel": "Marriott Puebla Hotel Meson del Angel",
 				"stars": 5,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/puebla-marriott-real.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -66032,7 +66032,7 @@ var G = {
 				"hotel": "Hampton Inn & Suites By Hilton Puebla",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/hampton-inn-suites-by-hilton-puebla.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -66111,7 +66111,7 @@ var G = {
 				"hotel": "Hotel Don Manolito",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/es/don-manolito.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -66370,7 +66370,7 @@ var G = {
 				"hotel": "City Express Plus by Marriott Puerto Vallarta",
 				"stars": 3,
 				"area": "Near the airport and marina",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/city-express-plus-puerto-vallarta.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -66618,7 +66618,7 @@ var G = {
 				"hotel": "Shangri-La Hotel, Qingdao",
 				"stars": null,
 				"area": "Shinan",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/cn/shangri-la-qingdao.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -66697,7 +66697,7 @@ var G = {
 				"hotel": "Fairmont Le Château Frontenac",
 				"stars": null,
 				"area": "Old Quebec",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ca/fairmont-chateau-frontenac.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -66897,7 +66897,7 @@ var G = {
 				"hotel": "Homewood Suites by Hilton Queretaro",
 				"stars": 3,
 				"area": "North, near Plaza Antea",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/home2suites-by-hilton-queretaro.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -66953,7 +66953,7 @@ var G = {
 				"hotel": "Mercure Quimper Kerlic",
 				"stars": 4,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/mercure-quimper-kerlic.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -66984,7 +66984,7 @@ var G = {
 				"hotel": "Swissotel Quito",
 				"stars": 5,
 				"area": "Quito",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ec/swissotel-quito.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -67113,7 +67113,7 @@ var G = {
 				"hotel": "Poggio del Sole Hotel",
 				"stars": 4,
 				"area": "Contrada Cimilla",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/it/poggio-del-sole-resort.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -67641,7 +67641,7 @@ var G = {
 				"hotel": "Nautilux Rethymno by Mage Hotels",
 				"stars": 5,
 				"area": "Rethymno Town",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/gr/nautilux-by-mage-hotels.html",
 				"website": null,
 				"gym": {
 					"sizeM2": 80,
@@ -68108,7 +68108,7 @@ var G = {
 				"hotel": "Fairmont Rio de Janeiro Copacabana",
 				"stars": 5,
 				"area": "Copacabana",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/br/rio-de-janeiro.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -68320,7 +68320,7 @@ var G = {
 				"hotel": "Rome Cavalieri, A Waldorf Astoria Hotel",
 				"stars": 5,
 				"area": "Hilltop location overlooking Mediterranean pines",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/it/rome-cavalieri-hilton.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -68343,7 +68343,7 @@ var G = {
 				"hotel": "Hotel Locarno",
 				"stars": 4,
 				"area": "Near Piazza del Popolo",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/it/locarno.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -68932,7 +68932,7 @@ var G = {
 				"hotel": "Hotel Lone",
 				"stars": 5,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/hr/lone.html",
 				"website": "https://www.maistra.com/hotel-lone-rovinj/fun-sport",
 				"gym": {
 					"sizeM2": null,
@@ -69389,7 +69389,7 @@ var G = {
 				"hotel": "ibis Styles Saint-Jean-de-Luz Donibane",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/donibane.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -69516,7 +69516,7 @@ var G = {
 				"hotel": "La Villa Mauresque",
 				"stars": 5,
 				"area": "Corniche de l'Estérel",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/la-villa-mauresque.html",
 				"website": "https://www.villa-mauresque.com/spa",
 				"gym": {
 					"sizeM2": null,
@@ -69967,7 +69967,7 @@ var G = {
 				"hotel": "Hotel Alejandro I - Affiliated by Meliá",
 				"stars": 5,
 				"area": "Centro",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ar/alejandro-io.html",
 				"website": "https://www.melia.com/en/hotels/argentina/salta/hotel-alejandro-5956",
 				"gym": {
 					"sizeM2": null,
@@ -69992,7 +69992,7 @@ var G = {
 				"hotel": "Design Suites Salta",
 				"stars": 4,
 				"area": "Centro histórico (Pasaje Castro)",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ar/design-suites-salta.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -70206,7 +70206,7 @@ var G = {
 				"hotel": "Llao Llao Hotel & Resort, Golf-Spa",
 				"stars": 5,
 				"area": "Llao Llao",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ar/llao-llao-rsort-golf-spa.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -70234,7 +70234,7 @@ var G = {
 				"hotel": "Cacique Inacayal Lake Hotel & Spa",
 				"stars": 4,
 				"area": "Bariloche",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ar/cacique-inacayal.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -70295,7 +70295,7 @@ var G = {
 				"hotel": "Hotel Mansion Del Valle",
 				"stars": 4,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/mansion-del-valle.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -70314,7 +70314,7 @@ var G = {
 				"hotel": "Hotel El Zaguán Histórico",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/posada-el-zagua-n.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -70344,7 +70344,7 @@ var G = {
 				"hotel": "Live Aqua San Miguel de Allende",
 				"stars": 5,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/live-aqua-san-miguel-de-allende-urban-resort.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -71103,7 +71103,7 @@ var G = {
 				"hotel": "InterContinental São Paulo",
 				"stars": 5,
 				"area": "Jardins (near Avenida Paulista)",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/br/intercontinental-sao-paulo.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -71135,7 +71135,7 @@ var G = {
 				"hotel": "InterContinental Sapporo by IHG",
 				"stars": 5,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/jp/intercontinental-hotels-sapporo.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -71176,7 +71176,7 @@ var G = {
 				"hotel": "Susukino Granbell Hotel",
 				"stars": 3,
 				"area": "Susukino",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/jp/susukinoguranberuhoteru.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -71211,7 +71211,7 @@ var G = {
 				"hotel": "Radon Plaza",
 				"stars": 5,
 				"area": "Džemala Bijedića",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ba/radon-plaza.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -71281,7 +71281,7 @@ var G = {
 				"hotel": "Résidence Odalys Domaine des Côteaux de Sarlat",
 				"stars": 4,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fr/les-coteaux-de-sarlat.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -71467,7 +71467,7 @@ var G = {
 				"hotel": "Alpin Resort Sacher",
 				"stars": 5,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/at/alpin-resort-sacher.html",
 				"website": "https://seefeld.sacher.com/en/alpin-resort-sacher/good-to-know/",
 				"gym": {
 					"sizeM2": null,
@@ -71674,7 +71674,7 @@ var G = {
 				"hotel": "IZE Seminyak by LifestyleRetreats",
 				"stars": 4,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/id/ize-seminyak.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -72194,7 +72194,7 @@ var G = {
 				"hotel": "The Portman Ritz-Carlton, Shanghai",
 				"stars": null,
 				"area": "Jing'an (Nanjing West Road)",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/cn/the-portman-ritz-carlton-shanghai.html",
 				"website": "https://www.ritzcarlton.com/en/hotels/china/shanghai/spa/fitness-center",
 				"gym": {
 					"sizeM2": null,
@@ -72293,7 +72293,7 @@ var G = {
 				"hotel": "Citymax Sharjah",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ae/citymax-al-wahda.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -72482,7 +72482,7 @@ var G = {
 				"hotel": "Sheki Palace Hotel",
 				"stars": 5,
 				"area": "Akhundzadeh Avenue",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/az/sheki-palace.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -72519,7 +72519,7 @@ var G = {
 				"hotel": "Four Seasons Hotel Shenzhen",
 				"stars": null,
 				"area": "Futian",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/cn/four-seasons-shenzhen.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -72578,7 +72578,7 @@ var G = {
 				"hotel": "Hotel Combermere",
 				"stars": 4,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/in/combermere.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -72747,7 +72747,7 @@ var G = {
 				"hotel": "Sokha Siem Reap Resort & Convention Center",
 				"stars": null,
 				"area": "Siem Reap",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/kh/sokha-siem-reap-resort-convention-center.html",
 				"website": "https://sokhahotels.com.kh/siemreap/facilities/fitness-plus",
 				"gym": {
 					"sizeM2": 3200,
@@ -72838,7 +72838,7 @@ var G = {
 				"hotel": "Torre del Fuggisole",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/it/torre-del-fuggisole.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -72869,7 +72869,7 @@ var G = {
 				"hotel": "Novotel Sihanoukville Holiday Resort",
 				"stars": null,
 				"area": "Sihanoukville",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/kh/novotel-sihanoukville-holiday-resort.html",
 				"website": "https://all.accor.com/hotel/A611/index.en.shtml",
 				"gym": {
 					"sizeM2": null,
@@ -73452,7 +73452,7 @@ var G = {
 				"hotel": "Hyatt Regency Sofia",
 				"stars": 5,
 				"area": "Centre (Vasil Levski Square)",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/bg/hyatt-regency-sofia.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -73538,7 +73538,7 @@ var G = {
 				"hotel": "Lorin Dwangsa Solo Hotel",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/id/lorin-dwangsa-solo-kabupaten-karanganyar.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -74209,7 +74209,7 @@ var G = {
 				"hotel": "Hotel NewStar",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ch/newstar.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -74381,7 +74381,7 @@ var G = {
 				"hotel": "Wedgeview Country House & Spa",
 				"stars": 5,
 				"area": "Vlottenburg",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/za/wedgeview-country-house-spa.html",
 				"website": null,
 				"gym": {
 					"sizeM2": 25,
@@ -75018,7 +75018,7 @@ var G = {
 				"hotel": "Shangri-La Suzhou",
 				"stars": null,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/cn/shangri-la-suzhou.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -75233,7 +75233,7 @@ var G = {
 				"hotel": "The Fullerton Hotel Sydney",
 				"stars": 5,
 				"area": "CBD (financial district)",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/au/fullerton-sydney.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -75695,7 +75695,7 @@ var G = {
 				"hotel": "The Carlton Taichung",
 				"stars": 4,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/tw/qia-er-deng-fan-dian-tai-zhong-guan.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -75788,7 +75788,7 @@ var G = {
 				"hotel": "SSS Life Hotel",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/tw/jj-s-hotel.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -75867,7 +75867,7 @@ var G = {
 				"hotel": "Hub Hotel - Songshan Airport Branch",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/tw/lu-ju-wen-lu-song-shan-ji-chang-guan-ji-chang-jie-bo-shang-yin-shui-chan-xing-ti.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -75897,7 +75897,7 @@ var G = {
 				"hotel": "Swissotel Tallinn",
 				"stars": 5,
 				"area": "City centre (Tornimäe)",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ee/swissotel-tallinn.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -75920,7 +75920,7 @@ var G = {
 				"hotel": "Radisson Blu Hotel Olümpia",
 				"stars": 4,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ee/hotelolumpia-tallinn.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -76212,7 +76212,7 @@ var G = {
 				"hotel": "Relais Histò San Pietro Sul Mar Piccolo",
 				"stars": 5,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/it/histo-san-pietro-sul-mar-piccolo.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -76595,7 +76595,7 @@ var G = {
 				"hotel": "Tbilisi Times",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ge/tbilisi-times.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -77186,7 +77186,7 @@ var G = {
 				"hotel": "Hilton Garden Inn Tirana",
 				"stars": 4,
 				"area": "Near Skanderbeg Square (Bulevardi Gjergj Fishta)",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/al/hilton-garden-inn-tirana.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -77273,7 +77273,7 @@ var G = {
 				"hotel": "Shangri-La Hotel Tokyo",
 				"stars": null,
 				"area": "Marunouchi",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/jp/shangri-la-tokyo.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -77302,7 +77302,7 @@ var G = {
 				"hotel": "The Prince Sakura Tower Tokyo",
 				"stars": null,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/jp/the-prince-sakura-tower-tokyo.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -77481,7 +77481,7 @@ var G = {
 				"hotel": "Four Seasons Hotel Toronto",
 				"stars": 5,
 				"area": "Yorkville",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ca/four-seasons-toronto-at-yorkville.html",
 				"website": "https://www.fourseasons.com/toronto/",
 				"gym": {
 					"sizeM2": 325,
@@ -77507,7 +77507,7 @@ var G = {
 				"hotel": "Hotel X Toronto",
 				"stars": null,
 				"area": "Exhibition Place",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ca/x-toronto-by-library-collection-toronto.html",
 				"website": null,
 				"gym": {
 					"sizeM2": 604,
@@ -79120,7 +79120,7 @@ var G = {
 				"hotel": "Mistiq Tulum",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/luxury-2-bedroom-condo-with-shared-pool-10min-from-tulum-ruins.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -79425,7 +79425,7 @@ var G = {
 				"hotel": "Howard Johnson by Wyndham Udaipur Roop Nagar",
 				"stars": 4,
 				"area": "Roop Nagar",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/in/howard-johnson-by-wyndham.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -80013,7 +80013,7 @@ var G = {
 				"hotel": "Scandic Vaasa",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/fi/scandic-vaasa.html",
 				"website": "https://www.scandichotels.com/vaasa",
 				"gym": {
 					"sizeM2": null,
@@ -80393,7 +80393,7 @@ var G = {
 				"hotel": "Fairmont Pacific Rim",
 				"stars": 5,
 				"area": "Coal Harbour",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ca/faimont-pacific-rim.html",
 				"website": "https://fairmont.com/pacific-rim-vancouver/",
 				"gym": {
 					"sizeM2": null,
@@ -80412,7 +80412,7 @@ var G = {
 				"hotel": "Sheraton Vancouver Wall Centre",
 				"stars": 4,
 				"area": "Downtown",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ca/sheraton-vancouver-wall-centre.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -80587,7 +80587,7 @@ var G = {
 				"hotel": "PRIME LAND",
 				"stars": 3,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/in/prime-land-varanasi.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -81176,7 +81176,7 @@ var G = {
 				"hotel": "The Aries Hotel",
 				"stars": 4,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/it/aries.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -81325,7 +81325,7 @@ var G = {
 				"hotel": "Fairmont Empress",
 				"stars": null,
 				"area": "Inner Harbour",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ca/fairmont-empress.html",
 				"website": "https://www.fairmont-empress.com/",
 				"gym": {
 					"sizeM2": null,
@@ -81354,7 +81354,7 @@ var G = {
 				"hotel": "Victoria Marriott Inner Harbour",
 				"stars": null,
 				"area": "Downtown (Humboldt Street)",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ca/vmiharbour-victoria-british-columbia.html",
 				"website": "https://www.marriott.com/en-us/hotels/yyjmc-victoria-marriott-inner-harbour/overview",
 				"gym": {
 					"sizeM2": null,
@@ -81412,7 +81412,7 @@ var G = {
 				"hotel": "Novotel Wien Hauptbahnhof",
 				"stars": 4,
 				"area": "Favoriten (10th District, next to main station)",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/at/novotel-wien-hauptbahnhof.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -81741,7 +81741,7 @@ var G = {
 				"hotel": "Thermenhotel Karawankenhof",
 				"stars": 4,
 				"area": "Warmbad Villach",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/at/thermenhotel-karawankenhof.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -82475,7 +82475,7 @@ var G = {
 				"hotel": "Fairmont Chateau Whistler",
 				"stars": 5,
 				"area": "Blackcomb Mountain base",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ca/fairmont-chateau-whistler.html",
 				"website": "https://www.fairmont.com/whistler/",
 				"gym": {
 					"sizeM2": null,
@@ -82503,7 +82503,7 @@ var G = {
 				"hotel": "The Westin Resort & Spa, Whistler",
 				"stars": null,
 				"area": "Whistler Village",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ca/westin-resort-and-spa.html",
 				"website": "https://www.marriott.com/en-us/hotels/ysewi-the-westin-resort-and-spa-whistler/overview/",
 				"gym": {
 					"sizeM2": null,
@@ -82830,7 +82830,7 @@ var G = {
 				"hotel": "Caesars Windsor",
 				"stars": 4,
 				"area": "Downtown (Riverside Drive)",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/ca/caesars-windsor-and-casino.html",
 				"website": "https://www.wyndhamhotels.com/en-ca/caesars-rewards/windsor-ontario/caesars-windsor/services-amenities",
 				"gym": {
 					"sizeM2": null,
@@ -83453,7 +83453,7 @@ var G = {
 				"hotel": "Shangri-La Xi'an",
 				"stars": null,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/cn/shangri-la-xi-an.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -83580,7 +83580,7 @@ var G = {
 				"hotel": "Hilton Yantai Golden Coast",
 				"stars": null,
 				"area": "Golden Coast",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/cn/hilton-yantai-golden-coast.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -83662,7 +83662,7 @@ var G = {
 				"hotel": "Armenia Marriott Hotel Yerevan",
 				"stars": 5,
 				"area": "Republic Square",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/am/marriott-armenia-yerevan.html",
 				"website": "https://www.marriott.com/hotels/travel/evnmc-armenia-marriott-hotel-yerevan/",
 				"gym": {
 					"sizeM2": null,
@@ -83689,7 +83689,7 @@ var G = {
 				"hotel": "Courtyard by Marriott Yerevan",
 				"stars": 4,
 				"area": "Yerevan",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/am/courtyard-by-marriott-yerevan.html",
 				"website": "https://www.marriott.com/hotels/travel/evncy/",
 				"gym": {
 					"sizeM2": null,
@@ -84009,7 +84009,7 @@ var G = {
 				"hotel": "Hotel & Spa Hacienda Baruk",
 				"stars": 5,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/hacienda-del-bosque.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -84028,7 +84028,7 @@ var G = {
 				"hotel": "Hotel Don Miguel",
 				"stars": 4,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/don-miguel.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -84081,7 +84081,7 @@ var G = {
 				"hotel": "Falkensteiner Club Funimation Hotel Borik",
 				"stars": 4,
 				"area": null,
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/hr/funimationzadar.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -84116,7 +84116,7 @@ var G = {
 				"hotel": "The Westin Zagreb",
 				"stars": 5,
 				"area": "Kršnjavoga 1",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/hr/westinzagreb.html",
 				"website": "https://marriott.com/en-us/hotels/zagwi-the-westin-zagreb/experiences",
 				"gym": {
 					"sizeM2": 1500,
@@ -84144,7 +84144,7 @@ var G = {
 				"hotel": "DoubleTree by Hilton Zagreb",
 				"stars": null,
 				"area": "Business district (Grada Vukovara 269a)",
-				"bookingUrl": null,
+				"bookingUrl": "https://www.booking.com/hotel/hr/double-tree-by-hilton-zagreb.html",
 				"website": null,
 				"gym": {
 					"sizeM2": null,
@@ -84873,7 +84873,14 @@ var host = (u) => {
 		return u;
 	}
 };
-var bookingFor = (p, city) => CJ_BOOKING(p.bookingUrl ?? `https://www.booking.com/searchresults.html?ss=${encodeURIComponent(`${p.hotel}, ${city.city}`)}`, "t3gym");
+var BK_HOTEL = /^https:\/\/www\.booking\.com\/hotel\/[a-z]{2}\/[^/?#]+\.html/;
+var bookingFor = (p) => p.bookingUrl && BK_HOTEL.test(p.bookingUrl) ? CJ_BOOKING(p.bookingUrl.split("?")[0], "t3gym") : null;
+function ctasFor(p, x, slug, t) {
+	const bk = bookingFor(p);
+	if (bk) return `<div class="ctas"><a class="btn" href="${esc(bk)}" rel="sponsored nofollow noopener" target="_blank" data-t="gym_booking" data-city="${esc(slug)}" data-cat="${t}" data-p="booking">${esc(x.book)}</a>${p.website ? `<a class="lnk" href="${esc(p.website)}" rel="nofollow noopener" target="_blank">${esc(x.site)} →</a>` : ""}</div>`;
+	if (p.website) return `<div class="ctas"><a class="btn" href="${esc(p.website)}" rel="nofollow noopener" target="_blank" data-t="gym_site" data-city="${esc(slug)}" data-cat="${t}" data-p="website">${esc(x.site)} →</a></div>`;
+	return "";
+}
 var bkKey = (u) => (u ?? "").match(/\/hotel\/[a-z]{2}\/[^.?#/]+/)?.[0] ?? "";
 var nameKey = (n) => (n ?? "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
 async function cityPrices(id) {
@@ -84913,7 +84920,7 @@ function card$1(t, p, city, L, cityImg, slug, price) {
 	const stars = p.stars ? `${"★".repeat(p.stars)} · ` : "";
 	return `<article class="gcard ${t}" id="${t}"><div class="ph">${chips}${price ? `<span class="pricetag gprice" data-eur="${price.nightly}" title="${esc(Y[L].priceRef(isoOf(price.checked) || "2026"))}"><span class="v">${money(price.nightly)}</span><small> ${esc(x.perNight)}</small></span>` : ""}${img ? `<img src="${ESC_URL(img)}" alt="${esc(`${p.hotel}, ${city.city}`)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='${esc(cityImg ?? "")}'"><small>${esc(credit)}</small>` : ""}</div>
 <div class="bd"><h2>${esc(p.hotel)}</h2><div class="meta">${stars}${esc(p.area ?? city.city)}</div><p>${esc(L === "es" ? p.summary_es : p.summary_en)}</p>${rows.length ? `<dl>${rows.join("")}</dl>` : ""}${p.confidence === "low" ? `<p class="warn">${esc(x.low)}</p>` : ""}
-<div class="ctas"><a class="btn" href="${esc(bookingFor(p, city))}" rel="sponsored nofollow noopener" target="_blank" data-t="gym_booking" data-city="${esc(slug)}" data-cat="${t}" data-p="booking">${esc(x.book)}</a>${p.website ? `<a class="lnk" href="${esc(p.website)}" rel="nofollow noopener" target="_blank">${esc(x.site)} →</a>` : ""}</div>
+${ctasFor(p, x, slug, t)}
 <div class="src">${esc(x.sources)}: ${p.sources.map((s) => `<a href="${esc(s)}" rel="nofollow noopener" target="_blank">${esc(host(s))}</a>`).join("")}</div></div></article>`;
 }
 /** Whole hotel card opens Booking (city cards and gym cards); buttons, links and toggles keep their own action. */
