@@ -51,13 +51,6 @@
    "mode": "ai",
    "pages_ok": 588,
    "pages_failed": 58,
-   "changes": 14
-  },
-  {
-   "date": "2026-11-01",
-   "mode": "ai",
-   "pages_ok": 588,
-   "pages_failed": 58,
    "changes": 12
   },
   {
@@ -129,6 +122,13 @@
    "pages_ok": 776,
    "pages_failed": 108,
    "changes": 36
+  },
+  {
+   "date": "2026-11-02",
+   "mode": "ai",
+   "pages_ok": 782,
+   "pages_failed": 102,
+   "changes": 30
   }
  ]
 }
