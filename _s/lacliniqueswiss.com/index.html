@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta http-equiv="Content-Security-Policy" content="script-src 'unsafe-inline' https://unpkg.com https://www.googletagmanager.com https://www.clarity.ms https://*.clarity.ms https://static.cloudflareinsights.com https://lacliniqueswiss.com/cdn-cgi/scripts/ https://lacliniqueswiss.com/cdn-cgi/zaraz/; worker-src 'self' blob:; base-uri 'self'; object-src 'none'; form-action 'self' mailto:; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="script-src 'unsafe-inline' https://unpkg.com https://www.googletagmanager.com https://www.clarity.ms https://*.clarity.ms https://static.cloudflareinsights.com https://lacliniqueswiss.com/cdn-cgi/scripts/ https://lacliniqueswiss.com/cdn-cgi/zaraz/ https://connect.facebook.net; worker-src 'self' blob:; base-uri 'self'; object-src 'none'; form-action 'self' mailto:; upgrade-insecure-requests">
 <script>if(window.top!==window.self){try{window.top.location=window.self.location}catch(e){document.documentElement.style.display='none'}}</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>La Clinique Swiss · Your longevity clinic hotel, 30 years renewable, €3,500 VAT included</title>
@@ -1416,7 +1416,7 @@ body.drawer-open .mbar,body.drawer-open .toast,body.drawer-open .nudge{display:n
 <script>
 (function(){
   document.documentElement.classList.add('js');
-  function track(ev, p){ try{ if (window.gtag) gtag('event', ev, p||{}); }catch(e){} }
+  function track(ev, p){ try{ if (window.gtag) gtag('event', ev, p||{}); }catch(e){} try{ if (window.fbq){ if (ev==='generate_lead') fbq('track','Lead',{content_name:'La Clinique Swiss membership'}); else if (ev==='call_click') fbq('track','Schedule'); } }catch(e){} }
   window.track = track;
   // attribution: utm + ambassador ref, kept for the session
   var attr = {}; try { var q = new URLSearchParams(location.search); ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','ref','gclid','fbclid'].forEach(function(k){ var v=q.get(k); if(v) attr[k]=v; });
@@ -1829,14 +1829,15 @@ body.drawer-open .mbar,body.drawer-open .toast,body.drawer-open .nudge{display:n
 
   // ---------- consent ----------
   var consent = document.getElementById('consent');
+  function loadFb(){ if (window.fbq) return; !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js'); fbq('init','889846336857204'); fbq('track','PageView'); }
   function loadClarity(){ if (window.clarity) return; (function(c,l,a,r,i,t,y){ c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)}; t=l.createElement(r); t.async=1; t.src="https://www.clarity.ms/tag/"+i; y=l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t,y); })(window,document,"clarity","script","wqn50nb6kp"); clarity("set","site","lacliniqueswiss"); clarity("set","h1_variant",ab); }
   function ccookie(yes){ try { document.cookie = 'lcs_consent=' + (yes ? 'all' : 'none') + '; Max-Age=31536000; Path=/; SameSite=Lax; Secure'; } catch(e){} }
   function setConsent(yes){ try{ localStorage.setItem('lcs_consent2', yes ? 'yes' : 'no'); }catch(e){} ccookie(yes); consent.hidden = true;
     try { gtag('consent','update',{analytics_storage: yes?'granted':'denied', ad_storage: yes?'granted':'denied', ad_user_data: yes?'granted':'denied', ad_personalization: yes?'granted':'denied'}); } catch(e){}
-    if (yes) loadClarity(); }
+    if (yes) { loadClarity(); loadFb(); } }
   var cv = null; try { cv = localStorage.getItem('lcs_consent2'); } catch(e){}
   if (cv && document.cookie.indexOf('lcs_consent=') < 0) ccookie(cv === 'yes');
-  if (cv === 'yes') loadClarity(); else if (!cv) setTimeout(function(){ consent.hidden = false; }, 1800);
+  if (cv === 'yes') { loadClarity(); loadFb(); } else if (!cv) setTimeout(function(){ consent.hidden = false; }, 1800);
   document.getElementById('cYes').addEventListener('click', function(){ setConsent(true); });
   document.getElementById('cNo').addEventListener('click', function(){ setConsent(false); });
 
