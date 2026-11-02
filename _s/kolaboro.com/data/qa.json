@@ -1,0 +1,121 @@
+{
+ "date": "2026-11-02T13:53:57.165Z",
+ "ok": false,
+ "pages": 113,
+ "links": 159,
+ "checks": [
+  {
+   "name": "Every page, mobile and desktop",
+   "ok": false,
+   "detail": "113 pages, 159 internal links checked: 3 problems"
+  },
+  {
+   "name": "Trust Scores reproduced from open code and data",
+   "ok": true,
+   "detail": "884 of 884 projects recomputed with /open/scoring.py match the published score, confirmed score and tier (dataset sha256 ae4c4535791b\u2026, scoring code sha256 8ccf6f06f210\u2026)"
+  },
+  {
+   "name": "Speed /",
+   "ok": true,
+   "detail": "451 KB ours, 1617 KB total, loaded in 0.7 s on mobile (budget 700 KB / 2600 KB / 4 s)"
+  },
+  {
+   "name": "Accessibility /",
+   "ok": false,
+   "detail": "serious issues: color-contrast (5)"
+  },
+  {
+   "name": "Speed /check",
+   "ok": true,
+   "detail": "289 KB ours, 1455 KB total, loaded in 0.5 s on mobile (budget 700 KB / 2600 KB / 4 s)"
+  },
+  {
+   "name": "Accessibility /check",
+   "ok": true,
+   "detail": "no serious or critical WCAG 2 AA issues found by axe-core"
+  },
+  {
+   "name": "Speed /pricing/",
+   "ok": true,
+   "detail": "273 KB ours, 1439 KB total, loaded in 0.5 s on mobile (budget 700 KB / 2600 KB / 4 s)"
+  },
+  {
+   "name": "Accessibility /pricing/",
+   "ok": true,
+   "detail": "no serious or critical WCAG 2 AA issues found by axe-core"
+  },
+  {
+   "name": "Speed /book/",
+   "ok": true,
+   "detail": "271 KB ours, 1436 KB total, loaded in 0.4 s on mobile (budget 700 KB / 2600 KB / 4 s)"
+  },
+  {
+   "name": "Accessibility /book/",
+   "ok": true,
+   "detail": "no serious or critical WCAG 2 AA issues found by axe-core"
+  },
+  {
+   "name": "Speed /database/",
+   "ok": true,
+   "detail": "2913 KB ours, 4079 KB total, loaded in 0.6 s on mobile (budget 3500 KB / 5000 KB / 4 s)"
+  },
+  {
+   "name": "Accessibility /database/",
+   "ok": true,
+   "detail": "no serious or critical WCAG 2 AA issues found by axe-core"
+  },
+  {
+   "name": "Speed /login/",
+   "ok": true,
+   "detail": "133 KB ours, 1298 KB total, loaded in 0.3 s on mobile (budget 700 KB / 2600 KB / 4 s)"
+  },
+  {
+   "name": "Accessibility /login/",
+   "ok": true,
+   "detail": "no serious or critical WCAG 2 AA issues found by axe-core"
+  },
+  {
+   "name": "Speed /status/",
+   "ok": false,
+   "detail": "1122 KB ours, 2288 KB total, loaded in 0.5 s on mobile (budget 700 KB / 2600 KB / 4 s)"
+  },
+  {
+   "name": "Accessibility /status/",
+   "ok": true,
+   "detail": "no serious or critical WCAG 2 AA issues found by axe-core"
+  },
+  {
+   "name": "Speed /metrics/",
+   "ok": true,
+   "detail": "271 KB ours, 1440 KB total, loaded in 0.5 s on mobile (budget 700 KB / 2600 KB / 4 s)"
+  },
+  {
+   "name": "Accessibility /metrics/",
+   "ok": false,
+   "detail": "serious issues: color-contrast (2)"
+  }
+ ],
+ "problems": [
+  {
+   "page": "/status/",
+   "device": "mobile",
+   "errors": [
+    "404 /data/qa.json"
+   ]
+  },
+  {
+   "page": "/status/",
+   "device": "desktop",
+   "errors": [
+    "404 /data/qa.json"
+   ]
+  },
+  {
+   "page": "/ru/",
+   "device": "desktop",
+   "errors": [
+    "horizontal overflow"
+   ]
+  }
+ ]
+}
