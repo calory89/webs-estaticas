@@ -6999,5 +6999,296 @@
     16950000
    ]
   }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "natha-loka",
+  "name": "Natha Loka Eco Village",
+  "changed": {
+   "advertised_yield_pct": [
+    7,
+    14
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "secret-inshi",
+  "name": "SECRET by INSHI",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "island-heights-al-marjan",
+  "name": "Island Heights",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "janu-residences-al-marjan",
+  "name": "Janu Residences",
+  "changed": {
+   "guaranteed_language": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "samana-ocean-crest-dubai-islands",
+  "name": "Samana Ocean Crest",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "avrupa-konutlari-gunesli-artas",
+  "name": "Avrupa Konutları Güneşli",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9525,
+    9527
+   ],
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "becici-sea-view-building-value-one",
+  "name": "New residential building 200 m from Bečići beach (building 5)",
+  "changed": {
+   "price_from": [
+    203050,
+    217827
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "rhea-by-sansiri",
+  "name": "Rhea by Sansiri",
+  "changed": {
+   "title_type": [
+    "leasehold",
+    "freehold"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "elaris-sky-object-1",
+  "name": "ELAR1S Sky (Elaris Sky)",
+  "changed": {
+   "permit_number": [
+    "project #4019",
+    "registered project #4019"
+   ],
+   "escrow_or_guarantee": [
+    "Escrow account 19517041 at Abu Dhabi Islamic Bank. Payments for units in this project go into this account.",
+    "Escrow account 19517041 at Abu Dhabi Islamic Bank"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "stellar-by-elie-saab-emirates-developments",
+  "name": "Stellar by Elie Saab",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "oystra-richmind",
+  "name": "Oystra",
+  "changed": {
+   "price_from": [
+    2400000,
+    2586888
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "melia-residences-bahrain-infracorp",
+  "name": "Meliá Residences Bahrain (Meliá Beachfront)",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "udaondo-buenos-aires-landmark-developments",
+  "name": "Udaondo Buenos Aires",
+  "changed": {
+   "escrow_or_guarantee": [
+    null,
+    "Fideicomiso Buenos Aires Landmark (trust that bought the ex Tiro Federal land at auction)"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "harmony-ocean-front-ja-russi",
+  "name": "Harmony Ocean Front",
+  "changed": {
+   "permit_number": [
+    "R13 da Matrícula nº 135.051",
+    "Registro de Incorporação R13 da Matrícula nº 135.051"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "cello-residences-taraf",
+  "name": "Cello Residences",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "creek-waters-2-emaar",
+  "name": "Creek Waters 2",
+  "changed": {
+   "advertised_yield_pct": [
+    5,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "sparklz-danube-al-furjan",
+  "name": "Sparklz by Danube",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "wing-samui-condo-phase-2",
+  "name": "Wing Samui Condo (Phase 2)",
+  "changed": {
+   "escrow_or_guarantee": [
+    "5 year optional buy back guarantee",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "antalya-suites-sur-yapi",
+  "name": "Sur Yapı Antalya Suites",
+  "changed": {
+   "price_from": [
+    90000,
+    4497516
+   ],
+   "currency": [
+    "USD",
+    "TRY"
+   ],
+   "escrow_or_guarantee": [
+    "A government-guaranteed project",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "vr-krtsanisi-resort-residence-vr-holding",
+  "name": "VR Krtsanisi Resort Residence",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "tual-golyaka-dag-holding",
+  "name": "Tual Gölyaka",
+  "changed": {
+   "price_from": [
+    160212,
+    160088
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "yekta-golden-valley-yekta-homes",
+  "name": "Yekta Golden Valley",
+  "changed": {
+   "price_from": [
+    7129,
+    7135
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "natulux-tatlisu-dovec-group",
+  "name": "Natulux",
+  "changed": {
+   "price_from": [
+    294734,
+    295138
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "amanvari-residences-aman-private-villas-at-costa-palmas-los",
+  "name": "Amanvari Residences (Aman Private Villas) at Costa Palmas",
+  "changed": {
+   "price_from": [
+    16950000,
+    13995000
+   ]
+  }
  }
 ]
