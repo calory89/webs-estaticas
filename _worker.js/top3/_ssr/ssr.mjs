@@ -17861,6 +17861,81 @@ var G = {
 			"budget": null
 		}
 	},
+	"aguascalientes-mexico": {
+		"city": "Aguascalientes",
+		"country": "Mexico",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Ramada Encore has the most detailed gym reports in Aguascalientes: open 24 hours, with cardio machines and a weight machine, clean and well kept.",
+		"bestReason_es": "El Ramada Encore tiene las opiniones más detalladas de Aguascalientes: abierto 24 horas, con máquinas de cardio y de fuerza, limpio y bien cuidado.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Quinta Real Aguascalientes",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Garden views"],
+					"access": null
+				},
+				"summary_en": "Guests describe the gym as well equipped and well maintained, with garden views. No size or equipment list is published.",
+				"summary_es": "Los huéspedes describen el gimnasio como bien equipado y cuidado, con vistas al jardín. No se publican tamaño ni lista de equipos.",
+				"sources": ["https://www.travelmyth.co.uk/Aguascalientes/Hotels/gym", "https://www.travelmyth.co.uk/Aguascalientes/Hotels/gym-five_star"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Ramada Encore by Wyndham Aguascalientes",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/ramada-encore-aguascalientes.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Treadmills",
+						"Stationary bikes",
+						"Weight machine"
+					],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "24-hour gym with mainly treadmills, stationary bikes and a weight machine. Reviews call it clean and well kept but limited in size and capacity.",
+				"summary_es": "Gimnasio 24 horas con sobre todo cintas, bicicletas estáticas y una máquina de fuerza. Las opiniones lo ven limpio y cuidado, aunque pequeño y con aforo limitado.",
+				"sources": ["https://www.travelmyth.co.uk/Aguascalientes/Hotels/gym", "https://www.travelmyth.co.uk/Aguascalientes/Hotels/gym-four_star"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/500322641.jpg?k=1bcac60bb0c13fd202aba463e11a5f24dbfb0d762cab6e35b4ce6cbc6b210b6e&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Hilton Garden Inn Aguascalientes",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Guest reviews mention the gym as a notable amenity. No size or equipment details are published.",
+				"summary_es": "Las opiniones destacan el gimnasio entre los servicios del hotel. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.travelmyth.co.uk/Aguascalientes/Hotels/gym", "https://www.travelmyth.co.uk/Aguascalientes/Hotels/gym-three_star"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
 	"ahmedabad-india": {
 		"city": "Ahmedabad",
 		"country": "India",
@@ -18321,7 +18396,10 @@ var G = {
 				"summary_es": "Los huéspedes usan Pürovel Spa & Sport, un club de salud de más de 5.000 m2 con piscinas interior y exterior, sauna, hammam, salas de yoga y clases colectivas. Las opiniones dicen que el gimnasio está bien equipado. El resort está en las afueras de la ciudad.",
 				"sources": ["https://www.travelmyth.co.uk/Almaty/Hotels/gym", "https://www.booking.com/fivestars/city/kz/almaty.html"],
 				"confidence": "medium",
-				"photo": null
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/914987777.jpg?k=2af1c8af360f2313db39d03e5dde50a39aa74aa0fd10197e8a7e576319987dfa&o=",
+					"gym": false
+				}
 			},
 			"standard": {
 				"hotel": "Grand Tien Shan Hotel",
@@ -18351,7 +18429,10 @@ var G = {
 				"summary_es": "Gimnasio de 50 m2 con cintas, bicicletas, remos, elípticas, bancos, mancuernas, barras y kettlebells, gratuito para huéspedes. Las opiniones dicen que es pequeño pero limpio y bien equipado.",
 				"sources": ["https://www.travelmyth.co.uk/Almaty/Hotels/gym", "https://www.booking.com/fourstars/city/kz/almaty.html"],
 				"confidence": "medium",
-				"photo": null
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/619778473.jpg?k=24a625faf6c1c68e9845a7c658e557af592a1c5f88d969bb44a6957ede10806d&o=",
+					"gym": false
+				}
 			},
 			"budget": null
 		}
@@ -18535,7 +18616,10 @@ var G = {
 				"summary_es": "Los huéspedes describen un gimnasio pequeño pero con equipamiento moderno y bien cuidado, suficiente para entrenar bien. El hotel tiene además piscina cubierta, jacuzzi y spa.",
 				"sources": ["https://www.travelmyth.co.uk/Amman/Hotels/gym-five_star", "https://www.booking.com/fivestars/city/jo/amman.html"],
 				"confidence": "low",
-				"photo": null
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/498853525.jpg?k=5446c8ccd38fc1e2c2863be7a868c1b7b8378655bae96ec9fcb38d6574e23afb&o=",
+					"gym": false
+				}
 			},
 			"standard": {
 				"hotel": "La Casa Hotel Amman by FHM",
@@ -18554,7 +18638,10 @@ var G = {
 				"summary_es": "Las opiniones describen el gimnasio como moderno, amplio y bien equipado. Hay piscina cubierta climatizada, aunque el spa necesita mantenimiento según los huéspedes.",
 				"sources": ["https://www.travelmyth.co.uk/Amman/Hotels/gym-four_star", "https://www.booking.com/fourstars/city/jo/amman.html"],
 				"confidence": "low",
-				"photo": null
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/232760804.jpg?k=a0e1fcac246ca17cc6789a7de6038374dad77ae09f92036601f82ac64f746f45&o=",
+					"gym": false
+				}
 			},
 			"budget": {
 				"hotel": "ibis Amman",
@@ -18573,7 +18660,10 @@ var G = {
 				"summary_es": "Hotel de 3 estrellas con gimnasio que los huéspedes valoran en general de forma positiva. No se publican tamaño, equipamiento ni horario.",
 				"sources": ["https://www.travelmyth.co.uk/Amman/Hotels/gym-three_star", "https://www.booking.com/threestars/city/jo/amman.html"],
 				"confidence": "low",
-				"photo": null
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/876324552.jpg?k=fafc531c3b798238f297d2c8cacdd97b33fbb2a26ed6c0f55800f665d1cdc73c&o=",
+					"gym": true
+				}
 			}
 		}
 	},
@@ -19089,7 +19179,10 @@ var G = {
 				"summary_es": "Las opiniones destacan una buena variedad de equipamiento en el gimnasio. Algunos huéspedes querrían que abriera más allá de las 22:00.",
 				"sources": ["https://www.travelmyth.co.uk/Aqaba/Hotels/gym", "https://www.booking.com/fourstars/city/jo/aqaba.html"],
 				"confidence": "low",
-				"photo": null
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/134098451.jpg?k=311cb76848bee7cddbd847df5257f31678fc85a5c5191af8dc6ab1ffe930f38e&o=",
+					"gym": false
+				}
 			},
 			"budget": null
 		}
@@ -19492,6 +19585,84 @@ var G = {
 			"budget": null
 		}
 	},
+	"astana-kazakhstan": {
+		"city": "Astana",
+		"country": "Kazakhstan",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 24/7 fitness studio with top-of-the-line equipment plus indoor and outdoor pools and aqua aerobics.",
+		"bestReason_es": "Un gimnasio 24/7 con equipamiento de primera, además de piscinas interior y exterior y aquaeróbic.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Sheraton Astana Hotel",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/kz/sheraton-nur-sultan-hotel.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Top-of-the-line equipment"],
+					"extras": [
+						"Indoor pool",
+						"Outdoor pool",
+						"Aqua aerobics"
+					],
+					"access": null
+				},
+				"summary_en": "24/7 fitness studio with top-of-the-line equipment. The hotel also has indoor and outdoor pools and aqua aerobics.",
+				"summary_es": "Gimnasio abierto 24/7 con equipamiento de primera línea. El hotel tiene además piscinas interior y exterior y aquaeróbic.",
+				"sources": ["https://www.travelmyth.co.uk/Astana/Hotels/gym", "https://www.booking.com/fivestars/city/kz/astana.html"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/623387231.jpg?k=f98705919da4c2a556324717820936db586280514e029eddea7a3e12b34d5e92&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "NEOS HOTEL",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/kz/neos.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Latest-model equipment"],
+					"extras": ["Sauna"],
+					"access": "Included in the stay"
+				},
+				"summary_en": "Gym with latest-model equipment and a sauna, included in the stay. Reviewers compare it to a full fitness club.",
+				"summary_es": "Gimnasio con equipamiento de último modelo y sauna, incluido en la estancia. Los huéspedes lo comparan con un club de fitness completo.",
+				"sources": ["https://www.travelmyth.co.uk/Astana/Hotels/gym", "https://www.booking.com/fourstars/city/kz/astana.html"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/402957793.jpg?k=bf47bf75ee5c0ab9e18822b70b48a52e9014b7c466cb04e42a1e204e5946fbb7&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Park Inn by Radisson Hotel Astana",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Cardio machines", "Free weights"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Basic fitness room with cardio machines and free weights. No size or hours are published.",
+				"summary_es": "Sala de fitness básica con máquinas de cardio y pesos libres. No se publican tamaño ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Astana/Hotels/gym", "https://www.travelmyth.co.uk/Astana/Hotels/gym-three_star"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
 	"asti-italy": {
 		"city": "Asti",
 		"country": "Italy",
@@ -19671,6 +19842,84 @@ var G = {
 					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/910521424.jpg?k=ec5500dea749322f6b49c121b9aa9fa5919fb3a7da2bfc671cd6fda17d396527&o=",
 					"gym": true
 				}
+			}
+		}
+	},
+	"atyrau-kazakhstan": {
+		"city": "Atyrau",
+		"country": "Kazakhstan",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Free gym with an instructor on hand, plus a pool and a sauna.",
+		"bestReason_es": "Gimnasio gratuito con instructor disponible, además de piscina y sauna.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Sultan Palace Hotel",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/kz/sultan-palace.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "From 9:00 or 9:30",
+					"equipment": [],
+					"extras": ["Pool"],
+					"access": null
+				},
+				"summary_en": "Reviews describe well-equipped, comprehensive fitness facilities opening at 9 or 9:30 in the morning. The gym is not separated from the pool area and can feel stuffy.",
+				"summary_es": "Las opiniones describen instalaciones de fitness completas y bien equipadas que abren a las 9 o 9:30. El gimnasio no está separado de la zona de piscina y puede resultar cargado.",
+				"sources": ["https://www.travelmyth.co.uk/Atyrau/Hotels/gym", "https://www.booking.com/fivestars/city/kz/atyrau.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/94293369.jpg?k=05931a4f0f3ace3bffed99b885baca0c04f0031e038858b8e96bea27d1c47a0f&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "ATB Grand Hotel",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/kz/atb-grand-atyrau.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Pool",
+						"Sauna",
+						"Instructor available"
+					],
+					"access": "Free for guests"
+				},
+				"summary_en": "Free gym for guests with an instructor available to help, plus a pool and a sauna. Reviews say it sometimes has issues but generally suits workouts.",
+				"summary_es": "Gimnasio gratuito para huéspedes con instructor disponible, además de piscina y sauna. Según las opiniones a veces da problemas, pero en general sirve para entrenar.",
+				"sources": ["https://www.travelmyth.co.uk/Atyrau/Hotels/gym", "https://www.booking.com/fourstars/city/kz/atyrau.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/695366629.jpg?k=797a610f14a61e9d095127ca2e55afe23e15064dec9d4a8a947adf8d1243bceb&o=",
+					"gym": false
+				}
+			},
+			"budget": {
+				"hotel": "Tengri Hotel",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "3-star hotel listed with a gym. No size, equipment or hours are published.",
+				"summary_es": "Hotel de 3 estrellas que figura con gimnasio. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Atyrau/Hotels/gym"],
+				"confidence": "low",
+				"photo": null
 			}
 		}
 	},
@@ -21037,6 +21286,88 @@ var G = {
 				}
 			},
 			"budget": null
+		}
+	},
+	"beirut-lebanon": {
+		"city": "Beirut",
+		"country": "Lebanon",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "InShape Fitness Club with personal trainers, plus an indoor pool, hot tub and sauna.",
+		"bestReason_es": "Club InShape Fitness con entrenadores personales, además de piscina cubierta, jacuzzi y sauna.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Radisson Blu Martinez Beirut",
+				"stars": 5,
+				"area": "Phoenicia Street",
+				"bookingUrl": "https://www.booking.com/hotel/lb/radisson-sas-martinez-beirut.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Indoor pool",
+						"Hot tub",
+						"Sauna",
+						"Personal trainers"
+					],
+					"access": "InShape Fitness Club"
+				},
+				"summary_en": "Ground floor gym run as the InShape Fitness Club, with personal trainers and long opening hours. The wellness area has an indoor pool, hot tub and sauna; some guests call the gym old and limited.",
+				"summary_es": "Gimnasio en planta baja gestionado como InShape Fitness Club, con entrenadores personales y horario amplio. La zona de bienestar tiene piscina cubierta, jacuzzi y sauna; algunos huéspedes lo ven antiguo y limitado.",
+				"sources": ["https://www.travelmyth.co.uk/Beirut/Hotels/gym", "https://www.booking.com/fivestars/city/lb/beirut.html"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/888323226.jpg?k=281a394986de44d1481a5298dfc2cedfadff27fba1a2b68cc3f8285221f2e29a&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Bossa Nova Beirut Hotel",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/lb/bossa-nova-beirut.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Rooftop pool"],
+					"access": null
+				},
+				"summary_en": "Listed with a gym and a modest rooftop pool. No size, equipment or hours are published.",
+				"summary_es": "Figura con gimnasio y una piscina modesta en la azotea. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Beirut/Hotels/gym", "https://www.booking.com/fourstars/city/lb/beirut.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/218481163.jpg?k=f0675903966d979435c3468945933ffe46c9216aaa36f48b5e39dade3b95c5f1&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Hamra Urban Gardens",
+				"stars": 3,
+				"area": "Hamra",
+				"bookingUrl": "https://www.booking.com/hotel/lb/hamra-urban-gardens.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Professional equipment"],
+					"extras": ["Sports club access"],
+					"access": "Free for guests"
+				},
+				"summary_en": "Large third floor fitness room with professional equipment, free for guests, plus access to a sports club. One review says access may be limited to certain hours.",
+				"summary_es": "Sala de fitness grande en la tercera planta con equipamiento profesional, gratis para huéspedes, y acceso a un club deportivo. Una opinión dice que el acceso puede limitarse a ciertas horas.",
+				"sources": ["https://www.travelmyth.co.uk/Beirut/Hotels/gym", "https://www.priceline.com/hotel-deals/en-us/P5000047934/H116574504/hamra-urban-gardens.ssp"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/133097069.jpg?k=cf7ea829dccc514d4cf799ad67825bdcda945b9060c7885db5fa9f4b7656382f&o=",
+					"gym": true
+				}
+			}
 		}
 	},
 	"bekasi-indonesia": {
@@ -23146,6 +23477,95 @@ var G = {
 			}
 		}
 	},
+	"budva-montenegro": {
+		"city": "Budva",
+		"country": "Montenegro",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Well-equipped fitness center inside a resort with a large spa and several pools.",
+		"bestReason_es": "Gimnasio bien equipado dentro de un resort con un gran spa y varias piscinas.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Splendid Conference & Spa Resort",
+				"stars": 5,
+				"area": "Bečići",
+				"bookingUrl": "https://www.booking.com/hotel/me/splendid-confetence-spa-resort.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Large spa",
+						"Multiple pools",
+						"Private beach"
+					],
+					"access": null
+				},
+				"summary_en": "Resort with a fitness center described as well equipped, a large spa and several pools. No size or equipment list is published.",
+				"summary_es": "Resort con un gimnasio descrito como bien equipado, un gran spa y varias piscinas. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.travelmyth.co.uk/Budva/Hotels/gym", "https://www.booking.com/fivestars/city/me/budva.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/220357795.jpg?k=f648fcbecd46470709ccc46b8a2e2da70d0eae192c4ddae0e387e27dccad6824&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Avala Resort & Villas",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/me/avala-resort-villas.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Indoor pool",
+						"Two outdoor pools",
+						"Large spa"
+					],
+					"access": null
+				},
+				"summary_en": "Fitness center with an indoor pool, two outdoor pools and a large spa. No gym size or equipment list is published.",
+				"summary_es": "Gimnasio con piscina cubierta, dos piscinas exteriores y un gran spa. No se publican tamaño ni equipamiento del gimnasio.",
+				"sources": ["https://www.travelmyth.co.uk/Budva/Hotels/gym", "https://www.booking.com/fourstars/city/me/budva.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/808068467.jpg?k=01886b089475838a76302e24e79992ada6fca8a07153f63269ee5fe19c246f49&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Sunny Side Wellness Resort & Spa",
+				"stars": null,
+				"area": "Bečići",
+				"bookingUrl": "https://www.booking.com/hotel/me/sunny-side-resort-spa.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["A fair number of machines"],
+					"extras": [
+						"Pool",
+						"Sauna",
+						"Hammam"
+					],
+					"access": null
+				},
+				"summary_en": "Aparthotel gym that reviews call well equipped and well maintained, with a fair number of machines and mountain views. There is a pool, sauna and hammam.",
+				"summary_es": "Gimnasio de aparthotel que las opiniones describen como bien equipado y cuidado, con bastantes máquinas y vistas a la montaña. Hay piscina, sauna y hammam.",
+				"sources": ["https://www.travelmyth.co.uk/Budva/Hotels/gym", "https://www.booking.com/hotel/me/sunny-side-resort-spa.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/711808768.jpg?k=c856c10e5db04d8787e244fbeafed3bf4502576e4a18dff7ed7b60eed73f9f0e&o=",
+					"gym": true
+				}
+			}
+		}
+	},
 	"buenos-aires-argentina": {
 		"city": "Buenos Aires",
 		"country": "Argentina",
@@ -23231,6 +23651,87 @@ var G = {
 				"summary_en": "A complimentary fitness centre called Motion, with a treadmill and bike shown in photos. Size and hours are not published.",
 				"summary_es": "Un gimnasio gratuito llamado Motion, con cinta de correr y bicicleta en las fotos. No se publican tamaño ni horario.",
 				"sources": ["https://www.marriott.com/en-us/hotels/yvrel-element-vancouver-metrotown/overview"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"cabo-san-lucas-mexico": {
+		"city": "Cabo San Lucas",
+		"country": "Mexico",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Medano Hotel and Spa is the only Cabo San Lucas hotel whose guests call the gym large, well equipped and one of the best in town.",
+		"bestReason_es": "Medano Hotel and Spa es el único hotel de Cabo San Lucas cuyo gimnasio describen los huéspedes como grande, bien equipado y de los mejores de la ciudad.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Waldorf Astoria Los Cabos Pedregal",
+				"stars": 5,
+				"area": "Pedregal",
+				"bookingUrl": "https://www.booking.com/hotel/mx/capella-pedregal.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Modern equipment"],
+					"extras": [
+						"Yoga and Pilates",
+						"Sauna",
+						"Spa",
+						"Hot tubs",
+						"Ocean views"
+					],
+					"access": null
+				},
+				"summary_en": "Fitness center with modern equipment and Pacific views, plus yoga and Pilates. The resort also has a spa, sauna and hot tubs.",
+				"summary_es": "Gimnasio con equipos modernos y vistas al Pacífico, además de yoga y pilates. El resort tiene también spa, sauna y jacuzzis.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Cabo-San-Lucas/Hotels/gym",
+					"https://www.travelmyth.co.uk/Cabo-San-Lucas/Hotels/gym-five_star",
+					"https://www.hotelgyms.com/hotels/mx/cabo-san-lucas/waldorf-astoria-los-cabos-pedregal/185827"
+				],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/928818969.jpg?k=ec270e7a44a83f3401938fca72b403e2f58beb670b4ef0be7034a0136b02027e&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Medano Hotel and Spa",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Spa"],
+					"access": null
+				},
+				"summary_en": "Guest reviews describe the gym as large and well equipped, and one of the best in town.",
+				"summary_es": "Las opiniones describen el gimnasio como grande y bien equipado, de los mejores de la ciudad.",
+				"sources": ["https://www.travelmyth.co.uk/Cabo-San-Lucas/Hotels/gym-four_star"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"budget": {
+				"hotel": "Seven Crown Express & Suites by Kavia",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "A review summary calls the gym functional. No size or equipment details are published.",
+				"summary_es": "Un resumen de opiniones describe el gimnasio como funcional. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.travelmyth.co.uk/Cabo-San-Lucas/Hotels/gym-three_star"],
 				"confidence": "low",
 				"photo": null
 			}
@@ -23499,6 +24000,77 @@ var G = {
 			"budget": null
 		}
 	},
+	"campeche-mexico": {
+		"city": "Campeche",
+		"country": "Mexico",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Holiday Inn Campeche is the only hotel in the city whose gym guests describe as well equipped.",
+		"bestReason_es": "El Holiday Inn Campeche es el único hotel de la ciudad cuyo gimnasio describen los huéspedes como bien equipado.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Holiday Inn Campeche by IHG",
+				"stars": 5,
+				"area": "Seafront",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Oceanfront hotel with a fitness center that the review summary calls well equipped. No size, equipment list or hours are published.",
+				"summary_es": "Hotel frente al mar con gimnasio que el resumen de opiniones describe como bien equipado. No se publican tamaño, equipos ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Campeche/Hotels/gym", "https://www.travelmyth.co.uk/Campeche/Hotels/gym-five_star"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Hotel Ocean View",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/ocean-view.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Exercise machines"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "The listing describes a fitness center with modern exercise machines. No guest reviews of the gym were found.",
+				"summary_es": "La ficha describe un gimnasio con máquinas de ejercicio modernas. No se encontraron opiniones de huéspedes sobre el gimnasio.",
+				"sources": ["https://www.travelmyth.co.uk/Campeche/Hotels/gym", "https://www.travelmyth.co.uk/Campeche/Hotels/gym-four_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/914562222.jpg?k=7c9f5fc8ea3be531162722803fcf52b0cd41e5705026e7962eeb3674d9fa396f&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "City Express by Marriott Campeche",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Hotel listed with a gym. No size, equipment or reviews of the gym are published.",
+				"summary_es": "Hotel con gimnasio en su ficha. No se publican tamaño, equipamiento ni opiniones del gimnasio.",
+				"sources": ["https://www.travelmyth.co.uk/Campeche/Hotels/gym", "https://www.travelmyth.co.uk/Campeche/Hotels/gym-three_star"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
 	"campinas-brazil": {
 		"city": "Campinas",
 		"country": "Brazil",
@@ -23760,7 +24332,10 @@ var G = {
 				"summary_es": "Gimnasio con cintas, bicicletas, remos, elípticas, bancos, mancuernas, barras, kettlebells y máquina Smith. Gratis para huéspedes, de 06:00 a 21:00.",
 				"sources": ["https://www.travelmyth.co.uk/Cancun/Hotels/gym", "https://www.travelmyth.co.uk/Cancun/Hotels/gym-five_star"],
 				"confidence": "medium",
-				"photo": null
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/684392866.jpg?k=8afc248d7c4d0e99c814d02e1f9b6867b27927263ce7f6190a27683480eb45a4&o=",
+					"gym": false
+				}
 			},
 			"standard": {
 				"hotel": "Grand Oasis Palm",
@@ -23798,7 +24373,10 @@ var G = {
 				"summary_es": "Las opiniones hablan de un gimnasio pequeño pero bien equipado. No se publican tamaño ni lista de equipos.",
 				"sources": ["https://www.travelmyth.co.uk/Cancun/Hotels/gym-three_star"],
 				"confidence": "low",
-				"photo": null
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/628263173.jpg?k=788039221ca69d243defca69b12b83a15f86d2ae73b59c50d822cca2fbf76540&o=",
+					"gym": false
+				}
 			}
 		}
 	},
@@ -24046,6 +24624,93 @@ var G = {
 			},
 			"standard": null,
 			"budget": null
+		}
+	},
+	"casablanca-morocco": {
+		"city": "Casablanca",
+		"country": "Morocco",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Full fitness center with a wide range of cardio and strength equipment, trainers on request and a spa with yoga and Pilates.",
+		"bestReason_es": "Gimnasio completo con mucho equipo de cardio y fuerza, entrenadores a petición y spa con yoga y pilates.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Four Seasons Hotel Casablanca",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/ma/four-seasons-casablanca-casablanca.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Cardio equipment", "Strength equipment"],
+					"extras": [
+						"Trainers on request",
+						"Spa",
+						"Yoga and Pilates",
+						"Saunas",
+						"Jetted tubs"
+					],
+					"access": null
+				},
+				"summary_en": "Fitness center with a wide range of cardio and strength equipment and trainers on request. The spa offers yoga, Pilates, saunas and jetted tubs.",
+				"summary_es": "Gimnasio con una amplia gama de equipos de cardio y fuerza y entrenadores a petición. El spa ofrece yoga, pilates, saunas y bañeras de hidromasaje.",
+				"sources": ["https://www.travelmyth.co.uk/Casablanca/Hotels/gym", "https://www.booking.com/fivestars/city/ma/casablanca.html"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/69012540.jpg?k=7693e597363b8262365cbccc24ee008b68b4832a6660a70411b81d98b519d3d9&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Idou Anfa Hôtel & Spa",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/ma/idou-anfa.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Free weights",
+						"Machines",
+						"Cardio equipment"
+					],
+					"extras": ["Spa"],
+					"access": null
+				},
+				"summary_en": "Fitness center with free weights, machines and cardio equipment, plus a spa. Reviews call it clean and of adequate size, though the equipment could be updated.",
+				"summary_es": "Gimnasio con peso libre, máquinas y cardio, además de spa. Las opiniones lo describen como limpio y de tamaño adecuado, aunque el equipo podría renovarse.",
+				"sources": ["https://www.travelmyth.co.uk/Casablanca/Hotels/gym", "https://www.booking.com/fourstars/city/ma/casablanca.html"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/899523366.jpg?k=90f724a21ec0a7f3393dd27197f5659d0c12daf26bacdaddf77342ba81513a90&o=",
+					"gym": false
+				}
+			},
+			"budget": {
+				"hotel": "Courtyard by Marriott Casablanca Downtown",
+				"stars": 3,
+				"area": "Downtown",
+				"bookingUrl": "https://www.booking.com/hotel/ma/courtyard-by-marriott-casablanca-downtown.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Cardio equipment", "Free weights"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Fitness center with cardio equipment and free weights. No size or hours are published.",
+				"summary_es": "Gimnasio con equipos de cardio y peso libre. No se publican tamaño ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Casablanca/Hotels/gym", "https://www.priceline.com/hotel-deals/en-us/P5000463368/H256268504/courtyard-by-marriott-casablanca-downtown.ssp"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/551064572.jpg?k=6eac1b986e8b41dd193255ffee3e526d8bb24d986f4e9841c6a2d623e2d5f029&o=",
+					"gym": true
+				}
+			}
 		}
 	},
 	"caserta-italy": {
@@ -25143,6 +25808,78 @@ var G = {
 			"budget": null
 		}
 	},
+	"chihuahua-mexico": {
+		"city": "Chihuahua",
+		"country": "Mexico",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Four Points by Sheraton Distrito Uno is the only Chihuahua hotel whose guests rate the gym as well equipped and very complete.",
+		"bestReason_es": "El Four Points by Sheraton Distrito Uno es el único hotel de Chihuahua cuyo gimnasio valoran los huéspedes como bien equipado y muy completo.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Holiday Inn & Suites Chihuahua Expo by IHG",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Indoor pool",
+						"Outdoor pool",
+						"Hot tub"
+					],
+					"access": null
+				},
+				"summary_en": "Hotel with a fitness center, indoor and outdoor pools and a hot tub. No gym size, equipment or reviews are published.",
+				"summary_es": "Hotel con gimnasio, piscinas cubierta y exterior y jacuzzi. No se publican tamaño, equipamiento ni opiniones del gimnasio.",
+				"sources": ["https://www.travelmyth.co.uk/Chihuahua/Hotels/gym", "https://www.travelmyth.co.uk/Chihuahua/Hotels/gym-five_star"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Four Points by Sheraton Distrito Uno Chihuahua",
+				"stars": 4,
+				"area": "Distrito Uno",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Guests rate the gym highly and describe it as well equipped and very complete. Some say information on use and opening times was lacking.",
+				"summary_es": "Los huéspedes valoran mucho el gimnasio y lo describen como bien equipado y muy completo. Algunos echan en falta información sobre uso y horarios.",
+				"sources": ["https://www.travelmyth.co.uk/Chihuahua/Hotels/gym", "https://www.travelmyth.co.uk/Chihuahua/Hotels/gym-four_star"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": {
+				"hotel": "Hampton by Hilton Chihuahua",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Weight-training machines"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "The listing describes a fitness center with weight-training machines. No guest reviews of the gym were found.",
+				"summary_es": "La ficha describe un gimnasio con máquinas de musculación. No se encontraron opiniones de huéspedes sobre el gimnasio.",
+				"sources": ["https://www.travelmyth.co.uk/Chihuahua/Hotels/gym", "https://www.travelmyth.co.uk/Chihuahua/Hotels/gym-three_star"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
 	"chilliwack-canada": {
 		"city": "Chilliwack",
 		"country": "Canada",
@@ -25172,6 +25909,87 @@ var G = {
 				"sources": ["https://www.hotelgyms.com/hotels/ca/chilliwack/hampton-inn-by-hilton-chilliwack/788752"],
 				"confidence": "low",
 				"photo": null
+			}
+		}
+	},
+	"chisinau-moldova": {
+		"city": "Chisinau",
+		"country": "Moldova",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Gym with long opening hours plus a spa and an Aqua Zone with whirlpool.",
+		"bestReason_es": "Gimnasio con horario amplio, spa y una zona acuática con hidromasaje.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Radisson Blu Leogrand Hotel",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/md/leogrand-convention-center.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Spa",
+						"Aqua Zone with whirlpool",
+						"Massage"
+					],
+					"access": null
+				},
+				"summary_en": "Gym open long hours, with a spa, an Aqua Zone with whirlpool and massage. No size or equipment list is published.",
+				"summary_es": "Gimnasio con horario amplio, spa, zona acuática con hidromasaje y masajes. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.travelmyth.co.uk/Chisinau/Hotels/gym", "https://www.booking.com/fivestars/city/md/chisinau.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/623731425.jpg?k=0de250f9bd7564a53d549b0e987964af7d6de95ad7ae4b903f842f3450ead000&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Courtyard by Marriott Chisinau",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/md/courtyard-by-marriott-chisinau.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Listed with a well-equipped fitness center. No size, equipment or hours are published.",
+				"summary_es": "Figura con un gimnasio bien equipado. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Chisinau/Hotels/gym", "https://www.booking.com/fourstars/city/md/chisinau.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/627435925.jpg?k=8c833f3ce6c21e49533494f7a6ec8036a969353488828b7e059fdd370f950889&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "ibis Styles Chisinau",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/md/ibis-styles-chisinau.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Listed with a gym. No details on size, equipment or hours are published.",
+				"summary_es": "Figura con gimnasio. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Chisinau/Hotels/gym", "https://www.booking.com/threestars/city/md/chisinau.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/915052168.jpg?k=ca1d7cc42d9f4c1c3d789f412693bf94b05469c2e2e739f1c8315146e6eb5134&o=",
+					"gym": true
+				}
 			}
 		}
 	},
@@ -25249,6 +26067,80 @@ var G = {
 			"budget": null
 		}
 	},
+	"ciudad-victoria-mexico": {
+		"city": "Ciudad Victoria",
+		"country": "Mexico",
+		"checked": "2026-11-02",
+		"best": "budget",
+		"bestReason_en": "Hampton Inn by Hilton Ciudad Victoria has the only gym in the city that reviews describe as adequately equipped.",
+		"bestReason_es": "El Hampton Inn by Hilton Ciudad Victoria tiene el único gimnasio de la ciudad que las opiniones describen como bien equipado.",
+		"luxuryNote": "No 5-star hotel with a confirmed gym found in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Everest Ciudad Victoria",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/everest-ciudad-victoria.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Machines"],
+					"extras": ["Air conditioning"],
+					"access": "Room key card access"
+				},
+				"summary_en": "Hotel gym with machines and air conditioning, opened with the room key card. Reviews report maintenance issues: the air conditioning sometimes failed and some machines looked neglected.",
+				"summary_es": "Gimnasio con máquinas y aire acondicionado, con acceso con la tarjeta de la habitación. Las opiniones señalan fallos de mantenimiento: el aire a veces no funcionaba y algunas máquinas parecían descuidadas.",
+				"sources": ["https://www.travelmyth.co.uk/Ciudad-Victoria/Hotels/gym", "https://www.travelmyth.co.uk/Ciudad-Victoria/Hotels/gym-four_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/217488061.jpg?k=a12184534fda2f40ee672902d371dc4d155e957344b9296dbb6f1f7615cf9ff3&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "iStay Hotel Ciudad Victoria",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/holiday-inn-express-cuidad-victoria.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Indoor pool"],
+					"access": null
+				},
+				"summary_en": "Hotel listed with a gym and a small indoor pool. No gym size, equipment or reviews are published.",
+				"summary_es": "Hotel con gimnasio y una pequeña piscina cubierta en su ficha. No se publican tamaño, equipamiento ni opiniones del gimnasio.",
+				"sources": ["https://www.travelmyth.co.uk/Ciudad-Victoria/Hotels/gym", "https://www.travelmyth.co.uk/Ciudad-Victoria/Hotels/gym-four_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/826040330.jpg?k=edb19b465385ba409b218e987118efdfadd42504ed2dd93eea1947b868add4c8&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Hampton Inn by Hilton Ciudad Victoria",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "A review summary describes the on-site gym as adequately equipped. No size or equipment list is published.",
+				"summary_es": "Un resumen de opiniones describe el gimnasio como adecuadamente equipado. No se publican tamaño ni lista de equipos.",
+				"sources": ["https://www.travelmyth.co.uk/Ciudad-Victoria/Hotels/gym", "https://www.travelmyth.co.uk/Ciudad-Victoria/Hotels/gym-three_star"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
 	"clermont-ferrand-france": {
 		"city": "Clermont-Ferrand",
 		"country": "France",
@@ -25275,6 +26167,59 @@ var G = {
 				"summary_en": "A 4-star suite hotel with a fitness room open 24 hours. Size and equipment are not published.",
 				"summary_es": "Un hotel de apartamentos de 4 estrellas con sala de fitness abierta 24 horas. No se publican el tamaño ni el equipamiento.",
 				"sources": ["https://www.hotelgyms.com/hotels/fr/clermont-ferrand/novotel-suites-clermont-ferrand-polydome/57292"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"coatzacoalcos-mexico": {
+		"city": "Coatzacoalcos",
+		"country": "Mexico",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Extended Suites Coatzacoalcos Forum is the only hotel in the city whose guests mention the gym, alongside the pool.",
+		"bestReason_es": "Extended Suites Coatzacoalcos Forum es el único hotel de la ciudad cuyos huéspedes mencionan el gimnasio, junto a la piscina.",
+		"luxuryNote": "No 5-star hotel with a confirmed gym found in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Extended Suites Coatzacoalcos Forum",
+				"stars": 4,
+				"area": "Forum",
+				"bookingUrl": "https://www.booking.com/hotel/mx/extended-suites-coatzacoalcos.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Outdoor pool"],
+					"access": null
+				},
+				"summary_en": "Aparthotel next to the Quadrum shopping center with a gym and an outdoor pool. Guests mention the gym as an added amenity, with no details on equipment.",
+				"summary_es": "Aparthotel junto al centro comercial Quadrum con gimnasio y piscina exterior. Los huéspedes mencionan el gimnasio como un extra, sin detalles del equipo.",
+				"sources": ["https://www.travelmyth.co.uk/Coatzacoalcos/Hotels/gym", "https://www.travelmyth.co.uk/Coatzacoalcos/Hotels/gym-four_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/399866590.jpg?k=99a59c2e1f8a408d02ca9c550edcf2ef314ac91543da12428f118002319d8773&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Fiesta Inn Coatzacoalcos",
+				"stars": 4,
+				"area": "Beachfront",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Outdoor pool"],
+					"access": null
+				},
+				"summary_en": "Beachfront hotel listed with a gym and an outdoor pool. No gym size, equipment or reviews are published.",
+				"summary_es": "Hotel frente a la playa con gimnasio y piscina exterior en su ficha. No se publican tamaño, equipamiento ni opiniones del gimnasio.",
+				"sources": ["https://www.travelmyth.co.uk/Coatzacoalcos/Hotels/gym", "https://www.travelmyth.co.uk/Coatzacoalcos/Hotels/gym-four_star"],
 				"confidence": "low",
 				"photo": null
 			},
@@ -25437,6 +26382,46 @@ var G = {
 			}
 		}
 	},
+	"colima-mexico": {
+		"city": "Colima",
+		"country": "Mexico",
+		"checked": "2026-11-02",
+		"best": "budget",
+		"bestReason_en": "Reviews call the gym large and well equipped, with daily classes and a steam room.",
+		"bestReason_es": "Las opiniones describen el gimnasio como grande y bien equipado, con clases diarias y baño de vapor.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": null,
+			"budget": {
+				"hotel": "María Isabel Colima",
+				"stars": null,
+				"area": "Vista Hermosa",
+				"bookingUrl": "https://www.booking.com/hotel/mx/maria-isabel.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Wide range of equipment"],
+					"extras": [
+						"Yoga, spinning and pool classes",
+						"Steam room",
+						"3 outdoor pools",
+						"Spa"
+					],
+					"access": "Free pass for guests to the adjoining gym"
+				},
+				"summary_en": "Reviews describe a large, well-equipped adjoining gym with daily classes such as yoga, spinning and pool workouts, plus a steam room. Some equipment is aging and there is no air conditioning.",
+				"summary_es": "Las opiniones describen un gimnasio contiguo grande y bien equipado, con clases diarias de yoga, spinning y ejercicios en piscina, además de baño de vapor. Parte del equipo es antiguo y no tiene aire acondicionado.",
+				"sources": ["https://www.travelmyth.co.uk/Colima/Hotels/gym", "https://www.expedia.com/Colima-Hotels-Hotel-Maria-Isabel.h2385433.Hotel-Information"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/517817109.jpg?k=085c4662c914496d2576069f07ef442b1080d93df3510d5455b5d70473e770ba&o=",
+					"gym": true
+				}
+			}
+		}
+	},
 	"colmar-france": {
 		"city": "Colmar",
 		"country": "France",
@@ -25572,6 +26557,66 @@ var G = {
 				"confidence": "low",
 				"photo": {
 					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/243726923.jpg?k=58c55d241438c50cf1182b03bdbc4d99009ccaa41bf4117a9f73a74aae41da5a&o=",
+					"gym": true
+				}
+			}
+		}
+	},
+	"comitan-mexico": {
+		"city": "Comitan",
+		"country": "Mexico",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The only 5-star hotel in Comitan with a listed fitness center; no gym in the city publishes details.",
+		"bestReason_es": "El único hotel de 5 estrellas de Comitán con gimnasio; ningún gimnasio de la ciudad publica detalles.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "La Alborada",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/la-alborada.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "5-star hotel whose Booking listing mentions a fitness center. No size, hours or equipment list is published.",
+				"summary_es": "Hotel de 5 estrellas cuya ficha en Booking menciona un gimnasio. No se publican tamaño, horario ni lista de equipos.",
+				"sources": ["https://www.travelmyth.co.uk/Comitan-de-Dominguez/Hotels/gym", "https://www.booking.com/city/mx/comitan-de-dominguez.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/248861375.jpg?k=d0b8cea499f650d493a7afe1caddd5aac988e9701273ca07f08f3cd598026110&o=",
+					"gym": true
+				}
+			},
+			"standard": null,
+			"budget": {
+				"hotel": "Hotel Nak'An Secreto Maya",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/nak-39-an-secreto-maya.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "3-star hotel whose Booking listing mentions a fitness center. No further details are published.",
+				"summary_es": "Hotel de 3 estrellas cuya ficha en Booking menciona un gimnasio. No se publican más detalles.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Comitan-de-Dominguez/Hotels/gym",
+					"https://www.booking.com/city/mx/comitan-de-dominguez.html",
+					"https://www.priceline.com/hotel-deals/en-us/P3000060115/H17479803/hotel-nak-an-secreto-maya.ssp"
+				],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/294704624.jpg?k=8aa36d1d916850d92f9ca0252eed0f117a4f7eaaf2a8a3ead49b8a49512d4365&o=",
 					"gym": true
 				}
 			}
@@ -25779,6 +26824,41 @@ var G = {
 			},
 			"standard": null,
 			"budget": null
+		}
+	},
+	"cordoba-mexico": {
+		"city": "Cordoba",
+		"country": "Mexico",
+		"checked": "2026-11-02",
+		"best": "budget",
+		"bestReason_en": "The only Cordoba hotel with fitness facilities described: a gym plus steam room and pool.",
+		"bestReason_es": "El único hotel de Córdoba con instalaciones de fitness descritas: gimnasio, baño de vapor y piscina.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": null,
+			"budget": {
+				"hotel": "Suites Layfer",
+				"stars": null,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/suites-layfer.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Steam room", "Swimming pool"],
+					"access": null
+				},
+				"summary_en": "Suite hotel with kitchenettes listed with a gym, steam room and swimming pool. No size, hours or equipment list is published.",
+				"summary_es": "Hotel de suites con cocineta que cuenta con gimnasio, baño de vapor y piscina. No se publican tamaño, horario ni lista de equipos.",
+				"sources": ["https://www.hotels.com/de1644950-am2/gym-hotels-cordoba-and-vicinity-mexico/", "https://sp.booking.com/hotel/mx/suites-layfer.en-gb.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/388823390.jpg?k=1a821e65b810a3815b5b2255e93fef8dadd3a4a8cb13ba393bece686820cc7ac&o=",
+					"gym": true
+				}
+			}
 		}
 	},
 	"cork-ireland": {
@@ -26065,6 +27145,81 @@ var G = {
 			"budget": null
 		}
 	},
+	"cozumel-mexico": {
+		"city": "Cozumel",
+		"country": "Mexico",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The only Cozumel hotel gym with an equipment description: multi-function machines and a range of dumbbells.",
+		"bestReason_es": "El único gimnasio de hotel en Cozumel con equipamiento descrito: máquinas multifunción y una gama de mancuernas.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Grand Park Royal Cozumel - All Inclusive",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/park-royal-cozumel-all-inclusive.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Multi-function machines",
+						"Range of dumbbells",
+						"Cardio machines"
+					],
+					"extras": ["Four pools"],
+					"access": null
+				},
+				"summary_en": "All-inclusive resort with an \"Okay\" GymFactor rating: multi-function machines and a range of dumbbells, with a cardio focus. The resort has four pools.",
+				"summary_es": "Resort todo incluido con una valoración GymFactor \"Okay\": máquinas multifunción y una gama de mancuernas, con predominio del cardio. Tiene cuatro piscinas.",
+				"sources": ["https://www.travelmyth.co.uk/Cozumel/Hotels/gym", "https://www.travelmyth.co.uk/Cozumel/Hotels/gym-five_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/673531833.jpg?k=7454f59119ce3dba401af825f58a3be4b529958e95efa0669b8ca941fd0e2dee&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Dreams Cozumel Cape Resort & Spa",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Spa"],
+					"access": null
+				},
+				"summary_en": "4-star resort with a fitness center and spa services. No size, hours or equipment list is published.",
+				"summary_es": "Resort de 4 estrellas con gimnasio y servicios de spa. No se publican tamaño, horario ni lista de equipos.",
+				"sources": ["https://www.travelmyth.co.uk/Cozumel/Hotels/gym", "https://www.travelmyth.co.uk/Cozumel/Hotels/gym-four_star"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": {
+				"hotel": "Hotel Casa Bahía Cozumel - Adults Only",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Outdoor pool"],
+					"access": null
+				},
+				"summary_en": "Adults-only hotel listed with a gym and an outdoor pool. No details on size, equipment or hours are published.",
+				"summary_es": "Hotel solo para adultos que figura con gimnasio y piscina exterior. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Cozumel/Hotels/gym", "https://www.travelmyth.co.uk/Cozumel/Hotels/gym-three_star"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
 	"cremona-italy": {
 		"city": "Cremona",
 		"country": "Italy",
@@ -26223,6 +27378,83 @@ var G = {
 			}
 		}
 	},
+	"cuernavaca-mexico": {
+		"city": "Cuernavaca",
+		"country": "Mexico",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "5-star resort with a gym, fitness center and spa; no Cuernavaca hotel publishes gym size or equipment.",
+		"bestReason_es": "Resort de 5 estrellas con gimnasio y spa; ningún hotel de Cuernavaca publica tamaño ni equipamiento del gimnasio.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Fiesta Americana Hacienda San Antonio El Puente Resort & Spa",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/fiesta-americana-hacienda-san-antonio-el-puente.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Spa"],
+					"access": null
+				},
+				"summary_en": "5-star hacienda resort with a gym and spa. No size, hours or equipment list is published.",
+				"summary_es": "Resort de 5 estrellas en una hacienda, con gimnasio y spa. No se publican tamaño, horario ni lista de equipos.",
+				"sources": ["https://www.travelmyth.co.uk/Cuernavaca/Hotels/gym", "https://www.booking.com/fivestars/city/mx/cuernavaca.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/757237323.jpg?k=5ef4e2e8fa6a9d6718cc1600f569638db96f4861351a73c350eb7e8e0499338b&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Fiesta Inn Cuernavaca",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/fiesta-inn-cuernavaca.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "4-star hotel listed with a gym. No details on size, equipment or hours are published.",
+				"summary_es": "Hotel de 4 estrellas que figura con gimnasio. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Cuernavaca/Hotels/gym", "https://www.booking.com/fourstars/city/mx/cuernavaca.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/576625163.jpg?k=fbdc9b4add28eb970de53f54d852e1e224d2b7312675236ea3d2d47e4325c071&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Azul Turquesa",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/azul-turquesa.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "3-star boutique hotel listed with a gym. No details on size, equipment or hours are published.",
+				"summary_es": "Hotel boutique de 3 estrellas que figura con gimnasio. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Cuernavaca/Hotels/gym"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/63507558.jpg?k=aae6e005c625bf1e04caad02278963d285e9ab9c8bd6f63e8a9e5ea6f89ed20c&o=",
+					"gym": true
+				}
+			}
+		}
+	},
 	"cuiaba-brazil": {
 		"city": "Cuiaba",
 		"country": "Brazil",
@@ -26301,6 +27533,83 @@ var G = {
 				"confidence": "low",
 				"photo": {
 					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/293153238.jpg?k=9c660a858576394848aa5d8f2efcf7f5974692639a57e41d4ac0b93101b20c45&o=",
+					"gym": true
+				}
+			}
+		}
+	},
+	"culiacan-mexico": {
+		"city": "Culiacan",
+		"country": "Mexico",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The only 5-star hotel in Culiacan, with a fitness center and outdoor pool; no gym in the city publishes detailed data.",
+		"bestReason_es": "El único hotel de 5 estrellas de Culiacán, con gimnasio y piscina exterior; ningún gimnasio de la ciudad publica datos detallados.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Culiacan Marriott Hotel",
+				"stars": 5,
+				"area": "Ceiba Comercial",
+				"bookingUrl": "https://www.booking.com/hotel/mx/culiacan-marriott.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Outdoor pool"],
+					"access": null
+				},
+				"summary_en": "Fitness center in the city's only 5-star hotel, with an outdoor pool. No size, hours or equipment list is published.",
+				"summary_es": "Gimnasio en el único hotel de 5 estrellas de la ciudad, con piscina exterior. No se publican tamaño, horario ni lista de equipos.",
+				"sources": ["https://www.travelmyth.co.uk/Culiacan/Hotels/gym", "https://www.booking.com/fivestars/city/mx/culiacan.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/448294950.jpg?k=eba2464d2c0e593a861813daf1960f0b2c891167f513839c0ce4dba10df9b0a6&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Hotel San Marcos Grand",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/san-marcos-culiacan.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Spa and wellness center"],
+					"access": null
+				},
+				"summary_en": "4-star hotel with a fitness center plus a spa and wellness center. No size, hours or equipment list is published.",
+				"summary_es": "Hotel de 4 estrellas con gimnasio, spa y centro de bienestar. No se publican tamaño, horario ni lista de equipos.",
+				"sources": ["https://www.travelmyth.co.uk/Culiacan/Hotels/gym-four_star", "https://www.booking.com/fourstars/city/mx/culiacan.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/417258880.jpg?k=0988ff8a28181d1856ff276c7f18abdb26002944f16970de4c2a902dafc17a11&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Microtel Inn & Suites by Wyndham Culiacán",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/microtel-inn-and-suites-culiacan.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "3-star hotel whose Booking listing mentions a gym. No further details are published.",
+				"summary_es": "Hotel de 3 estrellas cuya ficha en Booking menciona un gimnasio. No se publican más detalles.",
+				"sources": ["https://www.travelmyth.co.uk/Culiacan/Hotels/gym", "https://www.booking.com/threestars/city/mx/culiacan.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/612421361.jpg?k=fa60de596d3b01eaa408fa4a324f7d36eb59acb58fa46637df62db9037c2c633&o=",
 					"gym": true
 				}
 			}
@@ -27769,6 +29078,45 @@ var G = {
 					"gym": false
 				}
 			}
+		}
+	},
+	"essaouira-morocco": {
+		"city": "Essaouira",
+		"country": "Morocco",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The only Essaouira hotel gym with guest feedback: compact but with the essential equipment, free for guests, next to a thalassotherapy center.",
+		"bestReason_es": "El único gimnasio de hotel en Essaouira con opiniones: compacto pero con lo esencial, gratuito y junto a un centro de talasoterapia.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Le Médina Essaouira Thalassa Sea & Spa - MGallery Collection",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/ma/mgallery-thalassa-mogador-essaouira.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Essential equipment"],
+					"extras": [
+						"Thalassotherapy center",
+						"Pool",
+						"Hot tub"
+					],
+					"access": "Free for guests"
+				},
+				"summary_en": "Compact open-air gym with essential equipment, free for guests. Reviews say it is somewhat outdated. The hotel has a pool, hot tub and thalassotherapy center.",
+				"summary_es": "Gimnasio compacto al aire libre con el equipo esencial, gratuito para huéspedes. Las opiniones dicen que está algo anticuado. El hotel tiene piscina, jacuzzi y centro de talasoterapia.",
+				"sources": ["https://www.travelmyth.co.uk/Essaouira/Hotels/gym", "https://www.booking.com/fivestars/city/ma/essaouira.html"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/909857431.jpg?k=40439b89539b02b5f50a14b7b6103d8e0ebcca4919a77bb8adf9b264035a5e03&o=",
+					"gym": false
+				}
+			},
+			"standard": null,
+			"budget": null
 		}
 	},
 	"essen-germany": {
@@ -29897,6 +31245,137 @@ var G = {
 			"budget": null
 		}
 	},
+	"guadalajara-mexico": {
+		"city": "Guadalajara",
+		"country": "Mexico",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Described as a spacious, fully equipped gym with machines and free weights, linked to a rooftop pool.",
+		"bestReason_es": "Se describe como un gimnasio amplio y completo, con máquinas y peso libre, junto a una piscina en la azotea.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hilton Guadalajara Midtown",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/hilton-guadalajara-midtown.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Weight machines", "Free weights"],
+					"extras": ["Rooftop pool"],
+					"access": null
+				},
+				"summary_en": "Fully equipped, spacious and well-lit gym with machines and free weights. Reviews note the rooftop pool is integrated with the gym.",
+				"summary_es": "Gimnasio amplio, luminoso y bien equipado, con máquinas y peso libre. Las opiniones señalan que la piscina de la azotea está integrada con el gimnasio.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Guadalajara/Hotels/gym",
+					"https://www.travelmyth.co.uk/Guadalajara/Hotels/gym-five_star",
+					"https://www.booking.com/fivestars/city/mx/guadalajara.html"
+				],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/925846022.jpg?k=26781ba3710d4d55514b9e0d1e8173a0c30f068d6a6b2cfa41de5e2be798ab9d&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Victoria Ejecutivo",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["At least three benches"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Reviews describe an extensive, good-quality equipment selection with at least three benches and a clean gym. Some guests suggest fans for the treadmills and a renovation.",
+				"summary_es": "Las opiniones hablan de una selección amplia y de buena calidad, con al menos tres bancos, y de un gimnasio limpio. Algunos huéspedes piden ventiladores en las cintas y una renovación.",
+				"sources": ["https://www.travelmyth.co.uk/Guadalajara/Hotels/gym", "https://www.travelmyth.co.uk/Guadalajara/Hotels/gym-four_star"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"budget": {
+				"hotel": "City Express Plus by Marriott Guadalajara Providencia",
+				"stars": 3,
+				"area": "Providencia",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "3-star hotel in Providencia listed with a gym. No details on size, equipment or hours are published.",
+				"summary_es": "Hotel de 3 estrellas en Providencia que figura con gimnasio. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Guadalajara/Hotels/gym-three_star", "https://www.priceline.com/hotel-deals/en-us/P3000060569/H130507803/city-express-plus-by-marriott-guadalajara-providencia.ssp"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"guanajuato-mexico": {
+		"city": "Guanajuato",
+		"country": "Mexico",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Described as a 24-hour health club with spa services, the most complete hotel fitness offer found in Guanajuato.",
+		"bestReason_es": "Se describe como un club de salud abierto 24 horas con spa, la oferta de fitness hotelera más completa de Guanajuato.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Villa Maria Cristina Hotel",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/villa-maria-cristina-boutique.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": ["Spa"],
+					"access": null
+				},
+				"summary_en": "5-star hotel with a health club described as open 24 hours, plus spa treatments. No size or equipment list is published.",
+				"summary_es": "Hotel de 5 estrellas con un club de salud descrito como abierto 24 horas y tratamientos de spa. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.travelmyth.co.uk/Guanajuato/Hotels/gym", "https://www.booking.com/fivestars/city/mx/guanajuato.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/201194139.jpg?k=50e268f55337578813d14e3bedb5fe95c7510c6361fbef02732be80570d047a6&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Holiday Inn Express Guanajuato by IHG",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/holiday-inn-express-guanajuato.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Indoor pool"],
+					"access": null
+				},
+				"summary_en": "4-star hotel with a gym and an indoor pool. No size, hours or equipment list is published.",
+				"summary_es": "Hotel de 4 estrellas con gimnasio y piscina cubierta. No se publican tamaño, horario ni lista de equipos.",
+				"sources": ["https://www.travelmyth.co.uk/Guanajuato/Hotels/gym", "https://www.booking.com/fourstars/city/mx/guanajuato.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/223452655.jpg?k=606160c1936626d1794d6bbc0207b76ce7562d7f6c81e85e04d80b95bdcb989a&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
 	"guangzhou-china": {
 		"city": "Guangzhou",
 		"country": "China",
@@ -31919,6 +33398,83 @@ var G = {
 			}
 		}
 	},
+	"johor-bahru-malaysia": {
+		"city": "Johor Bahru",
+		"country": "Malaysia",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Reviews describe a spacious, professional gym with a wide range of cardio machines and weights.",
+		"bestReason_es": "Las opiniones describen un gimnasio amplio y profesional con mucha variedad de cardio y pesas.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Renaissance Johor Bahru Hotel",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/my/renaissance-johor-bahru.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Cardio machines", "Weights"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Gym with a wide range of cardio machines and weights. Reviews call it spacious, professional, clean and well maintained.",
+				"summary_es": "Gimnasio con mucha variedad de máquinas de cardio y pesas. Las opiniones lo describen amplio, profesional, limpio y bien cuidado.",
+				"sources": ["https://www.travelmyth.co.uk/Johor-Bahru/Hotels/gym", "https://www.booking.com/fivestars/city/my/johor-bahru.html"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/643515973.jpg?k=8a295dae16245c5f7fa2a5a8b5433beb15df0c91a722e6ffa8373028e93986ab&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Opero Hotel Southkey Johor Bahru",
+				"stars": 4,
+				"area": "Southkey",
+				"bookingUrl": "https://www.booking.com/hotel/my/opero-southkey-johor-bahru.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Yoga mats"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "24-hour gym that reviews describe as large, clean and well equipped, with yoga mats. One review mentions only one working treadmill.",
+				"summary_es": "Gimnasio 24 horas que las opiniones describen grande, limpio y bien equipado, con esterillas de yoga. Una opinión menciona que solo funcionaba una cinta.",
+				"sources": ["https://www.travelmyth.co.uk/Johor-Bahru/Hotels/gym", "https://www.booking.com/fourstars/city/my/johor-bahru.html"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/337719719.jpg?k=0b7efed94994b32d570cf7f0eaa5f03b10a5e5082bf6468a3c4922ae6e4b47a2&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Hyatt Place Johor Bahru Paradigm Mall",
+				"stars": 3,
+				"area": "Paradigm Mall",
+				"bookingUrl": "https://www.booking.com/hotel/my/hyatt-place-johor-bahru-paradigm-mall.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Cardio equipment", "Free weights"],
+					"extras": ["Pool next door"],
+					"access": null
+				},
+				"summary_en": "Compact 24-hour gym with cardio equipment and free weights. Reviews praise how clean and well kept it is.",
+				"summary_es": "Gimnasio compacto 24 horas con cardio y pesos libres. Las opiniones destacan lo limpio y bien cuidado que está.",
+				"sources": ["https://www.travelmyth.co.uk/Johor-Bahru/Hotels/gym", "https://www.booking.com/threestars/city/my/johor-bahru.html"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/502534267.jpg?k=692a6b7ca2547aeaee15922d5ed61422b314fe80f79bef4f464d880ed5d6a312&o=",
+					"gym": true
+				}
+			}
+		}
+	},
 	"kagoshima-japan": {
 		"city": "Kagoshima",
 		"country": "Japan",
@@ -32154,6 +33710,56 @@ var G = {
 			}
 		}
 	},
+	"karachi-pakistan": {
+		"city": "Karachi",
+		"country": "Pakistan",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Good GymFactor rating from HotelGyms and described as well equipped for a full workout.",
+		"bestReason_es": "Calificación GymFactor buena de HotelGyms y descrito como bien equipado para un entrenamiento completo.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Pearl Continental Hotel, Karachi",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/pk/pearl-continental-karachi.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Gym rated with a Good GymFactor by HotelGyms and described as well equipped for a full workout. No size, hours or equipment list is published.",
+				"summary_es": "Gimnasio con calificación GymFactor buena según HotelGyms, descrito como bien equipado para un entrenamiento completo. No se publican tamaño, horario ni lista de equipos.",
+				"sources": ["https://www.travelmyth.co.uk/Karachi/Hotels/gym", "https://www.booking.com/fivestars/city/pk/karachi.html"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Beach Luxury Hotel",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/pk/beach-luxury.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Gym described as adequately equipped for basic fitness routines. No further details are published.",
+				"summary_es": "Gimnasio descrito como suficientemente equipado para rutinas básicas. No se publican más detalles.",
+				"sources": ["https://www.travelmyth.co.uk/Karachi/Hotels/gym", "https://www.booking.com/fourstars/city/pk/karachi.html"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
 	"karlsruhe-germany": {
 		"city": "Karlsruhe",
 		"country": "Germany",
@@ -32226,6 +33832,95 @@ var G = {
 				"confidence": "low",
 				"photo": {
 					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/495550883.jpg?k=360c88fa43b6c081c1a7388a7c51935cb7f75c9efb6f523ad0afdbd8699f78a2&o=",
+					"gym": true
+				}
+			}
+		}
+	},
+	"kaunas-lithuania": {
+		"city": "Kaunas",
+		"country": "Lithuania",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Large fitness centre with Technogym equipment plus a heated pool and sauna.",
+		"bestReason_es": "Gimnasio grande con equipamiento Technogym, además de piscina climatizada y sauna.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Hotel Kaunas",
+				"stars": 4,
+				"area": "Laisvės alėja",
+				"bookingUrl": "https://www.booking.com/hotel/lt/kaunas.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Technogym equipment"],
+					"extras": ["Heated pool with turbo-jet and water massage", "Sauna"],
+					"access": null
+				},
+				"summary_en": "Large fitness centre with Technogym equipment. The hotel also has a heated pool with turbo-jet and water massage, and a sauna.",
+				"summary_es": "Gimnasio grande con equipamiento Technogym. El hotel también tiene piscina climatizada con chorros y masaje de agua, y sauna.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Kaunas/Hotels/gym",
+					"https://www.hotelgyms.com/hotels/lt/kaunas/kaunas/26556",
+					"https://www.booking.com/fourstars/city/lt/kaunas.html"
+				],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/36207618.jpg?k=e82cd22df067c1b591c71238d1533d2247939971d2cfbe9d64cb9c461dfe3b72&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Radisson Hotel Kaunas",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/lt/neris.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Cardio machines",
+						"Weightlifting equipment",
+						"Exercise machines"
+					],
+					"extras": ["Sauna"],
+					"access": "Free for guests"
+				},
+				"summary_en": "24-hour gym with cardio machines, weights and exercise machines, free for guests along with the sauna. Several reviews call it small and cramped.",
+				"summary_es": "Gimnasio 24 horas con cardio, pesas y máquinas, gratis para huéspedes junto con la sauna. Varias opiniones lo describen pequeño y estrecho.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Kaunas/Hotels/gym",
+					"https://www.hotelgyms.com/hotels/lt/kaunas/radisson-hotel-kaunas/26612",
+					"https://www.booking.com/fourstars/city/lt/kaunas.html"
+				],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/595686360.jpg?k=e1e8dee40aa54f86d94ff4305b2bde80d674d16ffadb55ebcacea3374ccafc14&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Moxy Kaunas Center",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/lt/moxy-kaunas.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Compact fitness centre open 24 hours. Reviews say it is small but has the basics.",
+				"summary_es": "Gimnasio compacto abierto 24 horas. Las opiniones dicen que es pequeño pero tiene lo básico.",
+				"sources": ["https://www.travelmyth.co.uk/Kaunas/Hotels/gym", "https://www.priceline.com/hotel-deals/en-us/P5000389968/H131733003/moxy-kaunas.ssp"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/831445945.jpg?k=bc4bd6f03ed724b43c3ad5f0489fb1a796d8ab05547a33d31d66dfd09f0be756&o=",
 					"gym": true
 				}
 			}
@@ -32703,6 +34398,80 @@ var G = {
 			"budget": null
 		}
 	},
+	"kobe-japan": {
+		"city": "Kobe",
+		"country": "Japan",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Centurion Hotel&Spa Vintage Kobe has the most detailed gym reports in Kobe: a 24-hour gym with strength training options and quality equipment.",
+		"bestReason_es": "Centurion Hotel&Spa Vintage Kobe tiene el gimnasio con más datos de Kobe: abierto 24 horas, con zona de fuerza y buen equipamiento.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Kobe Portopia Hotel",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/jp/kobe-portopia.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Indoor pool", "Spa"],
+					"access": null
+				},
+				"summary_en": "Bay-view hotel whose guests praise the indoor pool, gym and spa. No size or equipment list is published.",
+				"summary_es": "Hotel con vistas a la bahía cuyos huéspedes valoran la piscina cubierta, el gimnasio y el spa. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.travelmyth.co.uk/Kobe/Hotels/gym", "https://www.travelmyth.co.uk/Kobe/Hotels/gym-five_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/318316574.jpg?k=8673c2141afb7bf82a9a2d4e01208a6a59ba63fc4b333ddb68875c1e876610ec&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Centurion Hotel&Spa Vintage Kobe",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/jp/centurion-vintage-kobe.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Strength training equipment"],
+					"extras": ["Large public bath", "Saunas"],
+					"access": "Fee of about 1000 yen, sometimes free for guests"
+				},
+				"summary_en": "Well-equipped 24-hour gym with strength training options, next to a large public bath with saunas. Access usually costs about 1000 yen, though it is sometimes free.",
+				"summary_es": "Gimnasio abierto 24 horas y bien equipado, con opciones de fuerza, junto a un gran baño público con saunas. El acceso suele costar unos 1000 yenes, aunque a veces es gratis.",
+				"sources": ["https://www.travelmyth.co.uk/Kobe/Hotels/gym", "https://www.travelmyth.co.uk/Kobe/Hotels/gym-four_star"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/266311941.jpg?k=eed78bf7b60a4e6e76bea29685bfc0afb9e92dc10df75127ad4813b580ba2357&o=",
+					"gym": false
+				}
+			},
+			"budget": {
+				"hotel": "Courtyard by Marriott Kobe",
+				"stars": 3,
+				"area": "Port Island",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Port Island hotel listed with a gym. No details on size, equipment or hours are published.",
+				"summary_es": "Hotel en Port Island que figura con gimnasio. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Kobe/Hotels/gym-three_star"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
 	"koblenz-germany": {
 		"city": "Koblenz",
 		"country": "Germany",
@@ -32987,6 +34756,108 @@ var G = {
 			"budget": null
 		}
 	},
+	"kotor-montenegro": {
+		"city": "Kotor",
+		"country": "Montenegro",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "A 100 m2 gym with cardio machines, free weights and kettlebells, free for guests.",
+		"bestReason_es": "Un gimnasio de 100 m2 con máquinas de cardio, peso libre y kettlebells, gratuito para huéspedes.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hyatt Regency Kotor Bay Resort",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/me/blue-kotor-bay-premium-amp-gourmet-resort.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Cardio equipment"],
+					"extras": ["Aquagym", "Pilates"],
+					"access": null
+				},
+				"summary_en": "Beachfront resort with a new, well-equipped cardio and fitness room, plus aquagym and pilates. Guests would like longer opening hours.",
+				"summary_es": "Resort frente al mar con una sala de fitness y cardio nueva y bien equipada, además de aquagym y pilates. Los huéspedes piden un horario más amplio.",
+				"sources": ["https://www.travelmyth.co.uk/Kotor/Hotels/gym", "https://www.booking.com/fivestars/city/me/kotor.html"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/476892898.jpg?k=6f942c602155ea47be2954254dffdd6f85bccb8f2e212a3f33beb10f69ff19e3&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Historic Boutique Hotel Cattaro",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/me/hotel-cattaro.html",
+				"website": null,
+				"gym": {
+					"sizeM2": 100,
+					"hours": null,
+					"equipment": [
+						"Cardio machines",
+						"Exercise machines",
+						"Free weights",
+						"Kettlebells",
+						"Resistance bands",
+						"Balance trainers"
+					],
+					"extras": [],
+					"access": "Free for guests"
+				},
+				"summary_en": "Gym of 100 m2 with cardio machines, exercise machines, free weights, kettlebells and resistance bands. It is free for guests.",
+				"summary_es": "Gimnasio de 100 m2 con máquinas de cardio y de fuerza, peso libre, kettlebells y bandas elásticas. Es gratuito para los huéspedes.",
+				"sources": ["https://www.travelmyth.co.uk/Kotor/Hotels/gym", "https://www.priceline.com/hotel-deals/en-us/P5000137272/H11954005/historic-boutique-hotel-cattaro.ssp"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/195424126.jpg?k=e1fa122abc0f0244adde9f8f7793bf502c49a61cd0d3b330c99c225a482731d2&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"kumamoto-japan": {
+		"city": "Kumamoto",
+		"country": "Japan",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The only hotel gym found in Kumamoto: a small cardio room at THE BLOSSOM KUMAMOTO.",
+		"bestReason_es": "El único gimnasio de hotel encontrado en Kumamoto: una pequeña sala de cardio en THE BLOSSOM KUMAMOTO.",
+		"luxuryNote": "No 5-star hotel with a confirmed gym found in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "THE BLOSSOM KUMAMOTO",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/jp/the-blossom-kumamoto.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Treadmills",
+						"Exercise bike",
+						"Stepper"
+					],
+					"extras": ["Onsen public bath"],
+					"access": null
+				},
+				"summary_en": "Small, clean fitness room with new cardio machines (treadmills, a bike and a stepper) but no weights or dumbbells. Guests call it basic.",
+				"summary_es": "Sala de fitness pequeña y limpia con máquinas de cardio nuevas (cintas, bicicleta y stepper), pero sin pesas ni mancuernas. Los huéspedes la consideran básica.",
+				"sources": ["https://www.travelmyth.co.uk/Kumamoto/Hotels/gym", "https://www.travelmyth.co.uk/Kumamoto/Hotels/gym-four_star"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/405443435.jpg?k=ed7f9e029d29e6871c91b7846b77d15ba53ee4483871e8993754cacf340e0b9e&o=",
+					"gym": true
+				}
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
 	"kunming-china": {
 		"city": "Kunming",
 		"country": "China",
@@ -33017,6 +34888,41 @@ var G = {
 			},
 			"standard": null,
 			"budget": null
+		}
+	},
+	"kurashiki-japan": {
+		"city": "Kurashiki",
+		"country": "Japan",
+		"checked": "2026-11-02",
+		"best": "budget",
+		"bestReason_en": "Royal Park Hotel Kurashiki is the only hotel found in Kurashiki that lists a fitness center.",
+		"bestReason_es": "Royal Park Hotel Kurashiki es el único hotel encontrado en Kurashiki que anuncia gimnasio.",
+		"luxuryNote": "No 5-star or 4-star hotel with a confirmed gym found in the city",
+		"tiers": {
+			"luxury": null,
+			"standard": null,
+			"budget": {
+				"hotel": "Royal Park Hotel Kurashiki",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/jp/roiyarupakuhoterucang-fu.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Hotel listed with a fitness center. No details on size, equipment or hours are published.",
+				"summary_es": "Hotel que figura con gimnasio. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.hotels.com/ho1829455136/"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/465724240.jpg?k=931fd0602d1bd61ef656042b399ac14acd360f4284ff87c10584a9868713875c&o=",
+					"gym": true
+				}
+			}
 		}
 	},
 	"kuta-indonesia": {
@@ -33081,6 +34987,87 @@ var G = {
 				}
 			},
 			"budget": null
+		}
+	},
+	"kyoto-japan": {
+		"city": "Kyoto",
+		"country": "Japan",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Hotel Vischio Kyoto by GRANVIA has a 24-hour gym with modern equipment and a sauna, with more guest detail than other Kyoto hotels.",
+		"bestReason_es": "Hotel Vischio Kyoto by GRANVIA tiene gimnasio 24 horas con equipamiento moderno y sauna, con más detalle de huéspedes que otros hoteles de Kioto.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "RIHGA Royal Hotel Kyoto",
+				"stars": 5,
+				"area": "Kyoto Station",
+				"bookingUrl": "https://www.booking.com/hotel/jp/rihga-royal-kyoto.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Heated indoor pool",
+						"Jacuzzi",
+						"Sauna"
+					],
+					"access": null
+				},
+				"summary_en": "Hotel near Kyoto Station with a gym, a heated indoor pool, a jacuzzi and a sauna. No size or equipment list is published.",
+				"summary_es": "Hotel cerca de la estación de Kioto con gimnasio, piscina cubierta climatizada, jacuzzi y sauna. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.travelmyth.co.uk/Kyoto/Hotels/gym-five_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/153266638.jpg?k=09c0f0b52cacb49c15d7c5655f5c505141a3db5567431286f25c48201e4c25ac&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Hotel Vischio Kyoto by GRANVIA",
+				"stars": 4,
+				"area": "Kyoto Station",
+				"bookingUrl": "https://www.booking.com/hotel/jp/hoteruvuisukiojing-du.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Modern machines"],
+					"extras": ["Public bathhouse", "Sauna"],
+					"access": null
+				},
+				"summary_en": "Compact gym across from Kyoto Station, open 24 hours, with modern, well-maintained equipment. The hotel also has a public bathhouse and sauna.",
+				"summary_es": "Gimnasio compacto frente a la estación de Kioto, abierto 24 horas, con equipamiento moderno y bien cuidado. El hotel tiene además baño público y sauna.",
+				"sources": ["https://www.travelmyth.co.uk/Kyoto/Hotels/gym-four_star", "https://www.hotelgyms.com/hotels/jp/kyoto/hotel-vischio-kyoto-by-granvia/4062111"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/207744497.jpg?k=291391722cd9ee4282698c61d28eab35e71ab1153793dcf7fa5b2e50fa92178c&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Urban Hotel Kyoto Gojo Premium",
+				"stars": 3,
+				"area": "Gojo",
+				"bookingUrl": "https://www.booking.com/hotel/jp/abanhoterujing-du-wu-tiao-puremiamu.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Essential fitness equipment"],
+					"extras": ["Large public bath with city views"],
+					"access": "Extra fee, reservation required"
+				},
+				"summary_en": "Gym with essential fitness equipment, used by reservation for an extra fee. The hotel also has a large public bath with city views.",
+				"summary_es": "Gimnasio con el equipamiento básico, con reserva previa y coste extra. El hotel tiene también un gran baño público con vistas a la ciudad.",
+				"sources": ["https://www.travelmyth.co.uk/Kyoto/Hotels/gym-three_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/283285342.jpg?k=69aa9ce66147b5b1af3f79b54064343fff8d8b08e1b5519f5012a5a7106d1c4e&o=",
+					"gym": true
+				}
+			}
 		}
 	},
 	"la-baule-france": {
@@ -33153,6 +35140,83 @@ var G = {
 				"photo": null
 			},
 			"budget": null
+		}
+	},
+	"la-paz-mexico": {
+		"city": "La Paz",
+		"country": "Mexico",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "5-star marina resort with a gym and spa; no La Paz hotel publishes gym size or equipment.",
+		"bestReason_es": "Resort de 5 estrellas en una marina con gimnasio y spa; ningún hotel de La Paz publica tamaño ni equipamiento del gimnasio.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hotel Indigo La Paz Puerta Cortes by IHG",
+				"stars": 5,
+				"area": "Puerta Cortés",
+				"bookingUrl": "https://www.booking.com/hotel/mx/costa-baja-resort.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Spa", "Private marina"],
+					"access": null
+				},
+				"summary_en": "5-star resort with a gym, spa and private marina. No size, hours or equipment list is published.",
+				"summary_es": "Resort de 5 estrellas con gimnasio, spa y marina privada. No se publican tamaño, horario ni lista de equipos.",
+				"sources": ["https://www.travelmyth.co.uk/La-Paz/Hotels/gym", "https://www.booking.com/fivestars/city/mx/la-paz.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/883154844.jpg?k=d642942d3563da0305490e78dfb504be63c04e745bf8db4ccc001d713439d963&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Araiza Palmira Hotel y Centro de Convenciones",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/araiza-palmira-y-centro-de-convenciones.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "4-star hotel and convention center with a fitness center. No size, hours or equipment list is published.",
+				"summary_es": "Hotel de 4 estrellas con centro de convenciones y gimnasio. No se publican tamaño, horario ni lista de equipos.",
+				"sources": ["https://www.travelmyth.co.uk/La-Paz/Hotels/gym", "https://www.booking.com/fourstars/city/mx/la-paz.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/564349473.jpg?k=686caabcaf466877e118bc420cfff1c548b8f597d8e45b3dfa551eff6d867e31&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "City Express by Marriott La Paz",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/city-express-la-paz.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Outdoor pool"],
+					"access": null
+				},
+				"summary_en": "3-star hotel with a fitness center and an outdoor pool. No further details are published.",
+				"summary_es": "Hotel de 3 estrellas con gimnasio y piscina exterior. No se publican más detalles.",
+				"sources": ["https://www.travelmyth.co.uk/La-Paz/Hotels/gym", "https://www.booking.com/threestars/city/mx/la-paz.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/695327133.jpg?k=64dcca9eb22b62b54a7bb87ca1a3c5dc9beccaa082565848a1579b204503c21e&o=",
+					"gym": false
+				}
+			}
 		}
 	},
 	"la-rochelle-france": {
@@ -33809,6 +35873,70 @@ var G = {
 			"budget": null
 		}
 	},
+	"liepaja-latvia": {
+		"city": "Liepaja",
+		"country": "Latvia",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Only Liepaja hotel gym with both cardio and strength machines listed, free daily from 6:00 to 15:00.",
+		"bestReason_es": "El único gimnasio de hotel en Liepaja con máquinas de cardio y de fuerza publicadas, gratis cada día de 6:00 a 15:00.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Promenade Hotel Liepaja",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/lv/promenade.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "6:00 to 15:00",
+					"equipment": [
+						"Treadmills",
+						"Stationary bikes",
+						"Weight machines"
+					],
+					"extras": ["Free towels and water"],
+					"access": "Free for guests"
+				},
+				"summary_en": "Small gym with treadmills, stationary bikes and weight machines, free to use daily from 6:00 to 15:00. Reviews say it is on the smaller side and could use heavier free weights.",
+				"summary_es": "Gimnasio pequeño con cintas, bicicletas estáticas y máquinas de fuerza, gratuito cada día de 6:00 a 15:00. Las opiniones dicen que es algo pequeño y que faltan pesos libres más pesados.",
+				"sources": ["https://www.travelmyth.co.uk/Liepaja/Hotels/gym", "https://www.priceline.com/hotel-deals/h6045603/LV/Latvia/Liepaja/Promenade-Hotel-Liepaja.html"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/267616709.jpg?k=53379a6dfb8c201d0686e96dfa23168ed6662f3807567c1fd1f98312791e2023&o=",
+					"gym": false
+				}
+			},
+			"standard": null,
+			"budget": {
+				"hotel": "Liva Hotel",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/lv/liva.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "7:00 to 21:00",
+					"equipment": [
+						"Treadmills",
+						"Stationary bikes",
+						"Elliptical trainers"
+					],
+					"extras": ["Sauna"],
+					"access": "Free for guests"
+				},
+				"summary_en": "Small cardio room with treadmills, stationary bikes and ellipticals, open 7:00 to 21:00 and free for guests. Some reviews mention broken equipment.",
+				"summary_es": "Sala pequeña de cardio con cintas, bicicletas estáticas y elípticas, abierta de 7:00 a 21:00 y gratuita para huéspedes. Algunas opiniones mencionan máquinas averiadas.",
+				"sources": ["https://www.travelmyth.co.uk/Liepaja/Hotels/gym", "https://www.booking.com/threestars/city/lv/liepaja.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/213943989.jpg?k=b53d0bb388bf5ed6c1e6957166f6531fa1d9f03b824733f16f2e56ca9cf81d17&o=",
+					"gym": true
+				}
+			}
+		}
+	},
 	"lille-france": {
 		"city": "Lille",
 		"country": "France",
@@ -34305,6 +36433,85 @@ var G = {
 			}
 		}
 	},
+	"luang-prabang-laos": {
+		"city": "Luang Prabang",
+		"country": "Laos",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The only Luang Prabang hotel gym described with cardio machines, strength equipment and free weights, plus a pool.",
+		"bestReason_es": "El único gimnasio de hotel de Luang Prabang descrito con cardio, máquinas de fuerza y pesos libres, además de piscina.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Pullman Luang Prabang",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": null,
+				"website": "https://pullman.accor.com/en/hotels/luang-prabang/9112.html",
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Cardio machines",
+						"Strength equipment",
+						"Free weights"
+					],
+					"extras": ["Swimming pool"],
+					"access": null
+				},
+				"summary_en": "Modern fitness centre with cardio machines, strength equipment and free weights, plus a swimming pool. No size or hours are published.",
+				"summary_es": "Gimnasio moderno con máquinas de cardio, equipos de fuerza y pesos libres, además de piscina. No se publican tamaño ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Luang-Prabang/Hotels/gym", "https://www.travelmyth.co.uk/Luang-Prabang/Hotels/gym-five_star"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Madilao Hotel",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/la/madilao-luangprabang.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Pool"],
+					"access": null
+				},
+				"summary_en": "Guests describe the gym as spacious, pleasant and well maintained, though some would like more variety of equipment. The hotel also has a pool.",
+				"summary_es": "Los huéspedes describen el gimnasio como amplio, agradable y bien cuidado, aunque algunos querrían más variedad de equipos. El hotel tiene también piscina.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Luang-Prabang/Hotels/gym",
+					"https://www.travelmyth.co.uk/Luang-Prabang/Hotels/gym-four_star",
+					"https://sp.booking.com/hotel/la/madilao-luangprabang.html"
+				],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/605017097.jpg?k=fc9735506a965bd556035225e8ce4e4fb72332f74acabd7c3c13266eb739af8c&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Aurora Backpackers Hostel",
+				"stars": null,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Hostel listed with a gym. No size, equipment or hours are published.",
+				"summary_es": "Hostel que figura con gimnasio. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Luang-Prabang/Hotels/gym"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
 	"lubeck-germany": {
 		"city": "Lübeck",
 		"country": "Germany",
@@ -34525,6 +36732,99 @@ var G = {
 			"budget": null
 		}
 	},
+	"luxembourg-city-luxembourg": {
+		"city": "Luxembourg City",
+		"country": "Luxembourg",
+		"checked": "2026-11-02",
+		"best": "budget",
+		"bestReason_en": "Guests can use the gym and Olympic-style diving pool of the national sports centre next door.",
+		"bestReason_es": "Los huéspedes pueden usar el gimnasio y la piscina olímpica de saltos del centro deportivo nacional contiguo.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Le Royal Hotels & Resorts Luxembourg",
+				"stars": 5,
+				"area": "Ville Haute",
+				"bookingUrl": "https://www.booking.com/hotel/lu/royal.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Indoor pool",
+						"Sauna",
+						"Hammam"
+					],
+					"access": null
+				},
+				"summary_en": "Fitness area inside the wellness centre, which has an indoor pool, sauna and hammam. No size or equipment list is published.",
+				"summary_es": "Zona de fitness dentro del centro de bienestar, con piscina cubierta, sauna y hammam. No se publican tamaño ni equipamiento.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Luxembourg/Hotels/gym",
+					"https://www.hotelgyms.com/hotels/lu/luxembourg/hotel-le-royal/19509",
+					"https://www.booking.com/fivestars/city/lu/luxembourg.html"
+				],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/931936480.jpg?k=4a7335fda62461f9986380cffb6b1666740b25e877b55b2d3a6232c814c27c79&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Parc Hotel Alvisse",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/lu/alvisseparc.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Cardio machines"],
+					"extras": [
+						"Pools",
+						"Spa",
+						"Tennis courts"
+					],
+					"access": null
+				},
+				"summary_en": "Fitness centre with a good cardio range, plus pools, a spa and tennis courts. Reviews are mixed: some find it spacious, others dated, short on dumbbells and closing early.",
+				"summary_es": "Gimnasio con buena variedad de cardio, además de piscinas, spa y pistas de tenis. Opiniones mixtas: unos lo ven amplio y otros anticuado, con pocas mancuernas y cierre temprano.",
+				"sources": ["https://www.travelmyth.co.uk/Luxembourg/Hotels/gym", "https://www.booking.com/fourstars/city/lu/luxembourg.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/482939579.jpg?k=8c952dfbf8ac8eb74b79bc42839eb4bb71194f8b4a1a1c802e64115a86d91939&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Coque Hotel",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/lu/d-coque.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Olympic-style diving pool",
+						"Spa",
+						"Sports centre"
+					],
+					"access": "Extra charge"
+				},
+				"summary_en": "Guests use the gym and pool of the national sports and culture centre, with an Olympic-style diving pool and spa, for an extra charge. Reviews call the gym basic and sometimes busy, with long hours.",
+				"summary_es": "Los huéspedes usan el gimnasio y la piscina del centro nacional de deporte y cultura, con piscina olímpica de saltos y spa, pagando aparte. Las opiniones lo ven básico, a veces lleno y con horario amplio.",
+				"sources": ["https://www.travelmyth.co.uk/Luxembourg/Hotels/gym", "https://www.booking.com/threestars/city/lu/luxembourg.html"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/746159433.jpg?k=0af1f6e7e7cb0fca5cac48b02f46b4e9707bf3b05bdc61d68670e1a8e2477fc8&o=",
+					"gym": true
+				}
+			}
+		}
+	},
 	"luxor-egypt": {
 		"city": "Luxor",
 		"country": "Egypt",
@@ -34640,6 +36940,62 @@ var G = {
 				"confidence": "low",
 				"photo": null
 			}
+		}
+	},
+	"macao-macao": {
+		"city": "Macao",
+		"country": "Macao",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Guests describe the gym as fairly large and one of the best they have used, with new machines and classes.",
+		"bestReason_es": "Los huéspedes lo describen como bastante grande y de los mejores que han usado, con máquinas nuevas y clases.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "W Macau - Studio City",
+				"stars": 5,
+				"area": "Studio City",
+				"bookingUrl": "https://www.booking.com/hotel/mo/w-macau-studio-city.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["New machines"],
+					"extras": ["Fitness classes", "Personal training"],
+					"access": null
+				},
+				"summary_en": "Modern gym with new machines, fitness classes and personal training. Reviews call it fairly large and one of the best hotel gyms they have used.",
+				"summary_es": "Gimnasio moderno con máquinas nuevas, clases y entrenamiento personal. Las opiniones lo describen bastante grande y de los mejores de hotel que han usado.",
+				"sources": ["https://www.travelmyth.co.uk/Macau/Hotels/gym", "https://www.booking.com/fivestars/city/mo/macau.html"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/489738353.jpg?k=44eccbf4154f4c9e98bcf347b688fc2f8c7f26867e021ceadcf50c2bb7ec9c2f&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Harbourview Hotel Macau",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mo/harbourview-macau.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Cardio machines", "Strength equipment"],
+					"extras": ["Indoor pool"],
+					"access": null
+				},
+				"summary_en": "Gym with cardio and strength equipment and an indoor pool. Reviews say it has a good variety of machines but is not very large.",
+				"summary_es": "Gimnasio con cardio y fuerza y piscina cubierta. Las opiniones dicen que tiene buena variedad de máquinas pero no es muy grande.",
+				"sources": ["https://www.travelmyth.co.uk/Macau/Hotels/gym", "https://www.booking.com/fourstars/city/mo/macau.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/238512763.jpg?k=4003de938520c93a91f9da993ef973dc3aa4e69b50647a5295bab48b700a6571&o=",
+					"gym": true
+				}
+			},
+			"budget": null
 		}
 	},
 	"madrid-spain": {
@@ -34906,6 +37262,66 @@ var G = {
 			"budget": null
 		}
 	},
+	"male-maldives": {
+		"city": "Malé",
+		"country": "Maldives",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The only Malé city hotel gym listed with both cardio machines and weights.",
+		"bestReason_es": "El único gimnasio de hotel en la ciudad de Malé publicado con máquinas de cardio y pesas.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Maagiri Hotel",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mv/maagiri.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Cardio machines", "Weights"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Gym listed as fully equipped with cardio machines and weights. No size, hours or guest reviews of the gym are published.",
+				"summary_es": "Gimnasio publicado como completo, con máquinas de cardio y pesas. No hay tamaño, horario ni opiniones sobre el gimnasio.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Male/Hotels/gym",
+					"https://www.hotelgyms.com/hotels/mv/male-city/maagiri-hotel/2841122",
+					"https://www.booking.com/fourstars/city/mv/male.html"
+				],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/734825109.jpg?k=aa99e5bf3f3fee670433b33c306f28b7a1d0327a3fccbd6208ee494de73e1862&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "The Somerset Hotel",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mv/the-somerset-male.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Fitness classes"],
+					"access": null
+				},
+				"summary_en": "Fitness centre with fitness classes on site. No size or equipment list is published.",
+				"summary_es": "Gimnasio con clases de fitness en el hotel. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.travelmyth.co.uk/Male/Hotels/gym", "https://www.booking.com/fourstars/city/mv/male.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/771054031.jpg?k=72f7f1ec61fd22506aaafb5a79fede76a372cc86bad38ff3b6dcacf631c051b1&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
 	"manama-bahrain": {
 		"city": "Manama",
 		"country": "Bahrain",
@@ -35105,6 +37521,124 @@ var G = {
 			},
 			"standard": null,
 			"budget": null
+		}
+	},
+	"matsuyama-japan": {
+		"city": "Matsuyama",
+		"country": "Japan",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "ANA Crowne Plaza Matsuyama has a 24-hour gym with 8 cardio machines and dumbbells up to 22.5 kg.",
+		"bestReason_es": "ANA Crowne Plaza Matsuyama tiene gimnasio 24 horas con 8 máquinas de cardio y mancuernas de hasta 22,5 kg.",
+		"luxuryNote": "No 5-star hotel with a confirmed gym found in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "ANA Crowne Plaza Matsuyama",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/jp/ana-matsuyama.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"8 cardio machines",
+						"Free weights up to 10 kg",
+						"Adjustable dumbbell up to 22.5 kg",
+						"Other machines",
+						"Open space"
+					],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "24-hour gym with 8 cardio machines, free weights up to 10 kg and an adjustable dumbbell up to 22.5 kg, plus other machines and open space.",
+				"summary_es": "Gimnasio abierto 24 horas con 8 máquinas de cardio, pesas libres de hasta 10 kg y una mancuerna ajustable de hasta 22,5 kg, además de otras máquinas y espacio libre.",
+				"sources": ["https://www.travelmyth.co.uk/Matsuyama/Hotels/gym", "https://www.travelmyth.co.uk/Matsuyama/Hotels/gym-four_star"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/335179831.jpg?k=a4e541b3744510112ccccf75e89845b834b6b9e9476957b33d84a41ac876badb&o=",
+					"gym": false
+				}
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
+	"mazatlan-mexico": {
+		"city": "Mazatlan",
+		"country": "Mexico",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The only 5-star gym in Mazatlan described with modern equipment; other 5-star gyms are reported as small and basic.",
+		"bestReason_es": "El único gimnasio de 5 estrellas en Mazatlán descrito con equipamiento moderno; los demás se describen como pequeños y básicos.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Courtyard by Marriott Mazatlan Beach Resort",
+				"stars": 5,
+				"area": "Playa Camarón",
+				"bookingUrl": "https://www.booking.com/hotel/mx/courtyard-by-marriott-mazatlan-beach-resort.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Modern equipment"],
+					"extras": ["Outdoor pool"],
+					"access": null
+				},
+				"summary_en": "Beach resort with a fitness center described as having modern equipment, plus an outdoor pool. No size or equipment list is published.",
+				"summary_es": "Resort de playa con gimnasio descrito con equipamiento moderno y piscina exterior. No se publican tamaño ni lista de equipos.",
+				"sources": ["https://www.travelmyth.co.uk/Mazatlan/Hotels/gym", "https://www.booking.com/fivestars/city/mx/mazatlan.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/448678567.jpg?k=89785ebd575963e50fc817caa715409ad1563210f5a0d4132c2655c7f39728d2&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Fiesta Inn Mazatlán",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/fiesta-inn-mazatlan-mazatlan.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "4-star hotel with a gym described as fully equipped. No size, hours or equipment list is published.",
+				"summary_es": "Hotel de 4 estrellas con un gimnasio descrito como totalmente equipado. No se publican tamaño, horario ni lista de equipos.",
+				"sources": ["https://www.travelmyth.co.uk/Mazatlan/Hotels/gym", "https://www.booking.com/fourstars/city/mx/mazatlan.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/529119168.jpg?k=52b89bec571fd2743fe09db37e4a6fe8a833dd10ab27b4f9566a94e57b6ce397&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Holiday Inn Express & Suites Mazatlan by IHG",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/holiday-inn-express-suites-mazatlan-an-ihg.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "3-star hotel whose Booking listing mentions a fitness center. No further details are published.",
+				"summary_es": "Hotel de 3 estrellas cuya ficha en Booking menciona un gimnasio. No se publican más detalles.",
+				"sources": ["https://www.booking.com/threestars/city/mx/mazatlan.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/885849196.jpg?k=0de5cbca733607f1697268872d5ceacd167df4675462b8ddec5438cb505db630&o=",
+					"gym": false
+				}
+			}
 		}
 	},
 	"mechelen-belgium": {
@@ -35421,6 +37955,88 @@ var G = {
 			"budget": null
 		}
 	},
+	"merida-mexico": {
+		"city": "Mérida",
+		"country": "Mexico",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Hotel Victoria Merida lists a 24/7 gym with cardio machines, weightlifting equipment and a stretching and yoga space.",
+		"bestReason_es": "El Hotel Victoria Merida tiene gimnasio 24/7 con máquinas de cardio, equipo de pesas y espacio para estiramientos y yoga.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hotel Victoria Merida",
+				"stars": 5,
+				"area": "Paseo de Montejo",
+				"bookingUrl": "https://www.booking.com/hotel/mx/victoria-merida.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Modern cardio machines", "Weightlifting equipment"],
+					"extras": ["Stretching and yoga space"],
+					"access": null
+				},
+				"summary_en": "Gym open 24/7 with modern cardio machines, weightlifting equipment and a space for stretching and yoga. The description is generated by the listing site, not by guests.",
+				"summary_es": "Gimnasio abierto 24/7 con máquinas de cardio modernas, equipo de pesas y un espacio para estiramientos y yoga. La descripción viene del portal, no de huéspedes.",
+				"sources": ["https://www.travelmyth.co.uk/Merida/Hotels/gym", "https://www.travelmyth.co.uk/Merida/Hotels/gym-five_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/378075633.jpg?k=e1a1b69fe507f7362f8416879d35eb03d86e040cea7ddc37b6b6a09372c753ae&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Youssef Exceptionnel Merida",
+				"stars": 4,
+				"area": "Centro, near the US consulate",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Guests describe the gym as well-equipped, though they say cleanliness and opening hours could be better.",
+				"summary_es": "Los huéspedes describen el gimnasio como bien equipado, aunque dicen que la limpieza y el horario podrían mejorar.",
+				"sources": ["https://www.travelmyth.co.uk/Merida/Hotels/gym-four_star"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": {
+				"hotel": "Residence Inn by Marriott Merida",
+				"stars": 3,
+				"area": "Near the Maya Museum and convention center",
+				"bookingUrl": "https://www.booking.com/hotel/mx/residence-inn-merida.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Treadmills",
+						"Ellipticals",
+						"Free weights"
+					],
+					"extras": ["City views"],
+					"access": null
+				},
+				"summary_en": "Gym with treadmills, ellipticals and free weights, with city views. Guests describe the equipment as basic.",
+				"summary_es": "Gimnasio con cintas, elípticas y peso libre, con vistas a la ciudad. Los huéspedes describen el equipamiento como básico.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Merida/Hotels/gym",
+					"https://www.travelmyth.co.uk/Merida/Hotels/gym-three_star",
+					"https://sp.booking.com/hotel/mx/residence-inn-merida.html"
+				],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/703498988.jpg?k=03d1397e7675e2e8960173270195b715ce76d12d22ea7d68e7b2b3eaea1ae2fd&o=",
+					"gym": false
+				}
+			}
+		}
+	},
 	"messina-italy": {
 		"city": "Messina",
 		"country": "Italy",
@@ -35499,6 +38115,80 @@ var G = {
 					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/193288974.jpg?k=74e47d778f926ef21409d3ec91f34f2d4a7c8a28dc4092f9d541f0631291c699&o=",
 					"gym": true
 				}
+			}
+		}
+	},
+	"mexico-city-mexico": {
+		"city": "Mexico City",
+		"country": "Mexico",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Guest reviews describe the Hyatt Regency gym as top quality with big, modern machines.",
+		"bestReason_es": "Las opiniones describen el gimnasio del Hyatt Regency como de primer nivel, con máquinas grandes y modernas.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hyatt Regency Mexico City",
+				"stars": 5,
+				"area": "Polanco",
+				"bookingUrl": "https://www.booking.com/hotel/mx/hyatt-regency-mexico-city.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Big, modern machines"],
+					"extras": ["Spa"],
+					"access": null
+				},
+				"summary_en": "Guest review summaries call the gym and spa top quality, with big, modern machines. No size, hours or equipment list is published.",
+				"summary_es": "Los resúmenes de opiniones califican el gimnasio y el spa como de primer nivel, con máquinas grandes y modernas. No se publican tamaño, horario ni lista de equipos.",
+				"sources": ["https://www.travelmyth.co.uk/Mexico-City/Hotels/gym-five_star", "https://m.booking.com/hotel/mx/hyatt-regency-mexico-city.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/599208782.jpg?k=0695ef9052cfe4274b3923811c5b9ea70d8ce7dd01e31d850d4341d39620683e&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "DoubleTree by Hilton Mexico City Santa Fe",
+				"stars": 4,
+				"area": "Santa Fe",
+				"bookingUrl": "https://www.booking.com/hotel/mx/doubletree-by-hilton-mexico-city.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Complete range of equipment"],
+					"extras": ["Indoor pool"],
+					"access": null
+				},
+				"summary_en": "Gym open 24 hours that guests describe as well maintained, with a complete range of equipment. There is an indoor pool kept at a comfortable temperature.",
+				"summary_es": "Gimnasio abierto 24 horas que los huéspedes describen como bien cuidado y con equipamiento completo. Tiene piscina cubierta a temperatura agradable.",
+				"sources": ["https://www.travelmyth.co.uk/Mexico-City/Hotels/gym-four_star"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/928458619.jpg?k=490c59487ff62bef14990f94069807e46f7e38a40980891729d694e9e9e8b778&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "VOS Centro",
+				"stars": 3,
+				"area": "Centro Histórico",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Small gym near the Zócalo that guests describe as well-equipped and clean, enough for basic workouts. Some minor issues are noted.",
+				"summary_es": "Gimnasio pequeño cerca del Zócalo que los huéspedes describen como bien equipado y limpio, suficiente para entrenar lo básico. Se mencionan algunos fallos menores.",
+				"sources": ["https://www.travelmyth.co.uk/Mexico-City/Hotels/gym-three_star"],
+				"confidence": "low",
+				"photo": null
 			}
 		}
 	},
@@ -35644,6 +38334,59 @@ var G = {
 				"confidence": "low",
 				"photo": {
 					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/265612971.jpg?k=e0f96c0777f241ed53087c576efd84deab62453ad2e6eb29b2bc77c679fca7d4&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
+	"miyazaki-japan": {
+		"city": "Miyazaki",
+		"country": "Japan",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Phoenix Seagaia Ocean Tower is the only Miyazaki hotel described with a fitness center offering a range of equipment and classes.",
+		"bestReason_es": "Phoenix Seagaia Ocean Tower es el único hotel de Miyazaki descrito con gimnasio con variedad de equipamiento y clases.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Phoenix Seagaia Ocean Tower",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Range of equipment"],
+					"extras": ["Fitness classes"],
+					"access": null
+				},
+				"summary_en": "Resort tower with a fitness center offering a range of equipment and fitness classes. No size or hours are published.",
+				"summary_es": "Torre de resort con gimnasio con variedad de equipamiento y clases de fitness. No se publican tamaño ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Miyazaki/Hotels/gym", "https://www.travelmyth.co.uk/Miyazaki/Hotels/gym-five_star"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "ANA Holiday Inn Resort Miyazaki",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/jp/ana-holiday-inn-resort-miyazaki.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Resort hotel listed with a gym. No details on size, equipment or hours are published.",
+				"summary_es": "Hotel resort que figura con gimnasio. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Miyazaki/Hotels/gym", "https://www.travelmyth.co.uk/Miyazaki/Hotels/gym-four_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/552229001.jpg?k=00d07abc2abdc117323c4fed78347c2234965a4ff3ce628618e042fb20870760&o=",
 					"gym": true
 				}
 			},
@@ -35799,6 +38542,87 @@ var G = {
 			"budget": null
 		}
 	},
+	"mombasa-kenya": {
+		"city": "Mombasa",
+		"country": "Kenya",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The most complete published equipment list in Mombasa, with free weights, a multi-gym, rowers and treadmills, plus five pools.",
+		"bestReason_es": "La lista de equipamiento más completa publicada en Mombasa, con pesos libres, multiestación, remos y cintas, además de cinco piscinas.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Sarova Whitesands Beach Resort & Spa",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/ke/sarova-whitesands-beach-resort-amp-spa.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Cross trainers",
+						"Exercise bikes",
+						"Free weights",
+						"Multi-gym",
+						"Rowing machines",
+						"Treadmills"
+					],
+					"extras": ["5 pools", "Spa"],
+					"access": null
+				},
+				"summary_en": "Beach resort gym with cross trainers, exercise bikes, free weights, a multi-gym, rowing machines and treadmills. The resort has five pools and a spa.",
+				"summary_es": "Gimnasio de resort de playa con elípticas, bicicletas, pesos libres, multiestación, remos y cintas. El resort tiene cinco piscinas y spa.",
+				"sources": ["https://www.travelmyth.co.uk/Mombasa/Hotels/gym", "https://www.booking.com/fivestars/city/ke/mombasa.html"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/102632664.jpg?k=f3b34acf20b7f39d6eb1945b5627bfdac2de3499a8fee32c990c5179e8486fd2&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "PrideInn Flamingo Beach Resort & Spa Mombasa",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/ke/flamingo-beach-resort-and-spa.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Spa", "Lagoon-shaped pool"],
+					"access": null
+				},
+				"summary_en": "Beach resort described as having a well-equipped gym, a spa and a lagoon-shaped pool. No size or equipment list is published.",
+				"summary_es": "Resort de playa con un gimnasio descrito como bien equipado, spa y piscina en forma de laguna. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.travelmyth.co.uk/Mombasa/Hotels/gym", "https://www.booking.com/fourstars/city/ke/mombasa.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/912259706.jpg?k=15bb4618465eb069288bd8c6071d00337c3041c146c97f7cf2e351205cc3ae6f&o=",
+					"gym": false
+				}
+			},
+			"budget": {
+				"hotel": "Tulia House",
+				"stars": null,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Hostel listed with a gym. No size, equipment or hours are published.",
+				"summary_es": "Hostel que figura con gimnasio. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Mombasa/Hotels/gym"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
 	"monopoli-italy": {
 		"city": "Monopoli",
 		"country": "Italy",
@@ -35892,6 +38716,81 @@ var G = {
 				}
 			},
 			"budget": null
+		}
+	},
+	"monterrey-mexico": {
+		"city": "Monterrey",
+		"country": "Mexico",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Guests call the Galeria Plaza gym very complete, with a wide range of equipment and a strong cardio area.",
+		"bestReason_es": "Los huéspedes describen el gimnasio del Galeria Plaza como muy completo, con mucha variedad de equipos y buena zona de cardio.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Galeria Plaza Monterrey",
+				"stars": 5,
+				"area": "Centro, near the US consulate",
+				"bookingUrl": "https://www.booking.com/hotel/mx/galeria-plaza-monterrey.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Wide variety of equipment",
+						"Cardio area",
+						"Upper-body equipment"
+					],
+					"extras": ["Pool with city views"],
+					"access": null
+				},
+				"summary_en": "New gym that guest reviews call very complete, with a wide variety of equipment, a strong cardio area and good upper-body options. The pool is chilly but has city views.",
+				"summary_es": "Gimnasio nuevo que las opiniones describen como muy completo, con gran variedad de equipos, buena zona de cardio y opciones para tren superior. La piscina es fría pero tiene vistas a la ciudad.",
+				"sources": ["https://www.travelmyth.co.uk/Monterrey/Hotels/gym", "https://www.travelmyth.co.uk/Monterrey/Hotels/gym-five_star"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/480340850.jpg?k=fad1f7c7a608354693185f13cb5e8015a28290d772125158005aabe66e3003c3&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Fiesta Inn Monterrey Tecnologico",
+				"stars": 4,
+				"area": "Tecnológico",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Rooftop pool", "Jacuzzi"],
+					"access": null
+				},
+				"summary_en": "Guests describe the gym as well equipped and recommend it, with minor maintenance complaints. The hotel also has a rooftop pool and jacuzzi.",
+				"summary_es": "Los huéspedes describen el gimnasio como bien equipado y lo recomiendan, con alguna queja menor de mantenimiento. El hotel tiene piscina en la azotea y jacuzzi.",
+				"sources": ["https://www.travelmyth.co.uk/Monterrey/Hotels/gym-four_star"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": {
+				"hotel": "Hilton Garden Inn Monterrey Obispado",
+				"stars": 3,
+				"area": "Obispado",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Listed with a gym, but no details on size or equipment are published.",
+				"summary_es": "Aparece con gimnasio, pero no se publican datos de tamaño ni equipamiento.",
+				"sources": ["https://www.travelmyth.co.uk/Monterrey/Hotels/gym-three_star"],
+				"confidence": "low",
+				"photo": null
+			}
 		}
 	},
 	"montpellier-france": {
@@ -35999,6 +38898,83 @@ var G = {
 				"photo": null
 			},
 			"budget": null
+		}
+	},
+	"morelia-mexico": {
+		"city": "Morelia",
+		"country": "Mexico",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Mansión Solis has the only detailed gym listing in Morelia: open 24/7 with cardio, dumbbells, kettlebells and a Pilates area.",
+		"bestReason_es": "Mansión Solis tiene el único gimnasio con datos detallados en Morelia: abierto 24/7 con cardio, mancuernas, kettlebells y zona de Pilates.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "HOTEL & SPA MANSION SOLIS by HOTSSON",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/mansion-solis-amp-spa-by-hotsson.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [
+						"Treadmills",
+						"Elliptical machines",
+						"Weight bench",
+						"Dumbbells",
+						"Kettlebells"
+					],
+					"extras": ["Pilates area", "Spa"],
+					"access": "Gymnasium Motívate"
+				},
+				"summary_en": "The Gymnasium Motívate is open 24/7 with treadmills, elliptical machines, a weight bench, dumbbells, kettlebells and a Pilates area. No size or maximum weight is published.",
+				"summary_es": "El Gymnasium Motívate abre 24/7 con cintas, elípticas, banco de pesas, mancuernas, kettlebells y zona de Pilates. No se publica tamaño ni peso máximo.",
+				"sources": ["https://www.travelmyth.co.uk/Morelia/Hotels/gym", "https://www.travelmyth.co.uk/Morelia/Hotels/gym-five_star"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/285567085.jpg?k=70cc80b0e9111018d1ae0edbe463e396e4bc4e367a818669b5dd43980bd6dd1f&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Fiesta Inn Morelia Altozano",
+				"stars": 4,
+				"area": "Altozano",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Pool"],
+					"access": null
+				},
+				"summary_en": "Guests appreciate the pool and gym, especially for their views. No equipment details are published.",
+				"summary_es": "Los huéspedes valoran la piscina y el gimnasio, sobre todo por las vistas. No se publican detalles del equipamiento.",
+				"sources": ["https://www.travelmyth.co.uk/Morelia/Hotels/gym-four_star"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": {
+				"hotel": "One Morelia Acueducto",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Listed with a gym, but no details on size or equipment are published.",
+				"summary_es": "Aparece con gimnasio, pero no se publican datos de tamaño ni equipamiento.",
+				"sources": ["https://www.travelmyth.co.uk/Morelia/Hotels/gym-three_star"],
+				"confidence": "low",
+				"photo": null
+			}
 		}
 	},
 	"mulhouse-france": {
@@ -36242,6 +39218,82 @@ var G = {
 			"budget": null
 		}
 	},
+	"muscat-oman": {
+		"city": "Muscat",
+		"country": "Oman",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A 700 m2 health club, the largest published gym size among Muscat hotels.",
+		"bestReason_es": "Club de salud de 700 m2, el mayor tamaño de gimnasio publicado entre los hoteles de Mascate.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "The Chedi Muscat",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/om/the-chedi-muscat.html",
+				"website": "https://www.ghmhotels.com/en/muscat/",
+				"gym": {
+					"sizeM2": 700,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Spa", "Sauna"],
+					"access": null
+				},
+				"summary_en": "A 700 m2 health club at a beachfront resort, the largest gym size published for a Muscat hotel. HotelGyms rates it Okay and lists no equipment details.",
+				"summary_es": "Club de salud de 700 m2 en un resort frente a la playa, el gimnasio de mayor tamaño publicado entre los hoteles de Mascate. HotelGyms lo califica como correcto y no detalla el equipamiento.",
+				"sources": ["https://www.hotelgyms.com/hotels/om/muscat/the-chedi-muscat/254839", "https://www.travelmyth.co.uk/Muscat/Hotels/gym"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Royal Tulip Muscat",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/om/royal-tulip-muscat.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Free weights",
+						"Ellipticals",
+						"Exercise bikes",
+						"Indoor cycles",
+						"Rowers",
+						"Steppers",
+						"Treadmills"
+					],
+					"extras": ["Panoramic views"],
+					"access": null
+				},
+				"summary_en": "Urban health club with ellipticals, bikes, free weights, indoor cycles, rowers, steppers and treadmills. Reviews praise the space, cleanliness and views, with minor complaints about a few missing machines.",
+				"summary_es": "Club de salud Urban con elípticas, bicicletas, peso libre, bicis de spinning, remos, steppers y cintas. Las opiniones destacan el espacio, la limpieza y las vistas, con alguna queja menor por máquinas que faltan.",
+				"sources": ["https://www.travelmyth.co.uk/Muscat/Hotels/gym", "https://www.booking.com/fourstars/city/om/muscat.html"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"budget": {
+				"hotel": "Haffa House Hotel - Experience the Local Hospitality",
+				"stars": 3,
+				"area": "Ruwi",
+				"bookingUrl": "https://www.booking.com/hotel/om/haffa-house-ruwi.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Guests describe the gym as well equipped and useful for keeping a routine. Some reviews mention minor maintenance needs.",
+				"summary_es": "Los huéspedes describen el gimnasio como bien equipado y útil para mantener la rutina. Algunas opiniones mencionan pequeños problemas de mantenimiento.",
+				"sources": ["https://www.travelmyth.co.uk/Muscat/Hotels/gym-three_star", "https://www.booking.com/threestars/city/om/muscat.html"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
 	"nadi-fiji": {
 		"city": "Nadi",
 		"country": "Fiji",
@@ -36351,6 +39403,283 @@ var G = {
 			},
 			"standard": null,
 			"budget": null
+		}
+	},
+	"nagasaki-japan": {
+		"city": "Nagasaki",
+		"country": "Japan",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Nagasaki Marriott Hotel has a modern, well-equipped fitness center open 24 hours.",
+		"bestReason_es": "Nagasaki Marriott Hotel tiene un gimnasio moderno y bien equipado abierto 24 horas.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Nagasaki Marriott Hotel",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/jp/nagasaki-marriott.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Modern equipment"],
+					"extras": [],
+					"access": "Hotel guests"
+				},
+				"summary_en": "Modern, well-equipped fitness center open 24 hours for hotel guests. No size or equipment list is published.",
+				"summary_es": "Gimnasio moderno y bien equipado, abierto 24 horas para los huéspedes. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.travelmyth.co.uk/Nagasaki/Hotels/gym", "https://www.travelmyth.co.uk/Nagasaki/Hotels/gym-five_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/522250889.jpg?k=9475a7df41a4b3161b77a11db9b5e6d0cdb12d83d9e65d57637f2217435aa44f&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Garden Terrace Nagasaki Hotels & Resorts",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/jp/garden-terrace-nagasaki.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Sauna", "Steam room"],
+					"access": null
+				},
+				"summary_en": "Resort hotel with a gym, a sauna and a steam room. No size or equipment list is published.",
+				"summary_es": "Hotel resort con gimnasio, sauna y baño de vapor. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.travelmyth.co.uk/Nagasaki/Hotels/gym", "https://www.travelmyth.co.uk/Nagasaki/Hotels/gym-four_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/453082775.jpg?k=b2f4ad135e25e21734a86c088a2d0f9084465b4a6e58a9e3089318c9592e5fd4&o=",
+					"gym": false
+				}
+			},
+			"budget": null
+		}
+	},
+	"nagoya-japan": {
+		"city": "Nagoya",
+		"country": "Japan",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Guests describe the Hilton Nagoya gym as well equipped with state-of-the-art equipment, the strongest gym feedback among Nagoya hotels.",
+		"bestReason_es": "Los huéspedes describen el gimnasio del Hilton Nagoya como bien equipado y con máquinas de última generación, la mejor valoración entre los hoteles de Nagoya.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hilton Nagoya",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/jp/hilton-nagoya.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["State-of-the-art equipment"],
+					"extras": [],
+					"access": "Free for guests"
+				},
+				"summary_en": "Gym described by guests as well equipped with state-of-the-art equipment and open to all hotel guests. No size or hours are published.",
+				"summary_es": "Gimnasio que los huéspedes describen como bien equipado, con máquinas de última generación y abierto a todos los huéspedes. No se publican tamaño ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Nagoya/Hotels/gym-five_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/927050223.jpg?k=ad5d5c857fd26938e76a1c7218e9f0f4ff69243dda72f7d7c452b24414b0afca&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "The Royal Park Hotel Iconic Nagoya",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/jp/the-royal-park-iconic-nagoya.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Sauna"],
+					"access": null
+				},
+				"summary_en": "Hotel whose gym and sauna are well received by guests. No size or equipment list is published.",
+				"summary_es": "Hotel cuyo gimnasio y sauna reciben buenas opiniones. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.travelmyth.co.uk/Nagoya/Hotels/gym-four_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/532160206.jpg?k=f83b221e0ed108ee787de7a625f1efb024b53fbfa871dd41886d3f461d46888a&o=",
+					"gym": false
+				}
+			},
+			"budget": {
+				"hotel": "APA Hotel Nagoya Sakae Ekimae EXCELLENT",
+				"stars": 3,
+				"area": "Sakae",
+				"bookingUrl": "https://www.booking.com/hotel/jp/apa-nagoya.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Sakae hotel listed with a gym. No details on size, equipment or hours are published.",
+				"summary_es": "Hotel en Sakae que figura con gimnasio. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Nagoya/Hotels/gym-three_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/483008865.jpg?k=063a51ace5e89dc15f756074381f1aa5ac9e98dca1ee7ce80d6e3f926b590518&o=",
+					"gym": true
+				}
+			}
+		}
+	},
+	"naha-japan": {
+		"city": "Naha",
+		"country": "Japan",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Gym that reviewers call well-planned, with an infinity pool and spa in the same hotel.",
+		"bestReason_es": "Gimnasio que las opiniones describen como bien pensado, con piscina infinita y spa en el mismo hotel.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hotel Collective",
+				"stars": 5,
+				"area": "Kokusai Street",
+				"bookingUrl": "https://www.booking.com/hotel/jp/hoterukorekuteibu-na-ba-shi.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Infinity pool", "Spa"],
+					"access": null
+				},
+				"summary_en": "Gym described in reviews as well-planned, alongside an infinity pool and spa. No size or equipment list is published.",
+				"summary_es": "Gimnasio que las opiniones describen como bien pensado, junto a una piscina infinita y spa. No se publican tamaño ni equipos.",
+				"sources": ["https://www.travelmyth.co.uk/Naha/Hotels/gym-five_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/284225371.jpg?k=dee6d412312156311b109918e81f5bbd8872a55db3fe3af2eac3b0efa8d41a66&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "HOTEL STRATA NAHA",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Outdoor pool"],
+					"access": null
+				},
+				"summary_en": "Small gym that reviewers describe as well-equipped and functional, with good-quality equipment. The hotel has an outdoor pool.",
+				"summary_es": "Gimnasio pequeño que las opiniones describen como bien equipado y funcional, con equipos de calidad. El hotel tiene piscina exterior.",
+				"sources": ["https://www.travelmyth.co.uk/Naha/Hotels/gym-four_star"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"nairobi-kenya": {
+		"city": "Nairobi",
+		"country": "Kenya",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Technogym cardio and strength equipment, a specialist yoga studio and personal trainers.",
+		"bestReason_es": "Equipamiento Technogym de cardio y fuerza, sala de yoga especializada y entrenadores personales.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Villa Rosa Kempinski",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/ke/villa-rosa-kempinski.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Technogym cardio equipment", "Technogym strength equipment"],
+					"extras": ["Yoga studio", "Personal trainers"],
+					"access": null
+				},
+				"summary_en": "Gym with Technogym cardio and strength equipment, a specialist yoga studio and personal trainers. No size or hours are published.",
+				"summary_es": "Gimnasio con equipamiento Technogym de cardio y fuerza, sala de yoga especializada y entrenadores personales. No se publican tamaño ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Nairobi/Hotels/gym", "https://www.booking.com/fivestars/city/ke/nairobi.html"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/922079793.jpg?k=100f09baf3629f3fcb3076502acf2eeca991af92e3d788c770842c1b0fc4ebbd&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "PrideInn Azure Hotel Nairobi Westlands",
+				"stars": 4,
+				"area": "Westlands",
+				"bookingUrl": "https://www.booking.com/hotel/ke/royal-orchid-azure-nairobi.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Outdoor courtyard"],
+					"access": null
+				},
+				"summary_en": "Reviews call the gym spacious and well equipped, with an outdoor courtyard and friendly staff. Some guests would like more variety of machines.",
+				"summary_es": "Las opiniones describen el gimnasio como amplio y bien equipado, con patio exterior y personal amable. Algunos huéspedes echan en falta más variedad de máquinas.",
+				"sources": ["https://www.travelmyth.co.uk/Nairobi/Hotels/gym", "https://www.booking.com/fourstars/city/ke/nairobi.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/332295702.jpg?k=af5c86a89a2154c2c03158657e123a832c646cc36aea3e87e420b8ec03d44d71&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Jacaranda Hotel Nairobi",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/ke/jacaranda-nairobi.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "06:00-20:00",
+					"equipment": [
+						"Life Fitness machines",
+						"Technogym machines",
+						"Resistance bands",
+						"Balance trainers"
+					],
+					"extras": [
+						"Studio for Zumba, Spin and Aerobics",
+						"Heated pool",
+						"Spa"
+					],
+					"access": "Free for guests"
+				},
+				"summary_en": "Health club with Life Fitness and Technogym machines, large windows and a studio for Zumba, spin and aerobics, free for guests from 06:00 to 20:00. A 2024 review says some equipment is dated and not all bikes work.",
+				"summary_es": "Club de salud con máquinas Life Fitness y Technogym, grandes ventanales y sala para zumba, spinning y aeróbic, gratuito de 06:00 a 20:00. Una opinión de 2024 dice que parte del equipo está anticuado y no todas las bicis funcionan.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Nairobi/Hotels/gym",
+					"https://www.travelmyth.co.uk/Nairobi/Hotels/gym-three_star",
+					"https://uk.hotels.com/ho228469/jacaranda-nairobi-hotel-nairobi-kenya",
+					"https://www.booking.com/hotel/ke/jacaranda-nairobi.ms.html"
+				],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/129451448.jpg?k=9e4848c078e506c0df7db27d014c635ad316b2ce098539495ffcf2ccb7eaf1b2&o=",
+					"gym": true
+				}
+			}
 		}
 	},
 	"nancy-france": {
@@ -36619,6 +39948,41 @@ var G = {
 					"gym": true
 				}
 			}
+		}
+	},
+	"nara-japan": {
+		"city": "Nara",
+		"country": "Japan",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The top-rated luxury hotel in Nara listed with a gym.",
+		"bestReason_es": "El hotel de lujo mejor valorado de Nara que figura con gimnasio.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "JW Marriott Hotel Nara",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/jp/jw-marriott-nara.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Luxury hotel listed with a gym. No details on size, equipment or hours are published.",
+				"summary_es": "Hotel de lujo que figura con gimnasio. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Nara/Hotels/gym", "https://www.travelmyth.co.uk/Nara/Hotels/gym-five_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/526273107.jpg?k=4138896661df8c9f43ffcdbd30d9ac5c16b1efe3fe77abbeef22765e0704c9d0&o=",
+					"gym": false
+				}
+			},
+			"standard": null,
+			"budget": null
 		}
 	},
 	"narbonne-france": {
@@ -37763,6 +41127,38 @@ var G = {
 			"budget": null
 		}
 	},
+	"okayama-japan": {
+		"city": "Okayama",
+		"country": "Japan",
+		"checked": "2026-11-02",
+		"best": "budget",
+		"bestReason_en": "The only Okayama hotel gym with reviews describing machines and weights.",
+		"bestReason_es": "El único gimnasio de hotel en Okayama con opiniones que mencionan máquinas y pesas.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": null,
+			"budget": {
+				"hotel": "Hotel Abest Grande Okayama",
+				"stars": 3,
+				"area": "Okayama Station",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Fitness machines", "Weights"],
+					"extras": ["Public bath"],
+					"access": "Free for guests"
+				},
+				"summary_en": "Small but sufficient free gym with fitness machines and weights, which closes fairly early. Some guests chose the hotel because of it.",
+				"summary_es": "Gimnasio gratuito, pequeño pero suficiente, con máquinas y pesas, que cierra algo temprano. Algunos huéspedes eligieron el hotel por él.",
+				"sources": ["https://www.travelmyth.co.uk/Okayama/Hotels/gym", "https://www.travelmyth.co.uk/Okayama/Hotels/gym-three_star"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
 	"olbia-italy": {
 		"city": "Olbia",
 		"country": "Italy",
@@ -38075,6 +41471,85 @@ var G = {
 			"budget": null
 		}
 	},
+	"osaka-japan": {
+		"city": "Osaka",
+		"country": "Japan",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "24-hour fitness centre backed by an indoor pool, sauna and steam room.",
+		"bestReason_es": "Gimnasio abierto 24 horas con piscina cubierta, sauna y baño de vapor.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "The Ritz-Carlton, Osaka",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/jp/the-ritz-carlton-osaka.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": [
+						"Indoor heated pool",
+						"Sauna",
+						"Steam room",
+						"Spa"
+					],
+					"access": null
+				},
+				"summary_en": "24-hour fitness centre with an indoor heated pool with lap lanes, plus a spa with sauna and steam room. No equipment list is published.",
+				"summary_es": "Gimnasio abierto 24 horas con piscina cubierta climatizada con calles, y spa con sauna y baño de vapor. No se publica la lista de equipos.",
+				"sources": ["https://www.travelmyth.co.uk/Osaka/Hotels/gym-five_star", "https://uk.hotels.com/ho125898/the-ritz-carlton-osaka-osaka-japan"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/847684134.jpg?k=8c8d91f60d67743bd0db7753fad655ef67aeeaa0e03ff8682256fb840508635f&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Aloft by Marriott Osaka Umeda",
+				"stars": 4,
+				"area": "Umeda",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Modern equipment"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Gym open 24 hours with modern, air-conditioned equipment that guests describe as impressive.",
+				"summary_es": "Gimnasio abierto 24 horas con equipos modernos y aire acondicionado que los huéspedes califican de muy bueno.",
+				"sources": ["https://www.travelmyth.co.uk/Osaka/Hotels/gym-four_star"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": {
+				"hotel": "PORTA INN bentencho",
+				"stars": 3,
+				"area": "Bentencho",
+				"bookingUrl": "https://www.booking.com/hotel/jp/porta-inn-da-ban-shi.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": [],
+					"access": "Extra fee"
+				},
+				"summary_en": "Gym open 24/7 that reviewers praise for its quality. It costs extra and guests must bring their own workout clothes.",
+				"summary_es": "Gimnasio abierto 24 horas que los huéspedes elogian por su calidad. Tiene coste extra y hay que llevar ropa de deporte propia.",
+				"sources": ["https://www.travelmyth.co.uk/Osaka/Hotels/gym-three_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/237059829.jpg?k=e12d2be09cbf0e3f3a7891ce1d7c372e84138873d4fc6c4e745157029999aa5f&o=",
+					"gym": true
+				}
+			}
+		}
+	},
 	"osijek-croatia": {
 		"city": "Osijek",
 		"country": "Croatia",
@@ -38382,6 +41857,103 @@ var G = {
 				"photo": {
 					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/191517657.jpg?k=37a69fb60dee254ff9248dc809607a1e1bf52216d4e67ac03758fd52d83634df&o=",
 					"gym": false
+				}
+			}
+		}
+	},
+	"pakse-laos": {
+		"city": "Pakse",
+		"country": "Laos",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The only Pakse hotel with a confirmed fitness centre plus a large outdoor pool and a spa.",
+		"bestReason_es": "El único hotel de Pakse con gimnasio confirmado, además de una gran piscina exterior y spa.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Champasak Grand Hotel",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/la/champasak-grand.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Outdoor pool",
+						"Spa tub",
+						"Spa"
+					],
+					"access": null
+				},
+				"summary_en": "4-star hotel with a fitness centre, an outdoor pool that guests describe as huge, a spa tub and a spa. No gym size, equipment or hours are published.",
+				"summary_es": "Hotel de 4 estrellas con gimnasio, una piscina exterior que los huéspedes describen como enorme, bañera de hidromasaje y spa. No se publican tamaño, equipamiento ni horario del gimnasio.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Pakse/Hotels/gym",
+					"https://www.hotels.com/ho506020/champasak-grand-hotel-pakse-laos",
+					"https://www.priceline.com/hotel-deals/en-us/P5000494762/H22668706/champasak-grand-hotel.ssp",
+					"https://sp.booking.com/hotel/la/champasak-grand.html"
+				],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/868890006.jpg?k=6c4ac9291f24e094b72c1a0778ba5d60cb6474c6cbb1aedcbfc9917f87a89070&o=",
+					"gym": false
+				}
+			},
+			"standard": null,
+			"budget": {
+				"hotel": "Pakse hotel & Restaurant",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "3-star hotel listed with a gym. No size, equipment or hours are published.",
+				"summary_es": "Hotel de 3 estrellas que figura con gimnasio. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Pakse/Hotels/gym"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"palenque-mexico": {
+		"city": "Palenque",
+		"country": "Mexico",
+		"checked": "2026-11-02",
+		"best": "budget",
+		"bestReason_en": "One of only two Palenque hotels listed with a gym, and the only one with a confirmed star class.",
+		"bestReason_es": "Uno de los dos únicos hoteles de Palenque con gimnasio y el único con categoría confirmada.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": null,
+			"budget": {
+				"hotel": "Hotel Villa Mercedes Palenque",
+				"stars": null,
+				"area": "Carretera Palenque-Ruinas km 2.9",
+				"bookingUrl": "https://www.booking.com/hotel/mx/villa-mercedes-palenque.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Two outdoor pools", "Spa"],
+					"access": null
+				},
+				"summary_en": "Jungle hotel on the road to the ruins, rated 3.5 stars on Expedia, with a gym listed among its amenities but no details. It has two outdoor pools and a spa.",
+				"summary_es": "Hotel en la selva, en la carretera a las ruinas, con 3,5 estrellas en Expedia y gimnasio entre sus servicios, sin más detalles. Tiene dos piscinas exteriores y spa.",
+				"sources": ["https://www.travelmyth.co.uk/Palenque/Hotels/gym", "https://www.expedia.com/Palenque-Hotels-Hotel-Villa-Mercedes-Palenque.h2479818.Hotel-Information"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/507910443.jpg?k=1545af7edbaa0db1fec90e0d695aaa984353c812a19f44d197da30cf95020d77&o=",
+					"gym": true
 				}
 			}
 		}
@@ -39252,6 +42824,81 @@ var G = {
 			"budget": null
 		}
 	},
+	"playa-del-carmen-mexico": {
+		"city": "Playa del Carmen",
+		"country": "Mexico",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Devossion is the only Playa del Carmen hotel whose gym is described as spacious, well-equipped and open 24 hours.",
+		"bestReason_es": "Devossion es el único hotel de Playa del Carmen cuyo gimnasio se describe como amplio, bien equipado y abierto 24 horas.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Devossion By Live Aqua Playa del Carmen All Inclusive - Adults Only",
+				"stars": 5,
+				"area": "Centro, 1a Avenida and Calle 26",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": [
+						"Aerobics, pilates, water fitness and yoga classes",
+						"Four outdoor pools",
+						"Spa"
+					],
+					"access": null
+				},
+				"summary_en": "Review summaries describe the gym as spacious, well-equipped and open 24 hours. The resort also lists aerobics, pilates, water fitness and yoga classes.",
+				"summary_es": "Los resúmenes de opiniones describen el gimnasio como amplio, bien equipado y abierto 24 horas. El resort ofrece además clases de aeróbic, pilates, aquagym y yoga.",
+				"sources": ["https://www.travelmyth.co.uk/Playa-del-Carmen/Hotels/gym-five_star", "https://www.expedia.com/Playa-Del-Carmen-Hotels-Devossion-By-Live-Aqua-Playa-Del-Carmen-All-Inclusive-Adults-Only.h9062475.Hotel-Information"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "The Reef Coco Beach Resort & Spa- Optional All Inclusive",
+				"stars": 4,
+				"area": "Beachfront near Fifth Avenue",
+				"bookingUrl": "https://www.booking.com/hotel/mx/grand-coco-bay-playa-del-carmen.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Spa"],
+					"access": null
+				},
+				"summary_en": "Small gym that guests describe as well-equipped and clean, enough for basic workouts.",
+				"summary_es": "Gimnasio pequeño que los huéspedes describen como bien equipado y limpio, suficiente para entrenar lo básico.",
+				"sources": ["https://www.travelmyth.co.uk/Playa-del-Carmen/Hotels/gym-four_star", "https://www.booking.com/hotel/mx/grand-coco-bay-playa-del-carmen.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/81906562.jpg?k=e4a07ec8faa978cf917dc84bb161397c9529deaf55f0e9939ed3a70fc3a5613d&o=",
+					"gym": false
+				}
+			},
+			"budget": {
+				"hotel": "THE CITY Luxury Suites",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Listed with a gym, but no details on size or equipment are published.",
+				"summary_es": "Aparece con gimnasio, pero no se publican datos de tamaño ni equipamiento.",
+				"sources": ["https://www.travelmyth.co.uk/Playa-del-Carmen/Hotels/gym-three_star"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
 	"poitiers-france": {
 		"city": "Poitiers",
 		"country": "France",
@@ -39779,6 +43426,159 @@ var G = {
 			"budget": null
 		}
 	},
+	"puebla-mexico": {
+		"city": "Puebla",
+		"country": "Mexico",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The Marriott has a 24-hour gym with weights and machines that guests call well-equipped and well maintained.",
+		"bestReason_es": "El Marriott tiene gimnasio 24 horas con pesas y máquinas que los huéspedes califican de bien equipado y cuidado.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Marriott Puebla Hotel Meson del Angel",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": ["Weights", "Machines"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Gym open 24 hours with weights and machines. Guests describe it as well-equipped and well maintained, and ask for cleaner floors.",
+				"summary_es": "Gimnasio abierto 24 horas con pesas y máquinas. Los huéspedes lo describen como bien equipado y cuidado, aunque piden suelos más limpios.",
+				"sources": ["https://www.travelmyth.co.uk/Puebla/Hotels/gym", "https://www.travelmyth.co.uk/Puebla/Hotels/gym-five_star"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "NH Puebla Centro Histórico",
+				"stars": 4,
+				"area": "Centro Histórico",
+				"bookingUrl": "https://www.booking.com/hotel/mx/nh-puebla.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Gym open 24 hours that guests find functional and well kept. Some equipment was damaged and the lighting is weak.",
+				"summary_es": "Gimnasio abierto 24 horas que los huéspedes consideran funcional y cuidado. Algún equipo estaba averiado y la iluminación es escasa.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Puebla/Hotels/gym",
+					"https://www.travelmyth.co.uk/Puebla/Hotels/gym-four_star",
+					"https://sp.booking.com/hotel/mx/nh-puebla.html"
+				],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/637982478.jpg?k=5dbca291dc249a08cc81ffbf1b0b1c9c9f16dd214e753d95d22aea7ca2a27df0&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Hampton Inn & Suites By Hilton Puebla",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Listed with a gym, but no details on size or equipment are published.",
+				"summary_es": "Aparece con gimnasio, pero no se publican datos de tamaño ni equipamiento.",
+				"sources": ["https://www.travelmyth.co.uk/Puebla/Hotels/gym-three_star"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"puerto-vallarta-mexico": {
+		"city": "Puerto Vallarta",
+		"country": "Mexico",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Hotel Mousai lists Technogym machines and Troy dumbbells, the most specific gym equipment found in Puerto Vallarta.",
+		"bestReason_es": "El Hotel Mousai tiene máquinas Technogym y mancuernas Troy, el equipamiento más concreto encontrado en Puerto Vallarta.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hotel Mousai - Adults Only Puerto Vallarta",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/mousai.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Technogym machines", "Troy dumbbells"],
+					"extras": ["Yoga space"],
+					"access": null
+				},
+				"summary_en": "Adults-only hotel whose gym has Technogym machines, Troy dumbbells and space for yoga. No size or hours are published.",
+				"summary_es": "Hotel solo para adultos con gimnasio de máquinas Technogym, mancuernas Troy y espacio para yoga. No se publican tamaño ni horario.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Puerto-Vallarta/Hotels/gym",
+					"https://www.travelmyth.co.uk/Puerto-Vallarta/Hotels/gym-five_star",
+					"https://www.booking.com/hotel/mx/mousai.html"
+				],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/52733394.jpg?k=0a554a5704e58a1f651bf14a6d95738e9727670e76aeedcc6a83d757d5b5869b&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Holiday Inn Express Puerto Vallarta by IHG",
+				"stars": 4,
+				"area": "Near the airport",
+				"bookingUrl": "https://www.booking.com/hotel/mx/holiday-inn-express-puerto-vallarta.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Guests describe a spacious, clean, well-equipped gym with machines in good condition and convenient hours. Some note missing equipment.",
+				"summary_es": "Los huéspedes describen un gimnasio amplio, limpio y bien equipado, con máquinas en buen estado y buen horario. Algunos echan en falta equipos.",
+				"sources": ["https://www.travelmyth.co.uk/Puerto-Vallarta/Hotels/gym", "https://www.travelmyth.co.uk/Puerto-Vallarta/Hotels/gym-four_star"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/230293966.jpg?k=07fd03beadb5f86bfe29ffe956a877cc2214ed67d36da146f8f02e474d7d910c&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "City Express Plus by Marriott Puerto Vallarta",
+				"stars": 3,
+				"area": "Near the airport and marina",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Listed with a gym, but no details on size or equipment are published.",
+				"summary_es": "Aparece con gimnasio, pero no se publican datos de tamaño ni equipamiento.",
+				"sources": ["https://www.travelmyth.co.uk/Puerto-Vallarta/Hotels/gym", "https://www.travelmyth.co.uk/Puerto-Vallarta/Hotels/gym-three_star"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
 	"puerto-varas-chile": {
 		"city": "Puerto Varas",
 		"country": "Chile",
@@ -40109,6 +43909,80 @@ var G = {
 			},
 			"standard": null,
 			"budget": null
+		}
+	},
+	"queretaro-mexico": {
+		"city": "Querétaro",
+		"country": "Mexico",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "The Ramada Encore gym is open 24 hours and guests call it clean, well-equipped and practical.",
+		"bestReason_es": "El gimnasio del Ramada Encore abre 24 horas y los huéspedes lo describen como limpio, bien equipado y práctico.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "FUJITAYA Querétaro",
+				"stars": 5,
+				"area": "Juriquilla, near Antea",
+				"bookingUrl": "https://www.booking.com/hotel/mx/roygent-parks-queretaro.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Guests praise the gym as clean and modern, though some would like more exercise machines.",
+				"summary_es": "Los huéspedes destacan que el gimnasio es limpio y moderno, aunque algunos querrían más máquinas.",
+				"sources": ["https://www.travelmyth.co.uk/Queretaro/Hotels/gym", "https://www.travelmyth.co.uk/Queretaro/Hotels/gym-five_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/322987896.jpg?k=1c57cca86cc141826966005ed56da87f1de71a87af345f3de3a83745a4b49ca3&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Ramada Encore by Wyndham Queretaro",
+				"stars": 4,
+				"area": "Near Antea",
+				"bookingUrl": "https://www.booking.com/hotel/mx/encore-queretaro.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Small gym open 24 hours that guests describe as clean, well-equipped and practical.",
+				"summary_es": "Gimnasio pequeño abierto 24 horas que los huéspedes describen como limpio, bien equipado y práctico.",
+				"sources": ["https://www.travelmyth.co.uk/Queretaro/Hotels/gym-four_star"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/493365010.jpg?k=d9ed391b072d739e38244d0ac03f6f4b744949b5a890cd305009d0174bfb0e81&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Homewood Suites by Hilton Queretaro",
+				"stars": 3,
+				"area": "North, near Plaza Antea",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Pool", "Basketball court"],
+					"access": null
+				},
+				"summary_en": "Gym listed among the amenities together with a pool and a basketball court. No equipment details are published.",
+				"summary_es": "Gimnasio incluido entre los servicios junto a piscina y cancha de baloncesto. No se publican detalles del equipamiento.",
+				"sources": ["https://www.travelmyth.co.uk/Queretaro/Hotels/gym-three_star"],
+				"confidence": "low",
+				"photo": null
+			}
 		}
 	},
 	"quimper-france": {
@@ -40973,6 +44847,103 @@ var G = {
 				"confidence": "low",
 				"photo": {
 					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/612276505.jpg?k=5218a5a1ea81f102600b9e92c6a4f790e1a9b61cb509286b6315635a6a9869f2&o=",
+					"gym": true
+				}
+			}
+		}
+	},
+	"riga-latvia": {
+		"city": "Riga",
+		"country": "Latvia",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "At 243 m2 with a free weight area, barbells and kettlebells, it is the largest hotel gym listed in Riga.",
+		"bestReason_es": "Con 243 m2, zona de peso libre, barras y kettlebells, es el gimnasio de hotel más grande publicado en Riga.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Grand Hotel Kempinski Riga",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/lv/grand-kempinski-riga.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Indoor pool",
+						"Sauna",
+						"Bio sauna",
+						"Steam room",
+						"Spa"
+					],
+					"access": null
+				},
+				"summary_en": "Fitness centre inside the spa, which has an indoor pool, sauna, bio sauna and steam room. No size or equipment list is published.",
+				"summary_es": "Gimnasio dentro del spa, que tiene piscina cubierta, sauna, biosauna y baño de vapor. No se publican tamaño ni equipamiento.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Riga/Hotels/gym",
+					"https://www.travelmyth.co.uk/Riga/Hotels/gym-five_star",
+					"https://www.booking.com/fivestars/city/lv/riga.html"
+				],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/932834693.jpg?k=5357da66ad84af942b52d4dbf850e7075948c8ea6014cfd2c117187836ca5b3c&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Radisson Blu Latvija Conference & Spa Hotel, Riga",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/lv/hotellatvija.html",
+				"website": null,
+				"gym": {
+					"sizeM2": 243,
+					"hours": null,
+					"equipment": [
+						"Treadmills",
+						"Stationary bikes",
+						"Rowing machines",
+						"Ellipticals",
+						"Multi-exercise stations",
+						"Dumbbells",
+						"Barbells",
+						"Kettlebells",
+						"Free weight area"
+					],
+					"extras": ["Spa"],
+					"access": "Free for guests"
+				},
+				"summary_en": "243 m2 gym with cardio machines, multi-exercise stations, a free weight area with dumbbells, barbells and kettlebells. Free for guests.",
+				"summary_es": "Gimnasio de 243 m2 con máquinas de cardio, multiestaciones y zona de peso libre con mancuernas, barras y kettlebells. Gratis para huéspedes.",
+				"sources": ["https://www.travelmyth.co.uk/Riga/Hotels/gym", "https://www.booking.com/fourstars/city/lv/riga.html"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/399173485.jpg?k=cc619562a85e7f876b35fa5aa2f2ec68451fe9fae2b8822970c9fe10492314ac&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Stabu Sēta Residence City Center",
+				"stars": 3,
+				"area": "City Centre",
+				"bookingUrl": "https://www.booking.com/hotel/lv/stabu-seta-residence.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Range of machines", "Kickboxing equipment"],
+					"extras": [],
+					"access": "Free for guests"
+				},
+				"summary_en": "Small gym with a range of machines and kickboxing equipment, free for guests. Reviews say maintenance and selection could be better.",
+				"summary_es": "Gimnasio pequeño con varias máquinas y material de kickboxing, gratis para huéspedes. Las opiniones dicen que el mantenimiento y la variedad podrían mejorar.",
+				"sources": ["https://www.travelmyth.co.uk/Riga/Hotels/gym-three_star", "https://www.booking.com/threestars/city/lv/riga.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/470343180.jpg?k=778bee6abc0fad3f2522c91451f79f8eed6e68d912621fe38da66d16b3f2da06&o=",
 					"gym": true
 				}
 			}
@@ -41987,6 +45958,56 @@ var G = {
 			"budget": null
 		}
 	},
+	"salalah-oman": {
+		"city": "Salalah",
+		"country": "Oman",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Free weights and modern cardio machines with sauna and outdoor pool, free for guests.",
+		"bestReason_es": "Peso libre y máquinas de cardio modernas con sauna y piscina exterior, gratis para huéspedes.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Salalah Rotana Resort",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/om/salalah-rotana-resort.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Guests describe the gym as spacious with new equipment. A few reviews mention limited amenities; no size or hours are published.",
+				"summary_es": "Los huéspedes describen el gimnasio como amplio y con equipos nuevos. Algunas opiniones mencionan pocos servicios; no se publican tamaño ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Salalah/Hotels/gym", "https://www.travelmyth.co.uk/Salalah/Hotels/gym-five_star"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Salalah Gardens Hotel Managed by Safir Hotels & Resorts",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/om/salalah-gardens-residences.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Free weights", "Modern cardio machines"],
+					"extras": ["Outdoor pool", "Sauna"],
+					"access": "Free for guests"
+				},
+				"summary_en": "Free gym with free weights and modern cardio machines, plus an outdoor pool and sauna. Guests mention a quiet space with good equipment variety.",
+				"summary_es": "Gimnasio gratuito con peso libre y máquinas de cardio modernas, además de piscina exterior y sauna. Los huéspedes lo describen como tranquilo y con buena variedad de equipos.",
+				"sources": ["https://www.travelmyth.co.uk/Salalah/Hotels/gym", "https://www.travelmyth.co.uk/Salalah/Hotels/gym-four_star"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
 	"salerno-italy": {
 		"city": "Salerno",
 		"country": "Italy",
@@ -42311,6 +46332,134 @@ var G = {
 				"sources": ["https://www.hotelgyms.com/hotels/ar/san-carlos-de-bariloche/cacique-inacayal-lake-hotel-and-spa/186038"],
 				"confidence": "low",
 				"photo": null
+			},
+			"budget": null
+		}
+	},
+	"san-cristobal-de-las-casas-mexico": {
+		"city": "San Cristóbal de las Casas",
+		"country": "Mexico",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Casa del Alma is the only San Cristóbal hotel with a described fitness room, plus a spa with steam room and sauna.",
+		"bestReason_es": "Casa del Alma es el único hotel de San Cristóbal con sala de fitness descrita, además de spa con baño de vapor y sauna.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Casa del Alma Hotel Boutique & Spa",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/casa-del-alma-boutique.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Spa",
+						"Steam room",
+						"Sauna"
+					],
+					"access": null
+				},
+				"summary_en": "Boutique hotel with a fitness room and a spa with steam room and sauna. No equipment details are published.",
+				"summary_es": "Hotel boutique con sala de fitness y spa con baño de vapor y sauna. No se publican detalles del equipamiento.",
+				"sources": ["https://www.travelmyth.co.uk/San-Cristobal-de-las-Casas/Hotels/gym", "https://www.travelmyth.co.uk/San-Cristobal-de-las-Casas/Hotels/gym-five_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/904240833.jpg?k=77547237f066c5181671f3b9652fe5e58b2daf56c578b6e428474d2521ab3db4&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Hotel Mansion Del Valle",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Listed with a gym, but no details on size or equipment are published.",
+				"summary_es": "Aparece con gimnasio, pero no se publican datos de tamaño ni equipamiento.",
+				"sources": ["https://www.travelmyth.co.uk/San-Cristobal-de-las-Casas/Hotels/gym", "https://www.travelmyth.co.uk/San-Cristobal-de-las-Casas/Hotels/gym-four_star"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": {
+				"hotel": "Hotel El Zaguán Histórico",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Listed with a gym, but no details on size or equipment are published.",
+				"summary_es": "Aparece con gimnasio, pero no se publican datos de tamaño ni equipamiento.",
+				"sources": ["https://www.travelmyth.co.uk/San-Cristobal-de-las-Casas/Hotels/gym", "https://www.travelmyth.co.uk/San-Cristobal-de-las-Casas/Hotels/gym-three_star"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"san-miguel-de-allende-mexico": {
+		"city": "San Miguel de Allende",
+		"country": "Mexico",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The only listed hotel gym with published hours: open 24 hours, with yoga classes.",
+		"bestReason_es": "El único gimnasio de hotel con horario publicado: abierto 24 horas y con clases de yoga.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Live Aqua San Miguel de Allende",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": ["Yoga classes"],
+					"access": null
+				},
+				"summary_en": "Fitness center open 24 hours, with yoga classes. No size or equipment list is published.",
+				"summary_es": "Gimnasio abierto 24 horas, con clases de yoga. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.travelmyth.co.uk/San-Miguel-de-Allende/Hotels/gym", "https://www.travelmyth.co.uk/San-Miguel-de-Allende/Hotels/gym-five_star"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Hotel MX más San Miguel de Allende",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/mx-san-miguel-de-allende.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Listed with a basic fitness center. No size, equipment or hours are published.",
+				"summary_es": "Figura con un gimnasio básico. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/San-Miguel-de-Allende/Hotels/gym", "https://www.travelmyth.co.uk/San-Miguel-de-Allende/Hotels/gym-four_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/324636348.jpg?k=16405436746705bf417034a0822fd6b4c2310060c01b36d48176ddf38f799749&o=",
+					"gym": false
+				}
 			},
 			"budget": null
 		}
@@ -42698,6 +46847,82 @@ var G = {
 			},
 			"standard": null,
 			"budget": null
+		}
+	},
+	"sapporo-japan": {
+		"city": "Sapporo",
+		"country": "Japan",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "New hotel with a 24-hour fitness centre and an indoor pool.",
+		"bestReason_es": "Hotel nuevo con gimnasio abierto 24 horas y piscina cubierta.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "InterContinental Sapporo by IHG",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": ["Indoor pool"],
+					"access": null
+				},
+				"summary_en": "Recently opened hotel with a 24-hour fitness centre and an indoor pool. No equipment list is published.",
+				"summary_es": "Hotel de reciente apertura con gimnasio abierto 24 horas y piscina cubierta. No se publica la lista de equipos.",
+				"sources": ["https://www.travelmyth.co.uk/Sapporo/Hotels/gym-five_star", "https://uk.hotels.com/ho3661162624"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Keio Prelia Hotel Sapporo",
+				"stars": 4,
+				"area": "Sapporo Station",
+				"bookingUrl": "https://www.booking.com/hotel/jp/keio-prelia-hotel-sapporo.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Modern equipment"],
+					"extras": ["Public bath"],
+					"access": null
+				},
+				"summary_en": "Fitness center with modern equipment that reviewers call spacious and well-equipped. The hotel also has a public bath.",
+				"summary_es": "Gimnasio con equipos modernos que las opiniones describen como amplio y bien equipado. El hotel tiene además baño público.",
+				"sources": ["https://www.travelmyth.co.uk/Sapporo/Hotels/gym", "https://www.travelmyth.co.uk/Sapporo/Hotels/gym-four_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/232727672.jpg?k=b6c9a5d3ffc2b315b7fb4cd678e996cf18dd5170e30143870d7aa99fcf3fd82f&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Susukino Granbell Hotel",
+				"stars": 3,
+				"area": "Susukino",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Weights",
+						"Benches",
+						"Running machines",
+						"Exercise bikes"
+					],
+					"extras": [],
+					"access": "Free for guests"
+				},
+				"summary_en": "Compact free gym with weights, benches, running machines and bikes, plus city views. Reviews say it can be busy and not all machines always work.",
+				"summary_es": "Gimnasio compacto y gratuito con pesas, bancos, cintas y bicicletas, con vistas a la ciudad. Según las opiniones puede estar lleno y no todas las máquinas funcionan siempre.",
+				"sources": ["https://www.travelmyth.co.uk/Sapporo/Hotels/gym", "https://www.travelmyth.co.uk/Sapporo/Hotels/gym-three_star"],
+				"confidence": "low",
+				"photo": null
+			}
 		}
 	},
 	"sarajevo-bosniaandherzegovina": {
@@ -43097,6 +47322,62 @@ var G = {
 			"budget": null
 		}
 	},
+	"sendai-japan": {
+		"city": "Sendai",
+		"country": "Japan",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The only 5-star hotel in Sendai listed with fitness and spa facilities.",
+		"bestReason_es": "El único hotel de 5 estrellas de Sendai con gimnasio y spa.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "The Westin Sendai",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/jp/westin-sendai.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Spa"],
+					"access": null
+				},
+				"summary_en": "High-rise hotel with fitness and spa facilities. No details on size, equipment or hours are published.",
+				"summary_es": "Hotel en un rascacielos con gimnasio y spa. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Sendai/Hotels/gym-five_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/577290674.jpg?k=7177bcfe8f984323950ae67f077a3c6b1ea1c974b007dade86ae20f4a24215a4&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Hotel Metropolitan Sendai East",
+				"stars": 4,
+				"area": "Sendai Station",
+				"bookingUrl": "https://www.booking.com/hotel/jp/metropolitan-sendai-east.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Hotel near JR Sendai Station listed with a gym. No details on size, equipment or hours are published.",
+				"summary_es": "Hotel junto a la estación JR de Sendai que figura con gimnasio. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Sendai/Hotels/gym-four_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/86189716.jpg?k=6d48a8fa9762568ab6d92877eea8b3a24729d899444034c44dcc1db53fbb964d&o=",
+					"gym": true
+				}
+			},
+			"budget": null
+		}
+	},
 	"senigallia-italy": {
 		"city": "Senigallia",
 		"country": "Italy",
@@ -43447,6 +47728,45 @@ var G = {
 			"budget": null
 		}
 	},
+	"shizuoka-japan": {
+		"city": "Shizuoka",
+		"country": "Japan",
+		"checked": "2026-11-02",
+		"best": "budget",
+		"bestReason_en": "The only Shizuoka hotel listed with a gym, next to pools, sauna and hot spring.",
+		"bestReason_es": "El único hotel de Shizuoka que figura con gimnasio, junto a piscinas, sauna y aguas termales.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": null,
+			"standard": null,
+			"budget": {
+				"hotel": "Kur and Hotel Suruga",
+				"stars": 3,
+				"area": "Shimizu Ward",
+				"bookingUrl": "https://www.booking.com/hotel/jp/kur-and-suruga.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Two indoor pools",
+						"Sauna",
+						"Hot spring"
+					],
+					"access": null
+				},
+				"summary_en": "Health resort hotel with a gym, two indoor pools, a sauna and an indoor hot spring. No gym size, equipment or hours are published.",
+				"summary_es": "Hotel balneario con gimnasio, dos piscinas cubiertas, sauna y aguas termales interiores. No se publican tamaño, equipamiento ni horario del gimnasio.",
+				"sources": ["https://www.travelmyth.co.uk/Shizuoka/Hotels/gym", "https://www.expedia.com/Shizuoka-Hotels-Kur-Hotel-Suruga.h9622970.Hotel-Information"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/766940936.jpg?k=ce8aacd90f952c84178c3b3bcb7b110768c1ad998ec88f49b974a75e670b8099&o=",
+					"gym": true
+				}
+			}
+		}
+	},
 	"sibenik-croatia": {
 		"city": "Šibenik",
 		"country": "Croatia",
@@ -43769,6 +48089,71 @@ var G = {
 				}
 			},
 			"standard": null,
+			"budget": null
+		}
+	},
+	"sliema-malta": {
+		"city": "Sliema",
+		"country": "Malta",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Reviews rate it one of the best-equipped hotel gyms, with professional machines and a good range of weights next to the spa and indoor pool.",
+		"bestReason_es": "Las opiniones lo sitúan entre los gimnasios de hotel mejor equipados, con máquinas profesionales y buena variedad de pesas junto al spa y la piscina cubierta.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "AX The Palace",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mt/the-palace.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Professional machines", "Range of weights"],
+					"extras": [
+						"Spa",
+						"Sauna",
+						"Indoor pool"
+					],
+					"access": null
+				},
+				"summary_en": "Gym with professional equipment and a good range of weights and machines, next to the spa, sauna and indoor pool. Reviews say it is small and gets busy with outside members.",
+				"summary_es": "Gimnasio con equipamiento profesional y buena variedad de pesas y máquinas, junto al spa, la sauna y la piscina cubierta. Las opiniones dicen que es pequeño y se llena con socios externos.",
+				"sources": ["https://www.travelmyth.co.uk/Sliema/Hotels/gym", "https://www.booking.com/fivestars/city/mt/sliema.html"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/376060155.jpg?k=c01452b3b3aa693790c58ba5828093799b106b2d931be1ef75ffd2b6ac4bb475&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "The Preluna Hotel",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mt/prelunahotel.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["New equipment"],
+					"extras": [
+						"Indoor pool",
+						"Sauna",
+						"Hammam",
+						"Jacuzzi"
+					],
+					"access": null
+				},
+				"summary_en": "Spacious gym with new equipment, plus an indoor pool, sauna, hammam and jacuzzi. Some guests dislike the loud music and dark lighting.",
+				"summary_es": "Gimnasio amplio con máquinas nuevas, además de piscina cubierta, sauna, hammam y jacuzzi. Algunos huéspedes se quejan de la música alta y la poca luz.",
+				"sources": ["https://www.travelmyth.co.uk/Sliema/Hotels/gym", "https://www.booking.com/fourstars/city/mt/sliema.html"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/19293175.jpg?k=5714286b3b2925b7110e3dc28ad0633d37188dffa15c84534f2e278b91d68eed&o=",
+					"gym": false
+				}
+			},
 			"budget": null
 		}
 	},
@@ -44793,6 +49178,92 @@ var G = {
 			"budget": null
 		}
 	},
+	"tampico-mexico": {
+		"city": "Tampico",
+		"country": "Mexico",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "The only Tampico hotel gym with a published equipment list: treadmill, stair climber, bike and a multi-exercise machine.",
+		"bestReason_es": "El único gimnasio de hotel en Tampico con equipamiento publicado: cinta, escaladora, bicicleta y una máquina multiejercicio.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "HS HOTSSON Hotel Tampico",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/camino-real-tampico.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Listed with a gym for full workouts. No size, equipment or hours are published.",
+				"summary_es": "Figura con gimnasio para entrenamientos completos. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Tampico/Hotels/gym", "https://www.travelmyth.co.uk/Tampico/Hotels/gym-five_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/697223208.jpg?k=e4df27c513553a552cb21d3ed6c30c6b15233d52be99aace43d5488411ffd2d1&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Gamma Tampico",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/gamma-tampico.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [
+						"Treadmill",
+						"Stair climber",
+						"Exercise bike",
+						"Multi-exercise machine"
+					],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Small gym with a treadmill, a stair climber, an exercise bike and a multi-exercise machine.",
+				"summary_es": "Gimnasio pequeño con cinta de correr, escaladora, bicicleta estática y una máquina multiejercicio.",
+				"sources": ["https://www.travelmyth.co.uk/Tampico/Hotels/gym", "https://www.travelmyth.co.uk/Tampico/Hotels/gym-four_star"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/757239827.jpg?k=a27028dafecd7d0762912d11ecdcb3bbe02c20bbd3780761dbbe58f0f3b59fda&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Hampton Inn Tampico Zona Dorada",
+				"stars": 3,
+				"area": "Zona Dorada",
+				"bookingUrl": "https://www.booking.com/hotel/mx/hampton-inn-tampico-zona-dorada.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Various machines"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Fitness center with various machines. No size or hours are published.",
+				"summary_es": "Gimnasio con varias máquinas. No se publican tamaño ni horario.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Tampico/Hotels/gym",
+					"https://www.travelmyth.co.uk/Tampico/Hotels/gym-three_star",
+					"https://www.priceline.com/hotel-deals/en-us/P3000061975/H3435603/hampton-inn-by-hilton-tampico-zona-dorada.ssp"
+				],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/837679139.jpg?k=7484bb1dd0917edb097035d15af2388c45f9b788aa14806d6d2bf9a67da8f036&o=",
+					"gym": true
+				}
+			}
+		}
+	},
 	"taormina-italy": {
 		"city": "Taormina",
 		"country": "Italy",
@@ -45811,6 +50282,41 @@ var G = {
 			"budget": null
 		}
 	},
+	"toyama-japan": {
+		"city": "Toyama",
+		"country": "Japan",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The only Toyama hotel listed with a gym.",
+		"bestReason_es": "El único hotel de Toyama que figura con gimnasio.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "DoubleTree by Hilton Toyama",
+				"stars": 4,
+				"area": "Toyama Station",
+				"bookingUrl": "https://www.booking.com/hotel/jp/doubletree-by-hilton-toyama.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Hotel near Toyama Station listed with a gym. No details on size, equipment or hours are published.",
+				"summary_es": "Hotel cerca de la estación de Toyama que figura con gimnasio. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Toyama/Hotels/gym", "https://www.travelmyth.co.uk/Toyama/Hotels/gym-four_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/929364176.jpg?k=c78eaf8fedd2e04666072a269960da1a40fd1328b1b8a128d919de457d913fb5&o=",
+					"gym": true
+				}
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
 	"trapani-italy": {
 		"city": "Trapani",
 		"country": "Italy",
@@ -46376,6 +50882,80 @@ var G = {
 			"budget": null
 		}
 	},
+	"tulum-mexico": {
+		"city": "Tulum",
+		"country": "Mexico",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "Guests describe the Motto gym as very large, new and well equipped with cardio and strength machines.",
+		"bestReason_es": "Los huéspedes describen el gimnasio del Motto como muy grande, nuevo y bien equipado con máquinas de cardio y fuerza.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Conrad Tulum Riviera Maya",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/conrad-tulum.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Fitness classes", "Personal trainers"],
+					"access": null
+				},
+				"summary_en": "Resort with a modern fitness center, fitness classes and personal trainers. No size or equipment list is published.",
+				"summary_es": "Resort con gimnasio moderno, clases y entrenadores personales. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.travelmyth.co.uk/Tulum/Hotels/gym", "https://www.travelmyth.co.uk/Tulum/Hotels/gym-five_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/833772776.jpg?k=359158b8a78298787ad5a983540994096e90195629bf5eb6bcb4c89bee5cdac4&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Motto By Hilton Tulum",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/motto-by-hilton-tulum.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Cardio machines", "Strength machines"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Guests describe the gym as very large, spacious and new, with cardio and strength machines and good views.",
+				"summary_es": "Los huéspedes describen el gimnasio como muy grande, amplio y nuevo, con máquinas de cardio y fuerza y buenas vistas.",
+				"sources": ["https://www.travelmyth.co.uk/Tulum/Hotels/gym", "https://www.travelmyth.co.uk/Tulum/Hotels/gym-four_star"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/492636575.jpg?k=505590a5484e4f3fdb3359ed10ac082b87b3f6b974e33585ba8fb6b96311d288&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Mistiq Tulum",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "Until 20:00",
+					"equipment": ["Cardio machines", "Strength machines"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Aparthotel gym that reviews call modern, clean and spacious, with cardio and strength machines. It closes at 20:00.",
+				"summary_es": "Gimnasio de aparthotel que las opiniones describen como moderno, limpio y amplio, con cardio y fuerza. Cierra a las 20:00.",
+				"sources": ["https://www.travelmyth.co.uk/Tulum/Hotels/gym", "https://www.travelmyth.co.uk/Tulum/Hotels/gym-three_star"],
+				"confidence": "medium",
+				"photo": null
+			}
+		}
+	},
 	"turin-italy": {
 		"city": "Turin",
 		"country": "Italy",
@@ -46689,6 +51269,91 @@ var G = {
 			"budget": null
 		}
 	},
+	"ulaanbaatar-mongolia": {
+		"city": "Ulaanbaatar",
+		"country": "Mongolia",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "A sports club of over 7,000 m2 with a fitness zone, a 25 m indoor pool and studios for spin, pilates and yoga.",
+		"bestReason_es": "Un club deportivo de más de 7.000 m2 con zona de fitness, piscina cubierta de 25 m y salas de spinning, pilates y yoga.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Shangri-La Ulaanbaatar",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mn/shangri-la-ulaanbaatar.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Sports club over 7,000 m2",
+						"25 m heated indoor pool",
+						"Spin, pilates and yoga studios",
+						"Certified trainers",
+						"Jacuzzi",
+						"Sauna",
+						"Steam room"
+					],
+					"access": null
+				},
+				"summary_en": "The hotel sports club covers over 7,000 m2, with a fitness zone, a 25 m heated indoor pool and spin, pilates and yoga studios. Certified trainers, sauna, steam room and jacuzzi are available.",
+				"summary_es": "El club deportivo del hotel ocupa más de 7.000 m2, con zona de fitness, piscina cubierta climatizada de 25 m y salas de spinning, pilates y yoga. Hay entrenadores certificados, sauna, baño de vapor y jacuzzi.",
+				"sources": ["https://www.travelmyth.co.uk/Ulaanbaatar/Hotels/gym", "https://www.booking.com/fivestars/city/mn/ulaanbaatar.html"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/188554504.jpg?k=fffe1882d3f317bed8856c89483568b398f8d372a241abbcf7c53ecee1fe29a7&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Bayangol Hotel",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mn/bayangol-ulaanbaatar.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Cardio equipment", "Resistance equipment"],
+					"extras": ["3-lane pool, 2 m deep", "Jacuzzi"],
+					"access": null
+				},
+				"summary_en": "Gym with cardio and resistance equipment, plus a three-lane pool 2 m deep and a jacuzzi.",
+				"summary_es": "Gimnasio con equipos de cardio y fuerza, además de una piscina de tres calles y 2 m de profundidad y jacuzzi.",
+				"sources": ["https://www.travelmyth.co.uk/Ulaanbaatar/Hotels/gym", "https://www.booking.com/fourstars/city/mn/ulaanbaatar.html"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/119754202.jpg?k=cc16f16a87282314b8e75477360efbd53913df1d9d25e4c5f78887355bda7db7&o=",
+					"gym": false
+				}
+			},
+			"budget": {
+				"hotel": "Springs Hotel Ulaanbaatar",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mn/springs-in-ulaanbaatar.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Listed with a fitness center. No details on size, equipment or hours are published.",
+				"summary_es": "Figura con gimnasio. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Ulaanbaatar/Hotels/gym", "https://www.booking.com/threestars/city/mn/ulaanbaatar.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/365831729.jpg?k=54ee9cb22b74a9eb7563b3e604106a0ca854f5f212d4762a4b77fd4d837c729e&o=",
+					"gym": false
+				}
+			}
+		}
+	},
 	"ulm-germany": {
 		"city": "Ulm",
 		"country": "Germany",
@@ -46931,7 +51596,10 @@ var G = {
 				"summary_es": "Gimnasio totalmente equipado con equipos variados y pesas, abierto todos los días de 05:00 a 23:00.",
 				"sources": ["https://www.travelmyth.co.uk/Valletta/Hotels/gym", "https://www.travelmyth.co.uk/Valletta/Hotels/gym-five_star"],
 				"confidence": "medium",
-				"photo": null
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/106831389.jpg?k=dbbc11d7ba84d9e520fae225f560ffba012c6adf9494ab27920c08c5e88764ef&o=",
+					"gym": false
+				}
 			},
 			"standard": {
 				"hotel": "The Gomerino Hotel",
@@ -46950,7 +51618,10 @@ var G = {
 				"summary_es": "La mayoría de huéspedes describe el gimnasio como moderno y bien cuidado. Algunas opiniones dicen que es pequeño, con poco equipo y alguna máquina rota.",
 				"sources": ["https://www.travelmyth.co.uk/Valletta/Hotels/gym", "https://www.booking.com/fourstars/city/mt/valletta.html"],
 				"confidence": "low",
-				"photo": null
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/333042317.jpg?k=3ddabf5daa750bbc460b993bdfb11151c8daee62a0b017ed98a4bc09e355b0ff&o=",
+					"gym": true
+				}
 			},
 			"budget": {
 				"hotel": "Osborne Hotel",
@@ -46973,7 +51644,10 @@ var G = {
 				"summary_es": "Gimnasio pequeño de 35 m2 con una cinta, una elíptica y dos máquinas, gratis para huéspedes. Las opiniones lo ven limpio pero básico y necesitado de reforma.",
 				"sources": ["https://www.travelmyth.co.uk/Valletta/Hotels/gym", "https://www.booking.com/threestars/city/mt/valletta.html"],
 				"confidence": "medium",
-				"photo": null
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/270927262.jpg?k=d2413be8109fc6686d048d1539b4ae4edabc1b9ba7ef5e57d47874f9d06ed4c0&o=",
+					"gym": true
+				}
 			}
 		}
 	},
@@ -47872,6 +52546,91 @@ var G = {
 			"budget": null
 		}
 	},
+	"vientiane-laos": {
+		"city": "Vientiane",
+		"country": "Laos",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The only Vientiane hotel gym listed as open 24 hours, with an outdoor pool and a sauna.",
+		"bestReason_es": "El único gimnasio de hotel de Vientián que figura abierto 24 horas, con piscina exterior y sauna.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Crowne Plaza Vientiane by IHG",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/la/vientiane-vientiane.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": [
+						"Outdoor pool",
+						"Sauna",
+						"Spa nearby"
+					],
+					"access": null
+				},
+				"summary_en": "24-hour fitness centre with an outdoor pool and a sauna, and a full-service spa nearby. No equipment list is published.",
+				"summary_es": "Gimnasio abierto 24 horas con piscina exterior y sauna, y un spa completo cerca. No se publica la lista de equipamiento.",
+				"sources": ["https://www.travelmyth.co.uk/Vientiane/Hotels/gym", "https://www.booking.com/fivestars/city/la/vientiane.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/923907797.jpg?k=7778beba0532d91778a35ce03b10cab1b9ab8833622d9990a3093ba320416a1c&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Eastin Hotel Vientiane",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/la/eastin-vientiane-laos.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["New equipment, numerous machines"],
+					"extras": ["Pool"],
+					"access": null
+				},
+				"summary_en": "Gym with a wide range of new equipment that reviewers praise, along with the pool. Some mention climate control and machine calibration issues.",
+				"summary_es": "Gimnasio con mucho equipamiento nuevo que los huéspedes elogian, igual que la piscina. Algunos mencionan problemas de climatización y de calibración de máquinas.",
+				"sources": ["https://www.travelmyth.co.uk/Vientiane/Hotels/gym", "https://www.booking.com/fourstars/city/la/vientiane.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/414448778.jpg?k=a190f40dfd0e76afa3bb46999d2dc381ba1d28b920bc172dd1c0ded35bffeffa&o=",
+					"gym": true
+				}
+			},
+			"budget": {
+				"hotel": "Le Charme Vientiane Hotel",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/la/best-western-vientiane.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Bench press", "Dumbbells"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Reviews describe a fully functional gym of decent size with a bench press and dumbbells. Some guests say it runs too hot.",
+				"summary_es": "Las opiniones describen un gimnasio funcional de buen tamaño con press de banca y mancuernas. Algunos huéspedes dicen que hace demasiado calor.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Vientiane/Hotels/gym",
+					"https://www.travelmyth.co.uk/Vientiane/Hotels/gym-three_star",
+					"https://sp.booking.com/hotel/la/best-western-vientiane.en-gb.html"
+				],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/788753216.jpg?k=05cf56c7696b5bb872b248ef3c3381de7d45e856a2cf32290dc42b2f6d3fb916&o=",
+					"gym": true
+				}
+			}
+		}
+	},
 	"villach-austria": {
 		"city": "Villach",
 		"country": "Austria",
@@ -47923,6 +52682,92 @@ var G = {
 				"photo": null
 			},
 			"budget": null
+		}
+	},
+	"vilnius-lithuania": {
+		"city": "Vilnius",
+		"country": "Lithuania",
+		"checked": "2026-11-02",
+		"best": "standard",
+		"bestReason_en": "120 m2 gym with a pool, jacuzzi and two saunas, the largest hotel gym with a published size in Vilnius.",
+		"bestReason_es": "Gimnasio de 120 m2 con piscina, jacuzzi y dos saunas, el más grande con tamaño publicado en Vilnius.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hotel Pacai, Vilnius, a Member of Design Hotels",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/lt/pacai.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [
+						"Turkish bath",
+						"Sauna",
+						"Yoga classes",
+						"Wellness centre"
+					],
+					"access": null
+				},
+				"summary_en": "Gym inside a wellness centre with a Turkish bath, sauna and yoga classes. No size or equipment list is published.",
+				"summary_es": "Gimnasio dentro de un centro de bienestar con baño turco, sauna y clases de yoga. No se publican tamaño ni equipamiento.",
+				"sources": ["https://www.travelmyth.co.uk/Vilnius/Hotels/gym", "https://www.booking.com/fivestars/city/lt/vilnius.html"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/213970628.jpg?k=62cf816f1dd45726250b6c0337c906c81c725a439796ed510fa4174e72bc12f0&o=",
+					"gym": false
+				}
+			},
+			"standard": {
+				"hotel": "Radisson Blu Hotel Lietuva",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/lt/hotellietuva-vilnius.html",
+				"website": null,
+				"gym": {
+					"sizeM2": 120,
+					"hours": null,
+					"equipment": ["Cardio machines", "Exercise machines"],
+					"extras": [
+						"Pool",
+						"Jacuzzi",
+						"2 saunas"
+					],
+					"access": "Free for guests"
+				},
+				"summary_en": "120 m2 gym with cardio and exercise machines, free for guests. There is also a pool, a jacuzzi and two saunas.",
+				"summary_es": "Gimnasio de 120 m2 con máquinas de cardio y de ejercicio, gratis para huéspedes. También hay piscina, jacuzzi y dos saunas.",
+				"sources": ["https://www.travelmyth.co.uk/Vilnius/Hotels/gym", "https://www.booking.com/fourstars/city/lt/vilnius.html"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/605496829.jpg?k=21092edbcc4e1c47f8d4cd4e2a61fe18070de126188a55476a60feb570dae9c1&o=",
+					"gym": false
+				}
+			},
+			"budget": {
+				"hotel": "Comfort Hotel LT - Rock 'n' Roll Vilnius",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/lt/comfort-vilnius-vilnius.html",
+				"website": null,
+				"gym": {
+					"sizeM2": 50,
+					"hours": "24h",
+					"equipment": [],
+					"extras": [],
+					"access": "Free for guests"
+				},
+				"summary_en": "50 m2 gym open 24 hours and free for guests. Reviews mention modern, well-kept equipment.",
+				"summary_es": "Gimnasio de 50 m2 abierto 24 horas y gratuito para huéspedes. Las opiniones destacan máquinas modernas y bien cuidadas.",
+				"sources": ["https://www.travelmyth.co.uk/Vilnius/Hotels/gym", "https://www.booking.com/threestars/city/lt/vilnius.html"],
+				"confidence": "medium",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/145632217.jpg?k=b0a44d5b7eee6b2767f7c4ae919e49dd1bb7664fd664e3a85b70b5e1b33e25db&o=",
+					"gym": true
+				}
+			}
 		}
 	},
 	"viterbo-italy": {
@@ -48687,6 +53532,41 @@ var G = {
 			"budget": null
 		}
 	},
+	"yamagata-japan": {
+		"city": "Yamagata",
+		"country": "Japan",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The only Yamagata hotel listed with a fitness center.",
+		"bestReason_es": "El único hotel de Yamagata que figura con gimnasio.",
+		"luxuryNote": "No 5-star hotel with a gym in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Daiwa Roynet Hotel Yamagata Ekimae",
+				"stars": 4,
+				"area": "Yamagata Station",
+				"bookingUrl": "https://www.booking.com/hotel/jp/daiwaroynethotel-yamagataekimae.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Massage service"],
+					"access": null
+				},
+				"summary_en": "Hotel in front of Yamagata Station with a fitness center and massage service. No details on size, equipment or hours are published.",
+				"summary_es": "Hotel frente a la estación de Yamagata con gimnasio y servicio de masajes. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Yamagata/Hotels/gym", "https://www.travelmyth.co.uk/Yamagata/Hotels/gym-four_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/344431614.jpg?k=6fbc1b3e6936de5121ac6db8407b889a94ce1929def074f76dd9971c827814e8&o=",
+					"gym": true
+				}
+			},
+			"standard": null,
+			"budget": null
+		}
+	},
 	"yantai-china": {
 		"city": "Yantai",
 		"country": "China",
@@ -48885,6 +53765,148 @@ var G = {
 				}
 			},
 			"budget": null
+		}
+	},
+	"yokohama-japan": {
+		"city": "Yokohama",
+		"country": "Japan",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "The only Yokohama hotel gym listed as both 24-hour and well-equipped, with a swimming pool.",
+		"bestReason_es": "El único gimnasio de hotel en Yokohama descrito como abierto 24 horas y bien equipado, con piscina.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Yokohama Bay Sheraton Hotel and Towers",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/jp/yokohama-bay-sheraton-and-towers.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": "24h",
+					"equipment": [],
+					"extras": ["Swimming pool"],
+					"access": null
+				},
+				"summary_en": "24-hour gym described in reviews as well-equipped, and the hotel also has a swimming pool. No size or equipment list is published.",
+				"summary_es": "Gimnasio abierto 24 horas que las opiniones describen como bien equipado; el hotel tiene además piscina. No se publican tamaño ni equipos.",
+				"sources": ["https://www.travelmyth.co.uk/Yokohama/Hotels/gym", "https://www.travelmyth.co.uk/Yokohama/Hotels/gym-five_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/600573380.jpg?k=9e2b5d27cb17f047fe9143cfd5f4ce80bc88e7399f2e65cb670d48b6840e9e7c&o=",
+					"gym": true
+				}
+			},
+			"standard": {
+				"hotel": "Hilton Garden Inn Yokohama Minatomirai",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Small gym that reviewers find useful for keeping a routine, with limited space and equipment.",
+				"summary_es": "Gimnasio pequeño que sirve para mantener la rutina, aunque con espacio y equipos limitados.",
+				"sources": ["https://www.travelmyth.co.uk/Yokohama/Hotels/gym-four_star"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": {
+				"hotel": "Fuji View Hotel Shin-yokohama",
+				"stars": 3,
+				"area": "Shin-Yokohama",
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Listed with a gym. No details on size, equipment or hours are published.",
+				"summary_es": "Figura con gimnasio. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Yokohama/Hotels/gym"],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	"zacatecas-mexico": {
+		"city": "Zacatecas",
+		"country": "Mexico",
+		"checked": "2026-11-02",
+		"best": "luxury",
+		"bestReason_en": "Described as a state-of-the-art gym inside a hotel with its own spa.",
+		"bestReason_es": "Descrito como un gimnasio moderno dentro de un hotel con spa propio.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Hotel & Spa Hacienda Baruk",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Spa"],
+					"access": null
+				},
+				"summary_en": "Hotel with a gym described as state of the art and a spa. No size, equipment or hours are published.",
+				"summary_es": "Hotel con un gimnasio descrito como moderno y spa. No se publican tamaño, equipamiento ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Zacatecas/Hotels/gym", "https://www.travelmyth.co.uk/Zacatecas/Hotels/gym-five_star"],
+				"confidence": "low",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Hotel Don Miguel",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": [],
+					"extras": ["Indoor pool"],
+					"access": null
+				},
+				"summary_en": "Listed with a gym and an indoor pool. No gym details are published.",
+				"summary_es": "Figura con gimnasio y piscina cubierta. No se publican detalles del gimnasio.",
+				"sources": ["https://www.travelmyth.co.uk/Zacatecas/Hotels/gym", "https://www.travelmyth.co.uk/Zacatecas/Hotels/gym-four_star"],
+				"confidence": "low",
+				"photo": null
+			},
+			"budget": {
+				"hotel": "Hampton Inn Zacatecas",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": "https://www.booking.com/hotel/mx/hampton-inn-zacatecas.html",
+				"website": null,
+				"gym": {
+					"sizeM2": null,
+					"hours": null,
+					"equipment": ["Modern exercise machines"],
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Fitness center with modern exercise machines. No size or hours are published.",
+				"summary_es": "Gimnasio con máquinas modernas. No se publican tamaño ni horario.",
+				"sources": ["https://www.travelmyth.co.uk/Zacatecas/Hotels/gym", "https://www.travelmyth.co.uk/Zacatecas/Hotels/gym-three_star"],
+				"confidence": "low",
+				"photo": {
+					"url": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/486118430.jpg?k=33b3bcb203aedd98c1deea01efd73319fbf8d7aed920340daafa1f70a4def910&o=",
+					"gym": true
+				}
+			}
 		}
 	},
 	"zadar-croatia": {
