@@ -6162,5 +6162,355 @@
     7121
    ]
   }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "natha-loka",
+  "name": "Natha Loka Eco Village",
+  "changed": {
+   "advertised_yield_pct": [
+    14,
+    7
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "morros-vita-serena-del-mar",
+  "name": "Morros Vita",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Alianza Fiduciaria, entidad encargada de velar por la correcta administración de los recursos; vinculación de compradores al esquema fiduciario",
+    "Esquema fiduciario con Alianza Fiduciaria, entidad encargada de velar por la correcta administración de los recursos"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "samana-ocean-crest-dubai-islands",
+  "name": "Samana Ocean Crest",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "comfort-by-orbi-orbi-group",
+  "name": "Comfort by Orbi",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "avrupa-konutlari-gunesli-artas",
+  "name": "Avrupa Konutları Güneşli",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9509,
+    9521
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "shivo-towers-shivo",
+  "name": "Shivo Towers",
+  "changed": {
+   "extension_promised": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "rhea-by-sansiri",
+  "name": "Rhea by Sansiri",
+  "changed": {
+   "price_from": [
+    140818,
+    140819
+   ],
+   "title_type": [
+    "leasehold",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "casa-blake-costa-palmas-irongate",
+  "name": "Casa Blake at Costa Palmas",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "stellar-by-elie-saab-emirates-developments",
+  "name": "Stellar by Elie Saab",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "botanica-luxury-krabi",
+  "name": "Botanica Luxury Krabi",
+  "changed": {
+   "title_type": [
+    null,
+    "leasehold"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "the-ivory-chang-phueak-home-development-group",
+  "name": "The IVORY",
+  "changed": {
+   "price_from": [
+    62257,
+    62256
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "tiger-downtown-ajman-orchid-towers-tiger-properties",
+  "name": "Tiger Downtown Ajman (Phase 1, Orchid Towers)",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "udaondo-buenos-aires-landmark-developments",
+  "name": "Udaondo Buenos Aires",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Fideicomiso Buenos Aires Landmark, the vehicle that bought the ex Tiro Federal land at public auction in 2018 for u$s 150 million (no buyer escrow or guarantee described)",
+    "Fideicomiso Buenos Aires Landmark (land purchase vehicle; no buyer escrow or guarantee mentioned)"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "one-true-blue-beach-goldblat",
+  "name": "ONE True Blue Beach Hotel & Residences (Tapestry Collection by Hilton)",
+  "changed": {
+   "advertised_yield_pct": [
+    null,
+    50
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "bela-beach-front-homes-gran-pacifica-eci",
+  "name": "BELA Beach Front Homes (Gran Pacifica)",
+  "changed": {
+   "price_from": [
+    null,
+    133797
+   ],
+   "currency": [
+    null,
+    "USD"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "anava-samui-zhongfa",
+  "name": "ANAVA Samui Oceanview Condominium",
+  "changed": {
+   "price_from": [
+    3737500,
+    3737499
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "next-gardens-kvariati-next-group",
+  "name": "NEXT Gardens",
+  "changed": {
+   "plans_published": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "bay-grove-residences-nakheel-dubai-islands",
+  "name": "Bay Grove Residences",
+  "changed": {
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "dwtn-residences-deyaar",
+  "name": "DWTN Residences (registered as Downtown Residences)",
+  "changed": {
+   "price_from": [
+    2005000,
+    2100000
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "naya-at-district-one-meydan",
+  "name": "Naya at District One",
+  "changed": {
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "alam-al-roum-qatari-diar",
+  "name": "Alam Al Roum (Alam El Roum)",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "wing-samui-condo-phase-2",
+  "name": "Wing Samui Condo (Phase 2)",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "antalya-suites-sur-yapi",
+  "name": "Sur Yapı Antalya Suites",
+  "changed": {
+   "escrow_or_guarantee": [
+    "A government-guaranteed project",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "vr-krtsanisi-resort-residence-vr-holding",
+  "name": "VR Krtsanisi Resort Residence",
+  "changed": {
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "basaksehir-avrasya-konutlari-cadde-fuzul-gyo",
+  "name": "Başakşehir Avrasya Konutları Cadde (Ayazma 4. Etap)",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "prime-villa-samui-supalai",
+  "name": "Prime Villa Samui",
+  "changed": {
+   "price_from": [
+    17590000,
+    17.59
+   ],
+   "currency": [
+    "THB",
+    null
+   ],
+   "permit_claim": [
+    true,
+    false
+   ],
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "yekta-golden-valley-yekta-homes",
+  "name": "Yekta Golden Valley",
+  "changed": {
+   "price_from": [
+    7121,
+    7126
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "oceana-wellness-residences-los-cabos",
+  "name": "OCEANA Wellness Residences",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "amanvari-residences-aman-private-villas-at-costa-palmas-los",
+  "name": "Amanvari Residences (Aman Private Villas) at Costa Palmas",
+  "changed": {
+   "price_from": [
+    6950000,
+    16950000
+   ]
+  }
  }
 ]
