@@ -49,9 +49,14 @@ jobs:
                   else: skipped += 1
           print(f"updated={upd} new_assets={new_assets} added={added} skipped_new={skipped}")
           PY
-          echo "files in deploy: $(git ls-files | wc -l) + new $(git status --porcelain | grep -c '^??' || true)"
-          total=$(( $(git ls-files | wc -l) + $(git status --porcelain --untracked-files=all | grep -c '^??' || true) ))
-          echo "total=$total"; if [ $total -gt 95000 ]; then echo "too many files for Cloudflare Pages"; exit 1; fi
+          # Count what each Cloudflare Pages project actually deploys (limit 20,000 files per deployment):
+          # web-lovable drops _s/realhunt.co and _s/go.realhunt.co in its build (realhunt.co is served from
+          # the realhunt-media project, root _s/realhunt.co), and _worker.js/ is the worker, not static files.
+          total=$(find . -type f -not -path './.git/*' | wc -l)
+          wl=$(find . -type f -not -path './.git/*' -not -path './_s/realhunt.co/*' -not -path './_s/go.realhunt.co/*' -not -path './_worker.js/*' | wc -l)
+          rhm=$(find ./_s/realhunt.co -type f 2>/dev/null | wc -l)
+          echo "files in branch=$total web-lovable deploy=$wl realhunt-media deploy=$rhm (limit 20000 each)"
+          if [ $wl -gt 19500 ] || [ $rhm -gt 19500 ]; then echo "too many files for a Cloudflare Pages deployment"; exit 1; fi
       - name: Commit
         env:
           MSG: ${{ github.event.inputs.message }}
