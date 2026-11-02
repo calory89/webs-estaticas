@@ -5750,5 +5750,417 @@
     true
    ]
   }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "j-hills",
+  "name": "J-Hills",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "secret-inshi",
+  "name": "SECRET by INSHI",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "morros-vita-serena-del-mar",
+  "name": "Morros Vita",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Fiduciary scheme administered by Alianza Fiduciaria, which oversees the correct administration of funds; buyers are linked to the fiduciary scheme",
+    "Alianza Fiduciaria, entidad encargada de velar por la correcta administración de los recursos; vinculación de compradores al esquema fiduciario"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "cocobay-da-nang",
+  "name": "Cocobay Da Nang",
+  "changed": {
+   "completion_year": [
+    2029,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "samana-sky-views-dpc",
+  "name": "Samana Sky Views",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "crystal-garden-cap-cana-gesproin",
+  "name": "Crystal Garden Cap Cana",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "al-mare-green-midtown-group",
+  "name": "Al Mare Green",
+  "changed": {
+   "plans_published": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9495,
+    9509
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "sea-cliff-imtiaz",
+  "name": "Sea Cliff by Imtiaz",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Bank United Bank Limited (Management Office), Escrow number 200927479",
+    "Bank United Bank Limited (Management Office) Escrow number 200927479"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "waterstone-st-leonards-sekisui-house",
+  "name": "Waterstone",
+  "changed": {
+   "plans_published": [
+    null,
+    true
+   ],
+   "escrow_or_guarantee": [
+    null,
+    "Waterstone now accepts deposit bonds, so you can exchange with no cash deposit."
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "rhea-by-sansiri",
+  "name": "Rhea by Sansiri",
+  "changed": {
+   "price_from": [
+    140819,
+    140818
+   ],
+   "title_type": [
+    null,
+    "leasehold"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "oak-yard-one-yard",
+  "name": "Oak Yard",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Bank Mashreq Bank Psc Escrow number 019500000733",
+    "Bank Mashreq Bank Psc, Escrow number 019500000733"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "quattro-del-mar-rak-properties",
+  "name": "Quattro Del Mar",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "noda-flores-noda-collective",
+  "name": "NODA Flores",
+  "changed": {
+   "extension_promised": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "casa-blake-costa-palmas-irongate",
+  "name": "Casa Blake at Costa Palmas",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "mamsha-palm-aldar",
+  "name": "Mamsha Palm",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "oystra-richmind",
+  "name": "Oystra",
+  "changed": {
+   "price_from": [
+    2586888,
+    2400000
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "the-ivory-chang-phueak-home-development-group",
+  "name": "The IVORY",
+  "changed": {
+   "title_type": [
+    "freehold",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "senna-tower-fg-empreendimentos",
+  "name": "Senna Tower",
+  "changed": {
+   "completion_year": [
+    null,
+    2033
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "boavista-tower-porto-mesmo-valor",
+  "name": "Boavista Tower",
+  "changed": {
+   "price_from": [
+    336900,
+    489900
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "the-launiu-ward-village-howard-hughes",
+  "name": "The Launiu Ward Village",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "melia-residences-bahrain-infracorp",
+  "name": "Meliá Residences Bahrain (Meliá Beachfront)",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "udaondo-buenos-aires-landmark-developments",
+  "name": "Udaondo Buenos Aires",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Fideicomiso Buenos Aires Landmark (named as the trust that bought the former Tiro Federal land at auction in 2018; no buyer escrow or guarantee mentioned)",
+    "Fideicomiso Buenos Aires Landmark, the vehicle that bought the ex Tiro Federal land at public auction in 2018 for u$s 150 million (no buyer escrow or guarantee described)"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "one-true-blue-beach-goldblat",
+  "name": "ONE True Blue Beach Hotel & Residences (Tapestry Collection by Hilton)",
+  "changed": {
+   "advertised_yield_pct": [
+    50,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "hilton-residences-abu-dhabi-al-raha-emirates-developments",
+  "name": "Hilton Residences Abu Dhabi Al Raha",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "nidapark-kucukyali-buyukada-tahincioglu",
+  "name": "Nidapark Küçükyalı (Büyükada phase)",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "next-gardens-kvariati-next-group",
+  "name": "NEXT Gardens",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "creek-waters-2-emaar",
+  "name": "Creek Waters 2",
+  "changed": {
+   "advertised_yield_pct": [
+    null,
+    5
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "bay-grove-residences-nakheel-dubai-islands",
+  "name": "Bay Grove Residences",
+  "changed": {
+   "plans_published": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "naya-at-district-one-meydan",
+  "name": "Naya at District One",
+  "changed": {
+   "plans_published": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "alam-al-roum-qatari-diar",
+  "name": "Alam Al Roum (Alam El Roum)",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "antalya-suites-sur-yapi",
+  "name": "Sur Yapı Antalya Suites",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ],
+   "escrow_or_guarantee": [
+    null,
+    "A government-guaranteed project"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "vr-krtsanisi-resort-residence-vr-holding",
+  "name": "VR Krtsanisi Resort Residence",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "basaksehir-avrasya-konutlari-cadde-fuzul-gyo",
+  "name": "Başakşehir Avrasya Konutları Cadde (Ayazma 4. Etap)",
+  "changed": {
+   "plans_published": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "prime-villa-samui-supalai",
+  "name": "Prime Villa Samui",
+  "changed": {
+   "permit_claim": [
+    false,
+    true
+   ],
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "yekta-golden-valley-yekta-homes",
+  "name": "Yekta Golden Valley",
+  "changed": {
+   "price_from": [
+    7115,
+    7121
+   ]
+  }
  }
 ]
