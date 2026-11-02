@@ -1077,3 +1077,7 @@ pre.mail{white-space:pre-wrap;font-family:inherit;font-size:1rem;background:#fff
 a.si{color:inherit;text-decoration:none}a.si:hover{background:rgba(255,255,255,.06)}a.si:focus-visible{outline:2px solid #FF8A55;outline-offset:-2px}
 .kcf{color:var(--ok);font-weight:800}
 @media (max-width:1100px) and (min-width:821px){.fgrid{grid-template-columns:1fr 1fr 1fr}}
+/* UX 2 Nov: ticker items are full-height tap targets; findings become a swipeable row on phones; calmer ticker for reduced motion */
+.ship .si{display:inline-flex;align-items:center;min-height:34px}
+@media (max-width:640px){#finds .fds{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0;padding:4px 0 10px;scrollbar-width:none;-webkit-overflow-scrolling:touch}#finds .fds::-webkit-scrollbar{display:none}#finds .fds .fd{flex:0 0 86%;scroll-snap-align:start}#finds .fds::after{content:"";flex:0 0 1px}}
+@media (prefers-reduced-motion:reduce){.ship-t{animation:none}}
