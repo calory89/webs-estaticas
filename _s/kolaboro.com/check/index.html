@@ -311,17 +311,27 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   function r29pos(){ var c = $('az-cp'), l = $('az-4') && $('az-4').querySelector('.lead'); if (c && l) l.parentNode.insertBefore(c, l.nextSibling); var b = c && c.querySelector('label'); if (b) b.innerHTML = '<b>Where should we send it?</b> <span>Your email, and we reply within one working day.</span>'; }
   function render(d){
     var r = d.report || {}, att = (r.attention || 'medium').toLowerCase();
+    if (d.not_property || r.page_kind === 'not_real_estate') {
+      $('az-4').innerHTML = '<p class="az-k">Desk review</p><h2>' + esc(d.host) + ' is not a property project</h2>' +
+        '<p class="lead">' + esc(r.site_about ? 'It looks like ' + r.site_about.replace(/^(a|an|the)\s+/i, function(x){ return x.toLowerCase(); }) + '.' : 'We could not find anything about a property for sale on this page.') + ' There is nothing for us to check here.</p>' +
+        '<p>Kolaboro reviews the website of an <b>off-plan project</b>, a <b>developer</b> or a <b>property listing</b>. Paste the page of the home you want to buy, for example the project page on the developer\'s site or the listing on a portal.</p>' +
+        '<p><button class="btn btn-hi" type="button" id="az-again">Check another link</button></p>';
+      show(4); var ag = $('az-again'); if (ag) ag.onclick = function(){ $('az-url').value = ''; show(1); setTimeout(function(){ $('az-url').focus(); }, 300); };
+      ev('desk_not_property', {}); if (window.kbLog) kbLog('desk_not_property', url); return;
+    }
+    var portal = r.page_kind === 'agency_or_portal';
     var facts = [['Project', r.project], ['Developer', r.developer], ['Location', r.location], ['Price from', r.price_from], ['Title', r.title_type], ['Lease', r.lease_years], ['Completion', r.completion], ['Return advertised', r.advertised_return], ['Permit claim', r.permit_claim]].filter(function(f){ return f[1]; });
-    var first = d.first ? 'Nobody had asked us about this project before. Your review is the first one.' : (d.tracked ? 'Our agent already follows this project.' : 'Desk review');
+    var first = portal ? 'Desk review of a portal or agency page' : d.first ? 'Nobody had asked us about this project before. Your review is the first one.' : (d.tracked ? 'Our agent already follows this project.' : 'Desk review');
     $('az-4').innerHTML = '<p class="az-k">' + esc(first) + '</p><h2>Desk review: ' + esc(r.project || d.host) + '</h2>' +
       '<p><span class="az-att ' + esc(att) + '">' + (att === 'high' ? 'High attention needed' : att === 'low' ? 'Low attention needed' : 'Medium attention needed') + '</span></p>' +
       '<p class="lead" style="margin-top:12px">' + esc(r.summary) + '</p>' +
+      (portal ? '<p class="az-note" style="background:#fff4ec;border-radius:12px;padding:12px 14px">This page lists many properties, so the review is general. For a precise answer, paste the page of the <b>one project or home</b> you want to buy.</p>' : '') +
       (facts.length ? '<div class="az-facts">' + facts.map(function(f){ return '<div><span>' + f[0] + '</span><b>' + esc(f[1]) + '</b></div>'; }).join('') + '</div>' : '') +
       '<div id="az-bench"></div>' + '<div class="az-res"><div class="az-box"><h3>Ask these before you pay</h3><ol>' + (r.questions || []).map(function(q){ return '<li>' + esc(q) + '</li>'; }).join('') + '</ol></div>' +
       '<div class="az-box"><h3>What the website promises</h3><ul>' + (r.promises || []).map(function(q){ return '<li>' + esc(q) + '</li>'; }).join('') + '</ul>' +
       ((r.missing || []).length ? '<h3 style="margin-top:14px">What it doesn\'t say</h3><ul>' + r.missing.map(function(q){ return '<li>' + esc(q) + '</li>'; }).join('') + '</ul>' : '') + '</div></div>' +
       cta() + '<p class="muted" style="font-size:.82rem;margin-top:12px">Automated desk review of what the website itself says, on ' + new Date(d.analysed).toUTCString().slice(5, 16) + '. Advertised claims, not verified facts, and not a judgement of the developer.</p>';
-    show(4); if (!isResale(r)) bench(r); ev('desk_done', { att: att, first: !!d.first }); if (window.kbLog) kbLog('desk_done', url);
+    show(4); if (!isResale(r) && !portal) bench(r); ev('desk_done', { att: att, first: !!d.first }); if (window.kbLog) kbLog('desk_done', url);
   }
 })();
 </script>

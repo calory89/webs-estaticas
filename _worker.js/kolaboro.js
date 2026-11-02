@@ -10,8 +10,11 @@ const TRACKED = ['every-bali.com', 'balitecture.com', 'breig-property.com', 'mag
 
 const PROMPT = `You are the research agent of Kolaboro, a company that protects people who buy property abroad, especially off-plan.
 Below is the text of a web page about a property project. Extract ONLY what the page itself says. Never guess, never accuse.
+First decide what kind of page this is. If the site is not about buying or selling property (for example news, sport, shopping, a blog, a search engine, a social network, a bank, a hotel booking site, or anything else that is not real estate for sale), set "page_kind" to "not_real_estate", set every property field to null, leave every list empty, set "attention" to "low" and use "summary" to say plainly what the site is and that it is not a property project.
 Reply with ONLY one JSON object, no other text:
 {
+ "page_kind": "project"|"listing"|"developer_site"|"agency_or_portal"|"not_real_estate",
+ "site_about": "what this website is, in under 10 words",
  "project": string|null, "developer": string|null, "location": string|null, "country": string|null,
  "property_type": string|null, "price_from": string|null,
  "title_type": "leasehold"|"freehold"|"company structure"|"other"|null, "lease_years": string|null,
@@ -89,7 +92,7 @@ async function analyze(req, env, ctx) {
   if (!u) return json({ error: 'url' }, 400);
   const host = u.hostname.replace(/^www\./, '');
   const tracked = TRACKED.some(d => host === d || host.endsWith('.' + d));
-  const ck = new Request('https://kolaboro.com/__kb_desk/' + encodeURIComponent(host + u.pathname.replace(/\/$/, '') + u.search));
+  const ck = new Request('https://kolaboro.com/__kb_desk3/' + encodeURIComponent(host + u.pathname.replace(/\/$/, '') + u.search));
   const cache = caches.default;
   const hit = await cache.match(ck);
   if (hit) { const d = await hit.json(); return json({ ...d, cached: true, first: false, tracked }); }
@@ -110,9 +113,11 @@ async function analyze(req, env, ctx) {
   let out;
   try { out = await claude(env, PROMPT + '\n\nURL: ' + u.toString() + '\nPage text:\n<<<\n' + text + '\n>>>'); }
   catch (e) { return json({ error: 'model', detail: String(e.message || e).replace(/sk-[\w-]+/g, '') }, 503); }
-  const res = { url: u.toString(), host, analysed: new Date().toISOString(), report: out };
+  const notProp = !out || out.page_kind === 'not_real_estate';
+  if (notProp && out) { ['questions', 'promises', 'missing'].forEach(k => { out[k] = []; }); out.attention = 'low'; }
+  const res = { url: u.toString(), host, analysed: new Date().toISOString(), report: out, not_property: notProp };
   ctx.waitUntil(cache.put(ck, new Response(JSON.stringify(res), { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=604800' } })));
-  return json({ ...res, cached: false, first: !tracked, tracked });
+  return json({ ...res, cached: false, first: !tracked && !notProp && (out.page_kind === 'project' || out.page_kind === 'developer_site' || out.page_kind === 'listing'), tracked });
 }
 
 
@@ -806,6 +811,7 @@ async function telegram(req, env, ctx) {
     let d; try { d = await (await analyze(fake, env, ctx)).json(); } catch (e) { d = { error: 'fetch' }; }
     if (d.error) return tgSend(env, chat, d.error === 'rate' ? 'Too many checks right now. Try again in a few minutes.' : 'I could not read that page. Try the project or developer page itself, or use https://kolaboro.com/check');
     const r = d.report || {}, L = [];
+    if (d.not_property || r.page_kind === 'not_real_estate') return tgSend(env, chat, tgEsc(d.host) + ' is not a property project' + (r.site_about ? ' (' + tgEsc(r.site_about) + ')' : '') + ', so there is nothing to check.\n\nSend me the link to an off-plan project, a developer website or a property listing.');
     L.push('<b>' + tgEsc(r.project || d.host) + '</b>' + (r.location ? ' · ' + tgEsc(r.location) : ''));
     L.push('Attention needed: <b>' + tgEsc(r.attention || 'unknown') + '</b>');
     if (r.summary) L.push(tgEsc(r.summary));
