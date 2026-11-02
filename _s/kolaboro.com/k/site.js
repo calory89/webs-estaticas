@@ -48,6 +48,42 @@
       shipDur();
     });
   }
+  // live trust strip: daily self-test and public log, straight from the public endpoints
+  var trust = document.getElementById('trust');
+  if (trust) {
+    var lg = document.documentElement.lang || 'en', hideT = function (id) { var e = document.getElementById(id); if (e) e.hidden = true; };
+    fetch('https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/kolaboro_public_status', { method: 'POST', headers: { apikey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw', Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw', 'Content-Type': 'application/json' }, body: '{}' })
+      .then(function (r) { return r.ok ? r.json() : null; }).then(function (s) {
+        var t = s && s.selftests && s.selftests[0]; if (!t || !t.ok) return hideT('tr-st');
+        var a = document.getElementById('tr-st'); a.querySelector('.tr-d').className = 'tr-d g';
+        try { a.querySelector('span').textContent = '· ' + new Date(t.at).toLocaleDateString(lg, { day: 'numeric', month: 'short' }); } catch (e) {}
+      }).catch(function () { hideT('tr-st'); });
+    fetch('/api/open/log').then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
+      var n = d && d.heads ? d.heads.length : 0; if (!n) return hideT('tr-log');
+      var a = document.getElementById('tr-log'); a.querySelector('b').textContent = n.toLocaleString(lg); a.querySelector('.tr-d').className = 'tr-d g';
+    }).catch(function () { hideT('tr-log'); });
+  }
+  // product video in a lightbox instead of leaving the page
+  var VCL = { en: 'Close video', es: 'Cerrar vídeo', de: 'Video schließen', fr: 'Fermer la vidéo', ru: 'Закрыть видео', nl: 'Video sluiten', ar: 'إغلاق الفيديو', zh: '关闭视频' };
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('a[data-ev="hero_demo"],a[data-video]');
+    if (!a || e.metaKey || e.ctrlKey || e.shiftKey || typeof HTMLDialogElement !== 'function') return;
+    e.preventDefault();
+    var d = document.getElementById('kb-vd');
+    if (!d) {
+      var lg2 = (document.documentElement.lang || 'en').slice(0, 2);
+      d = document.createElement('dialog'); d.id = 'kb-vd'; d.className = 'kb-vd';
+      d.innerHTML = '<button type="button" class="kb-vd-x" aria-label="' + (VCL[lg2] || VCL.en) + '">×</button><video controls playsinline preload="metadata" poster="/k/v/demo-2026-poster.jpg" src="/k/kolaboro-demo-2026.mp4"></video>';
+      document.body.appendChild(d);
+      d.querySelector('.kb-vd-x').addEventListener('click', function () { d.close(); });
+      d.addEventListener('click', function (x) { if (x.target === d) d.close(); });
+      d.addEventListener('close', function () { d.querySelector('video').pause(); });
+    }
+    d.showModal(); var v = d.querySelector('video'); try { var p = v.play(); if (p && p.catch) p.catch(function () {}); } catch (x) {}
+  });
+  // keyboard: an element with data-kbd="/" gets focus when "/" is pressed outside a field
+  var kbdEl = document.querySelector('[data-kbd="/"]');
+  if (kbdEl) document.addEventListener('keydown', function (e) { var t = e.target; if (e.key !== '/' || e.metaKey || e.ctrlKey || e.altKey || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName) || t.isContentEditable) return; e.preventDefault(); kbdEl.focus(); kbdEl.scrollIntoView({ block: 'center', behavior: 'smooth' }); });
   // tracked clicks
   document.addEventListener('click', function (e) {
     var a = e.target.closest('[data-ev]');
