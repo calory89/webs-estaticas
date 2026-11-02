@@ -60,7 +60,7 @@
       }).catch(function () { hideT('tr-st'); });
     fetch('/api/open/log').then(function (r) { return r.ok ? r.json() : null; }).then(function (d) {
       var n = d && d.heads ? d.heads.length : 0; if (!n) return hideT('tr-log');
-      var a = document.getElementById('tr-log'); a.querySelector('b').textContent = n.toLocaleString(lg); a.querySelector('.tr-d').className = 'tr-d g';
+      var a = document.getElementById('tr-log'); a.querySelector('.tr-d').className = 'tr-d g'; var first = d.heads[d.heads.length - 1].day; try { var ds = new Date(first + 'T12:00:00Z').toLocaleDateString(lg, { day: 'numeric', month: 'short' }), l2 = lg.slice(0, 2), SN = { de: 'seit ', fr: 'depuis le ', ru: 'с ', nl: 'sinds ', ar: 'منذ ', es: 'desde el ' }; a.querySelector('span').textContent = '· ' + (l2 === 'zh' ? ds + '起' : (SN[l2] || 'since ') + ds); } catch (e) {}
     }).catch(function () { hideT('tr-log'); });
   }
   // product video in a lightbox instead of leaving the page
