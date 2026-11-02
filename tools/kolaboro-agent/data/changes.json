@@ -6741,5 +6741,263 @@
     36000000
    ]
   }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "j-hills",
+  "name": "J-Hills",
+  "changed": {
+   "title_type": [
+    null,
+    "leasehold"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "natha-loka",
+  "name": "Natha Loka Eco Village",
+  "changed": {
+   "advertised_yield_pct": [
+    14,
+    7
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "reserva-natural-san-jose-natura-itagui",
+  "name": "Reserva Natural San José Natura",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Alianza Fiduciaria, fiducia de este proyecto",
+    "Alianza Fiduciaria is named as the trust (fiducia) of the project; no escrow or guarantee terms are described"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "al-mare-green-midtown-group",
+  "name": "Al Mare Green",
+  "changed": {
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "querencia-dovec-group",
+  "name": "Querencia",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9523,
+    9525
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "rhea-by-sansiri",
+  "name": "Rhea by Sansiri",
+  "changed": {
+   "price_from": [
+    140818,
+    140819
+   ],
+   "title_type": [
+    null,
+    "leasehold"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "gardenia-bay-aldar",
+  "name": "Gardenia Bay",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Bank Name: First Abu Dhabi Bank (FAB); Escrow No: 4031221018122040; Project No: 20230000070554; Registration Date: 2023-Jul-31",
+    "Bank Name: First Abu Dhabi Bank (FAB); Escrow No 4031221018122040"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "casa-blake-costa-palmas-irongate",
+  "name": "Casa Blake at Costa Palmas",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "mamsha-palm-aldar",
+  "name": "Mamsha Palm",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "tiger-downtown-ajman-orchid-towers-tiger-properties",
+  "name": "Tiger Downtown Ajman (Phase 1, Orchid Towers)",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "penha-living-bolder-addsolid",
+  "name": "Penha Living Bolder",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "udaondo-buenos-aires-landmark-developments",
+  "name": "Udaondo Buenos Aires",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Fideicomiso Buenos Aires Landmark (page says the group bought the ex Tiro Federal land through this trust in 2018; no buyer escrow described)",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "solea-saadiyat-taraf",
+  "name": "Solea by Taraf",
+  "changed": {
+   "permit_number": [
+    "20250000429282",
+    "Project No. 20250000429282"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "harmony-ocean-front-ja-russi",
+  "name": "Harmony Ocean Front",
+  "changed": {
+   "permit_number": [
+    "Registro de Incorporação R13 da Matrícula nº 135.051",
+    "R13 da Matrícula nº 135.051"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "hilton-residences-abu-dhabi-al-raha-emirates-developments",
+  "name": "Hilton Residences Abu Dhabi Al Raha",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "dwtn-residences-deyaar",
+  "name": "DWTN Residences (registered as Downtown Residences)",
+  "changed": {
+   "price_from": [
+    2100000,
+    2005000
+   ],
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "naya-at-district-one-meydan",
+  "name": "Naya at District One",
+  "changed": {
+   "plans_published": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "wing-samui-condo-phase-2",
+  "name": "Wing Samui Condo (Phase 2)",
+  "changed": {
+   "price_from": [
+    2989999,
+    2990000
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "antalya-suites-sur-yapi",
+  "name": "Sur Yapı Antalya Suites",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ],
+   "escrow_or_guarantee": [
+    "government-guaranteed project",
+    "A government-guaranteed project"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "yekta-golden-valley-yekta-homes",
+  "name": "Yekta Golden Valley",
+  "changed": {
+   "price_from": [
+    7127,
+    7129
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "amanvari-residences-aman-private-villas-at-costa-palmas-los",
+  "name": "Amanvari Residences (Aman Private Villas) at Costa Palmas",
+  "changed": {
+   "price_from": [
+    36000000,
+    16950000
+   ]
+  }
  }
 ]
