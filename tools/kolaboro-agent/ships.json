@@ -2,13 +2,13 @@
  {
   "d": "2026-11-02",
   "k": "feature",
-  "t": "Public system status: daily end-to-end self-test, email delivery, data freshness and site quality, measured by the system itself",
+  "t": "Status page now shows the daily end-to-end self-test, email delivery and site quality, measured by the system itself",
   "u": "/status/"
  },
  {
   "d": "2026-11-02",
   "k": "feature",
-  "t": "Public metrics, live from the production database: leads, desk reviews, accounts and cases week by week, small numbers included",
+  "t": "Open metrics now include buyer accounts, saved projects, share links and median first reply time",
   "u": "/metrics/"
  },
  {
