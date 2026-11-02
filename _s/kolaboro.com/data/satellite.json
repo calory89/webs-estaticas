@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01",
+ "updated": "2026-11-02",
  "source": "Copernicus Sentinel-2 L2A, Copernicus Data Space Ecosystem",
  "processing_units": 1788.9,
  "sites": [
@@ -52,8 +52,8 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-05",
+     "to": "2026-11-02",
      "vegetation_pct": 70.7,
      "clear_pct": 100
     }
@@ -109,8 +109,8 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-05",
+     "to": "2026-11-02",
      "vegetation_pct": 13.9,
      "clear_pct": 100
     }
@@ -166,8 +166,8 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-05",
+     "to": "2026-11-02",
      "vegetation_pct": 46.4,
      "clear_pct": 100
     }
@@ -223,8 +223,8 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-05",
+     "to": "2026-11-02",
      "vegetation_pct": 0.6,
      "clear_pct": 100
     }
@@ -280,8 +280,8 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-05",
+     "to": "2026-11-02",
      "vegetation_pct": 8.4,
      "clear_pct": 100
     }
@@ -337,8 +337,8 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-05",
+     "to": "2026-11-02",
      "vegetation_pct": 14.6,
      "clear_pct": 100
     }
@@ -394,8 +394,8 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-05",
+     "to": "2026-11-02",
      "vegetation_pct": 0.1,
      "clear_pct": 100
     }
@@ -451,8 +451,8 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-05",
+     "to": "2026-11-02",
      "vegetation_pct": 31.2,
      "clear_pct": 100
     }
@@ -508,9 +508,9 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
-     "vegetation_pct": 36.1,
+     "from": "2026-07-05",
+     "to": "2026-11-02",
+     "vegetation_pct": 36.7,
      "clear_pct": 100
     }
    ],
@@ -565,8 +565,8 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-05",
+     "to": "2026-11-02",
      "vegetation_pct": 15.3,
      "clear_pct": 100
     }
@@ -622,9 +622,9 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
-     "vegetation_pct": 26.9,
+     "from": "2026-07-05",
+     "to": "2026-11-02",
+     "vegetation_pct": 27.0,
      "clear_pct": 100
     }
    ],
@@ -679,9 +679,9 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
-     "vegetation_pct": 37.1,
+     "from": "2026-07-05",
+     "to": "2026-11-02",
+     "vegetation_pct": 38.1,
      "clear_pct": 100
     }
    ],
@@ -736,8 +736,8 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-05",
+     "to": "2026-11-02",
      "vegetation_pct": 20.8,
      "clear_pct": 100
     }
@@ -793,8 +793,8 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-05",
+     "to": "2026-11-02",
      "vegetation_pct": 4.5,
      "clear_pct": 100
     }
@@ -850,9 +850,9 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
-     "vegetation_pct": 16.9,
+     "from": "2026-07-05",
+     "to": "2026-11-02",
+     "vegetation_pct": 16.7,
      "clear_pct": 100
     }
    ],
@@ -907,8 +907,8 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-05",
+     "to": "2026-11-02",
      "vegetation_pct": 4.4,
      "clear_pct": 100
     }
@@ -964,8 +964,8 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-05",
+     "to": "2026-11-02",
      "vegetation_pct": 13.4,
      "clear_pct": 100
     }
@@ -1021,8 +1021,8 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-05",
+     "to": "2026-11-02",
      "vegetation_pct": 37.0,
      "clear_pct": 100
     }
@@ -1078,8 +1078,8 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-05",
+     "to": "2026-11-02",
      "vegetation_pct": 0.0,
      "clear_pct": 100
     }
@@ -1135,9 +1135,9 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
-     "vegetation_pct": 1.8,
+     "from": "2026-07-05",
+     "to": "2026-11-02",
+     "vegetation_pct": 1.9,
      "clear_pct": 100
     }
    ],
@@ -1192,8 +1192,8 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-05",
+     "to": "2026-11-02",
      "vegetation_pct": 42.7,
      "clear_pct": 100
     }
@@ -1249,8 +1249,8 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-05",
+     "to": "2026-11-02",
      "vegetation_pct": 39.5,
      "clear_pct": 100
     }
@@ -1306,8 +1306,8 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-05",
+     "to": "2026-11-02",
      "vegetation_pct": 19.4,
      "clear_pct": 100
     }
@@ -1363,8 +1363,8 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-05",
+     "to": "2026-11-02",
      "vegetation_pct": 35.6,
      "clear_pct": 100
     }
@@ -1420,9 +1420,9 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
-     "vegetation_pct": 25.4,
+     "from": "2026-07-05",
+     "to": "2026-11-02",
+     "vegetation_pct": 25.2,
      "clear_pct": 100
     }
    ],
@@ -1477,8 +1477,8 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-05",
+     "to": "2026-11-02",
      "vegetation_pct": 17.8,
      "clear_pct": 100
     }
@@ -1534,8 +1534,8 @@
     {
      "label": "Last 120 days",
      "key": "latest",
-     "from": "2026-07-04",
-     "to": "2026-11-01",
+     "from": "2026-07-05",
+     "to": "2026-11-02",
      "vegetation_pct": 19.4,
      "clear_pct": 100
     }
