@@ -3,10 +3,10 @@
 <title>Your case | Kolaboro</title><meta name="robots" content="noindex,nofollow"><link rel="icon" href="/k/favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#17212B">
 <link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/k/app.css?v=c20f3234be">
 
-<link rel="manifest" href="/portal/manifest.webmanifest"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="/agents/icon-192.png">
+<script src="/portal/es.js?v=b24ec127"></script><link rel="manifest" href="/portal/manifest.webmanifest"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="/agents/icon-192.png">
 <script>addEventListener("load",function(){setTimeout(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V";document.head.appendChild(s)},1500)})</script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');gtag('config','G-H5TGZJ1KNG');</script></head><body>
 <header class="ap-top"><div class="ap-top-in"><a class="ap-brand" href="/portal"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4v24M8 16 23 6.5M8 16l15 9.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="24" cy="6" r="3.4" fill="currentColor"/><circle cx="24" cy="26" r="3.4" fill="currentColor"/><circle cx="8" cy="16" r="4.2" fill="#FF5B14"/></svg>kolaboro</a><span class="ap-muted" style="color:#9FB0BF" id="who"></span><span class="ap-sp"></span>
-<button class="ap-chip" id="newc">+ Project</button><button class="ap-chip" id="pwb">Password</button><button class="ap-chip" id="out">Log out</button></div></header>
+<button class="ap-chip" id="lng" title="English / Español">ES</button><button class="ap-chip" id="newc">+ Project</button><button class="ap-chip" id="pwb">Password</button><button class="ap-chip" id="out">Log out</button></div></header>
 <main class="ap-main" id="app" data-clarity-mask="true"><div class="ap-card"><div class="ap-skel" style="width:40%"></div><div class="ap-skel"></div><div class="ap-skel" style="width:70%"></div></div></main>
 <script>
 var KB = (function(){
@@ -37,7 +37,7 @@ var KB = (function(){
   function kev(n, p){ try { if (window.gtag) gtag('event', n, p || {}); } catch (e) {} try { if (window.clarity) clarity('event', n); } catch (e) {} }
   var TAGGED = false;
   function call(action, payload){ if (D && D.user && D.user.demo && ['me','read','logout'].indexOf(action || 'me') < 0) { KB.toast('This is the demo account: nothing is saved. Create your own case to try it for real.'); return Promise.resolve(D); } return KB.rpc('kolaboro_portal', { p_token: TOKEN, p_action: action || 'me', p_payload: payload || {} }).then(function(d){ if (d.error === 'auth') { KB.del('kb-token'); KB.del('kb-token-as'); location.href = '/login'; } return d; }); }
-  function fmt(t, withTime){ if (!t) return ''; var d = new Date(t); return d.toLocaleDateString(undefined, { day:'numeric', month:'short', year: d.getFullYear() !== new Date().getFullYear() ? 'numeric' : undefined }) + (withTime ? ' · ' + d.toTimeString().slice(0,5) : ''); }
+  function fmt(t, withTime){ if (!t) return ''; var d = new Date(t); return d.toLocaleDateString(window.KB_LOCALE || undefined, { day:'numeric', month:'short', year: d.getFullYear() !== new Date().getFullYear() ? 'numeric' : undefined }) + (withTime ? ' · ' + d.toTimeString().slice(0,5) : ''); }
   function days(t){ return Math.ceil((new Date(t) - new Date()) / 864e5); }
   function load(action, payload){ return call(action, payload).then(function(d){ if (d.error) { KB.toast('Could not save: ' + d.error); return; } D = d; if (!CUR || !D.cases.some(function(c){ return c.id === CUR; })) CUR = D.cases[0] && D.cases[0].id; render(); syncWatch();
     if (!TAGGED && !D.user.admin_view && !D.user.demo) { TAGGED = true; try { if (window.clarity) { clarity('set', 'account', D.user.status || ''); clarity('set', 'cases', String(D.cases.length)); clarity('set', 'paid_case', D.cases.some(function(c){ return c.paid; }) ? 'yes' : 'no'); } } catch (e) {} }
@@ -243,6 +243,7 @@ var KB = (function(){
   $('out').onclick = function(){ if (D && D.user && D.user.demo) { KB.del('kb-token-as'); location.href = '/'; return; } call('logout').then(function(){ KB.del('kb-token'); KB.del('kb-token-as'); location.href = '/login'; }); };
   $('pwb').onclick = function(){ var o = prompt('Current password'); if (!o) return; var n = prompt('New password (at least 8 characters)'); if (!n) return; call('password', { old: o, 'new': n }).then(function(d){ KB.toast(d.error ? (d.error === 'wrong' ? 'Current password is wrong' : 'Use at least 8 characters') : 'Password changed'); }); };
   function newCase(){ var u = prompt('Website of the project you want us to check'); if (!u) return; load('new_case', { project_url: u }).then(function(){ CUR = D.cases[0].id; render(); KB.toast('New case opened'); }); }
+  var lb = $('lng'); if (lb) { lb.textContent = window.KB_LANG === 'es' ? 'EN' : 'ES'; lb.title = window.KB_LANG === 'es' ? 'View in English' : 'Ver en español'; lb.onclick = function(){ try { localStorage.setItem('kb-lang', window.KB_LANG === 'es' ? 'en' : 'es'); } catch (e) {} location.reload(); }; }
   $('newc').onclick = newCase; document.addEventListener('click', function(e){ if (e.target.id === 'nc2') newCase(); });
   load('me');
   setInterval(function(){ if (!document.hidden && !document.activeElement.closest('form')) load('me'); }, 45000);
