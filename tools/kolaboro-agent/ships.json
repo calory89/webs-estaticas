@@ -2,6 +2,12 @@
  {
   "d": "2026-11-02",
   "k": "feature",
+  "t": "Every open API answer and evidence receipt signed with Kolaboro's Ed25519 key; public key at /.well-known/kolaboro-keys.json, check it on /verify",
+  "u": "/verify/#sig"
+ },
+ {
+  "d": "2026-11-02",
+  "k": "feature",
   "t": "Public log: one hash-chained line a day fixes the dataset, page fingerprints, site evidence and admin audit trail, timestamped in Bitcoin",
   "u": "/log/"
  },
