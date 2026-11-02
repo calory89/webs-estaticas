@@ -17395,7 +17395,7 @@ function card$1(t, p, city, L, cityImg, slug, price) {
 	if (g.extras?.length) rows.push(`<dt>${esc(x.extras)}</dt><dd>${esc(g.extras.join(" · "))}</dd>`);
 	if (g.access) rows.push(`<dt>${esc(x.access)}</dt><dd>${esc(g.access)}</dd>`);
 	const stars = p.stars ? `${"★".repeat(p.stars)} · ` : "";
-	return `<article class="gcard ${t}" id="${t}"><div class="ph">${chips}${price ? `<span class="pricetag gprice" data-eur="${price.nightly}" title="${esc(Y[L].priceRef(isoOf(price.checked) || "2026"))}"><span class="v">${money(price.nightly)}</span><small> ${esc(x.perNight)}</small></span>` : ""}${img ? `<img src="${ESC_URL(img)}" alt="${esc(`${p.hotel}, ${city.city}`)}" width="640" height="480" loading="lazy" referrerpolicy="no-referrer"${fbAttr([...phs.slice(1), cityImg])}><small>${esc(credit)}</small>` : ""}</div>
+	return `<article class="gcard ${t}" id="${t}"><div class="ph">${chips}${price ? `<span class="pricetag gprice" data-eur="${price.nightly}" title="${esc(Y[L].priceRef(isoOf(price.checked) || "2026"))}"><span class="v">${money(price.nightly)}</span><small> ${esc(x.perNight)}</small></span>` : ""}${img ? `<img src="${ESC_URL(img)}"${bsSet(img)} alt="${esc(`${p.hotel}, ${city.city}`)}" width="640" height="480" loading="lazy" referrerpolicy="no-referrer"${fbAttr([...phs.slice(1), cityImg])}><small>${esc(credit)}</small>` : ""}</div>
 <div class="bd"><h2>${esc(p.hotel)}</h2><div class="meta">${stars}${esc(p.area ?? city.city)}</div><p>${esc(L === "es" ? p.summary_es : p.summary_en)}</p>${rows.length ? `<dl>${rows.join("")}</dl>` : ""}${p.confidence === "low" ? `<p class="warn">${esc(x.low)}</p>` : ""}
 ${ctasFor(p, x, slug, t)}
 <div class="src">${esc(x.sources)}: ${p.sources.map((s) => srcLink(s)).join("")}</div></div></article>`;
@@ -17658,7 +17658,13 @@ function hotelPhotos(bookingUrl, have = []) {
 	return out;
 }
 /* Runtime fallback: if a photo fails, swap to the next stored photo of the same hotel (last: the city photo). */
-var FB_ON = "var f=(this.dataset.fb||'').split('|').filter(Boolean);if(f.length){this.dataset.fb=f.slice(1).join('|');this.src=f[0]}else{this.onerror=null}";
+var FB_ON = "var f=(this.dataset.fb||'').split('|').filter(Boolean);this.removeAttribute('srcset');if(f.length){this.dataset.fb=f.slice(1).join('|');this.src=f[0]}else{this.onerror=null}";
+/* Responsive Booking.com photos: bstatic serves the same signed photo at max500/max750/max1024x768. */
+var bsSet = (u, sizes = "(max-width: 700px) 92vw, 400px") =>
+  /^https:\/\/cf\.bstatic\.com\/xdata\/images\/hotel\/max1024x768\//.test(String(u ?? ""))
+    ? ` srcset="${esc(String(u).replace("/max1024x768/", "/max500/"))} 500w, ${esc(String(u).replace("/max1024x768/", "/max750/"))} 750w, ${esc(String(u))} 1024w" sizes="${sizes}"`
+    : "";
+
 var fbAttr = (list) => ` data-fb="${esc(list.filter(Boolean).join("|"))}" onerror="${FB_ON}"`;
 var hotelKey = (h) => {
 	try {
@@ -18482,7 +18488,7 @@ function card(h, city, i, L, sights, cityImg, review) {
 		h.candidateCount ? y.whyFrom(h.candidateCount) : ""
 	].filter(Boolean);
 	return `<article class="card ${k}" id="${k}">
-<div class="media"${gal.length ? ` data-gallery="${esc(JSON.stringify(gal))}"` : ""}><div class="acts"><button type="button" data-fav="${esc(JSON.stringify(fav))}" aria-pressed="false" aria-label="${esc(y.js["save"])}">♡</button><button type="button" data-sharecard="${esc(`${SITE}${P(L, "/" + city.slug)}#${k}`)}" data-title="${esc(`${label(h, L)}: ${h.name} · ${city.city}`)}" aria-label="${esc(y.js["share"])}">↗</button></div>${img ? `<img src="${esc(img)}" alt="${esc(h.name)}, ${esc(city.city)}" width="600" height="400" loading="lazy" decoding="async" referrerpolicy="no-referrer"${fbAttr([...gal.slice(1), cityImg])}>` : cityImg ? `<img src="${esc(cityImg)}" alt="${esc(city.city)}" loading="lazy"><span class="cityphoto">${esc(t.cityPhoto)}</span>` : `<div class="nophoto">${esc(h.name.slice(0, 1))}</div>`}
+<div class="media"${gal.length ? ` data-gallery="${esc(JSON.stringify(gal))}"` : ""}><div class="acts"><button type="button" data-fav="${esc(JSON.stringify(fav))}" aria-pressed="false" aria-label="${esc(y.js["save"])}">♡</button><button type="button" data-sharecard="${esc(`${SITE}${P(L, "/" + city.slug)}#${k}`)}" data-title="${esc(`${label(h, L)}: ${h.name} · ${city.city}`)}" aria-label="${esc(y.js["share"])}">↗</button></div>${img ? `<img src="${esc(img)}"${bsSet(img)} alt="${esc(h.name)}, ${esc(city.city)}" width="600" height="400" loading="lazy" decoding="async" referrerpolicy="no-referrer"${fbAttr([...gal.slice(1), cityImg])}>` : cityImg ? `<img src="${esc(cityImg)}" alt="${esc(city.city)}" loading="lazy"><span class="cityphoto">${esc(t.cityPhoto)}</span>` : `<div class="nophoto">${esc(h.name.slice(0, 1))}</div>`}
 <div class="badge"><span><i class="ico" aria-hidden="true">${k === "budget" ? "€" : k === "value" ? "★" : "♛"}</i>${esc(label(h, L))}</span>${i === 1 ? `<span class="pick">★ ${esc(t.ourPick)}</span>` : ""}${h.deal ? `<span class="pick deal">🔥 ${esc(M[L].deal)}</span>` : ""}</div>
 <div class="over">${b.score ? `<span class="ring" style="--p:${Math.round(b.score * 10)}" title="Booking.com ${b.score.toFixed(1)}/10"><b>${b.score.toFixed(1)}</b></span>` : "<span></span>"}<span class="pricetag" data-eur="${o.nightly ?? ""}" title="${esc(y.priceRef(fmtDate(isoDay(b.checked), L)))}"><span class="v">${money(o.nightly)}</span><small> ${esc(t.perNight)}</small></span></div></div>
 <div class="body"><h2 class="hname">${esc(h.name)}</h2>
