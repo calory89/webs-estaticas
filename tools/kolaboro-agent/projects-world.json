@@ -154404,6 +154404,683 @@
    "added": "2026-10-31",
    "verified_score": 0,
    "permit_number": null
+  },
+  {
+   "name": "BAO Puerto Morelos",
+   "developer": "Grupo Origen (named by one agent page only; other portals name different developers)",
+   "area": "Puerto Morelos, Quintana Roo",
+   "country": "Mexico",
+   "market": "Riviera Maya",
+   "stage": "off-plan",
+   "url": "https://mayaocean.com/complex/bao",
+   "docs_url": "https://mayaocean.com/complex/bao",
+   "permit_number": null,
+   "seed": {
+    "price": 213438,
+    "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "March 2028 (agent estimate; other portals say December 2027 or March 2027)",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": "Agent claim only: Riva Playasur, Kaab, Ceren, Icht Tulum. Not checked.",
+    "units": 106,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "contradicted",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Estimated delivery March 2028",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://sucasacancun.com/en/property/bao-puerto-morelos-condos-for-sale/"
+    },
+    {
+     "claim": "Developer is Grupo Origen",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://www.susimacdonald.com/real-estate-listings/bao---puerto-morelos"
+    },
+    {
+     "claim": "Designed to operate as a condo-hotel",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://en.costarealty.com.mx/property/bao-puerto-morelos/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "construction_start": null,
+    "handover_promised": "March 2028 (one agent); December 2027 and March 2027 on other portals",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1 bedroom",
+     "2 bedroom",
+     "3 bedroom",
+     "penthouse 1 to 4 bedroom"
+    ],
+    "size_min_m2": 45,
+    "size_max_m2": 321,
+    "price_min": 213438,
+    "price_max": 1631393,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": "Condo-hotel design (agent claim); no programme terms seen",
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Beachfront, two-tower development offered as pre-construction by agents. The developer is named differently by each source, and I could not find or open a developer page. Only agents and portals were opened, so no permit, escrow or progress data was seen.",
+   "positives": [
+    "Per-unit floor plan images are published on the Maya Ocean portal",
+    "Multiple independent agents list it as pre-construction"
+   ],
+   "flags": [],
+   "sources": [
+    "https://en.costarealty.com.mx/property/bao-puerto-morelos/",
+    "https://mayaocean.com/complex/bao",
+    "https://realestateamoramar.com/property/bao-puerto-morelos/",
+    "https://rivieramayainvestments.com/bao-puerto-morelos/",
+    "https://sucasacancun.com/en/property/bao-puerto-morelos-condos-for-sale/",
+    "https://www.rivieramayarealestategroup.com/properties/puerto-morelos-real-estate/bao-beachfront-residences/",
+    "https://www.susimacdonald.com/real-estate-listings/bao---puerto-morelos",
+    "https://www.zisla.com/en/properties/quintana_roo-puerto-morelos-bao-puerto-morelos"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-02",
+   "found_by": "discover-agent",
+   "slug": "bao-puerto-morelos-riviera-maya"
+  },
+  {
+   "name": "Constelada",
+   "developer": "Grupo Emérita",
+   "area": "Aldea Zamá, Tulum",
+   "country": "Mexico",
+   "market": "Riviera Maya",
+   "stage": "off-plan",
+   "url": "https://www.grupoemerita.com/en/desarrollos/constelada",
+   "docs_url": "https://www.grupoemerita.com/en/desarrollos/constelada",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": "Developer claims 67 developments and 30+ years (developer and agent pages)",
+    "units": 54,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "developer",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "54 units: studios, 1 and 2 bedroom apartments, 3 bedroom penthouses",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.grupoemerita.com/en/desarrollos/constelada"
+    },
+    {
+     "claim": "Grupo Emérita has 67 completed developments over 30 years",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://smartmoneyhomes.com/developers-we-work-with/grupo-emerita-mexico/"
+    },
+    {
+     "claim": "Designed for investors seeking high returns in vacation rental",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.grupoemerita.com/en/desarrollos/constelada"
+    }
+   ],
+   "facts": {
+    "developer_founded": 2014,
+    "developer_hq": "Mérida, Yucatán (origin per developer); offices in Tulum, Playa del Carmen and Valladolid",
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1 bedroom",
+     "2 bedroom lock-off",
+     "2+ bedroom lock-off",
+     "3 bedroom penthouse",
+     "3+ bedroom penthouse"
+    ],
+    "size_min_m2": 29,
+    "size_max_m2": 197,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Developer page lists 54 units in Aldea Zamá, with a 3D virtual tour and renders. I inferred the off-plan stage from those, because no page I saw states construction status. I found no independent source for the project itself. No price, permit, escrow or progress data was published.",
+   "positives": [
+    "Developer publishes unit typologies with minimum sizes",
+    "Developer has a long track record in Tulum (Aldea Zamá), as claimed by itself and agents"
+   ],
+   "flags": [],
+   "sources": [
+    "https://homesinmexico.com/2025/10/grupo-emerita-luxury-developments-tulum-playa-del-carmen/",
+    "https://smartmoneyhomes.com/developers-we-work-with/grupo-emerita-mexico/",
+    "https://www.grupoemerita.com/en",
+    "https://www.grupoemerita.com/en/desarrollos/constelada",
+    "https://www.grupoemerita.com/en/nosotros"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-02",
+   "found_by": "discover-agent",
+   "slug": "constelada-riviera-maya"
+  },
+  {
+   "name": "Paravian",
+   "developer": "Grupo Emérita",
+   "area": "Gonzalo Guerrero, Playa del Carmen",
+   "country": "Mexico",
+   "market": "Riviera Maya",
+   "stage": "under construction",
+   "url": "https://www.grupoemerita.com/en/desarrollos/paravian",
+   "docs_url": "https://homesinmexico.com/property/paravian-luxury-condos-playa-del-carmen/",
+   "permit_number": null,
+   "seed": {
+    "price": 227000,
+    "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": true,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": true,
+    "developer_delivered": "Developer claims 67 developments and 30+ years (developer and agent pages)",
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "none",
+    "record": "developer",
+    "returns": "developer"
+   },
+   "claims": [
+    {
+     "claim": "Developer page metadata advertises guaranteed appreciation (plusvalía garantizada)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.grupoemerita.com/en/desarrollos/paravian"
+    },
+    {
+     "claim": "Delivery scheduled for Fall 2024",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://smartmoneyhomes.com/exciting-news-from-the-paravian-playa-del-carmen/"
+    },
+    {
+     "claim": "Construction progress update dated July 2024",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.susimacdonald.com/real-estate-listings/paravian---playa-del-carmen"
+    }
+   ],
+   "facts": {
+    "developer_founded": 2014,
+    "developer_hq": "Mérida, Yucatán (origin per developer); offices in Tulum, Playa del Carmen and Valladolid",
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": "Fall 2024 (agent post)",
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1 bedroom",
+     "2 bedroom",
+     "penthouse"
+    ],
+    "size_min_m2": 38,
+    "size_max_m2": null,
+    "price_min": 227000,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Two-tower condo project a few steps from 5th Avenue, still marketed on the developer site. Agent posts promised Fall 2024 delivery and showed a July 2024 progress update. I could not confirm its current construction status or handover date, so it may be nearly complete or late.",
+   "positives": [
+    "Developer page and several agent pages are live",
+    "Dated construction updates were circulated by the developer's representative"
+   ],
+   "flags": [],
+   "sources": [
+    "https://homesinmexico.com/property/paravian-luxury-condos-playa-del-carmen/",
+    "https://landing.grupoemerita.com/en/paravian-pillar-page",
+    "https://rinconpatrimonial.com/propiedades/paravian-tu-refugio-privado-a-pasos-del-mar-caribe/",
+    "https://smartmoneyhomes.com/exciting-news-from-the-paravian-playa-del-carmen/",
+    "https://www.grupoemerita.com/en",
+    "https://www.grupoemerita.com/en/desarrollos/paravian",
+    "https://www.susimacdonald.com/real-estate-listings/paravian---playa-del-carmen"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": false,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-02",
+   "found_by": "discover-agent",
+   "slug": "paravian-riviera-maya"
+  },
+  {
+   "name": "OCEANA Wellness Residences",
+   "developer": "FURA Grupo Inmobiliario (architects: Langarica Architects; exclusive sales agent: Ronival)",
+   "area": "El Tezal, Cabo San Lucas (Cabo Corridor)",
+   "country": "Mexico",
+   "market": "Los Cabos",
+   "stage": "under construction",
+   "url": "https://www.findmexicohouses.com/oceana/",
+   "docs_url": "https://ronival.com/wp-content/uploads/2025/07/Presentacion-Ventas-Oceana-INGLES-1.pdf",
+   "permit_number": null,
+   "seed": {
+    "price": 809000,
+    "currency": "USD",
+    "title": "Oceana Atlantic Tower, 3 bed, 2,367 sq ft (MLS 23-3571, listed as Pre-Construction)",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "Select residences scheduled for summer 2026; further homes still in preconstruction (per sales agent page)",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 100,
+    "payment_plan": "35% at reservation, 25% at foundation completion, 20% at shell completion, 20% at delivery. Or developer financing with 50% down (6.5% for 0 to 5 years, 7% for 5 to 9 years, advertised for international buyers)."
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Select residences are scheduled for delivery in summer 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.findmexicohouses.com/oceana/"
+    },
+    {
+     "claim": "100 residences in 5 towers, 3 bed / 3.5 bath, 2,529.52 to 5,812.51 sq ft total living (brochure range; the five listed unit types top out at 4,620 sq ft)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ronival.com/wp-content/uploads/2025/07/Presentacion-Ventas-Oceana-INGLES-1.pdf"
+    },
+    {
+     "claim": "Developer financing at 6.5% / 7% with 50% down for international buyers",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ronival.com/wp-content/uploads/2025/07/Presentacion-Ventas-Oceana-INGLES-1.pdf"
+    },
+    {
+     "claim": "Construction was underway when sales launched in February 2022",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.prweb.com/releases/oceana_wellness_residences_cabo_san_lucas_where_sustainability_well_being_merge_for_an_extraordinary_way_of_life/prweb18513134.htm"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Los Cabos, Baja California Sur",
+    "construction_start": null,
+    "handover_promised": "Summer 2026 for select residences",
+    "original_handover": "2023 (per a 2022-era agent listing)",
+    "delay_months": null,
+    "unit_types": [
+     "Type A 3bd",
+     "Type B 3bd",
+     "Type C 3bd",
+     "Type D 3bd",
+     "Penthouse PH-A 3bd"
+    ],
+    "size_min_m2": 235.0,
+    "size_max_m2": 429.2,
+    "price_min": 809000,
+    "price_max": 1749000,
+    "deposit_pct": 35,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Sold since 2022 with construction underway. The summer 2026 delivery date is now past (today is 2 Nov 2026) and the original 2023 target was missed, but no source states the current handover. No permit number, escrow or dated progress updates were found, and I could not open FURA's own site, so the developer page is the sales agent's landing page.",
+   "positives": [
+    "Full floor plans with indoor and outdoor areas published for all five unit types",
+    "Staged payment plan tied to construction milestones (foundation, shell, delivery)",
+    "Finished model residence and 360 tour available",
+    "No guaranteed-return language"
+   ],
+   "flags": [],
+   "sources": [
+    "https://cabobeachrealty.com/idx/Oceana-Atlantic-Tower-Cabo-Corridor-mls_23-3571/",
+    "https://poseknowscabo.com/oceana-wellness-residences-cabo/",
+    "https://ronival.com/wp-content/uploads/2025/07/Presentacion-Ventas-Oceana-INGLES-1.pdf",
+    "https://www.findmexicohouses.com/oceana/",
+    "https://www.mintcabohomes.com/oceana-wellness-residences-cabo-luxury-condo-tezal-presale/",
+    "https://www.prweb.com/releases/oceana_wellness_residences_cabo_san_lucas_where_sustainability_well_being_merge_for_an_extraordinary_way_of_life/prweb18513134.htm",
+    "https://www.teamcaboproperties.com/el-tezal/?page=3"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": true,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-02",
+   "found_by": "discover-agent",
+   "slug": "oceana-wellness-residences-los-cabos"
+  },
+  {
+   "name": "Amanvari Residences (Aman Private Villas) at Costa Palmas",
+   "developer": "Irongate Group (Costa Palmas)",
+   "area": "Costa Palmas, La Ribera, East Cape",
+   "country": "Mexico",
+   "market": "Los Cabos",
+   "stage": "under construction",
+   "url": "https://costapalmas.com/real-estate/aman/",
+   "docs_url": "https://costapalmasliving.com/aman-residences/",
+   "permit_number": null,
+   "seed": {
+    "price": 13000000,
+    "currency": "USD",
+    "title": "Amanvari private villas, from $13M",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "Resort opened 1 Aug 2026; residences still described as under construction on the developer page. A third-party tracker lists 2027.",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": "Four Seasons Resort Los Cabos at Costa Palmas and Costa Palmas Golf Club, both open since 2019 (per third-party tracker)",
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "developer",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Resort and residences currently under construction",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://costapalmas.com/real-estate/aman/"
+    },
+    {
+     "claim": "Residences are 4 to 7 bedrooms with 13,000 to 20,000 sq ft of covered indoor-outdoor living",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://costapalmas.com/real-estate/aman/"
+    },
+    {
+     "claim": "Amanvari resort (18 casitas) opened on 1 August 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://onemileatatime.com/news/amanvari-mexico/"
+    },
+    {
+     "claim": "Villas from $13M",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://costapalmasliving.com/aman-residences/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "construction_start": "Around June 2021 (estimate from a third-party tracker)",
+    "handover_promised": "Residences: 2027 per third-party tracker. Resort opened Aug 2026.",
+    "original_handover": "2020 resort opening (announced 2018, per One Mile at a Time)",
+    "delay_months": null,
+    "unit_types": [
+     "Beachfront private villas, 4 to 7 bedrooms"
+    ],
+    "size_min_m2": 1207.7,
+    "size_max_m2": 1858.1,
+    "price_min": 13000000,
+    "price_max": 55000000,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Ultra-luxury villas at Costa Palmas, sold alongside the Aman resort. The resort opened 1 Aug 2026 after long delays, but the developer page (last modified May 2025) still says the residences are under construction. The $55M figure is a beachfront villa listing seen in a search snippet of the developer page, not on the version I opened.",
+   "positives": [
+    "Developer page publishes main-level and upper-level plan images",
+    "Aman-branded resort already open next door",
+    "Developer has an operating Four Seasons resort and golf club at the same site",
+    "No guaranteed-return language"
+   ],
+   "flags": [],
+   "sources": [
+    "https://costapalmas.com/location/masterplan/",
+    "https://costapalmas.com/real-estate/aman/",
+    "https://costapalmasliving.com/aman-residences/",
+    "https://onemileatatime.com/news/amanvari-mexico/",
+    "https://www.oftmw.com/projects/costa-palmas/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-02",
+   "found_by": "discover-agent",
+   "slug": "amanvari-residences-aman-private-villas-at-costa-palmas-los"
+  },
+  {
+   "name": "Solaria Los Cabos",
+   "developer": "Kaab (per a 2018 Los Cabos Guide article)",
+   "area": "El Tezal, Cabo San Lucas (Cabo Corridor)",
+   "country": "Mexico",
+   "market": "Los Cabos",
+   "stage": "under construction",
+   "url": "https://www.loscabosrealestate.com/development/solaria/",
+   "docs_url": "https://www.loscabosrealestate.com/development/solaria/",
+   "permit_number": null,
+   "seed": {
+    "price": 334000,
+    "currency": "USD",
+    "title": "Solaria Los Cabos, G Bldg. Vento G 301, 3 bed / 3 bath (developer financing listing)",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": "Kaab lists Elite Providencia, Residential Elite, Vitana, Eleve and Prive as earlier projects (Los Cabos Guide, 2018)",
+    "units": 96,
+    "payment_plan": "Developer financing offered per listing; terms not published"
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "developer",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "96-unit gated condo community in El Tezal with 2 and 3 bedroom units",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.loscabosguide.com/solaria-cabo/"
+    },
+    {
+     "claim": "Status 'Under Construction' with 2-3 bedroom condos at $400K to $700K",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://livingincabo.com/developments"
+    },
+    {
+     "claim": "Developer financing available on G building units priced about $295K to $334K",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.topmexicorealestate.com/cabo-real-estate/b-property-detail-cabo.php?propId=17456"
+    }
+   ],
+   "facts": {
+    "developer_founded": 2007.0,
+    "developer_hq": "Mainland Mexico (location not specified)",
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1, 2 and 3 bedroom condos",
+     "Penthouses with rooftop deck and pool"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 295000,
+    "price_max": 334000,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Mid-priced condo community in El Tezal marketed to foreign buyers with developer financing. I could not open the developer's own site (it is named as solariaoceanviewcondos.com on a portal), so the url is a portal page that names Solaria as marketer. Portals disagree on stage (one older page says pre-construction, a 2026 index says under construction) and on price ($295K to $334K in listings seen, $400K to $700K in an index).",
+   "positives": [
+    "Developer financing advertised",
+    "Developer reported to have several earlier completed projects"
+   ],
+   "flags": [],
+   "sources": [
+    "https://livingincabo.com/developments",
+    "https://mexhome.com/dev/solaria/",
+    "https://www.kwmexico.mx/Developments/Solaria",
+    "https://www.loscabosguide.com/solaria-cabo/",
+    "https://www.loscabosrealestate.com/development/solaria/",
+    "https://www.topmexicorealestate.com/cabo-real-estate/b-property-detail-cabo.php?propId=17456"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-02",
+   "found_by": "discover-agent",
+   "slug": "solaria-los-cabos-los-cabos"
   }
  ]
 }

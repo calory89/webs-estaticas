@@ -42,5 +42,31 @@
   ],
   "all_six": 0,
   "verified_4plus": 0
+ },
+ {
+  "date": "2026-11-02",
+  "calls": 2,
+  "usd": 2.044,
+  "searches": 12,
+  "added": 6,
+  "rejected": {
+   "duplicate": 1,
+   "dead_url": 1
+  },
+  "markets": [
+   "Riviera Maya",
+   "Los Cabos"
+  ],
+  "model": "claude-sonnet-5-5",
+  "added_slugs": [
+   "bao-puerto-morelos-riviera-maya",
+   "constelada-riviera-maya",
+   "paravian-riviera-maya",
+   "oceana-wellness-residences-los-cabos",
+   "amanvari-residences-aman-private-villas-at-costa-palmas-los",
+   "solaria-los-cabos-los-cabos"
+  ],
+  "all_six": 0,
+  "verified_4plus": 0
  }
 ]
