@@ -7290,5 +7290,439 @@
     13995000
    ]
   }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "secret-inshi",
+  "name": "SECRET by INSHI",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "layan-green-park-phase-2",
+  "name": "Layan Green Park Phase 2",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "x-the-building-san-francisco-panama",
+  "name": "X The Building",
+  "changed": {
+   "completion_year": [
+    null,
+    2028
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "morros-vita-serena-del-mar",
+  "name": "Morros Vita",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Esquema fiduciario con Alianza Fiduciaria, entidad encargada de velar por la correcta administración de los recursos",
+    "Alianza Fiduciaria, entidad encargada de velar por la correcta administración de los recursos; vinculación de compradores al esquema fiduciario"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "esentepe-sea-view-villas-terra-eck-3023",
+  "name": "Sea-view villas resort, Esentepe (TERRA listing ECK-3023)",
+  "changed": {
+   "price_from": [
+    1287800,
+    1286300
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "iskele-kalecik-complex-terra-eck-4116",
+  "name": "Luxury apartments complex, Kalecik / Iskele (TERRA listing ECK-4116)",
+  "changed": {
+   "price_from": [
+    219200,
+    218900
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "altintas-swim-up-complex-ayt-3204",
+  "name": "Swim-up pool complex in Altıntaş (ref AYT-3204)",
+  "changed": {
+   "price_from": [
+    116200,
+    116100
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "samana-sky-views-dpc",
+  "name": "Samana Sky Views",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "crystal-garden-cap-cana-gesproin",
+  "name": "Crystal Garden Cap Cana",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "comfort-by-orbi-orbi-group",
+  "name": "Comfort by Orbi",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "al-mare-green-midtown-group",
+  "name": "Al Mare Green",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "querencia-dovec-group",
+  "name": "Querencia",
+  "changed": {
+   "price_from": [
+    208993,
+    209296
+   ],
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "avrupa-konutlari-gunesli-artas",
+  "name": "Avrupa Konutları Güneşli",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9527,
+    9553
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "bansko-complex-near-ski-lift-suprimmo",
+  "name": "New residential complex near the ski lift, Bansko",
+  "changed": {
+   "price_from": [
+    43446,
+    55143
+   ],
+   "permit_number": [
+    null,
+    "Act 14"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "sky-gate-tower-tiger",
+  "name": "Sky Gate Tower",
+  "changed": {
+   "price_from": [
+    795000,
+    885800
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "les-vagues-elie-saab-dar-global",
+  "name": "Les Vagues by Elie Saab",
+  "changed": {
+   "extension_promised": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "rhea-by-sansiri",
+  "name": "Rhea by Sansiri",
+  "changed": {
+   "title_type": [
+    "freehold",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "nad-al-sheba-gardens-phase-7-meraas",
+  "name": "Nad Al Sheba Gardens Phase 7",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Escrow Account Number 0205865423608; Escrow Agent Emirates NBD Bank PJSC",
+    "Escrow Account Number 0205865423608, Escrow Agent Emirates NBD Bank PJSC"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "the-hillgate-ellington",
+  "name": "The Hillgate",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Escrow Account Number 4031224708340005; Escrow Agent First Abu Dhabi Bank PJSC.",
+    "Escrow Account Number 4031224708340005, Escrow Agent First Abu Dhabi Bank PJSC."
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "gardenia-bay-aldar",
+  "name": "Gardenia Bay",
+  "changed": {
+   "permit_number": [
+    "20230000070554",
+    "Project No 20230000070554"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "quattro-del-mar-rak-properties",
+  "name": "Quattro Del Mar",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "nine-collective-wasl",
+  "name": "Nine Collective",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "armani-beach-residences-palm-jumeirah-arada",
+  "name": "Armani Beach Residences at Palm Jumeirah",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Escrow Registered No. 3538468744702",
+    "Escrow account no. 3538468744702"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "arancia-yards-beyond",
+  "name": "Arancia Yards by Beyond",
+  "changed": {
+   "permit_number": [
+    "project number 4480",
+    "registered project #4480"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "nai-2-nusa-dua-vibe-development",
+  "name": "Nai 2 (NAI by Vibe wellness resort, phase 2)",
+  "changed": {
+   "completion_year": [
+    2028,
+    2029
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "bab-al-qasr-garden-residence-66-burtville",
+  "name": "Bab Al Qasr Garden Residence 66",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "ramhan-island-villas-phase-4-eagle-hills",
+  "name": "Ramhan Island Villas Phase 4",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "gianfranco-ferre-residences-mira",
+  "name": "Gianfranco Ferré Residences",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "alliance-centropolis-alliance-group",
+  "name": "Alliance Centropolis",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "the-ivory-chang-phueak-home-development-group",
+  "name": "The IVORY",
+  "changed": {
+   "title_type": [
+    "freehold",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "dusit-thani-residences-ajman-aqaar",
+  "name": "Dusit Thani Residences Ajman",
+  "changed": {
+   "price_from": [
+    2100000,
+    2090753
+   ],
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "sealine-residence-al-zorah",
+  "name": "Sealine Residence",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "udaondo-buenos-aires-landmark-developments",
+  "name": "Udaondo Buenos Aires",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Fideicomiso Buenos Aires Landmark (trust that bought the ex Tiro Federal land at auction)",
+    "Fideicomiso Buenos Aires Landmark (named as the trust that bought the land at a 2018 public auction; no buyer escrow or guarantee described)"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "radisson-resort-maldives-thulusdhoo-teus-group",
+  "name": "Radisson Resort Maldives (Branded Residences)",
+  "changed": {
+   "escrow_or_guarantee": [
+    null,
+    "developer guarantee (10% a year on infrastructure shares)"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "city-walk-love-lane-liverpool-habitia",
+  "name": "City Walk",
+  "changed": {
+   "permit_claim": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "hayyan-alef-group",
+  "name": "Hayyan (current phases Samr and Deem)",
+  "changed": {
+   "extension_promised": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-02",
+  "slug": "harmony-ocean-front-ja-russi",
+  "name": "Harmony Ocean Front",
+  "changed": {
+   "permit_number": [
+    "Registro de Incorporação R13 da Matrícula nº 135.051",
+    "Matrícula nº 135.051"
+   ]
+  }
  }
 ]
