@@ -1779,7 +1779,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "2a0aa040f41a4a9441f66bfd11b959bea2a4b64e0f4b91f60d95fa2befcb8c75",
+    "sha256": "12a36fbcecaf1ea7616d6936f89f8fc0561a8ae0645040afd056a96e849fd630",
     "date": "2026-11-02"
    },
    "history": [
@@ -2520,7 +2520,7 @@
    "docs": false,
    "plans": false,
    "band": "Under $100k",
-   "done": 2028,
+   "done": 2029,
    "title": "hak_pakai",
    "lease": 30,
    "yield": 13.7,
@@ -2552,7 +2552,7 @@
    "q": [
     "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
-    "Completion advertised for 2028: does progress on site match?"
+    "Completion advertised for 2029: does progress on site match?"
    ],
    "verified": {
     "permit": "developer",
@@ -2573,7 +2573,7 @@
    "overdue": null,
    "profile": 16,
    "fp": {
-    "sha256": "7beed9c9cb4d0537f234fc9114c3f0aab715b91f7bb996979528373111a9ba70",
+    "sha256": "bfbfabd5e46e62426ed94362707c67d7fa542c4d9dd8d78377c63b0ccf2d5bcd",
     "date": "2026-11-02"
    }
   },
@@ -4345,7 +4345,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "05cf61b2ed03d8661143d12291c7ed01fda6838a3a410872dd668cf36555d0c4",
+    "sha256": "1c9afd24399b9fb4156ad7b1bb67a50b2a4d20edaf1236aa04b796b540a9c7d9",
     "date": "2026-11-02"
    },
    "history": [
@@ -4559,7 +4559,7 @@
    "country": "Indonesia",
    "region": "Ubud",
    "docs": false,
-   "plans": true,
+   "plans": false,
    "band": "Under $100k",
    "done": 2027,
    "title": "leasehold (Hak Sewa)",
@@ -4570,7 +4570,7 @@
     "permit": 0,
     "escrow": null,
     "progress": null,
-    "plans": true,
+    "plans": false,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -4582,11 +4582,11 @@
      "returns_ok"
     ]
    },
-   "score": 2,
+   "score": 1,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "caution",
    "read": true,
    "checked": "2 Nov 2026",
    "invited": null,
@@ -4615,7 +4615,7 @@
    "overdue": null,
    "profile": 11,
    "fp": {
-    "sha256": "fc60295efc51cb37511f33cd6d721b3977eb1391ebc0cf861a0f9adaf9c986b7",
+    "sha256": "4a44679dc0c525c5be1429b7ccc4ff00b2765190702030a60c899b238a9a10f9",
     "date": "2026-11-02"
    },
    "history": [
@@ -4638,6 +4638,12 @@
      "to": true
     },
     {
+     "d": "2026-11-02",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    },
+    {
      "d": "2026-11-01",
      "f": "plans published",
      "from": true,
@@ -4660,12 +4666,6 @@
      "f": "plans published",
      "from": false,
      "to": true
-    },
-    {
-     "d": "2026-11-01",
-     "f": "plans published",
-     "from": true,
-     "to": false
     }
    ]
   },
@@ -4906,7 +4906,7 @@
    "notes": [],
    "tier": "mixed",
    "read": true,
-   "checked": "1 Nov 2026",
+   "checked": "2 Nov 2026",
    "invited": null,
    "q": [
     "Leasehold: is the lease registered, and is the base term the one advertised?",
@@ -4936,7 +4936,7 @@
    "profile": 14,
    "fp": {
     "sha256": "4ad710b2ea343fe59ccd59986521d50d20168e1559114f0f16ca9d89241a3321",
-    "date": "2026-11-01"
+    "date": "2026-11-02"
    }
   },
   {
@@ -5631,7 +5631,7 @@
     "date": "2026-11-01"
    },
    "fp": {
-    "sha256": "f8c057ec534d42fc6113f7346e819368f3aefbc2d553e2f869a2241255916195",
+    "sha256": "d0396209e2723d441b57cb1674aab9e2098df0cf26afd16f048321a4ce50c66d",
     "date": "2026-11-02"
    },
    "history": [
@@ -5773,7 +5773,7 @@
    "overdue": null,
    "profile": 8,
    "fp": {
-    "sha256": "75b0dff014aefb7d0eeac337757f46ee9cee7f9d34a37be529edd980c38c53db",
+    "sha256": "1f97321e55e508718ec344019c2e951279f597e1d64ee641003433371e6d1acc",
     "date": "2026-11-02"
    }
   },
@@ -5903,7 +5903,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "45c1d4b6cef1eb04b94fb7b41ce40b93b794c926403593a941f8930b522de467",
+    "sha256": "dc34daec99aafb26ac4af8056f2caf4d28344bbdf46179bb684e390462bc96a7",
     "date": "2026-11-02"
    }
   },
@@ -6032,7 +6032,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "151d13fb0e7d06f37710abc0c64918ca468900af9129ff09e213e175b196d4c9",
+    "sha256": "2c0becc77820977c73b130f322d3893f656e5eedd8c75750c4c313a1723e798c",
     "date": "2026-11-02"
    },
    "history": [
@@ -6116,7 +6116,7 @@
     "date": "2026-11-01"
    },
    "fp": {
-    "sha256": "a29fdeccf6c19674dbdf23053ae97133b2182f059801171104b87d38cced5c4f",
+    "sha256": "ca5d7d3df5b551fa24f1122c14d2eabd3d5d89718a3fca1dc04a4a9d7930a771",
     "date": "2026-11-02"
    },
    "history": [
@@ -6207,9 +6207,17 @@
    "overdue": null,
    "profile": 19,
    "fp": {
-    "sha256": "a834e2172096d325409c0ee438250e4d8ae605e71f9a95fcc79bc1a32bf45c17",
+    "sha256": "5a7e1fb19529f35e6d269c886f672631e078e808806d7160c7f84c2574acabbb",
     "date": "2026-11-02"
-   }
+   },
+   "history": [
+    {
+     "d": "2026-11-02",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    }
+   ]
   },
   {
    "id": "AUH-013",
@@ -6277,9 +6285,17 @@
     "date": "2026-11-01"
    },
    "fp": {
-    "sha256": "6884c0df2741616b92b4a5f4addc09dcc09b289b8735cf7e53f1af0a773fb136",
+    "sha256": "01f537b1d5e2d7f16e967106b78498d44920ea4e4eed2029060e7ff0da433e7b",
     "date": "2026-11-02"
-   }
+   },
+   "history": [
+    {
+     "d": "2026-11-02",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    }
+   ]
   },
   {
    "id": "AUH-014",
@@ -6603,7 +6619,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "22036c51d2c7960332333e576ea3c0efaa6b1eadb4a23b5e7eb0eecc8d94558d",
+    "sha256": "33090e6c5c71c26d581546028ff9e00d9d57ba24a0a3c4cfdf492230e9cab541",
     "date": "2026-11-02"
    },
    "history": [
@@ -6821,7 +6837,7 @@
    "country": "UAE",
    "region": "Ajman",
    "docs": true,
-   "plans": true,
+   "plans": false,
    "band": "$400k and up",
    "done": 2028,
    "title": "freehold",
@@ -6832,7 +6848,7 @@
     "permit": 2,
     "escrow": true,
     "progress": null,
-    "plans": true,
+    "plans": false,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -6844,11 +6860,11 @@
      "returns_ok"
     ]
    },
-   "score": 4,
+   "score": 3,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "clear",
+   "tier": "mixed",
    "read": true,
    "checked": "2 Nov 2026",
    "invited": null,
@@ -6881,9 +6897,17 @@
     "date": "2026-11-01"
    },
    "fp": {
-    "sha256": "172f80097acf0ad5e61acc2c3507d6f50e0d074337f08a4375307e5da3186673",
+    "sha256": "9c18cd73d940085a3196a3b3403b445a930976b7e1438128951eacbaf623dd2d",
     "date": "2026-11-02"
-   }
+   },
+   "history": [
+    {
+     "d": "2026-11-02",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    }
+   ]
   },
   {
    "id": "AJM-003",
@@ -6946,7 +6970,7 @@
    "overdue": null,
    "profile": 14,
    "fp": {
-    "sha256": "3abd8cb5c4e8527ee50606f37ea9e4b69e220ea7c20945b3c2740936e2340156",
+    "sha256": "34e95d546b9156bca8de732c8bd6c0681c9ce9d8cdafdfc04cfe1c328a0da36a",
     "date": "2026-11-02"
    },
    "history": [
@@ -7030,10 +7054,16 @@
     "date": "2026-11-01"
    },
    "fp": {
-    "sha256": "7eafb7e30f53dfcf9e322fd17cfc77f2d132b64fbf97e6dd1aaf86c3b881795b",
+    "sha256": "c851573b708f23713c9c2cdb1ae498adb20a122a80ddd5c68bac772e90cad2a9",
     "date": "2026-11-02"
    },
    "history": [
+    {
+     "d": "2026-11-02",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    },
     {
      "d": "2026-11-01",
      "f": "plans published",
@@ -7109,7 +7139,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "4833128593a032c441d23e8fccc93f2c9ac906f76e714d8f5b45f07961c89b75",
+    "sha256": "9742e22dd8f691a834a677305e702759154d94ac3d65b2765cb2322f97b790e0",
     "date": "2026-11-02"
    }
   },
@@ -7239,7 +7269,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "6a3a6cc09403f1def301b4676bf9840ab6000e8251478e77be5be3f024bfdaa0",
+    "sha256": "fbcc5a4fa7ec0f98fac363d0c9b0e9886a7a3f6b17ce864f860aa7763408feb8",
     "date": "2026-11-02"
    }
   },
@@ -7436,7 +7466,7 @@
    "overdue": null,
    "profile": 10,
    "fp": {
-    "sha256": "d20d82bd8b008f9c9a289065daed14fdd80a67d052812f5f70e2a9279ec8104f",
+    "sha256": "d59dcf39ecbd68be0553a5c1eaf0aceba5ee95400b1c9e8e7a28bb25e74825d0",
     "date": "2026-11-02"
    }
   },
@@ -8281,7 +8311,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "9c56b0e6682dd7197738c29ffdc1ad3ec326fd664939598ff087ed2faeb96bd9",
+    "sha256": "20701557ef0fb6b81543301b963e4ea9308470d38f20ac06b901a812573a447d",
     "date": "2026-11-02"
    }
   },
@@ -8417,7 +8447,7 @@
    "overdue": null,
    "profile": 14,
    "fp": {
-    "sha256": "918216dda7edc4ed6b4750c24e06df110da5e07e1d72d7a1975c880889b07ede",
+    "sha256": "5f1101ba4383ce16a7aa5f10ccfc399a2bde6637ecb8f4bdc24accf98db25339",
     "date": "2026-11-02"
    },
    "history": [
@@ -8440,13 +8470,7 @@
      "to": false
     },
     {
-     "d": "2026-11-01",
-     "f": "plans published",
-     "from": true,
-     "to": false
-    },
-    {
-     "d": "2026-11-01",
+     "d": "2026-11-02",
      "f": "plans published",
      "from": false,
      "to": true
@@ -8467,7 +8491,13 @@
      "d": "2026-11-01",
      "f": "plans published",
      "from": true,
-     "to": null
+     "to": false
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": false,
+     "to": true
     }
    ]
   },
@@ -8817,7 +8847,7 @@
     "date": "2026-11-01"
    },
    "fp": {
-    "sha256": "cea7d0e51408920ce1c0c511e2a6322a6947cbb95491ca6e0eb8998d78e2900d",
+    "sha256": "80349768fda0282d406b844149bc9f80b9e2fa63855036e435c458dcd11b0e76",
     "date": "2026-11-02"
    },
    "history": [
@@ -8895,7 +8925,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "a791c1a29bdb2dfbea7f6a505b1d4b0bebb96d08e0295db9e4b03e7485dbcde7",
+    "sha256": "4a23f78674101698c856534867e0d5e64d7131475842321f8a2d112b11dd7a9b",
     "date": "2026-11-02"
    }
   },
@@ -10028,7 +10058,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "b9f075d8c19f1f8045a4f8147da9ca80953e40087913a3000462acafa5d122ec",
+    "sha256": "24acfbe78ff0c105a13be4d0423776de855297d17bb5fc9bcb231d7c6b828a48",
     "date": "2026-11-02"
    }
   },
@@ -10157,7 +10187,7 @@
    "overdue": null,
    "profile": 14,
    "fp": {
-    "sha256": "7c92cad1859a64c4c60adaca40f3c222a4394d34a4727f66bba0382f236c4132",
+    "sha256": "d75055caaca044417d8a23da28058e92a7bddf1a045ef197b5bb90b3317c1e38",
     "date": "2026-11-02"
    },
    "register": {
@@ -10228,7 +10258,7 @@
    "overdue": null,
    "profile": 14,
    "fp": {
-    "sha256": "382597cb58ce5909ef4809b673d4330c78d948fb64a55c75b8c07f09dc261873",
+    "sha256": "f4a0b41cdda7ce5d34e1e10aa96c3844e182c6a18ff48f547bea973f53fa5d7a",
     "date": "2026-11-02"
    },
    "history": [
@@ -10427,7 +10457,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "52cbb7b934e65eceb18d93bf45ab655697b98013c9de4fda391b2e0a762c0e9f",
+    "sha256": "095bef45b3921b0a9c8d50e5c5bc3fc50f5e53d234ea18b4d312d99f54657984",
     "date": "2026-11-02"
    }
   },
@@ -10688,7 +10718,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "f91c84cfbee63c8f4b49366f5bbed1d64b8d83ceca17ac13344d7ea0d90e8181",
+    "sha256": "e86ba4611be7523a535ec4cdfdf573b3572fe27881e575b83e444aaa0d801807",
     "date": "2026-11-02"
    }
   },
@@ -11708,7 +11738,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "ff2205ac1d0d1b078c9cbf7dbcb1ec2aee3f3e989644532594a510338b1f4fdf",
+    "sha256": "7091c605931de437f484d0d7a6eec3b6555fa15a459205870389cf1683d6b742",
     "date": "2026-11-02"
    }
   },
@@ -11904,7 +11934,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "c9849ca62c2905cde43a9842fc1200d37f1ff4b92a01e0086d42159571c52cca",
+    "sha256": "1194c876e202dcfdfc5d2deba6e6d60835b63137527e41ca0962f67ae784a302",
     "date": "2026-11-02"
    }
   },
@@ -11968,7 +11998,7 @@
    "overdue": null,
    "profile": 19,
    "fp": {
-    "sha256": "078d8cb28c6d98d0af3f5e534e375f08611ce57d4490dd228f24e9a916a09f68",
+    "sha256": "380af6e2b7137a7b09cf458fbda5d16d7eceef4ccd9db614943e45d54aa259c4",
     "date": "2026-11-02"
    }
   },
@@ -12038,7 +12068,7 @@
    "market": "Bulgaria",
    "country": "Bulgaria",
    "region": "Bulgaria",
-   "docs": false,
+   "docs": true,
    "plans": true,
    "band": "Under $100k",
    "done": 2026,
@@ -12047,7 +12077,7 @@
    "yield": null,
    "units": 12,
    "checks": {
-    "permit": 1,
+    "permit": 2,
     "escrow": null,
     "progress": "updates",
     "plans": true,
@@ -12062,15 +12092,16 @@
      "returns_ok"
     ]
    },
-   "score": 3,
+   "score": 4,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "mixed",
+   "tier": "clear",
    "read": true,
    "checked": "2 Nov 2026",
    "invited": null,
    "q": [
+    "A permit number is published: does it exist in the official register and match this plot?",
     "Title type not stated: leasehold, freehold or a company structure?",
     "A building permit is claimed: does it exist in the official system and match this plot?",
     "Completion advertised for 2026: does progress on site match?",
@@ -12095,10 +12126,16 @@
    "overdue": null,
    "profile": 11,
    "fp": {
-    "sha256": "4dc78aa89a9e0190e9076ba115843ce73fa088e970cf25ed853146f2b25c0680",
+    "sha256": "abcdbab84cdc1e207e3c9b10dd508f4a812128422e51e5c0ee7c69b8b8e8ba71",
     "date": "2026-11-02"
    },
    "history": [
+    {
+     "d": "2026-11-02",
+     "f": "permit number published",
+     "from": false,
+     "to": true
+    },
     {
      "d": "2026-11-01",
      "f": "permit number published",
@@ -12836,7 +12873,7 @@
    "overdue": null,
    "profile": 14,
    "fp": {
-    "sha256": "b60cd3edf99572adb45aa49e9e3bbd961a6814ddeafa6e8784ad622438a5974e",
+    "sha256": "b53451ed28710143f39a87635a865a94ea5b2a1abf99f21f52254150a60e282e",
     "date": "2026-11-02"
    }
   },
@@ -13538,7 +13575,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "5d93ced76446de8c8d2b104f188fc8c9e224d0d08970d525302bd60f52e80791",
+    "sha256": "7c4fbede70d25b9c80007feecb124b379dac84f61ae536a55daca3cd785826c1",
     "date": "2026-11-02"
    }
   },
@@ -13670,7 +13707,7 @@
    "overdue": null,
    "profile": 18,
    "fp": {
-    "sha256": "d72dd0b171e586a3b9290eadc9b98066c96258b618686b0fe3dc2b7a834139db",
+    "sha256": "11641439f5f9af7ad0cb601839d501b80537cef09b02229d9e548bf8dce54b61",
     "date": "2026-11-02"
    }
   },
@@ -13987,7 +14024,7 @@
    "overdue": null,
    "profile": 16,
    "fp": {
-    "sha256": "a395de8c4dc7cd1b8821c5fe8c1b2b580a87e06c22895dc76e1f9007551b7168",
+    "sha256": "098f99eccf763c172ec3a4c204f0d02780d40b4515dc00383c6d578722b67768",
     "date": "2026-11-02"
    },
    "history": [
@@ -14350,7 +14387,7 @@
    "plans": false,
    "band": "Under $100k",
    "done": 2027,
-   "title": "freehold",
+   "title": "freehold (49% foreign quota)",
    "lease": null,
    "yield": null,
    "units": 231,
@@ -14402,7 +14439,7 @@
    "overdue": null,
    "profile": 14,
    "fp": {
-    "sha256": "e536ff36157bb03d1db4c200264fd6d0db04a0f92a8e112765fdec333b416715",
+    "sha256": "11e747314ffb8c9c710f01e2f2b175ca110d93d09beaa4123cf0a352068a2aa8",
     "date": "2026-11-02"
    }
   },
@@ -14870,7 +14907,7 @@
    "overdue": null,
    "profile": 11,
    "fp": {
-    "sha256": "7eb230a9088749357cf869f783acf14a0e9f34c026c2da5294cc7d341311039c",
+    "sha256": "9d8cd730d68eec3c3563a9ff87eeef7e5e58a4f477add3eeac8ee2d2535759c7",
     "date": "2026-11-02"
    }
   },
@@ -15000,7 +15037,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "e6c152b493eada10aa89bda2a6eaba57c4ace0d6850df33472a735c89c9d810c",
+    "sha256": "cb8274571806d15913723c12eb2027cb83235e981e1c4b2fb2179af38997c220",
     "date": "2026-11-02"
    }
   },
@@ -16443,7 +16480,7 @@
    "overdue": null,
    "profile": 11,
    "fp": {
-    "sha256": "5ba7d9bedd6524381d86e121ddcefc5084ce9dd561d0896a84cc6618ae8cb204",
+    "sha256": "ae539dc37e36d10262a83bb707805b723754212f832f9cbe052663f595fd3cb3",
     "date": "2026-11-02"
    }
   },
@@ -16568,7 +16605,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "b5a91daf81a09d382e567011164de25eff982ce4849c50077c1e7c43cf799afe",
+    "sha256": "60b26117487094e15a18311a5a0cd416474b9fe3e26572904e3e2200843d24d2",
     "date": "2026-11-02"
    }
   },
@@ -16698,7 +16735,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "7b4ed9154b97eede4f72b50fa82813b50affea6fc804eccd59eab82e39cdac2c",
+    "sha256": "f033fdd90413c85920f2a4969ac6196249300d465537aa1054deafea89ecbc64",
     "date": "2026-11-02"
    }
   },
@@ -16762,7 +16799,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "9115da107c7177b4c87c77bdc942fcb37af046f354986ebe59ed535ec060a475",
+    "sha256": "d1c6b5499f2fe34274a01f60256a677eb1087205775196151df241403c9fc5a0",
     "date": "2026-11-02"
    }
   },
@@ -17016,7 +17053,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "d035ff8e6bab492d2aa614be0a058e9ccb3e514478b7f9ae3b3cea85f1b5d249",
+    "sha256": "a97a9c79402170144d5aa42bb32efa30f7c5d52252028654821a2df0b0f810bb",
     "date": "2026-11-02"
    }
   },
@@ -18305,7 +18342,7 @@
    "overdue": null,
    "profile": 16,
    "fp": {
-    "sha256": "a1babb87584c177bd6d72d2e666b7a69f7b8bf914f97cdadb86247a1988d1288",
+    "sha256": "4ef18011940b6dc0c805d6c1bfc5f2db0360badaffc69033b7bacf8e744ce210",
     "date": "2026-11-02"
    },
    "history": [
@@ -18316,13 +18353,7 @@
      "to": true
     },
     {
-     "d": "2026-11-01",
-     "f": "plans published",
-     "from": false,
-     "to": true
-    },
-    {
-     "d": "2026-11-01",
+     "d": "2026-11-02",
      "f": "plans published",
      "from": true,
      "to": false
@@ -18356,6 +18387,12 @@
      "f": "plans published",
      "from": false,
      "to": true
+    },
+    {
+     "d": "2026-11-01",
+     "f": "plans published",
+     "from": true,
+     "to": false
     }
    ]
   },
@@ -20202,7 +20239,7 @@
    "overdue": null,
    "profile": 17,
    "fp": {
-    "sha256": "4cd8489d145cfb26dae0538f42ee1273e837b12548e6a2b85303218544fe37dc",
+    "sha256": "480a7329c9687cf63e5b2d5a557556eba1c5f2d17496870aeb5554c7d5fd0559",
     "date": "2026-11-02"
    },
    "history": [
@@ -20299,7 +20336,7 @@
    "overdue": null,
    "profile": 17,
    "fp": {
-    "sha256": "51de15a23c66dce1efa14ed28f2eb9a30908582c7cf8347195235224a48abfc1",
+    "sha256": "19fa069dbd4f034989b508cc5b81bfa9e26287ea6b23d72241fb3bbedcbe2e6c",
     "date": "2026-11-02"
    },
    "history": [
@@ -20308,6 +20345,12 @@
      "f": "plans published",
      "from": false,
      "to": true
+    },
+    {
+     "d": "2026-11-02",
+     "f": "plans published",
+     "from": true,
+     "to": false
     },
     {
      "d": "2026-11-01",
@@ -20393,7 +20436,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "3e16d3cae6149cfe4ab16cec88d2bf2f3c0032ce696e29f7c2053bda81e00f67",
+    "sha256": "1ea0523518356c1c2a1b3013143408cd7b6005fd19c97ce49197a8b683e236b6",
     "date": "2026-11-02"
    },
    "history": [
@@ -20472,7 +20515,7 @@
    "overdue": 5,
    "profile": 13,
    "fp": {
-    "sha256": "197c00e63dbb4adf61b7bde57918443de62cc0d68b82fdef8a374ae7b2897cc6",
+    "sha256": "88c4b817d408eb9b0fcbd762ca59e82f0fc8629e7e3a1d6f68b0fab46bb57612",
     "date": "2026-11-02"
    },
    "history": [
@@ -20681,7 +20724,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "dc930f74565b470eb643d49b0a4436c99263b9f71ab2f65982aee97872903769",
+    "sha256": "a068043347e2cb235c488f9da60b2edd2b993d18c491076cbb381f962e4683e4",
     "date": "2026-11-02"
    },
    "history": [
@@ -20855,7 +20898,7 @@
     "date": "2026-11-01"
    },
    "fp": {
-    "sha256": "7de36a86ad4a8461582d3f09bdbda5929518f1cd8b1ca4314e78edb04f76a4ca",
+    "sha256": "655a3d2650e0ea1062faf0e01d0ecd579a18fabec7fd77a5a66b8f68058b981b",
     "date": "2026-11-02"
    },
    "history": [
@@ -21005,7 +21048,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "163b042340b482a9c14f607966d11fd5e8ec58126af8e503832c625cec7d41aa",
+    "sha256": "24552defa6dbb4e3cf5091b0328508f2b59fe8ae94b6eed0e98e905c1ce61e09",
     "date": "2026-11-02"
    }
   },
@@ -21070,7 +21113,7 @@
    "overdue": null,
    "profile": 17,
    "fp": {
-    "sha256": "f51d5f78f286726dc6c92e6a5c5db40c825edd953a51d25a4b5c5f7690ee0828",
+    "sha256": "5d1675a53a40bbfb9e87e347b64a91f0e4c4526d90c71bf40c986c9e602d6bc7",
     "date": "2026-11-02"
    }
   },
@@ -21205,7 +21248,7 @@
     "date": "2026-11-01"
    },
    "fp": {
-    "sha256": "6dd18656e19ab518aefcdfb0be1e523ce1626b04b6e34b26fc951440e980e03e",
+    "sha256": "f75ad4e5ee52546afc771ac398afc83a2140bf6cae20dbe59038231e3eac25ca",
     "date": "2026-11-02"
    }
   },
@@ -21399,7 +21442,7 @@
    "overdue": null,
    "profile": 19,
    "fp": {
-    "sha256": "fc9cc7055dccc881d7bca9778e4e5df83bc3f29823f5bcaedcd41d05f6b80273",
+    "sha256": "2671d787705cf1b2bd476931065850eda5289c3e15250b3db2edb1bce300eb3c",
     "date": "2026-11-02"
    },
    "history": [
@@ -21543,7 +21586,7 @@
    "overdue": null,
    "profile": 16,
    "fp": {
-    "sha256": "f762bd4e0bf876d64a9bcdd4ea04631fbdc63f4d486a7c6ec13254e6f08c288c",
+    "sha256": "bd6007c86eb64c49c1c5e2083be86cb93cfeba254988bda8fd869f7435ec13ce",
     "date": "2026-11-02"
    }
   },
@@ -21673,7 +21716,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "10960707a8beccf0e455dbe195a25bd31d9f7fa5991f3711b921ea57705c7c55",
+    "sha256": "d10696e0eb8e1aae6166ea7013af850debb9fdff62aa42368e1f493b80863d9c",
     "date": "2026-11-02"
    }
   },
@@ -21738,7 +21781,7 @@
    "overdue": null,
    "profile": 16,
    "fp": {
-    "sha256": "9926f613f2519505f820a033e44ec4b7927c9309e8423bff81e5824543e85b12",
+    "sha256": "63e694d5fffb3b5346013e1fd24273d05c649088b4cff8f9dd73fe9f417d2eda",
     "date": "2026-11-02"
    }
   },
@@ -21997,7 +22040,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "b8ebf21308f9b1153db7bbf3139ebcbed0692f6e8d914be16d912d4e3bf9c0aa",
+    "sha256": "bd4a661de05fc95f647fcbdc8ee7703f701e4248476e670020b5540ad505bc16",
     "date": "2026-11-02"
    }
   },
@@ -22196,10 +22239,16 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "c78d95e52085ae17cdfc0d1456206475eb5fcef54f62f03e60fef3e735a3bb3e",
+    "sha256": "2e96d61dfae7ce3e223c9eb2288fee7bef5e104e28d9311b3fd774a4d007de9f",
     "date": "2026-11-02"
    },
    "history": [
+    {
+     "d": "2026-11-02",
+     "f": "plans published",
+     "from": null,
+     "to": false
+    },
     {
      "d": "2026-11-01",
      "f": "guaranteed-return language",
@@ -22488,7 +22537,7 @@
    "overdue": null,
    "profile": 18,
    "fp": {
-    "sha256": "8b88739a12fd76491593b29efd3790f97a0aa77fbfeebf98f6d3671c84ae6d2c",
+    "sha256": "e6181702c6ba60496af29f7d001362ef5bc00652140fec21fc0c95afb5f74ecf",
     "date": "2026-11-02"
    }
   },
@@ -22553,7 +22602,7 @@
    "overdue": null,
    "profile": 17,
    "fp": {
-    "sha256": "84b48d79f07e7bbd8d21aa2f3623ea7595cb44bad948b826ee65e7cc32988d89",
+    "sha256": "772dff5e37b834112b9dd02329cb21559cdc06c0ad2f245343af18f4bfad8dd6",
     "date": "2026-11-02"
    }
   },
@@ -23474,7 +23523,7 @@
     "date": "2026-11-01"
    },
    "fp": {
-    "sha256": "0088141870b11caf6cbb809da8327cfe79e3c3bdacef838b34f5dd3f84f92f16",
+    "sha256": "5d801c69416a9e7e50fffcc711f0bbaea01f09515e80ccb1da269de879c41145",
     "date": "2026-11-02"
    }
   },
@@ -23543,7 +23592,7 @@
     "date": "2026-11-01"
    },
    "fp": {
-    "sha256": "2c5f51ce72da4684b47e629a2b0beb6fc17e4504488add4095d5d7e48ba15ce7",
+    "sha256": "563e799d8d47da33e91dc16bd2946ac078623cc015df3c396011e3e4cbf4fc7f",
     "date": "2026-11-02"
    }
   },
@@ -23739,7 +23788,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "977cebbc2096ac9d2e69ed01e343b56c04d8c30f7a86ba8a3104bc21d1e37469",
+    "sha256": "fc45e567228eb94b19f8449c7008c70c0fe13223e16405db60d406cea4d5fff4",
     "date": "2026-11-02"
    },
    "history": [
@@ -23952,7 +24001,7 @@
    "overdue": null,
    "profile": 16,
    "fp": {
-    "sha256": "7c15d58ae0508af544fc66e98258339d0b1993de51c19cb2d8a3f5a822080869",
+    "sha256": "111830043fc49043a8abe063feef6934730ffd79a1e61bde69162260fca09a67",
     "date": "2026-11-02"
    }
   },
@@ -24018,7 +24067,7 @@
    "overdue": null,
    "profile": 8,
    "fp": {
-    "sha256": "af2dcf3cb75ac369435e77525ecfc172d46145078f0c30642c43d21d9e8ab040",
+    "sha256": "72adb6ef28edf8a0364a540180a05f33ac33d1cab4db4f53d8d178c06cc743d4",
     "date": "2026-11-02"
    }
   },
@@ -24352,7 +24401,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "49cde04337e99833a5eee665dbc5423b2a17989b3896da2ed4854573cb881958",
+    "sha256": "9d9648544364e5193e121113b216741c08b53274ffdf3cf07b547fe0a9895127",
     "date": "2026-11-02"
    }
   },
@@ -24417,7 +24466,7 @@
    "overdue": null,
    "profile": 16,
    "fp": {
-    "sha256": "fccb2a3833b6c2de6069a756107c45ccd3cccb06f428074872802d5b0768bfc0",
+    "sha256": "cddd727478d41cef589b172bc54ae972e0dc623b9012873c9e8161408e922aa6",
     "date": "2026-11-02"
    }
   },
@@ -24626,7 +24675,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "f6f2e91acf7503db1cd7039ec4bbbae77abf61008b6254bc35ad97e654b9eedb",
+    "sha256": "ddb0c3342a406043a37a03c004cc6a68d430abeca2484720ab40a906af1c6f6e",
     "date": "2026-11-02"
    }
   },
@@ -24757,7 +24806,7 @@
    "overdue": null,
    "profile": 8,
    "fp": {
-    "sha256": "bf9594b55bff33e752791e14e68184abcade35864e987dc960d33c913f334ff4",
+    "sha256": "1bf101d2b358e56cde1ede556520a897a7693ca7242158f4aa3a0cae85c56c84",
     "date": "2026-11-02"
    }
   },
@@ -25218,7 +25267,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "a55ddaeadd8aff3d0dd2a4c2fdd2e0a96700b13f737aaa3dbb253cac15ee7a0d",
+    "sha256": "55df5aa323bcde34bdb5a92eb88cdc39988f753af4d3d4c00595916141d41a65",
     "date": "2026-11-02"
    }
   },
@@ -25538,7 +25587,7 @@
    "overdue": null,
    "profile": 10,
    "fp": {
-    "sha256": "6fb2578d88c14bbbb2de65cd5f48ab4acb87352972f16088f422642eaea19aab",
+    "sha256": "fb0e368df507432e3302a8540085df5c80d2fe69998a7efa932679ddfa79a783",
     "date": "2026-11-02"
    },
    "history": [
@@ -25553,6 +25602,12 @@
      "f": "plans published",
      "from": false,
      "to": null
+    },
+    {
+     "d": "2026-11-02",
+     "f": "plans published",
+     "from": null,
+     "to": false
     },
     {
      "d": "2026-11-01",
@@ -25583,12 +25638,6 @@
      "f": "plans published",
      "from": null,
      "to": false
-    },
-    {
-     "d": "2026-11-01",
-     "f": "plans published",
-     "from": false,
-     "to": null
     }
    ]
   },
@@ -25654,7 +25703,7 @@
    "overdue": null,
    "profile": 11,
    "fp": {
-    "sha256": "f755acf7d1dedcd07644e4777cf9334774ed73782d13ef0f1b45516372b2ec5e",
+    "sha256": "8e5a5b51d9b8b4bbec9fab2686365be86f892b3541206a5cf751502c424d25fb",
     "date": "2026-11-02"
    },
    "history": [
@@ -25671,6 +25720,12 @@
      "to": true
     },
     {
+     "d": "2026-11-02",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    },
+    {
      "d": "2026-11-01",
      "f": "plans published",
      "from": true,
@@ -25699,12 +25754,6 @@
      "f": "plans published",
      "from": true,
      "to": false
-    },
-    {
-     "d": "2026-11-01",
-     "f": "plans published",
-     "from": false,
-     "to": true
     }
    ]
   },
@@ -25769,7 +25818,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "e375b23f34f49ad4486182e75ca09a4fa329d4071c75fbebe4b486afce71dc50",
+    "sha256": "d67bce525c91525ad5e533382df8ac91b76d3afd0638063f9f50b26f62c3c89c",
     "date": "2026-11-02"
    }
   },
@@ -25834,10 +25883,16 @@
    "overdue": null,
    "profile": 17,
    "fp": {
-    "sha256": "093867796003f17f35ca4f63c1051531f4e50b001dfdd00dc472f05f2b6272d7",
+    "sha256": "fb6e321f0ecb16a53ecee26b00271e574fde203431768ca41888cc26dabb0abd",
     "date": "2026-11-02"
    },
    "history": [
+    {
+     "d": "2026-11-02",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    },
     {
      "d": "2026-11-01",
      "f": "plans published",
@@ -26605,7 +26660,7 @@
    "overdue": null,
    "profile": 9,
    "fp": {
-    "sha256": "08f3f089a08c90220e80c5ad5cf1d9a14e8cdf41f957b45e633da007a5005080",
+    "sha256": "5a10b55f76069fafccf87166181cc3ad0e9dfa2547f3c9ab6ea1dc75c279f986",
     "date": "2026-11-02"
    }
   },
@@ -27063,7 +27118,7 @@
    "overdue": null,
    "profile": 10,
    "fp": {
-    "sha256": "67a2719c2f8866325b65a99f4cceb8e3e7eacc566d1fa42155762d759d829c68",
+    "sha256": "4ea3aeb289459419c02bf05a839ad59266abcd16535228cf49bf63b8c747db74",
     "date": "2026-11-02"
    }
   },
@@ -27277,7 +27332,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "60bfea6e17b14369bc75b50a218bf2adef0b3278b82d78f34d7a6b4b7c107ac2",
+    "sha256": "a2275a5d6a837c6697514ad064668ba02d617e03b19b74720f8890bfeb3c3be9",
     "date": "2026-11-02"
    }
   },
@@ -27923,7 +27978,7 @@
    "overdue": null,
    "profile": 14,
    "fp": {
-    "sha256": "d675c08c8459eae9b4c1aac678e7d8ea47f9b8859eee4b4f58640b69512771db",
+    "sha256": "2e88a3140e466b3bcc17d5164fbd0789e5a97cc7c882e99c31c3a008254d5cc2",
     "date": "2026-11-02"
    }
   },
@@ -27990,7 +28045,7 @@
    "overdue": null,
    "profile": 14,
    "fp": {
-    "sha256": "9335e7f24317e942f473c643616741a43a783c603364aa4948bdbe797da3b9bd",
+    "sha256": "445ec3501ce0b309f84946e9ec0fe4fb6213cbf2393c6395492e9fb395a72383",
     "date": "2026-11-02"
    }
   },
@@ -28402,7 +28457,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "d559ba0bb1a432e087a2568d1e281c0a1405b86fed990a4fc30802c343a8c5d7",
+    "sha256": "edc38a99aecbb7549cd686ffc260eb8e3319d1ee9ec20fa0e8263b06c623c9bf",
     "date": "2026-11-02"
    }
   },
@@ -28534,7 +28589,7 @@
    "overdue": null,
    "profile": 10,
    "fp": {
-    "sha256": "d44f2523b1179f16ff291ef386b57e3183dc67c997824eec478d17b80f83d80f",
+    "sha256": "5f183ca5515eaf9eb20dce43305dbf2c69c87bb067870160dccf0fd84595c5d7",
     "date": "2026-11-02"
    }
   },
@@ -28945,7 +29000,7 @@
    "overdue": null,
    "profile": 16,
    "fp": {
-    "sha256": "cd5b73a41ae74bdedc862cb0b9c13b854e20aa99bfa8cd8fc4ab24982961a7e4",
+    "sha256": "dd22ed0c465fb7a5983836f8784c15099a605b1ca84162969d5d0704c2760266",
     "date": "2026-11-02"
    }
   },
@@ -29081,7 +29136,7 @@
    "overdue": null,
    "profile": 20,
    "fp": {
-    "sha256": "26c28d609a5fc00924ed4c41ff69e56b885a60fed3349dc86a7e29e57facb24d",
+    "sha256": "5cd77a683093259f9aa25b685b6e4ea866591df07e2a48b98ec91e31ad285fe1",
     "date": "2026-11-02"
    },
    "history": [
@@ -29098,6 +29153,12 @@
      "to": null
     },
     {
+     "d": "2026-11-02",
+     "f": "plans published",
+     "from": null,
+     "to": false
+    },
+    {
      "d": "2026-11-01",
      "f": "plans published",
      "from": false,
@@ -29126,12 +29187,6 @@
      "f": "plans published",
      "from": true,
      "to": null
-    },
-    {
-     "d": "2026-11-01",
-     "f": "plans published",
-     "from": null,
-     "to": false
     }
    ]
   },
@@ -29807,7 +29862,7 @@
    "overdue": null,
    "profile": 10,
    "fp": {
-    "sha256": "7919132fde68f4fdfa3447a7f590c5163737701dc20d86aa15792d3548b8b67f",
+    "sha256": "2693458cba5a101abfe539d02747d516b5d0012de9dc0a62482f17e9e3238422",
     "date": "2026-11-02"
    }
   },
@@ -31001,7 +31056,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "5cea75b69ec95fd3b083f75ea0629327697a056faacfd77f6ee99b4c22f57296",
+    "sha256": "2dc87a7c2c24d355e17794046e8d31a057e0d4d2626204ce53de0d1bd427b8dd",
     "date": "2026-11-02"
    },
    "register": {
@@ -31075,7 +31130,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "af3b7d2b87e98b645ef5075d42ea2f632f1a6969fabf762c61198a94a551f36c",
+    "sha256": "134d5733e26b090856a26f6a68ee186bd8559a5793b3fece239293c9778bb728",
     "date": "2026-11-02"
    }
   },
@@ -31142,7 +31197,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "ba2d4a8ab440ee771349c2035fc442d26aff35a5557ac96fff82b488959f4300",
+    "sha256": "c4e43d443612d6a98745edfc25dbc84407b1701ff15693b521b4b0e42002f6a2",
     "date": "2026-11-02"
    }
   },
@@ -31773,7 +31828,7 @@
    "overdue": null,
    "profile": 7,
    "fp": {
-    "sha256": "6cf0ffee929990899b1082b18e02710752f8db47664aede39e80527f6bc44ba3",
+    "sha256": "8cf3858ef7056abb5df1e4c506a1d8017185ae751bef54571370ba927a8f183e",
     "date": "2026-11-02"
    }
   },
@@ -32095,7 +32150,7 @@
    "overdue": null,
    "profile": 14,
    "fp": {
-    "sha256": "8fe51a5ddb17bfe912e7393c48d6c536559d03fc1b0b0b27e410630c758f3e20",
+    "sha256": "8ce8aa031e8ae4b0b7c15db8e8b5d1ed96a516e6b2327517003bd1808c5de336",
     "date": "2026-11-02"
    }
   },
@@ -32160,7 +32215,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "9dc174f81ca648e9eb5aeb546c8628502cf341cff6f24e5fd3e0ac8b9827038c",
+    "sha256": "c44acd49296ca4da376ad5b7d324a499587f6abdc6029b5c893b6280eb0691eb",
     "date": "2026-11-02"
    }
   },
@@ -32430,7 +32485,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "44f4b1a4addba8c7aa1262039eb0011ea1a5e7f783e804c4f66fc7ff30e0cf51",
+    "sha256": "dc97e9ea9c3c02be14243be643de7f8ab09d91f816d3d606a8db9cd7f417b4a8",
     "date": "2026-11-02"
    },
    "history": [
@@ -32676,7 +32731,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "7fbaafa27c36214b5a1a1a158842992034de1adf4e7efc3012f5184b61ea7120",
+    "sha256": "8172b7cb5411c0d548ae775bdf6ffab8b326b70020f87423109280f81ad9ed18",
     "date": "2026-11-02"
    }
   },
@@ -32860,7 +32915,7 @@
    "q": [
     "A permit number is published: does it exist in the official register and match this plot?",
     "Leasehold: is the lease registered, and is the base term the one advertised?",
-    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
@@ -32888,7 +32943,7 @@
     "date": "2026-11-01"
    },
    "fp": {
-    "sha256": "8b2629cf9dc86c721a298f7a717fd61f1b58123e20e282fb6b202904f4db82b3",
+    "sha256": "871ebb252b38d0329649d9215a2b1234f02889aeb13b103da8fb9881ab9e4450",
     "date": "2026-11-02"
    },
    "history": [
@@ -32897,6 +32952,12 @@
      "f": "permit claimed",
      "from": false,
      "to": true
+    },
+    {
+     "d": "2026-11-02",
+     "f": "permit claimed",
+     "from": true,
+     "to": false
     },
     {
      "d": "2026-11-01",
@@ -33922,7 +33983,7 @@
    "overdue": null,
    "profile": 9,
    "fp": {
-    "sha256": "25b8170651cfe0c2253ded3fe745b665b0e66ea6fda0b7f416f817fbaefc2fc6",
+    "sha256": "cfdac5b84df3949df47f354a72c25fba5eaad9337ee9b579441a6259210f8d02",
     "date": "2026-11-02"
    }
   },
@@ -34936,7 +34997,7 @@
    "overdue": null,
    "profile": 14,
    "fp": {
-    "sha256": "c741be4d486678b109365e5a7ac20240941b909fb7b63f7963cdf5e7ba97b059",
+    "sha256": "ed7d70c5511df089cc0369089885b7282586fb38f18a4e0a0649bd5c8422247c",
     "date": "2026-11-02"
    }
   },
@@ -35525,7 +35586,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "01599f15bff7425bf068cbb77a2f9b14e73099edcf469ff026eb2ca5beb3e46b",
+    "sha256": "46fc243ec05449b5253970f60fcfc3c99b09667a7b45a2acffe62f677ba3ae84",
     "date": "2026-11-02"
    },
    "history": [
@@ -36101,7 +36162,7 @@
    "overdue": null,
    "profile": 9,
    "fp": {
-    "sha256": "61a1238fd69601c381f234a6fccd9129e3247a678568ce4986a4934a322464be",
+    "sha256": "b4496df88ba8f42c4572f5839d2e391b9d048690f0b54041636c483c96864ec0",
     "date": "2026-11-02"
    }
   },
@@ -37410,7 +37471,7 @@
    "units": 139,
    "checks": {
     "permit": 0,
-    "escrow": null,
+    "escrow": true,
     "progress": null,
     "plans": false,
     "record": false,
@@ -37424,7 +37485,7 @@
      "returns_ok"
     ]
    },
-   "score": 0,
+   "score": 1,
    "max": 6,
    "flags": [],
    "notes": [],
@@ -37437,8 +37498,7 @@
     "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
     "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
     "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
-    "No building permit mentioned: ask for the number before paying.",
-    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+    "No building permit mentioned: ask for the number before paying."
    ],
    "verified": {
     "permit": "none",
@@ -37459,7 +37519,7 @@
    "overdue": null,
    "profile": 14,
    "fp": {
-    "sha256": "1faefe61d05339bf4e488f4809a4da760a2aae4416b76d7b210971acdb2ce11d",
+    "sha256": "3b337107cb2e93ead0489cf114e948f1f4e9baa9c1d4de4f04387c866430c263",
     "date": "2026-11-02"
    }
   },
@@ -38486,7 +38546,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "f8053d53f62e72a1d9d77eb19ba51df489a7bd8104c1f211d4308bcfb5d66fc7",
+    "sha256": "f4279adcebff0381e62b956da1512031bf1f22cef42b6c8e8f543d986fb3f790",
     "date": "2026-11-02"
    }
   },
@@ -39003,7 +39063,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "717e85aa9b7172158212c69c8ead55b40885c327d93f0f4ff4ddcd0dac0904e6",
+    "sha256": "2b8de95c7b80fbf14681dc14ce700c8474d09bc23aa35dca17695deb4cf1b1b3",
     "date": "2026-11-02"
    }
   },
@@ -39198,7 +39258,7 @@
    "overdue": null,
    "profile": 14,
    "fp": {
-    "sha256": "f85e1a464488060167f1f1eca3d9b73661cc2d6e228501049407743019bb093f",
+    "sha256": "468bb62f1eafa4f02576352ce9d35f8380df834fd786a97599f043c7377cc1a2",
     "date": "2026-11-02"
    }
   },
@@ -40399,7 +40459,7 @@
     "date": "2026-11-01"
    },
    "fp": {
-    "sha256": "bb43377b1bff9a416f1e429987356b01123beb855c165e7e04da19b97e76ebb9",
+    "sha256": "3d7e90ce674aedf505b7fe466bfcd6049b960f3127cae028680e124f14b6c45a",
     "date": "2026-11-02"
    }
   },
@@ -40603,7 +40663,7 @@
     "date": "2026-11-01"
    },
    "fp": {
-    "sha256": "c28dd43908133adef871bcd5613bb74e00f95f98eabeebb8dcc3905c55d01411",
+    "sha256": "1f019a95a521782804021464c61e0fdaf17fdcfc30beda997b5c9e5cf2b43f68",
     "date": "2026-11-02"
    }
   },
@@ -40738,7 +40798,7 @@
    "overdue": null,
    "profile": 10,
    "fp": {
-    "sha256": "462836982cf1a240c2722508acf1f6646b50dfc157df1fadddb3394d36b15755",
+    "sha256": "6308db395bcb52c5bf3290d12833708e4a5b88feb464b00a381d4f9a722d0449",
     "date": "2026-11-02"
    }
   },
@@ -41068,7 +41128,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "9426bf32e5f72f4129c48b4ec8152535972359e924da024ed5379d76ace6c78c",
+    "sha256": "5e39afbcbf03303563b7268ad50b23a358cdcbff9adfee85dc0325d8b4b696fd",
     "date": "2026-11-02"
    },
    "history": [
@@ -41225,7 +41285,7 @@
    "overdue": null,
    "profile": 10,
    "fp": {
-    "sha256": "7ccc6d0e37feb743d4eae25415d3c4c5a93be00b5f4ff796ec7c879038852791",
+    "sha256": "9102b74be29e15ba812f7a938fa45231c27e6346ce24ba4b1a76af2a9b9f7179",
     "date": "2026-11-02"
    }
   },
@@ -42014,7 +42074,7 @@
     "date": "2026-11-01"
    },
    "fp": {
-    "sha256": "50f6f5108d26dac6b51899a705e333c0eac26bcf62602c9c4ef76bbf0e53e93d",
+    "sha256": "822cc4686a9551357b7a23a4fd4e7a7e89a6976a7712356a695e9f8fe588a271",
     "date": "2026-11-02"
    }
   },
@@ -42079,7 +42139,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "0f38faa806c87c56f9681940863900823b1ad5de11469d53cce488c51a8b746a",
+    "sha256": "f130274818652f0f57d7d5313b1de1f11df3125d9f419e95af227115fbdb3e4d",
     "date": "2026-11-02"
    },
    "history": [
@@ -42157,7 +42217,7 @@
    "overdue": null,
    "profile": 10,
    "fp": {
-    "sha256": "3c642a0d05825906c472b906abbd91caeb7badbbf05d51ca35d08bbf48d872e0",
+    "sha256": "07a61afc7056513ce337693ec9cc56fd6a43f4b2cc3843fe3879cf3dfb0bb668",
     "date": "2026-11-02"
    }
   },
@@ -42287,7 +42347,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "2ebc115ae083355dd306f60b076117258f31b7d3d883f099ef7d3dbc546630c8",
+    "sha256": "d68eb3f5312656d1eb81e8c72856b750696c391727437d93ca2b91fc1b954ecf",
     "date": "2026-11-02"
    }
   },
@@ -42417,7 +42477,7 @@
    "overdue": null,
    "profile": 10,
    "fp": {
-    "sha256": "8e13ea7991aeda1347d3b53f944152ab49cead4370f310524a362e15fb36b726",
+    "sha256": "88258257bb087d1b7d5a199643d44d6f178fe8e32a1c3ff9652b3aecb9e44789",
     "date": "2026-11-02"
    },
    "history": [
@@ -43357,7 +43417,7 @@
    "overdue": null,
    "profile": 11,
    "fp": {
-    "sha256": "576e414d3438922fdb947a9cf2ee6b1b4121ce9296e1ea1ad179bd634b534586",
+    "sha256": "854f99ad8a668e4c39c21ecdacbaf587231e3b70e7495c27ec9acdcb721d6872",
     "date": "2026-11-02"
    }
   },
@@ -43423,7 +43483,7 @@
    "overdue": null,
    "profile": 9,
    "fp": {
-    "sha256": "1caaf06469b5e82f98aa75c9c47688da32da19fa57a613f917f3d51e038631e9",
+    "sha256": "a2b9420ce92706204fb7450e54d890c5732bd26eed762cc69b6faa80eb1298ac",
     "date": "2026-11-02"
    }
   },
@@ -43488,7 +43548,7 @@
    "overdue": null,
    "profile": 16,
    "fp": {
-    "sha256": "8371b188f2fde1ea2335d8fe91eba1980c25a234048a87b3ea6fc9754619d2d9",
+    "sha256": "26ccc3532633ecd900343801559d7a0d37501ce56e49f523d6b0719872d3d2b7",
     "date": "2026-11-02"
    },
    "history": [
@@ -43497,6 +43557,12 @@
      "f": "plans published",
      "from": false,
      "to": true
+    },
+    {
+     "d": "2026-11-02",
+     "f": "plans published",
+     "from": true,
+     "to": false
     },
     {
      "d": "2026-11-01",
@@ -45048,7 +45114,7 @@
     "date": "2026-11-01"
    },
    "fp": {
-    "sha256": "7abcb842a3d63f5727f6adcdf88090244c8131efefbadb3a27ef35cca6802a86",
+    "sha256": "cbfa8d062bc13ce689eb3016150bbd2d394611ed6fed6df7d59ed92e21f73bef",
     "date": "2026-11-02"
    }
   },
@@ -45383,7 +45449,7 @@
    "overdue": null,
    "profile": 14,
    "fp": {
-    "sha256": "133b4cfe3df7a3b6d09ba16bcd9cf4488940c454bcb215deaf04fd868760f04d",
+    "sha256": "93800fd317c4daf7ed115eb93a595e3dfefa2e20951f48ae936138c6ee2c191a",
     "date": "2026-11-02"
    },
    "history": [
@@ -45492,7 +45558,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "ceccd8a50f556bb8eed635bccc15c757a044e0766379689ce0d432b43c148a9d",
+    "sha256": "e5ddd164d756c2dc98cdc1114e8af3dd5c3e4d0740364ed9f4085555fa825a84",
     "date": "2026-11-02"
    }
   },
@@ -45880,7 +45946,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "6da2fea896d3060017346413369b9164e77e1daa7b48e40a02de6168c8c9febc",
+    "sha256": "9152947a8b35479ce9b2e5289c825d6e25940cabeae4cb5a90cc8900675a7441",
     "date": "2026-11-02"
    },
    "register": {
@@ -46060,7 +46126,7 @@
    "overdue": null,
    "profile": 11,
    "fp": {
-    "sha256": "84f53761ad004ab348b5438cec7e4c9f644f6105e7378b9af6341f294dd2f95e",
+    "sha256": "032025a09df584830a690af974c1c18ffd32bd76878b739c9b3219a80f71cb91",
     "date": "2026-11-02"
    },
    "register": {
@@ -46131,7 +46197,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "1051fb409a524d12ede892e6e5d47ca5e3ab8227c816755bc8962d55a50240a4",
+    "sha256": "6680d1940f76173b512bd4e3b7594f2a2d7a60eff54c04cca375832ddc9f38b3",
     "date": "2026-11-02"
    },
    "register": {
@@ -46512,7 +46578,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "6e4165e775ea945adfe2e5a502c2db75209f77f9fb41ebbac90e928a2c10ae36",
+    "sha256": "b0723da9d9abfdd8019de7d6cf881ed9e602b8a84497e6a86d382db74f90bbdb",
     "date": "2026-11-02"
    }
   },
@@ -47269,7 +47335,7 @@
    "overdue": null,
    "profile": 16,
    "fp": {
-    "sha256": "641f6985d57fb69c0692312f90efacaf2a286555f18532cbf054457969d79846",
+    "sha256": "700a52090d8a0e56c874d934709ce0e0a8b2ff2ef80f6ea5f1c187c6f33d2a26",
     "date": "2026-11-02"
    }
   },
@@ -47864,7 +47930,7 @@
    "overdue": null,
    "profile": 16,
    "fp": {
-    "sha256": "9ab9842ec22382cab55858a119b7e187f85ec17a060d4a2bed50447d5ab7bde1",
+    "sha256": "0a2b8d6aa1097fea4a529938e2c2ee75c96372a3705895d5b03196160225781e",
     "date": "2026-11-02"
    },
    "register": {
@@ -47872,7 +47938,15 @@
     "item": "environmental approval",
     "status": "approved",
     "checked": "2026-11-01"
-   }
+   },
+   "history": [
+    {
+     "d": "2026-11-02",
+     "f": "plans published",
+     "from": true,
+     "to": false
+    }
+   ]
   },
   {
    "id": "PHK-002",
@@ -47935,7 +48009,7 @@
    "overdue": null,
    "profile": 11,
    "fp": {
-    "sha256": "2a2bac14faca83da57eb0e02fa034913ab71b961bdd49312508773a4eec559df",
+    "sha256": "6e2b83d39f250e3d21bf5ea005aa68415dab4ec44a6b933166eeaeefc595c5e3",
     "date": "2026-11-02"
    },
    "register": {
@@ -48325,7 +48399,7 @@
    "plans": true,
    "band": "$100k to $200k",
    "done": 2028,
-   "title": "freehold",
+   "title": "freehold (foreign quota units) or leasehold",
    "lease": null,
    "yield": null,
    "units": 295,
@@ -48377,7 +48451,7 @@
    "overdue": null,
    "profile": 14,
    "fp": {
-    "sha256": "1c6b296ecdcb514ec2c0776637b834325226eed0f9abf824504a992b2452d71d",
+    "sha256": "dc3e3050b2f9a93aa1b84164117bac6aeb9836630819aa4712b293bc8bd9ed7c",
     "date": "2026-11-02"
    }
   },
@@ -48509,7 +48583,7 @@
    "overdue": null,
    "profile": 16,
    "fp": {
-    "sha256": "ea30fd3e8c2bc6c804df4a619179e76a6fa8dd9956826215b23576344fe6d099",
+    "sha256": "7bfa30636b6a3c1b95e429fab0ed7256041f5b67a60d815031bc31acb7e6fa52",
     "date": "2026-11-02"
    }
   },
@@ -48873,7 +48947,7 @@
     "date": "2026-11-01"
    },
    "fp": {
-    "sha256": "57de0df5bd881e51a7acab24b416b5be390901c2a958b612ec19fc4c9282b028",
+    "sha256": "7a7a2a69ffc93897515f7e9867a3d7f548adea7443c98f739e8532fad056241c",
     "date": "2026-11-02"
    },
    "register": {
@@ -49632,7 +49706,7 @@
    "overdue": null,
    "profile": 5,
    "fp": {
-    "sha256": "92be1ebfdfbf4b8a007d7c4dd472bc9b8884f076e638f7e8290607d7cd361c3d",
+    "sha256": "73a7832cdae18dcbc85c031d9ef65c29852c29e36fb42958b098b16b9cad556e",
     "date": "2026-11-02"
    }
   },
@@ -49956,7 +50030,7 @@
    "overdue": null,
    "profile": 14,
    "fp": {
-    "sha256": "719f703a19e79403261003fbea4c59613905383dabc1873a048a379c30c74e21",
+    "sha256": "f0a06b125f9a54b48dbbe89f9bee4239b43db588e621680bf95707d7de120dcb",
     "date": "2026-11-02"
    }
   },
@@ -51292,7 +51366,7 @@
    "overdue": null,
    "profile": 16,
    "fp": {
-    "sha256": "c1bdbf39eb45dae5380599c6f376db17221d3edde81107652d63a19557360f18",
+    "sha256": "f2d1d719ed8338781991493c1978c1dd9fabe32be831561d19ca95ef147fec1d",
     "date": "2026-11-02"
    }
   },
@@ -51435,7 +51509,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "b906ce4041f18ddc6ba971e691a6d193ccab6f41bdeb64460bc50a6b3a194db2",
+    "sha256": "0af3e2a62c4fe5ef6d916ae8c1288ce60c5d5bd8faa7c5c35fc525bd3f239267",
     "date": "2026-11-02"
    }
   },
@@ -51500,7 +51574,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "d14a4cfe21566231b3ed2445e0bfaa24a9426ea0cf732bcc5805ff56d2314314",
+    "sha256": "a6d0347d4b2e9d58b09361406e6a5bac5cdec7f4caa812d7161217956d76be5b",
     "date": "2026-11-02"
    }
   },
@@ -51630,7 +51704,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "beb82a61d9bd0857f81746f984613df66bc3304cc8037c48d78acabcf75772d3",
+    "sha256": "13d712b29424e3425d6e889aae89f9c8c9ba32ca91439d1dff20ed5a077796cc",
     "date": "2026-11-02"
    }
   },
@@ -51695,7 +51769,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "32d6ab67026a00bcab840b45ea7da63c75acb8bd40ce8a84cdd4adb655a63693",
+    "sha256": "8fcb793df084e85e0533e3a46f0b009f0f5e54fbc4fb45be4b74b5aee8c5513a",
     "date": "2026-11-02"
    },
    "history": [
@@ -51768,7 +51842,7 @@
    "overdue": null,
    "profile": 14,
    "fp": {
-    "sha256": "58c9677ad69609efee3bf39d07c78fc1f4b513e8a534be33700db411ac4f3670",
+    "sha256": "818d3145a491e33c7c1837c6ebfb69148ad133e4090afff20593c99e825ea4da",
     "date": "2026-11-02"
    }
   },
@@ -51833,7 +51907,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "867e0c8accf4cfebb9aea0b90cb1e0f4c61b0510a0e3850194932f5c7867b380",
+    "sha256": "661bfc5877bb1e9e447301361dcb8d708a00157eb5a8974cb40847966d219f50",
     "date": "2026-11-02"
    },
    "history": [
@@ -52036,7 +52110,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "b4066265393bc1bcc31da2bd39eb5b18888b9ada6cd465a6688dc68f4fc70a6c",
+    "sha256": "65c39160f42198f0eeab083fc9918cb23b45263ddc99c3dd00315d26fe62bc68",
     "date": "2026-11-02"
    },
    "history": [
@@ -52045,6 +52119,12 @@
      "f": "plans published",
      "from": true,
      "to": false
+    },
+    {
+     "d": "2026-11-02",
+     "f": "plans published",
+     "from": false,
+     "to": true
     },
     {
      "d": "2026-11-01",
@@ -52250,7 +52330,7 @@
     "date": "2026-11-01"
    },
    "fp": {
-    "sha256": "93f91af40d3e727088ca557f85c6dfb16efa0271b48973fd070939f9b4817bfe",
+    "sha256": "934d642142651f65434fd1f2e191676ace2c2330e8a458c71576b92e3829cf11",
     "date": "2026-11-02"
    },
    "history": [
@@ -52328,7 +52408,7 @@
     "date": "2026-11-01"
    },
    "fp": {
-    "sha256": "9570f1f3b51cbc3f8c7d9e4bd7fae7dd101be38ee8a26df7dc9ec69f8b5e42d0",
+    "sha256": "0a6e695922b462dcfc763856c30571155b92a8acdd9bd7ba7cb43de6308642bb",
     "date": "2026-11-02"
    }
   },
@@ -52398,10 +52478,16 @@
     "date": "2026-11-01"
    },
    "fp": {
-    "sha256": "9502929db32478bcecb3bfcd6a3a4716e34ca497a55c4ad0aedbb08b3e449522",
+    "sha256": "b48cfd37a00095b8eb72354dcce61a46f9a0cce587f36334e98b5280306ecbad",
     "date": "2026-11-02"
    },
    "history": [
+    {
+     "d": "2026-11-02",
+     "f": "plans published",
+     "from": null,
+     "to": false
+    },
     {
      "d": "2026-11-01",
      "f": "plans published",
@@ -52488,7 +52574,7 @@
     "date": "2026-11-01"
    },
    "fp": {
-    "sha256": "acec5d69e25335c98b01048a9ba77e270c82864346ef4cf697d286a761afe652",
+    "sha256": "c1b4d2f190651a23413e60026fa999ea2b19651fd3dd08c96868beeb3bfba610",
     "date": "2026-11-02"
    }
   },
@@ -52553,7 +52639,7 @@
    "overdue": null,
    "profile": 17,
    "fp": {
-    "sha256": "12bd2117f54e6d8ab632ad219dc7bac1bbdfa6436c6f18be74d08acd9a3ce3cd",
+    "sha256": "1eba1c830b0b87f747408586f7b5eb880a4ae352ed1f6320e4d5b58ff7a20567",
     "date": "2026-11-02"
    }
   },
@@ -52618,7 +52704,7 @@
    "overdue": null,
    "profile": 18,
    "fp": {
-    "sha256": "280c31b8a33af64b2cb4b45c4a32ffd5a5f1a764662a7a48902fabd474ee251d",
+    "sha256": "60bda81af4b883f619e92635628c1eb34c19260b6e05be53a4f3a248434f8927",
     "date": "2026-11-02"
    }
   },
@@ -54908,7 +54994,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "4c2afe5fc96f12e694b0e0cca9f603e7afc95a454114106c8eef6849ee01e5c5",
+    "sha256": "7399f7bd2de37302bd39a79ce4a260ebe48dea78636ef8e4d964932642239a22",
     "date": "2026-11-02"
    }
   },
@@ -55369,7 +55455,7 @@
     "date": "2026-11-01"
    },
    "fp": {
-    "sha256": "fff2b07d5f4a314041f45e81ba8262c433418590ffbb634c0e2b3acd5a7983ec",
+    "sha256": "656ee129df97a16ba8d8f83811aa0d09c85f70bc8dc361c66e97d5f359fbeb30",
     "date": "2026-11-02"
    }
   },
@@ -55434,7 +55520,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "b51f9d653beb653a97d505e50dc1ac7e1ae0b96089e5bdb90df3f60060253c2c",
+    "sha256": "e592c35c6c906a16fb2795ab6313382426495ecab5f652d7b7b2511443b6e756",
     "date": "2026-11-02"
    }
   },
@@ -55504,7 +55590,7 @@
     "date": "2026-11-01"
    },
    "fp": {
-    "sha256": "615d214dfb6ae5504fef657f850ca2bcb4a0c43040a75f315c68248cadbab42c",
+    "sha256": "3cded6a8714894a0b7bf93702f63276841f32fea64394d4623c7dc58e3afc227",
     "date": "2026-11-02"
    }
   },
@@ -55569,7 +55655,7 @@
    "overdue": null,
    "profile": 16,
    "fp": {
-    "sha256": "0aaf02da7cc1f8bb983b06cac65962865ac6f7bdb6cdad7e5f3bcf4cd521de4e",
+    "sha256": "a2d5ef0d8316e9ee3229a5f8ba914f8e950b62e1be18d2fdb1755bf7188490ea",
     "date": "2026-11-02"
    }
   },
@@ -55634,7 +55720,7 @@
    "overdue": null,
    "profile": 16,
    "fp": {
-    "sha256": "f189703a42efebe13d9c2cc7e5ae8078171ca0800d2fd02f35ebc444bd412b06",
+    "sha256": "296a4351a47734cceaacde56a6208331292912eefbe5f97198fda7cd91317a99",
     "date": "2026-11-02"
    }
   },
@@ -55699,7 +55785,7 @@
    "overdue": null,
    "profile": 14,
    "fp": {
-    "sha256": "326b9135aec8ba1dffb5fec3d9abe1779f8f6cf335dab51b1f8420f128f88f22",
+    "sha256": "8df84405e164761f539ebeb4214bf31146c509ff5fa02980f92d95b8c45c9eba",
     "date": "2026-11-02"
    }
   },
@@ -56551,7 +56637,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "8fdc863856e2d531f63b19c043d2193b7837b0b9b64ef11943c849ba8b8b9ef7",
+    "sha256": "22ed58467ea56b5b111a785b8714ba1f4ec9bdaba7d63adbc0836f5d2f1a9fbd",
     "date": "2026-11-02"
    }
   },
@@ -56948,7 +57034,7 @@
    "overdue": null,
    "profile": 12,
    "fp": {
-    "sha256": "9c9755d23692463afebaeb45e0899c631af9487672a24224de5f3fdd57783c47",
+    "sha256": "5ff293ec9916fc6ef03f754958e0e6cd480efec634e6fc4aaed05f3d568618f2",
     "date": "2026-11-02"
    }
   },
@@ -58692,7 +58778,7 @@
     "date": "2026-11-01"
    },
    "fp": {
-    "sha256": "0e11ced79518b751bf5dfedfb925f496c4137359243691ccdc45a394b2c33067",
+    "sha256": "267c1b0f04212b0bcb1367f19eb68076ede8bd9ceb46b17502f4b0a8647bfa14",
     "date": "2026-11-02"
    }
   },
@@ -58762,7 +58848,7 @@
     "date": "2026-11-01"
    },
    "fp": {
-    "sha256": "da95cbff1c56c43ab5a584412aa50089d5ac194a941d0f1b4b957fb3d26c71d9",
+    "sha256": "8e6e80833d5562227d40c0e4449160898faa6dabe9d2b27e29fb92e3bbcf8eec",
     "date": "2026-11-02"
    }
   },
@@ -58832,7 +58918,7 @@
     "date": "2026-11-01"
    },
    "fp": {
-    "sha256": "da95cbff1c56c43ab5a584412aa50089d5ac194a941d0f1b4b957fb3d26c71d9",
+    "sha256": "3ca3e15105452d0cc628ab5fd4a92ae0fdd39238a57a3944a246ff03fb9b7eca",
     "date": "2026-11-02"
    }
   },
@@ -59310,7 +59396,7 @@
    "overdue": null,
    "profile": 11,
    "fp": {
-    "sha256": "21598901e54c9b319d8c736dfc42d46f6874847c2f89192b8fd3925a6cd88b0b",
+    "sha256": "84de175eb79dabb63cd82b05c8f86d1a9ec921c0082044413cad8110b8b742af",
     "date": "2026-11-02"
    }
   },
@@ -60273,7 +60359,7 @@
   "overdue": 30,
   "overdue_avg_months": 6.7,
   "delayed": 103,
-  "changes_detected": 333,
+  "changes_detected": 352,
   "sat_watched": 85,
   "sat_no_change": 20,
   "register_watched": 21
@@ -60281,7 +60367,7 @@
  "seal": {
   "date": "2026-11-02",
   "count": 805,
-  "root": "2f5c5ced61703622c64b13843174807d5a95ff7c39f3784228a4381f2b130b29",
+  "root": "f0b35933d030664bef4a24b0c59bd76a6ed94c0d908bf412c1ae59e112d64f52",
   "method": "root = sha256 of the lines \"ID SHA256\" (one per project with a fingerprint, sorted by id, each ending with a newline); each SHA256 is the hash of the developer page text as read by the agent; the root is timestamped in Bitcoin through OpenTimestamps",
   "stamped": true
  },
@@ -60455,6 +60541,12 @@
    "u": "/database"
   },
   {
+   "d": "2026-11-02",
+   "k": "auto",
+   "t": "38 changes detected on developer pages by the research agent",
+   "u": "/database"
+  },
+  {
    "d": "2026-11-01",
    "k": "feature",
    "t": "Automatic payment confirmation: PayPal notifications verified with PayPal before a case is marked paid",
@@ -60519,12 +60611,6 @@
    "k": "data",
    "t": "Accuracy check: 485 claims in 50 random projects re-checked, 11 corrected, 2.3% error rate among checkable claims",
    "u": "/corrections/"
-  },
-  {
-   "d": "2026-11-01",
-   "k": "feature",
-   "t": "Public roadmap: 49 of 100 features shipped, every one tracked",
-   "u": "/roadmap"
   }
  ]
 }
