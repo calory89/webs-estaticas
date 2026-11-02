@@ -1,5 +1,107 @@
 [
  {
+  "d": "2026-11-02",
+  "k": "feature",
+  "t": "Public system status: daily end-to-end self-test, email delivery, data freshness and site quality, measured by the system itself",
+  "u": "/status/"
+ },
+ {
+  "d": "2026-11-02",
+  "k": "feature",
+  "t": "Public metrics, live from the production database: leads, desk reviews, accounts and cases week by week, small numbers included",
+  "u": "/metrics/"
+ },
+ {
+  "d": "2026-11-02",
+  "k": "feature",
+  "t": "Site evidence sealed in Bitcoin every day: fingerprints of every accepted photo combined into one OpenTimestamps root anyone can recompute",
+  "u": "/status/"
+ },
+ {
+  "d": "2026-11-02",
+  "k": "feature",
+  "t": "AI reads your contract and fills your payment schedule; you confirm every instalment before it is saved",
+  "u": "/portal/demo"
+ },
+ {
+  "d": "2026-11-02",
+  "k": "feature",
+  "t": "Instalment reminders by email 7 days and 1 day before each payment, with a warning when our report is not ready yet",
+  "u": "/#how"
+ },
+ {
+  "d": "2026-11-02",
+  "k": "feature",
+  "t": "Email alerts when a saved project's public record changes: score, stage or a new public problem",
+  "u": "/watchlist/"
+ },
+ {
+  "d": "2026-11-02",
+  "k": "feature",
+  "t": "Download my data and delete my account, self-service from the portal",
+  "u": "/data-policy/"
+ },
+ {
+  "d": "2026-11-02",
+  "k": "feature",
+  "t": "Daily speed budget and accessibility check (axe-core, WCAG 2 AA) on the key pages, results on the status page",
+  "u": "/status/"
+ },
+ {
+  "d": "2026-11-02",
+  "k": "feature",
+  "t": "Buyer portal in Spanish",
+  "u": "/login/"
+ },
+ {
+  "d": "2026-11-02",
+  "k": "feature",
+  "t": "Faster pages: one analytics library instead of three, about 600 KB less per mobile visit",
+  "u": "/status/"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Automatic payment confirmation: PayPal notifications verified with PayPal before a case is marked paid",
+  "u": "/pricing/"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Free buyer accounts: save projects on every device, desk reviews and payment schedule without paying",
+  "u": "/login/"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Share your case with your lawyer or partner: private read-only link that expires and never shows messages",
+  "u": "/#how"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Password reset and email confirmation by link, sessions ended on password change",
+  "u": "/security/"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Independent security review of the new code: payment spoofing, permissions and injection issues fixed the same night",
+  "u": "/security/"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Daily self-test runs the whole buyer journey in the production database and rolls it back",
+  "u": "/status/"
+ },
+ {
+  "d": "2026-11-01",
+  "k": "feature",
+  "t": "Ops CRM: pipeline, lead timeline, inbox sorted by waiting time, search everything, live alerts",
+  "u": "/yc"
+ },
+ {
   "d": "2026-11-01",
   "k": "data",
   "t": "+117 new projects in round 6: Dubai, Bali, Thailand, Mexico, Mediterranean, Turkey and Georgia, Southeast Asia, Americas and Gulf",
