@@ -1,3 +1,4 @@
+import T3PH_DATA from "./t3-hotel-photos.mjs";
 //#region node_modules/.nitro/vite/services/ssr/index.js
 var lastCapturedError;
 var TTL_MS = 5e3;
@@ -84909,8 +84910,13 @@ function card$1(t, p, city, L, cityImg, slug, price) {
 	const chips = `<div class="gchips"><span>${esc(x.tier[t])}</span>${city.best === t ? `<span class="top">${esc(x.best)}</span>` : ""}</div>`;
 	if (!p) return `<article class="gcard ${t} empty"><div class="bd">${chips.replace("class=\"gchips\"", "class=\"gchips\" style=\"position:static\"")}<p>${esc(x.none)}</p><small>${esc(x.tierNote[t])}</small></div></article>`;
 	const g = p.gym ?? {};
-	const img = p.photo?.url ?? cityImg;
-	const credit = p.photo?.url ? p.photo.gym ? x.photoGym : x.photoHotel : x.photoCity;
+	const own = p.photo?.url && !isDeadImg(p.photo.url) ? p.photo.url : null;
+	const gx = (T3PH.gyms[p._gk ?? ""] ?? []).filter(([u]) => u && !isDeadImg(u));
+	const phs = hotelPhotos(p.bookingUrl, [own, ...(p._cat ?? [])]);
+	for (const [u] of gx) if (!phs.includes(u)) phs.push(u);
+	const img = phs[0] ?? cityImg;
+	const src0 = gx.find(([u]) => u === phs[0]);
+	const credit = !phs[0] ? x.photoCity : phs[0] === own ? (p.photo.gym ? x.photoGym : x.photoHotel) : src0 ? (src0[1] === "hotelgyms.com" ? x.photoGym : x.photoHotel).replace("Booking.com", src0[1]) : x.photoHotel;
 	const rows = [];
 	if (g.sizeM2) rows.push(`<dt>${esc(x.size)}</dt><dd>${g.sizeM2.toLocaleString(L === "es" ? "es-ES" : "en-GB")} m²</dd>`);
 	if (g.hours) rows.push(`<dt>${esc(x.hours)}</dt><dd>${esc(/^24/.test(g.hours) ? x.h24 : g.hours)}</dd>`);
@@ -84918,7 +84924,7 @@ function card$1(t, p, city, L, cityImg, slug, price) {
 	if (g.extras?.length) rows.push(`<dt>${esc(x.extras)}</dt><dd>${esc(g.extras.join(" · "))}</dd>`);
 	if (g.access) rows.push(`<dt>${esc(x.access)}</dt><dd>${esc(g.access)}</dd>`);
 	const stars = p.stars ? `${"★".repeat(p.stars)} · ` : "";
-	return `<article class="gcard ${t}" id="${t}"><div class="ph">${chips}${price ? `<span class="pricetag gprice" data-eur="${price.nightly}" title="${esc(Y[L].priceRef(isoOf(price.checked) || "2026"))}"><span class="v">${money(price.nightly)}</span><small> ${esc(x.perNight)}</small></span>` : ""}${img ? `<img src="${ESC_URL(img)}" alt="${esc(`${p.hotel}, ${city.city}`)}" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='${esc(cityImg ?? "")}'"><small>${esc(credit)}</small>` : ""}</div>
+	return `<article class="gcard ${t}" id="${t}"><div class="ph">${chips}${price ? `<span class="pricetag gprice" data-eur="${price.nightly}" title="${esc(Y[L].priceRef(isoOf(price.checked) || "2026"))}"><span class="v">${money(price.nightly)}</span><small> ${esc(x.perNight)}</small></span>` : ""}${img ? `<img src="${ESC_URL(img)}" alt="${esc(`${p.hotel}, ${city.city}`)}" loading="lazy" referrerpolicy="no-referrer" ${fbAttr([...phs.slice(1), cityImg])}><small>${esc(credit)}</small>` : ""}</div>
 <div class="bd"><h2>${esc(p.hotel)}</h2><div class="meta">${stars}${esc(p.area ?? city.city)}</div><p>${esc(L === "es" ? p.summary_es : p.summary_en)}</p>${rows.length ? `<dl>${rows.join("")}</dl>` : ""}${p.confidence === "low" ? `<p class="warn">${esc(x.low)}</p>` : ""}
 ${ctasFor(p, x, slug, t)}
 <div class="src">${esc(x.sources)}: ${p.sources.map((s) => `<a href="${esc(s)}" rel="nofollow noopener" target="_blank">${esc(host(s))}</a>`).join("")}</div></div></article>`;
@@ -84939,6 +84945,14 @@ async function gymCityPage(urlSlug, Lx) {
 	const path = `/gyms/${slug}`;
 	const picks = TIERS.map((t) => [t, city.tiers[t]]);
 	const prices = await cityPrices(id);
+	{
+		const cd = await cityData(id).catch(() => null);
+		const gal = new Map((cd?.hotels ?? []).map((h) => [bkPath(h.booking?.url), (h.gallery ?? []).map((g) => g.src).filter(Boolean)]));
+		for (const [t, pk] of picks) if (pk) {
+			pk._gk = `${id}:${t}`;
+			pk._cat = gal.get(bkPath(pk.bookingUrl)) ?? [];
+		}
+	}
 	const names = picks.filter(([, p]) => p).map(([t, p]) => `${p.hotel} (${x.tier[t].toLowerCase()})`);
 	const bestReason = L === "es" ? city.bestReason_es : city.bestReason_en;
 	const bestPick = city.best ? city.tiers[city.best] : null;
@@ -84986,7 +85000,10 @@ ${ic ? `<p><a href="${P(L, `/${slug}`)}">${esc(x.hotels(city.city))} →</a></p>
 		body,
 		scripts: CARD_CLICK,
 		alts: GYM_LANGS,
-		...bestPick?.photo?.url ?? cityImg ? { image: bestPick?.photo?.url ?? `https://www.top3hotels.com${cityImg}` } : {},
+		...(() => {
+			const bi = bestPick ? [...hotelPhotos(bestPick.bookingUrl, [bestPick.photo?.url, ...bestPick._cat ?? []]), ...(T3PH.gyms[bestPick._gk ?? ""] ?? []).map(([u]) => u).filter((u) => !isDeadImg(u))] : [];
+			return bi[0] || cityImg ? { image: bi[0] || `https://www.top3hotels.com${cityImg}` } : {};
+		})(),
 		ld: [{
 			"@context": "https://schema.org",
 			"@type": "ItemList",
@@ -85151,6 +85168,27 @@ function unpack(packed, value) {
 	return walk(value);
 }
 var BLOCKED_IMG = /onthebeach\.co\.uk/;
+/* Hotel photos: every hotel must show a real photo. HOTEL_PHOTOS = extra verified photos per Booking hotel
+* ("cc/slug" -> "id:k id:k https://..."), resolved on booking.com / LiteAPI / official sites (2 Nov 2026).
+* GYM_PHOTOS = photos for gym picks without a Booking page. DEAD_IMG = gallery images that return 404. */
+var T3PH = T3PH_DATA;
+var DEAD_IMG = new Set(T3PH.dead);
+var phx = (s) => /^\d+:[0-9a-f]+$/.test(s) ? `https://cf.bstatic.com/xdata/images/hotel/max1024x768/${s.split(":")[0]}.jpg?k=${s.split(":")[1]}&o=` : s;
+var imgKey = (u) => {
+	const m = String(u ?? "").match(/bstatic\.com\/xdata\/images\/hotel\/[^/]+\/(\d+)\./);
+	return m ? "b:" + m[1] : String(u ?? "");
+};
+var isDeadImg = (u) => !u || DEAD_IMG.has(imgKey(u));
+var bkPath = (u) => (String(u ?? "").match(/\/hotel\/([a-z]{2}\/[^.?#/]+)/) || [])[1] ?? "";
+function hotelPhotos(bookingUrl, have = []) {
+	const out = [];
+	const extra = (T3PH.hotels[bkPath(bookingUrl)] ?? "").split(" ").filter(Boolean).map(phx);
+	for (const u of [...have, ...extra]) if (u && !isDeadImg(u) && !out.some((x) => imgKey(x) === imgKey(u))) out.push(u);
+	return out;
+}
+/* Runtime fallback: if a photo fails, swap to the next stored photo of the same hotel (last: the city photo). */
+var FB_ON = "var f=(this.dataset.fb||'').split('|').filter(Boolean);if(f.length){this.dataset.fb=f.slice(1).join('|');this.src=f[0]}else{this.onerror=null}";
+var fbAttr = (list) => ` data-fb="${esc(list.filter(Boolean).join("|"))}" onerror="${FB_ON}"`;
 var hotelKey = (h) => {
 	try {
 		return new URL(h.booking?.url ?? "").pathname;
@@ -85210,6 +85248,11 @@ async function cityData(id) {
 	});
 	for (const h of city.hotels ?? []) {
 		if (h.gallery) h.gallery = h.gallery.filter((g) => !BLOCKED_IMG.test(g.src ?? ""));
+		{
+			const have = (h.gallery ?? []).filter((g) => g.src && !isDeadImg(g.src));
+			const extra = hotelPhotos(h.booking?.url).filter((u) => !have.some((g) => imgKey(g.src) === imgKey(u)));
+			h.gallery = [...have, ...extra.map((src) => ({ src, source: h.booking?.url ?? "", credit: "Booking.com" }))];
+		}
 		const e = hx[hotelKey(h)];
 		if (e) h.extras = e;
 		const lv = live_prices_default[id];
@@ -85944,7 +85987,7 @@ function card(h, city, i, L, sights, cityImg, review) {
 		h.candidateCount ? y.whyFrom(h.candidateCount) : ""
 	].filter(Boolean);
 	return `<article class="card ${k}" id="${k}">
-<div class="media"${gal.length ? ` data-gallery="${esc(JSON.stringify(gal))}"` : ""}><div class="acts"><button type="button" data-fav="${esc(JSON.stringify(fav))}" aria-pressed="false" aria-label="${esc(y.js["save"])}">♡</button><button type="button" data-sharecard="${esc(`${SITE}${P(L, "/" + city.slug)}#${k}`)}" data-title="${esc(`${label(h, L)}: ${h.name} · ${city.city}`)}" aria-label="${esc(y.js["share"])}">↗</button></div>${img ? `<img src="${esc(img)}" alt="${esc(h.name)}, ${esc(city.city)}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.remove()">` : cityImg ? `<img src="${esc(cityImg)}" alt="${esc(city.city)}" loading="lazy"><span class="cityphoto">${esc(t.cityPhoto)}</span>` : `<div class="nophoto">${esc(h.name.slice(0, 1))}</div>`}
+<div class="media"${gal.length ? ` data-gallery="${esc(JSON.stringify(gal))}"` : ""}><div class="acts"><button type="button" data-fav="${esc(JSON.stringify(fav))}" aria-pressed="false" aria-label="${esc(y.js["save"])}">♡</button><button type="button" data-sharecard="${esc(`${SITE}${P(L, "/" + city.slug)}#${k}`)}" data-title="${esc(`${label(h, L)}: ${h.name} · ${city.city}`)}" aria-label="${esc(y.js["share"])}">↗</button></div>${img ? `<img src="${esc(img)}" alt="${esc(h.name)}, ${esc(city.city)}" loading="lazy" decoding="async" referrerpolicy="no-referrer"${fbAttr([...gal.slice(1), cityImg])}>` : cityImg ? `<img src="${esc(cityImg)}" alt="${esc(city.city)}" loading="lazy"><span class="cityphoto">${esc(t.cityPhoto)}</span>` : `<div class="nophoto">${esc(h.name.slice(0, 1))}</div>`}
 <div class="badge"><span><i class="ico" aria-hidden="true">${k === "budget" ? "€" : k === "value" ? "★" : "♛"}</i>${esc(label(h, L))}</span>${i === 1 ? `<span class="pick">★ ${esc(t.ourPick)}</span>` : ""}${h.deal ? `<span class="pick deal">🔥 ${esc(M[L].deal)}</span>` : ""}</div>
 <div class="over">${b.score ? `<span class="ring" style="--p:${Math.round(b.score * 10)}" title="Booking.com ${b.score.toFixed(1)}/10"><b>${b.score.toFixed(1)}</b></span>` : "<span></span>"}<span class="pricetag" data-eur="${o.nightly ?? ""}" title="${esc(y.priceRef(fmtDate(isoDay(b.checked), L)))}"><span class="v">${money(o.nightly)}</span><small> ${esc(t.perNight)}</small></span></div></div>
 <div class="body"><h2 class="hname">${esc(h.name)}</h2>
@@ -86202,7 +86245,7 @@ ${same.length ? `<section aria-labelledby="more"><h2 id="more">${esc(t.moreIn(cn
 async function tileFor(c, h, L, extra = "") {
 	const { cx } = await data();
 	const img = h.gallery?.find((g) => g.src)?.src ?? (cx[c.id]?.hero?.img ? `/api/img/${c.id}/small` : void 0);
-	return `<a class="tile ${catKey(h)}" href="${P(L, "/" + c.slug)}">${img ? `<img src="${esc(img)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}<div><strong>${esc(h.name)}</strong>${esc(c.city)}, ${esc(countryName(c, L))} · ${esc(label(h, L))} · ${h.booking?.score?.toFixed(1) ?? "–"}/10 · ${money(h.offer?.nightly)}${extra}</div></a>`;
+	return `<a class="tile ${catKey(h)}" href="${P(L, "/" + c.slug)}">${img ? `<img src="${esc(img)}" alt="" loading="lazy" referrerpolicy="no-referrer"${fbAttr([...(h.gallery ?? []).map((g) => g.src).filter((s) => s && s !== img).slice(0, 3), `/api/img/${c.id}/small`])}>` : ""}<div><strong>${esc(h.name)}</strong>${esc(c.city)}, ${esc(countryName(c, L))} · ${esc(label(h, L))} · ${h.booking?.score?.toFixed(1) ?? "–"}/10 · ${money(h.offer?.nightly)}${extra}</div></a>`;
 }
 async function countryPage(cslug, L) {
 	const { byCountry } = await data();
@@ -87019,7 +87062,7 @@ async function embedPage(slug) {
 	const t = T.en;
 	const items = d.hotels.map((h) => {
 		const img = h.gallery?.find((g) => g.src)?.src;
-		return `<a class="h ${catKey(h)}" href="${SITE}/${c.slug}#${catKey(h)}" target="_blank" rel="noopener">${img ? `<img src="${esc(img)}" alt="" loading="lazy" referrerpolicy="no-referrer">` : ""}<span class="t">${esc(label(h, "en"))}</span><strong>${esc(h.name)}</strong><small>${h.booking?.score?.toFixed(1) ?? "–"}/10 · ${money(h.offer?.nightly)} ${esc(t.perNight)}</small></a>`;
+		return `<a class="h ${catKey(h)}" href="${SITE}/${c.slug}#${catKey(h)}" target="_blank" rel="noopener">${img ? `<img src="${esc(img)}" alt="" loading="lazy" referrerpolicy="no-referrer"${fbAttr((h.gallery ?? []).map((g) => g.src).filter((s) => s && s !== img).slice(0, 3))}>` : ""}<span class="t">${esc(label(h, "en"))}</span><strong>${esc(h.name)}</strong><small>${h.booking?.score?.toFixed(1) ?? "–"}/10 · ${money(h.offer?.nightly)} ${esc(t.perNight)}</small></a>`;
 	}).join("");
 	return `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Top 3 hotels in ${esc(c.city)} · Top3Hotels</title><style>body{margin:0;font:14px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif;color:#10213a;background:#faf8f4}.w{padding:14px}.hd{display:flex;justify-content:space-between;align-items:baseline;margin:0 0 10px}.hd b{font:600 18px Georgia,serif}.hd a{color:#d83b51;font-size:12px;text-decoration:none;font-weight:600}.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}.h{display:flex;flex-direction:column;gap:3px;background:#fff;border:1px solid #e6e1d8;border-top:4px solid var(--c);border-radius:14px;overflow:hidden;color:#10213a;text-decoration:none;padding-bottom:10px}.h img{width:100%;aspect-ratio:3/2;object-fit:cover;background:#f2eee7}.h .t,.h strong,.h small{padding:0 10px}.h .t{font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--c);margin-top:6px}.h strong{font:600 15px/1.25 Georgia,serif}.h small{color:#525d6b}.budget{--c:#1f7a5a}.value{--c:#d83b51}.lux{--c:#9a6b00}</style></head><body><div class="w"><div class="hd"><b>The 3 best hotels in ${esc(c.city)}</b><a href="${SITE}/${c.slug}" target="_blank" rel="noopener">top3hotels.com ↗</a></div><div class="g">${items}</div></div></body></html>`;
 }
@@ -87251,6 +87294,10 @@ async function hotelPage(slug, L) {
 		city: d.city,
 		country: d.country
 	});
+	const hcd = city ? await cityData(city.id).catch(() => null) : null;
+	const hgal = (hcd?.hotels ?? []).find((h) => bkPath(h.booking?.url) && bkPath(h.booking?.url) === bkPath(f.booking_url))?.gallery?.map((g) => g.src) ?? [];
+	const hphotos = hotelPhotos(f.booking_url, [f.photo, ...hgal]);
+	const hfb = city ? `/api/img/${city.id}/big` : "";
 	const others = (f.other_picks ?? []).map((o) => {
 		const s2 = hotelSlug(o.name, d.city_slug);
 		return `<li><a href="${esc(live.has(s2) ? P(L, `/hotel/${s2}`) : P(L, `/${d.city_slug}`))}"><b>${esc(o.name)}</b> · ${esc(o.category)}${o.score ? ` · ${o.score.toFixed(1)}/10` : ""}${o.nightly_eur ? ` · ${money(o.nightly_eur)}` : ""}</a></li>`;
@@ -87270,7 +87317,7 @@ async function hotelPage(slug, L) {
 <span class="hp-badge">${esc(t[`cat_${d.cat}`] ?? d.cat)} · ${esc(d.city)}</span>
 <h1>${esc(f.name)}</h1>
 <p class="by">${esc(t.by)} ${esc(t.updated)} ${esc(upd)}.</p>
-${f.photo ? `<img class="hp-hero" src="${esc(f.photo)}" alt="${esc(f.name)}, ${esc(d.city)}" loading="eager" referrerpolicy="no-referrer" onerror="this.remove()">` : ""}
+${hphotos[0] || hfb ? `<img class="hp-hero" src="${esc(hphotos[0] || hfb)}" alt="${esc(f.name)}, ${esc(d.city)}" loading="eager" referrerpolicy="no-referrer"${fbAttr([...hphotos.slice(1), hfb])}>` : ""}
 <div class="hp-facts">${facts}</div>
 <p class="hp-verdict">${esc(c.verdict)}</p>
 ${cta}
@@ -87285,7 +87332,7 @@ ${cta}
 			"@type": "Hotel",
 			name: f.name,
 			url: SITE + P(L, path),
-			...f.photo ? { image: f.photo } : {},
+			...hphotos.length ? { image: hphotos.slice(0, 3) } : {},
 			address: {
 				"@type": "PostalAddress",
 				...f.address ? { streetAddress: f.address } : {},
@@ -87348,7 +87395,7 @@ ${cta}
 		body,
 		ld,
 		alts: Object.keys(d.content ?? {}).filter((l) => HP_LANGS.includes(l)),
-		image: f.photo || void 0
+		image: hphotos[0] || void 0
 	});
 }
 async function hotelSitemap() {
