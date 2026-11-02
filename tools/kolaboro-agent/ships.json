@@ -2,6 +2,12 @@
  {
   "d": "2026-11-02",
   "k": "feature",
+  "t": "Home page redesign: live self-test and public log strip, product video on the page, all six tools in one grid, aligned pricing",
+  "u": "/"
+ },
+ {
+  "d": "2026-11-02",
+  "k": "feature",
   "t": "Every open API answer and evidence receipt signed with Kolaboro's Ed25519 key; public key at /.well-known/kolaboro-keys.json, check it on /verify",
   "u": "/verify/#sig"
  },
