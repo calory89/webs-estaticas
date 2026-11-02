@@ -173,7 +173,7 @@ async function health(env) {
   return json({ ok: true, api: 'up', models_configured: !!env.ANTHROPIC_API_KEY, database: db ? 'up' : 'down', db_ms: Date.now() - t0, time: new Date().toISOString() });
 }
 
-const AI_PATHS = new Set(['/api/kb/progress', '/api/kb/copilot', '/api/kb/analyze', '/api/kb/certificate', '/api/kb/document', '/api/kb/report-draft', '/api/kb/ask']);
+const AI_PATHS = new Set(['/api/kb/plan', '/api/kb/progress', '/api/kb/copilot', '/api/kb/analyze', '/api/kb/certificate', '/api/kb/document', '/api/kb/report-draft', '/api/kb/ask']);
 function aiGuard(req, u) {
   // AI endpoints cost money per call: only our own pages may call them, and only with a JSON body
   if (!AI_PATHS.has(u.pathname) || req.method !== 'POST') return null;
@@ -190,6 +190,7 @@ export async function api(req, u, env, ctx) {
   if (u.pathname === '/api/kb/analyze' && req.method === 'POST') return logged('analyze', () => analyze(req, env, ctx), ctx);
   if (u.pathname === '/api/kb/certificate' && req.method === 'POST') return logged('certificate', () => certificate(req, env, ctx), ctx);
   if (u.pathname === '/api/kb/document' && req.method === 'POST') return logged('document', () => documentRead(req, env, ctx), ctx);
+  if (u.pathname === '/api/kb/plan' && req.method === 'POST') return logged('plan', () => planRead(req, env, ctx), ctx);
   if (u.pathname === '/api/kb/report-draft' && req.method === 'POST') return logged('report_draft', () => reportDraft(req, env, ctx), ctx);
   if (u.pathname === '/api/kb/telegram' && req.method === 'POST') return telegram(req, env, ctx);
   if (u.pathname === '/api/kb/paypal-ipn' && req.method === 'POST') return ppIpn(req, env, ctx);
@@ -477,6 +478,39 @@ async function documentRead(req, env, ctx) {
   return json({ ...res, cached: false });
 }
 
+
+// ---------- Payment plan reader: contract or payment schedule -> instalments the buyer confirms before saving ----------
+const PLAN_PROMPT = `You read a property purchase contract, reservation form or payment schedule for an off-plan property.
+Extract ONLY the payment instalments the buyer must pay, exactly as written. Do not invent dates or amounts: if the document gives a milestone instead of a date, leave "due" empty and put the milestone. If an amount is a percentage, write it as written (for example "30% of the price") and add the computed amount in brackets only if the price is stated.
+Reply with ONLY one JSON object:
+{"currency": "EUR or the currency used", "total_price": "as written or empty", "instalments": [{"label": "short name, e.g. Deposit, 2nd instalment", "due": "YYYY-MM-DD or empty", "amount": "as written", "milestone": "what triggers it, or empty", "quote": "the exact words in the document, under 25 words"}], "notes": "one sentence on anything unusual about the payment terms, or empty"}
+If the document has no payment terms, reply {"instalments": [], "notes": "No payment terms found in this document."}`;
+async function planRead(req, env, ctx) {
+  if (!env.ANTHROPIC_API_KEY) return json({ error: 'not_configured' }, 503);
+  const raw = await req.text(); if (raw.length > 4000000) return json({ error: 'too_big' }, 413);
+  let b; try { b = JSON.parse(raw); } catch (e) { return json({ error: 'bad_request' }, 400); }
+  const content = [], text = String(b.text || '').slice(0, 30000);
+  const files = (Array.isArray(b.files) ? b.files : [b.file]).filter(Boolean).slice(0, 4);
+  for (const f of files) {
+    const m = /^data:(image\/(jpeg|png|webp)|application\/pdf);base64,([A-Za-z0-9+/=]+)$/.exec(String(f));
+    if (!m) return json({ error: 'file' }, 400);
+    content.push(m[1] === 'application/pdf' ? { type: 'document', source: { type: 'base64', media_type: 'application/pdf', data: m[3] } } : { type: 'image', source: { type: 'base64', media_type: m[1], data: m[3] } });
+  }
+  if (!content.length && text.length < 20) return json({ error: 'empty' }, 400);
+  const key = await sha(files.map(f => String(f).slice(-120000)).join('|') + '|' + text);
+  const ck = new Request('https://kolaboro.com/__kb_plan/' + key);
+  const hit = await caches.default.match(ck); if (hit) { const d = await hit.json(); return json({ ...d, cached: true }); }
+  if (await rateLimited(req, ctx)) return json({ error: 'rate' }, 429);
+  content.push({ type: 'text', text: PLAN_PROMPT + (text ? '\n\nDocument text pasted by the buyer:\n' + text : '') });
+  let out;
+  try { out = await claudeVision(env, content, 2500); }
+  catch (e) { return json({ error: 'model', detail: String(e.message || e).replace(/sk-[\w-]+/g, '') }, 503); }
+  const clean = v => String(v == null ? '' : v).slice(0, 200);
+  const ins = (Array.isArray(out.instalments) ? out.instalments : []).slice(0, 40).map(x => ({ label: clean(x.label).slice(0, 120) || 'Payment', due: /^\d{4}-\d{2}-\d{2}$/.test(String(x.due || '')) ? x.due : '', amount: clean(x.amount).slice(0, 60), milestone: clean(x.milestone), quote: clean(x.quote) }));
+  const res = { analysed: new Date().toISOString(), currency: clean(out.currency).slice(0, 10), total_price: clean(out.total_price).slice(0, 80), instalments: ins, notes: clean(out.notes).slice(0, 300) };
+  ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(res), { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=604800' } })));
+  return json({ ...res, cached: false });
+}
 
 // ---------- Report draft from the evidence (reviewer edits and publishes it in the admin) ----------
 const REPORT_PROMPT = `You are the Kolaboro report writer. A buyer abroad paid us to check an off-plan property before paying. Below is everything in their case: what the developer advertises, the documents we read, the agent's site photos and notes (with GPS and time), satellite comparisons and the buyer's notes.
