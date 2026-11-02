@@ -99,6 +99,36 @@ function eqHeaders(r, u, req) {
   if (u.pathname === '/llms.txt' || u.pathname === '/.well-known/security.txt') h.set('content-type', 'text/plain; charset=utf-8');
   return new Response(r.body, { status: r.status, statusText: r.statusText, headers: h });
 }
+// rh-media-v1 (3-nov-2026): realhunt.co pages and data are served from the Pages project realhunt-media
+// (built from this branch with root _s/realhunt.co), so web-lovable no longer has to deploy them (Pages
+// 20,000-file limit). /assets/* still comes from web-lovable. Same rules as the web-lovable path below:
+// ?p= lookups, no trailing slash, folder pages served directly, unknown pages load the app with noindex.
+const RHM = 'https://realhunt-media.pages.dev';
+function rhGet(req, path) {
+  const h = new Headers(req.headers); h.delete('cookie');
+  return fetch(new Request(RHM + path, { method: req.method === 'HEAD' ? 'HEAD' : 'GET', headers: h, redirect: 'manual' }));
+}
+async function rhMedia(req, u) {
+  if (u.search) { for (const k of ['p', 'page_id', 'paged', 'cat', 'tag']) { const v = u.searchParams.get(k); if (v && /^[\w-]+$/.test(v)) { const q = await rhGet(req, '/__q/' + k + '=' + v + '/'); if (q.status === 200) return q; } } }
+  if (u.pathname.length > 1 && u.pathname.endsWith('/')) return new Response(null, { status: 301, headers: { location: '/' + u.pathname.replace(/\/+$/, '').replace(/^[\/\\]+/, '') + u.search } });
+  let r = await rhGet(req, u.pathname + u.search);
+  if (r.status >= 300 && r.status < 400) {
+    const l = new URL(r.headers.get('location') || '', RHM + u.pathname);
+    if (l.pathname === u.pathname + '/') { const d = await rhGet(req, u.pathname + '/' + u.search); if (d.status === 200) r = d; }
+  }
+  if (r.status >= 300 && r.status < 400) { const l = new URL(r.headers.get('location') || '/', RHM + u.pathname); const h = new Headers(r.headers); h.set('location', (l.origin === RHM ? '' : l.origin) + l.pathname + l.search); return new Response(null, { status: r.status, headers: h }); }
+  if (r.status === 404 && !/\.[a-z0-9]{2,5}$/i.test(u.pathname)) {
+    const s = await rhGet(req, '/');
+    const h = new Headers(s.headers); h.set('x-robots-tag', 'noindex');
+    return new HTMLRewriter()
+      .on('link[rel="canonical"]', { element(e) { e.remove(); } })
+      .on('meta[name="robots"]', { element(e) { e.setAttribute('content', 'noindex, follow'); } })
+      .on('meta[property="og:url"]', { element(e) { e.setAttribute('content', 'https://realhunt.co' + u.pathname); } })
+      .transform(new Response(s.body, { status: 200, headers: h }));
+  }
+  if (r.status === 404) return new Response(null, { status: 404 });
+  return r;
+}
 export default {
   async fetch(req, env, ctx) {
     const u = new URL(req.url);
@@ -174,6 +204,7 @@ export default {
     if (host === 'realhunt.co' && req.method === 'GET' && u.pathname === '/data/rh-static.json') { try { const t = await fetch('https://realhunt-top.pages.dev/data/rh-static.json', { cf: { cacheEverything: true, cacheTtl: 60 } }); if (t.status === 200 && /json/i.test(t.headers.get('content-type') || '')) { const h = new Headers(t.headers); h.set('cache-control', 'public, max-age=60'); h.delete('age'); return new Response(t.body, { status: 200, headers: h }); } } catch (e) {} }
     if (req.method !== 'GET' && req.method !== 'HEAD') return new Response(null, { status: 204 });
     if (host === 'realhunt.co' && /^\/(?:(?:finds|top|og|images)\/.+|og-[\w-]+|icon-[\w-]+)\.(?:webp|jpe?g|png)$/i.test(u.pathname)) { const m = await fetch('https://realhunt-media.pages.dev' + u.pathname, { cf: { cacheEverything: true, cacheTtl: 86400 } }); const img = (r) => r.status === 200 && /^image\//i.test(r.headers.get('content-type') || ''); const ok = (r) => { const h = new Headers(r.headers); h.set('cache-control', 'public, max-age=86400'); return new Response(r.body, { status: 200, headers: h }); }; if (img(m)) return ok(m); /* v2-src-media: images missing from realhunt-media come from the source repo's public/ folder (Pages project realhunt-top) */ const t = await fetch('https://realhunt-top.pages.dev' + u.pathname, { cf: { cacheEverything: true, cacheTtl: 86400 } }); if (img(t)) return ok(t); if (u.pathname.startsWith('/top/')) { const t2 = await fetch('https://realhunt-top.pages.dev' + u.pathname.slice(4), { cf: { cacheEverything: true, cacheTtl: 86400 } }); if (img(t2)) return ok(t2); } }
+    if (host === 'realhunt.co') return rhMedia(req, u); // rh-media-v1 (rollback: delete this line)
     if (u.search) { for (const k of ['p', 'page_id', 'paged', 'cat', 'tag']) { const v = u.searchParams.get(k); if (v && /^[\w-]+$/.test(v)) { const q = await env.ASSETS.fetch(new Request(new URL(pre + '/__q/' + k + '=' + v + '/', u), req)); if (q.status === 200) return q; } } }
     // realhunt.co: one URL per page, without the trailing slash, matching the canonical tags. "/about/" sends a 301 to
     // "/about", and "/about" is served from the about/index.html file directly instead of redirecting to the folder.
