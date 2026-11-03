@@ -268,8 +268,8 @@ async function deskReview(env, urlStr, html, opts) {
       out.pages_found = ex.found;
       if (ex.best) {
         const r2 = await followReview(env, urlStr, ex, step);
-        if (r2 && (notProp || kindDisputed || offerFacts(r2.report) > offerFacts(out))) return r2;
-        if (r2) step({ step: 'follow_kept', url: ex.best.url, reason: 'the page you pasted states more of the offer' });
+        if (r2 && (notProp || kindDisputed || offerFacts(r2.report) >= offerFacts(out))) return r2;   // a tie goes to the page where the site sells
+        if (r2) step({ step: 'follow_kept', url: ex.best.url, reason: 'the page you pasted states more of the offer', facts_pasted: offerFacts(out), facts_followed: offerFacts(r2.report) });
       }
     }
   }
@@ -467,8 +467,8 @@ async function claude(env, prompt, system, only) {
     const d = await r.json();
     const t = (d.content || []).filter(b => b.type === 'text').map(b => b.text).join('');
     const m = t.match(/\{[\s\S]*\}/); if (!m) throw new Error('no json ' + d.stop_reason + ' ' + t.slice(0, 120));
-    let o; try { o = parseJson(m[0]); } catch (e) { last = model + ' json: ' + e.message; if (only) break; continue; }   // repair, else try the next model
-    if (!only) { claude.lastModel = d.model || model; claude.lastFallback = last ? last.slice(0, 120) : null; }
+    let o; try { o = parseJson(m[0]); } catch (e) { last = model + ' json (stop ' + d.stop_reason + ', ' + ((d.usage || {}).output_tokens || '?') + ' tokens): ' + e.message; if (only) break; continue; }   // repair, else try the next model
+    if (!only) { claude.lastModel = d.model || model; claude.lastFallback = last ? last.slice(0, 260) : null; }
     return o;
   }
   throw new Error(last || 'no model');
@@ -476,7 +476,7 @@ async function claude(env, prompt, system, only) {
 
 const isTracked = host => TRACKED.some(d => host === d || host.endsWith('.' + d));
 // v5: reports carry quoted claims (citations, quote_check); earlier cached reviews have none, so they are not reused
-const deskCacheKey = u => new Request('https://kolaboro.com/__kb_desk8/' + encodeURIComponent(u.hostname.replace(/^www\./, '') + u.pathname.replace(/\/$/, '') + u.search));
+const deskCacheKey = u => new Request('https://kolaboro.com/__kb_desk9/' + encodeURIComponent(u.hostname.replace(/^www\./, '') + u.pathname.replace(/\/$/, '') + u.search));
 // A bot-protection page (Cloudflare challenge, Akamai, Imperva, DataDome, PerimeterX, AWS WAF, a captcha wall) is not the site's content:
 // reviewing it would wrongly say the site is "not about property". We say honestly that the site refused our reader. We never disguise
 // our reader as a browser to get past such a wall.
@@ -643,7 +643,7 @@ pay_signal compares the share already paid (if given) to built_pct: "ahead_of_wo
 
 function parseJson(t) {
   const m = t.match(/\{[\s\S]*\}/); if (!m) throw new Error('no json');
-  try { return JSON.parse(m[0]); } catch (e) {}
+  let e0; try { return JSON.parse(m[0]); } catch (e) { e0 = e; }
   // light repair: smart quotes, trailing commas, raw newlines inside strings
   // a comma missing at the end of a line ("...]\n  \"next\": ...") is the most common slip of the small model: add it before anything else
   const r0 = m[0].replace(/([}\]"]|\btrue|\bfalse|\bnull|\d)([ \t]*\r?\n\s*)(?=["{[])/g, '$1,$2');
@@ -663,7 +663,11 @@ function parseJson(t) {
     }
     out += inStr && c === '\n' ? ' ' : c;
   }
-  return JSON.parse(out);
+  try { return JSON.parse(out); } catch (e) {
+    // keep the first error and the text around it, so a failure shown in the review steps says what the model actually wrote
+    const at = +((String(e0 && e0.message).match(/position (\d+)/) || [])[1]);
+    throw new Error(String(e0 && e0.message || e.message).replace(/ in JSON/, '').slice(0, 90) + (at >= 0 ? ' near ' + JSON.stringify(m[0].slice(Math.max(0, at - 50), at + 25)) : ''));
+  }
 }
 async function claudeVision(env, content, maxTokens) {
   let last = '';
