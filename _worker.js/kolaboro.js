@@ -126,7 +126,7 @@ function cleanReport(o) {
     page_kind: en('page_kind', o.page_kind) || 'project', site_about: str(o.site_about, 120),
     project: str(o.project, 120), developer: str(o.developer, 120), location: str(o.location, 160), country: str(o.country, 60),
     property_type: str(o.property_type, 120), price_from: str(o.price_from, 80), title_type: en('title_type', o.title_type),
-    lease_years: str(String(o.lease_years == null ? '' : o.lease_years), 40), extension_promised: typeof o.extension_promised === 'boolean' ? o.extension_promised : null,
+    lease_years: str(String(o.lease_years == null ? '' : o.lease_years), 80), extension_promised: typeof o.extension_promised === 'boolean' ? o.extension_promised : null,
     completion: str(o.completion, 80), advertised_return: str(o.advertised_return, 120), guaranteed_language: o.guaranteed_language === true,
     permit_claim: str(o.permit_claim, 160), payment_plan: str(o.payment_plan, 200),
     promises: arr(o.promises, 6), questions: arr(o.questions, 6), missing: arr(o.missing, 5),
