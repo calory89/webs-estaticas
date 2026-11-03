@@ -1809,8 +1809,7 @@ body.short .map-shade{background:linear-gradient(90deg,rgba(8,38,44,.9) 0%,rgba(
   try { var refName = (attr.ref || '').replace(/[^a-z0-9-]/gi,'').replace(/-/g,' ').trim(); if (refName) { var inv = document.getElementById('invited'); inv.textContent = 'Invited by ' + refName.replace(/\b\w/g, function(c){ return c.toUpperCase(); }); inv.hidden = false; } } catch(e){}
 
   // ---------- A/B test of the headline ----------
-  var ab = 'a'; try { ab = localStorage.getItem('lcs_ab_h1') || (Math.random() < .5 ? 'a' : 'b'); localStorage.setItem('lcs_ab_h1', ab); } catch(e){}
-  var h1el = document.getElementById('h1'); if (ab === 'b' && h1el) h1el.innerHTML = '<span class="ln">Live longer.</span> <em class="ln">Live better.</em>';
+  var ab = 'longevity';
   try { gtag('set', 'user_properties', {h1_variant: ab}); } catch(e){}
   track('ab_exposure', {test:'h1', variant:ab});
 
