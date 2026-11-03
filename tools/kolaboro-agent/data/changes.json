@@ -9101,5 +9101,547 @@
     false
    ]
   }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "secret-inshi",
+  "name": "SECRET by INSHI",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "morros-vita-serena-del-mar",
+  "name": "Morros Vita",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Esquema fiduciario con Alianza Fiduciaria, entidad encargada de velar por la correcta administración de los recursos",
+    "Fiduciary scheme administered by Alianza Fiduciaria; buyers linked to the fiduciary scheme"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "reserva-natural-san-jose-natura-itagui",
+  "name": "Reserva Natural San José Natura",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Alianza Fiduciaria is named as the project's trust (fiducia de este proyecto); no escrow or guarantee terms given",
+    "Alianza Fiduciaria, fiducia de este proyecto"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "widen-by-sansiri-sathorn",
+  "name": "Widen by Sansiri",
+  "changed": {
+   "price_from": [
+    925000,
+    924000
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "esentepe-sea-view-villas-terra-eck-3023",
+  "name": "Sea-view villas resort, Esentepe (TERRA listing ECK-3023)",
+  "changed": {
+   "price_from": [
+    1286300,
+    1288100
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "iskele-kalecik-complex-terra-eck-4116",
+  "name": "Luxury apartments complex, Kalecik / Iskele (TERRA listing ECK-4116)",
+  "changed": {
+   "price_from": [
+    218900,
+    219200
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "al-sidr-saadiyat-lagoons",
+  "name": "Al Sidr (Saadiyat Lagoons)",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "altintas-swim-up-complex-ayt-3204",
+  "name": "Swim-up pool complex in Altıntaş (ref AYT-3204)",
+  "changed": {
+   "price_from": [
+    116100,
+    116200
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "samana-sky-views-dpc",
+  "name": "Samana Sky Views",
+  "changed": {
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "crystal-garden-cap-cana-gesproin",
+  "name": "Crystal Garden Cap Cana",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "al-mare-green-midtown-group",
+  "name": "Al Mare Green",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "querencia-dovec-group",
+  "name": "Querencia",
+  "changed": {
+   "price_from": [
+    209162,
+    209282
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9593,
+    9606
+   ],
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "becici-sea-view-building-value-one",
+  "name": "New residential building 200 m from Bečići beach (building 5)",
+  "changed": {
+   "price_from": [
+    203716,
+    217827
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "rhea-by-sansiri",
+  "name": "Rhea by Sansiri",
+  "changed": {
+   "price_from": [
+    140818,
+    140819
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "intercontinental-residences-bangkok-asoke-cg-capital",
+  "name": "InterContinental Residences Bangkok Asoke",
+  "changed": {
+   "price_from": [
+    1328144,
+    1326056
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "quattro-del-mar-rak-properties",
+  "name": "Quattro Del Mar",
+  "changed": {
+   "plans_published": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "marassi-views-eagle-hills",
+  "name": "Marassi Views",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "the-boon-condo-bophut-b2-development",
+  "name": "The Boon Condo",
+  "changed": {
+   "price_from": [
+    91400,
+    91300
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "terra-mare-beach-villas-maenam",
+  "name": "Terra Mare Beach Villas",
+  "changed": {
+   "price_from": [
+    228000,
+    227915
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "mamsha-palm-aldar",
+  "name": "Mamsha Palm",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "bab-al-qasr-garden-residence-66-burtville",
+  "name": "Bab Al Qasr Garden Residence 66",
+  "changed": {
+   "price_from": [
+    2145000,
+    2100000
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "gianfranco-ferre-residences-mira",
+  "name": "Gianfranco Ferré Residences",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "botanica-luxury-krabi",
+  "name": "Botanica Luxury Krabi",
+  "changed": {
+   "price_from": [
+    493000,
+    492535
+   ],
+   "title_type": [
+    "leasehold",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "the-ivory-chang-phueak-home-development-group",
+  "name": "The IVORY",
+  "changed": {
+   "price_from": [
+    62257,
+    62200
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "the-units-milano-abitarein",
+  "name": "The Units",
+  "changed": {
+   "price_from": [
+    540000,
+    null
+   ],
+   "currency": [
+    "EUR",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "penha-living-bolder-addsolid",
+  "name": "Penha Living Bolder",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "the-launiu-ward-village-howard-hughes",
+  "name": "The Launiu Ward Village",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "265-elmer-one-centum-real-estate",
+  "name": "265 Elmer One Apartments",
+  "changed": {
+   "price_from": [
+    1.9,
+    1900000
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "melia-residences-bahrain-infracorp",
+  "name": "Meliá Residences Bahrain (Meliá Beachfront)",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "udaondo-buenos-aires-landmark-developments",
+  "name": "Udaondo Buenos Aires",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Fideicomiso Buenos Aires Landmark (named as the trust that bought the land at auction in 2018; no buyer escrow described)",
+    "Fideicomiso Buenos Aires Landmark, cited as the vehicle that bought the land in 2018; no buyer escrow or guarantee mentioned"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "harmony-ocean-front-ja-russi",
+  "name": "Harmony Ocean Front",
+  "changed": {
+   "permit_number": [
+    "Registro de Incorporação R13 da Matrícula nº 135.051",
+    "R13 da Matrícula nº 135.051"
+   ],
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "caribbean-town-palmaruba-group",
+  "name": "Caribbean Town Condos & Villas",
+  "changed": {
+   "currency": [
+    null,
+    "USD"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "hilton-residences-abu-dhabi-al-raha-emirates-developments",
+  "name": "Hilton Residences Abu Dhabi Al Raha",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "creek-waters-2-emaar",
+  "name": "Creek Waters 2",
+  "changed": {
+   "advertised_yield_pct": [
+    null,
+    5
+   ],
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "windsor-house-ellington-dubai-south",
+  "name": "Windsor House",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "dwtn-residences-deyaar",
+  "name": "DWTN Residences (registered as Downtown Residences)",
+  "changed": {
+   "price_from": [
+    2005000,
+    2000000
+   ],
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "naya-at-district-one-meydan",
+  "name": "Naya at District One",
+  "changed": {
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "alam-al-roum-qatari-diar",
+  "name": "Alam Al Roum (Alam El Roum)",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "antalya-suites-sur-yapi",
+  "name": "Sur Yapı Antalya Suites",
+  "changed": {
+   "guaranteed_language": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "vr-krtsanisi-resort-residence-vr-holding",
+  "name": "VR Krtsanisi Resort Residence",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "basaksehir-avrasya-konutlari-cadde-fuzul-gyo",
+  "name": "Başakşehir Avrasya Konutları Cadde (Ayazma 4. Etap)",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "prime-villa-samui-supalai",
+  "name": "Prime Villa Samui",
+  "changed": {
+   "price_from": [
+    17.59,
+    17590000
+   ],
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "tual-golyaka-dag-holding",
+  "name": "Tual Gölyaka",
+  "changed": {
+   "price_from": [
+    160045,
+    160009
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "yekta-golden-valley-yekta-homes",
+  "name": "Yekta Golden Valley",
+  "changed": {
+   "price_from": [
+    7192,
+    7198
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "natulux-tatlisu-dovec-group",
+  "name": "Natulux",
+  "changed": {
+   "price_from": [
+    294971,
+    295142
+   ]
+  }
  }
 ]
