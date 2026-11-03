@@ -63,6 +63,13 @@ function kbHeaders(r, u) {
       h.set('x-content-type-options', 'nosniff');
       return new Response(r.body, { status: r.status, statusText: r.statusText, headers: h });
     }
+    // published data (GitHub Actions rewrite these files): short cache so a new publish shows within a minute, versioned copies stay immutable
+    if (r.status === 200 && /^\/data\/.+\.json$/i.test(u.pathname)) {
+      const h = new Headers(r.headers);
+      h.set('cache-control', /[?&]v=/.test(u.search) ? 'public, max-age=31536000, immutable' : 'public, max-age=60, stale-while-revalidate=300');
+      h.set('x-content-type-options', 'nosniff');
+      return new Response(r.body, { status: r.status, statusText: r.statusText, headers: h });
+    }
     return r;
   }
   const h = new Headers(r.headers);
@@ -84,6 +91,8 @@ function kbHeaders(r, u) {
   const out = new Response(r.body, { status: r.status, statusText: r.statusText, headers: h });
   return new HTMLRewriter().on('script', { element(e) { e.setAttribute('nonce', nonce); } }).transform(out);
 }
+// scripts added after kbHeaders (HTMLRewriter append) carry the same nonce as the response's CSP header
+const kbNonce = r => { const m = (r.headers.get('content-security-policy-report-only') || r.headers.get('content-security-policy') || '').match(/'nonce-([A-Za-z0-9+/=]+)'/); return m ? ' nonce="' + m[1] + '"' : ''; };
 const KB_CSP = "default-src 'self'; script-src 'nonce-{N}' 'strict-dynamic' 'wasm-unsafe-eval' 'unsafe-inline' https:; script-src-attr 'none'; " +
   "style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://unpkg.com; " +
   "img-src 'self' data: blob: https://oykcsmextclpdnugixqz.supabase.co https://server.arcgisonline.com https://*.tile.openstreetmap.org https://tile.openstreetmap.org https://*.google-analytics.com https://*.googletagmanager.com https://*.clarity.ms https://c.bing.com; " +
@@ -174,7 +183,7 @@ export default {
       const base = kbHeaders(await this.site(new Request(shell, req), env, ctx, shell, host), shell);
       return kb.ssr(base, u, isP ? 'p' : 'm');
     }
-    if (host === 'kolaboro.com') { const kr = kbHeaders(await this.site(req, env, ctx, u, host), u); if (req.method === 'GET' && /^\/admin\/?$/.test(u.pathname) && /text\/html/.test(kr.headers.get('content-type') || '')) return new HTMLRewriter().on('body', { element(e) { e.append('<script src="/__k/ktraffic.js?v=1" defer></script>', { html: true }); } }).transform(kr); if (req.method === 'GET' && /^\/check\/?$/.test(u.pathname) && u.searchParams.get('utm_source') === 'realhunt' && /text\/html/.test(kr.headers.get('content-type') || '')) return new HTMLRewriter().on('body', { element(e) { e.append('<script src="/__k/kbrh.js?v=1" defer></script>', { html: true }); } }).transform(kr); return kr; }
+    if (host === 'kolaboro.com') { const kr = kbHeaders(await this.site(req, env, ctx, u, host), u), kn = kbNonce(kr); if (req.method === 'GET' && /^\/admin\/?$/.test(u.pathname) && /text\/html/.test(kr.headers.get('content-type') || '')) return new HTMLRewriter().on('body', { element(e) { e.append('<script' + kn + ' src="/__k/ktraffic.js?v=1" defer></script>', { html: true }); } }).transform(kr); if (req.method === 'GET' && /^\/check\/?$/.test(u.pathname) && u.searchParams.get('utm_source') === 'realhunt' && /text\/html/.test(kr.headers.get('content-type') || '')) return new HTMLRewriter().on('body', { element(e) { e.append('<script' + kn + ' src="/__k/kbrh.js?v=1" defer></script>', { html: true }); } }).transform(kr); return kr; }
     return this.site(req, env, ctx, u, host);
   },
   async site(req, env, ctx, u, host) {

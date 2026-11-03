@@ -1383,7 +1383,8 @@ export async function ssr(base, u, kind) {
     body = '<h2>Off-plan projects in ' + hesc(m) + ', ' + hesc(L[0].country) + '</h2><p>' + hesc(desc) + '</p><ul>' + L.slice(0, 200).map(x => '<li><a href="/p/' + encodeURIComponent(x.id) + '/">' + hesc(x.id) + '</a>: ' + hesc(x.stage || 'off-plan') + ', ' + x.score + '/6 public, ' + (x.vscore || 0) + '/6 confirmed</li>').join('') + '</ul>';
     ld = { '@context': 'https://schema.org', '@type': 'CollectionPage', name: title.replace(' | Kolaboro', ''), description: desc, url: canon, dateModified: d.updated };
   }
-  const tags = '<title>' + hesc(title) + '</title><meta name="description" content="' + hesc(desc) + '"><link rel="canonical" href="' + canon + '"><meta property="og:title" content="' + hesc(title) + '"><meta property="og:description" content="' + hesc(desc) + '"><meta property="og:url" content="' + canon + '"><script type="application/ld+json">' + JSON.stringify(ld).replace(/</g, '\\u003c') + '</script>';
+  const nm = (base.headers.get('content-security-policy-report-only') || base.headers.get('content-security-policy') || '').match(/'nonce-([A-Za-z0-9+/=]+)'/), nonceAttr = nm ? ' nonce="' + nm[1] + '"' : '';   // the JSON-LD block added here carries the response's nonce too
+  const tags = '<title>' + hesc(title) + '</title><meta name="description" content="' + hesc(desc) + '"><link rel="canonical" href="' + canon + '"><meta property="og:title" content="' + hesc(title) + '"><meta property="og:description" content="' + hesc(desc) + '"><meta property="og:url" content="' + canon + '"><script' + nonceAttr + ' type="application/ld+json">' + JSON.stringify(ld).replace(/</g, '\\u003c') + '</script>';
   let seenTitle = false;
   const res = new HTMLRewriter()
     .on('title', { element(e) { e.remove(); } })
@@ -1394,7 +1395,7 @@ export async function ssr(base, u, kind) {
     .on('head', { element(e) { e.append(tags, { html: true }); } })
     .on('main', { element(e) { e.prepend('<section class="sec ssr-only" id="ssr"><div class="wrap">' + body + '</div></section>', { html: true }); } })
     .transform(base);
-  const h = new Headers(res.headers); h.set('cache-control', 'public, max-age=600');
+  const h = new Headers(res.headers); h.set('cache-control', 'private, max-age=600');   // private: the page carries a per-response CSP nonce, no shared cache may reuse it
   return new Response(res.body, { status: 200, headers: h });
 }
 // Shared helpers for the feature modules in kbx_*.js (routed by kbx.js).
