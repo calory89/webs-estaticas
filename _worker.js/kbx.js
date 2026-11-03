@@ -6,7 +6,14 @@ import * as c from './kbx_c.js'; // buyer tools in the browser: PDF forensics, i
 import * as d from './kbx_d.js'; // developer intelligence: domain age, promise drift, what-if score
 import * as e from './kbx_e.js'; // data platform: SQL dataset, MCP server
 import * as f from './kbx_f.js'; // reliability: web vitals, chaos drills, journeys, CSP
-const MODS = [a, b, c, d, e, f];
+import * as g from './kbx_g.js'; // satellite: optical progress, on-demand plot, milestone payments
+import * as h from './kbx_h.js'; // market truth: official prices, registers, risk patterns
+import * as i from './kbx_i.js'; // two-sided: developer reply portal, encrypted deal room
+import * as j from './kbx_j.js'; // reach: extension on portals, Telegram forward-check, push alerts
+import * as k from './kbx_k.js'; // platform: SDKs, API keys and metering, Ask Kolaboro
+import * as l from './kbx_l.js'; // trust: trust center, investor dossier, safe deploys
+import * as m from './kbx_m.js'; // open: open-source verifiers, property tests, live report
+const MODS = [a, b, c, d, e, f, g, h, i, j, k, l, m];
 export async function route(req, u, env, ctx) {
   for (const m of MODS) if (m.PATHS && m.PATHS.test(u.pathname)) return m.handle(req, u, env, ctx);
   return new Response(JSON.stringify({ error: 'not found' }), { status: 404, headers: { 'content-type': 'application/json' } });
