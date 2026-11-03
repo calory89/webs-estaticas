@@ -17,7 +17,7 @@
   var CL = null, V = null, ENTRIES = [], PHOTO_URLS = [];
 
   // ---------- service worker (scope /visit/ only) and connection badge
-  if ('serviceWorker' in navigator) navigator.serviceWorker.register('/visit/sw.js', { scope: '/visit/' }).catch(function(){});
+  if ('serviceWorker' in navigator) navigator.serviceWorker.register('/visit/sw.js?v=1ff4e2f50a', { scope: '/visit/' }).catch(function(){});
   function net(){ var n = $('net'); n.textContent = navigator.onLine ? 'Online' : 'Offline: everything still works'; n.className = 'net' + (navigator.onLine ? '' : ' off'); }
   addEventListener('online', net); addEventListener('offline', net); net();
 
