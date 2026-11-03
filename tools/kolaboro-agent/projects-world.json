@@ -155081,6 +155081,769 @@
    "added": "2026-11-02",
    "found_by": "discover-agent",
    "slug": "solaria-los-cabos-los-cabos"
+  },
+  {
+   "name": "Solara del Mar",
+   "developer": "FH Inmobiliaria",
+   "area": "El Tezal, Cabo San Lucas",
+   "country": "Mexico",
+   "market": "Los Cabos",
+   "stage": "under construction",
+   "url": "https://www.inmobiliariafh.com/en/nuestros-desarrollos/solara-del-mar",
+   "docs_url": "https://www.inmobiliariafh.com/desarrollos/solara-del-mar/Solara_del_Mar_Brochure_Digital.pdf",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": "Fideicomiso (bank trust) or Mexican corporation, per agent Ronival",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 206,
+    "payment_plan": "Pre-sale units: 35% down, remaining 65% in interest-free monthly payments during construction (agent Ronival). Completed units: 65% down, 35% developer-financed at 7.5% (agent Ronival)."
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "developer",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Developer publishes a PROFECO adhesion contract for Solara (PDF link in site footer). I did not open the PDF or check the rpca.profeco.gob.mx register.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.inmobiliariafh.com/en/nuestros-desarrollos/solara-del-mar"
+    },
+    {
+     "claim": "Operates under a registered condominium regime, with water and CFE (electricity) service active (agent page)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.findmexicohouses.com/solara-del-mar/"
+    },
+    {
+     "claim": "Clubhouse, pool, gym and sports bar already open (agent blog and developer amenity list)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.findmexicohouses.com/blog/tag/cabo-san-lucas-homes-for-sale/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "La Paz, Baja California Sur",
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "3-4 bedroom homes on 240-438 m2 lots",
+     "2-3 bedroom apartments and penthouses with rooftops"
+    ],
+    "size_min_m2": 135,
+    "size_max_m2": 242,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": 35,
+    "foreign_ownership": "Fideicomiso or Mexican corporation (general statement on the agent Ronival's page, not specific to this project)",
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "207-unit community (developer page says 110 homes and 96 apartments in 4 towers; Ronival says 97 condos) with developer financing. The developer page says Tower A was at an initial stage, and some units are already completed, so it is a phased build. Size range comes from two agent listings (a 135 m2 two-bedroom and a 242 m2 penthouse). Asking prices of completed units on Engel & Voelkers listings are $439,000 and $597,080, but I did not use them as pre-sale prices.",
+   "positives": [
+    "Developer publishes a PROFECO adhesion contract PDF for Solara",
+    "Virtual tours and a brochure are available on the developer page",
+    "Some phases are already built and amenities are reported as open"
+   ],
+   "flags": [],
+   "sources": [
+    "https://cbriveras.com/developments/solara-del-mar-los-cabos",
+    "https://ronival.com/developments/",
+    "https://snellrealestate.com/listings/solara-del-mar-ph-2/",
+    "https://www.findmexicohouses.com/blog/tag/cabo-san-lucas-homes-for-sale/",
+    "https://www.findmexicohouses.com/solara-del-mar/",
+    "https://www.inmobiliariafh.com/en",
+    "https://www.inmobiliariafh.com/en/nuestros-desarrollos/solara-del-mar",
+    "https://www.inmobiliariafh.com/en/our-developments/solara-del-mar_en",
+    "https://www.snellrealestate.com/listings/el-tezal/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-03",
+   "found_by": "discover-agent",
+   "slug": "solara-del-mar-los-cabos"
+  },
+  {
+   "name": "Wen Living San José del Cabo",
+   "developer": "Awen Developers S.A.P.I. de C.V.",
+   "area": "Club Campestre San José, San José del Cabo",
+   "country": "Mexico",
+   "market": "Los Cabos",
+   "stage": "under construction",
+   "url": "https://www.wenliving.com/",
+   "docs_url": "https://www.wenliving.com/",
+   "permit_number": null,
+   "seed": {
+    "price": 550000,
+    "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": "Homeowner testimonials on developer site; no list of delivered projects seen",
+    "units": 39,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "developer",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Registered under the LEED green building programme (developer About page)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://wenliving.com/en/about"
+    },
+    {
+     "claim": "Two NAHB Gold Awards and a PCBC Gold Nugget Award of Merit (developer and agent pages)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://wenliving.com/en/about"
+    },
+    {
+     "claim": "2-bedroom condos from $550,000 USD (agent page; the 2022-era agent page says $688,000)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://queenwestliving.com/wen-living-wellness-community-san-jose-del-cabo-los-cabos-mexico/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "San José del Cabo, BCS (office at Plaza Pescador)",
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "Serena Collection 2BR/2.5BA",
+     "Vista Collection 2BR/2.5BA",
+     "Panorama Collection (Prosperity building) 4BR/4.5BA"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 550000,
+    "price_max": 1946500,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": "Developer team can rent a fully owned home on the owner's behalf; partial (fractional) ownership offered as fixed or floating weeks. No guaranteed returns seen.",
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Wellness condo community inside Club Campestre with full and partial ownership, aimed at US and Canadian buyers. The developer's own blog describes it as under construction, but that post is old and the home page shows a model home, homeowner testimonials and a restaurant and spa 'coming soon', so current build status is not confirmed. Prices come from agents; the $1,946,500 maximum is an agent listing for a Prosperity penthouse. The 39-unit count is from an older agent page.",
+   "positives": [
+    "Developer is open about partial-ownership structure and extra costs for golf and beach club access",
+    "Model home on site and homeowner testimonials are published"
+   ],
+   "flags": [],
+   "sources": [
+    "https://cabobeachrealty.com/new-construction-pre-sale/",
+    "https://livingincabo.com/blog/san-jose-del-cabo-new-developments-2026",
+    "https://queenwestliving.com/wen-living-wellness-community-san-jose-del-cabo-los-cabos-mexico/",
+    "https://wenliving.com/en/about",
+    "https://www.awendevelopers.com/?lang=es",
+    "https://www.awendevelopers.com/post/purpose-driven-living-the-story-behind-awen-developers-beginning",
+    "https://www.loscabosrealestate.com/development/wen-living/",
+    "https://www.wenliving.com/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-03",
+   "found_by": "discover-agent",
+   "slug": "wen-living-san-jos-del-cabo-los-cabos"
+  },
+  {
+   "name": "Velōa Residences",
+   "developer": "Grupo Solcon",
+   "area": "Zona Romántica (Colonia Emiliano Zapata)",
+   "country": "Mexico",
+   "market": "Puerto Vallarta",
+   "stage": "off-plan",
+   "url": "https://gruposolcon.com/development/veloa/",
+   "docs_url": "https://veloapuertovallarta.com/",
+   "permit_number": null,
+   "seed": {
+    "price": 281471,
+    "currency": "USD",
+    "title": "Starting price shown on an agent site (vallartaseaside.com). A Coldwell Banker La Costa page says from the low $300,000s. A Nov 2025 article quoted just over $173,000 for an early Friends & Family phase.",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "spring 2028 (target quoted in a Nov 2025 article, not on the developer page)",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": "Developer site lists MAYAMAR (44 units) and ARTEE 378 (18 units) as SOLD. A local news article says about 10 projects are completed or in progress.",
+    "units": 94,
+    "payment_plan": "Agent site advertises flexible payment plans, no terms seen"
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "developer",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "94 units, 1 to 3 bedrooms (plus studios and penthouses per price list)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://gruposolcon.com/development/veloa/"
+    },
+    {
+     "claim": "Construction expected early 2026, completion spring 2028",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://outandaboutpv.com/94-unit-veloa-residences-planned-for-puerto-vallartas-romantic-zone/"
+    },
+    {
+     "claim": "Developer has completed several earlier projects (Mayamar, Palmaré, Vrede, Loft 77)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://outandaboutpv.com/94-unit-veloa-residences-planned-for-puerto-vallartas-romantic-zone/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Calle Ecuador 1424 C, Col. 5 de Diciembre, Puerto Vallarta, Jalisco",
+    "construction_start": "expected early 2026 per Nov 2025 article; actual start not confirmed",
+    "handover_promised": "spring 2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1 bed",
+     "2 bed",
+     "3 bed",
+     "penthouse"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 281471,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Velōa is Grupo Solcon's largest project to date, with about 10 projects completed or in progress. Construction was expected to begin in early 2026, with completion targeted for spring 2028. A Coldwell Banker La Costa page, updated July 2026, still describes it as pre-construction. No permit number, escrow terms or progress updates were found. The developer's Velōa page is thin and shows no price, plans or timeline. The same developer built MAYAMAR, which is likely the project already tracked.",
+   "positives": [
+    "Developer is based locally in Puerto Vallarta and its site lists earlier projects marked sold",
+    "Walkable Romantic Zone location, with 94 units in a single building"
+   ],
+   "flags": [],
+   "sources": [
+    "https://gruposolcon.com/development/veloa/",
+    "https://outandaboutpv.com/94-unit-veloa-residences-planned-for-puerto-vallartas-romantic-zone/",
+    "https://vallartaseaside.com/pre-sale-developments/",
+    "https://vallartaseaside.com/veloa/",
+    "https://veloapuertovallarta.com/",
+    "https://www.cblacosta.com/veloa-residences/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-03",
+   "found_by": "discover-agent",
+   "slug": "vel-a-residences-puerto-vallarta"
+  },
+  {
+   "name": "Espacio Marina & Golf",
+   "developer": null,
+   "area": "Marina Vallarta",
+   "country": "Mexico",
+   "market": "Puerto Vallarta",
+   "stage": "under construction",
+   "url": "https://espaciomarinagolf.com/",
+   "docs_url": "https://espaciomarinagolf.com/avances-de-obra",
+   "permit_number": null,
+   "seed": {
+    "price": 4245989,
+    "currency": "MXN",
+    "title": "Starting price on the Domus Vallarta presale listing. Other agents show about 4.2 to 4.8 million MXN for a loft.",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "June 2027 (agent and MLS listings)",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": 210,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "developer",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "210 condominiums, 11 amenities over 6,900 m2, 400 m from beach",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://espaciomarinagolf.com/"
+    },
+    {
+     "claim": "Delivery June 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.guiacasasyterrenos.mx/property/espacio-marina-golf-departamentos-en-preventa-en-puerto-vallarta"
+    },
+    {
+     "claim": "Monthly construction updates (May 2026, September 2026)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://espaciomarinagolf.com/avances-de-obra"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "construction_start": null,
+    "handover_promised": "June 2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "loft",
+     "1 bed",
+     "1 bed+",
+     "2 bed",
+     "3 bed",
+     "penthouse",
+     "garden house",
+     "villa"
+    ],
+    "size_min_m2": 40,
+    "size_max_m2": 243,
+    "price_min": 4245989,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "The project has 210 condominiums with delivery listed for June 2027. One agent lists Tower A with 96 units and Tower B with 114 units. The project site is run by the agent Domus Vallarta and does not name the developer. It publishes unit-type plans and a master plan, plus dated construction updates for May and September 2026. The September 2026 image label reads 'Virēo Living', which suggests mislabelled content. The listing sites show no permit or escrow information.",
+   "positives": [
+    "Dated monthly construction updates published (May and September 2026)",
+    "Unit-type floor plans and master plan published on the project site",
+    "Marina Vallarta location, about 400 m from the beach and 5 minutes from the airport, per the project site"
+   ],
+   "flags": [],
+   "sources": [
+    "https://domusvallarta.com/en/buy-properties/developments",
+    "https://espaciomarinagolf.com/",
+    "https://espaciomarinagolf.com/avances-de-obra",
+    "https://preventaspvr.com/en/espacio-marina-golf/",
+    "https://www.guiacasasyterrenos.mx/property/espacio-marina-golf-departamentos-en-preventa-en-puerto-vallarta",
+    "https://www.lprluxurypuertovallarta.com/property/espacio-marina-golf-phb4/",
+    "https://www.marcegarciacasasvallarta.com/preventas",
+    "https://www.pincali.com/en/home/preventa-deptos-1-rec-torre-b-en-marina-golf-puerto-vallarta-desde"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": true,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-03",
+   "found_by": "discover-agent",
+   "slug": "espacio-marina-golf-puerto-vallarta"
+  },
+  {
+   "name": "Tridenta Towers",
+   "developer": null,
+   "area": "Las Glorias, Hotel Zone",
+   "country": "Mexico",
+   "market": "Puerto Vallarta",
+   "stage": "off-plan",
+   "url": "https://domusvallarta.com/en/development/tridenta-towers-new-presale-of-beachfront-condos-in-puerto-vallarta",
+   "docs_url": "https://tridenta.domusvallarta.net/en",
+   "permit_number": null,
+   "seed": {
+    "price": 5469376,
+    "currency": "MXN",
+    "title": "Starting price on the Domus Vallarta presale page (last updated 2026-09-29). An older agent page shows from 259,082 USD.",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": "Marketed as from the creators of Harbor171. Not verified.",
+    "units": 335,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "335 residences in Tower 1, studios to 3 bedrooms",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://bayrealtymexico.com/property/tridenta-1706-20250209044403175730000000/"
+    },
+    {
+     "claim": "From the creators of Harbor171",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://domusvallarta.com/en/development/tridenta-towers-new-presale-of-beachfront-condos-in-puerto-vallarta"
+    },
+    {
+     "claim": "5 unit types from 42.44 m2 to 149.45 m2",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://tridenta.domusvallarta.net/en"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1 bed",
+     "2 bed",
+     "3 bed"
+    ],
+    "size_min_m2": 42.44,
+    "size_max_m2": 149.45,
+    "price_min": 5469376,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "The project is marketed as the new project from the creators of Harbor171, on the beachfront in the hotel zone. Agent listings describe 335 residences in Tower 1. The developer's own site (tridentatowers.com) could not be opened. The developer is not named on any page I saw, so only agent sources are used and no permit, escrow, progress or completion date was found.",
+   "positives": [
+    "Beachfront hotel-zone location with a beach club, padel and tennis courts listed as amenities"
+   ],
+   "flags": [],
+   "sources": [
+    "https://bayrealtymexico.com/property/tridenta-1706-20250209044403175730000000/",
+    "https://domusvallarta.com/en/development/tridenta-towers-new-presale-of-beachfront-condos-in-puerto-vallarta",
+    "https://miriamsiordia.com/development/tridenta-towers-2/",
+    "https://tridenta.domusvallarta.net/en",
+    "https://www.mhmexico.com/mhmexico_desarrollos/tridenta/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-03",
+   "found_by": "discover-agent",
+   "slug": "tridenta-towers-puerto-vallarta"
+  },
+  {
+   "name": "Erudita",
+   "developer": "Kapúa Desarrollos",
+   "area": "Temozón Norte",
+   "country": "Mexico",
+   "market": "Mérida",
+   "stage": "under construction",
+   "url": "https://erudita.kapua.mx/",
+   "docs_url": "https://erudita.kapua.mx/",
+   "permit_number": null,
+   "seed": {
+    "price": 2200000,
+    "currency": "MXN",
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": 48,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "developer",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "48 one-bedroom apartments for professionals and students, 400 m from the Periférico",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://erudita.kapua.mx/"
+    },
+    {
+     "claim": "Construction under way: first stone event on 9 February, then excavation and foundations reported in the March 2023 progress post",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://kapua.mx/blog/en/11/steady-step-kapua-development-work-progress-march-2023"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Mérida, Yucatán (Calle 3 #113, Colonia México)",
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "Master Suite",
+     "Single Air",
+     "Single Garden"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": 83.57,
+    "price_min": 2200000,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": "Rental and Airbnb administration listed as an amenity, run by third parties and not included in the maintenance fee",
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "I could not confirm this project is still under construction. The newest dated update I found is March 2023, and a portal (Nestyn) shows a status ladder ending in Terminado. The developer page shows Master Suite as the last unit. Prices differ by Kapúa page (from 2.2 MDP on the project page, 2.4 MDP on the listing page). No permit number, escrow, handover date or foreign-buyer language was published.",
+   "positives": [
+    "Floor plans published on the developer page for each unit type",
+    "Dated construction updates on the developer blog"
+   ],
+   "flags": [],
+   "sources": [
+    "https://erudita.kapua.mx/",
+    "https://kapua.mx/blog/en/11/steady-step-kapua-development-work-progress-march-2023",
+    "https://kapua.mx/blog/es/10/colocan-primera-piedra-de-erudita-temozon-departamentos-ubicados-al-norte-de-merida",
+    "https://www.kapua.mx/",
+    "https://www.kapua.mx/developments",
+    "https://www.nestyn.com/proyectos/temozon-norte-merida-yucatan-erudita"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": true,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-03",
+   "found_by": "discover-agent",
+   "slug": "erudita-m-rida"
+  },
+  {
+   "name": "Insólita",
+   "developer": "Kapúa Desarrollos",
+   "area": "Montebello",
+   "country": "Mexico",
+   "market": "Mérida",
+   "stage": "off-plan",
+   "url": "https://insolita.kapua.mx/",
+   "docs_url": "https://insolita.kapua.mx/",
+   "permit_number": null,
+   "seed": {
+    "price": 2345000,
+    "currency": "MXN",
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 47,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "47 apartments over 5 levels in Montebello with more than 15 amenities",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://insolita.kapua.mx/"
+    },
+    {
+     "claim": "Sold as pre-sale (preventa) with a master broker (Intorno) and a design and build firm (Arveral)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://insolita.kapua.mx/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Mérida, Yucatán (Calle 3 #113, Colonia México)",
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "Single Plus",
+     "Duplex",
+     "Duplex Plus"
+    ],
+    "size_min_m2": 58.65,
+    "size_max_m2": 127,
+    "price_min": 2345000,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "The developer labels this as pre-sale, and I found no evidence that building work has started, so it does not meet the under-construction test. The developer page says 5 unit types but I only saw 3 in the text I retrieved. Kapúa's listing page shows from 2.5 MDP against 2,345,000 on the project page.",
+   "positives": [
+    "Floor plans published on the developer page for each unit type",
+    "Named master broker and design and build firm"
+   ],
+   "flags": [],
+   "sources": [
+    "https://insolita.kapua.mx/",
+    "https://kapua.mx/desarrollos?category=10&status=1",
+    "https://mantra.mx/en/inbound-marketing/140/estrategia-de-pauta-kapua-desarrollos",
+    "https://www.kapua.mx/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": true,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-03",
+   "found_by": "discover-agent",
+   "slug": "ins-lita-m-rida"
   }
  ]
 }

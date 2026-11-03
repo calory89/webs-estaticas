@@ -68,5 +68,32 @@
   ],
   "all_six": 0,
   "verified_4plus": 0
+ },
+ {
+  "date": "2026-11-03",
+  "calls": 3,
+  "usd": 2.771,
+  "searches": 18,
+  "added": 7,
+  "rejected": {
+   "duplicate": 1
+  },
+  "markets": [
+   "Los Cabos",
+   "Puerto Vallarta",
+   "Mérida"
+  ],
+  "model": "claude-sonnet-5-5",
+  "added_slugs": [
+   "solara-del-mar-los-cabos",
+   "wen-living-san-jos-del-cabo-los-cabos",
+   "vel-a-residences-puerto-vallarta",
+   "espacio-marina-golf-puerto-vallarta",
+   "tridenta-towers-puerto-vallarta",
+   "erudita-m-rida",
+   "ins-lita-m-rida"
+  ],
+  "all_six": 0,
+  "verified_4plus": 0
  }
 ]
