@@ -164,7 +164,7 @@
     $('rm-me').textContent = ME.fp; $('rm-name').value = ls('kb-room-name') || '';
     return fetch('/api/x/i/status', { cache: 'no-store' }).then(function (r) { return r.json(); }).then(function (s) { MODE = s.room && s.room.ready ? 'server' : 'local'; }).catch(function () { MODE = 'local'; })
       .then(load).then(function () {
-        if (R.canWrite && !ENV.length && !BROKEN) return append('hello', {});
+        if (R.canWrite && !ENV.length && !BROKEN && JUST === R.id) { JUST = null; return append('hello', {}); }
       }).then(function () { if (MODE === 'server') { clearInterval(POLL); POLL = setInterval(function () { if (!BUSY && document.visibilityState === 'visible') load().catch(function () {}); }, 10000); } })
       .catch(function (e) { msg('Could not open the room: ' + (e && e.message || e), true); });
   }
@@ -178,7 +178,8 @@
   }
 
   // ---------- events ----------
-  $('rm-new').onclick = function () { var s = crypto.getRandomValues(new Uint8Array(32)); location.hash = 'w=' + b64u(s); };
+  var JUST = null;
+  $('rm-new').onclick = function () { var s = crypto.getRandomValues(new Uint8Array(32)); openRoom('#w=' + b64u(s)).then(function (r) { JUST = r.id; location.hash = 'w=' + b64u(s); }); };
   window.addEventListener('hashchange', function () { ENV = []; LOG = []; HEAD = ZERO; BROKEN = null; clearInterval(POLL); go(); });
   function guard(p) { BUSY = true; return p.catch(function (e) { msg(String(e && e.message || e), true); }).then(function () { BUSY = false; }); }
   $('rm-noteform').onsubmit = function (e) { e.preventDefault(); var t = $('rm-note').value.trim(); if (!t) return; guard(append('note', { text: t.slice(0, 4000) }).then(function () { $('rm-note').value = ''; msg('Note encrypted, signed and added.'); })); };
@@ -209,7 +210,10 @@
     var f = this.files[0]; this.value = ''; if (!f) return;
     f.text().then(function (t) {
       var d = JSON.parse(t); if (d.format !== 'kolaboro-room-v1' || d.room !== R.id) throw new Error('This export belongs to another room (or is not a Kolaboro room export).');
-      var inc = (d.entries || []).filter(function (e) { return e && e.seq > ENV.length && typeof e.env === 'string'; }).sort(function (a, b) { return a.seq - b.seq; });
+      var all = (d.entries || []).filter(function (e) { return e && typeof e.env === 'string'; }).sort(function (a, b) { return a.seq - b.seq; });
+      var clash = all.filter(function (e) { return e.seq <= ENV.length && ENV[e.seq - 1].env !== e.env; });
+      if (clash.length) throw new Error('This export and this device disagree from entry #' + clash[0].seq + ' (two people wrote offline at the same time). Open the export in a private window to read it.');
+      var inc = all.filter(function (e) { return e.seq > ENV.length; });
       if (!inc.length) return msg('Nothing new in that export.');
       if (MODE === 'server') return msg('This room is synced through the server; import is for local-only rooms.', true);
       ENV = ENV.concat(inc.map(function (e) { return { seq: e.seq, env: e.env, at: e.at }; })); return saveLocal().then(rebuild).then(function () { msg('Imported ' + inc.length + ' entries. Verification result is shown above.'); });

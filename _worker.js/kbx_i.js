@@ -137,6 +137,10 @@ async function room(req, u, ctx) {
   }
   const id = p[1];
   if (!ROOM_ID.test(id || '')) return out({ error: 'not found' }, 404);
+  if (req.method === 'POST' && p.length === 2) {   // reject non-ciphertext before anything else, even in local-only mode
+    let b; try { b = await req.clone().json(); } catch (e) { return out({ error: 'bad_request' }, 400); }
+    if (!envOk(b && b.env)) return out({ error: 'not_ciphertext', message: 'The server accepts only encrypted envelopes.' }, 400);
+  }
   if (!st.room) return out({ error: 'not_ready', mode: 'local' }, 503);
   if (req.method === 'GET' && p.length === 2) {
     if (await limited(req, ctx, 'roomget', 1500)) return out({ error: 'rate' }, 429);
