@@ -127,7 +127,7 @@
       if (io && !want) io.observe($('graph')); else draw(pick);
     }
   }
-  fetch('/data/company-graph.json', { cache: 'no-cache' }).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(renderIndex).catch(function () {
+  fetch('/data/company-graph.json?h=' + new Date().toISOString().slice(0, 13), { cache: 'no-cache' }).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(renderIndex).catch(function () {
     $('gq-upd').textContent = 'The weekly batch has not published the graph yet. This page will fill in when it does.';
     $('gq-sum').innerHTML = '<p>Starting: no data published yet.</p>';
   });
