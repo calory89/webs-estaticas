@@ -1,23 +1,23 @@
 {
- "updated": "2026-11-03T13:14:50.049Z",
+ "updated": "2026-11-03T13:32:44.351Z",
  "base": "https://kolaboro.com",
  "tool": "axe-core 4.14.0 in Chrome, rules tagged wcag2a, wcag2aa, wcag21a, wcag21aa, wcag22aa",
  "viewport": "1280x900",
- "seconds": 310,
+ "seconds": 307,
  "goal": "0 serious or critical",
  "ok": false,
  "summary": {
-  "at": "2026-11-03T13:14:50.049Z",
+  "at": "2026-11-03T13:32:44.351Z",
   "pages": 116,
-  "errors": 0,
+  "errors": 4,
   "nodes_by_impact": {
    "critical": 2,
-   "serious": 87,
+   "serious": 39,
    "moderate": 0,
    "minor": 0
   },
-  "pages_clean": 87,
-  "pages_with_serious_or_critical": 29
+  "pages_clean": 106,
+  "pages_with_serious_or_critical": 6
  },
  "rules": [
   {
@@ -43,21 +43,6 @@
    ]
   },
   {
-   "id": "label-content-name-mismatch",
-   "impact": "serious",
-   "help": "Elements must have their visible text as part of their accessible name",
-   "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
-   "pages": 25,
-   "nodes": 60,
-   "examples": [
-    "/",
-    "/report/sample/",
-    "/es/",
-    "/satellite/",
-    "/developers/reply/"
-   ]
-  },
-  {
    "id": "scrollable-region-focusable",
    "impact": "serious",
    "help": "Scrollable region must have keyboard access",
@@ -71,12 +56,24 @@
    ]
   },
   {
+   "id": "label-content-name-mismatch",
+   "impact": "serious",
+   "help": "Elements must have their visible text as part of their accessible name",
+   "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+   "pages": 2,
+   "nodes": 31,
+   "examples": [
+    "/report/sample/",
+    "/satellite/"
+   ]
+  },
+  {
    "id": "color-contrast",
    "impact": "serious",
    "help": "Elements must meet minimum color contrast ratio thresholds",
    "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
    "pages": 2,
-   "nodes": 22,
+   "nodes": 3,
    "examples": [
     "/portal/demo/",
     "/technology/"
@@ -88,17 +85,7 @@
    "url": "/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "label-content-name-mismatch",
-     "impact": "serious",
-     "nodes": 2,
-     "targets": [
-      "summary[aria-label=\"Language: English\"]",
-      ".prod-vid"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/check/",
@@ -253,16 +240,7 @@
    "url": "/es/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "label-content-name-mismatch",
-     "impact": "serious",
-     "nodes": 1,
-     "targets": [
-      "summary"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/academy/1/",
@@ -444,17 +422,15 @@
      "impact": "critical",
      "nodes": 1,
      "targets": [
-      "select[name=\"days\"]"
+      "select"
      ]
     },
     {
      "id": "color-contrast",
      "impact": "serious",
-     "nodes": 20,
+     "nodes": 1,
      "targets": [
-      "#xchk",
-      ".accepted:nth-child(1) > div > small:nth-child(2)",
-      ".accepted:nth-child(1) > div > .x-hash[title=\"SHA-256 of the file\"]"
+      ".medium"
      ]
     },
     {
@@ -683,21 +659,11 @@
    "url": "/developers/reply/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "label-content-name-mismatch",
-     "impact": "serious",
-     "nodes": 1,
-     "targets": [
-      "#dr-drop"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/regulators/",
-   "status": 200,
-   "error": null,
+   "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://kolaboro.com/regulators/",
    "violations": []
   },
   {
@@ -722,96 +688,36 @@
    "url": "/de/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "label-content-name-mismatch",
-     "impact": "serious",
-     "nodes": 2,
-     "targets": [
-      "summary[aria-label=\"Sprache: Deutsch\"]",
-      ".prod-vid"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/fr/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "label-content-name-mismatch",
-     "impact": "serious",
-     "nodes": 2,
-     "targets": [
-      "summary[aria-label=\"Langue: Français\"]",
-      ".prod-vid"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/ru/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "label-content-name-mismatch",
-     "impact": "serious",
-     "nodes": 2,
-     "targets": [
-      "summary[aria-label=\"Язык: Русский\"]",
-      ".prod-vid"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/nl/",
-   "status": 200,
-   "error": null,
-   "violations": [
-    {
-     "id": "label-content-name-mismatch",
-     "impact": "serious",
-     "nodes": 2,
-     "targets": [
-      "summary[aria-label=\"Taal: Nederlands\"]",
-      ".prod-vid"
-     ]
-    }
-   ]
+   "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://kolaboro.com/nl/",
+   "violations": []
   },
   {
    "url": "/ar/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "label-content-name-mismatch",
-     "impact": "serious",
-     "nodes": 1,
-     "targets": [
-      "summary[aria-label=\"اللغة: العربية\"]"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/zh/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "label-content-name-mismatch",
-     "impact": "serious",
-     "nodes": 2,
-     "targets": [
-      "summary[aria-label=\"语言: 简体中文\"]",
-      ".prod-vid"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/data-policy/",
@@ -823,211 +729,83 @@
    "url": "/es/pricing/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "label-content-name-mismatch",
-     "impact": "serious",
-     "nodes": 1,
-     "targets": [
-      "summary[aria-label=\"Idioma: Español\"]"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/es/database/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "label-content-name-mismatch",
-     "impact": "serious",
-     "nodes": 1,
-     "targets": [
-      "summary"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/de/pricing/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "label-content-name-mismatch",
-     "impact": "serious",
-     "nodes": 1,
-     "targets": [
-      "summary[aria-label=\"Sprache: Deutsch\"]"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/de/database/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "label-content-name-mismatch",
-     "impact": "serious",
-     "nodes": 1,
-     "targets": [
-      "summary"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/fr/pricing/",
-   "status": 200,
-   "error": null,
-   "violations": [
-    {
-     "id": "label-content-name-mismatch",
-     "impact": "serious",
-     "nodes": 1,
-     "targets": [
-      "summary[aria-label=\"Langue: Français\"]"
-     ]
-    }
-   ]
+   "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://kolaboro.com/fr/pricing/",
+   "violations": []
   },
   {
    "url": "/fr/database/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "label-content-name-mismatch",
-     "impact": "serious",
-     "nodes": 1,
-     "targets": [
-      "summary"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/ru/pricing/",
-   "status": 200,
-   "error": null,
-   "violations": [
-    {
-     "id": "label-content-name-mismatch",
-     "impact": "serious",
-     "nodes": 1,
-     "targets": [
-      "summary[aria-label=\"Язык: Русский\"]"
-     ]
-    }
-   ]
+   "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://kolaboro.com/ru/pricing/",
+   "violations": []
   },
   {
    "url": "/ru/database/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "label-content-name-mismatch",
-     "impact": "serious",
-     "nodes": 1,
-     "targets": [
-      "summary"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/nl/pricing/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "label-content-name-mismatch",
-     "impact": "serious",
-     "nodes": 1,
-     "targets": [
-      "summary[aria-label=\"Taal: Nederlands\"]"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/nl/database/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "label-content-name-mismatch",
-     "impact": "serious",
-     "nodes": 1,
-     "targets": [
-      "summary"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/ar/pricing/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "label-content-name-mismatch",
-     "impact": "serious",
-     "nodes": 1,
-     "targets": [
-      "summary[aria-label=\"اللغة: العربية\"]"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/ar/database/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "label-content-name-mismatch",
-     "impact": "serious",
-     "nodes": 1,
-     "targets": [
-      "summary"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/zh/pricing/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "label-content-name-mismatch",
-     "impact": "serious",
-     "nodes": 1,
-     "targets": [
-      "summary[aria-label=\"语言: 简体中文\"]"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/zh/database/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "label-content-name-mismatch",
-     "impact": "serious",
-     "nodes": 1,
-     "targets": [
-      "summary"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/log/",
@@ -1082,6 +860,19 @@
   }
  ],
  "history": [
+  {
+   "at": "2026-11-03T13:32:44.351Z",
+   "pages": 116,
+   "errors": 4,
+   "nodes_by_impact": {
+    "critical": 2,
+    "serious": 39,
+    "moderate": 0,
+    "minor": 0
+   },
+   "pages_clean": 106,
+   "pages_with_serious_or_critical": 6
+  },
   {
    "at": "2026-11-03T13:14:50.049Z",
    "pages": 116,
