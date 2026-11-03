@@ -1,23 +1,23 @@
 {
- "updated": "2026-11-03T13:40:37.566Z",
+ "updated": "2026-11-03T13:48:09.638Z",
  "base": "https://kolaboro.com",
  "tool": "axe-core 4.14.0 in Chrome, rules tagged wcag2a, wcag2aa, wcag21a, wcag21aa, wcag22aa",
  "viewport": "1280x900",
- "seconds": 293,
+ "seconds": 310,
  "goal": "0 serious or critical",
  "ok": false,
  "summary": {
-  "at": "2026-11-03T13:40:37.566Z",
+  "at": "2026-11-03T13:48:09.638Z",
   "pages": 116,
   "errors": 0,
   "nodes_by_impact": {
    "critical": 2,
-   "serious": 39,
+   "serious": 56,
    "moderate": 0,
    "minor": 0
   },
-  "pages_clean": 110,
-  "pages_with_serious_or_critical": 6
+  "pages_clean": 111,
+  "pages_with_serious_or_critical": 5
  },
  "rules": [
   {
@@ -72,11 +72,10 @@
    "impact": "serious",
    "help": "Elements must meet minimum color contrast ratio thresholds",
    "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
-   "pages": 2,
-   "nodes": 3,
+   "pages": 1,
+   "nodes": 20,
    "examples": [
-    "/portal/demo/",
-    "/technology/"
+    "/portal/demo/"
    ]
   }
  ],
@@ -422,15 +421,17 @@
      "impact": "critical",
      "nodes": 1,
      "targets": [
-      "select"
+      "select[name=\"days\"]"
      ]
     },
     {
      "id": "color-contrast",
      "impact": "serious",
-     "nodes": 1,
+     "nodes": 20,
      "targets": [
-      ".medium"
+      "#xchk",
+      ".accepted:nth-child(1) > div > small:nth-child(2)",
+      ".accepted:nth-child(1) > div > .x-hash[title=\"SHA-256 of the file\"]"
      ]
     },
     {
@@ -459,17 +460,7 @@
    "url": "/technology/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "color-contrast",
-     "impact": "serious",
-     "nodes": 2,
-     "targets": [
-      ".cp-status > span",
-      ".cp-status > p"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/verify/",
@@ -865,16 +856,29 @@
  ],
  "history": [
   {
-   "at": "2026-11-03T13:40:37.566Z",
+   "at": "2026-11-03T13:48:09.638Z",
    "pages": 116,
    "errors": 0,
+   "nodes_by_impact": {
+    "critical": 2,
+    "serious": 56,
+    "moderate": 0,
+    "minor": 0
+   },
+   "pages_clean": 111,
+   "pages_with_serious_or_critical": 5
+  },
+  {
+   "at": "2026-11-03T13:32:44.351Z",
+   "pages": 116,
+   "errors": 4,
    "nodes_by_impact": {
     "critical": 2,
     "serious": 39,
     "moderate": 0,
     "minor": 0
    },
-   "pages_clean": 110,
+   "pages_clean": 106,
    "pages_with_serious_or_critical": 6
   },
   {
