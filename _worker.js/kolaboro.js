@@ -89,12 +89,20 @@ function pageParts(html) {
   h = h.replace(/<meta\b[^>]*\bcontent=["']([^"']{20,})["'][^>]*>/gi, (m, c) => { hidden.push(c); return ' '; });
   h = h.replace(/<input\b[^>]*type=["']?hidden[^>]*>/gi, m => { const v = m.match(/value=["']([^"']*)/i); if (v) hidden.push(v[1]); return ' '; });
   // elements a visitor cannot see: hidden attribute, aria-hidden, or a hiding inline style; capture to the first matching close tag
-  for (let pass = 0; pass < 3; pass++) {
-    h = h.replace(/<(div|span|p|section|article|aside|li|ul|ol|a|font|small|label|h[1-6]|td|em|strong|b|i)\b([^>]*)>([\s\S]*?)<\/\1>/gi, (m, tag, attrs, inner) => {
-      const st = (attrs.match(/style=["']([^"']*)/i) || [])[1] || '';
-      if (/\shidden(\s|=|$)/i.test(attrs) || /aria-hidden=["']?true/i.test(attrs) || HIDDEN_STYLE.test(st) || (/color\s*:\s*(#fff(fff)?|white|rgba?\(\s*255\s*,\s*255\s*,\s*255)\b/i.test(st) && /background(-color)?\s*:\s*(#fff(fff)?|white)\b/i.test(st))) { hidden.push(textOf(inner)); return ' '; }
-      return m;
-    });
+  // elements a visitor cannot see: hidden attribute, aria-hidden, or a hiding inline style. Each hidden opening tag is matched to its own
+  // closing tag by counting nesting, so a hidden element inside a visible one (or holding nested tags of the same kind) is removed whole.
+  const isHid = attrs => { const st = (attrs.match(/style=["']([^"']*)/i) || [])[1] || ''; return /\shidden(\s|=|$)/i.test(attrs) || /aria-hidden=["']?true/i.test(attrs) || HIDDEN_STYLE.test(st) || (/color\s*:\s*(#fff(fff)?|white|rgba?\(\s*255\s*,\s*255\s*,\s*255)\b/i.test(st) && /background(-color)?\s*:\s*(#fff(fff)?|white)\b/i.test(st)); };
+  const OPEN = /<(div|span|p|section|article|aside|li|ul|ol|a|font|small|label|h[1-6]|td|em|strong|b|i)\b([^>]*)>/gi;
+  for (let guard = 0; guard < 400; guard++) {
+    OPEN.lastIndex = 0; let m, hit = null;
+    while ((m = OPEN.exec(h))) if (isHid(m[2])) { hit = m; break; }
+    if (!hit) break;
+    const tag = hit[1].toLowerCase(), tre = new RegExp('<(/?)' + tag + '\\b[^>]*>', 'gi'); tre.lastIndex = hit.index + hit[0].length;
+    let depth = 1, t, end = -1, innerEnd = -1;
+    while ((t = tre.exec(h))) { if (t[1]) depth--; else if (!/\/>$/.test(t[0])) depth++; if (!depth) { innerEnd = t.index; end = t.index + t[0].length; break; } }
+    if (end < 0) { h = h.slice(0, hit.index) + ' ' + h.slice(hit.index + hit[0].length); continue; }   // never closed: drop the tag only, never the rest of the page
+    hidden.push(textOf(h.slice(hit.index + hit[0].length, innerEnd)));
+    h = h.slice(0, hit.index) + ' ' + h.slice(end);
   }
   return { visible: textOf(h), hidden: hidden.map(t => textOf(String(t))).filter(t => t.length > 3) };
 }

@@ -5,7 +5,7 @@
 //                                   review reads it as an untrusted page; the answer is compared with the same page without the text.
 //   POST /api/x/b/redteam/submit    hand in an attack that changed the verdict, for the public eval suite (needs table m10/b.sql; until then: email)
 //   GET  /api/x/b/redteam/baseline  the baseline answer, if it has been computed (no AI call)
-import { json, sha, aiAllowed, signBody, deskReview, okUrl, fetchPage, deskCacheKey, isTracked, rateLimited, logApi, rpcW, CRIT, critNorm, PUB_RAW_B64 } from './kolaboro.js';
+import { json, sha, aiAllowed, signBody, deskReview, pageParts, okUrl, fetchPage, deskCacheKey, isTracked, rateLimited, logApi, rpcW, CRIT, critNorm, PUB_RAW_B64 } from './kolaboro.js';
 
 export const PATHS = /^\/api\/x\/b\//;
 
@@ -98,6 +98,8 @@ async function baseline(env, ctx, steps) {
   ctx.waitUntil(caches.default.put(key, new Response(JSON.stringify(b), { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=604800' } })));
   return b;
 }
+// outcomes are stored per text and per version of the review code, so a fix to the defences is tested afresh
+const resKey = async tsha => new Request('https://kolaboro.com/__rt_res/' + tsha + '/' + (await sha(String(deskReview) + String(pageParts))).slice(0, 16));
 async function redteam(req, env, ctx) {
   if (!env.ANTHROPIC_API_KEY) return json({ error: 'not_configured' }, 503);
   let b; try { b = await req.json(); } catch (e) { return json({ error: 'bad_request' }, 400); }
@@ -105,7 +107,7 @@ async function redteam(req, env, ctx) {
   const text = String(b.text || '');
   if (text.trim().length < 10) return json({ error: 'short' }, 400);
   if (text.length > RT_MAX) return json({ error: 'long', max: RT_MAX }, 400);
-  const tsha = await sha(text), rk = new Request('https://kolaboro.com/__rt_res/' + tsha);
+  const tsha = await sha(text), rk = await resKey(tsha);
   const prev = await caches.default.match(rk);
   if (prev) return json(Object.assign(await prev.json(), { cached: true }));
   if (!(await aiAllowed())) return json({ error: 'budget' }, 503);
@@ -136,7 +138,7 @@ async function submit(req, env, ctx) {
   let b; try { b = await req.json(); } catch (e) { return json({ error: 'bad_request' }, 400); }
   if (b.company) return json({ error: 'bad_request' }, 400);
   const text = String(b.text || '').slice(0, RT_MAX), name = String(b.name || '').replace(/[<>]/g, '').trim().slice(0, 60);
-  const hit = await caches.default.match(new Request('https://kolaboro.com/__rt_res/' + await sha(text)));
+  const hit = await caches.default.match(await resKey(await sha(text)));
   if (!hit) return json({ error: 'unknown', detail: 'Run the test first; only an attack that changed the verdict can be handed in.' }, 404);
   const r = await hit.json();
   if (!r.verdict_changed) return json({ error: 'not_fooled' }, 400);
