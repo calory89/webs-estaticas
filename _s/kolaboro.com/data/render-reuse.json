@@ -1,289 +1,32 @@
 {
- "generated": "2026-11-03T09:36:42Z",
+ "generated": "2026-11-03T10:01:31Z",
  "model": "open_clip ViT-B-32 laion2b_s34b_b79k (open_clip_torch 2.29.0, torch 2.5.1+cpu, CPU)",
  "threshold": 0.95,
  "min_orb_inliers": 25,
- "images_checked": 8818,
- "projects_checked": 803,
+ "images_checked": 8217,
+ "projects_checked": 796,
  "projects_tracked": 891,
  "limits": {
   "images_per_project": 16,
   "min_side_px": 200,
-  "download_time_budget_s": 1200,
+  "download_time_budget_s": 660,
   "download_budget_hit": false,
+  "embedding_deadline_s": 1320,
+  "embedding_budget_hit": false,
   "max_pairs": 200
  },
- "candidates_over_threshold": 792,
+ "site_chrome_images_dropped": 619,
+ "candidates_over_threshold": 12,
  "excluded": {
-  "same_domain": 776,
-  "same_developer": 6,
+  "same_domain": 10,
+  "same_developer": 2,
   "same_project_name": 0,
+  "page_names_other_project": 0,
   "hub_image": 0,
   "geometry_failed": 0
  },
  "hub_images": 0,
- "pair_count": 10,
- "pairs": [
-  {
-   "a": {
-    "project_id": "amazi-hawana-salalah-muriya",
-    "project_name": "Amazi at Hawana Salalah",
-    "developer": "Muriya (Orascom Development and OMRAN)",
-    "market": "Oman",
-    "image_url": "https://www.palmera.realestate/oman/projects/mira-ocean-estates/gallery-01.webp",
-    "page_url": "https://www.palmera.realestate/oman/property/amazi-hawana-salalah/",
-    "width": 1600,
-    "height": 893
-   },
-   "b": {
-    "project_id": "mira-ocean-estates-trussardi-residences-first-phase-mira-developments-",
-    "project_name": "Mira Ocean Estates (Trussardi Residences, first phase)",
-    "developer": "Mira Developments L.L.C",
-    "market": "Oman",
-    "image_url": "https://mira-ocean-estates.com/assets/MP_FRONT+.webp",
-    "page_url": "https://mira-ocean-estates.com/",
-    "width": 1920,
-    "height": 1072
-   },
-   "cosine": 0.9959,
-   "dhash_distance": 0,
-   "orb_inliers": 1360,
-   "identical_file": false
-  },
-  {
-   "a": {
-    "project_id": "mira-ocean-estates-trussardi-residences-first-phase-mira-developments-",
-    "project_name": "Mira Ocean Estates (Trussardi Residences, first phase)",
-    "developer": "Mira Developments L.L.C",
-    "market": "Oman",
-    "image_url": "https://mira-ocean-estates.com/assets/MP_FRONT+.webp",
-    "page_url": "https://mira-ocean-estates.com/",
-    "width": 1920,
-    "height": 1072
-   },
-   "b": {
-    "project_id": "vistal-by-victoria-swarovski-leo-developments",
-    "project_name": "Vistal by Victoria Swarovski",
-    "developer": "LEO Developments",
-    "market": "Oman",
-    "image_url": "https://www.palmera.realestate/oman/projects/mira-ocean-estates/gallery-01.webp",
-    "page_url": "https://www.palmera.realestate/oman/property/vistal-by-victoria-swarovski/",
-    "width": 1600,
-    "height": 893
-   },
-   "cosine": 0.9959,
-   "dhash_distance": 0,
-   "orb_inliers": 1355,
-   "identical_file": false
-  },
-  {
-   "a": {
-    "project_id": "mira-ocean-estates-trussardi-residences-first-phase-mira-developments-",
-    "project_name": "Mira Ocean Estates (Trussardi Residences, first phase)",
-    "developer": "Mira Developments L.L.C",
-    "market": "Oman",
-    "image_url": "https://mira-ocean-estates.com/assets/MP_FRONT+.webp",
-    "page_url": "https://mira-ocean-estates.com/",
-    "width": 1920,
-    "height": 1072
-   },
-   "b": {
-    "project_id": "the-great-escape-2-aida-dar-global",
-    "project_name": "The Great Escape 2 (AIDA)",
-    "developer": "Dar Global (Dar Global Property Development SPC; LSE: DAR), with OMRAN",
-    "market": "Oman",
-    "image_url": "https://www.palmera.realestate/oman/projects/mira-ocean-estates/gallery-01.webp",
-    "page_url": "https://www.palmera.realestate/oman/property/the-great-escape-2/",
-    "width": 1600,
-    "height": 893
-   },
-   "cosine": 0.9959,
-   "dhash_distance": 0,
-   "orb_inliers": 1355,
-   "identical_file": false
-  },
-  {
-   "a": {
-    "project_id": "mira-ocean-estates-trussardi-residences-first-phase-mira-developments-",
-    "project_name": "Mira Ocean Estates (Trussardi Residences, first phase)",
-    "developer": "Mira Developments L.L.C",
-    "market": "Oman",
-    "image_url": "https://mira-ocean-estates.com/assets/MP_FRONT+.webp",
-    "page_url": "https://mira-ocean-estates.com/",
-    "width": 1920,
-    "height": 1072
-   },
-   "b": {
-    "project_id": "olive-farms-by-raya-jebel-sifah-muriya",
-    "project_name": "Olive Farms by Raya (Phase 2 and 3)",
-    "developer": "Muriya (Orascom Development Holding and OMRAN Group partnership)",
-    "market": "Oman",
-    "image_url": "https://www.palmera.realestate/oman/projects/mira-ocean-estates/gallery-01.webp",
-    "page_url": "https://www.palmera.realestate/oman/property/olive-farms-jebel-sifah/",
-    "width": 1600,
-    "height": 893
-   },
-   "cosine": 0.9959,
-   "dhash_distance": 0,
-   "orb_inliers": 1355,
-   "identical_file": false
-  },
-  {
-   "a": {
-    "project_id": "the-pinnacle-montego-bay-lch",
-    "project_name": "The Pinnacle, Montego Bay (Phase 1)",
-    "developer": "LCH Development Limited",
-    "market": "Jamaica",
-    "image_url": "https://thepinnaclejamaica.com/wp-content/uploads/2023/10/4189_UNIT-2701_KITCHEN_FINAL_TG.jpg",
-    "page_url": "https://thepinnaclejamaica.com/residences-the-pinnacle-montego-bay/",
-    "width": 1920,
-    "height": 1280
-   },
-   "b": {
-    "project_id": "hq-cas-en-bas-wellington-estates",
-    "project_name": "HQ Cas En Bas Resort & Residences (formerly Cas en Bas Beach Resort, Destination by Hyatt)",
-    "developer": "Wellington Estates (seller Cameron Inc.), branded by HQ Hotels & Residences by sbe, Wyndham Registry Collection",
-    "market": "Saint Lucia",
-    "image_url": "https://brandedresi.com/wp-content/uploads/2026/06/The-Canary-Montego-Bay-Penthouses-584x438.jpg",
-    "page_url": "https://brandedresi.com/hq-cas-en-bas-resort-and-residences/",
-    "width": 584,
-    "height": 438
-   },
-   "cosine": 0.9782,
-   "dhash_distance": 6,
-   "orb_inliers": 881,
-   "identical_file": false
-  },
-  {
-   "a": {
-    "project_id": "the-symphony-imtiaz",
-    "project_name": "The Symphony by Imtiaz",
-    "developer": "Imtiaz Developments",
-    "market": "Dubai",
-    "image_url": "https://media.a1.properties/a1-site/development/featured/CGyrfq2qjrinsqLaoWuA.webp",
-    "page_url": "https://a1properties.ae/project-details/symphony-by-imtiaz-meydan-horizon-dubai",
-    "width": 1920,
-    "height": 1080
-   },
-   "b": {
-    "project_id": "naya-at-district-one-meydan",
-    "project_name": "Naya at District One",
-    "developer": "Meydan / District One (District One - FZ), now marketed by Nakheel",
-    "market": "Dubai",
-    "image_url": "https://new-projects-media.propertyfinder.com/project/8387163e-bc20-41a8-9e56-58a53a61de13/gallery/image/T7dtD80fa2gNcRnZZU5VSO-1FQ6LjS0UwMX96TGR50E=/medium.webp",
-    "page_url": "https://www.propertyfinder.ae/en/new-projects/nakheel/naya-at-district-one",
-    "width": 668,
-    "height": 452
-   },
-   "cosine": 0.9601,
-   "dhash_distance": 13,
-   "orb_inliers": 593,
-   "identical_file": false
-  },
-  {
-   "a": {
-    "project_id": "sobha-skyscape",
-    "project_name": "Skyscape (Sobha Hartland II)",
-    "developer": "Sobha Realty",
-    "market": "Dubai",
-    "image_url": "https://media.a1.properties/a1-site/development/featured/CGyrfq2qjrinsqLaoWuA.webp",
-    "page_url": "https://a1properties.ae/project-details/skyscape-sobha-hartland-2-dubai",
-    "width": 1920,
-    "height": 1080
-   },
-   "b": {
-    "project_id": "naya-at-district-one-meydan",
-    "project_name": "Naya at District One",
-    "developer": "Meydan / District One (District One - FZ), now marketed by Nakheel",
-    "market": "Dubai",
-    "image_url": "https://new-projects-media.propertyfinder.com/project/8387163e-bc20-41a8-9e56-58a53a61de13/gallery/image/T7dtD80fa2gNcRnZZU5VSO-1FQ6LjS0UwMX96TGR50E=/medium.webp",
-    "page_url": "https://www.propertyfinder.ae/en/new-projects/nakheel/naya-at-district-one",
-    "width": 668,
-    "height": 452
-   },
-   "cosine": 0.9601,
-   "dhash_distance": 13,
-   "orb_inliers": 593,
-   "identical_file": false
-  },
-  {
-   "a": {
-    "project_id": "janu-residences-al-marjan",
-    "project_name": "Janu Residences",
-    "developer": "Amana Development",
-    "market": "Ras Al Khaimah",
-    "image_url": "https://new-projects-media.propertyfinder.com/project/9234d302-badf-4b34-8061-06135b66383c/gallery/image/015qwEsSq8hKZPQ3dULglBeNY4By7Q2nJkcLNoSHswQ=/medium.webp",
-    "page_url": "https://www.propertyfinder.ae/en/new-projects/amana-development/janu-residences",
-    "width": 668,
-    "height": 452
-   },
-   "b": {
-    "project_id": "sora-beach-residences-aark",
-    "project_name": "Sora Beach Residences",
-    "developer": "AARK Developers (AARK DEVELOPERS FZ-LLC)",
-    "market": "Ras Al Khaimah",
-    "image_url": "https://www.directdxb.com/img/960/p7320/cover/370971-6c962f1f.webp",
-    "page_url": "https://www.directdxb.com/projects/aark-developers-sora-beach-residences",
-    "width": 960,
-    "height": 540
-   },
-   "cosine": 0.9586,
-   "dhash_distance": 0,
-   "orb_inliers": 704,
-   "identical_file": false
-  },
-  {
-   "a": {
-    "project_id": "quattro-del-mar-rak-properties",
-    "project_name": "Quattro Del Mar",
-    "developer": "RAK Properties PJSC",
-    "market": "Ras Al Khaimah",
-    "image_url": "https://new-projects-media.propertyfinder.com/project/9234d302-badf-4b34-8061-06135b66383c/gallery/image/015qwEsSq8hKZPQ3dULglBeNY4By7Q2nJkcLNoSHswQ=/medium.webp",
-    "page_url": "https://www.propertyfinder.ae/en/new-projects/rak-properties/quattro-del-mar",
-    "width": 668,
-    "height": 452
-   },
-   "b": {
-    "project_id": "sora-beach-residences-aark",
-    "project_name": "Sora Beach Residences",
-    "developer": "AARK Developers (AARK DEVELOPERS FZ-LLC)",
-    "market": "Ras Al Khaimah",
-    "image_url": "https://www.directdxb.com/img/960/p7320/cover/370971-6c962f1f.webp",
-    "page_url": "https://www.directdxb.com/projects/aark-developers-sora-beach-residences",
-    "width": 960,
-    "height": 540
-   },
-   "cosine": 0.9586,
-   "dhash_distance": 0,
-   "orb_inliers": 704,
-   "identical_file": false
-  },
-  {
-   "a": {
-    "project_id": "sora-beach-residences-aark",
-    "project_name": "Sora Beach Residences",
-    "developer": "AARK Developers (AARK DEVELOPERS FZ-LLC)",
-    "market": "Ras Al Khaimah",
-    "image_url": "https://www.directdxb.com/img/960/p7320/cover/370971-6c962f1f.webp",
-    "page_url": "https://www.directdxb.com/projects/aark-developers-sora-beach-residences",
-    "width": 960,
-    "height": 540
-   },
-   "b": {
-    "project_id": "fortune-bay-residences-topero",
-    "project_name": "Fortune Bay Residences",
-    "developer": "Topero Properties (RAK RERA developer name: TOPERO Properties LLC)",
-    "market": "Ras Al Khaimah",
-    "image_url": "https://new-projects-media.propertyfinder.com/project/9234d302-badf-4b34-8061-06135b66383c/gallery/image/015qwEsSq8hKZPQ3dULglBeNY4By7Q2nJkcLNoSHswQ=/medium.webp",
-    "page_url": "https://www.propertyfinder.ae/en/new-projects/topero-properties/fortune-bay-residences",
-    "width": 668,
-    "height": 452
-   },
-   "cosine": 0.9586,
-   "dhash_distance": 0,
-   "orb_inliers": 694,
-   "identical_file": false
-  }
- ],
- "method": "Images are collected from each tracked project page (url and docs_url), images under 200 px, very wide banners, flat graphics and URLs naming logos/icons are skipped, at most 16 per project. Each image is embedded with CLIP ViT-B-32 (laion2b_s34b_b79k) and pairs from two different projects with cosine >= 0.95 are kept if the two pages are on different domains, the developers differ, the project names do not look like the same project, and neither image has near-duplicates on 5+ other domains (stock or template art). Each surviving pair must then pass a geometric check: at least 25 ORB keypoint matches consistent with one RANSAC homography (or byte-identical files). dhash_distance is reported for reference (0-64, low means near-identical; crops and recolours raise it). A match means the same picture is used on both pages; it is evidence to check, not proof of wrongdoing: agents, portals and sister brands can legitimately share a render."
+ "pair_count": 0,
+ "pairs": [],
+ "method": "Images are collected from each tracked project page (url and docs_url), images under 200 px, very wide banners, flat graphics and URLs naming logos/icons are skipped, at most 16 per project, and a file shown on the pages of two or more projects of the same site is treated as site chrome and dropped. Each image is embedded with CLIP ViT-B-32 (laion2b_s34b_b79k) and pairs from two different projects with cosine >= 0.95 are kept if the two pages are on different domains, the developers differ, the project names do not look like the same project, neither page names the other project (portal carousels and related listings), and neither image has near-duplicates on 5+ other domains (stock or template art). Each surviving pair must then pass a geometric check: at least 25 ORB keypoint matches consistent with one RANSAC homography (or byte-identical files). dhash_distance is reported for reference (0-64, low means near-identical; crops and recolours raise it). A match means the same picture is used on both pages; it is evidence to check, not proof of wrongdoing: agents, portals and sister brands can legitimately share a render."
 }
