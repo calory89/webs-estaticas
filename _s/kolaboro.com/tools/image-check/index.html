@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<script>window.clarity=window.clarity||function(){};</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Is this render used elsewhere? | Kolaboro</title>
 <meta name="description" content="Drop a project render or photo. Your browser computes a perceptual hash and compares it with the images on every project we track. The image never leaves your device.">
@@ -48,9 +47,9 @@
   <p class="crumb"><a href="/">Kolaboro</a> / <a href="/tools/">Tools</a> / Image check</p>
   <h1>Is this render used by another project?</h1>
   <p class="lead">Drop the render or photo from a brochure or listing. Your browser turns it into a 64-bit fingerprint and compares it with every image on the project pages we track.</p>
-  <p class="ft-local"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span><b>Your image never leaves this device.</b> The fingerprint is computed in your browser (<a href="/tools/image-check/kdh.js">kdh.js</a>) and compared with a public list of fingerprints (<a href="/data/image-hashes.json">image-hashes.json</a>). The only request this check makes is downloading that list.</span></p>
+  <p class="ft-local"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span><b>Your image never leaves this device.</b> The fingerprint is computed in your browser (<a href="/tools/image-check/kdh.js">kdh.js</a>) and compared with a public list of fingerprints (<a href="/data/image-hashes.json">image-hashes.json</a>). The only request this check makes is downloading that list. Site analytics are masked on this tool: they never see your image or the results.</span></p>
 </div></section>
-<section class="sec ft-sec"><div class="wrap">
+<section class="sec ft-sec" data-clarity-mask="True"><div class="wrap">
   <label class="ft-drop" id="icDrop">
     <input type="file" id="icFile" accept="image/jpeg,image/png,image/webp,image/gif,image/avif">
     <b>Drop an image here</b>

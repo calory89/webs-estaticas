@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<script>window.clarity=window.clarity||function(){};</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>PDF check: was this contract edited after it was made? | Kolaboro</title>
 <meta name="description" content="Drop a contract or reservation PDF. See every save inside the file, what each save changed, whether signatures still cover it, and where metadata and fonts disagree. Runs in your browser; nothing is uploaded.">
@@ -48,9 +47,9 @@
   <p class="crumb"><a href="/">Kolaboro</a> / <a href="/tools/">Tools</a> / PDF check</p>
   <h1>Was this PDF changed after it was made?</h1>
   <p class="lead">Drop the reservation form, contract or payment schedule a developer sent you. You see every save inside the file, what each save changed, whether signatures still cover the document, and where the metadata and fonts disagree.</p>
-  <p class="ft-local"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span><b>Your file never leaves this device.</b> The check runs in your browser with code you can read (<a href="/tools/pdf-check/pdfx.js">pdfx.js</a>). This page sends no request with your file, and keeps working if you go offline after it has loaded.</span></p>
+  <p class="ft-local"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span><b>Your file never leaves this device.</b> The check runs in your browser with code you can read (<a href="/tools/pdf-check/pdfx.js">pdfx.js</a>). This page sends no request with your file, and keeps working if you go offline after it has loaded. Site analytics are masked on this tool: they never see the file, its name or the results.</span></p>
 </div></section>
-<section class="sec ft-sec"><div class="wrap">
+<section class="sec ft-sec" data-clarity-mask="True"><div class="wrap">
   <label class="ft-drop" id="pcDrop">
     <input type="file" id="pcFile" accept="application/pdf,.pdf">
     <b>Drop a PDF here</b>
