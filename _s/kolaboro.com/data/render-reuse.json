@@ -1,38 +1,37 @@
 {
- "generated": "2026-11-03T12:03:46Z",
+ "generated": "2026-11-03T12:45:33Z",
  "model": "open_clip ViT-B-32 laion2b_s34b_b79k (open_clip_torch 2.29.0, torch 2.5.1+cpu, CPU)",
  "threshold": 0.85,
  "min_orb_inliers": 30,
- "images_checked": 8226,
- "projects_checked": 797,
+ "images_checked": 6454,
+ "projects_checked": 632,
  "projects_tracked": 891,
  "limits": {
   "images_per_project": 16,
   "min_side_px": 200,
   "download_time_budget_s": 660,
-  "download_budget_hit": false,
+  "download_budget_hit": true,
   "embedding_deadline_s": 1320,
   "embedding_budget_hit": false,
   "max_pairs": 200
  },
- "site_chrome_images_dropped": 610,
- "candidates_over_threshold": 3498,
+ "site_chrome_images_dropped": 456,
+ "candidates_over_threshold": 2112,
  "excluded": {
-  "map_or_plan": 685,
-  "same_domain": 373,
-  "same_developer": 100,
+  "map_or_plan": 319,
+  "same_domain": 280,
+  "same_developer": 36,
   "same_project_name": 0,
-  "page_names_other_project": 30,
-  "portal_image_not_attributable": 946,
+  "page_names_other_project": 20,
+  "portal_image_not_attributable": 608,
   "hub_image": 0,
-  "geometry_failed": 1364
+  "geometry_failed": 849
  },
  "hub_images": 0,
  "same_picture_but_excluded": {
   "same_developer": 5,
-  "portal_image_not_attributable": 5,
-  "page_names_other_project": 1,
-  "map_or_plan": 8
+  "portal_image_not_attributable": 2,
+  "map_or_plan": 7
  },
  "listing_portals": 70,
  "pair_count": 0,
