@@ -1396,4 +1396,4 @@ export async function ssr(base, u, kind) {
 const logApi = (kind, ok, cached, ms) => rpc('kolaboro_api_log', { p_kind: kind, p_ok: ok, p_cached: !!cached, p_ms: ms, p_wkey: WKEY }).catch(() => {});
 const rpcW = (fn, args) => rpc(fn, Object.assign({ p_wkey: WKEY }, args));
 export { json, rpc, sha, anthropic, aiAllowed, claude, signBody, openData, openLoad, deskReview, pageParts, scanInjection, logHeads, verifyAssertion,
-  okUrl, fetchPage, deskCacheKey, isTracked, rateLimited, logApi, rpcW, CRIT, critNorm, qnorm, quoteFound, MODELS, PUB_RAW_B64 };
+  okUrl, fetchPage, deskCacheKey, isTracked, rateLimited, logApi, rpcW, CRIT, critNorm, qnorm, quoteFound, MODELS, PUB_RAW_B64, WKEY };
