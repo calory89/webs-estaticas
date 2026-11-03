@@ -1,96 +1,41 @@
 {
- "generated": "2026-11-03T11:54:18Z",
+ "generated": "2026-11-03T12:03:46Z",
  "model": "open_clip ViT-B-32 laion2b_s34b_b79k (open_clip_torch 2.29.0, torch 2.5.1+cpu, CPU)",
  "threshold": 0.85,
  "min_orb_inliers": 30,
- "images_checked": 8195,
+ "images_checked": 8226,
  "projects_checked": 797,
  "projects_tracked": 891,
  "limits": {
   "images_per_project": 16,
   "min_side_px": 200,
   "download_time_budget_s": 660,
-  "download_budget_hit": true,
+  "download_budget_hit": false,
   "embedding_deadline_s": 1320,
   "embedding_budget_hit": false,
   "max_pairs": 200
  },
  "site_chrome_images_dropped": 610,
- "candidates_over_threshold": 3622,
+ "candidates_over_threshold": 3498,
  "excluded": {
-  "same_domain": 771,
-  "same_developer": 108,
+  "map_or_plan": 685,
+  "same_domain": 373,
+  "same_developer": 100,
   "same_project_name": 0,
   "page_names_other_project": 30,
-  "portal_image_not_attributable": 1328,
+  "portal_image_not_attributable": 946,
   "hub_image": 0,
-  "geometry_failed": 1383
+  "geometry_failed": 1364
  },
  "hub_images": 0,
  "same_picture_but_excluded": {
   "same_developer": 5,
-  "portal_image_not_attributable": 7,
-  "page_names_other_project": 1
+  "portal_image_not_attributable": 5,
+  "page_names_other_project": 1,
+  "map_or_plan": 8
  },
  "listing_portals": 70,
- "pair_count": 2,
- "pairs": [
-  {
-   "a": {
-    "project_id": "island-heights-al-marjan",
-    "project_name": "Island Heights",
-    "developer": "Range Developments",
-    "market": "Ras Al Khaimah",
-    "area": "Al Marjan Island, Ras Al Khaimah",
-    "image_url": "https://new-projects-media.propertyfinder.com/project/a71b3ea4-7ba4-4ebb-9c48-f7626a50890c/master_plan/image/XkiCM-WRB59Hdb_lm8HRhP0Ew7ouuqDPTC0iZMVs68E=/original.webp",
-    "page_url": "https://propertyfinder.ae/en/new-projects/range-developments/island-heights",
-    "width": 2862,
-    "height": 1582
-   },
-   "b": {
-    "project_id": "wyndham-residences-al-marjan",
-    "project_name": "Wyndham Residences Al Marjan Island",
-    "developer": "Divine One Group (with Wyndham Hotels & Resorts)",
-    "market": "Ras Al Khaimah",
-    "area": "Al Marjan Island, Ras Al Khaimah",
-    "image_url": "https://divineone.ae/wp-content/uploads/2025/11/map-1.webp",
-    "page_url": "https://divineone.ae/our-projects/wyndham-residences/",
-    "width": 2000,
-    "height": 1246
-   },
-   "cosine": 0.8859,
-   "dhash_distance": 25,
-   "orb_inliers": 336,
-   "identical_file": false
-  },
-  {
-   "a": {
-    "project_id": "wyndham-residences-al-marjan",
-    "project_name": "Wyndham Residences Al Marjan Island",
-    "developer": "Divine One Group (with Wyndham Hotels & Resorts)",
-    "market": "Ras Al Khaimah",
-    "area": "Al Marjan Island, Ras Al Khaimah",
-    "image_url": "https://divineone.ae/wp-content/uploads/2025/11/map-1.webp",
-    "page_url": "https://divineone.ae/our-projects/wyndham-residences/",
-    "width": 2000,
-    "height": 1246
-   },
-   "b": {
-    "project_id": "oystra-richmind",
-    "project_name": "Oystra",
-    "developer": "Richmind (Richmind Development FZ-LLC, part of Richmind Holding)",
-    "market": "Ras Al Khaimah",
-    "area": "Al Marjan Island",
-    "image_url": "https://new-projects-media.propertyfinder.com/project/b2b5af4e-1871-466d-a145-d2312f4f5dcb/master_plan/image/uWG9Bb4t5MoFidrQJnWGTm3Qua2mlCg8ltszbBa-pmg=/original.webp",
-    "page_url": "https://www.propertyfinder.ae/en/new-projects/richmind/oystra",
-    "width": 866,
-    "height": 1566
-   },
-   "cosine": 0.862,
-   "dhash_distance": 28,
-   "orb_inliers": 95,
-   "identical_file": false
-  }
- ],
- "method": "Images are collected from each tracked project page (url and docs_url), images under 200 px, very wide banners, flat graphics and URLs naming logos/icons are skipped, at most 16 per project, and a file shown on the pages of two or more projects of the same site is treated as site chrome and dropped. Each image is embedded with CLIP ViT-B-32 (laion2b_s34b_b79k) and pairs from two different projects with cosine >= 0.85 are kept if the two pages are on different domains, the developers differ, the project names do not look like the same project, neither page names the other project (portal carousels and related listings), and neither image has near-duplicates (cosine >= 0.93) on 5+ other domains (stock or template art). On listing portals (sites hosting pages of several tracked projects) an image only counts for the page's project if it is not in a featured/related widget, its file name does not name another place or project, and it is the page's og:image, sits in the og:image folder or names the project. Each surviving pair must then pass a geometric check: at least 30 ORB keypoint matches consistent with one RANSAC homography (or byte-identical files). dhash_distance is reported for reference (0-64, low means near-identical; crops and recolours raise it). A match means the same picture is used on both pages; it is evidence to check, not proof of wrongdoing: agents, portals and sister brands can legitimately share a render."
+ "pair_count": 0,
+ "pairs": [],
+ "method": "Images are collected from each tracked project page (url and docs_url), images under 200 px, very wide banners, flat graphics and URLs naming logos/icons are skipped (maps, master plans and floor plans are not counted), at most 16 per project, and a file shown on the pages of two or more projects of the same site is treated as site chrome and dropped. Each image is embedded with CLIP ViT-B-32 (laion2b_s34b_b79k) and pairs from two different projects with cosine >= 0.85 are kept if the two pages are on different domains, the developers differ, the project names do not look like the same project, neither page names the other project (portal carousels and related listings), and neither image has near-duplicates (cosine >= 0.93) on 5+ other domains (stock or template art). On listing portals (sites hosting pages of several tracked projects) an image only counts for the page's project if it is not in a featured/related widget, its file name does not name another place or project, and it is the page's og:image, sits in the og:image folder or names the project. Each surviving pair must then pass a geometric check: at least 30 ORB keypoint matches consistent with one RANSAC homography (or byte-identical files). dhash_distance is reported for reference (0-64, low means near-identical; crops and recolours raise it). A match means the same picture is used on both pages; it is evidence to check, not proof of wrongdoing: agents, portals and sister brands can legitimately share a render."
 }
