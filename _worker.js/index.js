@@ -71,14 +71,25 @@ function kbHeaders(r, u) {
   if (embed) h.delete('x-frame-options'); else h.set('x-frame-options', priv ? 'DENY' : 'SAMEORIGIN');
   h.set('content-security-policy', "frame-ancestors " + (priv ? "'none'" : embed ? "*" : "'self'") + "; base-uri 'self'; object-src 'none'; form-action 'self' https://www.paypal.com https://oykcsmextclpdnugixqz.supabase.co");
   h.set('permissions-policy', 'camera=(self), microphone=(self), geolocation=(self), payment=(), usb=(), interest-cohort=()');
-  // script allowlist, in report-only mode first: any script from an origin not listed here is reported to /api/kb/csp, so the
-  // allowlist can be enforced once the reports show nothing legitimate is missing
-  h.set('content-security-policy-report-only', "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.clarity.ms https://*.clarity.ms https://cdnjs.cloudflare.com https://static.cloudflareinsights.com https://www.paypal.com https://www.paypalobjects.com; report-uri /api/kb/csp");
+  // Strict CSP trial (report-only): a fresh nonce per response is stamped on every <script> of our own static HTML, with
+  // 'strict-dynamic' so trusted scripts can load GTM, Clarity, leaflet, d3 or DuckDB. 'unsafe-inline' and https: are only
+  // fallbacks for pre-CSP3 browsers (ignored when a nonce is present). Reports go to /api/kb/csp. Plan: scratchpad csp-strict.txt.
+  const nonce = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(16))));
+  h.set('content-security-policy-report-only', KB_CSP.replace(/\{N\}/g, nonce).replace('{FA}', priv ? "'none'" : embed ? '*' : "'self'"));
+  h.set('reporting-endpoints', 'csp="/api/kb/csp"');
   h.set('cross-origin-opener-policy', 'same-origin-allow-popups');
   if (priv) { h.set('cache-control', 'no-store'); h.set('x-robots-tag', 'noindex, nofollow'); }
   h.delete('access-control-allow-origin');
-  return new Response(r.body, { status: r.status, statusText: r.statusText, headers: h });
+  h.set('cache-control', priv ? 'no-store' : 'no-cache'); // a nonce must never be reused from a cache
+  const out = new Response(r.body, { status: r.status, statusText: r.statusText, headers: h });
+  return new HTMLRewriter().on('script', { element(e) { e.setAttribute('nonce', nonce); } }).transform(out);
 }
+const KB_CSP = "default-src 'self'; script-src 'nonce-{N}' 'strict-dynamic' 'wasm-unsafe-eval' 'unsafe-inline' https:; script-src-attr 'none'; " +
+  "style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://unpkg.com; " +
+  "img-src 'self' data: blob: https://oykcsmextclpdnugixqz.supabase.co https://server.arcgisonline.com https://*.tile.openstreetmap.org https://tile.openstreetmap.org https://*.google-analytics.com https://*.googletagmanager.com https://*.clarity.ms https://c.bing.com; " +
+  "font-src 'self'; connect-src 'self' https://oykcsmextclpdnugixqz.supabase.co wss://oykcsmextclpdnugixqz.supabase.co https://mempool.space https://nominatim.openstreetmap.org https://cdn.jsdelivr.net https://earth-search.aws.element84.com https://*.amazonaws.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.clarity.ms https://c.bing.com https://cloudflareinsights.com; " +
+  "frame-src 'self' https://www.paypal.com https://www.sandbox.paypal.com; worker-src 'self' blob:; manifest-src 'self'; media-src 'self' blob:; object-src 'none'; base-uri 'self'; " +
+  "form-action 'self' https://www.paypal.com https://oykcsmextclpdnugixqz.supabase.co; frame-ancestors {FA}; upgrade-insecure-requests; report-uri /api/kb/csp; report-to csp";
 // equinoxinvestmentgroup.com: browser security headers (no framing, no plugins, admin never indexed or cached) and long cache for fonts
 function eqHeaders(r, u, req) {
   const h = new Headers(r.headers);
