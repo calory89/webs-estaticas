@@ -38,6 +38,7 @@
     cells.push([sm.built_change_pts != null && sm.first_year ? sg(sm.built_change_pts) + ' pts' : 'n/a', sm.first_year ? 'built-up or bare share, median of the last 12 months (' + sm.built_last_year_median + '%) against the first 12 (' + sm.built_first_year_median + '%)' : 'not enough clear months for a year-on-year figure yet']);
     cells.push([sm.new_built_since_baseline_last_year_median != null ? sm.new_built_since_baseline_last_year_median + '%' : 'n/a', 'of the area newly built-up or bare since ' + ml(cur.baseline_month) + ' (median of the last 12 months)']);
     cells.push([ok.length + ' of ' + cur.months.length, 'months clear enough to measure (' + cloudy + ' too cloudy)']);
+    cells.push([String(sm.scenes_read || 0), 'cloud-masked Sentinel-2 scenes read for this area']);
     $('opstats').innerHTML = cells.map(function(c, i){ return '<div' + (i ? '' : ' class="hi"') + '><b>' + esc(c[0]) + '</b><span>' + esc(c[1]) + '</span></div>'; }).join('');
     $('optl').hidden = !cur.timelapse;
     if (cur.timelapse) { $('optlimg').src = '/k/sat/' + encodeURIComponent(cur.id) + '/opt/timelapse.webp?u=' + encodeURIComponent(D.updated); $('optlimg').alt = 'Timelapse of ' + cur.label + ', ' + fr.length + ' clear months from ' + ml(fr[0] && fr[0].month) + ' to ' + ml(fr[fr.length - 1] && fr[fr.length - 1].month); }
