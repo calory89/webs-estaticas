@@ -462,7 +462,21 @@ function parseJson(t) {
   try { return JSON.parse(m[0]); } catch (e) {}
   // light repair: smart quotes, trailing commas, raw newlines inside strings
   const r = m[0].replace(/[\u201c\u201d]/g, '\\"').replace(/,\s*([}\]])/g, '$1').replace(/\n(?=[^"]*"\s*[,}\]])/g, ' ');
-  return JSON.parse(r);
+  try { return JSON.parse(r); } catch (e) {}
+  // last repair: a straight double quote inside a string (models copy quotes from pages) is escaped unless it plausibly ends the string
+  let out = '', inStr = false;
+  for (let i = 0; i < r.length; i++) {
+    const c = r[i];
+    if (inStr && c === '\\') { out += c + (r[i + 1] || ''); i++; continue; }
+    if (c === '"') {
+      if (!inStr) { inStr = true; out += c; continue; }
+      const nx = (r.slice(i + 1).match(/^\s*(\S)/) || [])[1];
+      if (!nx || /[,}\]:]/.test(nx)) { inStr = false; out += c; } else out += '\\"';
+      continue;
+    }
+    out += inStr && c === '\n' ? ' ' : c;
+  }
+  return JSON.parse(out);
 }
 async function claudeVision(env, content, maxTokens) {
   let last = '';
