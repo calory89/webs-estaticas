@@ -295,8 +295,11 @@
   function netReport() {
     var el = $('ccNet'); if (!el || !window.performance || !performance.getEntriesByType) return;
     var after = performance.getEntriesByType('resource').filter(function (e) { return e.startTime >= MARK; }).map(function (e) { try { return new URL(e.name); } catch (x) { return null; } }).filter(Boolean);
-    var paths = uniq(after.map(function (u) { return u.origin === location.origin ? u.pathname : u.host; }));
-    el.innerHTML = '<b>Network since you chose the file:</b> ' + (paths.length ? paths.map(esc).join(', ') + '. These are our own code and law files, downloaded, never sent.' : 'no requests from this page.') + (ENGINE ? ' The AI model files come from huggingface.co and raw.githubusercontent.com, read from your browser cache once stored.' : '');
+    var own = uniq(after.filter(function (u) { return u.origin === location.origin; }).map(function (u) { return u.pathname; }));
+    var other = uniq(after.filter(function (u) { return u.origin !== location.origin; }).map(function (u) { return u.host; }));
+    el.innerHTML = '<b>Network since you chose the file:</b> ' + (own.length ? 'from kolaboro.com, downloads of ' + own.map(esc).join(', ') + '. ' : 'nothing from kolaboro.com. ') +
+      (other.length ? 'Other hosts: ' + other.map(esc).join(', ') + ' (site analytics, with this tool masked). ' : '') + 'Your contract and the results are not in any request.' +
+      (ENGINE ? ' The AI model files come from huggingface.co and raw.githubusercontent.com, read from your browser cache once stored.' : '');
   }
 
   /* ---------- flows ---------- */
