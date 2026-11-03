@@ -1,6 +1,21 @@
 {
  "deploys": [
   {
+   "at": "2026-11-03T21:39:58Z",
+   "commit": "1484ffb3634a965ffe5064ba5269e9786e5c82e4",
+   "checks_passed": 32,
+   "checks_total": 32,
+   "failed": [],
+   "run": "https://github.com/calory89/webs-estaticas/actions/runs/41721925377",
+   "result": "pass",
+   "wait_s": 143,
+   "changes": [
+    "58360b57f403",
+    "f6d410f24a66",
+    "9468da1e9027"
+   ]
+  },
+  {
    "at": "2026-11-03T21:35:47Z",
    "commit": "58360b57f40368aa8ff46f475acb468b12b2a4e6",
    "result": "not_deployed",
@@ -321,13 +336,13 @@
  "canary": "Cloudflare Pages sends each push to all visitors at once and offers no percentage canary, so none is claimed. A bad push can be visible for a few minutes until the rollback is live.",
  "rollback_mode": "Rollback: a git commit restoring the files changed since the last passing commit; Pages deploys it in about 1 to 2 minutes. An instant Cloudflare API rollback is built in but needs a Pages-scoped token, not configured yet.",
  "latest_checks": {
-  "at": "2026-11-03T21:21:06.166Z",
-  "commit": "e9eca2770125f00ec25620882844d7b69fa37fce",
+  "at": "2026-11-03T21:39:58.645Z",
+  "commit": "1484ffb3634a965ffe5064ba5269e9786e5c82e4",
   "checks": [
    {
     "name": "build: live commit",
     "ok": true,
-    "detail": "live e9eca2770125"
+    "detail": "live 1484ffb3634a"
    },
    {
     "name": "page /",
@@ -337,7 +352,7 @@
    {
     "name": "page /check/",
     "ok": true,
-    "detail": "200, 61340 bytes"
+    "detail": "200, 61775 bytes"
    },
    {
     "name": "page /database/",
@@ -472,7 +487,7 @@
    {
     "name": "browser 390px /p/BALI-021",
     "ok": true,
-    "detail": "200, no JS errors"
+    "detail": "200, no JS errors, third-party error ignored: Cannot read properties of null (reading 'sequence')"
    },
    {
     "name": "browser 390px /trust/",
@@ -486,7 +501,7 @@
    }
   ]
  },
- "last_checked": "e9eca2770125f00ec25620882844d7b69fa37fce",
- "last_good": "e9eca2770125f00ec25620882844d7b69fa37fce",
- "updated": "2026-11-03T21:35:47Z"
+ "last_checked": "1484ffb3634a965ffe5064ba5269e9786e5c82e4",
+ "last_good": "1484ffb3634a965ffe5064ba5269e9786e5c82e4",
+ "updated": "2026-11-03T21:39:58Z"
 }
