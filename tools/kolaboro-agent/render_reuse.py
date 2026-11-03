@@ -7,12 +7,18 @@ which survives crops, recolours and light edits but rejects merely similar skies
 domain, from the same developer, or that look like the same project listed under two ids are excluded, as are 'hub' images
 whose near-duplicates appear on many unrelated sites (stock/template art). Every pair carries both image URLs, pages and scores.
 
+It also writes image-hashes.json next to OUT.json: one kdh1 perceptual hash (see kdhash.py) per kept image, with the public
+case id (as in bali-cases.json) and the image URL, so kolaboro.com/tools/image-check/ can compare a buyer's image in the browser.
+
 Usage: render_reuse.py OUT.json
 """
-import json, re, os, sys, io, time, hashlib, datetime, tempfile, urllib.request, urllib.parse, concurrent.futures as cf
+import json, re, os, sys, io, time, hashlib, datetime, tempfile, threading, urllib.request, urllib.parse, concurrent.futures as cf
 import numpy as np
 from PIL import Image
 import imagehash
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from kdhash import kdh_bytes
+KDH_SLOTS = threading.Semaphore(6)   # full-resolution decodes for kdh1: cap concurrent memory use
 
 THRESHOLD = 0.85          # CLIP cosine similarity (candidates; the geometric check below confirms the same picture)
 MIN_INLIERS = 30          # ORB/RANSAC inliers needed to confirm the same picture
@@ -193,7 +199,12 @@ def fetch(job):
             return None
         path = os.path.join(TMP, '%d.jpg' % k)
         small.save(path, quality=90)
-        return {'k': k, 'i': i, 'u': u, 'page': page, 'w': w, 'h': h, 'path': path,
+        try:
+            with KDH_SLOTS:
+                kd = kdh_bytes(b)
+        except Exception:
+            kd = None
+        return {'k': k, 'i': i, 'u': u, 'page': page, 'w': w, 'h': h, 'path': path, 'kdh': kd,
                 'dh': imagehash.dhash(im), 'sha': hashlib.sha256(b).hexdigest()}
     except Exception:
         return None
@@ -262,6 +273,53 @@ chrome_dropped = n0 - len(recs)
 print('images kept', len(recs), 'site-chrome images dropped', chrome_dropped, len(recs), 'budget hit', budget_hit, 't=%.0fs' % (time.time() - T0), flush=True)
 if len(recs) < 200:
     raise SystemExit('too few images (%d): keeping the old file' % len(recs))
+
+
+def public_ids():
+    """Public case ids exactly as agent.py public_cases() assigns them, checked against the published bali-cases.json."""
+    try:
+        from agent import PREFIX
+    except Exception as e:
+        print('image-hashes: agent.PREFIX unavailable', e); return {}
+    ids, n = {}, {}
+    for i in sorted(range(len(projs)), key=lambda i: projs[i].get('market', 'Bali') != 'Bali'):
+        mk = projs[i].get('market', 'Bali'); n[mk] = n.get(mk, 0) + 1
+        ids[i] = '%s-%03d' % (PREFIX.get(mk, mk[:3].upper()), n[mk])
+    path = os.environ.get('CASES_JSON')
+    if not path or not os.path.exists(path):
+        print('image-hashes: no published cases file to check ids against'); return {}
+    pub = {c['id']: c for c in json.load(open(path))['cases']}
+    ok = {i: v for i, v in ids.items() if v in pub and pub[v].get('country') == projs[i].get('country', 'Indonesia')
+          and pub[v].get('market') == projs[i].get('market', 'Bali')}
+    print('image-hashes: ids matching the published cases', len(ok), 'of', len(ids), flush=True)
+    return ok if len(ok) >= 0.95 * len(ids) else {}
+
+
+try:
+    PUB = public_ids()
+    items, seen_ih = [], set()
+    for r in sorted(recs, key=lambda r: (PUB.get(r['i'], 'ZZZ'), r['u'])):
+        pid = PUB.get(r['i'])
+        if not pid or not r.get('kdh') or (pid, r['kdh'][0]) in seen_ih:
+            continue
+        seen_ih.add((pid, r['kdh'][0]))
+        items.append([pid, r['u'], r['kdh'][0], r['kdh'][1]])
+    if len(items) >= 200:
+        ih = {'generated': datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'), 'algo': 'kdh1',
+              'fields': ['case_id', 'image_url', 'kdh1_full', 'kdh1_center70'], 'images': len(items),
+              'cases': len({x[0] for x in items}),
+              'method': ('Images kept by the weekly render-reuse run (project pages, at least %d px, logos, flat graphics and '
+                         'site chrome dropped, at most %d per project). kdh1 is a 64-bit difference hash: full-resolution decode, '
+                         'integer luma composited over white, 9x8 grid of exact cell means, bit = cell darker than its right '
+                         'neighbour. The same function runs in the browser (tools/image-check/kdh.js).' % (MIN_SIDE, PER_PROJECT)),
+              'items': items}
+        json.dump(ih, open(os.path.join(os.path.dirname(os.path.abspath(sys.argv[1])), 'image-hashes.json'), 'w'),
+                  ensure_ascii=False, separators=(',', ':'))
+        print('image-hashes: wrote', len(items), 'images of', ih['cases'], 'cases', flush=True)
+    else:
+        print('image-hashes: too few hashed images (%d): not written' % len(items), flush=True)
+except Exception as e:   # the hash index must never break the render-reuse run
+    print('image-hashes failed:', repr(e), flush=True)
 
 # embed what is left (files not yet embedded); stop at the deadline
 queue = []
