@@ -42,7 +42,7 @@
     $('ds-grid').innerHTML = (d.metrics || []).map(function (m) {
       var has = m.value != null;
       var unit = has && m.unit && m.unit !== '%' && m.unit !== 'USD' ? '<small>' + esc(m.unit) + '</small>' : '';
-      return '<div class="ds-m' + (has ? '' : ' ds-none') + '"><b>' + (has ? esc(num(m.value, m.unit)) + unit : 'Not measured yet') + '</b><h3>' + esc(m.label) + '</h3>' +
+      return '<div class="ds-m' + (has ? '' : ' ds-none') + '"><b' + (has && /^[a-z0-9_]+$/.test(m.id) ? ' data-prov="dossier.' + m.id + '"' : '') + '>' + (has ? esc(num(m.value, m.unit)) + unit : 'Not measured yet') + '</b><h3>' + esc(m.label) + '</h3>' +
         (m.note ? '<p>' + esc(m.note) + '</p>' : '') + '<p class="ds-src">Source: ' + src(m.source) + (m.as_of ? ', as of ' + esc(when(m.as_of)) : '') + '</p></div>';
     }).join('');
     $('ds-series').innerHTML = (d.series || []).map(function (s) {
