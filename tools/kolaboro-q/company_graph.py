@@ -76,7 +76,7 @@ def legal_names(dev):
     return list(dict.fromkeys(out))
 
 STATUS = [('liquidation', 'insolvency'), ('administration', 'insolvency'), ('receiver', 'insolvency'), ('voluntary arrangement', 'insolvency'),
-          ('proposal to strike off', 'strike-off proposed'), ('dissolved', 'dissolved'), ('converted', 'closed'), ('closed', 'closed'), ('active', 'active')]
+          ('proposal to strike off', 'strike-off proposed'), ('dissolved', 'dissolved'), ('converted', 'closed'), ('registered', 'overseas entity'), ('closed', 'closed'), ('active', 'active')]
 def status_cat(s):
     s = (s or '').lower()
     for k, v in STATUS:
@@ -234,10 +234,12 @@ for p in sorted(uk, key=lambda x: IDS[x['slug']]):
         S.append('%d named compan%s could not be matched to exactly one UK company: %s.' % (len(names), 'y' if len(names) == 1 else 'ies', '; '.join(sorted(set(rec['unresolved_reasons']))) or 'not checked'))
     else:
         S.append('%d of %d named compan%s matched exactly one company on Companies House.' % (rec['resolved'], len(names), 'y' if len(names) == 1 else 'ies'))
-        for z in named_bad: S.append('A named project company is listed as %s on the register.' % z['status'])
+        for z in named_bad:
+            if z['status'] == 'overseas entity': S.append('A named project company is a foreign company on the UK Register of Overseas Entities; its officers are not listed as directors there, so it adds no one to the graph.')
+            else: S.append('A named project company is listed as %s on the register.' % z['status'])
         if dirs:
-            S.append('Its %d current director%s %s been directors (now or in the past) of %d other UK compan%s: %d active, %d dissolved (%d of them within 2 years of incorporation), %d in liquidation, administration or receivership.' % (
-                len(dirs), '' if len(dirs) == 1 else 's', 'has' if len(dirs) == 1 else 'have', len(net), 'y' if len(net) == 1 else 'ies', cnt['active'], cnt['dissolved'], cnt['dissolved_within_2y'], cnt['insolvency']))
+            S.append('%s %d current director%s %s been %s (now or in the past) of %d other UK compan%s: %d active, %d dissolved (%d of them within 2 years of incorporation), %d in liquidation, administration or receivership.' % (
+                'Its' if rec['resolved'] == 1 else 'Their', len(dirs), '' if len(dirs) == 1 else 's', 'has' if len(dirs) == 1 else 'have', 'a director' if len(dirs) == 1 else 'directors', len(net), 'y' if len(net) == 1 else 'ies', cnt['active'], cnt['dissolved'], cnt['dissolved_within_2y'], cnt['insolvency']))
             worst = None
             for d in [z for z in rec['nodes'] if z['type'] == 'director']:
                 short = sum(1 for x in net.values() if d['id'] in x['dirs'] and x['cat'] == 'dissolved' and x.get('life') is not None and x['life'] <= 730)
@@ -247,7 +249,7 @@ for p in sorted(uk, key=lambda x: IDS[x['slug']]):
             if worst:
                 parts = []
                 if worst[1]: parts.append('%d compan%s dissolved within 2 years of incorporation' % (worst[1], 'y' if worst[1] == 1 else 'ies'))
-                if worst[2]: parts.append('%d in an insolvency procedure' % worst[2])
+                if worst[2]: parts.append('%d compan%s in liquidation, administration or receivership' % (worst[2], 'y' if worst[2] == 1 else 'ies'))
                 S.append('%s of the developing company has been a director of %s.' % (worst[0], ' and '.join(parts)))
             if any(z.get('truncated') for z in rec['nodes'] if z['type'] == 'director'):
                 S.append('At least one director holds more than %d appointments; only the first %d per director were read.' % (APPT_PAGES * 35, APPT_PAGES * 35))
