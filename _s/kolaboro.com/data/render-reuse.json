@@ -1,10 +1,10 @@
 {
- "generated": "2026-11-03T11:35:33Z",
+ "generated": "2026-11-03T11:54:18Z",
  "model": "open_clip ViT-B-32 laion2b_s34b_b79k (open_clip_torch 2.29.0, torch 2.5.1+cpu, CPU)",
  "threshold": 0.85,
  "min_orb_inliers": 30,
- "images_checked": 8203,
- "projects_checked": 794,
+ "images_checked": 8195,
+ "projects_checked": 797,
  "projects_tracked": 891,
  "limits": {
   "images_per_project": 16,
@@ -15,80 +15,80 @@
   "embedding_budget_hit": false,
   "max_pairs": 200
  },
- "site_chrome_images_dropped": 591,
- "candidates_over_threshold": 3523,
+ "site_chrome_images_dropped": 610,
+ "candidates_over_threshold": 3622,
  "excluded": {
-  "same_domain": 754,
-  "same_developer": 98,
+  "same_domain": 771,
+  "same_developer": 108,
   "same_project_name": 0,
-  "page_names_other_project": 35,
-  "portal_image_not_attributable": 1054,
+  "page_names_other_project": 30,
+  "portal_image_not_attributable": 1328,
   "hub_image": 0,
-  "geometry_failed": 1580
+  "geometry_failed": 1383
  },
  "hub_images": 0,
  "same_picture_but_excluded": {
   "same_developer": 5,
-  "portal_image_not_attributable": 6,
-  "page_names_other_project": 2
+  "portal_image_not_attributable": 7,
+  "page_names_other_project": 1
  },
  "listing_portals": 70,
  "pair_count": 2,
  "pairs": [
   {
    "a": {
-    "project_id": "xelf-by-sansiri",
-    "project_name": "XELF by Sansiri",
-    "developer": "Sansiri PCL (SET: SIRI); project owner Jirapas Realty Co., Ltd.",
-    "market": "Bangkok",
-    "area": "Rama IV Road, Khlong Tan, Khlong Toei",
-    "image_url": "https://www.sansiri.com/media/enxbtrsm/xelf-condo-cover-banner-mobile-1080x1080.webp?width=1080&amp;upscale=false&amp;quality=75",
-    "page_url": "https://www.sansiri.com/condominium/xelf-by-sansiri/en/",
-    "width": 1080,
-    "height": 1080
+    "project_id": "island-heights-al-marjan",
+    "project_name": "Island Heights",
+    "developer": "Range Developments",
+    "market": "Ras Al Khaimah",
+    "area": "Al Marjan Island, Ras Al Khaimah",
+    "image_url": "https://new-projects-media.propertyfinder.com/project/a71b3ea4-7ba4-4ebb-9c48-f7626a50890c/master_plan/image/XkiCM-WRB59Hdb_lm8HRhP0Ew7ouuqDPTC0iZMVs68E=/original.webp",
+    "page_url": "https://propertyfinder.ae/en/new-projects/range-developments/island-heights",
+    "width": 2862,
+    "height": 1582
    },
    "b": {
-    "project_id": "mavista-phrom-phong-major-development",
-    "project_name": "MAVISTA Phrom Phong",
-    "developer": "Major Development PCL",
-    "market": "Bangkok",
-    "area": "Sukhumvit Soi 39, Khlong Tan Nuea, Watthana",
-    "image_url": "https://www.terrabkk.com/images/project/0000036864/07c57555b9d609fe80e0cbe3027aa139.jpg",
-    "page_url": "https://www.terrabkk.com/en/projects/show/36778",
-    "width": 730,
-    "height": 487
+    "project_id": "wyndham-residences-al-marjan",
+    "project_name": "Wyndham Residences Al Marjan Island",
+    "developer": "Divine One Group (with Wyndham Hotels & Resorts)",
+    "market": "Ras Al Khaimah",
+    "area": "Al Marjan Island, Ras Al Khaimah",
+    "image_url": "https://divineone.ae/wp-content/uploads/2025/11/map-1.webp",
+    "page_url": "https://divineone.ae/our-projects/wyndham-residences/",
+    "width": 2000,
+    "height": 1246
    },
-   "cosine": 0.9721,
-   "dhash_distance": 23,
-   "orb_inliers": 404,
+   "cosine": 0.8859,
+   "dhash_distance": 25,
+   "orb_inliers": 336,
    "identical_file": false
   },
   {
    "a": {
-    "project_id": "mavista-phrom-phong-major-development",
-    "project_name": "MAVISTA Phrom Phong",
-    "developer": "Major Development PCL",
-    "market": "Bangkok",
-    "area": "Sukhumvit Soi 39, Khlong Tan Nuea, Watthana",
-    "image_url": "https://www.terrabkk.com/images/project/0000036864/07c57555b9d609fe80e0cbe3027aa139.jpg",
-    "page_url": "https://www.terrabkk.com/en/projects/show/36778",
-    "width": 730,
-    "height": 487
+    "project_id": "wyndham-residences-al-marjan",
+    "project_name": "Wyndham Residences Al Marjan Island",
+    "developer": "Divine One Group (with Wyndham Hotels & Resorts)",
+    "market": "Ras Al Khaimah",
+    "area": "Al Marjan Island, Ras Al Khaimah",
+    "image_url": "https://divineone.ae/wp-content/uploads/2025/11/map-1.webp",
+    "page_url": "https://divineone.ae/our-projects/wyndham-residences/",
+    "width": 2000,
+    "height": 1246
    },
    "b": {
-    "project_id": "xelf-by-sansiri",
-    "project_name": "XELF by Sansiri",
-    "developer": "Sansiri PCL (SET: SIRI); project owner Jirapas Realty Co., Ltd.",
-    "market": "Bangkok",
-    "area": "Rama IV Road, Khlong Tan, Khlong Toei",
-    "image_url": "https://s3.ap-southeast-1.amazonaws.com/o77site/webproject-source/condominium/xelf-by-sansiri/img/factsheet/xelf-condo-factsheet-en.webp",
-    "page_url": "https://www.sansiri.com/condominium/xelf-by-sansiri/en/",
-    "width": 800,
-    "height": 1200
+    "project_id": "oystra-richmind",
+    "project_name": "Oystra",
+    "developer": "Richmind (Richmind Development FZ-LLC, part of Richmind Holding)",
+    "market": "Ras Al Khaimah",
+    "area": "Al Marjan Island",
+    "image_url": "https://new-projects-media.propertyfinder.com/project/b2b5af4e-1871-466d-a145-d2312f4f5dcb/master_plan/image/uWG9Bb4t5MoFidrQJnWGTm3Qua2mlCg8ltszbBa-pmg=/original.webp",
+    "page_url": "https://www.propertyfinder.ae/en/new-projects/richmind/oystra",
+    "width": 866,
+    "height": 1566
    },
-   "cosine": 0.9249,
+   "cosine": 0.862,
    "dhash_distance": 28,
-   "orb_inliers": 368,
+   "orb_inliers": 95,
    "identical_file": false
   }
  ],
