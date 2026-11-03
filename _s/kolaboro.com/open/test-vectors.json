@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-02",
+ "generated": "2026-11-03",
  "note": "Real records from kolaboro.com. Every check in kolaboro-verify.js must return true for these and false if any character changes.",
  "proof": {
   "project": "BALI-014",
@@ -72,7 +72,10 @@
  ],
  "expected": {
   "verifyProof": true,
-  "verifyLog": true
+  "verifyLog": true,
+  "verifyCheckpoint": true,
+  "verifyInclusion": true,
+  "verifyConsistency": true
  },
  "signature": {
   "url": "/api/open/receipt/27",
@@ -81,5 +84,33 @@
   "key_id": "kb-f2e04da5878f8c51",
   "public_key_raw_b64": "rnY6UvDI+L6e8j3a+UPwmddQJFapkfmEXWwHuXzdmzw=",
   "expected": true
+ },
+ "checkpoint": {
+  "note": "kolaboro.com/log\n2\njVdES7Sra00aolbx3XG8SsTDC/riuYpw0FmHFqS8nTI=\nday 2026-11-03\n\n— kolaboro.com/log 5bUOoq54JyVvOGgyJOeUwgO7zkVI6DFsj8PmKtkMJX91LT7MmwKO0uHOpwTNeLI2/YXy6KPGSVSH0FnuvqSFeUpEywo=\n",
+  "public_key_raw_b64": "rnY6UvDI+L6e8j3a+UPwmddQJFapkfmEXWwHuXzdmzw="
+ },
+ "log_inclusion": {
+  "tree_size": 2,
+  "root_hash": "8d57444bb4ab6b4d1aa256f1dd71bc4ac4c30bfae2b98a70d0598716a4bc9d32",
+  "leaf_index": 0,
+  "leaf": "2026-11-02 c49eb556dbecd8e0a641a1b264135476fe3944689000711ae7c1d2586b99e73a",
+  "path": [
+   {
+    "side": "R",
+    "hash": "9228ae3f84621c9725aecad7596f1c8732946f654e117acb7575ae0e325c539d"
+   }
+  ],
+  "leaf_hash": "SHA-256(0x00 || leaf)",
+  "node_hash": "SHA-256(0x01 || left || right)"
+ },
+ "log_consistency": {
+  "first": 1,
+  "second": 2,
+  "first_root": "8b810b13b66beb380dca42fbb7532e4ae200e2981caeecfe5d91e085650ccf50",
+  "second_root": "8d57444bb4ab6b4d1aa256f1dd71bc4ac4c30bfae2b98a70d0598716a4bc9d32",
+  "proof": [
+   "9228ae3f84621c9725aecad7596f1c8732946f654e117acb7575ae0e325c539d"
+  ],
+  "algorithm": "RFC 9162 section 2.1.4"
  }
 }
