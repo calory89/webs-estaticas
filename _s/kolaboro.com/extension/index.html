@@ -251,6 +251,6 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   window.addEventListener('scroll', function(){ b.classList.toggle('on', window.scrollY > window.innerHeight * 1.5); }, { passive: true });
 })();
 </script>
-<script>fetch('/api/x/j/match/meta').then(function(r){return r.json();}).then(function(m){var a=document.querySelector('[data-ov="url"]'),b=document.querySelector('[data-ov="name"]'),t=document.getElementById('ov-stats');if(a&&m.by_address!=null){a.textContent=m.by_address;b.textContent=m.by_name;t.lastChild.textContent=', of '+m.projects+' tracked (lookup table built '+m.built+').';}}).catch(function(){});</script>
+<script>fetch('/api/x/j/match/meta').then(function(r){return r.json();}).then(function(m){var a=document.querySelector('[data-ov="url"]'),b=document.querySelector('[data-ov="name"]'),t=document.getElementById('ov-stats');if(a&&m.by_address!=null){a.textContent=m.by_address;b.textContent=m.by_name;t.lastChild.textContent=' by project name, of '+m.projects+' tracked (lookup table built '+m.built+').';}}).catch(function(){});</script>
 </body>
 </html>
