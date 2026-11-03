@@ -78,8 +78,8 @@ async function trust(env) {
   const [restore, scan, verifiers, deploys, uptime, evals, honey, heads, cpR, sec, admin, httpR, homeR, sigOk, sri, L, buildR] = await Promise.all([
     assetJson(env, '/data/restore.json'), assetJson(env, '/data/security-scan.json'), assetJson(env, '/data/verifiers.json'), assetJson(env, '/data/deploys.json'),
     tryRpc('kolaboro_uptime_public'), tryRpc('kolaboro_evals_public'), tryRpc('kolaboro_honey_public'), logHeads().catch(() => null),
-    self('/api/open/checkpoint'), self('/.well-known/security.txt'), self('/admin/', { redirect: 'manual' }), fetch('http://kolaboro.com/', { redirect: 'manual' }).catch(() => null),
-    self('/', { redirect: 'manual' }), verifyOpenAnswer('/api/open/stats'), sriScan(env), openLoad().catch(() => null), Promise.resolve(env && env.CF_PAGES_COMMIT_SHA)
+    self('/api/open/checkpoint'), self('/.well-known/security.txt'), self('/admin/', { redirect: 'manual' }), null,
+    null, verifyOpenAnswer('/api/open/stats'), sriScan(env), openLoad().catch(() => null), Promise.resolve(env && env.CF_PAGES_COMMIT_SHA)
   ]);
   const C = [];
 
@@ -97,14 +97,12 @@ async function trust(env) {
       detail: uptime ? uptime.uptime_7d + '% up over 7 days (' + (uptime.by_vantage ? Object.entries(uptime.by_vantage).map(([k, v]) => v.probes_7d + ' probes from ' + k).join(', ') : '') + '), p95 ' + uptime.p95_ms_7d + ' ms, ' + (uptime.incidents || []).length + ' incidents. Measured since ' + String(uptime.since).slice(0, 10) + '.' : 'Uptime record not readable right now.',
       how: 'Probes every 5 minutes from our database server and every hour from GitHub runners (OIDC-authenticated). Evidence time has day resolution.', evidence: ['/api/open/uptime', '/status'] })); }
 
-  // 3. Encryption in transit
-  { const hsts = homeR && homeR.headers.get('strict-transport-security'), loc = httpR && httpR.headers.get('location');
-    const redir = httpR ? (httpR.status >= 300 && httpR.status < 400 && /^https:\/\//.test(loc || '')) : null;
-    const maxAge = hsts ? +((hsts.match(/max-age=(\d+)/) || [])[1] || 0) : 0;
-    C.push(control({ id: 'tls', name: 'Encryption in transit', tsc: ['CC6.7'], max_age_h: 1,
-      status: homeR ? (maxAge >= 15552000 && redir !== false ? 'pass' : 'warn') : 'unknown', evidence_at: now,
-      detail: 'HTTPS only. HSTS header: ' + (hsts ? '"' + hsts + '" (' + Math.round(maxAge / 86400) + ' days)' : 'missing') + '. Plain HTTP request: ' + (redir === true ? 'redirected to HTTPS (' + httpR.status + ')' : redir === false ? 'answered with ' + httpR.status + ' (not redirected)' : 'could not be tested from inside the edge') + '.',
-      how: 'Checked on this request: the home page response headers and a plain HTTP request.', evidence: ['https://www.ssllabs.com/ssltest/analyze.html?d=kolaboro.com', 'https://hstspreload.org/?domain=kolaboro.com'] })); }
+  // 3. Encryption in transit: measured from outside Cloudflare by the deploy guard (a request from inside the edge skips the edge's own HTTPS redirect)
+  { const lc = deploys && deploys.latest_checks, t = lc ? (lc.checks || []).filter(c => /^tls:/.test(c.name)) : [];
+    C.push(control({ id: 'tls', name: 'Encryption in transit', tsc: ['CC6.7'], max_age_h: 7 * 24,
+      status: !t.length ? 'unknown' : t.every(c => c.ok) ? 'pass' : 'warn', evidence_at: t.length ? lc.at : null,
+      detail: t.length ? t.map(c => c.name.replace(/^tls: /, '') + ': ' + (c.ok ? 'yes' : 'NO') + ' (' + c.detail + ')').join('. ') + '.' : 'Measured from outside by the deploy guard; no measurement recorded yet.',
+      how: 'Checked from a GitHub runner, outside Cloudflare, each time the deploy guard runs: a plain HTTP request must be redirected to HTTPS and the HSTS header must last at least 180 days.', evidence: ['/data/deploys.json', 'https://www.ssllabs.com/ssltest/analyze.html?d=kolaboro.com'] })); }
 
   // 4. Signed data
   { const v3 = verifiers && verifiers.ok && verifiers.three_languages_agree;
@@ -239,15 +237,14 @@ async function dossier(env) {
       covered && r7 ? 'All AI spend in the last 7 days divided by reviews in the same 7 days; includes evaluation runs, so the true cost per review is lower.' : 'Not measured yet: spend is recorded since ' + ((days[0] || {}).day || 'recently') + ' and needs a full 7 days to match the 7-day review count.');
     S.push({ id: 'ai_spend_daily', label: 'AI spend per day (USD)', source: '/api/open/ai-spend', points: days.map(x => ({ d: x.day, v: +x.usd_estimated, n: x.calls })) });
   }
-  { const per = changelogDays(clog), keys = Object.keys(per).sort(), since7 = new Date(Date.now() - 7 * 864e5).toISOString().slice(0, 10);
-    const w = keys.filter(k => k > since7).reduce((a, k) => a + per[k], 0), first = keys[0];
-    const fullWeek = first && first <= since7;
-    add('ships_week', 'Changes shipped, last 7 days', keys.length ? w : null, 'changes', '/changelog', keys[keys.length - 1], keys.length ? 'Entries in the dated changelog since ' + (fullWeek ? since7 : first) + (fullWeek ? '' : ' (launch; less than a full week of history)') + '. Data-only refreshes by the research agents are not counted.' : 'changelog not readable right now');
+  { const per = changelogDays(clog), keys = Object.keys(per).sort(), start = new Date(Date.now() - 6 * 864e5).toISOString().slice(0, 10);
+    const w = keys.filter(k => k >= start).reduce((a, k) => a + per[k], 0), first = keys[0], fullWeek = first && first <= start;
+    add('ships_week', 'Changes shipped, last 7 days', keys.length ? w : null, 'changes', '/changelog', keys[keys.length - 1], keys.length ? 'Entries in the dated changelog from ' + (fullWeek ? start : first + ' (launch; less than a full week of history)') + ' to ' + today + ', ' + keys.length + ' days of history in all. Data-only refreshes by the research agents are not counted.' : 'changelog not readable right now');
     S.push({ id: 'ships_daily', label: 'Changelog entries per day', source: '/changelog', points: keys.map(k => ({ d: k, v: per[k] })) });
     if (d && d.ships) { const a = {}; for (const s of d.ships) a[s.d] = (a[s.d] || 0) + 1; S.push({ id: 'ships_auto', label: 'Automatic shipping-log entries per day', source: '/api/open/summary', points: Object.keys(a).sort().map(k => ({ d: k, v: a[k] })) }); }
   }
   if (deploys && deploys.deploys) add('deploys', 'Guarded deploys recorded', deploys.deploys.length, 'deploys', '/data/deploys.json', (deploys.deploys[0] || {}).at, deploys.deploys.filter(x => x.result === 'rolled_back').length + ' rolled back automatically');
-  else add('deploys', 'Guarded deploys recorded', null, null, '/data/deploys.json', null, 'Not measured yet: the deploy guard starts recording on 3 Nov 2026.');
+  else add('deploys', 'Guarded deploys recorded', null, null, '/data/deploys.json', null, 'Not measured yet: the deploy guard started on 3 Nov 2026 and has not recorded a production deploy.');
   add('revenue', 'Revenue', null, null, null, null, 'Not published here. No revenue figure is shown because none is computed from public data.');
   return { generated_at: now, rules: 'Every number is computed on this request from the listed public source. No projections, no estimates of future traction. A metric we do not measure says so.', metrics: M, series: S };
 }
@@ -257,8 +254,8 @@ export async function handle(req, u, env, ctx) {
   if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: { 'access-control-allow-origin': '*', 'access-control-allow-methods': 'GET', 'access-control-max-age': '86400' } });
   if (req.method !== 'GET' && req.method !== 'HEAD') return out({ error: 'method' }, 0, 405);
   try {
-    if (p === '/api/x/l/trust') return signed(env, await cached('trust-v1', 120, () => trust(env)), 120);
-    if (p === '/api/x/l/dossier') return signed(env, await cached('dossier-v1', 300, () => dossier(env)), 300);
+    if (p === '/api/x/l/trust') return signed(env, await cached('trust-v2', 120, () => trust(env)), 120);
+    if (p === '/api/x/l/dossier') return signed(env, await cached('dossier-v2', 300, () => dossier(env)), 300);
   } catch (e) { return out({ error: 'evidence_unavailable', detail: String(e && e.message || e).slice(0, 200) }, 10, 503); }
   return out({ error: 'not found', routes: ['/api/x/l/trust', '/api/x/l/dossier'] }, 300, 404);
 }

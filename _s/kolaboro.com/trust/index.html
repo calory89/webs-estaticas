@@ -58,7 +58,7 @@
 .tc-prose>p,.tc-prose>ol,.tc-prose>ul,.tc-prose>h2,.tc-prose>h3{max-width:780px}
 .tc-prose p,.tc-prose li{color:var(--ink-2)}
 .tc-prose ol,.tc-prose ul{padding-left:1.2em;display:grid;gap:8px}
-.tc-prose h3{margin-top:28px}
+.tc-prose h2{font-size:clamp(1.5rem,2.8vw,2.2rem);margin-top:6px}.tc-prose h3{margin-top:28px;font-size:1.15rem}.tc-prose>p{margin-top:12px}
 .tc-tw{overflow-x:auto;margin:20px 0 6px;border:1px solid var(--line);border-radius:16px;background:#fff;-webkit-overflow-scrolling:touch}
 .tc-t{width:100%;border-collapse:collapse;font-size:.92rem;min-width:620px}
 .tc-t th,.tc-t td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
@@ -100,7 +100,7 @@
 <p>Our site runs on Cloudflare Pages, which sends each push to production at once. Pages has no percentage canary: we cannot send 5% of visitors to the new version first. So we do not claim one. What we do instead:</p>
 <ol>
 <li><b>Bundle check before the push.</b> Our rule is that worker code is bundled locally before every push, so code that does not build never ships. This is a working rule, not yet enforced by a machine.</li>
-<li><b>Guard after the push.</b> GitHub Actions waits until <a href="/api/open/build">/api/open/build</a> reports the new commit, then runs the <a href="/open/deploy-smoke.mjs">public smoke checks</a>: key pages answer 200, the API answers with the right shape, a signed answer verifies against our published key, and a real Chromium loads key pages at 1440 and 390 px with no JavaScript errors and no sideways scrolling.</li>
+<li><b>Guard after the push.</b> GitHub Actions waits until <a href="/api/open/build">/api/open/build</a> reports the new commit, then runs the <a href="/open/deploy-smoke.mjs">public smoke checks</a>: key pages answer 200, the API answers with the right shape, a signed answer verifies against our published key, and a real Chromium loads key pages at 1440 and 390 px with no JavaScript errors from our own code, and plain HTTP must redirect to HTTPS with a long HSTS header. Sideways scrolling is reported but does not trigger a rollback.</li>
 <li><b>Automatic rollback.</b> If the checks fail twice, 90 seconds apart, the guard restores the files changed since the last commit that passed and pushes that as a new commit. Nothing is force-pushed and history is kept. It then waits for the rollback to go live and checks again.</li>
 <li><b>Public record.</b> Every guarded deploy, failure and rollback drill is written to <a href="/data/deploys.json">/data/deploys.json</a>.</li>
 </ol>

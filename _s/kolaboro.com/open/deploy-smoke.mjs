@@ -40,6 +40,16 @@ await check('api /api/kb/health', async () => { const d = await (await get('/api
 await check('api /api/open/checkpoint', async () => { const t = await (await get('/api/open/checkpoint')).text(); return { ok: /^kolaboro\.com\/log\n\d+\n[A-Za-z0-9+/=]{44}\n/.test(t) && t.includes('\n\u2014 kolaboro.com/log '), detail: 'tree size ' + t.split('\n')[1] }; });
 await check('api /api/x/l/trust', async () => { const d = await (await get('/api/x/l/trust')).json(); return { ok: Array.isArray(d.controls) && d.controls.length >= 10, detail: d.summary ? JSON.stringify(d.summary) : 'no summary' }; });
 
+// 3b. encryption in transit, measured from outside Cloudflare
+await check('tls: plain http redirects to https', async () => {
+  const r = await fetch(BASE.replace(/^https:/, 'http:') + '/', { headers: UA, redirect: 'manual' }), loc = r.headers.get('location') || '';
+  return { ok: r.status >= 300 && r.status < 400 && /^https:\/\//.test(loc), detail: r.status + ' to ' + loc.slice(0, 60) };
+});
+await check('tls: HSTS at least 180 days', async () => {
+  const r = await get('/'), h = r.headers.get('strict-transport-security') || '', a = +((h.match(/max-age=(\d+)/) || [])[1] || 0);
+  return { ok: a >= 15552000, detail: h || 'missing' };
+});
+
 // 4. a signed answer verifies against the published key
 await check('signature on /api/open/stats', async () => {
   const [r, kr] = await Promise.all([get('/api/open/stats'), get('/.well-known/kolaboro-keys.json')]);
@@ -59,11 +69,14 @@ if (BROWSER) {
     const b = await pw.chromium.launch();
     for (const [w, h] of [[1440, 900], [390, 844]]) for (const p of ['/', '/check/', '/p/BALI-021', '/trust/', '/investors/dossier/']) await check('browser ' + w + 'px ' + p, async () => {
       const pg = await b.newPage({ viewport: { width: w, height: h }, userAgent: UA['user-agent'] + ' Chrome' }), errs = [];
-      pg.on('pageerror', e => errs.push(String(e.message || e).slice(0, 120)));
+      const host = new URL(BASE).host, other = [];
+      // only errors thrown by our own scripts count; a third-party analytics hiccup must not roll back our code
+      pg.on('pageerror', e => { const st = String(e.stack || ''); (st.includes(host) || !/https?:\/\//.test(st) ? errs : other).push(String(e.message || e).slice(0, 120)); });
       const r = await pg.goto(BASE + p, { waitUntil: 'load', timeout: 45000 }); await pg.waitForTimeout(2500);
       const over = await pg.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
       await pg.close();
-      return { ok: r && r.status() === 200 && !errs.length && over <= 1, detail: (r ? r.status() : 'no response') + (errs.length ? ', JS error: ' + errs.join(' | ') : '') + (over > 1 ? ', overflows by ' + over + 'px' : '') };
+      // sideways overflow is reported but does not fail the deploy (a layout flaw is not worth an automatic rollback)
+      return { ok: !!r && r.status() === 200 && !errs.length, detail: (r ? r.status() : 'no response') + (errs.length ? ', JS error: ' + errs.join(' | ') : ', no JS errors') + (other.length ? ', third-party error ignored: ' + other.join(' | ') : '') + (over > 1 ? ', warning: overflows by ' + over + 'px' : '') };
     });
     await b.close();
   }
