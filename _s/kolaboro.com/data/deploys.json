@@ -1,6 +1,20 @@
 {
  "deploys": [
   {
+   "at": "2026-11-03T22:55:35Z",
+   "commit": "538035087543bd99459503344fb7f94ed61ea025",
+   "checks_passed": 32,
+   "checks_total": 32,
+   "failed": [],
+   "run": "https://github.com/calory89/webs-estaticas/actions/runs/41733994653",
+   "result": "pass",
+   "wait_s": 348,
+   "changes": [
+    "8ed35584a6e6",
+    "385ea6263477"
+   ]
+  },
+  {
    "at": "2026-11-03T22:48:19Z",
    "commit": "c05305959a9da52b239c3a21a71e22f431800bcc",
    "checks_passed": 32,
@@ -414,13 +428,13 @@
  "canary": "Cloudflare Pages sends each push to all visitors at once and offers no percentage canary, so none is claimed. A bad push can be visible for a few minutes until the rollback is live.",
  "rollback_mode": "Rollback: a git commit restoring the files changed since the last passing commit; Pages deploys it in about 1 to 2 minutes. An instant Cloudflare API rollback is built in but needs a Pages-scoped token, not configured yet.",
  "latest_checks": {
-  "at": "2026-11-03T22:48:19.261Z",
-  "commit": "c05305959a9da52b239c3a21a71e22f431800bcc",
+  "at": "2026-11-03T22:55:35.833Z",
+  "commit": "538035087543bd99459503344fb7f94ed61ea025",
   "checks": [
    {
     "name": "build: live commit",
     "ok": true,
-    "detail": "live c05305959a9d"
+    "detail": "live 538035087543"
    },
    {
     "name": "page /",
@@ -510,7 +524,7 @@
    {
     "name": "api /api/x/l/trust",
     "ok": true,
-    "detail": "{\"controls\":13,\"pass\":11,\"warn\":1,\"fail\":1,\"stale\":0,\"unknown\":0}"
+    "detail": "{\"controls\":13,\"pass\":12,\"warn\":1,\"fail\":0,\"stale\":0,\"unknown\":0}"
    },
    {
     "name": "tls: plain http redirects to https",
@@ -579,7 +593,7 @@
    }
   ]
  },
- "last_checked": "c05305959a9da52b239c3a21a71e22f431800bcc",
- "last_good": "c05305959a9da52b239c3a21a71e22f431800bcc",
- "updated": "2026-11-03T22:48:19Z"
+ "last_checked": "538035087543bd99459503344fb7f94ed61ea025",
+ "last_good": "538035087543bd99459503344fb7f94ed61ea025",
+ "updated": "2026-11-03T22:55:35Z"
 }
