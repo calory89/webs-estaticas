@@ -4,16 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Developer right of reply | Kolaboro</title>
-<meta name="description" content="Developers answer any Kolaboro finding with documents, free, before and after anything is published.">
+<meta name="description" content="Developers answer any Kolaboro finding with documents, free: prove the domain with a DNS record, attach fingerprinted documents, and a person reviews it before it is published.">
 
 <link rel="canonical" href="https://kolaboro.com/developers/reply/">
 <link rel="icon" href="/k/favicon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#17212B">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Kolaboro">
-<meta property="og:title" content="The Kolaboro database: off-plan projects worldwide | Kolaboro">
-<meta property="og:description" content="Every off-plan project Kolaboro tracks: what each developer publishes, what an official registry or independent source confirms, and what is contradicted. Updated weekly.">
-<meta property="og:url" content="https://kolaboro.com/database/">
+<meta property="og:title" content="Developer right of reply | Kolaboro">
+<meta property="og:description" content="Developers answer any finding with documents, free. Domain proved by DNS, documents fingerprinted in the browser, reviewed by a person before publication.">
+<meta property="og:url" content="https://kolaboro.com/developers/reply/">
 <meta property="og:image" content="https://kolaboro.com/k/og/pricing.png">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
@@ -44,9 +44,88 @@
 </header>
 <main id="main">
 <section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / <a href="/developers/">Developers</a> / Right of reply</p><h1>Answer any finding, free</h1>
-<p class="lead">Every project in our database is anonymous until a check is complete and the developer has had 10 working days to reply. Send your documents here; we review them, update the verification level where they confirm a claim, and publish your reply next to the finding. Developers never pay us, and paying is not possible.</p></div></section>
-<section class="sec"><div class="wrap" style="max-width:760px">
+<p class="lead">Every project in our database is anonymous. If you build one of them, you can answer what we found with documents: prove the project's domain is yours with one DNS record, attach your licence, permit or land title, and write your reply. A person reviews it, and only then is it published next to the finding. Developers never pay us, and paying is not possible.</p></div></section>
+<style>
+.dr{max-width:820px}.dr h2{margin-top:44px}.dr-st{border:2px solid var(--ink);border-radius:18px;padding:16px 18px;background:var(--paper);margin:0 0 22px;font-size:.98rem}
+.dr-st.soon{border-color:var(--hivis);background:#FFF2EA}.dr-st b{display:block;margin-bottom:4px}
+.dr-step{border:1px solid var(--line);border-radius:20px;padding:clamp(18px,3vw,28px);background:#fff;margin-top:18px}
+.dr-step>h3{margin:0 0 4px;display:flex;gap:10px;align-items:baseline;font-size:1.15rem}.dr-step>h3 i{font-style:normal;background:var(--ink);color:#fff;border-radius:999px;min-width:28px;height:28px;display:inline-grid;place-items:center;font-size:.85rem;flex:0 0 auto}
+.dr-step p{margin:6px 0}.dr-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.dr label.f{margin-top:14px;max-width:none}
+.dr input:not([type=checkbox]):not([type=file]),.dr select,.dr textarea{font:inherit;font-size:1rem;padding:12px 14px;border:2px solid #B9B7AF;border-radius:12px;background:#fff;color:var(--ink);width:100%;box-sizing:border-box}
+.dr input:focus,.dr select:focus,.dr textarea:focus{outline:none;border-color:var(--ink)}
+.dr-rec{display:grid;grid-template-columns:110px 1fr;gap:6px 12px;font-size:.92rem;background:#17212B;color:#E6EAEE;border-radius:14px;padding:14px 16px;margin-top:14px;overflow-wrap:anywhere}
+.dr-rec span{color:#9AA6B2}.dr-rec code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9rem}
+.dr-b{display:inline-flex;align-items:center;gap:.4em;font:inherit;font-weight:700;font-size:.92rem;padding:.6rem 1rem;border-radius:999px;border:2px solid var(--ink);background:#fff;color:var(--ink);cursor:pointer}
+.dr-b:disabled{opacity:.5;cursor:not-allowed}.dr-acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;align-items:center}
+.dr-res{font-size:.92rem;margin-top:10px}.dr-ok{color:var(--ok);font-weight:700}.dr-no{color:var(--hivis-ink);font-weight:700}
+.dr-drop{border:2px dashed #B9B7AF;border-radius:14px;padding:18px;text-align:center;margin-top:12px;cursor:pointer}.dr-drop.on{border-color:var(--ink);background:#F6F6F3}
+.dr-docs{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:10px}.dr-docs li{border:1px solid var(--line);border-radius:14px;padding:12px;display:grid;grid-template-columns:1fr 170px auto;gap:8px 10px;align-items:center}
+.dr-docs li .h{grid-column:1/-1;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.78rem;color:var(--muted);overflow-wrap:anywhere}
+.dr-docs li input{grid-column:1/-1}.dr-docs li b{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.dr-x{border:0;background:none;font-size:1.3rem;cursor:pointer;color:var(--muted)}
+.dr-chk{display:flex;gap:10px;align-items:flex-start;margin-top:14px;font-weight:500}.dr-chk input{margin-top:4px;width:18px;height:18px;flex:0 0 auto}
+.dr-pub{display:grid;gap:14px;margin-top:14px}.dr-card{border:1px solid var(--line);border-radius:16px;padding:16px;background:#fff}.dr-card small{color:var(--muted)}
+.dr-card pre{white-space:pre-wrap;font:inherit;margin:8px 0}.dr-h{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.78rem;overflow-wrap:anywhere;color:var(--muted)}
+.dr-q{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}.dr-q div{border:1px solid var(--line);border-radius:16px;padding:16px;background:#fff}.dr-q h3{margin:0 0 6px;font-size:1.02rem}
+.dr details{margin-top:30px;border:1px solid var(--line);border-radius:16px;padding:14px 18px;background:#fff}.dr summary{cursor:pointer;font-weight:700}
+@media(max-width:700px){.dr-row,.dr-q{grid-template-columns:1fr}.dr-docs li{grid-template-columns:1fr auto}.dr-docs li select{grid-column:1/-1;grid-row:2}.dr-rec{grid-template-columns:1fr}.dr-rec span{margin-top:6px}}
+</style>
+<section class="sec" style="padding-top:28px"><div class="wrap dr">
+<div class="dr-st" id="dr-st" aria-live="polite"><b>Checking what is live…</b></div>
 <div class="note-box" id="rp-case" hidden></div>
+
+<form id="drf" novalidate>
+<div class="dr-step"><h3><i>1</i>Prove the project's domain is yours</h3>
+<p class="muted" style="display:block">No email loop and no account: add one TXT record to the DNS of the domain the project is sold on. Only someone who controls that domain can do it. The record holds a random code made in your browser, so it does not say which Kolaboro project it is for.</p>
+<div class="dr-row">
+<label class="f">Project id on Kolaboro<input name="id" id="dr-id" placeholder="e.g. BALI-014" required maxlength="10" autocomplete="off"></label>
+<label class="f">The project's own domain<input name="domain" id="dr-dom" placeholder="e.g. yourproject.com" required maxlength="253" autocomplete="off" inputmode="url"></label>
+</div>
+<div id="dr-recbox" hidden>
+<div class="dr-rec"><span>Type</span><code>TXT</code><span>Host / name</span><code><span id="dr-host" style="color:inherit">@</span> (the domain itself) or <span style="color:inherit">_kolaboro</span></code><span>Value</span><code id="dr-val"></code></div>
+<div class="dr-acts"><button class="dr-b" type="button" id="dr-copy">Copy value</button><button class="dr-b" type="button" id="dr-check">Check DNS now</button><button class="dr-b" type="button" id="dr-new" title="Make a new random code">New code</button></div>
+<p class="dr-res" id="dr-dnsres" aria-live="polite"></p>
+<p class="muted" style="display:block;font-size:.88rem">We query two independent public resolvers (Cloudflare and Google) over HTTPS, at submit time and again when a moderator reviews your reply. You can remove the record after your reply is published.</p>
+</div>
+</div>
+
+<div class="dr-step"><h3><i>2</i>Attach your documents</h3>
+<p class="muted" style="display:block">Licence, building permit, land title, escrow letter, progress report. <b>Your files do not leave your computer.</b> Your browser computes each file's SHA-256 fingerprint and only that, with the size and type, is sent. When we ask for the file (or you add a link to it), the moderator checks it matches the fingerprint byte for byte, and the published reply lists the fingerprints so anyone holding the document can check it is the same one.</p>
+<div class="dr-drop" id="dr-drop" tabindex="0" role="button" aria-label="Add documents">Drop files here or <u>choose files</u> (PDF, images; up to 12)<input type="file" id="dr-file" multiple hidden></div>
+<ul class="dr-docs" id="dr-docs"></ul>
+</div>
+
+<div class="dr-step"><h3><i>3</i>Write your reply</h3>
+<div class="dr-row">
+<label class="f">Company (legal name)<input name="company" required maxlength="160"></label>
+<label class="f">Your name and role<input name="name" required maxlength="120"></label>
+</div>
+<div class="dr-row">
+<label class="f">Email for our questions (optional, never published)<input name="email" type="email" maxlength="160"></label>
+<label class="f">Which check or finding are you answering?<select name="topic"><option>Permit or licence number</option><option>Deposit protection (escrow, guarantee)</option><option>Construction progress</option><option>Plans and specification</option><option>Track record</option><option>Returns or rental language</option><option>A contradicted claim</option><option>A problem reported in public sources</option><option>Completion date or delay</option><option>Something else</option></select></label>
+</div>
+<label class="f">Your reply<textarea name="reply" rows="7" required maxlength="3000" placeholder="What is correct, and which document shows it"></textarea></label>
+<label class="dr-chk"><input type="checkbox" name="publish_company"> Publish our company name and domain with the reply. If unticked, the reply is published under the project id only and the project stays anonymous.</label>
+<label class="dr-chk"><input type="checkbox" name="ok" required> I can speak for this developer and agree that this reply, the document types and their fingerprints may be published next to the finding after review.</label>
+<input name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+<div class="dr-acts"><button class="btn btn-hi" type="submit" id="dr-send">Send for review</button></div>
+<p class="dr-res" id="dr-msg" aria-live="polite"></p>
+</div>
+</form>
+
+<h2>What is public, and when</h2>
+<div class="dr-q">
+<div><h3>Before a reply is approved</h3><p>Nothing. The project stays an anonymous id. The TXT record holds a random code, not a project id. Your reply, name, email, domain and fingerprints are visible only to the Kolaboro moderator.</p></div>
+<div><h3>After a moderator approves it</h3><p>Your reply text, the date, the document types and their SHA-256 fingerprints, next to the finding. Your company name and domain only if you ticked the box. Your name and email are never published.</p></div>
+<div><h3>What the moderator checks</h3><p>The TXT record is still there (checked live again), the domain really is the domain of that project in our private records, and each document matches its fingerprint and the issuing register where one exists.</p></div>
+<div><h3>What we cannot do</h3><p>We cannot verify a document we have not seen: a fingerprint proves which file you mean, not that it is genuine. A confirmed document raises the verification level; an unconfirmed one is published as your statement.</p></div>
+</div>
+
+<h2>Published developer replies</h2>
+<div id="dr-pub" class="dr-pub"><p class="muted" style="display:block">Loading…</p></div>
+
+<details><summary>No access to the DNS? Send an unverified note instead</summary>
+<p class="muted" style="display:block">This goes to our inbox, is not published automatically, and we will ask you to prove you speak for the developer before anything changes.</p>
 <form id="rpf" class="rp-form" novalidate>
 <label class="f">Project id on Kolaboro<input name="id" id="rp-id" placeholder="e.g. BALI-014" required maxlength="20"></label>
 <label class="f">Company (legal name)<input name="company" required maxlength="160"></label>
@@ -57,28 +136,14 @@
 <label class="f">Links to documents (permit, escrow letter, progress report, company registry)<textarea name="docs" rows="3" maxlength="1500" placeholder="One link per line. Never send bank account numbers."></textarea></label>
 <label class="f rp-chk"><input type="checkbox" name="ok" required> I can speak for this developer and agree that this reply may be published next to the finding.</label>
 <input name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
-<button class="btn btn-hi" type="submit">Send reply</button><p class="rp-msg" id="rp-msg" aria-live="polite"></p>
+<button class="btn btn-hi" type="submit">Send note</button><p class="rp-msg" id="rp-msg" aria-live="polite"></p>
 </form>
-<h2 style="margin-top:36px">What happens next</h2><ol class="rp-steps"><li>We confirm your email belongs to the developer.</li><li>We check each document against the issuing register or an independent source.</li><li>Within 10 working days we update the project: a confirmed document raises its verification level; your reply is published next to the finding either way.</li></ol>
-<p class="muted">See what we expect developers to publish in the <a href="/standard/">Off-Plan Disclosure Standard</a>, use the free <a href="/developers/templates/">templates</a>, or compare yourself with your market in the <a href="/developers/benchmark/">benchmark</a>.</p>
+</details>
+
+<h2 style="margin-top:36px">What happens next</h2><ol class="rp-steps"><li>A moderator re-checks the DNS record and confirms the domain belongs to that project.</li><li>We check each document against the issuing register or an independent source.</li><li>Within 10 working days we update the project: a confirmed document raises its verification level; your reply is published next to the finding either way.</li></ol>
+<p class="muted" style="display:block">See what we expect developers to publish in the <a href="/standard/">Off-Plan Disclosure Standard</a>, use the free <a href="/developers/templates/">templates</a>, or compare yourself with your market in the <a href="/developers/benchmark/">benchmark</a>. Buying and want to share documents privately with your lawyer? Use an <a href="/room/">encrypted deal room</a>.</p>
 </div></section>
-<script>
-(function(){
-  var f=document.getElementById('rpf'), m=document.getElementById('rp-msg'), q=new URLSearchParams(location.search).get('id');
-  if(q){ f.id.value=q.toUpperCase(); fetch('/data/bali-cases.json?t='+Math.floor(Date.now()/6e5)).then(function(r){return r.json()}).then(function(d){ var c=(d.cases||[]).filter(function(x){return x.id===q.toUpperCase()})[0]; if(!c)return; var b=document.getElementById('rp-case'); b.hidden=false; b.innerHTML='<b>'+c.id+'</b>: '+(c.region===c.market?c.market:c.region+', '+c.market)+', '+c.country+'. Public checks '+c.score+'/6, confirmed '+(c.vscore||0)+'/6'+(c.claims&&c.claims.contradicted?', '+c.claims.contradicted+' contradicted claims':'')+(c.invited?'. Developer invited to verify on '+c.invited:'')+'. <a href="/p/?id='+c.id+'">Open the project file</a>.'; }).catch(function(){}); }
-  f.addEventListener('submit',function(e){ e.preventDefault(); if(f.website.value)return;
-    var em=(f.email.value||'').trim(); if(!f.id.value.trim()||!f.company.value.trim()||!f.name.value.trim()||!f.reply.value.trim()){m.textContent='Please fill in the project id, company, name and reply.';return;}
-    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){m.textContent='Please use a valid work email.';return;} if(!f.ok.checked){m.textContent='Please confirm you can speak for the developer.';return;}
-    if(/\b\d{10,}\b/.test(f.docs.value+f.reply.value)){m.textContent='Please remove long numbers such as bank account numbers.';return;}
-    m.textContent='Sending…';
-    var K='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw';
-    fetch('https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/kolaboro_apply',{method:'POST',headers:{apikey:K,Authorization:'Bearer '+K,'Content-Type':'application/json'},
-      body:JSON.stringify({p_name:f.name.value.trim()+' ('+f.company.value.trim()+')',p_email:em,p_country:'',p_phone:'',p_who:'developer-reply | '+f.id.value.trim().toUpperCase()+' | '+f.topic.value,p_bring:f.reply.value.trim()+'\n\nDocuments:\n'+f.docs.value.trim(),p_learn:'',p_week:'',p_lang:'en',p_source:'developer-reply',p_plan:'developer-reply'})})
-    .then(function(r){return r.json()}).then(function(d){ if(d==='ok'||d==='too_many'){ m.textContent='Thank you. We received your reply and will answer by email within 10 working days.'; f.reset(); if(window.kbEvent)kbEvent('developer_reply'); } else throw 0; })
-    .catch(function(){ m.textContent='Could not send. Please email hello@kolaboro.com with the project id.'; });
-  });
-})();
-</script>
+<script src="/developers/reply/dr.js?v=fa2f2661dd" defer></script>
 </main>
 <div class="mcta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="cta_sticky">Protect my purchase</a></div>
 <footer>

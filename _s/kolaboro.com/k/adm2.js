@@ -212,3 +212,53 @@
   function draw(){ if (done) return; var sec = document.getElementById('t-tests'); if (!sec || !A.pw()) return; done = true; box = document.createElement('div'); box.className = 'card'; sec.insertBefore(box, sec.firstChild); paint(); }
   document.addEventListener('kbadm', draw); if (A.D) draw();
 })();
+
+/* Developer replies moderation (block I, 3 Nov 2026): verified replies from /developers/reply/. Nothing is public until approved here.
+   Before approving: re-check the DNS record live, confirm the domain is this project's domain in our private records, and match
+   each document to its SHA-256 (drop the file you received onto its row). Needs kolaboro_devreply_admin (scratchpad m10/i.sql). */
+(function(){
+  var A = window.KBADM; if (!A) return;
+  function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; }); }
+  function hex(b){ return Array.prototype.map.call(new Uint8Array(b), function(x){ return ('0' + x.toString(16)).slice(-2); }).join(''); }
+  var box = null, done = false, F = 'new', L = [];
+  function act(a, p){ return A.rpc('kolaboro_devreply_admin', { p_key: A.pw(), p_action: a, p_payload: p || {} }); }
+  function paint(){
+    box.innerHTML = '<h3 style="margin:0">Developer replies</h3><p class="muted" style="margin:4px 0 0">Loading…</p>';
+    act('list').then(function(d){
+      if (!d || !d.items) { box.innerHTML = '<h3 style="margin:0">Developer replies</h3><p class="muted" style="margin:6px 0 0">Not switched on yet: apply scratchpad m10/i.sql (block I). Until then /developers/reply/ shows "opening soon" and the unverified note still arrives as a lead (plan developer-reply).</p>'; return; }
+      L = d.items; draw2();
+    }).catch(function(){ box.innerHTML = '<h3 style="margin:0">Developer replies</h3><p class="muted">Could not load.</p>'; });
+  }
+  function draw2(){
+    var n = { new: 0, approved: 0, rejected: 0 }; L.forEach(function(x){ n[x.status]++; });
+    var R = L.filter(function(x){ return !F || x.status === F; });
+    box.innerHTML = '<div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center"><h3 style="margin:0">Developer replies</h3><div class="ops-f">' +
+      ['new', 'approved', 'rejected', ''].map(function(s){ return '<button class="btn-s" data-f="' + s + '"' + (F === s ? ' style="background:#17212B;color:#fff"' : '') + '>' + (s || 'all') + (s ? ' (' + n[s] + ')' : '') + '</button>'; }).join('') + '</div></div>' +
+      '<p class="muted" style="margin:6px 0 10px">Approve only after: DNS record still live, the domain is this project\'s domain in our private records, each document matches its fingerprint. Approving publishes the reply text, topic, document types and fingerprints (company and domain only if the developer opted in).</p>' +
+      (R.length ? R.map(function(x){
+        return '<div style="border:1px solid var(--line);border-radius:12px;padding:12px;margin-top:10px" data-id="' + x.id + '"><b>#' + x.id + ' ' + esc(x.project_id) + '</b> <span class="pill">' + esc(x.status) + '</span> <small class="muted">' + esc(new Date(x.created_at).toLocaleString()) + ' &middot; ' + esc(x.topic) + '</small>' +
+          '<div style="margin-top:6px"><b>' + esc(x.company) + '</b> &middot; ' + esc(x.contact_name) + (x.contact_email ? ' &middot; <a href="mailto:' + esc(x.contact_email) + '">' + esc(x.contact_email) + '</a>' : '') + (x.publish_company ? ' &middot; <i>wants company name published</i>' : ' &middot; <i>publish anonymously</i>') + '</div>' +
+          '<div style="margin-top:6px">Domain <b>' + esc(x.domain) + '</b>, TXT <code>kolaboro-verify=' + esc(x.dns_token) + '</code>, seen at submit: ' + (x.dns_seen_at_submit ? 'yes' : 'no') + ' <button class="btn-s" data-dns="' + esc(x.domain) + '|' + esc(x.dns_token) + '">Re-check live</button> <span data-dnsout></span></div>' +
+          '<pre style="white-space:pre-wrap;font:inherit;background:#F6F6F3;border-radius:10px;padding:10px;margin:8px 0">' + esc(x.reply) + '</pre>' +
+          ((x.docs || []).length ? '<table class="ops-t"><tr><th>Type</th><th>File</th><th>SHA-256</th><th>Match</th></tr>' + x.docs.map(function(k, i){ return '<tr><td>' + esc(k.kind) + '</td><td>' + esc(k.name) + ' <small class="muted">' + Math.round((k.bytes || 0) / 1024) + ' KB</small>' + (k.link ? '<br><a href="' + esc(k.link) + '" target="_blank" rel="noopener noreferrer">link</a>' : '') + '</td><td><code style="font-size:.72rem;word-break:break-all">' + esc(k.sha256) + '</code></td><td><label class="btn-s">Check file<input type="file" hidden data-sha="' + esc(k.sha256) + '"></label> <span data-shaout></span></td></tr>'; }).join('') + '</table>' : '<p class="muted">No documents attached.</p>') +
+          '<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;align-items:center"><input data-note placeholder="Public note shown with the reply (optional)" maxlength="600" value="' + esc(x.public_note || '') + '" style="flex:1;min-width:200px;padding:7px;border:1px solid var(--line);border-radius:8px;font:inherit">' +
+          (x.status !== 'approved' ? '<button class="btn-s" data-act="approve">Approve and publish</button>' : '') + (x.status !== 'rejected' ? '<button class="btn-s" data-act="reject">Reject</button>' : '') + (x.status !== 'new' ? '<button class="btn-s" data-act="reopen">Reopen</button>' : '') + '</div></div>';
+      }).join('') : '<p class="muted">Nothing here.</p>');
+    box.querySelectorAll('[data-f]').forEach(function(b){ b.onclick = function(){ F = b.dataset.f; draw2(); }; });
+    box.querySelectorAll('[data-dns]').forEach(function(b){ b.onclick = function(){
+      var p = b.dataset.dns.split('|'), o = b.parentNode.querySelector('[data-dnsout]'); o.textContent = 'checking…';
+      fetch('/api/x/i/dns?domain=' + encodeURIComponent(p[0]) + '&token=' + p[1]).then(function(r){ return r.json(); }).then(function(d){ o.innerHTML = d.found ? '<b style="color:#0B7A55">found on ' + esc(d.where) + '</b>' : '<b style="color:#B83A05">not found</b>'; }).catch(function(){ o.textContent = 'error'; });
+    }; });
+    box.querySelectorAll('[data-sha]').forEach(function(inp){ inp.onchange = function(){
+      var f = inp.files[0], o = inp.closest('td').querySelector('[data-shaout]'); if (!f) return; o.textContent = 'hashing…';
+      f.arrayBuffer().then(function(b){ return crypto.subtle.digest('SHA-256', b); }).then(function(h){ o.innerHTML = hex(h) === inp.dataset.sha ? '<b style="color:#0B7A55">same file</b>' : '<b style="color:#B83A05">different file</b>'; });
+    }; });
+    box.querySelectorAll('[data-act]').forEach(function(b){ b.onclick = function(){
+      var row = b.closest('[data-id]'), a = b.dataset.act;
+      if (a === 'approve' && !confirm('Publish this reply next to ' + row.querySelector('b').textContent + '? Confirm the domain belongs to this project first.')) return;
+      b.disabled = true; act(a, { id: +row.dataset.id, note: row.querySelector('[data-note]').value }).then(paint);
+    }; });
+  }
+  function draw(){ if (done) return; var sec = document.getElementById('t-ops'); if (!sec || !A.pw()) return; done = true; box = document.createElement('div'); box.className = 'card'; box.style.marginBottom = '16px'; sec.insertBefore(box, sec.firstChild); paint(); }
+  document.addEventListener('kbadm', draw); if (A.D) draw();
+})();
