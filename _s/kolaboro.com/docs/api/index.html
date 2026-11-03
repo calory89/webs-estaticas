@@ -58,6 +58,7 @@
 <li><code>GET /api/open/badge/{id}.svg</code>: a live badge for listings and portals, e.g. <img src="/api/open/badge/DXB-001.svg" alt="Kolaboro badge example" height="22" style="vertical-align:middle"></li>
 </ul>
 <pre style="white-space:pre-wrap;word-break:break-all;overflow-x:auto"><code>curl "https://kolaboro.com/api/open/projects?stage=under%20construction&amp;min_public=5&amp;limit=3"</code></pre>
+<h2 id="agents">For AI agents and SQL</h2><ul><li><b><a href="/docs/mcp/">MCP server</a></b> at <code>https://kolaboro.com/mcp</code>: the same data as tools for Claude and other AI agents (search projects, one project, market statistics, the public log, signature check). No key; every answer signed.</li><li><b><a href="/sql/">SQL in your browser</a></b>: the whole database as two Parquet files rebuilt daily (<a href="/data/kolaboro.parquet">kolaboro.parquet</a>, <a href="/data/kolaboro-markets.parquet">kolaboro-markets.parquet</a>), queried with DuckDB in the page. Their SHA-256 is re-checked and signed by our server at <code><a href="/api/x/e/parquet-manifest">/api/x/e/parquet-manifest</a></code>.</li></ul>
 <h2>Verify evidence</h2><p>Look up the timestamp of any SHA-256 fingerprint from a Kolaboro report. Returns the OpenTimestamps proof (base64) and, once confirmed, the Bitcoin block height.</p>
 <div class="api-b">GET https://kolaboro.com/api/kb/stamp?hash=&lt;sha256&gt;
 
