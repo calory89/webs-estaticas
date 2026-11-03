@@ -47,7 +47,9 @@ def dom(u):
 STOP = {'the', 'by', 'and', 'of', 'at', 'in', 'residences', 'residence', 'villas', 'villa', 'apartments', 'apartment', 'tower',
         'towers', 'group', 'developments', 'development', 'developers', 'developer', 'properties', 'property', 'real', 'estate',
         'pt', 'llc', 'l.l.c', 'ltd', 'inc', 'sa', 'de', 'cv', 'la', 'el', 'los', 'las', 'co', 'company', 'holding', 'holdings',
-        'bali', 'dubai', 'phase', 'project', 'resort', 'homes', 'home', 'living', 'collection', 'investment', 'investments'}
+        'bali', 'dubai', 'phase', 'project', 'resort', 'homes', 'home', 'living', 'collection', 'investment', 'investments',
+        'pcl', 'plc', 'tbk', 'jsc', 'gmbh', 'sl', 'sas', 'srl', 'spa', 'bv', 'ag', 'pty', 'sdn', 'bhd', 'kk', 'lp', 'llp', 'corp',
+        'corporation', 'limited', 'realty', 'set', 'owner', 'operator', 'with', 'for', 'asset', 'management', 'construction'}
 
 
 def toks(s):
@@ -190,8 +192,36 @@ with cf.ThreadPoolExecutor(12) as ex:
     lists = list(ex.map(imgs_of, range(len(projs))))
 jobs = [(i, u, pg) for i, l in lists for u, pg in l]
 print('projects', len(projs), 'with images', sum(1 for _, l in lists if l), 'image urls', len(jobs), 't=%.0fs' % (time.time() - T0), flush=True)
+import torch, open_clip
+torch.set_num_threads(os.cpu_count() or 4)
+MODEL, PRETRAINED = 'ViT-B-32', 'laion2b_s34b_b79k'
+model, _, prep = open_clip.create_model_and_transforms(MODEL, pretrained=PRETRAINED)
+model.eval()
+# embed each distinct file once, while the downloads are still running (download threads are I/O bound)
+emb_of, queue, recs = {}, [], []
+embed_budget_hit = False
+
+
+def embed(batch):
+    x = torch.stack([prep(Image.open(r['path']).convert('RGB')) for r in batch])
+    with torch.inference_mode():
+        e = torch.nn.functional.normalize(model.encode_image(x), dim=-1).numpy()
+    for r, v in zip(batch, e):
+        emb_of[r['sha']] = v
+
+
 with cf.ThreadPoolExecutor(24) as ex:
-    recs = [r for r in ex.map(fetch, enumerate(jobs)) if r]
+    futs = [ex.submit(fetch, j) for j in enumerate(jobs)]
+    for f in cf.as_completed(futs):
+        r = f.result()
+        if not r:
+            continue
+        recs.append(r)
+        if r['sha'] not in emb_of and all(q['sha'] != r['sha'] for q in queue):
+            queue.append(r)
+        if len(queue) >= 32:
+            embed(queue); queue = []
+print('downloaded', len(recs), 'embedded so far', len(emb_of), 't=%.0fs' % (time.time() - T0), flush=True)
 budget_hit = time.time() - T0 > TIME_BUDGET
 # the same file can sit at one URL used by one project twice; keep one record per (project, sha)
 uniq = {}
@@ -210,41 +240,23 @@ print('images kept', len(recs), 'site-chrome images dropped', chrome_dropped, le
 if len(recs) < 200:
     raise SystemExit('too few images (%d): keeping the old file' % len(recs))
 
-# CLIP embeddings
-import torch, open_clip
-torch.set_num_threads(os.cpu_count() or 4)
-MODEL, PRETRAINED = 'ViT-B-32', 'laion2b_s34b_b79k'
-model, _, prep = open_clip.create_model_and_transforms(MODEL, pretrained=PRETRAINED)
-model.eval()
-# embed each distinct file once; preprocessing runs in threads while the model works
-first = {}
+# embed what is left (files not yet embedded); stop at the deadline
+queue = []
 for r in recs:
-    first.setdefault(r['sha'], r['path'])
-shas = list(first)
-emb_of = {}
-
-
-def load(path):
-    return prep(Image.open(path).convert('RGB'))
-
-
-embed_budget_hit = False
-with torch.inference_mode(), cf.ThreadPoolExecutor(4) as ex:
-    nxt = ex.map(load, [first[h] for h in shas[0:64]])
-    for s in range(0, len(shas), 64):
-        batch = torch.stack(list(nxt))
-        if s + 64 < len(shas):
-            nxt = ex.map(load, [first[h] for h in shas[s + 64:s + 128]])
-        e = torch.nn.functional.normalize(model.encode_image(batch), dim=-1).numpy()
-        for h, v in zip(shas[s:s + 64], e):
-            emb_of[h] = v
+    if r['sha'] not in emb_of and all(q['sha'] != r['sha'] for q in queue):
+        queue.append(r)
+    if len(queue) >= 64:
         if time.time() - T0 > EMBED_DEADLINE:
             embed_budget_hit = True
             break
+        embed(queue); queue = []
+if queue and not embed_budget_hit:
+    embed(queue)
 n_before_embed = len(recs)
+n_files = len({r['sha'] for r in recs})
 recs = [r for r in recs if r['sha'] in emb_of]
 E = np.stack([emb_of[r['sha']] for r in recs]).astype(np.float32)
-print('embedded files', len(emb_of), 'of', len(shas), 'records', len(E), 'of', n_before_embed, 'budget hit', embed_budget_hit,
+print('embedded files', len(emb_of), 'of', n_files, 'records', len(E), 'of', n_before_embed, 'budget hit', embed_budget_hit,
       't=%.0fs' % (time.time() - T0), flush=True)
 
 # candidate cross-project pairs
