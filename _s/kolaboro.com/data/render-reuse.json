@@ -1,10 +1,10 @@
 {
- "generated": "2026-11-03T10:43:34Z",
+ "generated": "2026-11-03T11:09:05Z",
  "model": "open_clip ViT-B-32 laion2b_s34b_b79k (open_clip_torch 2.29.0, torch 2.5.1+cpu, CPU)",
- "threshold": 0.9,
+ "threshold": 0.85,
  "min_orb_inliers": 30,
- "images_checked": 8217,
- "projects_checked": 798,
+ "images_checked": 7040,
+ "projects_checked": 695,
  "projects_tracked": 891,
  "limits": {
   "images_per_project": 16,
@@ -12,23 +12,27 @@
   "download_time_budget_s": 660,
   "download_budget_hit": false,
   "embedding_deadline_s": 1320,
-  "embedding_budget_hit": false,
+  "embedding_budget_hit": true,
   "max_pairs": 200
  },
- "site_chrome_images_dropped": 617,
- "candidates_over_threshold": 77,
+ "site_chrome_images_dropped": 609,
+ "candidates_over_threshold": 2556,
  "excluded": {
-  "same_domain": 33,
-  "same_developer": 5,
+  "same_domain": 411,
+  "same_developer": 102,
   "same_project_name": 0,
-  "page_names_other_project": 3,
-  "portal_image_not_attributable": 15,
+  "page_names_other_project": 28,
+  "portal_image_not_attributable": 841,
   "hub_image": 0,
-  "geometry_failed": 21
+  "geometry_failed": 1174
  },
  "hub_images": 0,
+ "same_picture_but_excluded": {
+  "same_developer": 7,
+  "portal_image_not_attributable": 3
+ },
  "listing_portals": 69,
  "pair_count": 0,
  "pairs": [],
- "method": "Images are collected from each tracked project page (url and docs_url), images under 200 px, very wide banners, flat graphics and URLs naming logos/icons are skipped, at most 16 per project, and a file shown on the pages of two or more projects of the same site is treated as site chrome and dropped. Each image is embedded with CLIP ViT-B-32 (laion2b_s34b_b79k) and pairs from two different projects with cosine >= 0.90 are kept if the two pages are on different domains, the developers differ, the project names do not look like the same project, neither page names the other project (portal carousels and related listings), and neither image has near-duplicates on 5+ other domains (stock or template art). On listing portals (sites hosting pages of several tracked projects) an image only counts for the page's project if it is not in a featured/related widget, its file name does not name another place or project, and it is the page's og:image, sits in the og:image folder or names the project. Each surviving pair must then pass a geometric check: at least 30 ORB keypoint matches consistent with one RANSAC homography (or byte-identical files). dhash_distance is reported for reference (0-64, low means near-identical; crops and recolours raise it). A match means the same picture is used on both pages; it is evidence to check, not proof of wrongdoing: agents, portals and sister brands can legitimately share a render."
+ "method": "Images are collected from each tracked project page (url and docs_url), images under 200 px, very wide banners, flat graphics and URLs naming logos/icons are skipped, at most 16 per project, and a file shown on the pages of two or more projects of the same site is treated as site chrome and dropped. Each image is embedded with CLIP ViT-B-32 (laion2b_s34b_b79k) and pairs from two different projects with cosine >= 0.85 are kept if the two pages are on different domains, the developers differ, the project names do not look like the same project, neither page names the other project (portal carousels and related listings), and neither image has near-duplicates (cosine >= 0.93) on 5+ other domains (stock or template art). On listing portals (sites hosting pages of several tracked projects) an image only counts for the page's project if it is not in a featured/related widget, its file name does not name another place or project, and it is the page's og:image, sits in the og:image folder or names the project. Each surviving pair must then pass a geometric check: at least 30 ORB keypoint matches consistent with one RANSAC homography (or byte-identical files). dhash_distance is reported for reference (0-64, low means near-identical; crops and recolours raise it). A match means the same picture is used on both pages; it is evidence to check, not proof of wrongdoing: agents, portals and sister brands can legitimately share a render."
 }
