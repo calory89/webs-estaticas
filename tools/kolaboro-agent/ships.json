@@ -1,5 +1,59 @@
 [
  {
+  "d": "2026-11-03",
+  "k": "feature",
+  "t": "AI desk review hardened against manipulated websites: hidden text removed, page fenced as data, AI-directed instructions flagged to the buyer",
+  "u": "/engineering/ai-safety/"
+ },
+ {
+  "d": "2026-11-03",
+  "k": "feature",
+  "t": "Daily AI evaluation on 17 fictional pages incl. 8 manipulation attempts: first run 17/17 cases, 64/64 checks",
+  "u": "/engineering/evals/"
+ },
+ {
+  "d": "2026-11-03",
+  "k": "feature",
+  "t": "Public log is a Merkle tree: signed checkpoint, inclusion and RFC 9162 consistency proofs, checked in your browser",
+  "u": "/log/"
+ },
+ {
+  "d": "2026-11-03",
+  "k": "feature",
+  "t": "Every daily log line recorded in Sigstore Rekor (Linux Foundation), next to the Bitcoin timestamp",
+  "u": "/engineering/transparency-log/"
+ },
+ {
+  "d": "2026-11-03",
+  "k": "feature",
+  "t": "Site photos signed by the agent's phone with a passkey; signature checkable from the public receipt",
+  "u": "/engineering/signed-photos/"
+ },
+ {
+  "d": "2026-11-03",
+  "k": "feature",
+  "t": "Three independent verifiers (JavaScript, Python, Go) check the live log daily and must agree",
+  "u": "/engineering/transparency-log/"
+ },
+ {
+  "d": "2026-11-03",
+  "k": "feature",
+  "t": "Weekly restore drill: newest backup restored into an empty database, 14 tables and 3,960 rows matched",
+  "u": "/engineering/reliability/"
+ },
+ {
+  "d": "2026-11-03",
+  "k": "feature",
+  "t": "Time-travel API: any project as published on a past day, checked against the public log",
+  "u": "/api/open"
+ },
+ {
+  "d": "2026-11-03",
+  "k": "feature",
+  "t": "Uptime probes every 5 minutes, browser error reports, Subresource Integrity, security.txt",
+  "u": "/engineering/reliability/"
+ },
+ {
   "d": "2026-11-02",
   "k": "feature",
   "t": "Home page redesign: live self-test and public log strip, product video on the page, all six tools in one grid, aligned pricing",
