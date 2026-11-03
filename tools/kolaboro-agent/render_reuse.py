@@ -14,8 +14,8 @@ import numpy as np
 from PIL import Image
 import imagehash
 
-THRESHOLD = 0.95          # CLIP cosine similarity
-MIN_INLIERS = 25          # ORB/RANSAC inliers needed to confirm the same picture
+THRESHOLD = 0.90          # CLIP cosine similarity (candidates; the geometric check below confirms the same picture)
+MIN_INLIERS = 30          # ORB/RANSAC inliers needed to confirm the same picture
 MIN_SIDE = 200            # px, smaller images are skipped
 PER_PROJECT = 16          # max images per project (runtime cap)
 HUB_SITES = 5             # an image with near-duplicates on this many other domains is treated as stock/template
@@ -276,7 +276,10 @@ for a, b, c in kept:
     exact = recs[a]['sha'] == recs[b]['sha']
     n = 10**6 if exact else inliers(a, b)
     if n < MIN_INLIERS:
-        excl['geometry_failed'] += 1; continue
+        excl['geometry_failed'] += 1
+        if excl['geometry_failed'] <= 12:
+            print('  rejected (inliers %d) %.4f %s | %s' % (n, c, recs[a]['u'], recs[b]['u']))
+        continue
     key = (P[a], P[b], recs[a]['sha'], recs[b]['sha'])
     if key in seen_proj_img:
         continue
