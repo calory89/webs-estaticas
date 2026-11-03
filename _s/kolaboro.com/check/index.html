@@ -253,8 +253,8 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
     if (e.step === 'explore') {
       var xl = document.createElement('li'); xl.className = e.chosen ? 'ok' : 'skip';
       xl.innerHTML = '<div><b>Looking for where this site sells</b><small></small></div><code></code>';
-      xl.querySelector('small').textContent = !e.candidates ? 'No other page on this site looks like a property offer' : e.candidates + ' page' + (e.candidates > 1 ? 's' : '') + ' on this site look like the offer; ' + (e.read || []).length + ' read' + (e.chosen ? ', the one with the most offer details (prices, sizes, payment terms) is ' + String(e.chosen).replace(/^https?:\/\//, '') : ', none states more of the offer than the page you pasted');
-      xl.querySelector('code').textContent = fms(e.ms); var tl = $('az-prog').querySelector('li.tot'); $('az-prog').insertBefore(xl, tl || null); return;
+      xl.querySelector('small').textContent = !e.candidates ? 'No other page on this site looks like a property offer' : e.candidates + ' page' + (e.candidates > 1 ? 's' : '') + ' on this site look like the offer; ' + (e.read || []).length + ' read' + (e.chosen ? ', the one with the most offer details (prices, sizes, payment terms) is ' + String(e.chosen).replace(/^https?:\/\//, '') : ', none of them clearly lists an offer (prices, sizes, payment terms)');
+      xl.querySelector('code').textContent = fms(e.ms); $('az-prog').insertBefore(xl, $('lv-sign') || $('az-prog').querySelector('li.tot') || null); return;
     }
     if (e.step === 'follow_kept') {
       var kl = document.createElement('li'); kl.className = 'skip'; kl.innerHTML = '<div><b>Kept the page you pasted</b><small></small></div><code></code>';
