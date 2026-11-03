@@ -1,7 +1,7 @@
 {
  "version": "company-graph-1",
  "updated": "2026-11-03",
- "generated_at": "2026-11-03T22:30:26Z",
+ "generated_at": "2026-11-03T22:33:26Z",
  "register": {
   "name": "Companies House (United Kingdom)",
   "url": "https://find-and-update.company-information.service.gov.uk",
@@ -27,7 +27,7 @@
  "complete": true,
  "archive": {
   "lines": 311,
-  "root": "39ef8102d9f9cb296be7db73d2b745bb0b878be2c632ac2777e121401c1d622f",
+  "root": "3595d8aae6504bbc348fcc3bcf1a9cd614b9b8bf92ba1cd0e94f1a14e39cc1ab",
   "line_format": "sha256 time kind (kind replaces the URL, which would identify a company)"
  },
  "method": [
@@ -1610,7 +1610,7 @@
    "summary": [
     "1 of 1 named company matched exactly one company on Companies House.",
     "Its 2 current directors have been directors (now or in the past) of 74 other UK companies: 44 active, 28 dissolved (0 of them within 2 years of incorporation), 2 in liquidation, administration or receivership.",
-    "Director A of the developing company has been a director of 2 companies in liquidation, administration or receivership."
+    "Director A of the developing company has been a director of 2 in an insolvency procedure."
    ],
    "partial": false,
    "checked": true
@@ -2286,7 +2286,7 @@
    "summary": [
     "1 of 1 named company matched exactly one company on Companies House.",
     "Its 5 current directors have been directors (now or in the past) of 111 other UK companies: 77 active, 33 dissolved (3 of them within 2 years of incorporation), 1 in liquidation, administration or receivership.",
-    "Director C of the developing company has been a director of 3 companies dissolved within 2 years of incorporation and 1 company in liquidation, administration or receivership.",
+    "Director C of the developing company has been a director of 3 companies dissolved within 2 years of incorporation and 1 in an insolvency procedure.",
     "At least one director holds more than 105 appointments; only the first 105 per director were read."
    ],
    "partial": false,
@@ -3085,7 +3085,7 @@
    "summary": [
     "1 of 1 named company matched exactly one company on Companies House.",
     "Its 10 current directors have been directors (now or in the past) of 121 other UK companies: 95 active, 24 dissolved (1 of them within 2 years of incorporation), 1 in liquidation, administration or receivership.",
-    "Director B of the developing company has been a director of 1 company dissolved within 2 years of incorporation and 1 company in liquidation, administration or receivership."
+    "Director B of the developing company has been a director of 1 company dissolved within 2 years of incorporation and 1 in an insolvency procedure."
    ],
    "partial": false,
    "checked": true
@@ -3107,7 +3107,7 @@
      "id": "N2",
      "type": "company",
      "role": "named",
-     "status": "overseas entity",
+     "status": "other",
      "inc_year": 2023,
      "short_lived": false
     }
@@ -3131,7 +3131,7 @@
    "directors": 0,
    "summary": [
     "1 of 2 named companies matched exactly one company on Companies House.",
-    "A named project company is a foreign company on the UK Register of Overseas Entities; its officers are not listed as directors there, so it adds no one to the graph.",
+    "A named project company is listed as other on the register.",
     "No current directors were listed for the matched company."
    ],
    "partial": false,
@@ -3243,7 +3243,7 @@
    "directors": 1,
    "summary": [
     "1 of 1 named company matched exactly one company on Companies House.",
-    "Its 1 current director has been a director (now or in the past) of 2 other UK companies: 1 active, 1 dissolved (0 of them within 2 years of incorporation), 0 in liquidation, administration or receivership."
+    "Its 1 current director has been directors (now or in the past) of 2 other UK companies: 1 active, 1 dissolved (0 of them within 2 years of incorporation), 0 in liquidation, administration or receivership."
    ],
    "partial": false,
    "checked": true
@@ -4131,7 +4131,7 @@
    "directors": 5,
    "summary": [
     "2 of 2 named companies matched exactly one company on Companies House.",
-    "Their 5 current directors have been directors (now or in the past) of 66 other UK companies: 62 active, 4 dissolved (0 of them within 2 years of incorporation), 0 in liquidation, administration or receivership."
+    "Its 5 current directors have been directors (now or in the past) of 66 other UK companies: 62 active, 4 dissolved (0 of them within 2 years of incorporation), 0 in liquidation, administration or receivership."
    ],
    "partial": false,
    "checked": true
