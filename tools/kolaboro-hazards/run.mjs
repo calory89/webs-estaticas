@@ -34,18 +34,22 @@ function compact(r, coarse) {   // coarse = a tracked project: rounded so the fi
 }
 
 const t0 = Date.now(), areas = [], projects = {};
-for (const s of sites) {
+async function pool(items, n, fn) {   // a few points at a time; the per-host pacing above still applies to every request
+  let i = 0; await Promise.all(Array.from({ length: n }, async () => { while (i < items.length) { const k = i++; await fn(items[k]); } }));
+}
+await pool(sites, 4, async s => {
   const r = await HZ.all(s.lat, s.lng); HZ.SOURCES.forEach(k => note(k, r[k]));
   areas.push(Object.assign({ id: s.id, label: s.label, lat: s.lat, lng: s.lng }, compact(r, false)));
   console.log('area', s.id, Math.round((Date.now() - t0) / 1000) + 's');
-}
+});
+areas.sort((a, b) => sites.findIndex(x => x.id === a.id) - sites.findIndex(x => x.id === b.id));
 let skipped = 0;
-for (const p of ids) {
-  if (pub.get(p.id) !== p.market) { skipped++; continue; }   // id rule drifted: never attach figures to the wrong project
+await pool(ids, 4, async p => {
+  if (pub.get(p.id) !== p.market) { skipped++; return; }   // id rule drifted: never attach figures to the wrong project
   const r = await HZ.all(p.lat, p.lng); HZ.SOURCES.forEach(k => note(k, r[k]));
   projects[p.id] = compact(r, true);
   console.log('project', p.id, Math.round((Date.now() - t0) / 1000) + 's');
-}
+});
 const out = {
   updated: new Date().toISOString().slice(0, 10), seconds: Math.round((Date.now() - t0) / 1000),
   method: 'For each point, the same code as the live page (/hazards/) reads: Copernicus DEM GLO-30 height (one 30 m cell), WRI Aqueduct Floods v2 100-year riverine and coastal flood depth (1 km cell), USGS ComCat earthquakes M5+ within 100 km since 1900, NOAA NCEI tsunami run-ups within 50 km, Smithsonian GVP Holocene volcanoes within 100 km, and the OpenStreetMap coastline within 10 km. Tracked projects: coordinates come from public sources and are about 100 m accurate; they are not published, and figures are rounded (height to 1 m under 30 m and 10 m above, coast distance in bands, distances to 5 or 10 km) so they cannot pinpoint a plot.',
