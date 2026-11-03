@@ -1,6 +1,26 @@
 {
  "deploys": [
   {
+   "at": "2026-11-03T22:41:05Z",
+   "commit": "91892c3445bd7b6ab692e1f5e47bca0abc3eac34",
+   "checks_passed": 32,
+   "checks_total": 32,
+   "failed": [],
+   "run": "https://github.com/calory89/webs-estaticas/actions/runs/41731891476",
+   "result": "pass",
+   "wait_s": 306,
+   "changes": [
+    "a842625f970a",
+    "1be8c9678868",
+    "252c24e3f485",
+    "a07b62baf91c",
+    "14c0ec97b1d6",
+    "f6af8331b29d",
+    "afb62f6d9aee",
+    "f29578322036"
+   ]
+  },
+  {
    "at": "2026-11-03T22:34:43Z",
    "commit": "a07b62baf91ccf194e1e5423e62fdf0d1e08e32a",
    "result": "not_deployed",
@@ -374,18 +394,18 @@
  "canary": "Cloudflare Pages sends each push to all visitors at once and offers no percentage canary, so none is claimed. A bad push can be visible for a few minutes until the rollback is live.",
  "rollback_mode": "Rollback: a git commit restoring the files changed since the last passing commit; Pages deploys it in about 1 to 2 minutes. An instant Cloudflare API rollback is built in but needs a Pages-scoped token, not configured yet.",
  "latest_checks": {
-  "at": "2026-11-03T21:50:24.659Z",
-  "commit": "95e4ac6e54d81a788b521b810c3bb0a0f14f2d3d",
+  "at": "2026-11-03T22:41:05.181Z",
+  "commit": "91892c3445bd7b6ab692e1f5e47bca0abc3eac34",
   "checks": [
    {
     "name": "build: live commit",
     "ok": true,
-    "detail": "live 95e4ac6e54d8"
+    "detail": "live 91892c3445bd"
    },
    {
     "name": "page /",
     "ok": true,
-    "detail": "200, 71672 bytes"
+    "detail": "200, 71294 bytes"
    },
    {
     "name": "page /check/",
@@ -395,7 +415,7 @@
    {
     "name": "page /database/",
     "ok": true,
-    "detail": "200, 31461 bytes"
+    "detail": "200, 31547 bytes"
    },
    {
     "name": "page /pricing/",
@@ -415,12 +435,12 @@
    {
     "name": "page /verify/",
     "ok": true,
-    "detail": "200, 35823 bytes"
+    "detail": "200, 41493 bytes"
    },
    {
     "name": "page /status/",
     "ok": true,
-    "detail": "200, 36102 bytes"
+    "detail": "200, 36188 bytes"
    },
    {
     "name": "page /changelog/",
@@ -440,12 +460,12 @@
    {
     "name": "page /trust/",
     "ok": true,
-    "detail": "200, 23180 bytes"
+    "detail": "200, 23266 bytes"
    },
    {
     "name": "page /investors/dossier/",
     "ok": true,
-    "detail": "200, 20572 bytes"
+    "detail": "200, 20658 bytes"
    },
    {
     "name": "api /api/open/stats",
@@ -470,7 +490,7 @@
    {
     "name": "api /api/x/l/trust",
     "ok": true,
-    "detail": "{\"controls\":13,\"pass\":12,\"warn\":1,\"fail\":0,\"stale\":0,\"unknown\":0}"
+    "detail": "{\"controls\":13,\"pass\":11,\"warn\":1,\"fail\":1,\"stale\":0,\"unknown\":0}"
    },
    {
     "name": "tls: plain http redirects to https",
@@ -539,7 +559,7 @@
    }
   ]
  },
- "last_checked": "95e4ac6e54d81a788b521b810c3bb0a0f14f2d3d",
- "last_good": "95e4ac6e54d81a788b521b810c3bb0a0f14f2d3d",
- "updated": "2026-11-03T22:34:43Z"
+ "last_checked": "91892c3445bd7b6ab692e1f5e47bca0abc3eac34",
+ "last_good": "91892c3445bd7b6ab692e1f5e47bca0abc3eac34",
+ "updated": "2026-11-03T22:41:05Z"
 }
