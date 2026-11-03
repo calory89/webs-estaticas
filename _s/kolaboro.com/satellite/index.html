@@ -25,7 +25,7 @@
 
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Dataset", "name": "Kolaboro satellite watch: development areas", "description": "Sentinel-2 dry-season median composites of public development areas, with the share of land cleared since 2023 per period.", "url": "https://kolaboro.com/satellite/", "creator": {"@type": "Organization", "name": "Kolaboro", "url": "https://kolaboro.com/"}, "isAccessibleForFree": true, "distribution": [{"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": "https://kolaboro.com/data/satellite.json"}], "temporalCoverage": "2023/2026", "spatialCoverage": "Worldwide"}</script>
 <link rel="alternate" type="application/rss+xml" title="Kolaboro: what we shipped" href="/feed.xml">
-<link rel="stylesheet" href="/satellite/sat.css?v=4">
+<link rel="stylesheet" href="/satellite/sat.css?v=25387be354">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -125,13 +125,43 @@
 </div>
 </div></section>
 
+<section class="st-sec" id="monthly" aria-labelledby="h-monthly"><div class="wrap" id="opsec">
+<h2 id="h-monthly">Month by month: is the ground filling in?</h2>
+<p class="lead">Every month, every Sentinel-2 image of each area with its clouds, cloud shadows and haze masked out. We measure the share of the area that looks built-up or bare and how much of it was not built-up or bare in the first clear month. Cloudy months are shown as gaps, not guessed.</p>
+<div class="st-n op-n" id="opn"></div>
+<div id="opbody">
+<div class="st-pick"><label for="oppick">Area</label><select id="oppick"></select></div>
+<div class="op-v">
+ <div>
+  <div class="op-frames">
+   <figure class="op-f"><img id="opimg" alt="" width="220" height="220"><figcaption id="opmcap"></figcaption></figure>
+   <figure class="op-f" id="optl" hidden><img id="optlimg" alt="" width="220" height="220" loading="lazy"><figcaption>Timelapse</figcaption></figure>
+  </div>
+  <div class="st-ctl op-ctl">
+   <button type="button" class="st-ib" id="opprev" aria-label="Previous clear month"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M12.5 4 6.5 10l6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+   <button type="button" class="st-ib play" id="opplay" aria-label="Play months" aria-pressed="false"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M6 4l10 6-10 6z" fill="currentColor"/></svg></button>
+   <button type="button" class="st-ib" id="opnext" aria-label="Next clear month"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7.5 4l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+   <span class="st-hint" id="opcap"></span>
+  </div>
+  <p class="st-hint" id="opminfo" aria-live="polite"></p>
+ </div>
+ <div class="st-side">
+  <div class="st-stats" id="opstats"></div>
+  <div class="st-chart"><h4>Built-up or bare, per month</h4><p>Bars: share of the clear part of the area. Line: share that was not built-up or bare in the first clear month. Grey ticks: too cloudy to measure. Tap a bar to see that month.</p><div id="opchart" class="op-chart"></div></div>
+ </div>
+</div>
+</div>
+<p class="st-src"><b>Read this before trusting a number.</b> At 10 m per pixel a cleared plot, a concrete slab and a new roof can look the same, so "built-up or bare" is one class. Haze, wet ground and the sun angle move the monthly figures by a few points; trust a trend over many months, not one month. <span id="opmethod"></span> Data: <a href="/data/satellite-optical.json">satellite-optical.json</a>.</p>
+</div></section>
+
 <section class="st-sec" aria-labelledby="h-plot"><div class="wrap">
 <h2 id="h-plot">Want this for the plot you are buying?</h2>
-<p class="lead">When you hire Kolaboro to check a project, we pin its plot and compare it with every new cloud-free image. If the ground has not moved while the payment requests keep coming, your agent tells you. That watch stays private between you and your agent.</p>
-<p style="margin-top:22px"><a class="btn btn-hi" href="/check">Check a project</a> <a class="btn btn-line" href="/technology/#satellite">How the pipeline works</a></p>
+<p class="lead">Drop a pin on your plot and your browser reads one clear Sentinel-2 picture per quarter for the last two or three years, straight from the public archive. Then hold each instalment of your payment plan against the evidence: the satellite, the project record and your agent's signed photos.</p>
+<p style="margin-top:22px;display:flex;flex-wrap:wrap;gap:10px"><a class="btn btn-hi" href="/satellite/plot/">See your plot from space</a> <a class="btn btn-line" href="/milestones/">Check a payment milestone</a> <a class="btn btn-line" href="/check">Check a project</a></p>
 <p class="muted" style="margin-top:16px;font-size:.88rem">Data: <a href="/data/satellite.json">satellite.json</a> &middot; <a href="/how-we-score">method</a> &middot; <a href="/corrections">corrections</a>.</p>
 </div></section>
-<script src="/satellite/sat.js?v=3" defer></script>
+<script src="/satellite/sat.js?v=49a18e6897" defer></script>
+<script src="/satellite/opt.js?v=d39ee84540" defer></script>
 </main>
 <div class="mcta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="cta_sticky">Protect my purchase</a></div>
 <footer>

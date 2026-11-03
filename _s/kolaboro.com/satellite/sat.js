@@ -103,6 +103,7 @@
     // start on the latest period that has a change layer, so the overlay is visible straight away
     for (var i = s.periods.length - 1; i >= 0; i--) if (hasChange(s.periods[i])) { pi = i; break; }
     $('starea').value = id;
+    try { document.dispatchEvent(new CustomEvent('kb-sat-area', { detail: id })); } catch (e) {}
     if (push && history.replaceState) history.replaceState(null, '', '#' + encodeURIComponent(id));
     Array.prototype.forEach.call($('stgrid').querySelectorAll('.st-card'), function(c){ if (c.dataset.id === id) c.setAttribute('aria-current', 'true'); else c.removeAttribute('aria-current'); });
     var r = $('strange'); r.max = s.periods.length - 1; r.value = pi;
