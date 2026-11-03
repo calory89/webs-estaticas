@@ -135,6 +135,10 @@
       '<div class="pf-checks" role="table" aria-label="Six checks: published and verification level"><div class="pf-row h" role="row"><span role="columnheader">Check</span><span role="columnheader">Developer publishes</span><span role="columnheader">Verification level</span></div>' + rows + '</div>' +
       '<div class="pf-key">' + Object.keys(LV).map(function(k){ return '<span>' + lvBadge(k) + esc(LV[k][1]) + '</span>'; }).join('') + '</div>' +
       '</div></section>' +
+      whatIfHtml(c, C) +
+      '<section class="pf-sec" id="pf-web-s"><div class="wrap"><h2>How old is the developer\'s website?</h2>' +
+      '<p class="sub">A claimed track record is easier to trust when the developer\'s web presence is as old as the company says it is. We look up the domain in the registry and in public certificate logs, and publish only the dates.</p>' +
+      '<div id="pf-web" aria-live="polite"><p class="pf-wait">Loading the website record</p></div></div></section>' +
 
       '<section class="pf-sec pf-dq"><div class="wrap"><h2>Data quality</h2>' +
       '<p class="sub">How much evidence we hold on this project, not how good the project is. A high number means the scores above rest on more sources.</p>' +
@@ -162,7 +166,7 @@
       (!c.register ? '<p class="pf-ponly pf-pline"><b>Official register:</b> no register check on file for this project.</p>' : '') +
       (!c.sat ? '<p class="pf-ponly pf-pline"><b>From space:</b> no satellite check on file for this project.</p>' : '') +
       (!c.fp ? '<p class="pf-ponly pf-pline"><b>Evidence fingerprint:</b> none stored yet.</p>' : '') +
-      ((c.history || []).length ? '<div class="pf-hist"><h3>What changed on the developer\'s page</h3><p class="muted">Our research agent reads the page every week and records every change.</p><ol>' + c.history.map(function(h){ var f = function(v){ return v === null || v === undefined ? 'not stated' : v === true ? 'yes' : v === false ? 'no' : String(v); }; return '<li><time>' + esc(h.d) + '</time><span>' + esc(h.f) + ': <s>' + esc(f(h.from)) + '</s> → <b>' + esc(f(h.to)) + '</b></span></li>'; }).join('') + '</ol></div>' : '') +
+      '<div id="pf-drift" aria-live="polite">' + histHtml(c) + '</div>' +
       '</div></section>' +
 
       '<section class="pf-sec"><div class="wrap"><h2>Problems in public reports</h2>' +
@@ -187,6 +191,7 @@
 
       '<div class="wrap pf-noprint"><div class="pf-cta"><h2>Buying a project that is not on this list?</h2><p>Send us the link. We read what the developer publishes, check it against registers and tell you what is missing before you pay.</p><div class="pf-act"><a class="btn btn-hi" href="/check">Check your own project</a><a class="btn btn-line" href="/follow?id=' + encodeURIComponent(c.id) + '">Follow ' + esc(c.id) + '</a></div></div></div>';
     root.innerHTML = html;
+    loadIntel(c);
     var pb = document.getElementById('pf-print');
     if (pb) pb.addEventListener('click', function(){ try { window.print(); } catch (e) {} });
     var sb = document.getElementById('pf-star');
@@ -197,6 +202,101 @@
       if (m) m.innerHTML = wlMsg(on, true);
     });
   }
+  /* ---------- What would change this score (open scoring rules, run in the browser by /p/whatif.js) ---------- */
+  function tierName(t){ return (TIER[t] || TIER.mixed)[0]; }
+  function whatIfHtml(c, C){
+    var S = window.KBScore, K = window.KTI; if (!S) return '';
+    var w = S.whatIf(c, C, K), b = w.base, match = 0;
+    C.forEach(function(x){ var e = S.evaluate(x); if (e.score === x.score && e.vscore === (x.vscore || 0) && e.tier === x.tier) match++; });
+    var rows = K ? K.compute({ cases: C }).rows : [];
+    var arrow = function(a, z){ return a === z ? '<span class="pf-wi-same">' + esc(a) + ', unchanged</span>' : '<s>' + esc(a) + '</s> → <b>' + esc(z) + '</b>'; };
+    var item = function(it){
+      var parts = [];
+      if (it.score[0] !== it.score[1]) parts.push('<span>Published ' + arrow(it.score[0] + '/6', it.score[1] + '/6') + '</span>');
+      if (it.vscore[0] !== it.vscore[1]) parts.push('<span>Confirmed ' + arrow(it.vscore[0] + '/6', it.vscore[1] + '/6') + '</span>');
+      if (it.kind !== 'confirm' || it.tier[0] !== it.tier[1]) parts.push('<span>Tier ' + arrow(tierName(it.tier[0]), tierName(it.tier[1])) + '</span>');
+      if (it.market && it.market.from !== it.market.to) parts.push('<span>' + esc(c.market) + ' index ' + arrow(it.market.from.toFixed(1), it.market.to.toFixed(1)) + (it.market.rankFrom !== it.market.rankTo ? ', rank ' + it.market.rankFrom + ' → ' + it.market.rankTo : '') + '</span>');
+      return '<li><p>If ' + esc(it.text) + '</p><div class="pf-wi-d">' + parts.join('') + '</div></li>';
+    };
+    var grp = function(kind, h, note){ var L = w.items.filter(function(x){ return kind.indexOf(x.kind) >= 0; }); return L.length ? '<div class="pf-wi-g"><h3>' + h + '</h3>' + (note ? '<p class="pf-wi-n">' + note + '</p>' : '') + '<ul>' + L.map(item).join('') + '</ul></div>' : ''; };
+    var mk = w.market ? ' ' + esc(c.market) + ' transparency index ' + w.market.index.toFixed(1) + ' of 100, rank ' + w.market.rank + ' of ' + rows.length + ' markets.' : ' ' + esc(c.market) + ' has fewer than 3 tracked projects, so it has no transparency index yet.';
+    return '<section class="pf-sec pf-wi" id="what-if"><div class="wrap"><h2>What would change this score</h2>' +
+      '<p class="sub">Each line changes one input and reruns the same open scoring rules that produced the scores above. Nothing is estimated and no AI is involved: it is arithmetic on the public record, done in your browser.</p>' +
+      '<p class="pf-wi-now"><b>Today:</b> published ' + b.score + ' of 6, confirmed ' + b.vscore + ' of 6, tier <b>' + esc(tierName(b.tier)) + '</b>.' + mk + '</p>' +
+      (w.items.length ? '<div class="pf-wi-cols">' + grp(['publish', 'all'], 'If the developer published') + grp(['confirm'], 'If a registry or independent source confirmed', 'Confirmation raises the confirmed score only. The tier follows what is published and any public problems.') + grp(['flags'], 'If the public problems went away') + '</div>' : '<p class="pf-call ok">Every check is published and confirmed: no single change would raise these scores.</p>') +
+      ((c.flags || []).length ? '<p class="pf-call">While a problem appears in public reports, the tier stays "' + esc(tierName('caution')) + '" however much is published. That is the rule, by design.</p>' : '') +
+      '<p class="pf-fine">The rules: one point per check the developer publishes, one per check confirmed by a registry or independent source; tier "' + esc(tierName('caution')) + '" with a public problem or 0 to 1 checks, "' + esc(tierName('clear')) + '" with 4 or more, otherwise "' + esc(tierName('mixed')) + '". Source: <a href="/open/scoring.py">scoring.py</a>, ported to <a href="/p/whatif.js">whatif.js</a> (version ' + esc(S.version) + ', <a href="/p/whatif.test.js">test</a>). Checked on this page just now: the same code reproduces the published scores and tier of <b>' + match + ' of ' + C.length + '</b> projects. A higher score means more is public, not that it is genuine.</p>' +
+      '</div></section>';
+  }
+
+  /* ---------- Website age and promise drift (static files from the daily job, via /api/x/d/project/{id}) ---------- */
+  var MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  function ym(s){ var m = /^(\d{4})-(\d{2})/.exec(s || ''); return m ? MON[+m[2] - 1] + ' ' + m[1] : ''; }
+  function ago(s){
+    var m = /^(\d{4})-(\d{2})/.exec(s || ''); if (!m) return '';
+    var d = new Date(), n = (d.getFullYear() - +m[1]) * 12 + (d.getMonth() + 1 - +m[2]);
+    if (n < 1) return 'this month'; var y = Math.floor(n / 12), r = n % 12;
+    return (y ? y + ' year' + (y === 1 ? '' : 's') : '') + (y && r ? ' ' : '') + (r ? r + ' month' + (r === 1 ? '' : 's') : '') + ' ago';
+  }
+  function histHtml(c){
+    if (!(c.history || []).length) return '';
+    var f = function(v){ return v === null || v === undefined ? 'not stated' : v === true ? 'yes' : v === false ? 'no' : String(v); };
+    return '<div class="pf-hist"><h3>What changed on the developer\'s page</h3><p class="muted">Changes recorded by our research agent.</p><ol>' + c.history.map(function(h){ return '<li><time>' + esc(h.d) + '</time><span>' + esc(h.f) + ': <s>' + esc(f(h.from)) + '</s> → <b>' + esc(f(h.to)) + '</b></span></li>'; }).join('') + '</ol></div>';
+  }
+  function webHtml(j, c){
+    var w = j && j.website, M = j && j.website_meta;
+    if (!M) return '<p class="pf-wait">Starting: the daily website-age job has not published its first results yet. This section fills in automatically once it has.</p>';
+    var src = '<p class="pf-fine">Source: RDAP (the registry\'s own record, found through the IANA bootstrap) and Certificate Transparency logs (crt.sh)' + (w && w.checked ? ', checked ' + esc(w.checked) : '') + '. The domain itself is not shown, because projects stay anonymous until verification is complete. Certificate logs are complete only from 2018, and a domain can change hands, so an old domain is not proof of an old company.</p>';
+    if (!w) return '<p class="sub">No website record for this project.</p>' + src;
+    var f = w.founded_claim;
+    if (w.site !== 'own') return '<p class="pf-call ok" style="border-color:var(--line);background:#fff">The page we track for this project is on a third-party site (a listing portal, agent or news site), so its domain age says nothing about the developer and we do not date it.' + (f ? ' The developer states it was founded in <b>' + f + '</b>; we have not dated its own website.' : '') + '</p>' + src;
+    var cells = [
+      ['Website domain registered', w.reg ? ym(w.reg) : 'Not available', w.reg ? ago(w.reg) : (w.reg_note || '')],
+      ['First TLS certificate logged', w.ct ? ym(w.ct) : 'None found', w.ct ? ago(w.ct) : (w.ct_note || '')],
+      ['Developer says it was founded', f ? String(f) : 'Not stated', f ? (new Date().getFullYear() - f) + ' years of claimed history' : 'no founding year in public sources']
+    ];
+    var html = '<dl class="pf-web">' + cells.map(function(x){ return '<div><dt>' + esc(x[0]) + '</dt><dd>' + esc(x[1]) + '</dd><small>' + esc(x[2]) + '</small></div>'; }).join('') + '</dl>';
+    var first = w.reg || w.ct, fy = first ? +first.slice(0, 4) : null;
+    if (f && fy && fy - f >= 3) html += '<p class="pf-call"><b>The website is ' + (fy - f) + ' years younger than the claimed history.</b> The developer says it was founded in ' + f + '; the earliest trace of this website is ' + esc(ym(first)) + '. That can be innocent (a rebrand, or a site made for this one project), but ask for the company registration extract and a list of delivered projects with addresses you can visit.</p>';
+    else if (f && fy) html += '<p class="pf-call ok">The website\'s age fits the claimed founding year (' + f + ').</p>';
+    else if (first && (Date.now() - Date.parse(first + '-01')) < 365 * 864e5) html += '<p class="pf-call"><b>This website is less than a year old.</b> Ask how long the company has been trading and for projects it has already handed over.</p>';
+    return html + src;
+  }
+  var DLABEL = { 'plans published': 'plans_published', 'permit claimed': 'permit_claim', 'guaranteed-return language': 'guaranteed_language', 'permit number published': 'permit_number', 'completion': 'completion_year', 'price from': 'price_from', 'deposit protection stated': 'escrow_or_guarantee', 'advertised yield %': 'advertised_yield_pct' };
+  function dval(f, v){
+    if (v === null || v === undefined) return 'not stated';
+    if (f === 'permit_number' || f === 'escrow_or_guarantee') return v === true ? 'stated' : String(v);
+    if (v === true) return 'yes'; if (v === false) return 'no';
+    if (f === 'title_type') return String(v).replace(/_/g, ' ');
+    return String(v);
+  }
+  function driftHtml(j, c){
+    var d = j && j.drift, M = j && j.drift_meta;
+    if (!M) return histHtml(c) + '<p class="pf-wait">Starting: the day-by-day comparison of the developer\'s page has not published yet.</p>';
+    var nd = (M.days || []).length;
+    var head = '<h3>What changed on the developer\'s page</h3>';
+    if (!d) return '<div class="pf-hist">' + head + '<p class="muted">We have no readable daily copy of this page yet: it may block automated reading, or failed to load on every run since daily copies started on ' + esc(M.first_day) + '.</p></div>' + histHtml(c);
+    var ch = (d.changes || []).slice(), seen = {};
+    ch.forEach(function(x){ seen[x.f + '|' + x.first_seen] = 1; });
+    (c.history || []).forEach(function(h){ var f = DLABEL[h.f]; if (f && seen[f + '|' + h.d]) return; ch.push({ f: f || h.f, label: h.f.charAt(0).toUpperCase() + h.f.slice(1), from: h.from, to: h.to, first_seen: h.d, log: true }); });
+    ch.sort(function(a, b){ return a.first_seen < b.first_seen ? 1 : a.first_seen > b.first_seen ? -1 : 0; });
+    var depth = 'We have <b>' + d.copies + ' daily cop' + (d.copies === 1 ? 'y' : 'ies') + '</b> of this page, from ' + esc(d.first) + ' to ' + esc(d.last) + (d.versions > 1 ? ', with ' + d.versions + ' different versions of the text' : d.versions === 1 && d.copies > 1 ? ' (the fingerprinted text was the same on every copy)' : '') + '. Daily copies only started on ' + esc(M.first_day) + ' (' + nd + ' runs so far), so this history is short and grows every day.';
+    var list = ch.length ? '<ol class="pf-drift">' + ch.map(function(x){
+      var to = x.f === 'price_from' && x.pct != null ? x.to : dval(x.f, x.to), from = x.f === 'price_from' && x.pct != null ? null : dval(x.f, x.from);
+      return '<li><time>' + esc(x.first_seen) + '</time><div><b>' + esc(x.label) + '</b>: ' + (from !== null ? '<s>' + esc(from) + '</s> → ' : '') + '<b>' + esc(to) + '</b>' +
+        (x.log ? '<small>Recorded in the agent\'s change log.</small>' : '<small>' + (from !== null ? 'Old value seen ' + esc(x.was_first) + (x.was_last !== x.was_first ? ' to ' + esc(x.was_last) : '') + '; new' : 'Seen') + ' value seen ' + esc(x.first_seen) + (x.last_seen !== x.first_seen ? ' to ' + esc(x.last_seen) : '') + '. Page fingerprints <code>' + esc(x.sha_from) + '</code> → <code>' + esc(x.sha_to) + '</code></small>') +
+        (x.reverted ? '<small class="pf-rev">Flipped back later: this may be a reading difference rather than an edit.</small>' : '') + '</div></li>';
+    }).join('') + '</ol>' : '<p class="pf-call ok">No change to the tracked promises across these ' + d.copies + ' copies.</p>';
+    return '<div class="pf-hist">' + head + '<p class="muted">' + depth + '</p>' + list +
+      '<p class="pf-fine">Compared every day: ' + esc((M.fields || []).join(', ').toLowerCase()) + '. Not yet compared daily: ' + esc((M.not_tracked_daily || []).join(', ')) + '. When the page text changes, an AI model re-reads what it advertises; we list a change only when the page fingerprint changed too. Prices are shown as a percentage, not an amount, so the project stays anonymous.</p></div>';
+  }
+  function loadIntel(c){
+    var put = function(id, h){ var el = document.getElementById(id); if (el) el.innerHTML = h; };
+    fetch('/api/x/d/project/' + encodeURIComponent(c.id)).then(function(r){ if (!r.ok) throw new Error('http'); return r.json(); })
+      .then(function(j){ put('pf-web', webHtml(j, c)); put('pf-drift', driftHtml(j, c)); })
+      .catch(function(){ put('pf-web', '<p class="pf-wait">The website record could not be loaded just now. Reload the page to try again.</p>'); });
+  }
+
   function starLabel(on){ return '<span aria-hidden="true">' + (on ? '\u2605' : '\u2606') + '</span> ' + (on ? 'Saved' : 'Save'); }
   function wlMsg(on, acted){ return on ? (acted ? (window.KBWatch && KBWatch.account && KBWatch.account() ? 'Saved to your watchlist and your account. ' : 'Saved to your watchlist in this browser. <a href="/login#signup">Create a free account</a> to keep it on every device. ') : 'In your watchlist. ') + '<a href="/watchlist/">See what changed</a>' : (acted ? 'Removed from your watchlist. ' : 'Save it to see what changes next time you visit. ') + '<a href="/watchlist/">Your watchlist</a>'; }
 
