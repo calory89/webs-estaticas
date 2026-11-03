@@ -299,7 +299,7 @@
     var other = uniq(after.filter(function (u) { return u.origin !== location.origin; }).map(function (u) { return u.host; }));
     el.innerHTML = '<b>Network since you chose the file:</b> ' + (own.length ? 'from kolaboro.com, downloads of ' + own.map(esc).join(', ') + '. ' : 'nothing from kolaboro.com. ') +
       (other.length ? 'Other hosts: ' + other.map(esc).join(', ') + ' (site analytics, with this tool masked). ' : '') + 'Your contract and the results are not in any request.' +
-      (ENGINE ? ' The AI model files come from huggingface.co and raw.githubusercontent.com, read from your browser cache once stored.' : '');
+      (ENGINE ? ' The AI model files come from Hugging Face (huggingface.co and its CDN hf.co) and raw.githubusercontent.com, read from your browser cache once stored.' : '');
   }
 
   /* ---------- flows ---------- */
