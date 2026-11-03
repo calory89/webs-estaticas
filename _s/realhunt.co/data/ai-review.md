@@ -1,7 +1,7 @@
 ## RealHunt AI score
-Scored now: 0 · total: 512 · approx cost (Haiku): $0.00
+Scored now: 15 · total: 527 · approx cost (Haiku): $0.07
 
-### Homes to review (312)
+### Homes to review (326)
 | home | beauty | condition | cover ok | keep | flags |
 |---|---|---|---|---|---|
 | [fr-esperaza-86k-sxd5p3](https://realhunt.co/deal/fr-esperaza-86k-sxd5p3) | 45 | 50 | False | False | dated kitchen cabinets and appliances, worn tile flooring throughout, cluttered, |
@@ -58,6 +58,11 @@ Scored now: 0 · total: 512 · approx cost (Haiku): $0.00
 | [pl-bielsk-podlaski-56k-483418](https://realhunt.co/deal/pl-bielsk-podlaski-56k-483418) | 45 | 55 | False | False | dated interior finishes throughout, worn wooden flooring and parquet, old kitche |
 | [de-bremen-60k-206993](https://realhunt.co/deal/de-bremen-60k-206993) | 45 | 55 | False | False | needs renovation and modernization, dated fixtures and finishes, small cramped k |
 | [de-chemnitz-55k-074122](https://realhunt.co/deal/de-chemnitz-55k-074122) | 45 | 55 | False | False | bare, empty rooms look depressing, dated bathroom with old fixtures, worn lamina |
+| [jp-takayama-shokawa-chalet-7k-179056](https://realhunt.co/deal/jp-takayama-shokawa-chalet-7k-179056) | 45 | 50 | False | False | exterior looks run-down and neglected, elevated on makeshift stilts, overgrown v |
+| [it-sangineto-sea-view-house-22k-129976](https://realhunt.co/deal/it-sangineto-sea-view-house-22k-129976) | 45 | 50 | False | False | Cluttered, lived-in interior spaces, Dated furnishings and decor, Steep narrow s |
+| [it-falerna-beachfront-studio-28k-726771](https://realhunt.co/deal/it-falerna-beachfront-studio-28k-726771) | 45 | 50 | False | False | Bare, depressing concrete walls, Outdated, worn furnishings, Mismatched cheap fu |
+| [jp-saku-forest-villa-16k-837899](https://realhunt.co/deal/jp-saku-forest-villa-16k-837899) | 45 | 50 | False | False | 1991 villa showing age and wear, overgrown vegetation and neglected grounds, roo |
+| [jp-inami-beach-bungalow-27k-272502](https://realhunt.co/deal/jp-inami-beach-bungalow-27k-272502) | 45 | 50 | False | False | incomplete interior renovation, bare concrete floors, unfinished spaces, dated f |
 | [dk-lyderslev-93k-15b047](https://realhunt.co/deal/dk-lyderslev-93k-15b047) | 52 | 65 | False | False | dated yellow exterior paint, small cramped rooms, basic kitchen finishes, worn b |
 | [fr-bourmont-60k-q27mnf](https://realhunt.co/deal/fr-bourmont-60k-q27mnf) | 52 | 45 | False | False | cluttered living spaces with boxes and personal items, dated interior design and |
 | [Dc32k2tDKLf](https://realhunt.co/deal/Dc32k2tDKLf) | 52 | 55 | False | False | dated furnishings and decor, worn bedding and fabrics, sparse, empty-feeling roo |
@@ -68,6 +73,7 @@ Scored now: 0 · total: 512 · approx cost (Haiku): $0.00
 | [es-lena-79k-45163](https://realhunt.co/deal/es-lena-79k-45163) | 52 | 55 | False | False | exterior needs renovation and modernization, overgrown garden and unkempt surrou |
 | [pl-radomsko-68k-641050](https://realhunt.co/deal/pl-radomsko-68k-641050) | 52 | 58 | False | False | dated décor and furnishings, worn, tired aesthetic throughout, basic kitchen nee |
 | [pl-jarocin-73k-877413](https://realhunt.co/deal/pl-jarocin-73k-877413) | 52 | 55 | False | False | dated interior design, worn furniture and fixtures, needs cosmetic updates, tire |
+| [jp-akagi-villa-28k-082879](https://realhunt.co/deal/jp-akagi-villa-28k-082879) | 52 | 58 | False | False | exterior looks dated and tired, overgrown vegetation and poor landscaping, inter |
 | [DclJGYkDf8l](https://realhunt.co/deal/DclJGYkDf8l) | 55 | 50 | True | False | needs significant renovation, deteriorated stone facade, crumbling walls and pla |
 | [es-lliria-180k-695737](https://realhunt.co/deal/es-lliria-180k-695737) | 55 | 50 | False | False | worn artificial turf covering entire terrace, pool needs maintenance and cleanin |
 | [es-corpa-173k-599473](https://realhunt.co/deal/es-corpa-173k-599473) | 55 | 50 | False | False | dated decor and furnishings, worn tile flooring with visible stains, cluttered r |
@@ -84,6 +90,8 @@ Scored now: 0 · total: 512 · approx cost (Haiku): $0.00
 | [es-polaciones-80k-72000](https://realhunt.co/deal/es-polaciones-80k-72000) | 55 | 58 | False | False | exterior looks worn and weathered, roof tiles severely deteriorated, dated inter |
 | [tonala-70805](https://realhunt.co/deal/tonala-70805) | 55 | 58 | False | False | fallen leaves and debris scattered throughout, weathered concrete flooring, visi |
 | [gr-evia-pefki-80k-19672601](https://realhunt.co/deal/gr-evia-pefki-80k-19672601) | 55 | 58 | False | False | dark, gloomy sunset cover photo, sparse, neglected outdoor appearance, worn whit |
+| [it-falconara-torremezzo-sea-terrace-29k-942544](https://realhunt.co/deal/it-falconara-torremezzo-sea-terrace-29k-942544) | 55 | 55 | False | False | worn terrace tiles and surfaces, visible mold and algae stains on walls, outdate |
+| [jp-kitakaruizawa-villa-26k-093770](https://realhunt.co/deal/jp-kitakaruizawa-villa-26k-093770) | 55 | 50 | False | False | dated 1990s interior design, worn kitchen appliances and cabinets, tired, outdat |
 | [chapmanville-82875](https://realhunt.co/deal/chapmanville-82875) | 58 | 62 | False | False | exterior looks dated and worn, metal roof appears aged, modest curb appeal, smal |
 | [DcsW6VPIMJO](https://realhunt.co/deal/DcsW6VPIMJO) | 58 | 62 | False | False | hallway looks dated and institutional, retro kitchens need modernization, 1950s  |
 | [es-roquetas-de-mar-82k-66798](https://realhunt.co/deal/es-roquetas-de-mar-82k-66798) | 58 | 62 | False | False | kitchen dated and cramped, mismatched furniture styles, worn flooring, cluttered |
@@ -128,6 +136,7 @@ Scored now: 0 · total: 512 · approx cost (Haiku): $0.00
 | [de-chemnitz-45k-168857](https://realhunt.co/deal/de-chemnitz-45k-168857) | 62 | 65 | False | False | dated kitchen design from 1990s, small 41m² studio apartment, worn tile backspla |
 | [de-chemnitz-50k-665910](https://realhunt.co/deal/de-chemnitz-50k-665910) | 62 | 65 | False | False | dated tile flooring in kitchen, basic laminate floors, sparse, bare aesthetic, 1 |
 | [de-chemnitz-50k-950618](https://realhunt.co/deal/de-chemnitz-50k-950618) | 62 | 70 | False | False | loggia lacks furniture and feels bare, rooms are narrow and somewhat cramped, no |
+| [it-messina-acqualadrone-seafront-30k-356356](https://realhunt.co/deal/it-messina-acqualadrone-seafront-30k-356356) | 62 | 58 | False | False | dated 1985 building with visible wear, terrace needs maintenance and cleaning, w |
 | [es-villar-del-arzobispo-125k-092921](https://realhunt.co/deal/es-villar-del-arzobispo-125k-092921) | 65 | 55 | False | False | unfinished construction site appearance, bare dirt grounds need landscaping, inc |
 | [DcTSbXtj9qu](https://realhunt.co/deal/DcTSbXtj9qu) | 65 | 72 | False | False | cover photo depressing with empty parking lot, coastal industrial aesthetic not  |
 | [es-reinosa-85k-84223](https://realhunt.co/deal/es-reinosa-85k-84223) | 65 | 70 | False | False | Dated interior design aesthetic, Mismatched furniture and decor, Wooden beam cei |
@@ -281,6 +290,10 @@ Scored now: 0 · total: 512 · approx cost (Haiku): $0.00
 | [it-tuscany-montemerano-saturnia-139k](https://realhunt.co/deal/it-tuscany-montemerano-saturnia-139k) | 72 | 68 | False | False | hedges overgrown and unkempt, needs landscaping work, dated interior fixtures vi |
 | [es-santomera-penthouse-145k-161987047](https://realhunt.co/deal/es-santomera-penthouse-145k-161987047) | 72 | 75 | False | False | dated furniture and decor in living areas, photo 0 looks dim and uninviting, bed |
 | [es-torrevieja-torresol-studio-pool-99k](https://realhunt.co/deal/es-torrevieja-torresol-studio-pool-99k) | 72 | 75 | False | True | tiny 29m² studio, dated kitchen appliances, small living space, no bedroom |
+| [jp-takayama-log-cabin-11k-225929](https://realhunt.co/deal/jp-takayama-log-cabin-11k-225929) | 72 | 65 | True | False | needs deep cleaning and decluttering, dated interior design and furnishings, clu |
+| [jp-izu-amagi-cabin-onsen-10k-835694](https://realhunt.co/deal/jp-izu-amagi-cabin-onsen-10k-835694) | 72 | 58 | False | False | 1982 cabin showing age and wear, dated wood interiors need refreshing, exterior  |
+| [jp-agano-forest-cabin-23k-775004](https://realhunt.co/deal/jp-agano-forest-cabin-23k-775004) | 72 | 75 | False | True | exterior looks dated and overgrown, photo 0 too dark and forest-heavy, appliance |
+| [jp-gifu-renovated-house-19k-991953](https://realhunt.co/deal/jp-gifu-renovated-house-19k-991953) | 72 | 85 | False | False | exterior looks institutional and plain, bright green flooring appears temporary, |
 | [it-san-siro-95k-057133](https://realhunt.co/deal/it-san-siro-95k-057133) | 75 | 72 | False | True | exterior looks aged and weathered, overgrown vegetation and clutter in courtyard |
 | [dk-hurup-66k-a04f4a](https://realhunt.co/deal/dk-hurup-66k-a04f4a) | 75 | 78 | False | True | Cover photo out of focus with obstructed view, Historic 1850s building may feel  |
 | [dk-hygum-90k-715977](https://realhunt.co/deal/dk-hygum-90k-715977) | 75 | 80 | False | True | Photo 0 exterior looks dated and industrial, Brick facade shows weathering, Sett |
@@ -302,6 +315,7 @@ Scored now: 0 · total: 512 · approx cost (Haiku): $0.00
 | [gr-trikeri-sea-terrace-120k](https://realhunt.co/deal/gr-trikeri-sea-terrace-120k) | 75 | 70 | False | False | unfinished interior decoration, mismatched furniture and clutter, dated aestheti |
 | [se-gnarp-villa-glazed-porch-82k](https://realhunt.co/deal/se-gnarp-villa-glazed-porch-82k) | 75 | 70 | False | True | cover photo looks dated and cluttered, exterior shows age and wear, modest curb  |
 | [es-los-urrutias-beachfront-tourist-licence-116k](https://realhunt.co/deal/es-los-urrutias-beachfront-tourist-licence-116k) | 75 | 70 | False | False | pink/red salt evaporation pools dominate photos 0-1, dated striped sofa in photo |
+| [it-pollina-cefalu-sea-view-30k-685163](https://realhunt.co/deal/it-pollina-cefalu-sea-view-30k-685163) | 75 | 55 | False | False | aged terracotta roof needs attention, worn building facades, deteriorated exteri |
 | [lake-como-peglio-85000](https://realhunt.co/deal/lake-como-peglio-85000) | 78 | 75 | False | True | exterior arches appear aged and weathered, surrounding village looks somewhat ru |
 | [es-costa-del-silencio-239k-481637](https://realhunt.co/deal/es-costa-del-silencio-239k-481637) | 78 | 82 | False | True | Photo 0 shows dated complex architecture and cluttered pool area, Communal areas |
 | [us-dora-84k-329130](https://realhunt.co/deal/us-dora-84k-329130) | 78 | 82 | False | True | exterior siding appears dated and weathered, cover photo lacks curb appeal, mode |
