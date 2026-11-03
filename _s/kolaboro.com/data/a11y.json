@@ -1,22 +1,22 @@
 {
- "updated": "2026-11-03T13:32:44.351Z",
+ "updated": "2026-11-03T13:40:37.566Z",
  "base": "https://kolaboro.com",
  "tool": "axe-core 4.14.0 in Chrome, rules tagged wcag2a, wcag2aa, wcag21a, wcag21aa, wcag22aa",
  "viewport": "1280x900",
- "seconds": 307,
+ "seconds": 293,
  "goal": "0 serious or critical",
  "ok": false,
  "summary": {
-  "at": "2026-11-03T13:32:44.351Z",
+  "at": "2026-11-03T13:40:37.566Z",
   "pages": 116,
-  "errors": 4,
+  "errors": 0,
   "nodes_by_impact": {
    "critical": 2,
    "serious": 39,
    "moderate": 0,
    "minor": 0
   },
-  "pages_clean": 106,
+  "pages_clean": 110,
   "pages_with_serious_or_critical": 6
  },
  "rules": [
@@ -663,7 +663,8 @@
   },
   {
    "url": "/regulators/",
-   "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://kolaboro.com/regulators/",
+   "status": 200,
+   "error": null,
    "violations": []
   },
   {
@@ -704,7 +705,8 @@
   },
   {
    "url": "/nl/",
-   "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://kolaboro.com/nl/",
+   "status": 200,
+   "error": null,
    "violations": []
   },
   {
@@ -751,7 +753,8 @@
   },
   {
    "url": "/fr/pricing/",
-   "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://kolaboro.com/fr/pricing/",
+   "status": 200,
+   "error": null,
    "violations": []
   },
   {
@@ -762,7 +765,8 @@
   },
   {
    "url": "/ru/pricing/",
-   "error": "page.goto: net::ERR_HTTP_RESPONSE_CODE_FAILURE at https://kolaboro.com/ru/pricing/",
+   "status": 200,
+   "error": null,
    "violations": []
   },
   {
@@ -861,16 +865,16 @@
  ],
  "history": [
   {
-   "at": "2026-11-03T13:32:44.351Z",
+   "at": "2026-11-03T13:40:37.566Z",
    "pages": 116,
-   "errors": 4,
+   "errors": 0,
    "nodes_by_impact": {
     "critical": 2,
     "serious": 39,
     "moderate": 0,
     "minor": 0
    },
-   "pages_clean": 106,
+   "pages_clean": 110,
    "pages_with_serious_or_critical": 6
   },
   {
