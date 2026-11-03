@@ -42,7 +42,7 @@
     $('vdK2').textContent = n(D.totals.changes_listed);
     $('vdK3').textContent = n(D.run.captured);
     $('vdK4').textContent = n(D.run.eligible);
-    $('vdUpd').textContent = 'Last run ' + d(D.generated) + ': ' + n(D.run.captured) + ' pages captured (' + n(D.run.baselines_new) + ' first baselines, ' + n(D.run.changes_visible) + ' visible changes, ' + n(D.run.changes_invisible) + ' text changes too small to see), ' + n(D.run.failed) + ' pages failed to load' + (D.run.skipped_budget ? ', ' + n(D.run.skipped_budget) + ' left for the next run (time budget)' : '') + '. ' + n(D.run.without_baseline) + ' watched sites still have no baseline; up to ' + 150 + ' are added per daily run.';
+    $('vdUpd').textContent = 'Last run ' + d(D.generated) + ': ' + n(D.run.captured) + ' pages captured (' + n(D.run.baselines_new) + ' first baselines, ' + n(D.run.changes_visible) + ' visible changes, ' + n(D.run.changes_invisible) + ' text changes too small to see), ' + n(D.run.failed) + ' pages failed to load' + (D.run.skipped_budget ? ', ' + n(D.run.skipped_budget) + ' left for the next run (time budget)' : '') + '. ' + n(Math.max(0, D.run.eligible - D.totals.projects_with_baseline)) + ' watched sites still have no baseline; up to ' + 150 + ' are added per daily run.';
     var mks = {}; D.projects.forEach(function (p) { if (p.market) mks[p.market] = 1; });
     Object.keys(mks).sort().forEach(function (m) { var o = document.createElement('option'); o.value = m; o.textContent = m; $('vdMk').appendChild(o); });
     if (!D.totals.changes_listed) $('vdSel').value = 'all';
