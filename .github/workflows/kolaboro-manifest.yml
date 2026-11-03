@@ -1,0 +1,56 @@
+name: Kolaboro site manifest
+# After each deploy (checked every 30 minutes): SHA-256 of every published kolaboro.com file outside /data/ at the commit the live
+# site serves (kolaboro.com/data/site-manifest.json, served signed at /api/x/n/manifest), and a deterministic esbuild bundle hash
+# of the worker for each new worker source tree (kolaboro.com/data/builds.json, served signed at /api/x/n/builds).
+# Logic: tools/kolaboro-manifest/manifest.py. A file is committed to pub/_lovable only when its content changed, so the
+# manifest's own deploy does not trigger another manifest.
+on:
+  schedule:
+    - cron: '23,53 * * * *'
+  push:
+    branches: [main]
+    paths: ['tools/kolaboro-manifest/**', '.github/workflows/kolaboro-manifest.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-manifest
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          filter: blob:none
+          sparse-checkout: tools/kolaboro-manifest
+      - uses: actions/setup-node@v4
+        with: { node-version: '22' }
+      - uses: actions/cache@v4
+        with:
+          path: ${{ runner.temp }}/kbm-cache
+          key: kbm-blobs-${{ github.run_id }}
+          restore-keys: kbm-blobs-
+      - name: Hash the live commit and build the worker
+        run: |
+          set -e
+          git fetch -q --depth=1 --filter=blob:none origin +refs/heads/pub/_lovable:refs/remotes/origin/pub/_lovable
+          python3 tools/kolaboro-manifest/manifest.py
+      - name: Publish to kolaboro.com
+        run: |
+          set -e
+          O=$RUNNER_TEMP/kbm; ls $O/*.json >/dev/null 2>&1 || { echo "nothing changed"; exit 0; }
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          for i in 1 2 3 4 5; do
+            P=$(git rev-parse FETCH_HEAD)
+            export GIT_INDEX_FILE=$RUNNER_TEMP/idx; rm -f $GIT_INDEX_FILE; git read-tree $P
+            for f in $O/*.json; do H=$(git hash-object -w "$f"); git update-index --add --cacheinfo 100644,$H,_s/kolaboro.com/data/$(basename $f); done
+            T=$(git write-tree --missing-ok); unset GIT_INDEX_FILE
+            [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
+            C=$(git commit-tree $T -p $P -m "kolaboro.com: site manifest and build record $(date -u +%FT%H:%M)")
+            git push -q origin $C:refs/heads/pub/_lovable && exit 0
+            sleep 7; git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          done; exit 1
