@@ -1282,3 +1282,5 @@ export async function ssr(base, u, kind) {
   const h = new Headers(res.headers); h.set('cache-control', 'public, max-age=600');
   return new Response(res.body, { status: 200, headers: h });
 }
+// Shared helpers for the feature modules in kbx_*.js (routed by kbx.js).
+export { json, rpc, sha, anthropic, aiAllowed, claude, signBody, openData, openLoad, deskReview, pageParts, scanInjection, logHeads, verifyAssertion };
