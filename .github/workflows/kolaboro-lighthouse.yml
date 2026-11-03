@@ -34,10 +34,12 @@ jobs:
           export LIGHTHOUSE_BIN="$RUNNER_TEMP/node_modules/.bin/lighthouse" CHROME_PATH="$(command -v google-chrome || command -v chromium)"
           node tools/kolaboro-lighthouse/run.mjs "$RUNNER_TEMP/lh"
       - name: Publish to kolaboro.com
-        run: bash tools/kolaboro-reliability/publish.sh "kolaboro.com: Lighthouse $(date -u +%F)" "$RUNNER_TEMP/lh/lighthouse.json=_s/kolaboro.com/data/lighthouse.json"
+        run: |
+          bash tools/kolaboro-reliability/publish.sh "kolaboro.com: Lighthouse $(date -u +%F)" "$RUNNER_TEMP/lh/lighthouse.json=_s/kolaboro.com/data/lighthouse.json"
       - name: Proposed thresholds (baseline run only)
         if: always()
-        run: '[ -f "$RUNNER_TEMP/lh/thresholds.proposed.json" ] && cat "$RUNNER_TEMP/lh/thresholds.proposed.json" || true'
+        run: |
+          [ -f "$RUNNER_TEMP/lh/thresholds.proposed.json" ] && cat "$RUNNER_TEMP/lh/thresholds.proposed.json" || true
       - uses: actions/upload-artifact@v4
         if: always()
         with: { name: lighthouse, path: '${{ runner.temp }}/lh/*.json', retention-days: 14 }
