@@ -4,7 +4,7 @@
   function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; }); }
   var C = [['performance', 'Performance'], ['accessibility', 'Accessibility'], ['best-practices', 'Best practices'], ['seo', 'SEO']];
   function col(v){ return v == null ? '#59626B' : v >= 90 ? '#086146' : v >= 50 ? '#B83A05' : '#9A2412'; }
-  fetch('/data/lighthouse.json', { cache: 'no-store' }).then(function(r){ if (!r.ok) throw 0; return r.json(); }).then(function(d){
+  fetch('/data/lighthouse.json?h=' + Math.floor(Date.now() / 36e5), { cache: 'no-store' }).then(function(r){ if (!r.ok) throw 0; return r.json(); }).then(function(d){
     var h = '<p style="margin:0 0 8px">' + esc(d.tool) + ', ' + esc(String(d.generated).slice(0, 16).replace('T', ' ')) + ' UTC, ' + d.pages + ' pages. ' +
       (d.baseline ? 'First run: thresholds are being set from these scores.' : d.flags.length ? '<b style="color:#9A2412">' + d.flags.length + ' below threshold.</b>' : '<b style="color:#086146">Every score at or above its threshold.</b>') +
       (d.run ? ' <a href="' + esc(d.run) + '" rel="noopener">Run log</a>' : '') + '</p>';
