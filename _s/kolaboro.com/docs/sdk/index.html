@@ -59,7 +59,7 @@
 <div class="eg-k"><div><b>0.1.0</b><span>version, both languages</span></div><div><b id="sk-js">…</b><span>ES module size</span></div><div><b id="sk-py">…</b><span>Python wheel size</span></div><div><b>0</b><span>runtime dependencies</span></div></div>
 
 <h2>Install</h2>
-<p>Not on npm or PyPI yet: install straight from kolaboro.com and compare the hash. The hashes below are read from <a href="/sdk/manifest.json">/sdk/manifest.json</a> and <a href="/sdk/SHA256SUMS">/sdk/SHA256SUMS</a>; the button recomputes them in your browser from the files themselves.</p>
+<p>Not on npm or PyPI yet: install straight from kolaboro.com and compare the hash. The hashes below are read from <a href="/sdk/manifest.json?v=b1755f8fdc">/sdk/manifest.json</a> and <a href="/sdk/SHA256SUMS?v=b1755f8fdc">/sdk/SHA256SUMS</a>; the button recomputes them in your browser from the files themselves.</p>
 <h3>JavaScript and TypeScript</h3>
 <p>Browsers, Node 20+, Deno, Bun and Cloudflare Workers. Types in <a href="/sdk/kolaboro.d.ts">kolaboro.d.ts</a>.</p>
 <div class="eg-code">import { Kolaboro } from 'https://kolaboro.com/sdk/kolaboro-0.1.0.mjs';
@@ -126,7 +126,7 @@ cd sdk/src/python &amp;&amp; python3 -m unittest discover -s tests</div>
 (function(){
   function set(id,t){var x=document.getElementById(id);if(x)x.textContent=t}
   var M=null;
-  fetch('/sdk/manifest.json',{cache:'no-store'}).then(function(r){return r.json()}).then(function(m){M=m;var f=m.files;
+  fetch('/sdk/manifest.json?v=b1755f8fdc').then(function(r){return r.json()}).then(function(m){M=m;var f=m.files;
     set('sk-js',(f['kolaboro-0.1.0.mjs'].bytes/1024).toFixed(1)+' KB');set('sk-py',(f['kolaboro-0.1.0-py3-none-any.whl'].bytes/1024).toFixed(1)+' KB');
     set('sk-sri',f['kolaboro-0.1.0.mjs'].sri);set('sk-whl',f['kolaboro-0.1.0-py3-none-any.whl'].sha256);}).catch(function(){set('sk-sri','manifest unavailable')});
   function hex(b){return Array.prototype.map.call(new Uint8Array(b),function(x){return('0'+x.toString(16)).slice(-2)}).join('')}
