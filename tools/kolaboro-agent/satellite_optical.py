@@ -240,11 +240,22 @@ def site_series(cat, site, mlist, prev, outdir, deadline):
     first_ok = next((m for m in ok if m['month'] == base_month), None)
     last_ok = ok[-1] if ok else None
     summary = {'months': len(out), 'months_clear': len(ok), 'frames': len(frames), 'scenes_read': scenes_read, 'seconds': round(time.time() - t0)}
-    if first_ok and last_ok and last_ok is not first_ok:
-        summary.update({'from': first_ok['month'], 'to': last_ok['month'],
-                        'built_change_pts': round(last_ok['built_pct'] - first_ok['built_pct'], 1),
-                        'brightness_change': round(last_ok['brightness'] - first_ok['brightness'], 1),
-                        'new_built_since_baseline_pct': last_ok.get('new_built_since_baseline_pct')})
+    # Headline: median of the first 12 months against the median of the last 12 months, so wet and dry seasons cancel out.
+    # A first-month vs last-month comparison mixes construction with the season (green wet-season fields vs dry grass).
+    def _med(v):
+        v = sorted(v); n = len(v)
+        return None if not n else (v[n // 2] if n % 2 else (v[n // 2 - 1] + v[n // 2]) / 2)
+    if len(mlist) >= 24:
+        fy, ly = set(mlist[:12]), set(mlist[-12:])
+        a = [m for m in ok if m['month'] in fy]; b = [m for m in ok if m['month'] in ly]
+        if len(a) >= 6 and len(b) >= 6:
+            summary.update({'first_year': '%s to %s' % (mlist[0], mlist[11]), 'last_year': '%s to %s' % (mlist[-12], mlist[-1]),
+                            'first_year_clear_months': len(a), 'last_year_clear_months': len(b),
+                            'built_first_year_median': round(_med([m['built_pct'] for m in a]), 1), 'built_last_year_median': round(_med([m['built_pct'] for m in b]), 1),
+                            'brightness_first_year_median': round(_med([m['brightness'] for m in a]), 1), 'brightness_last_year_median': round(_med([m['brightness'] for m in b]), 1)})
+            summary['built_change_pts'] = round(summary['built_last_year_median'] - summary['built_first_year_median'], 1)
+            nb = [m['new_built_since_baseline_pct'] for m in b if m.get('new_built_since_baseline_pct') is not None]
+            if nb: summary['new_built_since_baseline_last_year_median'] = round(_med(nb), 1)
     return {'id': site.id, 'label': site.s['label'], 'area': 'plot buffer %d m' % PLOT_BUFFER_M if site.plot else 'box %.1f km' % (HALF * 2 * 111),
             'baseline_month': base_month, 'baseline_crs': crs0, 'timelapse': len(frames) >= 2, 'summary': summary, 'months': out}
 
@@ -272,7 +283,7 @@ def main():
     mlist = months((y0, m0), end)
     prev = {}
     if not a.no_prev:
-        try: prev = {s['id']: s for s in json.load(urllib.request.urlopen(PREV_URL, timeout=30)).get('sites', [])}
+        try: prev = {s['id']: s for s in json.load(urllib.request.urlopen(PREV_URL + '?run=' + str(int(time.time())), timeout=30)).get('sites', [])}
         except Exception as e: print('no previous file', str(e)[:80])
     cat = Client.open(STAC)
     t0 = time.time(); deadline = t0 + a.budget_min * 60
@@ -289,7 +300,7 @@ def main():
            'method': ('Per month, up to %d scenes that see at least %d%% of the area without cloud (Sentinel-2 scene classification: cloud, cirrus, cloud shadow, dark and no-data pixels removed), '
                       'per-pixel median. A month is reported only if at least %d%% of the area was seen clear. built_pct: share of clear pixels with NDBI > %.2f and NDVI < %.2f '
                       '(built-up OR bare ground: at 10 m a cleared plot and a concrete slab look alike). new_built_since_baseline_pct: pixels that were not built-up or bare in the baseline month and are now. '
-                      'Frames: months at least %d%% clear.') % (MAX_SCENES, MIN_SCENE_CLEAR * 100, MONTH_OK, BUILT_NDBI, BUILT_NDVI, FRAME_OK),
+                      'Frames: months at least %d%% clear. Headline change: median of the last 12 months minus median of the first 12 months, so wet and dry seasons cancel out.') % (MAX_SCENES, MIN_SCENE_CLEAR * 100, MONTH_OK, BUILT_NDBI, BUILT_NDVI, FRAME_OK),
            'from': mlist[0], 'to': mlist[-1], 'seconds': round(time.time() - t0),
            'sites': sorted(res, key=lambda r: [s.id for s in sites].index(r['id']))}
     json.dump(out, open(os.path.join(a.outdir, 'satellite-optical.json'), 'w'), indent=1)

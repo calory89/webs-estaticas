@@ -47,7 +47,7 @@ jobs:
               H=$(git hash-object -w "$RUNNER_TEMP/opt/$f"); git update-index --add --cacheinfo 100644,$H,_s/kolaboro.com/k/sat/$f; done
             if [ -n "${{ github.event.inputs.sites }}" ]; then
               # partial run: merge into the published file instead of replacing it
-              curl -sf https://kolaboro.com/data/satellite-optical.json -o $RUNNER_TEMP/prev.json || echo '{"sites":[]}' > $RUNNER_TEMP/prev.json
+              curl -sf "https://kolaboro.com/data/satellite-optical.json?run=$(date +%s)" -o $RUNNER_TEMP/prev.json || echo '{"sites":[]}' > $RUNNER_TEMP/prev.json
               python3 - "$RUNNER_TEMP/prev.json" "$RUNNER_TEMP/opt/satellite-optical.json" <<'EOF'
           import json, sys
           p, n = json.load(open(sys.argv[1])), json.load(open(sys.argv[2]))
