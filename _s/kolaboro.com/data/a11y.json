@@ -1,0 +1,1099 @@
+{
+ "updated": "2026-11-03T13:14:50.049Z",
+ "base": "https://kolaboro.com",
+ "tool": "axe-core 4.14.0 in Chrome, rules tagged wcag2a, wcag2aa, wcag21a, wcag21aa, wcag22aa",
+ "viewport": "1280x900",
+ "seconds": 310,
+ "goal": "0 serious or critical",
+ "ok": false,
+ "summary": {
+  "at": "2026-11-03T13:14:50.049Z",
+  "pages": 116,
+  "errors": 0,
+  "nodes_by_impact": {
+   "critical": 2,
+   "serious": 87,
+   "moderate": 0,
+   "minor": 0
+  },
+  "pages_clean": 87,
+  "pages_with_serious_or_critical": 29
+ },
+ "rules": [
+  {
+   "id": "label",
+   "impact": "critical",
+   "help": "Form elements must have labels",
+   "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label?application=axeAPI",
+   "pages": 1,
+   "nodes": 1,
+   "examples": [
+    "/portal/demo/"
+   ]
+  },
+  {
+   "id": "select-name",
+   "impact": "critical",
+   "help": "Select element must have an accessible name",
+   "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/select-name?application=axeAPI",
+   "pages": 1,
+   "nodes": 1,
+   "examples": [
+    "/portal/demo/"
+   ]
+  },
+  {
+   "id": "label-content-name-mismatch",
+   "impact": "serious",
+   "help": "Elements must have their visible text as part of their accessible name",
+   "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
+   "pages": 25,
+   "nodes": 60,
+   "examples": [
+    "/",
+    "/report/sample/",
+    "/es/",
+    "/satellite/",
+    "/developers/reply/"
+   ]
+  },
+  {
+   "id": "scrollable-region-focusable",
+   "impact": "serious",
+   "help": "Scrollable region must have keyboard access",
+   "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/scrollable-region-focusable?application=axeAPI",
+   "pages": 3,
+   "nodes": 5,
+   "examples": [
+    "/portal/demo/",
+    "/docs/api/",
+    "/engineering/signed-photos/"
+   ]
+  },
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+   "pages": 2,
+   "nodes": 22,
+   "examples": [
+    "/portal/demo/",
+    "/technology/"
+   ]
+  }
+ ],
+ "pages": [
+  {
+   "url": "/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 2,
+     "targets": [
+      "summary[aria-label=\"Language: English\"]",
+      ".prod-vid"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/report/sample/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 4,
+     "targets": [
+      "div[aria-label=\"Open photo 1\"]",
+      "div[aria-label=\"Open photo 2\"]",
+      "div[aria-label=\"Open photo 3\"]"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/how-we-score/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/agents/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/developers/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/investors/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/yield-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/checklist/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/bali/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/guides/bali-land-titles/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/guides/off-plan-payments/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/legal/privacy/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/legal/terms/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/dubai/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/phuket/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tulum/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/algarve/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/lombok/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/destinations/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/risk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/survey/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/academy/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/corrections/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "summary"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/academy/1/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/academy/3/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/academy/5/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/academy/6/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/academy/7/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/academy/8/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/academy/9/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/academy/10/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/academy/exam/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/demo/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/contract-scan/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/payment-plan/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/developers/self-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/about/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/roadmap/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/changelog/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/press/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/glossary/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/pricing/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/book/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/agents/id/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/guides/questions-to-ask-a-developer/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/guides/contract-clauses/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/research/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/cases/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/agents/visit/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/agents/how-we-choose/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/portal/demo/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label",
+     "impact": "critical",
+     "nodes": 1,
+     "targets": [
+      "input[name=\"due\"]"
+     ]
+    },
+    {
+     "id": "select-name",
+     "impact": "critical",
+     "nodes": 1,
+     "targets": [
+      "select[name=\"days\"]"
+     ]
+    },
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": 20,
+     "targets": [
+      "#xchk",
+      ".accepted:nth-child(1) > div > small:nth-child(2)",
+      ".accepted:nth-child(1) > div > .x-hash[title=\"SHA-256 of the file\"]"
+     ]
+    },
+    {
+     "id": "scrollable-region-focusable",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "#chat"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/copilot/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/independence/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/technology/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": 2,
+     "targets": [
+      ".cp-status > span",
+      ".cp-status > p"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/verify/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/status/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/docs/api/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "scrollable-region-focusable",
+     "impact": "serious",
+     "nodes": 3,
+     "targets": [
+      ".api-b:nth-child(10)",
+      ".api-b:nth-child(14)",
+      ".api-b:nth-child(17)"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/metrics/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/live/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/api-pilot/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/security/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/database/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/compare/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/transparency-index/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/extension/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/report/state-of-off-plan-2026/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/m/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/satellite/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 27,
+     "targets": [
+      "button[data-id=\"phuket-bangtao\"]",
+      "button[data-id=\"bali-seseh\"]",
+      "button[data-id=\"montenegro-lustica\"]"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/registers/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/press/data/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/standard/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/developers/templates/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/market-match/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/total-cost/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/payment-risk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/currency-risk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/delay-compensation/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/resale-exit/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/deposit-protection/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/my-checklist/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/developers/benchmark/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/developers/reply/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "#dr-drop"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/regulators/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/data/licence/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/lawyers/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/refund-tracker/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 2,
+     "targets": [
+      "summary[aria-label=\"Sprache: Deutsch\"]",
+      ".prod-vid"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/fr/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 2,
+     "targets": [
+      "summary[aria-label=\"Langue: Français\"]",
+      ".prod-vid"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/ru/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 2,
+     "targets": [
+      "summary[aria-label=\"Язык: Русский\"]",
+      ".prod-vid"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/nl/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 2,
+     "targets": [
+      "summary[aria-label=\"Taal: Nederlands\"]",
+      ".prod-vid"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/ar/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "summary[aria-label=\"اللغة: العربية\"]"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/zh/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 2,
+     "targets": [
+      "summary[aria-label=\"语言: 简体中文\"]",
+      ".prod-vid"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/data-policy/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/pricing/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "summary[aria-label=\"Idioma: Español\"]"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/es/database/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "summary"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/de/pricing/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "summary[aria-label=\"Sprache: Deutsch\"]"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/de/database/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "summary"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/fr/pricing/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "summary[aria-label=\"Langue: Français\"]"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/fr/database/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "summary"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/ru/pricing/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "summary[aria-label=\"Язык: Русский\"]"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/ru/database/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "summary"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/nl/pricing/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "summary[aria-label=\"Taal: Nederlands\"]"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/nl/database/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "summary"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/ar/pricing/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "summary[aria-label=\"اللغة: العربية\"]"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/ar/database/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "summary"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/zh/pricing/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "summary[aria-label=\"语言: 简体中文\"]"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/zh/database/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "label-content-name-mismatch",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "summary"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/log/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/engineering/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/engineering/ai-safety/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/engineering/evals/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/engineering/transparency-log/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/engineering/signed-photos/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "scrollable-region-focusable",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      ".eg-code"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/engineering/reliability/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  }
+ ],
+ "history": [
+  {
+   "at": "2026-11-03T13:14:50.049Z",
+   "pages": 116,
+   "errors": 0,
+   "nodes_by_impact": {
+    "critical": 2,
+    "serious": 87,
+    "moderate": 0,
+    "minor": 0
+   },
+   "pages_clean": 87,
+   "pages_with_serious_or_critical": 29
+  }
+ ]
+}
