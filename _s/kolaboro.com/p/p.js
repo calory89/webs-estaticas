@@ -283,7 +283,7 @@
     if (!d) return '<div class="pf-hist">' + head + '<p class="muted">We have no readable daily copy of this page yet: it may block automated reading, or failed to load on every run since daily copies started on ' + esc(M.first_day) + '.</p></div>' + histHtml(c);
     var ch = (d.changes || []).slice(), seen = {};
     ch.forEach(function(x){ seen[x.f + '|' + x.first_seen] = 1; });
-    (c.history || []).forEach(function(h){ var f = DLABEL[h.f]; if (f && seen[f + '|' + h.d]) return; ch.push({ f: f || h.f, label: h.f.charAt(0).toUpperCase() + h.f.slice(1), from: h.from, to: h.to, first_seen: h.d, log: true }); });
+    (c.history || []).forEach(function(h){ var f = DLABEL[h.f]; if ((f && seen[f + '|' + h.d]) || (h.d && h.d >= d.first)) return;   /* the daily comparison already covers these days (the log can also hold several runs on one day) */ ch.push({ f: f || h.f, label: h.f.charAt(0).toUpperCase() + h.f.slice(1), from: h.from, to: h.to, first_seen: h.d, log: true }); });
     ch.sort(function(a, b){ return a.first_seen < b.first_seen ? 1 : a.first_seen > b.first_seen ? -1 : 0; });
     var depth = 'We have <b>' + d.copies + ' daily cop' + (d.copies === 1 ? 'y' : 'ies') + '</b> of this page, from ' + esc(d.first) + ' to ' + esc(d.last) + (d.versions > 1 ? ', with ' + d.versions + ' different versions of the text' : d.versions === 1 && d.copies > 1 ? ' (the fingerprinted text was the same on every copy)' : '') + '. Daily copies only started on ' + esc(M.first_day) + ' (' + nd + ' runs so far), so this history is short and grows every day.';
     var list = ch.length ? '<ol class="pf-drift">' + ch.map(function(x){
