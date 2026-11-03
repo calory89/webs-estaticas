@@ -1,0 +1,58 @@
+name: Kolaboro company graph
+# Weekly: UK companies named in the private research records, their current directors and the other companies those
+# directors run, read from Companies House public pages (about 2 seconds between requests). Publishes only an anonymised
+# file, kolaboro.com/data/company-graph.json: no company names or numbers, no officer names, birth dates or addresses.
+on:
+  schedule:
+    - cron: '41 5 * * 3'
+  push:
+    branches: [main]
+    paths: ['tools/kolaboro-q/company_graph.py', '.github/workflows/kolaboro-company-graph.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-company-graph
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            tools/kolaboro-q
+            tools/kolaboro-agent/agent.py
+            tools/kolaboro-agent/projects.json
+            tools/kolaboro-agent/projects-world.json
+          sparse-checkout-cone-mode: false
+      - name: Build
+        run: |
+          set -e
+          mkdir -p "$RUNNER_TEMP/site/data"
+          python3 -I tools/kolaboro-q/company_graph.py tools/kolaboro-agent "$RUNNER_TEMP/site/data/company-graph.json" 2500
+          python3 -I -c "import json,sys;d=json.load(open(sys.argv[1]));print(d['coverage'],d['complete'])" "$RUNNER_TEMP/site/data/company-graph.json"
+      - name: Keep the previous file if this run matched nothing (register refused us)
+        run: |
+          set -e
+          R=$(python3 -I -c "import json,sys;print(json.load(open(sys.argv[1]))['coverage']['resolved'])" "$RUNNER_TEMP/site/data/company-graph.json")
+          if [ "$R" = "0" ]; then echo "no company resolved: not publishing"; echo "SKIP=1" >> $GITHUB_ENV; fi
+      - name: Publish to kolaboro.com
+        if: env.SKIP != '1'
+        run: |
+          set -e
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          for i in 1 2 3 4 5; do
+            P=$(git rev-parse FETCH_HEAD)
+            export GIT_INDEX_FILE=$RUNNER_TEMP/idx; rm -f $GIT_INDEX_FILE; git read-tree $P
+            H=$(git hash-object -w "$RUNNER_TEMP/site/data/company-graph.json")
+            git update-index --add --cacheinfo 100644,$H,_s/kolaboro.com/data/company-graph.json
+            T=$(git write-tree); unset GIT_INDEX_FILE
+            [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
+            C=$(git commit-tree $T -p $P -m "kolaboro.com: company graph $(date -u +%F)")
+            git push -q origin $C:refs/heads/pub/_lovable && exit 0
+            sleep 5; git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          done; exit 1
