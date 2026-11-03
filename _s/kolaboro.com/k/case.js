@@ -87,7 +87,7 @@
 
   function bind(c, x, token, demo){
     var ev = x.evidence || [];
-    if ($('xchk')) KBChain(c.id, ev).then(function(r){ $('xchk').innerHTML = r.ok ? '✓ chain verified in your browser' : '⚠ ' + r.bad.length + ' item(s) do not match'; $('xchk').style.color = r.ok ? '#1F8A5B' : '#B42318'; });
+    if ($('xchk')) KBChain(c.id, ev).then(function(r){ $('xchk').innerHTML = r.ok ? '✓ chain verified in your browser' : '⚠ ' + r.bad.length + ' item(s) do not match'; $('xchk').style.color = r.ok ? '#0B7A55' : '#B42318'; });
     document.querySelectorAll('[data-v]').forEach(function(btn){ btn.onclick = function(){ view(token, c.id, +btn.dataset.v); }; });
     $('xadd').onclick = function(){ addDoc(c, token, demo); };
     $('xjson').onclick = function(){ var blob = new Blob([JSON.stringify({ case: c.code, case_id: c.id, exported: new Date().toISOString(), formula: "chain = sha256((prev or 'genesis:' + case_id) + '|' + sha256 + '|' + kind + '|' + taken_at as YYYY-MM-DDTHH:MM:SSZ)", evidence: ev.map(function(e){ return { id: e.id, kind: e.kind, title: e.title, sha256: e.sha256, prev: e.prev, chain: e.chain, taken_at: e.taken_at, lat: e.lat, lng: e.lng, by: e.by, status: e.status }; }) }, null, 2)], { type: 'application/json' }); var u = URL.createObjectURL(blob), l = document.createElement('a'); l.href = u; l.download = 'kolaboro-' + c.code + '-evidence.json'; l.click(); };

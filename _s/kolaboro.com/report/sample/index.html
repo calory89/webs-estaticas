@@ -95,7 +95,7 @@
 
 <section class="sec alt rp-sec" id="plan"><div class="wrap grid2">
   <div><h2>Plan vs site</h2><p class="lead">What the drawings say, what our agent measured.</p></div>
-  <table class="rp-t"><thead><tr><th>Item</th><th>Drawing</th><th>Measured</th><th></th></tr></thead><tbody>
+  <table class="rp-t"><thead><tr><th>Item</th><th>Drawing</th><th>Measured</th><th><span class="sr-only">Match</span></th></tr></thead><tbody>
     <tr><td>Roof span</td><td>12.00 m</td><td>11.96 m</td><td class="ok2">✓</td></tr>
     <tr><td>Ground floor height</td><td>3.20 m</td><td>3.18 m</td><td class="ok2">✓</td></tr>
     <tr><td>Column grid</td><td>4.00 m</td><td>4.00 m</td><td class="ok2">✓</td></tr>
@@ -129,7 +129,7 @@
     <div><span class="rp-k">Evidence package</span><b>14 photos · 2 videos · 9 documents</b><small>Report fingerprint <code>507ed4c003626e11…</code></small></div>
   </div>
   <p class="muted" style="font-size:.85rem;margin-top:16px">Evidence, not a guarantee: this advice reflects what was verified on the date shown. A check lowers your risk; it can't remove it. Kolaboro gives independent verification and information, not legal or financial advice. Developers never pay Kolaboro.</p>
-  <div class="hero-cta"><a class="btn btn-hi" href="/check#analyze" data-ev="report_cta">Start with a free desk review</a><a class="btn btn-line" href="/cases/files/kolaboro-report-example-safe-to-pay.pdf">Download the PDF</a><button class="btn btn-line" type="button" onclick="window.print()">Print</button></div>
+  <div class="hero-cta"><a class="btn btn-hi" href="/check#analyze" data-ev="report_cta">Start with a free desk review</a><a class="btn btn-line" href="/cases/files/kolaboro-report-example-safe-to-pay.pdf">Download the PDF</a><button class="btn btn-line" type="button" data-print>Print</button></div>
 </div></section>
 </main>
 <div class="mcta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="cta_sticky">Protect my purchase</a></div>
@@ -197,7 +197,7 @@
     <p class="fine">© 2026 Kolaboro, operated by Equinox Investment Group LLC, 30 N Gould St Ste N, Sheridan, WY 82801, USA. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Reports are opinions based on the evidence listed in them.</p>
   </div>
 </footer>
-<script src="/k/site.js?v=2171c92c45" defer></script>
+<script src="/k/site.js?v=a1c61ce3e2" defer></script>
 <script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script><script>if(!window.clarity)(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z4eqcmaic7");</script><script>
 (function(){
   document.querySelectorAll('.rp-verify').forEach(function(b){ b.addEventListener('click', function(){
@@ -235,7 +235,7 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
     var img = ov.querySelector('img'), cap = ov.querySelector('p'), list = [].slice.call(ph), cur = 0;
     function show(i){ cur = (i + list.length) % list.length; var el = list[cur], m = /url\(["']?([^"')]+)/.exec(el.style.backgroundImage || ''); img.src = m ? m[1] : ''; var st = el.querySelector('.rp-stamp'), fc = el.parentNode.querySelector('figcaption'); cap.textContent = (st ? st.textContent + ' · ' : '') + (fc ? fc.firstChild.textContent : ''); img.alt = cap.textContent; ov.classList.add('on'); ov.querySelector('.r31-x').focus(); }
     function hide(){ ov.classList.remove('on'); if (list[cur]) list[cur].focus(); }
-    list.forEach(function(el, i){ el.tabIndex = 0; el.setAttribute('role','button'); el.setAttribute('aria-label','Open photo ' + (i + 1)); el.style.cursor = 'zoom-in';
+    list.forEach(function(el, i){ el.tabIndex = 0; el.setAttribute('role','button'); var stx = el.querySelector('.rp-stamp'); el.setAttribute('aria-label', (stx ? stx.textContent.trim() + ', ' : '') + 'open photo ' + (i + 1)); el.style.cursor = 'zoom-in';
       el.addEventListener('click', function(){ show(i); }); el.addEventListener('keydown', function(e){ if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); show(i); } }); });
     ov.addEventListener('click', function(e){ if (e.target === ov || e.target.classList.contains('r31-x')) hide(); });
     document.addEventListener('keydown', function(e){ if (!ov.classList.contains('on')) return; if (e.key === 'Escape') hide(); if (e.key === 'ArrowRight') show(cur + 1); if (e.key === 'ArrowLeft') show(cur - 1); });

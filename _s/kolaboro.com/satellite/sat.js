@@ -80,12 +80,14 @@
     if (!list.length) { $('stgrid').innerHTML = '<p class="st-empty">No area matches that search. Try another name or clear the filter.</p>'; return; }
     $('stgrid').innerHTML = list.map(function(s){
       var tp = thumbPeriod(s), on = s.activity === 'active';
-      return '<button type="button" class="st-card" data-id="' + esc(s.id) + '"' + (cur && cur.id === s.id ? ' aria-current="true"' : '') + ' aria-label="' + esc(s.label + ', ' + (on ? 'active' : 'quiet') + ', ' + (s._lc ? pct(s._lcv) + ' cleared by ' + s._lc.label : 'no cleared figure yet') + '. Open in viewer') + '">' +
-        '<span class="st-th"><img src="' + img(s.id, tp.key) + '" alt="" loading="lazy" width="240" height="240" onerror="this.remove()"><span class="st-miss" aria-hidden="true">No image</span><span class="st-tag' + (on ? ' on' : '') + '">' + (on ? 'Active' : 'Quiet') + '</span></span>' +
+      return '<button type="button" class="st-card" data-id="' + esc(s.id) + '"' + (cur && cur.id === s.id ? ' aria-current="true"' : '') + '>' +
+        '<span class="st-th"><img src="' + img(s.id, tp.key) + '" alt="" loading="lazy" width="240" height="240"><span class="st-miss" aria-hidden="true">No image</span><span class="st-tag' + (on ? ' on' : '') + '">' + (on ? 'Active' : 'Quiet') + '</span></span>' +
         '<span class="st-cb"><b>' + esc(s.label) + '</b>' +
         (s._lc ? '<span><em>' + pct(s._lcv) + '</em> cleared since ' + esc(s.periods[0].label.replace(/ dry season$/, '')) + '</span>' : '<span>No cleared figure yet</span>') +
-        '</span></button>';
+        '<span class="sr-only">, open in viewer</span></span></button>';
     }).join('');
+    // broken thumbnails: handlers set as properties (no inline onerror attribute, strict CSP)
+    $('stgrid').querySelectorAll('.st-th img').forEach(function(im){ im.onerror = function(){ im.remove(); }; });
   }
 
   $('stgrid').addEventListener('click', function(e){
@@ -133,9 +135,10 @@
       t = 'Radar (Sentinel-1, sees through clouds): ' + rp.length + ' period with data so far, no change figure yet.';
     }
     var th = rp.filter(function(p){ return p.image; }).map(function(p){
-      return '<figure><img src="' + rimg(s.id, p.key) + '" alt="Sentinel-1 radar, ' + esc(s.label + ', ' + p.label) + '" loading="lazy" width="112" height="112" onerror="this.parentNode.remove()"><figcaption>' + esc(p.key === 'latest' ? 'Latest' : short(p.label)) + '<br>' + p.vv_db.toFixed(1) + ' dB &middot; ' + p.acquisitions + ' acq.</figcaption></figure>';
+      return '<figure><img src="' + rimg(s.id, p.key) + '" alt="Sentinel-1 radar, ' + esc(s.label + ', ' + p.label) + '" loading="lazy" width="112" height="112"><figcaption>' + esc(p.key === 'latest' ? 'Latest' : short(p.label)) + '<br>' + p.vv_db.toFixed(1) + ' dB &middot; ' + p.acquisitions + ' acq.</figcaption></figure>';
     }).join('');
-    box.innerHTML = '<p>' + t + ' Built structures usually raise radar backscatter; wet ground and crops also move it, so read it next to the images.</p>' + (th ? '<div class="st-rth">' + th + '</div>' : '');
+    box.innerHTML = '<p>' + t + ' Built structures usually raise radar backscatter; wet ground and crops also move it, so read it next to the images.</p>' + (th ? '<div class="st-rth" tabindex="0" role="group" aria-label="Radar images by period">' + th + '</div>' : '');
+    box.querySelectorAll('.st-rth img').forEach(function(im){ im.onerror = function(){ if (im.parentNode) im.parentNode.remove(); }; });
     box.hidden = false;
   }
 

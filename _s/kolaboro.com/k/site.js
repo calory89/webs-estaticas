@@ -475,3 +475,6 @@
 })();
 // real-user web vitals (block F): half of page views, loaded after the load event, see /status#st-vit
 (function(){if(Math.random()>=0.5)return;function v(){setTimeout(function(){var s=document.createElement('script');s.src='/k/vitals.js?v=604551822c';s.async=1;document.head.appendChild(s)},1)}if(document.readyState==='complete')v();else addEventListener('load',v,{once:true})})();
+// inline-handler free (strict CSP): forms marked data-nosubmit never navigate, buttons marked data-print open the print dialog
+document.addEventListener('submit',function(e){if(e.target.matches&&e.target.matches('form[data-nosubmit]'))e.preventDefault()},true);
+document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('[data-print]');if(b){e.preventDefault();window.print()}});

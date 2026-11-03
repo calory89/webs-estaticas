@@ -59,7 +59,7 @@ Thank you for the information about [project name]. Before I reserve, I&#x27;d l
 I&#x27;d also like my own lawyer and an independent inspector to review the documents before I pay any deposit.
 
 Thank you,
-[your name]</pre><p><button class="btn btn-line btn-sm" type="button" onclick="navigator.clipboard&&navigator.clipboard.writeText(document.getElementById('mailtpl').textContent);this.textContent='Copied'">Copy email</button></p><div class="note-box" style="margin-top:36px"><b>This is general information, not legal advice.</b> Rules change and every case is different. Before you sign, have an independent notary and lawyer check your specific property. <a href="/#start" data-role="buyer">A Kolaboro agent can help you prepare.</a></div></div></section>
+[your name]</pre><p><button class="btn btn-line btn-sm" type="button" id="copymail">Copy email</button></p><div class="note-box" style="margin-top:36px"><b>This is general information, not legal advice.</b> Rules change and every case is different. Before you sign, have an independent notary and lawyer check your specific property. <a href="/#start" data-role="buyer">A Kolaboro agent can help you prepare.</a></div></div></section>
 </main>
 <div class="mcta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="cta_sticky">Protect my purchase</a></div>
 <footer>
@@ -126,7 +126,8 @@ Thank you,
     <p class="fine">© 2026 Kolaboro, operated by Equinox Investment Group LLC, 30 N Gould St Ste N, Sheridan, WY 82801, USA. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Reports are opinions based on the evidence listed in them.</p>
   </div>
 </footer>
-<script src="/k/site.js?v=2171c92c45" defer></script>
+<script>document.getElementById('copymail').addEventListener('click',function(){var b=this;if(navigator.clipboard)navigator.clipboard.writeText(document.getElementById('mailtpl').textContent);b.textContent='Copied'});</script>
+<script src="/k/site.js?v=a1c61ce3e2" defer></script>
 <script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script><script>if(!window.clarity)(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z4eqcmaic7");</script>
 <div class="cc" id="cc" role="dialog" aria-label="Cookies" hidden><p>We use analytics cookies to improve Kolaboro. <a href="/legal/privacy">Privacy</a></p><div><button class="btn btn-line btn-sm" data-cc="no">Only necessary</button><button class="btn btn-hi btn-sm" data-cc="yes">Accept</button></div></div>
 <script>(function(){var EU=["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"];var st=null;try{st=localStorage;}catch(e){}var c=st&&st.getItem('kb-consent');if(c)return;
