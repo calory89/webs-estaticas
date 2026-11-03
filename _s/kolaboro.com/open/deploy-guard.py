@@ -77,7 +77,8 @@ def smoke(expect, inject=False):
     ensure_browser()
     src = git('show', '%s:_s/kolaboro.com/open/deploy-smoke.mjs' % (expect if known(expect) else 'origin/' + BRANCH), check=False) or git('show', 'origin/%s:_s/kolaboro.com/open/deploy-smoke.mjs' % BRANCH)
     script = os.path.join(PW, 'deploy-smoke.mjs'); open(script, 'w').write(src + '\n')
-    cmd = ['node', script, '--base', BASE, '--browser'] + (['--expect', expect] if expect else []) + (['--inject-fail'] if inject else [])
+    # no --expect: on a busy branch the live commit can move during a run; the guard tracks which commit is live itself
+    cmd = ['node', script, '--base', BASE, '--browser'] + (['--inject-fail'] if inject else [])
     r = subprocess.run(cmd, capture_output=True, text=True, timeout=900)
     try: d = json.loads(r.stdout)
     except Exception: d = {'ok': False, 'checks_passed': 0, 'checks_total': 1, 'failed': ['smoke script crashed: ' + (r.stderr or r.stdout)[-200:]], 'checks': []}
