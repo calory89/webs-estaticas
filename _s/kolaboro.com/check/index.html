@@ -249,6 +249,14 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   }
   var lvZero = false;
   function lvStep(e){
+    if (e.step === 'follow') {
+      var fl = document.createElement('li'); fl.className = e.ok ? 'ok' : 'bad';
+      fl.innerHTML = '<div><b>Not a project page: reading the property page it links to</b><small></small></div><code></code>';
+      fl.querySelector('small').textContent = String(e.url || '').replace(/^https?:\/\//, '') + (e.ok ? '' : ' (could not be read)');
+      fl.querySelector('code').textContent = fms(e.ms); $('az-prog').insertBefore(fl, $('lv-fetch'));
+      if (e.ok) LVS().forEach(function(x){ var r = $('lv-' + x[0]); if (r) { r.className = ''; r.querySelector('small').textContent = ''; r.querySelector('code').textContent = ''; } });
+      lvRun('fetch'); return;
+    }
     var li = $('lv-' + e.step); if (!li) return;
     li.className = e.skipped ? 'skip' : e.ok === false ? 'bad' : 'ok';
     li.querySelector('small').textContent = lvDetail(e);
@@ -387,6 +395,14 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   }; }
   function render(d){
     var r = d.report || {}, att = (r.attention || 'medium').toLowerCase();
+    if ((d.not_property || r.page_kind === 'not_real_estate') && (d.thin_text || r.thin_text)) {
+      $('az-4').innerHTML = '<p class="az-k">Desk review</p><h2>We could not read enough of ' + esc(d.host) + '</h2>' +
+        '<p class="lead">Only ' + esc(String(r.read_chars || 'a few hundred')) + ' characters of text reached us. Many sites build the page in the browser with JavaScript, so this says nothing about whether the site sells property.</p>' +
+        '<p>Paste the exact page of the project or the listing you are looking at (for example the "Invest" or "Residences" page), and we will read that one.</p>' +
+        '<p><button class="btn btn-hi" type="button" id="az-again">Check another link</button></p>';
+      show(4); var ag0 = $('az-again'); if (ag0) ag0.onclick = function(){ $('az-url').value = ''; show(1); setTimeout(function(){ $('az-url').focus(); }, 300); };
+      ev('desk_thin_text', {}); return;
+    }
     if (d.not_property || r.page_kind === 'not_real_estate') {
       $('az-4').innerHTML = '<p class="az-k">Desk review</p><h2>' + esc(d.host) + ' is not a property project</h2>' +
         '<p class="lead">' + esc(r.site_about ? 'It looks like ' + (/^(a|an|the)\s/i.test(r.site_about) ? r.site_about.charAt(0).toLowerCase() + r.site_about.slice(1) : (/^[aeiou]/i.test(r.site_about) ? 'an ' : 'a ') + (/^[A-Z][a-z]+\s+[a-z]/.test(r.site_about) && !/^(Spanish|English|French|German|Italian|Danish|American|British|Indonesian|Mexican|Portuguese|Thai|Dutch)/.test(r.site_about) ? r.site_about.charAt(0).toLowerCase() + r.site_about.slice(1) : r.site_about)).replace(/\.$/, '') + '.' : 'We could not find anything about a property for sale on this page.') + ' There is nothing for us to check here.</p>' +
@@ -405,6 +421,7 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
     var sig = d.signature && d.signature.sig ? '<p class="muted sigl">Signed with Ed25519 · SHA-256 ' + esc(String(d.signature.sha256).slice(0, 16)) + '… · <button type="button" id="az-sigv">Verify the signature in your browser</button> <span id="az-sigr"></span></p>' : '';
     var first = portal ? 'Desk review of a portal or agency page' : d.first ? 'Nobody had asked us about this project before. Your review is the first one.' : (d.tracked ? 'Our agent already follows this project.' : 'Desk review');
     $('az-4').innerHTML = '<p class="az-k">' + esc(first) + '</p><h2>Desk review: ' + esc(r.project || d.host) + '</h2>' +
+      ((d.read_url || r.read_url) ? '<p class="muted" style="font-size:.92rem">The page you pasted is not itself a project page, so we read the property page linked from it: <a href="' + esc(d.read_url || r.read_url) + '" rel="nofollow noopener" target="_blank">' + esc((d.read_url || r.read_url).replace(/^https?:\/\//, '')) + '</a>.</p>' : '') +
       '<p><span class="az-att ' + esc(att) + '">' + (att === 'high' ? 'High attention needed' : att === 'low' ? 'Low attention needed' : 'Medium attention needed') + '</span></p>' +
       '<p class="lead" style="margin-top:12px">' + esc(r.summary) + '</p>' +
       (ci && (ci.summary || []).length ? '<p class="sq"><span class="muted">From the page: </span>' + ci.summary.map(function(q){ return '<i class="kq">' + esc(q) + '</i>'; }).join(' ') + '</p>' : '') + qline +

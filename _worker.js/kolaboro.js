@@ -92,7 +92,8 @@ function pageParts(html) {
   // elements a visitor cannot see: hidden attribute, aria-hidden, or a hiding inline style; capture to the first matching close tag
   // elements a visitor cannot see: hidden attribute, aria-hidden, or a hiding inline style. Each hidden opening tag is matched to its own
   // closing tag by counting nesting, so a hidden element inside a visible one (or holding nested tags of the same kind) is removed whole.
-  const isHid = attrs => { const st = (attrs.match(/style=["']([^"']*)/i) || [])[1] || ''; return /\shidden(\s|=|$)/i.test(attrs) || /aria-hidden=["']?true/i.test(attrs) || HIDDEN_STYLE.test(st) || (/color\s*:\s*(#fff(fff)?|white|rgba?\(\s*255\s*,\s*255\s*,\s*255)\b/i.test(st) && /background(-color)?\s*:\s*(#fff(fff)?|white)\b/i.test(st)); };
+  // React 18 streaming SSR sends Suspense content in <div hidden id="S:n"> and swaps it in at once: that is visible page content.
+  const isHid = attrs => { if (/\bid=["']?S:\d+["'\s>]/i.test(attrs + ' ')) return false; const st = (attrs.match(/style=["']([^"']*)/i) || [])[1] || ''; return /\shidden(\s|=|$)/i.test(attrs) || /aria-hidden=["']?true/i.test(attrs) || HIDDEN_STYLE.test(st) || (/color\s*:\s*(#fff(fff)?|white|rgba?\(\s*255\s*,\s*255\s*,\s*255)\b/i.test(st) && /background(-color)?\s*:\s*(#fff(fff)?|white)\b/i.test(st)); };
   const OPEN = /<(div|span|p|section|article|aside|li|ul|ol|a|font|small|label|h[1-6]|td|em|strong|b|i)\b([^>]*)>/gi;
   for (let guard = 0; guard < 400; guard++) {
     OPEN.lastIndex = 0; let m, hit = null;
@@ -249,7 +250,41 @@ async function deskReview(env, urlStr, html, opts) {
     }
   }
   delete out.ai_instructions_found; delete out.ai_instructions_quote;
-  return { report: out, not_property: notProp, hidden_blocks_removed: parts.hidden.length, prompt_sha256: await promptSha() };
+  // A home page that is not itself a project (a "creative city", a group site, a brand page) often sells property on a sub-page such as
+  // /invest or /real-estate. Read the best such link on the same site once before saying the site is not about property.
+  const kindDisputed = out.consensus && out.consensus.disagreements.some(x => x.field === 'page_kind');
+  if ((notProp || kindDisputed) && !(opts && opts.followed)) {
+    const sub = propertyLink(html, urlStr);
+    if (sub) {
+      t = now();
+      const pg = await fetchPage(new URL(sub));
+      step({ step: 'follow', ms: now() - t, url: sub, ok: !pg.error });
+      if (!pg.error) {
+        try {
+          const r2 = await deskReview(env, sub, pg.html, { step, followed: true });
+          if (r2 && r2.report && !r2.not_property) { r2.report.followed_from = urlStr; r2.report.read_url = sub; r2.followed_from = urlStr; r2.read_url = sub; return r2; }
+        } catch (e) { /* keep the home page answer */ }
+      }
+    }
+  }
+  // Too little readable text (a site built in JavaScript, a splash page) is not evidence that a site has nothing to do with property.
+  if (notProp && text.length < 1500) { out.thin_text = true; out.read_chars = text.length; }
+  return { report: out, not_property: notProp, thin_text: !!out.thin_text, hidden_blocks_removed: parts.hidden.length, prompt_sha256: await promptSha() };
+}
+// The same-site link most likely to be the property offer: /invest, /real-estate, /villas, /residences ... (never another domain).
+function propertyLink(html, base) {
+  let b; try { b = new URL(base); } catch (e) { return null; }
+  const KW = /(invest|real[-_ ]?estate|propert|villa|residen|apartment|condo|off[-_ ]?plan|for[-_ ]?sale|buy|homes?\b|units?\b|projects?\b|development)/i;
+  const seen = new Set(); let best = null, bestScore = 0;
+  for (const m of html.matchAll(/<a\b[^>]*href=["']([^"'#]+)["'][^>]*>([\s\S]{0,200}?)<\/a>/gi)) {
+    let u; try { u = new URL(m[1], b); } catch (e) { continue; }
+    if (u.hostname.replace(/^www\./, '') !== b.hostname.replace(/^www\./, '') || !/^https?:$/.test(u.protocol)) continue;
+    u.hash = ''; const key = u.toString(); if (seen.has(key) || u.pathname === b.pathname || /\.(pdf|jpe?g|png|webp|zip)$/i.test(u.pathname)) continue; seen.add(key);
+    const label = m[2].replace(/<[^>]+>/g, ' ').trim();
+    const score = (KW.test(u.pathname) ? 2 : 0) + (KW.test(label) ? 1 : 0) - (u.pathname.split('/').length > 4 ? 1 : 0);
+    if (score > bestScore) { bestScore = score; best = key; }
+  }
+  return bestScore >= 2 ? (okUrl(best) ? best : null) : null;
 }
 
 const PILOT = new WeakSet();
@@ -312,7 +347,7 @@ async function claude(env, prompt, system, only) {
 
 const isTracked = host => TRACKED.some(d => host === d || host.endsWith('.' + d));
 // v5: reports carry quoted claims (citations, quote_check); earlier cached reviews have none, so they are not reused
-const deskCacheKey = u => new Request('https://kolaboro.com/__kb_desk5/' + encodeURIComponent(u.hostname.replace(/^www\./, '') + u.pathname.replace(/\/$/, '') + u.search));
+const deskCacheKey = u => new Request('https://kolaboro.com/__kb_desk6/' + encodeURIComponent(u.hostname.replace(/^www\./, '') + u.pathname.replace(/\/$/, '') + u.search));
 async function fetchPage(u) {
   try {
     let r, cur = u, hops = 0;
