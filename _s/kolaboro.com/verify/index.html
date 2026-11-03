@@ -54,7 +54,7 @@
 </div></section>
 <section class="sec alt" id="chain"><div class="wrap"><div class="cp-head"><p class="eyebrow">For clients and their lawyers</p><h2 id="pdf">Check a case-file PDF</h2>
 <p>Every case-file PDF the portal creates is registered with its SHA-256 at the moment it is made. Choose the PDF: your browser computes its fingerprint (the file never leaves your device) and asks whether Kolaboro registered exactly these bytes. Any edit, even one character, gives a different fingerprint.</p>
-<p><input type="file" id="pdfchk" accept="application/pdf,.pdf"></p><div id="pdfres" aria-live="polite"></div>
+<p><input type="file" id="pdfchk" accept="application/pdf,.pdf" aria-label="Choose a case-file PDF to check"></p><div id="pdfres" aria-live="polite"></div>
 <script>(function(){var i=document.getElementById('pdfchk'),o=document.getElementById('pdfres');function e(t){return String(t==null?'':t).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 i.onchange=function(){var f=i.files[0];if(!f)return;o.textContent='Computing the fingerprint…';f.arrayBuffer().then(function(b){return crypto.subtle.digest('SHA-256',b)}).then(function(h){var x=[].map.call(new Uint8Array(h),function(b){return('0'+b.toString(16)).slice(-2)}).join('');
  return fetch('/api/open/pdf/'+x).then(function(r){return r.json()}).then(function(d){o.innerHTML=d.registered?'<p><b style="color:#086146">✓ Genuine.</b> Kolaboro created exactly this file for case '+e(d.case)+' on '+e(String(d.created_at).slice(0,16).replace('T',' '))+' UTC.'+(d.chain_head?' Its evidence fingerprint is '+e(d.chain_head.slice(0,16))+'…':'')+'</p><p class="muted" style="font-size:.85rem">SHA-256 '+e(x)+'</p>':'<p><b style="color:#9A2412">✗ Not registered.</b> This file is not a case file created by the Kolaboro portal, or it was changed after it was created.</p><p class="muted" style="font-size:.85rem">SHA-256 '+e(x)+'</p>'})}).catch(function(){o.textContent='Could not check just now.'})}})();</script>
@@ -81,7 +81,7 @@ document.getElementById('chfile').onchange = function(){ var f = this.files[0]; 
 <p style="font-size:.85rem;color:#4A5661;margin-top:6px">Any /api/open address, or an evidence number from a report (for example 27) to get its signed receipt.</p><div id="sg-o" style="margin-top:10px"></div>
 <h2 style="margin-top:36px">Check a dataset you downloaded</h2>
 <p>Drop a copy of <a href="/data/bali-cases.json">bali-cases.json</a>. Your browser computes its SHA-256 and looks for it in the public log. Every <a href="/api/open">API</a> answer also tells you which dataset it came from, in the <code>x-kolaboro-dataset-sha256</code> header.</p>
-<input type="file" id="pv-file" accept=".json,application/json"><div id="pv-fo" style="margin-top:10px"></div>
+<input type="file" id="pv-file" accept=".json,application/json" aria-label="Choose a dataset JSON file to compare with the public log"><div id="pv-fo" style="margin-top:10px"></div>
 <p style="font-size:.88rem;color:#4A5661">These checks run on <a href="/open/kolaboro-verify.js">kolaboro-verify.js</a>, our open-source checker (MIT). You can run the same code on your own machine.</p></div></section></main>
 <div class="mcta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="cta_sticky">Protect my purchase</a></div>
 <footer>
