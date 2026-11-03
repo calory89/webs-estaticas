@@ -257,6 +257,7 @@
     ];
     var html = '<dl class="pf-web">' + cells.map(function(x){ return '<div><dt>' + esc(x[0]) + '</dt><dd>' + esc(x[1]) + '</dd><small>' + esc(x[2]) + '</small></div>'; }).join('') + '</dl>';
     var first = w.reg || w.ct, fy = first ? +first.slice(0, 4) : null;
+    if (w.reg && w.ct && w.ct < w.reg) html += '<p class="pf-call ok" style="border-color:var(--line);background:#fff">Certificates for this domain go back to ' + esc(ym(w.ct)) + ', before its current registration in ' + esc(ym(w.reg)) + '. The domain was probably held by someone else before and registered again, so we date the website from ' + esc(ym(w.reg)) + '.</p>';
     if (f && fy && fy - f >= 3) html += '<p class="pf-call"><b>The website is ' + (fy - f) + ' years younger than the claimed history.</b> The developer says it was founded in ' + f + '; the earliest trace of this website is ' + esc(ym(first)) + '. That can be innocent (a rebrand, or a site made for this one project), but ask for the company registration extract and a list of delivered projects with addresses you can visit.</p>';
     else if (f && fy) html += '<p class="pf-call ok">The website\'s age fits the claimed founding year (' + f + ').</p>';
     else if (first && (Date.now() - Date.parse(first + '-01')) < 365 * 864e5) html += '<p class="pf-call"><b>This website is less than a year old.</b> Ask how long the company has been trading and for projects it has already handed over.</p>';
