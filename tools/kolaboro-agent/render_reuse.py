@@ -316,7 +316,7 @@ for _p in projs:
 for _d, _ps in _devs.items():
     if any(not same_developer(x, y) and not same_project(x, y) for x in _ps for y in _ps if x is not y):
         PORTALS.add(_d)
-excl = {'same_domain': 0, 'same_developer': 0, 'same_project_name': 0, 'page_names_other_project': 0,
+excl = {'map_or_plan': 0, 'same_domain': 0, 'same_developer': 0, 'same_project_name': 0, 'page_names_other_project': 0,
         'portal_image_not_attributable': 0, 'hub_image': 0,
         'geometry_failed': 0}
 # geometric confirmation
@@ -347,8 +347,13 @@ def inliers(a, b):
     return int(mask.sum()) if mask is not None else 0
 
 
+MAPPLAN = re.compile(r'(?<![a-z])(map|maps|master[-_ ]?plan|site[-_ ]?plan|floor[-_ ]?plans?|location|layout|unit[-_ ]?plan|plan)(?![a-z])', re.I)
+
+
 def reason(a, b):
     pa, pb = projs[P[a]], projs[P[b]]
+    if MAPPLAN.search(urllib.parse.unquote(recs[a]['u'])) or MAPPLAN.search(urllib.parse.unquote(recs[b]['u'])):
+        return 'map_or_plan'   # area maps, master plans and floor-plan templates are legitimately shared
     if D[a] == D[b]:
         return 'same_domain'
     if same_developer(pa, pb):
@@ -423,7 +428,7 @@ out = {
     'pair_count': len(pairs),
     'pairs': pairs,
     'method': ('Images are collected from each tracked project page (url and docs_url), images under %d px, very wide banners, '
-               'flat graphics and URLs naming logos/icons are skipped, at most %d per project, and a file shown on the pages of '
+               'flat graphics and URLs naming logos/icons are skipped (maps, master plans and floor plans are not counted), at most %d per project, and a file shown on the pages of '
                'two or more projects of the same site is treated as site chrome and dropped. Each image is embedded with CLIP '
                '%s (%s) and pairs from two different projects with cosine >= %.2f are kept if the two pages are on different '
                'domains, the developers differ, the project names do not look like the same project, neither page names the '
