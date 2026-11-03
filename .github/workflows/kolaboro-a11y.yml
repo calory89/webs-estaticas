@@ -1,0 +1,30 @@
+name: Kolaboro accessibility
+# Nightly: axe-core (WCAG 2.x A and AA rules) in Chrome on every page of kolaboro.com/sitemap.xml. Violations by rule and by page
+# go to kolaboro.com/data/a11y.json and are shown on kolaboro.com/status. Goal: 0 serious or critical.
+on:
+  schedule:
+    - cron: '47 2 * * *'
+  push:
+    branches: [main]
+    paths: ['tools/kolaboro-reliability/a11y.js', '.github/workflows/kolaboro-a11y.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-a11y
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: tools/kolaboro-reliability
+      - name: Audit
+        run: |
+          (cd "$RUNNER_TEMP" && npm i -s --no-save --no-package-lock playwright-core@1.64.1 axe-core@4.14.0 >/dev/null)
+          NODE_PATH="$RUNNER_TEMP/node_modules" node tools/kolaboro-reliability/a11y.js "$RUNNER_TEMP/a"
+      - name: Publish to kolaboro.com
+        run: bash tools/kolaboro-reliability/publish.sh "kolaboro.com: accessibility audit $(date -u +%F)" "$RUNNER_TEMP/a/a11y.json=_s/kolaboro.com/data/a11y.json"

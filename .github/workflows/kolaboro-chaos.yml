@@ -1,0 +1,30 @@
+name: Kolaboro chaos drill
+# Weekly, against production: force failures (AI readers down, dead and slow source pages) and check the desk review degrades
+# honestly. AI faults are injected by the worker only for this workflow (GitHub OIDC token, audience kolaboro.com, no stored secret).
+# Results go to kolaboro.com/data/chaos.json (last 12 runs) and are shown on kolaboro.com/status.
+on:
+  schedule:
+    - cron: '11 5 * * 3'
+  push:
+    branches: [main]
+    paths: ['tools/kolaboro-reliability/chaos.py', '.github/workflows/kolaboro-chaos.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+  id-token: write
+concurrency:
+  group: kolaboro-chaos
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: tools/kolaboro-reliability
+      - name: Drill
+        run: python3 tools/kolaboro-reliability/chaos.py "$RUNNER_TEMP/c"
+      - name: Publish to kolaboro.com
+        run: bash tools/kolaboro-reliability/publish.sh "kolaboro.com: chaos drill $(date -u +%F)" "$RUNNER_TEMP/c/chaos.json=_s/kolaboro.com/data/chaos.json"

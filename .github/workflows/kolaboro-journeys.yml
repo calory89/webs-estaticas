@@ -1,0 +1,48 @@
+name: Kolaboro user journeys
+# Hourly: a real Chrome on a GitHub runner does what a buyer does on production kolaboro.com (home, search, open a project,
+# verify its signed data on /verify, status page). Step timings and one screenshot per step go to kolaboro.com/data/journeys.json
+# (last 48 runs) and /data/journeys/<step>.webp; they are shown on kolaboro.com/status.
+on:
+  schedule:
+    - cron: '41 * * * *'
+  push:
+    branches: [main]
+    paths: ['tools/kolaboro-reliability/journeys.js', '.github/workflows/kolaboro-journeys.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-journeys
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: tools/kolaboro-reliability
+      - name: Journey
+        run: |
+          (cd "$RUNNER_TEMP" && npm i -s --no-save --no-package-lock playwright-core@1.64.1 >/dev/null)
+          NODE_PATH="$RUNNER_TEMP/node_modules" node tools/kolaboro-reliability/journeys.js "$RUNNER_TEMP/j"
+      - name: Compress screenshots
+        if: always()
+        run: |
+          pip install -q pillow
+          python3 - <<'PY'
+          import glob, os
+          from PIL import Image
+          d = os.environ['RUNNER_TEMP'] + '/j/shots'
+          for p in sorted(glob.glob(d + '/*.png')):
+              im = Image.open(p).convert('RGB'); im.thumbnail((640, 400))
+              im.save(p[:-4] + '.webp', 'WEBP', quality=50, method=6); print(p, os.path.getsize(p[:-4] + '.webp'))
+          PY
+      - name: Publish to kolaboro.com
+        if: always()
+        run: |
+          [ -f "$RUNNER_TEMP/j/journeys.json" ] || exit 1
+          F=("$RUNNER_TEMP/j/journeys.json=_s/kolaboro.com/data/journeys.json")
+          for w in "$RUNNER_TEMP"/j/shots/*.webp; do F+=("$w=_s/kolaboro.com/data/journeys/$(basename "$w")"); done
+          bash tools/kolaboro-reliability/publish.sh "kolaboro.com: user journey $(date -u +%FT%H:%M)" "${F[@]}"
