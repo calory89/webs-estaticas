@@ -1,33 +1,33 @@
 {
- "date": "2026-11-02T13:53:57.165Z",
+ "date": "2026-11-03T13:03:18.576Z",
  "ok": false,
- "pages": 113,
- "links": 159,
+ "pages": 119,
+ "links": 205,
  "checks": [
   {
    "name": "Every page, mobile and desktop",
    "ok": false,
-   "detail": "113 pages, 159 internal links checked: 3 problems"
+   "detail": "119 pages, 205 internal links checked: 7 problems"
   },
   {
    "name": "Trust Scores reproduced from open code and data",
    "ok": true,
-   "detail": "884 of 884 projects recomputed with /open/scoring.py match the published score, confirmed score and tier (dataset sha256 ae4c4535791b\u2026, scoring code sha256 8ccf6f06f210\u2026)"
+   "detail": "891 of 891 projects recomputed with /open/scoring.py match the published score, confirmed score and tier (dataset sha256 d20961b579d7\u2026, scoring code sha256 8ccf6f06f210\u2026)"
   },
   {
    "name": "Speed /",
    "ok": true,
-   "detail": "451 KB ours, 1617 KB total, loaded in 0.7 s on mobile (budget 700 KB / 2600 KB / 4 s)"
+   "detail": "457 KB ours, 1623 KB total, loaded in 1.2 s on mobile (budget 700 KB / 2600 KB / 4 s)"
   },
   {
    "name": "Accessibility /",
-   "ok": false,
-   "detail": "serious issues: color-contrast (5)"
+   "ok": true,
+   "detail": "no serious or critical WCAG 2 AA issues found by axe-core"
   },
   {
    "name": "Speed /check",
    "ok": true,
-   "detail": "289 KB ours, 1455 KB total, loaded in 0.5 s on mobile (budget 700 KB / 2600 KB / 4 s)"
+   "detail": "311 KB ours, 1475 KB total, loaded in 0.6 s on mobile (budget 700 KB / 2600 KB / 4 s)"
   },
   {
    "name": "Accessibility /check",
@@ -37,7 +37,7 @@
   {
    "name": "Speed /pricing/",
    "ok": true,
-   "detail": "273 KB ours, 1439 KB total, loaded in 0.5 s on mobile (budget 700 KB / 2600 KB / 4 s)"
+   "detail": "281 KB ours, 1446 KB total, loaded in 0.5 s on mobile (budget 700 KB / 2600 KB / 4 s)"
   },
   {
    "name": "Accessibility /pricing/",
@@ -47,7 +47,7 @@
   {
    "name": "Speed /book/",
    "ok": true,
-   "detail": "271 KB ours, 1436 KB total, loaded in 0.4 s on mobile (budget 700 KB / 2600 KB / 4 s)"
+   "detail": "279 KB ours, 1443 KB total, loaded in 0.5 s on mobile (budget 700 KB / 2600 KB / 4 s)"
   },
   {
    "name": "Accessibility /book/",
@@ -57,7 +57,7 @@
   {
    "name": "Speed /database/",
    "ok": true,
-   "detail": "2913 KB ours, 4079 KB total, loaded in 0.6 s on mobile (budget 3500 KB / 5000 KB / 4 s)"
+   "detail": "2956 KB ours, 4120 KB total, loaded in 0.6 s on mobile (budget 3500 KB / 5000 KB / 4 s)"
   },
   {
    "name": "Accessibility /database/",
@@ -67,7 +67,7 @@
   {
    "name": "Speed /login/",
    "ok": true,
-   "detail": "133 KB ours, 1298 KB total, loaded in 0.3 s on mobile (budget 700 KB / 2600 KB / 4 s)"
+   "detail": "133 KB ours, 1297 KB total, loaded in 1.6 s on mobile (budget 700 KB / 2600 KB / 4 s)"
   },
   {
    "name": "Accessibility /login/",
@@ -77,7 +77,7 @@
   {
    "name": "Speed /status/",
    "ok": false,
-   "detail": "1122 KB ours, 2288 KB total, loaded in 0.5 s on mobile (budget 700 KB / 2600 KB / 4 s)"
+   "detail": "1280 KB ours, 2445 KB total, loaded in 1.3 s on mobile (budget 700 KB / 2600 KB / 4 s)"
   },
   {
    "name": "Accessibility /status/",
@@ -87,27 +87,61 @@
   {
    "name": "Speed /metrics/",
    "ok": true,
-   "detail": "271 KB ours, 1440 KB total, loaded in 0.5 s on mobile (budget 700 KB / 2600 KB / 4 s)"
+   "detail": "279 KB ours, 1447 KB total, loaded in 0.5 s on mobile (budget 700 KB / 2600 KB / 4 s)"
   },
   {
    "name": "Accessibility /metrics/",
-   "ok": false,
-   "detail": "serious issues: color-contrast (2)"
+   "ok": true,
+   "detail": "no serious or critical WCAG 2 AA issues found by axe-core"
   }
  ],
  "problems": [
   {
+   "page": "/changelog/",
+   "device": "mobile",
+   "errors": [
+    "horizontal overflow"
+   ]
+  },
+  {
    "page": "/status/",
    "device": "mobile",
    "errors": [
-    "404 /data/qa.json"
+    "404 /data/chaos.json",
+    "404 /data/a11y.json",
+    "404 /data/journeys.json"
    ]
   },
   {
    "page": "/status/",
    "device": "desktop",
    "errors": [
-    "404 /data/qa.json"
+    "404 /data/a11y.json",
+    "404 /data/chaos.json",
+    "404 /data/journeys.json"
+   ]
+  },
+  {
+   "page": "/regulators/",
+   "device": "desktop",
+   "errors": [
+    "500 /regulators/",
+    "status 500"
+   ]
+  },
+  {
+   "page": "/data/licence/",
+   "device": "desktop",
+   "errors": [
+    "500 /data/licence/",
+    "status 500"
+   ]
+  },
+  {
+   "page": "/fr/",
+   "device": "desktop",
+   "errors": [
+    "horizontal overflow"
    ]
   },
   {
