@@ -1,7 +1,7 @@
 {
  "name": "Kolaboro open dataset, Parquet",
  "version": 1,
- "generated": "2026-11-03T12:36:55Z",
+ "generated": "2026-11-03T13:26:51Z",
  "license": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
  "source": {
   "url": "https://kolaboro.com/data/bali-cases.json",
@@ -15,8 +15,8 @@
    "table": "projects",
    "description": "one row per tracked project",
    "rows": 891,
-   "bytes": 65369,
-   "sha256": "7313e018d6743b0ecf6b4661bee0a970cf047ef37eebb270f199e901f52e6bb4",
+   "bytes": 65332,
+   "sha256": "0875ba17e170a4a8c9cee58335bafb1b40d50bc65f6b4d878c22b3af9d2a1d76",
    "columns": [
     {
      "name": "id",
