@@ -232,13 +232,13 @@ function segKm(lat, lng, a, b) {   // point to segment on a local flat projectio
   return Math.hypot(ax + t * dx, ay + t * dy);
 }
 export async function coast(lat, lng, radiusKm = 10) {
-  const ql = '[out:json][timeout:20];way(around:' + radiusKm * 1000 + ',' + lat.toFixed(5) + ',' + lng.toFixed(5) + ')[natural=coastline];out geom;';
+  const ql = '[out:json][timeout:10];way(around:' + radiusKm * 1000 + ',' + lat.toFixed(5) + ',' + lng.toFixed(5) + ')[natural=coastline];out geom;';
   const src = { name: 'OpenStreetMap coastline (natural=coastline), queried with the Overpass API', url: 'https://www.openstreetmap.org/copyright', license: 'ODbL, (c) OpenStreetMap contributors' };
   const limits = 'Straight-line distance to the mapped high-water line, as drawn by OpenStreetMap volunteers. Accuracy is usually tens of metres on popular coasts and can be worse elsewhere. Rivers, lagoons and estuaries are not coastline here.';
   let lastErr = '';
   for (const ep of OVERPASS) {
     try {
-      const r = await get(ep, { method: 'POST', body: 'data=' + encodeURIComponent(ql), headers: { 'content-type': 'application/x-www-form-urlencoded' } }, 25000);
+      const r = await get(ep, { method: 'POST', body: 'data=' + encodeURIComponent(ql), headers: { 'content-type': 'application/x-www-form-urlencoded' } }, 12000);
       if (!r.ok) { lastErr = 'Overpass answered ' + r.status; continue; }
       const d = await r.json();
       let best = Infinity;

@@ -90,7 +90,7 @@
   }
   function go(lat, lng){
     var my = ++runId; err('');
-    $('hzstatus').textContent = 'Asking six public sources about ' + lat.toFixed(4) + ', ' + lng.toFixed(4) + '. A new point takes 5 to 30 seconds.';
+    $('hzstatus').textContent = 'Asking six public sources about ' + lat.toFixed(4) + ', ' + lng.toFixed(4) + '. A new point takes 5 to 40 seconds.';
     $('hzgrid').setAttribute('aria-busy', 'true');
     var t0 = Date.now();
     fetch('/api/x/p/hazards?lat=' + lat + '&lng=' + lng).then(function(r){ return r.json().then(function(j){ return { s: r.status, j: j, c: r.headers.get('x-cache') }; }); }).then(function(x){
