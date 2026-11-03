@@ -34,9 +34,11 @@
   }
   var id = '';
   try { id = (new URLSearchParams(location.search).get('id') || ((location.pathname.match(/^\/p\/([A-Za-z0-9-]{3,20})\/?$/) || [])[1]) || '').trim().toUpperCase(); } catch (e) {}
-  var ssr = document.getElementById('ssr'); if (ssr) ssr.remove();
+  /* The server-rendered summary (#ssr) stays on screen until the full file replaces it in the same frame (no layout jump). */
+  function dropSsr(){ var s = document.getElementById('ssr'); if (s) s.remove(); }
 
   function notFound(msg){
+    dropSsr();
     setMeta('Project not found | Kolaboro', 'This project file could not be found. Search every off-plan project Kolaboro tracks.', 'https://kolaboro.com/p/');
     var m = document.createElement('meta'); m.name = 'robots'; m.content = 'noindex'; document.head.appendChild(m);
     root.innerHTML = '<section class="pf-hero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / <a href="/cases">Live cases</a> / Project file</p>' +
@@ -139,7 +141,7 @@
       whatIfHtml(c, C) +
       '<section class="pf-sec" id="pf-web-s"><div class="wrap"><h2>How old is the developer\'s website?</h2>' +
       '<p class="sub">A claimed track record is easier to trust when the developer\'s web presence is as old as the company says it is. We look up the domain in the registry and in public certificate logs, and publish only the dates.</p>' +
-      '<div id="pf-web" aria-live="polite"><p class="pf-wait">Loading the website record</p></div></div></section>' +
+      '<div id="pf-web" aria-live="polite">' + (intel.done ? (intel.err ? WEB_ERR : webHtml(intel.j, c)) : '<p class="pf-wait">Loading the website record</p>') + '</div></div></section>' +
 
       '<section class="pf-sec pf-dq"><div class="wrap"><h2>Data quality</h2>' +
       '<p class="sub">How much evidence we hold on this project, not how good the project is. A high number means the scores above rest on more sources.</p>' +
@@ -167,7 +169,7 @@
       (!c.register ? '<p class="pf-ponly pf-pline"><b>Official register:</b> no register check on file for this project.</p>' : '') +
       (!c.sat ? '<p class="pf-ponly pf-pline"><b>From space:</b> no satellite check on file for this project.</p>' : '') +
       (!c.fp ? '<p class="pf-ponly pf-pline"><b>Evidence fingerprint:</b> none stored yet.</p>' : '') +
-      '<div id="pf-drift" aria-live="polite">' + histHtml(c) + '</div>' +
+      '<div id="pf-drift" aria-live="polite">' + (intel.done && !intel.err ? driftHtml(intel.j, c) : histHtml(c)) + '</div>' +
       '</div></section>' +
 
       '<section class="pf-sec"><div class="wrap"><h2>Problems in public reports</h2>' +
@@ -191,6 +193,7 @@
       '</nav><p class="pf-fine">Project ' + (pos + 1) + ' of ' + mk.length + ' in ' + esc(c.market) + '. ' + (c.checked ? 'Last checked ' + esc(c.checked) + '. ' : '') + (c.invited ? 'Developer invited to reply on ' + esc(c.invited) + '. ' : '') + 'A published document is not proof that it is genuine; that is what our local agents check on site and at the registry. <a href="/how-we-score">How we score</a> · <a href="/corrections">Corrections</a> · <a href="/developers">Developers can reply</a>.</p></div></section>' +
 
       '<div class="wrap pf-noprint"><div class="pf-cta"><h2>Buying a project that is not on this list?</h2><p>Send us the link. We read what the developer publishes, check it against registers and tell you what is missing before you pay.</p><div class="pf-act"><a class="btn btn-hi" href="/check">Check your own project</a><a class="btn btn-line" href="/follow?id=' + encodeURIComponent(c.id) + '">Follow ' + esc(c.id) + '</a></div></div></div>';
+    dropSsr();
     root.innerHTML = html;
     loadIntel(c);
     loadReplies(c);
@@ -295,11 +298,19 @@
     return '<div class="pf-hist">' + head + '<p class="muted">' + depth + '</p>' + list +
       '<p class="pf-fine">Compared every day: ' + esc((M.fields || []).join(', ').toLowerCase()) + '. Not yet compared daily: ' + esc((M.not_tracked_daily || []).join(', ')) + '. When the page text changes, an AI model re-reads what it advertises; we list a change only when the page fingerprint changed too. Prices are shown as a percentage, not an amount, so the project stays anonymous.</p></div>';
   }
+  /* Fetched in parallel with the database and, when it arrives in time, rendered in the same pass as the rest of the file,
+     so these sections do not grow after the page is painted. Only a slow response fills in later. */
+  var WEB_ERR = '<p class="pf-wait">The website record could not be loaded just now. Reload the page to try again.</p>';
+  var intel = { done: false, j: null, err: false }, intelP = null;
+  function startIntel(){
+    intelP = fetch('/api/x/d/project/' + encodeURIComponent(id)).then(function(r){ if (!r.ok) throw new Error('http'); return r.json(); });
+    intelP.then(function(j){ intel.done = true; intel.j = j; }, function(){ intel.done = true; intel.err = true; });
+  }
   function loadIntel(c){
+    if (intel.done || !intelP) return;
     var put = function(id, h){ var el = document.getElementById(id); if (el) el.innerHTML = h; };
-    fetch('/api/x/d/project/' + encodeURIComponent(c.id)).then(function(r){ if (!r.ok) throw new Error('http'); return r.json(); })
-      .then(function(j){ put('pf-web', webHtml(j, c)); put('pf-drift', driftHtml(j, c)); })
-      .catch(function(){ put('pf-web', '<p class="pf-wait">The website record could not be loaded just now. Reload the page to try again.</p>'); });
+    intelP.then(function(j){ put('pf-web', webHtml(j, c)); put('pf-drift', driftHtml(j, c)); })
+      .catch(function(){ put('pf-web', WEB_ERR); });
   }
 
   /* Developer replies approved by a moderator (block I: /api/x/i/replies). Empty until that feature is switched on. */
@@ -322,7 +333,9 @@
   function wlMsg(on, acted){ return on ? (acted ? (window.KBWatch && KBWatch.account && KBWatch.account() ? 'Saved to your watchlist and your account. ' : 'Saved to your watchlist in this browser. <a href="/login#signup">Create a free account</a> to keep it on every device. ') : 'In your watchlist. ') + '<a href="/watchlist/">See what changed</a>' : (acted ? 'Removed from your watchlist. ' : 'Save it to see what changes next time you visit. ') + '<a href="/watchlist/">Your watchlist</a>'; }
 
   if (!id) { notFound(); return; }
+  startIntel();
   fetch('/data/bali-cases.json?t=' + Math.floor(Date.now() / 6e5)).then(function(r){ if (!r.ok) throw new Error('http'); return r.json(); })
+    .then(function(D){ return intel.done ? D : Promise.race([intelP.then(null, function(){}), new Promise(function(ok){ setTimeout(ok, 1200); })]).then(function(){ return D; }); })
     .then(render)
     .catch(function(){ notFound('We could not load the database just now. Try again in a moment, or search below.'); });
 })();

@@ -200,3 +200,9 @@
 .pf-wi-n{font-size:.84rem;color:var(--muted);line-height:1.4;margin-bottom:4px}
 .pf-kvbw{margin-top:14px;min-height:28px}
 .pf-rep blockquote{margin:10px 0;padding:10px 14px;border-left:4px solid var(--line);background:var(--paper);white-space:pre-wrap;overflow-wrap:anywhere}
+/* Layout stability: the loading state and the server-rendered summary (#ssr, added by the worker on /p/{id}/) fill the first screen,
+   so the footer never shows above the fold and nothing jumps when p.js swaps in the full file. The summary stays until that swap. */
+.pf-load{min-height:100vh;min-height:100svh}
+#ssr{min-height:100vh;min-height:100svh}
+#ssr~#pf .pf-ld{display:none}
+#ssr~#pf .pf-load{min-height:0;padding:0;border:0}
