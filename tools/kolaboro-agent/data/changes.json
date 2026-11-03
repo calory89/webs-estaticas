@@ -8127,5 +8127,413 @@
     null
    ]
   }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "j-hills",
+  "name": "J-Hills",
+  "changed": {
+   "title_type": [
+    "leasehold",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "secret-inshi",
+  "name": "SECRET by INSHI",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "bali-benefit-reimagined-villas-ubud-2",
+  "name": "Re:Imagined Villas Ubud 2",
+  "changed": {
+   "price_from": [
+    140000,
+    159000
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "reserva-natural-san-jose-natura-itagui",
+  "name": "Reserva Natural San José Natura",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Alianza Fiduciaria is the trust (fiducia) of this project",
+    "Alianza Fiduciaria, fiducia de este proyecto"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "al-sidr-saadiyat-lagoons",
+  "name": "Al Sidr (Saadiyat Lagoons)",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "island-heights-al-marjan",
+  "name": "Island Heights",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "samana-sky-views-dpc",
+  "name": "Samana Sky Views",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "querencia-dovec-group",
+  "name": "Querencia",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9574,
+    9586
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "becici-sea-view-building-value-one",
+  "name": "New residential building 200 m from Bečići beach (building 5)",
+  "changed": {
+   "price_from": [
+    217827,
+    203716
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "sky-gate-tower-tiger",
+  "name": "Sky Gate Tower",
+  "changed": {
+   "price_from": [
+    885800,
+    795000
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "the-hillgate-ellington",
+  "name": "The Hillgate",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Escrow Account Number 4031224708340005, Escrow Agent First Abu Dhabi Bank PJSC.",
+    "Escrow Account Number 4031224708340005; Escrow Agent First Abu Dhabi Bank PJSC."
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "sensi-saadiyat-reportage",
+  "name": "Sensi Saadiyat",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Escrow Account Number 4031227067337002; Escrow Agent First Abu Dhabi Bank P.J.S.C.",
+    "Escrow Account Number 4031227067337002, Escrow Agent First Abu Dhabi Bank P.J.S.C."
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "shahrukhz-residences-danube",
+  "name": "Shahrukhz Residences by Danube",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Escrow account no. 011201382016 (Escrow Registered No. 011201382016)",
+    "Escrow account no. 011201382016"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "elaris-sky-object-1",
+  "name": "ELAR1S Sky (Elaris Sky)",
+  "changed": {
+   "permit_number": [
+    "registered project #4019",
+    "#4019"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "armani-beach-residences-palm-jumeirah-arada",
+  "name": "Armani Beach Residences at Palm Jumeirah",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Escrow account no. 3538468744702; Escrow Registered No. 3538468744702",
+    "Escrow Registered No. 3538468744702"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "mamsha-palm-aldar",
+  "name": "Mamsha Palm",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "bab-al-qasr-garden-residence-66-burtville",
+  "name": "Bab Al Qasr Garden Residence 66",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "ramhan-island-villas-phase-4-eagle-hills",
+  "name": "Ramhan Island Villas Phase 4",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "nasim-al-bahr-residences-adnh",
+  "name": "Nasim Al Bahr Residences (The Luxury Collection)",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "oystra-richmind",
+  "name": "Oystra",
+  "changed": {
+   "price_from": [
+    2586888,
+    2500000
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "gianfranco-ferre-residences-mira",
+  "name": "Gianfranco Ferré Residences",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "alliance-centropolis-alliance-group",
+  "name": "Alliance Centropolis",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "the-ivory-chang-phueak-home-development-group",
+  "name": "The IVORY",
+  "changed": {
+   "price_from": [
+    62257,
+    62256
+   ],
+   "title_type": [
+    null,
+    "freehold"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "penha-living-bolder-addsolid",
+  "name": "Penha Living Bolder",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "melia-residences-bahrain-infracorp",
+  "name": "Meliá Residences Bahrain (Meliá Beachfront)",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "udaondo-buenos-aires-landmark-developments",
+  "name": "Udaondo Buenos Aires",
+  "changed": {
+   "escrow_or_guarantee": [
+    null,
+    "Fideicomiso Buenos Aires Landmark, which bought the land at a public auction (no buyer escrow or guarantee described)"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "hilton-residences-abu-dhabi-al-raha-emirates-developments",
+  "name": "Hilton Residences Abu Dhabi Al Raha",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "next-gardens-kvariati-next-group",
+  "name": "NEXT Gardens",
+  "changed": {
+   "price_from": [
+    153884,
+    154080
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "cello-residences-taraf",
+  "name": "Cello Residences",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "creek-waters-2-emaar",
+  "name": "Creek Waters 2",
+  "changed": {
+   "advertised_yield_pct": [
+    null,
+    5
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "windsor-house-ellington-dubai-south",
+  "name": "Windsor House",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "sparklz-danube-al-furjan",
+  "name": "Sparklz by Danube",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "naya-at-district-one-meydan",
+  "name": "Naya at District One",
+  "changed": {
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "ajman-one-phase-2-aqaar",
+  "name": "Ajman One Phase 2",
+  "changed": {
+   "price_from": [
+    700000,
+    316000
+   ],
+   "plans_published": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "hythe-by-botanica",
+  "name": "Hythe by Botanica",
+  "changed": {
+   "title_type": [
+    "leasehold",
+    "freehold"
+   ]
+  }
  }
 ]
