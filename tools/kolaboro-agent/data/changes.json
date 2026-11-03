@@ -7724,5 +7724,408 @@
     "Matrícula nº 135.051"
    ]
   }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "secret-inshi",
+  "name": "SECRET by INSHI",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "morros-vita-serena-del-mar",
+  "name": "Morros Vita",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Alianza Fiduciaria, entidad encargada de velar por la correcta administración de los recursos; vinculación de compradores al esquema fiduciario",
+    "Esquema fiduciario con Alianza Fiduciaria, entidad encargada de velar por la correcta administración de los recursos"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "reserva-natural-san-jose-natura-itagui",
+  "name": "Reserva Natural San José Natura",
+  "changed": {
+   "completion_year": [
+    2023,
+    null
+   ],
+   "escrow_or_guarantee": [
+    "Alianza Fiduciaria is named as the trust (fiducia) of the project; no escrow or guarantee terms are described",
+    "Alianza Fiduciaria is the trust (fiducia) of this project"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "janu-residences-al-marjan",
+  "name": "Janu Residences",
+  "changed": {
+   "guaranteed_language": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "querencia-dovec-group",
+  "name": "Querencia",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9553,
+    9574
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "les-vagues-elie-saab-dar-global",
+  "name": "Les Vagues by Elie Saab",
+  "changed": {
+   "extension_promised": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "shivo-towers-shivo",
+  "name": "Shivo Towers",
+  "changed": {
+   "extension_promised": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "residences-melia-seychelles-seafront",
+  "name": "The Residences at Meliá Seychelles",
+  "changed": {
+   "price_from": [
+    8192610,
+    8124824
+   ],
+   "escrow_or_guarantee": [
+    "Agent profile states: Operating a Trust Account",
+    "Operating a Trust Account"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "oak-yard-one-yard",
+  "name": "Oak Yard",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Bank Mashreq Bank Psc, Escrow number 019500000733",
+    "Bank Mashreq Bank Psc Escrow number 019500000733"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "quattro-del-mar-rak-properties",
+  "name": "Quattro Del Mar",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "sky-tower-first-projects",
+  "name": "Sky Tower",
+  "changed": {
+   "permit_number": [
+    "75/1",
+    "Wafi license 75/1"
+   ],
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "armani-beach-residences-palm-jumeirah-arada",
+  "name": "Armani Beach Residences at Palm Jumeirah",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Escrow account no. 3538468744702",
+    "Escrow account no. 3538468744702; Escrow Registered No. 3538468744702"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "noda-flores-noda-collective",
+  "name": "NODA Flores",
+  "changed": {
+   "advertised_yield_pct": [
+    9,
+    15
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "casa-blake-costa-palmas-irongate",
+  "name": "Casa Blake at Costa Palmas",
+  "changed": {
+   "price_from": [
+    830000,
+    null
+   ],
+   "currency": [
+    "USD",
+    null
+   ],
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "ramhan-island-villas-phase-4-eagle-hills",
+  "name": "Ramhan Island Villas Phase 4",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "nasim-al-bahr-residences-adnh",
+  "name": "Nasim Al Bahr Residences (The Luxury Collection)",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "gianfranco-ferre-residences-mira",
+  "name": "Gianfranco Ferré Residences",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "alliance-centropolis-alliance-group",
+  "name": "Alliance Centropolis",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "the-ivory-chang-phueak-home-development-group",
+  "name": "The IVORY",
+  "changed": {
+   "price_from": [
+    62256,
+    62257
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "sealine-residence-al-zorah",
+  "name": "Sealine Residence",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "senna-tower-fg-empreendimentos",
+  "name": "Senna Tower",
+  "changed": {
+   "completion_year": [
+    2033,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "265-elmer-one-centum-real-estate",
+  "name": "265 Elmer One Apartments",
+  "changed": {
+   "guaranteed_language": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "melia-residences-bahrain-infracorp",
+  "name": "Meliá Residences Bahrain (Meliá Beachfront)",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "udaondo-buenos-aires-landmark-developments",
+  "name": "Udaondo Buenos Aires",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Fideicomiso Buenos Aires Landmark (named as the trust that bought the land at a 2018 public auction; no buyer escrow or guarantee described)",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "radisson-resort-maldives-thulusdhoo-teus-group",
+  "name": "Radisson Resort Maldives (Branded Residences)",
+  "changed": {
+   "escrow_or_guarantee": [
+    "developer guarantee (10% a year on infrastructure shares)",
+    "developer guarantee"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "city-walk-love-lane-liverpool-habitia",
+  "name": "City Walk",
+  "changed": {
+   "permit_claim": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "hayyan-alef-group",
+  "name": "Hayyan (current phases Samr and Deem)",
+  "changed": {
+   "extension_promised": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "scirocco-heights-residences-birzebbuga",
+  "name": "Scirocco Heights Residences",
+  "changed": {
+   "guaranteed_language": [
+    false,
+    null
+   ],
+   "permit_claim": [
+    false,
+    null
+   ],
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "bela-beach-front-homes-gran-pacifica-eci",
+  "name": "BELA Beach Front Homes (Gran Pacifica)",
+  "changed": {
+   "price_from": [
+    133797,
+    null
+   ],
+   "currency": [
+    "USD",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "anei-lombok-pt-anei-living-experience",
+  "name": "ANEI Lombok",
+  "changed": {
+   "price_from": [
+    null,
+    120000
+   ],
+   "currency": [
+    null,
+    "USD"
+   ],
+   "advertised_yield_pct": [
+    null,
+    10
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "sanur-cassandra-4-vibe-development",
+  "name": "Sanur Cassandra 4",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Escrow payments via Bank Mandiri; every buyer payment protected by independent bank escrow",
+    "Escrow payments via Bank Mandiri; every buyer payment is protected by independent bank escrow"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "pavilion-damansara-heights-phase-2-jendela-mayang",
+  "name": "Pavilion Damansara Heights Phase 2 (Royal Suites and Imperial Residences)",
+  "changed": {
+   "completion_year": [
+    2027,
+    null
+   ]
+  }
  }
 ]
