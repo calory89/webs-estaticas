@@ -1,4 +1,4 @@
-//#region node_modules/.nitro/vite/services/ssr/assets/hotelService-Doyv5Iys.js
+//#region node_modules/.nitro/vite/services/ssr/assets/hotelService-CckSOPtL.js
 /**
 * Seeded destinations. Maps directly to a future `cities` table.
 * `aliases` is search-only sugar and would live in a separate search index.

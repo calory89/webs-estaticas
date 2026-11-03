@@ -1,6 +1,6 @@
 import { n as require_jsx_runtime } from "./_libs/react+tanstack__react-query.mjs";
-import { n as DestinationSearch, r as SiteFooter, t as BrandHeader } from "./_ssr/SiteFooter-yEJJfFPQ.mjs";
-//#region node_modules/.nitro/vite/services/ssr/assets/_citySlug-ChYI-Gf9.js
+import { n as DestinationSearch, r as SiteFooter, t as BrandHeader } from "./_ssr/SiteFooter-CiqFcW7F.mjs";
+//#region node_modules/.nitro/vite/services/ssr/assets/_citySlug-BfO386k_.js
 var import_jsx_runtime = require_jsx_runtime();
 function DestinationNotFound() {
 	return /* @__PURE__ */ (0, import_jsx_runtime.jsxs)("div", {

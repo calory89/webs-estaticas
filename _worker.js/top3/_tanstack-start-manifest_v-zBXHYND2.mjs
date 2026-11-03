@@ -1,13 +1,13 @@
-//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-LocGEaC5.js
+//#region node_modules/.nitro/vite/services/ssr/assets/_tanstack-start-manifest_v-zBXHYND2.js
 var tsrStartManifest = () => ({ routes: {
 	__root__: {
 		filePath: "/home/claude/top-3-hotels/src/routes/__root.tsx",
 		children: ["/", "/$citySlug"],
-		preloads: ["/assets/index-CZQH-Qt1.js"],
+		preloads: ["/assets/index-EvVYUs7x.js"],
 		scripts: [{ attrs: {
 			type: "module",
 			async: !0,
-			src: "/assets/index-CZQH-Qt1.js"
+			src: "/assets/index-EvVYUs7x.js"
 		} }]
 	},
 	"/": {
@@ -19,9 +19,9 @@ var tsrStartManifest = () => ({ routes: {
 		filePath: "/home/claude/top-3-hotels/src/routes/$citySlug.tsx",
 		children: void 0,
 		preloads: [
-			"/assets/_citySlug-CClkgUMs.js",
-			"/assets/SiteFooter-Bf-gvNC6.js",
-			"/assets/_citySlug-DLXrG6So.js"
+			"/assets/_citySlug-ByrPrM5l.js",
+			"/assets/SiteFooter-p6450GnG.js",
+			"/assets/_citySlug-Cdt4eKXh.js"
 		]
 	}
 } });
