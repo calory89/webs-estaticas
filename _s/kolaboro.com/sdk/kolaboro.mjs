@@ -211,8 +211,9 @@ export class Kolaboro {
         this.baseUrl = (opts.baseUrl || 'https://kolaboro.com').replace(/\/+$/, '');
         this.verifySignatures = opts.verify !== false;
         this.keys = new Map((opts.publicKeys || PINNED_KEYS).map(k => [k.kid, k]));
-        const g = (typeof fetch === 'function' ? fetch : undefined);
-        const f = opts.fetch || g;
+        // fetch must be called unbound from the instance (browsers throw "Illegal invocation" otherwise)
+        const g = typeof fetch === 'function' ? ((u, i) => fetch(u, i)) : undefined;
+        const f = opts.fetch ? ((u, i) => opts.fetch(u, i)) : g;
         if (!f)
             throw new Error('kolaboro: no fetch available; pass opts.fetch');
         this.f = f;

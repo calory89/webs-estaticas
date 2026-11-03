@@ -2,14 +2,14 @@
  "version": "0.1.0",
  "files": {
   "kolaboro.mjs": {
-   "bytes": 27081,
-   "sha256": "2bc564441a8e6f79085011538746df422cc3088506e0f7aab24f852335739e7e",
-   "sri": "sha384-86M6hF4Hkdhzye0tQguZEvgSlq3fW3vJjc3au23wpFDvfNvmpMxWvx1Unsg3r0rW"
+   "bytes": 27233,
+   "sha256": "09a22b13b462030e2db9c10966885180ea36bab59631190e328856cf71b5c63a",
+   "sri": "sha384-ohLpToMJkAzoVOWOXnlxFWbMAhUnTTbDwJOcerrIVlxu1/wUa2BLNco3spSSCIvQ"
   },
   "kolaboro-0.1.0.mjs": {
-   "bytes": 27081,
-   "sha256": "2bc564441a8e6f79085011538746df422cc3088506e0f7aab24f852335739e7e",
-   "sri": "sha384-86M6hF4Hkdhzye0tQguZEvgSlq3fW3vJjc3au23wpFDvfNvmpMxWvx1Unsg3r0rW"
+   "bytes": 27233,
+   "sha256": "09a22b13b462030e2db9c10966885180ea36bab59631190e328856cf71b5c63a",
+   "sri": "sha384-ohLpToMJkAzoVOWOXnlxFWbMAhUnTTbDwJOcerrIVlxu1/wUa2BLNco3spSSCIvQ"
   },
   "kolaboro.d.ts": {
    "bytes": 11257,

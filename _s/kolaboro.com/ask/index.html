@@ -56,7 +56,7 @@
 <main id="main">
 <section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / Ask Kolaboro</p><h1>Ask Kolaboro</h1><p class="lead">Ask about Kolaboro, how we check projects, or what our open data says. The answer comes only from our own pages and dataset. Every sentence quotes its source, our server checks each quote before you see it, and if nothing can be checked the answer is "I don't know".</p></div></section>
 <section class="sec"><div class="wrap eg-p">
-<form class="kf" id="askf" autocomplete="off"><input type="search" id="askq" aria-label="Your question" name="q" maxlength="300" minlength="6" required placeholder="e.g. How does Kolaboro calculate the Trust Score?"><button class="btn btn-hi" type="submit" id="askb">Ask</button></form>
+<form class="kf" id="kxaf" autocomplete="off"><input type="search" id="kxaq" aria-label="Your question" name="q" maxlength="300" minlength="6" required placeholder="e.g. How does Kolaboro calculate the Trust Score?"><button class="btn btn-hi" type="submit" id="kxab">Ask</button></form>
 <div class="chips" id="chips"><button type="button">Can a developer pay to get a better score?</button><button type="button">What is the transparency index of Dubai?</button><button type="button">Is the permit number of BALI-014 public?</button><button type="button">How can I check that an API answer was signed by Kolaboro?</button></div>
 <div id="out" aria-live="polite"></div>
 <div class="eg-k" id="ixk"><div><b id="ix-p">…</b><span>passages from our pages</span></div><div><b id="ix-d">…</b><span>passages from the open dataset</span></div><div><b id="ix-pg">…</b><span>pages indexed</span></div><div><b id="ix-u">…</b><span>data date</span></div></div>
@@ -79,7 +79,7 @@
 <style>.ans{margin-top:22px;background:#fff;border:1px solid #E2E0D8;border-radius:16px;padding:18px;max-width:860px}.ans p.s{margin:0 0 12px;color:#17212B;font-size:1.05rem;line-height:1.55}.ans sup a{font-size:.72rem;font-weight:800;text-decoration:none;background:#17212B;color:#fff;border-radius:6px;padding:1px 5px;margin-left:3px}.ans blockquote{margin:4px 0 14px;padding:8px 12px;border-left:3px solid #FF5B14;background:#F6F6F3;font-size:.86rem;color:#2A3541}.ans blockquote a{font-weight:700}.ans details{margin-top:12px;font-size:.88rem}.ans details summary{cursor:pointer;font-weight:700}.ans .psg{border-top:1px solid #E2E0D8;padding:8px 0}.ans .psg b{font-size:.8rem}.ans .rm{text-decoration:line-through;color:#59626B}.idk{font-size:1.15rem;font-weight:800}</style>
 <script>
 (function(){
-  var f=document.getElementById('askf'),q=document.getElementById('askq'),b=document.getElementById('askb'),out=document.getElementById('out');
+  var f=document.getElementById('kxaf'),q=document.getElementById('kxaq'),b=document.getElementById('kxab'),out=document.getElementById('out');
   function e(t){return String(t==null?'':t).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
   function set(id,t){var x=document.getElementById(id);if(x)x.textContent=t}
   fetch('/api/x/k/ask/index').then(function(r){return r.json()}).then(function(d){set('ix-p',d.passages_pages);set('ix-d',d.passages_data);set('ix-pg',d.pages);set('ix-pg2',d.pages);set('ix-u',d.data_updated||'-')}).catch(function(){set('ix-p','-');set('ix-d','-');set('ix-pg','-');set('ix-u','-')});
