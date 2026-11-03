@@ -1,5 +1,5 @@
 name: Kolaboro satellite watch
-# Weekly: Sentinel-2 composites for every watched site (Copernicus Data Space), land-cover change since 2023,
+# Weekly: Sentinel-2 composites + Sentinel-1 radar backscatter for every watched site (Copernicus Data Space), change since 2023,
 # published to kolaboro.com/k/sat/ and kolaboro.com/data/satellite.json.
 on:
   schedule:
@@ -16,7 +16,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 80
     steps:
       - uses: actions/checkout@v4
         with:
@@ -48,6 +48,8 @@ jobs:
             sleep 5; git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
           done; exit 1
       - name: Project sites (private numbers only, no images)
+        timeout-minutes: 25
+        continue-on-error: true
         env:
           CDSE_CLIENT_ID: ${{ secrets.CDSE_CLIENT_ID }}
           CDSE_CLIENT_SECRET: ${{ secrets.CDSE_CLIENT_SECRET }}
