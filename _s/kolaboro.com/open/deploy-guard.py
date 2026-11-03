@@ -27,7 +27,7 @@ RUN = '%s/%s/actions/runs/%s' % (os.environ.get('GITHUB_SERVER_URL', 'https://gi
 PW = os.path.join(os.environ.get('RUNNER_TEMP', '/tmp'), 'guard-pw')
 PW_VERSION = '1.48.2'
 CF_TOKEN, CF_ACCOUNT, CF_PROJECT = os.environ.get('CF_PAGES_TOKEN', ''), os.environ.get('CF_ACCOUNT_ID', ''), os.environ.get('CF_PAGES_PROJECT', 'web-lovable')
-now = lambda: datetime.datetime.utcnow().replace(microsecond=0).isoformat() + 'Z'
+now = lambda: datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0, tzinfo=None).isoformat() + 'Z'
 
 
 def git(*a, check=True, inp=None, env=None):
@@ -112,7 +112,7 @@ def restore_tree(parent, good, changes):
             git('update-index', '--add', '--cacheinfo', '%s,%s,%s' % (mode, sha, p), env=env)
         else:
             git('update-index', '--force-remove', '--', p, env=env)
-    tree = git('write-tree', env=env)
+    tree = git('write-tree', '--missing-ok', env=env)
     return tree, paths
 
 
@@ -148,7 +148,7 @@ def publish(state):
         git('read-tree', tip, env=env)
         blob = git('hash-object', '-w', '--stdin', inp=body)
         git('update-index', '--add', '--cacheinfo', '100644,%s,%s' % (blob, DEPLOYS), env=env)
-        c = commit(git('write-tree', env=env), tip, 'kolaboro.com: deploy guard record %s' % now()[:16])
+        c = commit(git('write-tree', '--missing-ok', env=env), tip, 'kolaboro.com: deploy guard record %s' % now()[:16])
         if subprocess.run(['git', 'push', '-q', 'origin', '%s:refs/heads/%s' % (c, BRANCH)]).returncode == 0: return c
         time.sleep(5)
     print('could not publish deploys.json'); return ''
