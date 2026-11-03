@@ -53,6 +53,10 @@ def known(c): return bool(c) and subprocess.run(['git', 'cat-file', '-e', c + '^
 def is_anc(a, b): return subprocess.run(['git', 'merge-base', '--is-ancestor', a, b], capture_output=True).returncode == 0
 
 
+def obj(ref, path):   # blob id of path at ref, or '' when the file does not exist there
+    return git('rev-parse', '--verify', '-q', '%s:%s' % (ref, path), check=False)
+
+
 def files(c): return [f for f in git('diff-tree', '--no-commit-id', '--name-only', '-r', '--root', c).splitlines() if f]
 def guarded_files(c): return [f for f in files(c) if f.startswith(GUARDED) and not f.startswith(UNGUARDED)]
 def human(c): return not any(b in git('log', '-1', '--format=%ae', c) for b in BOT_EMAILS)
@@ -188,8 +192,8 @@ def drill(state, tip):
         x = cands[0]; good = x + '^'
         tree, paths = restore_tree(tip, git('rev-parse', good), [x])
         c = commit(tree, tip, 'deploy guard DRILL (not pushed): roll back %s' % x[:12])
-        same = all(git('rev-parse', '%s:%s' % (c, p), check=False) == git('rev-parse', '%s:%s' % (good, p), check=False) for p in paths)
-        later = [p for p in paths if git('rev-parse', '%s:%s' % (tip, p), check=False) != git('rev-parse', '%s:%s' % (x, p), check=False)]
+        same = all(obj(c, p) == obj(good, p) for p in paths)
+        later = [p for p in paths if obj(tip, p) != obj(x, p)]
         ok_build = same
         built = 'rollback commit for %s built and checked (%d file(s) restored to their previous version%s), not pushed' % (x[:12], len(paths), ', %d of them changed again later and would also be restored' % len(later) if later else '')
     res = 'passed' if a['ok'] and caught and ok_build else 'failed'
