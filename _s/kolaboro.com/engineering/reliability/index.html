@@ -61,6 +61,11 @@
 <li><b>Uptime</b>: the home page and the API health check are probed every 5 minutes from our database server, outside Cloudflare. <a href="/api/open/uptime">/api/open/uptime</a>.</li>
 <li><b>Errors in visitors' browsers</b> are reported to us (page path, message and script origin, nothing personal) with a daily digest by email.</li>
 <li><b>Scripts</b>: third-party libraries load with Subresource Integrity, so a changed file is refused, and a script allowlist runs in report-only mode so we see any unexpected script before we enforce it.</li>
+<li><b>A second vantage point</b>: GitHub's runners probe the site every hour and report with a short-lived token signed by GitHub (OpenID Connect), which our server verifies. No password is stored anywhere for it.</li>
+<li><b>Data freshness</b>: the objective is 90% of projects re-read from their source within 7 days, measured per market on <a href="/status">/status</a> and at <a href="/api/open/freshness">/api/open/freshness</a>.</li>
+<li><b>Decoy credentials</b>: a fake admin key and a fake API key are planted where only someone looking for secrets would find them, plus a decoy path in robots.txt. Nobody legitimate ever uses them, so any use alerts us at once.</li>
+<li><b>Weekly security scan</b>: OWASP ZAP scans the site every week (passive baseline); the summary by risk level is on <a href="/status">/status</a>.</li>
+<li><b>Signed case files</b>: every PDF the portal creates is registered with its SHA-256; anyone can check a PDF on <a href="/verify#pdf">/verify</a>.</li>
 <li><b>Which code answered</b>: every open API answer names the build commit (header x-kolaboro-build, and <a href="/api/open/build">/api/open/build</a>).</li>
 <li><b>Admin actions</b> go into a hash-chained audit trail whose head is in the public log.</li>
 </ul><p class="muted" style="margin-top:48px;font-size:.9rem">More from Engineering: <a href="/engineering/ai-safety">AI that can't be talked into a verdict</a> · <a href="/engineering/evals">Daily AI evaluation</a> · <a href="/engineering/transparency-log">The public log</a> · <a href="/engineering/signed-photos">Signed site photos</a> · <a href="/engineering/reliability">Reliability</a></p>

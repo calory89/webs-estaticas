@@ -246,8 +246,15 @@
         line('Scan the QR code or open kolaboro.com/verify/?hash=' + (head || '') + ' to see its timestamp. To recompute the chain, download the evidence data from the portal and drop it on kolaboro.com/verify.', 8.5, false, '#41505C');
         if (head) { var q = document.createElement('div'); new QRCode(q, { text: 'https://kolaboro.com/verify/?hash=' + head, width: 256, height: 256, correctLevel: QRCode.CorrectLevel.M }); var cv = q.querySelector('canvas'); if (cv) d.addImage(cv.toDataURL('image/png'), 'PNG', L, y + 2, 38, 38); y += 44; }
         line('Kolaboro checks property for people buying abroad. This file records evidence; it is not legal advice. kolaboro.com · hello@kolaboro.com', 7.5, false, '#6B7A86');
-        d.save('kolaboro-case-' + c.code + '.pdf');
-        btn.disabled = false; btn.textContent = 'Download case file (PDF)'; if (window.kbEvent) kbEvent('case_pdf');
+        line('This exact file is registered with Kolaboro when it is created. To check it was not edited, drop it on kolaboro.com/verify: your browser computes its SHA-256 and looks it up.', 7.5, false, '#6B7A86');
+        var bytes = d.output('arraybuffer');
+        return crypto.subtle.digest('SHA-256', bytes).then(function(hb){
+          var hx = [].map.call(new Uint8Array(hb), function(b){ return ('0' + b.toString(16)).slice(-2); }).join('');
+          return KB.rpc('kolaboro_pdf_register', { p_token: token, p_case_id: c.id, p_sha256: hx, p_head: head || '' }).catch(function(){ return null; });
+        }).then(function(){
+          var a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([bytes], { type: 'application/pdf' })); a.download = 'kolaboro-case-' + c.code + '.pdf'; document.body.appendChild(a); a.click(); setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); }, 4000);
+          btn.disabled = false; btn.textContent = 'Download case file (PDF)'; if (window.kbEvent) kbEvent('case_pdf');
+        });
       }).catch(function(e){ btn.disabled = false; btn.textContent = 'Download case file (PDF)'; KB.toast('Could not build the PDF: ' + (e.message || e)); });
   }
 

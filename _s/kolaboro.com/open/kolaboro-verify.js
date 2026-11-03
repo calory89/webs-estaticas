@@ -1,4 +1,4 @@
-/*! kolaboro-verify 1.2.0 (3 Nov 2026), MIT licence. Independent checks of Kolaboro's public records, in the browser or Node 18+.
+/*! kolaboro-verify 1.3.0 (3 Nov 2026), MIT licence. Independent checks of Kolaboro's public records, in the browser or Node 18+.
  *  No dependency, no network call of its own: you pass it what you downloaded, it tells you whether it adds up.
  *
  *  KV.verifyProof(proof)          -> true if a project's page fingerprint is inside the daily Merkle root (GET /api/open/proof/{id})
@@ -14,6 +14,8 @@
  *       (RFC 9162 section 2.1.4.2; GET /api/open/log-consistency?first=M&second=N). Keep an old checkpoint, check it against a new one later.
  *  KV.verifyPhotoSignature(receipt) -> { ok, why } for a passkey-signed site photo (GET /api/open/receipt/{id}): the agent's phone signed
  *       SHA-256("kolaboro-capture-v1\n" + photo sha256 + "\n" + capture code) with WebAuthn; checks origin, relying party, user verification, signature
+ *  KV.verifyBitcoinStamp(otsBytes, hashHex, getMerkleRoot) -> { ok, height }: walks the OpenTimestamps proof (GET /api/kb/stamp?hash=H)
+ *       to its Bitcoin block and compares with that block's merkle root from any block explorer. No trust in Kolaboro needed.
  *  Each log head is also recorded in Sigstore Rekor (rekor_uuid in /api/open/log) and timestamped in Bitcoin: GET https://kolaboro.com/api/kb/stamp?hash=HEAD returns the OpenTimestamps proof,
  *  which you can check with the official tools (opentimestamps.org).
  */
@@ -102,19 +104,70 @@
   }
   function b64u(x) { x = String(x || '').replace(/-/g, '+').replace(/_/g, '/'); while (x.length % 4) x += '='; return b64(x); }
   function derRaw(der, n) { var o = 2; if (der[1] & 0x80) o += der[1] & 0x7f; function rd() { o++; var l = der[o++], v = der.slice(o, o + l); o += l; while (v.length > n && v[0] === 0) v = v.slice(1); var out = new Uint8Array(n); out.set(v, n - v.length); return out; } var r = rd(), s2 = rd(), raw = new Uint8Array(2 * n); raw.set(r, 0); raw.set(s2, n); return raw; }
-  function verifyPhotoSignature(rc) {
-    var pk = rc && rc.passkey; if (!pk) return Promise.resolve({ ok: false, why: 'not signed' });
+  function verifyPhotoSignature(rc) { return verifyAssertion(rc && rc.passkey, 'kolaboro-capture-v1\n' + (rc && rc.sha256) + '\n' + ((rc && rc.passkey && rc.passkey.code) || '')); }
+  // founder co-signature of a log head: KV.verifyCosign(head) with a head from /api/open/log
+  function verifyCosign(h) { return verifyAssertion(h && h.cosign, 'kolaboro-cosign-v1\n' + (h && h.day) + '\n' + (h && h.head)); }
+  function verifyAssertion(pk, challengeText) {
+    if (!pk) return Promise.resolve({ ok: false, why: 'not signed' });
     var ad = b64u(pk.authenticator_data), cj = b64u(pk.client_data_json), sig = b64u(pk.signature), cd;
     try { cd = JSON.parse(new TextDecoder().decode(cj)); } catch (e) { return Promise.resolve({ ok: false, why: 'malformed' }); }
-    return Promise.all([H(te.encode('kolaboro-capture-v1\n' + rc.sha256 + '\n' + (pk.code || ''))), H(te.encode('kolaboro.com')), H(cj)]).then(function (h) {
+    return Promise.all([H(te.encode(challengeText)), H(te.encode('kolaboro.com')), H(cj)]).then(function (h) {
       var want = btoa(String.fromCharCode.apply(null, h[0])).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
-      if (cd.type !== 'webauthn.get' || cd.challenge !== want) return { ok: false, why: 'challenge is not this photo' };
+      if (cd.type !== 'webauthn.get' || cd.challenge !== want) return { ok: false, why: 'challenge does not match' };
       if (cd.origin !== 'https://kolaboro.com' || !eq(ad.slice(0, 32), h[1])) return { ok: false, why: 'wrong origin or relying party' };
       if (!(ad[32] & 1) || !(ad[32] & 4)) return { ok: false, why: 'user not verified' };
       var signed = cat(ad, h[2]), alg = pk.alg === -7 ? [{ name: 'ECDSA', namedCurve: 'P-256' }, { name: 'ECDSA', hash: 'SHA-256' }, derRaw(sig, 32)] : pk.alg === -8 ? [{ name: 'Ed25519' }, { name: 'Ed25519' }, sig] : [{ name: 'RSASSA-PKCS1-v1_5', hash: 'SHA-256' }, 'RSASSA-PKCS1-v1_5', sig];
       return C.subtle.importKey('spki', b64(pk.spki), alg[0], false, ['verify']).then(function (k) { return C.subtle.verify(alg[1], k, alg[2], signed); }).then(function (ok) { return ok ? { ok: true } : { ok: false, why: 'signature does not verify' }; });
     }).catch(function () { return { ok: false, why: 'malformed' }; });
   }
-  var KV = { version: '1.2.0', verifyPhotoSignature: verifyPhotoSignature, verifyInclusion: verifyInclusion, verifyConsistency: verifyConsistency, verifyCheckpoint: verifyCheckpoint, verifySignature: verifySignature, sha256Hex: sha256Hex, verifyProof: verifyProof, canonical: canonical, headHash: headHash, verifyLog: verifyLog, verifyEvidenceLines: verifyEvidenceLines };
+  // ----- OpenTimestamps proof, checked against Bitcoin itself -----
+  // KV.otsBitcoin(otsBytes, hashHex) -> [{ height, merkle_root }] every Bitcoin attestation the proof reaches for this hash.
+  // KV.verifyBitcoinStamp(otsBytes, hashHex, getMerkleRoot) -> { ok, height } where getMerkleRoot(height) returns the block's
+  //   merkle root as shown by any block explorer (e.g. mempool.space/api/block-height/H then /api/block/HASH).
+  var OTS_MAGIC = [0x00, 0x4f, 0x70, 0x65, 0x6e, 0x54, 0x69, 0x6d, 0x65, 0x73, 0x74, 0x61, 0x6d, 0x70, 0x73, 0x00, 0x00, 0x50, 0x72, 0x6f, 0x6f, 0x66, 0x00, 0xbf, 0x89, 0xe2, 0xe8, 0x84, 0xe8, 0x92, 0x94];
+  function otsBitcoin(bytes, hashHex) {
+    var b = bytes instanceof Uint8Array ? bytes : new Uint8Array(bytes), p = 0, out = [];
+    function rb() { if (p >= b.length) throw new Error('truncated'); return b[p++]; }
+    function vu() { var v = 0, s = 1, x; do { x = rb(); v += (x & 0x7f) * s; s *= 128; } while (x & 0x80); return v; }
+    function vb() { var n = vu(); if (p + n > b.length) throw new Error('truncated'); var r = b.slice(p, p + n); p += n; return r; }
+    for (var i = 0; i < OTS_MAGIC.length; i++) if (rb() !== OTS_MAGIC[i]) return Promise.reject(new Error('not an OpenTimestamps proof'));
+    vu(); if (rb() !== 0x08) return Promise.reject(new Error('only SHA-256 file hashes are supported'));
+    var digest = b.slice(p, p + 32); p += 32;
+    if (hex(digest) !== String(hashHex).toLowerCase()) return Promise.reject(new Error('the proof is for another hash'));
+    // walk the tree; each branch is a promise of its message
+    function walk(msgP) {
+      var jobs = [];
+      function one(tag) {
+        if (tag === 0x00) {
+          var t = []; for (var k = 0; k < 8; k++) t.push(rb()); var payload = vb(), th = hex(new Uint8Array(t));
+          if (th === '0588960d73d71901') { var q = 0, h = 0, s2 = 1, x; do { x = payload[q++]; h += (x & 0x7f) * s2; s2 *= 128; } while (x & 0x80);
+            jobs.push(msgP.then(function (m) { out.push({ height: h, merkle_root: hex(m.slice().reverse()) }); })); }
+          return;
+        }
+        var op;
+        if (tag === 0xf0) { var a = vb(); op = function (m) { return cat(m, a); }; }
+        else if (tag === 0xf1) { var pr = vb(); op = function (m) { return cat(pr, m); }; }
+        else if (tag === 0x08) op = function (m) { return H(m); };
+        else if (tag === 0xf2) op = function (m) { return m.slice().reverse(); };
+        else throw new Error('unsupported operation 0x' + tag.toString(16));
+        walk(msgP.then(op)).forEach(function (j) { jobs.push(j); });
+      }
+      var tag = rb();
+      while (tag === 0xff) { one(rb()); tag = rb(); }
+      one(tag);
+      return jobs;
+    }
+    try { return Promise.all(walk(Promise.resolve(digest))).then(function () { return out; }); } catch (e) { return Promise.reject(e); }
+  }
+  function verifyBitcoinStamp(bytes, hashHex, getMerkleRoot) {
+    return otsBitcoin(bytes, hashHex).then(function (atts) {
+      if (!atts.length) return { ok: false, why: 'no Bitcoin attestation yet (pending)' };
+      return Promise.all(atts.map(function (a) { return Promise.resolve(getMerkleRoot(a.height)).then(function (root) { return String(root).toLowerCase() === a.merkle_root; }); })).then(function (r) {
+        var bad = atts.filter(function (a, i) { return !r[i]; });
+        return bad.length ? { ok: false, why: 'merkle root does not match block ' + bad[0].height } : { ok: true, height: Math.min.apply(null, atts.map(function (a) { return a.height; })), blocks: atts.map(function (a) { return a.height; }) };
+      });
+    }).catch(function (e) { return { ok: false, why: String(e.message || e) }; });
+  }
+  var KV = { version: '1.3.0', otsBitcoin: otsBitcoin, verifyBitcoinStamp: verifyBitcoinStamp, verifyPhotoSignature: verifyPhotoSignature, verifyCosign: verifyCosign, verifyInclusion: verifyInclusion, verifyConsistency: verifyConsistency, verifyCheckpoint: verifyCheckpoint, verifySignature: verifySignature, sha256Hex: sha256Hex, verifyProof: verifyProof, canonical: canonical, headHash: headHash, verifyLog: verifyLog, verifyEvidenceLines: verifyEvidenceLines };
   if (typeof module !== 'undefined' && module.exports) module.exports = KV; else root.KV = KV;
 })(typeof self !== 'undefined' ? self : this);

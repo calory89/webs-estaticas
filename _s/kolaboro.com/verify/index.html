@@ -52,7 +52,13 @@
     <p class="muted" style="font-size:.82rem;margin:12px 0 0">How it works: each fingerprint is submitted to independent OpenTimestamps calendars (run by the OpenTimestamps project and Eternity Wall). They aggregate it into a Bitcoin transaction within hours. After that, nobody, including us, can backdate or alter the evidence without it showing.</p>
   </div>
 </div></section>
-<section class="sec alt" id="chain"><div class="wrap"><div class="cp-head"><p class="eyebrow">For clients and their lawyers</p><h2>Check a whole case file</h2>
+<section class="sec alt" id="chain"><div class="wrap"><div class="cp-head"><p class="eyebrow">For clients and their lawyers</p><h2 id="pdf">Check a case-file PDF</h2>
+<p>Every case-file PDF the portal creates is registered with its SHA-256 at the moment it is made. Choose the PDF: your browser computes its fingerprint (the file never leaves your device) and asks whether Kolaboro registered exactly these bytes. Any edit, even one character, gives a different fingerprint.</p>
+<p><input type="file" id="pdfchk" accept="application/pdf,.pdf"></p><div id="pdfres" aria-live="polite"></div>
+<script>(function(){var i=document.getElementById('pdfchk'),o=document.getElementById('pdfres');function e(t){return String(t==null?'':t).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+i.onchange=function(){var f=i.files[0];if(!f)return;o.textContent='Computing the fingerprint…';f.arrayBuffer().then(function(b){return crypto.subtle.digest('SHA-256',b)}).then(function(h){var x=[].map.call(new Uint8Array(h),function(b){return('0'+b.toString(16)).slice(-2)}).join('');
+ return fetch('/api/open/pdf/'+x).then(function(r){return r.json()}).then(function(d){o.innerHTML=d.registered?'<p><b style="color:#086146">✓ Genuine.</b> Kolaboro created exactly this file for case '+e(d.case)+' on '+e(String(d.created_at).slice(0,16).replace('T',' '))+' UTC.'+(d.chain_head?' Its evidence fingerprint is '+e(d.chain_head.slice(0,16))+'…':'')+'</p><p class="muted" style="font-size:.85rem">SHA-256 '+e(x)+'</p>':'<p><b style="color:#9A2412">✗ Not registered.</b> This file is not a case file created by the Kolaboro portal, or it was changed after it was created.</p><p class="muted" style="font-size:.85rem">SHA-256 '+e(x)+'</p>'})}).catch(function(){o.textContent='Could not check just now.'})}})();</script>
+<h2>Check a whole case file</h2>
 <p class="lead">In the client portal, "Evidence data" downloads every fingerprint in a case. Drop that file here: your browser recomputes the chain item by item and tells you if anything was changed, removed or reordered.</p></div>
 <div class="vf-box"><label class="vf-drop"><input type="file" id="chfile" accept="application/json,.json"><b>Drop the evidence file (.json)</b><span>Nothing is uploaded</span></label><div id="chout" class="vf-out" aria-live="polite"></div></div></div></section>
 <script>(function(){
@@ -219,7 +225,7 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   window.addEventListener('scroll', function(){ b.classList.toggle('on', window.scrollY > window.innerHeight * 1.5); }, { passive: true });
 })();
 </script>
-<script src="/open/kolaboro-verify.js?v=120"></script><script>(function(){
+<script src="/open/kolaboro-verify.js?v=130"></script><script>(function(){
 function esc(t){return String(t==null?'':t).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 var LOG=null;function log(){return LOG||(LOG=fetch('/api/open/log').then(function(r){return r.json()}).then(function(d){return d.heads||[]}).catch(function(){return []}))}
 var f=document.getElementById('pv-f');if(!f)return;

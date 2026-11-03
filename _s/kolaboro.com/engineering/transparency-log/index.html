@@ -59,6 +59,10 @@
 </ul>
 <h2>Two independent witnesses</h2>
 <p>A log we sign ourselves is only as good as our word that we did not fork it. So every head is recorded twice outside our control: timestamped in the Bitcoin blockchain through OpenTimestamps, and entered in <a href="https://docs.sigstore.dev/logging/overview/" rel="noopener">Sigstore Rekor</a>, the public transparency log run by the Linux Foundation for software supply-chain security. The Rekor entry holds a minisign signature by our key over the head's exact input, so its data hash is the head itself. Anyone can look it up on <a href="https://search.sigstore.dev/" rel="noopener">search.sigstore.dev</a>.</p>
+<h2>Check Bitcoin yourself, in your browser</h2>
+<p>A timestamp is only as good as your ability to check it without us. On <a href="/log">the log page</a>, "Check in Bitcoin" downloads the OpenTimestamps proof, replays every hashing step in your browser up to a Bitcoin block, and compares the result with that block's Merkle root fetched from mempool.space, an independent block explorer. Kolaboro is not in that loop.</p>
+<h2>A second signature that the server cannot make</h2>
+<p>A server key can be stolen, and a server can be told to sign anything. So each daily line can also be co-signed by the founder with a passkey on his own device (Face ID or fingerprint; the private key never leaves the device's secure chip). The co-signature is published with the line and checked in your browser. A rewritten history would need both the server key and the founder's device.</p>
 <h2>Signatures and keys</h2>
 <p>Every open API answer carries an Ed25519 signature over the SHA-256 of its body, and the build commit that served it. The public key, its validity dates and our rotation policy are at <a href="/.well-known/kolaboro-keys.json">/.well-known/kolaboro-keys.json</a>: keys are never reused, a new key is announced before it signs anything, old keys stay listed so old signatures remain checkable, and a compromised key is marked revoked from a date.</p>
 <h2>Check it with our code, or yours</h2>

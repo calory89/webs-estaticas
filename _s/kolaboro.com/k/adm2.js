@@ -177,3 +177,38 @@
   }
   document.addEventListener('kbadm', draw); if (A.D) draw();
 })();
+// founder co-signature: the daily public log line is also signed with Carlos's passkey (Face ID / fingerprint on his own device)
+(function(){
+  var A = window.KBADM; if (!A) return;
+  function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; }); }
+  function b64(u){ var s = ''; new Uint8Array(u).forEach(function(x){ s += String.fromCharCode(x); }); return btoa(s); }
+  function b64u(u){ return b64(u).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, ''); }
+  function unb64u(x){ x = x.replace(/-/g, '+').replace(/_/g, '/'); while (x.length % 4) x += '='; var s = atob(x), a = new Uint8Array(s.length); for (var i = 0; i < s.length; i++) a[i] = s.charCodeAt(i); return a; }
+  function act(a, p){ return A.rpc('kolaboro_admin', { p_key: A.pw(), p_action: a, p_payload: p || {} }); }
+  var box = null, done = false;
+  function paint(){
+    act('cosign_status').then(function(st){
+      if (!st || st.error || !st.keys) { box.innerHTML = '<h2>Co-sign the public log</h2><p class="muted">Not available yet (database update pending).</p>'; return; }
+      var keys = st.keys, heads = st.heads || [], ok = !!(window.PublicKeyCredential && navigator.credentials);
+      box.innerHTML = '<h2>Co-sign the public log</h2><p class="muted" style="margin-top:0">Each daily log line is signed by the server. When you co-sign it with your passkey, a second signature that only your device can make is published next to it, so not even the server alone can rewrite history. Takes one tap a day.</p>' +
+        (!ok ? '<p>This browser does not support passkeys.</p>' : !keys.length ? '<p><button class="btn" id="cs-reg">Register this device as co-signer</button></p>' :
+        '<p class="muted" style="font-size:.85rem">' + keys.length + ' co-signing device' + (keys.length > 1 ? 's' : '') + ' registered. <button class="btn btn-line" id="cs-reg" style="padding:4px 10px;font-size:.8rem">Add another device</button></p><div class="tw"><table><tr><th>Day</th><th>Line</th><th></th></tr>' +
+          heads.map(function(h){ return '<tr><td>' + esc(h.day) + '</td><td><code>' + esc(h.head.slice(0, 16)) + '…</code></td><td>' + (h.cosigned ? '<span class="st"><span class="dot g"></span>Co-signed</span>' : '<button class="btn" data-cs="' + esc(h.day) + '|' + esc(h.head) + '">Co-sign</button>') + '</td></tr>'; }).join('') + '</table></div>');
+      var r = document.getElementById('cs-reg'); if (r) r.onclick = function(){
+        navigator.credentials.create({ publicKey: { challenge: crypto.getRandomValues(new Uint8Array(32)), rp: { id: 'kolaboro.com', name: 'Kolaboro log co-signer' }, user: { id: crypto.getRandomValues(new Uint8Array(16)), name: 'Kolaboro founder', displayName: 'Kolaboro founder' }, pubKeyCredParams: [{ type: 'public-key', alg: -7 }, { type: 'public-key', alg: -8 }, { type: 'public-key', alg: -257 }], authenticatorSelection: { userVerification: 'required', residentKey: 'preferred' }, attestation: 'none' } })
+          .then(function(c){ var res = c.response; if (!res.getPublicKey) throw new Error('browser cannot export the key'); return act('cosign_key_add', { cred_id: c.id, spki: b64(res.getPublicKey()), alg: res.getPublicKeyAlgorithm(), label: navigator.platform || 'device' }); })
+          .then(function(d){ if (d && d.error) throw new Error(d.error); try { localStorage.setItem('kb-cosign-ids', JSON.stringify((JSON.parse(localStorage.getItem('kb-cosign-ids') || '[]')).concat([d && d.cred_id].filter(Boolean)))); } catch (e) {} paint(); })
+          .catch(function(e){ alert('Not registered: ' + (e.message || e)); });
+      };
+      box.querySelectorAll('[data-cs]').forEach(function(b){ b.onclick = function(){
+        var p = b.dataset.cs.split('|'), day = p[0], head = p[1]; b.disabled = true;
+        crypto.subtle.digest('SHA-256', new TextEncoder().encode('kolaboro-cosign-v1\n' + day + '\n' + head)).then(function(ch){
+          return navigator.credentials.get({ publicKey: { challenge: ch, rpId: 'kolaboro.com', allowCredentials: keys.map(function(k){ return { type: 'public-key', id: unb64u(k.cred_id) }; }), userVerification: 'required' } });
+        }).then(function(a){ var r2 = a.response; return act('cosign', { day: day, head: head, cred_id: a.id, authenticator_data: b64u(r2.authenticatorData), client_data_json: b64u(r2.clientDataJSON), signature: b64u(r2.signature) }); })
+          .then(function(d){ if (d && d.error) throw new Error(d.error); paint(); }).catch(function(e){ b.disabled = false; alert('Not co-signed: ' + (e.message || e)); });
+      }; });
+    });
+  }
+  function draw(){ if (done) return; var sec = document.getElementById('t-tests'); if (!sec || !A.pw()) return; done = true; box = document.createElement('div'); box.className = 'card'; sec.insertBefore(box, sec.firstChild); paint(); }
+  document.addEventListener('kbadm', draw); if (A.D) draw();
+})();
