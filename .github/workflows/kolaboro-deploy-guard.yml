@@ -19,7 +19,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: kolaboro-deploy-guard
+  group: kolaboro-deploy-guard-${{ github.event.inputs.mode || 'check' }}
   cancel-in-progress: false
 jobs:
   guard:
