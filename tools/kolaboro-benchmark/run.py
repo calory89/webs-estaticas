@@ -11,7 +11,7 @@ def oidc():
     return json.load(r)['value']
 
 model, out_path = sys.argv[1], sys.argv[2]
-spec = json.load(urllib.request.urlopen('https://kolaboro.com/open/evals/cases.json', timeout=30))
+spec = json.load(urllib.request.urlopen(urllib.request.Request('https://kolaboro.com/open/evals/cases.json', headers={'user-agent': 'kolaboro-benchmark/1.0'}), timeout=30))
 entries, t0 = [], time.time()
 for c in spec['cases']:
     for attempt in range(2):
