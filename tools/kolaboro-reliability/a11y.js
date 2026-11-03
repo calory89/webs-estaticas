@@ -26,7 +26,11 @@ const RANK = { critical: 4, serious: 3, moderate: 2, minor: 1 };
     const page = await ctx.newPage();
     const rec = { url: url.replace(BASE, '') || '/', violations: [], error: null };
     try {
-      const resp = await page.goto(url, { waitUntil: 'load', timeout: 45000 });
+      let resp = null;
+      for (let k = 0; k < 3; k++) {   // a transient edge error on one request is not an accessibility result: retry twice
+        try { resp = await page.goto(url, { waitUntil: 'load', timeout: 45000 }); if (resp && resp.status() < 500) break; } catch (e) { if (k === 2) throw e; }
+        await page.waitForTimeout(4000 * (k + 1));
+      }
       rec.status = resp ? resp.status() : 0;
       await page.waitForTimeout(1500);   // let live data render: axe should see what visitors see
       await page.addScriptTag({ content: AXE });
