@@ -239,8 +239,8 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   function lvDetail(e){
     var n = function(x){ return Number(x || 0).toLocaleString('en'); };
     switch (e.step) {
-      case 'fetch': return e.ok ? 'HTTP ' + e.status + ' · ' + kb(e.bytes) + (e.redirects ? ' · ' + e.redirects + ' redirect' + (e.redirects > 1 ? 's' : '') : '') : 'The website did not answer' + (e.status ? ' (HTTP ' + e.status + ')' : '');
-      case 'strip': return e.hidden_chars ? n(e.hidden_chars) + ' characters in ' + e.hidden_blocks + ' hidden block' + (e.hidden_blocks === 1 ? '' : 's') + ' removed · ' + n(e.read_chars) + ' visible characters read' : 'No hidden text found · ' + n(e.read_chars) + ' visible characters read';
+      case 'fetch': return e.ok ? 'HTTP ' + e.status + ' · ' + kb(e.bytes) + (e.redirects ? ' · ' + e.redirects + ' redirect' + (e.redirects > 1 ? 's' : '') : '') : e.blocked ? 'The website refused our automated reader' + (e.status ? ' (HTTP ' + e.status + ')' : '') : e.status ? 'The website answered with an error (HTTP ' + e.status + ')' : e.detail === 'timeout' ? 'The website did not answer within 15 seconds' : 'The website could not be reached';
+      case 'strip': return (e.embedded_chars ? 'Page built in the browser: ' + n(e.embedded_chars) + ' characters taken from its built-in data · ' : '') + (e.hidden_chars ? n(e.hidden_chars) + ' characters in ' + e.hidden_blocks + ' hidden block' + (e.hidden_blocks === 1 ? '' : 's') + ' removed · ' + n(e.read_chars) + ' characters read' : 'No hidden text found · ' + n(e.read_chars) + ' characters read');
       case 'scan': return e.hits ? e.hits + ' match' + (e.hits > 1 ? 'es' : '') + ' against ' + e.patterns + ' patterns' : 'No matches against ' + e.patterns + ' patterns';
       case 'model_a': case 'model_b': return (e.ok ? '' : 'Failed: ') + e.model + (e.fallback_from ? ' (first choice gave no usable answer: ' + e.fallback_from + ')' : '');
       case 'consensus': return e.skipped ? 'Skipped: only one model answered' : e.agreed + ' of ' + e.fields + ' fields agree' + (e.disagreed && e.disagreed.length ? ' · differ: ' + e.disagreed.join(', ') : '');
@@ -250,9 +250,19 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   }
   var lvZero = false;
   function lvStep(e){
+    if (e.step === 'explore') {
+      var xl = document.createElement('li'); xl.className = e.chosen ? 'ok' : 'skip';
+      xl.innerHTML = '<div><b>Looking for where this site sells</b><small></small></div><code></code>';
+      xl.querySelector('small').textContent = !e.candidates ? 'No other page on this site looks like a property offer' : e.candidates + ' page' + (e.candidates > 1 ? 's' : '') + ' on this site look like the offer; ' + (e.read || []).length + ' read' + (e.chosen ? ', the one with the most offer details (prices, sizes, payment terms) is ' + String(e.chosen).replace(/^https?:\/\//, '') : ', none states more of the offer than the page you pasted');
+      xl.querySelector('code').textContent = fms(e.ms); var tl = $('az-prog').querySelector('li.tot'); $('az-prog').insertBefore(xl, tl || null); return;
+    }
+    if (e.step === 'follow_kept') {
+      var kl = document.createElement('li'); kl.className = 'skip'; kl.innerHTML = '<div><b>Kept the page you pasted</b><small></small></div><code></code>';
+      kl.querySelector('small').textContent = String(e.url || '').replace(/^https?:\/\//, '') + ' was read, but your page states more of the offer, so the review below is of your page.'; $('az-prog').appendChild(kl); return;
+    }
     if (e.step === 'follow') {
       var fl = document.createElement('li'); fl.className = e.ok ? 'ok' : 'bad';
-      fl.innerHTML = '<div><b>Not a project page: reading the property page it links to</b><small></small></div><code></code>';
+      fl.innerHTML = '<div><b>Reading the page where the site sells</b><small></small></div><code></code>';
       fl.querySelector('small').textContent = String(e.url || '').replace(/^https?:\/\//, '') + (e.ok ? '' : ' (could not be read)');
       fl.querySelector('code').textContent = fms(e.ms); $('az-prog').insertBefore(fl, $('lv-fetch'));
       if (e.ok) LVS().forEach(function(x){ var r = $('lv-' + x[0]); if (r) { r.className = ''; r.querySelector('small').textContent = ''; r.querySelector('code').textContent = ''; } });
@@ -275,15 +285,15 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
     return fetch('/api/x/b/review', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ url: url, email: email || '', company: $('az-co').value }) }).then(function(r){
       if (!/event-stream/.test(r.headers.get('content-type') || '')) return r.json().catch(function(){ return {}; }).then(function(d){ if (r.status === 404 || r.status === 405 || r.status >= 500 && !d.error) throw new Error('nostream'); return { status: r.status, d: d }; });
       if (!r.body || !r.body.getReader) throw new Error('nostream');
-      var rd = r.body.getReader(), dec = new TextDecoder(), buf = '', res = null, err = null;
+      var rd = r.body.getReader(), dec = new TextDecoder(), buf = '', res = null, err = null, errE = null;
       function pump(){ return rd.read().then(function(x){
-        if (x.done) return res ? { status: 200, d: res } : { status: 503, d: { error: err || 'network' } };
+        if (x.done) return res ? { status: 200, d: res } : { status: 503, d: Object.assign({}, errE || {}, { error: err || 'network' }) };
         buf += dec.decode(x.value, { stream: true }); var parts = buf.split('\n\n'); buf = parts.pop();
         parts.forEach(function(p){ var line = p.split('\n').filter(function(l){ return l.indexOf('data: ') === 0; }).map(function(l){ return l.slice(6); }).join(''); if (!line) return; var e; try { e = JSON.parse(line); } catch (x) { return; }
           if (e.type === 'step') lvStep(e);
           else if (e.type === 'cached') { $('az-prog').innerHTML = '<li class="ok"><div><b>Stored result</b><small>This page was reviewed on ' + esc(new Date(e.analysed).toUTCString().slice(5, 22)) + ' UTC, so you see that review. Nothing was run now, so no step timings are shown.</small></div><code></code></li>'; }
           else if (e.type === 'result') res = Object.assign({}, e.data, { cached: e.cached, first: e.first, tracked: e.tracked });
-          else if (e.type === 'error') { err = e.error; LVS().forEach(function(s){ var li = $('lv-' + s[0]); if (li && li.className === 'run') li.className = 'bad'; }); }
+          else if (e.type === 'error') { err = e.error; errE = e; LVS().forEach(function(s){ var li = $('lv-' + s[0]); if (li && li.className === 'run') li.className = 'bad'; }); }
           else if (e.type === 'done' && res && !res.cached) lvTotal(e.total_ms);
         }); return pump(); }); }
       return pump();
@@ -299,7 +309,7 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
     $('az-first').textContent = 'Starting…'; var t0 = Date.now(), el = setInterval(function(){ var f = $('az-first'); if (f) f.textContent = 'Reviewing ' + new URL(url).hostname.replace(/^www\./, '') + ' · ' + Math.round((Date.now() - t0) / 1000) + ' s'; }, 1000);
     streamReview(email).catch(function(e){ if (e && e.message === 'nostream') return legacyReview(email); throw e; })
       .then(function(x){ clearInterval(el); var s = x.status, d = x.d;
-        if (s !== 200 || !d.report) { render_err(d.error); save(email, 'Desk review failed: ' + (d.error || s)); if (!email) { copyBox('Desk review not read automatically (' + (d.error || s) + '): ' + url); r29pos(); } return; }
+        if (s !== 200 || !d.report) { render_err(d.error, d); save(email, 'Desk review failed: ' + (d.error || s)); if (!email) { copyBox('Desk review not read automatically (' + (d.error || s) + '): ' + url); r29pos(); } return; }
         save(email, 'Desk review: ' + (d.report.summary || '') + ' | attention: ' + (d.report.attention || ''));
         setTimeout(function(){ render(d); if (d.not_property || d.report.page_kind === 'not_real_estate') return; tools(); if (!email) copyBox(d.report.summary); }, 900);
       }).catch(function(){ clearInterval(el); render_err('network'); save(email, 'Desk review failed: network'); if (!email) { copyBox('Desk review failed (network): ' + url); r29pos(); } });
@@ -326,11 +336,18 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
       try { navigator.clipboard.writeText(link); $('az-shx').textContent = 'Link copied. Send it to your partner or lawyer.'; } catch (e) { $('az-shx').textContent = link; } };
     $('az-pdf').onclick = function(){ ev('desk_pdf'); window.print(); };
   }
-  function render_err(e){
+  function pagesFound(list, lead){
+    list = (list || []).filter(function(x){ return /^https?:\/\//.test(x); }).slice(0, 6); if (!list.length) return '';
+    return '<div class="az-found"><p style="margin:14px 0 6px"><b>' + esc(lead) + '</b></p><ul style="margin:0 0 8px">' + list.map(function(x){ return '<li><a href="/check?url=' + encodeURIComponent(x) + '#analyze">Check ' + esc(x.replace(/^https?:\/\/(www\.)?/, '')) + '</a></li>'; }).join('') + '</ul></div>';
+  }
+  function render_err(e, d){
+    d = d || {}; var st = d.status ? ' (HTTP ' + d.status + ')' : '';
     var m = e === 'rate' ? 'You have run several reviews in the last hour. Try again later, or book a full check below.'
-      : e === 'fetch' || e === 'empty' ? 'This website blocks automatic reading, so a person on our team will read it for you and reply by email within one working day.'
+      : e === 'blocked' ? 'The website refused our automated reader' + st + '. Many sites use bot protection that turns away any program, including ours, and we do not disguise our reader as a person. This says nothing about the project. A person on our team can read it for you and reply by email within one working day.'
+      : e === 'fetch' ? (d.status ? 'The website answered with an error' + st + ' when we tried to read it. It may be down for a moment: try again later.' : 'We could not reach the website: it did not answer in time. It may be down for a moment: try again later.') + ' A person on our team can also read it for you and reply by email within one working day.'
+      : e === 'empty' ? 'Only ' + (d.read_chars != null ? Number(d.read_chars).toLocaleString('en') + ' characters' : 'a few words') + ' of text reached us. The page is probably built in the browser with JavaScript, and we found no other page on the site that we could read instead. Paste the exact page of the project or listing, or a person on our team can read it for you.'
       : 'Something went wrong on our side. A person on our team will look at it and reply by email within one working day.';
-    $('az-4').innerHTML = '<p class="az-k">Desk review</p><h2>We will take it from here</h2><p class="lead">' + m + '</p>' + cta();
+    $('az-4').innerHTML = '<p class="az-k">Desk review</p><h2>' + (e === 'blocked' ? 'This website blocked our reader' : e === 'empty' ? 'We could not read enough of this page' : 'We will take it from here') + '</h2><p class="lead">' + m + '</p>' + (e === 'empty' ? pagesFound(d.pages_found, 'Pages on this site that may hold the offer:') : '') + cta();
     show(4); ev('desk_error', { e: e || '' }); if (window.kbLog) kbLog('desk_error', url + ' | ' + (e || ''));
   }
   function cta(){ setTimeout(bindReq, 0); return '<div class="az-cta" id="azreq"><div><b>Get the full check: €490</b><p>Land certificate checked at the land office, building permit confirmed in the official system, site visit with GPS-stamped photos and a contract review. Written report in 7 days. Full refund if we can\'t take your case.</p></div><button class="btn btn-hi" type="button" id="azreq-go" data-ev="req_open">Request this check</button></div>'; }
@@ -399,7 +416,7 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
     if ((d.not_property || r.page_kind === 'not_real_estate') && (d.thin_text || r.thin_text)) {
       $('az-4').innerHTML = '<p class="az-k">Desk review</p><h2>We could not read enough of ' + esc(d.host) + '</h2>' +
         '<p class="lead">Only ' + esc(String(r.read_chars || 'a few hundred')) + ' characters of text reached us. Many sites build the page in the browser with JavaScript, so this says nothing about whether the site sells property.</p>' +
-        '<p>Paste the exact page of the project or the listing you are looking at (for example the "Invest" or "Residences" page), and we will read that one.</p>' +
+        '<p>Paste the exact page of the project or the listing you are looking at (for example the "Invest" or "Residences" page), and we will read that one.</p>' + pagesFound(r.pages_found, 'Pages on this site that may hold the offer:') +
         '<p><button class="btn btn-hi" type="button" id="az-again">Check another link</button></p>';
       show(4); var ag0 = $('az-again'); if (ag0) ag0.onclick = function(){ $('az-url').value = ''; show(1); setTimeout(function(){ $('az-url').focus(); }, 300); };
       ev('desk_thin_text', {}); return;
@@ -407,7 +424,7 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
     if (d.not_property || r.page_kind === 'not_real_estate') {
       $('az-4').innerHTML = '<p class="az-k">Desk review</p><h2>' + esc(d.host) + ' is not a property project</h2>' +
         '<p class="lead">' + esc(r.site_about ? 'It looks like ' + (/^(a|an|the)\s/i.test(r.site_about) ? r.site_about.charAt(0).toLowerCase() + r.site_about.slice(1) : (/^[aeiou]/i.test(r.site_about) ? 'an ' : 'a ') + (/^[A-Z][a-z]+\s+[a-z]/.test(r.site_about) && !/^(Spanish|English|French|German|Italian|Danish|American|British|Indonesian|Mexican|Portuguese|Thai|Dutch)/.test(r.site_about) ? r.site_about.charAt(0).toLowerCase() + r.site_about.slice(1) : r.site_about)).replace(/\.$/, '') + '.' : 'We could not find anything about a property for sale on this page.') + ' There is nothing for us to check here.</p>' +
-        '<p>Kolaboro reviews the website of an <b>off-plan project</b>, a <b>developer</b> or a <b>property listing</b>. Paste the page of the home you want to buy, for example the project page on the developer\'s site or the listing on a portal.</p>' +
+        '<p>Kolaboro reviews the website of an <b>off-plan project</b>, a <b>developer</b> or a <b>property listing</b>. Paste the page of the home you want to buy, for example the project page on the developer\'s site or the listing on a portal.</p>' + pagesFound(r.pages_found, 'Other pages on this site you could check:') +
         '<p><button class="btn btn-hi" type="button" id="az-again">Check another link</button></p>';
       show(4); var ag = $('az-again'); if (ag) ag.onclick = function(){ $('az-url').value = ''; show(1); setTimeout(function(){ $('az-url').focus(); }, 300); };
       ev('desk_not_property', {}); if (window.kbLog) kbLog('desk_not_property', url); return;
@@ -422,7 +439,7 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
     var sig = d.signature && d.signature.sig ? '<p class="muted sigl">Signed with Ed25519 · SHA-256 ' + esc(String(d.signature.sha256).slice(0, 16)) + '… · <button type="button" id="az-sigv">Verify the signature in your browser</button> <span id="az-sigr"></span></p>' : '';
     var first = portal ? 'Desk review of a portal or agency page' : d.first ? 'Nobody had asked us about this project before. Your review is the first one.' : (d.tracked ? 'Our agent already follows this project.' : 'Desk review');
     $('az-4').innerHTML = '<p class="az-k">' + esc(first) + '</p><h2>Desk review: ' + esc(r.project || d.host) + '</h2>' +
-      ((d.read_url || r.read_url) ? '<p class="muted" style="font-size:.92rem">The page you pasted is not itself a project page, so we read the property page linked from it: <a href="' + esc(d.read_url || r.read_url) + '" rel="nofollow noopener" target="_blank">' + esc((d.read_url || r.read_url).replace(/^https?:\/\//, '')) + '</a>.</p>' : '') +
+      ((d.read_url || r.read_url) ? '<p class="muted" style="font-size:.92rem">The page you pasted does not state the offer itself, so we read the page on the same site where it is sold: <a href="' + esc(d.read_url || r.read_url) + '" rel="nofollow noopener" target="_blank">' + esc((d.read_url || r.read_url).replace(/^https?:\/\//, '')) + '</a>.' + ((r.pages_found || []).length ? ' Other pages we found: ' + r.pages_found.slice(0, 5).map(function(x){ return '<a href="/check?url=' + encodeURIComponent(x) + '#analyze">' + esc(x.replace(/^https?:\/\/(www\.)?/, '')) + '</a>'; }).join(', ') + '.' : '') + '</p>' : '') +
       '<p><span class="az-att ' + esc(att) + '">' + (att === 'high' ? 'High attention needed' : att === 'low' ? 'Low attention needed' : 'Medium attention needed') + '</span></p>' +
       '<p class="lead" style="margin-top:12px">' + esc(r.summary) + '</p>' +
       (ci && (ci.summary || []).length ? '<p class="sq"><span class="muted">From the page: </span>' + ci.summary.map(function(q){ return '<i class="kq">' + esc(q) + '</i>'; }).join(' ') + '</p>' : '') + qline +

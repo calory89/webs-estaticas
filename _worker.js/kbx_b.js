@@ -50,12 +50,12 @@ async function review(req, env, ctx) {
     await send({ type: 'start', host });
     let t = Date.now();
     const pg = await fetchPage(u);
-    await send({ type: 'step', step: 'fetch', ms: Date.now() - t, ok: !pg.error, status: pg.status || null, bytes: pg.bytes || 0, redirects: pg.hops || 0 });
-    if (pg.error) { await send({ type: 'error', error: 'fetch', status: pg.status || null }); ctx.waitUntil(logApi('analyze', false, false, Date.now() - t0)); return; }
+    await send({ type: 'step', step: 'fetch', ms: Date.now() - t, ok: !pg.error, status: pg.status || null, bytes: pg.bytes || 0, redirects: pg.hops || 0, blocked: pg.error === 'blocked' || undefined, detail: pg.detail || undefined });
+    if (pg.error) { await send({ type: 'error', error: pg.error === 'blocked' ? 'blocked' : 'fetch', status: pg.status || null, detail: pg.detail || null }); ctx.waitUntil(logApi('analyze', false, false, Date.now() - t0)); return; }
     let dr;
     try { dr = await deskReview(env, u.toString(), pg.html, { step: e => send(Object.assign({ type: 'step' }, e)) }); }
     catch (e) { await send({ type: 'error', error: 'model', detail: String(e.message || e).replace(/sk-[\w-]+/g, '').slice(0, 160) }); ctx.waitUntil(logApi('analyze', false, false, Date.now() - t0)); return; }
-    if (dr.error) { await send({ type: 'error', error: dr.error }); return; }
+    if (dr.error) { await send({ type: 'error', error: dr.error, read_chars: dr.read_chars, pages_found: dr.pages_found || [] }); ctx.waitUntil(logApi('analyze', false, false, Date.now() - t0)); return; }
     const out = dr.report, notProp = dr.not_property;
     const res = { url: u.toString(), host, analysed: new Date().toISOString(), report: out, not_property: notProp, hidden_blocks_removed: dr.hidden_blocks_removed, prompt_sha256: dr.prompt_sha256 };
     t = Date.now();
