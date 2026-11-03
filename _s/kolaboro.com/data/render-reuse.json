@@ -1,10 +1,10 @@
 {
- "generated": "2026-11-03T10:01:31Z",
+ "generated": "2026-11-03T10:21:35Z",
  "model": "open_clip ViT-B-32 laion2b_s34b_b79k (open_clip_torch 2.29.0, torch 2.5.1+cpu, CPU)",
- "threshold": 0.95,
- "min_orb_inliers": 25,
- "images_checked": 8217,
- "projects_checked": 796,
+ "threshold": 0.9,
+ "min_orb_inliers": 30,
+ "images_checked": 8191,
+ "projects_checked": 789,
  "projects_tracked": 891,
  "limits": {
   "images_per_project": 16,
@@ -15,18 +15,71 @@
   "embedding_budget_hit": false,
   "max_pairs": 200
  },
- "site_chrome_images_dropped": 619,
- "candidates_over_threshold": 12,
+ "site_chrome_images_dropped": 537,
+ "candidates_over_threshold": 80,
  "excluded": {
-  "same_domain": 10,
-  "same_developer": 2,
+  "same_domain": 29,
+  "same_developer": 7,
   "same_project_name": 0,
-  "page_names_other_project": 0,
+  "page_names_other_project": 5,
   "hub_image": 0,
-  "geometry_failed": 0
+  "geometry_failed": 37
  },
  "hub_images": 0,
- "pair_count": 0,
- "pairs": [],
- "method": "Images are collected from each tracked project page (url and docs_url), images under 200 px, very wide banners, flat graphics and URLs naming logos/icons are skipped, at most 16 per project, and a file shown on the pages of two or more projects of the same site is treated as site chrome and dropped. Each image is embedded with CLIP ViT-B-32 (laion2b_s34b_b79k) and pairs from two different projects with cosine >= 0.95 are kept if the two pages are on different domains, the developers differ, the project names do not look like the same project, neither page names the other project (portal carousels and related listings), and neither image has near-duplicates on 5+ other domains (stock or template art). Each surviving pair must then pass a geometric check: at least 25 ORB keypoint matches consistent with one RANSAC homography (or byte-identical files). dhash_distance is reported for reference (0-64, low means near-identical; crops and recolours raise it). A match means the same picture is used on both pages; it is evidence to check, not proof of wrongdoing: agents, portals and sister brands can legitimately share a render."
+ "pair_count": 2,
+ "pairs": [
+  {
+   "a": {
+    "project_id": "the-symphony-imtiaz",
+    "project_name": "The Symphony by Imtiaz",
+    "developer": "Imtiaz Developments",
+    "market": "Dubai",
+    "image_url": "https://media.a1.properties/a1-site/development/featured/CGyrfq2qjrinsqLaoWuA.webp",
+    "page_url": "https://a1properties.ae/project-details/symphony-by-imtiaz-meydan-horizon-dubai",
+    "width": 1920,
+    "height": 1080
+   },
+   "b": {
+    "project_id": "naya-at-district-one-meydan",
+    "project_name": "Naya at District One",
+    "developer": "Meydan / District One (District One - FZ), now marketed by Nakheel",
+    "market": "Dubai",
+    "image_url": "https://new-projects-media.propertyfinder.com/project/8387163e-bc20-41a8-9e56-58a53a61de13/gallery/image/T7dtD80fa2gNcRnZZU5VSO-1FQ6LjS0UwMX96TGR50E=/medium.webp",
+    "page_url": "https://www.propertyfinder.ae/en/new-projects/nakheel/naya-at-district-one",
+    "width": 668,
+    "height": 452
+   },
+   "cosine": 0.9601,
+   "dhash_distance": 13,
+   "orb_inliers": 593,
+   "identical_file": false
+  },
+  {
+   "a": {
+    "project_id": "mar-casa-deyaar",
+    "project_name": "Mar Casa",
+    "developer": "Deyaar Development PJSC",
+    "market": "Dubai",
+    "image_url": "https://new-projects-media.propertyfinder.com/project/511d92a6-579d-4c54-a104-0dff9b0d0c1b/gallery/image/7y44CYmkXm37ahGVCzGAyeUD9G7MMp6nAQXrdnuG944=/medium.webp",
+    "page_url": "https://www.propertyfinder.ae/en/new-projects/deyaar-leasing/mar-casa",
+    "width": 668,
+    "height": 452
+   },
+   "b": {
+    "project_id": "shahrukhz-residences-danube",
+    "project_name": "Shahrukhz Residences by Danube",
+    "developer": "Danube Properties Development L.L.C",
+    "market": "Dubai",
+    "image_url": "https://foundgroup.ae/media/photo/6e995f9837cc5599/chelsea-residences-1-tower-c-dubai-maritime-city-1.webp?w=800",
+    "page_url": "https://foundgroup.ae/new-launches/shahrukhz-residences-by-danube-ref-op-2166",
+    "width": 800,
+    "height": 374
+   },
+   "cosine": 0.9363,
+   "dhash_distance": 22,
+   "orb_inliers": 276,
+   "identical_file": false
+  }
+ ],
+ "method": "Images are collected from each tracked project page (url and docs_url), images under 200 px, very wide banners, flat graphics and URLs naming logos/icons are skipped, at most 16 per project, and a file shown on the pages of two or more projects of the same site is treated as site chrome and dropped. Each image is embedded with CLIP ViT-B-32 (laion2b_s34b_b79k) and pairs from two different projects with cosine >= 0.90 are kept if the two pages are on different domains, the developers differ, the project names do not look like the same project, neither page names the other project (portal carousels and related listings), and neither image has near-duplicates on 5+ other domains (stock or template art). Each surviving pair must then pass a geometric check: at least 30 ORB keypoint matches consistent with one RANSAC homography (or byte-identical files). dhash_distance is reported for reference (0-64, low means near-identical; crops and recolours raise it). A match means the same picture is used on both pages; it is evidence to check, not proof of wrongdoing: agents, portals and sister brands can legitimately share a render."
 }
