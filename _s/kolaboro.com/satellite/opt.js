@@ -35,8 +35,8 @@
     var ok = cur.months.filter(function(m){ return m.status === 'ok'; }), fr = cur.months.filter(function(m){ return m.frame; }), sm = cur.summary || {};
     var cloudy = cur.months.filter(function(m){ return m.status === 'cloudy'; }).length;
     var cells = [];
-    cells.push([sm.new_built_since_baseline_pct != null ? sm.new_built_since_baseline_pct + '%' : 'n/a', 'of clear pixels turned built-up or bare since ' + ml(cur.baseline_month || sm.from)]);
-    cells.push([sm.built_change_pts != null ? sg(sm.built_change_pts) + ' pts' : 'n/a', 'change in the built-up or bare share, ' + ml(sm.from) + ' to ' + ml(sm.to)]);
+    cells.push([sm.built_change_pts != null && sm.first_year ? sg(sm.built_change_pts) + ' pts' : 'n/a', sm.first_year ? 'built-up or bare share, median of the last 12 months (' + sm.built_last_year_median + '%) against the first 12 (' + sm.built_first_year_median + '%)' : 'not enough clear months for a year-on-year figure yet']);
+    cells.push([sm.new_built_since_baseline_last_year_median != null ? sm.new_built_since_baseline_last_year_median + '%' : 'n/a', 'of the area newly built-up or bare since ' + ml(cur.baseline_month) + ' (median of the last 12 months)']);
     cells.push([ok.length + ' of ' + cur.months.length, 'months clear enough to measure (' + cloudy + ' too cloudy)']);
     $('opstats').innerHTML = cells.map(function(c, i){ return '<div' + (i ? '' : ' class="hi"') + '><b>' + esc(c[0]) + '</b><span>' + esc(c[1]) + '</span></div>'; }).join('');
     $('optl').hidden = !cur.timelapse;

@@ -248,7 +248,7 @@
     if (!best || best.d > 25) { el.innerHTML = '<p class="muted">Your plot is not near any of the ' + S.sites.length + ' watched development areas. The satellite record of your own pin above is what counts.</p>'; return; }
     var s = best.s, r = s.radar || {}, o = S.opt[s.id], bits = [];
     if (r.radar_change_db != null) bits.push('<div><b>' + (r.radar_change_db > 0 ? '+' : '') + r.radar_change_db.toFixed(1) + ' dB</b><span>radar backscatter change, ' + esc((r.change_from || '').replace('dry', '') + ' to ' + (r.change_to || '').replace('dry', '').replace('latest', 'last 120 days')) + ' (Sentinel-1)</span></div>');
-    if (o && o.summary && o.summary.new_built_since_baseline_pct != null) bits.push('<div><b>' + o.summary.new_built_since_baseline_pct + '%</b><span>of the area turned built-up or bare, ' + esc(o.summary.from + ' to ' + o.summary.to) + ' (Sentinel-2, ' + o.summary.months_clear + ' clear months)</span></div>');
+    if (o && o.summary && o.summary.first_year && o.summary.built_change_pts != null) bits.push('<div><b>' + (o.summary.built_change_pts > 0 ? '+' : '') + o.summary.built_change_pts + ' pts</b><span>built-up or bare share of the area, last 12 months against ' + esc(o.summary.first_year) + ' (Sentinel-2, ' + o.summary.months_clear + ' clear months)</span></div>');
     var lc = null; (s.periods || []).forEach(function(p){ if (typeof p.cleared_since_first_pct === 'number') lc = p; });
     if (lc) bits.push('<div><b>' + lc.cleared_since_first_pct + '%</b><span>land cleared since ' + esc(s.periods[0].label) + ', ' + esc(lc.label) + '</span></div>');
     el.innerHTML = '<p>' + (best.inside ? 'Your pin is inside the watched area <b>' + esc(s.label) + '</b>.' : 'Nearest watched area: <b>' + esc(s.label) + '</b>, ' + best.d.toFixed(1) + ' km from your pin, so it says little about your plot.') + ' Updated ' + esc(fdate(S.satUpdated)) + '. <a href="/satellite/#viewer">Open it in the viewer</a></p>' + (bits.length ? '<div class="ms-an">' + bits.join('') + '</div>' : '') +
@@ -266,7 +266,7 @@
     if (pid || (S.key !== '_')) { $('msid').value = pid || S.key; loadProject(pid || S.key); }
     if (S.pin) $('mspinout').textContent = 'Press Check satellite to read the images of this pin (about 10 to 30 MB, 10 to 30 seconds).';
     fetch('/data/satellite.json').then(function(r){ return r.json(); }).then(function(d){ S.sites = d.sites || []; S.satUpdated = d.updated; area(); }).catch(function(){ $('msarea').innerHTML = '<p class="muted">The watched-area data did not load.</p>'; });
-    fetch('/data/satellite-optical.json').then(function(r){ return r.ok ? r.json() : null; }).then(function(d){ if (d) { (d.sites || []).forEach(function(s){ S.opt[s.id] = s; }); area(); } }).catch(function(){});
+    fetch('/data/satellite-optical.json?t=' + Math.floor(Date.now() / 6e5)).then(function(r){ return r.ok ? r.json() : null; }).then(function(d){ if (d) { (d.sites || []).forEach(function(s){ S.opt[s.id] = s; }); area(); } }).catch(function(){});
   }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', boot); else boot();
 })();
