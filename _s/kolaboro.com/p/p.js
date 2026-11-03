@@ -121,9 +121,10 @@
       '<h1>' + esc(h1) + '</h1>' +
       '<p class="lead">An anonymous project file. We publish what the developer says in public and what an official register or an independent source confirms. Names stay hidden until a verification is finished and the developer has had time to reply.</p>' +
       '<dl class="pf-facts">' + facts.map(function(f){ return '<div><dt>' + f[0] + '</dt><dd>' + esc(f[1]) + '</dd></div>'; }).join('') + '</dl>' +
-      '<div class="pf-act"><a class="btn btn-hi" href="/compare/?ids=' + ids.map(encodeURIComponent).join(',') + '">Compare with similar projects</a><a class="btn btn-line" href="/follow?id=' + encodeURIComponent(c.id) + '">Follow this project</a>' + starBtn +
+      '<div class="pf-act"><a class="btn btn-hi" href="/compare/?ids=' + ids.map(encodeURIComponent).join(',') + '">Compare with similar projects</a><a class="btn btn-line" href="/follow?id=' + encodeURIComponent(c.id) + '">Follow this project</a><a class="btn btn-line" href="/alerts/?id=' + encodeURIComponent(c.id) + '">Watch this project</a>' + starBtn +
       '<button type="button" class="btn btn-line" id="pf-print">Download dossier (PDF)</button></div>' +
       (W ? '<p class="pf-wl" id="pf-wlmsg" aria-live="polite">' + wlMsg(saved) + '</p>' : '') +
+      '<div class="pf-kvbw"><span class="kvb" id="pf-kvb"></span></div>' +
       '</div></section>' +
 
       '<section class="pf-sec"><div class="wrap"><h2>Public disclosure and what is confirmed</h2>' +
@@ -192,6 +193,7 @@
       '<div class="wrap pf-noprint"><div class="pf-cta"><h2>Buying a project that is not on this list?</h2><p>Send us the link. We read what the developer publishes, check it against registers and tell you what is missing before you pay.</p><div class="pf-act"><a class="btn btn-hi" href="/check">Check your own project</a><a class="btn btn-line" href="/follow?id=' + encodeURIComponent(c.id) + '">Follow ' + esc(c.id) + '</a></div></div></div>';
     root.innerHTML = html;
     loadIntel(c);
+    try { var kb = document.getElementById('pf-kvb'); if (kb && window.kbVerifyLoad) kbVerifyLoad().then(function(KV){ return KV.fetchSigned('/api/open/projects/' + encodeURIComponent(c.id)).then(function(r){ KV.badge(document.getElementById('pf-kvb'), r.check, { what: 'this project record (/api/open/projects/' + c.id + ')' }); }); }).catch(function(){ var e = document.getElementById('pf-kvb'); if (e) e.remove(); }); else if (kb) kb.remove(); } catch (e) {}
     var pb = document.getElementById('pf-print');
     if (pb) pb.addEventListener('click', function(){ try { window.print(); } catch (e) {} });
     var sb = document.getElementById('pf-star');
@@ -250,6 +252,7 @@
     if (!w) return '<p class="sub">No website record for this project.</p>' + src;
     var f = w.founded_claim;
     if (w.site !== 'own') return '<p class="pf-call ok" style="border-color:var(--line);background:#fff">The page we track for this project is on a third-party site (a listing portal, agent or news site), so its domain age says nothing about the developer and we do not date it.' + (f ? ' The developer states it was founded in <b>' + f + '</b>; we have not dated its own website.' : '') + '</p>' + src;
+    if (!w.reg && !w.ct && w.reg_note === 'not looked up yet') return '<p class="pf-wait">This project\'s website is in the queue: the daily job looks up ' + esc((M.counts || {}).domains || 'all') + ' developer domains a little at a time, and this one has not been reached yet.</p>' + (f ? '<p class="sub">The developer states it was founded in <b>' + f + '</b>.</p>' : '') + src;
     var cells = [
       ['Website domain registered', w.reg ? ym(w.reg) : 'Not available', w.reg ? ago(w.reg) : (w.reg_note || '')],
       ['First TLS certificate logged', w.ct ? ym(w.ct) : 'None found', w.ct ? ago(w.ct) : (w.ct_note || '')],

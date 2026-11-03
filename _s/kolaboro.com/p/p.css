@@ -198,3 +198,4 @@
 .pf-drift .pf-rev{color:var(--hivis-ink)}
 @media print{.pf-wi-cols{grid-template-columns:1fr 1fr!important;gap:8px}.pf-wi-g,.pf-web div,.pf-wi-now{padding:6px 8px;border-radius:6px;break-inside:avoid}.pf-wi-g li{padding:3px 0}.pf-wi-g li p,.pf-wi-d{font-size:8.5pt}.pf-web dd{font-size:12pt}}
 .pf-wi-n{font-size:.84rem;color:var(--muted);line-height:1.4;margin-bottom:4px}
+.pf-kvbw{margin-top:14px;min-height:28px}
