@@ -57,7 +57,7 @@ def project_row(c):
         'checks_public': intn(c.get('score')), 'checks_max': intn(c.get('max')), 'checks_confirmed': intn(c.get('vscore')),
         'tier': c.get('tier'),
         'permit_public': permit == 2, 'permit_claimed': (permit or 0) >= 1,
-        'deposit_protection': tri(ck.get('escrow')), 'progress_public': tri(ck.get('progress')),
+        'deposit_protection': tri(ck.get('escrow')), 'progress_public': ck.get('progress') is not None,  # a published 0% counts as public, as in the score
         'plans_public': bool(ck.get('plans')), 'track_record_public': bool(ck.get('record')),
         'no_guaranteed_returns': bool(ck.get('returns_ok')),
         **{'level_' + k: vf.get(k) for k in CHECKS},
