@@ -473,3 +473,5 @@
     if (document.readyState === 'complete') go(); else addEventListener('load', go, { once: true });
   });
 })();
+// real-user web vitals (block F): half of page views, loaded after the load event, see /status#st-vit
+(function(){if(Math.random()>=0.5)return;function v(){setTimeout(function(){var s=document.createElement('script');s.src='/k/vitals.js?v=604551822c';s.async=1;document.head.appendChild(s)},1)}if(document.readyState==='complete')v();else addEventListener('load',v,{once:true})})();
