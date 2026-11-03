@@ -44,4 +44,4 @@
 <url><loc>https://kolaboro.com/ar/database/</loc><lastmod>2026-11-01</lastmod></url>
 <url><loc>https://kolaboro.com/zh/pricing/</loc><lastmod>2026-11-01</lastmod></url>
 <url><loc>https://kolaboro.com/zh/database/</loc><lastmod>2026-11-01</lastmod></url>
-<url><loc>https://kolaboro.com/log/</loc><changefreq>daily</changefreq></url></urlset>
+<url><loc>https://kolaboro.com/log/</loc><changefreq>daily</changefreq></url><url><loc>https://kolaboro.com/engineering/</loc><changefreq>weekly</changefreq></url><url><loc>https://kolaboro.com/engineering/ai-safety/</loc><changefreq>weekly</changefreq></url><url><loc>https://kolaboro.com/engineering/evals/</loc><changefreq>weekly</changefreq></url><url><loc>https://kolaboro.com/engineering/transparency-log/</loc><changefreq>weekly</changefreq></url><url><loc>https://kolaboro.com/engineering/signed-photos/</loc><changefreq>weekly</changefreq></url><url><loc>https://kolaboro.com/engineering/reliability/</loc><changefreq>weekly</changefreq></url></urlset>

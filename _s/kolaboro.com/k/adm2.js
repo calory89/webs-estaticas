@@ -161,3 +161,19 @@
   }
   document.addEventListener('kbadm', draw); if (A.D) draw();
 })();
+// browser errors and CSP reports from visitors, last 14 days (Tests tab)
+(function(){
+  var A = window.KBADM; if (!A) return;
+  function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; }); }
+  var done = false;
+  function draw(){
+    if (done) return; var sec = document.getElementById('t-tests'); if (!sec || !A.pw()) return; done = true;
+    A.rpc('kolaboro_admin_errors', { p_key: A.pw() }).then(function(d){
+      if (!d || d.error) return; var E = d.errors || [];
+      var box = document.createElement('div'); box.className = 'card'; sec.appendChild(box);
+      box.innerHTML = '<h2>Errors in visitors\' browsers</h2><p class="muted" style="margin-top:0">JavaScript errors and blocked scripts (CSP report-only) seen on kolaboro.com, last 14 days. Page path, message and script origin only. A digest is emailed every morning.</p>' +
+        (E.length ? '<div class="tw"><table><tr><th>Day</th><th>Kind</th><th>Page</th><th>Message</th><th>Source</th><th>Times</th></tr>' + E.map(function(e){ return '<tr><td>' + esc(e.day) + '</td><td>' + esc(e.kind) + '</td><td>' + esc(e.page) + '</td><td>' + esc(e.msg) + '</td><td><small>' + esc(e.src) + (e.line ? ':' + e.line : '') + ' · ' + esc(e.ua) + '</small></td><td>' + e.n + '</td></tr>'; }).join('') + '</table></div>' : '<p><span class="st"><span class="dot g"></span><b>No errors reported</b></span></p>');
+    });
+  }
+  document.addEventListener('kbadm', draw); if (A.D) draw();
+})();

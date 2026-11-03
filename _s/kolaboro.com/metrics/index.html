@@ -19,7 +19,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://kolaboro.com/k/og.png">
 <link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/k/site.css?v=0a03277ffa">
+<link rel="stylesheet" href="/k/site.css?v=e16142b036">
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "name": "Kolaboro", "url": "https://kolaboro.com/", "logo": "https://kolaboro.com/k/favicon.svg", "description": "A network of local buyer's agents for overseas property, trained by AI and proven on the ground."}]</script>
 <script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',region:["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});try{if(localStorage.getItem('kb-consent')==='yes')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}</script><script>addEventListener("load",function(){setTimeout(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V";document.head.appendChild(s)},1500)})</script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');gtag('config','G-H5TGZJ1KNG');</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Kolaboro", "item": "https://kolaboro.com/"}, {"@type": "ListItem", "position": 2, "name": "Status", "item": "https://kolaboro.com/metrics/"}]}</script>
@@ -61,7 +61,7 @@
       var v = W.map(function(w){ return +w[s[0]] || 0; }), mx = Math.max.apply(null, v.concat([1])), bw = 300 / v.length, tot = v.reduce(function(a, b){ return a + b; }, 0), last = v[v.length - 1];
       var bars = v.map(function(x, i){ var h = x / mx * 96; return '<rect x="' + (i * bw + 2) + '" y="' + (104 - h) + '" width="' + (bw - 4) + '" height="' + Math.max(h, x ? 2 : 1) + '" rx="2" fill="' + (i === v.length - 1 ? '#FF5B14' : x ? '#17212B' : '#E1E4DF') + '"><title>Week of ' + W[i].week + ': ' + x + '</title></rect>'; }).join('');
       var lab = '<text x="2" y="122" font-size="10" fill="#6B7480">' + (W[0] ? W[0].week.slice(5) : '') + '</text><text x="298" y="122" font-size="10" fill="#6B7480" text-anchor="end">this week</text>';
-      return '<div class="mt-c"><h3>' + s[1] + ' · <span style="color:#FF5B14">' + n(last) + '</span> <small style="font-weight:400;color:#6B7480">this week, ' + n(tot) + ' in 12 weeks</small></h3><p>' + s[2] + '</p><svg viewBox="0 0 300 126" role="img" aria-label="' + s[1] + ' per week">' + bars + lab + '</svg></div>';
+      return '<div class="mt-c"><h3>' + s[1] + ' · <span style="color:#B83A05">' + n(last) + '</span> <small style="font-weight:400;color:#6B7480">this week, ' + n(tot) + ' in 12 weeks</small></h3><p>' + s[2] + '</p><svg viewBox="0 0 300 126" role="img" aria-label="' + s[1] + ' per week">' + bars + lab + '</svg></div>';
     }).join('');
   }).catch(function(){ document.getElementById('mtu').textContent = 'Could not load the numbers right now. Try again in a minute.'; });
 })();
@@ -107,7 +107,7 @@
         <li><a href="/independence">Independence</a></li>
         <li><a href="/security">Security and your data</a></li>
         <li><a href="/technology">Technology</a></li>
-        <li><a href="/status">System status</a></li><li><a href="/log/">Public log</a></li>
+        <li><a href="/status">System status</a></li><li><a href="/log/">Public log</a></li><li><a href="/engineering/">Engineering</a></li>
         <li><a href="/metrics">Open metrics</a></li>
       </ul></div>
       <div><h4>Kolaboro</h4><ul>
