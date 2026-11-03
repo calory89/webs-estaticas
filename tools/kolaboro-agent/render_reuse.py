@@ -14,11 +14,12 @@ import numpy as np
 from PIL import Image
 import imagehash
 
-THRESHOLD = 0.90          # CLIP cosine similarity (candidates; the geometric check below confirms the same picture)
+THRESHOLD = 0.85          # CLIP cosine similarity (candidates; the geometric check below confirms the same picture)
 MIN_INLIERS = 30          # ORB/RANSAC inliers needed to confirm the same picture
 MIN_SIDE = 200            # px, smaller images are skipped
 PER_PROJECT = 16          # max images per project (runtime cap)
-HUB_SITES = 5             # an image with near-duplicates on this many other domains is treated as stock/template
+HUB_SITES = 5             # an image with near-duplicates (cosine >= HUB_COS) on this many other domains is stock/template
+HUB_COS = 0.93
 MAX_PAIRS = 200
 TIME_BUDGET = 11 * 60     # seconds (from start) for the download phase before we stop collecting
 EMBED_DEADLINE = 22 * 60  # seconds (from start) after which images not yet embedded are left out
@@ -263,7 +264,7 @@ print('raw candidates', len(cand), flush=True)
 # hub images: near-duplicates across many different domains are stock / template art
 nbr_sites = {}
 for a, b, c in cand:
-    if D[a] != D[b]:
+    if D[a] != D[b] and c >= HUB_COS:
         nbr_sites.setdefault(a, set()).add(D[b])
         nbr_sites.setdefault(b, set()).add(D[a])
 hubs = {k for k, v in nbr_sites.items() if len(v) >= HUB_SITES}
@@ -279,24 +280,6 @@ for _d, _ps in _devs.items():
 excl = {'same_domain': 0, 'same_developer': 0, 'same_project_name': 0, 'page_names_other_project': 0,
         'portal_image_not_attributable': 0, 'hub_image': 0,
         'geometry_failed': 0}
-kept = []
-for a, b, c in cand:
-    pa, pb = projs[P[a]], projs[P[b]]
-    if D[a] == D[b]:
-        excl['same_domain'] += 1; continue
-    if same_developer(pa, pb):
-        excl['same_developer'] += 1; continue
-    if same_project(pa, pb):
-        excl['same_project_name'] += 1; continue
-    if not attributable(recs[a], pa) or not attributable(recs[b], pb):
-        excl['portal_image_not_attributable'] += 1; continue
-    if page_mentions(recs[a]['page'], pb) or page_mentions(recs[b]['page'], pa):
-        # a portal page that names the other project is showing its listing (related projects, carousels), not reusing it
-        excl['page_names_other_project'] += 1; continue
-    if a in hubs or b in hubs:
-        excl['hub_image'] += 1; continue
-    kept.append((a, b, c))
-
 # geometric confirmation
 import cv2
 orb = cv2.ORB_create(1500)
@@ -324,6 +307,37 @@ def inliers(a, b):
     H, mask = cv2.findHomography(src, dst, cv2.RANSAC, 5.0)
     return int(mask.sum()) if mask is not None else 0
 
+
+def reason(a, b):
+    pa, pb = projs[P[a]], projs[P[b]]
+    if D[a] == D[b]:
+        return 'same_domain'
+    if same_developer(pa, pb):
+        return 'same_developer'
+    if same_project(pa, pb):
+        return 'same_project_name'
+    if not attributable(recs[a], pa) or not attributable(recs[b], pb):
+        return 'portal_image_not_attributable'
+    if page_mentions(recs[a]['page'], pb) or page_mentions(recs[b]['page'], pa):
+        # a portal page that names the other project is showing its listing (related projects, carousels), not reusing it
+        return 'page_names_other_project'
+    if a in hubs or b in hubs:
+        return 'hub_image'
+    return None
+
+
+kept, confirmed_excluded = [], {}
+for a, b, c in sorted(cand, key=lambda x: -x[2]):
+    why = reason(a, b)
+    if why is None:
+        kept.append((a, b, c)); continue
+    excl[why] += 1
+    # audit trail (log only): excluded pairs that are nonetheless the same picture
+    if why != 'same_domain' and (recs[a]['sha'] == recs[b]['sha'] or inliers(a, b) >= MIN_INLIERS):
+        confirmed_excluded[why] = confirmed_excluded.get(why, 0) + 1
+        if sum(confirmed_excluded.values()) <= 40:
+            print('  excluded %s %.4f %s (%s) | %s (%s)\n     %s\n     %s' % (why, c, projs[P[a]].get('slug'), D[a],
+                  projs[P[b]].get('slug'), D[b], recs[a]['u'], recs[b]['u']))
 
 kept.sort(key=lambda x: -x[2])
 pairs, seen_proj_img = [], set()
@@ -365,6 +379,7 @@ out = {
     'candidates_over_threshold': len(cand),
     'excluded': excl,
     'hub_images': len(hubs),
+    'same_picture_but_excluded': confirmed_excluded,
     'listing_portals': len(PORTALS),
     'pair_count': len(pairs),
     'pairs': pairs,
@@ -374,7 +389,7 @@ out = {
                '%s (%s) and pairs from two different projects with cosine >= %.2f are kept if the two pages are on different '
                'domains, the developers differ, the project names do not look like the same project, neither page names the '
                'other project (portal carousels and related listings), and neither image has '
- 'near-duplicates on %d+ other domains (stock or template art). On listing portals (sites hosting pages of several '
+ 'near-duplicates (cosine >= %.2f) on %d+ other domains (stock or template art). On listing portals (sites hosting pages of several '
                'tracked projects) an image only counts for the page\'s project if it is not in a featured/related widget, its '
                'file name does not name another place or project, and it is the page\'s og:image, sits in the og:image folder '
                'or names the project. Each surviving pair must then pass a geometric '
@@ -382,7 +397,7 @@ out = {
                'dhash_distance is reported for reference (0-64, low means near-identical; crops and recolours raise it). '
                'A match means the same picture is used on both pages; it is evidence to check, not proof of wrongdoing: '
                'agents, portals and sister brands can legitimately share a render.'
-               % (MIN_SIDE, PER_PROJECT, MODEL, PRETRAINED, THRESHOLD, HUB_SITES, MIN_INLIERS)),
+               % (MIN_SIDE, PER_PROJECT, MODEL, PRETRAINED, THRESHOLD, HUB_COS, HUB_SITES, MIN_INLIERS)),
 }
 json.dump(out, open(sys.argv[1], 'w'), indent=1, ensure_ascii=False)
 print('pairs', len(pairs), 'excluded', excl, 'hubs', len(hubs), 't=%.0fs' % (time.time() - T0))
