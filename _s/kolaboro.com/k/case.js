@@ -220,7 +220,7 @@
         function line(t, size, bold, color){ d.setFont('helvetica', bold ? 'bold' : 'normal'); d.setFontSize(size || 10); d.setTextColor(color || '#17212B'); var ls = d.splitTextToSize(String(t || ''), W); ls.forEach(function(s){ if (y > 280) { d.addPage(); y = 18; } d.text(s, L, y); y += (size || 10) * .45 + 1.2; }); }
         d.setFillColor('#FF5B14'); d.circle(L + 2, y - 1.5, 2, 'F'); d.setFont('helvetica', 'bold'); d.setFontSize(15); d.text('kolaboro', L + 6, y); y += 10;
         line('Case file ' + c.code, 18, true); line((c.project_name || c.project_url || 'Your project') + (c.location ? ' · ' + c.location : ''), 11);
-        line('Generated ' + new Date().toUTCString(), 9, false, '#6B7A86'); y += 3;
+        line('Generated ' + new Date().toUTCString(), 9, false, '#5E6872'); y += 3;
         var STG = ['Case opened','Documents','Land & title','Building permit','Site visit','Report'], V = { pending:'In progress', safe:'No red flags', hold:'Hold payments', stop:"Don't pay yet" };
         line('Status: ' + STG[c.stage || 0] + ' · Verdict: ' + (V[c.verdict] || 'In progress'), 11, true);
         if (c.stage_note) line(c.stage_note, 10);
@@ -234,7 +234,7 @@
           if (m.result && m.result.summary) line(m.result.summary, 9);
           if (m.text) line('"' + m.text + '"', 9);
           if (e.kind === 'satellite' && m.summary) line(m.summary, 9);
-          line('file sha256 ' + e.sha256 + '   chain ' + e.chain, 7, false, '#6B7A86'); y += 1;
+          line('file sha256 ' + e.sha256 + '   chain ' + e.chain, 7, false, '#5E6872'); y += 1;
         });
         if (r.imgs.length) { d.addPage(); y = 18; line('Photos and satellite images', 13, true); var col = 0;
           r.imgs.forEach(function(im){ var p = d.getImageProperties(im.u), w = 85, h = w * p.height / p.width; if (h > 70) { h = 70; w = h * p.width / p.height; } if (y + h > 280) { d.addPage(); y = 18; col = 0; } d.addImage(im.u, 'JPEG', L + col * 92, y, w, h); d.setFontSize(7); d.setTextColor('#41505C'); d.text(d.splitTextToSize((im.e.title || '') + ' · ' + (im.e.taken_at ? new Date(im.e.taken_at).toISOString().slice(0, 16).replace('T', ' ') + ' UTC' : ''), 85), L + col * 92, y + h + 3); if (col) { y += h + 10; col = 0; } else col = 1; });
@@ -245,8 +245,8 @@
         line('Case fingerprint: ' + (head || '-'), 9, true);
         line('Scan the QR code or open kolaboro.com/verify/?hash=' + (head || '') + ' to see its timestamp. To recompute the chain, download the evidence data from the portal and drop it on kolaboro.com/verify.', 8.5, false, '#41505C');
         if (head) { var q = document.createElement('div'); new QRCode(q, { text: 'https://kolaboro.com/verify/?hash=' + head, width: 256, height: 256, correctLevel: QRCode.CorrectLevel.M }); var cv = q.querySelector('canvas'); if (cv) d.addImage(cv.toDataURL('image/png'), 'PNG', L, y + 2, 38, 38); y += 44; }
-        line('Kolaboro checks property for people buying abroad. This file records evidence; it is not legal advice. kolaboro.com · hello@kolaboro.com', 7.5, false, '#6B7A86');
-        line('This exact file is registered with Kolaboro when it is created. To check it was not edited, drop it on kolaboro.com/verify: your browser computes its SHA-256 and looks it up.', 7.5, false, '#6B7A86');
+        line('Kolaboro checks property for people buying abroad. This file records evidence; it is not legal advice. kolaboro.com · hello@kolaboro.com', 7.5, false, '#5E6872');
+        line('This exact file is registered with Kolaboro when it is created. To check it was not edited, drop it on kolaboro.com/verify: your browser computes its SHA-256 and looks it up.', 7.5, false, '#5E6872');
         var bytes = d.output('arraybuffer');
         return crypto.subtle.digest('SHA-256', bytes).then(function(hb){
           var hx = [].map.call(new Uint8Array(hb), function(b){ return ('0' + b.toString(16)).slice(-2); }).join('');
