@@ -1,0 +1,75 @@
+{
+ "date": "2026-11-03T09:32:33Z",
+ "ok": true,
+ "all_checks_pass": true,
+ "three_languages_agree": true,
+ "about": "Three independent implementations (JavaScript, Python, Go), downloaded from kolaboro.com/open/, check the test vectors and the live log, checkpoint, proofs and signatures.",
+ "files_sha256": {
+  "kolaboro-verify.js": "abdadc057f767b09dc759fdad20c0a020d497411ee36b5d01a3d62ee6208ceb5",
+  "kolaboro_verify.py": "3be6c6f29840a364b714dfdbc1638f0e934234b9cf6473ea5d7be8e78124d5ec",
+  "go/main.go": "71c05ce1f16295f9d0518b4fa411766263a95c1b315e7f87f45fba8a492b679b",
+  "test-vectors.json": "c815e9018a6bb9131ed9489d1544f907b9295f7ffffbc8bc7e73833fa69354b5"
+ },
+ "results": {
+  "js": {
+   "test_vectors": {
+    "proof": true,
+    "log": true,
+    "signature": true,
+    "tamper_rejected": true,
+    "checkpoint": true,
+    "inclusion": true,
+    "consistency": true
+   },
+   "live": {
+    "summary_signed": true,
+    "log_signed": true,
+    "log_chain": true,
+    "checkpoint_signed": true,
+    "checkpoint_size_matches_log": true,
+    "every_day_included": true,
+    "append_only": true
+   }
+  },
+  "py": {
+   "test_vectors": {
+    "proof": true,
+    "log": true,
+    "signature": true,
+    "checkpoint": true,
+    "inclusion": true,
+    "consistency": true,
+    "tamper_rejected": true
+   },
+   "live": {
+    "summary_signed": true,
+    "log_signed": true,
+    "log_chain": true,
+    "checkpoint_signed": true,
+    "checkpoint_size_matches_log": true,
+    "every_day_included": true,
+    "append_only": true
+   }
+  },
+  "go": {
+   "test_vectors": {
+    "checkpoint": true,
+    "consistency": true,
+    "inclusion": true,
+    "log": true,
+    "proof": true,
+    "signature": true,
+    "tamper_rejected": true
+   },
+   "live": {
+    "append_only": true,
+    "checkpoint_signed": true,
+    "checkpoint_size_matches_log": true,
+    "every_day_included": true,
+    "log_chain": true,
+    "log_signed": true,
+    "summary_signed": true
+   }
+  }
+ }
+}
