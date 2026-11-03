@@ -62,6 +62,18 @@ UA = 'Mozilla/5.0 (compatible; KolaboroResearchAgent/1.0; +https://kolaboro.com/
 _ROBOTS = {}
 
 
+
+def keep_copy(text, sha):
+    """Frozen copy of every page text we fingerprint, named by its SHA-256 (private: projects stay anonymous until the developer
+    has replied). Lets anyone we show it to check a fingerprint even after the developer edits or deletes the page."""
+    import gzip
+    d = os.path.join(DATA, 'archive', sha[:2]); p = os.path.join(d, sha + '.txt.gz')
+    if os.path.exists(p): return
+    try:
+        os.makedirs(d, exist_ok=True)
+        with gzip.GzipFile(p, 'wb', mtime=0) as g: g.write(text.encode())
+    except Exception: pass
+
 def allowed(url):
     """Respect robots.txt: skip pages the site asks crawlers not to read."""
     import urllib.robotparser, urllib.parse
@@ -453,6 +465,7 @@ def main():
             continue
         try:
             text = fetch(p['url']); full = hashlib.sha256(text.encode()).hexdigest(); h = full[:16]
+            keep_copy(text, full)
             if prev.get('hash') == h and prev.get('source') == 'ai':
                 prev['checked'] = TODAY; prev['sha256'] = full; prev['sealed'] = TODAY; run['pages_ok'] += 1; continue
             claims, model = claude(PROMPT.format(name=p['name'], developer=p.get('developer') or 'unknown developer', area=p['area'], market=p.get('market', 'Bali'), country=p.get('country', 'Indonesia'), text=text[:14000]))

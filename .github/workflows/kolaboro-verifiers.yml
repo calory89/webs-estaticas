@@ -1,0 +1,77 @@
+name: Kolaboro verifiers
+# Daily: the three independent verifiers published on kolaboro.com (JavaScript, Python, Go) check the test vectors and the live site.
+# They must agree. The result is published to kolaboro.com/data/verifiers.json.
+on:
+  schedule:
+    - cron: '41 8 * * *'
+  push:
+    branches: [main]
+    paths: ['tools/kolaboro-qa/verifiers.js', '.github/workflows/kolaboro-verifiers.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-verifiers
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: tools/kolaboro-qa
+      - uses: actions/setup-node@v4
+        with: { node-version: '22' }
+      - uses: actions/setup-go@v5
+        with: { go-version: '1.22' }
+      - name: Download the published verifiers
+        run: |
+          set -e; mkdir -p v/go; cd v
+          UA='user-agent: kolaboro-verifiers-ci/1.0'
+          for f in kolaboro-verify.js kolaboro_verify.py test-vectors.json go/main.go go/go.mod; do curl -fsS -H "$UA" "https://kolaboro.com/open/$f?ci=$GITHUB_RUN_ID" -o "$f"; done
+          sha256sum kolaboro-verify.js kolaboro_verify.py go/main.go test-vectors.json | tee ../sums.txt
+      - name: Run all three
+        run: |
+          set +e; R=$RUNNER_TEMP; cd v
+          node ../tools/kolaboro-qa/verifiers.js "$PWD/kolaboro-verify.js" "$PWD/test-vectors.json" vectors > $R/js-v.json; a=$?
+          node ../tools/kolaboro-qa/verifiers.js "$PWD/kolaboro-verify.js" "$PWD/test-vectors.json" live > $R/js-l.json; b=$?
+          python3 kolaboro_verify.py vectors test-vectors.json > $R/py-v.json; c=$?
+          python3 kolaboro_verify.py live > $R/py-l.json; d=$?
+          (cd go && go run . vectors ../test-vectors.json > $R/go-v.json); e=$?
+          (cd go && go run . live > $R/go-l.json); f=$?
+          python3 - "$R" <<'PY'
+          import json, sys, datetime
+          R = sys.argv[1]; res = {}
+          for lang in ('js', 'py', 'go'):
+              for mode, k in (('v', 'test_vectors'), ('l', 'live')):
+                  try: res.setdefault(lang, {})[k] = json.load(open('%s/%s-%s.json' % (R, lang, mode)))
+                  except Exception as e: res.setdefault(lang, {})[k] = {'error': str(e)[:120]}
+          ok = all(all(v is True for v in res[l][k].values()) for l in res for k in res[l])
+          agree = all(res['js'][k] == res['py'][k] == res['go'][k] for k in ('test_vectors', 'live'))
+          sums = dict(reversed(l.split()) for l in open('../sums.txt').read().strip().splitlines())
+          out = {'date': datetime.datetime.utcnow().isoformat(timespec='seconds') + 'Z', 'ok': ok and agree, 'all_checks_pass': ok, 'three_languages_agree': agree,
+                 'about': 'Three independent implementations (JavaScript, Python, Go), downloaded from kolaboro.com/open/, check the test vectors and the live log, checkpoint, proofs and signatures.',
+                 'files_sha256': sums, 'results': res}
+          json.dump(out, open(R + '/verifiers.json', 'w'), indent=1); print(json.dumps(out, indent=1))
+          PY
+      - name: Publish to kolaboro.com
+        run: |
+          set -e
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          for i in 1 2 3 4 5; do
+            P=$(git rev-parse FETCH_HEAD)
+            export GIT_INDEX_FILE=$RUNNER_TEMP/idx; rm -f $GIT_INDEX_FILE; git read-tree $P
+            H=$(git hash-object -w "$RUNNER_TEMP/verifiers.json")
+            git update-index --add --cacheinfo 100644,$H,_s/kolaboro.com/data/verifiers.json
+            T=$(git write-tree); unset GIT_INDEX_FILE
+            [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
+            C=$(git commit-tree $T -p $P -m "kolaboro.com: verifiers $(date -u +%F)")
+            git push -q origin $C:refs/heads/pub/_lovable && exit 0
+            sleep 5; git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          done
+          exit 1
+      - name: Fail if the verifiers disagree or a check failed
+        run: python3 -c "import json,sys; sys.exit(0 if json.load(open('$RUNNER_TEMP/verifiers.json'))['ok'] else 1)"
