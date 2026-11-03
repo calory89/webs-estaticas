@@ -22,7 +22,7 @@ async function allow(ctx, key, limit, ttl) {   // per-isolate window plus a fixe
   return true;
 }
 
-const VERSION = 'hz2';
+const VERSION = 'hz3';
 async function hazards(req, u, ctx) {
   const lat = +u.searchParams.get('lat'), lng = +u.searchParams.get('lng');
   if (!(lat >= -60 && lat <= 75 && lng >= -180 && lng <= 180) || !u.searchParams.get('lat') || !u.searchParams.get('lng')) return out({ error: 'need lat (-60..75) and lng (-180..180)' }, 400);
