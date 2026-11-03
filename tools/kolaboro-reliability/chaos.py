@@ -49,6 +49,7 @@ AI = [
     ('primary_model_down', 'Primary AI reader down', 'claude-haiku answers HTTP 529 (overloaded)'),
     ('primary_model_down_injection', 'Primary AI reader down, page with hidden AI instructions', 'claude-haiku answers HTTP 529'),
     ('second_model_down', 'Second AI reader down', 'claude-sonnet answers HTTP 529'),
+    ('primary_model_slow', 'Primary AI reader hangs (never answers)', 'claude-haiku request never answers; the 60 s deadline in anthropic() must cut it'),
     ('both_models_down', 'Both AI readers down', 'claude-haiku and claude-sonnet answer HTTP 529'),
 ]
 
@@ -141,8 +142,7 @@ def main():
            'not_covered': [
                'database (Supabase) down or slow: needs a fault switch inside rpc() in kolaboro.js',
                'AI daily budget breaker tripping: needs a test switch in aiAllowed()',
-               'AI model slow (no answer for minutes): anthropic() has no timeout to test yet',
-               'source page that trickles its body for minutes: analyze() has no read timeout, and no public test server that trickles to Cloudflare was found',
+               'source page that trickles its body for minutes: fetchPage() now has a 15 s deadline covering the body, but no public test server that trickles to Cloudflare was found to drill it',
                'Cloudflare edge or static assets failing: outside our control, covered by the outside uptime probe',
                'OpenTimestamps calendars down during evidence stamping'],
            'runs': runs}
