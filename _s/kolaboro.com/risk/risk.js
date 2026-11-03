@@ -4,7 +4,7 @@
   function set(id, v){ var e = document.getElementById(id); if (e) e.textContent = v; }
   var TAG = { unusual: 'u', 'somewhat unusual': 's', typical: 't' };
   var D, LBL = {};
-  function rawv(k, v){ if (k === 'contradicted_claims_share') return Math.round(v * 100) + '%'; if (/_months$/.test(k)) return v + ' mo'; if (k === 'advertised_yield_pct') return v + '%'; return /^(no_|guaranteed|permit_contr|register_|satellite_)/.test(k) ? 'yes' : String(v); }
+  function rawv(k, v){ if (k === 'contradicted_claims_share') return Math.round(v * 100) + '%'; if (/_months$/.test(k)) return v + ' mo'; if (k === 'advertised_yield_pct' || k === 'front_loaded_payment_plan') return v + '%'; return /^(no_|guaranteed|permit_contr|register_|satellite_)/.test(k) ? 'yes' : String(v); }
   function explain(id, p){
     var h = '<div class="h-card"><h3><a href="/p/?id=' + encodeURIComponent(id) + '">' + esc(id) + '</a> <span class="h-tag ' + TAG[p.lvl] + '">' + esc(p.lvl) + '</span></h3>' +
       '<p class="h-src">' + esc(p.m) + '. Score ' + p.s + (p.r >= 99.95 ? ' (the highest of all tracked projects)' : ' (higher than ' + Math.floor(p.r) + '% of tracked projects)') + '. Isolation forest: ' + (p['if'] >= 99.95 ? 'the most isolated project.' : 'more isolated than ' + Math.floor(p['if']) + '%.') + '</p>';
@@ -27,7 +27,7 @@
     set('r-both', mc.agreement.top5_both_methods + ' of ' + mc.agreement.top5_size); set('r-th1', mc.thresholds.unusual_score_from); set('r-th2', mc.thresholds.somewhat_unusual_from);
     set('r-purpose', mc.purpose); set('r-notfor', mc.not_for);
     document.getElementById('rFeat').innerHTML = mc.features.map(function(f){
-      var w = f.kind === 'binary' ? 'when present: +' + f.z_when_present.toFixed(2) : f.kind === 'number' ? '(x - ' + f.median + ') / ' + f.scale : 'any: +' + f.z_when_present.toFixed(2) + ', plus size vs median ' + f.median_when_present + ' (scale ' + f.scale_when_present + ')';
+      var w = f.kind === 'binary' ? 'when present: +' + f.z_when_present.toFixed(2) : (f.kind === 'number' || f.kind === 'number, where known') ? '(x - ' + f.median + ') / ' + f.scale + (f.known_projects ? ', among ' + f.known_projects + ' projects with a value' : '') : 'any: +' + f.z_when_present.toFixed(2) + ', plus size vs median ' + f.median_when_present + ' (scale ' + f.scale_when_present + ')';
       return '<tr><td>' + esc(f.label) + '<div class="h-code">' + esc(f.feature) + '</div></td><td>' + esc(f.kind) + '</td><td class="n">' + (f.prevalence_pct != null ? f.prevalence_pct : f.present_pct) + '%</td><td>' + esc(w) + '</td></tr>'; }).join('');
     document.getElementById('rNA').innerHTML = mc.features_not_available.map(function(f){ return '<li><b>' + esc(f.feature.replace(/_/g, ' ')) + '</b>: ' + esc(f.why) + '</li>'; }).join('');
     document.getElementById('rMethod').innerHTML = mc.method.map(function(x){ return '<li>' + esc(x) + '</li>'; }).join('');

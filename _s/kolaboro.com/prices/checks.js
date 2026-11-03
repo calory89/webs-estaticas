@@ -5,7 +5,7 @@
   var LAB = { automated: ['a', 'Automated'], 'manual search form': ['s', 'Form, not automated'], 'browser only': ['u', 'Browser only'], 'no official online register': ['', 'No online register'], 'robots.txt disallows': ['u', 'robots.txt says no'], 'not reachable': ['u', 'Not reachable'] };
   fetch('/data/register-checks.json?t=' + Math.floor(Date.now() / 6e5)).then(function(r){ if (!r.ok) throw 0; return r.json(); }).then(function(d){
     var b = d.summary.by_automation;
-    set('c-n', d.summary.registers); set('c-a', b.automated || 0); set('c-f', (b['manual search form'] || 0)); set('c-b', (b['browser only'] || 0) + (b['robots.txt disallows'] || 0) + (b['not reachable'] || 0)); set('c-root', d.archive_root); set('c-lines', d.archive_lines); set('c-upd', d.updated);
+    set('c-n', d.summary.registers); set('c-a', b.automated || 0); set('c-f', (b['manual search form'] || 0)); set('c-b', (b['browser only'] || 0) + (b['robots.txt disallows'] || 0) + (b['not reachable'] || 0)); set('c-root', d.archive_root); var vl = document.getElementById('c-ver'); if (vl) vl.href = '/api/kb/stamp?hash=' + d.archive_root; set('c-lines', d.archive_lines); set('c-upd', d.updated);
     document.getElementById('cMethod').innerHTML = d.method.map(function(x){ return '<li>' + esc(x) + '</li>'; }).join('');
     document.getElementById('cRegs').innerHTML = d.registers.map(function(r){ var l = LAB[r.automation] || ['', r.automation];
       return '<tr><td>' + esc(r.market) + '</td><td>' + (r.url ? '<a href="' + esc(r.url) + '" rel="noopener" target="_blank">' + esc(r.register) + '</a>' : esc(r.register)) + '</td><td><span class="h-tag ' + l[0] + '">' + esc(l[1]) + '</span>' +
