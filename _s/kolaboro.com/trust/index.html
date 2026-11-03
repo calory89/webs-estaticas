@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Trust center | Kolaboro</title>
+<meta name="description" content="Kolaboro trust center: backups, uptime, signed data, public log, AI evaluation and security controls, each with live status, evidence time and raw evidence. Mapped to SOC 2 criteria, not audited.">
+
+<link rel="canonical" href="https://kolaboro.com/trust/">
+<link rel="icon" href="/k/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#17212B">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kolaboro">
+<meta property="og:title" content="Trust center | Kolaboro">
+<meta property="og:description" content="Kolaboro trust center: backups, uptime, signed data, public log, AI evaluation and security controls, each with live status, evidence time and raw evidence. Mapped to SOC 2 criteria, not audited.">
+<meta property="og:url" content="https://kolaboro.com/trust/">
+<meta property="og:image" content="https://kolaboro.com/k/og/pricing.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kolaboro.com/k/og/pricing.png">
+<link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/k/site.css?v=e16142b036">
+
+<script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',region:["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});try{if(localStorage.getItem('kb-consent')==='yes')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}</script><script>addEventListener("load",function(){setTimeout(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V";document.head.appendChild(s)},1500)})</script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');gtag('config','G-H5TGZJ1KNG');</script>
+
+
+<link rel="alternate" type="application/rss+xml" title="Kolaboro: what we shipped" href="/feed.xml">
+<style>
+.tc-note{max-width:780px;margin-top:22px;background:#fff;border:2px solid var(--ink);border-radius:16px;padding:14px 18px;color:var(--ink-2)}
+.tc-sec{padding-top:clamp(32px,4vw,56px)}
+.tc-sum{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.tc-n{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+.tc-n b{display:block;font-stretch:125%;font-weight:850;font-size:clamp(1.5rem,2.4vw,2rem);font-variant-numeric:tabular-nums}
+.tc-n span{font-size:.88rem;color:var(--muted)}
+.tc-n i{font-style:normal;font-weight:800}
+.tc-n.tc-pass b{color:var(--ok)}.tc-n.tc-fail b{color:#B42318}.tc-n.tc-warn b{color:#8A5300}.tc-n.tc-stale b{color:#6B4FA0}
+.tc-meta{margin-top:14px;font-size:.9rem;color:var(--muted);overflow-wrap:anywhere}
+.tc-meta a,.tc-c a,.tc-prose a{color:var(--ink)}
+.tc-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:22px}
+.tc-c{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 20px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.tc-c header{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.tc-c h3{font-size:1.12rem;margin:2px 0 0}
+.tc-c p{margin:0;color:var(--ink-2);overflow-wrap:anywhere}
+.tc-c .tc-how{font-size:.88rem;color:var(--muted)}
+.tc-miss{font-size:.85rem}
+.tc-c footer{margin-top:auto;padding-top:10px;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:4px;font-size:.84rem;color:var(--muted)}
+.tc-ev a{margin-right:10px;overflow-wrap:anywhere}
+.tc-old{color:#6B4FA0;font-weight:700}
+.tc-pill{display:inline-flex;align-items:center;gap:6px;border-radius:999px;padding:4px 12px;font-weight:800;font-size:.82rem;border:1.5px solid currentColor}
+.tc-pill i{font-style:normal}
+.tc-pill.tc-pass{color:var(--ok);background:var(--ok-bg)}
+.tc-pill.tc-warn{color:#8A5300;background:#FFF1D6}
+.tc-pill.tc-fail{color:#B42318;background:#FDE4E1}
+.tc-pill.tc-stale{color:#6B4FA0;background:#EFE9FA}
+.tc-pill.tc-unknown{color:var(--muted);background:var(--paper)}
+.tc-tsc{font-size:.78rem;color:var(--muted);font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.tc-sec2{padding-top:0}
+.tc-prose>p,.tc-prose>ol,.tc-prose>ul,.tc-prose>h2,.tc-prose>h3{max-width:780px}
+.tc-prose p,.tc-prose li{color:var(--ink-2)}
+.tc-prose ol,.tc-prose ul{padding-left:1.2em;display:grid;gap:8px}
+.tc-prose h3{margin-top:28px}
+.tc-tw{overflow-x:auto;margin:20px 0 6px;border:1px solid var(--line);border-radius:16px;background:#fff;-webkit-overflow-scrolling:touch}
+.tc-t{width:100%;border-collapse:collapse;font-size:.92rem;min-width:620px}
+.tc-t th,.tc-t td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
+.tc-t thead th{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);background:var(--paper)}
+.tc-t td small{color:var(--muted)}
+.dp-pass{color:var(--ok);font-weight:700}.dp-rolled_back{color:#8A5300;font-weight:700}.dp-failed,.dp-rollback_failed{color:#B42318;font-weight:700}
+@media(max-width:900px){.tc-list{grid-template-columns:1fr}.tc-sum{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:480px){.tc-sum{grid-template-columns:repeat(2,1fr)}}
+@media print{.tc-list{grid-template-columns:1fr 1fr}.tc-c{break-inside:avoid}}
+</style></head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="ship" role="region" aria-label="Shipping daily"><a class="ship-l" href="/changelog"><i aria-hidden="true"></i><span>Shipping daily</span></a><div class="ship-v"><div class="ship-t" id="shipT"><div class="ship-g"><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>All 646 projects re-verified: 6,419 developer claims tested against registers, courts and press</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>Malaysia TEDUH and Philippines DHSUD licence checks: expired licences and approved delays found</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>Thailand ONEP register: 2 condos found selling before environmental approval</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>Mexico PROFECO contract register checks: one sales registration belonged to a laundry</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>Abu Dhabi ADREC inspections and RAK RERA permit list added: % built straight from the regulator</span><span class="si"><b>Nov 1</b><em class="k-feature">SHIPPED</em>New stage filter: completed but still selling</span><span class="si"><b>Nov 1</b><em class="k-feature">SHIPPED</em>Public database page: verification levels, disclosure distribution, every market</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>+212 projects in one day, round 3: USA, Caribbean, Gulf, Africa, Japan, Australia</span><span class="si"><b>Nov 1</b><em class="k-feature">SHIPPED</em>Stage on every case: off-plan or under construction</span><span class="si"><b>Oct 31</b><em class="k-feature">SHIPPED</em>Verification level per check on every case card: registry, independent, developer, contradicted</span></div><div class="ship-g" aria-hidden="true"><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>All 646 projects re-verified: 6,419 developer claims tested against registers, courts and press</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>Malaysia TEDUH and Philippines DHSUD licence checks: expired licences and approved delays found</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>Thailand ONEP register: 2 condos found selling before environmental approval</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>Mexico PROFECO contract register checks: one sales registration belonged to a laundry</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>Abu Dhabi ADREC inspections and RAK RERA permit list added: % built straight from the regulator</span><span class="si"><b>Nov 1</b><em class="k-feature">SHIPPED</em>New stage filter: completed but still selling</span><span class="si"><b>Nov 1</b><em class="k-feature">SHIPPED</em>Public database page: verification levels, disclosure distribution, every market</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>+212 projects in one day, round 3: USA, Caribbean, Gulf, Africa, Japan, Australia</span><span class="si"><b>Nov 1</b><em class="k-feature">SHIPPED</em>Stage on every case: off-plan or under construction</span><span class="si"><b>Oct 31</b><em class="k-feature">SHIPPED</em>Verification level per check on every case card: registry, independent, developer, contradicted</span></div></div></div><a class="ship-r" href="/changelog">Changelog &rarr;</a></div>
+<header class="nav" id="top">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="Kolaboro home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4v24M8 16 23 6.5M8 16l15 9.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="24" cy="6" r="3.4" fill="currentColor"/><circle cx="24" cy="26" r="3.4" fill="currentColor"/><circle cx="8" cy="16" r="4.2" fill="#FF5B14"/></svg>kolaboro</a>
+    <div class="nav-right">
+      <a class="btn btn-hi btn-sm nav-cta-m" href="/#start" data-role="buyer" data-ev="cta_nav_mobile">Protect my purchase</a>
+      <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 20 20"><path d="M2 5h16M2 10h16M2 15h16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>
+    </div>
+    <nav class="links" id="menu" aria-label="Main">
+      <a href="/#how">How it works</a><a href="/check">Check a project</a><a href="/database">Database</a><a href="/pricing">Pricing</a><a href="/cases">Live cases</a><a href="/about">About</a>
+      <a class="btn btn-hi btn-sm" href="/#start" data-role="buyer" data-ev="cta_nav">Protect my purchase</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / Trust center</p><h1>Trust center</h1><p class="lead">Each control below is checked by a machine on every visit, not described by us. You see its status, how old the evidence is and a link to the raw evidence. When evidence is older than its limit, the control shows as stale, even if it passed last time.</p>
+<p class="tc-note"><b>Controls mapped to SOC 2 criteria, not audited.</b> Kolaboro holds no SOC 2 report, no ISO 27001 certificate and no other certification. The mapping to the AICPA Trust Services Criteria is our own reading; an auditor could map them differently.</p></div></section>
+<section class="sec tc-sec"><div class="wrap">
+<div class="tc-sum" id="tc-sum" aria-live="polite"><div class="tc-n"><b>…</b><span>loading live evidence</span></div></div>
+<p class="tc-meta" id="tc-meta">Reading the evidence…</p>
+<div class="tc-list" id="tc-list"></div>
+<noscript><p>This page reads live evidence with JavaScript. The raw sources: <a href="/api/x/l/trust">/api/x/l/trust</a> (all controls, signed), <a href="/data/restore.json">restore drill</a>, <a href="/api/open/uptime">uptime</a>, <a href="/api/open/evals">AI evaluation</a>, <a href="/api/open/security">security</a>, <a href="/data/deploys.json">deploys</a>.</p></noscript>
+</div></section>
+<section class="sec tc-sec2" id="deploys"><div class="wrap tc-prose">
+<p class="eyebrow">Safe deploys</p>
+<h2>Every push is checked live, and undone if it breaks</h2>
+<p>Our site runs on Cloudflare Pages, which sends each push to production at once. Pages has no percentage canary: we cannot send 5% of visitors to the new version first. So we do not claim one. What we do instead:</p>
+<ol>
+<li><b>Bundle check before the push.</b> Our rule is that worker code is bundled locally before every push, so code that does not build never ships. This is a working rule, not yet enforced by a machine.</li>
+<li><b>Guard after the push.</b> GitHub Actions waits until <a href="/api/open/build">/api/open/build</a> reports the new commit, then runs the <a href="/open/deploy-smoke.mjs">public smoke checks</a>: key pages answer 200, the API answers with the right shape, a signed answer verifies against our published key, and a real Chromium loads key pages at 1440 and 390 px with no JavaScript errors and no sideways scrolling.</li>
+<li><b>Automatic rollback.</b> If the checks fail twice, 90 seconds apart, the guard restores the files changed since the last commit that passed and pushes that as a new commit. Nothing is force-pushed and history is kept. It then waits for the rollback to go live and checks again.</li>
+<li><b>Public record.</b> Every guarded deploy, failure and rollback drill is written to <a href="/data/deploys.json">/data/deploys.json</a>.</li>
+</ol>
+<p>The honest limit: between a bad push going live and the rollback going live, visitors can see the broken version for a few minutes. A canary would shrink that; Pages does not offer one. <span id="dp-mode"></span></p>
+<div class="tc-tw"><table class="tc-t"><thead><tr><th>When</th><th>Commit</th><th>Result</th><th>Checks</th><th>Wait to live</th><th>Log</th></tr></thead><tbody id="dp-body"><tr><td colspan="6">Loading…</td></tr></tbody></table></div>
+<h3>Rollback drills</h3>
+<p>The rollback path is tested without breaking production: the guard adds a check that must fail, confirms it is caught, builds the rollback commit for the latest change and checks that it would apply, but does not push it.</p>
+<ul id="dp-drills"><li>Loading…</li></ul>
+</div></section>
+<section class="sec tc-sec2"><div class="wrap tc-prose">
+<p class="eyebrow">Limits</p>
+<h2>What this page does not prove</h2>
+<ul>
+<li>That nobody inside Kolaboro misuses access. Admin access is checked only from outside (headers, no cached data); who holds the admin key cannot be shown publicly.</li>
+<li>That the controls are complete. An auditor tests design and operation over months; this page shows the latest evidence only.</li>
+<li>That the third-party services we rely on (Cloudflare, Supabase, GitHub, Anthropic) are secure. Their own reports cover that.</li>
+</ul>
+<p>Found a problem? <a href="/.well-known/security.txt">security.txt</a> has our contact, and <a href="/security">Security and your data</a> explains how we handle reports. See also <a href="/status">system status</a>, <a href="/engineering/">engineering</a> and <a href="/log/">the public log</a>.</p>
+</div></section>
+</main>
+<div class="mcta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="cta_sticky">Protect my purchase</a></div>
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="brand" href="/" aria-label="Kolaboro home" style="font-size:1.15rem"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4v24M8 16 23 6.5M8 16l15 9.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="24" cy="6" r="3.4" fill="currentColor"/><circle cx="24" cy="26" r="3.4" fill="currentColor"/><circle cx="8" cy="16" r="4.2" fill="#FF5B14"/></svg>kolaboro</a>
+        <p style="margin-top:12px;max-width:34ch">Independent property checks for people buying abroad. Recruiting our first local agents; desk research in <span data-db="markets">144</span> markets.</p>
+        <form class="news" data-news novalidate><label for="nl-email">Monthly research notes: what developers promise, and what changed.</label>
+          <div class="qform light" style="margin-top:10px"><input id="nl-email" name="email" type="email" placeholder="Your email" autocomplete="email"><button class="btn btn-hi btn-sm" type="submit">Subscribe</button></div>
+          <p class="nmsg" aria-live="polite"></p></form>
+      </div>
+      <div><h4>Buyers</h4><ul>
+        <li><a href="/check">Check a project</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/report/sample">Sample report</a></li>
+        <li><a href="/tools/market-match/">Market match</a></li>
+        <li><a href="/tools/payment-risk/">Payment plan risk</a></li>
+        <li><a href="/compare/">Compare projects</a></li>
+        <li><a href="/checklist">Before-you-sign checklist</a></li>
+        <li><a href="/destinations">Destinations</a></li>
+      </ul></div>
+      <div><h4>Data</h4><ul>
+        <li><a href="/database">The database</a></li>
+        <li><a href="/cases">Live cases</a></li>
+        <li><a href="/m/">Markets</a></li>
+        <li><a href="/transparency-index/">Transparency index</a></li>
+        <li><a href="/report/state-of-off-plan-2026/">State of Off-Plan 2026</a></li>
+        <li><a href="/satellite/">Satellite watch</a></li>
+        <li><a href="/registers/">Official registers</a></li>
+        <li><a href="/docs/api#open">Open data API</a></li>
+        <li><a href="/extension/">Chrome extension</a></li>
+      </ul></div>
+      <div><h4>Trust</h4><ul>
+        <li><a href="/how-we-score">How we score</a></li>
+        <li><a href="/standard/">Disclosure standard</a></li>
+        <li><a href="/corrections">Corrections</a></li>
+        <li><a href="/data-policy/">How we collect data</a></li>
+        <li><a href="/verify">Verify evidence</a></li>
+        <li><a href="/independence">Independence</a></li>
+        <li><a href="/security">Security and your data</a></li>
+        <li><a href="/technology">Technology</a></li>
+        <li><a href="/status">System status</a></li><li><a href="/log/">Public log</a></li><li><a href="/engineering/">Engineering</a></li>
+        <li><a href="/metrics">Open metrics</a></li>
+      </ul></div>
+      <div><h4>Kolaboro</h4><ul>
+        <li><a href="/developers">For developers</a></li>
+        <li><a href="/agents">Become an agent</a></li>
+        <li><a href="/lawyers/">For lawyers</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/investors">Investors</a></li>
+        <li><a href="/roadmap">Roadmap</a></li>
+        <li><a href="/changelog">Changelog</a></li>
+        <li><a href="/api-pilot">API for partners</a></li>
+        <li><a href="/login">Client login</a></li>
+        <li><a href="/legal/privacy">Privacy</a></li>
+        <li><a href="/legal/terms">Terms</a></li>
+      </ul></div>
+    </div>
+    <p class="fine">© 2026 Kolaboro, operated by Equinox Investment Group LLC, 30 N Gould St Ste N, Sheridan, WY 82801, USA. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Reports are opinions based on the evidence listed in them.</p>
+  </div>
+</footer>
+<script src="/k/ask.js?v=f5e9b0d9e7" defer></script><script src="/k/pipeline.js?v=c1da74b911" defer></script><script src="/k/site.js?v=9568272051" defer></script>
+<script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script><script>if(!window.clarity)(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","z4eqcmaic7");</script>
+<div class="cc" id="cc" role="dialog" aria-label="Cookies" hidden><p>We use analytics cookies to improve Kolaboro. <a href="/legal/privacy">Privacy</a></p><div><button class="btn btn-line btn-sm" data-cc="no">Only necessary</button><button class="btn btn-hi btn-sm" data-cc="yes">Accept</button></div></div>
+<script>(function(){var EU=["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"];var st=null;try{st=localStorage;}catch(e){}var c=st&&st.getItem('kb-consent');if(c)return;
+fetch('/api/geo').then(function(r){return r.json();}).then(function(g){if(!g||EU.indexOf(g.country)<0)return;var b=document.getElementById('cc');if(!b)return;b.hidden=false;
+b.addEventListener('click',function(e){var v=e.target.getAttribute('data-cc');if(!v)return;try{st&&st.setItem('kb-consent',v);}catch(x){}
+if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted'});if(window.clarity)clarity('consent');}b.hidden=true;});}).catch(function(){});})();</script>
+<script>
+(function(){
+  var els = document.querySelectorAll('.price'); if (!els.length || !window.fetch) return;
+  var C = { US:['USD','US$',1.08], CA:['CAD','C$',1.5], AU:['AUD','A$',1.65], NZ:['NZD','NZ$',1.8], GB:['GBP','£',.86], SG:['SGD','S$',1.45], AE:['AED','AED ',3.97], CH:['CHF','CHF ',.95] };
+  fetch('/api/geo').then(function(r){ return r.json(); }).then(function(g){
+    var c = C[g && g.country]; if (!c) return;
+    els.forEach(function(el){
+      var m = el.textContent.replace(/[,\s]/g,'').match(/€(\d+)/); if (!m || el.querySelector('.fx')) return;
+      var v = +m[1] * c[2], step = v > 1000 ? 50 : 5, n = Math.round(v / step) * step;
+      el.insertAdjacentHTML('beforeend', '<small class="fx">≈ ' + c[1] + n.toLocaleString('en-US') + ' · charged in €</small>');
+    });
+  }).catch(function(){});
+})();
+</script>
+<script>
+(function(){
+  if (document.body.scrollHeight < window.innerHeight * 3) return;
+  var b = document.createElement('button'); b.className = 'totop'; b.type = 'button'; b.setAttribute('aria-label', 'Back to top'); b.textContent = '↑';
+  document.body.appendChild(b);
+  b.addEventListener('click', function(){ window.scrollTo({ top: 0, behavior: 'smooth' }); });
+  window.addEventListener('scroll', function(){ b.classList.toggle('on', window.scrollY > window.innerHeight * 1.5); }, { passive: true });
+})();
+</script>
+<script src="/trust/trust.js?v=d3cf193d3d" defer></script></body>
+</html>
