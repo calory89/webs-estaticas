@@ -794,6 +794,14 @@ async function witness(req, env, ctx) {
   return json({ ok: true, witnessed: done });
 }
 async function extraRoutes(req, u, path, env) {
+  const tm = path.match(/^\/api\/open\/projects\/([^/]{1,40})\/at\/(\d{4}-\d{2}-\d{2})$/);
+  if (tm) {   // time travel: the project as published on a past day, from the stored daily snapshot whose SHA-256 is checked against the public log
+    let r = null; try { r = await rpc('kolaboro_snapshot_project', { p_day: tm[2], p_id: decodeURIComponent(tm[1]) }); } catch (e) {}
+    if (!r || !r.day) return openResp({ error: 'no snapshot on or before this day', first_snapshot: '2026-11-03' }, null, 300);
+    if (!r.project) return openResp({ error: 'project not in the dataset on that day', snapshot_day: r.day, days_available: r.days_available }, null, 300);
+    return openResp({ asked_for: tm[2], snapshot_day: r.day, dataset_sha256: r.dataset_sha256, matches_public_log: r.matches_log, project: openProject(r.project), history: r.project.history || [],
+      note: r.matches_log ? 'The snapshot hashes to the dataset_sha256 recorded in that day\'s public log line (kolaboro.com/log).' : 'Snapshot taken after that day\'s log line was computed, so it is not covered by the log. Snapshots and log lines are taken together from 4 Nov 2026.' }, null, 3600);
+  }
   if (path === '/api/open/build') return openResp({ commit: (env && env.CF_PAGES_COMMIT_SHA) || null, branch: (env && env.CF_PAGES_BRANCH) || null, source: 'https://github.com/calory89 (private repository; the commit id is shown so changes can be dated)' }, null, 60);
   if (path === '/api/open/evals') { try { return openResp(await rpc('kolaboro_evals_public', {}), null, 300); } catch (e) { return openResp({ error: 'evals_unavailable' }, null, 30); } }
   if (path === '/api/open/uptime') { try { return openResp(await rpc('kolaboro_uptime_public', {}), null, 120); } catch (e) { return openResp({ error: 'uptime_unavailable' }, null, 30); } }
@@ -922,6 +930,13 @@ const OPEN_DOC = {
     'GET /api/open/projects': 'projects; filters: market, country, stage (off-plan|under construction|completed), min_public (0-6), min_confirmed (0-6), all_six (1), flags (1|0), limit (max 1000), offset',
     'GET /api/open/projects.csv': 'same filters, CSV',
     'GET /api/open/projects/{id}': 'one project, e.g. /api/open/projects/BALI-014',
+    'GET /api/open/projects/{id}/at/{YYYY-MM-DD}': 'time travel: the project as published that day, from a daily snapshot checked against the public log',
+    'GET /api/open/checkpoint': 'signed checkpoint of the public log (C2SP signed note): tree size and Merkle root of all daily heads',
+    'GET /api/open/log-proof?day=YYYY-MM-DD': 'inclusion proof of one daily head in the checkpoint tree',
+    'GET /api/open/log-consistency?first=M&second=N': 'RFC 9162 consistency proof: the tree of size N extends the tree of size M unchanged',
+    'GET /api/open/evals': 'daily evaluation of the AI desk review on fixed fictional pages, case by case',
+    'GET /api/open/uptime': 'uptime probes every 5 minutes from outside Cloudflare',
+    'GET /api/open/build': 'which code commit is serving this API',
     'GET /api/open/proof/{id}': 'Merkle inclusion proof that a project page fingerprint is in the daily root recorded in the public log (kolaboro.com/log)',
     'GET /api/open/changes?since=YYYY-MM-DD': 'every recorded change to a project field since a date, newest first',
     'GET /api/open/log': 'the public append-only log: one hash-chained head per day, each timestamped in Bitcoin',
