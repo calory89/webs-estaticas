@@ -2,15 +2,66 @@
   "manifest_version": 3,
   "name": "Kolaboro: check off-plan projects",
   "short_name": "Kolaboro",
-  "version": "1.0.0",
-  "description": "Send any off-plan property page to Kolaboro's free desk review, and tick the six things a buyer should see before paying a deposit.",
+  "version": "1.1.0",
+  "description": "On property portals, shows Kolaboro's public record when a listing matches a tracked project. One-click desk review of any project page.",
   "homepage_url": "https://kolaboro.com/extension/",
-  "permissions": ["activeTab", "contextMenus"],
-  "background": { "service_worker": "background.js" },
+  "permissions": [
+    "activeTab",
+    "contextMenus"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
     "default_title": "Check this project with Kolaboro",
     "default_popup": "popup.html",
-    "default_icon": { "16": "icons/icon16.png", "32": "icons/icon32.png", "48": "icons/icon48.png", "128": "icons/icon128.png" }
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
   },
-  "icons": { "16": "icons/icon16.png", "32": "icons/icon32.png", "48": "icons/icon48.png", "128": "icons/icon128.png" }
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.propertyfinder.ae/*",
+        "https://*.propertyfinder.bh/*",
+        "https://*.propertyfinder.eg/*",
+        "https://*.propertyfinder.qa/*",
+        "https://*.propertyfinder.sa/*",
+        "https://*.bayut.com/*",
+        "https://*.rumah123.com/*",
+        "https://*.fazwaz.com/*",
+        "https://*.fazwaz.co.th/*",
+        "https://*.fazwaz.id/*",
+        "https://*.fazwaz.ph/*",
+        "https://*.fazwaz.vn/*",
+        "https://*.fazwaz.my/*",
+        "https://*.dotproperty.com.ph/*",
+        "https://*.dotproperty.co.th/*",
+        "https://*.dotproperty.id/*",
+        "https://*.thailand-property.com/*",
+        "https://*.rumavi.com/*",
+        "https://*.realting.com/*",
+        "https://*.emlakplatform.com.tr/*",
+        "https://*.pincali.com/*",
+        "https://*.edgeprop.my/*",
+        "https://*.propertyguru.com.my/*",
+        "https://*.idealista.com/*",
+        "https://*.idealista.pt/*",
+        "https://*.apartments.com.au/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
 }
