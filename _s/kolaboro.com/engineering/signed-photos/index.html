@@ -53,7 +53,7 @@
 <li><b>Never seen before.</b> A perceptual fingerprint (64-bit difference hash) is compared with every accepted photo from other cases. A near-identical photo is rejected, even if cropped slightly or recompressed.</li>
 <li><b>Signed by the agent's phone.</b> New: the agent can register a passkey on their phone. Each photo fingerprint is then signed with that phone's key after Face ID or fingerprint (WebAuthn, user verification required). The private key never leaves the phone's secure chip, so neither Kolaboro nor anyone who steals the agent's password can produce a photo in their name.</li>
 </ol>
-<div class="eg-code">challenge = SHA-256("kolaboro-capture-v1\n" + photo_sha256 + "\n" + capture_code)
+<div class="eg-code" tabindex="0">challenge = SHA-256("kolaboro-capture-v1\n" + photo_sha256 + "\n" + capture_code)
 signature = phone_key.sign(authenticatorData || SHA-256(clientDataJSON))   // clientDataJSON contains the challenge</div>
 <h2>After capture</h2>
 <p>Each accepted item is chained to the previous one in its case (so removing one breaks the chain), the day's evidence is sealed into one hash and timestamped in Bitcoin, and that hash goes into the <a href="/engineering/transparency-log">public log</a>. Every item has a public, signed receipt at /api/open/receipt/{id}: fingerprint, chain position, times, whether it was inside the plot, whether the code matched, and for signed photos the full passkey assertion and public key. Our server checks the signature when it serves the receipt; <a href="/open/kolaboro-verify.js">kolaboro-verify.js</a> lets you check it yourself with <code>KV.verifyPhotoSignature(receipt)</code>.</p>
@@ -91,9 +91,13 @@ signature = phone_key.sign(authenticatorData || SHA-256(clientDataJSON))   // cl
         <li><a href="/satellite/">Satellite watch</a></li>
         <li><a href="/registers/">Official registers</a></li>
         <li><a href="/docs/api#open">Open data API</a></li>
+        <li><a href="/sql/">SQL in your browser</a></li>
+        <li><a href="/tools/">Buyer tools</a></li>
+        <li><a href="/ask/">Ask Kolaboro</a></li>
         <li><a href="/extension/">Chrome extension</a></li>
       </ul></div>
       <div><h4>Trust</h4><ul>
+        <li><a href="/trust/">Trust center</a></li>
         <li><a href="/how-we-score">How we score</a></li>
         <li><a href="/standard/">Disclosure standard</a></li>
         <li><a href="/corrections">Corrections</a></li>

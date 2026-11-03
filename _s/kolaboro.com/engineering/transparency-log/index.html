@@ -47,7 +47,7 @@
 <section class="sec"><div class="wrap eg-p">
 <h2>What one day fixes</h2>
 <p>Every morning one line, the <i>head</i>, is computed from: the SHA-256 of the open dataset, the Merkle root of every project page fingerprint, the hash of all accepted site evidence, the head of the admin audit trail, and the previous day's head. Change anything in the past and every later head changes. The rule is short enough to recompute by hand:</p>
-<div class="eg-code">head = SHA-256("kolaboro-log-v1|" + day + "|" + dataset_sha256 + "|" + projects_root + "|"
+<div class="eg-code" tabindex="0">head = SHA-256("kolaboro-log-v1|" + day + "|" + dataset_sha256 + "|" + projects_root + "|"
                 + projects_count + "|" + evidence_root + "|" + evidence_items + "|"
                 + audit_head + "|" + audit_count + "|" + previous_head_or_"genesis")</div>
 <h2>A tree, not just a chain</h2>
@@ -99,9 +99,13 @@
         <li><a href="/satellite/">Satellite watch</a></li>
         <li><a href="/registers/">Official registers</a></li>
         <li><a href="/docs/api#open">Open data API</a></li>
+        <li><a href="/sql/">SQL in your browser</a></li>
+        <li><a href="/tools/">Buyer tools</a></li>
+        <li><a href="/ask/">Ask Kolaboro</a></li>
         <li><a href="/extension/">Chrome extension</a></li>
       </ul></div>
       <div><h4>Trust</h4><ul>
+        <li><a href="/trust/">Trust center</a></li>
         <li><a href="/how-we-score">How we score</a></li>
         <li><a href="/standard/">Disclosure standard</a></li>
         <li><a href="/corrections">Corrections</a></li>

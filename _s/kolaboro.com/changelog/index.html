@@ -70,6 +70,46 @@
 <li>New <a href="/engineering">Engineering</a> section explaining how Kolaboro is built and checked, with live numbers.</li>
 <li>Fixed 7 colour-contrast problems found by the daily accessibility check.</li>
 <li>The desk review now says clearly when a link is not a property project (for example a news site) instead of scoring it.</li>
+</ul><p class="cl-grp" style="margin:18px 0 6px"><b>Afternoon: 39 more</b> <span class="muted" style="font-size:.88rem">"Built, opens after setup" means the code is live but waits for a key, an account or a database step from us.</span></p><ul>
+<li>The home page now shows real activity on the site as it happens.</li>
+<li>Links open almost instantly: the next page is fetched ahead, and the median time from click to first paint fell from 1,701 ms to 492 ms.</li>
+<li>Press Ctrl+K to search all 891 projects in your browser, even offline, in 0.4 to 10.7 ms.</li>
+<li>Signed data is checked in your browser, with a visible badge that shows the result.</li>
+<li><a href="/check">Check a project</a> now shows each real server step live with its measured time, and the signed result can be checked in your browser.</li>
+<li>Every claim the AI makes now carries an exact quote from the page, and claims without one are removed. Evaluation: 18 of 18 cases and 108 of 108 checks; 124 quotes checked, 1 removed.</li>
+<li>Try to fool our AI: paste text a developer could hide on a page and see whether the verdict changes. Our own first attempt found a bypass with nested hidden text; it is fixed and added to the evaluation. <a href="/check/red-team/">Try it</a></li>
+<li>PDF check: see every save inside a contract or reservation PDF, what each save changed and whether the signatures still cover the file. Your file is not uploaded. <a href="/tools/pdf-check/">PDF check</a></li>
+<li>Image check: your browser compares a render or photo with 7,963 images of 794 tracked projects. The image never leaves your device. <a href="/tools/image-check/">Image check</a></li>
+<li>Payment account check: IBAN, CLABE, ABA and SWIFT numbers are checked in your browser, with a warning when the money would leave the developer's country. <a href="/tools/iban-check/">Account check</a></li>
+<li>All free buyer tools on one page. <a href="/tools/">Buyer tools</a></li>
+<li>Project pages show the real age of the developer's website (domain records via RDAP and certificate logs) next to the founding year it claims. 16 projects have a website at least 3 years younger than the history they claim.</li>
+<li>Promise drift: we keep daily copies of what developers' pages promise and show what changed, day by day. 821 projects have copies, 120 of them changed, 297 changes in total, over 6 days of history so far.</li>
+<li>"What would change this score": each project page recomputes the Trust Score in your browser and shows which facts would move it. It matches the published score for 891 of 891 projects.</li>
+<li>SQL in your browser: every project and market as two signed Parquet files rebuilt daily, queried with DuckDB on your device, with a one-click check that the file is the one we signed. <a href="/sql/">Open it</a></li>
+<li>Public MCP server at kolaboro.com/mcp: Claude or any AI agent can read every tracked project and market, and every answer is signed. <a href="/docs/mcp/">How to connect</a></li>
+<li>Real-user page speed (web vitals): built, opens after setup (a database step).</li>
+<li>A chaos drill runs every week in production: AI readers down, dead pages and slow pages, and the site must cope. First run: 8 of 8. <a href="/status/">Status</a></li>
+<li>Every hour a real browser walks the buyer journey and keeps screenshots.</li>
+<li>Nightly accessibility check on 116 pages: pages with serious issues went from 22 to 5.</li>
+<li>A strict content security policy (a new random code per page load decides which scripts may run) is on trial in report-only mode: it reports what it would block and blocks nothing yet.</li>
+<li>Advertised prices against 100,130 registered sales from the Dubai Land Department, HM Land Registry and the Irish Property Price Register. Median advertised starting price above the registered median: Dubai +31%, London +11%. <a href="/prices/">Prices</a></li>
+<li>Risk patterns: an explainable model over 891 projects shows which look unusual on public warning signs compared with their peers, and exactly why. It does not predict fraud. <a href="/risk/">Risk patterns</a></li>
+<li>Every official register tested to see if a machine can check it, with live archived lookups on Companies House and the Australian Business Register. 16 UK projects checked: in one (MAN-005) a named company is dissolved. <a href="/registers/checks/">Register checks</a></li>
+<li>Developers can answer findings: prove the domain with a DNS TXT record, attach documents that are fingerprinted without leaving their computer, and a person reviews the reply before it is published. Storing replies: built, opens after setup. <a href="/developers/reply/">Right of reply</a></li>
+<li>Encrypted deal room: notes, checklist and files are encrypted in your browser, each entry is signed by its author and chained to the one before. The server side: built, opens after setup. <a href="/room/">Deal room</a></li>
+<li>The browser extension shows Kolaboro's record on 26 property portals (190 tracked projects can be matched by address, 771 by name). The page address never leaves your browser. <a href="/extension/">Extension</a></li>
+<li>Forward a developer's message, brochure or link to our Telegram bot and get the desk review back: built, opens after setup (the bot). <a href="/forward/">How it works</a></li>
+<li>Push alerts when a watched project's record changes: built, opens after setup (a push key and a database step). <a href="/alerts/">Alerts</a></li>
+<li>Official TypeScript and Python SDKs that check our signature on every answer, installable from kolaboro.com with published hashes. <a href="/docs/sdk/">SDKs</a></li>
+<li>Self-serve API keys with a daily quota and a usage panel (the key is shown once, only its hash is stored): built, opens after setup (a database step). The open API still needs no key. <a href="/api-keys/">API keys</a></li>
+<li>Ask Kolaboro: answers come only from our own pages and data, and every sentence quotes its source and is checked. 10 of 10 tests passed. <a href="/ask/">Ask a question</a></li>
+<li>Trust center: 13 controls checked live, today 12 pass and 1 warns (the ZAP scan). Mapped to SOC 2 criteria, not audited. <a href="/trust/">Trust center</a></li>
+<li>Investor dossier: only measured numbers, each with its source and time. No projections. <a href="/investors/dossier/">Dossier</a></li>
+<li>Safe deploys: every push is smoke-tested in a real browser (32 checks) and rolled back automatically if it fails.</li>
+<li>State of Off-Plan, live: every chart is computed in your browser from the Parquet file, with the code and SQL under each chart and a signed fingerprint. <a href="/report/state-of-off-plan-2026/live/">Live report</a></li>
+<li>Property tests: 54,000 generated cases per run check the scoring code, and they caught 8 of 8 bugs we planted on purpose.</li>
+<li>Fixed, found by the property tests: Transparency Index scores computed in JavaScript and in Python differed by 0.1 on 6 of 94 markets because of rounding. Now one rounding rule: 94 of 94 agree.</li>
+<li>Fixed, found by the property tests: the Parquet file's progress column did not count a published 0% as public. It does now.</li>
 </ul></div></li>
 <li><span class="dot d-ok"></span><div><b>2 Nov 2026</b><ul>
 <li>Home page redesign: a live strip shows today's automatic self-test and the public log, the product video plays on the page, all six free tools in one grid, pricing cards aligned, and a clear "what happens next" before you write to us.</li>
@@ -137,9 +177,13 @@
         <li><a href="/satellite/">Satellite watch</a></li>
         <li><a href="/registers/">Official registers</a></li>
         <li><a href="/docs/api#open">Open data API</a></li>
+        <li><a href="/sql/">SQL in your browser</a></li>
+        <li><a href="/tools/">Buyer tools</a></li>
+        <li><a href="/ask/">Ask Kolaboro</a></li>
         <li><a href="/extension/">Chrome extension</a></li>
       </ul></div>
       <div><h4>Trust</h4><ul>
+        <li><a href="/trust/">Trust center</a></li>
         <li><a href="/how-we-score">How we score</a></li>
         <li><a href="/standard/">Disclosure standard</a></li>
         <li><a href="/corrections">Corrections</a></li>

@@ -43,6 +43,7 @@
 </header>
 <main id="main">
 <section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / Open data and API</p><h1>Open data and public API</h1><p class="lead">What we publish so anyone, including other AI agents, can check our work. Aggregates only: we never publish data about a named project before it has been verified.</p></div></section><section class="sec"><div class="wrap prose">
+<p>Official TypeScript and Python clients that check our signature on every answer: <a href="/docs/sdk/">SDKs</a>. Optional API keys with a daily quota and a usage panel: <a href="/api-keys/">API keys</a>. The API itself needs no key.</p>
 <h2 id="open">Project database API, no key needed</h2>
 <p>Every anonymous project in the <a href="/database">database</a>, its six checks, the verification level of each, claims tested and the transparency index per market. Free to use under CC BY 4.0: credit Kolaboro with a link. Cached for 10 minutes at the edge.</p>
 <ul>
@@ -57,7 +58,7 @@
 <li><code><a href="/feed/alerts.xml">/feed/alerts.xml</a></code>: projects overdue by 6+ months, stalled from space, or missing an official approval</li>
 <li><code>GET /api/open/badge/{id}.svg</code>: a live badge for listings and portals, e.g. <img src="/api/open/badge/DXB-001.svg" alt="Kolaboro badge example" height="22" style="vertical-align:middle"></li>
 </ul>
-<pre style="white-space:pre-wrap;word-break:break-all;overflow-x:auto"><code>curl "https://kolaboro.com/api/open/projects?stage=under%20construction&amp;min_public=5&amp;limit=3"</code></pre>
+<pre tabindex="0" style="white-space:pre-wrap;word-break:break-all;overflow-x:auto"><code>curl "https://kolaboro.com/api/open/projects?stage=under%20construction&amp;min_public=5&amp;limit=3"</code></pre>
 <h2 id="agents">For AI agents and SQL</h2><ul><li><b><a href="/docs/mcp/">MCP server</a></b> at <code>https://kolaboro.com/mcp</code>: the same data as tools for Claude and other AI agents (search projects, one project, market statistics, the public log, signature check). No key; every answer signed.</li><li><b><a href="/sql/">SQL in your browser</a></b>: the whole database as two Parquet files rebuilt daily (<a href="/data/kolaboro.parquet">kolaboro.parquet</a>, <a href="/data/kolaboro-markets.parquet">kolaboro-markets.parquet</a>), queried with DuckDB in the page. Their SHA-256 is re-checked and signed by our server at <code><a href="/api/x/e/parquet-manifest">/api/x/e/parquet-manifest</a></code>.</li></ul>
 <h2>Verify evidence</h2><p>Look up the timestamp of any SHA-256 fingerprint from a Kolaboro report. Returns the OpenTimestamps proof (base64) and, once confirmed, the Bitcoin block height.</p>
 <div class="api-b">GET https://kolaboro.com/api/kb/stamp?hash=&lt;sha256&gt;
@@ -109,9 +110,13 @@ GET https://kolaboro.com/api/kb/health</div>
         <li><a href="/satellite/">Satellite watch</a></li>
         <li><a href="/registers/">Official registers</a></li>
         <li><a href="/docs/api#open">Open data API</a></li>
+        <li><a href="/sql/">SQL in your browser</a></li>
+        <li><a href="/tools/">Buyer tools</a></li>
+        <li><a href="/ask/">Ask Kolaboro</a></li>
         <li><a href="/extension/">Chrome extension</a></li>
       </ul></div>
       <div><h4>Trust</h4><ul>
+        <li><a href="/trust/">Trust center</a></li>
         <li><a href="/how-we-score">How we score</a></li>
         <li><a href="/standard/">Disclosure standard</a></li>
         <li><a href="/corrections">Corrections</a></li>
