@@ -13,7 +13,14 @@ import * as j from './kbx_j.js'; // reach: extension on portals, Telegram forwar
 import * as k from './kbx_k.js'; // platform: SDKs, API keys and metering, Ask Kolaboro
 import * as l from './kbx_l.js'; // trust: trust center, investor dossier, safe deploys
 import * as m from './kbx_m.js'; // open: open-source verifiers, property tests, live report
-const MODS = [a, b, c, d, e, f, g, h, i, j, k, l, m];
+import * as n from './kbx_n.js'; // provenance: number lineage, page integrity, reproducible builds
+import * as o from './kbx_o.js'; // community trust: log witnesses, AI benchmark, bounty, SLOs
+import * as p from './kbx_p.js'; // land: natural hazards, zoning
+import * as q from './kbx_q.js'; // people: company graph, court records, mystery shopper
+import * as r from './kbx_r.js'; // change: visual diffs, image authenticity, price index
+import * as s from './kbx_s.js'; // private AI: in-browser contract reader, legal citations, permit QR
+import * as t from './kbx_t.js'; // network: signed buyer reports, offline visit app, webhooks, Lighthouse CI
+const MODS = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t];
 export async function route(req, u, env, ctx) {
   for (const m of MODS) if (m.PATHS && m.PATHS.test(u.pathname)) return m.handle(req, u, env, ctx);
   return new Response(JSON.stringify({ error: 'not found' }), { status: 404, headers: { 'content-type': 'application/json' } });

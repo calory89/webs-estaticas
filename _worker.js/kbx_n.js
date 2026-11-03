@@ -1,0 +1,5 @@
+// Feature module n for kolaboro.com (see kbx.js). Helpers: import { json, rpc, ... } from './kolaboro.js'.
+export const PATHS = /^\/api\/x\/n\//;
+export async function handle(req, u, env, ctx) {
+  return new Response(JSON.stringify({ error: 'not found' }), { status: 404, headers: { 'content-type': 'application/json' } });
+}
