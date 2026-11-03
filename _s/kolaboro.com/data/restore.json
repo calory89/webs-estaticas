@@ -1,0 +1,87 @@
+{
+ "date": "2026-11-02",
+ "drill_at": "2026-11-03T09:12:58Z",
+ "backup_file": "2026-11-02.json.gz",
+ "backup_sha256": "b2e5823a4c0f4572e126292c896dfbb323adde418523406fdba4ed945cd5b4be",
+ "backup_age_days": 1,
+ "postgres": "16.15 (Debian 16.15-1.pgdg13+2)",
+ "tables": [
+  {
+   "name": "cases",
+   "rows": 1,
+   "ok": true
+  },
+  {
+   "name": "tasks",
+   "rows": 0,
+   "ok": true
+  },
+  {
+   "name": "users",
+   "rows": 1,
+   "ok": true
+  },
+  {
+   "name": "watch",
+   "rows": 0,
+   "ok": true
+  },
+  {
+   "name": "agents",
+   "rows": 0,
+   "ok": true
+  },
+  {
+   "name": "stamps",
+   "rows": 23,
+   "ok": true
+  },
+  {
+   "name": "history",
+   "rows": 3832,
+   "ok": true
+  },
+  {
+   "name": "case_log",
+   "rows": 6,
+   "ok": true
+  },
+  {
+   "name": "evidence",
+   "rows": 7,
+   "ok": true
+  },
+  {
+   "name": "messages",
+   "rows": 6,
+   "ok": true
+  },
+  {
+   "name": "payments",
+   "rows": 0,
+   "ok": true
+  },
+  {
+   "name": "events_30d",
+   "rows": 56,
+   "ok": true
+  },
+  {
+   "name": "files_index",
+   "rows": 5,
+   "ok": true
+  },
+  {
+   "name": "applications",
+   "rows": 23,
+   "ok": true
+  }
+ ],
+ "rows_total": 3960,
+ "evidence_files_checked": 5,
+ "evidence_missing": 0,
+ "evidence_bad_hash": 0,
+ "evidence_ok": true,
+ "ok": true,
+ "duration_s": 1.82
+}
