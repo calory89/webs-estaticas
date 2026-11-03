@@ -25,6 +25,8 @@ jobs:
           ref: main
           sparse-checkout: tools/kolaboro-reliability
       - name: Drill
-        run: python3 tools/kolaboro-reliability/chaos.py "$RUNNER_TEMP/c"
+        run: |
+          python3 tools/kolaboro-reliability/chaos.py "$RUNNER_TEMP/c"
       - name: Publish to kolaboro.com
-        run: bash tools/kolaboro-reliability/publish.sh "kolaboro.com: chaos drill $(date -u +%F)" "$RUNNER_TEMP/c/chaos.json=_s/kolaboro.com/data/chaos.json"
+        run: |
+          bash tools/kolaboro-reliability/publish.sh "kolaboro.com: chaos drill $(date -u +%F)" "$RUNNER_TEMP/c/chaos.json=_s/kolaboro.com/data/chaos.json"

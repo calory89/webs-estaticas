@@ -27,4 +27,5 @@ jobs:
           (cd "$RUNNER_TEMP" && npm i -s --no-save --no-package-lock playwright-core@1.64.1 axe-core@4.14.0 >/dev/null)
           NODE_PATH="$RUNNER_TEMP/node_modules" node tools/kolaboro-reliability/a11y.js "$RUNNER_TEMP/a"
       - name: Publish to kolaboro.com
-        run: bash tools/kolaboro-reliability/publish.sh "kolaboro.com: accessibility audit $(date -u +%F)" "$RUNNER_TEMP/a/a11y.json=_s/kolaboro.com/data/a11y.json"
+        run: |
+          bash tools/kolaboro-reliability/publish.sh "kolaboro.com: accessibility audit $(date -u +%F)" "$RUNNER_TEMP/a/a11y.json=_s/kolaboro.com/data/a11y.json"
