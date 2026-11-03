@@ -262,3 +262,56 @@
   function draw(){ if (done) return; var sec = document.getElementById('t-ops'); if (!sec || !A.pw()) return; done = true; box = document.createElement('div'); box.className = 'card'; box.style.marginBottom = '16px'; sec.insertBefore(box, sec.firstChild); paint(); }
   document.addEventListener('kbadm', draw); if (A.D) draw();
 })();
+
+/* Buyer reports moderation (block T, 4 Nov 2026): passkey-signed reports from /buyer-reports/. Nothing is public until approved here.
+   The buyer uploads nothing: we hold only the SHA-256 of their contract or receipt. If they email the document, drop it on the row:
+   a match ticks "document seen". Edit the public text to remove anything that could identify the buyer. Needs kolaboro_t_report_admin
+   (scratchpad m11/t.sql). */
+(function(){
+  var A = window.KBADM; if (!A) return;
+  function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; }); }
+  function hex(b){ return Array.prototype.map.call(new Uint8Array(b), function(x){ return ('0' + x.toString(16)).slice(-2); }).join(''); }
+  var box = null, done = false, F = 'new', L = [], T = 'Buyer reports';
+  var KIND = { delay: 'Delay', payment: 'Payment problem', quality: 'Build quality', good: 'Good experience', other: 'Something else' };
+  function act(a, p){ return A.rpc('kolaboro_t_report_admin', { p_key: A.pw(), p_action: a, p_payload: p || {} }); }
+  function paint(){
+    box.innerHTML = '<h3 style="margin:0">' + T + '</h3><p class="muted" style="margin:4px 0 0">Loading…</p>';
+    act('list').then(function(d){
+      if (!d || !d.items) { box.innerHTML = '<h3 style="margin:0">' + T + '</h3><p class="muted" style="margin:6px 0 0">Not switched on yet: apply scratchpad m11/t.sql (block T). Until then /buyer-reports/ shows "opens soon" and nothing is stored.</p>'; return; }
+      L = d.items; draw2();
+    }).catch(function(){ box.innerHTML = '<h3 style="margin:0">' + T + '</h3><p class="muted">Not switched on yet (m11/t.sql) or could not load.</p>'; });
+  }
+  function draw2(){
+    var n = { new: 0, approved: 0, rejected: 0 }; L.forEach(function(x){ n[x.status]++; });
+    var R = L.filter(function(x){ return !F || x.status === F; });
+    box.innerHTML = '<div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center"><h3 style="margin:0">' + T + '</h3><div class="ops-f">' +
+      ['new', 'approved', 'rejected', ''].map(function(s){ return '<button class="btn-s" data-f="' + s + '"' + (F === s ? ' style="background:#17212B;color:#fff"' : '') + '>' + (s || 'all') + (s ? ' (' + n[s] + ')' : '') + '</button>'; }).join('') + '</div></div>' +
+      '<p class="muted" style="margin:6px 0 10px">Signature already checked by the server. Before approving: the text is factual and names no private person; edit the public text to remove anything that identifies the buyer. If the buyer emailed the document, drop it on the row: a matching fingerprint marks it "document seen". The document fingerprint is never published.</p>' +
+      (R.length ? R.map(function(x){
+        return '<div style="border:1px solid var(--line);border-radius:12px;padding:12px;margin-top:10px" data-id="' + x.id + '"><b>#' + x.id + ' <a href="/p/' + esc(x.project_id) + '" target="_blank">' + esc(x.project_id) + '</a></b> <span class="pill">' + esc(x.status) + '</span> <span class="pill">' + esc(KIND[x.kind] || x.kind) + '</span> <small class="muted">' + esc(new Date(x.created_at).toLocaleString()) +
+          (x.delay_months != null ? ' &middot; ' + x.delay_months + ' months late' : '') + (x.purchased ? ' &middot; bought ' + esc(x.purchased) : '') + ' &middot; passkey ' + esc(String(x.key_hash).slice(0, 12)) + ' (alg ' + x.key_alg + ')</small>' +
+          '<pre style="white-space:pre-wrap;font:inherit;background:#F6F6F3;border-radius:10px;padding:10px;margin:8px 0">' + esc(x.body) + '</pre>' +
+          '<div style="font-size:.85rem">' + esc(x.doc_kind) + ' fingerprint <code style="font-size:.72rem;word-break:break-all">' + esc(x.doc_sha256) + '</code> <label class="btn-s">Check emailed file<input type="file" hidden data-sha="' + esc(x.doc_sha256) + '"></label> <span data-shaout></span>' +
+          ' <label style="white-space:nowrap"><input type="checkbox" data-doc' + (x.doc_checked ? ' checked' : '') + '> document seen and matched</label></div>' +
+          '<textarea data-pub rows="3" maxlength="2000" style="width:100%;margin-top:8px;padding:7px;border:1px solid var(--line);border-radius:8px;font:inherit" placeholder="Public text (leave empty to publish the text as sent)">' + esc(x.public_text || '') + '</textarea>' +
+          '<div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:8px;align-items:center"><input data-note placeholder="Moderator note shown with the report (optional)" maxlength="600" value="' + esc(x.public_note || '') + '" style="flex:1;min-width:200px;padding:7px;border:1px solid var(--line);border-radius:8px;font:inherit">' +
+          (x.status !== 'approved' ? '<button class="btn-s" data-act="approve">Approve and publish</button>' : '') + (x.status !== 'rejected' ? '<button class="btn-s" data-act="reject">Reject</button>' : '') + (x.status !== 'new' ? '<button class="btn-s" data-act="reopen">Reopen</button>' : '') + '</div></div>';
+      }).join('') : '<p class="muted">Nothing here.</p>');
+    box.querySelectorAll('[data-f]').forEach(function(b){ b.onclick = function(){ F = b.dataset.f; draw2(); }; });
+    box.querySelectorAll('[data-sha]').forEach(function(inp){ inp.onchange = function(){
+      var f = inp.files[0], row = inp.closest('[data-id]'), o = row.querySelector('[data-shaout]'); if (!f) return; o.textContent = 'hashing…';
+      f.arrayBuffer().then(function(b){ return crypto.subtle.digest('SHA-256', b); }).then(function(h){
+        var same = hex(h) === inp.dataset.sha; o.innerHTML = same ? '<b style="color:#0B7A55">same file</b>' : '<b style="color:#B83A05">different file</b>';
+        if (same) row.querySelector('[data-doc]').checked = true;
+      });
+    }; });
+    box.querySelectorAll('[data-act]').forEach(function(b){ b.onclick = function(){
+      var row = b.closest('[data-id]'), a = b.dataset.act;
+      if (a === 'approve' && !confirm('Publish report #' + row.dataset.id + ' anonymously? Check the public text names no one.')) return;
+      b.disabled = true;
+      act(a, { id: +row.dataset.id, note: row.querySelector('[data-note]').value, public_text: row.querySelector('[data-pub]').value, doc_checked: row.querySelector('[data-doc]').checked }).then(paint);
+    }; });
+  }
+  function draw(){ if (done) return; var sec = document.getElementById('t-ops'); if (!sec || !A.pw()) return; done = true; box = document.createElement('div'); box.className = 'card'; box.style.marginBottom = '16px'; sec.insertBefore(box, sec.firstChild); paint(); }
+  document.addEventListener('kbadm', draw); if (A.D) draw();
+})();
