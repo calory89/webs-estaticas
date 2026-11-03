@@ -29,7 +29,7 @@
     $('tc-list').innerHTML = '<ul class="tc-raw"><li><a href="/data/restore.json">/data/restore.json</a></li><li><a href="/api/open/uptime">/api/open/uptime</a></li><li><a href="/api/open/evals">/api/open/evals</a></li><li><a href="/api/open/security">/api/open/security</a></li><li><a href="/data/verifiers.json">/data/verifiers.json</a></li><li><a href="/api/open/checkpoint">/api/open/checkpoint</a></li><li><a href="/data/deploys.json">/data/deploys.json</a></li></ul>';
   });
 
-  fetch('/data/deploys.json', { cache: 'no-store' }).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (d) {
+  fetch('/data/deploys.json?m=' + Math.floor(Date.now() / 60000), { cache: 'no-store' }).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (d) {
     var rows = (d.deploys || []).slice(0, 12), dr = (d.drills || []).slice(0, 5);
     var R = { pass: 'Passed', rolled_back: 'Rolled back', failed: 'Failed, not rolled back', rollback_failed: 'Rollback did not fix it', not_deployed: 'Never went live' };
     $('dp-body').innerHTML = rows.length ? rows.map(function (x) {
