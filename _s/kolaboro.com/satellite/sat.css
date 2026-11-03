@@ -117,3 +117,9 @@
   .st-frame .st-base,.st-frame .st-ov,.st-card{transition:none}
 }
 #viewer,#areas{scroll-margin-top:84px}
+.st-radar{margin-top:14px;padding:12px 14px;border:1px solid var(--line);border-radius:14px;background:var(--paper);font-size:.88rem;color:var(--ink-2,var(--ink))}
+.st-radar p{margin:0;line-height:1.5}
+.st-rth{display:flex;gap:8px;overflow-x:auto;margin-top:10px;padding-bottom:4px}
+.st-rth figure{margin:0;flex:none;width:76px}
+.st-rth img{display:block;width:76px;height:76px;border-radius:8px;background:#111;image-rendering:auto}
+.st-rth figcaption{font-size:.72rem;color:var(--muted);margin-top:4px;line-height:1.3}

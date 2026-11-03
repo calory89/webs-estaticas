@@ -15,6 +15,9 @@
   // Last period that carries a "cleared since first" figure.
   function latestCleared(s){ for (var i = s.periods.length - 1; i >= 0; i--) if (hasChange(s.periods[i])) return s.periods[i]; return null; }
   function thumbPeriod(s){ return latestCleared(s) || s.periods[s.periods.length - 1]; }
+  function rimg(id, key){ return '/k/sat/' + encodeURIComponent(id) + '/' + encodeURIComponent(key) + '-radar.png'; }
+  function sdb(v){ return (v > 0 ? '+' : v < 0 ? '\u2212' : '') + Math.abs(v).toFixed(1) + ' dB'; }
+  function short(l){ return String(l || '').replace(/ dry season$/, ''); }
   function osm(s){ return 'https://www.openstreetmap.org/?mlat=' + s.lat + '&mlon=' + s.lng + '#map=16/' + s.lat + '/' + s.lng; }
 
   /* ---------- load ---------- */
@@ -111,7 +114,28 @@
     }).join('');
     // warm the cache so the timelapse does not stutter
     s.periods.forEach(function(p){ var a = new Image(); a.src = img(s.id, p.key); if (hasChange(p)) { var b = new Image(); b.src = ovImg(s.id, p.key); } });
+    radar(s);
     show();
+  }
+
+  /* ---------- radar (Sentinel-1) ---------- */
+  function radar(s){
+    var box = $('stradar'); if (!box) return;
+    var r = s.radar, rp = r && Array.isArray(r.periods) ? r.periods.filter(function(p){ return p && num(p.vv_db); }) : [];
+    if (!rp.length) { box.hidden = true; box.innerHTML = ''; return; }
+    var t;
+    if (num(r.radar_change_db) && rp.length >= 2) {
+      var a = rp[0], z = rp[rp.length - 1], n = (a.acquisitions || 0) + (z.acquisitions || 0);
+      t = 'Radar (Sentinel-1, sees through clouds): backscatter <b>' + sdb(r.radar_change_db) + '</b> since ' + esc(short(a.label)) + ' from ' + n + ' acquisitions (' + a.acquisitions + ' in ' + esc(short(a.label)) + ', ' + z.acquisitions + ' in ' + esc(z.key === 'latest' ? 'the last 120 days' : short(z.label)) + ').';
+      if (num(r.plot_radar_change_db)) t += ' At the plot: ' + sdb(r.plot_radar_change_db) + '.';
+    } else {
+      t = 'Radar (Sentinel-1, sees through clouds): ' + rp.length + ' period with data so far, no change figure yet.';
+    }
+    var th = rp.filter(function(p){ return p.image; }).map(function(p){
+      return '<figure><img src="' + rimg(s.id, p.key) + '" alt="Sentinel-1 radar, ' + esc(s.label + ', ' + p.label) + '" loading="lazy" width="112" height="112" onerror="this.parentNode.remove()"><figcaption>' + esc(p.key === 'latest' ? 'Latest' : short(p.label)) + '<br>' + p.vv_db.toFixed(1) + ' dB &middot; ' + p.acquisitions + ' acq.</figcaption></figure>';
+    }).join('');
+    box.innerHTML = '<p>' + t + ' Built structures usually raise radar backscatter; wet ground and crops also move it, so read it next to the images.</p>' + (th ? '<div class="st-rth">' + th + '</div>' : '');
+    box.hidden = false;
   }
 
   function show(){
