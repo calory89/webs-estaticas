@@ -1,0 +1,40 @@
+name: Kolaboro outside probe
+# Hourly: a second vantage point for uptime (GitHub's runners, outside Cloudflare and outside our database host).
+# Results go to the worker with GitHub's OIDC token as proof of origin (no stored secret); they appear on kolaboro.com/status.
+on:
+  schedule:
+    - cron: '13 * * * *'
+  push:
+    branches: [main]
+    paths: ['.github/workflows/kolaboro-probe.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+  id-token: write
+concurrency:
+  group: kolaboro-probe
+  cancel-in-progress: false
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Probe and report
+        run: |
+          python3 - <<'PY'
+          import json, time, urllib.request, datetime, os
+          def probe(u):
+              t = time.time()
+              try:
+                  r = urllib.request.urlopen(urllib.request.Request(u, headers={'user-agent': 'kolaboro-probe/1.0 (github actions)'}), timeout=15); s = r.status; r.read()
+              except urllib.error.HTTPError as e: s = e.code
+              except Exception: s = 0
+              return {'status': s, 'ms': int((time.time() - t) * 1000), 'ok': 200 <= s < 400}
+          now = datetime.datetime.utcnow().isoformat(timespec='seconds') + 'Z'; items = []
+          for name, u in (('home', 'https://kolaboro.com/?probe=gh'), ('api', 'https://kolaboro.com/api/kb/health')):
+              p = probe(u); p.update({'at': now, 'target': name}); items.append(p)
+          print(json.dumps(items))
+          tok = json.load(urllib.request.urlopen(urllib.request.Request(os.environ['ACTIONS_ID_TOKEN_REQUEST_URL'] + '&audience=kolaboro.com', headers={'Authorization': 'Bearer ' + os.environ['ACTIONS_ID_TOKEN_REQUEST_TOKEN']}), timeout=15))['value']
+          r = urllib.request.urlopen(urllib.request.Request('https://kolaboro.com/api/kb/probe', json.dumps({'items': items}).encode(), {'content-type': 'application/json', 'authorization': 'Bearer ' + tok, 'user-agent': 'kolaboro-probe/1.0'}), timeout=20)
+          print(r.status, r.read().decode()[:200])
+          PY

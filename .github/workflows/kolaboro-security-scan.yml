@@ -1,0 +1,63 @@
+name: Kolaboro security scan
+# Weekly: OWASP ZAP baseline scan (passive, no attacks) of kolaboro.com. A summary by risk level is published to
+# kolaboro.com/data/security-scan.json; the full report stays in the run's artifacts.
+on:
+  schedule:
+    - cron: '29 4 * * 2'
+  push:
+    branches: [main]
+    paths: ['.github/workflows/kolaboro-security-scan.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-security-scan
+  cancel-in-progress: false
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: ZAP baseline
+        run: |
+          mkdir -p zap && chmod 777 zap
+          docker run --rm -v "$PWD/zap:/zap/wrk:rw" ghcr.io/zaproxy/zaproxy:stable zap-baseline.py -t https://kolaboro.com -m 3 -J report.json -r report.html -I || true
+          ls -la zap
+      - uses: actions/upload-artifact@v4
+        with: { name: zap-report, path: zap/ }
+      - name: Summarise
+        run: |
+          python3 - <<'PY'
+          import json, datetime, os
+          R = json.load(open('zap/report.json'))
+          alerts = [a for s in R.get('site', []) for a in s.get('alerts', [])]
+          names = {'3': 'high', '2': 'medium', '1': 'low', '0': 'informational'}
+          by = {v: 0 for v in names.values()}
+          items = []
+          for a in alerts:
+              r = names.get(str(a.get('riskcode')), 'informational'); by[r] += 1
+              items.append({'risk': r, 'name': a.get('name') or a.get('alert'), 'instances': len(a.get('instances', [])), 'cwe': a.get('cweid'), 'rule': a.get('pluginid')})
+          items.sort(key=lambda x: ['high', 'medium', 'low', 'informational'].index(x['risk']))
+          out = {'date': datetime.datetime.utcnow().isoformat(timespec='seconds') + 'Z', 'tool': 'OWASP ZAP baseline (passive scan, spider 3 minutes)', 'target': 'https://kolaboro.com',
+                 'zap_version': R.get('@version'), 'by_risk': by, 'ok': by['high'] == 0, 'alerts': items}
+          json.dump(out, open(os.environ['RUNNER_TEMP'] + '/security-scan.json', 'w'), indent=1); print(json.dumps(out, indent=1))
+          PY
+      - name: Publish to kolaboro.com
+        run: |
+          set -e
+          git init -q pub && cd pub
+          git remote add origin "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}"
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          for i in 1 2 3 4 5; do
+            P=$(git rev-parse FETCH_HEAD)
+            export GIT_INDEX_FILE=$RUNNER_TEMP/idx; rm -f $GIT_INDEX_FILE; git read-tree $P
+            H=$(git hash-object -w "$RUNNER_TEMP/security-scan.json")
+            git update-index --add --cacheinfo 100644,$H,_s/kolaboro.com/data/security-scan.json
+            T=$(git write-tree); unset GIT_INDEX_FILE
+            [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
+            C=$(git commit-tree $T -p $P -m "kolaboro.com: security scan $(date -u +%F)")
+            git push -q origin $C:refs/heads/pub/_lovable && exit 0
+            sleep 5; git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          done
+          exit 1
