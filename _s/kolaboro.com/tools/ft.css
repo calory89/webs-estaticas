@@ -81,3 +81,5 @@ details.ft-more[open] summary{margin-bottom:10px}
 .ft-m a{font-weight:700;text-decoration-color:var(--hivis);text-decoration-thickness:2px;text-underline-offset:4px}
 .ft-bar{height:10px;border-radius:5px;background:#E7EAED;overflow:hidden;margin-top:6px}
 .ft-bar i{display:block;height:100%;background:var(--ink)}
+/* site.css hides any .ok element (form success box); keep tool cards and tags with class ok visible */
+.ft-f.ok{display:block}.ft-tag.ok{display:inline;border:0}

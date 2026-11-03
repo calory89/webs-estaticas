@@ -1,0 +1,65 @@
+/* contract check, law notes, permit QR check (block S). Builds on /tools/ft.css */
+.cc-row{display:flex;flex-wrap:wrap;gap:12px;align-items:end;margin-top:16px}
+.cc-row .ft-in{flex:1 1 240px;max-width:460px}
+.cc-gpu{font-size:.9rem;color:var(--muted);margin-top:10px}
+details.cc-paste{margin-top:14px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 16px}
+details.cc-paste summary{cursor:pointer;font-weight:800;min-height:32px;display:flex;align-items:center}
+details.cc-paste textarea{width:100%;min-height:200px;margin-top:10px;font:inherit;font-size:.95rem;padding:10px 12px;border:2px solid #B9B7AF;border-radius:12px;box-sizing:border-box}
+.cc-ai{margin-top:26px;background:var(--ink);color:var(--paper);border-radius:20px;padding:20px clamp(16px,3vw,26px)}
+.cc-ai[hidden]{display:none}
+.cc-ai h3{font-size:1.2rem;font-stretch:112%}
+.cc-ai p{color:#D5DBE0;font-size:.95rem;margin-top:8px;max-width:72ch}
+.cc-opts{display:grid;gap:10px;margin-top:14px}
+.cc-opt{display:flex;gap:10px;align-items:flex-start;background:rgba(255,255,255,.07);border-radius:12px;padding:10px 12px;cursor:pointer;font-size:.95rem}
+.cc-opt input{margin-top:5px;accent-color:var(--hivis);width:18px;height:18px;flex:0 0 18px}
+.cc-opt small{color:#C2C9D0;font-size:.85rem}
+.cc-btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.cc-ai .btn-line{color:var(--paper);border-color:#8C97A1}
+.cc-prog{margin-top:14px}
+.cc-prog[hidden]{display:none}
+.cc-prog div{height:10px;background:rgba(255,255,255,.15);border-radius:99px;overflow:hidden}
+.cc-prog i{display:block;height:100%;width:0;background:var(--hivis);transition:width .3s}
+.cc-prog p{font-size:.88rem;overflow-wrap:anywhere}
+.cc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:16px}
+.cc-c{min-width:0}
+.cc-q{margin:10px 0 0;padding:10px 14px;border-left:4px solid var(--ink);background:var(--paper);border-radius:0 10px 10px 0;font-size:.95rem;line-height:1.5;overflow-wrap:anywhere}
+.cc-meta{font-size:.82rem!important;color:var(--muted)!important}
+.cc-sum{background:#FFF8E1;border-radius:10px;padding:8px 12px}
+.cc-drop{font-size:.88rem!important;color:var(--hivis-ink)!important}
+.cc-drop q{font-style:italic}
+details.cc-also,details.cc-laws{margin-top:12px;border-top:1px solid var(--line);padding-top:8px}
+details.cc-also summary,details.cc-laws summary{cursor:pointer;font-weight:800;font-size:.92rem;min-height:36px;display:flex;align-items:center}
+.cc-law{margin-top:10px;padding:12px 14px;background:#F3F6F8;border-radius:12px}
+.cc-law p{margin-top:4px}
+.cc-law blockquote{margin:8px 0 0;padding:8px 12px;border-left:3px solid #9AA3AB;font-size:.9rem;color:var(--ink-2);background:#fff;border-radius:0 8px 8px 0;overflow-wrap:anywhere}
+.cc-tr span,.cc-src span{color:var(--muted);font-size:.84rem}
+.cc-src{font-size:.88rem!important}
+.cc-src a{font-weight:700;color:var(--ink);text-decoration-color:var(--hivis);text-underline-offset:3px}
+.cc-net{font-size:.86rem;color:var(--muted);background:var(--ok-bg);border-radius:10px;padding:8px 12px;overflow-wrap:anywhere}
+.cc-net:empty{display:none}
+/* law page */
+.lw-filter{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.lw-filter button{font:inherit;font-size:.9rem;font-weight:700;min-height:44px;padding:6px 14px;border-radius:999px;border:2px solid #B9B7AF;background:#fff;color:var(--ink);cursor:pointer}
+.lw-filter button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.lw-list{display:grid;gap:16px;margin-top:22px}
+.lw-r{scroll-margin-top:90px}
+.lw-r:target{box-shadow:0 0 0 3px var(--hivis)}
+.lw-r blockquote{margin:10px 0 0;padding:10px 14px;border-left:4px solid var(--ink);background:var(--paper);border-radius:0 10px 10px 0;font-size:.95rem;overflow-wrap:anywhere}
+.lw-mk{font-size:.74rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+/* permit check */
+.pq-cam{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.pq-res{display:grid;gap:16px}
+.pq-url{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.95rem;background:var(--paper);border-radius:10px;padding:10px 12px;overflow-wrap:anywhere;margin-top:8px}
+.pq-url b{background:#FFE7DB;border-radius:4px;padding:0 3px}
+.pq-url.yes b{background:var(--ok-bg)}
+.pq-prev{display:block;max-width:100%;max-height:360px;border-radius:12px;border:1px solid var(--line);background:#fff}
+.pq-checks{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:6px}
+.pq-checks li{display:grid;grid-template-columns:22px minmax(0,1fr);gap:8px;font-size:.93rem;color:var(--ink-2)}
+.pq-checks li::before{content:"";width:12px;height:12px;border-radius:50%;margin-top:5px;background:#9AA3AB}
+.pq-checks li.yes::before{background:var(--ok)}
+.pq-checks li.bad::before{background:var(--hivis)}
+.pq-steps{margin:12px 0 0 20px;padding:0;display:grid;gap:8px}
+.pq-steps li{font-size:.95rem;color:var(--ink-2)}
+.pq-allow{margin-top:14px}
+.ft-f.good{border-left-color:var(--ok)}
+.ft-tag.yes{background:var(--ok-bg);color:#063F2C}
