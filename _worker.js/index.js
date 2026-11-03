@@ -89,7 +89,7 @@ const KB_CSP = "default-src 'self'; script-src 'nonce-{N}' 'strict-dynamic' 'was
   "img-src 'self' data: blob: https://oykcsmextclpdnugixqz.supabase.co https://server.arcgisonline.com https://*.tile.openstreetmap.org https://tile.openstreetmap.org https://*.google-analytics.com https://*.googletagmanager.com https://*.clarity.ms https://c.bing.com; " +
   "font-src 'self'; connect-src 'self' https://oykcsmextclpdnugixqz.supabase.co wss://oykcsmextclpdnugixqz.supabase.co https://mempool.space https://nominatim.openstreetmap.org https://cdn.jsdelivr.net https://earth-search.aws.element84.com https://*.amazonaws.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://*.clarity.ms https://c.bing.com https://cloudflareinsights.com; " +
   "frame-src 'self' https://www.paypal.com https://www.sandbox.paypal.com; worker-src 'self' blob:; manifest-src 'self'; media-src 'self' blob:; object-src 'none'; base-uri 'self'; " +
-  "form-action 'self' https://www.paypal.com https://oykcsmextclpdnugixqz.supabase.co; frame-ancestors {FA}; upgrade-insecure-requests; report-uri /api/kb/csp; report-to csp";
+  "form-action 'self' https://www.paypal.com https://oykcsmextclpdnugixqz.supabase.co; frame-ancestors {FA}; report-uri /api/kb/csp; report-to csp";
 // equinoxinvestmentgroup.com: browser security headers (no framing, no plugins, admin never indexed or cached) and long cache for fonts
 function eqHeaders(r, u, req) {
   const h = new Headers(r.headers);
