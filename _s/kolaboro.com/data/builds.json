@@ -1,0 +1,28 @@
+{
+ "version": "kolaboro-builds-1",
+ "about": "Deterministic bundle of the kolaboro.com worker (_worker.js/index.js and everything it imports) for each worker source tree that went live. Built twice in two clean folders; \"reproduced\" says whether both builds gave identical bytes.",
+ "how": {
+  "esbuild": "0.24.2",
+  "command": "esbuild _worker.js/index.js --bundle --format=esm --platform=neutral --external:node:* --log-level=error --legal-comments=none --charset=utf8 --outfile=out/worker.js",
+  "cwd": "repository root at first_commit",
+  "lookup": "For any commit X: git rev-parse X:_worker.js gives the worker_tree to look up here."
+ },
+ "limits": [
+  "The source repository is private, so today only people with access can rebuild and compare. Public reproducibility will live in the open verifiers repository (kolaboro-open), which is not public yet.",
+  "Cloudflare Pages bundles the worker itself when it deploys, with its own tool versions. This hash is of our pinned bundle of the same source, not of the bytes running at the edge, which Cloudflare does not let anyone download."
+ ],
+ "updated": "2026-11-03T22:50:30Z",
+ "builds": [
+  {
+   "worker_tree": "07e810aa85f83e232dc5e88b6fded866a7ffadc5",
+   "first_commit": "82a1a341092b3a04b933832eda7a06422d140ab2",
+   "commit_time": "2026-11-03T23:46:32+01:00",
+   "built_at": "2026-11-03T22:50:30Z",
+   "sha256": "fe41a86054167bfd15ba8723d791ac11a945bf01e74b74ef7ba67e47e08052bf",
+   "bytes": 24495378,
+   "reproduced": true,
+   "node": "v22.23.4",
+   "run_id": "41734091587"
+  }
+ ]
+}
