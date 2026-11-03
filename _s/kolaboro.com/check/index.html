@@ -43,7 +43,18 @@
   </div>
 </header>
 <main id="main">
-<style>.phero.tight{padding:clamp(24px,4vw,48px) 0 8px;border-bottom:0}.phero.tight h1{font-size:clamp(2.1rem,5vw,4.2rem)}.phero.tight .lead{margin-top:12px}#analyze.sec{padding-top:12px}@media(max-width:700px){#az-1>.lead,#az-1>h2{display:none}}.az-tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0 18px}@media print{.nav,.mcta,footer,.foot,.phero,.az-tools,.az-cp,#azreq,.sec.alt,script{display:none!important}body{background:#fff}#analyze.sec{padding:0}}</style>
+<style>.phero.tight{padding:clamp(24px,4vw,48px) 0 8px;border-bottom:0}.phero.tight h1{font-size:clamp(2.1rem,5vw,4.2rem)}.phero.tight .lead{margin-top:12px}#analyze.sec{padding-top:12px}@media(max-width:700px){#az-1>.lead,#az-1>h2{display:none}}.az-tools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:10px 0 18px}@media print{.nav,.mcta,footer,.foot,.phero,.az-tools,.az-cp,#azreq,.sec.alt,script{display:none!important}body{background:#fff}#analyze.sec{padding:0}}
+.lv-sub{margin:6px 0 0;font-size:.92rem}.lv{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:2px;max-width:640px;border:1px solid var(--line);border-radius:16px;background:#fff;overflow:hidden}
+.lv li{display:grid;grid-template-columns:22px 1fr auto;gap:10px;align-items:start;padding:10px 14px;border-top:1px solid var(--line);color:var(--muted)}.lv li:first-child{border-top:0}
+.lv li::before{content:"";width:16px;height:16px;margin-top:3px;border-radius:50%;border:2px solid #B8BEC4}.lv li.run{color:var(--ink)}.lv li.run::before{border-color:var(--hivis);border-top-color:transparent;animation:spin .8s linear infinite}
+.lv li.ok{color:var(--ink)}.lv li.ok::before{background:#2FB27E;border-color:#2FB27E}.lv li.bad::before{background:#D64545;border-color:#D64545}.lv li.skip::before{border-style:dashed}
+.lv b{display:block;font-weight:700}.lv small{display:block;font-size:.84rem;color:var(--muted);overflow-wrap:anywhere}.lv code{font:600 .84rem/1.4 ui-monospace,SFMono-Regular,Menlo,monospace;white-space:nowrap;color:var(--ink-2)}
+.lv li.tot{grid-template-columns:1fr auto;background:var(--paper)}.lv li.tot::before{display:none}.lv-foot{font-size:.8rem;margin-top:8px;max-width:640px}
+.kq{background:#FFF1B8;color:var(--ink);padding:.05em .25em;border-radius:4px;font-style:normal;box-decoration-break:clone;-webkit-box-decoration-break:clone}.kq::before{content:"\201C"}.kq::after{content:"\201D"}
+.az-facts .fq{display:block;text-transform:none;letter-spacing:0;color:var(--ink);margin-top:4px;font-size:.78rem;font-weight:500;line-height:1.35;overflow-wrap:anywhere}.az-facts .fq.no{color:var(--muted);font-style:italic}
+.cl li{margin-bottom:8px}.cl li span{display:block;font-size:.88rem;margin-top:2px;line-height:1.45;overflow-wrap:anywhere}.sq{margin:8px 0 0;font-size:.9rem;line-height:1.6;overflow-wrap:anywhere}
+.qline{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;background:var(--ok-bg);border-radius:12px;padding:10px 14px;margin-top:14px;font-size:.92rem}.qline b{color:var(--ok)}.qline details{flex-basis:100%}.qline summary{cursor:pointer;font-size:.86rem}.qline ul{margin:6px 0 0;font-size:.86rem}
+.sigl{font-size:.82rem;margin-top:6px;overflow-wrap:anywhere}.sigl button{font:inherit;text-decoration:underline;background:none;border:0;padding:0;color:inherit;cursor:pointer}</style>
 <section class="phero tight"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / Check a project</p><h1>Check a project before you pay a cent.</h1><p class="lead">Paste its website: in about a minute you see what the developer promises and what to verify. Free, no card, no email.</p></div></section>
 <section class="sec" id="analyze"><div class="wrap">
   <div class="az" id="az">
@@ -69,9 +80,9 @@
     <div class="az-step" id="az-3" aria-live="polite">
       <p class="az-k" id="az-first"></p>
       <h2>Analysing the project</h2>
-      <ol class="az-prog" id="az-prog">
-        <li>Reading the developer's website</li><li>Extracting what they promise</li><li>Checking title, lease and permit claims</li><li>Writing the questions you must ask</li>
-      </ol>
+      <p class="muted lv-sub">Each line below is a real step of the review, shown as it finishes on our server, with the time it took.</p>
+      <ol class="lv" id="az-prog"></ol>
+      <p class="muted lv-foot" id="az-lvf"></p>
     </div>
     <div class="az-step" id="az-4"></div>
   </div>
@@ -214,20 +225,71 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   var qs = new URLSearchParams(location.search); if (qs.get('url')) { $('az-url').value = qs.get('url'); step1(); } else if (qs.get('q')) { $('az-url').value = ''; $('az-url').placeholder = 'Website of ' + qs.get('q').slice(0, 40); $('az-e1').innerHTML = 'We read the developer\'s own website, so paste its address above. Only have the name? <a href="#start" onclick="document.getElementById(\'start\').hidden=false">Send it to us</a> and we find it for you.'; $('az-url').focus(); }
   function save(email, note){ if (!email) return; try { fetch(SB, { method: 'POST', headers: { apikey: KEY, Authorization: 'Bearer ' + KEY, 'Content-Type': 'application/json' },
     body: JSON.stringify({ p_name: 'Desk review request', p_email: email, p_country: '', p_phone: '', p_who: 'buyer | desk review', p_bring: note.slice(0, 4000), p_learn: url.slice(0, 300), p_week: '', p_lang: 'en', p_source: 'yc-desk | ' + location.pathname, p_plan: 'yc-desk' }) }); } catch (e) {} }
+  // live desk review: /api/x/b/review streams one event per real step (Server-Sent Events over a POST); /api/kb/analyze is the fallback
+  function LVS(){ return [['fetch', 'Fetch the page'], ['strip', 'Strip text a visitor cannot see'], ['scan', 'Scan for instructions aimed at AI'], ['model_a', 'Model A reads the page'], ['model_b', 'Model B reads it independently'], ['consensus', 'Compare the critical fields'], ['quotes', 'Check every quote against the page'], ['sign', 'Sign the result']]; }
+  function fms(ms){ return ms >= 10000 ? (ms / 1000).toFixed(1) + ' s' : ms + ' ms'; }
+  function kb(n){ return n >= 1048576 ? (n / 1048576).toFixed(1) + ' MB' : Math.max(1, Math.round(n / 1024)) + ' KB'; }
+  function lvInit(){ $('az-prog').innerHTML = LVS().map(function(s){ return '<li id="lv-' + s[0] + '"><div><b>' + s[1] + '</b><small></small></div><code></code></li>'; }).join(''); $('az-lvf').textContent = ''; lvRun('fetch'); }
+  function lvRun(k){ var li = $('lv-' + k); if (li && !/ok|bad|skip/.test(li.className)) li.className = 'run'; }
+  function lvDetail(e){
+    var n = function(x){ return Number(x || 0).toLocaleString('en'); };
+    switch (e.step) {
+      case 'fetch': return e.ok ? 'HTTP ' + e.status + ' · ' + kb(e.bytes) + (e.redirects ? ' · ' + e.redirects + ' redirect' + (e.redirects > 1 ? 's' : '') : '') : 'The website did not answer' + (e.status ? ' (HTTP ' + e.status + ')' : '');
+      case 'strip': return e.hidden_chars ? n(e.hidden_chars) + ' characters in ' + e.hidden_blocks + ' hidden block' + (e.hidden_blocks === 1 ? '' : 's') + ' removed · ' + n(e.read_chars) + ' visible characters read' : 'No hidden text found · ' + n(e.read_chars) + ' visible characters read';
+      case 'scan': return e.hits ? e.hits + ' match' + (e.hits > 1 ? 'es' : '') + ' against ' + e.patterns + ' patterns' : 'No matches against ' + e.patterns + ' patterns';
+      case 'model_a': case 'model_b': return (e.ok ? '' : 'Failed: ') + e.model;
+      case 'consensus': return e.skipped ? 'Skipped: only one model answered' : e.agreed + ' of ' + e.fields + ' fields agree' + (e.disagreed && e.disagreed.length ? ' · differ: ' + e.disagreed.join(', ') : '');
+      case 'quotes': return e.checked + ' claims checked, ' + e.removed + ' removed · ' + e.fields_with_quote + ' of ' + e.fields_stated + ' facts quoted';
+      case 'sign': return e.signed ? 'Ed25519 · SHA-256 ' + String(e.sha256 || '').slice(0, 16) + '…' : 'Not signed (no key configured)';
+    } return '';
+  }
+  var lvZero = false;
+  function lvStep(e){
+    var li = $('lv-' + e.step); if (!li) return;
+    li.className = e.skipped ? 'skip' : e.ok === false ? 'bad' : 'ok';
+    li.querySelector('small').textContent = lvDetail(e);
+    li.querySelector('code').textContent = e.skipped ? '' : fms(e.ms) + (e.ms === 0 ? '*' : '');
+    if (e.ms === 0 && !e.skipped) lvZero = true;
+    var nx = { fetch: ['strip'], strip: ['scan'], scan: ['model_a', 'model_b'], consensus: ['quotes'], quotes: ['sign'] }[e.step] || [];
+    if ((e.step === 'model_a' || e.step === 'model_b') && /ok|bad/.test(($('lv-model_a') || {}).className) && /ok|bad/.test(($('lv-model_b') || {}).className)) nx = ['consensus'];
+    nx.forEach(lvRun);
+  }
+  function lvTotal(ms){
+    var o = $('az-prog'); var li = document.createElement('li'); li.className = 'tot'; li.innerHTML = '<div><b>Total, measured on our server</b></div><code>' + fms(ms) + '</code>'; o.appendChild(li);
+    if (lvZero) $('az-lvf').textContent = '* Our server is a Cloudflare Worker, whose clock only moves while it waits for the network. Steps that are pure computation therefore measure 0 ms: they took less time than the clock can see.';
+  }
+  function streamReview(email){
+    return fetch('/api/x/b/review', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ url: url, email: email || '', company: $('az-co').value }) }).then(function(r){
+      if (!/event-stream/.test(r.headers.get('content-type') || '')) return r.json().catch(function(){ return {}; }).then(function(d){ if (r.status === 404 || r.status === 405 || r.status >= 500 && !d.error) throw new Error('nostream'); return { status: r.status, d: d }; });
+      if (!r.body || !r.body.getReader) throw new Error('nostream');
+      var rd = r.body.getReader(), dec = new TextDecoder(), buf = '', res = null, err = null;
+      function pump(){ return rd.read().then(function(x){
+        if (x.done) return res ? { status: 200, d: res } : { status: 503, d: { error: err || 'network' } };
+        buf += dec.decode(x.value, { stream: true }); var parts = buf.split('\n\n'); buf = parts.pop();
+        parts.forEach(function(p){ var line = p.split('\n').filter(function(l){ return l.indexOf('data: ') === 0; }).map(function(l){ return l.slice(6); }).join(''); if (!line) return; var e; try { e = JSON.parse(line); } catch (x) { return; }
+          if (e.type === 'step') lvStep(e);
+          else if (e.type === 'cached') { $('az-prog').innerHTML = '<li class="ok"><div><b>Stored result</b><small>This page was reviewed on ' + esc(new Date(e.analysed).toUTCString().slice(5, 22)) + ' UTC, so you see that review. Nothing was run now, so no step timings are shown.</small></div><code></code></li>'; }
+          else if (e.type === 'result') res = Object.assign({}, e.data, { cached: e.cached, first: e.first, tracked: e.tracked });
+          else if (e.type === 'error') { err = e.error; LVS().forEach(function(s){ var li = $('lv-' + s[0]); if (li && li.className === 'run') li.className = 'bad'; }); }
+          else if (e.type === 'done' && res && !res.cached) lvTotal(e.total_ms);
+        }); return pump(); }); }
+      return pump();
+    });
+  }
+  function legacyReview(email){
+    $('az-prog').innerHTML = '<li class="run"><div><b>Reading the website</b><small>Live steps are not available right now, so this review runs without them.</small></div><code></code></li>';
+    return fetch('/api/kb/analyze', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ url: url, email: email || '', company: $('az-co').value }) })
+      .then(function(r){ return r.json().then(function(d){ return { status: r.status, d: d }; }); });
+  }
   function run(email){
-    show(3);
-    var lis = $('az-prog').querySelectorAll('li'), i = 0; lis[0].classList.add('run');
-    var tick = setInterval(function(){ if (i < lis.length - 1) { lis[i].classList.remove('run'); lis[i].classList.add('ok2'); i++; lis[i].classList.add('run'); } }, 6000);
-    $('az-first').textContent = 'Starting…'; var t0 = Date.now(), el = setInterval(function(){ var sec = Math.round((Date.now() - t0) / 1000); var f = $('az-first'); if (f && !/^Starting/.test(f.textContent)) f.textContent = 'Reading the website now · ' + sec + ' s (usually about 10 s)'; }, 1000);
-    fetch('/api/kb/analyze', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ url: url, email: email || '', company: $('az-co').value }) })
-      .then(function(r){ return r.json().then(function(d){ return [r.status, d]; }); })
-      .then(function(x){ clearInterval(tick); clearInterval(el); var s = x[0], d = x[1];
-        lis.forEach(function(l){ l.classList.remove('run'); l.classList.add('ok2'); });
+    show(3); lvZero = false; lvInit();
+    $('az-first').textContent = 'Starting…'; var t0 = Date.now(), el = setInterval(function(){ var f = $('az-first'); if (f) f.textContent = 'Reviewing ' + new URL(url).hostname.replace(/^www\./, '') + ' · ' + Math.round((Date.now() - t0) / 1000) + ' s'; }, 1000);
+    streamReview(email).catch(function(e){ if (e && e.message === 'nostream') return legacyReview(email); throw e; })
+      .then(function(x){ clearInterval(el); var s = x.status, d = x.d;
         if (s !== 200 || !d.report) { render_err(d.error); save(email, 'Desk review failed: ' + (d.error || s)); if (!email) { copyBox('Desk review not read automatically (' + (d.error || s) + '): ' + url); r29pos(); } return; }
         save(email, 'Desk review: ' + (d.report.summary || '') + ' | attention: ' + (d.report.attention || ''));
-        setTimeout(function(){ render(d); if (d.not_property || d.report.page_kind === 'not_real_estate') return; tools(); if (!email) copyBox(d.report.summary); }, 500);
-      }).catch(function(){ clearInterval(tick); clearInterval(el); render_err('network'); save(email, 'Desk review failed: network'); if (!email) { copyBox('Desk review failed (network): ' + url); r29pos(); } });
-    setTimeout(function(){ if ($('az-first').textContent === 'Starting…') $('az-first').textContent = 'Reading the website now'; }, 1200);
+        setTimeout(function(){ render(d); if (d.not_property || d.report.page_kind === 'not_real_estate') return; tools(); if (!email) copyBox(d.report.summary); }, 900);
+      }).catch(function(){ clearInterval(el); render_err('network'); save(email, 'Desk review failed: network'); if (!email) { copyBox('Desk review failed (network): ' + url); r29pos(); } });
    }
   $('az-f2').addEventListener('submit', function(){ var em = $('az-email').value.trim(); if (/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)) run(em); });
   function copyBox(sum){
@@ -309,6 +371,16 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   }
 
   function r29pos(){ var c = $('az-cp'), l = $('az-4') && $('az-4').querySelector('.lead'); if (c && l) l.parentNode.insertBefore(c, l.nextSibling); var b = c && c.querySelector('label'); if (b) b.innerHTML = '<b>Where should we send it?</b> <span>Your email, and we reply within one working day.</span>'; }
+  function sigBind(d){ var b = $('az-sigv'); if (!b) return; b.onclick = function(){
+    var S = d.signature, out = $('az-sigr'), C = window.crypto && crypto.subtle, te = new TextEncoder();
+    function b64(x){ return Uint8Array.from(atob(x), function(c){ return c.charCodeAt(0); }); }
+    if (!C) { out.textContent = 'Your browser has no WebCrypto.'; return; }
+    C.digest('SHA-256', te.encode(S.signed_json)).then(function(h){ var hex = Array.prototype.map.call(new Uint8Array(h), function(x){ return ('0' + x.toString(16)).slice(-2); }).join('');
+      var same = (function(){ try { var a = JSON.parse(S.signed_json); return a.report && JSON.stringify(a.report) === JSON.stringify(d.report); } catch (e) { return false; } })();
+      return C.importKey('raw', b64(S.public_key), { name: 'Ed25519' }, false, ['verify']).then(function(k){ return C.verify({ name: 'Ed25519' }, k, b64(S.sig), te.encode('kolaboro-sig-v1\n' + hex)); })
+        .then(function(ok){ out.textContent = ok && same ? '✓ Valid: this review is exactly what our server signed.' : ok ? 'Signature valid, but the review shown differs from the signed text.' : '✗ Signature does not match.'; });
+    }).catch(function(){ out.textContent = 'Your browser cannot check Ed25519 signatures yet. The signed text and key are in the response; see /verify.'; });
+  }; }
   function render(d){
     var r = d.report || {}, att = (r.attention || 'medium').toLowerCase();
     if (d.not_property || r.page_kind === 'not_real_estate') {
@@ -320,19 +392,26 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
       ev('desk_not_property', {}); if (window.kbLog) kbLog('desk_not_property', url); return;
     }
     var portal = r.page_kind === 'agency_or_portal';
-    var facts = [['Project', r.project], ['Developer', r.developer], ['Location', r.location], ['Price from', r.price_from], ['Title', r.title_type], ['Lease', r.lease_years], ['Completion', r.completion], ['Return advertised', r.advertised_return], ['Permit claim', r.permit_claim]].filter(function(f){ return f[1]; });
+    var facts = [['Project', r.project], ['Developer', r.developer], ['Location', r.location], ['Price from', r.price_from, 'price_from'], ['Title', r.title_type, 'title_type'], ['Lease', r.lease_years, 'lease_years'], ['Completion', r.completion, 'completion'], ['Return advertised', r.advertised_return, 'advertised_return'], ['Permit claim', r.permit_claim, 'permit_claim']].filter(function(f){ return f[1]; });
+    var ci = r.citations || null, qc = r.quote_check || null;
+    function fq(f){ if (!ci || !f[2]) return ''; var q = (ci.fields || {})[f[2]]; return q ? '<span class="fq"><i class="kq">' + esc(q) + '</i></span>' : '<span class="fq no">no exact quote found on the page</span>'; }
+    var promList = ci ? (ci.promises || []).map(function(c){ return '<li>' + esc(c.claim) + '<span><i class="kq">' + esc(c.quote) + '</i></span></li>'; }).join('') : (r.promises || []).map(function(q){ return '<li>' + esc(q) + '</li>'; }).join('');
+    var qline = qc ? '<div class="qline"><b>✓ ' + qc.checked + ' claim' + (qc.checked === 1 ? '' : 's') + ' checked against the page, ' + qc.removed + ' removed</b><span>' + qc.fields_with_quote + ' of ' + qc.fields_stated + ' facts above are backed by an exact quote. A claim stays only if its quote is found word for word in the page text.</span>' +
+      ((qc.removed_items || []).length ? '<details><summary>What was removed and why</summary><ul>' + qc.removed_items.map(function(x){ return '<li>' + esc(x.text) + ' <span class="muted">(' + esc(x.reason || 'quote not found on the page') + ')</span></li>'; }).join('') + '</ul></details>' : '') + '</div>' : '';
+    var sig = d.signature && d.signature.sig ? '<p class="muted sigl">Signed with Ed25519 · SHA-256 ' + esc(String(d.signature.sha256).slice(0, 16)) + '… · <button type="button" id="az-sigv">Verify the signature in your browser</button> <span id="az-sigr"></span></p>' : '';
     var first = portal ? 'Desk review of a portal or agency page' : d.first ? 'Nobody had asked us about this project before. Your review is the first one.' : (d.tracked ? 'Our agent already follows this project.' : 'Desk review');
     $('az-4').innerHTML = '<p class="az-k">' + esc(first) + '</p><h2>Desk review: ' + esc(r.project || d.host) + '</h2>' +
       '<p><span class="az-att ' + esc(att) + '">' + (att === 'high' ? 'High attention needed' : att === 'low' ? 'Low attention needed' : 'Medium attention needed') + '</span></p>' +
       '<p class="lead" style="margin-top:12px">' + esc(r.summary) + '</p>' +
+      (ci && (ci.summary || []).length ? '<p class="sq"><span class="muted">From the page: </span>' + ci.summary.map(function(q){ return '<i class="kq">' + esc(q) + '</i>'; }).join(' ') + '</p>' : '') + qline +
       (r.ai_manipulation && r.ai_manipulation.detected ? '<div class="az-note" role="alert" style="background:#FDECEC;border:1px solid #F3B4B4;border-radius:12px;padding:12px 14px;margin-top:12px"><b>Warning: this website contains text aimed at automated reviewers.</b> ' + ((r.ai_manipulation.evidence || []).some(function(x){ return x.where === 'hidden'; }) ? 'Part of it is hidden from visitors. ' : '') + 'We did not follow it, and it raised the attention level. What we found:<ul style="margin:8px 0 0">' + (r.ai_manipulation.evidence || []).map(function(x){ return '<li><i>' + esc(x.where === 'hidden' ? 'Hidden text' : x.where === 'model' ? 'Flagged by the model' : 'Visible text') + ':</i> "' + esc(x.text) + '"</li>'; }).join('') + '</ul><p style="margin:8px 0 0;font-size:.85rem">How we handle this: <a href="/engineering/ai-safety">our defences against manipulated pages</a>.</p></div>' : '') +
       (portal ? '<p class="az-note" style="background:#fff4ec;border-radius:12px;padding:12px 14px">This page lists many properties, so the review is general. For a precise answer, paste the page of the <b>one project or home</b> you want to buy.</p>' : '') +
-      (facts.length ? '<div class="az-facts">' + facts.map(function(f){ return '<div><span>' + f[0] + '</span><b>' + esc(f[1]) + '</b></div>'; }).join('') + '</div>' : '') +
+      (facts.length ? '<div class="az-facts">' + facts.map(function(f){ return '<div><span>' + f[0] + '</span><b>' + esc(f[1]) + fq(f) + '</b></div>'; }).join('') + '</div>' : '') +
       '<div id="az-bench"></div>' + '<div class="az-res"><div class="az-box"><h3>Ask these before you pay</h3><ol>' + (r.questions || []).map(function(q){ return '<li>' + esc(q) + '</li>'; }).join('') + '</ol></div>' +
-      '<div class="az-box"><h3>What the website promises</h3><ul>' + (r.promises || []).map(function(q){ return '<li>' + esc(q) + '</li>'; }).join('') + '</ul>' +
+      '<div class="az-box"><h3>What the website promises</h3><ul class="cl">' + promList + '</ul>' + (ci && !(ci.promises || []).length ? '<p class="muted" style="font-size:.86rem">No claim could be matched to an exact quote on the page.</p>' : '') +
       ((r.missing || []).length ? '<h3 style="margin-top:14px">What it doesn\'t say</h3><ul>' + r.missing.map(function(q){ return '<li>' + esc(q) + '</li>'; }).join('') + '</ul>' : '') + '</div></div>' +
-      cta() + '<p class="muted" style="font-size:.82rem;margin-top:12px">Automated desk review of what the website itself says, on ' + new Date(d.analysed).toUTCString().slice(5, 16) + '. Advertised claims, not verified facts, and not a judgement of the developer.</p>';
-    show(4); if (!isResale(r) && !portal) bench(r); ev('desk_done', { att: att, first: !!d.first }); if (window.kbLog) kbLog('desk_done', url);
+      cta() + '<p class="muted" style="font-size:.82rem;margin-top:12px">Automated desk review of what the website itself says, on ' + new Date(d.analysed).toUTCString().slice(5, 16) + '. Advertised claims, not verified facts, and not a judgement of the developer. The questions and the gaps are ours, not quotes. <a href="/check/red-team">Try to fool this AI</a>.</p>' + sig;
+    show(4); sigBind(d); if (!isResale(r) && !portal) bench(r); ev('desk_done', { att: att, first: !!d.first }); if (window.kbLog) kbLog('desk_done', url);
   }
 })();
 </script>
