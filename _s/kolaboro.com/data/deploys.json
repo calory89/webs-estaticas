@@ -51,6 +51,17 @@
  ],
  "drills": [
   {
+   "at": "2026-11-03T13:18:14Z",
+   "result": "failed",
+   "summary": "Drill failed. Live smoke on 88192a35ff5e: 32/32 checks. Injected failure caught. rollback commit for 34087139fe23 built and checked (8 file(s) restored to their previous version), not pushed.",
+   "live_checks_passed": 32,
+   "live_checks_total": 32,
+   "injected_failure_caught": true,
+   "rollback_built": false,
+   "pushed": false,
+   "run": "https://github.com/calory89/webs-estaticas/actions/runs/41642882724"
+  },
+  {
    "at": "2026-11-03T13:15:50Z",
    "result": "failed",
    "summary": "Drill failed. Live smoke on 83d21c15c9aa: 31/32 checks. Injected failure caught. rollback commit for 5b394720dec8 built and checked (1 file(s) restored to their previous version), not pushed.",
@@ -77,13 +88,13 @@
  "canary": "Cloudflare Pages sends each push to all visitors at once and offers no percentage canary, so none is claimed. A bad push can be visible for a few minutes until the rollback is live.",
  "rollback_mode": "Rollback: a git commit restoring the files changed since the last passing commit; Pages deploys it in about 1 to 2 minutes. An instant Cloudflare API rollback is built in but needs a Pages-scoped token, not configured yet.",
  "latest_checks": {
-  "at": "2026-11-03T13:15:16.444Z",
+  "at": "2026-11-03T13:17:39.909Z",
   "commit": "88192a35ff5eff533e8769c080937fde04e04a92",
   "checks": [
    {
     "name": "build: live commit",
-    "ok": false,
-    "detail": "live 88192a35ff5e, expected 83d21c15c9aa"
+    "ok": true,
+    "detail": "live 88192a35ff5e"
    },
    {
     "name": "page /",
@@ -203,7 +214,7 @@
    {
     "name": "browser 1440px /p/BALI-021",
     "ok": true,
-    "detail": "200, no JS errors"
+    "detail": "200, no JS errors, third-party error ignored: Cannot read properties of null (reading 'sequence')"
    },
    {
     "name": "browser 1440px /trust/",
@@ -228,7 +239,7 @@
    {
     "name": "browser 390px /p/BALI-021",
     "ok": true,
-    "detail": "200, no JS errors, third-party error ignored: Cannot read properties of null (reading 'sequence')"
+    "detail": "200, no JS errors"
    },
    {
     "name": "browser 390px /trust/",
@@ -244,5 +255,5 @@
  },
  "last_checked": "3233db0b00f7e08b1ef80b92720ee66f8459a43d",
  "last_good": "3233db0b00f7e08b1ef80b92720ee66f8459a43d",
- "updated": "2026-11-03T13:15:50Z"
+ "updated": "2026-11-03T13:18:14Z"
 }
