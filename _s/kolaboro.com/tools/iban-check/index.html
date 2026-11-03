@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<script>window.clarity=window.clarity||function(){};</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Payment account check: IBAN and SWIFT before you pay a deposit | Kolaboro</title>
 <meta name="description" content="Check an IBAN checksum, length and bank code, a SWIFT/BIC code, and whether the account country matches the developer. Runs in your browser; nothing is stored or sent.">
@@ -19,7 +20,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://kolaboro.com/k/og/pricing.png">
 <link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/k/site.css?v=e16142b036">
+<link rel="stylesheet" href="/k/site.css?v=2cbe3191d0">
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "name": "Kolaboro", "url": "https://kolaboro.com/", "logo": "https://kolaboro.com/k/favicon.svg", "description": "A network of local buyer's agents for overseas property, trained by AI and proven on the ground."}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Who pays Kolaboro?", "acceptedAnswer": {"@type": "Answer", "text": "Buyers pay for checks and monitoring. Developers never pay Kolaboro: the evidence sets every Score. Agents never take money from developers."}}, {"@type": "Question", "name": "Is Kolaboro a lawyer or a notary?", "acceptedAnswer": {"@type": "Answer", "text": "No. Kolaboro agents verify facts on the ground and in documents and tell you what they found. For legal advice and to sign, use an independent lawyer or notary; we can tell you what to ask them."}}, {"@type": "Question", "name": "Do you hold my money?", "acceptedAnswer": {"@type": "Answer", "text": "Not yet. Today your agent confirms each milestone on site and tells you whether the evidence supports paying. Milestone escrow with licensed partners is on our roadmap."}}, {"@type": "Question", "name": "Where do you work?", "acceptedAnswer": {"@type": "Answer", "text": "We are launching in Bali first and adding cities as we train local agents. If you are buying somewhere else, tell us where: demand decides the next city."}}, {"@type": "Question", "name": "How do you decide \"go\" or \"hold\"?", "acceptedAnswer": {"@type": "Answer", "text": "Nine checks, from land title to realistic promises. A red flag on title, permits or progress means \"hold\" until it is fixed, and every finding links to its evidence. The full method is public."}}, {"@type": "Question", "name": "Can a developer influence a report?", "acceptedAnswer": {"@type": "Answer", "text": "Only with evidence. Developers can send documents and reply, but never pay us. Where something can't be verified, the report says so instead of guessing."}}, {"@type": "Question", "name": "What if I already bought?", "acceptedAnswer": {"@type": "Answer", "text": "That's when monitoring matters most. We can verify where construction really is before your next payment."}}]}]</script>
 
 <link rel="alternate" type="application/rss+xml" title="Kolaboro: what we shipped" href="/feed.xml">
@@ -50,7 +51,7 @@
   <p class="ft-local"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span><b>Nothing you type is stored or sent.</b> The checks run in this page (<a href="/tools/iban-check/iban.js">iban.js</a>); the fields are not saved, not even in your browser.</span></p>
 </div></section>
 <section class="sec ft-sec"><div class="wrap ft-grid2">
-  <form class="ft-form tl-box" onsubmit="return false" autocomplete="off" aria-label="Payment details">
+  <form data-clarity-mask="True" class="ft-form tl-box" onsubmit="return false" autocomplete="off" aria-label="Payment details">
     <label class="ft-in">IBAN or account number<input id="ibA" class="mono" spellcheck="false" autocomplete="off" inputmode="text" placeholder="e.g. GB82 WEST 1234 5698 7654 32"><small>IBAN, Mexican CLABE (18 digits) or US routing number (9 digits). Spaces are fine.</small></label>
     <label class="ft-in">SWIFT / BIC code (optional)<input id="ibB" class="mono" spellcheck="false" autocomplete="off" placeholder="e.g. DEUTDEFF"></label>
     <label class="ft-in">Developer or project country<select id="ibC"></select><small>Where the developer company on your contract is registered.</small></label>
@@ -61,7 +62,7 @@
       <button type="button" data-ex="LT12 1000 0111 0100 1000|CENAIDJA|ID">Bali developer, Lithuanian account</button>
     </div>
   </form>
-  <div class="ft-out" id="ibOut" aria-live="polite" style="margin-top:0"></div>
+  <div class="ft-out" id="ibOut" aria-live="polite" style="margin-top:0" data-clarity-mask="True"></div>
 </div></section>
 <section class="sec alt"><div class="wrap">
   <p class="eyebrow">How it works</p>
@@ -136,7 +137,7 @@
     <p class="fine">© 2026 Kolaboro, operated by Equinox Investment Group LLC, 30 N Gould St Ste N, Sheridan, WY 82801, USA. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Reports are opinions based on the evidence listed in them.</p>
   </div>
 </footer>
-<script src="/k/ask.js?v=f5e9b0d9e7" defer></script><script src="/k/pipeline.js?v=c1da74b911" defer></script><script src="/k/site.js?v=9568272051" defer></script>
+<script src="/k/ask.js?v=f5e9b0d9e7" defer></script><script src="/k/pipeline.js?v=c1da74b911" defer></script><script src="/k/site.js?v=e92d95b25d" defer></script>
 <script>
 (function(){
   if (document.body.scrollHeight < window.innerHeight * 3) return;
