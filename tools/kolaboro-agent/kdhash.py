@@ -21,6 +21,15 @@ def _edges(a, n, parts):
     return [a + (i * n) // parts for i in range(parts + 1)]
 
 
+def _grid_opaque(Y, x0, x1, y0, y1):
+    """Fast path when A = 255 everywhere: the per-pixel value is 255 * Y, so cell sums are 255 * sum(Y), exactly."""
+    xs, ys = _edges(x0, x1 - x0, 9), _edges(y0, y1 - y0, 8)
+    rows = np.add.reduceat(Y[y0:y1, x0:x1], [y - y0 for y in ys[:-1]], axis=0, dtype=np.int64)
+    cells = np.add.reduceat(rows, [x - x0 for x in xs[:-1]], axis=1, dtype=np.int64) * 255
+    cnt = np.outer(np.diff(ys), np.diff(xs)).astype(np.float64)
+    return cells.astype(np.float64) / cnt
+
+
 def _grid(px, x0, x1, y0, y1):
     xs, ys = _edges(x0, x1 - x0, 9), _edges(y0, y1 - y0, 8)
     cells = np.zeros((8, 9), dtype=np.int64)
@@ -56,7 +65,19 @@ def kdh_bytes(b):
     if im.size[0] * im.size[1] > MAX_PIXELS:
         return None
     im = ImageOps.exif_transpose(im)
-    return kdh_rgba(np.asarray(im.convert('RGBA')))
+    if im.mode in ('RGBA', 'LA', 'PA', 'RGBa', 'La') or 'transparency' in im.info:
+        return kdh_rgba(np.asarray(im.convert('RGBA')))
+    px = np.asarray(im.convert('RGB'))
+    H, W = px.shape[:2]
+    if W < 9 or H < 8:
+        return None
+    Y = px[:, :, 0].astype(np.int32) * 299
+    Y += px[:, :, 1].astype(np.int32) * 587
+    Y += px[:, :, 2].astype(np.int32) * 114
+    h = _bits(_grid_opaque(Y, 0, W, 0, H))
+    cx, cy = (W * 15) // 100, (H * 15) // 100
+    c = _bits(_grid_opaque(Y, cx, W - cx, cy, H - cy)) if W - 2 * cx >= 9 and H - 2 * cy >= 8 else h
+    return h, c
 
 
 def hamming(a, b):

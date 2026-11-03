@@ -27,8 +27,8 @@ PER_PROJECT = 16          # max images per project (runtime cap)
 HUB_SITES = 5             # an image with near-duplicates (cosine >= HUB_COS) on this many other domains is stock/template
 HUB_COS = 0.93
 MAX_PAIRS = 200
-TIME_BUDGET = 11 * 60     # seconds (from start) for the download phase before we stop collecting
-EMBED_DEADLINE = 22 * 60  # seconds (from start) after which images not yet embedded are left out
+TIME_BUDGET = 14 * 60     # seconds (from start) for the download phase before we stop collecting
+EMBED_DEADLINE = 25 * 60  # seconds (from start) after which images not yet embedded are left out
 
 A = os.path.dirname(os.path.abspath(__file__)) + '/'
 projs = json.load(open(A + 'projects.json'))['projects'] + json.load(open(A + 'projects-world.json'))['projects']
