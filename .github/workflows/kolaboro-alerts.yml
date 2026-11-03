@@ -1,0 +1,70 @@
+name: Kolaboro alerts and portal lookup
+# Daily, and after each research agent run:
+# 1. Rebuilds the browser extension's lookup table (_worker.js/kbx_j_map.js on pub/_lovable): truncated SHA-256 hashes of portal
+#    listing addresses and project names -> anonymous project id. Only hashes leave this repository.
+# 2. Calls the worker's daily web push job with a GitHub OIDC token (no stored secret): it compares each watched project's
+#    public record with the last state and sends one encrypted alert per changed project (kolaboro.com/alerts/).
+on:
+  schedule:
+    - cron: '37 10 * * *'
+  workflow_run:
+    workflows: ['Kolaboro research agent']
+    types: [completed]
+  push:
+    branches: [main]
+    paths: ['tools/kolaboro-agent/ext_map.py', '.github/workflows/kolaboro-alerts.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+  id-token: write
+concurrency:
+  group: kolaboro-alerts
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: tools/kolaboro-agent
+      - name: Wait for the site deploy after an agent run
+        if: github.event_name == 'workflow_run'
+        run: sleep 180
+      - name: Rebuild the extension lookup table
+        run: |
+          set -e
+          curl -fsS https://kolaboro.com/data/bali-cases.json -o "$RUNNER_TEMP/cases.json"
+          python3 tools/kolaboro-agent/ext_map.py tools/kolaboro-agent "$RUNNER_TEMP/cases.json" "$RUNNER_TEMP/kbx_j_map.js"
+      - name: Publish the lookup table
+        run: |
+          set -e
+          [ -s "$RUNNER_TEMP/kbx_j_map.js" ] || { echo "no table built"; exit 0; }
+          cp "$RUNNER_TEMP/kbx_j_map.js" "$RUNNER_TEMP/check.mjs"
+          node -e "import('$RUNNER_TEMP/check.mjs').then(m=>{const x=m.MAP;if(!x||!x.u||!x.n||x.projects<100)process.exit(1);console.log(x.projects,x.url_keys,x.name_keys)})"
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          for i in 1 2 3 4 5; do
+            P=$(git rev-parse FETCH_HEAD)
+            export GIT_INDEX_FILE=$RUNNER_TEMP/idx; rm -f $GIT_INDEX_FILE; git read-tree $P
+            OLD=$(git rev-parse "$P:_worker.js/kbx_j_map.js" 2>/dev/null || true)
+            H=$(git hash-object -w "$RUNNER_TEMP/kbx_j_map.js")
+            # the table embeds its build date: skip when only the date changed
+            if [ -n "$OLD" ] && [ "$(git cat-file -p $OLD | sed 's/"built":"[^"]*"//')" = "$(sed 's/"built":"[^"]*"//' $RUNNER_TEMP/kbx_j_map.js)" ]; then echo "no change"; exit 0; fi
+            git update-index --add --cacheinfo 100644,$H,_worker.js/kbx_j_map.js
+            T=$(git write-tree); unset GIT_INDEX_FILE
+            C=$(git commit-tree $T -p $P -m "kolaboro.com: extension lookup table $(date -u +%F)")
+            git push -q origin $C:refs/heads/pub/_lovable && exit 0
+            sleep 5; git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          done; exit 1
+      - name: Daily alerts
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request
+          tok = json.load(urllib.request.urlopen(urllib.request.Request(os.environ['ACTIONS_ID_TOKEN_REQUEST_URL'] + '&audience=kolaboro.com', headers={'Authorization': 'Bearer ' + os.environ['ACTIONS_ID_TOKEN_REQUEST_TOKEN']}), timeout=15))['value']
+          r = urllib.request.urlopen(urllib.request.Request('https://kolaboro.com/api/x/j/push/run', b'{}', {'content-type': 'application/json', 'authorization': 'Bearer ' + tok, 'user-agent': 'kolaboro-alerts/1.0'}), timeout=120)
+          d = json.loads(r.read().decode())
+          d.pop('changes', None)   # project-level detail stays out of the public Actions log
+          print(r.status, json.dumps(d))
+          PY
