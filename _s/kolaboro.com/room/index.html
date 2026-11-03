@@ -37,7 +37,7 @@
     </nav>
   </div>
 </header>
-<main id="main">
+<main id="main" data-clarity-mask="True">
 <section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / Deal room</p><h1>A private room for your purchase</h1>
 <p class="lead">Notes, a checklist and small documents you share with your lawyer or family, encrypted in your browser before anything leaves it. We store only ciphertext and cannot read it. Every entry is signed by its author and chained to the one before, so nobody, us included, can quietly change the history.</p></div></section>
 <style>
@@ -114,7 +114,7 @@
 <div><h3>What we can see</h3><ul><li>A room id (a one-way hash of the key) and how many entries it has, their sizes and times.</li><li>Your IP address when you connect, like any website.</li><li>Nothing else: no text, no file names, no names of people. Those are inside the encryption.</li></ul></div>
 <div><h3>What we cannot do</h3><ul><li><b>Recover a lost link.</b> We never have the key. Lose every copy of the link and the room is unreadable forever, for you and for us.</li><li>Read your room, even if asked by anyone: we do not hold anything that decrypts it.</li><li>Change an entry or insert a fake one without the timeline showing "tampering detected".</li></ul></div>
 <div><h3>How it works</h3><ul><li>AES-256-GCM, key derived with HKDF from a 256-bit secret in the URL fragment. Each entry is bound to this room and its position.</li><li>Each entry is signed with its author's ECDSA P-256 key, made in the browser and not exportable.</li><li>Each entry includes the SHA-256 of the previous one: a hash chain. Your browser checks all of it every time.</li><li>Your device remembers the last entry it saw, so a server that deletes recent entries is caught.</li></ul></div>
-<div><h3>Limits you should know</h3><ul><li>Anyone with the full link can read and write. Treat it like a house key.</li><li>The key is in the link. This page removes it from the address bar on arrival, so it does not stay in browser history, but wherever you paste the link keeps a copy. Use a private window on shared computers. This page loads no analytics scripts.</li><li>Small files only (200 KB). Larger documents: share them another way and add their fingerprint here.</li><li>A malicious version of this page could steal keys. The code is readable: <a href="/room/room.js">room.js</a>.</li></ul></div>
+<div><h3>Limits you should know</h3><ul><li>Anyone with the full link can read and write. Treat it like a house key.</li><li>The key is in the link. This page removes it from the address bar on arrival, so it does not stay in browser history, but wherever you paste the link keeps a copy. Use a private window on shared computers. This page loads no analytics scripts of its own; anything our hosting network adds sees only the address without the key, and the room is marked so session-recording tools mask it.</li><li>Small files only (200 KB). Larger documents: share them another way and add their fingerprint here.</li><li>A malicious version of this page could steal keys. The code is readable: <a href="/room/room.js">room.js</a>.</li></ul></div>
 </div>
 </div></section>
 <script src="/room/room.js?v=eaf197af03" defer></script>
