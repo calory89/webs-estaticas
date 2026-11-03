@@ -8535,5 +8535,571 @@
     "freehold"
    ]
   }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "elysium-eco-city",
+  "name": "ELYSIUM Eco City",
+  "changed": {
+   "permit_claim": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "j-hills",
+  "name": "J-Hills",
+  "changed": {
+   "title_type": [
+    null,
+    "leasehold"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "natha-loka",
+  "name": "Natha Loka Eco Village",
+  "changed": {
+   "advertised_yield_pct": [
+    14,
+    7
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "x-the-building-san-francisco-panama",
+  "name": "X The Building",
+  "changed": {
+   "completion_year": [
+    2028,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "reserva-natural-san-jose-natura-itagui",
+  "name": "Reserva Natural San José Natura",
+  "changed": {
+   "completion_year": [
+    null,
+    2023
+   ],
+   "escrow_or_guarantee": [
+    "Alianza Fiduciaria, fiducia de este proyecto",
+    "Alianza Fiduciaria is named as the project's trust (fiducia de este proyecto); no escrow or guarantee terms given"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "al-sidr-saadiyat-lagoons",
+  "name": "Al Sidr (Saadiyat Lagoons)",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "island-heights-al-marjan",
+  "name": "Island Heights",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "samana-sky-views-dpc",
+  "name": "Samana Sky Views",
+  "changed": {
+   "plans_published": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "comfort-by-orbi-orbi-group",
+  "name": "Comfort by Orbi",
+  "changed": {
+   "price_from": [
+    23000,
+    26800
+   ],
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "al-mare-green-midtown-group",
+  "name": "Al Mare Green",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "querencia-dovec-group",
+  "name": "Querencia",
+  "changed": {
+   "price_from": [
+    209296,
+    209162
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9586,
+    9593
+   ],
+   "plans_published": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "bansko-complex-near-ski-lift-suprimmo",
+  "name": "New residential complex near the ski lift, Bansko",
+  "changed": {
+   "permit_number": [
+    "Act 14",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "sky-gate-tower-tiger",
+  "name": "Sky Gate Tower",
+  "changed": {
+   "price_from": [
+    795000,
+    885800
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "rhea-by-sansiri",
+  "name": "Rhea by Sansiri",
+  "changed": {
+   "price_from": [
+    140819,
+    140818
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "the-hillgate-ellington",
+  "name": "The Hillgate",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Escrow Account Number 4031224708340005; Escrow Agent First Abu Dhabi Bank PJSC.",
+    "Escrow Account Number 4031224708340005, Escrow Agent First Abu Dhabi Bank PJSC."
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "sensi-saadiyat-reportage",
+  "name": "Sensi Saadiyat",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Escrow Account Number 4031227067337002, Escrow Agent First Abu Dhabi Bank P.J.S.C.",
+    "Escrow Account Number 4031227067337002; Escrow Agent First Abu Dhabi Bank P.J.S.C."
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "quattro-del-mar-rak-properties",
+  "name": "Quattro Del Mar",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "arancia-yards-beyond",
+  "name": "Arancia Yards by Beyond",
+  "changed": {
+   "permit_number": [
+    "registered project #4480",
+    "project #4480"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "mamsha-palm-aldar",
+  "name": "Mamsha Palm",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "bab-al-qasr-garden-residence-66-burtville",
+  "name": "Bab Al Qasr Garden Residence 66",
+  "changed": {
+   "price_from": [
+    2100000,
+    2145000
+   ],
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "oystra-richmind",
+  "name": "Oystra",
+  "changed": {
+   "price_from": [
+    2500000,
+    2586888
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "gianfranco-ferre-residences-mira",
+  "name": "Gianfranco Ferré Residences",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "alliance-centropolis-alliance-group",
+  "name": "Alliance Centropolis",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "the-ivory-chang-phueak-home-development-group",
+  "name": "The IVORY",
+  "changed": {
+   "price_from": [
+    62256,
+    62257
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "dusit-thani-residences-ajman-aqaar",
+  "name": "Dusit Thani Residences Ajman",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "penha-living-bolder-addsolid",
+  "name": "Penha Living Bolder",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "265-elmer-one-centum-real-estate",
+  "name": "265 Elmer One Apartments",
+  "changed": {
+   "price_from": [
+    1900000,
+    1.9
+   ],
+   "guaranteed_language": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "udaondo-buenos-aires-landmark-developments",
+  "name": "Udaondo Buenos Aires",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Fideicomiso Buenos Aires Landmark, which bought the land at a public auction (no buyer escrow or guarantee described)",
+    "Fideicomiso Buenos Aires Landmark (named as the trust that bought the land at auction in 2018; no buyer escrow described)"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "city-walk-love-lane-liverpool-habitia",
+  "name": "City Walk",
+  "changed": {
+   "permit_claim": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "empathia-village-kensington",
+  "name": "Empathia Village",
+  "changed": {
+   "price_from": [
+    990000,
+    890000
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "scirocco-heights-residences-birzebbuga",
+  "name": "Scirocco Heights Residences",
+  "changed": {
+   "guaranteed_language": [
+    null,
+    false
+   ],
+   "permit_claim": [
+    null,
+    false
+   ],
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "harmony-ocean-front-ja-russi",
+  "name": "Harmony Ocean Front",
+  "changed": {
+   "permit_number": [
+    "Matrícula nº 135.051",
+    "Registro de Incorporação R13 da Matrícula nº 135.051"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "hilton-residences-abu-dhabi-al-raha-emirates-developments",
+  "name": "Hilton Residences Abu Dhabi Al Raha",
+  "changed": {
+   "plans_published": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "creek-waters-2-emaar",
+  "name": "Creek Waters 2",
+  "changed": {
+   "advertised_yield_pct": [
+    5,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "dwtn-residences-deyaar",
+  "name": "DWTN Residences (registered as Downtown Residences)",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "naya-at-district-one-meydan",
+  "name": "Naya at District One",
+  "changed": {
+   "plans_published": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "ajman-one-phase-2-aqaar",
+  "name": "Ajman One Phase 2",
+  "changed": {
+   "price_from": [
+    316000,
+    700000
+   ],
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "antalya-suites-sur-yapi",
+  "name": "Sur Yapı Antalya Suites",
+  "changed": {
+   "price_from": [
+    4497516,
+    87224
+   ],
+   "currency": [
+    "TRY",
+    "USD"
+   ],
+   "completion_year": [
+    2027,
+    2028
+   ],
+   "plans_published": [
+    false,
+    true
+   ],
+   "escrow_or_guarantee": [
+    null,
+    "government-guaranteed project"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "basaksehir-avrasya-konutlari-cadde-fuzul-gyo",
+  "name": "Başakşehir Avrasya Konutları Cadde (Ayazma 4. Etap)",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "prime-villa-samui-supalai",
+  "name": "Prime Villa Samui",
+  "changed": {
+   "price_from": [
+    17590000,
+    17.59
+   ],
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "tual-golyaka-dag-holding",
+  "name": "Tual Gölyaka",
+  "changed": {
+   "price_from": [
+    160088,
+    160045
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "yekta-golden-valley-yekta-homes",
+  "name": "Yekta Golden Valley",
+  "changed": {
+   "price_from": [
+    7135,
+    7192
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "natulux-tatlisu-dovec-group",
+  "name": "Natulux",
+  "changed": {
+   "price_from": [
+    295138,
+    294971
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "bao-puerto-morelos-riviera-maya",
+  "name": "BAO Puerto Morelos",
+  "changed": {
+   "price_from": [
+    213437.57,
+    213341.05
+   ]
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "slug": "amanvari-residences-aman-private-villas-at-costa-palmas-los",
+  "name": "Amanvari Residences (Aman Private Villas) at Costa Palmas",
+  "changed": {
+   "price_from": [
+    13995000,
+    null
+   ],
+   "currency": [
+    "USD",
+    null
+   ],
+   "plans_published": [
+    true,
+    false
+   ]
+  }
  }
 ]
