@@ -1,0 +1,62 @@
+name: Kolaboro Parquet export
+# Daily, and after every research agent run: the open dataset (kolaboro.com/data/bali-cases.json) as Parquet for SQL in the
+# browser (kolaboro.com/sql), published to kolaboro.com/data/kolaboro.parquet, kolaboro-markets.parquet and a manifest.
+# Only fields of the public JSON go in. The site worker signs the manifest after re-hashing the files (/api/x/e/parquet-manifest).
+on:
+  schedule:
+    - cron: '43 7 * * *'
+  workflow_run:
+    workflows: ['Kolaboro research agent']
+    types: [completed]
+  push:
+    branches: [main]
+    paths: ['tools/kolaboro-agent/parquet_export.py', '.github/workflows/kolaboro-parquet.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-parquet
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: tools/kolaboro-agent/parquet_export.py
+          sparse-checkout-cone-mode: false
+      - name: Build Parquet from the published JSON
+        run: |
+          set -e
+          pip install -q pyarrow==25.0.1
+          git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          git show FETCH_HEAD:_s/kolaboro.com/data/bali-cases.json > "$RUNNER_TEMP/bali-cases.json"
+          python3 tools/kolaboro-agent/parquet_export.py "$RUNNER_TEMP/bali-cases.json" "$RUNNER_TEMP/pq"
+          # skip when the data files are byte-identical to what is published and the manifest is from today
+          git show FETCH_HEAD:_s/kolaboro.com/data/kolaboro.parquet.json > "$RUNNER_TEMP/old.json" 2>/dev/null || echo '{}' > "$RUNNER_TEMP/old.json"
+          python3 - "$RUNNER_TEMP/old.json" "$RUNNER_TEMP/pq/kolaboro.parquet.json" > "$RUNNER_TEMP/same" <<'PY'
+          import json, sys
+          o, n = json.load(open(sys.argv[1])), json.load(open(sys.argv[2]))
+          h = lambda m: sorted((f['path'], f['sha256']) for f in m.get('files', []))
+          print('1' if h(o) == h(n) and str(o.get('generated', ''))[:10] == n['generated'][:10] else '0')
+          PY
+      - name: Publish to kolaboro.com
+        run: |
+          set -e
+          [ "$(cat $RUNNER_TEMP/same)" = "1" ] && { echo "unchanged today"; exit 0; }
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          for i in 1 2 3 4 5; do
+            P=$(git rev-parse FETCH_HEAD)
+            export GIT_INDEX_FILE=$RUNNER_TEMP/idx; rm -f $GIT_INDEX_FILE; git read-tree $P
+            for f in kolaboro.parquet kolaboro-markets.parquet kolaboro.parquet.json; do
+              H=$(git hash-object -w "$RUNNER_TEMP/pq/$f")
+              git update-index --add --cacheinfo 100644,$H,_s/kolaboro.com/data/$f
+            done
+            T=$(git write-tree); unset GIT_INDEX_FILE
+            [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
+            C=$(git commit-tree $T -p $P -m "kolaboro.com: Parquet export $(date -u +%F)")
+            git push -q origin $C:refs/heads/pub/_lovable && exit 0
+            sleep 5; git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          done; exit 1
