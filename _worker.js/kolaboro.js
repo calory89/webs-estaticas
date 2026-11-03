@@ -262,7 +262,8 @@ async function deskReview(env, urlStr, html, opts) {
   const noOffer = !out.price_from && !out.payment_plan && depth <= 1 && (out.page_kind === 'developer_site' || (out.page_kind === 'project' && !out.project));
   if (top && (notProp || kindDisputed || noOffer || text.length < 1500)) {
     const homeOffer = offerScore(text);
-    const ex = await explore(urlStr, html, notProp || kindDisputed ? 0 : homeOffer, step);
+    // a page with no offer facts follows any candidate with a clear offer; a thin page that already states the offer needs a stronger one
+    const ex = await explore(urlStr, html, notProp || kindDisputed ? 0 : noOffer ? 2 : homeOffer, step);
     if (ex) {
       out.pages_found = ex.found;
       if (ex.best) {
@@ -273,7 +274,8 @@ async function deskReview(env, urlStr, html, opts) {
     }
   }
   // Too little readable text (a site built in JavaScript, a splash page) is not evidence that a site has nothing to do with property.
-  if (notProp && text.length < 1500) { out.thin_text = true; out.read_chars = text.length; }
+  out.read_chars = text.length;
+  if (notProp && text.length < 1500) out.thin_text = true;
   return { report: out, not_property: notProp, thin_text: !!out.thin_text, hidden_blocks_removed: parts.hidden.length, prompt_sha256: await promptSha() };
 }
 const offerFacts = r => r ? ['project', 'price_from', 'payment_plan', 'completion', 'title_type', 'lease_years', 'advertised_return', 'permit_claim'].filter(k => r[k] != null && r[k] !== '').length : 0;
@@ -295,7 +297,7 @@ async function explore(urlStr, html, minOffer, step) {
     return { url: fu.toString(), ok: tx.length >= 200, chars: tx.length, offer: offerScore(tx), html: pg.html };
   }));
   const ok = pages.filter(p => p.ok).sort((x, y) => y.offer - x.offer);
-  const best = ok[0] && ok[0].offer >= 3 && ok[0].offer > minOffer ? ok[0] : null;
+  const best = ok[0] && ok[0].offer >= 5 && ok[0].offer > minOffer ? ok[0] : null;   // at least a few prices, sizes or payment terms
   step({ step: 'explore', ms: Date.now() - t0, candidates: cands.length, read: pages.map(p => ({ url: p.url, ok: p.ok, offer_signals: p.offer || 0, error: p.error || undefined })), chosen: best ? best.url : null });
   return { best, found: cands.map(c => c.url), read: pages.map(p => ({ url: p.url, ok: p.ok, offer_signals: p.offer || 0 })) };
 }
@@ -314,6 +316,7 @@ async function followReview(env, urlStr, ex, step) {
 const OFFER_KW = new RegExp(['invest', 'real[-_ ]?estate', 'propert', 'villa', 'residen', 'apartment', 'apartamento', 'condo', 'off[-_ ]?plan', 'for[-_ ]?sale', '\\bbuy', '\\bhomes?\\b', '\\bunits?\\b', 'projects?\\b', 'develop', 'ownership', '\\bsales\\b', 'availab', 'price', 'floor[-_ ]?plan', 'townhouse', 'penthouse', 'estate\\b', 'land\\b', 'plots?\\b', 'catalog', 'portfolio', 'listings?',
   'inversi', 'propiedad', 'comprar', 'venta', 'vivienda', 'proyecto', 'imóve', 'imove', 'empreendimento', 'investasi', 'properti', '\\bjual', 'rumah', 'tanah', 'proyek', 'อสังหา', 'คอนโด', 'ขาย', 'โครงการ', 'عقار', 'مشاريع', 'للبيع', 'شقق', 'недвижим', 'квартир', 'вилл', 'проект', 'купить', 'immobili', 'appartement', 'acheter', 'programme', 'wohnung', 'kaufen', 'projekt', 'progett', 'vendita', 'emlak', 'satılık', 'proje', 'bất động sản', 'dự án', '房产', '楼盘', '项目', '出售'].join('|'), 'i');
 const SKIP_PATH = /\.(pdf|jpe?g|png|webp|gif|svg|zip|mp4|xml|css|js)$|\/(blog|news|press|careers?|jobs|login|signin|account|cart|privacy|terms|cookie|wp-admin|wp-login|tag|category|author|feed|investor-relations|investors?-?relations?|shareholders?|contacts?|contact-us|careers?|vacanc\w*|about(-us)?|team|faq)(\/|$)/i;
+const HOME_PATH = /^\/?([a-z]{2}([-_][a-z]{2})?\/?)?(home(page)?|index(\.\w+)?)?\/?$/i;   // the site's own home page ("Home", "/en/") is not where it sells
 function sameSite(u, b) { return u.hostname.replace(/^www\./, '') === b.hostname.replace(/^www\./, '') && /^https?:$/.test(u.protocol); }
 // Same-site links ranked by how likely they lead to the property offer: path words count most, then the link label, then being in the
 // navigation, header or footer. Deep paths lose a point (a single article, not the offer). Never another domain.
@@ -325,7 +328,7 @@ function propertyLinks(html, base, max) {
     let u; try { u = new URL(m[1].replace(/&amp;/g, '&'), b); } catch (e) { continue; }
     if (!sameSite(u, b)) continue;
     u.hash = ''; const key = u.toString().replace(/\/$/, '');
-    if (u.pathname.replace(/\/$/, '') === b.pathname.replace(/\/$/, '') && u.search === b.search || SKIP_PATH.test(u.pathname)) continue;
+    if (u.pathname.replace(/\/$/, '') === b.pathname.replace(/\/$/, '') && u.search === b.search || SKIP_PATH.test(u.pathname) || HOME_PATH.test(u.pathname)) continue;
     const label = textOf(m[2]).slice(0, 80), path = decodeURIComponent(u.pathname).replace(/[-_/]+/g, ' ');
     let score = (OFFER_KW.test(path) ? 2 : 0) + (OFFER_KW.test(label) || OFFER_KW.test((m[0].match(/(title|aria-label)=["']([^"']+)/i) || [])[2] || '') ? 1 : 0);
     const inNav = navAt.some(r => m.index > r[0] && m.index < r[1]);
@@ -347,7 +350,7 @@ async function sitemapLinks(base, ms) {
   const out = [];
   for (const m of x.matchAll(/<loc>\s*([^<\s]+)\s*<\/loc>/gi)) {
     let u; try { u = new URL(m[1].replace(/&amp;/g, '&')); } catch (e) { continue; }
-    if (!sameSite(u, b) || SKIP_PATH.test(u.pathname) || u.pathname.replace(/\/$/, '') === b.pathname.replace(/\/$/, '')) continue;
+    if (!sameSite(u, b) || SKIP_PATH.test(u.pathname) || HOME_PATH.test(u.pathname) || u.pathname.replace(/\/$/, '') === b.pathname.replace(/\/$/, '')) continue;
     const path = decodeURIComponent(u.pathname).replace(/[-_/]+/g, ' ');
     if (!OFFER_KW.test(path)) continue;
     const depth = u.pathname.split('/').filter(Boolean).length;
@@ -473,7 +476,7 @@ async function claude(env, prompt, system, only) {
 
 const isTracked = host => TRACKED.some(d => host === d || host.endsWith('.' + d));
 // v5: reports carry quoted claims (citations, quote_check); earlier cached reviews have none, so they are not reused
-const deskCacheKey = u => new Request('https://kolaboro.com/__kb_desk7/' + encodeURIComponent(u.hostname.replace(/^www\./, '') + u.pathname.replace(/\/$/, '') + u.search));
+const deskCacheKey = u => new Request('https://kolaboro.com/__kb_desk8/' + encodeURIComponent(u.hostname.replace(/^www\./, '') + u.pathname.replace(/\/$/, '') + u.search));
 // A bot-protection page (Cloudflare challenge, Akamai, Imperva, DataDome, PerimeterX, AWS WAF, a captcha wall) is not the site's content:
 // reviewing it would wrongly say the site is "not about property". We say honestly that the site refused our reader. We never disguise
 // our reader as a browser to get past such a wall.
@@ -642,7 +645,10 @@ function parseJson(t) {
   const m = t.match(/\{[\s\S]*\}/); if (!m) throw new Error('no json');
   try { return JSON.parse(m[0]); } catch (e) {}
   // light repair: smart quotes, trailing commas, raw newlines inside strings
-  const r = m[0].replace(/[\u201c\u201d]/g, '\\"').replace(/,\s*([}\]])/g, '$1').replace(/\n(?=[^"]*"\s*[,}\]])/g, ' ');
+  // a comma missing at the end of a line ("...]\n  \"next\": ...") is the most common slip of the small model: add it before anything else
+  const r0 = m[0].replace(/([}\]"]|\btrue|\bfalse|\bnull|\d)([ \t]*\r?\n\s*)(?=["{[])/g, '$1,$2');
+  try { return JSON.parse(r0); } catch (e) {}
+  const r = r0.replace(/[\u201c\u201d]/g, '\\"').replace(/,\s*([}\]])/g, '$1').replace(/\n(?=[^"]*"\s*[,}\]])/g, ' ');
   try { return JSON.parse(r); } catch (e) {}
   // last repair: a straight double quote inside a string (models copy quotes from pages) is escaped unless it plausibly ends the string
   let out = '', inStr = false;
