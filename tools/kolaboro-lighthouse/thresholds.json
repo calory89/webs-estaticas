@@ -1,0 +1,242 @@
+{
+ "mobile /": {
+  "performance": 60,
+  "accessibility": 96,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "mobile /check/": {
+  "performance": 72,
+  "accessibility": 95,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "mobile /database/": {
+  "performance": 68,
+  "accessibility": 96,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "mobile /pricing/": {
+  "performance": 75,
+  "accessibility": 95,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "mobile /cases/": {
+  "performance": 69,
+  "accessibility": 96,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "mobile /about/": {
+  "performance": 74,
+  "accessibility": 97,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "mobile /p/BALI-014": {
+  "performance": 39,
+  "accessibility": 92,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "mobile /verify/": {
+  "performance": 71,
+  "accessibility": 95,
+  "best-practices": 68,
+  "seo": 97
+ },
+ "mobile /log/": {
+  "performance": 74,
+  "accessibility": 95,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "mobile /docs/api/": {
+  "performance": 71,
+  "accessibility": 96,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "mobile /status/": {
+  "performance": 51,
+  "accessibility": 96,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "mobile /engineering/": {
+  "performance": 75,
+  "accessibility": 95,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "mobile /security/": {
+  "performance": 69,
+  "accessibility": 97,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "mobile /how-we-score/": {
+  "performance": 68,
+  "accessibility": 95,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "mobile /checklist/": {
+  "performance": 75,
+  "accessibility": 95,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "mobile /trust/": {
+  "performance": 72,
+  "accessibility": 96,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "mobile /prices/": {
+  "performance": 73,
+  "accessibility": 96,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "mobile /bali/": {
+  "performance": 76,
+  "accessibility": 95,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "mobile /research/": {
+  "performance": 72,
+  "accessibility": 95,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "mobile /tools/": {
+  "performance": 83,
+  "accessibility": 95,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "desktop /": {
+  "performance": 89,
+  "accessibility": 96,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "desktop /check/": {
+  "performance": 89,
+  "accessibility": 95,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "desktop /database/": {
+  "performance": 89,
+  "accessibility": 96,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "desktop /pricing/": {
+  "performance": 89,
+  "accessibility": 95,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "desktop /cases/": {
+  "performance": 89,
+  "accessibility": 96,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "desktop /about/": {
+  "performance": 89,
+  "accessibility": 97,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "desktop /p/BALI-014": {
+  "performance": 64,
+  "accessibility": 92,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "desktop /verify/": {
+  "performance": 90,
+  "accessibility": 95,
+  "best-practices": 68,
+  "seo": 97
+ },
+ "desktop /log/": {
+  "performance": 90,
+  "accessibility": 95,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "desktop /docs/api/": {
+  "performance": 89,
+  "accessibility": 96,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "desktop /status/": {
+  "performance": 86,
+  "accessibility": 96,
+  "best-practices": 68,
+  "seo": 97
+ },
+ "desktop /engineering/": {
+  "performance": 89,
+  "accessibility": 95,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "desktop /security/": {
+  "performance": 89,
+  "accessibility": 97,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "desktop /how-we-score/": {
+  "performance": 89,
+  "accessibility": 95,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "desktop /checklist/": {
+  "performance": 89,
+  "accessibility": 95,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "desktop /trust/": {
+  "performance": 90,
+  "accessibility": 96,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "desktop /prices/": {
+  "performance": 89,
+  "accessibility": 96,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "desktop /bali/": {
+  "performance": 90,
+  "accessibility": 95,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "desktop /research/": {
+  "performance": 89,
+  "accessibility": 95,
+  "best-practices": 72,
+  "seo": 97
+ },
+ "desktop /tools/": {
+  "performance": 90,
+  "accessibility": 95,
+  "best-practices": 72,
+  "seo": 97
+ }
+}
