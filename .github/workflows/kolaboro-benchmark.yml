@@ -1,0 +1,39 @@
+name: Kolaboro AI benchmark
+# On demand: score one model alone (Haiku or Sonnet) on the open evaluation set kolaboro.com/open/evals, through the production
+# desk review. The worker forces the other model off for this run only (GitHub OIDC token, audience kolaboro.com, no stored secret).
+# Results, signed per case, go to kolaboro.com/data/benchmark/<model>.json and the leaderboard at kolaboro.com/benchmark/.
+on:
+  workflow_dispatch:
+    inputs:
+      model:
+        description: 'haiku or sonnet'
+        required: true
+        default: haiku
+permissions:
+  contents: write
+  id-token: write
+concurrency:
+  group: kolaboro-benchmark
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            tools/kolaboro-benchmark
+            tools/kolaboro-reliability
+      - name: Run the benchmark
+        env:
+          MODEL: ${{ github.event.inputs.model }}
+        run: |
+          case "$MODEL" in haiku|sonnet) ;; *) echo "model must be haiku or sonnet"; exit 1;; esac
+          python3 tools/kolaboro-benchmark/run.py "$MODEL" "$RUNNER_TEMP/$MODEL.json"
+      - name: Publish to kolaboro.com
+        env:
+          MODEL: ${{ github.event.inputs.model }}
+        run: |
+          bash tools/kolaboro-reliability/publish.sh "kolaboro.com: AI benchmark $MODEL $(date -u +%F)" "$RUNNER_TEMP/$MODEL.json=_s/kolaboro.com/data/benchmark/$MODEL.json"

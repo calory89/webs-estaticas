@@ -1,0 +1,40 @@
+name: Kolaboro log witness
+# Kolaboro's own first witness of its public log, run on GitHub's machines (outside Cloudflare and our database).
+# Daily: download kolaboro.com/api/open/checkpoint, check the log signature, check with an RFC 9162 consistency proof that the
+# tree only grew since the checkpoint saved in tools/kolaboro-witness/state.json, cosign (C2SP tlog-cosignature, Ed25519) and
+# submit to kolaboro.com/api/x/o/witness. A rewritten log makes this job refuse to sign and fail.
+# Needs the repository secret KB_WITNESS_KEY (base64 Ed25519 seed, made with: python3 kolaboro_witness.py keygen witness.key).
+# Without it the job only reports that nothing was signed.
+on:
+  schedule:
+    - cron: '43 8 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  id-token: write
+concurrency:
+  group: kolaboro-witness
+  cancel-in-progress: false
+jobs:
+  witness:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: tools/kolaboro-witness
+      - name: Verify the log and cosign
+        env:
+          KB_WITNESS_KEY: ${{ secrets.KB_WITNESS_KEY }}
+        run: |
+          python3 tools/kolaboro-witness/kolaboro_witness.py run --name kolaboro.com/witness/github-actions \
+            --state tools/kolaboro-witness/state.json --submit --github-oidc --contact "https://kolaboro.com/log/witnesses/"
+      - name: Keep what this witness saw
+        run: |
+          [ -f tools/kolaboro-witness/state.json ] || exit 0
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          git add tools/kolaboro-witness/state.json
+          git diff --cached --quiet && exit 0
+          git commit -q -m "kolaboro witness: state $(date -u +%F)"
+          for i in 1 2 3 4 5; do git pull -q --rebase origin main && git push -q origin HEAD:main && exit 0; sleep $((5 + i * 3)); done; exit 1
