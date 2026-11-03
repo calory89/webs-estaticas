@@ -38,7 +38,9 @@ def get(u, n=6_000_000):
 def dom(u):
     h = urllib.parse.urlparse(u).hostname or ''
     h = h[4:] if h.startswith('www.') else h
-    return '.'.join(h.split('.')[-2:])
+    p = h.split('.')
+    n = 3 if len(p) >= 3 and len(p[-1]) == 2 and p[-2] in ('com', 'co', 'net', 'org', 'gov', 'edu', 'ac', 'or', 'ne', 'go') else 2
+    return '.'.join(p[-n:])
 
 
 STOP = {'the', 'by', 'and', 'of', 'at', 'in', 'residences', 'residence', 'villas', 'villa', 'apartments', 'apartment', 'tower',
@@ -63,7 +65,49 @@ def same_project(p, q):
     return len(a & b) / min(len(a), len(b)) >= 0.6
 
 
-PAGE_TEXT = {}
+PAGE_TEXT, PAGE_OG = {}, {}
+GENERIC = set('''wp content uploads upload images image img media assets asset photo photos pic pics gallery galleries project projects
+property properties development developments residence residences tower towers city dubai final medium large small original
+webp jpeg scaled cover hero banner exterior interior view views render renders rendering cgi bedroom bedrooms bathroom kitchen
+living dining room rooms pool pools unit units type types floor floors plan plans apartment apartments villa villas site storage
+public files file static thumb thumbnail thumbnails home homes page slider slide main desktop mobile night aerial lobby amenity
+amenities facade copy edit website general settings bucket production fetch auto limit night day evening sunset sunrise front back
+side entrance garden terrace balcony rooftop roof beach ocean lake park street master studio penthouse duplex townhouse gym spa
+default featured feature news blog post posts photo shoot image_gallery new launch launches listing listings detail details
+version scaled resized crop cropped high quality full size width height'''.split())
+WIDGET = ('featured', 'related', 'similar', 'recommend', 'other-project', 'more-project', 'others')
+
+
+def own_tokens(p):
+    return toks(p.get('name')) | toks(p.get('slug', '').replace('-', ' ')) | toks(p.get('developer'))
+
+
+def attributable(r, p):
+    """On a listing portal (a site hosting pages of several tracked projects), an image counts for the page's project only if it
+    is not in a featured/related widget, its file name does not name something else, and it is the og:image, sits in the
+    og:image's folder or names the project."""
+    page = r['page']
+    if dom(page) not in PORTALS:
+        return True
+    u = urllib.parse.urlparse(r['u'])
+    path = urllib.parse.unquote(u.path)
+    if any(w in path.lower() for w in WIDGET):
+        return False
+    own = own_tokens(p)
+    stem = path.rsplit('/', 1)[-1].rsplit('.', 1)[0]
+    words = [w.lower() for w in re.split(r'[-_ +]+', stem) if re.fullmatch(r'[A-Za-z][a-z]{3,}|[A-Z]{4,}', w)]
+    rest = [w for w in words if w not in GENERIC and w.rstrip('s') not in GENERIC and w not in toks(p.get('area'))]
+    named = {w for w in re.findall(r'[a-z]{4,}', path.lower())} & own
+    if len(words) >= 2 and rest and not (set(words) & own):
+        return False
+    og = PAGE_OG.get(page)
+    if named or not og or r['u'] == og:
+        return True
+    o = urllib.parse.urlparse(og)
+    od = o.path.split('/')[:-2]
+    return o.hostname == u.hostname and len(od) >= 2 and u.path.split('/')[:len(od)] == od
+
+
 
 
 def name_variants(p):
@@ -89,6 +133,8 @@ def page_imgs(page):
         return []
     PAGE_TEXT[page] = ' ' + ' '.join(re.findall(r'[a-z0-9]+', re.sub(r'<[^>]+>', ' ', html).lower())) + ' '
     c = re.findall(r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)', html)
+    if c:
+        PAGE_OG[page] = urllib.parse.urljoin(final, c[0].strip())
     c += re.findall(r'<img[^>]+(?:data-src|src)=["\']([^"\']+\.(?:jpe?g|png|webp)(?:\?[^"\']*)?)["\']', html, re.I)
     c += re.findall(r'url\(["\']?([^"\')]+\.(?:jpe?g|webp))', html, re.I)
     return [(urllib.parse.urljoin(final, x.strip()), page) for x in c]
@@ -222,7 +268,16 @@ for a, b, c in cand:
         nbr_sites.setdefault(b, set()).add(D[a])
 hubs = {k for k, v in nbr_sites.items() if len(v) >= HUB_SITES}
 
-excl = {'same_domain': 0, 'same_developer': 0, 'same_project_name': 0, 'page_names_other_project': 0, 'hub_image': 0,
+PORTALS = set()
+_devs = {}
+for _p in projs:
+    for _u in {_p['url'], _p.get('docs_url') or _p['url']}:
+        _devs.setdefault(dom(_u), []).append(_p)
+for _d, _ps in _devs.items():
+    if any(not same_developer(x, y) and not same_project(x, y) for x in _ps for y in _ps if x is not y):
+        PORTALS.add(_d)
+excl = {'same_domain': 0, 'same_developer': 0, 'same_project_name': 0, 'page_names_other_project': 0,
+        'portal_image_not_attributable': 0, 'hub_image': 0,
         'geometry_failed': 0}
 kept = []
 for a, b, c in cand:
@@ -233,6 +288,8 @@ for a, b, c in cand:
         excl['same_developer'] += 1; continue
     if same_project(pa, pb):
         excl['same_project_name'] += 1; continue
+    if not attributable(recs[a], pa) or not attributable(recs[b], pb):
+        excl['portal_image_not_attributable'] += 1; continue
     if page_mentions(recs[a]['page'], pb) or page_mentions(recs[b]['page'], pa):
         # a portal page that names the other project is showing its listing (related projects, carousels), not reusing it
         excl['page_names_other_project'] += 1; continue
@@ -288,7 +345,7 @@ for a, b, c in kept:
     def side(k):
         p = projs[P[k]]
         return {'project_id': p.get('slug'), 'project_name': p.get('name'), 'developer': p.get('developer'),
-                'market': p.get('market'), 'image_url': recs[k]['u'], 'page_url': recs[k]['page'],
+                'market': p.get('market'), 'area': p.get('area'), 'image_url': recs[k]['u'], 'page_url': recs[k]['page'],
                 'width': recs[k]['w'], 'height': recs[k]['h']}
     pairs.append({'a': side(a), 'b': side(b), 'cosine': round(c, 4), 'dhash_distance': int(recs[a]['dh'] - recs[b]['dh']),
                   'orb_inliers': None if exact else n, 'identical_file': exact})
@@ -308,6 +365,7 @@ out = {
     'candidates_over_threshold': len(cand),
     'excluded': excl,
     'hub_images': len(hubs),
+    'listing_portals': len(PORTALS),
     'pair_count': len(pairs),
     'pairs': pairs,
     'method': ('Images are collected from each tracked project page (url and docs_url), images under %d px, very wide banners, '
@@ -316,7 +374,10 @@ out = {
                '%s (%s) and pairs from two different projects with cosine >= %.2f are kept if the two pages are on different '
                'domains, the developers differ, the project names do not look like the same project, neither page names the '
                'other project (portal carousels and related listings), and neither image has '
-               'near-duplicates on %d+ other domains (stock or template art). Each surviving pair must then pass a geometric '
+ 'near-duplicates on %d+ other domains (stock or template art). On listing portals (sites hosting pages of several '
+               'tracked projects) an image only counts for the page\'s project if it is not in a featured/related widget, its '
+               'file name does not name another place or project, and it is the page\'s og:image, sits in the og:image folder '
+               'or names the project. Each surviving pair must then pass a geometric '
                'check: at least %d ORB keypoint matches consistent with one RANSAC homography (or byte-identical files). '
                'dhash_distance is reported for reference (0-64, low means near-identical; crops and recolours raise it). '
                'A match means the same picture is used on both pages; it is evidence to check, not proof of wrongdoing: '
