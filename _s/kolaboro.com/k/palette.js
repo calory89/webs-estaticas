@@ -100,9 +100,10 @@
       var q = qs[i], k = h.indexOf(q);
       if (k >= 0) { s += (k === 0 ? 14 : /[\s\-\/]/.test(h[k - 1]) ? 10 : 5) + Math.min(q.length, 6); if (it.t === 'project' && norm(it.title) === q) s += 40; continue; }
       if (q.length < 3) return -1;
-      var j = 0, first = -1, last = -1;
-      for (var x = 0; x < h.length && j < q.length; x++) if (h[x] === q[j]) { if (first < 0) first = x; last = x; j++; }
-      if (j < q.length || last - first > q.length * 3) return -1;
+      // tightest ordered match of the letters, trying each start position (typos like "prcing", "offplan")
+      var best = 1e9, st0 = h.indexOf(q[0]);
+      while (st0 >= 0 && best > q.length) { var j = 1, x = st0 + 1; for (; x < h.length && j < q.length; x++) if (h[x] === q[j]) j++; if (j === q.length) best = Math.min(best, x - st0); else break; st0 = h.indexOf(q[0], st0 + 1); }
+      if (best > q.length * 2) return -1;
       s += 2;
     }
     return s * 10 + it.w * (qs.join('').length < 4 ? 6 : 2) - h.length / 400;
