@@ -1,38 +1,96 @@
 {
- "generated": "2026-11-03T11:09:05Z",
+ "generated": "2026-11-03T11:35:33Z",
  "model": "open_clip ViT-B-32 laion2b_s34b_b79k (open_clip_torch 2.29.0, torch 2.5.1+cpu, CPU)",
  "threshold": 0.85,
  "min_orb_inliers": 30,
- "images_checked": 7040,
- "projects_checked": 695,
+ "images_checked": 8203,
+ "projects_checked": 794,
  "projects_tracked": 891,
  "limits": {
   "images_per_project": 16,
   "min_side_px": 200,
   "download_time_budget_s": 660,
-  "download_budget_hit": false,
+  "download_budget_hit": true,
   "embedding_deadline_s": 1320,
-  "embedding_budget_hit": true,
+  "embedding_budget_hit": false,
   "max_pairs": 200
  },
- "site_chrome_images_dropped": 609,
- "candidates_over_threshold": 2556,
+ "site_chrome_images_dropped": 591,
+ "candidates_over_threshold": 3523,
  "excluded": {
-  "same_domain": 411,
-  "same_developer": 102,
+  "same_domain": 754,
+  "same_developer": 98,
   "same_project_name": 0,
-  "page_names_other_project": 28,
-  "portal_image_not_attributable": 841,
+  "page_names_other_project": 35,
+  "portal_image_not_attributable": 1054,
   "hub_image": 0,
-  "geometry_failed": 1174
+  "geometry_failed": 1580
  },
  "hub_images": 0,
  "same_picture_but_excluded": {
-  "same_developer": 7,
-  "portal_image_not_attributable": 3
+  "same_developer": 5,
+  "portal_image_not_attributable": 6,
+  "page_names_other_project": 2
  },
- "listing_portals": 69,
- "pair_count": 0,
- "pairs": [],
+ "listing_portals": 70,
+ "pair_count": 2,
+ "pairs": [
+  {
+   "a": {
+    "project_id": "xelf-by-sansiri",
+    "project_name": "XELF by Sansiri",
+    "developer": "Sansiri PCL (SET: SIRI); project owner Jirapas Realty Co., Ltd.",
+    "market": "Bangkok",
+    "area": "Rama IV Road, Khlong Tan, Khlong Toei",
+    "image_url": "https://www.sansiri.com/media/enxbtrsm/xelf-condo-cover-banner-mobile-1080x1080.webp?width=1080&amp;upscale=false&amp;quality=75",
+    "page_url": "https://www.sansiri.com/condominium/xelf-by-sansiri/en/",
+    "width": 1080,
+    "height": 1080
+   },
+   "b": {
+    "project_id": "mavista-phrom-phong-major-development",
+    "project_name": "MAVISTA Phrom Phong",
+    "developer": "Major Development PCL",
+    "market": "Bangkok",
+    "area": "Sukhumvit Soi 39, Khlong Tan Nuea, Watthana",
+    "image_url": "https://www.terrabkk.com/images/project/0000036864/07c57555b9d609fe80e0cbe3027aa139.jpg",
+    "page_url": "https://www.terrabkk.com/en/projects/show/36778",
+    "width": 730,
+    "height": 487
+   },
+   "cosine": 0.9721,
+   "dhash_distance": 23,
+   "orb_inliers": 404,
+   "identical_file": false
+  },
+  {
+   "a": {
+    "project_id": "mavista-phrom-phong-major-development",
+    "project_name": "MAVISTA Phrom Phong",
+    "developer": "Major Development PCL",
+    "market": "Bangkok",
+    "area": "Sukhumvit Soi 39, Khlong Tan Nuea, Watthana",
+    "image_url": "https://www.terrabkk.com/images/project/0000036864/07c57555b9d609fe80e0cbe3027aa139.jpg",
+    "page_url": "https://www.terrabkk.com/en/projects/show/36778",
+    "width": 730,
+    "height": 487
+   },
+   "b": {
+    "project_id": "xelf-by-sansiri",
+    "project_name": "XELF by Sansiri",
+    "developer": "Sansiri PCL (SET: SIRI); project owner Jirapas Realty Co., Ltd.",
+    "market": "Bangkok",
+    "area": "Rama IV Road, Khlong Tan, Khlong Toei",
+    "image_url": "https://s3.ap-southeast-1.amazonaws.com/o77site/webproject-source/condominium/xelf-by-sansiri/img/factsheet/xelf-condo-factsheet-en.webp",
+    "page_url": "https://www.sansiri.com/condominium/xelf-by-sansiri/en/",
+    "width": 800,
+    "height": 1200
+   },
+   "cosine": 0.9249,
+   "dhash_distance": 28,
+   "orb_inliers": 368,
+   "identical_file": false
+  }
+ ],
  "method": "Images are collected from each tracked project page (url and docs_url), images under 200 px, very wide banners, flat graphics and URLs naming logos/icons are skipped, at most 16 per project, and a file shown on the pages of two or more projects of the same site is treated as site chrome and dropped. Each image is embedded with CLIP ViT-B-32 (laion2b_s34b_b79k) and pairs from two different projects with cosine >= 0.85 are kept if the two pages are on different domains, the developers differ, the project names do not look like the same project, neither page names the other project (portal carousels and related listings), and neither image has near-duplicates (cosine >= 0.93) on 5+ other domains (stock or template art). On listing portals (sites hosting pages of several tracked projects) an image only counts for the page's project if it is not in a featured/related widget, its file name does not name another place or project, and it is the page's og:image, sits in the og:image folder or names the project. Each surviving pair must then pass a geometric check: at least 30 ORB keypoint matches consistent with one RANSAC homography (or byte-identical files). dhash_distance is reported for reference (0-64, low means near-identical; crops and recolours raise it). A match means the same picture is used on both pages; it is evidence to check, not proof of wrongdoing: agents, portals and sister brands can legitimately share a render."
 }
