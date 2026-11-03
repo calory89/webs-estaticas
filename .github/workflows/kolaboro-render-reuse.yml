@@ -25,11 +25,18 @@ jobs:
         with:
           path: ~/.cache/huggingface
           key: clip-vit-b-32-laion2b-s34b-b79k
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/kolaboro-render-emb
+          key: render-emb-${{ github.run_id }}
+          restore-keys: render-emb-
       - name: Install
         run: |
           pip install -q torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cpu
           pip install -q open_clip_torch==2.29.0 opencv-python-headless==4.10.0.84 pillow==11.0.0 imagehash==4.3.1 numpy==2.1.3
       - name: Find reused renders
+        env:
+          EMB_CACHE: /home/runner/.cache/kolaboro-render-emb/emb.npz
         run: python3 tools/kolaboro-agent/render_reuse.py "$RUNNER_TEMP/render-reuse.json"
       - name: Publish to kolaboro.com
         run: |

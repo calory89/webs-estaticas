@@ -85,12 +85,20 @@ def own_tokens(p):
     return toks(p.get('name')) | toks(p.get('slug', '').replace('-', ' ')) | toks(p.get('developer'))
 
 
+def own_site(page, p):
+    label = dom(page).split('.')[0]
+    return any(t in label for t in own_tokens(p) if len(t) >= 4)
+
+
+IDSEG = re.compile(r'(?=.*\d)([0-9]{5,}|[0-9a-f-]{8,})', re.I)
+
+
 def attributable(r, p):
-    """On a listing portal (a site hosting pages of several tracked projects), an image counts for the page's project only if it
-    is not in a featured/related widget, its file name does not name something else, and it is the og:image, sits in the
-    og:image's folder or names the project."""
+    """On a third-party page (a listing portal hosting several tracked projects, or a site whose name carries neither the
+    project nor the developer), an image counts for the page's project only if it is not in a featured/related widget, its
+    file name does not name something else, and it is the og:image, sits in the og:image's folder or names the project."""
     page = r['page']
-    if dom(page) not in PORTALS:
+    if dom(page) not in PORTALS and own_site(page, p):
         return True
     u = urllib.parse.urlparse(r['u'])
     path = urllib.parse.unquote(u.path)
@@ -107,8 +115,11 @@ def attributable(r, p):
     if named or not og or r['u'] == og:
         return True
     o = urllib.parse.urlparse(og)
-    od = o.path.split('/')[:-2]
-    return o.hostname == u.hostname and len(od) >= 2 and u.path.split('/')[:len(od)] == od
+    oseg, useg = [x for x in o.path.split('/')[:-1] if x], [x for x in u.path.split('/')[:-1] if x]
+    ids = [x for x in oseg if IDSEG.fullmatch(x)]
+    if ids:   # og:image sits in a per-listing folder (numeric id, uuid, hash): the image must sit in the same one
+        return ids[0] in useg
+    return o.hostname == u.hostname and len(oseg) >= 2 and useg[:2] == oseg[:2]
 
 
 
@@ -199,6 +210,16 @@ model, _, prep = open_clip.create_model_and_transforms(MODEL, pretrained=PRETRAI
 model.eval()
 # embed each distinct file once, while the downloads are still running (download threads are I/O bound)
 emb_of, queue, recs = {}, [], []
+CACHE = os.environ.get('EMB_CACHE')   # npz of {sha: embedding} from earlier runs (same model), so only new files are embedded
+cached = {}
+if CACHE and os.path.exists(CACHE):
+    try:
+        z = np.load(CACHE)
+        if str(z['model']) == MODEL + '/' + PRETRAINED:
+            cached = dict(zip(z['sha'].tolist(), z['emb'].astype(np.float32)))
+    except Exception as e:
+        print('cache unreadable', e)
+print('cached embeddings', len(cached), flush=True)
 embed_budget_hit = False
 
 
@@ -217,6 +238,8 @@ with cf.ThreadPoolExecutor(24) as ex:
         if not r:
             continue
         recs.append(r)
+        if r['sha'] in cached:
+            emb_of[r['sha']] = cached[r['sha']]
         if r['sha'] not in emb_of and all(q['sha'] != r['sha'] for q in queue):
             queue.append(r)
         if len(queue) >= 32:
@@ -253,6 +276,10 @@ for r in recs:
 if queue and not embed_budget_hit:
     embed(queue)
 n_before_embed = len(recs)
+if CACHE and emb_of:
+    os.makedirs(os.path.dirname(CACHE) or '.', exist_ok=True)
+    ks = list(emb_of)
+    np.savez(CACHE, sha=np.array(ks), emb=np.stack([emb_of[k] for k in ks]).astype(np.float16), model=MODEL + '/' + PRETRAINED)
 n_files = len({r['sha'] for r in recs})
 recs = [r for r in recs if r['sha'] in emb_of]
 E = np.stack([emb_of[r['sha']] for r in recs]).astype(np.float32)
