@@ -280,7 +280,7 @@ async function tgHook(req, env, ctx) {
 // =====================================================================================================================
 const VAPID_PUBLIC = 'BBxc0rws030fZtH1AZm5aAGvdddpi5mZjmP-IU02TThmJeqxPljPTqAYA7C8KPXBE9aAMjc59M3YLRyK01BRezg';
 const VAPID_SUB = 'https://kolaboro.com/alerts/';
-const PUSH_HOSTS = /^(fcm\.googleapis\.com|updates\.push\.services\.mozilla\.com|[a-z0-9-]+\.push\.services\.mozilla\.com|web\.push\.apple\.com|[a-z0-9.-]+\.notify\.windows\.com|[a-z0-9.-]+\.push\.apple\.com)$/;
+const PUSH_HOSTS = /^(fcm\.googleapis\.com|jmt17\.google\.com|updates\.push\.services\.mozilla\.com|[a-z0-9-]+\.push\.services\.mozilla\.com|web\.push\.apple\.com|[a-z0-9.-]+\.notify\.windows\.com|[a-z0-9.-]+\.push\.apple\.com)$/;
 
 async function hkdf(salt, ikm, info, len) {
   const k = await crypto.subtle.importKey('raw', ikm, 'HKDF', false, ['deriveBits']);

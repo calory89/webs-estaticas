@@ -93,7 +93,7 @@
   }).catch(function () { $('al-state').textContent = 'Could not reach the alerts service.'; });
 
   fetch(API + 'selftest').then(function (r) { return r.json(); }).then(function (t) {
-    $('al-test').innerHTML = (t.rfc8291_appendix_a ? '<b class="al-good">Passes</b>' : '<b class="al-bad">Fails</b>') + ': the server just encrypted the RFC 8291 Appendix A example and got the published ' + t.bytes + ' bytes, byte for byte, in ' + t.ms + ' ms.' +
+    $('al-test').innerHTML = (t.rfc8291_appendix_a ? '<b class="al-good">Passes</b>' : '<b class="al-bad">Fails</b>') + ': the server just encrypted the RFC 8291 Appendix A example and got the published ' + t.bytes + ' bytes, byte for byte (run at ' + new Date(t.ran_at).toUTCString().slice(17, 25) + ' UTC).' +
       (t.vapid_signature_verifies === true ? ' Its VAPID signature verifies with the public key above.' : '');
   }).catch(function () {});
 })();
