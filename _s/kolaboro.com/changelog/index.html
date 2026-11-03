@@ -63,7 +63,7 @@
 <li>Every daily log line is also recorded in Sigstore Rekor, the public transparency log run by the Linux Foundation, next to the Bitcoin timestamp.</li>
 <li>Site photos can be signed by the agent's own phone with a passkey (Face ID or fingerprint). The key never leaves the phone, so nobody can put an agent's name on a photo they did not take. Anyone can check the signature from the public receipt. <a href="/engineering/signed-photos">Signed photos</a></li>
 <li>Three independent verifiers, in JavaScript, Python and Go, with no dependencies. Every day they check the test vectors and the live log and must agree.</li>
-<li>Time travel: <code>/api/open/projects/{id}/at/{day}</code> returns a project as published on a past day, from a daily snapshot whose fingerprint is checked against the public log.</li>
+<li>Time travel: <code style="word-break:break-all">/api/open/projects/{id}/at/{day}</code> returns a project as published on a past day, from a daily snapshot whose fingerprint is checked against the public log.</li>
 <li>Weekly backup restore drill: the newest backup is loaded into an empty database and every table and evidence file must match. First run: 14 tables, 3,960 rows, 5 evidence files, all matched.</li>
 <li>Uptime probes every 5 minutes from outside Cloudflare, errors in visitors' browsers reported to us with a daily digest, and every API answer names the code version that served it.</li>
 <li>Third-party scripts load with Subresource Integrity, a script allowlist runs in report-only mode, and our security contact is published in /.well-known/security.txt.</li>
