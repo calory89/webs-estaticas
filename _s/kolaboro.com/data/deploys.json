@@ -1,6 +1,25 @@
 {
  "deploys": [
   {
+   "at": "2026-11-03T13:11:03Z",
+   "commit": "3233db0b00f7e08b1ef80b92720ee66f8459a43d",
+   "checks_passed": 32,
+   "checks_total": 32,
+   "failed": [],
+   "run": "https://github.com/calory89/webs-estaticas/actions/runs/41641500386",
+   "result": "pass",
+   "wait_s": 163,
+   "changes": [
+    "026d8623e18c",
+    "5acd15a9ce4c",
+    "1e18d6978e83",
+    "22317aa1e898",
+    "3b6b97c4c37a",
+    "2811e4e37d81",
+    "3233db0b00f7"
+   ]
+  },
+  {
    "at": "2026-11-03T13:03:24Z",
    "commit": "fdda8e20288ec163dd61e87401aa06f7695467db",
    "checks_passed": 32,
@@ -35,13 +54,13 @@
  "canary": "Cloudflare Pages sends each push to all visitors at once and offers no percentage canary, so none is claimed. A bad push can be visible for a few minutes until the rollback is live.",
  "rollback_mode": "Rollback: a git commit restoring the files changed since the last passing commit; Pages deploys it in about 1 to 2 minutes. An instant Cloudflare API rollback is built in but needs a Pages-scoped token, not configured yet.",
  "latest_checks": {
-  "at": "2026-11-03T13:03:24.639Z",
-  "commit": "fdda8e20288ec163dd61e87401aa06f7695467db",
+  "at": "2026-11-03T13:11:03.528Z",
+  "commit": "3233db0b00f7e08b1ef80b92720ee66f8459a43d",
   "checks": [
    {
     "name": "build: live commit",
     "ok": true,
-    "detail": "live fdda8e20288e, expected fdda8e20288e"
+    "detail": "live 3233db0b00f7, expected 3233db0b00f7"
    },
    {
     "name": "page /",
@@ -131,7 +150,7 @@
    {
     "name": "api /api/x/l/trust",
     "ok": true,
-    "detail": "{\"controls\":13,\"pass\":10,\"warn\":1,\"fail\":0,\"stale\":0,\"unknown\":2}"
+    "detail": "{\"controls\":13,\"pass\":12,\"warn\":1,\"fail\":0,\"stale\":0,\"unknown\":0}"
    },
    {
     "name": "tls: plain http redirects to https",
@@ -200,7 +219,7 @@
    }
   ]
  },
- "last_checked": "fdda8e20288ec163dd61e87401aa06f7695467db",
- "last_good": "fdda8e20288ec163dd61e87401aa06f7695467db",
- "updated": "2026-11-03T13:03:24Z"
+ "last_checked": "3233db0b00f7e08b1ef80b92720ee66f8459a43d",
+ "last_good": "3233db0b00f7e08b1ef80b92720ee66f8459a43d",
+ "updated": "2026-11-03T13:11:03Z"
 }
