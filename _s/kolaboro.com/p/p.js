@@ -175,7 +175,7 @@
       (notes.length ? '<h3 style="margin-top:26px;font-size:1.1rem">Notes</h3><ul class="pf-list no">' + notes.map(function(f){ return '<li>' + esc(f) + '</li>'; }).join('') + '</ul>' : '') +
       '</div></section>' +
 
-      '<section class="pf-sec pf-reply"><div class="wrap"><h2>Developer\'s right of reply</h2><p class="sub">' + (c.invited ? 'The developer was invited to verify on ' + esc(c.invited) + '. ' : '') + 'No reply has been published yet. Every reply we receive with documents is checked and shown here, next to the findings.</p><p><a class="btn btn-line" href="/developers/reply/?id=' + encodeURIComponent(c.id) + '">Are you the developer? Reply with documents</a></p></div></section>' +
+      '<section class="pf-sec pf-reply"><div class="wrap"><h2>Developer\'s right of reply</h2><div id="pf-replies"></div><p class="sub" id="pf-rsub">' + (c.invited ? 'The developer was invited to verify on ' + esc(c.invited) + '. ' : '') + 'No reply has been published yet. Every reply we receive with documents is checked and shown here, next to the findings.</p><p><a class="btn btn-line" href="/developers/reply/?id=' + encodeURIComponent(c.id) + '">Are you the developer? Reply</a></p></div></section>' +
       (q.length ? '<section class="pf-sec"><div class="wrap"><h2>What to ask the developer</h2><p class="sub">Ask in writing and keep the answers. A good developer can answer each one with a document.</p><ol class="pf-q">' + q.map(function(x){ return '<li>' + esc(x) + '</li>'; }).join('') + '</ol></div></section>' : '') +
 
       '<section class="pf-ponly pf-psrc"><div class="wrap"><h2>Sources and limits</h2><p>Developer claims are read from the developer\'s own pages and listings. Verification levels come from official registers, regulators, courts, stock-exchange filings and major newspapers. Problems are listed only from news, courts and regulators. A published document is not proof that it is genuine; that is what a local agent checks on site and at the registry. This dossier is information, not legal, tax or financial advice. Current version: ' + esc(url) + '. Method: kolaboro.com/how-we-score. Printed ' + today() + '.</p></div></section>' +
@@ -193,6 +193,7 @@
       '<div class="wrap pf-noprint"><div class="pf-cta"><h2>Buying a project that is not on this list?</h2><p>Send us the link. We read what the developer publishes, check it against registers and tell you what is missing before you pay.</p><div class="pf-act"><a class="btn btn-hi" href="/check">Check your own project</a><a class="btn btn-line" href="/follow?id=' + encodeURIComponent(c.id) + '">Follow ' + esc(c.id) + '</a></div></div></div>';
     root.innerHTML = html;
     loadIntel(c);
+    loadReplies(c);
     try { var kb = document.getElementById('pf-kvb'); if (kb && window.kbVerifyLoad) kbVerifyLoad().then(function(KV){ return KV.fetchSigned('/api/open/projects/' + encodeURIComponent(c.id)).then(function(r){ KV.badge(document.getElementById('pf-kvb'), r.check, { what: 'this project record (/api/open/projects/' + c.id + ')' }); }); }).catch(function(){ var e = document.getElementById('pf-kvb'); if (e) e.remove(); }); else if (kb) kb.remove(); } catch (e) {}
     var pb = document.getElementById('pf-print');
     if (pb) pb.addEventListener('click', function(){ try { window.print(); } catch (e) {} });
@@ -299,6 +300,22 @@
     fetch('/api/x/d/project/' + encodeURIComponent(c.id)).then(function(r){ if (!r.ok) throw new Error('http'); return r.json(); })
       .then(function(j){ put('pf-web', webHtml(j, c)); put('pf-drift', driftHtml(j, c)); })
       .catch(function(){ put('pf-web', '<p class="pf-wait">The website record could not be loaded just now. Reload the page to try again.</p>'); });
+  }
+
+  /* Developer replies approved by a moderator (block I: /api/x/i/replies). Empty until that feature is switched on. */
+  function loadReplies(c){
+    fetch('/api/x/i/replies?id=' + encodeURIComponent(c.id)).then(function(r){ return r.ok ? r.json() : null; }).then(function(j){
+      var L = (j && j.replies || []).filter(function(x){ return x && x.reply; }), el = document.getElementById('pf-replies'), sub = document.getElementById('pf-rsub');
+      if (!L.length || !el) return;
+      el.innerHTML = L.map(function(x){
+        var docs = x.docs || [];
+        return '<div class="pf-hist pf-rep"><h3>Reply from the developer' + (x.topic ? ': ' + esc(x.topic) : '') + '</h3>' +
+          '<p class="muted">Sent ' + esc(x.submitted) + ', approved ' + esc(x.approved) + '. Ownership checked by ' + esc(x.ownership || 'a DNS record') + '.' + (x.company ? ' Published by ' + esc(x.company) + ' at their request.' : '') + '</p>' +
+          '<blockquote>' + esc(x.reply) + '</blockquote>' + (x.note ? '<p><b>Kolaboro note:</b> ' + esc(x.note) + '</p>' : '') +
+          (docs.length ? '<p class="pf-fine">' + docs.length + ' document' + (docs.length === 1 ? '' : 's') + ' attached, registered by SHA-256: ' + docs.map(function(d){ return '<a href="/verify?hash=' + esc(d.sha256) + '"><code>' + esc(String(d.sha256 || '').slice(0, 16)) + '</code></a>' + (d.kind ? ' (' + esc(d.kind) + ')' : ''); }).join(', ') + '</p>' : '') + '</div>';
+      }).join('');
+      if (sub) sub.textContent = 'Replies are checked by a moderator before they are published. Every reply with documents is shown here, next to the findings.';
+    }).catch(function(){});
   }
 
   function starLabel(on){ return '<span aria-hidden="true">' + (on ? '\u2605' : '\u2606') + '</span> ' + (on ? 'Saved' : 'Save'); }
