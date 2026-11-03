@@ -22,7 +22,7 @@ async function allow(ctx, key, limit, ttl) {   // per-isolate window plus a fixe
   return true;
 }
 
-const VERSION = 'hz1';
+const VERSION = 'hz2';
 async function hazards(req, u, ctx) {
   const lat = +u.searchParams.get('lat'), lng = +u.searchParams.get('lng');
   if (!(lat >= -60 && lat <= 75 && lng >= -180 && lng <= 180) || !u.searchParams.get('lat') || !u.searchParams.get('lng')) return out({ error: 'need lat (-60..75) and lng (-180..180)' }, 400);
@@ -51,6 +51,8 @@ const ZPROBE = [
   { id: 'gistaru_robots', name: 'GISTARU robots.txt', url: 'https://gistaru.atrbpn.go.id/robots.txt' },
   { id: 'bhumi', name: 'BHUMI (Kementerian ATR/BPN), land and spatial plan map', url: 'https://bhumi.atrbpn.go.id/' },
   { id: 'bhumi_robots', name: 'BHUMI robots.txt', url: 'https://bhumi.atrbpn.go.id/robots.txt' },
+  { id: 'bhumi_wms', name: 'BHUMI GeoServer WMS capabilities', url: 'https://bhumi.atrbpn.go.id/geoserver/ows?service=WMS&request=GetCapabilities' },
+  { id: 'geosvc_wms', name: 'ATR/BPN GeoServer (geosvc) WMS capabilities', url: 'https://geosvc.atrbpn.go.id/geoserver/ows?service=WMS&request=GetCapabilities' },
 ];
 async function probe(p) {
   const t0 = Date.now();
@@ -60,7 +62,8 @@ async function probe(p) {
     const txt = (await r.text()).slice(0, 4000);
     return { id: p.id, name: p.name, url: p.url, status: r.status, ms: Date.now() - t0, type: (r.headers.get('content-type') || '').slice(0, 40),
       services: p.id === 'gistaru_rest' && /"services"/.test(txt) ? (txt.match(/"name":"[^"]+"/g) || []).length : undefined,
-      robots: /robots/.test(p.id) && r.status === 200 && /disallow/i.test(txt) ? txt.split('\n').filter(l => /^(user-agent|disallow|allow)/i.test(l.trim())).slice(0, 12) : undefined };
+      robots: /robots/.test(p.id) && r.status === 200 ? txt.split('\n').map(l => l.trim()).filter(l => /^(user-agent|disallow|allow|crawl-delay)/i.test(l)).slice(0, 12) : undefined,
+      wms_capabilities: /_wms$/.test(p.id) && r.status === 200 ? /WMS_Capabilities|WMT_MS_Capabilities/.test(txt) : undefined };
   } catch (e) { return { id: p.id, name: p.name, url: p.url, status: null, error: String(e.name === 'AbortError' ? 'timeout after 8 s' : e.message || e).slice(0, 80), ms: Date.now() - t0 }; }
   finally { clearTimeout(t); }
 }
