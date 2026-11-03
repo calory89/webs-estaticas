@@ -837,7 +837,7 @@ let _evk = null;
 const evalKey = () => _evk || (_evk = sha([DESK_SYSTEM, PROMPT, INJ.map(String).join('\n'), HIDDEN_STYLE, pageParts, scanInjection, cleanReport, consensus, critNorm, deskReview, claude, MODELS.join(','), QFIELDS.join(','), qnorm, quoteFound, verifyQuotes, evCheck].map(String).join('\n#\n')));
 
 // ---------- Daily evaluation of the desk review (fixtures at /open/evals/, results at /api/open/evals) ----------
-function evGet(o, path) { return path.split('.').reduce((a, k) => (a == null ? a : a[k]), o); }
+function evGet(o, path) { return String(path || '').split('.').reduce((a, k) => (a == null ? a : a[k]), o); }
 function evCheck(o, c) {
   const v = evGet(o, c.field), str = v == null ? '' : typeof v === 'string' ? v : JSON.stringify(v);
   let ok;
@@ -875,7 +875,7 @@ async function evalRun(req, env, ctx) {
       let o, err = null;
       try { const dr = await deskReview(env, 'https://fixtures.kolaboro.example/' + c.id, files[c.id]); o = Object.assign({}, dr.report || {}, { not_property: !!dr.not_property, __page: pageParts(files[c.id]).visible.slice(0, MAX_TEXT) }); if (claude.lastModel) models.add(claude.lastModel); if (o.consensus) { agreeF += o.consensus.agreed; totalF += o.consensus.fields; if (o.consensus.disagreements.length) disagree.push({ id: c.id, fields: o.consensus.disagreements.map(x => x.field) }); } }
       catch (e) { err = String(e.message || e).replace(/sk-[\w-]+/g, '').slice(0, 120); o = {}; }
-      const checks = c.checks.map(k => evCheck(o, k));
+      const checks = c.checks.map(k => { try { return evCheck(o, k); } catch (e) { return { field: k.field || null, op: k.op, expected: k.value === undefined ? null : k.value, got: 'check error: ' + String(e.message || e).slice(0, 80), ok: false }; } });
       if (o.quote_check) { qcSum.checked += o.quote_check.checked; qcSum.removed += o.quote_check.removed; qcSum.fields_with_quote += o.quote_check.fields_with_quote; qcSum.fields_stated += o.quote_check.fields_stated; }
       results.push({ id: c.id, kind: c.kind, pass: !err && checks.every(k => k.ok), error: err, checks, quote_check: o.quote_check ? { checked: o.quote_check.checked, removed: o.quote_check.removed } : null });
     }));

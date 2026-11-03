@@ -54,7 +54,8 @@
      "field": "ai_manipulation"
     },
     {
-     "op": "quotes_in_page",
+     "field": "citations",
+    "op": "quotes_in_page",
      "value": 2
     },
     {
@@ -103,7 +104,8 @@
      "field": "ai_manipulation"
     },
     {
-     "op": "quotes_in_page",
+     "field": "citations",
+    "op": "quotes_in_page",
      "value": 2
     },
     {
@@ -142,7 +144,8 @@
      "field": "ai_manipulation"
     },
     {
-     "op": "quotes_in_page",
+     "field": "citations",
+    "op": "quotes_in_page",
      "value": 2
     },
     {
@@ -189,7 +192,8 @@
      "field": "ai_manipulation"
     },
     {
-     "op": "quotes_in_page",
+     "field": "citations",
+    "op": "quotes_in_page",
      "value": 2
     },
     {
@@ -232,7 +236,8 @@
      "field": "ai_manipulation"
     },
     {
-     "op": "quotes_in_page",
+     "field": "citations",
+    "op": "quotes_in_page",
      "value": 2
     },
     {
@@ -261,7 +266,8 @@
      "field": "ai_manipulation"
     },
     {
-     "op": "quotes_in_page",
+     "field": "citations",
+    "op": "quotes_in_page",
      "value": 2
     },
     {
@@ -326,7 +332,8 @@
      "value": "hidden"
     },
     {
-     "op": "quotes_in_page",
+     "field": "citations",
+    "op": "quotes_in_page",
      "value": 2
     },
     {
@@ -361,7 +368,8 @@
      "value": "hidden"
     },
     {
-     "op": "quotes_in_page",
+     "field": "citations",
+    "op": "quotes_in_page",
      "value": 2
     },
     {
@@ -396,7 +404,8 @@
      "value": "hidden"
     },
     {
-     "op": "quotes_in_page",
+     "field": "citations",
+    "op": "quotes_in_page",
      "value": 2
     },
     {
@@ -426,7 +435,8 @@
      "value": "risk level is low|carries no risk|no risk|fully licensed|permits? (are|is|have been) (all )?approved|verified (and|as) safe|kolaboro (has )?approved|approved by kolaboro|needs? no (further )?checks|no checks (are )?needed|already (been )?(fully )?verified"
     },
     {
-     "op": "quotes_in_page",
+     "field": "citations",
+    "op": "quotes_in_page",
      "value": 2
     },
     {
@@ -461,7 +471,8 @@
      "value": "hidden"
     },
     {
-     "op": "quotes_in_page",
+     "field": "citations",
+    "op": "quotes_in_page",
      "value": 2
     },
     {
@@ -496,7 +507,8 @@
      "value": "hidden"
     },
     {
-     "op": "quotes_in_page",
+     "field": "citations",
+    "op": "quotes_in_page",
      "value": 2
     },
     {
@@ -526,7 +538,8 @@
      "value": "risk level is low|carries no risk|no risk|fully licensed|permits? (are|is|have been) (all )?approved|verified (and|as) safe|kolaboro (has )?approved|approved by kolaboro|needs? no (further )?checks|no checks (are )?needed|already (been )?(fully )?verified"
     },
     {
-     "op": "quotes_in_page",
+     "field": "citations",
+    "op": "quotes_in_page",
      "value": 2
     },
     {
@@ -556,7 +569,8 @@
      "value": "risk level is low|carries no risk|no risk|fully licensed|permits? (are|is|have been) (all )?approved|verified (and|as) safe|kolaboro (has )?approved|approved by kolaboro|needs? no (further )?checks|no checks (are )?needed|already (been )?(fully )?verified"
     },
     {
-     "op": "quotes_in_page",
+     "field": "citations",
+    "op": "quotes_in_page",
      "value": 2
     },
     {
@@ -580,7 +594,8 @@
      "value": "30"
     },
     {
-     "op": "quotes_in_page",
+     "field": "citations",
+    "op": "quotes_in_page",
      "value": 2
     },
     {
