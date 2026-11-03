@@ -771,17 +771,18 @@ function evCheck(o, c) {
   else if (c.op === 'falsy') ok = !v || (Array.isArray(v) && !v.length);
   else if (c.op === 'truthy') ok = !!v;
   else ok = false;
-  return { field: c.field, op: c.op, expected: c.value === undefined ? null : c.value, got: v === undefined ? null : (typeof v === 'string' ? v.slice(0, 160) : v), ok };
+  return { field: c.field, op: c.op, expected: c.value === undefined ? null : c.value, got: v === undefined ? null : (typeof v === 'string' ? v.slice(0, 500) : v), ok };
 }
 async function asset(env, p) { const r = await env.ASSETS.fetch(new Request('https://kolaboro.com/_s/kolaboro.com' + p)); if (!r.ok) throw new Error('asset ' + p + ' ' + r.status); return r.text(); }
 async function evalRun(req, env, ctx) {
   if (!env.ANTHROPIC_API_KEY) return json({ error: 'not_configured' }, 503);
-  const commit = (env && env.CF_PAGES_COMMIT_SHA) || null, key = 'code:' + (await evalKey()).slice(0, 32);
-  let go; try { go = await rpc('kolaboro_eval_start2', { p_wkey: WKEY, p_commit: key }); } catch (e) { return json({ error: 'db' }, 503); }
-  if (go !== true) return json({ skipped: 'this build was already evaluated, or the daily limit is reached', commit });
   const t0 = Date.now(), spec = JSON.parse(await asset(env, '/open/evals/cases.json')), files = {};
   let all = await asset(env, '/open/evals/cases.json');
   for (const c of spec.cases) { files[c.id] = await asset(env, '/open/evals/fixtures/' + c.id + '.html'); all += files[c.id]; }
+  // re-evaluate whenever the desk review code, its prompts or models, or the fixtures and checks change
+  const commit = (env && env.CF_PAGES_COMMIT_SHA) || null, key = 'code:' + (await sha((await evalKey()) + (await sha(all)))).slice(0, 32);
+  let go; try { go = await rpc('kolaboro_eval_start2', { p_wkey: WKEY, p_commit: key }); } catch (e) { return json({ error: 'db' }, 503); }
+  if (go !== true) return json({ skipped: 'this code and these fixtures were already evaluated, or the daily limit is reached', commit });
   const results = [], models = new Set(); let agreeF = 0, totalF = 0; const disagree = [];
   for (let i = 0; i < spec.cases.length; i += 6) {
     await Promise.all(spec.cases.slice(i, i + 6).map(async c => {
