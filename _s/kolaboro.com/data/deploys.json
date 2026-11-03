@@ -1,0 +1,190 @@
+{
+ "deploys": [
+  {
+   "at": "2026-11-03T13:00:45Z",
+   "commit": "0c2bc1f808739aa348e975e8080e871267677d08",
+   "checks_passed": 32,
+   "checks_total": 32,
+   "failed": [],
+   "run": "https://github.com/calory89/webs-estaticas/actions/runs/41639826061",
+   "result": "pass",
+   "wait_s": 243,
+   "changes": [
+    "0c2bc1f80873"
+   ]
+  }
+ ],
+ "drills": [],
+ "about": "Post-deploy guard for kolaboro.com. After each push GitHub Actions waits for the commit to be live, runs the public smoke checks (/open/deploy-smoke.mjs) and, if they fail twice, restores the files changed since the last passing commit. Code: /open/deploy-guard.py.",
+ "canary": "Cloudflare Pages sends each push to all visitors at once and offers no percentage canary, so none is claimed. A bad push can be visible for a few minutes until the rollback is live.",
+ "rollback_mode": "Rollback: a git commit restoring the files changed since the last passing commit; Pages deploys it in about 1 to 2 minutes. An instant Cloudflare API rollback is built in but needs a Pages-scoped token, not configured yet.",
+ "latest_checks": {
+  "at": "2026-11-03T13:00:45.600Z",
+  "commit": "0c2bc1f808739aa348e975e8080e871267677d08",
+  "checks": [
+   {
+    "name": "build: live commit",
+    "ok": true,
+    "detail": "live 0c2bc1f80873, expected 0c2bc1f80873"
+   },
+   {
+    "name": "page /",
+    "ok": true,
+    "detail": "200, 70904 bytes"
+   },
+   {
+    "name": "page /check/",
+    "ok": true,
+    "detail": "200, 54981 bytes"
+   },
+   {
+    "name": "page /database/",
+    "ok": true,
+    "detail": "200, 30789 bytes"
+   },
+   {
+    "name": "page /pricing/",
+    "ok": true,
+    "detail": "200, 24622 bytes"
+   },
+   {
+    "name": "page /p/BALI-021",
+    "ok": true,
+    "detail": "200, 19902 bytes"
+   },
+   {
+    "name": "page /log/",
+    "ok": true,
+    "detail": "200, 25549 bytes"
+   },
+   {
+    "name": "page /verify/",
+    "ok": true,
+    "detail": "200, 35085 bytes"
+   },
+   {
+    "name": "page /status/",
+    "ok": true,
+    "detail": "200, 35298 bytes"
+   },
+   {
+    "name": "page /changelog/",
+    "ok": true,
+    "detail": "200, 31198 bytes"
+   },
+   {
+    "name": "page /docs/api/",
+    "ok": true,
+    "detail": "200, 19198 bytes"
+   },
+   {
+    "name": "page /investors/",
+    "ok": true,
+    "detail": "200, 46688 bytes"
+   },
+   {
+    "name": "page /trust/",
+    "ok": true,
+    "detail": "200, 22574 bytes"
+   },
+   {
+    "name": "page /investors/dossier/",
+    "ok": true,
+    "detail": "200, 19966 bytes"
+   },
+   {
+    "name": "api /api/open/stats",
+    "ok": true,
+    "detail": "891 projects"
+   },
+   {
+    "name": "api /api/open/projects",
+    "ok": true,
+    "detail": "updated,license,note,total,offset,limit"
+   },
+   {
+    "name": "api /api/kb/health",
+    "ok": true,
+    "detail": "database up"
+   },
+   {
+    "name": "api /api/open/checkpoint",
+    "ok": true,
+    "detail": "tree size 2"
+   },
+   {
+    "name": "api /api/x/l/trust",
+    "ok": true,
+    "detail": "{\"controls\":13,\"pass\":10,\"warn\":1,\"fail\":0,\"stale\":0,\"unknown\":2}"
+   },
+   {
+    "name": "tls: plain http redirects to https",
+    "ok": true,
+    "detail": "301 to https://kolaboro.com/"
+   },
+   {
+    "name": "tls: HSTS at least 180 days",
+    "ok": true,
+    "detail": "max-age=15552000"
+   },
+   {
+    "name": "signature on /api/open/stats",
+    "ok": true,
+    "detail": "key kb-f2e04da5878f8c51"
+   },
+   {
+    "name": "browser 1440px /",
+    "ok": true,
+    "detail": "200, no JS errors"
+   },
+   {
+    "name": "browser 1440px /check/",
+    "ok": true,
+    "detail": "200, no JS errors"
+   },
+   {
+    "name": "browser 1440px /p/BALI-021",
+    "ok": true,
+    "detail": "200, no JS errors"
+   },
+   {
+    "name": "browser 1440px /trust/",
+    "ok": true,
+    "detail": "200, no JS errors"
+   },
+   {
+    "name": "browser 1440px /investors/dossier/",
+    "ok": true,
+    "detail": "200, no JS errors"
+   },
+   {
+    "name": "browser 390px /",
+    "ok": true,
+    "detail": "200, no JS errors"
+   },
+   {
+    "name": "browser 390px /check/",
+    "ok": true,
+    "detail": "200, no JS errors"
+   },
+   {
+    "name": "browser 390px /p/BALI-021",
+    "ok": true,
+    "detail": "200, no JS errors"
+   },
+   {
+    "name": "browser 390px /trust/",
+    "ok": true,
+    "detail": "200, no JS errors"
+   },
+   {
+    "name": "browser 390px /investors/dossier/",
+    "ok": true,
+    "detail": "200, no JS errors"
+   }
+  ]
+ },
+ "last_checked": "0c2bc1f808739aa348e975e8080e871267677d08",
+ "last_good": "0c2bc1f808739aa348e975e8080e871267677d08",
+ "updated": "2026-11-03T13:00:45Z"
+}
