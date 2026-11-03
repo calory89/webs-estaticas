@@ -178,7 +178,8 @@ def drill(state, tip):
     live = live_commit(); fetch()
     a = smoke(live); keep_checks(state, a)
     b = smoke(live, inject=True)
-    caught = (not b['ok']) and b.get('failed') == ['drill: injected failure (must fail)']
+    # the live commit can move between the two runs (other pushes), so only the injected check decides whether the failure was caught
+    caught = (not b['ok']) and 'drill: injected failure (must fail)' in (b.get('failed') or [])
     cands = [c for c in git('rev-list', '-40', tip).split() if human(c) and guarded_files(c)]
     built = 'no recent change to roll back'
     ok_build = False
