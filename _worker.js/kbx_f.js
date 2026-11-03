@@ -73,7 +73,7 @@ async function oidc(req, workflowFile) {
 
 // Fault injection. A fetch wrapper that only ever touches Anthropic requests whose body carries an active drill token
 // (a random string planted in the drill's own fixture page). Every other request in the isolate passes straight through.
-const FAULTS = new Map();   // token -> { haiku: 'down' | null, sonnet: 'down' | null }
+const FAULTS = new Map();   // token -> { haiku: 'down' | 'slow' | null, sonnet: 'down' | 'slow' | null }
 function installFaults() {
   if (globalThis.fetch.__kbxf) return;
   const real = globalThis.fetch;
@@ -83,6 +83,7 @@ function installFaults() {
         if (!init.body.includes(tok)) continue;
         const model = (init.body.match(/"model":"([^"]+)"/) || [])[1] || '';
         const mode = /sonnet/.test(model) ? f.sonnet : f.haiku;
+        if (mode === 'slow') { f.hits = (f.hits || 0) + 1; const sig = init.signal; return new Promise((_, rej) => { const t = setTimeout(() => rej(new Error('chaos drill: slow model never answered')), 150000); if (sig) sig.addEventListener('abort', () => { clearTimeout(t); rej(sig.reason || new DOMException('timeout', 'TimeoutError')); }, { once: true }); }); }
         if (mode === 'down') { f.hits = (f.hits || 0) + 1; return new Response(JSON.stringify({ type: 'error', error: { type: 'overloaded_error', message: 'chaos drill: forced failure' } }), { status: 529, headers: { 'content-type': 'application/json' } }); }
       }
     }
@@ -98,6 +99,8 @@ const SCEN = {
   primary_model_down_injection: { fixture: 'i2-hidden-div', faults: { haiku: 'down' }, expect: 'With only the second reader, hidden instructions aimed at AI reviewers are still caught: ai_manipulation detected, attention high.',
     check: (r) => !!(r && r.report && r.report.ai_manipulation && r.report.ai_manipulation.detected && r.report.attention === 'high') },
   second_model_down: { fixture: 'e1-bali-leasehold', faults: { sonnet: 'down' }, expect: 'The primary reader answers alone: a report comes back without a consensus block, title type leasehold.',
+    check: (r) => !!(r && r.report && !r.report.consensus && String(r.report.title_type).toLowerCase() === 'leasehold') },
+  primary_model_slow: { fixture: 'e1-bali-leasehold', faults: { haiku: 'slow' }, expect: 'The primary reader never answers: its call is cut at the 60 s deadline and the second reader answers alone, single reader (no consensus block), title type leasehold.',
     check: (r) => !!(r && r.report && !r.report.consensus && String(r.report.title_type).toLowerCase() === 'leasehold') },
   both_models_down: { fixture: 'e1-bali-leasehold', faults: { haiku: 'down', sonnet: 'down' }, expect: 'No report is invented: the desk review raises a clean error, which the public endpoint turns into HTTP 503 {"error":"model"}.',
     check: (r, err) => !r && !!err },

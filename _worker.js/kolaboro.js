@@ -280,9 +280,14 @@ function aiCost(model, usage) {
   const p = PRICE[/opus/.test(model) ? 'opus' : /sonnet/.test(model) ? 'sonnet' : 'haiku'], u = usage || {};
   return ((u.input_tokens || 0) + (u.cache_creation_input_tokens || 0) + (u.cache_read_input_tokens || 0) * 0.1) * p[0] / 1e6 + (u.output_tokens || 0) * p[1] / 1e6;
 }
-async function anthropic(env, body) {
+// Hard deadline per model call (covers connect, headers and reading the body): a hung model must not hold a request for minutes.
+const AI_TIMEOUT = model => /opus/.test(model) ? 120000 : /sonnet/.test(model) ? 75000 : 60000;
+async function anthropic(env, body, opts) {
   if (!(await aiAllowed())) { const e = new Error('daily AI budget reached'); e.budget = true; throw e; }
-  const r = await fetch('https://api.anthropic.com/v1/messages', { method: 'POST', headers: { 'x-api-key': env.ANTHROPIC_API_KEY, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' }, body: JSON.stringify(body) });
+  const ms = (opts && opts.timeoutMs) || AI_TIMEOUT(String(body && body.model || ''));
+  let r;
+  try { r = await fetch('https://api.anthropic.com/v1/messages', { method: 'POST', headers: { 'x-api-key': env.ANTHROPIC_API_KEY, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' }, body: JSON.stringify(body), signal: AbortSignal.timeout(ms) }); }
+  catch (e) { if (e && (e.name === 'TimeoutError' || e.name === 'AbortError')) { const t = new Error('model timeout after ' + Math.round(ms / 1000) + ' s'); t.timeout = true; throw t; } throw e; }
   if (r.ok) {
     const d = await r.clone().json().catch(() => null);
     if (d && d.usage) rpc('kolaboro_ai_budget', { p_wkey: WKEY, p_usd: Math.round(aiCost(d.model || body.model, d.usage) * 1e6) / 1e6 }).then(b => { if (b && b.allowed === false) BUDGET = { t: Date.now(), allowed: false }; }).catch(() => {});
@@ -311,8 +316,9 @@ const deskCacheKey = u => new Request('https://kolaboro.com/__kb_desk5/' + encod
 async function fetchPage(u) {
   try {
     let r, cur = u, hops = 0;
+    const signal = AbortSignal.timeout(15000);   // one 15 s budget for every hop and the body: a blackholed or trickling server ends in a clean 'fetch' error
     for (let hop = 0; hop < 4; hop++) {   // follow redirects by hand so every hop passes the same URL checks
-      r = await fetch(cur.toString(), { headers: { 'user-agent': 'Mozilla/5.0 (compatible; KolaboroResearchAgent/1.0; +https://kolaboro.com/data-policy)', 'accept': 'text/html' }, redirect: 'manual', cf: { cacheTtl: 3600 } });
+      r = await fetch(cur.toString(), { headers: { 'user-agent': 'Mozilla/5.0 (compatible; KolaboroResearchAgent/1.0; +https://kolaboro.com/data-policy)', 'accept': 'text/html' }, redirect: 'manual', cf: { cacheTtl: 3600 }, signal });
       if (r.status < 300 || r.status >= 400) break;
       const nx = okUrl(new URL(r.headers.get('location') || '', cur).toString()); if (!nx) return { error: 'fetch' }; cur = nx; hops++;
     }
