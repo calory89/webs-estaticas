@@ -6,6 +6,8 @@
 <title>Encrypted deal room | Kolaboro</title>
 <meta name="description" content="A private, end-to-end encrypted room for an off-plan purchase: notes, checklist and small files shared with your lawyer or family. Encrypted in your browser, signed and hash-chained.">
 <meta name="referrer" content="no-referrer">
+<script>/* Move the room key out of the address bar before any other script runs, so no script on the page (including scripts the hosting network adds) can read it from the URL. room.js reads it from this tab's sessionStorage. */
+(function(){var h=location.hash;if(/^#(w|r)=[A-Za-z0-9_-]{43}$/.test(h)){try{sessionStorage.setItem('kb-room-frag',h);history.replaceState(null,'',location.pathname+location.search);}catch(e){}}})();</script>
 <link rel="canonical" href="https://kolaboro.com/room/">
 <link rel="icon" href="/k/favicon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#17212B">
@@ -18,7 +20,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/k/site.css?v=e16142b036">
-<script type="text/plain" data-analytics="off">/* Private page: no analytics or third-party scripts, because the room key is in the address fragment. */</script>
+<script type="text/plain" data-analytics="off">/* Private page: analytics intentionally not loaded (clarity.ms/tag and G-FJKJE77K4V are skipped here), because the room key is in the address fragment. */</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -66,7 +68,7 @@
 
 <div id="rm-start" class="rm-start" hidden>
 <h2>Open a new room</h2>
-<p>A room is just a link. Creating one makes a random 256-bit secret in your browser and puts it after the <code>#</code> of the address, the part browsers never send to any server. Keep the link: it is the only key.</p>
+<p>A room is just a link. Creating one makes a random 256-bit secret in your browser and puts it after the <code>#</code> of the link, the part browsers never send to any server. When you open a link, this page moves the key out of the address bar into this tab's memory before anything else runs. Keep the link from the Share box: it is the only key.</p>
 <div class="rm-acts"><button class="rm-b hi" type="button" id="rm-new">Create a private room</button></div>
 <p class="muted" style="margin-top:12px">No account, no email. Opening a room on this device also creates a signing key for you here, stored in this browser and never exported.</p>
 </div>
@@ -78,7 +80,7 @@
 
 <div class="rm-card">
 <h2>Share</h2>
-<div id="rm-linkrow"><p style="margin:4px 0">Full access (can read and add): give it to your lawyer.</p><div class="rm-row"><input id="rm-link" readonly aria-label="Full access link"><button class="rm-b" type="button" id="rm-copy">Copy</button></div></div>
+<p style="margin:4px 0 10px"><b>Save your link now.</b> The address bar does not show the key, on purpose. Copy the full-access link below into a password manager or a note only you can read.</p><div id="rm-linkrow"><p style="margin:4px 0">Full access (can read and add): give it to your lawyer.</p><div class="rm-row"><input id="rm-link" readonly aria-label="Full access link"><button class="rm-b" type="button" id="rm-copy">Copy</button></div></div>
 <p style="margin:12px 0 4px">Read-only: for family who should see but not change anything.</p><div class="rm-row"><input id="rm-rolink" readonly aria-label="Read-only link"><button class="rm-b" type="button" id="rm-rocopy">Copy</button></div>
 <p class="muted" style="margin-top:10px">Send links through a channel you trust (in person, Signal). Anyone holding a link has its access, and links cannot be revoked one by one: to cut someone off, export, open a new room and share the new link.</p>
 </div>
@@ -112,10 +114,10 @@
 <div><h3>What we can see</h3><ul><li>A room id (a one-way hash of the key) and how many entries it has, their sizes and times.</li><li>Your IP address when you connect, like any website.</li><li>Nothing else: no text, no file names, no names of people. Those are inside the encryption.</li></ul></div>
 <div><h3>What we cannot do</h3><ul><li><b>Recover a lost link.</b> We never have the key. Lose every copy of the link and the room is unreadable forever, for you and for us.</li><li>Read your room, even if asked by anyone: we do not hold anything that decrypts it.</li><li>Change an entry or insert a fake one without the timeline showing "tampering detected".</li></ul></div>
 <div><h3>How it works</h3><ul><li>AES-256-GCM, key derived with HKDF from a 256-bit secret in the URL fragment. Each entry is bound to this room and its position.</li><li>Each entry is signed with its author's ECDSA P-256 key, made in the browser and not exportable.</li><li>Each entry includes the SHA-256 of the previous one: a hash chain. Your browser checks all of it every time.</li><li>Your device remembers the last entry it saw, so a server that deletes recent entries is caught.</li></ul></div>
-<div><h3>Limits you should know</h3><ul><li>Anyone with the full link can read and write. Treat it like a house key.</li><li>The key is in the address: it can end up in browser history or synced bookmarks. Use a private window on shared computers. This page loads no analytics or third-party scripts.</li><li>Small files only (200 KB). Larger documents: share them another way and add their fingerprint here.</li><li>A malicious version of this page could steal keys. The code is readable: <a href="/room/room.js">room.js</a>.</li></ul></div>
+<div><h3>Limits you should know</h3><ul><li>Anyone with the full link can read and write. Treat it like a house key.</li><li>The key is in the link. This page removes it from the address bar on arrival, so it does not stay in browser history, but wherever you paste the link keeps a copy. Use a private window on shared computers. This page loads no analytics scripts.</li><li>Small files only (200 KB). Larger documents: share them another way and add their fingerprint here.</li><li>A malicious version of this page could steal keys. The code is readable: <a href="/room/room.js">room.js</a>.</li></ul></div>
 </div>
 </div></section>
-<script src="/room/room.js?v=8a659ac57e" defer></script>
+<script src="/room/room.js?v=eaf197af03" defer></script>
 </main>
 
 <footer>

@@ -170,17 +170,19 @@
   }
 
   function go() {
-    return myKey().then(function () { return openRoom(location.hash); }).then(function (r) {
+    var frag = location.hash; if (/^#(w|r)=/.test(frag)) { try { sessionStorage.setItem('kb-room-frag', frag); history.replaceState(null, '', location.pathname + location.search); } catch (e) {} } else { try { frag = sessionStorage.getItem('kb-room-frag') || ''; } catch (e) { frag = ''; } }
+    return myKey().then(function () { return openRoom(frag); }).then(function (r) {
       R = r;
-      if (!R) { $('rm-start').hidden = false; $('rm-room').hidden = true; if (location.hash) msg('That link is not a valid room link.', true); return; }
+      if (!R) { $('rm-start').hidden = false; $('rm-room').hidden = true; if (frag) msg('That link is not a valid room link.', true); return; }
       return startRoom();
     }).catch(function (e) { $('rm-start').hidden = false; msg('This browser cannot run the room (WebCrypto unavailable): ' + (e && e.message || e), true); });
   }
 
   // ---------- events ----------
   var JUST = null;
-  $('rm-new').onclick = function () { var s = crypto.getRandomValues(new Uint8Array(32)); openRoom('#w=' + b64u(s)).then(function (r) { JUST = r.id; location.hash = 'w=' + b64u(s); }); };
-  window.addEventListener('hashchange', function () { ENV = []; LOG = []; HEAD = ZERO; BROKEN = null; clearInterval(POLL); go(); });
+  $('rm-new').onclick = function () { var s = crypto.getRandomValues(new Uint8Array(32)), f = '#w=' + b64u(s); openRoom(f).then(function (r) { JUST = r.id; try { sessionStorage.setItem('kb-room-frag', f); } catch (e) {} reset(); go(); }); };
+  function reset() { ENV = []; LOG = []; HEAD = ZERO; BROKEN = null; ROLLBACK = null; clearInterval(POLL); }
+  window.addEventListener('hashchange', function () { if (/^#(w|r)=/.test(location.hash)) { reset(); go(); } });
   function guard(p) { BUSY = true; return p.catch(function (e) { msg(String(e && e.message || e), true); }).then(function () { BUSY = false; }); }
   $('rm-noteform').onsubmit = function (e) { e.preventDefault(); var t = $('rm-note').value.trim(); if (!t) return; guard(append('note', { text: t.slice(0, 4000) }).then(function () { $('rm-note').value = ''; msg('Note encrypted, signed and added.'); })); };
   $('rm-itemform').onsubmit = function (e) { e.preventDefault(); var t = $('rm-item').value.trim(); if (!t) return; guard(append('item', { text: t.slice(0, 200) }).then(function () { $('rm-item').value = ''; })); };
@@ -222,7 +224,7 @@
   $('rm-forget').onclick = function () {
     if (!confirm(MODE === 'server' ? 'Delete this room from the server for everyone, and from this device? This cannot be undone.' : 'Delete this room from this device? Export first if you need it.')) return;
     var p = MODE === 'server' && R.canWrite ? fetch(API + '/' + R.id + '/delete', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ wtok: R.wtok }) }) : Promise.resolve();
-    p.then(function () { return dbDel(localKey()); }).then(function () { ls('kb-room-head:' + R.id, null); location.hash = ''; location.reload(); });
+    p.then(function () { return dbDel(localKey()); }).then(function () { ls('kb-room-head:' + R.id, null); try { sessionStorage.removeItem('kb-room-frag'); } catch (e) {} location.reload(); });
   };
   window.KBROOM = { state: function () { return { mode: MODE, id: R && R.id, entries: LOG.length, broken: BROKEN, rollback: ROLLBACK, head: HEAD }; }, _env: function () { return ENV; } };
   go();
