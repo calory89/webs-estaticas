@@ -123,3 +123,4 @@
 .st-rth figure{margin:0;flex:none;width:76px}
 .st-rth img{display:block;width:76px;height:76px;border-radius:8px;background:#111;image-rendering:auto}
 .st-rth figcaption{font-size:.72rem;color:var(--muted);margin-top:4px;line-height:1.3}
+@media(max-width:900px){.st-v{grid-template-columns:minmax(0,1fr)}}.st-side,.st-radar{min-width:0}
