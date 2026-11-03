@@ -48,12 +48,8 @@ def live_commit():
     return j['commit'], 'https://kolaboro.com/api/open/build'
 
 
-def have(obj):
-    return subprocess.run(['git', 'cat-file', '-e', obj], capture_output=True).returncode == 0
-
-
 def ensure_commit(c):
-    if not have(c + '^{commit}'):
+    if os.environ.get('COMMIT_LOCAL') != '1':
         git('fetch', '-q', '--depth=1', '--filter=blob:none', '--no-tags', 'origin', c)
 
 
@@ -70,15 +66,18 @@ def ls(c, path):
 
 
 def fetch_blobs(oids):
-    missing = [o for o in oids if not have(o)]
-    if not missing:
+    """Download the given blobs in one request (the same request git makes for a partial clone's missing objects).
+    No per-object existence check: in a partial clone that check itself would download each object one at a time."""
+    oids = list(oids)
+    if not oids:
         return 0
-    # the same request git makes for a partial clone's missing objects, but for all of them at once
-    r = subprocess.run(['git', '-c', 'fetch.negotiationAlgorithm=noop', 'fetch', '-q', 'origin', '--no-tags', '--no-write-fetch-head',
-                        '--recurse-submodules=no', '--filter=blob:none', '--stdin'], input='\n'.join(missing).encode(), capture_output=True)
-    if r.returncode != 0:
-        print('batch blob fetch failed, falling back to one by one:', r.stderr.decode(errors='replace')[:300])
-    return len(missing)
+    for i in range(0, len(oids), 1000):
+        part = oids[i:i + 1000]
+        r = subprocess.run(['git', '-c', 'fetch.negotiationAlgorithm=noop', 'fetch', '-q', 'origin', '--no-tags', '--no-write-fetch-head',
+                            '--recurse-submodules=no', '--filter=blob:none', '--stdin'], input='\n'.join(part).encode(), capture_output=True)
+        if r.returncode != 0:
+            print('batch blob fetch failed (objects will be fetched one by one):', r.stderr.decode(errors='replace')[:300])
+    return len(oids)
 
 
 def blob_bytes(oids):
