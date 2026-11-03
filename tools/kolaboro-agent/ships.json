@@ -2,6 +2,54 @@
  {
   "d": "2026-11-03",
   "k": "feature",
+  "t": "Bitcoin timestamps checked in your browser against the block itself, via mempool.space",
+  "u": "/log/"
+ },
+ {
+  "d": "2026-11-03",
+  "k": "feature",
+  "t": "Two AI models must agree on the fields a buyer acts on; disagreements are shown",
+  "u": "/engineering/ai-safety/"
+ },
+ {
+  "d": "2026-11-03",
+  "k": "feature",
+  "t": "Founder passkey co-signature for each daily log line",
+  "u": "/engineering/transparency-log/"
+ },
+ {
+  "d": "2026-11-03",
+  "k": "feature",
+  "t": "Case-file PDFs registered by SHA-256; check any PDF on /verify",
+  "u": "/verify/#pdf"
+ },
+ {
+  "d": "2026-11-03",
+  "k": "feature",
+  "t": "Second uptime vantage: hourly GitHub probes authenticated with OIDC, no stored secret",
+  "u": "/status/"
+ },
+ {
+  "d": "2026-11-03",
+  "k": "feature",
+  "t": "Weekly OWASP ZAP scan: 0 high-risk findings",
+  "u": "/status/"
+ },
+ {
+  "d": "2026-11-03",
+  "k": "feature",
+  "t": "Daily AI cost ceiling, decoy credentials and a data freshness objective",
+  "u": "/engineering/reliability/"
+ },
+ {
+  "d": "2026-11-03",
+  "k": "feature",
+  "t": "Satellite watch adds Sentinel-1 radar: sees through clouds, 27 sites",
+  "u": "/satellite/"
+ },
+ {
+  "d": "2026-11-03",
+  "k": "feature",
   "t": "AI desk review hardened against manipulated websites: hidden text removed, page fenced as data, AI-directed instructions flagged to the buyer",
   "u": "/engineering/ai-safety/"
  },
