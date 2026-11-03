@@ -1,4 +1,14 @@
 /* Kolaboro shared script: nav, events, sticky CTA, lead forms */
+/* on-demand modules: kbLoad(name) loads a versioned script once; kbVerifyLoad() resolves to window.KBVerify (k/verify-badge.js) */
+(function () {
+  var V = { palette: '/k/palette.js?v=bb494238d1', verify: '/k/verify-badge.js?v=d6fef3de86' }, P = {};
+  window.kbLoad = function (n) {
+    return P[n] || (P[n] = new Promise(function (ok, no) { var s = document.createElement('script'); s.src = V[n]; s.async = true; s.onload = ok; s.onerror = function () { delete P[n]; no(new Error('load ' + n)); }; document.head.appendChild(s); }));
+  };
+  window.kbVerifyLoad = function () { return window.KBVerify ? Promise.resolve(window.KBVerify) : window.kbLoad('verify').then(function () { return window.KBVerify; }); };
+  // run analytics-like side effects only once a prerendered page is really shown
+  window.kbWhenActive = function (fn) { if (document.prerendering) document.addEventListener('prerenderingchange', fn, { once: true }); else fn(); };
+})();
 (function () {
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   function ev(name, params) {
@@ -23,7 +33,15 @@
 
   // live counts: every [data-db] number follows the published database
   var dataP = null;
-  function getData() { return dataP || (dataP = fetch('/api/open/summary?t=' + Math.floor(Date.now() / 6e5)).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; })); }
+  var sumUrl = '/api/open/summary?t=' + Math.floor(Date.now() / 6e5), kvbSum = document.querySelector('[data-kvb="summary"]');
+  function getData() {
+    if (dataP) return dataP;
+    // where the page shows a badge for these numbers, the signed answer is checked in the browser before the badge turns green
+    if (kvbSum) dataP = window.kbVerifyLoad().then(function (KV) { return KV.fetchSigned(sumUrl).then(function (r) { KV.badge(kvbSum, r.check, { what: 'these database numbers (/api/open/summary)' }); return r.ok ? r.json : null; }); })
+      .catch(function () { kvbSum.textContent = 'Signature not checked'; kvbSum.setAttribute('data-kvb-state', 'error'); return fetch(sumUrl).then(function (r) { return r.ok ? r.json() : null; }); }).catch(function () { return null; });
+    else dataP = fetch(sumUrl).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; });
+    return dataP;
+  }
   if (document.querySelector('[data-db]')) {
     getData().then(function (d) {
       if (!d || !d.projects) return; var db = d.db || {}; var v = { projects: d.projects, markets: d.markets, countries: d.countries, claims_total: db.claims_total, contradicted: (db.claims || {}).contradicted, all_six_public: db.all_six_public, with_flags: db.with_flags, sources: db.sources, data_points: db.data_points };
@@ -400,7 +418,58 @@
       } catch (e) {}
       return of.call(this, u, o);
     };
+    (window.kbWhenActive || function (f) { f(); })(function () {
     var seen = false; try { seen = !!sessionStorage.getItem('kb-visit'); sessionStorage.setItem('kb-visit', '1'); } catch (e) { seen = true; }
     if (!seen && !/^\/(admin|portal|agents\/me)/.test(location.pathname) && !/bot|crawl|spider|lighthouse|headless/i.test(navigator.userAgent)) rpc('kolaboro_event', { p_kind: 'visit', p_page: location.pathname.slice(0, 200), p_data: { src: a.src, medium: a.medium, campaign: a.campaign, ref: a.ref } }).catch(function(){});
+    });
   } catch (e) {}
+})();
+
+/* 3 Nov 2026: instant navigation (Speculation Rules) and the command palette (Cmd/Ctrl+K, search button in the header) */
+(function () {
+  var path = location.pathname, priv = /^\/(admin|portal|agents\/me|backup-admin)/.test(path);
+  // Same-origin links are prefetched and prerendered when the pointer rests on them (or on touch start), so the click shows a ready page.
+  // Left out: private areas, APIs, sign-in and sign-out, data files, links with a query string, new-tab, download and video links.
+  try {
+    if (!priv && window.HTMLScriptElement && HTMLScriptElement.supports && HTMLScriptElement.supports('speculationrules') && !document.querySelector('script[type=speculationrules]')) {
+      var where = { and: [{ href_matches: '/*' },
+        { not: { href_matches: ['/admin*', '/api/*', '/portal*', '/login*', '/logout*', '/agents/me*', '/confirm-email*', '/reset*', '/thanks*', '/backup-admin*', '/mcp*', '/data/*', '/feed*', '/*.pdf', '/*.mp4', '/*.zip', '/*.csv', '/*.json', '/*.xml', '/*.png', '/*.jpg', '/*.webp'] } },
+        { not: { selector_matches: 'a[href*="?"], a[href*="logout"], a[href*="sign-out"], a[download], a[target=_blank], a[rel~=nofollow], a[data-video], a[data-no-prerender]' } }] };
+      var sr = document.createElement('script'); sr.type = 'speculationrules';
+      sr.textContent = JSON.stringify({ prefetch: [{ source: 'document', where: where, eagerness: 'moderate' }], prerender: [{ source: 'document', where: where, eagerness: 'moderate' }] });
+      document.head.appendChild(sr);
+    }
+  } catch (e) {}
+
+  if (/^\/(admin|backup-admin)/.test(path)) return;
+  var mac = /Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent);
+  var st = document.createElement('style');
+  st.textContent = '.kx-sb{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 8px 0 12px;border:1.5px solid rgba(23,33,43,.22);border-radius:10px;background:rgba(255,255,255,.55);color:#2A3541;font:600 .88rem Archivo,system-ui,sans-serif;cursor:pointer;flex:none;white-space:nowrap}' +
+    '.kx-sb:hover{border-color:#17212B;color:#17212B}.kx-sb svg{width:16px;height:16px;flex:none}' +
+    '.kx-sb kbd{font:600 .7rem ui-monospace,Menlo,monospace;border:1px solid rgba(23,33,43,.2);border-bottom-width:2px;border-radius:5px;padding:1px 5px;color:#59626B;background:#fff}' +
+    '@media (min-width:901px){.nav-in>.nav-right{order:3}.nav-in>.links{margin-left:auto}}' +
+    '@media (max-width:1240px){.kx-sb .kx-t,.kx-sb kbd{display:none}.kx-sb{width:40px;padding:0;justify-content:center}}' +
+    '@media (max-width:900px){.kx-sb{width:44px;height:44px;border:2px solid #17212B;border-radius:12px;background:none;color:#17212B}}';
+  document.head.appendChild(st);
+  var nin = document.querySelector('.nav .nav-in'), btn = null;
+  if (nin) {
+    btn = document.createElement('button'); btn.type = 'button'; btn.className = 'kx-sb'; btn.setAttribute('data-kx-search', '');
+    btn.setAttribute('aria-haspopup', 'dialog'); btn.setAttribute('aria-expanded', 'false'); btn.setAttribute('aria-label', 'Search projects, markets and pages (' + (mac ? 'Command' : 'Control') + ' K)');
+    btn.innerHTML = '<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="m13 13 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="kx-t">Search</span><kbd aria-hidden="true">' + (mac ? '⌘K' : 'Ctrl K') + '</kbd>';
+    var nr = nin.querySelector('.nav-right'); if (nr) nr.insertBefore(btn, nr.firstChild); else nin.appendChild(btn);
+  }
+  function openP(q) { window.kbLoad('palette').then(function () { window.KBPalette.open(q); }).catch(function () {}); }
+  function warm() { window.kbLoad('palette').then(function () { window.KBPalette.load(); }).catch(function () {}); }
+  document.addEventListener('click', function (e) { var t = e.target.closest && e.target.closest('[data-kx-search]'); if (t) { e.preventDefault(); openP(); } });
+  document.addEventListener('keydown', function (e) {
+    if ((e.metaKey || e.ctrlKey) && !e.altKey && !e.shiftKey && (e.key === 'k' || e.key === 'K')) { e.preventDefault(); if (window.KBPalette && KBPalette.isOpen()) KBPalette.close(); else openP(); }
+  });
+  if (btn) { btn.addEventListener('pointerenter', warm, { once: true }); btn.addEventListener('focus', warm, { once: true }); }
+  // keep a copy of the index in this browser so search also works offline: fetched once, in idle time, unless data saving is on
+  var has = false; try { has = !!localStorage.getItem('kb-sx-v1'); } catch (e) { has = true; }
+  var save = navigator.connection && navigator.connection.saveData;
+  if (!has && !save && !priv) window.kbWhenActive(function () {
+    var go = function () { (window.requestIdleCallback || function (f) { setTimeout(f, 200); })(function () { setTimeout(warm, 2500); }, { timeout: 4000 }); };
+    if (document.readyState === 'complete') go(); else addEventListener('load', go, { once: true });
+  });
 })();
