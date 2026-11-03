@@ -318,14 +318,14 @@
       parts.push(f.sha256 === m.sha256 ? '<b class="lv-ok">Matches</b> the SHA-256 in the <a href="' + SRC.parquet.manifest + '">manifest</a>' : '<b class="lv-bad">Does not match</b> the manifest (' + esc(String(f.sha256 || '').slice(0, 12)) + '…). The file may be mid-update; reload in a minute.');
       parts.push('built ' + esc(String(M.generated || '').replace('T', ' ').replace('Z', ' UTC')) + ' from <a href="' + esc(M.source && M.source.url) + '">bali-cases.json</a> (' + fmt(M.source && M.source.projects) + ' projects, updated ' + esc(M.source && M.source.updated) + ')');
       var done = function (sigOk) {
-        if (sigOk === true) parts.push('the manifest answer is <b class="lv-ok">signed by Kolaboro</b> (Ed25519, checked here with <a href="/open/kolaboro-verify.js">kolaboro-verify.js</a>)');
+        if (sigOk === true) parts.push('the server re-hashed the file and <b class="lv-ok">signed the same SHA-256</b> (Ed25519, checked here with <a href="/open/kolaboro-verify.js">kolaboro-verify.js</a>)');
         else if (sigOk === false) parts.push('the manifest signature <b class="lv-bad">could not be confirmed</b> in this browser');
         $('lvMan').innerHTML = '<dt>Checks</dt><dd>' + parts.join('; ') + '.</dd>';
       };
       if (!a[1] || !a[1].sig || !G.KV) return done(null);
       G.KV.verifySignature(a[1].body, a[1].sig, 'rnY6UvDI+L6e8j3a+UPwmddQJFapkfmEXWwHuXzdmzw=').then(function (ok) {
         var j = null; try { j = JSON.parse(a[1].body); } catch (e) {}
-        var same = j && (j.files || []).some(function (x) { return x.path === SRC.parquet.url && x.sha256 === m.sha256; });
+        var same = j && (j.files || []).some(function (x) { return x.path === SRC.parquet.url && (x.sha256_served || x.sha256) === m.sha256; });
         done(ok && same ? true : (ok ? null : false));
       }, function () { done(false); });
     }).catch(function () { $('lvMan').innerHTML = '<dt>Checks</dt><dd>Manifest not reachable right now; the SHA-256 above is still what you downloaded.</dd>'; });
