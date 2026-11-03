@@ -1,0 +1,74 @@
+name: Kolaboro visual diff
+# Daily: full-page screenshots of tracked developer websites whose text fingerprint changed (plus up to 150 first
+# baselines per run), compared with the previous capture. Publishes ONLY page geometry to kolaboro.com/data/visual-diff.json.
+# Screenshots stay private: rolling baselines in the Actions cache, before/after/diff images as a 90-day artifact.
+on:
+  schedule:
+    - cron: '23 15 * * *'
+  push:
+    branches: [main]
+    paths: ['tools/kolaboro-agent/visual_diff.py', '.github/workflows/kolaboro-visual.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-visual
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: tools/kolaboro-agent
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/kolaboro-visual
+          key: visual-base-${{ github.run_id }}
+          restore-keys: visual-base-
+      - name: Install
+        run: |
+          pip install -q playwright==1.48.0 pillow==11.0.0 numpy==2.1.3
+          python3 -m playwright install --with-deps chromium >/dev/null
+      - name: Published case ids
+        run: |
+          git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          git show FETCH_HEAD:_s/kolaboro.com/data/bali-cases.json > "$RUNNER_TEMP/bali-cases.json"
+      - name: Capture and compare
+        env:
+          CASES_JSON: ${{ runner.temp }}/bali-cases.json
+          VISUAL_ART: ${{ runner.temp }}/visual-art
+          VISUAL_NEW_BASELINES: '150'
+          VISUAL_BUDGET_S: '1500'
+        run: python3 tools/kolaboro-agent/visual_diff.py "$RUNNER_TEMP/visual-diff.json"
+      - name: Keep private images (90 days)
+        uses: actions/upload-artifact@v4
+        with:
+          name: kolaboro-visual-${{ github.run_id }}
+          path: ${{ runner.temp }}/visual-art
+          retention-days: 90
+          if-no-files-found: ignore
+      - name: Save state on main
+        run: |
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          git add tools/kolaboro-agent/data/visual/state.json
+          git diff --cached --quiet && exit 0
+          git commit -q -m "kolaboro visual diff: state $(date -u +%F) (run ${{ github.run_id }})"
+          for i in 1 2 3 4 5; do git push -q origin HEAD:main && exit 0; git pull -q --rebase origin main; sleep 5; done; exit 1
+      - name: Publish geometry to kolaboro.com
+        run: |
+          set -e
+          git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          for i in 1 2 3 4 5; do
+            P=$(git rev-parse FETCH_HEAD)
+            export GIT_INDEX_FILE=$RUNNER_TEMP/idx; rm -f $GIT_INDEX_FILE; git read-tree $P
+            H=$(git hash-object -w "$RUNNER_TEMP/visual-diff.json")
+            git update-index --add --cacheinfo 100644,$H,_s/kolaboro.com/data/visual-diff.json
+            T=$(git write-tree); unset GIT_INDEX_FILE
+            [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
+            C=$(git commit-tree $T -p $P -m "kolaboro.com: visual diff $(date -u +%F)")
+            git push -q origin $C:refs/heads/pub/_lovable && exit 0
+            sleep 5; git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          done; exit 1
