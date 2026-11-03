@@ -97,7 +97,7 @@ function pageParts(html) {
 }
 function scanInjection(visible, hidden) {
   const hits = [];
-  const look = (t, where) => { for (const re of INJ) { const m = re.exec(t); if (m) { const a = Math.max(0, m.index - 60), b = Math.min(t.length, m.index + m[0].length + 60); const tx = (a ? '…' : '') + t.slice(a, b).trim() + (b < t.length ? '…' : ''); if (!hits.some(x => x.text === tx)) hits.push({ where, text: tx }); if (hits.length >= 3) return; } } };
+  const look = (t, where) => { const seen = []; for (const re of INJ) { const m = re.exec(t); if (m) { if (seen.some(p => Math.abs(p - m.index) < 160)) continue; seen.push(m.index); const a = Math.max(0, m.index - 60), b = Math.min(t.length, m.index + m[0].length + 60); const tx = (a ? '…' : '') + t.slice(a, b).trim() + (b < t.length ? '…' : ''); if (!hits.some(x => x.text === tx)) hits.push({ where, text: tx }); if (hits.length >= 3) return; } } };
   hidden.forEach(t => hits.length < 3 && look(t, 'hidden'));
   if (hits.length < 3) look(visible, 'visible');
   return hits;
@@ -450,7 +450,7 @@ async function ppWebhook(req, env, ctx) {
 async function rpc(fn, args) {
   const r = await fetch(SB_RPC + fn, { method: 'POST', headers: { apikey: SB_ANON, authorization: 'Bearer ' + SB_ANON, 'content-type': 'application/json' }, body: JSON.stringify(args) });
   if (!r.ok) throw new Error('db ' + r.status);
-  return r.json();
+  const t = await r.text(); return t ? JSON.parse(t) : null;   // functions returning void answer 204 with no body
 }
 function hexBytes(h) { const a = new Uint8Array(h.length / 2); for (let i = 0; i < a.length; i++) a[i] = parseInt(h.substr(i * 2, 2), 16); return a; }
 function b64(u8) { let s = ''; for (let i = 0; i < u8.length; i += 8192) s += String.fromCharCode.apply(null, u8.subarray(i, i + 8192)); return btoa(s); }
