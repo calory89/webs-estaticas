@@ -28,9 +28,9 @@ STAC = 'https://earth-search.aws.element84.com/v1'
 PREV_URL = 'https://kolaboro.com/data/satellite-optical.json'
 HALF = 0.005            # same ~1.1 km box as satellite.py
 PLOT_BUFFER_M = 100     # when a site has a plot point
-CLEAR = (4, 5, 6, 7)    # SCL: vegetation, not vegetated, water, unclassified. Excluded: 0 nodata, 1 saturated, 2 dark/shadow, 3 cloud shadow, 8-10 cloud and cirrus, 11 snow
+CLEAR = (4, 5, 6)       # SCL: vegetation, not vegetated, water. Excluded: 0 nodata, 1 saturated, 2 dark/shadow, 3 cloud shadow, 7 unclassified (often haze and cloud edges), 8-10 cloud and cirrus, 11 snow
 MAX_SCENES = 3          # clearest scenes kept per month
-MIN_SCENE_CLEAR = 0.3   # scene must see at least 30% of the box without cloud
+MIN_SCENE_CLEAR = 0.5   # scene must see at least half of the box without cloud
 MONTH_OK = 60           # month published with metrics if >= 60% of the box was seen clear at least once
 FRAME_OK = 80           # frame and timelapse only from months >= 80% clear
 BUILT_NDBI, BUILT_NDVI = 0.0, 0.25
@@ -152,7 +152,7 @@ def site_series(cat, site, mlist, prev, outdir, deadline):
     t0 = time.time()
     items = list(cat.search(collections=['sentinel-2-l2a'], bbox=site.bbox,
                             datetime='%s-01T00:00:00Z/%sT23:59:59Z' % (mlist[0], datetime.date.today().isoformat()),
-                            query={'eo:cloud_cover': {'lt': 85}}, limit=200).items())
+                            query={'eo:cloud_cover': {'lt': 60}}, limit=200).items())
     by_month = {}
     for it in items:
         by_month.setdefault(it.datetime.strftime('%Y-%m'), []).append(it)
