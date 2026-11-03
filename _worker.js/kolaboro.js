@@ -816,6 +816,35 @@ async function extraRoutes(req, u, path, env) {
   return null;
 }
 
+// ---------- Passkey-signed site photos: the agent's phone signs each photo fingerprint with a key that never leaves its secure chip ----------
+// challenge = SHA-256("kolaboro-capture-v1\n" + photo SHA-256 + "\n" + capture code). Checked here, and by anyone with the receipt.
+const b64uDec = x => { x = String(x || '').replace(/-/g, '+').replace(/_/g, '/'); while (x.length % 4) x += '='; return Uint8Array.from(atob(x), c => c.charCodeAt(0)); };
+const b64uEnc = u8 => b64(u8).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+function derToRaw(der, n) {   // ECDSA signature: ASN.1 DER -> r||s (WebCrypto wants raw)
+  let o = 2; if (der[1] & 0x80) o += der[1] & 0x7f;
+  const read = () => { o++; const l = der[o++]; let v = der.slice(o, o + l); o += l; while (v.length > n && v[0] === 0) v = v.slice(1); const out = new Uint8Array(n); out.set(v, n - v.length); return out; };
+  const r = read(), s2 = read(), raw = new Uint8Array(2 * n); raw.set(r, 0); raw.set(s2, n); return raw;
+}
+async function verifyPasskey(pk, photoSha, code) {
+  try {
+    if (!pk || !pk.spki || !pk.signature) return { ok: false, why: 'no passkey signature' };
+    const ad = b64uDec(pk.authenticator_data), cj = b64uDec(pk.client_data_json), sig = b64uDec(pk.signature), spki = b64u8(pk.spki);
+    const cd = JSON.parse(new TextDecoder().decode(cj));
+    const want = b64uEnc(await h256(te.encode('kolaboro-capture-v1\n' + photoSha + '\n' + (code || ''))));
+    if (cd.type !== 'webauthn.get') return { ok: false, why: 'wrong ceremony' };
+    if (cd.challenge !== want) return { ok: false, why: 'challenge is not this photo' };
+    if (cd.origin !== 'https://kolaboro.com') return { ok: false, why: 'wrong origin' };
+    if (toHex(ad.slice(0, 32)) !== toHex(await h256(te.encode('kolaboro.com')))) return { ok: false, why: 'wrong relying party' };
+    const flags = ad[32]; if (!(flags & 1) || !(flags & 4)) return { ok: false, why: 'user not present and verified' };
+    const signed = new Uint8Array([...ad, ...(await h256(cj))]);
+    let ok = false;
+    if (pk.alg === -7) { const k = await crypto.subtle.importKey('spki', spki, { name: 'ECDSA', namedCurve: 'P-256' }, false, ['verify']); ok = await crypto.subtle.verify({ name: 'ECDSA', hash: 'SHA-256' }, k, derToRaw(sig, 32), signed); }
+    else if (pk.alg === -8) { const k = await crypto.subtle.importKey('spki', spki, { name: 'Ed25519' }, false, ['verify']); ok = await crypto.subtle.verify({ name: 'Ed25519' }, k, sig, signed); }
+    else if (pk.alg === -257) { const k = await crypto.subtle.importKey('spki', spki, { name: 'RSASSA-PKCS1-v1_5', hash: 'SHA-256' }, false, ['verify']); ok = await crypto.subtle.verify('RSASSA-PKCS1-v1_5', k, sig, signed); }
+    return ok ? { ok: true, user_verified: true, sign_count: (ad[33] << 24 | ad[34] << 16 | ad[35] << 8 | ad[36]) >>> 0 } : { ok: false, why: 'signature does not verify' };
+  } catch (e) { return { ok: false, why: 'malformed' }; }
+}
+
 // ---------- Ed25519 signatures on open answers. Private key only in the Cloudflare secret KB_SIGN_KEY; public key at /.well-known/kolaboro-keys.json
 let SIGN_KEY = null;
 async function signKey(env) {
@@ -951,6 +980,7 @@ async function openRoutes(req, u, path, L) {
   const rm = path.match(/^\/api\/open\/receipt\/(\d{1,12})$/);
   if (rm) { let r = null; try { r = await rpc('kolaboro_evidence_receipt', { p_id: +rm[1] }); } catch (e) {}
     if (!r || r.error) return new Response(JSON.stringify({ error: 'not_found' }), { status: 404, headers: { 'content-type': 'application/json', 'access-control-allow-origin': '*' } });
+    if (r.passkey) r.passkey_check = await verifyPasskey(r.passkey, r.sha256, r.passkey.code || '');
     return openResp({ receipt: 'kolaboro-evidence-receipt-v1', ...r, note: 'This answer is signed by Kolaboro (x-kolaboro-signature). Check the signature with the public key at /.well-known/kolaboro-keys.json, and the file with its SHA-256.' }, null, 300); }
   const pm = dpath.match(/^\/api\/open\/proof\/([A-Za-z0-9 -]{3,20})$/);
   if (pm) {

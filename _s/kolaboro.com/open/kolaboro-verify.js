@@ -12,6 +12,8 @@
  *  KV.verifyInclusion(leafLine, index, size, path, rootHex) -> true if a "day head" line is leaf #index of the log tree (GET /api/open/log-proof)
  *  KV.verifyConsistency(first, second, firstRootHex, secondRootHex, proofHex[]) -> true if the newer log tree only appended to the older one
  *       (RFC 9162 section 2.1.4.2; GET /api/open/log-consistency?first=M&second=N). Keep an old checkpoint, check it against a new one later.
+ *  KV.verifyPhotoSignature(receipt) -> { ok, why } for a passkey-signed site photo (GET /api/open/receipt/{id}): the agent's phone signed
+ *       SHA-256("kolaboro-capture-v1\n" + photo sha256 + "\n" + capture code) with WebAuthn; checks origin, relying party, user verification, signature
  *  Each log head is also recorded in Sigstore Rekor (rekor_uuid in /api/open/log) and timestamped in Bitcoin: GET https://kolaboro.com/api/kb/stamp?hash=HEAD returns the OpenTimestamps proof,
  *  which you can check with the official tools (opentimestamps.org).
  */
@@ -98,6 +100,21 @@
       return Promise.all(res).then(function (r) { var rootHex = ''; try { rootHex = hex(b64(root)); } catch (e) {} return { ok: r.some(Boolean), origin: origin, size: size, root: rootHex }; });
     }).catch(function () { return { ok: false }; });
   }
-  var KV = { version: '1.2.0', verifyInclusion: verifyInclusion, verifyConsistency: verifyConsistency, verifyCheckpoint: verifyCheckpoint, verifySignature: verifySignature, sha256Hex: sha256Hex, verifyProof: verifyProof, canonical: canonical, headHash: headHash, verifyLog: verifyLog, verifyEvidenceLines: verifyEvidenceLines };
+  function b64u(x) { x = String(x || '').replace(/-/g, '+').replace(/_/g, '/'); while (x.length % 4) x += '='; return b64(x); }
+  function derRaw(der, n) { var o = 2; if (der[1] & 0x80) o += der[1] & 0x7f; function rd() { o++; var l = der[o++], v = der.slice(o, o + l); o += l; while (v.length > n && v[0] === 0) v = v.slice(1); var out = new Uint8Array(n); out.set(v, n - v.length); return out; } var r = rd(), s2 = rd(), raw = new Uint8Array(2 * n); raw.set(r, 0); raw.set(s2, n); return raw; }
+  function verifyPhotoSignature(rc) {
+    var pk = rc && rc.passkey; if (!pk) return Promise.resolve({ ok: false, why: 'not signed' });
+    var ad = b64u(pk.authenticator_data), cj = b64u(pk.client_data_json), sig = b64u(pk.signature), cd;
+    try { cd = JSON.parse(new TextDecoder().decode(cj)); } catch (e) { return Promise.resolve({ ok: false, why: 'malformed' }); }
+    return Promise.all([H(te.encode('kolaboro-capture-v1\n' + rc.sha256 + '\n' + (pk.code || ''))), H(te.encode('kolaboro.com')), H(cj)]).then(function (h) {
+      var want = btoa(String.fromCharCode.apply(null, h[0])).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+      if (cd.type !== 'webauthn.get' || cd.challenge !== want) return { ok: false, why: 'challenge is not this photo' };
+      if (cd.origin !== 'https://kolaboro.com' || !eq(ad.slice(0, 32), h[1])) return { ok: false, why: 'wrong origin or relying party' };
+      if (!(ad[32] & 1) || !(ad[32] & 4)) return { ok: false, why: 'user not verified' };
+      var signed = cat(ad, h[2]), alg = pk.alg === -7 ? [{ name: 'ECDSA', namedCurve: 'P-256' }, { name: 'ECDSA', hash: 'SHA-256' }, derRaw(sig, 32)] : pk.alg === -8 ? [{ name: 'Ed25519' }, { name: 'Ed25519' }, sig] : [{ name: 'RSASSA-PKCS1-v1_5', hash: 'SHA-256' }, 'RSASSA-PKCS1-v1_5', sig];
+      return C.subtle.importKey('spki', b64(pk.spki), alg[0], false, ['verify']).then(function (k) { return C.subtle.verify(alg[1], k, alg[2], signed); }).then(function (ok) { return ok ? { ok: true } : { ok: false, why: 'signature does not verify' }; });
+    }).catch(function () { return { ok: false, why: 'malformed' }; });
+  }
+  var KV = { version: '1.2.0', verifyPhotoSignature: verifyPhotoSignature, verifyInclusion: verifyInclusion, verifyConsistency: verifyConsistency, verifyCheckpoint: verifyCheckpoint, verifySignature: verifySignature, sha256Hex: sha256Hex, verifyProof: verifyProof, canonical: canonical, headHash: headHash, verifyLog: verifyLog, verifyEvidenceLines: verifyEvidenceLines };
   if (typeof module !== 'undefined' && module.exports) module.exports = KV; else root.KV = KV;
 })(typeof self !== 'undefined' ? self : this);
