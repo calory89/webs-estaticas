@@ -1,0 +1,946 @@
+{
+ "generated": "2026-11-03T22:52:56.416Z",
+ "tool": "Lighthouse 13.5.0",
+ "run": "https://github.com/calory89/webs-estaticas/actions/runs/41733152077",
+ "method": "One Lighthouse run per page and form factor on a GitHub Actions runner (ubuntu-latest), mobile with Lighthouse's default throttling and desktop with --preset=desktop. Scores move a few points between runs, so each threshold is the first measured score minus a margin.",
+ "pages": 20,
+ "baseline": true,
+ "thresholds_margin": {
+  "performance": 10,
+  "accessibility": 3,
+  "best-practices": 5,
+  "seo": 3
+ },
+ "summary": {
+  "mobile": {
+   "performance": {
+    "average": 79,
+    "lowest": 49,
+    "pages_at_100": 0
+   },
+   "accessibility": {
+    "average": 98,
+    "lowest": 95,
+    "pages_at_100": 2
+   },
+   "best-practices": {
+    "average": 77,
+    "lowest": 73,
+    "pages_at_100": 0
+   },
+   "seo": {
+    "average": 100,
+    "lowest": 100,
+    "pages_at_100": 20
+   }
+  },
+  "desktop": {
+   "performance": {
+    "average": 98,
+    "lowest": 74,
+    "pages_at_100": 5
+   },
+   "accessibility": {
+    "average": 98,
+    "lowest": 95,
+    "pages_at_100": 2
+   },
+   "best-practices": {
+    "average": 77,
+    "lowest": 73,
+    "pages_at_100": 0
+   },
+   "seo": {
+    "average": 100,
+    "lowest": 100,
+    "pages_at_100": 20
+   }
+  }
+ },
+ "flags": [],
+ "runs": [
+  {
+   "page": "/",
+   "form_factor": "mobile",
+   "scores": {
+    "performance": 70,
+    "accessibility": 99,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 2423,
+    "fcp_ms": 2134,
+    "tbt_ms": 1548,
+    "cls": 0,
+    "si_ms": 2134
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/check/",
+   "form_factor": "mobile",
+   "scores": {
+    "performance": 82,
+    "accessibility": 98,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 2555,
+    "fcp_ms": 1942,
+    "tbt_ms": 519,
+    "cls": 0.001,
+    "si_ms": 1942
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/database/",
+   "form_factor": "mobile",
+   "scores": {
+    "performance": 78,
+    "accessibility": 99,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 3098,
+    "fcp_ms": 1921,
+    "tbt_ms": 553,
+    "cls": 0.001,
+    "si_ms": 1921
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/pricing/",
+   "form_factor": "mobile",
+   "scores": {
+    "performance": 85,
+    "accessibility": 98,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 2328,
+    "fcp_ms": 1714,
+    "tbt_ms": 474,
+    "cls": 0.007,
+    "si_ms": 1714
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "td-has-header",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/cases/",
+   "form_factor": "mobile",
+   "scores": {
+    "performance": 79,
+    "accessibility": 99,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 2435,
+    "fcp_ms": 2022,
+    "tbt_ms": 697,
+    "cls": 0.011,
+    "si_ms": 2022
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/about/",
+   "form_factor": "mobile",
+   "scores": {
+    "performance": 84,
+    "accessibility": 100,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 2320,
+    "fcp_ms": 1742,
+    "tbt_ms": 475,
+    "cls": 0.076,
+    "si_ms": 1742
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/p/BALI-014",
+   "form_factor": "mobile",
+   "scores": {
+    "performance": 49,
+    "accessibility": 95,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 3503,
+    "fcp_ms": 1863,
+    "tbt_ms": 653,
+    "cls": 1.513,
+    "si_ms": 1863
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "definition-list",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/verify/",
+   "form_factor": "mobile",
+   "scores": {
+    "performance": 81,
+    "accessibility": 98,
+    "best-practices": 73,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 2512,
+    "fcp_ms": 2059,
+    "tbt_ms": 571,
+    "cls": 0.001,
+    "si_ms": 2059
+   },
+   "failing_audits": [
+    "errors-in-console",
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/log/",
+   "form_factor": "mobile",
+   "scores": {
+    "performance": 84,
+    "accessibility": 98,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 2336,
+    "fcp_ms": 2077,
+    "tbt_ms": 500,
+    "cls": 0.011,
+    "si_ms": 2077
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/docs/api/",
+   "form_factor": "mobile",
+   "scores": {
+    "performance": 81,
+    "accessibility": 99,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 2343,
+    "fcp_ms": 1740,
+    "tbt_ms": 501,
+    "cls": 0.109,
+    "si_ms": 1740
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/status/",
+   "form_factor": "mobile",
+   "scores": {
+    "performance": 61,
+    "accessibility": 99,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 3403,
+    "fcp_ms": 2115,
+    "tbt_ms": 741,
+    "cls": 0.211,
+    "si_ms": 2115
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/engineering/",
+   "form_factor": "mobile",
+   "scores": {
+    "performance": 85,
+    "accessibility": 98,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 2410,
+    "fcp_ms": 1627,
+    "tbt_ms": 475,
+    "cls": 0.001,
+    "si_ms": 1627
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/security/",
+   "form_factor": "mobile",
+   "scores": {
+    "performance": 79,
+    "accessibility": 100,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 2212,
+    "fcp_ms": 1774,
+    "tbt_ms": 498,
+    "cls": 0.149,
+    "si_ms": 1774
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/how-we-score/",
+   "form_factor": "mobile",
+   "scores": {
+    "performance": 78,
+    "accessibility": 98,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 2398,
+    "fcp_ms": 1691,
+    "tbt_ms": 529,
+    "cls": 0.134,
+    "si_ms": 1691
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/checklist/",
+   "form_factor": "mobile",
+   "scores": {
+    "performance": 85,
+    "accessibility": 98,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 2178,
+    "fcp_ms": 1670,
+    "tbt_ms": 512,
+    "cls": 0.001,
+    "si_ms": 1670
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/trust/",
+   "form_factor": "mobile",
+   "scores": {
+    "performance": 82,
+    "accessibility": 99,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 2571,
+    "fcp_ms": 1728,
+    "tbt_ms": 558,
+    "cls": 0.001,
+    "si_ms": 1728
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/prices/",
+   "form_factor": "mobile",
+   "scores": {
+    "performance": 83,
+    "accessibility": 99,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 2420,
+    "fcp_ms": 1920,
+    "tbt_ms": 511,
+    "cls": 0.001,
+    "si_ms": 1920
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/bali/",
+   "form_factor": "mobile",
+   "scores": {
+    "performance": 86,
+    "accessibility": 98,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 2204,
+    "fcp_ms": 1613,
+    "tbt_ms": 483,
+    "cls": 0.001,
+    "si_ms": 2120
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/research/",
+   "form_factor": "mobile",
+   "scores": {
+    "performance": 82,
+    "accessibility": 98,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 2343,
+    "fcp_ms": 1674,
+    "tbt_ms": 588,
+    "cls": 0.013,
+    "si_ms": 1674
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/tools/",
+   "form_factor": "mobile",
+   "scores": {
+    "performance": 93,
+    "accessibility": 98,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 2322,
+    "fcp_ms": 1879,
+    "tbt_ms": 234,
+    "cls": 0.001,
+    "si_ms": 1879
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/",
+   "form_factor": "desktop",
+   "scores": {
+    "performance": 99,
+    "accessibility": 99,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 883,
+    "fcp_ms": 624,
+    "tbt_ms": 30,
+    "cls": 0.002,
+    "si_ms": 745
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/check/",
+   "form_factor": "desktop",
+   "scores": {
+    "performance": 99,
+    "accessibility": 98,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 796,
+    "fcp_ms": 598,
+    "tbt_ms": 65,
+    "cls": 0.002,
+    "si_ms": 598
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/database/",
+   "form_factor": "desktop",
+   "scores": {
+    "performance": 99,
+    "accessibility": 99,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 886,
+    "fcp_ms": 620,
+    "tbt_ms": 60,
+    "cls": 0.002,
+    "si_ms": 620
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/pricing/",
+   "form_factor": "desktop",
+   "scores": {
+    "performance": 99,
+    "accessibility": 98,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 774,
+    "fcp_ms": 537,
+    "tbt_ms": 78,
+    "cls": 0.003,
+    "si_ms": 605
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "td-has-header",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/cases/",
+   "form_factor": "desktop",
+   "scores": {
+    "performance": 99,
+    "accessibility": 99,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 768,
+    "fcp_ms": 642,
+    "tbt_ms": 53,
+    "cls": 0.033,
+    "si_ms": 642
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/about/",
+   "form_factor": "desktop",
+   "scores": {
+    "performance": 99,
+    "accessibility": 100,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 794,
+    "fcp_ms": 561,
+    "tbt_ms": 58,
+    "cls": 0.022,
+    "si_ms": 561
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/p/BALI-014",
+   "form_factor": "desktop",
+   "scores": {
+    "performance": 74,
+    "accessibility": 95,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 941,
+    "fcp_ms": 560,
+    "tbt_ms": 47,
+    "cls": 1.124,
+    "si_ms": 560
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "definition-list",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/verify/",
+   "form_factor": "desktop",
+   "scores": {
+    "performance": 100,
+    "accessibility": 98,
+    "best-practices": 73,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 715,
+    "fcp_ms": 623,
+    "tbt_ms": 39,
+    "cls": 0.002,
+    "si_ms": 623
+   },
+   "failing_audits": [
+    "errors-in-console",
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/log/",
+   "form_factor": "desktop",
+   "scores": {
+    "performance": 100,
+    "accessibility": 98,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 707,
+    "fcp_ms": 518,
+    "tbt_ms": 52,
+    "cls": 0.002,
+    "si_ms": 554
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/docs/api/",
+   "form_factor": "desktop",
+   "scores": {
+    "performance": 99,
+    "accessibility": 99,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 799,
+    "fcp_ms": 548,
+    "tbt_ms": 41,
+    "cls": 0.03,
+    "si_ms": 548
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/status/",
+   "form_factor": "desktop",
+   "scores": {
+    "performance": 96,
+    "accessibility": 99,
+    "best-practices": 73,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 928,
+    "fcp_ms": 575,
+    "tbt_ms": 103,
+    "cls": 0.089,
+    "si_ms": 593
+   },
+   "failing_audits": [
+    "errors-in-console",
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/engineering/",
+   "form_factor": "desktop",
+   "scores": {
+    "performance": 99,
+    "accessibility": 98,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 769,
+    "fcp_ms": 579,
+    "tbt_ms": 74,
+    "cls": 0.002,
+    "si_ms": 591
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/security/",
+   "form_factor": "desktop",
+   "scores": {
+    "performance": 99,
+    "accessibility": 100,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 751,
+    "fcp_ms": 554,
+    "tbt_ms": 71,
+    "cls": 0.044,
+    "si_ms": 554
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/how-we-score/",
+   "form_factor": "desktop",
+   "scores": {
+    "performance": 99,
+    "accessibility": 98,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 772,
+    "fcp_ms": 551,
+    "tbt_ms": 73,
+    "cls": 0.033,
+    "si_ms": 551
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/checklist/",
+   "form_factor": "desktop",
+   "scores": {
+    "performance": 99,
+    "accessibility": 98,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 743,
+    "fcp_ms": 582,
+    "tbt_ms": 58,
+    "cls": 0.002,
+    "si_ms": 582
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/trust/",
+   "form_factor": "desktop",
+   "scores": {
+    "performance": 100,
+    "accessibility": 99,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 709,
+    "fcp_ms": 533,
+    "tbt_ms": 47,
+    "cls": 0.002,
+    "si_ms": 533
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/prices/",
+   "form_factor": "desktop",
+   "scores": {
+    "performance": 99,
+    "accessibility": 99,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 852,
+    "fcp_ms": 546,
+    "tbt_ms": 50,
+    "cls": 0.053,
+    "si_ms": 546
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/bali/",
+   "form_factor": "desktop",
+   "scores": {
+    "performance": 100,
+    "accessibility": 98,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 664,
+    "fcp_ms": 500,
+    "tbt_ms": 21,
+    "cls": 0.002,
+    "si_ms": 500
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/research/",
+   "form_factor": "desktop",
+   "scores": {
+    "performance": 99,
+    "accessibility": 98,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 761,
+    "fcp_ms": 564,
+    "tbt_ms": 39,
+    "cls": 0.014,
+    "si_ms": 577
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  },
+  {
+   "page": "/tools/",
+   "form_factor": "desktop",
+   "scores": {
+    "performance": 100,
+    "accessibility": 98,
+    "best-practices": 77,
+    "seo": 100
+   },
+   "metrics": {
+    "lcp_ms": 728,
+    "fcp_ms": 560,
+    "tbt_ms": 0,
+    "cls": 0.002,
+    "si_ms": 560
+   },
+   "failing_audits": [
+    "third-party-cookies",
+    "heading-order",
+    "inspector-issues"
+   ]
+  }
+ ]
+}
