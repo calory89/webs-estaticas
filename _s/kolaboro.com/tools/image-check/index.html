@@ -46,8 +46,8 @@
 <section class="phero"><div class="wrap">
   <p class="crumb"><a href="/">Kolaboro</a> / <a href="/tools/">Tools</a> / Image check</p>
   <h1>Is this render used by another project?</h1>
-  <p class="lead">Drop the render or photo from a brochure or listing. Your browser turns it into a 64-bit fingerprint and compares it with every image on the project pages we track.</p>
-  <p class="ft-local"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span><b>Your image never leaves this device.</b> The fingerprint is computed in your browser (<a href="/tools/image-check/kdh.js">kdh.js</a>) and compared with a public list of fingerprints (<a href="/data/image-hashes.json">image-hashes.json</a>). The only request this check makes is downloading that list. Site analytics are masked on this tool: they never see your image or the results.</span></p>
+  <p class="lead">Drop the render or photo from a brochure or listing. Your browser turns it into a 64-bit fingerprint and compares it with every image on the project pages we track. It also reads the file's Content Credentials (C2PA) and metadata for what they say about how the picture was made.</p>
+  <p class="ft-local"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z" fill="none" stroke="currentColor" stroke-width="2"/><path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span><b>Your image never leaves this device.</b> The fingerprint is computed in your browser (<a href="/tools/image-check/kdh.js">kdh.js</a>) and compared with a public list of fingerprints (<a href="/data/image-hashes.json">image-hashes.json</a>). The only request the reuse check makes is downloading that list. If the file carries Content Credentials, your browser also downloads the official open-source C2PA library (<a href="https://github.com/contentauth/c2pa-js" rel="noopener">c2pa-web 0.15.3</a>, its code from this site and its 2.7 MB WebAssembly file from jsDelivr, checked against a pinned SHA-256 before it runs) and the C2PA trust lists. Your image is never sent anywhere. Site analytics are masked on this tool: they never see your image or the results.</span></p>
 </div></section>
 <section class="sec ft-sec" data-clarity-mask="True"><div class="wrap">
   <label class="ft-drop" id="icDrop">
@@ -58,6 +58,7 @@
   </label>
   <p class="ft-status" id="icStatus" aria-live="polite"></p>
   <div class="ft-out" id="icOut" hidden data-clarity-mask="True"></div>
+  <div class="ft-out" id="icProv" hidden data-clarity-mask="True" style="margin-top:28px"></div>
 </div></section>
 <section class="sec alt"><div class="wrap">
   <p class="eyebrow">How it works</p>
@@ -67,6 +68,14 @@
     <div><h3>The index</h3><p>Every week our render-reuse job downloads the images on each tracked project page (logos, icons, small images and site decoration left out) and stores the same fingerprint, the project's public id and the image address. The browser and the weekly job run the same function; a test checks that both give identical bits on the same files.</p></div>
     <div><h3>Reading the distance</h3><ul><li>0 to 5 bits: near-identical.</li><li>6 to 10: very likely the same picture, resized or lightly edited.</li><li>11 to 14: shown only as "close", check by eye.</li></ul><p>We also compare the centre 70% of each image and a mirrored version, which catches simple crops and flips.</p></div>
     <div><h3>What this cannot catch</h3><ul><li>Heavier crops, rotations, added text or reframed renders change the fingerprint.</li><li>Images from sites we do not track.</li><li>A match is evidence to ask about, not proof: portals and sister brands share renders legitimately.</li></ul><p>For deeper matching (CLIP embeddings confirmed by keypoint geometry) see the weekly <a href="/engineering/">render-reuse detector</a>.</p></div>
+  </div>
+  <p class="eyebrow" style="margin-top:34px">Where the image came from</p>
+  <h2 class="ft-h">Content Credentials and metadata, read honestly</h2>
+  <div class="ft-method">
+    <div><h3>Content Credentials (C2PA)</h3><p>Some cameras, phones, editors and AI generators attach a signed record of how a file was made: the tool, the edits and a declared source such as "created by a generative AI model". We verify it with the official open-source C2PA library, in your browser: the signature, the certificate chain and the hashes that tie the record to these exact pixels.</p></div>
+    <div><h3>Who signed it</h3><p>We check the signer against two public trust lists, copied to this site: the official <a href="https://github.com/c2pa-org/conformance-public" rel="noopener">C2PA Trust List</a> (<a href="/tools/image-check/c2pa/trust/c2pa-trust-list.pem">copy</a>) and the older Content Credentials interim list (<a href="/tools/image-check/c2pa/trust/cc-interim-anchors.pem">copy</a>). An intact record from a signer on neither list is shown as "signer unknown".</p></div>
+    <div><h3>Metadata signals</h3><p>We also read EXIF, XMP and PNG text fields: the IPTC digital source type (for example <code>trainedAlgorithmicMedia</code>), the creator tool, the edit history, and generator settings that Stable Diffusion or ComfyUI write into PNG files. We list what we find with the field it came from. Metadata is not signed: anyone can add, change or strip it.</p></div>
+    <div><h3>What this is not</h3><ul><li>Not an AI detector. We do not guess from the pixels, because no detector we know of is reliable enough to publish an accuracy for.</li><li>No credentials and no metadata proves nothing: most websites strip both, and a screenshot removes them.</li><li>A render is computer-made by design. The question that matters is whether something sold as a site photo was generated.</li></ul></div>
   </div>
   <div style="margin-top:22px;display:flex;gap:12px;flex-wrap:wrap"><a class="btn btn-line" href="/tools/pdf-check/">Check a PDF for edits</a><a class="btn btn-line" href="/tools/iban-check/">Check a payment account</a></div>
 </div></section>
@@ -149,5 +158,6 @@
 </script>
 <script src="/tools/image-check/kdh.js?v=5f938f5db4" defer></script>
 <script src="/tools/image-check/ic.js?v=eb0414a6a7" defer></script>
+<script src="/tools/image-check/prov.js?v=e7f3b38b42" defer></script>
 </body>
 </html>
