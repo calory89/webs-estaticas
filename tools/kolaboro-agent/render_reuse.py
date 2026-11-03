@@ -20,7 +20,8 @@ MIN_SIDE = 200            # px, smaller images are skipped
 PER_PROJECT = 16          # max images per project (runtime cap)
 HUB_SITES = 5             # an image with near-duplicates on this many other domains is treated as stock/template
 MAX_PAIRS = 200
-TIME_BUDGET = 20 * 60     # seconds for the download phase before we stop collecting
+TIME_BUDGET = 11 * 60     # seconds (from start) for the download phase before we stop collecting
+EMBED_DEADLINE = 22 * 60  # seconds (from start) after which images not yet embedded are left out
 
 A = os.path.dirname(os.path.abspath(__file__)) + '/'
 projs = json.load(open(A + 'projects.json'))['projects'] + json.load(open(A + 'projects-world.json'))['projects']
@@ -62,12 +63,31 @@ def same_project(p, q):
     return len(a & b) / min(len(a), len(b)) >= 0.6
 
 
+PAGE_TEXT = {}
+
+
+def name_variants(p):
+    n = (p.get('name') or '').lower()
+    out = set()
+    for v in (n, n.split(' by ')[0], n.split('(')[0], n.split(' - ')[0], n.split(',')[0]):
+        v = ' '.join(re.findall(r'[a-z0-9]+', v))
+        if len(v) >= 8:
+            out.add(v)
+    return out
+
+
+def page_mentions(page, p):
+    t = PAGE_TEXT.get(page, '')
+    return any(' %s ' % v in t for v in name_variants(p))
+
+
 def page_imgs(page):
     try:
         html, final = get(page, 3_000_000)
         html = html.decode('utf8', 'ignore')
     except Exception:
         return []
+    PAGE_TEXT[page] = ' ' + ' '.join(re.findall(r'[a-z0-9]+', re.sub(r'<[^>]+>', ' ', html).lower())) + ' '
     c = re.findall(r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)', html)
     c += re.findall(r'<img[^>]+(?:data-src|src)=["\']([^"\']+\.(?:jpe?g|png|webp)(?:\?[^"\']*)?)["\']', html, re.I)
     c += re.findall(r'url\(["\']?([^"\')]+\.(?:jpe?g|webp))', html, re.I)
@@ -99,6 +119,8 @@ def fetch(job):
     try:
         b, _ = get(u)
         im = Image.open(io.BytesIO(b))
+        if im.size[0] * im.size[1] > 80_000_000:
+            return None
         im.draft('RGB', (800, 800))
         im = im.convert('RGB')
         w, h = im.size
@@ -129,7 +151,15 @@ uniq = {}
 for r in recs:
     uniq.setdefault((r['i'], r['sha']), r)
 recs = list(uniq.values())
-print('images kept', len(recs), 'budget hit', budget_hit, 't=%.0fs' % (time.time() - T0), flush=True)
+# site chrome / cross-promotion: the same file shown on the pages of 2+ projects on one domain is not a project image
+by_site = {}
+for r in recs:
+    by_site.setdefault((dom(r['page']), r['sha']), set()).add(r['i'])
+chrome = {k for k, v in by_site.items() if len(v) >= 2}
+n0 = len(recs)
+recs = [r for r in recs if (dom(r['page']), r['sha']) not in chrome]
+chrome_dropped = n0 - len(recs)
+print('images kept', len(recs), 'site-chrome images dropped', chrome_dropped, len(recs), 'budget hit', budget_hit, 't=%.0fs' % (time.time() - T0), flush=True)
 if len(recs) < 200:
     raise SystemExit('too few images (%d): keeping the old file' % len(recs))
 
@@ -139,14 +169,36 @@ torch.set_num_threads(os.cpu_count() or 4)
 MODEL, PRETRAINED = 'ViT-B-32', 'laion2b_s34b_b79k'
 model, _, prep = open_clip.create_model_and_transforms(MODEL, pretrained=PRETRAINED)
 model.eval()
-embs = []
-with torch.no_grad():
-    for s in range(0, len(recs), 64):
-        batch = torch.stack([prep(Image.open(r['path']).convert('RGB')) for r in recs[s:s + 64]])
-        e = model.encode_image(batch)
-        embs.append(torch.nn.functional.normalize(e, dim=-1).numpy())
-E = np.concatenate(embs).astype(np.float32)
-print('embedded', len(E), 't=%.0fs' % (time.time() - T0), flush=True)
+# embed each distinct file once; preprocessing runs in threads while the model works
+first = {}
+for r in recs:
+    first.setdefault(r['sha'], r['path'])
+shas = list(first)
+emb_of = {}
+
+
+def load(path):
+    return prep(Image.open(path).convert('RGB'))
+
+
+embed_budget_hit = False
+with torch.inference_mode(), cf.ThreadPoolExecutor(4) as ex:
+    nxt = ex.map(load, [first[h] for h in shas[0:64]])
+    for s in range(0, len(shas), 64):
+        batch = torch.stack(list(nxt))
+        if s + 64 < len(shas):
+            nxt = ex.map(load, [first[h] for h in shas[s + 64:s + 128]])
+        e = torch.nn.functional.normalize(model.encode_image(batch), dim=-1).numpy()
+        for h, v in zip(shas[s:s + 64], e):
+            emb_of[h] = v
+        if time.time() - T0 > EMBED_DEADLINE:
+            embed_budget_hit = True
+            break
+n_before_embed = len(recs)
+recs = [r for r in recs if r['sha'] in emb_of]
+E = np.stack([emb_of[r['sha']] for r in recs]).astype(np.float32)
+print('embedded files', len(emb_of), 'of', len(shas), 'records', len(E), 'of', n_before_embed, 'budget hit', embed_budget_hit,
+      't=%.0fs' % (time.time() - T0), flush=True)
 
 # candidate cross-project pairs
 P = np.array([r['i'] for r in recs])
@@ -170,7 +222,8 @@ for a, b, c in cand:
         nbr_sites.setdefault(b, set()).add(D[a])
 hubs = {k for k, v in nbr_sites.items() if len(v) >= HUB_SITES}
 
-excl = {'same_domain': 0, 'same_developer': 0, 'same_project_name': 0, 'hub_image': 0, 'geometry_failed': 0}
+excl = {'same_domain': 0, 'same_developer': 0, 'same_project_name': 0, 'page_names_other_project': 0, 'hub_image': 0,
+        'geometry_failed': 0}
 kept = []
 for a, b, c in cand:
     pa, pb = projs[P[a]], projs[P[b]]
@@ -180,6 +233,9 @@ for a, b, c in cand:
         excl['same_developer'] += 1; continue
     if same_project(pa, pb):
         excl['same_project_name'] += 1; continue
+    if page_mentions(recs[a]['page'], pb) or page_mentions(recs[b]['page'], pa):
+        # a portal page that names the other project is showing its listing (related projects, carousels), not reusing it
+        excl['page_names_other_project'] += 1; continue
     if a in hubs or b in hubs:
         excl['hub_image'] += 1; continue
     kept.append((a, b, c))
@@ -235,7 +291,7 @@ for a, b, c in kept:
                   'orb_inliers': None if exact else n, 'identical_file': exact})
 
 out = {
-    'generated': datetime.datetime.utcnow().replace(microsecond=0).isoformat() + 'Z',
+    'generated': datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
     'model': 'open_clip %s %s (open_clip_torch %s, torch %s, CPU)' % (MODEL, PRETRAINED, open_clip.__version__, torch.__version__),
     'threshold': THRESHOLD,
     'min_orb_inliers': MIN_INLIERS,
@@ -243,16 +299,20 @@ out = {
     'projects_checked': int(len(set(P.tolist()))),
     'projects_tracked': len(projs),
     'limits': {'images_per_project': PER_PROJECT, 'min_side_px': MIN_SIDE, 'download_time_budget_s': TIME_BUDGET,
-               'download_budget_hit': budget_hit, 'max_pairs': MAX_PAIRS},
+               'download_budget_hit': budget_hit, 'embedding_deadline_s': EMBED_DEADLINE,
+               'embedding_budget_hit': embed_budget_hit, 'max_pairs': MAX_PAIRS},
+    'site_chrome_images_dropped': chrome_dropped,
     'candidates_over_threshold': len(cand),
     'excluded': excl,
     'hub_images': len(hubs),
     'pair_count': len(pairs),
     'pairs': pairs,
     'method': ('Images are collected from each tracked project page (url and docs_url), images under %d px, very wide banners, '
-               'flat graphics and URLs naming logos/icons are skipped, at most %d per project. Each image is embedded with CLIP '
+               'flat graphics and URLs naming logos/icons are skipped, at most %d per project, and a file shown on the pages of '
+               'two or more projects of the same site is treated as site chrome and dropped. Each image is embedded with CLIP '
                '%s (%s) and pairs from two different projects with cosine >= %.2f are kept if the two pages are on different '
-               'domains, the developers differ, the project names do not look like the same project, and neither image has '
+               'domains, the developers differ, the project names do not look like the same project, neither page names the '
+               'other project (portal carousels and related listings), and neither image has '
                'near-duplicates on %d+ other domains (stock or template art). Each surviving pair must then pass a geometric '
                'check: at least %d ORB keypoint matches consistent with one RANSAC homography (or byte-identical files). '
                'dhash_distance is reported for reference (0-64, low means near-identical; crops and recolours raise it). '
