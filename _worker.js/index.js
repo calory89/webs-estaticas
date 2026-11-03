@@ -71,6 +71,9 @@ function kbHeaders(r, u) {
   if (embed) h.delete('x-frame-options'); else h.set('x-frame-options', priv ? 'DENY' : 'SAMEORIGIN');
   h.set('content-security-policy', "frame-ancestors " + (priv ? "'none'" : embed ? "*" : "'self'") + "; base-uri 'self'; object-src 'none'; form-action 'self' https://www.paypal.com https://oykcsmextclpdnugixqz.supabase.co");
   h.set('permissions-policy', 'camera=(self), microphone=(self), geolocation=(self), payment=(), usb=(), interest-cohort=()');
+  // script allowlist, in report-only mode first: any script from an origin not listed here is reported to /api/kb/csp, so the
+  // allowlist can be enforced once the reports show nothing legitimate is missing
+  h.set('content-security-policy-report-only', "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.clarity.ms https://*.clarity.ms https://cdnjs.cloudflare.com https://static.cloudflareinsights.com https://www.paypal.com https://www.paypalobjects.com; report-uri /api/kb/csp");
   h.set('cross-origin-opener-policy', 'same-origin-allow-popups');
   if (priv) { h.set('cache-control', 'no-store'); h.set('x-robots-tag', 'noindex, nofollow'); }
   h.delete('access-control-allow-origin');

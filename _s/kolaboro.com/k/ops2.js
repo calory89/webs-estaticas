@@ -103,7 +103,7 @@
         '<div class="g-leg">' + Object.keys(COL).map(function(k){ return '<span><i style="background:' + COL[k] + '"></i>' + k + '</span>'; }).join('') + '<span>size = risk signals</span></div><div id="gsvg" class="g-svg"></div><p id="ginfo" class="muted" style="font-size:.85rem">Click a node to see its links. Drag to rearrange, scroll to zoom.</p></div>' +
         '<div class="card"><h2>Cross-links found</h2>' + ((G.alerts || []).length ? '<ul>' + G.alerts.map(function(a){ return '<li><b>' + esc(a.kind) + '</b> · ' + esc(a.what) + ': ' + esc(a.detail) + '</li>'; }).join('') + '</ul>' : '<p class="muted">None.</p>') + '</div>' +
         '<div class="card"><h2>Developers by risk signals</h2><table class="ops-t"><tr><th>Developer</th><th>Projects</th><th>Markets</th><th>Signals in their advertising</th><th>Score</th></tr>' + G.developers.slice(0, 60).map(function(r){ return '<tr><td><b>' + esc(r.developer) + '</b></td><td>' + r.projects + '</td><td>' + esc(r.markets.join(', ')) + '</td><td><small>' + esc(Object.keys(r.signals).map(function(k){ return k + (r.signals[k] > 1 ? ' ×' + r.signals[k] : ''); }).join(' · ') || '-') + '</small></td><td><b>' + r.score + '</b></td></tr>'; }).join('') + '</table></div>';
-      var sc = document.createElement('script'); sc.src = 'https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js'; sc.onload = function(){ draw(G); }; document.head.appendChild(sc);
+      var sc = document.createElement('script'); sc.src = 'https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js'; sc.integrity = 'sha384-su5kReKyYlIFrI62mbQRKXHzFobMa7BHp1cK6julLPbnYcCW9NIZKJiTODjLPeDh'; sc.crossOrigin = 'anonymous'; sc.onload = function(){ draw(G); }; document.head.appendChild(sc);
     });
   }
   function draw(G){

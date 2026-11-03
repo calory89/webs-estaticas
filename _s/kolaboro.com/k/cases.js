@@ -120,8 +120,8 @@
   }
   function start(){
     stat(); bind(); try { var qs = new URLSearchParams(location.search).get('q'); if (qs) { $('kq').value = qs; S.q = qs.trim(); } } catch (e) {} render();
-    var s = document.createElement('script'); s.src = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js'; s.onload = mapInit; document.head.appendChild(s);
-    var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css'; document.head.appendChild(l);
+    var s = document.createElement('script'); s.src = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js'; s.integrity = 'sha384-NElt3Op+9NBMCYaef5HxeJmU4Xeard/Lku8ek6hoPTvYkQPh3zLIrJP7KiRocsxO'; s.crossOrigin = 'anonymous'; s.onload = mapInit; document.head.appendChild(s);
+    var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css'; l.integrity = 'sha384-c6Rcwz4e4CITMbu/NBmnNS8yN2sC3cUElMEMfP3vqqKFp7GOYaaBBCqmaWBjmkjb'; l.crossOrigin = 'anonymous'; document.head.appendChild(l);
   }
   start();
   // the research agent republishes the data every week: use the newest copy if it has the scorecard

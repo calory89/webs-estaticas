@@ -84,6 +84,20 @@
   // keyboard: an element with data-kbd="/" gets focus when "/" is pressed outside a field
   var kbdEl = document.querySelector('[data-kbd="/"]');
   if (kbdEl) document.addEventListener('keydown', function (e) { var t = e.target; if (e.key !== '/' || e.metaKey || e.ctrlKey || e.altKey || /^(INPUT|TEXTAREA|SELECT)$/.test(t.tagName) || t.isContentEditable) return; e.preventDefault(); kbdEl.focus(); kbdEl.scrollIntoView({ block: 'center', behavior: 'smooth' }); });
+  // errors in this browser are reported (page path, message, script origin; nothing personal) so we see breakage before users tell us
+  (function () {
+    var q = [], sent = 0, t = null;
+    function flush() { t = null; if (!q.length || sent > 10) return; var b = JSON.stringify({ kind: 'js', page: location.pathname, errors: q.splice(0, 5) }); sent++; try { if (!(navigator.sendBeacon && navigator.sendBeacon('/api/kb/err', new Blob([b], { type: 'application/json' })))) fetch('/api/kb/err', { method: 'POST', body: b, keepalive: true, headers: { 'content-type': 'application/json' } }); } catch (e) {} }
+    function add(msg, src, line) {
+      msg = String(msg || ''); src = String(src || '');
+      if (!msg || /^Script error\.?$/.test(msg) || /^(chrome|moz|safari)(-web)?-extension:/.test(src) || /ResizeObserver loop/.test(msg)) return;
+      if (q.some(function (x) { return x.msg === msg && x.src === src; })) return;
+      q.push({ msg: msg.slice(0, 300), src: src.slice(0, 200), line: line || null }); if (!t) t = setTimeout(flush, 3000);
+    }
+    addEventListener('error', function (e) { if (e && e.message) add(e.message, e.filename, e.lineno); }, true);
+    addEventListener('unhandledrejection', function (e) { var r = e && e.reason; add('Unhandled promise: ' + (r && (r.message || r)) , r && r.stack ? (String(r.stack).match(/https?:\/\/[^\s)]+/) || [''])[0].replace(/:\d+:\d+$/, '') : ''); });
+    addEventListener('pagehide', flush);
+  })();
   // tracked clicks
   document.addEventListener('click', function (e) {
     var a = e.target.closest('[data-ev]');
