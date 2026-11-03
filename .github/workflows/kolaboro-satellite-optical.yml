@@ -1,0 +1,66 @@
+name: Kolaboro satellite optical progress
+# Weekly: Sentinel-2 L2A monthly cloud-masked series + true-colour frames and timelapse per watched site,
+# from Element84 Earth Search (STAC) and the Sentinel-2 COGs on AWS Open Data (no account).
+# Publishes kolaboro.com/data/satellite-optical.json and kolaboro.com/k/sat/<site>/opt/*.
+on:
+  schedule:
+    - cron: '17 9 * * 2'
+  push:
+    branches: [main]
+    paths: ['tools/kolaboro-agent/satellite_optical.py']
+  workflow_dispatch:
+    inputs:
+      sites: { description: 'comma separated site ids (empty = all)', required: false, default: '' }
+      full: { description: 'recompute every month (ignore the published file)', required: false, default: 'false' }
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-satellite-optical
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 100
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: tools/kolaboro-agent
+      - name: Build monthly series
+        env:
+          SITES: ${{ github.event.inputs.sites }}
+          FULL: ${{ github.event.inputs.full }}
+        run: |
+          pip install -q rasterio pystac-client pillow numpy
+          A=""; [ -n "$SITES" ] && A="--sites $SITES"; [ "$FULL" = "true" ] && A="$A --no-prev"
+          python3 -W ignore tools/kolaboro-agent/satellite_optical.py tools/kolaboro-agent/satellite-sites.json "$RUNNER_TEMP/opt" --budget-min 75 $A
+          du -sh "$RUNNER_TEMP/opt"
+      - name: Publish to kolaboro.com
+        run: |
+          set -e
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          for i in 1 2 3 4 5; do
+            P=$(git rev-parse FETCH_HEAD)
+            export GIT_INDEX_FILE=$RUNNER_TEMP/idx; rm -f $GIT_INDEX_FILE; git read-tree $P
+            (cd "$RUNNER_TEMP/opt" && find . -type f ! -name satellite-optical.json | sed 's|^\./||') | while read f; do
+              H=$(git hash-object -w "$RUNNER_TEMP/opt/$f"); git update-index --add --cacheinfo 100644,$H,_s/kolaboro.com/k/sat/$f; done
+            if [ -n "${{ github.event.inputs.sites }}" ]; then
+              # partial run: merge into the published file instead of replacing it
+              curl -sf https://kolaboro.com/data/satellite-optical.json -o $RUNNER_TEMP/prev.json || echo '{"sites":[]}' > $RUNNER_TEMP/prev.json
+              python3 - "$RUNNER_TEMP/prev.json" "$RUNNER_TEMP/opt/satellite-optical.json" <<'EOF'
+          import json, sys
+          p, n = json.load(open(sys.argv[1])), json.load(open(sys.argv[2]))
+          got = {s['id'] for s in n['sites']}
+          n['sites'] = [s for s in p.get('sites', []) if s['id'] not in got] + n['sites']
+          json.dump(n, open(sys.argv[2], 'w'), indent=1)
+          EOF
+            fi
+            H=$(git hash-object -w "$RUNNER_TEMP/opt/satellite-optical.json")
+            git update-index --add --cacheinfo 100644,$H,_s/kolaboro.com/data/satellite-optical.json
+            T=$(git write-tree); unset GIT_INDEX_FILE
+            [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
+            C=$(git commit-tree $T -p $P -m "kolaboro.com: satellite optical progress $(date -u +%F)")
+            git push -q origin $C:refs/heads/pub/_lovable && exit 0
+            sleep 5; git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          done; exit 1
