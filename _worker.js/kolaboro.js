@@ -1110,7 +1110,7 @@ function marketStats(cases) {
     return { market: m, country: a[0].country, projects: n, avg_checks: +avg(c => c.score).toFixed(2), avg_confirmed: +avg(c => c.vscore).toFixed(2),
       permit_public_pct: Math.round(avg(c => (c.checks || {}).permit === 2 ? 1 : 0) * 100), deposit_protection_pct: Math.round(avg(c => (c.checks || {}).escrow === true ? 1 : 0) * 100),
       all_six_public: a.filter(c => c.score === 6 && !(c.flags || []).length).length, with_flags: a.filter(c => (c.flags || []).length).length,
-      transparency_index: n >= 3 ? Math.round((0.6 * disc + 0.3 * conf + 0.1 * clean) * 100) : null };
+      transparency_index: n >= 3 ? Math.floor((0.6 * disc + 0.3 * conf + 0.1 * clean) * 100 + 0.5 + 1e-9) : null };
   }).sort((x, y) => (y.transparency_index ?? -1) - (x.transparency_index ?? -1) || y.projects - x.projects);
 }
 const csvCell = v => { v = v === null || v === undefined ? '' : typeof v === 'object' ? JSON.stringify(v) : String(v); return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; };
