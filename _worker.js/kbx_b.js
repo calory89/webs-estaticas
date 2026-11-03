@@ -117,8 +117,7 @@ async function redteam(req, env, ctx) {
   const t0 = Date.now(), steps = [];
   let base, dr;
   try {
-    base = await baseline(env, ctx, () => {});
-    dr = await deskReview(env, RT_URL, RT_PAGE.replace('{{VISITOR_TEXT}}', () => text), { step: e => steps.push(e) });
+    [base, dr] = await Promise.all([baseline(env, ctx, () => {}), deskReview(env, RT_URL, RT_PAGE.replace('{{VISITOR_TEXT}}', () => text), { step: e => steps.push(e) })]);
   } catch (e) { return json({ error: 'model', detail: String(e.message || e).replace(/sk-[\w-]+/g, '').slice(0, 120) }, 503); }
   if (!dr.report) return json({ error: dr.error || 'model' }, 422);
   const a = brief(dr.report), z = base.report, reasons = [];

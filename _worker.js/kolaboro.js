@@ -164,21 +164,24 @@ function qnorm(s) {   // compare text, not typography: case, whitespace, curly q
     .toLowerCase().replace(/[​-‍⁠﻿­]/g, '').replace(/[‘’‚‛′`´]/g, "'").replace(/[“”„‟″«»]/g, '"')
     .replace(/[‐-―−]/g, '-').replace(/…/g, '...').replace(/\s+/g, ' ').replace(/ ([.,;:!?)\]%])/g, '$1').replace(/([(\[]) /g, '$1').trim();
 }
-function quoteFound(src, quote, min) {   // src already normalised; a quote may skip text with "..." but its parts must appear in order
+function quoteSpan(src, quote, min) {   // src already normalised; a quote may skip text with "..." but its parts must appear in order. Returns [start, end] or null
   let q = qnorm(quote).replace(/^["'\s]+|["'\s.,;:]+$/g, '');
-  if (q.length < (min || 12)) return false;
-  let at = 0;
+  if (q.length < (min || 12)) return null;
+  let at = 0, start = -1;
   for (const seg of q.split(/\s*\.\.\.\s*/).map(x => x.replace(/^["'\s]+|["'\s.,;:]+$/g, '')).filter(Boolean)) {
     if (seg.length < Math.min(min || 12, 6)) continue;
-    const i = src.indexOf(seg, at); if (i < 0) return false; at = i + seg.length;
+    const i = src.indexOf(seg, at); if (i < 0) return null; if (start < 0) start = i; at = i + seg.length;
   }
-  return at > 0;
+  return at > 0 ? [start, at] : null;
 }
-function verifyQuotes(out, text, hits) {
-  // text aimed at an AI is not a developer's claim: a quote taken from it is removed even though it is on the page
-  const inj = (hits || []).map(h => qnorm(h.text));
-  const steer = q => { const n = qnorm(q); return INJ.some(re => re.test(q || '')) || (n.length >= 12 && inj.some(h => h.includes(n.slice(0, 40)) || (h.length >= 20 && n.includes(h.replace(/^\.\.\.|\.\.\.$/g, '').slice(0, 40))))); };
-  const src = qnorm(text), removed = [];
+const quoteFound = (src, quote, min) => !!quoteSpan(src, quote, min);
+function verifyQuotes(out, text, aiQuote) {
+  // text aimed at an AI is not a developer's claim: a quote that overlaps it is removed even though it is on the page.
+  // The AI-directed parts are located in the page text itself: each pattern match up to the end of its sentence, and the passage the model flagged.
+  const src = qnorm(text), removed = [], spans = [];
+  INJ.forEach(re => { const g = new RegExp(re.source, re.flags.includes('g') ? re.flags : re.flags + 'g'); let m; while ((m = g.exec(src))) { const e = src.indexOf('.', m.index + m[0].length); spans.push([m.index, e < 0 ? Math.min(src.length, m.index + m[0].length + 200) : Math.min(e, m.index + m[0].length + 200)]); if (!m[0].length) g.lastIndex++; } });
+  if (aiQuote) { const sp = quoteSpan(src, aiQuote, 12); if (sp) spans.push(sp); }
+  const steer = q => { if (INJ.some(re => re.test(q || ''))) return true; const sp = quoteSpan(src, q, 4); return !!sp && spans.some(x => sp[0] < x[1] && x[0] < sp[1]); };
   const cited = (out._cited || []).filter(c => {
     const ok = quoteFound(src, c.quote, 12) || (c.claim && quoteFound(src, c.claim, 16));
     const bad = ok && (steer(c.quote) || steer(c.claim));
@@ -232,7 +235,7 @@ async function deskReview(env, urlStr, html, opts) {
     }
   }
   t = now();
-  const qc = verifyQuotes(out, text, out.ai_instructions_quote ? hits.concat([{ text: out.ai_instructions_quote }]) : hits);
+  const qc = verifyQuotes(out, text, out.ai_instructions_quote);
   step({ step: 'quotes', ms: now() - t, checked: qc.checked, removed: qc.removed, fields_with_quote: qc.fields_with_quote, fields_stated: qc.fields_stated });
   const notProp = out.page_kind === 'not_real_estate';
   if (notProp) { ['questions', 'promises', 'missing'].forEach(k => { out[k] = []; }); out.attention = 'low'; out.citations = { promises: [], summary: [], fields: {} }; }
@@ -857,7 +860,7 @@ async function probeReport(req, env, ctx) {
 }
 // what the evaluation keys on: the desk review's code and prompts, so any change to them is evaluated, but data-only deploys are not
 let _evk = null;
-const evalKey = () => _evk || (_evk = sha([DESK_SYSTEM, PROMPT, INJ.map(String).join('\n'), HIDDEN_STYLE, pageParts, scanInjection, cleanReport, consensus, critNorm, deskReview, claude, MODELS.join(','), QFIELDS.join(','), qnorm, quoteFound, verifyQuotes, evCheck].map(String).join('\n#\n')));
+const evalKey = () => _evk || (_evk = sha([DESK_SYSTEM, PROMPT, INJ.map(String).join('\n'), HIDDEN_STYLE, pageParts, scanInjection, cleanReport, consensus, critNorm, deskReview, claude, MODELS.join(','), QFIELDS.join(','), qnorm, quoteSpan, verifyQuotes, evCheck].map(String).join('\n#\n')));
 
 // ---------- Daily evaluation of the desk review (fixtures at /open/evals/, results at /api/open/evals) ----------
 function evGet(o, path) { return String(path || '').split('.').reduce((a, k) => (a == null ? a : a[k]), o); }
