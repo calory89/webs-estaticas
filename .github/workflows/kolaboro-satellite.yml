@@ -48,7 +48,7 @@ jobs:
             sleep 5; git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
           done; exit 1
       - name: Project sites (private numbers only, no images)
-        timeout-minutes: 25
+        timeout-minutes: 40
         continue-on-error: true
         env:
           CDSE_CLIENT_ID: ${{ secrets.CDSE_CLIENT_ID }}
