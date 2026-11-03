@@ -180,7 +180,7 @@ export async function quakes(lat, lng, radiusKm = 100) {
     const ev = f.map(x => ({ mag: x.properties.mag, year: new Date(x.properties.time).getUTCFullYear(), date: new Date(x.properties.time).toISOString().slice(0, 10), place: String(x.properties.place || '').slice(0, 80),
       depth_km: Math.round(x.geometry.coordinates[2]), dist_km: Math.round(km(lat, lng, x.geometry.coordinates[1], x.geometry.coordinates[0])), url: x.properties.url }));
     const since = y => ev.filter(e => e.year >= y).length;
-    return { ok: true, radius_km: radiusKm, since: 1900, m5: ev.length, m6: ev.filter(e => e.mag >= 6).length, m7: ev.filter(e => e.mag >= 7).length, m5_since_1976: since(1976),
+    return { ok: true, radius_km: radiusKm, since: 1900, m5: ev.length, m6: ev.filter(e => e.mag >= 6).length, m7: ev.filter(e => e.mag >= 7).length, m5_since_1973: since(1973),
       largest: ev.slice(0, 5), nearest_m6: ev.filter(e => e.mag >= 6).sort((a, b) => a.dist_km - b.dist_km)[0] || null, source: src, query: q, limits };
   } catch (e) { return { ok: false, why: String(e.message || e).slice(0, 80), source: src, query: q, limits }; }
 }
