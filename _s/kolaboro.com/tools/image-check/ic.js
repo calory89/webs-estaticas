@@ -6,7 +6,7 @@
   var drop = $('icDrop'), inp = $('icFile'), st = $('icStatus'), out = $('icOut'), idx = null, idxP = null, thumbUrl = null;
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function loadIndex() {
-    if (!idxP) idxP = fetch('/data/image-hashes.json', { cache: 'no-cache' }).then(function (r) { if (!r.ok) throw new Error('index ' + r.status); return r.json(); })
+    if (!idxP) idxP = fetch('/data/image-hashes.json?d=' + new Date().toISOString().slice(0, 10), { cache: 'no-cache' }).then(function (r) { if (!r.ok) throw new Error('index ' + r.status); return r.json(); })
       .then(function (j) {
         j.split = j.items.map(function (it) { return [KDH.split(it[2]), KDH.split(it[3])]; });
         idx = j; return j;
