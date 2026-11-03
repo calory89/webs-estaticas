@@ -14,7 +14,7 @@ def verify_kolaboro_webhook(raw_body: bytes, headers, webhook_id=None, seen=None
         raise ValueError('missing signature headers')
     if keys is None:
         if _keys is None:
-            _keys = json.load(urllib.request.urlopen(KEYS_URL, timeout=10))['keys']
+            _keys = json.load(urllib.request.urlopen(urllib.request.Request(KEYS_URL, headers={'user-agent': 'kolaboro-webhook-verify/1.0'}), timeout=10))['keys']
         keys = _keys
     k = next((x for x in keys if x['kid'] == kid), None)
     if k is None:
