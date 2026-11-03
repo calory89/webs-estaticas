@@ -1,0 +1,57 @@
+name: Kolaboro market truth
+# Weekly: advertised prices versus official registered sales (DLD, HM Land Registry, Irish PPR), automated register
+# checks with SHA-256 archive, and the risk-patterns model. Publishes kolaboro.com/data/price-reality.json, risk.json
+# and register-checks.json. Research records (names, URLs, company numbers) are read here and never published.
+on:
+  schedule:
+    - cron: '17 4 * * 1'
+  push:
+    branches: [main]
+    paths: ['tools/kolaboro-h/**', '.github/workflows/kolaboro-market-truth.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-market-truth
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            tools/kolaboro-h
+            tools/kolaboro-agent/agent.py
+            tools/kolaboro-agent/projects.json
+            tools/kolaboro-agent/projects-world.json
+          sparse-checkout-cone-mode: false
+      - run: pip install -q numpy scikit-learn
+      - name: Current site data
+        run: |
+          set -e
+          git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          S=$RUNNER_TEMP/site; mkdir -p $S/data $S/registers
+          for f in data/bali-cases.json data/world-claims.json registers/index.html; do git show FETCH_HEAD:_s/kolaboro.com/$f > $S/$f; done
+      - name: Build
+        run: tools/kolaboro-h/run.sh "$RUNNER_TEMP/site" "$RUNNER_TEMP/work"
+      - name: Publish to kolaboro.com
+        run: |
+          set -e
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          for i in 1 2 3 4 5; do
+            P=$(git rev-parse FETCH_HEAD)
+            export GIT_INDEX_FILE=$RUNNER_TEMP/idx; rm -f $GIT_INDEX_FILE; git read-tree $P
+            for f in price-reality.json risk.json register-checks.json; do
+              H=$(git hash-object -w "$RUNNER_TEMP/site/data/$f")
+              git update-index --add --cacheinfo 100644,$H,_s/kolaboro.com/data/$f
+            done
+            T=$(git write-tree); unset GIT_INDEX_FILE
+            [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
+            C=$(git commit-tree $T -p $P -m "kolaboro.com: market truth $(date -u +%F)")
+            git push -q origin $C:refs/heads/pub/_lovable && exit 0
+            sleep 5; git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          done; exit 1
