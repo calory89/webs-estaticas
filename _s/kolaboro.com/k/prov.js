@@ -81,7 +81,7 @@
     '.kbp dl{display:grid;grid-template-columns:96px 1fr;gap:7px 10px;margin:0}.kbp dt{font-weight:700;color:#4A5661;font-size:.76rem;padding-top:1px}.kbp dd{margin:0;min-width:0;overflow-wrap:anywhere}' +
     '.kbp code{font:500 .74rem/1.45 ui-monospace,Menlo,monospace;background:#F2F3F1;padding:1px 5px;border-radius:4px;overflow-wrap:anywhere}.kbp a{color:#B83A05;font-weight:700}' +
     '.kbp .kbp-x{position:absolute;top:8px;right:8px;width:32px;height:32px;border:0;border-radius:8px;background:transparent;font:700 1.2rem/1 system-ui;color:#4A5661;cursor:pointer}.kbp .kbp-x:hover{background:#F2F3F1}.kbp .kbp-x:focus-visible{outline:3px solid #FF5B14}' +
-    '.kbp .ok{color:#075E41;font-weight:700}.kbp .no{color:#8F2D04;font-weight:700}.kbp .mu{color:#4A5661}.kbp .kbp-f{margin:12px 0 0;padding-top:10px;border-top:1px solid rgba(23,33,43,.12);font-size:.76rem;color:#4A5661}' +
+    '.kbp .kbp-ok{color:#075E41;font-weight:700}.kbp .kbp-no{color:#8F2D04;font-weight:700}.kbp .kbp-mu{color:#4A5661}.kbp .kbp-f{margin:12px 0 0;padding-top:10px;border-top:1px solid rgba(23,33,43,.12);font-size:.76rem;color:#4A5661}' +
     '@media (max-width:520px){.kbp dl{grid-template-columns:1fr}.kbp dt{padding-top:4px}}' +
     '.kbp-pv{background:none;border:0;padding:0;font:inherit;color:inherit;cursor:pointer;text-decoration:none;text-align:left}.kbp-pv:hover{text-decoration:underline;text-decoration-color:#FF5B14;text-decoration-thickness:2px}.kbp-pv:focus-visible{outline:3px solid #FF5B14;outline-offset:2px}' +
     '.kbp-sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}';
@@ -133,60 +133,60 @@
     registry().then(function () {
       if (panel !== mine) return;
       var e = entry(id);
-      if (!e) { panel.querySelector('h2').textContent = 'No source registered'; panel.querySelector('dl').insertAdjacentHTML('beforeend', row('Status', '<span class="no">The id "' + esc(id) + '" is not in the registry.</span> That is a bug on our side: <a href="/corrections">tell us</a>.')); place(el); return; }
+      if (!e) { panel.querySelector('h2').textContent = 'No source registered'; panel.querySelector('dl').insertAdjacentHTML('beforeend', row('Status', '<span class="kbp-no">The id "' + esc(id) + '" is not in the registry.</span> That is a bug on our side: <a href="/corrections">tell us</a>.')); place(el); return; }
       fill(mine, el, e, shown);
-    }).catch(function (x) { if (panel === mine) { panel.querySelector('h2').textContent = 'Registry not available'; panel.querySelector('dl').insertAdjacentHTML('beforeend', row('Status', '<span class="no">' + esc((x && x.message) || 'could not load /k/prov.json') + '</span>')); } });
+    }).catch(function (x) { if (panel === mine) { panel.querySelector('h2').textContent = 'Registry not available'; panel.querySelector('dl').insertAdjacentHTML('beforeend', row('Status', '<span class="kbp-no">' + esc((x && x.message) || 'could not load /k/prov.json') + '</span>')); } });
   }
   function fill(mine, el, e, shown) {
     var dl = mine.querySelector('dl');
     mine.querySelector('h2').textContent = e.label || e.id;
     var src = e.src, code = 'GET ' + src + '\n→ ' + (Array.isArray(e.expr) ? e.expr.join(e.join || ' · ') : e.expr);
     dl.insertAdjacentHTML('beforeend',
-      row('Source', '<a href="' + esc(src) + '">' + esc(src) + '</a>' + (e.made_by ? '<br><span class="mu">' + esc(e.made_by) + '</span>' : '')) +
+      row('Source', '<a href="' + esc(src) + '">' + esc(src) + '</a>' + (e.made_by ? '<br><span class="kbp-mu">' + esc(e.made_by) + '</span>' : '')) +
       row('Computation', '<code style="white-space:pre-wrap">' + esc(code) + '</code>' + (e.formula ? '<br>' + esc(e.formula) : '')) +
-      '<dt>Re-read now</dt><dd id="kbp-now" aria-live="polite"><span class="mu">Fetching ' + esc(src) + '…</span></dd>' +
-      '<dt>Data time</dt><dd id="kbp-t"><span class="mu">…</span></dd>' +
-      '<dt>Integrity</dt><dd id="kbp-i"><span class="mu">…</span></dd>' +
-      (e.recompute ? '<dt>Recomputed</dt><dd id="kbp-r"><span class="mu">…</span></dd>' : '') +
-      (e.twin ? '<dt>Signed twin</dt><dd id="kbp-w"><span class="mu">…</span></dd>' : '') +
-      (e.dataset ? '<dt>Dataset hash</dt><dd id="kbp-d"><span class="mu">…</span></dd>' : '') +
-      (e.extra ? Object.keys(e.extra).map(function (k, i) { return '<dt>' + esc(k) + '</dt><dd id="kbp-x' + i + '"><span class="mu">…</span></dd>'; }).join('') : '') +
+      '<dt>Re-read now</dt><dd id="kbp-now" aria-live="polite"><span class="kbp-mu">Fetching ' + esc(src) + '…</span></dd>' +
+      '<dt>Data time</dt><dd id="kbp-t"><span class="kbp-mu">…</span></dd>' +
+      '<dt>Integrity</dt><dd id="kbp-i"><span class="kbp-mu">…</span></dd>' +
+      (e.recompute ? '<dt>Recomputed</dt><dd id="kbp-r"><span class="kbp-mu">…</span></dd>' : '') +
+      (e.twin ? '<dt>Signed twin</dt><dd id="kbp-w"><span class="kbp-mu">…</span></dd>' : '') +
+      (e.dataset ? '<dt>Dataset hash</dt><dd id="kbp-d"><span class="kbp-mu">…</span></dd>' : '') +
+      (e.extra ? Object.keys(e.extra).map(function (k, i) { return '<dt>' + esc(k) + '</dt><dd id="kbp-x' + i + '"><span class="kbp-mu">…</span></dd>'; }).join('') : '') +
       (e.note ? row('Limits', esc(e.note)) : ''));
     mine.insertAdjacentHTML('beforeend', '<p class="kbp-f">Registry entry <code>' + esc(e.id) + '</code> in <a href="/k/prov.json">/k/prov.json</a> · <a href="/verify#numbers">How this works</a></p>');
     place(el);
     var $ = function (i) { return mine.querySelector('#' + i); };
     read(src).then(function (r) {
       if (panel !== mine) return;
-      if (!r.ok || !r.json) { $('kbp-now').innerHTML = '<span class="no">The source answered ' + esc(r.status) + '.</span> Nothing is shown in its place.'; $('kbp-t').textContent = 'unknown'; $('kbp-i').textContent = 'not checked'; return; }
+      if (!r.ok || !r.json) { $('kbp-now').innerHTML = '<span class="kbp-no">The source answered ' + esc(r.status) + '.</span> Nothing is shown in its place.'; $('kbp-t').textContent = 'unknown'; $('kbp-i').textContent = 'not checked'; return; }
       var d = r.json, ex = Array.isArray(e.expr) ? e.expr : [e.expr], vals = ex.map(function (x) { return evalx(d, x); });
       if (e.label_expr) { var lb = evalx(d, e.label_expr); if (lb) mine.querySelector('h2').textContent = lb; }
       var m = same(shown, vals), txt = vals.map(fmt).join(e.join || ' · ');
-      $('kbp-now').innerHTML = '<b>' + esc(txt) + '</b>' + (m === true ? ' <span class="ok">· matches the page</span>' : m === false ? ' <span class="no">· differs from the page</span><br><span class="mu">The page was filled when it loaded; the source may have been republished since. Reload to see the current value.</span>' : '');
+      $('kbp-now').innerHTML = '<b>' + esc(txt) + '</b>' + (m === true ? ' <span class="kbp-ok">· matches the page</span>' : m === false ? ' <span class="kbp-no">· differs from the page</span><br><span class="kbp-mu">The page was filled when it loaded; the source may have been republished since. Reload to see the current value.</span>' : '');
       var t = e.time ? evalx(d, e.time) : null; if (!t && e.time_header) t = r.headers.get(e.time_header);
-      $('kbp-t').innerHTML = t ? esc(when(t)) + (e.time_label ? '<br><span class="mu">' + esc(e.time_label) + '</span>' : '') : '<span class="mu">The source carries no timestamp.</span>';
+      $('kbp-t').innerHTML = t ? esc(when(t)) + (e.time_label ? '<br><span class="kbp-mu">' + esc(e.time_label) + '</span>' : '') : '<span class="kbp-mu">The source carries no timestamp.</span>';
       var sh = r.sha256 ? 'SHA-256 of the ' + (r.text.length > 99999 ? Math.round(r.text.length / 1024) + ' KB' : r.text.length + ' bytes') + ' you received: <code>' + r.sha256 + '</code>' : '';
       var ib = $('kbp-i'); ib.innerHTML = '<span></span><br>' + sh;
       r.check.then(function (c) {
         if (panel !== mine) return;
-        if (c.state === 'unsigned') { ib.firstChild.outerHTML = '<span class="mu">This file is not signed. It is a static file published by a GitHub Actions job; ' + (e.dataset ? 'its hash is compared with the signed public log entry below.' : 'compare the hash above with a copy you saved, or with a later download.') + '</span>'; return; }
+        if (c.state === 'unsigned') { ib.firstChild.outerHTML = '<span class="kbp-mu">This file is not signed. It is a static file published by a GitHub Actions job; ' + (e.dataset ? 'its hash is compared with the signed public log entry below.' : 'compare the hash above with a copy you saved, or with a later download.') + '</span>'; return; }
         verifier().then(function (V) { var s = document.createElement('span'); ib.replaceChild(s, ib.firstChild); V.badge(s, c, { what: src }); });
       });
-      if (e.recompute) { var rv = evalx(d, e.recompute), ok = vals.length === 1 && rv === vals[0]; $('kbp-r').innerHTML = '<code>' + esc(e.recompute) + '</code> = <b>' + esc(fmt(rv)) + '</b> ' + (ok ? '<span class="ok">· agrees</span>' : '<span class="no">· does not agree with ' + esc(fmt(vals[0])) + '</span>') + '<br><span class="mu">Counted again from the raw records in your browser, not read from the summary field.</span>'; }
-      if (e.extra) Object.keys(e.extra).forEach(function (k, i) { var v = evalx(d, e.extra[k]); $('kbp-x' + i).innerHTML = v == null ? '<span class="mu">none</span>' : /^\//.test(String(v)) ? String(v).split(' + ').map(function (p) { return '<a href="' + esc(p) + '">' + esc(p) + '</a>'; }).join(' + ') : esc(fmt(v)); });
+      if (e.recompute) { var rv = evalx(d, e.recompute), ok = vals.length === 1 && rv === vals[0]; $('kbp-r').innerHTML = '<code>' + esc(e.recompute) + '</code> = <b>' + esc(fmt(rv)) + '</b> ' + (ok ? '<span class="kbp-ok">· agrees</span>' : '<span class="kbp-no">· does not agree with ' + esc(fmt(vals[0])) + '</span>') + '<br><span class="kbp-mu">Counted again from the raw records in your browser, not read from the summary field.</span>'; }
+      if (e.extra) Object.keys(e.extra).forEach(function (k, i) { var v = evalx(d, e.extra[k]); $('kbp-x' + i).innerHTML = v == null ? '<span class="kbp-mu">none</span>' : /^\//.test(String(v)) ? String(v).split(' + ').map(function (p) { return '<a href="' + esc(p) + '">' + esc(p) + '</a>'; }).join(' + ') : esc(fmt(v)); });
       if (e.twin) read(e.twin.src).then(function (w) {
         if (panel !== mine) return;
         var wv = w.json ? evalx(w.json, e.twin.expr) : null, agree = wv != null && vals.length === 1 && wv === vals[0];
-        var box = $('kbp-w'); box.innerHTML = '<a href="' + esc(e.twin.src) + '">' + esc(e.twin.src) + '</a> <code>' + esc(e.twin.expr) + '</code> = <b>' + esc(fmt(wv)) + '</b> ' + (agree ? '<span class="ok">· agrees</span>' : '<span class="no">· differs</span> <span class="mu">(the API reads a copy of the file cached for up to 10 minutes)</span>') + '<br><span></span>';
+        var box = $('kbp-w'); box.innerHTML = '<a href="' + esc(e.twin.src) + '">' + esc(e.twin.src) + '</a> <code>' + esc(e.twin.expr) + '</code> = <b>' + esc(fmt(wv)) + '</b> ' + (agree ? '<span class="kbp-ok">· agrees</span>' : '<span class="kbp-no">· differs</span> <span class="kbp-mu">(the API reads a copy of the file cached for up to 10 minutes)</span>') + '<br><span></span>';
         w.check.then(function (c) { verifier().then(function (V) { if (panel === mine) V.badge(box.lastChild, c, { what: e.twin.src }); }); });
       });
       if (e.dataset) read('/api/open/log-input').then(function (L) {
         if (panel !== mine) return;
         var ds = L.json && L.json.dataset_sha256, agree = ds && ds === r.sha256, box = $('kbp-d');
-        box.innerHTML = (ds ? 'The signed answer of <a href="/api/open/log-input">/api/open/log-input</a> says the dataset is <code>' + esc(ds) + '</code> ' + (agree ? '<span class="ok">· same bytes as yours</span>' : '<span class="no">· not the bytes you received</span> <span class="mu">(the API may still hold the previous publish for up to 10 minutes)</span>') : '<span class="no">No dataset hash in the signed answer.</span>') + '<br><span></span>';
+        box.innerHTML = (ds ? 'The signed answer of <a href="/api/open/log-input">/api/open/log-input</a> says the dataset is <code>' + esc(ds) + '</code> ' + (agree ? '<span class="kbp-ok">· same bytes as yours</span>' : '<span class="kbp-no">· not the bytes you received</span> <span class="kbp-mu">(the API may still hold the previous publish for up to 10 minutes)</span>') : '<span class="kbp-no">No dataset hash in the signed answer.</span>') + '<br><span></span>';
         L.check.then(function (c) { verifier().then(function (V) { if (panel === mine) V.badge(box.lastChild, c, { what: '/api/open/log-input' }); }); });
       });
       place(el);
-    }).catch(function (x) { if (panel === mine) $('kbp-now').innerHTML = '<span class="no">Could not read the source: ' + esc((x && x.message) || 'network error') + '.</span>'; });
+    }).catch(function (x) { if (panel === mine) $('kbp-now').innerHTML = '<span class="kbp-no">Could not read the source: ' + esc((x && x.message) || 'network error') + '.</span>'; });
   }
   // ---------- "Verify this page" in the footer
   function footer() {

@@ -44,6 +44,6 @@ export async function handle(req, u, env, ctx) {
   const k = p.slice('/api/x/n/'.length);
   if (!FILES[k]) return plain(env, { error: 'not_found', see: '/api/x/n/' }, 404, 60);
   const body = await asset(env, FILES[k]);
-  if (body == null) return plain(env, { state: 'starting', error: 'not_published_yet', file: FILES[k], note: 'The GitHub Actions job that writes this file has not published it to this deploy yet. Nothing is invented in its place.' }, 503, 30);
+  if (body == null) return plain(env, { state: 'starting', error: 'not_published_yet', file: FILES[k], note: 'The GitHub Actions job that writes this file has not published it to this deploy yet. Nothing is invented in its place.' }, 200, 30);
   return signedText(env, body, k === 'registry' ? 300 : 60, FILES[k]);
 }
