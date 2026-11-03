@@ -23,6 +23,7 @@ import agent  # noqa: E402  (PREFIX, FX: the same ids and currency table the pub
 TODAY = datetime.now(timezone.utc).strftime('%Y-%m-%d')
 UA = {'User-Agent': 'Mozilla/5.0 (compatible; KolaboroResearchAgent/1.0; +https://kolaboro.com/data-policy)', 'Accept': 'application/json, application/rdap+json'}
 NET = '--no-net' not in sys.argv
+T0 = time.time()
 
 STOP = {'the', 'by', 'and', 'of', 'at', 'in', 'residences', 'residence', 'villas', 'villa', 'apartments', 'apartment', 'tower',
         'towers', 'group', 'developments', 'development', 'developers', 'developer', 'properties', 'property', 'real', 'estate',
@@ -154,7 +155,7 @@ def ct_first(d):
     j = None
     for i in range(3):   # crt.sh sometimes answers an empty list or 404 under load: only "none" after three tries
         try:
-            j = get_json('https://crt.sh/?q=' + urllib.parse.quote(d) + '&output=json', timeout=90, tries=2)
+            j = get_json('https://crt.sh/?q=' + urllib.parse.quote(d) + '&output=json', timeout=45, tries=2)
         except Exception:
             j = 'failed'
         if j and j != 'failed':
@@ -180,8 +181,12 @@ def domain_age(P, ids, prev):
     cache = (prev or {}).get('_cache') or {}   # never published: stripped before writing (see main)
     res = {}
 
+    deadline = T0 + float(os.environ.get('KB_LOOKUP_SECONDS', '1200'))   # lookups stop here; the next run continues from the cache
+
     def look(d):
         c = cache.get(d)
+        if time.time() > deadline:
+            return d, c or {}
         if c and c.get('checked', '') >= time.strftime('%Y-%m-%d', time.gmtime(time.time() - 7 * 86400)) and 'failed' not in (c.get('reg_status') or 'failed') + (c.get('ct_status') or 'failed'):
             return d, c
         if not NET:
