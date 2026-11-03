@@ -1,0 +1,47 @@
+name: Kolaboro Lighthouse
+# Daily and on demand: Lighthouse (pinned) on kolaboro.com's 20 most important pages (tools/kolaboro-lighthouse/pages.json), mobile and
+# desktop. Results go to kolaboro.com/data/lighthouse.json and are shown on kolaboro.com/status. If a score falls below its threshold
+# (tools/kolaboro-lighthouse/thresholds.json, set from the first real run) the job is marked failed and the drop is flagged in the
+# published file. It never reverts anything: the deploy guard handles broken deploys, this only reports.
+on:
+  schedule:
+    - cron: '23 4 * * *'
+  push:
+    branches: [main]
+    paths: ['tools/kolaboro-lighthouse/**', '.github/workflows/kolaboro-lighthouse.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-lighthouse
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            tools/kolaboro-lighthouse
+            tools/kolaboro-reliability
+      - uses: actions/setup-node@v4
+        with: { node-version: '22' }
+      - name: Lighthouse
+        run: |
+          (cd "$RUNNER_TEMP" && npm i -s --no-save --no-package-lock lighthouse@13.5.0 >/dev/null)
+          export LIGHTHOUSE_BIN="$RUNNER_TEMP/node_modules/.bin/lighthouse" CHROME_PATH="$(command -v google-chrome || command -v chromium)"
+          node tools/kolaboro-lighthouse/run.mjs "$RUNNER_TEMP/lh"
+      - name: Publish to kolaboro.com
+        run: bash tools/kolaboro-reliability/publish.sh "kolaboro.com: Lighthouse $(date -u +%F)" "$RUNNER_TEMP/lh/lighthouse.json=_s/kolaboro.com/data/lighthouse.json"
+      - name: Proposed thresholds (baseline run only)
+        if: always()
+        run: '[ -f "$RUNNER_TEMP/lh/thresholds.proposed.json" ] && cat "$RUNNER_TEMP/lh/thresholds.proposed.json" || true'
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: { name: lighthouse, path: '${{ runner.temp }}/lh/*.json', retention-days: 14 }
+      - name: Fail on scores below threshold
+        run: |
+          N=$(cat "$RUNNER_TEMP/lh/flags.txt")
+          if [ "$N" != "0" ]; then echo "::error::$N Lighthouse score(s) below threshold, see kolaboro.com/status and data/lighthouse.json"; exit 1; fi

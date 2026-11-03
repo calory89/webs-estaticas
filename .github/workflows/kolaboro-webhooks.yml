@@ -1,0 +1,32 @@
+name: Kolaboro partner webhooks
+# Daily, after the research agent's run and the alerts job: calls the worker's webhook job with a GitHub OIDC token (no stored secret).
+# The worker compares each watched project's public record with the last state and POSTs one Ed25519-signed event per change to each
+# partner webhook (kolaboro.com/docs/webhooks/), retrying failures and logging every attempt. Project details stay out of this log.
+on:
+  schedule:
+    - cron: '53 10 * * *'
+  workflow_run:
+    workflows: ['Kolaboro research agent']
+    types: [completed]
+  workflow_dispatch:
+permissions:
+  id-token: write
+concurrency:
+  group: kolaboro-webhooks
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Wait for the site deploy after an agent run
+        if: github.event_name == 'workflow_run'
+        run: sleep 240
+      - name: Deliver webhook events
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request
+          tok = json.load(urllib.request.urlopen(urllib.request.Request(os.environ['ACTIONS_ID_TOKEN_REQUEST_URL'] + '&audience=kolaboro.com', headers={'Authorization': 'Bearer ' + os.environ['ACTIONS_ID_TOKEN_REQUEST_TOKEN']}), timeout=15))['value']
+          r = urllib.request.urlopen(urllib.request.Request('https://kolaboro.com/api/x/t/hooks/run', b'{}', {'content-type': 'application/json', 'authorization': 'Bearer ' + tok, 'user-agent': 'kolaboro-webhooks/1.0'}), timeout=600)
+          print(r.status, r.read().decode()[:2000])
+          PY
