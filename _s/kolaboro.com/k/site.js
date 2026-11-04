@@ -353,7 +353,7 @@
   document.querySelectorAll('form[data-news]').forEach(function (f) {
     f.addEventListener('submit', function (e) {
       e.preventDefault(); var m = f.querySelector('.nmsg'), em = (f.email.value || '').trim();
-      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)) { m.textContent = MSG.email; m.style.color = 'var(--hivis-ink)'; return; }
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)) { m.textContent = (document.documentElement.lang || '').indexOf('id') === 0 ? 'Tambahkan alamat email yang valid.' : 'Add a valid email address.'; m.style.color = 'var(--hivis-ink)'; return; }
       m.textContent = 'Subscribing…'; m.style.color = '';
       fetch(URL_, { method: 'POST', headers: { apikey: KEY, Authorization: 'Bearer ' + KEY, 'Content-Type': 'application/json' },
         body: JSON.stringify({ p_name: 'Newsletter subscriber', p_email: em, p_country: '', p_phone: '', p_who: 'newsletter | ' + location.pathname,
