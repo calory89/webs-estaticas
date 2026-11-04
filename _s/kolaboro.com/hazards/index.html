@@ -108,7 +108,7 @@
   <li>Earthquakes: <a href="https://earthquake.usgs.gov/fdsnws/event/1/">USGS ComCat</a>, magnitude 5 and above within 100 km since 1900.</li>
   <li>Tsunami: <a href="https://www.ngdc.noaa.gov/hazard/tsu_db.shtml">NOAA NCEI Global Historical Tsunami Database</a>, run-ups within 50 km.</li>
   <li>Volcanoes: <a href="https://volcano.si.edu/">Smithsonian Global Volcanism Program</a>, Holocene volcanoes within 100 km.</li>
-  <li>Coast: <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> coastline within 10 km, via the Overpass API.</li>
+  <li>Coast: <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> coastline within 10 km, via the Overpass API. When no Overpass server answers, a coarse fallback: the <a href="https://www.naturalearthdata.com/about/terms-of-use/">Natural Earth</a> 1:10m land outline (public domain), shown only in bands and labelled as such.</li>
  </ul></div>
  <div><h3>What we left out, and why</h3><ul>
   <li>JRC global river flood maps: published as download tiles with no point query service, so we read Aqueduct, which is.</li>
@@ -120,7 +120,7 @@
 <p class="muted" style="margin-top:16px;font-size:.88rem">API: <a href="/api/x/p/hazards?lat=-8.638&amp;lng=115.115">/api/x/p/hazards?lat=&amp;lng=</a> (JSON, every figure with its source, query and limits) and <a href="/data/hazards.json">/data/hazards.json</a> (monthly batch). Produced using Copernicus WorldDEM-30 &copy; DLR e.V. 2010-2014 and &copy; Airbus Defence and Space GmbH 2014-2018, provided under COPERNICUS by the European Union and ESA.</p>
 </div></section>
 <script src="/satellite/plot/vendor/leaflet-1.9.4.js" defer></script>
-<script src="/hazards/hz.js?v=42d942cf40" defer></script>
+<script src="/hazards/hz.js?v=e058293be3" defer></script>
 
 </main>
 <div class="mcta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="cta_sticky">Protect my purchase</a></div>

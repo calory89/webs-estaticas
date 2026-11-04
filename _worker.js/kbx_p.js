@@ -22,8 +22,8 @@ async function allow(ctx, key, limit, ttl) {   // per-isolate window plus a fixe
   return true;
 }
 
-const VERSION = 'hz3';
-async function hazards(req, u, ctx) {
+const VERSION = 'hz4';
+async function hazards(req, u, ctx, env) {
   const lat = +u.searchParams.get('lat'), lng = +u.searchParams.get('lng');
   if (!(lat >= -60 && lat <= 75 && lng >= -180 && lng <= 180) || !u.searchParams.get('lat') || !u.searchParams.get('lng')) return out({ error: 'need lat (-60..75) and lng (-180..180)' }, 400);
   const rl = Math.round(lat * 1e4) / 1e4, rg = Math.round(lng * 1e4) / 1e4;
@@ -32,7 +32,7 @@ async function hazards(req, u, ctx) {
   const hit = await cache.match(key);
   if (hit) { const r = new Response(hit.body, hit); r.headers.set('x-cache', 'hit'); return r; }
   if (!(await allow(ctx, 'hz/' + ipOf(req), 12, 600))) return out({ error: 'rate_limited', note: 'At most 12 new pins per 10 minutes from one address, so the free public sources behind this page are not overloaded. Pins already looked up by anyone stay instant.' }, 429);
-  const body = await HZ.all(rl, rg);
+  const body = await HZ.all(rl, rg, env && env.ASSETS ? { asset: p => env.ASSETS.fetch(new Request('https://kolaboro.com/_s/kolaboro.com' + p)) } : {});
   body.note = 'Each figure is read live from the public source named next to it. A source that did not answer is shown as unavailable, never estimated.';
   body.rounded_to = '4 decimals (about 10 m)';
   const failed = HZ.SOURCES.filter(k => !body[k] || !body[k].ok).length;
@@ -86,7 +86,7 @@ export async function handle(req, u, env, ctx) {
   if (req.method !== 'GET') return out({ error: 'GET only' }, 405);
   const p = u.pathname.replace(/^\/api\/x\/p\//, '');
   try {
-    if (p === 'hazards') return await hazards(req, u, ctx);
+    if (p === 'hazards') return await hazards(req, u, ctx, env);
     if (p === 'zoning') return await zoning(req, u, ctx);
     if (p === '' || p === 'about') return out({ endpoints: { '/api/x/p/hazards?lat=&lng=': 'natural hazards at a point from open sources', '/api/x/p/zoning': 'live check of the official Indonesian spatial plan services' }, page: 'https://kolaboro.com/hazards/' }, 200, 3600);
   } catch (e) { return out({ error: 'failed', detail: String(e.message || e).slice(0, 100) }, 502); }

@@ -223,7 +223,7 @@ export async function volcano(lat, lng, radiusKm = 100) {
 }
 
 // ---------- 6. Distance to the coastline: OpenStreetMap natural=coastline via the Overpass API ----------
-const OVERPASS = ['https://overpass-api.de/api/interpreter', 'https://maps.mail.ru/osm/tools/overpass/api/interpreter'];
+const OVERPASS = ['https://overpass-api.de/api/interpreter', 'https://maps.mail.ru/osm/tools/overpass/api/interpreter', 'https://overpass.kumi.systems/api/interpreter'];
 function segKm(lat, lng, a, b) {   // point to segment on a local flat projection (fine at these distances)
   const kx = 111.32 * Math.cos(R(lat)), ky = 110.57;
   const ax = (a.lon - lng) * kx, ay = (a.lat - lat) * ky, bx = (b.lon - lng) * kx, by = (b.lat - lat) * ky;
@@ -231,13 +231,13 @@ function segKm(lat, lng, a, b) {   // point to segment on a local flat projectio
   let t = L ? -(ax * dx + ay * dy) / L : 0; t = Math.max(0, Math.min(1, t));
   return Math.hypot(ax + t * dx, ay + t * dy);
 }
-export async function coast(lat, lng, radiusKm = 10) {
+export async function coast(lat, lng, radiusKm = 10, opt = {}) {
   const ql = '[out:json][timeout:18];way(around:' + radiusKm * 1000 + ',' + lat.toFixed(5) + ',' + lng.toFixed(5) + ')[natural=coastline];out geom;';
   const src = { name: 'OpenStreetMap coastline (natural=coastline), queried with the Overpass API', url: 'https://www.openstreetmap.org/copyright', license: 'ODbL, (c) OpenStreetMap contributors' };
   const limits = 'Straight-line distance to the mapped high-water line, as drawn by OpenStreetMap volunteers. Accuracy is usually tens of metres on popular coasts and can be worse elsewhere. Rivers, lagoons and estuaries are not coastline here.';
   const query = 'https://overpass-turbo.eu/?Q=' + encodeURIComponent(ql) + '&R';
   const one = async ep => {   // both public servers are asked at once; the first valid answer wins (one is often slow)
-    const r = await get(ep, { method: 'POST', body: 'data=' + encodeURIComponent(ql), headers: { 'content-type': 'application/x-www-form-urlencoded' } }, 20000);
+    const r = await get(ep, { method: 'POST', body: 'data=' + encodeURIComponent(ql), headers: { 'content-type': 'application/x-www-form-urlencoded' } }, opt.overpassMs || 9000);
     if (!r.ok) throw new Error('Overpass answered ' + r.status);
     const d = await r.json();
     if (d.remark && /error|timed out/i.test(d.remark)) throw new Error('Overpass: ' + String(d.remark).slice(0, 60));
@@ -246,17 +246,42 @@ export async function coast(lat, lng, radiusKm = 10) {
     return { best, ep };
   };
   let lastErr = '';
+  const ne = neCoast(lat, lng, radiusKm, opt).catch(e => ({ ok: false, why: String(e.message || e).slice(0, 60) }));   // fetched alongside, used only if OSM fails
   try {
     const { best, ep } = await Promise.any(OVERPASS.map(one));
     if (best === Infinity) return { ok: true, within_km: radiusKm, distance_m: null, beyond: true, source: src, query, limits };
     return { ok: true, within_km: radiusKm, distance_m: best < 1 ? Math.round(best * 1000 / 10) * 10 : Math.round(best * 1000 / 50) * 50, source: src, query, limits, endpoint: ep.replace(/\/api\/interpreter$/, '') };
   } catch (e) { lastErr = e && e.errors ? e.errors.map(x => String(x.message || x).slice(0, 50)).join('; ') : String(e.message || e).slice(0, 80); }
-  return { ok: false, why: lastErr || 'no Overpass server answered', source: src, limits };
+  const f = await ne;
+  if (f.ok) { f.osm_failed = lastErr || 'no Overpass server answered'; return f; }
+  return { ok: false, why: (lastErr || 'no Overpass server answered') + '; fallback: ' + f.why, source: src, limits };
+}
+
+// Fallback when every Overpass server fails: Natural Earth 1:10m land outline (public domain, via world-atlas 2.0.2),
+// cut into 10 degree tiles published at /data/coast/<lon>_<lat>.json (every tile exists, open ocean ones are empty, so a 404 is an error) (quantised TopoJSON units, delta-encoded lines).
+// Coarse on purpose: the outline is generalised and quantised to a few hundred metres, so the result is given in bands.
+const NE_SRC = { name: 'Natural Earth 1:10m land outline (fallback, used because no OpenStreetMap server answered)', url: 'https://www.naturalearthdata.com/about/terms-of-use/', license: 'Public domain (Natural Earth), redistributed by world-atlas 2.0.2' };
+const NE_LIMITS = 'A generalised world outline at 1:10 million, accurate to about 1 km and simplified around small bays, islands and river mouths. We show it only in bands (under 1 km, or to the nearest 0.5 km) and only when the detailed OpenStreetMap coastline could not be read.';
+async function neCoast(lat, lng, radiusKm, opt) {
+  const tx = Math.floor((lng + 180) / 10) * 10 - 180, ty = Math.floor((lat + 90) / 10) * 10 - 90;
+  const path = '/data/coast/' + tx + '_' + ty + '.json';
+  const query = 'https://kolaboro.com' + path;
+  const r = opt.asset ? await opt.asset(path) : await get(query, { cf: { cacheTtl: 86400 * 30, cacheEverything: true } }, 8000);
+  if (!r.ok) throw new Error('outline tile ' + r.status);
+  const d = await r.json(), [sx, sy] = d.s, [ox, oy] = d.t;
+  let best = Infinity;
+  for (const e of d.l) {
+    let x = e[0], y = e[1], prev = { lon: ox + x * sx, lat: oy + y * sy };
+    for (let i = 2; i < e.length; i += 2) { x += e[i]; y += e[i + 1]; const cur = { lon: ox + x * sx, lat: oy + y * sy }; best = Math.min(best, segKm(lat, lng, prev, cur)); prev = cur; }
+  }
+  if (!(best <= radiusKm)) return { ok: true, approx: true, within_km: radiusKm, distance_m: null, beyond: true, source: NE_SRC, query, limits: NE_LIMITS };
+  return best < 1 ? { ok: true, approx: true, within_km: radiusKm, distance_m: null, under_m: 1000, source: NE_SRC, query, limits: NE_LIMITS }
+    : { ok: true, approx: true, within_km: radiusKm, distance_m: Math.round(best * 2) * 500, source: NE_SRC, query, limits: NE_LIMITS };
 }
 
 export const SOURCES = ['elevation', 'flood', 'quakes', 'tsunami', 'volcano', 'coast'];
-export async function all(lat, lng) {
+export async function all(lat, lng, opt = {}) {
   const t0 = Date.now();
-  const [e, f, q, t, v, c] = await Promise.all([elevation(lat, lng), flood(lat, lng), quakes(lat, lng), tsunami(lat, lng), volcano(lat, lng), coast(lat, lng)]);
+  const [e, f, q, t, v, c] = await Promise.all([elevation(lat, lng), flood(lat, lng), quakes(lat, lng), tsunami(lat, lng), volcano(lat, lng), coast(lat, lng, 10, opt)]);
   return { lat, lng, generated: new Date().toISOString(), ms: Date.now() - t0, elevation: e, flood: f, quakes: q, tsunami: t, volcano: v, coast: c };
 }

@@ -82,7 +82,8 @@
     } else h.push(down(v, 'Volcanoes'));
     // coast
     if (c && c.ok) {
-      h.push(card('Distance to the coastline', c.beyond ? '<p class="hz-big">Over ' + c.within_km + ' km</p><p class="hz-read">No mapped coastline within ' + c.within_km + ' km.</p>' :
+      h.push(card('Distance to the coastline', c.beyond ? '<p class="hz-big">Over ' + c.within_km + ' km</p><p class="hz-read">No mapped coastline within ' + c.within_km + ' km' + (c.approx ? ' on a coarse world outline (the detailed OpenStreetMap coastline did not answer).' : '.') + '</p>' :
+        c.approx ? '<p class="hz-big">' + (c.under_m ? 'Under ' + dist(c.under_m) : 'About ' + dist(c.distance_m)) + '</p><p class="hz-read">The detailed OpenStreetMap coastline did not answer, so this comes from a coarse world outline, accurate to about 1 km.' + (c.under_m ? ' <b>Close to the shore:</b> try again later for the exact distance, and ask whether a coastal setback line applies to this plot.' : '') + '</p>' :
         '<p class="hz-big">' + dist(c.distance_m) + '</p><p class="hz-read">Straight line from your pin to the nearest mapped high-water line.' + (c.distance_m < 200 ? ' <b>Under 200 m:</b> ask whether a coastal setback line applies to this plot; many countries, Indonesia included, restrict building close to the shore.' : '') + '</p>', c));
     } else h.push(down(c, 'Distance to the coastline'));
     $('hzgrid').innerHTML = h.join('');
