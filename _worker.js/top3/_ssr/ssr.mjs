@@ -94406,7 +94406,946 @@ var gymLink = (id, slug, L) => G$1[id] ? `<p class="note" style="margin:10px 0">
 * Data: src/generated/pools.json, built from data/pools/<slug>.json by tools/pools/build.py.
 * One hotel per tier (luxury = 5 stars, standard = 4 stars, budget = 3 stars or less), judged on the pool only.
 */
-var G = {};
+var G = {
+	"andorra-la-vella-andorra": {
+		"city": "Andorra la Vella",
+		"country": "Andorra",
+		"checked": "2026-11-04",
+		"best": "luxury",
+		"bestReason_en": "Heated indoor pool plus an outdoor pool in a 5-star hotel with a poolside bar.",
+		"bestReason_es": "Piscina cubierta climatizada y piscina exterior en un hotel de 5 estrellas, con bar junto a la piscina.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Andorra Park Hotel",
+				"stars": 5,
+				"area": "City centre",
+				"bookingUrl": null,
+				"website": "https://andorraparkhotel.com/",
+				"pool": {
+					"kind": ["indoor", "outdoor"],
+					"lengthM": null,
+					"heated": true,
+					"hours": null,
+					"seasonal": "Outdoor pool seasonal",
+					"extras": ["Poolside bar", "Spa"],
+					"access": null
+				},
+				"summary_en": "Heated indoor pool and a seasonal outdoor pool, with a poolside bar and a spa.",
+				"summary_es": "Piscina cubierta climatizada y piscina exterior de temporada, con bar junto a la piscina y spa.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Andorra-la-Vella/Hotels/pool-five_star",
+					"https://www.booking.com/fivestars/city/ad/andorra-la-vella.html",
+					"https://andorraescapes.com/accommodation/hotels/andorra-park/",
+					"https://www.tripadvisor.com/Hotel_Review-g190392-d258692-Reviews-Andorra_Park_Hotel-Andorra_la_Vella_Andorra_la_Vella_Parish.html"
+				],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Mercure Andorra",
+				"stars": 4,
+				"area": "Andorra Shopping Area",
+				"bookingUrl": null,
+				"website": null,
+				"pool": {
+					"kind": ["indoor"],
+					"lengthM": null,
+					"heated": true,
+					"hours": null,
+					"seasonal": null,
+					"extras": [
+						"Jacuzzi",
+						"Turkish steam bath",
+						"Sauna"
+					],
+					"access": null
+				},
+				"summary_en": "Heated indoor pool with a jacuzzi, a Turkish steam bath and a sauna, part of the hotel spa.",
+				"summary_es": "Piscina cubierta climatizada con jacuzzi, baño turco y sauna, dentro del spa del hotel.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Andorra-la-Vella/Hotels/pool-four_star",
+					"https://mercure.andorra-la-vella-hotels.net/en/",
+					"https://www.travelocity.com/es/Andorra-La-Vella-Hoteles-Mercure-Andorra.h19554.Informacion-Hotel",
+					"https://www.tripadvisor.com/Hotel_Review-g190392-d206588-Reviews-Mercure_Andorra_Hotel-Andorra_la_Vella_Andorra_la_Vella_Parish.html"
+				],
+				"confidence": "medium",
+				"photo": null
+			},
+			"budget": {
+				"hotel": "Hotel Pyrénées",
+				"stars": 3,
+				"area": "Andorra Shopping Area",
+				"bookingUrl": "https://www.booking.com/hotel/ad/pyrenees.html",
+				"website": "https://pyrenees.andorralavellashotel.com/en/",
+				"pool": {
+					"kind": ["rooftop", "outdoor"],
+					"lengthM": null,
+					"heated": null,
+					"hours": null,
+					"seasonal": "June to September",
+					"extras": ["Panoramic mountain views", "Pool lap lanes"],
+					"access": "Free for guests per Booking.com listing; adults only per one listing"
+				},
+				"summary_en": "Outdoor rooftop pool in the adjacent building, with mountain views, open during the season.",
+				"summary_es": "Piscina exterior en la azotea del edificio contiguo, con vistas a las montañas y abierta durante la temporada.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Andorra-la-Vella/Hotels/pool-three_star",
+					"https://www.booking.com/hotel/ad/pyrenees.html",
+					"https://www.booking.com/city/ad/andorra-la-vella.html",
+					"https://www.travelated.com/andorra/andorra-la-vella-city/hotel-pyrenees"
+				],
+				"confidence": "medium",
+				"photo": null
+			}
+		}
+	},
+	barcelona: {
+		"city": "Barcelona",
+		"country": "Spain",
+		"checked": "2026-11-04",
+		"best": "luxury",
+		"bestReason_en": "Heated indoor pool plus a rooftop skybar pool with city views.",
+		"bestReason_es": "Piscina cubierta climatizada y piscina en la azotea del skybar con vistas a la ciudad.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "The One Barcelona GL",
+				"stars": 5,
+				"area": "Eixample",
+				"bookingUrl": "https://www.booking.com/hotel/es/the-one-barcelona.html",
+				"website": "https://www.hotelstheone.com/en/barcelona-hotels/the-one-barcelona",
+				"pool": {
+					"kind": ["rooftop", "indoor"],
+					"lengthM": null,
+					"heated": true,
+					"hours": null,
+					"seasonal": "Rooftop pool listed as seasonal on Hotels.com",
+					"extras": [
+						"Jacuzzi on the terrace",
+						"Pool bar",
+						"Sauna"
+					],
+					"access": null
+				},
+				"summary_en": "Rooftop skybar pool with city views, plus a heated indoor pool in the spa. Some guests find the pool small, and the rooftop pool has limited opening hours.",
+				"summary_es": "Piscina en el skybar de la azotea con vistas a la ciudad, y piscina cubierta climatizada en el spa. Algunos huéspedes la ven pequeña y la azotea tiene horario limitado.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Barcelona/Hotels/pool",
+					"https://www.booking.com/hotel/es/the-one-barcelona.html",
+					"https://www.hotelstheone.com/en/barcelona-hotels/the-one-barcelona",
+					"https://www.hotels.com/ho664555/the-one-barcelona-gl-barcelona-spain/"
+				],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "H10 Marina Barcelona",
+				"stars": 4,
+				"area": "Vila Olímpica",
+				"bookingUrl": "https://www.booking.com/hotel/es/marinabarcelona.html",
+				"website": null,
+				"pool": {
+					"kind": [
+						"rooftop",
+						"indoor",
+						"outdoor"
+					],
+					"lengthM": null,
+					"heated": true,
+					"hours": null,
+					"seasonal": null,
+					"extras": [
+						"Bar at the rooftop pool",
+						"Sun terrace",
+						"Sauna"
+					],
+					"access": "Some guests report an extra charge for pool access"
+				},
+				"summary_en": "Rooftop pool with sea and city views, plus a heated indoor pool in the spa. The outdoor pool is not heated.",
+				"summary_es": "Piscina en la azotea con vistas al mar y a la ciudad, y piscina cubierta climatizada en el spa. La piscina exterior no está climatizada.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Barcelona/Hotels/pool-four_star",
+					"https://www.travelmyth.co.uk/Barcelona/Hotels/pool",
+					"https://www.booking.com/hotel/es/marinabarcelona.html",
+					"https://www.hotelsbarcelonaes.com/en/property/h10-marina-barcelona.html"
+				],
+				"confidence": "medium",
+				"photo": null
+			},
+			"budget": {
+				"hotel": "Andante Drassanes",
+				"stars": 3,
+				"area": "Ciutat Vella (El Raval)",
+				"bookingUrl": null,
+				"website": "https://andantehotel.com/en/hotel-drassanes/",
+				"pool": {
+					"kind": ["rooftop"],
+					"lengthM": null,
+					"heated": null,
+					"hours": null,
+					"seasonal": null,
+					"extras": ["Sun loungers"],
+					"access": null
+				},
+				"summary_en": "Small rooftop pool with panoramic city views. Guests mention the view more than the size of the pool.",
+				"summary_es": "Piscina pequeña en la azotea con vistas panorámicas de la ciudad. Los huéspedes destacan más la vista que el tamaño de la piscina.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Barcelona/Hotels/pool-three_star",
+					"https://andantehotel.com/en/hotel-drassanes/habitacion-twin-con-vistas/",
+					"https://www.tripadvisor.com/Hotel_Review-g187497-d2545026-Reviews-Andante_Drassanes-Barcelona_Catalonia.html",
+					"https://andante-hotel-barcelona.h-rez.com/"
+				],
+				"confidence": "medium",
+				"photo": null
+			}
+		}
+	},
+	dubai: {
+		"city": "Dubai",
+		"country": "United Arab Emirates",
+		"checked": "2026-11-04",
+		"best": "luxury",
+		"bestReason_en": "Outdoor pool with lap lanes at a beachfront resort on Palm Jumeirah.",
+		"bestReason_es": "Piscina exterior con calles de natación en un complejo frente a la playa de Palm Jumeirah.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "One&Only The Palm Dubai",
+				"stars": 5,
+				"area": "Palm Jumeirah",
+				"bookingUrl": "https://www.booking.com/hotel/ae/one-only-the-palm-dubai.html",
+				"website": "https://www.oneandonlyresorts.com/the-palm/accommodation",
+				"pool": {
+					"kind": ["outdoor", "lap"],
+					"lengthM": null,
+					"heated": null,
+					"hours": null,
+					"seasonal": null,
+					"extras": [
+						"Pool lap lanes",
+						"Beachfront setting",
+						"Poolside bar"
+					],
+					"access": null
+				},
+				"summary_en": "Outdoor pool with lap lanes at a beachfront resort on Palm Jumeirah. Guest reviews on Travelmyth single out the pool and beach areas.",
+				"summary_es": "Piscina exterior con calles de natación en un complejo frente a la playa de Palm Jumeirah. Las reseñas de huéspedes en Travelmyth destacan la piscina y la zona de playa.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Dubai/Hotels/pool-five_star",
+					"https://www.travelmyth.co.uk/Dubai/Hotels/OneOnly-The-Palm-Dubai_tmid6059",
+					"https://www.booking.com/hotel/ae/one-only-the-palm-dubai.html",
+					"https://www.kayak.com/Dubai-Hotels-One-Only-The-Palm.351381.ksp"
+				],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Canopy by Hilton Dubai Al Seef",
+				"stars": 4,
+				"area": "Al Seef, Dubai Creek",
+				"bookingUrl": "https://www.booking.com/hotel/ae/canopy-by-hilton-dubai-al-seef.html",
+				"website": "https://www.hilton.com/en/hotels/dxbsepy-canopy-dubai-al-seef/",
+				"pool": {
+					"kind": [
+						"rooftop",
+						"infinity",
+						"outdoor"
+					],
+					"lengthM": null,
+					"heated": true,
+					"hours": null,
+					"seasonal": null,
+					"extras": [
+						"Pool bar",
+						"Cabanas",
+						"Views over Dubai Creek"
+					],
+					"access": null
+				},
+				"summary_en": "Rooftop infinity pool with views over Dubai Creek and the city, with cabanas and a pool bar. Reviews describe the roof terrace pool as compact.",
+				"summary_es": "Piscina infinity en la azotea con vistas al Creek y a la ciudad, con cabañas y bar junto a la piscina. Las reseñas describen la piscina de la terraza como compacta.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Dubai/Hotels/Canopy-by-Hilton-Dubai-Al-Seef_tmid2642930",
+					"https://www.tripadvisor.com/Hotel_Review-g295424-d13554517-Reviews-Canopy_By_Hilton_Dubai_Al_Seef-Dubai_Emirate_of_Dubai.html",
+					"https://www.booking.com/hotel/ae/canopy-by-hilton-dubai-al-seef.html",
+					"https://canopybyseef.hotelindubai.info/en/"
+				],
+				"confidence": "medium",
+				"photo": null
+			},
+			"budget": {
+				"hotel": "J5 Hotels - Port Saeed",
+				"stars": 3,
+				"area": "Port Saeed, Deira City Centre",
+				"bookingUrl": "https://www.booking.com/hotel/ae/j5-hotels-port-saeed.html",
+				"website": "https://jacobshotels.ae/our-hotels/j5-portsaeed/",
+				"pool": {
+					"kind": ["rooftop", "outdoor"],
+					"lengthM": null,
+					"heated": null,
+					"hours": null,
+					"seasonal": null,
+					"extras": [
+						"Pool bar",
+						"Sauna",
+						"Steam room",
+						"Jacuzzi"
+					],
+					"access": null
+				},
+				"summary_en": "Rooftop pool with a poolside bar, close to a sauna and steam room. Guests describe the pool as clean, though not very large.",
+				"summary_es": "Piscina en la azotea con bar junto a la piscina, cerca de la sauna y el baño de vapor. Los huéspedes la describen como limpia, aunque no muy grande.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Dubai/Hotels/pool-three_star",
+					"https://ar.trivago.com/en-145/oar/j5-hotels-port-saeed-dubai?search=100-55314",
+					"https://hotels.com/ho172397/j5-hotels-port-saeed-dubai-united-arab-emirates",
+					"https://j5-hotels-port-saeed.hotel-dubai.com/en/"
+				],
+				"confidence": "medium",
+				"photo": null
+			}
+		}
+	},
+	"london-canada": {
+		"city": "London",
+		"country": "Canada",
+		"checked": "2026-11-04",
+		"best": "luxury",
+		"bestReason_en": "Indoor/outdoor pool open year-round, with cabanas and an underwater sound system.",
+		"bestReason_es": "Piscina interior y exterior abierta todo el año, con cabañas y sistema de sonido subacuático.",
+		"luxuryNote": "No 5-star hotel with a pool in the city",
+		"tiers": {
+			"luxury": {
+				"hotel": "Hard Rock Hotel London Ontario",
+				"stars": 4,
+				"area": "Old East Village",
+				"bookingUrl": "https://www.booking.com/hotel/ca/hard-rock-london-ontario.html",
+				"website": "https://hotel.hardrock.com/london-ontario/",
+				"pool": {
+					"kind": ["indoor", "outdoor"],
+					"lengthM": null,
+					"heated": null,
+					"hours": null,
+					"seasonal": null,
+					"extras": [
+						"Cabana seating",
+						"Poolside cocktails",
+						"Underwater sound system",
+						"Hot tub"
+					],
+					"access": null
+				},
+				"summary_en": "Indoor/outdoor pool that operates year-round, with an underwater sound system and cabana seating. Poolside cocktails and food are served beside it.",
+				"summary_es": "Piscina interior y exterior que funciona todo el año, con sistema de sonido subacuático y zona de cabañas. Junto a ella se sirven cócteles y tapas.",
+				"sources": [
+					"https://www.booking.com/fourstars/city/ca/london.html",
+					"https://www.hardrock.com/blog/hard-rock-hotel-london-ontario-officially-opens-its-doors-today-canadas-first-hard-rock-hotel-takes-centre-stage-at-100-kellogg-lane-as-locally-owned-property-celebrates-its-opening-day-and-welcome",
+					"https://www.londontourism.ca/hard-rock-hotel-london-ontario",
+					"https://www.ca.kayak.com/London-Hotels.5341.hotel.ksp"
+				],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Delta Hotels by Marriott London Armouries",
+				"stars": 4,
+				"area": "Downtown",
+				"bookingUrl": null,
+				"website": null,
+				"pool": {
+					"kind": ["indoor"],
+					"lengthM": null,
+					"heated": true,
+					"hours": null,
+					"seasonal": null,
+					"extras": [
+						"Sauna",
+						"Hot tub",
+						"Splash pool for children",
+						"Fitness centre"
+					],
+					"access": null
+				},
+				"summary_en": "Heated indoor pool in a historic 1905 armoury building, open all year. A sauna and a hot tub are nearby.",
+				"summary_es": "Piscina interior climatizada en un antiguo arsenal de 1905, abierta todo el año. Cerca hay sauna y jacuzzi.",
+				"sources": [
+					"https://us.trip.com/hotels/london-1-hotel-detail-2545063/delta-hotels-by-marriott-london-armouries/",
+					"https://delta-hotels-london-armouries.h-rez.com/",
+					"https://delta-armouries.ontariocahotel.com/en/",
+					"https://www.google.com/travel/hotels/entity/CgsIgp_S5NWn3v-6ARAB"
+				],
+				"confidence": "medium",
+				"photo": null
+			},
+			"budget": {
+				"hotel": "Four Points by Sheraton London",
+				"stars": 3,
+				"area": "Westminster",
+				"bookingUrl": "https://www.booking.com/hotel/ca/four-points-london.html",
+				"website": null,
+				"pool": {
+					"kind": ["indoor"],
+					"lengthM": null,
+					"heated": null,
+					"hours": null,
+					"seasonal": null,
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "Indoor swimming pool at a hotel on Wellington Road South, with free Wi-Fi and an on-site restaurant.",
+				"summary_es": "Piscina cubierta en un hotel de Wellington Road South, con Wi-Fi gratuito y restaurante en el propio hotel.",
+				"sources": [
+					"https://www.booking.com/fourstars/city/ca/london.html",
+					"https://www.hotelscombined.com/Place/London-4-Star-Hotels.4sr.5341.ksp",
+					"https://www.ontariocahotel.com/en/london-hotels-2008/4-stars/"
+				],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	london: {
+		"city": "London",
+		"country": "United Kingdom",
+		"checked": "2026-11-04",
+		"best": "luxury",
+		"bestReason_en": "Heated infinity Sky Pool on the upper floors of The Shard, with panoramic city views, free for hotel guests with a booking slot.",
+		"bestReason_es": "Sky Pool infinita y climatizada en las plantas altas de The Shard, con vistas panorámicas de la ciudad, gratuita para huéspedes con reserva de turno.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Shangri-La The Shard, London",
+				"stars": 5,
+				"area": "Southwark",
+				"bookingUrl": "https://www.booking.com/hotel/gb/shangri-la-at-the-shard-london.html",
+				"website": "https://www.shangri-la.com/london/shangrila/",
+				"pool": {
+					"kind": ["infinity"],
+					"lengthM": null,
+					"heated": true,
+					"hours": null,
+					"seasonal": null,
+					"extras": ["Sky Sauna", "Pool attached to restaurant and bar"],
+					"access": "Booking slot required, free for hotel guests"
+				},
+				"summary_en": "Heated infinity Sky Pool 52 floors above London, with panoramic city views. Guests must book a slot, which is free for hotel guests.",
+				"summary_es": "Sky Pool infinita y climatizada a 52 plantas sobre Londres, con vistas panorámicas de la ciudad. Hay que reservar turno, que es gratuito para huéspedes del hotel.",
+				"sources": [
+					"https://www.travelmyth.co.uk/London/Hotels/pool",
+					"https://www.travelmyth.co.uk/London/Hotels/pool-five_star",
+					"https://www.shangri-la.com/london/shangrila/",
+					"https://shangri-la-at-the-shard.hotels-of-london.com/en/"
+				],
+				"confidence": "high",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Leonardo Royal London Tower Bridge",
+				"stars": 4,
+				"area": "Tower Hamlets",
+				"bookingUrl": "https://www.booking.com/hotel/gb/leonardo-royal-london-tower-bridge-uk.html",
+				"website": "https://www.leonardo-hotels.com/london/leonardo-royal-hotel-london-tower-bridge",
+				"pool": {
+					"kind": ["indoor"],
+					"lengthM": 25,
+					"heated": true,
+					"hours": null,
+					"seasonal": null,
+					"extras": [
+						"Pool lap lanes",
+						"Sauna",
+						"Steam room",
+						"Jacuzzi"
+					],
+					"access": null
+				},
+				"summary_en": "25-metre heated indoor pool with lap lanes, next to a sauna, steam room and jacuzzi. Some guests find the pool chilly.",
+				"summary_es": "Piscina cubierta climatizada de 25 metros con calles para nadar, junto a sauna, baño de vapor y jacuzzi. Algunos huéspedes la encuentran fría.",
+				"sources": [
+					"https://www.travelmyth.co.uk/London/Hotels/pool",
+					"https://www.travelmyth.co.uk/London/Hotels/pool-four_star",
+					"https://uk.hotels.com/ho379048/leonardo-royal-london-tower-bridge-london-united-kingdom/",
+					"https://www.leonardo-hotels.com/london/leonardo-royal-hotel-london-tower-bridge"
+				],
+				"confidence": "medium",
+				"photo": null
+			},
+			"budget": null
+		}
+	},
+	paris: {
+		"city": "Paris",
+		"country": "France",
+		"checked": "2026-11-04",
+		"best": "luxury",
+		"bestReason_en": "Indoor rooftop pool on the top floor with views of Montmartre and the Eiffel Tower, reserved for hotel guests.",
+		"bestReason_es": "Piscina cubierta en la azotea, con vistas a Montmartre y la Torre Eiffel, reservada a los huéspedes del hotel.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Le Bristol Paris, Oetker Hotels",
+				"stars": 5,
+				"area": "8th arrondissement (Faubourg Saint-Honoré)",
+				"bookingUrl": "https://www.booking.com/hotel/fr/le-bristol-paris.html",
+				"website": "https://www.oetkerhotels.com/hotels/le-bristol-paris/",
+				"pool": {
+					"kind": ["rooftop", "indoor"],
+					"lengthM": null,
+					"heated": null,
+					"hours": "06:30-22:30",
+					"seasonal": null,
+					"extras": [
+						"Sun terrace with views",
+						"Sauna",
+						"Steam room"
+					],
+					"access": "Reserved for hotel guests"
+				},
+				"summary_en": "A sixth-floor indoor pool on the rooftop, looking over Montmartre and the Eiffel Tower. It is open daily and only available to hotel guests.",
+				"summary_es": "Piscina cubierta en la sexta planta, con vistas a Montmartre y la Torre Eiffel. Abre todos los días y solo está disponible para los huéspedes del hotel.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Paris/Hotels/pool-five_star",
+					"https://www.oetkerhotels.com/hotels/le-bristol-paris/wellness/",
+					"https://www.oetkerhotels.com/hotels/le-bristol-paris/",
+					"https://www.booking.com/hotel/fr/le-bristol-paris.html"
+				],
+				"confidence": "high",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Novotel Paris Gare De Lyon",
+				"stars": 4,
+				"area": "12th arrondissement (Gare de Lyon)",
+				"bookingUrl": "https://www.booking.com/hotel/fr/novotel-gare-de-lyon.html",
+				"website": null,
+				"pool": {
+					"kind": ["indoor"],
+					"lengthM": null,
+					"heated": true,
+					"hours": null,
+					"seasonal": null,
+					"extras": [],
+					"access": null
+				},
+				"summary_en": "A heated indoor pool that is open seven days a week. The hotel stands opposite Gare de Lyon station.",
+				"summary_es": "Piscina cubierta climatizada, abierta siete días a la semana. El hotel se encuentra frente a la estación de Gare de Lyon.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Paris/Hotels/pool-four_star",
+					"https://www.booking.com/hotel/fr/novotel-gare-de-lyon.html",
+					"https://sg.hotels.com/ho143802/novotel-paris-gare-de-lyon-paris-france/"
+				],
+				"confidence": "medium",
+				"photo": null
+			},
+			"budget": {
+				"hotel": "Maison Gaité",
+				"stars": 3,
+				"area": "14th arrondissement (Montparnasse)",
+				"bookingUrl": null,
+				"website": null,
+				"pool": {
+					"kind": ["indoor", "plunge"],
+					"lengthM": null,
+					"heated": true,
+					"hours": "10:00-22:00",
+					"seasonal": "Open year-round",
+					"extras": ["Sun loungers"],
+					"access": null
+				},
+				"summary_en": "A heated indoor pool open all year, with a small plunge pool and sun loungers. Guests have reported that the star rating is questioned for this hotel.",
+				"summary_es": "Piscina cubierta climatizada abierta todo el año, con una pequeña piscina de inmersión y tumbonas. Algunos huéspedes cuestionan la categoría de tres estrellas del hotel.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Paris/Hotels/pool-three_star",
+					"https://www.sleephotelsparis.com/maison-gaite-473659-en",
+					"https://www.top-paris-hotels.com/en/property/de-la-gaite.html",
+					"https://el.hotels.com/ho383773"
+				],
+				"confidence": "medium",
+				"photo": null
+			}
+		}
+	},
+	rome: {
+		"city": "Rome",
+		"country": "Italy",
+		"checked": "2026-11-04",
+		"best": "luxury",
+		"bestReason_en": "Indoor and outdoor pools in a large hilltop garden, with a pool bar and a children's pool.",
+		"bestReason_es": "Piscinas interior y exterior en un amplio jardín en una colina, con bar de piscina y piscina infantil.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Rome Cavalieri, A Waldorf Astoria Hotel",
+				"stars": 5,
+				"area": "Monte Mario",
+				"bookingUrl": "https://www.booking.com/hotel/it/rome-cavalieri-hilton.html",
+				"website": "https://romecavalieri.com/",
+				"pool": {
+					"kind": ["outdoor", "indoor"],
+					"lengthM": null,
+					"heated": true,
+					"hours": null,
+					"seasonal": null,
+					"extras": [
+						"Pool bar",
+						"Children's pool",
+						"Water slide",
+						"Sun loungers"
+					],
+					"access": "Indoor pool carries a fee, according to guest reviews"
+				},
+				"summary_en": "The hotel has three pools in total, including a heated indoor pool, a children's pool and a water slide. Guest reviews say the indoor pool costs extra to use.",
+				"summary_es": "El hotel tiene tres piscinas en total, entre ellas una piscina cubierta climatizada, una piscina infantil y un tobogán. Según las opiniones de los huéspedes, la piscina cubierta tiene un coste adicional.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Rome/Hotels/pool",
+					"https://www.travelmyth.co.uk/Rome/Hotels/pool-five_star",
+					"https://www.booking.com/hotel/it/rome-cavalieri-hilton.html",
+					"https://sg.hotels.com/ho113127/rome-cavalieri-a-waldorf-astoria-hotel-rome-italy"
+				],
+				"confidence": "high",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "A.Roma Lifestyle Hotel",
+				"stars": 4,
+				"area": "Gianicolense",
+				"bookingUrl": "https://www.booking.com/hotel/it/aroma-lifestyle.html",
+				"website": "https://hotel-aroma.com/",
+				"pool": {
+					"kind": ["outdoor", "indoor"],
+					"lengthM": null,
+					"heated": true,
+					"hours": null,
+					"seasonal": "Outdoor pool used in summer",
+					"extras": ["Spa"],
+					"access": "Outdoor summer pool is free, according to the Booking.com listing"
+				},
+				"summary_en": "The hotel has an indoor pool and an outdoor pool, with the outdoor pool used in summer. Guest reviews note that the indoor pool temperature is comfortable.",
+				"summary_es": "El hotel cuenta con una piscina cubierta y otra exterior, y la exterior se usa en verano. Las opiniones de los huéspedes destacan que la temperatura de la piscina cubierta es agradable.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Rome/Hotels/pool",
+					"https://www.travelmyth.co.uk/Rome/Hotels/pool-four_star",
+					"https://www.booking.com/hotel/it/aroma-lifestyle.html",
+					"https://uk.hotels.com/ho516214/a-roma-lifestyle-hotel-rome-italy/"
+				],
+				"confidence": "medium",
+				"photo": null
+			},
+			"budget": {
+				"hotel": "Palm Gallery Hotel",
+				"stars": 3,
+				"area": "Trieste",
+				"bookingUrl": "https://www.booking.com/hotel/it/palm-gallery.html",
+				"website": null,
+				"pool": {
+					"kind": ["outdoor"],
+					"lengthM": null,
+					"heated": null,
+					"hours": null,
+					"seasonal": "Seasonal",
+					"extras": ["Garden", "Bar"],
+					"access": null
+				},
+				"summary_en": "Seasonal outdoor pool set among greenery in a quiet residential area. Guest reviews describe it as clean and relaxing.",
+				"summary_es": "Piscina exterior de temporada rodeada de vegetación en una zona residencial tranquila. Los huéspedes la describen como limpia y relajante.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Rome/Hotels/pool-three_star",
+					"https://www.booking.com/hotel/it/palm-gallery.html",
+					"https://au.hotels.com/ho3417382816/",
+					"https://www.tripadvisor.com/Hotel_Review-g187791-d1739663-Reviews-Palm_Gallery_Hotel-Rome_Lazio.html"
+				],
+				"confidence": "medium",
+				"photo": null
+			}
+		}
+	},
+	"sarande-albania": {
+		"city": "Sarandë",
+		"country": "Albania",
+		"checked": "2026-11-04",
+		"best": "luxury",
+		"bestReason_en": "Indoor pool at a 5-star hotel, with a spa, sauna and terrace.",
+		"bestReason_es": "Piscina cubierta en un hotel de 5 estrellas, con spa, sauna y terraza.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Toer Hotel & SPA",
+				"stars": 5,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"pool": {
+					"kind": ["indoor"],
+					"lengthM": null,
+					"heated": null,
+					"hours": null,
+					"seasonal": null,
+					"extras": [
+						"Sauna",
+						"Terrace",
+						"Spa and wellness centre"
+					],
+					"access": null
+				},
+				"summary_en": "Indoor pool in a 5-star hotel with a spa, a sauna and a terrace.",
+				"summary_es": "Piscina cubierta en un hotel de 5 estrellas, con spa, sauna y terraza.",
+				"sources": ["https://www.travelmyth.com/Saranda/Hotels/five_star", "https://www.booking.com/fivestars/city/al/sarande.html"],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Bougainville Bay Hotel",
+				"stars": 4,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"pool": {
+					"kind": ["indoor", "outdoor"],
+					"lengthM": null,
+					"heated": null,
+					"hours": null,
+					"seasonal": "Outdoor pool is seasonal",
+					"extras": [
+						"Poolside bar",
+						"Full-service spa",
+						"Pool views from some rooms"
+					],
+					"access": null
+				},
+				"summary_en": "Indoor and seasonal outdoor pools, plus a poolside bar and a full-service spa.",
+				"summary_es": "Piscinas cubierta y exterior de temporada, con bar junto a la piscina y spa completo.",
+				"sources": [
+					"https://www.hotels.com/de10301-am128/pool-hotels-sarande-albania/",
+					"https://www.expedia.com/Sarande-Hotels-Beach-Hotel.0-0-d6052596-tBeachHotel.Travel-Guide-Filter-Hotels",
+					"https://www.booking.com/fivestars/city/al/sarande.html"
+				],
+				"confidence": "medium",
+				"photo": null
+			},
+			"budget": {
+				"hotel": "Hotel Saranda Palace",
+				"stars": 3,
+				"area": null,
+				"bookingUrl": null,
+				"website": null,
+				"pool": {
+					"kind": ["outdoor"],
+					"lengthM": null,
+					"heated": null,
+					"hours": null,
+					"seasonal": "Seasonal outdoor pool",
+					"extras": [
+						"Children's pool",
+						"Pool bar",
+						"Terrace"
+					],
+					"access": null
+				},
+				"summary_en": "Seasonal outdoor pool with a children's pool and a poolside bar. Guests have praised the pool.",
+				"summary_es": "Piscina exterior de temporada con piscina infantil y bar junto a la piscina. Los huéspedes han elogiado la piscina.",
+				"sources": ["https://www.hotels.com/ho1070089088/hotel-saranda-palace-sarande-albania/"],
+				"confidence": "medium",
+				"photo": null
+			}
+		}
+	},
+	"tirana-albania": {
+		"city": "Tirana",
+		"country": "Albania",
+		"checked": "2026-11-04",
+		"best": "luxury",
+		"bestReason_en": "Indoor heated pool with sauna, steam room and whirlpool, praised by guests and usable all year.",
+		"bestReason_es": "Piscina cubierta climatizada con sauna, baño de vapor y jacuzzi, muy valorada por los huéspedes y disponible todo el año.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "Xheko Imperial Luxury Hotel & SPA",
+				"stars": 5,
+				"area": "Blloku",
+				"bookingUrl": "https://www.booking.com/hotel/al/xheko-imperial.html",
+				"website": "https://xhekoimperialspa.tiranehotel.com/en/",
+				"pool": {
+					"kind": ["indoor"],
+					"lengthM": null,
+					"heated": true,
+					"hours": null,
+					"seasonal": null,
+					"extras": [
+						"Sauna",
+						"Steam room",
+						"Whirlpool",
+						"Full-service spa"
+					],
+					"access": "Included in the room rate for guests"
+				},
+				"summary_en": "Indoor heated pool with sauna, steam room and whirlpool on site. Guest reviews describe the pool and spa as a highlight.",
+				"summary_es": "Piscina cubierta climatizada con sauna, baño de vapor y jacuzzi en el hotel. Las opiniones de los huéspedes destacan la piscina y el spa.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Tirana/Hotels/pool-five_star",
+					"https://www.travelmyth.co.uk/Tirana/Hotels/Xheko-Imperial-Luxury-Hotel-SPA_tmid180941",
+					"https://www.travelmyth.co.uk/Tirana/Hotels/pool",
+					"https://www.booking.com/hotel/al/xheko-imperial.html"
+				],
+				"confidence": "medium",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Te Stela Resort & SPA",
+				"stars": 4,
+				"area": "Kashar (Autostrada Tirana-Durrës)",
+				"bookingUrl": "https://www.booking.com/hotel/al/te-stela-resort.html",
+				"website": null,
+				"pool": {
+					"kind": ["indoor", "outdoor"],
+					"lengthM": null,
+					"heated": true,
+					"hours": "Outdoor pool closes at 18:00; indoor pool reported open until 23:00",
+					"seasonal": null,
+					"extras": [
+						"Lap lanes",
+						"Children's pool",
+						"Pool bar"
+					],
+					"access": "Guests get a 20% discount on the indoor pool"
+				},
+				"summary_en": "Two pools, one indoor and heated, plus an outdoor pool with lap lanes and a children's pool. Guest reviews describe the pools as spacious and clean.",
+				"summary_es": "Dos piscinas, una cubierta y climatizada y otra exterior, con calles para nadar y piscina infantil. Las opiniones describen las piscinas como amplias y limpias.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Tirana/Hotels/pool-four_star",
+					"https://www.hotels-al.com/en/h/resorttestelaspa.html",
+					"https://uk.hotels.com/ho562679/te-stela-resort-tirana-albania/",
+					"https://www.booking.com/hotel/al/te-stela-resort.html"
+				],
+				"confidence": "medium",
+				"photo": null
+			},
+			"budget": {
+				"hotel": "Ferrari Hotel",
+				"stars": 3,
+				"area": "Near Skanderbeg Square",
+				"bookingUrl": null,
+				"website": null,
+				"pool": {
+					"kind": ["indoor", "outdoor"],
+					"lengthM": null,
+					"heated": null,
+					"hours": null,
+					"seasonal": null,
+					"extras": ["Sauna"],
+					"access": null
+				},
+				"summary_en": "Indoor and outdoor pools listed for this 3-star hotel, along with a sauna. No hours or access rules were found in the sources.",
+				"summary_es": "Piscinas cubierta y exterior en este hotel de 3 estrellas, además de sauna. Las fuentes no indican horarios ni condiciones de acceso.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Tirana/Hotels/pool-three_star",
+					"https://www.hotels.com/ho695394688/hotel-ferrari-tirana-albania/",
+					"https://www.travelocity.com/Tirana-Hotels-Ferrari-Hotel.h6042340.Hotel-Information",
+					"https://ferrari.hotels-albania.net/en/"
+				],
+				"confidence": "low",
+				"photo": null
+			}
+		}
+	},
+	tokyo: {
+		"city": "Tokyo",
+		"country": "Japan",
+		"checked": "2026-11-04",
+		"best": "luxury",
+		"bestReason_en": "Heated 20-metre indoor pool with a jacuzzi and views toward the Imperial Palace Gardens, open all year.",
+		"bestReason_es": "Piscina cubierta climatizada de 20 metros con jacuzzi y vistas a los Jardines del Palacio Imperial, abierta todo el año.",
+		"luxuryNote": null,
+		"tiers": {
+			"luxury": {
+				"hotel": "The Peninsula Tokyo",
+				"stars": 5,
+				"area": "Marunouchi / Yurakucho, Chiyoda",
+				"bookingUrl": "https://www.booking.com/hotel/jp/the-peninsula-tokyo.html",
+				"website": "https://www.peninsula.com/en/tokyo",
+				"pool": {
+					"kind": ["indoor"],
+					"lengthM": 20,
+					"heated": true,
+					"hours": "Dawn until late at night",
+					"seasonal": "Open all year",
+					"extras": [
+						"Jacuzzi",
+						"Adjoining vitality pool with balcony",
+						"Sauna",
+						"Children over 4 allowed"
+					],
+					"access": "Free for guests"
+				},
+				"summary_en": "A 20-metre heated indoor pool with a jacuzzi and an adjoining vitality pool overlooking the Imperial Palace Gardens. The pool is reported as free to use for hotel guests.",
+				"summary_es": "Piscina cubierta climatizada de 20 metros, con jacuzzi y una piscina de bienestar contigua con vistas a los Jardines del Palacio Imperial. Según los huéspedes, su uso es gratuito para quienes se alojan en el hotel.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Tokyo/Hotels/pool-five_star",
+					"https://www.travelmyth.co.uk/Tokyo/Hotels/pool",
+					"https://www.peninsula.com/en/tokyo/wellness/pool",
+					"https://www.peninsula.com/en/tokyo/wellness/fitness-centre"
+				],
+				"confidence": "high",
+				"photo": null
+			},
+			"standard": {
+				"hotel": "Hotel East 21 Tokyo",
+				"stars": 4,
+				"area": "Toyo, Koto",
+				"bookingUrl": "https://www.booking.com/hotel/jp/east-21-tokyo.html",
+				"website": "https://www.hotel-east21.co.jp/",
+				"pool": {
+					"kind": ["indoor", "outdoor"],
+					"lengthM": null,
+					"heated": null,
+					"hours": null,
+					"seasonal": "Outdoor pool is seasonal; indoor pool listed as a main amenity",
+					"extras": [
+						"Sauna",
+						"Large outdoor pool",
+						"Pool views from the garden cafe area"
+					],
+					"access": "Paid pool access with restricted hours, according to guest reviews"
+				},
+				"summary_en": "An indoor pool and a large seasonal outdoor pool. Guest reviews mention high access fees and limited opening hours.",
+				"summary_es": "Piscina cubierta y una gran piscina exterior de temporada. Las opiniones de los huéspedes señalan tarifas de acceso elevadas y horarios limitados.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Tokyo/Hotels/pool-four_star",
+					"https://www.travelmyth.co.uk/Tokyo/Hotels/pool",
+					"https://uk.hotels.com/ho470482/hotel-east-21-tokyo-tokyo-japan/",
+					"https://www.booking.com/hotel/jp/east-21-tokyo.html"
+				],
+				"confidence": "medium",
+				"photo": null
+			},
+			"budget": {
+				"hotel": "APA Hotel & Resort Ryogoku Ekimae Tower",
+				"stars": 3,
+				"area": "Ryogoku, Sumida",
+				"bookingUrl": null,
+				"website": null,
+				"pool": {
+					"kind": ["rooftop", "outdoor"],
+					"lengthM": null,
+					"heated": null,
+					"hours": null,
+					"seasonal": "Mid-July to mid-September",
+					"extras": ["City views", "Hot spring spa in the same complex"],
+					"access": "Extra hourly fee, around 1,500 yen on weekdays and up to 2,000 yen on weekends, booking in advance"
+				},
+				"summary_en": "A rooftop outdoor pool on the 31st floor with city views, open seasonally. Access is charged per hour.",
+				"summary_es": "Piscina exterior en la azotea, en la planta 31, con vistas a la ciudad y abierta por temporada. El acceso se cobra por hora.",
+				"sources": [
+					"https://www.travelmyth.co.uk/Tokyo/Hotels/pool-three_star",
+					"https://www.trivago.com/en-US/oar/apa-hotel-resort-ryogoku-ekimae-tower-tokyo?search=100-16915542",
+					"https://www.tripadvisor.com/Hotel_Review-g1066459-d17740523-Reviews-APA_Hotel_Resort_Ryogoku_Ekimae_Tower-Sumida_Tokyo_Tokyo_Prefecture_Kanto.html"
+				],
+				"confidence": "medium",
+				"photo": null
+			}
+		}
+	}
+};
 var TIERS = [
 	"luxury",
 	"standard",
