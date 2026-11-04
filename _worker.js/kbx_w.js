@@ -144,7 +144,9 @@ async function insolvency(req, u, env, ctx) {
 // ---- agent and broker registers
 const AGENT_SOURCES = [
   { id: 'ae-dubai-pulse', market: 'Dubai (UAE)', name: 'Dubai Pulse open data: DLD real estate brokers and offices', url: 'https://www.dubaipulse.gov.ae/organisation/dld/service/dld-registration',
-    probe: 'https://www.dubaipulse.gov.ae/data/dld-registration/dld_brokers-open', terms: 'Dubai Data open licence. Official machine-readable source.' },
+    probe: 'https://www.dubaipulse.gov.ae/data/dld-registration/dld_brokers-open', terms: 'Dubai Data open licence. Official machine-readable source. Download pages did not answer our cloud servers in tests.' },
+  { id: 'ae-dubai-pulse-api', market: 'Dubai (UAE)', name: 'Dubai Pulse API (needs a free account key)', url: 'https://www.dubaipulse.gov.ae/',
+    probe: 'https://api.dubaipulse.gov.ae/', env: 'DUBAI_PULSE_CLIENT_ID', terms: 'Same open datasets through an API. Needs a client id and secret from a Dubai Pulse account.' },
   { id: 'ae-dld-site', market: 'Dubai (UAE)', name: 'Dubai Land Department open data page, Brokers tab', url: 'https://dubailand.gov.ae/en/open-data/real-estate-data/#broker',
     probe: 'https://dubailand.gov.ae/en/open-data/real-estate-data/', terms: 'Searchable by a person in a browser. The search is protected by a reCAPTCHA, so we do not query it automatically.' },
   { id: 'ph-prc', market: 'Philippines', name: 'PRC online verification of licence (real estate brokers are PRC licensees)', url: 'https://verification.prc.gov.ph/',
@@ -163,29 +165,60 @@ async function probe(url) {
   } catch (e) { return { status: 'did not answer', detail: String(e && e.message || e).slice(0, 80) }; }
 }
 async function agentSources(env, ctx, fresh) {
-  const ck = new Request('https://kolaboro.com/__w_agent_sources/v1');
+  const ck = new Request('https://kolaboro.com/__w_agent_sources/v2');
   if (!fresh) { const c = await caches.default.match(ck); if (c) return out(await c.json(), 200, 600); }
   const res = await Promise.all(AGENT_SOURCES.map(async s => {
     const p = await probe(s.probe);
     const o = { id: s.id, market: s.market, name: s.name, url: s.url, terms: s.terms, status: p.status, http: p.http || null, probed_at: new Date().toISOString() };
     if (s.id === 'ae-dubai-pulse') o.download_links = p.links;
+    if (s.env) o.key = env[s.env] ? 'connected' : 'not connected yet';
     return o;
   }));
   const d = { sources: res, note: 'Probed from Cloudflare (where this API runs). A source that is blocked or captcha-protected is listed for a check by hand, never estimated.' };
   ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(d), { headers: { 'content-type': 'application/json', 'cache-control': 'public, max-age=21600' } })));
   return out(d, 200, 600);
 }
+// Dubai Pulse API (the official machine-readable channel for DLD open data). It needs a free client id and secret from a
+// Dubai Pulse account; until the owner adds them as env.DUBAI_PULSE_CLIENT_ID and env.DUBAI_PULSE_CLIENT_SECRET this shows
+// "not connected". The www.dubaipulse.gov.ae download pages did not answer Cloudflare or GitHub Actions in our tests (4 Nov 2026).
+// We never use the DLD website's own search backend: it sits behind a reCAPTCHA, which we do not get around.
+const DP = 'https://api.dubaipulse.gov.ae';
+const DP_KEEP = { broker_number: 'BRN', broker_name_en: 'Broker name', license_start_date: 'Licence start', license_end_date: 'Licence end',
+  real_estate_number: 'Office licence number', real_estate_name_en: 'Office name', license_number: 'Licence number', license_type_en: 'Licence type',
+  license_issue_date: 'Licence issued', license_expiry_date: 'Licence expiry', status_en: 'Status' };
+async function dpToken(env) {
+  const r = await fetch(DP + '/oauth/client_credential/accesstoken?grant_type=client_credentials', { method: 'POST', headers: { 'content-type': 'application/x-www-form-urlencoded' },
+    body: 'client_id=' + encodeURIComponent(env.DUBAI_PULSE_CLIENT_ID) + '&client_secret=' + encodeURIComponent(env.DUBAI_PULSE_CLIENT_SECRET), signal: AbortSignal.timeout(10000) });
+  if (!r.ok) throw new Error('token HTTP ' + r.status);
+  return (await r.json()).access_token;
+}
+async function dpQuery(env, dataset, filter) {
+  const t = await dpToken(env);
+  const r = await fetch(DP + '/open/dld/' + dataset + '?filter=' + encodeURIComponent(filter) + '&limit=10', { headers: { authorization: 'Bearer ' + t }, signal: AbortSignal.timeout(15000) });
+  if (!r.ok) throw new Error(dataset + ' HTTP ' + r.status);
+  const d = await r.json(), rows = Array.isArray(d) ? d : (d.results || d.data || d.result || []);
+  return rows.slice(0, 10).map(x => { const o = {}; for (const k in DP_KEEP) if (x[k] != null && x[k] !== '') o[DP_KEEP[k]] = String(x[k]).slice(0, 120); return o; });
+}
+const BY_HAND = [{ name: 'Dubai Land Department open data, Brokers tab (search by broker number)', url: 'https://dubailand.gov.ae/en/open-data/real-estate-data/#broker' },
+  { name: 'Dubai REST app (DLD): scan the QR code on the broker card', url: 'https://dubailand.gov.ae/en/eservices/dubai-rest/' }];
 async function agent(req, u, env, ctx) {
   const brn = (u.searchParams.get('brn') || '').replace(/\D/g, '').slice(0, 10);
-  const office = (u.searchParams.get('office') || '').replace(/\s+/g, ' ').trim().slice(0, 120);
+  const office = (u.searchParams.get('office') || '').replace(/[^\p{L}\p{N} &.'-]/gu, ' ').replace(/\s+/g, ' ').trim().slice(0, 120);
   if (!brn && office.length < 3) return out({ error: 'enter a broker registration number (BRN, digits) or at least 3 letters of an office name' }, 400, 0);
-  const reg = await load(env, 'agent-registers.json', 600000);
-  const ds = reg && reg.dubai && reg.dubai.status === 'live' ? reg.dubai : null;
-  if (!ds) return out({ query: brn ? { brn } : { office }, status: 'not connected',
-    note: 'No official Dubai broker dataset is reachable from our servers without getting past a captcha. Check by hand on the Dubai Land Department page linked below; it shows the same register.',
-    by_hand: [{ name: 'Dubai Land Department open data, Brokers tab', url: 'https://dubailand.gov.ae/en/open-data/real-estate-data/#broker' },
-      { name: 'Dubai REST app (DLD), broker check by BRN or QR code on the broker card', url: 'https://dubailand.gov.ae/en/eservices/dubai-rest/' }] }, 200, 0);
-  return out({ status: 'not connected' }, 200, 0);
+  const query = brn ? { brn } : { office };
+  if (!env.DUBAI_PULSE_CLIENT_ID || !env.DUBAI_PULSE_CLIENT_SECRET) return out({ query, status: 'not connected',
+    note: 'The official open dataset (Dubai Pulse) needs an API key we do not have yet, and the Dubai Land Department search page is protected by a captcha, which we do not get around. Check by hand below: it is the same register, and takes a minute.',
+    by_hand: BY_HAND }, 200, 0);
+  try {
+    const d = await cached('agent/v1/' + (brn ? 'b' + brn : 'o' + encodeURIComponent(office.toLowerCase())), async () => {
+      const results = brn ? await dpQuery(env, 'dld_brokers-open-api', "broker_number='" + brn + "'")
+        : await dpQuery(env, 'dld_offices-open-api', "real_estate_name_en like '%" + office.replace(/'/g, '') + "%'");
+      return { query, status: 'live', results, dataset_date: new Date().toISOString().slice(0, 10), source: 'Dubai Pulse, Dubai Land Department open data (' + (brn ? 'brokers' : 'real estate offices') + ').', licence: 'Dubai Data open licence.' };
+    }, 86400, ctx);
+    return out(d, 200, 0);
+  } catch (e) {
+    return out({ query, status: 'not connected', note: 'Dubai Pulse did not answer as expected (' + String(e && e.message || e).slice(0, 60) + '). Check by hand below.', by_hand: BY_HAND }, 200, 0);
+  }
 }
 
 export async function handle(req, u, env, ctx) {

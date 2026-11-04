@@ -34,7 +34,7 @@
   fetch('/api/x/w/agent/sources').then(function (r) { return r.json(); }).then(function (d) {
     $('ac-src').innerHTML = (d.sources || []).map(function (s) {
       var u = safe(s.url);
-      return '<tr><td>' + esc(s.market) + '</td><td>' + (u ? '<a href="' + esc(u) + '" rel="noopener">' + esc(s.name) + '</a>' : esc(s.name)) + '</td><td><span class="wq-pill ' + (PILL[s.status] || 'mid') + '">' + esc(s.status) + (s.http ? ' (HTTP ' + esc(s.http) + ')' : '') + '</span><span class="wq-fine" style="display:block">' + esc((s.probed_at || '').replace('T', ' ').slice(0, 16)) + ' UTC</span></td><td>' + esc(s.terms) + '</td></tr>';
+      return '<tr><td>' + esc(s.market) + '</td><td>' + (u ? '<a href="' + esc(u) + '" rel="noopener">' + esc(s.name) + '</a>' : esc(s.name)) + '</td><td><span class="wq-pill ' + (PILL[s.status] || 'mid') + '">' + esc(s.status) + (s.http ? ' (HTTP ' + esc(s.http) + ')' : '') + '</span>' + (s.key ? '<span class="wq-fine" style="display:block">API key: ' + esc(s.key) + '</span>' : '') + '<span class="wq-fine" style="display:block">' + esc((s.probed_at || '').replace('T', ' ').slice(0, 16)) + ' UTC</span></td><td>' + esc(s.terms) + '</td></tr>';
     }).join('') || '<tr><td colspan="4">No sources.</td></tr>';
   }).catch(function () { $('ac-src').innerHTML = '<tr><td colspan="4">The status check did not load.</td></tr>'; });
 })();
