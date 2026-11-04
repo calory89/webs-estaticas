@@ -44,12 +44,12 @@
 <main id="main"><section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / <a href="/cases">Live cases</a> / Follow</p><h1 id="fh">Confirming…</h1><p class="lead" id="fp"></p><p><a class="btn btn-line" href="/cases">Back to live cases</a></p></div></section>
 <script>(function(){ var AK = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw'; function rpc(fn, body){ return fetch('https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/' + fn, { method:'POST', headers:{ apikey: AK, Authorization: 'Bearer ' + AK, 'content-type':'application/json' }, body: JSON.stringify(body) }).then(function(r){ return r.json(); }); }
 var q = new URLSearchParams(location.search), t = q.get('t'), stop = q.get('stop') === '1';
-if (!t) { document.getElementById('fh').textContent = 'Link not valid'; return; }
+if (!t) { document.getElementById('fh').textContent = 'Link not valid'; document.getElementById('fp').textContent = 'This page confirms a follow link from your email. Open the link from the email again, or follow a case from the live cases page.'; return; }
 rpc('kolaboro_follow_confirm', { p_token: t, p_stop: stop }).then(function(r){
   if (r.error) { document.getElementById('fh').textContent = 'This link has expired'; document.getElementById('fp').textContent = 'Follow the case again from the live cases page.'; return; }
   document.getElementById('fh').textContent = stop ? 'You stopped following ' + r.ref : 'You are following ' + r.ref;
   document.getElementById('fp').textContent = stop ? 'No more emails about this case.' : 'We check the developer\'s website every day. When the completion date, the price band or the published documents change, you get one email. Every email has a link to stop.';
-}); })();</script></main>
+}).catch(function(){ document.getElementById('fh').textContent = 'Could not confirm yet'; document.getElementById('fp').textContent = 'We could not reach the server. Check your connection and reload this page: the link in your email still works.'; }); })();</script></main>
 <div class="mcta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="cta_sticky">Protect my purchase</a></div>
 <footer>
   <div class="wrap">

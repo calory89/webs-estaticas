@@ -115,7 +115,7 @@
   function draw(){
     PHOTO_URLS.forEach(function(u){ URL.revokeObjectURL(u); }); PHOTO_URLS = [];
     var m = CL.milestones.filter(function(x){ return x.id === V.milestone; })[0] || CL.milestones[0];
-    var h = '<div class="row" style="margin-top:8px"><button class="btn l s" id="back">← All visits</button><span class="mut">' + esc(V.place || '') + (V.project ? ' · <a href="/p/' + esc(V.project) + '">' + esc(V.project) + '</a>' : '') + ' · started ' + esc(new Date(V.created).toLocaleString()) + '</span></div>';
+    var h = '<div class="row" style="margin-top:8px"><button class="btn l s" id="back">← All visits</button><span class="mut">' + [V.place ? esc(V.place) : '', V.project ? '<a href="/p/' + esc(V.project) + '">' + esc(V.project) + '</a>' : '', 'started ' + esc(new Date(V.created).toLocaleString())].filter(Boolean).join(' · ') + '</span></div>';
     h += '<div class="card" id="chain"></div>';
     h += '<div class="card"><h2 style="margin-top:0">' + esc(m.title) + ': what to look at</h2>' + m.items.map(function(t, i){ return itemHtml(m.id + '.' + (i + 1), t, ''); }).join('') + '</div>';
     h += '<div class="card"><details><summary>Paperwork to ask about while you are there (' + CL.paperwork.reduce(function(n, g){ return n + g.items.length; }, 0) + ' points)</summary>' +

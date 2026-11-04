@@ -51,7 +51,7 @@
 
 <section class="y-sec" aria-labelledby="h-p"><div class="wrap">
 <h2 id="h-p">1. Which project?</h2>
-<form class="y-box" id="adf"><label for="adid">The project id from its Kolaboro page</label><div class="y-row"><input id="adid" type="text" autocomplete="off" spellcheck="false" placeholder="BALI-014" maxlength="12"><button class="btn btn-hi btn-sm" type="submit">Prepare my questions</button></div>
+<form class="y-box" id="adf" novalidate data-fe><label for="adid">The project id from its Kolaboro page</label><div class="y-row"><input id="adid" type="text" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="BALI-014" maxlength="12" required pattern="\s*[A-Za-z]{2,5}-\d{3,4}\s*" data-msg="Enter the project id from its Kolaboro page, for example BALI-014."><button class="btn btn-hi btn-sm" type="submit">Prepare my questions</button></div>
 <div id="adout" class="y-out" aria-live="polite"></div></form>
 </div></section>
 
@@ -77,7 +77,7 @@
 <div id="admine" class="y-box y-hidden"></div>
 </div></section>
 
-<script src="/ask-developer/ad.js?v=e7b197500a" defer></script>
+<script src="/k/fe.js?v=a050305d8d" defer></script><script src="/ask-developer/ad.js?v=e7b197500a" defer></script>
 </main>
 <div class="mcta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="cta_sticky">Protect my purchase</a></div>
 <footer>

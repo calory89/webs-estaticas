@@ -64,7 +64,7 @@
 <p class="mut">No account and no email needed. Three keys an hour per visitor.</p>
 
 <h2 id="usage">Usage panel</h2>
-<form class="kf" id="uf" autocomplete="off"><input type="text" id="uk" placeholder="kb_live_…" aria-label="Your API key" spellcheck="false"><button class="btn btn-line btn-sm" type="submit" id="ub" style="margin-top:0;color:var(--ink);border-color:var(--ink)" disabled>Show usage</button></form>
+<form class="kf" id="uf" autocomplete="off"><input type="text" id="uk" placeholder="kb_live_…" aria-label="Your API key" spellcheck="false" autocomplete="off" autocapitalize="none"><button class="btn btn-line btn-sm" type="submit" id="ub" style="margin-top:0;color:var(--ink);border-color:var(--ink)" disabled>Show usage</button></form>
 <div id="uout"></div>
 <p class="mut">The key is sent only in the <code>x-api-key</code> header to kolaboro.com and kept in this tab's memory, never in storage.</p>
 
@@ -104,13 +104,13 @@ k = Kolaboro(api_key=os.environ['KOLABORO_KEY'])</div>
     if(s.open){ks.innerHTML='<span class="pill g">Open</span> Self-serve keys are live. Active keys: <b>'+e(s.keys_active)+'</b>, metered calls today: <b>'+e(s.calls_today)+'</b>.';kb.disabled=false;ub.disabled=false;}
     else{ks.innerHTML='<span class="pill o">Opening soon</span> <b>Self-serve keys are built and waiting for one database change to be approved.</b> Until then: use the open API without a key (<a href="/docs/api/">docs</a>, <a href="/docs/sdk/">SDKs</a>), or get a key for the pilot endpoints at <a href="/api-pilot">/api-pilot</a>.';}
   }).catch(function(){ks.innerHTML='<span class="pill r">Unavailable</span> Could not reach the key service. The open API works without a key.'});
-  document.getElementById('kf').addEventListener('submit',function(ev){ev.preventDefault();kb.disabled=true;
+  document.getElementById('kf').addEventListener('submit',function(ev){ev.preventDefault();if(kb.disabled)return;kb.disabled=true;kb.textContent='Creating…';
     fetch('/api/x/k/keys',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({label:document.getElementById('kl').value,website:ev.target.website.value})}).then(function(r){return r.json()}).then(function(d){
       var o=document.getElementById('kout');
       if(d.key){KEY=d.key;o.innerHTML='<div class="eg-live"><p><b>Your key. Copy it now: we cannot show it again.</b></p><p class="hash" id="kv" style="font-size:.95rem">'+e(d.key)+'</p><p><button class="btn btn-sm btn-hi" type="button" id="kc" style="margin-top:0">Copy</button></p><p class="mut">Plan '+e(d.plan)+', '+e(d.daily_quota)+' calls a day. Created '+e(d.created_at)+'.</p></div>';
         document.getElementById('kc').onclick=function(){try{navigator.clipboard.writeText(KEY);this.textContent='Copied'}catch(x){}};document.getElementById('uk').value=KEY;}
       else o.innerHTML='<p class="no">'+e(d.error==='rate'?'Three keys an hour per visitor. Try later.':d.error==='opening_soon'?'Keys are not open yet.':'Could not create a key ('+d.error+').')+'</p>';
-    }).catch(function(){document.getElementById('kout').innerHTML='<p class="no">Network error.</p>'}).then(function(){kb.disabled=false});});
+    }).catch(function(){document.getElementById('kout').innerHTML='<p class="no">Could not reach the key service. Check your connection and try again.</p>'}).then(function(){kb.disabled=false;kb.textContent='Create my key'});});
   function usage(k){var o=document.getElementById('uout');o.innerHTML='<p class="mut">Loading…</p>';
     fetch('/api/x/k/keys/me',{headers:{'x-api-key':k}}).then(function(r){return r.json()}).then(function(d){
       if(d.error){o.innerHTML='<p class="no">'+e(d.error==='invalid_key'||d.error==='missing_key'?'This key is not valid.':d.error)+'</p>';return}
@@ -122,8 +122,8 @@ k = Kolaboro(api_key=os.environ['KOLABORO_KEY'])</div>
         ((d.endpoints_today||[]).length?'<table class="eg-t"><thead><tr><th>Endpoint today</th><th>Calls</th></tr></thead><tbody>'+d.endpoints_today.map(function(x){return '<tr><td><code>'+e(x.endpoint)+'</code></td><td>'+e(x.n)+'</td></tr>'}).join('')+'</tbody></table>':'')+
         (d.revoked_at?'':'<p><button class="btn btn-sm btn-line" type="button" id="rv" style="color:#9A2412;border-color:#9A2412">Revoke this key</button></p>')+'</div>';
       var rv=document.getElementById('rv');if(rv)rv.onclick=function(){if(!confirm('Revoke this key? Calls with it will stop working at once.'))return;fetch('/api/x/k/keys/revoke',{method:'POST',headers:{'x-api-key':k}}).then(function(r){return r.json()}).then(function(){usage(k)})};
-    }).catch(function(){o.innerHTML='<p class="no">Network error.</p>'});}
-  document.getElementById('uf').addEventListener('submit',function(ev){ev.preventDefault();var k=document.getElementById('uk').value.trim();if(k)usage(k)});
+    }).catch(function(){o.innerHTML='<p class="no">Could not reach the key service. Check your connection and try again.</p>'});}
+  document.getElementById('uf').addEventListener('submit',function(ev){ev.preventDefault();var k=document.getElementById('uk').value.trim();if(k)usage(k);else{document.getElementById('uout').innerHTML='<p class="no">Paste your key (it starts with kb_live_) to see its usage.</p>';document.getElementById('uk').focus();}});
 })();
 </script>
 </main>

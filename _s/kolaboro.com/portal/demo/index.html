@@ -12,14 +12,15 @@
 <p class="ap-auth-hide" style="color:#7E8D9A;font-size:.85rem;position:relative;z-index:1">Kolaboro is operated by Equinox Investment Group LLC. Your data is used only for your case.</p></div>
 <div class="ap-auth-r"><div class="ap-auth-box">
   <h2>Log in</h2><p class="ap-muted" style="margin:0">See your case, your agent's updates and your report.</p>
-  <form id="lf" novalidate>
-    <label>Email<input name="email" type="email" autocomplete="email" required></label>
-    <label>Password<span class="ap-pw"><input name="password" type="password" autocomplete="current-password" required><button type="button">Show</button></span></label>
+  <form id="lf" novalidate data-fe>
+    <label>Email<input name="email" type="email" autocomplete="email" required data-msg-req="Add your email address."></label>
+    <label>Password<span class="ap-pw"><input name="password" type="password" autocomplete="current-password" required data-msg-req="Enter your password."><button type="button">Show</button></span></label>
     <button class="ap-btn" style="width:100%;margin-top:18px;min-height:52px">Log in</button>
     <p class="ap-err" id="le" role="alert"></p>
     <p class="ap-small ap-muted">Forgot your password? <a href="mailto:support@kolaboro.com?subject=Kolaboro%20password%20reset">Email us</a> and we reset it the same day.<br>No account yet? <a href="/check#analyze">Start with a free desk review</a>.</p>
   </form>
 </div></div></div>
+<script src="/k/fe.js?v=a050305d8d"></script>
 <script>
 var KB = (function(){
   var SB = 'https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/', K = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw';
@@ -38,12 +39,12 @@ var KB = (function(){
   var f = document.getElementById('lf'), e = document.getElementById('le'); KB.pwToggle(f);
   
   f.addEventListener('submit', function(ev){
-    ev.preventDefault(); e.textContent = ''; var b = f.querySelector('.ap-btn'); b.disabled = true;
-    KB.rpc('kolaboro_login', { p_email: f.email.value, p_password: f.password.value }).then(function(d){
-      b.disabled = false;
-      if (d.token) { KB.del('kb-token-as'); KB.set('kb-token', d.token); KB.set('kb-role', d.role || 'buyer'); location.href = d.role === 'agent' ? '/agents/me' : '/portal'; return; }
-      e.textContent = d.error === 'locked' ? 'Too many attempts. Try again in an hour, or email us.' : 'Wrong email or password.';
-    }).catch(function(){ b.disabled = false; e.textContent = 'Network error. Try again.'; });
+    ev.preventDefault(); e.textContent = ''; var b = f.querySelector('.ap-btn'); if (b.disabled) return; b.disabled = true; b.textContent = 'Logging in…';
+    KB.rpc('kolaboro_login', { p_email: f.email.value.trim(), p_password: f.password.value }).then(function(d){
+      b.disabled = false; b.textContent = 'Log in';
+      if (d && d.token) { KB.del('kb-token-as'); KB.set('kb-token', d.token); KB.set('kb-role', d.role || 'buyer'); location.href = d.role === 'agent' ? '/agents/me' : '/portal'; return; }
+      e.textContent = d && d.error === 'locked' ? 'Too many attempts. Try again in an hour, or email us.' : d && d.code && !d.error ? 'Log-in is not available right now. Try again in a few minutes.' : 'Wrong email or password.';
+    }).catch(function(){ b.disabled = false; b.textContent = 'Log in'; e.textContent = 'Could not reach the server. Check your connection and try again.'; });
   });
 })();
 </script><script>
@@ -51,8 +52,9 @@ var KB = (function(){
   document.documentElement.classList.add('r23-loading');
   KB.rpc('kolaboro_login', { p_email: 'demo@kolaboro.com', p_password: 'kolaboro-demo' }).then(function(d){
     if (d && d.token) { KB.set('kb-token-as', d.token, true); location.replace('/portal?demo=1'); }
-    else { document.documentElement.classList.remove('r23-loading'); }
-  }).catch(function(){ document.documentElement.classList.remove('r23-loading'); });
+    else demoFail();
+  }).catch(demoFail);
+  function demoFail(){ document.documentElement.classList.remove('r23-loading'); var e = document.getElementById('le'); if (e) e.innerHTML = 'The demo account could not be opened just now. <a href="/portal/demo/">Try again</a>, or log in to your own account below.'; }
 })();
 </script>
 <!--/email_off--></body></html>

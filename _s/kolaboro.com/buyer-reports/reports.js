@@ -30,6 +30,9 @@
     var p = $('rp').value.trim().toUpperCase(), t = $('rt').value.trim();
     $('rtn').textContent = t.length;
     $('rb').disabled = !(OPEN && PKS && PID.test(p) && PROJ[p] && t.length >= 30 && t.length <= 2000 && DOC);
+    var miss = []; if (!PID.test(p) || !PROJ[p]) miss.push('a tracked project id'); if (t.length < 30) miss.push('at least 30 characters in your report (' + (30 - t.length) + ' more)'); if (!DOC) miss.push('the fingerprint of your proof of purchase (pick the file)');
+    var mh = $('rmiss'); if (!mh) { mh = document.createElement('p'); mh.id = 'rmiss'; mh.className = 'mut'; mh.style.margin = '8px 0 0'; $('rb').insertAdjacentElement('afterend', mh); $('rb').setAttribute('aria-describedby', 'rmiss'); }
+    mh.textContent = !OPEN ? 'Sending opens when the report database is switched on.' : !PKS ? 'This browser cannot sign with a passkey.' : miss.length ? 'To send, add: ' + miss.join('; ') + '.' : '';
   }
   function lookup(){
     var p = $('rp').value.trim().toUpperCase(), n = $('rpn');

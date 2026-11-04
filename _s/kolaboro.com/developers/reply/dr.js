@@ -20,7 +20,7 @@
     var b = $('dr-st');
     if (READY) { b.innerHTML = '<b>The verified reply portal is open.</b>Replies are reviewed by a person within 10 working days. ' + (s.reply.published ? s.reply.published + ' replies published so far.' : 'No replies have been published yet.'); }
     else { b.className = 'dr-st soon'; b.innerHTML = '<b>Opening soon.</b>The DNS check below already works, so you can prepare the record now. Sending verified replies opens when our database table is switched on. Until then, please email <a href="mailto:hello@kolaboro.com">hello@kolaboro.com</a> with the project id, or use the unverified note at the bottom of this page.'; $('dr-send').disabled = true; $('dr-send').textContent = 'Opening soon'; }
-  }).catch(function () { $('dr-st').innerHTML = '<b>Could not reach our server.</b>Please email <a href="mailto:hello@kolaboro.com">hello@kolaboro.com</a>.'; });
+  }).catch(function () { $('dr-st').innerHTML = '<b>Could not reach our server.</b> Reload the page in a moment, or email <a href="mailto:hello@kolaboro.com">hello@kolaboro.com</a>.'; });
 
   // ---- Project context from the open data (public fields only)
   var q = new URLSearchParams(location.search).get('id');
@@ -101,15 +101,15 @@
     if (!f.company.value.trim() || !f.name.value.trim()) { m.textContent = 'Please give the company and your name and role.'; return; }
     if (!f.ok.checked) { m.textContent = 'Please confirm you can speak for the developer.'; return; }
     var bad = DOCS.filter(function (d) { return d.link && !/^https:\/\//.test(d.link); }); if (bad.length) { m.textContent = 'Document links must start with https://'; return; }
-    m.textContent = 'Checking DNS and sending…'; $('dr-send').disabled = true;
+    if ($('dr-send').disabled) return; m.textContent = 'Checking DNS and sending…'; $('dr-send').disabled = true; $('dr-send').textContent = 'Sending…';
     fetch('/api/x/i/reply', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({
       id: id, domain: dom, token: token(dom), company: f.company.value, name: f.name.value, email: f.email.value, topic: f.topic.value, reply: f.reply.value,
       publish_company: f.publish_company.checked, ok: true, docs: DOCS.filter(function (d) { return d.sha256; }).map(function (d) { return { kind: d.kind, name: d.name, sha256: d.sha256, bytes: d.bytes, type: d.type, link: d.link || null }; })
     }) }).then(function (r) { return r.json(); }).then(function (d) {
-      $('dr-send').disabled = false;
+      $('dr-send').disabled = false; $('dr-send').textContent = 'Send for review';
       if (d.ok) { m.innerHTML = '<span class="dr-ok">Received, reference #' + esc(d.ref) + '.</span> The DNS record was found on ' + esc(d.dns.where) + '. Keep it in place until your reply is published; a moderator re-checks it.'; DOCS = []; render(); f.reply.value = ''; if (window.kbEvent) kbEvent('developer_reply_verified'); }
       else m.innerHTML = '<span class="dr-no">' + esc(d.message || 'Could not send.') + '</span>' + (d.error === 'dns' ? ' Use "Check DNS now" above to watch for it.' : '');
-    }).catch(function () { $('dr-send').disabled = false; m.innerHTML = 'Could not send. Please email <a href="mailto:hello@kolaboro.com">hello@kolaboro.com</a>.'; });
+    }).catch(function () { $('dr-send').disabled = false; $('dr-send').textContent = 'Send for review'; m.innerHTML = 'Could not send. Please email <a href="mailto:hello@kolaboro.com">hello@kolaboro.com</a>.'; });
   });
 
   // ---- Published replies (approved by a moderator)
@@ -132,11 +132,12 @@
     var em = (rf.email.value || '').trim(); if (!rf.id.value.trim() || !rf.company.value.trim() || !rf.name.value.trim() || !rf.reply.value.trim()) { rm.textContent = 'Please fill in the project id, company, name and reply.'; return; }
     if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)) { rm.textContent = 'Please use a valid work email.'; return; } if (!rf.ok.checked) { rm.textContent = 'Please confirm you can speak for the developer.'; return; }
     if (/\b\d{10,}\b/.test(rf.docs.value + rf.reply.value)) { rm.textContent = 'Please remove long numbers such as bank account numbers.'; return; }
-    rm.textContent = 'Sending…';
+    var rb = rf.querySelector('button[type=submit]'); if (rb.disabled) return; rb.disabled = true; rb.textContent = 'Sending…'; rm.textContent = 'Sending…';
+    var rdone = function () { rb.disabled = false; rb.textContent = 'Send note'; };
     var K = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw';
     fetch('https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/kolaboro_apply', { method: 'POST', headers: { apikey: K, Authorization: 'Bearer ' + K, 'Content-Type': 'application/json' },
       body: JSON.stringify({ p_name: rf.name.value.trim() + ' (' + rf.company.value.trim() + ')', p_email: em, p_country: '', p_phone: '', p_who: 'developer-reply | ' + rf.id.value.trim().toUpperCase() + ' | ' + rf.topic.value, p_bring: rf.reply.value.trim() + '\n\nDocuments:\n' + rf.docs.value.trim(), p_learn: '', p_week: '', p_lang: 'en', p_source: 'developer-reply', p_plan: 'developer-reply' }) })
-      .then(function (r) { return r.json(); }).then(function (d) { if (d === 'ok' || d === 'too_many') { rm.textContent = 'Thank you. We received your note and will answer by email within 10 working days.'; rf.reset(); if (window.kbEvent) kbEvent('developer_reply'); } else throw 0; })
-      .catch(function () { rm.textContent = 'Could not send. Please email hello@kolaboro.com with the project id.'; });
+      .then(function (r) { return r.json(); }).then(function (d) { rdone(); if (d === 'ok' || d === 'too_many') { rm.textContent = 'Thank you. We received your note and will answer by email within 10 working days.'; rf.reset(); if (window.kbEvent) kbEvent('developer_reply'); } else throw 0; })
+      .catch(function () { rdone(); rm.textContent = 'Could not send. Nothing was lost: try again, or email hello@kolaboro.com with the project id.'; });
   });
 })();

@@ -52,8 +52,8 @@
 
 <section class="y-sec" aria-labelledby="h-w"><div class="wrap">
 <h2 id="h-w">1. Your alert, in your words</h2>
-<form class="y-box" id="saf"><label for="satext"><b>What should we watch for?</b></label>
-<textarea id="satext" class="y-ta" maxlength="300" placeholder="Tell me when a Bali project under 300k USD with a permit and escrow appears"></textarea>
+<form class="y-box" id="saf" novalidate data-fe><label for="satext"><b>What should we watch for?</b></label>
+<textarea id="satext" class="y-ta" maxlength="300" required minlength="6" data-msg="Write a little more: a place, a budget, what must be published." placeholder="Tell me when a Bali project under 300k USD with a permit and escrow appears"></textarea>
 <div class="y-acts"><button class="btn btn-hi btn-sm" type="submit" id="sago">Read my alert</button><button class="btn btn-line btn-sm" type="button" data-ex="Freehold off-plan projects in Dubai with deposit protection and no reported problems">Example: Dubai</button><button class="btn btn-line btn-sm" type="button" data-ex="Phuket or Koh Samui, under 200k, completion by 2027, permit number published">Example: Thailand</button></div>
 <p class="y-small">Read by claude-haiku-5-5. Every field it returns is checked in code against the public data. Limited to 12 readings per hour per network.</p>
 <div id="saout" class="y-out" aria-live="polite"></div></form>
@@ -67,9 +67,9 @@
 <p id="sacount"></p>
 <p class="y-small">You get an email only for projects that start matching after you save: a new project in the database, or a project whose public record changes so it now matches. At most one email a day, with a stop link in every email.</p>
 </div>
-<form class="y-box" id="sasave"><h3>3. Confirm and save</h3>
-<label style="display:flex;gap:10px;align-items:flex-start"><input type="checkbox" id="saok" style="margin-top:4px;width:18px;height:18px;flex:none"><span>Yes, this filter is what I want.</span></label>
-<div class="y-row"><label for="saemail" class="sr-only">Your email</label><input id="saemail" type="email" autocomplete="email" placeholder="Your email" maxlength="160"><button class="btn btn-hi btn-sm" type="submit" id="sasavebtn">Save the alert</button></div>
+<form class="y-box" id="sasave" novalidate data-fe><h3>3. Confirm and save</h3>
+<label style="display:flex;gap:10px;align-items:flex-start"><input type="checkbox" id="saok" required data-msg="Tick the box to confirm the filter is what you want." style="margin-top:4px;width:18px;height:18px;flex:none"><span>Yes, this filter is what I want.</span></label>
+<div class="y-row"><label for="saemail" class="sr-only">Your email</label><input id="saemail" type="email" autocomplete="email" placeholder="Your email" maxlength="160" required data-msg="Enter the email where the alert should go, like name@example.com."><button class="btn btn-hi btn-sm" type="submit" id="sasavebtn">Save the alert</button></div>
 <p class="y-small">We send a confirmation link first (double opt-in). Your address is used only to send these alerts and is never published. <a href="/legal/privacy">Privacy</a></p>
 <div id="sasaveout" class="y-out" aria-live="polite"></div></form>
 </div></section>
@@ -81,7 +81,7 @@
 <p class="y-small" id="sastats"></p>
 </div></section>
 
-<script src="/search-alerts/sa.js?v=7e06f53648" defer></script>
+<script src="/k/fe.js?v=a050305d8d" defer></script><script src="/search-alerts/sa.js?v=7e06f53648" defer></script>
 </main>
 <div class="mcta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="cta_sticky">Protect my purchase</a></div>
 <footer>

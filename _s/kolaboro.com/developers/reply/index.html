@@ -74,12 +74,12 @@
 <div class="dr-st" id="dr-st" aria-live="polite"><b>Checking what is live…</b></div>
 <div class="note-box" id="rp-case" hidden></div>
 
-<form id="drf" novalidate>
+<form id="drf" novalidate data-fe>
 <div class="dr-step"><h3><i>1</i>Prove the project's domain is yours</h3>
 <p class="muted" style="display:block">No email loop and no account: add one TXT record to the DNS of the domain the project is sold on. Only someone who controls that domain can do it. The record holds a random code made in your browser, so it does not say which Kolaboro project it is for.</p>
 <div class="dr-row">
-<label class="f">Project id on Kolaboro<input name="id" id="dr-id" placeholder="e.g. BALI-014" required maxlength="10" autocomplete="off"></label>
-<label class="f">The project's own domain<input name="domain" id="dr-dom" placeholder="e.g. yourproject.com" required maxlength="253" autocomplete="off" inputmode="url"></label>
+<label class="f">Project id on Kolaboro<input name="id" id="dr-id" placeholder="e.g. BALI-014" required maxlength="10" autocomplete="off" autocapitalize="characters" spellcheck="false" pattern="\s*[A-Za-z]{2,5}-\d{3,4}\s*" data-msg="Enter the project id as shown on Kolaboro, for example BALI-014."></label>
+<label class="f">The project's own domain<input name="domain" id="dr-dom" placeholder="e.g. yourproject.com" required maxlength="253" autocomplete="off" inputmode="url" autocapitalize="none" spellcheck="false" data-msg="Enter the project's own domain, for example yourproject.com."></label>
 </div>
 <div id="dr-recbox" hidden>
 <div class="dr-rec"><span>Type</span><code>TXT</code><span>Host / name</span><code><span id="dr-host" style="color:inherit">@</span> (the domain itself) or <span style="color:inherit">_kolaboro</span></code><span>Value</span><code id="dr-val"></code></div>
@@ -97,16 +97,16 @@
 
 <div class="dr-step"><h3><i>3</i>Write your reply</h3>
 <div class="dr-row">
-<label class="f">Company (legal name)<input name="company" required maxlength="160"></label>
-<label class="f">Your name and role<input name="name" required maxlength="120"></label>
+<label class="f">Company (legal name)<input name="company" required maxlength="160" autocomplete="organization"></label>
+<label class="f">Your name and role<input name="name" required maxlength="120" autocomplete="name"></label>
 </div>
 <div class="dr-row">
-<label class="f">Email for our questions (optional, never published)<input name="email" type="email" maxlength="160"></label>
+<label class="f">Email for our questions (optional, never published)<input name="email" type="email" maxlength="160" autocomplete="email"></label>
 <label class="f">Which check or finding are you answering?<select name="topic"><option>Permit or licence number</option><option>Deposit protection (escrow, guarantee)</option><option>Construction progress</option><option>Plans and specification</option><option>Track record</option><option>Returns or rental language</option><option>A contradicted claim</option><option>A problem reported in public sources</option><option>Completion date or delay</option><option>Something else</option></select></label>
 </div>
-<label class="f">Your reply<textarea name="reply" rows="7" required maxlength="3000" placeholder="What is correct, and which document shows it"></textarea></label>
+<label class="f">Your reply<textarea name="reply" rows="7" required minlength="20" maxlength="3000" data-msg="Please write a reply of at least 20 characters." placeholder="What is correct, and which document shows it"></textarea></label>
 <label class="dr-chk"><input type="checkbox" name="publish_company"> Publish our company name and domain with the reply. If unticked, the reply is published under the project id only and the project stays anonymous.</label>
-<label class="dr-chk"><input type="checkbox" name="ok" required> I can speak for this developer and agree that this reply, the document types and their fingerprints may be published next to the finding after review.</label>
+<label class="dr-chk"><input type="checkbox" name="ok" required data-msg="Please confirm you can speak for the developer."> I can speak for this developer and agree that this reply, the document types and their fingerprints may be published next to the finding after review.</label>
 <input name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
 <div class="dr-acts"><button class="btn btn-hi" type="submit" id="dr-send">Send for review</button></div>
 <p class="dr-res" id="dr-msg" aria-live="polite"></p>
@@ -126,15 +126,15 @@
 
 <details><summary>No access to the DNS? Send an unverified note instead</summary>
 <p class="muted" style="display:block">This goes to our inbox, is not published automatically, and we will ask you to prove you speak for the developer before anything changes.</p>
-<form id="rpf" class="rp-form" novalidate>
-<label class="f">Project id on Kolaboro<input name="id" id="rp-id" placeholder="e.g. BALI-014" required maxlength="20"></label>
-<label class="f">Company (legal name)<input name="company" required maxlength="160"></label>
-<label class="f">Your name and role<input name="name" required maxlength="120"></label>
-<label class="f">Work email (company domain)<input name="email" type="email" required maxlength="160"></label>
+<form id="rpf" class="rp-form" novalidate data-fe>
+<label class="f">Project id on Kolaboro<input name="id" id="rp-id" placeholder="e.g. BALI-014" required maxlength="20" autocomplete="off" autocapitalize="characters" spellcheck="false" pattern="\s*[A-Za-z]{2,5}-\d{3,4}\s*" data-msg="Enter the project id as shown on Kolaboro, for example BALI-014."></label>
+<label class="f">Company (legal name)<input name="company" required maxlength="160" autocomplete="organization"></label>
+<label class="f">Your name and role<input name="name" required maxlength="120" autocomplete="name"></label>
+<label class="f">Work email (company domain)<input name="email" type="email" required maxlength="160" autocomplete="email"></label>
 <label class="f">Which check or finding are you answering?<select name="topic"><option>Permit or licence number</option><option>Deposit protection (escrow, guarantee)</option><option>Construction progress</option><option>Plans and specification</option><option>Track record</option><option>Returns or rental language</option><option>A contradicted claim</option><option>A problem reported in public sources</option><option>Completion date or delay</option><option>Something else</option></select></label>
 <label class="f">Your reply<textarea name="reply" rows="6" required maxlength="3000" placeholder="What is correct, and which document shows it"></textarea></label>
 <label class="f">Links to documents (permit, escrow letter, progress report, company registry)<textarea name="docs" rows="3" maxlength="1500" placeholder="One link per line. Never send bank account numbers."></textarea></label>
-<label class="f rp-chk"><input type="checkbox" name="ok" required> I can speak for this developer and agree that this reply may be published next to the finding.</label>
+<label class="f rp-chk"><input type="checkbox" name="ok" required data-msg="Please confirm you can speak for the developer."> I can speak for this developer and agree that this reply may be published next to the finding.</label>
 <input name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
 <button class="btn btn-hi" type="submit">Send note</button><p class="rp-msg" id="rp-msg" aria-live="polite"></p>
 </form>
@@ -143,7 +143,7 @@
 <h2 style="margin-top:36px">What happens next</h2><ol class="rp-steps"><li>A moderator re-checks the DNS record and confirms the domain belongs to that project.</li><li>We check each document against the issuing register or an independent source.</li><li>Within 10 working days we update the project: a confirmed document raises its verification level; your reply is published next to the finding either way.</li></ol>
 <p class="muted" style="display:block">See what we expect developers to publish in the <a href="/standard/">Off-Plan Disclosure Standard</a>, use the free <a href="/developers/templates/">templates</a>, or compare yourself with your market in the <a href="/developers/benchmark/">benchmark</a>. Buying and want to share documents privately with your lawyer? Use an <a href="/room/">encrypted deal room</a>.</p>
 </div></section>
-<script src="/developers/reply/dr.js?v=fa2f2661dd" defer></script>
+<script src="/k/fe.js?v=a050305d8d" defer></script><script src="/developers/reply/dr.js?v=93877050c7" defer></script>
 </main>
 <div class="mcta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="cta_sticky">Protect my purchase</a></div>
 <footer>
