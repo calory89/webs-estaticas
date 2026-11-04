@@ -202,7 +202,7 @@ def _questions(c):
     if c.get('completion_year'): q.append('Completion advertised for %s: does progress on site match?' % c['completion_year'])
     return q[:5]
 
-PREFIX = {'Panama City': 'PTY', 'Bali': 'BALI', 'Lombok': 'LOM', 'Phuket': 'PHK', 'Koh Samui': 'KSM', 'Pattaya': 'PAT', 'Dubai': 'DXB', 'Riviera Maya': 'RMY', 'Algarve': 'ALG', 'Costa del Sol': 'CDS',
+PREFIX = {'Vancouver': 'YVR', 'Peru': 'PRU', 'Panama City': 'PTY', 'Bali': 'BALI', 'Lombok': 'LOM', 'Phuket': 'PHK', 'Koh Samui': 'KSM', 'Pattaya': 'PAT', 'Dubai': 'DXB', 'Riviera Maya': 'RMY', 'Algarve': 'ALG', 'Costa del Sol': 'CDS',
           'Abu Dhabi': 'AUH', 'Ras Al Khaimah': 'RAK', 'Oman': 'OMN', 'Istanbul': 'IST', 'Antalya': 'AYT', 'Egypt': 'EGY', 'Cyprus': 'CYP', 'Northern Cyprus': 'NCY', 'Greece': 'GRC',
           'Montenegro': 'MNE', 'Croatia': 'HRV', 'Georgia': 'GEO', 'Spain': 'ESP', 'Portugal': 'PRT', 'Los Cabos': 'CAB', 'Puerto Vallarta': 'PVR', 'Mérida': 'MID', 'Costa Rica': 'CRI',
           'Panama': 'PAN', 'Dominican Republic': 'DOM', 'Colombia': 'COL', 'Brazil': 'BRA', 'Miami': 'MIA', 'Vietnam': 'VNM', 'Philippines': 'PHL', 'Malaysia': 'MYS', 'Cambodia': 'KHM',
@@ -454,6 +454,14 @@ def main():
     public_out = sys.argv[1] if len(sys.argv) > 1 else os.path.join(DATA, 'public-bali-claims.json')
     os.makedirs(os.path.join(DATA, 'runs'), exist_ok=True)
     projects = load(os.path.join(HERE, 'projects.json'), {})['projects'] + load(os.path.join(HERE, 'projects-world.json'), {}).get('projects', [])
+    # Public ids are PREFIX-NNN per market. Two markets with the same prefix would publish the same id for two projects,
+    # so stop before anything is published and say which market needs its own PREFIX entry (4 Nov 2026: Peru/Perth, Vancouver/Vanuatu).
+    _pre = {}
+    for _p in projects:
+        _m = _p.get('market') or 'Bali'; _pre.setdefault(PREFIX.get(_m, _m[:3].upper()), set()).add(_m)
+    _clash = {k: sorted(v) for k, v in _pre.items() if len(v) > 1}
+    if _clash:
+        sys.exit('public id prefix used by more than one market, add a PREFIX entry: %s' % _clash)
     latest = load(os.path.join(DATA, 'latest.json'), {})
     changes = load(os.path.join(DATA, 'changes.json'), [])
     runs = load(os.path.join(DATA, 'runs.json'), [])
