@@ -458,15 +458,16 @@ async function anthropic(env, body, opts) {
   }
   return r;
 }
-async function claude(env, prompt, system, only) {
+async function claude(env, prompt, system, only, maxTokens) {
   let last = '';
   for (const model of (only ? [only] : MODELS)) {
-    const r = await anthropic(env, Object.assign({ model, max_tokens: 3000, messages: [{ role: 'user', content: prompt }] }, system ? { system } : {}));
+    const r = await anthropic(env, Object.assign({ model, max_tokens: maxTokens || 3000, messages: [{ role: 'user', content: prompt }] }, system ? { system } : {}));
     if (r.status === 400 || r.status === 404) { last = model + ' ' + r.status; continue; }
     if (!r.ok) { const t = await r.text(); throw new Error('model ' + r.status + ' ' + t.slice(0, 160)); }
     const d = await r.json();
     const t = (d.content || []).filter(b => b.type === 'text').map(b => b.text).join('');
-    const m = t.match(/\{[\s\S]*\}/); if (!m) throw new Error('no json ' + d.stop_reason + ' ' + t.slice(0, 120));
+    const m = t.match(/\{[\s\S]*\}/);
+    if (!m) { last = model + ' no json (stop ' + d.stop_reason + '): ' + t.slice(0, 120); if (only) break; continue; }   // e.g. the token budget ran out before the answer: try the next model
     let o; try { o = parseJson(m[0]); } catch (e) { last = model + ' json (stop ' + d.stop_reason + ', ' + ((d.usage || {}).output_tokens || '?') + ' tokens): ' + e.message; if (only) break; continue; }   // repair, else try the next model
     if (!only) { claude.lastModel = d.model || model; claude.lastFallback = last ? last.slice(0, 260) : null; }
     return o;
@@ -1517,7 +1518,7 @@ export async function ask(req, env, ctx) {
   const ctxt = 'DATA updated ' + d.updated + '\nTOTALS: ' + JSON.stringify({ projects: cases.length, markets: d.markets, countries: d.countries, claims: db.claims, claims_total: db.claims_total, checks_by_level: db.checks_by_level, stages: db.stages, all_six_public: db.all_six_public, with_flags: db.with_flags, overdue: db.overdue, overdue_avg_months: db.overdue_avg_months, delayed: db.delayed }) +
     '\nMARKETS (market|country|projects|avg_checks|avg_confirmed|permit_public_pct|deposit_protection_pct|all_six_public|with_flags|transparency_index):\n' + ms.join('\n') +
     (pick.length ? '\nPROJECTS IN NAMED MARKETS (id|market|stage|band|completion|title|score|confirmed|permit|escrow|overdue_months|delay_months|contradicted_claims|flags):\n' + pick.map(row).join('\n') : '');
-  let out; try { out = await claude(env, ASK_PROMPT + '\n\n' + ctxt + '\n\nQUESTION: ' + q); } catch (e) { return json({ error: 'model' }, 503); }
+  let out; try { out = await claude(env, ASK_PROMPT + '\n\n' + ctxt + '\n\nQUESTION: ' + q, null, null, 6000); } catch (e) { return json({ error: 'model' }, 503); }
   const ids = new Set(cases.map(c => c.id));
   const res = { q, updated: d.updated, answer: String(out.answer || ''), numbers: (out.numbers || []).slice(0, 4), projects: (out.projects || []).filter(x => ids.has(x)).slice(0, 6), follow_up: (out.follow_up || []).slice(0, 2) };
   ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(res), { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=86400' } })));
