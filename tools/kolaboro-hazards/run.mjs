@@ -19,6 +19,8 @@ globalThis.fetch = async (url, init) => {
 const ids = JSON.parse(fs.readFileSync(idsF, 'utf8'));
 const pub = new Map(JSON.parse(fs.readFileSync(casesF, 'utf8')).cases.map(c => [c.id, c.market]));
 const sites = JSON.parse(fs.readFileSync(satF, 'utf8')).sites || [];
+// coarse fallback (Natural Earth outline, about 1 km) when no Overpass server answered: shown only as a labelled band
+const coastVal = (c, coarse) => c.approx ? (c.beyond ? 'over 10 km' : c.under_m ? 'under 1 km (coarse outline)' : (c.distance_m < 5000 ? '1 to 5 km' : '5 to 10 km') + ' (coarse outline)') : coarse ? (c.beyond ? 'over 10 km' : band(c.distance_m)) : (c.beyond ? null : c.distance_m);
 const band = m => m == null ? null : m < 200 ? 'under 200 m' : m < 500 ? '200 to 500 m' : m < 1000 ? '500 m to 1 km' : m < 2000 ? '1 to 2 km' : m < 5000 ? '2 to 5 km' : '5 to 10 km';
 const fail = {}; const note = (k, r) => { if (!r || !r.ok) fail[k] = (fail[k] || 0) + 1; };
 
@@ -29,7 +31,7 @@ function compact(r, coarse) {   // coarse = a tracked project: rounded so the fi
   if (q && q.ok) { o.quakes = { m5: q.m5, m6: q.m6, m7: q.m7 }; if (q.largest && q.largest[0]) o.quakes.max = { mag: q.largest[0].mag, year: q.largest[0].year, dist_km: coarse ? Math.round(q.largest[0].dist_km / 10) * 10 : q.largest[0].dist_km }; }
   if (t && t.ok) o.tsunami = { runups: t.runups, events: t.events, max_m: t.max_height_m, latest: t.latest_year };
   if (v && v.ok) o.volcano = v.nearest[0] ? { name: v.nearest[0].name, number: v.nearest[0].number, dist_km: coarse ? Math.round(v.nearest[0].dist_km / 5) * 5 : v.nearest[0].dist_km, last: v.nearest[0].last_eruption_year } : { none_within_km: v.radius_km };
-  if (c && c.ok) o.coast = coarse ? (c.beyond ? 'over 10 km' : band(c.distance_m)) : (c.beyond ? null : c.distance_m);
+  if (c && c.ok) o.coast = coastVal(c, coarse);
   const miss = HZ.SOURCES.filter(k => !r[k] || !r[k].ok); if (miss.length) o.unavailable = miss;
   return o;
 }
@@ -41,7 +43,7 @@ async function pool(items, n, fn) {   // a few points at a time; the per-host pa
 await pool(sites, 4, async s => {
   const r = await HZ.all(s.lat, s.lng); HZ.SOURCES.forEach(k => note(k, r[k]));
   const o = Object.assign({ id: s.id, label: s.label, lat: s.lat, lng: s.lng }, compact(r, false)); areas.push(o);
-  if (!r.coast || !r.coast.ok) retry.push({ o, lat: s.lat, lng: s.lng, coarse: false });
+  if (!r.coast || !r.coast.ok || r.coast.approx) retry.push({ o, lat: s.lat, lng: s.lng, coarse: false });
   console.log('area', s.id, Math.round((Date.now() - t0) / 1000) + 's');
 });
 areas.sort((a, b) => sites.findIndex(x => x.id === a.id) - sites.findIndex(x => x.id === b.id));
@@ -50,16 +52,17 @@ await pool(ids, 4, async p => {
   if (pub.get(p.id) !== p.market) { skipped++; return; }   // id rule drifted: never attach figures to the wrong project
   const r = await HZ.all(p.lat, p.lng); HZ.SOURCES.forEach(k => note(k, r[k]));
   projects[p.id] = compact(r, true);
-  if (!r.coast || !r.coast.ok) retry.push({ o: projects[p.id], lat: p.lat, lng: p.lng, coarse: true });
+  if (!r.coast || !r.coast.ok || r.coast.approx) retry.push({ o: projects[p.id], lat: p.lat, lng: p.lng, coarse: true });
   console.log('project', p.id, Math.round((Date.now() - t0) / 1000) + 's');
 });
 // second pass for the coastline, one point at a time: the public Overpass servers allow only a couple of parallel queries per address
 for (const x of retry) {
   const c = await HZ.coast(x.lat, x.lng);
   if (!c.ok) continue;
-  x.o.coast = x.coarse ? (c.beyond ? 'over 10 km' : band(c.distance_m)) : (c.beyond ? null : c.distance_m);
-  x.o.unavailable = (x.o.unavailable || []).filter(k => k !== 'coast'); if (!x.o.unavailable.length) delete x.o.unavailable;
-  fail.coast--; if (!fail.coast) delete fail.coast;
+  const wasFail = (x.o.unavailable || []).includes('coast');
+  if (c.approx && !wasFail) continue;   // already has the coarse band from the first pass
+  x.o.coast = coastVal(c, x.coarse);
+  if (wasFail) { x.o.unavailable = x.o.unavailable.filter(k => k !== 'coast'); if (!x.o.unavailable.length) delete x.o.unavailable; fail.coast--; if (!fail.coast) delete fail.coast; }
 }
 console.log('coast retries', retry.length);
 const out = {
