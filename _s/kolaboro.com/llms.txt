@@ -103,6 +103,7 @@
 - [Advertised prices versus registered sales (Dubai Land Department, HM Land Registry, Irish Property Price Register)](https://kolaboro.com/prices/)
 - [Risk patterns: projects unusual versus peers on public warning signs, explainable, not a fraud predictor](https://kolaboro.com/risk/)
 - [Trust center: controls checked live with evidence, mapped to SOC 2 criteria, not audited](https://kolaboro.com/trust/)
+- [Natural hazards at any plot: six open sources read live (elevation, flood model, earthquakes, tsunami run-ups, volcanoes, coastline), each with its query and limits; zoning guide for Indonesia, no zone guessed](https://kolaboro.com/hazards/)
 - [Company graph: UK projects matched on Companies House, their directors' other companies, anonymised; exact-name court search](https://kolaboro.com/graph/)
 - [Mystery shopper: the standard questions for developers and how answers will be measured (not started yet)](https://kolaboro.com/mystery-shopper/)
 - [Website change watch: where developer websites visibly changed, as page geometry only](https://kolaboro.com/visual/)

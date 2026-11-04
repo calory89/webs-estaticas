@@ -67,6 +67,10 @@
   "stamp": { "hash": "141f25e2…", "ots": "AE9wZW5U…", "calendars": [3 calendars],
              "created_at": "2026-10-29T15:38:32Z", "bitcoin_block": 973707 } }</div>
 <p>Check the proof independently with the official client: <code>ots verify photo.jpg.ots</code>, or at opentimestamps.org.</p>
+<h2>Natural hazards at a point</h2><p>Six open sources read live for one point, rounded to about 10 m. Each figure comes with its source, licence, the exact query and its limits; a source that does not answer is marked unavailable. 12 new points per 10 minutes per IP. <a href="/hazards/">Page</a></p>
+<div class="api-b">GET https://kolaboro.com/api/x/p/hazards?lat=-8.638&amp;lng=115.115
+GET https://kolaboro.com/api/x/p/zoning            (hourly test of the official Indonesian zoning services)
+GET https://kolaboro.com/data/hazards.json         (monthly, tracked projects and watched areas, rounded)</div>
 <h2>Satellite watch</h2><p>Weekly Sentinel-2 composites and land-cover change for every watched site.</p>
 <div class="api-b">GET https://kolaboro.com/data/satellite.json
 GET https://kolaboro.com/k/sat/&lt;site&gt;/&lt;period&gt;.jpg         (true colour, 240 px, ~1.1 km)
@@ -116,6 +120,7 @@ GET https://kolaboro.com/api/kb/health</div>
         <li><a href="/extension/">Chrome extension</a></li>
         <li><a href="/graph/">Company graph</a></li>
         <li><a href="/index/prices/">Price index</a></li>
+        <li><a href="/hazards/">Natural hazards</a></li>
         <li><a href="/visual/">Website changes</a></li>
       </ul></div>
       <div><h2 class="fh">Trust</h2><ul>
