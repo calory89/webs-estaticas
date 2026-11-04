@@ -22,6 +22,12 @@ on:
       force:
         description: "Run even if today's minimum is already spent (1 = yes)"
         default: ""
+      markets:
+        description: "Only these markets or countries, comma separated (empty = all, rotating)"
+        default: ""
+      max_calls:
+        description: "Maximum Claude calls this run"
+        default: "40"
 permissions:
   contents: write
   actions: write
@@ -31,7 +37,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 240
     steps:
       - uses: actions/checkout@v4
         with:
@@ -43,6 +49,8 @@ jobs:
           KB_DISCOVER_MIN_USD: ${{ github.event.inputs.min_usd || '2' }}
           KB_DISCOVER_MAX_USD: ${{ github.event.inputs.max_usd || '3' }}
           KB_DISCOVER_FORCE: ${{ github.event.inputs.force || '' }}
+          KB_DISCOVER_MARKETS: ${{ github.event.inputs.markets || '' }}
+          KB_DISCOVER_MAX_CALLS: ${{ github.event.inputs.max_calls || '40' }}
         run: python3 tools/kolaboro-agent/discover.py | tee "$RUNNER_TEMP/discover.out"
       - name: Save on main
         id: save

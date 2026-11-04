@@ -50,9 +50,28 @@ MARKETS = [
     ('Orlando', 'USA', 'county permits, DBPR'), ('Austin', 'USA', 'city permits'), ('Puerto Rico', 'USA', 'OGPe permits'), ('Turks and Caicos', 'Turks and Caicos', 'planning approval'),
     ('Grenada', 'Grenada', 'CBI approved project'), ('St Kitts and Nevis', 'St Kitts and Nevis', 'CBI approved project'), ('Antigua', 'Antigua', 'CBI approved project'),
     ('St Lucia', 'St Lucia', 'CBI approved project'), ('Belize', 'Belize', 'approval'), ('Seychelles', 'Seychelles', 'approval'), ('Cape Verde', 'Cape Verde', 'approval'),
+    # added 4 Nov 2026: countries with few or no tracked projects
+    ('Marrakech', 'Morocco', 'permis de construire, titre foncier (ANCFCC conservation fonciere)'), ('Tangier', 'Morocco', 'permis de construire, titre foncier'),
+    ('Nairobi', 'Kenya', 'NCA project registration, county approval, NEMA licence'), ('Diani', 'Kenya', 'NCA registration, NEMA licence'),
+    ('Accra', 'Ghana', 'building permit, Lands Commission title'), ('Lagos', 'Nigeria', 'LASBCA building approval, Governor\'s consent / C of O'),
+    ('Kigali', 'Rwanda', 'City of Kigali building permit, RDB'), ('Mozambique', 'Mozambique', 'DUAT land use right, building licence'),
+    ('Namibia', 'Namibia', 'town council approval, deeds office'), ('Goa', 'India', 'Goa RERA registration number (rera.goa.gov.in)'),
+    ('Mumbai', 'India', 'MahaRERA registration number (maharera.maharashtra.gov.in)'), ('Bangalore', 'India', 'Karnataka RERA registration number'),
+    ('Jakarta', 'Indonesia', 'PBG building permit, strata title (SHMSRS)'), ('Laos', 'Laos', 'construction permit'),
+    ('Singapore', 'Singapore', 'URA developer licence and sales licence (URA project list)'), ('Taiwan', 'Taiwan', 'building permit, pre-sale contract filing'),
+    ('Seoul', 'South Korea', 'building permit, pre-sale approval (bunyang)'), ('Kuala Lumpur', 'Malaysia', 'KPKT advertising and sales permit, TEDUH'),
+    ('Almaty', 'Kazakhstan', 'shared construction permit (Law on equity participation), guarantee by Kazakhstan Housing Company'), ('Tashkent', 'Uzbekistan', 'construction permit'),
+    ('Baku', 'Azerbaijan', 'construction permit'), ('Yerevan', 'Armenia', 'construction permit, cadastre'), ('Amman', 'Jordan', 'building licence'),
+    ('Belgrade', 'Serbia', 'gradjevinska dozvola, cadastre (RGZ)'), ('Bucharest', 'Romania', 'autorizatie de construire, cadastru (ANCPI)'),
+    ('Warsaw', 'Poland', 'pozwolenie na budowe, escrow account (rachunek powierniczy) and DFG under the developer act'), ('Budapest', 'Hungary', 'building permit (e-epites), land registry'),
+    ('Prague', 'Czechia', 'building permit, cadastre (CUZK)'), ('Riga', 'Latvia', 'building permit, Land Book'), ('Tallinn', 'Estonia', 'building permit (ehitisregister)'),
+    ('Berlin', 'Germany', 'Baugenehmigung, MaBV instalments, notary contract'), ('Toronto', 'Canada', 'Tarion registration, HCRA licence'), ('Vancouver', 'Canada', 'BC Financial Services Authority disclosure statement (REDMA)'),
+    ('Barbados', 'Barbados', 'Town and Country Development Planning approval'), ('Jamaica', 'Jamaica', 'NEPA permit, Real Estate Board'), ('Bahamas', 'Bahamas', 'Department of Physical Planning approval'),
+    ('Cayman Islands', 'Cayman Islands', 'Planning Department approval'), ('Ecuador', 'Ecuador', 'municipal construction permit'), ('Peru', 'Peru', 'licencia de edificacion'),
+    ('Chile', 'Chile', 'permiso de edificacion (DOM)'), ('Paraguay', 'Paraguay', 'municipal permit'), ('Argentina', 'Argentina', 'permiso de obra, fideicomiso'),
 ]
 
-PROMPT = """You research off-plan property for Kolaboro, an independent database for foreign buyers. Use web search and fetch to find {n} REAL projects in {market} ({country}) that are currently sold to foreign buyers and are {stage}. Skip anything in this list of projects we already track in this market: {known}.
+PROMPT = """You research off-plan property for Kolaboro, an independent database for foreign buyers. Use web search and fetch to find {n} REAL projects in {market} ({country}) that are currently sold to foreign buyers and are {stage}. Skip anything in this list of projects we already track in this market: {known}. Prefer projects whose name is published; if a real project has no published name, say so in the name.
 
 For each project open the developer's own page and at least one other source. Record only what you saw; null when not found. Never invent permit numbers, prices or percentages. Official sources for this market: {hint}.
 
@@ -236,7 +255,7 @@ def call(prompt, B):
 
 
 def main():
-    global MIN_USD, MAX_USD
+    global MIN_USD, MAX_USD, MARKETS
     os.makedirs(DATA, exist_ok=True)
     logp = os.path.join(DATA, 'discover-log.json'); log = load(logp, [])
     wp = os.path.join(HERE, 'projects-world.json'); W = load(wp, {'projects': []})
@@ -252,6 +271,9 @@ def main():
     B = Budget(); B.usd = 0.0
     if not os.environ.get('KB_DISCOVER_FORCE'):
         MIN_USD = max(0.0, MIN_USD - done_today); MAX_USD = max(0.0, MAX_USD - done_today)
+    only = [s.strip().lower() for s in os.environ.get('KB_DISCOVER_MARKETS', '').split(',') if s.strip()]
+    if only:   # a run aimed at chosen markets or countries (matched on market or country name)
+        MARKETS = [m for m in MARKETS if m[0].lower() in only or m[1].lower() in only] or MARKETS
     start = int(hashlib.md5(TODAY.encode()).hexdigest(), 16) % len(MARKETS)
     i = 0; added = []
     def rej(r): run['rejected'][r] = run['rejected'].get(r, 0) + 1
