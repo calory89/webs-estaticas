@@ -10463,5 +10463,163 @@
     null
    ]
   }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "secret-inshi",
+  "name": "SECRET by INSHI",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "al-sidr-saadiyat-lagoons",
+  "name": "Al Sidr (Saadiyat Lagoons)",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "al-mare-green-midtown-group",
+  "name": "Al Mare Green",
+  "changed": {
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "avrupa-konutlari-gunesli-artas",
+  "name": "Avrupa Konutları Güneşli",
+  "changed": {
+   "plans_published": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9649,
+    9650
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "rhea-by-sansiri",
+  "name": "Rhea by Sansiri",
+  "changed": {
+   "title_type": [
+    null,
+    "leasehold"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "bluewaters-bay-meraas",
+  "name": "Bluewaters Bay",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "ramhan-island-villas-phase-4-eagle-hills",
+  "name": "Ramhan Island Villas Phase 4",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "alliance-centropolis-alliance-group",
+  "name": "Alliance Centropolis",
+  "changed": {
+   "completion_year": [
+    2029,
+    2028
+   ],
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "penha-living-bolder-addsolid",
+  "name": "Penha Living Bolder",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "udaondo-buenos-aires-landmark-developments",
+  "name": "Udaondo Buenos Aires",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Fideicomiso Buenos Aires Landmark (land-purchase vehicle; no buyer escrow described)",
+    "Fideicomiso Buenos Aires Landmark (the trust that bought the land at auction in 2018; no buyer escrow or guarantee described)"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "nashville-edition-residences-tidal",
+  "name": "The Residences at The Nashville EDITION",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "fox-and-foundry-liverpool-nexus-residential",
+  "name": "Fox & Foundry",
+  "changed": {
+   "guaranteed_language": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "the-gateway-liverpool-legacie",
+  "name": "The Gateway",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
  }
 ]
