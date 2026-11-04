@@ -1,0 +1,3 @@
+# Hashed build files copied from the shared /assets/ folder (see _rhbuild/assets.py): cache for a year.
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
