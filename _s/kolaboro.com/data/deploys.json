@@ -1,6 +1,19 @@
 {
  "deploys": [
   {
+   "at": "2026-11-04T13:19:51Z",
+   "commit": "76aad72f85b1fb0ee0b4dcd4a0c08e4d0a8cbe05",
+   "checks_passed": 32,
+   "checks_total": 32,
+   "failed": [],
+   "run": "https://github.com/calory89/webs-estaticas/actions/runs/41836680473",
+   "result": "pass",
+   "wait_s": 101,
+   "changes": [
+    "76aad72f85b1"
+   ]
+  },
+  {
    "at": "2026-11-04T13:13:07Z",
    "commit": "258c1c7001c9073a4f4d0f619af20f0922bea586",
    "checks_passed": 32,
@@ -950,13 +963,13 @@
  "canary": "Cloudflare Pages sends each push to all visitors at once and offers no percentage canary, so none is claimed. A bad push can be visible for a few minutes until the rollback is live.",
  "rollback_mode": "Rollback: a git commit restoring the files changed since the last passing commit; Pages deploys it in about 1 to 2 minutes. An instant Cloudflare API rollback is built in but needs a Pages-scoped token, not configured yet.",
  "latest_checks": {
-  "at": "2026-11-04T13:13:07.732Z",
-  "commit": "258c1c7001c9073a4f4d0f619af20f0922bea586",
+  "at": "2026-11-04T13:19:51.981Z",
+  "commit": "76aad72f85b1fb0ee0b4dcd4a0c08e4d0a8cbe05",
   "checks": [
    {
     "name": "build: live commit",
     "ok": true,
-    "detail": "live 258c1c7001c9"
+    "detail": "live 76aad72f85b1"
    },
    {
     "name": "page /",
@@ -986,17 +999,17 @@
    {
     "name": "page /log/",
     "ok": true,
-    "detail": "200, 27361 bytes"
+    "detail": "200, 27441 bytes"
    },
    {
     "name": "page /verify/",
     "ok": true,
-    "detail": "200, 42524 bytes"
+    "detail": "200, 42655 bytes"
    },
    {
     "name": "page /status/",
     "ok": true,
-    "detail": "200, 39934 bytes"
+    "detail": "200, 40018 bytes"
    },
    {
     "name": "page /changelog/",
@@ -1021,7 +1034,7 @@
    {
     "name": "page /investors/dossier/",
     "ok": true,
-    "detail": "200, 21529 bytes"
+    "detail": "200, 21613 bytes"
    },
    {
     "name": "api /api/open/stats",
@@ -1115,7 +1128,7 @@
    }
   ]
  },
- "last_checked": "258c1c7001c9073a4f4d0f619af20f0922bea586",
- "last_good": "258c1c7001c9073a4f4d0f619af20f0922bea586",
- "updated": "2026-11-04T13:13:07Z"
+ "last_checked": "76aad72f85b1fb0ee0b4dcd4a0c08e4d0a8cbe05",
+ "last_good": "76aad72f85b1fb0ee0b4dcd4a0c08e4d0a8cbe05",
+ "updated": "2026-11-04T13:19:51Z"
 }
