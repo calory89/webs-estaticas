@@ -559,10 +559,11 @@ def main():
     pub_ids = None
     pc = os.environ.get('KB_PUBLIC_CASES')
     if pc and os.path.exists(pc):
-        pub_ids = {c['id'] for c in load(pc, {}).get('cases', [])} or None
-    if pub_ids:
-        out = {k: v for k, v in out.items() if k in pub_ids}
-        P = [p for p in P if ids[p['slug']] in pub_ids]
+        pub_ids = {c['id']: c.get('market') for c in load(pc, {}).get('cases', [])} or None
+    if pub_ids:   # the id must exist publicly AND belong to the same market (two new markets can share an id prefix)
+        keep = {ids[p['slug']] for p in P if pub_ids.get(ids[p['slug']]) == p.get('market', 'Bali')}
+        out = {k: v for k, v in out.items() if k in keep}
+        P = [p for p in P if ids[p['slug']] in keep and pub_ids.get(ids[p['slug']]) == p.get('market', 'Bali')]
     # 4. totals
     allp = [x for v in out.values() for x in v]
     def tally(lst):
