@@ -1,0 +1,65 @@
+name: Kolaboro global company graph (GLEIF)
+# Weekly: the companies named in the private research records, matched to Legal Entity Identifier records on the GLEIF API
+# (CC0, no key) by exact legal name plus country, with their direct and ultimate parents and registration status.
+# Publishes only an anonymised file, kolaboro.com/data/company-graph-global.json. The per-name match reasons are kept as a
+# private workflow artifact (this repository is private), never published.
+on:
+  schedule:
+    - cron: '17 4 * * 2'
+  push:
+    branches: [main]
+    paths: ['tools/kolaboro-w/gleif_graph.py', 'tools/kolaboro-w/wcommon.py', '.github/workflows/kolaboro-gleif-graph.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-gleif-graph
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            tools/kolaboro-w
+            tools/kolaboro-agent/agent.py
+            tools/kolaboro-agent/projects.json
+            tools/kolaboro-agent/projects-world.json
+            tools/kolaboro-agent/research
+          sparse-checkout-cone-mode: false
+      - name: Build
+        run: |
+          set -e
+          mkdir -p "$RUNNER_TEMP/site/data" "$RUNNER_TEMP/private"
+          python3 -I tools/kolaboro-w/gleif_graph.py tools/kolaboro-agent "$RUNNER_TEMP/site/data/company-graph-global.json" "$RUNNER_TEMP/private/gleif-matches.json" 7000 2> "$RUNNER_TEMP/private/log.txt" || { tail -20 "$RUNNER_TEMP/private/log.txt"; exit 1; }
+          tail -2 "$RUNNER_TEMP/private/log.txt"
+          R=$(python3 -I -c "import json,sys;print(json.load(open(sys.argv[1]))['coverage']['matched_names'])" "$RUNNER_TEMP/site/data/company-graph-global.json")
+          if [ "$R" = "0" ]; then echo "nothing matched (GLEIF unreachable?): not publishing"; echo "SKIP=1" >> $GITHUB_ENV; fi
+      - name: Keep the private match reasons (artifact, 90 days)
+        uses: actions/upload-artifact@v4
+        with:
+          name: gleif-private
+          path: ${{ runner.temp }}/private
+          retention-days: 90
+      - name: Publish to kolaboro.com
+        if: env.SKIP != '1'
+        run: |
+          set -e
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          for i in 1 2 3 4 5; do
+            P=$(git rev-parse FETCH_HEAD)
+            export GIT_INDEX_FILE=$RUNNER_TEMP/idx; rm -f $GIT_INDEX_FILE; git read-tree $P
+            for f in company-graph-global.json; do
+              H=$(git hash-object -w "$RUNNER_TEMP/site/data/$f")
+              git update-index --add --cacheinfo 100644,$H,_s/kolaboro.com/data/$f
+            done
+            T=$(git write-tree --missing-ok); unset GIT_INDEX_FILE
+            [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
+            C=$(git commit-tree $T -p $P -m "kolaboro.com: global company graph (GLEIF) $(date -u +%F)")
+            git push -q origin $C:refs/heads/pub/_lovable && exit 0
+            sleep 7; git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          done; exit 1
