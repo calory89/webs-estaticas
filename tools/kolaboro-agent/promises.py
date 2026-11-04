@@ -43,6 +43,8 @@ HAIKU, SONNET = 'claude-haiku-5-5', 'claude-sonnet-5-5'
 PRICE = {HAIKU: (0.10, 0.50), SONNET: (2.0, 10.0)}   # USD per million tokens in / out, list prices (platform.claude.com/docs/en/about-claude/pricing, Nov 2026)
 MAX_TOTAL = float(os.environ.get('KB_PROMISE_MAX_USD', '9.5'))
 MAX_RUN = float(os.environ.get('KB_PROMISE_RUN_USD', '3'))
+MAX_SECONDS = float(os.environ.get('KB_PROMISE_MAX_SECONDS', '2400'))   # stop starting new readings after this, so the run always saves its cache
+T0 = time.time()
 PV = 'promises-v2'
 KINDS = ('handover', 'construction_start', 'structure', 'milestone', 'permit', 'rental')
 KIND_LABEL = {'handover': 'Handover or completion', 'construction_start': 'Construction start', 'structure': 'Structure finished (topping out)',
@@ -274,7 +276,7 @@ def extract(cache, label, text):
     k = hashlib.sha256((PV + '\n' + snip).encode()).hexdigest()
     if k in cache:
         return cache[k]
-    if not AI:
+    if not AI or time.time() - T0 > MAX_SECONDS:
         return None
     try:
         o = call(HAIKU, PROMPT.replace('{label}', label).replace('{text}', snip))
@@ -495,7 +497,7 @@ def main():
             return i, 'dup'
         label = 'research record written by Kolaboro' if src == 'research' else 'copy of the developer or listing page read on ' + day
         return i, extract(cache, label, t)
-    with cf.ThreadPoolExecutor(6) as ex:
+    with cf.ThreadPoolExecutor(12) as ex:
         for i, items in ex.map(work, order):
             res[i] = items
     # duplicates of a page text reuse the first reading
