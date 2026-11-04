@@ -111,7 +111,7 @@ for p in sorted(P, key=lambda x: IDS[x['slug']]):
     cands = list(dict.fromkeys(cands))[:6]
     m = markets.setdefault(mk, {'country_iso': isos[0] if isos else None, 'projects': 0, 'projects_with_lei': 0, 'projects_lei_not_issued': 0,
                                 'projects_foreign_parent': 0, 'developers': 0, 'developers_with_lei': 0, 'developers_foreign_parent': 0,
-                                'developers_lei_not_issued': 0, 'lei_status': {}, 'parent_countries': {}, 'checked': 0})
+                                'developers_lei_not_issued': 0, 'lei_status': {}, 'parent_countries': {}, 'parent_exceptions': {}, 'checked': 0})
     m['projects'] += 1
     rec = {'market': mk, 'checked': False}
     if stopped or not isos:
@@ -142,6 +142,7 @@ for p in sorted(P, key=lambda x: IDS[x['slug']]):
             ents.append({'reg': lapsed_cat(a['registration']['status']), 'entity_status': (a['entity'].get('status') or '').lower(),
                          'foreign_parent': foreign, 'parent_reported': pr['direct'] == 'reported' or pr['ultimate'] == 'reported',
                          'parent_exception': pr['direct'].startswith('exception') or pr['ultimate'].startswith('exception'),
+                         'exceptions': sorted({x.split(': ', 1)[1] for x in (pr['direct'], pr['ultimate']) if x.startswith('exception: ')}),
                          'parent_countries': sorted({c for c in (pr['direct_country'], pr['ultimate_country']) if c and c != ec}),
                          'initial_year': int(a['registration']['initialRegistrationDate'][:4]) if a['registration'].get('initialRegistrationDate') else None,
                          'id': r['id']})
@@ -174,6 +175,7 @@ for p in sorted(P, key=lambda x: IDS[x['slug']]):
     for e in ents:
         m['lei_status'][e['reg']] = m['lei_status'].get(e['reg'], 0) + 1
         for c in e['parent_countries']: m['parent_countries'][c] = m['parent_countries'].get(c, 0) + 1
+        for c in e['exceptions']: m['parent_exceptions'][c] = m['parent_exceptions'].get(c, 0) + 1
     print(pid, len(cands), len(ents), file=sys.stderr, flush=True)
 
 cov['requests'] = nreq[0]
@@ -189,6 +191,10 @@ status_tot = {}
 for m in markets.values():
     for k, v in m['lei_status'].items(): status_tot[k] = status_tot.get(k, 0) + v
 tot['lei_status'] = status_tot
+exc_tot = {}
+for m in markets.values():
+    for k, v in m['parent_exceptions'].items(): exc_tot[k] = exc_tot.get(k, 0) + v
+tot['parent_exceptions'] = exc_tot
 root = hashlib.sha256('\n'.join(arch).encode()).hexdigest()
 out = {
     'updated': NOW.strftime('%Y-%m-%dT%H:%M:%SZ'),
@@ -200,6 +206,7 @@ out = {
                'A name matches an LEI only when the legal name or a registered other name is exactly the same after normalising case, accents, punctuation and the legal-form words at the end, AND the legal or headquarters address is in the project\'s country.',
                'If two or more LEIs pass both tests the name counts as ambiguous and is not matched. There is no fuzzy matching.',
                'Parents are the accounting-consolidation parents reported to GLEIF (level 2 data). A parent is foreign when its legal address country differs from the entity\'s.',
+               'When a company reports no parent, it must give GLEIF a reason (a reporting exception): NATURAL_PERSONS (owned by one or more people), NON_CONSOLIDATING (the owner does not consolidate it in its accounts), NO_KNOWN_PERSON (no controlling owner), NON_PUBLIC (the company declined to disclose, citing legal or other obstacles), NO_LEI (the parent has no LEI). Counts are per matched entity per project.',
                'A registration that is not ISSUED (for example LAPSED, meaning the entity stopped renewing its LEI) is not proof of a problem: many small companies let an LEI lapse when they stop needing one for financial transactions.'],
     'privacy': 'Projects are anonymous. This file holds counts and booleans only: no company names, LEIs, parent names or addresses. Parent countries appear only as per-market counts.',
     'coverage': cov, 'totals': tot,
