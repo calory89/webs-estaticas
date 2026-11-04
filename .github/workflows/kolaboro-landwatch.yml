@@ -1,0 +1,68 @@
+name: Kolaboro land watch (night lights, stalled sites)
+# Weekly. Two open-data checks on tracked projects with coordinates (block U, batch 4). Coordinates stay private:
+#  - night: NASA Black Marble VNP46A2 via NASA GIBS (no login) at projects that should be finished -> kolaboro.com/data/night-lights.json
+#  - stalled: Sentinel-2 L2A change between clear quarters at every project with coordinates -> kolaboro.com/data/stalled-sites.json
+# No paid imagery, no API keys.
+on:
+  schedule:
+    - cron: '41 4 * * 3'
+  push:
+    branches: [main]
+    paths: ['tools/kolaboro-landwatch/night.py', 'tools/kolaboro-landwatch/stalled.py', '.github/workflows/kolaboro-landwatch.yml']
+  workflow_dispatch:
+    inputs:
+      only: { description: 'night, stalled or empty for both', required: false, default: '' }
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-landwatch
+  cancel-in-progress: false
+jobs:
+  night:
+    if: github.event.inputs.only != 'stalled'
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            tools/kolaboro-agent
+            tools/kolaboro-hazards
+            tools/kolaboro-landwatch
+      - name: Private ids and public cases
+        run: |
+          set -e
+          git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          git show FETCH_HEAD:_s/kolaboro.com/data/bali-cases.json > "$RUNNER_TEMP/cases.json"
+          python3 tools/kolaboro-hazards/ids.py "$RUNNER_TEMP/ids.json"
+      - name: Night lights
+        run: |
+          pip install -q numpy pillow
+          python3 -W ignore tools/kolaboro-landwatch/night.py "$RUNNER_TEMP/ids.json" "$RUNNER_TEMP/cases.json" "$RUNNER_TEMP/night-lights.json"
+          rm -f "$RUNNER_TEMP/ids.json"
+      - name: Publish to kolaboro.com
+        env: { F: night-lights.json, MSG: night lights }
+        run: bash tools/kolaboro-landwatch/publish.sh
+  stalled:
+    if: github.event.inputs.only != 'night'
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            tools/kolaboro-agent
+            tools/kolaboro-hazards
+            tools/kolaboro-landwatch
+      - name: Private ids
+        run: python3 tools/kolaboro-hazards/ids.py "$RUNNER_TEMP/ids.json"
+      - name: Sentinel-2 change per project
+        run: |
+          pip install -q rasterio pystac-client numpy
+          python3 -W ignore tools/kolaboro-landwatch/stalled.py "$RUNNER_TEMP/ids.json" "$RUNNER_TEMP/stalled-sites.json" --budget-min 55 --workers 10
+          rm -f "$RUNNER_TEMP/ids.json"
+      - name: Publish to kolaboro.com
+        env: { F: stalled-sites.json, MSG: stalled-site check }
+        run: bash tools/kolaboro-landwatch/publish.sh
