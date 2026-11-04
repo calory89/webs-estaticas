@@ -11,8 +11,19 @@
   "The source repository is private, so today only people with access can rebuild and compare. Public reproducibility will live in the open verifiers repository (kolaboro-open), which is not public yet.",
   "Cloudflare Pages bundles the worker itself when it deploys, with its own tool versions. This hash is of our pinned bundle of the same source, not of the bytes running at the edge, which Cloudflare does not let anyone download."
  ],
- "updated": "2026-11-03T22:57:04Z",
+ "updated": "2026-11-04T02:46:24Z",
  "builds": [
+  {
+   "worker_tree": "0326eb486e7b8d834329d0d3c1581d8e24245472",
+   "first_commit": "09269ba62b8e4e780156101ae8e22b83b6143142",
+   "commit_time": "2026-11-04T02:21:17Z",
+   "built_at": "2026-11-04T02:46:24Z",
+   "sha256": "8bb6a7d9bab819b6cf9bae2faf84a7d7c9ee510424b29c52a312c14c992948db",
+   "bytes": 24495681,
+   "reproduced": true,
+   "node": "v22.23.4",
+   "run_id": "41762869929"
+  },
   {
    "worker_tree": "27d19eeabfe2cb2a5fac0bfec2613f5730a8c583",
    "first_commit": "7618bd94b3bcc708049f7d074831339d5f7cda08",
