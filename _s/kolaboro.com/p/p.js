@@ -182,6 +182,10 @@
 
       '<section class="pf-ponly pf-psrc"><div class="wrap"><h2>Sources and limits</h2><p>Developer claims are read from the developer\'s own pages and listings. Verification levels come from official registers, regulators, courts, stock-exchange filings and major newspapers. Problems are listed only from news, courts and regulators. A published document is not proof that it is genuine; that is what a local agent checks on site and at the registry. This dossier is information, not legal, tax or financial advice. Current version: ' + esc(url) + '. Method: kolaboro.com/how-we-score. Printed ' + today() + '.</p></div></section>' +
 
+      '<section class="pf-sec pf-noprint pf-more"><div class="wrap"><h2>More on this project</h2><p class="sub" id="pf-more">' +
+        '<a href="/buyer-reports/?id=' + encodeURIComponent(c.id) + '">Buyer reports</a> &middot; <a href="/milestones/?p=' + encodeURIComponent(c.id) + '">Hold your payments against evidence</a> &middot; <a href="/visual/">Website change watch</a> &middot; <a href="/visit/">Site visit app, works offline</a>' +
+      '</p></div></section>' +
+
       '<section class="pf-sec pf-noprint"><div class="wrap"><h2>Compare with similar projects</h2>' +
       '<p class="sub">' + (sim.sameMarket >= 3 ? 'Three other projects in ' + esc(c.market) + ' with the closest scores.' : sim.list.length ? 'The closest projects in ' + esc(c.market) + (sim.sameMarket < sim.list.length ? ' and elsewhere in ' + esc(c.country) : '') + '.' : 'No other project is tracked in this market yet.') + '</p>' +
       (sim.list.length ? '<div class="pf-sim">' + sim.list.map(simCard).join('') + '</div><div class="pf-act"><a class="btn btn-line" href="/compare/?ids=' + ids.map(encodeURIComponent).join(',') + '">Compare side by side</a></div>' : '') +
@@ -197,6 +201,7 @@
     root.innerHTML = html;
     loadIntel(c);
     loadReplies(c);
+    loadGraph(c);
     try { var kb = document.getElementById('pf-kvb'); if (kb && window.kbVerifyLoad) kbVerifyLoad().then(function(KV){ return KV.fetchSigned('/api/open/projects/' + encodeURIComponent(c.id)).then(function(r){ KV.badge(document.getElementById('pf-kvb'), r.check, { what: 'this project record (/api/open/projects/' + c.id + ')' }); }); }).catch(function(){ var e = document.getElementById('pf-kvb'); if (e) e.remove(); }); else if (kb) kb.remove(); } catch (e) {}
     var pb = document.getElementById('pf-print');
     if (pb) pb.addEventListener('click', function(){ try { window.print(); } catch (e) {} });
@@ -311,6 +316,17 @@
     var put = function(id, h){ var el = document.getElementById(id); if (el) el.innerHTML = h; };
     intelP.then(function(j){ put('pf-web', webHtml(j, c)); put('pf-drift', driftHtml(j, c)); })
       .catch(function(){ put('pf-web', WEB_ERR); });
+  }
+
+  /* Company graph link (block Q): only UK projects can be covered, and only when /api/x/q/graph/{id} names a legal company for it.
+     The link is appended at the end of a row far below the fold, so it cannot shift what the reader sees. */
+  function loadGraph(c){
+    if (c.country !== 'United Kingdom') return;
+    fetch('/api/x/q/graph/' + encodeURIComponent(c.id)).then(function(r){ return r.ok ? r.json() : null; }).then(function(j){
+      var el = document.getElementById('pf-more');
+      if (!el || !j || j.covered === false || !(j.named_companies > 0)) return;   /* brand-only projects have nothing on the register */
+      el.insertAdjacentHTML('afterbegin', '<a href="/graph/?id=' + encodeURIComponent(c.id) + '">Company graph</a> &middot; ');
+    }).catch(function(){});
   }
 
   /* Developer replies approved by a moderator (block I: /api/x/i/replies). Empty until that feature is switched on. */
