@@ -186,7 +186,7 @@ def builds(c, cache):
         'how': {'esbuild': ESBUILD, 'command': 'esbuild _worker.js/index.js ' + ' '.join(FLAGS) + ' --outfile=out/worker.js', 'cwd': 'repository root at first_commit',
                 'lookup': 'For any commit X: git rev-parse X:_worker.js gives the worker_tree to look up here.'},
         'limits': [
-            'The source repository is private, so today only people with access can rebuild and compare. Public reproducibility will live in the open verifiers repository (kolaboro-open), which is not public yet.',
+            'The worker source repository is private, so only people with access can rebuild and compare this bundle. The verifiers, scoring rules and transparency index are public at https://github.com/calory89/kolaboro-open (MIT).',
             'Cloudflare Pages bundles the worker itself when it deploys, with its own tool versions. This hash is of our pinned bundle of the same source, not of the bytes running at the edge, which Cloudflare does not let anyone download.',
         ],
         'updated': now(),
