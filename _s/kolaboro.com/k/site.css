@@ -1248,3 +1248,4 @@ footer .fgrid:last-child,footer .fgrid{border-bottom:1px solid var(--line)}
 @media (min-width:901px){html[lang^=en] .links>a:not(.btn){white-space:nowrap}}
 @media (min-width:901px) and (max-width:1060px){html[lang^=en] .links>a[href="/about"]{display:none}}
 @media (min-width:901px) and (max-width:960px){html[lang^=en] .links>a[href="/#how"]{display:none}}
+.tile.hot .price{color:#fff}
