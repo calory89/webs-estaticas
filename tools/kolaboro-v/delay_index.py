@@ -278,7 +278,7 @@ def ask_claude(facts, key, model='claude-sonnet-5-5', max_usd=2.0):
               'Do not name any developer or project. No adjectives unless a number in the same sentence backs them. No dashes. '
               'Plain English, 90 to 140 words, third person ("Kolaboro data show"). Mention that history for the delay index starts this month. '
               'Return only the paragraph.\n\nJSON:\n' + json.dumps(facts, ensure_ascii=False))
-    body = json.dumps({'model': model, 'max_tokens': 500, 'messages': [{'role': 'user', 'content': prompt}]}).encode()
+    body = json.dumps({'model': model, 'max_tokens': 1500, 'messages': [{'role': 'user', 'content': prompt}]}).encode()
     req = urllib.request.Request('https://api.anthropic.com/v1/messages', data=body, method='POST', headers={
         'x-api-key': key, 'anthropic-version': '2023-06-01', 'content-type': 'application/json'})
     with urllib.request.urlopen(req, timeout=90) as r:
@@ -289,7 +289,7 @@ def ask_claude(facts, key, model='claude-sonnet-5-5', max_usd=2.0):
     if usd > max_usd:
         raise RuntimeError('spend guard')
     text = ''.join(b.get('text', '') for b in d.get('content', []) if b.get('type') == 'text').strip()
-    return text, {'model': d.get('model', model), 'input_tokens': u.get('input_tokens', 0), 'output_tokens': u.get('output_tokens', 0), 'usd_upper_bound': round(usd, 4)}
+    return text, {'stop_reason': d.get('stop_reason'), 'blocks': [b.get('type') for b in d.get('content', [])], 'words': len(text.split()), 'model': d.get('model', model), 'input_tokens': u.get('input_tokens', 0), 'output_tokens': u.get('output_tokens', 0), 'usd_upper_bound': round(usd, 4)}
 
 
 def main():
@@ -482,6 +482,8 @@ def main():
                     para, by = txt, spend['model']
                 else:
                     chk['rejected'] = True
+                    chk['words'] = len(txt.split())
+                    chk['draft'] = txt[:2000]
             except Exception as e:
                 chk = {'error': str(e)[:200], 'rejected': True}
         tchk = check_text(tpl, allowed)
