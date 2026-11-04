@@ -13,9 +13,7 @@ LOGO = '<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4v24M8 16 23 6.5
 
 GA = ('<script async src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V"></script>'
       '<script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag(\'js\',new Date());gtag(\'config\',\'G-FJKJE77K4V\');</script>')
-CLARITY = ('<script>if(!window.clarity)(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};'
-           't=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})'
-           '(window,document,"clarity","script","z4eqcmaic7");</script>')
+CLARITY = ''   # 4 Nov 2026: Clarity comes only from Cloudflare Zaraz (project wqn50nb6kp); a second tag crashed it
 
 OG_TITLES = {}
 def ogname(path):
