@@ -329,6 +329,24 @@ textarea:focus{border-color:var(--lagoon);outline:none}
 .invite{margin-top:26px;border-top:1px solid var(--line);padding-top:22px}
 .invite h4{font-family:var(--f-display);font-weight:400;font-size:1.7rem;margin:0 0 6px}
 @media (max-width:700px){.hero-in{padding-top:96px}.offer{padding:14px 0}.years,.film,.cabin,.founders,.transfer,.island,.membership,.week,.apply{padding-top:60px;padding-bottom:60px}}
+
+/* hero film (v4) */
+.hero-film{margin-top:30px;max-width:760px}
+.hf-frame{position:relative;border-radius:18px;overflow:hidden;background:#0b2f36;aspect-ratio:16/9;box-shadow:0 30px 80px rgba(0,0,0,.45);border:1px solid rgba(255,255,255,.14)}
+.hf-frame video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.hf-sound{position:absolute;right:14px;top:14px;display:inline-flex;align-items:center;gap:10px;border:0;cursor:pointer;background:rgba(255,255,255,.94);color:#0e3a42;font:600 .95rem/1 var(--f-body,inherit);padding:12px 18px 12px 14px;border-radius:999px;box-shadow:0 6px 20px rgba(0,0,0,.25);transition:transform .2s ease}
+.hf-sound:hover{transform:translateY(-1px)}
+.hf-ic{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:#c8102e;color:#fff;font-size:.7rem;padding-left:2px}
+.hf-frame.on .hf-sound{background:rgba(14,58,66,.72);color:#fff;padding:10px 14px}
+.hf-end{position:absolute;right:14px;bottom:14px;background:#c8102e;color:#fff;text-decoration:none;font-weight:700;padding:12px 18px;border-radius:999px;box-shadow:0 6px 20px rgba(0,0,0,.3)}
+.hf-cap{margin:10px 2px 0;font-family:var(--f-mono,monospace);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:rgba(255,255,255,.7)}
+@media (min-width:1100px){
+  .hero-in{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px;align-items:end}
+  .hero h1{font-size:clamp(2.7rem,5.2vw,5.2rem)}
+  .hero-film{margin:0;align-self:center}
+}
+@media (max-width:1099px){.hero-in{display:flex;flex-direction:column}.hero-txt{display:contents}.hero-txt>*{order:5}.hero .eyebrow{order:1}.hero h1{order:2}.hero .lede{order:3}.hero-film{order:4;margin:4px 0 26px}}
+@media (max-width:700px){.hero-film{margin-top:24px}.hf-sound{right:10px;top:10px;font-size:.78rem;padding:7px 12px 7px 7px;gap:7px}.hf-ic{width:22px;height:22px}.hf-end{right:10px;bottom:10px;font-size:.85rem;padding:10px 14px}}
 </style>
 </head>
 <body>
@@ -343,6 +361,7 @@ textarea:focus{border-color:var(--lagoon);outline:none}
   <picture><source media="(max-width:700px)" srcset="/img/ocean-768.webp"><img class="hero-bg" src="/img/ocean-1376.webp" alt="" fetchpriority="high" width="1376" height="768"></picture>
   <div class="hero-shade"></div>
   <div class="hero-in wrap">
+   <div class="hero-txt">
     <p class="eyebrow"><span class="dot"></span>Main partner: La Clinique Swiss · Karimunjawa, the Maldives of Indonesia</p>
     <h1>Put your name in the history <em>of longevity.</em></h1>
     <p class="lede">Your week on Longevity Island, every year, for life, for two. With the complete La Clinique Swiss laboratory programme included, free for members.</p>
@@ -363,6 +382,15 @@ textarea:focus{border-color:var(--lagoon);outline:none}
     </div>
     <p class="wx" id="wx" hidden></p>
     <p class="fine">By application · 65 places per country* · opening estimated 2028 · nothing is charged to apply. *May be expanded if the study requires it.</p>
+   </div>
+   <div class="hero-film">
+    <div class="hf-frame">
+      <video id="hfv" muted playsinline loop preload="none" poster="https://oykcsmextclpdnugixqz.supabase.co/storage/v1/object/public/li-media/film/v1/li-film-poster.webp" aria-label="Longevity Island, the film. 1 minute, with narration." data-src-hd="https://oykcsmextclpdnugixqz.supabase.co/storage/v1/object/public/li-media/film/v1/li-film-720.mp4" data-src-sd="https://oykcsmextclpdnugixqz.supabase.co/storage/v1/object/public/li-media/film/v1/li-film-540.mp4"></video>
+      <button class="hf-sound" id="hfs" type="button"><span class="hf-ic" aria-hidden="true">▶</span> <span class="hf-t">Watch with sound · 1 min</span></button>
+      <a class="hf-end" id="hfe" href="#apply" data-cta="film" hidden>Apply for your place <span aria-hidden="true">→</span></a>
+    </div>
+    <p class="hf-cap">The film · Longevity Island with La Clinique Swiss</p>
+   </div>
   </div>
 </header>
 
@@ -902,6 +930,29 @@ textarea:focus{border-color:var(--lagoon);outline:none}
       .catch(function(){ err(o, 'We could not save this just now. Please try again.'); })
       .finally(function(){ $('sbi').disabled = false; });
   });
+
+  // hero film (v4): load after the page, muted autoplay, tap for sound
+  (function(){
+    var v = document.getElementById('hfv'), bt = document.getElementById('hfs'), en = document.getElementById('hfe');
+    if (!v || !bt) return;
+    var fr = v.parentNode, rm = window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var sd = (navigator.connection && navigator.connection.saveData) || window.innerWidth < 700;
+    function src(){ if (!v.src) { v.src = sd ? v.getAttribute('data-src-sd') : v.getAttribute('data-src-hd'); } }
+    function start(){ if (rm) return; src(); var p = v.play(); if (p && p.catch) p.catch(function(){}); }
+    if (document.readyState === 'complete') setTimeout(start, 400); else window.addEventListener('load', function(){ setTimeout(start, 400); });
+    bt.addEventListener('click', function(){
+      src();
+      if (v.muted || v.paused) {
+        v.muted = false; v.loop = false; if (!fr.classList.contains('on')) v.currentTime = 0;
+        var p = v.play(); if (p && p.catch) p.catch(function(){});
+        fr.classList.add('on'); bt.querySelector('.hf-t').textContent = 'Pause'; bt.querySelector('.hf-ic').textContent = '❚❚';
+        en.hidden = true; fb('ViewContent', {content_name:'hero_film_sound'});
+      } else {
+        v.pause(); bt.querySelector('.hf-t').textContent = 'Play'; bt.querySelector('.hf-ic').textContent = '▶';
+      }
+    });
+    v.addEventListener('ended', function(){ en.hidden = false; bt.querySelector('.hf-t').textContent = 'Watch again'; bt.querySelector('.hf-ic').textContent = '▶'; v.muted = true; fb('ViewContent', {content_name:'hero_film_complete'}); });
+  })();
 })();
 
 </script>
