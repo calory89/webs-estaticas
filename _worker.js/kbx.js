@@ -20,7 +20,13 @@ import * as q from './kbx_q.js'; // people: company graph, court records, myster
 import * as r from './kbx_r.js'; // change: visual diffs, image authenticity, price index
 import * as s from './kbx_s.js'; // private AI: in-browser contract reader, legal citations, permit QR
 import * as t from './kbx_t.js'; // network: signed buyer reports, offline visit app, webhooks, Lighthouse CI
-const MODS = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t];
+import * as u from './kbx_u.js'; // land and climate: climate scenarios, protected land, night lights, stalled sites
+import * as v from './kbx_v.js'; // market statistics: delay index, on-time odds, monthly press release
+import * as w from './kbx_w.js'; // registers: global company graph (GLEIF), insolvency watch, agent licence check
+import * as x from './kbx_x.js'; // money tools: price below build cost, currency risk, late-handover compensation
+import * as y from './kbx_y.js'; // AI follow-up: promise tracker, natural-language alerts, developer questions
+import * as z from './kbx_z.js'; // evidence and partners: court-ready case file, Internet Archive copies, risk feed for banks and insurers
+const MODS = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z];
 export async function route(req, u, env, ctx) {
   for (const m of MODS) if (m.PATHS && m.PATHS.test(u.pathname)) return m.handle(req, u, env, ctx);
   return new Response(JSON.stringify({ error: 'not found' }), { status: 404, headers: { 'content-type': 'application/json' } });
