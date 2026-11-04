@@ -1,0 +1,14 @@
+{
+ "runs": [
+  {
+   "day": "2026-11-04",
+   "usd": 0.2611,
+   "haiku_calls": 41,
+   "sonnet_calls": 0,
+   "tokens_in": 52897,
+   "tokens_out": 41637,
+   "errors": 0
+  }
+ ],
+ "total_usd": 0.2611
+}
