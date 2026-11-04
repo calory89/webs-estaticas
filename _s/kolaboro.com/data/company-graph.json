@@ -1,7 +1,7 @@
 {
  "version": "company-graph-1",
- "updated": "2026-11-03",
- "generated_at": "2026-11-03T22:49:41Z",
+ "updated": "2026-11-04",
+ "generated_at": "2026-11-04T13:15:03Z",
  "register": {
   "name": "Companies House (United Kingdom)",
   "url": "https://find-and-update.company-information.service.gov.uk",
@@ -21,13 +21,13 @@
   "officers_truncated": 7,
   "network_companies": 1253,
   "projects_with_graph": 17,
-  "requests": 311,
-  "retries": 0
+  "requests": 312,
+  "retries": 1
  },
  "complete": true,
  "archive": {
-  "lines": 311,
-  "root": "af9ab7154e3cc7f6f0f6ae8f46d9a1c07946636f7d78b90ee640e77e783abe23",
+  "lines": 312,
+  "root": "5cf911826f2162405794506c717a7a0950fa6af7bab38d6320234bfde5747ae5",
   "line_format": "sha256 time kind (kind replaces the URL, which would identify a company)"
  },
  "method": [
@@ -2402,6 +2402,13 @@
      "short_lived": true
     },
     {
+     "id": "X10",
+     "type": "company",
+     "role": "other",
+     "status": "dissolved",
+     "short_lived": true
+    },
+    {
      "id": "ADA",
      "type": "group",
      "status": "active",
@@ -2412,8 +2419,8 @@
      "id": "ADB",
      "type": "group",
      "status": "active",
-     "count": 29,
-     "label": "29 active companies"
+     "count": 28,
+     "label": "28 active companies"
     },
     {
      "id": "ADC",
@@ -2495,6 +2502,11 @@
      "type": "director (current or past)"
     },
     {
+     "s": "DB",
+     "t": "X10",
+     "type": "director (current or past)"
+    },
+    {
      "s": "DA",
      "t": "ADA",
      "type": "director (current or past)"
@@ -2511,10 +2523,10 @@
     }
    ],
    "network": {
-    "active": 38,
-    "dissolved": 9,
-    "dissolved_within_2y": 4,
-    "dissolved_last_5y": 9,
+    "active": 37,
+    "dissolved": 10,
+    "dissolved_within_2y": 5,
+    "dissolved_last_5y": 10,
     "insolvency": 0,
     "strike-off proposed": 0,
     "other": 0
@@ -2522,7 +2534,7 @@
    "directors": 3,
    "summary": [
     "1 of 1 named company matched exactly one company on Companies House.",
-    "Its 3 current directors have been directors (now or in the past) of 47 other UK companies: 38 active, 9 dissolved (4 of them within 2 years of incorporation), 0 in liquidation, administration or receivership.",
+    "Its 3 current directors have been directors (now or in the past) of 47 other UK companies: 37 active, 10 dissolved (5 of them within 2 years of incorporation), 0 in liquidation, administration or receivership.",
     "Director A of the developing company has been a director of 2 companies dissolved within 2 years of incorporation."
    ],
    "partial": false,
