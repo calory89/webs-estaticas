@@ -1,6 +1,19 @@
 {
  "deploys": [
   {
+   "at": "2026-11-04T06:20:40Z",
+   "commit": "02841099da1e57be0c79a7993a5ff7fc14ef6f07",
+   "checks_passed": 32,
+   "checks_total": 32,
+   "failed": [],
+   "run": "https://github.com/calory89/webs-estaticas/actions/runs/41784485076",
+   "result": "pass",
+   "wait_s": 161,
+   "changes": [
+    "02841099da1e"
+   ]
+  },
+  {
    "at": "2026-11-04T06:15:55Z",
    "commit": "03a4c8662c47d2fb483d4f0e509a808a6ee6699b",
    "checks_passed": 32,
@@ -582,13 +595,13 @@
  "canary": "Cloudflare Pages sends each push to all visitors at once and offers no percentage canary, so none is claimed. A bad push can be visible for a few minutes until the rollback is live.",
  "rollback_mode": "Rollback: a git commit restoring the files changed since the last passing commit; Pages deploys it in about 1 to 2 minutes. An instant Cloudflare API rollback is built in but needs a Pages-scoped token, not configured yet.",
  "latest_checks": {
-  "at": "2026-11-04T06:15:55.423Z",
-  "commit": "03a4c8662c47d2fb483d4f0e509a808a6ee6699b",
+  "at": "2026-11-04T06:20:40.561Z",
+  "commit": "02841099da1e57be0c79a7993a5ff7fc14ef6f07",
   "checks": [
    {
     "name": "build: live commit",
     "ok": true,
-    "detail": "live 03a4c8662c47"
+    "detail": "live 02841099da1e"
    },
    {
     "name": "page /",
@@ -633,7 +646,7 @@
    {
     "name": "page /changelog/",
     "ok": true,
-    "detail": "200, 49760 bytes"
+    "detail": "200, 50764 bytes"
    },
    {
     "name": "page /docs/api/",
@@ -708,7 +721,7 @@
    {
     "name": "browser 1440px /p/BALI-021",
     "ok": true,
-    "detail": "200, no JS errors"
+    "detail": "200, no JS errors, third-party error ignored: Cannot read properties of null (reading 'sequence')"
    },
    {
     "name": "browser 1440px /trust/",
@@ -747,7 +760,7 @@
    }
   ]
  },
- "last_checked": "03a4c8662c47d2fb483d4f0e509a808a6ee6699b",
- "last_good": "03a4c8662c47d2fb483d4f0e509a808a6ee6699b",
- "updated": "2026-11-04T06:15:55Z"
+ "last_checked": "02841099da1e57be0c79a7993a5ff7fc14ef6f07",
+ "last_good": "02841099da1e57be0c79a7993a5ff7fc14ef6f07",
+ "updated": "2026-11-04T06:20:40Z"
 }
