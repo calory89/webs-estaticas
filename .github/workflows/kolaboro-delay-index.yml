@@ -1,0 +1,74 @@
+name: Kolaboro delay index
+# Delivery-delay index by market, on-time odds per project id and the monthly press release (block V).
+# Rebuilt daily from the public /data/bali-cases.json so the in-browser check matches; one snapshot is frozen per month;
+# the press release is regenerated on the first run of each month, on push and on manual dispatch. AI drafts one paragraph only.
+on:
+  schedule:
+    - cron: '7 3 1 * *'     # monthly: first day of the month (snapshot and press release)
+    - cron: '37 16 * * *'   # daily refresh after the research agent's data lands
+  workflow_run:
+    workflows: ['Kolaboro research agent', 'Kolaboro price index']
+    types: [completed]
+  push:
+    branches: [main]
+    paths: ['tools/kolaboro-v/**', '.github/workflows/kolaboro-delay-index.yml']
+  workflow_dispatch:
+    inputs:
+      press:
+        description: "Regenerate this month's press release (yes/no)"
+        default: "no"
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-delay-index
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: tools/kolaboro-v
+      - name: Build
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          set -e
+          git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          I=$RUNNER_TEMP/in; O=$RUNNER_TEMP/out; mkdir -p $I $O
+          K=_s/kolaboro.com
+          git show FETCH_HEAD:$K/data/bali-cases.json > $I/cases.json
+          git show FETCH_HEAD:$K/data/price-index.json > $I/prices.json || true
+          git show FETCH_HEAD:$K/data/delay-index.json > $I/delay.json || true
+          git show FETCH_HEAD:$K/data/on-time.json > $I/ontime.json || true
+          git show FETCH_HEAD:$K/press/monthly/release.json > $I/release.json || true
+          git show FETCH_HEAD:$K/press/monthly/index.html > $I/page.html || true
+          F=""
+          if [ "${{ github.event_name }}" = "push" ] || [ "${{ github.event.inputs.press }}" = "yes" ]; then F="--force-press"; fi
+          python3 tools/kolaboro-v/delay_index.py --cases $I/cases.json --prices $I/prices.json --prev-delay $I/delay.json --prev-ontime $I/ontime.json \
+            --prev-release $I/release.json --template $I/page.html --out $O $F | tee $RUNNER_TEMP/summary.json
+          echo "### Delay index" >> $GITHUB_STEP_SUMMARY; cat $RUNNER_TEMP/summary.json >> $GITHUB_STEP_SUMMARY
+      - name: Publish to kolaboro.com
+        run: |
+          set -e
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          O=$RUNNER_TEMP/out; K=_s/kolaboro.com
+          git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          for i in 1 2 3 4 5; do
+            P=$(git rev-parse FETCH_HEAD)
+            export GIT_INDEX_FILE=$RUNNER_TEMP/idx; rm -f $GIT_INDEX_FILE; git read-tree $P
+            for f in delay-index.json on-time.json; do
+              H=$(git hash-object -w "$O/$f"); git update-index --add --cacheinfo 100644,$H,$K/data/$f
+            done
+            for f in index.html release.json release.txt chart-delays.svg chart-months-late.svg chart-transparency.svg; do
+              [ -f "$O/press/$f" ] || continue
+              H=$(git hash-object -w "$O/press/$f"); git update-index --add --cacheinfo 100644,$H,$K/press/monthly/$f
+            done
+            T=$(git write-tree); unset GIT_INDEX_FILE
+            [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
+            C=$(git commit-tree $T -p $P -m "kolaboro.com: delay index and on-time odds $(date -u +%F)")
+            git push -q origin $C:refs/heads/pub/_lovable && exit 0
+            sleep 5; git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          done; exit 1
