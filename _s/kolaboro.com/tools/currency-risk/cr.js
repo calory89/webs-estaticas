@@ -72,7 +72,17 @@
     if (!window.fetch) { setSrc('Type today\'s rate from your bank.'); return; }
     setSrc('Asking for the ' + pc + ' to ' + hc + ' reference rate...');
     var urls = ['https://api.frankfurter.dev/v1/latest?from=' + pc + '&to=' + hc, 'https://api.frankfurter.app/latest?from=' + pc + '&to=' + hc];
+    var via = 'Frankfurter';
+    function ours(){   // our own ECB relay first (it also covers AED through the USD peg); Frankfurter only if it fails
+      var cs = [pc, hc].filter(function(c){ return c !== 'EUR'; }).join(','), from = new Date(Date.now() - 14 * 864e5).toISOString().slice(0, 10);
+      return fetch('/api/x/x/fx?c=' + cs + '&from=' + from).then(function(r){ if (!r.ok) throw new Error('http'); return r.json(); }).then(function(j){
+        var n = j.dates.length - 1, per = function(c){ return c === 'EUR' ? 1 : (j.rates[c] || [])[n]; }, a = per(pc), b = per(hc);
+        if (!(a > 0 && b > 0)) throw new Error('missing');
+        via = 'our ECB relay'; return { v: b / a, date: j.dates[n] };
+      });
+    }
     function attempt(i){
+      if (i === -1) return ours().catch(function(){ return attempt(0); });
       if (i >= urls.length) return Promise.reject(new Error('none'));
       var ctl = window.AbortController ? new AbortController() : null, t = ctl ? setTimeout(function(){ ctl.abort(); }, 6000) : 0;
       return fetch(urls[i], ctl ? { signal: ctl.signal } : {}).then(function(r){
@@ -83,12 +93,12 @@
         return { v: v, date: j.date };
       }).catch(function(e){ clearTimeout(t); if (e && e.message === 'missing') throw e; return attempt(i + 1); });
     }
-    attempt(0).then(function(res){
+    attempt(-1).then(function(res){
       if (seq !== fetchSeq) return;
       if ($('crPC').value !== pc || $('crHC').value !== hc) return;
       if ($('crR').value && !autoRate && !force) return;
       $('crR').value = rateFmt(res.v); autoRate = true;
-      setSrc('Filled from the European Central Bank reference rate of ' + fdate(res.date) + ' via Frankfurter. Check it against your bank and edit if needed.');
+      setSrc('Filled from the European Central Bank reference rate of ' + fdate(res.date) + ' via ' + via + '. Check it against your bank and edit if needed.');
       calc();
     }).catch(function(){
       if (seq !== fetchSeq) return;
