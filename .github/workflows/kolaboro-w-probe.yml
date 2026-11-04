@@ -1,0 +1,18 @@
+name: Kolaboro W probe
+# One-off reachability probe for block W sources (runs only on branch blk4-w-main).
+on:
+  push:
+    branches: [blk4-w-main]
+    paths: ['.github/workflows/kolaboro-w-probe.yml']
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - run: |
+          for u in https://www.dubaipulse.gov.ae/data/dld-registration/dld_brokers-open https://www.dubaipulse.gov.ae/data/dld-registration/dld_real_estate_offices-open https://www.dubaipulse.gov.ae/organisation/dld/service/dld-registration https://api.gleif.org/api/v1/lei-records?page%5Bsize%5D=1 "https://www.thegazette.co.uk/insolvency/notice/data.feed?text=%22limited%22&results-page-size=1" https://www.boe.es/diario_borme/txt.php?id=BORME-A-2026-211-02 https://www.publicidadconcursal.es/ https://rera.karnataka.gov.in/ https://maharera.maharashtra.gov.in/ https://prc.gov.ph/ https://verification.prc.gov.ph/ ; do
+            code=$(curl -sS -m 30 -A "Mozilla/5.0 (KolaboroProbe)" -o /tmp/p.html -w "%{http_code} %{size_download}" "$u" 2>&1 | tail -1); echo "PROBE $code $u"
+            case "$u" in *dubaipulse*) grep -o 'href="[^"]*\(broker\|office\|download\|csv\)[^"]*"' /tmp/p.html | sort -u | head -30;; esac
+          done
