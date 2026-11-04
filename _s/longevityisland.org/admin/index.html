@@ -59,12 +59,14 @@ a{color:var(--lagoon)}
       <input id="q" placeholder="Search name, email, WhatsApp" style="min-width:240px">
       <select id="fc"><option value="">All countries</option></select>
       <select id="fi"><option value="">All interest</option><option value="very">Very interested</option><option value="interested">Interested</option><option value="curious">Curious</option></select>
-      <select id="fs"><option value="">All statuses</option><option>new</option><option>contacted</option><option>accepted</option><option>waitlist</option><option>declined</option></select>
+      <select id="fs"><option value="">All statuses</option><option>new</option><option>review</option><option>shortlisted</option><option>invited</option><option>waitlist</option><option>declined</option></select>
     </div>
     <div class="wrapt"><table><thead><tr>
-      <th data-k="created_at">Date</th><th data-k="name">Name</th><th data-k="age">Age</th><th data-k="country">Country</th><th data-k="interest">Interest</th><th data-k="active">Active</th><th data-k="smoker">Smoker</th><th>Why</th><th>Email</th><th>WhatsApp</th><th data-k="utm_content">Source</th><th data-k="status">Status</th>
+      <th data-k="created_at">Date</th><th data-k="ref">Ref</th><th data-k="name">Name</th><th data-k="age">Age</th><th data-k="country">Country</th><th data-k="interest">Interest</th><th data-k="active">Active</th><th data-k="smoker">Smoker</th><th>Why</th><th>Email</th><th>WhatsApp</th><th data-k="utm_content">Source</th><th data-k="status">Status</th>
     </tr></thead><tbody id="tb"></tbody></table></div>
     <p class="muted" id="empty" hidden>No applications yet.</p>
+    <h2 style="font-family:Gloock,Georgia,serif;font-weight:400;margin:28px 0 8px">Partners added</h2><div class="wrapt"><table style="min-width:700px"><thead><tr><th>Date</th><th>Partner</th><th>WhatsApp</th><th>Email</th><th>With</th><th>Ref</th></tr></thead><tbody id="tbi"></tbody></table></div>
+    <h2 style="font-family:Gloock,Georgia,serif;font-weight:400;margin:28px 0 8px">Started but not finished</h2><p class="muted" style="margin-top:0">Gave name and email in step 1 but did not send step 2.</p><div class="wrapt"><table style="min-width:600px"><thead><tr><th>Date</th><th>Name</th><th>Email</th><th>Country</th></tr></thead><tbody id="tbs"></tbody></table></div>
   </div>
 </div>
 
@@ -72,7 +74,7 @@ a{color:var(--lagoon)}
 (function(){
   var FN = 'https://oykcsmextclpdnugixqz.supabase.co/functions/v1/li-admin';
   var key = ''; try { key = sessionStorage.getItem('li_admin') || ''; } catch(e){}
-  var rows = [], sortK = 'created_at', sortD = -1;
+  var extra = {inc:[],inv:[]}, rows = [], sortK = 'created_at', sortD = -1;
   var $ = function(id){ return document.getElementById(id); };
   var L = { very:'Very interested', interested:'Interested', curious:'Curious', some:'Somewhat', no:'No', quit:'Quit', yes:'Yes' };
   function esc(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){ return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
@@ -83,7 +85,7 @@ a{color:var(--lagoon)}
       if (j._status === 401) { key=''; try{sessionStorage.removeItem('li_admin')}catch(e){} return showLogin('Wrong key.'); }
       if (j._status === 503) return showLogin('The admin key has not been set up yet (secret LI_ADMIN_KEY in Supabase).');
       if (!j.rows) return showLogin('Could not load applications. Try again.');
-      rows = j.rows; $('loginBox').hidden = true; $('app').hidden = false; render();
+      rows = j.rows; extra = { inc: j.incomplete || [], inv: j.invites || [] }; $('loginBox').hidden = true; $('app').hidden = false; render();
     }).catch(function(){ showLogin('Network error. Try again.'); });
   }
   function filtered(){
@@ -99,6 +101,11 @@ a{color:var(--lagoon)}
     $('sub').textContent = rows.length + ' total · updated ' + new Date().toLocaleTimeString();
     $('stats').innerHTML = [['Total', rows.length], ['Last 7 days', week], ['Very interested', ints.very], ['Interested', ints.interested], ['Curious', ints.curious], ['Countries', Object.keys(by).length]].map(function(s){ return '<div class="stat"><span class="muted">'+s[0]+'</span><b>'+s[1]+'</b></div>'; }).join('');
     var cs = Object.keys(by).sort(function(a,b){ return by[b]-by[a]; });
+    var ab = {a:0,b:0}; rows.forEach(function(r){ if (r.cta==='a'||r.cta==='b') ab[r.cta]++; });
+    $('stats').innerHTML += '<div class="stat"><span class="muted">Button A · B</span><b>'+ab.a+' · '+ab.b+'</b></div><div class="stat"><span class="muted">Not finished</span><b>'+extra.inc.length+'</b></div><div class="stat"><span class="muted">Partners added</span><b>'+extra.inv.length+'</b></div>';
+    var d = function(x){ return esc(new Date(x).toLocaleString('en-GB',{dateStyle:'short',timeStyle:'short'})); };
+    $('tbi').innerHTML = extra.inv.map(function(r){ var wa=String(r.phone||'').replace(/[^0-9]/g,''); return '<tr><td>'+d(r.created_at)+'</td><td>'+esc(r.name)+'</td><td>'+(wa?'<a href="https://wa.me/'+wa+'" target="_blank" rel="noopener">'+esc(r.phone)+'</a>':'')+'</td><td>'+esc(r.email||'')+'</td><td>'+esc(r.invited_by||'')+'</td><td class="muted">'+esc(r.ref||'')+'</td></tr>'; }).join('') || '<tr><td colspan="6" class="muted">None yet.</td></tr>';
+    $('tbs').innerHTML = extra.inc.map(function(r){ return '<tr><td>'+d(r.created_at)+'</td><td>'+esc(r.name)+'</td><td><a href="mailto:'+esc(r.email)+'">'+esc(r.email)+'</a></td><td>'+esc(r.country||'')+'</td></tr>'; }).join('') || '<tr><td colspan="4" class="muted">None.</td></tr>';
     $('countries').innerHTML = cs.map(function(c){ return '<span>'+esc(c)+' · '+by[c]+'/65</span>'; }).join('');
     var fc = $('fc'), cur = fc.value; fc.innerHTML = '<option value="">All countries</option>' + cs.map(function(c){ return '<option>'+esc(c)+'</option>'; }).join(''); fc.value = cur;
     var list = filtered();
@@ -106,10 +113,10 @@ a{color:var(--lagoon)}
     $('tb').innerHTML = list.map(function(r){
       var wa = String(r.whatsapp||'').replace(/[^0-9]/g,'');
       var src = [r.utm_source, r.utm_campaign, r.utm_content].filter(Boolean).join(' / ');
-      return '<tr><td>'+esc(new Date(r.created_at).toLocaleString('en-GB',{dateStyle:'short',timeStyle:'short'}))+'</td><td>'+esc(r.name)+'</td><td>'+esc(r.age)+'</td><td>'+esc(r.country)+'</td>'+
+      return '<tr><td>'+esc(new Date(r.created_at).toLocaleString('en-GB',{dateStyle:'short',timeStyle:'short'}))+'</td><td class="muted">'+esc(r.ref||'')+'</td><td>'+esc(r.name)+(r.unsub?' <span class="muted">(no emails)</span>':'')+'</td><td>'+esc(r.age)+'</td><td>'+esc(r.country)+'</td>'+
         '<td><span class="pill '+esc(r.interest)+'">'+esc(L[r.interest]||r.interest)+'</span></td><td>'+esc(L[r.active]||(r.active==='very'?'Very':r.active))+'</td><td>'+esc(L[r.smoker]||r.smoker)+'</td><td style="white-space:normal;min-width:220px;max-width:320px">'+esc(r.why||'')+'</td>'+
         '<td><a href="mailto:'+esc(r.email)+'">'+esc(r.email)+'</a></td><td>'+(wa?'<a href="https://wa.me/'+wa+'" target="_blank" rel="noopener">'+esc(r.whatsapp)+'</a>':'')+'</td><td class="muted">'+esc(src)+'</td>'+
-        '<td><select data-id="'+esc(r.id)+'">'+['new','contacted','accepted','waitlist','declined'].map(function(s){ return '<option'+(s===r.status?' selected':'')+'>'+s+'</option>'; }).join('')+'</select></td></tr>';
+        '<td><select data-id="'+esc(r.id)+'">'+['new','review','shortlisted','invited','waitlist','declined'].map(function(s){ return '<option'+(s===r.status?' selected':'')+'>'+s+'</option>'; }).join('')+'</select></td></tr>';
     }).join('');
   }
   $('tb').addEventListener('change', function(e){
@@ -121,7 +128,7 @@ a{color:var(--lagoon)}
   $('reload').onclick = load;
   $('out').onclick = function(){ key=''; try{sessionStorage.removeItem('li_admin')}catch(e){} showLogin(''); };
   $('csv').onclick = function(){
-    var cols = ['created_at','name','age','country','interest','active','smoker','why','email','whatsapp','status','utm_source','utm_campaign','utm_content'];
+    var cols = ['created_at','ref','name','age','country','interest','active','smoker','why','email','whatsapp','status','cta','utm_source','utm_campaign','utm_content'];
     var lines = [cols.join(',')].concat(filtered().map(function(r){ return cols.map(function(c){ return '"' + String(r[c]==null?'':r[c]).replace(/"/g,'""') + '"'; }).join(','); }));
     var a = document.createElement('a'); a.href = URL.createObjectURL(new Blob(['﻿' + lines.join('\n')], {type:'text/csv'})); a.download = 'longevity-island-applications.csv'; a.click();
   };
