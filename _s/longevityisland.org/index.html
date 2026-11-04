@@ -626,9 +626,9 @@ textarea:focus{border-color:var(--lagoon);outline:none}
     <div class="done" id="done" hidden tabindex="-1">
       <p class="kicker">Application received · <span id="refTxt"></span></p>
       <h3 id="doneH">Thank you for applying.</h3>
-      <p id="doneP">We have received your application and we will contact you soon.</p>
+      <p id="doneP">We have received your application. Please check your email: your personal dossier is on its way. We will review your application and contact you.</p>
       <div class="done-btns"><button class="btn btn-red" type="button" id="dl">Download your dossier <span aria-hidden="true">↓</span></button><a class="btn btn-ghost dark" id="stLink" href="/status/">Your application status</a></div>
-      <ol class="next"><li>We review your application within 48 hours.</li><li>We contact you by email or WhatsApp.</li><li>Nothing is charged until you sign and the 14-day cooling-off period has passed.</li></ol>
+      <ol class="next"><li><strong>Check your email now:</strong> your personal dossier is waiting for you.</li><li>We review your application within 48 hours.</li><li>We contact you by email or WhatsApp.</li><li>Nothing is charged until you sign and the 14-day cooling-off period has passed.</li></ol>
       <div class="invite">
         <p class="kicker">The membership is for two</p>
         <h4>Invite your partner to apply</h4>
@@ -692,6 +692,7 @@ textarea:focus{border-color:var(--lagoon);outline:none}
   var LS = { get:function(k){ try { return localStorage.getItem(k); } catch(e){ return null; } }, set:function(k,v){ try { localStorage.setItem(k,v); } catch(e){} }, del:function(k){ try { localStorage.removeItem(k); } catch(e){} } };
   var attr = {};
   try { var q = new URLSearchParams(location.search); ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid'].forEach(function(k){ var v = q.get(k); if (v) attr[k] = v.slice(0,200); }); } catch(e){}
+  try { var K = 'li_attr', old = JSON.parse(localStorage.getItem(K) || 'null'); if (Object.keys(attr).length) { attr.landed_at = new Date().toISOString(); localStorage.setItem(K, JSON.stringify(attr)); } else if (old && Date.now() - Date.parse(old.landed_at || 0) < 30*864e5) { attr = old; } } catch(e){}
 
   // consent-gated Meta pixel
   function loadPixel(){
@@ -857,7 +858,7 @@ textarea:focus{border-color:var(--lagoon);outline:none}
     var ref = refCode();
     $('refTxt').textContent = ref;
     $('doneH').textContent = 'Thank you for applying, ' + first() + '.';
-    $('doneP').textContent = (LIVE ? '' : 'Preview only: on the live site this is saved. ') + 'We have received your application for ' + lead.country + ' and we will contact you soon. Your personal dossier is on its way to ' + lead.email + '.';
+    $('doneP').textContent = (LIVE ? '' : 'Preview only: on the live site this is saved. ') + 'We have received your application for ' + lead.country + '. Please check your email now: your personal dossier is on its way to ' + lead.email + ' (if it is not there in a few minutes, look in spam or promotions). We will review your application and contact you.';
     $('stLink').href = '/status/?t=' + encodeURIComponent(token);
     var share = 'I have just applied to Longevity Island, a members’ island with La Clinique Swiss. The membership is for two, so I would love you to come with me: ' + location.origin + '/?utm_source=partner_invite';
     $('waShare').href = 'https://wa.me/?text=' + encodeURIComponent(share);
