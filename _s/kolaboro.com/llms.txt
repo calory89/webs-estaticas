@@ -109,6 +109,7 @@
 - [Late handover: contract clause and the law, with articles cited](https://kolaboro.com/tools/late-handover/)
 - [Court-ready evidence bundle for any project id, with an offline checker](https://kolaboro.com/court-file/)
 - [Risk feed for banks and insurers: signed, paginated, JSON Schema, sandbox key](https://kolaboro.com/docs/partners/)
+- [Kolaboro in German, French, Russian, Dutch, Arabic and Chinese (translations; the English page prevails)](https://kolaboro.com/de/check/)
 - [Open-source verifiers, scoring rules and transparency index (MIT), with CI that checks they match the live site](https://github.com/calory89/kolaboro-open)
 - [Natural hazards at any plot: six open sources read live (elevation, flood model, earthquakes, tsunami run-ups, volcanoes, coastline), each with its query and limits; zoning guide for Indonesia, no zone guessed](https://kolaboro.com/hazards/)
 - [Company graph: UK projects matched on Companies House, their directors' other companies, anonymised; exact-name court search](https://kolaboro.com/graph/)
