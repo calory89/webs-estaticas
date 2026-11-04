@@ -318,6 +318,7 @@ footer{padding:40px 0 48px;font-size:.9rem;color:var(--muted)}
 .fe{font-size:.85rem;color:var(--hivis-ink);font-weight:600;min-height:0}
 .f input[aria-invalid=true],.f textarea[aria-invalid=true]{border-color:var(--hivis-ink)}
 .hp{position:absolute!important;left:-5000px!important;width:1px;height:1px;overflow:hidden}
+[dir=rtl] .hp{left:auto!important;right:-5000px!important}
 .quiz{display:none;gap:14px;border:2px dashed #B9B7AF;border-radius:16px;padding:16px}
 .quiz.on{display:grid}
 .quiz legend{font-weight:700;padding:0 6px}
