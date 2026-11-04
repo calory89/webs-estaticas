@@ -155844,6 +155844,510 @@
    "added": "2026-11-03",
    "found_by": "discover-agent",
    "slug": "ins-lita-m-rida"
+  },
+  {
+   "name": "Luxury Gated Villa Development, Baie Lazare (project name not published)",
+   "developer": null,
+   "area": "Baie Lazare, Mahé",
+   "country": "Seychelles",
+   "market": "Seychelles",
+   "stage": "off-plan",
+   "url": "https://www.remax-paradise-seychelles.com/baie-lazare-central-villa-for-sale-2499697",
+   "docs_url": "https://s3.entegral.net/files/10617/Villa%20Georgette-ac284ccb6f9e4370a5c495df111f7133.pdf",
+   "permit_number": null,
+   "seed": {
+    "price": 990000,
+    "currency": "USD",
+    "title": "freehold",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 35,
+    "payment_plan": "Payment plans advertised, terms not published"
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Only 35 homes, sold with land on full freehold title",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.remax-paradise-seychelles.com/baie-lazare-central-villa-for-sale-2499697"
+    },
+    {
+     "claim": "Short-term rental dispensation in place on all villas",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.remax-paradise-seychelles.com/baie-lazare-central-villa-for-sale-2499697"
+    },
+    {
+     "claim": "Purchase qualifies buyer for Seychelles residency",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.remax-paradise-seychelles.com/baie-lazare-central-villa-for-sale-2499697"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "construction_start": null,
+    "handover_promised": "12 month construction lead time (no calendar date)",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "Villa Jane 2 bed",
+     "Villa Anna 3 bed",
+     "Villa Georgette 4 bed"
+    ],
+    "size_min_m2": 140,
+    "size_max_m2": 350,
+    "price_min": 990000,
+    "price_max": 2100000,
+    "deposit_pct": null,
+    "foreign_ownership": "Freehold title advertised, residence application support included. Government sanction for foreign buyers not mentioned on the page.",
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Incomplete entry. I found only the agent listing (RE/MAX Paradise Seychelles), which describes a 35-villa off-plan estate beside Four Seasons and Kempinski. The developer and the project's own page were not identified, and I could not complete the 4-project set (Albizya Bay is finished, La Réserve villas not confirmed for sale). Sizes are living area under roof, and price_max is the 'from' price of the largest villa type.",
+   "positives": [
+    "Three villa types with published starting prices",
+    "Price stated to include land, construction, turnkey finishing and landscaping"
+   ],
+   "flags": [],
+   "sources": [
+    "https://s3.entegral.net/files/10617/Villa%20Georgette-ac284ccb6f9e4370a5c495df111f7133.pdf",
+    "https://www.remax-paradise-seychelles.com/",
+    "https://www.remax-paradise-seychelles.com/baie-lazare-central-villa-for-sale-2499697"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-04",
+   "found_by": "discover-agent",
+   "slug": "luxury-gated-villa-development-baie-lazare-project-name-not"
+  },
+  {
+   "name": "Villa Tambra Residence",
+   "developer": "Boavista Real Estate (Boavistare)",
+   "area": "Estoril, Sal Rei, Boa Vista",
+   "country": "Cape Verde",
+   "market": "Cape Verde",
+   "stage": "under construction",
+   "url": "https://www.boavistare.com/en/pages/237-villa-tambra-residence",
+   "docs_url": "https://www.boavistare.com/en/pages/237-villa-tambra-residence",
+   "permit_number": null,
+   "seed": {
+    "price": 195000,
+    "currency": "EUR",
+    "title": "Villa Tambra Type B (KatlantiK listing, lowest price seen)",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": 5,
+    "completion": "2025 (agent page, not updated)",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": "Developer site lists sold-out projects: LAGOON Villas, LAGOON Apartments, Cà Daniela (stated ready for delivery), Cà Jasmine, Beach House",
+    "units": 12,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "developer",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Under construction, completion expected 2025, units available, freehold",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.belalgarve.com/en/villa-tambra-residence-modern-villas-for-sale-in-sal-rei-boa-vista/"
+    },
+    {
+     "claim": "About 5% annual rental return and fully managed (agent wording, not guaranteed)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.nh21investment.com/listings/villa-tambra-boavista-sal-rei-p510/"
+    },
+    {
+     "claim": "12 villas under construction near Estoril Beach",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.nh21investment.com/listings/villa-tambra-boavista-sal-rei-p510/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "construction_start": null,
+    "handover_promised": "2025 (per Belalgarve; may be out of date)",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "3-bed villa with private pool"
+    ],
+    "size_min_m2": 126,
+    "size_max_m2": null,
+    "price_min": 195000,
+    "price_max": 295000,
+    "deposit_pct": null,
+    "foreign_ownership": "Freehold (per Belalgarve)",
+    "rental_programme": "Agent NH21 mentions about 5% rental return, managed property, minimum 3 weeks personal use per year",
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Developer page shows masterplan and floor plan images but no price, permit number, escrow or construction progress. Agent prices differ (KatlantiK 195k to 205k, NH21 228k, Belalgarve 255k to 295k) and the 2025 completion date has passed, so current build status needs checking.",
+   "positives": [
+    "Developer page publishes masterplan and floor plan images",
+    "Developer has other projects marked sold out on its site"
+   ],
+   "flags": [],
+   "sources": [
+    "https://www.belalgarve.com/en/villa-tambra-residence-modern-villas-for-sale-in-sal-rei-boa-vista/",
+    "https://www.boavistare.com/en/pages/237-villa-tambra-residence",
+    "https://www.boavistare.com/en/pages/4-real-estates",
+    "https://www.katlantik.com/real-estate-sale-boa-vista/villas-sale-boa-vista-cape-verde",
+    "https://www.nh21investment.com/listings/villa-tambra-boavista-sal-rei-p510/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-04",
+   "found_by": "discover-agent",
+   "slug": "villa-tambra-residence-cape-verde"
+  },
+  {
+   "name": "Cà Beba",
+   "developer": "Not confirmed (the Boavistare page 'Cà Debora' carries a Ca' Beba label, but it does not name the project clearly)",
+   "area": "Sal Rei, Boa Vista",
+   "country": "Cape Verde",
+   "market": "Cape Verde",
+   "stage": "under construction",
+   "url": "https://www.belalgarve.com/en/ca-beba-exclusive-apartments-near-beach-boa-vista-island/",
+   "docs_url": "https://www.belalgarve.com/en/ca-beba-exclusive-apartments-near-beach-boa-vista-island/",
+   "permit_number": null,
+   "seed": {
+    "price": 220000,
+    "currency": "EUR",
+    "title": "Cà Beba T2 apartment (from)",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Under construction, delivery expected 2027, six residential floors plus a shared leisure level",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.belalgarve.com/en/ca-beba-exclusive-apartments-near-beach-boa-vista-island/"
+    },
+    {
+     "claim": "Off-plan prices from 220,000 to 430,000 EUR; several units already reserved or sold",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.belalgarve.com/en/ca-beba-exclusive-apartments-near-beach-boa-vista-island/"
+    },
+    {
+     "claim": "Top floor has three penthouses; project under construction",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.katlantik.com/ca-beba-boa-vista-cape-verde"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "construction_start": null,
+    "handover_promised": "2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "T2 apartment",
+     "T2 penthouse"
+    ],
+    "size_min_m2": 96.5,
+    "size_max_m2": 209.1,
+    "price_min": 220000,
+    "price_max": 430000,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Marketed by Belalgarve and KatlantiK as under construction with 2027 delivery. I could not confirm the developer or find a developer page that names Cà Beba, so the url is an agent page.",
+   "positives": [
+    "Two independent agents describe the same project, location and build status"
+   ],
+   "flags": [],
+   "sources": [
+    "https://www.belalgarve.com/en/ca-beba-exclusive-apartments-near-beach-boa-vista-island/",
+    "https://www.boavistare.com/en/pages/226-ca-debora",
+    "https://www.boavistare.com/en/pages/4-real-estates",
+    "https://www.katlantik.com/ca-beba-boa-vista-cape-verde"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-04",
+   "found_by": "discover-agent",
+   "slug": "c-beba-cape-verde"
+  },
+  {
+   "name": "Marco Polo Condominium",
+   "developer": null,
+   "area": "Santa Maria, Sal",
+   "country": "Cape Verde",
+   "market": "Cape Verde",
+   "stage": "under construction",
+   "url": "https://www.oceanproperty24.com/cape-verde-real-estate-market-why-sal-and-santa-maria-are-growing-hotspots/",
+   "docs_url": "https://www.oceanproperty24.com/cape-verde-real-estate-market-why-sal-and-santa-maria-are-growing-hotspots/",
+   "permit_number": null,
+   "seed": {
+    "price": 130000,
+    "currency": "EUR",
+    "title": "New Apartment for Sale Under Construction, Marco Polo Condominium",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Apartments under construction in the brand-new Marco Polo Condominium, from 130,000 EUR",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.oceanproperty24.com/cape-verde-real-estate-market-why-sal-and-santa-maria-are-growing-hotspots/"
+    },
+    {
+     "claim": "A studio in the same condominium is also listed by the agent (negotiation in progress)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.oceanproperty24.com/state/sal-island-cape-verde/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartment",
+     "studio"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 130000,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Only agent (Ocean Property) listings found, seen as search snippets, and the listing pages were not opened. I found no developer page, so developer and handover are unknown. The 130,000 EUR listing was about a year old when indexed, so check current availability.",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.oceanproperty24.com/cape-verde-real-estate-market-why-sal-and-santa-maria-are-growing-hotspots/",
+    "https://www.oceanproperty24.com/state/sal-island-cape-verde/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-04",
+   "found_by": "discover-agent",
+   "slug": "marco-polo-condominium-cape-verde"
+  },
+  {
+   "name": "IDRA",
+   "developer": null,
+   "area": "Praia Antonio Sousa, Santa Maria, Sal",
+   "country": "Cape Verde",
+   "market": "Cape Verde",
+   "stage": "under construction",
+   "url": "https://www.oceanproperty24.com/properties/new-project-alert-idra/",
+   "docs_url": "https://www.oceanproperty24.com/properties/new-project-alert-idra/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": "IDRA new apartments, last units available",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "April 2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 19,
+    "payment_plan": "Flexible payment in instalments available (terms not published)"
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "19 units, construction start 2025, completion April 2027, last units available",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.oceanproperty24.com/properties/new-project-alert-idra/"
+    },
+    {
+     "claim": "Elevator, rooftop terrace with shared pool and solarium, 3 minutes on foot from Angulo's Beach",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.oceanproperty24.com/properties/new-project-alert-idra/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "construction_start": "2025",
+    "handover_promised": "April 2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Seen only on the Ocean Property agent page, which says construction started in 2025 but still uses 'soon to be built' wording, so build status is unconfirmed. No developer page was found, and no price or progress is published.",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.oceanproperty24.com/properties/new-project-alert-idra/",
+    "https://www.oceanproperty24.com/state/sal-island-cape-verde/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-04",
+   "found_by": "discover-agent",
+   "slug": "idra-cape-verde"
   }
  ]
 }

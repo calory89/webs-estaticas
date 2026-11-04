@@ -95,5 +95,27 @@
   ],
   "all_six": 0,
   "verified_4plus": 0
+ },
+ {
+  "date": "2026-11-04",
+  "calls": 2,
+  "usd": 2.231,
+  "searches": 12,
+  "added": 5,
+  "rejected": {},
+  "markets": [
+   "Seychelles",
+   "Cape Verde"
+  ],
+  "model": "claude-sonnet-5-5",
+  "added_slugs": [
+   "luxury-gated-villa-development-baie-lazare-project-name-not",
+   "villa-tambra-residence-cape-verde",
+   "c-beba-cape-verde",
+   "marco-polo-condominium-cape-verde",
+   "idra-cape-verde"
+  ],
+  "all_six": 0,
+  "verified_4plus": 0
  }
 ]
