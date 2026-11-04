@@ -28,6 +28,7 @@
 <link rel="stylesheet" href="/satellite/plot/vendor/leaflet-1.9.4.css">
 <link rel="stylesheet" href="/satellite/plot/plot.css?v=b9f0fac1da">
 <link rel="stylesheet" href="/hazards/hz.css?v=7fe3a99cc2">
+<link rel="stylesheet" href="/hazards/hzu.css?v=507826eabb">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -70,6 +71,8 @@
 <p class="pl-status" id="hzstatus" aria-live="polite">Drop a pin to start.</p>
 <div class="hz-grid" id="hzgrid" hidden></div>
 <p class="pl-small" id="hzmeta"></p>
+<h3 class="hz-h3" id="hzuh" hidden>Climate scenarios and protected land, same pin</h3>
+<div class="hz-grid" id="hzu" hidden></div>
 </div></section>
 
 <section class="st-sec" id="zoning" aria-labelledby="h-zone"><div class="wrap">
@@ -109,18 +112,24 @@
   <li>Tsunami: <a href="https://www.ngdc.noaa.gov/hazard/tsu_db.shtml">NOAA NCEI Global Historical Tsunami Database</a>, run-ups within 50 km.</li>
   <li>Volcanoes: <a href="https://volcano.si.edu/">Smithsonian Global Volcanism Program</a>, Holocene volcanoes within 100 km.</li>
   <li>Coast: <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> coastline within 10 km, via the Overpass API. When no Overpass server answers, a coarse fallback: the <a href="https://www.naturalearthdata.com/about/terms-of-use/">Natural Earth</a> 1:10m land outline (public domain), shown only in bands and labelled as such.</li>
+  <li>Climate scenarios: the same <a href="https://www.wri.org/data/aqueduct-floods-hazard-maps">WRI Aqueduct Floods v2</a> model run for 2030 and 2050 under RCP4.5 and RCP8.5. River: five climate models (GFDL-ESM2M, HadGEM2-ES, IPSL-CM5A-LR, MIROC-ESM-CHEM, NorESM1-M), shown as median and range. Coast: 50th and 95th percentile sea level rise, without subsidence. 30 files read per pin, one row strip each.</li>
+  <li>Protected land: <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> national parks, nature reserves, protected areas and mangrove wetlands within 1 km, read from <a href="https://openfreemap.org/">OpenFreeMap</a> vector tiles (zoom 14). We tried the Overpass API first; on 4 Nov 2026 every public server failed or timed out from our worker, while the tiles answer from a CDN.</li>
+  <li>Mangroves: <a href="https://zenodo.org/records/6894273">Global Mangrove Watch v3.0, 2020 extent</a> (CC BY 4.0), reduced by us to cells of about 220 m that contain any mangrove pixel and published as 16 small binary files under /data/mangroves/.</li>
  </ul></div>
  <div><h3>What we left out, and why</h3><ul>
   <li>JRC global river flood maps: published as download tiles with no point query service, so we read Aqueduct, which is.</li>
   <li>Seismic design values (the national code map): not published as an open point service for most countries we cover.</li>
   <li>Landslide and liquefaction: no global open point source with a resolution that means anything for one plot.</li>
   <li>Zoning: see section 3.</li>
+  <li>World Database on Protected Areas (WDPA, Protected Planet): the most complete list, but its <a href="https://www.protectedplanet.net/c/terms-and-conditions">terms</a> forbid commercial use without written permission from UNEP-WCMC, and Kolaboro is run by a company. We do not use it.</li>
+  <li>Land subsidence in the coastal scenarios: Aqueduct publishes it, but its baseline has none, so we keep both without it to compare like with like. In sinking deltas such as north Jakarta the real change is larger.</li>
  </ul></div>
 </div>
-<p class="muted" style="margin-top:16px;font-size:.88rem">API: <a href="/api/x/p/hazards?lat=-8.638&amp;lng=115.115">/api/x/p/hazards?lat=&amp;lng=</a> (JSON, every figure with its source, query and limits) and <a href="/data/hazards.json">/data/hazards.json</a> (monthly batch). Produced using Copernicus WorldDEM-30 &copy; DLR e.V. 2010-2014 and &copy; Airbus Defence and Space GmbH 2014-2018, provided under COPERNICUS by the European Union and ESA.</p>
+<p class="muted" style="margin-top:16px;font-size:.88rem">API: <a href="/api/x/p/hazards?lat=-8.638&amp;lng=115.115">/api/x/p/hazards?lat=&amp;lng=</a> (JSON, every figure with its source, query and limits), <a href="/api/x/u/climate?lat=-8.638&amp;lng=115.115">/api/x/u/climate?lat=&amp;lng=</a> (2030 and 2050 scenarios), <a href="/api/x/u/protected?lat=-8.638&amp;lng=115.115">/api/x/u/protected?lat=&amp;lng=</a> (protected land and mangroves) and <a href="/data/hazards.json">/data/hazards.json</a> (monthly batch). Produced using Copernicus WorldDEM-30 &copy; DLR e.V. 2010-2014 and &copy; Airbus Defence and Space GmbH 2014-2018, provided under COPERNICUS by the European Union and ESA.</p>
 </div></section>
 <script src="/satellite/plot/vendor/leaflet-1.9.4.js" defer></script>
 <script src="/hazards/hz.js?v=e058293be3" defer></script>
+<script src="/hazards/hzu.js?v=c1c45c3b5b" defer></script>
 
 </main>
 <div class="mcta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="cta_sticky">Protect my purchase</a></div>
