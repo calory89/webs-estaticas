@@ -74,7 +74,7 @@ em{font-style:italic}
 .btn.sm{padding:10px 18px;font-size:.92rem;min-height:40px}
 .btn.wide{width:100%;margin-top:6px}
 /* nav */
-.nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;gap:20px;padding:14px max(16px,env(safe-area-inset-left),calc((100vw - 1180px)/2 + 16px));color:#fff;transition:background .25s ease,color .25s ease}
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;gap:20px;padding:14px max(16px,env(safe-area-inset-left));color:#fff;transition:background .25s ease,color .25s ease}
 .nav.solid{background:color-mix(in srgb,var(--paper) 94%,transparent);color:var(--ink);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .brand{display:flex;flex-direction:column;text-decoration:none;line-height:1.1;margin-right:auto}
 .b1{font-family:var(--f-display);font-size:1.45rem}
@@ -198,13 +198,37 @@ details p{margin:0 0 16px;color:var(--muted)}
 .consent{position:fixed;left:16px;right:16px;bottom:16px;z-index:60;max-width:520px;background:var(--paper);color:var(--ink);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:0 12px 40px rgba(0,0,0,.25)}
 .consent p{margin:0 0 12px;font-size:.93rem}
 .consent div{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap}
+/* partner (La Clinique Swiss) */
+.partner{background:var(--sand);color:#1d2a2c;padding:88px 0}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .partner{background:#1b2526;color:var(--ink)}}
+.partner-h{max-width:820px;margin:0 auto 44px;text-align:center}
+.logo{font-family:var(--f-display);font-size:clamp(1.6rem,3vw,2.2rem);letter-spacing:.02em;margin:0 0 18px;border-top:1px solid currentColor;border-bottom:1px solid currentColor;display:inline-block;padding:6px 18px}
+.partner .h2{font-size:clamp(2.4rem,5.4vw,4.4rem)}
+.big-p{font-size:clamp(1.08rem,1.5vw,1.28rem);line-height:1.65;margin:0}
+.partner-grid{display:grid;gap:28px;align-items:start}
+@media (min-width:900px){.partner-grid{grid-template-columns:.9fr 1.1fr;gap:56px}}
+.incl h3{font-family:var(--f-display);font-weight:400;font-size:clamp(1.6rem,2.6vw,2.1rem);margin:0 0 6px}
+.price-tag{display:flex;flex-wrap:wrap;gap:10px;align-items:center;border:1px solid rgba(0,0,0,.18);border-radius:999px;padding:10px 18px;font-size:.95rem;margin:6px 0 22px}
+.price-tag span{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--red)}
+.ph.wide{aspect-ratio:16/9}
+.history{max-width:760px;margin:52px auto 0;text-align:center;border-top:1px solid rgba(0,0,0,.15);padding-top:30px}
+.history p:last-child{margin:0;color:inherit;opacity:.85}
+/* island */
+.island{padding:84px 0}
+.isl{list-style:none;padding:0;margin:22px 0 16px;display:grid;gap:10px}
+.isl li{display:grid;grid-template-columns:72px 1fr;gap:12px;align-items:baseline;border-bottom:1px solid var(--line);padding-bottom:10px}
+.ik{font-family:var(--f-mono);font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--lagoon)}
+.mini4{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:40px}
+@media (min-width:800px){.mini4{grid-template-columns:repeat(4,1fr)}}
+.mini4 figure{margin:0;border-radius:14px;overflow:hidden;aspect-ratio:4/5}
+.mini4 img{width:100%;height:100%;object-fit:cover}
 </style>
 </head>
 <body>
 <a class="skip" href="#apply">Skip to the application</a>
 <nav class="nav" id="nav">
-  <a class="brand" href="#top" aria-label="Longevity Island, back to top"><span class="b1">Longevity Island</span><span class="b2">Karimunjawa · Indonesia</span></a>
-  <div class="links"><a href="#study">The study</a><a href="#week">Your week</a><a href="#membership">Membership</a><a href="#transfer">Transfer</a><a href="#faq">Questions</a></div>
+  <a class="brand" href="#top" aria-label="Longevity Island, back to top"><span class="b1">Longevity Island</span><span class="b2">with La Clinique Swiss</span></a>
+  <div class="links"><a href="#partner">La Clinique Swiss</a><a href="#island">The island</a><a href="#membership">Membership</a><a href="#transfer">Transfer</a><a href="#faq">Questions</a></div>
   <a class="btn btn-red sm" href="#apply">Apply</a>
 </nav>
 
@@ -212,69 +236,85 @@ details p{margin:0 0 16px;color:var(--muted)}
   <img class="hero-bg" src="/img/ocean-1376.webp" alt="" fetchpriority="high" width="1376" height="768">
   <div class="hero-shade"></div>
   <div class="hero-in wrap">
-    <p class="eyebrow"><span class="dot"></span>In partnership with La Clinique Swiss · Karimunjawa, the Maldives of Indonesia</p>
+    <p class="eyebrow"><span class="dot"></span>Main partner: La Clinique Swiss · Karimunjawa, the Maldives of Indonesia</p>
     <h1>Put your name in the history <em>of longevity.</em></h1>
-    <p class="lede">Your week on Longevity Island, every year, for life. And a free place in one of the largest longevity studies planned in the world.</p>
+    <p class="lede">Your week on Longevity Island, every year, for life. With the complete La Clinique Swiss laboratory programme included, free for members.</p>
     <div class="offer">
       <div class="o1"><span class="k">Membership</span><span class="n">€6,500</span><span class="s">once · for life</span></div>
       <ul class="o2">
+        <li><strong>Every La Clinique Swiss lab test included.</strong> Free, every year.</li>
         <li><strong>Always transferable.</strong> Pass it on and get your €6,500 back.</li>
         <li><strong>€65</strong> cleaning per stay. No yearly fee.</li>
-        <li><strong>65 places per country*</strong>. By application only.</li>
       </ul>
     </div>
     <div class="cta-row">
       <a class="btn btn-red" href="#apply">Apply to be part of history <span aria-hidden="true">→</span></a>
-      <a class="btn btn-ghost" href="#membership">How it works <span aria-hidden="true">↓</span></a>
+      <a class="btn btn-ghost" href="#partner">Discover the programme <span aria-hidden="true">↓</span></a>
     </div>
-    <p class="fine">Nothing is charged to apply. We review every application within 48 hours. *May be expanded if the study requires it.</p>
+    <p class="fine">By application · 65 places per country* · nothing is charged to apply. *May be expanded if the study requires it.</p>
   </div>
 </header>
+
+<section class="partner" id="partner">
+  <div class="wrap">
+    <div class="partner-h">
+      <p class="kicker">Our main partner</p>
+      <p class="logo">La Clinique Swiss</p>
+      <h2 class="h2">Swiss medicine. <em>Island time.</em></h2>
+      <p class="big-p">Every member of Longevity Island receives the complete La Clinique Swiss longevity programme. Your full laboratory studies, every year, read by Swiss physicians and turned into a clear plan for the year ahead. The kind of care usually reserved for a very few. For members, it is simply included.</p>
+    </div>
+    <div class="partner-grid">
+      <figure class="ph tall"><img src="/img/doctor-1024.webp" alt="Physician explaining test results to a member" loading="lazy" width="1024" height="1280"><figcaption>Illustrative image</figcaption></figure>
+      <div class="incl">
+        <h3>Included in your membership, every year</h3>
+        <ul class="ticks">
+          <li><strong>Complete blood studies.</strong> Heart, metabolism, hormones, inflammation, vitamins and organ function.</li>
+          <li><strong>Body and strength.</strong> Body composition, grip strength and mobility.</li>
+          <li><strong>Fitness of the heart.</strong> Cardiorespiratory fitness (VO2 max) and blood pressure.</li>
+          <li><strong>Sleep and recovery.</strong> How well you really rest, measured.</li>
+          <li><strong>Your physician and your plan.</strong> Results explained in person, and a personal plan to take home.</li>
+        </ul>
+        <p class="price-tag"><span>Value</span> Normally a premium private programme · <strong>For members: €0</strong></p>
+        <figure class="ph wide"><img src="/img/lab-1024.webp" alt="Laboratory technician handling blood samples" loading="lazy" width="1024" height="1280"><figcaption>Illustrative image</figcaption></figure>
+      </div>
+    </div>
+    <div class="history">
+      <p class="kicker">Part of something bigger</p>
+      <p>With your consent, your anonymised results join a long-term longevity study with La Clinique Swiss, following members year after year. Taking part is voluntary and free. Your data stays yours.</p>
+    </div>
+  </div>
+</section>
 
 <section class="facts wrap" aria-label="In short">
   <div class="fact"><span class="fn">01</span><h2>A membership for life</h2><p>One week of 6 days in your cabin by the sea, every year, for the rest of your life.</p></div>
   <div class="fact"><span class="fn">02</span><h2>Always transferable</h2><p>To your children, a friend, or our waiting list. When someone takes your place, your €6,500 comes back to you.</p></div>
-  <div class="fact"><span class="fn">03</span><h2>Part of the study</h2><p>Free for members: your yearly measurements with the physicians of La Clinique Swiss, as part of a study built to run for decades.</p></div>
+  <div class="fact"><span class="fn">03</span><h2>Swiss care, included</h2><p>The full La Clinique Swiss laboratory programme every year, at no cost to members.</p></div>
 </section>
 
-<section class="study" id="study">
+<section class="island" id="island">
   <div class="wrap split">
     <div>
-      <p class="kicker">The study · with La Clinique Swiss</p>
-      <h2 class="h2">Built to follow thousands of people for decades. <em>Your name among them.</em></h2>
-      <p>Most of what we know about living longer comes from studies that followed large groups of people for many years. Longevity Island is built to do exactly that, together with the physicians of La Clinique Swiss: the same members, measured every year, for as long as they come.</p>
-      <p>That is why we ask a few simple things when you apply, like your age, whether you are active and whether you smoke. A good study needs every kind of person, not only athletes.</p>
-      <ul class="ticks">
-        <li>Your yearly measurements during your week: heart, metabolism, strength, sleep and recovery.</li>
-        <li>Your results explained by a physician, with a clear plan for the year.</li>
-        <li>Your data stays yours. Research only ever uses it anonymised.</li>
-        <li>Taking part is free, voluntary and has its own consent. You can be a member without it.</li>
+      <p class="kicker">The island</p>
+      <h2 class="h2">They call it <em>the Maldives of Indonesia.</em></h2>
+      <p>Karimunjawa is a protected marine national park of 27 islands in the Java Sea. White sand, water so clear you can see the coral from the boat, and almost none of the crowds you find elsewhere.</p>
+      <p>Mornings start with a swim in a warm lagoon. Afternoons are for the reef, the forest paths and long lunches. Evenings end with the sun dropping into the sea. It is a place that slows you down in the best way.</p>
+      <ul class="isl">
+        <li><span class="ik">Air</span><span><strong>Cleaner air than Zurich*</strong>, sea breeze all year</span></li>
+        <li><span class="ik">Arrive</span><span><strong>5 minutes</strong> from the island airport</span></li>
+        <li><span class="ik">Fly</span><span>About <strong>2 hours</strong> from Singapore or Jakarta to Semarang, then a short hop to the island</span></li>
+        <li><span class="ik">Sea</span><span><strong>27 to 30°C</strong> water, coral reefs a few minutes away</span></li>
       </ul>
-      <p class="note">La Clinique Swiss would normally charge far more for a programme like this. For members of Longevity Island it is included.</p>
+      <p class="fine">*Average fine-particle pollution (PM2.5) in 2025: Karimunjawa 14.8 µg/m³ against Zurich 20.8 µg/m³, both from the same Copernicus CAMS global model data. Flight times are indicative and schedules vary by season.</p>
     </div>
-    <figure class="ph tall"><img src="/img/clinic-1400.webp" alt="Bright treatment room by the sea" loading="lazy" width="1400" height="1866"><figcaption>Illustrative image</figcaption></figure>
+    <figure class="ph tall"><img src="/img/swim-1024.webp" alt="Swimming over coral in clear turquoise water" loading="lazy" width="1024" height="1280"><figcaption>Illustrative image</figcaption></figure>
   </div>
-  <div class="wrap markers" aria-label="What is measured">
-    <span>ApoB</span><span>HbA1c</span><span>Blood pressure</span><span>VO2 max</span><span>Grip strength</span><span>hs-CRP</span><span>Vitamin D</span><span>Sleep</span><span>Body composition</span><span>Fasting insulin</span>
+  <div class="wrap mini4">
+    <figure><img src="/img/cabin-1024.webp" alt="Minimal cabin on white sand among palms" loading="lazy" width="1024" height="1280"></figure>
+    <figure><img src="/img/yoga-900.webp" alt="Morning movement by the sea" loading="lazy" width="900" height="600"></figure>
+    <figure><img src="/img/sauna-900.webp" alt="Sauna and cold plunge" loading="lazy" width="900" height="600"></figure>
+    <figure><img src="/img/dinner-900.webp" alt="Dinner by the sea" loading="lazy" width="900" height="600"></figure>
   </div>
-  <p class="wrap fine center">Indicative list. The physicians of La Clinique Swiss set the protocol, and it may change as the science moves.</p>
-</section>
-
-<section class="week" id="week">
-  <div class="wrap split rev">
-    <figure class="ph tall"><img src="/img/villa-1600.webp" alt="Cabin among palm trees by the sea" loading="lazy" width="1536" height="1905"><figcaption>Illustrative image</figcaption></figure>
-    <div>
-      <p class="kicker">Your week</p>
-      <h2 class="h2">Six days a year. <em>Yours, for life.</em></h2>
-      <p>Karimunjawa is a marine national park of 27 islands in the Java Sea, with white sand, clear water and coral reefs, and almost none of the crowds. They call it the Maldives of Indonesia.</p>
-      <p>Every year you come to your cabin for 6 days. You sleep well, move in the morning, swim, eat real food, and get measured. Then you go home with your plan.</p>
-      <div class="mini">
-        <figure><img src="/img/yoga-900.webp" alt="Morning movement by the sea" loading="lazy" width="900" height="600"></figure>
-        <figure><img src="/img/sauna-900.webp" alt="Sauna" loading="lazy" width="900" height="600"></figure>
-        <figure><img src="/img/dinner-900.webp" alt="Dinner by the sea" loading="lazy" width="900" height="600"></figure>
-      </div>
-    </div>
-  </div>
+  <p class="wrap fine center">Illustrative images.</p>
 </section>
 
 <section class="membership wrap" id="membership">
@@ -313,16 +353,16 @@ details p{margin:0 0 16px;color:var(--muted)}
       </ul>
       <p class="fine light">Getting your money back depends on someone taking your place. We keep a waiting list for every country and handle the paperwork.</p>
     </div>
-    <figure class="ph tall"><img src="/img/couple-1400.webp" alt="Couple on the deck of their cabin" loading="lazy" width="1400" height="1866"><figcaption>Illustrative image</figcaption></figure>
+    <figure class="ph tall"><img src="/img/couple-deck-1024.webp" alt="Couple with coffee on the deck of their cabin" loading="lazy" width="1024" height="1280"><figcaption>Illustrative image</figcaption></figure>
   </div>
 </section>
 
 <section class="apply wrap" id="apply">
   <div class="apply-h">
-    <p class="kicker">65 places per country*</p>
+    <p class="kicker">By application</p>
     <h2 class="h2">Apply to be part of <em>Longevity Island.</em></h2>
     <p>One minute. We review every application within 48 hours and reply by email or WhatsApp. Nothing is charged to apply.</p>
-    <p class="fine">*May be expanded if the study requires it.</p>
+    <p class="fine">65 places per country*. *May be expanded if the study requires it.</p>
   </div>
   <form id="f" novalidate>
     <div class="grid2">
@@ -359,28 +399,30 @@ details p{margin:0 0 16px;color:var(--muted)}
 <section class="faq wrap" id="faq">
   <p class="kicker">Questions</p>
   <h2 class="h2">What people ask us</h2>
-  <details><summary>What exactly am I getting?</summary><p>A membership for life: one week of 6 days every year in a cabin on Longevity Island, plus free participation in the longevity study with La Clinique Swiss. It is a right to use, not ownership of land or property.</p></details>
-  <details><summary>Why do I have to apply?</summary><p>Because places are limited to 65 per country* and the study needs a balanced group of people of different ages and habits. Applying is free and takes one minute.</p></details>
+  <details><summary>What exactly am I getting?</summary><p>A membership for life: one week of 6 days every year in a cabin on Longevity Island, with the complete La Clinique Swiss laboratory programme included every year. It is a right to use, not ownership of land or property.</p></details>
+  <details><summary>What does La Clinique Swiss include?</summary><p>Every year: complete blood studies, body composition and strength, heart fitness, sleep and recovery, and a physician who explains your results and builds your plan. Free for members.</p></details>
+  <details><summary>Why do I have to apply?</summary><p>Because places are limited to 65 per country* and we want a balanced, international group of members. Applying is free and takes one minute.</p></details>
+  <details><summary>How do I get there?</summary><p>Fly to Semarang (about 2 hours from Singapore or Jakarta), then take the short flight to Karimunjawa. The cabins are 5 minutes from the island airport. Fast boats also run from the coast of Java. Schedules vary by season.</p></details>
   <details><summary>When can I go?</summary><p>Opening is estimated for 2028. The money from memberships funds the construction of the cabins, and we keep members informed at every step.</p></details>
   <details><summary>What else will I pay?</summary><p>€65 cleaning each time you stay. If your cabin needs a repair, your share is 1/60 of the cost, never more than €95 a year. There is no yearly fee. Travel to the island is not included.</p></details>
   <details><summary>Can I get my €6,500 back?</summary><p>Yes, by passing your place on. You can give it to family or a friend, or we offer it to the waiting list in your country at €6,500 and that money is yours. It depends on someone taking your place. During the first 14 days after signing you can also cancel without paying anything.</p></details>
-  <details><summary>Do I have to take part in the study?</summary><p>No. Taking part is voluntary and has its own consent form. You can stop at any time and keep your membership.</p></details>
+  <details><summary>Do I have to take part in the study?</summary><p>No. The laboratory programme is yours either way. Adding your anonymised results to the study is voluntary, has its own consent, and you can stop at any time.</p></details>
   <details><summary>What if I cannot come one year?</summary><p>Your week is still yours. If it is not booked 90 days before, we may rent it out, and that income goes to maintaining the island.</p></details>
-  <details><summary>Why 65 places per country?</summary><p>To keep the community international and the study balanced between countries. *The number may be expanded if the study requires it.</p></details>
-  <details><summary>Who is behind Longevity Island?</summary><p>Longevity Island is developed by Equinox Investment Group, LLC, in partnership with La Clinique Swiss. Write to us at <a href="mailto:carlos@equinoxinvestmentgroup.com">carlos@equinoxinvestmentgroup.com</a>.</p></details>
+  <details><summary>Who is behind Longevity Island?</summary><p>Longevity Island is developed by Equinox Investment Group, LLC (<a href="https://equinoxinvestmentgroup.com" rel="noopener">equinoxinvestmentgroup.com</a>), with La Clinique Swiss as main partner. Write to us at <a href="mailto:carlos@equinoxinvestmentgroup.com">carlos@equinoxinvestmentgroup.com</a>.</p></details>
 </section>
 
 <section class="close">
   <div class="wrap">
     <h2>Put your name <em>in the history of longevity.</em></h2>
-    <p>€6,500 once · membership for life · always transferable · €65 cleaning per stay</p>
+    <p>€6,500 once · membership for life · La Clinique Swiss lab programme included · always transferable</p>
     <a class="btn btn-red" href="#apply">Apply to be part of history <span aria-hidden="true">→</span></a>
   </div>
 </section>
 
 <footer class="foot wrap">
-  <p><strong>Longevity Island</strong> · Karimunjawa, Indonesia · in partnership with La Clinique Swiss · <a href="mailto:carlos@equinoxinvestmentgroup.com">carlos@equinoxinvestmentgroup.com</a></p>
-  <p class="fine">Developed by Equinox Investment Group, LLC. The membership is a right to use one week a year and is not an investment: it does not give ownership of land or property and has no promised return. Places pass on at €6,500; getting that amount back depends on someone taking your place. Opening is estimated for 2028 and may change. Taking part in the study is voluntary and subject to its own consent; no specific health outcome is promised. Images are illustrative. Full terms are sent before you sign, and nothing is charged during the 14-day cooling-off period.</p>
+  <p><strong>Longevity Island</strong> · Karimunjawa, Indonesia · main partner La Clinique Swiss</p>
+  <p>Developed by <a href="https://equinoxinvestmentgroup.com" rel="noopener">Equinox Investment Group, LLC · equinoxinvestmentgroup.com</a> · <a href="mailto:carlos@equinoxinvestmentgroup.com">carlos@equinoxinvestmentgroup.com</a></p>
+  <p class="fine">The membership is a right to use one week a year and is not an investment: it does not give ownership of land or property and has no promised return. Places pass on at €6,500; getting that amount back depends on someone taking your place. Opening is estimated for 2028 and may change. The La Clinique Swiss programme is delivered under qualified medical supervision; no specific health outcome is promised. Taking part in the study is voluntary and subject to its own consent. Images are illustrative. Full terms are sent before you sign, and nothing is charged during the 14-day cooling-off period.</p>
 </footer>
 
 <div class="mbar" id="mbar"><span><strong>€6,500</strong> once · for life</span><a class="btn btn-red sm" href="#apply">Apply</a></div>
