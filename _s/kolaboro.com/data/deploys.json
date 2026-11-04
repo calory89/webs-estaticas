@@ -1,6 +1,19 @@
 {
  "deploys": [
   {
+   "at": "2026-11-04T07:22:25Z",
+   "commit": "bdca1b03285706b714daeca3c5d0a31dabdda18d",
+   "checks_passed": 32,
+   "checks_total": 32,
+   "failed": [],
+   "run": "https://github.com/calory89/webs-estaticas/actions/runs/41791480575",
+   "result": "pass",
+   "wait_s": 101,
+   "changes": [
+    "bdca1b032857"
+   ]
+  },
+  {
    "at": "2026-11-04T07:10:38Z",
    "commit": "e9785d6e43691e4365680ee5a82f471b338b46ce",
    "checks_passed": 32,
@@ -647,13 +660,13 @@
  "canary": "Cloudflare Pages sends each push to all visitors at once and offers no percentage canary, so none is claimed. A bad push can be visible for a few minutes until the rollback is live.",
  "rollback_mode": "Rollback: a git commit restoring the files changed since the last passing commit; Pages deploys it in about 1 to 2 minutes. An instant Cloudflare API rollback is built in but needs a Pages-scoped token, not configured yet.",
  "latest_checks": {
-  "at": "2026-11-04T07:10:38.804Z",
-  "commit": "e9785d6e43691e4365680ee5a82f471b338b46ce",
+  "at": "2026-11-04T07:22:25.071Z",
+  "commit": "bdca1b03285706b714daeca3c5d0a31dabdda18d",
   "checks": [
    {
     "name": "build: live commit",
     "ok": true,
-    "detail": "live e9785d6e4369"
+    "detail": "live bdca1b032857"
    },
    {
     "name": "page /",
@@ -688,7 +701,7 @@
    {
     "name": "page /verify/",
     "ok": true,
-    "detail": "200, 41542 bytes"
+    "detail": "200, 41702 bytes"
    },
    {
     "name": "page /status/",
@@ -698,7 +711,7 @@
    {
     "name": "page /changelog/",
     "ok": true,
-    "detail": "200, 50669 bytes"
+    "detail": "200, 50986 bytes"
    },
    {
     "name": "page /docs/api/",
@@ -738,12 +751,12 @@
    {
     "name": "api /api/open/checkpoint",
     "ok": true,
-    "detail": "tree size 2"
+    "detail": "tree size 3"
    },
    {
     "name": "api /api/x/l/trust",
     "ok": true,
-    "detail": "{\"controls\":13,\"pass\":12,\"warn\":1,\"fail\":0,\"stale\":0,\"unknown\":0}"
+    "detail": "{\"controls\":13,\"pass\":11,\"warn\":2,\"fail\":0,\"stale\":0,\"unknown\":0}"
    },
    {
     "name": "tls: plain http redirects to https",
@@ -812,7 +825,7 @@
    }
   ]
  },
- "last_checked": "e9785d6e43691e4365680ee5a82f471b338b46ce",
- "last_good": "e9785d6e43691e4365680ee5a82f471b338b46ce",
- "updated": "2026-11-04T07:10:38Z"
+ "last_checked": "bdca1b03285706b714daeca3c5d0a31dabdda18d",
+ "last_good": "bdca1b03285706b714daeca3c5d0a31dabdda18d",
+ "updated": "2026-11-04T07:22:25Z"
 }
