@@ -1,6 +1,19 @@
 {
  "deploys": [
   {
+   "at": "2026-11-04T09:17:02Z",
+   "commit": "15aa256b431467947a932d7eff6f1b9aae47c758",
+   "checks_passed": 32,
+   "checks_total": 32,
+   "failed": [],
+   "run": "https://github.com/calory89/webs-estaticas/actions/runs/41805751694",
+   "result": "pass",
+   "wait_s": 121,
+   "changes": [
+    "15aa256b4314"
+   ]
+  },
+  {
    "at": "2026-11-04T09:13:03Z",
    "commit": "df2e4d3424cebcfb6fc9a5f4a98dcf75d86dd546",
    "checks_passed": 32,
@@ -775,78 +788,78 @@
  "canary": "Cloudflare Pages sends each push to all visitors at once and offers no percentage canary, so none is claimed. A bad push can be visible for a few minutes until the rollback is live.",
  "rollback_mode": "Rollback: a git commit restoring the files changed since the last passing commit; Pages deploys it in about 1 to 2 minutes. An instant Cloudflare API rollback is built in but needs a Pages-scoped token, not configured yet.",
  "latest_checks": {
-  "at": "2026-11-04T09:13:03.773Z",
-  "commit": "df2e4d3424cebcfb6fc9a5f4a98dcf75d86dd546",
+  "at": "2026-11-04T09:17:02.950Z",
+  "commit": "15aa256b431467947a932d7eff6f1b9aae47c758",
   "checks": [
    {
     "name": "build: live commit",
     "ok": true,
-    "detail": "live df2e4d3424ce"
+    "detail": "live 15aa256b4314"
    },
    {
     "name": "page /",
     "ok": true,
-    "detail": "200, 71518 bytes"
+    "detail": "200, 71861 bytes"
    },
    {
     "name": "page /check/",
     "ok": true,
-    "detail": "200, 61925 bytes"
+    "detail": "200, 62268 bytes"
    },
    {
     "name": "page /database/",
     "ok": true,
-    "detail": "200, 31596 bytes"
+    "detail": "200, 31939 bytes"
    },
    {
     "name": "page /pricing/",
     "ok": true,
-    "detail": "200, 25393 bytes"
+    "detail": "200, 25736 bytes"
    },
    {
     "name": "page /p/BALI-021",
     "ok": true,
-    "detail": "200, 20793 bytes"
+    "detail": "200, 21136 bytes"
    },
    {
     "name": "page /log/",
     "ok": true,
-    "detail": "200, 26539 bytes"
+    "detail": "200, 26882 bytes"
    },
    {
     "name": "page /verify/",
     "ok": true,
-    "detail": "200, 41702 bytes"
+    "detail": "200, 42045 bytes"
    },
    {
     "name": "page /status/",
     "ok": true,
-    "detail": "200, 39112 bytes"
+    "detail": "200, 39455 bytes"
    },
    {
     "name": "page /changelog/",
     "ok": true,
-    "detail": "200, 51144 bytes"
+    "detail": "200, 53497 bytes"
    },
    {
     "name": "page /docs/api/",
     "ok": true,
-    "detail": "200, 20734 bytes"
+    "detail": "200, 21077 bytes"
    },
    {
     "name": "page /investors/",
     "ok": true,
-    "detail": "200, 47396 bytes"
+    "detail": "200, 47739 bytes"
    },
    {
     "name": "page /trust/",
     "ok": true,
-    "detail": "200, 23348 bytes"
+    "detail": "200, 23691 bytes"
    },
    {
     "name": "page /investors/dossier/",
     "ok": true,
-    "detail": "200, 20707 bytes"
+    "detail": "200, 21050 bytes"
    },
    {
     "name": "api /api/open/stats",
@@ -940,7 +953,7 @@
    }
   ]
  },
- "last_checked": "df2e4d3424cebcfb6fc9a5f4a98dcf75d86dd546",
- "last_good": "df2e4d3424cebcfb6fc9a5f4a98dcf75d86dd546",
- "updated": "2026-11-04T09:13:03Z"
+ "last_checked": "15aa256b431467947a932d7eff6f1b9aae47c758",
+ "last_good": "15aa256b431467947a932d7eff6f1b9aae47c758",
+ "updated": "2026-11-04T09:17:02Z"
 }
