@@ -120,7 +120,7 @@
     var r = city.types[st.t]; if (!r) { fillTypes(); return calc(); }
     var lo = r[0] * factor, hi = r[1] == null ? null : r[1] * factor;
     var src = D.sources[city.source];
-    o1.textContent = money(ppmCmp, cmp);
+    o1.textContent = money(st.c !== cmp ? ppm : ppmCmp, st.c !== cmp ? st.c : cmp);
     var ratio = ppmCmp / lo;
     if (ppmCmp < lo) {
       o2.textContent = 'Below the low end of the published cost just to build this type (' + D.types[st.t] + ') in ' + m[2] + ': ' + money(lo, cmp) + ' per m², before land. Ask the questions below before you pay.';
@@ -159,8 +159,8 @@
     });
     var px = X(c.ppm), below = c.ppm < c.city.types[c.sel][0] * c.factor;
     o += '<line x1="' + px + '" x2="' + px + '" y1="' + (top - 6) + '" y2="' + (H - 30) + '" stroke="' + (below ? '#C2410C' : '#0B7A55') + '" stroke-width="3"/>';
-    var lx = Math.min(Math.max(px, x0 + 60), x1 - 60);
-    o += '<text x="' + lx + '" y="' + (H - 10) + '" text-anchor="middle" font-size="13" font-weight="700" fill="' + (below ? '#C2410C' : '#0B7A55') + '">Your price: ' + esc(compact(c.ppm, c.cmp)) + ' per m²</text>';
+    var right = px > (x0 + x1) / 2, lx = right ? Math.min(px + 4, x1) : Math.max(px - 4, x0);
+    o += '<text x="' + lx + '" y="' + (H - 10) + '" text-anchor="' + (right ? 'end' : 'start') + '" font-size="13" font-weight="700" fill="' + (below ? '#C2410C' : '#0B7A55') + '">Your price: ' + esc(compact(c.ppm, c.cmp)) + ' per m²</text>';
     o += '<line x1="' + x0 + '" x2="' + x1 + '" y1="' + (H - 30) + '" y2="' + (H - 30) + '" stroke="#17212B" stroke-width="1"/>';
     o += '</svg>';
     box.innerHTML = o;

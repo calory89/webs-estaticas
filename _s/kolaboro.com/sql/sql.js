@@ -170,7 +170,7 @@
   var ex = $('sq-ex');
   EX.forEach(function (e, i) {
     var b = document.createElement('button'); b.type = 'button'; b.className = 'sq-chip'; b.textContent = e[0];
-    b.addEventListener('click', function () { $('sq-sql').value = e[1]; if (conn) run(); else $('sq-sql').focus(); });
+    b.addEventListener('click', function () { $('sq-sql').value = e[1]; if (conn) run(); else if (!$('sq-load').disabled) start().catch(function () {}); });
     ex.appendChild(b);
   });
   $('sq-sql').value = EX[0][1];

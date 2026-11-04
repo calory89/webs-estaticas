@@ -47,7 +47,7 @@
       btn.disabled = false;
       if (o.s !== 200) { r.innerHTML = '<p class="wq-lab">' + esc(o.d.error || 'Something went wrong') + '</p>'; return; }
       var d = o.d;
-      r.innerHTML = '<p class="wq-fine">Searched for <b>' + esc(d.query) + '</b> (compared as ' + esc(d.normalised) + ') at ' + esc((d.fetched_at || '').replace('T', ' ').slice(0, 16)) + ' UTC' + (d.cached ? ', from the answer kept for a day' : '') + '.</p>' + ukBlock(d.uk) + esBlock(d.es) + '<p class="wq-fine" style="margin-top:12px">' + esc(d.rule) + ' ' + esc(d.not_covered) + '</p>';
+      r.innerHTML = '<p class="wq-fine">Searched for <b>' + esc(name) + '</b> (compared as ' + esc(d.normalised) + ') at ' + esc((d.fetched_at || '').replace('T', ' ').slice(0, 16)) + ' UTC' + (d.cached ? ', from the answer kept for a day' : '') + '.</p>' + ukBlock(d.uk) + esBlock(d.es) + '<p class="wq-fine" style="margin-top:12px">' + esc(d.rule) + ' ' + esc(d.not_covered) + '</p>';
     }).catch(function () { btn.disabled = false; r.innerHTML = '<p class="wq-lab">The lookup did not answer. Check your connection and try again.</p>'; });
   });
 

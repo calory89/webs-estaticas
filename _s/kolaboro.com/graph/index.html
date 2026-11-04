@@ -48,6 +48,7 @@
 .gq-state{display:inline-block;background:#F3F1EA;border:1px solid #E2E0D8;border-radius:999px;padding:6px 12px;font-weight:800;font-size:.85rem}
 @media(max-width:860px){.gq-grid{grid-template-columns:1fr}}
 @media(max-width:700px){.gq-k{grid-template-columns:1fr 1fr}.gq-cf{grid-template-columns:1fr}}
+@media(max-width:640px){table.stk thead{display:none}table.stk,table.stk tbody{display:block}table.stk tr{display:block;padding:10px 0;border-bottom:1px solid #E2E0D8}table.stk td{display:block;border:0;padding:3px 0}table.stk td:nth-child(4)::before{content:"Terms: ";font-weight:700}}
 </style></head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -100,7 +101,7 @@
 </div>
 <h3 style="margin-top:26px">Which court databases we checked</h3>
 <p id="gq-auto"></p>
-<div class="gq-tw"><table class="gq-t"><thead><tr><th>Market</th><th>Database</th><th>From our servers</th><th>Terms and limits</th></tr></thead><tbody id="gq-src"><tr><td colspan="4">Loading…</td></tr></tbody></table></div>
+<div class="gq-tw"><table class="gq-t stk"><thead><tr><th>Market</th><th>Database</th><th>From our servers</th><th>Terms and limits</th></tr></thead><tbody id="gq-src"><tr><td colspan="4">Loading…</td></tr></tbody></table></div>
 <p class="gq-fine" style="margin-top:14px">Open data: <a href="/data/company-graph.json">/data/company-graph.json</a> and <a href="/api/x/q/">/api/x/q/</a>. Related: <a href="/registers/">official registers</a>, <a href="/mystery-shopper/">mystery shopper</a>.</p>
 </div></section>
 
