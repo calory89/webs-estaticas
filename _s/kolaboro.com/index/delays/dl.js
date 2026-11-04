@@ -185,8 +185,9 @@
     var q = new URLSearchParams(location.search).get('id');
     if (q) { $('dlId').value = q.toUpperCase(); lookup(q); }
   }
-  fetch('/data/delay-index.json').then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (j) { DI = j; boot(); })
+  var BUST = '?d=' + new Date().toISOString().slice(0, 10);   // a stale edge 404 from before the first build must not stick
+  fetch('/data/delay-index.json' + BUST).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (j) { DI = j; boot(); })
     .catch(function () { $('dlWarn').textContent = 'The index file is not published yet: the first build is running. Please reload in a few minutes.'; });
-  fetch('/data/on-time.json').then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (j) { OT = j; bootOdds(); })
+  fetch('/data/on-time.json' + BUST).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(function (j) { OT = j; bootOdds(); })
     .catch(function () { $('dlOddsWhy').textContent = 'The odds file is not published yet: the first build is running.'; });
 })();
