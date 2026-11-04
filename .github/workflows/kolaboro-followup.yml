@@ -19,7 +19,7 @@ on:
     inputs:
       run_usd:
         description: "Max model spend this run (USD)"
-        default: "8"
+        default: "3"
       skip_alerts:
         description: "Skip the alerts job (1 = skip)"
         default: "0"
@@ -41,7 +41,7 @@ jobs:
       - name: Read promises
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          KB_PROMISE_RUN_USD: ${{ github.event.inputs.run_usd || '0.25' }}
+          KB_PROMISE_RUN_USD: ${{ github.event.inputs.run_usd || '3' }}
           KB_PROMISE_MAX_USD: '9.5'
         run: |
           if [ -z "$ANTHROPIC_API_KEY" ]; then echo "::warning::ANTHROPIC_API_KEY is not set: only cached readings are used"; fi

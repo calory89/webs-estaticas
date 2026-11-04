@@ -23,7 +23,7 @@ Rules enforced in code, not left to the model:
     that states the original date
   - when one page copy states two different dates for the same promise, claude-sonnet-5-5 decides which one is current
     (or says they are separate phases); if it cannot tell, that copy is not used for the promise
-Env: ANTHROPIC_API_KEY, KB_PROMISE_MAX_USD (cumulative cap across all runs, default 9.5), KB_PROMISE_RUN_USD (per run, default 8).
+Env: ANTHROPIC_API_KEY, KB_PROMISE_MAX_USD (cumulative cap across all runs, default 9.5), KB_PROMISE_RUN_USD (per run, default 3).
 """
 import json, os, re, sys, glob, gzip, time, hashlib, statistics, threading, urllib.request, urllib.error, concurrent.futures as cf
 from datetime import datetime, timezone
@@ -40,10 +40,10 @@ TODAY_M = NOW.year * 12 + NOW.month          # month index
 KEY = os.environ.get('ANTHROPIC_API_KEY', '').strip()
 AI = bool(KEY) and '--no-ai' not in sys.argv
 HAIKU, SONNET = 'claude-haiku-5-5', 'claude-sonnet-5-5'
-PRICE = {HAIKU: (1.0, 5.0), SONNET: (3.0, 15.0)}   # USD per million tokens in / out: the same conservative estimate the worker uses
+PRICE = {HAIKU: (0.10, 0.50), SONNET: (2.0, 10.0)}   # USD per million tokens in / out, list prices (platform.claude.com/docs/en/about-claude/pricing, Nov 2026)
 MAX_TOTAL = float(os.environ.get('KB_PROMISE_MAX_USD', '9.5'))
-MAX_RUN = float(os.environ.get('KB_PROMISE_RUN_USD', '8'))
-PV = 'promises-v1'
+MAX_RUN = float(os.environ.get('KB_PROMISE_RUN_USD', '3'))
+PV = 'promises-v2'
 KINDS = ('handover', 'construction_start', 'structure', 'milestone', 'permit', 'rental')
 KIND_LABEL = {'handover': 'Handover or completion', 'construction_start': 'Construction start', 'structure': 'Structure finished (topping out)',
               'milestone': 'Other construction milestone', 'permit': 'Permit or approval obtained', 'rental': 'Rental programme or operations start'}
@@ -229,7 +229,7 @@ def budget_left():
     return min(MAX_RUN - spend['usd'], MAX_TOTAL - (spend['prior'] + spend['usd']))
 
 
-def call(model, prompt, max_tokens=1200):
+def call(model, prompt, max_tokens=4000):
     with lock:
         if budget_left() <= 0.02:
             raise RuntimeError('budget')
@@ -248,7 +248,12 @@ def call(model, prompt, max_tokens=1200):
                 spend['haiku_calls' if model == HAIKU else 'sonnet_calls'] += 1
             t = ''.join(b.get('text', '') for b in d.get('content', []) if b.get('type') == 'text')
             m = re.search(r'\{.*\}', t, re.S)
-            return json.loads(m.group(0)) if m else None
+            if d.get('stop_reason') == 'max_tokens' or not m:
+                raise RuntimeError('no complete answer')   # never cached: read again next run
+            try:
+                return json.loads(m.group(0))
+            except Exception:
+                raise RuntimeError('invalid json')
         except urllib.error.HTTPError as e:
             last = 'HTTP %s' % e.code
             if e.code in (429, 500, 502, 503, 529):
@@ -274,6 +279,8 @@ def extract(cache, label, text):
     try:
         o = call(HAIKU, PROMPT.replace('{label}', label).replace('{text}', snip))
     except RuntimeError:
+        return None
+    if not isinstance(o, dict) or not isinstance(o.get('items'), list):
         return None
     items = (o or {}).get('items') if isinstance(o, dict) else None
     items = items if isinstance(items, list) else []
@@ -319,7 +326,7 @@ def resolve_conflict(cache, kind, a, b):
     if not AI:
         return None
     try:
-        o = call(SONNET, RESOLVE.format(kind=KIND_LABEL[kind], da=a['date'], qa=a['quote'], db=b['date'], qb=b['quote']), 300)
+        o = call(SONNET, RESOLVE.format(kind=KIND_LABEL[kind], da=a['date'], qa=a['quote'], db=b['date'], qb=b['quote']), 3000)
     except RuntimeError:
         return None
     ans = (o or {}).get('answer') if isinstance(o, dict) else None
@@ -585,7 +592,7 @@ def main():
                     'days': sorted({d for v in pv.values() for d, _ in v})},
         'checks': {'rejected': dict(rejected), 'date_conflicts': stats['date_conflicts']},
         'spend': {'this_run_usd': spend['usd'], 'total_usd': slog['total_usd'], 'cap_usd': MAX_TOTAL, 'runs': len(slog['runs']),
-                  'models': [HAIKU, SONNET], 'note': 'Estimated from token usage at 1 / 5 USD (haiku) and 3 / 15 USD (sonnet) per million tokens in / out.'},
+                  'models': [HAIKU, SONNET], 'note': 'Computed from token usage at list prices: 0.10 / 0.50 USD (haiku) and 2 / 10 USD (sonnet) per million tokens in / out. Runs before 4 Nov 2026 12:00 UTC were logged at a 10 times higher estimate.'},
         'counts': dict(tally(allp), projects=len(out), projects_tracked=len(P)),
         'kinds_totals': kinds,
         'markets': mk,
