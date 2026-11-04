@@ -50,7 +50,7 @@ async function cached(key, fn, ttl, ctx) {
   const hit = await caches.default.match(ck);
   if (hit) { const d = await hit.json(); d.cached = true; return d; }
   const d = await fn();
-  if (d && !d.error) ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(d), { headers: { 'content-type': 'application/json', 'cache-control': 'public, max-age=' + ttl } })));
+  if (d && !d.error && !(d.uk && d.uk.error) && !(d.es && (d.es.error || d.es.status === 'starting'))) ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(d), { headers: { 'content-type': 'application/json', 'cache-control': 'public, max-age=' + ttl } })));
   return d;
 }
 
@@ -81,11 +81,11 @@ export function validName(raw) {
 }
 
 // ---- insolvency lookup
-async function gazetteLookup(name) {
+async function gazetteLookup(name, retry) {
   const want = norm(name);
-  const phrase = name.replace(/"/g, '').replace(/[\s,]+(?:limited|ltd\.?|plc|llp|public limited company)\.?\s*$/i, '').trim();   // finds Ltd and Limited notices alike
+  const phrase = retry ? name.replace(/"/g, '') : name.replace(/"/g, '').replace(/[\s,]+(?:limited|ltd\.?|plc|llp|public limited company)\.?\s*$/i, '').trim();   // finds Ltd and Limited notices alike
   const url = GZ + '/insolvency/notice/data.feed?text=' + encodeURIComponent('"' + phrase + '"') + '&results-page-size=100';
-  const r = await fetch(url, { headers: { 'user-agent': UA, accept: 'application/atom+xml' }, signal: AbortSignal.timeout(15000) });
+  const r = await fetch(url, { headers: { 'user-agent': UA, accept: 'application/atom+xml' }, signal: AbortSignal.timeout(25000) });
   if (!r.ok) throw new Error('The Gazette answered HTTP ' + r.status);
   const x = await r.text(), notices = [];
   let personal = 0, other = 0;
@@ -102,6 +102,8 @@ async function gazetteLookup(name) {
     const link = (e.match(/<link href="(https:\/\/www\.thegazette\.co\.uk\/notice\/[^"/]+)"\/>/) || [])[1] || null;
     notices.push({ date: ((e.match(/<published>([^<]{10})/) || [])[1] || ''), type: cat || title, notice_code: code, url: link });
   }
+  // a short name can match more than 100 notices of other companies: then search the full name with its legal form as well
+  if (!notices.length && /rel="next"/.test(x) && phrase !== name && !retry) return gazetteLookup(name, true);
   return {
     source: 'The Gazette (UK), corporate insolvency notices', searched: url.replace(/&results-page-size=100$/, ''),
     notices: notices.slice(0, 50), exact_notices: notices.length, other_corporate_notices_mentioning_the_words: other,
@@ -126,7 +128,7 @@ async function insolvency(req, u, env, ctx) {
   const name = validName(u.searchParams.get('name'));
   if (!name) return out({ error: 'enter the full legal name of a company, including its legal form (for example Limited, Ltd, PLC, LLP, S.L., S.A., Sociedad Limitada). Names of people are not searched.' }, 400, 0);
   const base = norm(name);
-  const ck = 'ins/v1/' + encodeURIComponent(base);
+  const ck = 'ins/v2/' + encodeURIComponent(base);
   const hit = await caches.default.match(new Request('https://kolaboro.com/__w_cache/' + ck));
   if (!hit && !(await rateOk(req, ctx, 'ins', 20))) return out({ error: 'rate limit: 20 lookups an hour from one address' }, 429, 0);
   const d = await cached(ck, async () => {
