@@ -39,9 +39,9 @@
 .wq-fine{font-size:.78rem!important;color:#4A5661;overflow-wrap:anywhere}
 .wq-pill{display:inline-block;border-radius:999px;padding:2px 10px;font-size:.78rem;font-weight:800;background:#F3F1EA;border:1px solid #E2E0D8;white-space:nowrap}.wq-pill.ok{background:#EEF7F2;border-color:#BFE3CF;color:#086146}.wq-pill.no{background:#FDEDEA;border-color:#F3C3BA;color:#9A2412}.wq-pill.mid{background:#FFF7E6;border-color:#F1D9A6;color:#7A5300}
 .wq-bar{height:8px;background:#EEECE6;border-radius:99px;overflow:hidden;min-width:60px}.wq-bar i{display:block;height:100%;background:#2F5E8C}
-.wq-grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.wq-grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}.wq-grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
 .wq-cards{list-style:none;padding:0!important;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px!important}.wq-cards li{background:#fff;border:1px solid #E2E0D8;border-radius:14px;padding:12px 14px}.wq-cards b{display:block}.wq-cards span{display:block;font-size:.82rem;color:#4A5661;margin-top:4px}
-@media(max-width:860px){.wq-grid2{grid-template-columns:1fr}}
+@media(max-width:860px){.wq-grid2,.wq-grid3{grid-template-columns:1fr}}
 @media(max-width:700px){.wq-k{grid-template-columns:1fr 1fr}.wq-f,.wq-f2{grid-template-columns:1fr}}</style></head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -67,11 +67,12 @@
 
 <h2 id="markets">By market</h2>
 <p>A developer is one developer as named in our research for that market. "With an LEI" means at least one of the companies it names has a Legal Entity Identifier we could match exactly. Most small developers never need an LEI (it is required mainly for trading in financial markets), so a missing LEI is not a warning sign. A foreign parent, or a registration that has lapsed, is a question to ask.</p>
-<div class="wq-ctl"><label for="gg-sort">Sort</label><select id="gg-sort"><option value="projects">most projects</option><option value="share">highest share with an LEI</option><option value="foreign">most foreign parents</option><option value="name">market name</option></select></div>
+<div class="wq-ctl"><label for="gg-sort">Sort</label><select id="gg-sort"><option value="projects">most projects</option><option value="share">highest share with an LEI</option><option value="foreign">most foreign parents</option><option value="name">market name</option></select><label for="gg-show">Show</label><select id="gg-show"><option value="lei">markets with at least one LEI</option><option value="all">all markets</option></select></div>
 <div class="wq-tw"><table class="wq-t"><thead><tr><th>Market</th><th class="n">Projects</th><th class="n">Developers</th><th class="n">With an LEI</th><th>Share</th><th class="n">Foreign parent</th><th class="n">Lapsed or retired</th></tr></thead><tbody id="gg-m"><tr><td colspan="7">Loading…</td></tr></tbody></table></div>
 
-<div class="wq-grid2" style="margin-top:26px">
+<div class="wq-grid3" style="margin-top:26px">
 <div><h3>Registration status of the matched entities</h3><table class="wq-t"><tbody id="gg-st"><tr><td>Loading…</td></tr></tbody></table><p class="wq-fine" style="margin-top:8px">ISSUED: renewed within the last year. LAPSED: not renewed, the data may be out of date. RETIRED or MERGED: the entity closed or was absorbed.</p></div>
+<div><h3>Why no parent is reported</h3><table class="wq-t"><tbody id="gg-ex"><tr><td>Loading…</td></tr></tbody></table><p class="wq-fine" style="margin-top:8px">The reason each matched company gave GLEIF instead of naming a parent. NATURAL_PERSONS means one or more people own it.</p></div>
 <div><h3>Where foreign parents are registered</h3><table class="wq-t"><tbody id="gg-pc"><tr><td>Loading…</td></tr></tbody></table><p class="wq-fine" style="margin-top:8px">Counts of parent links across all markets, by the parent's legal address country.</p></div>
 </div>
 
@@ -197,6 +198,6 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   window.addEventListener('scroll', function(){ b.classList.toggle('on', window.scrollY > window.innerHeight * 1.5); }, { passive: true });
 })();
 </script>
-<script src="/graph/global/gg.js?v=a8ac2c79ac" defer></script>
+<script src="/graph/global/gg.js?v=c299dd650c" defer></script>
 </body>
 </html>

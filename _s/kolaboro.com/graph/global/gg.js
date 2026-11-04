@@ -7,12 +7,13 @@
   var fmt = function (n) { return n == null ? '-' : Number(n).toLocaleString('en-US'); };
   var pct = function (x) { return x == null ? '-' : Math.round(x * 100) + '%'; };
   // Hand check of a sample of matches, done once when the feature shipped. Updated by hand, never by the batch job.
-  var PRECISION = window.KB_GG_PRECISION || null;
+  var PRECISION = { n: 20, correct: 20, date: '4 November 2026', note: 'The sample was drawn at random from the 43 distinct name and LEI pairs matched in the first run. In every case the LEI holder is the company our research names. Two of them are a group or partner named next to a local project company, so a match tells you about the named company, not always about the company on your contract.' };
   var D = null;
 
-  function markets(sort) {
-    var ks = Object.keys(D.markets || {});
+  function markets() {
+    var sort = $('gg-sort').value, all = $('gg-show').value === 'all';
     var m = D.markets;
+    var ks = Object.keys(m || {}).filter(function (k) { return all || m[k].developers_with_lei; });
     ks.sort(function (a, b) {
       if (sort === 'name') return a.localeCompare(b);
       if (sort === 'share') return (m[b].share_developers_with_lei || 0) - (m[a].share_developers_with_lei || 0) || m[b].projects - m[a].projects;
@@ -22,7 +23,7 @@
     $('gg-m').innerHTML = ks.map(function (k) {
       var x = m[k], s = x.share_developers_with_lei, lap = (x.lei_status.lapsed || 0) + (x.lei_status.retired || 0) + (x.lei_status.merged || 0) + (x.lei_status.annulled || 0);
       return '<tr><td>' + esc(k) + '</td><td class="n">' + fmt(x.projects) + '</td><td class="n">' + fmt(x.developers) + '</td><td class="n">' + fmt(x.developers_with_lei) + '</td><td><div class="wq-bar" title="' + pct(s) + '"><i style="width:' + Math.round((s || 0) * 100) + '%"></i></div><span class="wq-fine">' + pct(s) + '</span></td><td class="n">' + fmt(x.developers_foreign_parent) + '</td><td class="n">' + fmt(lap) + '</td></tr>';
-    }).join('');
+    }).join('') + (all ? '' : '<tr><td colspan="7" class="wq-fine">' + fmt(Object.keys(m).length - ks.length) + ' more markets have no developer with an LEI. Choose "all markets" to list them.</td></tr>');
   }
   function project(id) {
     var p = (D.projects || {})[id], el = $('gg-p');
@@ -52,11 +53,12 @@
     var c = d.coverage || {}, t = d.totals || {}, s = d.shares || {};
     $('k-c').textContent = fmt(t.checked); $('k-n').textContent = fmt(c.candidate_names);
     $('k-l').textContent = fmt(t.projects_with_lei) + ' (' + pct(s.projects_with_lei) + ')';
-    $('k-f').textContent = pct(s.lei_developers_foreign_parent);
+    $('k-f').textContent = pct(s.lei_developers_foreign_parent) + (t.developers_with_lei ? ' (' + fmt(t.developers_foreign_parent) + ' of ' + fmt(t.developers_with_lei) + ')' : '');
     $('gg-upd').textContent = 'Updated ' + (d.updated || '').replace('T', ' ').slice(0, 16) + ' UTC from the GLEIF API. ' + fmt(c.matched_names) + ' names matched exactly, ' + fmt(c.ambiguous_names) + ' ambiguous (left unmatched), ' + fmt(c.unmatched_names) + ' with no exact match. ' + fmt(t.developers_with_lei) + ' of ' + fmt(t.developers) + ' developers (' + pct(s.developers_with_lei) + ') have an LEI; of those, ' + pct(s.lei_developers_not_issued) + ' have one that is not kept up to date.' + (c.stopped_early ? ' This run stopped early (request budget), so some projects were not checked.' : '');
-    markets('projects');
-    $('gg-sort').addEventListener('change', function () { markets(this.value); });
+    markets();
+    $('gg-sort').addEventListener('change', markets); $('gg-show').addEventListener('change', markets);
     table('gg-st', (d.totals || {}).lei_status, function (k) { return k.toUpperCase(); });
+    table('gg-ex', (d.totals || {}).parent_exceptions);
     var pc = {}; Object.keys(d.markets).forEach(function (k) { var x = d.markets[k].parent_countries || {}; Object.keys(x).forEach(function (cc) { pc[cc] = (pc[cc] || 0) + x[cc]; }); });
     table('gg-pc', pc, function (k) { return (CN[k] || k) + ' (' + k + ')'; });
     var ids = Object.keys(d.projects || {}).sort(), sel = $('gg-sel');
@@ -75,7 +77,7 @@
   }).catch(function () {
     ['k-c', 'k-n', 'k-l', 'k-f'].forEach(function (k) { $(k).textContent = '-'; });
     $('gg-upd').textContent = 'Starting: the weekly job has not published its first run yet.';
-    $('gg-m').innerHTML = '<tr><td colspan="7">Starting.</td></tr>'; $('gg-p').innerHTML = '<p>Starting.</p>'; $('gg-st').innerHTML = $('gg-pc').innerHTML = '<tr><td>Starting.</td></tr>';
+    $('gg-m').innerHTML = '<tr><td colspan="7">Starting.</td></tr>'; $('gg-p').innerHTML = '<p>Starting.</p>'; $('gg-st').innerHTML = $('gg-pc').innerHTML = $('gg-ex').innerHTML = '<tr><td>Starting.</td></tr>';
     $('gg-prec').innerHTML = '<p>Starting.</p>'; $('gg-method').innerHTML = '<li>Starting.</li>';
   });
 })();
