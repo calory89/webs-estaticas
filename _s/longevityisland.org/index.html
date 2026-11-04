@@ -225,6 +225,11 @@ details p{margin:0 0 16px;color:var(--muted)}
 @media (min-width:800px){.mini4{grid-template-columns:repeat(4,1fr)}}
 .mini4 figure{margin:0;border-radius:14px;overflow:hidden;aspect-ratio:4/5}
 .mini4 img{width:100%;height:100%;object-fit:cover}
+
+textarea{font:inherit;color:var(--ink);background:var(--paper);border:1.5px solid var(--line);border-radius:12px;padding:12px 14px;width:100%;resize:vertical;min-height:70px}
+textarea:focus{border-color:var(--lagoon);outline:none}
+.opt{font-weight:400;color:var(--muted);font-size:.88rem}
+.done .btn{margin:6px 0 14px}
 </style>
 </head>
 <body>
@@ -386,6 +391,7 @@ details p{margin:0 0 16px;color:var(--muted)}
     <fieldset class="field"><legend>How interested are you?</legend>
       <div class="chips"><label><input type="radio" name="int" value="curious"><span>Curious</span></label><label><input type="radio" name="int" value="interested"><span>Interested</span></label><label><input type="radio" name="int" value="very"><span>Very interested</span></label></div>
     </fieldset>
+    <div class="field"><label for="why">Why do you want to take part? <span class="opt">(optional)</span></label><textarea id="why" name="why" rows="2" maxlength="300" placeholder="A line or two is perfect."></textarea></div>
     <div class="hp" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
     <label class="ok"><input type="checkbox" id="ok"> <span>I agree that Longevity Island contacts me about my application by email or WhatsApp. We never share your details.</span></label>
     <button class="btn btn-red wide" id="sb" type="submit">Send my application <span aria-hidden="true">→</span></button>
@@ -393,9 +399,10 @@ details p{margin:0 0 16px;color:var(--muted)}
   </form>
   <div class="done" id="done" hidden tabindex="-1">
     <p class="kicker">Application received</p>
-    <h3 id="doneH">Thank you.</h3>
-    <p id="doneP"></p>
-    <ol class="next"><li>We review your application within 48 hours.</li><li>If you are accepted, we send you the membership terms to read calmly.</li><li>Nothing is charged until you sign and the 14-day cooling-off period has passed.</li></ol>
+    <h3 id="doneH">Thank you for applying.</h3>
+    <p id="doneP">We have received your application and we will contact you soon.</p>
+    <a class="btn btn-red" href="/longevity-island-dossier.pdf" target="_blank" rel="noopener" id="dl">Download your dossier <span aria-hidden="true">↓</span></a>
+    <ol class="next"><li>We review your application within 48 hours.</li><li>We contact you by email or WhatsApp.</li><li>Nothing is charged until you sign and the 14-day cooling-off period has passed.</li></ol>
   </div>
 </section>
 
@@ -481,7 +488,7 @@ details p{margin:0 0 16px;color:var(--muted)}
   f.addEventListener('submit', function(e){
     e.preventDefault(); out.hidden = true;
     var name = f.fn.value.trim(), age = parseInt(f.age.value, 10), em = f.em.value.trim(), wa = f.wa.value.trim(), c = co.value;
-    var act = val('act'), smk = val('smk'), intr = val('int');
+    var act = val('act'), smk = val('smk'), intr = val('int'); var why = (document.getElementById('why').value || '').trim().slice(0,300);
     if (name.length < 2) return show('Please add your full name.');
     if (!(age >= 18 && age <= 100)) return show('Please add your age (18 or over).');
     if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)) return show('Please check your email. It should look like name@example.com.');
@@ -491,7 +498,7 @@ details p{margin:0 0 16px;color:var(--muted)}
     if (!document.getElementById('ok').checked) return show('Please tick the box so we can reply to your application.');
     if (document.getElementById('website').value) { finish(name, c, em); return; }
     sb.disabled = true; sb.textContent = 'Sending…';
-    var msg = Object.assign({ type:'island-apply', page:'island-6500', lang:'en', country:c, age:age, active:act, smoker:smk, interest:intr, whatsapp:wa, referrer:document.referrer || null }, attr);
+    var msg = Object.assign({ type:'island-apply', page:'island-6500', lang:'en', country:c, age:age, active:act, smoker:smk, interest:intr, why:why || null, whatsapp:wa, referrer:document.referrer || null }, attr);
     var p = LIVE ? fetch(SB.url + '/rest/v1/dossier_leads', { method:'POST', headers:{ apikey:SB.key, Authorization:'Bearer ' + SB.key, 'Content-Type':'application/json', Prefer:'return=minimal' },
       body: JSON.stringify({ name:name, email:em, phone:wa, consent:true, source:'longevityisland.org/apply', message: JSON.stringify(msg) }) }).then(function(r){ if (!r.ok) throw 0; }) : Promise.resolve();
     p.then(function(){ fb('Lead', {content_name:'island_apply', country:c, interest:intr}); finish(name, c, em); })
@@ -500,8 +507,8 @@ details p{margin:0 0 16px;color:var(--muted)}
   });
   function finish(name, c, em){
     f.hidden = true; done.hidden = false;
-    document.getElementById('doneH').textContent = 'Thank you, ' + name.split(' ')[0] + '.';
-    document.getElementById('doneP').textContent = (LIVE ? '' : 'Preview only: on the live site this is saved. ') + 'Your application for ' + c + ' is in. We will reply to ' + em + ' or on WhatsApp.';
+    document.getElementById('doneH').textContent = 'Thank you for applying, ' + name.split(' ')[0] + '.';
+    document.getElementById('doneP').textContent = (LIVE ? '' : 'Preview only: on the live site this is saved. ') + 'We have received your application for ' + c + ' and we will contact you soon. Your dossier is on its way to ' + em + '.';
     done.focus({preventScroll:true}); done.scrollIntoView({block:'center', behavior:'smooth'});
   }
 })();

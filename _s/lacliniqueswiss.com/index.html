@@ -21,7 +21,7 @@
 <link rel="alternate icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preload" href="/fonts2/HankenGrotesk-3-latin.woff2" as="font" type="font/woff2" crossorigin>
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalOrganization","name":"La Clinique Swiss","url":"https://lacliniqueswiss.com/","email":"carlos@equinoxinvestmentgroup.com","parentOrganization":{"@type":"Organization","name":"Equinox Investment Group, LLC","url":"https://equinoxinvestmentgroup.com"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"MedicalOrganization","name":"La Clinique Swiss","url":"https://lacliniqueswiss.com/","parentOrganization":{"@type":"Organization","name":"Equinox Investment Group, LLC","url":"https://equinoxinvestmentgroup.com"}}</script>
 <style>
 @font-face{font-family:'Hanken Grotesk';font-style:normal;font-weight:300 600;font-display:swap;src:url(/fonts2/HankenGrotesk-3-latin.woff2) format('woff2')}
 @font-face{font-family:'Hanken Grotesk';font-style:normal;font-weight:300 600;font-display:swap;src:url(/fonts2/HankenGrotesk-2-latin-ext.woff2) format('woff2');unicode-range:U+0100-02AF,U+1E00-1EFF}
@@ -83,6 +83,18 @@ header.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--b
 .contact{padding:84px 0}
 .contact h2{font-weight:500;font-size:clamp(1.9rem,3.6vw,2.8rem);margin:0 0 12px}
 .contact a.mail{font-size:clamp(1.2rem,2.4vw,1.7rem);font-weight:500;text-decoration-color:var(--red);text-underline-offset:6px}
+.cform{display:grid;gap:14px}
+.cform label{display:flex;flex-direction:column;gap:6px;font-weight:600;font-size:.92rem}
+.cform input,.cform select,.cform textarea{font:inherit;font-weight:400;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:6px;padding:11px 12px;min-height:46px;width:100%}
+.cform textarea{resize:vertical}
+.cform input:focus,.cform select:focus,.cform textarea:focus{outline:none;border-color:var(--ink)}
+.g2{display:grid;gap:14px}@media (min-width:560px){.g2{grid-template-columns:1fr 1fr}}
+.opt{font-weight:400;color:var(--muted)}
+.cform .ok{flex-direction:row;align-items:flex-start;gap:10px;font-weight:400;color:var(--muted);font-size:.9rem}
+.cform .ok input{width:18px;height:18px;min-height:0;margin-top:3px;flex:none;accent-color:var(--red)}
+.hp{position:absolute;left:-9999px}
+.cmsg{margin:0;font-size:.95rem}.cmsg.err{color:var(--red)}
+.cform button{justify-self:start;cursor:pointer}
 footer{border-top:1px solid var(--line);padding:28px 0 40px;font-size:.88rem;color:var(--muted)}
 footer p{margin:0 0 8px}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
@@ -171,11 +183,27 @@ footer p{margin:0 0 8px}
 </section>
 
 <section class="contact" id="contact">
-  <div class="wrap">
-    <div class="rule"></div>
-    <h2>Contact</h2>
-    <p class="intro" style="color:var(--muted)">For partnerships, research collaboration or general questions.</p>
-    <a class="mail" href="mailto:carlos@equinoxinvestmentgroup.com">carlos@equinoxinvestmentgroup.com</a>
+  <div class="wrap split" style="align-items:start">
+    <div>
+      <div class="rule"></div>
+      <h2>Contact</h2>
+      <p class="intro" style="color:var(--muted)">For partnerships, research collaboration, press or general questions. We reply personally, usually within two working days.</p>
+    </div>
+    <form id="cf" class="cform" novalidate>
+      <div class="g2">
+        <label>Name<input id="cn" autocomplete="name" required></label>
+        <label>Email<input id="ce" type="email" autocomplete="email" inputmode="email" required></label>
+      </div>
+      <div class="g2">
+        <label><span>Organisation <span class="opt">(optional)</span></span><input id="co" autocomplete="organization"></label>
+        <label>Topic<select id="ct"><option>Partnership</option><option>Research collaboration</option><option>Press</option><option>Other</option></select></label>
+      </div>
+      <label>Message<textarea id="cm" rows="5" maxlength="2000" required></textarea></label>
+      <div class="hp" aria-hidden="true"><label>Website<input id="cw" tabindex="-1" autocomplete="off"></label></div>
+      <label class="ok"><input type="checkbox" id="cok"> <span>I agree that La Clinique Swiss uses these details to reply to my message. <a href="/privacy/">Privacy</a></span></label>
+      <button class="btn solid" id="cs" type="submit">Send message</button>
+      <p id="cmsg" class="cmsg" hidden role="status"></p>
+    </form>
   </div>
 </section>
 </main>
@@ -186,5 +214,26 @@ footer p{margin:0 0 8px}
     <p>The information on this site is general and is not medical advice. Health services are delivered under qualified medical supervision. No specific health outcome is promised.</p>
   </div>
 </footer>
+<script>
+(function(){
+  var f=document.getElementById('cf'),m=document.getElementById('cmsg'),b=document.getElementById('cs');
+  var KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw';
+  function say(t,e){m.hidden=false;m.className='cmsg'+(e?' err':'');m.textContent=t;}
+  f.addEventListener('submit',function(ev){ev.preventDefault();
+    var n=document.getElementById('cn').value.trim(),e=document.getElementById('ce').value.trim(),t=document.getElementById('cm').value.trim();
+    if(n.length<2)return say('Please add your name.',1);
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e))return say('Please check your email address.',1);
+    if(t.length<5)return say('Please write a short message.',1);
+    if(!document.getElementById('cok').checked)return say('Please tick the box so we can reply.',1);
+    if(document.getElementById('cw').value){say('Thank you. Your message has been sent.');f.reset();return;}
+    b.disabled=true;b.textContent='Sending…';
+    var msg={type:'contact',page:'contact',topic:document.getElementById('ct').value,org:document.getElementById('co').value.trim()||null,text:t.slice(0,2000),referrer:document.referrer||null};
+    fetch(location.origin+'/__sb/lacliniqueswiss/rest/v1/dossier_leads',{method:'POST',headers:{apikey:KEY,Authorization:'Bearer '+KEY,'Content-Type':'application/json',Prefer:'return=minimal'},body:JSON.stringify({name:n,email:e,phone:null,consent:true,source:'lacliniqueswiss.com/contact',message:JSON.stringify(msg)})})
+    .then(function(r){if(!r.ok)throw 0;say('Thank you, '+n.split(' ')[0]+'. Your message has been sent and we will reply personally.');f.reset();})
+    .catch(function(){say('We could not send your message just now. Please try again in a minute.',1);})
+    .finally(function(){b.disabled=false;b.textContent='Send message';});
+  });
+})();
+</script>
 </body>
 </html>
