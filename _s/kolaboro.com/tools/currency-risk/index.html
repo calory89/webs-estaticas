@@ -47,7 +47,7 @@
 <section class="phero"><div class="wrap">
   <p class="crumb"><a href="/">Kolaboro</a> / Tools / Currency risk</p>
   <h1>What will your payment plan cost in your own currency?</h1>
-  <p class="lead">Off-plan payments are spread over years, and exchange rates move. Enter your price, your schedule and today's rate. See the total you pay in your home currency if the rate moves 10% or 20% either way.</p>
+  <p class="lead">Off-plan payments are spread over years, and exchange rates move. Enter your price, your schedule and today's rate. See the total you pay in your home currency if the rate moves 10% or 20% either way, and <a href="#history">what the plan would have cost with the real rate moves</a> of the past 1, 3 and 5 years.</p>
 </div></section>
 <section class="mx-sec"><div class="wrap mx-grid">
   <form id="crF" class="mx-form" aria-label="Price, currencies and payment schedule" data-nosubmit>
@@ -67,6 +67,7 @@
     <div class="tl-box">
       <h2>Payment schedule</h2>
       <p class="tl-hint">An example plan is filled in. Replace it with the dates and percentages in your contract. Payments dated before today count as already paid and are not moved in the scenarios.</p>
+      <label class="tl-in" style="margin-bottom:12px">Or start from an example plan shape<select id="hsShape"><option value="">Choose a shape...</option><option value="40-60">10% deposit, 30% during the build, 60% at handover (30 months)</option><option value="60-40">20% deposit, 40% during the build, 40% at handover (36 months)</option><option value="even-6m">Five equal payments, every 6 months (24 months)</option><option value="deposit-balance">30% deposit, 70% at handover (24 months)</option><option value="post-handover">20% a year, two payments after handover (48 months)</option></select><small>Shapes are examples, not any developer's plan. Replace the dates with your contract's.</small></label>
       <div id="crRows" class="mx-rows"></div>
       <div class="mx-act"><button class="btn btn-line btn-sm" type="button" id="crAdd">Add a payment</button><span id="crSum" class="mx-sum" aria-live="polite"></span></div>
     </div>
@@ -92,6 +93,33 @@
   <div class="tl-tw" tabindex="0" role="region" aria-label="Scenario table"><table class="mx-t" id="crT"><thead><tr><th scope="col">Scenario</th><th scope="col">Rate used</th><th scope="col">Total in home currency</th><th scope="col">Versus today</th></tr></thead><tbody></tbody></table></div>
   <div class="tl-tw" tabindex="0" role="region" aria-label="Payments table"><table class="mx-t" id="crPT"><thead><tr><th scope="col">Payment</th><th scope="col">Date</th><th scope="col">Property currency</th><th scope="col">At today's rate</th><th scope="col">If 20% stronger</th></tr></thead><tbody></tbody></table></div>
 </div></section>
+<section class="mx-sec" id="history"><div class="wrap">
+  <p class="eyebrow">Real history, not a guess</p>
+  <h2>What this plan would have cost with the rate moves that actually happened</h2>
+  <p class="lead" style="max-width:68ch">We replay your remaining payments from every trading day in a past window, using the European Central Bank rate published on each payment day, and scale the result to today's rate. This shows the spread of outcomes the past produced. It says nothing about what rates do next.</p>
+  <div class="mx-act" style="margin-top:6px">
+    <fieldset class="tl-fs"><legend class="mx-lg">Window of start dates</legend>
+      <div class="tl-chips"><label class="tl-chip"><input type="radio" name="hsw" value="1"><span>Past 1 year</span></label><label class="tl-chip"><input type="radio" name="hsw" value="3" checked><span>Past 3 years</span></label><label class="tl-chip"><input type="radio" name="hsw" value="5"><span>Past 5 years</span></label></div>
+    </fieldset>
+  </div>
+  <div id="hsOut" class="out mx-out" style="margin-top:16px" aria-live="polite"><p class="mx-empty">Loading...</p></div>
+  <div class="mx-chart" id="hsChart"></div>
+  <p class="mx-cap">Each bar counts start dates by how much more (orange) or less (green) the plan would have cost than at today's rate. Dashed lines: 5th and 95th percentile.</p>
+  <div class="tl-tw" tabindex="0" role="region" aria-label="History by window"><table class="mx-t" id="hsT"><thead><tr><th scope="col">Window</th><th scope="col">Median total</th><th scope="col">5th to 95th percentile</th><th scope="col">Worst start date</th><th scope="col">95th percentile versus today</th></tr></thead><tbody></tbody></table></div>
+  <div class="mx-note" style="overflow-wrap:anywhere">
+    <h3>Method</h3>
+    <ul>
+      <li>For each start date S in the window and each payment not yet made, we take the rate on S plus that payment's distance from today (the last published rate on or before that day). The payment costs: amount times today's rate times (rate on the payment day divided by the rate on S).</li>
+      <li>Payments dated before today are counted at today's rate, as in the scenarios above.</li>
+      <li>A window of N years means N years of start dates, ending at the latest start date whose whole plan is already in the data. Longer plans therefore reach further back.</li>
+      <li>Percentiles use linear interpolation over all start dates. Worst and best are the single highest and lowest totals, with their start date, so you can check them.</li>
+      <li>The ECB publishes mid-market reference rates. Your bank adds a spread and fees on every payment.</li>
+      <li>Only the two currency codes are sent to our server, to fetch the rates. The calculation runs in your browser.</li>
+    </ul>
+    <p class="mx-cap" id="hsSrc"></p>
+  </div>
+  <div class="mx-act"><button type="button" class="btn btn-line btn-sm" id="hsShare">Copy link to this plan</button> <span class="mx-src" id="hsShareMsg" aria-live="polite"></span></div>
+</div></section>
 <section class="mx-sec"><div class="wrap mx-two">
   <div><p class="eyebrow">What you can do</p><h2>Ways to cut the currency risk</h2>
     <ol class="mx-list" id="crAdv"></ol>
@@ -106,7 +134,7 @@
     </ul>
   </aside>
 </div></section>
-<section class="sec alt mx-sec mx-more"><div class="wrap"><p class="eyebrow">Buyer tools</p><h2>More tools for off-plan buyers</h2><div class="mx-tools"><a href="/tools/currency-risk/" aria-current="page"><b>Currency risk</b><span>What your payment plan costs in your own currency if rates move 10% or 20%.</span></a><a href="/tools/delay-compensation/"><b>Delay compensation</b><span>What a late handover clause pays you, after grace and cap, against missed rent.</span></a><a href="/tools/resale-exit/"><b>Resale before handover</b><span>How easily you can sell before the keys, and what to ask the developer.</span></a><a href="/tools/payment-risk/"><b>Payment plan risk score</b><span>How much of your money is at risk, and when, against the build timeline.</span></a><a href="/tools/payment-plan/"><b>Payment plan check</b><span>Spot risky payment patterns and export the payment dates to your calendar.</span></a></div><div class="mx-cta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="moneytool_currency_risk">Get your contract and milestones checked</a><a class="btn btn-line" href="/check">Check a project</a></div></div></section>
+<section class="sec alt mx-sec mx-more"><div class="wrap"><p class="eyebrow">Buyer tools</p><h2>More tools for off-plan buyers</h2><div class="mx-tools"><a href="/tools/build-cost/"><b>Price below build cost</b><span>Price per m² against published construction cost ranges for the city.</span></a><a href="/tools/late-handover/"><b>Late handover</b><span>What the contract and the law say you are owed when the keys are late.</span></a><a href="/tools/currency-risk/" aria-current="page"><b>Currency risk</b><span>What your payment plan costs in your own currency if rates move 10% or 20%.</span></a><a href="/tools/delay-compensation/"><b>Delay compensation</b><span>What a late handover clause pays you, after grace and cap, against missed rent.</span></a><a href="/tools/resale-exit/"><b>Resale before handover</b><span>How easily you can sell before the keys, and what to ask the developer.</span></a><a href="/tools/payment-risk/"><b>Payment plan risk score</b><span>How much of your money is at risk, and when, against the build timeline.</span></a><a href="/tools/payment-plan/"><b>Payment plan check</b><span>Spot risky payment patterns and export the payment dates to your calendar.</span></a></div><div class="mx-cta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="moneytool_currency_risk">Get your contract and milestones checked</a><a class="btn btn-line" href="/check">Check a project</a></div></div></section>
 
 </main>
 <div class="mcta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="cta_sticky">Protect my purchase</a></div>
@@ -196,6 +224,6 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   window.addEventListener('scroll', function(){ b.classList.toggle('on', window.scrollY > window.innerHeight * 1.5); }, { passive: true });
 })();
 </script>
-<script src="/tools/currency-risk/cr.js?v=1" defer></script>
+<script src="/tools/currency-risk/cr.js?v=1" defer></script><script src="/tools/currency-risk/cr-hist.js?v=bd766c21f4" defer></script>
 </body>
 </html>
