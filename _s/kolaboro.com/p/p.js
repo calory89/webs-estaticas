@@ -183,7 +183,7 @@
       '<section class="pf-ponly pf-psrc"><div class="wrap"><h2>Sources and limits</h2><p>Developer claims are read from the developer\'s own pages and listings. Verification levels come from official registers, regulators, courts, stock-exchange filings and major newspapers. Problems are listed only from news, courts and regulators. A published document is not proof that it is genuine; that is what a local agent checks on site and at the registry. This dossier is information, not legal, tax or financial advice. Current version: ' + esc(url) + '. Method: kolaboro.com/how-we-score. Printed ' + today() + '.</p></div></section>' +
 
       '<section class="pf-sec pf-noprint pf-more"><div class="wrap"><h2>More on this project</h2><p class="sub" id="pf-more">' +
-        '<a href="/buyer-reports/?id=' + encodeURIComponent(c.id) + '">Buyer reports</a> &middot; <a href="/milestones/?p=' + encodeURIComponent(c.id) + '">Hold your payments against evidence</a> &middot; <a href="/visual/">Website change watch</a> &middot; <a href="/visit/">Site visit app, works offline</a>' +
+        '<a href="/buyer-reports/?id=' + encodeURIComponent(c.id) + '">Buyer reports</a> &middot; <a href="/milestones/?p=' + encodeURIComponent(c.id) + '">Hold your payments against evidence</a> &middot; <a href="/visual/">Website change watch</a> &middot; <a href="/visit/">Site visit app, works offline</a> &middot; <a href="/index/delays/?id=' + encodeURIComponent(c.id) + '#odds">On-time odds</a> &middot; <a href="/court-file/?id=' + encodeURIComponent(c.id) + '">Evidence bundle</a>' +
       '</p></div></section>' +
 
       '<section class="pf-sec pf-noprint"><div class="wrap"><h2>Compare with similar projects</h2>' +
@@ -202,6 +202,7 @@
     loadIntel(c);
     loadReplies(c);
     loadGraph(c);
+    loadSky(c);
     try { var kb = document.getElementById('pf-kvb'); if (kb && window.kbVerifyLoad) kbVerifyLoad().then(function(KV){ return KV.fetchSigned('/api/open/projects/' + encodeURIComponent(c.id)).then(function(r){ KV.badge(document.getElementById('pf-kvb'), r.check, { what: 'this project record (/api/open/projects/' + c.id + ')' }); }); }).catch(function(){ var e = document.getElementById('pf-kvb'); if (e) e.remove(); }); else if (kb) kb.remove(); } catch (e) {}
     var pb = document.getElementById('pf-print');
     if (pb) pb.addEventListener('click', function(){ try { window.print(); } catch (e) {} });
@@ -316,6 +317,18 @@
     var put = function(id, h){ var el = document.getElementById(id); if (el) el.innerHTML = h; };
     intelP.then(function(j){ put('pf-web', webHtml(j, c)); put('pf-drift', driftHtml(j, c)); })
       .catch(function(){ put('pf-web', WEB_ERR); });
+  }
+
+  /* Satellite readings (batch 4, block U): weekly Sentinel-2 change and NASA night lights, keyed by case id, appended at the end of the
+     row far below the fold so nothing shifts. Only shown when the files have a reading for this id. */
+  function loadSky(c){
+    var el = document.getElementById('pf-more'); if (!el || !window.fetch) return;
+    Promise.all(['/data/stalled-sites.json', '/data/night-lights.json'].map(function(u){ return fetch(u).then(function(r){ return r.ok ? r.json() : null; }).catch(function(){ return null; }); })).then(function(R){
+      var s = R[0] && R[0].projects && R[0].projects[c.id], n = R[1] && R[1].projects && R[1].projects[c.id], out = [];
+      if (s && s.status === 'ok' && s.no_visible_change_months >= 6) out.push('No visible change on site for ' + s.no_visible_change_months + ' months (Sentinel-2)');
+      if (n && n.reading) out.push('Night lights: ' + esc(n.reading));
+      if (out.length) el.insertAdjacentHTML('beforeend', ' &middot; <a href="/satellite/night/">' + out.join('; ') + '</a>');
+    });
   }
 
   /* Company graph link (block Q): only UK projects can be covered, and only when /api/x/q/graph/{id} names a legal company for it.
