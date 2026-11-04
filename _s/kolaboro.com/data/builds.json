@@ -8,11 +8,22 @@
   "lookup": "For any commit X: git rev-parse X:_worker.js gives the worker_tree to look up here."
  },
  "limits": [
-  "The source repository is private, so today only people with access can rebuild and compare. Public reproducibility will live in the open verifiers repository (kolaboro-open), which is not public yet.",
+  "The worker source repository is private, so only people with access can rebuild and compare this bundle. The verifiers, scoring rules and transparency index are public at https://github.com/calory89/kolaboro-open (MIT).",
   "Cloudflare Pages bundles the worker itself when it deploys, with its own tool versions. This hash is of our pinned bundle of the same source, not of the bytes running at the edge, which Cloudflare does not let anyone download."
  ],
- "updated": "2026-11-04T02:46:24Z",
+ "updated": "2026-11-04T07:19:57Z",
  "builds": [
+  {
+   "worker_tree": "5b8db7d7cbf43501b16010e7d3b10b9cef957cae",
+   "first_commit": "2fa173072812600feb0b3af84d6ea4d9b97ff8b4",
+   "commit_time": "2026-11-04T08:16:24+01:00",
+   "built_at": "2026-11-04T07:19:57Z",
+   "sha256": "60a5825a6345bd9cb26d051b080ccc4a95166c5d974230904c83b0fdd3b63a06",
+   "bytes": 24542394,
+   "reproduced": true,
+   "node": "v22.23.4",
+   "run_id": "41791489934"
+  },
   {
    "worker_tree": "0326eb486e7b8d834329d0d3c1581d8e24245472",
    "first_commit": "09269ba62b8e4e780156101ae8e22b83b6143142",
