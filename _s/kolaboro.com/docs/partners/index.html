@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Risk feed for banks and insurers | Kolaboro</title>
+<meta name="description" content="Partner API for banks and insurers: signed, cursor-paginated risk fields per anonymous off-plan project (disclosure, verification level per check, overdue months, natural hazards) and a change feed, with JSON Schema and verification code.">
+
+<link rel="canonical" href="https://kolaboro.com/docs/partners/">
+<link rel="icon" href="/k/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#17212B">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Kolaboro">
+<meta property="og:title" content="Risk feed for banks and insurers | Kolaboro">
+<meta property="og:description" content="Partner API for banks and insurers: signed, cursor-paginated risk fields per anonymous off-plan project (disclosure, verification level per check, overdue months, natural hazards) and a change feed, with JSON Schema and verification code.">
+<meta property="og:url" content="https://kolaboro.com/docs/partners/">
+<meta property="og:image" content="https://kolaboro.com/k/og/pricing.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://kolaboro.com/k/og/pricing.png">
+<link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/k/site.css?v=2188f828cc">
+
+<script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',region:["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});try{if(localStorage.getItem('kb-consent')==='yes')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}</script><script>addEventListener("load",function(){setTimeout(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V";document.head.appendChild(s)},1500)})</script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');gtag('config','G-H5TGZJ1KNG');</script>
+
+
+<link rel="alternate" type="application/rss+xml" title="Kolaboro: what we shipped" href="/feed.xml">
+<style>.eg-p>p,.eg-p>h2,.eg-p>h3,.eg-p>ol,.eg-p>ul{max-width:780px}.eg-p h2{margin-top:44px}.eg-p p,.eg-p li{color:var(--ink-2)}.eg-p ol,.eg-p ul{padding-left:1.2em;display:grid;gap:8px}
+.eg-code{background:#17212B;color:#E8ECEF;border-radius:14px;padding:14px 16px;overflow-x:auto;font:.8rem/1.55 ui-monospace,Menlo,monospace;white-space:pre;max-width:100%;margin:12px 0}
+.eg-live{background:#fff;border:1px solid #E2E0D8;border-radius:16px;padding:18px;margin:16px 0;max-width:100%}
+.eg-k{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:#E2E0D8;border:1px solid #E2E0D8;border-radius:16px;overflow:hidden;margin-top:22px}.eg-k div{background:#fff;padding:14px;min-width:0}.eg-k b{display:block;font-size:1.4rem;overflow-wrap:anywhere}.eg-k span{font-size:.82rem;color:#4A5661}
+.eg-t{width:100%;border-collapse:collapse;font-size:.88rem}.eg-t td,.eg-t th{padding:8px 6px;border-bottom:1px solid #E2E0D8;text-align:left;vertical-align:top}.eg-t th{font-size:.72rem;text-transform:uppercase;color:#4A5661}.eg-tw{overflow-x:auto;max-width:100%}
+.ok{color:#086146;font-weight:800}.no{color:#9A2412;font-weight:800}.mut{color:#59626B;font-size:.88rem}
+.kf{display:flex;gap:10px;flex-wrap:wrap;align-items:stretch}.kf input[type=text],.kf input[type=search]{flex:1 1 260px;min-width:0;font:inherit;font-size:1rem;padding:.85rem 1rem;border:2px solid #17212B;border-radius:14px;background:#fff;color:#17212B}
+.kf .btn{margin-top:0}.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}.chips button{font:inherit;font-size:.85rem;background:#fff;border:1px solid #CFCDC4;border-radius:999px;padding:.4rem .8rem;cursor:pointer;color:#17212B}.chips button:hover{border-color:#17212B}
+.hash{font:.78rem/1.4 ui-monospace,Menlo,monospace;overflow-wrap:anywhere;word-break:break-all}
+.pill{display:inline-block;font-size:.72rem;font-weight:800;text-transform:uppercase;letter-spacing:.04em;padding:.2rem .55rem;border-radius:999px;background:#E3E2DD;color:#17212B}.pill.g{background:#DDEFE7;color:#086146}.pill.r{background:#F8E1DA;color:#9A2412}.pill.o{background:#FFE6D9;color:#B83A05}
+.bars{display:flex;align-items:flex-end;gap:3px;height:90px;margin:10px 0}.bars i{flex:1;background:#17212B;border-radius:3px 3px 0 0;min-height:2px}
+@media(max-width:700px){.eg-k{grid-template-columns:1fr 1fr}.eg-code{font-size:.74rem}}
+.kf input[type=text]{flex:1 1 auto}.eg-code{max-height:520px}
+.pt-y{color:#086146;font-weight:800}.pt-n{color:#9A2412;font-weight:800}.pt-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-top:12px}.pt-tabs button{font:inherit;font-size:.88rem;border:1px solid #CFCDC4;background:#fff;border-radius:999px;padding:.4rem .9rem;cursor:pointer;color:#17212B}.pt-tabs button[aria-selected=true]{background:#17212B;color:#fff;border-color:#17212B}
+</style></head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="ship" role="region" aria-label="Shipping daily"><a class="ship-l" href="/changelog"><i aria-hidden="true"></i><span>Shipping daily</span></a><div class="ship-v"><div class="ship-t" id="shipT"><div class="ship-g"><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>All 646 projects re-verified: 6,419 developer claims tested against registers, courts and press</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>Malaysia TEDUH and Philippines DHSUD licence checks: expired licences and approved delays found</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>Thailand ONEP register: 2 condos found selling before environmental approval</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>Mexico PROFECO contract register checks: one sales registration belonged to a laundry</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>Abu Dhabi ADREC inspections and RAK RERA permit list added: % built straight from the regulator</span><span class="si"><b>Nov 1</b><em class="k-feature">SHIPPED</em>New stage filter: completed but still selling</span><span class="si"><b>Nov 1</b><em class="k-feature">SHIPPED</em>Public database page: verification levels, disclosure distribution, every market</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>+212 projects in one day, round 3: USA, Caribbean, Gulf, Africa, Japan, Australia</span><span class="si"><b>Nov 1</b><em class="k-feature">SHIPPED</em>Stage on every case: off-plan or under construction</span><span class="si"><b>Oct 31</b><em class="k-feature">SHIPPED</em>Verification level per check on every case card: registry, independent, developer, contradicted</span></div><div class="ship-g" aria-hidden="true"><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>All 646 projects re-verified: 6,419 developer claims tested against registers, courts and press</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>Malaysia TEDUH and Philippines DHSUD licence checks: expired licences and approved delays found</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>Thailand ONEP register: 2 condos found selling before environmental approval</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>Mexico PROFECO contract register checks: one sales registration belonged to a laundry</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>Abu Dhabi ADREC inspections and RAK RERA permit list added: % built straight from the regulator</span><span class="si"><b>Nov 1</b><em class="k-feature">SHIPPED</em>New stage filter: completed but still selling</span><span class="si"><b>Nov 1</b><em class="k-feature">SHIPPED</em>Public database page: verification levels, disclosure distribution, every market</span><span class="si"><b>Nov 1</b><em class="k-data">DATA</em>+212 projects in one day, round 3: USA, Caribbean, Gulf, Africa, Japan, Australia</span><span class="si"><b>Nov 1</b><em class="k-feature">SHIPPED</em>Stage on every case: off-plan or under construction</span><span class="si"><b>Oct 31</b><em class="k-feature">SHIPPED</em>Verification level per check on every case card: registry, independent, developer, contradicted</span></div></div></div><a class="ship-r" href="/changelog">Changelog &rarr;</a></div>
+<header class="nav" id="top">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="Kolaboro home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4v24M8 16 23 6.5M8 16l15 9.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="24" cy="6" r="3.4" fill="currentColor"/><circle cx="24" cy="26" r="3.4" fill="currentColor"/><circle cx="8" cy="16" r="4.2" fill="#FF5B14"/></svg>kolaboro</a>
+    <div class="nav-right">
+      <a class="btn btn-hi btn-sm nav-cta-m" href="/#start" data-role="buyer" data-ev="cta_nav_mobile">Protect my purchase</a>
+      <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 20 20"><path d="M2 5h16M2 10h16M2 15h16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>
+    </div>
+    <nav class="links" id="menu" aria-label="Main">
+      <a href="/#how">How it works</a><a href="/check">Check a project</a><a href="/database">Database</a><a href="/pricing">Pricing</a><a href="/cases">Live cases</a><a href="/about">About</a>
+      <a class="btn btn-hi btn-sm" href="/#start" data-role="buyer" data-ev="cta_nav">Protect my purchase</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / <a href="/docs/api/">Docs</a> / Partners</p><h1>Risk feed for banks and insurers</h1><p class="lead">The same anonymous open data as our <a href="/docs/api/">open API</a>, shaped for underwriting and lending checks: one record of risk fields per project id, a change stream with a cursor, every answer signed with Ed25519. No developer names, no project names, no addresses: projects are ids like <code>BALI-024</code>, as in the open data.</p></div></section>
+<section class="sec"><div class="wrap eg-p">
+<div class="eg-live" id="pt-live"><p class="mut" style="margin:0">Calling the sandbox and checking the signature in your browser…</p></div>
+
+<h2 id="keys" style="margin-top:28px">1. Get access</h2>
+<ol><li><b>Sandbox, now:</b> send <code>x-api-key: kb_sandbox_public</code>. It is public on purpose: real data, pages of at most 10, 120 calls per hour per IP address. Use it to build and test your integration.</li>
+<li><b>Free key:</b> create a <code>kb_live_...</code> key on the <a href="/api-keys/">API key page</a>. It is shown once and only its SHA-256 is stored. Pages up to 500, 60 calls per minute per key, and a daily quota shared with the metered open API (1,000 calls a day on the free plan, as listed on that page).</li>
+<li><b>Higher limits:</b> by agreement, write to hello@kolaboro.com. There is no paid tier yet, so there is no price to show.</li></ol>
+
+<h2 id="endpoints">2. Endpoints</h2>
+<div class="eg-tw"><table class="eg-t"><thead><tr><th>Request</th><th>What it returns</th></tr></thead><tbody>
+<tr><td><code>GET /api/x/z/feed/projects</code></td><td>Risk fields per project, sorted by id. Parameters: <code>limit</code> (1 to 500, sandbox 10, default 100), <code>cursor</code> (from <code>next_cursor</code>), <code>ids</code> (comma separated, up to 100), <code>market</code> (market or country name).</td></tr>
+<tr><td><code>GET /api/x/z/feed/changes?since=YYYY-MM-DD</code></td><td>Every recorded change to a project field on or after <code>since</code>, oldest first. Parameters: <code>since</code>, <code>limit</code>, <code>cursor</code>. Each change has a stable <code>id</code> for de-duplication.</td></tr>
+<tr><td><code>GET /api/x/z/feed/schema.json</code></td><td><a href="/api/x/z/feed/schema.json">JSON Schema (2020-12)</a> of both answers. No key.</td></tr>
+<tr><td><code>GET /api/x/z/feed/status</code></td><td>Which sources are present, the data date, whether signing and live keys are on, and the limits. No key.</td></tr>
+</tbody></table></div>
+<p>Pagination is by cursor: pass <code>next_cursor</code> back as <code>cursor</code> until it is <code>null</code>. Cursors name the last item you saw (an id, or a date, project and position), so they keep working when the data is updated between pages. Changes are recorded by the daily data run with a date and no time: to poll, keep the last cursor, or ask again with <code>since</code> set to the last date you saw and drop ids you already have.</p>
+
+<h2 id="fields">3. Fields per project</h2>
+<div class="eg-tw"><table class="eg-t"><thead><tr><th>Field</th><th>Meaning and source</th></tr></thead><tbody>
+<tr><td><code>disclosure_score</code></td><td>How many of six checks are public (permit number, deposit protection, construction progress, plans, track record, no guaranteed returns), 0 to 6. <a href="/how-we-score">How we score</a>.</td></tr>
+<tr><td><code>disclosure</code></td><td>Each check as published: true, false, null for not stated; <code>progress</code> is a percentage when the source gives one.</td></tr>
+<tr><td><code>verification_level</code></td><td>Per check: <code>registry</code> (an official register confirms it), <code>independent</code>, <code>developer</code> (only the developer says so), <code>contradicted</code>, or <code>none</code>. <code>confirmed_score</code> counts registry and independent.</td></tr>
+<tr><td><code>overdue_months</code>, <code>delay_months</code></td><td>Months past the promised handover, and announced delay, when public. null otherwise.</td></tr>
+<tr><td><code>claims</code>, <code>public_problems</code></td><td>Developer claims tested (verified, unverified, contradicted) and public problems recorded.</td></tr>
+<tr><td><code>satellite</code>, <code>register</code></td><td>Latest satellite change status and official register check, when there is one.</td></tr>
+<tr><td><code>hazards</code></td><td>From <a href="/data/hazards.json">/data/hazards.json</a>: height, 100-year river and coastal flood depth, earthquakes M5+ within 100 km since 1900, tsunami run-ups within 50 km, nearest Holocene volcano, distance to the coast. Rounded so it cannot pinpoint a plot. null for projects without coordinates; <span id="pt-hz">168</span> projects have them today. <a href="/hazards/">Sources and method</a>.</td></tr>
+<tr><td><code>on_time</code></td><td id="pt-ot">Odds of handing over on time, copied from <code>/data/on-time.json</code> when that file is published. It is not published yet, so the field is omitted and <code>notes.on_time</code> says so.</td></tr>
+<tr><td><code>page_fingerprint</code>, <code>last_checked</code></td><td>SHA-256 of the developer page we last read and the date; provable against the <a href="/log/">public log</a> with <code>/api/open/proof/{id}</code>.</td></tr>
+</tbody></table></div>
+<p>Every answer also carries <code>dataset_sha256</code>: the SHA-256 of the <a href="/data/bali-cases.json">open dataset file</a> it was computed from. That fingerprint is written to the public log each day and timestamped in Bitcoin, so a figure you relied on can be shown later to be what we published that day. Scores describe what is public, not whether a developer is honest, and they are not a valuation or a credit rating.</p>
+
+<h2 id="examples">4. Example answers</h2>
+<p>Real answers from the sandbox on 4 November 2026 (pretty-printed exactly as served).</p>
+<div class="eg-code">GET /api/x/z/feed/projects?ids=BALI-024
+x-api-key: kb_sandbox_public
+
+{
+ &quot;feed&quot;: &quot;kolaboro-risk-feed&quot;,
+ &quot;version&quot;: &quot;1.0.0&quot;,
+ &quot;kind&quot;: &quot;projects&quot;,
+ &quot;generated_at&quot;: &quot;2026-11-04T08:45:44.778Z&quot;,
+ &quot;timestamp&quot;: 1793781944,
+ &quot;dataset_sha256&quot;: &quot;b43b17f35cef73dd0c6740a22dfd01570891b622a69ce9c2ea64c3991b34dfec&quot;,
+ &quot;data_updated&quot;: &quot;2026-11-04&quot;,
+ &quot;license&quot;: &quot;CC BY 4.0 (credit: Kolaboro, kolaboro.com)&quot;,
+ &quot;sandbox&quot;: true,
+ &quot;total&quot;: 1,
+ &quot;count&quot;: 1,
+ &quot;next_cursor&quot;: null,
+ &quot;notes&quot;: {
+  &quot;meaning&quot;: &quot;Scores describe what is public about a project and how much of it an official register or independent source confirms. They are not a judgement of the developer, a valuation or a credit rating.&quot;,
+  &quot;hazards&quot;: &quot;From /data/hazards.json (updated 2026-11-04, 168 projects with coordinates). Figures are rounded so they cannot pinpoint a plot. null means the project has no coordinates there. Sources and method: https://kolaboro.com/hazards/&quot;,
+  &quot;on_time&quot;: &quot;on_time is omitted: /data/on-time.json is not published yet. When it is, the field appears with no change to the rest of the answer.&quot;
+ },
+ &quot;projects&quot;: [
+  {
+   &quot;id&quot;: &quot;BALI-024&quot;,
+   &quot;market&quot;: &quot;Bali&quot;,
+   &quot;country&quot;: &quot;Indonesia&quot;,
+   &quot;region&quot;: &quot;Ubud&quot;,
+   &quot;stage&quot;: &quot;under construction&quot;,
+   &quot;units&quot;: 22,
+   &quot;tenure&quot;: &quot;leasehold&quot;,
+   &quot;lease_years&quot;: 30,
+   &quot;promised_completion&quot;: 2026,
+   &quot;disclosure_score&quot;: 2,
+   &quot;disclosure_max&quot;: 6,
+   &quot;disclosure&quot;: {
+    &quot;permit_public&quot;: false,
+    &quot;permit_claimed&quot;: false,
+    &quot;deposit_protection&quot;: null,
+    &quot;progress&quot;: 95,
+    &quot;plans&quot;: false,
+    &quot;track_record&quot;: true,
+    &quot;no_guaranteed_returns&quot;: false
+   },
+   &quot;confirmed_score&quot;: 0,
+   &quot;verification_level&quot;: {
+    &quot;permit_public&quot;: &quot;none&quot;,
+    &quot;deposit_protection&quot;: &quot;none&quot;,
+    &quot;progress&quot;: &quot;contradicted&quot;,
+    &quot;plans&quot;: &quot;none&quot;,
+    &quot;track_record&quot;: &quot;developer&quot;,
+    &quot;no_guaranteed_returns&quot;: &quot;none&quot;
+   },
+   &quot;tier&quot;: &quot;mixed&quot;,
+   &quot;claims&quot;: {
+    &quot;verified&quot;: 0,
+    &quot;unverified&quot;: 6,
+    &quot;contradicted&quot;: 5
+   },
+   &quot;public_problems&quot;: 0,
+   &quot;overdue_months&quot;: null,
+   &quot;delay_months&quot;: null,
+   &quot;satellite&quot;: null,
+   &quot;register&quot;: null,
+   &quot;hazards&quot;: {
+    &quot;elevation_m&quot;: 280,
+    &quot;flood_river_100y_m&quot;: 0,
+    &quot;flood_coast_100y_m&quot;: 0,
+    &quot;quakes_m5_within_100km_since_1900&quot;: 44,
+    &quot;quakes_m6_within_100km_since_1900&quot;: 5,
+    &quot;quakes_m7_within_100km_since_1900&quot;: 0,
+    &quot;strongest_quake&quot;: {
+     &quot;magnitude&quot;: 6.54,
+     &quot;year&quot;: 1917,
+     &quot;distance_km&quot;: 10
+    },
+    &quot;tsunami_runups_within_50km&quot;: 21,
+    &quot;tsunami_max_runup_m&quot;: 4.95,
+    &quot;tsunami_latest_year&quot;: 2018,
+    &quot;holocene_volcano_within_100km_km&quot;: 25,
+    &quot;coast_distance&quot;: &quot;over 10 km&quot;
+   },
+   &quot;last_checked&quot;: &quot;2026-11-04&quot;,
+   &quot;page_fingerprint&quot;: {
+    &quot;sha256&quot;: &quot;22dc088f84b5aae7794dbf593a7eddffc406fad78f379a2a962e94ff3a36a8ee&quot;,
+    &quot;date&quot;: &quot;2026-11-04&quot;
+   },
+   &quot;url&quot;: &quot;https://kolaboro.com/p/?id=BALI-024&quot;
+  }
+ ]
+}</div>
+<div class="eg-code">GET /api/x/z/feed/changes?since=2026-11-03&amp;limit=2
+x-api-key: kb_sandbox_public
+
+{
+ &quot;feed&quot;: &quot;kolaboro-risk-feed&quot;,
+ &quot;version&quot;: &quot;1.0.0&quot;,
+ &quot;kind&quot;: &quot;changes&quot;,
+ &quot;generated_at&quot;: &quot;2026-11-04T08:45:44.781Z&quot;,
+ &quot;timestamp&quot;: 1793781944,
+ &quot;dataset_sha256&quot;: &quot;b43b17f35cef73dd0c6740a22dfd01570891b622a69ce9c2ea64c3991b34dfec&quot;,
+ &quot;data_updated&quot;: &quot;2026-11-04&quot;,
+ &quot;license&quot;: &quot;CC BY 4.0 (credit: Kolaboro, kolaboro.com)&quot;,
+ &quot;sandbox&quot;: true,
+ &quot;since&quot;: &quot;2026-11-03&quot;,
+ &quot;total&quot;: 103,
+ &quot;count&quot;: 2,
+ &quot;next_cursor&quot;: &quot;YzoyMDI2LTExLTAzfEFKTS0wMDR8MA&quot;,
+ &quot;notes&quot;: {
+  &quot;granularity&quot;: &quot;Changes are recorded by the daily data run with a date, not a time. Keep the last next_cursor, or re-read since=&lt;last date you saw&gt; and drop ids you already have: ids are stable.&quot;
+ },
+ &quot;changes&quot;: [
+  {
+   &quot;id&quot;: &quot;chg_e34fb31edde2c5a39e6c&quot;,
+   &quot;date&quot;: &quot;2026-11-03&quot;,
+   &quot;project&quot;: &quot;AJM-002&quot;,
+   &quot;market&quot;: &quot;Ajman&quot;,
+   &quot;field&quot;: &quot;plans published&quot;,
+   &quot;from&quot;: false,
+   &quot;to&quot;: true,
+   &quot;url&quot;: &quot;https://kolaboro.com/p/?id=AJM-002&quot;
+  },
+  {
+   &quot;id&quot;: &quot;chg_91a07cbf9323ad2c4c3f&quot;,
+   &quot;date&quot;: &quot;2026-11-03&quot;,
+   &quot;project&quot;: &quot;AJM-004&quot;,
+   &quot;market&quot;: &quot;Ajman&quot;,
+   &quot;field&quot;: &quot;plans published&quot;,
+   &quot;from&quot;: false,
+   &quot;to&quot;: true,
+   &quot;url&quot;: &quot;https://kolaboro.com/p/?id=AJM-004&quot;
+  }
+ ]
+}</div>
+
+<h2 id="verify">5. Verify every answer</h2>
+<p>Each answer has <code>x-kolaboro-signature</code>: base64 Ed25519 over <code>"kolaboro-sig-v1\n" + SHA-256 hex of the exact body</code>, and <code>x-kolaboro-key-id</code>. Public keys: <a href="/.well-known/kolaboro-keys.json">/.well-known/kolaboro-keys.json</a>. It is the scheme of the open API and of our <a href="/docs/webhooks/">signed webhooks</a>. The body holds <code>timestamp</code> (Unix seconds) so a replayed old answer can be refused.</p>
+<div class="pt-tabs" role="tablist"><button type="button" role="tab" aria-selected="true" data-t="c">curl</button><button type="button" role="tab" aria-selected="false" data-t="p">Python</button><button type="button" role="tab" aria-selected="false" data-t="j">JavaScript</button></div>
+<div class="eg-code" data-p="c">#!/bin/sh
+# Fetch one page of the feed and verify its Ed25519 signature with curl and OpenSSL 3.
+URL=${URL:-&quot;https://kolaboro.com/api/x/z/feed/projects?limit=10&quot;}
+KEY=${KOLABORO_KEY:-kb_sandbox_public}
+curl -s -D headers.txt -H &quot;x-api-key: $KEY&quot; &quot;$URL&quot; -o body.json
+grep -i &#x27;^x-kolaboro-signature:&#x27; headers.txt | cut -d&#x27; &#x27; -f2 | tr -d &#x27;\r&#x27; | base64 -d &gt; sig.bin
+# public key (SPKI) from https://kolaboro.com/.well-known/kolaboro-keys.json
+curl -s https://kolaboro.com/.well-known/kolaboro-keys.json | python3 -c &quot;import json,sys; k=[x for x in json.load(sys.stdin)[&#x27;keys&#x27;] if x[&#x27;status&#x27;]==&#x27;active&#x27;][0]; print(&#x27;-----BEGIN PUBLIC KEY-----\n&#x27;+k[&#x27;public_key_spki_b64&#x27;]+&#x27;\n-----END PUBLIC KEY-----&#x27;)&quot; &gt; kolaboro.pem
+# signed message = &quot;kolaboro-sig-v1\n&quot; + SHA-256 hex of the exact body
+printf &#x27;kolaboro-sig-v1\n%s&#x27; &quot;$(sha256sum body.json | cut -d&#x27; &#x27; -f1)&quot; &gt; msg.txt
+openssl pkeyutl -verify -pubin -inkey kolaboro.pem -rawin -in msg.txt -sigfile sig.bin
+</div>
+<div class="eg-code" data-p="p" hidden># Verify a Kolaboro risk feed answer (Python 3.8+, pip install cryptography requests).
+import base64, hashlib, json, time, requests
+from cryptography.hazmat.primitives.asymmetric.ed25519 import Ed25519PublicKey
+
+KEYS = {k[&#x27;kid&#x27;]: k for k in requests.get(&#x27;https://kolaboro.com/.well-known/kolaboro-keys.json&#x27;, timeout=10).json()[&#x27;keys&#x27;]}
+
+def fetch_verified(url, api_key=&#x27;kb_sandbox_public&#x27;, max_age=300):
+    r = requests.get(url, headers={&#x27;x-api-key&#x27;: api_key}, timeout=30)
+    r.raise_for_status()
+    raw = r.content                                   # the exact bytes, before any JSON parsing
+    key = KEYS[r.headers[&#x27;x-kolaboro-key-id&#x27;]]
+    msg = b&#x27;kolaboro-sig-v1\n&#x27; + hashlib.sha256(raw).hexdigest().encode()
+    Ed25519PublicKey.from_public_bytes(base64.b64decode(key[&#x27;public_key_raw_b64&#x27;])).verify(
+        base64.b64decode(r.headers[&#x27;x-kolaboro-signature&#x27;]), msg)   # raises InvalidSignature
+    body = json.loads(raw)
+    if abs(time.time() - body[&#x27;timestamp&#x27;]) &gt; max_age:   # the timestamp is inside the signed body
+        raise ValueError(&#x27;stale answer&#x27;)
+    return body
+
+# walk every page
+url, cursor, n = &#x27;https://kolaboro.com/api/x/z/feed/projects&#x27;, None, 0
+while True:
+    page = fetch_verified(url + (&#x27;?cursor=&#x27; + cursor if cursor else &#x27;&#x27;))
+    n += page[&#x27;count&#x27;]
+    cursor = page[&#x27;next_cursor&#x27;]
+    if not cursor or n &gt;= 30: break
+print(n, &#x27;projects, every page signed, dataset&#x27;, page[&#x27;dataset_sha256&#x27;][:16])
+</div>
+<div class="eg-code" data-p="j" hidden>// Verify a Kolaboro risk feed answer. Node 20+, Deno, Bun, Cloudflare Workers, browsers (WebCrypto Ed25519).
+const te = new TextEncoder(), b64 = s =&gt; Uint8Array.from(atob(s), c =&gt; c.charCodeAt(0));
+const hex = b =&gt; [...new Uint8Array(b)].map(x =&gt; x.toString(16).padStart(2, &#x27;0&#x27;)).join(&#x27;&#x27;);
+const { keys } = await (await fetch(&#x27;https://kolaboro.com/.well-known/kolaboro-keys.json&#x27;)).json();
+
+export async function fetchVerified(url, apiKey = &#x27;kb_sandbox_public&#x27;, maxAge = 300) {
+  const r = await fetch(url, { headers: { &#x27;x-api-key&#x27;: apiKey } });
+  if (!r.ok) throw new Error(&#x27;HTTP &#x27; + r.status + &#x27; &#x27; + await r.text());
+  const raw = await r.text();                         // the exact body, before JSON.parse
+  const k = keys.find(x =&gt; x.kid === r.headers.get(&#x27;x-kolaboro-key-id&#x27;));
+  if (!k) throw new Error(&#x27;unknown key id&#x27;);
+  const pub = await crypto.subtle.importKey(&#x27;raw&#x27;, b64(k.public_key_raw_b64), { name: &#x27;Ed25519&#x27; }, false, [&#x27;verify&#x27;]);
+  const msg = te.encode(&#x27;kolaboro-sig-v1\n&#x27; + hex(await crypto.subtle.digest(&#x27;SHA-256&#x27;, te.encode(raw))));
+  if (!(await crypto.subtle.verify({ name: &#x27;Ed25519&#x27; }, pub, b64(r.headers.get(&#x27;x-kolaboro-signature&#x27;)), msg))) throw new Error(&#x27;bad signature&#x27;);
+  const body = JSON.parse(raw);
+  if (Math.abs(Date.now() / 1000 - body.timestamp) &gt; maxAge) throw new Error(&#x27;stale answer&#x27;);
+  return body;
+}
+
+const since = new Date(Date.now() - 30 * 864e5).toISOString().slice(0, 10);
+let cursor = null, n = 0;
+do {
+  const page = await fetchVerified(&#x27;https://kolaboro.com/api/x/z/feed/changes?since=&#x27; + since + (cursor ? &#x27;&amp;cursor=&#x27; + cursor : &#x27;&#x27;));
+  n += page.count; cursor = page.next_cursor;
+} while (cursor &amp;&amp; n &lt; 30);
+console.log(n, &#x27;changes since&#x27;, since, &#x27;every page signed&#x27;);
+</div>
+
+<h2 id="limits">6. Limits and errors</h2>
+<div class="eg-tw"><table class="eg-t"><thead><tr><th>Key</th><th>Per minute</th><th>Per hour</th><th>Per day</th><th>Page</th></tr></thead><tbody>
+<tr><td>Sandbox <code>kb_sandbox_public</code></td><td>-</td><td>120 per IP address</td><td>-</td><td>10</td></tr>
+<tr><td>Free <code>kb_live_...</code></td><td>60 per key</td><td>-</td><td>daily quota of the key (free plan 1,000), shared with <code>/api/x/k/m/*</code></td><td>500</td></tr></tbody></table></div>
+<p>Headers <code>x-ratelimit-limit</code> and <code>x-ratelimit-remaining</code> (daily quota, or the sandbox hour), and <code>x-ratelimit-burst-limit</code> / <code>x-ratelimit-burst-remaining</code> for the minute. The per-minute counter is kept at each Cloudflare location, so it is approximate across locations; the daily quota is exact. Errors are JSON: <code>401 missing_key</code>, <code>429 rate</code> or <code>quota</code>, <code>400 bad_cursor</code> or <code>bad_since</code>, <code>503 keys_unavailable</code> (the sandbox keeps working).</p>
+
+<h2 id="sla">7. Service level</h2>
+<p>There is no contractual SLA and no service credits. What we publish instead is measured, not promised: the <a href="/status#slo">service level objectives on /status</a>, computed from outside probes when the page loads. The feed runs on the same worker and data as the API those probes check, but the probes do not call the feed itself.</p>
+<div class="eg-live" id="pt-slo"><p class="mut" style="margin:0">Loading the current objectives…</p></div>
+<p>The data is refreshed by a daily run; the freshness objective (90% of projects re-read from their source within 7 days) is reported at <a href="/api/open/freshness">/api/open/freshness</a>. If the hazards file is unavailable, <code>hazards</code> is null and <code>notes.hazards</code> says so; we never fill a gap with an estimate.</p>
+
+<h2 id="changelog">8. Changelog</h2>
+<ul><li><b>1.0.0, 4 November 2026.</b> First version: <code>/feed/projects</code> and <code>/feed/changes</code>, cursor pagination, Ed25519 signatures, JSON Schema, sandbox key. <code>on_time</code> is reserved and appears when <code>/data/on-time.json</code> is published.</li></ul>
+<p>Changes that remove or rename a field get a new major version and are announced here and on the <a href="/changelog">changelog</a> before they ship. New fields can appear in a minor version; ignore fields you do not know. The version is in every answer (<code>version</code>) and in the header <code>x-kolaboro-feed-version</code>.</p>
+</div></section>
+<script>
+(function(){
+  function $(i){ return document.getElementById(i); }
+  function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; }); }
+  [].forEach.call(document.querySelectorAll('.pt-tabs button'), function(b){ b.addEventListener('click', function(){
+    [].forEach.call(document.querySelectorAll('.pt-tabs button'), function(x){ x.setAttribute('aria-selected', x === b ? 'true' : 'false'); });
+    [].forEach.call(document.querySelectorAll('[data-p]'), function(p){ p.hidden = p.getAttribute('data-p') !== b.getAttribute('data-t'); }); }); });
+  var te = new TextEncoder(), b64 = function(s){ return Uint8Array.from(atob(s), function(c){ return c.charCodeAt(0); }); };
+  var hex = function(b){ return [].map.call(new Uint8Array(b), function(x){ return ('0' + x.toString(16)).slice(-2); }).join(''); };
+  var t0 = Date.now();
+  Promise.all([fetch('/api/x/z/feed/projects?limit=10', { headers: { 'x-api-key': 'kb_sandbox_public' }, cache: 'no-store' }), fetch('/.well-known/kolaboro-keys.json').then(function(r){ return r.json(); })]).then(function(v){
+    var r = v[0], keys = v[1].keys, ms = Date.now() - t0;
+    return r.text().then(function(raw){
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      var d = JSON.parse(raw), sig = r.headers.get('x-kolaboro-signature'), k = keys.filter(function(x){ return x.kid === r.headers.get('x-kolaboro-key-id'); })[0];
+      if ($('pt-hz') && d.notes && /\((\d+) projects/.test(d.notes.hazards || '')) $('pt-hz').textContent = RegExp.$1;
+      if (d.notes && d.notes.on_time && /^on_time is copied/.test(d.notes.on_time) && $('pt-ot')) $('pt-ot').textContent = d.notes.on_time;
+      var check = sig && k ? crypto.subtle.digest('SHA-256', te.encode(raw)).then(function(h){ return crypto.subtle.importKey('raw', b64(k.public_key_raw_b64), { name: 'Ed25519' }, false, ['verify']).then(function(key){ return crypto.subtle.verify({ name: 'Ed25519' }, key, b64(sig), te.encode('kolaboro-sig-v1\n' + hex(h))); }); }).catch(function(){ return null; }) : Promise.resolve(false);
+      return check.then(function(ok){
+        $('pt-live').innerHTML = '<p style="margin:0 0 6px"><b>Live sandbox call</b>: ' + d.count + ' of ' + d.total + ' projects in ' + ms + ' ms, data of ' + esc(d.data_updated) + ', dataset <span class="hash">' + esc(d.dataset_sha256.slice(0, 16)) + '…</span></p><p style="margin:0">Signature: ' + (ok ? '<span class="pt-y">verified in your browser</span> with key ' + esc(k.kid) : ok === null ? 'your browser cannot check Ed25519 signatures (WebCrypto); the samples below can' : '<span class="pt-n">not verified</span>') + '. First ids: ' + d.projects.slice(0, 5).map(function(p){ return '<a href="' + esc(p.url) + '">' + esc(p.id) + '</a>'; }).join(', ') + '.</p>';
+      });
+    });
+  }).catch(function(e){ $('pt-live').innerHTML = '<p style="margin:0">The sandbox did not answer just now (' + esc(e.message || e) + '). <a href="/status">Status</a>.</p>'; });
+  fetch('/api/x/o/slo', { cache: 'no-store' }).then(function(r){ return r.json(); }).then(function(d){
+    $('pt-slo').innerHTML = '<div class="eg-tw"><table class="eg-t"><thead><tr><th>Objective</th><th>State now</th></tr></thead><tbody>' + (d.slos || []).map(function(s){
+      var st = s.state === 'measuring' || s.met != null ? (s.met ? '<span class="pt-y">met</span>' : '<span class="pt-n">not met</span>') + (s.budget_remaining_pct != null ? ', ' + s.budget_remaining_pct + '% of the error budget left' : '') + (s.probes ? ' (' + s.probes + ' probes, ' + (s.failed || 0) + ' failed)' : '') : esc(s.state || '-');
+      return '<tr><td>' + esc(s.objective) + '</td><td>' + st + '</td></tr>'; }).join('') + '</tbody></table></div><p class="mut" style="margin:8px 0 0">Computed ' + esc(String(d.computed_at || '').slice(0, 16).replace('T', ' ')) + ' UTC by <a href="/api/x/o/slo">/api/x/o/slo</a>.</p>';
+  }).catch(function(){ $('pt-slo').innerHTML = '<p style="margin:0">See <a href="/status#slo">/status</a>.</p>'; });
+})();
+</script>
+</main>
+<div class="mcta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="cta_sticky">Protect my purchase</a></div>
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="brand" href="/" aria-label="Kolaboro home" style="font-size:1.15rem"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4v24M8 16 23 6.5M8 16l15 9.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="24" cy="6" r="3.4" fill="currentColor"/><circle cx="24" cy="26" r="3.4" fill="currentColor"/><circle cx="8" cy="16" r="4.2" fill="#FF5B14"/></svg>kolaboro</a>
+        <p style="margin-top:12px;max-width:34ch">Independent property checks for people buying abroad. Recruiting our first local agents; desk research in <span data-db="markets">144</span> markets.</p>
+        <form class="news" data-news novalidate><label for="nl-email">Monthly research notes: what developers promise, and what changed.</label>
+          <div class="qform light" style="margin-top:10px"><input id="nl-email" name="email" type="email" placeholder="Your email" autocomplete="email"><button class="btn btn-hi btn-sm" type="submit">Subscribe</button></div>
+          <p class="nmsg" aria-live="polite"></p></form>
+      </div>
+      <div><h2 class="fh">Buyers</h2><ul>
+        <li><a href="/check">Check a project</a></li>
+        <li><a href="/pricing">Pricing</a></li>
+        <li><a href="/report/sample">Sample report</a></li>
+        <li><a href="/tools/market-match/">Market match</a></li>
+        <li><a href="/tools/payment-risk/">Payment plan risk</a></li>
+        <li><a href="/compare/">Compare projects</a></li>
+        <li><a href="/checklist">Before-you-sign checklist</a></li>
+        <li><a href="/destinations">Destinations</a></li>
+      </ul></div>
+      <div><h2 class="fh">Data</h2><ul>
+        <li><a href="/database">The database</a></li>
+        <li><a href="/cases">Live cases</a></li>
+        <li><a href="/m/">Markets</a></li>
+        <li><a href="/transparency-index/">Transparency index</a></li>
+        <li><a href="/report/state-of-off-plan-2026/">State of Off-Plan 2026</a></li>
+        <li><a href="/satellite/">Satellite watch</a></li>
+        <li><a href="/registers/">Official registers</a></li>
+        <li><a href="/docs/api#open">Open data API</a></li>
+        <li><a href="/sql/">SQL in your browser</a></li>
+        <li><a href="/tools/">Buyer tools</a></li>
+        <li><a href="/ask/">Ask Kolaboro</a></li>
+        <li><a href="/extension/">Chrome extension</a></li>
+        <li><a href="/graph/">Company graph</a></li>
+        <li><a href="/index/prices/">Price index</a></li>
+        <li><a href="/hazards/">Natural hazards</a></li>
+        <li><a href="/visual/">Website changes</a></li>
+      </ul></div>
+      <div><h2 class="fh">Trust</h2><ul>
+        <li><a href="/trust/">Trust center</a></li>
+        <li><a href="/how-we-score">How we score</a></li>
+        <li><a href="/standard/">Disclosure standard</a></li>
+        <li><a href="/corrections">Corrections</a></li>
+        <li><a href="/data-policy/">How we collect data</a></li>
+        <li><a href="/verify">Verify evidence</a></li>
+        <li><a href="/independence">Independence</a></li>
+        <li><a href="/security">Security and your data</a></li>
+        <li><a href="/technology">Technology</a></li>
+        <li><a href="/status">System status</a></li><li><a href="/log/">Public log</a></li><li><a href="/engineering/">Engineering</a></li>
+        <li><a href="/metrics">Open metrics</a></li>
+        <li><a href="/benchmark/">AI benchmark</a></li>
+        <li><a href="/log/witnesses/">Log witnesses</a></li>
+      </ul></div>
+      <div><h2 class="fh">Kolaboro</h2><ul>
+        <li><a href="/developers">For developers</a></li>
+        <li><a href="/agents">Become an agent</a></li>
+        <li><a href="/lawyers/">For lawyers</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/investors">Investors</a></li>
+        <li><a href="/roadmap">Roadmap</a></li>
+        <li><a href="/changelog">Changelog</a></li>
+        <li><a href="/api-pilot">API for partners</a></li>
+        <li><a href="/login">Client login</a></li>
+        <li><a href="/legal/privacy">Privacy</a></li>
+        <li><a href="/legal/terms">Terms</a></li>
+      </ul></div>
+    </div>
+    <p class="fine">© 2026 Kolaboro, operated by Equinox Investment Group LLC, 30 N Gould St Ste N, Sheridan, WY 82801, USA. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Reports are opinions based on the evidence listed in them.</p>
+  </div>
+</footer>
+<script src="/k/ask.js?v=f5e9b0d9e7" defer></script><script src="/k/pipeline.js?v=c1da74b911" defer></script><script src="/k/site.js?v=a1c61ce3e2" defer></script><script src="/k/prov.js?v=007ba9250e" defer></script>
+<script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script>
+<div class="cc" id="cc" role="dialog" aria-label="Cookies" hidden><p>We use analytics cookies to improve Kolaboro. <a href="/legal/privacy">Privacy</a></p><div><button class="btn btn-line btn-sm" data-cc="no">Only necessary</button><button class="btn btn-hi btn-sm" data-cc="yes">Accept</button></div></div>
+<script>(function(){var EU=["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"];var st=null;try{st=localStorage;}catch(e){}var c=st&&st.getItem('kb-consent');if(c)return;
+fetch('/api/geo').then(function(r){return r.json();}).then(function(g){if(!g||EU.indexOf(g.country)<0)return;var b=document.getElementById('cc');if(!b)return;b.hidden=false;
+b.addEventListener('click',function(e){var v=e.target.getAttribute('data-cc');if(!v)return;try{st&&st.setItem('kb-consent',v);}catch(x){}
+if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted'});if(window.clarity)clarity('consent');}b.hidden=true;});}).catch(function(){});})();</script>
+<script>
+(function(){
+  var els = document.querySelectorAll('.price'); if (!els.length || !window.fetch) return;
+  var C = { US:['USD','US$',1.08], CA:['CAD','C$',1.5], AU:['AUD','A$',1.65], NZ:['NZD','NZ$',1.8], GB:['GBP','£',.86], SG:['SGD','S$',1.45], AE:['AED','AED ',3.97], CH:['CHF','CHF ',.95] };
+  fetch('/api/geo').then(function(r){ return r.json(); }).then(function(g){
+    var c = C[g && g.country]; if (!c) return;
+    els.forEach(function(el){
+      var m = el.textContent.replace(/[,\s]/g,'').match(/€(\d+)/); if (!m || el.querySelector('.fx')) return;
+      var v = +m[1] * c[2], step = v > 1000 ? 50 : 5, n = Math.round(v / step) * step;
+      el.insertAdjacentHTML('beforeend', '<small class="fx">≈ ' + c[1] + n.toLocaleString('en-US') + ' · charged in €</small>');
+    });
+  }).catch(function(){});
+})();
+</script>
+<script>
+(function(){
+  if (document.body.scrollHeight < window.innerHeight * 3) return;
+  var b = document.createElement('button'); b.className = 'totop'; b.type = 'button'; b.setAttribute('aria-label', 'Back to top'); b.textContent = '↑';
+  document.body.appendChild(b);
+  b.addEventListener('click', function(){ window.scrollTo({ top: 0, behavior: 'smooth' }); });
+  window.addEventListener('scroll', function(){ b.classList.toggle('on', window.scrollY > window.innerHeight * 1.5); }, { passive: true });
+})();
+</script>
+</body>
+</html>

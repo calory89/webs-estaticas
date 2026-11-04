@@ -66,7 +66,8 @@
 
   function sideHtml(c, x){
     return '<section class="ap-card" id="xreport"><h2>Case file</h2><p class="ap-small ap-muted" style="margin-top:0">A PDF of everything in your case today: status, documents read, photos with GPS and time, satellite results and the fingerprint chain, with a QR code anyone can scan to check it wasn\'t changed.</p>' +
-      '<button class="ap-btn" id="xpdf">Download case file (PDF)</button> <button class="ap-btn x-line" id="xjson">Evidence data (JSON)</button></section>' +
+      '<button class="ap-btn" id="xpdf">Download case file (PDF)</button> <button class="ap-btn x-line" id="xjson">Evidence data (JSON)</button>' +
+      '<p class="ap-small ap-muted" style="margin:12px 0 6px">For a lawyer or a court expert: an evidence bundle with an index of exhibits, each one re-hashed on this device, its Bitcoin timestamp, the chain of custody and the public log proof, plus a manifest they can check offline. Built here; only its fingerprint is registered. <a href="/court-file/#case" target="_blank" rel="noopener">What is in it</a></p><button class="ap-btn x-line" id="xcourt">Court-ready evidence bundle</button><div id="xcourtst" class="ap-small ap-muted" aria-live="polite"></div></section>' +
       '<section class="ap-card" id="xshare"><h2>Share your case</h2><p class="ap-small ap-muted" style="margin-top:0">A read-only page for your lawyer, bank or partner: stage, verdict, how many documents and photos are sealed, and the fingerprint chain. No documents, no personal details.</p><label class="ap-small" style="display:flex;gap:8px;align-items:center;margin:0 0 10px"><input type="checkbox" id="xshp" style="width:auto"> Show the project name and our note</label><button class="ap-btn x-sm" id="xshb">Create a share link</button><div id="xsho"></div></section>' +
       '<section class="ap-card"><h2>Emails</h2><form class="ap-form" id="xpref"><label>Language of your emails and reports<select name="lang">' + LANGS.map(function(l){ return '<option value="' + l[0] + '"' + (x.lang === l[0] ? ' selected' : '') + '>' + l[1] + '</option>'; }).join('') + '</select></label>' +
       '<label class="full" style="flex-direction:row;gap:8px;align-items:center;display:flex"><input type="checkbox" name="watch"' + (x.watch ? ' checked' : '') + ' style="width:auto"> Email me when the satellite sees changes on my plot</label><div class="full"><button class="ap-btn x-sm" type="submit">Save</button></div></form></section>';
@@ -92,6 +93,7 @@
     $('xadd').onclick = function(){ addDoc(c, token, demo); };
     $('xjson').onclick = function(){ var blob = new Blob([JSON.stringify({ case: c.code, case_id: c.id, exported: new Date().toISOString(), formula: "chain = sha256((prev or 'genesis:' + case_id) + '|' + sha256 + '|' + kind + '|' + taken_at as YYYY-MM-DDTHH:MM:SSZ)", evidence: ev.map(function(e){ return { id: e.id, kind: e.kind, title: e.title, sha256: e.sha256, prev: e.prev, chain: e.chain, taken_at: e.taken_at, lat: e.lat, lng: e.lng, by: e.by, status: e.status }; }) }, null, 2)], { type: 'application/json' }); var u = URL.createObjectURL(blob), l = document.createElement('a'); l.href = u; l.download = 'kolaboro-' + c.code + '-evidence.json'; l.click(); };
     $('xpdf').onclick = function(){ pdf(c, x, token); };
+    $('xcourt').onclick = function(){ court(c, x, token); };
     $('xpref').onsubmit = function(e){ e.preventDefault(); if (demo) return KB.toast('This is the demo account: nothing is saved.'); rpc(token, 'prefs', { case_id: c.id, lang: this.lang.value, watch: this.watch.checked }).then(function(d){ if (d.case) { CACHE[c.id] = d.case; KB.toast('Saved'); } }); };
     mapInit(c, x, token, demo);
     $('xshb').onclick = function(){
@@ -257,6 +259,18 @@
           btn.disabled = false; btn.textContent = 'Download case file (PDF)'; if (window.kbEvent) kbEvent('case_pdf');
         });
       }).catch(function(e){ btn.disabled = false; btn.textContent = 'Download case file (PDF)'; KB.toast('Could not build the PDF: ' + (e.message || e)); });
+  }
+
+  // ---------- court-ready evidence bundle (k/courtfile.js, built on this device) ----------
+  function court(c, x, token){
+    var btn = $('xcourt'), st = $('xcourtst'); if (btn.disabled) return; btn.disabled = true; btn.textContent = 'Building…';
+    load('/k/courtfile.js?v=3d44dbdddb').then(function(){
+      return KBCourt.caseFile(c, x, token, { onStep: function(s){ if (st) st.textContent = s; } });
+    }).then(function(r){
+      KBCourt.save(r); var R = r.results;
+      if (st) st.innerHTML = (R.chain && R.signatures && R.log_chain && R.checkpoint && R.inclusion && R.files !== false ? '✓ ' : '⚠ ') + r.manifest.exhibits.length + ' exhibits. Chain ' + (R.chain ? 'verified' : 'does not verify') + ', files ' + (R.files === false ? 'do not all match' : 'match') + ', log proof ' + (R.inclusion ? 'verified' : 'failed') + '. PDF fingerprint <code title="' + esc(r.pdfSha) + '">' + short(r.pdfSha) + '</code>' + (r.registered ? ' registered.' : '.');
+      if (window.kbEvent) kbEvent('court_file_case');
+    }).catch(function(e){ if (st) st.textContent = 'Could not build the bundle: ' + (e && e.message || e); }).then(function(){ btn.disabled = false; btn.textContent = 'Court-ready evidence bundle'; });
   }
 
   window.KBX = function(c, D, token){
