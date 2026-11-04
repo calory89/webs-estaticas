@@ -84,7 +84,7 @@
 <tr><td><code>claims</code>, <code>public_problems</code></td><td>Developer claims tested (verified, unverified, contradicted) and public problems recorded.</td></tr>
 <tr><td><code>satellite</code>, <code>register</code></td><td>Latest satellite change status and official register check, when there is one.</td></tr>
 <tr><td><code>hazards</code></td><td>From <a href="/data/hazards.json">/data/hazards.json</a>: height, 100-year river and coastal flood depth, earthquakes M5+ within 100 km since 1900, tsunami run-ups within 50 km, nearest Holocene volcano, distance to the coast. Rounded so it cannot pinpoint a plot. null for projects without coordinates; <span id="pt-hz">168</span> projects have them today. <a href="/hazards/">Sources and method</a>.</td></tr>
-<tr><td><code>on_time</code></td><td id="pt-ot">Odds of handing over on time, copied from <code>/data/on-time.json</code> when that file is published. It is not published yet, so the field is omitted and <code>notes.on_time</code> says so.</td></tr>
+<tr><td><code>on_time</code></td><td id="pt-ot">From <a href="/data/on-time.json">/data/on-time.json</a>: the project's handover status, first and current handover month, months moved, and <code>estimate</code>: the share of closed comparable projects that handed over within 6 months of their first date, with a 95% interval and the number of comparables. Today there are few closed projects, so the estimate is pooled over all markets and is a floor, not a forecast; <code>notes.on_time</code> carries that file's own caveat. If the file is missing, the field is omitted.</td></tr>
 <tr><td><code>page_fingerprint</code>, <code>last_checked</code></td><td>SHA-256 of the developer page we last read and the date; provable against the <a href="/log/">public log</a> with <code>/api/open/proof/{id}</code>.</td></tr>
 </tbody></table></div>
 <p>Every answer also carries <code>dataset_sha256</code>: the SHA-256 of the <a href="/data/bali-cases.json">open dataset file</a> it was computed from. That fingerprint is written to the public log each day and timestamped in Bitcoin, so a figure you relied on can be shown later to be what we published that day. Scores describe what is public, not whether a developer is honest, and they are not a valuation or a credit rating.</p>
@@ -96,10 +96,10 @@ x-api-key: kb_sandbox_public
 
 {
  &quot;feed&quot;: &quot;kolaboro-risk-feed&quot;,
- &quot;version&quot;: &quot;1.0.0&quot;,
+ &quot;version&quot;: &quot;1.1.0&quot;,
  &quot;kind&quot;: &quot;projects&quot;,
- &quot;generated_at&quot;: &quot;2026-11-04T08:45:44.778Z&quot;,
- &quot;timestamp&quot;: 1793781944,
+ &quot;generated_at&quot;: &quot;2026-11-04T09:06:46.774Z&quot;,
+ &quot;timestamp&quot;: 1793783206,
  &quot;dataset_sha256&quot;: &quot;b43b17f35cef73dd0c6740a22dfd01570891b622a69ce9c2ea64c3991b34dfec&quot;,
  &quot;data_updated&quot;: &quot;2026-11-04&quot;,
  &quot;license&quot;: &quot;CC BY 4.0 (credit: Kolaboro, kolaboro.com)&quot;,
@@ -110,7 +110,7 @@ x-api-key: kb_sandbox_public
  &quot;notes&quot;: {
   &quot;meaning&quot;: &quot;Scores describe what is public about a project and how much of it an official register or independent source confirms. They are not a judgement of the developer, a valuation or a credit rating.&quot;,
   &quot;hazards&quot;: &quot;From /data/hazards.json (updated 2026-11-04, 168 projects with coordinates). Figures are rounded so they cannot pinpoint a plot. null means the project has no coordinates there. Sources and method: https://kolaboro.com/hazards/&quot;,
-  &quot;on_time&quot;: &quot;on_time is omitted: /data/on-time.json is not published yet. When it is, the field appears with no change to the rest of the answer.&quot;
+  &quot;on_time&quot;: &quot;on_time comes from /data/on-time.json (generated 2026-11-04). Question: Will this project hand over within 6 months of the first handover date we have on record? estimate is the share of closed comparable projects that handed over on time, with a 95% interval. The tracked projects are the ones being marketed now. Projects that handed over on time and stopped marketing are less likely to be in the data, so the on-time rate among closed projects is very likely lower than the true rate. Treat it as a floor for what this data set shows, not as a forecast. Method: https://kolaboro.com/data/on-time.json&quot;
  },
  &quot;projects&quot;: [
   {
@@ -177,7 +177,24 @@ x-api-key: kb_sandbox_public
     &quot;sha256&quot;: &quot;22dc088f84b5aae7794dbf593a7eddffc406fad78f379a2a962e94ff3a36a8ee&quot;,
     &quot;date&quot;: &quot;2026-11-04&quot;
    },
-   &quot;url&quot;: &quot;https://kolaboro.com/p/?id=BALI-024&quot;
+   &quot;url&quot;: &quot;https://kolaboro.com/p/?id=BALI-024&quot;,
+   &quot;on_time&quot;: {
+    &quot;status&quot;: &quot;open&quot;,
+    &quot;first_handover&quot;: &quot;2026-12&quot;,
+    &quot;current_handover&quot;: &quot;2026-12&quot;,
+    &quot;months_moved&quot;: 0,
+    &quot;months_overdue&quot;: 0,
+    &quot;months_to_first_handover&quot;: 1,
+    &quot;estimate&quot;: {
+     &quot;on_time_pct&quot;: 12.8,
+     &quot;ci95_low_pct&quot;: 6,
+     &quot;ci95_high_pct&quot;: 25.2,
+     &quot;comparables&quot;: 47,
+     &quot;comparables_on_time&quot;: 6,
+     &quot;basis&quot;: &quot;all markets&quot;,
+     &quot;level&quot;: &quot;all&quot;
+    }
+   }
   }
  ]
 }</div>
@@ -186,10 +203,10 @@ x-api-key: kb_sandbox_public
 
 {
  &quot;feed&quot;: &quot;kolaboro-risk-feed&quot;,
- &quot;version&quot;: &quot;1.0.0&quot;,
+ &quot;version&quot;: &quot;1.1.0&quot;,
  &quot;kind&quot;: &quot;changes&quot;,
- &quot;generated_at&quot;: &quot;2026-11-04T08:45:44.781Z&quot;,
- &quot;timestamp&quot;: 1793781944,
+ &quot;generated_at&quot;: &quot;2026-11-04T09:06:46.782Z&quot;,
+ &quot;timestamp&quot;: 1793783206,
  &quot;dataset_sha256&quot;: &quot;b43b17f35cef73dd0c6740a22dfd01570891b622a69ce9c2ea64c3991b34dfec&quot;,
  &quot;data_updated&quot;: &quot;2026-11-04&quot;,
  &quot;license&quot;: &quot;CC BY 4.0 (credit: Kolaboro, kolaboro.com)&quot;,
@@ -308,7 +325,7 @@ console.log(n, &#x27;changes since&#x27;, since, &#x27;every page signed&#x27;);
 <p>The data is refreshed by a daily run; the freshness objective (90% of projects re-read from their source within 7 days) is reported at <a href="/api/open/freshness">/api/open/freshness</a>. If the hazards file is unavailable, <code>hazards</code> is null and <code>notes.hazards</code> says so; we never fill a gap with an estimate.</p>
 
 <h2 id="changelog">8. Changelog</h2>
-<ul><li><b>1.0.0, 4 November 2026.</b> First version: <code>/feed/projects</code> and <code>/feed/changes</code>, cursor pagination, Ed25519 signatures, JSON Schema, sandbox key. <code>on_time</code> is reserved and appears when <code>/data/on-time.json</code> is published.</li></ul>
+<ul><li><b>1.1.0, 4 November 2026.</b> <code>on_time</code> filled from <code>/data/on-time.json</code>, now published: status, handover months, months moved and the on-time estimate with its interval.</li><li><b>1.0.0, 4 November 2026.</b> First version: <code>/feed/projects</code> and <code>/feed/changes</code>, cursor pagination, Ed25519 signatures, JSON Schema, sandbox key. <code>on_time</code> reserved until <code>/data/on-time.json</code> is published.</li></ul>
 <p>Changes that remove or rename a field get a new major version and are announced here and on the <a href="/changelog">changelog</a> before they ship. New fields can appear in a minor version; ignore fields you do not know. The version is in every answer (<code>version</code>) and in the header <code>x-kolaboro-feed-version</code>.</p>
 </div></section>
 <script>
@@ -327,7 +344,7 @@ console.log(n, &#x27;changes since&#x27;, since, &#x27;every page signed&#x27;);
       if (!r.ok) throw new Error('HTTP ' + r.status);
       var d = JSON.parse(raw), sig = r.headers.get('x-kolaboro-signature'), k = keys.filter(function(x){ return x.kid === r.headers.get('x-kolaboro-key-id'); })[0];
       if ($('pt-hz') && d.notes && /\((\d+) projects/.test(d.notes.hazards || '')) $('pt-hz').textContent = RegExp.$1;
-      if (d.notes && d.notes.on_time && /^on_time is copied/.test(d.notes.on_time) && $('pt-ot')) $('pt-ot').textContent = d.notes.on_time;
+      if (d.notes && d.notes.on_time && false && $('pt-ot')) $('pt-ot').textContent = d.notes.on_time;
       var check = sig && k ? crypto.subtle.digest('SHA-256', te.encode(raw)).then(function(h){ return crypto.subtle.importKey('raw', b64(k.public_key_raw_b64), { name: 'Ed25519' }, false, ['verify']).then(function(key){ return crypto.subtle.verify({ name: 'Ed25519' }, key, b64(sig), te.encode('kolaboro-sig-v1\n' + hex(h))); }); }).catch(function(){ return null; }) : Promise.resolve(false);
       return check.then(function(ok){
         $('pt-live').innerHTML = '<p style="margin:0 0 6px"><b>Live sandbox call</b>: ' + d.count + ' of ' + d.total + ' projects in ' + ms + ' ms, data of ' + esc(d.data_updated) + ', dataset <span class="hash">' + esc(d.dataset_sha256.slice(0, 16)) + '…</span></p><p style="margin:0">Signature: ' + (ok ? '<span class="pt-y">verified in your browser</span> with key ' + esc(k.kid) : ok === null ? 'your browser cannot check Ed25519 signatures (WebCrypto); the samples below can' : '<span class="pt-n">not verified</span>') + '. First ids: ' + d.projects.slice(0, 5).map(function(p){ return '<a href="' + esc(p.url) + '">' + esc(p.id) + '</a>'; }).join(', ') + '.</p>';

@@ -12,7 +12,7 @@ import * as KB from './kolaboro.js';
 const { json, rpc, sha, signBody, openLoad } = KB;
 export const PATHS = /^\/api\/x\/z(\/|$)/;
 
-const VERSION = '1.0.0';
+const VERSION = '1.1.0';
 const SANDBOX_KEY = 'kb_sandbox_public';          // documented, public, not a secret: real data, small pages, per-IP limit
 const SANDBOX_PER_HOUR = 120, SANDBOX_PAGE = 10;
 const LIVE_PER_MINUTE = 60, PAGE_DEFAULT = 100, PAGE_MAX = 500;
@@ -63,8 +63,12 @@ async function sources(env) {
 function onTimeOf(ot, id) {
   if (!ot) return undefined;
   const P = ot.projects || ot.rows || ot.items;
-  if (Array.isArray(P)) { const r = P.find(x => x && (x.id === id || x.project === id)); return r || null; }
-  return P && P[id] !== undefined ? P[id] : null;
+  let r;
+  if (Array.isArray(P)) r = P.find(x => x && (x.id === id || x.project === id)) || null; else r = P && P[id] !== undefined ? P[id] : null;
+  if (!r || typeof r !== 'object' || ot.version !== 'on-time-1') return r;
+  const g = r.g && ot.groups ? ot.groups[r.g] : null;
+  return { status: r.s ?? null, first_handover: r.first ?? null, current_handover: r.cur ?? null, months_moved: r.moved ?? null, months_overdue: r.overdue ?? null, months_to_first_handover: r.to_first ?? null,
+    estimate: g ? { on_time_pct: g.p ?? null, ci95_low_pct: g.lo ?? null, ci95_high_pct: g.hi ?? null, comparables: g.n ?? null, comparables_on_time: g.k ?? null, basis: g.name || null, level: g.level || null } : null };
 }
 const MON = { Jan: 1, Feb: 2, Mar: 3, Apr: 4, May: 5, Jun: 6, Jul: 7, Aug: 8, Sep: 9, Oct: 10, Nov: 11, Dec: 12 };
 function isoDay(s) { const m = String(s || '').match(/^(\d{1,2}) (\w{3}) (\d{4})$/); return m && MON[m[2]] ? m[3] + '-' + String(MON[m[2]]).padStart(2, '0') + '-' + m[1].padStart(2, '0') : null; }
@@ -100,7 +104,7 @@ function risk(c, S) {
 function notes(S) {
   const n = { meaning: 'Scores describe what is public about a project and how much of it an official register or independent source confirms. They are not a judgement of the developer, a valuation or a credit rating.',
     hazards: S.hz ? 'From /data/hazards.json (updated ' + S.hz.updated + ', ' + Object.keys(S.hz.projects).length + ' projects with coordinates). Figures are rounded so they cannot pinpoint a plot. null means the project has no coordinates there. Sources and method: https://kolaboro.com/hazards/' : 'Hazard file unavailable at the moment: hazards are null for every project.' };
-  n.on_time = S.ot ? 'on_time is copied as published in /data/on-time.json (updated ' + (S.ot.updated || 'date not stated') + '); see that file for its method.' : 'on_time is omitted: /data/on-time.json is not published yet. When it is, the field appears with no change to the rest of the answer.';
+  n.on_time = S.ot ? 'on_time comes from /data/on-time.json (generated ' + (S.ot.generated || S.ot.updated || 'date not stated') + '). ' + (S.ot.question ? 'Question: ' + S.ot.question + ' ' : '') + 'estimate is the share of closed comparable projects that handed over on time, with a 95% interval. ' + (S.ot.bias || '') + ' Method: https://kolaboro.com/data/on-time.json' : 'on_time is omitted: /data/on-time.json is not published yet. When it is, the field appears with no change to the rest of the answer.';
   return n;
 }
 const b64u = s => btoa(unescape(encodeURIComponent(s))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
@@ -179,7 +183,7 @@ async function status(env) {
   const S = await sources(env); let keys = null;
   try { const r = await fetch('https://kolaboro.com/api/x/k/keys/status'); keys = r.ok ? await r.json() : null; } catch (e) {}
   return { feed: 'kolaboro-risk-feed', version: VERSION, checked_at: new Date().toISOString(), data_updated: S.L.d.updated, dataset_sha256: S.L.sha, projects: (S.L.d.cases || []).length,
-    sources: { dataset: '/data/bali-cases.json', hazards: S.hz ? { file: '/data/hazards.json', updated: S.hz.updated, projects: Object.keys(S.hz.projects).length } : null, on_time: S.ot ? { file: '/data/on-time.json', updated: S.ot.updated || null } : null },
+    sources: { dataset: '/data/bali-cases.json', hazards: S.hz ? { file: '/data/hazards.json', updated: S.hz.updated, projects: Object.keys(S.hz.projects).length } : null, on_time: S.ot ? { file: '/data/on-time.json', generated: S.ot.generated || S.ot.updated || null, version: S.ot.version || null } : null },
     signing: !!(env && env.KB_SIGN_KEY), live_keys_open: keys ? !!keys.open : null,
     limits: { sandbox: { key: SANDBOX_KEY, per_ip_per_hour: SANDBOX_PER_HOUR, page_max: SANDBOX_PAGE }, live: { per_key_per_minute: LIVE_PER_MINUTE, per_key_per_day: keys && keys.plans ? (keys.plans[0] || {}).daily_quota : null, page_max: PAGE_MAX, note: 'The daily quota is shared with the metered open API (/api/x/k/m/*) for the same key.' } } };
 }
@@ -215,7 +219,7 @@ const SCHEMA = {
         public_problems: { type: 'integer' }, overdue_months: { type: ['number', 'null'], description: 'months past the promised handover; null when not overdue or no date is public' }, delay_months: nul('number'),
         satellite: { type: ['object', 'null'] }, register: { type: ['object', 'null'] },
         hazards: { type: ['object', 'null'], description: 'null when the project has no coordinates in /data/hazards.json' },
-        on_time: { description: 'present only when /data/on-time.json is published; copied as published there' },
+        on_time: { type: ['object', 'null'], description: 'present only when /data/on-time.json is published: status, handover dates and months moved for this project, and estimate (share of closed comparable projects that handed over within 6 months of their first date, 95% Wilson interval). null when the file has no row for the project' },
         last_checked: { type: ['string', 'null'], format: 'date' }, page_fingerprint: { type: ['object', 'null'] }, url: { type: 'string', format: 'uri' } } },
     change: { type: 'object', required: ['id', 'date', 'project', 'field', 'from', 'to'],
       properties: { id: { type: 'string', pattern: '^chg_[0-9a-f]{20}$' }, date: { type: 'string', format: 'date' }, project: { type: 'string' }, market: { type: 'string' }, field: { type: 'string' }, from: {}, to: {}, url: { type: 'string' } } }
