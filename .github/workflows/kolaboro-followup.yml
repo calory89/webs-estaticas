@@ -45,6 +45,7 @@ jobs:
           KB_PROMISE_MAX_USD: '9.5'
         run: |
           if [ -z "$ANTHROPIC_API_KEY" ]; then echo "::warning::ANTHROPIC_API_KEY is not set: only cached readings are used"; fi
+          curl -fsS https://kolaboro.com/data/bali-cases.json -o "$RUNNER_TEMP/cases.json" && export KB_PUBLIC_CASES="$RUNNER_TEMP/cases.json" || echo "::warning::public cases not reachable: publishing every id"
           python3 tools/kolaboro-agent/promises.py "$RUNNER_TEMP/out"
           python3 -c "import json,sys;d=json.load(open('$RUNNER_TEMP/out/promises.json'));assert d['counts']['projects_tracked']>100;print('ok',d['counts'])"
       - name: Save the model cache and spend log on main

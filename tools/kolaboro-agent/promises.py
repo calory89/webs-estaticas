@@ -555,6 +555,14 @@ def main():
                 L.append(r)
         if L:
             out[ids[slug]] = L
+    # only ids already in the public dataset (projects found today get their public id with the next research agent publish)
+    pub_ids = None
+    pc = os.environ.get('KB_PUBLIC_CASES')
+    if pc and os.path.exists(pc):
+        pub_ids = {c['id'] for c in load(pc, {}).get('cases', [])} or None
+    if pub_ids:
+        out = {k: v for k, v in out.items() if k in pub_ids}
+        P = [p for p in P if ids[p['slug']] in pub_ids]
     # 4. totals
     allp = [x for v in out.values() for x in v]
     def tally(lst):
@@ -602,7 +610,7 @@ def main():
                     'days': sorted({d for v in pv.values() for d, _ in v})},
         'checks': {'rejected': dict(rejected), 'date_conflicts': stats['date_conflicts']},
         'spend': {'this_run_usd': spend['usd'], 'total_usd': slog['total_usd'], 'cap_usd': MAX_TOTAL, 'runs': len(slog['runs']),
-                  'models': [HAIKU, SONNET], 'note': 'Computed from token usage at list prices: 0.10 / 0.50 USD (haiku) and 2 / 10 USD (sonnet) per million tokens in / out. Runs before 4 Nov 2026 12:00 UTC were logged at a 10 times higher estimate.'},
+                  'models': [HAIKU, SONNET], 'note': 'Computed from token usage at list prices: 0.10 / 0.50 USD (haiku) and 2 / 10 USD (sonnet) per million tokens in / out. The first run (4 Nov 2026 08:38 UTC, logged as 0.26 USD) used a 10 times higher estimate.'},
         'counts': dict(tally(allp), projects=len(out), projects_tracked=len(P)),
         'kinds_totals': kinds,
         'markets': mk,
