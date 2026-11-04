@@ -1,6 +1,22 @@
 {
  "deploys": [
   {
+   "at": "2026-11-04T09:13:03Z",
+   "commit": "df2e4d3424cebcfb6fc9a5f4a98dcf75d86dd546",
+   "checks_passed": 32,
+   "checks_total": 32,
+   "failed": [],
+   "run": "https://github.com/calory89/webs-estaticas/actions/runs/41805002910",
+   "result": "pass",
+   "wait_s": 142,
+   "changes": [
+    "46bf9812336e",
+    "1bdf029981fc",
+    "e522b02d77a0",
+    "5a1bea79a686"
+   ]
+  },
+  {
    "at": "2026-11-04T09:09:34Z",
    "commit": "007a3d629437be36dc24e662079b7b6a21d777e2",
    "checks_passed": 32,
@@ -759,13 +775,13 @@
  "canary": "Cloudflare Pages sends each push to all visitors at once and offers no percentage canary, so none is claimed. A bad push can be visible for a few minutes until the rollback is live.",
  "rollback_mode": "Rollback: a git commit restoring the files changed since the last passing commit; Pages deploys it in about 1 to 2 minutes. An instant Cloudflare API rollback is built in but needs a Pages-scoped token, not configured yet.",
  "latest_checks": {
-  "at": "2026-11-04T09:09:34.012Z",
-  "commit": "007a3d629437be36dc24e662079b7b6a21d777e2",
+  "at": "2026-11-04T09:13:03.773Z",
+  "commit": "df2e4d3424cebcfb6fc9a5f4a98dcf75d86dd546",
   "checks": [
    {
     "name": "build: live commit",
     "ok": true,
-    "detail": "live 007a3d629437"
+    "detail": "live df2e4d3424ce"
    },
    {
     "name": "page /",
@@ -855,7 +871,7 @@
    {
     "name": "api /api/x/l/trust",
     "ok": true,
-    "detail": "{\"controls\":13,\"pass\":11,\"warn\":1,\"fail\":1,\"stale\":0,\"unknown\":0}"
+    "detail": "{\"controls\":13,\"pass\":12,\"warn\":1,\"fail\":0,\"stale\":0,\"unknown\":0}"
    },
    {
     "name": "tls: plain http redirects to https",
@@ -924,7 +940,7 @@
    }
   ]
  },
- "last_checked": "007a3d629437be36dc24e662079b7b6a21d777e2",
- "last_good": "007a3d629437be36dc24e662079b7b6a21d777e2",
- "updated": "2026-11-04T09:09:34Z"
+ "last_checked": "df2e4d3424cebcfb6fc9a5f4a98dcf75d86dd546",
+ "last_good": "df2e4d3424cebcfb6fc9a5f4a98dcf75d86dd546",
+ "updated": "2026-11-04T09:13:03Z"
 }
