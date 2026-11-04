@@ -10022,5 +10022,446 @@
     1700000
    ]
   }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "bingin-ocean-villas",
+  "name": "Bingin Ocean Villas",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "j-hills",
+  "name": "J-Hills",
+  "changed": {
+   "title_type": [
+    null,
+    "leasehold"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "nara-villas",
+  "name": "Nara Villas",
+  "changed": {
+   "title_type": [
+    null,
+    "leasehold"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "oasis-iii",
+  "name": "Oasis III",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "breig-edem-ii-santorini",
+  "name": "EDEM II Santorini Residences",
+  "changed": {
+   "price_from": [
+    94950,
+    97450
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "xamaras-wellness-retreat",
+  "name": "Xamaras Wellness Retreat",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "morros-vita-serena-del-mar",
+  "name": "Morros Vita",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Alianza Fiduciaria (fiduciary administration of project funds; buyers linked to fiduciary scheme)",
+    "Buyers linked to a fiduciary scheme administered by Alianza Fiduciaria, described as 'vinculación de compradores al esquema fiduciario'"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "dubovica-budva-residential-complex",
+  "name": "New residential complex in Dubovica",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "comfort-by-orbi-orbi-group",
+  "name": "Comfort by Orbi",
+  "changed": {
+   "plans_published": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "querencia-dovec-group",
+  "name": "Querencia",
+  "changed": {
+   "price_from": [
+    209282,
+    209964
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "avrupa-konutlari-gunesli-artas",
+  "name": "Avrupa Konutları Güneşli",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9629,
+    9649
+   ],
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "becici-sea-view-building-value-one",
+  "name": "New residential building 200 m from Bečići beach (building 5)",
+  "changed": {
+   "price_from": [
+    203965,
+    217827
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "amazi-hawana-salalah-muriya",
+  "name": "Amazi at Hawana Salalah",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Escrow-protected purchase. Bank: Sohar International. Account holder: Salalah Beach Tourism Development SAOC. IBAN: OM10 0300 0000 4302 0083 244. SWIFT: BSHROMRUXXX. Branch: Sultanate of Oman.",
+    "Escrow-protected purchase. Bank Sohar International, Account holder Salalah Beach Tourism Development SAOC, IBAN OM10 0300 0000 4302 0083 244, SWIFT BSHROMRUXXX, Branch Sultanate of Oman"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "mondomio-okinawa-onna-fuchaku-daiwa-house",
+  "name": "Mondomio Okinawa Resort Onna Village Fuchaku",
+  "changed": {
+   "escrow_or_guarantee": [
+    "（公社）不動産保証協会会員 (listed as seller/agent membership; no escrow or guarantee terms stated)",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "forest-city-2-hz-development",
+  "name": "Forest City 2",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Bank Emirates Islamic Bank P.J.S.C. Escrow number 3717370312516",
+    "Bank: Emirates Islamic Bank P.J.S.C. Escrow number 3717370312516"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "gardenia-bay-aldar",
+  "name": "Gardenia Bay",
+  "changed": {
+   "permit_number": [
+    "Project No 20230000070554",
+    "20230000070554"
+   ],
+   "escrow_or_guarantee": [
+    "Bank Name: First Abu Dhabi Bank (FAB); Escrow No 4031221018122040",
+    "Escrow No 4031221018122040 held at Bank Name: First Abu Dhabi Bank (FAB)"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "quattro-del-mar-rak-properties",
+  "name": "Quattro Del Mar",
+  "changed": {
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "sobha-siniya-island-villas-sobha-realty",
+  "name": "Sobha Siniya Island Villas (Phase 1)",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "stellar-by-elie-saab-emirates-developments",
+  "name": "Stellar by Elie Saab",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "gianfranco-ferre-residences-mira",
+  "name": "Gianfranco Ferré Residences",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "azure-by-lapis-lapis-properties",
+  "name": "Azure by Lapis",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "boka-verde-dpm-global",
+  "name": "Boka Verde",
+  "changed": {
+   "completion_year": [
+    2028,
+    2027
+   ],
+   "escrow_or_guarantee": [
+    null,
+    "4.2% guaranteed minimum yield on nine Phase 1 apartments; three-year guarantee (no escrow or bank guarantee details stated)"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "botanica-luxury-krabi",
+  "name": "Botanica Luxury Krabi",
+  "changed": {
+   "title_type": [
+    null,
+    "leasehold"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "the-ivory-chang-phueak-home-development-group",
+  "name": "The IVORY",
+  "changed": {
+   "title_type": [
+    null,
+    "freehold"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "dusit-thani-residences-ajman-aqaar",
+  "name": "Dusit Thani Residences Ajman",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "tiger-downtown-ajman-orchid-towers-tiger-properties",
+  "name": "Tiger Downtown Ajman (Phase 1, Orchid Towers)",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "boavista-tower-porto-mesmo-valor",
+  "name": "Boavista Tower",
+  "changed": {
+   "price_from": [
+    336900,
+    489900
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "river-cove-residences-sobha",
+  "name": "River Cove Residences (Sobha City Abu Dhabi)",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "the-launiu-ward-village-howard-hughes",
+  "name": "The Launiu Ward Village",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "the-great-escape-2-aida-dar-global",
+  "name": "The Great Escape 2 (AIDA)",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Escrow-protected purchase. Bank: National Bank of Oman; Account holder: DAR GLOBAL PROPERTY DEVELOPMENT SPC; Account no.: 1047-0428485-001; IBAN: OM34 0180 0104 7042 8485 001; SWIFT: NBOMOMRXXXX; Branch: Main Branch, Muscat",
+    "Oman regulation requires off-plan payments to be made into the developer's regulated escrow account. Bank: National Bank of Oman. Account holder: DAR GLOBAL PROPERTY DEVELOPMENT SPC. Account no. 1047-0428485-001. IBAN OM34 0180 0104 7042 8485 001. SWIFT NBOMOMRXXXX. Branch: Main Branch, Muscat."
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "orion-apartments-observatory-leisure-group",
+  "name": "Orion Apartments",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "melia-residences-bahrain-infracorp",
+  "name": "Meliá Residences Bahrain (Meliá Beachfront)",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "marina-bay-reef-island-infracorp",
+  "name": "Marina Bay (Reef Island)",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "udaondo-buenos-aires-landmark-developments",
+  "name": "Udaondo Buenos Aires",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Fideicomiso Buenos Aires Landmark (trust that bought the land at auction; no buyer escrow or guarantee mentioned)",
+    "Fideicomiso Buenos Aires Landmark (land-purchase vehicle; no buyer escrow described)"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "city-walk-love-lane-liverpool-habitia",
+  "name": "City Walk",
+  "changed": {
+   "permit_claim": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "solea-saadiyat-taraf",
+  "name": "Solea by Taraf",
+  "changed": {
+   "permit_number": [
+    "Project No. 20250000429282",
+    "20250000429282"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "hayyan-alef-group",
+  "name": "Hayyan (current phases Samr and Deem)",
+  "changed": {
+   "price_from": [
+    1700000,
+    1690000
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "one-true-blue-beach-goldblat",
+  "name": "ONE True Blue Beach Hotel & Residences (Tapestry Collection by Hilton)",
+  "changed": {
+   "advertised_yield_pct": [
+    50,
+    null
+   ]
+  }
  }
 ]
