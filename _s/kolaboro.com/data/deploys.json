@@ -1,6 +1,31 @@
 {
  "deploys": [
   {
+   "at": "2026-11-04T09:06:41Z",
+   "commit": "0363b4a857c922e4d018cd738482cfd386eed21c",
+   "checks_passed": 32,
+   "checks_total": 32,
+   "failed": [],
+   "run": "https://github.com/calory89/webs-estaticas/actions/runs/41804422179",
+   "result": "pass",
+   "wait_s": 40,
+   "changes": [
+    "13bcc8be22c1",
+    "fe1e88400d90",
+    "3e08d7362d6c",
+    "6b5dfd716a2b",
+    "85a4ea88ed3c",
+    "31d3cd9dd5f7",
+    "d175cc63f592",
+    "15e9f4cf79a8",
+    "e1a20cedd043",
+    "fc5f631e494a",
+    "2574de51ff10",
+    "b0c2f5eae68d",
+    "0363b4a857c9"
+   ]
+  },
+  {
    "at": "2026-11-04T09:04:55Z",
    "commit": "15e9f4cf79a809ed769ecc45116bd834bb4f65ce",
    "result": "not_deployed",
@@ -721,13 +746,13 @@
  "canary": "Cloudflare Pages sends each push to all visitors at once and offers no percentage canary, so none is claimed. A bad push can be visible for a few minutes until the rollback is live.",
  "rollback_mode": "Rollback: a git commit restoring the files changed since the last passing commit; Pages deploys it in about 1 to 2 minutes. An instant Cloudflare API rollback is built in but needs a Pages-scoped token, not configured yet.",
  "latest_checks": {
-  "at": "2026-11-04T07:44:28.194Z",
-  "commit": "5d9abf1a62b06cf93b38e5c2ca5b6fadabf72eff",
+  "at": "2026-11-04T09:06:41.236Z",
+  "commit": "0363b4a857c922e4d018cd738482cfd386eed21c",
   "checks": [
    {
     "name": "build: live commit",
     "ok": true,
-    "detail": "live 5d9abf1a62b0"
+    "detail": "live 0363b4a857c9"
    },
    {
     "name": "page /",
@@ -817,7 +842,7 @@
    {
     "name": "api /api/x/l/trust",
     "ok": true,
-    "detail": "{\"controls\":13,\"pass\":12,\"warn\":1,\"fail\":0,\"stale\":0,\"unknown\":0}"
+    "detail": "{\"controls\":13,\"pass\":11,\"warn\":1,\"fail\":1,\"stale\":0,\"unknown\":0}"
    },
    {
     "name": "tls: plain http redirects to https",
@@ -886,7 +911,7 @@
    }
   ]
  },
- "last_checked": "5d9abf1a62b06cf93b38e5c2ca5b6fadabf72eff",
- "last_good": "5d9abf1a62b06cf93b38e5c2ca5b6fadabf72eff",
- "updated": "2026-11-04T09:04:55Z"
+ "last_checked": "0363b4a857c922e4d018cd738482cfd386eed21c",
+ "last_good": "0363b4a857c922e4d018cd738482cfd386eed21c",
+ "updated": "2026-11-04T09:06:41Z"
 }
