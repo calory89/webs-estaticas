@@ -123,8 +123,9 @@
       '<h1>' + esc(h1) + '</h1>' +
       '<p class="lead">An anonymous project file. We publish what the developer says in public and what an official register or an independent source confirms. Names stay hidden until a verification is finished and the developer has had time to reply.</p>' +
       '<dl class="pf-facts">' + facts.map(function(f){ return '<div><dt>' + f[0] + '</dt><dd>' + esc(f[1]) + '</dd></div>'; }).join('') + '</dl>' +
-      '<div class="pf-act"><a class="btn btn-hi" href="/compare/?ids=' + ids.map(encodeURIComponent).join(',') + '">Compare with similar projects</a><a class="btn btn-line" href="/follow?id=' + encodeURIComponent(c.id) + '">Follow this project</a><a class="btn btn-line" href="/alerts/?id=' + encodeURIComponent(c.id) + '">Watch this project</a>' + starBtn +
+      '<div class="pf-act"><a class="btn btn-hi" href="/compare/?ids=' + ids.map(encodeURIComponent).join(',') + '">Compare with similar projects</a><button type="button" class="btn btn-line" id="pf-follow" aria-expanded="false" aria-controls="pf-fol">Email me when it changes</button><a class="btn btn-line" href="/alerts/?id=' + encodeURIComponent(c.id) + '">Browser alerts</a>' + starBtn +
       '<button type="button" class="btn btn-line" id="pf-print">Download dossier (PDF)</button></div>' +
+      '<div id="pf-fol" hidden></div>' +
       (W ? '<p class="pf-wl" id="pf-wlmsg" aria-live="polite">' + wlMsg(saved) + '</p>' : '') +
       '<div class="pf-kvbw"><span class="kvb" id="pf-kvb"></span></div>' +
       '</div></section>' +
@@ -196,7 +197,7 @@
       (next ? '<a class="nx" href="/p/?id=' + encodeURIComponent(next.id) + '" rel="next"><small>Next in ' + esc(c.market) + '</small><b>' + esc(next.id) + ' &rarr;</b></a>' : '') +
       '</nav><p class="pf-fine">Project ' + (pos + 1) + ' of ' + mk.length + ' in ' + esc(c.market) + '. ' + (c.checked ? 'Last checked ' + esc(c.checked) + '. ' : '') + (c.invited ? 'Developer invited to reply on ' + esc(c.invited) + '. ' : '') + 'A published document is not proof that it is genuine; that is what our local agents check on site and at the registry. <a href="/how-we-score">How we score</a> · <a href="/corrections">Corrections</a> · <a href="/developers">Developers can reply</a>.</p></div></section>' +
 
-      '<div class="wrap pf-noprint"><div class="pf-cta"><h2>Buying a project that is not on this list?</h2><p>Send us the link. We read what the developer publishes, check it against registers and tell you what is missing before you pay.</p><div class="pf-act"><a class="btn btn-hi" href="/check">Check your own project</a><a class="btn btn-line" href="/follow?id=' + encodeURIComponent(c.id) + '">Follow ' + esc(c.id) + '</a></div></div></div>';
+      '<div class="wrap pf-noprint"><div class="pf-cta"><h2>Buying a project that is not on this list?</h2><p>Send us the link. We read what the developer publishes, check it against registers and tell you what is missing before you pay.</p><div class="pf-act"><a class="btn btn-hi" href="/check">Check your own project</a><button type="button" class="btn btn-line" data-pf-follow>Email me when ' + esc(c.id) + ' changes</button></div></div></div>';
     dropSsr();
     root.innerHTML = html;
     loadIntel(c);
@@ -206,12 +207,39 @@
     try { var kb = document.getElementById('pf-kvb'); if (kb && window.kbVerifyLoad) kbVerifyLoad().then(function(KV){ return KV.fetchSigned('/api/open/projects/' + encodeURIComponent(c.id)).then(function(r){ KV.badge(document.getElementById('pf-kvb'), r.check, { what: 'this project record (/api/open/projects/' + c.id + ')' }); }); }).catch(function(){ var e = document.getElementById('pf-kvb'); if (e) e.remove(); }); else if (kb) kb.remove(); } catch (e) {}
     var pb = document.getElementById('pf-print');
     if (pb) pb.addEventListener('click', function(){ try { window.print(); } catch (e) {} });
+    bindFollow(c);
     var sb = document.getElementById('pf-star');
     if (sb && W) sb.addEventListener('click', function(){
       var on = W.toggle(c.id, c), m = document.getElementById('pf-wlmsg');
       try { if (window.kbEvent) kbEvent(on ? 'project_save' : 'project_unsave', { project: c.id }); } catch (e) {}
       sb.setAttribute('aria-pressed', on); sb.innerHTML = starLabel(on);
       if (m) m.innerHTML = wlMsg(on, true);
+    });
+  }
+  /* ---------- Email me when it changes: the same follow list as the cards on /cases (kolaboro_follow, confirmed by email) ---------- */
+  function bindFollow(c){
+    var b = document.getElementById('pf-follow'), box = document.getElementById('pf-fol'); if (!b || !box) return;
+    var AK = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw';
+    document.addEventListener('click', function(e){ if (!e.target.closest || !e.target.closest('[data-pf-follow]')) return; b.scrollIntoView({ behavior: 'smooth', block: 'center' }); if (box.hidden) b.click(); else { var i = box.querySelector('input'); if (i) i.focus({ preventScroll: true }); } });
+    b.addEventListener('click', function(){
+      var open = box.hidden; box.hidden = !open; b.setAttribute('aria-expanded', open ? 'true' : 'false'); if (!open) return;
+      if (!box.firstChild) {
+        var known = ''; try { known = localStorage.getItem('kb-follow-email') || localStorage.getItem('kb-desk-email') || ''; } catch (x) {}
+        box.innerHTML = '<form class="cff pf-ff" novalidate><label for="pf-fe">One email when the developer of ' + esc(c.id) + ' changes its completion date, price band or published documents.</label><div><input type="email" id="pf-fe" autocomplete="email" placeholder="you@email.com" value="' + esc(known) + '"><button class="btn btn-hi btn-sm" type="submit">Follow</button></div><p class="fe" role="alert"></p><p class="cff-n">We send a link to confirm first. Every email has a link to stop.</p></form>';
+        var fm = box.querySelector('form');
+        fm.addEventListener('submit', function(e){ e.preventDefault(); var inp = fm.querySelector('input'), msg = fm.querySelector('.fe'), sb = fm.querySelector('button'), em = inp.value.trim();
+          if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)) { msg.textContent = 'Add a valid email address.'; inp.setAttribute('aria-invalid', 'true'); inp.focus(); return; }
+          inp.removeAttribute('aria-invalid'); msg.textContent = ''; sb.disabled = true; sb.textContent = 'Sending…';
+          fetch('https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/kolaboro_follow', { method: 'POST', headers: { apikey: AK, Authorization: 'Bearer ' + AK, 'content-type': 'application/json' }, body: JSON.stringify({ p_email: em, p_ref: c.id }) })
+            .then(function(r){ return r.json(); }).then(function(r){
+              if (r && r.error) { sb.disabled = false; sb.textContent = 'Follow'; msg.textContent = r.error === 'input' ? 'That email does not look right.' : 'Too many requests today. Try again tomorrow.'; return; }
+              try { localStorage.setItem('kb-follow-email', em); } catch (x) {}
+              fm.innerHTML = '<p class="cff-ok">' + (r && r.confirmed ? '✓ You are following ' + esc(c.id) + '.' : '✓ Check your inbox: we sent a link to ' + esc(em) + ' to confirm.') + '</p>';
+              b.textContent = r && r.confirmed ? '✓ Following' : '✓ Confirm by email'; try { if (window.kbEvent) kbEvent('case_follow', c.id); } catch (x) {}
+            }).catch(function(){ sb.disabled = false; sb.textContent = 'Follow'; msg.textContent = 'Could not reach the server. Check your connection and try again.'; });
+        });
+      }
+      var i = box.querySelector('input'); if (i) i.focus();
     });
   }
   /* ---------- What would change this score (open scoring rules, run in the browser by /p/whatif.js) ---------- */

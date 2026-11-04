@@ -11,7 +11,8 @@
   function $(i){ return document.getElementById(i); }
   function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; }); }
   function n(x){ return (+x || 0).toLocaleString('en'); }
-  var S = { m: '', t: '', q: '', sort: 'best', lim: 24, st: '' };
+  var S = { m: '', t: '', q: '', sort: 'best', lim: 24, st: '' }, mTouched = false, URLM = '';
+  try { URLM = new URLSearchParams(location.search).get('market') || ''; } catch (e) {}
   function full(c){ return (c.max || 0) === 6 && (c.score || 0) === 6 && !(c.flags || []).length; }
   function okk(c, k){ var ck = c.checks || {}; return k === 'permit' ? ck.permit === 2 : k === 'escrow' ? ck.escrow === true : k === 'progress' ? ck.progress != null : !!ck[k]; }
   function tierOk(c){ if (S.st && c.stage !== S.st) return false; return !S.t || (S.t === 'full' ? full(c) : S.t === 'verified' ? (c.vscore || 0) >= 4 : c.tier === S.t); }
@@ -87,9 +88,14 @@
       '<ol class="csteps">' + steps.map(function(x){ return '<li class="' + (x[1] ? 'ok1' : '') + '"><span>' + x[0] + '</span><small>' + esc(x[2]) + '</small></li>'; }).join('') + '</ol>' +
       '<p class="kfoll"><a href="/check#analyze">Buying here? Get a free desk review →</a></p></details></article>';
   }
+  function sync(){
+    $('ktier').querySelectorAll('button').forEach(function(x){ x.setAttribute('aria-pressed', (x.dataset.t || '') === (S.t || '') ? 'true' : 'false'); });
+    try { var P = new URLSearchParams(location.search); [['q', S.q], ['market', S.m], ['stage', S.st], ['tier', S.t], ['sort', S.sort === 'best' ? '' : S.sort]].forEach(function(k){ if (k[1]) P.set(k[0], k[1]); else P.delete(k[0]); });
+      var u = location.pathname + (P.toString() ? '?' + P.toString() : '') + location.hash; if (u !== location.pathname + location.search + location.hash) history.replaceState(history.state, '', u); } catch (e) {}
+  }
   function render(){
-    var L = list(); $('kn').textContent = L.length + ' project' + (L.length === 1 ? '' : 's');
-    $('cgrid').innerHTML = (L.length ? L.slice(0, S.lim).map(card).join('') : '<p class="muted">No project matches. Try another market or clear the search.</p>') + (L.length > S.lim ? '<button class="btn btn-line cmore" type="button">Show more (' + (L.length - S.lim) + ' left)</button>' : '');
+    var L = list(); $('kn').textContent = L.length + ' project' + (L.length === 1 ? '' : 's'); sync();
+    $('cgrid').innerHTML = (L.length ? L.slice(0, S.lim).map(card).join('') : '<p class="muted">No project matches these filters.' + (S.q || S.m || S.st || S.t ? ' <button type="button" class="btn btn-line btn-sm kclr">Clear all filters</button>' : '') + '</p>') + (L.length > S.lim ? '<button class="btn btn-line cmore" type="button">Show more (' + (L.length - S.lim) + ' left)</button>' : '');
     mapDots();
   }
   var MAP = null, LAYER = null;
@@ -109,23 +115,37 @@
         .on('click', function(){ S.m = S.m === m ? '' : m; $('kmk').value = S.m; S.lim = 24; render(); $('kfil').scrollIntoView({ behavior: 'smooth', block: 'start' }); }).addTo(LAYER); });
   }
   function bind(){
-    $('kmk').onchange = function(){ S.m = this.value; S.lim = 24; render(); };
+    $('kmk').onchange = function(){ mTouched = true; S.m = this.value; S.lim = 24; render(); };
     $('ksort').onchange = function(){ S.sort = this.value; render(); };
     if ($('kst2')) $('kst2').onchange = function(){ S.st = this.value; S.lim = 24; render(); };
     $('kq').oninput = function(){ S.q = this.value.trim(); S.lim = 24; render(); };
     $('ktier').onclick = function(e){ var b = e.target.closest('button'); if (!b) return; S.t = b.dataset.t; S.lim = 24; this.querySelectorAll('button').forEach(function(x){ x.classList.toggle('on', x === b); }); render(); };
     $('cgrid').addEventListener('click', function(e){
       if (e.target.closest('.cmore')) { S.lim += 24; render(); return; }
+      if (e.target.closest('.kclr')) { S.q = S.m = S.st = S.t = ''; $('kq').value = ''; $('kmk').value = ''; if ($('kst2')) $('kst2').value = ''; $('ktier').querySelectorAll('button').forEach(function(x){ x.classList.toggle('on', !x.dataset.t); }); S.lim = 24; render(); $('kq').focus(); return; }
     });
   }
   function start(){
-    stat(); bind(); try { var qs = new URLSearchParams(location.search).get('q'); if (qs) { $('kq').value = qs; S.q = qs.trim(); } } catch (e) {} render();
+    stat(); bind();
+    // filters live in the address, so a filtered list can be shared and survives Back from a project file
+    try { var P = new URLSearchParams(location.search), qs = P.get('q');
+      if (qs) { $('kq').value = qs; S.q = qs.trim(); }
+      if (P.get('market') && [].some.call($('kmk').options, function(o){ return o.value === P.get('market'); })) { S.m = P.get('market'); $('kmk').value = S.m; }
+      if (P.get('stage') && $('kst2') && [].some.call($('kst2').options, function(o){ return o.value === P.get('stage'); })) { S.st = P.get('stage'); $('kst2').value = S.st; }
+      if (P.get('sort') && [].some.call($('ksort').options, function(o){ return o.value === P.get('sort'); })) { S.sort = P.get('sort'); $('ksort').value = S.sort; }
+      var tb = P.get('tier') && $('ktier').querySelector('button[data-t="' + P.get('tier').replace(/[^a-z]/g, '') + '"]'); if (tb) { S.t = tb.dataset.t; $('ktier').querySelectorAll('button').forEach(function(x){ x.classList.toggle('on', x === tb); }); }
+    } catch (e) {}
+    render();
     var s = document.createElement('script'); s.src = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js'; s.integrity = 'sha384-NElt3Op+9NBMCYaef5HxeJmU4Xeard/Lku8ek6hoPTvYkQPh3zLIrJP7KiRocsxO'; s.crossOrigin = 'anonymous'; s.onload = mapInit; document.head.appendChild(s);
     var l = document.createElement('link'); l.rel = 'stylesheet'; l.href = 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css'; l.integrity = 'sha384-c6Rcwz4e4CITMbu/NBmnNS8yN2sC3cUElMEMfP3vqqKFp7GOYaaBBCqmaWBjmkjb'; l.crossOrigin = 'anonymous'; document.head.appendChild(l);
   }
   start();
   // the research agent republishes the data every week: use the newest copy if it has the scorecard
   fetch('/data/bali-cases.json?t=' + Math.floor(Date.now() / 6e5), { cache: 'no-store' }).then(function(r){ return r.ok ? r.json() : null; }).then(function(d){
-    if (!d || !d.cases || !d.cases.length || !d.cases[0].checks || d.cases.length < C.length) return; D = d; C = d.cases; stat(); render();
+    if (!d || !d.cases || !d.cases.length || !d.cases[0].checks || d.cases.length < C.length) return; D = d; C = d.cases; stat();
+    // the market list was rebuilt: keep the chosen market, or take the one in the address if the first copy did not have it
+    if (!S.m && URLM && !mTouched) S.m = URLM;
+    if (S.m && ![].some.call($('kmk').options, function(o){ return o.value === S.m; })) S.m = '';
+    $('kmk').value = S.m; render();
   }).catch(function(){});
 })();

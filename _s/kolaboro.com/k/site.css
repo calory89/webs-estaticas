@@ -1219,3 +1219,32 @@ a.si{color:inherit;text-decoration:none}a.si:hover{background:rgba(255,255,255,.
 .vs-ha,.vs-a .vs-tag{color:#4F5A65}
 .sec.alt .eyebrow,.alt .eyebrow{color:#9A3000}
 .phero .eyebrow{color:#9A3000}
+
+/* 4 Nov 2026 UX sweep: language switcher styles for pages that had none inline (same rules as #lsw-css) */
+nav.links .lsw{position:relative}nav.links .lsw summary{list-style:none;cursor:pointer;display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 6px;border-radius:8px;font-weight:700;color:var(--ink-2)}nav.links .lsw summary::-webkit-details-marker{display:none}nav.links .lsw summary svg{width:16px;height:16px;flex:none}nav.links .lsw summary::after{content:"";width:6px;height:6px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-2px) rotate(45deg);margin-inline-start:2px}nav.links .lsw[open] summary::after{transform:translateY(2px) rotate(-135deg)}nav.links .lsw summary:hover{color:var(--ink)}nav.links .lsw summary:focus-visible,nav.links .lsw a:focus-visible{outline:3px solid var(--hivis);outline-offset:2px}nav.links .lsw .lsw-w{display:none}nav.links .lsw ul{position:absolute;top:100%;inset-inline-end:0;z-index:60;list-style:none;margin:6px 0 0;padding:6px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:0 12px 30px rgba(23,33,43,.14);min-width:200px;display:grid;gap:2px}nav.links .lsw li{margin:0;padding:0}nav.links .lsw a{display:flex;justify-content:space-between;align-items:center;gap:14px;min-height:44px;padding:8px 12px;border:0;border-radius:8px;font-size:.92rem;font-weight:700;color:var(--ink);text-decoration:none}nav.links .lsw a:hover{background:var(--concrete);text-decoration:none}nav.links .lsw a span{color:var(--muted);font-weight:500}nav.links .lsw a[aria-current]{background:var(--concrete);box-shadow:inset 3px 0 0 var(--hivis)}@media (max-width:900px){nav.links .lsw{border-bottom:1px solid var(--line)}nav.links .lsw summary{display:flex;width:100%;padding:14px 0;font-size:1.05rem;border-radius:0}nav.links .lsw summary::after{margin-inline-start:auto}nav.links .lsw .lsw-w{display:inline}nav.links .lsw ul{position:static;margin:0 0 14px;padding:0;border:0;box-shadow:none;background:none;min-width:0;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}nav.links .lsw a{display:flex;justify-content:center;padding:8px 0;border:1px solid var(--line);background:#fff;font-size:.95rem}nav.links .lsw a span{display:none}}@media (min-width:901px) and (max-width:1100px){nav.links .lsw summary svg{display:none}nav.links .lsw summary{padding:0 2px}}
+/* footer on phones: link groups fold under their headings (k/site.js adds the buttons) */
+@media (max-width:640px){
+footer .fgrid{grid-template-columns:1fr;gap:0}
+footer .fgrid>div:first-child{padding-bottom:22px}
+footer .fgrid .fcol{border-top:1px solid var(--line)}
+footer .fgrid .fcol>.fh{margin:0}
+footer .fh-t{display:flex;width:100%;align-items:center;justify-content:space-between;gap:12px;min-height:52px;padding:0;margin:0;background:none;border:0;font:inherit;color:inherit;letter-spacing:inherit;text-align:start;cursor:pointer}
+footer .fh-t::after{content:"";width:8px;height:8px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-3px) rotate(45deg);margin-inline-end:6px;transition:transform .2s}
+footer .fcol.fopen .fh-t::after{transform:translateY(2px) rotate(-135deg)}
+footer .fh-t:focus-visible{outline:3px solid var(--hivis);outline-offset:2px}
+footer .fcol:not(.fopen)>ul{display:none}
+footer .fcol>ul{grid-template-columns:1fr 1fr;gap:0 16px;padding-bottom:12px}
+footer .fcol li>a,footer .fcol li>button{display:inline-flex;align-items:center;min-height:42px;line-height:1.25}
+footer .fgrid:last-child,footer .fgrid{border-bottom:1px solid var(--line)}
+}
+/* phone tap targets: project card actions, the hero check hint */
+@media (max-width:640px){.kopen{gap:8px 20px;flex-wrap:wrap}.kopen a{display:inline-flex;align-items:center;min-height:42px}}
+.hc-fe{margin:8px 0 0;color:#B42318;font-weight:700;font-size:.88rem;flex-basis:100%}
+/* inline follow form on project cards and the project page */
+.cff{flex-basis:100%;margin-top:8px;font-size:.88rem;line-height:1.45}.cff label{display:block;margin-bottom:8px}.cff>div{display:flex;gap:8px;flex-wrap:wrap}.cff input{flex:1 1 180px;min-width:0;min-height:44px;padding:8px 12px;border:1px solid #D5D9D3;border-radius:10px;font:inherit;background:#fff}.cff .fe{margin:6px 0 0;color:#B42318;font-weight:700}.cff .fe:empty{display:none}.cff-n{margin:6px 0 0;color:var(--muted);font-size:.8rem}.cff-ok{margin:0;font-weight:700;color:#0B7A55}
+/* verify badge popover: readable bold text inside dark bands */
+.kvb-p b,.kvb-p strong{color:#17212B}
+/* header between tablet and laptop widths: links stay on one line (About is also in the footer) */
+@media (min-width:901px){html[lang^=en] .links>a:not(.btn){white-space:nowrap}}
+@media (min-width:901px) and (max-width:1060px){html[lang^=en] .links>a[href="/about"]{display:none}}
+@media (min-width:901px) and (max-width:960px){html[lang^=en] .links>a[href="/#how"]{display:none}}

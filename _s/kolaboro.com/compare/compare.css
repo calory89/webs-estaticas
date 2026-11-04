@@ -60,3 +60,7 @@
 .cp-act .btn{min-height:48px}
 @media(max-width:700px){.cp-t{font-size:.88rem;min-width:0}.cp-t th[scope=row],.cp-t tr.g th{width:118px;min-width:118px;max-width:118px;padding:10px}.cp-t td,.cp-t thead th{padding:10px;min-width:132px}.cp-t thead th:first-child{min-width:118px}}
 .cp-set li a b{color:var(--ink);white-space:nowrap;flex:none}.cp-set li a{color:var(--ink)}
+.cp-chip{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;margin-top:12px;padding:10px 14px;background:#fff;border:1px solid var(--line);border-radius:14px;max-width:60ch}
+.cp-chip a{flex:1 1 220px;color:var(--ink-2);text-decoration:none;line-height:1.4}.cp-chip a b{color:var(--ink);margin-inline-end:6px}.cp-chip a:hover b{text-decoration:underline}
+.cp-chip .cp-x{margin-top:0;min-height:40px}
+.cp-x{min-height:40px}

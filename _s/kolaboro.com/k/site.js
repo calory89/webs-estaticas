@@ -28,7 +28,59 @@
     });
     links.addEventListener('click', function (e) { if (e.target.closest('a')) { links.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); } });
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && links.classList.contains('open')) { links.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); burger.focus(); } });
+    // a tap outside the open menu closes it
+    document.addEventListener('click', function (e) { if (links.classList.contains('open') && !e.target.closest('.nav')) { links.classList.remove('open'); burger.setAttribute('aria-expanded', 'false'); } });
   }
+
+  // language switcher: every page offers every language. Each entry leads to this page in that language when it exists
+  // (the page's own <link rel=alternate hreflang> or its static switcher), otherwise to that language's home.
+  (function () {
+    var nl = document.querySelector('.nav .links'); if (!nl) return;
+    var LG = [['en', 'English', '/', 'Language'], ['es', 'Español', '/es/', 'Idioma'], ['de', 'Deutsch', '/de/', 'Sprache'], ['fr', 'Français', '/fr/', 'Langue'], ['ru', 'Русский', '/ru/', 'Язык'], ['nl', 'Nederlands', '/nl/', 'Taal'], ['ar', 'العربية', '/ar/', 'اللغة'], ['zh', '简体中文', '/zh/', '语言']];
+    var cur = (document.documentElement.lang || 'en').slice(0, 2).toLowerCase(), C = null;
+    LG.forEach(function (l) { if (l[0] === cur) C = l; }); if (!C) { C = LG[0]; cur = 'en'; }
+    var to = {};
+    document.querySelectorAll('link[rel=alternate][hreflang]').forEach(function (l) { var k = l.getAttribute('hreflang').slice(0, 2).toLowerCase(); try { var u = new URL(l.href, location.href); if (u.origin === location.origin && !to[k]) to[k] = u.pathname + u.search; } catch (e) {} });
+    var d = nl.querySelector('details.lsw');
+    if (d) d.querySelectorAll('ul a[hreflang]').forEach(function (a) { var k = a.getAttribute('hreflang').slice(0, 2).toLowerCase(), h = a.getAttribute('href'); if (!to[k] && h) to[k] = h; });
+    to[cur] = to[cur] || (location.pathname + location.search);
+    var ico = '<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M2 10h16M10 2c2.4 2.3 3.4 5 3.4 8s-1 5.7-3.4 8M10 2C7.6 4.3 6.6 7 6.6 10s1 5.7 3.4 8" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>';
+    if (!d) {
+      d = document.createElement('details'); d.className = 'lsw';
+      d.innerHTML = '<summary aria-label="' + C[3] + ': ' + cur.toUpperCase() + ' (' + C[1] + ')">' + ico + '<span class="lsw-w">' + C[3] + ':</span> ' + cur.toUpperCase() + '</summary><ul></ul>';
+      var cta = nl.querySelector(':scope > a.btn'); nl.insertBefore(d, cta || null);
+    }
+    var ul = d.querySelector('ul'); if (!ul) return;
+    ul.innerHTML = LG.map(function (l) {
+      var h = to[l[0]] || l[2];
+      return '<li><a href="' + h.replace(/"/g, '&quot;') + '" hreflang="' + l[0] + '" lang="' + l[0] + '"' + (l[0] === cur ? ' aria-current="page"' : '') + '>' + l[0].toUpperCase() + ' <span' + (l[0] === 'ar' ? ' dir="rtl"' : '') + '>' + l[1] + '</span></a></li>';
+    }).join('');
+    // close the list on Escape or a tap elsewhere
+    document.addEventListener('click', function (e) { if (d.open && !d.contains(e.target)) d.open = false; });
+    d.addEventListener('keydown', function (e) { if (e.key === 'Escape' && d.open) { d.open = false; d.querySelector('summary').focus(); e.stopPropagation(); } });
+  })();
+
+  // footer on phones: each link group folds under its heading, so the footer stays short. Every link stays in the page.
+  (function () {
+    var g = document.querySelector('footer .fgrid'); if (!g || !window.matchMedia) return;
+    var mq = window.matchMedia('(max-width:640px)'), cols = [];
+    [].forEach.call(g.children, function (col, i) {
+      var h = col.querySelector(':scope > .fh, :scope > h4'), ul = col.querySelector(':scope > ul'); if (!h || !ul) return;
+      if (!ul.id) ul.id = 'kfg-' + i; cols.push({ col: col, h: h, ul: ul, txt: h.innerHTML });
+    });
+    if (!cols.length) return;
+    function sync() {
+      cols.forEach(function (c) {
+        var b = c.h.querySelector('.fh-t');
+        if (mq.matches && !b) {
+          b = document.createElement('button'); b.type = 'button'; b.className = 'fh-t'; b.setAttribute('aria-controls', c.ul.id); b.setAttribute('aria-expanded', 'false'); b.innerHTML = c.txt;
+          c.h.innerHTML = ''; c.h.appendChild(b); c.col.classList.add('fcol'); c.col.classList.remove('fopen');
+          b.addEventListener('click', function () { var o = c.col.classList.toggle('fopen'); b.setAttribute('aria-expanded', o ? 'true' : 'false'); });
+        } else if (!mq.matches && b) { c.h.innerHTML = c.txt; c.col.classList.remove('fcol', 'fopen'); }
+      });
+    }
+    sync(); if (mq.addEventListener) mq.addEventListener('change', sync); else if (mq.addListener) mq.addListener(sync);
+  })();
 
 
   // live counts: every [data-db] number follows the published database
@@ -135,16 +187,25 @@
     if (hero && 'IntersectionObserver' in window) { new IntersectionObserver(function (es) { heroVisible = es[0].isIntersecting; upd(); }, { threshold: 0 }).observe(hero); }
     var hc = document.querySelectorAll('form.hero-check, #az-f1'), heroForm = false;
     if (hc.length && 'IntersectionObserver' in window) { var hio = new IntersectionObserver(function (es) { es.forEach(function (x) { x.target._kbv = x.isIntersecting; }); heroForm = [].some.call(hc, function (f) { return f._kbv; }); upd(); }, { threshold: 0.05 }); hc.forEach(function (f) { hio.observe(f); }); }
-    function upd() { m.classList.toggle('show', scrollY > 520 && !heroVisible && !formVisible && !heroForm); }
+    // and hides over the footer, so it never covers the last links or the legal line
+    var foot = document.querySelector('footer'), footVisible = false;
+    if (foot && 'IntersectionObserver' in window) new IntersectionObserver(function (es) { footVisible = es[0].isIntersecting; upd(); }, { threshold: 0 }).observe(foot);
+    function upd() { m.classList.toggle('show', scrollY > 520 && !heroVisible && !formVisible && !heroForm && !footVisible); }
     addEventListener('scroll', upd, { passive: true }); upd();
   }
 
   // quick "check a project" boxes -> /check?q=
   document.querySelectorAll('form[data-check]').forEach(function (f) {
+    f.noValidate = true;   // our own message below replaces the browser bubble, which phones often do not show
     f.addEventListener('submit', function (e) {
       e.preventDefault();
       var q = (f.q.value || '').trim();
-      if (!q) { f.q.focus(); return; }
+      if (!q) {
+        // empty: say what to type instead of doing nothing
+        var HM = { en: "Paste the project's website, or type its name or the developer's name.", es: 'Pega la web del proyecto, o escribe su nombre o el del promotor.', de: 'Fügen Sie die Website des Projekts ein oder geben Sie den Namen des Projekts oder des Bauträgers ein.', fr: 'Collez le site du projet, ou saisissez son nom ou celui du promoteur.', ru: 'Вставьте сайт проекта или введите название проекта или застройщика.', nl: 'Plak de website van het project, of typ de naam van het project of de ontwikkelaar.', ar: 'الصق موقع المشروع، أو اكتب اسمه أو اسم المطوّر.', zh: '请粘贴项目网站，或输入项目或开发商的名称。' };
+        var fe = f._kbfe; if (!fe) { fe = f._kbfe = document.createElement('p'); fe.className = 'fe hc-fe'; fe.setAttribute('role', 'alert'); fe.id = 'hcfe-' + Math.random().toString(36).slice(2, 7); f.parentNode.insertBefore(fe, f.nextSibling); f.q.setAttribute('aria-describedby', fe.id); f.q.addEventListener('input', function () { fe.textContent = ''; f.q.removeAttribute('aria-invalid'); }); }
+        fe.textContent = HM[(document.documentElement.lang || 'en').slice(0, 2)] || HM.en; f.q.setAttribute('aria-invalid', 'true'); f.q.focus(); return;
+      }
       ev('check_project', { q: q.slice(0, 80) });
       if (/^(https?:\/\/)?[\w-]+(\.[\w-]+)+(\/\S*)?$/i.test(q)) { location.href = '/check?url=' + encodeURIComponent(q) + '#analyze'; return; }
       location.href = '/check?q=' + encodeURIComponent(q);
@@ -215,7 +276,7 @@
       var ok1 = true; fieldErr('name', ''); fieldErr('email', '');
       if (!form.name.value.trim()) { fieldErr('name', MSG.name); ok1 = false; }
       if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(form.email.value.trim())) { fieldErr('email', MSG.email); ok1 = false; }
-      if (!ok1) return; ev('form_step1', { role: role() }); openStep2(true);
+      if (!ok1) { (form.name.getAttribute('aria-invalid') === 'true' ? form.name : form.email).focus(); return; } ev('form_step1', { role: role() }); openStep2(true);
     });
     function fieldErr(name, msg) {
       var el = form[name]; if (!el) return;
@@ -473,6 +534,8 @@
     if (document.readyState === 'complete') go(); else addEventListener('load', go, { once: true });
   });
 })();
+// verify badges: open their explanation toward the side with room, so it never runs off the screen
+document.addEventListener('toggle', function (e) { var d = e.target; if (!d || !d.classList || !d.classList.contains('kvb') || !d.open) return; var r = d.getBoundingClientRect(); d.classList.toggle('kvb-r', r.left + 340 > document.documentElement.clientWidth - 8 && r.left > 200); }, true);
 // real-user web vitals (block F): half of page views, loaded after the load event, see /status#st-vit
 (function(){if(Math.random()>=0.5)return;function v(){setTimeout(function(){var s=document.createElement('script');s.src='/k/vitals.js?v=604551822c';s.async=1;document.head.appendChild(s)},1)}if(document.readyState==='complete')v();else addEventListener('load',v,{once:true})})();
 // inline-handler free (strict CSP): forms marked data-nosubmit never navigate, buttons marked data-print open the print dialog

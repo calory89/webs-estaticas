@@ -66,6 +66,7 @@
 .db-t{width:100%;border-collapse:collapse;margin-top:18px;font-size:.9rem}.db-t th,.db-t td{padding:9px 8px;border-bottom:1px solid var(--line,#D5D3CC);text-align:right}.db-t th:first-child,.db-t td:first-child{text-align:left}.db-t th{font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;color:#4A5560;cursor:pointer}
 .db-tw{overflow-x:auto}
 .db-def{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:18px}.db-def div{background:var(--paper,#fff);border:1px solid var(--line,#D5D3CC);border-radius:12px;padding:14px}.db-def b{display:block;margin-bottom:4px}
+.db-sb{all:unset;cursor:pointer;display:inline-flex;align-items:center;gap:4px;min-height:36px;font:inherit;color:inherit}.db-sb::after{content:attr(data-dir);font-size:.85em}.db-sb:focus-visible{outline:3px solid var(--hivis);outline-offset:2px;border-radius:4px}.db-t td a{color:inherit;font-weight:600}
 </style>
 <section class="db-hero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / Database</p>
 <h1>The off-plan database buyers never had</h1>
@@ -85,7 +86,7 @@
 
 <section class="db-sec ask" id="ask"><div class="wrap"><p class="eyebrow">New</p><h2>Ask the database</h2><p class="lead" style="max-width:640px">Ask in plain words. AI answers only from the published data and links the projects behind the answer.</p>
 <form id="askf" class="ask-form" role="search"><label for="askq" class="sr-only">Your question</label><input id="askq" data-kbd="/" aria-keyshortcuts="/" name="q" maxlength="300" placeholder="Which markets protect buyer deposits the most?" autocomplete="off"><button class="btn btn-hi" type="submit">Ask</button></form>
-<p class="ask-ex"><button type="button" class="ask-chip">Which markets protect buyer deposits the most?</button><button type="button" class="ask-chip">How late are projects in Bali?</button><button type="button" class="ask-chip">Dubai projects under construction with 4 or more checks confirmed</button><button type="button" class="ask-chip">Where are claims most often contradicted?</button></p>
+<p class="ask-ex"><button type="button" class="ask-chip">Which markets protect buyer deposits the most?</button><button type="button" class="ask-chip">How late are Bali projects on average?</button><button type="button" class="ask-chip">Dubai projects under construction with 4 or more checks confirmed</button><button type="button" class="ask-chip">Where are claims most often contradicted?</button></p>
 <div id="asko" class="ask-out" aria-live="polite" hidden></div></div></section>
 <section class="db-sec"><div class="wrap">
 <h2>How much of what developers say is confirmed</h2>
@@ -108,7 +109,7 @@
 
 <section class="db-sec"><div class="wrap">
 <h2>By market</h2>
-<p class="lead">Tap a column to sort.</p>
+<p class="lead">Tap a column to sort. Tap a market to open its file.</p>
 <div class="db-tw" tabindex="0" role="region" aria-label="Market table"><table class="db-t" id="dbt"><thead><tr><th data-k="m">Market</th><th data-k="n">Projects</th><th data-k="avg">Avg checks</th><th data-k="permit">Permit no.</th><th data-k="escrow">Deposit protected</th><th data-k="conf">Avg confirmed</th><th data-k="full">100%</th></tr></thead><tbody></tbody></table></div><p><button type="button" class="btn btn-line" id="dbmore" hidden>Show all markets</button></p>
 </div></section>
 
@@ -144,7 +145,10 @@
     var M = {}; C.forEach(function(c){ var m = M[c.market] = M[c.market] || { m: c.market, n: 0, s: 0, permit: 0, escrow: 0, cs: 0, cn: 0, full: 0 }; m.n++; m.s += c.score || 0; if (ok(c, 'permit')) m.permit++; if (ok(c, 'escrow')) m.escrow++; if (c.vscore != null) { m.cs += c.vscore; m.cn++; } if (full(c)) m.full++; });
     var lim = 12; var rows = Object.keys(M).map(function(k){ var m = M[k]; m.avg = m.s / m.n; m.conf = m.cn ? m.cs / m.cn : -1; m.permitP = m.permit / m.n; m.escrowP = m.escrow / m.n; return m; }), key = 'n', dir = -1;
     function draw(){ rows.sort(function(a, b){ var x = key === 'permit' ? a.permitP - b.permitP : key === 'escrow' ? a.escrowP - b.escrowP : key === 'm' ? (a.m < b.m ? -1 : 1) : a[key] - b[key]; return x * dir; });
-      $('dbt').querySelector('tbody').innerHTML = rows.slice(0, lim).map(function(m){ return '<tr><td>' + m.m + '</td><td>' + m.n + '</td><td>' + m.avg.toFixed(1) + '</td><td>' + Math.round(m.permitP * 100) + '%</td><td>' + Math.round(m.escrowP * 100) + '%</td><td>' + (m.conf < 0 ? '–' : m.conf.toFixed(1)) + '</td><td>' + (m.full || '') + '</td></tr>'; }).join(''); var mb = $('dbmore'); if (mb) { mb.hidden = rows.length <= lim; mb.textContent = 'Show all ' + rows.length + ' markets'; } }
+      $('dbt').querySelectorAll('thead th').forEach(function(th){ var on = th.dataset.k === key; if (on) th.setAttribute('aria-sort', dir > 0 ? 'ascending' : 'descending'); else th.removeAttribute('aria-sort'); var b = th.querySelector('button'); if (b) b.setAttribute('data-dir', on ? (dir > 0 ? '↑' : '↓') : ''); });
+      $('dbt').querySelector('tbody').innerHTML = rows.slice(0, lim).map(function(m){ var me = String(m.m).replace(/[&<>"]/g, function(ch){ return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]; }); return '<tr><td><a href="/m/?market=' + encodeURIComponent(m.m) + '">' + me + '</a></td><td>' + m.n + '</td><td>' + m.avg.toFixed(1) + '</td><td>' + Math.round(m.permitP * 100) + '%</td><td>' + Math.round(m.escrowP * 100) + '%</td><td>' + (m.conf < 0 ? '–' : m.conf.toFixed(1)) + '</td><td>' + (m.full || '') + '</td></tr>'; }).join(''); var mb = $('dbmore'); if (mb) { mb.hidden = rows.length <= lim; mb.textContent = 'Show all ' + rows.length + ' markets'; } }
+    // sortable headers are real buttons (keyboard and screen readers), with the current order shown
+    $('dbt').querySelectorAll('thead th').forEach(function(th){ if (!th.querySelector('button')) th.innerHTML = '<button type="button" class="db-sb">' + th.innerHTML + '</button>'; });
     $('dbt').querySelector('thead').onclick = function(e){ var th = e.target.closest('th'); if (!th) return; var k = th.dataset.k; dir = key === k ? -dir : (k === 'm' ? 1 : -1); key = k; draw(); };
     $('dbmore').onclick = function(){ lim = 1000; draw(); };
     draw();
