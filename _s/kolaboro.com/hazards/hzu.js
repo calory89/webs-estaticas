@@ -49,8 +49,9 @@
   function prot(d){
     var o = d.osm || {}, g = d.mangroves || {}, h = '<h3>Protected land and mangroves within 1 km</h3>', big;
     if (o.ok) {
-      big = o.inside.length ? 'Inside ' + (o.inside.length === 1 ? 'a mapped area' : o.inside.length + ' mapped areas') : o.near.length ? 'Boundary within 1 km' : 'None mapped within 1 km';
-      h += '<p class="hz-big' + (o.inside.length ? ' hzu-warn' : '') + '">' + big + '</p>';
+      var mg = g.ok && (g.in_cell || g.nearest_m != null);
+      big = o.inside.length ? 'Inside ' + (o.inside.length === 1 ? 'a mapped area' : o.inside.length + ' mapped areas') : o.near.length ? 'Boundary within 1 km' : mg ? 'Mangroves within 1 km' : 'None mapped within 1 km';
+      h += '<p class="hz-big' + (o.inside.length || mg ? ' hzu-warn' : '') + '">' + big + '</p>';
       var li = o.inside.concat(o.near).map(function(x){ return '<li><b>' + esc(x.name || 'Unnamed area') + '</b>, ' + esc(x.kind) + ': ' + (x.inside ? 'contains your pin' + (x.boundary_m != null ? ', boundary ' + n(x.boundary_m, 0) + ' m away' : '') : 'boundary ' + n(x.boundary_m, 0) + ' m away') + '</li>'; }).join('');
       h += li ? '<ul class="hz-list">' + li + '</ul>' : '';
       h += '<p class="hz-read">OpenStreetMap: ' + esc(o.note) + (o.inside.length || o.near.length ? ' <b>Ask</b> the seller for the official land-use status and whether building is allowed this close to the area.' : '') + '</p>';
