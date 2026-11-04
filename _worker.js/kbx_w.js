@@ -83,7 +83,8 @@ export function validName(raw) {
 // ---- insolvency lookup
 async function gazetteLookup(name) {
   const want = norm(name);
-  const url = GZ + '/insolvency/notice/data.feed?text=' + encodeURIComponent('"' + name.replace(/"/g, '') + '"') + '&results-page-size=100';
+  const phrase = name.replace(/"/g, '').replace(/[\s,]+(?:limited|ltd\.?|plc|llp|public limited company)\.?\s*$/i, '').trim();   // finds Ltd and Limited notices alike
+  const url = GZ + '/insolvency/notice/data.feed?text=' + encodeURIComponent('"' + phrase + '"') + '&results-page-size=100';
   const r = await fetch(url, { headers: { 'user-agent': UA, accept: 'application/atom+xml' }, signal: AbortSignal.timeout(15000) });
   if (!r.ok) throw new Error('The Gazette answered HTTP ' + r.status);
   const x = await r.text(), notices = [];
@@ -105,7 +106,7 @@ async function gazetteLookup(name) {
     source: 'The Gazette (UK), corporate insolvency notices', searched: url.replace(/&results-page-size=100$/, ''),
     notices: notices.slice(0, 50), exact_notices: notices.length, other_corporate_notices_mentioning_the_words: other,
     more_results: /rel="next"/.test(x), licence: 'Contains public sector information licensed under the Open Government Licence v3.0.',
-    search_page: GZ + '/insolvency/notice?text=' + encodeURIComponent('"' + name + '"')
+    search_page: GZ + '/insolvency/notice?text=' + encodeURIComponent('"' + phrase + '"')
   };
 }
 async function hkey(base) { return (await sha('kolaboro-w|' + base)).slice(0, 16); }
