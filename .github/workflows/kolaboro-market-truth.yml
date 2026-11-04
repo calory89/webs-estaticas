@@ -28,7 +28,11 @@ jobs:
             tools/kolaboro-agent/projects.json
             tools/kolaboro-agent/projects-world.json
           sparse-checkout-cone-mode: false
-      - run: pip install -q numpy scikit-learn
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      # setup-python installs packages into its own site-packages, which python3 -I (isolated mode) still sees
+      - run: python3 -m pip install -q numpy scikit-learn
       - name: Current site data
         run: |
           set -e
