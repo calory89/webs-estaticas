@@ -207,8 +207,9 @@
         fe.textContent = HM[(document.documentElement.lang || 'en').slice(0, 2)] || HM.en; f.q.setAttribute('aria-invalid', 'true'); f.q.focus(); return;
       }
       ev('check_project', { q: q.slice(0, 80) });
-      if (/^(https?:\/\/)?[\w-]+(\.[\w-]+)+(\/\S*)?$/i.test(q)) { location.href = '/check?url=' + encodeURIComponent(q) + '#analyze'; return; }
-      location.href = '/check?q=' + encodeURIComponent(q);
+      var CK = window.KBL && KBL.lp ? KBL.lp + '/check/' : '/check';   // translated pages stay in their language
+      if (/^(https?:\/\/)?[\w-]+(\.[\w-]+)+(\/\S*)?$/i.test(q)) { location.href = CK + '?url=' + encodeURIComponent(q) + '#analyze'; return; }
+      location.href = CK + '?q=' + encodeURIComponent(q);
     });
   });
 
