@@ -9643,5 +9643,384 @@
     295142
    ]
   }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "j-hills",
+  "name": "J-Hills",
+  "changed": {
+   "title_type": [
+    "leasehold",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "natha-loka",
+  "name": "Natha Loka Eco Village",
+  "changed": {
+   "advertised_yield_pct": [
+    7,
+    14
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "morros-vita-serena-del-mar",
+  "name": "Morros Vita",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Fiduciary scheme administered by Alianza Fiduciaria; buyers linked to the fiduciary scheme",
+    "Alianza Fiduciaria (fiduciary administration of project funds; buyers linked to fiduciary scheme)"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "sun-ponte-residence-da-nang",
+  "name": "Sun Ponte Residence",
+  "changed": {
+   "advertised_yield_pct": [
+    null,
+    8
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "the-chatt-huahin-pran",
+  "name": "The Chatt Huahin-Pran",
+  "changed": {
+   "title_type": [
+    null,
+    "leasehold"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "dubovica-budva-residential-complex",
+  "name": "New residential complex in Dubovica",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "al-sidr-saadiyat-lagoons",
+  "name": "Al Sidr (Saadiyat Lagoons)",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "island-heights-al-marjan",
+  "name": "Island Heights",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "comfort-by-orbi-orbi-group",
+  "name": "Comfort by Orbi",
+  "changed": {
+   "price_from": [
+    26800,
+    23000
+   ],
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "al-mare-green-midtown-group",
+  "name": "Al Mare Green",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "querencia-dovec-group",
+  "name": "Querencia",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9606,
+    9629
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "becici-sea-view-building-value-one",
+  "name": "New residential building 200 m from Bečići beach (building 5)",
+  "changed": {
+   "price_from": [
+    217827,
+    203965
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "sea-cliff-imtiaz",
+  "name": "Sea Cliff by Imtiaz",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Bank United Bank Limited (Management Office) Escrow number 200927479",
+    "Bank United Bank Limited (Management Office), Escrow number 200927479"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "residences-melia-seychelles-seafront",
+  "name": "The Residences at Meliá Seychelles",
+  "changed": {
+   "price_from": [
+    8124824,
+    8132780
+   ],
+   "escrow_or_guarantee": [
+    "Operating a Trust Account",
+    "Theresa Fernandez: Operating a Trust Account"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "rhea-by-sansiri",
+  "name": "Rhea by Sansiri",
+  "changed": {
+   "price_from": [
+    140819,
+    140597
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "shahrukhz-residences-danube",
+  "name": "Shahrukhz Residences by Danube",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Escrow account no. 011201382016",
+    "Escrow account no. 011201382016 (Escrow Registered No. 011201382016)"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "elaris-sky-object-1",
+  "name": "ELAR1S Sky (Elaris Sky)",
+  "changed": {
+   "permit_number": [
+    "#4019",
+    "project #4019"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "armani-beach-residences-palm-jumeirah-arada",
+  "name": "Armani Beach Residences at Palm Jumeirah",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Escrow Registered No. 3538468744702",
+    "Escrow account no. 3538468744702"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "noda-flores-noda-collective",
+  "name": "NODA Flores",
+  "changed": {
+   "advertised_yield_pct": [
+    15,
+    9
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "terra-mare-beach-villas-maenam",
+  "name": "Terra Mare Beach Villas",
+  "changed": {
+   "price_from": [
+    227915,
+    227916
+   ],
+   "extension_promised": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "stellar-by-elie-saab-emirates-developments",
+  "name": "Stellar by Elie Saab",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "azure-by-lapis-lapis-properties",
+  "name": "Azure by Lapis",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "alliance-centropolis-alliance-group",
+  "name": "Alliance Centropolis",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "the-ivory-chang-phueak-home-development-group",
+  "name": "The IVORY",
+  "changed": {
+   "price_from": [
+    62200,
+    118000
+   ],
+   "title_type": [
+    "freehold",
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "senna-tower-fg-empreendimentos",
+  "name": "Senna Tower",
+  "changed": {
+   "completion_year": [
+    null,
+    2033
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "boavista-tower-porto-mesmo-valor",
+  "name": "Boavista Tower",
+  "changed": {
+   "price_from": [
+    489900,
+    336900
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "penha-living-bolder-addsolid",
+  "name": "Penha Living Bolder",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "river-cove-residences-sobha",
+  "name": "River Cove Residences (Sobha City Abu Dhabi)",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "the-great-escape-2-aida-dar-global",
+  "name": "The Great Escape 2 (AIDA)",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Escrow-protected purchase. Oman regulation requires off-plan payments to be made into the developer's regulated escrow account. Bank: National Bank of Oman. Account holder: DAR GLOBAL PROPERTY DEVELOPMENT SPC. Account no. 1047-0428485-001. IBAN OM34 0180 0104 7042 8485 001. SWIFT NBOMOMRXXXX. Branch: Main Branch, Muscat.",
+    "Escrow-protected purchase. Bank: National Bank of Oman; Account holder: DAR GLOBAL PROPERTY DEVELOPMENT SPC; Account no.: 1047-0428485-001; IBAN: OM34 0180 0104 7042 8485 001; SWIFT: NBOMOMRXXXX; Branch: Main Branch, Muscat"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "udaondo-buenos-aires-landmark-developments",
+  "name": "Udaondo Buenos Aires",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Fideicomiso Buenos Aires Landmark, cited as the vehicle that bought the land in 2018; no buyer escrow or guarantee mentioned",
+    "Fideicomiso Buenos Aires Landmark (trust that bought the land at auction; no buyer escrow or guarantee mentioned)"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "city-walk-love-lane-liverpool-habitia",
+  "name": "City Walk",
+  "changed": {
+   "permit_claim": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-04",
+  "slug": "hayyan-alef-group",
+  "name": "Hayyan (current phases Samr and Deem)",
+  "changed": {
+   "price_from": [
+    1690000,
+    1700000
+   ]
+  }
  }
 ]
