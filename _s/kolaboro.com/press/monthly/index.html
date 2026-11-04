@@ -53,7 +53,7 @@
 <h2>How this release is made</h2>
 <p>A scheduled job on our build system reads the open files at the start of each month: <a href="/data/delay-index.json">the delivery-delay index</a>, <a href="/data/price-index.json">the asking-price index</a> and the per-market <a href="/transparency-index/">transparency index</a> (recomputed from <a href="/data/bali-cases.json">the project file</a> with the published formula). It picks the five numbers above with fixed rules, draws the charts and writes the plain text and JSON versions.</p>
 <p>An AI model (Claude) may draft the summary paragraph from those numbers only. Code then checks the draft: every number in it must appear in the data, spelled-out numbers, dashes and loaded words such as "soaring" or "crisis" are refused, and if anything fails the check the release uses a fixed template filled from the data instead. The page says which one you are reading. Each run spends under 2 USD on AI, logged in the JSON.</p>
-<p>Charts and numbers are CC BY 4.0: reuse them freely with the credit "Kolaboro, kolaboro.com". Questions: <a href="mailto:press@kolaboro.com">press@kolaboro.com</a>. Method details: <a href="/index/delays/">delivery-delay index</a>, <a href="/index/prices/">asking-price index</a>.</p>
+<p>Charts and numbers are CC BY 4.0: reuse them freely with the credit "Kolaboro, kolaboro.com". Questions: <!--email_off--><a href="mailto:press@kolaboro.com">press@kolaboro.com</a><!--/email_off-->. Method details: <a href="/index/delays/">delivery-delay index</a>, <a href="/index/prices/">asking-price index</a>.</p>
 </div></section>
 </main>
 <div class="mcta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="cta_sticky">Protect my purchase</a></div>
