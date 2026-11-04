@@ -1,0 +1,89 @@
+name: Kolaboro follow-up (promises and search alerts)
+# Block Y (batch 4). Daily, and after each research agent run:
+# 1. promises: reads every dated developer promise from the research records and the daily page copies (tools/kolaboro-agent/promises.py,
+#    claude-haiku-5-5, claude-sonnet-5-5 only for date conflicts), checks each quote in code, and publishes anonymous per-project
+#    statuses to kolaboro.com/data/promises.json. Model answers are cached on main by text hash, so a text is paid for once.
+#    Spend is logged in tools/kolaboro-agent/data/promises-spend.json and capped at 9.5 USD in total across all runs.
+# 2. alerts: calls the worker's daily search-alert job with a GitHub OIDC token (no stored secret). The worker evaluates every confirmed
+#    plain-language alert against the public data and sends at most one digest email per address per day.
+on:
+  schedule:
+    - cron: '23 11 * * *'
+  workflow_run:
+    workflows: ['Kolaboro research agent']
+    types: [completed]
+  push:
+    branches: [main]
+    paths: ['tools/kolaboro-agent/promises.py', '.github/workflows/kolaboro-followup.yml']
+  workflow_dispatch:
+    inputs:
+      run_usd:
+        description: "Max model spend this run (USD)"
+        default: "8"
+      skip_alerts:
+        description: "Skip the alerts job (1 = skip)"
+        default: "0"
+permissions:
+  contents: write
+  id-token: write
+concurrency:
+  group: kolaboro-followup
+  cancel-in-progress: false
+jobs:
+  promises:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: tools/kolaboro-agent
+      - name: Read promises
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          KB_PROMISE_RUN_USD: ${{ github.event.inputs.run_usd || '0.25' }}
+          KB_PROMISE_MAX_USD: '9.5'
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then echo "::warning::ANTHROPIC_API_KEY is not set: only cached readings are used"; fi
+          python3 tools/kolaboro-agent/promises.py "$RUNNER_TEMP/out"
+          python3 -c "import json,sys;d=json.load(open('$RUNNER_TEMP/out/promises.json'));assert d['counts']['projects_tracked']>100;print('ok',d['counts'])"
+      - name: Save the model cache and spend log on main
+        run: |
+          set -e
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          git add tools/kolaboro-agent/data/promises-cache.json tools/kolaboro-agent/data/promises-spend.json
+          git diff --cached --quiet && exit 0
+          git commit -q -m "kolaboro promises: model cache and spend log $(date -u +%F)"
+          for i in 1 2 3 4 5; do git push -q origin HEAD:main && exit 0; git pull -q --rebase origin main; sleep 5; done; exit 1
+      - name: Publish to kolaboro.com
+        run: |
+          set -e
+          git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          for i in 1 2 3 4 5; do
+            P=$(git rev-parse FETCH_HEAD)
+            export GIT_INDEX_FILE=$RUNNER_TEMP/idx; rm -f $GIT_INDEX_FILE; git read-tree $P
+            H=$(git hash-object -w "$RUNNER_TEMP/out/promises.json")
+            git update-index --add --cacheinfo 100644,$H,_s/kolaboro.com/data/promises.json
+            T=$(git write-tree); unset GIT_INDEX_FILE
+            [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
+            C=$(git commit-tree $T -p $P -m "kolaboro.com: promise tracker $(date -u +%F)")
+            git push -q origin $C:refs/heads/pub/_lovable && exit 0
+            sleep 5; git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          done; exit 1
+  alerts:
+    needs: promises
+    if: always() && github.event.inputs.skip_alerts != '1'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Daily search alerts
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request, urllib.error
+          tok = json.load(urllib.request.urlopen(urllib.request.Request(os.environ['ACTIONS_ID_TOKEN_REQUEST_URL'] + '&audience=kolaboro.com', headers={'Authorization': 'Bearer ' + os.environ['ACTIONS_ID_TOKEN_REQUEST_TOKEN']}), timeout=15))['value']
+          try:
+              r = urllib.request.urlopen(urllib.request.Request('https://kolaboro.com/api/x/y/alerts/run', b'{}', {'content-type': 'application/json', 'authorization': 'Bearer ' + tok, 'user-agent': 'kolaboro-followup/1.0'}), timeout=180)
+              print(r.status, r.read().decode()[:600])   # counts only: no addresses or filters are returned
+          except urllib.error.HTTPError as e:
+              print('::warning::alerts job answered', e.code, e.read().decode()[:300])
+          PY
