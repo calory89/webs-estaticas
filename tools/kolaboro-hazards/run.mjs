@@ -12,7 +12,8 @@ const last = {}, _fetch = globalThis.fetch;
 globalThis.fetch = async (url, init) => {
   const h = new URL(String(url)).host, g = GAP[h] || 0;
   if (g) { const now = Date.now(), at = Math.max(now, (last[h] || 0) + g); last[h] = at; if (at > now) await new Promise(r => setTimeout(r, at - now)); }
-  return _fetch(url, init);
+  // the core starts its timeout before this queue; give each request its own clock from the moment it is sent
+  return _fetch(url, Object.assign({}, init, { signal: AbortSignal.timeout(30000) }));
 };
 
 const ids = JSON.parse(fs.readFileSync(idsF, 'utf8'));
