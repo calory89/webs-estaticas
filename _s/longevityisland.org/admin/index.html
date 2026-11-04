@@ -62,7 +62,7 @@ a{color:var(--lagoon)}
       <select id="fs"><option value="">All statuses</option><option>new</option><option>contacted</option><option>accepted</option><option>waitlist</option><option>declined</option></select>
     </div>
     <div class="wrapt"><table><thead><tr>
-      <th data-k="created_at">Date</th><th data-k="name">Name</th><th data-k="age">Age</th><th data-k="country">Country</th><th data-k="interest">Interest</th><th data-k="active">Active</th><th data-k="smoker">Smoker</th><th>Email</th><th>WhatsApp</th><th data-k="utm_content">Source</th><th data-k="status">Status</th>
+      <th data-k="created_at">Date</th><th data-k="name">Name</th><th data-k="age">Age</th><th data-k="country">Country</th><th data-k="interest">Interest</th><th data-k="active">Active</th><th data-k="smoker">Smoker</th><th>Why</th><th>Email</th><th>WhatsApp</th><th data-k="utm_content">Source</th><th data-k="status">Status</th>
     </tr></thead><tbody id="tb"></tbody></table></div>
     <p class="muted" id="empty" hidden>No applications yet.</p>
   </div>
@@ -90,7 +90,7 @@ a{color:var(--lagoon)}
     var q = $('q').value.trim().toLowerCase(), c = $('fc').value, i = $('fi').value, s = $('fs').value;
     return rows.filter(function(r){
       if (c && r.country !== c) return false; if (i && r.interest !== i) return false; if (s && r.status !== s) return false;
-      if (q && ![r.name, r.email, r.whatsapp].join(' ').toLowerCase().includes(q)) return false; return true;
+      if (q && ![r.name, r.email, r.whatsapp, r.why].join(' ').toLowerCase().includes(q)) return false; return true;
     }).sort(function(a,b){ var x = a[sortK], y = b[sortK]; if (x == null) x = ''; if (y == null) y = ''; return (x > y ? 1 : x < y ? -1 : 0) * sortD; });
   }
   function render(){
@@ -107,7 +107,7 @@ a{color:var(--lagoon)}
       var wa = String(r.whatsapp||'').replace(/[^0-9]/g,'');
       var src = [r.utm_source, r.utm_campaign, r.utm_content].filter(Boolean).join(' / ');
       return '<tr><td>'+esc(new Date(r.created_at).toLocaleString('en-GB',{dateStyle:'short',timeStyle:'short'}))+'</td><td>'+esc(r.name)+'</td><td>'+esc(r.age)+'</td><td>'+esc(r.country)+'</td>'+
-        '<td><span class="pill '+esc(r.interest)+'">'+esc(L[r.interest]||r.interest)+'</span></td><td>'+esc(L[r.active]||(r.active==='very'?'Very':r.active))+'</td><td>'+esc(L[r.smoker]||r.smoker)+'</td>'+
+        '<td><span class="pill '+esc(r.interest)+'">'+esc(L[r.interest]||r.interest)+'</span></td><td>'+esc(L[r.active]||(r.active==='very'?'Very':r.active))+'</td><td>'+esc(L[r.smoker]||r.smoker)+'</td><td style="white-space:normal;min-width:220px;max-width:320px">'+esc(r.why||'')+'</td>'+
         '<td><a href="mailto:'+esc(r.email)+'">'+esc(r.email)+'</a></td><td>'+(wa?'<a href="https://wa.me/'+wa+'" target="_blank" rel="noopener">'+esc(r.whatsapp)+'</a>':'')+'</td><td class="muted">'+esc(src)+'</td>'+
         '<td><select data-id="'+esc(r.id)+'">'+['new','contacted','accepted','waitlist','declined'].map(function(s){ return '<option'+(s===r.status?' selected':'')+'>'+s+'</option>'; }).join('')+'</select></td></tr>';
     }).join('');
@@ -121,7 +121,7 @@ a{color:var(--lagoon)}
   $('reload').onclick = load;
   $('out').onclick = function(){ key=''; try{sessionStorage.removeItem('li_admin')}catch(e){} showLogin(''); };
   $('csv').onclick = function(){
-    var cols = ['created_at','name','age','country','interest','active','smoker','email','whatsapp','status','utm_source','utm_campaign','utm_content'];
+    var cols = ['created_at','name','age','country','interest','active','smoker','why','email','whatsapp','status','utm_source','utm_campaign','utm_content'];
     var lines = [cols.join(',')].concat(filtered().map(function(r){ return cols.map(function(c){ return '"' + String(r[c]==null?'':r[c]).replace(/"/g,'""') + '"'; }).join(','); }));
     var a = document.createElement('a'); a.href = URL.createObjectURL(new Blob(['﻿' + lines.join('\n')], {type:'text/csv'})); a.download = 'longevity-island-applications.csv'; a.click();
   };
