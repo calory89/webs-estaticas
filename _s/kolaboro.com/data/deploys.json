@@ -1,6 +1,18 @@
 {
  "deploys": [
   {
+   "at": "2026-11-04T08:24:58Z",
+   "commit": "13bcc8be22c112b02b99686fc257fa296333fed5",
+   "result": "not_deployed",
+   "checks_passed": 0,
+   "checks_total": 0,
+   "failed": [
+    "commit not live after 12 minutes"
+   ],
+   "wait_s": 724,
+   "run": "https://github.com/calory89/webs-estaticas/actions/runs/41797759994"
+  },
+  {
    "at": "2026-11-04T07:44:28Z",
    "commit": "5d9abf1a62b06cf93b38e5c2ca5b6fadabf72eff",
    "checks_passed": 32,
@@ -840,5 +852,5 @@
  },
  "last_checked": "5d9abf1a62b06cf93b38e5c2ca5b6fadabf72eff",
  "last_good": "5d9abf1a62b06cf93b38e5c2ca5b6fadabf72eff",
- "updated": "2026-11-04T07:44:28Z"
+ "updated": "2026-11-04T08:24:58Z"
 }
