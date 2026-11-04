@@ -227,7 +227,15 @@
     agent: ['¿En qué ciudad vives?', 'ej. Ubud, Bali', 'LinkedIn o web (opcional)', 'Algo que muestre tu trabajo', '¿A qué te dedicas y por qué serías un gran agente?'],
     developer: ['¿Dónde está tu proyecto?', 'ej. Uluwatu, Bali', 'Nombre y web del proyecto', 'Para empezar la revisión', 'Cuéntanos el proyecto que quieres verificar.'],
     investor: COPY.investor };
-  var MSG = ES ? { name: 'Añade tu nombre.', email: 'Añade un email válido.', place: 'Añade una ciudad o lugar.', msg: 'Añade un mensaje corto para saber cómo ayudarte.', check: 'Revisa los campos marcados.', consent: 'Marca la casilla para que podamos responderte por email.', bot: 'Algo ha fallado. Inténtalo en unos segundos.', dup: 'Ya tenemos una solicitud con este email. Te responderemos pronto.', fields: 'Revisa los campos e inténtalo de nuevo.', net: 'No se pudo enviar. Revisa tu conexión e inténtalo de nuevo.', sending: 'Enviando…', saved: 'Borrador guardado en este dispositivo.' }
+  // Indonesian pages (/agents/id/): labels and messages in the page language
+  var ID = (document.documentElement.lang || '').indexOf('id') === 0;
+  if (ID) COPY = {
+    buyer: ['Di mana Anda membeli?', 'mis. Canggu, Bali', 'Nama atau tautan proyek', 'mis. situs web pengembang atau proyek', 'Di tahap mana Anda sekarang, dan apa yang paling Anda khawatirkan?'],
+    agent: ['Di kota mana Anda tinggal?', 'mis. Ubud, Bali', 'LinkedIn atau situs web (opsional)', 'Apa saja yang menunjukkan pekerjaan Anda', 'Apa pekerjaan Anda saat ini, dan mengapa Anda akan menjadi agen yang hebat?'],
+    developer: ['Di mana proyek Anda?', 'mis. Uluwatu, Bali', 'Nama dan situs web proyek', 'Agar kami bisa memulai peninjauan', 'Ceritakan proyek yang ingin Anda verifikasi.'],
+    investor: COPY.investor };
+  var MSG = ID ? { name: 'Tambahkan nama Anda.', email: 'Tambahkan alamat email yang valid.', place: 'Tambahkan kota atau tempat.', msg: 'Tambahkan pesan singkat agar kami tahu cara membantu.', check: 'Periksa kolom yang ditandai.', consent: 'Centang kotak ini agar kami bisa membalas lewat email.', bot: 'Terjadi kesalahan. Coba lagi dalam beberapa detik.', dup: 'Kami sudah menerima permintaan dari email ini. Kami akan segera membalas.', fields: 'Periksa kolom lalu coba lagi.', net: 'Pesan Anda tidak terkirim. Periksa koneksi lalu coba lagi.', sending: 'Mengirim…', saved: 'Draf disimpan di perangkat ini.' }
+    : ES ? { name: 'Añade tu nombre.', email: 'Añade un email válido.', place: 'Añade una ciudad o lugar.', msg: 'Añade un mensaje corto para saber cómo ayudarte.', check: 'Revisa los campos marcados.', consent: 'Marca la casilla para que podamos responderte por email.', bot: 'Algo ha fallado. Inténtalo en unos segundos.', dup: 'Ya tenemos una solicitud con este email. Te responderemos pronto.', fields: 'Revisa los campos e inténtalo de nuevo.', net: 'No se pudo enviar. Revisa tu conexión e inténtalo de nuevo.', sending: 'Enviando…', saved: 'Borrador guardado en este dispositivo.' }
     : { name: 'Add your name.', email: 'Add a valid email address.', place: 'Add a city or place.', msg: 'Add a short message so we know how to help.', check: 'Check the highlighted fields.', consent: 'Tick the box so we can reply to you by email.', bot: 'Something went wrong. Try again in a few seconds.', dup: 'We already have a request from this email. We will reply soon.', fields: 'Check the fields and try again.', net: 'Your message could not be sent. Check your connection and try again.', sending: 'Sending…', saved: 'Draft saved on this device.' };
   function store() { try { return window.localStorage; } catch (e) { return null; } }
 
@@ -539,5 +547,7 @@ document.addEventListener('toggle', function (e) { var d = e.target; if (!d || !
 // real-user web vitals (block F): half of page views, loaded after the load event, see /status#st-vit
 (function(){if(Math.random()>=0.5)return;function v(){setTimeout(function(){var s=document.createElement('script');s.src='/k/vitals.js?v=604551822c';s.async=1;document.head.appendChild(s)},1)}if(document.readyState==='complete')v();else addEventListener('load',v,{once:true})})();
 // inline-handler free (strict CSP): forms marked data-nosubmit never navigate, buttons marked data-print open the print dialog
+// cookie notice: a region, not a dialog (it never takes focus)
+(function(){function f(){var c=document.getElementById('cc');if(c&&c.getAttribute('role')==='dialog')c.setAttribute('role','region');}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',f);else f();})();
 document.addEventListener('submit',function(e){if(e.target.matches&&e.target.matches('form[data-nosubmit]'))e.preventDefault()},true);
 document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('[data-print]');if(b){e.preventDefault();window.print()}});
