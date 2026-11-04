@@ -184,6 +184,7 @@
     css('https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css');
     load('https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js').then(function(){
       var el = $('xmap'); if (!el || el._leaflet_id) return;
+      if (L.Icon && L.Icon.Default) L.Icon.Default.imagePath = '/satellite/plot/vendor/images/';
       var center = x.lat ? [x.lat, x.lng] : [-8.65, 115.17], mode = null, pin = null, poly = null, pts = (x.plot && x.plot.coordinates) ? x.plot.coordinates.map(function(p){ return [p[1], p[0]]; }) : [];
       var map = L.map(el, { scrollWheelZoom: false }).setView(center, x.lat ? 18 : 10);
       L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { maxZoom: 19, attribution: 'Imagery © Esri, Maxar, Earthstar Geographics' }).addTo(map);
