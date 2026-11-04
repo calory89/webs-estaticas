@@ -50,6 +50,7 @@ KINDS = ('handover', 'construction_start', 'structure', 'milestone', 'permit', '
 KIND_LABEL = {'handover': 'Handover or completion', 'construction_start': 'Construction start', 'structure': 'Structure finished (topping out)',
               'milestone': 'Other construction milestone', 'permit': 'Permit or approval obtained', 'rental': 'Rental programme or operations start'}
 YR = re.compile(r'\b20(2[4-9]|3[0-5])\b')
+WEAK = re.compile(r'\b(no|not|nor|without)\b[^.;]{0,80}\b(published|disclosed|available|posted|shown|stated)\b', re.I)
 
 lock = threading.Lock()
 spend = {'usd': 0.0, 'haiku_calls': 0, 'sonnet_calls': 0, 'in': 0, 'out': 0, 'errors': 0}
@@ -408,14 +409,15 @@ def thread_status(p, kind, obs, cache, stats):
             done.append(({'day': rday, 'src': 'research'}, {'date': None, 'end': None, 'quote': 'stage: ' + stage}))
         elif stage in ('under construction', 'off-plan'):
             not_done.append(({'day': rday, 'src': 'research'}, {'date': None, 'end': None, 'quote': 'stage: ' + stage}))
-    if kind == 'construction_start' and rday:
-        if stage in ('under construction', 'completed'):
-            done.append(({'day': rday, 'src': 'research'}, {'date': None, 'end': None, 'quote': 'stage: ' + stage}))
-        elif stage == 'off-plan':
-            not_done.append(({'day': rday, 'src': 'research'}, {'date': None, 'end': None, 'quote': 'stage: ' + stage}))
+    if kind == 'construction_start' and rday and stage in ('under construction', 'completed'):
+        done.append(({'day': rday, 'src': 'research'}, {'date': None, 'end': None, 'quote': 'stage: ' + stage}))
+        # "off-plan" is a sales stage, not proof that works have not started: never used as evidence of a broken start
     if kind == 'permit' and rday and ver in ('registry', 'independent'):
         done.append(({'day': rday, 'src': 'research'}, {'date': None, 'end': None, 'quote': 'permit ' + ver}))
     end = cur['end']; past = end < TODAY_M
+    # a dated "it happened" statement supports this promise only if it falls in the promised period (up to 6 months before its end):
+    # an event long before the date is usually a first phase or a first unit, not the promised event
+    done = [x for x in done if not x[1].get('end') or end - 6 < x[1]['end'] <= end + 0]  + [x for x in done if x[1].get('end') and x[1]['end'] > end]
     st, ev = None, None
     on_time = [x for x in done if (x[1].get('end') and x[1]['end'] <= end) or (month_idx(x[0]['day']) or 10 ** 9) <= end]
     if on_time:
@@ -423,7 +425,10 @@ def thread_status(p, kind, obs, cache, stats):
     elif done:
         st, ev = 'unknown', done[0]   # happened, but we cannot show it was on time
     elif past:
-        after = [x for x in not_done if (month_idx(x[0]['day']) or 0) > end]
+        # the observation must be dated after the promised date: the statement's own date when it has one, else the day we read it.
+        # "nothing is published" is not evidence that it did not happen, so such statements are not used.
+        after = [x for x in not_done if ((x[1].get('end') or month_idx(x[0]['day']) or 0) > end)
+                 and not WEAK.search(x[1].get('quote') or '')]
         if after:
             st, ev = 'broken', after[-1]
         else:
@@ -435,6 +440,9 @@ def thread_status(p, kind, obs, cache, stats):
         out['sha'] = lo['sha'][:16]
     if earlier:
         out['earlier'] = earlier
+    rp = [picks[id(o)] for o in obs if o['src'] == 'research' and id(o) in picks]
+    if rp and rp[-1]['date'] != cur['date']:
+        out['rd'] = rp[-1]['date']   # the research record gives a different current date than the newest page copy
     if ev:
         out['ev'] = {'src': ev[0]['src'], 'seen': ev[0]['day'], 'what': 'done' if ev in done else 'not done'}
     hist = sorted((json.loads(h) for h in {json.dumps(h, sort_keys=True) for h in hist}), key=lambda h: (h['seen'], h['src'], h['d'] or ''))
