@@ -231,6 +231,7 @@ export async function handle(req, u, env, ctx) {
       pages: ['/graph/global/', '/tools/insolvency-check/', '/tools/agent-check/'] }, 200, 3600);
     if (p === '/api/x/w/graph-global') {
       const d = await load(env, 'company-graph-global.json'); if (!d) return out(STARTING('company-graph-global.json'), 200, 60);
+      if (u.searchParams.get('full') === '1') return out(d);
       const { projects, ...rest } = d;
       return out({ ...rest, project_ids: Object.keys(projects || {}).length });
     }

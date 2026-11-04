@@ -48,7 +48,8 @@
   }
   var CN = { US: 'United States', GB: 'United Kingdom', AE: 'United Arab Emirates', SA: 'Saudi Arabia', NL: 'Netherlands', LU: 'Luxembourg', JP: 'Japan', SG: 'Singapore', HK: 'Hong Kong', CN: 'China', DE: 'Germany', FR: 'France', ES: 'Spain', CH: 'Switzerland', IE: 'Ireland', KY: 'Cayman Islands', VG: 'British Virgin Islands', TH: 'Thailand', MY: 'Malaysia', CY: 'Cyprus', IT: 'Italy', IN: 'India', QA: 'Qatar', BH: 'Bahrain', KW: 'Kuwait', OM: 'Oman', TR: 'Turkey', BE: 'Belgium', SE: 'Sweden', AU: 'Australia', CA: 'Canada', MX: 'Mexico', JE: 'Jersey', GG: 'Guernsey', IM: 'Isle of Man', MT: 'Malta', PT: 'Portugal', GR: 'Greece', EG: 'Egypt', ID: 'Indonesia', PH: 'Philippines', VN: 'Vietnam', KR: 'South Korea', ZA: 'South Africa', BM: 'Bermuda' };
 
-  fetch('/data/company-graph-global.json').then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (d) {
+  fetch('/api/x/w/graph-global?full=1').then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(function (d) {
+    if (d.status === 'starting' || !d.markets) throw new Error('starting');
     D = d;
     var c = d.coverage || {}, t = d.totals || {}, s = d.shares || {};
     $('k-c').textContent = fmt(t.checked); $('k-n').textContent = fmt(c.candidate_names);
