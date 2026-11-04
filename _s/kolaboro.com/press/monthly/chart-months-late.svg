@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 380" width="760" height="380" role="img" aria-labelledby="t d">
+<title id="t">How far past the first promised handover</title><desc id="d">62 tracked projects past that date, all markets. November 2026.. Kolaboro, kolaboro.com. CC BY 4.0. Data: kolaboro.com/data/delay-index.json, November 2026.</desc>
+<rect width="100%" height="100%" fill="#FFFFFF"/>
+<g font-family="Archivo, 'Helvetica Neue', Arial, sans-serif">
+<text x="24" y="34" font-size="20" font-weight="700" fill="#17212B">How far past the first promised handover</text>
+<text x="24" y="56" font-size="13" fill="#5B6670">62 tracked projects past that date, all markets. November 2026.</text>
+<line x1="56" x2="736" y1="306.0" y2="306.0" stroke="#E3E2DD"/><text x="48" y="310.0" font-size="11" text-anchor="end" fill="#5B6670">0</text>
+<line x1="56" x2="736" y1="239.5" y2="239.5" stroke="#E3E2DD"/><text x="48" y="243.5" font-size="11" text-anchor="end" fill="#5B6670">5</text>
+<line x1="56" x2="736" y1="173.1" y2="173.1" stroke="#E3E2DD"/><text x="48" y="177.1" font-size="11" text-anchor="end" fill="#5B6670">10</text>
+<line x1="56" x2="736" y1="106.6" y2="106.6" stroke="#E3E2DD"/><text x="48" y="110.6" font-size="11" text-anchor="end" fill="#5B6670">15</text>
+<path d="M59.0 306.0 v-128.9 a4 4 0 0 1 4 -4 h99.3 a4 4 0 0 1 4 4 v128.9 z" fill="#FF5B14"><title>1 to 3 months: 10 projects</title></path>
+<text x="112.7" y="167.1" font-size="12" font-weight="700" text-anchor="middle" fill="#17212B">10</text>
+<text x="112.7" y="324" font-size="12" text-anchor="middle" fill="#5B6670">1 to 3</text>
+<path d="M172.3 306.0 v-168.8 a4 4 0 0 1 4 -4 h99.3 a4 4 0 0 1 4 4 v168.8 z" fill="#FF5B14"><title>4 to 6 months: 13 projects</title></path>
+<text x="226.0" y="127.2" font-size="12" font-weight="700" text-anchor="middle" fill="#17212B">13</text>
+<text x="226.0" y="324" font-size="12" text-anchor="middle" fill="#5B6670">4 to 6</text>
+<path d="M285.7 306.0 v-222.0 a4 4 0 0 1 4 -4 h99.3 a4 4 0 0 1 4 4 v222.0 z" fill="#FF5B14"><title>7 to 12 months: 17 projects</title></path>
+<text x="339.3" y="74.0" font-size="12" font-weight="700" text-anchor="middle" fill="#17212B">17</text>
+<text x="339.3" y="324" font-size="12" text-anchor="middle" fill="#5B6670">7 to 12</text>
+<path d="M399.0 306.0 v-155.5 a4 4 0 0 1 4 -4 h99.3 a4 4 0 0 1 4 4 v155.5 z" fill="#FF5B14"><title>13 to 24 months: 12 projects</title></path>
+<text x="452.7" y="140.5" font-size="12" font-weight="700" text-anchor="middle" fill="#17212B">12</text>
+<text x="452.7" y="324" font-size="12" text-anchor="middle" fill="#5B6670">13 to 24</text>
+<path d="M512.3 306.0 v-49.2 a4 4 0 0 1 4 -4 h99.3 a4 4 0 0 1 4 4 v49.2 z" fill="#FF5B14"><title>25 to 36 months: 4 projects</title></path>
+<text x="566.0" y="246.8" font-size="12" font-weight="700" text-anchor="middle" fill="#17212B">4</text>
+<text x="566.0" y="324" font-size="12" text-anchor="middle" fill="#5B6670">25 to 36</text>
+<path d="M625.7 306.0 v-75.8 a4 4 0 0 1 4 -4 h99.3 a4 4 0 0 1 4 4 v75.8 z" fill="#FF5B14"><title>37+ months: 6 projects</title></path>
+<text x="679.3" y="220.2" font-size="12" font-weight="700" text-anchor="middle" fill="#17212B">6</text>
+<text x="679.3" y="324" font-size="12" text-anchor="middle" fill="#5B6670">37+</text>
+<text x="396.0" y="344" font-size="12" text-anchor="middle" fill="#5B6670">months past the first promised handover</text>
+<text x="24" y="368" font-size="11" fill="#5B6670">Kolaboro, kolaboro.com. CC BY 4.0. Data: kolaboro.com/data/delay-index.json, November 2026.</text>
+</g></svg>
