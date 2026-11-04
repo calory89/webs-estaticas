@@ -140,6 +140,7 @@ async function insolvency(req, u, env, ctx) {
       not_covered: 'Other countries are not searched. See the list of official registers on kolaboro.com/tools/insolvency-check/.' };
   }, 86400, ctx);
   if (d.uk && d.uk.error) d.partial = true;
+  d.query = name;   // a cached answer is shared by everyone who searches the same normalised name: echo this request's own text, never an earlier visitor's
   return out(d, 200, 0);
 }
 

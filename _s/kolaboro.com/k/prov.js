@@ -83,7 +83,7 @@
     '.kbp .kbp-x{position:absolute;top:8px;right:8px;width:32px;height:32px;border:0;border-radius:8px;background:transparent;font:700 1.2rem/1 system-ui;color:#4A5661;cursor:pointer}.kbp .kbp-x:hover{background:#F2F3F1}.kbp .kbp-x:focus-visible{outline:3px solid #FF5B14}' +
     '.kbp .kbp-ok{color:#075E41;font-weight:700}.kbp .kbp-no{color:#8F2D04;font-weight:700}.kbp .kbp-mu{color:#4A5661}.kbp .kbp-f{margin:12px 0 0;padding-top:10px;border-top:1px solid rgba(23,33,43,.12);font-size:.76rem;color:#4A5661}' +
     '@media (max-width:520px){.kbp dl{grid-template-columns:1fr}.kbp dt{padding-top:4px}}' +
-    '.kbp-pv{background:none;border:0;padding:0;font:inherit;color:inherit;cursor:pointer;text-decoration:none;text-align:left}.kbp-pv:hover{text-decoration:underline;text-decoration-color:#FF5B14;text-decoration-thickness:2px}.kbp-pv:focus-visible{outline:3px solid #FF5B14;outline-offset:2px}' +
+    '@media (pointer:coarse){.kbp-pv{min-height:40px}}.kbp-pv{background:none;border:0;padding:0;font:inherit;color:inherit;cursor:pointer;text-decoration:none;text-align:left}.kbp-pv:hover{text-decoration:underline;text-decoration-color:#FF5B14;text-decoration-thickness:2px}.kbp-pv:focus-visible{outline:3px solid #FF5B14;outline-offset:2px}' +
     '.kbp-sr{position:absolute!important;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}';
   function css() { if (document.getElementById('kbp-css')) return; var s = document.createElement('style'); s.id = 'kbp-css'; s.textContent = CSS; document.head.appendChild(s); var h = document.createElement('span'); h.id = 'kbp-hint'; h.className = 'kbp-sr'; h.textContent = 'Opens where this number comes from.'; document.body.appendChild(h); }
   // ---------- marking elements
