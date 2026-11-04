@@ -1,70 +1,48 @@
 {
- "updated": "2026-11-03T13:48:09.638Z",
+ "updated": "2026-11-04T10:00:54.195Z",
  "base": "https://kolaboro.com",
  "tool": "axe-core 4.14.0 in Chrome, rules tagged wcag2a, wcag2aa, wcag21a, wcag21aa, wcag22aa",
  "viewport": "1280x900",
- "seconds": 310,
+ "seconds": 458,
  "goal": "0 serious or critical",
  "ok": false,
  "summary": {
-  "at": "2026-11-03T13:48:09.638Z",
-  "pages": 116,
+  "at": "2026-11-04T10:00:54.195Z",
+  "pages": 190,
   "errors": 0,
   "nodes_by_impact": {
-   "critical": 2,
+   "critical": 0,
    "serious": 56,
    "moderate": 0,
    "minor": 0
   },
-  "pages_clean": 111,
-  "pages_with_serious_or_critical": 5
+  "pages_clean": 184,
+  "pages_with_serious_or_critical": 6
  },
  "rules": [
-  {
-   "id": "label",
-   "impact": "critical",
-   "help": "Form elements must have labels",
-   "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label?application=axeAPI",
-   "pages": 1,
-   "nodes": 1,
-   "examples": [
-    "/portal/demo/"
-   ]
-  },
-  {
-   "id": "select-name",
-   "impact": "critical",
-   "help": "Select element must have an accessible name",
-   "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/select-name?application=axeAPI",
-   "pages": 1,
-   "nodes": 1,
-   "examples": [
-    "/portal/demo/"
-   ]
-  },
   {
    "id": "scrollable-region-focusable",
    "impact": "serious",
    "help": "Scrollable region must have keyboard access",
    "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/scrollable-region-focusable?application=axeAPI",
-   "pages": 3,
-   "nodes": 5,
+   "pages": 4,
+   "nodes": 12,
    "examples": [
-    "/portal/demo/",
     "/docs/api/",
-    "/engineering/signed-photos/"
+    "/docs/mcp/",
+    "/docs/webhooks/",
+    "/docs/partners/"
    ]
   },
   {
-   "id": "label-content-name-mismatch",
+   "id": "aria-prohibited-attr",
    "impact": "serious",
-   "help": "Elements must have their visible text as part of their accessible name",
-   "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/label-content-name-mismatch?application=axeAPI",
-   "pages": 2,
-   "nodes": 31,
+   "help": "Elements must only use permitted ARIA attributes",
+   "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=axeAPI",
+   "pages": 1,
+   "nodes": 20,
    "examples": [
-    "/report/sample/",
-    "/satellite/"
+    "/investors/dossier/"
    ]
   },
   {
@@ -73,9 +51,9 @@
    "help": "Elements must meet minimum color contrast ratio thresholds",
    "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
    "pages": 1,
-   "nodes": 20,
+   "nodes": 24,
    "examples": [
-    "/portal/demo/"
+    "/report/state-of-off-plan-2026/live/"
    ]
   }
  ],
@@ -96,18 +74,7 @@
    "url": "/report/sample/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "label-content-name-mismatch",
-     "impact": "serious",
-     "nodes": 4,
-     "targets": [
-      "div[aria-label=\"Open photo 1\"]",
-      "div[aria-label=\"Open photo 2\"]",
-      "div[aria-label=\"Open photo 3\"]"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/how-we-score/",
@@ -332,6 +299,12 @@
    "violations": []
   },
   {
+   "url": "/changelog/2026-11-03/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
    "url": "/changelog/",
    "status": 200,
    "error": null,
@@ -407,42 +380,7 @@
    "url": "/portal/demo/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "label",
-     "impact": "critical",
-     "nodes": 1,
-     "targets": [
-      "input[name=\"due\"]"
-     ]
-    },
-    {
-     "id": "select-name",
-     "impact": "critical",
-     "nodes": 1,
-     "targets": [
-      "select[name=\"days\"]"
-     ]
-    },
-    {
-     "id": "color-contrast",
-     "impact": "serious",
-     "nodes": 20,
-     "targets": [
-      "#xchk",
-      ".accepted:nth-child(1) > div > small:nth-child(2)",
-      ".accepted:nth-child(1) > div > .x-hash[title=\"SHA-256 of the file\"]"
-     ]
-    },
-    {
-     "id": "scrollable-region-focusable",
-     "impact": "serious",
-     "nodes": 1,
-     "targets": [
-      "#chat"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/copilot/",
@@ -482,11 +420,11 @@
     {
      "id": "scrollable-region-focusable",
      "impact": "serious",
-     "nodes": 3,
+     "nodes": 5,
      "targets": [
-      ".api-b:nth-child(10)",
-      ".api-b:nth-child(14)",
-      ".api-b:nth-child(17)"
+      ".api-b:nth-child(11)",
+      ".api-b:nth-child(15)",
+      ".api-b:nth-child(18)"
      ]
     }
    ]
@@ -555,18 +493,7 @@
    "url": "/satellite/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "label-content-name-mismatch",
-     "impact": "serious",
-     "nodes": 27,
-     "targets": [
-      "button[data-id=\"phuket-bangtao\"]",
-      "button[data-id=\"bali-seseh\"]",
-      "button[data-id=\"montenegro-lustica\"]"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/registers/",
@@ -836,25 +763,520 @@
    "url": "/engineering/signed-photos/",
    "status": 200,
    "error": null,
-   "violations": [
-    {
-     "id": "scrollable-region-focusable",
-     "impact": "serious",
-     "nodes": 1,
-     "targets": [
-      ".eg-code"
-     ]
-    }
-   ]
+   "violations": []
   },
   {
    "url": "/engineering/reliability/",
    "status": 200,
    "error": null,
    "violations": []
+  },
+  {
+   "url": "/sql/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/docs/mcp/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "scrollable-region-focusable",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      ".eg-code:nth-child(17)"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/docs/sdk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ask/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/api-keys/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/trust/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/investors/dossier/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "aria-prohibited-attr",
+     "impact": "serious",
+     "nodes": 20,
+     "targets": [
+      "rect[y=\"15.538650306748465\"]",
+      "rect[y=\"14.97914110429447\"]",
+      "rect[aria-label=\"4 Nov 2026: 815\"]"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/prices/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/risk/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/registers/checks/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/pdf-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/image-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/iban-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/check/red-team/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/alerts/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/report/state-of-off-plan-2026/live/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": 24,
+     "targets": [
+      "dd > .lv-ok:nth-child(1)",
+      ".lv-ok:nth-child(4)",
+      "tr:nth-child(1) > td:nth-child(4) > .lv-ok"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/satellite/plot/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/milestones/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/hazards/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/graph/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/mystery-shopper/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/visual/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/index/prices/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/benchmark/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/log/witnesses/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/buyer-reports/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/visit/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/docs/webhooks/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "scrollable-region-focusable",
+     "impact": "serious",
+     "nodes": 3,
+     "targets": [
+      "#wsample > .eg-code",
+      "#cjs",
+      "#cpy"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/tools/contract-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/law/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/permit-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/changelog/2026-11-04/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/index/delays/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/press/monthly/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/build-cost/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/late-handover/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/court-file/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/docs/partners/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "scrollable-region-focusable",
+     "impact": "serious",
+     "nodes": 3,
+     "targets": [
+      ".eg-code:nth-child(12)",
+      ".eg-code:nth-child(13)",
+      "div[data-p=\"c\"]"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/ru/check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/how-we-score/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/checklist/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/about/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ru/cases/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/how-we-score/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/checklist/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/about/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/zh/cases/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/how-we-score/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/checklist/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/about/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/de/cases/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/how-we-score/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/checklist/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/about/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/fr/cases/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/how-we-score/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/checklist/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/about/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ar/cases/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/how-we-score/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/checklist/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/about/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/nl/cases/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/satellite/night/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/promises/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/search-alerts/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/ask-developer/",
+   "status": 200,
+   "error": null,
+   "violations": []
   }
  ],
  "history": [
+  {
+   "at": "2026-11-04T10:00:54.195Z",
+   "pages": 190,
+   "errors": 0,
+   "nodes_by_impact": {
+    "critical": 0,
+    "serious": 56,
+    "moderate": 0,
+    "minor": 0
+   },
+   "pages_clean": 184,
+   "pages_with_serious_or_critical": 6
+  },
   {
    "at": "2026-11-03T13:48:09.638Z",
    "pages": 116,
