@@ -193,7 +193,7 @@ def build_about():
       <p style="font-weight:700;color:var(--ink);margin-top:18px">Lisa Mikolajewicz, co-founder</p>
       <ul><li>10 years in recruiting, hiring and managing teams</li><li>Leads how we find, vet and train local agents in every new city</li><li>Leads partnerships with developers</li></ul>
       <p>Danish, based in Denmark. Carlos and Lisa met at the hackathons for entrepreneurs he organizes.</p></div>
-    <div class="note-box" style="margin-top:20px"><b>Want to help build this?</b> We're looking for local agents in Bali and Mexico, and for investors. <a href="/investors">Talk to us</a></div>
+    <div class="note-box" style="margin-top:20px"><b>Want to help build this?</b> We're looking for local agents in the countries our buyers buy in, and for investors. <a href="/investors">Talk to us</a></div>
   </div>
 </div></section>'''
     return page('/about', 'About Kolaboro', "Kolaboro's mission, beliefs and founders: making it safe to buy property anywhere on Earth.", body)
