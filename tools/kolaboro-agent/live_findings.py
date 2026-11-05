@@ -337,7 +337,7 @@ def wording(pid, kind, fact, new, old, old_seen, hm):
             return 'developer page now claims %d units left (was %d on %s), a sales claim we cannot verify' % (new, old, ddmon(old_seen))
         if kind == 'removed':
             return 'the "units left" claim is no longer on the developer page (it said %d on %s)' % (old, ddmon(old_seen))
-        return 'developer page claims %d units left, a sales claim we cannot verify' % new
+        return 'developer page claims %d unit%s left, a sales claim we cannot verify' % (new, '' if new == 1 else 's')
     if fact == 'yield_pct':
         if kind == 'changed':
             return 'advertised rental yield now %g%% (was %g%% on %s), advertised, not verified' % (new, old, ddmon(old_seen))
