@@ -2,7 +2,7 @@
 // Block U6, batch 6 (5 Nov 2026). Endpoints live under /api/x/disc/. Everything here is read from public files under /data/;
 // nothing private is read, and no project coordinates are used (the map places projects at their market's public point).
 //
-// GET /api/x/disc/points           compact rows for /map/: one row per public project + the market points (data/market-points.json)
+// GET /api/x/disc/points           compact rows for /map/: one row per public project + the market points (key market_points of data/similar.json)
 // GET /api/x/disc/similar?id=ID    the 5 most similar projects (data/similar.json) with the shared public features that explain it
 // GET /api/x/disc/timeline?id=ID   every dated public event for one project, grouped by kind, each with its source file
 import * as KB from './kolaboro.js';
@@ -46,13 +46,14 @@ async function cases(env) {
 async function points(env) {
   const d = await cases(env);
   if (!d) return out({ error: 'data unavailable' }, 503, 0);
-  const mp = await load(env, 'market-points.json');
+  const sj = await load(env, 'similar.json');
+  const mp = (sj && sj.market_points) || await load(env, 'market-points.json');
   const rows = d.cases.filter(c => c && c.id && c.market).map(c => [c.id, c.market, c.country, c.stage || '', c.tier || '', c.band || '', c.score || 0, c.max || 6, c.region && c.region !== c.market ? c.region : '']);
   return out({
     updated: d.updated || null,
     keys: ['id', 'market', 'country', 'stage', 'tier', 'band', 'score', 'max', 'area'],
     rows,
-    points: mp ? { status: 'ready', generated: mp.generated, method: mp.method, sources: mp.sources, counts: mp.counts, markets: mp.markets, unplaced: mp.unplaced || [] } : { status: 'starting', note: 'The nightly job has not published /data/market-points.json yet.' }
+    points: mp ? { status: 'ready', generated: mp.generated, method: mp.method, sources: mp.sources, counts: mp.counts, markets: mp.markets, unplaced: mp.unplaced || [] } : { status: 'starting', note: 'The nightly job has not published the market points (key market_points of /data/similar.json) yet.' }
   }, 200, 600);
 }
 

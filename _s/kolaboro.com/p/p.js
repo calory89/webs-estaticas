@@ -398,4 +398,4 @@
 })();
 
 /* Block U6 (batch 6, 5 Nov 2026), isolated addition owned by U6: loads /disc/p-hook.js (most similar projects from nightly embeddings, timeline link, display currency). */
-(function(){ if (window.KDISC_P) return; var s = document.createElement("script"); s.src = "/disc/p-hook.js?v=a672bab87e"; s.defer = true; document.head.appendChild(s); })();
+(function(){ if (window.KDISC_P) return; var s = document.createElement("script"); s.src = "/disc/p-hook.js?v=04c3b8fd72"; s.defer = true; document.head.appendChild(s); })();
