@@ -9,7 +9,7 @@ on:
     inputs:
       max_pages:
         description: "Max project pages this run"
-        default: "150"
+        default: "500"
 permissions:
   contents: write
 concurrency:
