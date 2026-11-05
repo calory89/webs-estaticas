@@ -38,7 +38,9 @@ with cf.ThreadPoolExecutor(16) as ex:
     for (p,u),h in zip(jobs,ex.map(lambda j:hashimg(j[1]),jobs)):
         if h: h.update({'slug':p.get('slug'),'name':p.get('name'),'dev':p.get('developer'),'market':p.get('market','Bali'),'site':dom(p['url'])}); res.append(h)
 import datetime
-items=[[h['ph'],h['dh'],h['site'],h['name'],h['market']] for h in res]
+# Anonymity rule: developer domains and project names are never published; fields 2 and 3 stay empty for format compatibility.
+# /tools/image-check/ uses the anonymised /data/image-hashes.json (project ids) to name matches.
+items=[[h['ph'],h['dh'],'','',h['market']] for h in res]
 out={'updated':datetime.date.today().isoformat(),'images':len(items),'sites':len(set(h['site'] for h in res)),'items':items}
 if len(items)<200: raise SystemExit('too few images (%d): keeping the old index'%len(items))
 json.dump(out,open(sys.argv[1],'w'),separators=(',',':'))
