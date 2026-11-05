@@ -6,6 +6,7 @@ export const LANGS = ['en', 'es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'];
 export const LOCALE = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
 
 const en = {
+  nr_badge: 'Not yet reviewed by Kolaboro (added {d})', nr_txt: 'Our research agent has not reviewed this project yet. Below are only the facts we have, each with its source. No checks, score or label are shown until the review is done.', v_listing: 'listing page (not the developer\'s site)', nr_short: 'not yet reviewed',
   title_p: '{n} reviews and facts: permits, delivery date, developer | Kolaboro',
   h1_p: '{n}: reviews and facts',
   lead_p: 'What is published about {n} in {place}, what official registers and other sources say, and what changed over time. Facts only, each with its source.',
@@ -78,6 +79,7 @@ const en = {
 };
 
 const es = {
+  nr_badge: 'Aún no revisado por Kolaboro (añadido el {d})', nr_txt: 'Nuestro agente de investigación aún no ha revisado este proyecto. Abajo solo están los datos que tenemos, cada uno con su fuente. No mostramos comprobaciones, puntuación ni etiqueta hasta terminar la revisión.', v_listing: 'página de anuncio (no es la web del promotor)', nr_short: 'aún no revisado',
   title_p: '{n}: opiniones y datos: licencias, fecha de entrega, promotor | Kolaboro',
   h1_p: '{n}: opiniones y datos',
   lead_p: 'Lo que se publica sobre {n} en {place}, lo que dicen los registros oficiales y otras fuentes, y qué cambió con el tiempo. Solo hechos, cada uno con su fuente.',
@@ -150,6 +152,7 @@ const es = {
 };
 
 const de = {
+  nr_badge: 'Noch nicht von Kolaboro geprüft (hinzugefügt am {d})', nr_txt: 'Unser Recherche-Agent hat dieses Projekt noch nicht geprüft. Unten stehen nur die Fakten, die wir haben, jeweils mit Quelle. Prüfungen, Wert oder Kennzeichnung zeigen wir erst nach der Prüfung.', v_listing: 'Inseratsseite (nicht die Website des Bauträgers)', nr_short: 'noch nicht geprüft',
   title_p: '{n}: Erfahrungen und Fakten: Genehmigung, Fertigstellung, Bauträger | Kolaboro',
   h1_p: '{n}: Erfahrungen und Fakten',
   lead_p: 'Was über {n} in {place} veröffentlicht ist, was amtliche Register und andere Quellen sagen und was sich im Lauf der Zeit geändert hat. Nur Fakten, jeweils mit Quelle.',
@@ -222,6 +225,7 @@ const de = {
 };
 
 const fr = {
+  nr_badge: 'Pas encore examiné par Kolaboro (ajouté le {d})', nr_txt: 'Notre agent de recherche n’a pas encore examiné ce projet. Ci-dessous figurent seulement les faits dont nous disposons, chacun avec sa source. Aucune vérification, note ni étiquette n’est affichée avant la fin de l’examen.', v_listing: 'page d’annonce (pas le site du promoteur)', nr_short: 'pas encore examiné',
   title_p: '{n} : avis et faits : permis, date de livraison, promoteur | Kolaboro',
   h1_p: '{n} : avis et faits',
   lead_p: 'Ce qui est publié sur {n} à {place}, ce que disent les registres officiels et d’autres sources, et ce qui a changé au fil du temps. Uniquement des faits, chacun avec sa source.',
@@ -294,6 +298,7 @@ const fr = {
 };
 
 const nl = {
+  nr_badge: 'Nog niet beoordeeld door Kolaboro (toegevoegd op {d})', nr_txt: 'Onze onderzoeksagent heeft dit project nog niet beoordeeld. Hieronder staan alleen de feiten die we hebben, elk met bron. Controles, score of label tonen we pas als de beoordeling klaar is.', v_listing: 'advertentiepagina (niet de site van de ontwikkelaar)', nr_short: 'nog niet beoordeeld',
   title_p: '{n}: ervaringen en feiten: vergunning, opleverdatum, ontwikkelaar | Kolaboro',
   h1_p: '{n}: ervaringen en feiten',
   lead_p: 'Wat er over {n} in {place} is gepubliceerd, wat officiële registers en andere bronnen zeggen, en wat er in de loop van de tijd veranderde. Alleen feiten, elk met bron.',
@@ -366,6 +371,7 @@ const nl = {
 };
 
 const ru = {
+  nr_badge: 'Kolaboro ещё не проверял этот проект (добавлен {d})', nr_txt: 'Наш исследовательский агент ещё не проверял этот проект. Ниже только факты, которые у нас есть, у каждого есть источник. Проверки, оценка и метки появятся только после проверки.', v_listing: 'страница объявления (не сайт застройщика)', nr_short: 'ещё не проверен',
   title_p: '{n}: отзывы и факты: разрешения, срок сдачи, застройщик | Kolaboro',
   h1_p: '{n}: отзывы и факты',
   lead_p: 'Что опубликовано о {n} ({place}), что говорят официальные реестры и другие источники и что менялось со временем. Только факты, у каждого есть источник.',
@@ -438,6 +444,7 @@ const ru = {
 };
 
 const zh = {
+  nr_badge: 'Kolaboro 尚未审查（添加于 {d}）', nr_txt: '我们的研究代理尚未审查该项目。以下仅列出我们掌握的事实，每条都有来源。审查完成前不显示核查项、分数或标签。', v_listing: '房源页面（非开发商网站）', nr_short: '尚未审查',
   title_p: '{n} 评价与事实：许可证、交付日期、开发商 | Kolaboro',
   h1_p: '{n}：评价与事实',
   lead_p: '关于位于 {place} 的 {n} 公开发布了什么、官方登记册和其他来源怎么说，以及随时间发生了哪些变化。只列事实，每条都有来源。',
@@ -510,6 +517,7 @@ const zh = {
 };
 
 const ar = {
+  nr_badge: 'لم تراجعه Kolaboro بعد (أُضيف في {d})', nr_txt: 'لم يراجع وكيل البحث لدينا هذا المشروع بعد. أدناه الحقائق المتوفرة لدينا فقط، ولكل منها مصدر. لا نعرض فحوصات أو درجة أو تصنيفًا قبل انتهاء المراجعة.', v_listing: 'صفحة إعلان (ليست موقع المطوّر)', nr_short: 'لم يُراجع بعد',
   title_p: '{n}: تقييمات وحقائق: التراخيص وموعد التسليم والمطوّر | Kolaboro',
   h1_p: '{n}: تقييمات وحقائق',
   lead_p: 'ما نُشر عن {n} في {place}، وما تقوله السجلات الرسمية والمصادر الأخرى، وما تغيّر مع الوقت. حقائق فقط، ولكل منها مصدر.',

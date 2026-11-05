@@ -19,7 +19,7 @@ import { rpc } from './kolaboro.js';
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v4';
+const CACHE_V = 'named-v5';
 export const OPINION_RX = /\b(scam\w*|fraud\w*|ponzi|swindl\w*|rip-?off|avoid\w*|beware|dodgy|shady|crook\w*|estafa\w*|fraude\w*|timo|timador\w*|betrug\w*|betrüg\w*|abzocke\w*|arnaque\w*|escroquer\w*|escroc\w*|oplichting|oplichter\w*|bedrog\w*)\b|мошен|обман|афер|骗局|诈骗|欺诈|احتيال|نصب/i;
 
 // ------------------------------------------------------------------------------------------------ data
@@ -100,6 +100,12 @@ const HF = { 'permit claimed': 'hf_permit_claimed', 'plans published': 'hf_plans
 const hv = (v, lang) => v === true ? tr(lang, 'yes') : v === false ? tr(lang, 'no') : v == null ? '-' : fd(v, lang);
 const COUNTRY_ISO = { UAE: 'AE', 'United Arab Emirates': 'AE', Indonesia: 'ID', Spain: 'ES', 'United States': 'US', USA: 'US', 'United Kingdom': 'GB', UK: 'GB', Thailand: 'TH', Mexico: 'MX', Portugal: 'PT', Turkey: 'TR', Türkiye: 'TR', Malaysia: 'MY', Philippines: 'PH', Vietnam: 'VN', Greece: 'GR', Cyprus: 'CY', Oman: 'OM', Egypt: 'EG', Georgia: 'GE', Montenegro: 'ME', Croatia: 'HR', 'Costa Rica': 'CR', Panama: 'PA', 'Sri Lanka': 'LK', Cambodia: 'KH', Mauritius: 'MU', Australia: 'AU', Canada: 'CA', France: 'FR', Italy: 'IT', Bahrain: 'BH', Morocco: 'MA' };
 
+// not yet reviewed: the research agent has no verification evidence (all six levels "none"). Such pages show the sourced facts only:
+// no checks table, no score, no claim counts, no label of any kind (rule from the lead, 5 Nov 2026).
+const reviewed = c => !!(c && c.verified && Object.values(c.verified).some(v => v && v !== 'none'));
+// portals and agents: the page we read there is a listing, not the developer's own site
+const PORTAL_RX = /(^|\.)(propertyfinder|bayut|thepreplan|imovirtual|idealista|fotocasa|rumavi|a1properties|dubizzle|lucasfox|kyero|rightmove|zoopla|realtor|zillow|redfin|ddproperty|hipflat|fazwaz|propertyguru|iproperty|lamudi|dotproperty|99acres|magicbricks|sahibinden|hepsiemlak|emlakjet|inmuebles24|vivanuncios|encuentra24|point2homes|jamesedition|sothebysrealty|knightfrank|savills|cbre|jll|engelvoelkers|remax|century21|coldwellbanker|eurovilla|suprimmo|benoit|terra|regent|luxinmo|tranio|prian|realting|ziprealty|propertyfinder|realtyna|thailand-property|homify|offplan|uaepropertychecker|dubairealestateiq|joshsteinrealtor|malaysiaproperty4u|newhomes|properstar|green-acres|immobilienscout24|immowelt|funda|seloger|leboncoin|logic-immo|bienici|casa|immobiliare|tecnocasa|engel)\./i;
+const isListing = u => { const h = host(u); return !!h && PORTAL_RX.test('.' + h); };
 function handoverOf(ix, x) {
   const pr = ix.prom[x.id] || [], h = pr.find(p => p.k === 'handover');
   if (h) return { d: h.d, p: h };
@@ -119,17 +125,19 @@ function projectPage(ix, x, lang, extra) {
   const name = x.n, place = [x.ar, x.mk !== x.ar ? x.mk : null, x.co !== x.mk ? x.co : null].filter(Boolean).join(', ');
   const stage = tr(lang, stageKey(c.stage || x.st)), ho = handoverOf(ix, x), checked = lastmod(ix, x);
   const page = x.url, pr = (ix.prom[x.id] || []).slice(0, 12), hand = pr.find(p => p.k === 'handover');
-  const cN = cl.verified + cl.unverified + cl.contradicted;
+  const cN = cl.verified + cl.unverified + cl.contradicted, rvd = reviewed(c), nrB = tr(lang, 'nr_badge', { d: fd(x.ad || c.checked, lang) });
   const canon = pUrl(lang, x.s), devPage = x.dvs && ix.devs.has(x.dvs) ? dUrl(lang, x.dvs) : null, rec = '/api/open/projects/' + encodeURIComponent(x.id);
   const title = tr(lang, 'title_p', { n: name });
-  const desc = tr(lang, 'desc_p', { n: name, place, stage, h: ho ? fd(ho.d, lang) : tr(lang, 'v_none'), pn: x.pn ? tr(lang, 'v_pub') : tr(lang, 'v_notpub'), c: cN, v: cl.verified, d: fd(checked, lang) });
+  const desc = rvd ? tr(lang, 'desc_p', { n: name, place, stage, h: ho ? fd(ho.d, lang) : tr(lang, 'v_none'), pn: x.pn ? tr(lang, 'v_pub') : tr(lang, 'v_notpub'), c: cN, v: cl.verified, d: fd(checked, lang) })
+    : tr(lang, 'g_listed', { n: name, stage, place }) + ' ' + nrB + '.';
 
   // in short (answer-ready summary)
   const g = [];
+  if (!rvd) g.push('<li class="knote">' + esc(nrB) + '. ' + esc(tr(lang, 'nr_txt')) + '</li>');
   g.push(fact(esc(x.dv ? tr(lang, 'g_listed_dev', { n: name, stage, place, dev: x.dv }) : tr(lang, 'g_listed', { n: name, stage, place })), page));
   g.push(fact(esc(ho ? tr(lang, 'g_h', { h: fd(ho.d, lang) }) : tr(lang, 'g_h_none')), page));
   g.push(fact(esc(x.pn ? tr(lang, 'g_pn') : tr(lang, 'g_pn_none')), x.du || page));
-  if (cN) g.push(fact(esc(tr(lang, 'g_claims', { c: cN, v: cl.verified, u: cl.unverified, x: cl.contradicted })), rec, tr(lang, 'k_record')));
+  if (cN && rvd) g.push(fact(esc(tr(lang, 'g_claims', { c: cN, v: cl.verified, u: cl.unverified, x: cl.contradicted })), rec, tr(lang, 'k_record')));
   if (c.overdue) g.push(fact(esc(tr(lang, 'g_over', { m: c.overdue })), '/promises/', tr(lang, 'm_promises')));
   else if (hand && hand.mv) g.push(fact(esc(tr(lang, 'g_moved', { k: hand.mv, mm: hand.mm })), '/promises/', tr(lang, 'm_promises')));
 
@@ -140,7 +148,9 @@ function projectPage(ix, x, lang, extra) {
     kf('k_loc', esc(place), null) + kf('k_stage', esc(stage) + (x.sts ? ' · ' + en(x.sts) : ''), page) +
     kf('k_hand', ho ? esc(fd(ho.d, lang)) : esc(tr(lang, 'v_none')), ho ? page : null) +
     kf('k_permit', x.pn ? en(x.pn) : esc(tr(lang, 'v_notpub')), x.pn ? (x.du || page) : null) +
-    kf('k_escrow', ck.escrow === true ? esc(tr(lang, 'v_stated')) : ck.escrow === false ? esc(tr(lang, 'v_notstated')) : esc(tr(lang, 'not_researched')), ck.escrow != null ? page : null) +
+    (rvd ? '' : '<div class="kf knr"><dt>Kolaboro</dt><dd>' + esc(nrB) + '</dd></div>') +
+    kf('k_escrow', !rvd ? esc(tr(lang, 'nr_short')) : ck.escrow === true ? esc(tr(lang, 'v_stated')) : ck.escrow === false ? esc(tr(lang, 'v_notstated')) : esc(tr(lang, 'not_researched')), rvd && ck.escrow != null ? page : null) +
+    (okHttp(page) ? kf('k_page', esc(host(page)) + (isListing(page) ? '<br><small>' + esc(tr(lang, 'v_listing')) + '</small>' : ''), page) : '') +
     kf('k_checked', esc(fd(checked, lang)), null) +
     kf('k_record', own(rec, x.id), null) + '</dl>';
 
@@ -188,7 +198,7 @@ function projectPage(ix, x, lang, extra) {
     const evd = x.ev && x.ev[k] && cleanOk(x.ev[k]) ? en(x.ev[k]) + srcA(x.du || page) : '';
     return '<tr><th scope="row">' + esc(tr(lang, 'c_' + k)) + '</th><td>' + esc(researched ? tr(lang, pub ? 'yes' : 'no') : tr(lang, 'not_researched')) + '</td><td>' + esc(lvl) + '</td><td>' + evd + '</td></tr>';
   }).join('');
-  const checks = '<p class="ki">' + tr(lang, 'checks_intro', { link: own('/how-we-score', tr(lang, 'm_method')) }) + '</p><div class="tw"><table><thead><tr><th>' + esc(tr(lang, 'th_check')) + '</th><th>' + esc(tr(lang, 'th_public')) + '</th><th>' + esc(tr(lang, 'th_level')) + '</th><th>' + esc(tr(lang, 'th_evidence')) + '</th></tr></thead><tbody>' + rows + '</tbody></table></div>';
+  const checks = !rvd ? '<p class="knote">' + esc(nrB) + '. ' + esc(tr(lang, 'nr_txt')) + '</p>' : '<p class="ki">' + tr(lang, 'checks_intro', { link: own('/how-we-score', tr(lang, 'm_method')) }) + '</p><div class="tw"><table><thead><tr><th>' + esc(tr(lang, 'th_check')) + '</th><th>' + esc(tr(lang, 'th_public')) + '</th><th>' + esc(tr(lang, 'th_level')) + '</th><th>' + esc(tr(lang, 'th_evidence')) + '</th></tr></thead><tbody>' + rows + '</tbody></table></div>';
 
   // claims
   const CL = (x.cl || []).filter(r => cleanOk(r[0]));
@@ -237,7 +247,7 @@ function projectPage(ix, x, lang, extra) {
   const cta = '<p>' + esc(tr(lang, 'cta_txt')) + '</p><p class="bts"><a class="btn btn-hi kbtn" href="/check?url=' + encodeURIComponent(page || '') + '" data-ev="seo_check">' + esc(tr(lang, 'cta_free')) + '</a> <a class="btn btn-line kbtn" href="/book/" data-ev="seo_book">' + esc(tr(lang, 'cta_paid')) + '</a></p>';
 
   // FAQ built from the data above
-  const factsTxt = [x.pn ? tr(lang, 'g_pn') : tr(lang, 'g_pn_none'), cN ? tr(lang, 'g_claims', { c: cN, v: cl.verified, u: cl.unverified, x: cl.contradicted }) : '', ho ? tr(lang, 'g_h', { h: fd(ho.d, lang) }) : tr(lang, 'g_h_none'),
+  const factsTxt = [rvd ? '' : nrB + '.', x.pn ? tr(lang, 'g_pn') : tr(lang, 'g_pn_none'), cN && rvd ? tr(lang, 'g_claims', { c: cN, v: cl.verified, u: cl.unverified, x: cl.contradicted }) : '', ho ? tr(lang, 'g_h', { h: fd(ho.d, lang) }) : tr(lang, 'g_h_none'),
     c.overdue ? tr(lang, 'g_over', { m: c.overdue }) : '', FL.length ? FL.map(f => tr(lang, 'rc_' + f[0])).join('; ') + '.' : tr(lang, 'no_reports')].filter(Boolean).join(' ');
   const FAQ = [[tr(lang, 'q_legit', { n: name }), tr(lang, 'a_legit', { facts: factsTxt })],
     [tr(lang, 'q_deliv', { n: name }), ho ? tr(lang, 'a_deliv', { h: fd(ho.d, lang) }) + (hand && hand.mv ? ' ' + tr(lang, 'g_moved', { k: hand.mv, mm: hand.mm }) : '') + (c.overdue ? ' ' + tr(lang, 'g_over', { m: c.overdue }) : '') : tr(lang, 'a_deliv_none')],
@@ -272,7 +282,7 @@ function projectPage(ix, x, lang, extra) {
     { '@type': 'Organization', '@id': ORIGIN + '/#org', name: 'Kolaboro', url: ORIGIN + '/', logo: ORIGIN + '/k/favicon.svg' },
     Object.assign({ '@type': placeType, '@id': canon + '#place', name, address: { '@type': 'PostalAddress', addressLocality: x.ar || x.mk, addressRegion: x.mk, addressCountry: COUNTRY_ISO[x.co] || x.co } }, geo ? { geo } : {}),
     ...(x.dv ? [Object.assign({ '@type': 'Organization', '@id': orgId, name: x.dv }, devPage ? { url: dUrl('en', x.dvs) } : {})] : []),
-    { '@type': 'Dataset', '@id': canon + '#data', name: 'Kolaboro record: ' + name, description: 'Sourced facts about ' + name + ' (' + place + '): developer claims tested, six buyer checks with verification level, dated promises and change history. Kolaboro public id ' + x.id + '.',
+    { '@type': 'Dataset', '@id': canon + '#data', name: 'Kolaboro record: ' + name, description: rvd ? 'Sourced facts about ' + name + ' (' + place + '): developer claims tested, six buyer checks with verification level, dated promises and change history. Kolaboro public id ' + x.id + '.' : 'Sourced facts about ' + name + ' (' + place + ') as published, with links. Not yet reviewed by Kolaboro; no checks or score. Kolaboro public id ' + x.id + '.',
       url: canon, identifier: x.id, license: 'https://creativecommons.org/licenses/by/4.0/', isAccessibleForFree: true, creator: { '@id': ORIGIN + '/#org' }, dateModified: checked, spatialCoverage: { '@id': canon + '#place' },
       distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: ORIGIN + rec }] },
     { '@type': 'BreadcrumbList', '@id': canon + '#bc', itemListElement: crumbs.map(([l, u], i) => ({ '@type': 'ListItem', position: i + 1, name: l, item: u })) },
@@ -309,7 +319,7 @@ function devPage(ix, dv, lang, extra) {
   const first = L[0], fx = Object.assign({}, ...L.map(x => x.fx || {}).reverse());
   const g = [fact(esc(tr(lang, 'g_d', { k: L.length, dev: name, mks: mks.join(', ') })), first.url), fact(esc(tr(lang, 'g_d_pn', { pn, k: L.length })), first.du || first.url)];
   if (P.length) g.push(fact(esc(tr(lang, 'g_d_rec', { p: P.length, kept: cnt('kept'), broken: cnt('broken'), moved: cnt('moved'), pending: cnt('pending') })), '/promises/', tr(lang, 'm_promises')));
-  const rows = L.map(x => { const c = ix.caseBy.get(x.id), h = handoverOf(ix, x); return '<tr><td><a href="' + pre(lang) + '/projects/' + x.s + '/">' + esc(x.n) + '</a></td><td>' + esc(x.mk) + '</td><td>' + esc(tr(lang, stageKey(c.stage))) + '</td><td>' + esc(h ? fd(h.d, lang) : '-') + (c.overdue ? ' <span class="kpill p-broken">+' + c.overdue + '</span>' : '') + '</td><td>' + esc(x.pn ? tr(lang, 'v_pub') : tr(lang, 'v_notpub')) + '</td><td>' + c.score + '/' + c.max + '</td></tr>'; }).join('');
+  const rows = L.map(x => { const c = ix.caseBy.get(x.id), h = handoverOf(ix, x); return '<tr><td><a href="' + pre(lang) + '/projects/' + x.s + '/">' + esc(x.n) + '</a></td><td>' + esc(x.mk) + '</td><td>' + esc(tr(lang, stageKey(c.stage))) + '</td><td>' + esc(h ? fd(h.d, lang) : '-') + (c.overdue ? ' <span class="kpill p-broken">+' + c.overdue + '</span>' : '') + '</td><td>' + esc(x.pn ? tr(lang, 'v_pub') : tr(lang, 'v_notpub')) + '</td><td>' + (reviewed(c) ? c.score + '/' + c.max : esc(tr(lang, 'nr_short'))) + '</td></tr>'; }).join('');
   const projects = '<div class="tw"><table><thead><tr><th>' + ['th_project', 'th_market', 'th_stage', 'th_hand', 'th_permit', 'th_checks'].map(k => esc(tr(lang, k))).join('</th><th>') + '</th></tr></thead><tbody>' + rows + '</tbody></table></div>';
   const recLi = L.flatMap(x => (ix.prom[x.id] || []).filter(p => p.k === 'handover' || p.st === 'broken' || p.mv).slice(0, 3).map(p => fact('<a href="' + pre(lang) + '/projects/' + x.s + '/#delivery">' + esc(x.n) + '</a>: ' + esc(tr(lang, 'pk_' + p.k)) + ' ' + esc(fd(p.d, lang)) + ' <span class="kpill p-' + esc(p.st) + '">' + esc(tr(lang, 'ps_' + p.st)) + '</span>' + (p.mv ? ' · ' + esc(tr(lang, 'pr_moved', { k: p.mv, mm: p.mm })) : ''), x.url))).slice(0, 30).join('');
   const record = '<p class="ki">' + tr(lang, 'del_intro', { link: own('/promises/', tr(lang, 'm_promises')) }) + '</p><ul class="fl">' + (recLi || '<li>' + esc(tr(lang, 'drec_none')) + '</li>') + '</ul>';
@@ -366,7 +376,7 @@ const CSS = '<style id="knamed-css">.kp .kfs{display:grid;grid-template-columns:
   '.ktoc{display:flex;gap:8px;overflow-x:auto;padding:14px 0;margin:0;scrollbar-width:thin}.ktoc a{flex:none;font-size:.86rem;padding:6px 12px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--ink-2)}' +
   '.lk{padding-inline-start:18px}.lk li{margin:6px 0}.lk small{color:var(--muted)}.cols{columns:2 260px}.kfaq{border-top:1px solid var(--line);padding:12px 0}.kfaq summary{cursor:pointer;font-weight:700;min-height:44px;display:flex;align-items:center}.kfaq p{max-width:75ch;color:var(--ink-2)}' +
   '.srcs{padding-inline-start:22px;font-size:.92rem}.srcs li{margin:5px 0;overflow-wrap:anywhere}.srcs small{color:var(--muted)}.kbtn{margin-top:6px!important;width:auto!important;box-shadow:none!important}.bts{display:flex;flex-wrap:wrap;gap:10px}.btn-line.kbtn{border-color:var(--ink);color:var(--ink);background:transparent}' +
-  '.klive{border:2px solid var(--ink);border-radius:18px;padding:16px 18px;margin:16px 0}.klive h3{margin-top:0}.live-out{margin-top:10px;min-height:1.5em}.live-out li{padding:6px 0}.kfoot{padding:20px 0 40px}.more{font-weight:700}blockquote{border-inline-start:3px solid var(--line);margin:10px 0;padding:4px 14px}' +
+  '.klive{border:2px solid var(--ink);border-radius:18px;padding:16px 18px;margin:16px 0}.klive h3{margin-top:0}.live-out{margin-top:10px;min-height:1.5em}.live-out li{padding:6px 0}.kfoot{padding:20px 0 40px}.knote{border:2px dashed var(--line);border-radius:14px;padding:12px 14px!important;background:var(--card,var(--paper));max-width:80ch}.knr dd{font-weight:700}.more{font-weight:700}blockquote{border-inline-start:3px solid var(--line);margin:10px 0;padding:4px 14px}' +
   '@media(max-width:640px){.kp .kfs{grid-template-columns:repeat(2,minmax(0,1fr))}.kp .kf{min-height:84px;padding:9px 11px}.kp dd{font-size:.92rem}}</style>';
 const JS = "(function(){var b=document.querySelector('[data-live]');if(!b)return;var w=b.closest('.klive'),o=w.querySelector('.live-out'),L=JSON.parse(w.getAttribute('data-lk')||'{}'),M=JSON.parse(w.getAttribute('data-msg')||'{}');" +
   "b.addEventListener('click',function(){b.disabled=true;o.textContent=M.wait;var q=new URLSearchParams();Object.keys(L).forEach(function(k){if(L[k])q.set(k,L[k]);});" +
