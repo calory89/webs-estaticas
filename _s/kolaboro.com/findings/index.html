@@ -111,7 +111,7 @@
 
 <section class="fd-sec" aria-labelledby="h-runs"><div class="wrap">
 <h2 id="h-runs">Hourly run log</h2>
-<p class="lead">One line per run: pages read, findings, facts that did not change, quotes rejected because they were not on the page, tokens and what the run cost at list prices. The budget is 0.25 USD per run; a run stops before it can pass it.</p>
+<p class="lead">One line per run: pages read, findings, facts that did not change, quotes rejected because they were not on the page, tokens and what the run cost at list prices. The budget is 5 USD a day, spread over the hourly runs: each run may spend what is left of the day divided by the runs left, and stops before it can pass that.</p>
 <div class="fd-scroll"><table class="fd-tbl" id="fdr"><thead><tr><th>Run (UTC)</th><th class="n">Projects</th><th class="n">Pages read</th><th class="n">Same page</th><th class="n">Read by model</th><th class="n">Findings</th><th class="n">Unchanged facts</th><th class="n">Rejected quotes</th><th class="n">Tokens in / out</th><th class="n">USD</th></tr></thead><tbody></tbody></table></div>
 <p class="fd-small" id="fdtot"></p>
 </div></section>
@@ -120,7 +120,7 @@
 <h2 id="h-how">How it works</h2>
 <dl class="fd-faq">
 <dt>Hourly, round robin</dt><dd>A GitHub Actions job runs once an hour, never two at a time. It takes the tracked projects whose developer page was read longest ago, by us or by the daily research agent, so every project comes round in turn. It respects robots.txt, sends one request per website every few seconds and identifies itself as KolaboroResearchAgent.</dd>
-<dt>Claude API, small and capped</dt><dd>claude-haiku-5-5 reads the page text and returns each fact with the exact words that state it. Every call is priced from its real token usage at list prices (0.10 USD per million tokens in, 0.50 out). Before each call the worst case of that call is reserved, so a run cannot pass 0.25 USD. A page whose text has the same SHA-256 fingerprint as at our last read is not sent to the model at all.</dd>
+<dt>Claude API, small and capped</dt><dd>claude-haiku-5-5 reads the page text and returns each fact with the exact words that state it. Every call is priced from its real token usage at list prices (0.10 USD per million tokens in, 0.50 out). Before each call the worst case of that call is reserved, so neither a run nor the day can pass its budget (5 USD a day). A page whose text has the same SHA-256 fingerprint as at our last read is not sent to the model at all.</dd>
 <dt>Checked in code, not trusted</dt><dd>Software looks for each quote in the page text, ignoring only case, spacing and typographic quote marks, with no skipped words, and checks that the quote contains the value: the year, the percent, the amount or the number. Anything else is rejected and counted in the run log. A changed value is published only when the old value is no longer stated near the same words on the page, and a newly published fact only when its words were not in our previous copy of the page.</dd>
 <dt>Anonymous</dt><dd>Findings name the project id and market only, never the developer, the project name, the web address or the quote, because a quote would identify the project. Each finding carries <code>q</code>, the first 16 hex characters of the SHA-256 of its quote, and <code>fp</code>, the same for the page text. We keep a frozen copy of the page text, so both can be checked later against the original.</dd>
 <dt>Limits</dt><dd>These are what developers advertise, not verified facts. A finding says a page changed, not that the project did. Pages that block automated reading or need JavaScript to show text are counted as failed and tried again on the next round. Prices are shown as bands, and permit numbers are never shown, because both could identify a project.</dd>
@@ -178,7 +178,7 @@ document.addEventListener('DOMContentLoaded', function () {
     N.innerHTML = '<div><b>' + fmt(t.findings) + '</b><span>findings published since ' + esc(t.since ? dm(t.since) : 'the first run') + '</span></div>' +
       '<div><b>' + fmt(t.pages_fetched) + '</b><span>developer pages read in ' + fmt(t.runs) + ' hourly run' + (t.runs === 1 ? '' : 's') + '</span></div>' +
       '<div><b>' + fmt(cov.projects_read_by_hourly_check) + ' of ' + fmt(cov.projects_tracked) + '</b><span>projects read by the hourly check so far</span></div>' +
-      '<div><b>' + (last ? Number(last.usd || 0).toFixed(3) : '0') + ' USD</b><span>cost of the last run (budget 0.25)</span></div>';
+      '<div><b>' + (last ? Number(last.usd || 0).toFixed(3) : '0') + ' USD</b><span>cost of the last run (daily budget 5 USD)</span></div>';
     if (last) ST.textContent = 'Last run ' + utc(last.at) + ' UTC, ' + ago(last.at) + ': ' + fmt(last.pages_fetched) + ' pages read, ' + fmt(last.findings) + ' findings, ' + fmt(last.no_change) + ' facts unchanged, ' + fmt((last.rejected_quote_not_found || 0) + (last.rejected_value_not_in_quote || 0)) + ' quotes rejected. Next run at about minute 34 of every hour.';
     R.querySelector('tbody').innerHTML = runs.slice(0, 48).map(function (r) {
       return '<tr><td>' + esc(utc(r.at)) + '</td><td class="n">' + fmt(r.projects_read) + '</td><td class="n">' + fmt(r.pages_fetched) + '</td><td class="n">' + fmt(r.unchanged_pages) + '</td><td class="n">' + fmt(r.pages_read_by_model) +
