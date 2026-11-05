@@ -1,6 +1,32 @@
 {
  "deploys": [
   {
+   "at": "2026-11-05T07:59:10Z",
+   "commit": "0b5dee7906b261ec83fb5183dbca319f2ea4c319",
+   "checks_passed": 30,
+   "checks_total": 32,
+   "failed": [
+    "browser 1440px /p/BALI-021",
+    "browser 390px /p/BALI-021"
+   ],
+   "run": "https://github.com/calory89/webs-estaticas/actions/runs/41989893453",
+   "result": "rolled_back",
+   "wait_s": 283,
+   "prev_good": "afca0200b09211c1ede2228ab58430e5bde9b5bb",
+   "rollback_commit": "49d36d054eaab39cae6627b6b87020efa4012a0b",
+   "reverted": [
+    "5f16b9231fc8",
+    "0b5dee7906b2"
+   ],
+   "files_restored": 173,
+   "cloudflare": "cloudflare api: no token configured",
+   "after_rollback": {
+    "checks_passed": 32,
+    "checks_total": 32,
+    "failed": []
+   }
+  },
+  {
    "at": "2026-11-05T07:42:34Z",
    "commit": "afca0200b09211c1ede2228ab58430e5bde9b5bb",
    "checks_passed": 32,
@@ -1284,78 +1310,78 @@
  "canary": "Cloudflare Pages sends each push to all visitors at once and offers no percentage canary, so none is claimed. A bad push can be visible for a few minutes until the rollback is live.",
  "rollback_mode": "Rollback: a git commit restoring the files changed since the last passing commit; Pages deploys it in about 1 to 2 minutes. An instant Cloudflare API rollback is built in but needs a Pages-scoped token, not configured yet.",
  "latest_checks": {
-  "at": "2026-11-05T07:42:34.294Z",
-  "commit": "afca0200b09211c1ede2228ab58430e5bde9b5bb",
+  "at": "2026-11-05T07:57:05.056Z",
+  "commit": "0b5dee7906b261ec83fb5183dbca319f2ea4c319",
   "checks": [
    {
     "name": "build: live commit",
     "ok": true,
-    "detail": "live afca0200b092"
+    "detail": "live 0b5dee7906b2"
    },
    {
     "name": "page /",
     "ok": true,
-    "detail": "200, 73392 bytes"
+    "detail": "200, 73473 bytes"
    },
    {
     "name": "page /check/",
     "ok": true,
-    "detail": "200, 69559 bytes"
+    "detail": "200, 69617 bytes"
    },
    {
     "name": "page /database/",
     "ok": true,
-    "detail": "200, 34499 bytes"
+    "detail": "200, 34557 bytes"
    },
    {
     "name": "page /pricing/",
     "ok": true,
-    "detail": "200, 27087 bytes"
+    "detail": "200, 27145 bytes"
    },
    {
     "name": "page /p/BALI-021",
     "ok": true,
-    "detail": "200, 22471 bytes"
+    "detail": "200, 25492 bytes"
    },
    {
     "name": "page /log/",
     "ok": true,
-    "detail": "200, 28348 bytes"
+    "detail": "200, 28406 bytes"
    },
    {
     "name": "page /verify/",
     "ok": true,
-    "detail": "200, 43220 bytes"
+    "detail": "200, 43278 bytes"
    },
    {
     "name": "page /status/",
     "ok": true,
-    "detail": "200, 41038 bytes"
+    "detail": "200, 41096 bytes"
    },
    {
     "name": "page /changelog/",
     "ok": true,
-    "detail": "200, 62623 bytes"
+    "detail": "200, 63104 bytes"
    },
    {
     "name": "page /docs/api/",
     "ok": true,
-    "detail": "200, 23119 bytes"
+    "detail": "200, 23177 bytes"
    },
    {
     "name": "page /investors/",
     "ok": true,
-    "detail": "200, 49173 bytes"
+    "detail": "200, 49534 bytes"
    },
    {
     "name": "page /trust/",
     "ok": true,
-    "detail": "200, 25126 bytes"
+    "detail": "200, 25184 bytes"
    },
    {
     "name": "page /investors/dossier/",
     "ok": true,
-    "detail": "200, 22494 bytes"
+    "detail": "200, 22552 bytes"
    },
    {
     "name": "api /api/open/stats",
@@ -1409,8 +1435,8 @@
    },
    {
     "name": "browser 1440px /p/BALI-021",
-    "ok": true,
-    "detail": "200, no JS errors"
+    "ok": false,
+    "detail": "200, JS error: Invalid or unexpected token"
    },
    {
     "name": "browser 1440px /trust/",
@@ -1425,7 +1451,7 @@
    {
     "name": "browser 390px /",
     "ok": true,
-    "detail": "200, no JS errors"
+    "detail": "200, no JS errors, warning: overflows by 47px"
    },
    {
     "name": "browser 390px /check/",
@@ -1434,8 +1460,8 @@
    },
    {
     "name": "browser 390px /p/BALI-021",
-    "ok": true,
-    "detail": "200, no JS errors"
+    "ok": false,
+    "detail": "200, JS error: Invalid or unexpected token, warning: overflows by 17px"
    },
    {
     "name": "browser 390px /trust/",
@@ -1449,7 +1475,7 @@
    }
   ]
  },
- "last_checked": "afca0200b09211c1ede2228ab58430e5bde9b5bb",
- "last_good": "afca0200b09211c1ede2228ab58430e5bde9b5bb",
- "updated": "2026-11-05T07:42:34Z"
+ "last_checked": "49d36d054eaab39cae6627b6b87020efa4012a0b",
+ "last_good": "49d36d054eaab39cae6627b6b87020efa4012a0b",
+ "updated": "2026-11-05T07:59:10Z"
 }
