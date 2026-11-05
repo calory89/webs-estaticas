@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-03",
+ "updated": "2026-11-05",
  "source": "Copernicus Sentinel-2 L2A via Element84 Earth Search (STAC) and the Sentinel-2 COGs on AWS Open Data. Contains modified Copernicus Sentinel data.",
  "resolution_m": 10,
  "method": "Per month, up to 3 scenes that see at least 50% of the area without cloud (Sentinel-2 scene classification: cloud, cirrus, cloud shadow, dark and no-data pixels removed), per-pixel median. A month is reported only if at least 60% of the area was seen clear. built_pct: share of clear pixels with NDBI > 0.00 and NDVI < 0.25 (built-up OR bare ground: at 10 m a cleared plot and a concrete slab look alike). new_built_since_baseline_pct: pixels that were not built-up or bare in the baseline month and are now. Frames: months at least 80% clear. Headline change: median of the last 12 months minus median of the first 12 months, so wet and dry seasons cancel out.",
  "from": "2023-01",
  "to": "2026-11",
- "seconds": 1093,
+ "seconds": 136,
  "sites": [
   {
    "id": "bali-seseh",
@@ -7580,826 +7580,6 @@
      "status": "cloudy",
      "clear_pct": 0,
      "scenes_used": 0
-    }
-   ]
-  },
-  {
-   "id": "tulum",
-   "label": "Tulum, Riviera Maya",
-   "area": "box 1.1 km",
-   "baseline_month": "2023-01",
-   "baseline_crs": "EPSG:32616",
-   "timelapse": true,
-   "summary": {
-    "months": 47,
-    "months_clear": 47,
-    "frames": 47,
-    "scenes_read": 136,
-    "seconds": 129,
-    "first_year": "2023-01 to 2023-12",
-    "last_year": "2025-12 to 2026-11",
-    "first_year_clear_months": 12,
-    "last_year_clear_months": 12,
-    "built_first_year_median": 38.1,
-    "built_last_year_median": 41.6,
-    "brightness_first_year_median": 156.9,
-    "brightness_last_year_median": 168.3,
-    "built_change_pts": 3.5,
-    "new_built_since_baseline_last_year_median": 13.8
-   },
-   "months": [
-    {
-     "month": "2023-01",
-     "scenes_listed": 13,
-     "scenes_used": 3,
-     "dates": [
-      "2023-01-11",
-      "2023-01-19",
-      "2023-01-21"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 129.2,
-     "ndvi": 0.401,
-     "built_pct": 32.3,
-     "frame": true
-    },
-    {
-     "month": "2023-02",
-     "scenes_listed": 9,
-     "scenes_used": 3,
-     "dates": [
-      "2023-02-18",
-      "2023-02-20",
-      "2023-02-23"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 131.9,
-     "ndvi": 0.363,
-     "built_pct": 38.7,
-     "new_built_since_baseline_pct": 8.0,
-     "frame": true
-    },
-    {
-     "month": "2023-03",
-     "scenes_listed": 10,
-     "scenes_used": 3,
-     "dates": [
-      "2023-03-10",
-      "2023-03-25",
-      "2023-03-30"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 148.5,
-     "ndvi": 0.331,
-     "built_pct": 43.5,
-     "new_built_since_baseline_pct": 13.2,
-     "frame": true
-    },
-    {
-     "month": "2023-04",
-     "scenes_listed": 9,
-     "scenes_used": 3,
-     "dates": [
-      "2023-04-09",
-      "2023-04-16",
-      "2023-04-29"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 167.0,
-     "ndvi": 0.358,
-     "built_pct": 41.6,
-     "new_built_since_baseline_pct": 12.2,
-     "frame": true
-    },
-    {
-     "month": "2023-05",
-     "scenes_listed": 9,
-     "scenes_used": 3,
-     "dates": [
-      "2023-05-01",
-      "2023-05-16",
-      "2023-05-19"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 171.4,
-     "ndvi": 0.347,
-     "built_pct": 42.6,
-     "new_built_since_baseline_pct": 13.3,
-     "frame": true
-    },
-    {
-     "month": "2023-06",
-     "scenes_listed": 10,
-     "scenes_used": 3,
-     "dates": [
-      "2023-06-13",
-      "2023-06-20",
-      "2023-06-28"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 165.3,
-     "ndvi": 0.356,
-     "built_pct": 40.6,
-     "new_built_since_baseline_pct": 11.7,
-     "frame": true
-    },
-    {
-     "month": "2023-07",
-     "scenes_listed": 9,
-     "scenes_used": 3,
-     "dates": [
-      "2023-07-15",
-      "2023-07-20",
-      "2023-07-25"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 178.7,
-     "ndvi": 0.36,
-     "built_pct": 37.0,
-     "new_built_since_baseline_pct": 9.6,
-     "frame": true
-    },
-    {
-     "month": "2023-08",
-     "scenes_listed": 9,
-     "scenes_used": 3,
-     "dates": [
-      "2023-08-14",
-      "2023-08-17",
-      "2023-08-19"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 173.2,
-     "ndvi": 0.342,
-     "built_pct": 37.5,
-     "new_built_since_baseline_pct": 9.7,
-     "frame": true
-    },
-    {
-     "month": "2023-09",
-     "scenes_listed": 8,
-     "scenes_used": 3,
-     "dates": [
-      "2023-09-06",
-      "2023-09-13",
-      "2023-09-18"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 165.8,
-     "ndvi": 0.37,
-     "built_pct": 39.1,
-     "new_built_since_baseline_pct": 9.4,
-     "frame": true
-    },
-    {
-     "month": "2023-10",
-     "scenes_listed": 11,
-     "scenes_used": 2,
-     "dates": [
-      "2023-10-03",
-      "2023-10-21"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 148.6,
-     "ndvi": 0.386,
-     "built_pct": 32.9,
-     "new_built_since_baseline_pct": 5.3,
-     "frame": true
-    },
-    {
-     "month": "2023-11",
-     "scenes_listed": 9,
-     "scenes_used": 3,
-     "dates": [
-      "2023-11-17",
-      "2023-11-25",
-      "2023-11-27"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 133.9,
-     "ndvi": 0.406,
-     "built_pct": 33.7,
-     "new_built_since_baseline_pct": 9.1,
-     "frame": true
-    },
-    {
-     "month": "2023-12",
-     "scenes_listed": 8,
-     "scenes_used": 2,
-     "dates": [
-      "2023-12-02",
-      "2023-12-05"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 134.5,
-     "ndvi": 0.416,
-     "built_pct": 25.4,
-     "new_built_since_baseline_pct": 3.2,
-     "frame": true
-    },
-    {
-     "month": "2024-01",
-     "scenes_listed": 10,
-     "scenes_used": 3,
-     "dates": [
-      "2024-01-04",
-      "2024-01-29",
-      "2024-01-31"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 124.8,
-     "ndvi": 0.41,
-     "built_pct": 27.3,
-     "new_built_since_baseline_pct": 3.5,
-     "frame": true
-    },
-    {
-     "month": "2024-02",
-     "scenes_listed": 7,
-     "scenes_used": 3,
-     "dates": [
-      "2024-02-05",
-      "2024-02-25",
-      "2024-02-28"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 149.6,
-     "ndvi": 0.358,
-     "built_pct": 34.8,
-     "new_built_since_baseline_pct": 7.3,
-     "frame": true
-    },
-    {
-     "month": "2024-03",
-     "scenes_listed": 11,
-     "scenes_used": 3,
-     "dates": [
-      "2024-03-06",
-      "2024-03-24",
-      "2024-03-29"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 149.6,
-     "ndvi": 0.322,
-     "built_pct": 42.7,
-     "new_built_since_baseline_pct": 13.0,
-     "frame": true
-    },
-    {
-     "month": "2024-04",
-     "scenes_listed": 10,
-     "scenes_used": 3,
-     "dates": [
-      "2024-04-13",
-      "2024-04-15",
-      "2024-04-23"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 166.4,
-     "ndvi": 0.313,
-     "built_pct": 46.4,
-     "new_built_since_baseline_pct": 16.7,
-     "frame": true
-    },
-    {
-     "month": "2024-05",
-     "scenes_listed": 9,
-     "scenes_used": 3,
-     "dates": [
-      "2024-05-03",
-      "2024-05-13",
-      "2024-05-23"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 166.0,
-     "ndvi": 0.309,
-     "built_pct": 47.4,
-     "new_built_since_baseline_pct": 17.7,
-     "frame": true
-    },
-    {
-     "month": "2024-06",
-     "scenes_listed": 5,
-     "scenes_used": 3,
-     "dates": [
-      "2024-06-02",
-      "2024-06-04",
-      "2024-06-12"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 168.7,
-     "ndvi": 0.304,
-     "built_pct": 48.9,
-     "new_built_since_baseline_pct": 19.2,
-     "frame": true
-    },
-    {
-     "month": "2024-07",
-     "scenes_listed": 8,
-     "scenes_used": 3,
-     "dates": [
-      "2024-07-14",
-      "2024-07-17",
-      "2024-07-24"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 177.4,
-     "ndvi": 0.342,
-     "built_pct": 43.6,
-     "new_built_since_baseline_pct": 14.8,
-     "frame": true
-    },
-    {
-     "month": "2024-08",
-     "scenes_listed": 9,
-     "scenes_used": 3,
-     "dates": [
-      "2024-08-18",
-      "2024-08-21",
-      "2024-08-28"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 171.9,
-     "ndvi": 0.368,
-     "built_pct": 37.7,
-     "new_built_since_baseline_pct": 9.8,
-     "frame": true
-    },
-    {
-     "month": "2024-09",
-     "scenes_listed": 8,
-     "scenes_used": 3,
-     "dates": [
-      "2024-09-10",
-      "2024-09-12",
-      "2024-09-20"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 158.4,
-     "ndvi": 0.373,
-     "built_pct": 38.4,
-     "new_built_since_baseline_pct": 10.7,
-     "frame": true
-    },
-    {
-     "month": "2024-10",
-     "scenes_listed": 5,
-     "scenes_used": 3,
-     "dates": [
-      "2024-10-10",
-      "2024-10-15",
-      "2024-10-22"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 141.5,
-     "ndvi": 0.402,
-     "built_pct": 31.5,
-     "new_built_since_baseline_pct": 7.9,
-     "frame": true
-    },
-    {
-     "month": "2024-11",
-     "scenes_listed": 8,
-     "scenes_used": 3,
-     "dates": [
-      "2024-11-06",
-      "2024-11-24",
-      "2024-11-26"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 135.8,
-     "ndvi": 0.422,
-     "built_pct": 27.7,
-     "new_built_since_baseline_pct": 4.6,
-     "frame": true
-    },
-    {
-     "month": "2024-12",
-     "scenes_listed": 7,
-     "scenes_used": 2,
-     "dates": [
-      "2024-12-24",
-      "2024-12-31"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 125.9,
-     "ndvi": 0.413,
-     "built_pct": 31.2,
-     "new_built_since_baseline_pct": 6.3,
-     "frame": true
-    },
-    {
-     "month": "2025-01",
-     "scenes_listed": 10,
-     "scenes_used": 3,
-     "dates": [
-      "2025-01-08",
-      "2025-01-10",
-      "2025-01-28"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 122.1,
-     "ndvi": 0.408,
-     "built_pct": 32.0,
-     "new_built_since_baseline_pct": 8.6,
-     "frame": true
-    },
-    {
-     "month": "2025-02",
-     "scenes_listed": 8,
-     "scenes_used": 3,
-     "dates": [
-      "2025-02-07",
-      "2025-02-12",
-      "2025-02-27"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 137.7,
-     "ndvi": 0.583,
-     "built_pct": 19.2,
-     "new_built_since_baseline_pct": 4.2,
-     "frame": true
-    },
-    {
-     "month": "2025-03",
-     "scenes_listed": 13,
-     "scenes_used": 3,
-     "dates": [
-      "2025-03-24",
-      "2025-03-26",
-      "2025-03-26"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 156.8,
-     "ndvi": 0.319,
-     "built_pct": 45.7,
-     "new_built_since_baseline_pct": 15.8,
-     "frame": true
-    },
-    {
-     "month": "2025-04",
-     "scenes_listed": 11,
-     "scenes_used": 3,
-     "dates": [
-      "2025-04-15",
-      "2025-04-15",
-      "2025-04-28"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 168.2,
-     "ndvi": 0.315,
-     "built_pct": 47.8,
-     "new_built_since_baseline_pct": 18.2,
-     "frame": true
-    },
-    {
-     "month": "2025-05",
-     "scenes_listed": 15,
-     "scenes_used": 3,
-     "dates": [
-      "2025-05-22",
-      "2025-05-25",
-      "2025-05-28"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 179.4,
-     "ndvi": 0.304,
-     "built_pct": 47.3,
-     "new_built_since_baseline_pct": 18.4,
-     "frame": true
-    },
-    {
-     "month": "2025-06",
-     "scenes_listed": 9,
-     "scenes_used": 3,
-     "dates": [
-      "2025-06-09",
-      "2025-06-12",
-      "2025-06-24"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 189.7,
-     "ndvi": 0.304,
-     "built_pct": 46.1,
-     "new_built_since_baseline_pct": 17.5,
-     "frame": true
-    },
-    {
-     "month": "2025-07",
-     "scenes_listed": 11,
-     "scenes_used": 3,
-     "dates": [
-      "2025-07-04",
-      "2025-07-19",
-      "2025-07-22"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 184.6,
-     "ndvi": 0.334,
-     "built_pct": 40.1,
-     "new_built_since_baseline_pct": 13.3,
-     "frame": true
-    },
-    {
-     "month": "2025-08",
-     "scenes_listed": 10,
-     "scenes_used": 3,
-     "dates": [
-      "2025-08-01",
-      "2025-08-03",
-      "2025-08-21"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 172.9,
-     "ndvi": 0.344,
-     "built_pct": 42.1,
-     "new_built_since_baseline_pct": 14.1,
-     "frame": true
-    },
-    {
-     "month": "2025-09",
-     "scenes_listed": 9,
-     "scenes_used": 3,
-     "dates": [
-      "2025-09-02",
-      "2025-09-02",
-      "2025-09-05"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 165.7,
-     "ndvi": 0.328,
-     "built_pct": 43.9,
-     "new_built_since_baseline_pct": 15.2,
-     "frame": true
-    },
-    {
-     "month": "2025-10",
-     "scenes_listed": 10,
-     "scenes_used": 3,
-     "dates": [
-      "2025-10-12",
-      "2025-10-20",
-      "2025-10-30"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 141.5,
-     "ndvi": 0.383,
-     "built_pct": 32.7,
-     "new_built_since_baseline_pct": 7.5,
-     "frame": true
-    },
-    {
-     "month": "2025-11",
-     "scenes_listed": 12,
-     "scenes_used": 3,
-     "dates": [
-      "2025-11-14",
-      "2025-11-16",
-      "2025-11-21"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 142.3,
-     "ndvi": 0.392,
-     "built_pct": 31.7,
-     "new_built_since_baseline_pct": 7.2,
-     "frame": true
-    },
-    {
-     "month": "2025-12",
-     "scenes_listed": 13,
-     "scenes_used": 3,
-     "dates": [
-      "2025-12-06",
-      "2025-12-31",
-      "2025-12-31"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 129.7,
-     "ndvi": 0.398,
-     "built_pct": 28.2,
-     "new_built_since_baseline_pct": 5.6,
-     "frame": true
-    },
-    {
-     "month": "2026-01",
-     "scenes_listed": 8,
-     "scenes_used": 3,
-     "dates": [
-      "2026-01-03",
-      "2026-01-23",
-      "2026-01-30"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 134.7,
-     "ndvi": 0.387,
-     "built_pct": 31.3,
-     "new_built_since_baseline_pct": 7.1,
-     "frame": true
-    },
-    {
-     "month": "2026-02",
-     "scenes_listed": 10,
-     "scenes_used": 3,
-     "dates": [
-      "2026-02-02",
-      "2026-02-14",
-      "2026-02-24"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 147.4,
-     "ndvi": 0.371,
-     "built_pct": 33.1,
-     "new_built_since_baseline_pct": 7.9,
-     "frame": true
-    },
-    {
-     "month": "2026-03",
-     "scenes_listed": 13,
-     "scenes_used": 3,
-     "dates": [
-      "2026-03-21",
-      "2026-03-24",
-      "2026-03-26"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 168.3,
-     "ndvi": 0.322,
-     "built_pct": 41.6,
-     "new_built_since_baseline_pct": 13.3,
-     "frame": true
-    },
-    {
-     "month": "2026-04",
-     "scenes_listed": 10,
-     "scenes_used": 3,
-     "dates": [
-      "2026-04-20",
-      "2026-04-20",
-      "2026-04-28"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 170.4,
-     "ndvi": 0.334,
-     "built_pct": 43.0,
-     "new_built_since_baseline_pct": 15.0,
-     "frame": true
-    },
-    {
-     "month": "2026-05",
-     "scenes_listed": 9,
-     "scenes_used": 3,
-     "dates": [
-      "2026-05-18",
-      "2026-05-20",
-      "2026-05-23"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 176.5,
-     "ndvi": 0.302,
-     "built_pct": 48.4,
-     "new_built_since_baseline_pct": 19.3,
-     "frame": true
-    },
-    {
-     "month": "2026-06",
-     "scenes_listed": 7,
-     "scenes_used": 3,
-     "dates": [
-      "2026-06-07",
-      "2026-06-27",
-      "2026-06-29"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 181.3,
-     "ndvi": 0.303,
-     "built_pct": 41.6,
-     "new_built_since_baseline_pct": 14.2,
-     "frame": true
-    },
-    {
-     "month": "2026-07",
-     "scenes_listed": 11,
-     "scenes_used": 3,
-     "dates": [
-      "2026-07-19",
-      "2026-07-27",
-      "2026-07-29"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 175.1,
-     "ndvi": 0.321,
-     "built_pct": 42.3,
-     "new_built_since_baseline_pct": 14.6,
-     "frame": true
-    },
-    {
-     "month": "2026-08",
-     "scenes_listed": 14,
-     "scenes_used": 3,
-     "dates": [
-      "2026-08-26",
-      "2026-08-28",
-      "2026-08-31"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 168.3,
-     "ndvi": 0.317,
-     "built_pct": 45.0,
-     "new_built_since_baseline_pct": 16.5,
-     "frame": true
-    },
-    {
-     "month": "2026-09",
-     "scenes_listed": 7,
-     "scenes_used": 3,
-     "dates": [
-      "2026-09-02",
-      "2026-09-15",
-      "2026-09-20"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 170.2,
-     "ndvi": 0.311,
-     "built_pct": 45.4,
-     "new_built_since_baseline_pct": 16.7,
-     "frame": true
-    },
-    {
-     "month": "2026-10",
-     "scenes_listed": 10,
-     "scenes_used": 3,
-     "dates": [
-      "2026-10-07",
-      "2026-10-07",
-      "2026-10-25"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 151.9,
-     "ndvi": 0.366,
-     "built_pct": 33.9,
-     "new_built_since_baseline_pct": 8.6,
-     "frame": true
-    },
-    {
-     "month": "2026-11",
-     "scenes_listed": 1,
-     "scenes_used": 1,
-     "dates": [
-      "2026-11-01"
-     ],
-     "clear_pct": 100.0,
-     "status": "ok",
-     "brightness": 148.8,
-     "ndvi": 0.399,
-     "built_pct": 32.1,
-     "new_built_since_baseline_pct": 7.7,
-     "frame": true
     }
    ]
   },
@@ -20589,6 +19769,827 @@
      "status": "cloudy",
      "clear_pct": 0,
      "scenes_used": 0
+    }
+   ]
+  },
+  {
+   "id": "tulum",
+   "label": "Tulum, Riviera Maya",
+   "area": "box 1.1 km",
+   "baseline_month": "2023-01",
+   "baseline_crs": "EPSG:32616",
+   "timelapse": true,
+   "summary": {
+    "months": 47,
+    "months_clear": 47,
+    "frames": 47,
+    "scenes_read": 137,
+    "seconds": 136,
+    "first_year": "2023-01 to 2023-12",
+    "last_year": "2025-12 to 2026-11",
+    "first_year_clear_months": 12,
+    "last_year_clear_months": 12,
+    "built_first_year_median": 38.1,
+    "built_last_year_median": 41.6,
+    "brightness_first_year_median": 156.9,
+    "brightness_last_year_median": 168.3,
+    "built_change_pts": 3.5,
+    "new_built_since_baseline_last_year_median": 13.8
+   },
+   "months": [
+    {
+     "month": "2023-01",
+     "scenes_listed": 13,
+     "scenes_used": 3,
+     "dates": [
+      "2023-01-11",
+      "2023-01-19",
+      "2023-01-21"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 129.2,
+     "ndvi": 0.401,
+     "built_pct": 32.3,
+     "frame": true
+    },
+    {
+     "month": "2023-02",
+     "scenes_listed": 9,
+     "scenes_used": 3,
+     "dates": [
+      "2023-02-18",
+      "2023-02-20",
+      "2023-02-23"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 131.9,
+     "ndvi": 0.363,
+     "built_pct": 38.7,
+     "new_built_since_baseline_pct": 8.0,
+     "frame": true
+    },
+    {
+     "month": "2023-03",
+     "scenes_listed": 10,
+     "scenes_used": 3,
+     "dates": [
+      "2023-03-10",
+      "2023-03-25",
+      "2023-03-30"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 148.5,
+     "ndvi": 0.331,
+     "built_pct": 43.5,
+     "new_built_since_baseline_pct": 13.2,
+     "frame": true
+    },
+    {
+     "month": "2023-04",
+     "scenes_listed": 9,
+     "scenes_used": 3,
+     "dates": [
+      "2023-04-09",
+      "2023-04-16",
+      "2023-04-29"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 167.0,
+     "ndvi": 0.358,
+     "built_pct": 41.6,
+     "new_built_since_baseline_pct": 12.2,
+     "frame": true
+    },
+    {
+     "month": "2023-05",
+     "scenes_listed": 9,
+     "scenes_used": 3,
+     "dates": [
+      "2023-05-01",
+      "2023-05-16",
+      "2023-05-19"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 171.4,
+     "ndvi": 0.347,
+     "built_pct": 42.6,
+     "new_built_since_baseline_pct": 13.3,
+     "frame": true
+    },
+    {
+     "month": "2023-06",
+     "scenes_listed": 10,
+     "scenes_used": 3,
+     "dates": [
+      "2023-06-13",
+      "2023-06-20",
+      "2023-06-28"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 165.3,
+     "ndvi": 0.356,
+     "built_pct": 40.6,
+     "new_built_since_baseline_pct": 11.7,
+     "frame": true
+    },
+    {
+     "month": "2023-07",
+     "scenes_listed": 9,
+     "scenes_used": 3,
+     "dates": [
+      "2023-07-15",
+      "2023-07-20",
+      "2023-07-25"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 178.7,
+     "ndvi": 0.36,
+     "built_pct": 37.0,
+     "new_built_since_baseline_pct": 9.6,
+     "frame": true
+    },
+    {
+     "month": "2023-08",
+     "scenes_listed": 9,
+     "scenes_used": 3,
+     "dates": [
+      "2023-08-14",
+      "2023-08-17",
+      "2023-08-19"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 173.2,
+     "ndvi": 0.342,
+     "built_pct": 37.5,
+     "new_built_since_baseline_pct": 9.7,
+     "frame": true
+    },
+    {
+     "month": "2023-09",
+     "scenes_listed": 8,
+     "scenes_used": 3,
+     "dates": [
+      "2023-09-06",
+      "2023-09-13",
+      "2023-09-18"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 165.8,
+     "ndvi": 0.37,
+     "built_pct": 39.1,
+     "new_built_since_baseline_pct": 9.4,
+     "frame": true
+    },
+    {
+     "month": "2023-10",
+     "scenes_listed": 11,
+     "scenes_used": 2,
+     "dates": [
+      "2023-10-03",
+      "2023-10-21"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 148.6,
+     "ndvi": 0.386,
+     "built_pct": 32.9,
+     "new_built_since_baseline_pct": 5.3,
+     "frame": true
+    },
+    {
+     "month": "2023-11",
+     "scenes_listed": 9,
+     "scenes_used": 3,
+     "dates": [
+      "2023-11-17",
+      "2023-11-25",
+      "2023-11-27"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 133.9,
+     "ndvi": 0.406,
+     "built_pct": 33.7,
+     "new_built_since_baseline_pct": 9.1,
+     "frame": true
+    },
+    {
+     "month": "2023-12",
+     "scenes_listed": 8,
+     "scenes_used": 2,
+     "dates": [
+      "2023-12-02",
+      "2023-12-05"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 134.5,
+     "ndvi": 0.416,
+     "built_pct": 25.4,
+     "new_built_since_baseline_pct": 3.2,
+     "frame": true
+    },
+    {
+     "month": "2024-01",
+     "scenes_listed": 10,
+     "scenes_used": 3,
+     "dates": [
+      "2024-01-04",
+      "2024-01-29",
+      "2024-01-31"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 124.8,
+     "ndvi": 0.41,
+     "built_pct": 27.3,
+     "new_built_since_baseline_pct": 3.5,
+     "frame": true
+    },
+    {
+     "month": "2024-02",
+     "scenes_listed": 7,
+     "scenes_used": 3,
+     "dates": [
+      "2024-02-05",
+      "2024-02-25",
+      "2024-02-28"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 149.6,
+     "ndvi": 0.358,
+     "built_pct": 34.8,
+     "new_built_since_baseline_pct": 7.3,
+     "frame": true
+    },
+    {
+     "month": "2024-03",
+     "scenes_listed": 11,
+     "scenes_used": 3,
+     "dates": [
+      "2024-03-06",
+      "2024-03-24",
+      "2024-03-29"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 149.6,
+     "ndvi": 0.322,
+     "built_pct": 42.7,
+     "new_built_since_baseline_pct": 13.0,
+     "frame": true
+    },
+    {
+     "month": "2024-04",
+     "scenes_listed": 10,
+     "scenes_used": 3,
+     "dates": [
+      "2024-04-13",
+      "2024-04-15",
+      "2024-04-23"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 166.4,
+     "ndvi": 0.313,
+     "built_pct": 46.4,
+     "new_built_since_baseline_pct": 16.7,
+     "frame": true
+    },
+    {
+     "month": "2024-05",
+     "scenes_listed": 9,
+     "scenes_used": 3,
+     "dates": [
+      "2024-05-03",
+      "2024-05-13",
+      "2024-05-23"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 166.0,
+     "ndvi": 0.309,
+     "built_pct": 47.4,
+     "new_built_since_baseline_pct": 17.7,
+     "frame": true
+    },
+    {
+     "month": "2024-06",
+     "scenes_listed": 5,
+     "scenes_used": 3,
+     "dates": [
+      "2024-06-02",
+      "2024-06-04",
+      "2024-06-12"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 168.7,
+     "ndvi": 0.304,
+     "built_pct": 48.9,
+     "new_built_since_baseline_pct": 19.2,
+     "frame": true
+    },
+    {
+     "month": "2024-07",
+     "scenes_listed": 8,
+     "scenes_used": 3,
+     "dates": [
+      "2024-07-14",
+      "2024-07-17",
+      "2024-07-24"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 177.4,
+     "ndvi": 0.342,
+     "built_pct": 43.6,
+     "new_built_since_baseline_pct": 14.8,
+     "frame": true
+    },
+    {
+     "month": "2024-08",
+     "scenes_listed": 9,
+     "scenes_used": 3,
+     "dates": [
+      "2024-08-18",
+      "2024-08-21",
+      "2024-08-28"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 171.9,
+     "ndvi": 0.368,
+     "built_pct": 37.7,
+     "new_built_since_baseline_pct": 9.8,
+     "frame": true
+    },
+    {
+     "month": "2024-09",
+     "scenes_listed": 8,
+     "scenes_used": 3,
+     "dates": [
+      "2024-09-10",
+      "2024-09-12",
+      "2024-09-20"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 158.4,
+     "ndvi": 0.373,
+     "built_pct": 38.4,
+     "new_built_since_baseline_pct": 10.7,
+     "frame": true
+    },
+    {
+     "month": "2024-10",
+     "scenes_listed": 5,
+     "scenes_used": 3,
+     "dates": [
+      "2024-10-10",
+      "2024-10-15",
+      "2024-10-22"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 141.5,
+     "ndvi": 0.402,
+     "built_pct": 31.5,
+     "new_built_since_baseline_pct": 7.9,
+     "frame": true
+    },
+    {
+     "month": "2024-11",
+     "scenes_listed": 8,
+     "scenes_used": 3,
+     "dates": [
+      "2024-11-06",
+      "2024-11-24",
+      "2024-11-26"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 135.8,
+     "ndvi": 0.422,
+     "built_pct": 27.7,
+     "new_built_since_baseline_pct": 4.6,
+     "frame": true
+    },
+    {
+     "month": "2024-12",
+     "scenes_listed": 7,
+     "scenes_used": 2,
+     "dates": [
+      "2024-12-24",
+      "2024-12-31"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 125.9,
+     "ndvi": 0.413,
+     "built_pct": 31.2,
+     "new_built_since_baseline_pct": 6.3,
+     "frame": true
+    },
+    {
+     "month": "2025-01",
+     "scenes_listed": 10,
+     "scenes_used": 3,
+     "dates": [
+      "2025-01-08",
+      "2025-01-10",
+      "2025-01-28"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 122.1,
+     "ndvi": 0.408,
+     "built_pct": 32.0,
+     "new_built_since_baseline_pct": 8.6,
+     "frame": true
+    },
+    {
+     "month": "2025-02",
+     "scenes_listed": 8,
+     "scenes_used": 3,
+     "dates": [
+      "2025-02-07",
+      "2025-02-12",
+      "2025-02-27"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 137.7,
+     "ndvi": 0.583,
+     "built_pct": 19.2,
+     "new_built_since_baseline_pct": 4.2,
+     "frame": true
+    },
+    {
+     "month": "2025-03",
+     "scenes_listed": 13,
+     "scenes_used": 3,
+     "dates": [
+      "2025-03-24",
+      "2025-03-26",
+      "2025-03-26"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 156.8,
+     "ndvi": 0.319,
+     "built_pct": 45.7,
+     "new_built_since_baseline_pct": 15.8,
+     "frame": true
+    },
+    {
+     "month": "2025-04",
+     "scenes_listed": 11,
+     "scenes_used": 3,
+     "dates": [
+      "2025-04-15",
+      "2025-04-15",
+      "2025-04-28"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 168.2,
+     "ndvi": 0.315,
+     "built_pct": 47.8,
+     "new_built_since_baseline_pct": 18.2,
+     "frame": true
+    },
+    {
+     "month": "2025-05",
+     "scenes_listed": 15,
+     "scenes_used": 3,
+     "dates": [
+      "2025-05-22",
+      "2025-05-25",
+      "2025-05-28"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 179.4,
+     "ndvi": 0.304,
+     "built_pct": 47.3,
+     "new_built_since_baseline_pct": 18.4,
+     "frame": true
+    },
+    {
+     "month": "2025-06",
+     "scenes_listed": 9,
+     "scenes_used": 3,
+     "dates": [
+      "2025-06-09",
+      "2025-06-12",
+      "2025-06-24"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 189.7,
+     "ndvi": 0.304,
+     "built_pct": 46.1,
+     "new_built_since_baseline_pct": 17.5,
+     "frame": true
+    },
+    {
+     "month": "2025-07",
+     "scenes_listed": 11,
+     "scenes_used": 3,
+     "dates": [
+      "2025-07-04",
+      "2025-07-19",
+      "2025-07-22"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 184.6,
+     "ndvi": 0.334,
+     "built_pct": 40.1,
+     "new_built_since_baseline_pct": 13.3,
+     "frame": true
+    },
+    {
+     "month": "2025-08",
+     "scenes_listed": 10,
+     "scenes_used": 3,
+     "dates": [
+      "2025-08-01",
+      "2025-08-03",
+      "2025-08-21"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 172.9,
+     "ndvi": 0.344,
+     "built_pct": 42.1,
+     "new_built_since_baseline_pct": 14.1,
+     "frame": true
+    },
+    {
+     "month": "2025-09",
+     "scenes_listed": 9,
+     "scenes_used": 3,
+     "dates": [
+      "2025-09-02",
+      "2025-09-02",
+      "2025-09-05"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 165.7,
+     "ndvi": 0.328,
+     "built_pct": 43.9,
+     "new_built_since_baseline_pct": 15.2,
+     "frame": true
+    },
+    {
+     "month": "2025-10",
+     "scenes_listed": 10,
+     "scenes_used": 3,
+     "dates": [
+      "2025-10-12",
+      "2025-10-20",
+      "2025-10-30"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 141.5,
+     "ndvi": 0.383,
+     "built_pct": 32.7,
+     "new_built_since_baseline_pct": 7.5,
+     "frame": true
+    },
+    {
+     "month": "2025-11",
+     "scenes_listed": 12,
+     "scenes_used": 3,
+     "dates": [
+      "2025-11-14",
+      "2025-11-16",
+      "2025-11-21"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 142.3,
+     "ndvi": 0.392,
+     "built_pct": 31.7,
+     "new_built_since_baseline_pct": 7.2,
+     "frame": true
+    },
+    {
+     "month": "2025-12",
+     "scenes_listed": 13,
+     "scenes_used": 3,
+     "dates": [
+      "2025-12-06",
+      "2025-12-31",
+      "2025-12-31"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 129.7,
+     "ndvi": 0.398,
+     "built_pct": 28.2,
+     "new_built_since_baseline_pct": 5.6,
+     "frame": true
+    },
+    {
+     "month": "2026-01",
+     "scenes_listed": 8,
+     "scenes_used": 3,
+     "dates": [
+      "2026-01-03",
+      "2026-01-23",
+      "2026-01-30"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 134.7,
+     "ndvi": 0.387,
+     "built_pct": 31.3,
+     "new_built_since_baseline_pct": 7.1,
+     "frame": true
+    },
+    {
+     "month": "2026-02",
+     "scenes_listed": 10,
+     "scenes_used": 3,
+     "dates": [
+      "2026-02-02",
+      "2026-02-14",
+      "2026-02-24"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 147.4,
+     "ndvi": 0.371,
+     "built_pct": 33.1,
+     "new_built_since_baseline_pct": 7.9,
+     "frame": true
+    },
+    {
+     "month": "2026-03",
+     "scenes_listed": 13,
+     "scenes_used": 3,
+     "dates": [
+      "2026-03-21",
+      "2026-03-24",
+      "2026-03-26"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 168.3,
+     "ndvi": 0.322,
+     "built_pct": 41.6,
+     "new_built_since_baseline_pct": 13.3,
+     "frame": true
+    },
+    {
+     "month": "2026-04",
+     "scenes_listed": 10,
+     "scenes_used": 3,
+     "dates": [
+      "2026-04-20",
+      "2026-04-20",
+      "2026-04-28"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 170.4,
+     "ndvi": 0.334,
+     "built_pct": 43.0,
+     "new_built_since_baseline_pct": 15.0,
+     "frame": true
+    },
+    {
+     "month": "2026-05",
+     "scenes_listed": 9,
+     "scenes_used": 3,
+     "dates": [
+      "2026-05-18",
+      "2026-05-20",
+      "2026-05-23"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 176.5,
+     "ndvi": 0.302,
+     "built_pct": 48.4,
+     "new_built_since_baseline_pct": 19.3,
+     "frame": true
+    },
+    {
+     "month": "2026-06",
+     "scenes_listed": 7,
+     "scenes_used": 3,
+     "dates": [
+      "2026-06-07",
+      "2026-06-27",
+      "2026-06-29"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 181.3,
+     "ndvi": 0.303,
+     "built_pct": 41.6,
+     "new_built_since_baseline_pct": 14.2,
+     "frame": true
+    },
+    {
+     "month": "2026-07",
+     "scenes_listed": 11,
+     "scenes_used": 3,
+     "dates": [
+      "2026-07-19",
+      "2026-07-27",
+      "2026-07-29"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 175.1,
+     "ndvi": 0.321,
+     "built_pct": 42.3,
+     "new_built_since_baseline_pct": 14.6,
+     "frame": true
+    },
+    {
+     "month": "2026-08",
+     "scenes_listed": 14,
+     "scenes_used": 3,
+     "dates": [
+      "2026-08-26",
+      "2026-08-28",
+      "2026-08-31"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 168.3,
+     "ndvi": 0.317,
+     "built_pct": 45.0,
+     "new_built_since_baseline_pct": 16.5,
+     "frame": true
+    },
+    {
+     "month": "2026-09",
+     "scenes_listed": 7,
+     "scenes_used": 3,
+     "dates": [
+      "2026-09-02",
+      "2026-09-15",
+      "2026-09-20"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 170.2,
+     "ndvi": 0.311,
+     "built_pct": 45.4,
+     "new_built_since_baseline_pct": 16.7,
+     "frame": true
+    },
+    {
+     "month": "2026-10",
+     "scenes_listed": 10,
+     "scenes_used": 3,
+     "dates": [
+      "2026-10-07",
+      "2026-10-07",
+      "2026-10-25"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 151.9,
+     "ndvi": 0.366,
+     "built_pct": 33.9,
+     "new_built_since_baseline_pct": 8.6,
+     "frame": true
+    },
+    {
+     "month": "2026-11",
+     "scenes_listed": 2,
+     "scenes_used": 2,
+     "dates": [
+      "2026-11-01",
+      "2026-11-04"
+     ],
+     "clear_pct": 100.0,
+     "status": "ok",
+     "brightness": 150.7,
+     "ndvi": 0.393,
+     "built_pct": 31.9,
+     "new_built_since_baseline_pct": 7.7,
+     "frame": true
     }
    ]
   }
