@@ -15,14 +15,14 @@
   {
    "id": "https://kolaboro.com/shipping/#d-2026-11-05",
    "url": "https://kolaboro.com/shipping/#d-2026-11-05",
-   "title": "5 November 2026: 9 changes shipped so far",
-   "content_text": "- /shipping/ log (calendar, streaks, day summaries, engineering numbers), ship badge API, roadmap items linked to live pages\n- Kolaboro.com W6: quality pages (visual tests, page weight, real-user speed, accessibility statement) and /api/x/qa\n- Kolaboro.com T6: open data catalog (/data/), data contracts, freshness API, OpenAPI 3.1 + explorer, llms-full.txt\n- World map, similar projects, market comparison, project timeline, display currency (block U6)\n- Kolaboro worker: register batch 6 modules (ship, data, disc, qa, ins) as 404 stubs\n- Score explainer, project-scoped questions, market indices (block X6)\n\nDay in progress: summary taken from the commit subjects so far.",
-   "content_html": "<ul><li>/shipping/ log (calendar, streaks, day summaries, engineering numbers), ship badge API, roadmap items linked to live pages</li><li>Kolaboro.com W6: quality pages (visual tests, page weight, real-user speed, accessibility statement) and /api/x/qa</li><li>Kolaboro.com T6: open data catalog (/data/), data contracts, freshness API, OpenAPI 3.1 + explorer, llms-full.txt</li><li>World map, similar projects, market comparison, project timeline, display currency (block U6)</li><li>Kolaboro worker: register batch 6 modules (ship, data, disc, qa, ins) as 404 stubs</li><li>Score explainer, project-scoped questions, market indices (block X6)</li></ul><p>Day in progress: summary taken from the commit subjects so far.</p>",
+   "title": "5 November 2026: 29 changes shipped so far",
+   "content_text": "- Image-index.json and the technology render check no longer show developer domains or project names (anonymity rule); matches link to the image check tool's anonymous ids\n- Hold back sw.js and /saved/ (net zero files while the Pages file limit is fixed); Save offline button appears only once /sw.js is published\n- Kolaboro.com X6: Pages file budget, digest is one page (data inside, JSON and RSS from the worker), explain script inlined, 7 files removed\n- Kolaboro.com W6: file limit, inline the quality page script and read one merged /data/quality.json (net -1 file now, job removes 10 more)\n- Hourly findings on every project page, in the home activity strip heading, footer, engineering, changelog, sitemap, llms.txt\n- /shipping/ log (calendar, streaks, day summaries, engineering numbers), ship badge API, roadmap items linked to live pages\n\nDay in progress: summary taken from the commit subjects so far.",
+   "content_html": "<ul><li>Image-index.json and the technology render check no longer show developer domains or project names (anonymity rule); matches link to the image check tool&#x27;s anonymous ids</li><li>Hold back sw.js and /saved/ (net zero files while the Pages file limit is fixed); Save offline button appears only once /sw.js is published</li><li>Kolaboro.com X6: Pages file budget, digest is one page (data inside, JSON and RSS from the worker), explain script inlined, 7 files removed</li><li>Kolaboro.com W6: file limit, inline the quality page script and read one merged /data/quality.json (net -1 file now, job removes 10 more)</li><li>Hourly findings on every project page, in the home activity strip heading, footer, engineering, changelog, sitemap, llms.txt</li><li>/shipping/ log (calendar, streaks, day summaries, engineering numbers), ship badge API, roadmap items linked to live pages</li></ul><p>Day in progress: summary taken from the commit subjects so far.</p>",
    "date_published": "2026-11-05T00:00:00Z",
-   "date_modified": "2026-11-05T07:17:29Z",
+   "date_modified": "2026-11-05T08:09:23Z",
    "_kolaboro": {
-    "ships": 9,
-    "data_updates": 17,
+    "ships": 29,
+    "data_updates": 42,
     "method": "so-far"
    }
   },

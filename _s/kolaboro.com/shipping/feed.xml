@@ -4,15 +4,15 @@
 <link href="https://kolaboro.com/shipping/feed.xml" rel="self"/>
 <link href="https://kolaboro.com/shipping/"/>
 <id>https://kolaboro.com/shipping/</id>
-<updated>2026-11-05T07:19:36Z</updated>
+<updated>2026-11-05T08:32:05Z</updated>
 <author><name>Kolaboro</name></author>
 <entry>
-<title>5 November 2026: 9 changes shipped so far</title>
+<title>5 November 2026: 29 changes shipped so far</title>
 <link href="https://kolaboro.com/shipping/#d-2026-11-05"/>
 <id>https://kolaboro.com/shipping/#d-2026-11-05</id>
 <published>2026-11-05T00:00:00Z</published>
-<updated>2026-11-05T07:17:29Z</updated>
-<content type="html">&lt;ul&gt;&lt;li&gt;/shipping/ log (calendar, streaks, day summaries, engineering numbers), ship badge API, roadmap items linked to live pages&lt;/li&gt;&lt;li&gt;Kolaboro.com W6: quality pages (visual tests, page weight, real-user speed, accessibility statement) and /api/x/qa&lt;/li&gt;&lt;li&gt;Kolaboro.com T6: open data catalog (/data/), data contracts, freshness API, OpenAPI 3.1 + explorer, llms-full.txt&lt;/li&gt;&lt;li&gt;World map, similar projects, market comparison, project timeline, display currency (block U6)&lt;/li&gt;&lt;li&gt;Kolaboro worker: register batch 6 modules (ship, data, disc, qa, ins) as 404 stubs&lt;/li&gt;&lt;li&gt;Score explainer, project-scoped questions, market indices (block X6)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Day in progress: summary taken from the commit subjects so far.&lt;/p&gt;</content>
+<updated>2026-11-05T08:09:23Z</updated>
+<content type="html">&lt;ul&gt;&lt;li&gt;Image-index.json and the technology render check no longer show developer domains or project names (anonymity rule); matches link to the image check tool&amp;#x27;s anonymous ids&lt;/li&gt;&lt;li&gt;Hold back sw.js and /saved/ (net zero files while the Pages file limit is fixed); Save offline button appears only once /sw.js is published&lt;/li&gt;&lt;li&gt;Kolaboro.com X6: Pages file budget, digest is one page (data inside, JSON and RSS from the worker), explain script inlined, 7 files removed&lt;/li&gt;&lt;li&gt;Kolaboro.com W6: file limit, inline the quality page script and read one merged /data/quality.json (net -1 file now, job removes 10 more)&lt;/li&gt;&lt;li&gt;Hourly findings on every project page, in the home activity strip heading, footer, engineering, changelog, sitemap, llms.txt&lt;/li&gt;&lt;li&gt;/shipping/ log (calendar, streaks, day summaries, engineering numbers), ship badge API, roadmap items linked to live pages&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Day in progress: summary taken from the commit subjects so far.&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>4 November 2026: 67 changes shipped</title>
