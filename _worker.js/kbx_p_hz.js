@@ -258,17 +258,18 @@ export async function coast(lat, lng, radiusKm = 10, opt = {}) {
 }
 
 // Fallback when every Overpass server fails: Natural Earth 1:10m land outline (public domain, via world-atlas 2.0.2),
-// cut into 10 degree tiles published at /data/coast/<lon>_<lat>.json (every tile exists, open ocean ones are empty, so a 404 is an error) (quantised TopoJSON units, delta-encoded lines).
+// cut into 10 degree tiles published at /data/coast/<lon>_<lat>.json (every tile exists, open ocean ones are empty, so a 404 or a missing tile is an error); 36 column files /data/coast/<lon>.json (quantised TopoJSON units, delta-encoded lines).
 // Coarse on purpose: the outline is generalised and quantised to a few hundred metres, so the result is given in bands.
 const NE_SRC = { name: 'Natural Earth 1:10m land outline (fallback, used because no OpenStreetMap server answered)', url: 'https://www.naturalearthdata.com/about/terms-of-use/', license: 'Public domain (Natural Earth), redistributed by world-atlas 2.0.2' };
 const NE_LIMITS = 'A generalised world outline at 1:10 million, accurate to about 1 km and simplified around small bays, islands and river mouths. We show it only in bands (under 1 km, or to the nearest 0.5 km) and only when the detailed OpenStreetMap coastline could not be read.';
 async function neCoast(lat, lng, radiusKm, opt) {
   const tx = Math.floor((lng + 180) / 10) * 10 - 180, ty = Math.floor((lat + 90) / 10) * 10 - 90;
-  const path = '/data/coast/' + tx + '_' + ty + '.json';
+  const path = '/data/coast/' + tx + '.json';   // one file per 10 degree longitude column, holding its 18 tiles (5 Nov 2026: fewer files for the Pages 20,000 file limit)
   const query = 'https://kolaboro.com' + path;
   const r = opt.asset ? await opt.asset(path) : await get(query, { cf: { cacheTtl: 86400 * 30, cacheEverything: true } }, 8000);
   if (!r.ok) throw new Error('outline tile ' + r.status);
-  const d = await r.json(), [sx, sy] = d.s, [ox, oy] = d.t;
+  const c = await r.json(), [sx, sy] = c.s, [ox, oy] = c.t, d = { l: (c.tiles || {})[String(ty)] };
+  if (!d.l) throw new Error('outline tile missing ' + tx + ' ' + ty);
   let best = Infinity;
   for (const e of d.l) {
     let x = e[0], y = e[1], prev = { lon: ox + x * sx, lat: oy + y * sy };
