@@ -1,6 +1,20 @@
 {
  "deploys": [
   {
+   "at": "2026-11-05T07:29:52Z",
+   "commit": "00af8b3c3d3feec2b5b6c7336a2301789edd4cdc",
+   "checks_passed": 32,
+   "checks_total": 32,
+   "failed": [],
+   "run": "https://github.com/calory89/webs-estaticas/actions/runs/41987246937",
+   "result": "pass",
+   "wait_s": 123,
+   "changes": [
+    "f376f02b6f35",
+    "00af8b3c3d3f"
+   ]
+  },
+  {
    "at": "2026-11-05T07:26:39Z",
    "commit": "398a83288fe6519ab6886c4d506fcd75a61cec5f",
    "checks_passed": 32,
@@ -1202,13 +1216,13 @@
  "canary": "Cloudflare Pages sends each push to all visitors at once and offers no percentage canary, so none is claimed. A bad push can be visible for a few minutes until the rollback is live.",
  "rollback_mode": "Rollback: a git commit restoring the files changed since the last passing commit; Pages deploys it in about 1 to 2 minutes. An instant Cloudflare API rollback is built in but needs a Pages-scoped token, not configured yet.",
  "latest_checks": {
-  "at": "2026-11-05T07:26:39.609Z",
-  "commit": "398a83288fe6519ab6886c4d506fcd75a61cec5f",
+  "at": "2026-11-05T07:29:52.558Z",
+  "commit": "00af8b3c3d3feec2b5b6c7336a2301789edd4cdc",
   "checks": [
    {
     "name": "build: live commit",
     "ok": true,
-    "detail": "live 398a83288fe6"
+    "detail": "live 00af8b3c3d3f"
    },
    {
     "name": "page /",
@@ -1298,7 +1312,7 @@
    {
     "name": "api /api/x/l/trust",
     "ok": true,
-    "detail": "{\"controls\":13,\"pass\":11,\"warn\":2,\"fail\":0,\"stale\":0,\"unknown\":0}"
+    "detail": "{\"controls\":13,\"pass\":12,\"warn\":1,\"fail\":0,\"stale\":0,\"unknown\":0}"
    },
    {
     "name": "tls: plain http redirects to https",
@@ -1367,7 +1381,7 @@
    }
   ]
  },
- "last_checked": "398a83288fe6519ab6886c4d506fcd75a61cec5f",
- "last_good": "398a83288fe6519ab6886c4d506fcd75a61cec5f",
- "updated": "2026-11-05T07:26:39Z"
+ "last_checked": "00af8b3c3d3feec2b5b6c7336a2301789edd4cdc",
+ "last_good": "00af8b3c3d3feec2b5b6c7336a2301789edd4cdc",
+ "updated": "2026-11-05T07:29:52Z"
 }
