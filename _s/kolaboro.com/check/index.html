@@ -241,7 +241,7 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   window.addEventListener('scroll', function(){ b.classList.toggle('on', window.scrollY > window.innerHeight * 1.5); }, { passive: true });
 })();
 </script>
-<script src="/k/cycle.js?v=c7m7"></script>
+<script src="/k/cycle.js?v=c7f8"></script>
 <script>
 (function(){
   var $ = function(i){ return document.getElementById(i); };
@@ -255,7 +255,7 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   function knownEmail(){ var e = ($('az-email') && $('az-email').value.trim()) || ($('az-cpe') && $('az-cpe').value.trim()) || ''; if (!e) try { e = localStorage.getItem('kb-desk-email') || ''; } catch (x) {} return e; }
   function norm(v){ v = v.trim(); if (!v) return ''; if (!/^https?:\/\//i.test(v)) v = 'https://' + v; try { var u = new URL(v); return /\./.test(u.hostname) ? u.toString() : ''; } catch (e) { return ''; } }
   function step1(){ var raw = $('az-url').value, v = norm(raw); if (!v) { if (window.KBC7 && KBC7.only(raw)) { $('az-e1').textContent = ''; return; } $('az-e1').textContent = 'Type at least 3 characters: a website, a project name or a permit number.'; return; }
-    url = v; if (window.KBC7) KBC7.start(raw, v); try { localStorage.setItem('kb-desk-url', v); } catch(x){} $('az-e1').textContent = ''; $('az-host').textContent = new URL(url).hostname.replace(/^www\./, ''); ev('desk_url'); run(''); }
+    url = v; if (window.KBC7) KBC7.start(raw, v); try { history.replaceState(null, '', '/check/?url=' + encodeURIComponent(v) + '#analyze'); } catch (x) {} try { localStorage.setItem('kb-desk-url', v); } catch(x){} $('az-e1').textContent = ''; $('az-host').textContent = new URL(url).hostname.replace(/^www\./, ''); ev('desk_url'); run(''); }
   $('az-f1').addEventListener('submit', step1);
   $('az-url').addEventListener('input', function(){ if ($('az-e1').textContent && !$('az-e1').querySelector('a')) $('az-e1').textContent = ''; });
   document.addEventListener('click', function(e){ if (e.target.closest && e.target.closest('[data-show-start]')) $('start').hidden = false; });

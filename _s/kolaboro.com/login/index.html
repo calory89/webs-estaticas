@@ -80,7 +80,8 @@ var KB = (function(){
     fpBusy = true; e.style.color = '#5E6B76'; e.textContent = 'Sending the reset link…';
     KB.rpc('kolaboro_pw_request', { p_email: em }).then(function(){ try { if (window.gtag) gtag('event', 'password_reset_request'); } catch (x) {} e.style.color = '#0B7A55'; e.textContent = 'If an account exists for ' + em + ', we just sent a reset link. It works for one hour. Check your spam folder too.'; }).catch(function(){ e.style.color = ''; e.textContent = 'Could not reach the server. Check your connection and try again.'; }).then(function(){ fpBusy = false; }); };
   f.addEventListener('submit', function(ev){
-    ev.preventDefault(); e.textContent = ''; e.style.color = ''; var b = f.querySelector('.ap-btn'); if (b.disabled) return; b.disabled = true; b.textContent = 'Logging in…';
+    ev.preventDefault(); e.textContent = ''; e.style.color = ''; var b = f.querySelector('.ap-btn'); if (b.disabled) return;
+    if (!f.email.value.trim() || !f.password.value) { if (!window.KFE) { e.textContent = !f.email.value.trim() ? 'Add your email address.' : 'Enter your password.'; } (!f.email.value.trim() ? f.email : f.password).focus(); return; } b.disabled = true; b.textContent = 'Logging in…';
     KB.rpc('kolaboro_login', { p_email: f.email.value.trim(), p_password: f.password.value }).then(function(d){
       if (d && d.token) { b.textContent = 'Opening your portal…'; KB.del('kb-token-as'); KB.set('kb-token', d.token); KB.set('kb-role', d.role || 'buyer'); try { if (window.gtag) gtag('event', 'login', { method: 'email' }); } catch (x) {} location.href = d.role === 'agent' ? '/agents/me' : (NEXT || '/portal'); return; }
       b.disabled = false; b.textContent = 'Log in';

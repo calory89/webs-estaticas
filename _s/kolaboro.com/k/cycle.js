@@ -43,6 +43,7 @@
     '.c7-al{background:var(--c7-warnb);color:#5a3a00;border-radius:12px;padding:10px 14px;margin:8px 0;font-weight:600}.c7-err{color:var(--c7-bad);font-weight:600}' +
     '.c7-tabs{display:flex;gap:6px;flex-wrap:wrap;margin:6px 0 10px}.c7 details summary{cursor:pointer;font-weight:700}' +
     '@media (max-width:560px){.c7-fl{grid-template-columns:1fr}.c7-fl dt{margin-top:6px}.c7-row .c7-btn{flex:1 1 auto}}' +
+    '#az-4 h2,.c7 h2,.c7 h3{overflow-wrap:anywhere}#az,#c7,#c7-panel{scroll-margin-top:84px}' +
     '[data-theme=dark] .c7-diff li{background:#26313c;color:#E8EDF1}[data-theme=dark] .c7-diff li.bad{background:#4a2320}[data-theme=dark] .c7-diff li.warn{background:#4a3b12}[data-theme=dark] .c7-diff li.ok{background:#173d2f}[data-theme=dark] .c7-pill{background:#2B3743;color:#E8EDF1}[data-theme=dark] .c7-al{background:#4a3b12;color:#FFE7A8}';
   function addCss(){ if ($('c7css')) return; var s = document.createElement('style'); s.id = 'c7css'; s.textContent = css; (document.head || document.documentElement).appendChild(s); }
   addCss();
@@ -112,6 +113,7 @@
         return legacy().then(function(L){ if (L.length) n.items = L.concat(n.items); return n; });
       });
     }).catch(function(e){
+      if (!(e && e.message === 'nolookup')) return { available: true, items: [], error: 'network' };
       if (!legacyRegisters(q).length) return { available: false, items: [] };
       return legacy().then(function(items){ return { available: true, items: items, legacy: true }; });
     });
@@ -134,9 +136,10 @@
     return h + '</div>';
   }
   C7.registersHtml = function(lk, full){
-    if (!lk) return '<div class="c7-sk" style="width:60%"></div><div class="c7-sk"></div><div class="c7-sk" style="width:75%"></div>';
+    if (!lk) return '<p class="c7-mut" role="status" style="margin:0">Asking the official registers live. This usually takes a few seconds…</p><div class="c7-sk" style="width:60%"></div><div class="c7-sk"></div><div class="c7-sk" style="width:75%"></div>';
     if (!lk.available) return '<p style="margin:0">Automatic register lookup for this kind of input is not live yet, so nothing was looked up. You can search the official registers yourself: <a href="/registers/">official registers by country</a>.</p>';
     if (lk.rate) return '<p style="margin:0">You have run many register lookups in the last hour. Try again later.</p>';
+    if (lk.error === 'network' && !(lk.items || []).length) return '<p style="margin:0">We could not reach the register lookup: check your connection. Nothing is shown rather than a guess.</p><p class="c7-row" style="margin:8px 0 0"><button type="button" class="c7-btn s l" onclick="location.reload()">Try again</button></p>';
     if (lk.error && !(lk.items || []).length) return '<p style="margin:0">The register lookup did not answer (' + esc(lk.error) + '). Nothing is shown rather than a guess. Try again in a few minutes.</p>';
     if (!(lk.items || []).length) return '<p style="margin:0">No official register we can query automatically covers this input. ' + (lk.notes ? esc(lk.notes) + ' ' : '') + '<a href="/registers/">Official registers by country</a>.</p>';
     return lk.items.map(function(i){ return regHtml(i, full); }).join('') + (lk.seal ? '<p class="c7-mut" style="margin:8px 0 0">Sealed snapshot of this lookup, SHA-256: <span class="c7-hash">' + esc(full ? lk.seal : short(lk.seal)) + '</span>' + (full && lk.sealUrl ? ' · <a href="' + esc(lk.sealUrl) + '" target="_blank" rel="noopener">sealed result</a>' : '') + (full && lk.verify ? ' · <a href="' + esc(lk.verify) + '" target="_blank" rel="noopener">timestamp</a>' : '') + '</p>' : '') + (full && lk.disclaimer ? '<p class="c7-mut" style="margin:8px 0 0">' + esc(lk.disclaimer) + '</p>' : '');
@@ -204,8 +207,9 @@
   function step(n){ ['az-1','az-2','az-3','az-4'].forEach(function(id, i){ var e = $(id); if (e) e.classList.toggle('on', i === n - 1); }); var a = $('az'); if (a && a.scrollIntoView) a.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
   function backTo(){ var u = location.pathname + location.search; return u + (location.hash || '#analyze'); }
   function nextLink(signup){ var q = CUR || {}; var p = '/check/?' + (q.url ? 'url=' + encodeURIComponent(q.url) : 'q=' + encodeURIComponent(q.q || '')) + '#analyze'; return '/login/?next=' + encodeURIComponent(p) + (signup ? '#signup' : ''); }
-  function gateHtml(){
-    return '<div class="c7-lock" id="c7-gate"><b>See the full check, free</b><ul><li>Every field the register returned, and the website compared with it</li><li>The sealed snapshots: full hashes and the exact bytes the register sent</li><li>Upload the permit PDF: we read the number and look it up</li><li>Watch this project: we re-check it and show you what changed</li><li>Pay for the full check or order a site visit from your dashboard</li></ul>' +
+  function gateHtml(lk){
+    var any = lk && (lk.items || []).some(function(i){ return i.f === true; });
+    return '<div class="c7-lock" id="c7-gate"><b>' + (any ? 'See the full check, free' : 'Save this check, free') + '</b><ul>' + (any ? '<li>Every field the register returned, and the website compared with it</li><li>The sealed snapshots: full hashes and the exact bytes the register sent</li>' : '<li>Keep this check in your private dashboard, with its sources</li>') + '<li>Upload the permit PDF: we read the number and look it up</li><li>Watch this project: we re-check it and show you what changed</li><li>Pay for the full check or order a site visit from your dashboard</li></ul>' +
       '<div class="c7-row"><a class="c7-btn" href="' + nextLink(true) + '" data-c7-gate="signup">Create a free account</a><a class="c7-btn l" href="' + nextLink(false) + '" data-c7-gate="login">Log in</a></div><p class="c7-mut" style="margin:8px 0 0">No card. After you log in you come back to this result and it is saved to your account.</p></div>';
   }
   function savedHtml(ref, snap){
@@ -221,7 +225,7 @@
     var p = panel(desk); if (!p || !CUR) return; var lk = CUR.lkv, full = !!token();
     var h = '<p class="c7-k">Official registers · live lookup</p><h3>What the official registers say</h3>' + C7.registersHtml(lk, full);
     if (full && lk) { h += '<h3 style="margin-top:14px">Website compared with the registers</h3>' + diffHtml(C7.diffs(desk, lk)); if (desk && desk.signature && desk.signature.sha256) h += '<p class="c7-mut">Desk review signature SHA-256: <span class="c7-hash">' + esc(desk.signature.sha256) + '</span> · <a href="/verify">verify</a></p>'; h += '<p class="c7-row" style="margin:10px 0 0"><a class="c7-btn s l" href="/portal/#c7-upf">Upload the permit PDF</a></p><div id="c7-sv"></div>'; }
-    else if (lk) h += gateHtml();
+    else if (lk) h += gateHtml(lk);
     p.innerHTML = h;
     p.querySelectorAll('[data-c7-gate]').forEach(function(a){ a.onclick = function(){ ls('kb-c7-pending', JSON.stringify({ q: CUR.q, url: CUR.url, at: Date.now() })); ev('check_gate', { to: a.getAttribute('data-c7-gate') }); }; });
     if (full && lk && CUR.final) { if (CUR.saved) showSaved(CUR.saved); else autoSave(desk); }
@@ -329,7 +333,7 @@
     var t = token(); if (!t) return Promise.resolve();
     return rpc('kolaboro_case', { p_token: t, p_action: 'add_doc', p_payload: { case_id: caseId, title: doc.document_kind || 'Building permit', file: dataUrl, meta: { type: 'permit', result: doc } } }).then(function(r){ var o = $('c7-upo'); if (o) { var p = document.createElement('p'); p.className = r && r.case ? 'c7-mut' : 'c7-err'; p.textContent = r && r.case ? '✓ The original file was added to your case, with its SHA-256 fingerprint.' : 'The file could not be added to the case (' + ((r && r.error) || 'error') + ').'; o.appendChild(p); } if (window.KBXrefresh) KBXrefresh(); }).catch(function(){});
   }
-  function status(ref, t){ var e = document.querySelector('[data-c7-st="' + ref + '"]'); if (e) e.textContent = t; }
+  function status(ref, t){ P.msg = P.msg || {}; P.msg[ref] = t; var e = document.querySelector('[data-c7-st="' + ref + '"]'); if (e) e.textContent = t; }
   function recheck(x, quiet){
     var s = x.snap; if (P.busy[x.ref]) return Promise.resolve(); P.busy[x.ref] = 1; if (!quiet) status(x.ref, 'Checking the registers again…');
     return C7.lookup(s.doc ? s.doc.num : s.u || s.q, s.u && s.dev ? { company: s.dev } : null).then(function(lk){
@@ -349,12 +353,12 @@
     if ((D.cases || []).length >= 20) { status(x.ref, 'You already have 20 cases, the maximum. Write to us in an existing case chat.'); return; }
     status(x.ref, 'Opening a case for this project…');
     portal('new_case', { project_url: s.u || '' }).then(function(d){
-      if (!d || d.error || !d.cases || !d.cases[0]) { status(x.ref, 'Could not open a case (' + ((d && d.error) || 'error') + '). Try again.'); return; }
+      if (!d || d.error || !d.cases || !d.cases[0]) { status(x.ref, d && d.error === 'network' ? 'Could not reach the server. Check your connection and try again.' : 'Could not open a case (' + ((d && d.error) || 'error') + '). Try again.'); document.querySelectorAll('[data-c7-buy="' + x.ref + '"],[data-c7-visit="' + x.ref + '"]').forEach(function(b){ b.disabled = false; }); return; }
       var nc = d.cases[0];
       return portal('update_case', { case_id: nc.id, project_name: (s.proj || s.q || '').slice(0, 200), developer: s.dev || '', location: s.loc || '', price_text: '', next_payment_date: '', next_payment_amount: '', project_url: s.u || '', contract_url: '', user_notes: 'Opened from my Kolaboro check ' + x.ref + ': ' + (s.q || '') + (s.doc ? '. Permit ' + s.doc.num + ' read from my upload.' : '') })
         .then(function(){ return visit ? portal('message', { case_id: nc.id, body: 'Please include a site visit by a local agent for this project (from my check ' + x.ref + ').' }) : null; })
         .then(function(){ var n = Object.assign({}, s, { cs: nc.code }); return portal('save_project', { ref: x.ref, snap: n }); })
-        .then(function(){ ev(visit ? 'visit_order' : 'check_buy', { existing: false }); return o && o.reload ? o.reload() : null; }).then(function(){ go(nc.id); });
+        .then(function(){ ev(visit ? 'visit_order' : 'check_buy', { existing: false }); status(x.ref, visit ? 'Case ' + nc.code + ' opened with your site visit request.' : 'Case ' + nc.code + ' opened. Pay below to start it.'); return o && o.reload ? o.reload() : null; }).then(function(){ go(nc.id); });
     });
   }
   function bindList(){
@@ -383,7 +387,7 @@
     var app = $('app'); if (!app) return;
     if (!P.node) { P.node = document.createElement('section'); P.node.id = 'c7'; P.node.className = 'c7 ap-card'; P.node.setAttribute('aria-label', 'Your projects and checks'); P.node.innerHTML = '<div id="c7-list"></div><div style="border-top:1px solid var(--c7-line);margin-top:16px;padding-top:14px" id="c7-upw"></div>'; }
     var key = JSON.stringify([chks(D).map(function(x){ return [x.ref, x.snap]; }), (D.cases || []).map(function(c){ return [c.id, c.paid, c.stage, c.code, c.project_name, (c.messages || []).length]; })]);
-    if (P.key !== key) { P.key = key; P.node.querySelector('#c7-list').innerHTML = listHtml(D); }
+    if (P.key !== key) { P.key = key; P.node.querySelector('#c7-list').innerHTML = listHtml(D); Object.keys(P.msg || {}).forEach(function(r){ var e = P.node.querySelector('[data-c7-st="' + r + '"]'); if (e) e.textContent = P.msg[r]; }); }
     var upw = P.node.querySelector('#c7-upw'); if (!upw.firstChild || upw.dataset.n !== String((D.cases || []).length)) { if (!upw.querySelector('#c7-upo') || !upw.querySelector('#c7-upo').innerHTML) { upw.innerHTML = upHtml(D); upw.dataset.n = String((D.cases || []).length); } }
     var anchor = app.querySelector('.ap-grid'); if (P.node.parentNode !== app || P.node.nextSibling !== anchor) app.insertBefore(P.node, anchor || app.firstChild);
     bindList(); bindUp();
@@ -397,7 +401,7 @@
   // ---------- private report (/portal/report/#CHK-...) ----------
   C7.report = function(){
     var out = $('c7r'), ref = decodeURIComponent((location.hash || '').slice(1)).toUpperCase();
-    if (!token()) { location.href = '/login/?next=' + encodeURIComponent('/portal/report/#' + ref); return; }
+    if (!token()) { location.href = '/login/?next=' + encodeURIComponent('/portal/report/' + (ref ? '#' + ref : '')); return; }
     if (!C7.isChk(ref)) { out.innerHTML = '<div class="ap-card"><h1 style="margin-top:0">No report selected</h1><p>Open a report from <a href="/portal/#c7">your dashboard</a>.</p></div>'; return; }
     portal('me').then(function(D){
       if (!D || D.error) { if (D && D.error === 'auth') { location.href = '/login/?next=' + encodeURIComponent('/portal/report/#' + ref); return; } out.innerHTML = '<div class="ap-card"><h1 style="margin-top:0">Could not open the report</h1><p>' + (D && D.error === 'network' ? 'We could not reach the server. Check your connection.' : 'Something went wrong. Try again in a minute.') + '</p><button class="ap-btn" type="button" onclick="location.reload()">Try again</button></div>'; return; }
