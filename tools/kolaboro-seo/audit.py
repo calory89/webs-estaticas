@@ -29,12 +29,13 @@ OPENER = urllib.request.build_opener(NoRedirect)
 
 def get(url, method='GET', timeout=30):
     req = urllib.request.Request(url, method=method, headers={'user-agent': UA, 'accept-encoding': 'identity'})
-    for attempt in range(3):
+    for attempt in range(6):
         try:
             with OPENER.open(req, timeout=timeout) as r:
                 return r.status, dict((k.lower(), v) for k, v in r.headers.items()), (r.read() if method == 'GET' else b'')
         except urllib.error.HTTPError as e:
             body = e.read() if method == 'GET' else b''
+            if e.code == 429 and attempt < 5: time.sleep(min(60, float(e.headers.get('retry-after') or 0) or 5 * 2 ** attempt)); continue
             if e.code in (502, 503, 504) and attempt < 2: time.sleep(2 + attempt * 3); continue
             return e.code, dict((k.lower(), v) for k, v in e.headers.items()), body
         except Exception as e:
@@ -52,6 +53,14 @@ def sitemap_urls():
         t = b.decode('utf-8', 'replace')
         for u in re.finditer(r'<url><loc>([^<]+)</loc>(?:<lastmod>([^<]+)</lastmod>)?', t):
             out[html.unescape(u.group(1))] = {'sitemap': m.rsplit('/', 1)[-1], 'lastmod': u.group(2)}
+    # Named pages in the 7 translated languages share templates with English: crawl every English page and an even sample of the
+    # others (KB_SAMPLE per sitemap, default 120), so the run stays polite to the site and inside the job's time limit.
+    n = int(os.environ.get('KB_SAMPLE', '120'))
+    for sm in {v['sitemap'] for v in out.values()}:
+        if re.match(r'(projects|developers)-(es|de|fr|ru|nl|ar|zh)\.xml$', sm):
+            us = sorted(u for u, v in out.items() if v['sitemap'] == sm); step = max(1, len(us) // n)
+            for i, u in enumerate(us):
+                if i % step: out[u]['skip'] = True
     return maps, out
 
 
@@ -135,11 +144,12 @@ def lastmods(pages):
 def main(out_dir):
     os.makedirs(out_dir, exist_ok=True)
     maps, urls = sitemap_urls()
-    with cf.ThreadPoolExecutor(8) as ex: res = list(ex.map(audit_one, list(urls)))
+    with cf.ThreadPoolExecutor(int(os.environ.get('KB_THREADS', '3'))) as ex: res = list(ex.map(audit_one, [u for u, v in urls.items() if not v.get('skip')]))
     by = {r['url']: r for r in res}
     problems, titles = [], {}
     def P(u, issue): problems.append({'url': u, 'issue': issue})
-    S = dict(crawled=len(res), ok_200=0, indexable=0, schema_valid_pages=0, schema_pages=0, schema_errors=0, head_mismatch=0, canonical_mismatch=0, hreflang_errors=0, redirects=0, errors_4xx_5xx=0, noindex_in_sitemap=0, missing_title=0, missing_description=0, duplicate_titles=0)
+    if any(r['status'] == 429 for r in res): print('rate limited: %d URLs got 429 after retries' % sum(1 for r in res if r['status'] == 429))
+    S = dict(in_sitemaps=len(urls), crawled=len(res), ok_200=0, indexable=0, schema_valid_pages=0, schema_pages=0, schema_errors=0, head_mismatch=0, canonical_mismatch=0, hreflang_errors=0, redirects=0, errors_4xx_5xx=0, noindex_in_sitemap=0, missing_title=0, missing_description=0, duplicate_titles=0)
     for r in res:
         u = r['url']
         if r['status'] == 200: S['ok_200'] += 1
@@ -181,7 +191,8 @@ def main(out_dir):
     hist = (prev.get('history') or [])[-59:] + [{'at': now, 'crawled': S['crawled'], 'indexable': S['indexable'], 'schema_valid_pages': S['schema_valid_pages'], 'problems': len(problems)}]
     by_map = {}
     for u, v in urls.items(): by_map[v['sitemap']] = by_map.get(v['sitemap'], 0) + 1
-    out = {'version': 'seo-audit-1', 'generated_at': now, 'base': BASE, 'crawler': UA, 'sitemaps': maps, 'urls_by_sitemap': by_map, 'summary': S,
+    extrap = round(S['indexable'] + sum(1 for u, v in urls.items() if v.get('skip')) * (sum(1 for r in res if r['url'] in urls and urls[r['url']]['sitemap'][:9] in ('projects-', 'developer') and not urls[r['url']]['sitemap'].endswith('-en.xml') and r['status'] == 200) / max(1, sum(1 for r in res if r['url'] in urls and urls[r['url']]['sitemap'][:9] in ('projects-', 'developer') and not urls[r['url']]['sitemap'].endswith('-en.xml')))))
+    out = {'version': 'seo-audit-1', 'generated_at': now, 'base': BASE, 'crawler': UA, 'sitemaps': maps, 'urls_by_sitemap': by_map, 'summary': S, 'indexable_estimate_all': extrap, 'sampled_note': 'Translated named pages are sampled (KB_SAMPLE per sitemap); indexable_estimate_all applies the sample pass rate to the URLs not fetched.',
            'schema_types': sorted({t for r in res for t in r.get('ld_types', [])}), 'problems': problems[:500], 'exclude': exclude,
            'lastmod': lastmods(static), 'history': hist,
            'method': 'GET and HEAD on every sitemap URL, redirects not followed. Indexable = 200, exactly one canonical equal to the URL, no noindex. Valid structured data = every JSON-LD block parses, has a schema.org context and @type on every node, required properties present, no Review, AggregateRating or ClaimReview.'}
