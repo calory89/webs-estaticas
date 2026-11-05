@@ -503,7 +503,9 @@ async function run(inp, req, env, ctx, opts) {
   ids.filter(x => x.type === 'nyc_dobnow_job').slice(0, 2).forEach(x => reg.push(nycDob('dobnow', x.value, ctx).then(a => a)));
   if (addr && MIAMI_HINT.test(addrText)) reg.push(miamiDade('address', mdAddr(addr), ctx));
   ids.filter(x => x.type === 'miami_dade_permit').slice(0, 2).forEach(x => reg.push(miamiDade('permit', x.value, ctx)));
-  const company = inp.company || (rep && rep.developer) || null;
+  // plain name typed by the buyer (no URL, no identifier, no address): search it as a company name
+  const qName = (!pageUrl && inp.q && !ids.length && !addr && /[A-Za-z\u00C0-\u024F]{3}/.test(inp.q) && inp.q.trim().length <= 80 && !/https?:|www\./i.test(inp.q)) ? inp.q.trim() : null;
+  const company = inp.company || (rep && rep.developer) || qName || null;
   if (company && company.length >= 3) reg.push(gleif(company, ctx));
   ids.filter(x => x.type === 'uk_company_number').slice(0, 1).forEach(x => reg.push(ukCompany(x.value, ip, env, ctx)));
   if (cs.has('GB') && company && !ids.some(x => x.type === 'uk_company_number')) { const c = check('company_uk', 'Companies House (United Kingdom)', 'https://find-and-update.company-information.service.gov.uk/', 'GB', { by: 'company name', value: company, url: null }); c.status = 'needs_key'; c.note = 'Search by name uses the Companies House API, which needs a key from Carlos. A company number on the website or in the text is looked up without a key.'; c.manual_check = 'https://find-and-update.company-information.service.gov.uk/search?q=' + encodeURIComponent(company); reg.push(Promise.resolve(c)); }
