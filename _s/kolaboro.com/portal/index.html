@@ -58,7 +58,7 @@ var KB = (function(){
     if (u.verified === false && !u.demo && !u.admin_view) h += '<div class="ap-banner warn" style="display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between"><span>✉️ <b>Confirm your email.</b> We sent a link to ' + esc(u.email) + '. We need it to match your PayPal payment to your case automatically.</span><button class="ap-chip" id="rsv" style="background:#17212B">Send the link again</button></div>';
     if (u.status === 'pending') h += '<div class="ap-banner warn">⏳ Waiting for your payment to be confirmed. It attaches automatically once PayPal confirms it and your email is confirmed. If you paid with a different email than this account, tell us in the chat. You can already add your project details.</div>';
     if (D.cases.length > 1) h += '<div class="ap-cases">' + D.cases.map(function(x){ return '<button data-c="' + x.id + '" class="' + (x.id === CUR ? 'on' : '') + '"><b>' + esc(x.project_name || x.code) + '</b><small>' + esc(x.code) + ' · ' + (x.paid ? STAGES[x.stage] : 'Not paid yet') + '</small></button>'; }).join('') + '</div>';
-    if (!c) { $('app').innerHTML = h + homeHtml(u); bindPlus(null); return; }
+    if (!c) { $('app').innerHTML = h + homeHtml(u); bindPlus(null); c7(); return; }
     var v = VERD[c.verdict] || VERD.pending, st = c.stage, firstCase = D.cases[D.cases.length - 1].id === c.id;
     var unread = c.messages.filter(function(m){ return m.admin && !m.read; }).length;
     var steps = STAGES.map(function(s, i){ var cls = (i < st || (i === st && st === 5 && c.report_url)) ? 'done' : (i === st ? 'now' : ''); return '<li class="' + cls + '">' + s + '<small>' + (stageDate(c, i) || (i === 5 && c.eta ? 'due ' + fmt(c.eta) : '')) + '</small></li>'; }).join('');
@@ -98,7 +98,7 @@ var KB = (function(){
     h += '<section class="ap-card"><h2>Case timeline</h2><ul class="ap-tl">' + c.log.slice().reverse().map(function(l){ return '<li><b>' + STAGES[l.stage] + '</b><div class="ap-small ap-muted">' + fmt(l.at, true) + '</div>' + (l.note ? '<div>' + esc(l.note) + '</div>' : '') + '</li>'; }).join('') + '</ul></section>';
     if (D.saved) h += savedHtml() + dataHtml();
     h += '</div></div>';
-    $('app').innerHTML = h; if (window.KBX) KBX(c, D, TOKEN); bindPlus(c);
+    $('app').innerHTML = h; if (window.KBX) KBX(c, D, TOKEN); bindPlus(c); c7();
     var ch = $('chat'); if (ch) ch.scrollTop = ch.scrollHeight;
     document.querySelectorAll('[data-c]').forEach(function(b){ b.onclick = function(){ CUR = b.dataset.c; render(); }; });
     var rsv = $('rsv'); if (rsv) rsv.onclick = function(){ rsv.disabled = true; call('resend_verify').then(function(){ kev('verify_resend'); KB.toast('Sent. Check your inbox and spam folder.'); }); };
@@ -108,6 +108,9 @@ var KB = (function(){
     if (unread && !u.admin_view) call('read', { case_id: c.id });
     if (!c.desk && c.project_url && !deskBusy[c.id]) runDesk(c);
   }
+  // buyer cycle (/k/cycle.js): checks saved from /check, watch alerts, permit upload, pay or order a site visit
+  function c7(){ if (window.KBC7) try { KBC7.portal(D, { pick: function(id){ CUR = id; render(); }, reload: function(){ return load('me'); } }); } catch (e) {} }
+  function dbSaved(){ return (D.saved || []).filter(function(x){ return !/^CHK-/i.test(x.ref); }); }
   // ---- free accounts, saved projects, payment schedule (needs the 1 Nov database update; hidden until D.saved exists)
   var LAST = (function(){ try { return localStorage.getItem('kb-pv-last'); } catch (e) { return null; } })();
   try { localStorage.setItem('kb-pv-last', new Date().toISOString()); } catch (e) {}
@@ -136,14 +139,14 @@ var KB = (function(){
     var first = esc((u.name || '').split(' ')[0] || 'there');
     var h = '<div class="ap-grid"><div class="ap-col"><section class="ap-card ap-hero"><p class="ap-k">Free account</p><h1>Welcome, ' + first + '.</h1><p style="margin:0;color:#C9D0D6;position:relative;z-index:1">Save projects from the database, get a free desk review of any developer website, and keep your payment schedule in one place. When you want someone on the ground to check a project before you pay, open a case.</p></section>';
     h += '<section class="ap-card"><h2>Check a project</h2><p class="ap-muted ap-small" style="margin-top:0">Paste the developer\'s website or listing. Our research agent reads it in about a minute and lists what to ask before paying. The desk review is free; the on-the-ground check is €490 and starts only when you pay.</p><form id="hf" class="ap-send"><input name="u" type="url" required aria-label="Project website" autocomplete="url" placeholder="https://developer-website.com/project" style="flex:1;min-height:48px;padding:0 14px;border:1px solid #D8D6CE;border-radius:12px;font:inherit"><button class="ap-btn">Open case</button></form></section>';
-    var gs = [['Create your account', true], ['Save a project from the database', (D.saved || []).length > 0, '/database/'], ['Open a case and get a free desk review', D.cases.length > 0, '#hf'], ['Add your payment schedule', false], ['Ask for the on-the-ground check before you pay', false, '/pricing/']], gd = gs.filter(function(x){ return x[1]; }).length;
+    var gs = [['Create your account', true], ['Save a project from the database', dbSaved().length > 0, '/database/'], ['Open a case and get a free desk review', D.cases.length > 0, '#hf'], ['Add your payment schedule', false], ['Ask for the on-the-ground check before you pay', false, '/pricing/']], gd = gs.filter(function(x){ return x[1]; }).length;
     h += '<section class="ap-card"><h2>Getting started <span class="ap-muted ap-small">' + gd + ' of ' + gs.length + '</span></h2><div class="kp-prog"><i style="width:' + (100 * gd / gs.length) + '%"></i></div><ul class="ap-chk">' + gs.map(function(x){ return '<li class="' + (x[1] ? 'y' : '') + '"><i>' + (x[1] ? '✓' : '') + '</i>' + (x[2] && !x[1] ? '<a href="' + x[2] + '">' + x[0] + '</a>' : x[0]) + '</li>'; }).join('') + '</ul></section>';
     h += '<section class="ap-card"><h2>How it works</h2><ol class="ap-list"><li>Save the projects you are considering. We show you here when their public record changes.</li><li>Open a case for the one you are about to pay. The desk review is free.</li><li>Pay €490 for the full check: land title, building permit, developer and a site visit by someone who lives there.</li><li>Before each instalment, you see whether the evidence supports paying it.</li></ol><p class="ap-small ap-muted" style="margin-bottom:0"><a href="/database/">Browse the database</a> · <a href="/cases/files/kolaboro-report-example-safe-to-pay.pdf" target="_blank" rel="noopener">Example report</a> · <a href="/pricing/">Pricing</a></p></section>';
     h += '</div><div class="ap-col">' + (D.saved ? savedHtml() + dataHtml() : '') + '</div></div>';
     return h;
   }
   function savedHtml(){
-    var S = D.saved || [];
+    var S = dbSaved();
     return '<section class="ap-card" id="saved"><h2>Saved projects' + (S.length ? ' <span class="ap-muted ap-small">' + S.length + '</span>' : '') + '</h2>' + (S.length ? '<ul class="kp-sv">' + S.map(function(x){ return '<li data-ref="' + esc(x.ref) + '"><a href="/p/' + encodeURIComponent(x.ref) + '/"><b>' + esc(x.ref) + '</b></a><span class="kp-svi ap-small ap-muted">Loading…</span><button class="kp-x" data-unsave="' + esc(x.ref) + '" aria-label="Remove ' + esc(x.ref) + '">✕</button></li>'; }).join('') + '</ul>' + (S.length > 1 ? '<p style="margin:12px 0 0"><a class="ap-chip kp-cmp" href="/compare/?ids=' + S.slice(0, 4).map(function(x){ return encodeURIComponent(x.ref); }).join(',') + '">Compare ' + Math.min(S.length, 4) + ' side by side →</a></p>' : '') : '<p class="ap-muted ap-small">Nothing saved yet. Press ☆ Save on any <a href="/database/">project in the database</a> and it appears here, on every device you log in from.</p>') + '</section>';
   }
   function schedHtml(c){
@@ -216,10 +219,10 @@ var KB = (function(){
   function syncWatch(){
     if (SYNCED || !D || !D.saved || D.user.demo || D.user.admin_view) return; SYNCED = true;
     var L = []; try { L = JSON.parse(localStorage.getItem('kb_watch') || '[]'); } catch (x) {}
-    var have = {}; D.saved.forEach(function(x){ have[x.ref.toUpperCase()] = 1; });
+    var have = {}; dbSaved().forEach(function(x){ have[x.ref.toUpperCase()] = 1; });
     var push = (Array.isArray(L) ? L : []).map(function(x){ return String(x && x.id || '').toUpperCase(); }).filter(function(r){ return /^[A-Z0-9-]{3,20}$/.test(r) && !have[r]; });
     var local = {}; (Array.isArray(L) ? L : []).forEach(function(x){ local[String(x && x.id || '').toUpperCase()] = 1; });
-    var add = D.saved.filter(function(x){ return !local[x.ref.toUpperCase()]; }).map(function(x){ return { id: x.ref.toUpperCase(), snap: x.snap, added: String(x.at || '').slice(0, 10) }; });
+    var add = dbSaved().filter(function(x){ return !local[x.ref.toUpperCase()]; }).map(function(x){ return { id: x.ref.toUpperCase(), snap: x.snap, added: String(x.at || '').slice(0, 10) }; });
     if (add.length) try { localStorage.setItem('kb_watch', JSON.stringify(add.concat(L).slice(0, 200))); } catch (x) {}
     if (push.length) load('save_many', { refs: push });
   }
@@ -251,7 +254,7 @@ var KB = (function(){
   load('me');
   setInterval(function(){ if (!document.hidden && !document.activeElement.closest('form')) load('me'); }, 45000);
 })();
-</script><script src="/k/case.js?v=3e2cd587e6"></script>
+</script><script src="/k/case.js?v=3e2cd587e6"></script><script src="/k/cycle.js?v=c7a1"></script>
 <script>
 (function(){ var K = 'kb-portal-tour'; try { if (localStorage.getItem(K)) return; } catch (e) { return; }
   var steps = [['Your case, stage by stage', 'Six stages, each with a date: case opened, documents, land and title, building permit, site visit, report. Nothing is "almost done".'],

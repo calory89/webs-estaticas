@@ -49,9 +49,12 @@ var KB = (function(){
 
 (function(){
   var f = document.getElementById('lf'), e = document.getElementById('le'); KB.pwToggle(f);
-  if (KB.get('kb-token')) { if (KB.get('kb-role') === 'agent') location.href = '/agents/me'; else KB.rpc('kolaboro_portal', { p_token: KB.get('kb-token') }).then(function(d){ if (d.user) location.href = '/portal'; }); }
+  // ?next=/path: after logging in or signing up, go back to that page on this site (for example the check result you were reading)
+  var NEXT = (function(){ var n = new URLSearchParams(location.search).get('next') || ''; return /^\/(?!\/)[^\s\\]*$/.test(n) && n.length < 600 ? n : ''; })();
+  if (NEXT) { var nb = document.createElement('p'); nb.className = 'ap-small ap-muted'; nb.style.margin = '0 0 12px'; nb.textContent = /^\/check/.test(NEXT) ? 'Log in or create a free account, then you go straight back to your check, saved to your account.' : 'Log in, then you go straight back to the page you were on.'; var bx = document.querySelector('.ap-auth-box'); if (bx) bx.insertBefore(nb, bx.firstChild); }
+  if (KB.get('kb-token')) { if (KB.get('kb-role') === 'agent') location.href = '/agents/me'; else KB.rpc('kolaboro_portal', { p_token: KB.get('kb-token') }).then(function(d){ if (d.user) location.href = NEXT || '/portal'; }); }
   var sf = document.getElementById('sf'), se = document.getElementById('se'); KB.pwToggle(sf); KB.meter(sf.password, document.getElementById('pm'));
-  function mode(up){ document.getElementById('p-in').hidden = up; document.getElementById('p-up').hidden = !up; document.getElementById('t-in').setAttribute('aria-selected', !up); document.getElementById('t-up').setAttribute('aria-selected', up); (up ? sf.name : f.email).focus(); if ((location.hash === '#signup') !== up) history.replaceState(null, '', up ? '#signup' : location.pathname); }
+  function mode(up){ document.getElementById('p-in').hidden = up; document.getElementById('p-up').hidden = !up; document.getElementById('t-in').setAttribute('aria-selected', !up); document.getElementById('t-up').setAttribute('aria-selected', up); (up ? sf.name : f.email).focus(); if ((location.hash === '#signup') !== up) history.replaceState(null, '', location.pathname + location.search + (up ? '#signup' : '')); }
   document.getElementById('t-in').onclick = function(){ mode(false); }; document.getElementById('t-up').onclick = function(){ mode(true); };
   document.getElementById('go-up').onclick = function(e){ e.preventDefault(); mode(true); };
   if (location.hash === '#signup') mode(true);
@@ -64,7 +67,7 @@ var KB = (function(){
     try { at = JSON.parse(localStorage.getItem('kb-attr') || '{}') || {}; } catch (x) {}
     KB.rpc('kolaboro_signup_free', { p_email: sf.email.value.trim(), p_password: sf.password.value, p_name: sf.name.value.trim(), p_country: sf.country.value.trim() || null, p_src: at.src || at.utm_source || null, p_landing: at.land || null }).then(function(d){
       b.disabled = false; b.textContent = 'Create account';
-      if (d && d.token) { KB.del('kb-token-as'); KB.set('kb-token', d.token); KB.set('kb-role', 'buyer'); try { if (window.gtag) gtag('event', 'sign_up', { method: 'email' }); } catch (x) {} location.href = '/portal?welcome=free'; return; }
+      if (d && d.token) { KB.del('kb-token-as'); KB.set('kb-token', d.token); KB.set('kb-role', 'buyer'); try { if (window.gtag) gtag('event', 'sign_up', { method: 'email' }); } catch (x) {} location.href = NEXT || '/portal?welcome=free'; return; }
       var er = d && (d.error || d.code);
       se.textContent = er === 'exists' ? 'There is already an account with this email. Log in instead.' : er === 'email' ? 'Check your email address.' : er === 'password' ? 'Use at least 8 characters for the password.' : er === 'busy' ? 'Too many sign-ups right now. Try again in a few minutes.' : er === 'PGRST202' ? 'Free accounts open in a few hours. Meanwhile, start with a free desk review on /check.' : 'Could not create the account. Try again.';
       if (window.KFE && (er === 'email' || er === 'password')) { se.textContent = ''; KFE.err(er === 'email' ? sf.email : sf.password, er === 'email' ? 'Check your email address.' : 'Use at least 8 characters for the password.'); }
@@ -79,7 +82,7 @@ var KB = (function(){
   f.addEventListener('submit', function(ev){
     ev.preventDefault(); e.textContent = ''; e.style.color = ''; var b = f.querySelector('.ap-btn'); if (b.disabled) return; b.disabled = true; b.textContent = 'Logging in…';
     KB.rpc('kolaboro_login', { p_email: f.email.value.trim(), p_password: f.password.value }).then(function(d){
-      if (d && d.token) { b.textContent = 'Opening your portal…'; KB.del('kb-token-as'); KB.set('kb-token', d.token); KB.set('kb-role', d.role || 'buyer'); try { if (window.gtag) gtag('event', 'login', { method: 'email' }); } catch (x) {} location.href = d.role === 'agent' ? '/agents/me' : '/portal'; return; }
+      if (d && d.token) { b.textContent = 'Opening your portal…'; KB.del('kb-token-as'); KB.set('kb-token', d.token); KB.set('kb-role', d.role || 'buyer'); try { if (window.gtag) gtag('event', 'login', { method: 'email' }); } catch (x) {} location.href = d.role === 'agent' ? '/agents/me' : (NEXT || '/portal'); return; }
       b.disabled = false; b.textContent = 'Log in';
       e.textContent = d && d.error === 'locked' ? 'Too many attempts. Try again in an hour, or email us.' : d && d.code && !d.error ? 'Log-in is not available right now. Try again in a few minutes.' : 'Wrong email or password.';
     }).catch(function(){ b.disabled = false; b.textContent = 'Log in'; e.textContent = 'Could not reach the server. Check your connection and try again.'; });

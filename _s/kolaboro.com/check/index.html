@@ -56,14 +56,14 @@
 .cl li{margin-bottom:8px}.cl li span{display:block;font-size:.88rem;margin-top:2px;line-height:1.45;overflow-wrap:anywhere}.sq{margin:8px 0 0;font-size:.9rem;line-height:1.6;overflow-wrap:anywhere}
 .qline{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;background:var(--ok-bg);border-radius:12px;padding:10px 14px;margin-top:14px;font-size:.92rem}.qline b{color:var(--ok)}.qline details{flex-basis:100%}.qline summary{cursor:pointer;font-size:.86rem}.qline ul{margin:6px 0 0;font-size:.86rem}
 .sigl{font-size:.82rem;margin-top:6px;overflow-wrap:anywhere}.sigl button{font:inherit;text-decoration:underline;background:none;border:0;padding:0;color:inherit;cursor:pointer}</style>
-<section class="phero tight"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / Check a project</p><h1>Check a project before you pay a cent.</h1><p class="lead">Paste its website: in about a minute you see what the developer promises and what to verify. Free, no card, no email.</p></div></section>
+<section class="phero tight"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / Check a project</p><h1>Check a project before you pay a cent.</h1><p class="lead">Paste its website, its name or a permit number: you see what the developer promises, what the official registers say, and what to verify. Free, no card, no email.</p></div></section>
 <section class="sec" id="analyze"><div class="wrap">
   <div class="az" id="az">
     <div class="az-step on" id="az-1">
       <p class="az-k">Free desk review · about a minute</p>
-      <h2>Paste the project's website</h2>
-      <p class="lead">Our research agent reads what the developer promises and tells you exactly what to verify before you pay.</p>
-      <form id="az-f1" class="qform light" data-nosubmit><input id="az-url" name="url" type="text" inputmode="url" autocomplete="url" autocapitalize="off" spellcheck="false" enterkeyhint="go" placeholder="e.g. the developer's page for the villa" aria-label="Project website"><button class="btn btn-hi" type="submit">Analyse this project</button></form>
+      <h2>Paste a project website, name or permit number</h2>
+      <p class="lead">A website gets the desk review: our research agent reads what the developer promises and tells you what to verify. Every input is also looked up live on the official registers we can query, with links to the source and a sealed copy of each answer.</p>
+      <form id="az-f1" class="qform light" data-nosubmit><input id="az-url" name="url" type="text" inputmode="url" autocomplete="url" autocapitalize="off" spellcheck="false" enterkeyhint="go" placeholder="Website, project name or permit number" aria-label="Project website, name or permit number"><button class="btn btn-hi" type="submit">Check this project</button></form>
       <p class="fe" id="az-e1" role="alert"></p>
     </div>
     <div class="az-step" id="az-2">
@@ -241,6 +241,7 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   window.addEventListener('scroll', function(){ b.classList.toggle('on', window.scrollY > window.innerHeight * 1.5); }, { passive: true });
 })();
 </script>
+<script src="/k/cycle.js?v=c7a1"></script>
 <script>
 (function(){
   var $ = function(i){ return document.getElementById(i); };
@@ -253,12 +254,12 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   function esc(s){ return String(s == null ? '' : s).replace(/[&<>"]/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;' }[c]; }); }
   function knownEmail(){ var e = ($('az-email') && $('az-email').value.trim()) || ($('az-cpe') && $('az-cpe').value.trim()) || ''; if (!e) try { e = localStorage.getItem('kb-desk-email') || ''; } catch (x) {} return e; }
   function norm(v){ v = v.trim(); if (!v) return ''; if (!/^https?:\/\//i.test(v)) v = 'https://' + v; try { var u = new URL(v); return /\./.test(u.hostname) ? u.toString() : ''; } catch (e) { return ''; } }
-  function step1(){ var v = norm($('az-url').value); if (!v) { $('az-e1').textContent = 'Paste the full website address of the project.'; return; }
-    url = v; try { localStorage.setItem('kb-desk-url', v); } catch(x){} $('az-e1').textContent = ''; $('az-host').textContent = new URL(url).hostname.replace(/^www\./, ''); ev('desk_url'); run(''); }
+  function step1(){ var raw = $('az-url').value, v = norm(raw); if (!v) { if (window.KBC7 && KBC7.only(raw)) { $('az-e1').textContent = ''; return; } $('az-e1').textContent = 'Type at least 3 characters: a website, a project name or a permit number.'; return; }
+    url = v; if (window.KBC7) KBC7.start(raw, v); try { localStorage.setItem('kb-desk-url', v); } catch(x){} $('az-e1').textContent = ''; $('az-host').textContent = new URL(url).hostname.replace(/^www\./, ''); ev('desk_url'); run(''); }
   $('az-f1').addEventListener('submit', step1);
   $('az-url').addEventListener('input', function(){ if ($('az-e1').textContent && !$('az-e1').querySelector('a')) $('az-e1').textContent = ''; });
   document.addEventListener('click', function(e){ if (e.target.closest && e.target.closest('[data-show-start]')) $('start').hidden = false; });
-  var qs = new URLSearchParams(location.search); if (qs.get('url')) { $('az-url').value = qs.get('url'); step1(); } else if (qs.get('q')) { $('az-url').value = ''; $('az-url').placeholder = 'Website of ' + qs.get('q').slice(0, 40); $('az-e1').innerHTML = 'We read the developer\'s own website, so paste its address above. Only have the name? <a href="#start" data-show-start>Send it to us</a> and we find it for you.'; $('az-url').focus(); }
+  var qs = new URLSearchParams(location.search); if (qs.get('url')) { $('az-url').value = qs.get('url'); step1(); } else if (qs.get('q') && window.KBC7) { $('az-url').value = qs.get('q').slice(0, 300); step1(); } else if (qs.get('q')) { $('az-url').value = ''; $('az-url').placeholder = 'Website of ' + qs.get('q').slice(0, 40); $('az-e1').innerHTML = 'We read the developer\'s own website, so paste its address above. Only have the name? <a href="#start" data-show-start>Send it to us</a> and we find it for you.'; $('az-url').focus(); }
   function save(email, note){ if (!email) return; try { fetch(SB, { method: 'POST', headers: { apikey: KEY, Authorization: 'Bearer ' + KEY, 'Content-Type': 'application/json' },
     body: JSON.stringify({ p_name: 'Desk review request', p_email: email, p_country: '', p_phone: '', p_who: 'buyer | desk review', p_bring: note.slice(0, 4000), p_learn: url.slice(0, 300), p_week: '', p_lang: 'en', p_source: 'yc-desk | ' + location.pathname, p_plan: 'yc-desk' }) }); } catch (e) {} }
   // live desk review: /api/x/b/review streams one event per real step (Server-Sent Events over a POST); /api/kb/analyze is the fallback
@@ -340,10 +341,10 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
     $('az-first').textContent = 'Starting…'; var t0 = Date.now(), el = setInterval(function(){ var f = $('az-first'); if (f) f.textContent = 'Reviewing ' + new URL(url).hostname.replace(/^www\./, '') + ' · ' + Math.round((Date.now() - t0) / 1000) + ' s'; }, 1000);
     streamReview(email).catch(function(e){ if (e && e.message === 'nostream') return legacyReview(email); throw e; })
       .then(function(x){ clearInterval(el); var s = x.status, d = x.d;
-        if (s !== 200 || !d.report) { render_err(d.error, d); save(email, 'Desk review failed: ' + (d.error || s)); if (!email) { copyBox('Desk review not read automatically (' + (d.error || s) + '): ' + url); r29pos(); } return; }
+        if (s !== 200 || !d.report) { render_err(d.error, d); if (window.KBC7) KBC7.after(url, null); save(email, 'Desk review failed: ' + (d.error || s)); if (!email) { copyBox('Desk review not read automatically (' + (d.error || s) + '): ' + url); r29pos(); } return; }
         save(email, 'Desk review: ' + (d.report.summary || '') + ' | attention: ' + (d.report.attention || ''));
-        setTimeout(function(){ render(d); if (d.not_property || d.report.page_kind === 'not_real_estate') return; tools(); if (!email) copyBox(d.report.summary); }, 900);
-      }).catch(function(){ clearInterval(el); render_err('network'); save(email, 'Desk review failed: network'); if (!email) { copyBox('Desk review failed (network): ' + url); r29pos(); } });
+        setTimeout(function(){ render(d); if (window.KBC7) KBC7.after(url, d); if (d.not_property || d.report.page_kind === 'not_real_estate') return; tools(); if (!email) copyBox(d.report.summary); }, 900);
+      }).catch(function(){ clearInterval(el); render_err('network'); if (window.KBC7) KBC7.after(url, null); save(email, 'Desk review failed: network'); if (!email) { copyBox('Desk review failed (network): ' + url); r29pos(); } });
    }
   $('az-f2').addEventListener('submit', function(){ var em = $('az-email').value.trim(); if (/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)) run(em); });
   function copyBox(sum){
