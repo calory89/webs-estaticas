@@ -1,14 +1,14 @@
 {
  "version": "kolaboro-data-contracts-1",
- "generated_at": "2026-11-05T06:58:14Z",
- "run_url": "https://github.com/calory89/webs-estaticas/actions/runs/41983932881",
+ "generated_at": "2026-11-05T07:18:59Z",
+ "run_url": "https://github.com/calory89/webs-estaticas/actions/runs/41986339071",
  "validator": "python-jsonschema 4.26.0 (Draft 2020-12)",
  "summary": {
-  "files_pass": 68,
+  "files_pass": 67,
   "files_fail": 0,
-  "files_no_contract": 0,
-  "api_pass": 65,
-  "api_fail": 0,
+  "files_no_contract": 1,
+  "api_pass": 64,
+  "api_fail": 1,
   "spec_valid": true,
   "spec_validator": "openapi-spec-validator 0.9.0",
   "spec_error": null
@@ -228,6 +228,22 @@
    "dataset": "market-points"
   },
   {
+   "path": "changes.json",
+   "status": "not_live",
+   "errors": [
+    "in the live branch but not served yet (a deploy is probably in progress)"
+   ],
+   "dataset": "changes"
+  },
+  {
+   "path": "digest.json",
+   "status": "not_live",
+   "errors": [
+    "in the live branch but not served yet (a deploy is probably in progress)"
+   ],
+   "dataset": "digest"
+  },
+  {
    "path": "mystery-shopper.json",
    "status": "pass",
    "errors": [],
@@ -257,10 +273,10 @@
   },
   {
    "dataset": "coast-tiles",
-   "path": "coast/ (648 files)",
-   "status": "pass",
+   "path": "coast/ (36 files)",
+   "status": "no_contract",
    "errors": [],
-   "contract": "#/$defs/coast-tiles-file"
+   "contract": null
   },
   {
    "path": "mangroves/-135_-45.bin",
@@ -508,28 +524,12 @@
    "dataset": "property-tests"
   },
   {
-   "path": "changes.json",
+   "path": "shipping.json",
    "status": "not_live",
    "errors": [
     "in the live branch but not served yet (a deploy is probably in progress)"
    ],
-   "dataset": "undescribed-changes-json"
-  },
-  {
-   "path": "digest.json",
-   "status": "not_live",
-   "errors": [
-    "in the live branch but not served yet (a deploy is probably in progress)"
-   ],
-   "dataset": "undescribed-digest-json"
-  },
-  {
-   "path": "page-weight.json",
-   "status": "not_live",
-   "errors": [
-    "in the live branch but not served yet (a deploy is probably in progress)"
-   ],
-   "dataset": "undescribed-page-weight-json"
+   "dataset": "shipping"
   },
   {
    "path": "roadmap-sync.json",
@@ -537,15 +537,15 @@
    "errors": [
     "in the live branch but not served yet (a deploy is probably in progress)"
    ],
-   "dataset": "undescribed-roadmap-sync-json"
+   "dataset": "roadmap-sync"
   },
   {
-   "path": "shipping.json",
+   "path": "page-weight.json",
    "status": "not_live",
    "errors": [
     "in the live branch but not served yet (a deploy is probably in progress)"
    ],
-   "dataset": "undescribed-shipping-json"
+   "dataset": "page-weight"
   },
   {
    "path": "visual-tests.json",
@@ -553,7 +553,23 @@
    "errors": [
     "in the live branch but not served yet (a deploy is probably in progress)"
    ],
-   "dataset": "undescribed-visual-tests-json"
+   "dataset": "visual-tests"
+  },
+  {
+   "path": "findings-by-project.json",
+   "status": "not_live",
+   "errors": [
+    "in the live branch but not served yet (a deploy is probably in progress)"
+   ],
+   "dataset": "undescribed-findings-by-project-json"
+  },
+  {
+   "path": "live-findings.json",
+   "status": "not_live",
+   "errors": [
+    "in the live branch but not served yet (a deploy is probably in progress)"
+   ],
+   "dataset": "undescribed-live-findings-json"
   }
  ],
  "api": [
@@ -561,7 +577,7 @@
    "path": "/api/open",
    "url": "https://kolaboro.com/api/open",
    "http": 200,
-   "ms": 70,
+   "ms": 86,
    "status": "pass",
    "errors": []
   },
@@ -569,7 +585,7 @@
    "path": "/api/open/stats",
    "url": "https://kolaboro.com/api/open/stats",
    "http": 200,
-   "ms": 114,
+   "ms": 128,
    "status": "pass",
    "errors": []
   },
@@ -577,7 +593,7 @@
    "path": "/api/open/summary",
    "url": "https://kolaboro.com/api/open/summary",
    "http": 200,
-   "ms": 61,
+   "ms": 108,
    "status": "pass",
    "errors": []
   },
@@ -585,7 +601,7 @@
    "path": "/api/open/projects",
    "url": "https://kolaboro.com/api/open/projects?market=Bali&limit=5",
    "http": 200,
-   "ms": 85,
+   "ms": 168,
    "status": "pass",
    "errors": []
   },
@@ -593,7 +609,7 @@
    "path": "/api/open/projects.csv",
    "url": "https://kolaboro.com/api/open/projects.csv?market=Bali&limit=5",
    "http": 200,
-   "ms": 65,
+   "ms": 80,
    "status": "pass",
    "errors": []
   },
@@ -601,7 +617,7 @@
    "path": "/api/open/projects/{id}",
    "url": "https://kolaboro.com/api/open/projects/BALI-014",
    "http": 200,
-   "ms": 60,
+   "ms": 138,
    "status": "pass",
    "errors": []
   },
@@ -609,7 +625,7 @@
    "path": "/api/open/projects/{id}/at/{day}",
    "url": "https://kolaboro.com/api/open/projects/BALI-014/at/2026-11-04",
    "http": 200,
-   "ms": 241,
+   "ms": 648,
    "status": "pass",
    "errors": []
   },
@@ -617,7 +633,7 @@
    "path": "/api/open/markets",
    "url": "https://kolaboro.com/api/open/markets",
    "http": 200,
-   "ms": 133,
+   "ms": 100,
    "status": "pass",
    "errors": []
   },
@@ -625,7 +641,7 @@
    "path": "/api/open/markets.csv",
    "url": "https://kolaboro.com/api/open/markets.csv",
    "http": 200,
-   "ms": 83,
+   "ms": 98,
    "status": "pass",
    "errors": []
   },
@@ -633,7 +649,7 @@
    "path": "/api/open/changes",
    "url": "https://kolaboro.com/api/open/changes?since=2026-11-01",
    "http": 200,
-   "ms": 136,
+   "ms": 83,
    "status": "pass",
    "errors": []
   },
@@ -641,7 +657,7 @@
    "path": "/api/open/freshness",
    "url": "https://kolaboro.com/api/open/freshness",
    "http": 200,
-   "ms": 75,
+   "ms": 67,
    "status": "pass",
    "errors": []
   },
@@ -649,7 +665,7 @@
    "path": "/api/open/evals",
    "url": "https://kolaboro.com/api/open/evals",
    "http": 200,
-   "ms": 519,
+   "ms": 489,
    "status": "pass",
    "errors": []
   },
@@ -657,7 +673,7 @@
    "path": "/api/open/uptime",
    "url": "https://kolaboro.com/api/open/uptime",
    "http": 200,
-   "ms": 215,
+   "ms": 513,
    "status": "pass",
    "errors": []
   },
@@ -665,7 +681,7 @@
    "path": "/api/open/build",
    "url": "https://kolaboro.com/api/open/build",
    "http": 200,
-   "ms": 115,
+   "ms": 144,
    "status": "pass",
    "errors": []
   },
@@ -673,7 +689,7 @@
    "path": "/api/open/ai-spend",
    "url": "https://kolaboro.com/api/open/ai-spend",
    "http": 200,
-   "ms": 196,
+   "ms": 488,
    "status": "pass",
    "errors": []
   },
@@ -681,7 +697,7 @@
    "path": "/api/open/security",
    "url": "https://kolaboro.com/api/open/security",
    "http": 200,
-   "ms": 216,
+   "ms": 511,
    "status": "pass",
    "errors": []
   },
@@ -689,7 +705,7 @@
    "path": "/api/open/pdf/{sha256}",
    "url": "https://kolaboro.com/api/open/pdf/0000000000000000000000000000000000000000000000000000000000000000",
    "http": 200,
-   "ms": 485,
+   "ms": 541,
    "status": "pass",
    "errors": []
   },
@@ -697,7 +713,7 @@
    "path": "/api/open/badge/{id}.svg",
    "url": "https://kolaboro.com/api/open/badge/BALI-014.svg",
    "http": 200,
-   "ms": 53,
+   "ms": 55,
    "status": "pass",
    "errors": []
   },
@@ -705,7 +721,7 @@
    "path": "/api/open/openapi.json",
    "url": "https://kolaboro.com/api/open/openapi.json",
    "http": 200,
-   "ms": 44,
+   "ms": 98,
    "status": "pass",
    "errors": []
   },
@@ -713,15 +729,19 @@
    "path": "/api/open/log",
    "url": "https://kolaboro.com/api/open/log",
    "http": 200,
-   "ms": 476,
-   "status": "pass",
-   "errors": []
+   "ms": 209,
+   "status": "fail",
+   "errors": [
+    "/heads/0/rekor_index: None is not of type 'number'",
+    "/heads/0/rekor_time: None is not of type 'number'",
+    "/heads/0/rekor_uuid: None is not of type 'string'"
+   ]
   },
   {
    "path": "/api/open/log-input",
    "url": "https://kolaboro.com/api/open/log-input",
    "http": 200,
-   "ms": 66,
+   "ms": 101,
    "status": "pass",
    "errors": []
   },
@@ -729,7 +749,7 @@
    "path": "/api/open/checkpoint",
    "url": "https://kolaboro.com/api/open/checkpoint",
    "http": 200,
-   "ms": 200,
+   "ms": 550,
    "status": "pass",
    "errors": []
   },
@@ -737,7 +757,7 @@
    "path": "/api/open/log-proof",
    "url": "https://kolaboro.com/api/open/log-proof?day=2026-11-04",
    "http": 200,
-   "ms": 546,
+   "ms": 532,
    "status": "pass",
    "errors": []
   },
@@ -745,7 +765,7 @@
    "path": "/api/open/log-consistency",
    "url": "https://kolaboro.com/api/open/log-consistency?first=1&second=2",
    "http": 200,
-   "ms": 466,
+   "ms": 238,
    "status": "pass",
    "errors": []
   },
@@ -753,7 +773,7 @@
    "path": "/api/open/proof/{id}",
    "url": "https://kolaboro.com/api/open/proof/BALI-014",
    "http": 200,
-   "ms": 74,
+   "ms": 83,
    "status": "pass",
    "errors": []
   },
@@ -761,7 +781,7 @@
    "path": "/api/open/receipt/{evidence_id}",
    "url": "https://kolaboro.com/api/open/receipt/1",
    "http": 404,
-   "ms": 230,
+   "ms": 222,
    "status": "pass",
    "errors": []
   },
@@ -769,7 +789,7 @@
    "path": "/feed.json",
    "url": "https://kolaboro.com/feed.json",
    "http": 200,
-   "ms": 67,
+   "ms": 60,
    "status": "pass",
    "errors": []
   },
@@ -777,7 +797,7 @@
    "path": "/feed.xml",
    "url": "https://kolaboro.com/feed.xml?market=Bali",
    "http": 200,
-   "ms": 63,
+   "ms": 64,
    "status": "pass",
    "errors": []
   },
@@ -785,7 +805,7 @@
    "path": "/feed/alerts.xml",
    "url": "https://kolaboro.com/feed/alerts.xml",
    "http": 200,
-   "ms": 76,
+   "ms": 47,
    "status": "pass",
    "errors": []
   },
@@ -793,7 +813,7 @@
    "path": "/api/x/z/feed",
    "url": "https://kolaboro.com/api/x/z/feed",
    "http": 200,
-   "ms": 58,
+   "ms": 76,
    "status": "pass",
    "errors": []
   },
@@ -801,7 +821,7 @@
    "path": "/api/x/z/feed/projects",
    "url": "https://kolaboro.com/api/x/z/feed/projects?limit=2",
    "http": 200,
-   "ms": 111,
+   "ms": 130,
    "status": "pass",
    "errors": []
   },
@@ -809,7 +829,7 @@
    "path": "/api/x/z/feed/changes",
    "url": "https://kolaboro.com/api/x/z/feed/changes?since=2026-11-01&limit=2",
    "http": 200,
-   "ms": 85,
+   "ms": 112,
    "status": "pass",
    "errors": []
   },
@@ -817,7 +837,7 @@
    "path": "/api/x/z/feed/status",
    "url": "https://kolaboro.com/api/x/z/feed/status",
    "http": 200,
-   "ms": 235,
+   "ms": 534,
    "status": "pass",
    "errors": []
   },
@@ -825,7 +845,7 @@
    "path": "/api/x/z/feed/schema.json",
    "url": "https://kolaboro.com/api/x/z/feed/schema.json",
    "http": 200,
-   "ms": 50,
+   "ms": 95,
    "status": "pass",
    "errors": []
   },
@@ -833,7 +853,7 @@
    "path": "/api/x/v",
    "url": "https://kolaboro.com/api/x/v",
    "http": 200,
-   "ms": 77,
+   "ms": 97,
    "status": "pass",
    "errors": []
   },
@@ -841,7 +861,7 @@
    "path": "/api/x/v/delays",
    "url": "https://kolaboro.com/api/x/v/delays?market=Bali",
    "http": 200,
-   "ms": 83,
+   "ms": 86,
    "status": "pass",
    "errors": []
   },
@@ -849,7 +869,7 @@
    "path": "/api/x/v/press",
    "url": "https://kolaboro.com/api/x/v/press",
    "http": 200,
-   "ms": 77,
+   "ms": 89,
    "status": "pass",
    "errors": []
   },
@@ -857,7 +877,7 @@
    "path": "/api/x/r/price-index",
    "url": "https://kolaboro.com/api/x/r/price-index?market=Bali",
    "http": 200,
-   "ms": 76,
+   "ms": 120,
    "status": "pass",
    "errors": []
   },
@@ -865,7 +885,7 @@
    "path": "/api/x/h/prices",
    "url": "https://kolaboro.com/api/x/h/prices",
    "http": 200,
-   "ms": 74,
+   "ms": 85,
    "status": "pass",
    "errors": []
   },
@@ -873,7 +893,7 @@
    "path": "/api/x/h/risk",
    "url": "https://kolaboro.com/api/x/h/risk",
    "http": 200,
-   "ms": 116,
+   "ms": 91,
    "status": "pass",
    "errors": []
   },
@@ -881,7 +901,7 @@
    "path": "/api/x/h/registers",
    "url": "https://kolaboro.com/api/x/h/registers",
    "http": 200,
-   "ms": 88,
+   "ms": 77,
    "status": "pass",
    "errors": []
   },
@@ -889,7 +909,7 @@
    "path": "/api/x/w/graph-global",
    "url": "https://kolaboro.com/api/x/w/graph-global",
    "http": 200,
-   "ms": 102,
+   "ms": 118,
    "status": "pass",
    "errors": []
   },
@@ -897,7 +917,7 @@
    "path": "/api/x/w/insolvency/watch",
    "url": "https://kolaboro.com/api/x/w/insolvency/watch",
    "http": 200,
-   "ms": 91,
+   "ms": 109,
    "status": "pass",
    "errors": []
   },
@@ -905,7 +925,7 @@
    "path": "/api/x/q/graph",
    "url": "https://kolaboro.com/api/x/q/graph",
    "http": 200,
-   "ms": 107,
+   "ms": 127,
    "status": "pass",
    "errors": []
   },
@@ -913,7 +933,7 @@
    "path": "/api/x/q/mystery-shopper",
    "url": "https://kolaboro.com/api/x/q/mystery-shopper",
    "http": 200,
-   "ms": 116,
+   "ms": 115,
    "status": "pass",
    "errors": []
   },
@@ -921,7 +941,7 @@
    "path": "/api/x/r/visual",
    "url": "https://kolaboro.com/api/x/r/visual",
    "http": 200,
-   "ms": 74,
+   "ms": 95,
    "status": "pass",
    "errors": []
   },
@@ -929,7 +949,7 @@
    "path": "/api/x/x/fx",
    "url": "https://kolaboro.com/api/x/x/fx?c=IDR,USD&from=2026-10-01",
    "http": 200,
-   "ms": 1055,
+   "ms": 81,
    "status": "pass",
    "errors": []
   },
@@ -937,7 +957,7 @@
    "path": "/api/x/d/project/{id}",
    "url": "https://kolaboro.com/api/x/d/project/BALI-014",
    "http": 200,
-   "ms": 78,
+   "ms": 108,
    "status": "pass",
    "errors": []
   },
@@ -945,7 +965,7 @@
    "path": "/api/x/h/project/{id}",
    "url": "https://kolaboro.com/api/x/h/project/BALI-014",
    "http": 200,
-   "ms": 89,
+   "ms": 114,
    "status": "pass",
    "errors": []
   },
@@ -953,7 +973,7 @@
    "path": "/api/x/q/graph/{id}",
    "url": "https://kolaboro.com/api/x/q/graph/BHX-001",
    "http": 200,
-   "ms": 82,
+   "ms": 87,
    "status": "pass",
    "errors": []
   },
@@ -961,7 +981,7 @@
    "path": "/api/x/w/graph-global/{id}",
    "url": "https://kolaboro.com/api/x/w/graph-global/BALI-014",
    "http": 200,
-   "ms": 72,
+   "ms": 93,
    "status": "pass",
    "errors": []
   },
@@ -969,7 +989,7 @@
    "path": "/api/x/w/insolvency/watch/{id}",
    "url": "https://kolaboro.com/api/x/w/insolvency/watch/BHX-001",
    "http": 200,
-   "ms": 65,
+   "ms": 97,
    "status": "pass",
    "errors": []
   },
@@ -977,7 +997,7 @@
    "path": "/api/x/r/visual/{id}",
    "url": "https://kolaboro.com/api/x/r/visual/CDS-014",
    "http": 200,
-   "ms": 93,
+   "ms": 95,
    "status": "pass",
    "errors": []
   },
@@ -985,7 +1005,7 @@
    "path": "/api/x/v/on-time",
    "url": "https://kolaboro.com/api/x/v/on-time?id=BALI-014",
    "http": 200,
-   "ms": 72,
+   "ms": 87,
    "status": "pass",
    "errors": []
   },
@@ -993,7 +1013,7 @@
    "path": "/api/x/y/promises",
    "url": "https://kolaboro.com/api/x/y/promises?id=BALI-001",
    "http": 200,
-   "ms": 73,
+   "ms": 103,
    "status": "pass",
    "errors": []
   },
@@ -1001,7 +1021,7 @@
    "path": "/api/x/t/reports",
    "url": "https://kolaboro.com/api/x/t/reports?project=BALI-014",
    "http": 200,
-   "ms": 314,
+   "ms": 594,
    "status": "pass",
    "errors": []
   },
@@ -1009,7 +1029,7 @@
    "path": "/api/x/p/hazards",
    "url": "https://kolaboro.com/api/x/p/hazards?lat=-8.638&lng=115.115",
    "http": 200,
-   "ms": 9062,
+   "ms": 91,
    "status": "pass",
    "errors": []
   },
@@ -1017,7 +1037,7 @@
    "path": "/api/x/u/climate",
    "url": "https://kolaboro.com/api/x/u/climate?lat=-8.638&lng=115.115",
    "http": 200,
-   "ms": 4595,
+   "ms": 88,
    "status": "pass",
    "errors": []
   },
@@ -1025,7 +1045,7 @@
    "path": "/api/x/u/protected",
    "url": "https://kolaboro.com/api/x/u/protected?lat=-8.638&lng=115.115",
    "http": 200,
-   "ms": 256,
+   "ms": 81,
    "status": "pass",
    "errors": []
   },
@@ -1033,7 +1053,7 @@
    "path": "/api/x/g/status",
    "url": "https://kolaboro.com/api/x/g/status",
    "http": 200,
-   "ms": 59,
+   "ms": 87,
    "status": "pass",
    "errors": []
   },
@@ -1041,7 +1061,7 @@
    "path": "/api/x/o/slo",
    "url": "https://kolaboro.com/api/x/o/slo",
    "http": 200,
-   "ms": 54,
+   "ms": 485,
    "status": "pass",
    "errors": []
   },
@@ -1049,7 +1069,7 @@
    "path": "/api/x/l/trust",
    "url": "https://kolaboro.com/api/x/l/trust",
    "http": 200,
-   "ms": 64,
+   "ms": 530,
    "status": "pass",
    "errors": []
   },
@@ -1057,7 +1077,7 @@
    "path": "/api/x/n",
    "url": "https://kolaboro.com/api/x/n",
    "http": 200,
-   "ms": 58,
+   "ms": 78,
    "status": "pass",
    "errors": []
   },
@@ -1065,7 +1085,7 @@
    "path": "/api/x/e/parquet-manifest",
    "url": "https://kolaboro.com/api/x/e/parquet-manifest",
    "http": 200,
-   "ms": 80,
+   "ms": 94,
    "status": "pass",
    "errors": []
   },
@@ -1073,7 +1093,7 @@
    "path": "/api/x/z/bundle/{sha256}",
    "url": "https://kolaboro.com/api/x/z/bundle/0000000000000000000000000000000000000000000000000000000000000000",
    "http": 200,
-   "ms": 320,
+   "ms": 927,
    "status": "pass",
    "errors": []
   }

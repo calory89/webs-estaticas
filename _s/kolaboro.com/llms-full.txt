@@ -1,6 +1,6 @@
 # Kolaboro: full guide for AI assistants
 
-Generated 2026-11-05T06:58:14Z by the Kolaboro data catalog job from https://kolaboro.com/data/catalog.json and https://kolaboro.com/docs/api/openapi.json. The short version is https://kolaboro.com/llms.txt.
+Generated 2026-11-05T07:18:59Z by the Kolaboro data catalog job from https://kolaboro.com/data/catalog.json and https://kolaboro.com/docs/api/openapi.json. The short version is https://kolaboro.com/llms.txt.
 
 ## What Kolaboro is
 Kolaboro trains local people, guided by an AI copilot, to verify off-plan property for overseas buyers before each payment: land title and permit checks, site visits with GPS-stamped photos timestamped in Bitcoin, computer-vision "plan vs reality" checks and weekly Sentinel-2 satellite watch. Buyers pay; developers never pay. Launching in Bali and recruiting the first local agents; desk research covers 878 off-plan projects in 144 markets and 76 countries (1 Nov 2026), 7,572 developer claims tested, each check rated by source (official register, independent source, developer only, contradicted, not published). An automated second check of 485 claims in 50 random projects found a 2.2% error rate among checkable claims (see /corrections/). Pre-purchase check €490, construction monitoring €99 a month. (from https://kolaboro.com/llms.txt)
@@ -22,8 +22,8 @@ Advertised prices, yields and dates are what developers advertise, not verified 
 - Answers of /api/open/* and the partner feed are signed: x-kolaboro-signature is base64 Ed25519 over "kolaboro-sig-v1\n" + the SHA-256 hex of the body; key id in x-kolaboro-key-id; public keys at https://kolaboro.com/.well-known/kolaboro-keys.json. x-kolaboro-dataset-sha256 names the dataset file an answer came from.
 - Every day a public log head is recorded (https://kolaboro.com/log), timestamped in Bitcoin and in Sigstore Rekor; GET /api/open/log, /api/open/checkpoint and the proof endpoints let anyone check it.
 
-## Datasets (55, 723 files, 14.6 MB)
-Catalog: https://kolaboro.com/data/ (DCAT-AP: https://kolaboro.com/data/catalog.jsonld). Contracts pass for 68 of 68 files; datasets late at measurement: 1. Freshness now: GET https://kolaboro.com/api/x/data/freshness
+## Datasets (57, 113 files, 12.2 MB)
+Catalog: https://kolaboro.com/data/ (DCAT-AP: https://kolaboro.com/data/catalog.jsonld). Contracts pass for 67 of 67 files; datasets late at measurement: 1. Freshness now: GET https://kolaboro.com/api/x/data/freshness
 
 ### Data about projects and markets
 
@@ -235,6 +235,20 @@ Market points for the map (id: market-points)
   Updates: daily 02:23 UTC and after each research run. Last updated: 2026-11-05T06:39:36Z. Freshness target 2 days.
   Schema: https://kolaboro.com/api/x/data/schema/market-points.json
 
+Change heatmap (id: changes)
+  URL: https://kolaboro.com/data/changes.json
+  Day by day, the last published bali-cases.json of each day compared with the previous day's copy: new projects, page edits (page fingerprint changed), price band moves, date moves and register changes, counted per market over rolling windows. A project counts once per kind and market in a window.
+  Size 0 bytes; not a table; SHA-256 None; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: weekly, Monday 06:23 UTC, and when the digest code changes. Last updated: 2026-11-05T07:09:20Z. Freshness target 9 days.
+  Schema: https://kolaboro.com/api/x/data/schema/changes.json
+
+Weekly market digest (id: digest)
+  URL: https://kolaboro.com/data/digest.json
+  Per ISO week: new projects, changes and alerts by market, built from the public bali-cases, promises, register-checks and stalled-sites files. An AI model may draft only the intro paragraph, and code checks every number in it.
+  Size 0 bytes; not a table; SHA-256 None; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: weekly, Monday 06:23 UTC, and when the digest code changes. Last updated: 2026-11-05T07:09:20Z. Freshness target 9 days.
+  Schema: https://kolaboro.com/api/x/data/schema/digest.json
+
 Mystery shopper programme (id: mystery-shopper)
   URL: https://kolaboro.com/data/mystery-shopper.json
   Questionnaire, measurement rules and status of the mystery shopper programme. It has not started; the file says why.
@@ -342,13 +356,41 @@ Property-based tests of the scoring rules (id: property-tests)
   Updates: published when the open-source test suite is run. Last updated: 2026-11-03T21:03:30Z.
   Schema: https://kolaboro.com/api/x/data/schema/property-tests.json
 
+Shipping log (id: shipping)
+  URL: https://kolaboro.com/data/shipping.json
+  Ships (commits by people, or by Claude working for one) and data updates per UTC day from the git history of the live branch, streaks, engineering metrics and day summaries written by an AI model and checked in code.
+  Size 0 bytes; not a table; SHA-256 None; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: hourly at minute 19. Last updated: 2026-11-05T07:03:27Z. Freshness target 2 hours.
+  Schema: https://kolaboro.com/api/x/data/schema/shipping.json
+
+Roadmap items verified live (id: roadmap-sync)
+  URL: https://kolaboro.com/data/roadmap-sync.json
+  Roadmap items that link to the live page delivering them. An item counts as shipped only when the page answers HTTP 200, its canonical link is that page and its HTML contains the marker text.
+  Size 0 bytes; not a table; SHA-256 None; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: hourly at minute 19 (shipping log job). Last updated: 2026-11-05T07:03:27Z. Freshness target 2 hours.
+  Schema: https://kolaboro.com/api/x/data/schema/roadmap-sync.json
+
+Page weight (id: page-weight)
+  URL: https://kolaboro.com/data/page-weight.json
+  Bytes transferred for one cold load of key pages (compressed size plus headers, measured in Chrome), first-party bytes split by resource type, against page-weight budgets.
+  Size 0 bytes; not a table; SHA-256 None; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: daily 06:41 UTC. Last updated: 2026-11-05T07:04:15Z. Freshness target 2 days.
+  Schema: https://kolaboro.com/api/x/data/schema/page-weight.json
+
+Visual regression tests (id: visual-tests)
+  URL: https://kolaboro.com/data/visual-tests.json
+  Key pages captured in Chromium at 390 and 1440 px and compared pixel by pixel with the previous run, with the share of changed pixels per page.
+  Size 0 bytes; not a table; SHA-256 None; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: daily 06:41 UTC. Last updated: 2026-11-05T07:04:15Z. Freshness target 2 days.
+  Schema: https://kolaboro.com/api/x/data/schema/visual-tests.json
+
 ### Map tiles used by the checks
 
 Coastline outline tiles (id: coast-tiles)
-  URL: https://kolaboro.com/data/coast/ (648 files)
+  URL: https://kolaboro.com/data/coast/ (36 files)
   Natural Earth 1:10m land outline (public domain, via world-atlas 2.0.2) cut into 10 degree tiles, quantised and delta-encoded, used by the hazards check only when no OpenStreetMap server answers. Every tile exists; open-ocean tiles are empty.
-  Size 2.4 MB; 648 tiles; SHA-256 7b883981ff3b8a0308928129c6fc86ae562c40a6b99299107b80c2b0a36264df; licence Public domain (Natural Earth).
-  Updates: static, built once. Last updated: 2026-11-04T06:11:13Z.
+  Size 0 bytes; 36 tiles; SHA-256 31364073345c9ad1a97b158dd6482199b5fde71da754a574e4d64ec1632381ee; licence Public domain (Natural Earth).
+  Updates: static, built once. Last updated: 2026-11-05T07:18:43Z.
   Schema: https://kolaboro.com/api/x/data/schema/coast-tiles.json
 
 Mangrove index tiles (id: mangrove-tiles)
@@ -375,41 +417,17 @@ Sample photo progress analysis (id: progress-sample)
 
 ### Not yet described
 
-changes.json (id: undescribed-changes-json)
-  URL: https://kolaboro.com/data/changes.json
+findings-by-project.json (id: undescribed-findings-by-project-json)
+  URL: https://kolaboro.com/data/findings-by-project.json
   Published under /data/ but not yet described in the catalog registry.
   Size 0 bytes; not a table; SHA-256 None; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: unknown. Last updated: 2026-11-05T06:49:34Z.
+  Updates: unknown. Last updated: 2026-11-05T07:16:39Z.
 
-digest.json (id: undescribed-digest-json)
-  URL: https://kolaboro.com/data/digest.json
+live-findings.json (id: undescribed-live-findings-json)
+  URL: https://kolaboro.com/data/live-findings.json
   Published under /data/ but not yet described in the catalog registry.
   Size 0 bytes; not a table; SHA-256 None; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: unknown. Last updated: 2026-11-05T06:49:34Z.
-
-page-weight.json (id: undescribed-page-weight-json)
-  URL: https://kolaboro.com/data/page-weight.json
-  Published under /data/ but not yet described in the catalog registry.
-  Size 0 bytes; not a table; SHA-256 None; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: unknown. Last updated: 2026-11-05T06:54:36Z.
-
-roadmap-sync.json (id: undescribed-roadmap-sync-json)
-  URL: https://kolaboro.com/data/roadmap-sync.json
-  Published under /data/ but not yet described in the catalog registry.
-  Size 0 bytes; not a table; SHA-256 None; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: unknown. Last updated: 2026-11-05T06:51:44Z.
-
-shipping.json (id: undescribed-shipping-json)
-  URL: https://kolaboro.com/data/shipping.json
-  Published under /data/ but not yet described in the catalog registry.
-  Size 0 bytes; not a table; SHA-256 None; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: unknown. Last updated: 2026-11-05T06:51:44Z.
-
-visual-tests.json (id: undescribed-visual-tests-json)
-  URL: https://kolaboro.com/data/visual-tests.json
-  Published under /data/ but not yet described in the catalog registry.
-  Size 0 bytes; not a table; SHA-256 None; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: unknown. Last updated: 2026-11-05T06:54:36Z.
+  Updates: unknown. Last updated: 2026-11-05T07:16:39Z.
 
 ## API (65 operations)
 OpenAPI 3.1: https://kolaboro.com/docs/api/openapi.json. Try any call in the browser: https://kolaboro.com/docs/api/explorer/. Base URL https://kolaboro.com, all GET.
