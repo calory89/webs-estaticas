@@ -178,7 +178,11 @@ def valid(fact, v, q):
         if not isinstance(v, dict) or not isinstance(v.get('amount'), (int, float)) or v['amount'] <= 0:
             return None
         cur = str(v.get('currency') or '').upper()[:3]
-        return {'amount': float(v['amount']), 'currency': cur} if re.fullmatch(r'[A-Z]{3}', cur) and has_amount(q, v['amount']) else None
+        if not re.fullmatch(r'[A-Z]{3}', cur) or not has_amount(q, v['amount']):
+            return None
+        if cur in agent.FX and v['amount'] * agent.FX[cur] < 10000:
+            return None   # under 10,000 USD is not a unit price (a fee, an instalment or a misread): not used
+        return {'amount': float(v['amount']), 'currency': cur}
     if fact in ('deposit_pct', 'construction_pct', 'yield_pct'):
         ok = isinstance(v, (int, float)) and 0 < v <= 100 and has_pct(q, v) and re.search(KW[fact], q, re.I)
         return float(v) if ok else None
@@ -248,7 +252,7 @@ def usd(p):
 
 def band(p):
     b = agent._band({'price_from': p['amount'], 'currency': p['currency']})
-    return None if b == 'Price not stated' else b
+    return None if b == 'Price not stated' else b.replace('Under ', 'under ')
 
 
 MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
