@@ -2,7 +2,7 @@
 """Submit new or changed kolaboro.com URLs to IndexNow (api.indexnow.org shares them with Bing, Yandex, Naver, Seznam and Yep).
 
 Reads every URL and lastmod from https://kolaboro.com/sitemap_index.xml, compares with the last submission recorded in
-https://kolaboro.com/data/indexnow.json and submits only URLs that are new or whose lastmod changed (max 10,000 per call).
+https://kolaboro.com/data/indexnow.json and submits only URLs that are new or whose lastmod changed (5,000 per call; the protocol allows 10,000).
 The key file is served by the worker at https://kolaboro.com/<key>.txt. Google does not take IndexNow; it reads the sitemaps.
 Usage: indexnow.py <out_dir>   writes <out_dir>/indexnow.json (unchanged state is not rewritten: exit code 3 = nothing to publish).
 """
@@ -30,8 +30,8 @@ def main(out):
     if not todo:
         print('nothing new'); sys.exit(3)
     status, done = None, []
-    for i in range(0, len(todo), 10000):
-        chunk = todo[i:i + 10000]
+    for i in range(0, len(todo), 5000):
+        chunk = todo[i:i + 5000]
         body = json.dumps({'host': 'kolaboro.com', 'key': KEY, 'keyLocation': BASE + '/' + KEY + '.txt', 'urlList': chunk}).encode()
         req = urllib.request.Request('https://api.indexnow.org/indexnow', data=body, method='POST', headers={'content-type': 'application/json; charset=utf-8', 'user-agent': UA})
         try:
