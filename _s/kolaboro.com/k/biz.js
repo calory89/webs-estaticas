@@ -77,8 +77,8 @@
     if (!force && X.at && Date.now() - X.at < 60000) return Promise.resolve();
     X.at = Date.now();
     var safe = function(p){ return p.then(function(d){ return d && !d.error ? d : null; }, function(){ return null; }); };
-    return Promise.all([safe(ops('overview')), safe(A.rpc('kolaboro_traffic', { p_key: key(), p_days: DAYS })), safe(A.rpc('kolaboro_admin_health', { p_key: key() }))]).then(function(r){
-      X.ops = r[0] || X.ops; X.traffic = r[1] || X.traffic; X.trafficDays = r[1] ? DAYS : X.trafficDays; X.health = r[2] || X.health;
+    return Promise.all([safe(ops('overview')), safe(A.rpc('kolaboro_traffic', { p_key: key(), p_days: DAYS })), safe(A.rpc('kolaboro_admin_health', { p_key: key() })), safe(A.rpc('kolaboro_public_stats', {}))]).then(function(r){
+      X.ops = r[0] || X.ops; X.traffic = r[1] || X.traffic; X.trafficDays = r[1] ? DAYS : X.trafficDays; X.health = r[2] || X.health; X.runs = r[3] || X.runs;
     });
   }
 
@@ -141,11 +141,12 @@
     if (tr && tr.landing && X.trafficDays === (DAYS || 365)) { visits = 0; tr.landing.forEach(function(x){ if (/^\/([a-z]{2}\/)?check\/?$/.test(String(x.page || '').split('?')[0])) visits += +x.n || 0; }); vNote = 'visits to /check (all languages), kolaboro_traffic'; }
     else { visits = events(['visit'], since).filter(function(e){ return /^\/([a-z]{2}\/)?check\/?$/.test(String(e.page || '').split('?')[0]); }).length; vNote = 'visits to /check in the latest events'; }
     var cov = evCoverage(), lookEv = events(LOOKUP_KINDS, since), lookPeople = cohort.filter(function(p){ return p.flags.lookup; }).length;
-    var lookups = Math.max(lookEv.length, lookPeople);
+    var RK = ['lookup', 'analyze', 'certificate', 'document'], r7 = X.runs && X.runs.runs_7d, srv = r7 ? RK.reduce(function(a, k){ return a + (+r7[k] || 0); }, 0) : null;
+    var lookups = Math.max(lookEv.length, lookPeople, DAYS === 7 && srv != null ? srv : 0);
     var byKind = {}; lookEv.forEach(function(e){ byKind[e.kind] = (byKind[e.kind] || 0) + 1; });
     var reach = PIPE.map(function(s, i){ return i < 2 ? 0 : cohort.filter(function(p){ return p.flags[s[0]]; }).length; });
     reach[0] = visits; reach[1] = lookups;
-    var src = ['From ' + vNote, 'Desk reviews and register lookups logged by the site' + (Object.keys(byKind).length ? ' (' + Object.keys(byKind).map(function(k){ return k.replace(/_/g, ' ') + ' ' + byKind[k]; }).join(', ') + ')' : '') + ', or leads who gave a project', 'Accounts created (kolaboro_users)', 'Payment recorded or case marked paid', 'A paid case exists (the full check includes the site visit)', 'A field task exists for the case', 'Report URL set or verdict published'];
+    var src = ['From ' + vNote, 'Desk reviews and register lookups logged by the site' + (Object.keys(byKind).length ? ' (' + Object.keys(byKind).map(function(k){ return k.replace(/_/g, ' ') + ' ' + byKind[k]; }).join(', ') + ')' : '') + ', or leads who gave a project' + (r7 ? '. Server log, last 7 days: ' + RK.map(function(k){ return (k === 'analyze' ? 'desk reviews' : k === 'lookup' ? 'register lookups' : k + 's') + ' ' + (+r7[k] || 0); }).join(', ') : ''), 'Accounts created (kolaboro_users)', 'Payment recorded or case marked paid', 'A paid case exists (the full check includes the site visit)', 'A field task exists for the case', 'Report URL set or verdict published'];
     var mx = Math.max.apply(null, reach.concat([1]));
     var fun = PIPE.map(function(s, i){
       return '<div><small>' + (i + 1) + '. ' + s[1] + '</small><b>' + reach[i] + '</b>' + (i ? '<span class="cv" title="Conversion from the previous stage">' + pct(reach[i], reach[i - 1]) + ' from ' + PIPE[i - 1][1].toLowerCase() + '</span>' : '<span class="cv">&nbsp;</span>') +
