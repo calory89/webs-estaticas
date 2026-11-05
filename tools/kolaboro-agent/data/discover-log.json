@@ -509,5 +509,47 @@
   ],
   "all_six": 0,
   "verified_4plus": 0
+ },
+ {
+  "date": "2026-11-05",
+  "mode": "manual research (web search by Claude, validated with discover.py rules)",
+  "calls": 0,
+  "usd": 0.0,
+  "searches": 0,
+  "added": 2,
+  "rejected": {
+   "dead_url": 2
+  },
+  "markets": [
+   "Antalya",
+   "Pattaya"
+  ],
+  "model": null,
+  "added_slugs": [
+   "park-ya-am-antalya-antalya",
+   "the-indeed-condo-pattaya-pattaya"
+  ],
+  "all_six": 0,
+  "verified_4plus": 0
+ },
+ {
+  "date": "2026-11-05",
+  "mode": "manual research (web search by Claude, validated with discover.py rules)",
+  "calls": 0,
+  "usd": 0.0,
+  "searches": 0,
+  "added": 2,
+  "rejected": {},
+  "markets": [
+   "Antalya",
+   "Koh Samui"
+  ],
+  "model": null,
+  "added_slugs": [
+   "vitrin-antalya-antalya",
+   "sense8-samui-villas-koh-samui"
+  ],
+  "all_six": 0,
+  "verified_4plus": 0
  }
 ]

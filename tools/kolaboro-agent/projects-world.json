@@ -177591,8 +177591,8 @@
    "country": "Thailand",
    "market": "Pattaya",
    "stage": "off-plan",
-   "url": "https://royceregroup.com/properties/level/",
-   "docs_url": "https://pearlpropertythailand.com/project/level-pratumnak",
+   "url": "https://levelpratumnak.com/",
+   "docs_url": "https://levelpratumnak.com/",
    "permit_number": null,
    "seed": {
     "price": 2990000,
@@ -177680,6 +177680,7 @@
    "flags": [],
    "sources": [
     "https://casapattaya.com/new-property-project",
+    "https://levelpratumnak.com/",
     "https://mypattayarealestate.com/property/the-riviera-jomtien-pattaya/",
     "https://pearlpropertythailand.com/blog/best-condos-pratumnak-hill-2026",
     "https://pearlpropertythailand.com/project/level-pratumnak",
@@ -177709,8 +177710,8 @@
    "country": "Thailand",
    "market": "Pattaya",
    "stage": "under construction",
-   "url": "https://pearlpropertythailand.com/project/embassy-life-pattaya",
-   "docs_url": "https://cdn.pearlpropertythailand.com/brochures/embassy-life-brochure-VhquhzNf.pdf",
+   "url": "https://embassypattaya.com/",
+   "docs_url": "https://embassypattaya.com/",
    "permit_number": null,
    "seed": {
     "price": 5290000,
@@ -177796,6 +177797,7 @@
    ],
    "flags": [],
    "sources": [
+    "https://embassypattaya.com/",
     "https://kellerhenson.com/project/the-embassy-life",
     "https://montmari-asia.com/en/projects/embassy-life/",
     "https://pearlpropertythailand.com/project/embassy-life-pattaya",
@@ -177827,8 +177829,8 @@
    "country": "Thailand",
    "market": "Pattaya",
    "stage": "off-plan",
-   "url": "https://royceregroup.com/properties/elegance-residence/",
-   "docs_url": "https://royceregroup.com/properties/elegance-residence/",
+   "url": "https://eleganceresidencepattaya.com/",
+   "docs_url": "https://eleganceresidencepattaya.com/",
    "permit_number": null,
    "seed": {
     "price": 6420000,
@@ -177907,6 +177909,7 @@
    "flags": [],
    "sources": [
     "https://casapattaya.com/new-property-project",
+    "https://eleganceresidencepattaya.com/",
     "https://royceregroup.com/properties/",
     "https://royceregroup.com/properties/elegance-residence/"
    ],
@@ -177925,6 +177928,326 @@
    "added": "2026-11-05",
    "found_by": "discover-agent",
    "slug": "elegance-residence-pattaya"
+  },
+  {
+   "name": "Park Yaşam Antalya",
+   "developer": "Emlak Konut GYO",
+   "area": "Antalya (near the airport and Lara beach)",
+   "country": "Turkey",
+   "market": "Antalya",
+   "stage": "under construction",
+   "url": "https://emlakkonut.com.tr/en-US/park-yasam-antalya",
+   "docs_url": "https://emlakkonut.com.tr/en-US/park-yasam-antalya",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as under construction (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.posta.com.tr/ekonomi/ilk-6-ayda-en-cok-satilan-emlak-konut-projesi-oldu-2736550"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Emlak Konut GYO project in Antalya; Posta reports it as the best-selling Emlak Konut project of the first six months, with 1+1 to 5+1 flats and deliveries planned from 2026 (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://emlakkonut.com.tr/en-US/park-yasam-antalya",
+    "https://www.emlakplatform.com.tr/en/projects/park-yasam-antalya",
+    "https://www.posta.com.tr/ekonomi/ilk-6-ayda-en-cok-satilan-emlak-konut-projesi-oldu-2736550"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "park-ya-am-antalya-antalya"
+  },
+  {
+   "name": "The Indeed Condo Pattaya",
+   "developer": "The Indeed Condo",
+   "area": "Jomtien, Pattaya",
+   "country": "Thailand",
+   "market": "Pattaya",
+   "stage": "under construction",
+   "url": "https://www.theindeedcondo.com/",
+   "docs_url": "https://www.theindeedcondo.com/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as under construction (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://pearlpropertythailand.com/project/the-indeed-condo-pattaya"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Condominium in Jomtien, Pattaya by the developer behind The Indeed Condo brand (also in Sriracha and Amata); an agency page lists it as under construction with completion in 2026 (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://cornerstone.co.th/the-indeed-condo-pattaya-jomtien",
+    "https://pearlpropertythailand.com/project/the-indeed-condo-pattaya",
+    "https://propertyscout.co.th/en/chon-buri/condo/indeed-condo-pattaya/",
+    "https://www.thailand-property.com/condo/49598/the-indeed-condo-pattaya",
+    "https://www.theindeedcondo.com/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "the-indeed-condo-pattaya-pattaya"
+  },
+  {
+   "name": "Vitrin Antalya",
+   "developer": "Sur Yapı",
+   "area": "Antalya",
+   "country": "Turkey",
+   "market": "Antalya",
+   "stage": "off-plan",
+   "url": "https://www.suryapi.com.tr/projelerimiz/sur-yapi-vitrin-antalya",
+   "docs_url": "https://www.suryapi.com.tr/projelerimiz/sur-yapi-vitrin-antalya",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.mbany.com/en/projects/antalya-vitrin-sur-yapi"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Sur Yapı project in Antalya with 231 homes (2+1 and 3+1, 77 to 126 m2) on 22,134 m2 per the developer page; an agency page gives a delivery date of 30 Jun 2028 (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://emlakkulisi.com/guncel/sur-yapi-vitrin-son-durum/856677",
+    "https://realting.com/turkey/new-buildings/4116",
+    "https://www.emlakplatform.com.tr/en/projects/antalya-vitrin-sur-yapi",
+    "https://www.mbany.com/en/projects/antalya-vitrin-sur-yapi",
+    "https://www.suryapi.com.tr/projelerimiz/sur-yapi-vitrin-antalya"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "vitrin-antalya-antalya"
+  },
+  {
+   "name": "Sense8 Samui Villas",
+   "developer": "Sense8 Samui Villas",
+   "area": "Chaweng Noi, Koh Samui",
+   "country": "Thailand",
+   "market": "Koh Samui",
+   "stage": "under construction",
+   "url": "https://www.sense8samui.com/",
+   "docs_url": "https://www.sense8samui.com/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as under construction (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://kellerhenson.com/project/sense-8-samui-seaview-villas"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Nine hillside pool villas (3 to 5 bedrooms) in Chaweng Noi; the developer page says 5 remain for sale from THB 29M to 42M, and an agency page lists completion in Q2 2026 (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://kellerhenson.com/project/sense-8-samui-seaview-villas",
+    "https://livephuket.com/projects/thailand/surat-thani/koh-samui/bo-phut/sense-8-seaview-villas",
+    "https://www.sense8samui.com/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "sense8-samui-villas-koh-samui"
   }
  ]
 }
