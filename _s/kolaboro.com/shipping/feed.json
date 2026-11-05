@@ -15,14 +15,14 @@
   {
    "id": "https://kolaboro.com/shipping/#d-2026-11-05",
    "url": "https://kolaboro.com/shipping/#d-2026-11-05",
-   "title": "5 November 2026: 2 changes shipped so far",
-   "content_text": "- /shipping/ log (calendar, streaks, day summaries, engineering numbers), ship badge API, roadmap items linked to live pages\n- Kolaboro worker: register batch 6 modules (ship, data, disc, qa, ins) as 404 stubs\n\nDay in progress: summary taken from the commit subjects so far.",
-   "content_html": "<ul><li>/shipping/ log (calendar, streaks, day summaries, engineering numbers), ship badge API, roadmap items linked to live pages</li><li>Kolaboro worker: register batch 6 modules (ship, data, disc, qa, ins) as 404 stubs</li></ul><p>Day in progress: summary taken from the commit subjects so far.</p>",
+   "title": "5 November 2026: 3 changes shipped so far",
+   "content_text": "- /shipping/ log (calendar, streaks, day summaries, engineering numbers), ship badge API, roadmap items linked to live pages\n- Kolaboro worker: register batch 6 modules (ship, data, disc, qa, ins) as 404 stubs\n- Score explainer, project-scoped questions, market indices (block X6)\n\nDay in progress: summary taken from the commit subjects so far.",
+   "content_html": "<ul><li>/shipping/ log (calendar, streaks, day summaries, engineering numbers), ship badge API, roadmap items linked to live pages</li><li>Kolaboro worker: register batch 6 modules (ship, data, disc, qa, ins) as 404 stubs</li><li>Score explainer, project-scoped questions, market indices (block X6)</li></ul><p>Day in progress: summary taken from the commit subjects so far.</p>",
    "date_published": "2026-11-05T00:00:00Z",
-   "date_modified": "2026-11-05T06:47:00Z",
+   "date_modified": "2026-11-05T06:49:43Z",
    "_kolaboro": {
-    "ships": 2,
-    "data_updates": 4,
+    "ships": 3,
+    "data_updates": 6,
     "method": "so-far"
    }
   },
@@ -30,14 +30,14 @@
    "id": "https://kolaboro.com/shipping/#d-2026-11-04",
    "url": "https://kolaboro.com/changelog/2026-11-04/",
    "title": "4 November 2026: 67 changes shipped",
-   "content_text": "- Kolaboro i18n: case cards, follow forms, stats and agent questions shown in the page language on /xx/cases; English check and cases updates carried into all translations\n- Spanish alternates on the English check, how-we-score, checklist, about and cases pages; five /es/ pages in the sitemap; honeypot field safe on every right-to-left page\n- Climate 2030/2050, protected land, night lights and stalled sites in changelog, 4 Nov page, engineering, footer, satellite, hazards copy, API docs, sitemap, llms.txt\n- Kolaboro UX-C: tools index lists all tools, sample report verify fixed, phone tap targets and tables, build-cost and insolvency wording, SQL examples run in one tap\n- Insolvency API echoes the request's own name; on phones the sticky button hides while typing and pages keep room above it; Verify this page is a 40 px tap target\n- Kolaboro CSP prep: keep two email links out of Cloudflare email obfuscation (its decoder script carries no nonce), allow the Frankfurter fallback in connect-src\n\nSummary taken from the day's commit subjects.",
-   "content_html": "<ul><li>Kolaboro i18n: case cards, follow forms, stats and agent questions shown in the page language on /xx/cases; English check and cases updates carried into all translations</li><li>Spanish alternates on the English check, how-we-score, checklist, about and cases pages; five /es/ pages in the sitemap; honeypot field safe on every right-to-left page</li><li>Climate 2030/2050, protected land, night lights and stalled sites in changelog, 4 Nov page, engineering, footer, satellite, hazards copy, API docs, sitemap, llms.txt</li><li>Kolaboro UX-C: tools index lists all tools, sample report verify fixed, phone tap targets and tables, build-cost and insolvency wording, SQL examples run in one tap</li><li>Insolvency API echoes the request&#x27;s own name; on phones the sticky button hides while typing and pages keep room above it; Verify this page is a 40 px tap target</li><li>Kolaboro CSP prep: keep two email links out of Cloudflare email obfuscation (its decoder script carries no nonce), allow the Frankfurter fallback in connect-src</li></ul><p>Summary taken from the day&#x27;s commit subjects.</p>",
+   "content_text": "- You can now check a developer for insolvency records and look up whether a property agent is licensed.\n- Hazard checks now show flood scenarios for 2030 and 2050, plus protected land and mangroves within 1 km of a project.\n- New delivery-delay page and on-time odds lookup show how likely a project is to hand over on schedule.\n- A promise tracker, plain-language search alerts and a list of questions to ask the developer are now available.\n- A new satellite page uses night lights to spot ghost projects, where nothing visibly changes on site.\n- The check, scoring, checklist, about and cases pages are now available in Russian, Chinese, German, French, Arabic and Dutch.\n\nSummary written by AI from the day's commits and checked by code.",
+   "content_html": "<ul><li>You can now check a developer for insolvency records and look up whether a property agent is licensed.</li><li>Hazard checks now show flood scenarios for 2030 and 2050, plus protected land and mangroves within 1 km of a project.</li><li>New delivery-delay page and on-time odds lookup show how likely a project is to hand over on schedule.</li><li>A promise tracker, plain-language search alerts and a list of questions to ask the developer are now available.</li><li>A new satellite page uses night lights to spot ghost projects, where nothing visibly changes on site.</li><li>The check, scoring, checklist, about and cases pages are now available in Russian, Chinese, German, French, Arabic and Dutch.</li></ul><p>Summary written by AI from the day&#x27;s commits and checked by code.</p>",
    "date_published": "2026-11-04T00:00:00Z",
    "date_modified": "2026-11-04T23:44:52Z",
    "_kolaboro": {
     "ships": 67,
     "data_updates": 91,
-    "method": "deterministic"
+    "method": "ai-checked"
    }
   },
   {
@@ -128,14 +128,14 @@
    "id": "https://kolaboro.com/shipping/#d-2026-10-28",
    "url": "https://kolaboro.com/changelog/2026-10-28/",
    "title": "28 October 2026: 24 changes shipped",
-   "content_text": "- /report/sample rebuilt as a full interactive client report (verdict, money vs built, 9 checks, verifiable GPS photos, plan vs site, copilot flags, sign-off)\n- Honest copy pass, agent pay and developer fees, Indonesian agent page, buyer guides, EU cookie choice with consent mode, breadcrumb structured data\n- Money-at-risk simulator, Bali map and freshness on /research, price hints in visitor currency, back-to-top, print styles, meta fixes\n- YC positioning , agent copilot (live), independence rules, developers never pay, evidence-not-guarantee wording\n- 122 projects in 9 markets (/research by market, /cases), /yc + /investors: margins at scale, beyond real estate\n- Case PDFs with real CC photos, agent site-visit tool, how we choose and pay agents, cases from agent data\n\nSummary taken from the day's commit subjects.",
-   "content_html": "<ul><li>/report/sample rebuilt as a full interactive client report (verdict, money vs built, 9 checks, verifiable GPS photos, plan vs site, copilot flags, sign-off)</li><li>Honest copy pass, agent pay and developer fees, Indonesian agent page, buyer guides, EU cookie choice with consent mode, breadcrumb structured data</li><li>Money-at-risk simulator, Bali map and freshness on /research, price hints in visitor currency, back-to-top, print styles, meta fixes</li><li>YC positioning , agent copilot (live), independence rules, developers never pay, evidence-not-guarantee wording</li><li>122 projects in 9 markets (/research by market, /cases), /yc + /investors: margins at scale, beyond real estate</li><li>Case PDFs with real CC photos, agent site-visit tool, how we choose and pay agents, cases from agent data</li></ul><p>Summary taken from the day&#x27;s commit subjects.</p>",
+   "content_text": "- You can now get a free instant desk review of a project on the check page, before deciding on the paid check.\n- The home page now explains the difference between the free desk review and the €490 pre-purchase check.\n- You can pay for the pre-purchase check with PayPal. Refund terms are now written out clearly.\n- A full sample client report shows the verdict, money paid versus built, nine checks, GPS-verified photos, and plan versus site.\n- A live research page covers 122 projects in 9 markets, with a map and a simulator showing how much money is at risk.\n- After you pay, you can sign up for a client account and log in to a portal.\n\nSummary written by AI from the day's commits and checked by code.",
+   "content_html": "<ul><li>You can now get a free instant desk review of a project on the check page, before deciding on the paid check.</li><li>The home page now explains the difference between the free desk review and the €490 pre-purchase check.</li><li>You can pay for the pre-purchase check with PayPal. Refund terms are now written out clearly.</li><li>A full sample client report shows the verdict, money paid versus built, nine checks, GPS-verified photos, and plan versus site.</li><li>A live research page covers 122 projects in 9 markets, with a map and a simulator showing how much money is at risk.</li><li>After you pay, you can sign up for a client account and log in to a portal.</li></ul><p>Summary written by AI from the day&#x27;s commits and checked by code.</p>",
    "date_published": "2026-10-28T00:00:00Z",
    "date_modified": "2026-10-28T16:59:30Z",
    "_kolaboro": {
     "ships": 24,
     "data_updates": 3,
-    "method": "deterministic"
+    "method": "ai-checked"
    }
   },
   {

@@ -4,15 +4,15 @@
 <link href="https://kolaboro.com/shipping/feed.xml" rel="self"/>
 <link href="https://kolaboro.com/shipping/"/>
 <id>https://kolaboro.com/shipping/</id>
-<updated>2026-11-05T06:49:41Z</updated>
+<updated>2026-11-05T06:51:43Z</updated>
 <author><name>Kolaboro</name></author>
 <entry>
-<title>5 November 2026: 2 changes shipped so far</title>
+<title>5 November 2026: 3 changes shipped so far</title>
 <link href="https://kolaboro.com/shipping/#d-2026-11-05"/>
 <id>https://kolaboro.com/shipping/#d-2026-11-05</id>
 <published>2026-11-05T00:00:00Z</published>
-<updated>2026-11-05T06:47:00Z</updated>
-<content type="html">&lt;ul&gt;&lt;li&gt;/shipping/ log (calendar, streaks, day summaries, engineering numbers), ship badge API, roadmap items linked to live pages&lt;/li&gt;&lt;li&gt;Kolaboro worker: register batch 6 modules (ship, data, disc, qa, ins) as 404 stubs&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Day in progress: summary taken from the commit subjects so far.&lt;/p&gt;</content>
+<updated>2026-11-05T06:49:43Z</updated>
+<content type="html">&lt;ul&gt;&lt;li&gt;/shipping/ log (calendar, streaks, day summaries, engineering numbers), ship badge API, roadmap items linked to live pages&lt;/li&gt;&lt;li&gt;Kolaboro worker: register batch 6 modules (ship, data, disc, qa, ins) as 404 stubs&lt;/li&gt;&lt;li&gt;Score explainer, project-scoped questions, market indices (block X6)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Day in progress: summary taken from the commit subjects so far.&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>4 November 2026: 67 changes shipped</title>
@@ -20,7 +20,7 @@
 <id>https://kolaboro.com/shipping/#d-2026-11-04</id>
 <published>2026-11-04T00:00:00Z</published>
 <updated>2026-11-04T23:44:52Z</updated>
-<content type="html">&lt;ul&gt;&lt;li&gt;Kolaboro i18n: case cards, follow forms, stats and agent questions shown in the page language on /xx/cases; English check and cases updates carried into all translations&lt;/li&gt;&lt;li&gt;Spanish alternates on the English check, how-we-score, checklist, about and cases pages; five /es/ pages in the sitemap; honeypot field safe on every right-to-left page&lt;/li&gt;&lt;li&gt;Climate 2030/2050, protected land, night lights and stalled sites in changelog, 4 Nov page, engineering, footer, satellite, hazards copy, API docs, sitemap, llms.txt&lt;/li&gt;&lt;li&gt;Kolaboro UX-C: tools index lists all tools, sample report verify fixed, phone tap targets and tables, build-cost and insolvency wording, SQL examples run in one tap&lt;/li&gt;&lt;li&gt;Insolvency API echoes the request&amp;#x27;s own name; on phones the sticky button hides while typing and pages keep room above it; Verify this page is a 40 px tap target&lt;/li&gt;&lt;li&gt;Kolaboro CSP prep: keep two email links out of Cloudflare email obfuscation (its decoder script carries no nonce), allow the Frankfurter fallback in connect-src&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Summary taken from the day&amp;#x27;s commit subjects.&lt;/p&gt;</content>
+<content type="html">&lt;ul&gt;&lt;li&gt;You can now check a developer for insolvency records and look up whether a property agent is licensed.&lt;/li&gt;&lt;li&gt;Hazard checks now show flood scenarios for 2030 and 2050, plus protected land and mangroves within 1 km of a project.&lt;/li&gt;&lt;li&gt;New delivery-delay page and on-time odds lookup show how likely a project is to hand over on schedule.&lt;/li&gt;&lt;li&gt;A promise tracker, plain-language search alerts and a list of questions to ask the developer are now available.&lt;/li&gt;&lt;li&gt;A new satellite page uses night lights to spot ghost projects, where nothing visibly changes on site.&lt;/li&gt;&lt;li&gt;The check, scoring, checklist, about and cases pages are now available in Russian, Chinese, German, French, Arabic and Dutch.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Summary written by AI from the day&amp;#x27;s commits and checked by code.&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>3 November 2026: 124 changes shipped</title>
@@ -76,7 +76,7 @@
 <id>https://kolaboro.com/shipping/#d-2026-10-28</id>
 <published>2026-10-28T00:00:00Z</published>
 <updated>2026-10-28T16:59:30Z</updated>
-<content type="html">&lt;ul&gt;&lt;li&gt;/report/sample rebuilt as a full interactive client report (verdict, money vs built, 9 checks, verifiable GPS photos, plan vs site, copilot flags, sign-off)&lt;/li&gt;&lt;li&gt;Honest copy pass, agent pay and developer fees, Indonesian agent page, buyer guides, EU cookie choice with consent mode, breadcrumb structured data&lt;/li&gt;&lt;li&gt;Money-at-risk simulator, Bali map and freshness on /research, price hints in visitor currency, back-to-top, print styles, meta fixes&lt;/li&gt;&lt;li&gt;YC positioning , agent copilot (live), independence rules, developers never pay, evidence-not-guarantee wording&lt;/li&gt;&lt;li&gt;122 projects in 9 markets (/research by market, /cases), /yc + /investors: margins at scale, beyond real estate&lt;/li&gt;&lt;li&gt;Case PDFs with real CC photos, agent site-visit tool, how we choose and pay agents, cases from agent data&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Summary taken from the day&amp;#x27;s commit subjects.&lt;/p&gt;</content>
+<content type="html">&lt;ul&gt;&lt;li&gt;You can now get a free instant desk review of a project on the check page, before deciding on the paid check.&lt;/li&gt;&lt;li&gt;The home page now explains the difference between the free desk review and the €490 pre-purchase check.&lt;/li&gt;&lt;li&gt;You can pay for the pre-purchase check with PayPal. Refund terms are now written out clearly.&lt;/li&gt;&lt;li&gt;A full sample client report shows the verdict, money paid versus built, nine checks, GPS-verified photos, and plan versus site.&lt;/li&gt;&lt;li&gt;A live research page covers 122 projects in 9 markets, with a map and a simulator showing how much money is at risk.&lt;/li&gt;&lt;li&gt;After you pay, you can sign up for a client account and log in to a portal.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Summary written by AI from the day&amp;#x27;s commits and checked by code.&lt;/p&gt;</content>
 </entry>
 <entry>
 <title>27 October 2026: 7 changes shipped</title>
