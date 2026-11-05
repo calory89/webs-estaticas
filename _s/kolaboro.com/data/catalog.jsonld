@@ -26,7 +26,7 @@
   "@id": "http://publications.europa.eu/resource/authority/language/ENG"
  },
  "dct:modified": {
-  "@value": "2026-11-05T07:24:04Z",
+  "@value": "2026-11-05T22:47:31Z",
   "@type": "xsd:dateTime"
  },
  "dct:license": {
@@ -89,7 +89,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "1531261",
+      "@value": "1675416",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -103,7 +103,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "4c5a0a28b628fa6f33f3db3a3e3d074485a7396cf5b1b0980c6db04bb3aa1e25"
+      "spdx:checksumValue": "8f5decbe28f61470ecd5775ca3e8403045c958ee9a03b5744fcbcd7613231606"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/bali-cases.json"
@@ -114,7 +114,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
    },
    "dct:modified": {
-    "@value": "2026-11-04T00:00:00Z",
+    "@value": "2026-11-05T00:00:00Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -154,7 +154,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "406528",
+      "@value": "405044",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -168,7 +168,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "5741b570b2443c2160203e7f883fd91340b33498b223e7405f6ca505ef23f346"
+      "spdx:checksumValue": "e6ced9db19ad9ab646d14ff4c680de2f9c3faa1608f05c5547bd3f76965df839"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/world-claims.json"
@@ -179,7 +179,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
    },
    "dct:modified": {
-    "@value": "2026-11-04T00:00:00Z",
+    "@value": "2026-11-05T00:00:00Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -219,7 +219,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "2177",
+      "@value": "2167",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -233,7 +233,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "ce806d6296cb065a2e6f8aa87bc99835c182fed5069794832f3c246c68359563"
+      "spdx:checksumValue": "13d924f2ed7f923953e60db22987a916bbe4e85a792cfe2b32332adfea5e0824"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/bali-claims.json"
@@ -244,7 +244,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
    },
    "dct:modified": {
-    "@value": "2026-11-04T00:00:00Z",
+    "@value": "2026-11-05T00:00:00Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -284,7 +284,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "68950",
+      "@value": "71304",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -298,7 +298,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "7f5ecec0b55242a18ec866676f03334b41f01f313e27f3f17440cdb2df6137f2"
+      "spdx:checksumValue": "dcd0d097d8a1f467b5755b1f39ac3a4a7217c9f5382fb53e058e90f911eace8d"
      }
     }
    ],
@@ -306,7 +306,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
    },
    "dct:modified": {
-    "@value": "2026-11-04T10:24:41Z",
+    "@value": "2026-11-05T16:58:33Z",
     "@type": "xsd:dateTime"
    }
   },
@@ -343,7 +343,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "7695",
+      "@value": "7713",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -357,7 +357,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "af777905ad06a0cd7f5eeb2dafcc46830bbffc5dccacd24f0c0c29fdf62dbb19"
+      "spdx:checksumValue": "afda06abb70077225b0ef92873f987e1fa63ccfe848f998a449206357a9e458c"
      }
     }
    ],
@@ -365,7 +365,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
    },
    "dct:modified": {
-    "@value": "2026-11-04T10:24:41Z",
+    "@value": "2026-11-05T16:58:33Z",
     "@type": "xsd:dateTime"
    }
   },
@@ -415,7 +415,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "64800772a5ffb0ee8c778c45391c09fa6c17e2cb163545b2fbe047dd68eca56c"
+      "spdx:checksumValue": "c36fc72f71df04d74462db6f350e0cb763e24c46118ce6d66d2f011420f18cc2"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/kolaboro-parquet-manifest.json"
@@ -426,7 +426,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
    },
    "dct:modified": {
-    "@value": "2026-11-04T10:24:41Z",
+    "@value": "2026-11-05T16:58:33Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -466,7 +466,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "370071",
+      "@value": "414536",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -480,7 +480,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "d5d933e496d87f92a8c6f05299d1085ba1e3e188d7201e2c1bd7767341bd9729"
+      "spdx:checksumValue": "a870e0c8d21e51f9c77f9063358eb7bf468599654fabb676336ccbc0339f13a0"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/promises.json"
@@ -491,7 +491,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
    },
    "dct:modified": {
-    "@value": "2026-11-04T00:00:00Z",
+    "@value": "2026-11-05T00:00:00Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -530,7 +530,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "162983",
+      "@value": "182925",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -544,7 +544,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "d866591eaf055762f57639a1caa844a66e50c08cdec8ade528d9d0508c0ca6a4"
+      "spdx:checksumValue": "54091ac4c76556b14a2f2033ae652764d5fc395edc8add7ae9ff001aa727506f"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/promise-drift.json"
@@ -555,7 +555,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
    },
    "dct:modified": {
-    "@value": "2026-11-04T00:00:00Z",
+    "@value": "2026-11-05T00:00:00Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -595,7 +595,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "62869",
+      "@value": "71381",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -609,7 +609,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "ad0a34ff752cf81fd08a15c3c72b3d6b419446149e3243191fbe8b407b67a7ac"
+      "spdx:checksumValue": "7443d30f6560ea3c0feeb0a07204a372b1a43daea183243c32776647092c75c5"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/domain-age.json"
@@ -620,7 +620,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
    },
    "dct:modified": {
-    "@value": "2026-11-04T00:00:00Z",
+    "@value": "2026-11-05T00:00:00Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -660,7 +660,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "44228",
+      "@value": "44237",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -674,7 +674,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "75f14131a5ce063cbc347fd7d6c1195536ef4cdc2f9f0e7f856cfe7d35ecc007"
+      "spdx:checksumValue": "e8a9198d1cd4c8a935489d1fd9f43add0d493d2225c5342ea572e58be27e957c"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/delay-index.json"
@@ -685,7 +685,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
    },
    "dct:modified": {
-    "@value": "2026-11-04T00:00:00Z",
+    "@value": "2026-11-05T00:00:00Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -724,7 +724,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "148353",
+      "@value": "158217",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -738,7 +738,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "da63b68cfdc7f31c722cf3dadeacf4c7866c476253cdf8654a9cb742f0da0e6a"
+      "spdx:checksumValue": "b87bc44b76536642a5ad3737ee22fb951d960de691da86d979e58ef137dbbe32"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/on-time.json"
@@ -749,7 +749,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
    },
    "dct:modified": {
-    "@value": "2026-11-04T00:00:00Z",
+    "@value": "2026-11-05T00:00:00Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -788,7 +788,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "138974",
+      "@value": "160740",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -802,7 +802,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "f037c6a8145ea64831217803f8425d51aa0707b77d0f698558cffe6d8b52aef3"
+      "spdx:checksumValue": "ae225a089b4143e948c9f58be896b39e958d46bb3327d764f8d7e9be1c192387"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/price-index.json"
@@ -813,7 +813,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
    },
    "dct:modified": {
-    "@value": "2026-11-04T00:00:00Z",
+    "@value": "2026-11-05T00:00:00Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -1175,7 +1175,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "9258",
+      "@value": "10116",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -1189,7 +1189,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "9433114442fcec4706d0a79f317c4746e5956e0d2e98e6e7cb28059149af2956"
+      "spdx:checksumValue": "be93a0f6b88087b0069783de04704e1de76e48622b8abd7db7263355f591bd27"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/insolvency-watch.json"
@@ -1200,7 +1200,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
    },
    "dct:modified": {
-    "@value": "2026-11-04T09:02:42Z",
+    "@value": "2026-11-05T15:34:51Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -1240,7 +1240,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "655810",
+      "@value": "660111",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -1254,7 +1254,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "128397463188d3db1961aa527756bdf58fe03223680b31b79fc8b1a5cd4a8cce"
+      "spdx:checksumValue": "17a66fed302e24afe2defa24163e9e2200383d3945c0c5453ed0803ff3227fe8"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/insolvency-es-index.json"
@@ -1265,7 +1265,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
    },
    "dct:modified": {
-    "@value": "2026-11-04T09:02:42Z",
+    "@value": "2026-11-05T15:34:51Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -1370,7 +1370,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "74107",
+      "@value": "72851",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -1384,7 +1384,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "267208f633cb62714f6416b0c0f2246e20403a5326f86edfec14af78ac1f5add"
+      "spdx:checksumValue": "f2a846b0f7087d73acbd2abf3a8176ea932bf30ef2bc0a76168938c44155bd30"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/satellite.json"
@@ -1395,7 +1395,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
    },
    "dct:modified": {
-    "@value": "2026-11-03T00:00:00Z",
+    "@value": "2026-11-05T00:00:00Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -1434,7 +1434,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "422365",
+      "@value": "422384",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -1448,7 +1448,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "be4bf0438a9e374420959366bc30ed302e85730e2ed841afb950c7167587487e"
+      "spdx:checksumValue": "c21006df86dbdd16d2cb945b9b3cc9ece4273788d3bbe714f491a21994a6f389"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/satellite-optical.json"
@@ -1459,7 +1459,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
    },
    "dct:modified": {
-    "@value": "2026-11-03T00:00:00Z",
+    "@value": "2026-11-05T00:00:00Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -1626,7 +1626,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "33202",
+      "@value": "50449",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -1640,7 +1640,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "de53512c756421a1fb37848e4ae481f6045d70578d022cacf393f4f2c00d5275"
+      "spdx:checksumValue": "032acaab68f56c795a7aa8ba1f9bb4ddb2417e89e96bd11d34e696eff6667674"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/visual-diff.json"
@@ -1651,7 +1651,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
    },
    "dct:modified": {
-    "@value": "2026-11-04T00:00:00Z",
+    "@value": "2026-11-05T00:00:00Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -1690,7 +1690,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "2512",
+      "@value": "2516",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -1704,7 +1704,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "c3147d4a308d7bdf7b434159d0b89b795ca17bbb6866c9b6b6352f3c4170dd07"
+      "spdx:checksumValue": "0632307d112498bd68b1150022ab0b8e0989e195296852a16df0cef62a2552f9"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/render-reuse.json"
@@ -1715,7 +1715,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
    },
    "dct:modified": {
-    "@value": "2026-11-03T13:07:24Z",
+    "@value": "2026-11-05T07:43:11Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -1754,7 +1754,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "1241121",
+      "@value": "472049",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -1768,7 +1768,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "4c5c50f94bb8b4bbed39fdb1753f63b885e9856c1d45d120756da42357c168de"
+      "spdx:checksumValue": "21e5dd9598acd74177222f0794b4895a069a8538fef662ec93084c3d9fe0dc31"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/image-hashes.json"
@@ -1779,7 +1779,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
    },
    "dct:modified": {
-    "@value": "2026-11-03T13:05:56Z",
+    "@value": "2026-11-05T07:41:39Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -1818,7 +1818,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "464446",
+      "@value": "432159",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -1832,7 +1832,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "c2264bac641f349466121b0f2b35a7db34255cd242091abc71d5cc5713c9e301"
+      "spdx:checksumValue": "de2f4d0050013f8d99bcf58e5f2615b094b2f502498a3b7e3d9166556dd1a784"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/image-index.json"
@@ -1843,7 +1843,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/WEEKLY"
    },
    "dct:modified": {
-    "@value": "2026-11-01T00:00:00Z",
+    "@value": "2026-11-05T00:00:00Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -1882,7 +1882,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "0",
+      "@value": "203262",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -1890,6 +1890,13 @@
      },
      "dcat:accessURL": {
       "@id": "https://kolaboro.com/data/similar.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "f7a3a8876d105c5514d31f2f486bd98e79fd6411507b904f4afab0948cf51b10"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/similar.json"
@@ -1900,7 +1907,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
    },
    "dct:modified": {
-    "@value": "2026-11-05T07:22:38Z",
+    "@value": "2026-11-05T00:00:00Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -2191,7 +2198,7 @@
       "@id": "https://www.naturalearthdata.com/about/terms-of-use/"
      },
      "dcat:byteSize": {
-      "@value": "0",
+      "@value": "2475460",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:accessURL": {
@@ -2203,7 +2210,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "31364073345c9ad1a97b158dd6482199b5fde71da754a574e4d64ec1632381ee"
+      "spdx:checksumValue": "ddf78ea7cc348a03760325c95909466162c6e52fd20d1270360cc36585e82e28"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/coast-tiles.json"
@@ -2371,7 +2378,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "21278",
+      "@value": "25763",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -2385,7 +2392,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "1cdc4aeb7cfd2591da9629775171fc830d09020979592f4c231fea847e354e0b"
+      "spdx:checksumValue": "3e41f0709a34571b031565fcf8e6177d0bb472bf89aa5afd8f458dbc0085fb0a"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/a11y.json"
@@ -2396,7 +2403,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
    },
    "dct:modified": {
-    "@value": "2026-11-04T10:00:54Z",
+    "@value": "2026-11-05T10:00:10Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -2435,7 +2442,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "16049",
+      "@value": "16091",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -2449,7 +2456,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "549c40edf1b007044bf8c4d78d964d11c24d818f38cf461d9709bea5ee6c1816"
+      "spdx:checksumValue": "bbf06fe71064d14f88600b4a2275549a685bc7e91b428bd9ab2ee76715eccd61"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/lighthouse.json"
@@ -2460,7 +2467,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
    },
    "dct:modified": {
-    "@value": "2026-11-04T12:27:45Z",
+    "@value": "2026-11-05T12:42:32Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -2499,7 +2506,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "2845",
+      "@value": "3017",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -2513,7 +2520,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "778625bcd6b30b763d6d7d2a63668ef23ade713ccaa4c5ae1c3d83bf4ac18aa4"
+      "spdx:checksumValue": "e8eda886e65f28dd9182079a26522bb51b60e84544c675b5ff07eda7475f32bd"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/qa.json"
@@ -2524,7 +2531,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
    },
    "dct:modified": {
-    "@value": "2026-11-04T13:22:49Z",
+    "@value": "2026-11-05T13:39:32Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -2563,7 +2570,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "87414",
+      "@value": "92448",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -2577,7 +2584,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "6cafdcac128456048867cc6930618b153564d903c2cf1fe3971ab3439d9f7056"
+      "spdx:checksumValue": "899a9c236aeb1e7e2c4eb45cc695d4abcd0533646687b66056a68b5cef9ed6ac"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/journeys.json"
@@ -2588,7 +2595,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/HOURLY"
    },
    "dct:modified": {
-    "@value": "2026-11-04T16:33:11Z",
+    "@value": "2026-11-05T18:56:54Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -2641,7 +2648,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "03d176069cfb20dd9e1e43eeffabab77d4a421e47e3825dd17dc6dfeaa29c952"
+      "spdx:checksumValue": "c72a98c05f3aa8473e6eb77fe4304c328de7c0d6b23344907f8817b4a1943c28"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/verifiers.json"
@@ -2652,7 +2659,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
    },
    "dct:modified": {
-    "@value": "2026-11-04T16:36:29Z",
+    "@value": "2026-11-05T16:51:53Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -2883,7 +2890,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "31819",
+      "@value": "46570",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -2897,7 +2904,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "78dcebe780b708254ee54ef03f7a30a8ea35b162c62c2fa9a306a80e52bc7b6e"
+      "spdx:checksumValue": "5c47acf1d402253d30bdce35547e0de9c5fb58ed5c83f0b54819633a50b85488"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/deploys.json"
@@ -2908,7 +2915,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
    },
    "dct:modified": {
-    "@value": "2026-11-04T15:15:27Z",
+    "@value": "2026-11-05T17:07:29Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -2947,7 +2954,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "231941",
+      "@value": "71513",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -2961,7 +2968,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "7fed1a82c315b1e4061f0a2c14938e5820759e20b8b47d7f30ddad825e0b8a1a"
+      "spdx:checksumValue": "8873fb51d5f159150190790702524c4a0ba4de8c4b26103ddc64c2fc45248e79"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/site-manifest.json"
@@ -2972,7 +2979,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
    },
    "dct:modified": {
-    "@value": "2026-11-04T18:02:39Z",
+    "@value": "2026-11-05T19:03:51Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -3010,7 +3017,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "3537",
+      "@value": "4710",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -3024,7 +3031,7 @@
       "spdx:algorithm": {
        "@id": "spdx:checksumAlgorithm_sha256"
       },
-      "spdx:checksumValue": "f8b938604cae769560870c136f4bb3caebbeb139d32fc872d7c1cd700256c5f2"
+      "spdx:checksumValue": "13096dc3be16080ebdd3c8efd7950f6381d43c8e826080163635c1a495091106"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/builds.json"
@@ -3035,7 +3042,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
    },
    "dct:modified": {
-    "@value": "2026-11-04T18:02:45Z",
+    "@value": "2026-11-05T19:03:57Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -3138,7 +3145,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "0",
+      "@value": "101391",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -3146,6 +3153,13 @@
      },
      "dcat:accessURL": {
       "@id": "https://kolaboro.com/data/shipping.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "f864c863e9f61ecd5ccd0dee24fa335fe009042c4fadc264109463177cf4be72"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/shipping.json"
@@ -3156,7 +3170,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/HOURLY"
    },
    "dct:modified": {
-    "@value": "2026-11-05T07:19:47Z",
+    "@value": "2026-11-05T15:32:01Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -3194,7 +3208,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "0",
+      "@value": "10844",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -3202,6 +3216,13 @@
      },
      "dcat:accessURL": {
       "@id": "https://kolaboro.com/data/roadmap-sync.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "2e26d7540faf5b7d1ab435a9fdda5c7dd96b28ab45bfaf994b6fb57ae2effb12"
      },
      "dct:conformsTo": {
       "@id": "https://kolaboro.com/api/x/data/schema/roadmap-sync.json"
@@ -3212,7 +3233,7 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/HOURLY"
    },
    "dct:modified": {
-    "@value": "2026-11-05T07:19:47Z",
+    "@value": "2026-11-05T22:03:34Z",
     "@type": "xsd:dateTime"
    },
    "dct:conformsTo": {
@@ -3220,125 +3241,11 @@
    }
   },
   {
-   "@id": "https://kolaboro.com/data/#page-weight",
-   "@type": "dcat:Dataset",
-   "dct:identifier": "page-weight",
-   "dct:title": "Page weight",
-   "dct:description": "Bytes transferred for one cold load of key pages (compressed size plus headers, measured in Chrome), first-party bytes split by resource type, against page-weight budgets.",
-   "dcat:keyword": [
-    "performance",
-    "page weight"
-   ],
-   "dct:publisher": {
-    "@id": "https://kolaboro.com/#org"
-   },
-   "dct:license": {
-    "@id": "https://creativecommons.org/licenses/by/4.0/"
-   },
-   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
-   "dcat:landingPage": {
-    "@id": "https://kolaboro.com/data/#page-weight"
-   },
-   "dcat:distribution": [
-    {
-     "@id": "https://kolaboro.com/data/#page-weight-dist",
-     "@type": "dcat:Distribution",
-     "dct:title": "Page weight",
-     "dcat:mediaType": {
-      "@id": "https://www.iana.org/assignments/media-types/application/json"
-     },
-     "dct:license": {
-      "@id": "https://creativecommons.org/licenses/by/4.0/"
-     },
-     "dcat:byteSize": {
-      "@value": "0",
-      "@type": "xsd:nonNegativeInteger"
-     },
-     "dcat:downloadURL": {
-      "@id": "https://kolaboro.com/data/page-weight.json"
-     },
-     "dcat:accessURL": {
-      "@id": "https://kolaboro.com/data/page-weight.json"
-     },
-     "dct:conformsTo": {
-      "@id": "https://kolaboro.com/api/x/data/schema/page-weight.json"
-     }
-    }
-   ],
-   "dct:accrualPeriodicity": {
-    "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
-   },
-   "dct:modified": {
-    "@value": "2026-11-05T07:24:07Z",
-    "@type": "xsd:dateTime"
-   },
-   "dct:conformsTo": {
-    "@id": "https://kolaboro.com/api/x/data/schema/page-weight.json"
-   }
-  },
-  {
-   "@id": "https://kolaboro.com/data/#visual-tests",
-   "@type": "dcat:Dataset",
-   "dct:identifier": "visual-tests",
-   "dct:title": "Visual regression tests",
-   "dct:description": "Key pages captured in Chromium at 390 and 1440 px and compared pixel by pixel with the previous run, with the share of changed pixels per page.",
-   "dcat:keyword": [
-    "visual regression",
-    "testing"
-   ],
-   "dct:publisher": {
-    "@id": "https://kolaboro.com/#org"
-   },
-   "dct:license": {
-    "@id": "https://creativecommons.org/licenses/by/4.0/"
-   },
-   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
-   "dcat:landingPage": {
-    "@id": "https://kolaboro.com/data/#visual-tests"
-   },
-   "dcat:distribution": [
-    {
-     "@id": "https://kolaboro.com/data/#visual-tests-dist",
-     "@type": "dcat:Distribution",
-     "dct:title": "Visual regression tests",
-     "dcat:mediaType": {
-      "@id": "https://www.iana.org/assignments/media-types/application/json"
-     },
-     "dct:license": {
-      "@id": "https://creativecommons.org/licenses/by/4.0/"
-     },
-     "dcat:byteSize": {
-      "@value": "0",
-      "@type": "xsd:nonNegativeInteger"
-     },
-     "dcat:downloadURL": {
-      "@id": "https://kolaboro.com/data/visual-tests.json"
-     },
-     "dcat:accessURL": {
-      "@id": "https://kolaboro.com/data/visual-tests.json"
-     },
-     "dct:conformsTo": {
-      "@id": "https://kolaboro.com/api/x/data/schema/visual-tests.json"
-     }
-    }
-   ],
-   "dct:accrualPeriodicity": {
-    "@id": "http://publications.europa.eu/resource/authority/frequency/DAILY"
-   },
-   "dct:modified": {
-    "@value": "2026-11-05T07:24:07Z",
-    "@type": "xsd:dateTime"
-   },
-   "dct:conformsTo": {
-    "@id": "https://kolaboro.com/api/x/data/schema/visual-tests.json"
-   }
-  },
-  {
    "@id": "https://kolaboro.com/data/#undescribed-findings-by-project-json",
    "@type": "dcat:Dataset",
    "dct:identifier": "undescribed-findings-by-project-json",
    "dct:title": "findings-by-project.json",
-   "dct:description": "Published under /data/ but not yet described in the catalog registry.",
+   "dct:description": "Not yet described in the catalog registry. The file describes itself as: Per project id: when the hourly check last read the developer page (fp = first 16 hex of the SHA-256 of the page text) and its findings, newest first. Same rules as /data/live-findings.json.",
    "dcat:keyword": [],
    "dct:publisher": {
     "@id": "https://kolaboro.com/#org"
@@ -3362,7 +3269,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "0",
+      "@value": "169098",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -3370,6 +3277,13 @@
      },
      "dcat:accessURL": {
       "@id": "https://kolaboro.com/data/findings-by-project.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "f3731cbfa75acfacdf83682ba848caeec50178f72e70ec319cf3e829be24a5dd"
      }
     }
    ],
@@ -3377,7 +3291,62 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
    },
    "dct:modified": {
-    "@value": "2026-11-05T07:21:26Z",
+    "@value": "2026-11-05T16:46:49Z",
+    "@type": "xsd:dateTime"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#undescribed-indexnow-json",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "undescribed-indexnow-json",
+   "dct:title": "indexnow.json",
+   "dct:description": "Published under /data/ but not yet described in the catalog registry.",
+   "dcat:keyword": [],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#undescribed-indexnow-json"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#undescribed-indexnow-json-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "indexnow.json",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "1209870",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/indexnow.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/indexnow.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "a8d661f232d46f028deb9b591c7a43efbcd47c38b39b0a675f1fe4076aabcb54"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T17:09:53Z",
     "@type": "xsd:dateTime"
    }
   },
@@ -3386,7 +3355,7 @@
    "@type": "dcat:Dataset",
    "dct:identifier": "undescribed-live-findings-json",
    "dct:title": "live-findings.json",
-   "dct:description": "Published under /data/ but not yet described in the catalog registry.",
+   "dct:description": "Not yet described in the catalog registry. The file describes itself as: Every hour a GitHub Actions job re-reads the developer pages of the tracked projects that were checked longest ago (round robin over all 1116 projects with a public id), asks claude-haiku-5-5 for concrete facts with an exact quote each, and publishes a finding only when a fact is new or changed compared with what we stored for that project.",
    "dcat:keyword": [],
    "dct:publisher": {
     "@id": "https://kolaboro.com/#org"
@@ -3410,7 +3379,7 @@
       "@id": "https://creativecommons.org/licenses/by/4.0/"
      },
      "dcat:byteSize": {
-      "@value": "0",
+      "@value": "136102",
       "@type": "xsd:nonNegativeInteger"
      },
      "dcat:downloadURL": {
@@ -3418,6 +3387,13 @@
      },
      "dcat:accessURL": {
       "@id": "https://kolaboro.com/data/live-findings.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "17872d5cfea18a0d08a17fc307d3a27fd4888254dfe4afdebda9cdbc155cc28e"
      }
     }
    ],
@@ -3425,7 +3401,227 @@
     "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
    },
    "dct:modified": {
-    "@value": "2026-11-05T07:21:26Z",
+    "@value": "2026-11-05T22:12:33Z",
+    "@type": "xsd:dateTime"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#undescribed-lookup-coverage-json",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "undescribed-lookup-coverage-json",
+   "dct:title": "lookup-coverage.json",
+   "dct:description": "Published under /data/ but not yet described in the catalog registry.",
+   "dcat:keyword": [],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#undescribed-lookup-coverage-json"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#undescribed-lookup-coverage-json-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "lookup-coverage.json",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "5414",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/lookup-coverage.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/lookup-coverage.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "d3446f2e80aae4f2be760ab95e93297fce657edd726558a131bd77808ca34e2f"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T00:00:00Z",
+    "@type": "xsd:dateTime"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#undescribed-named-json",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "undescribed-named-json",
+   "dct:title": "named.json",
+   "dct:description": "Published under /data/ but not yet described in the catalog registry.",
+   "dcat:keyword": [],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#undescribed-named-json"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#undescribed-named-json-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "named.json",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "3875115",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/named.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/named.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "a82f4e6da8d6a0bd567f941268063fa3d232ed91a49c9bb93cd1bcd9629363b7"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T00:00:00Z",
+    "@type": "xsd:dateTime"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#undescribed-quality-json",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "undescribed-quality-json",
+   "dct:title": "quality.json",
+   "dct:description": "Published under /data/ but not yet described in the catalog registry.",
+   "dcat:keyword": [],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#undescribed-quality-json"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#undescribed-quality-json-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "quality.json",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "386382",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/quality.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/quality.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "4b6441cc270b00d06bcbc057231217c0376798deb996aad513c1b94f923a0694"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T07:24:07Z",
+    "@type": "xsd:dateTime"
+   }
+  },
+  {
+   "@id": "https://kolaboro.com/data/#undescribed-seo-audit-json",
+   "@type": "dcat:Dataset",
+   "dct:identifier": "undescribed-seo-audit-json",
+   "dct:title": "seo-audit.json",
+   "dct:description": "Published under /data/ but not yet described in the catalog registry.",
+   "dcat:keyword": [],
+   "dct:publisher": {
+    "@id": "https://kolaboro.com/#org"
+   },
+   "dct:license": {
+    "@id": "https://creativecommons.org/licenses/by/4.0/"
+   },
+   "dct:rights": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+   "dcat:landingPage": {
+    "@id": "https://kolaboro.com/data/#undescribed-seo-audit-json"
+   },
+   "dcat:distribution": [
+    {
+     "@id": "https://kolaboro.com/data/#undescribed-seo-audit-json-dist",
+     "@type": "dcat:Distribution",
+     "dct:title": "seo-audit.json",
+     "dcat:mediaType": {
+      "@id": "https://www.iana.org/assignments/media-types/application/json"
+     },
+     "dct:license": {
+      "@id": "https://creativecommons.org/licenses/by/4.0/"
+     },
+     "dcat:byteSize": {
+      "@value": "10981",
+      "@type": "xsd:nonNegativeInteger"
+     },
+     "dcat:downloadURL": {
+      "@id": "https://kolaboro.com/data/seo-audit.json"
+     },
+     "dcat:accessURL": {
+      "@id": "https://kolaboro.com/data/seo-audit.json"
+     },
+     "spdx:checksum": {
+      "@type": "spdx:Checksum",
+      "spdx:algorithm": {
+       "@id": "spdx:checksumAlgorithm_sha256"
+      },
+      "spdx:checksumValue": "a0c9cc5afbff8e48b51ea0403157fc197f47c414cee06ce85e5f940ebad087b7"
+     }
+    }
+   ],
+   "dct:accrualPeriodicity": {
+    "@id": "http://publications.europa.eu/resource/authority/frequency/IRREG"
+   },
+   "dct:modified": {
+    "@value": "2026-11-05T15:41:00Z",
     "@type": "xsd:dateTime"
    }
   }
