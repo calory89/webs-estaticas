@@ -22,16 +22,20 @@
   function ops(action, payload){ return A.rpc('kolaboro_ops', { p_key: key(), p_action: action, p_payload: payload || {} }); }
   function logAudit(action, payload){ return adm('log_' + action, payload); }   // audit-only, see header
   function csv(name, cols, rows){
-    var t = cols.map(function(c){ return c[0]; }).join(',') + '\n' + rows.map(function(r){ return cols.map(function(c){ var v = c[1](r); v = String(v == null ? '' : v); if (/^[\s]*[=+\-@\t\r]/.test(v)) v = "'" + v; return '"' + v.replace(/"/g, '""') + '"'; }).join(','); }).join('\n');
-    var a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([t], { type: 'text/csv' })); a.download = name + '-' + today() + '.csv'; document.body.appendChild(a); a.click(); a.remove();
+    var cell = function(v){ v = String(v == null ? '' : Array.isArray(v) ? v.join('|') : v); if (/^[\s]*[=+\-@\t\r]/.test(v)) v = "'" + v; return '"' + v.replace(/"/g, '""') + '"'; };
+    var t = cols.map(function(c){ return c[0]; }).join(',') + '\r\n' + rows.map(function(r){ return cols.map(function(c){ return cell(c[1](r)); }).join(','); }).join('\r\n');
+    var a = document.createElement('a'), u = URL.createObjectURL(new Blob(['\ufeff' + t], { type: 'text/csv;charset=utf-8' })); a.href = u; a.download = name + '-' + today() + '.csv'; document.body.appendChild(a); a.click(); a.remove(); setTimeout(function(){ URL.revokeObjectURL(u); }, 4000);
   }
-  function fail(d){ if (d && d.error) { alert('Not saved: ' + d.error); return true; } return false; }
+  function fail(d){ if (d && d.error) { if (d.error !== 'denied') alert('Not saved. ' + (A.err ? A.err(d) : d.error)); return true; } return false; }
 
   var STG = ['Case opened', 'Documents', 'Land & title', 'Building permit', 'Site visit', 'Report'];
   var PIPE = [['visit', 'Visited check'], ['lookup', 'Lookup done'], ['signup', 'Signed up'], ['paid', 'Paid'], ['ordered', 'Visit ordered'], ['agent', 'Agent assigned'], ['report', 'Report delivered']];
   var PIDX = {}; PIPE.forEach(function(p, i){ PIDX[p[0]] = i; });
   var LOOKUP_KINDS = ['desk_done', 'cert_run', 'doc_run', 'price_check', 'image_check', 'register_lookup', 'check_lookup', 'lookup_done'];
-  var D = null, X = { ops: null, traffic: null, health: null, at: 0, ev: {} }, DAYS = 30, SORT = { k: 'created', dir: -1 }, CUR = null;
+  var D = null, X = { ops: null, traffic: null, health: null, at: 0, ev: {} }, DAYS = 30, SORT = { k: 'created', dir: -1 }, CUR = null, SAVED = {};
+  var PSRC = { paypal_webhook: 'PayPal webhook', paypal_ipn: 'PayPal IPN' };
+  function srcLabel(s){ return PSRC[s] || s || 'By hand'; }
+  function caseById(id){ var r = null; (D.users || []).forEach(function(u){ (u.cases || []).forEach(function(c){ if (c.id === id) r = c; }); }); return r; }
 
   // ---------- styles, tabs, sections
   var css = document.createElement('style'); css.textContent =
@@ -51,7 +55,7 @@
     '.bz-form label{display:block;font-size:.8rem;font-weight:700;margin-top:8px}.bz-form input,.bz-form select,.bz-form textarea{width:100%;margin-top:3px}.bz-g2{display:grid;grid-template-columns:1fr 1fr;gap:8px}' +
     '.bz-note{background:#FFF4E5;border:1px solid #F5C98B;border-radius:12px;padding:8px 12px;font-size:.85rem;margin-top:10px}.bz-sr{position:absolute;left:-9999px}' +
     '.bz-case{border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin-top:8px}.bz-case h4{margin:0 0 4px}' +
-    '@media(max-width:900px){.bz-rec{grid-template-columns:1fr}}@media(max-width:640px){.bz-kv{grid-template-columns:1fr}.bz-g2{grid-template-columns:1fr}.bz-f input:not([type=checkbox]),.bz-f select{min-width:0;flex:1 1 140px}.bz-t th:nth-child(n+5),.bz-t td:nth-child(n+5){display:table-cell}}';
+    '@media(max-width:900px){.bz-rec{grid-template-columns:minmax(0,1fr)}}@media(max-width:640px){.bz-kv{grid-template-columns:1fr}.bz-g2{grid-template-columns:1fr}.bz-f input:not([type=checkbox]),.bz-f select{min-width:0;flex:1 1 140px}.bz-t th:nth-child(n+5),.bz-t td:nth-child(n+5){display:table-cell}}';
   document.head.appendChild(css);
   var nav = document.querySelector('nav.tabs'), main = document.querySelector('main');
   if (!nav || !main) return;
@@ -74,6 +78,7 @@
 
   // ---------- extra data (loaded when a CRM tab is open, at most once a minute unless forced)
   function more(force){
+    if (!D || !key()) return Promise.resolve();   // not signed in yet: never send admin calls with an unchecked key
     if (!force && X.at && Date.now() - X.at < 60000) return Promise.resolve();
     X.at = Date.now();
     var safe = function(p){ return p.then(function(d){ return d && !d.error ? d : null; }, function(){ return null; }); };
@@ -169,11 +174,22 @@
     sec.innerHTML = '<div class="bz-f"><label>Period <select id="bz-pd">' + [[7, '7 days'], [30, '30 days'], [90, '90 days'], [365, '12 months']].map(function(x){ return '<option value="' + x[0] + '"' + (x[0] === DAYS ? ' selected' : '') + '>' + x[1] + '</option>'; }).join('') + '</select></label><label><input type="checkbox" id="bz-pt"' + (keepHide ? ' checked' : '') + '> hide tests</label><span class="sp" style="flex:1"></span><button class="btn2" id="bz-pcsv" type="button">Export pipeline CSV</button></div>' +
       '<div class="card"><h2>Pipeline, last ' + DAYS + ' days</h2><div class="bz-fun">' + fun + '</div>' +
       '<p class="muted" style="font-size:.8rem;margin:8px 0 0">Stages 1 and 2 are anonymous counts (blue bars). Stages 3 to 7 count the people who arrived in this period and reached that stage so far. Every number comes from the database; nothing is estimated.' + (srvLk != null ? ' Register lookups in this period: ' + srvLk + ', counted on the server for every lookup since ' + LKLOG + ' (kolaboro_api_runs).' : '') + (cov && (!since || cov > since) ? ' Other lookup events (desk reviews, uploads) are counted from the latest 300 site events, which go back to ' + esc(day(cov)) + '.' : '') + (leadOnly ? ' ' + leadOnly + ' lead(s) left an email without looking a project up (newsletter, partner forms): see Customers.' : '') + '</p></div>' +
+      runsCard() +
       '<div class="card"><h2>Needs a push today <span class="pill">' + stuck.length + '</span></h2>' + (stuck.length ? '<ul style="margin:0;padding-left:18px">' + stuck.slice(0, 40).map(function(x){ return '<li><a href="#c=' + encodeURIComponent(x[0].id) + '">' + esc(x[0].name || x[0].email) + '</a> · ' + esc(x[1]) + '</li>'; }).join('') + '</ul>' : '<p class="muted" style="margin:0">Nothing stuck.</p>') + '</div>' +
       '<div class="card"><h2>Who is where</h2><div class="bz-board" style="--n:' + cols.length + '">' + cols.map(function(c){ return '<div class="bz-col"><h3><span>' + esc(c.name) + '</span><span>' + c.list.length + '</span></h3>' + c.list.slice(0, 60).map(pcard).join('') + (c.list.length > 60 ? '<p class="muted">+' + (c.list.length - 60) + ' more in Customers</p>' : '') + '</div>'; }).join('') + '</div></div>';
     $('bz-pd').onchange = function(){ DAYS = +this.value; X.at = 0; more(true).then(renderPipe); };
     $('bz-pt').onchange = renderPipe;
     $('bz-pcsv').onclick = function(){ csv('kolaboro-pipeline', [['stage', function(p){ return stageLabel(p.stage); }]].concat(PIPE.slice(1).map(function(s){ return [s[0] + '_at', function(p){ return day(p.flags[s[0]]); }]; }), [['email', function(p){ return p.email; }], ['name', function(p){ return p.name; }], ['first_seen', function(p){ return day(p.created); }]]), cohort); };
+  }
+  // server-side run log (kolaboro_public_stats over kolaboro_api_runs): register lookups, desk reviews, documents...
+  var RUNL = { lookup: 'Register lookups (/check)', analyze: 'Desk reviews', certificate: 'Certificate reads', document: 'Document reads', copilot: 'Copilot answers', progress: 'Progress checks', stamp_new: 'Timestamps sealed', stamp_lookup: 'Timestamp verifications' };
+  function runsCard(){
+    var R = X.runs; if (!R || !R.runs) return '<div class="card"><h2>Lookups and checks run</h2><p class="muted" style="margin:0">Run counts not loaded (kolaboro_public_stats did not answer).</p></div>';
+    var all = R.runs || {}, w = R.runs_7d || {}, ms = R.p50_ms_7d || {}, ks = Object.keys(RUNL).filter(function(k){ return all[k] != null || w[k] != null; }).concat(Object.keys(all).filter(function(k){ return !RUNL[k]; }));
+    var sv = (D.users || []).reduce(function(a, u){ return a + (+u.saved || 0); }, 0), wt = X.ops && X.ops.watchers;
+    return '<div class="card"><h2>Lookups and checks run</h2><div class="tw"><table><tr><th>What</th><th>Last 7 days</th><th>All time</th><th>Median time, 7 days</th></tr>' +
+      (ks.map(function(k){ return '<tr><td>' + esc(RUNL[k] || k.replace(/_/g, ' ')) + '</td><td><b>' + num(w[k] || 0) + '</b></td><td>' + num(all[k] || 0) + '</td><td>' + (ms[k] != null ? (ms[k] >= 1000 ? (ms[k] / 1000).toFixed(1) + ' s' : ms[k] + ' ms') : '-') + '</td></tr>'; }).join('') || '<tr><td colspan="4" class="muted">No run logged yet.</td></tr>') + '</table></div>' +
+      '<p class="muted" style="font-size:.8rem;margin:8px 0 0">Counted on the server for every request (kolaboro_api_runs); register lookups are logged since 5 Nov 2026. Saved in buyer accounts: ' + sv + ' item(s)' + (wt != null ? ' · confirmed email watchers: ' + num(wt) : '') + '.</p></div>';
   }
   function pcard(p){
     var c = p.cases[0], d = p.flags[PIPE[p.stage] ? PIPE[p.stage][0] : ''];
@@ -208,7 +224,7 @@
         '<label>From <input id="bz-cf" type="date"></label><label>To <input id="bz-ct" type="date"></label><label><input id="bz-ch" type="checkbox" checked> hide tests</label><button class="btn2" id="bz-ccsv" type="button">Export CSV</button></div>' +
         '<div class="card"><p class="muted" id="bz-cn" style="margin:0 0 6px" aria-live="polite"></p><div class="tw"><table class="bz-t" id="bz-ctab"></table></div></div>';
       ['bz-cq', 'bz-cs', 'bz-cu', 'bz-cf', 'bz-ct', 'bz-ch'].forEach(function(i){ $(i).addEventListener('input', custTable); $(i).addEventListener('change', custTable); });
-      $('bz-ccsv').onclick = function(){ csv('kolaboro-customers', [['email', function(p){ return p.email; }], ['name', function(p){ return p.name; }], ['country', function(p){ return p.country; }], ['first_seen', function(p){ return day(p.created); }], ['stage', function(p){ return stageLabel(p.stage); }], ['account', function(p){ return p.user ? p.user.status : 'lead'; }], ['projects', function(p){ return p.cases.map(function(c){ return c.code + ' ' + (c.project_name || ''); }).concat(p.leads.map(function(l){ return l.learn; }).filter(Boolean)).join(' | '); }], ['paid', function(p){ return Object.keys(p.paidTotal).map(function(c){ return c + ' ' + p.paidTotal[c]; }).join(' '); }], ['last_activity', function(p){ return day(p.lastAt); }], ['next_action', function(p){ return p.next; }], ['tags', function(p){ return p.tags.join('|'); }]], custRows()); };
+      $('bz-ccsv').onclick = function(){ csv('kolaboro-customers', [['email', function(p){ return p.email; }], ['name', function(p){ return p.name; }], ['country', function(p){ return p.country; }], ['first_seen', function(p){ return day(p.created); }], ['stage', function(p){ return stageLabel(p.stage); }], ['account', function(p){ return p.user ? p.user.status : 'lead'; }], ['projects', function(p){ return p.cases.map(function(c){ return c.code + ' ' + (c.project_name || ''); }).concat(p.leads.map(function(l){ return l.learn; }).filter(Boolean)).join(' | '); }], ['paid', function(p){ return Object.keys(p.paidTotal).map(function(c){ return c + ' ' + p.paidTotal[c]; }).join(' '); }], ['last_activity', function(p){ return day(p.lastAt); }], ['next_action', function(p){ return p.next; }], ['tags', function(p){ return p.tags.join('|'); }], ['saved_checks', function(p){ return p.user ? (+p.user.saved || 0) : ''; }]], custRows()); };
     }
     custTable();
   }
@@ -218,7 +234,7 @@
     t.innerHTML = '<thead><tr>' + COLS.map(function(c){ var on = SORT.k === c[0]; return '<th aria-sort="' + (on ? (SORT.dir > 0 ? 'ascending' : 'descending') : 'none') + '"><button type="button" data-sort="' + c[0] + '">' + c[1] + (on ? (SORT.dir > 0 ? ' ▲' : ' ▼') : '') + '</button></th>'; }).join('') + '</tr></thead><tbody>' +
       (R.map(function(p){ var t0 = today();
         return '<tr class="cl" data-go="' + esc(p.id) + '"><td><a href="#c=' + encodeURIComponent(p.id) + '"><b>' + esc(p.name || p.email) + '</b></a><br><small class="muted">' + esc(p.email) + (p.country ? ' · ' + esc(p.country) : '') + '</small></td><td><span class="bz-chip s' + p.stage + '">' + esc(stageLabel(p.stage)) + '</span></td><td>' + esc(day(p.created)) + '</td><td>' + (p.user ? esc(p.user.status) : '<span class="muted">lead</span>') + '</td>' +
-          '<td>' + (p.cases.map(function(c){ return esc(c.project_name || c.code); }).concat(p.leads.filter(function(l){ return l.learn; }).slice(0, 1).map(function(l){ return '<span class="muted">' + esc(String(l.learn).replace(/^https?:\/\/(www\.)?/, '').slice(0, 40)) + '</span>'; })).join('<br>') || '-') + '</td>' +
+          '<td>' + (p.cases.map(function(c){ return esc(c.project_name || c.code) + (c.paid ? '' : ' <small class="muted">unpaid</small>'); }).concat(p.leads.filter(function(l){ return l.learn; }).slice(0, 1).map(function(l){ return '<span class="muted">' + esc(String(l.learn).replace(/^https?:\/\/(www\.)?/, '').slice(0, 40)) + '</span>'; })).join('<br>') || '-') + (p.user && +p.user.saved ? '<br><small class="muted">' + (+p.user.saved) + ' saved check' + (+p.user.saved === 1 ? '' : 's') + '</small>' : '') + '</td>' +
           '<td>' + (Object.keys(p.paidTotal).map(function(c){ return esc(c) + ' ' + num(p.paidTotal[c]); }).join('<br>') || '-') + '</td><td>' + esc(p.lastAt ? ago(p.lastAt) : '') + '</td><td>' + (p.next ? '<span' + (p.next <= t0 ? ' style="color:var(--bad);font-weight:700"' : '') + '>' + esc(p.next) + '</span>' : '') + '</td></tr>'; }).join('') || '<tr><td colspan="8" class="muted">No customer matches these filters.</td></tr>') + '</tbody>';
     t.querySelectorAll('[data-sort]').forEach(function(b){ b.onclick = function(){ var k = b.dataset.sort; SORT = { k: k, dir: SORT.k === k ? -SORT.dir : (k === 'name' || k === 'next' ? 1 : -1) }; custTable(); var nb = t.querySelector('[data-sort="' + k + '"]'); if (nb) nb.focus(); }; });
     t.querySelectorAll('tr[data-go]').forEach(function(r){ r.onclick = function(e){ if (e.target.closest('a,button')) return; location.hash = 'c=' + encodeURIComponent(r.dataset.go); }; });
@@ -248,10 +264,10 @@
       '<span class="bz-chip s' + p.stage + '">' + esc(stageLabel(p.stage)) + '</span>' + (u ? '<button class="btn2" type="button" id="bz-as">Open their portal ↗</button>' : '') + '</div>' +
       '<div class="bz-steps" aria-label="Pipeline stages reached">' + PIPE.slice(1).map(function(s){ var d = p.flags[s[0]]; return '<span class="' + (d ? 'on' : '') + '">' + s[1] + (d && d !== 'yes' ? ' · ' + esc(day(d)) : '') + '</span>'; }).join('') + '</div></div>' +
       '<div class="bz-rec"><div>' +
-      '<div class="card"><h2>Projects and checks</h2>' + (p.cases.length ? p.cases.map(caseBox).join('') : '<p class="muted" style="margin:0">No case yet.</p>') +
+      '<div class="card"><h2>Projects and checks</h2>' + (p.cases.length ? payNextLine(p) + p.cases.map(function(c){ return caseBox(c, p); }).join('') : '<p class="muted" style="margin:0">No case yet.</p>') +
         (p.leads.filter(function(l){ return l.learn; }).length ? '<h3 style="font-size:.95rem;margin:12px 0 4px">Projects from forms</h3><ul style="margin:0;padding-left:18px">' + p.leads.filter(function(l){ return l.learn; }).map(function(l){ return '<li>' + (/^https?:\/\//.test(l.learn) ? '<a href="' + surl(l.learn) + '" target="_blank" rel="noopener noreferrer">' + esc(l.learn) + '</a>' : esc(l.learn)) + ' <small class="muted">' + esc(l.plan || '') + ' · ' + esc(day(l.created_at)) + '</small></li>'; }).join('') + '</ul>' : '') +
-        (u && u.saved ? '<p class="muted" style="margin:8px 0 0">' + u.saved + ' project(s) saved in their watchlist.</p>' : '') + '</div>' +
-      '<div class="card"><h2>Payments</h2>' + (p.payments.length || p.pev.length ? '<div class="tw"><table><tr><th>Date</th><th>Amount</th><th>Product</th><th>Source</th><th>PayPal ID</th></tr>' + p.payments.map(function(x){ return '<tr><td>' + esc(x.paid_at) + '</td><td><b>' + esc(x.currency) + ' ' + num(x.amount) + '</b></td><td>' + esc(x.product || '') + '</td><td>' + esc(x.source || 'manual') + '</td><td>' + esc(x.ref || '') + '</td></tr>'; }).join('') + p.pev.filter(function(e){ return !e.matched; }).map(function(e){ return '<tr><td>' + esc(day(e.created_at)) + '</td><td>' + esc(e.currency) + ' ' + num(e.amount) + '</td><td>' + esc(e.item || '') + '</td><td>' + esc(e.source || '') + ' · <b>not matched</b></td><td>' + esc(e.txn || '') + '</td></tr>'; }).join('') + '</table></div>' : '<p class="muted" style="margin:0">No payment recorded.</p>') + '</div>' +
+        '</div>' + savedCard(p) +
+      '<div class="card"><h2>Payments</h2>' + (p.payments.length || p.pev.length ? '<div class="tw"><table class="all"><tr><th>Date</th><th>Amount</th><th>Product</th><th>Source</th><th>Case</th><th>PayPal ID</th></tr>' + p.payments.map(function(x){ var c = x.case_id && caseById(x.case_id); return '<tr><td>' + esc(x.paid_at) + '</td><td><b>' + esc(x.currency) + '&nbsp;' + num(x.amount) + '</b></td><td>' + esc(x.product || '') + '</td><td>' + esc(srcLabel(x.source)) + '</td><td>' + (c ? esc(c.code) : x.case_id ? esc(String(x.case_id).slice(0, 8)) : PSRC[x.source] ? '<span style="color:var(--warn)">not attached yet</span>' : '-') + '</td><td>' + esc(x.ref || '') + '</td></tr>'; }).join('') + p.pev.filter(function(e){ return !e.matched; }).map(function(e){ return '<tr><td>' + esc(day(e.created_at)) + '</td><td>' + esc(e.currency) + '&nbsp;' + num(e.amount) + '</td><td>' + esc(e.item || '') + '</td><td>' + esc(srcLabel(e.source)) + ' · <b>not matched</b></td><td>-</td><td>' + esc(e.txn || '') + '</td></tr>'; }).join('') + '</table></div>' + (p.payments.some(function(x){ return PSRC[x.source] && !x.case_id; }) ? '<p class="muted" style="font-size:.8rem;margin:6px 0 0">Not attached yet: the payment is recorded but has not started a case, usually because the buyer has not confirmed their email or has no unpaid case.</p>' : '') : '<p class="muted" style="margin:0">No payment recorded.</p>') + '</div>' +
       '<div class="card"><h2>Messages</h2>' + (p.cases.length ? p.cases.map(function(c){ return '<h3 style="font-size:.9rem;margin:8px 0 0">' + esc(c.code) + '</h3><div class="chat">' + ((c.messages || []).map(function(m){ return '<div class="' + (m.admin ? 'a' : 'u') + '">' + esc(m.body) + '<small>' + (m.admin ? 'Kolaboro' : esc(p.name || 'Client')) + ' · ' + esc(ago(m.at)) + '</small></div>'; }).join('') || '<p class="muted">No messages.</p>') + '</div><form class="row bz-msg" data-case="' + esc(c.id) + '"><label class="bz-sr" for="bz-m-' + esc(c.id) + '">Reply</label><textarea id="bz-m-' + esc(c.id) + '" name="body" rows="2" style="flex:1;min-width:180px" placeholder="Reply on case ' + esc(c.code) + '…"></textarea><button class="btn">Send</button></form>'; }).join('') : '<p class="muted" style="margin:0">Messages need a case.</p>') + '</div>' +
       '<div class="card"><h2>Files and evidence</h2><div id="bz-files">' + (p.cases.length ? '<button class="btn2" type="button" id="bz-lf">Load files for ' + p.cases.length + ' case(s)</button>' : '<p class="muted" style="margin:0">No case, so no files.</p>') + '</div></div>' +
       '</div><div>' +
@@ -272,13 +288,14 @@
     sec.querySelectorAll('form.bz-msg').forEach(function(f){ f.onsubmit = function(e){ e.preventDefault(); var t = f.body.value.trim(); if (!t) return; adm('admin_message', { case_id: f.dataset.case, body: t }).then(function(d){ if (!fail(d)) A.reload(); }); }; });
     sec.querySelectorAll('[data-cstage]').forEach(function(s){ s.onchange = function(){ moveCase(s.dataset.cstage, +s.value); }; });
     var lf = $('bz-lf'); if (lf) lf.onclick = function(){ loadFiles(p); };
+    var sl = $('bz-svl'); if (sl) sl.onclick = function(){ loadSaved(p, sl); };
     window.scrollTo(0, 0);
   }
-  function caseBox(c){
-    var dd = daysInStage(c);
+  function caseBox(c, p){
+    var dd = daysInStage(c), nx = p ? payNext(p) : null, pm = (D.payments || []).filter(function(x){ return x.case_id === c.id; }), wt = caseFlag(p, c, 'watch');
     return '<div class="bz-case"><h4>' + esc(c.project_name || c.code) + ' <small class="muted">' + esc(c.code) + '</small></h4>' +
       '<div class="bz-kv"><span>Stage</span><span style="color:inherit"><select data-cstage="' + esc(c.id) + '" aria-label="Stage of case ' + esc(c.code) + '">' + STG.map(function(s, i){ return '<option value="' + i + '"' + (i === c.stage ? ' selected' : '') + '>' + i + '. ' + s + '</option>'; }).join('') + '</select> <span class="bz-sla ' + sla(dd, c) + '">' + dd + ' d in stage</span></span>' +
-      '<span>Paid</span><b>' + (c.paid ? 'yes' : 'no') + '</b><span>Verdict</span><b>' + esc(c.verdict || 'pending') + '</b>' + (c.eta ? '<span>Report due</span><b>' + esc(c.eta) + '</b>' : '') +
+      '<span>Paid</span><b>' + (c.paid ? 'yes' : 'no') + (pm.length ? ' <span style="font-weight:400">· ' + pm.map(function(x){ return esc(x.currency + ' ' + num(x.amount) + ' ' + srcLabel(x.source) + ' ' + (x.paid_at || '') + (x.ref ? ' (' + x.ref + ')' : '')); }).join('; ') + '</span>' : '') + (nx && nx.c && nx.c.id === c.id ? ' <span class="bz-sla w">next payment starts this case' + (nx.chosen ? ', picked by the buyer' : nx.known ? ', oldest unpaid' : '') + '</span>' : '') + '</b>' + (wt != null ? '<span>Watch</span><b>' + (wt ? 'on (re-checked, buyer gets alerts)' : 'off') + '</b>' : '') + '<span>Verdict</span><b>' + esc(c.verdict || 'pending') + '</b>' + (c.eta ? '<span>Report due</span><b>' + esc(c.eta) + '</b>' : '') +
       (c.project_url ? '<span>URL</span><b style="word-break:break-all"><a href="' + surl(c.project_url) + '" target="_blank" rel="noopener noreferrer">' + esc(c.project_url) + '</a></b>' : '') +
       ([c.developer, c.location, c.price_text].filter(Boolean).length ? '<span>Details</span><b>' + esc([c.developer, c.location, c.price_text].filter(Boolean).join(' · ')) + '</b>' : '') +
       ((c._tasks || []).length ? '<span>Agent</span><b>' + c._tasks.map(function(t){ return esc((t.agent_name || t.agent) + ' · ' + t.status + (t.due ? ' · due ' + t.due : '')); }).join('<br>') + '</b>' : '') +
@@ -291,13 +308,75 @@
     var box = $('bz-files'); box.innerHTML = '<p class="muted">Loading…</p>';
     Promise.all(p.cases.map(function(c){ return ops('evidence', { case_code: c.code }).then(function(d){ return { c: c, d: d }; }, function(){ return { c: c, d: null }; }); })).then(function(R){
       var rows = []; R.forEach(function(r){ ((r.d && r.d.evidence) || []).forEach(function(e){ rows.push({ c: r.c, e: e }); }); });
-      box.innerHTML = rows.length ? '<div class="tw"><table><tr><th>Case</th><th>When</th><th>What</th><th>By</th><th>Status</th><th></th></tr>' + rows.map(function(x){ var e = x.e; return '<tr><td>' + esc(x.c.code) + '</td><td>' + esc(day(e.at || e.taken_at)) + '</td><td>' + esc(e.title || e.kind) + (e.sha256 ? '<br><small class="muted">sha256 ' + esc(String(e.sha256).slice(0, 12)) + '…</small>' : '') + '</td><td>' + esc(e.by || '') + '</td><td>' + esc(e.status || '') + '</td><td>' + (e.file ? '<button class="btn-s" type="button" data-file="' + e.id + '">Open file</button>' : '') + '</td></tr>'; }).join('') + '</table></div>' : '<p class="muted" style="margin:0">No files or evidence on these cases yet.</p>';
+      box.innerHTML = rows.length ? '<div class="tw"><table class="all"><tr><th>Case</th><th>When</th><th>What</th><th>By</th><th>Status</th><th></th></tr>' + rows.map(function(x){ var e = x.e; return '<tr><td>' + esc(x.c.code) + '</td><td>' + esc(day(e.at || e.taken_at)) + '</td><td>' + esc(e.title || e.kind) + (e.sha256 ? '<br><small class="muted">sha256 ' + esc(String(e.sha256).slice(0, 12)) + '…</small>' : '') + '</td><td>' + esc(e.by || '') + '</td><td>' + esc(e.status || '') + '</td><td>' + (e.file ? '<button class="btn-s" type="button" data-file="' + e.id + '">Open file</button>' : '') + '</td></tr>'; }).join('') + '</table></div>' : '<p class="muted" style="margin:0">No files or evidence on these cases yet.</p>';
       box.querySelectorAll('[data-file]').forEach(function(b){ b.onclick = function(){ var w = window.open('', '_blank'); ops('file', { id: +b.dataset.file }).then(function(d){ if (!d || !d.url || !/^data:[a-z]+\/[a-z0-9.+-]+;base64,/i.test(d.url)) { if (w) w.close(); alert('File not available'); return; } var m = d.url.match(/^data:([^;]+);base64,(.*)$/), bin = atob(m[2]), arr = new Uint8Array(bin.length); for (var i = 0; i < bin.length; i++) arr[i] = bin.charCodeAt(i); var url = URL.createObjectURL(new Blob([arr], { type: m[1] })); if (w) { w.opener = null; w.location = url; } else location.href = url; }); }; });
     });
   }
   function sla(d, c){ if (c && c.eta && c.eta < today() && !c.report_url) return 'b'; return d >= 14 ? 'b' : d >= 7 ? 'w' : ''; }
   function moveCase(id, stage){
     return adm('case_update', { id: id, stage: stage, log_note: 'Moved to ' + STG[stage] + ' from the admin' }).then(function(d){ if (!fail(d)) A.reload(); });
+  }
+
+  // ---------- saved checks (kolaboro_saved, ref CHK-...), watch and pay_next. The admin payload carries only the count of
+  // saved rows, so the list is read on request through the buyer's own portal view: kolaboro_admin 'impersonate' (audited)
+  // gives a 2-hour admin-view token, kolaboro_portal 'me' returns saved[] {ref, at, snap, note} and cases[] with pay_next,
+  // and the token is closed straight away with 'logout'. If kolaboro_admin ever returns users[].saved_list and
+  // cases[].pay_next / watch itself (see MIGRATION_PROPOSAL.sql), those are used directly and no session is opened.
+  function caseFlag(p, c, k){ if (c && c[k] != null) return !!c[k]; var S = p && p.user && SAVED[p.user.id]; var m = S && S.cases && S.cases.filter(function(x){ return x.id === c.id; })[0]; return m && m[k] != null ? !!m[k] : null; }
+  function payNext(p){
+    var un = (p.cases || []).filter(function(c){ return !c.paid; }); if (!un.length) return null;
+    var known = un.some(function(c){ return caseFlag(p, c, 'pay_next') != null; }), ch = un.filter(function(c){ return caseFlag(p, c, 'pay_next'); })[0];
+    var old = un.slice().sort(function(a, b){ return (a.created_at || '') < (b.created_at || '') ? -1 : 1; })[0];
+    return { c: ch || old, chosen: !!ch, known: known, n: un.length };
+  }
+  function payNextLine(p){
+    var nx = payNext(p); if (!nx) return '';
+    return '<p class="bz-note" style="margin:0 0 6px">Next PayPal payment from this buyer starts case <b>' + esc(nx.c.code) + '</b>' + (nx.c.project_name ? ' (' + esc(nx.c.project_name) + ')' : '') +
+      (nx.chosen ? ': the buyer picked it.' : nx.known ? ': the buyer has not picked one, so the oldest unpaid case goes first.' : nx.n > 1 ? ': the oldest unpaid case, unless the buyer picked another one (open the saved checks below to see their choice).' : '.') + '</p>';
+  }
+  function regLine(i){
+    var found = i.f === true || i.f === 'true', nf = i.f === false || i.f === 'false';
+    return '<li><span class="bz-sla ' + (found ? '' : nf ? 'b' : 'w') + '">' + (found ? 'found' : nf ? 'not found' : 'no answer') + '</span> ' + (i.u ? '<a href="' + surl(i.u) + '" target="_blank" rel="noopener noreferrer">' + esc(i.r || 'Register') + '</a>' : esc(i.r || 'Register')) +
+      (i.nm ? ' · ' + esc(i.nm) : '') + (i.st ? ' · ' + esc(i.st) : '') + (i.q ? ' <small class="muted">searched "' + esc(i.q) + '"</small>' : '') + (i.note ? ' <small class="muted">' + esc(i.note) + '</small>' : '') + (i.h ? ' <small class="muted" title="sha256 of the register answer">#' + esc(String(i.h).slice(0, 10)) + '</small>' : '') + '</li>';
+  }
+  function savedItem(v){
+    var s = v.snap && typeof v.snap === 'object' ? v.snap : null, title = s ? (s.proj || s.q || v.note || v.ref) : (v.note || v.ref);
+    var reg = s && Array.isArray(s.reg) ? s.reg : null, cmp = s && Array.isArray(s.cmp) ? s.cmp : [], ch = s && Array.isArray(s.ch) ? s.ch : [];
+    return '<div class="bz-case"><h4>' + esc(String(title).slice(0, 140)) + ' <small class="muted">' + esc(v.ref) + '</small></h4><div class="bz-kv">' +
+      (s && s.u ? '<span>Website</span><b style="word-break:break-all;font-weight:400"><a href="' + surl(s.u) + '" target="_blank" rel="noopener noreferrer">' + esc(s.u) + '</a></b>' : s && s.q ? '<span>Searched</span><b style="font-weight:400">' + esc(s.q) + '</b>' : '') +
+      '<span>Saved</span><b style="font-weight:400">' + esc(day(v.at || (s && s.at))) + (s && s.t && day(s.t) !== day(v.at) ? ' · last checked ' + esc(day(s.t)) : '') + '</b>' +
+      (s ? '<span>Watch</span><b>' + (s.w ? 'on' : 'off') + (ch.length ? ' <span style="font-weight:400">· ' + ch.length + ' change(s) recorded</span>' : '') + '</b>' : '') +
+      (s && (s.att || s.sum) ? '<span>Desk review</span><b style="font-weight:400">' + (s.att ? esc(s.att) + ' attention' : '') + (s.sum ? (s.att ? ' · ' : '') + esc(String(s.sum).slice(0, 220)) : '') + '</b>' : '') +
+      '<span>Registers</span><b style="font-weight:400">' + (reg && reg.length ? '<ul style="margin:0;padding-left:16px">' + reg.map(regLine).join('') + '</ul>' : s ? 'No register answer saved (no live register for this input when it was checked).' : 'Saved before check details were stored.') + '</b>' +
+      (cmp.length ? '<span>Site vs register</span><b style="font-weight:400">' + cmp.filter(function(c){ return c.agree; }).length + ' of ' + cmp.length + ' fields agree' + (cmp.some(function(c){ return c.agree === false; }) ? ', differs on ' + esc(cmp.filter(function(c){ return c.agree === false; }).map(function(c){ return c.field; }).join(', ')) : '') + '</b>' : '') +
+      '</div></div>';
+  }
+  function savedCard(p){
+    var u = p.user; if (!u) return '';
+    var S = SAVED[u.id] || (Array.isArray(u.saved_list) ? { saved: u.saved_list, direct: true } : null), n = S ? S.saved.length : (+u.saved || 0);
+    var h = '<div class="card" id="bz-sv"><h2>Saved checks and watchlist <span class="pill">' + n + '</span></h2>';
+    if (!S) return h + (n ? '<p class="muted" style="margin:0 0 8px">' + n + ' item(s) saved in their account: register checks (CHK-…) from /check and tracked projects. The details stay in their account until you open them.</p><button class="btn2" type="button" id="bz-svl">Show saved checks, register results and watch status</button><p class="muted" style="font-size:.78rem;margin:6px 0 0">Reads their account through a short read-only admin view (recorded as "impersonate" in the audit log) and closes it straight away.</p>' : '<p class="muted" style="margin:0">Nothing saved yet. Checks they run on /check while logged in are saved to their account and show up here.</p>') + '</div>';
+    var chk = S.saved.filter(function(v){ return /^CHK-/i.test(v.ref || ''); }), other = S.saved.filter(function(v){ return !/^CHK-/i.test(v.ref || ''); });
+    var w = chk.filter(function(v){ return v.snap && v.snap.w; }).length, regs = [], hit = 0;
+    chk.forEach(function(v){ ((v.snap && v.snap.reg) || []).forEach(function(i){ regs.push(i); if (i.f === true || i.f === 'true') hit++; }); });
+    h += '<p class="muted" style="margin:0 0 6px">' + chk.length + ' check(s) · ' + w + ' watched · ' + regs.length + ' register answer(s), ' + hit + ' found' + (S.at ? ' · read ' + esc(ago(S.at)) : '') + (S.direct ? '' : ' <button class="btn-s" type="button" id="bz-svl">Read again</button>') + '</p>';
+    h += chk.map(savedItem).join('') || '<p class="muted">No register check saved, only tracked projects.</p>';
+    if (other.length) h += '<p style="margin:10px 0 0;font-size:.88rem"><b>Tracked projects</b> <small class="muted">(saved from the project lists)</small><br>' + other.map(function(v){ return esc(v.ref) + (v.note ? ' <small class="muted">' + esc(String(v.note).slice(0, 60)) + '</small>' : ''); }).join(', ') + '</p>';
+    return h + '</div>';
+  }
+  function loadSaved(p, btn){
+    var u = p.user; if (!u) return; btn.disabled = true; btn.textContent = 'Reading their account…';
+    var err = function(m){ btn.disabled = false; btn.textContent = 'Try again'; var e = document.createElement('p'); e.style.color = 'var(--bad)'; e.style.margin = '6px 0 0'; e.setAttribute('role', 'alert'); e.textContent = m; btn.parentNode.insertBefore(e, btn.nextSibling); };
+    adm('impersonate', { user_id: u.id }).then(function(d){
+      if (!d || !d.token) { if (!d || d.error !== 'denied') err('Could not open their account. ' + (A.err && d ? A.err(d) : '')); return; }
+      var t = d.token;
+      return A.rpc('kolaboro_portal', { p_token: t, p_action: 'me', p_payload: {} }).then(function(me){
+        A.rpc('kolaboro_portal', { p_token: t, p_action: 'logout', p_payload: {} });
+        if (!me || me.error || !Array.isArray(me.saved)) { err('Their account did not answer. ' + (A.err && me ? A.err(me) : '')); return; }
+        SAVED[u.id] = { saved: me.saved, cases: Array.isArray(me.cases) ? me.cases : [], at: new Date().toISOString() };
+        var y = window.scrollY; record(p); window.scrollTo(0, y); var c = $('bz-sv'); if (c) { c.setAttribute('tabindex', '-1'); c.focus({ preventScroll: true }); }
+      });
+    });
   }
 
   // ---------- Cases board
@@ -317,7 +396,7 @@
       '<div class="card"><h2>Latest admin actions (audit log)</h2>' + (X.health ? (aud.length ? '<div class="tw"><table><tr><th>When</th><th>Action</th><th>Target</th><th>Hash</th></tr>' + aud.map(function(a){ return '<tr><td>' + esc(ago(a.at)) + '</td><td>' + esc(String(a.action).replace(/_/g, ' ')) + '</td><td><small>' + esc(String(a.target || '').slice(0, 8)) + '</small></td><td><code>' + esc(a.hash) + '</code></td></tr>'; }).join('') + '</table></div>' : '<p class="muted" style="margin:0">No admin action recorded yet.</p>') + (X.health.audit ? '<p class="muted" style="font-size:.8rem;margin:8px 0 0">Chain check: ' + esc(typeof X.health.audit === 'object' ? JSON.stringify(X.health.audit) : X.health.audit) + '</p>' : '') : '<p class="muted" style="margin:0">Audit log not loaded.</p>') + '</div>';
     $('bz-bq').addEventListener('input', function(){ var pos = this.selectionStart; renderBoard(); var n = $('bz-bq'); n.focus(); try { n.setSelectionRange(pos, pos); } catch (e) {} });
     $('bz-bo').onchange = function(){ renderBoard(); $('bz-bo').focus(); };
-    $('bz-bcsv').onclick = function(){ csv('kolaboro-cases', [['code', function(x){ return x.c.code; }], ['project', function(x){ return x.c.project_name; }], ['client_email', function(x){ return x.p.email; }], ['stage', function(x){ return STG[x.c.stage]; }], ['days_in_stage', function(x){ return daysInStage(x.c); }], ['paid', function(x){ return x.c.paid; }], ['verdict', function(x){ return x.c.verdict; }], ['eta', function(x){ return x.c.eta; }], ['agent', function(x){ return x.c._tasks.map(function(t){ return t.agent + ' ' + t.status; }).join(' | '); }], ['report_url', function(x){ return x.c.report_url; }]], F); };
+    $('bz-bcsv').onclick = function(){ csv('kolaboro-cases', [['code', function(x){ return x.c.code; }], ['project', function(x){ return x.c.project_name; }], ['client_email', function(x){ return x.p.email; }], ['stage', function(x){ return STG[x.c.stage]; }], ['days_in_stage', function(x){ return daysInStage(x.c); }], ['paid', function(x){ return x.c.paid; }], ['verdict', function(x){ return x.c.verdict; }], ['eta', function(x){ return x.c.eta; }], ['agent', function(x){ return x.c._tasks.map(function(t){ return t.agent + ' ' + t.status; }).join(' | '); }], ['report_url', function(x){ return x.c.report_url; }], ['paid_by', function(x){ return (D.payments || []).filter(function(p){ return p.case_id === x.c.id; }).map(function(p){ return p.currency + ' ' + p.amount + ' ' + srcLabel(p.source) + (p.ref ? ' ' + p.ref : ''); }).join(' | '); }], ['next_payment_starts_here', function(x){ var n = payNext(x.p); return n && n.c.id === x.c.id ? 'yes' : ''; }]], F); };
     sec.querySelectorAll('[data-bstage]').forEach(function(s){ s.onchange = function(){ moveCase(s.dataset.bstage, +s.value); }; });
     sec.querySelectorAll('form.bz-asg').forEach(function(f){ f.onsubmit = function(e){ e.preventDefault(); var em = f.agent.value; if (!em) return; var o = { case_code: f.dataset.code, agent_email: em, due: f.due.value, fee: f.fee.value, kind: 'site_visit' };
       f.querySelector('button').disabled = true;
@@ -342,12 +421,12 @@
     var g = {}, cur = {}; rows.forEach(function(p){ var m = String(p.paid_at || p.created_at || '').slice(0, 7) || '?', c = p.currency || 'EUR'; cur[c] = 1; var r = g[m] = g[m] || {}; r[c] = r[c] || { n: 0, s: 0 }; r[c].n++; r[c].s += +p.amount || 0; });
     var months = Object.keys(g).sort().reverse(), C = Object.keys(cur).sort(), tot = {}; C.forEach(function(c){ tot[c] = { n: 0, s: 0 }; months.forEach(function(m){ if (g[m][c]) { tot[c].n += g[m][c].n; tot[c].s += g[m][c].s; } }); });
     var srcs = {}; Pm.forEach(function(p){ srcs[p.source || 'manual'] = 1; });
-    var ok = E.filter(function(e){ return /complet/i.test(e.status || ''); }), un = ok.filter(function(e){ return !e.matched; }), ref = E.filter(function(e){ return /refund|revers|denied/i.test(e.status || ''); });
+    var pp = Pm.filter(function(p){ return PSRC[p.source]; }), ok = E.filter(function(e){ return /complet/i.test(e.status || ''); }), un = ok.filter(function(e){ return !e.matched; }), ref = E.filter(function(e){ return /refund|revers|denied/i.test(e.status || ''); });
     box.innerHTML = '<div class="row"><h2 style="margin:0;flex:1">Ledger by month</h2><label class="muted" style="font-size:.85rem">Source <select id="bz-ls"><option value="">All</option>' + Object.keys(srcs).sort().map(function(s){ return '<option' + (s === src ? ' selected' : '') + '>' + esc(s) + '</option>'; }).join('') + '</select></label><button class="btn2" type="button" id="bz-lcsv">Export ledger CSV</button></div>' +
       (months.length ? '<div class="tw" style="margin-top:8px"><table><tr><th>Month</th>' + C.map(function(c){ return '<th>' + esc(c) + '</th>'; }).join('') + '</tr>' + months.map(function(m){ return '<tr><td>' + esc(m) + '</td>' + C.map(function(c){ var x = g[m][c]; return '<td>' + (x ? '<b>' + num(x.s) + '</b> <small class="muted">' + x.n + ' payment' + (x.n > 1 ? 's' : '') + '</small>' : '-') + '</td>'; }).join('') + '</tr>'; }).join('') + '<tr><td><b>Total</b></td>' + C.map(function(c){ return '<td><b>' + num(tot[c].s) + '</b> <small class="muted">' + tot[c].n + '</small></td>'; }).join('') + '</tr></table></div>' : '<p class="muted">No payments recorded yet.</p>') +
-      '<p class="muted" style="font-size:.84rem;margin:8px 0 0">Amounts are the rows in kolaboro_payments: PayPal webhook and IPN payments are written there automatically when they match a buyer email; the others were recorded by hand. PayPal events received: ' + E.length + ' (' + ok.length + ' completed, ' + un.length + ' completed but not matched to a buyer' + (ref.length ? ', ' + ref.length + ' refunds or reversals' : '') + '). Unmatched ones are listed below and can be assigned.</p>';
+      '<p class="muted" style="font-size:.84rem;margin:8px 0 0">Amounts are the rows in kolaboro_payments: PayPal webhook and IPN payments are written there automatically when they match a buyer email; the others were recorded by hand. PayPal events received: ' + E.length + ' (' + ok.length + ' completed, ' + un.length + ' completed but not matched to a buyer' + (ref.length ? ', ' + ref.length + ' refunds or reversals' : '') + '). Unmatched ones are listed below and can be assigned.' + (pp.length ? ' PayPal payments that started a case: ' + pp.filter(function(p){ return p.case_id; }).length + ' of ' + pp.length + (pp.some(function(p){ return !p.case_id; }) ? ' (the others wait for the buyer to confirm their email or open a case; see the Case column in the table below)' : '') + '.' : '') + '</p>';
     $('bz-ls').onchange = renderLedger;
-    $('bz-lcsv').onclick = function(){ csv('kolaboro-ledger', [['paid_at', function(p){ return p.paid_at; }], ['month', function(p){ return String(p.paid_at || '').slice(0, 7); }], ['currency', function(p){ return p.currency; }], ['amount', function(p){ return p.amount; }], ['product', function(p){ return p.product; }], ['source', function(p){ return p.source || 'manual'; }], ['paypal_id', function(p){ return p.ref; }], ['email', function(p){ return p.email; }], ['case_id', function(p){ return p.case_id; }]], rows); };
+    $('bz-lcsv').onclick = function(){ csv('kolaboro-ledger', [['paid_at', function(p){ return p.paid_at; }], ['month', function(p){ return String(p.paid_at || '').slice(0, 7); }], ['currency', function(p){ return p.currency; }], ['amount', function(p){ return p.amount; }], ['product', function(p){ return p.product; }], ['source', function(p){ return p.source || 'manual'; }], ['paypal_id', function(p){ return p.ref; }], ['email', function(p){ return p.email; }], ['case_code', function(p){ var c = p.case_id && caseById(p.case_id); return c ? c.code : ''; }], ['case_id', function(p){ return p.case_id; }]], rows); };
   }
 
   // ---------- wiring
