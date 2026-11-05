@@ -1,10 +1,15 @@
 name: Kolaboro live findings
 # Hourly: re-reads the developer pages checked longest ago (round robin over every tracked project), asks claude-haiku-5-5 for
 # concrete facts with exact quotes, checks every quote in code and publishes only new or changed facts, anonymously, to
-# kolaboro.com/data/live-findings.json and /data/findings-by-project.json. Hard budget: 0.25 USD per run from real token usage.
+# kolaboro.com/data/live-findings.json and /data/findings-by-project.json. Budget: 5 USD a day, spread over the runs (KB_LIVE_DAY_USD).
 on:
   schedule:
     - cron: '34 * * * *'
+  # Backup clock (5 Nov 2026: GitHub fired no scheduled run in the repo for 5 hours): every finished deploy guard run also
+  # wakes this job, and the gate below skips it unless the last run started 55 minutes ago or more.
+  workflow_run:
+    workflows: ["Kolaboro deploy guard"]
+    types: [completed]
   workflow_dispatch:
     inputs:
       max_pages:
@@ -20,11 +25,23 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 35
     steps:
+      - name: Gate (at most one run per 55 minutes when woken by a deploy)
+        id: gate
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ "${{ github.event_name }}" != "workflow_run" ]; then echo "go=1" >> "$GITHUB_OUTPUT"; exit 0; fi
+          last=$(gh api "repos/${GITHUB_REPOSITORY}/actions/workflows/kolaboro-live-findings.yml/runs?per_page=10" \
+            -q '[.workflow_runs[] | select(.id != ${{ github.run_id }}) | select(.conclusion == "success" or .status == "in_progress" or .status == "queued")][0].run_started_at // ""')
+          now=$(date -u +%s); then_=$(date -u -d "${last:-1970-01-01T00:00:00Z}" +%s)
+          if [ $(( now - then_ )) -ge 3300 ]; then echo "go=1" >> "$GITHUB_OUTPUT"; echo "last run $last: running"; else echo "go=0" >> "$GITHUB_OUTPUT"; echo "last run $last: too recent, skipping"; fi
       - uses: actions/checkout@v4
+        if: steps.gate.outputs.go == '1'
         with:
           ref: main
           sparse-checkout: tools/kolaboro-agent
       - name: Read pages and compare
+        if: steps.gate.outputs.go == '1'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           KB_LIVE_DAY_USD: '5'
@@ -36,6 +53,7 @@ jobs:
           mkdir -p "$RUNNER_TEMP/out"
           python3 tools/kolaboro-agent/live_findings.py "$RUNNER_TEMP/out"
       - name: Save state on main
+        if: steps.gate.outputs.go == '1'
         run: |
           git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
           git add tools/kolaboro-agent/data/live-state.json tools/kolaboro-agent/data/live-findings.json tools/kolaboro-agent/data/live-by-project.json tools/kolaboro-agent/data/archive
@@ -43,6 +61,7 @@ jobs:
           git commit -q -m "kolaboro live findings: run $(date -u +%FT%H:%MZ)"
           for i in 1 2 3 4 5; do git push -q origin HEAD:main && exit 0; git pull -q --rebase origin main; sleep 5; done; exit 1
       - name: Publish to kolaboro.com
+        if: steps.gate.outputs.go == '1'
         run: |
           set -e
           git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
