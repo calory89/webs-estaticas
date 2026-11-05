@@ -32,8 +32,8 @@ PEOPLE = ['Carlos de Ory', 'Lisa Mikolajewicz', 'Ignacio Hojas', 'calory89']
 FILE_EXT = 'js|mjs|cjs|json|jsonl|html|htm|css|py|md|yml|yaml|svg|png|jpg|jpeg|webp|xml|txt|csv|parquet|sql|ts|go|wasm|woff2|woff|pdf|sh|toml|ics|gz|zip|map|ndjson'
 NUM_WORDS = {'zero': '0', 'one': '1', 'two': '2', 'three': '3', 'four': '4', 'five': '5', 'six': '6', 'seven': '7', 'eight': '8',
              'nine': '9', 'ten': '10', 'eleven': '11', 'twelve': '12', 'thirteen': '13', 'fourteen': '14', 'fifteen': '15',
-             'twenty': '20', 'thirty': '30', 'forty': '40', 'fifty': '50', 'hundred': '100', 'thousand': '1000', 'dozen': '12',
-             'first': '1', 'second': '2', 'third': '3', 'half': '0.5', 'twice': '2', 'once': '1', 'single': '1', 'double': '2'}
+             'twenty': '20', 'thirty': '30', 'forty': '40', 'fifty': '50', 'hundred': '100', 'thousand': '1000', 'dozen': '12'}
+CHECK_V = 2   # bump to re-try summaries rejected under an older check
 MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
 GIT = None
@@ -217,7 +217,8 @@ def ai_summary(date, day_commits, key):
         '- every line cites the ids of the commits it is based on (at least one, ids exactly as given);\n'
         '- use only numbers that appear in the subjects of the commits you cite, written as digits; if unsure, leave the number out;\n'
         '- no names of projects, developers, companies or people, no web addresses, no email addresses, no square brackets;\n'
-        '- no long dashes; no marketing words; do not invent anything that is not in the subjects.\n'
+        '- no long dashes; no marketing words; do not invent anything that is not in the subjects;\n'
+        '- do not use double quotes inside a line (use single quotes), so the JSON stays valid.\n'
         'Answer with JSON only: {"lines":[{"text":"...","commits":["<id>"]}]}\n\nCommits:\n%s' % (date, lo, listing))
     body = json.dumps({'model': MODEL, 'max_tokens': 1200, 'messages': [{'role': 'user', 'content': prompt}]}).encode()
     req = urllib.request.Request('https://api.anthropic.com/v1/messages', data=body, method='POST', headers={
@@ -227,7 +228,8 @@ def ai_summary(date, day_commits, key):
     u = d.get('usage', {}); AI['in'] += u.get('input_tokens', 0); AI['out'] += u.get('output_tokens', 0)
     text = ''.join(b.get('text', '') for b in d.get('content', []) if b.get('type') == 'text')
     m = re.search(r'\{.*\}', text, re.S)
-    return (json.loads(m.group(0)).get('lines') if m else None), d.get('model', MODEL)
+    if not m: raise ValueError('no JSON in the answer')
+    return json.loads(m.group(0)).get('lines'), d.get('model', MODEL)
 
 
 # ---------------------------------------------------------------- GitHub Actions metrics
@@ -467,24 +469,26 @@ def main():
         p = prev_days.get(d)
         if p and p.get('digest') == digest and p.get('summary', {}).get('method') in ('ai-checked',) and complete:
             x['summary'] = p['summary']; continue
-        if p and p.get('digest') == digest and p.get('summary', {}).get('method') == 'deterministic' and p['summary'].get('fallback_reason') and complete:
+        if p and p.get('digest') == digest and p.get('summary', {}).get('method') == 'deterministic' and p['summary'].get('fallback_reason') and p['summary'].get('v') == CHECK_V and complete:
             x['summary'] = p['summary']; continue      # AI already tried and rejected for exactly these commits: do not pay again
         if not complete:
             x['summary'] = deterministic(x['commits'], so_far=True); continue
         if key and ai_days < MAX_AI_DAYS_RUN:
             ai_days += 1
             try:
-                lines, model = ai_summary(d, x['commits'], key)
+                try: lines, model = ai_summary(d, x['commits'], key)
+                except (ValueError, json.JSONDecodeError): lines, model = ai_summary(d, x['commits'], key)   # one retry on an unreadable answer
                 ok, reasons, checked = check_ai(lines, x['commits'], privacy)
                 if ok:
                     x['summary'] = {'lines': checked, 'method': 'ai-checked', 'model': model, 'checks': reasons, 'written_at': iso(now_utc())}
                 else:
-                    x['summary'] = deterministic(x['commits']); x['summary']['fallback_reason'] = '; '.join(reasons)[:300]
+                    x['summary'] = deterministic(x['commits']); x['summary']['fallback_reason'] = '; '.join(reasons)[:300]; x['summary']['v'] = CHECK_V
                     x['summary']['rejected_ai'] = lines if isinstance(lines, list) else None
                 print('%s: %s %s' % (d, x['summary']['method'], '' if ok else reasons))
             except Exception as e:
                 print('%s: AI not used (%s)' % (d, str(e)[:160]))
                 x['summary'] = deterministic(x['commits'])
+                if isinstance(e, (ValueError, json.JSONDecodeError)): x['summary'].update(fallback_reason='the AI answer could not be read twice', v=CHECK_V)
         else:
             x['summary'] = deterministic(x['commits'])
 
