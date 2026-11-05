@@ -68,7 +68,7 @@ var KB = (function(){
       '<div class="ap-badges"><span class="ap-badge ' + v[1] + '">' + (c.verdict === 'pending' ? '● ' : '') + v[0] + '</span>' + (c.paid ? '' : '<span class="ap-badge hold">' + (firstCase && u.status === 'pending' ? 'Confirming payment' : 'Not paid yet') + '</span>') + (c.eta && st < 5 ? '<span class="ap-badge">Report due ' + fmt(c.eta) + (days(c.eta) >= 0 ? ' · ' + days(c.eta) + ' days' : '') + '</span>' : '') + '</div>' +
       '<ol class="ap-steps">' + steps + '</ol>' +
       '<div class="ap-now"><span class="ap-k">Now</span><div style="margin-top:4px">' + esc(c.stage_note || STAGE_HELP[st]) + '</div></div></section>';
-    if (!c.paid && (u.status !== 'pending' || !firstCase)) h += '<section class="ap-card" id="paycta" style="border-color:var(--hi)"><h2>Start this check</h2><p class="ap-muted">Pay €490 to start the full check of this project. Full refund if we can\'t take the case.</p><a class="ap-btn" href="' + PAY + '" rel="noopener" data-bc>Pay €490 with PayPal</a></section>';
+    if (!c.paid && (u.status !== 'pending' || !firstCase)) h += '<section class="ap-card" id="paycta" style="border-color:var(--hi)"><h2>Start this check</h2><p class="ap-muted">Pay €490 to start the full check of this project. Full refund if we can\'t take the case.</p><a class="ap-btn" href="' + PAY + '" rel="noopener" data-bc data-pid="' + esc(c.id) + '">Pay €490 with PayPal</a>' + (D.cases.filter(function(z){ return !z.paid; }).length > 1 ? '<p class="ap-small" style="margin:8px 0 0">You have more than one unpaid case: this payment starts this one.</p>' : '') + '</section>';
     // report
     h += '<section class="ap-card"><h2>Your report</h2>' + (c.report_url ? '<div class="ap-report"><svg viewBox="0 0 40 40"><rect x="6" y="3" width="28" height="34" rx="4" fill="#17212B"/><path d="M12 13h16M12 19h16M12 25h10" stroke="#FF5B14" stroke-width="2.5" stroke-linecap="round"/></svg><div style="flex:1"><b>Report ready</b><div class="ap-small ap-muted">Verdict: ' + v[0] + '</div></div><a class="ap-btn" href="' + esc(c.report_url) + '" target="_blank" rel="noopener">Download</a></div>'
       : '<div class="ap-empty">Your written report appears here the day it\'s ready' + (c.eta ? ' (due ' + fmt(c.eta) + ')' : '') + '. <a href="/cases/files/kolaboro-report-example-safe-to-pay.pdf" target="_blank" rel="noopener">See an example report</a>.</div>') + '</section>';
@@ -249,12 +249,16 @@ var KB = (function(){
   $('pwb').onclick = function(){ var o = prompt('Current password'); if (!o) return; var n = prompt('New password (at least 8 characters)'); if (!n) return; call('password', { old: o, 'new': n }).then(function(d){ KB.toast(d.error ? (d.error === 'wrong' ? 'Current password is wrong' : 'Use at least 8 characters') : 'Password changed'); }); };
   function newCase(){ var u = prompt('Website of the project you want us to check'); if (!u) return; load('new_case', { project_url: u }).then(function(){ CUR = D.cases[0].id; render(); KB.toast('New case opened'); }); }
   var lb = $('lng'); if (lb) { lb.textContent = window.KB_LANG === 'es' ? 'EN' : 'ES'; lb.title = window.KB_LANG === 'es' ? 'View in English' : 'Ver en español'; lb.onclick = function(){ try { localStorage.setItem('kb-lang', window.KB_LANG === 'es' ? 'en' : 'es'); } catch (e) {} location.reload(); }; }
-  document.addEventListener('click', function(e){ if (e.target.closest && e.target.closest('a[data-bc]')) { try { gtag('event','begin_checkout',{value:490,currency:'EUR',source:'portal'}); clarity('event','begin_checkout'); } catch(x){} } });
+  document.addEventListener('click', function(e){ var a = e.target.closest && e.target.closest('a[data-bc]'); if (a) { try { gtag('event','begin_checkout',{value:490,currency:'EUR',source:'portal'}); clarity('event','begin_checkout'); } catch(x){}
+    // more than one unpaid case: mark this case as the one the next payment starts (kolaboro_portal pay_next), then go to PayPal
+    var id = a.getAttribute('data-pid'); if (!id || !D || !D.cases || D.cases.filter(function(z){ return !z.paid; }).length < 2) return;
+    if (e.ctrlKey || e.metaKey || e.shiftKey) { call('pay_next', { case_id: id }); return; }
+    e.preventDefault(); var go = function(){ location.href = a.href; }; call('pay_next', { case_id: id }).then(go, go); setTimeout(go, 4000); } });
   $('newc').onclick = newCase; document.addEventListener('click', function(e){ if (e.target.id === 'nc2') newCase(); });
   load('me');
   setInterval(function(){ if (!document.hidden && !document.activeElement.closest('form')) load('me'); }, 45000);
 })();
-</script><script src="/k/case.js?v=3e2cd587e6"></script><script src="/k/cycle.js?v=c7a4"></script>
+</script><script src="/k/case.js?v=3e2cd587e6"></script><script src="/k/cycle.js?v=c7m7"></script>
 <script>
 (function(){ var K = 'kb-portal-tour'; try { if (localStorage.getItem(K)) return; } catch (e) { return; }
   var steps = [['Your case, stage by stage', 'Six stages, each with a date: case opened, documents, land and title, building permit, site visit, report. Nothing is "almost done".'],
