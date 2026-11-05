@@ -55,7 +55,7 @@
         h += '<div class="ft-m"><div><a href="/p/?id=' + encodeURIComponent(c) + '">Project ' + esc(c) + '</a>' +
           '<p>' + (r.d === 0 ? 'Identical hash' : r.d <= 5 ? 'Near-identical' : r.d <= LIM ? 'Very similar: likely the same picture, resized, recompressed or lightly edited' : 'Similar layout of light and dark; check by eye') + ' (' + esc(r.how) + ')' +
           (byCase[c].length > 1 ? '. ' + byCase[c].length + ' of its images are close.' : '.') + '</p>' +
-          '<p><a href="' + esc(it[1]) + '" target="_blank" rel="noopener noreferrer nofollow">Open the indexed image</a> <span class="ft-file">(opens the developer\'s or portal\'s file in a new tab)</span></p></div>' +
+          (it[1] ? '<p><a href="' + esc(it[1]) + '" target="_blank" rel="noopener noreferrer nofollow">Open the indexed image</a></p>' : '') + '</div>' +
           '<div class="d">' + r.d + '<small>of 64 bits differ</small></div></div>';
       });
       h += '</div>';
