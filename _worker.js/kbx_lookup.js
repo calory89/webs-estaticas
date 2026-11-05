@@ -592,7 +592,9 @@ async function coverage(env) {
 async function stats(ctx) {
   try {
     const d = await rpc('kolaboro_public_stats', {});
-    return out({ lookups: (d.runs && d.runs.lookup) || 0, lookups_7d: (d.runs_7d && d.runs_7d.lookup) || 0, p50_ms_7d: (d.p50_ms_7d && d.p50_ms_7d.lookup) || null, source: 'kolaboro_api_runs (kind lookup), one row per completed lookup that was not served from cache', generated_at: d.generated_at }, 200, { 'cache-control': 'public, max-age=60' });
+    const on = !!(d.runs && 'lookup' in d.runs);
+    if (!on) return out({ counting: false, lookups: null, note: 'The lookup counter starts once the database accepts the lookup log kind (pending approval). No number is shown until then.' }, 200, { 'cache-control': 'public, max-age=60' });
+    return out({ counting: true, lookups: (d.runs && d.runs.lookup) || 0, lookups_7d: (d.runs_7d && d.runs_7d.lookup) || 0, p50_ms_7d: (d.p50_ms_7d && d.p50_ms_7d.lookup) || null, source: 'kolaboro_api_runs (kind lookup), one row per completed lookup that was not served from cache', generated_at: d.generated_at }, 200, { 'cache-control': 'public, max-age=60' });
   } catch (e) { return out({ error: 'db' }, 503); }
 }
 export async function handle(req, u, env, ctx) {
