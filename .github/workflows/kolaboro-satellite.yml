@@ -34,14 +34,29 @@ jobs:
           set -e
           git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
           git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          # Images go into per-area packs (k/sat/<area>*.pack + k/sat/packs.json, tools/kolaboro-agent/satpack.py), not single files:
+          # the Pages project is near its 20,000-file limit. The kolaboro.com worker (_worker.js/kbsat.js) serves the same URLs.
+          K=_s/kolaboro.com/k/sat
           for i in 1 2 3 4 5; do
             P=$(git rev-parse FETCH_HEAD)
+            rm -rf $RUNNER_TEMP/cur $RUNNER_TEMP/pk; mkdir -p $RUNNER_TEMP/cur
+            git cat-file blob $P:$K/packs.json > $RUNNER_TEMP/cur/packs.json   # no index: stop, never rebuild it from one run
+            python3 - "$RUNNER_TEMP/cur/packs.json" "$RUNNER_TEMP/sat" > $RUNNER_TEMP/need.txt <<'EOF'
+          import json, os, sys
+          areas = {d for d in os.listdir(sys.argv[2]) if os.path.isdir(os.path.join(sys.argv[2], d))}
+          print('\n'.join(sorted({e[0] for r, e in json.load(open(sys.argv[1]))['files'].items() if r.split('/', 1)[0] in areas})))
+          EOF
+            while read p; do if [ -n "$p" ]; then git cat-file blob $P:$K/$p > $RUNNER_TEMP/cur/$p; fi; done < $RUNNER_TEMP/need.txt
+            python3 tools/kolaboro-agent/satpack.py merge --cur $RUNNER_TEMP/cur --new "$RUNNER_TEMP/sat" --out $RUNNER_TEMP/pk > $RUNNER_TEMP/drop.txt
+            python3 tools/kolaboro-agent/satpack.py verify --packs $RUNNER_TEMP/pk --partial
             export GIT_INDEX_FILE=$RUNNER_TEMP/idx; rm -f $GIT_INDEX_FILE; git read-tree $P
-            (cd "$RUNNER_TEMP/sat" && find . -type f ! -name satellite.json | sed 's|^\./||') | while read f; do
-              H=$(git hash-object -w "$RUNNER_TEMP/sat/$f"); git update-index --add --cacheinfo 100644,$H,_s/kolaboro.com/k/sat/$f; done
+            for f in $(ls $RUNNER_TEMP/pk); do H=$(git hash-object -w $RUNNER_TEMP/pk/$f); git update-index --add --cacheinfo 100644,$H,$K/$f; done
+            sed -n 's/^drop //p' $RUNNER_TEMP/drop.txt | while read p; do git update-index --force-remove "$K/$p"; done
+            # a single file left from the old layout would shadow its pack copy: remove it
+            (cd "$RUNNER_TEMP/sat" && find . -mindepth 2 -type f | sed 's|^\./||') | while read f; do git update-index --force-remove "$K/$f"; done
             H=$(git hash-object -w "$RUNNER_TEMP/sat/satellite.json")
             git update-index --add --cacheinfo 100644,$H,_s/kolaboro.com/data/satellite.json
-            T=$(git write-tree); unset GIT_INDEX_FILE
+            T=$(git write-tree --missing-ok); unset GIT_INDEX_FILE
             [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
             C=$(git commit-tree $T -p $P -m "kolaboro.com: satellite watch $(date -u +%F)")
             git push -q origin $C:refs/heads/pub/_lovable && exit 0
