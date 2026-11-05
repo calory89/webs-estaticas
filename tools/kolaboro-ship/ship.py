@@ -362,7 +362,7 @@ def day_page(template, day, prev_page, next_page):
     main = (
         '<main id="main">\n<section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / <a href="/changelog">Changelog</a> / %s</p>'
         '<h1>What we shipped on %s</h1><p class="lead">%d change%s shipped on %s (UTC), counted from the commits that reached the live site. '
-        '%s</p><p class="d3t" style="display:inline-block;margin-top:10px">Written automatically from the day\'s commits, checked by code</p></div></section>\n'
+        '%s</p><p style="display:inline-block;margin-top:12px;font-size:.78rem;font-weight:800;text-transform:uppercase;letter-spacing:.03em;border-radius:6px;padding:3px 8px;background:#F2EFE6;color:#5A4A12">Written automatically from the day\'s commits, checked by code</p></div></section>\n'
         '<section class="sec"><div class="wrap d3">\n'
         '<div class="eg-k"><div><b>%d</b><span>changes shipped</span></div><div><b>%d</b><span>automatic data updates</span></div>'
         '<div><b>%d</b><span>automatic rollbacks</span></div><div><b>%d</b><span>summary lines</span></div></div>\n'
