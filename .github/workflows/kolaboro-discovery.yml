@@ -1,0 +1,63 @@
+name: Kolaboro discovery data
+# Nightly (block U6, batch 6): market points for /map/ from public gazetteers and the 5 most similar projects for every
+# public project (open sentence-embedding model run on the runner, no API). Input is only the public /data/bali-cases.json.
+# Publishes /data/market-points.json and /data/similar.json to kolaboro.com.
+on:
+  schedule:
+    - cron: '23 2 * * *'
+  workflow_run:
+    workflows: ['Kolaboro research agent']
+    types: [completed]
+  push:
+    branches: [main]
+    paths: ['tools/kolaboro-disc/**', '.github/workflows/kolaboro-discovery.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-discovery
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: tools/kolaboro-disc
+      - name: Inputs (public dataset and gazetteers)
+        run: |
+          set -e
+          G=$RUNNER_TEMP/gaz; mkdir -p $G
+          curl -sSfL --retry 3 -o $RUNNER_TEMP/cases.json https://kolaboro.com/data/bali-cases.json
+          curl -sSfL --retry 3 -o $G/ne_10m_populated_places_simple.geojson https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_populated_places_simple.geojson
+          curl -sSfL --retry 3 -o $G/ne_50m_admin_0_countries.geojson https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson
+          curl -sSfL --retry 3 -o $G/cities1000.zip https://download.geonames.org/export/dump/cities1000.zip
+          (cd $G && unzip -q -o cities1000.zip)
+      - name: Model (CPU only)
+        run: |
+          pip install -q --index-url https://download.pytorch.org/whl/cpu torch
+          pip install -q sentence-transformers numpy
+      - name: Build
+        run: python3 tools/kolaboro-disc/build.py $RUNNER_TEMP/cases.json $RUNNER_TEMP/gaz $RUNNER_TEMP/out
+      - name: Publish to kolaboro.com
+        run: |
+          set -e
+          O=$RUNNER_TEMP/out
+          python3 -c "import json,sys; [json.load(open(f)) for f in sys.argv[1:]]" $O/market-points.json $O/similar.json
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          for i in 1 2 3 4 5; do
+            P=$(git rev-parse FETCH_HEAD)
+            export GIT_INDEX_FILE=$RUNNER_TEMP/idx; rm -f $GIT_INDEX_FILE; git read-tree $P
+            for f in market-points similar; do
+              H=$(git hash-object -w "$O/$f.json")
+              git update-index --add --cacheinfo 100644,$H,_s/kolaboro.com/data/$f.json
+            done
+            T=$(git write-tree); unset GIT_INDEX_FILE
+            [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
+            C=$(git commit-tree $T -p $P -m "kolaboro.com: discovery data (market points, similar projects) $(date -u +%F)")
+            git push -q origin $C:refs/heads/pub/_lovable && exit 0
+            sleep 5; git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          done; exit 1
