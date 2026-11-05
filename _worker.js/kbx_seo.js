@@ -83,7 +83,8 @@ async function base(env, inner) {
 }
 // The /registers/ page is our own static HTML: one card per market or country, one item per register.
 export const NOT_REVIEWED = 'Not yet reviewed by Kolaboro';
-function reviewed(c) { return c.profile != null || Object.values(c.verified || {}).some(v => v && v !== 'none') || !!c.fp; }
+// same rule as the named project pages (kbx_named.js): reviewed only when at least one buyer check has verification evidence
+function reviewed(c) { return !!(c && c.verified && Object.values(c.verified).some(v => v && v !== 'none')); }
 function parseRegisters(h) {
   const out = [];
   if (!h) return out;
