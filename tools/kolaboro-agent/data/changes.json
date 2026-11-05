@@ -11827,5 +11827,16 @@
     50
    ]
   }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "j-hills",
+  "name": "J-Hills",
+  "changed": {
+   "title_type": [
+    "leasehold",
+    null
+   ]
+  }
  }
 ]

@@ -2,11 +2,11 @@
  "run": {
   "date": "2026-11-05",
   "mode": "ai",
-  "pages_ok": 645,
-  "pages_failed": 84,
-  "changes": 48,
+  "pages_ok": 72,
+  "pages_failed": 4,
+  "changes": 1,
   "model": "claude-haiku-5-5",
-  "usd_estimate": 1.428
+  "usd_estimate": 0.027
  },
  "latest": {
   "every-bali": {
@@ -503,14 +503,14 @@
     "plans_published": false,
     "escrow_or_guarantee": null,
     "quotes": [
-     "From $191.000 USD",
      "30 years leasehold ownership.",
+     "7-14% yearly passive income*.",
      "14% - 17% ROI Forecast"
     ]
    },
    "source": "ai",
-   "hash": "4ee2bbfd65c8d558",
-   "sha256": "4ee2bbfd65c8d558495e3c75542297128b8261c08be211c03915f4496c572cd0",
+   "hash": "05cbd4bddce99560",
+   "sha256": "05cbd4bddce99560945c1d7e7ae2f6b634b11870206e8b079f0f7d699cca9399",
    "sealed": "2026-11-05",
    "checked": "2026-11-05"
   },
@@ -606,7 +606,7 @@
    "claims": {
     "price_from": 99900,
     "currency": "USD",
-    "title_type": "leasehold",
+    "title_type": null,
     "lease_years_base": 33,
     "extension_promised": true,
     "guaranteed_language": false,
@@ -617,14 +617,14 @@
     "plans_published": true,
     "escrow_or_guarantee": null,
     "quotes": [
-     "Flexible lease terms (33+26 years), affordable rates from $99,900",
-     "A reliable real estate developer: PT Homevibe Development Group with a proven track record",
-     "Not a public offer, all prices are posted for information."
+     "Flexible lease terms (33+26 years), affordable rates from $99,900, and high demand for the properties.",
+     "Date of delivery 2nd quarter 2027",
+     "In these complexes you can be sure for all 100% in quality and delivery dates"
     ]
    },
    "source": "ai",
-   "hash": "7a464caf7ecbc6c4",
-   "sha256": "7a464caf7ecbc6c43afb1119c2b69f3db2e8dbbca5875c83cc65593a8883f652",
+   "hash": "ac585081282530a2",
+   "sha256": "ac585081282530a2e2e6a434dfbc0524c3d6e72f656565ad8fd71d9539f1e7e1",
    "sealed": "2026-11-05",
    "checked": "2026-11-05"
   },
@@ -646,14 +646,14 @@
     "plans_published": false,
     "escrow_or_guarantee": null,
     "quotes": [
+     "$95 400 Starting price",
      "Q1 2027 Date of delivery",
-     "Installment 0% up to two years 70% from $66 780",
      "In these complexes you can be sure for all 100% in quality and delivery dates"
     ]
    },
    "source": "ai",
-   "hash": "785af84ef0df5278",
-   "sha256": "785af84ef0df5278f77801b37f83f649ce370fcaa1e87810438ed178a2e78d7c",
+   "hash": "955eeef63ae747ac",
+   "sha256": "955eeef63ae747ac4d65ea44f50421a44318d611f0a18b6fb9bce0b66917216c",
    "sealed": "2026-11-05",
    "checked": "2026-11-05"
   },
@@ -2217,7 +2217,8 @@
    "hash": "da464e0cd44c1958",
    "sha256": "da464e0cd44c1958cd53ea548228d91cd3758da3cd7ad685a20fe581353810f0",
    "sealed": "2026-11-05",
-   "checked": "2026-11-05"
+   "checked": "2026-11-05",
+   "last_error": "call budget reached"
   },
   "citygate-de-phuket": {
    "name": "Citygate de Phuket",
