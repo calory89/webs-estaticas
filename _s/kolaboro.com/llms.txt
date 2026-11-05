@@ -122,7 +122,6 @@
 - [Weekly market digest and change heatmap](https://kolaboro.com/digest/)
 - [Explain any project's score, and ask about one project](https://kolaboro.com/explain/)
 - [World map and market comparison](https://kolaboro.com/compare/markets/)
-- [Hourly findings from developer pages, checked by code, with cost per run](https://kolaboro.com/findings/)
 - [Open-source verifiers, scoring rules and transparency index (MIT), with CI that checks they match the live site](https://github.com/calory89/kolaboro-open)
 - [Natural hazards at any plot: six open sources read live (elevation, flood model, earthquakes, tsunami run-ups, volcanoes, coastline), each with its query and limits; zoning guide for Indonesia, no zone guessed](https://kolaboro.com/hazards/)
 - [Company graph: UK projects matched on Companies House, their directors' other companies, anonymised; exact-name court search](https://kolaboro.com/graph/)
