@@ -43,7 +43,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 tools/kolaboro-seo/audit.py "$RUNNER_TEMP/seo"
       - name: Publish to kolaboro.com
-        run: bash tools/kolaboro-reliability/publish.sh "kolaboro.com: SEO crawl audit $(date -u +%FT%H:%M)" "$RUNNER_TEMP/seo/seo-audit.json=_s/kolaboro.com/data/seo-audit.json"
+        run: |
+          bash tools/kolaboro-reliability/publish.sh "kolaboro.com: SEO crawl audit $(date -u +%FT%H:%M)" "$RUNNER_TEMP/seo/seo-audit.json=_s/kolaboro.com/data/seo-audit.json"
   indexnow:
     if: github.event_name == 'workflow_run' || (github.event_name == 'schedule' && github.event.schedule == '41 */3 * * *') || github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && github.event.inputs.job != 'audit')
     runs-on: ubuntu-latest
