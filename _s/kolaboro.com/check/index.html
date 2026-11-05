@@ -314,7 +314,7 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
     if (lvZero) $('az-lvf').textContent = '* Our server is a Cloudflare Worker, whose clock only moves while it waits for the network. Steps that are pure computation therefore measure 0 ms: they took less time than the clock can see.';
   }
   function streamReview(email){
-    return fetch('/api/x/b/review', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ url: url, email: email || '', company: $('az-co').value }) }).then(function(r){
+    return fetch('/api/x/b/review', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ url: url, email: email || '', company: $('az-co').value, lang: document.documentElement.lang || 'en' }) }).then(function(r){
       if (!/event-stream/.test(r.headers.get('content-type') || '')) return r.json().catch(function(){ return {}; }).then(function(d){ if (r.status === 404 || r.status === 405 || r.status >= 500 && !d.error) throw new Error('nostream'); return { status: r.status, d: d }; });
       if (!r.body || !r.body.getReader) throw new Error('nostream');
       var rd = r.body.getReader(), dec = new TextDecoder(), buf = '', res = null, err = null, errE = null;
@@ -333,7 +333,7 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   }
   function legacyReview(email){
     $('az-prog').innerHTML = '<li class="run"><div><b>Reading the website</b><small>Live steps are not available right now, so this review runs without them.</small></div><code></code></li>';
-    return fetch('/api/kb/analyze', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ url: url, email: email || '', company: $('az-co').value }) })
+    return fetch('/api/kb/analyze', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ url: url, email: email || '', company: $('az-co').value, lang: document.documentElement.lang || 'en' }) })
       .then(function(r){ return r.json().then(function(d){ return { status: r.status, d: d }; }); });
   }
   function run(email){
@@ -468,7 +468,7 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
     }
     if (d.not_property || r.page_kind === 'not_real_estate') {
       $('az-4').innerHTML = '<p class="az-k">Desk review</p><h2>' + esc(d.host) + ' is not a property project</h2>' +
-        '<p class="lead">' + esc(r.site_about ? 'It looks like ' + (/^(a|an|the)\s/i.test(r.site_about) ? r.site_about.charAt(0).toLowerCase() + r.site_about.slice(1) : (/^[aeiou]/i.test(r.site_about) ? 'an ' : 'a ') + (/^[A-Z][a-z]+\s+[a-z]/.test(r.site_about) && !/^(Spanish|English|French|German|Italian|Danish|American|British|Indonesian|Mexican|Portuguese|Thai|Dutch)/.test(r.site_about) ? r.site_about.charAt(0).toLowerCase() + r.site_about.slice(1) : r.site_about)).replace(/\.$/, '') + '.' : 'We could not find anything about a property for sale on this page.') + ' There is nothing for us to check here.</p>' +
+        '<p class="lead">' + esc(r.site_about ? 'It looks like ' + (d.lang && d.lang !== 'en' ? r.site_about : /^(a|an|the)\s/i.test(r.site_about) ? r.site_about.charAt(0).toLowerCase() + r.site_about.slice(1) : (/^[aeiou]/i.test(r.site_about) ? 'an ' : 'a ') + (/^[A-Z][a-z]+\s+[a-z]/.test(r.site_about) && !/^(Spanish|English|French|German|Italian|Danish|American|British|Indonesian|Mexican|Portuguese|Thai|Dutch)/.test(r.site_about) ? r.site_about.charAt(0).toLowerCase() + r.site_about.slice(1) : r.site_about)).replace(/\.$/, '') + '.' : 'We could not find anything about a property for sale on this page.') + ' There is nothing for us to check here.</p>' +
         '<p>Kolaboro reviews the website of an <b>off-plan project</b>, a <b>developer</b> or a <b>property listing</b>. Paste the page of the home you want to buy, for example the project page on the developer\'s site or the listing on a portal.</p>' + pagesFound(r.pages_found, 'Other pages on this site you could check:') +
         '<p><button class="btn btn-hi" type="button" id="az-again">Check another link</button></p>';
       show(4); var ag = $('az-again'); if (ag) ag.onclick = function(){ $('az-url').value = ''; show(1); setTimeout(function(){ $('az-url').focus(); }, 300); };

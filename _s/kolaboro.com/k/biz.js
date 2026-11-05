@@ -317,11 +317,10 @@
     return adm('case_update', { id: id, stage: stage, log_note: 'Moved to ' + STG[stage] + ' from the admin' }).then(function(d){ if (!fail(d)) A.reload(); });
   }
 
-  // ---------- saved checks (kolaboro_saved, ref CHK-...), watch and pay_next. The admin payload carries only the count of
-  // saved rows, so the list is read on request through the buyer's own portal view: kolaboro_admin 'impersonate' (audited)
-  // gives a 2-hour admin-view token, kolaboro_portal 'me' returns saved[] {ref, at, snap, note} and cases[] with pay_next,
-  // and the token is closed straight away with 'logout'. If kolaboro_admin ever returns users[].saved_list and
-  // cases[].pay_next / watch itself (see MIGRATION_PROPOSAL.sql), those are used directly and no session is opened.
+  // ---------- saved checks (kolaboro_saved, ref CHK-...), watch and pay_next. Since migration adm8 (5 Nov 2026) kolaboro_admin
+  // 'all' returns users[].saved_list (latest 50 rows {ref, at, note, snap}) and cases[].pay_next / watch: those are used directly
+  // and no session is opened. Fallback only when the fields are absent (an older payload): read on request through the buyer's
+  // own portal view, kolaboro_admin 'impersonate' (audited) + kolaboro_portal 'me' + 'logout' straight away.
   function caseFlag(p, c, k){ if (c && c[k] != null) return !!c[k]; var S = p && p.user && SAVED[p.user.id]; var m = S && S.cases && S.cases.filter(function(x){ return x.id === c.id; })[0]; return m && m[k] != null ? !!m[k] : null; }
   function payNext(p){
     var un = (p.cases || []).filter(function(c){ return !c.paid; }); if (!un.length) return null;
@@ -353,19 +352,19 @@
   }
   function savedCard(p){
     var u = p.user; if (!u) return '';
-    var S = SAVED[u.id] || (Array.isArray(u.saved_list) ? { saved: u.saved_list, direct: true } : null), n = S ? S.saved.length : (+u.saved || 0);
+    var S = Array.isArray(u.saved_list) ? { saved: u.saved_list, direct: true } : SAVED[u.id] || null, n = Math.max(S ? S.saved.length : 0, +u.saved || 0);
     var h = '<div class="card" id="bz-sv"><h2>Saved checks and watchlist <span class="pill">' + n + '</span></h2>';
     if (!S) return h + (n ? '<p class="muted" style="margin:0 0 8px">' + n + ' item(s) saved in their account: register checks (CHK-…) from /check and tracked projects. The details stay in their account until you open them.</p><button class="btn2" type="button" id="bz-svl">Show saved checks, register results and watch status</button><p class="muted" style="font-size:.78rem;margin:6px 0 0">Reads their account through a short read-only admin view (recorded as "impersonate" in the audit log) and closes it straight away.</p>' : '<p class="muted" style="margin:0">Nothing saved yet. Checks they run on /check while logged in are saved to their account and show up here.</p>') + '</div>';
     var chk = S.saved.filter(function(v){ return /^CHK-/i.test(v.ref || ''); }), other = S.saved.filter(function(v){ return !/^CHK-/i.test(v.ref || ''); });
     var w = chk.filter(function(v){ return v.snap && v.snap.w; }).length, regs = [], hit = 0;
     chk.forEach(function(v){ ((v.snap && v.snap.reg) || []).forEach(function(i){ regs.push(i); if (i.f === true || i.f === 'true') hit++; }); });
-    h += '<p class="muted" style="margin:0 0 6px">' + chk.length + ' check(s) · ' + w + ' watched · ' + regs.length + ' register answer(s), ' + hit + ' found' + (S.at ? ' · read ' + esc(ago(S.at)) : '') + (S.direct ? '' : ' <button class="btn-s" type="button" id="bz-svl">Read again</button>') + '</p>';
+    h += '<p class="muted" style="margin:0 0 6px">' + chk.length + ' check(s) · ' + w + ' watched · ' + regs.length + ' register answer(s), ' + hit + ' found' + (S.direct && n > S.saved.length ? ' · showing the latest ' + S.saved.length + ' of ' + n : '') + (S.at ? ' · read ' + esc(ago(S.at)) : '') + (S.direct ? '' : ' <button class="btn-s" type="button" id="bz-svl">Read again</button>') + '</p>';
     h += chk.map(savedItem).join('') || '<p class="muted">No register check saved, only tracked projects.</p>';
     if (other.length) h += '<p style="margin:10px 0 0;font-size:.88rem"><b>Tracked projects</b> <small class="muted">(saved from the project lists)</small><br>' + other.map(function(v){ return esc(v.ref) + (v.note ? ' <small class="muted">' + esc(String(v.note).slice(0, 60)) + '</small>' : ''); }).join(', ') + '</p>';
     return h + '</div>';
   }
   function loadSaved(p, btn){
-    var u = p.user; if (!u) return; btn.disabled = true; btn.textContent = 'Reading their account…';
+    var u = p.user; if (!u || Array.isArray(u.saved_list)) return; btn.disabled = true; btn.textContent = 'Reading their account…';
     var err = function(m){ btn.disabled = false; btn.textContent = 'Try again'; var e = document.createElement('p'); e.style.color = 'var(--bad)'; e.style.margin = '6px 0 0'; e.setAttribute('role', 'alert'); e.textContent = m; btn.parentNode.insertBefore(e, btn.nextSibling); };
     adm('impersonate', { user_id: u.id }).then(function(d){
       if (!d || !d.token) { if (!d || d.error !== 'denied') err('Could not open their account. ' + (A.err && d ? A.err(d) : '')); return; }

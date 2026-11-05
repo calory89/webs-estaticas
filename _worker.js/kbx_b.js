@@ -5,7 +5,7 @@
 //                                   review reads it as an untrusted page; the answer is compared with the same page without the text.
 //   POST /api/x/b/redteam/submit    hand in an attack that changed the verdict, for the public eval suite (needs table m10/b.sql; until then: email)
 //   GET  /api/x/b/redteam/baseline  the baseline answer, if it has been computed (no AI call)
-import { json, sha, aiAllowed, signBody, deskReview, pageParts, okUrl, fetchPage, deskCacheKey, isTracked, rateLimited, logApi, rpcW, CRIT, critNorm, PUB_RAW_B64 } from './kolaboro.js';
+import { json, sha, aiAllowed, signBody, deskReview, pageParts, okUrl, fetchPage, deskCacheKey, deskLang, isTracked, rateLimited, logApi, rpcW, CRIT, critNorm, PUB_RAW_B64 } from './kolaboro.js';
 
 export const PATHS = /^\/api\/x\/b\//;
 
@@ -37,7 +37,7 @@ async function review(req, env, ctx) {
   if (b.company) return json({ error: 'bad_request' }, 400);
   const u = okUrl(String(b.url || '').trim().slice(0, 500));
   if (!u) return json({ error: 'url' }, 400);
-  const host = u.hostname.replace(/^www\./, ''), tracked = isTracked(host), ck = deskCacheKey(u), cache = caches.default, t0 = Date.now();
+  const lang = deskLang(b.lang), host = u.hostname.replace(/^www\./, ''), tracked = isTracked(host), ck = deskCacheKey(u, lang), cache = caches.default, t0 = Date.now();
   const hit = await cache.match(ck);
   if (hit) {
     const d = await hit.json();
@@ -53,11 +53,11 @@ async function review(req, env, ctx) {
     await send({ type: 'step', step: 'fetch', ms: Date.now() - t, ok: !pg.error, status: pg.status || null, bytes: pg.bytes || 0, redirects: pg.hops || 0, blocked: pg.error === 'blocked' || undefined, detail: pg.detail || undefined });
     if (pg.error) { await send({ type: 'error', error: pg.error === 'blocked' ? 'blocked' : 'fetch', status: pg.status || null, detail: pg.detail || null }); ctx.waitUntil(logApi('analyze', false, false, Date.now() - t0)); return; }
     let dr;
-    try { dr = await deskReview(env, u.toString(), pg.html, { step: e => send(Object.assign({ type: 'step' }, e)) }); }
+    try { dr = await deskReview(env, u.toString(), pg.html, { lang, step: e => send(Object.assign({ type: 'step' }, e)) }); }
     catch (e) { await send({ type: 'error', error: 'model', detail: String(e.message || e).replace(/sk-[\w-]+/g, '').slice(0, 160) }); ctx.waitUntil(logApi('analyze', false, false, Date.now() - t0)); return; }
     if (dr.error) { await send({ type: 'error', error: dr.error, read_chars: dr.read_chars, pages_found: dr.pages_found || [] }); ctx.waitUntil(logApi('analyze', false, false, Date.now() - t0)); return; }
     const out = dr.report, notProp = dr.not_property;
-    const res = { url: u.toString(), host, analysed: new Date().toISOString(), report: out, not_property: notProp, hidden_blocks_removed: dr.hidden_blocks_removed, prompt_sha256: dr.prompt_sha256 };
+    const res = { url: u.toString(), host, analysed: new Date().toISOString(), report: out, not_property: notProp, hidden_blocks_removed: dr.hidden_blocks_removed, prompt_sha256: dr.prompt_sha256, lang };
     t = Date.now();
     const body = JSON.stringify(res), h = await sha(body);
     let sig = null; try { sig = await signBody(env, body); } catch (e) {}
