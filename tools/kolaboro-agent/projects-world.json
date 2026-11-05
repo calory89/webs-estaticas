@@ -176079,6 +176079,1578 @@
    "added": "2026-11-05",
    "found_by": "discover-agent",
    "slug": "vila-gra-a-lisbon"
+  },
+  {
+   "name": "Mountain Residences at Palmilla Reserve",
+   "developer": "Fortem Capital with Kerzner International (per Robb Report); marketed as Palmilla Reserve",
+   "area": "Palmilla, San José Corridor",
+   "country": "Mexico",
+   "market": "Los Cabos",
+   "stage": "off-plan",
+   "url": "https://palmillareserve.com/own/mountain-residences/",
+   "docs_url": "https://palmillareserve.com/own/mountain-residences/",
+   "permit_number": null,
+   "seed": {
+    "price": 1660000,
+    "currency": "USD",
+    "title": "Mountain Residences, limited collection of 42 residences (price is an approximate 'from' figure from an agent article dated Aug 2025, not the developer)",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 42,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "42 residences in six boutique buildings: 3-bedroom, 4-bedroom and 5-bedroom full-floor penthouses, designed by Alonso De Garay.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://palmillareserve.com/own/mountain-residences/"
+    },
+    {
+     "claim": "Pre-construction pricing available. The developer's Inner Circle portal said Phase I was nearly sold out and pricing was locked until July 31 (page is about 6 months old).",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://palmillareserve.com/inner-circle/"
+    },
+    {
+     "claim": "Mountain Residences start around US$1.66M for 3-bedroom units (agent article, Aug 2025, may be out of date).",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://laidbacklegacy.com/cabo-pre-construction-real-estate/"
+    },
+    {
+     "claim": "Buyers get access to The Reserve Club and the opportunity to join the One&Only Golf Club.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://palmillareserve.com/live/oneonly-golf-club/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "3-bedroom vista residence",
+     "4-bedroom garden residence",
+     "5-bedroom full-floor penthouse"
+    ],
+    "size_min_m2": 249,
+    "size_max_m2": 379,
+    "price_min": 1660000,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Live availability list on the developer page shows a mix of available, reserved and sold units, with a floor plan link per unit. The page does not publish prices, a permit number, escrow terms or construction progress.",
+   "positives": [
+    "Per-unit floor plans and live availability (available, reserved, sold) published",
+    "Interior sizes published per unit type (249 to 379 m2)",
+    "Sits inside the established One&Only Palmilla community"
+   ],
+   "flags": [],
+   "sources": [
+    "https://laidbacklegacy.com/cabo-pre-construction-real-estate/",
+    "https://palmillareserve.com/inner-circle/",
+    "https://palmillareserve.com/live/oneonly-golf-club/",
+    "https://palmillareserve.com/own/mountain-residences/",
+    "https://robbreport.com/shelter/new-construction/palmilla-reserve-residences-los-cabos-first-look-1236124906/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": true,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-agent",
+   "slug": "mountain-residences-at-palmilla-reserve-los-cabos"
+  },
+  {
+   "name": "Waldorf Astoria Residences Costa Rica Punta Cacique",
+   "developer": "Revolution Places (per project tracker; developer page not opened)",
+   "area": "Punta Cacique, Gulf of Papagayo, Guanacaste",
+   "country": "Costa Rica",
+   "market": "Costa Rica",
+   "stage": "under construction",
+   "url": "https://www.oftmw.com/projects/waldorf-astoria-residences-costa-rica-punta-cacique/",
+   "docs_url": "https://www.oftmw.com/projects/waldorf-astoria-residences-costa-rica-punta-cacique/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2026",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 22,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Listed as the only Costa Rica project under construction, 3 floors, 22 units, 2026 completion, status verified 28 Oct 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.oftmw.com/markets/costa-rica/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "construction_start": null,
+    "handover_promised": "2026",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Low confidence entry. I only saw a third-party project tracker (design team: Garnier Arquitectos, RoblesArq, EDSA, Gensler), not the developer's own page. It is also not confirmed that units are still on sale to foreign buyers. It was last reported about 8 weeks from delivery, so verify before adding.",
+   "positives": [
+    "Branded residence with a named developer and design team on the tracker"
+   ],
+   "flags": [],
+   "sources": [
+    "https://www.mannpublications.com/mannabouttown/2026/10/21/costa-ricas-peninsula-papagayo-breaks-ground-on-second-oceanfront-andaz-residences-neighborhood/",
+    "https://www.oftmw.com/markets/costa-rica/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-agent",
+   "slug": "waldorf-astoria-residences-costa-rica-punta-cacique-costa-ri"
+  },
+  {
+   "name": "Condominio Marea Jacó (Marea Residences)",
+   "developer": "Hogares de Costa Rica S.A.",
+   "area": "South Jacó, Garabito, Puntarenas",
+   "country": "Costa Rica",
+   "market": "Costa Rica",
+   "stage": "off-plan",
+   "url": "https://hogaresdecostarica.com/condominio-marea-jaco/",
+   "docs_url": "https://hogaresdecostarica.com/condominio-marea-jaco/",
+   "permit_number": null,
+   "seed": {
+    "price": 63134090,
+    "currency": "CRC",
+    "title": "From CRC 63,134,090 for a 39.21 m2 one-bedroom (Encuentra24 listing)",
+    "lease_base": null,
+    "guaranteed_language": true,
+    "yield_pct": null,
+    "completion": "October 2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": "Developer site lists Condominio Bliss and Condominio Studi-One as delivered",
+    "units": null,
+    "payment_plan": "Reserve with US$1,000, then 10% down payment (Encuentra24 listing)"
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "developer",
+    "returns": "developer"
+   },
+   "claims": [
+    {
+     "claim": "Developer page says the project guarantees high appreciation and constant rental demand (general marketing wording, no yield figure)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://hogaresdecostarica.com/condominio-marea-jaco/"
+    },
+    {
+     "claim": "Construction was to start in October (article dated about March 2026) with first building opening October 2027; this is a sponsored article",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.elfinancierocr.com/lab-de-ideas/entorno/marea-para-los-costarricenses-proyecto/GW6ZYQFSXBBMVN4ZJENCBPOIWE/story/"
+    },
+    {
+     "claim": "Unit size from 39.21 m2 (Encuentra24) versus 54 to 91 m2 (broker page): sources differ",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://rockfordrealestatecr.com/property/marea-jaco-condominium-modern-residential-development-in-one-of-the-fastest-growing-coastal-markets-in-costa-rica/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Barrio Don Bosco, San José, Costa Rica",
+    "construction_start": "Planned October (year not stated in the source; article dated about March 2026); not confirmed as started",
+    "handover_promised": "October 2027 (first building)",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1 bedroom with storage",
+     "2 bedroom",
+     "2 bedroom lock-off"
+    ],
+    "size_min_m2": 39.21,
+    "size_max_m2": 91,
+    "price_min": 63134090,
+    "price_max": null,
+    "deposit_pct": 10,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Six buildings of 7 and 8 levels in south Jacó. Encuentra24 tags it as presale stage 2 of 4, so I could not confirm it is under construction. It is pitched mainly at Costa Rican buyers but listed in English by agents. The developer says it has 50 years of history.",
+   "positives": [
+    "Named local developer with delivered projects listed on its own site",
+    "Low published reservation (US$1,000) and 10% down payment"
+   ],
+   "flags": [],
+   "sources": [
+    "https://hogaresdecostarica.com/",
+    "https://hogaresdecostarica.com/condominio-marea-jaco/",
+    "https://jacobeachrealty.com/properties/marea-jaco-condominiums/",
+    "https://rockfordrealestatecr.com/property/marea-jaco-condominium-modern-residential-development-in-one-of-the-fastest-growing-coastal-markets-in-costa-rica/",
+    "https://www.elfinancierocr.com/lab-de-ideas/entorno/marea-para-los-costarricenses-proyecto/GW6ZYQFSXBBMVN4ZJENCBPOIWE/story/",
+    "https://www.encuentra24.com/costa-rica-en/real-estate-preconstruction-new-property/marea-residences-pre-construction-apartments-for-sale-in-jaco-from/32697733"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": false,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-agent",
+   "slug": "condominio-marea-jac-marea-residences-costa-rica"
+  },
+  {
+   "name": "Ataşehir 173",
+   "developer": "DAP Gayrimenkul Geliştirme (DAP Yapı) with Emlak Konut GYO (revenue-sharing partner)",
+   "area": "Küçükbakkalköy, Ataşehir (Asian side)",
+   "country": "Turkey",
+   "market": "Istanbul",
+   "stage": "off-plan",
+   "url": "https://dapyapi.com.tr/en/projects/dap-atasehir",
+   "docs_url": "https://www.emlakkonut.com.tr/tr-TR/atasehi%CC%87r-173-4113",
+   "permit_number": null,
+   "seed": {
+    "price": 434000,
+    "currency": "USD",
+    "title": "Ataşehir 173",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028-06 (deal-tr listing; not stated on the developer page)",
+    "permit_claim": true,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 173,
+    "payment_plan": "Developer press (Sabah, July 2026): minimum 40% down, the rest split in two halves paid interest-free over 30 and 60 months via Emlak Katılım Tasarruf Finansman. Launch release (Feb 2026): 24 months with no interest, or up to 120 months at 1.89%. I did not see whether these terms apply to foreign buyers."
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "developer",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Building licences for blocks A1, A2 and B (173 homes) were issued on 30 July 2025, reported as a KAP disclosure. No licence number seen, and I did not open the KAP filing.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://gundemekonometre.com/dap-atasehir-173-icin-kacirilmayacak-firsat-secenekleri/7062/"
+    },
+    {
+     "claim": "Project is built with Emlak Konut GYO under a land-sale revenue-sharing agreement effective 16 June 2022. The developer page only says it is realised with the assurance of DAP and Emlak Konut.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://luxurypropertiesturkey.com/property/dap-atasehir-173/"
+    },
+    {
+     "claim": "Eligible for Turkish citizenship at qualifying prices (agent and portal claim; price shown at $427,000 to $434,000 across portals).",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.deal-tr.com/en/blog/off-plan-projects-with-government-guarantee-in-istanbul-2026"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "construction_start": null,
+    "handover_promised": "2028-06 (deal-tr listing)",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1+1",
+     "2+1",
+     "3+1"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 427000,
+    "price_max": 434000,
+    "deposit_pct": 40,
+    "foreign_ownership": "Marketed to foreign buyers as citizenship eligible by agents and portals. No foreigner-specific statement seen on the developer page.",
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Low-rise boutique scheme of 173 homes in three blocks, launched for sale on 5 Feb 2026 at the land stage with Emlak Konut GYO as partner. Price figures are agent USD listings. Developer pages publish no permit number, escrow terms, floor plans or construction progress.",
+   "positives": [
+    "Partner is Emlak Konut GYO, a listed state-linked company",
+    "Building licence date reported via a KAP disclosure",
+    "Small scheme of 173 homes",
+    "Developer site has a completed-projects section"
+   ],
+   "flags": [],
+   "sources": [
+    "https://dapyapi.com.tr/en/projects/dap-atasehir",
+    "https://dapyapi.com.tr/medya-merkezi/dap-atasehir-173-satisa-cikti-capital",
+    "https://gundemekonometre.com/dap-atasehir-173-icin-kacirilmayacak-firsat-secenekleri/7062/",
+    "https://luxurypropertiesturkey.com/property/dap-atasehir-173/",
+    "https://www.deal-tr.com/en/blog/off-plan-projects-with-government-guarantee-in-istanbul-2026",
+    "https://www.emlakkonut.com.tr/tr-TR/atasehi%CC%87r-173-4113",
+    "https://www.sabah.com.tr/ekonomi/dap-yapidan-bir-ilk-kendi-kendini-odeyen-ev-modeli-kira-oder-gibi-ev-sahibi-olma-firsati-7622886"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-agent",
+   "slug": "ata-ehir-173-istanbul"
+  },
+  {
+   "name": "Babacan Lagoon",
+   "developer": "Babacan Holding (Babacan Yapı)",
+   "area": "Gaziosmanpaşa, next to the TEM highway (the developer page labels it 5. Levent)",
+   "country": "Turkey",
+   "market": "Istanbul",
+   "stage": "under construction",
+   "url": "https://babacanyapi.com/babacan-lagoon-pp/",
+   "docs_url": "https://babacanyapi.com/wp-content/uploads/2025/11/Babacan-Lagoon-Catalogue.pdf",
+   "permit_number": null,
+   "seed": {
+    "price": 195000,
+    "currency": "USD",
+    "title": "Babacan Lagoon",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2027-03 (agent listings)",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": "4000+ branded homes since 2002 (developer claim)",
+    "units": 251,
+    "payment_plan": "From $195,000 with 50% down payment and 24 months (listingturkey and deal-tr agent listings)"
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "developer",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Babacan Yapı has built over 4,000 branded homes since 2002 and started Babacan Lagoon in 2025.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://babacanyapi.com/hakkimizda-pp/"
+    },
+    {
+     "claim": "251 homes plus 4 commercial units in two 13-storey blocks, with 1+1 to 4+1 types and duplex and garden options.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.temeltasproje.com.tr/proje/babacan-lagoon-0"
+    },
+    {
+     "claim": "Delivery in March 2027 and entry price from $195,000 (agent listings only; the developer page shows neither).",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.deal-tr.com/en/projects/babacan-lagoon"
+    },
+    {
+     "claim": "Agents say the developer has an impeccable delivery record and clean title deeds.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.deal-tr.com/en/projects/babacan-lagoon"
+    }
+   ],
+   "facts": {
+    "developer_founded": 2002,
+    "developer_hq": "Bakırköy, Istanbul (Istanbul World Trade Center)",
+    "construction_start": "2025 (developer says it started the project in 2025; exact date not seen)",
+    "handover_promised": "2027-03",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1+1",
+     "2+1",
+     "3+1",
+     "4+1",
+     "duplex",
+     "garden"
+    ],
+    "size_min_m2": 72,
+    "size_max_m2": null,
+    "price_min": 195000,
+    "price_max": null,
+    "deposit_pct": 50,
+    "foreign_ownership": "Agents market it to foreign buyers as citizenship eligible. No foreigner statement seen on the developer page.",
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Two-block scheme next to the TEM highway with a landscaped lagoon feature, sold on a 50% down, 24-month plan. The developer page has a catalogue download but no permit number, escrow wording or progress figures. It places the scheme in 5. Levent, while agents place it in Gaziosmanpaşa.",
+   "positives": [
+    "Developer states a 2002 start and 4,000+ homes built",
+    "Catalogue PDF offered on the developer page",
+    "Floor plans listed by agents",
+    "No guaranteed-return language seen"
+   ],
+   "flags": [],
+   "sources": [
+    "https://babacanyapi.com/babacan-lagoon-pp/",
+    "https://babacanyapi.com/hakkimizda-pp/",
+    "https://listingturkey.com/property/babacan-lagoon/",
+    "https://nli.com.tr/client-portfolios/mskate-kt-ctznpkg-0527/",
+    "https://www.deal-tr.com/en/projects/babacan-lagoon",
+    "https://www.temeltasproje.com.tr/proje/babacan-lagoon-0"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-agent",
+   "slug": "babacan-lagoon-istanbul"
+  },
+  {
+   "name": "Kuzey Adalar (Northern Islands) Kartal",
+   "developer": "EPP (Emlak Planlama İnşaat Proje Yönetimi, an Emlak Konut GYO affiliate) with ŞUA İnşaat",
+   "area": "Yunus, Kartal (Asian side)",
+   "country": "Turkey",
+   "market": "Istanbul",
+   "stage": "under construction",
+   "url": "https://satisofisi.com/en/projeler/turkiye/istanbul/kartal/yunus/kuzey-adalar-kartal",
+   "docs_url": "https://www.aa.com.tr/tr/isdunyasi/gayrimenkul/kuzey-adalar-projesinde-satislar-basladi/693434",
+   "permit_number": null,
+   "seed": {
+    "price": 10730000,
+    "currency": "TRY",
+    "title": "Kuzey Adalar",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": 4,
+    "completion": "2028-03",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null,
+    "progress_pct": 45,
+    "progress_updates": false,
+    "developer_delivered": "EPP says it has been active in producing more than 75,000 homes",
+    "units": 2281,
+    "payment_plan": "Sales launch (AA): 60 months, 1.29 monthly price difference, 20% discount for cash. Late 2025 launch of a new phase under Emlak Konut's interest-free 'Yeni Yuvam' savings model, aimed at citizens."
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "developer",
+    "record": "developer",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "2,281 homes and a 132-shop mall on 90,000 m2 in Kartal, with sales started by EPP and ŞUA İnşaat.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.aa.com.tr/tr/isdunyasi/gayrimenkul/kuzey-adalar-projesinde-satislar-basladi/693434"
+    },
+    {
+     "claim": "Project completion 45% and annual rental yield 4% (portal figures on an old page, undated; the 45% looks stale or doubtful against a March 2028 delivery).",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.emlakplatform.com.tr/tr/projects/kuzey-adalar"
+    },
+    {
+     "claim": "Delivery March 2028 (announced delivery per the satisofisi portal).",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://satisofisi.com/en/projeler/turkiye/istanbul/kartal/yunus/kuzey-adalar-kartal"
+    },
+    {
+     "claim": "Open to foreign buyers who meet the value thresholds for citizenship or residence (portal statement).",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://satisofisi.com/en/projeler/turkiye/istanbul/kartal/yunus/kuzey-adalar-kartal"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "construction_start": null,
+    "handover_promised": "2028-03",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1+1",
+     "2+1",
+     "3+1",
+     "4+1",
+     "5+1",
+     "loft row house"
+    ],
+    "size_min_m2": 69,
+    "size_max_m2": 225,
+    "price_min": 10730000,
+    "price_max": 43260000,
+    "deposit_pct": null,
+    "foreign_ownership": "Listed for foreign buyers by deal-tr and satisofisi. No foreigner statement seen from EPP or Emlak Konut.",
+    "rental_programme": null,
+    "lat": 40.888548,
+    "lng": 29.2125886,
+    "permit_authority": null
+   },
+   "note": "Large 12-block Kartal scheme with Emlak Konut group backing and a 132-shop mall. TRY prices are Sept 2025 list ranges (1+1 from 10.73m TL, 4+1 duplex 43.26m TL). I did not open an EPP or Emlak Konut page for this one, so the url is a portal and the 'under construction' stage is not confirmed on a developer page.",
+   "positives": [
+    "Emlak Konut group affiliate EPP is involved",
+    "Published floor plans (per portal)",
+    "No guaranteed-return language seen",
+    "Announced handover date of March 2028"
+   ],
+   "flags": [],
+   "sources": [
+    "https://satisofisi.com/en/projeler/turkiye/istanbul/kartal/yunus/kuzey-adalar-kartal",
+    "https://www.aa.com.tr/tr/isdunyasi/gayrimenkul/kuzey-adalar-projesinde-satislar-basladi/693434",
+    "https://www.deal-tr.com/tr/projects/kuzey-adalar",
+    "https://www.emlakdream.com/kuzey-adalar-epp-ve-sua-insaat-ortakliginda-kartalda-satisa-cikti/",
+    "https://www.emlakplatform.com.tr/tr/projects/kuzey-adalar",
+    "https://www.medyaozelhaber.com/ekonomi/kartaldaki-kuzey-adalar-projesi-emlak-konutun-faizsiz-ev-sahipligi-modeliyle-tanitildi/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 4,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-agent",
+   "slug": "kuzey-adalar-northern-islands-kartal-istanbul"
+  },
+  {
+   "name": "Mesa Yenikent (new 300-home phase)",
+   "developer": "Mesa Mesken (Mesa Holding)",
+   "area": "Başakşehir (Kayaşehir and Yenikent axis)",
+   "country": "Turkey",
+   "market": "Istanbul",
+   "stage": "under construction",
+   "url": "https://www.gazetebirlik.com/ekonomi/mesa-yenikentte-yeni-etap-satista/1114825",
+   "docs_url": "https://hibya.com/bogazici-beton-3-subesini-kapatiyor-2-yeni-sube-aciyor-1079074",
+   "permit_number": null,
+   "seed": {
+    "price": 9000000,
+    "currency": "TRY",
+    "title": "Mesa Yenikent",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028-06 (first phase, per Mesa chairman); a portal says September 2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 300,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "developer",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "New stage of 300 homes (2+1 to 6.5+1) on sale from 9m TL in Oct 2026. Master plan is five stages and 4,000 homes on 2 million m2. The first stage has 843 homes and is 70% sold.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.gazetebirlik.com/ekonomi/mesa-yenikentte-yeni-etap-satista/1114825"
+    },
+    {
+     "claim": "First-stage handover planned for June 2028. A portal says deliveries start September 2028, and an older portal gave a different first-stage size (694 homes) and 5,000 homes in total.",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://www.emlakhaberi.com/mesa-yenikent-basaksehir-fiyatlari-2026-teslim-tarihi-ve-proje-detaylari"
+    },
+    {
+     "claim": "Boğaziçi Beton's KAP disclosure (reported by the press) says it opened a branch with a mobile plant on the Mesa Yenikent site, which points to construction having started. Disclosure dated 19 June 2026; I did not open the KAP filing.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://hibya.com/bogazici-beton-3-subesini-kapatiyor-2-yeni-sube-aciyor-1079074"
+    },
+    {
+     "claim": "Mesa says it has built homes for over 57 years, including Bahçeşehir Uydukent, Mesa Koru and Mesa Batı in Ankara.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.gazetebirlik.com/ekonomi/mesa-yenikentte-yeni-etap-satista/1114825"
+    },
+    {
+     "claim": "Offered to foreign buyers (an agent site lists it from $295K as near citizenship eligible; no developer statement on foreigners seen).",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.istanbulrealestate.net/istanbul-ongoing-construction-projects-2026-data-guide/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "construction_start": "around mid-2026 (inferred from the June 2026 concrete-plant filing, not stated)",
+    "handover_promised": "2028-06 (first phase)",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2+1",
+     "3+1",
+     "4+1",
+     "6.5+1"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 9000000,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": "Agent listing for foreign buyers only. No foreigner-specific statement seen from the developer.",
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Low-rise, five-stage Başakşehir master plan from Mesa, with a 300-home stage launched in Oct 2026 from 9m TL (a TRY price). I did not open a Mesa-owned page, so the url is a press report of the launch and the developer-page checks could not be done.",
+   "positives": [
+    "Established developer, with Mesa citing 57+ years and 1989 Bahçeşehir Uydukent",
+    "First stage reported 70% sold",
+    "Site works on the first phase indicated by a KAP-reported concrete-plant branch",
+    "No guaranteed-return language seen"
+   ],
+   "flags": [],
+   "sources": [
+    "https://hibya.com/bogazici-beton-3-subesini-kapatiyor-2-yeni-sube-aciyor-1079074",
+    "https://www.emlakhaberi.com/mesa-yenikent-basaksehir-fiyatlari-2026-teslim-tarihi-ve-proje-detaylari",
+    "https://www.gayrimenkulhaber.com/konut-haberleri/mesa-yenikentte-yeni-etap-satista/",
+    "https://www.gazetebirlik.com/ekonomi/mesa-yenikentte-yeni-etap-satista/1114825",
+    "https://www.istanbulrealestate.net/istanbul-ongoing-construction-projects-2026-data-guide/",
+    "https://www.konutradar.com/istanbul-mesa-yenikent-basaksehir-projesi/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-agent",
+   "slug": "mesa-yenikent-new-300-home-phase-istanbul"
+  },
+  {
+   "name": "The St. Regis Karya Cove Resort, Bodrum and The Residences",
+   "developer": "Kuzu Grup (Kuzu Group), with Marriott International as brand and operator",
+   "area": "Kazıklı Koyu (Kazikli Cove), north Bodrum",
+   "country": "Turkey",
+   "market": "Bodrum",
+   "stage": "off-plan",
+   "url": "https://www.kuzugrup.com/proje/st-regis-karya-cove-resort-bodrum-the-residences/",
+   "docs_url": "https://marriott.pressarea.com/en/news/marriott-international-signs-agreement-to-bring-the-iconic-st.-regis-brand-to-the-north-of-bodrum-in-trkiye/15092025",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2030 (planned opening year)",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": "JW Marriott Hotel Istanbul Marmara Sea (opened 2022, per Marriott press release)",
+    "units": 188,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "developer",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Resort and branded residences planned to open in 2030",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.kuzugrup.com/proje/st-regis-karya-cove-resort-bodrum-the-residences/"
+    },
+    {
+     "claim": "Number of residences: developer page says 188 branded homes, Marriott and trade press say 221 apartments and villas",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://marriott.pressarea.com/en/news/marriott-international-signs-agreement-to-bring-the-iconic-st.-regis-brand-to-the-north-of-bodrum-in-trkiye/15092025"
+    },
+    {
+     "claim": "Site area: developer page says 260,000 m2 total land, Marriott says a 280,000 sqm site",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://www.kuzugrup.com/proje/st-regis-karya-cove-resort-bodrum-the-residences/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Istanbul (developer page lists address as Istanbul only)",
+    "construction_start": null,
+    "handover_promised": "2030 (planned opening)",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2+1",
+     "3+1",
+     "3.5+1",
+     "4.5+1",
+     "5.5+1"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Marriott signed the brand deal in September 2025. The developer page gives scope data but no price, plans, permit or construction progress. I did not find the developer or an agent selling units to foreign buyers; a 2026 guide says investors can enter at off-plan stage.",
+   "positives": [
+    "Brand agreement confirmed by Marriott press release",
+    "Developer page publishes unit mix and built areas",
+    "Developer has a prior Marriott project, JW Marriott Istanbul Marmara Sea, opened 2022"
+   ],
+   "flags": [],
+   "sources": [
+    "https://luxurysignature.net/en/blogs/1778165495/Branded-Residences-Bodrum:-The-Definitive-2026-Guide",
+    "https://marriott.pressarea.com/en/news/marriott-international-signs-agreement-to-bring-the-iconic-st.-regis-brand-to-the-north-of-bodrum-in-trkiye/15092025",
+    "https://travellingforbusiness.co.uk/news/st-regis-brand-arriving-north-of-bodrum-in-turkiye-but-not-until-2030/",
+    "https://www.kuzugrup.com/proje/st-regis-karya-cove-resort-bodrum-the-residences/",
+    "https://www.royist.com/travel/the-st-regis-karya-cove-resort-and-residences-to-redefine-luxury-in-bodrum/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-agent",
+   "slug": "the-st-regis-karya-cove-resort-bodrum-and-the-residences-bod"
+  },
+  {
+   "name": "Armada Praxis Yalıkavak Marinn",
+   "developer": "Armada Praxis",
+   "area": "Yalıkavak, Bodrum",
+   "country": "Turkey",
+   "market": "Bodrum",
+   "stage": "off-plan",
+   "url": "https://www.armadapraxis.com/projelerimiz/yalikavak-marinn-villalari/",
+   "docs_url": "https://turk.estate/en/new-developments/aegean-region/mugla/bodrum/off-plan/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": "Developer site lists Türkbükü / Küçükbük and Gündoğan under completed projects",
+    "units": 47,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "developer",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "46 villas and 1 mansion on a 66 dönüm plot, 350 m from Yalıkavak Marina",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.armadapraxis.com/projelerimiz/yalikavak-marinn-villalari/"
+    },
+    {
+     "claim": "Project is on sale (listed under Satıştaki Projeler)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.armadapraxis.com/projelerimiz/yalikavak-marinn-villalari/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Yalıkavak, Bodrum (Ömer Efendi Caddesi, per contact page)",
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "3+1 flat villa",
+     "4+1 duplex villa",
+     "4+1 triplex villa",
+     "6-bedroom mansion"
+    ],
+    "size_min_m2": 180,
+    "size_max_m2": 680,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "The developer page is in Turkish and gives unit types, plot sizes and amenities, but no price, handover date, permit, escrow or construction status. Stage is marked off-plan only because the page shows renders and invites buyers to the sales office, and I could not confirm it. An English-language portal (Turk.Estate) lists the project, but I saw only its name and room types.",
+   "positives": [
+    "Detailed villa specifications and plot sizes published",
+    "Developer lists completed projects on its own site"
+   ],
+   "flags": [],
+   "sources": [
+    "https://turk.estate/en/new-developments/aegean-region/mugla/bodrum/off-plan/",
+    "https://www.armadapraxis.com/",
+    "https://www.armadapraxis.com/iletisim/",
+    "https://www.armadapraxis.com/projelerimiz/yalikavak-marinn-villalari/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-agent",
+   "slug": "armada-praxis-yal-kavak-marinn-bodrum"
+  },
+  {
+   "name": "Parkside Residences",
+   "developer": "Solum",
+   "area": "Mrčevac, Tivat",
+   "country": "Montenegro",
+   "market": "Montenegro",
+   "stage": "off-plan",
+   "url": "https://solumgroup.me/parkside-residences/",
+   "docs_url": "https://solumgroup.me/parkside-residences/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "December 2027 (agent portal, not the developer page)",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 133,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Three buildings with 133 residences, studios to five-bedroom units, underground parking",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://solumgroup.me/parkside-residences/"
+    },
+    {
+     "claim": "Completion December 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://mdrealty.me/en/projects/parkside-residence-tivat"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "construction_start": null,
+    "handover_promised": "December 2027 (agent portal)",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1-bedroom",
+     "2-bedroom",
+     "3-bedroom penthouse",
+     "4-bedroom",
+     "5-bedroom"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Developer page shows no building permit number, escrow, progress or floor plans (the brochure link is empty). Active construction was not confirmed on any page I opened, so stage is off-plan. An agent portal lists only 21 units against the developer's 133, and a portal shows a from-price of about USD 116,967 for 57 m2.",
+   "positives": [
+    "Developer is named",
+    "Completion date published by an agent portal",
+    "Several agents list the project with consistent unit counts (133)"
+   ],
+   "flags": [],
+   "sources": [
+    "https://mdrealty.me/en/projects/parkside-residence-tivat",
+    "https://realting.com/montenegro",
+    "https://solumgroup.me/parkside-residences/",
+    "https://www.thebestofmontenegro.com/portfolio/investments/141",
+    "https://www.violetinvestment.com/parkside-residences-tivat/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-agent",
+   "slug": "parkside-residences-montenegro"
+  },
+  {
+   "name": "No published name (new residential complex in Tivat, six buildings, 54 apartments)",
+   "developer": "VALUE.ONE",
+   "area": "Tivat (suburb, exact area not stated)",
+   "country": "Montenegro",
+   "market": "Montenegro",
+   "stage": "under construction",
+   "url": "https://realting.com/montenegro/new-buildings/27298",
+   "docs_url": "https://realting.com/montenegro/new-buildings/27298",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "March 2027 for the remaining buildings",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 54,
+    "payment_plan": "25% on signing, 25% on completion of main construction works, 25% on completion of finishing works, 25% on handover of keys"
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "First two of six buildings completed and ready for occupancy",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://realting.com/montenegro/new-buildings/27298"
+    },
+    {
+     "claim": "Remaining buildings to be finished by March 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://realting.com/montenegro/new-buildings/27298"
+    },
+    {
+     "claim": "54 apartments of 37 to 76 m2, sold finished with sanitary ware",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://realting.com/montenegro/new-buildings/27298"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Lorovina 46, 85320 Tivat (address on the portal listing)",
+    "construction_start": null,
+    "handover_promised": "March 2027 for the remaining buildings",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "apartments"
+    ],
+    "size_min_m2": 37,
+    "size_max_m2": 76,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": 25,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "The portal says two of six buildings are done and the rest are under construction, with handover by March 2027. I did not open VALUE.ONE's own page, so the developer-page check is incomplete. No permit number, escrow, plans or progress percentage were seen.",
+   "positives": [
+    "Staged payment plan tied to construction milestones",
+    "Part of the project is reportedly already completed"
+   ],
+   "flags": [],
+   "sources": [
+    "https://realting.com/montenegro/new-buildings/27298",
+    "https://realting.com/montenegro/new-buildings/38156"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-agent",
+   "slug": "no-published-name-new-residential-complex-in-tivat-six-build"
+  },
+  {
+   "name": "Black Sands Oasis",
+   "developer": "UNIT. (legal entity PT Unit Nuanu Property; listed as Unit Space Group on Nuanu's site)",
+   "area": "Nuanu Creative City, Nyanyi, Beraban, Tabanan",
+   "country": "Indonesia",
+   "market": "Bali",
+   "stage": "off-plan",
+   "url": "https://blacksandsoasis.com/",
+   "docs_url": "https://blacksandsoasis.com/legal-info.html",
+   "permit_number": null,
+   "seed": {
+    "price": 115400,
+    "currency": "USD",
+    "title": "Leasehold",
+    "lease_base": 35,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "Studios April 2028, villas October 2028 (developer FAQ)",
+    "permit_claim": true,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": "Developer site says 108 units already built and delivered (not independently verified)",
+    "units": 111,
+    "payment_plan": "USD 1,500 refundable booking deposit, 30% first payment, then quarterly payments tied to construction stages",
+    "title_note": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "developer",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Full refund of all payments if the PBG permit is not obtained",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://blacksandsoasis.com/"
+    },
+    {
+     "claim": "Construction starts February 2026 and runs 24 months",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://blacksandsoasis.com/"
+    },
+    {
+     "claim": "108 units already built and delivered by the developer group",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://blacksandsoasis.com/"
+    },
+    {
+     "claim": "ROI 12-14.2% (published on Nuanu Invest page)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.nuanu.com/invest/black-sand-oasis"
+    },
+    {
+     "claim": "ROI guarantee from the developer (portal wording only, not seen on the developer or Nuanu pages)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://koalista.com/p/black-sands-oasis/"
+    },
+    {
+     "claim": "Land is provided under an agreement with Wooden Fish Village (Nuanu)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://blacksandsoasis.com/legal-info.html"
+    }
+   ],
+   "facts": {
+    "developer_founded": 2015,
+    "developer_hq": "Jl Pantai Nyanyi No. 88, Beraban, Tabanan, Bali",
+    "construction_start": "2026-02 (developer statement)",
+    "handover_promised": "Studios April 2028, villas October 2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "Studio",
+     "1BD",
+     "1BD SKY",
+     "2BD",
+     "3BD",
+     "3BD SKY",
+     "4BD",
+     "Penthouse"
+    ],
+    "size_min_m2": 31.2,
+    "size_max_m2": 160,
+    "price_min": 115400,
+    "price_max": null,
+    "deposit_pct": 30,
+    "foreign_ownership": "Leasehold 35 years plus a 20-year extension (developer); Nuanu page says 34 years plus up to 20",
+    "rental_programme": "Turnkey rental management by UNIT.SPACE MANAGEMENT",
+    "lat": -8.6240282709189,
+    "lng": 115.09920863268,
+    "permit_authority": null
+   },
+   "note": "Inside the Nuanu master-planned cluster; the developer says construction started in February 2026, but no progress percentage or dated updates were seen. No PBG number is published, only a refund promise if the PBG is not obtained, which is not an escrow. The studio price on the developer site is USD 115,400, while Nuanu quotes from IDR 2,054,120,000 (just above the Rp 2B strata threshold).",
+   "positives": [
+    "Contract refund promise if PBG is not granted (developer claim)",
+    "Studio floor plan and layouts published on the developer site",
+    "Legal entity name and registered address published",
+    "Warranty terms stated: 25 years structural, 5 years systems, 1 year finishes"
+   ],
+   "flags": [],
+   "sources": [
+    "https://blacksandsoasis.com/",
+    "https://blacksandsoasis.com/legal-info.html",
+    "https://indonesia-real.estate/developers/unit-space/",
+    "https://koalista.com/p/black-sands-oasis/",
+    "https://newhomes.id/black-sands-oasis-bali",
+    "https://rumavi.com/en/new-developments/indonesia/tabanan/black-sands-oasis",
+    "https://www.nuanu.com/invest/black-sand-oasis"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-agent",
+   "slug": "black-sands-oasis-bali"
+  },
+  {
+   "name": "Green Village (Loyo & Bondar, Nusa Dua; not the IBUKU bamboo Green Village in Sibang)",
+   "developer": "LOYO & BONDAR (LB Group)",
+   "area": "Nusa Dua / Benoa, Bukit, Kuta Selatan, Badung",
+   "country": "Indonesia",
+   "market": "Bali",
+   "stage": "off-plan",
+   "url": "https://bali-development.com/green-village/",
+   "docs_url": "https://bali-development.com/green-village/",
+   "permit_number": null,
+   "seed": {
+    "price": 90000,
+    "currency": "USD",
+    "title": "Leasehold",
+    "lease_base": 27,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "Q3 2028 (Alnair listing)",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": "Developer site says 100+ properties developed and 12 complexes (not verified)",
+    "units": 154,
+    "payment_plan": "Developer site advertises installments of up to 18 months (general, not project specific)"
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "developer",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Presale (EOI) stage, apartments from USD 90K and villas from USD 110K, handover Q3 2028",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://alnair.co.id/en/bali"
+    },
+    {
+     "claim": "Base leasehold of 27 years",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://balinsky.info/en/complexes/o/green-village"
+    },
+    {
+     "claim": "Leasehold agreement documents are shown on the official partner page",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://bali-development.com/green-village/"
+    },
+    {
+     "claim": "Developer has built in Bali since 2019 and 100+ properties successfully developed",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://loyo-development.com/en"
+    }
+   ],
+   "facts": {
+    "developer_founded": 2007,
+    "developer_hq": "Lodtunduh, Ubud, Gianyar (listing contact address)",
+    "construction_start": null,
+    "handover_promised": "Q3 2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "Studio",
+     "1BR",
+     "2BR",
+     "3BR",
+     "Villa"
+    ],
+    "size_min_m2": 32,
+    "size_max_m2": null,
+    "price_min": 90000,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": "Leasehold",
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Two components: 51 villas and 103 apartments listed on Alnair as presale (EOI). The developer's own current site (loyobondar.com) could not be opened; loyo-development.com was opened but does not list this project, so the official partner page was used instead. Portals disagree on the smallest size (17 m2 on Housebook vs 32 m2 on Alnair).",
+   "positives": [
+    "Leasehold agreement documents displayed on the official partner page",
+    "Developer is an established Bali operator with a track record claim and a related portfolio"
+   ],
+   "flags": [],
+   "sources": [
+    "https://alnair.co.id/en/bali",
+    "https://bali-development.com/green-village/",
+    "https://balinsky.info/en/complexes/o/green-village",
+    "https://id.housebook.deals/en/catalog/green-village-04dcc2",
+    "https://loyo-development.com/en",
+    "https://realting.com/indonesia/new-buildings/26181",
+    "https://ulu-homes.id/projects/green-village/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-agent",
+   "slug": "green-village-loyo-bondar-nusa-dua-not-the-ibuku-bamboo-gree"
+  },
+  {
+   "name": "Casa Una Residence",
+   "developer": "Casa Una Residence (the site names its own team as developer; site author tag reads The Circle Samui)",
+   "area": "Chaweng",
+   "country": "Thailand",
+   "market": "Koh Samui",
+   "stage": "under construction",
+   "url": "https://casauna-samui.com/en/koh-samui-villa-prices/",
+   "docs_url": "https://casauna-samui.com/en/koh-samui-villa-prices/",
+   "permit_number": null,
+   "seed": {
+    "price": 5500000,
+    "currency": "THB",
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "Q4 2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 24,
+    "payment_plan": "5% reservation, 10% at contract signing, 20% at construction start, 30% at phase 2, 30% at phase 3, 5% at key handover"
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Construction starts July 2026 and handover is scheduled for Q4 2027 (12 to 18 months of works)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://casauna-samui.com/en/koh-samui-villa-prices/"
+    },
+    {
+     "claim": "Construction is underway (stated by the agent Varsovia Estate, which lists 24 residences with 14 available)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://varsoviaestate.com/en/properties/thailand/samui"
+    },
+    {
+     "claim": "Payments are staged against actual construction progress",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://casauna-samui.com/en/koh-samui-villa-prices/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "construction_start": "July 2026 (scheduled, per developer page)",
+    "handover_promised": "Q4 2027",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1-bedroom UNA Nest",
+     "2-bedroom UNA Horizon",
+     "4-bedroom UNA Signature"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 5500000,
+    "price_max": 9900000,
+    "deposit_pct": 5,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": 9.5018,
+    "lng": 100.0427,
+    "permit_authority": null
+   },
+   "note": "Priced in EUR, THB and other currencies for overseas buyers, from THB 5.5M (1 bed) to THB 9.9M (4 bed), plus a fixed furniture pack. The developer page does not publish a permit number, escrow terms, floor plans, a construction progress % or any delivered projects, and the title type was not seen. Size figures conflict between sources, so they are left null.",
+   "positives": [
+    "Prices published openly by unit type",
+    "Payment schedule tied to construction milestones is published",
+    "Page states returns are not guaranteed"
+   ],
+   "flags": [],
+   "sources": [
+    "https://casauna-samui.com/en/koh-samui-investment-guide/",
+    "https://casauna-samui.com/en/koh-samui-villa-prices/",
+    "https://lazudi.com/th-en/new-developments/koh-samui",
+    "https://varsoviaestate.com/en/properties/thailand/samui"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-agent",
+   "slug": "casa-una-residence-koh-samui"
   }
  ]
 }

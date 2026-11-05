@@ -448,5 +448,46 @@
   ],
   "all_six": 0,
   "verified_4plus": 0
+ },
+ {
+  "date": "2026-11-05",
+  "calls": 8,
+  "usd": 7.398,
+  "searches": 44,
+  "added": 14,
+  "rejected": {
+   "duplicate": 3,
+   "dead_url": 3,
+   "fewer_than_2_sources": 4
+  },
+  "markets": [
+   "Los Cabos",
+   "Costa Rica",
+   "Istanbul",
+   "Antalya",
+   "Bodrum",
+   "Montenegro",
+   "Bali",
+   "Koh Samui"
+  ],
+  "model": "claude-sonnet-5-5",
+  "added_slugs": [
+   "mountain-residences-at-palmilla-reserve-los-cabos",
+   "waldorf-astoria-residences-costa-rica-punta-cacique-costa-ri",
+   "condominio-marea-jac-marea-residences-costa-rica",
+   "ata-ehir-173-istanbul",
+   "babacan-lagoon-istanbul",
+   "kuzey-adalar-northern-islands-kartal-istanbul",
+   "mesa-yenikent-new-300-home-phase-istanbul",
+   "the-st-regis-karya-cove-resort-bodrum-and-the-residences-bod",
+   "armada-praxis-yal-kavak-marinn-bodrum",
+   "parkside-residences-montenegro",
+   "no-published-name-new-residential-complex-in-tivat-six-build",
+   "black-sands-oasis-bali",
+   "green-village-loyo-bondar-nusa-dua-not-the-ibuku-bamboo-gree",
+   "casa-una-residence-koh-samui"
+  ],
+  "all_six": 0,
+  "verified_4plus": 0
  }
 ]
