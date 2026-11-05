@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+<title>Kolaboro: what we shipped each day</title>
+<link href="https://kolaboro.com/shipping/feed.xml" rel="self"/>
+<link href="https://kolaboro.com/shipping/"/>
+<id>https://kolaboro.com/shipping/</id>
+<updated>2026-11-05T06:49:41Z</updated>
+<author><name>Kolaboro</name></author>
+<entry>
+<title>5 November 2026: 2 changes shipped so far</title>
+<link href="https://kolaboro.com/shipping/#d-2026-11-05"/>
+<id>https://kolaboro.com/shipping/#d-2026-11-05</id>
+<published>2026-11-05T00:00:00Z</published>
+<updated>2026-11-05T06:47:00Z</updated>
+<content type="html">&lt;ul&gt;&lt;li&gt;/shipping/ log (calendar, streaks, day summaries, engineering numbers), ship badge API, roadmap items linked to live pages&lt;/li&gt;&lt;li&gt;Kolaboro worker: register batch 6 modules (ship, data, disc, qa, ins) as 404 stubs&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Day in progress: summary taken from the commit subjects so far.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>4 November 2026: 67 changes shipped</title>
+<link href="https://kolaboro.com/changelog/2026-11-04/"/>
+<id>https://kolaboro.com/shipping/#d-2026-11-04</id>
+<published>2026-11-04T00:00:00Z</published>
+<updated>2026-11-04T23:44:52Z</updated>
+<content type="html">&lt;ul&gt;&lt;li&gt;Kolaboro i18n: case cards, follow forms, stats and agent questions shown in the page language on /xx/cases; English check and cases updates carried into all translations&lt;/li&gt;&lt;li&gt;Spanish alternates on the English check, how-we-score, checklist, about and cases pages; five /es/ pages in the sitemap; honeypot field safe on every right-to-left page&lt;/li&gt;&lt;li&gt;Climate 2030/2050, protected land, night lights and stalled sites in changelog, 4 Nov page, engineering, footer, satellite, hazards copy, API docs, sitemap, llms.txt&lt;/li&gt;&lt;li&gt;Kolaboro UX-C: tools index lists all tools, sample report verify fixed, phone tap targets and tables, build-cost and insolvency wording, SQL examples run in one tap&lt;/li&gt;&lt;li&gt;Insolvency API echoes the request&amp;#x27;s own name; on phones the sticky button hides while typing and pages keep room above it; Verify this page is a 40 px tap target&lt;/li&gt;&lt;li&gt;Kolaboro CSP prep: keep two email links out of Cloudflare email obfuscation (its decoder script carries no nonce), allow the Frankfurter fallback in connect-src&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Summary taken from the day&amp;#x27;s commit subjects.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>3 November 2026: 124 changes shipped</title>
+<link href="https://kolaboro.com/changelog/2026-11-03/"/>
+<id>https://kolaboro.com/shipping/#d-2026-11-03</id>
+<published>2026-11-03T00:00:00Z</published>
+<updated>2026-11-03T23:41:45Z</updated>
+<content type="html">&lt;ul&gt;&lt;li&gt;Project pages now show what would change a project&amp;#x27;s score, how old its website is, and whether its promises have drifted over time.&lt;/li&gt;&lt;li&gt;A new hazards page lets you pin a plot and read flood, earthquake, tsunami and volcano information live, with the source shown for each figure.&lt;/li&gt;&lt;li&gt;Satellite pages now show radar and monthly photo changes for an area, plus milestone evidence, and they fit phone screens.&lt;/li&gt;&lt;li&gt;New buyer tools run in your browser: PDF forensics, a payment account check, a contract check and an image check for content credentials.&lt;/li&gt;&lt;li&gt;Advertised prices are now compared with registered sales, and Dubai prices per square metre are checked against official area data.&lt;/li&gt;&lt;li&gt;Desk review of project websites got better at reading script-built pages and now says honestly when a site blocks the reader.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Summary written by AI from the day&amp;#x27;s commits and checked by code.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>2 November 2026: 26 changes shipped</title>
+<link href="https://kolaboro.com/changelog/2026-11-02/"/>
+<id>https://kolaboro.com/shipping/#d-2026-11-02</id>
+<published>2026-11-02T00:00:00Z</published>
+<updated>2026-11-02T23:52:53Z</updated>
+<content type="html">&lt;ul&gt;&lt;li&gt;If you paste a link that is not a property project, the check now says so clearly instead of giving a score.&lt;/li&gt;&lt;li&gt;The buyer portal is now available in Spanish, including the language switch, dates, prompts and messages.&lt;/li&gt;&lt;li&gt;The portal can read a payment plan with AI. You can also download your data and delete your account.&lt;/li&gt;&lt;li&gt;Answers from our open data now carry a digital signature, and a public log lets anyone check that the data was not changed.&lt;/li&gt;&lt;li&gt;On phones, the portal has a bottom bar and a compact header, and findings can be swiped.&lt;/li&gt;&lt;li&gt;The home page was redesigned. The comparison of buying alone and buying with Kolaboro is now visual, in all 7 languages.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Summary written by AI from the day&amp;#x27;s commits and checked by code.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>1 November 2026: 86 changes shipped</title>
+<link href="https://kolaboro.com/changelog/2026-11-01/"/>
+<id>https://kolaboro.com/shipping/#d-2026-11-01</id>
+<published>2026-11-01T00:00:00Z</published>
+<updated>2026-11-01T22:15:43Z</updated>
+<content type="html">&lt;ul&gt;&lt;li&gt;Telegram bot webhook (send a project link, get the desk review: missing items, guaranteed-return language, questions), off until the bot token and webhook secret are set&lt;/li&gt;&lt;li&gt;Off-plan Transparency Index (73 markets ranked live, method, top and bottom 5, sortable table, citation, CSV) and embeddable market widget for journalists (/embed/?m=)&lt;/li&gt;&lt;li&gt;Shipping-daily ticker on every page (live database numbers plus the dated log of what shipped, fed by the research agents; pauses on hover, static for reduced motion)&lt;/li&gt;&lt;li&gt;Admin inbox, command palette, live refresh, lead priority, bulk actions, templates; portal getting started, since last visit, compare saved, share with lawyer, print&lt;/li&gt;&lt;li&gt;Kolaboro security: PayPal receiver check, email verification page, CSV injection, safe project links, admin view token in hash, no session recording on the portal&lt;/li&gt;&lt;li&gt;Fix a syntax error in the market page renderer; small /api/open/summary for the ticker and live numbers so pages no longer download the full 1.1 MB database file&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Summary taken from the day&amp;#x27;s commit subjects.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>31 October 2026: 8 changes shipped</title>
+<link href="https://kolaboro.com/changelog/2026-10-31/"/>
+<id>https://kolaboro.com/shipping/#d-2026-10-31</id>
+<published>2026-10-31T00:00:00Z</published>
+<updated>2026-10-31T22:04:16Z</updated>
+<content type="html">&lt;ul&gt;&lt;li&gt;Project cards now show, for each check, whether it is confirmed, not confirmed, contradicted or backed by a registry, plus how many claims were tested.&lt;/li&gt;&lt;li&gt;All 328 projects now have all 6 checks, covering 73 markets in 52 countries.&lt;/li&gt;&lt;li&gt;Live cases now show 100% public (6 of 6) or exactly which checks are missing. There is also a new 100% filter.&lt;/li&gt;&lt;li&gt;After a check, you can share the result by link, save it as a PDF, and get an email follow-up.&lt;/li&gt;&lt;li&gt;The sample report is lighter and has photos you can swipe through, a to-do list you can tick, and a share-with-lawyer button.&lt;/li&gt;&lt;li&gt;A new security page explains who sees your case and how it is stored. A refund line now sits next to prices.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Summary written by AI from the day&amp;#x27;s commits and checked by code.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>30 October 2026: 25 changes shipped</title>
+<link href="https://kolaboro.com/changelog/2026-10-30/"/>
+<id>https://kolaboro.com/shipping/#d-2026-10-30</id>
+<published>2026-10-30T00:00:00Z</published>
+<updated>2026-10-30T21:46:05Z</updated>
+<content type="html">&lt;ul&gt;&lt;li&gt;Kolaboro r28: 228 projects in 27 countries with public-disclosure scorecard and map, desk review without email wall plus market comparison, analytics error fix&lt;/li&gt;&lt;li&gt;Kolaboro r25: evidence locker, document reader (all types, PDF, 8 languages), field tool, ops, follow cases, price check&lt;/li&gt;&lt;li&gt;R29: realhunt arrivals - email capture on blocked listings, no off-plan scorecard for resale homes, home-buyer copy&lt;/li&gt;&lt;li&gt;Kolaboro r25: academy lessons, Spanish home, pricing includes, sample score reframed, benchmark, ops tab&lt;/li&gt;&lt;li&gt;Kolaboro r26: UX fixes from full audit (home tools, check page, technology, status, verify, copy)&lt;/li&gt;&lt;li&gt;Kolaboro r28b: deeper data for Dubai and Spain projects, cases scorecard sorted by transparency&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Summary taken from the day&amp;#x27;s commit subjects.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>29 October 2026: 9 changes shipped</title>
+<link href="https://kolaboro.com/changelog/2026-10-29/"/>
+<id>https://kolaboro.com/shipping/#d-2026-10-29</id>
+<published>2026-10-29T00:00:00Z</published>
+<updated>2026-10-29T22:42:46Z</updated>
+<content type="html">&lt;ul&gt;&lt;li&gt;You can now request a check and receive a reference for it, so you can follow your request.&lt;/li&gt;&lt;li&gt;The real buyer portal can now be tried as a read-only demo, so you can look around before signing up.&lt;/li&gt;&lt;li&gt;Satellite watch is now live on the technology page and updates weekly.&lt;/li&gt;&lt;li&gt;A new technology page explains how checks work, including comparing building plans with what is actually built.&lt;/li&gt;&lt;li&gt;Evidence timestamps are now anchored to Bitcoin, and a verify page lets you confirm them yourself.&lt;/li&gt;&lt;li&gt;A new status page, open data documents and live counters show how the service is running.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Summary written by AI from the day&amp;#x27;s commits and checked by code.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>28 October 2026: 24 changes shipped</title>
+<link href="https://kolaboro.com/changelog/2026-10-28/"/>
+<id>https://kolaboro.com/shipping/#d-2026-10-28</id>
+<published>2026-10-28T00:00:00Z</published>
+<updated>2026-10-28T16:59:30Z</updated>
+<content type="html">&lt;ul&gt;&lt;li&gt;/report/sample rebuilt as a full interactive client report (verdict, money vs built, 9 checks, verifiable GPS photos, plan vs site, copilot flags, sign-off)&lt;/li&gt;&lt;li&gt;Honest copy pass, agent pay and developer fees, Indonesian agent page, buyer guides, EU cookie choice with consent mode, breadcrumb structured data&lt;/li&gt;&lt;li&gt;Money-at-risk simulator, Bali map and freshness on /research, price hints in visitor currency, back-to-top, print styles, meta fixes&lt;/li&gt;&lt;li&gt;YC positioning , agent copilot (live), independence rules, developers never pay, evidence-not-guarantee wording&lt;/li&gt;&lt;li&gt;122 projects in 9 markets (/research by market, /cases), /yc + /investors: margins at scale, beyond real estate&lt;/li&gt;&lt;li&gt;Case PDFs with real CC photos, agent site-visit tool, how we choose and pay agents, cases from agent data&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Summary taken from the day&amp;#x27;s commit subjects.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>27 October 2026: 7 changes shipped</title>
+<link href="https://kolaboro.com/changelog/2026-10-27/"/>
+<id>https://kolaboro.com/shipping/#d-2026-10-27</id>
+<published>2026-10-27T00:00:00Z</published>
+<updated>2026-10-27T22:02:32Z</updated>
+<content type="html">&lt;ul&gt;&lt;li&gt;The Trust Score now uses 9 checks with set rules, and a new page explains how projects are scored.&lt;/li&gt;&lt;li&gt;You can now try a payment plan checker, a risk calculator and a first check of your contract.&lt;/li&gt;&lt;li&gt;A sample score and report, a buyer checklist and guides show what a check looks like before you start.&lt;/li&gt;&lt;li&gt;There are now 5 destination pages with an index and a comparison table.&lt;/li&gt;&lt;li&gt;The check page suggests matches as you type, and the home page is also available in Spanish.&lt;/li&gt;&lt;li&gt;Pages are easier to read, with better colour contrast, a reading progress bar and a glossary of terms.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Summary written by AI from the day&amp;#x27;s commits and checked by code.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>21 October 2026: 1 change shipped</title>
+<link href="https://kolaboro.com/changelog/2026-10-21/"/>
+<id>https://kolaboro.com/shipping/#d-2026-10-21</id>
+<published>2026-10-21T00:00:00Z</published>
+<updated>2026-10-21T16:20:11Z</updated>
+<content type="html">&lt;ul&gt;&lt;li&gt;The site now stores its data in its own database, replacing older databases that were run by an outside website-building tool.&lt;/li&gt;&lt;li&gt;The outside tool&amp;#x27;s visitor tracking has been removed from the site.&lt;/li&gt;&lt;li&gt;Badges from the outside website-building tool no longer appear on the site.&lt;/li&gt;&lt;li&gt;The option to sign in with a social account is hidden for now.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Summary written by AI from the day&amp;#x27;s commits and checked by code.&lt;/p&gt;</content>
+</entry>
+<entry>
+<title>19 October 2026: 1 change shipped</title>
+<link href="https://kolaboro.com/changelog/2026-10-19/"/>
+<id>https://kolaboro.com/shipping/#d-2026-10-19</id>
+<published>2026-10-19T00:00:00Z</published>
+<updated>2026-10-19T21:47:09Z</updated>
+<content type="html">&lt;ul&gt;&lt;li&gt;A new version of the site was published. The commit subject gives no detail on what buyers will see differently.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Summary written by AI from the day&amp;#x27;s commits and checked by code.&lt;/p&gt;</content>
+</entry>
+</feed>
