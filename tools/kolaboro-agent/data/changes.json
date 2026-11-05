@@ -11838,5 +11838,455 @@
     null
    ]
   }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "natha-loka",
+  "name": "Natha Loka Eco Village",
+  "changed": {
+   "advertised_yield_pct": [
+    14,
+    7
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "secret-inshi",
+  "name": "SECRET by INSHI",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "morros-vita-serena-del-mar",
+  "name": "Morros Vita",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Fiduciary scheme administered by Alianza Fiduciaria; buyers to be linked to the fiduciary scheme",
+    "Alianza Fiduciaria, entidad encargada de velar por la correcta administración de los recursos; compradores vinculados al esquema fiduciario"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "cocobay-da-nang",
+  "name": "Cocobay Da Nang",
+  "changed": {
+   "guaranteed_language": [
+    false,
+    true
+   ],
+   "completion_year": [
+    null,
+    2029
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "al-sidr-saadiyat-lagoons",
+  "name": "Al Sidr (Saadiyat Lagoons)",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "comfort-by-orbi-orbi-group",
+  "name": "Comfort by Orbi",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "avrupa-konutlari-gunesli-artas",
+  "name": "Avrupa Konutları Güneşli",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9697,
+    9699
+   ],
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "bansko-complex-near-ski-lift-suprimmo",
+  "name": "New residential complex near the ski lift, Bansko",
+  "changed": {
+   "price_from": [
+    43446,
+    55143
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "mamsha-palm-aldar",
+  "name": "Mamsha Palm",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "penha-living-bolder-addsolid",
+  "name": "Penha Living Bolder",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "khadr-rise-era-real-estate",
+  "name": "Khadr Rise",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "orchid-bahrain-bay-orchid-developers",
+  "name": "Orchid Bahrain Bay",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "udaondo-buenos-aires-landmark-developments",
+  "name": "Udaondo Buenos Aires",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Fideicomiso Buenos Aires Landmark",
+    "Fideicomiso Buenos Aires Landmark, named as the vehicle that bought the land in 2018; no buyer escrow or guarantee described"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "the-gateway-liverpool-legacie",
+  "name": "The Gateway",
+  "changed": {
+   "price_from": [
+    359950,
+    null
+   ],
+   "currency": [
+    "GBP",
+    null
+   ],
+   "advertised_yield_pct": [
+    6.0,
+    null
+   ],
+   "completion_year": [
+    2027,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "hayyan-alef-group",
+  "name": "Hayyan (current phases Samr and Deem)",
+  "changed": {
+   "price_from": [
+    1700000,
+    1690000
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "raya-jebel-sifah-muriya",
+  "name": "Raya Jebel Sifah (golf villas)",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ],
+   "escrow_or_guarantee": [
+    "Escrow account Not published by the developer",
+    "Escrow account: Not published by the developer"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "neptune-interiors-by-mouawad-dar-global",
+  "name": "Neptune, Interiors by Mouawad",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "harmony-ocean-front-ja-russi",
+  "name": "Harmony Ocean Front",
+  "changed": {
+   "permit_number": [
+    "R13 da Matrícula nº 135.051",
+    "Registro de Incorporação R13 da Matrícula nº 135.051"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "pavilion-damansara-heights-phase-2-jendela-mayang",
+  "name": "Pavilion Damansara Heights Phase 2 (Royal Suites and Imperial Residences)",
+  "changed": {
+   "completion_year": [
+    null,
+    2027
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "nidapark-kucukyali-buyukada-tahincioglu",
+  "name": "Nidapark Küçükyalı (Büyükada phase)",
+  "changed": {
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "next-gardens-kvariati-next-group",
+  "name": "NEXT Gardens",
+  "changed": {
+   "price_from": [
+    154080,
+    153950
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "cello-residences-taraf",
+  "name": "Cello Residences",
+  "changed": {
+   "plans_published": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "creek-waters-2-emaar",
+  "name": "Creek Waters 2",
+  "changed": {
+   "advertised_yield_pct": [
+    5,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "windsor-house-ellington-dubai-south",
+  "name": "Windsor House",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "dwtn-residences-deyaar",
+  "name": "DWTN Residences (registered as Downtown Residences)",
+  "changed": {
+   "price_from": [
+    2000000,
+    2005000
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "sparklz-danube-al-furjan",
+  "name": "Sparklz by Danube",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "ajwan-khorfakkan-residences-shurooq",
+  "name": "Ajwan Khorfakkan Residences",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "ajman-one-phase-2-aqaar",
+  "name": "Ajman One Phase 2",
+  "changed": {
+   "price_from": [
+    700000,
+    316000
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "alam-al-roum-qatari-diar",
+  "name": "Alam Al Roum (Alam El Roum)",
+  "changed": {
+   "plans_published": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "wing-samui-condo-phase-2",
+  "name": "Wing Samui Condo (Phase 2)",
+  "changed": {
+   "escrow_or_guarantee": [
+    null,
+    "5 year optional buy back guarantee"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "the-monument-sathon-sansiri",
+  "name": "The Monument Sathon",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "antalya-suites-sur-yapi",
+  "name": "Sur Yapı Antalya Suites",
+  "changed": {
+   "guaranteed_language": [
+    false,
+    true
+   ],
+   "plans_published": [
+    true,
+    false
+   ],
+   "escrow_or_guarantee": [
+    "government-guaranteed project",
+    "A government-guaranteed project"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "vr-krtsanisi-resort-residence-vr-holding",
+  "name": "VR Krtsanisi Resort Residence",
+  "changed": {
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "tual-golyaka-dag-holding",
+  "name": "Tual Gölyaka",
+  "changed": {
+   "price_from": [
+    160009,
+    159863
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "yekta-golden-valley-yekta-homes",
+  "name": "Yekta Golden Valley",
+  "changed": {
+   "price_from": [
+    7198,
+    7305
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "natulux-tatlisu-dovec-group",
+  "name": "Natulux",
+  "changed": {
+   "price_from": [
+    295142,
+    296756
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "bao-puerto-morelos-riviera-maya",
+  "name": "BAO Puerto Morelos",
+  "changed": {
+   "price_from": [
+    213341.05,
+    213067.86
+   ]
+  }
  }
 ]
