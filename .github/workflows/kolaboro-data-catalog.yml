@@ -1,0 +1,73 @@
+name: Kolaboro data catalog
+# Daily (block T6, batch 6): measures every public file under kolaboro.com/data/ as it is served (bytes, SHA-256, rows, own timestamp),
+# validates it against its data contract (JSON Schema 2020-12), measures freshness against a target derived from the schedule of the
+# workflow that writes it, checks the live API against the OpenAPI 3.1 description and validates that description, then publishes
+# /data/ (page), /data/catalog.json, /data/catalog.jsonld (DCAT-AP), /data/contracts.json, /data/schemas/kolaboro-data.schema.json,
+# /docs/api/openapi.json and /llms-full.txt to kolaboro.com. Code: tools/kolaboro-data/.
+# A failing contract publishes the results first and then turns this job red. It never blocks another workflow (nothing depends on it).
+on:
+  schedule:
+    - cron: '29 17 * * *'
+  push:
+    branches: [main]
+    paths: ['tools/kolaboro-data/**', '.github/workflows/kolaboro-data-catalog.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-data-catalog
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            tools/kolaboro-data
+            tools/kolaboro-reliability
+      - name: Install validators
+        run: pip install -q "jsonschema>=4.18" "openapi-spec-validator>=0.7" pyarrow
+      - name: List published data files
+        run: |
+          set -e
+          git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          git ls-tree -r --name-only FETCH_HEAD -- _s/kolaboro.com/data/ > "$RUNNER_TEMP/files.txt"
+          git show FETCH_HEAD:_s/kolaboro.com/data/index.html > "$RUNNER_TEMP/page.html" 2>/dev/null || rm -f "$RUNNER_TEMP/page.html"
+          wc -l "$RUNNER_TEMP/files.txt"
+      - name: Build catalog, contracts, freshness, API check
+        id: build
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          set +e
+          python3 tools/kolaboro-data/build.py --files "$RUNNER_TEMP/files.txt" --out "$RUNNER_TEMP/out" --page "$RUNNER_TEMP/page.html" --commits
+          rc=$?
+          echo "rc=$rc" >> "$GITHUB_OUTPUT"
+          [ "$rc" = 1 ] && { echo "build crashed"; exit 1; }
+          python3 - <<'PY' >> "$GITHUB_STEP_SUMMARY"
+          import json, os
+          c = json.load(open(os.environ['RUNNER_TEMP'] + '/out/data/contracts.json'))
+          k = json.load(open(os.environ['RUNNER_TEMP'] + '/out/data/catalog.json'))
+          print('## Kolaboro data catalog'); print(); print('```'); print(json.dumps(k['summary'], indent=1)); print('```')
+          bad = [x for x in c['files'] + c['api'] if x['status'] == 'fail']
+          for x in bad: print('- FAIL', x.get('path'), ':', '; '.join(x.get('errors') or [])[:400])
+          late = [d['id'] for d in k['datasets'] if d.get('freshness', {}).get('status') == 'late']
+          if late: print(); print('Late:', ', '.join(late))
+          PY
+          exit 0
+      - name: Publish to kolaboro.com
+        run: |
+          O="$RUNNER_TEMP/out"; K=_s/kolaboro.com
+          bash tools/kolaboro-reliability/publish.sh "kolaboro.com: data catalog $(date -u +%FT%H:%M)" \
+            "$O/data/index.html=$K/data/index.html" "$O/data/catalog.json=$K/data/catalog.json" "$O/data/catalog.jsonld=$K/data/catalog.jsonld" \
+            "$O/data/contracts.json=$K/data/contracts.json" "$O/data/schemas/kolaboro-data.schema.json=$K/data/schemas/kolaboro-data.schema.json" \
+            "$O/docs/api/openapi.json=$K/docs/api/openapi.json" "$O/llms-full.txt=$K/llms-full.txt"
+      - name: Contracts must pass
+        if: steps.build.outputs.rc != '0'
+        run: |
+          echo "::error title=Data contract failed::At least one public data file or API answer does not match its contract, or the OpenAPI description is invalid. Results are published at https://kolaboro.com/data/#contracts"
+          exit 1

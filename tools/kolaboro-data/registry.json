@@ -1,0 +1,954 @@
+{
+ "about": "Hand-written description of every public dataset under kolaboro.com/data/. Sizes, hashes, row counts, dates and contract results are NOT written here: the daily job (build.py) measures them from the live files. interval_hours comes from the cron schedule of the workflow that writes the file (null: no schedule). A file found under /data/ that is not listed here is still published in the catalog, marked as not yet described.",
+ "licence_default": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
+ "datasets": [
+  {
+   "id": "bali-cases",
+   "path": "bali-cases.json",
+   "title": "Tracked off-plan projects (anonymous)",
+   "kind": "data",
+   "description": "Every off-plan project Kolaboro tracks, one record per anonymous project id: market, country, stage, price band, promised handover year, the six public checks (permit, deposit protection, progress, plans, track record, no guaranteed returns), how far each is confirmed, claims tested, flags and the change history. Advertised claims, not verified facts. The same data is served filtered by /api/open/projects.",
+   "workflow": "kolaboro-agent.yml",
+   "schedule": "weekly research run (Monday 06:17 UTC) and every time the research files change",
+   "interval_hours": 168,
+   "stamp": "updated",
+   "rows": {
+    "key": "cases",
+    "unit": "projects"
+   },
+   "keywords": [
+    "off-plan",
+    "property",
+    "due diligence",
+    "developers",
+    "transparency"
+   ]
+  },
+  {
+   "id": "world-claims",
+   "path": "world-claims.json",
+   "title": "What developers advertise, by market",
+   "kind": "data",
+   "description": "Per market: how many tracked projects, title and lease terms advertised, guaranteed-return language, permit claims, permit numbers and plans published, and advertised USD prices. Aggregates only.",
+   "workflow": "kolaboro-agent.yml",
+   "schedule": "weekly research run (Monday 06:17 UTC) and every time the research files change",
+   "interval_hours": 168,
+   "stamp": "updated",
+   "rows": {
+    "key": "markets",
+    "unit": "markets"
+   },
+   "keywords": [
+    "advertising",
+    "claims",
+    "markets"
+   ]
+  },
+  {
+   "id": "bali-claims",
+   "path": "bali-claims.json",
+   "title": "What developers advertise in Bali",
+   "kind": "data",
+   "description": "The same aggregate as world-claims for the Bali market alone: title and lease terms, guaranteed-return language, permit claims and numbers, plans and advertised prices.",
+   "workflow": "kolaboro-agent.yml",
+   "schedule": "weekly research run (Monday 06:17 UTC) and every time the research files change",
+   "interval_hours": 168,
+   "stamp": "updated",
+   "rows": null,
+   "keywords": [
+    "Bali",
+    "advertising",
+    "claims"
+   ]
+  },
+  {
+   "id": "kolaboro-parquet",
+   "path": "kolaboro.parquet",
+   "title": "Projects table (Parquet)",
+   "kind": "data",
+   "format": "parquet",
+   "description": "One row per tracked project, built from bali-cases.json: checks, confirmation levels, claims, delay, satellite status and page fingerprint, in Apache Parquet for DuckDB, pandas or Spark. Columns and row count are listed in kolaboro.parquet.json.",
+   "workflow": "kolaboro-parquet.yml",
+   "schedule": "daily 07:43 UTC and after each research run; rewritten only when the source changed",
+   "interval_hours": 24,
+   "stamp_from": "kolaboro-parquet-manifest",
+   "rows": {
+    "parquet": true,
+    "unit": "projects"
+   },
+   "sync_with": "bali-cases",
+   "keywords": [
+    "parquet",
+    "duckdb",
+    "projects"
+   ]
+  },
+  {
+   "id": "kolaboro-markets-parquet",
+   "path": "kolaboro-markets.parquet",
+   "title": "Markets table (Parquet)",
+   "kind": "data",
+   "format": "parquet",
+   "description": "One row per market with the same method as /api/open/markets: projects, average public and confirmed checks, permit and deposit-protection shares, flags and the transparency index.",
+   "workflow": "kolaboro-parquet.yml",
+   "schedule": "daily 07:43 UTC and after each research run; rewritten only when the source changed",
+   "interval_hours": 24,
+   "stamp_from": "kolaboro-parquet-manifest",
+   "rows": {
+    "parquet": true,
+    "unit": "markets"
+   },
+   "sync_with": "bali-cases",
+   "keywords": [
+    "parquet",
+    "markets",
+    "transparency index"
+   ]
+  },
+  {
+   "id": "kolaboro-parquet-manifest",
+   "path": "kolaboro.parquet.json",
+   "title": "Parquet export manifest",
+   "kind": "data",
+   "description": "Columns, row counts, sizes and SHA-256 of the two Parquet files and the SHA-256 of the bali-cases.json they were built from. A signed copy is served by /api/x/e/parquet-manifest.",
+   "workflow": "kolaboro-parquet.yml",
+   "schedule": "daily 07:43 UTC and after each research run; rewritten only when the source changed",
+   "interval_hours": 24,
+   "stamp": "generated",
+   "rows": {
+    "key": "files",
+    "unit": "files"
+   },
+   "sync_with": "bali-cases",
+   "keywords": [
+    "parquet",
+    "manifest"
+   ]
+  },
+  {
+   "id": "promises",
+   "path": "promises.json",
+   "title": "Dated developer promises",
+   "kind": "data",
+   "description": "Every dated promise a developer made about a tracked project (handover, construction start, structure, other milestones, permits, rental programme), read from the research records, with its status today. Per project and per market.",
+   "workflow": "kolaboro-followup.yml",
+   "schedule": "daily 11:23 UTC and after each research run",
+   "interval_hours": 24,
+   "stamp": "updated",
+   "rows": {
+    "key": "projects",
+    "unit": "projects"
+   },
+   "keywords": [
+    "promises",
+    "handover",
+    "milestones"
+   ]
+  },
+  {
+   "id": "promise-drift",
+   "path": "promise-drift.json",
+   "title": "Promise drift on developer pages",
+   "kind": "data",
+   "description": "Day by day, which advertised values changed on each tracked developer page (handover date, prices, units and other fields), from fingerprinted page text. No URLs or names.",
+   "workflow": "kolaboro-devintel.yml",
+   "schedule": "daily 09:43 UTC and after each research run",
+   "interval_hours": 24,
+   "stamp": "updated",
+   "rows": {
+    "key": "projects",
+    "unit": "projects"
+   },
+   "keywords": [
+    "changes",
+    "developer pages"
+   ]
+  },
+  {
+   "id": "domain-age",
+   "path": "domain-age.json",
+   "title": "Website age of project pages",
+   "kind": "data",
+   "description": "For each project whose page is on its own website: domain registration date (RDAP) and earliest TLS certificate (Certificate Transparency), at month precision. No domains are published.",
+   "workflow": "kolaboro-devintel.yml",
+   "schedule": "daily 09:43 UTC and after each research run",
+   "interval_hours": 24,
+   "stamp": "updated",
+   "rows": {
+    "key": "projects",
+    "unit": "projects"
+   },
+   "keywords": [
+    "RDAP",
+    "certificate transparency",
+    "domain age"
+   ]
+  },
+  {
+   "id": "delay-index",
+   "path": "delay-index.json",
+   "title": "Delivery delay index",
+   "kind": "data",
+   "description": "How far tracked off-plan projects are behind the first handover date on record, by market, with rules, caveats and monthly history.",
+   "workflow": "kolaboro-delay-index.yml",
+   "schedule": "daily 16:37 UTC, monthly snapshot on the 1st, and after each research run",
+   "interval_hours": 24,
+   "stamp": "generated",
+   "rows": {
+    "key": "markets",
+    "unit": "markets"
+   },
+   "keywords": [
+    "delays",
+    "handover",
+    "index"
+   ]
+  },
+  {
+   "id": "on-time",
+   "path": "on-time.json",
+   "title": "On-time handover odds",
+   "kind": "data",
+   "description": "For each project: will it hand over within 6 months of the first date on record? Estimated from closed comparable projects with a 95% interval, plus validation and the bias of the sample.",
+   "workflow": "kolaboro-delay-index.yml",
+   "schedule": "daily 16:37 UTC, monthly snapshot on the 1st, and after each research run",
+   "interval_hours": 24,
+   "stamp": "generated",
+   "rows": {
+    "key": "projects",
+    "unit": "projects"
+   },
+   "keywords": [
+    "handover",
+    "probability"
+   ]
+  },
+  {
+   "id": "price-index",
+   "path": "price-index.json",
+   "title": "Asking-price index",
+   "kind": "data",
+   "description": "Chained index of advertised asking prices (\"from\" prices on developer and listing pages) per market, with daily snapshots, rules and caveats. Not transaction prices.",
+   "workflow": "kolaboro-price-index.yml",
+   "schedule": "daily 14:41 UTC and after each research run",
+   "interval_hours": 24,
+   "stamp": "generated",
+   "rows": {
+    "key": "markets",
+    "unit": "markets"
+   },
+   "keywords": [
+    "prices",
+    "index"
+   ]
+  },
+  {
+   "id": "price-reality",
+   "path": "price-reality.json",
+   "title": "Advertised versus registered prices",
+   "kind": "data",
+   "description": "Advertised starting prices compared with officially registered sales where a government publishes them: counts, quartiles and medians only, converted to USD at a cited rate. Lists the markets not covered.",
+   "workflow": "kolaboro-market-truth.yml",
+   "schedule": "weekly, Monday 04:17 UTC",
+   "interval_hours": 168,
+   "stamp": "updated",
+   "rows": {
+    "key": "markets",
+    "unit": "markets"
+   },
+   "keywords": [
+    "prices",
+    "official data"
+   ]
+  },
+  {
+   "id": "risk",
+   "path": "risk.json",
+   "title": "Risk patterns",
+   "kind": "data",
+   "description": "Which tracked projects look unusual on public warning signs compared with all others, and why, with a model card. It ranks; it does not predict. No project has a confirmed outcome to train on.",
+   "workflow": "kolaboro-market-truth.yml",
+   "schedule": "weekly, Monday 04:17 UTC",
+   "interval_hours": 168,
+   "stamp": "updated",
+   "rows": {
+    "key": "projects",
+    "unit": "projects"
+   },
+   "keywords": [
+    "risk",
+    "anomaly",
+    "model card"
+   ]
+  },
+  {
+   "id": "register-checks",
+   "path": "register-checks.json",
+   "title": "Official register checks",
+   "kind": "data",
+   "description": "Every official register linked on /registers/: whether our checker could read it (time, HTTP status, size and SHA-256 of the bytes received), and per project the register result, with a hash-chained lookup archive.",
+   "workflow": "kolaboro-market-truth.yml",
+   "schedule": "weekly, Monday 04:17 UTC",
+   "interval_hours": 168,
+   "stamp": "updated",
+   "rows": {
+    "key": "registers",
+    "unit": "registers"
+   },
+   "keywords": [
+    "registers",
+    "permits"
+   ]
+  },
+  {
+   "id": "company-graph",
+   "path": "company-graph.json",
+   "title": "Company and director graph (UK)",
+   "kind": "data",
+   "description": "Anonymised company and director graph for tracked projects whose developer is a UK company found on Companies House by exact name. Counts and anonymised nodes only.",
+   "workflow": "kolaboro-company-graph.yml",
+   "schedule": "weekly, Wednesday 05:41 UTC",
+   "interval_hours": 168,
+   "stamp": "generated_at",
+   "rows": {
+    "key": "projects",
+    "unit": "projects"
+   },
+   "keywords": [
+    "companies house",
+    "directors"
+   ]
+  },
+  {
+   "id": "company-graph-global",
+   "path": "company-graph-global.json",
+   "title": "Global company graph (GLEIF)",
+   "kind": "data",
+   "description": "For each tracked project: whether the companies named as developer have a Legal Entity Identifier, their parents and countries, as counts and booleans only. Source GLEIF (CC0).",
+   "workflow": "kolaboro-gleif-graph.yml",
+   "schedule": "weekly, Tuesday 04:17 UTC",
+   "interval_hours": 168,
+   "stamp": "updated",
+   "rows": {
+    "key": "projects",
+    "unit": "projects"
+   },
+   "keywords": [
+    "GLEIF",
+    "LEI",
+    "companies"
+   ]
+  },
+  {
+   "id": "insolvency-watch",
+   "path": "insolvency-watch.json",
+   "title": "Insolvency watch",
+   "kind": "data",
+   "description": "Daily check of UK and Spanish developer companies against insolvency notices (The Gazette, BORME). Each hit is reduced to date, source and type of notice; no company names.",
+   "workflow": "kolaboro-insolvency-watch.yml",
+   "schedule": "daily 07:23 UTC",
+   "interval_hours": 24,
+   "stamp": "updated",
+   "rows": {
+    "key": "projects",
+    "unit": "projects"
+   },
+   "keywords": [
+    "insolvency",
+    "BORME",
+    "Gazette"
+   ]
+  },
+  {
+   "id": "insolvency-es-index",
+   "path": "insolvency-es-index.json",
+   "title": "Spanish insolvency index (hashed)",
+   "kind": "data",
+   "description": "Insolvency acts published in BORME Section One, keyed by a truncated SHA-256 of the normalised company name so the file is not a readable list of companies; anyone can test a name against it. Source BOE, reuse with attribution.",
+   "workflow": "kolaboro-insolvency-watch.yml",
+   "schedule": "daily 07:23 UTC",
+   "interval_hours": 24,
+   "stamp": "updated",
+   "rows": {
+    "key": "h",
+    "unit": "companies"
+   },
+   "keywords": [
+    "BORME",
+    "insolvency",
+    "Spain"
+   ]
+  },
+  {
+   "id": "hazards",
+   "path": "hazards.json",
+   "title": "Natural hazards at tracked projects",
+   "kind": "data",
+   "description": "Elevation, flood depth, earthquakes, tsunamis, volcanoes and coastline distance for tracked projects with coordinates and watched areas, rounded so they cannot pinpoint a plot. Sources listed in the file.",
+   "workflow": "kolaboro-hazards.yml",
+   "schedule": "monthly, on the 9th at 03:17 UTC",
+   "interval_hours": 744,
+   "stamp": "updated",
+   "rows": {
+    "key": "projects",
+    "unit": "projects"
+   },
+   "keywords": [
+    "hazards",
+    "flood",
+    "earthquake"
+   ]
+  },
+  {
+   "id": "satellite",
+   "path": "satellite.json",
+   "title": "Satellite watch (Sentinel-2 and Sentinel-1)",
+   "kind": "data",
+   "description": "Sentinel-2 vegetation and clearing per season and Sentinel-1 radar backscatter change for every watched site and area (boxes of about 1 km). Contains modified Copernicus Sentinel data.",
+   "workflow": "kolaboro-satellite.yml",
+   "schedule": "weekly, Monday 07:41 UTC",
+   "interval_hours": 168,
+   "stamp": "updated",
+   "rows": {
+    "key": "sites",
+    "unit": "sites"
+   },
+   "keywords": [
+    "satellite",
+    "Sentinel-2",
+    "Copernicus"
+   ]
+  },
+  {
+   "id": "satellite-optical",
+   "path": "satellite-optical.json",
+   "title": "Monthly optical progress series",
+   "kind": "data",
+   "description": "Per watched site and month from January 2023: cloud-masked Sentinel-2 median, built_pct (built-up or bare ground, which look alike at 10 m) and new built-up since the baseline month. Contains modified Copernicus Sentinel data.",
+   "workflow": "kolaboro-satellite-optical.yml",
+   "schedule": "weekly, Tuesday 09:17 UTC",
+   "interval_hours": 168,
+   "stamp": "updated",
+   "rows": {
+    "key": "sites",
+    "unit": "sites"
+   },
+   "keywords": [
+    "satellite",
+    "construction progress"
+   ]
+  },
+  {
+   "id": "stalled-sites",
+   "path": "stalled-sites.json",
+   "title": "Stalled construction sites",
+   "kind": "data",
+   "description": "Sentinel-2 change between clear quarters in a 150 m window around every project with coordinates, and which sites show almost no change.",
+   "workflow": "kolaboro-landwatch.yml",
+   "schedule": "weekly, Wednesday 04:41 UTC",
+   "interval_hours": 168,
+   "stamp": "updated",
+   "rows": {
+    "key": "projects",
+    "unit": "projects"
+   },
+   "keywords": [
+    "satellite",
+    "stalled"
+   ]
+  },
+  {
+   "id": "night-lights",
+   "path": "night-lights.json",
+   "title": "Night lights at finished projects",
+   "kind": "data",
+   "description": "NASA Black Marble night-time light at projects that should be finished, compared with the surrounding ring, monthly for 36 months. Light is a proxy, not proof of occupancy.",
+   "workflow": "kolaboro-landwatch.yml",
+   "schedule": "weekly, Wednesday 04:41 UTC",
+   "interval_hours": 168,
+   "stamp": "updated",
+   "rows": {
+    "key": "projects",
+    "unit": "projects"
+   },
+   "keywords": [
+    "night lights",
+    "VIIRS"
+   ]
+  },
+  {
+   "id": "visual-diff",
+   "path": "visual-diff.json",
+   "title": "Visual changes on developer pages",
+   "kind": "data",
+   "description": "Where the pages of tracked developer websites visibly changed, as page geometry only. No screenshots are published because they would identify anonymous projects.",
+   "workflow": "kolaboro-visual.yml",
+   "schedule": "daily 15:23 UTC",
+   "interval_hours": 24,
+   "stamp": "generated",
+   "rows": {
+    "key": "projects",
+    "unit": "projects"
+   },
+   "keywords": [
+    "visual diff",
+    "developer pages"
+   ]
+  },
+  {
+   "id": "render-reuse",
+   "path": "render-reuse.json",
+   "title": "Reused renders across projects",
+   "kind": "data",
+   "description": "Pairs of images that appear on the pages of two different tracked projects on different domains (CLIP image embeddings, cosine 0.85 or more, confirmed by feature matching), with what was excluded and why.",
+   "workflow": "kolaboro-render-reuse.yml",
+   "schedule": "weekly, Sunday 06:37 UTC",
+   "interval_hours": 168,
+   "stamp": "generated",
+   "rows": {
+    "key": "pairs",
+    "unit": "pairs"
+   },
+   "keywords": [
+    "images",
+    "reuse"
+   ]
+  },
+  {
+   "id": "image-hashes",
+   "path": "image-hashes.json",
+   "title": "Perceptual image hashes",
+   "kind": "data",
+   "description": "64-bit difference hashes of the images kept by the weekly render-reuse run, so anyone can check whether a picture appears on a tracked project page.",
+   "workflow": "kolaboro-render-reuse.yml",
+   "schedule": "weekly, Sunday 06:37 UTC",
+   "interval_hours": 168,
+   "stamp": "generated",
+   "rows": {
+    "key": "items",
+    "unit": "images"
+   },
+   "keywords": [
+    "images",
+    "hashes"
+   ]
+  },
+  {
+   "id": "image-index",
+   "path": "image-index.json",
+   "title": "Render index",
+   "kind": "data",
+   "description": "Perceptual hashes of images found on the websites the research agent reads, used to check whether a picture a buyer was sent also appears elsewhere.",
+   "workflow": "kolaboro-images.yml",
+   "schedule": "weekly, Sunday 04:51 UTC",
+   "interval_hours": 168,
+   "stamp": "updated",
+   "rows": {
+    "key": "items",
+    "unit": "images"
+   },
+   "keywords": [
+    "images",
+    "hashes"
+   ]
+  },
+  {
+   "id": "similar",
+   "path": "similar.json",
+   "title": "Similar projects",
+   "kind": "data",
+   "description": "For every public project, the 5 most similar other public projects: ids and rounded scores only (text similarity from an open sentence-embedding model run on the GitHub runner, plus structured similarity). Input is only the public bali-cases.json.",
+   "workflow": "kolaboro-discovery.yml",
+   "schedule": "daily 02:23 UTC and after each research run",
+   "interval_hours": 24,
+   "stamp": "generated",
+   "rows": {
+    "key": "projects",
+    "unit": "projects"
+   },
+   "keywords": [
+    "similarity",
+    "embeddings"
+   ]
+  },
+  {
+   "id": "market-points",
+   "path": "market-points.json",
+   "title": "Market points for the map",
+   "kind": "data",
+   "description": "One public point per market (not per project), from Natural Earth and GeoNames, used to place anonymous projects on the map. Private per-project coordinates are never used.",
+   "workflow": "kolaboro-discovery.yml",
+   "schedule": "daily 02:23 UTC and after each research run",
+   "interval_hours": 24,
+   "stamp": "generated",
+   "rows": {
+    "key": "markets",
+    "unit": "markets"
+   },
+   "keywords": [
+    "map",
+    "markets",
+    "Natural Earth",
+    "GeoNames"
+   ]
+  },
+  {
+   "id": "mystery-shopper",
+   "path": "mystery-shopper.json",
+   "title": "Mystery shopper programme",
+   "kind": "data",
+   "description": "Questionnaire, measurement rules and status of the mystery shopper programme. It has not started; the file says why.",
+   "workflow": null,
+   "schedule": "edited by hand",
+   "interval_hours": null,
+   "stamp": "updated",
+   "rows": {
+    "key": "questionnaire",
+    "unit": "questions"
+   },
+   "keywords": [
+    "mystery shopper"
+   ]
+  },
+  {
+   "id": "roadmap",
+   "path": "roadmap.json",
+   "title": "Product roadmap",
+   "kind": "data",
+   "description": "The public product roadmap: each item with its number, theme, title, short description and status.",
+   "workflow": null,
+   "schedule": "edited by hand",
+   "interval_hours": null,
+   "stamp": "updated",
+   "rows": {
+    "key": "items",
+    "unit": "items"
+   },
+   "keywords": [
+    "roadmap"
+   ]
+  },
+  {
+   "id": "projects-sample",
+   "path": "projects.json",
+   "title": "Fictional sample score",
+   "kind": "sample",
+   "description": "One fictional project (marked fictional: true) used to demonstrate the score page. Not real data.",
+   "workflow": null,
+   "schedule": "static sample",
+   "interval_hours": null,
+   "stamp": "updated",
+   "rows": {
+    "key": "projects",
+    "unit": "projects"
+   },
+   "keywords": [
+    "sample"
+   ]
+  },
+  {
+   "id": "progress-sample",
+   "path": "progress-sample.json",
+   "title": "Sample photo progress analysis",
+   "kind": "sample",
+   "description": "One stored example answer of the photo progress check, used on the demo page.",
+   "workflow": null,
+   "schedule": "static sample",
+   "interval_hours": null,
+   "stamp": "analysed",
+   "rows": null,
+   "keywords": [
+    "sample"
+   ]
+  },
+  {
+   "id": "coast-tiles",
+   "prefix": "coast/",
+   "title": "Coastline outline tiles",
+   "kind": "tiles",
+   "format": "json-tiles",
+   "description": "Natural Earth 1:10m land outline (public domain, via world-atlas 2.0.2) cut into 10 degree tiles, quantised and delta-encoded, used by the hazards check only when no OpenStreetMap server answers. Every tile exists; open-ocean tiles are empty.",
+   "licence": "Public domain (Natural Earth)",
+   "workflow": null,
+   "schedule": "static, built once",
+   "interval_hours": null,
+   "stamp": null,
+   "rows": {
+    "files": true,
+    "unit": "tiles"
+   },
+   "keywords": [
+    "coastline",
+    "Natural Earth"
+   ]
+  },
+  {
+   "id": "mangrove-tiles",
+   "prefix": "mangroves/",
+   "title": "Mangrove index tiles",
+   "kind": "tiles",
+   "format": "binary-tiles",
+   "description": "Global Mangrove Watch v3 (2020) reduced to cells of about 220 m that contain any mangrove pixel, in binary 45 degree blocks (format GMW1, see the file header description in the protected-land endpoint). Source CC BY 4.0, Bunting et al. 2022.",
+   "licence": "CC BY 4.0 (Global Mangrove Watch v3, Bunting et al. 2022; credit Kolaboro for the reduction)",
+   "workflow": null,
+   "schedule": "static, rebuilt once per Global Mangrove Watch release",
+   "interval_hours": null,
+   "stamp": null,
+   "rows": {
+    "files": true,
+    "unit": "tiles"
+   },
+   "keywords": [
+    "mangroves",
+    "Global Mangrove Watch"
+   ]
+  },
+  {
+   "id": "benchmark",
+   "prefix": "benchmark/",
+   "title": "AI desk review benchmark",
+   "kind": "operations",
+   "description": "Results of the desk review benchmark on fixed fictional cases, one file per model (Haiku, Sonnet), each case answer signed with the Kolaboro Ed25519 key.",
+   "workflow": "kolaboro-benchmark.yml",
+   "schedule": "on demand",
+   "interval_hours": null,
+   "stamp": "started",
+   "rows": {
+    "key": "cases",
+    "unit": "cases"
+   },
+   "keywords": [
+    "AI",
+    "benchmark"
+   ]
+  },
+  {
+   "id": "a11y",
+   "path": "a11y.json",
+   "title": "Accessibility audit",
+   "kind": "operations",
+   "description": "axe-core audit of every page (WCAG 2.2 AA rules) with counts per rule and page and the run history.",
+   "workflow": "kolaboro-a11y.yml",
+   "schedule": "daily 02:47 UTC",
+   "interval_hours": 24,
+   "stamp": "updated",
+   "rows": {
+    "key": "pages",
+    "unit": "pages"
+   },
+   "keywords": [
+    "accessibility",
+    "WCAG"
+   ]
+  },
+  {
+   "id": "lighthouse",
+   "path": "lighthouse.json",
+   "title": "Lighthouse scores",
+   "kind": "operations",
+   "description": "Lighthouse runs per page and form factor with thresholds and flags.",
+   "workflow": "kolaboro-lighthouse.yml",
+   "schedule": "daily 04:23 UTC",
+   "interval_hours": 24,
+   "stamp": "generated",
+   "rows": {
+    "key": "runs",
+    "unit": "runs"
+   },
+   "keywords": [
+    "performance",
+    "Lighthouse"
+   ]
+  },
+  {
+   "id": "qa",
+   "path": "qa.json",
+   "title": "Site QA crawl",
+   "kind": "operations",
+   "description": "Daily crawl of every page and link with the checks that ran and any problems found.",
+   "workflow": "kolaboro-qa.yml",
+   "schedule": "daily 05:23 UTC",
+   "interval_hours": 24,
+   "stamp": "date",
+   "rows": {
+    "key": "checks",
+    "unit": "checks"
+   },
+   "keywords": [
+    "QA",
+    "links"
+   ]
+  },
+  {
+   "id": "journeys",
+   "path": "journeys.json",
+   "title": "Synthetic user journeys",
+   "kind": "operations",
+   "description": "A scripted buyer journey run in a real browser every hour: pass or fail per step, timings and the latest screenshots (journeys/1.webp to 5.webp).",
+   "workflow": "kolaboro-journeys.yml",
+   "schedule": "hourly at minute 41",
+   "interval_hours": 1,
+   "stamp": "updated",
+   "rows": {
+    "key": "runs",
+    "unit": "runs"
+   },
+   "keywords": [
+    "monitoring",
+    "synthetic"
+   ],
+   "extra_prefix": "journeys/"
+  },
+  {
+   "id": "verifiers",
+   "path": "verifiers.json",
+   "title": "Independent verifier run",
+   "kind": "operations",
+   "description": "Three independent implementations (JavaScript, Python, Go) check the test vectors and the live log, checkpoint, proofs and signatures.",
+   "workflow": "kolaboro-verifiers.yml",
+   "schedule": "daily 08:41 UTC",
+   "interval_hours": 24,
+   "stamp": "date",
+   "rows": null,
+   "keywords": [
+    "verification",
+    "transparency log"
+   ]
+  },
+  {
+   "id": "chaos",
+   "path": "chaos.json",
+   "title": "Chaos drills",
+   "kind": "operations",
+   "description": "Weekly fault-injection drills of the desk review (for example the primary AI reader down): what was forced, what was expected, what happened, and what is not covered.",
+   "workflow": "kolaboro-chaos.yml",
+   "schedule": "weekly, Wednesday 05:11 UTC",
+   "interval_hours": 168,
+   "stamp": "updated",
+   "rows": {
+    "key": "runs",
+    "unit": "runs"
+   },
+   "keywords": [
+    "reliability",
+    "chaos"
+   ]
+  },
+  {
+   "id": "security-scan",
+   "path": "security-scan.json",
+   "title": "Security scan",
+   "kind": "operations",
+   "description": "OWASP ZAP baseline passive scan of kolaboro.com: alerts by risk.",
+   "workflow": "kolaboro-security-scan.yml",
+   "schedule": "weekly, Tuesday 04:29 UTC",
+   "interval_hours": 168,
+   "stamp": "date",
+   "rows": {
+    "key": "alerts",
+    "unit": "alerts"
+   },
+   "keywords": [
+    "security",
+    "ZAP"
+   ]
+  },
+  {
+   "id": "restore",
+   "path": "restore.json",
+   "title": "Backup restore drill",
+   "kind": "operations",
+   "description": "Weekly drill: the latest database backup is restored into a clean PostgreSQL and checked table by table, and evidence files are re-hashed.",
+   "workflow": "kolaboro-restore.yml",
+   "schedule": "weekly, Monday 03:17 UTC",
+   "interval_hours": 168,
+   "stamp": "drill_at",
+   "rows": {
+    "key": "tables",
+    "unit": "tables"
+   },
+   "keywords": [
+    "backup",
+    "restore"
+   ]
+  },
+  {
+   "id": "deploys",
+   "path": "deploys.json",
+   "title": "Deploy guard record",
+   "kind": "operations",
+   "description": "Each deploy of the site: smoke checks after it went live, and any automatic rollback.",
+   "workflow": "kolaboro-deploy-guard.yml",
+   "schedule": "after each site deploy (event driven, checked every 30 minutes)",
+   "interval_hours": null,
+   "event": true,
+   "stamp": "updated",
+   "rows": {
+    "key": "deploys",
+    "unit": "deploys"
+   },
+   "keywords": [
+    "deploys",
+    "rollback"
+   ]
+  },
+  {
+   "id": "site-manifest",
+   "path": "site-manifest.json",
+   "title": "Site manifest",
+   "kind": "operations",
+   "description": "SHA-256 of every file published on kolaboro.com outside /data/, computed from the git commit the live site was serving.",
+   "workflow": "kolaboro-manifest.yml",
+   "schedule": "checked every 30 minutes, written when the live commit changes",
+   "interval_hours": null,
+   "event": true,
+   "stamp": "generated_at",
+   "rows": {
+    "key": "files",
+    "unit": "files"
+   },
+   "keywords": [
+    "integrity",
+    "manifest"
+   ]
+  },
+  {
+   "id": "builds",
+   "path": "builds.json",
+   "title": "Reproducible worker builds",
+   "kind": "operations",
+   "description": "Deterministic bundle of the site worker for each worker source tree that went live, built twice in clean folders; reproduced says whether both builds were identical.",
+   "workflow": "kolaboro-manifest.yml",
+   "schedule": "checked every 30 minutes, written when the worker changes",
+   "interval_hours": null,
+   "event": true,
+   "stamp": "updated",
+   "rows": {
+    "key": "builds",
+    "unit": "builds"
+   },
+   "keywords": [
+    "reproducible builds"
+   ]
+  },
+  {
+   "id": "property-tests",
+   "path": "property-tests.json",
+   "title": "Property-based tests of the scoring rules",
+   "kind": "operations",
+   "description": "Property-based tests and fuzzing of the open scoring rules, counted by the test run itself.",
+   "workflow": null,
+   "schedule": "published when the open-source test suite is run",
+   "interval_hours": null,
+   "stamp": "generated",
+   "rows": {
+    "key": "properties",
+    "unit": "properties"
+   },
+   "keywords": [
+    "tests",
+    "fuzzing"
+   ]
+  }
+ ]
+}
