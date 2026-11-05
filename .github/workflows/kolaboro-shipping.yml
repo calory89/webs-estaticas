@@ -44,6 +44,7 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GITHUB_TOKEN: ${{ github.token }}
+          KB_SHIP_NEW_FILES: '1'   # 5 Nov: room again after the satellite images were packed (about 1,700 files under the Pages limit); about 1 new day page a day
         run: python3 tools/kolaboro-ship/ship.py --git "$RUNNER_TEMP/hist.git" --ref pub/_lovable --main . --out "$RUNNER_TEMP/out"
       - name: Publish to kolaboro.com
         run: |
