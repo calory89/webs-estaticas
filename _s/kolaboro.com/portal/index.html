@@ -109,7 +109,7 @@ var KB = (function(){
     if (!c.desk && c.project_url && !deskBusy[c.id]) runDesk(c);
   }
   // buyer cycle (/k/cycle.js): checks saved from /check, watch alerts, permit upload, pay or order a site visit
-  function c7(){ if (window.KBC7) try { KBC7.portal(D, { pick: function(id){ CUR = id; render(); }, reload: function(){ return load('me'); } }); } catch (e) {} }
+  function c7(){ if (window.KBC7) try { KBC7.portal(D, { pick: function(id){ CUR = id; render(); }, reload: function(){ return load('me'); } }); } catch (e) { try { console.error('dashboard checks: ' + e.message); } catch (x) {} } }
   function dbSaved(){ return (D.saved || []).filter(function(x){ return !/^CHK-/i.test(x.ref); }); }
   // ---- free accounts, saved projects, payment schedule (needs the 1 Nov database update; hidden until D.saved exists)
   var LAST = (function(){ try { return localStorage.getItem('kb-pv-last'); } catch (e) { return null; } })();
