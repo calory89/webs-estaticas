@@ -65,23 +65,24 @@
     var res = x.result || x.record || x.data || x.entity || (x.fields && !Array.isArray(x.fields) ? x.fields : null) || {};
     var found = pick(x, ['found', 'match', 'matched']); if (found == null && typeof x.status === 'string' && x.status in STATUS) found = STATUS[x.status]; if (found == null) found = pick(res, ['found']); if (res.blocked || x.blocked) found = null;
     var qv = x.query && typeof x.query === 'object' ? x.query : null, sn = x.snapshot && typeof x.snapshot === 'object' ? x.snapshot : null;
+    var m0 = res && Array.isArray(res.matches) && res.matches[0] && typeof res.matches[0] === 'object' ? res.matches[0] : null;
     var fields = Array.isArray(x.fields) && !res.found ? x.fields.map(function(f){ return Array.isArray(f) ? [String(f[0]), String(f[1])] : [String(f.label || f.name || f.key || ''), String(f.value == null ? '' : f.value)]; }) : flat(res, '', [], 0);
     fields = fields.filter(function(f){ return f[0] && f[1] && f[1] !== 'null' && f[1].length < 400; }).slice(0, 24);
     var arc = x.archive && (x.archive.url || x.archive) || x.archive_url || x.snapshot_url || (sn && (sn.raw_url || sn.url)) || null;
     var h = pick(x, ['sha256', 'snapshot_sha256', 'hash']) || (sn && sn.sha256) || (x.seal && x.seal.sha256) || null;
     if (!arc && /^[0-9a-f]{64}$/.test(h || '')) arc = '/api/x/h/archive/' + h;
     return { r: pick(x, ['register_name', 'register_label', 'source_name', 'source', 'register']) || 'Official register', id: pick(x, ['id', 'register', 'register_id']) || '',
-      u: (qv && qv.url) || pick(x, ['url', 'record_url', 'source_url', 'link', 'manual_check']), f: found === true || found === 'true' ? true : found === false || found === 'false' ? false : null,
+      u: x.official_page || (m0 && m0.page) || (qv && qv.url) || pick(x, ['url', 'record_url', 'source_url', 'link', 'manual_check']), f: found === true || found === 'true' ? true : found === false || found === 'false' ? false : null,
       sl: typeof x.status === 'string' && SLABEL[x.status] ? SLABEL[x.status] : '', man: x.manual_check || '',
       h: h, a: typeof arc === 'string' ? arc : null, at: pick(x, ['fetched_at', 'at', 'checked_at', 'time']) || (sn && sn.fetched_at), q: qv ? (qv.value != null ? String(qv.value) : null) : pick(x, ['query', 'q', 'number']),
-      nm: pick(res, ['name', 'legal_name', 'entity_name', 'company_name', 'holder', 'owner', 'project_name']) || pick(x, ['name', 'entity_name']), st: pick(res, ['status', 'company_status', 'entity_status', 'abn_status', 'licence_status', 'permit_status', 'registration_status']) || (x.status && !(x.status in STATUS) && !SLABEL[x.status] ? x.status : null),
-      fl: fields, note: pick(x, ['error', 'note', 'message', 'reason']), http: pick(x, ['http_status', 'status_code']) };
+      nm: (m0 && m0.legal_name) || pick(res, ['name', 'legal_name', 'entity_name', 'company_name', 'holder', 'owner', 'project_name']) || pick(x, ['name', 'entity_name']), st: pick(res, ['status', 'company_status', 'entity_status', 'abn_status', 'licence_status', 'permit_status', 'registration_status']) || (m0 && m0.status) || (x.status && !(x.status in STATUS) && !SLABEL[x.status] ? x.status : null),
+      fl: fields, note: (function(n){ return n && /^sha256 is the SHA-256/.test(n) ? null : n; })(pick(x, ['error', 'note', 'message', 'reason'])), http: pick(x, ['http_status', 'status_code']) };
   }
   C7.normLookup = function(d){
     if (!d || typeof d !== 'object') return { items: [] };
     var arr = pick(d, ['checks', 'results', 'registers', 'lookups', 'records', 'matches', 'sources', 'items']);
     if (!Array.isArray(arr)) arr = (d.register || d.sha256 || d.url) ? [d] : [];
-    var items = arr.filter(function(x){ return x && typeof x === 'object'; }).map(normItem);
+    var items = arr.filter(function(x){ return x && typeof x === 'object' && x.id !== 'website'; }).map(normItem);
     var seal = pick(d, ['seal_sha256', 'snapshot_sha256', 'bundle_sha256']) || (d.seal && (d.seal.root_sha256 || d.seal.sha256 || d.seal.hash)) || (d.snapshot && d.snapshot.sha256) || (arr === d ? null : d.sha256) || null;
     var cmp = (Array.isArray(d.comparison) ? d.comparison : []).filter(function(c){ return c && typeof c === 'object'; }).slice(0, 12).map(function(c){ var b = c.brochure || c.website || {}, r = c.register || {}; return { field: String(c.field || ''), agree: c.agree, w: b.value != null ? String(b.value) : '', r: r.value != null ? String(r.value) : '', src: r.source || '', note: c.note || '' }; });
     return { items: items, seal: seal, sealUrl: (d.seal && (d.seal.result_url || d.seal.url)) || (d.snapshot && d.snapshot.url) || null, verify: d.seal && d.seal.verify || null, stamp: d.seal && d.seal.stamp_status || null, cmp: cmp, disclaimer: d.disclaimer || null, kind: pick(d, ['kind', 'input_kind', 'detected']), q: pick(d, ['query', 'q', 'input']), notes: pick(d, ['note', 'notes', 'message']), at: pick(d, ['fetched_at', 'at', 'checked_at']), error: d.error || null };
@@ -95,19 +96,21 @@
   }
   C7.lookup = function(q, extra){
     q = normQ(q); if (!q) return Promise.resolve({ available: false, items: [] });
-    var body = Object.assign(isUrl(q) ? { url: /^https?:\/\//i.test(q) ? q : 'https://' + q } : { q: q }, extra || {});
+    var body = Object.assign(isUrl(q) ? { url: /^https?:\/\//i.test(q) ? q : 'https://' + q, ai: '0' } : { q: q }, extra || {});
+    var legacy = function(){ var regs = legacyRegisters(q); if (!regs.length) return Promise.resolve([]);
+      return Promise.all(regs.map(function(id){ return fetch('/api/x/h/lookup?register=' + id + '&q=' + encodeURIComponent(q)).then(function(r){ return r.json().then(function(d){ return r.ok ? d : null; }); }).catch(function(){ return null; }); })).then(function(L){ return L.filter(Boolean).map(normItem); }); };
     return fetch('/api/kb/lookup', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(body) }).then(function(r){
       if (r.status === 404 || r.status === 405 || r.status === 501) throw new Error('nolookup');
       return r.json().catch(function(){ return {}; }).then(function(d){
         if (r.status === 429) return { available: true, rate: true, items: [], error: 'rate' };
         if (!r.ok && !(d && (d.results || d.registers || d.items))) { if (r.status >= 500 && d && d.error === 'not found') throw new Error('nolookup'); return Object.assign({ available: true, items: [], error: (d && d.error) || ('HTTP ' + r.status) }); }
-        var n = C7.normLookup(d); n.available = true; n.raw = d; return n;
+        var n = C7.normLookup(d); n.available = true;
+        if (n.items.some(function(i){ return i.f === true; })) return n;
+        return legacy().then(function(L){ if (L.length) n.items = L.concat(n.items); return n; });
       });
     }).catch(function(e){
-      var regs = legacyRegisters(q);
-      if (!regs.length) return { available: false, items: [] };
-      return Promise.all(regs.map(function(id){ return fetch('/api/x/h/lookup?register=' + id + '&q=' + encodeURIComponent(q)).then(function(r){ return r.json().then(function(d){ return r.ok ? d : null; }); }).catch(function(){ return null; }); }))
-        .then(function(L){ var items = L.filter(Boolean).map(normItem); return { available: true, items: items, legacy: true }; });
+      if (!legacyRegisters(q).length) return { available: false, items: [] };
+      return legacy().then(function(items){ return { available: true, items: items, legacy: true }; });
     });
   };
   C7.fp = function(lk){ return sha(JSON.stringify((lk.items || []).map(function(i){ return [i.r, i.f, i.nm, i.st, (i.fl || []).map(function(f){ return f.join('='); }).sort()]; }))); };
@@ -191,7 +194,10 @@
 
   // ---------- /check/ page ----------
   var CUR = null;   // { q, url, lk: Promise, desk }
-  C7.start = function(raw, url){ CUR = { q: normQ(raw), url: url || '', desk: null, lkv: null }; CUR.lk = C7.lookup(raw).then(function(v){ if (CUR) CUR.lkv = v; return v; }); return CUR.lk; };
+  C7.start = function(raw, url){ var me = CUR = { q: normQ(raw), url: url || '', desk: null, lkv: null };
+    if (url) { var go; me.lk = new Promise(function(r){ go = r; }); me.go = function(extra){ if (me.started) return; me.started = 1; C7.lookup(url, extra).then(function(v){ me.lkv = v; go(v); }); }; }
+    else me.lk = C7.lookup(raw).then(function(v){ me.lkv = v; return v; });
+    return me.lk; };
   function step(n){ ['az-1','az-2','az-3','az-4'].forEach(function(id, i){ var e = $(id); if (e) e.classList.toggle('on', i === n - 1); }); var a = $('az'); if (a && a.scrollIntoView) a.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
   function backTo(){ var u = location.pathname + location.search; return u + (location.hash || '#analyze'); }
   function nextLink(signup){ var q = CUR || {}; var p = '/check/?' + (q.url ? 'url=' + encodeURIComponent(q.url) : 'q=' + encodeURIComponent(q.q || '')) + '#analyze'; return '/login/?next=' + encodeURIComponent(p) + (signup ? '#signup' : ''); }
@@ -233,7 +239,8 @@
   C7.after = function(url, d){
     if (!CUR || (url && CUR.url && CUR.url !== url)) C7.start(url, url);
     CUR.desk = d && d.report ? d : null;
-    if (d && d.report && d.report.permit_claim && !CUR.extra) { var m = String(d.report.permit_claim).match(/[A-Z0-9][A-Z0-9\/.-]{5,}/i); if (m && /\d{3,}/.test(m[0]) && m[0].toLowerCase() !== CUR.q.toLowerCase()) CUR.extra = m[0]; }
+    var pn = null; if (d && d.report && d.report.permit_claim) { var m = String(d.report.permit_claim).match(/[A-Z0-9][A-Z0-9\/.-]{5,}/i); if (m && /\d{3,}/.test(m[0])) pn = m[0]; }
+    if (CUR.go) CUR.go(Object.assign({}, d && d.report && d.report.developer ? { company: String(d.report.developer).slice(0, 120) } : {}, pn ? { permit: pn } : {}));
     var me = CUR; paint(CUR.desk);
     CUR.lk.then(function(lk){
       if (me !== CUR) return;
@@ -322,7 +329,7 @@
   function status(ref, t){ var e = document.querySelector('[data-c7-st="' + ref + '"]'); if (e) e.textContent = t; }
   function recheck(x, quiet){
     var s = x.snap; if (P.busy[x.ref]) return Promise.resolve(); P.busy[x.ref] = 1; if (!quiet) status(x.ref, 'Checking the registers again…');
-    return C7.lookup(s.doc ? s.doc.num : (s.reg && s.reg[0] && s.reg[0].q) || s.q).then(function(lk){
+    return C7.lookup(s.doc ? s.doc.num : s.u || s.q, s.u && s.dev ? { company: s.dev } : null).then(function(lk){
       if (!lk.available || lk.rate || (lk.error && !(lk.items || []).length)) { P.busy[x.ref] = 0; if (!quiet) status(x.ref, lk.rate ? 'Too many lookups in the last hour. Try later.' : 'The register lookup is not available right now. Nothing changed.'); return; }
       return C7.fp(lk).then(function(fp){
         var ch = fp === s.fp ? [] : C7.diffs(null, lk, s).filter(function(d){ return /when you saved|changed from/.test(d[1]); }).map(function(d){ return d[1]; });
@@ -395,7 +402,7 @@
         ((s.facts || []).length ? '<dl class="c7-fl">' + s.facts.map(function(f){ return '<dt>' + esc(f[0]) + '</dt><dd>' + esc(f[1]) + '</dd>'; }).join('') + '</dl>' : '') +
         ((s.qs || []).length ? '<h3>Ask before you pay</h3><ol>' + s.qs.map(function(q){ return '<li>' + esc(q) + '</li>'; }).join('') + '</ol>' : '') +
         '<p class="c7-mut">Advertised claims from the website' + (s.dat ? ', read ' + esc(fmt(s.dat)) : '') + ', not verified facts.' + (s.dsig ? ' Signature SHA-256: <span class="c7-hash">' + esc(s.dsig) + '</span> · <a href="/verify">verify</a>.' : '') + '</p></div>';
-      if (s.doc) h += '<div class="ap-card c7"><h2 style="margin-top:0">Permit you uploaded</h2><p><b>' + esc(s.doc.k) + '</b> · number <b>' + esc(s.doc.num) + '</b>' + (s.doc.at ? ' · read ' + esc(fmt(s.doc.at)) : '') + '</p><p>' + esc(s.doc.sum) + '</p><p class="c7-mut">Transcribed by our document reader. The file itself was not stored unless you added it to a case.</p></div>';
+      if (s.doc) h += '<div class="ap-card c7"><h2 style="margin-top:0">Permit you uploaded</h2><p><b>' + esc(s.doc.k) + '</b> · number <b>' + esc(s.doc.num) + '</b>' + (s.doc.at ? ' · read ' + esc(fmt(s.doc.at)) : '') + '</p><p>' + esc(s.doc.sum) + (s.doc.sum.length >= 300 ? '…' : '') + '</p><p class="c7-mut">Transcribed by our document reader. The file itself was not stored unless you added it to a case.</p></div>';
       h += '<div class="ap-card c7"><h2 style="margin-top:0">Official registers</h2>' + (s.reg ? C7.registersHtml(lk, true) : '<p>The register lookup was not available when this check was saved. Use Re-check in your dashboard.</p>') + '</div>';
       if (s.reg) h += '<div class="ap-card c7"><h2 style="margin-top:0">Website compared with the registers</h2>' + diffHtml(C7.diffs(desk, lk)) + '</div>';
       h += '<div class="ap-card c7" style="display:flex;gap:18px;flex-wrap:wrap;align-items:center"><div id="c7qr" aria-label="QR code that opens this private report" role="img" style="background:#fff;padding:10px;border-radius:12px;width:180px;height:180px"></div><div style="flex:1 1 240px"><h2 style="margin-top:0">Open this report on your phone</h2><p class="c7-mut">The QR code opens this page. It only shows the report after you log in to this account, so a lost printout reveals nothing.</p><p class="c7-hash">' + esc(link) + '</p><div class="c7-row"><button type="button" class="c7-btn s" id="c7print">Print or save as PDF</button>' + (c && c.paid ? '' : '<a class="c7-btn s l" href="/portal/#c7">Pay for a full check or order a site visit</a>') + '</div></div></div>';
