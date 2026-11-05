@@ -50,7 +50,7 @@ async function findings(env) {
   (j.findings || []).slice(0, 8).forEach(f => { const at = iso(f.at); if (!at || !okId(f.project)) return;
     out.push({ id: 'fd-' + String(f.id).slice(0, 16), at, kind: 'finding', ok: true, text: String(f.text || '').slice(0, 220), href: '/p/' + f.project + '/' }); });
   const run = (j.runs || []).slice(-1)[0];
-  if (run && iso(run.at)) out.push({ id: 'fr-' + run.at, at: iso(run.at), kind: 'checkrun', ok: true, href: '/findings/',
+  if (run && iso(run.at)) out.push({ id: 'fr-' + run.at, at: new Date(Date.parse(run.at) + (+run.seconds || 0) * 1000).toISOString(), kind: 'checkrun', ok: true, href: '/findings/',
     text: 'Hourly check read ' + run.pages_fetched + ' developer pages: ' + run.findings + ' finding' + (run.findings === 1 ? '' : 's') + ', ' + run.no_change + ' facts unchanged, ' + run.rejected_quote_not_found + ' rejected for a quote not on the page, ' + Number(run.usd || 0).toFixed(3) + ' USD' });
   return out;
 }
