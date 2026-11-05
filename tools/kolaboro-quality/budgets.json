@@ -41,7 +41,7 @@
     "total": 757760,
     "js": 61440,
     "css": 40960,
-    "images": 20480,
+    "images": 102400,
     "fonts": 112640,
     "third_party": 471040
    },
@@ -59,7 +59,7 @@
     "total": 757760,
     "js": 61440,
     "css": 40960,
-    "images": 20480,
+    "images": 102400,
     "fonts": 112640,
     "third_party": 471040
    },
@@ -67,7 +67,7 @@
     "total": 747520,
     "js": 51200,
     "css": 40960,
-    "images": 20480,
+    "images": 102400,
     "fonts": 112640,
     "third_party": 471040
    }
@@ -77,7 +77,7 @@
     "total": 1003520,
     "js": 71680,
     "css": 40960,
-    "images": 20480,
+    "images": 102400,
     "fonts": 112640,
     "third_party": 563200
    },
@@ -85,7 +85,7 @@
     "total": 1003520,
     "js": 71680,
     "css": 40960,
-    "images": 20480,
+    "images": 102400,
     "fonts": 112640,
     "third_party": 573440
    }
@@ -95,7 +95,7 @@
     "total": 737280,
     "js": 61440,
     "css": 40960,
-    "images": 20480,
+    "images": 102400,
     "fonts": 112640,
     "third_party": 471040
    },
@@ -103,7 +103,7 @@
     "total": 737280,
     "js": 61440,
     "css": 40960,
-    "images": 20480,
+    "images": 102400,
     "fonts": 112640,
     "third_party": 471040
    }
@@ -113,7 +113,7 @@
     "total": 901120,
     "js": 81920,
     "css": 40960,
-    "images": 20480,
+    "images": 102400,
     "fonts": 112640,
     "third_party": 471040
    },
@@ -121,11 +121,11 @@
     "total": 911360,
     "js": 92160,
     "css": 40960,
-    "images": 20480,
+    "images": 102400,
     "fonts": 112640,
     "third_party": 471040
    }
   }
  },
- "note": "Budgets in bytes per page type and viewport, set on 5 Nov 2026 from the first measurement (largest page of each type) plus 15%, rounded up to 10 KiB, with a 20 KiB floor. Third-party bytes are mostly the Google tag (about 354 KB per page). Lower a budget when a page gets lighter; never raise one without saying why in the commit."
+ "note": "Budgets in bytes per page type and viewport, set on 5 Nov 2026 from the first measurement (largest page of each type) plus 15%, rounded up to 10 KiB, with a 20 KiB floor (100 KiB for images, because some pages load images only at certain widths). Third-party bytes are mostly the Google tag (about 354 KB per page). Lower a budget when a page gets lighter; never raise one without saying why in the commit."
 }

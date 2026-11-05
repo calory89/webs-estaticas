@@ -32,7 +32,7 @@ jobs:
             tools/kolaboro-lighthouse
       - uses: actions/setup-node@v4
         with: { node-version: '22' }
-      - uses: actions/cache@v4
+      - uses: actions/cache/restore@v4
         with:
           path: ~/.cache/kolaboro-quality
           key: quality-base-${{ github.run_id }}
@@ -66,6 +66,11 @@ jobs:
           rm -rf ~/.cache/kolaboro-quality/shots && mkdir -p ~/.cache/kolaboro-quality/shots
           find "$RUNNER_TEMP/q/shots" -name '*.png' ! -name '*.diff.png' -exec cp {} ~/.cache/kolaboro-quality/shots/ \;
           tar -cf "$RUNNER_TEMP/baselines.tar" -C ~/.cache/kolaboro-quality shots
+      - uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: ~/.cache/kolaboro-quality
+          key: quality-base-${{ github.run_id }}
       - uses: actions/upload-artifact@v4
         if: always()
         with:
