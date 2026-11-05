@@ -22,9 +22,9 @@ async function bytes(env, ctx, origin, files, e) {
   const [pack, off, len, , sha] = e;
   const cache = caches.default;
   const hit = await cache.match(ckey(origin, sha));
-  if (hit) { const b = await hit.arrayBuffer(); if (b.byteLength === len && await sha256(b) === sha) return b; }
+  if (hit) { const b = await hit.arrayBuffer(); if (b.byteLength === len && await sha256(b) === sha) return [b, 'cache']; }
   const r = await env.ASSETS.fetch(new Request(origin + BASE + pack, { headers: { range: 'bytes=' + off + '-' + (off + len - 1) } }));
-  if (r.status === 206) { const b = await r.arrayBuffer(); if (b.byteLength === len && await sha256(b) === sha) return b; }
+  if (r.status === 206) { const b = await r.arrayBuffer(); if (b.byteLength === len && await sha256(b) === sha) return [b, 'range']; }
   else if (r.status !== 200) { await r.body?.cancel(); return null; }
   const whole = r.status === 200 ? await r.arrayBuffer() : await (await env.ASSETS.fetch(new Request(origin + BASE + pack))).arrayBuffer();
   const b = whole.slice(off, off + len);
@@ -33,7 +33,7 @@ async function bytes(env, ctx, origin, files, e) {
     for (const x of Object.values(files)) if (x[0] === pack && x[1] + x[2] <= whole.byteLength)
       await cache.put(ckey(origin, x[4]), new Response(whole.slice(x[1], x[1] + x[2]), { headers: { 'content-type': x[3], 'cache-control': 'public, max-age=31536000, immutable' } }));
   })().catch(() => {}));
-  return b;
+  return [b, 'whole'];
 }
 // Returns a Response for an indexed image, or null (caller keeps its own 404).
 export async function serve(req, u, env, ctx) {
@@ -49,7 +49,8 @@ export async function serve(req, u, env, ctx) {
   if (inm && (inm.trim() === '*' || inm.split(',').some(t => t.trim().replace(/^W\//, '') === etag))) return new Response(null, { status: 304, headers: h });
   h.set('content-length', String(len));
   if (req.method === 'HEAD') return new Response(null, { status: 200, headers: h });
-  const b = await bytes(env, ctx, u.origin, files, e);
+  const [b, how] = (await bytes(env, ctx, u.origin, files, e)) || [];
   if (!b) return new Response('Satellite image temporarily unavailable', { status: 503, headers: { 'content-type': 'text/plain; charset=utf-8', 'cache-control': 'no-store', 'retry-after': '60' } });
+  h.set('x-kb-sat', 'pack-' + how);
   return new Response(b, { status: 200, headers: h });
 }
