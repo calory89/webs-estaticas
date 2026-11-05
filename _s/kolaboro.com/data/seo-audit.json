@@ -1,0 +1,2329 @@
+{
+ "version": "seo-audit-1",
+ "generated_at": "2026-11-05T15:23Z",
+ "base": "https://kolaboro.com",
+ "crawler": "KolaboroSEOAudit/1.0 (+https://kolaboro.com/engineering/seo/)",
+ "sitemaps": [
+  "https://kolaboro.com/sitemaps/pages-en.xml",
+  "https://kolaboro.com/sitemaps/pages-es.xml",
+  "https://kolaboro.com/sitemaps/pages-de.xml",
+  "https://kolaboro.com/sitemaps/pages-fr.xml",
+  "https://kolaboro.com/sitemaps/pages-ru.xml",
+  "https://kolaboro.com/sitemaps/pages-nl.xml",
+  "https://kolaboro.com/sitemaps/pages-ar.xml",
+  "https://kolaboro.com/sitemaps/pages-zh.xml",
+  "https://kolaboro.com/sitemaps/countries.xml",
+  "https://kolaboro.com/sitemaps/guides.xml",
+  "https://kolaboro.com/sitemaps/rankings.xml",
+  "https://kolaboro.com/sitemaps/compare.xml",
+  "https://kolaboro.com/sitemaps/markets.xml",
+  "https://kolaboro.com/sitemaps/projects-en.xml",
+  "https://kolaboro.com/sitemaps/developers-en.xml",
+  "https://kolaboro.com/sitemaps/projects-es.xml",
+  "https://kolaboro.com/sitemaps/developers-es.xml",
+  "https://kolaboro.com/sitemaps/projects-de.xml",
+  "https://kolaboro.com/sitemaps/developers-de.xml",
+  "https://kolaboro.com/sitemaps/projects-fr.xml",
+  "https://kolaboro.com/sitemaps/developers-fr.xml",
+  "https://kolaboro.com/sitemaps/projects-ru.xml",
+  "https://kolaboro.com/sitemaps/developers-ru.xml",
+  "https://kolaboro.com/sitemaps/projects-nl.xml",
+  "https://kolaboro.com/sitemaps/developers-nl.xml",
+  "https://kolaboro.com/sitemaps/projects-ar.xml",
+  "https://kolaboro.com/sitemaps/developers-ar.xml",
+  "https://kolaboro.com/sitemaps/projects-zh.xml",
+  "https://kolaboro.com/sitemaps/developers-zh.xml"
+ ],
+ "urls_by_sitemap": {
+  "pages-en.xml": 154,
+  "pages-es.xml": 8,
+  "pages-de.xml": 8,
+  "pages-fr.xml": 8,
+  "pages-ru.xml": 8,
+  "pages-nl.xml": 8,
+  "pages-ar.xml": 8,
+  "pages-zh.xml": 8,
+  "countries.xml": 95,
+  "guides.xml": 148,
+  "rankings.xml": 13,
+  "compare.xml": 544,
+  "markets.xml": 170,
+  "projects-en.xml": 1017,
+  "developers-en.xml": 774,
+  "projects-es.xml": 1017,
+  "developers-es.xml": 774,
+  "projects-de.xml": 1017,
+  "developers-de.xml": 774,
+  "projects-fr.xml": 1017,
+  "developers-fr.xml": 774,
+  "projects-ru.xml": 1017,
+  "developers-ru.xml": 774,
+  "projects-nl.xml": 1017,
+  "developers-nl.xml": 774,
+  "projects-ar.xml": 1017,
+  "developers-ar.xml": 774,
+  "projects-zh.xml": 1017,
+  "developers-zh.xml": 774
+ },
+ "summary": {
+  "crawled": 15508,
+  "ok_200": 5879,
+  "indexable": 5879,
+  "schema_valid_pages": 5879,
+  "schema_pages": 5879,
+  "schema_errors": 0,
+  "head_mismatch": 351,
+  "canonical_mismatch": 0,
+  "hreflang_errors": 0,
+  "redirects": 0,
+  "errors_4xx_5xx": 9629,
+  "noindex_in_sitemap": 0,
+  "missing_title": 0,
+  "missing_description": 0,
+  "duplicate_titles": 2
+ },
+ "schema_types": [
+  "ApartmentComplex",
+  "Article",
+  "BreadcrumbList",
+  "CollectionPage",
+  "CreativeWork",
+  "DataCatalog",
+  "Dataset",
+  "DefinedTermSet",
+  "FAQPage",
+  "Organization",
+  "ProfilePage",
+  "Report",
+  "Residence",
+  "Service",
+  "SoftwareApplication",
+  "WebApplication",
+  "WebPage"
+ ],
+ "problems": [
+  {
+   "url": "https://kolaboro.com/countries/ireland/how-to-check/",
+   "issue": "HEAD 429 but GET 200"
+  },
+  {
+   "url": "https://kolaboro.com/countries/jordan/how-to-check/",
+   "issue": "HEAD 429 but GET 200"
+  },
+  {
+   "url": "https://kolaboro.com/countries/laos/how-to-check/",
+   "issue": "HEAD 429 but GET 200"
+  },
+  {
+   "url": "https://kolaboro.com/countries/nigeria/how-to-check/",
+   "issue": "HEAD 429 but GET 200"
+  },
+  {
+   "url": "https://kolaboro.com/countries/saint-lucia/how-to-check/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/countries/singapore/how-to-check/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/countries/st-kitts-and-nevis/how-to-check/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/countries/turks-and-caicos-islands/how-to-check/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/countries/uruguay/how-to-check/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/countries/aruba/how-to-check/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/countries/curacao/how-to-check/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/countries/el-salvador/how-to-check/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/countries/kazakhstan/how-to-check/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/countries/nicaragua/how-to-check/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/countries/poland/how-to-check/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/countries/senegal/how-to-check/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/countries/taiwan/how-to-check/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/countries/vanuatu/how-to-check/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/rankings/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/rankings/most-delayed/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/rankings/changed-promises/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/new/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/embed/widgets/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/press/delivery-index/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/press/delivery-index/2026-11/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/rankings/most-delayed/bali/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/rankings/most-delayed/dubai/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/rankings/most-delayed/istanbul/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/rankings/most-delayed/croatia/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/rankings/most-delayed/los-cabos/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/rankings/most-delayed/vietnam/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-011-vs-bali-014/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-011-vs-bali-022/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-014-vs-bali-022/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-035-vs-bali-041/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-035-vs-bali-054/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-041-vs-bali-054/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-066-vs-bali-070/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-066-vs-bali-073/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-070-vs-bali-073/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-007-vs-bali-061/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-016-vs-bali-018/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-016-vs-bali-025/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-018-vs-bali-025/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-031-vs-bali-038/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-031-vs-bali-047/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-038-vs-bali-047/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-062-vs-bali-064/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-062-vs-bali-065/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-064-vs-bali-065/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-069-vs-bali-072/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-001-vs-bali-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-001-vs-bali-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-002-vs-bali-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-006-vs-bali-023/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-006-vs-bali-026/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-023-vs-bali-026/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-027-vs-bali-028/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-027-vs-bali-030/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-028-vs-bali-030/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-045-vs-bali-049/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-045-vs-bali-050/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-049-vs-bali-050/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-060-vs-bali-068/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-005-vs-bali-009/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-005-vs-bali-015/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-009-vs-bali-015/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-021-vs-bali-036/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-021-vs-bali-037/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-036-vs-bali-037/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-042-vs-bali-043/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-042-vs-bali-052/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-043-vs-bali-052/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-055-vs-bali-057/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-055-vs-bali-071/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-057-vs-bali-071/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-008-vs-bali-010/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-008-vs-bali-020/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-010-vs-bali-020/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-029-vs-bali-032/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-029-vs-bali-040/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-032-vs-bali-040/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-013-vs-bali-019/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-013-vs-bali-024/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-019-vs-bali-024/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-033-vs-bali-044/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-048-vs-bali-063/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-004-vs-bali-039/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-004-vs-bali-051/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-039-vs-bali-051/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-012-vs-bali-017/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-012-vs-bali-046/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-017-vs-bali-046/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-053-vs-bali-059/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-053-vs-bali-067/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bali-059-vs-bali-067/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/auh-001-vs-auh-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/auh-001-vs-auh-010/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/auh-005-vs-auh-010/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/auh-016-vs-auh-017/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/auh-002-vs-auh-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/auh-002-vs-auh-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/auh-003-vs-auh-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/auh-011-vs-auh-012/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/auh-011-vs-auh-013/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/auh-012-vs-auh-013/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/auh-015-vs-auh-018/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/auh-015-vs-auh-019/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/auh-018-vs-auh-019/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/ajm-005-vs-ajm-006/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/ala-001-vs-ala-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/alg-001-vs-alg-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/alg-001-vs-alg-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/alg-002-vs-alg-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/amm-001-vs-amm-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/ayt-001-vs-ayt-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/ayt-002-vs-ayt-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/arg-001-vs-arg-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bhs-003-vs-bhs-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bhs-003-vs-bhs-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bhs-004-vs-bhs-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bah-001-vs-bah-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bah-001-vs-bah-006/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bah-005-vs-bah-006/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bah-003-vs-bah-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bah-003-vs-bah-007/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bah-004-vs-bah-007/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bak-001-vs-bak-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/pmi-002-vs-pmi-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/pmi-004-vs-pmi-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bkk-001-vs-bkk-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bkk-002-vs-bkk-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bkk-002-vs-bkk-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bkk-003-vs-bkk-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bkk-006-vs-bkk-008/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bgi-002-vs-bgi-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bgi-002-vs-bgi-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bgi-003-vs-bgi-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bel-001-vs-bel-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bel-001-vs-bel-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bel-002-vs-bel-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bze-003-vs-bze-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bjv-002-vs-bjv-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bra-003-vs-bra-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bud-001-vs-bud-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bud-001-vs-bud-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bud-003-vs-bud-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/bgr-004-vs-bgr-006/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/khm-001-vs-khm-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/khm-004-vs-khm-006/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/khm-005-vs-khm-009/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/khm-007-vs-khm-008/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/can-001-vs-can-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/can-001-vs-can-006/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/can-004-vs-can-006/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/can-002-vs-can-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cpt-001-vs-cpt-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cpt-003-vs-cpt-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cpt-003-vs-cpt-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cpt-004-vs-cpt-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cpv-001-vs-cpv-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cpv-003-vs-cpv-006/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cpv-004-vs-cpv-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cym-001-vs-cym-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cym-003-vs-cym-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cym-003-vs-cym-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cym-004-vs-cym-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cnx-001-vs-cnx-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cbl-001-vs-cbl-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cbl-003-vs-cbl-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cbl-003-vs-cbl-006/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cbl-005-vs-cbl-006/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cri-001-vs-cri-006/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cri-001-vs-cri-007/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cri-006-vs-cri-007/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cri-002-vs-cri-009/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cds-001-vs-cds-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cds-001-vs-cds-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cds-002-vs-cds-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cds-004-vs-cds-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cds-004-vs-cds-008/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cds-005-vs-cds-008/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cds-010-vs-cds-013/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cds-010-vs-cds-014/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cds-013-vs-cds-014/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cds-019-vs-cds-020/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cds-006-vs-cds-007/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cds-006-vs-cds-016/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cds-007-vs-cds-016/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cds-009-vs-cds-012/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cds-009-vs-cds-015/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cds-012-vs-cds-015/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/hrv-002-vs-hrv-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/hrv-006-vs-hrv-007/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cyp-001-vs-cyp-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cyp-001-vs-cyp-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cyp-004-vs-cyp-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cyp-006-vs-cyp-008/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cyp-006-vs-cyp-009/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cyp-008-vs-cyp-009/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-001-vs-dxb-008/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-001-vs-dxb-014/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-008-vs-dxb-014/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-015-vs-dxb-016/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-015-vs-dxb-017/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-016-vs-dxb-017/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-018-vs-dxb-020/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-018-vs-dxb-028/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-020-vs-dxb-028/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-041-vs-dxb-044/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-041-vs-dxb-048/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-044-vs-dxb-048/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-053-vs-dxb-055/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-053-vs-dxb-057/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-055-vs-dxb-057/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-058-vs-dxb-061/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-058-vs-dxb-070/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-061-vs-dxb-070/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-002-vs-dxb-021/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-002-vs-dxb-050/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-021-vs-dxb-050/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-003-vs-dxb-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-003-vs-dxb-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-004-vs-dxb-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-007-vs-dxb-010/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-007-vs-dxb-019/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-010-vs-dxb-019/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-022-vs-dxb-023/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-022-vs-dxb-024/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-023-vs-dxb-024/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-026-vs-dxb-032/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-026-vs-dxb-033/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-032-vs-dxb-033/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-045-vs-dxb-046/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-045-vs-dxb-047/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-046-vs-dxb-047/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-051-vs-dxb-054/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-051-vs-dxb-064/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-054-vs-dxb-064/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-065-vs-dxb-067/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-006-vs-dxb-013/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-006-vs-dxb-029/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-013-vs-dxb-029/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-030-vs-dxb-031/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-030-vs-dxb-034/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-031-vs-dxb-034/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-040-vs-dxb-042/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-040-vs-dxb-043/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-042-vs-dxb-043/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-060-vs-dxb-066/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-060-vs-dxb-071/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-066-vs-dxb-071/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-009-vs-dxb-025/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-009-vs-dxb-027/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-025-vs-dxb-027/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-052-vs-dxb-056/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-052-vs-dxb-059/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-056-vs-dxb-059/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-062-vs-dxb-063/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-062-vs-dxb-069/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-063-vs-dxb-069/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-011-vs-dxb-012/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-011-vs-dxb-049/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/dxb-012-vs-dxb-049/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/ecu-002-vs-ecu-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/ecu-002-vs-ecu-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/ecu-003-vs-ecu-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/egy-001-vs-egy-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/egy-001-vs-egy-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/egy-002-vs-egy-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/egy-006-vs-egy-009/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/egy-006-vs-egy-013/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/egy-009-vs-egy-013/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/egy-004-vs-egy-008/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/egy-004-vs-egy-010/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/egy-008-vs-egy-010/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/fji-001-vs-fji-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/fji-001-vs-fji-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/fji-002-vs-fji-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/nce-001-vs-nce-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/geo-001-vs-geo-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/geo-005-vs-geo-006/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/geo-007-vs-geo-008/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/geo-007-vs-geo-010/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/geo-008-vs-geo-010/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/geo-011-vs-geo-012/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/goa-001-vs-goa-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/goa-003-vs-goa-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/goa-003-vs-goa-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/goa-004-vs-goa-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/ool-001-vs-ool-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/ool-001-vs-ool-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/ool-002-vs-ool-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/ool-005-vs-ool-006/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/ool-005-vs-ool-008/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/ool-006-vs-ool-008/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/ool-004-vs-ool-007/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/grc-001-vs-grc-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/grc-001-vs-grc-011/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/grc-004-vs-grc-011/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/grc-007-vs-grc-008/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/grc-007-vs-grc-012/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/grc-008-vs-grc-012/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/grc-009-vs-grc-010/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/gnd-002-vs-gnd-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/hhq-002-vs-hhq-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/hhq-003-vs-hhq-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/ist-001-vs-ist-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/ist-001-vs-ist-010/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/ist-002-vs-ist-010/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/ist-006-vs-ist-011/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/ist-006-vs-ist-013/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/ist-011-vs-ist-013/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/ist-008-vs-ist-009/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/ita-001-vs-ita-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/jap-001-vs-jap-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/kig-001-vs-kig-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/ksm-001-vs-ksm-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/ksm-001-vs-ksm-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/ksm-002-vs-ksm-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/ksm-008-vs-ksm-009/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/ksm-004-vs-ksm-012/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/lbj-001-vs-lbj-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/las-001-vs-las-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/lis-001-vs-lis-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/lpl-001-vs-lpl-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/lpl-001-vs-lpl-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/lpl-002-vs-lpl-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/lom-001-vs-lom-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/lom-002-vs-lom-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/lom-002-vs-lom-006/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/lom-004-vs-lom-006/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/lom-012-vs-lom-021/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/lom-012-vs-lom-022/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/lom-021-vs-lom-022/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/lom-005-vs-lom-018/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/lom-007-vs-lom-009/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/lom-008-vs-lom-013/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/lom-008-vs-lom-016/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/lom-013-vs-lom-016/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/lom-017-vs-lom-019/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/lom-017-vs-lom-020/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/lom-019-vs-lom-020/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/lom-011-vs-lom-014/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/lom-011-vs-lom-015/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/lom-014-vs-lom-015/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/lon-001-vs-lon-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/lon-001-vs-lon-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/lon-002-vs-lon-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/lon-006-vs-lon-007/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/lon-003-vs-lon-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cab-005-vs-cab-013/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cab-006-vs-cab-008/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cab-006-vs-cab-010/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cab-008-vs-cab-010/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cab-011-vs-cab-012/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cab-011-vs-cab-014/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/cab-012-vs-cab-014/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/fnc-003-vs-fnc-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mys-002-vs-mys-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mys-003-vs-mys-006/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mys-003-vs-mys-011/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mys-006-vs-mys-011/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mys-012-vs-mys-015/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mys-004-vs-mys-008/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mys-004-vs-mys-013/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mys-008-vs-mys-013/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mys-014-vs-mys-017/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mys-014-vs-mys-018/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mys-017-vs-mys-018/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mys-007-vs-mys-010/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mys-007-vs-mys-016/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mys-010-vs-mys-016/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mys-009-vs-mys-019/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mla-001-vs-mla-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mla-002-vs-mla-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/man-001-vs-man-007/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/man-003-vs-man-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/man-005-vs-man-006/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mrk-001-vs-mrk-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mrk-001-vs-mrk-006/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mrk-004-vs-mrk-006/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mrk-002-vs-mrk-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mrk-002-vs-mrk-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mrk-003-vs-mrk-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mru-001-vs-mru-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mru-001-vs-mru-009/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mru-004-vs-mru-009/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mru-002-vs-mru-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mru-002-vs-mru-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mru-003-vs-mru-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mru-007-vs-mru-008/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mex-002-vs-mex-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mex-003-vs-mex-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mia-001-vs-mia-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mia-001-vs-mia-009/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mia-004-vs-mia-009/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mia-002-vs-mia-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mia-002-vs-mia-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mia-003-vs-mia-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mia-006-vs-mia-008/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mia-006-vs-mia-011/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mia-008-vs-mia-011/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mia-012-vs-mia-013/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mne-002-vs-mne-007/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/moz-001-vs-moz-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/moz-001-vs-moz-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/moz-002-vs-moz-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mum-002-vs-mum-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mum-002-vs-mum-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mum-003-vs-mum-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mid-001-vs-mid-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mid-001-vs-mid-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mid-002-vs-mid-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mid-004-vs-mid-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mid-004-vs-mid-006/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/mid-005-vs-mid-006/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/nbo-001-vs-nbo-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/nbo-001-vs-nbo-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/nbo-002-vs-nbo-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/nbo-005-vs-nbo-006/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/wdh-001-vs-wdh-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/wdh-001-vs-wdh-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/wdh-002-vs-wdh-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/wdh-003-vs-wdh-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/nyc-001-vs-nyc-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/nzl-001-vs-nzl-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/nzl-001-vs-nzl-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/nzl-002-vs-nzl-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/nsk-002-vs-nsk-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/ncy-001-vs-ncy-006/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/ncy-003-vs-ncy-007/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/omn-001-vs-omn-010/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/omn-001-vs-omn-011/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/omn-010-vs-omn-011/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/omn-002-vs-omn-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/omn-002-vs-omn-014/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/omn-005-vs-omn-014/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/omn-003-vs-omn-006/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/omn-003-vs-omn-009/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/omn-006-vs-omn-009/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/omn-004-vs-omn-007/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/pty-002-vs-pty-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/pty-005-vs-pty-007/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/par-002-vs-par-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/par-002-vs-par-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/par-003-vs-par-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/pat-001-vs-pat-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/pat-001-vs-pat-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/pat-002-vs-pat-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/pat-005-vs-pat-006/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/pat-005-vs-pat-010/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/pat-006-vs-pat-010/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/pat-007-vs-pat-009/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/pat-007-vs-pat-011/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/pat-009-vs-pat-011/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/pru-001-vs-pru-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/phl-004-vs-phl-011/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/phl-005-vs-phl-008/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/phl-005-vs-phl-010/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/phl-008-vs-phl-010/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/phl-007-vs-phl-012/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/phl-007-vs-phl-014/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/phl-012-vs-phl-014/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/phl-009-vs-phl-013/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/phk-001-vs-phk-010/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/phk-001-vs-phk-014/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/phk-010-vs-phk-014/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/phk-002-vs-phk-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/phk-004-vs-phk-006/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/phk-004-vs-phk-008/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/phk-006-vs-phk-008/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/phk-011-vs-phk-012/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/phk-005-vs-phk-019/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/phk-007-vs-phk-016/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/phk-007-vs-phk-018/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/phk-016-vs-phk-018/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/phk-009-vs-phk-017/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/phk-009-vs-phk-021/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/phk-017-vs-phk-021/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/por-001-vs-por-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/prt-001-vs-prt-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/prt-001-vs-prt-006/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/prt-002-vs-prt-006/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/pra-001-vs-pra-002/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/pra-001-vs-pra-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/pra-002-vs-pra-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/pri-002-vs-pri-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/pvr-001-vs-pvr-007/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/pvr-001-vs-pvr-008/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/pvr-007-vs-pvr-008/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/pvr-002-vs-pvr-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/pvr-002-vs-pvr-010/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/pvr-004-vs-pvr-010/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/pvr-005-vs-pvr-009/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/pun-003-vs-pun-004/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/qat-001-vs-qat-003/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/qat-001-vs-qat-005/",
+   "issue": "status 429"
+  },
+  {
+   "url": "https://kolaboro.com/vs/qat-003-vs-qat-005/",
+   "issue": "status 429"
+  }
+ ],
+ "exclude": [],
+ "lastmod": {
+  "/": "2026-11-05",
+  "/check/": "2026-11-05",
+  "/report/sample/": "2026-11-05",
+  "/how-we-score/": "2026-11-05",
+  "/agents/": "2026-11-05",
+  "/developers/": "2026-11-05",
+  "/investors/": "2026-11-05",
+  "/tools/yield-check/": "2026-11-05",
+  "/checklist/": "2026-11-05",
+  "/bali/": "2026-11-05",
+  "/guides/bali-land-titles/": "2026-11-05",
+  "/guides/off-plan-payments/": "2026-11-05",
+  "/legal/privacy/": "2026-11-05",
+  "/legal/terms/": "2026-11-05",
+  "/dubai/": "2026-11-05",
+  "/phuket/": "2026-11-05",
+  "/tulum/": "2026-11-05",
+  "/algarve/": "2026-11-05",
+  "/lombok/": "2026-11-05",
+  "/destinations/": "2026-11-05",
+  "/tools/risk/": "2026-11-05",
+  "/survey/": "2026-11-05",
+  "/academy/": "2026-11-05",
+  "/corrections/": "2026-11-05",
+  "/academy/1/": "2026-11-05",
+  "/academy/3/": "2026-11-05",
+  "/academy/5/": "2026-11-05",
+  "/academy/6/": "2026-11-05",
+  "/academy/7/": "2026-11-05",
+  "/academy/8/": "2026-11-05",
+  "/academy/9/": "2026-11-05",
+  "/academy/10/": "2026-11-05",
+  "/academy/exam/": "2026-11-05",
+  "/demo/": "2026-11-05",
+  "/tools/contract-scan/": "2026-11-05",
+  "/tools/payment-plan/": "2026-11-05",
+  "/developers/self-check/": "2026-11-05",
+  "/about/": "2026-11-05",
+  "/roadmap/": "2026-11-05",
+  "/changelog/2026-11-03/": "2026-11-05",
+  "/changelog/": "2026-11-05",
+  "/press/": "2026-11-05",
+  "/glossary/": "2026-11-05",
+  "/pricing/": "2026-11-05",
+  "/book/": "2026-11-05",
+  "/agents/id/": "2026-11-05",
+  "/guides/questions-to-ask-a-developer/": "2026-11-05",
+  "/guides/contract-clauses/": "2026-11-05",
+  "/research/": "2026-11-05",
+  "/cases/": "2026-11-05",
+  "/agents/visit/": "2026-11-05",
+  "/agents/how-we-choose/": "2026-11-05",
+  "/copilot/": "2026-11-05",
+  "/independence/": "2026-11-05",
+  "/technology/": "2026-11-05",
+  "/verify/": "2026-11-05",
+  "/status/": "2026-11-05",
+  "/docs/api/": "2026-11-05",
+  "/metrics/": "2026-11-05",
+  "/live/": "2026-11-05",
+  "/api-pilot/": "2026-11-05",
+  "/security/": "2026-11-05",
+  "/database/": "2026-11-05",
+  "/compare/": "2026-11-05",
+  "/transparency-index/": "2026-11-05",
+  "/extension/": "2026-11-05",
+  "/report/state-of-off-plan-2026/": "2026-11-05",
+  "/m/": "2026-11-05",
+  "/satellite/": "2026-11-05",
+  "/registers/": "2026-11-05",
+  "/press/data/": "2026-11-05",
+  "/standard/": "2026-11-05",
+  "/developers/templates/": "2026-11-05",
+  "/tools/market-match/": "2026-11-05",
+  "/tools/total-cost/": "2026-11-05",
+  "/tools/payment-risk/": "2026-11-05",
+  "/tools/currency-risk/": "2026-11-05",
+  "/tools/delay-compensation/": "2026-11-05",
+  "/tools/resale-exit/": "2026-11-05",
+  "/tools/deposit-protection/": "2026-11-05",
+  "/tools/my-checklist/": "2026-11-05",
+  "/developers/benchmark/": "2026-11-05",
+  "/developers/reply/": "2026-11-05",
+  "/regulators/": "2026-11-05",
+  "/data/licence/": "2026-11-05",
+  "/lawyers/": "2026-11-05",
+  "/tools/refund-tracker/": "2026-11-05",
+  "/data-policy/": "2026-11-05",
+  "/log/": "2026-11-05",
+  "/engineering/": "2026-11-05",
+  "/engineering/ai-safety/": "2026-11-05",
+  "/engineering/evals/": "2026-11-05",
+  "/engineering/transparency-log/": "2026-11-05",
+  "/engineering/signed-photos/": "2026-11-05",
+  "/engineering/reliability/": "2026-11-05",
+  "/sql/": "2026-11-05",
+  "/docs/mcp/": "2026-11-05",
+  "/docs/sdk/": "2026-11-05",
+  "/ask/": "2026-11-05",
+  "/api-keys/": "2026-11-05",
+  "/trust/": "2026-11-05",
+  "/investors/dossier/": "2026-11-05",
+  "/prices/": "2026-11-05",
+  "/risk/": "2026-11-05",
+  "/registers/checks/": "2026-11-05",
+  "/tools/": "2026-11-05",
+  "/tools/pdf-check/": "2026-11-05",
+  "/tools/image-check/": "2026-11-05",
+  "/tools/iban-check/": "2026-11-05",
+  "/check/red-team/": "2026-11-05",
+  "/alerts/": "2026-11-05",
+  "/report/state-of-off-plan-2026/live/": "2026-11-05",
+  "/satellite/plot/": "2026-11-05",
+  "/milestones/": "2026-11-05",
+  "/hazards/": "2026-11-05",
+  "/graph/": "2026-11-05",
+  "/mystery-shopper/": "2026-11-05",
+  "/visual/": "2026-11-05",
+  "/index/prices/": "2026-11-05",
+  "/benchmark/": "2026-11-05",
+  "/log/witnesses/": "2026-11-05",
+  "/buyer-reports/": "2026-11-05",
+  "/visit/": "2026-11-04",
+  "/docs/webhooks/": "2026-11-05",
+  "/tools/contract-check/": "2026-11-05",
+  "/tools/law/": "2026-11-05",
+  "/tools/permit-check/": "2026-11-05",
+  "/changelog/2026-11-04/": "2026-11-05",
+  "/index/delays/": "2026-11-05",
+  "/press/monthly/": "2026-11-05",
+  "/tools/build-cost/": "2026-11-05",
+  "/tools/late-handover/": "2026-11-05",
+  "/court-file/": "2026-11-05",
+  "/docs/partners/": "2026-11-05",
+  "/satellite/night/": "2026-11-05",
+  "/promises/": "2026-11-05",
+  "/search-alerts/": "2026-11-05",
+  "/ask-developer/": "2026-11-05",
+  "/graph/global/": "2026-11-05",
+  "/tools/insolvency-check/": "2026-11-05",
+  "/tools/agent-check/": "2026-11-05",
+  "/legal/": "2026-11-05",
+  "/shipping/": "2026-11-05",
+  "/data/": "2026-11-05",
+  "/docs/api/explorer/": "2026-11-05",
+  "/map/": "2026-11-05",
+  "/compare/markets/": "2026-11-05",
+  "/timeline/": "2026-11-05",
+  "/digest/": "2026-11-05",
+  "/explain/": "2026-11-05",
+  "/engineering/visual-tests/": "2026-11-05",
+  "/engineering/page-weight/": "2026-11-05",
+  "/engineering/speed/": "2026-11-05",
+  "/accessibility/": "2026-11-05",
+  "/es/": "2026-11-05",
+  "/es/pricing/": "2026-11-05",
+  "/es/database/": "2026-11-05",
+  "/es/check/": "2026-11-05",
+  "/es/how-we-score/": "2026-11-05",
+  "/es/checklist/": "2026-11-05",
+  "/es/about/": "2026-11-05",
+  "/es/cases/": "2026-11-05",
+  "/de/": "2026-11-05",
+  "/de/pricing/": "2026-11-05",
+  "/de/database/": "2026-11-05",
+  "/de/check/": "2026-11-05",
+  "/de/how-we-score/": "2026-11-05",
+  "/de/checklist/": "2026-11-05",
+  "/de/about/": "2026-11-05",
+  "/de/cases/": "2026-11-05",
+  "/fr/": "2026-11-05",
+  "/fr/pricing/": "2026-11-05",
+  "/fr/database/": "2026-11-05",
+  "/fr/check/": "2026-11-05",
+  "/fr/how-we-score/": "2026-11-05",
+  "/fr/checklist/": "2026-11-05",
+  "/fr/about/": "2026-11-05",
+  "/fr/cases/": "2026-11-05",
+  "/ru/": "2026-11-05",
+  "/ru/pricing/": "2026-11-05",
+  "/ru/database/": "2026-11-05",
+  "/ru/check/": "2026-11-05",
+  "/ru/how-we-score/": "2026-11-05",
+  "/ru/checklist/": "2026-11-05",
+  "/ru/about/": "2026-11-05",
+  "/ru/cases/": "2026-11-05",
+  "/nl/": "2026-11-05",
+  "/nl/pricing/": "2026-11-05",
+  "/nl/database/": "2026-11-05",
+  "/nl/check/": "2026-11-05",
+  "/nl/how-we-score/": "2026-11-05",
+  "/nl/checklist/": "2026-11-05",
+  "/nl/about/": "2026-11-05",
+  "/nl/cases/": "2026-11-05",
+  "/ar/": "2026-11-05",
+  "/ar/pricing/": "2026-11-05",
+  "/ar/database/": "2026-11-05",
+  "/ar/check/": "2026-11-05",
+  "/ar/how-we-score/": "2026-11-05",
+  "/ar/checklist/": "2026-11-05",
+  "/ar/about/": "2026-11-05",
+  "/ar/cases/": "2026-11-05",
+  "/zh/": "2026-11-05",
+  "/zh/pricing/": "2026-11-05",
+  "/zh/database/": "2026-11-05",
+  "/zh/check/": "2026-11-05",
+  "/zh/how-we-score/": "2026-11-05",
+  "/zh/checklist/": "2026-11-05",
+  "/zh/about/": "2026-11-05",
+  "/zh/cases/": "2026-11-05"
+ },
+ "history": [
+  {
+   "at": "2026-11-05T15:23Z",
+   "crawled": 15508,
+   "indexable": 5879,
+   "schema_valid_pages": 5879,
+   "problems": 9981
+  }
+ ],
+ "method": "GET and HEAD on every sitemap URL, redirects not followed. Indexable = 200, exactly one canonical equal to the URL, no noindex. Valid structured data = every JSON-LD block parses, has a schema.org context and @type on every node, required properties present, no Review, AggregateRating or ClaimReview."
+}
