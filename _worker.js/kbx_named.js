@@ -19,7 +19,7 @@ import { rpc } from './kolaboro.js';
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v1';
+const CACHE_V = 'named-v2';
 export const OPINION_RX = /\b(scam\w*|fraud\w*|ponzi|swindl\w*|rip-?off|avoid\w*|beware|dodgy|shady|crook\w*|estafa\w*|fraude\w*|timo|timador\w*|betrug\w*|betrüg\w*|abzocke\w*|arnaque\w*|escroquer\w*|escroc\w*|oplichting|oplichter\w*|bedrog\w*)\b|мошен|обман|афер|骗局|诈骗|欺诈|احتيال|نصب/i;
 
 // ------------------------------------------------------------------------------------------------ data
@@ -356,10 +356,10 @@ function indexPage(ix, lang) {
 }
 
 // ------------------------------------------------------------------------------------------------ HTML assembly
-const CSS = '<style id="knamed-css">.kp .kfs{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:10px;margin:26px 0 0;padding:0}.kp .kf{border:1px solid var(--line);border-radius:14px;padding:10px 14px;background:var(--card,var(--paper));min-height:74px}' +
+const CSS = '<style id="knamed-css">.kp .kfs{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(210px,100%),1fr));gap:10px;margin:26px 0 0;padding:0}.kp .kf{border:1px solid var(--line);border-radius:14px;padding:10px 14px;background:var(--card,var(--paper));min-height:74px;min-width:0}' +
   '.kp dt{font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}.kp dd{margin:4px 0 0;font-weight:600;overflow-wrap:anywhere}.ks{padding:30px 0 6px;border-bottom:1px solid var(--line)}.ks h2{font-size:clamp(1.3rem,2.4vw,1.7rem);margin:0 0 12px}.ks h3{font-size:1.1rem;margin:20px 0 8px}' +
   '.ki{color:var(--ink-2);font-size:.95rem;max-width:72ch}.fl{list-style:none;padding:0;margin:8px 0}.fl li{padding:9px 0;border-top:1px dashed var(--line);max-width:80ch;overflow-wrap:anywhere}.fl li:first-child{border-top:0}.glance li{font-size:1.06rem}' +
-  'a.src{font-size:.8rem;margin-inline-start:6px;padding:1px 8px;border:1px solid var(--line);border-radius:999px;text-decoration:none;white-space:nowrap;color:var(--ink-2)}a.src::before{content:"\\2197 "}' +
+  'a.src{font-size:.8rem;margin-inline-start:6px;padding:1px 8px;border:1px solid var(--line);border-radius:999px;text-decoration:none;white-space:nowrap;color:var(--ink-2);max-width:100%;overflow:hidden;text-overflow:ellipsis;display:inline-block;vertical-align:bottom}a.src::before{content:"\\2197 "}' +
   '.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:10px 0}.tw table{width:100%;border-collapse:collapse;font-size:.93rem;min-width:560px}.tw th,.tw td{text-align:start;vertical-align:top;padding:8px 10px;border-bottom:1px solid var(--line)}.tw thead th{font-size:.78rem;text-transform:uppercase;color:var(--muted)}' +
   '.pill{display:inline-block;font-size:.78rem;font-weight:700;padding:1px 9px;border-radius:999px;border:1px solid var(--line);white-space:nowrap}.c-verified,.p-kept{background:var(--ok-bg);color:var(--ok)}.c-contradicted,.p-broken{background:#FDE7E1;color:#9A2A0A}.p-moved{background:#FFF1D6;color:#7A4B00}' +
   '[data-theme=dark] .c-contradicted,[data-theme=dark] .p-broken{background:#4A1C10;color:#FFC9B8}[data-theme=dark] .p-moved{background:#3D2C08;color:#FFDFA0}' +
@@ -367,7 +367,7 @@ const CSS = '<style id="knamed-css">.kp .kfs{display:grid;grid-template-columns:
   '.lk{padding-inline-start:18px}.lk li{margin:6px 0}.lk small{color:var(--muted)}.cols{columns:2 260px}.faq{border-top:1px solid var(--line);padding:12px 0}.faq summary{cursor:pointer;font-weight:700;min-height:44px;display:flex;align-items:center}.faq p{max-width:75ch;color:var(--ink-2)}' +
   '.srcs{padding-inline-start:22px;font-size:.92rem}.srcs li{margin:5px 0;overflow-wrap:anywhere}.srcs small{color:var(--muted)}.kbtn{margin-top:6px!important;width:auto!important;box-shadow:none!important}.bts{display:flex;flex-wrap:wrap;gap:10px}.btn-line.kbtn{border-color:var(--ink);color:var(--ink);background:transparent}' +
   '.live{border:2px solid var(--ink);border-radius:18px;padding:16px 18px;margin:16px 0}.live h3{margin-top:0}.live-out{margin-top:10px;min-height:1.5em}.live-out li{padding:6px 0}.kfoot{padding:20px 0 40px}.more{font-weight:700}blockquote{border-inline-start:3px solid var(--line);margin:10px 0;padding:4px 14px}' +
-  '@media(max-width:640px){.kp .kfs{grid-template-columns:1fr 1fr}.kp .kf{min-height:84px;padding:9px 11px}.kp dd{font-size:.92rem}}</style>';
+  '@media(max-width:640px){.kp .kfs{grid-template-columns:repeat(2,minmax(0,1fr))}.kp .kf{min-height:84px;padding:9px 11px}.kp dd{font-size:.92rem}}</style>';
 const JS = "(function(){var b=document.querySelector('[data-live]');if(!b)return;var w=b.closest('.live'),o=w.querySelector('.live-out'),L=JSON.parse(w.getAttribute('data-lk')||'{}'),M=JSON.parse(w.getAttribute('data-msg')||'{}');" +
   "b.addEventListener('click',function(){b.disabled=true;o.textContent=M.wait;var q=new URLSearchParams();Object.keys(L).forEach(function(k){if(L[k])q.set(k,L[k]);});" +
   "fetch('/api/kb/lookup?'+q.toString(),{headers:{accept:'application/json'}}).then(function(r){return r.json();}).then(function(d){if(!d||!d.checks){o.textContent=M.err;b.disabled=false;return;}" +
