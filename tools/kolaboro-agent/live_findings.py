@@ -44,7 +44,7 @@ BUDGET = float(os.environ.get('KB_LIVE_RUN_USD', '0.25'))
 MAX_PAGES = int(os.environ.get('KB_LIVE_MAX_PAGES', '150'))
 MAX_SECONDS = float(os.environ.get('KB_LIVE_MAX_SECONDS', '420'))
 GAP = float(os.environ.get('KB_LIVE_HOST_GAP', '4'))
-MAX_TOKENS = 1200
+MAX_TOKENS = 2000
 KEEP = 500
 T0 = time.time()
 
@@ -251,12 +251,25 @@ def band(p):
     return None if b == 'Price not stated' else b
 
 
+MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+
+
+def when(v):
+    m = re.match(r'^(\d{4})(?:-(Q[1-4]|H[12]|\d{2}))?$', str(v))
+    if not m:
+        return str(v)
+    y, p = m.group(1), m.group(2)
+    if not p:
+        return y
+    return (p + ' ' + y) if p[0] in 'QH' else (MONTHS[int(p) - 1] + ' ' + y)
+
+
 def show(fact, v):
     if fact == 'handover':
-        return str(v)
+        return when(v)
     if fact == 'price_from':
         b = band(v)
-        return ('the ' + b + ' band') if b else ('a price in ' + v['currency'])
+        return ('the ' + b + ' band') if b else ('in ' + v['currency'] + ', no band: currency not in our conversion table')
     if fact in ('deposit_pct', 'construction_pct', 'yield_pct'):
         return '%g%%' % v
     if fact == 'structure':
@@ -271,10 +284,10 @@ def wording(pid, kind, fact, new, old, old_seen, hm):
     first = kind == 'first'
     if fact == 'handover':
         if kind == 'changed':
-            return 'handover now promised for %s on the developer page%s' % (new, was)
+            return 'handover now promised for %s on the developer page%s' % (when(new), was)
         if kind == 'removed':
-            return 'the developer page no longer states a handover date (it said %s on %s)' % (old, ddmon(old_seen))
-        return 'developer page promises handover in %s (%s)' % (new, 'first reading by the hourly check' if first else 'no date when we read it on %s' % ddmon(old_seen))
+            return 'the developer page no longer states a handover date (it said %s on %s)' % (when(old), ddmon(old_seen))
+        return 'developer page promises handover in %s (%s)' % (when(new), 'first reading by the hourly check' if first else 'no date when we read it on %s' % ddmon(old_seen))
     if fact == 'price_from':
         if kind == 'changed':
             a, b = usd(old), usd(new)
@@ -284,6 +297,8 @@ def wording(pid, kind, fact, new, old, old_seen, hm):
             return 'price from now stated in %s (was %s on %s)' % (new['currency'], old['currency'], ddmon(old_seen))
         if kind == 'removed':
             return 'the developer page no longer shows a starting price (it did on %s)' % ddmon(old_seen)
+        if not band(new):
+            return 'starting price %s in %s (no band shown: currency not in our conversion table)' % ('stated' if first else 'now published', new['currency'])
         return 'starting price %s: %s' % ('stated' if first else 'now published', show(fact, new))
     if fact == 'deposit_pct':
         if kind == 'changed':
@@ -456,7 +471,7 @@ def work(p, pid, st, agent_rec):
     except PermissionError:
         r['robots'] = True; return r
     except Exception as e:
-        r['fail'] = str(e)[:120]; return r
+        r['fail'] = (type(e).__name__ + ' ' + str(e))[:120]; return r
     r['fetched'] = True
     if len(text) < 200:
         r['thin'] = True; return r
@@ -647,6 +662,12 @@ def main():
     run['tokens_in'] = spend['in']; run['tokens_out'] = spend['out']; run['usd'] = round(spend['usd'], 5); run['calls'] = spend['calls']
     run['stopped_by'] = stop['why'] or ('pages' if len(order) >= MAX_PAGES else None)
     run['seconds'] = round(time.time() - T0)
+    errs = {}
+    for r in res:   # reasons, in the private Actions log only (they name no project)
+        for k in ('fail', 'model_fail'):
+            if r.get(k):
+                key = k + ': ' + re.sub(r'\d{3,}', 'N', r[k])[:60]; errs[key] = errs.get(key, 0) + 1
+    print('reasons', json.dumps(sorted(errs.items(), key=lambda x: -x[1])[:12]))
     return run, new_findings, state, feed, byp, od, spath, fpath, bpath, len(P), texts
 
 
