@@ -489,5 +489,25 @@
   ],
   "all_six": 0,
   "verified_4plus": 0
+ },
+ {
+  "date": "2026-11-05",
+  "calls": 1,
+  "usd": 1.039,
+  "searches": 6,
+  "added": 4,
+  "rejected": {},
+  "markets": [
+   "Pattaya"
+  ],
+  "model": "claude-sonnet-5-5",
+  "added_slugs": [
+   "love-it-wongamat-beach-pattaya",
+   "level-pratumnak-pattaya",
+   "embassy-life-pattaya",
+   "elegance-residence-pattaya"
+  ],
+  "all_six": 0,
+  "verified_4plus": 0
  }
 ]

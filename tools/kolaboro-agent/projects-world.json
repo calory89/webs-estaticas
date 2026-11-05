@@ -177462,6 +177462,469 @@
    "added": "2026-11-05",
    "found_by": "discover-agent",
    "slug": "casa-una-residence-koh-samui"
+  },
+  {
+   "name": "Love It Wongamat Beach",
+   "developer": "Global Top Group (one portal names the company as Chaithanin Co., Ltd.)",
+   "area": "Naklua Soi 14, Wongamat, North Pattaya",
+   "country": "Thailand",
+   "market": "Pattaya",
+   "stage": "off-plan",
+   "url": "https://love-it-wongamat.com/",
+   "docs_url": "https://love-it-wongamat.com/",
+   "permit_number": null,
+   "seed": {
+    "price": 2600000,
+    "currency": "THB",
+    "title": "Freehold condominium unit, foreign quota available (49% rule)",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2029-2030 (sources differ: 2029, 2030, August 2030)",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": "Agent portal mypattayarealestate.com lists earlier Global Top Group projects as completed: City Garden Pattaya, Paradise Ocean View, City Garden Pratumnak, City Garden Tropicana, The Cloud, City Garden Tower, City Garden Olympus (2020).",
+    "units": null,
+    "payment_plan": "Pre-sale terms for early registrants and an interest-free instalment plan are advertised. No percentages published on the sales site."
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "developer",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Developer has 40+ years of experience and was founded in 1984",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://love-it-wongamat.com/"
+    },
+    {
+     "claim": "Foreign freehold ownership available within the 49% quota",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://love-wongamat.com/"
+    },
+    {
+     "claim": "Premium Rental Investment Programme offers professionally managed rentals (no guaranteed return stated)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://love-it-wongamat.com/"
+    },
+    {
+     "claim": "Earlier Global Top Group projects were completed",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://mypattayarealestate.com/property/city-garden-pratumnak-pattaya/"
+    }
+   ],
+   "facts": {
+    "developer_founded": 1984,
+    "developer_hq": null,
+    "construction_start": null,
+    "handover_promised": "2029-2030 (sources differ)",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "Studio",
+     "1 bedroom",
+     "2 bedroom",
+     "3 bedroom"
+    ],
+    "size_min_m2": 26,
+    "size_max_m2": 123,
+    "price_min": 2600000,
+    "price_max": 12300000,
+    "deposit_pct": null,
+    "foreign_ownership": "Freehold in the buyer's name, within the 49% foreign quota",
+    "rental_programme": "Global Top Group Premium Rental Investment Programme (managed rentals, no guarantee stated)",
+    "lat": 12.96799,
+    "lng": 100.88919,
+    "permit_authority": null
+   },
+   "note": "Developer's own page not located. The only dedicated site opened is run by a sales partner (Harmonia Agency). Unit count conflicts (818 on the sales site, 746 on three agent pages) and so does completion (2029 vs 2030). The sales site says floor plan renders are still to come, and the agent site Seaboard shows plan captions.",
+   "positives": [
+    "Foreign quota units advertised, with reservation possible from abroad per an agent",
+    "Low-rise resort concept, with pre-sale pricing from 2.6M THB",
+    "Developer says construction is done in-house"
+   ],
+   "flags": [],
+   "sources": [
+    "https://casapattaya.com/project/love-it-wongamat-beach",
+    "https://chaithanin.com/blog/condos-for-sale-pattaya-2026/",
+    "https://love-it-wongamat.com/",
+    "https://love-wongamat.com/",
+    "https://mypattayarealestate.com/property/city-garden-pratumnak-pattaya/",
+    "https://propertyspace.co.th/new-developments/love-it-wongamat-beach-condo-6a01822ee76fcce6cc6b8913",
+    "https://royceregroup.com/properties/",
+    "https://royceregroup.com/properties/love-it/",
+    "https://www.seaboard-properties.com/Property/Project/Details/Love-It-Wongamat-Beach",
+    "https://www.seaboard-properties.com/Property/details/LOVE-IT-2-Bedroom-for-Sale-in-Pattaya"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-agent",
+   "slug": "love-it-wongamat-beach-pattaya"
+  },
+  {
+   "name": "Level Pratumnak",
+   "developer": "Alza Real Estate (Casa Pattaya lists the company as Jantarapa Co., Ltd.)",
+   "area": "Pratumnak Hill, Thappraya Soi 5, Pattaya",
+   "country": "Thailand",
+   "market": "Pattaya",
+   "stage": "off-plan",
+   "url": "https://royceregroup.com/properties/level/",
+   "docs_url": "https://pearlpropertythailand.com/project/level-pratumnak",
+   "permit_number": null,
+   "seed": {
+    "price": 2990000,
+    "currency": "THB",
+    "title": "Freehold condominium unit, foreign quota (Thai quota units from 1.93M to 1.99M THB, with leasehold as fallback)",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "Q3 2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": "Agent Royce says the team is behind Beverly Mountain Bay and Tara Court. Not independently checked.",
+    "units": 139,
+    "payment_plan": "Reservation 100,000 THB. Foreign quota: 30% on contract, 40% during construction, 30% on transfer. Thai quota: 20% / 40% / 40%."
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "developer",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Developer is the team behind Beverly Mountain Bay and Tara Court",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://royceregroup.com/properties/level/"
+    },
+    {
+     "claim": "Foreign freehold available within the 49% quota",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://pearlpropertythailand.com/project/level-pratumnak"
+    },
+    {
+     "claim": "Completion Q3 2028",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://pearlpropertythailand.com/project/level-pratumnak"
+    },
+    {
+     "claim": "Developer name: Alza Real Estate vs Jantarapa Co., Ltd.",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://casapattaya.com/new-property-project"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "construction_start": null,
+    "handover_promised": "Q3 2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "Studio",
+     "1 bedroom",
+     "1 bedroom plus extra room",
+     "2 bedroom",
+     "3 bedroom (per Pearl)"
+    ],
+    "size_min_m2": 26.83,
+    "size_max_m2": 74.05,
+    "price_min": 2990000,
+    "price_max": 8490000,
+    "deposit_pct": 30,
+    "foreign_ownership": "Freehold within the building's 49% foreign quota",
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Developer's own page not located. Pearl Property (agent portal) says the project is at the construction permit approval stage and labels it pre-launch, while Royce says now selling. The 40% construction instalment is 23 months on Pearl and 36 months on Royce.",
+   "positives": [
+    "Small 139-unit, 8-storey building",
+    "Floor plans per unit type shown on agent pages",
+    "Pet-friendly units and a clear 30/40/30 payment schedule"
+   ],
+   "flags": [],
+   "sources": [
+    "https://casapattaya.com/new-property-project",
+    "https://mypattayarealestate.com/property/the-riviera-jomtien-pattaya/",
+    "https://pearlpropertythailand.com/blog/best-condos-pratumnak-hill-2026",
+    "https://pearlpropertythailand.com/project/level-pratumnak",
+    "https://royceregroup.com/properties/",
+    "https://royceregroup.com/properties/level/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-agent",
+   "slug": "level-pratumnak-pattaya"
+  },
+  {
+   "name": "Embassy Life",
+   "developer": "Embassy Development Co., Ltd. (Empire Group)",
+   "area": "Jomtien 2nd Road, Nong Prue, Jomtien, Pattaya",
+   "country": "Thailand",
+   "market": "Pattaya",
+   "stage": "under construction",
+   "url": "https://pearlpropertythailand.com/project/embassy-life-pattaya",
+   "docs_url": "https://cdn.pearlpropertythailand.com/brochures/embassy-life-brochure-VhquhzNf.pdf",
+   "permit_number": null,
+   "seed": {
+    "price": 5290000,
+    "currency": "THB",
+    "title": "Freehold condominium unit, foreign quota (lowest foreign quota offer per Pearl; Thai quota from 3.79M THB)",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "Q4 2029 (Hipflat says Jan 2029; DDproperty says December 2029)",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": "Montmari agency says the developer has built 4 complexes in Chonburi province. Not verified.",
+    "units": null,
+    "payment_plan": "Booking 50,000 THB. Foreign quota: 25% on contract, 50% over 38 monthly payments, 25% on transfer. Thai quota: 15% / 20% / 65%."
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "developer",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Developer has built 4 complexes in Chonburi",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://montmari-asia.com/en/projects/embassy-life/"
+    },
+    {
+     "claim": "Under construction with completion Q4 2029",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://pearlpropertythailand.com/project/embassy-life-pattaya"
+    },
+    {
+     "claim": "Construction start Q4 2027 (conflicts with the under-construction label)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://thavorn.asia/project/4175"
+    },
+    {
+     "claim": "Unit count of 474, 970 or 110 depending on source",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://www.hipflat.com/projects/embassy-life-a9h447ac1n4el7n2ah4h84h18a9t7ut8"
+    }
+   ],
+   "facts": {
+    "developer_founded": 2018,
+    "developer_hq": null,
+    "construction_start": null,
+    "handover_promised": "Q4 2029",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "Studio",
+     "1 bedroom",
+     "2 bedroom",
+     "3 bedroom"
+    ],
+    "size_min_m2": 22,
+    "size_max_m2": 106,
+    "price_min": 5290000,
+    "price_max": 8690000,
+    "deposit_pct": 25,
+    "foreign_ownership": "Freehold within the building's 49% foreign quota",
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Developer's own page not located. Only agent and portal pages were opened. The stage is disputed (Pearl says under construction, Hipflat says off plan, Thavorn gives a Q4 2027 start). The 2018 founding year is the DBD registration year as quoted by Montmari, not checked on the registry. The company number 0205561005527 is a company ID, not a project permit.",
+   "positives": [
+    "Floor plan library and brochure published via agent",
+    "Low booking fee of 50,000 THB",
+    "Staged payment plan for foreign buyers"
+   ],
+   "flags": [],
+   "sources": [
+    "https://kellerhenson.com/project/the-embassy-life",
+    "https://montmari-asia.com/en/projects/embassy-life/",
+    "https://pearlpropertythailand.com/project/embassy-life-pattaya",
+    "https://plcthaiproperty.com/embassy-life/",
+    "https://thavorn.asia/project/4175",
+    "https://www.ddproperty.com/en/project/13959-embassy-life",
+    "https://www.hipflat.com/projects/embassy-life-a9h447ac1n4el7n2ah4h84h18a9t7ut8"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-agent",
+   "slug": "embassy-life-pattaya"
+  },
+  {
+   "name": "Elegance Residence",
+   "developer": "AML Developments Co., Ltd. (per Casa Pattaya; Royce does not name the developer)",
+   "area": "Kasetsin Soi 4, Pratumnak Hill, Pattaya",
+   "country": "Thailand",
+   "market": "Pattaya",
+   "stage": "off-plan",
+   "url": "https://royceregroup.com/properties/elegance-residence/",
+   "docs_url": "https://royceregroup.com/properties/elegance-residence/",
+   "permit_number": null,
+   "seed": {
+    "price": 6420000,
+    "currency": "THB",
+    "title": "Freehold condominium unit, foreign quota on floors 8 to 14 only (39 units)",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "December 2029",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 75,
+    "payment_plan": "Reservation 100,000 THB for a 1 bedroom. 30% deposit, 40% during construction, 30% on completion/transfer."
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Only 39 units are available as foreign freehold (floors 8 to 14); floors 2 to 7 are Thai quota only",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://royceregroup.com/properties/elegance-residence/"
+    },
+    {
+     "claim": "Developer is AML Developments Co., Ltd.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://casapattaya.com/new-property-project"
+    },
+    {
+     "claim": "Completion December 2029",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://royceregroup.com/properties/elegance-residence/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "construction_start": null,
+    "handover_promised": "December 2029",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1 bedroom",
+     "2 bedroom"
+    ],
+    "size_min_m2": 42,
+    "size_max_m2": 100,
+    "price_min": 6420000,
+    "price_max": 15800000,
+    "deposit_pct": 30,
+    "foreign_ownership": "Freehold on floors 8 to 14 only (39 units), within the 49% foreign quota",
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Private pre-launch of a 14-storey, maximum 75-unit building with fully furnished handover. Developer's own page not located. Casa Pattaya lists a starting price of 5.29M THB against 6.42M THB at Royce, so the lower figure is likely a Thai-quota price.",
+   "positives": [
+    "Boutique building with large two-bedroom layouts (86 to 100 sqm)",
+    "Floor plans shown per unit type on the agent page",
+    "Clear foreign quota limit disclosed (39 units)"
+   ],
+   "flags": [],
+   "sources": [
+    "https://casapattaya.com/new-property-project",
+    "https://royceregroup.com/properties/",
+    "https://royceregroup.com/properties/elegance-residence/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": true,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-agent",
+   "slug": "elegance-residence-pattaya"
   }
  ]
 }
