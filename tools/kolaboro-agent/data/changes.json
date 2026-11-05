@@ -11251,5 +11251,581 @@
     false
    ]
   }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "j-hills",
+  "name": "J-Hills",
+  "changed": {
+   "title_type": [
+    null,
+    "leasehold"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "morros-vita-serena-del-mar",
+  "name": "Morros Vita",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Esquema fiduciario con Alianza Fiduciaria, entidad encargada de velar por la correcta administración de los recursos; vinculación de compradores al esquema fiduciario",
+    "Fiduciary scheme administered by Alianza Fiduciaria; buyers to be linked to the fiduciary scheme"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "reserva-natural-san-jose-natura-itagui",
+  "name": "Reserva Natural San José Natura",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "widen-by-sansiri-sathorn",
+  "name": "Widen by Sansiri",
+  "changed": {
+   "price_from": [
+    924000,
+    925000
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "esentepe-sea-view-villas-terra-eck-3023",
+  "name": "Sea-view villas resort, Esentepe (TERRA listing ECK-3023)",
+  "changed": {
+   "price_from": [
+    1287700,
+    1287800
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "al-sidr-saadiyat-lagoons",
+  "name": "Al Sidr (Saadiyat Lagoons)",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "island-heights-al-marjan",
+  "name": "Island Heights",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "altintas-swim-up-complex-ayt-3204",
+  "name": "Swim-up pool complex in Altıntaş (ref AYT-3204)",
+  "changed": {
+   "price_from": [
+    115600,
+    115700
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "samana-ocean-crest-dubai-islands",
+  "name": "Samana Ocean Crest",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "palm-jebel-ali-frond-a-villas",
+  "name": "Palm Jebel Ali - Frond A Villas",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "comfort-by-orbi-orbi-group",
+  "name": "Comfort by Orbi",
+  "changed": {
+   "plans_published": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "al-mare-green-midtown-group",
+  "name": "Al Mare Green",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "querencia-dovec-group",
+  "name": "Querencia",
+  "changed": {
+   "price_from": [
+    209964,
+    210427
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "mevacity-alanya-unal-group",
+  "name": "Mevacity Alanya",
+  "changed": {
+   "price_from": [
+    9674,
+    9697
+   ],
+   "plans_published": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "bansko-complex-near-ski-lift-suprimmo",
+  "name": "New residential complex near the ski lift, Bansko",
+  "changed": {
+   "price_from": [
+    55143,
+    43446
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "forest-city-2-hz-development",
+  "name": "Forest City 2",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Bank: Emirates Islamic Bank P.J.S.C.; Escrow number 3717370312516",
+    "Bank Emirates Islamic Bank P.J.S.C. Escrow number 3717370312516"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "gardenia-bay-aldar",
+  "name": "Gardenia Bay",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Escrow No 4031221018122040 held at Bank Name: First Abu Dhabi Bank (FAB)",
+    "Bank Name: First Abu Dhabi Bank (FAB); Escrow No 4031221018122040"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "quattro-del-mar-rak-properties",
+  "name": "Quattro Del Mar",
+  "changed": {
+   "plans_published": [
+    null,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "bluewaters-bay-meraas",
+  "name": "Bluewaters Bay",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "shahrukhz-residences-danube",
+  "name": "Shahrukhz Residences by Danube",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Escrow account no. 011201382016",
+    "Escrow account no. 011201382016 (Escrow Registered No. 011201382016)"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "armani-beach-residences-palm-jumeirah-arada",
+  "name": "Armani Beach Residences at Palm Jumeirah",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Escrow account no. 3538468744702 (Escrow Registered No. 3538468744702)",
+    "Escrow Registered No. 3538468744702"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "arancia-yards-beyond",
+  "name": "Arancia Yards by Beyond",
+  "changed": {
+   "permit_number": [
+    "project #4480",
+    "project number 4480"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "aquarous-jomtien-pattaya-assetwise",
+  "name": "Aquarous Jomtien Pattaya",
+  "changed": {
+   "price_from": [
+    null,
+    3200000
+   ],
+   "currency": [
+    null,
+    "THB"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "the-boon-condo-bophut-b2-development",
+  "name": "The Boon Condo",
+  "changed": {
+   "price_from": [
+    91300,
+    91304
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "terra-mare-beach-villas-maenam",
+  "name": "Terra Mare Beach Villas",
+  "changed": {
+   "price_from": [
+    227915,
+    227916
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "sobha-siniya-island-villas-sobha-realty",
+  "name": "Sobha Siniya Island Villas (Phase 1)",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "mamsha-palm-aldar",
+  "name": "Mamsha Palm",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "bab-al-qasr-garden-residence-66-burtville",
+  "name": "Bab Al Qasr Garden Residence 66",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "ramhan-island-villas-phase-4-eagle-hills",
+  "name": "Ramhan Island Villas Phase 4",
+  "changed": {
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "nasim-al-bahr-residences-adnh",
+  "name": "Nasim Al Bahr Residences (The Luxury Collection)",
+  "changed": {
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "oystra-richmind",
+  "name": "Oystra",
+  "changed": {
+   "price_from": [
+    2586888,
+    2400000
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "gianfranco-ferre-residences-mira",
+  "name": "Gianfranco Ferré Residences",
+  "changed": {
+   "plans_published": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "azure-by-lapis-lapis-properties",
+  "name": "Azure by Lapis",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "alliance-centropolis-alliance-group",
+  "name": "Alliance Centropolis",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "botanica-luxury-krabi",
+  "name": "Botanica Luxury Krabi",
+  "changed": {
+   "title_type": [
+    null,
+    "leasehold"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "the-ivory-chang-phueak-home-development-group",
+  "name": "The IVORY",
+  "changed": {
+   "price_from": [
+    118000,
+    118398
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "sukoon-by-sanzen",
+  "name": "Sukoon by Sanzen",
+  "changed": {
+   "plans_published": [
+    false,
+    true
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "sealine-residence-al-zorah",
+  "name": "Sealine Residence",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "luviya-antalya-rguzel-group",
+  "name": "Luviya",
+  "changed": {
+   "price_from": [
+    273451,
+    275893
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "amra-residences-citi-developers",
+  "name": "AMRA Residences",
+  "changed": {
+   "price_from": [
+    null,
+    690000
+   ],
+   "currency": [
+    null,
+    "AED"
+   ],
+   "guaranteed_language": [
+    null,
+    false
+   ],
+   "completion_year": [
+    null,
+    2028
+   ],
+   "permit_claim": [
+    null,
+    false
+   ],
+   "plans_published": [
+    null,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "265-elmer-one-centum-real-estate",
+  "name": "265 Elmer One Apartments",
+  "changed": {
+   "price_from": [
+    1.9,
+    1900000
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "melia-residences-bahrain-infracorp",
+  "name": "Meliá Residences Bahrain (Meliá Beachfront)",
+  "changed": {
+   "plans_published": [
+    true,
+    false
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "marina-bay-reef-island-infracorp",
+  "name": "Marina Bay (Reef Island)",
+  "changed": {
+   "plans_published": [
+    true,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "udaondo-buenos-aires-landmark-developments",
+  "name": "Udaondo Buenos Aires",
+  "changed": {
+   "escrow_or_guarantee": [
+    "Fideicomiso Buenos Aires Landmark (named as the vehicle that bought the land in 2018; no buyer escrow or guarantee mentioned)",
+    "Fideicomiso Buenos Aires Landmark"
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "cello-tower-symphony-park-red-ridge",
+  "name": "Cello Tower",
+  "changed": {
+   "price_from": [
+    700000,
+    null
+   ],
+   "completion_year": [
+    2028,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "amarina-villas-necker-property",
+  "name": "Amarina Villas",
+  "changed": {
+   "price_from": [
+    710000,
+    null
+   ],
+   "currency": [
+    "EUR",
+    null
+   ],
+   "guaranteed_language": [
+    false,
+    null
+   ],
+   "permit_claim": [
+    false,
+    null
+   ],
+   "plans_published": [
+    false,
+    null
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "hayyan-alef-group",
+  "name": "Hayyan (current phases Samr and Deem)",
+  "changed": {
+   "price_from": [
+    1690000,
+    1700000
+   ]
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "slug": "one-true-blue-beach-goldblat",
+  "name": "ONE True Blue Beach Hotel & Residences (Tapestry Collection by Hilton)",
+  "changed": {
+   "advertised_yield_pct": [
+    null,
+    50
+   ]
+  }
  }
 ]
