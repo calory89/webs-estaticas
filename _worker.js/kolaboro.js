@@ -1559,7 +1559,8 @@ const slugM = m => encodeURIComponent(m.toLowerCase().replace(/\s+/g, '-'));
 export async function dataSitemap() {
   let d; try { d = await openData(); } catch (e) { return new Response('', { status: 503 }); }
   const cs = d.cases || [], mk = [...new Set(cs.map(c => c.market))];
-  const urls = cs.map(c => '<url><loc>https://kolaboro.com/p/' + encodeURIComponent(c.id) + '/</loc><lastmod>' + d.updated + '</lastmod></url>').concat(mk.map(m => '<url><loc>https://kolaboro.com/m/' + slugM(m) + '/</loc><lastmod>' + d.updated + '</lastmod></url>'));
+  // project URLs live in the named-project sitemaps (/p/<id>/ now 301s to /projects/<slug>/); this one lists markets only
+  const urls = [].concat(mk.map(m => '<url><loc>https://kolaboro.com/m/' + slugM(m) + '/</loc><lastmod>' + d.updated + '</lastmod></url>'));
   return new Response('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + urls.join('') + '</urlset>', { headers: { 'content-type': 'application/xml; charset=utf-8', 'cache-control': 'public, max-age=3600' } });
 }
 export async function ssr(base, u, kind) {
