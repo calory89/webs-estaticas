@@ -1,25 +1,50 @@
 {
- "updated": "2026-11-04T10:00:54.195Z",
+ "updated": "2026-11-05T10:00:10.060Z",
  "base": "https://kolaboro.com",
  "tool": "axe-core 4.14.0 in Chrome, rules tagged wcag2a, wcag2aa, wcag21a, wcag21aa, wcag22aa",
  "viewport": "1280x900",
- "seconds": 458,
+ "seconds": 512,
  "goal": "0 serious or critical",
  "ok": false,
  "summary": {
-  "at": "2026-11-04T10:00:54.195Z",
-  "pages": 190,
+  "at": "2026-11-05T10:00:10.060Z",
+  "pages": 212,
   "errors": 0,
   "nodes_by_impact": {
-   "critical": 0,
-   "serious": 56,
+   "critical": 1,
+   "serious": 73,
    "moderate": 0,
    "minor": 0
   },
-  "pages_clean": 184,
-  "pages_with_serious_or_critical": 6
+  "pages_clean": 200,
+  "pages_with_serious_or_critical": 12
  },
  "rules": [
+  {
+   "id": "aria-allowed-attr",
+   "impact": "critical",
+   "help": "Elements must only use supported ARIA attributes",
+   "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-allowed-attr?application=axeAPI",
+   "pages": 1,
+   "nodes": 1,
+   "examples": [
+    "/shipping/"
+   ]
+  },
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+   "pages": 4,
+   "nodes": 31,
+   "examples": [
+    "/portal/demo/",
+    "/report/state-of-off-plan-2026/live/",
+    "/docs/api/explorer/",
+    "/digest/"
+   ]
+  },
   {
    "id": "scrollable-region-focusable",
    "impact": "serious",
@@ -40,20 +65,31 @@
    "help": "Elements must only use permitted ARIA attributes",
    "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/aria-prohibited-attr?application=axeAPI",
    "pages": 1,
-   "nodes": 20,
+   "nodes": 25,
    "examples": [
     "/investors/dossier/"
    ]
   },
   {
-   "id": "color-contrast",
+   "id": "link-in-text-block",
    "impact": "serious",
-   "help": "Elements must meet minimum color contrast ratio thresholds",
-   "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/color-contrast?application=axeAPI",
+   "help": "Links must be distinguishable without relying on color",
+   "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/link-in-text-block?application=axeAPI",
    "pages": 1,
-   "nodes": 24,
+   "nodes": 1,
    "examples": [
-    "/report/state-of-off-plan-2026/live/"
+    "/map/"
+   ]
+  },
+  {
+   "id": "target-size",
+   "impact": "serious",
+   "help": "All touch targets must be 24px large, or leave sufficient space",
+   "helpUrl": "https://dequeuniversity.com/rules/axe/4.14/target-size?application=axeAPI",
+   "pages": 1,
+   "nodes": 4,
+   "examples": [
+    "/accessibility/"
    ]
   }
  ],
@@ -380,7 +416,16 @@
    "url": "/portal/demo/",
    "status": 200,
    "error": null,
-   "violations": []
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      ".c7-pill"
+     ]
+    }
+   ]
   },
   {
    "url": "/copilot/",
@@ -824,7 +869,7 @@
     {
      "id": "aria-prohibited-attr",
      "impact": "serious",
-     "nodes": 20,
+     "nodes": 25,
      "targets": [
       "rect[y=\"15.538650306748465\"]",
       "rect[y=\"14.97914110429447\"]",
@@ -1261,9 +1306,203 @@
    "status": 200,
    "error": null,
    "violations": []
+  },
+  {
+   "url": "/graph/global/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/insolvency-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/tools/agent-check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/legal/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/check/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/how-we-score/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/checklist/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/about/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/es/cases/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/shipping/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "aria-allowed-attr",
+     "impact": "critical",
+     "nodes": 1,
+     "targets": [
+      "button[data-d=\"2026-11-05\"]"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/data/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/docs/api/explorer/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "button[data-p=\"/api/open\"] > .ex-m"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/map/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "link-in-text-block",
+     "impact": "serious",
+     "nodes": 1,
+     "targets": [
+      "a[href$=\"leafletjs.com\"]"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/compare/markets/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/timeline/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/digest/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "color-contrast",
+     "impact": "serious",
+     "nodes": 5,
+     "targets": [
+      "table[data-w=\"7\"] > tbody > tr[data-m=\"Dubai\"] > .b5.c > a[data-k=\"new\"][href$=\"#list\"]",
+      "table[data-w=\"7\"] > tbody > tr[data-m=\"Dubai\"] > .b4.c:nth-child(3) > a[data-k=\"page\"][href$=\"#list\"]",
+      "table[data-w=\"7\"] > tbody > tr[data-m=\"Dubai\"] > .b4.c:nth-child(6) > a[data-k=\"register\"][href$=\"#list\"]"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/explain/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/engineering/visual-tests/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/engineering/page-weight/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/engineering/speed/",
+   "status": 200,
+   "error": null,
+   "violations": []
+  },
+  {
+   "url": "/accessibility/",
+   "status": 200,
+   "error": null,
+   "violations": [
+    {
+     "id": "target-size",
+     "impact": "serious",
+     "nodes": 4,
+     "targets": [
+      "a[href$=\"api/\"]",
+      "a[href$=\"mcp/\"]",
+      "a[href$=\"webhooks/\"]"
+     ]
+    }
+   ]
+  },
+  {
+   "url": "/saved/",
+   "status": 200,
+   "error": null,
+   "violations": []
   }
  ],
  "history": [
+  {
+   "at": "2026-11-05T10:00:10.060Z",
+   "pages": 212,
+   "errors": 0,
+   "nodes_by_impact": {
+    "critical": 1,
+    "serious": 73,
+    "moderate": 0,
+    "minor": 0
+   },
+   "pages_clean": 200,
+   "pages_with_serious_or_critical": 12
+  },
   {
    "at": "2026-11-04T10:00:54.195Z",
    "pages": 190,
