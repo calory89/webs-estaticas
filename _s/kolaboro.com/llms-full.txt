@@ -1,6 +1,6 @@
 # Kolaboro: full guide for AI assistants
 
-Generated 2026-11-05T06:56:46Z by the Kolaboro data catalog job from https://kolaboro.com/data/catalog.json and https://kolaboro.com/docs/api/openapi.json. The short version is https://kolaboro.com/llms.txt.
+Generated 2026-11-05T06:58:14Z by the Kolaboro data catalog job from https://kolaboro.com/data/catalog.json and https://kolaboro.com/docs/api/openapi.json. The short version is https://kolaboro.com/llms.txt.
 
 ## What Kolaboro is
 Kolaboro trains local people, guided by an AI copilot, to verify off-plan property for overseas buyers before each payment: land title and permit checks, site visits with GPS-stamped photos timestamped in Bitcoin, computer-vision "plan vs reality" checks and weekly Sentinel-2 satellite watch. Buyers pay; developers never pay. Launching in Bali and recruiting the first local agents; desk research covers 878 off-plan projects in 144 markets and 76 countries (1 Nov 2026), 7,572 developer claims tested, each check rated by source (official register, independent source, developer only, contradicted, not published). An automated second check of 485 claims in 50 random projects found a 2.2% error rate among checkable claims (see /corrections/). Pre-purchase check €490, construction monitoring €99 a month. (from https://kolaboro.com/llms.txt)
@@ -22,7 +22,7 @@ Advertised prices, yields and dates are what developers advertise, not verified 
 - Answers of /api/open/* and the partner feed are signed: x-kolaboro-signature is base64 Ed25519 over "kolaboro-sig-v1\n" + the SHA-256 hex of the body; key id in x-kolaboro-key-id; public keys at https://kolaboro.com/.well-known/kolaboro-keys.json. x-kolaboro-dataset-sha256 names the dataset file an answer came from.
 - Every day a public log head is recorded (https://kolaboro.com/log), timestamped in Bitcoin and in Sigstore Rekor; GET /api/open/log, /api/open/checkpoint and the proof endpoints let anyone check it.
 
-## Datasets (49, 717 files, 14.6 MB)
+## Datasets (55, 723 files, 14.6 MB)
 Catalog: https://kolaboro.com/data/ (DCAT-AP: https://kolaboro.com/data/catalog.jsonld). Contracts pass for 68 of 68 files; datasets late at measurement: 1. Freshness now: GET https://kolaboro.com/api/x/data/freshness
 
 ### Data about projects and markets
@@ -372,6 +372,44 @@ Sample photo progress analysis (id: progress-sample)
   Size 2.7 KB; not a table; SHA-256 b620feddaa71a2374e04ae7c83077c73c416a9674b39f2d78940eff62382c239; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
   Updates: static sample. Last updated: 2026-10-29T20:41:55.904Z.
   Schema: https://kolaboro.com/api/x/data/schema/progress-sample.json
+
+### Not yet described
+
+changes.json (id: undescribed-changes-json)
+  URL: https://kolaboro.com/data/changes.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 0 bytes; not a table; SHA-256 None; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-05T06:49:34Z.
+
+digest.json (id: undescribed-digest-json)
+  URL: https://kolaboro.com/data/digest.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 0 bytes; not a table; SHA-256 None; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-05T06:49:34Z.
+
+page-weight.json (id: undescribed-page-weight-json)
+  URL: https://kolaboro.com/data/page-weight.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 0 bytes; not a table; SHA-256 None; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-05T06:54:36Z.
+
+roadmap-sync.json (id: undescribed-roadmap-sync-json)
+  URL: https://kolaboro.com/data/roadmap-sync.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 0 bytes; not a table; SHA-256 None; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-05T06:51:44Z.
+
+shipping.json (id: undescribed-shipping-json)
+  URL: https://kolaboro.com/data/shipping.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 0 bytes; not a table; SHA-256 None; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-05T06:51:44Z.
+
+visual-tests.json (id: undescribed-visual-tests-json)
+  URL: https://kolaboro.com/data/visual-tests.json
+  Published under /data/ but not yet described in the catalog registry.
+  Size 0 bytes; not a table; SHA-256 None; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-05T06:54:36Z.
 
 ## API (65 operations)
 OpenAPI 3.1: https://kolaboro.com/docs/api/openapi.json. Try any call in the browser: https://kolaboro.com/docs/api/explorer/. Base URL https://kolaboro.com, all GET.
