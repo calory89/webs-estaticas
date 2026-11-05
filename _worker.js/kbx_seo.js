@@ -374,7 +374,7 @@ async function staticPages(env, audit) {   // the static sitemap (kept as /sitem
   const locs = [...sm.matchAll(/<url><loc>([^<]+)<\/loc>(?:<lastmod>([^<]+)<\/lastmod>)?/g)].map(m => ({ loc: m[1], lastmod: m[2] || null }));
   const set = new Set(locs.map(x => x.loc)), lm = (audit && audit.lastmod) || {};
   const key = loc => { const p = loc.replace(SITE, ''), m = /^\/(es|de|fr|ru|nl|ar|zh)(\/.*)$/.exec(p); return m ? [m[1], m[2]] : ['en', p]; };
-  const drop = new Set(((audit && audit.exclude) || []).concat(['/saved/']));   // noindex or non-200 pages found by the crawl audit
+  const drop = new Set(((audit && audit.exclude) || []).concat(['/saved/', '/portal/demo/']));   // noindex or non-200 pages found by the crawl audit
   return locs.filter(x => !drop.has(x.loc.replace(SITE, ''))).map(x => { const [l, p] = key(x.loc), alt = LANGS.map(L => [L, SITE + (L === 'en' ? p : '/' + L + p)]).filter(a => set.has(a[1])); return { loc: x.loc, lang: l, lastmod: lm[x.loc.replace(SITE, '')] || x.lastmod, alt: alt.length > 1 ? alt.concat([['x-default', SITE + p]]) : null }; });
 }
 async function hubUrls(B) {
@@ -397,7 +397,7 @@ async function sitemaps(env, B, name) {
   const audit = await file(env, '/data/seo-audit.json');
   const pages = await staticPages(env, audit), hubs = await hubUrls(B), up = B.d.updated;
   const mk = [...new Set(B.cases.map(c => c.market))].map(m => ({ loc: SITE + '/m/' + slugM(m) + '/', lastmod: up }));
-  const anon = B.cases.filter(c => !B.N.projects.has(c.id)).map(c => ({ loc: SITE + '/p/' + encodeURIComponent(c.id) + '/', lastmod: (c.fp && c.fp.date) || up }));
+  const anon = B.cases.filter(c => !B.N.projects.has(c.id) && /^[A-Za-z0-9-]{3,20}$/.test(c.id)).map(c => ({ loc: SITE + '/p/' + encodeURIComponent(c.id) + '/', lastmod: (c.fp && c.fp.date) || up }));
   const S = { ['pages-en']: pages.filter(p => p.lang === 'en') };
   for (const l of LANGS.slice(1)) S['pages-' + l] = pages.filter(p => p.lang === l);
   Object.assign(S, { countries: hubs.filter(h => h.t === 'countries'), guides: hubs.filter(h => h.t === 'guides'), rankings: hubs.filter(h => h.t === 'rankings'), compare: hubs.filter(h => h.t === 'compare'), markets: mk, 'projects-anonymous': anon, 'projects-named': namedUrls(B, 'project'), developers: namedUrls(B, 'developer') });
