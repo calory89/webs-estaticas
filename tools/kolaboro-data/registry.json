@@ -705,7 +705,7 @@
    "title": "Coastline outline tiles",
    "kind": "tiles",
    "format": "json-tiles",
-   "description": "Natural Earth 1:10m land outline (public domain, via world-atlas 2.0.2) cut into 10 degree tiles, quantised and delta-encoded, used by the hazards check only when no OpenStreetMap server answers. Every tile exists; open-ocean tiles are empty.",
+   "description": "Natural Earth 1:10m land outline (public domain, via world-atlas 2.0.2) cut into 10 degree tiles (published as one file per 10 degree column of longitude), quantised and delta-encoded, used by the hazards check only when no OpenStreetMap server answers. Every tile exists; open-ocean tiles are empty.",
    "licence": "Public domain (Natural Earth)",
    "workflow": null,
    "schedule": "static, built once",

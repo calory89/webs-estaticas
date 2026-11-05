@@ -1942,23 +1942,26 @@
       "type": "number"
      }
     },
-    "l": {
-     "type": "array",
-     "items": {
+    "tiles": {
+     "type": "object",
+     "additionalProperties": {
       "type": "array",
       "items": {
-       "type": [
-        "null",
-        "number"
-       ]
+       "type": "array",
+       "items": {
+        "type": [
+         "null",
+         "number"
+        ]
+       }
       }
      }
     }
    },
    "required": [
-    "l",
     "s",
-    "t"
+    "t",
+    "tiles"
    ]
   },
   "company-graph": {
