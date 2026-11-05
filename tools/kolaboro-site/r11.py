@@ -65,7 +65,7 @@ def build_cases():
     cases.sort(key=lambda c: (order[bool(c['invited'])], c['region'], c['id']))
     data = json.dumps(cases, ensure_ascii=False)
     body = phero('Live cases', 'Live verification pipeline',
-                 'Every off-plan project we track in Bali, and exactly where its verification stands. Our AI agent has already read what each developer promises; our local agents verify it on the ground.',
+                 'Every off-plan project we track, worldwide, and exactly where its verification stands. Our AI agent has already read what each developer promises; our local agents verify it on the ground.',
                  '<div class="hero-cta"><a class="btn btn-hi" href="/check" data-ev="cases_check">Check your project</a><a class="btn btn-line" href="/report/sample">What a finished case looks like</a></div>')
     body += f'''<section class="sec"><div class="wrap">
   <ol class="pipe" aria-label="Pipeline">
@@ -93,7 +93,7 @@ def build_cases():
   <p class="muted" style="font-size:.85rem;margin-top:14px">Desk reviews of real projects use only public sources and do not include a site visit. Buyers' statements in the press are allegations, not findings. Developers can reply and we add their reply.</p>
 </div></section>
 <section class="sec"><div class="wrap grid2">
-  <div><h2>Buying one of these?</h2><p class="lead">If you're about to sign or pay for a project in Bali, we'll move it to the front of the queue.</p></div>
+  <div><h2>Buying one of these?</h2><p class="lead">If you're about to sign or pay for one of these projects, we'll move it to the front of the queue.</p></div>
   <div><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="cases_book">Book a €490 check</a> <a class="btn btn-line" href="/developers" data-ev="cases_dev">I'm the developer</a></div>
 </div></section>'''
     js = '''<script>
@@ -123,8 +123,8 @@ def build_cases():
   render('');
 })();
 </script>'''
-    return page('/cases', 'Live verification pipeline: Bali off-plan projects | Kolaboro',
-                'Every off-plan project Kolaboro tracks in Bali and where its verification stands: promises read by our AI agent, developers invited, registry checks and site visits.', body, extra_js=js)
+    return page('/cases', 'Live verification pipeline: off-plan projects worldwide | Kolaboro',
+                'Every off-plan project Kolaboro tracks worldwide and where its verification stands: promises read by our AI agent, developers invited, registry checks and site visits.', body, extra_js=js)
 
 CASES_CSS = '''
 .files{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin-top:26px}
@@ -167,7 +167,7 @@ CASES_CSS = '''
 '''
 
 HOME_CASES = '''<section class="checkbar" aria-label="Live cases"><div class="wrap checkbar-in">
-  <div><h2>Not a promise. A pipeline.</h2><p>Every off-plan project we track in Bali, and where its verification stands today: promises read by our AI, developers invited, registry and site checks next.</p></div>
+  <div><h2>Not a promise. A pipeline.</h2><p>Every off-plan project we track, worldwide, and where its verification stands today: promises read by our AI, developers invited, registry and site checks next.</p></div>
   <div class="stats mini"><div class="stat"><b>{n}</b><span>projects in the pipeline</span></div><div class="stat"><b>{inv}</b><span>developers invited</span></div><div class="stat"><a class="btn btn-hi" href="/cases" data-ev="home_cases">See live cases</a></div></div>
 </div></section>
 '''

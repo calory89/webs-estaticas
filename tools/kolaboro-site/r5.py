@@ -226,7 +226,7 @@ def build_press():
     body += f'''<section class="sec"><div class="wrap grid2">
   <div class="prose">
     <h2 style="margin-top:0">Kolaboro in one line</h2><p>Kolaboro is a network of AI-trained local agents who work only for property buyers abroad, verifying land, permits and construction, and publishing a Trust Score for every project and developer.</p>
-    <h2>Longer description</h2><p>Buying property in another country usually means trusting photos and promises. Kolaboro puts a trained local agent on the buyer's side: they check the land title and permits, film every construction milestone with GPS- and time-stamped video, and tell the buyer when each payment is safe. Every check feeds a public Trust Score that rewards developers who deliver. Kolaboro is launching in Bali.</p>
+    <h2>Longer description</h2><p>Buying property in another country usually means trusting photos and promises. Kolaboro puts a trained local agent on the buyer's side: they check the land title and permits, film every construction milestone with GPS- and time-stamped video, and tell the buyer when each payment is safe. Every check feeds a public Trust Score that rewards developers who deliver. Kolaboro checks off-plan projects in any country.</p>
     <h2>Contact</h2><p><a href="mailto:{CONTACT}">{CONTACT}</a></p>
   </div>
   <div>
@@ -279,7 +279,7 @@ def build_pricing():
             ("Monthly GPS-stamped site visit", "", "✓", "✓"), ("Safe-to-pay check before each payment", "", "✓", "✓"), ("Handover inspection", "", "✓", "✓"),
             ("Shortlist of verified projects", "", "", "✓"), ("Negotiation support", "", "", "✓")]
     t = ''.join(f'<tr><td>{a}</td><td>{b}</td><td>{c}</td><td>{d}</td></tr>' for a, b, c, d in rows)
-    body = phero('Pricing', 'Pricing', 'Paid by buyers, never by developers. Launch prices for Bali.')
+    body = phero('Pricing', 'Pricing', 'Paid by buyers, never by developers.')
     body += f'''<section class="sec"><div class="wrap">{PRICING}
   <div class="prose" style="max-width:none;margin-top:48px"><h2>What's included</h2><table><thead><tr><th></th><th>Check €490</th><th>Monitoring €99/mo</th><th>Buyer's agent 1%</th></tr></thead><tbody>{t}</tbody></table></div>
 </div></section>
@@ -288,8 +288,8 @@ def build_pricing():
 
 def round5_home():
     fp = os.path.join(OUT, 'index.html'); s = open(fp).read()
-    s = s.replace('<p class="launch"><i aria-hidden="true"></i>Launching city by city. Bali first.</p>',
-                  '<p class="launch"><i aria-hidden="true"></i>Launching city by city. Bali first. <a href="/demo" data-ev="hero_demo">See a 30-second demo</a></p>', 1)
+    s = s.replace('<p class="launch"><i aria-hidden="true"></i>Off-plan checks in any country.</p>',
+                  '<p class="launch"><i aria-hidden="true"></i>Off-plan checks in any country. <a href="/demo" data-ev="hero_demo">See a 30-second demo</a></p>', 1)
     open(fp, 'w').write(s)
 
 def build_round5():

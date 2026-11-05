@@ -68,18 +68,18 @@ def build_research():
     return out
 
 R7_COPY = [
-  ('<p class="launch"><i aria-hidden="true"></i>Launching city by city. Bali first. <a href="/demo" data-ev="hero_demo">See a 30-second demo</a></p>',
-   '<p class="launch"><i aria-hidden="true"></i>Bali now. Mexico next. <a href="/demo" data-ev="hero_demo">See a 30-second demo</a></p>'),
-  ('<p class="launch"><i aria-hidden="true"></i>Empezamos ciudad a ciudad. Primero Bali.</p>', '<p class="launch"><i aria-hidden="true"></i>Ahora Bali. Después, México.</p>'),
-  ('Local agents who work for the buyer, never the seller. Launching city by city, Bali first.', 'Local agents who work for the buyer, never the seller. Bali now, Mexico next.'),
-  ('Agentes locales que trabajan para el comprador, nunca para el vendedor. Empezamos ciudad a ciudad, primero Bali.', 'Agentes locales que trabajan para el comprador, nunca para el vendedor. Ahora Bali, después México.'),
-  ('<p class="lead">Bali first. Then the places buyers ask for. Every destination page covers what goes wrong most and what to check.</p>',
-   '<p class="lead">Bali now. Mexico next, for the many Americans buying there. Then the places buyers ask for most.</p>'),
+  ('<p class="launch"><i aria-hidden="true"></i>Off-plan checks in any country. <a href="/demo" data-ev="hero_demo">See a 30-second demo</a></p>',
+   '<p class="launch"><i aria-hidden="true"></i>Off-plan checks in any country. <a href="/demo" data-ev="hero_demo">See a 30-second demo</a></p>'),
+  ('<p class="launch"><i aria-hidden="true"></i>Comprobaciones en cualquier país.</p>', '<p class="launch"><i aria-hidden="true"></i>Comprobaciones en cualquier país.</p>'),
+  ('Independent property checks for people buying abroad. Recruiting our first local agents.', 'Independent property checks for people buying abroad. Recruiting our first local agents.'),
+  ('Comprobaciones independientes para quien compra vivienda en otro país. Buscamos a nuestros primeros agentes locales.', 'Comprobaciones independientes para quien compra vivienda en otro país. Buscamos a nuestros primeros agentes locales.'),
+  ('<p class="lead">Off-plan checks in any country. Every destination page covers what goes wrong most and what to check.</p>',
+   '<p class="lead">Off-plan checks in any country. Every destination page covers what goes wrong most and what to check.</p>'),
   ('<a class="tile" href="/tulum" style="text-decoration:none"><span class="tag" style="background:#DCDAD3">Waitlist</span>',
    '<a class="tile" href="/tulum" style="text-decoration:none"><span class="tag">Next</span>'),
   ('Join the Tulum waitlist', 'Join the Mexico waitlist'),
-  ('Bali first, where foreign demand is strong and buyers\' doubts are well known. Then the cities buyers ask for.',
-   'Our customers are Americans, Australians and Europeans buying abroad. We start in Bali, the high-risk market we know best, then Mexico, where US buyers face the same problem.'),
+  ('We check off-plan projects in any country.',
+   'Our customers are Americans, Australians and Europeans buying abroad. We sell the check in every country: desk reviews and official-register lookups run online anywhere, and on-site visits are arranged per country with local agents. We are recruiting the first agents in Bali, the high-risk market we know best, and Mexico, where US buyers face the same problem.'),
   ('<h2>Kolaboro in Tulum</h2>', '<h2>Kolaboro in Mexico</h2>'),
 ]
 

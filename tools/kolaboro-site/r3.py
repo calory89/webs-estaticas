@@ -55,7 +55,7 @@ def dest_page(d):
   <ul class="cl">{cl}</ul>
 </div></section>
 <section class="start" id="start"><div class="wrap start-grid">
-  <div><h2>Kolaboro in {d["name"]}</h2><p class="lead">We're launching in Bali first and opening new places where buyers ask for us. Join the waitlist and tell us about your purchase: demand decides our next city.</p></div>
+  <div><h2>Kolaboro in {d["name"]}</h2><p class="lead">We check off-plan projects here, as in any other country: the desk review and the official-register lookups run online, and the on-site visit is done by a local agent, confirmed for your location before your agent starts. Tell us about your purchase.</p></div>
   <div>{lead_form("destform", role="buyer", roles=("buyer", "agent"), source="yc-dest-" + d["slug"], button="Join the waitlist")}</div>
 </div></section>'''
     js = f'<script>(function(){{var p=document.querySelector("#destform input[name=place]");if(p&&!p.value)p.value="{d["name"].replace("the ", "").capitalize() if d["name"].startswith("the ") else d["name"]}, {d["country"]}";}})();</script>'
@@ -65,9 +65,9 @@ def build_destinations():
     out = [dest_page(d) for d in DESTS]
     cards = '<a class="tile" href="/bali" style="text-decoration:none"><span class="tag">Live now</span><h3>Bali, Indonesia</h3><p>Local agents, checks and construction monitoring.</p></a>'
     cards += ''.join(f'<a class="tile" href="/{d["slug"]}" style="text-decoration:none"><span class="tag" style="background:#DCDAD3">Waitlist</span><h3>{d["name"].replace("the ", "The ")}, {d["country"]}</h3><p>{d["risks"][0][0]}, {d["risks"][1][0].lower()} and {d["risks"][2][0].lower()}: what to check.</p></a>' for d in DESTS)
-    body = phero('Destinations', 'Where Kolaboro works', 'Bali first. Then the places buyers ask for. Every destination page covers what goes wrong most and what to check.')
+    body = phero('Destinations', 'Where Kolaboro works', 'Off-plan checks in any country. Every destination page covers what goes wrong most and what to check.')
     body += f'<section class="sec"><div class="wrap grid3">{cards}</div></section>'
-    out.append(page('/destinations', 'Destinations | Kolaboro', 'Where Kolaboro protects property buyers: Bali now, with Dubai, Phuket, Tulum, the Algarve and Lombok on the waitlist.', body))
+    out.append(page('/destinations', 'Destinations | Kolaboro', 'Kolaboro checks off-plan projects in any country. Buyer guides for Bali, Dubai, Phuket, Tulum, the Algarve and Lombok.', body))
     return out
 
 def build_risk():
@@ -223,12 +223,12 @@ def home_extras():
     open(fp, 'w').write(s)
 
 def write_llms(paths):
-    lines = ["# Kolaboro", "", "> Kolaboro is a network of local buyer's agents for overseas property. Agents are trained by AI, work only for the buyer, verify land titles, permits and developers, film every construction milestone with GPS-stamped video and tell buyers when each payment is safe. Kolaboro also publishes a 0-100 Trust Score for projects and developers. Launching in Bali.", "",
+    lines = ["# Kolaboro", "", "> Kolaboro is a network of local buyer's agents for overseas property. Agents are trained by AI, work only for the buyer, verify land titles, permits and developers, film every construction milestone with GPS-stamped video and tell buyers when each payment is safe. Kolaboro also publishes a 0-100 Trust Score for projects and developers. Checks off-plan projects in any country.", "",
              "## Key pages"]
     for p in paths:
         if p in ('/score/sample',) or p.endswith('.html'): continue
         lines.append(f"- [{OG_TITLES.get(ogname(p), p)}]({SITE}{p if p == '/' else p + '/'})")
-    lines += ["", "## Facts", "- Prices (Bali, launch): pre-purchase check EUR 490; construction monitoring EUR 99 per month; buyer's agent 1% of price, minimum EUR 2,000.",
+    lines += ["", "## Facts", "- Prices: Kolaboro pre-purchase check EUR 490; construction monitoring EUR 99 per month; buyer's agent 1% of price, minimum EUR 2,000.",
               "- Agents are never paid by developers. Paying for verification never changes a Trust Score.",
               "- Kolaboro does not currently hold client money and does not give legal or financial advice."]
     open(os.path.join(OUT, 'llms.txt'), 'w').write('\n'.join(lines) + '\n')

@@ -169,7 +169,7 @@ R16_TEXT = [
   ('Paying never changes your Score: that\'s exactly why buyers believe it.', 'Developers never pay us: that\'s exactly why buyers believe it.'),
   ('Paying never changes your Score', 'Developers never pay us'),
   ('Safe-to-pay check before each payment', 'Go / hold check before each payment'),
-  ("The buyer's side for people who buy property abroad. Watch the demo", "AI that turns local people into reliable property verifiers, starting with overseas buyers in Bali. Watch the demo"),
+  ("The buyer's side for people who buy property abroad. Watch the demo", "AI that turns local people into reliable property verifiers for overseas buyers, in any country. Watch the demo"),
   ('<h2>The product, piece by piece</h2>', '<div class="cobanner" style="border-radius:22px;margin:0 0 28px"><div class="wrap" style="padding:28px"><div><h2>The core: the agent copilot</h2><p>A local without credentials pastes the case documents. The copilot lists every inconsistency word for word, what to ask for, what to measure on site and when to stop and call a notary. A senior reviews every report until the agent has 10 clean ones.</p><a class="btn btn-hi" href="/copilot">Run it live</a></div><ol><li><b>Learn</b><span>Academy + exam</span></li><li><b>Copilot</b><span>Cross-check + escalation</span></li><li><b>Review</b><span>Senior sign-off</span></li><li><b>Prove it</b><span>GPS + SHA-256</span></li></ol></div></div><h2>The product, piece by piece</h2>'),
   # nav
   ('<a href="/research">AI agent</a>', '<a href="/copilot">Copilot</a>'),
@@ -202,7 +202,7 @@ def r16_inject():
     fp = os.path.join(OUT, 'index.html'); s = open(fp).read()
     s = s.replace('<p class="lead">A network of local agents who work for the buyer, never the seller. Trained by AI, proven on the ground, and backed by every buyer who came before you.</p>',
                   '<p class="lead">Local people who live where you\'re buying, turned into reliable property verifiers by our AI copilot. They work for the buyer, never the seller.</p>', 1)
-    s = s.replace('<p class="launch"><i aria-hidden="true"></i>Bali now. Mexico next.', '<p class="launch"><i aria-hidden="true"></i>Bali now. <a href="/independence" class="indep">Developers never pay us</a> ·', 1)
+    s = s.replace('<p class="launch"><i aria-hidden="true"></i>Off-plan checks in any country.', '<p class="launch"><i aria-hidden="true"></i>Off-plan checks in any country. <a href="/independence" class="indep">Developers never pay us</a> ·', 1)
     for k in ('Our own AI research agent', 'Not a promise. A pipeline'):
         if k in s:
             i = s.index(k); a = s.rfind('<section', 0, i); b = s.index('</section>', i) + 10

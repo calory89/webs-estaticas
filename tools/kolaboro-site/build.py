@@ -82,7 +82,7 @@ def footer(mcta=True, mcta_href='/#start'):
     <div class="fgrid">
       <div>
         <a class="brand" href="/" aria-label="Kolaboro home" style="font-size:1.15rem">{LOGO}kolaboro</a>
-        <p style="margin-top:12px;max-width:34ch">Local agents who work for the buyer, never the seller. Launching city by city, Bali first.</p>
+        <p style="margin-top:12px;max-width:34ch">Independent property checks for people buying abroad. Recruiting our first local agents.</p>
         <form class="news" data-news novalidate><label for="nl-email">Monthly: projects that slipped, projects that delivered.</label>
           <div class="qform light" style="margin-top:10px"><input id="nl-email" name="email" type="email" placeholder="Your email" autocomplete="email"><button class="btn btn-hi btn-sm" type="submit">Subscribe</button></div>
           <p class="nmsg" aria-live="polite"></p></form>
@@ -222,7 +222,7 @@ FAQ = [
     ("Who pays Kolaboro?", "Buyers pay for checks and monitoring. Developers can pay to be verified, but paying never changes a Score: the evidence does. Agents never take money from developers."),
     ("Is Kolaboro a lawyer or a notary?", "No. Kolaboro agents verify facts on the ground and in documents and tell you what they found. For legal advice and to sign, use an independent lawyer or notary; we can tell you what to ask them."),
     ("Do you hold my money?", "Not yet. Today your agent confirms each milestone on site and tells you whether it's safe to pay. Milestone escrow with licensed partners is on our roadmap."),
-    ("Where do you work?", "We are launching in Bali first and adding cities as we train local agents. If you are buying somewhere else, tell us where: demand decides the next city."),
+    ("Where do you work?", "In any country. The desk review and the official-register lookups run online for off-plan projects anywhere. The on-site visit is done by a local agent in the project's country: we confirm it for your location before your agent starts, and if we can't take your case you get a full refund."),
     ("How is the Trust Score calculated?", "Nine checks, from land title to realistic promises, each scored 0 to 100 and weighted. Red flags cap the total, and every point links to its evidence. The full method is public."),
     ("Can a developer change their Score?", "Only with evidence. Developers can add documents and reply publicly. Where data is missing, the page says so instead of guessing."),
     ("What if I already bought?", "That's when monitoring matters most. We can verify where construction really is before your next payment."),
@@ -268,7 +268,7 @@ def build_home():
     m = m.replace('<section class="founder" id="why">', f'''<section class="sec alt" id="pricing">
   <div class="wrap">
     <h2>Simple prices. Paid by you, never by the developer.</h2>
-    <p class="lead">Launch prices for Bali. A €490 check is a small cost next to a deposit you can't get back.</p>
+    <p class="lead">A €490 check is a small cost next to a deposit you can't get back.</p>
     <div style="margin-top:44px">{PRICING}</div>
   </div>
 </section>
@@ -290,7 +290,7 @@ def build_home():
 (function(){
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   var clock = document.getElementById('clock');
-  function tick(){ var d = new Date(Date.now() + 8*3600e3); clock.textContent = d.toISOString().slice(11,19) + ' WITA'; }
+  function tick(){ clock.textContent = new Date().toTimeString().slice(0,8); }
   tick(); setInterval(tick, 1000);
   var lis = document.querySelectorAll('#steps li'), pill = document.getElementById('pill'),
       stamp = document.getElementById('stamp'), lat = document.getElementById('lat'),
@@ -373,7 +373,7 @@ def build_report():
   <h2 style="font-size:clamp(1.6rem,3vw,2.2rem)">Villa 7, Sample Residences, Canggu</h2>
   <div class="rmeta">
     <div><span>Report</span>KB-BAL-0001 (sample)</div><div><span>Inspection date</span>21 Oct 2026</div>
-    <div><span>Agent</span>Verified agent, Bali (sample)</div><div><span>Milestone checked</span>3 of 6, roof structure</div>
+    <div><span>Agent</span>Verified local agent (sample)</div><div><span>Milestone checked</span>3 of 6, roof structure</div>
   </div>
   <h3>Findings on site</h3>
   <div class="prose" style="max-width:none"><table><thead><tr><th>Item</th><th>Status</th><th>Notes</th></tr></thead><tbody>{t}</tbody></table></div>
@@ -544,7 +544,7 @@ def build_investors():
 <h2>Why it compounds</h2>
 <p>Every buyer we protect adds evidence to the Trust Score. A better Score attracts honest developers and more buyers, and every agent we train opens a new city without opening an office.</p>
 <h2>Go-to-market</h2>
-<p>Bali first, where foreign demand is strong and buyers' doubts are well known. Then the cities buyers ask for. Our founder has sold over €15M of real estate to international buyers and runs travel media with more than 400,000 followers, which gives us a direct line to the people who buy abroad.</p>
+<p>We check off-plan projects in any country. Our founder has sold over €15M of real estate to international buyers and runs travel media with more than 400,000 followers, which gives us a direct line to the people who buy abroad.</p>
 <h2>Talk to us</h2>
 <p>If you invest in marketplaces, proptech, fintech or the future of work, we'd like to hear from you.</p>
 </div></section>
@@ -695,7 +695,7 @@ def build_guides():
 
 def build_bali():
     body = phero('Bali', 'Buying property in Bali, with someone on your side',
-                 'Bali is where we start: strong demand from foreign buyers, and the same doubts every time. Here is what to watch and how Kolaboro helps.',
+                 'Bali has strong demand from foreign buyers, and the same doubts every time. Here is what to watch and how Kolaboro helps.',
                  '<div class="hero-cta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="bali_cta">Protect my purchase</a><a class="btn btn-line" href="/check">Check a project</a></div>')
     body += '''<section class="sec"><div class="wrap grid3">
   <div class="tile"><h3>Land and zoning</h3><p>Foreigners usually buy leasehold or through a company. The zoning has to allow villas and rentals. <a href="/guides/bali-land-titles">Read the guide</a>.</p></div>

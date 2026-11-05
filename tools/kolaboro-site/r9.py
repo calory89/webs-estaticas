@@ -3,7 +3,7 @@
 INSP_HTML = '''<figure class="insp v2" id="insp" aria-label="Illustrative example of a Kolaboro site inspection: a local agent films each construction milestone with GPS proof, and the buyer is told the next payment is safe">
         <div class="insp-top">
           <span class="rec"><b aria-hidden="true"></b>Live site inspection</span>
-          <span class="agent" id="agent">Agent on site · Canggu, Bali</span>
+          <span class="agent" id="agent">Agent on site · example plot</span>
           <span id="clock">--:--:--</span>
         </div>
         <div class="view" id="view">
@@ -127,7 +127,7 @@ INSP_JS = '''<script>
   var card = $('insp'), clock = $('clock'), lis = document.querySelectorAll('#steps li'), pill = $('pill'), stamp = $('stamp'),
       lat = $('lat'), m3 = $('m3'), focus = $('focus'), tag = $('tag'), flash = $('flash'), shots = $('shots'), toast = $('toast'), gpsok = $('gpsok');
   if (!card) return;
-  function tick(){ var d = new Date(Date.now() + 8*3600e3); clock.textContent = d.toISOString().slice(11,19) + ' WITA'; }
+  function tick(){ clock.textContent = new Date().toTimeString().slice(0,8); }
   tick(); setInterval(tick, 1000);
   var fLat = -8.64781, fLon = 115.13852, P = 0, V = 0;
   var FOCUS = [[20,60,60,30],[22,40,57,45],[18,30,64,36]];

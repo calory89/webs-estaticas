@@ -5,7 +5,7 @@ ES_UI = [
   ('>How it works<', '>Cómo funciona<'), ('>Trust Score<', '>Trust Score<'), ('>Check a project<', '>Comprobar un proyecto<'),
   ('>Become an agent<', '>Hazte agente<'), ('>Developers<', '>Promotores<'), ('>Protect my purchase<', '>Proteger mi compra<'),
   ('Skip to content', 'Saltar al contenido'), ('aria-label="Menu"', 'aria-label="Menú"'),
-  ('Local agents who work for the buyer, never the seller. Launching city by city, Bali first.', 'Agentes locales que trabajan para el comprador, nunca para el vendedor. Empezamos ciudad a ciudad, primero Bali.'),
+  ('Independent property checks for people buying abroad. Recruiting our first local agents.', 'Comprobaciones independientes para quien compra vivienda en otro país. Buscamos a nuestros primeros agentes locales.'),
   ('Monthly: projects that slipped, projects that delivered.', 'Cada mes: proyectos que se retrasaron y proyectos que cumplieron.'),
   ('placeholder="Your email"', 'placeholder="Tu email"'), ('>Subscribe<', '>Suscribirme<'),
 ]
@@ -36,7 +36,7 @@ def build_es():
   <h1>Nunca vuelvas a comprar una casa en el extranjero solo.</h1>
   <p class="lead">Una red de agentes locales que trabajan para el comprador, nunca para el vendedor. Formados con IA, verificados sobre el terreno y respaldados por todos los compradores que vinieron antes que tú.</p>
   <div class="hero-cta"><a class="btn btn-hi" href="#start" data-role="buyer" data-ev="es_cta_hero">Proteger mi compra</a><a class="btn btn-line" href="/check">Comprobar un proyecto</a></div>
-  <p class="launch"><i aria-hidden="true"></i>Empezamos ciudad a ciudad. Primero Bali.</p>
+  <p class="launch"><i aria-hidden="true"></i>Comprobaciones en cualquier país.</p>
 </div></section>
 <section class="problem"><div class="wrap">
   <h2>Lo más caro que vas a comprar en tu vida, y lo compras a ciegas.</h2>
