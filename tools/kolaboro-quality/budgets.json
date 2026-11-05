@@ -1,0 +1,131 @@
+{
+ "default_type": "content",
+ "types": [
+  {
+   "id": "home",
+   "match": [
+    "/"
+   ]
+  },
+  {
+   "id": "project",
+   "match": [
+    "/p/*"
+   ]
+  },
+  {
+   "id": "data",
+   "match": [
+    "/database/",
+    "/cases/",
+    "/prices/",
+    "/log/",
+    "/status/",
+    "/research/",
+    "/bali/",
+    "/verify/"
+   ]
+  },
+  {
+   "id": "tool",
+   "match": [
+    "/check/",
+    "/tools/",
+    "/checklist/"
+   ]
+  }
+ ],
+ "budgets": {
+  "home": {
+   "phone": {
+    "total": 757760,
+    "js": 61440,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "desktop": {
+    "total": 952320,
+    "js": 61440,
+    "css": 40960,
+    "images": 194560,
+    "fonts": 112640,
+    "third_party": 471040
+   }
+  },
+  "tool": {
+   "phone": {
+    "total": 757760,
+    "js": 61440,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "desktop": {
+    "total": 747520,
+    "js": 51200,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 471040
+   }
+  },
+  "data": {
+   "phone": {
+    "total": 1003520,
+    "js": 71680,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 563200
+   },
+   "desktop": {
+    "total": 1003520,
+    "js": 71680,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 573440
+   }
+  },
+  "content": {
+   "phone": {
+    "total": 737280,
+    "js": 61440,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "desktop": {
+    "total": 737280,
+    "js": 61440,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 471040
+   }
+  },
+  "project": {
+   "phone": {
+    "total": 901120,
+    "js": 81920,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "desktop": {
+    "total": 911360,
+    "js": 92160,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 471040
+   }
+  }
+ },
+ "note": "Budgets in bytes per page type and viewport, set on 5 Nov 2026 from the first measurement (largest page of each type) plus 15%, rounded up to 10 KiB, with a 20 KiB floor. Third-party bytes are mostly the Google tag (about 354 KB per page). Lower a budget when a page gets lighter; never raise one without saying why in the commit."
+}

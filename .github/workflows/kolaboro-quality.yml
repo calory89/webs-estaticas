@@ -1,0 +1,102 @@
+name: Kolaboro quality
+# Daily quality engineering run on production kolaboro.com (block W6, 5 Nov 2026), code in tools/kolaboro-quality:
+#   run.js       visual regression (20 key pages at 390 and 1440 px, pixelmatch against the previous run) and page weight per type
+#   sbom.js      CycloneDX 1.5 bill of materials from what the pages load, every sitemap page's tags and the worker source
+#   a11y-page.js refreshes the live numbers on /accessibility/ from the nightly axe run (data/a11y.json)
+# Publishes data/visual-tests.json, data/page-weight.json, security/sbom.json, accessibility/index.html and at most 16 small webp
+# comparison images (engineering/visual-tests/img/) to branch pub/_lovable. Baseline screenshots never go on the site: they roll
+# forward in the Actions cache and each run's set is kept as a single tar artifact for 30 days.
+# A page-weight budget breach marks the run failed after publishing. It never blocks or reverts a deploy.
+on:
+  schedule:
+    - cron: '41 6 * * *'
+  push:
+    branches: [main]
+    paths: ['tools/kolaboro-quality/**', '.github/workflows/kolaboro-quality.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-quality
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            tools/kolaboro-quality
+            tools/kolaboro-lighthouse
+      - uses: actions/setup-node@v4
+        with: { node-version: '22' }
+      - uses: actions/cache@v4
+        with:
+          path: ~/.cache/kolaboro-quality
+          key: quality-base-${{ github.run_id }}
+          restore-keys: quality-base-
+      - name: Install
+        run: |
+          cd "$RUNNER_TEMP" && npm i -s --no-save --no-package-lock playwright@1.48.2 pixelmatch@5.3.0 pngjs@7.0.0 sharp@0.33.5 >/dev/null
+          npx playwright install --with-deps chromium >/dev/null
+      - name: Visual regression and page weight
+        run: |
+          mkdir -p ~/.cache/kolaboro-quality/shots
+          ls ~/.cache/kolaboro-quality/shots | wc -l | xargs echo "baseline screenshots restored:"
+          NODE_PATH="$RUNNER_TEMP/node_modules" BASELINE="$HOME/.cache/kolaboro-quality/shots" node tools/kolaboro-quality/run.js "$RUNNER_TEMP/q"
+      - name: Worker source and current accessibility page from pub/_lovable
+        run: |
+          git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          mkdir -p "$RUNNER_TEMP/worker"
+          for f in $(git ls-tree --name-only FETCH_HEAD _worker.js/ | grep -E '^_worker\.js/(index|kolaboro|kbx[^/]*)\.js$'); do git show "FETCH_HEAD:$f" > "$RUNNER_TEMP/worker/$(basename $f)"; done
+          ls "$RUNNER_TEMP/worker" | wc -l | xargs echo "worker files:"
+          git show FETCH_HEAD:_s/kolaboro.com/accessibility/index.html > "$RUNNER_TEMP/a11y-page.html" || true
+      - name: SBOM
+        run: WORKER_DIR="$RUNNER_TEMP/worker" node tools/kolaboro-quality/sbom.js "$RUNNER_TEMP/q"
+      - name: Accessibility statement numbers
+        run: |
+          curl -sf "https://kolaboro.com/data/a11y.json?t=$(date +%s)" -o "$RUNNER_TEMP/a11y.json"
+          if [ -s "$RUNNER_TEMP/a11y-page.html" ]; then node tools/kolaboro-quality/a11y-page.js "$RUNNER_TEMP/a11y-page.html" "$RUNNER_TEMP/a11y.json" "$RUNNER_TEMP/q/accessibility.html"; fi
+      - name: Roll the baseline forward
+        if: always()
+        run: |
+          [ -d "$RUNNER_TEMP/q/shots" ] || exit 0
+          rm -rf ~/.cache/kolaboro-quality/shots && mkdir -p ~/.cache/kolaboro-quality/shots
+          find "$RUNNER_TEMP/q/shots" -name '*.png' ! -name '*.diff.png' -exec cp {} ~/.cache/kolaboro-quality/shots/ \;
+          tar -cf "$RUNNER_TEMP/baselines.tar" -C ~/.cache/kolaboro-quality shots
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: kolaboro-quality-baselines-${{ github.run_id }}
+          path: ${{ runner.temp }}/baselines.tar
+          retention-days: 30
+          if-no-files-found: ignore
+      - name: Publish to kolaboro.com
+        run: |
+          set -e
+          Q="$RUNNER_TEMP/q"; IMG=_s/kolaboro.com/engineering/visual-tests/img
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          for i in 1 2 3 4 5 6; do
+            P=$(git rev-parse FETCH_HEAD)
+            export GIT_INDEX_FILE=$RUNNER_TEMP/idx; rm -f $GIT_INDEX_FILE; git read-tree $P
+            git ls-files -- "$IMG/" | xargs -r git update-index --force-remove
+            put() { [ -s "$1" ] && git update-index --add --cacheinfo 100644,$(git hash-object -w "$1"),"$2" || true; }
+            put "$Q/visual-tests.json" _s/kolaboro.com/data/visual-tests.json
+            put "$Q/page-weight.json" _s/kolaboro.com/data/page-weight.json
+            put "$Q/sbom.json" _s/kolaboro.com/security/sbom.json
+            put "$Q/accessibility.html" _s/kolaboro.com/accessibility/index.html
+            for f in "$Q"/img/*.webp; do [ -f "$f" ] && put "$f" "$IMG/$(basename "$f")"; done
+            T=$(git write-tree --missing-ok); unset GIT_INDEX_FILE
+            [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
+            C=$(git commit-tree $T -p $P -m "kolaboro.com: quality run $(date -u +%F) (visual, page weight, SBOM, accessibility)")
+            git push -q origin $C:refs/heads/pub/_lovable && { echo "published $C"; exit 0; }
+            sleep $((5 + i * 3)); git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          done
+          exit 1
+      - name: Fail on page-weight budget breach (reporting only, deploys are not blocked)
+        run: |
+          N=$(cat "$RUNNER_TEMP/q/flags.txt")
+          if [ "$N" != "0" ]; then echo "::error::$N page(s) over their page-weight budget, see https://kolaboro.com/engineering/page-weight/"; exit 1; fi
