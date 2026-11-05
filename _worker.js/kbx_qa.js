@@ -27,7 +27,7 @@ function index() {
     module: 'qa', about: 'Quality engineering for kolaboro.com, published so anyone can check it.',
     endpoints: { speed: '/api/x/qa/speed' },
     pages: { visual_tests: '/engineering/visual-tests/', page_weight: '/engineering/page-weight/', speed: '/engineering/speed/', accessibility: '/accessibility/' },
-    files: { visual_tests: '/data/visual-tests.json', page_weight: '/data/page-weight.json', sbom: '/security/sbom.json', accessibility: '/data/a11y.json', lighthouse: '/data/lighthouse.json' },
+    files: { visual_tests_and_page_weight: '/data/quality.json', sbom: '/security/sbom.json', accessibility: '/data/a11y.json', lighthouse: '/data/lighthouse.json' },
   };
 }
 
