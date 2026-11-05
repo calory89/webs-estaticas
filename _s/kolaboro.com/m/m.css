@@ -105,7 +105,7 @@
 .mk-ix a:focus-visible{outline:3px solid var(--hivis);outline-offset:2px}
 .mk-ix .k{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:700}
 .mk-ix b{font-size:1.7rem;font-weight:850;letter-spacing:-.02em;line-height:1.05}
-.mk-ix .thin b{font-size:1.1rem;color:var(--muted)}
-.mk-ix .thin a{border-style:dashed}
+.mk-ix .ix-thin b{font-size:1.1rem;color:var(--muted)}
+.mk-ix .ix-thin a{border-style:dashed}
 .mk-ix .t{font-size:.9rem;line-height:1.45;color:var(--ink-2,#3D4852)}
 .mk-ix .d{font-size:.8rem;color:var(--muted);margin-top:auto}

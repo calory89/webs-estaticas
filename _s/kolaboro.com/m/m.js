@@ -153,7 +153,7 @@
     var box = $('mk-ind'); if (!box || !window.fetch) return;
     fetch('/api/x/ins/indices?market=' + encodeURIComponent(market)).then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); }).then(function(o){
       box.innerHTML = '<ul class="mk-ix">' + (o.indices || []).map(function(x){
-        return '<li class="' + (x.status === 'ok' ? 'ok' : 'thin') + '"><a href="' + esc(x.href) + '"><span class="k">' + esc(x.label) + '</span><b>' + (x.status === 'ok' || x.value ? esc(x.value || '') : 'Not enough data') + '</b><span class="t">' + esc(x.text) + '</span>' + (x.as_of ? '<span class="d">Data ' + esc(x.as_of) + '. Source page &rarr;</span>' : '<span class="d">Source page &rarr;</span>') + '</a></li>';
+        return '<li class="' + (x.status === 'ok' ? 'ix-ok' : 'ix-thin') + '"><a href="' + esc(x.href) + '"><span class="k">' + esc(x.label) + '</span><b>' + (x.status === 'ok' || x.value ? esc(x.value || '') : 'Not enough data') + '</b><span class="t">' + esc(x.text) + '</span>' + (x.as_of ? '<span class="d">Data ' + esc(x.as_of) + '. Source page &rarr;</span>' : '<span class="d">Source page &rarr;</span>') + '</a></li>';
       }).join('') + '</ul><p class="sub" style="margin-top:12px">' + esc(o.note || '') + ' JSON: <a href="/api/x/ins/indices?market=' + encodeURIComponent(market) + '">/api/x/ins/indices</a>.</p>';
     }).catch(function(){ box.innerHTML = '<p class="sub">The indices could not load right now. Open them directly: <a href="/index/delays/">delay index</a>, <a href="/promises/">promises</a>, <a href="/hazards/">hazards</a>, <a href="/graph/global/">company graph</a>, <a href="/tools/insolvency-check/">insolvency</a>, <a href="/index/prices/">price index</a>.</p>'; });
   }
