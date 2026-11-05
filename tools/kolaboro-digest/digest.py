@@ -475,10 +475,10 @@ def heatmap(today, H, cache_commits, hist_start):
 # ---------------------------------------------------------------- HTML
 CSS = '''<style>
 .dg-sec h2{margin-bottom:4px}.dg-mk{list-style:none;margin:14px 0 0;padding:0;display:grid;gap:8px}
-.dg-mk li{background:#fff;border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:.92rem;line-height:1.6;min-width:0;overflow-wrap:anywhere}
+.dg-mk li{background:var(--card,#fff);border:1px solid var(--line);border-radius:12px;padding:10px 14px;font-size:.92rem;line-height:1.6;min-width:0;overflow-wrap:anywhere}
 .dg-mk li b{margin-right:6px}.dg-mk a{font-variant-numeric:tabular-nums;margin-right:4px}
 .dg-empty{color:var(--muted)}.dg-arch{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:12px 0 0}
-.dg-arch a{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;border:1px solid var(--line);border-radius:999px;background:#fff;text-decoration:none;color:var(--ink);font-weight:700}
+.dg-arch a{display:inline-flex;align-items:center;min-height:44px;padding:0 14px;border:1px solid var(--line);border-radius:999px;background:var(--card,#fff);text-decoration:none;color:var(--ink);font-weight:700}
 .dg-arch a[aria-current]{background:var(--ink);color:var(--paper)}
 .dg-intro{font-size:1.08rem;line-height:1.6;max-width:70ch;margin-top:18px}
 .hm{border-collapse:separate;border-spacing:2px;margin-top:16px;font-size:.9rem;min-width:560px}
@@ -487,13 +487,13 @@ CSS = '''<style>
 .hm td.c{text-align:center;padding:0;border-radius:4px;min-width:64px}
 .hm td.c a,.hm td.c span{display:flex;align-items:center;justify-content:center;min-height:40px;text-decoration:none;color:var(--ink);font-weight:700;font-variant-numeric:tabular-nums}
 .hm td.c span{color:var(--muted);font-weight:400}.hm td.c a:hover{outline:2px solid var(--ink);border-radius:4px}
-.hm .b1{background:#cde2fb}.hm .b2{background:#9ec5f4}.hm .b3{background:#6da7ec}.hm .b4{background:#3987e5}.hm .b4 a,.hm .b5 a{color:#fff}.hm .b5{background:#1c5cab}
+.hm td.b1 a,.hm td.b2 a,.hm td.b3 a{color:#17212B}.hm .b1{background:#cde2fb}.hm .b2{background:#9ec5f4}.hm .b3{background:#6da7ec}.hm .b4{background:#3987e5}.hm .b4 a,.hm .b5 a{color:#fff}.hm .b5{background:#1c5cab}
 .hm-key{display:flex;flex-wrap:wrap;gap:4px 12px;align-items:center;margin-top:10px;font-size:.84rem;color:var(--ink-2)}
 .hm-key i{display:inline-block;width:22px;height:14px;border-radius:3px;vertical-align:-2px;margin-right:4px}
-.hm-tabs{display:flex;gap:8px;margin-top:16px}.hm-tabs button{min-height:44px;padding:0 16px;border-radius:999px;border:1px solid var(--line);background:#fff;font:inherit;font-weight:700;cursor:pointer;color:var(--ink)}
+.hm-tabs{display:flex;gap:8px;margin-top:16px}.hm-tabs button{min-height:44px;padding:0 16px;border-radius:999px;border:1px solid var(--line);background:var(--card,#fff);font:inherit;font-weight:700;cursor:pointer;color:var(--ink)}
 .hm-tabs button[aria-pressed=true]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-.hm-list{margin-top:16px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;scroll-margin-top:96px}.hm-list h2{font-size:1.1rem}.hm-list ul{list-style:none;padding:0;margin:8px 0 0;display:flex;flex-wrap:wrap;gap:6px}
-.hm-list li a{display:inline-flex;min-height:40px;align-items:center;padding:0 12px;border:1px solid var(--line);border-radius:999px;background:#fff;text-decoration:none;color:var(--ink);font-variant-numeric:tabular-nums}
+.hm-list{margin-top:16px;background:var(--card,#fff);border:1px solid var(--line);border-radius:14px;padding:14px 16px;scroll-margin-top:96px}.hm-list h2{font-size:1.1rem}.hm-list ul{list-style:none;padding:0;margin:8px 0 0;display:flex;flex-wrap:wrap;gap:6px}
+.hm-list li a{display:inline-flex;min-height:40px;align-items:center;padding:0 12px;border:1px solid var(--line);border-radius:999px;background:var(--card,#fff);text-decoration:none;color:var(--ink);font-variant-numeric:tabular-nums}
 </style>'''
 
 
