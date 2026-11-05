@@ -7,7 +7,7 @@ Builds two public files from the PUBLIC dataset only (https://kolaboro.com/data/
                       Natural Earth admin-0 label points for markets that are a whole country, Natural Earth populated
                       places for cities, GeoNames cities1000 as a fallback for small towns. Regions (for example
                       "Costa del Sol") are placed at a named anchor town listed in ANCHOR below, and say so.
-  similar.json        for every public project, the 5 most similar other projects: 50% cosine similarity of
+  similar.json        (also carries market_points, see above, so the site gains one file, not two) for every public project, the 5 most similar other projects: 50% cosine similarity of
                       sentence embeddings (sentence-transformers/all-MiniLM-L6-v2, Apache 2.0, run locally on the
                       runner) of the public text fields, 50% structured features (market, country, stage, price band,
                       which of the six checks are published). Ids and rounded scores only.
@@ -228,7 +228,9 @@ def main():
         'input': {'file': 'https://kolaboro.com/data/bali-cases.json', 'sha256': hashlib.sha256(raw).hexdigest()},
         'markets': pts, 'unplaced': unplaced,
     }
-    json.dump(mp, open(os.path.join(OUT, 'market-points.json'), 'w'), ensure_ascii=False, separators=(',', ':'))
+    # Published inside similar.json (key market_points) to keep the site's file count down; written alone only with --no-embed.
+    if NO_EMBED:
+        json.dump(mp, open(os.path.join(OUT, 'market-points.json'), 'w'), ensure_ascii=False, separators=(',', ':'))
     print('market points: %d placed, %d unplaced' % (len(pts), len(unplaced)), unplaced)
 
     if NO_EMBED:
@@ -262,6 +264,7 @@ def main():
         'k': K, 'projects_n': n, 'seconds': round(time.time() - t0, 1),
         'input': {'file': 'https://kolaboro.com/data/bali-cases.json', 'sha256': hashlib.sha256(raw).hexdigest()},
         'projects': sims,
+        'market_points': mp,
     }
     json.dump(out, open(os.path.join(OUT, 'similar.json'), 'w'), ensure_ascii=False, separators=(',', ':'))
     print('similar: %d projects in %.1fs' % (n, time.time() - t0))
