@@ -169134,6 +169134,516 @@
    "added": "2026-11-04",
    "found_by": "discover-agent",
    "slug": "stellar-bay-nairobi"
+  },
+  {
+   "name": "Ornelas Legacy",
+   "developer": "Interpatium group (named only in an agent listing, not on a developer page I could open)",
+   "area": "Estrela, Calheta",
+   "country": "Portugal",
+   "market": "Madeira",
+   "stage": "off-plan",
+   "url": "https://www.milliongroup.pt/pt-PT/Empreendimento/Ornelas-Legacy/1904",
+   "docs_url": "https://www.milliongroup.pt/pt-PT/Empreendimento/Ornelas-Legacy/1904",
+   "permit_number": null,
+   "seed": {
+    "price": 450000,
+    "currency": "EUR",
+    "title": "Ornelas Legacy",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": 7,
+    "completion": "Q4 2027 per Million Group; other agents say end 2027 to early 2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 50,
+    "payment_plan": "20% on reservation, 20% six months later, balance at deed; EUR 2,500 reservation fee (JamesEdition listing)"
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "developer"
+   },
+   "claims": [
+    {
+     "claim": "Developer is Interpatium group with a proven track record of quickly sold-out projects",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.madeirapinkproperties.com/pt/imoveis/detalhes/property/653981/apartamento-ornelas-legacy-t2-na-calheta.html"
+    },
+    {
+     "claim": "7% offer on rental income for Alojamento Local use, subject to contract conditions",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.doutorimobiliaria.com/empreendimento/ornelas-legacy-calheta/25323207"
+    },
+    {
+     "claim": "Works due to start soon, completion end of 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.pinkrealestate.pt/pt/imoveis/detalhes/property/653981/apartamento-ornelas-legacy-t2-na-calheta.html"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "construction_start": "Not started; agent says start of works expected soon",
+    "handover_promised": "Q4 2027 (Million Group); 2028 (JamesEdition); early 2028 (Doutor Imobiliaria)",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "T0",
+     "T1",
+     "T2",
+     "T2+1",
+     "T3"
+    ],
+    "size_min_m2": 55,
+    "size_max_m2": 160,
+    "price_min": 450000,
+    "price_max": 1100000,
+    "deposit_pct": 20,
+    "foreign_ownership": null,
+    "rental_programme": "7% on rental income offered for Alojamento Local, per agent, subject to contract",
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Million Group gives expected completion as the last quarter of 2027, while Madeira Pink Properties names the Interpatium group as promoter. Unit count differs by source (50 on most, 60 on one idealista listing). No developer page, permit number, escrow wording or floor plans were found.",
+   "positives": [
+    "Unit mix and unit-level prices published by agents",
+    "Staged payment plan published by an agent"
+   ],
+   "flags": [],
+   "sources": [
+    "https://www.doutorimobiliaria.com/empreendimento/ornelas-legacy-calheta/25323207",
+    "https://www.idealista.pt/en/comprar-casas/calheta-madeira/calheta/",
+    "https://www.jamesedition.com/real_estate/calheta-portugal/ornelas-legacy-16861642",
+    "https://www.madeirapinkproperties.com/pt/imoveis/detalhes/property/653981/apartamento-ornelas-legacy-t2-na-calheta.html",
+    "https://www.milliongroup.pt/pt-PT/Empreendimento/Ornelas-Legacy/1904",
+    "https://www.pinkrealestate.pt/pt/imoveis/detalhes/property/653981/apartamento-ornelas-legacy-t2-na-calheta.html",
+    "https://www.rikakaza.com/en/property-detail/apartment-cove-t0-t1-t2-t3/761493",
+    "https://www.theagencyre.com/new-developments/ornelas-legacy"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-agent",
+   "slug": "ornelas-legacy-madeira"
+  },
+  {
+   "name": "Uptown 30",
+   "developer": null,
+   "area": "Machico",
+   "country": "Portugal",
+   "market": "Madeira",
+   "stage": "off-plan",
+   "url": "https://www.idealista.pt/en/comprar-empreendimentos/madeira-ilha/com-tipo-imovel-apartamentos/",
+   "docs_url": "https://www.idealista.pt/en/comprar-empreendimentos/madeira-ilha/com-tipo-imovel-apartamentos/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": "Uptown 30",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Construction of Uptown 30 is yet to start and will bring a modern building to Machico",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.idealista.pt/en/comprar-empreendimentos/madeira-ilha/com-tipo-imovel-apartamentos/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "T1",
+     "T2",
+     "T3"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "An idealista listing says the construction of Uptown 30 will bring a modern building to Machico, which suggests works have not started. Only portal listings were seen; the developer is unpublished in what I saw and its own page was not found.",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.idealista.pt/en/comprar-empreendimentos/madeira-ilha/",
+    "https://www.idealista.pt/en/comprar-empreendimentos/madeira-ilha/com-tipo-imovel-apartamentos/",
+    "https://www.idealista.pt/en/geo/comprar-empreendimentos/madeira/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-agent",
+   "slug": "uptown-30-madeira"
+  },
+  {
+   "name": "Oceano Villas",
+   "developer": null,
+   "area": "Gaula, Santa Cruz",
+   "country": "Portugal",
+   "market": "Madeira",
+   "stage": "off-plan",
+   "url": "https://www.idealista.pt/en/comprar-empreendimentos/santa-cruz/",
+   "docs_url": "https://www.idealista.pt/en/comprar-empreendimentos/santa-cruz/",
+   "permit_number": null,
+   "seed": {
+    "price": 430000,
+    "currency": "EUR",
+    "title": "Oceano Villas",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 18,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "New development of semi-detached and detached T2 and T3 villas in Gaula from 430,000 EUR",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.idealista.pt/en/comprar-empreendimentos/santa-cruz/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "T2",
+     "T3",
+     "semi-detached villa",
+     "detached villa"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 430000,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Oceano Villas is a new residential development in Gaula, Santa Cruz, with Atlantic views, and it is sold through a KW Alfa Madeira agent. The 18-unit figure comes from a truncated idealista snippet. Construction stage and developer name were not confirmed, and no developer page was found.",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.idealista.pt/en/comprar-casas/santa-cruz/gaula/",
+    "https://www.idealista.pt/en/comprar-empreendimentos/santa-cruz/",
+    "https://www.idealista.pt/en/comprar-empreendimentos/santa-cruz/?ordem=precos-asc"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-agent",
+   "slug": "oceano-villas-madeira"
+  },
+  {
+   "name": "No published name (Domisi listing: Luxury Villa Project Under Construction in Crete)",
+   "developer": "Domisi Development",
+   "area": "Crete (exact location not seen), developer based in Rethymno",
+   "country": "Greece",
+   "market": "Greece",
+   "stage": "under construction",
+   "url": "https://www.domisidevelopment.gr/en/propertyDetails/19686132",
+   "docs_url": "https://www.domisidevelopment.gr/en",
+   "permit_number": null,
+   "seed": {
+    "price": 1600000,
+    "currency": "EUR",
+    "title": "Luxury Villa Project Under Construction in Crete / Moderne Luxe Villa in Ontwikkeling op Kreta - Exclusief Woonproject",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": "Developer says it has completed a similar villa that buyers can visit (Kyrianna off-plan listing)",
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "developer",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Villa project is under construction in Crete, 4 bedrooms, 300 m2, EUR 1,600,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domisidevelopment.gr/en"
+    },
+    {
+     "claim": "Developer has operated as a Crete property developer since 1999",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domisidevelopment.gr/en"
+    },
+    {
+     "claim": "Developer has already completed a similar villa for buyers to visit",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.domisiworld.com/property/1060"
+    }
+   ],
+   "facts": {
+    "developer_founded": 1999.0,
+    "developer_hq": "Rethymno, Crete",
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "Villa"
+    ],
+    "size_min_m2": 300,
+    "size_max_m2": 300,
+    "price_min": 1600000,
+    "price_max": 1600000,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "A luxury villa project under construction in Crete, advertised with a bilingual English and Dutch title, which suggests Dutch-speaking buyers are targeted. The project has no published name, and I only saw the listing title and price on the developer's home page, not the detail page. No permit number, escrow, progress or location was found.",
+   "positives": [
+    "Developer site offers English, Greek and Dutch versions",
+    "Developer says it has already built a comparable villa that buyers can visit"
+   ],
+   "flags": [],
+   "sources": [
+    "https://www.domisidevelopment.gr/en",
+    "https://www.domisiworld.com/property/1060"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-agent",
+   "slug": "no-published-name-domisi-listing-luxury-villa-project-under"
+  },
+  {
+   "name": "Elements",
+   "developer": "Domenica Group",
+   "area": "Park of Colours, City Centre, Paphos",
+   "country": "Cyprus",
+   "market": "Cyprus",
+   "stage": "under construction",
+   "url": "https://domenicagroup.com/portfolio/elements",
+   "docs_url": "https://domenicagroup.com/portfolio/elements",
+   "permit_number": null,
+   "seed": {
+    "price": 280000,
+    "currency": "EUR",
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": true,
+    "developer_delivered": null,
+    "units": 96,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "developer",
+    "plans": "developer",
+    "record": "developer",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "96 apartments in four eight-storey buildings",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://www.cbn.com.cy/article/87982/domenica-group-celebrates-elements-project-with-exclusive-event-at-park-of-colours-city-centre-paphos"
+    },
+    {
+     "claim": "Construction is well underway, with a March 2025 video update showing the frames rising",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://domenicagroup.com/blog/grand-opening-park-of-colors"
+    },
+    {
+     "claim": "Domenica Group is a family-owned business founded in 1961",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://domenicagroup.com/portfolio/elements"
+    }
+   ],
+   "facts": {
+    "developer_founded": 1961,
+    "developer_hq": "Paphos, Cyprus (12 Demokratias Avenue)",
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1 bed",
+     "2 bed",
+     "3 bed"
+    ],
+    "size_min_m2": 63,
+    "size_max_m2": 158,
+    "price_min": 280000,
+    "price_max": 470000,
+    "deposit_pct": null,
+    "foreign_ownership": "Marketed to local and international buyers (developer press release, no legal detail given)",
+    "rental_programme": null,
+    "lat": 34.782361,
+    "lng": 32.423333,
+    "permit_authority": null
+   },
+   "note": "Four-building, 8-storey apartment scheme inside the Park of Colours, listed by the developer as Under Construction and Available For Sale. Unit count differs between sources: 96 on the project page, 156 in the developer's press release as reported by CBN.",
+   "positives": [
+    "Floor plans section with images on the developer page",
+    "Unit-level availability with covered areas shown",
+    "Dated construction updates (event reported by CBN, March 2025 video update)",
+    "Long company history claimed (1961)"
+   ],
+   "flags": [],
+   "sources": [
+    "https://domenicagroup.com/blog/grand-opening-park-of-colors",
+    "https://domenicagroup.com/element-al-celebration-at-park-of-colors/",
+    "https://domenicagroup.com/portfolio/elements",
+    "https://domenicagroup.com/under-construction",
+    "https://www.cbn.com.cy/article/87982/domenica-group-celebrates-elements-project-with-exclusive-event-at-park-of-colours-city-centre-paphos",
+    "https://www.domenicagroup.com/blog/upcoming-paphos-homes"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": true,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-agent",
+   "slug": "elements-cyprus"
   }
  ]
 }

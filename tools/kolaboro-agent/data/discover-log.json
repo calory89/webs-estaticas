@@ -294,5 +294,32 @@
   ],
   "all_six": 0,
   "verified_4plus": 0
+ },
+ {
+  "date": "2026-11-05",
+  "calls": 3,
+  "usd": 3.168,
+  "searches": 18,
+  "added": 5,
+  "rejected": {
+   "fewer_than_2_sources": 2,
+   "duplicate": 2,
+   "dead_url": 1
+  },
+  "markets": [
+   "Madeira",
+   "Greece",
+   "Cyprus"
+  ],
+  "model": "claude-sonnet-5-5",
+  "added_slugs": [
+   "ornelas-legacy-madeira",
+   "uptown-30-madeira",
+   "oceano-villas-madeira",
+   "no-published-name-domisi-listing-luxury-villa-project-under",
+   "elements-cyprus"
+  ],
+  "all_six": 0,
+  "verified_4plus": 0
  }
 ]
