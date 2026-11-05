@@ -1,10 +1,10 @@
 {
  "bomFormat": "CycloneDX",
  "specVersion": "1.5",
- "serialNumber": "urn:uuid:d4ccb144-9137-48ed-b96c-8af8471c618a",
+ "serialNumber": "urn:uuid:9f59ee24-5ef5-4330-b9d5-faaf96773aec",
  "version": 1,
  "metadata": {
-  "timestamp": "2026-11-05T06:59:33.596Z",
+  "timestamp": "2026-11-05T07:04:12.304Z",
   "tools": {
    "components": [
     {
@@ -627,11 +627,11 @@
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "0d06a17bb80744dd7f0a1f134f8caed4d298032a70085869c8189d72b3b6c7b0edb80dadcfacb056f35686458e04e4b2"
+     "content": "6718e418771384383af6f7d3f13c6f982a01dd0157b7c577cc65f81211912214d621c80089799df5dd8abb28a1207434"
     },
     {
      "alg": "SHA-256",
-     "content": "1a20adcc477652577447b4c7fbcd6934c9e6144bcf25ef33b393be55c1a01c98"
+     "content": "ad0b7ac330f3b28553a4558683bc9ea3e241d2011f3aef2b33b83558bd27abff"
     }
    ],
    "externalReferences": [
@@ -687,11 +687,11 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-DQahe7gHRN1/Ch8TT4yu1NKYAypwCFhpyBidcrO2x7DtuA2tz6ywVvNWhkWOBOSy"
+     "value": "sha384-ZxjkGHcThDg69vfT8TxvmCoB3QFXt8V3zGX4EhGRIhTWIcgAiXmd9d2KuyihIHQ0"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "540717"
+     "value": "540684"
     },
     {
      "name": "kolaboro:licence",
@@ -1201,24 +1201,24 @@
    "bom-ref": "site-3p-14",
    "type": "library",
    "name": "Microsoft Clarity",
-   "version": "0.8.75",
+   "version": "0.8.73-beta",
    "supplier": {
     "name": "Microsoft"
    },
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "049e3101b7b517c94a6eb883b8caad0259944dec4a0da14c4795997afc75e02e7ed6ffebe6a570b676e4f3c2c496297f"
+     "content": "923cf0338c836b66688bd9043b788f1220c011d08be4a31ca65e88aabca22e91d0a835e20755e26b5d585bec4cf5bb7d"
     },
     {
      "alg": "SHA-256",
-     "content": "be831b2aee555d51f37a1a402f785e03358dc0c914e1fd34fdb9df546eda225e"
+     "content": "a82f35a9440a440e437a770f5693afbbe9fa6e911a5e6ce6f8cf3f4af0f269b3"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://scripts.clarity.ms/0.8.75/clarity.js"
+     "url": "https://scripts.clarity.ms/0.8.73-beta/clarity.js"
     }
    ],
    "properties": [
@@ -1256,11 +1256,11 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-BJ4xAbe1F8lKbriDuMqtAlmUTexKDaFMR5WZevx14C5+1v/r5qVwtnbk88LElil/"
+     "value": "sha384-kjzwM4yDa2Zoi9kEO3iPEiDAEdCL5KMcpl6IqryiLpHQqDXiB1Xia11YW+xM9bt9"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "73256"
+     "value": "74411"
     },
     {
      "name": "kolaboro:licence",
@@ -1278,11 +1278,11 @@
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "756e537f46fd2c7fb5a45a6af4e51ade00a1261a06c0553f7f597584ce89cef3c41a090936554272fb16d6e6243c9833"
+     "content": "de793d748b556ef55872a0c35cbdbae19b0664d0af30eb8e58e24c7e04a154d0cb41c685aa8f6af5451cc84ac42d96ca"
     },
     {
      "alg": "SHA-256",
-     "content": "5c7608918ac8751c5dbc1773ac14b2476742b25b23701840fda9e09b2730b922"
+     "content": "117dad17720ec18542906af767c98862acfb1609e33f3fdd68dcd55575156d51"
     }
    ],
    "externalReferences": [
@@ -1326,11 +1326,11 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-dW5Tf0b9LH+1pFpq9OUa3gChJhoGwFU/f1l1hM6JzvPEGgkJNlVCcvsW1uYkPJgz"
+     "value": "sha384-3nk9dItVbvVYcqDDXL264ZsGZNCvMOuOWOJMfgShVNDLQcaFqo9q9UUcyErELZbK"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "726"
+     "value": "731"
     },
     {
      "name": "kolaboro:licence",
@@ -3927,11 +3927,11 @@
     },
     {
      "name": "kolaboro:seen_on_count",
-     "value": "12"
+     "value": "15"
     },
     {
      "name": "kolaboro:seen_on_sample",
-     "value": "/ /check/ /checklist/ /docs/api/ /how-we-score/"
+     "value": "/bali/ /cases/ /checklist/ /docs/api/ /engineering/"
     },
     {
      "name": "kolaboro:url_variants",
