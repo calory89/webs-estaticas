@@ -989,7 +989,7 @@ async function reportDraft(req, env, ctx) {
 const API_DOC = { name: 'Kolaboro pilot API', version: 'v1', auth: 'Send your key in the x-api-key header. Get one at https://kolaboro.com/api-pilot', limits: '200 calls a day per key during the pilot',
   endpoints: [
     { method: 'GET', path: '/api/v1/markets', does: 'What developers advertise in each of the 9 markets we track: title types, lease terms, extension promises, guaranteed-return language, permit numbers published, price bands. Advertised claims, not verified facts.' },
-    { method: 'GET', path: '/api/v1/cases', does: 'Anonymised Bali cases our research agent is following, with the questions a buyer must get answered.' },
+    { method: 'GET', path: '/api/v1/cases', does: 'Anonymised cases from every market our research agent is following, with the questions a buyer must get answered.' },
     { method: 'POST', path: '/api/v1/projects/check', body: '{ "url": "https://developer-site/project" }', does: 'Desk review of a project page: what it promises, what it leaves out, what to ask before paying.' },
     { method: 'POST', path: '/api/v1/documents/read', body: '{ "type": "auto|certificate|contract|permit|company|invoice", "files": ["data:image/jpeg;base64,…" or "data:application/pdf;base64,…"], "claim": "what the seller told the buyer", "lang": "en" }', does: 'Reads a land certificate, contract, permit, company deed or invoice and compares it with the claim.' },
     { method: 'GET', path: '/api/v1/verify/{sha256}', does: 'Whether a file fingerprint has a Bitcoin timestamp (OpenTimestamps) and when.' },
