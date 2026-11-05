@@ -1,6 +1,22 @@
 {
  "deploys": [
   {
+   "at": "2026-11-05T16:46:26Z",
+   "commit": "12e032c9a3063ec98cb4df60ef10b27bd6525c79",
+   "checks_passed": 32,
+   "checks_total": 32,
+   "failed": [],
+   "run": "https://github.com/calory89/webs-estaticas/actions/runs/42067377171",
+   "result": "pass",
+   "wait_s": 101,
+   "changes": [
+    "60b97ac6756a",
+    "2791a680bb13",
+    "49364b54b704",
+    "12e032c9a306"
+   ]
+  },
+  {
    "at": "2026-11-05T16:32:49Z",
    "commit": "49364b54b7044a69f122209ab294d6cbdf0bceb1",
    "result": "not_deployed",
@@ -1685,13 +1701,13 @@
  "canary": "Cloudflare Pages sends each push to all visitors at once and offers no percentage canary, so none is claimed. A bad push can be visible for a few minutes until the rollback is live.",
  "rollback_mode": "Rollback: a git commit restoring the files changed since the last passing commit; Pages deploys it in about 1 to 2 minutes. An instant Cloudflare API rollback is built in but needs a Pages-scoped token, not configured yet.",
  "latest_checks": {
-  "at": "2026-11-05T16:05:22.395Z",
-  "commit": "855ea974279c82b0e0587837ddce35e278a2672d",
+  "at": "2026-11-05T16:46:26.181Z",
+  "commit": "12e032c9a3063ec98cb4df60ef10b27bd6525c79",
   "checks": [
    {
     "name": "build: live commit",
     "ok": true,
-    "detail": "live 855ea974279c"
+    "detail": "live 12e032c9a306"
    },
    {
     "name": "page /",
@@ -1781,7 +1797,7 @@
    {
     "name": "api /api/x/l/trust",
     "ok": true,
-    "detail": "{\"controls\":13,\"pass\":12,\"warn\":1,\"fail\":0,\"stale\":0,\"unknown\":0}"
+    "detail": "{\"controls\":13,\"pass\":11,\"warn\":1,\"fail\":1,\"stale\":0,\"unknown\":0}"
    },
    {
     "name": "tls: plain http redirects to https",
@@ -1850,7 +1866,7 @@
    }
   ]
  },
- "last_checked": "855ea974279c82b0e0587837ddce35e278a2672d",
- "last_good": "855ea974279c82b0e0587837ddce35e278a2672d",
- "updated": "2026-11-05T16:32:49Z"
+ "last_checked": "12e032c9a3063ec98cb4df60ef10b27bd6525c79",
+ "last_good": "12e032c9a3063ec98cb4df60ef10b27bd6525c79",
+ "updated": "2026-11-05T16:46:26Z"
 }
