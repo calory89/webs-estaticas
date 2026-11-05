@@ -1,6 +1,28 @@
 {
  "deploys": [
   {
+   "at": "2026-11-05T07:22:32Z",
+   "commit": "0cc842672cce06e492668ff2f48fe954f4618aef",
+   "checks_passed": 32,
+   "checks_total": 32,
+   "failed": [],
+   "run": "https://github.com/calory89/webs-estaticas/actions/runs/41985157283",
+   "result": "pass",
+   "wait_s": 564,
+   "changes": [
+    "be649ccc9ab8",
+    "a29a8ca4d9b7",
+    "94f0ec82a4af",
+    "4b8430775da7",
+    "2a1fcb62f6cd",
+    "7d673556228f",
+    "314e2b384c86",
+    "5c50b4a26663",
+    "ebf029733645",
+    "0cc842672cce"
+   ]
+  },
+  {
    "at": "2026-11-05T07:11:41Z",
    "commit": "7d673556228f9f75239ff81e62c7270c678c1234",
    "result": "not_deployed",
@@ -1161,43 +1183,43 @@
  "canary": "Cloudflare Pages sends each push to all visitors at once and offers no percentage canary, so none is claimed. A bad push can be visible for a few minutes until the rollback is live.",
  "rollback_mode": "Rollback: a git commit restoring the files changed since the last passing commit; Pages deploys it in about 1 to 2 minutes. An instant Cloudflare API rollback is built in but needs a Pages-scoped token, not configured yet.",
  "latest_checks": {
-  "at": "2026-11-04T15:15:27.530Z",
-  "commit": "7bcfc578b925d64bbca497e00089e9dd27389b92",
+  "at": "2026-11-05T07:22:32.365Z",
+  "commit": "0cc842672cce06e492668ff2f48fe954f4618aef",
   "checks": [
    {
     "name": "build: live commit",
     "ok": true,
-    "detail": "live 7bcfc578b925"
+    "detail": "live 0cc842672cce"
    },
    {
     "name": "page /",
     "ok": true,
-    "detail": "200, 72340 bytes"
+    "detail": "200, 72827 bytes"
    },
    {
     "name": "page /check/",
     "ok": true,
-    "detail": "200, 68667 bytes"
+    "detail": "200, 68994 bytes"
    },
    {
     "name": "page /database/",
     "ok": true,
-    "detail": "200, 33552 bytes"
+    "detail": "200, 33934 bytes"
    },
    {
     "name": "page /pricing/",
     "ok": true,
-    "detail": "200, 26231 bytes"
+    "detail": "200, 26522 bytes"
    },
    {
     "name": "page /p/BALI-021",
     "ok": true,
-    "detail": "200, 21615 bytes"
+    "detail": "200, 21906 bytes"
    },
    {
     "name": "page /log/",
     "ok": true,
-    "detail": "200, 27440 bytes"
+    "detail": "200, 27783 bytes"
    },
    {
     "name": "page /verify/",
@@ -1207,37 +1229,37 @@
    {
     "name": "page /status/",
     "ok": true,
-    "detail": "200, 40018 bytes"
+    "detail": "200, 40473 bytes"
    },
    {
     "name": "page /changelog/",
     "ok": true,
-    "detail": "200, 59301 bytes"
+    "detail": "200, 59592 bytes"
    },
    {
     "name": "page /docs/api/",
     "ok": true,
-    "detail": "200, 22263 bytes"
+    "detail": "200, 22554 bytes"
    },
    {
     "name": "page /investors/",
     "ok": true,
-    "detail": "200, 48218 bytes"
+    "detail": "200, 48608 bytes"
    },
    {
     "name": "page /trust/",
     "ok": true,
-    "detail": "200, 24170 bytes"
+    "detail": "200, 24561 bytes"
    },
    {
     "name": "page /investors/dossier/",
     "ok": true,
-    "detail": "200, 21613 bytes"
+    "detail": "200, 21929 bytes"
    },
    {
     "name": "api /api/open/stats",
     "ok": true,
-    "detail": "1011 projects"
+    "detail": "1016 projects"
    },
    {
     "name": "api /api/open/projects",
@@ -1252,12 +1274,12 @@
    {
     "name": "api /api/open/checkpoint",
     "ok": true,
-    "detail": "tree size 3"
+    "detail": "tree size 4"
    },
    {
     "name": "api /api/x/l/trust",
     "ok": true,
-    "detail": "{\"controls\":13,\"pass\":12,\"warn\":1,\"fail\":0,\"stale\":0,\"unknown\":0}"
+    "detail": "{\"controls\":13,\"pass\":10,\"warn\":2,\"fail\":1,\"stale\":0,\"unknown\":0}"
    },
    {
     "name": "tls: plain http redirects to https",
@@ -1326,7 +1348,7 @@
    }
   ]
  },
- "last_checked": "7bcfc578b925d64bbca497e00089e9dd27389b92",
- "last_good": "7bcfc578b925d64bbca497e00089e9dd27389b92",
- "updated": "2026-11-05T07:11:41Z"
+ "last_checked": "0cc842672cce06e492668ff2f48fe954f4618aef",
+ "last_good": "0cc842672cce06e492668ff2f48fe954f4618aef",
+ "updated": "2026-11-05T07:22:32Z"
 }
