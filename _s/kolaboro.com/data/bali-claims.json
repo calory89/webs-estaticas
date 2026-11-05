@@ -26,7 +26,7 @@
  "guaranteed_language": 10,
  "permit_claims": 12,
  "permit_numbers_published": 0,
- "plans_published": 29,
+ "plans_published": 30,
  "price_usd": {
   "known": 53,
   "median": 190000.0,
@@ -47,13 +47,6 @@
   "unknown": 34
  },
  "runs": [
-  {
-   "date": "2026-11-02",
-   "mode": "ai",
-   "pages_ok": 783,
-   "pages_failed": 101,
-   "changes": 25
-  },
   {
    "date": "2026-11-02",
    "mode": "ai",
@@ -130,6 +123,13 @@
    "pages_ok": 72,
    "pages_failed": 4,
    "changes": 1
+  },
+  {
+   "date": "2026-11-05",
+   "mode": "ai",
+   "pages_ok": 803,
+   "pages_failed": 113,
+   "changes": 38
   }
  ]
 }
