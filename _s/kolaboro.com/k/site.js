@@ -1,7 +1,7 @@
 /* Kolaboro shared script: nav, events, sticky CTA, lead forms */
 /* on-demand modules: kbLoad(name) loads a versioned script once; kbVerifyLoad() resolves to window.KBVerify (k/verify-badge.js) */
 (function () {
-  var V = { palette: '/k/palette.js?v=29f5606649', verify: '/k/verify-badge.js?v=d6fef3de86' }, P = {};
+  var V = { palette: '/k/palette.js?v=52d82fdad0', verify: '/k/verify-badge.js?v=6b61413c9f' }, P = {};
   window.kbLoad = function (n) {
     return P[n] || (P[n] = new Promise(function (ok, no) { var s = document.createElement('script'); s.src = V[n]; s.async = true; s.onload = ok; s.onerror = function () { delete P[n]; no(new Error('load ' + n)); }; document.head.appendChild(s); }));
   };
@@ -89,8 +89,8 @@
   function getData() {
     if (dataP) return dataP;
     // where the page shows a badge for these numbers, the signed answer is checked in the browser before the badge turns green
-    if (kvbSum) dataP = window.kbVerifyLoad().then(function (KV) { return KV.fetchSigned(sumUrl).then(function (r) { KV.badge(kvbSum, r.check, { what: 'these database numbers (/api/open/summary)' }); return r.ok ? r.json : null; }); })
-      .catch(function () { kvbSum.textContent = 'Signature not checked'; kvbSum.setAttribute('data-kvb-state', 'error'); return fetch(sumUrl).then(function (r) { return r.ok ? r.json() : null; }); }).catch(function () { return null; });
+    if (kvbSum) dataP = window.kbVerifyLoad().then(function (KV) { return KV.fetchSigned(sumUrl).then(function (r) { KV.badge(kvbSum, r.check, { what: /^es/.test(document.documentElement.lang || '') ? 'estas cifras de la base de datos (/api/open/summary)' : 'these database numbers (/api/open/summary)' }); return r.ok ? r.json : null; }); })
+      .catch(function () { kvbSum.textContent = /^es/.test(document.documentElement.lang || '') ? 'Firma no comprobada' : 'Signature not checked'; kvbSum.setAttribute('data-kvb-state', 'error'); return fetch(sumUrl).then(function (r) { return r.ok ? r.json() : null; }); }).catch(function () { return null; });
     else dataP = fetch(sumUrl).then(function (r) { return r.ok ? r.json() : null; }).catch(function () { return null; });
     return dataP;
   }
@@ -100,6 +100,24 @@
       document.querySelectorAll('[data-db]').forEach(function (e) { var x = v[e.getAttribute('data-db')]; if (x) e.textContent = x.toLocaleString('en'); });
     });
   }
+  // shipping log ticker strings for the translated pages (regexes match the agent's fixed English templates)
+  var NP = /^\+(\d+) new projects? found and checked by the daily research agent \((.+)\)$/, CH = /^(\d+) changes? detected on developer pages by the research agent$/;
+  var SHIPL = {
+    es: { T: { data: 'DATOS', feature: 'NOVEDAD', auto: 'AGENTE', building: 'EN CURSO' }, h: ['EN VIVO', 'proyectos', 'países', 'afirmaciones comprobadas', 'contradichas'],
+      r: [[NP, function (m, n) { return '+' + n(+m[1]) + ' proyectos nuevos encontrados y revisados por el agente de investigación diario (' + m[2] + ')'; }], [CH, function (m, n) { return n(+m[1]) + ' cambios detectados en páginas de promotores por el agente de investigación'; }]] },
+    de: { T: { data: 'DATEN', feature: 'NEU', auto: 'AGENT', building: 'IN ARBEIT' }, h: ['LIVE', 'Projekte', 'Länder', 'Angaben geprüft', 'widerlegt'],
+      r: [[NP, function (m, n) { return '+' + n(+m[1]) + ' neue Projekte vom täglichen Recherche-Agenten gefunden und geprüft (' + m[2] + ')'; }], [CH, function (m, n) { return n(+m[1]) + ' Änderungen auf Bauträgerseiten vom Recherche-Agenten erkannt'; }]] },
+    fr: { T: { data: 'DONNÉES', feature: 'NOUVEAU', auto: 'AGENT', building: 'EN COURS' }, h: ['EN DIRECT', 'projets', 'pays', 'affirmations vérifiées', 'contredites'],
+      r: [[NP, function (m, n) { return '+' + n(+m[1]) + ' nouveaux projets trouvés et vérifiés par l’agent de recherche quotidien (' + m[2] + ')'; }], [CH, function (m, n) { return n(+m[1]) + ' changements détectés sur des pages de promoteurs par l’agent de recherche'; }]] },
+    nl: { T: { data: 'DATA', feature: 'NIEUW', auto: 'AGENT', building: 'IN UITVOERING' }, h: ['LIVE', 'projecten', 'landen', 'claims getoetst', 'weerlegd'],
+      r: [[NP, function (m, n) { return '+' + n(+m[1]) + ' nieuwe projecten gevonden en gecontroleerd door de dagelijkse onderzoeksagent (' + m[2] + ')'; }], [CH, function (m, n) { return n(+m[1]) + ' wijzigingen op ontwikkelaarspagina’s gedetecteerd door de onderzoeksagent'; }]] },
+    ru: { T: { data: 'ДАННЫЕ', feature: 'НОВОЕ', auto: 'АГЕНТ', building: 'В РАБОТЕ' }, h: ['LIVE', 'проектов', 'стран', 'заявлений проверено', 'опровергнуто'],
+      r: [[NP, function (m, n) { return 'Ежедневный исследовательский агент нашёл и проверил новые проекты: +' + n(+m[1]) + ' (' + m[2] + ')'; }], [CH, function (m, n) { return 'Исследовательский агент обнаружил изменения на страницах застройщиков: ' + n(+m[1]); }]] },
+    zh: { T: { data: '数据', feature: '新功能', auto: '智能代理', building: '开发中' }, h: ['实时', '个项目', '个国家', '项说法已核查', '项被反驳'],
+      r: [[NP, function (m, n) { return '每日研究代理新发现并核查了 ' + n(+m[1]) + ' 个项目（' + m[2] + '）'; }], [CH, function (m, n) { return '研究代理在开发商页面上发现 ' + n(+m[1]) + ' 处变化'; }]] },
+    ar: { T: { data: 'بيانات', feature: 'جديد', auto: 'الوكيل', building: 'قيد التطوير' }, h: ['مباشر', 'مشروعًا', 'دولة', 'ادعاءً تم فحصه', 'تم دحضه'],
+      r: [[NP, function (m, n) { return 'مشاريع جديدة وجدها وفحصها وكيل البحث اليومي: +' + n(+m[1]) + ' (' + m[2] + ')'; }], [CH, function (m, n) { return 'تغييرات رصدها وكيل البحث في صفحات المطوّرين: ' + n(+m[1]); }]] }
+  };
   // shipping log ticker: live database numbers plus the dated log of what shipped
   var shipT = document.getElementById('shipT');
   if (shipT) {
@@ -109,11 +127,18 @@
       if (!d || !d.ships || !d.ships.length) return;
       var esc = function (t) { var x = document.createElement('i'); x.textContent = t; return x.innerHTML; };
       var M = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-      var day = function (iso) { var a = iso.split('-'); return M[+a[1] - 1] + ' ' + (+a[2]); };
-      var T = { data: 'DATA', feature: 'SHIPPED', auto: 'AGENT', building: 'BUILDING' };
-      var db = d.db || {}, cl = db.claims || {}, n = function (x) { return (x || 0).toLocaleString('en'); };
-      var h = '<span class="si"><em class="k-live">LIVE</em><s>' + n(d.projects) + '</s> projects &middot; <s>' + n(d.countries) + '</s> countries &middot; <s>' + n(db.claims_total) + '</s> claims tested &middot; <s>' + n(cl.contradicted) + '</s> contradicted</span>';
-      d.ships.slice(0, 16).forEach(function (x) { var inner = '<b>' + day(x.d) + '</b><em class="k-' + (T[x.k] ? x.k : 'feature') + '">' + (T[x.k] || 'SHIPPED') + '</em>' + esc(x.t); h += x.u && /^\/[^\/]/.test(x.u) ? '<a class="si" href="' + esc(x.u) + '">' + inner + '</a>' : '<span class="si">' + inner + '</span>'; });
+      // translated pages: labels, dates and numbers in the page language; agent entries follow fixed templates and are translated,
+      // free-text entries exist only in English and are left out there (the full log stays one click away)
+      var SL = (document.documentElement.lang || 'en').slice(0, 2).toLowerCase(), SX = SHIPL[SL], LOC = { es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' }[SL];
+      var day = function (iso) { var a = iso.split('-'); if (SX) { try { return new Date(Date.UTC(+a[0], +a[1] - 1, +a[2])).toLocaleDateString(LOC, { day: 'numeric', month: 'short', timeZone: 'UTC', numberingSystem: 'latn' }); } catch (e) {} } return M[+a[1] - 1] + ' ' + (+a[2]); };
+      var T = SX ? SX.T : { data: 'DATA', feature: 'SHIPPED', auto: 'AGENT', building: 'BUILDING' };
+      var db = d.db || {}, cl = db.claims || {}, n = function (x) { return (x || 0).toLocaleString(SX && SL !== 'ar' ? LOC : 'en'); };
+      var L5 = SX ? SX.h : ['LIVE', 'projects', 'countries', 'claims tested', 'contradicted'];
+      var h = '<span class="si"><em class="k-live">' + L5[0] + '</em><s>' + n(d.projects) + '</s> ' + L5[1] + ' &middot; <s>' + n(d.countries) + '</s> ' + L5[2] + ' &middot; <s>' + n(db.claims_total) + '</s> ' + L5[3] + ' &middot; <s>' + n(cl.contradicted) + '</s> ' + L5[4] + '</span>';
+      var PLm = window.KBL && KBL.pl, P2 = function (x) { return PLm ? x.split(', ').map(function (y) { return PLm[y] || y; }).join(SL === 'zh' ? '、' : SL === 'ar' ? '، ' : ', ') : x; };
+      var tr = function (t) { if (!SX) return t; for (var i = 0; i < SX.r.length; i++) { var m = t.match(SX.r[i][0]); if (m) { if (m[2]) m[2] = P2(m[2]); return SX.r[i][1](m, n); } } return null; };
+      d.ships.slice(0, 16).forEach(function (x) { var tt = tr(x.t); if (tt == null) return; var u = x.u && SX && /^\/database\/?$/.test(x.u) ? '/' + SL + '/database/' : x.u; var inner = '<b>' + day(x.d) + '</b><em class="k-' + (T[x.k] ? x.k : 'feature') + '">' + (T[x.k] || T.feature) + '</em>' + esc(tt); h += u && /^\/[^\/]/.test(u) ? '<a class="si" href="' + esc(u) + '">' + inner + '</a>' : '<span class="si">' + inner + '</span>'; });
+      if (SX) { var sv = shipT.closest('.ship-v') || shipT; if (sv.getAttribute('lang') === 'en') sv.setAttribute('lang', SL); }
       shipT.innerHTML = '<div class="ship-g">' + h + '</div><div class="ship-g" aria-hidden="true">' + h.replace(/<a /g, '<a tabindex="-1" ') + '</div>';
       shipDur();
     });
@@ -524,8 +549,9 @@
   var nin = document.querySelector('.nav .nav-in'), btn = null;
   if (nin) {
     btn = document.createElement('button'); btn.type = 'button'; btn.className = 'kx-sb'; btn.setAttribute('data-kx-search', '');
-    btn.setAttribute('aria-haspopup', 'dialog'); btn.title = 'Search (' + (mac ? '⌘K' : 'Ctrl+K') + ')'; btn.setAttribute('aria-expanded', 'false'); btn.setAttribute('aria-label', 'Search projects, markets and pages (' + (mac ? 'Command' : 'Control') + ' K)');
-    btn.innerHTML = '<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="m13 13 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="kx-t">Search</span><kbd aria-hidden="true">' + (mac ? '⌘K' : 'Ctrl K') + '</kbd>';
+    var SRL = { es: ['Buscar', 'Buscar proyectos, mercados y páginas'], de: ['Suchen', 'Projekte, Märkte und Seiten durchsuchen'], fr: ['Rechercher', 'Rechercher des projets, marchés et pages'], nl: ['Zoeken', 'Zoek projecten, markten en pagina’s'], ru: ['Поиск', 'Поиск проектов, рынков и страниц'], zh: ['搜索', '搜索项目、市场和页面'], ar: ['بحث', 'ابحث في المشاريع والأسواق والصفحات'], id: ['Cari', 'Cari proyek, pasar, dan halaman'] }[(document.documentElement.lang || 'en').slice(0, 2).toLowerCase()] || ['Search', 'Search projects, markets and pages'];
+    btn.setAttribute('aria-haspopup', 'dialog'); btn.title = SRL[0] + ' (' + (mac ? '⌘K' : 'Ctrl+K') + ')'; btn.setAttribute('aria-expanded', 'false'); btn.setAttribute('aria-label', SRL[1] + ' (' + (mac ? 'Command' : 'Control') + ' K)');
+    btn.innerHTML = '<svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="m13 13 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span class="kx-t">' + SRL[0] + '</span><kbd aria-hidden="true">' + (mac ? '⌘K' : 'Ctrl K') + '</kbd>';
     var nr = nin.querySelector('.nav-right'); if (nr) nr.insertBefore(btn, nr.firstChild); else nin.appendChild(btn);
   }
   function openP(q) { window.kbLoad('palette').then(function () { window.KBPalette.open(q); }).catch(function () {}); }

@@ -3,8 +3,8 @@
   var $ = function (i) { return document.getElementById(i); };
   function esc(t) { return String(t == null ? '' : t).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function load(u) { return new Promise(function (ok, no) { var s = document.createElement('script'); s.src = u; s.onload = ok; s.onerror = no; document.head.appendChild(s); }); }
-  function pc() { return window.KBPageCheck ? Promise.resolve(window.KBPageCheck) : load('/k/pagecheck.js?v=ed48ea5b6f').then(function () { return window.KBPageCheck; }); }
-  function vb() { return window.KBVerify ? Promise.resolve(window.KBVerify) : load('/k/verify-badge.js?v=d6fef3de86').then(function () { return window.KBVerify; }); }
+  function pc() { return window.KBPageCheck ? Promise.resolve(window.KBPageCheck) : load('/k/pagecheck.js?v=30765fea20').then(function () { return window.KBPageCheck; }); }
+  function vb() { return window.KBVerify ? Promise.resolve(window.KBVerify) : load('/k/verify-badge.js?v=6b61413c9f').then(function () { return window.KBVerify; }); }
   var f = $('pg-f'), u = $('pg-u'), o = $('pg-o');
   function go() {
     var v = (u.value || '/').trim(), x;

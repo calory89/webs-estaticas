@@ -62,15 +62,51 @@
     ['Privacy policy', '/legal/privacy', 'gdpr privacy', 'Legal'],
     ['Terms', '/legal/terms', 'terms conditions', 'Legal']
   ];
+
+  // translated pages: the palette speaks the page language and lists the pages that exist in it
+  var LG = (document.documentElement.lang || 'en').slice(0, 2).toLowerCase(), PLm = (window.KBL && KBL.pl) || {}, pl = function (x) { return PLm[x] || x; };
+  var TL = {
+    es: { pg: ['Comprueba la web de un proyecto', 'Base de datos de proyectos sobre plano', 'Casos en seguimiento', 'Precios', 'Cómo funciona el Trust Score', 'Lista antes de firmar', 'Sobre Kolaboro', 'Inicio'], ty: { Tool: 'Herramienta', Page: 'Página' },
+      ph: 'Busca proyectos, mercados, páginas…', al: 'Buscar proyectos, mercados y páginas', dl: 'Buscar en Kolaboro', cl: 'Cerrar búsqueda', rs: 'Resultados', mk: 'Mercado', pj: ['proyecto', 'proyectos'], ck: 'de 6 comprobaciones públicas', pr: ['problema público', 'problemas públicos'], fl: ['alerta', 'alertas'],
+      st: { 'under construction': 'en construcción', 'off-plan': 'sobre plano', completed: 'terminado' }, none: function (q) { return 'Nada coincide con «' + q + '». Prueba un mercado (Bali, Dubái), un id de proyecto (BALI-014) o una página (precios).'; }, ld: 'Cargando el índice de proyectos…',
+      dr: ['Revisión de escritorio de ', 'Herramienta · lee la página y lista lo que promete y lo que omite'], ft: ['proyectos', 'mercados', 'páginas', 'páginas (cargando proyectos)', 'buscado en', 'ms en tu navegador', 'guardado para usar sin conexión', 'firma del índice verificada', 'firma del índice'], kb: ['mover', 'abrir', 'cerrar'] },
+    de: { pg: ['Projekt-Website prüfen', 'Datenbank der Off-Plan-Projekte', 'Laufende Fälle', 'Preise', 'So funktioniert der Trust Score', 'Checkliste vor der Unterschrift', 'Über Kolaboro', 'Startseite'], ty: { Tool: 'Werkzeug', Page: 'Seite' },
+      ph: 'Projekte, Märkte, Seiten suchen…', al: 'Projekte, Märkte und Seiten durchsuchen', dl: 'Kolaboro durchsuchen', cl: 'Suche schließen', rs: 'Ergebnisse', mk: 'Markt', pj: ['Projekt', 'Projekte'], ck: 'von 6 Prüfungen öffentlich', pr: ['öffentliches Problem', 'öffentliche Probleme'], fl: ['Warnung', 'Warnungen'],
+      st: { 'under construction': 'im Bau', 'off-plan': 'Off-Plan', completed: 'fertiggestellt' }, none: function (q) { return 'Keine Treffer für „' + q + '“. Versuchen Sie einen Markt (Bali, Dubai), eine Projekt-ID (BALI-014) oder eine Seite (Preise).'; }, ld: 'Projektindex wird geladen…',
+      dr: ['Desk-Review von ', 'Werkzeug · liest die Seite und listet, was sie verspricht und was fehlt'], ft: ['Projekte', 'Märkte', 'Seiten', 'Seiten (Projekte werden geladen)', 'durchsucht in', 'ms in Ihrem Browser', 'offline gespeichert', 'Index-Signatur geprüft', 'Index-Signatur'], kb: ['bewegen', 'öffnen', 'schließen'] },
+    fr: { pg: ['Vérifier le site d’un projet', 'Base de données des projets sur plan', 'Dossiers suivis', 'Tarifs', 'Comment fonctionne le Trust Score', 'Liste avant de signer', 'À propos de Kolaboro', 'Accueil'], ty: { Tool: 'Outil', Page: 'Page' },
+      ph: 'Rechercher projets, marchés, pages…', al: 'Rechercher des projets, marchés et pages', dl: 'Rechercher sur Kolaboro', cl: 'Fermer la recherche', rs: 'Résultats', mk: 'Marché', pj: ['projet', 'projets'], ck: 'sur 6 vérifications publiques', pr: ['problème public', 'problèmes publics'], fl: ['alerte', 'alertes'],
+      st: { 'under construction': 'en construction', 'off-plan': 'sur plan', completed: 'achevé' }, none: function (q) { return 'Aucun résultat pour « ' + q + ' ». Essayez un marché (Bali, Dubaï), un identifiant de projet (BALI-014) ou une page (tarifs).'; }, ld: 'Chargement de l’index des projets…',
+      dr: ['Analyse documentaire de ', 'Outil · lit la page et liste ce qu’elle promet et ce qu’elle omet'], ft: ['projets', 'marchés', 'pages', 'pages (projets en cours de chargement)', 'recherche en', 'ms dans votre navigateur', 'enregistré pour un usage hors ligne', 'signature de l’index vérifiée', 'signature de l’index'], kb: ['naviguer', 'ouvrir', 'fermer'] },
+    nl: { pg: ['Website van een project controleren', 'Database van off-plan projecten', 'Lopende dossiers', 'Prijzen', 'Zo werkt de Trust Score', 'Checklist vóór het tekenen', 'Over Kolaboro', 'Startpagina'], ty: { Tool: 'Tool', Page: 'Pagina' },
+      ph: 'Zoek projecten, markten, pagina’s…', al: 'Zoek projecten, markten en pagina’s', dl: 'Zoeken op Kolaboro', cl: 'Zoeken sluiten', rs: 'Resultaten', mk: 'Markt', pj: ['project', 'projecten'], ck: 'van 6 controles openbaar', pr: ['openbaar probleem', 'openbare problemen'], fl: ['waarschuwing', 'waarschuwingen'],
+      st: { 'under construction': 'in aanbouw', 'off-plan': 'off-plan', completed: 'opgeleverd' }, none: function (q) { return 'Niets gevonden voor ‘' + q + '’. Probeer een markt (Bali, Dubai), een project-id (BALI-014) of een pagina (prijzen).'; }, ld: 'Projectindex laden…',
+      dr: ['Desk review van ', 'Tool · leest de pagina en somt op wat ze belooft en weglaat'], ft: ['projecten', 'markten', 'pagina’s', 'pagina’s (projecten laden)', 'gezocht in', 'ms in uw browser', 'offline opgeslagen', 'indexhandtekening geverifieerd', 'indexhandtekening'], kb: ['bewegen', 'openen', 'sluiten'] },
+    ru: { pg: ['Проверить сайт проекта', 'База строящихся проектов', 'Отслеживаемые проекты', 'Цены', 'Как работает Trust Score', 'Чек-лист перед подписанием', 'О Kolaboro', 'Главная'], ty: { Tool: 'Инструмент', Page: 'Страница' },
+      ph: 'Поиск проектов, рынков, страниц…', al: 'Поиск проектов, рынков и страниц', dl: 'Поиск по Kolaboro', cl: 'Закрыть поиск', rs: 'Результаты', mk: 'Рынок', pj: ['проект', 'проектов'], ck: 'из 6 проверок открыто', pr: ['публичная проблема', 'публичных проблем'], fl: ['сигнал', 'сигналов'],
+      st: { 'under construction': 'строится', 'off-plan': 'на этапе котлована', completed: 'сдан' }, none: function (q) { return 'Ничего не найдено по запросу «' + q + '». Попробуйте рынок (Bali, Dubai), ID проекта (BALI-014) или страницу (цены).'; }, ld: 'Загружаем индекс проектов…',
+      dr: ['Проверка сайта ', 'Инструмент · читает страницу и показывает, что она обещает и о чём молчит'], ft: ['проектов', 'рынков', 'страниц', 'страниц (проекты загружаются)', 'поиск за', 'мс в вашем браузере', 'сохранено для работы офлайн', 'подпись индекса проверена', 'подпись индекса'], kb: ['перейти', 'открыть', 'закрыть'] },
+    zh: { pg: ['核查项目网站', '期房项目数据库', '跟踪中的案例', '价格', 'Trust Score 如何计算', '签约前清单', '关于 Kolaboro', '首页'], ty: { Tool: '工具', Page: '页面' },
+      ph: '搜索项目、市场、页面…', al: '搜索项目、市场和页面', dl: '搜索 Kolaboro', cl: '关闭搜索', rs: '结果', mk: '市场', pj: ['个项目', '个项目'], ck: '/6 项核查公开', pr: ['个公开问题', '个公开问题'], fl: ['个警示', '个警示'],
+      st: { 'under construction': '在建', 'off-plan': '期房', completed: '已竣工' }, none: function (q) { return '没有与“' + q + '”匹配的结果。试试市场（Bali、Dubai）、项目编号（BALI-014）或页面（价格）。'; }, ld: '正在加载项目索引…',
+      dr: ['对以下网站做案头审查：', '工具 · 读取页面，列出它承诺了什么、遗漏了什么'], ft: ['个项目', '个市场', '个页面', '个页面（项目加载中）', '搜索用时', '毫秒，在您的浏览器中完成', '已保存供离线使用', '索引签名已验证', '索引签名'], kb: ['移动', '打开', '关闭'] },
+    ar: { pg: ['افحص موقع مشروع', 'قاعدة بيانات المشاريع على الخارطة', 'الحالات قيد المتابعة', 'الأسعار', 'كيف يعمل Trust Score', 'قائمة ما قبل التوقيع', 'عن Kolaboro', 'الرئيسية'], ty: { Tool: 'أداة', Page: 'صفحة' },
+      ph: 'ابحث في المشاريع والأسواق والصفحات…', al: 'ابحث في المشاريع والأسواق والصفحات', dl: 'البحث في Kolaboro', cl: 'إغلاق البحث', rs: 'النتائج', mk: 'سوق', pj: ['مشروع', 'مشاريع'], ck: 'من 6 فحوص منشورة', pr: ['مشكلة علنية', 'مشكلات علنية'], fl: ['تنبيه', 'تنبيهات'],
+      st: { 'under construction': 'قيد الإنشاء', 'off-plan': 'على الخارطة', completed: 'مكتمل' }, none: function (q) { return 'لا توجد نتائج لـ «' + q + '». جرّب سوقًا (Bali، Dubai) أو رقم مشروع (BALI-014) أو صفحة (الأسعار).'; }, ld: 'جارٍ تحميل فهرس المشاريع…',
+      dr: ['مراجعة مكتبية لـ ', 'أداة · تقرأ الصفحة وتسرد ما تعد به وما تغفله'], ft: ['مشروع', 'سوق', 'صفحات', 'صفحات (المشاريع قيد التحميل)', 'البحث استغرق', 'مللي ثانية في متصفحك', 'محفوظ للاستخدام دون اتصال', 'تم التحقق من توقيع الفهرس', 'توقيع الفهرس'], kb: ['تنقّل', 'فتح', 'إغلاق'] }
+  }[LG] || null;
+  if (TL) PAGES = [['/check', 'desk review ai analyze url link scan free', 'Tool', 0], ['/database', 'all projects table filter download data', 'Page', 1], ['/cases', 'projects tracked list', 'Page', 2], ['/pricing', 'price cost fee 490 99 monitoring check', 'Page', 3],
+    ['/how-we-score', 'scoring method score six checks methodology', 'Page', 4], ['/checklist', 'checklist before sign contract', 'Page', 5], ['/about', 'about team founders', 'Page', 6], ['', 'home start', 'Page', 7]].map(function (p) { return [TL.pg[p[3]], '/' + LG + p[0] + '/', p[1] + ' ' + norm(TL.pg[p[3]]), TL.ty[p[2]]]; });
+  var pn = function (n, f) { return n === 1 ? f[0] : f[1]; };
   function norm(s) { return String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/\s+/g, ' ').trim(); }
   var items = [], ready = false, meta = { n: 0, markets: 0, updated: '', offline: false, verified: null };
   PAGES.forEach(function (p) { items.push({ t: 'page', title: p[0], sub: p[3] + ' · kolaboro.com' + p[1], href: p[1], h: norm(p[0] + ' ' + p[2] + ' ' + p[1].replace(/[\/-]/g, ' ')), w: 3 }); });
   var pageCount = items.length;
   function build(ix) {
     items.length = pageCount;
-    (ix.m || []).forEach(function (m) { items.push({ t: 'market', title: m[0], sub: 'Market · ' + m[2] + ' project' + (m[2] === 1 ? '' : 's') + (m[3] && m[3] !== m[0] ? ' · ' + m[3] : ''), href: '/m/' + m[1] + '/', h: norm(m[0] + ' ' + m[3] + ' market'), w: 2 }); });
+    (ix.m || []).forEach(function (m) { items.push({ t: 'market', title: TL ? pl(m[0]) : m[0], sub: (TL ? TL.mk + ' · ' + m[2] + ' ' + pn(m[2], TL.pj) + (m[3] && m[3] !== m[0] ? ' · ' + pl(m[3]) : '') : 'Market · ' + m[2] + ' project' + (m[2] === 1 ? '' : 's') + (m[3] && m[3] !== m[0] ? ' · ' + m[3] : '')), href: '/m/' + m[1] + '/', h: norm(m[0] + ' ' + m[3] + ' market' + (TL ? ' ' + pl(m[0]) + ' ' + pl(m[3]) : '')), w: 2 }); });
     (ix.p || []).forEach(function (p) {
-      var id = p[0], idn = norm(id), sub = [p[1] + (p[2] && p[2] !== p[1] ? ', ' + p[2] : ''), p[3], p[4], p[5] != null ? p[5] + ' of 6 checks public' : '', p[7] ? p[7] + ' public problem' + (p[7] > 1 ? 's' : '') : ''].filter(Boolean).join(' · ');
+      var id = p[0], idn = norm(id), sub = TL ? [pl(p[1]) + (p[2] && p[2] !== p[1] ? (LG === 'ar' ? '، ' : LG === 'zh' ? '，' : ', ') + pl(p[2]) : ''), pl(p[3]), TL.st[p[4]] || p[4], p[5] != null ? p[5] + (LG === 'zh' ? '' : ' ') + TL.ck : '', p[7] ? p[7] + ' ' + pn(p[7], TL.pr) : ''].filter(Boolean).join(' · ') : [p[1] + (p[2] && p[2] !== p[1] ? ', ' + p[2] : ''), p[3], p[4], p[5] != null ? p[5] + ' of 6 checks public' : '', p[7] ? p[7] + ' public problem' + (p[7] > 1 ? 's' : '') : ''].filter(Boolean).join(' · ');
       items.push({ t: 'project', title: id, sub: sub, href: '/p/' + encodeURIComponent(id) + '/', flags: p[7], h: norm(id + ' ' + idn.replace(/-/g, '') + ' ' + idn.replace(/-0*/g, ' ') + ' ' + p[1] + ' ' + p[2] + ' ' + p[3] + ' ' + p[4] + ' ' + p[8] + ' ' + p[9] + (p[7] ? ' flags problems' : '')), w: 1 });
     });
     meta.n = (ix.p || []).length; meta.markets = (ix.m || []).length; meta.updated = ix.updated || ''; ready = true;
@@ -113,7 +149,7 @@
     if (!qs.length) out = items.filter(function (x) { return x.t === 'page'; }).slice(0, 10).map(function (x) { return { it: x, s: 0 }; });
     else { for (var i = 0; i < items.length; i++) { var s = score(items[i], qs); if (s > 0) out.push({ it: items[i], s: s }); } out.sort(function (a, b) { return b.s - a.s; }); out = out.slice(0, 40); }
     var url = /^(https?:\/\/)?[\w-]+(\.[\w-]+)+(\/\S*)?$/i.test(q.trim()) && !/^[a-z]{2,6}-\d+$/i.test(q.trim());
-    if (url) out.unshift({ it: { t: 'action', title: 'Run a desk review of ' + q.trim(), sub: 'Tool · reads the page and lists what it promises and leaves out', href: '/check?url=' + encodeURIComponent(q.trim()) + '#analyze' }, s: 1e9 });
+    if (url) out.unshift({ it: { t: 'action', title: (TL ? TL.dr[0] : 'Run a desk review of ') + q.trim(), sub: TL ? TL.dr[1] : 'Tool · reads the page and lists what it promises and leaves out', href: (TL ? '/' + LG : '') + '/check?url=' + encodeURIComponent(q.trim()) + '#analyze' }, s: 1e9 });
     return { list: out, ms: performance.now() - t0, total: items.length };
   }
   var root, input, list, footEl, last = { list: [] }, active = 0, prevFocus = null;
@@ -129,6 +165,7 @@
     '.kxp-l .fl{flex:none;font:700 .7rem Archivo,system-ui,sans-serif;color:#8F2D04;background:#FDE6DC;border-radius:99px;padding:2px 8px}' +
     '.kxp-e{padding:22px 16px;color:#59626B;font-size:.92rem}' +
     '.kxp-f{display:flex;flex-wrap:wrap;gap:4px 14px;justify-content:space-between;padding:9px 14px;border-top:1px solid rgba(23,33,43,.12);font-size:.74rem;color:#59626B;background:#FAFAF8}.kxp-f kbd{font:600 .7rem ui-monospace,Menlo,monospace;border:1px solid rgba(23,33,43,.2);border-bottom-width:2px;border-radius:4px;padding:0 4px;background:#fff}' +
+    '[dir=rtl] .kxp-l li[aria-selected=true]{box-shadow:inset -3px 0 0 #FF5B14}' +
     '@media (max-width:600px){.kxp{padding:0;align-items:stretch}.kxp-b{max-height:none;height:100%;border-radius:0}.kxp-f .kb{display:none}}';
   function esc(t) { return String(t).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function hl(text, q) {
@@ -139,14 +176,17 @@
   var IC = { page: 'PG', project: 'ID', market: 'MK', action: 'GO' };
   function render() {
     var q = input.value, r = search(q); last = r; active = 0;
-    if (!r.list.length) { list.innerHTML = '<li class="kxp-e" role="presentation">' + (ready || !q ? 'Nothing matches "' + esc(q) + '". Try a market (Bali, Dubai), a project id (BALI-014) or a page (pricing).' : 'Loading the project index…') + '</li>'; input.setAttribute('aria-activedescendant', ''); }
-    else list.innerHTML = r.list.map(function (x, i) { var it = x.it; return '<li role="option" id="kxp-o' + i + '" aria-selected="' + (i === 0) + '" data-i="' + i + '"><span class="ic ' + it.t + '" aria-hidden="true">' + IC[it.t] + '</span><span class="tx"><b>' + hl(it.title, q) + '</b><small>' + esc(it.sub) + '</small></span>' + (it.flags ? '<span class="fl">' + it.flags + ' flag' + (it.flags > 1 ? 's' : '') + '</span>' : '') + '</li>'; }).join('');
+    if (!r.list.length) { list.innerHTML = '<li class="kxp-e" role="presentation">' + (ready || !q ? (TL ? esc(TL.none(q)) : 'Nothing matches "' + esc(q) + '". Try a market (Bali, Dubai), a project id (BALI-014) or a page (pricing).') : (TL ? TL.ld : 'Loading the project index…')) + '</li>'; input.setAttribute('aria-activedescendant', ''); }
+    else list.innerHTML = r.list.map(function (x, i) { var it = x.it; return '<li role="option" id="kxp-o' + i + '" aria-selected="' + (i === 0) + '" data-i="' + i + '"><span class="ic ' + it.t + '" aria-hidden="true">' + IC[it.t] + '</span><span class="tx"><b>' + hl(it.title, q) + '</b><small>' + esc(it.sub) + '</small></span>' + (it.flags ? '<span class="fl">' + it.flags + ' ' + (TL ? pn(it.flags, TL.fl) : 'flag' + (it.flags > 1 ? 's' : '')) + '</span>' : '') + '</li>'; }).join('');
     if (r.list.length) input.setAttribute('aria-activedescendant', 'kxp-o0');
     input.setAttribute('aria-expanded', r.list.length ? 'true' : 'false');
     foot();
   }
   function foot() {
     if (!footEl) return;
+    if (TL) { var F = TL.ft, nloc = LG === 'ar' || LG === 'zh' ? 'en' : LG, vv = meta.verified === 'ok' ? ' · ' + F[7] : meta.verified ? ' · ' + F[8] + ': ' + meta.verified : '';
+      var cm = LG === 'ar' ? '، ' : LG === 'zh' ? '，' : ', ';
+      footEl.innerHTML = '<span>' + (ready ? meta.n.toLocaleString(nloc) + ' ' + F[0] + cm + meta.markets + ' ' + F[1] + cm + PAGES.length + ' ' + F[2] : PAGES.length + ' ' + F[3]) + ' · ' + F[4] + ' ' + (last.ms != null ? last.ms.toLocaleString(nloc, { minimumFractionDigits: 1, maximumFractionDigits: 1 }) : '0') + ' ' + F[5] + (meta.offline ? ' · ' + F[6] : '') + vv + '</span><span class="kb"><kbd>↑</kbd> <kbd>↓</kbd> ' + TL.kb[0] + ' · <kbd>Enter</kbd> ' + TL.kb[1] + ' · <kbd>Esc</kbd> ' + TL.kb[2] + '</span>'; return; }
     var v = meta.verified === 'ok' ? ' · index signature verified' : meta.verified && meta.verified !== 'ok' ? ' · index signature: ' + meta.verified : '';
     footEl.innerHTML = '<span>' + (ready ? meta.n.toLocaleString('en') + ' projects, ' + meta.markets + ' markets, ' + PAGES.length + ' pages' : PAGES.length + ' pages (projects loading)') + ' · searched in ' + (last.ms != null ? last.ms.toFixed(1) : '0') + ' ms in your browser' + (meta.offline ? ' · saved for offline use' : '') + v + '</span><span class="kb"><kbd>↑</kbd> <kbd>↓</kbd> move · <kbd>Enter</kbd> open · <kbd>Esc</kbd> close</span>';
   }
@@ -164,10 +204,10 @@
   function mount() {
     if (root) return;
     var s = document.createElement('style'); s.textContent = CSS; document.head.appendChild(s);
-    root = document.createElement('div'); root.className = 'kxp'; root.setAttribute('role', 'dialog'); root.setAttribute('aria-modal', 'true'); root.setAttribute('aria-label', 'Search Kolaboro');
+    root = document.createElement('div'); root.className = 'kxp'; root.setAttribute('role', 'dialog'); root.setAttribute('aria-modal', 'true'); root.setAttribute('aria-label', TL ? TL.dl : 'Search Kolaboro');
     root.innerHTML = '<div class="kxp-b"><div class="kxp-h"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="m13 13 5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>' +
-      '<input type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="kxp-l" aria-label="Search projects, markets and pages" placeholder="Search projects, markets, pages…" autocomplete="off" spellcheck="false" enterkeyhint="go">' +
-      '<button type="button" class="kxp-x" aria-label="Close search">Esc</button></div><ul class="kxp-l" id="kxp-l" role="listbox" aria-label="Results"></ul><div class="kxp-f" aria-live="polite"></div></div>';
+      '<input type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="kxp-l" aria-label="' + (TL ? TL.al : 'Search projects, markets and pages') + '" placeholder="' + (TL ? TL.ph : 'Search projects, markets, pages…') + '" autocomplete="off" spellcheck="false" enterkeyhint="go">' +
+      '<button type="button" class="kxp-x" aria-label="' + (TL ? TL.cl : 'Close search') + '">Esc</button></div><ul class="kxp-l" id="kxp-l" role="listbox" aria-label="' + (TL ? TL.rs : 'Results') + '"></ul><div class="kxp-f" aria-live="polite"></div></div>';
     document.body.appendChild(root);
     input = root.querySelector('input'); list = root.querySelector('.kxp-l'); footEl = root.querySelector('.kxp-f');
     input.addEventListener('input', render);

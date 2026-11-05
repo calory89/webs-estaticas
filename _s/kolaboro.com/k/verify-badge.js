@@ -70,11 +70,28 @@
     '.kvb-r .kvb-p{left:auto;right:0}';
   function css() { if (document.getElementById('kvb-css')) return; var s = document.createElement('style'); s.id = 'kvb-css'; s.textContent = CSS; document.head.appendChild(s); }
   var LBL = { ok: 'Verified in your browser', bad: 'Signature check failed', unsigned: 'Not signed', unsupported: 'Browser cannot check signature', error: 'Signature not checked', wait: 'Checking signature' };
+  // Spanish pages: the badge and its explanation in Spanish (the reasons come from fixed English templates)
+  var ES = /^es/.test(document.documentElement.lang || ''), S = ES ? { dl: 'Descargando la clave pública y comprobando la firma Ed25519 de ', inb: ' en este navegador.', body: 'SHA-256 del cuerpo:', chk: 'Comprobado en ', on: ' ms, sobre ', ns: ', sin enviarnos nada.', how: 'Cómo comprobarlo tú mismo', data: 'estos datos' } : null;
+  if (ES) LBL = { ok: 'Verificado en tu navegador', bad: 'La firma no es válida', unsigned: 'Sin firma', unsupported: 'El navegador no puede comprobar la firma', error: 'Firma no comprobada', wait: 'Comprobando la firma' };
+  function whyEs(w) { var m; w = String(w || '');
+    if ((m = w.match(/^Ed25519 signature over SHA-256 of the body checked with key (\S+?)( \(pinned copy; key file unreachable\))? from \/\.well-known\/kolaboro-keys\.json\.$/)) || (m = w.match(/^Ed25519 signature over SHA-256 of the body checked with key (\S+?)( \(pinned copy; key file unreachable\))\.$/))) return 'Firma Ed25519 sobre el SHA-256 del cuerpo comprobada con la clave ' + m[1] + (m[2] ? ' (copia fijada; archivo de claves inaccesible).' : ' de /.well-known/kolaboro-keys.json.');
+    if (/^This answer carries no x-kolaboro-signature header\.$/.test(w)) return 'Esta respuesta no lleva la cabecera x-kolaboro-signature.';
+    if (/^WebCrypto is not available/.test(w)) return 'WebCrypto no está disponible en esta página.';
+    if (/^This browser cannot check Ed25519/.test(w)) return 'Este navegador no puede comprobar firmas Ed25519 (necesita Chrome 137+, Safari 17+ o Firefox 129+).';
+    if ((m = w.match(/^Signed with key "(.+)", which is not in the published key list\.$/))) return 'Firmado con la clave «' + m[1] + '», que no está en la lista de claves publicada.';
+    if ((m = w.match(/^Key (\S+) is marked revoked/))) return 'La clave ' + m[1] + ' figura como revocada en la lista de claves publicada.';
+    if ((m = w.match(/^Key (\S+) no longer matches/))) return 'La clave ' + m[1] + ' ya no coincide con los bytes fijados en este script.';
+    if (/^Not modified \(304\)/.test(w)) return 'Sin cambios (304): no hay cuerpo que comprobar.';
+    if ((m = w.match(/^The check could not run(?:: (.+))?\.$/))) return 'La comprobación no pudo ejecutarse' + (m[1] ? ': ' + m[1] : '') + '.';
+    if (/did not match|does not match|not valid/i.test(w)) return 'La firma no coincide con el contenido recibido.';
+    return w; }
   function esc(t) { return String(t == null ? '' : t).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
   function paint(el, r, o) {
-    var st = r ? r.state : 'wait', what = (o && o.what) || 'this data';
+    var st = r ? r.state : 'wait', what = (o && o.what) || (S ? S.data : 'this data');
     el.className = (el.className || '').replace(/\bkvb(-\w+)?\b/g, '').trim() + ' kvb kvb-' + st;
-    var p = st === 'wait' ? 'Downloading the public key and checking the Ed25519 signature of ' + esc(what) + ' in this browser.'
+    var p = S ? (st === 'wait' ? S.dl + esc(what) + S.inb
+      : '<b>' + esc(LBL[st]) + '.</b> ' + esc(whyEs(r.why)) + (r.sha256 ? '<br>' + S.body + ' <code>' + r.sha256.slice(0, 32) + '…</code>' : '') + (r.ms != null ? '<br>' + S.chk + (+r.ms).toLocaleString('es-ES') + S.on + esc(what) + S.ns : '') + '<br><a href="/verify#sig">' + S.how + '</a>')
+      : st === 'wait' ? 'Downloading the public key and checking the Ed25519 signature of ' + esc(what) + ' in this browser.'
       : '<b>' + esc(LBL[st]) + '.</b> ' + esc(r.why) + (r.sha256 ? '<br>Body SHA-256: <code>' + r.sha256.slice(0, 32) + '…</code>' : '') + (r.ms != null ? '<br>Checked in ' + r.ms + ' ms, on ' + esc(what) + ', nothing sent to us.' : '') + '<br><a href="/verify#sig">How to check it yourself</a>';
     el.innerHTML = '<summary aria-label="' + esc(LBL[st] + ': ' + what) + '"><i aria-hidden="true"></i>' + esc((o && o.label && st === 'ok') ? o.label : LBL[st]) + '</summary><div class="kvb-p" role="note">' + p + '</div>';
     el.setAttribute('data-kvb-state', st);

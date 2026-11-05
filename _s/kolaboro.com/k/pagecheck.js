@@ -14,7 +14,7 @@
  */
 (function () {
   if (window.KBPageCheck) return;
-  var te = new TextEncoder(), VB = '/k/verify-badge.js?v=d6fef3de86', MAN = '/api/x/n/manifest';
+  var te = new TextEncoder(), VB = '/k/verify-badge.js?v=6b61413c9f', MAN = '/api/x/n/manifest';
   function esc(t) { return String(t == null ? '' : t).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function hex(buf) { return Array.prototype.map.call(new Uint8Array(buf), function (x) { return ('0' + x.toString(16)).slice(-2); }).join(''); }
   function sha(bytes) { return crypto.subtle.digest('SHA-256', bytes).then(hex); }
