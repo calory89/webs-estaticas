@@ -18,7 +18,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 35
     steps:
       - uses: actions/checkout@v4
         with:
@@ -27,9 +27,9 @@ jobs:
       - name: Read pages and compare
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          KB_LIVE_RUN_USD: '0.25'
-          KB_LIVE_MAX_PAGES: ${{ github.event.inputs.max_pages || '150' }}
-          KB_LIVE_MAX_SECONDS: '480'
+          KB_LIVE_DAY_USD: '5'
+          KB_LIVE_MAX_PAGES: ${{ github.event.inputs.max_pages || '500' }}
+          KB_LIVE_MAX_SECONDS: '1500'
           KB_PUBLIC_CASES: ${{ runner.temp }}/bali-cases.json
         run: |
           curl -fsS --retry 3 https://kolaboro.com/data/bali-cases.json -o "$RUNNER_TEMP/bali-cases.json"

@@ -40,7 +40,10 @@ STAMP = NOW.strftime('%Y-%m-%dT%H:%M:%SZ')
 KEY = os.environ.get('ANTHROPIC_API_KEY', '').strip()
 HAIKU, SONNET = 'claude-haiku-5-5', 'claude-sonnet-5-5'
 PRICE = {HAIKU: (0.10, 0.50), SONNET: (2.0, 10.0)}   # USD per million tokens in / out, list prices
-BUDGET = float(os.environ.get('KB_LIVE_RUN_USD', '0.25'))
+# Daily budget (owner, 5 Nov 2026: "we can spend up to 5 $ a day"): each hourly run may spend what is left of today's
+# KB_LIVE_DAY_USD divided by the runs left today (UTC), so spend is spread over the day and today's total never passes it.
+DAY_USD = float(os.environ.get('KB_LIVE_DAY_USD', '5'))
+BUDGET = float(os.environ.get('KB_LIVE_RUN_USD', '0.25'))   # replaced in main() by the daily rule when KB_LIVE_DAY_USD is set
 MAX_PAGES = int(os.environ.get('KB_LIVE_MAX_PAGES', '150'))
 MAX_SECONDS = float(os.environ.get('KB_LIVE_MAX_SECONDS', '420'))
 GAP = float(os.environ.get('KB_LIVE_HOST_GAP', '4'))
@@ -601,6 +604,13 @@ def main():
     P = [p for p in P if p.get('url') and pub.get(ids[p['slug']]) == p.get('market', 'Bali')]
     spath = os.path.join(DATA, 'live-state.json'); fpath = os.path.join(DATA, 'live-findings.json'); bpath = os.path.join(DATA, 'live-by-project.json')
     state = load(spath, {}); feed = load(fpath, {}); byp = (load(bpath, {}) or {}).get('projects') or {}
+    global BUDGET
+    if os.environ.get('KB_LIVE_DAY_USD'):
+        today = STAMP[:10]
+        spent_today = sum(float(r.get('usd') or 0) for r in (feed.get('runs') or []) if str(r.get('at', ''))[:10] == today)
+        runs_left = max(1, 24 - int(STAMP[11:13]))
+        BUDGET = round(max(0.0, DAY_USD - spent_today) / runs_left, 4)
+        print('daily budget %.2f USD, spent today %.4f, runs left %d, this run %.4f' % (DAY_USD, spent_today, runs_left, BUDGET), flush=True)
     latest = load(os.path.join(DATA, 'latest.json'), {})
 
     def last_read(p):
@@ -698,8 +708,8 @@ def finish(run, new_findings, state, feed, byp, od, spath, fpath, bpath, tracked
         'method': {
             'schedule': 'hourly, GitHub Actions, one run at a time',
             'model': HAIKU, 'prices_usd_per_million_tokens': {HAIKU: list(PRICE[HAIKU]), SONNET: list(PRICE[SONNET])},
-            'budget_usd_per_run': BUDGET,
-            'budget_rule': 'spend is computed from the real token usage of every call at list prices; before each call its worst case is reserved, so a run stops before it can pass the budget',
+            'budget_usd_per_run': BUDGET, 'budget_usd_per_day': DAY_USD if os.environ.get('KB_LIVE_DAY_USD') else None,
+            'budget_rule': 'daily budget of 5 USD: each hourly run may spend what is left of today divided by the runs left today; spend is computed from the real token usage of every call at list prices, and before each call its worst case is reserved, so neither the run nor the day can pass its budget',
             'checked_in_code': ['the quote is found word for word in the fetched page text (case, spacing and typographic quotes ignored, no skipping)',
                                 'the quote contains the value (year, percent, amount or number)',
                                 'a changed value is published only if the old value is no longer stated near the same words on the page',
