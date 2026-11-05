@@ -313,7 +313,7 @@ function pNew(B) {
 function pairs(B) {
   if (MEMO.__pairs && MEMO.__pairs.k === B.d.updated + B.N.projects.size) return MEMO.__pairs.v;
   const groups = new Map();
-  for (const c of B.cases) { if (!B.N.projects.has(c.id) || !c.band || !c.stage) continue; const k = c.market + '|' + c.stage + '|' + c.band; if (!groups.has(k)) groups.set(k, []); groups.get(k).push(c); }
+  for (const c of B.cases) { if (!B.N.projects.has(c.id) || !c.band || !c.stage || !c.done) continue; const k = c.market + '|' + c.stage + '|' + c.band; if (!groups.has(k)) groups.set(k, []); groups.get(k).push(c); }
   const out = [], used = new Map();
   for (const L of groups.values()) { L.sort((a, b) => a.id.localeCompare(b.id)); for (let i = 0; i < L.length; i++) for (let j = i + 1; j < L.length; j++) { const a = L[i], b = L[j]; if ((used.get(a.id) || 0) >= 2 || (used.get(b.id) || 0) >= 2) continue; out.push([a, b]); used.set(a.id, (used.get(a.id) || 0) + 1); used.set(b.id, (used.get(b.id) || 0) + 1); } }
   MEMO.__pairs = { k: B.d.updated + B.N.projects.size, v: out }; return out;
@@ -400,7 +400,9 @@ async function sitemaps(env, B, name) {
   const anon = B.cases.filter(c => !B.N.projects.has(c.id) && /^[A-Za-z0-9-]{3,20}$/.test(c.id)).map(c => ({ loc: SITE + '/p/' + encodeURIComponent(c.id) + '/', lastmod: (c.fp && c.fp.date) || up }));
   const S = { ['pages-en']: pages.filter(p => p.lang === 'en') };
   for (const l of LANGS.slice(1)) S['pages-' + l] = pages.filter(p => p.lang === l);
-  Object.assign(S, { countries: hubs.filter(h => h.t === 'countries'), guides: hubs.filter(h => h.t === 'guides'), rankings: hubs.filter(h => h.t === 'rankings'), compare: hubs.filter(h => h.t === 'compare'), markets: mk, 'projects-anonymous': anon, 'projects-named': namedUrls(B, 'project'), developers: namedUrls(B, 'developer') });
+  Object.assign(S, { countries: hubs.filter(h => h.t === 'countries'), guides: hubs.filter(h => h.t === 'guides'), rankings: hubs.filter(h => h.t === 'rankings'), compare: hubs.filter(h => h.t === 'compare'), markets: mk, 'projects-anonymous': anon });
+  const NP = namedUrls(B, 'index').concat(namedUrls(B, 'project')), ND = namedUrls(B, 'developer'), lg = i => (/^https:\/\/kolaboro\.com\/(es|de|fr|ru|nl|ar|zh)\//.exec(i.loc) || [0, 'en'])[1];
+  for (const l of LANGS) { S['projects-' + l] = NP.filter(i => lg(i) === l); S['developers-' + l] = ND.filter(i => lg(i) === l); }
   if (name === 'index' || name === 'stats') {
     const keys = Object.keys(S).filter(k => S[k].length);
     if (name === 'stats') return Object.fromEntries(Object.keys(S).map(k => [k, S[k].length]));
