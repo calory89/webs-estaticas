@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T22:10:03.174Z",
+ "updated": "2026-11-05T02:44:40.632Z",
  "base": "https://kolaboro.com",
  "journey": [
   "Home page",
@@ -11,11 +11,11 @@
  "runs_kept": 7,
  "runs_passed": 7,
  "median_ms_by_step": {
-  "1": 1941,
-  "2": 1256,
-  "3": 1739,
-  "4": 1632,
-  "5": 768
+  "1": 1648,
+  "2": 850,
+  "3": 1534,
+  "4": 1541,
+  "5": 422
  },
  "latest_shots": [
   "/data/journeys/1.webp",
@@ -26,16 +26,16 @@
  ],
  "runs": [
   {
-   "at": "2026-11-04T22:10:03.174Z",
+   "at": "2026-11-05T02:44:40.632Z",
    "ok": true,
-   "total_ms": 9846,
+   "total_ms": 5287,
    "browser": "Chrome (GitHub Actions runner, Linux)",
    "steps": [
     {
      "n": 1,
      "name": "Home page",
      "ok": true,
-     "ms": 3450,
+     "ms": 1648,
      "url": "/",
      "detail": "Never buy property abroad alone again.",
      "console_errors": 1,
@@ -48,7 +48,7 @@
      "n": 2,
      "name": "Search the database",
      "ok": true,
-     "ms": 1968,
+     "ms": 653,
      "url": "/cases/?q=Bali",
      "detail": "24 project links for \"Bali\"",
      "console_errors": 1,
@@ -61,9 +61,9 @@
      "n": 3,
      "name": "Open a project",
      "ok": true,
-     "ms": 1739,
-     "url": "/p/?id=BALI-018",
-     "detail": "BALI-018: Under construction project in Canggu coast, Bali",
+     "ms": 1128,
+     "url": "/p/?id=BALI-032",
+     "detail": "BALI-032: Off-plan project in Bali",
      "console_errors": 1,
      "errors": [
       "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
@@ -74,9 +74,9 @@
      "n": 4,
      "name": "Verify its signed data on /verify",
      "ok": true,
-     "ms": 1921,
+     "ms": 1436,
      "url": "/verify/#sig",
-     "detail": "Ed25519 signature valid for /api/open/projects/BALI-018",
+     "detail": "Ed25519 signature valid for /api/open/projects/BALI-032",
      "console_errors": 1,
      "errors": [
       "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
@@ -87,9 +87,9 @@
      "n": 5,
      "name": "Status page",
      "ok": true,
-     "ms": 768,
+     "ms": 422,
      "url": "/status/",
-     "detail": "7 components listed, none down",
+     "detail": "3 components listed, none down",
      "console_errors": 1,
      "errors": [
       "Failed to find a valid digest in the 'integrity' attribute for resource 'https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092' with computed SHA-512 integ"
