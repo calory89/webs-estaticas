@@ -1,0 +1,71 @@
+name: Kolaboro SEO
+# Search and answer-engine upkeep for kolaboro.com (seoT, batch 8). Scripts: tools/kolaboro-seo/.
+#  - indexnow: after every deploy-guard run (each deploy of pub/_lovable is guarded) and every 3 hours, submit new or changed sitemap
+#    URLs to IndexNow (Bing, Yandex, Naver, Seznam, Yep). State: kolaboro.com/data/indexnow.json. Google reads the sitemaps instead.
+#  - audit: daily and on demand, crawl every sitemap URL (GET and HEAD): status, canonical, hreflang reciprocity, JSON-LD validity,
+#    true lastmod of static pages. Result: kolaboro.com/data/seo-audit.json, shown on kolaboro.com/engineering/seo/.
+on:
+  workflow_run:
+    workflows: ['Kolaboro deploy guard']
+    types: [completed]
+  schedule:
+    - cron: '41 */3 * * *'
+    - cron: '13 5 * * *'
+  push:
+    branches: [main]
+    paths: ['tools/kolaboro-seo/**', '.github/workflows/kolaboro-seo.yml']
+  workflow_dispatch:
+    inputs:
+      job:
+        description: 'which job to run'
+        type: choice
+        options: [both, indexnow, audit]
+        default: both
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-seo-${{ github.event_name == 'schedule' && github.event.schedule == '13 5 * * *' && 'audit' || 'indexnow' }}
+  cancel-in-progress: false
+jobs:
+  audit:
+    if: (github.event_name == 'schedule' && github.event.schedule == '13 5 * * *') || github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && github.event.inputs.job != 'indexnow')
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            tools/kolaboro-seo
+            tools/kolaboro-reliability
+      - name: Crawl audit
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 tools/kolaboro-seo/audit.py "$RUNNER_TEMP/seo"
+      - name: Publish to kolaboro.com
+        run: bash tools/kolaboro-reliability/publish.sh "kolaboro.com: SEO crawl audit $(date -u +%FT%H:%M)" "$RUNNER_TEMP/seo/seo-audit.json=_s/kolaboro.com/data/seo-audit.json"
+  indexnow:
+    if: github.event_name == 'workflow_run' || (github.event_name == 'schedule' && github.event.schedule == '41 */3 * * *') || github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && github.event.inputs.job != 'audit')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            tools/kolaboro-seo
+            tools/kolaboro-reliability
+      - name: Wait for the guarded deploy to be served
+        if: github.event_name == 'workflow_run'
+        run: sleep 60
+      - name: Submit to IndexNow
+        id: inow
+        run: |
+          set +e; python3 tools/kolaboro-seo/indexnow.py "$RUNNER_TEMP/inow"; c=$?; set -e
+          echo "code=$c" >> "$GITHUB_OUTPUT"
+          if [ "$c" != "0" ] && [ "$c" != "3" ]; then echo "::warning::IndexNow submission did not return 200/202 (exit $c)"; fi
+      - name: Publish state to kolaboro.com
+        if: steps.inow.outputs.code != '3'
+        run: |
+          [ -f "$RUNNER_TEMP/inow/indexnow.json" ] || exit 0
+          bash tools/kolaboro-reliability/publish.sh "kolaboro.com: IndexNow $(date -u +%FT%H:%M)" "$RUNNER_TEMP/inow/indexnow.json=_s/kolaboro.com/data/indexnow.json"
