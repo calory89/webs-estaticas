@@ -33,7 +33,9 @@ FILE_EXT = 'js|mjs|cjs|json|jsonl|html|htm|css|py|md|yml|yaml|svg|png|jpg|jpeg|w
 NUM_WORDS = {'zero': '0', 'one': '1', 'two': '2', 'three': '3', 'four': '4', 'five': '5', 'six': '6', 'seven': '7', 'eight': '8',
              'nine': '9', 'ten': '10', 'eleven': '11', 'twelve': '12', 'thirteen': '13', 'fourteen': '14', 'fifteen': '15',
              'twenty': '20', 'thirty': '30', 'forty': '40', 'fifty': '50', 'hundred': '100', 'thousand': '1000', 'dozen': '12'}
-CHECK_V = 2   # bump to re-try summaries rejected under an older check
+CHECK_V = 2
+# Pages deployment is at its 20,000-file limit (5 Nov 2026): no new files on pub/_lovable until the lead lifts this. Existing files may be updated.
+ALLOW_NEW_FILES = os.environ.get('KB_SHIP_NEW_FILES') == '1'   # bump to re-try summaries rejected under an older check
 MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 
 GIT = None
@@ -515,7 +517,7 @@ def main():
     for d in days.values():
         d['page'] = None; d['page_by'] = None
         if d['date'] in human_pages: d['page'] = '/changelog/%s/' % d['date']; d['page_by'] = 'human'
-        elif d['ships'] and (pdate(d['date']) < today) and template:
+        elif d['ships'] and (pdate(d['date']) < today) and template and (ALLOW_NEW_FILES or d['date'] in auto_pages):
             d['page'] = '/changelog/%s/' % d['date']; d['page_by'] = 'auto'
     pages = sorted((d['date'], d['page']) for d in days.values() if d['page'])
     for i2, (dd, pg) in enumerate(pages):
@@ -630,6 +632,10 @@ def main():
         fx, fj = feeds(day_list)
         files[SITE + '/shipping/feed.xml'] = fx; files[SITE + '/shipping/feed.json'] = fj
         if rm.get('items'): files[SITE + '/data/roadmap-sync.json'] = json.dumps(rm, ensure_ascii=False, indent=1) + '\n'
+    if not ALLOW_NEW_FILES:
+        for p in list(files):
+            if subprocess.run(['git', '--git-dir', GIT, 'cat-file', '-e', '%s:%s' % (ref, p)], capture_output=True).returncode:
+                print('new file not allowed (Pages file limit), kept out: %s' % p); files.pop(p)
     for p, body in files.items():
         f = os.path.join(a.out, p); os.makedirs(os.path.dirname(f), exist_ok=True)
         open(f, 'w', encoding='utf-8').write(body)
