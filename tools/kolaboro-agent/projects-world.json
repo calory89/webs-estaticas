@@ -169644,6 +169644,5911 @@
    "added": "2026-11-05",
    "found_by": "discover-agent",
    "slug": "elements-cyprus"
+  },
+  {
+   "name": "Azure Icons by TM",
+   "developer": "TM Grupo Inmobiliario",
+   "area": "La Fossa, Calpe",
+   "country": "Spain",
+   "market": "Costa Blanca",
+   "stage": "off-plan",
+   "url": "https://www.tmgrupoinmobiliario.com/en/properties/U92-01_sea-views-apartments-alicante-calpe-beach-la-fossa-azure-icons-by-tm",
+   "docs_url": "https://www.tmgrupoinmobiliario.com/en/properties/U92-01_sea-views-apartments-alicante-calpe-beach-la-fossa-azure-icons-by-tm",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://blog.tmgrupoinmobiliario.com/en/2025/03/12/azure-icons-by-tm-the-mediterranean-sea-one-more-in-your-new-home/"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Sea-view apartments near La Fossa beach in Calpe, sold off-plan by TM; also listed by agents. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://blog.tmgrupoinmobiliario.com/en/2025/03/12/azure-icons-by-tm-the-mediterranean-sea-one-more-in-your-new-home/",
+    "https://www.tmgrupoinmobiliario.com/en/properties/U92-01_sea-views-apartments-alicante-calpe-beach-la-fossa-azure-icons-by-tm",
+    "https://www.youroverseashome.com/spain/property-for-sale/details/house-in-calp-1243221"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "azure-icons-by-tm-costa-blanca"
+  },
+  {
+   "name": "Lagoons Village by TM (Phase 2)",
+   "developer": "TM Grupo Inmobiliario",
+   "area": "Torrevieja lagoons",
+   "country": "Spain",
+   "market": "Costa Blanca",
+   "stage": "off-plan",
+   "url": "https://www.tmgrupoinmobiliario.com/en/properties/U76-03_villa-apartments-bungalow-new-home-beach-alicante-torrevieja-lagoons-village-by-tm-phase-2",
+   "docs_url": "https://www.tmgrupoinmobiliario.com/en/properties/U76-03_villa-apartments-bungalow-new-home-beach-alicante-torrevieja-lagoons-village-by-tm-phase-2",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://theolivepress.es/spain-news/2024/01/12/revealed-huge-e375m-plan-to-build-1800-home-mega-development-on-spains-costa-blanca"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Second phase of a planned 1,800-home, EUR 375m development by the Torrevieja lagoons announced in January 2024. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://alicanteplaza.es/tm-grupo-inmobiliario-torrevieja",
+    "https://theolivepress.es/spain-news/2024/01/12/revealed-huge-e375m-plan-to-build-1800-home-mega-development-on-spains-costa-blanca",
+    "https://www.secondhome.nl/en/new-build-project/lagoons-village-by-tm/",
+    "https://www.tmgrupoinmobiliario.com/en/properties/U76-03_villa-apartments-bungalow-new-home-beach-alicante-torrevieja-lagoons-village-by-tm-phase-2"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "lagoons-village-by-tm-phase-2-costa-blanca"
+  },
+  {
+   "name": "Edenia",
+   "developer": "AEDAS Homes",
+   "area": "El Verger",
+   "country": "Spain",
+   "market": "Costa Blanca",
+   "stage": "off-plan",
+   "url": "https://www.aedashomes.com/en/new-homes-for-sale-el-verger-edenia",
+   "docs_url": "https://www.aedashomes.com/en/new-homes-for-sale-el-verger-edenia",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://iberian.property/news/residential/aedas-will-invest-eur30m-to-develop-137-homes-in-alicante/"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "137 homes in El Verger near the Denia beaches, EUR 30m investment reported; developer lists 1 to 3 bedrooms from EUR 235,000. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://iberian.property/news/residential/aedas-will-invest-eur30m-to-develop-137-homes-in-alicante/",
+    "https://www.aedashomes.com/en/new-homes-for-sale-el-verger-edenia",
+    "https://www.elespanol.com/alacant/economia/20251104/verger-contara-nuevas-viviendas-junto-playas-precios-partir-euros/1003743998459_0.html"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "edenia-costa-blanca"
+  },
+  {
+   "name": "Eclipse (Sant Elm)",
+   "developer": "Taylor Wimpey Espana",
+   "area": "Sant Elm, Andratx, Mallorca",
+   "country": "Spain",
+   "market": "Balearics",
+   "stage": "off-plan",
+   "url": "https://taylorwimpeyspain.com/?p=64155",
+   "docs_url": "https://taylorwimpeyspain.com/?p=64155",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.mallorca.com/en/directory/business/taylor-wimpey-espana-eclipse-sant-elm-sant-elm"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Apartments and homes in Sant Elm (San Telmo), Mallorca, by Taylor Wimpey Espana. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://taylorwimpeyspain.com/?p=230232",
+    "https://taylorwimpeyspain.com/?p=64155",
+    "https://www.mallorca.com/en/directory/business/taylor-wimpey-espana-eclipse-sant-elm-sant-elm"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "eclipse-sant-elm-balearics"
+  },
+  {
+   "name": "Binghatti Etherea",
+   "developer": "Binghatti Developers",
+   "area": "Jumeirah Village Circle",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://www.binghatti.com/en/projects/binghatti-etherea",
+   "docs_url": "https://www.binghatti.com/en/projects/binghatti-etherea",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/binghatti-developers/binghatti-etherea"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Binghatti apartments in JVC; developer states handover July 2027, portal Q1 2028. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.binghatti.com/en/projects/binghatti-etherea",
+    "https://www.propertyfinder.ae/en/new-projects/binghatti-developers/binghatti-etherea"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "binghatti-etherea-dubai"
+  },
+  {
+   "name": "Binghatti Flare",
+   "developer": "Binghatti Developers",
+   "area": "Jumeirah Village Triangle",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "under construction",
+   "url": "https://www.binghatti.com/en/projects/binghatti-flare",
+   "docs_url": "https://www.binghatti.com/en/projects/binghatti-flare",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as under construction (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/binghatti-developers/binghatti-flare"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Binghatti apartments in JVT from AED 800,000; developer states completion Q2 2027. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.binghatti.com/en/projects/binghatti-flare",
+    "https://www.propertyfinder.ae/en/new-projects/binghatti-developers/binghatti-flare"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "binghatti-flare-dubai"
+  },
+  {
+   "name": "Binghatti Aquarise",
+   "developer": "Binghatti Developers",
+   "area": "Business Bay",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://www.binghatti.com/en/projects/binghatti-aquarise",
+   "docs_url": "https://www.binghatti.com/en/projects/binghatti-aquarise",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/binghatti-developers/binghatti-aquarise"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Binghatti tower in Business Bay; portal lists delivery Q4 2027. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.binghatti.com/en/projects/binghatti-aquarise",
+    "https://www.propertyfinder.ae/en/new-projects/binghatti-developers/binghatti-aquarise"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "binghatti-aquarise-dubai"
+  },
+  {
+   "name": "Binghatti SkyTerraces",
+   "developer": "Binghatti Developers",
+   "area": "Motor City",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://www.binghatti.com/en/projects/binghatti-skyterraces",
+   "docs_url": "https://www.binghatti.com/en/projects/binghatti-skyterraces",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/binghatti-developers/sky-terraces"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Binghatti apartments in Motor City; portal lists delivery Q2 2028. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.binghatti.com/en/projects/binghatti-skyterraces",
+    "https://www.propertyfinder.ae/en/new-projects/binghatti-developers/sky-terraces"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "binghatti-skyterraces-dubai"
+  },
+  {
+   "name": "Samana Barari Twin Towers",
+   "developer": "Samana Developers",
+   "area": "Majan",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://www.samanadevelopers.com/projects/samana-barari-twin-towers",
+   "docs_url": "https://www.samanadevelopers.com/projects/samana-barari-twin-towers",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/samana-developers/samana-barari-twin-towers"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Samana private-pool apartments in Majan; portal lists delivery Q3 2027. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.propertyfinder.ae/en/new-projects/samana-developers/samana-barari-twin-towers",
+    "https://www.samanadevelopers.com/projects/samana-barari-twin-towers"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "samana-barari-twin-towers-dubai"
+  },
+  {
+   "name": "Samana Boulevard Heights",
+   "developer": "Samana Developers",
+   "area": "Dubailand Residence Complex",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://www.samanadevelopers.com/projects/samana-boulevard-heights",
+   "docs_url": "https://www.samanadevelopers.com/projects/samana-boulevard-heights",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/samana-developers/samana-boulevard-heights"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Samana pool apartments in DLRC from AED 770,000; portal lists delivery Q4 2028. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.propertyfinder.ae/en/new-projects/samana-developers/samana-boulevard-heights",
+    "https://www.samanadevelopers.com/projects/samana-boulevard-heights"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "samana-boulevard-heights-dubai"
+  },
+  {
+   "name": "Samana Downtown One",
+   "developer": "Samana Developers",
+   "area": "Downtown Jebel Ali",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://www.samanadevelopers.com/projects/samana-downtown-one",
+   "docs_url": "https://www.samanadevelopers.com/projects/samana-downtown-one",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/samana-developers/samana-downtown-one"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Samana apartments in Downtown Jebel Ali from AED 689,000; portal lists delivery Q4 2029. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.propertyfinder.ae/en/new-projects/samana-developers/samana-downtown-one",
+    "https://www.samanadevelopers.com/projects/samana-downtown-one"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "samana-downtown-one-dubai"
+  },
+  {
+   "name": "Wynwood Horizon",
+   "developer": "Imtiaz Developments",
+   "area": "Meydan Horizon, MBR City",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://imtiaz.ae/property/wynwood-horizon-by-imtiaz",
+   "docs_url": "https://imtiaz.ae/property/wynwood-horizon-by-imtiaz",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/imtiaz-developments/wynwood-horizon"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Imtiaz apartments in Meydan Horizon; developer states completion Q2 2028. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://imtiaz.ae/property/wynwood-horizon-by-imtiaz",
+    "https://www.propertyfinder.ae/en/new-projects/imtiaz-developments/wynwood-horizon"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "wynwood-horizon-dubai"
+  },
+  {
+   "name": "CANVAZ Palette Cherngtalay",
+   "developer": "Sansiri",
+   "area": "Cherngtalay, Thalang",
+   "country": "Thailand",
+   "market": "Phuket",
+   "stage": "off-plan",
+   "url": "https://www.sansiri.com/condominium/canvaz-palette-cherngtalay/en/",
+   "docs_url": "https://www.sansiri.com/condominium/canvaz-palette-cherngtalay/en/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://papayaproperty.com/sansiri/canvaz-palette-cherngtalay"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "7-storey, 248-unit condominium in Cherngtalay by listed developer Sansiri; developer states completion 2028. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://asterofasia.com/property/thailand/phuket/canvaz-palette-cherngtalay",
+    "https://papayaproperty.com/sansiri/canvaz-palette-cherngtalay",
+    "https://www.sansiri.com/condominium/canvaz-palette-cherngtalay/en/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "canvaz-palette-cherngtalay-phuket"
+  },
+  {
+   "name": "BRISA Patong by Sansiri",
+   "developer": "Sansiri",
+   "area": "Patong, Kathu",
+   "country": "Thailand",
+   "market": "Phuket",
+   "stage": "off-plan",
+   "url": "https://www.sansiri.com/condominium/brisa-patong-by-sansiri/th/",
+   "docs_url": "https://www.sansiri.com/condominium/brisa-patong-by-sansiri/th/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.hipflat.co.th/en/projects/brisa-patong-by-sansiri-l1t3t881199ce218981nen9t4192n4n9"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Sansiri condominium in Patong; bookings opened 25 November 2025 per a portal report. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.fazwaz.com/advice/sansiri-returns-to-patong-brisa-patong-condos-from-39m-booking-opens-25-november",
+    "https://www.hipflat.co.th/en/projects/brisa-patong-by-sansiri-l1t3t881199ce218981nen9t4192n4n9",
+    "https://www.sansiri.com/condominium/brisa-patong-by-sansiri/th/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "brisa-patong-by-sansiri-phuket"
+  },
+  {
+   "name": "DAMAC Bay by Cavalli",
+   "developer": "DAMAC Properties",
+   "area": "Dubai Harbour",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "under construction",
+   "url": "https://www.damacproperties.com/en/projects/damac-bay-by-cavalli/",
+   "docs_url": "https://www.damacproperties.com/en/projects/damac-bay-by-cavalli/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as under construction (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://elevatorworld.com/news/daily-news/three-tower-damac-bay-by-cavalli-launches-in-dubai"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Three-tower Cavalli-branded waterfront project in Dubai Harbour; developer states handover Q3 2027. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://elevatorworld.com/news/daily-news/three-tower-damac-bay-by-cavalli-launches-in-dubai",
+    "https://meconstructionnews.com/56353/damac-properties-launches-damac-bay-by-cavalli/amp",
+    "https://www.damacproperties.com/en/projects/damac-bay-by-cavalli/",
+    "https://www.propertyfinder.ae/en/new-projects/damac-properties/damac-bay-cavalli",
+    "https://www.skyscrapercenter.com/building/damac-bay-by-cavalli-tower-a/45338"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "damac-bay-by-cavalli-dubai"
+  },
+  {
+   "name": "Lagoon Views (DAMAC Lagoons)",
+   "developer": "DAMAC Properties",
+   "area": "DAMAC Lagoons",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "under construction",
+   "url": "https://www.damacproperties.com/en/communities/damac-lagoons/projects/lagoon-views/",
+   "docs_url": "https://www.damacproperties.com/en/communities/damac-lagoons/projects/lagoon-views/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as under construction (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/damac-properties/damac-lagoons-lagoon-views-12"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "1 and 2 bedroom apartments in DAMAC Lagoons; developer states handover Q2 2027. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.damacproperties.com/en/communities/damac-lagoons/projects/lagoon-views/",
+    "https://www.propertyfinder.ae/en/new-projects/damac-properties/damac-lagoons-lagoon-views-12"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "lagoon-views-damac-lagoons-dubai"
+  },
+  {
+   "name": "DAMAC Riverside Views",
+   "developer": "DAMAC Properties",
+   "area": "Dubai Investments Park",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://www.damacproperties.com/en/blog/damac-riverside-apartments-damac-properties-0239/",
+   "docs_url": "https://www.damacproperties.com/en/blog/damac-riverside-apartments-damac-properties-0239/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/damac-properties/damac-riverside-views-marine-2"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Riverside apartment community in Dubai Investments Park; portal lists the Marine 2 phase for delivery Q1 2029. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.damacproperties.com/en/blog/damac-riverside-apartments-damac-properties-0239/",
+    "https://www.propertyfinder.ae/en/new-projects/damac-properties/damac-riverside-views-marine-2"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "damac-riverside-views-dubai"
+  },
+  {
+   "name": "Chelsea Residences by DAMAC",
+   "developer": "DAMAC Properties",
+   "area": "Dubai Maritime City",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://www.damacproperties.com/en/blog/chelsea-residences-dubai-maritime-city-2378/",
+   "docs_url": "https://www.damacproperties.com/en/blog/chelsea-residences-dubai-maritime-city-2378/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/damac-properties/chelsea-residences-2-by-damac"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Chelsea FC branded towers in Dubai Maritime City; portal lists phase 2 for delivery Q4 2029. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.damacproperties.com/en/blog/chelsea-residences-dubai-maritime-city-2378/",
+    "https://www.propertyfinder.ae/en/new-projects/damac-properties/chelsea-residences-2-by-damac"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "chelsea-residences-by-damac-dubai"
+  },
+  {
+   "name": "Eagle Tower by TM",
+   "developer": "TM Grupo Inmobiliario",
+   "area": "Via Parque, Benidorm",
+   "country": "Spain",
+   "market": "Costa Blanca",
+   "stage": "off-plan",
+   "url": "https://www.tmgrupoinmobiliario.com/en/properties/U84-01_beach-apartments-sea-views-spain-benidorm-costa-blanca-north-eagle-tower-by-tm",
+   "docs_url": "https://www.tmgrupoinmobiliario.com/en/properties/U84-01_beach-apartments-sea-views-spain-benidorm-costa-blanca-north-eagle-tower-by-tm",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://brainsre.news/tm-grupo-inmobiliario-levantara-eagle-tower-y-sunset-sailors-dos-nuevos-proyectos-residenciales-en-benidorm/"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Apartment tower on Via Parque in Benidorm; developer lists apartments from EUR 507,000. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://alicanteplaza.es/tm-compra-suelo-benidorm-nuevo-edificio-via-parque-eagle-tower",
+    "https://brainsre.news/tm-grupo-inmobiliario-levantara-eagle-tower-y-sunset-sailors-dos-nuevos-proyectos-residenciales-en-benidorm/",
+    "https://www.tmgrupoinmobiliario.com/en/properties/U84-01_beach-apartments-sea-views-spain-benidorm-costa-blanca-north-eagle-tower-by-tm"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "eagle-tower-by-tm-costa-blanca"
+  },
+  {
+   "name": "Sunset Sailors by TM",
+   "developer": "TM Grupo Inmobiliario",
+   "area": "Poniente beach, Benidorm",
+   "country": "Spain",
+   "market": "Costa Blanca",
+   "stage": "off-plan",
+   "url": "https://www.tmgrupoinmobiliario.com/en/properties/U68-03_beach-apartments-sea-views-spain-benidorm-costa-blanca-north-sunset-sailors-by-tm",
+   "docs_url": "https://www.tmgrupoinmobiliario.com/en/properties/U68-03_beach-apartments-sea-views-spain-benidorm-costa-blanca-north-sunset-sailors-by-tm",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://brainsre.news/tm-grupo-inmobiliario-levantara-eagle-tower-y-sunset-sailors-dos-nuevos-proyectos-residenciales-en-benidorm/"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Sea-view apartments on Poniente beach in Benidorm; developer lists apartments from EUR 865,000. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://brainsre.news/tm-grupo-inmobiliario-levantara-eagle-tower-y-sunset-sailors-dos-nuevos-proyectos-residenciales-en-benidorm/",
+    "https://www.bjurfors.se/en/real-estate/spain/for-sale/alicante2/marina-baixa/benidorm/sunset-sailors/",
+    "https://www.tmgrupoinmobiliario.com/en/properties/U68-03_beach-apartments-sea-views-spain-benidorm-costa-blanca-north-sunset-sailors-by-tm"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "sunset-sailors-by-tm-costa-blanca"
+  },
+  {
+   "name": "Jenna (Aljada)",
+   "developer": "Arada",
+   "area": "Aljada, Sharjah",
+   "country": "UAE",
+   "market": "Sharjah",
+   "stage": "off-plan",
+   "url": "https://www.arada.com/en/aljada-apartments-jenna1/",
+   "docs_url": "https://www.arada.com/en/aljada-apartments-jenna1/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/arada/jenna-2"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Six-building, 631-apartment complex at Aljada; press reports completion by the end of Q1 2029. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://mid-east.info/?p=310983",
+    "https://www.arada.com/en/aljada-apartments-jenna1/",
+    "https://www.propertyfinder.ae/en/new-projects/arada/jenna-2",
+    "https://www.worldconstructionnetwork.com/newsletters/arada-jenna-aljada-prject-uae"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "jenna-aljada-sharjah"
+  },
+  {
+   "name": "Vela Viento",
+   "developer": "OMNIYAT",
+   "area": "Business Bay",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "under construction",
+   "url": "https://omniyat.com/residential/vela-viento-dorchester-collection-dubai",
+   "docs_url": "https://omniyat.com/residential/vela-viento-dorchester-collection-dubai",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as under construction (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/omniyat/vela-viento"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Dorchester Collection branded residences in Business Bay; developer states completion Q3 2027. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://omniyat.com/residential/vela-viento-dorchester-collection-dubai",
+    "https://www.propertyfinder.ae/en/new-projects/omniyat/vela-viento"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "vela-viento-dubai"
+  },
+  {
+   "name": "Anwa Aria",
+   "developer": "OMNIYAT",
+   "area": "Dubai Maritime City",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "under construction",
+   "url": "https://omniyat.com/residential/anwa-aria-by-omniyat",
+   "docs_url": "https://omniyat.com/residential/anwa-aria-by-omniyat",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as under construction (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/omniyat/anwa-aria"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "30-level tower of 175 residences in Dubai Maritime City; developer states completion Q4 2027. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://omniyat.com/residential/anwa-aria-by-omniyat",
+    "https://www.propertyfinder.ae/en/new-projects/omniyat/anwa-aria"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "anwa-aria-dubai"
+  },
+  {
+   "name": "Six Senses Residences Dubai Marina",
+   "developer": "Select Group",
+   "area": "Dubai Marina",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://www.select-group.ae/developments/six-senses-residences-dubai-marina",
+   "docs_url": "https://www.select-group.ae/developments/six-senses-residences-dubai-marina",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/select-group/six-senses-residences-dubai-marina"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Six Senses branded tower in Dubai Marina; portal lists delivery Q3 2028. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.propertyfinder.ae/en/new-projects/select-group/six-senses-residences-dubai-marina",
+    "https://www.select-group.ae/developments/six-senses-residences-dubai-marina"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "six-senses-residences-dubai-marina-dubai"
+  },
+  {
+   "name": "Sidi Villas by TM (Phase 3)",
+   "developer": "TM Grupo Inmobiliario",
+   "area": "Playa de San Juan, Alicante",
+   "country": "Spain",
+   "market": "Costa Blanca",
+   "stage": "off-plan",
+   "url": "https://www.tmgrupoinmobiliario.com/en/properties/U58-03_luxury-beachfront-villas-spain-costa-blanca-north-san-juan-de-alicante-sidi-residences-by-tm-phase3",
+   "docs_url": "https://www.tmgrupoinmobiliario.com/en/properties/U58-03_luxury-beachfront-villas-spain-costa-blanca-north-san-juan-de-alicante-sidi-residences-by-tm-phase3",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://alicanteplaza.es/alicanteplaza/tm-vuelve-a-playa-de-san-juan-e-invertira-15-millones-en-un-residencial-de-190-casas"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Detached villas with private pools next to Playa de San Juan, third phase of the Sidi resort by TM. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://alicanteplaza.es/alicanteplaza/tm-vuelve-a-playa-de-san-juan-e-invertira-15-millones-en-un-residencial-de-190-casas",
+    "https://www.tmgrupoinmobiliario.com/en/properties/U58-03_luxury-beachfront-villas-spain-costa-blanca-north-san-juan-de-alicante-sidi-residences-by-tm-phase3"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "sidi-villas-by-tm-phase-3-costa-blanca"
+  },
+  {
+   "name": "Samana Greenfield",
+   "developer": "Samana Developers",
+   "area": "Al Warsan 4, International City Phase 2",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://www.samanadevelopers.com/projects/samana-greenfield",
+   "docs_url": "https://www.samanadevelopers.com/projects/samana-greenfield",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/samana-developers/greenfield-by-samana"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Samana 1 and 2 bedroom apartments in Al Warsan; portal lists delivery Q4 2028. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.propertyfinder.ae/en/new-projects/samana-developers/greenfield-by-samana",
+    "https://www.samanadevelopers.com/projects/samana-greenfield"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "samana-greenfield-dubai"
+  },
+  {
+   "name": "Samana Rome",
+   "developer": "Samana Developers",
+   "area": "Meydan, MBR City",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "under construction",
+   "url": "https://www.samanadevelopers.com/projects/samana-rome",
+   "docs_url": "https://www.samanadevelopers.com/projects/samana-rome",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as under construction (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/samana-developers/rome-2"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Samana apartments in Meydan from AED 2.03m; portal lists phase 2 delivery Q2 2027. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.propertyfinder.ae/en/new-projects/samana-developers/rome-2",
+    "https://www.samanadevelopers.com/projects/samana-rome"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "samana-rome-dubai"
+  },
+  {
+   "name": "Samana Hills South",
+   "developer": "Samana Developers",
+   "area": "Dubai South / Dubai Industrial City",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://www.samanadevelopers.com/projects/samana-hills-south",
+   "docs_url": "https://www.samanadevelopers.com/projects/samana-hills-south",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/samana-developers/samana-hills-south-4-and-5"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Samana apartments in Dubai South; portal lists phases 4 and 5 for delivery Q4 2028. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.propertyfinder.ae/en/new-projects/samana-developers/samana-hills-south-4-and-5",
+    "https://www.samanadevelopers.com/projects/samana-hills-south"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "samana-hills-south-dubai"
+  },
+  {
+   "name": "The Archive by Imtiaz",
+   "developer": "Imtiaz Developments",
+   "area": "Dubailand Residence Complex",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://imtiaz.ae/property/the-archive-by-imtiaz",
+   "docs_url": "https://imtiaz.ae/property/the-archive-by-imtiaz",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/imtiaz-developments/the-archive-by-imtiaz"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Imtiaz apartments in DLRC; portal lists delivery Q3 2028. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://imtiaz.ae/property/the-archive-by-imtiaz",
+    "https://www.propertyfinder.ae/en/new-projects/imtiaz-developments/the-archive-by-imtiaz"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "the-archive-by-imtiaz-dubai"
+  },
+  {
+   "name": "Cove Edition 6",
+   "developer": "Imtiaz Developments",
+   "area": "Dubailand Residence Complex",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "under construction",
+   "url": "https://imtiaz.ae/property/cove-edition-6-by-imtiaz-1",
+   "docs_url": "https://imtiaz.ae/property/cove-edition-6-by-imtiaz-1",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as under construction (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/imtiaz-developments/cove-edition-6"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Imtiaz apartments in DLRC; developer states completion Q4 2027. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://imtiaz.ae/property/cove-edition-6-by-imtiaz-1",
+    "https://www.propertyfinder.ae/en/new-projects/imtiaz-developments/cove-edition-6"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "cove-edition-6-dubai"
+  },
+  {
+   "name": "One River Point",
+   "developer": "Ellington Properties",
+   "area": "Business Bay",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "under construction",
+   "url": "https://ellingtonproperties.ae/en/property-for-sale/one-river-point-business-bay",
+   "docs_url": "https://ellingtonproperties.ae/en/property-for-sale/one-river-point-business-bay",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as under construction (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/ellington/one-river-point"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Ellington tower in Business Bay; portal lists delivery Q2 2027. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://ellingtonproperties.ae/en/property-for-sale/one-river-point-business-bay",
+    "https://www.propertyfinder.ae/en/new-projects/ellington/one-river-point"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "one-river-point-dubai"
+  },
+  {
+   "name": "Edge (Raha Island)",
+   "developer": "RAK Properties",
+   "area": "Raha Island, Mina Al Arab",
+   "country": "UAE",
+   "market": "Ras Al Khaimah",
+   "stage": "under construction",
+   "url": "https://www.rakproperties.ae/our-properties/edge/",
+   "docs_url": "https://www.rakproperties.ae/our-properties/edge/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as under construction (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/rak-properties/edge-at-raha-island"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "RAK Properties apartments on Raha Island; developer states completion Q2 2027. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.propertyfinder.ae/en/new-projects/rak-properties/edge-at-raha-island",
+    "https://www.rakproperties.ae/our-properties/edge/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "edge-raha-island-ras-al-khaimah"
+  },
+  {
+   "name": "Binghatti Wraith",
+   "developer": "Binghatti Developers",
+   "area": "Al Jaddaf",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://www.binghatti.com/en/projects/binghatti-wraith",
+   "docs_url": "https://www.binghatti.com/en/projects/binghatti-wraith",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/binghatti-developers/binghatti-wraith"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Studio to 2 bedroom tower in Al Jaddaf; portal lists delivery Q4 2027. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://famproperties.com/al-jaddaf-dubai/binghatti-wraith",
+    "https://www.binghatti.com/en/projects/binghatti-wraith",
+    "https://www.propertyfinder.ae/en/new-projects/binghatti-developers/binghatti-wraith"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "binghatti-wraith-dubai"
+  },
+  {
+   "name": "Binghatti Cullinan",
+   "developer": "Binghatti Developers",
+   "area": "Al Jaddaf",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://www.binghatti.com/en/projects/binghatti-cullinan",
+   "docs_url": "https://www.binghatti.com/en/projects/binghatti-cullinan",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/binghatti-developers/binghatti-cullinan"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Apartment tower in Al Jaddaf; portal lists delivery Q2 2027. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://famproperties.com/al-jaddaf-dubai/binghatti-cullinan",
+    "https://www.binghatti.com/en/projects/binghatti-cullinan",
+    "https://www.propertyfinder.ae/en/new-projects/binghatti-developers/binghatti-cullinan"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "binghatti-cullinan-dubai"
+  },
+  {
+   "name": "Binghatti Luxuria",
+   "developer": "Binghatti Developers",
+   "area": "Jumeirah Village Triangle",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://www.binghatti.com/en/projects/binghatti-luxuria",
+   "docs_url": "https://www.binghatti.com/en/projects/binghatti-luxuria",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/binghatti-developers/binghatti-luxuria"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Apartment building in JVT; developer states completion in Q3 2027, portal Q4 2027. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://famproperties.com/jumeirah-village-triangle-dubai/binghatti-luxuria",
+    "https://www.binghatti.com/en/projects/binghatti-luxuria",
+    "https://www.propertyfinder.ae/en/new-projects/binghatti-developers/binghatti-luxuria"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "binghatti-luxuria-dubai"
+  },
+  {
+   "name": "Binghatti Hillcrest",
+   "developer": "Binghatti Developers",
+   "area": "Arjan",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "under construction",
+   "url": "https://www.binghatti.com/en/projects/binghatti-hillcrest",
+   "docs_url": "https://www.binghatti.com/en/projects/binghatti-hillcrest",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as under construction (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/binghatti-developers/binghatti-hillcrest"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Apartment building in Arjan; portal lists delivery Q4 2026. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://famproperties.com/arjan-dubai/binghatti-hillcrest",
+    "https://www.binghatti.com/en/projects/binghatti-hillcrest",
+    "https://www.propertyfinder.ae/en/new-projects/binghatti-developers/binghatti-hillcrest"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "binghatti-hillcrest-dubai"
+  },
+  {
+   "name": "Binghatti Starfall",
+   "developer": "Binghatti Developers",
+   "area": "Al Jaddaf",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://www.binghatti.com/en/projects/binghatti-starfall",
+   "docs_url": "https://www.binghatti.com/en/projects/binghatti-starfall",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/binghatti-developers/binghatti-starfall"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Apartment tower in Al Jaddaf; portal lists delivery Q3 2028. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://famproperties.com/al-jaddaf-dubai/binghatti-starfall",
+    "https://www.binghatti.com/en/projects/binghatti-starfall",
+    "https://www.propertyfinder.ae/en/new-projects/binghatti-developers/binghatti-starfall"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "binghatti-starfall-dubai"
+  },
+  {
+   "name": "Aspirz",
+   "developer": "Danube Properties",
+   "area": "Dubai Sports City",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://danubeproperties.com/portfolio/aspirz/",
+   "docs_url": "https://danubeproperties.com/portfolio/aspirz/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/danube-properties/aspirz"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Residential and office tower in Dubai Sports City sold on a 1% monthly plan; developer states completion Q4 2028. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://danubeproperties.com/portfolio/aspirz/",
+    "https://therealtytoday.com/news/danube-launches-aspirz-in-dubai-sports-city-with-first-ever-1-office-ownership-plan",
+    "https://www.constructionworld.in/amp/latest-construction-news/real-estate-news/danube-launches-aspirz-with-1-per-cent-plan-for-office-ownership-/77957",
+    "https://www.propertyfinder.ae/en/new-projects/danube-properties/aspirz"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "aspirz-dubai"
+  },
+  {
+   "name": "Breez by Danube",
+   "developer": "Danube Properties",
+   "area": "Dubai Maritime City",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://danubeproperties.com/portfolio/breez/",
+   "docs_url": "https://danubeproperties.com/portfolio/breez/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/danube-properties/breez-by-danube"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Launched September 2025 as the tallest residential tower in Dubai Maritime City; developer states completion 2029, from AED 1.4m. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://danubeproperties.com/portfolio/breez/",
+    "https://gulfnews.com/business/corporate-news/breez-by-danube-dubai-maritime-citys-tallest-tower-offers-panoramic-sea-views-and-luxury-living-1.500275632",
+    "https://meconstructionnews.com/64630/danube-launches-breez-by-danube-in-dubai-maritime-city",
+    "https://www.propertyfinder.ae/en/new-projects/danube-properties/breez-by-danube"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "breez-by-danube-dubai"
+  },
+  {
+   "name": "Timez by Danube",
+   "developer": "Danube Properties",
+   "area": "Dubai Silicon Oasis",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://danubeproperties.com/portfolio/timez/",
+   "docs_url": "https://danubeproperties.com/portfolio/timez/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/danube-properties/timez"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Convertible apartments in Dubai Silicon Oasis launched February 2025; developer states completion Q2 2028. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://danubeproperties.com/portfolio/timez/",
+    "https://gulfnews.com/gn-focus/danube-properties-unveils-convertible-1bhk-apartment-at-the-price-of-a-studio-1.500048160",
+    "https://meconstructionnews.com/62487/danube-properties-unveils-timez-in-dubai-silicon-oasis/amp",
+    "https://www.propertyfinder.ae/en/new-projects/danube-properties/timez"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "timez-by-danube-dubai"
+  },
+  {
+   "name": "Greenz by Danube",
+   "developer": "Danube Properties",
+   "area": "Dubai Academic City",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://danubeproperties.com/portfolio/greenz/",
+   "docs_url": "https://danubeproperties.com/portfolio/greenz/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/danube-properties/greenz-by-danube"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "First townhouse and villa community by Danube, launched April 2026 from AED 3.5m; developer states completion Q4 2029. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://danubeproperties.com/portfolio/greenz/",
+    "https://www.khaleejtimes.com/kt-network/danube-properties-unveils-dh35m-greenz-master-community-in-dubais-high-growth-academic-city",
+    "https://www.propertyfinder.ae/en/new-projects/danube-properties/greenz-by-danube",
+    "https://www.zawya.com/en/projects/construction/danube-launches-its-first-townhouse-and-villa-master-community-in-dubai-yb0pxj8x"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "greenz-by-danube-dubai"
+  },
+  {
+   "name": "Burj Binghatti Jacob & Co Residences",
+   "developer": "Binghatti Developers",
+   "area": "Business Bay",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "under construction",
+   "url": "https://www.binghatti.com/en/branded-projects/burj-binghatti-jacob-co-residences",
+   "docs_url": "https://www.binghatti.com/en/branded-projects/burj-binghatti-jacob-co-residences",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as under construction (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://en.wikipedia.org/wiki/Burj_Binghatti_Jacob_%26_Co_Residences"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Branded hypertower in Business Bay planned as the tallest residential building in the world. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://constructiondigital.com/construction-projects/worlds-tallest-residential-hypertower-to-be-built-in-dubai",
+    "https://en.wikipedia.org/wiki/Burj_Binghatti_Jacob_%26_Co_Residences",
+    "https://www.binghatti.com/en/branded-projects/burj-binghatti-jacob-co-residences",
+    "https://www.meed.com/dubai-developer-plans-worlds-tallest-residential-building"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "burj-binghatti-jacob-co-residences-dubai"
+  },
+  {
+   "name": "Sobha Central",
+   "developer": "Sobha Realty",
+   "area": "Sheikh Zayed Road, Jebel Ali side",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://sobharealty.com/media-center/press-releases/introducing-sobha-central-sobha-realtys-new-mixed-use-icon-sheikh-zayed/",
+   "docs_url": "https://sobharealty.com/media-center/press-releases/introducing-sobha-central-sobha-realtys-new-mixed-use-icon-sheikh-zayed/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/sobha-realty/sobha-central"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Six-tower mixed-use development on Sheikh Zayed Road launched May 2025; portal lists delivery Q4 2031. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://elevatorworld.com/news/daily-news/sobha-realty-launches-major-new-dubai-development/",
+    "https://gulfconstructiononline.com/Article/387553/Six-tower_Sobha_Central_to_rise_on_Sheikh_Zayed_Road",
+    "https://sobharealty.com/media-center/press-releases/introducing-sobha-central-sobha-realtys-new-mixed-use-icon-sheikh-zayed/",
+    "https://www.propertyfinder.ae/en/new-projects/sobha-realty/sobha-central"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "sobha-central-dubai"
+  },
+  {
+   "name": "DAMAC Islands",
+   "developer": "DAMAC Properties",
+   "area": "Dubailand",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://www.damacproperties.com/en/communities/damac-islands-community/projects/damac-islands/",
+   "docs_url": "https://www.damacproperties.com/en/communities/damac-islands-community/projects/damac-islands/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/damac-properties/damac-islands"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Island-themed villa and townhouse community in Dubailand from AED 2.75m; portal lists delivery Q4 2028. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://christiesrealestatedubai.com/developments/dubai/damac-island-city",
+    "https://realestateclubdubai.com/areas/damac-islands",
+    "https://www.damacproperties.com/en/communities/damac-islands-community/projects/damac-islands/",
+    "https://www.propertyfinder.ae/en/new-projects/damac-properties/damac-islands"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "damac-islands-dubai"
+  },
+  {
+   "name": "Grand Polo Club & Resort",
+   "developer": "Emaar Properties",
+   "area": "Dubai Investment Park 2",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://www.emaar.com/en/press-release-listing/emaar-unveils-grand-polo-club-resort",
+   "docs_url": "https://www.emaar.com/en/press-release-listing/emaar-unveils-grand-polo-club-resort",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.engelvoelkers.com/ae/en/off-plan/grand-polo-club-and-resort"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Equestrian-themed villa master community announced April 2025; agents list villas from AED 5.67m. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://christiesrealestatedubai.com/developments/dubai/grand-polo-club-and-resort",
+    "https://curlytales.com/emaar-launches-grand-polo-club-resort-with-22-exclusive-villa-communities-over-6600-residences-more",
+    "https://www.emaar.com/en/press-release-listing/emaar-unveils-grand-polo-club-resort",
+    "https://www.engelvoelkers.com/ae/en/off-plan/grand-polo-club-and-resort"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "grand-polo-club-resort-dubai"
+  },
+  {
+   "name": "Cape Hayat",
+   "developer": "RAK Properties",
+   "area": "Hayat Island, Mina Al Arab",
+   "country": "UAE",
+   "market": "Ras Al Khaimah",
+   "stage": "under construction",
+   "url": "https://www.rakproperties.ae/our-properties/cape-hayat/",
+   "docs_url": "https://www.rakproperties.ae/our-properties/cape-hayat/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as under construction (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/rak-properties/cape-hayat"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Waterfront apartments on Hayat Island launched by listed RAK Properties; portal lists delivery Q4 2026. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://m.marketscreener.com/quote/stock/RAK-PROPERTIES-9059647/news/RAK-Properties-PJSC-Launches-Cape-Hayat-in-Mina-Al-Arab-44884753/",
+    "https://www.propertyfinder.ae/en/new-projects/rak-properties/cape-hayat",
+    "https://www.rakproperties.ae/our-properties/cape-hayat/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "cape-hayat-ras-al-khaimah"
+  },
+  {
+   "name": "Skai",
+   "developer": "RAK Properties",
+   "area": "Harbour district, Mina",
+   "country": "UAE",
+   "market": "Ras Al Khaimah",
+   "stage": "off-plan",
+   "url": "https://www.rakproperties.ae/our-properties/skai/",
+   "docs_url": "https://www.rakproperties.ae/our-properties/skai/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/rak-properties/skai"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Waterfront apartments in the Mina harbour district; portal lists delivery Q2 2028. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.albawaba.com/business/pr/rak-properties-launches-skai-%E2%80%93-new-1600481",
+    "https://www.propertyfinder.ae/en/new-projects/rak-properties/skai",
+    "https://www.rakproperties.ae/our-properties/skai/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "skai-ras-al-khaimah"
+  },
+  {
+   "name": "Solera",
+   "developer": "RAK Properties",
+   "area": "Downtown Mina, Mina Al Arab",
+   "country": "UAE",
+   "market": "Ras Al Khaimah",
+   "stage": "off-plan",
+   "url": "https://www.rakproperties.ae/our-properties/solera/",
+   "docs_url": "https://www.rakproperties.ae/our-properties/solera/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/rak-properties/solera-downtown-mina"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Apartment community in Downtown Mina launched 2025; portal lists delivery Q2 2028. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://meconstructionnews.com/63626/rak-properties-unveils-solera",
+    "https://www.engelvoelkers.com/ae/de/off-plan/solera-by-rak-properties",
+    "https://www.propertyfinder.ae/en/new-projects/rak-properties/solera-downtown-mina",
+    "https://www.rakproperties.ae/our-properties/solera/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "solera-ras-al-khaimah"
+  },
+  {
+   "name": "Mirasol",
+   "developer": "RAK Properties",
+   "area": "Mina, Mina Al Arab",
+   "country": "UAE",
+   "market": "Ras Al Khaimah",
+   "stage": "off-plan",
+   "url": "https://www.rakproperties.ae/our-properties/mirasol/",
+   "docs_url": "https://www.rakproperties.ae/our-properties/mirasol/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/rak-properties/mirasol"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Resort-style residences within the Mina masterplan; portal lists delivery Q1 2028. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://gulfconstructiononline.com/ArticleTA/436965",
+    "https://www.propertyfinder.ae/en/new-projects/rak-properties/mirasol",
+    "https://www.rakproperties.ae/our-properties/mirasol/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "mirasol-ras-al-khaimah"
+  },
+  {
+   "name": "Anantara Mina Residences",
+   "developer": "RAK Properties with Minor Hotels",
+   "area": "Hayat Island, Mina Al Arab",
+   "country": "UAE",
+   "market": "Ras Al Khaimah",
+   "stage": "off-plan",
+   "url": "https://www.rakproperties.ae/our-properties/anantara-residences/",
+   "docs_url": "https://www.rakproperties.ae/our-properties/anantara-residences/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/rak-properties/anantara-mina"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Anantara-branded waterfront homes; portal lists delivery Q2 2028. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://gulfnews.com/business/property/sales-of-anantara-homes-on-hayat-island-begins-1.500116827",
+    "https://www.propertyfinder.ae/en/new-projects/rak-properties/anantara-mina",
+    "https://www.rakproperties.ae/our-properties/anantara-residences/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "anantara-mina-residences-ras-al-khaimah"
+  },
+  {
+   "name": "Soto Grande",
+   "developer": "Ellington Properties",
+   "area": "Al Hamra Village",
+   "country": "UAE",
+   "market": "Ras Al Khaimah",
+   "stage": "off-plan",
+   "url": "https://ellingtonproperties.ae/en/property-for-sale/soto-grande-ras-al-khaimah",
+   "docs_url": "https://ellingtonproperties.ae/en/property-for-sale/soto-grande-ras-al-khaimah",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/ellington/soto-grande"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Ellington residences in Al Hamra Village from AED 1m; portal lists delivery Q4 2029. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://ellingtonproperties.ae/en/property-for-sale/soto-grande-ras-al-khaimah",
+    "https://famproperties.com/al-hamra-village-ras-al-khaimah/soto-grande",
+    "https://www.propertyfinder.ae/en/new-projects/ellington/soto-grande"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "soto-grande-ras-al-khaimah"
+  },
+  {
+   "name": "Mercer House",
+   "developer": "Ellington Properties",
+   "area": "Uptown Dubai, Jumeirah Lake Towers",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "under construction",
+   "url": "https://ellingtonproperties.ae/en/property-for-sale/mercer-house-jumeirah-lakes-tower",
+   "docs_url": "https://ellingtonproperties.ae/en/property-for-sale/mercer-house-jumeirah-lakes-tower",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as under construction (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/ellington/mercer-house"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Ellington tower in Uptown Dubai; portal lists delivery Q3 2027. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://ellingtonproperties.ae/en/property-for-sale/mercer-house-jumeirah-lakes-tower",
+    "https://www.propertyfinder.ae/en/new-projects/ellington/mercer-house"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "mercer-house-dubai"
+  },
+  {
+   "name": "Portside Square",
+   "developer": "Ellington Properties",
+   "area": "Mina Rashid",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://ellingtonproperties.ae/en/property-for-sale/portside-square-mina-rashid",
+   "docs_url": "https://ellingtonproperties.ae/en/property-for-sale/portside-square-mina-rashid",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/ellington/portside-square"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Ellington waterfront residences in Mina Rashid from AED 2.3m; portal lists delivery Q4 2029. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://ellingtonproperties.ae/en/property-for-sale/portside-square-mina-rashid",
+    "https://famproperties.com/mina-rashid-dubai/portside-square",
+    "https://www.propertyfinder.ae/en/new-projects/ellington/portside-square"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "portside-square-dubai"
+  },
+  {
+   "name": "Raw District",
+   "developer": "Imtiaz Developments",
+   "area": "Downtown Jebel Ali, Sheikh Zayed Road",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://imtiaz.ae/property/raw-district-by-imtiaz",
+   "docs_url": "https://imtiaz.ae/property/raw-district-by-imtiaz",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/imtiaz-developments/raw-district"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Imtiaz apartment district on Sheikh Zayed Road from AED 649,000; portal lists delivery Q1 2029. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://imtiaz.ae/property/raw-district-by-imtiaz",
+    "https://www.propertyfinder.ae/en/new-projects/imtiaz-developments/raw-district"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "raw-district-dubai"
+  },
+  {
+   "name": "Kore by Imtiaz",
+   "developer": "Imtiaz Developments",
+   "area": "Dubailand Residence Complex",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://imtiaz.ae/property/kore-by-imtiaz",
+   "docs_url": "https://imtiaz.ae/property/kore-by-imtiaz",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/imtiaz-developments/kore-by-imtiaz"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Imtiaz apartments in DLRC; portal lists delivery Q4 2028. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://imtiaz.ae/property/kore-by-imtiaz",
+    "https://www.propertyfinder.ae/en/new-projects/imtiaz-developments/kore-by-imtiaz"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "kore-by-imtiaz-dubai"
+  },
+  {
+   "name": "Le Blanc by Imtiaz",
+   "developer": "Imtiaz Developments",
+   "area": "Dubailand Residence Complex",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://imtiaz.ae/property/le-blanc",
+   "docs_url": "https://imtiaz.ae/property/le-blanc",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/imtiaz-developments/le-blanc"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Imtiaz apartments in DLRC from AED 799,179; developer states completion Q2 2028. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://imtiaz.ae/property/le-blanc",
+    "https://www.propertyfinder.ae/en/new-projects/imtiaz-developments/le-blanc"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "le-blanc-by-imtiaz-dubai"
+  },
+  {
+   "name": "Unika",
+   "developer": "AEDAS Homes",
+   "area": "Estepona",
+   "country": "Spain",
+   "market": "Costa del Sol",
+   "stage": "off-plan",
+   "url": "https://www.aedashomes.com/en/new-homes-for-sale-estepona-unika",
+   "docs_url": "https://www.aedashomes.com/en/new-homes-for-sale-estepona-unika",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://obranueva.aedashomes.com/en/new-homes-estepona-unika"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "AEDAS development in Estepona; developer lists 2 and 3 bedroom homes from EUR 539,000. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://iberian.property/news/residential/aedas-homes-invests-eur200m-to-develop-380-new-homes-in-estepona/",
+    "https://issuu.com/aedashomes/docs/documentaci_n_unika_redidences_-eng_1",
+    "https://obranueva.aedashomes.com/en/new-homes-estepona-unika",
+    "https://www.aedashomes.com/en/new-homes-for-sale-estepona-unika"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "unika-costa-del-sol"
+  },
+  {
+   "name": "Evergreen Homes",
+   "developer": "Neinor Homes",
+   "area": "Mijas Costa (El Chaparral)",
+   "country": "Spain",
+   "market": "Costa del Sol",
+   "stage": "off-plan",
+   "url": "https://www.neinorhomes.com/en/promocion/evergreen-homes/",
+   "docs_url": "https://www.neinorhomes.com/en/promocion/evergreen-homes/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.lucasfox.com/new-development/evergreenhomes.html"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Townhouses next to El Chaparral golf in Mijas Costa; agents list from about EUR 776,000 to 817,000. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.lucasfox.com/new-development/evergreenhomes.html",
+    "https://www.neinorhomes.com/en/promocion/evergreen-homes/",
+    "https://www.realista.com/listings/36010"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "evergreen-homes-costa-del-sol"
+  },
+  {
+   "name": "Proa",
+   "developer": "Metrovacesa",
+   "area": "Velez-Malaga seafront",
+   "country": "Spain",
+   "market": "Costa del Sol",
+   "stage": "off-plan",
+   "url": "https://metrovacesa.com/en/developments/malaga/velez-malaga/proa",
+   "docs_url": "https://metrovacesa.com/en/developments/malaga/velez-malaga/proa",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://brainsre.news/metrovacesa-45-viviendas-unifamiliares-velez-malaga/"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Seafront development on the eastern Costa del Sol; developer announced the start of sales. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://brainsre.news/metrovacesa-45-viviendas-unifamiliares-velez-malaga/",
+    "https://metrovacesa.com/en/blog/metrovacesa-starts-marketing-proa-its-new-seafront-development-on-the-costa-del-sol",
+    "https://metrovacesa.com/en/developments/malaga/velez-malaga/proa"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "proa-costa-del-sol"
+  },
+  {
+   "name": "Medblue 4.1",
+   "developer": "Metrovacesa",
+   "area": "Marbella",
+   "country": "Spain",
+   "market": "Costa del Sol",
+   "stage": "off-plan",
+   "url": "https://metrovacesa.com/en/developments/malaga/marbella/medblue-4-1",
+   "docs_url": "https://metrovacesa.com/en/developments/malaga/marbella/medblue-4-1",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.fotocasa.es/en/buy/new-home/marbella/20598965"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Latest phase of the Medblue multi-family development in Marbella. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://metrovacesa.com/en/developments/malaga/marbella/medblue-4-1",
+    "https://www.fotocasa.es/en/buy/new-home/marbella/20598965",
+    "https://www.merca2.es/2024/10/18/metrovacesa-marbella-slim-2033577/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "medblue-4-1-costa-del-sol"
+  },
+  {
+   "name": "Bayz 102",
+   "developer": "Danube Properties",
+   "area": "Business Bay",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://danubeproperties.com/portfolio/bayz-102/",
+   "docs_url": "https://danubeproperties.com/portfolio/bayz-102/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/danube-properties/bayz-102"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Danube tower in Business Bay; developer states completion June 2029. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://danubeproperties.com/portfolio/bayz-102/",
+    "https://www.propertyfinder.ae/en/new-projects/danube-properties/bayz-102"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "bayz-102-dubai"
+  },
+  {
+   "name": "Oceanz by Danube",
+   "developer": "Danube Properties",
+   "area": "Dubai Maritime City",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "under construction",
+   "url": "https://danubeproperties.com/portfolio/oceanz/",
+   "docs_url": "https://danubeproperties.com/portfolio/oceanz/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as under construction (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/danube-properties/oceanz"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Danube apartments in Dubai Maritime City; developer states completion Q1 2027. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://danubeproperties.com/portfolio/oceanz/",
+    "https://www.propertyfinder.ae/en/new-projects/danube-properties/oceanz"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "oceanz-by-danube-dubai"
+  },
+  {
+   "name": "Fashionz by Danube",
+   "developer": "Danube Properties",
+   "area": "Jumeirah Village Triangle",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "under construction",
+   "url": "https://danubeproperties.com/portfolio/fashionz/",
+   "docs_url": "https://danubeproperties.com/portfolio/fashionz/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as under construction (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/danube-properties/fashionz-by-danube"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Danube apartments in JVT; developer states completion July 2027. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://danubeproperties.com/portfolio/fashionz/",
+    "https://www.propertyfinder.ae/en/new-projects/danube-properties/fashionz-by-danube"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "fashionz-by-danube-dubai"
+  },
+  {
+   "name": "Diamondz by Danube",
+   "developer": "Danube Properties",
+   "area": "Jumeirah Lake Towers",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "under construction",
+   "url": "https://danubeproperties.com/portfolio/diamondz/",
+   "docs_url": "https://danubeproperties.com/portfolio/diamondz/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as under construction (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/danube-properties/diamondz"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Danube tower in JLT; developer states completion November 2027. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://danubeproperties.com/portfolio/diamondz/",
+    "https://www.propertyfinder.ae/en/new-projects/danube-properties/diamondz"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "diamondz-by-danube-dubai"
+  },
+  {
+   "name": "The Watercrest",
+   "developer": "Ellington Properties",
+   "area": "Mohammed Bin Rashid City",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "under construction",
+   "url": "https://ellingtonproperties.ae/en/property-for-sale/the-watercrest-mohammed-bin-rashid-city",
+   "docs_url": "https://ellingtonproperties.ae/en/property-for-sale/the-watercrest-mohammed-bin-rashid-city",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as under construction (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/ellington/the-watercrest"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Ellington villas in MBR City; portal lists delivery Q3 2027. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://ellingtonproperties.ae/en/property-for-sale/the-watercrest-mohammed-bin-rashid-city",
+    "https://www.propertyfinder.ae/en/new-projects/ellington/the-watercrest"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "the-watercrest-dubai"
+  },
+  {
+   "name": "Eltiera Heights",
+   "developer": "Ellington Properties",
+   "area": "Jumeirah Islands",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://ellingtonproperties.ae/en/property-for-sale/eltiera-heights-jumeirah-islands",
+   "docs_url": "https://ellingtonproperties.ae/en/property-for-sale/eltiera-heights-jumeirah-islands",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/ellington/eltiera-heights"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Ellington apartments at Jumeirah Islands; portal lists delivery Q4 2028. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://ellingtonproperties.ae/en/property-for-sale/eltiera-heights-jumeirah-islands",
+    "https://www.propertyfinder.ae/en/new-projects/ellington/eltiera-heights"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "eltiera-heights-dubai"
+  },
+  {
+   "name": "Enre Residence",
+   "developer": "Imtiaz Developments",
+   "area": "Dubai South",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://imtiaz.ae/property/enre-residence-by-imtiaz",
+   "docs_url": "https://imtiaz.ae/property/enre-residence-by-imtiaz",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/imtiaz-developments/enre-residence"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Imtiaz apartments in Dubai South; developer states completion Q1 2028, portal Q3 2028. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://imtiaz.ae/property/enre-residence-by-imtiaz",
+    "https://www.propertyfinder.ae/en/new-projects/imtiaz-developments/enre-residence"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "enre-residence-dubai"
+  },
+  {
+   "name": "Samana Portside",
+   "developer": "Samana Developers",
+   "area": "Downtown Jebel Ali",
+   "country": "UAE",
+   "market": "Dubai",
+   "stage": "off-plan",
+   "url": "https://www.samanadevelopers.com/projects/samana-portside",
+   "docs_url": "https://www.samanadevelopers.com/projects/samana-portside",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.propertyfinder.ae/en/new-projects/samana-developers/samana-portside"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Samana apartments in Downtown Jebel Ali from AED 1.1m; portal lists delivery Q2 2029. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://www.propertyfinder.ae/en/new-projects/samana-developers/samana-portside",
+    "https://www.samanadevelopers.com/projects/samana-portside"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "samana-portside-dubai"
+  },
+  {
+   "name": "Limassol Greens",
+   "developer": "Cybarco",
+   "area": "Limassol (golf resort)",
+   "country": "Cyprus",
+   "market": "Cyprus",
+   "stage": "under construction",
+   "url": "https://www.cybarco.com/project/limassol-greens/",
+   "docs_url": "https://www.cybarco.com/project/limassol-greens/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as under construction (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://cyprus-mail.com/2025/09/15/limassol-greens-welcomes-first-residents-as-project-enters-new-chapter"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Golf resort community near Limassol; first residents moved in September 2025 while later phases are built. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://cyprus-mail.com/2025/09/15/limassol-greens-welcomes-first-residents-as-project-enters-new-chapter",
+    "https://www.cybarco.com/project/limassol-greens/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "limassol-greens-cyprus"
+  },
+  {
+   "name": "Konia Green",
+   "developer": "Pafilia Property Developers",
+   "area": "Konia, Paphos",
+   "country": "Cyprus",
+   "market": "Cyprus",
+   "stage": "off-plan",
+   "url": "https://www.pafilia.com/properties/all/paphos/konia-green/",
+   "docs_url": "https://www.pafilia.com/properties/all/paphos/konia-green/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://dom.com.cy/en/live/complexes/luxury-complex-paphos/konia-greens/"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Villas in Konia above Paphos by Pafilia. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://dom.com.cy/en/live/complexes/luxury-complex-paphos/konia-greens/",
+    "https://www.pafilia.com/properties/all/paphos/konia-green/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "konia-green-cyprus"
+  },
+  {
+   "name": "Rivage Bal Harbour",
+   "developer": "The Related Group with Two Roads Development",
+   "area": "Bal Harbour",
+   "country": "USA",
+   "market": "Miami",
+   "stage": "under construction",
+   "url": "https://www.rivagebalharbour.com/",
+   "docs_url": "https://www.rivagebalharbour.com/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as under construction (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://southfloridaagentmagazine.com/2025/01/08/rivage-residences-bal-harbour-construction-loan/"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Oceanfront condominium in Bal Harbour; construction began September 2024 with a reported USD 424m construction loan (January 2025). (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://profilemiamire.com/miamirealestate/2024/9/23/construction-begins-on-ultra-luxury-rivage-bal-harbour-condominium-development",
+    "https://southfloridaagentmagazine.com/2025/01/08/rivage-residences-bal-harbour-construction-loan/",
+    "https://www.bisnow.com/news/south-florida/multifamily/related-two-roads-launch-bal-harbor-condo-tower-with-65m-penthouse-117270",
+    "https://www.rivagebalharbour.com/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "rivage-bal-harbour-miami"
+  },
+  {
+   "name": "Casa Bella Residences by B&B Italia",
+   "developer": "The Related Group with Alta Developers",
+   "area": "Arts and Entertainment District, Downtown Miami",
+   "country": "USA",
+   "market": "Miami",
+   "stage": "under construction",
+   "url": "https://www.casabellaresidences.com/",
+   "docs_url": "https://www.casabellaresidences.com/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as under construction (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://floridayimby.com/2025/07/casa-bella-residences-by-bb-italia-tops-off-at-56-stories-in-downtown-miami.html"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "56-storey condominium at 1400 Biscayne Boulevard; construction started November 2023 with USD 240m financing and topped off July 2025. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://commercialobserver.com/2023/11/related-group-alta-casa-bella-residences-by-bb-italia",
+    "https://floridayimby.com/2025/07/casa-bella-residences-by-bb-italia-tops-off-at-56-stories-in-downtown-miami.html",
+    "https://www.casabellaresidences.com/",
+    "https://www.multihousingnews.com/related-group-jv-breaks-ground-on-miami-condo-tower/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "casa-bella-residences-by-b-b-italia-miami"
+  },
+  {
+   "name": "ELLE Residences Miami",
+   "developer": "Lagardere licence with local developer",
+   "area": "Edgewater, Miami",
+   "country": "USA",
+   "market": "Miami",
+   "stage": "off-plan",
+   "url": "https://www.elleresidencesmiami.com/",
+   "docs_url": "https://www.elleresidencesmiami.com/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://commercialobserver.com/2024/05/elle-magazine-condo-miami-lagardere/"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "25-storey branded condominium in Edgewater launched May 2024; developer lists units from USD 600,000. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://commercialobserver.com/2024/05/elle-magazine-condo-miami-lagardere/",
+    "https://profilemiamire.com/miamirealestate/2024/5/30/elle-launches-first-residential-tower-in-miamis-edgewater-neighborhood",
+    "https://www.bisnow.com/news/south-florida/multifamily/elle-signs-on-to-brand-a-fashion-forward-condo-tower-in-edgewater-124467",
+    "https://www.elleresidencesmiami.com/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "elle-residences-miami-miami"
+  },
+  {
+   "name": "Altura 160",
+   "developer": "Taylor Wimpey Espana (land from Quartiers Properties)",
+   "area": "Benahavis, Marbella",
+   "country": "Spain",
+   "market": "Costa del Sol",
+   "stage": "off-plan",
+   "url": "https://taylorwimpeyspain.com/es/casa/altura-160-benahavis-marbella-malaga/",
+   "docs_url": "https://taylorwimpeyspain.com/es/casa/altura-160-benahavis-marbella-malaga/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://www.property-magazine.eu/quartiers-and-taylor-wimpey-close-altura-160-deal-65818.html"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "Apartments in Benahavis on land bought from Quartiers Properties. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://taylorwimpeyspain.com/es/casa/altura-160-benahavis-marbella-malaga/",
+    "https://www.mosaicrealty.es/projects-in-benahavis/altura-160-new-development-in-benahavis/",
+    "https://www.property-magazine.eu/quartiers-and-taylor-wimpey-close-altura-160-deal-65818.html"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "altura-160-costa-del-sol"
+  },
+  {
+   "name": "Sunny Golf",
+   "developer": "Taylor Wimpey Espana",
+   "area": "Estepona (golf)",
+   "country": "Spain",
+   "market": "Costa del Sol",
+   "stage": "off-plan",
+   "url": "https://taylorwimpeyspain.com/es/casa/sunny-golf-estepona-malaga/",
+   "docs_url": "https://taylorwimpeyspain.com/es/casa/sunny-golf-estepona-malaga/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": null,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Sold as off-plan (stage as published by an independent source)",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://golfbusinessnews.com/news/property/taylor-wimpey-espana-begins-property-development-at-estepona"
+    }
+   ],
+   "facts": {
+    "lat": null,
+    "lng": null,
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "delay_months": null,
+    "developer_founded": null
+   },
+   "note": "69 homes beside a golf course in Estepona. (checked 5 Nov 2026)",
+   "positives": [],
+   "flags": [],
+   "sources": [
+    "https://golfbusinessnews.com/news/property/taylor-wimpey-espana-begins-property-development-at-estepona",
+    "https://taylorwimpeyspain.com/es/casa/sunny-golf-estepona-malaga/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": false,
+    "score": 0,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-manual",
+   "slug": "sunny-golf-costa-del-sol"
   }
  ]
 }
