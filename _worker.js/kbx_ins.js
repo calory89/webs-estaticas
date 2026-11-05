@@ -7,7 +7,8 @@
 //                                           every citation must name an evidence line and quote text found in it, and every number
 //                                           in the answer must appear in the cited lines, else the answer is refused. Cached, per-IP limit.
 //   GET  /api/x/ins/indices?market=Bali     the market page "Indices" block: delay, promises, hazards, company graph, insolvency, prices
-// The weekly digest (/digest/) and the change heatmap (/changes/) are static files built by .github/workflows/kolaboro-digest.yml on main.
+//   GET  /api/x/ins/digest.json | /feed.xml   the weekly digest data (carried inside /digest/index.html) and its RSS feed
+// The weekly digest and change heatmap page (/digest/, heatmap at /digest/#changes) is built by .github/workflows/kolaboro-digest.yml on main.
 import * as KB from './kolaboro.js';
 const { json, claude, openData, rateLimited, qnorm } = KB;
 export const PATHS = /^\/api\/x\/ins(\/|$)/;
@@ -41,6 +42,25 @@ async function file(env, name) {
   try { const r = await env.ASSETS.fetch(new Request(SITE + '/_s/kolaboro.com/data/' + name)); if (r.ok) v = await r.json(); } catch (e) {}
   if (!v) { try { const r = await fetch(SITE + '/data/' + name, { cf: { cacheTtl: 300, cacheEverything: true } }); if (r.ok) v = await r.json(); } catch (e) {} }
   MEMO[name] = { t: Date.now(), v }; return v;
+}
+// The weekly digest data rides inside /digest/index.html (one file, Pages file budget); served here as JSON and RSS.
+let DG = { t: 0, v: null };
+async function digestData(env) {
+  if (DG.v && Date.now() - DG.t < 300000) return DG.v;
+  let h = null;
+  try { const r = await env.ASSETS.fetch(new Request(SITE + '/_s/kolaboro.com/digest/index.html')); if (r.ok) h = await r.text(); } catch (e) {}
+  if (!h) { try { const r = await fetch(SITE + '/digest/', { cf: { cacheTtl: 300 } }); if (r.ok) h = await r.text(); } catch (e) {} }
+  const m = h && h.match(/<script[^>]*id="digest-data"[^>]*>([\s\S]*?)<\/script>/);
+  let v = null; try { v = m ? JSON.parse(m[1].replace(/<\\\//g, '</')) : null; } catch (e) {}
+  DG = { t: Date.now(), v }; return v;
+}
+const xesc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' }[c]));
+function feed(D) {
+  const items = (D.weeks || []).slice().sort((a, b) => a.id < b.id ? 1 : -1).filter(w => w.intro).map(w => {
+    const link = SITE + '/digest/' + (w.id === D.latest ? '' : '#w-' + w.id);
+    return '<item><title>' + xesc('Kolaboro weekly digest, week ' + (+w.id.slice(5)) + ' ' + w.id.slice(0, 4) + (w.partial ? ' (to date)' : '')) + '</title><link>' + xesc(link) + '</link><guid isPermaLink="false">kolaboro-digest-' + w.id + (w.partial ? '-' + w.to : '') + '</guid><pubDate>' + new Date(w.generated).toUTCString() + '</pubDate><description>' + xesc(w.intro.text) + '</description></item>';
+  }).join('');
+  return '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kolaboro weekly market digest</title><link>' + SITE + '/digest/</link><atom:link href="' + SITE + '/api/x/ins/feed.xml" rel="self" type="application/rss+xml"/><description>New off-plan projects, slipped dates, moved promises, page, register and satellite changes, by market. Counted by code from the public data.</description><language>en</language>' + items + '</channel></rss>\n';
 }
 async function cases(env) { const d = (await file(env, 'bali-cases.json')) || (await openData()); return d; }
 
@@ -222,9 +242,15 @@ export async function handle(req, u, env, ctx) {
   try {
     if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: { 'access-control-allow-origin': '*', 'access-control-allow-methods': 'GET, POST, OPTIONS', 'access-control-allow-headers': 'content-type' } });
     if (p === '/api/x/ins' || p === '/api/x/ins/status') {
-      const [d, dg, ch] = await Promise.all([cases(env), file(env, 'digest.json'), file(env, 'changes.json')]);
-      return out({ module: 'ins', projects: ((d && d.cases) || []).length, updated: d && d.updated, ask: !!env.ANTHROPIC_API_KEY, digest: dg ? { latest: dg.latest, weeks: (dg.weeks || []).length, generated: dg.generated } : null, changes: ch ? { generated: ch.generated } : null,
-        endpoints: ['/api/x/ins/explain?id=', '/api/x/ins/evidence?id=', 'POST /api/x/ins/ask {id,q}', '/api/x/ins/indices?market='], pages: ['/digest/', '/changes/', '/explain/?id='] }, 200, 60);
+      const [d, dg] = await Promise.all([cases(env), digestData(env)]);
+      return out({ module: 'ins', projects: ((d && d.cases) || []).length, updated: d && d.updated, ask: !!env.ANTHROPIC_API_KEY, digest: dg ? { latest: dg.latest, weeks: (dg.weeks || []).length, generated: dg.generated, changes_generated: (dg.changes || {}).generated } : null,
+        endpoints: ['/api/x/ins/explain?id=', '/api/x/ins/evidence?id=', 'POST /api/x/ins/ask {id,q}', '/api/x/ins/indices?market=', '/api/x/ins/digest.json', '/api/x/ins/feed.xml'], pages: ['/digest/', '/digest/#changes', '/explain/?id='] }, 200, 60);
+    }
+    if (p === '/api/x/ins/digest.json' || p === '/api/x/ins/feed.xml') {
+      const D = await digestData(env);
+      if (!D) return out({ error: 'not_built_yet', message: 'The weekly digest has not been published yet.' }, 503);
+      if (p.endsWith('.json')) return out(D, 200, 300);
+      return new Response(feed(D), { headers: { 'content-type': 'application/rss+xml; charset=utf-8', 'cache-control': 'public, max-age=600', 'access-control-allow-origin': '*' } });
     }
     if (p === '/api/x/ins/explain' || p === '/api/x/ins/evidence') {
       const id = String(u.searchParams.get('id') || '').trim().toUpperCase();
