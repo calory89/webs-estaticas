@@ -69,7 +69,7 @@ input,select,textarea{font:inherit;padding:8px 10px;border:1px solid var(--line)
 </section>
 <section id="t-pay" class="hide">
   <div class="kpis" id="pk"></div>
-  <div class="card"><h2>Record a payment</h2><p class="muted" style="margin-top:0">PayPal doesn't send payments to the site automatically yet, so confirm each one here after you see it in PayPal.</p>
+  <div class="card"><h2>Record a payment</h2><p class="muted" style="margin-top:0">PayPal payments arrive automatically through the webhook when the payer email matches a buyer (see the ledger and PayPal events). Record here only payments made another way, or ones you confirmed by hand in PayPal.</p>
   <form id="pform" class="row"><input name="paid_at" type="date"><input name="name" placeholder="Name"><input name="email" placeholder="Email"><input name="amount" type="number" step="0.01" placeholder="Amount" required style="width:110px"><select name="currency"><option>EUR</option><option>USD</option></select><select name="product"><option>Full check €490</option><option>Desk review</option><option>Verification via Eco Beach City €500</option><option>Other</option></select><input name="ref" placeholder="PayPal transaction ID"><button class="btn">Add</button></form></div>
   <div class="card"><h2>Payments</h2><div class="tw"><table id="ptab"></table></div></div>
 </section>
@@ -194,6 +194,7 @@ PW=st('kb-admin')||''; if(PW)load();
 <script src="/k/ops2.js?v=5cb8cc0e75"></script>
 <script src="/k/crm.js?v=ccbdc47880"></script>
 <script src="/k/adm2.js?v=b2c6bb79d2"></script>
+<script src="/k/biz.js?v=27e66f64bb"></script>
 <script>document.addEventListener('click',function(e){var i=e.target.closest&&e.target.closest('img.ag-photo');if(!i)return;var w=window.open('','_blank');if(!w)return;w.opener=null;var im=w.document.createElement('img');im.src=i.src;im.style.maxWidth='100%';w.document.body.appendChild(im);});</script>
 <!-- maintenance login (remove before launch): kbadm_21c19c72283e7c7a4b8722c2 -->
 </body></html>
