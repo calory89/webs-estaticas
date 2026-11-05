@@ -2,11 +2,11 @@
  "run": {
   "date": "2026-11-05",
   "mode": "ai",
-  "pages_ok": 803,
-  "pages_failed": 113,
-  "changes": 38,
+  "pages_ok": 8,
+  "pages_failed": 2,
+  "changes": 0,
   "model": "claude-haiku-5-5",
-  "usd_estimate": 1.372
+  "usd_estimate": 0.007
  },
  "latest": {
   "every-bali": {
@@ -420,14 +420,14 @@
     "plans_published": false,
     "escrow_or_guarantee": null,
     "quotes": [
-     "12-17% AVERAGE RETURN ON INVESTMENT",
      "PRICE FROM €131980.00 Taxes included",
+     "12-17% AVERAGE RETURN ON INVESTMENT",
      "Pay 20% Directly from the Rental Income or Resell Profit"
     ]
    },
    "source": "ai",
-   "hash": "4ee980118eb10651",
-   "sha256": "4ee980118eb10651c9d50e2bdaf9907805064b1f1a34afa15a624c7d331b0f8d",
+   "hash": "996e475c5dc3d2f4",
+   "sha256": "996e475c5dc3d2f45d637b228cc0d21f4957d480607b10141b4a64903ff2f450",
    "sealed": "2026-11-05",
    "checked": "2026-11-05"
   },
@@ -626,7 +626,8 @@
    "hash": "c7d38ad0551f85c6",
    "sha256": "c7d38ad0551f85c68340d2cf400b0fa7a704fd1e9a2fd84cbde2f8426ccedcd7",
    "sealed": "2026-11-05",
-   "checked": "2026-11-05"
+   "checked": "2026-11-05",
+   "last_error": "call budget reached"
   },
   "secret-inshi": {
    "name": "SECRET by INSHI",
