@@ -349,7 +349,7 @@ let IMG = null;
 async function imageIndex(env) {
   if (IMG && Date.now() - IMG.t < 600000) return IMG.v;
   let v = null;
-  try { const r = env.ASSETS ? await env.ASSETS.fetch(new Request('https://kolaboro.com/data/image-hashes.json')) : await fetch('https://kolaboro.com/data/image-hashes.json'); if (r.ok) v = await r.json(); } catch (e) {}
+  try { const r = env.ASSETS ? await env.ASSETS.fetch(new Request('https://kolaboro.com/_s/kolaboro.com/data/image-hashes.json')) : await fetch('https://kolaboro.com/data/image-hashes.json'); if (r.ok) v = await r.json(); } catch (e) {}
   IMG = { t: Date.now(), v }; return v;
 }
 function ham(a, b) { let d = 0; for (let i = 0; i < 16; i += 8) { let x = parseInt(a.substr(i, 8), 16) ^ parseInt(b.substr(i, 8), 16); while (x) { x &= x - 1; d++; } } return d; }
@@ -586,7 +586,7 @@ let COV = null;
 async function coverage(env) {
   if (COV && Date.now() - COV.t < 300000) return COV.v;
   let v = null;
-  try { const r = env.ASSETS ? await env.ASSETS.fetch(new Request('https://kolaboro.com/data/lookup-coverage.json')) : await fetch('https://kolaboro.com/data/lookup-coverage.json'); if (r.ok) v = await r.json(); } catch (e) {}
+  try { const r = env.ASSETS ? await env.ASSETS.fetch(new Request('https://kolaboro.com/_s/kolaboro.com/data/lookup-coverage.json')) : await fetch('https://kolaboro.com/data/lookup-coverage.json'); if (r.ok) v = await r.json(); } catch (e) {}
   COV = { t: Date.now(), v }; return v;
 }
 async function stats(ctx) {
