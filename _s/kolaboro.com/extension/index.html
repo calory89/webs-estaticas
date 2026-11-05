@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+<script>(function(d){d.setAttribute('data-kdk','');try{var t=localStorage.getItem('kb-theme')}catch(e){}if(t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches))d.setAttribute('data-theme','dark')})(document.documentElement)</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Kolaboro browser extension: check off-plan projects in one click | Kolaboro</title>
@@ -19,7 +20,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://kolaboro.com/k/og/pricing.png">
 <link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/k/site.css?v=19bd3287d2">
+<link rel="stylesheet" href="/k/site.css?v=68f27c0597">
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Kolaboro","url":"https://kolaboro.com/","logo":"https://kolaboro.com/k/favicon.svg"},{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Kolaboro: check off-plan projects","applicationCategory":"BrowserApplication","operatingSystem":"Chrome","softwareVersion":"1.1.0","url":"https://kolaboro.com/extension/","downloadUrl":"https://kolaboro.com/extension/kolaboro-extension.zip","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}]</script>
 <script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',region:["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});try{if(localStorage.getItem('kb-consent')==='yes')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}</script><script>addEventListener("load",function(){setTimeout(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V";document.head.appendChild(s)},1500)})</script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');gtag('config','G-H5TGZJ1KNG');</script>
 
@@ -51,19 +52,19 @@
 .ext-shot figcaption{margin-top:10px;font-size:.88rem;color:var(--muted);text-align:center}
 .ext-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:32px}
 .ext-card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:22px}
-.sec.alt .ext-card{background:#fff}
+.sec.alt .ext-card{background:var(--card,#fff)}
 .ext-card h3{font-size:1.15rem;line-height:1.25;margin-bottom:8px}
 .ext-card p{color:var(--ink-2);font-size:1rem}
-.ext-ico{width:40px;height:40px;border-radius:10px;background:var(--ink);color:var(--paper);display:grid;place-items:center;margin-bottom:14px}
+.ext-ico{width:40px;height:40px;border-radius:10px;background:var(--band);color:var(--band-ink);display:grid;place-items:center;margin-bottom:14px}
 .ext-ico svg{width:22px;height:22px}
 .ext-pair{display:grid;grid-template-columns:repeat(2,minmax(0,320px));gap:clamp(20px,4vw,48px);margin-top:32px;justify-content:start}
 .ext-steps{list-style:none;counter-reset:s;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:32px}
-.ext-steps li{counter-increment:s;background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px}
+.ext-steps li{counter-increment:s;background:var(--card,#fff);border:1px solid var(--line);border-radius:16px;padding:22px}
 .ext-steps li::before{content:counter(s);display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--hivis);color:#170800;font-weight:800;margin-bottom:12px}
 .ext-steps b{display:block;margin-bottom:6px}
 .ext-steps p{font-size:.98rem;color:var(--ink-2)}
 .ext-steps code,.ext-perm code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.9em;background:var(--concrete);padding:.1em .35em;border-radius:5px;word-break:break-all}
-.ext-note{margin-top:24px;display:flex;gap:12px;align-items:flex-start;background:#fff;border:1px dashed var(--ink);border-radius:14px;padding:16px 18px;max-width:760px}
+.ext-note{margin-top:24px;display:flex;gap:12px;align-items:flex-start;background:var(--card,#fff);border:1px dashed var(--ink);border-radius:14px;padding:16px 18px;max-width:760px}
 .ext-note b{white-space:nowrap}
 .ext-perm{margin-top:28px;border-top:1px solid var(--line)}
 .ext-perm div{display:grid;grid-template-columns:minmax(140px,220px) 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
@@ -75,7 +76,7 @@
 .ov-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(24px,4vw,56px);align-items:start;margin-top:24px}
 .ov-p{margin-top:14px;color:var(--ink-2)}
 .ov-card{margin:0;justify-self:center;width:100%;max-width:300px}
-.ov-card>.ov-h{display:flex;align-items:center;gap:8px;background:var(--ink);color:var(--paper);padding:10px 12px;border-radius:14px 14px 0 0}
+.ov-card>.ov-h{display:flex;align-items:center;gap:8px;background:var(--band);color:var(--band-ink);padding:10px 12px;border-radius:14px 14px 0 0}
 .ov-h span{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.8rem;color:#C9CDD1}.ov-h i{margin-left:auto;font-style:normal;font-size:1.2rem}
 .ov-c{background:var(--paper);border:1px solid var(--line);border-top:0;border-radius:0 0 14px 14px;padding:12px;box-shadow:0 18px 50px -18px rgba(23,33,43,.55);font-size:.92rem}
 .ov-n{font-size:1.4rem}.ov-t{display:inline-block;margin-top:6px;font-size:.78rem;font-weight:700;color:#fff;background:#8A5A00;border-radius:999px;padding:2px 9px}
@@ -243,7 +244,7 @@
     <p class="fine">© 2026 Kolaboro, operated by Equinox Investment Group LLC, 30 N Gould St Ste N, Sheridan, WY 82801, USA. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Reports are opinions based on the evidence listed in them.</p>
   </div>
 </footer>
-<script src="/k/site.js?v=d376a5d53b" defer></script><script src="/k/prov.js?v=84ab22bafb" defer></script>
+<script src="/k/site.js?v=1db3e557e9" defer></script><script src="/k/prov.js?v=84ab22bafb" defer></script>
 <script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script>
 <div class="cc" id="cc" role="dialog" aria-label="Cookies" hidden><p>We use analytics cookies to improve Kolaboro. <a href="/legal/privacy">Privacy</a></p><div><button class="btn btn-line btn-sm" data-cc="no">Only necessary</button><button class="btn btn-hi btn-sm" data-cc="yes">Accept</button></div></div>
 <script>(function(){var EU=["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"];var st=null;try{st=localStorage;}catch(e){}var c=st&&st.getItem('kb-consent');if(c)return;

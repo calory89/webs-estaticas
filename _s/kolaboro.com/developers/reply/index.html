@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+<script>(function(d){d.setAttribute('data-kdk','');try{var t=localStorage.getItem('kb-theme')}catch(e){}if(t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches))d.setAttribute('data-theme','dark')})(document.documentElement)</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Developer right of reply | Kolaboro</title>
@@ -19,7 +20,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://kolaboro.com/k/og/pricing.png">
 <link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/k/site.css?v=19bd3287d2">
+<link rel="stylesheet" href="/k/site.css?v=68f27c0597">
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "name": "Kolaboro", "url": "https://kolaboro.com/", "logo": "https://kolaboro.com/k/favicon.svg", "description": "A network of local buyer's agents for overseas property, trained by AI and proven on the ground."}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Who pays Kolaboro?", "acceptedAnswer": {"@type": "Answer", "text": "Buyers pay for checks and monitoring. Developers never pay Kolaboro: the evidence sets every Score. Agents never take money from developers."}}, {"@type": "Question", "name": "Is Kolaboro a lawyer or a notary?", "acceptedAnswer": {"@type": "Answer", "text": "No. Kolaboro agents verify facts on the ground and in documents and tell you what they found. For legal advice and to sign, use an independent lawyer or notary; we can tell you what to ask them."}}, {"@type": "Question", "name": "Do you hold my money?", "acceptedAnswer": {"@type": "Answer", "text": "Not yet. Today your agent confirms each milestone on site and tells you whether the evidence supports paying. Milestone escrow with licensed partners is on our roadmap."}}, {"@type": "Question", "name": "Where do you work?", "acceptedAnswer": {"@type": "Answer", "text": "We are launching in Bali first and adding cities as we train local agents. If you are buying somewhere else, tell us where: demand decides the next city."}}, {"@type": "Question", "name": "How do you decide \"go\" or \"hold\"?", "acceptedAnswer": {"@type": "Answer", "text": "Nine checks, from land title to realistic promises. A red flag on title, permits or progress means \"hold\" until it is fixed, and every finding links to its evidence. The full method is public."}}, {"@type": "Question", "name": "Can a developer influence a report?", "acceptedAnswer": {"@type": "Answer", "text": "Only with evidence. Developers can send documents and reply, but never pay us. Where something can't be verified, the report says so instead of guessing."}}, {"@type": "Question", "name": "What if I already bought?", "acceptedAnswer": {"@type": "Answer", "text": "That's when monitoring matters most. We can verify where construction really is before your next payment."}}]}]</script>
 <script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',region:["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});try{if(localStorage.getItem('kb-consent')==='yes')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}</script><script>addEventListener("load",function(){setTimeout(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V";document.head.appendChild(s)},1500)})</script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');gtag('config','G-H5TGZJ1KNG');</script>
 
@@ -48,26 +49,26 @@
 <style>
 .dr{max-width:820px}.dr h2{margin-top:44px}.dr-st{border:2px solid var(--ink);border-radius:18px;padding:16px 18px;background:var(--paper);margin:0 0 22px;font-size:.98rem}
 .dr-st.soon{border-color:var(--hivis);background:#FFF2EA}.dr-st b{display:block;margin-bottom:4px}
-.dr-step{border:1px solid var(--line);border-radius:20px;padding:clamp(18px,3vw,28px);background:#fff;margin-top:18px}
-.dr-step>h3{margin:0 0 4px;display:flex;gap:10px;align-items:baseline;font-size:1.15rem}.dr-step>h3 i{font-style:normal;background:var(--ink);color:#fff;border-radius:999px;min-width:28px;height:28px;display:inline-grid;place-items:center;font-size:.85rem;flex:0 0 auto}
+.dr-step{border:1px solid var(--line);border-radius:20px;padding:clamp(18px,3vw,28px);background:var(--card,#fff);margin-top:18px}
+.dr-step>h3{margin:0 0 4px;display:flex;gap:10px;align-items:baseline;font-size:1.15rem}.dr-step>h3 i{font-style:normal;background:var(--band);color:#fff;border-radius:999px;min-width:28px;height:28px;display:inline-grid;place-items:center;font-size:.85rem;flex:0 0 auto}
 .dr-step p{margin:6px 0}.dr-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.dr label.f{margin-top:14px;max-width:none}
-.dr input:not([type=checkbox]):not([type=file]),.dr select,.dr textarea{font:inherit;font-size:1rem;padding:12px 14px;border:2px solid #B9B7AF;border-radius:12px;background:#fff;color:var(--ink);width:100%;box-sizing:border-box}
+.dr input:not([type=checkbox]):not([type=file]),.dr select,.dr textarea{font:inherit;font-size:1rem;padding:12px 14px;border:2px solid #B9B7AF;border-radius:12px;background:var(--card,#fff);color:var(--ink);width:100%;box-sizing:border-box}
 .dr input:focus,.dr select:focus,.dr textarea:focus{outline:none;border-color:var(--ink)}
 .dr-rec{display:grid;grid-template-columns:110px 1fr;gap:6px 12px;font-size:.92rem;background:#17212B;color:#E6EAEE;border-radius:14px;padding:14px 16px;margin-top:14px;overflow-wrap:anywhere}
 .dr-rec span{color:#9AA6B2}.dr-rec code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9rem}
-.dr-b{display:inline-flex;align-items:center;gap:.4em;font:inherit;font-weight:700;font-size:.92rem;padding:.6rem 1rem;border-radius:999px;border:2px solid var(--ink);background:#fff;color:var(--ink);cursor:pointer}
+.dr-b{display:inline-flex;align-items:center;gap:.4em;font:inherit;font-weight:700;font-size:.92rem;padding:.6rem 1rem;border-radius:999px;border:2px solid var(--ink);background:var(--card,#fff);color:var(--ink);cursor:pointer}
 .dr-b:disabled{opacity:.5;cursor:not-allowed}.dr-acts{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px;align-items:center}
 .dr-res{font-size:.92rem;margin-top:10px}.dr-ok{color:var(--ok);font-weight:700}.dr-no{color:var(--hivis-ink);font-weight:700}
-.dr-drop{border:2px dashed #B9B7AF;border-radius:14px;padding:18px;text-align:center;margin-top:12px;cursor:pointer}.dr-drop.on{border-color:var(--ink);background:#F6F6F3}
+.dr-drop{border:2px dashed #B9B7AF;border-radius:14px;padding:18px;text-align:center;margin-top:12px;cursor:pointer}.dr-drop.on{border-color:var(--ink);background:var(--t-bg,#F6F6F3)}
 .dr-docs{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:10px}.dr-docs li{border:1px solid var(--line);border-radius:14px;padding:12px;display:grid;grid-template-columns:1fr 170px auto;gap:8px 10px;align-items:center}
 .dr-docs li .h{grid-column:1/-1;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.78rem;color:var(--muted);overflow-wrap:anywhere}
 .dr-docs li input{grid-column:1/-1}.dr-docs li b{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .dr-x{border:0;background:none;font-size:1.3rem;cursor:pointer;color:var(--muted)}
 .dr-chk{display:flex;gap:10px;align-items:flex-start;margin-top:14px;font-weight:500}.dr-chk input{margin-top:4px;width:18px;height:18px;flex:0 0 auto}
-.dr-pub{display:grid;gap:14px;margin-top:14px}.dr-card{border:1px solid var(--line);border-radius:16px;padding:16px;background:#fff}.dr-card small{color:var(--muted)}
+.dr-pub{display:grid;gap:14px;margin-top:14px}.dr-card{border:1px solid var(--line);border-radius:16px;padding:16px;background:var(--card,#fff)}.dr-card small{color:var(--muted)}
 .dr-card pre{white-space:pre-wrap;font:inherit;margin:8px 0}.dr-h{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.78rem;overflow-wrap:anywhere;color:var(--muted)}
-.dr-q{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}.dr-q div{border:1px solid var(--line);border-radius:16px;padding:16px;background:#fff}.dr-q h3{margin:0 0 6px;font-size:1.02rem}
-.dr details{margin-top:30px;border:1px solid var(--line);border-radius:16px;padding:14px 18px;background:#fff}.dr summary{cursor:pointer;font-weight:700}
+.dr-q{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}.dr-q div{border:1px solid var(--line);border-radius:16px;padding:16px;background:var(--card,#fff)}.dr-q h3{margin:0 0 6px;font-size:1.02rem}
+.dr details{margin-top:30px;border:1px solid var(--line);border-radius:16px;padding:14px 18px;background:var(--card,#fff)}.dr summary{cursor:pointer;font-weight:700}
 @media(max-width:700px){.dr-row,.dr-q{grid-template-columns:1fr}.dr-docs li{grid-template-columns:1fr auto}.dr-docs li select{grid-column:1/-1;grid-row:2}.dr-rec{grid-template-columns:1fr}.dr-rec span{margin-top:6px}}
 </style>
 <section class="sec" style="padding-top:28px"><div class="wrap dr">
@@ -228,7 +229,7 @@
     <p class="fine">© 2026 Kolaboro, operated by Equinox Investment Group LLC, 30 N Gould St Ste N, Sheridan, WY 82801, USA. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Reports are opinions based on the evidence listed in them.</p>
   </div>
 </footer>
-<script src="/k/ask.js?v=544be9f9c8" defer></script><script src="/k/pipeline.js?v=c1da74b911" defer></script><script src="/k/site.js?v=d376a5d53b" defer></script><script src="/k/prov.js?v=84ab22bafb" defer></script>
+<script src="/k/ask.js?v=544be9f9c8" defer></script><script src="/k/pipeline.js?v=c1da74b911" defer></script><script src="/k/site.js?v=1db3e557e9" defer></script><script src="/k/prov.js?v=84ab22bafb" defer></script>
 <script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script>
 <div class="cc" id="cc" role="dialog" aria-label="Cookies" hidden><p>We use analytics cookies to improve Kolaboro. <a href="/legal/privacy">Privacy</a></p><div><button class="btn btn-line btn-sm" data-cc="no">Only necessary</button><button class="btn btn-hi btn-sm" data-cc="yes">Accept</button></div></div>
 <script>(function(){var EU=["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"];var st=null;try{st=localStorage;}catch(e){}var c=st&&st.getItem('kb-consent');if(c)return;

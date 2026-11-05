@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+<script>(function(d){d.setAttribute('data-kdk','');try{var t=localStorage.getItem('kb-theme')}catch(e){}if(t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches))d.setAttribute('data-theme','dark')})(document.documentElement)</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Project alerts: get notified when a record changes | Kolaboro</title>
@@ -19,7 +20,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://kolaboro.com/k/og/pricing.png">
 <link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/k/site.css?v=19bd3287d2">
+<link rel="stylesheet" href="/k/site.css?v=68f27c0597">
 <script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Kolaboro","url":"https://kolaboro.com/","logo":"https://kolaboro.com/k/favicon.svg"}]</script>
 <script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',region:["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});try{if(localStorage.getItem('kb-consent')==='yes')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}</script><script>addEventListener("load",function(){setTimeout(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V";document.head.appendChild(s)},1500)})</script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');gtag('config','G-H5TGZJ1KNG');</script>
 
@@ -44,25 +45,25 @@
 <main id="main">
 <style>
 .al-hero{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(28px,5vw,64px);align-items:start}
-.al-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px}
+.al-card{background:var(--card,#fff);border:1px solid var(--line);border-radius:18px;padding:22px}
 .al-state{border-radius:12px;padding:12px 14px;font-size:.98rem;margin-bottom:16px;background:var(--paper)}
-.al-state.ok{background:var(--ok-bg)}.al-state.soon{background:#FFF1E8;border:1px dashed var(--hivis)}
+.al-state.ok{background:var(--ok-bg)}.al-state.soon{background:var(--t-warn-bg,#FFF1E8);border:1px dashed var(--hivis)}
 .al-card label{display:block;font-weight:700;margin-bottom:6px}
 .al-row{display:flex;gap:10px;flex-wrap:wrap}
 .al-row input{flex:1 1 160px;min-width:0;font:inherit;font-size:1.05rem;padding:.8rem 1rem;border:2px solid var(--ink);border-radius:12px;text-transform:uppercase;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
 .al-row .btn{flex:0 0 auto}
-.al-msg{margin-top:12px;font-size:.98rem;color:var(--ink-2);min-height:1.5em}.al-msg.ok{color:var(--ok);font-weight:700}.al-msg.bad{color:#B3261E}
+.al-msg{margin-top:12px;font-size:.98rem;color:var(--ink-2);min-height:1.5em}.al-msg.ok{color:var(--ok);font-weight:700}.al-msg.bad{color:var(--t-bad,#B3261E)}
 #al-proj{margin-top:14px;border-top:1px solid var(--line);padding-top:12px;font-size:.98rem}
 .al-pid{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-weight:700}
-.al-bad{color:#B3261E}.al-good{color:var(--ok)}
+.al-bad{color:var(--t-bad,#B3261E)}.al-good{color:var(--ok)}
 #al-minewrap{margin-top:16px;border-top:1px solid var(--line);padding-top:12px}
 #al-mine{list-style:none;display:grid;gap:8px;margin-top:8px}
 #al-mine li{display:flex;align-items:center;justify-content:space-between;gap:10px;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
 .al-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:28px}
 .al-item{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:18px}
-.sec.alt .al-item{background:#fff}
+.sec.alt .al-item{background:var(--card,#fff)}
 .al-item h3{font-size:1.08rem;margin-bottom:6px}.al-item p{color:var(--ink-2);font-size:.98rem}
-.al-ex{margin-top:24px;max-width:420px;background:#fff;border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:0 14px 40px -24px rgba(23,33,43,.5)}
+.al-ex{margin-top:24px;max-width:420px;background:var(--card,#fff);border:1px solid var(--line);border-radius:14px;padding:14px 16px;box-shadow:0 14px 40px -24px rgba(23,33,43,.5)}
 .al-ex b{display:block}.al-ex span{color:var(--ink-2);font-size:.95rem}.al-ex small{display:block;color:var(--muted);margin-top:6px}
 .al-tech{margin-top:24px;display:grid;gap:12px;max-width:820px}
 .al-tech p{color:var(--ink-2)}
@@ -197,7 +198,7 @@
     <p class="fine">© 2026 Kolaboro, operated by Equinox Investment Group LLC, 30 N Gould St Ste N, Sheridan, WY 82801, USA. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Reports are opinions based on the evidence listed in them.</p>
   </div>
 </footer>
-<script src="/k/site.js?v=d376a5d53b" defer></script><script src="/k/prov.js?v=84ab22bafb" defer></script>
+<script src="/k/site.js?v=1db3e557e9" defer></script><script src="/k/prov.js?v=84ab22bafb" defer></script>
 <script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script>
 <div class="cc" id="cc" role="dialog" aria-label="Cookies" hidden><p>We use analytics cookies to improve Kolaboro. <a href="/legal/privacy">Privacy</a></p><div><button class="btn btn-line btn-sm" data-cc="no">Only necessary</button><button class="btn btn-hi btn-sm" data-cc="yes">Accept</button></div></div>
 <script>(function(){var EU=["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"];var st=null;try{st=localStorage;}catch(e){}var c=st&&st.getItem('kb-consent');if(c)return;

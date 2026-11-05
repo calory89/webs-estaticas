@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+<script>(function(d){d.setAttribute('data-kdk','');try{var t=localStorage.getItem('kb-theme')}catch(e){}if(t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches))d.setAttribute('data-theme','dark')})(document.documentElement)</script>
 <meta charset="utf-8"><script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Encrypted deal room | Kolaboro</title>
@@ -19,7 +20,7 @@
 <meta property="og:image" content="https://kolaboro.com/k/og/pricing.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/k/site.css?v=19bd3287d2">
+<link rel="stylesheet" href="/k/site.css?v=68f27c0597">
 <script type="text/plain" data-analytics="off">/* Private page: analytics intentionally not loaded (clarity.ms/tag and G-FJKJE77K4V are skipped here), because the room key is in the address fragment. */</script>
 </head>
 <body>
@@ -41,15 +42,15 @@
 <section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / Deal room</p><h1>A private room for your purchase</h1>
 <p class="lead">Notes, a checklist and small documents you share with your lawyer or family, encrypted in your browser before anything leaves it. We store only ciphertext and cannot read it. Every entry is signed by its author and chained to the one before, so nobody, us included, can quietly change the history.</p></div></section>
 <style>
-.rm{max-width:980px}.rm h2{margin:0 0 6px;font-size:1.2rem}.rm-card{border:1px solid var(--line);border-radius:20px;padding:clamp(16px,2.6vw,24px);background:#fff;margin-top:16px;min-width:0}
+.rm{max-width:980px}.rm h2{margin:0 0 6px;font-size:1.2rem}.rm-card{border:1px solid var(--line);border-radius:20px;padding:clamp(16px,2.6vw,24px);background:var(--card,#fff);margin-top:16px;min-width:0}
 .rm-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.rm-grid>.rm-card{margin-top:0}
-.rm input:not([type=checkbox]):not([type=file]),.rm textarea{font:inherit;font-size:1rem;padding:11px 13px;border:2px solid #B9B7AF;border-radius:12px;background:#fff;color:var(--ink);width:100%;box-sizing:border-box;min-width:0}
+.rm input:not([type=checkbox]):not([type=file]),.rm textarea{font:inherit;font-size:1rem;padding:11px 13px;border:2px solid #B9B7AF;border-radius:12px;background:var(--card,#fff);color:var(--ink);width:100%;box-sizing:border-box;min-width:0}
 .rm input:focus,.rm textarea:focus{outline:none;border-color:var(--ink)}
-.rm-b{display:inline-flex;align-items:center;gap:.4em;font:inherit;font-weight:700;font-size:.9rem;padding:.55rem .95rem;border-radius:999px;border:2px solid var(--ink);background:#fff;color:var(--ink);cursor:pointer;white-space:nowrap}
+.rm-b{display:inline-flex;align-items:center;gap:.4em;font:inherit;font-weight:700;font-size:.9rem;padding:.55rem .95rem;border-radius:999px;border:2px solid var(--ink);background:var(--card,#fff);color:var(--ink);cursor:pointer;white-space:nowrap}
 .rm-b.hi{background:var(--hivis);border-color:var(--hivis);color:#170800}label.rm-b input{display:none}
 .rm-row{display:flex;gap:8px;align-items:center;margin-top:8px}.rm-row input{flex:1}
 .rm-acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
-.rm-mode,.rm-chain{border-radius:16px;padding:14px 16px;font-size:.95rem;margin-top:16px}.rm-mode{background:#F2F1EC;border:1px solid var(--line)}
+.rm-mode,.rm-chain{border-radius:16px;padding:14px 16px;font-size:.95rem;margin-top:16px}.rm-mode{background:var(--t-bg,#F2F1EC);border:1px solid var(--line)}
 .rm-chain.ok{background:var(--ok-bg);color:#06402C;border:1px solid #9FD3BC}.rm-chain.bad{background:#FFE6D9;color:#7A2300;border:2px solid var(--hivis-ink)}
 .rm ul{list-style:none;padding:0;margin:10px 0 0}.rm-empty{color:var(--muted)}
 #rm-check li{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-bottom:1px solid var(--line);align-items:flex-start}#rm-check label{display:flex;gap:10px;align-items:flex-start;cursor:pointer}#rm-check input{width:18px;height:18px;margin-top:3px;flex:0 0 auto}#rm-check small{color:var(--muted);white-space:nowrap}
@@ -59,7 +60,7 @@
 .rm-tlb{margin-top:3px;overflow-wrap:anywhere}.rm-tlb.note{white-space:pre-wrap}.rm-hash{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.72rem;color:var(--muted);margin-top:3px;overflow-wrap:anywhere}
 #rm-who li{padding:4px 0;overflow-wrap:anywhere}#rm-who code,.rm code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.85rem}
 .rm-msg{min-height:1.4em;font-weight:600;margin-top:10px}.rm-msg.bad{color:var(--hivis-ink)}
-.rm-sec{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}.rm-sec div{border:1px solid var(--line);border-radius:16px;padding:16px;background:#fff}.rm-sec h3{margin:0 0 6px;font-size:1rem}.rm-sec ul{list-style:disc;padding-left:1.2em;margin:6px 0 0}.rm-sec li{margin:4px 0}
+.rm-sec{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:16px}.rm-sec div{border:1px solid var(--line);border-radius:16px;padding:16px;background:var(--card,#fff)}.rm-sec h3{margin:0 0 6px;font-size:1rem}.rm-sec ul{list-style:disc;padding-left:1.2em;margin:6px 0 0}.rm-sec li{margin:4px 0}
 .rm-start{border:2px solid var(--ink);border-radius:24px;padding:clamp(20px,3vw,32px);background:var(--paper)}
 @media(max-width:760px){.rm-grid,.rm-sec{grid-template-columns:1fr}#rm-check small{white-space:normal}}
 </style>
@@ -202,6 +203,6 @@
     <p class="fine">© 2026 Kolaboro, operated by Equinox Investment Group LLC, 30 N Gould St Ste N, Sheridan, WY 82801, USA. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Reports are opinions based on the evidence listed in them.</p>
   </div>
 </footer>
-<script src="/k/site.js?v=d376a5d53b" defer></script><script src="/k/prov.js?v=84ab22bafb" defer></script>
+<script src="/k/site.js?v=1db3e557e9" defer></script><script src="/k/prov.js?v=84ab22bafb" defer></script>
 </body>
 </html>

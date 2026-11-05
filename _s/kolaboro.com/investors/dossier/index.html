@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+<script>(function(d){d.setAttribute('data-kdk','');try{var t=localStorage.getItem('kb-theme')}catch(e){}if(t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches))d.setAttribute('data-theme','dark')})(document.documentElement)</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Investor dossier | Kolaboro</title>
@@ -19,7 +20,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://kolaboro.com/k/og/investors.png">
 <link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/k/site.css?v=19bd3287d2">
+<link rel="stylesheet" href="/k/site.css?v=68f27c0597">
 
 <script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',region:["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});try{if(localStorage.getItem('kb-consent')==='yes')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}</script><script>addEventListener("load",function(){setTimeout(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V";document.head.appendChild(s)},1500)})</script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');gtag('config','G-H5TGZJ1KNG');</script>
 
@@ -32,7 +33,7 @@
 .ds-meta a,.ds-note a,.ds-m a,.ds-list a{color:var(--ink)}
 .ds-printhead{display:none}
 .ds-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:20px}
-.ds-m{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px 18px;display:flex;flex-direction:column;gap:6px;min-width:0}
+.ds-m{background:var(--card,#fff);border:1px solid var(--line);border-radius:18px;padding:16px 18px;display:flex;flex-direction:column;gap:6px;min-width:0}
 .ds-m b{font-stretch:125%;font-weight:850;font-size:clamp(1.6rem,2.6vw,2.2rem);letter-spacing:-.02em;font-variant-numeric:tabular-nums;line-height:1.1}
 .ds-m b small{font-size:.5em;font-weight:700;letter-spacing:0;margin-left:4px;color:var(--muted)}
 .ds-m.ds-none b{font-size:1.05rem;font-stretch:100%;color:var(--muted);font-weight:800}
@@ -41,7 +42,7 @@
 .ds-m .ds-src{margin-top:auto;padding-top:8px;border-top:1px solid var(--line);font-size:.8rem;color:var(--muted)}
 .ds-h2{margin-top:48px;font-size:clamp(1.3rem,2.2vw,1.7rem)}
 .ds-series{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:16px}
-.ds-s{background:#fff;border:1px solid var(--line);border-radius:18px;padding:16px 18px;min-width:0}
+.ds-s{background:var(--card,#fff);border:1px solid var(--line);border-radius:18px;padding:16px 18px;min-width:0}
 .ds-s h3{font-size:1rem;margin:0 0 4px}
 .ds-s .ds-src{font-size:.8rem;color:var(--muted)}
 .ds-s svg{display:block;width:100%;height:auto;margin-top:10px;overflow:visible}
@@ -53,7 +54,7 @@
 .ds-s summary{cursor:pointer;color:var(--ink-2);min-height:32px;display:flex;align-items:center}
 .ds-s table{border-collapse:collapse;margin-top:6px;font-variant-numeric:tabular-nums}
 .ds-s td,.ds-s th{padding:3px 12px 3px 0;text-align:left;border-bottom:1px solid var(--line)}
-.ds-tip{position:fixed;pointer-events:none;background:var(--ink);color:#fff;font-size:.8rem;padding:6px 9px;border-radius:8px;z-index:50;display:none;font-variant-numeric:tabular-nums}
+.ds-tip{position:fixed;pointer-events:none;background:var(--band);color:#fff;font-size:.8rem;padding:6px 9px;border-radius:8px;z-index:50;display:none;font-variant-numeric:tabular-nums}
 .ds-list{padding-left:1.2em;display:grid;gap:8px;max-width:780px;color:var(--ink-2)}
 @media(max-width:900px){.ds-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ds-series{grid-template-columns:1fr}}
 @media(max-width:480px){.ds-grid{grid-template-columns:1fr}}
@@ -196,7 +197,7 @@
     <p class="fine">© 2026 Kolaboro, operated by Equinox Investment Group LLC, 30 N Gould St Ste N, Sheridan, WY 82801, USA. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Reports are opinions based on the evidence listed in them.</p>
   </div>
 </footer>
-<script src="/k/ask.js?v=544be9f9c8" defer></script><script src="/k/pipeline.js?v=c1da74b911" defer></script><script src="/k/site.js?v=d376a5d53b" defer></script><script src="/k/prov.js?v=84ab22bafb" defer></script>
+<script src="/k/ask.js?v=544be9f9c8" defer></script><script src="/k/pipeline.js?v=c1da74b911" defer></script><script src="/k/site.js?v=1db3e557e9" defer></script><script src="/k/prov.js?v=84ab22bafb" defer></script>
 <script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script>
 <div class="cc" id="cc" role="dialog" aria-label="Cookies" hidden><p>We use analytics cookies to improve Kolaboro. <a href="/legal/privacy">Privacy</a></p><div><button class="btn btn-line btn-sm" data-cc="no">Only necessary</button><button class="btn btn-hi btn-sm" data-cc="yes">Accept</button></div></div>
 <script>(function(){var EU=["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"];var st=null;try{st=localStorage;}catch(e){}var c=st&&st.getItem('kb-consent');if(c)return;

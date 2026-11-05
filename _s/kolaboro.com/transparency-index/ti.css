@@ -75,22 +75,22 @@
 .ti-t .ixw b{font-size:1.05rem;font-stretch:112%;text-align:right}
 .ti-t .ixw small{grid-column:2;font-size:.76rem;color:var(--muted);margin-top:-4px}
 .ti-t .ixw small span{font-weight:700}.ti-t .cd{color:var(--ti-d)}.ti-t .cv{color:var(--ti-v)}.ti-t .cf{color:var(--hivis-ink)}
-.ti-t tbody tr:hover{background:#FBFBF9}
+.ti-t tbody tr:hover{background:var(--t-bg,#FBFBF9)}
 .ti-t td.fl0{color:var(--muted)}
 /* cite + embed */
 .ti-two{display:grid;grid-template-columns:1fr 1.3fr;gap:28px;align-items:start}
 .ti-box{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:20px}
-.ti-cite{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.9rem;line-height:1.55;background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px;word-break:break-word;margin:0}
+.ti-cite{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.9rem;line-height:1.55;background:var(--card,#fff);border:1px solid var(--line);border-radius:10px;padding:14px;word-break:break-word;margin:0}
 .ti-btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
 .ti-btns .btn{min-height:44px}
 .ti-msg{font-size:.88rem;color:var(--ok);min-height:1.3em;margin-top:6px}
 .ti-embed{display:grid;grid-template-columns:minmax(260px,1fr) 1.3fr;gap:24px;margin-top:22px;align-items:start}
 .ti-ef{display:flex;flex-direction:column;gap:8px}
 .ti-ef label{font-weight:700;margin-top:6px}
-.ti-ef textarea{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.82rem;line-height:1.5;padding:12px;border:1.5px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);resize:vertical;width:100%;box-sizing:border-box}
+.ti-ef textarea{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.82rem;line-height:1.5;padding:12px;border:1.5px solid var(--line);border-radius:10px;background:var(--card,#fff);color:var(--ink);resize:vertical;width:100%;box-sizing:border-box}
 .ti-ep{background:var(--paper);border:1px dashed var(--line);border-radius:16px;padding:14px}
 .ti-pl{font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:750;margin:0 0 8px}
-.ti-ep iframe{display:block;width:100%;height:320px;border:0;border-radius:12px;background:#fff}
+.ti-ep iframe{display:block;width:100%;height:320px;border:0;border-radius:12px;background:var(--card,#fff)}
 @media(max-width:860px){.ti-ends,.ti-two,.ti-embed{grid-template-columns:1fr}}
 @media(max-width:760px){.ti-n{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){

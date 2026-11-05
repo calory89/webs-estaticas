@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+<script>(function(d){d.setAttribute('data-kdk','');try{var t=localStorage.getItem('kb-theme')}catch(e){}if(t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches))d.setAttribute('data-theme','dark')})(document.documentElement)</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Trust center | Kolaboro</title>
@@ -19,25 +20,25 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://kolaboro.com/k/og/pricing.png">
 <link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/k/site.css?v=19bd3287d2">
+<link rel="stylesheet" href="/k/site.css?v=68f27c0597">
 
 <script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',region:["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});try{if(localStorage.getItem('kb-consent')==='yes')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}</script><script>addEventListener("load",function(){setTimeout(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V";document.head.appendChild(s)},1500)})</script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');gtag('config','G-H5TGZJ1KNG');</script>
 
 
 <link rel="alternate" type="application/rss+xml" title="Kolaboro: what we shipped" href="/feed.xml">
 <style>
-.tc-note{max-width:780px;margin-top:22px;background:#fff;border:2px solid var(--ink);border-radius:16px;padding:14px 18px;color:var(--ink-2)}
+.tc-note{max-width:780px;margin-top:22px;background:var(--card,#fff);border:2px solid var(--ink);border-radius:16px;padding:14px 18px;color:var(--ink-2)}
 .tc-sec{padding-top:clamp(32px,4vw,56px)}
 .tc-sum{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
-.tc-n{background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+.tc-n{background:var(--card,#fff);border:1px solid var(--line);border-radius:16px;padding:14px 16px}
 .tc-n b{display:block;font-stretch:125%;font-weight:850;font-size:clamp(1.5rem,2.4vw,2rem);font-variant-numeric:tabular-nums}
 .tc-n span{font-size:.88rem;color:var(--muted)}
 .tc-n i{font-style:normal;font-weight:800}
-.tc-n.tc-pass b{color:var(--ok)}.tc-n.tc-fail b{color:#B42318}.tc-n.tc-warn b{color:#8A5300}.tc-n.tc-stale b{color:#6B4FA0}
+.tc-n.tc-pass b{color:var(--ok)}.tc-n.tc-fail b{color:var(--t-bad,#B42318)}.tc-n.tc-warn b{color:var(--t-amb,#8A5300)}.tc-n.tc-stale b{color:#6B4FA0}
 .tc-meta{margin-top:14px;font-size:.9rem;color:var(--muted);overflow-wrap:anywhere}
 .tc-meta a,.tc-c a,.tc-prose a{color:var(--ink)}
 .tc-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:22px}
-.tc-c{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px 20px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.tc-c{background:var(--card,#fff);border:1px solid var(--line);border-radius:18px;padding:18px 20px;display:flex;flex-direction:column;gap:8px;min-width:0}
 .tc-c header{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
 .tc-c h3{font-size:1.12rem;margin:2px 0 0}
 .tc-c p{margin:0;color:var(--ink-2);overflow-wrap:anywhere}
@@ -59,12 +60,12 @@
 .tc-prose p,.tc-prose li{color:var(--ink-2)}
 .tc-prose ol,.tc-prose ul{padding-left:1.2em;display:grid;gap:8px}
 .tc-prose h2{font-size:clamp(1.5rem,2.8vw,2.2rem);margin-top:6px}.tc-prose h3{margin-top:28px;font-size:1.15rem}.tc-prose>p{margin-top:12px}
-.tc-tw{overflow-x:auto;margin:20px 0 6px;border:1px solid var(--line);border-radius:16px;background:#fff;-webkit-overflow-scrolling:touch}
+.tc-tw{overflow-x:auto;margin:20px 0 6px;border:1px solid var(--line);border-radius:16px;background:var(--card,#fff);-webkit-overflow-scrolling:touch}
 .tc-t{width:100%;border-collapse:collapse;font-size:.92rem;min-width:620px}
 .tc-t th,.tc-t td{text-align:left;vertical-align:top;padding:10px 12px;border-bottom:1px solid var(--line)}
 .tc-t thead th{font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);background:var(--paper)}
 .tc-t td small{color:var(--muted)}
-.dp-pass{color:var(--ok);font-weight:700}.dp-rolled_back{color:#8A5300;font-weight:700}.dp-failed,.dp-rollback_failed{color:#B42318;font-weight:700}
+.dp-pass{color:var(--ok);font-weight:700}.dp-rolled_back{color:var(--t-amb,#8A5300);font-weight:700}.dp-failed,.dp-rollback_failed{color:var(--t-bad,#B42318);font-weight:700}
 @media(max-width:900px){.tc-list{grid-template-columns:1fr}.tc-sum{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:480px){.tc-sum{grid-template-columns:repeat(2,1fr)}}
 @media print{.tc-list{grid-template-columns:1fr 1fr}.tc-c{break-inside:avoid}}
@@ -204,7 +205,7 @@
     <p class="fine">© 2026 Kolaboro, operated by Equinox Investment Group LLC, 30 N Gould St Ste N, Sheridan, WY 82801, USA. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Reports are opinions based on the evidence listed in them.</p>
   </div>
 </footer>
-<script src="/k/ask.js?v=544be9f9c8" defer></script><script src="/k/pipeline.js?v=c1da74b911" defer></script><script src="/k/site.js?v=d376a5d53b" defer></script><script src="/k/prov.js?v=84ab22bafb" defer></script>
+<script src="/k/ask.js?v=544be9f9c8" defer></script><script src="/k/pipeline.js?v=c1da74b911" defer></script><script src="/k/site.js?v=1db3e557e9" defer></script><script src="/k/prov.js?v=84ab22bafb" defer></script>
 <script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script>
 <div class="cc" id="cc" role="dialog" aria-label="Cookies" hidden><p>We use analytics cookies to improve Kolaboro. <a href="/legal/privacy">Privacy</a></p><div><button class="btn btn-line btn-sm" data-cc="no">Only necessary</button><button class="btn btn-hi btn-sm" data-cc="yes">Accept</button></div></div>
 <script>(function(){var EU=["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"];var st=null;try{st=localStorage;}catch(e){}var c=st&&st.getItem('kb-consent');if(c)return;

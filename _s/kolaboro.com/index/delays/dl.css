@@ -11,7 +11,7 @@
 .dl-strip .mq{stroke:var(--ink);stroke-width:2}
 .dl-q{display:flex;flex-wrap:wrap;gap:8px 10px;align-items:center;margin:10px 0 6px;max-width:620px}
 .dl-q label{font-weight:600;font-size:.92rem}
-.dl-q input{font:inherit;font-size:1rem;padding:8px 12px;border-radius:10px;border:1px solid var(--line);background:#fff;color:var(--ink);width:12em;max-width:100%;text-transform:uppercase}
+.dl-q input{font:inherit;font-size:1rem;padding:8px 12px;border-radius:10px;border:1px solid var(--line);background:var(--card,#fff);color:var(--ink);width:12em;max-width:100%;text-transform:uppercase}
 .dl-ans h3{margin:0 0 6px;font-size:1.15rem}
 .dl-ans .big{font-size:clamp(1.6rem,4vw,2.2rem);font-weight:700;line-height:1.1;font-variant-numeric:tabular-nums}
 .dl-ans p{margin:6px 0}

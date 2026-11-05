@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+<script>(function(d){d.setAttribute('data-kdk','');try{var t=localStorage.getItem('kb-theme')}catch(e){}if(t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches))d.setAttribute('data-theme','dark')})(document.documentElement)</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Try to fool our AI | Kolaboro</title>
@@ -19,7 +20,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://kolaboro.com/k/og/check.png">
 <link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/k/site.css?v=19bd3287d2">
+<link rel="stylesheet" href="/k/site.css?v=68f27c0597">
 <script type="application/ld+json">[{"@context": "https://schema.org", "@type": "Organization", "name": "Kolaboro", "url": "https://kolaboro.com/", "logo": "https://kolaboro.com/k/favicon.svg", "description": "A network of local buyer's agents for overseas property, trained by AI and proven on the ground."}]</script>
 <script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',region:["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});try{if(localStorage.getItem('kb-consent')==='yes')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}</script><script>addEventListener("load",function(){setTimeout(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V";document.head.appendChild(s)},1500)})</script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');gtag('config','G-H5TGZJ1KNG');</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Kolaboro", "item": "https://kolaboro.com/"}, {"@type": "ListItem", "position": 2, "name": "Check a property project", "item": "https://kolaboro.com/check/red-team/"}]}</script>
@@ -45,19 +46,19 @@
 <main id="main">
 <style>.phero.tight{padding:clamp(24px,4vw,48px) 0 8px;border-bottom:0}.phero.tight h1{font-size:clamp(2.1rem,5vw,4.2rem)}.phero.tight .lead{margin-top:12px}
 .rt{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:22px;align-items:start}@media(max-width:860px){.rt{grid-template-columns:minmax(0,1fr)}}
-.rt-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px}.rt-card h2,.rt-card h3{margin-top:0}
+.rt-card{background:var(--card,#fff);border:1px solid var(--line);border-radius:18px;padding:18px}.rt-card h2,.rt-card h3{margin-top:0}
 .rt textarea{width:100%;min-height:220px;font:500 .92rem/1.5 ui-monospace,SFMono-Regular,Menlo,monospace;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink);resize:vertical;box-sizing:border-box}
 .rt label{display:block;font-weight:700;margin:12px 0 6px}.rt input[type=text]{width:100%;box-sizing:border-box;padding:10px 12px;border:1px solid var(--line);border-radius:10px;font:inherit}
 .rt-row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between;margin-top:10px}.rt-cnt{font-size:.84rem;color:var(--muted)}
 .rt-ex{display:flex;flex-wrap:wrap;gap:6px;margin:4px 0 0}.rt-ex button{font:600 .82rem/1 inherit;font-family:inherit;padding:7px 10px;border-radius:999px;border:1px solid var(--line);background:var(--paper);color:var(--ink);cursor:pointer}
-.rt-page{font-size:.9rem;line-height:1.6;background:var(--paper);border-radius:12px;padding:12px 14px;overflow-wrap:anywhere}.rt-page mark{background:#FFD9C7;color:var(--ink);padding:0 .25em;border-radius:4px}
+.rt-page{font-size:.9rem;line-height:1.6;background:var(--paper);border-radius:12px;padding:12px 14px;overflow-wrap:anywhere}.rt-page mark{background:var(--t-warn-bg,#FFD9C7);color:var(--ink);padding:0 .25em;border-radius:4px}
 .rt-rules{font-size:.9rem;padding-left:18px}.rt-rules li{margin-bottom:6px}
 .rt-out{margin-top:22px}.rt-ban{border-radius:18px;padding:18px 20px;margin-bottom:16px}.rt-ban h2{margin:0 0 6px}.rt-ban p{margin:0}
-.rt-ban.fooled{background:#FDECEC;border:1px solid #F3B4B4}.rt-ban.caught{background:var(--ok-bg);border:1px solid #9FD5BF}.rt-ban.no_effect{background:#fff;border:1px solid var(--line)}
+.rt-ban.fooled{background:#FDECEC;border:1px solid #F3B4B4}.rt-ban.caught{background:var(--ok-bg);border:1px solid #9FD5BF}.rt-ban.no_effect{background:var(--card,#fff);border:1px solid var(--line)}
 .rt-t{width:100%;border-collapse:collapse;font-size:.9rem}.rt-t th,.rt-t td{text-align:left;padding:8px 6px;border-top:1px solid var(--line);vertical-align:top;overflow-wrap:anywhere}.rt-t th{font-size:.78rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
 .rt-t tr.chg td{background:#FFF6E0}.rt-wrap{overflow-x:auto}
 .rt-steps{list-style:none;padding:0;margin:0;font-size:.88rem}.rt-steps li{display:flex;justify-content:space-between;gap:10px;padding:6px 0;border-top:1px solid var(--line)}.rt-steps code{font:600 .84rem ui-monospace,SFMono-Regular,Menlo,monospace}
-.rt-ev{font-size:.88rem}.rt-ev li{overflow-wrap:anywhere}.fe{color:#B42318}</style>
+.rt-ev{font-size:.88rem}.rt-ev li{overflow-wrap:anywhere}.fe{color:var(--t-bad,#B42318)}</style>
 <section class="phero tight"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / <a href="/check">Check a project</a> / Try to fool our AI</p><h1>Try to fool our AI.</h1><p class="lead">Developer websites are untrusted input. Paste text a developer could put on a page, hidden or visible. Our real desk review reads it inside a fictional project page, exactly as it reads a real website, and you see whether your text changed the verdict.</p></div></section>
 <section class="sec" style="padding-top:12px"><div class="wrap">
 <div class="rt">
@@ -167,7 +168,7 @@
     <p class="fine">© 2026 Kolaboro, operated by Equinox Investment Group LLC, 30 N Gould St Ste N, Sheridan, WY 82801, USA. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Reports are opinions based on the evidence listed in them.</p>
   </div>
 </footer>
-<script src="/k/site.js?v=d376a5d53b" defer></script><script src="/k/prov.js?v=84ab22bafb" defer></script>
+<script src="/k/site.js?v=1db3e557e9" defer></script><script src="/k/prov.js?v=84ab22bafb" defer></script>
 <script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script>
 <div class="cc" id="cc" role="dialog" aria-label="Cookies" hidden><p>We use analytics cookies to improve Kolaboro. <a href="/legal/privacy">Privacy</a></p><div><button class="btn btn-line btn-sm" data-cc="no">Only necessary</button><button class="btn btn-hi btn-sm" data-cc="yes">Accept</button></div></div>
 <script>(function(){var EU=["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"];var st=null;try{st=localStorage;}catch(e){}var c=st&&st.getItem('kb-consent');if(c)return;
