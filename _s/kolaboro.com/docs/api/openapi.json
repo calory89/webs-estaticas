@@ -51,6 +51,10 @@
   },
   {
    "name": "Data catalog"
+  },
+  {
+   "name": "Register lookup",
+   "description": "Live lookup on official registers (Catastro, NYC DOB and PLUTO, Miami-Dade permits, RDAP, GLEIF, Companies House) with SHA-256 snapshots of every response and an OpenTimestamps seal. Field-by-field schema: kolaboro-lookup-1."
   }
  ],
  "paths": {
@@ -17067,6 +17071,1098 @@
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/z/bundle/0000000000000000000000000000000000000000000000000000000000000000",
     "x-kolaboro-checked": "2026-11-05T07:20:43Z"
+   }
+  },
+  "/api/kb/lookup": {
+   "get": {
+    "tags": [
+     "Register lookup"
+    ],
+    "summary": "Live register lookup",
+    "description": "Looks up a project on the official registers that answer without a key and returns, per check, the source, the query, the status, the extracted fields and a SHA-256 snapshot of the exact response; the sorted snapshot hashes are sealed with OpenTimestamps.",
+    "operationId": "kb_lookup",
+    "parameters": [
+     {
+      "name": "url",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "Project website"
+     },
+     {
+      "name": "q",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "Free text: project name, permit or licence number, cadastral reference, address"
+     },
+     {
+      "name": "country",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "ES, US, AE, ID or GB"
+     },
+     {
+      "name": "refcat",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "Spanish cadastral reference (14 or 20 characters)"
+     },
+     {
+      "name": "address",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "Street address"
+     },
+     {
+      "name": "permit",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "Permit or job number"
+     },
+     {
+      "name": "company",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "Developer company name"
+     },
+     {
+      "name": "lat",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "Latitude (WGS84)"
+     },
+     {
+      "name": "lng",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "Longitude (WGS84)"
+     },
+     {
+      "name": "image_hashes",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "Comma-separated kdh1 hashes from /tools/image-check/kdh.js"
+     },
+     {
+      "name": "ai",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "0 to skip the AI desk review"
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "version": {
+           "type": "string"
+          },
+          "started_at": {
+           "type": "string"
+          },
+          "finished_at": {
+           "type": "string"
+          },
+          "ms": {
+           "type": "number"
+          },
+          "cached": {
+           "type": "boolean"
+          },
+          "input": {
+           "type": "object"
+          },
+          "detected": {
+           "type": "object",
+           "properties": {
+            "countries": {
+             "type": "array",
+             "items": {
+              "type": "string"
+             }
+            },
+            "identifiers": {
+             "type": "array",
+             "items": {
+              "type": "object"
+             }
+            }
+           }
+          },
+          "summary": {
+           "type": "object",
+           "properties": {
+            "found": {
+             "type": "number"
+            },
+            "not_found": {
+             "type": "number"
+            },
+            "not_published": {
+             "type": "number"
+            },
+            "unavailable": {
+             "type": "number"
+            },
+            "needs_key": {
+             "type": "number"
+            }
+           }
+          },
+          "checks": {
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "id": {
+              "type": "string"
+             },
+             "source": {
+              "type": "string"
+             },
+             "source_url": {
+              "type": "string"
+             },
+             "country": {
+              "type": [
+               "string",
+               "null"
+              ]
+             },
+             "query": {
+              "type": "object",
+              "properties": {
+               "by": {
+                "type": "string"
+               },
+               "value": {
+                "type": [
+                 "string",
+                 "null"
+                ]
+               },
+               "url": {
+                "type": [
+                 "string",
+                 "null"
+                ]
+               }
+              }
+             },
+             "status": {
+              "type": "string",
+              "enum": [
+               "found",
+               "not_found",
+               "not_published",
+               "unavailable",
+               "needs_key"
+              ]
+             },
+             "fields": {
+              "type": "object"
+             },
+             "literal": {
+              "type": "object"
+             },
+             "note": {
+              "type": [
+               "string",
+               "null"
+              ]
+             },
+             "official_page": {
+              "type": "string"
+             },
+             "manual_check": {
+              "type": "string"
+             },
+             "snapshot": {
+              "type": [
+               "object",
+               "null"
+              ],
+              "properties": {
+               "sha256": {
+                "type": "string"
+               },
+               "bytes": {
+                "type": "number"
+               },
+               "content_type": {
+                "type": "string"
+               },
+               "http_status": {
+                "type": "number"
+               },
+               "fetched_at": {
+                "type": "string"
+               },
+               "raw_url": {
+                "type": "string"
+               }
+              }
+             },
+             "ms": {
+              "type": "number"
+             }
+            }
+           }
+          },
+          "comparison": {
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "field": {
+              "type": "string"
+             },
+             "agree": {
+              "type": [
+               "boolean",
+               "null"
+              ]
+             },
+             "brochure": {
+              "type": "object"
+             },
+             "register": {
+              "type": "object"
+             },
+             "note": {
+              "type": [
+               "string",
+               "null"
+              ]
+             }
+            }
+           }
+          },
+          "seal": {
+           "type": [
+            "object",
+            "null"
+           ],
+           "properties": {
+            "root_sha256": {
+             "type": "string"
+            },
+            "method": {
+             "type": "string"
+            },
+            "lines": {
+             "type": "array",
+             "items": {
+              "type": "string"
+             }
+            },
+            "opentimestamps": {
+             "type": [
+              "object",
+              "null"
+             ]
+            },
+            "stamp_status": {
+             "type": "string"
+            },
+            "verify": {
+             "type": "string"
+            },
+            "result_url": {
+             "type": "string"
+            }
+           }
+          },
+          "disclaimer": {
+           "type": "string"
+          }
+         }
+        }
+       }
+      }
+     },
+     "400": {
+      "description": "Bad or empty input"
+     },
+     "429": {
+      "description": "Rate limit (20 lookups an hour per IP address)"
+     }
+    }
+   },
+   "post": {
+    "tags": [
+     "Register lookup"
+    ],
+    "summary": "Live register lookup (JSON body)",
+    "description": "Same as GET with a JSON body.",
+    "operationId": "kb_lookup_post",
+    "requestBody": {
+     "required": true,
+     "content": {
+      "application/json": {
+       "schema": {
+        "type": "object",
+        "properties": {
+         "url": {
+          "type": "string"
+         },
+         "q": {
+          "type": "string"
+         },
+         "country": {
+          "type": "string"
+         },
+         "refcat": {
+          "type": "string"
+         },
+         "address": {
+          "type": "string"
+         },
+         "permit": {
+          "type": "string"
+         },
+         "company": {
+          "type": "string"
+         },
+         "lat": {
+          "type": "string"
+         },
+         "lng": {
+          "type": "string"
+         },
+         "image_hashes": {
+          "type": "array",
+          "items": {
+           "type": "string"
+          }
+         },
+         "ai": {
+          "type": "string"
+         }
+        }
+       }
+      }
+     }
+    },
+    "responses": {
+     "200": {
+      "description": "OK",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "version": {
+           "type": "string"
+          },
+          "started_at": {
+           "type": "string"
+          },
+          "finished_at": {
+           "type": "string"
+          },
+          "ms": {
+           "type": "number"
+          },
+          "cached": {
+           "type": "boolean"
+          },
+          "input": {
+           "type": "object"
+          },
+          "detected": {
+           "type": "object",
+           "properties": {
+            "countries": {
+             "type": "array",
+             "items": {
+              "type": "string"
+             }
+            },
+            "identifiers": {
+             "type": "array",
+             "items": {
+              "type": "object"
+             }
+            }
+           }
+          },
+          "summary": {
+           "type": "object",
+           "properties": {
+            "found": {
+             "type": "number"
+            },
+            "not_found": {
+             "type": "number"
+            },
+            "not_published": {
+             "type": "number"
+            },
+            "unavailable": {
+             "type": "number"
+            },
+            "needs_key": {
+             "type": "number"
+            }
+           }
+          },
+          "checks": {
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "id": {
+              "type": "string"
+             },
+             "source": {
+              "type": "string"
+             },
+             "source_url": {
+              "type": "string"
+             },
+             "country": {
+              "type": [
+               "string",
+               "null"
+              ]
+             },
+             "query": {
+              "type": "object",
+              "properties": {
+               "by": {
+                "type": "string"
+               },
+               "value": {
+                "type": [
+                 "string",
+                 "null"
+                ]
+               },
+               "url": {
+                "type": [
+                 "string",
+                 "null"
+                ]
+               }
+              }
+             },
+             "status": {
+              "type": "string",
+              "enum": [
+               "found",
+               "not_found",
+               "not_published",
+               "unavailable",
+               "needs_key"
+              ]
+             },
+             "fields": {
+              "type": "object"
+             },
+             "literal": {
+              "type": "object"
+             },
+             "note": {
+              "type": [
+               "string",
+               "null"
+              ]
+             },
+             "official_page": {
+              "type": "string"
+             },
+             "manual_check": {
+              "type": "string"
+             },
+             "snapshot": {
+              "type": [
+               "object",
+               "null"
+              ],
+              "properties": {
+               "sha256": {
+                "type": "string"
+               },
+               "bytes": {
+                "type": "number"
+               },
+               "content_type": {
+                "type": "string"
+               },
+               "http_status": {
+                "type": "number"
+               },
+               "fetched_at": {
+                "type": "string"
+               },
+               "raw_url": {
+                "type": "string"
+               }
+              }
+             },
+             "ms": {
+              "type": "number"
+             }
+            }
+           }
+          },
+          "comparison": {
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "field": {
+              "type": "string"
+             },
+             "agree": {
+              "type": [
+               "boolean",
+               "null"
+              ]
+             },
+             "brochure": {
+              "type": "object"
+             },
+             "register": {
+              "type": "object"
+             },
+             "note": {
+              "type": [
+               "string",
+               "null"
+              ]
+             }
+            }
+           }
+          },
+          "seal": {
+           "type": [
+            "object",
+            "null"
+           ],
+           "properties": {
+            "root_sha256": {
+             "type": "string"
+            },
+            "method": {
+             "type": "string"
+            },
+            "lines": {
+             "type": "array",
+             "items": {
+              "type": "string"
+             }
+            },
+            "opentimestamps": {
+             "type": [
+              "object",
+              "null"
+             ]
+            },
+            "stamp_status": {
+             "type": "string"
+            },
+            "verify": {
+             "type": "string"
+            },
+            "result_url": {
+             "type": "string"
+            }
+           }
+          },
+          "disclaimer": {
+           "type": "string"
+          }
+         }
+        }
+       }
+      }
+     },
+     "400": {
+      "description": "Bad or empty input"
+     },
+     "429": {
+      "description": "Rate limit (20 lookups an hour per IP address)"
+     }
+    }
+   }
+  },
+  "/api/kb/lookup/coverage": {
+   "get": {
+    "tags": [
+     "Register lookup"
+    ],
+    "summary": "Lookup coverage by country",
+    "description": "Per country: what the live lookup verifies online, what needs a manual check or a key, and what needs a site visit, with official links.",
+    "operationId": "kb_lookup_coverage",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "version": {
+           "type": "string"
+          },
+          "updated": {
+           "type": "string"
+          },
+          "countries": {
+           "type": "array",
+           "items": {
+            "type": "object"
+           }
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/kb/lookup/stats": {
+   "get": {
+    "tags": [
+     "Register lookup"
+    ],
+    "summary": "Lookups done",
+    "description": "Count of completed, non-cached lookups.",
+    "operationId": "kb_lookup_stats",
+    "parameters": [],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "lookups": {
+           "type": "number"
+          },
+          "lookups_7d": {
+           "type": "number"
+          },
+          "p50_ms_7d": {
+           "type": [
+            "number",
+            "null"
+           ]
+          },
+          "source": {
+           "type": "string"
+          },
+          "generated_at": {
+           "type": "string"
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/v1/lookup": {
+   "get": {
+    "tags": [
+     "Register lookup"
+    ],
+    "summary": "Live register lookup for partners",
+    "description": "Same as /api/kb/lookup with a pilot key (x-api-key: kb_pilot_...), metered per key instead of per IP address; includes the AI desk review of the website.",
+    "operationId": "v1_lookup",
+    "parameters": [
+     {
+      "name": "x-api-key",
+      "in": "header",
+      "required": true,
+      "schema": {
+       "type": "string"
+      }
+     },
+     {
+      "name": "url",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "Project website"
+     },
+     {
+      "name": "q",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "Free text: project name, permit or licence number, cadastral reference, address"
+     },
+     {
+      "name": "country",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "ES, US, AE, ID or GB"
+     },
+     {
+      "name": "refcat",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "Spanish cadastral reference (14 or 20 characters)"
+     },
+     {
+      "name": "address",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "Street address"
+     },
+     {
+      "name": "permit",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "Permit or job number"
+     },
+     {
+      "name": "company",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "Developer company name"
+     },
+     {
+      "name": "lat",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "Latitude (WGS84)"
+     },
+     {
+      "name": "lng",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "Longitude (WGS84)"
+     },
+     {
+      "name": "image_hashes",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "Comma-separated kdh1 hashes from /tools/image-check/kdh.js"
+     },
+     {
+      "name": "ai",
+      "in": "query",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "0 to skip the AI desk review"
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "version": {
+           "type": "string"
+          },
+          "started_at": {
+           "type": "string"
+          },
+          "finished_at": {
+           "type": "string"
+          },
+          "ms": {
+           "type": "number"
+          },
+          "cached": {
+           "type": "boolean"
+          },
+          "input": {
+           "type": "object"
+          },
+          "detected": {
+           "type": "object",
+           "properties": {
+            "countries": {
+             "type": "array",
+             "items": {
+              "type": "string"
+             }
+            },
+            "identifiers": {
+             "type": "array",
+             "items": {
+              "type": "object"
+             }
+            }
+           }
+          },
+          "summary": {
+           "type": "object",
+           "properties": {
+            "found": {
+             "type": "number"
+            },
+            "not_found": {
+             "type": "number"
+            },
+            "not_published": {
+             "type": "number"
+            },
+            "unavailable": {
+             "type": "number"
+            },
+            "needs_key": {
+             "type": "number"
+            }
+           }
+          },
+          "checks": {
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "id": {
+              "type": "string"
+             },
+             "source": {
+              "type": "string"
+             },
+             "source_url": {
+              "type": "string"
+             },
+             "country": {
+              "type": [
+               "string",
+               "null"
+              ]
+             },
+             "query": {
+              "type": "object",
+              "properties": {
+               "by": {
+                "type": "string"
+               },
+               "value": {
+                "type": [
+                 "string",
+                 "null"
+                ]
+               },
+               "url": {
+                "type": [
+                 "string",
+                 "null"
+                ]
+               }
+              }
+             },
+             "status": {
+              "type": "string",
+              "enum": [
+               "found",
+               "not_found",
+               "not_published",
+               "unavailable",
+               "needs_key"
+              ]
+             },
+             "fields": {
+              "type": "object"
+             },
+             "literal": {
+              "type": "object"
+             },
+             "note": {
+              "type": [
+               "string",
+               "null"
+              ]
+             },
+             "official_page": {
+              "type": "string"
+             },
+             "manual_check": {
+              "type": "string"
+             },
+             "snapshot": {
+              "type": [
+               "object",
+               "null"
+              ],
+              "properties": {
+               "sha256": {
+                "type": "string"
+               },
+               "bytes": {
+                "type": "number"
+               },
+               "content_type": {
+                "type": "string"
+               },
+               "http_status": {
+                "type": "number"
+               },
+               "fetched_at": {
+                "type": "string"
+               },
+               "raw_url": {
+                "type": "string"
+               }
+              }
+             },
+             "ms": {
+              "type": "number"
+             }
+            }
+           }
+          },
+          "comparison": {
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "field": {
+              "type": "string"
+             },
+             "agree": {
+              "type": [
+               "boolean",
+               "null"
+              ]
+             },
+             "brochure": {
+              "type": "object"
+             },
+             "register": {
+              "type": "object"
+             },
+             "note": {
+              "type": [
+               "string",
+               "null"
+              ]
+             }
+            }
+           }
+          },
+          "seal": {
+           "type": [
+            "object",
+            "null"
+           ],
+           "properties": {
+            "root_sha256": {
+             "type": "string"
+            },
+            "method": {
+             "type": "string"
+            },
+            "lines": {
+             "type": "array",
+             "items": {
+              "type": "string"
+             }
+            },
+            "opentimestamps": {
+             "type": [
+              "object",
+              "null"
+             ]
+            },
+            "stamp_status": {
+             "type": "string"
+            },
+            "verify": {
+             "type": "string"
+            },
+            "result_url": {
+             "type": "string"
+            }
+           }
+          },
+          "disclaimer": {
+           "type": "string"
+          }
+         }
+        }
+       }
+      }
+     },
+     "400": {
+      "description": "Bad or empty input"
+     },
+     "429": {
+      "description": "Rate limit (20 lookups an hour per IP address)"
+     }
+    }
    }
   }
  },
