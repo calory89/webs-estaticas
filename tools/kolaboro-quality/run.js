@@ -25,7 +25,7 @@ const VIEWS = [
   { w: 1440, h: 900, cap: 1800, mobile: false, name: 'desktop' },
 ];
 const CHANGED_AT = 0.003;   // more than 0.3% of pixels different (pixelmatch threshold 0.1) counts as "changed"
-const MAX_IMAGES = 16;      // side-by-side images published per run (file budget on the site)
+const MAX_IMAGES = 6;       // side-by-side images per run, embedded in quality.json as data URIs (no image files on the site: Pages file limit)
 const OWN = h => h === 'kolaboro.com' || h.endsWith('.kolaboro.com');
 const slug = p => (p.replace(/^\/|\/$/g, '').replace(/[^a-zA-Z0-9]+/g, '-') || 'home').toLowerCase();
 const pageType = p => {
@@ -117,7 +117,7 @@ const CATS = ['html', 'css', 'js', 'images', 'fonts', 'other', 'third_party'];
       errors: results.filter(r => r.error).length,
       images_published: changed.filter(r => r.visual.image).length,
     },
-    results: results.map(r => ({ page: r.page, view: r.view, width: r.width, status: r.error ? 'error' : r.visual.status, diff_pct: r.visual ? r.visual.diff_pct : null, diff_pixels: r.visual ? r.visual.diff_pixels : null, height: r.shot ? r.shot.height : null, prev_height: r.visual ? r.visual.prev_height : null, image: r.visual ? r.visual.image || null : null, error: r.error })),
+    results: results.map(r => ({ page: r.page, view: r.view, width: r.width, status: r.error ? 'error' : r.visual.status, diff_pct: r.visual ? r.visual.diff_pct : null, diff_pixels: r.visual ? r.visual.diff_pixels : null, height: r.shot ? r.shot.height : null, prev_height: r.visual ? r.visual.prev_height : null, image: r.visual ? r.visual.image || null : null, image_data: r.visual ? r.visual.image_data || null : null, error: r.error })),
   };
   // page weight with budgets
   const breaches = [];
@@ -138,6 +138,8 @@ const CATS = ['html', 'css', 'js', 'images', 'fonts', 'other', 'third_party'];
   };
   fs.writeFileSync(path.join(OUT, 'visual-tests.json'), JSON.stringify(vis, null, 1));
   fs.writeFileSync(path.join(OUT, 'page-weight.json'), JSON.stringify(pwOut, null, 1));
+  // one published file for both (the shared Pages project is at its file limit)
+  fs.writeFileSync(path.join(OUT, 'quality.json'), JSON.stringify({ visual: vis, weight: pwOut }));
   fs.writeFileSync(path.join(OUT, 'resources.json'), JSON.stringify(Object.values(resources), null, 1));
   fs.writeFileSync(path.join(OUT, 'flags.txt'), String(breaches.length));
   console.log(JSON.stringify({ visual: vis.summary, weight_breaches: breaches.length }));
@@ -162,13 +164,14 @@ async function compare(rec, file, v) {
 async function sideBySide(r) {
   const file = path.join(OUT, 'shots', r.slug + '-' + r.width + '.png');
   const prev = path.join(BASELINE, path.basename(file)), diff = file.replace(/\.png$/, '.diff.png');
-  const panelW = r.width === 390 ? 240 : 420, gap = 8;
+  const panelW = r.width === 390 ? 200 : 360, gap = 6;
   const panel = async f => sharp(f).resize({ width: panelW }).png().toBuffer({ resolveWithObject: true });
   const ps = [await panel(prev), await panel(file), await panel(diff)];
   const H = Math.max(...ps.map(x => x.info.height));
   const name = r.slug + '-' + r.width + '.webp';
   await sharp({ create: { width: panelW * 3 + gap * 2, height: H, channels: 3, background: '#FFFFFF' } })
     .composite(ps.map((x, i) => ({ input: x.data, left: i * (panelW + gap), top: 0 })))
-    .webp({ quality: 55 }).toFile(path.join(OUT, 'img', name));
+    .webp({ quality: 45 }).toFile(path.join(OUT, 'img', name));
+  r.visual.image_data = 'data:image/webp;base64,' + fs.readFileSync(path.join(OUT, 'img', name)).toString('base64');
   return name;
 }
