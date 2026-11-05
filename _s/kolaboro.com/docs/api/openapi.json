@@ -213,7 +213,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/open",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/open/stats": {
@@ -412,7 +412,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/open/stats",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/open/summary": {
@@ -610,16 +610,28 @@
             "type": "object",
             "properties": {
              "d": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "k": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "t": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "u": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              }
             },
             "required": [
@@ -710,7 +722,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/open/summary",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/open/projects": {
@@ -850,46 +862,88 @@
             "type": "object",
             "properties": {
              "id": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "market": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "country": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "region": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "stage": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "band": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "done": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "title": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "lease": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "units": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "score": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "max": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "vscore": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "tier": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "delay": {
               "type": [
@@ -1006,13 +1060,22 @@
               }
              },
              "flags": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "all_six_public": {
-              "type": "boolean"
+              "type": [
+               "boolean",
+               "null"
+              ]
              },
              "url": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              }
             },
             "required": [
@@ -1150,7 +1213,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/open/projects?market=Bali&limit=5",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/open/projects.csv": {
@@ -1272,7 +1335,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/open/projects.csv?market=Bali&limit=5",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/open/projects/{id}": {
@@ -1568,7 +1631,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/open/projects/BALI-014",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/open/projects/{id}/at/{day}": {
@@ -1793,13 +1856,22 @@
             "type": "object",
             "properties": {
              "d": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "f": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "to": {
-              "type": "boolean"
+              "type": [
+               "boolean",
+               "null"
+              ]
              },
              "from": {
               "type": "null"
@@ -1899,7 +1971,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/open/projects/BALI-014/at/2026-11-04",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/open/markets": {
@@ -1937,31 +2009,58 @@
             "type": "object",
             "properties": {
              "market": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "country": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "projects": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "avg_checks": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "avg_confirmed": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "permit_public_pct": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "deposit_protection_pct": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "all_six_public": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "with_flags": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "transparency_index": {
               "type": [
@@ -2030,7 +2129,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/open/markets",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/open/markets.csv": {
@@ -2056,7 +2155,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/open/markets.csv",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/open/changes": {
@@ -2108,16 +2207,28 @@
             "type": "object",
             "properties": {
              "date": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "project": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "market": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "field": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "from": {
               "type": [
@@ -2182,7 +2293,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/open/changes?since=2026-11-01",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/open/freshness": {
@@ -2241,22 +2352,40 @@
             "type": "object",
             "properties": {
              "market": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "projects": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "within_7d": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "within_30d": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "oldest_days": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "pct_7d": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              }
             },
             "required": [
@@ -2321,7 +2450,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/open/freshness",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/open/evals": {
@@ -3234,10 +3363,16 @@
             "type": "object",
             "properties": {
              "at": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "day": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "commit": {
               "type": [
@@ -3304,19 +3439,34 @@
               }
              },
              "cases_total": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "cases_passed": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "checks_total": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "checks_passed": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "prompt_sha256": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              }
             },
             "required": [
@@ -3527,7 +3677,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/open/evals",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/open/uptime": {
@@ -3556,13 +3706,22 @@
             "type": "object",
             "properties": {
              "up": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "day": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "probes": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              }
             },
             "required": [
@@ -3662,9 +3821,9 @@
          "about": "Two vantage points outside Cloudflare: our database server every 5 minutes, and GitHub Actions runners every hour (each GitHub probe is authenticated with GitHub's OIDC token). Targets: the home page and the API health check. Up = 2xx or 3xx within 15 seconds.",
          "daily": [
           {
-           "up": 162,
+           "up": 178,
            "day": "2026-11-05",
-           "probes": 162
+           "probes": 178
           },
           {
            "up": 582,
@@ -3683,12 +3842,12 @@
            "median_ms_7d": 697.5
           },
           "database": {
-           "probes_7d": 1088,
+           "probes_7d": 1104,
            "uptime_7d": 100,
-           "median_ms_7d": 120.5
+           "median_ms_7d": 121
           }
          },
-         "probes_30d": 1102,
+         "probes_30d": 1118,
          "uptime_30d": 100,
          "median_ms_7d": 122
         }
@@ -3697,7 +3856,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/open/uptime",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/open/build": {
@@ -3743,7 +3902,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/open/build",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/open/ai-spend": {
@@ -3769,13 +3928,22 @@
             "type": "object",
             "properties": {
              "day": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "calls": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "usd_estimated": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              }
             },
             "required": [
@@ -3814,7 +3982,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/open/ai-spend",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/open/security": {
@@ -4007,7 +4175,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/open/security",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/open/pdf/{sha256}": {
@@ -4075,7 +4243,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/open/pdf/0000000000000000000000000000000000000000000000000000000000000000",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/open/badge/{id}.svg": {
@@ -4123,7 +4291,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/open/badge/BALI-014.svg",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/open/openapi.json": {
@@ -4177,7 +4345,10 @@
             "type": "object",
             "properties": {
              "url": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              }
             },
             "required": [
@@ -4656,7 +4827,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/open/openapi.json",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/open/log": {
@@ -4682,10 +4853,16 @@
             "type": "object",
             "properties": {
              "day": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "head": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "prev": {
               "type": [
@@ -4700,34 +4877,64 @@
               "type": "null"
              },
              "rekor_time": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "rekor_uuid": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "audit_count": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "rekor_index": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "audit_intact": {
-              "type": "boolean"
+              "type": [
+               "boolean",
+               "null"
+              ]
              },
              "evidence_root": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "projects_root": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "dataset_sha256": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "evidence_items": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "projects_count": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              }
             },
             "required": [
@@ -4761,6 +4968,23 @@
         "example": {
          "heads": [
           {
+           "day": "2026-11-05",
+           "head": "0958c46e5812bf774a649ceb455d795a9bcfd69769becb9ab9e497e6d365fbae",
+           "prev": "fb04eee246f35e670da7e70f575fa16bf04d80dd9f2560ced5427115732adf31",
+           "cosign": null,
+           "audit_head": null,
+           "rekor_time": null,
+           "rekor_uuid": null,
+           "audit_count": 0,
+           "rekor_index": null,
+           "audit_intact": true,
+           "evidence_root": "ab61f32040e3b7a220f6321c3149c2c311721a40d664b15b4d1fa5e094792c1c",
+           "projects_root": "bcad3f619d5ed1f40a9b43bbe645387c8dfff4faa70bfc3ea5dc22bf4583fe61",
+           "dataset_sha256": "4c5a0a28b628fa6f33f3db3a3e3d074485a7396cf5b1b0980c6db04bb3aa1e25",
+           "evidence_items": 8,
+           "projects_count": 815
+          },
+          {
            "day": "2026-11-04",
            "head": "fb04eee246f35e670da7e70f575fa16bf04d80dd9f2560ced5427115732adf31",
            "prev": "e03354d62228a97904a4399ec1abf32ec62fa42ae58a15e93e9f4ef3a78370c4",
@@ -4776,23 +5000,6 @@
            "dataset_sha256": "b43b17f35cef73dd0c6740a22dfd01570891b622a69ce9c2ea64c3991b34dfec",
            "evidence_items": 7,
            "projects_count": 815
-          },
-          {
-           "day": "2026-11-03",
-           "head": "e03354d62228a97904a4399ec1abf32ec62fa42ae58a15e93e9f4ef3a78370c4",
-           "prev": "c49eb556dbecd8e0a641a1b264135476fe3944689000711ae7c1d2586b99e73a",
-           "cosign": null,
-           "audit_head": null,
-           "rekor_time": 1793697503,
-           "rekor_uuid": "108e9186e8c5677a4701cc2842cb73125400591269cd2e28e2ba63c9eaf23d5bcf216c3a10b81703",
-           "audit_count": 0,
-           "rekor_index": 3664820987,
-           "audit_intact": true,
-           "evidence_root": "09c8e1969183ce404843d09763f2f5eedd6b356fae9b6a7a06b8505a342877a4",
-           "projects_root": "82df496ddbddbca3c8c7ba71c0d80f22654b4ce242a3acb40777212c22383ece",
-           "dataset_sha256": "8717843706949693359e5efc3110ca2c596b2aa32c66c9875f21277f9a192681",
-           "evidence_items": 7,
-           "projects_count": 808
           }
          ],
          "format": "head = SHA-256 of \"kolaboro-log-v1|day|dataset_sha256|projects_root|projects_count|evidence_root|evidence_items|audit_head|audit_count|prev\" (prev = previous head, or \"genesis\"); each head is timestamped in Bitcoin through OpenTimestamps (GET /api/kb/stamp?hash=HEAD), recorded in Sigstore Rekor (rek..."
@@ -4802,7 +5009,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/open/log",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/open/log-input": {
@@ -4863,7 +5070,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/open/log-input",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/open/checkpoint": {
@@ -4883,13 +5090,13 @@
         "schema": {
          "type": "string"
         },
-        "example": "kolaboro.com/log\n3\nlnP975UKL8AJoga9K+otk29wP4052SGq8i+qw5HN+2g=\nday 2026-11-04\n\n— kolaboro.com/log 5bUOosefDv+/lDXkRSuXL7SWtvFEHr6k+XRmdoCQgsiATRbKiSCPDeRbpy+Ci2uHAHF2PRf4FyKJJxHmkrUufF8sIgw=\n"
+        "example": "kolaboro.com/log\n4\ncvsfSVmMgHmHYtDzdHJ8tLJ7Q/pCDr/WAiZYj0EtH1Y=\nday 2026-11-05\n\n— kolaboro.com/log 5bUOom0UaxHppOTqqRutBFxSimWraYIGmnojaxBIxrehRWE/zFRld6lTvgscfMgQ53xAx3Cy+r+bILPqly3jYxQarAc=\n"
        }
       }
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/open/checkpoint",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/open/log-proof": {
@@ -4947,10 +5154,16 @@
             "type": "object",
             "properties": {
              "side": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "hash": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              }
             },
             "required": [
@@ -4977,11 +5190,15 @@
          ]
         },
         "example": {
-         "tree_size": 3,
-         "root_hash": "9673fdef950a2fc009a206bd2bea2d936f703f8d39d921aaf22faac391cdfb68",
+         "tree_size": 4,
+         "root_hash": "72fb1f49598c80798762d0f374727cb4b27b43fa420ebfd60226588f412d1f56",
          "leaf_index": 2,
          "leaf": "2026-11-04 fb04eee246f35e670da7e70f575fa16bf04d80dd9f2560ced5427115732adf31",
          "path": [
+          {
+           "side": "R",
+           "hash": "a9f1e81e6a5eea16b86c8fce546b3173891c524957646bcc61e8cce391a93593"
+          },
           {
            "side": "L",
            "hash": "8d57444bb4ab6b4d1aa256f1dd71bc4ac4c30bfae2b98a70d0598716a4bc9d32"
@@ -4995,7 +5212,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/open/log-proof?day=2026-11-04",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/open/log-consistency": {
@@ -5082,7 +5299,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/open/log-consistency?first=1&second=2",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/open/proof/{id}": {
@@ -5138,10 +5355,16 @@
             "type": "object",
             "properties": {
              "side": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "hash": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              }
             },
             "required": [
@@ -5214,7 +5437,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/open/proof/BALI-014",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/open/receipt/{evidence_id}": {
@@ -5262,7 +5485,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/open/receipt/1",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/feed.json": {
@@ -5310,19 +5533,34 @@
             "type": "object",
             "properties": {
              "id": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "url": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "title": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "content_text": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "date_published": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "tags": {
               "type": "array",
@@ -5386,7 +5624,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/feed.json",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/feed.xml": {
@@ -5423,7 +5661,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/feed.xml?market=Bali",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/feed/alerts.xml": {
@@ -5449,7 +5687,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/feed/alerts.xml",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/z/feed": {
@@ -5534,7 +5772,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/z/feed",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/z/feed/projects": {
@@ -5648,19 +5886,34 @@
             "type": "object",
             "properties": {
              "id": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "market": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "country": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "region": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "stage": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "units": {
               "type": [
@@ -5687,10 +5940,16 @@
               ]
              },
              "disclosure_score": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "disclosure_max": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "disclosure": {
               "type": "object",
@@ -5737,7 +5996,10 @@
               }
              },
              "confirmed_score": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "verification_level": {
               "type": "object",
@@ -5781,7 +6043,10 @@
               }
              },
              "tier": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "claims": {
               "type": "object",
@@ -5807,7 +6072,10 @@
               }
              },
              "public_problems": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "overdue_months": {
               "type": "null"
@@ -5825,7 +6093,10 @@
               "type": "null"
              },
              "last_checked": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "page_fingerprint": {
               "type": [
@@ -5848,7 +6119,10 @@
               }
              },
              "url": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "on_time": {
               "type": "object",
@@ -5994,8 +6268,8 @@
          "feed": "kolaboro-risk-feed",
          "version": "1.1.0",
          "kind": "projects",
-         "generated_at": "2026-11-05T06:42:30.436Z",
-         "timestamp": 1793860950,
+         "generated_at": "2026-11-05T07:20:52.858Z",
+         "timestamp": 1793863252,
          "dataset_sha256": "4c5a0a28b628fa6f33f3db3a3e3d074485a7396cf5b1b0980c6db04bb3aa1e25",
          "data_updated": "2026-11-04",
          "license": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
@@ -6046,7 +6320,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/z/feed/projects?limit=2",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z",
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z",
     "security": [
      {
       "apiKey": []
@@ -6154,19 +6428,34 @@
             "type": "object",
             "properties": {
              "id": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "date": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "project": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "market": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "field": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "from": {
               "type": [
@@ -6181,7 +6470,10 @@
               ]
              },
              "url": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              }
             },
             "required": [
@@ -6219,8 +6511,8 @@
          "feed": "kolaboro-risk-feed",
          "version": "1.1.0",
          "kind": "changes",
-         "generated_at": "2026-11-05T06:42:30.622Z",
-         "timestamp": 1793860950,
+         "generated_at": "2026-11-05T07:20:53.109Z",
+         "timestamp": 1793863253,
          "dataset_sha256": "4c5a0a28b628fa6f33f3db3a3e3d074485a7396cf5b1b0980c6db04bb3aa1e25",
          "data_updated": "2026-11-04",
          "license": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
@@ -6280,7 +6572,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/z/feed/changes?since=2026-11-01&limit=2",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z",
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z",
     "security": [
      {
       "apiKey": []
@@ -6457,7 +6749,7 @@
         "example": {
          "feed": "kolaboro-risk-feed",
          "version": "1.1.0",
-         "checked_at": "2026-11-05T06:42:31.089Z",
+         "checked_at": "2026-11-05T07:20:53.637Z",
          "data_updated": "2026-11-04",
          "dataset_sha256": "4c5a0a28b628fa6f33f3db3a3e3d074485a7396cf5b1b0980c6db04bb3aa1e25",
          "projects": 1011,
@@ -6495,7 +6787,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/z/feed/status",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/z/feed/schema.json": {
@@ -7773,7 +8065,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/z/feed/schema.json",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/v": {
@@ -7833,7 +8125,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/v",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/v/delays": {
@@ -8003,7 +8295,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/v/delays?market=Bali",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/v/press": {
@@ -8050,19 +8342,34 @@
             "type": "object",
             "properties": {
              "key": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "value": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "unit": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "display": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "text": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "source": {
               "type": "array",
@@ -8179,10 +8486,16 @@
             "type": "object",
             "properties": {
              "file": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "title": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              }
             },
             "required": [
@@ -8285,10 +8598,16 @@
             "type": "object",
             "properties": {
              "file": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "sha256": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "updated": {
               "type": [
@@ -8466,7 +8785,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/v/press",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/r/price-index": {
@@ -8739,7 +9058,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/r/price-index?market=Bali",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/h/prices": {
@@ -8881,13 +9200,22 @@
             "type": "object",
             "properties": {
              "source": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "request": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "fetched_at": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "bytes": {
               "type": [
@@ -8896,7 +9224,10 @@
               ]
              },
              "sha256": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "rows": {
               "type": [
@@ -8925,7 +9256,10 @@
             "type": "object",
             "properties": {
              "market": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "official": {
               "type": "object",
@@ -9262,7 +9596,10 @@
               }
              },
              "project_count": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "comparison_withheld": {
               "type": [
@@ -9286,13 +9623,22 @@
             "type": "object",
             "properties": {
              "market": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "projects": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "note": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              }
             },
             "required": [
@@ -9516,7 +9862,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/h/prices",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/h/risk": {
@@ -9784,16 +10130,28 @@
             "type": "object",
             "properties": {
              "market": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "projects": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "unusual": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "median_score": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              }
             },
             "required": [
@@ -9810,22 +10168,40 @@
             "type": "object",
             "properties": {
              "id": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "m": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "s": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "r": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "if": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "lvl": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "c": {
               "type": "array",
@@ -9988,7 +10364,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/h/risk",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/h/registers": {
@@ -10078,13 +10454,22 @@
             "type": "object",
             "properties": {
              "market_id": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "market": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "register": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "checks": {
               "type": "array",
@@ -10102,7 +10487,10 @@
               ]
              },
              "probed_at": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "robots": {
               "type": [
@@ -10141,10 +10529,16 @@
               ]
              },
              "result": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "automation": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "lookup": {
               "type": "object",
@@ -10189,25 +10583,46 @@
             "type": "object",
             "properties": {
              "market": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "register": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "item": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "status": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "checked": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "archived": {
-              "type": "boolean"
+              "type": [
+               "boolean",
+               "null"
+              ]
              },
              "note": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "companies": {
               "type": "array",
@@ -10262,19 +10677,34 @@
             "type": "object",
             "properties": {
              "register": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "fetched_at": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "http": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "bytes": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "sha256": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              }
             },
             "required": [
@@ -10292,13 +10722,22 @@
             "type": "object",
             "properties": {
              "id": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "name": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "by": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              }
             },
             "required": [
@@ -10444,7 +10883,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/h/registers",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/w/graph-global": {
@@ -10653,28 +11092,52 @@
               ]
              },
              "projects": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "projects_with_lei": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "projects_lei_not_issued": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "projects_foreign_parent": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "developers": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "developers_with_lei": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "developers_foreign_parent": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "developers_lei_not_issued": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "lei_status": {
               "type": "object",
@@ -10739,7 +11202,10 @@
               }
              },
              "checked": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "share_projects_with_lei": {
               "type": [
@@ -10950,7 +11416,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/w/graph-global",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/w/insolvency/watch": {
@@ -11118,22 +11584,40 @@
             "type": "object",
             "properties": {
              "country": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "source": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "projects": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "projects_with_names": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "names_checked": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "projects_with_notice": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              }
             },
             "required": [
@@ -11166,13 +11650,22 @@
             "type": "object",
             "properties": {
              "market": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "names_checked": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "notices": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "found": {
               "type": "array",
@@ -11422,7 +11915,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/w/insolvency/watch",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/q/graph": {
@@ -11544,10 +12037,16 @@
             "type": "object",
             "properties": {
              "jurisdiction": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "reason": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              }
             },
             "required": [
@@ -11562,7 +12061,10 @@
             "type": "object",
             "properties": {
              "market": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "summary": {
               "type": "array",
@@ -11621,7 +12123,10 @@
               }
              },
              "directors": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              }
             },
             "required": [
@@ -12120,7 +12625,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/q/graph",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/q/mystery-shopper": {
@@ -12170,16 +12675,28 @@
             "type": "object",
             "properties": {
              "id": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "topic": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "question": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "checkable_answer": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              }
             },
             "required": [
@@ -12196,10 +12713,16 @@
             "type": "object",
             "properties": {
              "metric": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "definition": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              }
             },
             "required": [
@@ -12283,7 +12806,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/q/mystery-shopper",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/r/visual": {
@@ -12411,10 +12934,16 @@
             "type": "object",
             "properties": {
              "id": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "market": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "last": {
               "type": "object",
@@ -12579,7 +13108,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/r/visual",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/x/fx": {
@@ -12722,7 +13251,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/x/fx?c=IDR,USD&from=2026-10-01",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/d/project/{id}": {
@@ -13094,7 +13623,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/d/project/BALI-014",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/h/project/{id}": {
@@ -13386,7 +13915,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/h/project/BALI-014",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/q/graph/{id}": {
@@ -13451,13 +13980,22 @@
             "type": "object",
             "properties": {
              "id": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "type": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "label": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              }
             },
             "required": [
@@ -13581,7 +14119,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/q/graph/BHX-001",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/w/graph-global/{id}": {
@@ -13704,7 +14242,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/w/graph-global/BALI-014",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/w/insolvency/watch/{id}": {
@@ -13782,7 +14320,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/w/insolvency/watch/BHX-001",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/r/visual/{id}": {
@@ -13838,16 +14376,28 @@
             "type": "object",
             "properties": {
              "date": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "before_date": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "area_pct": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "removed_px": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "regions": {
               "type": "array",
@@ -13862,10 +14412,16 @@
               }
              },
              "page_h": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "masked_pct": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              }
             },
             "required": [
@@ -13929,7 +14485,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/r/visual/CDS-014",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/v/on-time": {
@@ -14088,7 +14644,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/v/on-time?id=BALI-014",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/y/promises": {
@@ -14174,28 +14730,52 @@
             "type": "object",
             "properties": {
              "k": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "d": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "st": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "mv": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "mm": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "src": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "seen": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "q": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "hist": {
               "type": "array",
@@ -14301,7 +14881,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/y/promises?id=BALI-001",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/t/reports": {
@@ -14368,7 +14948,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/t/reports?project=BALI-014",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/p/hazards": {
@@ -15094,7 +15674,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/p/hazards?lat=-8.638&lng=115.115",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/u/climate": {
@@ -15176,13 +15756,22 @@
             "type": "object",
             "properties": {
              "scenario": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "scenario_name": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "year": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "river": {
               "type": "object",
@@ -15418,7 +16007,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/u/climate?lat=-8.638&lng=115.115",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/u/protected": {
@@ -15663,7 +16252,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/u/protected?lat=-8.638&lng=115.115",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/g/status": {
@@ -15719,7 +16308,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/g/status",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/o/slo": {
@@ -15762,10 +16351,16 @@
             "type": "object",
             "properties": {
              "id": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "objective": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "target": {
               "type": [
@@ -15774,10 +16369,16 @@
               ]
              },
              "source": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "state": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "probes": {
               "type": [
@@ -15834,7 +16435,10 @@
               ]
              },
              "note": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "target_ms": {
               "type": [
@@ -15872,11 +16476,11 @@
          ]
         },
         "example": {
-         "computed_at": "2026-11-05T06:40:49.323Z",
+         "computed_at": "2026-11-05T07:20:59.847Z",
          "window": {
           "month": "2026-11",
           "days_in_month": 30,
-          "days_elapsed": 4.28
+          "days_elapsed": 4.31
          },
          "slos": [
           {
@@ -15885,7 +16489,7 @@
            "target": 0.999,
            "source": "/api/open/uptime",
            "state": "measuring",
-           "probes": 1102,
+           "probes": 1118,
            "failed": 0,
            "measured": 1,
            "first_day": "2026-11-03",
@@ -15911,7 +16515,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/o/slo",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/l/trust": {
@@ -15972,10 +16576,16 @@
             "type": "object",
             "properties": {
              "id": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "name": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "tsc": {
               "type": "array",
@@ -15987,19 +16597,34 @@
               }
              },
              "max_age_h": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "status": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "evidence_at": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "detail": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "how": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "evidence": {
               "type": "array",
@@ -16011,7 +16636,10 @@
               }
              },
              "evidence_age_h": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "missing": {
               "type": "array"
@@ -16042,14 +16670,14 @@
          ]
         },
         "example": {
-         "generated_at": "2026-11-05T06:40:48.465Z",
+         "generated_at": "2026-11-05T07:21:00.047Z",
          "build": "dbb44f46bd36e9a17237442859d42749cb4f7edc",
          "framework": "Controls mapped by Kolaboro to the AICPA SOC 2 Trust Services Criteria (2017, points of focus revised 2022). Not audited. Kolaboro holds no SOC 2 report and no certification.",
          "status_rules": "pass: evidence meets the target and is fresh. warn: works with a known gap. fail: evidence shows a problem. stale: evidence older than max_age_h. unknown: evidence not readable on this request.",
          "summary": {
           "controls": 13,
-          "pass": 12,
-          "warn": 1,
+          "pass": 11,
+          "warn": 2,
           "fail": 0,
           "stale": 0,
           "unknown": 0
@@ -16070,7 +16698,7 @@
            "evidence": [
             "/data/restore.json"
            ],
-           "evidence_age_h": 45.5
+           "evidence_age_h": 46.1
           },
           {
            "id": "uptime",
@@ -16082,13 +16710,13 @@
            "max_age_h": 30,
            "status": "pass",
            "evidence_at": "2026-11-05T00:00:00Z",
-           "detail": "100% up over 7 days (14 probes from github, 1088 probes from database), p95 1718 ms, 0 incidents. Measured since 2026-11-03.",
+           "detail": "100% up over 7 days (14 probes from github, 1104 probes from database), p95 1718 ms, 0 incidents. Measured since 2026-11-03.",
            "how": "Probes every 5 minutes from our database server and every hour from GitHub runners (OIDC-authenticated). Evidence time has day resolution.",
            "evidence": [
             "/api/open/uptime",
             "/status"
            ],
-           "evidence_age_h": 6.7
+           "evidence_age_h": 7.4
           }
          ]
         }
@@ -16097,7 +16725,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/l/trust",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/n": {
@@ -16169,7 +16797,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/n",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/e/parquet-manifest": {
@@ -16230,28 +16858,52 @@
             "type": "object",
             "properties": {
              "path": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "table": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "rows": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "bytes_expected": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "bytes_served": {
-              "type": "number"
+              "type": [
+               "null",
+               "number"
+              ]
              },
              "sha256_expected": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "sha256_served": {
-              "type": "string"
+              "type": [
+               "null",
+               "string"
+              ]
              },
              "match": {
-              "type": "boolean"
+              "type": [
+               "boolean",
+               "null"
+              ]
              }
             },
             "required": [
@@ -16288,7 +16940,7 @@
         },
         "example": {
          "ok": true,
-         "checked_at": "2026-11-05T06:42:36.938Z",
+         "checked_at": "2026-11-05T07:21:00.702Z",
          "manifest_url": "https://kolaboro.com/data/kolaboro.parquet.json",
          "manifest_sha256": "64800772a5ffb0ee8c778c45391c09fa6c17e2cb163545b2fbe047dd68eca56c",
          "generated": "2026-11-04T10:24:41Z",
@@ -16329,7 +16981,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/e/parquet-manifest",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   },
   "/api/x/z/bundle/{sha256}": {
@@ -16414,7 +17066,7 @@
      }
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/z/bundle/0000000000000000000000000000000000000000000000000000000000000000",
-    "x-kolaboro-checked": "2026-11-05T06:42:21Z"
+    "x-kolaboro-checked": "2026-11-05T07:20:43Z"
    }
   }
  },
