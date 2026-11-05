@@ -1,10 +1,10 @@
 {
  "bomFormat": "CycloneDX",
  "specVersion": "1.5",
- "serialNumber": "urn:uuid:fd70e23b-f7e9-44b8-89d9-e7274ea34727",
+ "serialNumber": "urn:uuid:d4ccb144-9137-48ed-b96c-8af8471c618a",
  "version": 1,
  "metadata": {
-  "timestamp": "2026-11-05T06:54:33.849Z",
+  "timestamp": "2026-11-05T06:59:33.596Z",
   "tools": {
    "components": [
     {
@@ -627,11 +627,11 @@
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "6718e418771384383af6f7d3f13c6f982a01dd0157b7c577cc65f81211912214d621c80089799df5dd8abb28a1207434"
+     "content": "0d06a17bb80744dd7f0a1f134f8caed4d298032a70085869c8189d72b3b6c7b0edb80dadcfacb056f35686458e04e4b2"
     },
     {
      "alg": "SHA-256",
-     "content": "ad0b7ac330f3b28553a4558683bc9ea3e241d2011f3aef2b33b83558bd27abff"
+     "content": "1a20adcc477652577447b4c7fbcd6934c9e6144bcf25ef33b393be55c1a01c98"
     }
    ],
    "externalReferences": [
@@ -645,11 +645,11 @@
     },
     {
      "type": "distribution",
-     "url": "https://www.googletagmanager.com/gtag/js?id=G-H5TGZJ1KNG&cx=c&gtm=4e6b31h1"
+     "url": "https://www.googletagmanager.com/gtag/js?id=G-H5TGZJ1KNG&cx=c&gtm=4e6b40h2"
     },
     {
      "type": "distribution",
-     "url": "https://www.googletagmanager.com/gtag/js?id=G-H5TGZJ1KNG&cx=c&gtm=4e6b40h2"
+     "url": "https://www.googletagmanager.com/gtag/js?id=G-H5TGZJ1KNG&cx=c&gtm=4e6b31h1"
     }
    ],
    "properties": [
@@ -687,11 +687,11 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-ZxjkGHcThDg69vfT8TxvmCoB3QFXt8V3zGX4EhGRIhTWIcgAiXmd9d2KuyihIHQ0"
+     "value": "sha384-DQahe7gHRN1/Ch8TT4yu1NKYAypwCFhpyBidcrO2x7DtuA2tz6ywVvNWhkWOBOSy"
     },
     {
      "name": "kolaboro:bytes",
-     "value": "540684"
+     "value": "540717"
     },
     {
      "name": "kolaboro:licence",
@@ -1278,11 +1278,11 @@
    "hashes": [
     {
      "alg": "SHA-384",
-     "content": "c9e5fa7ae672fd7dc32024d2a825f5c292ddf88cf427e87deee1d17d7456f798a4585e816dd7382fea09b30ec3cee902"
+     "content": "756e537f46fd2c7fb5a45a6af4e51ade00a1261a06c0553f7f597584ce89cef3c41a090936554272fb16d6e6243c9833"
     },
     {
      "alg": "SHA-256",
-     "content": "32446b6452682d2cff04019e13ba29d9b8d7ac749b5b921e8537c7d4a4be652a"
+     "content": "5c7608918ac8751c5dbc1773ac14b2476742b25b23701840fda9e09b2730b922"
     }
    ],
    "externalReferences": [
@@ -1326,7 +1326,7 @@
     },
     {
      "name": "kolaboro:sri",
-     "value": "sha384-yeX6euZy/X3DICTSqCX1wpLd+Iz0J+h97uHRfXRW95ikWF6Bbdc4L+oJsw7DzukC"
+     "value": "sha384-dW5Tf0b9LH+1pFpq9OUa3gChJhoGwFU/f1l1hM6JzvPEGgkJNlVCcvsW1uYkPJgz"
     },
     {
      "name": "kolaboro:bytes",
@@ -3927,11 +3927,11 @@
     },
     {
      "name": "kolaboro:seen_on_count",
-     "value": "17"
+     "value": "12"
     },
     {
      "name": "kolaboro:seen_on_sample",
-     "value": "/about/ /bali/ /check/ /checklist/ /database/"
+     "value": "/ /check/ /checklist/ /docs/api/ /how-we-score/"
     },
     {
      "name": "kolaboro:url_variants",
@@ -9944,7 +9944,7 @@
    "hashes": [
     {
      "alg": "SHA-256",
-     "content": "80f99cb300329fb345288f2c19a09ada18bdda301b246aa65e9201e12748e97d"
+     "content": "052945ba865f9101827f233afcde4401167bfabaa5fb27ea920df480283ffb6c"
     }
    ],
    "properties": [
@@ -9954,7 +9954,7 @@
     },
     {
      "name": "kolaboro:bytes",
-     "value": "405"
+     "value": "9997"
     }
    ]
   },

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T06:54:24.298Z",
+ "updated": "2026-11-05T06:59:14.176Z",
  "base": "https://kolaboro.com",
  "method": "Bytes transferred over the network (compressed size plus headers, Chrome DevTools Protocol encodedDataLength) for one cold load with the browser cache disabled, waiting for network idle plus 2.5 s so late tags such as analytics are counted. First-party bytes (kolaboro.com) are split by resource type; everything from another host, and code Cloudflare injects under /cdn-cgi/, is counted as third party. Measured from a GitHub Actions runner in the United States.",
  "budgets": {
@@ -45,7 +45,7 @@
      "total": 757760,
      "js": 61440,
      "css": 40960,
-     "images": 20480,
+     "images": 102400,
      "fonts": 112640,
      "third_party": 471040
     },
@@ -63,7 +63,7 @@
      "total": 757760,
      "js": 61440,
      "css": 40960,
-     "images": 20480,
+     "images": 102400,
      "fonts": 112640,
      "third_party": 471040
     },
@@ -71,7 +71,7 @@
      "total": 747520,
      "js": 51200,
      "css": 40960,
-     "images": 20480,
+     "images": 102400,
      "fonts": 112640,
      "third_party": 471040
     }
@@ -81,7 +81,7 @@
      "total": 1003520,
      "js": 71680,
      "css": 40960,
-     "images": 20480,
+     "images": 102400,
      "fonts": 112640,
      "third_party": 563200
     },
@@ -89,7 +89,7 @@
      "total": 1003520,
      "js": 71680,
      "css": 40960,
-     "images": 20480,
+     "images": 102400,
      "fonts": 112640,
      "third_party": 573440
     }
@@ -99,7 +99,7 @@
      "total": 737280,
      "js": 61440,
      "css": 40960,
-     "images": 20480,
+     "images": 102400,
      "fonts": 112640,
      "third_party": 471040
     },
@@ -107,7 +107,7 @@
      "total": 737280,
      "js": 61440,
      "css": 40960,
-     "images": 20480,
+     "images": 102400,
      "fonts": 112640,
      "third_party": 471040
     }
@@ -117,7 +117,7 @@
      "total": 901120,
      "js": 81920,
      "css": 40960,
-     "images": 20480,
+     "images": 102400,
      "fonts": 112640,
      "third_party": 471040
     },
@@ -125,28 +125,16 @@
      "total": 911360,
      "js": 92160,
      "css": 40960,
-     "images": 20480,
+     "images": 102400,
      "fonts": 112640,
      "third_party": 471040
     }
    }
   },
-  "note": "Budgets in bytes per page type and viewport, set on 5 Nov 2026 from the first measurement (largest page of each type) plus 15%, rounded up to 10 KiB, with a 20 KiB floor. Third-party bytes are mostly the Google tag (about 354 KB per page). Lower a budget when a page gets lighter; never raise one without saying why in the commit."
+  "note": "Budgets in bytes per page type and viewport, set on 5 Nov 2026 from the first measurement (largest page of each type) plus 15%, rounded up to 10 KiB, with a 20 KiB floor (100 KiB for images, because some pages load images only at certain widths). Third-party bytes are mostly the Google tag (about 354 KB per page). Lower a budget when a page gets lighter; never raise one without saying why in the commit."
  },
- "ok": false,
- "breaches": [
-  {
-   "page": "/status/",
-   "view": "desktop",
-   "over": [
-    {
-     "metric": "images",
-     "value": 74690,
-     "budget": 20480
-    }
-   ]
-  }
- ],
+ "ok": true,
+ "breaches": [],
  "pages": [
   {
    "page": "/",
@@ -154,32 +142,32 @@
    "width": 390,
    "type": "home",
    "status": 200,
-   "total": 619709,
-   "requests": 29,
+   "total": 622266,
+   "requests": 30,
    "by_type": {
-    "html": 27411,
-    "css": 29162,
-    "js": 38776,
+    "html": 27417,
+    "css": 29102,
+    "js": 41205,
     "images": 0,
-    "fonts": 90534,
-    "other": 27597,
-    "third_party": 406229
+    "fonts": 90518,
+    "other": 27736,
+    "third_party": 406288
    },
    "third_party_hosts": {
-    "static.cloudflareinsights.com": 10478,
-    "oykcsmextclpdnugixqz.supabase.co": 1057,
-    "kolaboro.com/cdn-cgi": 3598,
-    "www.clarity.ms": 1193,
+    "static.cloudflareinsights.com": 10479,
+    "oykcsmextclpdnugixqz.supabase.co": 1083,
+    "kolaboro.com/cdn-cgi": 3604,
+    "www.clarity.ms": 1147,
     "scripts.clarity.ms": 25537,
-    "i.clarity.ms": 1380,
-    "c.clarity.ms": 720,
-    "www.googletagmanager.com": 362266
+    "l.clarity.ms": 1380,
+    "c.clarity.ms": 722,
+    "www.googletagmanager.com": 362336
    },
    "budget": {
     "total": 757760,
     "js": 61440,
     "css": 40960,
-    "images": 20480,
+    "images": 102400,
     "fonts": 112640,
     "third_party": 471040
    },
@@ -191,26 +179,26 @@
    "width": 1440,
    "type": "home",
    "status": 200,
-   "total": 784565,
-   "requests": 31,
+   "total": 787210,
+   "requests": 32,
    "by_type": {
-    "html": 27416,
-    "css": 29162,
-    "js": 38776,
-    "images": 164857,
-    "fonts": 90534,
-    "other": 27608,
-    "third_party": 406212
+    "html": 27498,
+    "css": 29098,
+    "js": 41224,
+    "images": 164862,
+    "fonts": 90538,
+    "other": 27724,
+    "third_party": 406266
    },
    "third_party_hosts": {
     "static.cloudflareinsights.com": 10478,
-    "oykcsmextclpdnugixqz.supabase.co": 1079,
-    "kolaboro.com/cdn-cgi": 3602,
+    "kolaboro.com/cdn-cgi": 3608,
+    "oykcsmextclpdnugixqz.supabase.co": 1057,
     "www.clarity.ms": 1147,
     "scripts.clarity.ms": 25537,
-    "b.clarity.ms": 1380,
+    "o.clarity.ms": 1380,
     "c.clarity.ms": 720,
-    "www.googletagmanager.com": 362269
+    "www.googletagmanager.com": 362339
    },
    "budget": {
     "total": 952320,
@@ -228,31 +216,31 @@
    "width": 390,
    "type": "tool",
    "status": 200,
-   "total": 614931,
+   "total": 614687,
    "requests": 20,
    "by_type": {
-    "html": 32727,
-    "css": 29162,
-    "js": 34207,
+    "html": 32435,
+    "css": 29132,
+    "js": 34198,
     "images": 0,
-    "fonts": 90534,
-    "other": 23989,
-    "third_party": 404312
+    "fonts": 90549,
+    "other": 23993,
+    "third_party": 404380
    },
    "third_party_hosts": {
-    "static.cloudflareinsights.com": 10478,
-    "kolaboro.com/cdn-cgi": 3607,
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3605,
     "www.clarity.ms": 1147,
-    "scripts.clarity.ms": 25538,
-    "o.clarity.ms": 552,
+    "scripts.clarity.ms": 25537,
     "c.clarity.ms": 721,
-    "www.googletagmanager.com": 362269
+    "r.clarity.ms": 552,
+    "www.googletagmanager.com": 362339
    },
    "budget": {
     "total": 757760,
     "js": 61440,
     "css": 40960,
-    "images": 20480,
+    "images": 102400,
     "fonts": 112640,
     "third_party": 471040
    },
@@ -264,31 +252,31 @@
    "width": 1440,
    "type": "tool",
    "status": 200,
-   "total": 616911,
+   "total": 617242,
    "requests": 21,
    "by_type": {
-    "html": 32341,
-    "css": 29162,
-    "js": 36654,
+    "html": 32539,
+    "css": 29098,
+    "js": 36648,
     "images": 0,
-    "fonts": 90534,
-    "other": 23910,
-    "third_party": 404310
+    "fonts": 90539,
+    "other": 24008,
+    "third_party": 404410
    },
    "third_party_hosts": {
     "static.cloudflareinsights.com": 10479,
-    "kolaboro.com/cdn-cgi": 3607,
+    "kolaboro.com/cdn-cgi": 3610,
     "www.clarity.ms": 1147,
     "scripts.clarity.ms": 25538,
-    "a.clarity.ms": 552,
+    "s.clarity.ms": 552,
     "c.clarity.ms": 721,
-    "www.googletagmanager.com": 362266
+    "www.googletagmanager.com": 362363
    },
    "budget": {
     "total": 747520,
     "js": 51200,
     "css": 40960,
-    "images": 20480,
+    "images": 102400,
     "fonts": 112640,
     "third_party": 471040
    },
@@ -300,452 +288,814 @@
    "width": 390,
    "type": "data",
    "status": 200,
-   "total": 863286,
-   "requests": 25,
+   "total": 860847,
+   "requests": 24,
    "by_type": {
-    "html": 15622,
-    "css": 29160,
-    "js": 39984,
+    "html": 15570,
+    "css": 29108,
+    "js": 37528,
     "images": 0,
-    "fonts": 90545,
-    "other": 283680,
-    "third_party": 404295
+    "fonts": 90528,
+    "other": 283729,
+    "third_party": 404384
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3609,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "r.clarity.ms": 552,
+    "c.clarity.ms": 720,
+    "www.googletagmanager.com": 362339
+   },
+   "budget": {
+    "total": 1003520,
+    "js": 71680,
+    "css": 40960,
+    "images": 102400,
+    "fonts": 112640,
+    "third_party": 563200
+   },
+   "over": []
+  },
+  {
+   "page": "/database/",
+   "view": "desktop",
+   "width": 1440,
+   "type": "data",
+   "status": 200,
+   "total": 860775,
+   "requests": 24,
+   "by_type": {
+    "html": 15559,
+    "css": 29108,
+    "js": 37521,
+    "images": 0,
+    "fonts": 90528,
+    "other": 283697,
+    "third_party": 404362
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3600,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "k.clarity.ms": 552,
+    "c.clarity.ms": 722,
+    "www.googletagmanager.com": 362324
+   },
+   "budget": {
+    "total": 1003520,
+    "js": 71680,
+    "css": 40960,
+    "images": 102400,
+    "fonts": 112640,
+    "third_party": 573440
+   },
+   "over": []
+  },
+  {
+   "page": "/pricing/",
+   "view": "phone",
+   "width": 390,
+   "type": "content",
+   "status": 200,
+   "total": 596927,
+   "requests": 22,
+   "by_type": {
+    "html": 11746,
+    "css": 29101,
+    "js": 36646,
+    "images": 0,
+    "fonts": 90538,
+    "other": 24441,
+    "third_party": 404455
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3609,
+    "www.clarity.ms": 1193,
+    "scripts.clarity.ms": 25538,
+    "o.clarity.ms": 552,
+    "c.clarity.ms": 721,
+    "www.googletagmanager.com": 362363
+   },
+   "budget": {
+    "total": 737280,
+    "js": 61440,
+    "css": 40960,
+    "images": 102400,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/pricing/",
+   "view": "desktop",
+   "width": 1440,
+   "type": "content",
+   "status": 200,
+   "total": 594291,
+   "requests": 21,
+   "by_type": {
+    "html": 11616,
+    "css": 29132,
+    "js": 34201,
+    "images": 0,
+    "fonts": 90540,
+    "other": 24423,
+    "third_party": 404379
    },
    "third_party_hosts": {
     "static.cloudflareinsights.com": 10479,
     "kolaboro.com/cdn-cgi": 3603,
     "www.clarity.ms": 1147,
     "scripts.clarity.ms": 25538,
-    "g.clarity.ms": 552,
+    "i.clarity.ms": 552,
+    "c.clarity.ms": 721,
+    "www.googletagmanager.com": 362339
+   },
+   "budget": {
+    "total": 737280,
+    "js": 61440,
+    "css": 40960,
+    "images": 102400,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/cases/",
+   "view": "phone",
+   "width": 390,
+   "type": "data",
+   "status": 200,
+   "total": 826626,
+   "requests": 30,
+   "by_type": {
+    "html": 25445,
+    "css": 29107,
+    "js": 43917,
+    "images": 0,
+    "fonts": 90538,
+    "other": 153801,
+    "third_party": 483818
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "cdnjs.cloudflare.com": 40117,
+    "kolaboro.com/cdn-cgi": 3600,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "server.arcgisonline.com": 39300,
+    "h.clarity.ms": 552,
     "c.clarity.ms": 722,
-    "www.googletagmanager.com": 362254
+    "www.googletagmanager.com": 362363
    },
    "budget": {
     "total": 1003520,
     "js": 71680,
     "css": 40960,
-    "images": 20480,
+    "images": 102400,
     "fonts": 112640,
     "third_party": 563200
    },
    "over": []
   },
   {
-   "page": "/database/",
+   "page": "/cases/",
    "view": "desktop",
    "width": 1440,
    "type": "data",
    "status": 200,
-   "total": 860925,
-   "requests": 24,
+   "total": 835021,
+   "requests": 32,
    "by_type": {
-    "html": 15701,
-    "css": 29162,
-    "js": 37530,
+    "html": 25452,
+    "css": 29108,
+    "js": 43795,
     "images": 0,
-    "fonts": 90534,
-    "other": 283684,
-    "third_party": 404314
+    "fonts": 90629,
+    "other": 153811,
+    "third_party": 492226
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "cdnjs.cloudflare.com": 40115,
+    "kolaboro.com/cdn-cgi": 3607,
+    "server.arcgisonline.com": 47736,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "i.clarity.ms": 552,
+    "c.clarity.ms": 722,
+    "www.googletagmanager.com": 362330
+   },
+   "budget": {
+    "total": 1003520,
+    "js": 71680,
+    "css": 40960,
+    "images": 102400,
+    "fonts": 112640,
+    "third_party": 573440
+   },
+   "over": []
+  },
+  {
+   "page": "/about/",
+   "view": "phone",
+   "width": 390,
+   "type": "content",
+   "status": 200,
+   "total": 592995,
+   "requests": 20,
+   "by_type": {
+    "html": 10850,
+    "css": 29107,
+    "js": 34199,
+    "images": 0,
+    "fonts": 90538,
+    "other": 23917,
+    "third_party": 404384
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10478,
+    "kolaboro.com/cdn-cgi": 3604,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25537,
+    "a.clarity.ms": 552,
+    "c.clarity.ms": 720,
+    "www.googletagmanager.com": 362346
+   },
+   "budget": {
+    "total": 737280,
+    "js": 61440,
+    "css": 40960,
+    "images": 102400,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/about/",
+   "view": "desktop",
+   "width": 1440,
+   "type": "content",
+   "status": 200,
+   "total": 593029,
+   "requests": 20,
+   "by_type": {
+    "html": 10749,
+    "css": 29196,
+    "js": 34165,
+    "images": 0,
+    "fonts": 90562,
+    "other": 23969,
+    "third_party": 404388
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3613,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "i.clarity.ms": 552,
+    "c.clarity.ms": 720,
+    "www.googletagmanager.com": 362339
+   },
+   "budget": {
+    "total": 737280,
+    "js": 61440,
+    "css": 40960,
+    "images": 102400,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/p/BALI-014",
+   "view": "phone",
+   "width": 390,
+   "type": "project",
+   "status": 200,
+   "total": 773042,
+   "requests": 34,
+   "by_type": {
+    "html": 10697,
+    "css": 33820,
+    "js": 64593,
+    "images": 0,
+    "fonts": 90538,
+    "other": 169012,
+    "third_party": 404382
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10478,
+    "kolaboro.com/cdn-cgi": 3609,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25537,
+    "j.clarity.ms": 552,
+    "c.clarity.ms": 720,
+    "www.googletagmanager.com": 362339
+   },
+   "budget": {
+    "total": 901120,
+    "js": 81920,
+    "css": 40960,
+    "images": 102400,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/p/BALI-014",
+   "view": "desktop",
+   "width": 1440,
+   "type": "project",
+   "status": 200,
+   "total": 770433,
+   "requests": 33,
+   "by_type": {
+    "html": 10548,
+    "css": 33813,
+    "js": 62140,
+    "images": 0,
+    "fonts": 90519,
+    "other": 169004,
+    "third_party": 404409
    },
    "third_party_hosts": {
     "static.cloudflareinsights.com": 10479,
     "kolaboro.com/cdn-cgi": 3608,
     "www.clarity.ms": 1147,
     "scripts.clarity.ms": 25538,
-    "n.clarity.ms": 552,
-    "c.clarity.ms": 721,
-    "www.googletagmanager.com": 362269
+    "u.clarity.ms": 552,
+    "c.clarity.ms": 722,
+    "www.googletagmanager.com": 362363
    },
    "budget": {
-    "total": 1003520,
-    "js": 71680,
+    "total": 911360,
+    "js": 92160,
     "css": 40960,
-    "images": 20480,
-    "fonts": 112640,
-    "third_party": 573440
-   },
-   "over": []
-  },
-  {
-   "page": "/pricing/",
-   "view": "phone",
-   "width": 390,
-   "type": "content",
-   "status": 200,
-   "total": 596824,
-   "requests": 22,
-   "by_type": {
-    "html": 11704,
-    "css": 29146,
-    "js": 36652,
-    "images": 0,
-    "fonts": 90545,
-    "other": 24404,
-    "third_party": 404373
-   },
-   "third_party_hosts": {
-    "static.cloudflareinsights.com": 10478,
-    "kolaboro.com/cdn-cgi": 3607,
-    "www.clarity.ms": 1193,
-    "scripts.clarity.ms": 25536,
-    "t.clarity.ms": 552,
-    "c.clarity.ms": 719,
-    "www.googletagmanager.com": 362288
-   },
-   "budget": {
-    "total": 737280,
-    "js": 61440,
-    "css": 40960,
-    "images": 20480,
+    "images": 102400,
     "fonts": 112640,
     "third_party": 471040
    },
    "over": []
   },
   {
-   "page": "/pricing/",
-   "view": "desktop",
-   "width": 1440,
-   "type": "content",
-   "status": 200,
-   "total": 594369,
-   "requests": 21,
-   "by_type": {
-    "html": 11744,
-    "css": 29162,
-    "js": 34204,
-    "images": 0,
-    "fonts": 90538,
-    "other": 24394,
-    "third_party": 404327
-   },
-   "third_party_hosts": {
-    "static.cloudflareinsights.com": 10478,
-    "kolaboro.com/cdn-cgi": 3604,
-    "www.clarity.ms": 1147,
-    "scripts.clarity.ms": 25537,
-    "o.clarity.ms": 552,
-    "c.clarity.ms": 720,
-    "www.googletagmanager.com": 362289
-   },
-   "budget": {
-    "total": 737280,
-    "js": 61440,
-    "css": 40960,
-    "images": 20480,
-    "fonts": 112640,
-    "third_party": 471040
-   },
-   "over": []
-  },
-  {
-   "page": "/cases/",
+   "page": "/verify/",
    "view": "phone",
    "width": 390,
    "type": "data",
    "status": 200,
-   "total": 826985,
-   "requests": 31,
+   "total": 622287,
+   "requests": 26,
    "by_type": {
-    "html": 25684,
-    "css": 29147,
-    "js": 43929,
+    "html": 21538,
+    "css": 29108,
+    "js": 49333,
     "images": 0,
-    "fonts": 90554,
-    "other": 153852,
-    "third_party": 483819
+    "fonts": 90528,
+    "other": 27406,
+    "third_party": 404374
    },
    "third_party_hosts": {
     "static.cloudflareinsights.com": 10478,
-    "cdnjs.cloudflare.com": 40106,
-    "kolaboro.com/cdn-cgi": 3608,
-    "server.arcgisonline.com": 39396,
+    "kolaboro.com/cdn-cgi": 3606,
     "www.clarity.ms": 1147,
     "scripts.clarity.ms": 25536,
-    "f.clarity.ms": 552,
+    "h.clarity.ms": 552,
     "c.clarity.ms": 719,
-    "www.googletagmanager.com": 362277
+    "www.googletagmanager.com": 362336
    },
    "budget": {
     "total": 1003520,
     "js": 71680,
     "css": 40960,
-    "images": 20480,
+    "images": 102400,
     "fonts": 112640,
     "third_party": 563200
    },
    "over": []
   },
   {
-   "page": "/cases/",
+   "page": "/verify/",
    "view": "desktop",
    "width": 1440,
    "type": "data",
    "status": 200,
-   "total": 835073,
-   "requests": 32,
+   "total": 619779,
+   "requests": 25,
    "by_type": {
-    "html": 25412,
-    "css": 29215,
-    "js": 43843,
+    "html": 21429,
+    "css": 29193,
+    "js": 46802,
     "images": 0,
-    "fonts": 90559,
-    "other": 153798,
-    "third_party": 492246
+    "fonts": 90531,
+    "other": 27419,
+    "third_party": 404405
    },
    "third_party_hosts": {
-    "static.cloudflareinsights.com": 10478,
-    "cdnjs.cloudflare.com": 40112,
-    "kolaboro.com/cdn-cgi": 3604,
-    "server.arcgisonline.com": 47831,
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3605,
     "www.clarity.ms": 1147,
-    "scripts.clarity.ms": 25537,
-    "a.clarity.ms": 552,
-    "c.clarity.ms": 719,
-    "www.googletagmanager.com": 362266
+    "scripts.clarity.ms": 25538,
+    "j.clarity.ms": 552,
+    "c.clarity.ms": 721,
+    "www.googletagmanager.com": 362363
    },
    "budget": {
     "total": 1003520,
     "js": 71680,
     "css": 40960,
-    "images": 20480,
+    "images": 102400,
     "fonts": 112640,
     "third_party": 573440
    },
    "over": []
   },
   {
-   "page": "/about/",
+   "page": "/log/",
+   "view": "phone",
+   "width": 390,
+   "type": "data",
+   "status": 200,
+   "total": 611036,
+   "requests": 26,
+   "by_type": {
+    "html": 14684,
+    "css": 29202,
+    "js": 45769,
+    "images": 0,
+    "fonts": 90538,
+    "other": 26464,
+    "third_party": 404379
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3602,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "q.clarity.ms": 552,
+    "c.clarity.ms": 722,
+    "www.googletagmanager.com": 362339
+   },
+   "budget": {
+    "total": 1003520,
+    "js": 71680,
+    "css": 40960,
+    "images": 102400,
+    "fonts": 112640,
+    "third_party": 563200
+   },
+   "over": []
+  },
+  {
+   "page": "/log/",
+   "view": "desktop",
+   "width": 1440,
+   "type": "data",
+   "status": 200,
+   "total": 608790,
+   "requests": 30,
+   "by_type": {
+    "html": 14770,
+    "css": 29108,
+    "js": 43410,
+    "images": 0,
+    "fonts": 90528,
+    "other": 26533,
+    "third_party": 404441
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3610,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "r.clarity.ms": 552,
+    "c.clarity.ms": 721,
+    "www.googletagmanager.com": 362394
+   },
+   "budget": {
+    "total": 1003520,
+    "js": 71680,
+    "css": 40960,
+    "images": 102400,
+    "fonts": 112640,
+    "third_party": 573440
+   },
+   "over": []
+  },
+  {
+   "page": "/docs/api/",
    "view": "phone",
    "width": 390,
    "type": "content",
    "status": 200,
-   "total": 595411,
-   "requests": 21,
+   "total": 596593,
+   "requests": 22,
    "by_type": {
-    "html": 10850,
-    "css": 29162,
-    "js": 36653,
-    "images": 0,
-    "fonts": 90534,
-    "other": 23915,
-    "third_party": 404297
+    "html": 10996,
+    "css": 29108,
+    "js": 36647,
+    "images": 878,
+    "fonts": 90611,
+    "other": 23940,
+    "third_party": 404413
    },
    "third_party_hosts": {
-    "static.cloudflareinsights.com": 10478,
-    "kolaboro.com/cdn-cgi": 3598,
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3612,
     "www.clarity.ms": 1147,
-    "scripts.clarity.ms": 25537,
-    "e.clarity.ms": 552,
-    "c.clarity.ms": 719,
-    "www.googletagmanager.com": 362266
+    "scripts.clarity.ms": 25538,
+    "a.clarity.ms": 552,
+    "c.clarity.ms": 722,
+    "www.googletagmanager.com": 362363
    },
    "budget": {
     "total": 737280,
     "js": 61440,
     "css": 40960,
-    "images": 20480,
+    "images": 102400,
     "fonts": 112640,
     "third_party": 471040
    },
    "over": []
   },
   {
-   "page": "/about/",
+   "page": "/docs/api/",
    "view": "desktop",
    "width": 1440,
    "type": "content",
    "status": 200,
-   "total": 592951,
-   "requests": 20,
+   "total": 594094,
+   "requests": 21,
    "by_type": {
-    "html": 10853,
-    "css": 29142,
-    "js": 34204,
+    "html": 10981,
+    "css": 29108,
+    "js": 34200,
+    "images": 878,
+    "fonts": 90611,
+    "other": 23926,
+    "third_party": 404390
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3614,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "t.clarity.ms": 552,
+    "c.clarity.ms": 721,
+    "www.googletagmanager.com": 362339
+   },
+   "budget": {
+    "total": 737280,
+    "js": 61440,
+    "css": 40960,
+    "images": 102400,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/status/",
+   "view": "phone",
+   "width": 390,
+   "type": "data",
+   "status": 200,
+   "total": 778224,
+   "requests": 49,
+   "by_type": {
+    "html": 20267,
+    "css": 29108,
+    "js": 50694,
     "images": 0,
-    "fonts": 90545,
-    "other": 23909,
-    "third_party": 404298
+    "fonts": 90620,
+    "other": 181294,
+    "third_party": 406241
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "oykcsmextclpdnugixqz.supabase.co": 1577,
+    "kolaboro.com/cdn-cgi": 3609,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25539,
+    "i.clarity.ms": 828,
+    "c.clarity.ms": 723,
+    "www.googletagmanager.com": 362339
+   },
+   "budget": {
+    "total": 1003520,
+    "js": 71680,
+    "css": 40960,
+    "images": 102400,
+    "fonts": 112640,
+    "third_party": 563200
+   },
+   "over": []
+  },
+  {
+   "page": "/status/",
+   "view": "desktop",
+   "width": 1440,
+   "type": "data",
+   "status": 200,
+   "total": 852675,
+   "requests": 53,
+   "by_type": {
+    "html": 20227,
+    "css": 29098,
+    "js": 50799,
+    "images": 74696,
+    "fonts": 90538,
+    "other": 181338,
+    "third_party": 405979
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "oykcsmextclpdnugixqz.supabase.co": 1579,
+    "kolaboro.com/cdn-cgi": 3616,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "j.clarity.ms": 552,
+    "c.clarity.ms": 720,
+    "www.googletagmanager.com": 362348
+   },
+   "budget": {
+    "total": 1003520,
+    "js": 71680,
+    "css": 40960,
+    "images": 102400,
+    "fonts": 112640,
+    "third_party": 573440
+   },
+   "over": []
+  },
+  {
+   "page": "/engineering/",
+   "view": "phone",
+   "width": 390,
+   "type": "content",
+   "status": 200,
+   "total": 609926,
+   "requests": 28,
+   "by_type": {
+    "html": 12319,
+    "css": 29117,
+    "js": 37522,
+    "images": 0,
+    "fonts": 90528,
+    "other": 35726,
+    "third_party": 404714
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3602,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "c.clarity.ms": 721,
+    "b.clarity.ms": 828,
+    "www.googletagmanager.com": 362399
+   },
+   "budget": {
+    "total": 737280,
+    "js": 61440,
+    "css": 40960,
+    "images": 102400,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/engineering/",
+   "view": "desktop",
+   "width": 1440,
+   "type": "content",
+   "status": 200,
+   "total": 609567,
+   "requests": 26,
+   "by_type": {
+    "html": 12307,
+    "css": 29098,
+    "js": 37514,
+    "images": 0,
+    "fonts": 90538,
+    "other": 35741,
+    "third_party": 404369
    },
    "third_party_hosts": {
     "static.cloudflareinsights.com": 10478,
     "kolaboro.com/cdn-cgi": 3599,
     "www.clarity.ms": 1147,
     "scripts.clarity.ms": 25537,
-    "e.clarity.ms": 552,
-    "c.clarity.ms": 719,
-    "www.googletagmanager.com": 362266
+    "l.clarity.ms": 552,
+    "c.clarity.ms": 720,
+    "www.googletagmanager.com": 362336
    },
    "budget": {
     "total": 737280,
     "js": 61440,
     "css": 40960,
-    "images": 20480,
+    "images": 102400,
     "fonts": 112640,
     "third_party": 471040
    },
    "over": []
   },
   {
-   "page": "/p/BALI-014",
+   "page": "/security/",
    "view": "phone",
    "width": 390,
-   "type": "project",
+   "type": "content",
    "status": 200,
-   "total": 770651,
-   "requests": 33,
+   "total": 597214,
+   "requests": 22,
    "by_type": {
-    "html": 10703,
-    "css": 33864,
-    "js": 62138,
+    "html": 12729,
+    "css": 29098,
+    "js": 35729,
     "images": 0,
-    "fonts": 90534,
-    "other": 169107,
-    "third_party": 404305
-   },
-   "third_party_hosts": {
-    "static.cloudflareinsights.com": 10478,
-    "kolaboro.com/cdn-cgi": 3604,
-    "www.clarity.ms": 1147,
-    "scripts.clarity.ms": 25537,
-    "o.clarity.ms": 552,
-    "c.clarity.ms": 721,
-    "www.googletagmanager.com": 362266
-   },
-   "budget": {
-    "total": 901120,
-    "js": 81920,
-    "css": 40960,
-    "images": 20480,
-    "fonts": 112640,
-    "third_party": 471040
-   },
-   "over": []
-  },
-  {
-   "page": "/p/BALI-014",
-   "view": "desktop",
-   "width": 1440,
-   "type": "project",
-   "status": 200,
-   "total": 772973,
-   "requests": 34,
-   "by_type": {
-    "html": 10665,
-    "css": 33853,
-    "js": 64589,
-    "images": 0,
-    "fonts": 90536,
-    "other": 169029,
-    "third_party": 404301
-   },
-   "third_party_hosts": {
-    "static.cloudflareinsights.com": 10478,
-    "kolaboro.com/cdn-cgi": 3614,
-    "www.clarity.ms": 1147,
-    "scripts.clarity.ms": 25537,
-    "o.clarity.ms": 552,
-    "c.clarity.ms": 719,
-    "www.googletagmanager.com": 362254
-   },
-   "budget": {
-    "total": 911360,
-    "js": 92160,
-    "css": 40960,
-    "images": 20480,
-    "fonts": 112640,
-    "third_party": 471040
-   },
-   "over": []
-  },
-  {
-   "page": "/verify/",
-   "view": "phone",
-   "width": 390,
-   "type": "data",
-   "status": 200,
-   "total": 619822,
-   "requests": 25,
-   "by_type": {
-    "html": 21487,
-    "css": 29162,
-    "js": 46869,
-    "images": 0,
-    "fonts": 90534,
-    "other": 27467,
-    "third_party": 404303
+    "fonts": 90538,
+    "other": 24738,
+    "third_party": 404382
    },
    "third_party_hosts": {
     "static.cloudflareinsights.com": 10479,
-    "kolaboro.com/cdn-cgi": 3598,
+    "kolaboro.com/cdn-cgi": 3606,
     "www.clarity.ms": 1147,
     "scripts.clarity.ms": 25538,
-    "p.clarity.ms": 552,
-    "c.clarity.ms": 720,
-    "www.googletagmanager.com": 362269
+    "f.clarity.ms": 552,
+    "c.clarity.ms": 721,
+    "www.googletagmanager.com": 362339
    },
    "budget": {
-    "total": 1003520,
-    "js": 71680,
+    "total": 737280,
+    "js": 61440,
     "css": 40960,
-    "images": 20480,
+    "images": 102400,
     "fonts": 112640,
-    "third_party": 563200
+    "third_party": 471040
    },
    "over": []
   },
   {
-   "page": "/verify/",
+   "page": "/security/",
    "view": "desktop",
    "width": 1440,
-   "type": "data",
+   "type": "content",
    "status": 200,
-   "total": 622144,
-   "requests": 26,
+   "total": 597254,
+   "requests": 22,
    "by_type": {
-    "html": 21440,
-    "css": 29146,
-    "js": 49237,
+    "html": 12718,
+    "css": 29089,
+    "js": 35724,
     "images": 0,
-    "fonts": 90625,
-    "other": 27393,
-    "third_party": 404303
+    "fonts": 90538,
+    "other": 24736,
+    "third_party": 404449
    },
    "third_party_hosts": {
-    "static.cloudflareinsights.com": 10478,
-    "kolaboro.com/cdn-cgi": 3604,
-    "www.clarity.ms": 1147,
-    "scripts.clarity.ms": 25537,
-    "k.clarity.ms": 552,
-    "c.clarity.ms": 719,
-    "www.googletagmanager.com": 362266
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3608,
+    "www.clarity.ms": 1193,
+    "scripts.clarity.ms": 25538,
+    "q.clarity.ms": 552,
+    "c.clarity.ms": 720,
+    "www.googletagmanager.com": 362359
    },
    "budget": {
-    "total": 1003520,
-    "js": 71680,
+    "total": 737280,
+    "js": 61440,
     "css": 40960,
-    "images": 20480,
+    "images": 102400,
     "fonts": 112640,
-    "third_party": 573440
+    "third_party": 471040
    },
    "over": []
   },
   {
-   "page": "/log/",
+   "page": "/how-we-score/",
    "view": "phone",
    "width": 390,
-   "type": "data",
+   "type": "content",
    "status": 200,
-   "total": 608968,
-   "requests": 25,
+   "total": 593690,
+   "requests": 20,
    "by_type": {
-    "html": 15030,
-    "css": 29162,
-    "js": 43411,
+    "html": 11411,
+    "css": 29133,
+    "js": 34203,
     "images": 0,
-    "fonts": 90534,
-    "other": 26520,
-    "third_party": 404311
+    "fonts": 90549,
+    "other": 24012,
+    "third_party": 404382
    },
    "third_party_hosts": {
     "static.cloudflareinsights.com": 10479,
@@ -753,706 +1103,338 @@
     "www.clarity.ms": 1147,
     "scripts.clarity.ms": 25538,
     "e.clarity.ms": 552,
-    "c.clarity.ms": 720,
-    "www.googletagmanager.com": 362269
-   },
-   "budget": {
-    "total": 1003520,
-    "js": 71680,
-    "css": 40960,
-    "images": 20480,
-    "fonts": 112640,
-    "third_party": 563200
-   },
-   "over": []
-  },
-  {
-   "page": "/log/",
-   "view": "desktop",
-   "width": 1440,
-   "type": "data",
-   "status": 200,
-   "total": 611810,
-   "requests": 26,
-   "by_type": {
-    "html": 14886,
-    "css": 29237,
-    "js": 45782,
-    "images": 0,
-    "fonts": 90538,
-    "other": 26519,
-    "third_party": 404848
-   },
-   "third_party_hosts": {
-    "static.cloudflareinsights.com": 10478,
-    "kolaboro.com/cdn-cgi": 3601,
-    "www.clarity.ms": 1147,
-    "scripts.clarity.ms": 25538,
-    "p.clarity.ms": 552,
-    "c.clarity.ms": 720,
-    "www.googletagmanager.com": 362812
-   },
-   "budget": {
-    "total": 1003520,
-    "js": 71680,
-    "css": 40960,
-    "images": 20480,
-    "fonts": 112640,
-    "third_party": 573440
-   },
-   "over": []
-  },
-  {
-   "page": "/docs/api/",
-   "view": "phone",
-   "width": 390,
-   "type": "content",
-   "status": 200,
-   "total": 593786,
-   "requests": 21,
-   "by_type": {
-    "html": 10863,
-    "css": 29151,
-    "js": 34204,
-    "images": 728,
-    "fonts": 90545,
-    "other": 23990,
-    "third_party": 404305
-   },
-   "third_party_hosts": {
-    "static.cloudflareinsights.com": 10478,
-    "kolaboro.com/cdn-cgi": 3600,
-    "www.clarity.ms": 1147,
-    "scripts.clarity.ms": 25538,
-    "t.clarity.ms": 552,
     "c.clarity.ms": 721,
-    "www.googletagmanager.com": 362269
+    "www.googletagmanager.com": 362339
    },
    "budget": {
     "total": 737280,
     "js": 61440,
     "css": 40960,
-    "images": 20480,
+    "images": 102400,
     "fonts": 112640,
     "third_party": 471040
    },
    "over": []
   },
   {
-   "page": "/docs/api/",
+   "page": "/how-we-score/",
    "view": "desktop",
    "width": 1440,
    "type": "content",
    "status": 200,
-   "total": 596266,
+   "total": 596107,
    "requests": 22,
    "by_type": {
-    "html": 10961,
-    "css": 29162,
-    "js": 36654,
-    "images": 729,
-    "fonts": 90534,
-    "other": 23919,
-    "third_party": 404307
+    "html": 11502,
+    "css": 29109,
+    "js": 36649,
+    "images": 0,
+    "fonts": 90528,
+    "other": 23923,
+    "third_party": 404396
    },
    "third_party_hosts": {
     "static.cloudflareinsights.com": 10479,
     "kolaboro.com/cdn-cgi": 3602,
     "www.clarity.ms": 1147,
-    "scripts.clarity.ms": 25537,
+    "scripts.clarity.ms": 25538,
     "t.clarity.ms": 552,
     "c.clarity.ms": 721,
-    "www.googletagmanager.com": 362269
+    "www.googletagmanager.com": 362357
    },
    "budget": {
     "total": 737280,
     "js": 61440,
     "css": 40960,
-    "images": 20480,
+    "images": 102400,
     "fonts": 112640,
     "third_party": 471040
    },
    "over": []
   },
   {
-   "page": "/status/",
+   "page": "/checklist/",
+   "view": "phone",
+   "width": 390,
+   "type": "tool",
+   "status": 200,
+   "total": 593699,
+   "requests": 20,
+   "by_type": {
+    "html": 11542,
+    "css": 29099,
+    "js": 34201,
+    "images": 0,
+    "fonts": 90539,
+    "other": 23917,
+    "third_party": 404401
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10478,
+    "kolaboro.com/cdn-cgi": 3604,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25537,
+    "i.clarity.ms": 552,
+    "c.clarity.ms": 720,
+    "www.googletagmanager.com": 362363
+   },
+   "budget": {
+    "total": 757760,
+    "js": 61440,
+    "css": 40960,
+    "images": 102400,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/checklist/",
+   "view": "desktop",
+   "width": 1440,
+   "type": "tool",
+   "status": 200,
+   "total": 596249,
+   "requests": 22,
+   "by_type": {
+    "html": 11485,
+    "css": 29211,
+    "js": 36651,
+    "images": 0,
+    "fonts": 90539,
+    "other": 23927,
+    "third_party": 404436
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3600,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "q.clarity.ms": 552,
+    "c.clarity.ms": 721,
+    "www.googletagmanager.com": 362399
+   },
+   "budget": {
+    "total": 747520,
+    "js": 51200,
+    "css": 40960,
+    "images": 102400,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/trust/",
+   "view": "phone",
+   "width": 390,
+   "type": "content",
+   "status": 200,
+   "total": 610046,
+   "requests": 26,
+   "by_type": {
+    "html": 11898,
+    "css": 29108,
+    "js": 40099,
+    "images": 0,
+    "fonts": 90528,
+    "other": 33771,
+    "third_party": 404642
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3605,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "f.clarity.ms": 828,
+    "c.clarity.ms": 721,
+    "www.googletagmanager.com": 362324
+   },
+   "budget": {
+    "total": 737280,
+    "js": 61440,
+    "css": 40960,
+    "images": 102400,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/trust/",
+   "view": "desktop",
+   "width": 1440,
+   "type": "content",
+   "status": 200,
+   "total": 609663,
+   "requests": 25,
+   "by_type": {
+    "html": 11786,
+    "css": 29109,
+    "js": 40098,
+    "images": 0,
+    "fonts": 90528,
+    "other": 33748,
+    "third_party": 404394
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3602,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "a.clarity.ms": 552,
+    "c.clarity.ms": 722,
+    "www.googletagmanager.com": 362354
+   },
+   "budget": {
+    "total": 737280,
+    "js": 61440,
+    "css": 40960,
+    "images": 102400,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/prices/",
    "view": "phone",
    "width": 390,
    "type": "data",
    "status": 200,
-   "total": 778158,
-   "requests": 48,
+   "total": 624753,
+   "requests": 29,
    "by_type": {
-    "html": 20028,
-    "css": 29162,
-    "js": 50770,
+    "html": 10045,
+    "css": 31057,
+    "js": 41065,
     "images": 0,
-    "fonts": 90559,
-    "other": 181341,
-    "third_party": 406298
+    "fonts": 90538,
+    "other": 47667,
+    "third_party": 404381
    },
    "third_party_hosts": {
-    "static.cloudflareinsights.com": 10478,
-    "oykcsmextclpdnugixqz.supabase.co": 1972,
-    "kolaboro.com/cdn-cgi": 3604,
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3605,
     "www.clarity.ms": 1147,
-    "scripts.clarity.ms": 25537,
+    "scripts.clarity.ms": 25538,
+    "c.clarity.ms": 721,
     "p.clarity.ms": 552,
-    "c.clarity.ms": 718,
-    "www.googletagmanager.com": 362290
+    "www.googletagmanager.com": 362339
    },
    "budget": {
     "total": 1003520,
     "js": 71680,
     "css": 40960,
-    "images": 20480,
+    "images": 102400,
     "fonts": 112640,
     "third_party": 563200
    },
    "over": []
   },
   {
-   "page": "/status/",
+   "page": "/prices/",
    "view": "desktop",
    "width": 1440,
    "type": "data",
    "status": 200,
-   "total": 853314,
-   "requests": 54,
+   "total": 624924,
+   "requests": 29,
    "by_type": {
-    "html": 20181,
-    "css": 29153,
-    "js": 50794,
-    "images": 74690,
-    "fonts": 90543,
-    "other": 181390,
-    "third_party": 406563
+    "html": 10234,
+    "css": 31030,
+    "js": 41064,
+    "images": 0,
+    "fonts": 90539,
+    "other": 47651,
+    "third_party": 404406
    },
    "third_party_hosts": {
     "static.cloudflareinsights.com": 10479,
-    "oykcsmextclpdnugixqz.supabase.co": 1971,
-    "kolaboro.com/cdn-cgi": 3611,
+    "kolaboro.com/cdn-cgi": 3606,
     "www.clarity.ms": 1147,
-    "scripts.clarity.ms": 25537,
-    "s.clarity.ms": 828,
+    "scripts.clarity.ms": 25538,
+    "p.clarity.ms": 552,
     "c.clarity.ms": 721,
-    "www.googletagmanager.com": 362269
+    "www.googletagmanager.com": 362363
    },
    "budget": {
     "total": 1003520,
     "js": 71680,
     "css": 40960,
-    "images": 20480,
+    "images": 102400,
     "fonts": 112640,
     "third_party": 573440
-   },
-   "over": [
-    {
-     "metric": "images",
-     "value": 74690,
-     "budget": 20480
-    }
-   ]
-  },
-  {
-   "page": "/engineering/",
-   "view": "phone",
-   "width": 390,
-   "type": "content",
-   "status": 200,
-   "total": 609943,
-   "requests": 27,
-   "by_type": {
-    "html": 12285,
-    "css": 29162,
-    "js": 37525,
-    "images": 0,
-    "fonts": 90534,
-    "other": 35852,
-    "third_party": 404585
-   },
-   "third_party_hosts": {
-    "static.cloudflareinsights.com": 10479,
-    "kolaboro.com/cdn-cgi": 3609,
-    "www.clarity.ms": 1147,
-    "scripts.clarity.ms": 25537,
-    "u.clarity.ms": 828,
-    "c.clarity.ms": 719,
-    "www.googletagmanager.com": 362266
-   },
-   "budget": {
-    "total": 737280,
-    "js": 61440,
-    "css": 40960,
-    "images": 20480,
-    "fonts": 112640,
-    "third_party": 471040
    },
    "over": []
   },
   {
-   "page": "/engineering/",
-   "view": "desktop",
-   "width": 1440,
-   "type": "content",
+   "page": "/bali/",
+   "view": "phone",
+   "width": 390,
+   "type": "data",
    "status": 200,
-   "total": 612324,
-   "requests": 28,
+   "total": 592763,
+   "requests": 21,
    "by_type": {
-    "html": 12264,
-    "css": 29186,
-    "js": 39981,
+    "html": 10103,
+    "css": 29108,
+    "js": 34206,
     "images": 0,
-    "fonts": 90555,
-    "other": 35750,
-    "third_party": 404588
+    "fonts": 90528,
+    "other": 24435,
+    "third_party": 404383
    },
    "third_party_hosts": {
     "static.cloudflareinsights.com": 10479,
     "kolaboro.com/cdn-cgi": 3607,
     "www.clarity.ms": 1147,
     "scripts.clarity.ms": 25538,
-    "r.clarity.ms": 828,
-    "c.clarity.ms": 720,
-    "www.googletagmanager.com": 362269
+    "n.clarity.ms": 552,
+    "c.clarity.ms": 721,
+    "www.googletagmanager.com": 362339
    },
    "budget": {
-    "total": 737280,
-    "js": 61440,
+    "total": 1003520,
+    "js": 71680,
     "css": 40960,
-    "images": 20480,
+    "images": 102400,
     "fonts": 112640,
-    "third_party": 471040
+    "third_party": 563200
    },
    "over": []
   },
   {
-   "page": "/security/",
-   "view": "phone",
-   "width": 390,
-   "type": "content",
-   "status": 200,
-   "total": 597231,
-   "requests": 22,
-   "by_type": {
-    "html": 12691,
-    "css": 29162,
-    "js": 35731,
-    "images": 0,
-    "fonts": 90534,
-    "other": 24786,
-    "third_party": 404327
-   },
-   "third_party_hosts": {
-    "static.cloudflareinsights.com": 10479,
-    "kolaboro.com/cdn-cgi": 3598,
-    "www.clarity.ms": 1147,
-    "scripts.clarity.ms": 25538,
-    "l.clarity.ms": 552,
-    "c.clarity.ms": 722,
-    "www.googletagmanager.com": 362291
-   },
-   "budget": {
-    "total": 737280,
-    "js": 61440,
-    "css": 40960,
-    "images": 20480,
-    "fonts": 112640,
-    "third_party": 471040
-   },
-   "over": []
-  },
-  {
-   "page": "/security/",
+   "page": "/bali/",
    "view": "desktop",
    "width": 1440,
-   "type": "content",
+   "type": "data",
    "status": 200,
-   "total": 599694,
-   "requests": 23,
-   "by_type": {
-    "html": 12642,
-    "css": 29155,
-    "js": 38179,
-    "images": 0,
-    "fonts": 90545,
-    "other": 24790,
-    "third_party": 404383
-   },
-   "third_party_hosts": {
-    "static.cloudflareinsights.com": 10478,
-    "kolaboro.com/cdn-cgi": 3610,
-    "www.clarity.ms": 1193,
-    "scripts.clarity.ms": 25537,
-    "g.clarity.ms": 552,
-    "c.clarity.ms": 720,
-    "www.googletagmanager.com": 362293
-   },
-   "budget": {
-    "total": 737280,
-    "js": 61440,
-    "css": 40960,
-    "images": 20480,
-    "fonts": 112640,
-    "third_party": 471040
-   },
-   "over": []
-  },
-  {
-   "page": "/how-we-score/",
-   "view": "phone",
-   "width": 390,
-   "type": "content",
-   "status": 200,
-   "total": 596018,
+   "total": 592856,
    "requests": 21,
    "by_type": {
-    "html": 11447,
-    "css": 29153,
-    "js": 36655,
+    "html": 10203,
+    "css": 29109,
+    "js": 34203,
     "images": 0,
-    "fonts": 90534,
-    "other": 23914,
-    "third_party": 404315
-   },
-   "third_party_hosts": {
-    "static.cloudflareinsights.com": 10479,
-    "kolaboro.com/cdn-cgi": 3610,
-    "www.clarity.ms": 1147,
-    "scripts.clarity.ms": 25538,
-    "u.clarity.ms": 552,
-    "c.clarity.ms": 720,
-    "www.googletagmanager.com": 362269
-   },
-   "budget": {
-    "total": 737280,
-    "js": 61440,
-    "css": 40960,
-    "images": 20480,
-    "fonts": 112640,
-    "third_party": 471040
-   },
-   "over": []
-  },
-  {
-   "page": "/how-we-score/",
-   "view": "desktop",
-   "width": 1440,
-   "type": "content",
-   "status": 200,
-   "total": 593471,
-   "requests": 20,
-   "by_type": {
-    "html": 11353,
-    "css": 29153,
-    "js": 34206,
-    "images": 0,
-    "fonts": 90534,
-    "other": 23915,
-    "third_party": 404310
-   },
-   "third_party_hosts": {
-    "static.cloudflareinsights.com": 10479,
-    "kolaboro.com/cdn-cgi": 3605,
-    "www.clarity.ms": 1147,
-    "scripts.clarity.ms": 25538,
-    "s.clarity.ms": 552,
-    "c.clarity.ms": 720,
-    "www.googletagmanager.com": 362269
-   },
-   "budget": {
-    "total": 737280,
-    "js": 61440,
-    "css": 40960,
-    "images": 20480,
-    "fonts": 112640,
-    "third_party": 471040
-   },
-   "over": []
-  },
-  {
-   "page": "/checklist/",
-   "view": "phone",
-   "width": 390,
-   "type": "tool",
-   "status": 200,
-   "total": 593700,
-   "requests": 20,
-   "by_type": {
-    "html": 11486,
-    "css": 29151,
-    "js": 34209,
-    "images": 0,
-    "fonts": 90545,
-    "other": 23988,
-    "third_party": 404321
-   },
-   "third_party_hosts": {
-    "static.cloudflareinsights.com": 10479,
-    "kolaboro.com/cdn-cgi": 3615,
-    "www.clarity.ms": 1147,
-    "scripts.clarity.ms": 25537,
-    "s.clarity.ms": 552,
-    "c.clarity.ms": 722,
-    "www.googletagmanager.com": 362269
-   },
-   "budget": {
-    "total": 757760,
-    "js": 61440,
-    "css": 40960,
-    "images": 20480,
-    "fonts": 112640,
-    "third_party": 471040
-   },
-   "over": []
-  },
-  {
-   "page": "/checklist/",
-   "view": "desktop",
-   "width": 1440,
-   "type": "tool",
-   "status": 200,
-   "total": 596124,
-   "requests": 21,
-   "by_type": {
-    "html": 11454,
-    "css": 29180,
-    "js": 36657,
-    "images": 0,
-    "fonts": 90534,
-    "other": 23987,
-    "third_party": 404312
+    "fonts": 90528,
+    "other": 24433,
+    "third_party": 404380
    },
    "third_party_hosts": {
     "static.cloudflareinsights.com": 10479,
     "kolaboro.com/cdn-cgi": 3606,
     "www.clarity.ms": 1147,
-    "scripts.clarity.ms": 25538,
-    "i.clarity.ms": 552,
-    "c.clarity.ms": 721,
-    "www.googletagmanager.com": 362269
-   },
-   "budget": {
-    "total": 747520,
-    "js": 51200,
-    "css": 40960,
-    "images": 20480,
-    "fonts": 112640,
-    "third_party": 471040
-   },
-   "over": []
-  },
-  {
-   "page": "/trust/",
-   "view": "phone",
-   "width": 390,
-   "type": "content",
-   "status": 200,
-   "total": 609771,
-   "requests": 25,
-   "by_type": {
-    "html": 11892,
-    "css": 29151,
-    "js": 40107,
-    "images": 0,
-    "fonts": 90545,
-    "other": 33760,
-    "third_party": 404316
-   },
-   "third_party_hosts": {
-    "static.cloudflareinsights.com": 10479,
-    "kolaboro.com/cdn-cgi": 3611,
-    "www.clarity.ms": 1147,
-    "scripts.clarity.ms": 25538,
-    "s.clarity.ms": 552,
-    "c.clarity.ms": 720,
-    "www.googletagmanager.com": 362269
-   },
-   "budget": {
-    "total": 737280,
-    "js": 61440,
-    "css": 40960,
-    "images": 20480,
-    "fonts": 112640,
-    "third_party": 471040
-   },
-   "over": []
-  },
-  {
-   "page": "/trust/",
-   "view": "desktop",
-   "width": 1440,
-   "type": "content",
-   "status": 200,
-   "total": 612181,
-   "requests": 26,
-   "by_type": {
-    "html": 11863,
-    "css": 29151,
-    "js": 42557,
-    "images": 0,
-    "fonts": 90545,
-    "other": 33753,
-    "third_party": 404312
-   },
-   "third_party_hosts": {
-    "static.cloudflareinsights.com": 10479,
-    "kolaboro.com/cdn-cgi": 3605,
-    "www.clarity.ms": 1147,
-    "scripts.clarity.ms": 25538,
-    "h.clarity.ms": 552,
-    "c.clarity.ms": 722,
-    "www.googletagmanager.com": 362269
-   },
-   "budget": {
-    "total": 737280,
-    "js": 61440,
-    "css": 40960,
-    "images": 20480,
-    "fonts": 112640,
-    "third_party": 471040
-   },
-   "over": []
-  },
-  {
-   "page": "/prices/",
-   "view": "phone",
-   "width": 390,
-   "type": "data",
-   "status": 200,
-   "total": 627156,
-   "requests": 30,
-   "by_type": {
-    "html": 10074,
-    "css": 31022,
-    "js": 43518,
-    "images": 0,
-    "fonts": 90611,
-    "other": 47638,
-    "third_party": 404293
-   },
-   "third_party_hosts": {
-    "static.cloudflareinsights.com": 10479,
-    "kolaboro.com/cdn-cgi": 3603,
-    "www.clarity.ms": 1147,
     "scripts.clarity.ms": 25537,
-    "f.clarity.ms": 552,
-    "c.clarity.ms": 721,
-    "www.googletagmanager.com": 362254
+    "i.clarity.ms": 552,
+    "c.clarity.ms": 720,
+    "www.googletagmanager.com": 362339
    },
    "budget": {
     "total": 1003520,
     "js": 71680,
     "css": 40960,
-    "images": 20480,
-    "fonts": 112640,
-    "third_party": 563200
-   },
-   "over": []
-  },
-  {
-   "page": "/prices/",
-   "view": "desktop",
-   "width": 1440,
-   "type": "data",
-   "status": 200,
-   "total": 627358,
-   "requests": 30,
-   "by_type": {
-    "html": 10021,
-    "css": 31080,
-    "js": 43518,
-    "images": 0,
-    "fonts": 90569,
-    "other": 47837,
-    "third_party": 404333
-   },
-   "third_party_hosts": {
-    "static.cloudflareinsights.com": 10479,
-    "kolaboro.com/cdn-cgi": 3603,
-    "www.clarity.ms": 1147,
-    "scripts.clarity.ms": 25538,
-    "l.clarity.ms": 552,
-    "c.clarity.ms": 721,
-    "www.googletagmanager.com": 362293
-   },
-   "budget": {
-    "total": 1003520,
-    "js": 71680,
-    "css": 40960,
-    "images": 20480,
-    "fonts": 112640,
-    "third_party": 573440
-   },
-   "over": []
-  },
-  {
-   "page": "/bali/",
-   "view": "phone",
-   "width": 390,
-   "type": "data",
-   "status": 200,
-   "total": 595186,
-   "requests": 22,
-   "by_type": {
-    "html": 10128,
-    "css": 29162,
-    "js": 36655,
-    "images": 0,
-    "fonts": 90534,
-    "other": 24394,
-    "third_party": 404313
-   },
-   "third_party_hosts": {
-    "static.cloudflareinsights.com": 10479,
-    "kolaboro.com/cdn-cgi": 3609,
-    "www.clarity.ms": 1147,
-    "scripts.clarity.ms": 25538,
-    "s.clarity.ms": 552,
-    "c.clarity.ms": 722,
-    "www.googletagmanager.com": 362266
-   },
-   "budget": {
-    "total": 1003520,
-    "js": 71680,
-    "css": 40960,
-    "images": 20480,
-    "fonts": 112640,
-    "third_party": 563200
-   },
-   "over": []
-  },
-  {
-   "page": "/bali/",
-   "view": "desktop",
-   "width": 1440,
-   "type": "data",
-   "status": 200,
-   "total": 592713,
-   "requests": 21,
-   "by_type": {
-    "html": 10094,
-    "css": 29151,
-    "js": 34206,
-    "images": 0,
-    "fonts": 90545,
-    "other": 24400,
-    "third_party": 404317
-   },
-   "third_party_hosts": {
-    "static.cloudflareinsights.com": 10479,
-    "kolaboro.com/cdn-cgi": 3611,
-    "www.clarity.ms": 1147,
-    "scripts.clarity.ms": 25538,
-    "c.clarity.ms": 721,
-    "p.clarity.ms": 552,
-    "www.googletagmanager.com": 362269
-   },
-   "budget": {
-    "total": 1003520,
-    "js": 71680,
-    "css": 40960,
-    "images": 20480,
+    "images": 102400,
     "fonts": 112640,
     "third_party": 573440
    },
@@ -1464,31 +1446,31 @@
    "width": 390,
    "type": "data",
    "status": 200,
-   "total": 606327,
-   "requests": 23,
+   "total": 608691,
+   "requests": 24,
    "by_type": {
-    "html": 13252,
-    "css": 29151,
-    "js": 34203,
+    "html": 13141,
+    "css": 29098,
+    "js": 36650,
     "images": 0,
-    "fonts": 90545,
-    "other": 34867,
-    "third_party": 404309
+    "fonts": 90539,
+    "other": 34892,
+    "third_party": 404371
    },
    "third_party_hosts": {
     "static.cloudflareinsights.com": 10479,
     "kolaboro.com/cdn-cgi": 3604,
     "www.clarity.ms": 1147,
-    "scripts.clarity.ms": 25537,
-    "f.clarity.ms": 552,
+    "scripts.clarity.ms": 25538,
+    "i.clarity.ms": 552,
     "c.clarity.ms": 721,
-    "www.googletagmanager.com": 362269
+    "www.googletagmanager.com": 362330
    },
    "budget": {
     "total": 1003520,
     "js": 71680,
     "css": 40960,
-    "images": 20480,
+    "images": 102400,
     "fonts": 112640,
     "third_party": 563200
    },
@@ -1500,31 +1482,31 @@
    "width": 1440,
    "type": "data",
    "status": 200,
-   "total": 606404,
-   "requests": 23,
+   "total": 608520,
+   "requests": 24,
    "by_type": {
-    "html": 13260,
-    "css": 29151,
-    "js": 34202,
+    "html": 13098,
+    "css": 29100,
+    "js": 36641,
     "images": 0,
-    "fonts": 90554,
-    "other": 34933,
-    "third_party": 404304
+    "fonts": 90528,
+    "other": 34779,
+    "third_party": 404374
    },
    "third_party_hosts": {
     "static.cloudflareinsights.com": 10478,
-    "kolaboro.com/cdn-cgi": 3603,
+    "kolaboro.com/cdn-cgi": 3610,
     "www.clarity.ms": 1147,
-    "scripts.clarity.ms": 25536,
-    "h.clarity.ms": 552,
-    "c.clarity.ms": 719,
-    "www.googletagmanager.com": 362269
+    "scripts.clarity.ms": 25537,
+    "l.clarity.ms": 552,
+    "c.clarity.ms": 720,
+    "www.googletagmanager.com": 362330
    },
    "budget": {
     "total": 1003520,
     "js": 71680,
     "css": 40960,
-    "images": 20480,
+    "images": 102400,
     "fonts": 112640,
     "third_party": 573440
    },
@@ -1536,23 +1518,23 @@
    "width": 390,
    "type": "tool",
    "status": 200,
-   "total": 419495,
-   "requests": 22,
+   "total": 416976,
+   "requests": 21,
    "by_type": {
-    "html": 10352,
-    "css": 31754,
-    "js": 39980,
+    "html": 10398,
+    "css": 31730,
+    "js": 37525,
     "images": 0,
-    "fonts": 90558,
-    "other": 23509,
-    "third_party": 223342
+    "fonts": 90528,
+    "other": 23435,
+    "third_party": 223360
    },
    "third_party_hosts": {
     "static.cloudflareinsights.com": 10479,
-    "www.googletagmanager.com": 181292,
-    "kolaboro.com/cdn-cgi": 3613,
+    "kolaboro.com/cdn-cgi": 3605,
     "www.clarity.ms": 1147,
     "scripts.clarity.ms": 25538,
+    "www.googletagmanager.com": 181318,
     "s.clarity.ms": 552,
     "c.clarity.ms": 721
    },
@@ -1560,7 +1542,7 @@
     "total": 757760,
     "js": 61440,
     "css": 40960,
-    "images": 20480,
+    "images": 102400,
     "fonts": 112640,
     "third_party": 471040
    },
@@ -1572,31 +1554,31 @@
    "width": 1440,
    "type": "tool",
    "status": 200,
-   "total": 417016,
-   "requests": 21,
+   "total": 419358,
+   "requests": 22,
    "by_type": {
-    "html": 10365,
-    "css": 31763,
-    "js": 37527,
+    "html": 10361,
+    "css": 31639,
+    "js": 39965,
     "images": 0,
-    "fonts": 90545,
-    "other": 23498,
-    "third_party": 223318
+    "fonts": 90605,
+    "other": 23426,
+    "third_party": 223362
    },
    "third_party_hosts": {
     "static.cloudflareinsights.com": 10478,
-    "kolaboro.com/cdn-cgi": 3595,
-    "www.googletagmanager.com": 181290,
+    "kolaboro.com/cdn-cgi": 3612,
     "www.clarity.ms": 1147,
-    "scripts.clarity.ms": 25537,
-    "s.clarity.ms": 552,
-    "c.clarity.ms": 719
+    "scripts.clarity.ms": 25536,
+    "www.googletagmanager.com": 181316,
+    "p.clarity.ms": 552,
+    "c.clarity.ms": 721
    },
    "budget": {
     "total": 747520,
     "js": 51200,
     "css": 40960,
-    "images": 20480,
+    "images": 102400,
     "fonts": 112640,
     "third_party": 471040
    },

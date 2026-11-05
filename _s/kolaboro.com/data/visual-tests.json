@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-05T06:54:24.298Z",
+ "updated": "2026-11-05T06:59:14.176Z",
  "base": "https://kolaboro.com",
- "seconds": 185,
+ "seconds": 198,
  "method": "Chromium (Playwright) at 390 x 844 (phone, touch) and 1440 x 900 (desktop), device pixel ratio 1, reduced motion, UTC. The top of each page is captured (up to 2400 px tall on a phone, 1800 px on desktop) with the moving \"shipping daily\" ticker masked and the cookie banner hidden, then compared pixel by pixel with the previous run using pixelmatch (colour threshold 0.1). A page counts as changed when more than 0.3% of its pixels differ or its captured height changed. Live numbers on a page (counts, dates) can cause small changes that are not bugs.",
  "changed_threshold_pct": 0.3,
  "summary": {
