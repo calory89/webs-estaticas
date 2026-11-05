@@ -1,0 +1,1607 @@
+{
+ "updated": "2026-11-05T06:54:24.298Z",
+ "base": "https://kolaboro.com",
+ "method": "Bytes transferred over the network (compressed size plus headers, Chrome DevTools Protocol encodedDataLength) for one cold load with the browser cache disabled, waiting for network idle plus 2.5 s so late tags such as analytics are counted. First-party bytes (kolaboro.com) are split by resource type; everything from another host, and code Cloudflare injects under /cdn-cgi/, is counted as third party. Measured from a GitHub Actions runner in the United States.",
+ "budgets": {
+  "default_type": "content",
+  "types": [
+   {
+    "id": "home",
+    "match": [
+     "/"
+    ]
+   },
+   {
+    "id": "project",
+    "match": [
+     "/p/*"
+    ]
+   },
+   {
+    "id": "data",
+    "match": [
+     "/database/",
+     "/cases/",
+     "/prices/",
+     "/log/",
+     "/status/",
+     "/research/",
+     "/bali/",
+     "/verify/"
+    ]
+   },
+   {
+    "id": "tool",
+    "match": [
+     "/check/",
+     "/tools/",
+     "/checklist/"
+    ]
+   }
+  ],
+  "budgets": {
+   "home": {
+    "phone": {
+     "total": 757760,
+     "js": 61440,
+     "css": 40960,
+     "images": 20480,
+     "fonts": 112640,
+     "third_party": 471040
+    },
+    "desktop": {
+     "total": 952320,
+     "js": 61440,
+     "css": 40960,
+     "images": 194560,
+     "fonts": 112640,
+     "third_party": 471040
+    }
+   },
+   "tool": {
+    "phone": {
+     "total": 757760,
+     "js": 61440,
+     "css": 40960,
+     "images": 20480,
+     "fonts": 112640,
+     "third_party": 471040
+    },
+    "desktop": {
+     "total": 747520,
+     "js": 51200,
+     "css": 40960,
+     "images": 20480,
+     "fonts": 112640,
+     "third_party": 471040
+    }
+   },
+   "data": {
+    "phone": {
+     "total": 1003520,
+     "js": 71680,
+     "css": 40960,
+     "images": 20480,
+     "fonts": 112640,
+     "third_party": 563200
+    },
+    "desktop": {
+     "total": 1003520,
+     "js": 71680,
+     "css": 40960,
+     "images": 20480,
+     "fonts": 112640,
+     "third_party": 573440
+    }
+   },
+   "content": {
+    "phone": {
+     "total": 737280,
+     "js": 61440,
+     "css": 40960,
+     "images": 20480,
+     "fonts": 112640,
+     "third_party": 471040
+    },
+    "desktop": {
+     "total": 737280,
+     "js": 61440,
+     "css": 40960,
+     "images": 20480,
+     "fonts": 112640,
+     "third_party": 471040
+    }
+   },
+   "project": {
+    "phone": {
+     "total": 901120,
+     "js": 81920,
+     "css": 40960,
+     "images": 20480,
+     "fonts": 112640,
+     "third_party": 471040
+    },
+    "desktop": {
+     "total": 911360,
+     "js": 92160,
+     "css": 40960,
+     "images": 20480,
+     "fonts": 112640,
+     "third_party": 471040
+    }
+   }
+  },
+  "note": "Budgets in bytes per page type and viewport, set on 5 Nov 2026 from the first measurement (largest page of each type) plus 15%, rounded up to 10 KiB, with a 20 KiB floor. Third-party bytes are mostly the Google tag (about 354 KB per page). Lower a budget when a page gets lighter; never raise one without saying why in the commit."
+ },
+ "ok": false,
+ "breaches": [
+  {
+   "page": "/status/",
+   "view": "desktop",
+   "over": [
+    {
+     "metric": "images",
+     "value": 74690,
+     "budget": 20480
+    }
+   ]
+  }
+ ],
+ "pages": [
+  {
+   "page": "/",
+   "view": "phone",
+   "width": 390,
+   "type": "home",
+   "status": 200,
+   "total": 619709,
+   "requests": 29,
+   "by_type": {
+    "html": 27411,
+    "css": 29162,
+    "js": 38776,
+    "images": 0,
+    "fonts": 90534,
+    "other": 27597,
+    "third_party": 406229
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10478,
+    "oykcsmextclpdnugixqz.supabase.co": 1057,
+    "kolaboro.com/cdn-cgi": 3598,
+    "www.clarity.ms": 1193,
+    "scripts.clarity.ms": 25537,
+    "i.clarity.ms": 1380,
+    "c.clarity.ms": 720,
+    "www.googletagmanager.com": 362266
+   },
+   "budget": {
+    "total": 757760,
+    "js": 61440,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/",
+   "view": "desktop",
+   "width": 1440,
+   "type": "home",
+   "status": 200,
+   "total": 784565,
+   "requests": 31,
+   "by_type": {
+    "html": 27416,
+    "css": 29162,
+    "js": 38776,
+    "images": 164857,
+    "fonts": 90534,
+    "other": 27608,
+    "third_party": 406212
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10478,
+    "oykcsmextclpdnugixqz.supabase.co": 1079,
+    "kolaboro.com/cdn-cgi": 3602,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25537,
+    "b.clarity.ms": 1380,
+    "c.clarity.ms": 720,
+    "www.googletagmanager.com": 362269
+   },
+   "budget": {
+    "total": 952320,
+    "js": 61440,
+    "css": 40960,
+    "images": 194560,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/check/",
+   "view": "phone",
+   "width": 390,
+   "type": "tool",
+   "status": 200,
+   "total": 614931,
+   "requests": 20,
+   "by_type": {
+    "html": 32727,
+    "css": 29162,
+    "js": 34207,
+    "images": 0,
+    "fonts": 90534,
+    "other": 23989,
+    "third_party": 404312
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10478,
+    "kolaboro.com/cdn-cgi": 3607,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "o.clarity.ms": 552,
+    "c.clarity.ms": 721,
+    "www.googletagmanager.com": 362269
+   },
+   "budget": {
+    "total": 757760,
+    "js": 61440,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/check/",
+   "view": "desktop",
+   "width": 1440,
+   "type": "tool",
+   "status": 200,
+   "total": 616911,
+   "requests": 21,
+   "by_type": {
+    "html": 32341,
+    "css": 29162,
+    "js": 36654,
+    "images": 0,
+    "fonts": 90534,
+    "other": 23910,
+    "third_party": 404310
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3607,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "a.clarity.ms": 552,
+    "c.clarity.ms": 721,
+    "www.googletagmanager.com": 362266
+   },
+   "budget": {
+    "total": 747520,
+    "js": 51200,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/database/",
+   "view": "phone",
+   "width": 390,
+   "type": "data",
+   "status": 200,
+   "total": 863286,
+   "requests": 25,
+   "by_type": {
+    "html": 15622,
+    "css": 29160,
+    "js": 39984,
+    "images": 0,
+    "fonts": 90545,
+    "other": 283680,
+    "third_party": 404295
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3603,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "g.clarity.ms": 552,
+    "c.clarity.ms": 722,
+    "www.googletagmanager.com": 362254
+   },
+   "budget": {
+    "total": 1003520,
+    "js": 71680,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 563200
+   },
+   "over": []
+  },
+  {
+   "page": "/database/",
+   "view": "desktop",
+   "width": 1440,
+   "type": "data",
+   "status": 200,
+   "total": 860925,
+   "requests": 24,
+   "by_type": {
+    "html": 15701,
+    "css": 29162,
+    "js": 37530,
+    "images": 0,
+    "fonts": 90534,
+    "other": 283684,
+    "third_party": 404314
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3608,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "n.clarity.ms": 552,
+    "c.clarity.ms": 721,
+    "www.googletagmanager.com": 362269
+   },
+   "budget": {
+    "total": 1003520,
+    "js": 71680,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 573440
+   },
+   "over": []
+  },
+  {
+   "page": "/pricing/",
+   "view": "phone",
+   "width": 390,
+   "type": "content",
+   "status": 200,
+   "total": 596824,
+   "requests": 22,
+   "by_type": {
+    "html": 11704,
+    "css": 29146,
+    "js": 36652,
+    "images": 0,
+    "fonts": 90545,
+    "other": 24404,
+    "third_party": 404373
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10478,
+    "kolaboro.com/cdn-cgi": 3607,
+    "www.clarity.ms": 1193,
+    "scripts.clarity.ms": 25536,
+    "t.clarity.ms": 552,
+    "c.clarity.ms": 719,
+    "www.googletagmanager.com": 362288
+   },
+   "budget": {
+    "total": 737280,
+    "js": 61440,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/pricing/",
+   "view": "desktop",
+   "width": 1440,
+   "type": "content",
+   "status": 200,
+   "total": 594369,
+   "requests": 21,
+   "by_type": {
+    "html": 11744,
+    "css": 29162,
+    "js": 34204,
+    "images": 0,
+    "fonts": 90538,
+    "other": 24394,
+    "third_party": 404327
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10478,
+    "kolaboro.com/cdn-cgi": 3604,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25537,
+    "o.clarity.ms": 552,
+    "c.clarity.ms": 720,
+    "www.googletagmanager.com": 362289
+   },
+   "budget": {
+    "total": 737280,
+    "js": 61440,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/cases/",
+   "view": "phone",
+   "width": 390,
+   "type": "data",
+   "status": 200,
+   "total": 826985,
+   "requests": 31,
+   "by_type": {
+    "html": 25684,
+    "css": 29147,
+    "js": 43929,
+    "images": 0,
+    "fonts": 90554,
+    "other": 153852,
+    "third_party": 483819
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10478,
+    "cdnjs.cloudflare.com": 40106,
+    "kolaboro.com/cdn-cgi": 3608,
+    "server.arcgisonline.com": 39396,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25536,
+    "f.clarity.ms": 552,
+    "c.clarity.ms": 719,
+    "www.googletagmanager.com": 362277
+   },
+   "budget": {
+    "total": 1003520,
+    "js": 71680,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 563200
+   },
+   "over": []
+  },
+  {
+   "page": "/cases/",
+   "view": "desktop",
+   "width": 1440,
+   "type": "data",
+   "status": 200,
+   "total": 835073,
+   "requests": 32,
+   "by_type": {
+    "html": 25412,
+    "css": 29215,
+    "js": 43843,
+    "images": 0,
+    "fonts": 90559,
+    "other": 153798,
+    "third_party": 492246
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10478,
+    "cdnjs.cloudflare.com": 40112,
+    "kolaboro.com/cdn-cgi": 3604,
+    "server.arcgisonline.com": 47831,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25537,
+    "a.clarity.ms": 552,
+    "c.clarity.ms": 719,
+    "www.googletagmanager.com": 362266
+   },
+   "budget": {
+    "total": 1003520,
+    "js": 71680,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 573440
+   },
+   "over": []
+  },
+  {
+   "page": "/about/",
+   "view": "phone",
+   "width": 390,
+   "type": "content",
+   "status": 200,
+   "total": 595411,
+   "requests": 21,
+   "by_type": {
+    "html": 10850,
+    "css": 29162,
+    "js": 36653,
+    "images": 0,
+    "fonts": 90534,
+    "other": 23915,
+    "third_party": 404297
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10478,
+    "kolaboro.com/cdn-cgi": 3598,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25537,
+    "e.clarity.ms": 552,
+    "c.clarity.ms": 719,
+    "www.googletagmanager.com": 362266
+   },
+   "budget": {
+    "total": 737280,
+    "js": 61440,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/about/",
+   "view": "desktop",
+   "width": 1440,
+   "type": "content",
+   "status": 200,
+   "total": 592951,
+   "requests": 20,
+   "by_type": {
+    "html": 10853,
+    "css": 29142,
+    "js": 34204,
+    "images": 0,
+    "fonts": 90545,
+    "other": 23909,
+    "third_party": 404298
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10478,
+    "kolaboro.com/cdn-cgi": 3599,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25537,
+    "e.clarity.ms": 552,
+    "c.clarity.ms": 719,
+    "www.googletagmanager.com": 362266
+   },
+   "budget": {
+    "total": 737280,
+    "js": 61440,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/p/BALI-014",
+   "view": "phone",
+   "width": 390,
+   "type": "project",
+   "status": 200,
+   "total": 770651,
+   "requests": 33,
+   "by_type": {
+    "html": 10703,
+    "css": 33864,
+    "js": 62138,
+    "images": 0,
+    "fonts": 90534,
+    "other": 169107,
+    "third_party": 404305
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10478,
+    "kolaboro.com/cdn-cgi": 3604,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25537,
+    "o.clarity.ms": 552,
+    "c.clarity.ms": 721,
+    "www.googletagmanager.com": 362266
+   },
+   "budget": {
+    "total": 901120,
+    "js": 81920,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/p/BALI-014",
+   "view": "desktop",
+   "width": 1440,
+   "type": "project",
+   "status": 200,
+   "total": 772973,
+   "requests": 34,
+   "by_type": {
+    "html": 10665,
+    "css": 33853,
+    "js": 64589,
+    "images": 0,
+    "fonts": 90536,
+    "other": 169029,
+    "third_party": 404301
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10478,
+    "kolaboro.com/cdn-cgi": 3614,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25537,
+    "o.clarity.ms": 552,
+    "c.clarity.ms": 719,
+    "www.googletagmanager.com": 362254
+   },
+   "budget": {
+    "total": 911360,
+    "js": 92160,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/verify/",
+   "view": "phone",
+   "width": 390,
+   "type": "data",
+   "status": 200,
+   "total": 619822,
+   "requests": 25,
+   "by_type": {
+    "html": 21487,
+    "css": 29162,
+    "js": 46869,
+    "images": 0,
+    "fonts": 90534,
+    "other": 27467,
+    "third_party": 404303
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3598,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "p.clarity.ms": 552,
+    "c.clarity.ms": 720,
+    "www.googletagmanager.com": 362269
+   },
+   "budget": {
+    "total": 1003520,
+    "js": 71680,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 563200
+   },
+   "over": []
+  },
+  {
+   "page": "/verify/",
+   "view": "desktop",
+   "width": 1440,
+   "type": "data",
+   "status": 200,
+   "total": 622144,
+   "requests": 26,
+   "by_type": {
+    "html": 21440,
+    "css": 29146,
+    "js": 49237,
+    "images": 0,
+    "fonts": 90625,
+    "other": 27393,
+    "third_party": 404303
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10478,
+    "kolaboro.com/cdn-cgi": 3604,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25537,
+    "k.clarity.ms": 552,
+    "c.clarity.ms": 719,
+    "www.googletagmanager.com": 362266
+   },
+   "budget": {
+    "total": 1003520,
+    "js": 71680,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 573440
+   },
+   "over": []
+  },
+  {
+   "page": "/log/",
+   "view": "phone",
+   "width": 390,
+   "type": "data",
+   "status": 200,
+   "total": 608968,
+   "requests": 25,
+   "by_type": {
+    "html": 15030,
+    "css": 29162,
+    "js": 43411,
+    "images": 0,
+    "fonts": 90534,
+    "other": 26520,
+    "third_party": 404311
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3606,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "e.clarity.ms": 552,
+    "c.clarity.ms": 720,
+    "www.googletagmanager.com": 362269
+   },
+   "budget": {
+    "total": 1003520,
+    "js": 71680,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 563200
+   },
+   "over": []
+  },
+  {
+   "page": "/log/",
+   "view": "desktop",
+   "width": 1440,
+   "type": "data",
+   "status": 200,
+   "total": 611810,
+   "requests": 26,
+   "by_type": {
+    "html": 14886,
+    "css": 29237,
+    "js": 45782,
+    "images": 0,
+    "fonts": 90538,
+    "other": 26519,
+    "third_party": 404848
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10478,
+    "kolaboro.com/cdn-cgi": 3601,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "p.clarity.ms": 552,
+    "c.clarity.ms": 720,
+    "www.googletagmanager.com": 362812
+   },
+   "budget": {
+    "total": 1003520,
+    "js": 71680,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 573440
+   },
+   "over": []
+  },
+  {
+   "page": "/docs/api/",
+   "view": "phone",
+   "width": 390,
+   "type": "content",
+   "status": 200,
+   "total": 593786,
+   "requests": 21,
+   "by_type": {
+    "html": 10863,
+    "css": 29151,
+    "js": 34204,
+    "images": 728,
+    "fonts": 90545,
+    "other": 23990,
+    "third_party": 404305
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10478,
+    "kolaboro.com/cdn-cgi": 3600,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "t.clarity.ms": 552,
+    "c.clarity.ms": 721,
+    "www.googletagmanager.com": 362269
+   },
+   "budget": {
+    "total": 737280,
+    "js": 61440,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/docs/api/",
+   "view": "desktop",
+   "width": 1440,
+   "type": "content",
+   "status": 200,
+   "total": 596266,
+   "requests": 22,
+   "by_type": {
+    "html": 10961,
+    "css": 29162,
+    "js": 36654,
+    "images": 729,
+    "fonts": 90534,
+    "other": 23919,
+    "third_party": 404307
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3602,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25537,
+    "t.clarity.ms": 552,
+    "c.clarity.ms": 721,
+    "www.googletagmanager.com": 362269
+   },
+   "budget": {
+    "total": 737280,
+    "js": 61440,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/status/",
+   "view": "phone",
+   "width": 390,
+   "type": "data",
+   "status": 200,
+   "total": 778158,
+   "requests": 48,
+   "by_type": {
+    "html": 20028,
+    "css": 29162,
+    "js": 50770,
+    "images": 0,
+    "fonts": 90559,
+    "other": 181341,
+    "third_party": 406298
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10478,
+    "oykcsmextclpdnugixqz.supabase.co": 1972,
+    "kolaboro.com/cdn-cgi": 3604,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25537,
+    "p.clarity.ms": 552,
+    "c.clarity.ms": 718,
+    "www.googletagmanager.com": 362290
+   },
+   "budget": {
+    "total": 1003520,
+    "js": 71680,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 563200
+   },
+   "over": []
+  },
+  {
+   "page": "/status/",
+   "view": "desktop",
+   "width": 1440,
+   "type": "data",
+   "status": 200,
+   "total": 853314,
+   "requests": 54,
+   "by_type": {
+    "html": 20181,
+    "css": 29153,
+    "js": 50794,
+    "images": 74690,
+    "fonts": 90543,
+    "other": 181390,
+    "third_party": 406563
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "oykcsmextclpdnugixqz.supabase.co": 1971,
+    "kolaboro.com/cdn-cgi": 3611,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25537,
+    "s.clarity.ms": 828,
+    "c.clarity.ms": 721,
+    "www.googletagmanager.com": 362269
+   },
+   "budget": {
+    "total": 1003520,
+    "js": 71680,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 573440
+   },
+   "over": [
+    {
+     "metric": "images",
+     "value": 74690,
+     "budget": 20480
+    }
+   ]
+  },
+  {
+   "page": "/engineering/",
+   "view": "phone",
+   "width": 390,
+   "type": "content",
+   "status": 200,
+   "total": 609943,
+   "requests": 27,
+   "by_type": {
+    "html": 12285,
+    "css": 29162,
+    "js": 37525,
+    "images": 0,
+    "fonts": 90534,
+    "other": 35852,
+    "third_party": 404585
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3609,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25537,
+    "u.clarity.ms": 828,
+    "c.clarity.ms": 719,
+    "www.googletagmanager.com": 362266
+   },
+   "budget": {
+    "total": 737280,
+    "js": 61440,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/engineering/",
+   "view": "desktop",
+   "width": 1440,
+   "type": "content",
+   "status": 200,
+   "total": 612324,
+   "requests": 28,
+   "by_type": {
+    "html": 12264,
+    "css": 29186,
+    "js": 39981,
+    "images": 0,
+    "fonts": 90555,
+    "other": 35750,
+    "third_party": 404588
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3607,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "r.clarity.ms": 828,
+    "c.clarity.ms": 720,
+    "www.googletagmanager.com": 362269
+   },
+   "budget": {
+    "total": 737280,
+    "js": 61440,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/security/",
+   "view": "phone",
+   "width": 390,
+   "type": "content",
+   "status": 200,
+   "total": 597231,
+   "requests": 22,
+   "by_type": {
+    "html": 12691,
+    "css": 29162,
+    "js": 35731,
+    "images": 0,
+    "fonts": 90534,
+    "other": 24786,
+    "third_party": 404327
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3598,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "l.clarity.ms": 552,
+    "c.clarity.ms": 722,
+    "www.googletagmanager.com": 362291
+   },
+   "budget": {
+    "total": 737280,
+    "js": 61440,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/security/",
+   "view": "desktop",
+   "width": 1440,
+   "type": "content",
+   "status": 200,
+   "total": 599694,
+   "requests": 23,
+   "by_type": {
+    "html": 12642,
+    "css": 29155,
+    "js": 38179,
+    "images": 0,
+    "fonts": 90545,
+    "other": 24790,
+    "third_party": 404383
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10478,
+    "kolaboro.com/cdn-cgi": 3610,
+    "www.clarity.ms": 1193,
+    "scripts.clarity.ms": 25537,
+    "g.clarity.ms": 552,
+    "c.clarity.ms": 720,
+    "www.googletagmanager.com": 362293
+   },
+   "budget": {
+    "total": 737280,
+    "js": 61440,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/how-we-score/",
+   "view": "phone",
+   "width": 390,
+   "type": "content",
+   "status": 200,
+   "total": 596018,
+   "requests": 21,
+   "by_type": {
+    "html": 11447,
+    "css": 29153,
+    "js": 36655,
+    "images": 0,
+    "fonts": 90534,
+    "other": 23914,
+    "third_party": 404315
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3610,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "u.clarity.ms": 552,
+    "c.clarity.ms": 720,
+    "www.googletagmanager.com": 362269
+   },
+   "budget": {
+    "total": 737280,
+    "js": 61440,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/how-we-score/",
+   "view": "desktop",
+   "width": 1440,
+   "type": "content",
+   "status": 200,
+   "total": 593471,
+   "requests": 20,
+   "by_type": {
+    "html": 11353,
+    "css": 29153,
+    "js": 34206,
+    "images": 0,
+    "fonts": 90534,
+    "other": 23915,
+    "third_party": 404310
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3605,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "s.clarity.ms": 552,
+    "c.clarity.ms": 720,
+    "www.googletagmanager.com": 362269
+   },
+   "budget": {
+    "total": 737280,
+    "js": 61440,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/checklist/",
+   "view": "phone",
+   "width": 390,
+   "type": "tool",
+   "status": 200,
+   "total": 593700,
+   "requests": 20,
+   "by_type": {
+    "html": 11486,
+    "css": 29151,
+    "js": 34209,
+    "images": 0,
+    "fonts": 90545,
+    "other": 23988,
+    "third_party": 404321
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3615,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25537,
+    "s.clarity.ms": 552,
+    "c.clarity.ms": 722,
+    "www.googletagmanager.com": 362269
+   },
+   "budget": {
+    "total": 757760,
+    "js": 61440,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/checklist/",
+   "view": "desktop",
+   "width": 1440,
+   "type": "tool",
+   "status": 200,
+   "total": 596124,
+   "requests": 21,
+   "by_type": {
+    "html": 11454,
+    "css": 29180,
+    "js": 36657,
+    "images": 0,
+    "fonts": 90534,
+    "other": 23987,
+    "third_party": 404312
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3606,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "i.clarity.ms": 552,
+    "c.clarity.ms": 721,
+    "www.googletagmanager.com": 362269
+   },
+   "budget": {
+    "total": 747520,
+    "js": 51200,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/trust/",
+   "view": "phone",
+   "width": 390,
+   "type": "content",
+   "status": 200,
+   "total": 609771,
+   "requests": 25,
+   "by_type": {
+    "html": 11892,
+    "css": 29151,
+    "js": 40107,
+    "images": 0,
+    "fonts": 90545,
+    "other": 33760,
+    "third_party": 404316
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3611,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "s.clarity.ms": 552,
+    "c.clarity.ms": 720,
+    "www.googletagmanager.com": 362269
+   },
+   "budget": {
+    "total": 737280,
+    "js": 61440,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/trust/",
+   "view": "desktop",
+   "width": 1440,
+   "type": "content",
+   "status": 200,
+   "total": 612181,
+   "requests": 26,
+   "by_type": {
+    "html": 11863,
+    "css": 29151,
+    "js": 42557,
+    "images": 0,
+    "fonts": 90545,
+    "other": 33753,
+    "third_party": 404312
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3605,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "h.clarity.ms": 552,
+    "c.clarity.ms": 722,
+    "www.googletagmanager.com": 362269
+   },
+   "budget": {
+    "total": 737280,
+    "js": 61440,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/prices/",
+   "view": "phone",
+   "width": 390,
+   "type": "data",
+   "status": 200,
+   "total": 627156,
+   "requests": 30,
+   "by_type": {
+    "html": 10074,
+    "css": 31022,
+    "js": 43518,
+    "images": 0,
+    "fonts": 90611,
+    "other": 47638,
+    "third_party": 404293
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3603,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25537,
+    "f.clarity.ms": 552,
+    "c.clarity.ms": 721,
+    "www.googletagmanager.com": 362254
+   },
+   "budget": {
+    "total": 1003520,
+    "js": 71680,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 563200
+   },
+   "over": []
+  },
+  {
+   "page": "/prices/",
+   "view": "desktop",
+   "width": 1440,
+   "type": "data",
+   "status": 200,
+   "total": 627358,
+   "requests": 30,
+   "by_type": {
+    "html": 10021,
+    "css": 31080,
+    "js": 43518,
+    "images": 0,
+    "fonts": 90569,
+    "other": 47837,
+    "third_party": 404333
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3603,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "l.clarity.ms": 552,
+    "c.clarity.ms": 721,
+    "www.googletagmanager.com": 362293
+   },
+   "budget": {
+    "total": 1003520,
+    "js": 71680,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 573440
+   },
+   "over": []
+  },
+  {
+   "page": "/bali/",
+   "view": "phone",
+   "width": 390,
+   "type": "data",
+   "status": 200,
+   "total": 595186,
+   "requests": 22,
+   "by_type": {
+    "html": 10128,
+    "css": 29162,
+    "js": 36655,
+    "images": 0,
+    "fonts": 90534,
+    "other": 24394,
+    "third_party": 404313
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3609,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "s.clarity.ms": 552,
+    "c.clarity.ms": 722,
+    "www.googletagmanager.com": 362266
+   },
+   "budget": {
+    "total": 1003520,
+    "js": 71680,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 563200
+   },
+   "over": []
+  },
+  {
+   "page": "/bali/",
+   "view": "desktop",
+   "width": 1440,
+   "type": "data",
+   "status": 200,
+   "total": 592713,
+   "requests": 21,
+   "by_type": {
+    "html": 10094,
+    "css": 29151,
+    "js": 34206,
+    "images": 0,
+    "fonts": 90545,
+    "other": 24400,
+    "third_party": 404317
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3611,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "c.clarity.ms": 721,
+    "p.clarity.ms": 552,
+    "www.googletagmanager.com": 362269
+   },
+   "budget": {
+    "total": 1003520,
+    "js": 71680,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 573440
+   },
+   "over": []
+  },
+  {
+   "page": "/research/",
+   "view": "phone",
+   "width": 390,
+   "type": "data",
+   "status": 200,
+   "total": 606327,
+   "requests": 23,
+   "by_type": {
+    "html": 13252,
+    "css": 29151,
+    "js": 34203,
+    "images": 0,
+    "fonts": 90545,
+    "other": 34867,
+    "third_party": 404309
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "kolaboro.com/cdn-cgi": 3604,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25537,
+    "f.clarity.ms": 552,
+    "c.clarity.ms": 721,
+    "www.googletagmanager.com": 362269
+   },
+   "budget": {
+    "total": 1003520,
+    "js": 71680,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 563200
+   },
+   "over": []
+  },
+  {
+   "page": "/research/",
+   "view": "desktop",
+   "width": 1440,
+   "type": "data",
+   "status": 200,
+   "total": 606404,
+   "requests": 23,
+   "by_type": {
+    "html": 13260,
+    "css": 29151,
+    "js": 34202,
+    "images": 0,
+    "fonts": 90554,
+    "other": 34933,
+    "third_party": 404304
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10478,
+    "kolaboro.com/cdn-cgi": 3603,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25536,
+    "h.clarity.ms": 552,
+    "c.clarity.ms": 719,
+    "www.googletagmanager.com": 362269
+   },
+   "budget": {
+    "total": 1003520,
+    "js": 71680,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 573440
+   },
+   "over": []
+  },
+  {
+   "page": "/tools/",
+   "view": "phone",
+   "width": 390,
+   "type": "tool",
+   "status": 200,
+   "total": 419495,
+   "requests": 22,
+   "by_type": {
+    "html": 10352,
+    "css": 31754,
+    "js": 39980,
+    "images": 0,
+    "fonts": 90558,
+    "other": 23509,
+    "third_party": 223342
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10479,
+    "www.googletagmanager.com": 181292,
+    "kolaboro.com/cdn-cgi": 3613,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25538,
+    "s.clarity.ms": 552,
+    "c.clarity.ms": 721
+   },
+   "budget": {
+    "total": 757760,
+    "js": 61440,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  },
+  {
+   "page": "/tools/",
+   "view": "desktop",
+   "width": 1440,
+   "type": "tool",
+   "status": 200,
+   "total": 417016,
+   "requests": 21,
+   "by_type": {
+    "html": 10365,
+    "css": 31763,
+    "js": 37527,
+    "images": 0,
+    "fonts": 90545,
+    "other": 23498,
+    "third_party": 223318
+   },
+   "third_party_hosts": {
+    "static.cloudflareinsights.com": 10478,
+    "kolaboro.com/cdn-cgi": 3595,
+    "www.googletagmanager.com": 181290,
+    "www.clarity.ms": 1147,
+    "scripts.clarity.ms": 25537,
+    "s.clarity.ms": 552,
+    "c.clarity.ms": 719
+   },
+   "budget": {
+    "total": 747520,
+    "js": 51200,
+    "css": 40960,
+    "images": 20480,
+    "fonts": 112640,
+    "third_party": 471040
+   },
+   "over": []
+  }
+ ],
+ "errors": []
+}
