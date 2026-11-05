@@ -34,6 +34,8 @@ jobs:
         run: |
           if [ -z "$ANTHROPIC_API_KEY" ]; then echo "::warning::ANTHROPIC_API_KEY secret is not set: rebuilding aggregates from seed data only"; fi
           python3 tools/kolaboro-agent/agent.py "$RUNNER_TEMP/bali-claims.json"
+          # named index for the project and developer pages (/projects/<slug>/, /developers/<slug>/, batch 8): names, pages read, sourced facts
+          python3 tools/kolaboro-agent/named.py "$RUNNER_TEMP/bali-cases.json" "$RUNNER_TEMP/named.json" || echo "::warning::named index not built"
       - name: Save internal data on main
         run: |
           git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
@@ -54,6 +56,7 @@ jobs:
             git update-index --add --cacheinfo 100644,$H2,_s/kolaboro.com/data/bali-cases.json
             H3=$(git hash-object -w "$RUNNER_TEMP/world-claims.json")
             git update-index --add --cacheinfo 100644,$H3,_s/kolaboro.com/data/world-claims.json
+            if [ -s "$RUNNER_TEMP/named.json" ]; then H4=$(git hash-object -w "$RUNNER_TEMP/named.json"); git update-index --add --cacheinfo 100644,$H4,_s/kolaboro.com/data/named.json; fi
             T=$(git write-tree); unset GIT_INDEX_FILE
             [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
             C=$(git commit-tree $T -p $P -m "kolaboro.com: research agent data $(date -u +%F)")
