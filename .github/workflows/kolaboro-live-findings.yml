@@ -1,0 +1,61 @@
+name: Kolaboro live findings
+# Hourly: re-reads the developer pages checked longest ago (round robin over every tracked project), asks claude-haiku-5-5 for
+# concrete facts with exact quotes, checks every quote in code and publishes only new or changed facts, anonymously, to
+# kolaboro.com/data/live-findings.json and /data/findings-by-project.json. Hard budget: 0.25 USD per run from real token usage.
+on:
+  schedule:
+    - cron: '34 * * * *'
+  workflow_dispatch:
+    inputs:
+      max_pages:
+        description: "Max project pages this run"
+        default: "150"
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-live-findings
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: tools/kolaboro-agent
+      - name: Read pages and compare
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          KB_LIVE_RUN_USD: '0.25'
+          KB_LIVE_MAX_PAGES: ${{ github.event.inputs.max_pages || '150' }}
+          KB_LIVE_MAX_SECONDS: '480'
+          KB_PUBLIC_CASES: ${{ runner.temp }}/bali-cases.json
+        run: |
+          curl -fsS --retry 3 https://kolaboro.com/data/bali-cases.json -o "$RUNNER_TEMP/bali-cases.json"
+          mkdir -p "$RUNNER_TEMP/out"
+          python3 tools/kolaboro-agent/live_findings.py "$RUNNER_TEMP/out"
+      - name: Save state on main
+        run: |
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          git add tools/kolaboro-agent/data/live-state.json tools/kolaboro-agent/data/live-findings.json tools/kolaboro-agent/data/live-by-project.json tools/kolaboro-agent/data/archive
+          git diff --cached --quiet && exit 0
+          git commit -q -m "kolaboro live findings: run $(date -u +%FT%H:%MZ)"
+          for i in 1 2 3 4 5; do git push -q origin HEAD:main && exit 0; git pull -q --rebase origin main; sleep 5; done; exit 1
+      - name: Publish to kolaboro.com
+        run: |
+          set -e
+          git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          for i in 1 2 3 4 5; do
+            P=$(git rev-parse FETCH_HEAD)
+            export GIT_INDEX_FILE=$RUNNER_TEMP/idx; rm -f $GIT_INDEX_FILE; git read-tree $P
+            H=$(git hash-object -w "$RUNNER_TEMP/out/live-findings.json")
+            git update-index --add --cacheinfo 100644,$H,_s/kolaboro.com/data/live-findings.json
+            H2=$(git hash-object -w "$RUNNER_TEMP/out/findings-by-project.json")
+            git update-index --add --cacheinfo 100644,$H2,_s/kolaboro.com/data/findings-by-project.json
+            T=$(git write-tree); unset GIT_INDEX_FILE
+            [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
+            C=$(git commit-tree $T -p $P -m "kolaboro.com: live findings $(date -u +%FT%H:%MZ)")
+            git push -q origin $C:refs/heads/pub/_lovable && exit 0
+            sleep 5; git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          done; exit 1

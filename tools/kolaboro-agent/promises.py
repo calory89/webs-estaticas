@@ -177,6 +177,13 @@ def page_versions():
             s = r.get('sha256')
             if r.get('source') == 'ai' and r.get('checked') == day and s and re.match(r'^[0-9a-f]{64}$', s):
                 out.setdefault(slug, []).append((day, s))
+    # page copies read by the hourly live findings job (live_findings.py keeps the same archive)
+    for slug, r in (load(os.path.join(DATA, 'live-state.json'), {}) or {}).items():
+        for day, s in (r.get('versions') or []):
+            if re.match(r'^[0-9a-f]{64}$', str(s)) and (day, s) not in out.get(slug, []):
+                out.setdefault(slug, []).append((day, s))
+    for slug in out:
+        out[slug].sort()
     return out
 
 
