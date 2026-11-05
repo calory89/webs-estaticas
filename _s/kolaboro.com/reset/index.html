@@ -15,6 +15,7 @@
 (function(){
   var SB='https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/kolaboro_pw_reset', K='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw';
   var f=document.getElementById('rf'), e=document.getElementById('re'), m=location.hash.match(/t=([a-f0-9]{20,80})/);
+  addEventListener('hashchange', function(){ if (/t=[a-f0-9]{20,80}/.test(location.hash)) location.reload(); });
   f.querySelector('.ap-pw button').onclick=function(){ var i=f.password; i.type=i.type==='password'?'text':'password'; this.textContent=i.type==='password'?'Show':'Hide'; };
   f.password.addEventListener('input',function(){ var v=this.value,s=0; if(v.length>=8)s++; if(v.length>=12)s++; if(/[A-Z]/.test(v)&&/[a-z]/.test(v))s++; if(/\d/.test(v))s++; if(/[^\w]/.test(v))s++; var b=document.getElementById('pm'); b.style.width=(s*20)+'%'; b.style.background=s<2?'#B42318':s<4?'#B7791F':'#0B7A55'; });
   if(!m){ e.innerHTML='This link is incomplete. <a href="/login/">Ask for a new one</a> from the log-in page.'; f.querySelector('.ap-btn').disabled=true; f.password.disabled=true; return; }

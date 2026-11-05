@@ -11,8 +11,11 @@
 (function(){
   var SB='https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/kolaboro_email_verify', K='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw';
   var h=document.getElementById('vh'), p=document.getElementById('vp'), b=document.getElementById('vb'), m=location.hash.match(/t=([a-f0-9]{20,80})/);
-  function done(ok){ h.textContent = ok ? 'Email confirmed' : 'This link has expired or was already used'; p.textContent = ok ? 'Thanks. Payments made with this email now attach to your case automatically.' : 'Log in to your portal and press "Send the link again".'; b.style.display = 'inline-flex'; history.replaceState(null,'','/confirm-email/'); }
-  if(!m){ done(false); return; }
-  fetch(SB,{method:'POST',headers:{apikey:K,Authorization:'Bearer '+K,'Content-Type':'application/json'},body:JSON.stringify({p_token:m[1]})}).then(function(r){return r.json()}).then(function(d){ done(!!(d&&d.ok)); }).catch(function(){ h.textContent='Network error'; p.textContent='Reload the page to try again.'; });
+  addEventListener('hashchange', function(){ if (/t=[a-f0-9]{20,80}/.test(location.hash)) location.reload(); });
+  var tk=null; try{ tk=localStorage.getItem('kb-token'); }catch(x){}
+  if(!tk){ b.textContent='Log in'; b.href='/login/?next=%2Fportal%2F'; }
+  function done(ok, missing){ h.textContent = ok ? 'Email confirmed' : missing ? 'This link is incomplete' : 'This link has expired or was already used'; p.textContent = ok ? 'Thanks. Payments made with this email now attach to your case automatically.' : (missing ? 'Open the link from the email again, or copy the whole link into your browser. ' : '') + 'You can also log in to your portal and press "Send the link again".'; if (ok && tk) b.textContent='Open my case'; b.style.display = 'inline-flex'; history.replaceState(null,'','/confirm-email/'); }
+  if(!m){ done(false, true); return; }
+  fetch(SB,{method:'POST',headers:{apikey:K,Authorization:'Bearer '+K,'Content-Type':'application/json'},body:JSON.stringify({p_token:m[1]})}).then(function(r){return r.json()}).then(function(d){ done(!!(d&&d.ok)); }).catch(function(){ h.textContent='Could not reach the server'; p.textContent='Check your connection and reload this page to try again.'; });
 })();
 </script></body></html>

@@ -56,8 +56,9 @@
     <ol class="th-tl" id="th-tl">
       <li id="tl1"><b>PayPal confirms the payment.</b> <span class="th-small">Your case switches to paid automatically once the payment and your confirmed email match.</span></li>
       <li id="tl2"><b>Your case starts.</b> <span class="th-small">You see every step with dates in your portal, and you can write to us in the case chat.</span></li>
-      <li id="tl3"><b>Land office, building permit and site visit</b> <span class="th-small">by your local agent.</span></li>
-      <li id="tl4"><b>Your written report in 7 days.</b> <span class="th-small">The due date shows on your case. Full refund if we can't take your case.</span></li>
+      <li id="tl3"><b>Within 2 days: documents.</b> <span class="th-small">You (or the developer) share the land certificate, permit and contract in your case. Our reader flags what does not match.</span></li>
+      <li id="tl4"><b>Within 5 days: land office and site visit.</b> <span class="th-small">Your agent checks the title at the land office and films the plot with GPS- and time-stamped photos.</span></li>
+      <li id="tl5"><b>Usually within 7 days: your written report.</b> <span class="th-small">The due date shows on your case. Full refund if we can't take your case.</span></li>
     </ol>
     <p class="th-small">Questions? Write to us in your case chat or at <a href="mailto:hello@kolaboro.com">hello@kolaboro.com</a>.</p>
   </div>
@@ -90,7 +91,7 @@ var KB = (function(){
   function show(kind, k, t, p, actions){
     var s = $('th-st'); s.className = 'th-st ' + kind; $('th-k').textContent = k; $('th-t').textContent = t; $('th-p').innerHTML = p; $('th-a').innerHTML = actions || '';
   }
-  function steps(n){ for (var i = 1; i <= 4; i++) { var li = $('tl' + i); if (li) li.classList.toggle('done', i <= n); } }
+  function steps(n){ for (var i = 1; i <= 5; i++) { var li = $('tl' + i); if (li) li.classList.toggle('done', i <= n); } }
   function btn(href, label, light, id){ return '<a class="ap-btn' + (light ? ' th-l' : '') + '" href="' + esc(href) + '"' + (id ? ' id="' + id + '"' : '') + '>' + esc(label) + '</a>'; }
 
   // ---------- cancelled or failed return ----------
