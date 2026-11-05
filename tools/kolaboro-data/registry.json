@@ -593,6 +593,44 @@
    ]
   },
   {
+   "id": "changes",
+   "path": "changes.json",
+   "title": "Change heatmap",
+   "kind": "data",
+   "description": "Day by day, the last published bali-cases.json of each day compared with the previous day's copy: new projects, page edits (page fingerprint changed), price band moves, date moves and register changes, counted per market over rolling windows. A project counts once per kind and market in a window.",
+   "workflow": "kolaboro-digest.yml",
+   "schedule": "weekly, Monday 06:23 UTC, and when the digest code changes",
+   "interval_hours": 168,
+   "stamp": "generated",
+   "rows": {
+    "key": "days_compared",
+    "unit": "days compared"
+   },
+   "keywords": [
+    "changes",
+    "heatmap"
+   ]
+  },
+  {
+   "id": "digest",
+   "path": "digest.json",
+   "title": "Weekly market digest",
+   "kind": "data",
+   "description": "Per ISO week: new projects, changes and alerts by market, built from the public bali-cases, promises, register-checks and stalled-sites files. An AI model may draft only the intro paragraph, and code checks every number in it.",
+   "workflow": "kolaboro-digest.yml",
+   "schedule": "weekly, Monday 06:23 UTC, and when the digest code changes",
+   "interval_hours": 168,
+   "stamp": "generated",
+   "rows": {
+    "key": "weeks",
+    "unit": "weeks"
+   },
+   "keywords": [
+    "digest",
+    "weekly"
+   ]
+  },
+  {
    "id": "mystery-shopper",
    "path": "mystery-shopper.json",
    "title": "Mystery shopper programme",
@@ -948,6 +986,81 @@
    "keywords": [
     "tests",
     "fuzzing"
+   ]
+  },
+  {
+   "id": "shipping",
+   "path": "shipping.json",
+   "title": "Shipping log",
+   "kind": "operations",
+   "description": "Ships (commits by people, or by Claude working for one) and data updates per UTC day from the git history of the live branch, streaks, engineering metrics and day summaries written by an AI model and checked in code.",
+   "workflow": "kolaboro-shipping.yml",
+   "schedule": "hourly at minute 19",
+   "interval_hours": 1,
+   "stamp": "generated_at",
+   "rows": {
+    "key": "days",
+    "unit": "days"
+   },
+   "keywords": [
+    "changelog",
+    "shipping"
+   ]
+  },
+  {
+   "id": "roadmap-sync",
+   "path": "roadmap-sync.json",
+   "title": "Roadmap items verified live",
+   "kind": "operations",
+   "description": "Roadmap items that link to the live page delivering them. An item counts as shipped only when the page answers HTTP 200, its canonical link is that page and its HTML contains the marker text.",
+   "workflow": "kolaboro-shipping.yml",
+   "schedule": "hourly at minute 19 (shipping log job)",
+   "interval_hours": 1,
+   "stamp": "generated_at",
+   "rows": {
+    "key": "items",
+    "unit": "items"
+   },
+   "keywords": [
+    "roadmap"
+   ]
+  },
+  {
+   "id": "page-weight",
+   "path": "page-weight.json",
+   "title": "Page weight",
+   "kind": "operations",
+   "description": "Bytes transferred for one cold load of key pages (compressed size plus headers, measured in Chrome), first-party bytes split by resource type, against page-weight budgets.",
+   "workflow": "kolaboro-quality.yml",
+   "schedule": "daily 06:41 UTC",
+   "interval_hours": 24,
+   "stamp": "updated",
+   "rows": {
+    "key": "pages",
+    "unit": "page loads"
+   },
+   "keywords": [
+    "performance",
+    "page weight"
+   ]
+  },
+  {
+   "id": "visual-tests",
+   "path": "visual-tests.json",
+   "title": "Visual regression tests",
+   "kind": "operations",
+   "description": "Key pages captured in Chromium at 390 and 1440 px and compared pixel by pixel with the previous run, with the share of changed pixels per page.",
+   "workflow": "kolaboro-quality.yml",
+   "schedule": "daily 06:41 UTC",
+   "interval_hours": 24,
+   "stamp": "updated",
+   "rows": {
+    "key": "results",
+    "unit": "captures"
+   },
+   "keywords": [
+    "visual regression",
+    "testing"
    ]
   }
  ]
