@@ -26,7 +26,12 @@ import * as w from './kbx_w.js'; // registers: global company graph (GLEIF), ins
 import * as x from './kbx_x.js'; // money tools: price below build cost, currency risk, late-handover compensation
 import * as y from './kbx_y.js'; // AI follow-up: promise tracker, natural-language alerts, developer questions
 import * as z from './kbx_z.js'; // evidence and partners: court-ready case file, Internet Archive copies, risk feed for banks and insurers
-const MODS = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z];
+import * as m_ship from './kbx_ship.js'; // shipping: daily ship log, streak, engineering metrics, roadmap sync, feeds
+import * as m_data from './kbx_data.js'; // open data platform: catalog, data contracts, freshness, OpenAPI explorer
+import * as m_disc from './kbx_disc.js'; // discovery: world map, similar projects, market comparison, project timeline, display currency
+import * as m_qa from './kbx_qa.js'; // quality engineering: visual regression, page weight, SBOM, real-user vitals, accessibility
+import * as m_ins from './kbx_ins.js'; // insight: weekly market digest, market page figures, score explainer, project-scoped questions, change heatmap
+const MODS = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, m_ship, m_data, m_disc, m_qa, m_ins];
 export async function route(req, u, env, ctx) {
   for (const m of MODS) if (m.PATHS && m.PATHS.test(u.pathname)) return m.handle(req, u, env, ctx);
   return new Response(JSON.stringify({ error: 'not found' }), { status: 404, headers: { 'content-type': 'application/json' } });
