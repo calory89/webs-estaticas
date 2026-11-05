@@ -32,6 +32,7 @@ async function loadJson(env, name, ttl) {
   if (!r.ok) throw new Error(name + ' ' + r.status);
   const v = await r.json(); MEMO[name] = { t: Date.now(), v }; return v;
 }
+const COI_MARKETS = new Set(['sumba']);
 let IDX = null;
 async function data(env) {
   const [named, cases] = await Promise.all([loadJson(env, 'named.json'), loadJson(env, 'bali-cases.json')]);
@@ -39,7 +40,9 @@ async function data(env) {
   const opt = n => loadJson(env, n).catch(() => ({}));
   const [prom, find, sim, delay] = await Promise.all([opt('promises.json'), opt('findings-by-project.json'), opt('similar.json'), opt('delay-index.json')]);
   const caseBy = new Map((cases.cases || []).map(c => [c.id, c]));
-  const P = (named.projects || []).filter(x => caseBy.has(x.id));
+  // Conflict of interest: a Kolaboro founder develops a project in Sumba (Eco Beach City), so projects in that market are never
+  // named or scored by name; they stay anonymous (/p/<id>/, market only). Same rule as the published independence policy.
+  const P = (named.projects || []).filter(x => caseBy.has(x.id) && !COI_MARKETS.has(String(x.mk || '').toLowerCase()));
   const byId = new Map(P.map(x => [x.id, x])), bySlug = new Map(P.map(x => [x.s, x])), devs = new Map(), mk = new Map();
   for (const x of P) {
     if (x.dvs && !RESERVED.has(x.dvs)) { if (!devs.has(x.dvs)) devs.set(x.dvs, { s: x.dvs, n: x.dv, ids: [] }); devs.get(x.dvs).ids.push(x.id); }
