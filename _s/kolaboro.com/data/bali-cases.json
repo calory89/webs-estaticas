@@ -1637,7 +1637,7 @@
    "overdue": null,
    "profile": 17,
    "fp": {
-    "sha256": "4ee980118eb10651c9d50e2bdaf9907805064b1f1a34afa15a624c7d331b0f8d",
+    "sha256": "996e475c5dc3d2f45d637b228cc0d21f4957d480607b10141b4a64903ff2f450",
     "date": "2026-11-05"
    },
    "history": [
@@ -9615,6 +9615,128 @@
      "to": false
     }
    ]
+  },
+  {
+   "id": "AYT-008",
+   "market": "Antalya",
+   "country": "Turkey",
+   "region": "Antalya",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": false,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 0,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "5 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 1,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": null
+  },
+  {
+   "id": "AYT-009",
+   "market": "Antalya",
+   "country": "Turkey",
+   "region": "Antalya",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": false,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 0,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "5 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 1,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": null
   },
   {
    "id": "ANU-001",
@@ -40140,6 +40262,67 @@
    "profile": 8
   },
   {
+   "id": "KSM-014",
+   "market": "Koh Samui",
+   "country": "Thailand",
+   "region": "Koh Samui",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": false,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 0,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "5 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 1,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": null
+  },
+  {
    "id": "KBV-001",
    "market": "Krabi",
    "country": "Thailand",
@@ -58344,6 +58527,311 @@
    }
   },
   {
+   "id": "PAT-013",
+   "market": "Pattaya",
+   "country": "Thailand",
+   "region": "Pattaya",
+   "docs": false,
+   "plans": false,
+   "band": "Under $100k",
+   "done": 2029,
+   "title": "Freehold condominium unit, foreign quota available (49% rule)",
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "5 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "developer",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 4,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 11
+  },
+  {
+   "id": "PAT-014",
+   "market": "Pattaya",
+   "country": "Thailand",
+   "region": "Pattaya",
+   "docs": false,
+   "plans": true,
+   "band": "Under $100k",
+   "done": 2028,
+   "title": "Freehold condominium unit, foreign quota (Thai quota units from 1.93M to 1.99M THB, with leasehold as fallback)",
+   "lease": null,
+   "yield": null,
+   "units": 139,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": true,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "5 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2028: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "developer",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 3,
+    "contradicted": 1
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 8
+  },
+  {
+   "id": "PAT-015",
+   "market": "Pattaya",
+   "country": "Thailand",
+   "region": "Pattaya",
+   "docs": false,
+   "plans": true,
+   "band": "$100k to $200k",
+   "done": 2029,
+   "title": "Freehold condominium unit, foreign quota (lowest foreign quota offer per Pearl; Thai quota from 3.79M THB)",
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": true,
+    "record": true,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 3,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "5 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "developer",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 2,
+    "contradicted": 2
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": 9
+  },
+  {
+   "id": "PAT-016",
+   "market": "Pattaya",
+   "country": "Thailand",
+   "region": "Pattaya",
+   "docs": false,
+   "plans": true,
+   "band": "$100k to $200k",
+   "done": 2029,
+   "title": "Freehold condominium unit, foreign quota on floors 8 to 14 only (39 units)",
+   "lease": null,
+   "yield": null,
+   "units": 75,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": true,
+    "record": false,
+    "returns_ok": true,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 2,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "mixed",
+   "read": true,
+   "checked": "5 Nov 2026",
+   "invited": null,
+   "q": [
+    "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2029: does progress on site match?",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 0,
+    "unverified": 3,
+    "contradicted": 0
+   },
+   "stage": "off-plan",
+   "delay": null,
+   "overdue": null,
+   "profile": 8
+  },
+  {
+   "id": "PAT-017",
+   "market": "Pattaya",
+   "country": "Thailand",
+   "region": "Pattaya",
+   "docs": false,
+   "plans": false,
+   "band": "Price not stated",
+   "done": null,
+   "title": null,
+   "lease": null,
+   "yield": null,
+   "units": null,
+   "checks": {
+    "permit": 0,
+    "escrow": null,
+    "progress": null,
+    "plans": false,
+    "record": false,
+    "returns_ok": false,
+    "researched": [
+     "permit",
+     "escrow",
+     "progress",
+     "plans",
+     "record",
+     "returns_ok"
+    ]
+   },
+   "score": 0,
+   "max": 6,
+   "flags": [],
+   "notes": [],
+   "tier": "caution",
+   "read": true,
+   "checked": "5 Nov 2026",
+   "invited": null,
+   "q": [
+    "Title type not stated: leasehold, freehold or a company structure?",
+    "No building permit mentioned: ask for the number before paying.",
+    "No deposit protection published: will your payments go into an escrow or trust account in your name?"
+   ],
+   "verified": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns_ok": "none"
+   },
+   "vscore": 0,
+   "claims": {
+    "verified": 1,
+    "unverified": 0,
+    "contradicted": 0
+   },
+   "stage": "under construction",
+   "delay": null,
+   "overdue": null,
+   "profile": null
+  },
+  {
    "id": "PER-001",
    "market": "Perth",
    "country": "Australia",
@@ -75304,29 +75792,29 @@
  ],
  "db": {
   "updated": "2026-11-05",
-  "projects": 1108,
+  "projects": 1116,
   "markets": 170,
   "countries": 96,
-  "sources": 6777,
-  "data_points": 31792,
+  "sources": 6819,
+  "data_points": 31937,
   "claims": {
-   "verified": 2642,
-   "unverified": 5262,
-   "contradicted": 1364
+   "verified": 2646,
+   "unverified": 5274,
+   "contradicted": 1367
   },
-  "claims_total": 9268,
-  "deep_profiles": 1108,
+  "claims_total": 9287,
+  "deep_profiles": 1116,
   "checks_by_level": {
    "registry": 547,
    "independent": 486,
-   "developer": 1979,
+   "developer": 1985,
    "contradicted": 103,
-   "none": 3533
+   "none": 3575
   },
-  "checks_rated": 6648,
+  "checks_rated": 6696,
   "stages": {
-   "off-plan": 467,
-   "under construction": 580,
+   "off-plan": 471,
+   "under construction": 584,
    "completed": 12
   },
   "all_six_public": 63,
@@ -75342,7 +75830,7 @@
  "seal": {
   "date": "2026-11-05",
   "count": 832,
-  "root": "77bda9c9ac56fd8fe78bc48c80f58b3fa303db96bb4a5db9f6ec8153d926ba10",
+  "root": "f7bddd5d8a047dd24265e00d4cb83947faf1e25b9348d562b7e048dec559eabf",
   "method": "root = sha256 of the lines \"ID SHA256\" (one per project with a fingerprint, sorted by id, each ending with a newline); each SHA256 is the hash of the developer page text as read by the agent; the root is timestamped in Bitcoin through OpenTimestamps",
   "stamped": true
  },
@@ -75369,6 +75857,24 @@
    "d": "2026-11-05",
    "k": "auto",
    "t": "+14 new projects found and checked by the daily research agent (Los Cabos, Costa Rica, Istanbul)",
+   "u": "/database"
+  },
+  {
+   "d": "2026-11-05",
+   "k": "auto",
+   "t": "+4 new projects found and checked by the daily research agent (Pattaya)",
+   "u": "/database"
+  },
+  {
+   "d": "2026-11-05",
+   "k": "auto",
+   "t": "+2 new projects found and checked by the daily research agent (Antalya, Pattaya)",
+   "u": "/database"
+  },
+  {
+   "d": "2026-11-05",
+   "k": "auto",
+   "t": "+2 new projects found and checked by the daily research agent (Antalya, Koh Samui)",
    "u": "/database"
   },
   {
@@ -75568,24 +76074,6 @@
    "k": "feature",
    "t": "Public log: one hash-chained line a day fixes the dataset, page fingerprints, site evidence and admin audit trail, timestamped in Bitcoin",
    "u": "/log/"
-  },
-  {
-   "d": "2026-11-02",
-   "k": "feature",
-   "t": "Merkle inclusion proofs: check that any one of 804 sealed page fingerprints is in the logged root, in your browser",
-   "u": "/verify/#proof"
-  },
-  {
-   "d": "2026-11-02",
-   "k": "feature",
-   "t": "Every open API answer carries the SHA-256 of the dataset it came from, with ETags for conditional requests",
-   "u": "/api/open"
-  },
-  {
-   "d": "2026-11-02",
-   "k": "feature",
-   "t": "Change feed API: every recorded change to a project field since any date",
-   "u": "/api/open/changes"
   }
  ]
 }
