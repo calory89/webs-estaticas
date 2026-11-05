@@ -65,15 +65,18 @@
     var res = x.result || x.record || x.data || x.entity || (x.fields && !Array.isArray(x.fields) ? x.fields : null) || {};
     var found = pick(x, ['found', 'match', 'matched']); if (found == null && typeof x.status === 'string' && x.status in STATUS) found = STATUS[x.status]; if (found == null) found = pick(res, ['found']); if (res.blocked || x.blocked) found = null;
     var qv = x.query && typeof x.query === 'object' ? x.query : null, sn = x.snapshot && typeof x.snapshot === 'object' ? x.snapshot : null;
-    var m0 = res && Array.isArray(res.matches) && res.matches[0] && typeof res.matches[0] === 'object' ? res.matches[0] : null;
+    // name searches (GLEIF) return candidates: only treat one as the record when its name shares a real word with the search
+    var m0 = null, nameSearch = res && Array.isArray(res.matches) && res.matches.length;
+    if (nameSearch) { var want = words(qv && qv.value || x.query || ''), best = 0; res.matches.forEach(function(m){ if (!m || typeof m !== 'object') return; var hit = words(m.legal_name).filter(function(w){ return want.indexOf(w) >= 0; }).length; if (hit > best) { best = hit; m0 = m; } }); }
     var fields = Array.isArray(x.fields) && !res.found ? x.fields.map(function(f){ return Array.isArray(f) ? [String(f[0]), String(f[1])] : [String(f.label || f.name || f.key || ''), String(f.value == null ? '' : f.value)]; }) : flat(res, '', [], 0);
     fields = fields.filter(function(f){ return f[0] && f[1] && f[1] !== 'null' && f[1].length < 400; }).slice(0, 24);
     var arc = x.archive && (x.archive.url || x.archive) || x.archive_url || x.snapshot_url || (sn && (sn.raw_url || sn.url)) || null;
     var h = pick(x, ['sha256', 'snapshot_sha256', 'hash']) || (sn && sn.sha256) || (x.seal && x.seal.sha256) || null;
     if (!arc && /^[0-9a-f]{64}$/.test(h || '')) arc = '/api/x/h/archive/' + h;
+    if (nameSearch && !m0 && found === true) { found = null; x = Object.assign({}, x, { note: 'The register returned ' + res.matches.length + ' entit' + (res.matches.length > 1 ? 'ies' : 'y') + ' for this name search, none with the same name. That proves nothing either way: many developers have no entry here.' }); }
     return { r: pick(x, ['register_name', 'register_label', 'source_name', 'source', 'register']) || 'Official register', id: pick(x, ['id', 'register', 'register_id']) || '',
       u: x.official_page || (m0 && m0.page) || (qv && qv.url) || pick(x, ['url', 'record_url', 'source_url', 'link', 'manual_check']), f: found === true || found === 'true' ? true : found === false || found === 'false' ? false : null,
-      sl: typeof x.status === 'string' && SLABEL[x.status] ? SLABEL[x.status] : '', man: x.manual_check || '',
+      sl: nameSearch && !m0 ? 'No matching name' : typeof x.status === 'string' && SLABEL[x.status] ? SLABEL[x.status] : '', man: x.manual_check || '',
       h: h, a: typeof arc === 'string' ? arc : null, at: pick(x, ['fetched_at', 'at', 'checked_at', 'time']) || (sn && sn.fetched_at), q: qv ? (qv.value != null ? String(qv.value) : null) : pick(x, ['query', 'q', 'number']),
       nm: (m0 && m0.legal_name) || pick(res, ['name', 'legal_name', 'entity_name', 'company_name', 'holder', 'owner', 'project_name']) || pick(x, ['name', 'entity_name']), st: pick(res, ['status', 'company_status', 'entity_status', 'abn_status', 'licence_status', 'permit_status', 'registration_status']) || (m0 && m0.status) || (x.status && !(x.status in STATUS) && !SLABEL[x.status] ? x.status : null),
       fl: fields, note: (function(n){ return n && /^sha256 is the SHA-256/.test(n) ? null : n; })(pick(x, ['error', 'note', 'message', 'reason'])), http: pick(x, ['http_status', 'status_code']) };
@@ -170,7 +173,7 @@
     var s = { k: 'chk', v: 1, q: q, u: url || '', at: now, t: now, proj: r.project || '', dev: r.developer || '', loc: r.location || '', att: r.attention || '', sum: String(r.summary || '').slice(0, 420),
       facts: [['Price from', r.price_from], ['Title', r.title_type], ['Lease', r.lease_years], ['Completion', r.completion], ['Return advertised', r.advertised_return], ['Permit claim', r.permit_claim]].filter(function(f){ return f[1]; }).map(function(f){ return [f[0], String(f[1]).slice(0, 90)]; }),
       qs: (r.questions || []).slice(0, 4).map(function(x){ return String(x).slice(0, 160); }), dsig: (desk && desk.signature && desk.signature.sha256) || '', dat: (desk && desk.analysed) || '',
-      reg: lk && lk.available ? (lk.items || []).slice(0, 4).map(function(i){ return { r: String(i.r).slice(0, 60), u: String(i.u || '').slice(0, 220), f: i.f, h: i.h || '', a: String(i.a || '').slice(0, 220), nm: String(i.nm || '').slice(0, 120), st: String(i.st || '').slice(0, 60), sl: i.sl || '', man: String(i.man || '').slice(0, 120), q: String(i.q || '').slice(0, 60), at: i.at || '', fl: (i.fl || []).slice(0, 10).map(function(f){ return [f[0].slice(0, 40), f[1].slice(0, 90)]; }) }; }) : null,
+      reg: lk && lk.available ? (lk.items || []).slice(0, 4).map(function(i){ return { r: String(i.r).slice(0, 100), u: String(i.u || '').slice(0, 220), f: i.f, h: i.h || '', a: String(i.a || '').slice(0, 220), nm: String(i.nm || '').slice(0, 120), st: String(i.st || '').slice(0, 60), sl: i.sl || '', man: String(i.man || '').slice(0, 120), q: String(i.q || '').slice(0, 60), at: i.at || '', fl: (i.fl || []).slice(0, 10).map(function(f){ return [f[0].slice(0, 40), f[1].slice(0, 160)]; }), note: String(i.note || '').slice(0, 200) }; }) : null,
       seal: lk && lk.seal || '', sealUrl: String(lk && lk.sealUrl || '').slice(0, 160), cmp: lk && lk.cmp ? lk.cmp.slice(0, 4).map(function(c){ return { field: c.field.slice(0, 30), agree: c.agree, w: c.w.slice(0, 80), r: c.r.slice(0, 80), src: String(c.src).slice(0, 60), note: String(c.note).slice(0, 160) }; }) : [], w: false, ch: [] };
     Object.assign(s, extra || {});
     var j = JSON.stringify(s);
