@@ -1787,7 +1787,7 @@
    "overdue": null,
    "profile": 15,
    "fp": {
-    "sha256": "7a464caf7ecbc6c43afb1119c2b69f3db2e8dbbca5875c83cc65593a8883f652",
+    "sha256": "ac585081282530a2e2e6a434dfbc0524c3d6e72f656565ad8fd71d9539f1e7e1",
     "date": "2026-11-05"
    },
    "history": [
@@ -4365,7 +4365,7 @@
    "overdue": null,
    "profile": 13,
    "fp": {
-    "sha256": "4ee2bbfd65c8d558495e3c75542297128b8261c08be211c03915f4496c572cd0",
+    "sha256": "05cbd4bddce99560945c1d7e7ae2f6b634b11870206e8b079f0f7d699cca9399",
     "date": "2026-11-05"
    },
    "history": [
@@ -4635,7 +4635,7 @@
    "overdue": null,
    "profile": 11,
    "fp": {
-    "sha256": "785af84ef0df5278f77801b37f83f649ce370fcaa1e87810438ed178a2e78d7c",
+    "sha256": "955eeef63ae747ac4d65ea44f50421a44318d611f0a18b6fb9bce0b66917216c",
     "date": "2026-11-05"
    },
    "history": [
@@ -22127,7 +22127,7 @@
    "profile": null
   },
   {
-   "id": "DA -001",
+   "id": "DAD-001",
    "market": "Da Nang",
    "country": "Vietnam",
    "region": "Da Nang",
@@ -31786,7 +31786,7 @@
    ]
   },
   {
-   "id": "EL -001",
+   "id": "SLV-001",
    "market": "El Salvador",
    "country": "El Salvador",
    "region": "El Salvador",
@@ -35808,7 +35808,7 @@
    }
   },
   {
-   "id": "HO -001",
+   "id": "SGN-001",
    "market": "Ho Chi Minh City",
    "country": "Vietnam",
    "region": "Ho Chi Minh City",
@@ -35883,7 +35883,7 @@
    ]
   },
   {
-   "id": "HO -002",
+   "id": "SGN-002",
    "market": "Ho Chi Minh City",
    "country": "Vietnam",
    "region": "Ho Chi Minh City",
@@ -74439,7 +74439,7 @@
  "seal": {
   "date": "2026-11-05",
   "count": 815,
-  "root": "4d7651c3733cc8766f23c28b055a9612fef75408968c66d01efbe103e2c831e0",
+  "root": "0a137748b4a1363d0fc00a7f70b4934daf285ab6989edd3189f40cd5e6654713",
   "method": "root = sha256 of the lines \"ID SHA256\" (one per project with a fingerprint, sorted by id, each ending with a newline); each SHA256 is the hash of the developer page text as read by the agent; the root is timestamped in Bitcoin through OpenTimestamps",
   "stamped": true
  },
@@ -74472,6 +74472,12 @@
    "d": "2026-11-05",
    "k": "auto",
    "t": "48 changes detected on developer pages by the research agent",
+   "u": "/database"
+  },
+  {
+   "d": "2026-11-05",
+   "k": "auto",
+   "t": "1 change detected on developer pages by the research agent",
    "u": "/database"
   },
   {
@@ -74677,12 +74683,6 @@
    "k": "feature",
    "t": "Trust Scores reproduced every day from the open scoring code and the open dataset: 884 of 884 match",
    "u": "/status"
-  },
-  {
-   "d": "2026-11-02",
-   "k": "feature",
-   "t": "Recycled-photo detection: a perceptual hash of every site photo is compared with all other cases",
-   "u": "/agents"
   }
  ]
 }
