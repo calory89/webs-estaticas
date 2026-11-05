@@ -15,14 +15,14 @@
   {
    "id": "https://kolaboro.com/shipping/#d-2026-11-05",
    "url": "https://kolaboro.com/shipping/#d-2026-11-05",
-   "title": "5 November 2026: 62 changes shipped so far",
+   "title": "5 November 2026: 72 changes shipped so far",
    "content_text": "- Image-index.json and the technology render check no longer show developer domains or project names (anonymity rule); matches link to the image check tool's anonymous ids\n- Sitemap index split by type and language, country hubs and guides, rankings, embeds, SEO dashboard, live llms.txt, IndexNow key, HEAD = GET, robots for AI crawlers\n- Buyer cycle: one-box check with register lookup, login gate and return, dashboard checks, watch, permit upload, private report with QR, pay and site visit path\n- Translation engine never rewrites a text to itself (fixes a hang on translated check pages during a review), place names and dates inside translated sentences\n- Buyer cycle uses the live /api/kb/lookup (register-only pass after the desk review, with developer and permit), legacy registers as fallback\n- Hold back sw.js and /saved/ (net zero files while the Pages file limit is fixed); Save offline button appears only once /sw.js is published\n\nDay in progress: summary taken from the commit subjects so far.",
    "content_html": "<ul><li>Image-index.json and the technology render check no longer show developer domains or project names (anonymity rule); matches link to the image check tool&#x27;s anonymous ids</li><li>Sitemap index split by type and language, country hubs and guides, rankings, embeds, SEO dashboard, live llms.txt, IndexNow key, HEAD = GET, robots for AI crawlers</li><li>Buyer cycle: one-box check with register lookup, login gate and return, dashboard checks, watch, permit upload, private report with QR, pay and site visit path</li><li>Translation engine never rewrites a text to itself (fixes a hang on translated check pages during a review), place names and dates inside translated sentences</li><li>Buyer cycle uses the live /api/kb/lookup (register-only pass after the desk review, with developer and permit), legacy registers as fallback</li><li>Hold back sw.js and /saved/ (net zero files while the Pages file limit is fixed); Save offline button appears only once /sw.js is published</li></ul><p>Day in progress: summary taken from the commit subjects so far.</p>",
    "date_published": "2026-11-05T00:00:00Z",
-   "date_modified": "2026-11-05T15:30:11Z",
+   "date_modified": "2026-11-05T21:55:09Z",
    "_kolaboro": {
-    "ships": 62,
-    "data_updates": 78,
+    "ships": 72,
+    "data_updates": 136,
     "method": "so-far"
    }
   },
