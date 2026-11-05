@@ -71,13 +71,13 @@
 <div id="exout" class="ex-out" aria-live="polite"></div>
 </div></section>
 <section class="y-sec" id="exask" hidden aria-labelledby="h-ask"><div class="wrap">
-<h2 id="h-ask">Ask about <span id="askid">this project</span></h2>
+<h2 id="h-ask">Ask about <span id="insid">this project</span></h2>
 <p class="lead">Ask in plain words. An AI model answers only from this project's public evidence: its record, promises, timeline, hazards and register or satellite checks. Code then checks that each citation points at a real evidence line and quotes text found in it, and that every number in the answer appears in the cited lines. If not, no answer is shown. Questions about anything else are refused.</p>
-<form class="y-box" id="askf" novalidate><label for="askq">Your question</label>
-<textarea id="askq" class="y-ta" maxlength="300" placeholder="Has the handover date moved?"></textarea>
+<form class="y-box" id="insf" novalidate><label for="insq">Your question</label>
+<textarea id="insq" class="y-ta" maxlength="300" placeholder="Has the handover date moved?"></textarea>
 <div class="ex-sugg"><button type="button" data-q="Has the handover date moved?">Has the handover date moved?</button><button type="button" data-q="Is the permit number published?">Is the permit number published?</button><button type="button" data-q="Is there deposit protection?">Is there deposit protection?</button><button type="button" data-q="What natural hazards are near the site?">What hazards are near the site?</button></div>
 <div class="y-row"><button class="btn btn-hi btn-sm" type="submit">Ask</button></div>
-<div id="asko" class="y-out" aria-live="polite"></div>
+<div id="inso" class="y-out" aria-live="polite"></div>
 <p class="y-small" style="margin-top:10px">Limited to 12 AI questions an hour per network, shared with the other AI tools on this site; repeated questions are answered from a cache. Not financial or legal advice.</p></form>
 </div></section>
 <section class="y-sec" aria-labelledby="h-m"><div class="wrap">
@@ -120,7 +120,7 @@
       '<p class="y-small">Method: <a href="/how-we-score">how we score</a>, <a href="/database">what each source level means</a>, <a href="/open/scoring.py">scoring.py</a> (open source). ' +
       (o.matches_published ? 'Recomputed here from the public record: matches the published score.' : '<b>Recomputed here, this differs from the published score; please <a href="/corrections">report it</a>.</b>') + ' Data updated ' + esc(o.updated) + '. ' + esc(o.language_note) + '</p>' +
       '<div class="ex-acts"><a class="btn btn-line btn-sm" href="/p/' + encodeURIComponent(o.id) + '/">Open the project file</a><a class="btn btn-line btn-sm" href="/m/' + encodeURIComponent(String(o.market).toLowerCase().replace(/\s+/g, '-')) + '/">' + esc(o.market) + ' market file</a><a class="btn btn-line btn-sm" href="/api/x/ins/explain?id=' + encodeURIComponent(o.id) + '">JSON</a></div>';
-    askSec.hidden = false; $('askid').textContent = o.id;
+    askSec.hidden = false; $('insid').textContent = o.id;
     setMeta('Why ' + o.id + ' scores ' + o.score + ' of ' + o.max + ': score explained | Kolaboro', o.summary.slice(0, 300));
   }
   function load(x){
@@ -137,7 +137,7 @@
     load(v);
   });
   /* ---- ask about this project ---- */
-  var af = $('askf'), aq = $('askq'), ao = $('asko'), ab = af ? af.querySelector('button[type=submit]') : null;
+  var af = $('insf'), aq = $('insq'), ao = $('inso'), ab = af ? af.querySelector('button[type=submit]') : null;
   function answer(o){
     var c = (o.citations || []).map(function(x){ return '<li><code>' + esc(x.e) + '</code> <span class="y-small">' + esc(x.field) + ':</span> ' + esc(x.value) + '</li>'; }).join('');
     ao.innerHTML = '<div class="ex-ans ' + (o.answerable ? 'yes' : 'no') + '"><p>' + esc(o.answer) + '</p>' +
