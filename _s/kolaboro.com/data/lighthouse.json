@@ -1,7 +1,7 @@
 {
- "generated": "2026-11-04T12:27:45.602Z",
+ "generated": "2026-11-05T12:42:32.711Z",
  "tool": "Lighthouse 13.5.0",
- "run": "https://github.com/calory89/webs-estaticas/actions/runs/41828035823",
+ "run": "https://github.com/calory89/webs-estaticas/actions/runs/42027919019",
  "method": "One Lighthouse run per page and form factor on a GitHub Actions runner (ubuntu-latest), mobile with Lighthouse's default throttling and desktop with --preset=desktop. Scores move a few points between runs, so each threshold is the first measured score minus a margin.",
  "pages": 20,
  "baseline": false,
@@ -14,8 +14,8 @@
  "summary": {
   "mobile": {
    "performance": {
-    "average": 84,
-    "lowest": 62,
+    "average": 78,
+    "lowest": 61,
     "pages_at_100": 0
    },
    "accessibility": {
@@ -36,9 +36,9 @@
   },
   "desktop": {
    "performance": {
-    "average": 100,
-    "lowest": 96,
-    "pages_at_100": 16
+    "average": 99,
+    "lowest": 91,
+    "pages_at_100": 6
    },
    "accessibility": {
     "average": 100,
@@ -63,17 +63,17 @@
    "page": "/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 70,
+    "performance": 78,
     "accessibility": 100,
     "best-practices": 77,
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 2533,
-    "fcp_ms": 2090,
-    "tbt_ms": 1177,
-    "cls": 0,
-    "si_ms": 3499
+    "lcp_ms": 2028,
+    "fcp_ms": 1908,
+    "tbt_ms": 872,
+    "cls": 0.001,
+    "si_ms": 1908
    },
    "failing_audits": [
     "third-party-cookies",
@@ -84,17 +84,17 @@
    "page": "/check/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 88,
+    "performance": 77,
     "accessibility": 100,
     "best-practices": 77,
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 2416,
-    "fcp_ms": 1744,
-    "tbt_ms": 369,
+    "lcp_ms": 2724,
+    "fcp_ms": 1937,
+    "tbt_ms": 724,
     "cls": 0.001,
-    "si_ms": 1744
+    "si_ms": 1937
    },
    "failing_audits": [
     "third-party-cookies",
@@ -105,17 +105,17 @@
    "page": "/database/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 89,
+    "performance": 76,
     "accessibility": 100,
     "best-practices": 77,
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 2287,
-    "fcp_ms": 1855,
-    "tbt_ms": 352,
+    "lcp_ms": 2421,
+    "fcp_ms": 1875,
+    "tbt_ms": 903,
     "cls": 0.001,
-    "si_ms": 1855
+    "si_ms": 1875
    },
    "failing_audits": [
     "third-party-cookies",
@@ -132,11 +132,11 @@
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 2249,
-    "fcp_ms": 1758,
-    "tbt_ms": 750,
-    "cls": 0.007,
-    "si_ms": 1758
+    "lcp_ms": 2403,
+    "fcp_ms": 1668,
+    "tbt_ms": 721,
+    "cls": 0.02,
+    "si_ms": 1668
    },
    "failing_audits": [
     "third-party-cookies",
@@ -148,17 +148,17 @@
    "page": "/cases/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 77,
+    "performance": 75,
     "accessibility": 100,
     "best-practices": 77,
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 3467,
-    "fcp_ms": 2022,
-    "tbt_ms": 484,
-    "cls": 0.001,
-    "si_ms": 2022
+    "lcp_ms": 2359,
+    "fcp_ms": 1966,
+    "tbt_ms": 946,
+    "cls": 0.047,
+    "si_ms": 1966
    },
    "failing_audits": [
     "third-party-cookies",
@@ -169,17 +169,17 @@
    "page": "/about/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 86,
+    "performance": 79,
     "accessibility": 100,
     "best-practices": 77,
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 2272,
-    "fcp_ms": 1604,
-    "tbt_ms": 416,
+    "lcp_ms": 2357,
+    "fcp_ms": 1690,
+    "tbt_ms": 658,
     "cls": 0.076,
-    "si_ms": 1604
+    "si_ms": 1690
    },
    "failing_audits": [
     "third-party-cookies",
@@ -190,17 +190,17 @@
    "page": "/p/BALI-014",
    "form_factor": "mobile",
    "scores": {
-    "performance": 89,
+    "performance": 78,
     "accessibility": 97,
     "best-practices": 77,
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 2218,
-    "fcp_ms": 1838,
-    "tbt_ms": 362,
+    "lcp_ms": 2315,
+    "fcp_ms": 1822,
+    "tbt_ms": 801,
     "cls": 0.001,
-    "si_ms": 1838
+    "si_ms": 1822
    },
    "failing_audits": [
     "third-party-cookies",
@@ -212,17 +212,17 @@
    "page": "/verify/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 86,
+    "performance": 79,
     "accessibility": 100,
     "best-practices": 77,
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 2389,
-    "fcp_ms": 1989,
-    "tbt_ms": 426,
+    "lcp_ms": 2561,
+    "fcp_ms": 2009,
+    "tbt_ms": 663,
     "cls": 0.001,
-    "si_ms": 1989
+    "si_ms": 2009
    },
    "failing_audits": [
     "third-party-cookies",
@@ -233,17 +233,17 @@
    "page": "/log/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 88,
+    "performance": 78,
     "accessibility": 100,
     "best-practices": 77,
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 2428,
-    "fcp_ms": 1904,
-    "tbt_ms": 349,
-    "cls": 0.011,
-    "si_ms": 1904
+    "lcp_ms": 2508,
+    "fcp_ms": 2029,
+    "tbt_ms": 690,
+    "cls": 0.001,
+    "si_ms": 2029
    },
    "failing_audits": [
     "third-party-cookies",
@@ -254,17 +254,17 @@
    "page": "/docs/api/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 84,
+    "performance": 74,
     "accessibility": 100,
     "best-practices": 77,
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 2403,
-    "fcp_ms": 1676,
-    "tbt_ms": 327,
+    "lcp_ms": 2220,
+    "fcp_ms": 1685,
+    "tbt_ms": 776,
     "cls": 0.143,
-    "si_ms": 1676
+    "si_ms": 1685
    },
    "failing_audits": [
     "third-party-cookies",
@@ -275,21 +275,22 @@
    "page": "/status/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 62,
+    "performance": 61,
     "accessibility": 97,
     "best-practices": 77,
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 3294,
-    "fcp_ms": 2001,
-    "tbt_ms": 454,
-    "cls": 0.363,
-    "si_ms": 2001
+    "lcp_ms": 2654,
+    "fcp_ms": 2011,
+    "tbt_ms": 715,
+    "cls": 0.329,
+    "si_ms": 2011
    },
    "failing_audits": [
     "third-party-cookies",
     "target-size",
+    "td-has-header",
     "inspector-issues"
    ]
   },
@@ -297,17 +298,17 @@
    "page": "/engineering/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 86,
+    "performance": 80,
     "accessibility": 100,
     "best-practices": 77,
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 2406,
-    "fcp_ms": 1640,
-    "tbt_ms": 457,
+    "lcp_ms": 2425,
+    "fcp_ms": 1707,
+    "tbt_ms": 655,
     "cls": 0.001,
-    "si_ms": 1640
+    "si_ms": 1707
    },
    "failing_audits": [
     "third-party-cookies",
@@ -318,17 +319,17 @@
    "page": "/security/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 81,
+    "performance": 75,
     "accessibility": 100,
     "best-practices": 77,
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 2417,
-    "fcp_ms": 1708,
-    "tbt_ms": 400,
+    "lcp_ms": 2382,
+    "fcp_ms": 1658,
+    "tbt_ms": 671,
     "cls": 0.149,
-    "si_ms": 1708
+    "si_ms": 1658
    },
    "failing_audits": [
     "third-party-cookies",
@@ -339,17 +340,17 @@
    "page": "/how-we-score/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 90,
+    "performance": 75,
     "accessibility": 100,
     "best-practices": 77,
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 2247,
-    "fcp_ms": 1708,
-    "tbt_ms": 353,
-    "cls": 0,
-    "si_ms": 1708
+    "lcp_ms": 2402,
+    "fcp_ms": 1696,
+    "tbt_ms": 675,
+    "cls": 0.134,
+    "si_ms": 1696
    },
    "failing_audits": [
     "third-party-cookies",
@@ -360,17 +361,17 @@
    "page": "/checklist/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 89,
+    "performance": 81,
     "accessibility": 100,
     "best-practices": 77,
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 2252,
-    "fcp_ms": 1670,
-    "tbt_ms": 369,
+    "lcp_ms": 2350,
+    "fcp_ms": 1642,
+    "tbt_ms": 656,
     "cls": 0.001,
-    "si_ms": 1670
+    "si_ms": 1642
    },
    "failing_audits": [
     "third-party-cookies",
@@ -381,17 +382,17 @@
    "page": "/trust/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 89,
+    "performance": 81,
     "accessibility": 100,
     "best-practices": 77,
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 2237,
-    "fcp_ms": 1689,
-    "tbt_ms": 368,
-    "cls": 0.005,
-    "si_ms": 1689
+    "lcp_ms": 2382,
+    "fcp_ms": 1620,
+    "tbt_ms": 651,
+    "cls": 0.001,
+    "si_ms": 1620
    },
    "failing_audits": [
     "third-party-cookies",
@@ -402,17 +403,17 @@
    "page": "/prices/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 86,
+    "performance": 77,
     "accessibility": 100,
     "best-practices": 77,
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 2386,
-    "fcp_ms": 1804,
-    "tbt_ms": 461,
+    "lcp_ms": 2574,
+    "fcp_ms": 1796,
+    "tbt_ms": 788,
     "cls": 0.001,
-    "si_ms": 1804
+    "si_ms": 1796
    },
    "failing_audits": [
     "third-party-cookies",
@@ -423,17 +424,17 @@
    "page": "/bali/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 90,
+    "performance": 82,
     "accessibility": 100,
     "best-practices": 77,
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 2221,
-    "fcp_ms": 1644,
-    "tbt_ms": 348,
+    "lcp_ms": 2385,
+    "fcp_ms": 1677,
+    "tbt_ms": 608,
     "cls": 0.001,
-    "si_ms": 1644
+    "si_ms": 1677
    },
    "failing_audits": [
     "third-party-cookies",
@@ -444,17 +445,17 @@
    "page": "/research/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 85,
+    "performance": 77,
     "accessibility": 100,
     "best-practices": 77,
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 2384,
-    "fcp_ms": 1701,
-    "tbt_ms": 482,
+    "lcp_ms": 2565,
+    "fcp_ms": 1729,
+    "tbt_ms": 798,
     "cls": 0.013,
-    "si_ms": 1701
+    "si_ms": 1729
    },
    "failing_audits": [
     "third-party-cookies",
@@ -465,17 +466,17 @@
    "page": "/tools/",
    "form_factor": "mobile",
    "scores": {
-    "performance": 94,
+    "performance": 88,
     "accessibility": 100,
     "best-practices": 77,
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 2402,
-    "fcp_ms": 1870,
-    "tbt_ms": 168,
+    "lcp_ms": 2370,
+    "fcp_ms": 1850,
+    "tbt_ms": 374,
     "cls": 0.001,
-    "si_ms": 1870
+    "si_ms": 1850
    },
    "failing_audits": [
     "third-party-cookies",
@@ -486,17 +487,17 @@
    "page": "/",
    "form_factor": "desktop",
    "scores": {
-    "performance": 100,
+    "performance": 99,
     "accessibility": 100,
     "best-practices": 77,
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 749,
-    "fcp_ms": 529,
-    "tbt_ms": 15,
-    "cls": 0.004,
-    "si_ms": 700
+    "lcp_ms": 777,
+    "fcp_ms": 543,
+    "tbt_ms": 50,
+    "cls": 0.016,
+    "si_ms": 858
    },
    "failing_audits": [
     "third-party-cookies",
@@ -507,17 +508,17 @@
    "page": "/check/",
    "form_factor": "desktop",
    "scores": {
-    "performance": 100,
+    "performance": 99,
     "accessibility": 100,
     "best-practices": 77,
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 676,
-    "fcp_ms": 562,
-    "tbt_ms": 20,
-    "cls": 0.002,
-    "si_ms": 571
+    "lcp_ms": 743,
+    "fcp_ms": 547,
+    "tbt_ms": 58,
+    "cls": 0.003,
+    "si_ms": 549
    },
    "failing_audits": [
     "third-party-cookies",
@@ -534,11 +535,11 @@
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 752,
-    "fcp_ms": 551,
-    "tbt_ms": 14,
-    "cls": 0.002,
-    "si_ms": 551
+    "lcp_ms": 786,
+    "fcp_ms": 562,
+    "tbt_ms": 41,
+    "cls": 0.005,
+    "si_ms": 585
    },
    "failing_audits": [
     "third-party-cookies",
@@ -555,11 +556,11 @@
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 673,
-    "fcp_ms": 489,
-    "tbt_ms": 46,
-    "cls": 0.003,
-    "si_ms": 489
+    "lcp_ms": 629,
+    "fcp_ms": 455,
+    "tbt_ms": 51,
+    "cls": 0.007,
+    "si_ms": 458
    },
    "failing_audits": [
     "third-party-cookies",
@@ -571,17 +572,17 @@
    "page": "/cases/",
    "form_factor": "desktop",
    "scores": {
-    "performance": 100,
+    "performance": 99,
     "accessibility": 100,
     "best-practices": 77,
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 635,
-    "fcp_ms": 568,
-    "tbt_ms": 18,
-    "cls": 0.034,
-    "si_ms": 568
+    "lcp_ms": 636,
+    "fcp_ms": 547,
+    "tbt_ms": 52,
+    "cls": 0.068,
+    "si_ms": 611
    },
    "failing_audits": [
     "third-party-cookies",
@@ -592,17 +593,17 @@
    "page": "/about/",
    "form_factor": "desktop",
    "scores": {
-    "performance": 100,
+    "performance": 91,
     "accessibility": 100,
     "best-practices": 77,
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 613,
+    "lcp_ms": 633,
     "fcp_ms": 515,
-    "tbt_ms": 16,
-    "cls": 0.023,
-    "si_ms": 515
+    "tbt_ms": 240,
+    "cls": 0.03,
+    "si_ms": 581
    },
    "failing_audits": [
     "third-party-cookies",
@@ -619,11 +620,11 @@
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 1095,
-    "fcp_ms": 503,
-    "tbt_ms": 36,
-    "cls": 0.002,
-    "si_ms": 503
+    "lcp_ms": 1068,
+    "fcp_ms": 489,
+    "tbt_ms": 83,
+    "cls": 0.005,
+    "si_ms": 605
    },
    "failing_audits": [
     "third-party-cookies",
@@ -641,11 +642,11 @@
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 727,
-    "fcp_ms": 556,
-    "tbt_ms": 23,
-    "cls": 0.002,
-    "si_ms": 556
+    "lcp_ms": 733,
+    "fcp_ms": 530,
+    "tbt_ms": 59,
+    "cls": 0.004,
+    "si_ms": 576
    },
    "failing_audits": [
     "third-party-cookies",
@@ -656,17 +657,17 @@
    "page": "/log/",
    "form_factor": "desktop",
    "scores": {
-    "performance": 100,
+    "performance": 97,
     "accessibility": 100,
     "best-practices": 77,
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 695,
-    "fcp_ms": 546,
-    "tbt_ms": 33,
-    "cls": 0.002,
-    "si_ms": 546
+    "lcp_ms": 740,
+    "fcp_ms": 527,
+    "tbt_ms": 137,
+    "cls": 0.005,
+    "si_ms": 539
    },
    "failing_audits": [
     "third-party-cookies",
@@ -677,17 +678,17 @@
    "page": "/docs/api/",
    "form_factor": "desktop",
    "scores": {
-    "performance": 100,
+    "performance": 99,
     "accessibility": 100,
     "best-practices": 77,
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 646,
-    "fcp_ms": 520,
-    "tbt_ms": 53,
-    "cls": 0.036,
-    "si_ms": 520
+    "lcp_ms": 685,
+    "fcp_ms": 507,
+    "tbt_ms": 73,
+    "cls": 0.038,
+    "si_ms": 528
    },
    "failing_audits": [
     "third-party-cookies",
@@ -704,14 +705,15 @@
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 857,
-    "fcp_ms": 557,
-    "tbt_ms": 25,
-    "cls": 0.102,
-    "si_ms": 693
+    "lcp_ms": 858,
+    "fcp_ms": 559,
+    "tbt_ms": 49,
+    "cls": 0.107,
+    "si_ms": 679
    },
    "failing_audits": [
     "third-party-cookies",
+    "td-has-header",
     "inspector-issues"
    ]
   },
@@ -719,17 +721,17 @@
    "page": "/engineering/",
    "form_factor": "desktop",
    "scores": {
-    "performance": 100,
+    "performance": 99,
     "accessibility": 100,
     "best-practices": 77,
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 681,
-    "fcp_ms": 495,
-    "tbt_ms": 25,
-    "cls": 0.002,
-    "si_ms": 590
+    "lcp_ms": 709,
+    "fcp_ms": 509,
+    "tbt_ms": 89,
+    "cls": 0.005,
+    "si_ms": 698
    },
    "failing_audits": [
     "third-party-cookies",
@@ -746,11 +748,11 @@
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 669,
-    "fcp_ms": 516,
-    "tbt_ms": 42,
-    "cls": 0.044,
-    "si_ms": 516
+    "lcp_ms": 620,
+    "fcp_ms": 511,
+    "tbt_ms": 52,
+    "cls": 0.045,
+    "si_ms": 511
    },
    "failing_audits": [
     "third-party-cookies",
@@ -761,17 +763,17 @@
    "page": "/how-we-score/",
    "form_factor": "desktop",
    "scores": {
-    "performance": 100,
+    "performance": 99,
     "accessibility": 100,
     "best-practices": 77,
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 645,
-    "fcp_ms": 496,
-    "tbt_ms": 22,
+    "lcp_ms": 633,
+    "fcp_ms": 484,
+    "tbt_ms": 89,
     "cls": 0.034,
-    "si_ms": 496
+    "si_ms": 506
    },
    "failing_audits": [
     "third-party-cookies",
@@ -788,11 +790,11 @@
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 681,
-    "fcp_ms": 499,
-    "tbt_ms": 40,
-    "cls": 0.002,
-    "si_ms": 499
+    "lcp_ms": 610,
+    "fcp_ms": 506,
+    "tbt_ms": 60,
+    "cls": 0.007,
+    "si_ms": 506
    },
    "failing_audits": [
     "third-party-cookies",
@@ -803,17 +805,17 @@
    "page": "/trust/",
    "form_factor": "desktop",
    "scores": {
-    "performance": 100,
+    "performance": 99,
     "accessibility": 100,
     "best-practices": 77,
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 641,
-    "fcp_ms": 519,
-    "tbt_ms": 25,
-    "cls": 0.002,
-    "si_ms": 519
+    "lcp_ms": 666,
+    "fcp_ms": 507,
+    "tbt_ms": 72,
+    "cls": 0.005,
+    "si_ms": 603
    },
    "failing_audits": [
     "third-party-cookies",
@@ -824,17 +826,17 @@
    "page": "/prices/",
    "form_factor": "desktop",
    "scores": {
-    "performance": 99,
+    "performance": 98,
     "accessibility": 100,
     "best-practices": 77,
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 692,
-    "fcp_ms": 516,
-    "tbt_ms": 22,
-    "cls": 0.053,
-    "si_ms": 516
+    "lcp_ms": 698,
+    "fcp_ms": 484,
+    "tbt_ms": 101,
+    "cls": 0.057,
+    "si_ms": 504
    },
    "failing_audits": [
     "third-party-cookies",
@@ -851,11 +853,11 @@
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 678,
-    "fcp_ms": 513,
-    "tbt_ms": 32,
-    "cls": 0,
-    "si_ms": 513
+    "lcp_ms": 675,
+    "fcp_ms": 493,
+    "tbt_ms": 51,
+    "cls": 0.005,
+    "si_ms": 507
    },
    "failing_audits": [
     "third-party-cookies",
@@ -866,17 +868,17 @@
    "page": "/research/",
    "form_factor": "desktop",
    "scores": {
-    "performance": 100,
+    "performance": 99,
     "accessibility": 100,
     "best-practices": 77,
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 716,
-    "fcp_ms": 518,
-    "tbt_ms": 28,
-    "cls": 0.017,
-    "si_ms": 518
+    "lcp_ms": 663,
+    "fcp_ms": 449,
+    "tbt_ms": 88,
+    "cls": 0.052,
+    "si_ms": 504
    },
    "failing_audits": [
     "third-party-cookies",
@@ -893,11 +895,11 @@
     "seo": 100
    },
    "metrics": {
-    "lcp_ms": 705,
-    "fcp_ms": 516,
-    "tbt_ms": 0,
-    "cls": 0.002,
-    "si_ms": 516
+    "lcp_ms": 685,
+    "fcp_ms": 498,
+    "tbt_ms": 6,
+    "cls": 0.005,
+    "si_ms": 557
    },
    "failing_audits": [
     "third-party-cookies",
