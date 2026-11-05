@@ -466,7 +466,12 @@ def main():
     changes = load(os.path.join(DATA, 'changes.json'), [])
     runs = load(os.path.join(DATA, 'runs.json'), [])
     run = {"date": TODAY, "mode": "ai" if KEY else "seed", "pages_ok": 0, "pages_failed": 0, "changes": 0, "model": None}
-    for p in projects:
+    # read order only (public ids come from file order elsewhere): never-read projects first, then the least recently checked,
+    # so a run that stops at the call cap still reaches new projects instead of always re-reading the start of the list
+    def _order(p):
+        prev = latest.get(p['slug'], {})
+        return (prev.get('source') == 'ai', prev.get('checked') or '')
+    for p in sorted(projects, key=_order):
         prev = latest.get(p['slug'], {})
         if not KEY:
             if not prev.get('claims'): latest[p['slug']] = {"name": p['name'], "url": p['url'], "market": p.get('market', 'Bali'), "claims": from_seed(p['seed']), "source": "seed", "checked": TODAY}
