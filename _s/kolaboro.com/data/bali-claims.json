@@ -1,11 +1,11 @@
 {
- "updated": "2026-11-04",
+ "updated": "2026-11-05",
  "market": "Bali",
  "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
  "projects": 76,
  "title": {
-  "leasehold": 37,
-  "known": 42
+  "leasehold": 36,
+  "known": 41
  },
  "lease": {
   "known": 30,
@@ -47,13 +47,6 @@
   "unknown": 34
  },
  "runs": [
-  {
-   "date": "2026-11-02",
-   "mode": "ai",
-   "pages_ok": 782,
-   "pages_failed": 102,
-   "changes": 30
-  },
   {
    "date": "2026-11-02",
    "mode": "ai",
@@ -130,6 +123,13 @@
    "pages_ok": 656,
    "pages_failed": 78,
    "changes": 14
+  },
+  {
+   "date": "2026-11-05",
+   "mode": "ai",
+   "pages_ok": 543,
+   "pages_failed": 75,
+   "changes": 54
   }
  ]
 }
