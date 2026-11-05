@@ -754,9 +754,12 @@ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.c
       var m = b.parentNode.querySelector('.kx-offm'); if (m) m.textContent = 'Could not save. Your browser may block offline storage (private window or storage full).';
     });
   }
+  // the button appears only once /sw.js is published (it is held back while the Pages file limit is fixed)
+  var swOk = null;
+  function swReady() { return swOk || (swOk = fetch('/sw.js', { method: 'HEAD', cache: 'no-store' }).then(function (r) { return r.ok && /javascript/.test(r.headers.get('content-type') || ''); }).catch(function () { return false; })); }
   function offButton(meta, host) {
     if (!canOff || !host) return null;
-    var b = btn('Save offline'); b.setAttribute('data-ev', 'save_offline_click'); b.setAttribute('aria-pressed', 'false');
+    var b = btn('Save offline'); b.hidden = true; swReady().then(function (ok) { b.hidden = !ok; }); b.setAttribute('data-ev', 'save_offline_click'); b.setAttribute('aria-pressed', 'false');
     b.title = 'Keep a copy on this device to read without a connection';
     host.appendChild(b);
     var m = D.createElement('span'); m.className = 'kx-offm'; m.setAttribute('role', 'status'); host.appendChild(m);
@@ -775,7 +778,7 @@ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.c
   // guides: a save button under the introduction
   if (/^\/guides\/[^/]+\/?$/.test(path)) {
     var gl = D.querySelector('.phero .wrap');
-    if (gl) { var row = D.createElement('div'); row.className = 'kx-off'; gl.appendChild(row); offButton({ title: ((D.querySelector('h1') || {}).textContent || D.title).trim(), kind: 'guide' }, row); if (!row.firstChild) row.remove(); }
+    if (gl) { var row = D.createElement('div'); row.className = 'kx-off'; row.hidden = true; gl.appendChild(row); swReady().then(function (ok) { row.hidden = !ok; }); offButton({ title: ((D.querySelector('h1') || {}).textContent || D.title).trim(), kind: 'guide' }, row); if (!row.firstChild) row.remove(); }
   }
 
   /* ---------- project page: share, save offline, print scorecard ---------- */
