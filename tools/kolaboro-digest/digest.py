@@ -483,7 +483,7 @@ CSS = '''<style>
 .dg-intro{font-size:1.08rem;line-height:1.6;max-width:70ch;margin-top:18px}
 .hm{border-collapse:separate;border-spacing:2px;margin-top:16px;font-size:.9rem;min-width:560px}
 .hm th{font-size:.76rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);text-align:center;padding:6px 4px;font-weight:700}
-.hm th.m,.hm td.m{text-align:left;white-space:nowrap;padding-right:10px}.hm td.m a{color:var(--ink);font-weight:700}
+.hm th.m{text-align:left;white-space:nowrap;padding-right:10px;text-transform:none;letter-spacing:0;font-size:.9rem}.hm th.m a{color:var(--ink);font-weight:700}.hm td.t{font-weight:700;color:var(--ink)}
 .hm td.c{text-align:center;padding:0;border-radius:4px;min-width:64px}
 .hm td.c a,.hm td.c span{display:flex;align-items:center;justify-content:center;min-height:40px;text-decoration:none;color:var(--ink);font-weight:700;font-variant-numeric:tabular-nums}
 .hm td.c span{color:var(--muted);font-weight:400}.hm td.c a:hover{outline:2px solid var(--ink);border-radius:4px}
@@ -492,7 +492,7 @@ CSS = '''<style>
 .hm-key i{display:inline-block;width:22px;height:14px;border-radius:3px;vertical-align:-2px;margin-right:4px}
 .hm-tabs{display:flex;gap:8px;margin-top:16px}.hm-tabs button{min-height:44px;padding:0 16px;border-radius:999px;border:1px solid var(--line);background:var(--card,#fff);font:inherit;font-weight:700;cursor:pointer;color:var(--ink)}
 .hm-tabs button[aria-pressed=true]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-.hm-list{margin-top:16px;background:var(--card,#fff);border:1px solid var(--line);border-radius:14px;padding:14px 16px;scroll-margin-top:96px}.hm-list h2{font-size:1.1rem}.hm-list ul{list-style:none;padding:0;margin:8px 0 0;display:flex;flex-wrap:wrap;gap:6px}
+.hm-list{margin-top:16px;background:var(--card,#fff);border:1px solid var(--line);border-radius:14px;padding:14px 16px;scroll-margin-top:96px}.hm-list h3{font-size:1.1rem;margin:0}.hm-list ul{list-style:none;padding:0;margin:8px 0 0;display:flex;flex-wrap:wrap;gap:6px}
 .hm-list li a{display:inline-flex;min-height:40px;align-items:center;padding:0 12px;border:1px solid var(--line);border-radius:999px;background:var(--card,#fff);text-decoration:none;color:var(--ink);font-variant-numeric:tabular-nums}
 </style>'''
 
@@ -512,7 +512,7 @@ def mk_list(by_market, detail=None, cap=40):
             items = '; '.join('%s (%s)' % (plink(i), esc(detail.get(i) if isinstance(detail.get(i), str) else '; '.join(detail.get(i) or []))) for i in shown)
         else:
             items = ' '.join(plink(i) for i in shown)
-        more = (' and %d more (see <a href="/data/digest.json">the JSON</a>)' % (len(ids) - cap)) if len(ids) > cap else ''
+        more = (' and %d more (see <a href="/api/x/ins/digest.json">the JSON</a>)' % (len(ids) - cap)) if len(ids) > cap else ''
         out.append('<li><b>%s</b> %d: %s%s</li>' % (esc(g['market']), g['n'], items, more))
     return '<ul class="dg-mk">' + ''.join(out) + '</ul>'
 
@@ -526,7 +526,7 @@ def week_main(W, weeks, latest):
     to = dt.date.fromisoformat(W['to'])
     S = W['sections']
     span = '%s to %s' % (fdate(mon), fdate(to))
-    arch = '<ul class="dg-arch">' + ''.join('<li><a href="/digest/%s/"%s>Week %s%s</a></li>' % (w['id'], ' aria-current="page"' if w['id'] == W['id'] else '', w['id'].replace('-', ' week ').split(' week ')[1] + ', ' + w['id'][:4], ' (to date)' if w.get('partial') else '') for w in weeks) + '</ul>'
+    arch = '<ul class="dg-arch">' + ''.join('<li><a href="%s"%s>Week %s%s</a></li>' % ('#top' if w['id'] == W['id'] else '#w-' + w['id'], ' aria-current="page"' if w['id'] == W['id'] else '', w['id'].replace('-', ' week ').split(' week ')[1] + ', ' + w['id'][:4], ' (to date)' if w.get('partial') else '') for w in weeks) + '</ul>'
     I = W['intro']
     by = ('Intro drafted by %s from the counts below, then checked by code: every number in it appears in the data.' % esc(I['by'])) if I['by'] != 'template' else 'Intro filled in by code from the counts below (no AI).'
     sec = lambda h, idh, body, sub='': '<section class="y-sec dg-sec" aria-labelledby="%s"><div class="wrap"><h2 id="%s">%s</h2>%s%s</div></section>' % (idh, idh, h, ('<p class="lead">%s</p>' % sub) if sub else '', body)   # noqa: E731
@@ -557,24 +557,48 @@ def week_main(W, weeks, latest):
               '<dt>Data</dt><dd>Only the public files under <a href="/data/bali-cases.json">/data/</a> (projects, promises, register checks, stalled sites) and their git history: for each day, the last published copy of that day. The week is compared from the last copy before Monday to the last copy of the week. %s</dd>'
               '<dt>Anonymous</dt><dd>Projects appear by id only, as everywhere on Kolaboro.</dd>'
               '<dt>Intro paragraph</dt><dd>%s</dd>'
-              '<dt>Schedule</dt><dd>Rebuilt every Monday for the week just ended, and on demand; a week shown as "to date" is rebuilt until it is complete. Data: <a href="/data/digest.json">/data/digest.json</a>, RSS: <a href="/digest/feed.xml">/digest/feed.xml</a>, heatmap of the last 7 and 30 days: <a href="/changes/">/changes/</a>.</dd>'
+              '<dt>Schedule</dt><dd>Rebuilt every Monday for the week just ended, and on demand; a week shown as "to date" is rebuilt until it is complete. Data: <a href="/api/x/ins/digest.json">/api/x/ins/digest.json</a>, RSS: <a href="/api/x/ins/feed.xml">/api/x/ins/feed.xml</a>, heatmap of the last 7 and 30 days: <a href="#changes">below</a>. Earlier weeks are summarised further down this page; their full project lists are in the JSON.</dd>'
               '</dl></div></section>') % (esc(W.get('baseline_note') or ''), by)
     hero = ('<section class="y-hero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / <a href="/database">Database</a> / <a href="/digest/">Weekly digest</a></p>'
             '<p class="eyebrow">Weekly market digest%s</p><h1>Week %s, %s</h1><p class="lead">%s%s</p>'
             '<p class="dg-intro">%s</p><p class="y-small">%s</p>'
             '<div class="y-n"><div><b>%s</b><span>new projects</span></div><div><b>%s</b><span>slipped past a promised date</span></div><div><b>%s</b><span>projects with a promise moved later</span></div><div><b>%s</b><span>pages whose text changed</span></div></div>'
-            '<h2 style="font-size:1.05rem;margin-top:26px">All weeks</h2>%s<p class="y-small" style="margin-top:10px"><a href="/digest/feed.xml">RSS feed</a> · <a href="/changes/">Change heatmap</a></p></div></section>') % (
+            '<h2 style="font-size:1.05rem;margin-top:26px">All weeks</h2>%s<p class="y-small" style="margin-top:10px"><a href="/api/x/ins/feed.xml">RSS feed</a> · <a href="#changes">Change heatmap</a></p></div></section>') % (
         ' (to date)' if W['partial'] else '', int(W['id'][5:]), W['id'][:4], span, ' This week is still running: it is rebuilt until it is complete.' if W['partial'] else '',
         esc(I['text']), by, nv(S['new']['total']), nv(S['slipped']['projects']), nv(P['moved']['projects'] if P['available'] else None), nv(S['pages']['text_changed']['projects']), arch)
     return hero + ''.join(body) + method
 
 
+def archive(WL, latest):
+    old = [w for w in sorted(WL, key=lambda x: x['id'], reverse=True) if w['id'] != latest]
+    if not old:
+        return ''
+    out = []
+    for W in old:
+        S = W['sections']
+        rows = [('New projects', S['new']['total'], S['new']['by_market']), ('Slipped past a promised date', S['slipped']['projects'], S['slipped']['by_market'])]
+        if S['promises']['available']:
+            rows.append(('Projects with a promise moved later', S['promises']['moved']['projects'], S['promises']['moved']['by_market']))
+        if S['pages']['text_changed']['projects'] is not None:
+            rows.append(('Pages whose text changed', S['pages']['text_changed']['projects'], S['pages']['text_changed']['by_market']))
+        if S['register']['available']:
+            rows.append(('Register lookups dated in the week', S['register']['looked_up']['projects'], S['register']['looked_up']['by_market']))
+        if S['satellite']['available']:
+            rows.append(('Standing satellite flags', S['satellite']['flagged_now']['projects'], S['satellite']['flagged_now']['by_market']))
+        li = ''.join('<li><b>%s: %d</b>%s</li>' % (esc(l), n, (' (' + ', '.join('%s %d' % (esc(g['market']), g['n']) for g in bm[:12]) + (', and %d more markets' % (len(bm) - 12) if len(bm) > 12 else '') + ')') if bm else '') for l, n, bm in rows)
+        out.append('<details class="y-box" id="w-%s"><summary><b>Week %d, %s</b>: %s to %s%s</summary><p class="dg-intro" style="font-size:1rem">%s</p><ul class="dg-mk">%s</ul>%s</details>' % (
+            W['id'], int(W['id'][5:]), W['id'][:4], fdate(dt.date.fromisoformat(W['from'])), fdate(dt.date.fromisoformat(W['to'])), ' (to date)' if W.get('partial') else '',
+            esc(W['intro']['text']), li, ('<p class="y-small">%s</p>' % esc(W['baseline_note'])) if W.get('baseline_note') else ''))
+    js = "<script>(function(){var h=location.hash,e=h&&/^#w-\\d{4}-\\d{2}$/.test(h)&&document.getElementById(h.slice(1));if(e){e.open=true;e.scrollIntoView();}})();</script>"
+    return ('<section class="y-sec" id="archive" aria-labelledby="h-arch"><div class="wrap"><h2 id="h-arch">Earlier weeks</h2><p class="lead">Counts by market for each earlier week. Every project id behind these counts is in <a href="/api/x/ins/digest.json">/api/x/ins/digest.json</a>.</p>%s</div></section>%s') % (''.join(out), js)
+
+
 def rss(weeks):
-    items = ''.join('<item><title>%s</title><link>%s/digest/%s/</link><guid isPermaLink="true">%s/digest/%s/</guid><pubDate>%s</pubDate><description>%s</description></item>' % (
+    items = ''.join('<item><title>%s</title><link>%s/digest/#w-%s</link><guid isPermaLink="false">kolaboro-digest-%s-%s</guid><pubDate>%s</pubDate><description>%s</description></item>' % (
         esc('Kolaboro weekly digest, week %s %s%s' % (int(w['id'][5:]), w['id'][:4], ' (to date)' if w.get('partial') else '')), SITE, w['id'], SITE, w['id'],
         dt.datetime.strptime(w['generated'], '%Y-%m-%dT%H:%M:%SZ').strftime('%a, %d %b %Y %H:%M:%S +0000'), esc(w['intro']['text'])) for w in sorted(weeks, key=lambda x: x['id'], reverse=True) if not w.get('empty'))
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kolaboro weekly market digest</title>'
-            '<link>%s/digest/</link><atom:link href="%s/digest/feed.xml" rel="self" type="application/rss+xml"/><description>New off-plan projects, slipped dates, moved promises, page, register and satellite changes, by market. Counted by code from the public data.</description><language>en</language>%s</channel></rss>\n') % (SITE, SITE, items)
+            '<link>%s/digest/</link><atom:link href="%s/api/x/ins/feed.xml" rel="self" type="application/rss+xml"/><description>New off-plan projects, slipped dates, moved promises, page, register and satellite changes, by market. Counted by code from the public data.</description><language>en</language>%s</channel></rss>\n') % (SITE, SITE, items)
 
 
 def bucket(n, mx):
@@ -598,35 +622,34 @@ def changes_main(HM):
                 n = r['counts'][k]
                 b = bucket(n, mx)
                 if n:
-                    cells.append('<td class="c b%d"><a href="#list" data-w="%s" data-m="%s" data-k="%s" aria-label="%s, %s: %d projects">%d</a></td>' % (b, w, esc(r['market']), k, esc(r['market']), esc(l), n, n))
+                    cells.append('<td class="c b%d"><a href="#list" data-k="%s">%d</a></td>' % (b, k, n))
                 else:
-                    cells.append('<td class="c"><span aria-label="0">0</span></td>')
-            rows.append('<tr><td class="m"><a href="/m/%s/">%s</a></td>%s<td class="c"><span style="color:var(--ink);font-weight:700">%d</span></td></tr>' % (esc(r['market'].lower().replace(' ', '-')), esc(r['market']), ''.join(cells), r['total']))
-        tot = '<tr><td class="m"><b>All markets</b></td>' + ''.join('<td class="c"><span style="color:var(--ink);font-weight:700">%d</span></td>' % X['totals'][k] for k, _ in KINDS) + '<td></td></tr>'
+                    cells.append('<td class="c"><span>0</span></td>')
+            rows.append('<tr data-m="%s"><th class="m" scope="row"><a href="/m/%s/">%s</a></th>%s<td class="c t">%d</td></tr>' % (esc(r['market']), esc(r['market'].lower().replace(' ', '-')), esc(r['market']), ''.join(cells), r['total']))
+        tot = '<tr><th class="m" scope="row">All markets</th>' + ''.join('<td class="c t">%d</td>' % X['totals'][k] for k, _ in KINDS) + '<td></td></tr>'
         note = ('Window %s to %s: %d days with stored copies%s.' % (fdate(dt.date.fromisoformat(X['from'])), fdate(dt.date.fromisoformat(X['to'])), X['covers_days'], ' (our daily history starts on %s, so this window is shorter than %s days)' % (fdate(dt.date.fromisoformat(HM['history_starts'])), w) if X['covers_days'] < int(w) else ''))
-        body = ('<div class="y-scroll"><table class="hm"><caption class="sr-only">Changes by market and kind, last %s days</caption><thead>%s</thead><tbody>%s%s</tbody></table></div>' % (w, head, ''.join(rows), tot)) if X['markets'] else '<p class="dg-empty">No changes recorded in this window.</p>'
+        body = ('<div class="y-scroll"><table class="hm" data-w="%s"><caption class="sr-only">Changes by market and kind, last %s days</caption><thead>%s</thead><tbody>%s%s</tbody></table></div>' % (w, w, head, ''.join(rows), tot)) if X['markets'] else '<p class="dg-empty">No changes recorded in this window.</p>'
         return '<div class="hm-w" data-win="%s"><p class="y-small">%s</p>%s</div>' % (w, note, body)
     key = '<div class="hm-key" aria-hidden="true"><span>Fewer</span>' + ''.join('<span><i style="background:%s"></i></span>' % c for i, c in enumerate(['#cde2fb', '#9ec5f4', '#6da7ec', '#3987e5', '#1c5cab'], 1)) + '<span>More changes (shade relative to the busiest cell in the window)</span></div>'
     defs = ''.join('<dt>%s</dt><dd>%s.</dd>' % (esc(l), esc(KIND_HELP[k][0].upper() + KIND_HELP[k][1:])) for k, l in KINDS)
-    ids = {w: {r['market']: r['ids'] for r in HM['windows'][w]['markets']} for w in HM['windows']}
-    js = '''<script type="application/json" id="hm-data">%s</script>
-<script>(function(){var D=JSON.parse(document.getElementById('hm-data').textContent),L=document.getElementById('list'),N=%s;
+    js = '''<script>(function(){var G=JSON.parse(document.getElementById('digest-data').textContent).changes.windows,D={},L=document.getElementById('list'),N=%s;
+Object.keys(G).forEach(function(w){D[w]={};G[w].markets.forEach(function(r){D[w][r.market]=r.ids;});});
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
-function show(w,m,k){var a=((D[w]||{})[m]||{})[k]||[];L.innerHTML='<h2 id="h-list">'+esc(N[k])+' in '+esc(m)+', last '+w+' days: '+a.length+' project'+(a.length===1?'':'s')+'</h2><ul>'+a.map(function(i){return '<li><a href="/p/'+encodeURIComponent(i)+'/">'+esc(i)+'</a></li>';}).join('')+'</ul>';L.hidden=false;}
-document.addEventListener('click',function(e){var t=e.target.closest&&e.target.closest('a[data-k]');if(!t)return;e.preventDefault();show(t.dataset.w,t.dataset.m,t.dataset.k);try{history.replaceState(null,'','?w='+t.dataset.w+'&m='+encodeURIComponent(t.dataset.m)+'&k='+t.dataset.k+'#list');}catch(x){}L.scrollIntoView({behavior:'smooth',block:'start'});var h=document.getElementById('h-list');if(h){h.tabIndex=-1;h.focus({preventScroll:true});}});
+function show(w,m,k){var a=((D[w]||{})[m]||{})[k]||[];L.innerHTML='<h3 id="h-list">'+esc(N[k])+' in '+esc(m)+', last '+w+' days: '+a.length+' project'+(a.length===1?'':'s')+'</h3><ul>'+a.map(function(i){return '<li><a href="/p/'+encodeURIComponent(i)+'/">'+esc(i)+'</a></li>';}).join('')+'</ul>';L.hidden=false;}
+document.addEventListener('click',function(e){var t=e.target.closest&&e.target.closest('a[data-k]');if(!t)return;e.preventDefault();var w=t.closest('table').dataset.w,m=t.closest('tr').dataset.m;show(w,m,t.dataset.k);try{history.replaceState(null,'','?w='+w+'&m='+encodeURIComponent(m)+'&k='+t.dataset.k+'#list');}catch(x){}L.scrollIntoView({behavior:'smooth',block:'start'});var h=document.getElementById('h-list');if(h){h.tabIndex=-1;h.focus({preventScroll:true});}});
 function win(w){document.querySelectorAll('.hm-w').forEach(function(x){x.hidden=x.dataset.win!==w;});document.querySelectorAll('.hm-tabs button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.win===w?'true':'false');});}
 document.querySelectorAll('.hm-tabs button').forEach(function(b){b.addEventListener('click',function(){win(b.dataset.win);});});
 var p;try{p=new URLSearchParams(location.search);}catch(x){p=null;}var w0=p&&p.get('w')==='30'?'30':'7';win(w0);if(p&&p.get('m')&&p.get('k'))show(w0,p.get('m'),p.get('k'));
-})();</script>''' % (json.dumps(ids, separators=(',', ':')).replace('</', '<\\/'), json.dumps({k: l for k, l in KINDS}))
+})();</script>''' % json.dumps({k: l for k, l in KINDS})
     W7, W30 = HM['windows']['7'], HM['windows']['30']
-    return ('<section class="y-hero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / <a href="/database">Database</a> / Change heatmap</p>'
-            '<p class="eyebrow">Change heatmap</p><h1>Where off-plan markets changed most</h1>'
+    return ('<section class="y-sec" id="changes" aria-labelledby="h-chg"><div class="wrap">'
+            '<p class="eyebrow">Change heatmap</p><h2 id="h-chg">Where off-plan markets changed most</h2>'
             '<p class="lead">Which markets moved, and how: new projects, page edits, price band moves, date moves and register results, counted by code from the daily copies of our public data. Each count links to the projects behind it.</p>'
             '<div class="y-n"><div><b>%d</b><span>page edits, last 7 days</span></div><div><b>%d</b><span>new projects, last 7 days</span></div><div><b>%d</b><span>date moves, last %d days</span></div><div><b>%d</b><span>markets with a change, last %d days</span></div></div>'
-            '</div></section><section class="y-sec" aria-labelledby="h-hm"><div class="wrap"><h2 id="h-hm">Market by kind of change</h2>'
+            '<h3 id="h-hm" style="margin-top:24px">Market by kind of change</h3>'
             '<div class="hm-tabs" role="group" aria-label="Window"><button type="button" data-win="7" aria-pressed="true">Last 7 days</button><button type="button" data-win="30" aria-pressed="false">Last 30 days</button></div>'
             '<div id="list" class="hm-list" hidden aria-live="polite"></div>%s%s%s</div></section>'
-            '<section class="y-sec" aria-labelledby="h-def"><div class="wrap"><h2 id="h-def">What counts as a change</h2><dl class="y-faq">%s<dt>How</dt><dd>%s Days compared: %s. Data: <a href="/data/changes.json">/data/changes.json</a> (CC BY 4.0). The weekly story behind these numbers: <a href="/digest/">weekly digest</a>.</dd>'
+            '<section class="y-sec" aria-labelledby="h-def"><div class="wrap"><h2 id="h-def">What counts as a change in the heatmap</h2><dl class="y-faq">%s<dt>How</dt><dd>%s Days compared: %s. Data: the "changes" part of <a href="/api/x/ins/digest.json">/api/x/ins/digest.json</a> (CC BY 4.0).</dd>'
             '<dt>Limits</dt><dd>Our daily history starts on %s, so the 30-day window covers fewer days until December. A page edit can be a typo fix or a price change: open the project to see what changed. Built %s.</dd></dl></div></section>%s') % (
         W7['totals']['page'], W7['totals']['new'], W30['totals']['date'], W30['covers_days'], len(W30['markets']), W30['covers_days'],
         key, table('7'), table('30'), defs, esc(HM['method']), esc(', '.join(HM['days_compared']) or 'none yet'), fdate(dt.date.fromisoformat(HM['history_starts'])), esc(HM['generated']), js)
@@ -655,7 +678,10 @@ def main():
     prev = {}
     if a.prev and os.path.exists(a.prev):
         try:
-            prev = {w['id']: w for w in json.load(open(a.prev)).get('weeks', [])}
+            raw = open(a.prev).read()
+            m = re.search(r'<script type="application/json" id="digest-data">(.*?)</script>', raw, re.S)
+            pd = json.loads(m.group(1).replace('<\\/', '</')) if m else json.loads(raw)
+            prev = {w['id']: w for w in pd.get('weeks', [])}
         except Exception:
             prev = {}
     # weeks to (re)build: the week holding the start of history up to the current week; finished weeks already built are kept
@@ -681,29 +707,19 @@ def main():
         built.append(w)
     WL = sorted(weeks.values(), key=lambda x: x['id'])
     latest = WL[-1]['id']
-    os.makedirs(os.path.join(a.out, 'data'), exist_ok=True)
     os.makedirs(os.path.join(a.out, 'digest'), exist_ok=True)
-    os.makedirs(os.path.join(a.out, 'changes'), exist_ok=True)
-    D = {'version': 'digest-1', 'generated': dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'), 'history_starts': hist_start.isoformat(), 'latest': latest,
-         'licence': 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)', 'sources': ['/data/' + n for n in names], 'weeks': WL,
-         'ai': {'model': 'claude-sonnet-5-5', 'role': 'intro paragraph only, checked by code', 'this_run_usd': round(SPEND['usd'], 4)}}
-    json.dump(D, open(os.path.join(a.out, 'data', 'digest.json'), 'w'), ensure_ascii=False, separators=(',', ':'))
-    shell = open(a.shell).read()
-    feed = '<link rel="alternate" type="application/rss+xml" title="Kolaboro weekly market digest" href="/digest/feed.xml">'
-    for W in WL:
-        title = 'Weekly off-plan market digest, week %d %s%s | Kolaboro' % (int(W['id'][5:]), W['id'][:4], ' (to date)' if W.get('partial') else '')
-        desc = W['intro']['text'][:300]
-        m = week_main(W, WL, latest)
-        os.makedirs(os.path.join(a.out, 'digest', W['id']), exist_ok=True)
-        open(os.path.join(a.out, 'digest', W['id'], 'index.html'), 'w').write(page(shell, title, desc, '%s/digest/%s/' % (SITE, W['id']), m, CSS + feed))
-        if W['id'] == latest:
-            open(os.path.join(a.out, 'digest', 'index.html'), 'w').write(page(shell, 'Weekly off-plan market digest: new projects, slipped dates, moved promises | Kolaboro', desc, SITE + '/digest/', m, CSS + feed))
-    open(os.path.join(a.out, 'digest', 'feed.xml'), 'w').write(rss(WL))
     HM = heatmap(today, H, CM, hist_start)
-    json.dump(HM, open(os.path.join(a.out, 'data', 'changes.json'), 'w'), ensure_ascii=False, separators=(',', ':'))
-    open(os.path.join(a.out, 'changes', 'index.html'), 'w').write(page(shell, 'Change heatmap: which off-plan markets changed most, last 7 and 30 days | Kolaboro',
-                                                                         'Market by kind of change (new projects, page edits, price band moves, date moves, register results) over the last 7 and 30 days, with links to every project behind each count.',
-                                                                         SITE + '/changes/', changes_main(HM), CSS + feed))
+    D = {'version': 'digest-1', 'generated': dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'), 'history_starts': hist_start.isoformat(), 'latest': latest,
+         'licence': 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)', 'sources': ['/data/' + n for n in names], 'weeks': WL, 'changes': HM,
+         'ai': {'model': 'claude-sonnet-5-5', 'role': 'intro paragraph only, checked by code', 'this_run_usd': round(SPEND['usd'], 4)}}
+    data = '<script type="application/json" id="digest-data">' + json.dumps(D, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/') + '</script>'
+    # one page and no other file (file budget of the shared Pages project): the data rides inside the page and the worker serves it
+    # as /api/x/ins/digest.json; latest week in full, earlier weeks summarised, heatmap of 7 and 30 days (file budget of the shared Pages project): latest week in full, earlier weeks summarised, heatmap of 7 and 30 days
+    shell = open(a.shell).read()
+    feed = '<link rel="alternate" type="application/rss+xml" title="Kolaboro weekly market digest" href="/api/x/ins/feed.xml">'
+    L = [w for w in WL if w['id'] == latest][0]
+    m = data + week_main(L, WL, latest) + archive(WL, latest) + changes_main(HM)
+    open(os.path.join(a.out, 'digest', 'index.html'), 'w').write(page(shell, 'Weekly off-plan market digest and change heatmap | Kolaboro', L['intro']['text'][:300], SITE + '/digest/', m, CSS + feed))
     print(json.dumps({'today': today.isoformat(), 'built': built, 'weeks': [w['id'] for w in WL], 'latest': latest, 'intro_by': {w['id']: w['intro']['by'] for w in WL},
                       'api_calls': H.calls, 'ai_usd': round(SPEND['usd'], 4), 'heatmap_7': HM['windows']['7']['totals'], 'heatmap_30': HM['windows']['30']['totals']}, indent=1))
 
