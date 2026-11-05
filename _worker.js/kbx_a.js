@@ -1,5 +1,5 @@
 // Feature module a for kolaboro.com (see kbx.js): home page live activity and the search index for the command palette.
-// Every event below is read from a record that already exists (self-tests, eval runs, public log witnesses, uptime probes);
+// Every event below is read from a record that already exists (live findings, self-tests, eval runs, public log witnesses, uptime probes);
 // nothing is generated to look busy. Answers are Ed25519-signed with the same key as /api/open/* so the browser can check them.
 import { rpc, signBody, openLoad } from './kolaboro.js';
 
@@ -40,9 +40,26 @@ async function probeState(cache, up) {
     text: s.n + ' uptime probe' + (s.n > 1 ? 's' : '') + ' recorded from outside Cloudflare, ' + (s.down ? s.down + ' not up' : 'all up') + ' (' + s.upc + ' of ' + s.probes + ' up today)', href: '/status' }));
 }
 
-async function gather(cache) {
-  const [st, ev, lg, up] = await Promise.allSettled([rpc('kolaboro_public_status', {}), rpc('kolaboro_evals_public', {}), rpc('kolaboro_log_public', {}), rpc('kolaboro_uptime_public', {})]);
+// Findings from the hourly live findings job (GitHub Actions, Claude API, quotes checked in code), published as /data/live-findings.json.
+async function findings(env) {
+  if (!env || !env.ASSETS) return null;
+  const r = await env.ASSETS.fetch(new Request('https://kolaboro.com/_s/kolaboro.com/data/live-findings.json'));
+  if (!r.ok) return null;
+  const j = await r.json(), out = [];
+  const okId = x => /^[A-Z]{2,5}-\d{3,4}$/.test(String(x || ''));
+  (j.findings || []).slice(0, 8).forEach(f => { const at = iso(f.at); if (!at || !okId(f.project)) return;
+    out.push({ id: 'fd-' + String(f.id).slice(0, 16), at, kind: 'finding', ok: true, text: String(f.text || '').slice(0, 220), href: '/p/' + f.project + '/' }); });
+  const run = (j.runs || []).slice(-1)[0];
+  if (run && iso(run.at)) out.push({ id: 'fr-' + run.at, at: iso(run.at), kind: 'checkrun', ok: true, href: '/findings/',
+    text: 'Hourly check read ' + run.pages_fetched + ' developer pages: ' + run.findings + ' finding' + (run.findings === 1 ? '' : 's') + ', ' + run.no_change + ' facts unchanged, ' + run.rejected_quote_not_found + ' rejected for a quote not on the page, ' + Number(run.usd || 0).toFixed(3) + ' USD' });
+  return out;
+}
+
+async function gather(cache, env) {
+  const [st, ev, lg, up, fd] = await Promise.allSettled([rpc('kolaboro_public_status', {}), rpc('kolaboro_evals_public', {}), rpc('kolaboro_log_public', {}), rpc('kolaboro_uptime_public', {}), findings(env)]);
   const out = [], src = {};
+  let nFind = 0;
+  if (fd.status === 'fulfilled' && fd.value) { src.findings = true; fd.value.forEach(e => out.push(e)); nFind = fd.value.length; } else src.findings = false;
   if (st.status === 'fulfilled' && st.value) {
     src.selftests = true;
     (st.value.selftests || []).slice(0, 6).forEach(t => { const at = iso(t.at); if (!at) return;
@@ -69,7 +86,8 @@ async function gather(cache) {
     uptime = { day: today && today.day, probes: today && today.probes, up: today && today.up, uptime_7d: u.uptime_7d, incidents: (u.incidents || []).length };
     (u.incidents || []).slice(0, 4).forEach((x, i) => { const at = iso(x.start || x.started_at || x.at || x.from); if (!at) return;
       out.push({ id: 'inc-' + at, at, kind: 'incident', ok: false, text: 'Uptime incident recorded' + (x.target ? ' on ' + String(x.target).slice(0, 60) : ''), href: '/status' }); });
-    try { (await probeState(cache, u)).forEach(e => out.push(e)); } catch (e) {}
+    // findings are preferred over uptime probes: when there are findings, only the newest probe stays in the strip
+    try { (await probeState(cache, u)).slice(0, nFind ? 1 : 6).forEach(e => out.push(e)); } catch (e) {}
   } else src.uptime = false;
   out.sort((a, b) => a.at < b.at ? 1 : a.at > b.at ? -1 : 0);
   return { events: out.slice(0, 14), uptime, log_days: heads.length, sources: src };
@@ -78,8 +96,8 @@ async function gather(cache) {
 async function snapshot(env, ctx) {
   const cache = caches.default, key = new Request(CK + 'events-v1');
   try { const hit = await cache.match(key); if (hit) return { text: await hit.text(), sig: hit.headers.get('x-sig') }; } catch (e) {}
-  const g = await gather(cache);
-  const body = { generated_at: new Date().toISOString(), about: 'Real system events from existing public records: end-to-end self-tests, AI evaluation runs, public log witnesses in Sigstore Rekor and uptime probes. Times are when each record says it happened; uptime probes carry the time this edge first saw the new count ("seen").', last_event_at: g.events.length ? g.events[0].at : null, events: g.events, uptime: g.uptime, sources: g.sources };
+  const g = await gather(cache, env);
+  const body = { generated_at: new Date().toISOString(), about: 'Real system events from existing public records: findings of the hourly developer page check (/data/live-findings.json, quotes checked in code), end-to-end self-tests, AI evaluation runs, public log witnesses in Sigstore Rekor and uptime probes. Times are when each record says it happened; uptime probes carry the time this edge first saw the new count ("seen").', last_event_at: g.events.length ? g.events[0].at : null, events: g.events, uptime: g.uptime, sources: g.sources };
   const text = JSON.stringify(body); let sig = null; try { sig = await signBody(env, text); } catch (e) {}
   const put = cache.put(key, new Response(text, { headers: { 'content-type': 'application/json', 'cache-control': 'public, max-age=20', 'x-sig': sig || '' } })).catch(() => {});
   if (ctx && ctx.waitUntil) ctx.waitUntil(put);
