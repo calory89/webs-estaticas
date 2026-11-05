@@ -202,7 +202,7 @@ def _questions(c):
     if c.get('completion_year'): q.append('Completion advertised for %s: does progress on site match?' % c['completion_year'])
     return q[:5]
 
-PREFIX = {'Vancouver': 'YVR', 'Peru': 'PRU', 'Panama City': 'PTY', 'Bali': 'BALI', 'Lombok': 'LOM', 'Phuket': 'PHK', 'Koh Samui': 'KSM', 'Pattaya': 'PAT', 'Dubai': 'DXB', 'Riviera Maya': 'RMY', 'Algarve': 'ALG', 'Costa del Sol': 'CDS',
+PREFIX = {'Da Nang': 'DAD', 'El Salvador': 'SLV', 'Ho Chi Minh City': 'SGN', 'Vancouver': 'YVR', 'Peru': 'PRU', 'Panama City': 'PTY', 'Bali': 'BALI', 'Lombok': 'LOM', 'Phuket': 'PHK', 'Koh Samui': 'KSM', 'Pattaya': 'PAT', 'Dubai': 'DXB', 'Riviera Maya': 'RMY', 'Algarve': 'ALG', 'Costa del Sol': 'CDS',
           'Abu Dhabi': 'AUH', 'Ras Al Khaimah': 'RAK', 'Oman': 'OMN', 'Istanbul': 'IST', 'Antalya': 'AYT', 'Egypt': 'EGY', 'Cyprus': 'CYP', 'Northern Cyprus': 'NCY', 'Greece': 'GRC',
           'Montenegro': 'MNE', 'Croatia': 'HRV', 'Georgia': 'GEO', 'Spain': 'ESP', 'Portugal': 'PRT', 'Los Cabos': 'CAB', 'Puerto Vallarta': 'PVR', 'Mérida': 'MID', 'Costa Rica': 'CRI',
           'Panama': 'PAN', 'Dominican Republic': 'DOM', 'Colombia': 'COL', 'Brazil': 'BRA', 'Miami': 'MIA', 'Vietnam': 'VNM', 'Philippines': 'PHL', 'Malaysia': 'MYS', 'Cambodia': 'KHM',
@@ -351,7 +351,7 @@ def public_cases(projects, latest):
         if ck['escrow'] is not True: q.append('No deposit protection published: will your payments go into an escrow or trust account in your name?')
         for f in fl[:2]: q.insert(0, f + ' in public sources: ask the developer for the current status, in writing.')
         for f in notes[:1]: q.insert(0, f + ': ask for the correct figures in writing before paying.')
-        out.append({'_slug': p.get('slug'), 'id': '%s-%03d' % (PREFIX.get(mk, mk[:3].upper()), i + 1), 'market': mk, 'country': p.get('country', 'Indonesia'), 'region': _region(p['area']) if mk == 'Bali' else mk,
+        out.append({'_slug': p.get('slug'), 'id': '%s-%03d' % (PREFIX.get(mk, re.sub(r'[^A-Za-z]', '', mk)[:3].upper()), i + 1), 'market': mk, 'country': p.get('country', 'Indonesia'), 'region': _region(p['area']) if mk == 'Bali' else mk,
                     'docs': ck['permit'] == 2, 'plans': ck['plans'], 'band': _band(m), 'done': m.get('completion_year'),
                     'title': m.get('title_type'), 'lease': m.get('lease_years_base'), 'yield': m.get('advertised_yield_pct') or s.get('yield_pct'), 'units': s.get('units'),
                     'checks': ck, 'score': int(score), 'max': mx, 'flags': fl, 'notes': notes, 'tier': tier,
@@ -458,7 +458,7 @@ def main():
     # so stop before anything is published and say which market needs its own PREFIX entry (4 Nov 2026: Peru/Perth, Vancouver/Vanuatu).
     _pre = {}
     for _p in projects:
-        _m = _p.get('market') or 'Bali'; _pre.setdefault(PREFIX.get(_m, _m[:3].upper()), set()).add(_m)
+        _m = _p.get('market') or 'Bali'; _pre.setdefault(PREFIX.get(_m, re.sub(r'[^A-Za-z]', '', _m)[:3].upper()), set()).add(_m)
     _clash = {k: sorted(v) for k, v in _pre.items() if len(v) > 1}
     if _clash:
         sys.exit('public id prefix used by more than one market, add a PREFIX entry: %s' % _clash)
