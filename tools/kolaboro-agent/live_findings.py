@@ -600,7 +600,7 @@ def main():
         sys.exit('KB_PUBLIC_CASES missing: findings are only published for ids that exist in the public dataset')
     P = [p for p in P if p.get('url') and pub.get(ids[p['slug']]) == p.get('market', 'Bali')]
     spath = os.path.join(DATA, 'live-state.json'); fpath = os.path.join(DATA, 'live-findings.json'); bpath = os.path.join(DATA, 'live-by-project.json')
-    state = load(spath, {}); feed = load(fpath, {}); byp = load(bpath, {})
+    state = load(spath, {}); feed = load(fpath, {}); byp = (load(bpath, {}) or {}).get('projects') or {}
     latest = load(os.path.join(DATA, 'latest.json'), {})
 
     def last_read(p):
