@@ -5,8 +5,8 @@ Rules (kept deliberately simple so a failing contract means something changed, n
 - numbers are "number" (an integer that becomes 2.0 is not a contract break);
 - objects whose keys are data (project ids, market names, dates, hashes) become maps: additionalProperties = merged values;
 - "required" is set only at the top level and for the items of top-level arrays and maps (keys seen in every item);
-- deeper than that, leaf values that are not such required keys may also be null, so an optional value that is missing
-  one day does not fail the contract.
+- deeper than that, leaf values may also be null (required keys must still be present), so a value that is not known yet
+  one day (for example a timestamp filled in later) does not fail the contract.
 """
 import re
 
@@ -134,7 +134,7 @@ def finish(s, depth=0, top_item=False, strict=False):
     if 'items' in s:
         s['items'] = finish(s['items'], depth + 1, top_item=(depth <= 1))
     # leaves deeper than the items of top-level arrays and maps may also be null, unless they are required keys of such an item
-    if depth >= 3 and not strict and t is not None and all(x in ('boolean', 'number', 'string', 'null') for x in ts):
+    if depth >= 3 and t is not None and all(x in ('boolean', 'number', 'string', 'null') for x in ts):
         u = sorted(set(ts) | {'null'})
         s['type'] = u if len(u) > 1 else 'null'
     if isinstance(s.get('type'), list) and len(s['type']) == 1: s['type'] = s['type'][0]
