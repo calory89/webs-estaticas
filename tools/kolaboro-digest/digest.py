@@ -238,7 +238,7 @@ def ask_claude(facts, key, model='claude-sonnet-5-5', max_usd=0.5):
     prompt = ('You write the intro paragraph of a weekly digest of off-plan property data. Use ONLY the numbers in the JSON below, copied exactly '
               '(digits, not words). Do not add any other number, date, cause, forecast, comparison or opinion. Do not name any developer, project or project id. '
               'No adjectives unless a number in the same sentence backs them. No dashes. Plain English, 60 to 120 words, third person ("Kolaboro data show"). '
-              'Say that the figures come from the public data files and their daily history. Return only the paragraph.\n\nJSON:\n' + json.dumps(facts, ensure_ascii=False))
+              'Say that the figures come from the public data files and their daily history. If the JSON has a "note", state it in your own words. Return only the paragraph.\n\nJSON:\n' + json.dumps(facts, ensure_ascii=False))
     body = json.dumps({'model': model, 'max_tokens': 800, 'messages': [{'role': 'user', 'content': prompt}]}).encode()
     req = urllib.request.Request('https://api.anthropic.com/v1/messages', data=body, method='POST', headers={
         'x-api-key': key, 'anthropic-version': '2023-06-01', 'content-type': 'application/json'})
@@ -386,6 +386,8 @@ def facts_of(W):
     f = {'week': W['id'].split('-')[1], 'projects_tracked': S['new']['projects_end'], 'markets_tracked': S['new']['markets_end'],
          'new_projects': S['new']['total'], 'markets_with_new_projects': len(S['new']['by_market']),
          'projects_past_promised_date_this_week': S['slipped']['projects']}
+    if W.get('baseline_note'):
+        f['note'] = W['baseline_note'] + ' So "new projects" here means new since that first copy.'
     if S['promises']['available']:
         f['projects_with_promise_moved_later'] = S['promises']['moved']['projects']
     if S['pages']['text_changed']['projects'] is not None:
@@ -666,6 +668,7 @@ def main():
     ap.add_argument('--cache', default='/tmp/kdigest-cache')
     ap.add_argument('--today')
     ap.add_argument('--no-ai', action='store_true')
+    ap.add_argument('--rebuild', action='store_true', help='rebuild finished weeks too')
     a = ap.parse_args()
     today = dt.date.fromisoformat(a.today) if a.today else dt.datetime.now(dt.timezone.utc).date()
     H = Hist(a.repo, a.branch, os.environ.get('GITHUB_TOKEN') or os.environ.get('GH_TOKEN'), a.cache)
@@ -697,7 +700,7 @@ def main():
     weeks = dict(prev)
     built = []
     for w in todo[-8:]:
-        if w in prev and not prev[w].get('partial') and w != cur:
+        if w in prev and not prev[w].get('partial') and w != cur and not a.rebuild:
             continue
         W = build_week(w, today, H, CM, hist_start)
         if W.get('empty'):

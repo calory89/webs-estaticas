@@ -10,6 +10,9 @@ on:
       no_ai:
         description: "Skip the AI intro (yes/no)"
         default: "no"
+      rebuild:
+        description: "Rebuild finished weeks too (yes/no)"
+        default: "no"
 permissions:
   contents: write
 concurrency:
@@ -35,7 +38,7 @@ jobs:
           K=_s/kolaboro.com
           git show FETCH_HEAD:$K/promises/index.html > $I/shell.html
           git show FETCH_HEAD:$K/digest/index.html > $I/digest.json 2>/dev/null || true   # the data rides inside the page (digest-data)
-          F=""; [ "${{ github.event.inputs.no_ai }}" = "yes" ] && F="--no-ai"
+          F=""; [ "${{ github.event.inputs.no_ai }}" = "yes" ] && F="--no-ai"; [ "${{ github.event.inputs.rebuild }}" = "yes" ] && F="$F --rebuild"
           python3 tools/kolaboro-digest/digest.py --repo ${{ github.repository }} --shell $I/shell.html --prev $I/digest.json --out $O --cache $RUNNER_TEMP/cache $F | tee $RUNNER_TEMP/summary.json
           echo '### Weekly digest' >> $GITHUB_STEP_SUMMARY; echo '```' >> $GITHUB_STEP_SUMMARY; cat $RUNNER_TEMP/summary.json >> $GITHUB_STEP_SUMMARY; echo '```' >> $GITHUB_STEP_SUMMARY
       - name: Publish to kolaboro.com
