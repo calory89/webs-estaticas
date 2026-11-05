@@ -137,14 +137,25 @@
       '<section class="mk-sec"><div class="wrap"><p class="eyebrow">Key numbers</p><h2>What ' + esc(market) + ' developers publish</h2>' + kpis(C) + '</div></section>' +
       '<section class="mk-sec"><div class="wrap"><p class="eyebrow">The six checks</p><h2>' + esc(market) + ' against every market</h2><p class="sub">Share of projects that publish each thing a buyer needs, here and across all ' + fmt(ALL.length) + ' projects.</p>' + bars(C, ALL, market) + '</div></section>' +
       '<section class="mk-sec"><div class="wrap"><p class="eyebrow">Verification</p><h2>Who backs what developers say</h2><p class="sub">Every check on every ' + esc(market) + ' project, by the strongest source we found.</p>' + levels(C) + '</div></section>' +
+      '<section class="mk-sec" id="indices"><div class="wrap"><p class="eyebrow">Indices</p><h2>' + esc(market) + ' on our six indices</h2><p class="sub">Delay, promises, hazards, company records, insolvency notices and asking prices for this market, each from the public file behind its page.</p><div id="mk-ind" class="mk-ind" aria-live="polite"><p class="sub">Loading the indices.</p></div></div></section>' +
       L.html +
       '<section class="mk-sec"><div class="wrap"><p class="eyebrow">More</p><h2>' + (sibs.length ? 'Other markets in ' + esc(country) : 'Other markets') + '</h2>' +
       (sibs.length ? chips(sibs.map(function(m){ return { name: m, n: sib[m], href: mlink(m) }; })) + '<div class="mk-acts"><a class="btn btn-line" href="' + clink(country) + '">All of ' + esc(country) + '</a>' : '<p class="sub">' + esc(market) + ' is the only market we track in ' + esc(country) + ' so far.</p><div class="mk-acts">') +
       '<a class="btn btn-line" href="/transparency-index/">Transparency index</a><a class="btn btn-line" href="/m/">All markets</a></div></div></section>' + cta();
-    wireSort(L.draw);
+    wireSort(L.draw); indices(market);
     var t = 'Off-plan in ' + place + ': ' + C.length + ' project' + pl + ' checked | Kolaboro';
     var desc = C.length + ' off-plan project' + pl + ' in ' + market + ': ' + pct(share(C, 'permit')) + ' publish a permit number, ' + pct(share(C, 'escrow')) + ' publish deposit protection' + (r ? ', transparency index ' + r.index.toFixed(1) + ' (rank ' + r.rank + ' of ' + R.rows.length + ')' : '') + '.';
     setMeta(t, desc, BASE + encodeURIComponent(market.toLowerCase().replace(/\s+/g, '-')) + '/');
+  }
+
+  /* Indices block: /api/x/ins/indices (block X6) reads delay-index, promises, hazards, company graph, insolvency watch and price index */
+  function indices(market){
+    var box = $('mk-ind'); if (!box || !window.fetch) return;
+    fetch('/api/x/ins/indices?market=' + encodeURIComponent(market)).then(function(r){ if (!r.ok) throw new Error(r.status); return r.json(); }).then(function(o){
+      box.innerHTML = '<ul class="mk-ix">' + (o.indices || []).map(function(x){
+        return '<li class="' + (x.status === 'ok' ? 'ok' : 'thin') + '"><a href="' + esc(x.href) + '"><span class="k">' + esc(x.label) + '</span><b>' + (x.status === 'ok' || x.value ? esc(x.value || '') : 'Not enough data') + '</b><span class="t">' + esc(x.text) + '</span>' + (x.as_of ? '<span class="d">Data ' + esc(x.as_of) + '. Source page &rarr;</span>' : '<span class="d">Source page &rarr;</span>') + '</a></li>';
+      }).join('') + '</ul><p class="sub" style="margin-top:12px">' + esc(o.note || '') + ' JSON: <a href="/api/x/ins/indices?market=' + encodeURIComponent(market) + '">/api/x/ins/indices</a>.</p>';
+    }).catch(function(){ box.innerHTML = '<p class="sub">The indices could not load right now. Open them directly: <a href="/index/delays/">delay index</a>, <a href="/promises/">promises</a>, <a href="/hazards/">hazards</a>, <a href="/graph/global/">company graph</a>, <a href="/tools/insolvency-check/">insolvency</a>, <a href="/index/prices/">price index</a>.</p>'; });
   }
 
   function renderCountry(d, country, R){

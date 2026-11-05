@@ -99,3 +99,13 @@
 .mk-cta{background:var(--concrete)}
 .mk-cta h2{max-width:24ch}
 .mk-note{font-size:.86rem;color:var(--muted);margin-top:14px;max-width:70ch}
+.mk-ix{list-style:none;margin:20px 0 0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.mk-ix a{display:flex;flex-direction:column;gap:6px;height:100%;box-sizing:border-box;background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;color:var(--ink);text-decoration:none;min-width:0}
+.mk-ix a:hover{border-color:var(--ink)}
+.mk-ix a:focus-visible{outline:3px solid var(--hivis);outline-offset:2px}
+.mk-ix .k{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);font-weight:700}
+.mk-ix b{font-size:1.7rem;font-weight:850;letter-spacing:-.02em;line-height:1.05}
+.mk-ix .thin b{font-size:1.1rem;color:var(--muted)}
+.mk-ix .thin a{border-style:dashed}
+.mk-ix .t{font-size:.9rem;line-height:1.45;color:var(--ink-2,#3D4852)}
+.mk-ix .d{font-size:.8rem;color:var(--muted);margin-top:auto}
