@@ -116,6 +116,15 @@
    "tokens_in": 0,
    "tokens_out": 0,
    "errors": 0
+  },
+  {
+   "day": "2026-11-05",
+   "usd": 0.0,
+   "haiku_calls": 0,
+   "sonnet_calls": 0,
+   "tokens_in": 0,
+   "tokens_out": 0,
+   "errors": 0
   }
  ],
  "total_usd": 2.0682
