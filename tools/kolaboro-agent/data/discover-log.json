@@ -424,5 +424,29 @@
   ],
   "all_six": 0,
   "verified_4plus": 0
+ },
+ {
+  "date": "2026-11-05",
+  "calls": 2,
+  "usd": 1.661,
+  "searches": 12,
+  "added": 5,
+  "rejected": {
+   "fewer_than_2_sources": 1
+  },
+  "markets": [
+   "Algarve",
+   "Lisbon"
+  ],
+  "model": "claude-sonnet-5-5",
+  "added_slugs": [
+   "windmill-bay-algarve-residence-algarve",
+   "villa-magna-eco-resort-algarve",
+   "bocage-65-lisbon",
+   "estrela-75-lisbon",
+   "vila-gra-a-lisbon"
+  ],
+  "all_six": 0,
+  "verified_4plus": 0
  }
 ]

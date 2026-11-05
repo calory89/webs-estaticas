@@ -175549,6 +175549,536 @@
    "added": "2026-11-05",
    "found_by": "discover-manual",
    "slug": "sunny-golf-costa-del-sol"
+  },
+  {
+   "name": "Windmill Bay,  Algarve Residence",
+   "developer": "BRAVA Properties (named as lister on ThePrePlan; the developer's legal entity was not confirmed)",
+   "area": "Pêra, Silves",
+   "country": "Portugal",
+   "market": "Algarve",
+   "stage": "off-plan",
+   "url": "https://www.thepreplan.com/en/buy-property-portugal/silves/windmill-bay",
+   "docs_url": "https://www.thepreplan.com/en/buy-property-portugal/silves/windmill-bay",
+   "permit_number": null,
+   "seed": {
+    "price": 775000,
+    "currency": "EUR",
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "06/2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Infrastructure works start Sept/Oct 2026 and villa construction starts Q1 2027, per the plans submitted",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.thepreplan.com/en/buy-property-portugal/silves/windmill-bay"
+    },
+    {
+     "claim": "First homes handed over about 14 months after villa construction begins",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.thepreplan.com/en/buy-property-portugal/silves/windmill-bay"
+    },
+    {
+     "claim": "5-year statutory warranty on building elements and non-structural finishes",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.thepreplan.com/en/buy-property-portugal/silves/windmill-bay"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "construction_start": "Infrastructure Sept/Oct 2026; villas Q1 2027 (per ThePrePlan listing)",
+    "handover_promised": "06/2028 (ThePrePlan project completion field)",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "T3 terraced villa with private pool, rooftop terrace and 3-car garage"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 775000,
+    "price_max": 995000,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Pre-construction villa scheme in Pêra with prices of EUR 775,000 to 995,000 and construction not yet started on the ThePrePlan page I opened. The developer's own page was not opened, and no permit number, escrow wording or municipal alvara was seen. The listing page shows a Floor Plans tab, but I did not see the plans, so plans stay false.",
+   "positives": [
+    "Price range and phased construction timetable are published",
+    "5-year warranty stated",
+    "No guaranteed-return language seen"
+   ],
+   "flags": [],
+   "sources": [
+    "https://www.green-acres.pt/property-for-sale/alcantarilha-e-pera",
+    "https://www.idealista.pt/en/geo/comprar-empreendimentos/algarve/com-tipo-imovel-moradias/",
+    "https://www.thepreplan.com/en/buy-property-portugal/algarve/houses",
+    "https://www.thepreplan.com/en/buy-property-portugal/silves/windmill-bay"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-agent",
+   "slug": "windmill-bay-algarve-residence-algarve"
+  },
+  {
+   "name": "Villa Magna Eco-Resort",
+   "developer": "Livingroup",
+   "area": "Porches, Lagoa",
+   "country": "Portugal",
+   "market": "Algarve",
+   "stage": "off-plan",
+   "url": "http://www.livingroup.com.pt",
+   "docs_url": "http://www.livingroup.com.pt",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": "A third-party Golden Visa site says Livingroup has delivered 340 apartments across earlier projects. Not verified.",
+    "units": 62,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "developer",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "62 apartments (studio and one-bedroom) in a EUR 25 million eco-resort",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.idealista.pt/en/news/property-for-sale-in-portugal/2023/12/05/5782-livingroup-invests-25-million-euros-in-ecological-resort-in-the-algarve"
+    },
+    {
+     "claim": "Developer track record of 340 apartments delivered",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://goldenvisasconsultancy.com/business-ventures/"
+    }
+   ],
+   "facts": {
+    "developer_founded": 2012,
+    "developer_hq": "Lisbon",
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "studio",
+     "1-bedroom"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Livingroup's 62-apartment eco-resort in Porches is marketed to Golden Visa investors. The most recent sources I saw call it pre-launch and then 'taking shape'. I could not open the developer's own site, so the current sales status, stage, prices and any permit number are unconfirmed. Treat this as a lead, not a verified entry.",
+   "positives": [
+    "Project and developer are publicly named",
+    "Design partner is named as Grupo Gavinho"
+   ],
+   "flags": [],
+   "sources": [
+    "https://goldenvisasconsultancy.com/business-ventures/",
+    "https://premiatapartners.com/villa-magna-a-pioneering-eco-resort-for-golden-visa-investors/",
+    "https://www.idealista.pt/en/news/property-for-sale-in-portugal/2023/12/05/5782-livingroup-invests-25-million-euros-in-ecological-resort-in-the-algarve",
+    "https://www.linkedin.com/company/globalassets",
+    "https://www.portugalresident.com/demand-for-algarve-property-increases-new-projects-unveiled/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-agent",
+   "slug": "villa-magna-eco-resort-algarve"
+  },
+  {
+   "name": "Bocage 65",
+   "developer": "FORUS Premium Projects, SIC Imobiliária Fechada, S.A. (Grupo Cafe site)",
+   "area": "Avenidas Novas (Campo Pequeno), Lisbon",
+   "country": "Portugal",
+   "market": "Lisbon",
+   "stage": "under construction",
+   "url": "https://www.bocage65.pt/",
+   "docs_url": "https://www.n2am.pt/en/projetos/bocage-65",
+   "permit_number": null,
+   "seed": {
+    "price": 1230000,
+    "currency": "EUR",
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "June 2027",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 19,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Key delivery June 2027",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.idealista.pt/en/empreendimento/33888616/"
+    },
+    {
+     "claim": "Estimated completion July 2024 (stale date on a portal, conflicts with June 2027)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://www.kwportugal.pt/en/Empreendimento/Lisboa/Lisboa/Avenidas-Novas/43"
+    },
+    {
+     "claim": "Unit count: 19 on developer site, 16 on N2AM and some portal pages",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://www.n2am.pt/en/projetos/bocage-65"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Edifício Myriad Crystal Center, Cais das Naus, Lisbon (data controller address on project site)",
+    "construction_start": null,
+    "handover_promised": "June 2027 (idealista listing)",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "T1",
+     "T2",
+     "T3",
+     "T4"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 1230000,
+    "price_max": 1710000,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Developer site gives no permit number, escrow terms, plans or build updates. Under construction status is not stated on the developer site and rests on the idealista June 2027 delivery date and an Imovirtual development listing, so confirm it. Price range uses N2AM's T2 from 1,230,000 EUR and a RE/MAX T4 listed at 1,710,000 EUR.",
+   "positives": [
+    "Developer entity named with tax number and Lisbon address on the project site",
+    "Asset manager N2AM lists the project as in commercialization with last-unit prices"
+   ],
+   "flags": [],
+   "sources": [
+    "https://www.bocage65.pt/",
+    "https://www.idealista.pt/en/empreendimento/33888616/",
+    "https://www.idealista.pt/en/geo/comprar-empreendimentos/avenida-barbosa-du-bocage-avenidas-novas-lisboa/",
+    "https://www.imovirtual.com/en/resultados/comprar/empreendimento/lisboa/lisboa",
+    "https://www.kwportugal.pt/en/Empreendimento/Lisboa/Lisboa/Avenidas-Novas/43",
+    "https://www.n2am.pt/en/projetos/bocage-65",
+    "https://www.remax.pt/en/empreendimento/bocage-65/7998"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-agent",
+   "slug": "bocage-65-lisbon"
+  },
+  {
+   "name": "Estrela 75",
+   "developer": "Omirbi (from the contact email on the project site); marketed by Infante & Riu - Portugal Real Estate",
+   "area": "Estrela / Lapa (Calçada da Estrela), Lisbon",
+   "country": "Portugal",
+   "market": "Lisbon",
+   "stage": "under construction",
+   "url": "https://estrela75.com/apresentacao/",
+   "docs_url": "https://estrela75.com/apartamentos/",
+   "permit_number": null,
+   "seed": {
+    "price": 1600000,
+    "currency": "EUR",
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 9,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Development is under construction (Imovirtual list badge)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.imovirtual.com/en/resultados/comprar/empreendimento/lisboa"
+    },
+    {
+     "claim": "Private areas 152 to 310 m2 on developer site vs 152 to 273 m2 on agent and portal pages",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://www.portadafrente.com/pt/imoveis/estrela-75-venda-a0cTg000005TgKOIA0"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "T2+1",
+     "T3+1",
+     "T4+1"
+    ],
+    "size_min_m2": 152,
+    "size_max_m2": 310,
+    "price_min": 1600000,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Nine-apartment rehabilitation of a historic building on Calçada da Estrela, with original ceilings kept. Developer site shows no permit, escrow, completion date or progress. Price is the lowest T2 seen on an agent page (1,600,000 EUR). The developer name is inferred from the site's contact email only.",
+   "positives": [
+    "Developer site is live and lists unit types and areas",
+    "Agent pages show unit-level prices"
+   ],
+   "flags": [],
+   "sources": [
+    "https://estrela75.com/",
+    "https://estrela75.com/apresentacao/",
+    "https://lisbonproperty.com/developments/estrela-75/",
+    "https://www.imovirtual.com/en/resultados/comprar/empreendimento/lisboa",
+    "https://www.imovirtual.com/pt/empreendimento/estrela-75-ID1iEoi",
+    "https://www.portadafrente.com/pt/imoveis/estrela-75-venda-a0cTg000005TgKOIA0",
+    "https://www.quintelaepenalva.pt/empreendimento/estrela-75/21615966"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-agent",
+   "slug": "estrela-75-lisbon"
+  },
+  {
+   "name": "Vila Graça",
+   "developer": "Mello RDC (family office led by António Ribeiro da Cunha); marketed by JLL Residential and Dils Portugal",
+   "area": "Graça / São Vicente (Santa Engrácia), Lisbon",
+   "country": "Portugal",
+   "market": "Lisbon",
+   "stage": "under construction",
+   "url": "https://www.imovirtual.com/pt/empreendimento/vila-graca-ID1izcP",
+   "docs_url": "https://construir.pt/2026/06/18/mello-rdc-reforca-aposta-em-lisboa-com-empreendimento-residencial-vila-graca",
+   "permit_number": null,
+   "seed": {
+    "price": 580000,
+    "currency": "EUR",
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "2028",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 17,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Under construction (Imovirtual badge on JLL and Dils listings)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.imovirtual.com/pt/resultados/comprar/empreendimento/lisboa/lisboa/sao-vicente"
+    },
+    {
+     "claim": "Completion expected 2028, investment about 10 million EUR, prices from 580,000 EUR",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://jornaleconomico.sapo.pt/noticias/mello-rdc-investe-10-milhoes-no-vila-graca-em-lisboa/"
+    },
+    {
+     "claim": "Jornal Económico says the developer 'will go ahead' with the project in June 2026, which may mean works only recently started, while portals say under construction",
+     "status": "contradicted",
+     "by": "independent",
+     "source": "https://jornaleconomico.sapo.pt/noticias/mello-rdc-investe-10-milhoes-no-vila-graca-em-lisboa/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "construction_start": null,
+    "handover_promised": "2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "T2",
+     "T2+1",
+     "T3+1"
+    ],
+    "size_min_m2": 81,
+    "size_max_m2": 156,
+    "price_min": 580000,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "17-apartment new-build in Graça with a rooftop pool, announced by Mello RDC in June 2026 for completion in 2028. I did not open a developer-owned page, so the url is the JLL listing on Imovirtual. Under construction status comes only from portals and the press wording is ambiguous, so confirm site status.",
+   "positives": [
+    "Developer, investment size, completion year and starting price confirmed in a national business newspaper",
+    "Marketed through JLL Residential and Dils"
+   ],
+   "flags": [],
+   "sources": [
+    "https://construir.pt/2026/06/18/mello-rdc-reforca-aposta-em-lisboa-com-empreendimento-residencial-vila-graca",
+    "https://jornaleconomico.sapo.pt/noticias/mello-rdc-investe-10-milhoes-no-vila-graca-em-lisboa/",
+    "https://www.imovirtual.com/pt/empreendimento/vila-graca-ID1ivOF",
+    "https://www.imovirtual.com/pt/empreendimento/vila-graca-ID1izcP",
+    "https://www.imovirtual.com/pt/resultados/comprar/empreendimento/lisboa/lisboa/sao-vicente"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-05",
+   "found_by": "discover-agent",
+   "slug": "vila-gra-a-lisbon"
   }
  ]
 }
