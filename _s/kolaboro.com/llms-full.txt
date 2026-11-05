@@ -1,6 +1,6 @@
 # Kolaboro: full guide for AI assistants
 
-Generated 2026-11-05T07:21:26Z by the Kolaboro data catalog job from https://kolaboro.com/data/catalog.json and https://kolaboro.com/docs/api/openapi.json. The short version is https://kolaboro.com/llms.txt.
+Generated 2026-11-05T07:24:04Z by the Kolaboro data catalog job from https://kolaboro.com/data/catalog.json and https://kolaboro.com/docs/api/openapi.json. The short version is https://kolaboro.com/llms.txt.
 
 ## What Kolaboro is
 Kolaboro trains local people, guided by an AI copilot, to verify off-plan property for overseas buyers before each payment: land title and permit checks, site visits with GPS-stamped photos timestamped in Bitcoin, computer-vision "plan vs reality" checks and weekly Sentinel-2 satellite watch. Buyers pay; developers never pay. Launching in Bali and recruiting the first local agents; desk research covers 878 off-plan projects in 144 markets and 76 countries (1 Nov 2026), 7,572 developer claims tested, each check rated by source (official register, independent source, developer only, contradicted, not published). An automated second check of 485 claims in 50 random projects found a 2.2% error rate among checkable claims (see /corrections/). Pre-purchase check €490, construction monitoring €99 a month. (from https://kolaboro.com/llms.txt)
@@ -22,8 +22,8 @@ Advertised prices, yields and dates are what developers advertise, not verified 
 - Answers of /api/open/* and the partner feed are signed: x-kolaboro-signature is base64 Ed25519 over "kolaboro-sig-v1\n" + the SHA-256 hex of the body; key id in x-kolaboro-key-id; public keys at https://kolaboro.com/.well-known/kolaboro-keys.json. x-kolaboro-dataset-sha256 names the dataset file an answer came from.
 - Every day a public log head is recorded (https://kolaboro.com/log), timestamped in Bitcoin and in Sigstore Rekor; GET /api/open/log, /api/open/checkpoint and the proof endpoints let anyone check it.
 
-## Datasets (57, 113 files, 15.0 MB)
-Catalog: https://kolaboro.com/data/ (DCAT-AP: https://kolaboro.com/data/catalog.jsonld). Contracts pass for 75 of 76 files; datasets late at measurement: 1. Freshness now: GET https://kolaboro.com/api/x/data/freshness
+## Datasets (54, 110 files, 12.2 MB)
+Catalog: https://kolaboro.com/data/ (DCAT-AP: https://kolaboro.com/data/catalog.jsonld). Contracts pass for 67 of 67 files; datasets late at measurement: 1. Freshness now: GET https://kolaboro.com/api/x/data/freshness
 
 ### Data about projects and markets
 
@@ -37,15 +37,15 @@ Tracked off-plan projects (anonymous) (id: bali-cases)
 What developers advertise, by market (id: world-claims)
   URL: https://kolaboro.com/data/world-claims.json
   Per market: how many tracked projects, title and lease terms advertised, guaranteed-return language, permit claims, permit numbers and plans published, and advertised USD prices. Aggregates only.
-  Size 396.9 KB; 170 markets; SHA-256 48f15f99fc27eefd65dc972a59e24fe3402ddd4be02ee31f4d40fa53624d8789; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: weekly research run (Monday 06:17 UTC) and every time the research files change. Last updated: 2026-11-05. Freshness target 10 days.
+  Size 397.0 KB; 170 markets; SHA-256 5741b570b2443c2160203e7f883fd91340b33498b223e7405f6ca505ef23f346; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: weekly research run (Monday 06:17 UTC) and every time the research files change. Last updated: 2026-11-04. Freshness target 10 days.
   Schema: https://kolaboro.com/api/x/data/schema/world-claims.json
 
 What developers advertise in Bali (id: bali-claims)
   URL: https://kolaboro.com/data/bali-claims.json
   The same aggregate as world-claims for the Bali market alone: title and lease terms, guaranteed-return language, permit claims and numbers, plans and advertised prices.
-  Size 2.1 KB; not a table; SHA-256 4e846124636359bc7ccd3fb53579ff82d2c4c1a41908bcd39c4e7d9413795e91; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: weekly research run (Monday 06:17 UTC) and every time the research files change. Last updated: 2026-11-05. Freshness target 10 days.
+  Size 2.1 KB; not a table; SHA-256 ce806d6296cb065a2e6f8aa87bc99835c182fed5069794832f3c246c68359563; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: weekly research run (Monday 06:17 UTC) and every time the research files change. Last updated: 2026-11-04. Freshness target 10 days.
   Schema: https://kolaboro.com/api/x/data/schema/bali-claims.json
 
 Projects table (Parquet) (id: kolaboro-parquet)
@@ -70,8 +70,8 @@ Parquet export manifest (id: kolaboro-parquet-manifest)
 Dated developer promises (id: promises)
   URL: https://kolaboro.com/data/promises.json
   Every dated promise a developer made about a tracked project (handover, construction start, structure, other milestones, permits, rental programme), read from the research records, with its status today. Per project and per market.
-  Size 365.5 KB; 850 projects; SHA-256 cf2f1a81802777982367e154ebd17b14636d3cfe259fcfabbbda8bca3c612dd5; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: daily 11:23 UTC and after each research run. Last updated: 2026-11-05. Freshness target 3 days.
+  Size 361.4 KB; 850 projects; SHA-256 d5d933e496d87f92a8c6f05299d1085ba1e3e188d7201e2c1bd7767341bd9729; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: daily 11:23 UTC and after each research run. Last updated: 2026-11-04. Freshness target 3 days.
   Schema: https://kolaboro.com/api/x/data/schema/promises.json
 
 Promise drift on developer pages (id: promise-drift)
@@ -224,30 +224,9 @@ Render index (id: image-index)
 Similar projects (id: similar)
   URL: https://kolaboro.com/data/similar.json
   For every public project, the 5 most similar other public projects: ids and rounded scores only (text similarity from an open sentence-embedding model run on the GitHub runner, plus structured similarity). Input is only the public bali-cases.json.
-  Size 158.6 KB; 1,011 projects; SHA-256 49408f5a35f4c06579422621cbdbf06f337e2ae9055676cf89ffd333ac733650; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: daily 02:23 UTC and after each research run. Last updated: 2026-11-05. Freshness target 3 days.
+  Size 0 bytes; not a table; SHA-256 None; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: daily 02:23 UTC and after each research run. Last updated: 2026-11-05T07:22:38Z. Freshness target 2 days.
   Schema: https://kolaboro.com/api/x/data/schema/similar.json
-
-Market points for the map (id: market-points)
-  URL: https://kolaboro.com/data/market-points.json
-  One public point per market (not per project), from Natural Earth and GeoNames, used to place anonymous projects on the map. Private per-project coordinates are never used.
-  Size 24.3 KB; 170 markets; SHA-256 de708db9a2d71e79b3fe4e056f74aaf2d584ce9da10b1e4f7bddf46f2f1afdf9; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: daily 02:23 UTC and after each research run. Last updated: 2026-11-05. Freshness target 3 days.
-  Schema: https://kolaboro.com/api/x/data/schema/market-points.json
-
-Change heatmap (id: changes)
-  URL: https://kolaboro.com/data/changes.json
-  Day by day, the last published bali-cases.json of each day compared with the previous day's copy: new projects, page edits (page fingerprint changed), price band moves, date moves and register changes, counted per market over rolling windows. A project counts once per kind and market in a window.
-  Size 70.7 KB; 7 days compared; SHA-256 fc4801d07b7079f4c798a9ea14b7bd81ed47a4c357c408cd676dde0c99094998; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: weekly, Monday 06:23 UTC, and when the digest code changes. Last updated: 2026-11-05T07:09:20Z. Freshness target 9 days.
-  Schema: https://kolaboro.com/api/x/data/schema/changes.json
-
-Weekly market digest (id: digest)
-  URL: https://kolaboro.com/data/digest.json
-  Per ISO week: new projects, changes and alerts by market, built from the public bali-cases, promises, register-checks and stalled-sites files. An AI model may draft only the intro paragraph, and code checks every number in it.
-  Size 48.1 KB; 2 weeks; SHA-256 038a5bb998be5d60a5e3f4543387c76785aa7421a39cf1ed2daf3c47678c361c; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: weekly, Monday 06:23 UTC, and when the digest code changes. Last updated: 2026-11-05T07:09:17Z. Freshness target 9 days.
-  Schema: https://kolaboro.com/api/x/data/schema/digest.json
 
 Mystery shopper programme (id: mystery-shopper)
   URL: https://kolaboro.com/data/mystery-shopper.json
@@ -296,8 +275,8 @@ Site QA crawl (id: qa)
 Synthetic user journeys (id: journeys)
   URL: https://kolaboro.com/data/journeys.json
   A scripted buyer journey run in a real browser every hour: pass or fail per step, timings and the latest screenshots (journeys/1.webp to 5.webp).
-  Size 80.0 KB; 7 runs; SHA-256 08bb0c4d0961d4a5f8695b63941acb821d92a143821672c1bbc353cacd642cc1; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: hourly at minute 41. Last updated: 2026-11-05T02:44:40.632Z. Freshness target 2 hours.
+  Size 85.4 KB; 6 runs; SHA-256 6cafdcac128456048867cc6930618b153564d903c2cf1fe3971ab3439d9f7056; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: hourly at minute 41. Last updated: 2026-11-04T16:33:11.061Z. Freshness target 2 hours.
   Schema: https://kolaboro.com/api/x/data/schema/journeys.json
 
 Independent verifier run (id: verifiers)
@@ -331,8 +310,8 @@ Backup restore drill (id: restore)
 Deploy guard record (id: deploys)
   URL: https://kolaboro.com/data/deploys.json
   Each deploy of the site: smoke checks after it went live, and any automatic rollback.
-  Size 32.0 KB; 83 deploys; SHA-256 2ee5e83f94d0702b1b1361d707980d8c1c656927aee48987efbde4e1c32b2852; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: after each site deploy (event driven, checked every 30 minutes). Last updated: 2026-11-05T07:11:41Z.
+  Size 31.1 KB; 80 deploys; SHA-256 78dcebe780b708254ee54ef03f7a30a8ea35b162c62c2fa9a306a80e52bc7b6e; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: after each site deploy (event driven, checked every 30 minutes). Last updated: 2026-11-04T15:15:27Z.
   Schema: https://kolaboro.com/api/x/data/schema/deploys.json
 
 Site manifest (id: site-manifest)
@@ -345,8 +324,8 @@ Site manifest (id: site-manifest)
 Reproducible worker builds (id: builds)
   URL: https://kolaboro.com/data/builds.json
   Deterministic bundle of the site worker for each worker source tree that went live, built twice in clean folders; reproduced says whether both builds were identical.
-  Size 3.8 KB; 7 builds; SHA-256 b41ada310157b14e2023dd17776a1639b35d79175bcce6db226d0618e59e8c9d; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: checked every 30 minutes, written when the worker changes. Last updated: 2026-11-04T23:44:51Z.
+  Size 3.5 KB; 6 builds; SHA-256 f8b938604cae769560870c136f4bb3caebbeb139d32fc872d7c1cd700256c5f2; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: checked every 30 minutes, written when the worker changes. Last updated: 2026-11-04T18:02:45Z.
   Schema: https://kolaboro.com/api/x/data/schema/builds.json
 
 Property-based tests of the scoring rules (id: property-tests)
@@ -359,37 +338,37 @@ Property-based tests of the scoring rules (id: property-tests)
 Shipping log (id: shipping)
   URL: https://kolaboro.com/data/shipping.json
   Ships (commits by people, or by Claude working for one) and data updates per UTC day from the git history of the live branch, streaks, engineering metrics and day summaries written by an AI model and checked in code.
-  Size 89.6 KB; 12 days; SHA-256 bc67a6feafaa0cc247fc9109e333076a4429179259f0fff9cbd424774ba0dff1; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: hourly at minute 19. Last updated: 2026-11-05T07:03:25Z. Freshness target 2 hours.
+  Size 0 bytes; not a table; SHA-256 None; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: hourly at minute 19. Last updated: 2026-11-05T07:19:47Z. Freshness target 2 hours.
   Schema: https://kolaboro.com/api/x/data/schema/shipping.json
 
 Roadmap items verified live (id: roadmap-sync)
   URL: https://kolaboro.com/data/roadmap-sync.json
   Roadmap items that link to the live page delivering them. An item counts as shipped only when the page answers HTTP 200, its canonical link is that page and its HTML contains the marker text.
-  Size 10.6 KB; 36 items; SHA-256 4df687f668b88feb0967e241287d086e283a0e883339bfb96d941b6c24f2bada; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: hourly at minute 19 (shipping log job). Last updated: 2026-11-05T07:03:25Z. Freshness target 2 hours.
+  Size 0 bytes; not a table; SHA-256 None; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: hourly at minute 19 (shipping log job). Last updated: 2026-11-05T07:19:47Z. Freshness target 2 hours.
   Schema: https://kolaboro.com/api/x/data/schema/roadmap-sync.json
 
 Page weight (id: page-weight)
   URL: https://kolaboro.com/data/page-weight.json
   Bytes transferred for one cold load of key pages (compressed size plus headers, measured in Chrome), first-party bytes split by resource type, against page-weight budgets.
-  Size 31.8 KB; 40 page loads; SHA-256 c49f3fc16acf27846428a977b3092f257304ca46f73057d8e155881b379900ac; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: daily 06:41 UTC. Last updated: 2026-11-05T07:04:02.270Z. Freshness target 2 days.
+  Size 0 bytes; not a table; SHA-256 None; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: daily 06:41 UTC. Last updated: 2026-11-05T07:24:07Z. Freshness target 2 days.
   Schema: https://kolaboro.com/api/x/data/schema/page-weight.json
 
 Visual regression tests (id: visual-tests)
   URL: https://kolaboro.com/data/visual-tests.json
   Key pages captured in Chromium at 390 and 1440 px and compared pixel by pixel with the previous run, with the share of changed pixels per page.
-  Size 9.2 KB; 40 captures; SHA-256 bab42e8d57b5f3a7eed0d4e36ab416107004a47dc934d9b36f914ad8515332a6; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: daily 06:41 UTC. Last updated: 2026-11-05T07:04:02.270Z. Freshness target 2 days.
+  Size 0 bytes; not a table; SHA-256 None; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: daily 06:41 UTC. Last updated: 2026-11-05T07:24:07Z. Freshness target 2 days.
   Schema: https://kolaboro.com/api/x/data/schema/visual-tests.json
 
 ### Map tiles used by the checks
 
 Coastline outline tiles (id: coast-tiles)
   URL: https://kolaboro.com/data/coast/ (36 files)
-  Natural Earth 1:10m land outline (public domain, via world-atlas 2.0.2) cut into 10 degree tiles, quantised and delta-encoded, used by the hazards check only when no OpenStreetMap server answers. Every tile exists; open-ocean tiles are empty.
-  Size 2.4 MB; 36 tiles; SHA-256 ddf78ea7cc348a03760325c95909466162c6e52fd20d1270360cc36585e82e28; licence Public domain (Natural Earth).
+  Natural Earth 1:10m land outline (public domain, via world-atlas 2.0.2) cut into 10 degree tiles (published as one file per 10 degree column of longitude), quantised and delta-encoded, used by the hazards check only when no OpenStreetMap server answers. Every tile exists; open-ocean tiles are empty.
+  Size 0 bytes; 36 tiles; SHA-256 31364073345c9ad1a97b158dd6482199b5fde71da754a574e4d64ec1632381ee; licence Public domain (Natural Earth).
   Updates: static, built once. Last updated: 2026-11-05T07:18:43Z.
   Schema: https://kolaboro.com/api/x/data/schema/coast-tiles.json
 
@@ -419,15 +398,15 @@ Sample photo progress analysis (id: progress-sample)
 
 findings-by-project.json (id: undescribed-findings-by-project-json)
   URL: https://kolaboro.com/data/findings-by-project.json
-  Not yet described in the catalog registry. The file describes itself as: Per project id: when the hourly check last read the developer page (fp = first 16 hex of the SHA-256 of the page text) and its findings, newest first. Same rules as /data/live-findings.json.
-  Size 13.9 KB; not a table; SHA-256 1b267333e479a0619976e94beac314537329dd6ef3d2695dc15daf378f9180c7; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: unknown. Last updated: 2026-11-05T07:13:22Z.
+  Published under /data/ but not yet described in the catalog registry.
+  Size 0 bytes; not a table; SHA-256 None; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-05T07:21:26Z.
 
 live-findings.json (id: undescribed-live-findings-json)
   URL: https://kolaboro.com/data/live-findings.json
-  Not yet described in the catalog registry. The file describes itself as: Every hour a GitHub Actions job re-reads the developer pages of the tracked projects that were checked longest ago (round robin over all 1011 projects with a public id), asks claude-haiku-5-5 for concrete facts with an exact quote each, and publishes a finding only when a fact is new or changed compared with what we stored for that project.
-  Size 14.5 KB; not a table; SHA-256 2ad1130812f73eede501bed09c5056c98d77df13528473fa4197c38697ae7618; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: unknown. Last updated: 2026-11-05T07:13:22Z.
+  Published under /data/ but not yet described in the catalog registry.
+  Size 0 bytes; not a table; SHA-256 None; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
+  Updates: unknown. Last updated: 2026-11-05T07:21:26Z.
 
 ## API (65 operations)
 OpenAPI 3.1: https://kolaboro.com/docs/api/openapi.json. Try any call in the browser: https://kolaboro.com/docs/api/explorer/. Base URL https://kolaboro.com, all GET.
