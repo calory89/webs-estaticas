@@ -1,22 +1,22 @@
 {
  "name": "Kolaboro open dataset, Parquet",
  "version": 1,
- "generated": "2026-11-05T16:55:23Z",
+ "generated": "2026-11-05T16:58:33Z",
  "license": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
  "source": {
   "url": "https://kolaboro.com/data/bali-cases.json",
-  "sha256": "2885f5d0e9ed52258dc8202b3e74f2f9e1cc6c2e1423ed6b69149031e36d947b",
+  "sha256": "8f5decbe28f61470ecd5775ca3e8403045c958ee9a03b5744fcbcd7613231606",
   "updated": "2026-11-05",
-  "projects": 1108
+  "projects": 1116
  },
  "files": [
   {
    "path": "/data/kolaboro.parquet",
    "table": "projects",
    "description": "one row per tracked project",
-   "rows": 1108,
-   "bytes": 71105,
-   "sha256": "d1592b4695e6291d8dee55c25a41c43c1bfb0d0dba14e3616dc165c42e162b0b",
+   "rows": 1116,
+   "bytes": 71304,
+   "sha256": "dcd0d097d8a1f467b5755b1f39ac3a4a7217c9f5382fb53e058e90f911eace8d",
    "columns": [
     {
      "name": "id",
@@ -193,8 +193,8 @@
    "table": "markets",
    "description": "one row per market, same method as /api/open/markets",
    "rows": 170,
-   "bytes": 7700,
-   "sha256": "13e35c3ebbe0bd01a70adf87d1123d54b954be7c379c179cc2ea890c602692f8",
+   "bytes": 7713,
+   "sha256": "afda06abb70077225b0ef92873f987e1fa63ccfe848f998a449206357a9e458c",
    "columns": [
     {
      "name": "market",
