@@ -190,7 +190,7 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   function scroller(label, html) { return '<div class="qa-scroll" tabindex="0" role="region" aria-label="' + e(label) + '">' + html + '</div>'; }
   function get(u) { return fetch(u, { cache: 'no-store' }).then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }); }
 
-  if (kind === 'visual') get('/data/quality.json').then(function (q) { var d = q.visual; if (!d) throw new Error('none');
+  if (kind === 'visual') get('/data/quality.json?h=' + new Date().toISOString().slice(0, 13)).then(function (q) { var d = q.visual; if (!d) throw new Error('none');
     var s = d.summary || {}, by = {}, h = '';
     h += '<p class="qa-when">Latest run: <b>' + e(when(d.updated)) + '</b>, ' + e(s.checks) + ' screenshots in ' + e(d.seconds) + ' s. Source: <a href="/data/quality.json">/data/quality.json</a> (key "visual").</p>';
     h += tiles([[s.pass, 'unchanged since the previous run', 'ok'], [s.changed, 'changed (more than ' + d.changed_threshold_pct + '% of pixels)', s.changed ? 'no' : 'ok'], [s.new_baseline, 'first capture (no previous run to compare)'], [s.errors, 'could not load', s.errors ? 'no' : '']]);
@@ -213,7 +213,7 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
     root.innerHTML = h;
   }).catch(function () { fail('The first visual test run has not been published yet. It appears here after the daily quality job runs.'); });
 
-  if (kind === 'weight') get('/data/quality.json').then(function (q) { var d = q.weight; if (!d) throw new Error('none');
+  if (kind === 'weight') get('/data/quality.json?h=' + new Date().toISOString().slice(0, 13)).then(function (q) { var d = q.weight; if (!d) throw new Error('none');
     var pages = d.pages || [], h = '';
     var over = d.breaches || [];
     h += '<p class="qa-when">Latest run: <b>' + e(when(d.updated)) + '</b>, ' + e(pages.length) + ' page loads. Source: <a href="/data/quality.json">/data/quality.json</a> (key "weight").</p>';
