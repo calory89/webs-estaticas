@@ -1,0 +1,58 @@
+name: Kolaboro weekly digest
+# Weekly market digest (/digest/, /digest/<yyyy-ww>/, /digest/feed.xml) and change heatmap (/changes/), block X6.
+# Built from the public /data/ files of kolaboro.com and their git history on pub/_lovable (GitHub API, one copy per day).
+# claude-sonnet-5-5 may draft the intro paragraph only; code checks every number in it against the counts, else a template is used.
+on:
+  schedule:
+    - cron: '23 6 * * 1'     # every Monday: the week just ended
+  workflow_dispatch:
+    inputs:
+      no_ai:
+        description: "Skip the AI intro (yes/no)"
+        default: "no"
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-digest
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: tools/kolaboro-digest
+      - name: Build
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          set -e
+          git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          I=$RUNNER_TEMP/in; O=$RUNNER_TEMP/out; mkdir -p $I $O
+          K=_s/kolaboro.com
+          git show FETCH_HEAD:$K/promises/index.html > $I/shell.html
+          git show FETCH_HEAD:$K/data/digest.json > $I/digest.json 2>/dev/null || true
+          F=""; [ "${{ github.event.inputs.no_ai }}" = "yes" ] && F="--no-ai"
+          python3 tools/kolaboro-digest/digest.py --repo ${{ github.repository }} --shell $I/shell.html --prev $I/digest.json --out $O --cache $RUNNER_TEMP/cache $F | tee $RUNNER_TEMP/summary.json
+          echo '### Weekly digest' >> $GITHUB_STEP_SUMMARY; echo '```' >> $GITHUB_STEP_SUMMARY; cat $RUNNER_TEMP/summary.json >> $GITHUB_STEP_SUMMARY; echo '```' >> $GITHUB_STEP_SUMMARY
+      - name: Publish to kolaboro.com
+        run: |
+          set -e
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          O=$RUNNER_TEMP/out; K=_s/kolaboro.com
+          git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          for i in 1 2 3 4 5; do
+            P=$(git rev-parse FETCH_HEAD)
+            export GIT_INDEX_FILE=$RUNNER_TEMP/idx; rm -f $GIT_INDEX_FILE; git read-tree $P
+            (cd $O && find data digest changes -type f) | while read f; do
+              H=$(git hash-object -w "$O/$f"); git update-index --add --cacheinfo 100644,$H,$K/$f
+            done
+            T=$(git write-tree --missing-ok); unset GIT_INDEX_FILE
+            [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
+            C=$(git commit-tree $T -p $P -m "kolaboro.com: weekly digest and change heatmap $(date -u +%F)")
+            git push -q origin $C:refs/heads/pub/_lovable && exit 0
+            sleep 5; git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          done; exit 1
