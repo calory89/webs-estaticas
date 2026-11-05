@@ -303,7 +303,7 @@ try:
         if not pid or not r.get('kdh') or (pid, r['kdh'][0]) in seen_ih:
             continue
         seen_ih.add((pid, r['kdh'][0]))
-        items.append([pid, r['u'], r['kdh'][0], r['kdh'][1]])
+        items.append([pid, '', r['kdh'][0], r['kdh'][1]])   # image URL left empty: it is on the developer's domain and would identify the project (anonymity rule)
     if len(items) >= 200:
         ih = {'generated': datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'), 'algo': 'kdh1',
               'fields': ['case_id', 'image_url', 'kdh1_full', 'kdh1_center70'], 'images': len(items),
