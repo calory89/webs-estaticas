@@ -24,7 +24,53 @@
 <script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',region:["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});try{if(localStorage.getItem('kb-consent')==='yes')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}</script><script>addEventListener("load",function(){setTimeout(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V";document.head.appendChild(s)},1500)})</script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');gtag('config','G-H5TGZJ1KNG');</script>
 
 <link rel="alternate" type="application/rss+xml" title="Kolaboro: what we shipped" href="/feed.xml">
-<link rel="stylesheet" href="/findings/f.css?v=a8de9e228d">
+<style>
+/* Live findings page (/findings/): hourly developer page check */
+.fd-hero{padding:clamp(32px,5vw,72px) 0 28px}
+.fd-hero h1{font-size:clamp(2.1rem,5.2vw,4.4rem);line-height:.98;letter-spacing:-.03em;max-width:16ch}
+.fd-hero .lead{margin-top:16px;max-width:66ch}
+.fd-sec{padding:clamp(32px,5vw,60px) 0;border-top:1px solid var(--line)}
+.fd-sec h2{font-size:clamp(1.45rem,3vw,2.1rem);max-width:30ch;margin:0}
+.fd-sec .lead{max-width:66ch;margin-top:12px}
+.fd-n{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:24px}
+.fd-n div{background:var(--paper);padding:16px 18px;min-width:0}
+.fd-n b{display:block;font-size:clamp(1.35rem,3vw,2rem);letter-spacing:-.02em;line-height:1.05;font-variant-numeric:tabular-nums}
+.fd-n span{display:block;margin-top:6px;color:var(--muted);font-size:.86rem}
+@media(max-width:760px){.fd-n{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.fd-st{margin-top:12px;font-size:.9rem;color:var(--muted)}
+.fd-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.fd-raw{font-size:.88rem;font-weight:700}
+.fd-filters{display:flex;flex-wrap:wrap;align-items:center;gap:8px 10px;margin-top:18px}
+.fd-filters label{font-size:.85rem;font-weight:700;color:var(--muted)}
+.fd-filters select{min-height:44px;padding:6px 10px;border:1px solid #C9CCC6;border-radius:12px;font:inherit;font-size:.95rem;background:#fff;color:var(--ink);max-width:100%}
+.fd-filters select:focus-visible{outline:3px solid var(--hivis);outline-offset:1px}
+.fd-count{margin-top:12px;font-size:.9rem;color:var(--muted);min-height:1.2em}
+.fd-l{list-style:none;margin:8px 0 0;padding:0;display:grid;gap:8px}
+.fd-l li{min-width:0}
+.fd-l a{display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 14px;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:#FAFAF8;color:var(--ink);text-decoration:none}
+.fd-l a:hover{border-color:var(--ink)}
+.fd-l a:focus-visible{outline:3px solid var(--hivis);outline-offset:2px}
+.fd-t{grid-row:span 2;font-size:.8rem;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap;min-width:84px}
+.fd-t b{display:block;color:var(--ink);font-size:.9rem}
+.fd-x{margin:0;font-size:.98rem;line-height:1.4;overflow-wrap:anywhere}
+.fd-m{display:flex;flex-wrap:wrap;gap:6px;font-size:.74rem;color:var(--muted)}
+.fd-m em{font-style:normal;font-weight:700;color:#59626B;border:1px solid var(--line);border-radius:5px;padding:0 5px;letter-spacing:.03em;text-transform:uppercase}
+.fd-m em.k-changed{border-color:#FF5B14;color:#B83A05}.fd-m em.k-removed{border-color:#B83A05;color:#B83A05}.fd-m em.k-missing{border-color:#B83A05;color:#B83A05}.fd-m em.k-new{border-color:#0E9F6E;color:#0B6B4B}
+.fd-m code{font-size:.72rem;overflow-wrap:anywhere}
+.fd-sk{height:64px;border-radius:12px;background:#F2F3F1}
+.fd-none{padding:16px;border:1px dashed var(--line);border-radius:12px;color:var(--muted);font-size:.95rem}
+.fd-more{margin-top:14px;min-height:44px}
+.fd-scroll{overflow-x:auto;margin-top:16px;-webkit-overflow-scrolling:touch}
+.fd-tbl{width:100%;border-collapse:collapse;font-size:.88rem;font-variant-numeric:tabular-nums;min-width:820px}
+.fd-tbl th,.fd-tbl td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+.fd-tbl th{font-size:.76rem;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.fd-tbl .n{text-align:right}
+.fd-small{font-size:.86rem;color:var(--muted);margin-top:14px;max-width:80ch}
+.fd-faq{margin:16px 0 0;max-width:76ch}
+.fd-faq dt{font-weight:800;margin-top:18px}
+.fd-faq dd{margin:6px 0 0;line-height:1.55}
+@media(max-width:600px){.fd-l a{grid-template-columns:minmax(0,1fr)}.fd-t{grid-row:auto;display:flex;gap:8px;align-items:baseline}.fd-t b{display:inline}}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -81,7 +127,77 @@
 </dl>
 <p class="fd-small">Data: <a href="/data/live-findings.json">/data/live-findings.json</a> (last 500 findings and the run log) and <a href="/data/findings-by-project.json">/data/findings-by-project.json</a> (per project id), CC BY 4.0, credit Kolaboro. Related: <a href="/promises/">promise tracker</a>, <a href="/status">status</a>, <a href="/log/">public log</a>.</p>
 </div></section>
-<script src="/findings/f.js?v=1c8a9a944b" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+/* Live findings page: renders /data/live-findings.json (hourly developer page check). No quotes, no names: ids and markets only. */
+(function () {
+  var $ = function (id) { return document.getElementById(id); };
+  var N = $('fdn'), L = $('fdl'), C = $('fdc'), MORE = $('fdmore'), SM = $('fdm'), SK = $('fdk'), SF = $('fdf'), R = $('fdr'), TOT = $('fdtot'), ST = $('fdst');
+  if (!L) return;
+  var all = [], shown = 40;
+  var KIND = { changed: 'Changed', 'new': 'Newly published', removed: 'Removed', missing: 'Permit claimed, no number', first: 'First reading' };
+  function esc(t) { return String(t == null ? '' : t).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function fmt(n) { return Number(n || 0).toLocaleString('en-US'); }
+  function utc(iso) { return String(iso || '').slice(0, 16).replace('T', ' '); }
+  function dm(iso) { try { return new Date(iso).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', timeZone: 'UTC' }); } catch (e) { return String(iso).slice(0, 10); } }
+  function hm(iso) { return String(iso || '').slice(11, 16) + ' UTC'; }
+  function ago(iso) { var m = Math.floor((Date.now() - Date.parse(iso)) / 60000); if (!(m >= 0)) return ''; if (m < 60) return m + ' min ago'; var h = Math.floor(m / 60); if (h < 48) return h + ' h ago'; return Math.floor(h / 24) + ' days ago'; }
+  var idOk = function (x) { return /^[A-Z]{2,5}-\d{3,4}$/.test(String(x || '')); };
+  function qs(k) { try { return new URLSearchParams(location.search).get(k) || ''; } catch (e) { return ''; } }
+  function setQs() {
+    try { var p = new URLSearchParams(); if (SM.value) p.set('market', SM.value); if (SK.value) p.set('kind', SK.value); if (SF.value) p.set('fact', SF.value);
+      var s = p.toString(); history.replaceState(null, '', location.pathname + (s ? '?' + s : '') + location.hash); } catch (e) {}
+  }
+  function list() {
+    var m = SM.value, k = SK.value, f = SF.value;
+    var rows = all.filter(function (x) { return (!m || x.market === m) && (!k || x.kind === k) && (!f || x.fact === f); });
+    C.textContent = rows.length ? fmt(rows.length) + ' finding' + (rows.length === 1 ? '' : 's') + (m || k || f ? ' match these filters' : ' in the rolling file (last 500)') : '';
+    if (!rows.length) { L.innerHTML = '<li class="fd-none">' + (all.length ? 'No findings match these filters yet. Each hourly run adds more.' : 'No findings yet. The first hourly runs are reading pages now; this page shows only real ones.') + '</li>'; MORE.hidden = true; return; }
+    L.innerHTML = rows.slice(0, shown).map(function (x) {
+      var href = idOk(x.project) ? '/p/' + x.project + '/' : '/cases';
+      return '<li><a href="' + href + '"><span class="fd-t"><b>' + esc(dm(x.at)) + '</b>' + esc(hm(x.at)) + '</span><p class="fd-x">' + esc(x.text) + '</p>' +
+        '<span class="fd-m"><em class="k-' + esc(x.kind) + '">' + esc(KIND[x.kind] || x.kind) + '</em><em>' + esc(x.fact) + '</em><span>' + esc(x.market) + '</span>' +
+        (x.q ? '<span>quote <code>' + esc(x.q) + '</code></span>' : '') + (x.fp ? '<span>page <code>' + esc(x.fp) + '</code></span>' : '') + '</span></a></li>';
+    }).join('');
+    MORE.hidden = rows.length <= shown;
+    MORE.textContent = 'Show more (' + fmt(rows.length - shown) + ' left)';
+  }
+  function opts(sel, vals, cur) {
+    vals.forEach(function (v) { var o = document.createElement('option'); o.value = v[0]; o.textContent = v[1]; sel.appendChild(o); });
+    if (cur && vals.some(function (v) { return v[0] === cur; })) sel.value = cur;
+  }
+  function render(j) {
+    all = (j.findings || []).filter(function (x) { return x && x.at && x.text; });
+    var runs = (j.runs || []).slice().reverse(), t = j.totals || {}, last = runs[0];
+    var mk = {}, fa = {};
+    all.forEach(function (x) { mk[x.market] = (mk[x.market] || 0) + 1; fa[x.fact] = (fa[x.fact] || 0) + 1; });
+    opts(SM, Object.keys(mk).sort().map(function (m) { return [m, m + ' (' + mk[m] + ')']; }), qs('market'));
+    opts(SF, Object.keys(fa).sort().map(function (m) { return [m, m.charAt(0).toUpperCase() + m.slice(1) + ' (' + fa[m] + ')']; }), qs('fact'));
+    if (qs('kind')) SK.value = qs('kind');
+    var cov = j.coverage || {};
+    N.innerHTML = '<div><b>' + fmt(t.findings) + '</b><span>findings published since ' + esc(t.since ? dm(t.since) : 'the first run') + '</span></div>' +
+      '<div><b>' + fmt(t.pages_fetched) + '</b><span>developer pages read in ' + fmt(t.runs) + ' hourly run' + (t.runs === 1 ? '' : 's') + '</span></div>' +
+      '<div><b>' + fmt(cov.projects_read_by_hourly_check) + ' of ' + fmt(cov.projects_tracked) + '</b><span>projects read by the hourly check so far</span></div>' +
+      '<div><b>' + (last ? Number(last.usd || 0).toFixed(3) : '0') + ' USD</b><span>cost of the last run (budget 0.25)</span></div>';
+    if (last) ST.textContent = 'Last run ' + utc(last.at) + ' UTC, ' + ago(last.at) + ': ' + fmt(last.pages_fetched) + ' pages read, ' + fmt(last.findings) + ' findings, ' + fmt(last.no_change) + ' facts unchanged, ' + fmt((last.rejected_quote_not_found || 0) + (last.rejected_value_not_in_quote || 0)) + ' quotes rejected. Next run at about minute 34 of every hour.';
+    R.querySelector('tbody').innerHTML = runs.slice(0, 48).map(function (r) {
+      return '<tr><td>' + esc(utc(r.at)) + '</td><td class="n">' + fmt(r.projects_read) + '</td><td class="n">' + fmt(r.pages_fetched) + '</td><td class="n">' + fmt(r.unchanged_pages) + '</td><td class="n">' + fmt(r.pages_read_by_model) +
+        '</td><td class="n">' + fmt(r.findings) + '</td><td class="n">' + fmt(r.no_change) + '</td><td class="n">' + fmt((r.rejected_quote_not_found || 0) + (r.rejected_value_not_in_quote || 0)) +
+        '</td><td class="n">' + fmt(r.tokens_in) + ' / ' + fmt(r.tokens_out) + '</td><td class="n">' + Number(r.usd || 0).toFixed(4) + '</td></tr>';
+    }).join('') || '<tr><td colspan="10">No runs yet.</td></tr>';
+    TOT.textContent = 'All runs: ' + fmt(t.runs) + ' runs, ' + fmt(t.pages_read_by_model) + ' pages read by the model, ' + fmt(t.tokens_in) + ' tokens in and ' + fmt(t.tokens_out) + ' out, ' + Number(t.usd || 0).toFixed(3) + ' USD in total. Rejected quote = not found word for word on the page, or not containing the value.';
+    list();
+  }
+  [SM, SK, SF].forEach(function (s) { s.addEventListener('change', function () { shown = 40; setQs(); list(); }); });
+  MORE.addEventListener('click', function () { shown += 60; list(); });
+  fetch('/data/live-findings.json?t=' + Math.floor(Date.now() / 3e5), { cache: 'no-cache' }).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(render).catch(function () {
+    N.innerHTML = '<div><b>Starting</b><span>The first hourly run has not been published yet</span></div>';
+    L.innerHTML = '<li class="fd-none">The findings file is not published yet. The first hourly runs are reading pages now; this page shows only real findings.</li>';
+    R.querySelector('tbody').innerHTML = '<tr><td colspan="10">No runs published yet.</td></tr>';
+  });
+})();
+});
+</script>
 </main>
 <div class="mcta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="cta_sticky">Protect my purchase</a></div>
 <footer>
