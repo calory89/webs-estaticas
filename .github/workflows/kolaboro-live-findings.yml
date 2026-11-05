@@ -17,6 +17,7 @@ on:
         default: "500"
 permissions:
   contents: write
+  actions: read
 concurrency:
   group: kolaboro-live-findings
   cancel-in-progress: false
