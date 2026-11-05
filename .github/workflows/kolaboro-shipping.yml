@@ -1,0 +1,73 @@
+name: Kolaboro shipping log
+# Hourly (and on push of this job): reads the git history of the live branch pub/_lovable (_s/kolaboro.com/ and the kolaboro worker
+# modules), counts ships per UTC day, streaks, engineering metrics (deploy guard record, GitHub Actions runs, uptime), checks the
+# roadmap's linked pages, and publishes kolaboro.com/data/shipping.json, /data/roadmap-sync.json, /shipping/feed.xml, /shipping/feed.json.
+# Once a day is over, Claude turns that day's (privacy-filtered) commit subjects into plain-English lines, checked in code; a day page
+# /changelog/<date>/ is written automatically when none exists. A day page written by a person is never replaced.
+# Code: tools/kolaboro-ship/ship.py
+on:
+  schedule:
+    - cron: '19 * * * *'
+  push:
+    branches: [main]
+    paths: ['tools/kolaboro-ship/**', '.github/workflows/kolaboro-shipping.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+  actions: read
+concurrency:
+  group: kolaboro-shipping
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            .github/workflows/
+            tools/kolaboro-ship/
+            tools/kolaboro-agent/projects.json
+            tools/kolaboro-agent/projects-world.json
+      - name: History of the live branch (commits and trees only, no file contents)
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -e
+          git clone -q --bare --filter=blob:none --single-branch -b pub/_lovable \
+            "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "$RUNNER_TEMP/hist.git"
+          git --git-dir "$RUNNER_TEMP/hist.git" rev-list --count pub/_lovable
+      - name: Build the shipping log
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python3 tools/kolaboro-ship/ship.py --git "$RUNNER_TEMP/hist.git" --ref pub/_lovable --main . --out "$RUNNER_TEMP/out"
+      - name: Publish to kolaboro.com
+        run: |
+          set -e
+          O="$RUNNER_TEMP/out"
+          [ -s "$O/files.txt" ] || { echo "nothing to publish"; exit 0; }
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          for i in 1 2 3 4 5; do
+            P=$(git rev-parse FETCH_HEAD)
+            export GIT_INDEX_FILE=$RUNNER_TEMP/idx; rm -f $GIT_INDEX_FILE; git read-tree $P
+            while read -r F; do
+              [ -n "$F" ] || continue
+              case "$F" in
+                _s/kolaboro.com/changelog/*)
+                  # never replace a day page written by a person (re-checked against the newest tip on every try)
+                  if git cat-file -e "$P:$F" 2>/dev/null && ! git show "$P:$F" | grep -q 'name="kb-changelog-auto"'; then echo "skip human page $F"; continue; fi ;;
+              esac
+              H=$(git hash-object -w "$O/$F")
+              git update-index --add --cacheinfo 100644,$H,"$F"
+            done < "$O/files.txt"
+            T=$(git write-tree --missing-ok); unset GIT_INDEX_FILE
+            [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
+            C=$(git commit-tree $T -p $P -m "kolaboro.com: shipping log $(date -u +%FT%H:%M)")
+            git push -q origin $C:refs/heads/pub/_lovable && { echo "published $C"; exit 0; }
+            sleep 5; git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          done; exit 1
