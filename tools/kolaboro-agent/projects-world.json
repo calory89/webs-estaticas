@@ -176196,94 +176196,6 @@
    "slug": "mountain-residences-at-palmilla-reserve-los-cabos"
   },
   {
-   "name": "Waldorf Astoria Residences Costa Rica Punta Cacique",
-   "developer": "Revolution Places (per project tracker; developer page not opened)",
-   "area": "Punta Cacique, Gulf of Papagayo, Guanacaste",
-   "country": "Costa Rica",
-   "market": "Costa Rica",
-   "stage": "under construction",
-   "url": "https://www.oftmw.com/projects/waldorf-astoria-residences-costa-rica-punta-cacique/",
-   "docs_url": "https://www.oftmw.com/projects/waldorf-astoria-residences-costa-rica-punta-cacique/",
-   "permit_number": null,
-   "seed": {
-    "price": null,
-    "currency": null,
-    "title": null,
-    "lease_base": null,
-    "guaranteed_language": false,
-    "yield_pct": null,
-    "completion": "2026",
-    "permit_claim": false,
-    "permit_number": null,
-    "plans_published": false,
-    "escrow": null,
-    "progress_pct": null,
-    "progress_updates": false,
-    "developer_delivered": null,
-    "units": 22,
-    "payment_plan": null
-   },
-   "verification": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
-    "plans": "none",
-    "record": "none",
-    "returns": "none"
-   },
-   "claims": [
-    {
-     "claim": "Listed as the only Costa Rica project under construction, 3 floors, 22 units, 2026 completion, status verified 28 Oct 2026",
-     "status": "unverified",
-     "by": "none",
-     "source": "https://www.oftmw.com/markets/costa-rica/"
-    }
-   ],
-   "facts": {
-    "developer_founded": null,
-    "developer_hq": null,
-    "construction_start": null,
-    "handover_promised": "2026",
-    "original_handover": null,
-    "delay_months": null,
-    "unit_types": [],
-    "size_min_m2": null,
-    "size_max_m2": null,
-    "price_min": null,
-    "price_max": null,
-    "deposit_pct": null,
-    "foreign_ownership": null,
-    "rental_programme": null,
-    "lat": null,
-    "lng": null,
-    "permit_authority": null
-   },
-   "note": "Low confidence entry. I only saw a third-party project tracker (design team: Garnier Arquitectos, RoblesArq, EDSA, Gensler), not the developer's own page. It is also not confirmed that units are still on sale to foreign buyers. It was last reported about 8 weeks from delivery, so verify before adding.",
-   "positives": [
-    "Branded residence with a named developer and design team on the tracker"
-   ],
-   "flags": [],
-   "sources": [
-    "https://www.mannpublications.com/mannabouttown/2026/10/21/costa-ricas-peninsula-papagayo-breaks-ground-on-second-oceanfront-andaz-residences-neighborhood/",
-    "https://www.oftmw.com/markets/costa-rica/"
-   ],
-   "docs_listed": [],
-   "disclosure": {
-    "permit": false,
-    "escrow": false,
-    "progress": false,
-    "plans": false,
-    "record": false,
-    "no_guaranteed_returns": true,
-    "score": 1,
-    "all_six": false
-   },
-   "verified_score": 0,
-   "added": "2026-11-05",
-   "found_by": "discover-agent",
-   "slug": "waldorf-astoria-residences-costa-rica-punta-cacique-costa-ri"
-  },
-  {
    "name": "Condominio Marea Jacó (Marea Residences)",
    "developer": "Hogares de Costa Rica S.A.",
    "area": "South Jacó, Garabito, Puntarenas",
@@ -176631,8 +176543,8 @@
    "country": "Turkey",
    "market": "Istanbul",
    "stage": "under construction",
-   "url": "https://satisofisi.com/en/projeler/turkiye/istanbul/kartal/yunus/kuzey-adalar-kartal",
-   "docs_url": "https://www.aa.com.tr/tr/isdunyasi/gayrimenkul/kuzey-adalar-projesinde-satislar-basladi/693434",
+   "url": "https://www.kuzeyadalar.com/",
+   "docs_url": "https://www.kuzeyadalar.com/",
    "permit_number": null,
    "seed": {
     "price": 10730000,
@@ -176726,6 +176638,7 @@
     "https://www.deal-tr.com/tr/projects/kuzey-adalar",
     "https://www.emlakdream.com/kuzey-adalar-epp-ve-sua-insaat-ortakliginda-kartalda-satisa-cikti/",
     "https://www.emlakplatform.com.tr/tr/projects/kuzey-adalar",
+    "https://www.kuzeyadalar.com/",
     "https://www.medyaozelhaber.com/ekonomi/kartaldaki-kuzey-adalar-projesi-emlak-konutun-faizsiz-ev-sahipligi-modeliyle-tanitildi/"
    ],
    "docs_listed": [],
@@ -176751,8 +176664,8 @@
    "country": "Turkey",
    "market": "Istanbul",
    "stage": "under construction",
-   "url": "https://www.gazetebirlik.com/ekonomi/mesa-yenikentte-yeni-etap-satista/1114825",
-   "docs_url": "https://hibya.com/bogazici-beton-3-subesini-kapatiyor-2-yeni-sube-aciyor-1079074",
+   "url": "https://mesayenikent.com/",
+   "docs_url": "https://mesayenikent.com/",
    "permit_number": null,
    "seed": {
     "price": 9000000,
@@ -176846,6 +176759,7 @@
    "flags": [],
    "sources": [
     "https://hibya.com/bogazici-beton-3-subesini-kapatiyor-2-yeni-sube-aciyor-1079074",
+    "https://mesayenikent.com/",
     "https://www.emlakhaberi.com/mesa-yenikent-basaksehir-fiyatlari-2026-teslim-tarihi-ve-proje-detaylari",
     "https://www.gayrimenkulhaber.com/konut-haberleri/mesa-yenikentte-yeni-etap-satista/",
     "https://www.gazetebirlik.com/ekonomi/mesa-yenikentte-yeni-etap-satista/1114825",
@@ -177186,109 +177100,6 @@
    "added": "2026-11-05",
    "found_by": "discover-agent",
    "slug": "parkside-residences-montenegro"
-  },
-  {
-   "name": "No published name (new residential complex in Tivat, six buildings, 54 apartments)",
-   "developer": "VALUE.ONE",
-   "area": "Tivat (suburb, exact area not stated)",
-   "country": "Montenegro",
-   "market": "Montenegro",
-   "stage": "under construction",
-   "url": "https://realting.com/montenegro/new-buildings/27298",
-   "docs_url": "https://realting.com/montenegro/new-buildings/27298",
-   "permit_number": null,
-   "seed": {
-    "price": null,
-    "currency": null,
-    "title": null,
-    "lease_base": null,
-    "guaranteed_language": false,
-    "yield_pct": null,
-    "completion": "March 2027 for the remaining buildings",
-    "permit_claim": false,
-    "permit_number": null,
-    "plans_published": false,
-    "escrow": null,
-    "progress_pct": null,
-    "progress_updates": false,
-    "developer_delivered": null,
-    "units": 54,
-    "payment_plan": "25% on signing, 25% on completion of main construction works, 25% on completion of finishing works, 25% on handover of keys"
-   },
-   "verification": {
-    "permit": "none",
-    "escrow": "none",
-    "progress": "none",
-    "plans": "none",
-    "record": "none",
-    "returns": "none"
-   },
-   "claims": [
-    {
-     "claim": "First two of six buildings completed and ready for occupancy",
-     "status": "unverified",
-     "by": "none",
-     "source": "https://realting.com/montenegro/new-buildings/27298"
-    },
-    {
-     "claim": "Remaining buildings to be finished by March 2027",
-     "status": "unverified",
-     "by": "none",
-     "source": "https://realting.com/montenegro/new-buildings/27298"
-    },
-    {
-     "claim": "54 apartments of 37 to 76 m2, sold finished with sanitary ware",
-     "status": "unverified",
-     "by": "none",
-     "source": "https://realting.com/montenegro/new-buildings/27298"
-    }
-   ],
-   "facts": {
-    "developer_founded": null,
-    "developer_hq": "Lorovina 46, 85320 Tivat (address on the portal listing)",
-    "construction_start": null,
-    "handover_promised": "March 2027 for the remaining buildings",
-    "original_handover": null,
-    "delay_months": null,
-    "unit_types": [
-     "apartments"
-    ],
-    "size_min_m2": 37,
-    "size_max_m2": 76,
-    "price_min": null,
-    "price_max": null,
-    "deposit_pct": 25,
-    "foreign_ownership": null,
-    "rental_programme": null,
-    "lat": null,
-    "lng": null,
-    "permit_authority": null
-   },
-   "note": "The portal says two of six buildings are done and the rest are under construction, with handover by March 2027. I did not open VALUE.ONE's own page, so the developer-page check is incomplete. No permit number, escrow, plans or progress percentage were seen.",
-   "positives": [
-    "Staged payment plan tied to construction milestones",
-    "Part of the project is reportedly already completed"
-   ],
-   "flags": [],
-   "sources": [
-    "https://realting.com/montenegro/new-buildings/27298",
-    "https://realting.com/montenegro/new-buildings/38156"
-   ],
-   "docs_listed": [],
-   "disclosure": {
-    "permit": false,
-    "escrow": false,
-    "progress": false,
-    "plans": false,
-    "record": false,
-    "no_guaranteed_returns": true,
-    "score": 1,
-    "all_six": false
-   },
-   "verified_score": 0,
-   "added": "2026-11-05",
-   "found_by": "discover-agent",
-   "slug": "no-published-name-new-residential-complex-in-tivat-six-build"
   },
   {
    "name": "Black Sands Oasis",
