@@ -41,8 +41,8 @@ STAMP = NOW.strftime('%Y-%m-%dT%H:%M:%SZ')
 KEY = os.environ.get('ANTHROPIC_API_KEY', '').strip()
 HAIKU, SONNET = 'claude-haiku-5-5', 'claude-sonnet-5-5'
 PRICE = {HAIKU: (0.10, 0.50), SONNET: (2.0, 10.0)}   # USD per million tokens in / out, list prices
-# Daily budget (owner, 5 Nov 2026: "we can spend up to 5 $ a day"): each hourly run may spend what is left of today's
-# KB_LIVE_DAY_USD divided by the runs left today (UTC), so spend is spread over the day and today's total never passes it.
+# Daily budget (owner, 6 Nov 2026: 0.25 USD a day, was 5): each run may spend what is left of today's KB_LIVE_DAY_USD divided
+# by the runs left today (UTC; KB_LIVE_RUNS_LEFT, else hours left), so today's total never passes it.
 DAY_USD = float(os.environ.get('KB_LIVE_DAY_USD', '0.25'))   # hard daily cap across all runs (6 Nov 2026: lowered from 5 to 0.25)
 BUDGET = float(os.environ.get('KB_LIVE_RUN_USD', '0.25'))   # replaced in main() by the daily rule (always applied)
 MAX_PAGES = int(os.environ.get('KB_LIVE_MAX_PAGES', '150'))
@@ -703,14 +703,14 @@ def finish(run, new_findings, state, feed, byp, od, spath, fpath, bpath, tracked
     covered = sum(1 for v in state.values() if v.get('checked'))
     pubd = {
         'updated': run['at'],
-        'about': ('Every hour a GitHub Actions job re-reads the developer pages of the tracked projects that were checked longest ago '
+        'about': ('Every day a GitHub Actions job re-reads the developer pages of the tracked projects that were checked longest ago '
                   '(round robin over all %d projects with a public id), asks claude-haiku-5-5 for concrete facts with an exact quote each, '
                   'and publishes a finding only when a fact is new or changed compared with what we stored for that project.' % tracked),
         'method': {
-            'schedule': 'hourly, GitHub Actions, one run at a time',
+            'schedule': 'daily (about 07:34 UTC, hourly until 6 Nov 2026), GitHub Actions, one run at a time',
             'model': HAIKU, 'prices_usd_per_million_tokens': {HAIKU: list(PRICE[HAIKU]), SONNET: list(PRICE[SONNET])},
-            'budget_usd_per_run': BUDGET, 'budget_usd_per_day': DAY_USD if os.environ.get('KB_LIVE_DAY_USD') else None,
-            'budget_rule': 'daily budget of 5 USD: each hourly run may spend what is left of today divided by the runs left today; spend is computed from the real token usage of every call at list prices, and before each call its worst case is reserved, so neither the run nor the day can pass its budget',
+            'budget_usd_per_run': BUDGET, 'budget_usd_per_day': DAY_USD,
+            'budget_rule': 'daily budget of %g USD for all runs together (5 USD until 6 Nov 2026): a run may spend only what is left of today; spend is computed from the real token usage of every call at list prices, and before each call its worst case is reserved, so neither the run nor the day can pass its budget' % DAY_USD,
             'checked_in_code': ['the quote is found word for word in the fetched page text (case, spacing and typographic quotes ignored, no skipping)',
                                 'the quote contains the value (year, percent, amount or number)',
                                 'a changed value is published only if the old value is no longer stated near the same words on the page',
@@ -728,7 +728,7 @@ def finish(run, new_findings, state, feed, byp, od, spath, fpath, bpath, tracked
     feed_out = json.dumps(pubd, ensure_ascii=False, separators=(',', ':'))
     for pth in (fpath, os.path.join(od, 'live-findings.json')):
         open(pth, 'w').write(feed_out)
-    bp = {'updated': run['at'], 'about': 'Per project id: when the hourly check last read the developer page (fp = first 16 hex of the SHA-256 of the page text) and its findings, newest first. Same rules as /data/live-findings.json.', 'projects': {k: byp[k] for k in sorted(byp)}}
+    bp = {'updated': run['at'], 'about': 'Per project id: when the page check last read the developer page (fp = first 16 hex of the SHA-256 of the page text) and its findings, newest first. Same rules as /data/live-findings.json.', 'projects': {k: byp[k] for k in sorted(byp)}}
     bpt = json.dumps(bp, ensure_ascii=False, separators=(',', ':'))
     for pth in (bpath, os.path.join(od, 'findings-by-project.json')):
         open(pth, 'w').write(bpt)
