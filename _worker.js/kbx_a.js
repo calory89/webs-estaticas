@@ -131,11 +131,13 @@ const slugM = m => encodeURIComponent(m.toLowerCase().replace(/\s+/g, '-'));
 async function searchIndex(req, env, ctx) {
   const L = await openLoad(), v = L.sha.slice(0, 16), etag = '"sx-' + v + '"';
   if ((req.headers.get('if-none-match') || '').indexOf(etag) >= 0) return new Response(null, { status: 304, headers: Object.assign({ etag, 'cache-control': 'public, max-age=600' }, H) });
-  const cache = caches.default, key = new Request(CK + 'index-' + v);
+  const cache = caches.default, key = new Request(CK + 'index-r2-' + v);
   try { const hit = await cache.match(key); if (hit) return jres(await hit.text(), hit.headers.get('x-sig'), env, 600, { etag, 'x-kolaboro-dataset-sha256': L.sha }); } catch (e) {}
   const cs = L.d.cases || [], mk = {};
-  const p = cs.map(c => { mk[c.market] = (mk[c.market] || 0) + 1;
-    return [c.id, c.market || '', c.country || '', c.region || '', c.stage || '', c.score == null ? null : +c.score, c.vscore == null ? null : +c.vscore, (c.flags || []).length, c.band || '', c.title || '']; });
+  // not yet reviewed (no verification evidence): no check counts or flags, same rule as the named project pages
+  const rv = c => !!(c.verified && Object.values(c.verified).some(x => x && x !== 'none'));
+  const p = cs.map(c => { mk[c.market] = (mk[c.market] || 0) + 1; const r = rv(c);
+    return [c.id, c.market || '', c.country || '', c.region || '', c.stage || '', r && c.score != null ? +c.score : null, r && c.vscore != null ? +c.vscore : null, r ? (c.flags || []).length : 0, c.band || '', c.title || '']; });
   const m = Object.keys(mk).sort().map(k => [k, slugM(k), mk[k], (cs.find(c => c.market === k) || {}).country || '']);
   const text = JSON.stringify({ v, updated: L.d.updated, dataset_sha256: L.sha, fields: ['id', 'market', 'country', 'region', 'stage', 'public_checks', 'confirmed_checks', 'flags', 'price_band', 'title_type'], p, m });
   let sig = null; try { sig = await signBody(env, text); } catch (e) {}
