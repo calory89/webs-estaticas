@@ -1,0 +1,38 @@
+name: Kolaboro page history
+# Every 6 hours: packs the developer page texts our agents archived (tools/kolaboro-agent/data/archive, by SHA-256) into
+# kolaboro.com/data/page-history-{0,1,2}.json for the "what changed" viewer on named project pages (/projects/<slug>/changes/).
+# No model calls, no cost: it only reads files already in this repository. Public named projects only (no Sumba: conflict of interest).
+on:
+  schedule:
+    - cron: '52 */6 * * *'
+  push:
+    branches: [main]
+    paths: ['tools/kolaboro-agent/page_history.py', '.github/workflows/kolaboro-page-history.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-page-history
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            tools/kolaboro-agent
+            tools/kolaboro-reliability
+      - name: Build
+        run: |
+          curl -fsS --retry 3 https://kolaboro.com/data/named.json -o "$RUNNER_TEMP/named.json"
+          python3 tools/kolaboro-agent/page_history.py "$RUNNER_TEMP/named.json" "$RUNNER_TEMP/ph"
+          ls -la "$RUNNER_TEMP/ph"
+      - name: Publish to kolaboro.com
+        run: |
+          bash tools/kolaboro-reliability/publish.sh "kolaboro.com: developer page history $(date -u +%FT%H:%MZ)" \
+            "$RUNNER_TEMP/ph/page-history-0.json=_s/kolaboro.com/data/page-history-0.json" \
+            "$RUNNER_TEMP/ph/page-history-1.json=_s/kolaboro.com/data/page-history-1.json" \
+            "$RUNNER_TEMP/ph/page-history-2.json=_s/kolaboro.com/data/page-history-2.json"
