@@ -289,4 +289,4 @@ addEventListener('scroll',spy,{passive:true});setTimeout(function(){draw();spy()
 bar.querySelector('a').onclick=function(e){var p=document.getElementById('paycta');if(!p)return;e.preventDefault();p.scrollIntoView({behavior:'smooth',block:'center'});var a=p.querySelector('a');if(a)setTimeout(function(){a.focus({preventScroll:true});},400);};
 function upd(){var p=document.getElementById('paycta'),show=false;if(p&&innerWidth<=700){var r=p.getBoundingClientRect();show=!(r.top<innerHeight&&r.bottom>0)&&!document.querySelector('.r31-tour');}bar.hidden=!show;document.body.classList.toggle('has-pb',show);}
 addEventListener('scroll',upd,{passive:true});addEventListener('resize',upd);var mo=new MutationObserver(upd);mo.observe(app,{childList:true});mo.observe(document.body,{childList:true});upd();})();</script>
-<script src="/k/acct.js?v=b10b2" defer></script></body></html>
+<script src="/k/acct.js?v=b10b3" defer></script></body></html>
