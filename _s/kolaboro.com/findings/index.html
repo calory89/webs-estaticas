@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Live findings: what changed on developer pages this hour | Kolaboro</title>
-<meta name="description" content="Every hour Kolaboro re-reads developer pages of tracked off-plan projects with the Claude API and publishes only new or changed facts, each backed by a quote checked word for word in code. Anonymous, with the run log and its cost.">
+<meta name="description" content="Every day Kolaboro re-reads developer pages of tracked off-plan projects with the Claude API and publishes only new or changed facts, each backed by a quote checked word for word in code. Anonymous, with the run log and its cost.">
 
 <link rel="canonical" href="https://kolaboro.com/findings/">
 <link rel="icon" href="/k/favicon.svg" type="image/svg+xml">
@@ -12,7 +12,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Kolaboro">
 <meta property="og:title" content="Live findings: what changed on developer pages this hour | Kolaboro">
-<meta property="og:description" content="Every hour Kolaboro re-reads developer pages of tracked off-plan projects with the Claude API and publishes only new or changed facts, each backed by a quote checked word for word in code. Anonymous, with the run log and its cost.">
+<meta property="og:description" content="Every day Kolaboro re-reads developer pages of tracked off-plan projects with the Claude API and publishes only new or changed facts, each backed by a quote checked word for word in code. Anonymous, with the run log and its cost.">
 <meta property="og:url" content="https://kolaboro.com/findings/">
 <meta property="og:image" content="https://kolaboro.com/k/og/pricing.png">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
@@ -25,7 +25,7 @@
 
 <link rel="alternate" type="application/rss+xml" title="Kolaboro: what we shipped" href="/feed.xml">
 <style>
-/* Live findings page (/findings/): hourly developer page check */
+/* Live findings page (/findings/): daily developer page check */
 .fd-hero{padding:clamp(32px,5vw,72px) 0 28px}
 .fd-hero h1{font-size:clamp(2.1rem,5.2vw,4.4rem);line-height:.98;letter-spacing:-.03em;max-width:16ch}
 .fd-hero .lead{margin-top:16px;max-width:66ch}
@@ -90,9 +90,9 @@
 </header>
 <main id="main">
 <section class="fd-hero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / <a href="/database">Database</a> / Live findings</p>
-<p class="eyebrow">Read every hour, checked by code</p>
+<p class="eyebrow">Read every day, checked by code</p>
 <h1>What changed on developer pages this hour</h1>
-<p class="lead">Every hour a job re-reads the developer pages of the projects we checked longest ago, asks the Claude API for concrete facts (handover date, starting price, payment plan, permit number, deposit protection, construction progress, units left, rental yield, legal structure) and publishes a finding only when a fact is new or changed. Every fact must come with an exact quote that our software finds word for word on the page.</p>
+<p class="lead">Every day a job re-reads the developer pages of the projects we checked longest ago, asks the Claude API for concrete facts (handover date, starting price, payment plan, permit number, deposit protection, construction progress, units left, rental yield, legal structure) and publishes a finding only when a fact is new or changed. Every fact must come with an exact quote that our software finds word for word on the page.</p>
 <div class="fd-n" id="fdn" aria-live="polite"><div><b>…</b><span>Loading the findings</span></div></div>
 <p class="fd-st" id="fdst"></p>
 </div></section>
@@ -110,8 +110,8 @@
 </div></section>
 
 <section class="fd-sec" aria-labelledby="h-runs"><div class="wrap">
-<h2 id="h-runs">Hourly run log</h2>
-<p class="lead">One line per run: pages read, findings, facts that did not change, quotes rejected because they were not on the page, tokens and what the run cost at list prices. The budget is 5 USD a day, spread over the hourly runs: each run may spend what is left of the day divided by the runs left, and stops before it can pass that.</p>
+<h2 id="h-runs">Run log</h2>
+<p class="lead">One line per run: pages read, findings, facts that did not change, quotes rejected because they were not on the page, tokens and what the run cost at list prices. The budget is 0.25 USD a day for all runs together: a run may spend only what is left of the day, and stops before it can pass that. Until 6 November 2026 the job ran every hour with a budget of 5 USD a day.</p>
 <div class="fd-scroll"><table class="fd-tbl" id="fdr"><thead><tr><th>Run (UTC)</th><th class="n">Projects</th><th class="n">Pages read</th><th class="n">Same page</th><th class="n">Read by model</th><th class="n">Findings</th><th class="n">Unchanged facts</th><th class="n">Rejected quotes</th><th class="n">Tokens in / out</th><th class="n">USD</th></tr></thead><tbody></tbody></table></div>
 <p class="fd-small" id="fdtot"></p>
 </div></section>
@@ -119,8 +119,8 @@
 <section class="fd-sec" id="method" aria-labelledby="h-how"><div class="wrap">
 <h2 id="h-how">How it works</h2>
 <dl class="fd-faq">
-<dt>Hourly, round robin</dt><dd>A GitHub Actions job runs once an hour, never two at a time. It takes the tracked projects whose developer page was read longest ago, by us or by the daily research agent, so every project comes round in turn. It respects robots.txt, sends one request per website every few seconds and identifies itself as KolaboroResearchAgent.</dd>
-<dt>Claude API, small and capped</dt><dd>claude-haiku-5-5 reads the page text and returns each fact with the exact words that state it. Every call is priced from its real token usage at list prices (0.10 USD per million tokens in, 0.50 out). Before each call the worst case of that call is reserved, so neither a run nor the day can pass its budget (5 USD a day). A page whose text has the same SHA-256 fingerprint as at our last read is not sent to the model at all.</dd>
+<dt>Daily, round robin</dt><dd>A GitHub Actions job runs once a day (about 07:34 UTC), never two at a time. It takes the tracked projects whose developer page was read longest ago, by us or by the daily research agent, so every project comes round in turn. It respects robots.txt, sends one request per website every few seconds and identifies itself as KolaboroResearchAgent.</dd>
+<dt>Claude API, small and capped</dt><dd>claude-haiku-5-5 reads the page text and returns each fact with the exact words that state it. Every call is priced from its real token usage at list prices (0.10 USD per million tokens in, 0.50 out). Before each call the worst case of that call is reserved, so neither a run nor the day can pass its budget (0.25 USD a day). A page whose text has the same SHA-256 fingerprint as at our last read is not sent to the model at all.</dd>
 <dt>Checked in code, not trusted</dt><dd>Software looks for each quote in the page text, ignoring only case, spacing and typographic quote marks, with no skipped words, and checks that the quote contains the value: the year, the percent, the amount or the number. Anything else is rejected and counted in the run log. A changed value is published only when the old value is no longer stated near the same words on the page, and a newly published fact only when its words were not in our previous copy of the page.</dd>
 <dt>Anonymous</dt><dd>Findings name the project id and market only, never the developer, the project name, the web address or the quote, because a quote would identify the project. Each finding carries <code>q</code>, the first 16 hex characters of the SHA-256 of its quote, and <code>fp</code>, the same for the page text. We keep a frozen copy of the page text, so both can be checked later against the original.</dd>
 <dt>Limits</dt><dd>These are what developers advertise, not verified facts. A finding says a page changed, not that the project did. Pages that block automated reading or need JavaScript to show text are counted as failed and tried again on the next round. Prices are shown as bands, and permit numbers are never shown, because both could identify a project.</dd>
@@ -129,7 +129,7 @@
 </div></section>
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-/* Live findings page: renders /data/live-findings.json (hourly developer page check). No quotes, no names: ids and markets only. */
+/* Live findings page: renders /data/live-findings.json (daily developer page check). No quotes, no names: ids and markets only. */
 (function () {
   var $ = function (id) { return document.getElementById(id); };
   var N = $('fdn'), L = $('fdl'), C = $('fdc'), MORE = $('fdmore'), SM = $('fdm'), SK = $('fdk'), SF = $('fdf'), R = $('fdr'), TOT = $('fdtot'), ST = $('fdst');
@@ -152,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var m = SM.value, k = SK.value, f = SF.value;
     var rows = all.filter(function (x) { return (!m || x.market === m) && (!k || x.kind === k) && (!f || x.fact === f); });
     C.textContent = rows.length ? fmt(rows.length) + ' finding' + (rows.length === 1 ? '' : 's') + (m || k || f ? ' match these filters' : ' in the rolling file (last 500)') : '';
-    if (!rows.length) { L.innerHTML = '<li class="fd-none">' + (all.length ? 'No findings match these filters yet. Each hourly run adds more.' : 'No findings yet. The first hourly runs are reading pages now; this page shows only real ones.') + '</li>'; MORE.hidden = true; return; }
+    if (!rows.length) { L.innerHTML = '<li class="fd-none">' + (all.length ? 'No findings match these filters yet. Each daily run adds more.' : 'No findings yet. The first runs are reading pages now; this page shows only real ones.') + '</li>'; MORE.hidden = true; return; }
     L.innerHTML = rows.slice(0, shown).map(function (x) {
       var href = idOk(x.project) ? '/p/' + x.project + '/' : '/cases';
       return '<li><a href="' + href + '"><span class="fd-t"><b>' + esc(dm(x.at)) + '</b>' + esc(hm(x.at)) + '</span><p class="fd-x">' + esc(x.text) + '</p>' +
@@ -176,10 +176,10 @@ document.addEventListener('DOMContentLoaded', function () {
     if (qs('kind')) SK.value = qs('kind');
     var cov = j.coverage || {};
     N.innerHTML = '<div><b>' + fmt(t.findings) + '</b><span>findings published since ' + esc(t.since ? dm(t.since) : 'the first run') + '</span></div>' +
-      '<div><b>' + fmt(t.pages_fetched) + '</b><span>developer pages read in ' + fmt(t.runs) + ' hourly run' + (t.runs === 1 ? '' : 's') + '</span></div>' +
-      '<div><b>' + fmt(cov.projects_read_by_hourly_check) + ' of ' + fmt(cov.projects_tracked) + '</b><span>projects read by the hourly check so far</span></div>' +
-      '<div><b>' + (last ? Number(last.usd || 0).toFixed(3) : '0') + ' USD</b><span>cost of the last run (daily budget 5 USD)</span></div>';
-    if (last) ST.textContent = 'Last run ' + utc(last.at) + ' UTC, ' + ago(last.at) + ': ' + fmt(last.pages_fetched) + ' pages read, ' + fmt(last.findings) + ' findings, ' + fmt(last.no_change) + ' facts unchanged, ' + fmt((last.rejected_quote_not_found || 0) + (last.rejected_value_not_in_quote || 0)) + ' quotes rejected. Next run at about minute 34 of every hour.';
+      '<div><b>' + fmt(t.pages_fetched) + '</b><span>developer pages read in ' + fmt(t.runs) + ' run' + (t.runs === 1 ? '' : 's') + '</span></div>' +
+      '<div><b>' + fmt(cov.projects_read_by_hourly_check) + ' of ' + fmt(cov.projects_tracked) + '</b><span>projects read by the page check so far</span></div>' +
+      '<div><b>' + (last ? Number(last.usd || 0).toFixed(3) : '0') + ' USD</b><span>cost of the last run (daily budget 0.25 USD)</span></div>';
+    if (last) ST.textContent = 'Last run ' + utc(last.at) + ' UTC, ' + ago(last.at) + ': ' + fmt(last.pages_fetched) + ' pages read, ' + fmt(last.findings) + ' findings, ' + fmt(last.no_change) + ' facts unchanged, ' + fmt((last.rejected_quote_not_found || 0) + (last.rejected_value_not_in_quote || 0)) + ' quotes rejected. Next run at about 07:34 UTC.';
     R.querySelector('tbody').innerHTML = runs.slice(0, 48).map(function (r) {
       return '<tr><td>' + esc(utc(r.at)) + '</td><td class="n">' + fmt(r.projects_read) + '</td><td class="n">' + fmt(r.pages_fetched) + '</td><td class="n">' + fmt(r.unchanged_pages) + '</td><td class="n">' + fmt(r.pages_read_by_model) +
         '</td><td class="n">' + fmt(r.findings) + '</td><td class="n">' + fmt(r.no_change) + '</td><td class="n">' + fmt((r.rejected_quote_not_found || 0) + (r.rejected_value_not_in_quote || 0)) +
@@ -191,8 +191,8 @@ document.addEventListener('DOMContentLoaded', function () {
   [SM, SK, SF].forEach(function (s) { s.addEventListener('change', function () { shown = 40; setQs(); list(); }); });
   MORE.addEventListener('click', function () { shown += 60; list(); });
   fetch('/data/live-findings.json?t=' + Math.floor(Date.now() / 3e5), { cache: 'no-cache' }).then(function (r) { if (!r.ok) throw 0; return r.json(); }).then(render).catch(function () {
-    N.innerHTML = '<div><b>Starting</b><span>The first hourly run has not been published yet</span></div>';
-    L.innerHTML = '<li class="fd-none">The findings file is not published yet. The first hourly runs are reading pages now; this page shows only real findings.</li>';
+    N.innerHTML = '<div><b>Starting</b><span>The first run has not been published yet</span></div>';
+    L.innerHTML = '<li class="fd-none">The findings file is not published yet. The first runs are reading pages now; this page shows only real findings.</li>';
     R.querySelector('tbody').innerHTML = '<tr><td colspan="10">No runs published yet.</td></tr>';
   });
 })();
