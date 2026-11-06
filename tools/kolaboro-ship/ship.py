@@ -23,7 +23,8 @@ PATHS = [SITE + '/', '_worker.js/kolaboro.js', '_worker.js/kbx*']
 ORIGIN = 'https://kolaboro.com'
 MODEL = os.environ.get('KB_SHIP_MODEL', 'claude-sonnet-5-5')
 PRICE_IN, PRICE_OUT = 3.0 / 1e6, 15.0 / 1e6        # conservative USD per token, used as a spending guard and for the spend log
-MAX_USD_RUN = 1.0                                   # per run
+MAX_USD_RUN = float(os.environ.get('KB_SHIP_RUN_USD', '0.25'))   # per run (6 Nov 2026: lowered from 1.0)
+DAY_USD = float(os.environ.get('KB_SHIP_DAY_USD', '0.25'))       # all runs of the UTC day together, from ai.by_day in shipping.json
 MAX_AI_DAYS_RUN = 25
 AUTO_META = '<meta name="kb-changelog-auto" content="written automatically from the day\'s commits, checked by code">'
 AUTO_MARK = 'name="kb-changelog-auto"'
@@ -208,7 +209,6 @@ AI = {'calls': 0, 'in': 0, 'out': 0}
 
 
 def ai_summary(date, day_commits, key):
-    if AI['in'] * PRICE_IN + AI['out'] * PRICE_OUT > MAX_USD_RUN: raise RuntimeError('run spend cap reached')
     listing = '\n'.join('%s  %s' % (c['id'][:12], c['s']) for c in day_commits[:260])
     lo = min(3, len(day_commits))
     prompt = (
@@ -222,6 +222,8 @@ def ai_summary(date, day_commits, key):
         '- no long dashes; no marketing words; do not invent anything that is not in the subjects;\n'
         '- do not use double quotes inside a line (use single quotes), so the JSON stays valid.\n'
         'Answer with JSON only: {"lines":[{"text":"...","commits":["<id>"]}]}\n\nCommits:\n%s' % (date, lo, listing))
+    worst = (len(prompt) / 2.5) * PRICE_IN + 1200 * PRICE_OUT   # worst case of this request, reserved before it is sent
+    if AI['in'] * PRICE_IN + AI['out'] * PRICE_OUT + worst > MAX_USD_RUN: raise RuntimeError('run spend cap reached')
     body = json.dumps({'model': MODEL, 'max_tokens': 1200, 'messages': [{'role': 'user', 'content': prompt}]}).encode()
     req = urllib.request.Request('https://api.anthropic.com/v1/messages', data=body, method='POST', headers={
         'x-api-key': key, 'anthropic-version': '2023-06-01', 'content-type': 'application/json'})
@@ -427,6 +429,10 @@ def main():
     except Exception: prev = {}
     prev_days = {d['date']: d for d in prev.get('days', [])}
     ai_log = prev.get('ai') or {'calls_total': 0, 'input_tokens_total': 0, 'output_tokens_total': 0, 'usd_estimate_total': 0.0}
+    global MAX_USD_RUN
+    day_key = now_utc().date().isoformat(); by_day = dict(ai_log.get('by_day') or {})
+    MAX_USD_RUN = min(MAX_USD_RUN, max(0.0, DAY_USD - float(by_day.get(day_key) or 0)))
+    print('AI budget: day %.2f USD, spent today %.4f, this run %.4f' % (DAY_USD, float(by_day.get(day_key) or 0), MAX_USD_RUN))
 
     first = first_site_day(ref)
     commits = read_commits(ref)
@@ -594,6 +600,8 @@ def main():
                   'output_tokens_total': ai_log.get('output_tokens_total', 0) + AI['out'],
                   'usd_estimate_total': round(ai_log.get('usd_estimate_total', 0) + AI['in'] * PRICE_IN + AI['out'] * PRICE_OUT, 4),
                   'last_run': {'at': iso(now_utc()), 'calls': AI['calls'], 'input_tokens': AI['in'], 'output_tokens': AI['out'], 'usd_estimate': round(AI['in'] * PRICE_IN + AI['out'] * PRICE_OUT, 4)}}
+    by_day[day_key] = round(float(by_day.get(day_key) or 0) + AI['in'] * PRICE_IN + AI['out'] * PRICE_OUT, 4)
+    ai_log['by_day'] = {k: by_day[k] for k in sorted(by_day)[-14:]}
     ai_log['model'] = MODEL; ai_log['price_used'] = 'USD 3 per million input tokens, 15 per million output tokens (estimate)'
     total_ships = sum(x['ships'] for x in days.values())
     data = {

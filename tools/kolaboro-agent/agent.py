@@ -11,7 +11,8 @@ compares with the last run and writes:
 
 Usage: python3 agent.py [public_out_path]
 Env: ANTHROPIC_API_KEY (optional: without it, aggregates are rebuilt from the seed data),
-     KB_MODEL (default claude-haiku-5-5), KB_MAX_CALLS (default 30), KB_MAX_USD (default 3).
+     KB_MODEL (default claude-haiku-5-5), KB_MAX_CALLS (default 30), KB_MAX_USD (per run, default 0.25),
+     KB_DAY_USD (all runs of the UTC day together, from data/runs.json, default 0.25).
 """
 import json, os, re, sys, time, hashlib, statistics, urllib.request, html as H
 from datetime import datetime, timezone
@@ -22,7 +23,8 @@ TODAY = datetime.now(timezone.utc).strftime('%Y-%m-%d')
 KEY = os.environ.get('ANTHROPIC_API_KEY', '').strip()
 MODELS = [m for m in [os.environ.get('KB_MODEL'), 'claude-haiku-5-5', 'claude-sonnet-5-5'] if m]
 MAX_CALLS = int(os.environ.get('KB_MAX_CALLS', '30'))
-MAX_USD = float(os.environ.get('KB_MAX_USD', '3'))
+MAX_USD = float(os.environ.get('KB_MAX_USD', '0.25'))
+DAY_USD = float(os.environ.get('KB_DAY_USD', '0.25'))   # 6 Nov 2026: hard daily cap for all runs together
 PRICE_IN, PRICE_OUT = 1.0 / 1e6, 5.0 / 1e6   # conservative USD per token estimate used only as a spending guard
 spent = {'in': 0, 'out': 0, 'calls': 0}
 FX = {'USD': 1.0, 'EUR': 1.08, 'IDR': 1 / 16000.0, 'AUD': 0.65, 'AED': 0.2723, 'THB': 1 / 34.0, 'MXN': 1 / 18.5, 'GBP': 1.27,
@@ -101,7 +103,8 @@ def fetch(url):
 
 def claude(prompt):
     if spent['calls'] >= MAX_CALLS: raise RuntimeError('call budget reached')
-    if spent['in'] * PRICE_IN + spent['out'] * PRICE_OUT > MAX_USD: raise RuntimeError('spend budget reached')
+    worst = (len(prompt) / 2.5) * PRICE_IN + 1500 * PRICE_OUT   # this call's worst case is reserved before it is made
+    if spent['in'] * PRICE_IN + spent['out'] * PRICE_OUT + worst > MAX_USD: raise RuntimeError('spend budget reached')
     last = None
     for model in MODELS:
         body = json.dumps({"model": model, "max_tokens": 1500, "messages": [{"role": "user", "content": prompt}]}).encode()
@@ -465,6 +468,10 @@ def main():
     latest = load(os.path.join(DATA, 'latest.json'), {})
     changes = load(os.path.join(DATA, 'changes.json'), [])
     runs = load(os.path.join(DATA, 'runs.json'), [])
+    global MAX_USD
+    spent_today = sum(float(r.get('usd_estimate') or 0) for r in runs if r.get('date') == TODAY)
+    MAX_USD = min(MAX_USD, max(0.0, DAY_USD - spent_today))
+    print('budget: day %.2f USD, spent today %.3f, this run %.3f' % (DAY_USD, spent_today, MAX_USD), flush=True)
     run = {"date": TODAY, "mode": "ai" if KEY else "seed", "pages_ok": 0, "pages_failed": 0, "changes": 0, "model": None}
     # read order only (public ids come from file order elsewhere): never-read projects first, then the least recently checked,
     # so a run that stops at the call cap still reaches new projects instead of always re-reading the start of the list

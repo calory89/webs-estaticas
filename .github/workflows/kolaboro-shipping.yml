@@ -5,6 +5,7 @@ name: Kolaboro shipping log
 # Once a day is over, Claude turns that day's (privacy-filtered) commit subjects into plain-English lines, checked in code; a day page
 # /changelog/<date>/ is written automatically when none exists. A day page written by a person is never replaced.
 # Code: tools/kolaboro-ship/ship.py
+# AI budget: at most 0.25 USD per UTC day for all runs together; each request's worst case is reserved before it is sent.
 on:
   schedule:
     - cron: '19 12 * * 5'
@@ -42,6 +43,8 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GITHUB_TOKEN: ${{ github.token }}
+          KB_SHIP_RUN_USD: '0.25'
+          KB_SHIP_DAY_USD: '0.25'   # 6 Nov 2026: hard cap for all runs of the UTC day together (ai.by_day in shipping.json)
           KB_SHIP_NEW_FILES: '1'   # 5 Nov: room again after the satellite images were packed (about 1,700 files under the Pages limit); about 1 new day page a day
         run: python3 tools/kolaboro-ship/ship.py --git "$RUNNER_TEMP/hist.git" --ref pub/_lovable --main . --out "$RUNNER_TEMP/out"
       - name: Publish to kolaboro.com

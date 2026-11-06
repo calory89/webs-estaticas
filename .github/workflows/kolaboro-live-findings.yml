@@ -1,7 +1,8 @@
 name: Kolaboro live findings
-# Hourly: re-reads the developer pages checked longest ago (round robin over every tracked project), asks claude-haiku-5-5 for
+# Daily: re-reads the developer pages checked longest ago (round robin over every tracked project), asks claude-haiku-5-5 for
 # concrete facts with exact quotes, checks every quote in code and publishes only new or changed facts, anonymously, to
-# kolaboro.com/data/live-findings.json and /data/findings-by-project.json. Budget: 5 USD a day, spread over the runs (KB_LIVE_DAY_USD).
+# kolaboro.com/data/live-findings.json and /data/findings-by-project.json. Hard budget: 0.25 USD per UTC day in total for all runs
+# (scheduled and manual), priced from real token usage; the daily run may use what is left of the day.
 on:
   schedule:
     - cron: '34 7 * * *'
@@ -45,7 +46,8 @@ jobs:
         if: steps.gate.outputs.go == '1'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          KB_LIVE_DAY_USD: '5'
+          KB_LIVE_DAY_USD: '0.25'
+          KB_LIVE_RUNS_LEFT: '1'   # one scheduled run a day (6 Nov 2026): it gets the whole remainder of the daily cap
           KB_LIVE_MAX_PAGES: ${{ github.event.inputs.max_pages || '500' }}
           KB_LIVE_MAX_SECONDS: '1500'
           KB_PUBLIC_CASES: ${{ runner.temp }}/bali-cases.json

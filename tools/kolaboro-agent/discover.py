@@ -1,8 +1,10 @@
 """Kolaboro discovery agent: finds NEW off-plan and under-construction projects every day with the
 Claude API (web search + web fetch), validates them and appends them to projects-world.json.
 
-Budget: keeps calling until it has spent at least KB_DISCOVER_MIN_USD (default 2) and never more
-than KB_DISCOVER_MAX_USD (default 3). Without ANTHROPIC_API_KEY it does nothing.
+Budget: keeps calling until it has spent at least KB_DISCOVER_MIN_USD (default 0.25) and never more
+than KB_DISCOVER_MAX_USD (default 0.25) in the UTC day, all runs together (6 Nov 2026: lowered from 2 / 3 per run).
+Before every API request its worst case (REQ_WORST) is reserved, so the day can not pass the cap.
+Without ANTHROPIC_API_KEY it does nothing.
 Output log: data/discover-log.json (one entry per run). Projects stay anonymous on the public site.
 """
 import json, os, re, sys, time, datetime, urllib.request, urllib.error, hashlib
@@ -10,13 +12,17 @@ import json, os, re, sys, time, datetime, urllib.request, urllib.error, hashlib
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, 'data')
 KEY = os.environ.get('ANTHROPIC_API_KEY', '')
-MIN_USD = float(os.environ.get('KB_DISCOVER_MIN_USD', '2'))
-MAX_USD = float(os.environ.get('KB_DISCOVER_MAX_USD', '3'))
+MAX_USD = float(os.environ.get('KB_DISCOVER_MAX_USD', '0.25'))
+MIN_USD = min(MAX_USD, float(os.environ.get('KB_DISCOVER_MIN_USD', '0.25')))
 MAX_CALLS = int(os.environ.get('KB_DISCOVER_MAX_CALLS', '40'))
 PER_CALL = int(os.environ.get('KB_DISCOVER_PER_CALL', '4'))
-MODELS = [m for m in [os.environ.get('KB_DISCOVER_MODEL'), 'claude-sonnet-5-5', 'claude-haiku-5-5'] if m]
+MODELS = [m for m in [os.environ.get('KB_DISCOVER_MODEL'), 'claude-haiku-5-5', 'claude-sonnet-5-5'] if m]
 PRICE = {'claude-sonnet-5-5': (3e-6, 15e-6), 'claude-haiku-5-5': (1e-6, 5e-6)}
 SEARCH_USD = 0.01
+MAX_TOKENS = 8000; MAX_USES = 3; INPUT_GUESS = 60000   # per request: output cap, searches and fetches, input tokens assumed
+def REQ_WORST(model):   # worst case of one API request, reserved before it is made
+    pi, po = PRICE.get(model, (3e-6, 15e-6))
+    return INPUT_GUESS * pi + MAX_TOKENS * po + MAX_USES * SEARCH_USD
 TODAY = datetime.date.today().isoformat()
 DASH = re.compile('[–—]')
 ACCT = re.compile(r'(?i)(account|acct\.?|a/c|iban)\s*(no\.?|number)?\s*[:#]?\s*[A-Z0-9-]{6,}')
@@ -213,18 +219,20 @@ def similar(p, others):
 
 class Budget:
     def __init__(self):
-        self.usd = 0.0; self.calls = 0; self.searches = 0
+        self.usd = 0.0; self.calls = 0; self.searches = 0; self.cap = MAX_USD
 
 
 def call(prompt, B):
-    tools_full = [{'type': 'web_search_20250305', 'name': 'web_search', 'max_uses': 6},
-                  {'type': 'web_fetch_20250910', 'name': 'web_fetch', 'max_uses': 6, 'max_content_tokens': 5000}]
+    tools_full = [{'type': 'web_search_20250305', 'name': 'web_search', 'max_uses': MAX_USES},
+                  {'type': 'web_fetch_20250910', 'name': 'web_fetch', 'max_uses': MAX_USES, 'max_content_tokens': 5000}]
     for model in MODELS:
         for tools, beta in ((tools_full, 'web-fetch-2025-09-10'), (tools_full[:1], None)):
             msgs = [{'role': 'user', 'content': prompt}]; text = ''
             try:
                 for _ in range(5):   # continue on pause_turn
-                    body = json.dumps({'model': model, 'max_tokens': 16000, 'tools': tools, 'messages': msgs}).encode()
+                    if B.usd + REQ_WORST(model) > B.cap:
+                        print('budget: next request could pass the cap, stopping', file=sys.stderr); break
+                    body = json.dumps({'model': model, 'max_tokens': MAX_TOKENS, 'tools': tools, 'messages': msgs}).encode()
                     h = {'x-api-key': KEY, 'anthropic-version': '2023-06-01', 'content-type': 'application/json'}
                     if beta: h['anthropic-beta'] = beta
                     req = urllib.request.Request('https://api.anthropic.com/v1/messages', data=body, method='POST', headers=h)
@@ -269,8 +277,11 @@ def main():
     if done_today >= MIN_USD and not os.environ.get('KB_DISCOVER_FORCE'):
         print(f'already spent ${done_today:.2f} today: nothing to do'); return
     B = Budget(); B.usd = 0.0
-    if not os.environ.get('KB_DISCOVER_FORCE'):
-        MIN_USD = max(0.0, MIN_USD - done_today); MAX_USD = max(0.0, MAX_USD - done_today)
+    MAX_USD = max(0.0, MAX_USD - done_today)   # the daily cap holds even with KB_DISCOVER_FORCE
+    MIN_USD = MAX_USD if os.environ.get('KB_DISCOVER_FORCE') else min(MAX_USD, max(0.0, MIN_USD - done_today))
+    B.cap = MAX_USD
+    if MAX_USD < REQ_WORST(MODELS[0]):
+        print(f'spent ${done_today:.2f} today, left ${MAX_USD:.2f} is under one request: nothing to do'); return
     only = [s.strip().lower() for s in os.environ.get('KB_DISCOVER_MARKETS', '').split(',') if s.strip()]
     if only:   # a run aimed at chosen markets or countries (matched on market or country name)
         MARKETS = [m for m in MARKETS if m[0].lower() in only or m[1].lower() in only] or MARKETS
@@ -282,7 +293,7 @@ def main():
         stage = 'already under construction (not finished)' if (start + i) % 2 else 'off-plan (launched or selling, construction not started or just started)'
         i += 1
         avg = B.usd / max(1, len(run['markets'])) if run['markets'] else 1.2
-        if B.usd + max(0.8, avg) > MAX_USD:
+        if B.usd + max(REQ_WORST(MODELS[0]), avg) > MAX_USD:
             break
         known = ', '.join(sorted({p.get('name') for p in allp + added if p.get('market') == market and p.get('name')})[:80]) or 'none yet'
         try:

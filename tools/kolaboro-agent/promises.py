@@ -23,7 +23,8 @@ Rules enforced in code, not left to the model:
     that states the original date
   - when one page copy states two different dates for the same promise, claude-sonnet-5-5 decides which one is current
     (or says they are separate phases); if it cannot tell, that copy is not used for the promise
-Env: ANTHROPIC_API_KEY, KB_PROMISE_MAX_USD (cumulative cap across all runs, default 9.5), KB_PROMISE_RUN_USD (per run, default 3).
+Env: ANTHROPIC_API_KEY, KB_PROMISE_MAX_USD (cumulative cap across all runs, default 9.5), KB_PROMISE_RUN_USD (per run, default 0.25),
+     KB_PROMISE_DAY_USD (all runs of the UTC day together, default 0.25). The worst case of every request is reserved before it is sent.
 """
 import json, os, re, sys, glob, gzip, time, hashlib, statistics, threading, urllib.request, urllib.error, concurrent.futures as cf
 from datetime import datetime, timezone
@@ -42,7 +43,8 @@ AI = bool(KEY) and '--no-ai' not in sys.argv
 HAIKU, SONNET = 'claude-haiku-5-5', 'claude-sonnet-5-5'
 PRICE = {HAIKU: (0.10, 0.50), SONNET: (2.0, 10.0)}   # USD per million tokens in / out, list prices (platform.claude.com/docs/en/about-claude/pricing, Nov 2026)
 MAX_TOTAL = float(os.environ.get('KB_PROMISE_MAX_USD', '9.5'))
-MAX_RUN = float(os.environ.get('KB_PROMISE_RUN_USD', '3'))
+MAX_RUN = float(os.environ.get('KB_PROMISE_RUN_USD', '0.25'))
+MAX_DAY = float(os.environ.get('KB_PROMISE_DAY_USD', '0.25'))   # 6 Nov 2026: hard daily cap for all runs together
 MAX_SECONDS = float(os.environ.get('KB_PROMISE_MAX_SECONDS', '2400'))   # stop starting new readings after this, so the run always saves its cache
 T0 = time.time()
 PV = 'promises-v2'
@@ -53,7 +55,7 @@ YR = re.compile(r'\b20(2[4-9]|3[0-5])\b')
 WEAK = re.compile(r'\b(no|not|nor|without)\b[^.;]{0,80}\b(published|disclosed|available|posted|shown|stated)\b', re.I)
 
 lock = threading.Lock()
-spend = {'usd': 0.0, 'haiku_calls': 0, 'sonnet_calls': 0, 'in': 0, 'out': 0, 'errors': 0}
+spend = {'usd': 0.0, 'reserved': 0.0, 'prior': 0.0, 'today': 0.0, 'haiku_calls': 0, 'sonnet_calls': 0, 'in': 0, 'out': 0, 'errors': 0}
 rejected = {'no_quote': 0, 'quote_not_found': 0, 'year_not_in_quote': 0, 'bad_date': 0, 'bad_kind': 0, 'unknown_source': 0}
 
 
@@ -236,7 +238,8 @@ Reply with ONLY one JSON object: {{"answer": "A" | "B" | "separate" | "unclear",
 
 
 def budget_left():
-    return min(MAX_RUN - spend['usd'], MAX_TOTAL - (spend['prior'] + spend['usd']))
+    used = spend['usd'] + spend['reserved']
+    return min(MAX_RUN - used, MAX_TOTAL - (spend['prior'] + used), MAX_DAY - (spend['today'] + used))
 
 
 def call(model, prompt, max_tokens=4000):
@@ -245,13 +248,23 @@ def call(model, prompt, max_tokens=4000):
             raise RuntimeError('budget')
     body = json.dumps({'model': model, 'max_tokens': max_tokens, 'messages': [{'role': 'user', 'content': prompt}]}).encode()
     last = None
+    pi, po = PRICE[model]
+    worst = (len(prompt) / 2.5) * pi / 1e6 + max_tokens * po / 1e6   # worst case of one request, reserved before it is sent
     for i in range(3):
+        with lock:
+            if budget_left() < worst:
+                raise RuntimeError('budget')
+            spend['reserved'] += worst
         req = urllib.request.Request('https://api.anthropic.com/v1/messages', data=body, method='POST', headers={
             'x-api-key': KEY, 'anthropic-version': '2023-06-01', 'content-type': 'application/json'})
         try:
-            with urllib.request.urlopen(req, timeout=120) as r:
-                d = json.loads(r.read())
-            u = d.get('usage', {}); pi, po = PRICE[model]
+            try:
+                with urllib.request.urlopen(req, timeout=120) as r:
+                    d = json.loads(r.read())
+            finally:
+                with lock:
+                    spend['reserved'] -= worst
+            u = d.get('usage', {})
             with lock:
                 spend['in'] += u.get('input_tokens', 0); spend['out'] += u.get('output_tokens', 0)
                 spend['usd'] += u.get('input_tokens', 0) * pi / 1e6 + u.get('output_tokens', 0) * po / 1e6
@@ -485,6 +498,7 @@ def main():
     cpath = os.path.join(DATA, 'promises-cache.json'); spath = os.path.join(DATA, 'promises-spend.json')
     cache = load(cpath, {}); slog = load(spath, {'runs': [], 'total_usd': 0.0})
     spend['prior'] = float(slog.get('total_usd') or 0)
+    spend['today'] = sum(float(r.get('usd') or 0) for r in (slog.get('runs') or []) if r.get('day') == TODAY)
     P = dev_intel.projects(); ids = dev_intel.public_ids(P)
     pv = page_versions()
     stats = {'date_conflicts': 0, 'texts_read': 0, 'texts_skipped_budget': 0, 'page_copies': 0, 'page_copies_missing': 0, 'research_records': 0}

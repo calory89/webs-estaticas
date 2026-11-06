@@ -1,18 +1,15 @@
 name: Kolaboro discovery agent
 # Daily: finds new off-plan and under-construction projects with the Claude API (web search + fetch),
 # validates them (2+ sources, live URL, no duplicates) and adds them to projects-world.json.
-# Spends at least KB_DISCOVER_MIN_USD and at most KB_DISCOVER_MAX_USD per run, then triggers the research agent.
+# Spends at most KB_DISCOVER_MAX_USD (0.25) per UTC day across all runs, then triggers the research agent.
 on:
   schedule:
     - cron: '41 3 */2 * *'
   workflow_dispatch:
     inputs:
       min_usd:
-        description: "Minimum spend this run (USD)"
-        default: "2"
-      max_usd:
-        description: "Maximum spend this run (USD)"
-        default: "3"
+        description: "Minimum spend today (USD, at most max_usd)"
+        default: "0.25"
       force:
         description: "Run even if today's minimum is already spent (1 = yes)"
         default: ""
@@ -41,8 +38,9 @@ jobs:
       - name: Discover new projects
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          KB_DISCOVER_MIN_USD: ${{ github.event.inputs.min_usd || '2' }}
-          KB_DISCOVER_MAX_USD: ${{ github.event.inputs.max_usd || '3' }}
+          KB_DISCOVER_MIN_USD: ${{ github.event.inputs.min_usd || '0.25' }}
+          KB_DISCOVER_MAX_USD: '0.25'
+          KB_DISCOVER_MODEL: claude-haiku-5-5
           KB_DISCOVER_FORCE: ${{ github.event.inputs.force || '' }}
           KB_DISCOVER_MARKETS: ${{ github.event.inputs.markets || '' }}
           KB_DISCOVER_MAX_CALLS: ${{ github.event.inputs.max_calls || '40' }}

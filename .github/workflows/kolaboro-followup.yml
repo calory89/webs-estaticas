@@ -3,7 +3,8 @@ name: Kolaboro follow-up (promises and search alerts)
 # 1. promises: reads every dated developer promise from the research records and the daily page copies (tools/kolaboro-agent/promises.py,
 #    claude-haiku-5-5, claude-sonnet-5-5 only for date conflicts), checks each quote in code, and publishes anonymous per-project
 #    statuses to kolaboro.com/data/promises.json. Model answers are cached on main by text hash, so a text is paid for once.
-#    Spend is logged in tools/kolaboro-agent/data/promises-spend.json and capped at 9.5 USD in total across all runs.
+#    Spend is logged in tools/kolaboro-agent/data/promises-spend.json and capped at 0.25 USD per UTC day (all runs together)
+#    and 9.5 USD in total across all runs.
 # 2. alerts: calls the worker's daily search-alert job with a GitHub OIDC token (no stored secret). The worker evaluates every confirmed
 #    plain-language alert against the public data and sends at most one digest email per address per day.
 on:
@@ -12,8 +13,8 @@ on:
   workflow_dispatch:
     inputs:
       run_usd:
-        description: "Max model spend this run (USD)"
-        default: "3"
+        description: "Max model spend this run (USD; the day is capped at 0.25 in total)"
+        default: "0.25"
       skip_alerts:
         description: "Skip the alerts job (1 = skip)"
         default: "0"
@@ -36,7 +37,8 @@ jobs:
       - name: Read promises
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          KB_PROMISE_RUN_USD: ${{ github.event.inputs.run_usd || '3' }}
+          KB_PROMISE_RUN_USD: ${{ github.event.inputs.run_usd || '0.25' }}
+          KB_PROMISE_DAY_USD: '0.25'
           KB_PROMISE_MAX_USD: '9.5'
         run: |
           if [ -z "$ANTHROPIC_API_KEY" ]; then echo "::warning::ANTHROPIC_API_KEY is not set: only cached readings are used"; fi

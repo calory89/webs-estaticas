@@ -272,12 +272,15 @@ def allowed_numbers(facts, NOWd):
     return s
 
 
-def ask_claude(facts, key, model='claude-sonnet-5-5', max_usd=2.0):
+def ask_claude(facts, key, model='claude-sonnet-5-5', max_usd=0.25):   # 6 Nov 2026: lowered from 2.0 (one call per run at most)
     prompt = ('You write one paragraph for a monthly press release about off-plan property data. Use ONLY the numbers in the JSON below, '
               'copied exactly as written (same rounding, digits not words). Do not add any other number, date, comparison, cause, forecast or opinion. '
               'Do not name any developer or project. No adjectives unless a number in the same sentence backs them. No dashes. '
               'Plain English, 90 to 140 words, third person ("Kolaboro data show"). Mention that history for the delay index starts this month. '
               'Return only the paragraph.\n\nJSON:\n' + json.dumps(facts, ensure_ascii=False))
+    # worst case of this request at the guard prices below, checked before it is sent (real Sonnet cost is about a fifth of it)
+    if (len(prompt) / 2.5) * 15e-6 + 1500 * 75e-6 > max_usd:
+        raise RuntimeError('spend guard: request could pass the cap')
     body = json.dumps({'model': model, 'max_tokens': 1500, 'messages': [{'role': 'user', 'content': prompt}]}).encode()
     req = urllib.request.Request('https://api.anthropic.com/v1/messages', data=body, method='POST', headers={
         'x-api-key': key, 'anthropic-version': '2023-06-01', 'content-type': 'application/json'})

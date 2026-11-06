@@ -19,7 +19,8 @@ claude-haiku-5-5 extracts concrete facts, each with an exact quote. Rules enforc
     a changed value is published only if the old value is no longer stated near the same words on the page
   - when the page text has the same SHA-256 as at our last read, the model is not called (no cost, counted as no change)
   - every call is priced from its real token usage at list prices; before each call the worst case of that call is reserved,
-    so the run can never pass its budget (KB_LIVE_RUN_USD, default 0.25)
+    so the run can never pass its budget (KB_LIVE_RUN_USD, default 0.25, and the daily cap KB_LIVE_DAY_USD, default 0.25,
+    split over the runs left in the UTC day)
 Findings are anonymous: project id and market only. Quotes are never published (they identify the project): each finding
 carries the first 16 hex characters of the SHA-256 of its quote and of the page text.
 Env: ANTHROPIC_API_KEY, KB_PUBLIC_CASES (path to the public bali-cases.json, required), KB_LIVE_RUN_USD (0.25),
@@ -42,8 +43,8 @@ HAIKU, SONNET = 'claude-haiku-5-5', 'claude-sonnet-5-5'
 PRICE = {HAIKU: (0.10, 0.50), SONNET: (2.0, 10.0)}   # USD per million tokens in / out, list prices
 # Daily budget (owner, 5 Nov 2026: "we can spend up to 5 $ a day"): each hourly run may spend what is left of today's
 # KB_LIVE_DAY_USD divided by the runs left today (UTC), so spend is spread over the day and today's total never passes it.
-DAY_USD = float(os.environ.get('KB_LIVE_DAY_USD', '5'))
-BUDGET = float(os.environ.get('KB_LIVE_RUN_USD', '0.25'))   # replaced in main() by the daily rule when KB_LIVE_DAY_USD is set
+DAY_USD = float(os.environ.get('KB_LIVE_DAY_USD', '0.25'))   # hard daily cap across all runs (6 Nov 2026: lowered from 5 to 0.25)
+BUDGET = float(os.environ.get('KB_LIVE_RUN_USD', '0.25'))   # replaced in main() by the daily rule (always applied)
 MAX_PAGES = int(os.environ.get('KB_LIVE_MAX_PAGES', '150'))
 MAX_SECONDS = float(os.environ.get('KB_LIVE_MAX_SECONDS', '420'))
 GAP = float(os.environ.get('KB_LIVE_HOST_GAP', '4'))
@@ -605,11 +606,11 @@ def main():
     spath = os.path.join(DATA, 'live-state.json'); fpath = os.path.join(DATA, 'live-findings.json'); bpath = os.path.join(DATA, 'live-by-project.json')
     state = load(spath, {}); feed = load(fpath, {}); byp = (load(bpath, {}) or {}).get('projects') or {}
     global BUDGET
-    if os.environ.get('KB_LIVE_DAY_USD'):
+    if True:   # daily rule always applies, so no run (scheduled or manual) can pass KB_LIVE_DAY_USD for the UTC day
         today = STAMP[:10]
         spent_today = sum(float(r.get('usd') or 0) for r in (feed.get('runs') or []) if str(r.get('at', ''))[:10] == today)
-        runs_left = max(1, 24 - int(STAMP[11:13]))
-        BUDGET = round(max(0.0, DAY_USD - spent_today) / runs_left, 4)
+        runs_left = max(1, int(os.environ.get('KB_LIVE_RUNS_LEFT') or (24 - int(STAMP[11:13]))))   # hourly schedule: hours left today
+        BUDGET = min(BUDGET, round(max(0.0, DAY_USD - spent_today) / runs_left, 4))
         print('daily budget %.2f USD, spent today %.4f, runs left %d, this run %.4f' % (DAY_USD, spent_today, runs_left, BUDGET), flush=True)
     latest = load(os.path.join(DATA, 'latest.json'), {})
 

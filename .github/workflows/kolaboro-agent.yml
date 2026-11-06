@@ -1,6 +1,7 @@
 name: Kolaboro research agent
 # Weekly: reads what Bali developers advertise, extracts it with the Claude API, logs changes
 # (internal, this private repo) and publishes aggregates only to kolaboro.com/data/bali-claims.json.
+# Hard cap: 0.25 USD per UTC day for all runs together (KB_DAY_USD, summed from data/runs.json).
 on:
   schedule:
     - cron: '17 6 1,15 * *'
@@ -28,7 +29,8 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           KB_MAX_CALLS: ${{ github.event.inputs.max_calls || '160' }}
-          KB_MAX_USD: '6'
+          KB_MAX_USD: '0.25'
+          KB_DAY_USD: '0.25'
         run: |
           if [ -z "$ANTHROPIC_API_KEY" ]; then echo "::warning::ANTHROPIC_API_KEY secret is not set: rebuilding aggregates from seed data only"; fi
           python3 tools/kolaboro-agent/agent.py "$RUNNER_TEMP/bali-claims.json"

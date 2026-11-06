@@ -234,11 +234,14 @@ def check_text(text, allowed):
     return {'numbers_found': nums, 'all_backed': not probs, 'problems': probs}
 
 
-def ask_claude(facts, key, model='claude-sonnet-5-5', max_usd=0.5):
+def ask_claude(facts, key, model='claude-sonnet-5-5', max_usd=0.25):   # 6 Nov 2026: cap 0.25 USD per run, all calls together
     prompt = ('You write the intro paragraph of a weekly digest of off-plan property data. Use ONLY the numbers in the JSON below, copied exactly '
               '(digits, not words). Do not add any other number, date, cause, forecast, comparison or opinion. Do not name any developer, project or project id. '
               'No adjectives unless a number in the same sentence backs them. No dashes. Plain English, 60 to 120 words, third person ("Kolaboro data show"). '
               'Say that the figures come from the public data files and their daily history. If the JSON has a "note", state it in your own words. Return only the paragraph.\n\nJSON:\n' + json.dumps(facts, ensure_ascii=False))
+    worst = (len(prompt) / 2.5) * 3e-6 + 800 * 15e-6   # worst case of this request, checked before it is sent
+    if SPEND['usd'] + worst > max_usd:
+        raise RuntimeError('spend guard: run cap reached')
     body = json.dumps({'model': model, 'max_tokens': 800, 'messages': [{'role': 'user', 'content': prompt}]}).encode()
     req = urllib.request.Request('https://api.anthropic.com/v1/messages', data=body, method='POST', headers={
         'x-api-key': key, 'anthropic-version': '2023-06-01', 'content-type': 'application/json'})
