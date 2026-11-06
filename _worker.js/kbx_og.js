@@ -165,7 +165,7 @@ export async function handle(req, u, env, ctx) {
   const hdr = { 'content-type': 'image/png', 'cache-control': 'public, max-age=86400, stale-while-revalidate=604800', 'access-control-allow-origin': '*', 'x-content-type-options': 'nosniff' };
   try { const hit = await caches.default.match(key); if (hit) return new Response(hit.body, { headers: Object.assign({ 'x-og-cache': 'hit' }, hdr) }); } catch (e) {}
   const bytes = await draw(m[1] === 'projects' ? projectCard(ix, ent) : devCard(ix, ent));
-  try { const put = caches.default.put(key, new Response(bytes, { headers: { 'content-type': 'image/png', 'cache-control': 'max-age=604800' } })); if (ctx && ctx.waitUntil) ctx.waitUntil(put.catch(() => {})); } catch (e) {}
+  try { const put = caches.default.put(key, new Response(bytes.slice(0), { headers: { 'content-type': 'image/png', 'cache-control': 'max-age=604800' } })); if (ctx && ctx.waitUntil) ctx.waitUntil(put.catch(() => {})); } catch (e) {}
   return new Response(req.method === 'HEAD' ? null : bytes, { headers: Object.assign({ 'x-og-cache': 'miss', 'content-length': String(bytes.length) }, hdr) });
 }
 // local test hook
