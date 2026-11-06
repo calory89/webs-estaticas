@@ -104,6 +104,7 @@
     return (n + ' ' + F[Math.min(i, F.length - 1)]).trim(); }
   // ---------- UI ----------
   function box(el) {
+    css();
     var u = 'kph' + Math.random().toString(36).slice(2, 7), MKS = ' (' + t('market') + ')';
     el.innerHTML = '<div class="kph"><div><label for="' + u + 'f">' + esc(t('f_lbl')) + '</label><input type="file" id="' + u + 'f" accept="image/jpeg,image/png,image/webp" multiple>' +
       '<p class="kph-m">' + esc(t('f_tip')) + '</p></div>' +
