@@ -181,6 +181,7 @@ async function pkList(req, del) {
 
 // ---------- credentials
 const CTX = ['https://www.w3.org/ns/credentials/v2'];
+const NONCE_RX = / nonce="[^"]*"/g;   // our HTML gets a fresh CSP nonce on every response; the fingerprint ignores it
 async function vcLookup(root, req, u, env, ctx) {
   const r = await lookupHandle(new Request(ORIGIN + '/api/kb/lookup/r/' + root), new URL(ORIGIN + '/api/kb/lookup/r/' + root), env, ctx);
   const d = await r.json().catch(() => null);
@@ -207,7 +208,7 @@ async function vcReport(req, env, ctx) {
   const reportUrl = c.report_url ? new URL(c.report_url, ORIGIN).href : null;
   let reportSha = null;
   if (reportUrl && /^https:\/\//.test(reportUrl)) {
-    try { const r = await fetch(reportUrl, { redirect: 'follow', headers: { 'user-agent': 'kolaboro-vc/1' } }); if (r.ok) { const buf = await r.arrayBuffer(); if (buf.byteLength <= 15e6) reportSha = hex(await h256(new Uint8Array(buf))); } } catch (e) {}
+    try { const r = await fetch(reportUrl, { redirect: 'follow', headers: { 'user-agent': 'kolaboro-vc/1' } }); if (r.ok) { let buf = new Uint8Array(await r.arrayBuffer()); if (buf.byteLength <= 15e6) { if (/text\/html/.test(r.headers.get('content-type') || '')) buf = te.encode(td.decode(buf).replace(NONCE_RX, '')); reportSha = hex(await h256(buf)); } } } catch (e) {}
   }
   const logs = (c.log || []).filter(l => l && l.at);
   const delivered = String((logs.length ? logs[logs.length - 1].at : c.created_at) || new Date().toISOString());
@@ -216,7 +217,7 @@ async function vcReport(req, env, ctx) {
     type: ['VerifiableCredential', 'KolaboroDueDiligenceReport'], name: 'Kolaboro due diligence report',
     description: 'Kolaboro delivered this report to the holder of case ' + c.code + '. Project details are as the buyer entered them. reportSha256 fingerprints the report file as published when this credential was issued.',
     issuer: { id: DID, name: 'Kolaboro' }, validFrom: at,
-    credentialSubject: { type: 'DueDiligenceReport', caseCode: c.code, stage: c.stage, verdict: c.verdict || null, reportUrl, reportSha256: reportSha, deliveredAt: at,
+    credentialSubject: { type: 'DueDiligenceReport', caseCode: c.code, stage: c.stage, verdict: c.verdict || null, reportUrl, reportSha256: reportSha, reportSha256Method: reportSha ? 'SHA-256 of the report file; for an HTML page, after removing its nonce="..." attributes (a fresh security nonce is stamped on every response)' : undefined, deliveredAt: at,
       project: { name: c.project_name || null, url: c.project_url || null, location: c.location || null, developer: c.developer || null, enteredBy: 'buyer' },
       demo: !!(me.user && me.user.demo) || undefined } };
   const vc = await issue(env, doc);

@@ -281,7 +281,7 @@
           if (s.type === 'DueDiligenceReport') extra = '<p class="kac-m">Due diligence report · case <b>' + esc(s.caseCode) + '</b>' + (s.verdict ? ' · verdict ' + esc(s.verdict) : '') + (s.demo ? ' · <b>demo account</b>' : '') + (s.reportUrl ? ' · <a href="' + esc(s.reportUrl) + '" target="_blank" rel="noopener">report</a>' : '') + '</p>' + (s.reportSha256 ? '<p class="kac-m" id="vc-rh">Report fingerprint at issue: <code>' + esc(s.reportSha256) + '</code></p>' : '');
           outb.innerHTML = '<div class="kvc">' + sum + extra + '<ol>' + steps.join('') + '</ol><details><summary>Credential</summary><pre>' + esc(JSON.stringify(vc, null, 2)) + '</pre></details></div>';
           if (s.type === 'DueDiligenceReport' && s.reportSha256 && s.reportUrl && s.reportUrl.indexOf(location.origin + '/') === 0) {
-            fetch(s.reportUrl, { cache: 'no-store' }).then(function (r) { return r.arrayBuffer(); }).then(sha).then(function (h) { var e = $('vc-rh'); if (e) e.innerHTML += h === undefined ? '' : ' · today: ' + (hex(h) === s.reportSha256 ? '<span class="y">same file</span>' : '<span class="n">the published file has changed since</span>'); }).catch(function () {});
+            fetch(s.reportUrl, { cache: 'no-store' }).then(function (r) { var html = /text\/html/.test(r.headers.get('content-type') || ''); return r.arrayBuffer().then(function (b) { return html ? te.encode(new TextDecoder().decode(b).replace(/ nonce="[^"]*"/g, '')) : b; }); }).then(sha).then(function (h) { var e = $('vc-rh'); if (e) e.innerHTML += ' · today: ' + (hex(h) === s.reportSha256 ? '<span class="y">same file</span>' : '<span class="n">the published file has changed since</span>'); }).catch(function () {});
           }
         });
       }).catch(function (e) {
