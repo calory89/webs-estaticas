@@ -92,8 +92,19 @@ function kbHeaders(r, u) {
   h.delete('access-control-allow-origin');
   h.set('cache-control', priv ? 'no-store' : 'no-cache'); // a nonce must never be reused from a cache
   const out = new Response(r.body, { status: r.status, statusText: r.statusText, headers: h });
-  return new HTMLRewriter().on('script', { element(e) { e.setAttribute('nonce', nonce); } }).transform(out);
+  return new HTMLRewriter().on('script', { element(e) { e.setAttribute('nonce', nonce); } })
+    .on('head', { element(e) { e.prepend('<script nonce="' + nonce + '">' + KB_LATE + '</script>', { html: true }); } }).transform(out);
 }
+// kolaboro.com mobile speed (b9c, 6 Nov 2026): third-party tags wait for the first interaction (tap, key, scroll, mouse move)
+// or 8 s after load, whichever comes first. window.kbLate(fn) queues work for that moment (the static pages load gtag through it);
+// Cloudflare Zaraz (Clarity) is held the same way by deferring its zaraz.init call. Events queued before that are kept.
+const KB_LATE = "(function(w,d){var q=[],done=0,ev=['pointerdown','keydown','touchstart','scroll','wheel','mousemove'],o={passive:true,capture:true};" +
+  "function go(){if(done)return;done=1;ev.forEach(function(e){w.removeEventListener(e,go,o)});var f;while((f=q.shift()))try{f()}catch(x){}}" +
+  "ev.forEach(function(e){w.addEventListener(e,go,o)});function arm(){setTimeout(go,8000)}d.readyState==='complete'?arm():w.addEventListener('load',arm);" +
+  "w.kbLate=function(f){done?setTimeout(f,0):q.push(f)};" +
+  "var z,held;try{Object.defineProperty(w,'zaraz',{configurable:true,enumerable:true,get:function(){return z},set:function(v){z=v;if(done||held||!v||typeof v!=='object')return;held=v;var real;" +
+  "try{Object.defineProperty(v,'init',{configurable:true,enumerable:true,get:function(){return done?real:function(){var a=arguments;w.kbLate(function(){real&&real.apply(v,a)})}},set:function(fn){real=fn}})}catch(x){}}})}catch(x){}" +
+  "})(window,document);";
 // kolaboro.com (seoT, batch 8): every public static page gets a BreadcrumbList (and a WebPage node when it has no JSON-LD at all).
 // Parent crumbs are only linked when that folder has a page; the check is cached per isolate.
 const KB_PARENT = new Map(), KB_LN = { es: 'Español', de: 'Deutsch', fr: 'Français', ru: 'Русский', nl: 'Nederlands', ar: 'العربية', zh: '中文' };

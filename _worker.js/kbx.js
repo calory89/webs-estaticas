@@ -30,8 +30,9 @@ import * as m_ship from './kbx_ship.js'; // shipping: daily ship log, streak, en
 import * as m_data from './kbx_data.js'; // open data platform: catalog, data contracts, freshness, OpenAPI explorer
 import * as m_disc from './kbx_disc.js'; // discovery: world map, similar projects, market comparison, project timeline, display currency
 import * as m_qa from './kbx_qa.js'; // quality engineering: visual regression, page weight, SBOM, real-user vitals, accessibility
+import * as m_live from './kbx_live.js'; // status: server-side endpoint checks and incident history, CSP violation counts (b9c)
 import * as m_ins from './kbx_ins.js'; // insight: weekly market digest, market page figures, score explainer, project-scoped questions, change heatmap
-const MODS = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, m_ship, m_data, m_disc, m_qa, m_ins];
+const MODS = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, m_ship, m_data, m_disc, m_qa, m_ins, m_live];
 export async function route(req, u, env, ctx) {
   for (const m of MODS) if (m.PATHS && m.PATHS.test(u.pathname)) return m.handle(req, u, env, ctx);
   return new Response(JSON.stringify({ error: 'not found' }), { status: 404, headers: { 'content-type': 'application/json' } });
