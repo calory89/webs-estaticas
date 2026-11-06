@@ -17,6 +17,7 @@
 import { T, LANGS, LOCALE } from './kbx_named_i18n.js';
 import { rpc } from './kolaboro.js';
 import { watchBox, searchBox, feedLinks, W9JS, W9CSS } from './kbx_follow.js';   // batch 9 (b9a): watch button, instant search, feeds (UI parts; endpoints in kbx_follow.js)
+import { diffRoute, phSummary } from './kbx_named_diff.js';   // batch 9 (b9b): what-changed viewer
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
@@ -224,7 +225,9 @@ function projectPage(ix, x, lang, extra) {
   for (const f of ((fdx && fdx.f) || []).slice(0, 8)) { const t = String(f.text || '').replace(/^[A-Z]{2,5}-\d{3,4}\s*·\s*/, ''); if (cleanOk(t)) H.push([iso(f.at), fact(esc(fd(f.at, lang)) + ' · ' + esc(tr(lang, 'hist_hourly')) + ': ' + en(t) + (f.fp ? ' <small>(SHA-256 ' + esc(f.fp) + '...)</small>' : ''), page)]); }
   H.sort((a, b) => String(b[0]).localeCompare(String(a[0])));
   const fpd = x.sha || (c.fp || {}).sha256;
-  const history = '<ul class="fl">' + (H.map(h => h[1]).join('') || '<li>' + esc(tr(lang, 'no_hist')) + '</li>') +
+  const ph = extra.ph, chg = '/projects/' + x.s + '/changes/';
+  const phLine = ph && ph.n ? fact(esc(ph.n > 1 ? tr(lang, 'ph_line', { n: ph.n, a: fd(ph.first, lang), b: fd(ph.last, lang), c: ph.changed }) : tr(lang, 'ph_one', { a: fd(ph.first, lang) })) + ' <a class="more" href="' + chg + '">' + esc(tr(lang, ph.n > 1 ? 'ph_link' : 'ph_link1')) + '</a>', chg, tr(lang, 'ph_src')) : '';
+  const history = '<ul class="fl">' + phLine + (H.map(h => h[1]).join('') || (phLine ? '' : '<li>' + esc(tr(lang, 'no_hist')) + '</li>')) +
     (fpd ? fact(tr(lang, 'fp_line', { d: esc(fd(x.sealed || (c.fp || {}).date, lang)), h: '<code>' + esc(fpd.slice(0, 16)) + '...</code>', link: own('/verify', tr(lang, 'm_verify')) }), '/verify', 'kolaboro.com/verify') : '') +
     (c.sat ? fact(esc(tr(lang, 'sat_line', { d: fd(c.sat.date, lang), st: tr(lang, c.sat.status === 'visible change' ? 'sat_visible' : 'sat_none'), pct: c.sat.changed_pct })), '/satellite/', 'kolaboro.com/satellite') : '') + '</ul>';
 
@@ -255,7 +258,13 @@ function projectPage(ix, x, lang, extra) {
   const reviews = (rv.approved_total ? '<p>' + esc(tr(lang, 'rev_some', { k: rv.approved_total })) + '</p><div class="ugc" data-ugc>' + (rv.reports || []).slice(0, 10).map(r => '<blockquote lang="en">' + esc(r.body || r.text || '') + '</blockquote>').join('') + '</div>' : '<p>' + esc(tr(lang, 'rev_none', { n: name })) + '</p>') +
     '<p class="ki">' + esc(tr(lang, 'rev_pending')) + '</p><p><a class="btn btn-line kbtn" href="/buyer-reports/?project=' + encodeURIComponent(x.id) + '">' + esc(tr(lang, 'rev_btn')) + '</a></p>';
 
-  const reply = '<p>' + esc(tr(lang, 'reply_txt')) + '</p><p class="bts"><a class="btn btn-line kbtn" href="/developers/reply/?id=' + encodeURIComponent(x.id) + '">' + esc(tr(lang, 'reply_btn')) + '</a> <a class="btn btn-line kbtn" href="/corrections?id=' + encodeURIComponent(x.id) + '">' + esc(tr(lang, 'corr_btn')) + '</a> <a class="btn btn-line kbtn" href="/ask-developer/?id=' + encodeURIComponent(x.id) + '">' + esc(tr(lang, 'ask_btn')) + '</a></p>';
+  const DR = (extra.replies || []).filter(r => r && r.reply);
+  const drHtml = DR.length ? '<div class="ugc" data-replies>' + DR.slice(0, 10).map(r => {
+    const badge = r.official && r.domain ? '<span class="kpill c-verified kvbadge">' + esc(tr(lang, 'dr_badge', { d: r.domain })) + '</span>' : '<span class="kpill">' + esc(tr(lang, 'dr_badge_plain')) + '</span>';
+    const docs = (r.docs || []).length ? '<small>' + esc(tr(lang, 'dr_docs')) + ': ' + r.docs.slice(0, 12).map(k => esc(k.kind) + ' <code>' + esc(String(k.sha256).slice(0, 16)) + '...</code>').join(', ') + '</small><br>' : '';
+    return '<blockquote lang="en" class="kreply"><p>' + badge + ' <small>' + esc(tr(lang, 'dr_meta', { t: r.topic || '', a: fd(r.approved, lang), how: r.method === 'meta' ? tr(lang, 'dr_how_meta') : tr(lang, 'dr_how_dns') })) + (r.company ? ' &middot; ' + esc(r.company) : '') + '</small></p><p class="kreply-t">' + esc(r.reply) + '</p>' + docs + (r.note ? '<small><b>Kolaboro:</b> ' + esc(r.note) + '</small>' : '') + '</blockquote>';
+  }).join('') + '</div>' : '';
+  const reply = (drHtml ? '<h3>' + esc(tr(lang, 'dr_h', { k: DR.length })) + '</h3><p class="ki">' + esc(tr(lang, 'dr_intro')) + '</p>' + drHtml : '') + '<p>' + esc(tr(lang, 'reply_txt')) + '</p><p class="bts"><a class="btn btn-line kbtn" href="/developers/reply/?id=' + encodeURIComponent(x.id) + '">' + esc(tr(lang, 'reply_btn')) + '</a> <a class="btn btn-line kbtn" href="/corrections?id=' + encodeURIComponent(x.id) + '">' + esc(tr(lang, 'corr_btn')) + '</a> <a class="btn btn-line kbtn" href="/ask-developer/?id=' + encodeURIComponent(x.id) + '">' + esc(tr(lang, 'ask_btn')) + '</a></p>';
   const cta = '<p>' + esc(tr(lang, 'cta_txt')) + '</p><p class="bts"><a class="btn btn-hi kbtn" href="/check?url=' + encodeURIComponent(page || '') + '" data-ev="seo_check">' + esc(tr(lang, 'cta_free')) + '</a> <a class="btn btn-line kbtn" href="/book/" data-ev="seo_book">' + esc(tr(lang, 'cta_paid')) + '</a></p>';
 
   // FAQ built from the data above
@@ -388,7 +397,7 @@ const CSS = '<style id="knamed-css">.kp .kfs{display:grid;grid-template-columns:
   '.ktoc{display:flex;gap:8px;overflow-x:auto;padding:14px 0;margin:0;scrollbar-width:thin}.ktoc a{flex:none;font-size:.86rem;padding:6px 12px;border:1px solid var(--line);border-radius:999px;text-decoration:none;color:var(--ink-2)}' +
   '.lk{padding-inline-start:18px}.lk li{margin:6px 0}.lk small{color:var(--muted)}.cols{columns:2 260px}.kfaq{border-top:1px solid var(--line);padding:12px 0}.kfaq summary{cursor:pointer;font-weight:700;min-height:44px;display:flex;align-items:center}.kfaq p{max-width:75ch;color:var(--ink-2)}' +
   '.srcs{padding-inline-start:22px;font-size:.92rem}.srcs li{margin:5px 0;overflow-wrap:anywhere}.srcs small{color:var(--muted)}.kbtn{margin-top:6px!important;width:auto!important;box-shadow:none!important}.bts{display:flex;flex-wrap:wrap;gap:10px}.btn-line.kbtn{border-color:var(--ink);color:var(--ink);background:transparent}' +
-  '.klive{border:2px solid var(--ink);border-radius:18px;padding:16px 18px;margin:16px 0}.klive h3{margin-top:0}.live-out{margin-top:10px;min-height:1.5em}.live-out li{padding:6px 0}.kfoot{padding:20px 0 40px}.knote{border:2px dashed var(--line);border-radius:14px;padding:12px 14px!important;background:var(--card,var(--paper));max-width:80ch}.knr dd{font-weight:700}.more{font-weight:700}blockquote{border-inline-start:3px solid var(--line);margin:10px 0;padding:4px 14px}' +
+  '.klive{border:2px solid var(--ink);border-radius:18px;padding:16px 18px;margin:16px 0}.klive h3{margin-top:0}.live-out{margin-top:10px;min-height:1.5em}.live-out li{padding:6px 0}.kfoot{padding:20px 0 40px}.knote{border:2px dashed var(--line);border-radius:14px;padding:12px 14px!important;background:var(--card,var(--paper));max-width:80ch}.knr dd{font-weight:700}.more{font-weight:700}.kreply p{margin:4px 0}.kreply-t{white-space:pre-wrap}.kvbadge{white-space:normal}blockquote{border-inline-start:3px solid var(--line);margin:10px 0;padding:4px 14px}' +
   '@media(max-width:640px){.kp .kfs{grid-template-columns:repeat(2,minmax(0,1fr))}.kp .kf{min-height:84px;padding:9px 11px}.kp dd{font-size:.92rem}}</style>';
 const JS = "(function(){var b=document.querySelector('[data-live]');if(!b)return;var w=b.closest('.klive'),o=w.querySelector('.live-out'),L=JSON.parse(w.getAttribute('data-lk')||'{}'),M=JSON.parse(w.getAttribute('data-msg')||'{}');" +
   "b.addEventListener('click',function(){b.disabled=true;o.textContent=M.wait;var q=new URLSearchParams();Object.keys(L).forEach(function(k){if(L[k])q.set(k,L[k]);});" +
@@ -426,7 +435,19 @@ const RX = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(projects|developers)\/(?:([a-z0-9-]
 export const PATHS = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects|developers)(?:\/|$)|^\/api\/seo\/(?:urls|scan)$/;
 function jsonOut(o, s, extra) { return new Response(JSON.stringify(o), { status: s || 200, headers: Object.assign({ 'content-type': 'application/json; charset=utf-8', 'access-control-allow-origin': '*', 'cache-control': 'public, max-age=600' }, extra || {}) }); }
 
-export { data, scanHtml, lastmod, handoverOf, reviewed, isListing, fd, tr, iso, okHttp, fixU, host, cleanOk };
+export { data, scanHtml, lastmod, handoverOf, reviewed, isListing, fd, tr, iso, okHttp, fixU, host, cleanOk, assemble, esc, pre };
+// the project's official domain(s): hosts of the pages we track for it, excluding property portals (used by the verified reply check)
+export async function officialDomains(env, id) {
+  const ix = await data(env), x = ix.byId.get(String(id || '').toUpperCase());
+  if (!x) return { named: false, domains: [] };
+  return { named: true, slug: x.s, domains: [...new Set([x.url, x.du].filter(u => okHttp(u) && !isListing(u)).map(host).filter(Boolean))] };
+}
+let RDY = { t: 0, n: 0 };
+async function repliesPublished() {   // approved developer replies, part of the HTML cache key so an approval shows within a minute
+  if (Date.now() - RDY.t < 60000) return RDY.n;
+  try { const d = await rpc('kolaboro_i_ready', {}); RDY = { t: Date.now(), n: (d && d.replies_published) || 0 }; } catch (e) { RDY = { t: Date.now(), n: RDY.n }; }
+  return RDY.n;
+}
 export async function redirectP(u, env) {   // /p/<id>/ -> /projects/<slug>/ (301), or null to keep the old page
   try {
     const ix = await data(env), id = decodeURIComponent(u.pathname.split('/')[2] || '').toUpperCase();
@@ -441,7 +462,10 @@ export async function render(ix, kind, key, lang, env, ctx) {   // exported for 
     const x = ix.bySlug.get(key); if (!x) return null;
     let reviews = null;
     try { const k = new Request(ORIGIN + '/__named_rev/v1/' + x.id), hit = await caches.default.match(k); if (hit) reviews = await hit.json(); else { reviews = await rpc('kolaboro_t_reports_public', { p_project: x.id }); const p = caches.default.put(k, new Response(JSON.stringify(reviews || {}), { headers: { 'cache-control': 'max-age=1800' } })); if (ctx && ctx.waitUntil) ctx.waitUntil(p.catch(() => {})); } } catch (e) { reviews = null; }
-    return projectPage(ix, x, lang, { reviews });
+    let replies = [];
+    try { const k = new Request(ORIGIN + '/__named_dr/v1/' + x.id + '/' + (await repliesPublished())), hit = await caches.default.match(k); if (hit) replies = await hit.json(); else { replies = (await rpc('kolaboro_devreply_public', { p_id: x.id })) || []; const p = caches.default.put(k, new Response(JSON.stringify(replies), { headers: { 'cache-control': 'max-age=3600' } })); if (ctx && ctx.waitUntil) ctx.waitUntil(p.catch(() => {})); } } catch (e) { replies = []; }
+    let ph = null; try { ph = await phSummary(env, x.id); } catch (e) { ph = null; }
+    return projectPage(ix, x, lang, { reviews, replies, ph });
   }
   const dv = ix.devs.get(key); if (!dv) return null;
   return devPage(ix, dv, lang, { gleif: await gleif(dv.n, ctx) });
@@ -452,13 +476,15 @@ export async function handle(req, u, env, ctx, shell) {
   const p = u.pathname;
   if (p === '/api/seo/urls') return urls(env);
   if (p === '/api/seo/scan') return scan(u, env);
+  const dm = p.match(/^\/projects\/([a-z0-9-]{1,90})\/changes\/(?:([0-9a-f]{64})\.txt)?$/);
+  if (dm) { let ix; try { ix = await data(env); } catch (e) { return null; } const x = ix.bySlug.get(dm[1]); if (!x) return null; return diffRoute(req, u, env, ctx, shell, x, dm[2] || null); }
   const m = p.match(RX); if (!m) return null;
   const lang = m[1] || 'en', kind = m[2], key = m[3];
   if (!key && kind === 'developers') return null;                       // /developers/ is the static developer hub
   if (key && kind === 'developers' && RESERVED.has(key)) return null;   // /developers/reply/ etc. stay static
   if (!p.endsWith('/')) return new Response(null, { status: 301, headers: { location: p + '/' + u.search, 'cache-control': 'public, max-age=86400' } });
   let ix; try { ix = await data(env); } catch (e) { return null; }
-  const ck = new Request(ORIGIN + '/__named_html/' + CACHE_V + '/' + encodeURIComponent(ix.updated + '|' + (ix.named.count || 0) + '|' + ix.P.length + '|' + (ix.named.updated || '')) + p);
+  const ck = new Request(ORIGIN + '/__named_html/' + CACHE_V + '/' + encodeURIComponent(ix.updated + '|' + (ix.named.count || 0) + '|' + ix.P.length + '|' + (ix.named.updated || '') + '|r' + (key && kind === 'projects' ? await repliesPublished() : 0)) + p);
   try { const hit = await caches.default.match(ck); if (hit) return new Response(hit.body, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'x-named-cache': 'hit', 'cache-control': 'no-cache' } }); } catch (e) {}
   const pg = await render(ix, key ? kind : 'i', key, lang, env, ctx);
   const sh = await shell(pre(lang) + '/how-we-score/');

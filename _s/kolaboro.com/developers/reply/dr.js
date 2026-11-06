@@ -1,5 +1,6 @@
 /* Kolaboro developer reply portal (block I, 3 Nov 2026).
-   Ownership: DNS TXT "kolaboro-verify=<random 128-bit code>" on the project's domain, checked by /api/x/i/dns.
+   Ownership: DNS TXT "kolaboro-verify=<random 128-bit code>" on the project's domain, or <meta name="kolaboro-verify" content="<code>">
+   on its homepage; checked by /api/x/i/verify (with the official-domain match) or /api/x/i/dns.
    Documents: hashed here with WebCrypto SHA-256; the file itself is never uploaded. API: /api/x/i/* (see _worker.js/kbx_i.js). */
 (function () {
   var $ = function (i) { return document.getElementById(i); };
@@ -42,21 +43,27 @@
     var dom = cleanDomain($('dr-dom').value); DNS_OK = false; $('dr-dnsres').textContent = '';
     if (!dom) { $('dr-recbox').hidden = true; return; }
     $('dr-recbox').hidden = false; $('dr-val').textContent = 'kolaboro-verify=' + token(dom);
+    $('dr-meta').textContent = '<meta name="kolaboro-verify" content="' + token(dom) + '">'; $('dr-mdom').textContent = dom;
   }
   $('dr-dom').addEventListener('input', showRec); $('dr-dom').addEventListener('change', showRec);
   $('dr-new').onclick = function () { var dom = cleanDomain($('dr-dom').value); if (!dom) return; try { localStorage.removeItem('kb-dr-tok:' + dom); } catch (e) {} showRec(); };
   $('dr-copy').onclick = function () { var v = $('dr-val').textContent; (navigator.clipboard ? navigator.clipboard.writeText(v) : Promise.reject()).then(function () { $('dr-copy').textContent = 'Copied'; setTimeout(function () { $('dr-copy').textContent = 'Copy value'; }, 1500); }).catch(function () { prompt('Copy this value', v); }); };
   function checkDns() {
     var dom = cleanDomain($('dr-dom').value); if (!dom) return Promise.resolve(false);
-    var r = $('dr-dnsres'); r.textContent = 'Asking Cloudflare and Google DNS…';
-    return fetch('/api/x/i/dns?domain=' + encodeURIComponent(dom) + '&token=' + token(dom)).then(function (x) { return x.json(); }).then(function (d) {
-      if (d.error) { r.innerHTML = '<span class="dr-no">' + (d.error === 'rate' ? 'Too many checks from this network, try again later.' : 'That domain cannot be checked.') + '</span>'; return false; }
-      var per = d.resolvers.map(function (x) { return x.resolver + ': ' + (!x.answered ? 'no answer' : x.found ? 'found' : 'not found'); }).join(', ');
-      DNS_OK = d.found;
-      r.innerHTML = d.found ? '<span class="dr-ok">Record found on ' + esc(d.where) + '.</span> ' + esc(per) + '.' : '<span class="dr-no">Not found yet.</span> ' + esc(per) + '. New records usually appear within minutes, sometimes up to an hour.';
-      return d.found;
+    var id = ($('dr-id').value || '').trim().toUpperCase(), withId = /^[A-Z]{2,5}-\d{3,4}$/.test(id);
+    var r = $('dr-dnsres'); r.textContent = 'Asking Cloudflare and Google DNS and reading your homepage…';
+    var url = withId ? '/api/x/i/verify?id=' + encodeURIComponent(id) + '&domain=' + encodeURIComponent(dom) + '&token=' + token(dom) : '/api/x/i/dns?domain=' + encodeURIComponent(dom) + '&token=' + token(dom);
+    return fetch(url).then(function (x) { return x.json(); }).then(function (v) {
+      if (v.error) { r.innerHTML = '<span class="dr-no">' + (v.error === 'rate' ? 'Too many checks from this network, try again later.' : 'That domain cannot be checked.') + '</span>'; return false; }
+      var d = v.dns || v, per = d.resolvers.map(function (x) { return x.resolver + ': ' + (!x.answered ? 'no answer' : x.found ? 'found' : 'not found'); }).join(', ');
+      var meta = v.meta ? (v.meta.found ? ' Meta tag: <span class="dr-ok">found on ' + esc(v.meta.url) + '</span>.' : ' Meta tag: not found on the homepage.') : '';
+      var ok = !!(d.found || (v.meta && v.meta.found)); DNS_OK = ok;
+      var off = v.official ? (v.official.match ? ' <span class="dr-ok">This is the official domain on the project\'s Kolaboro page: the reply will carry the "Verified: controls ' + esc(dom) + '" badge once approved.</span>' : ' <span class="dr-no">' + esc(v.official.note) + '</span>') : (withId ? '' : ' Add the project id above to see whether this is the project\'s official domain.');
+      r.innerHTML = (ok ? '<span class="dr-ok">Ownership proven' + (d.found ? ' (TXT record on ' + esc(d.where) + ')' : ' (meta tag)') + '.</span> ' : '<span class="dr-no">Not found yet.</span> ') + 'DNS ' + esc(per) + '.' + meta + off + (ok ? '' : ' New DNS records usually appear within minutes, sometimes up to an hour.');
+      return ok;
     }).catch(function () { r.textContent = 'Could not check right now.'; return false; });
   }
+  $('dr-copym').onclick = function () { var v = $('dr-meta').textContent; (navigator.clipboard ? navigator.clipboard.writeText(v) : Promise.reject()).then(function () { $('dr-copym').textContent = 'Copied'; setTimeout(function () { $('dr-copym').textContent = 'Copy meta tag'; }, 1500); }).catch(function () { prompt('Copy this tag', v); }); };
   $('dr-check').onclick = checkDns;
 
   // ---- Step 2: documents, hashed locally
@@ -107,8 +114,8 @@
       publish_company: f.publish_company.checked, ok: true, docs: DOCS.filter(function (d) { return d.sha256; }).map(function (d) { return { kind: d.kind, name: d.name, sha256: d.sha256, bytes: d.bytes, type: d.type, link: d.link || null }; })
     }) }).then(function (r) { return r.json(); }).then(function (d) {
       $('dr-send').disabled = false; $('dr-send').textContent = 'Send for review';
-      if (d.ok) { m.innerHTML = '<span class="dr-ok">Received, reference #' + esc(d.ref) + '.</span> The DNS record was found on ' + esc(d.dns.where) + '. Keep it in place until your reply is published; a moderator re-checks it.'; DOCS = []; render(); f.reply.value = ''; if (window.kbEvent) kbEvent('developer_reply_verified'); }
-      else m.innerHTML = '<span class="dr-no">' + esc(d.message || 'Could not send.') + '</span>' + (d.error === 'dns' ? ' Use "Check DNS now" above to watch for it.' : '');
+      if (d.ok) { m.innerHTML = '<span class="dr-ok">Received, reference #' + esc(d.ref) + '.</span> ' + (d.method === 'meta' ? 'The meta tag was found on ' + esc(d.meta && d.meta.url) + '.' : 'The DNS record was found on ' + esc(d.dns.where) + '.') + (d.official_domain ? ' It is the project\'s official domain, so the published reply will carry the verified badge.' : '') + ' Keep it in place until your reply is published; a moderator re-checks it.'; DOCS = []; render(); f.reply.value = ''; if (window.kbEvent) kbEvent('developer_reply_verified'); }
+      else m.innerHTML = '<span class="dr-no">' + esc(d.message || 'Could not send.') + '</span>' + (d.error === 'dns' ? ' Use "Check now" above to watch for it.' : '');
     }).catch(function () { $('dr-send').disabled = false; $('dr-send').textContent = 'Send for review'; m.innerHTML = 'Could not send. Please email <a href="mailto:hello@kolaboro.com">hello@kolaboro.com</a>.'; });
   });
 
@@ -118,10 +125,10 @@
     if (!d.ready) { el.innerHTML = '<p class="muted">None yet: the verified portal opens soon.</p>'; return; }
     if (!L.length) { el.innerHTML = '<p class="muted">No developer reply has been approved' + (q ? ' for ' + esc(q) : '') + ' yet.</p>'; return; }
     el.innerHTML = L.map(function (x) {
-      return '<div class="dr-card"><small>' + esc(x.project_id) + ' &middot; ' + esc(x.topic) + ' &middot; approved ' + esc(x.approved) + (x.company ? ' &middot; ' + esc(x.company) + (x.domain ? ' (' + esc(x.domain) + ')' : '') : '') + '</small><pre>' + esc(x.reply) + '</pre>' +
+      return '<div class="dr-card">' + (x.official && x.domain ? '<p style="margin:0 0 6px"><span class="dr-ok">Verified: controls ' + esc(x.domain) + '</span></p>' : '') + '<small>' + esc(x.project_id) + ' &middot; ' + esc(x.topic) + ' &middot; approved ' + esc(x.approved) + (x.company ? ' &middot; ' + esc(x.company) + (x.domain ? ' (' + esc(x.domain) + ')' : '') : '') + '</small><pre>' + esc(x.reply) + '</pre>' +
         (x.note ? '<p><b>Kolaboro note:</b> ' + esc(x.note) + '</p>' : '') +
         (x.docs && x.docs.length ? '<p style="margin:6px 0 2px"><b>Documents</b> (SHA-256 fingerprints)</p>' + x.docs.map(function (k) { return '<div class="dr-h">' + esc(k.kind) + ' ' + esc(k.sha256) + '</div>'; }).join('') : '') +
-        '<small>Ownership shown by: ' + esc(x.ownership) + '. <a href="/p/?id=' + encodeURIComponent(x.project_id) + '">Project file</a></small></div>';
+        '<small>Ownership shown by: ' + esc(x.ownership) + '. <a href="/p/' + encodeURIComponent(x.project_id) + '/">Project page</a></small></div>';
     }).join('');
   }).catch(function () { $('dr-pub').innerHTML = '<p class="muted">Could not load replies.</p>'; });
 
