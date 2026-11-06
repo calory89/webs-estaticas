@@ -92,6 +92,13 @@
     <p class="l10n-ai" style="font-size:.85rem;color:var(--muted);margin:0 0 10px">Цитаты с сайта застройщика приводятся на языке оригинала.</p><style>.l10n-ai{display:none}.l10n-ai:has(~ #az-4.on){display:block}</style><div class="az-step" id="az-4"></div>
   </div>
 </div></section>
+<section class="sec" id="evidence" aria-labelledby="ev-h" data-clarity-mask="True"><div class="wrap">
+<h2 id="ev-h">Проверьте, что прислал застройщик</h2><p class="lead">Две проверки, которые работают на этом устройстве: ничего из выбранного здесь не загружается.</p>
+<div class="grid2 ev-grid">
+<div id="pdf-check"><h3>PDF разрешения или договора: его редактировали?</h3><p class="ev-m">Читает структуру файла: сохранения поверх оригинала, цифровые подписи и совпадение подписанных байтов, программу и даты, а также строки, где шрифт меняется посередине (так бывает, если перепечатать цену или дату).</p><div data-kbpdf></div></div>
+<div id="photo-check"><h3>Фото стройки: когда, где и не повтор ли?</h3><p class="ev-m">Читает дату, камеру и GPS-координаты, сохранённые в каждом фото, измеряет расстояние до рынка проекта и сравнивает каждое изображение с изображениями отслеживаемых нами проектов.</p><div data-kbphoto></div></div>
+</div></div></section>
+<style>.ev-grid h3{font-size:1.1rem;margin:0 0 6px}.ev-m{color:var(--muted);font-size:.95rem;margin:0 0 10px}.ev-grid>div{min-width:0}</style>
 <section class="sec alt"><div class="wrap"><h2>Что включает полная проверка</h2><p class="lead">Право собственности и земля, разрешения, история сдачи объектов застройщиком, ход стройки, куда идут ваши деньги, договор и реалистичность обещанной доходности. <a href="/ru/how-we-score/">Методика</a> · <a href="/ru/pricing/">Цены</a>.</p><div class="r26-more"><a href="/technology#certificate"><b>Прочитать документ →</b><span>Договор, свидетельство, разрешение или счёт, на вашем языке.</span></a><a href="/technology#price"><b>Проверить цену за м² →</b><span>В сравнении с опубликованными данными по району.</span></a><a href="/portal/demo"><b>Открыть личный кабинет клиента →</b><span>Наш демо-аккаунт, без регистрации.</span></a></div></div></section>
 <section class="sec alt" id="start" hidden><div class="wrap grid2">
   <div><h2>Запросить проверку</h2><p class="lead">Мы поищем проект в наших записях и в течение двух рабочих дней ответим, что о нём известно и сколько будет стоить полная проверка.</p></div>
@@ -220,7 +227,7 @@
     <p class="fine">© 2026 Kolaboro, оператор Equinox Investment Group LLC, 30 N Gould St Ste N, Sheridan, WY 82801, USA. Агенты Kolaboro предоставляют независимую проверку и информацию, а не юридические, налоговые или финансовые консультации. Отчёты представляют собой мнения, основанные на перечисленных в них доказательствах.</p>
   </div>
 </footer>
-<script src="/k/site.js?v=235dbb8852" defer></script><script src="/k/prov.js?v=85080e1313" defer></script>
+<script src="/k/site.js?v=235dbb8852" defer></script><script src="/tools/pdf-check/inline.js?v=fin11" defer></script><script src="/tools/image-check/photo.js?v=fin11" defer></script><script src="/k/prov.js?v=85080e1313" defer></script>
 <script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script>
 <div class="cc" id="cc" role="dialog" aria-label="Cookies" hidden><p>Мы используем аналитические cookie, чтобы улучшать Kolaboro. <a href="/legal/privacy">Конфиденциальность</a></p><div><button class="btn btn-line btn-sm" data-cc="no">Только необходимые</button><button class="btn btn-hi btn-sm" data-cc="yes">Принять</button></div></div>
 <script>(function(){var EU=["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"];var st=null;try{st=localStorage;}catch(e){}var c=st&&st.getItem('kb-consent');if(c)return;
