@@ -183,7 +183,10 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
             if not fn.endswith('.html'): continue
             p = os.path.join(root, fn); s = open(p).read()
             if 'kb-consent' in s: continue
-            s = s.replace('<script async src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V"></script>', pre + '<script async src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V"></script>', 1)
+            # consent defaults go before the gtag loader: the late kbLate loader from build.py (6 Nov 2026) or the old async tag
+            late = '<script>(window.kbLate||function(f){'
+            if late in s: s = s.replace(late, pre + late, 1)
+            else: s = s.replace('<script async src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V"></script>', pre + '<script async src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V"></script>', 1)
             s = s.replace('</body>', banner + '\n</body>', 1)
             open(p, 'w').write(s)
 

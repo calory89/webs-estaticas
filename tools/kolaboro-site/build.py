@@ -11,7 +11,10 @@ CONTACT = 'carlos@equinoxinvestmentgroup.com'
 
 LOGO = '<svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4v24M8 16 23 6.5M8 16l15 9.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="24" cy="6" r="3.4" fill="currentColor"/><circle cx="24" cy="26" r="3.4" fill="currentColor"/><circle cx="8" cy="16" r="4.2" fill="#FF5B14"/></svg>'
 
-GA = ('<script async src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V"></script>'
+# 6 Nov 2026: gtag.js loads late. window.kbLate (injected into <head> by kbHeaders in _worker.js/index.js) runs it on the first
+# tap, key, scroll or mouse move, or 8 s after load; without the worker it falls back to 1.5 s after load. The config call is queued
+# in dataLayer straight away, so no page view is lost.
+GA = ('<script>(window.kbLate||function(f){addEventListener("load",function(){setTimeout(f,1500)})})(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V";document.head.appendChild(s)})</script>'
       '<script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag(\'js\',new Date());gtag(\'config\',\'G-FJKJE77K4V\');</script>')
 CLARITY = ''   # 4 Nov 2026: Clarity comes only from Cloudflare Zaraz (project wqn50nb6kp); a second tag crashed it
 

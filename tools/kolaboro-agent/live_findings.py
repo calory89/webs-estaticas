@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Kolaboro live findings: every hour, re-read the developer pages checked longest ago and publish what changed.
+"""Kolaboro live findings: once a day (hourly until 6 Nov 2026), re-read the developer pages checked longest ago and publish what changed.
 
 Usage: live_findings.py OUT_DIR
 Writes OUT_DIR/live-findings.json (public: last 500 findings and the run log) and OUT_DIR/findings-by-project.json
@@ -295,7 +295,7 @@ def wording(pid, kind, fact, new, old, old_seen, hm):
             return 'handover now promised for %s on the developer page%s' % (when(new), was)
         if kind == 'removed':
             return 'the developer page no longer states a handover date (it said %s on %s)' % (when(old), ddmon(old_seen))
-        return 'developer page promises handover in %s (%s)' % (when(new), 'first reading by the hourly check' if first else 'no date when we read it on %s' % ddmon(old_seen))
+        return 'developer page promises handover in %s (%s)' % (when(new), 'first reading by the daily check' if first else 'no date when we read it on %s' % ddmon(old_seen))
     if fact == 'price_from':
         if kind == 'changed':
             a, b = usd(old), usd(new)
@@ -704,7 +704,7 @@ def finish(run, new_findings, state, feed, byp, od, spath, fpath, bpath, tracked
     pubd = {
         'updated': run['at'],
         'about': ('Every day a GitHub Actions job re-reads the developer pages of the tracked projects that were checked longest ago '
-                  '(round robin over all %d projects with a public id), asks claude-haiku-5-5 for concrete facts with an exact quote each, '
+                  '(round robin over all %d projects with a public id), asks our agent for concrete facts with an exact quote each, '
                   'and publishes a finding only when a fact is new or changed compared with what we stored for that project.' % tracked),
         'method': {
             'schedule': 'daily (about 07:34 UTC, hourly until 6 Nov 2026), GitHub Actions, one run at a time',

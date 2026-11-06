@@ -342,7 +342,7 @@ def r15_inject():
         open(os.path.join(OUT, path, 'index.html'), 'w').write(html.replace('__ANON__', anon))
     # GA purchase event on /thanks needs gtag: add the GA tag there
     fp = os.path.join(OUT, 'thanks', 'index.html'); s = open(fp).read()
-    s = s.replace('</head>', '<script async src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-FJKJE77K4V");</script>\n</head>', 1)
+    s = s.replace('</head>', '<script>(window.kbLate||function(f){addEventListener("load",function(){setTimeout(f,1500)})})(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V";document.head.appendChild(s)})</script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date());gtag("config","G-FJKJE77K4V");</script>\n</head>', 1)
     open(fp, 'w').write(s)
     # remember the desk-review URL + email for the signup form
     fp = os.path.join(OUT, 'check', 'index.html'); s = open(fp).read()
