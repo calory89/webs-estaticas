@@ -13,6 +13,20 @@
  ],
  "items": [
   {
+   "id": "https://kolaboro.com/shipping/#d-2026-11-06",
+   "url": "https://kolaboro.com/shipping/#d-2026-11-06",
+   "title": "6 November 2026: 34 changes shipped so far",
+   "content_text": "- Verified developer replies (DNS TXT or homepage meta, official-domain badge, moderated) and what-changed diff viewer on named pages\n- Passkey sign-in for buyers, optional admin two-factor (TOTP), W3C verifiable credentials for reports and sealed lookups (did:web)\n- PDF and photo checks in 8 languages (evidence section on every localized /check/ page), changelog line for the afternoon fixes\n- Search alerts send through the DB outbox (worker-key RPC kolaboro_worker_mail) when no direct mail key is set\n- Mobile speed (third-party tags wait for first interaction or 8 s), /api/x/live status checks and CSP counts\n- Bump site.js version so the search palette with named projects and developers reaches cached visitors\n\nDay in progress: summary taken from the commit subjects so far.",
+   "content_html": "<ul><li>Verified developer replies (DNS TXT or homepage meta, official-domain badge, moderated) and what-changed diff viewer on named pages</li><li>Passkey sign-in for buyers, optional admin two-factor (TOTP), W3C verifiable credentials for reports and sealed lookups (did:web)</li><li>PDF and photo checks in 8 languages (evidence section on every localized /check/ page), changelog line for the afternoon fixes</li><li>Search alerts send through the DB outbox (worker-key RPC kolaboro_worker_mail) when no direct mail key is set</li><li>Mobile speed (third-party tags wait for first interaction or 8 s), /api/x/live status checks and CSP counts</li><li>Bump site.js version so the search palette with named projects and developers reaches cached visitors</li></ul><p>Day in progress: summary taken from the commit subjects so far.</p>",
+   "date_published": "2026-11-06T00:00:00Z",
+   "date_modified": "2026-11-06T11:36:44Z",
+   "_kolaboro": {
+    "ships": 34,
+    "data_updates": 26,
+    "method": "so-far"
+   }
+  },
+  {
    "id": "https://kolaboro.com/shipping/#d-2026-11-05",
    "url": "https://kolaboro.com/changelog/2026-11-05/",
    "title": "5 November 2026: 72 changes shipped",

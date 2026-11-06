@@ -1,7 +1,7 @@
 {
  "about": "Roadmap items that link to the live page delivering them (data-live and data-mark attributes on /roadmap/). Each night GitHub Actions fetches the page: an item counts as shipped only when the page answers HTTP 200, its canonical link is that page, and its HTML contains the marker text (case-insensitive). The roadmap page reads this file.",
  "marker_rule": "HTTP 200 + canonical link equals the linked page + page HTML contains data-mark",
- "generated_at": "2026-11-06T02:31:51Z",
+ "generated_at": "2026-11-06T19:25:45Z",
  "items": [
   {
    "n": 13,
@@ -13,7 +13,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:34Z"
+   "checked_at": "2026-11-06T19:25:22Z"
   },
   {
    "n": 14,
@@ -25,7 +25,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:35Z"
+   "checked_at": "2026-11-06T19:25:23Z"
   },
   {
    "n": 15,
@@ -37,7 +37,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:36Z"
+   "checked_at": "2026-11-06T19:25:25Z"
   },
   {
    "n": 16,
@@ -49,7 +49,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:36Z"
+   "checked_at": "2026-11-06T19:25:26Z"
   },
   {
    "n": 17,
@@ -61,7 +61,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:37Z"
+   "checked_at": "2026-11-06T19:25:26Z"
   },
   {
    "n": 19,
@@ -73,7 +73,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:37Z"
+   "checked_at": "2026-11-06T19:25:27Z"
   },
   {
    "n": 20,
@@ -85,7 +85,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:37Z"
+   "checked_at": "2026-11-06T19:25:28Z"
   },
   {
    "n": 21,
@@ -97,7 +97,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:38Z"
+   "checked_at": "2026-11-06T19:25:29Z"
   },
   {
    "n": 22,
@@ -109,7 +109,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:38Z"
+   "checked_at": "2026-11-06T19:25:30Z"
   },
   {
    "n": 24,
@@ -121,7 +121,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:39Z"
+   "checked_at": "2026-11-06T19:25:30Z"
   },
   {
    "n": 27,
@@ -133,7 +133,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:40Z"
+   "checked_at": "2026-11-06T19:25:31Z"
   },
   {
    "n": 31,
@@ -145,7 +145,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:40Z"
+   "checked_at": "2026-11-06T19:25:31Z"
   },
   {
    "n": 38,
@@ -157,7 +157,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:41Z"
+   "checked_at": "2026-11-06T19:25:32Z"
   },
   {
    "n": 40,
@@ -169,7 +169,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:41Z"
+   "checked_at": "2026-11-06T19:25:32Z"
   },
   {
    "n": 41,
@@ -181,7 +181,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:42Z"
+   "checked_at": "2026-11-06T19:25:33Z"
   },
   {
    "n": 42,
@@ -193,7 +193,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:42Z"
+   "checked_at": "2026-11-06T19:25:34Z"
   },
   {
    "n": 53,
@@ -205,7 +205,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:42Z"
+   "checked_at": "2026-11-06T19:25:34Z"
   },
   {
    "n": 54,
@@ -217,7 +217,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:43Z"
+   "checked_at": "2026-11-06T19:25:35Z"
   },
   {
    "n": 56,
@@ -229,7 +229,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:43Z"
+   "checked_at": "2026-11-06T19:25:36Z"
   },
   {
    "n": 61,
@@ -241,7 +241,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:44Z"
+   "checked_at": "2026-11-06T19:25:36Z"
   },
   {
    "n": 62,
@@ -253,7 +253,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:44Z"
+   "checked_at": "2026-11-06T19:25:37Z"
   },
   {
    "n": 63,
@@ -265,7 +265,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:45Z"
+   "checked_at": "2026-11-06T19:25:37Z"
   },
   {
    "n": 66,
@@ -277,7 +277,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:45Z"
+   "checked_at": "2026-11-06T19:25:38Z"
   },
   {
    "n": 67,
@@ -289,7 +289,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:45Z"
+   "checked_at": "2026-11-06T19:25:38Z"
   },
   {
    "n": 68,
@@ -301,7 +301,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:46Z"
+   "checked_at": "2026-11-06T19:25:39Z"
   },
   {
    "n": 70,
@@ -313,7 +313,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:46Z"
+   "checked_at": "2026-11-06T19:25:39Z"
   },
   {
    "n": 71,
@@ -325,7 +325,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:47Z"
+   "checked_at": "2026-11-06T19:25:40Z"
   },
   {
    "n": 73,
@@ -337,7 +337,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:47Z"
+   "checked_at": "2026-11-06T19:25:41Z"
   },
   {
    "n": 74,
@@ -349,7 +349,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:48Z"
+   "checked_at": "2026-11-06T19:25:41Z"
   },
   {
    "n": 78,
@@ -361,7 +361,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:48Z"
+   "checked_at": "2026-11-06T19:25:42Z"
   },
   {
    "n": 81,
@@ -373,7 +373,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:49Z"
+   "checked_at": "2026-11-06T19:25:42Z"
   },
   {
    "n": 83,
@@ -385,7 +385,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:49Z"
+   "checked_at": "2026-11-06T19:25:43Z"
   },
   {
    "n": 85,
@@ -397,7 +397,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:49Z"
+   "checked_at": "2026-11-06T19:25:43Z"
   },
   {
    "n": 86,
@@ -409,7 +409,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:50Z"
+   "checked_at": "2026-11-06T19:25:44Z"
   },
   {
    "n": 91,
@@ -421,7 +421,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:50Z"
+   "checked_at": "2026-11-06T19:25:44Z"
   },
   {
    "n": 93,
@@ -433,7 +433,7 @@
    "marker_found": true,
    "canonical_matches": true,
    "shipped": true,
-   "checked_at": "2026-11-06T02:31:51Z"
+   "checked_at": "2026-11-06T19:25:45Z"
   }
  ],
  "linked": 36,
