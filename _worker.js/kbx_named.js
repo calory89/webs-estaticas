@@ -16,10 +16,11 @@
 // no Review or AggregateRating schema (no verified reviews exist yet); private individuals are never named (named.py drops them).
 import { T, LANGS, LOCALE } from './kbx_named_i18n.js';
 import { rpc } from './kolaboro.js';
+import { watchBox, searchBox, feedLinks, W9JS, W9CSS } from './kbx_follow.js';   // batch 9 (b9a): watch button, instant search, feeds (UI parts; endpoints in kbx_follow.js)
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v7';
+const CACHE_V = 'named-v8';
 export const OPINION_RX = /\b(scam\w*|fraud\w*|ponzi|swindl\w*|rip-?off|avoid\w*|beware|dodgy|shady|crook\w*|estafa\w*|fraude\w*|timo|timador\w*|betrug\w*|betrüg\w*|abzocke\w*|arnaque\w*|escroquer\w*|escroc\w*|oplichting|oplichter\w*|bedrog\w*)\b|мошен|обман|афер|骗局|诈骗|欺诈|احتيال|نصب/i;
 
 // ------------------------------------------------------------------------------------------------ data
@@ -275,7 +276,7 @@ function projectPage(ix, x, lang, extra) {
   const crumbs = [[tr(lang, 'crumb_home'), ORIGIN + pre(lang) + '/'], [tr(lang, 'crumb_projects'), ORIGIN + pre(lang) + '/projects/'], [x.mk, ORIGIN + '/m/' + slugM(x.mk) + '/'], [name, canon]];
   const toc = [['glance', 's_glance'], ['promise', 's_promise'], ['delivery', 's_delivery'], ['permits', 's_permits'], ['checks', 's_checks'], ['claims', 's_claims'], ['history', 's_history'], ['reports', 's_reports'], ['developer', 's_devsec'], ['reviews', 's_reviews'], ['reply', 's_reply'], ['faq', 's_faq'], ['sources', 's_sources']];
   const body = '<section class="phero kp"><div class="wrap"><p class="crumb">' + crumbs.slice(0, 3).map(([l, u]) => '<a href="' + esc(u.replace(ORIGIN, '')) + '">' + esc(l) + '</a>').join(' / ') + '</p>' +
-    '<h1>' + esc(tr(lang, 'h1_p', { n: name })) + '</h1><p class="lead">' + esc(tr(lang, 'lead_p', { n: name, place })) + '</p>' + keys + '</div></section>' +
+    '<h1>' + esc(tr(lang, 'h1_p', { n: name })) + '</h1><p class="lead">' + esc(tr(lang, 'lead_p', { n: name, place })) + '</p>' + keys + watchBox(lang, x.id, name, '/projects/' + x.s + '/') + '</div></section>' +
     '<div class="wrap kwrap"><nav class="ktoc" aria-label="' + esc(tr(lang, 's_glance')) + '">' + toc.map(([i, k]) => '<a href="#' + i + '">' + esc(tr(lang, k)) + '</a>').join('') + '</nav>' +
     sec('glance', esc(tr(lang, 's_glance')), '<ul class="fl glance">' + g.join('') + '</ul>') + sec('promise', esc(tr(lang, 's_promise')), promised) + sec('delivery', esc(tr(lang, 's_delivery')), delivery) +
     sec('permits', esc(tr(lang, 's_permits')), permits) + sec('checks', esc(tr(lang, 's_checks')), checks) + sec('claims', esc(tr(lang, 's_claims')), claims) + sec('history', esc(tr(lang, 's_history')), history) +
@@ -298,7 +299,7 @@ function projectPage(ix, x, lang, extra) {
       distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: ORIGIN + rec }] },
     { '@type': 'BreadcrumbList', '@id': canon + '#bc', itemListElement: crumbs.map(([l, u], i) => ({ '@type': 'ListItem', position: i + 1, name: l, item: u })) },
     { '@type': 'FAQPage', '@id': canon + '#faq', mainEntity: FAQ.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }] };
-  return { title, desc, canon, body, ld, lastmod: checked, alt: l => pUrl(l, x.s) };
+  return { title, desc, canon, body, ld, lastmod: checked, alt: l => pUrl(l, x.s), feed: { path: '/projects/' + x.s + '/', name } };
 }
 
 // ------------------------------------------------------------------------------------------------ developer page
@@ -353,7 +354,7 @@ function devPage(ix, dv, lang, extra) {
   const S = [...new Set(L.flatMap(x => [x.url, x.du]).concat(FLu.map(f => f[1])).filter(okHttp))];
   const sources = '<p class="ki">' + esc(tr(lang, 'src_intro')) + '</p><ol class="srcs">' + S.slice(0, 60).map(srcLi).join('') + '</ol>';
   const crumbs = [[tr(lang, 'crumb_home'), ORIGIN + pre(lang) + '/'], [tr(lang, 'crumb_devs'), ORIGIN + '/developers/'], [name, canon]];
-  const body = '<section class="phero kp"><div class="wrap"><p class="crumb">' + crumbs.slice(0, 2).map(([l, u]) => '<a href="' + esc(u.replace(ORIGIN, '')) + '">' + esc(l) + '</a>').join(' / ') + '</p><h1>' + esc(tr(lang, 'h1_d', { dev: name })) + '</h1><p class="lead">' + esc(tr(lang, 'lead_d', { dev: name })) + '</p></div></section>' +
+  const body = '<section class="phero kp"><div class="wrap"><p class="crumb">' + crumbs.slice(0, 2).map(([l, u]) => '<a href="' + esc(u.replace(ORIGIN, '')) + '">' + esc(l) + '</a>').join(' / ') + '</p><h1>' + esc(tr(lang, 'h1_d', { dev: name })) + '</h1><p class="lead">' + esc(tr(lang, 'lead_d', { dev: name })) + '</p>' + feedLinks(lang, '/developers/' + dv.s + '/', name) + '</div></section>' +
     '<div class="wrap kwrap">' + sec('glance', esc(tr(lang, 's_glance')), '<ul class="fl glance">' + g.join('') + '</ul>') + sec('projects', esc(tr(lang, 's_dprojects')), projects) + sec('record', esc(tr(lang, 's_drecord')), record) +
     sec('registers', esc(tr(lang, 's_dreg')), reg) + sec('reports', esc(tr(lang, 's_dreports')), reports) + sec('reply', esc(tr(lang, 's_reply')), reply) + sec('cta', esc(tr(lang, 's_cta')), cta) + sec('faq', esc(tr(lang, 's_faq')), faq) + sec('sources', esc(tr(lang, 's_sources')), sources) +
     '<p class="ki kfoot">' + tr(lang, 'foot', { d: esc(fd(checked, lang)), link: own('/data-policy/', tr(lang, 'm_data_policy')) }) + '</p></div>';
@@ -363,14 +364,14 @@ function devPage(ix, dv, lang, extra) {
     Object.assign({ '@type': 'Organization', '@id': dUrl('en', dv.s) + '#org', name, url: dUrl('en', dv.s) }, gl.matches[0] ? { leiCode: gl.matches[0].lei, legalName: gl.matches[0].legal } : {}, { subjectOf: L.slice(0, 50).map(x => ({ '@type': 'WebPage', url: pUrl(lang, x.s), name: x.n })) }),
     { '@type': 'BreadcrumbList', '@id': canon + '#bc', itemListElement: crumbs.map(([l, u], i) => ({ '@type': 'ListItem', position: i + 1, name: l, item: u })) },
     { '@type': 'FAQPage', '@id': canon + '#faq', mainEntity: FAQ.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }] };
-  return { title, desc, canon, body, ld, lastmod: checked, alt: l => dUrl(l, dv.s) };
+  return { title, desc, canon, body, ld, lastmod: checked, alt: l => dUrl(l, dv.s), feed: { path: '/developers/' + dv.s + '/', name } };
 }
 
 function indexPage(ix, lang) {
   const by = new Map(); for (const x of ix.P) { if (!by.has(x.mk)) by.set(x.mk, []); by.get(x.mk).push(x); }
   const mks = [...by.keys()].sort((a, b) => by.get(b).length - by.get(a).length);
   const canon = ORIGIN + pre(lang) + '/projects/', title = tr(lang, 'title_i'), desc = tr(lang, 'lead_i', { k: ix.P.length, m: mks.length });
-  const body = '<section class="phero kp"><div class="wrap"><p class="crumb"><a href="' + pre(lang) + '/">Kolaboro</a></p><h1>' + esc(tr(lang, 'h1_i')) + '</h1><p class="lead">' + esc(desc) + '</p></div></section><div class="wrap kwrap">' +
+  const body = '<section class="phero kp"><div class="wrap"><p class="crumb"><a href="' + pre(lang) + '/">Kolaboro</a></p><h1>' + esc(tr(lang, 'h1_i')) + '</h1><p class="lead">' + esc(desc) + '</p>' + searchBox(lang, ix.P.length, ix.devs.size) + '</div></section><div class="wrap kwrap" data-kx-lists>' +
     mks.map(m => '<section class="ks"><h2 id="m-' + slugM(m) + '">' + esc(m) + ' <small>' + by.get(m).length + '</small></h2><ul class="lk cols">' + by.get(m).sort((a, b) => a.n.localeCompare(b.n)).map(x => '<li><a href="' + pre(lang) + '/projects/' + x.s + '/">' + esc(x.n) + '</a>' + (x.dv ? ' <small>' + esc(x.dv) + '</small>' : '') + '</li>').join('') + '</ul></section>').join('') + '</div>';
   const ld = { '@context': 'https://schema.org', '@type': 'CollectionPage', url: canon, name: title.replace(/ \| Kolaboro$/, ''), description: desc, inLanguage: lang, dateModified: iso(ix.updated) };
   return { title, desc, canon, body, ld, lastmod: iso(ix.updated), alt: l => ORIGIN + pre(l) + '/projects/' };
@@ -402,7 +403,8 @@ function head(pg, lang) {
   return '<title>' + esc(pg.title) + '</title><meta name="description" content="' + esc(pg.desc) + '"><link rel="canonical" href="' + pg.canon + '">' + alts +
     '<meta property="og:type" content="website"><meta property="og:site_name" content="Kolaboro"><meta property="og:title" content="' + esc(pg.title) + '"><meta property="og:description" content="' + esc(pg.desc) + '"><meta property="og:url" content="' + pg.canon + '"><meta property="og:locale" content="' + (LOCALE[lang] || 'en-GB').replace('-', '_') + '">' +
     '<meta name="twitter:card" content="summary"><meta name="robots" content="' + (pg.noindex ? 'noindex' : 'index, follow, max-snippet:-1') + '">' +
-    '<script type="application/ld+json">' + JSON.stringify(pg.ld).replace(/</g, '\\u003c') + '</script>' + CSS;
+    (pg.feed ? '<link rel="alternate" type="application/atom+xml" title="' + esc(pg.feed.name) + ' (Atom)" href="' + pg.feed.path + 'feed.atom"><link rel="alternate" type="application/feed+json" title="' + esc(pg.feed.name) + ' (JSON Feed)" href="' + pg.feed.path + 'feed.json">' : '') +
+    '<script type="application/ld+json">' + JSON.stringify(pg.ld).replace(/</g, '\\u003c') + '</script>' + CSS + W9CSS;
 }
 async function assemble(pg, lang, shellRes) {
   const msg = { wait: tr(lang, 'live_wait'), err: tr(lang, 'live_err'), found: tr(lang, 'live_found'), nf: tr(lang, 'live_notfound'), un: tr(lang, 'live_unavail'), open: tr(lang, 'live_open') };
@@ -413,7 +415,7 @@ async function assemble(pg, lang, shellRes) {
     .on('meta[name="description"],meta[name="robots"],meta[property^="og:"],meta[name^="twitter:"],link[rel="canonical"],link[rel="alternate"][hreflang]', { element(e) { e.remove(); } })
     .on('script[type="application/ld+json"]', { element(e) { e.remove(); } })
     .on('head', { element(e) { e.append(tags, { html: true }); } })
-    .on('main', { element(e) { e.setInnerContent(body + (/data-live/.test(body) ? '<script>' + JS + '</script>' : ''), { html: true }); } })
+    .on('main', { element(e) { e.setInnerContent(body + (/data-live/.test(body) ? '<script>' + JS + '</script>' : '') + (/data-kw|data-kx/.test(body) ? '<script>' + W9JS + '</script>' : ''), { html: true }); } })
     .on('details.lsw a[hreflang]', { element(e) { const l = e.getAttribute('hreflang'); if (LANGS.includes(l)) e.setAttribute('href', pg.alt(l).replace(ORIGIN, '')); } })
     .transform(new Response(shellRes.body, { headers: { 'content-type': 'text/html; charset=utf-8' } }));
   return await res.text();
@@ -424,7 +426,7 @@ const RX = /^\/(?:(es|de|fr|nl|ru|zh|ar)\/)?(projects|developers)\/(?:([a-z0-9-]
 export const PATHS = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects|developers)(?:\/|$)|^\/api\/seo\/(?:urls|scan)$/;
 function jsonOut(o, s, extra) { return new Response(JSON.stringify(o), { status: s || 200, headers: Object.assign({ 'content-type': 'application/json; charset=utf-8', 'access-control-allow-origin': '*', 'cache-control': 'public, max-age=600' }, extra || {}) }); }
 
-export { data, scanHtml };
+export { data, scanHtml, lastmod, handoverOf, reviewed, isListing, fd, tr, iso, okHttp, fixU, host, cleanOk };
 export async function redirectP(u, env) {   // /p/<id>/ -> /projects/<slug>/ (301), or null to keep the old page
   try {
     const ix = await data(env), id = decodeURIComponent(u.pathname.split('/')[2] || '').toUpperCase();

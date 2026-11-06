@@ -3,7 +3,7 @@
  "jsonSchemaDialect": "https://spec.openapis.org/oas/3.1/dialect/base",
  "info": {
   "title": "Kolaboro public API",
-  "version": "2026-11-05",
+  "version": "2026-11-06",
   "summary": "Open data on tracked off-plan property projects (anonymous), public log proofs, market statistics and the partner risk feed.",
   "description": "Read-only HTTP API of kolaboro.com. Projects are anonymous until verification is complete and the developer has had 10 working days to reply. Scores describe what is public about a project, not whether it is genuine. Open endpoints need no key and are cached at the edge (usually 10 minutes). Answers of /api/open/* and the partner feed are signed: x-kolaboro-signature is base64 Ed25519 over \"kolaboro-sig-v1\\n\" + SHA-256 hex of the body, key id in x-kolaboro-key-id, public keys at https://kolaboro.com/.well-known/kolaboro-keys.json. Response schemas in this file were inferred from live responses on the date in x-kolaboro-checked and are checked against the live API every day by the Kolaboro data catalog job (results: https://kolaboro.com/data/#contracts). They describe what the API returned, which can grow over time.",
   "license": {
@@ -51,6 +51,10 @@
   },
   {
    "name": "Data catalog"
+  },
+  {
+   "name": "Named projects",
+   "description": "Public facts about named projects and developers (the same facts as the pages under /projects/ and /developers/). No key needed. Facts only, each with its source; projects not yet reviewed carry no score, checks or claim counts. Rate limit 120 requests per minute per IP address. Responses carry a strong ETag: send If-None-Match to get 304 Not Modified."
   }
  ],
  "paths": {
@@ -17067,6 +17071,1435 @@
     },
     "x-kolaboro-example-url": "https://kolaboro.com/api/x/z/bundle/0000000000000000000000000000000000000000000000000000000000000000",
     "x-kolaboro-checked": "2026-11-05T07:20:43Z"
+   }
+  },
+  "/api/v1/projects": {
+   "get": {
+    "tags": [
+     "Named projects"
+    ],
+    "summary": "All named projects",
+    "description": "Slug, id, name and API URL of every named project. No key needed.",
+    "operationId": "v1_projects",
+    "security": [],
+    "parameters": [
+     {
+      "name": "If-None-Match",
+      "in": "header",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "ETag from an earlier response; answered with 304 when unchanged."
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "headers": {
+       "ETag": {
+        "description": "Strong validator of the body; send it back as If-None-Match.",
+        "schema": {
+         "type": "string"
+        }
+       },
+       "Cache-Control": {
+        "schema": {
+         "type": "string"
+        },
+        "description": "public, max-age=300 (900 for lists and the search index)"
+       },
+       "X-RateLimit-Limit": {
+        "schema": {
+         "type": "string"
+        },
+        "description": "120;w=60"
+       },
+       "X-RateLimit-Remaining": {
+        "schema": {
+         "type": "integer"
+        }
+       },
+       "Access-Control-Allow-Origin": {
+        "schema": {
+         "type": "string"
+        },
+        "description": "*"
+       }
+      },
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "count": {
+           "type": "integer"
+          },
+          "projects": {
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "slug": {
+              "type": "string"
+             },
+             "id": {
+              "type": "string"
+             },
+             "name": {
+              "type": "string"
+             },
+             "market": {
+              "type": "string"
+             },
+             "api": {
+              "type": "string"
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified (If-None-Match matched)",
+      "headers": {
+       "ETag": {
+        "description": "Strong validator of the body; send it back as If-None-Match.",
+        "schema": {
+         "type": "string"
+        }
+       }
+      }
+     },
+     "429": {
+      "description": "Rate limited (120 per minute per IP)",
+      "headers": {
+       "Retry-After": {
+        "schema": {
+         "type": "integer"
+        }
+       }
+      },
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "error": {
+           "type": "string",
+           "example": "rate_limited"
+          },
+          "retry_after_s": {
+           "type": "integer"
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/v1/projects/{slug}": {
+   "get": {
+    "tags": [
+     "Named projects"
+    ],
+    "summary": "Named facts of one project",
+    "description": "Everything the named page /projects/{slug}/ shows, as JSON: developer, location, stage, permit number, handover and other promises with their dated history, changes seen on the developer page, sealed copy, register checks, public reports and sources. Projects not yet reviewed have reviewed=false and review=null (no score). No key needed; CORS open; strong ETag; rate limit 120/min per IP.",
+    "operationId": "v1_project",
+    "security": [],
+    "parameters": [
+     {
+      "name": "slug",
+      "in": "path",
+      "required": true,
+      "description": "Project slug as in /projects/{slug}/",
+      "schema": {
+       "type": "string",
+       "pattern": "^[a-z0-9-]{1,90}$"
+      },
+      "example": "amani-melasti"
+     },
+     {
+      "name": "If-None-Match",
+      "in": "header",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "ETag from an earlier response; answered with 304 when unchanged."
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "headers": {
+       "ETag": {
+        "description": "Strong validator of the body; send it back as If-None-Match.",
+        "schema": {
+         "type": "string"
+        }
+       },
+       "Cache-Control": {
+        "schema": {
+         "type": "string"
+        },
+        "description": "public, max-age=300 (900 for lists and the search index)"
+       },
+       "X-RateLimit-Limit": {
+        "schema": {
+         "type": "string"
+        },
+        "description": "120;w=60"
+       },
+       "X-RateLimit-Remaining": {
+        "schema": {
+         "type": "integer"
+        }
+       },
+       "Access-Control-Allow-Origin": {
+        "schema": {
+         "type": "string"
+        },
+        "description": "*"
+       }
+      },
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "api": {
+           "type": "string",
+           "example": "kolaboro-named-v1"
+          },
+          "license": {
+           "type": "string"
+          },
+          "rules": {
+           "type": "string"
+          },
+          "id": {
+           "type": "string",
+           "example": "BALI-001"
+          },
+          "slug": {
+           "type": "string"
+          },
+          "name": {
+           "type": "string"
+          },
+          "developer": {
+           "type": [
+            "object",
+            "null"
+           ],
+           "properties": {
+            "name": {
+             "type": "string"
+            },
+            "slug": {
+             "type": [
+              "string",
+              "null"
+             ]
+            },
+            "url": {
+             "type": [
+              "string",
+              "null"
+             ]
+            },
+            "api": {
+             "type": [
+              "string",
+              "null"
+             ]
+            }
+           }
+          },
+          "location": {
+           "type": "object",
+           "properties": {
+            "area": {
+             "type": [
+              "string",
+              "null"
+             ]
+            },
+            "market": {
+             "type": "string"
+            },
+            "country": {
+             "type": "string"
+            }
+           }
+          },
+          "stage": {
+           "type": [
+            "string",
+            "null"
+           ],
+           "description": "off-plan, under construction or completed, as published"
+          },
+          "site_status": {
+           "type": [
+            "string",
+            "null"
+           ]
+          },
+          "reviewed": {
+           "type": "boolean",
+           "description": "false: not yet reviewed by Kolaboro; review is null and no score is given"
+          },
+          "added": {
+           "type": [
+            "string",
+            "null"
+           ],
+           "format": "date"
+          },
+          "last_checked": {
+           "type": "string",
+           "format": "date"
+          },
+          "published_page": {
+           "type": [
+            "object",
+            "null"
+           ],
+           "properties": {
+            "url": {
+             "type": "string"
+            },
+            "host": {
+             "type": "string"
+            },
+            "is_listing_portal": {
+             "type": "boolean"
+            }
+           }
+          },
+          "permit": {
+           "type": "object",
+           "properties": {
+            "number": {
+             "type": [
+              "string",
+              "null"
+             ]
+            },
+            "source": {
+             "type": [
+              "string",
+              "null"
+             ]
+            },
+            "note": {
+             "type": [
+              "string",
+              "null"
+             ],
+             "example": "not published"
+            }
+           }
+          },
+          "handover": {
+           "type": [
+            "object",
+            "null"
+           ],
+           "properties": {
+            "date": {
+             "type": "string",
+             "example": "2027-Q2"
+            },
+            "source": {
+             "type": [
+              "string",
+              "null"
+             ]
+            }
+           }
+          },
+          "overdue_months": {
+           "type": [
+            "integer",
+            "null"
+           ]
+          },
+          "promises": {
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "kind": {
+              "type": "string"
+             },
+             "date": {
+              "type": "string"
+             },
+             "status": {
+              "type": "string",
+              "enum": [
+               "pending",
+               "kept",
+               "broken",
+               "moved"
+              ]
+             },
+             "times_moved": {
+              "type": "integer"
+             },
+             "months_moved": {
+              "type": "integer"
+             },
+             "source": {
+              "type": "string"
+             },
+             "first_seen": {
+              "type": "string"
+             },
+             "last_seen": {
+              "type": "string"
+             },
+             "history": {
+              "type": "array",
+              "items": {
+               "type": "object",
+               "properties": {
+                "date": {
+                 "type": "string"
+                },
+                "seen": {
+                 "type": "string"
+                }
+               }
+              }
+             }
+            }
+           }
+          },
+          "published_facts": {
+           "type": "object",
+           "description": "What the developer or listing publishes (prices, sizes, payment plan, developer facts), in source wording"
+          },
+          "published_statements": {
+           "type": "array",
+           "items": {
+            "type": "string"
+           }
+          },
+          "facts_source": {
+           "type": [
+            "string",
+            "null"
+           ]
+          },
+          "change_history": {
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "date": {
+              "type": "string"
+             },
+             "field": {
+              "type": "string"
+             },
+             "from": {},
+             "to": {},
+             "source": {
+              "type": [
+               "string",
+               "null"
+              ]
+             }
+            }
+           }
+          },
+          "hourly_findings": {
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "at": {
+              "type": "string",
+              "format": "date-time"
+             },
+             "text": {
+              "type": "string"
+             },
+             "page_sha256_prefix": {
+              "type": [
+               "string",
+               "null"
+              ]
+             }
+            }
+           }
+          },
+          "sealed_copy": {
+           "type": [
+            "object",
+            "null"
+           ],
+           "properties": {
+            "date": {
+             "type": "string"
+            },
+            "sha256": {
+             "type": "string"
+            },
+            "verify": {
+             "type": "string"
+            }
+           }
+          },
+          "register": {
+           "type": [
+            "object",
+            "null"
+           ]
+          },
+          "public_reports": {
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "kind": {
+              "type": "string"
+             },
+             "url": {
+              "type": "string"
+             }
+            }
+           }
+          },
+          "review": {
+           "type": [
+            "object",
+            "null"
+           ],
+           "description": "Only when reviewed is true: score, verification levels and claim counts"
+          },
+          "sources": {
+           "type": "array",
+           "items": {
+            "type": "string",
+            "format": "uri"
+           }
+          },
+          "urls": {
+           "type": "object",
+           "properties": {
+            "page": {
+             "type": "string"
+            },
+            "pages": {
+             "type": "object",
+             "description": "the page in each of the 8 languages"
+            },
+            "feed_atom": {
+             "type": "string"
+            },
+            "feed_json": {
+             "type": "string"
+            },
+            "record": {
+             "type": "string"
+            },
+            "watch": {
+             "type": "string"
+            },
+            "reply": {
+             "type": "string"
+            },
+            "corrections": {
+             "type": "string"
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified (If-None-Match matched)",
+      "headers": {
+       "ETag": {
+        "description": "Strong validator of the body; send it back as If-None-Match.",
+        "schema": {
+         "type": "string"
+        }
+       }
+      }
+     },
+     "404": {
+      "description": "No named project or developer at this slug",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "error": {
+           "type": "string",
+           "example": "not_found"
+          },
+          "note": {
+           "type": "string"
+          }
+         }
+        }
+       }
+      }
+     },
+     "429": {
+      "description": "Rate limited (120 per minute per IP)",
+      "headers": {
+       "Retry-After": {
+        "schema": {
+         "type": "integer"
+        }
+       }
+      },
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "error": {
+           "type": "string",
+           "example": "rate_limited"
+          },
+          "retry_after_s": {
+           "type": "integer"
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/v1/developers": {
+   "get": {
+    "tags": [
+     "Named projects"
+    ],
+    "summary": "All developers",
+    "operationId": "v1_developers",
+    "security": [],
+    "parameters": [
+     {
+      "name": "If-None-Match",
+      "in": "header",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "ETag from an earlier response; answered with 304 when unchanged."
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "headers": {
+       "ETag": {
+        "description": "Strong validator of the body; send it back as If-None-Match.",
+        "schema": {
+         "type": "string"
+        }
+       },
+       "Cache-Control": {
+        "schema": {
+         "type": "string"
+        },
+        "description": "public, max-age=300 (900 for lists and the search index)"
+       },
+       "X-RateLimit-Limit": {
+        "schema": {
+         "type": "string"
+        },
+        "description": "120;w=60"
+       },
+       "X-RateLimit-Remaining": {
+        "schema": {
+         "type": "integer"
+        }
+       },
+       "Access-Control-Allow-Origin": {
+        "schema": {
+         "type": "string"
+        },
+        "description": "*"
+       }
+      },
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "count": {
+           "type": "integer"
+          },
+          "developers": {
+           "type": "array",
+           "items": {
+            "type": "object",
+            "properties": {
+             "slug": {
+              "type": "string"
+             },
+             "name": {
+              "type": "string"
+             },
+             "projects": {
+              "type": "integer"
+             },
+             "api": {
+              "type": "string"
+             }
+            }
+           }
+          }
+         }
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified (If-None-Match matched)",
+      "headers": {
+       "ETag": {
+        "description": "Strong validator of the body; send it back as If-None-Match.",
+        "schema": {
+         "type": "string"
+        }
+       }
+      }
+     },
+     "429": {
+      "description": "Rate limited (120 per minute per IP)",
+      "headers": {
+       "Retry-After": {
+        "schema": {
+         "type": "integer"
+        }
+       }
+      },
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "error": {
+           "type": "string",
+           "example": "rate_limited"
+          },
+          "retry_after_s": {
+           "type": "integer"
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/v1/developers/{slug}": {
+   "get": {
+    "tags": [
+     "Named projects"
+    ],
+    "summary": "One developer and its named projects",
+    "operationId": "v1_developer",
+    "security": [],
+    "parameters": [
+     {
+      "name": "slug",
+      "in": "path",
+      "required": true,
+      "description": "Developer slug as in /developers/{slug}/",
+      "schema": {
+       "type": "string",
+       "pattern": "^[a-z0-9-]{1,90}$"
+      },
+      "example": "teus-group"
+     },
+     {
+      "name": "If-None-Match",
+      "in": "header",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "ETag from an earlier response; answered with 304 when unchanged."
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "headers": {
+       "ETag": {
+        "description": "Strong validator of the body; send it back as If-None-Match.",
+        "schema": {
+         "type": "string"
+        }
+       },
+       "Cache-Control": {
+        "schema": {
+         "type": "string"
+        },
+        "description": "public, max-age=300 (900 for lists and the search index)"
+       },
+       "X-RateLimit-Limit": {
+        "schema": {
+         "type": "string"
+        },
+        "description": "120;w=60"
+       },
+       "X-RateLimit-Remaining": {
+        "schema": {
+         "type": "integer"
+        }
+       },
+       "Access-Control-Allow-Origin": {
+        "schema": {
+         "type": "string"
+        },
+        "description": "*"
+       }
+      },
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "slug": {
+           "type": "string"
+          },
+          "name": {
+           "type": "string"
+          },
+          "last_checked": {
+           "type": "string"
+          },
+          "markets": {
+           "type": "array",
+           "items": {
+            "type": "string"
+           }
+          },
+          "projects": {
+           "type": "array",
+           "items": {
+            "type": "object"
+           }
+          },
+          "urls": {
+           "type": "object"
+          }
+         }
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified (If-None-Match matched)",
+      "headers": {
+       "ETag": {
+        "description": "Strong validator of the body; send it back as If-None-Match.",
+        "schema": {
+         "type": "string"
+        }
+       }
+      }
+     },
+     "404": {
+      "description": "No named project or developer at this slug",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "error": {
+           "type": "string",
+           "example": "not_found"
+          },
+          "note": {
+           "type": "string"
+          }
+         }
+        }
+       }
+      }
+     },
+     "429": {
+      "description": "Rate limited (120 per minute per IP)",
+      "headers": {
+       "Retry-After": {
+        "schema": {
+         "type": "integer"
+        }
+       }
+      },
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "error": {
+           "type": "string",
+           "example": "rate_limited"
+          },
+          "retry_after_s": {
+           "type": "integer"
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/v1/search-index": {
+   "get": {
+    "tags": [
+     "Named projects"
+    ],
+    "summary": "Compact search index of named projects and developers",
+    "description": "Arrays of [slug, name, id, developer, developer_slug, market, country, area] and [slug, name, projects, markets]. Used by the instant search on /projects/ and the site search palette.",
+    "operationId": "v1_search_index",
+    "security": [],
+    "parameters": [
+     {
+      "name": "If-None-Match",
+      "in": "header",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "ETag from an earlier response; answered with 304 when unchanged."
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "headers": {
+       "ETag": {
+        "description": "Strong validator of the body; send it back as If-None-Match.",
+        "schema": {
+         "type": "string"
+        }
+       },
+       "Cache-Control": {
+        "schema": {
+         "type": "string"
+        },
+        "description": "public, max-age=300 (900 for lists and the search index)"
+       },
+       "X-RateLimit-Limit": {
+        "schema": {
+         "type": "string"
+        },
+        "description": "120;w=60"
+       },
+       "X-RateLimit-Remaining": {
+        "schema": {
+         "type": "integer"
+        }
+       },
+       "Access-Control-Allow-Origin": {
+        "schema": {
+         "type": "string"
+        },
+        "description": "*"
+       }
+      },
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "version": {
+           "type": "string"
+          },
+          "updated": {
+           "type": "string"
+          },
+          "counts": {
+           "type": "object"
+          },
+          "fields": {
+           "type": "object"
+          },
+          "p": {
+           "type": "array",
+           "items": {
+            "type": "array"
+           }
+          },
+          "d": {
+           "type": "array",
+           "items": {
+            "type": "array"
+           }
+          }
+         }
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified (If-None-Match matched)",
+      "headers": {
+       "ETag": {
+        "description": "Strong validator of the body; send it back as If-None-Match.",
+        "schema": {
+         "type": "string"
+        }
+       }
+      }
+     },
+     "429": {
+      "description": "Rate limited (120 per minute per IP)",
+      "headers": {
+       "Retry-After": {
+        "schema": {
+         "type": "integer"
+        }
+       }
+      },
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "error": {
+           "type": "string",
+           "example": "rate_limited"
+          },
+          "retry_after_s": {
+           "type": "integer"
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/projects/{slug}/feed.atom": {
+   "get": {
+    "tags": [
+     "Feeds"
+    ],
+    "summary": "Atom of dated changes for one project",
+    "description": "Follow changes: promises recorded and moved, changes seen on the developer page, sealed copies, register checks. Newest first, up to 60 entries; each entry links its source.",
+    "operationId": "feed_project_atom",
+    "security": [],
+    "parameters": [
+     {
+      "name": "slug",
+      "in": "path",
+      "required": true,
+      "description": "Project slug",
+      "schema": {
+       "type": "string",
+       "pattern": "^[a-z0-9-]{1,90}$"
+      },
+      "example": "amani-melasti"
+     },
+     {
+      "name": "If-None-Match",
+      "in": "header",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "ETag from an earlier response; answered with 304 when unchanged."
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "headers": {
+       "ETag": {
+        "description": "Strong validator of the body; send it back as If-None-Match.",
+        "schema": {
+         "type": "string"
+        }
+       }
+      },
+      "content": {
+       "application/atom+xml": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified (If-None-Match matched)",
+      "headers": {
+       "ETag": {
+        "description": "Strong validator of the body; send it back as If-None-Match.",
+        "schema": {
+         "type": "string"
+        }
+       }
+      }
+     },
+     "404": {
+      "description": "No named project or developer at this slug",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "error": {
+           "type": "string",
+           "example": "not_found"
+          },
+          "note": {
+           "type": "string"
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/projects/{slug}/feed.json": {
+   "get": {
+    "tags": [
+     "Feeds"
+    ],
+    "summary": "JSON Feed 1.1 of dated changes for one project",
+    "description": "Follow changes: promises recorded and moved, changes seen on the developer page, sealed copies, register checks. Newest first, up to 60 entries; each entry links its source.",
+    "operationId": "feed_project_json",
+    "security": [],
+    "parameters": [
+     {
+      "name": "slug",
+      "in": "path",
+      "required": true,
+      "description": "Project slug",
+      "schema": {
+       "type": "string",
+       "pattern": "^[a-z0-9-]{1,90}$"
+      },
+      "example": "amani-melasti"
+     },
+     {
+      "name": "If-None-Match",
+      "in": "header",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "ETag from an earlier response; answered with 304 when unchanged."
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "headers": {
+       "ETag": {
+        "description": "Strong validator of the body; send it back as If-None-Match.",
+        "schema": {
+         "type": "string"
+        }
+       }
+      },
+      "content": {
+       "application/feed+json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified (If-None-Match matched)",
+      "headers": {
+       "ETag": {
+        "description": "Strong validator of the body; send it back as If-None-Match.",
+        "schema": {
+         "type": "string"
+        }
+       }
+      }
+     },
+     "404": {
+      "description": "No named project or developer at this slug",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "error": {
+           "type": "string",
+           "example": "not_found"
+          },
+          "note": {
+           "type": "string"
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/developers/{slug}/feed.atom": {
+   "get": {
+    "tags": [
+     "Feeds"
+    ],
+    "summary": "Atom of dated changes for one developer",
+    "description": "Follow changes: promises recorded and moved, changes seen on the developer page, sealed copies, register checks for every project of the developer. Newest first, up to 60 entries; each entry links its source.",
+    "operationId": "feed_developer_atom",
+    "security": [],
+    "parameters": [
+     {
+      "name": "slug",
+      "in": "path",
+      "required": true,
+      "description": "Developer slug",
+      "schema": {
+       "type": "string",
+       "pattern": "^[a-z0-9-]{1,90}$"
+      },
+      "example": "teus-group"
+     },
+     {
+      "name": "If-None-Match",
+      "in": "header",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "ETag from an earlier response; answered with 304 when unchanged."
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "headers": {
+       "ETag": {
+        "description": "Strong validator of the body; send it back as If-None-Match.",
+        "schema": {
+         "type": "string"
+        }
+       }
+      },
+      "content": {
+       "application/atom+xml": {
+        "schema": {
+         "type": "string"
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified (If-None-Match matched)",
+      "headers": {
+       "ETag": {
+        "description": "Strong validator of the body; send it back as If-None-Match.",
+        "schema": {
+         "type": "string"
+        }
+       }
+      }
+     },
+     "404": {
+      "description": "No named project or developer at this slug",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "error": {
+           "type": "string",
+           "example": "not_found"
+          },
+          "note": {
+           "type": "string"
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/developers/{slug}/feed.json": {
+   "get": {
+    "tags": [
+     "Feeds"
+    ],
+    "summary": "JSON Feed 1.1 of dated changes for one developer",
+    "description": "Follow changes: promises recorded and moved, changes seen on the developer page, sealed copies, register checks for every project of the developer. Newest first, up to 60 entries; each entry links its source.",
+    "operationId": "feed_developer_json",
+    "security": [],
+    "parameters": [
+     {
+      "name": "slug",
+      "in": "path",
+      "required": true,
+      "description": "Developer slug",
+      "schema": {
+       "type": "string",
+       "pattern": "^[a-z0-9-]{1,90}$"
+      },
+      "example": "teus-group"
+     },
+     {
+      "name": "If-None-Match",
+      "in": "header",
+      "required": false,
+      "schema": {
+       "type": "string"
+      },
+      "description": "ETag from an earlier response; answered with 304 when unchanged."
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "OK",
+      "headers": {
+       "ETag": {
+        "description": "Strong validator of the body; send it back as If-None-Match.",
+        "schema": {
+         "type": "string"
+        }
+       }
+      },
+      "content": {
+       "application/feed+json": {
+        "schema": {
+         "type": "object"
+        }
+       }
+      }
+     },
+     "304": {
+      "description": "Not modified (If-None-Match matched)",
+      "headers": {
+       "ETag": {
+        "description": "Strong validator of the body; send it back as If-None-Match.",
+        "schema": {
+         "type": "string"
+        }
+       }
+      }
+     },
+     "404": {
+      "description": "No named project or developer at this slug",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "error": {
+           "type": "string",
+           "example": "not_found"
+          },
+          "note": {
+           "type": "string"
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  },
+  "/api/v1/watch": {
+   "post": {
+    "tags": [
+     "Named projects"
+    ],
+    "summary": "Watch a project by email (double opt-in)",
+    "description": "Stores an email watch for one project and sends a confirmation link; nothing is sent until the link is opened, and every email has a link to stop. Same-origin use from the named pages; 6 requests per minute per IP.",
+    "operationId": "v1_watch",
+    "security": [],
+    "requestBody": {
+     "required": true,
+     "content": {
+      "application/json": {
+       "schema": {
+        "type": "object",
+        "required": [
+         "project",
+         "email"
+        ],
+        "properties": {
+         "project": {
+          "type": "string",
+          "description": "project id or slug",
+          "example": "BALI-001"
+         },
+         "email": {
+          "type": "string",
+          "format": "email"
+         }
+        }
+       }
+      }
+     }
+    },
+    "responses": {
+     "200": {
+      "description": "Stored",
+      "content": {
+       "application/json": {
+        "schema": {
+         "type": "object",
+         "properties": {
+          "ok": {
+           "type": "boolean"
+          },
+          "project": {
+           "type": "string"
+          },
+          "confirmed": {
+           "type": "boolean"
+          },
+          "next": {
+           "type": "string"
+          }
+         }
+        }
+       }
+      }
+     },
+     "400": {
+      "description": "Invalid email or body"
+     },
+     "404": {
+      "description": "Unknown project"
+     },
+     "429": {
+      "description": "Rate limited"
+     }
+    }
    }
   }
  },

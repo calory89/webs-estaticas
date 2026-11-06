@@ -103,14 +103,38 @@
   PAGES.forEach(function (p) { items.push({ t: 'page', title: p[0], sub: p[3] + ' · kolaboro.com' + p[1], href: p[1], h: norm(p[0] + ' ' + p[2] + ' ' + p[1].replace(/[\/-]/g, ' ')), w: 3 }); });
   var pageCount = items.length;
   function build(ix) {
-    items.length = pageCount;
+    items.length = pageCount; LASTIX = ix;
     (ix.m || []).forEach(function (m) { items.push({ t: 'market', title: TL ? pl(m[0]) : m[0], sub: (TL ? TL.mk + ' · ' + m[2] + ' ' + pn(m[2], TL.pj) + (m[3] && m[3] !== m[0] ? ' · ' + pl(m[3]) : '') : 'Market · ' + m[2] + ' project' + (m[2] === 1 ? '' : 's') + (m[3] && m[3] !== m[0] ? ' · ' + m[3] : '')), href: '/m/' + m[1] + '/', h: norm(m[0] + ' ' + m[3] + ' market' + (TL ? ' ' + pl(m[0]) + ' ' + pl(m[3]) : '')), w: 2 }); });
     (ix.p || []).forEach(function (p) {
       var id = p[0], idn = norm(id), sub = TL ? [pl(p[1]) + (p[2] && p[2] !== p[1] ? (LG === 'ar' ? '، ' : LG === 'zh' ? '，' : ', ') + pl(p[2]) : ''), pl(p[3]), TL.st[p[4]] || p[4], p[5] != null ? p[5] + (LG === 'zh' ? '' : ' ') + TL.ck : '', p[7] ? p[7] + ' ' + pn(p[7], TL.pr) : ''].filter(Boolean).join(' · ') : [p[1] + (p[2] && p[2] !== p[1] ? ', ' + p[2] : ''), p[3], p[4], p[5] != null ? p[5] + ' of 6 checks public' : '', p[7] ? p[7] + ' public problem' + (p[7] > 1 ? 's' : '') : ''].filter(Boolean).join(' · ');
       items.push({ t: 'project', title: id, sub: sub, href: '/p/' + encodeURIComponent(id) + '/', flags: p[7], h: norm(id + ' ' + idn.replace(/-/g, '') + ' ' + idn.replace(/-0*/g, ' ') + ' ' + p[1] + ' ' + p[2] + ' ' + p[3] + ' ' + p[4] + ' ' + p[8] + ' ' + p[9] + (p[7] ? ' flags problems' : '')), w: 1 });
     });
     meta.n = (ix.p || []).length; meta.markets = (ix.m || []).length; meta.updated = ix.updated || ''; ready = true;
+    if (NX) named(NX);
   }
+  // 6 Nov 2026 (b9a): named projects and developers. /api/v1/search-index gives the public name, developer and named page of every
+  // project except the anonymous ones (Sumba, conflict of interest); project rows get their name and open the named page in the page language.
+  var NX = null, NLS = 'kb-sx-named-v1', NL = ['es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'].indexOf(LG) >= 0 ? '/' + LG : '';
+  var DVL = { en: ['Developer', 'project', 'projects'], es: ['Promotora', 'proyecto', 'proyectos'], de: ['Bauträger', 'Projekt', 'Projekte'], fr: ['Promoteur', 'projet', 'projets'], nl: ['Ontwikkelaar', 'project', 'projecten'], ru: ['Застройщик', 'проект', 'проектов'], zh: ['开发商', '个项目', '个项目'], ar: ['مطوّر', 'مشروع', 'مشاريع'] }[LG] || ['Developer', 'project', 'projects'];
+  function named(nx) {
+    var by = {}; (nx.p || []).forEach(function (p) { by[p[2]] = p; });
+    for (var i = pageCount; i < items.length; i++) { var it = items[i];
+      if (it.t === 'project' && !it.nm && by[it.title]) { var p = by[it.title]; it.nm = 1; it.id = it.title; it.sub = it.title + ' · ' + (p[3] ? p[3] + ' · ' : '') + it.sub; it.h += ' ' + norm(p[1] + ' ' + p[3]); it.title = p[1]; it.href = NL + '/projects/' + p[0] + '/'; it.w = 2; }
+      if (it.t === 'dev') { items.length = i; break; } }
+    (nx.d || []).forEach(function (d) { items.push({ t: 'dev', title: d[1], sub: DVL[0] + ' · ' + d[2] + (LG === 'zh' ? '' : ' ') + (d[2] === 1 ? DVL[1] : DVL[2]) + (d[3] ? ' · ' + d[3] : ''), href: NL + '/developers/' + d[0] + '/', h: norm(d[1] + ' developer promotora ' + d[3]), w: 2 }); });
+    meta.devs = (nx.d || []).length;
+  }
+  function loadNamed() {
+    var st = store(), c = null; try { c = st && JSON.parse(st.getItem(NLS) || 'null'); } catch (e) {}
+    if (c && c.ix) { NX = c.ix; if (ready) named(NX); }
+    if (c && Date.now() - c.at < 6 * 3600e3) return Promise.resolve();
+    return fetch('/api/v1/search-index').then(function (r) { return r.ok ? r.json() : null; }).then(function (j) {
+      if (!j || !j.p) return; NX = j; if (ready) { build(LASTIX || { p: [], m: [] }); }
+      try { st && st.setItem(NLS, JSON.stringify({ at: Date.now(), ix: j })); } catch (e) {}
+      if (root && root.classList.contains('on')) render();
+    }).catch(function () {});
+  }
+  var LASTIX = null;
   function store() { try { return window.localStorage; } catch (e) { return null; } }
   var loading = null;
   function load() {
@@ -126,7 +150,8 @@
         try { st && st.setItem(LS, JSON.stringify({ at: Date.now(), ix: r.json })); meta.offline = true; } catch (e) { meta.offline = false; }
         if (r.check) r.check.then(function (c) { meta.verified = c.state; foot(); });
       }).catch(function () {});
-    loading = cached && cached.ix ? Promise.resolve() : net;
+    var nm = loadNamed();
+    loading = cached && cached.ix ? Promise.resolve() : Promise.all([net, nm]);
     return loading;
   }
   // scoring: every query word must appear, as a substring (word start scores more) or as an ordered subsequence within a short span
@@ -134,7 +159,7 @@
     var s = 0, h = it.h;
     for (var i = 0; i < qs.length; i++) {
       var q = qs[i], k = h.indexOf(q);
-      if (k >= 0) { s += (k === 0 ? 14 : /[\s\-\/]/.test(h[k - 1]) ? 10 : 5) + Math.min(q.length, 6); if (it.t === 'project' && norm(it.title) === q) s += 40; continue; }
+      if (k >= 0) { s += (k === 0 ? 14 : /[\s\-\/]/.test(h[k - 1]) ? 10 : 5) + Math.min(q.length, 6); if (it.t === 'project' && norm(it.id || it.title) === q) s += 40; continue; }
       if (q.length < 3) return -1;
       // tightest ordered match of the letters, trying each start position (typos like "prcing", "offplan")
       var best = 1e9, st0 = h.indexOf(q[0]);
@@ -160,7 +185,7 @@
     '.kxp-x{border:1px solid rgba(23,33,43,.18);background:#F6F6F3;border-radius:7px;font:700 .72rem Archivo,system-ui,sans-serif;color:#59626B;padding:5px 8px;cursor:pointer;min-height:30px}' +
     '.kxp-l{list-style:none;margin:0;padding:6px;overflow-y:auto;overscroll-behavior:contain;flex:1}' +
     '.kxp-l li{display:flex;align-items:center;gap:12px;padding:9px 10px;border-radius:10px;cursor:pointer;min-height:48px}.kxp-l li[aria-selected=true]{background:#F1EFE9;box-shadow:inset 3px 0 0 #FF5B14}' +
-    '.kxp-l .ic{flex:none;width:30px;height:30px;border-radius:8px;display:grid;place-items:center;font:800 .62rem Archivo,system-ui,sans-serif;letter-spacing:.04em;background:#E3E2DD;color:#2A3541}.kxp-l .ic.project{background:#17212B;color:#fff}.kxp-l .ic.market{background:#DDEFE7;color:#075E41}.kxp-l .ic.action{background:#FF5B14;color:#170800}' +
+    '.kxp-l .ic{flex:none;width:30px;height:30px;border-radius:8px;display:grid;place-items:center;font:800 .62rem Archivo,system-ui,sans-serif;letter-spacing:.04em;background:#E3E2DD;color:#2A3541}.kxp-l .ic.project{background:#17212B;color:#fff}.kxp-l .ic.market{background:#DDEFE7;color:#075E41}.kxp-l .ic.action{background:#FF5B14;color:#170800}.kxp-l .ic.dev{background:#E8E1F5;color:#3B2672}' +
     '.kxp-l .tx{min-width:0;flex:1}.kxp-l b{display:block;font-weight:700;font-size:.95rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.kxp-l small{display:block;color:#59626B;font-size:.8rem;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.kxp-l mark{background:none;color:#B83A05;font-weight:800}' +
     '.kxp-l .fl{flex:none;font:700 .7rem Archivo,system-ui,sans-serif;color:#8F2D04;background:#FDE6DC;border-radius:99px;padding:2px 8px}' +
     '.kxp-e{padding:22px 16px;color:#59626B;font-size:.92rem}' +
@@ -173,7 +198,7 @@
     qs.forEach(function (w) { var k = norm(text).indexOf(w); if (k >= 0 && norm(text).length === text.length) { var raw = text.substr(k, w.length); e = e.replace(esc(raw), '<mark>' + esc(raw) + '</mark>'); } });
     return e;
   }
-  var IC = { page: 'PG', project: 'ID', market: 'MK', action: 'GO' };
+  var IC = { page: 'PG', project: 'ID', market: 'MK', action: 'GO', dev: 'DV' };
   function render() {
     var q = input.value, r = search(q); last = r; active = 0;
     if (!r.list.length) { list.innerHTML = '<li class="kxp-e" role="presentation">' + (ready || !q ? (TL ? esc(TL.none(q)) : 'Nothing matches "' + esc(q) + '". Try a market (Bali, Dubai), a project id (BALI-014) or a page (pricing).') : (TL ? TL.ld : 'Loading the project index…')) + '</li>'; input.setAttribute('aria-activedescendant', ''); }
