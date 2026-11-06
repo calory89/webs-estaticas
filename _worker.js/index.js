@@ -36,6 +36,7 @@ let jb = null;
 let rr = null;
 let kb = null, kbx = null, ksat = null, klk = null;
 let kfw = null; const KFW = /^\/api\/v1\/(?:projects|developers)(?:\/[a-z0-9-]{1,90})?\/?$|^\/api\/v1\/(?:search-index|watch)$|^\/(?:projects|developers)\/[a-z0-9-]{1,90}\/feed\.(?:atom|json)$/;   // b9a: public named API, feeds, watch (keep equal to PATHS9 in kbx_follow.js)
+let kog = null, kbk = null; const KB10 = /^\/og\/(?:projects|developers)\/[a-z0-9-]{1,90}\.png$|^\/bulk-check\/?$|^\/api\/kb\/bulk\/?$/;   // b10c: keep equal to PATHS in kbx_og.js + kbx_bulk.js
 let knm = null; const KNM = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects|developers)(?:\/|$)|^\/api\/seo\/(?:urls|scan)$/;   // seoP named pages, keep equal to PATHS in kbx_named.js
 let kseo = null; const KSEO = /^\/(sitemap_index\.xml|sitemaps\/[a-z0-9-]+\.xml|llms(-full)?\.txt|countries(\/.*)?|rankings(\/.*)?|new\/?|vs(\/.*)?|embed\/(delay|project|widgets)(\/.*)?|engineering\/seo\/?|press\/delivery-index(\/.*)?|7f3c9a1e5b2d4c8fa06e91d3b7c4f259\.txt)$/;   // keep equal to PATHS in kbx_seo.js
 // rh-kcheck-v2: realhunt.co runtime layer (Kolaboro deal box, sponsored Kolaboro feed card, Eco Beach City at 36,500) at /__k/kcheck.js; kolaboro.com "from RealHunt" banner at /__k/kbrh.js
@@ -216,6 +217,13 @@ export default {
     // kolaboro.com: sitemap index, llms.txt, country hubs and guides, rankings, comparisons, embeds, SEO dashboard (see kbx_seo.js)
     // kolaboro.com (b9a, batch 9): public named-facts API /api/v1/projects/<slug>, search index, Atom/JSON feeds, email watch (see kbx_follow.js)
     if (host === 'kolaboro.com' && KFW.test(u.pathname)) { if (!kfw) kfw = await import('./kbx_follow.js'); const r = await kfw.handle(req, u, env, ctx); if (r) return r; }
+    // kolaboro.com (b10c, batch 10): bulk register check page + API (kbx_bulk.js), 1200x630 share images per named project/developer (kbx_og.js)
+    if (host === 'kolaboro.com' && KB10.test(u.pathname)) {
+      if (u.pathname.startsWith('/og/')) { if (!kog) kog = await import('./kbx_og.js'); const r = await kog.handle(req, u, env, ctx); if (r) return r; }
+      else { if (!kbk) kbk = await import('./kbx_bulk.js'); if (!klk) klk = await import('./kbx_lookup.js');
+        const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
+        const r = await kbk.handle(req, u, env, ctx, shell, klk.handle); if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r; }
+    }
     // kolaboro.com (seoP, batch 8): named project and developer pages in 8 languages, /p/<id>/ 301 to them, /api/seo/urls (see kbx_named.js)
     if (host === 'kolaboro.com' && req.method === 'GET' && KNM.test(u.pathname)) {
       if (!knm) knm = await import('./kbx_named.js');
