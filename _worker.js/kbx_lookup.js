@@ -46,6 +46,8 @@ async function getRaw(url, opts) {
     if (!(opts && opts.retried) && Date.now() - t0 < 5000) return getRaw(url, Object.assign({}, opts, { retried: true, ms: 8000 }));
     return { ok: false, error: e && e.name === 'TimeoutError' ? 'timeout' : 'network', at, ms: Date.now() - t0 };
   }
+  // official servers sometimes answer 502/503/520 for a moment: one retry when that came back fast (batch 10)
+  if (r.status >= 500 && !(opts && opts.retried) && Date.now() - t0 < 4000) return getRaw(url, Object.assign({}, opts, { retried: true, ms: 8000 }));
   if (buf.byteLength > RAW_MAX) buf = buf.slice(0, RAW_MAX);
   const s = await sha256Bytes(buf), text = new TextDecoder().decode(buf);
   return { ok: r.ok, status: r.status, at, ms: Date.now() - t0, sha256: s, bytes: buf.byteLength, buf, text, ctype: (r.headers.get('content-type') || '').split(';')[0] };
@@ -161,7 +163,7 @@ async function catastroCoords(lat, lng, ctx) {
   const raw = await getRaw(url); c.ms = raw.ms; c.snapshot = snap(raw, ctx);
   if (!raw.sha256) { c.note = 'The Catastro service did not answer (' + raw.error + ').'; return { c }; }
   const j = jparse(raw.text), r = j && j.Consulta_RCCOOR_DistanciaResult;
-  if (!r) { c.note = 'No data in the answer.'; return { c }; }
+  if (!r) { c.note = raw.ok ? 'No data in the answer.' : 'The Catastro answered HTTP ' + raw.status + ' (temporarily unavailable). Try again in a minute.'; return { c }; }
   if (r.lerr) { c.status = 'not_found'; c.note = clip(r.lerr.map(e => e.des).join('; ')); return { c }; }
   const p = (((r.coordenadas_distancias || {}).coordd || [])[0] || {}).lpcd || [];
   if (!p.length) { c.status = 'not_found'; return { c }; }
@@ -597,7 +599,7 @@ async function lookup(req, u, env, ctx, partner) {
   catch (e) { ctx.waitUntil(logApi('lookup', false, false, Date.now() - t0)); return out({ error: 'server', detail: String(e && e.message || e).slice(0, 160) }, 500); }
   if (res.error) return out(res, 400);
   ctx.waitUntil(logApi('lookup', true, false, Date.now() - t0));
-  ctx.waitUntil(caches.default.put(INKEY(ik), new Response(JSON.stringify(res), { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=600' } })).catch(() => {}));
+  if (!(res.summary && res.summary.unavailable)) ctx.waitUntil(caches.default.put(INKEY(ik), new Response(JSON.stringify(res), { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=600' } })).catch(() => {}));
   return out(Object.assign(res, { cached: false }));
 }
 async function v1(req, u, env, ctx) {

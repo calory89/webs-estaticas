@@ -85,6 +85,8 @@
       .then(function (x) { var K = x[0], j = x[1]; j.split = j.items.map(function (it) { return [K.split(it[2]), it[3] ? K.split(it[3]) : null]; }); return j; }).catch(function (e) { idx = null; throw e; });
     return idx;
   }
+  // a hash with few distinct rows comes from a plain or striped picture: it collides with unrelated images
+  function simple(h) { var rows = {}, bits = 0; for (var i = 0; i < 16; i += 2) { rows[h.substr(i, 2)] = 1; } for (var k = 0; k < 16; k++) { var n = parseInt(h[k], 16); while (n) { bits += n & 1; n >>= 1; } } return Object.keys(rows).length < 4 || bits < 8 || bits > 56; }
   function matches(K, j, q) {
     var Q = { h: K.split(q.h), c: K.split(q.c), f: K.split(q.f) }, best = {};
     for (var i = 0; i < j.items.length; i++) {
@@ -167,8 +169,11 @@
           } else L.push(['info', 'GPS ' + gp + ' (<a href="' + osm + '" target="_blank" rel="noopener">map</a>). Choose the project above to measure the distance.', true]);
         } else L.push(['info', 'No GPS position in the file.']);
         if (r.q && j) {
-          var mt = matches(K, j, r.q);
-          if (mt.length) { flags++; L.push(['look', 'The same picture appears on ' + plural(mt.length, 'other tracked project') + ': ' + mt.slice(0, 5).map(function (m) { return '<a href="/p/' + encodeURIComponent(m.id) + '/">' + esc(m.id) + '</a> (' + m.d + ' of 64 bits differ)'; }).join(', ') + '. A real progress photo of one site should not show up elsewhere.', true]); }
+          var mt = simple(r.q.h) ? null : matches(K, j, r.q), same = mt ? mt.filter(function (m) { return m.d <= 5; }) : [], near = mt ? mt.filter(function (m) { return m.d > 5; }) : [];
+          var lk = function (a) { return a.slice(0, 5).map(function (m) { return '<a href="/p/' + encodeURIComponent(m.id) + '/">' + esc(m.id) + '</a> (' + m.d + ' of 64 bits differ)'; }).join(', ') + (a.length > 5 ? ' and ' + (a.length - 5) + ' more' : ''); };
+          if (!mt) L.push(['info', 'The picture is too plain (large even areas) for a reliable comparison with other projects.']);
+          else if (same.length) { flags++; L.push(['look', 'The same picture appears on ' + plural(same.length, 'other tracked project') + ': ' + lk(same) + '. A real progress photo of one site should not show up elsewhere.', true]); }
+          else if (near.length) L.push(['note', 'A similar picture (not identical) appears on ' + plural(near.length, 'tracked project') + ': ' + lk(near) + '. Compare by eye.', true]);
           else L.push(['ok', 'Not found among ' + j.images.toLocaleString('en-US') + ' images of ' + j.cases + ' tracked projects.']);
           rs.forEach(function (o, k) { if (k < i && o.q && K.dist(K.split(o.q.h), K.split(r.q.h)) <= 4) { flags++; L.push(['look', 'Same picture as photo ' + (k + 1) + ' in this batch.']); } });
         } else if (!r.q) L.push(['info', 'This browser could not decode the image to compare it.']);

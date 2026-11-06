@@ -144,4 +144,4 @@
 .ml-root{display:block;font-size:.78rem;overflow-wrap:anywhere}
 .ml-links{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .ml-disc{font-size:.8rem;color:var(--muted)}
-@media(max-width:860px){.ml-grid{grid-template-columns:1fr}.ml-map{height:60vh;min-height:320px}.ml-jump{flex-wrap:nowrap;overflow-x:auto;margin:18px -16px 0;padding:2px 16px 6px}.ml-jump .fchip{flex:none;white-space:nowrap}}
+@media(max-width:860px){.ml-grid{grid-template-columns:minmax(0,1fr)}.ml-map{height:60vh;min-height:320px}.ml-jump{flex-wrap:nowrap;overflow-x:auto;margin:18px -16px 0;padding:2px 16px 6px}.ml-jump .fchip{flex:none;white-space:nowrap}}
