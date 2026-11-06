@@ -21,7 +21,7 @@ import { diffRoute, phSummary } from './kbx_named_diff.js';   // batch 9 (b9b): 
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v9';   // v9: v8b (b9a site.js) + verified replies and page history (b9b)
+const CACHE_V = 'named-v10';   // v10: page-history line (b9b), after v9/v8b
 export const OPINION_RX = /\b(scam\w*|fraud\w*|ponzi|swindl\w*|rip-?off|avoid\w*|beware|dodgy|shady|crook\w*|estafa\w*|fraude\w*|timo|timador\w*|betrug\w*|betrüg\w*|abzocke\w*|arnaque\w*|escroquer\w*|escroc\w*|oplichting|oplichter\w*|bedrog\w*)\b|мошен|обман|афер|骗局|诈骗|欺诈|احتيال|نصب/i;
 
 // ------------------------------------------------------------------------------------------------ data
@@ -464,8 +464,9 @@ export async function render(ix, kind, key, lang, env, ctx) {   // exported for 
     try { const k = new Request(ORIGIN + '/__named_rev/v1/' + x.id), hit = await caches.default.match(k); if (hit) reviews = await hit.json(); else { reviews = await rpc('kolaboro_t_reports_public', { p_project: x.id }); const p = caches.default.put(k, new Response(JSON.stringify(reviews || {}), { headers: { 'cache-control': 'max-age=1800' } })); if (ctx && ctx.waitUntil) ctx.waitUntil(p.catch(() => {})); } } catch (e) { reviews = null; }
     let replies = [];
     try { const k = new Request(ORIGIN + '/__named_dr/v1/' + x.id + '/' + (await repliesPublished())), hit = await caches.default.match(k); if (hit) replies = await hit.json(); else { replies = (await rpc('kolaboro_devreply_public', { p_id: x.id })) || []; const p = caches.default.put(k, new Response(JSON.stringify(replies), { headers: { 'cache-control': 'max-age=3600' } })); if (ctx && ctx.waitUntil) ctx.waitUntil(p.catch(() => {})); } } catch (e) { replies = []; }
-    let ph = null; try { ph = await phSummary(env, x.id); } catch (e) { ph = null; }
-    return projectPage(ix, x, lang, { reviews, replies, ph });
+    let ph = null, phErr = false; try { ph = await phSummary(env, x.id); } catch (e) { ph = null; phErr = true; }
+    const pg = projectPage(ix, x, lang, { reviews, replies, ph }); if (phErr) pg.nocache = true;   // page history not loaded: do not cache
+    return pg;
   }
   const dv = ix.devs.get(key); if (!dv) return null;
   return devPage(ix, dv, lang, { gleif: await gleif(dv.n, ctx) });
@@ -493,7 +494,7 @@ export async function handle(req, u, env, ctx, shell) {
     return new Response(await assemble(nf, lang, sh), { status: 404, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-cache' } });
   }
   const html = await assemble(pg, lang, sh);
-  try { const put = caches.default.put(ck, new Response(html, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'max-age=3600' } })); if (ctx && ctx.waitUntil) ctx.waitUntil(put.catch(() => {})); } catch (e) {}
+  if (!pg.nocache) try { const put = caches.default.put(ck, new Response(html, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'max-age=3600' } })); if (ctx && ctx.waitUntil) ctx.waitUntil(put.catch(() => {})); } catch (e) {}
   return new Response(html, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'x-named-cache': 'miss', 'cache-control': 'no-cache', 'last-modified': new Date((pg.lastmod || '2026-11-01') + 'T00:00:00Z').toUTCString() } });
 }
 
