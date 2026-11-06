@@ -551,5 +551,30 @@
   ],
   "all_six": 0,
   "verified_4plus": 0
+ },
+ {
+  "date": "2026-11-06",
+  "calls": 2,
+  "usd": 2.404,
+  "searches": 12,
+  "added": 8,
+  "rejected": {},
+  "markets": [
+   "Accra",
+   "Lagos"
+  ],
+  "model": "claude-sonnet-5-5",
+  "added_slugs": [
+   "city-vallanza-accra",
+   "deiterra-accra",
+   "heritage-100-tower-2-residences-accra",
+   "puna-accra",
+   "a-a-towers-lagos",
+   "le-r-ve-lagos",
+   "caspian-heights-lagos",
+   "syncord-tower-lagos"
+  ],
+  "all_six": 0,
+  "verified_4plus": 0
  }
 ]

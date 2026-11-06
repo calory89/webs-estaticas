@@ -178248,6 +178248,913 @@
    "added": "2026-11-05",
    "found_by": "discover-manual",
    "slug": "sense8-samui-villas-koh-samui"
+  },
+  {
+   "name": "City Vallanza",
+   "developer": "Goldsyn Group Ltd",
+   "area": "Airport Residential Area (Liberation Road, next to Lancaster Hotel)",
+   "country": "Ghana",
+   "market": "Accra",
+   "stage": "off-plan",
+   "url": "https://www.youtube.com/@goldsyngroup",
+   "docs_url": "https://www.youtube.com/@goldsyngroup",
+   "permit_number": null,
+   "seed": {
+    "price": 1200000,
+    "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "Q4 2028 (developer channel); late 2028 to late 2029 (Ownkey listing)",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 46,
+    "payment_plan": "30% initial deposit, 70% spread over construction, 5% discount for purchases in June 2026 (agent listing on Simihome). Ownkey says only 'milestone-driven' off-plan payments."
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "46 villas on 9.39 acres, completion Q4 2028",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://ownkey.com/gh/blog/top-real-estate-property-development-companies-ghana"
+    },
+    {
+     "claim": "Construction started January 2026 and off-plan sales are ongoing (agent listing only)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://simihome.net/en/properties/c4d14a52-a9ac-42dc-b375-e6d84723b01f"
+    },
+    {
+     "claim": "Starting price USD 1,200,000 (Ownkey) versus from USD 1,100,000 (Simihome agent listing)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://ownkey.com/developments/city-vallanza-1255025177"
+    },
+    {
+     "claim": "Goldsyn is made up of top developers from China with global project backgrounds",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.youtube.com/@goldsyngroup"
+    }
+   ],
+   "facts": {
+    "developer_founded": 2025,
+    "developer_hq": null,
+    "construction_start": "January 2026 (agent listing, unverified)",
+    "handover_promised": "Q4 2028",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "Elite Villa 4 bed",
+     "Signature Villa 5 bed",
+     "Imperial Villa 5 bed"
+    ],
+    "size_min_m2": 393,
+    "size_max_m2": 577,
+    "price_min": 1200000,
+    "price_max": 2300000,
+    "deposit_pct": 30,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Launched in 2026 and covered by Citi Newsroom, Graphic Online and YEN. No permit number, escrow, floor plans or construction progress were found. Goldsyn was founded in 2025 and has no delivered projects. The developer's own website was not opened in this run; only its YouTube channel about text was seen.",
+   "positives": [
+    "Launch covered by national media (Citi Newsroom, Graphic Online, YEN)",
+    "Villa types, sizes and starting prices published on Ownkey",
+    "No guaranteed returns advertised"
+   ],
+   "flags": [],
+   "sources": [
+    "https://meqasa.com/development-project-airport%20residential%20area-city-vallanza-567",
+    "https://ownkey.com/developers/goldsyn-group",
+    "https://ownkey.com/developments/city-vallanza-1255025177",
+    "https://ownkey.com/gh/blog/top-real-estate-property-development-companies-ghana",
+    "https://ownkey.com/gh/developments",
+    "https://simihome.net/en/properties/c4d14a52-a9ac-42dc-b375-e6d84723b01f",
+    "https://www.citinewsroom.com/2026/07/goldsyn-group-introduces-city-vallanza-ghanas-first-true-urban-villa-community/",
+    "https://www.graphic.com.gh/business/business-news/city-vallanza-ghanas-first-purpose-built-urban-villa-community-opens-in-accra.html",
+    "https://www.youtube.com/@goldsyngroup",
+    "https://yen.com.gh/real-estate/311947-goldsyn-group-unveils-city-vallanza-a-46-villa-urban-development-accra/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-06",
+   "found_by": "discover-agent",
+   "slug": "city-vallanza-accra"
+  },
+  {
+   "name": "Deiterra",
+   "developer": "Landmark Homes",
+   "area": "Airport West",
+   "country": "Ghana",
+   "market": "Accra",
+   "stage": "off-plan",
+   "url": "https://landmarkhomesgh.com/deiterra/",
+   "docs_url": "https://landmarkhomesgh.com/deiterra/",
+   "permit_number": null,
+   "seed": {
+    "price": null,
+    "currency": null,
+    "title": "Registered title stated by developer, no title number shown",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": "The Sapphire and The Madison in Labone, per developer",
+    "units": 140,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "developer",
+    "returns": "developer"
+   },
+   "claims": [
+    {
+     "claim": "140 units in twin towers, studios to penthouses, with rooftop pool and gym",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://landmarkhomesgh.com/deiterra/"
+    },
+    {
+     "claim": "Target annual yield 8 to 12 percent, described as historical yield across Landmark Homes' Labone portfolio (not a guarantee)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://landmarkhomesgh.com/deiterra/"
+    },
+    {
+     "claim": "Registered title and clear contracts",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://landmarkhomesgh.com/how-to-buy-apartments-in-ghana/"
+    },
+    {
+     "claim": "Sold out The Sapphire and The Madison in Labone. Estate Intel lists The Madison as completed with 38 units, while Landmark's own site says 27 apartments.",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://estateintel.com/app/directory/landmark-homes"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Sixth Link, Old Fort Rd, Accra (Estate Intel lists 84 North Labone Avenue, Labone)",
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "Studio",
+     "1 bedroom",
+     "2 bedroom",
+     "3 bedroom",
+     "Penthouse duplex"
+    ],
+    "size_min_m2": 39,
+    "size_max_m2": 280,
+    "price_min": null,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": "Developer blog says foreign buyers hold leasehold only, usually a 50-year renewable lease (general statement, not project specific)",
+    "rental_programme": "Sister company Prive offers tenant sourcing, rent collection and building upkeep",
+    "lat": null,
+    "lng": null,
+    "permit_authority": "Developer blog says permits are confirmed with the local assembly (general statement)"
+   },
+   "note": "Landmark's largest project, with 140 units in twin towers. Prices are 'on request' and no permit number, escrow, payment plan, completion date or build progress is published. Floor plans for each unit type are shown on the developer site.",
+   "positives": [
+    "Floor plans and unit sizes published",
+    "Developer has two earlier Labone projects, one listed as completed by Estate Intel",
+    "Yield is shown as a target, with no guarantee or buy-back"
+   ],
+   "flags": [],
+   "sources": [
+    "https://estateintel.com/app/directory/landmark-homes",
+    "https://landmarkhomesgh.com/deiterra/",
+    "https://landmarkhomesgh.com/how-to-buy-apartments-in-ghana/",
+    "https://landmarkhomesgh.com/new-housing-developments-in-airport-west/",
+    "https://landmarkhomesgh.com/top-houses-to-buy-in-ghana/",
+    "https://landmarkhomesgh.com/what-is-off-plan-property/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-06",
+   "found_by": "discover-agent",
+   "slug": "deiterra-accra"
+  },
+  {
+   "name": "Heritage 100 (Tower 2 residences)",
+   "developer": "Golden Coast Developers",
+   "area": "Labone (No.1 Dade Walk)",
+   "country": "Ghana",
+   "market": "Accra",
+   "stage": "off-plan",
+   "url": "https://heritage100ghana.com/invest.html",
+   "docs_url": "https://heritage100ghana.com/invest.html",
+   "permit_number": null,
+   "seed": {
+    "price": 145000,
+    "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": "Awards for Heritage 100 in 2023-24; Foster Park and Sky Azure Villas listed as projects",
+    "units": null,
+    "payment_plan": "US$5,000 reservation. Cash plan: 25% deposit, balance in quarterly instalments until completion. Mortgage plan: 30% deposit, balance on completion with a developer-backed mortgage up to 5 years."
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "developer",
+    "returns": "developer"
+   },
+   "claims": [
+    {
+     "claim": "Projected net yield 8 to 12 percent, stated by the developer as not guaranteed",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://heritage100ghana.com/invest.html"
+    },
+    {
+     "claim": "Ghana's first EDGE-certified residential building and international property awards",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://dailyguidenetwork.com/golden-coast-developers-tops-all/"
+    },
+    {
+     "claim": "Prices from the Tower 2 availability sheet dated 16 October 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://heritage100ghana.com/invest.html"
+    }
+   ],
+   "facts": {
+    "developer_founded": 2017,
+    "developer_hq": "Heritage 100, No.1 Dade Walk, Labone, Accra",
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "Studio",
+     "1 bedroom deluxe",
+     "1 bedroom lifestyle",
+     "2 bedroom",
+     "3 bedroom hybrid",
+     "3 bedroom",
+     "4 bedroom hybrid",
+     "Sky villa"
+    ],
+    "size_min_m2": 39.13,
+    "size_max_m2": 315,
+    "price_min": 145000,
+    "price_max": 1008000,
+    "deposit_pct": 25,
+    "foreign_ownership": null,
+    "rental_programme": "Full-service rental management with a rental programme from handover; 8 to 12 percent projected net yield, not guaranteed",
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "The Ownkey portal lists Heritage 100 as off-plan, and the developer's price list is for Tower 2. Construction status of Tower 2 is not published. Floor plans are shown for the studio, 1 bed and 2 bed. The larger units say 'floor plan on request'.",
+   "positives": [
+    "Prices, sizes and deposit terms published per unit type",
+    "Yield is labelled a projection and 'not guaranteed'",
+    "Developer is a Ghanaian firm with a named CEO and a physical showroom in Labone"
+   ],
+   "flags": [],
+   "sources": [
+    "https://dailyguidenetwork.com/golden-coast-developers-tops-all/",
+    "https://goldencoastdevelopers.com/contact-us/",
+    "https://goldencoastdevelopers.com/heritage100/",
+    "https://heritage100ghana.com/contact/",
+    "https://heritage100ghana.com/invest.html?v=b#invest",
+    "https://ownkey.com/gh/developments",
+    "https://www.linkedin.com/in/golden-coast-developers-ltd-190b6b258/",
+    "https://www.zoominfo.com/c/golden-coast-developers-ltd/1294491905"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": true,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-06",
+   "found_by": "discover-agent",
+   "slug": "heritage-100-tower-2-residences-accra"
+  },
+  {
+   "name": "PUNA",
+   "developer": "VAAL Real Estate (Vaal Ghana)",
+   "area": "Airport West / Airport Residential Area (30 Nii Amaah Ollenu Street, Dzorwulu)",
+   "country": "Ghana",
+   "market": "Accra",
+   "stage": "off-plan",
+   "url": "https://vaal.com.gh/off-plan-properties-accra-risk-reward-guide/",
+   "docs_url": "https://vaal.com.gh/off-plan-properties-accra-risk-reward-guide/",
+   "permit_number": null,
+   "seed": {
+    "price": 82000,
+    "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "22-storey tower with studios, 1 and 2 bed apartments, launched February 2026 (reported by a competitor developer's blog)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://landmarkhomesgh.com/new-housing-developments-in-airport-west/"
+    },
+    {
+     "claim": "Entry price USD 82,000 (Ownkey listing) versus USD 85,000 limited launch release (Landmark Homes blog)",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://ownkey.com/gh/developments"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "construction_start": null,
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "Studio",
+     "1 bedroom",
+     "2 bedroom"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 82000,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "A 22-storey off-plan tower in Airport West with a February 2026 launch. VAAL's own PUNA page was not opened in this run, so this entry rests on the Ownkey listing and a competitor's blog. Treat it as low confidence. Permit, escrow, floor plans and progress were not found.",
+   "positives": [
+    "Entry price and unit types published on Ownkey",
+    "No guaranteed returns advertised in the sources seen"
+   ],
+   "flags": [],
+   "sources": [
+    "https://landmarkhomesgh.com/new-housing-developments-in-airport-west/",
+    "https://ownkey.com/gh/developments",
+    "https://vaal.com.gh/off-plan-properties-accra-risk-reward-guide/"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 1,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-06",
+   "found_by": "discover-agent",
+   "slug": "puna-accra"
+  },
+  {
+   "name": "A&A Towers",
+   "developer": "Arkland Properties & Investment (Arkland Group)",
+   "area": "Oceanfront District, Eko Atlantic City, Victoria Island",
+   "country": "Nigeria",
+   "market": "Lagos",
+   "stage": "under construction",
+   "url": "https://arklandproperties.com/locations/a-a-towers/",
+   "docs_url": "https://cleecdesigns.com/wp-content/uploads/2019/09/Brochure-Website.pdf",
+   "permit_number": null,
+   "seed": {
+    "price": 684600,
+    "currency": "USD",
+    "title": "Certificate of Occupancy",
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "Q4 2026",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": true,
+    "developer_delivered": "Arkland home page claims 300+ developed housing units (developer claim, not verified)",
+    "units": null,
+    "payment_plan": "70% deposit, balance within 3 to 6 months (per Fortren & Company, not on developer page)"
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "independent",
+    "plans": "none",
+    "record": "developer",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "23-floor tower had reached the 19th floor by March 2025, final construction and pre-sales underway",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://businessday.ng/real-estate/article/these-7-projects-lead-luxury-residential-towers-in-eko-atlantic-city/"
+    },
+    {
+     "claim": "Completion scheduled for Q4 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fortrenandcompany.com/insights/top-7-residential-developments-in-eko-atlantic"
+    },
+    {
+     "claim": "Title is a Certificate of Occupancy; three-bedroom units of 163 sqm from $684,600 with 70% deposit",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fortrenandcompany.com/insights/top-7-residential-developments-in-eko-atlantic"
+    },
+    {
+     "claim": "Developer page lists 2 and 3 bedroom apartments and dual-level penthouses but shows no price, permit number, escrow or floor plans",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://arklandproperties.com/locations/a-a-towers/"
+    },
+    {
+     "claim": "Arkland has 300+ developed housing units",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://arklandproperties.com/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Eko Atlantic City, Lagos (office on 3rd floor of A & A Tower)",
+    "construction_start": null,
+    "handover_promised": "Q4 2026",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "2-bedroom apartment",
+     "3-bedroom apartment",
+     "dual-level penthouse",
+     "office",
+     "retail"
+    ],
+    "size_min_m2": 163,
+    "size_max_m2": 163,
+    "price_min": 684600,
+    "price_max": null,
+    "deposit_pct": 70,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Mixed-use 23-floor tower in Eko Atlantic. Per BusinessDay it reached the 19th floor by March 2025. No permit number, escrow or floor plans seen on the developer page, and Eko Atlantic is marketed to diaspora and institutional investors.",
+   "positives": [
+    "Independent newspaper confirms construction height reached by March 2025",
+    "Developer office is in the building itself",
+    "No guaranteed-return language seen"
+   ],
+   "flags": [],
+   "sources": [
+    "https://arklandproperties.com/",
+    "https://arklandproperties.com/locations/a-a-towers/",
+    "https://businessday.ng/real-estate/article/these-7-projects-lead-luxury-residential-towers-in-eko-atlantic-city/",
+    "https://cleecdesigns.com/wp-content/uploads/2019/09/Brochure-Website.pdf",
+    "https://estateintel.com/app/projects/a-a-towers",
+    "https://www.fortrenandcompany.com/insights/top-7-residential-developments-in-eko-atlantic"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": true,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 3,
+    "all_six": false
+   },
+   "verified_score": 1,
+   "added": "2026-11-06",
+   "found_by": "discover-agent",
+   "slug": "a-a-towers-lagos"
+  },
+  {
+   "name": "Le Rêve",
+   "developer": "August Crossing",
+   "area": "Eko Atlantic City, Victoria Island",
+   "country": "Nigeria",
+   "market": "Lagos",
+   "stage": "under construction",
+   "url": "https://augustxing.com/projects/le-reve/",
+   "docs_url": "https://augustxing.com/projects/le-reve/",
+   "permit_number": null,
+   "seed": {
+    "price": 550000,
+    "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "Q4 2026",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": true,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": null,
+    "units": 54,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "developer",
+    "record": "none",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "54 units, up to 244 sqm, 16 floors",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://augustxing.com/projects/le-reve/"
+    },
+    {
+     "claim": "Floor plans published for 190 sqm and 244 sqm maisonettes and 7th floor simplex units of 165, 175 and 235 sqm",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://augustxing.com/projects/le-reve/"
+    },
+    {
+     "claim": "Piling began late 2022, main construction began 2024, completion scheduled Q4 2026",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fortrenandcompany.com/insights/top-7-residential-developments-in-eko-atlantic"
+    },
+    {
+     "claim": "Three-bedroom maisonettes from $550,000 and four-bedroom from $730,000",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://www.fortrenandcompany.com/insights/top-7-residential-developments-in-eko-atlantic"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": null,
+    "construction_start": "late 2022 (piling); main works 2024",
+    "handover_promised": "Q4 2026",
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "simplex",
+     "2-level maisonette",
+     "4-bedroom triplex penthouse"
+    ],
+    "size_min_m2": 165,
+    "size_max_m2": 244,
+    "price_min": 550000,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Low-density 16-floor tower in Eko Atlantic. The developer page publishes floor plans but no price, permit, escrow or progress data. Construction status and prices come only from the Fortren & Company article, which says the project suits USD-paying diaspora buyers.",
+   "positives": [
+    "Floor plans published on the developer page",
+    "Sales office address and phone published"
+   ],
+   "flags": [],
+   "sources": [
+    "https://augustxing.com/projects/le-reve/",
+    "https://www.fortrenandcompany.com/insights/top-7-residential-developments-in-eko-atlantic"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": true,
+    "record": false,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-06",
+   "found_by": "discover-agent",
+   "slug": "le-r-ve-lagos"
+  },
+  {
+   "name": "Caspian Heights",
+   "developer": "Arkland Group with Equity Cooperative (contractor: ASL Contractors)",
+   "area": "Eko Atlantic City, Victoria Island",
+   "country": "Nigeria",
+   "market": "Lagos",
+   "stage": "under construction",
+   "url": "https://arklandproperties.com/locations/caspian-heights/",
+   "docs_url": "https://drive.google.com/file/d/1E2Cu5ZIRoOrJutOh21TxidjdaTkMpXQY/view?usp=sharing",
+   "permit_number": null,
+   "seed": {
+    "price": 250392,
+    "currency": "USD",
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": "Three-year build from January 2026 (no exact date published)",
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": "Arkland home page claims 300+ developed housing units (developer claim, not verified)",
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "developer",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Groundbreaking held 24 January 2026 and construction has commenced",
+     "status": "verified",
+     "by": "independent",
+     "source": "https://businessday.ng/real-estate/article/these-7-projects-lead-luxury-residential-towers-in-eko-atlantic-city/"
+    },
+    {
+     "claim": "Floor count: the developer page says 24 floors, the groundbreaking post and BusinessDay say 21",
+     "status": "contradicted",
+     "by": "none",
+     "source": "https://arklandproperties.com/groundbreaking-of-caspian-heights-eko-atlantic-city/"
+    },
+    {
+     "claim": "1 to 4 bedroom apartments from $250,392 (agent listing)",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://crimsonoaks.com.ng/property/caspian-heights-eko-atlantic-city/"
+    },
+    {
+     "claim": "Developer says it outlined return on investment opportunities at the launch, with no figure or guarantee",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://arklandproperties.com/groundbreaking-of-caspian-heights-eko-atlantic-city/"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Eko Atlantic City, Lagos (Arkland office in A & A Tower)",
+    "construction_start": "2026-01-24",
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "1-bedroom",
+     "2-bedroom",
+     "3-bedroom",
+     "4-bedroom"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 250392,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Early-stage tower: construction started with a groundbreaking on 24 January 2026, described as a three-year development. Fortren & Company says official pricing was not fully disclosed and the tower targets local and international buyers. Sources disagree on 21 versus 24 floors.",
+   "positives": [
+    "Groundbreaking date confirmed by developer and by BusinessDay",
+    "Contractor (ASL Contractors) named",
+    "Brochure link published"
+   ],
+   "flags": [],
+   "sources": [
+    "https://arklandproperties.com/",
+    "https://arklandproperties.com/groundbreaking-of-caspian-heights-eko-atlantic-city/",
+    "https://arklandproperties.com/locations/caspian-heights/",
+    "https://asl.contractors/2026/03/02/groundbreaking-of-caspian-heights-eko-atlantic-city/",
+    "https://businessday.ng/real-estate/article/these-7-projects-lead-luxury-residential-towers-in-eko-atlantic-city/",
+    "https://crimsonoaks.com.ng/property/caspian-heights-eko-atlantic-city/",
+    "https://www.fortrenandcompany.com/insights/top-7-residential-developments-in-eko-atlantic"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-06",
+   "found_by": "discover-agent",
+   "slug": "caspian-heights-lagos"
+  },
+  {
+   "name": "Syncord Tower",
+   "developer": "Arkland Group in partnership with Syncord",
+   "area": "Eko Atlantic City, Victoria Island",
+   "country": "Nigeria",
+   "market": "Lagos",
+   "stage": "under construction",
+   "url": "https://arklandproperties.com/locations/",
+   "docs_url": "https://arklandproperties.com/locations/",
+   "permit_number": null,
+   "seed": {
+    "price": 918606909,
+    "currency": "NGN",
+    "title": null,
+    "lease_base": null,
+    "guaranteed_language": false,
+    "yield_pct": null,
+    "completion": null,
+    "permit_claim": false,
+    "permit_number": null,
+    "plans_published": false,
+    "escrow": null,
+    "progress_pct": null,
+    "progress_updates": false,
+    "developer_delivered": "Arkland home page claims 300+ developed housing units (developer claim, not verified)",
+    "units": null,
+    "payment_plan": null
+   },
+   "verification": {
+    "permit": "none",
+    "escrow": "none",
+    "progress": "none",
+    "plans": "none",
+    "record": "developer",
+    "returns": "none"
+   },
+   "claims": [
+    {
+     "claim": "Arkland and Syncord have commenced construction following a groundbreaking at Eko Atlantic City",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://arklandgroup.com/news-blogs/"
+    },
+    {
+     "claim": "3-bedroom off-plan apartment listed at NGN 918,606,909 by an agent portal",
+     "status": "unverified",
+     "by": "none",
+     "source": "https://joossarealtors.com.ng/for-sale/flats-apartments/lagos/eko-atlantic-city/showtype"
+    }
+   ],
+   "facts": {
+    "developer_founded": null,
+    "developer_hq": "Eko Atlantic City, Lagos (Arkland office in A & A Tower)",
+    "construction_start": "March 2026 (groundbreaking post; year inferred from site upload dates)",
+    "handover_promised": null,
+    "original_handover": null,
+    "delay_months": null,
+    "unit_types": [
+     "3-bedroom apartment"
+    ],
+    "size_min_m2": null,
+    "size_max_m2": null,
+    "price_min": 918606909,
+    "price_max": null,
+    "deposit_pct": null,
+    "foreign_ownership": null,
+    "rental_programme": null,
+    "lat": null,
+    "lng": null,
+    "permit_authority": null
+   },
+   "note": "Newest Arkland launch in Eko Atlantic. I saw the developer's locations page and news feed, but not a full project page, so almost nothing is published. The Arkland site spells it 'Syncord' and one agent portal spells it 'Synchord'. The year of the groundbreaking is inferred.",
+   "positives": [
+    "Groundbreaking announced on developer news feed"
+   ],
+   "flags": [],
+   "sources": [
+    "https://arklandgroup.com/news-blogs/",
+    "https://arklandproperties.com/",
+    "https://arklandproperties.com/locations/",
+    "https://businessday.ng/real-estate/article/these-7-projects-lead-luxury-residential-towers-in-eko-atlantic-city/",
+    "https://joossarealtors.com.ng/for-sale/flats-apartments/lagos/eko-atlantic-city/showtype"
+   ],
+   "docs_listed": [],
+   "disclosure": {
+    "permit": false,
+    "escrow": false,
+    "progress": false,
+    "plans": false,
+    "record": true,
+    "no_guaranteed_returns": true,
+    "score": 2,
+    "all_six": false
+   },
+   "verified_score": 0,
+   "added": "2026-11-06",
+   "found_by": "discover-agent",
+   "slug": "syncord-tower-lagos"
   }
  ]
 }
