@@ -52,7 +52,7 @@ async function status(env) {
   ]);
   const page = (name, p, path) => ({ group: 'Pages', name, state: st(p.status === 200 ? (p.ms < 4000 ? true : null) : false), http: p.status, ms: p.ms, detail: p.status === 200 ? 'HTML served (' + Math.round((p.body || 0) / 1024) + ' KB)' : (p.error || 'HTTP ' + p.status), url: path });
   const h = health.body || {}, today = ((spend.body && spend.body.days) || [])[0] || null, cap = spend.body && spend.body.cap_usd_per_day;
-  const f = fresh.body || {}, claimsAge = claims ? ageH(claims.updated) : null, guardAge = dep ? ageH(dep.last_checked || dep.updated) : null;
+  const f = fresh.body || {}, claimsAge = claims ? ageH(claims.updated) : null, guardAge = dep ? ageH(dep.updated) : null;
   const live = (env && env.CF_PAGES_COMMIT_SHA) || null, lastGood = dep && dep.last_good;
   const checks = [
     page('Home page', home, '/'), page('Check a project', check, '/check/'), page('Named project pages', named, '/projects/'),
@@ -62,7 +62,7 @@ async function status(env) {
     { group: 'Payments', name: 'PayPal webhook endpoint', state: st(pp.status === 400 ? (env && env.KB_PP_WEBHOOK_ID ? true : null) : false), http: pp.status, ms: pp.ms, detail: pp.status === 400 ? 'reachable; rejects an unsigned test call as it should' + (env && env.KB_PP_WEBHOOK_ID ? '; signature check configured' : '; signature check NOT configured') : (pp.error || 'unexpected HTTP ' + pp.status), url: '/api/kb/paypal-webhook' },
     { group: 'Data', name: 'Project re-reads (7 days)', state: st(fresh.status === 200 ? (f.meets_objective ? true : null) : false), http: fresh.status, ms: fresh.ms, detail: fresh.status === 200 ? (f.pct_7d != null ? f.pct_7d + '% of ' + f.projects + ' projects re-read from source in 7 days (objective 90%)' : 'served') : (fresh.error || 'HTTP ' + fresh.status), url: '/api/open/freshness' },
     { group: 'Data', name: 'Research crawler dataset', state: st(claimsAge == null ? false : claimsAge < 24 * 9 ? true : null), http: null, ms: null, detail: claimsAge == null ? 'file not readable' : 'updated ' + (claimsAge < 48 ? claimsAge + ' h' : Math.round(claimsAge / 24) + ' days') + ' ago (weekly run)', url: '/data/world-claims.json' },
-    { group: 'Deploys', name: 'Deploy guard', state: st(guardAge == null ? false : guardAge < 3 ? true : null), http: null, ms: null, detail: guardAge == null ? 'record not readable' : 'last check ' + guardAge + ' h ago; live commit ' + (live ? live.slice(0, 12) : 'unknown') + (lastGood ? (live && lastGood.indexOf(live.slice(0, 12)) === 0 ? ' (passed smoke checks)' : '; last passing ' + lastGood.slice(0, 12)) : ''), url: '/data/deploys.json' }
+    { group: 'Deploys', name: 'Deploy guard', state: st(guardAge == null ? false : guardAge < 3 ? true : null), http: null, ms: null, detail: guardAge == null ? 'record not readable' : 'record updated ' + guardAge + ' h ago; live commit ' + (live ? live.slice(0, 12) : 'unknown') + (lastGood ? (live && (lastGood.indexOf(live.slice(0, 12)) === 0 || String(dep.last_checked || '').indexOf(live.slice(0, 12)) === 0) ? ' (checked by the guard)' : '; last passing ' + lastGood.slice(0, 12)) : ''), url: '/data/deploys.json' }
   ];
   const worst = checks.some(c => c.state === 'down') ? 'down' : checks.some(c => c.state === 'degraded') ? 'degraded' : 'up';
   const inc = incidents(dep), d30 = Date.now() - 30 * 864e5;
