@@ -210,6 +210,175 @@
 ]
 ]
 },
+"77-clarendon-toronto": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 5041,
+"hash": "16dd0eff2c8cb7b7",
+"id": "TOR-004",
+"unstable": [
+[
+2,
+11
+],
+[
+23,
+122
+],
+[
+131,
+184
+],
+[
+192,
+202
+],
+[
+207,
+223
+],
+[
+231,
+234
+],
+[
+240,
+253
+],
+[
+257,
+262
+],
+[
+268,
+299
+],
+[
+303,
+309
+],
+[
+313,
+318
+],
+[
+322,
+327
+],
+[
+331,
+334
+],
+[
+338,
+353
+],
+[
+359,
+362
+],
+[
+368,
+371
+],
+[
+377,
+389
+],
+[
+395,
+413
+],
+[
+420,
+442
+],
+[
+446,
+512
+],
+[
+520,
+532
+],
+[
+539,
+564
+],
+[
+570,
+586
+],
+[
+594,
+635
+],
+[
+641,
+669
+],
+[
+675,
+678
+],
+[
+684,
+688
+],
+[
+694,
+697
+],
+[
+701,
+706
+],
+[
+712,
+717
+],
+[
+722,
+764
+],
+[
+772,
+836
+],
+[
+840,
+903
+],
+[
+912,
+1029
+],
+[
+1034,
+1037
+],
+[
+1042,
+1045
+],
+[
+1050,
+1053
+],
+[
+1059,
+1061
+],
+[
+1077,
+1084
+],
+[
+1090,
+1101
+]
+]
+},
 "888-brickell-dolce-gabbana-jds": {
 "captured": "2026-11-05",
 "first": "2026-11-03",
@@ -557,6 +726,14 @@
 ]
 ]
 },
+"aerogate-homes-budapest": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "3bf86fc4b8c51b4f",
+"id": "BUD-004",
+"unstable": []
+},
 "aethera-residences-uoa-johor-bahru": {
 "captured": "2026-11-03",
 "first": "2026-11-03",
@@ -604,6 +781,60 @@
 "id": "LBA-001",
 "unstable": []
 },
+"aivazovsky-residential-complex-yerevan": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 4565,
+"hash": "d4eb109f1fa9ac56",
+"id": "YER-004",
+"unstable": [
+[
+528,
+567
+],
+[
+572,
+611
+]
+]
+},
+"al-mare-torn-tallinn": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 3142,
+"hash": "a9e1ed47e6e0d634",
+"id": "TAL-003",
+"unstable": [
+[
+6,
+549
+],
+[
+561,
+565
+],
+[
+576,
+616
+],
+[
+620,
+649
+],
+[
+654,
+657
+],
+[
+661,
+669
+],
+[
+673,
+678
+]
+]
+},
 "al-yazan-phase-1a-va-group": {
 "captured": "2026-11-03",
 "first": "2026-11-03",
@@ -620,6 +851,63 @@
 "id": "BRA-003",
 "last_invisible": "2026-11-05",
 "unstable": []
+},
+"alba-real-peru": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 6045,
+"hash": "a64b4240a9b0fb56",
+"id": "PRU-001",
+"unstable": [
+[
+4,
+15
+],
+[
+27,
+197
+],
+[
+202,
+203
+],
+[
+210,
+285
+],
+[
+298,
+310
+],
+[
+317,
+324
+],
+[
+328,
+336
+],
+[
+341,
+397
+],
+[
+403,
+422
+],
+[
+434,
+440
+],
+[
+446,
+624
+],
+[
+628,
+1322
+]
+]
 },
 "aldea-tulum-plus": {
 "captured": "2026-11-03",
@@ -643,6 +931,14 @@
 "h": 8000,
 "hash": "b1bc1cf61f123553",
 "id": "BALI-048",
+"unstable": []
+},
+"alpha-place-libertador-argentina": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 7231,
+"hash": "e02e65cf6a4fdb16",
+"id": "ARG-003",
 "unstable": []
 },
 "altan-emaar": {
@@ -900,6 +1196,75 @@
 "id": "MRU-009",
 "unstable": []
 },
+"amberwood-at-holland-singapore": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "55ca05abd61a5579",
+"id": "SIN-002",
+"unstable": [
+[
+4,
+13
+],
+[
+20,
+23
+],
+[
+49,
+53
+],
+[
+58,
+200
+],
+[
+204,
+253
+],
+[
+258,
+293
+],
+[
+303,
+320
+],
+[
+327,
+364
+],
+[
+405,
+921
+],
+[
+927,
+957
+],
+[
+962,
+1145
+],
+[
+1150,
+1292
+],
+[
+1299,
+1512
+],
+[
+1517,
+1669
+],
+[
+1675,
+1750
+]
+]
+},
 "amethyst-springs-kilimani-gy-group": {
 "captured": "2026-11-03",
 "first": "2026-11-03",
@@ -1009,6 +1374,14 @@
 "id": "CAN-005",
 "unstable": []
 },
+"anantara-mina-residences-ras-al-khaimah": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "e4981e50c85a245c",
+"id": "RAK-023",
+"unstable": []
+},
 "anantara-residences-ubud-bali-minor-wika-realty": {
 "captured": "2026-11-05",
 "first": "2026-11-03",
@@ -1079,6 +1452,27 @@
 "hash": "aa1d939f59cb2fc5",
 "id": "BALI-050",
 "unstable": []
+},
+"anwa-aria-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "d6fc83bbcc6d5070",
+"id": "DXB-085",
+"unstable": [
+[
+0,
+31
+],
+[
+49,
+64
+],
+[
+71,
+86
+]
+]
 },
 "apres-coco-del-mar-efc-group": {
 "captured": "2026-11-03",
@@ -1361,7 +1755,7 @@
 },
 "aruna-belize-phase-4": {
 "id": "BZE-002",
-"last_error": "2026-11-05"
+"last_error": "2026-11-06"
 },
 "arya-lombok-residence-mawi-lombok": {
 "captured": "2026-11-03",
@@ -1391,6 +1785,14 @@
 196
 ]
 ]
+},
+"aspirz-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "23e902fcc7bafd9d",
+"id": "DXB-098",
+"unstable": []
 },
 "aura-condominium-rawai-the-one-group": {
 "captured": "2026-11-03",
@@ -1691,6 +2093,19 @@
 "id": "BALI-043",
 "unstable": []
 },
+"banovo-brdo-residences-belgrade": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 2016,
+"hash": "01e343182b807fef",
+"id": "BEL-004",
+"unstable": [
+[
+235,
+299
+]
+]
+},
 "bansko-complex-near-ski-lift-suprimmo": {
 "captured": "2026-11-05",
 "first": "2026-11-03",
@@ -1710,6 +2125,19 @@
 [
 0,
 197
+]
+]
+},
+"banyan-tree-bimini-resort-residences-rockwell-island-bahamas": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 4331,
+"hash": "595490af46f79e63",
+"id": "BHS-006",
+"unstable": [
+[
+428,
+486
 ]
 ]
 },
@@ -1890,6 +2318,14 @@
 "id": "BAH-001",
 "unstable": []
 },
+"bayz-102-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "1b6eb84035745437",
+"id": "DXB-111",
+"unstable": []
+},
 "beekman-401-east-51st-cbsk": {
 "captured": "2026-11-05",
 "first": "2026-11-03",
@@ -1941,6 +2377,14 @@
 "last_invisible": "2026-11-05",
 "unstable": []
 },
+"belalba-peru": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 5000,
+"hash": "e18ba59e679d835e",
+"id": "PRU-003",
+"unstable": []
+},
 "belize-marriott-residences-eci-development": {
 "captured": "2026-11-05",
 "changes": [
@@ -1982,6 +2426,19 @@
 "id": "OMN-007",
 "unstable": []
 },
+"binghatti-aquarise-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 6198,
+"hash": "5c66734b9f5d587b",
+"id": "DXB-074",
+"unstable": [
+[
+1146,
+1344
+]
+]
+},
 "binghatti-circle-jvc": {
 "captured": "2026-11-03",
 "first": "2026-11-03",
@@ -1992,6 +2449,148 @@
 [
 1129,
 1326
+]
+]
+},
+"binghatti-cullinan-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 5072,
+"hash": "2e67c39cbbf4ae17",
+"id": "DXB-094",
+"unstable": []
+},
+"binghatti-etherea-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 6107,
+"hash": "df55434f256987eb",
+"id": "DXB-072",
+"unstable": [
+[
+1126,
+1324
+]
+]
+},
+"binghatti-flare-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 6143,
+"hash": "fca536e7938f2a03",
+"id": "DXB-073",
+"unstable": []
+},
+"binghatti-hillcrest-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 5165,
+"hash": "dcb1c3526d77aa46",
+"id": "DXB-096",
+"unstable": [
+[
+920,
+1027
+],
+[
+1031,
+1117
+]
+]
+},
+"binghatti-luxuria-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 6050,
+"hash": "e444372b2675423b",
+"id": "DXB-095",
+"unstable": [
+[
+379,
+501
+],
+[
+1113,
+1310
+]
+]
+},
+"binghatti-skyterraces-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 5165,
+"hash": "f2865eb2f9ea4469",
+"id": "DXB-075",
+"unstable": [
+[
+920,
+1117
+]
+]
+},
+"binghatti-starfall-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 6069,
+"hash": "3933e6857532e19e",
+"id": "DXB-097",
+"unstable": [
+[
+1122,
+1202
+],
+[
+1209,
+1210
+],
+[
+1217,
+1244
+],
+[
+1262,
+1263
+],
+[
+1273,
+1306
+]
+]
+},
+"binghatti-wraith-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 5332,
+"hash": "6c77ffe94847e858",
+"id": "DXB-093",
+"unstable": [
+[
+964,
+1006
+],
+[
+1014,
+1018
+],
+[
+1026,
+1033
+],
+[
+1045,
+1047
+],
+[
+1064,
+1074
+],
+[
+1078,
+1128
+],
+[
+1142,
+1149
 ]
 ]
 },
@@ -2611,12 +3210,28 @@
 "id": "BHX-003",
 "unstable": []
 },
+"brabus-island-baku-baku": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 900,
+"hash": "59043ab4becc6880",
+"id": "BAK-003",
+"unstable": []
+},
 "branniganz-suites-bukit-bintang-exsim": {
 "captured": "2026-11-03",
 "first": "2026-11-03",
 "h": 4776,
 "hash": "5f9f6164f09e0868",
 "id": "MYS-014",
+"unstable": []
+},
+"breez-by-danube-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "f826a02763c33834",
+"id": "DXB-099",
 "unstable": []
 },
 "breig-edem-i-villas": {
@@ -2651,12 +3266,28 @@
 ]
 ]
 },
+"brisa-patong-by-sansiri-phuket": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "b10d7a434cb9ad08",
+"id": "PHK-023",
+"unstable": []
+},
 "brooklyn-life-fikirtepe": {
 "captured": "2026-11-03",
 "first": "2026-11-03",
 "h": 8000,
 "hash": "4130996ea2d14cfc",
 "id": "IST-004",
+"unstable": []
+},
+"burj-binghatti-jacob-co-residences-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 1800,
+"hash": "afd20e1608f5e727",
+"id": "DXB-102",
 "unstable": []
 },
 "bvlgari-mansions-bodrum-ahen": {
@@ -2735,6 +3366,119 @@
 "id": "LKA-010",
 "unstable": []
 },
+"canvaz-palette-cherngtalay-phuket": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 7801,
+"hash": "3241d645a6412d9d",
+"id": "PHK-022",
+"unstable": [
+[
+195,
+255
+],
+[
+274,
+278
+],
+[
+282,
+287
+],
+[
+291,
+303
+],
+[
+311,
+314
+],
+[
+324,
+326
+],
+[
+330,
+331
+],
+[
+338,
+404
+],
+[
+423,
+457
+],
+[
+461,
+466
+],
+[
+473,
+475
+],
+[
+485,
+842
+],
+[
+849,
+867
+],
+[
+885,
+890
+],
+[
+896,
+990
+],
+[
+998,
+1001
+],
+[
+1035,
+1039
+],
+[
+1052,
+1065
+],
+[
+1082,
+1199
+],
+[
+1203,
+1206
+],
+[
+1210,
+1213
+],
+[
+1219,
+1232
+],
+[
+1247,
+1372
+],
+[
+1390,
+1392
+],
+[
+1396,
+1546
+],
+[
+1552,
+1706
+]
+]
+},
 "cap-cana-four-tower-boutique-community": {
 "captured": "2026-11-03",
 "first": "2026-11-03",
@@ -2747,6 +3491,14 @@
 174
 ]
 ]
+},
+"cape-hayat-ras-al-khaimah": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "64108feaf38b3bde",
+"id": "RAK-019",
+"unstable": []
 },
 "capital-square-da-nang-mega-assets-sih": {
 "captured": "2026-11-05",
@@ -2921,6 +3673,14 @@
 "hash": "da0db80aaceb131d",
 "id": "ARU-001",
 "last_invisible": "2026-11-04",
+"unstable": []
+},
+"casa-bella-residences-by-b-b-italia-miami": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 4983,
+"hash": "64d34405c91768a3",
+"id": "MIA-015",
 "unstable": []
 },
 "casa-blake-costa-palmas-irongate": {
@@ -3136,12 +3896,33 @@
 "id": "CYP-009",
 "unstable": []
 },
+"centropolitan-by-cordia-bucharest": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 900,
+"hash": "c9dd2fd0652e561d",
+"id": "BUC-003",
+"unstable": [
+[
+73,
+75
+]
+]
+},
 "chalet-caribou-les-saisies-mgm": {
 "captured": "2026-11-03",
 "first": "2026-11-03",
 "h": 7753,
 "hash": "cc692ac1f2ac6635",
 "id": "FRE-001",
+"unstable": []
+},
+"chelsea-residences-by-damac-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "568fcb1011dc74e3",
+"id": "DXB-083",
 "unstable": []
 },
 "chukwani-shores-paddco": {
@@ -3156,6 +3937,14 @@
 7
 ]
 ]
+},
+"cielo-condos-toronto": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "378ea3132f74dd0c",
+"id": "TOR-001",
+"unstable": []
 },
 "cipriani-residences-miami": {
 "captured": "2026-11-05",
@@ -3638,6 +4427,14 @@
 ]
 ]
 },
+"cove-edition-6-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 5158,
+"hash": "36e5d5654d028176",
+"id": "DXB-091",
+"unstable": []
+},
 "creative-homes-bulevar-iii-malaga-neinor": {
 "captured": "2026-11-05",
 "changes": [
@@ -3894,6 +4691,30 @@
 ]
 ]
 },
+"damac-bay-by-cavalli-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 900,
+"hash": "be3f8d049d309e9c",
+"id": "DXB-080",
+"unstable": []
+},
+"damac-islands-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 900,
+"hash": "83ef6e7bff08dca3",
+"id": "DXB-104",
+"unstable": []
+},
+"damac-riverside-views-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 900,
+"hash": "d35b7ebae0688a25",
+"id": "DXB-082",
+"unstable": []
+},
 "dasa-ubud-balitecture": {
 "captured": "2026-11-04",
 "first": "2026-11-04",
@@ -4124,6 +4945,31 @@
 ]
 ]
 },
+"dh-banpo-124-banpo-jugong-no-1-zones-1-2-and-4-rebuilding-se": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 4804,
+"hash": "8a2d31f442c928d9",
+"id": "SEO-002",
+"unstable": [
+[
+71,
+73
+],
+[
+124,
+180
+]
+]
+},
+"diamondz-by-danube-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "01de71bba05cc2ac",
+"id": "DXB-114",
+"unstable": []
+},
 "divine-klcc-chin-hin-property": {
 "captured": "2026-11-04",
 "first": "2026-11-04",
@@ -4269,6 +5115,19 @@
 ]
 ]
 },
+"eclipse-sant-elm-balearics": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 5139,
+"hash": "f612c0f0f2e63649",
+"id": "PMI-006",
+"unstable": [
+[
+37,
+155
+]
+]
+},
 "eden-beach-phase-3-taylor-wimpey-espana": {
 "captured": "2026-11-04",
 "first": "2026-11-04",
@@ -4326,6 +5185,48 @@
 ]
 ]
 },
+"edenia-costa-blanca": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "26d31719b6b34925",
+"id": "CBL-009",
+"unstable": []
+},
+"edge-raha-island-ras-al-khaimah": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "f1d85da1d2ff81f8",
+"id": "RAK-018",
+"unstable": [
+[
+1285,
+1287
+]
+]
+},
+"edificio-lira-622-chile": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 900,
+"hash": "5e183ba9971ba42f",
+"id": "CHI-001",
+"unstable": [
+[
+72,
+77
+]
+]
+},
+"edificio-santa-corina-chile": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 5764,
+"hash": "0c310b3795c6bef1",
+"id": "CHI-002",
+"unstable": []
+},
 "eko-savannah-mj-developpement": {
 "captured": "2026-11-04",
 "first": "2026-11-04",
@@ -4348,6 +5249,14 @@
 "h": 8000,
 "hash": "722bb41b3ba9e44f",
 "id": "BALI-028",
+"unstable": []
+},
+"elements-cyprus": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "46aa37229dc89160",
+"id": "CYP-010",
 "unstable": []
 },
 "elevenonb-blok": {
@@ -4427,6 +5336,14 @@
 ]
 ]
 },
+"elit-manta-helios-and-calypso-towers-ecuador": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 5174,
+"hash": "9a632d6623ec121a",
+"id": "ECU-003",
+"unstable": []
+},
 "elounda-hills-crete": {
 "captured": "2026-11-04",
 "first": "2026-11-04",
@@ -4434,6 +5351,103 @@
 "hash": "68147f9ca3383ea0",
 "id": "GRC-002",
 "unstable": []
+},
+"eltiera-heights-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 7097,
+"hash": "3182a01fb1028c98",
+"id": "DXB-116",
+"unstable": [
+[
+297,
+309
+],
+[
+316,
+318
+],
+[
+322,
+324
+],
+[
+333,
+340
+],
+[
+345,
+346
+],
+[
+355,
+362
+],
+[
+377,
+378
+],
+[
+382,
+385
+],
+[
+392,
+400
+],
+[
+405,
+416
+],
+[
+501,
+504
+],
+[
+516,
+521
+],
+[
+531,
+537
+],
+[
+547,
+554
+],
+[
+576,
+678
+],
+[
+693,
+701
+],
+[
+705,
+779
+],
+[
+798,
+1161
+],
+[
+1181,
+1186
+],
+[
+1194,
+1204
+],
+[
+1210,
+1278
+],
+[
+1299,
+1305
+]
+]
 },
 "elysium-eco-city": {
 "captured": "2026-11-05",
@@ -4528,6 +5542,14 @@
 153
 ]
 ]
+},
+"enre-residence-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 6621,
+"hash": "86d1b903d3fb0f61",
+"id": "DXB-117",
+"unstable": []
 },
 "erudita-m-rida": {
 "captured": "2026-11-04",
@@ -4769,6 +5791,14 @@
 "id": "LKA-004",
 "unstable": []
 },
+"fashionz-by-danube-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "2b9f034e0c97de08",
+"id": "DXB-113",
+"unstable": []
+},
 "fendi-chateau-residences-tower-3-chateau-group": {
 "captured": "2026-11-04",
 "first": "2026-11-04",
@@ -4785,6 +5815,22 @@
 "id": "PRT-004",
 "unstable": []
 },
+"fifteen-fifteen-vancouver": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 5476,
+"hash": "fe0e01d97adf9e42",
+"id": "YVR-004",
+"unstable": []
+},
+"firdus-prime-residence-yerevan": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "7baac671e2289f1c",
+"id": "YER-003",
+"unstable": []
+},
 "fix-residences-thessaloniki-dimand": {
 "captured": "2026-11-04",
 "first": "2026-11-04",
@@ -4797,6 +5843,14 @@
 1750
 ]
 ]
+},
+"forma-east-tower-of-the-mirvish-gehry-complex-toronto": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "fc14c7519a31aff0",
+"id": "TOR-002",
+"unstable": []
 },
 "fortis-residences-makati": {
 "captured": "2026-11-05",
@@ -4859,6 +5913,120 @@
 "id": "PRT-002",
 "unstable": []
 },
+"g-ntherstra-e-3-no-published-project-name-berlin": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 5058,
+"hash": "972357f065f24c1d",
+"id": "BER-002",
+"unstable": [
+[
+66,
+120
+],
+[
+892,
+927
+],
+[
+932,
+949
+]
+]
+},
+"gaia-residence-amman": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 5590,
+"hash": "e604c0aa6eda23d9",
+"id": "AMM-002",
+"unstable": [
+[
+28,
+196
+],
+[
+203,
+238
+],
+[
+242,
+267
+],
+[
+272,
+418
+],
+[
+423,
+444
+],
+[
+449,
+458
+],
+[
+463,
+492
+],
+[
+500,
+510
+],
+[
+514,
+538
+],
+[
+542,
+553
+],
+[
+557,
+578
+],
+[
+585,
+604
+],
+[
+608,
+711
+],
+[
+716,
+1123
+],
+[
+1127,
+1130
+],
+[
+1134,
+1141
+],
+[
+1146,
+1149
+],
+[
+1153,
+1160
+],
+[
+1165,
+1223
+]
+]
+},
+"garden-of-happiness-taiwan": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 2659,
+"hash": "3c981b94cb3466cb",
+"id": "TAI-001",
+"unstable": []
+},
 "gardenia-bay-aldar": {
 "captured": "2026-11-05",
 "first": "2026-11-04",
@@ -4889,12 +6057,145 @@
 ]
 ]
 },
+"ghyra-ecuador": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 5913,
+"hash": "e51120671a72217d",
+"id": "ECU-004",
+"unstable": [
+[
+281,
+282
+],
+[
+412,
+413
+],
+[
+644,
+646
+],
+[
+764,
+765
+],
+[
+785,
+788
+],
+[
+796,
+799
+],
+[
+807,
+808
+],
+[
+831,
+832
+],
+[
+846,
+847
+],
+[
+851,
+852
+],
+[
+952,
+953
+],
+[
+960,
+961
+],
+[
+984,
+985
+],
+[
+1002,
+1003
+],
+[
+1018,
+1019
+],
+[
+1023,
+1025
+],
+[
+1045,
+1046
+],
+[
+1052,
+1055
+],
+[
+1064,
+1065
+],
+[
+1094,
+1095
+],
+[
+1118,
+1119
+],
+[
+1130,
+1131
+],
+[
+1155,
+1156
+],
+[
+1167,
+1168
+],
+[
+1179,
+1180
+],
+[
+1197,
+1199
+],
+[
+1220,
+1223
+],
+[
+1235,
+1236
+],
+[
+1285,
+1286
+]
+]
+},
 "gladia-heights-khang-dien-keppel": {
 "captured": "2026-11-04",
 "first": "2026-11-04",
 "h": 8000,
 "hash": "25992193b86321be",
 "id": "VNM-004",
+"unstable": []
+},
+"godrej-trilogy-seaturf-and-seafront-towers-mumbai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 900,
+"hash": "5e915d1bcbda7760",
+"id": "MUM-003",
 "unstable": []
 },
 "grand-lane-new-cairo": {
@@ -4957,6 +6258,151 @@
 "id": "BGR-004",
 "unstable": []
 },
+"grand-polo-club-resort-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 5164,
+"hash": "0da0795282726ef8",
+"id": "DXB-105",
+"unstable": [
+[
+3,
+13
+],
+[
+24,
+30
+],
+[
+35,
+37
+],
+[
+42,
+47
+],
+[
+53,
+193
+],
+[
+197,
+215
+],
+[
+219,
+243
+],
+[
+247,
+262
+],
+[
+266,
+312
+],
+[
+316,
+318
+],
+[
+322,
+324
+],
+[
+328,
+334
+],
+[
+338,
+346
+],
+[
+350,
+353
+],
+[
+360,
+380
+],
+[
+384,
+427
+],
+[
+431,
+437
+],
+[
+441,
+443
+],
+[
+447,
+449
+],
+[
+453,
+455
+],
+[
+459,
+465
+],
+[
+469,
+471
+],
+[
+475,
+483
+],
+[
+487,
+546
+],
+[
+550,
+556
+],
+[
+560,
+591
+],
+[
+601,
+604
+],
+[
+617,
+685
+],
+[
+689,
+834
+],
+[
+840,
+946
+],
+[
+951,
+992
+],
+[
+1000,
+1004
+],
+[
+1009,
+1017
+],
+[
+1022,
+1123
+]
+]
+},
 "grand-solaire-pattaya": {
 "captured": "2026-11-04",
 "first": "2026-11-04",
@@ -4982,6 +6428,22 @@
 ]
 ]
 },
+"greenway-apartments-budapest": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "bbe1962f2aa39c7d",
+"id": "BUD-001",
+"unstable": []
+},
+"greenz-by-danube-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 900,
+"hash": "00805c8c56893a39",
+"id": "DXB-101",
+"unstable": []
+},
 "guayacan-santa-maria-valor-udg": {
 "captured": "2026-11-04",
 "first": "2026-11-04",
@@ -4989,6 +6451,167 @@
 "hash": "4589b66f04f86e13",
 "id": "PTY-004",
 "unstable": []
+},
+"gyeonghuigung-effite-donuimun-district-2-redevelopment-seoul": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 6875,
+"hash": "53448d354cae2efd",
+"id": "SEO-003",
+"unstable": [
+[
+0,
+395
+],
+[
+400,
+450
+],
+[
+456,
+475
+],
+[
+479,
+613
+],
+[
+619,
+669
+],
+[
+675,
+692
+],
+[
+698,
+711
+],
+[
+726,
+729
+],
+[
+745,
+753
+],
+[
+757,
+759
+],
+[
+769,
+794
+],
+[
+804,
+805
+],
+[
+813,
+817
+],
+[
+825,
+834
+],
+[
+838,
+840
+],
+[
+852,
+861
+],
+[
+866,
+867
+],
+[
+921,
+924
+],
+[
+928,
+934
+],
+[
+938,
+951
+],
+[
+955,
+981
+],
+[
+987,
+995
+],
+[
+1002,
+1085
+],
+[
+1094,
+1108
+],
+[
+1112,
+1120
+],
+[
+1129,
+1141
+],
+[
+1147,
+1149
+],
+[
+1157,
+1182
+],
+[
+1188,
+1259
+],
+[
+1268,
+1281
+],
+[
+1285,
+1293
+],
+[
+1297,
+1298
+],
+[
+1302,
+1313
+],
+[
+1317,
+1318
+],
+[
+1323,
+1326
+],
+[
+1330,
+1331
+],
+[
+1338,
+1427
+],
+[
+1454,
+1504
+]
+]
 },
 "habitat-vibe-the-habitat-lombok": {
 "captured": "2026-11-04",
@@ -5031,6 +6654,14 @@
 1553
 ]
 ]
+},
+"harlin-vancouver": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "214e4e9ecd1fbb87",
+"id": "YVR-001",
+"unstable": []
 },
 "harmonie-golf-beach-estate-semaris": {
 "captured": "2026-11-04",
@@ -5190,6 +6821,47 @@
 "last_invisible": "2026-11-05",
 "unstable": []
 },
+"harrington-place-mullae-seoul": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 6875,
+"hash": "78ad1997fa1383f3",
+"id": "SEO-004",
+"unstable": [
+[
+45,
+46
+],
+[
+52,
+62
+],
+[
+66,
+67
+],
+[
+77,
+88
+],
+[
+95,
+101
+],
+[
+106,
+110
+],
+[
+114,
+117
+],
+[
+128,
+129
+]
+]
+},
 "havannah-haven-estates-port-havannah-marina-goodies": {
 "captured": "2026-11-04",
 "first": "2026-11-04",
@@ -5229,6 +6901,22 @@
 "h": 8000,
 "hash": "3b603282dd2d3ac0",
 "id": "BALI-063",
+"unstable": []
+},
+"honest-signature-7-the-developer-also-calls-it-prestige-2-ma": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 5662,
+"hash": "7aee1b050d1c9fc1",
+"id": "MRK-006",
+"unstable": []
+},
+"horizon-14-also-listed-as-terra-horizon-14-goa": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 7218,
+"hash": "cbf42a1d7f9dff4b",
+"id": "GOA-006",
 "unstable": []
 },
 "horizon-towers-larnaca-slk": {
@@ -5653,6 +7341,39 @@
 "id": "SYD-003",
 "unstable": []
 },
+"i-kov-3-0-prague": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "8cabb8519c2f5c13",
+"id": "PRA-003",
+"unstable": [
+[
+1211,
+1291
+],
+[
+1296,
+1375
+],
+[
+1379,
+1459
+],
+[
+1463,
+1543
+],
+[
+1547,
+1627
+],
+[
+1631,
+1711
+]
+]
+},
 "ice-beach-major-developments": {
 "captured": "2026-11-05",
 "first": "2026-11-04",
@@ -5828,9 +7549,72 @@
 "id": "PER-002",
 "unstable": []
 },
+"indu-oceanfront-residences-cayman-islands": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "2665ef6fbc5b3bae",
+"id": "CYM-004",
+"unstable": [
+[
+0,
+197
+],
+[
+314,
+318
+],
+[
+331,
+333
+],
+[
+348,
+349
+],
+[
+355,
+357
+],
+[
+398,
+595
+],
+[
+599,
+797
+],
+[
+868,
+870
+],
+[
+1483,
+1493
+],
+[
+1647,
+1720
+],
+[
+1745,
+1750
+]
+]
+},
 "infinity-hills-stone-town-infinity-developments": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 7650,
+"hash": "e2c91093b273ca69",
 "id": "ZNZ-006",
-"last_error": "2026-11-05"
+"last_error": "2026-11-05",
+"unstable": [
+[
+22,
+219
+]
+]
 },
 "infinity-paguera-taylor-wimpey": {
 "captured": "2026-11-05",
@@ -6074,6 +7858,60 @@
 "hash": "e3b0c44298fc1c14",
 "id": "CYM-003",
 "unstable": []
+},
+"jack-s-bay-club-resort-the-playground-residences-bahamas": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "8b4e1ddea7d772ae",
+"id": "BHS-003",
+"unstable": [
+[
+194,
+200
+],
+[
+205,
+213
+]
+]
+},
+"jenna-aljada-sharjah": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 5513,
+"hash": "4a32e35d09dbefcf",
+"id": "SHJ-011",
+"unstable": [
+[
+58,
+60
+],
+[
+75,
+77
+],
+[
+87,
+91
+],
+[
+110,
+113
+],
+[
+128,
+130
+],
+[
+137,
+139
+],
+[
+148,
+150
+]
+]
 },
 "jimbaran-cliffside-reserve-aterra": {
 "captured": "2026-11-04",
@@ -6420,6 +8258,30 @@
 "id": "CYP-005",
 "unstable": []
 },
+"konia-green-cyprus": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 4693,
+"hash": "6bf9a609a5f96d2e",
+"id": "CYP-012",
+"unstable": []
+},
+"kore-by-imtiaz-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 4733,
+"hash": "4ea3be40c136a5b1",
+"id": "DXB-109",
+"unstable": []
+},
+"korkowa-146-warsaw": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 7893,
+"hash": "dcb3241ed6937009",
+"id": "WAR-001",
+"unstable": []
+},
 "kosmos-torremolinos-kronos-homes": {
 "captured": "2026-11-04",
 "first": "2026-11-04",
@@ -6483,6 +8345,14 @@
 "id": "EGY-008",
 "unstable": []
 },
+"la-perle-de-tanger-tangier": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 6877,
+"hash": "41546a3f190e3a7d",
+"id": "TAN-002",
+"unstable": []
+},
 "la-reserve-du-cap-pierre-blanche": {
 "captured": "2026-11-04",
 "first": "2026-11-04",
@@ -6533,6 +8403,14 @@
 "id": "CYM-002",
 "unstable": []
 },
+"lagoon-views-damac-lagoons-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 900,
+"hash": "a1b21b65d6d541a0",
+"id": "DXB-081",
+"unstable": []
+},
 "laguna-lake-residences-aster-banyan-group": {
 "captured": "2026-11-04",
 "first": "2026-11-04",
@@ -6554,6 +8432,14 @@
 ]
 ]
 },
+"lake11-flow-phase-2-of-lake-11-budapest": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 3772,
+"hash": "2cf0e1c4b0b255d8",
+"id": "BUD-003",
+"unstable": []
+},
 "lao-center-vientiane-qiancheng": {
 "captured": "2026-11-04",
 "first": "2026-11-04",
@@ -6564,7 +8450,7 @@
 },
 "lara-port-antalya": {
 "id": "AYT-001",
-"last_error": "2026-11-05"
+"last_error": "2026-11-06"
 },
 "las-palmas-de-tamarindo": {
 "captured": "2026-11-05",
@@ -6574,6 +8460,19 @@
 "id": "CRI-001",
 "last_invisible": "2026-11-05",
 "unstable": []
+},
+"latitude-on-cambie-vancouver": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "549146faa1207e09",
+"id": "YVR-003",
+"unstable": [
+[
+1122,
+1219
+]
+]
 },
 "layan-green-park-phase-2": {
 "captured": "2026-11-04",
@@ -6858,8 +8757,13 @@
 "unstable": []
 },
 "lb-ubud-dream": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "da0303dbc453735f",
 "id": "BALI-033",
-"last_error": "2026-11-05"
+"last_error": "2026-11-05",
+"unstable": []
 },
 "lb-xo-pandawa": {
 "captured": "2026-11-04",
@@ -6871,6 +8775,19 @@
 [
 654,
 768
+]
+]
+},
+"le-blanc-by-imtiaz-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 5866,
+"hash": "b780f6f11aade3a3",
+"id": "DXB-110",
+"unstable": [
+[
+131,
+133
 ]
 ]
 },
@@ -6904,6 +8821,27 @@
 ]
 ]
 },
+"les-palms-de-l-atlas-marrakech": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 4374,
+"hash": "1a5c285186a83181",
+"id": "MRK-008",
+"unstable": [
+[
+11,
+61
+],
+[
+521,
+602
+],
+[
+611,
+612
+]
+]
+},
 "les-vagues-elie-saab-dar-global": {
 "captured": "2026-11-05",
 "first": "2026-11-04",
@@ -6912,6 +8850,23 @@
 "id": "QAT-001",
 "last_invisible": "2026-11-05",
 "unstable": []
+},
+"limassol-greens-cyprus": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 7000,
+"hash": "c2b0b8546564cd29",
+"id": "CYP-011",
+"unstable": [
+[
+30,
+136
+],
+[
+197,
+206
+]
+]
 },
 "linton-villas-mandalika-medusia": {
 "captured": "2026-11-04",
@@ -6943,6 +8898,14 @@
 "h": 4823,
 "hash": "c9c7dc6c4fe32746",
 "id": "RIV-003",
+"unstable": []
+},
+"lodha-sea-face-mumbai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 4913,
+"hash": "6fe55679e956cbf3",
+"id": "MUM-001",
 "unstable": []
 },
 "london-square-bermondsey-final-phase": {
@@ -6978,6 +8941,19 @@
 "hash": "68803b69cc8ff5e4",
 "id": "BALI-045",
 "unstable": []
+},
+"lucent-residences-jordan-gate-amman": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "6371117fc3559e7c",
+"id": "AMM-001",
+"unstable": [
+[
+0,
+197
+]
+]
 },
 "luma-apartments-venture-villas-bali": {
 "captured": "2026-11-04",
@@ -7153,6 +9129,19 @@
 [
 733,
 945
+]
+]
+},
+"luna-oak-residency-nairobi": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 7951,
+"hash": "3462a4c7af4aa03f",
+"id": "NBO-004",
+"unstable": [
+[
+1563,
+1588
 ]
 ]
 },
@@ -7461,6 +9450,47 @@
 ]
 ]
 },
+"marina-dor-ol-phase-i-belgrade": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 6778,
+"hash": "a53182b64bc0e831",
+"id": "BEL-003",
+"unstable": [
+[
+10,
+13
+],
+[
+134,
+137
+],
+[
+149,
+198
+],
+[
+225,
+232
+],
+[
+238,
+247
+],
+[
+252,
+1122
+],
+[
+1164,
+1335
+],
+[
+1348,
+1482
+]
+]
+},
 "marina-towers-torre-ii-marina-towers-s-a-p-i-de-c-v": {
 "captured": "2026-11-04",
 "first": "2026-11-04",
@@ -7570,6 +9600,57 @@
 "id": "PVR-005",
 "unstable": []
 },
+"me-ciema-m-jas-phase-2-s-eizen-teina-iela-47-riga": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "bed806d7e3017ac7",
+"id": "RIG-004",
+"unstable": [
+[
+0,
+131
+]
+]
+},
+"medblue-4-1-costa-del-sol": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 4227,
+"hash": "f743759fe0de747f",
+"id": "CDS-024",
+"unstable": [
+[
+134,
+215
+]
+]
+},
+"mercer-house-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 7913,
+"hash": "4a67114f0b1847b0",
+"id": "DXB-106",
+"unstable": [
+[
+1373,
+1380
+],
+[
+1389,
+1391
+],
+[
+1398,
+1453
+],
+[
+1478,
+1480
+]
+]
+},
 "metrovacesa-abril-casares": {
 "captured": "2026-11-04",
 "first": "2026-11-04",
@@ -7592,6 +9673,14 @@
 "h": 5666,
 "hash": "2e1d589639ddf8ec",
 "id": "CDS-010",
+"unstable": []
+},
+"miera-rezidences-riga": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 3196,
+"hash": "688cf7df4e978f3c",
+"id": "RIG-001",
 "unstable": []
 },
 "milan-towers-mahmutlar-milan-group": {
@@ -7675,6 +9764,14 @@
 "id": "OMN-006",
 "unstable": []
 },
+"mirasol-ras-al-khaimah": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "5bf96a83b0b61ad0",
+"id": "RAK-022",
+"unstable": []
+},
 "mireka-seascape-overseas-realty": {
 "captured": "2026-11-05",
 "first": "2026-11-05",
@@ -7712,9 +9809,135 @@
 ]
 ]
 },
+"mocca-rezidence-prague": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "c868e88a3e3cf43e",
+"id": "PRA-001",
+"unstable": [
+[
+114,
+116
+],
+[
+120,
+121
+],
+[
+167,
+172
+],
+[
+176,
+178
+],
+[
+234,
+237
+],
+[
+241,
+244
+],
+[
+248,
+251
+],
+[
+255,
+306
+],
+[
+310,
+313
+],
+[
+317,
+320
+],
+[
+338,
+369
+],
+[
+377,
+386
+],
+[
+391,
+438
+],
+[
+451,
+464
+],
+[
+476,
+524
+],
+[
+534,
+625
+],
+[
+629,
+631
+],
+[
+637,
+647
+],
+[
+657,
+660
+],
+[
+664,
+672
+],
+[
+681,
+682
+],
+[
+688,
+691
+],
+[
+695,
+698
+],
+[
+957,
+1010
+],
+[
+1100,
+1151
+],
+[
+1155,
+1338
+],
+[
+1342,
+1393
+],
+[
+1400,
+1750
+]
+]
+},
 "molum-hotel-residences-dalmatia": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "dc7686470779cd54",
 "id": "HRV-001",
-"last_error": "2026-11-05"
+"last_error": "2026-11-05",
+"unstable": []
 },
 "moncello-crest-dmci-homes": {
 "captured": "2026-11-05",
@@ -7731,7 +9954,7 @@
 },
 "mondomio-okinawa-onna-fuchaku-daiwa-house": {
 "id": "OKA-002",
-"last_error": "2026-11-05"
+"last_error": "2026-11-06"
 },
 "mondrian-residences-cancun-murano": {
 "captured": "2026-11-05",
@@ -8050,6 +10273,14 @@
 ]
 ]
 },
+"musket-ri-majad-tallinn": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 4329,
+"hash": "e763cee75a00f277",
+"id": "TAL-001",
+"unstable": []
+},
 "naftikos-residences-cybarco": {
 "captured": "2026-11-05",
 "first": "2026-11-05",
@@ -8224,8 +10455,13 @@
 "unstable": []
 },
 "nativa-tulum": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "a383352842e8fd9e",
 "id": "RMY-001",
-"last_error": "2026-11-05"
+"last_error": "2026-11-05",
+"unstable": []
 },
 "nautica-residences-cancun-nauma": {
 "captured": "2026-11-05",
@@ -8698,6 +10934,27 @@
 ]
 ]
 },
+"nordale-phase-1-riga": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 3370,
+"hash": "a00027bb1c6e516c",
+"id": "RIG-003",
+"unstable": [
+[
+174,
+175
+]
+]
+},
+"nova-city-residence-budapest": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "6b9e2985fd47a357",
+"id": "BUD-002",
+"unstable": []
+},
 "nuba-el-gouna-orascom-development-egypt": {
 "captured": "2026-11-05",
 "first": "2026-11-05",
@@ -8990,6 +11247,14 @@
 "id": "CAB-011",
 "unstable": []
 },
+"oceanz-by-danube-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 900,
+"hash": "7629c1e26c478edf",
+"id": "DXB-112",
+"unstable": []
+},
 "octasun": {
 "captured": "2026-11-05",
 "first": "2026-11-05",
@@ -9184,7 +11449,48 @@
 },
 "one-lady-bird-lake-related-texas": {
 "id": "AUS-002",
-"last_error": "2026-11-05"
+"last_error": "2026-11-06"
+},
+"one-river-point-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 6101,
+"hash": "fad04aff364e1092",
+"id": "DXB-092",
+"unstable": [
+[
+15,
+32
+],
+[
+36,
+491
+],
+[
+505,
+514
+],
+[
+518,
+548
+],
+[
+552,
+965
+],
+[
+970,
+972
+],
+[
+976,
+983
+],
+[
+992,
+1082
+]
+]
 },
 "one-seputeh-residences-kl": {
 "captured": "2026-11-05",
@@ -9480,6 +11786,14 @@
 ]
 ]
 },
+"ornelas-legacy-madeira": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 3219,
+"hash": "500cc348db7a4c23",
+"id": "FNC-003",
+"unstable": []
+},
 "oxo-the-residences-nyanyi": {
 "captured": "2026-11-05",
 "first": "2026-11-05",
@@ -9495,6 +11809,43 @@
 "hash": "5a5b45ad5b7f1d37",
 "id": "MID-004",
 "unstable": []
+},
+"p-tersala-buildings-fera-amia-valensis-selonija-riga": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "c96d1002f41c112c",
+"id": "RIG-002",
+"unstable": [
+[
+333,
+461
+],
+[
+635,
+642
+],
+[
+651,
+654
+],
+[
+659,
+662
+],
+[
+669,
+670
+],
+[
+679,
+684
+],
+[
+699,
+707
+]
+]
 },
 "pafilia-plaza-pafilia": {
 "captured": "2026-11-05",
@@ -9532,6 +11883,19 @@
 "hash": "e3b0c44298fc1c14",
 "id": "CDS-019",
 "unstable": []
+},
+"papyrus-north-kiara-kuala-lumpur": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "b10d98bd87a35c82",
+"id": "KUA-002",
+"unstable": [
+[
+201,
+376
+]
+]
 },
 "paramount-signature-nha-trang-vega-city-kdi": {
 "captured": "2026-11-05",
@@ -9672,6 +12036,23 @@
 "id": "PAN-002",
 "unstable": []
 },
+"pavilion-damansara-heights-phase-2-imperial-residences-and-r": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "2efe5e061bd8b484",
+"id": "KUA-003",
+"unstable": [
+[
+450,
+556
+],
+[
+589,
+696
+]
+]
+},
 "pavilion-square-kuala-lumpur-armani-hartajaya": {
 "captured": "2026-11-05",
 "first": "2026-11-05",
@@ -9782,8 +12163,13 @@
 "unstable": []
 },
 "pendry-residences-barbados-port-ferdinand": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 4186,
+"hash": "cb8e1acad9cc926d",
 "id": "BGI-002",
-"last_error": "2026-11-05"
+"last_error": "2026-11-05",
+"unstable": []
 },
 "pendry-residences-mexico-city-grupo-tgt-grupo-mrp-and-central-de-arqui": {
 "captured": "2026-11-05",
@@ -9856,6 +12242,19 @@
 ]
 ]
 },
+"piramal-revanta-rayansh-tower-mumbai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "1511e1419ed80c2d",
+"id": "MUM-004",
+"unstable": [
+[
+16,
+192
+]
+]
+},
 "piyalepasa-istanbul-premium-polat": {
 "captured": "2026-11-05",
 "first": "2026-11-05",
@@ -9876,6 +12275,119 @@
 "hash": "6cf4a0a565f2328a",
 "id": "HRV-004",
 "unstable": []
+},
+"porters-palms-barbados": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "56272b3f4e520efc",
+"id": "BGI-004",
+"unstable": []
+},
+"portside-square-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 7077,
+"hash": "17356b3638ad0118",
+"id": "DXB-107",
+"unstable": [
+[
+503,
+504
+],
+[
+516,
+521
+],
+[
+532,
+538
+],
+[
+547,
+555
+],
+[
+577,
+679
+],
+[
+703,
+708
+],
+[
+715,
+721
+],
+[
+726,
+732
+],
+[
+737,
+742
+],
+[
+747,
+753
+],
+[
+758,
+764
+],
+[
+769,
+775
+],
+[
+797,
+871
+],
+[
+875,
+997
+],
+[
+1002,
+1003
+],
+[
+1007,
+1013
+],
+[
+1017,
+1018
+],
+[
+1046,
+1047
+],
+[
+1069,
+1146
+],
+[
+1151,
+1153
+],
+[
+1177,
+1178
+],
+[
+1190,
+1197
+],
+[
+1206,
+1270
+],
+[
+1295,
+1298
+]
+]
 },
 "prata-riverside-village-lisbon": {
 "captured": "2026-11-05",
@@ -9982,9 +12494,27 @@
 "id": "BALI-018",
 "unstable": []
 },
+"proa-costa-del-sol": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 5923,
+"hash": "56269de43905b9ad",
+"id": "CDS-023",
+"unstable": []
+},
 "promenade-budva-minder": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 7092,
+"hash": "42f0f2612a1e950d",
 "id": "MNE-007",
-"last_error": "2026-11-05"
+"last_error": "2026-11-05",
+"unstable": [
+[
+1142,
+1197
+]
+]
 },
 "promenade-heights-ellinikon-lamda": {
 "captured": "2026-11-05",
@@ -10078,6 +12608,14 @@
 ]
 ]
 },
+"queens-district-bucharest": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 6995,
+"hash": "899e9d846c1b4463",
+"id": "BUC-001",
+"unstable": []
+},
 "quill-resort-okinawa-nskre": {
 "captured": "2026-11-05",
 "first": "2026-11-05",
@@ -10091,12 +12629,24 @@
 ]
 ]
 },
+"r-sidence-oceana-achakkar-tangier": {
+"id": "TAN-001",
+"last_error": "2026-11-06"
+},
 "raseljkina-pazdigrad-quatro-company": {
 "captured": "2026-11-05",
 "first": "2026-11-05",
 "h": 3235,
 "hash": "7ce68c95ef83a37f",
 "id": "HRV-005",
+"unstable": []
+},
+"raw-district-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 5190,
+"hash": "a7a64bae3db4b1cf",
+"id": "DXB-108",
 "unstable": []
 },
 "raya-jebel-sifah-muriya": {
@@ -10121,6 +12671,14 @@
 "h": 8000,
 "hash": "1832e2f45b059e73",
 "id": "LBA-002",
+"unstable": []
+},
+"reportage-heights-baku": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "9d8aa01dcd47c00f",
+"id": "BAK-002",
 "unstable": []
 },
 "reportage-hills-reportage": {
@@ -10318,6 +12876,14 @@
 ]
 ]
 },
+"rivage-bal-harbour-miami": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 7397,
+"hash": "36c317780d5a7b33",
+"id": "MIA-014",
+"unstable": []
+},
 "riverbank-residences-finbar": {
 "captured": "2026-11-05",
 "first": "2026-11-05",
@@ -10456,6 +13022,14 @@
 "id": "GOA-004",
 "unstable": []
 },
+"runwal-raaya-mumbai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "ffe2ca3cac8099e7",
+"id": "MUM-002",
+"unstable": []
+},
 "ryowha-hirafu-luxury-resort-villas": {
 "captured": "2026-11-05",
 "first": "2026-11-05",
@@ -10463,6 +13037,39 @@
 "hash": "edf3a3d7247c9371",
 "id": "JAP-002",
 "unstable": []
+},
+"sabah-towers-baku": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 6962,
+"hash": "9fa551db1329ec93",
+"id": "BAK-004",
+"unstable": [
+[
+329,
+463
+],
+[
+515,
+650
+],
+[
+963,
+1012
+],
+[
+1017,
+1021
+],
+[
+1026,
+1067
+],
+[
+1091,
+1093
+]
+]
 },
 "sadasi-almazara-playa": {
 "captured": "2026-11-05",
@@ -10827,6 +13434,26 @@
 ]
 ]
 },
+"samana-barari-twin-towers-dubai": {
+"id": "DXB-076",
+"last_error": "2026-11-06"
+},
+"samana-boulevard-heights-dubai": {
+"id": "DXB-077",
+"last_error": "2026-11-06"
+},
+"samana-downtown-one-dubai": {
+"id": "DXB-078",
+"last_error": "2026-11-06"
+},
+"samana-greenfield-dubai": {
+"id": "DXB-087",
+"last_error": "2026-11-06"
+},
+"samana-hills-south-dubai": {
+"id": "DXB-089",
+"last_error": "2026-11-06"
+},
 "samana-ocean-views-elie-saab-maldives": {
 "captured": "2026-11-05",
 "first": "2026-11-05",
@@ -10834,6 +13461,14 @@
 "hash": "3576baadd6aa1bed",
 "id": "MLE-001",
 "unstable": []
+},
+"samana-portside-dubai": {
+"id": "DXB-118",
+"last_error": "2026-11-06"
+},
+"samana-rome-dubai": {
+"id": "DXB-088",
+"last_error": "2026-11-06"
 },
 "samani-villa-pecatu-phase-2": {
 "captured": "2026-11-05",
@@ -11070,7 +13705,509 @@
 "hash": "9c9b14da94afbcb6",
 "id": "QAT-004",
 "unstable": []
+},
+"seaview-heights-cybarco": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 6603,
+"hash": "85b119a16269c22d",
+"id": "CYP-008",
+"unstable": []
+},
+"seef-residences-alef": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 900,
+"hash": "2a808d48c29532d1",
+"id": "SHJ-002",
+"unstable": [
+[
+0,
+15
+],
+[
+23,
+25
+],
+[
+31,
+59
+],
+[
+63,
+67
+],
+[
+72,
+75
+],
+[
+79,
+86
+],
+[
+105,
+116
+],
+[
+120,
+123
+],
+[
+129,
+140
+],
+[
+144,
+147
+],
+[
+153,
+178
+],
+[
+184,
+188
+],
+[
+194,
+197
+]
+]
+},
+"segara": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 7688,
+"hash": "a0a759ba633b6b05",
+"id": "BALI-020",
+"unstable": []
+},
+"selo-suites": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 900,
+"hash": "65a0697df1dc5cc1",
+"id": "LOM-004",
+"unstable": []
+},
+"selton-skye-accra": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 6449,
+"hash": "5027a9bf06144bb3",
+"id": "ACC-003",
+"unstable": []
+},
+"senfoni-etiler-emlak-konut-yigit-kubba-dbh": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 4806,
+"hash": "56b207e523e4a997",
+"id": "IST-009",
+"unstable": [
+[
+16,
+199
+]
+]
+},
+"senna-tower-fg-empreendimentos": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "726b4115184d0a78",
+"id": "BRA-002",
+"unstable": []
+},
+"seraphina-isles-villa-trawaya": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "ac8b06ddf9c55af0",
+"id": "GIL-001",
+"unstable": [
+[
+0,
+562
+],
+[
+572,
+762
+],
+[
+778,
+1750
+]
+]
+},
+"seren-house-pererenan": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 5636,
+"hash": "aedc6af7c757761b",
+"id": "BALI-052",
+"unstable": []
+},
+"serenity-estates-ubud": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "a07c749a87f446c7",
+"id": "BALI-041",
+"unstable": []
+},
+"serenity-village": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "8a0e65638b4f7d5e",
+"id": "BALI-021",
+"unstable": []
+},
+"serenity-villas-ubud": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "02f3faab9d41a149",
+"id": "BALI-047",
+"unstable": [
+[
+0,
+83
+],
+[
+92,
+93
+],
+[
+105,
+110
+],
+[
+116,
+123
+],
+[
+132,
+141
+],
+[
+147,
+149
+],
+[
+155,
+163
+],
+[
+169,
+191
+],
+[
+196,
+209
+],
+[
+218,
+267
+],
+[
+293,
+495
+],
+[
+501,
+511
+],
+[
+522,
+569
+],
+[
+578,
+596
+],
+[
+601,
+610
+],
+[
+615,
+618
+],
+[
+623,
+853
+],
+[
+857,
+1131
+],
+[
+1136,
+1167
+],
+[
+1180,
+1341
+],
+[
+1346,
+1526
+],
+[
+1532,
+1534
+],
+[
+1539,
+1738
+],
+[
+1744,
+1747
+]
+]
+},
+"serestar-javea-talvion": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 7894,
+"hash": "97ed282dc1c1b97f",
+"id": "CBL-005",
+"unstable": []
+},
+"serra-villas-phase-2-serra-villas": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 5560,
+"hash": "30182a667defc0bc",
+"id": "LOM-024",
+"unstable": [
+[
+6,
+10
+],
+[
+841,
+849
+],
+[
+1164,
+1167
+],
+[
+1171,
+1176
+],
+[
+1181,
+1216
+]
+]
+},
+"siena-la-manga-club-taylor-wimpey": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 7340,
+"hash": "08f0bceb7e03b7ea",
+"id": "ESP-008",
+"unstable": [
+[
+94,
+95
+],
+[
+124,
+130
+],
+[
+226,
+235
+],
+[
+242,
+256
+],
+[
+264,
+284
+],
+[
+292,
+311
+],
+[
+319,
+519
+],
+[
+534,
+587
+],
+[
+622,
+801
+],
+[
+805,
+817
+]
+]
+},
+"signature-zemun-belgrade": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "8ef5f87341110577",
+"id": "BEL-002",
+"unstable": []
+},
+"six-senses-residences-belize-crdg": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 7983,
+"hash": "5b16a4ae0b31d3a1",
+"id": "BZE-001",
+"unstable": []
+},
+"six-senses-residences-dubai-marina-dubai": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "8c32aa34f30a0750",
+"id": "DXB-086",
+"unstable": [
+[
+52,
+54
+],
+[
+59,
+63
+]
+]
+},
+"siyal-makadi-heights-orascom": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "b4c748597187f4ca",
+"id": "EGY-012",
+"unstable": []
+},
+"skai-ras-al-khaimah": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "105cccc3a2f012c8",
+"id": "RAK-020",
+"unstable": []
+},
+"sky-stars-ocean-view-phase-2-magnum-estate": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 4565,
+"hash": "bd497317742443fb",
+"id": "BALI-061",
+"unstable": [
+[
+263,
+344
+],
+[
+359,
+440
+],
+[
+494,
+556
+]
+]
+},
+"sky-tower-first-projects": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 900,
+"hash": "a921092438572940",
+"id": "KSA-003",
+"unstable": []
+},
+"skyhaus-colombo-crystal-property-group": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 7587,
+"hash": "f32c9c014d1db5bd",
+"id": "LKA-008",
+"unstable": [
+[
+2,
+177
+],
+[
+182,
+186
+],
+[
+193,
+199
+],
+[
+204,
+852
+],
+[
+857,
+858
+],
+[
+868,
+1038
+],
+[
+1045,
+1362
+],
+[
+1376,
+1395
+],
+[
+1418,
+1659
+]
+]
+},
+"skyline-havens-ellinikon-hellenic-estates": {
+"captured": "2026-11-06",
+"first": "2026-11-06",
+"h": 8000,
+"hash": "67de0b1868b28b5f",
+"id": "GRC-010",
+"unstable": [
+[
+103,
+129
+],
+[
+143,
+149
+],
+[
+153,
+156
+],
+[
+187,
+190
+],
+[
+196,
+256
+]
+]
 }
 },
-"updated": "2026-11-05"
+"updated": "2026-11-06"
 }
