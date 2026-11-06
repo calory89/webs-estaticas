@@ -216,6 +216,8 @@ export default {
     if (host === 'kolaboro.com' && req.method === 'GET' && /^\/m\/[^/.]{2,60}$/.test(u.pathname)) return new Response(null, { status: 301, headers: { location: u.pathname + '/' + u.search } });
     // kolaboro.com: sitemap index, llms.txt, country hubs and guides, rankings, comparisons, embeds, SEO dashboard (see kbx_seo.js)
     // kolaboro.com (b9a, batch 9): public named-facts API /api/v1/projects/<slug>, search index, Atom/JSON feeds, email watch (see kbx_follow.js)
+    // kolaboro.com (b10b, batch 10): DID document for did:web:kolaboro.com, the issuer of Kolaboro's W3C verifiable credentials (see kbx_acct.js)
+    if (host === 'kolaboro.com' && u.pathname === '/.well-known/did.json' && (req.method === 'GET' || req.method === 'HEAD')) { const ka = await import('./kbx_acct.js'); return ka.did(env); }
     if (host === 'kolaboro.com' && KFW.test(u.pathname)) { if (!kfw) kfw = await import('./kbx_follow.js'); const r = await kfw.handle(req, u, env, ctx); if (r) return r; }
     // kolaboro.com (b10c, batch 10): bulk register check page + API (kbx_bulk.js), 1200x630 share images per named project/developer (kbx_og.js)
     if (host === 'kolaboro.com' && KB10.test(u.pathname)) {
