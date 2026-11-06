@@ -20,7 +20,7 @@ import { watchBox, searchBox, feedLinks, W9JS, W9CSS } from './kbx_follow.js';  
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v8';
+const CACHE_V = 'named-v8b';   // v8b: new site.js version in the shell (b9a)
 export const OPINION_RX = /\b(scam\w*|fraud\w*|ponzi|swindl\w*|rip-?off|avoid\w*|beware|dodgy|shady|crook\w*|estafa\w*|fraude\w*|timo|timador\w*|betrug\w*|betrüg\w*|abzocke\w*|arnaque\w*|escroquer\w*|escroc\w*|oplichting|oplichter\w*|bedrog\w*)\b|мошен|обман|афер|骗局|诈骗|欺诈|احتيال|نصب/i;
 
 // ------------------------------------------------------------------------------------------------ data
