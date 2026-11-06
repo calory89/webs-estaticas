@@ -274,9 +274,9 @@ Site QA crawl (id: qa)
 
 Synthetic user journeys (id: journeys)
   URL: https://kolaboro.com/data/journeys.json
-  A scripted buyer journey run in a real browser every hour: pass or fail per step, timings and the latest screenshots (journeys/1.webp to 5.webp).
+  A scripted buyer journey run in a real browser every week: pass or fail per step, timings and the latest screenshots (journeys/1.webp to 5.webp).
   Size 90.3 KB; 9 runs; SHA-256 899a9c236aeb1e7e2c4eb45cc695d4abcd0533646687b66056a68b5cef9ed6ac; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: hourly at minute 41. Last updated: 2026-11-05T18:56:54.919Z. Freshness target 2 hours.
+  Updates: weekly, Thursday 04:41 UTC. Last updated: 2026-11-05T18:56:54.919Z. Freshness target 9 days.
   Schema: https://kolaboro.com/api/x/data/schema/journeys.json
 
 Independent verifier run (id: verifiers)
@@ -339,14 +339,14 @@ Shipping log (id: shipping)
   URL: https://kolaboro.com/data/shipping.json
   Ships (commits by people, or by Claude working for one) and data updates per UTC day from the git history of the live branch, streaks, engineering metrics and day summaries written by an AI model and checked in code.
   Size 99.0 KB; 12 days; SHA-256 f864c863e9f61ecd5ccd0dee24fa335fe009042c4fadc264109463177cf4be72; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: hourly at minute 19. Last updated: 2026-11-05T15:32:01Z. Freshness target 2 hours.
+  Updates: weekly, Friday 12:19 UTC. Last updated: 2026-11-05T15:32:01Z. Freshness target 9 days.
   Schema: https://kolaboro.com/api/x/data/schema/shipping.json
 
 Roadmap items verified live (id: roadmap-sync)
   URL: https://kolaboro.com/data/roadmap-sync.json
   Roadmap items that link to the live page delivering them. An item counts as shipped only when the page answers HTTP 200, its canonical link is that page and its HTML contains the marker text.
   Size 10.6 KB; 36 items; SHA-256 2e26d7540faf5b7d1ab435a9fdda5c7dd96b28ab45bfaf994b6fb57ae2effb12; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: hourly at minute 19 (shipping log job). Last updated: 2026-11-05T22:03:34Z. Freshness target 2 hours.
+  Updates: weekly, Friday 12:19 UTC (shipping log job). Last updated: 2026-11-05T22:03:34Z. Freshness target 9 days.
   Schema: https://kolaboro.com/api/x/data/schema/roadmap-sync.json
 
 ### Map tiles used by the checks
@@ -384,9 +384,9 @@ Sample photo progress analysis (id: progress-sample)
 
 findings-by-project.json (id: undescribed-findings-by-project-json)
   URL: https://kolaboro.com/data/findings-by-project.json
-  Not yet described in the catalog registry. The file describes itself as: Per project id: when the hourly check last read the developer page (fp = first 16 hex of the SHA-256 of the page text) and its findings, newest first. Same rules as /data/live-findings.json.
+  Per project id: when the daily page check last read the developer page (fp = first 16 hex of the SHA-256 of the page text) and its findings, newest first. Same rules as live-findings.json.
   Size 165.1 KB; not a table; SHA-256 f3731cbfa75acfacdf83682ba848caeec50178f72e70ec319cf3e829be24a5dd; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: unknown. Last updated: 2026-11-05T16:46:49Z.
+  Updates: daily, about 07:34 UTC (hourly until 6 Nov 2026). Last updated: 2026-11-05T16:46:49Z.
 
 indexnow.json (id: undescribed-indexnow-json)
   URL: https://kolaboro.com/data/indexnow.json
@@ -396,9 +396,9 @@ indexnow.json (id: undescribed-indexnow-json)
 
 live-findings.json (id: undescribed-live-findings-json)
   URL: https://kolaboro.com/data/live-findings.json
-  Not yet described in the catalog registry. The file describes itself as: Every hour a GitHub Actions job re-reads the developer pages of the tracked projects that were checked longest ago (round robin over all 1116 projects with a public id), asks claude-haiku-5-5 for concrete facts with an exact quote each, and publishes a finding only when a fact is new or changed compared with what we stored for that project.
+  Once a day our agent re-reads the developer pages of the tracked projects that were checked longest ago and publishes a finding only when a fact (handover date, price, permit number) is new or changed, with the SHA-256 of the exact quote, checked word for word in code. Anonymous: project id and market only. AI spend is capped at 0.25 USD a day for all runs together (until 6 Nov 2026 the job ran every hour on a larger budget).
   Size 132.9 KB; not a table; SHA-256 17872d5cfea18a0d08a17fc307d3a27fd4888254dfe4afdebda9cdbc155cc28e; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
-  Updates: unknown. Last updated: 2026-11-05T22:12:33Z.
+  Updates: daily, about 07:34 UTC (hourly until 6 Nov 2026). Last updated: 2026-11-05T22:12:33Z.
 
 lookup-coverage.json (id: undescribed-lookup-coverage-json)
   URL: https://kolaboro.com/data/lookup-coverage.json

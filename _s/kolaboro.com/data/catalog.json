@@ -1785,10 +1785,10 @@
   {
    "id": "journeys",
    "title": "Synthetic user journeys",
-   "description": "A scripted buyer journey run in a real browser every hour: pass or fail per step, timings and the latest screenshots (journeys/1.webp to 5.webp).",
+   "description": "A scripted buyer journey run in a real browser every week: pass or fail per step, timings and the latest screenshots (journeys/1.webp to 5.webp).",
    "kind": "operations",
    "workflow": "kolaboro-journeys.yml",
-   "schedule": "hourly at minute 41",
+   "schedule": "weekly, Thursday 04:41 UTC",
    "interval_hours": 1,
    "keywords": [
     "monitoring",
@@ -2175,7 +2175,7 @@
    "description": "Ships (commits by people, or by Claude working for one) and data updates per UTC day from the git history of the live branch, streaks, engineering metrics and day summaries written by an AI model and checked in code.",
    "kind": "operations",
    "workflow": "kolaboro-shipping.yml",
-   "schedule": "hourly at minute 19",
+   "schedule": "weekly, Friday 12:19 UTC",
    "interval_hours": 1,
    "keywords": [
     "changelog",
@@ -2214,7 +2214,7 @@
    "description": "Roadmap items that link to the live page delivering them. An item counts as shipped only when the page answers HTTP 200, its canonical link is that page and its HTML contains the marker text.",
    "kind": "operations",
    "workflow": "kolaboro-shipping.yml",
-   "schedule": "hourly at minute 19 (shipping log job)",
+   "schedule": "weekly, Friday 12:19 UTC (shipping log job)",
    "interval_hours": 1,
    "keywords": [
     "roadmap"
@@ -2289,7 +2289,7 @@
   {
    "id": "undescribed-findings-by-project-json",
    "title": "findings-by-project.json",
-   "description": "Not yet described in the catalog registry. The file describes itself as: Per project id: when the hourly check last read the developer page (fp = first 16 hex of the SHA-256 of the page text) and its findings, newest first. Same rules as /data/live-findings.json.",
+   "description": "Per project id: when the daily page check last read the developer page (fp = first 16 hex of the SHA-256 of the page text) and its findings, newest first. Same rules as live-findings.json.",
    "kind": "undescribed",
    "workflow": null,
    "schedule": "unknown",
@@ -2360,7 +2360,7 @@
   {
    "id": "undescribed-live-findings-json",
    "title": "live-findings.json",
-   "description": "Not yet described in the catalog registry. The file describes itself as: Every hour a GitHub Actions job re-reads the developer pages of the tracked projects that were checked longest ago (round robin over all 1116 projects with a public id), asks claude-haiku-5-5 for concrete facts with an exact quote each, and publishes a finding only when a fact is new or changed compared with what we stored for that project.",
+   "description": "Once a day our agent re-reads the developer pages of the tracked projects that were checked longest ago and publishes a finding only when a fact (handover date, price, permit number) is new or changed, with the SHA-256 of the exact quote, checked word for word in code. Anonymous: project id and market only. AI spend is capped at 0.25 USD a day for all runs together (until 6 Nov 2026 the job ran every hour on a larger budget).",
    "kind": "undescribed",
    "workflow": null,
    "schedule": "unknown",

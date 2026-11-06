@@ -2543,7 +2543,7 @@
    "@type": "dcat:Dataset",
    "dct:identifier": "journeys",
    "dct:title": "Synthetic user journeys",
-   "dct:description": "A scripted buyer journey run in a real browser every hour: pass or fail per step, timings and the latest screenshots (journeys/1.webp to 5.webp).",
+   "dct:description": "A scripted buyer journey run in a real browser every week: pass or fail per step, timings and the latest screenshots (journeys/1.webp to 5.webp).",
    "dcat:keyword": [
     "monitoring",
     "synthetic"
@@ -3245,7 +3245,7 @@
    "@type": "dcat:Dataset",
    "dct:identifier": "undescribed-findings-by-project-json",
    "dct:title": "findings-by-project.json",
-   "dct:description": "Not yet described in the catalog registry. The file describes itself as: Per project id: when the hourly check last read the developer page (fp = first 16 hex of the SHA-256 of the page text) and its findings, newest first. Same rules as /data/live-findings.json.",
+   "dct:description": "Per project id: when the daily page check last read the developer page (fp = first 16 hex of the SHA-256 of the page text) and its findings, newest first. Same rules as live-findings.json.",
    "dcat:keyword": [],
    "dct:publisher": {
     "@id": "https://kolaboro.com/#org"
@@ -3355,7 +3355,7 @@
    "@type": "dcat:Dataset",
    "dct:identifier": "undescribed-live-findings-json",
    "dct:title": "live-findings.json",
-   "dct:description": "Not yet described in the catalog registry. The file describes itself as: Every hour a GitHub Actions job re-reads the developer pages of the tracked projects that were checked longest ago (round robin over all 1116 projects with a public id), asks claude-haiku-5-5 for concrete facts with an exact quote each, and publishes a finding only when a fact is new or changed compared with what we stored for that project.",
+   "dct:description": "Once a day our agent re-reads the developer pages of the tracked projects that were checked longest ago and publishes a finding only when a fact (handover date, price, permit number) is new or changed, with the SHA-256 of the exact quote, checked word for word in code. Anonymous: project id and market only. AI spend is capped at 0.25 USD a day for all runs together (until 6 Nov 2026 the job ran every hour on a larger budget).",
    "dcat:keyword": [],
    "dct:publisher": {
     "@id": "https://kolaboro.com/#org"
