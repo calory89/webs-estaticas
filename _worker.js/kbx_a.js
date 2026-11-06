@@ -129,7 +129,7 @@ function live(env, ctx) {
 // ---------- compact search index for the command palette (all tracked projects and markets)
 const slugM = m => encodeURIComponent(m.toLowerCase().replace(/\s+/g, '-'));
 async function searchIndex(req, env, ctx) {
-  const L = await openLoad(), v = L.sha.slice(0, 16), etag = '"sx-' + v + '"';
+  const L = await openLoad(), v = L.sha.slice(0, 16), etag = '"sx2-' + v + '"';
   if ((req.headers.get('if-none-match') || '').indexOf(etag) >= 0) return new Response(null, { status: 304, headers: Object.assign({ etag, 'cache-control': 'public, max-age=600' }, H) });
   const cache = caches.default, key = new Request(CK + 'index-r2-' + v);
   try { const hit = await cache.match(key); if (hit) return jres(await hit.text(), hit.headers.get('x-sig'), env, 600, { etag, 'x-kolaboro-dataset-sha256': L.sha }); } catch (e) {}
