@@ -310,7 +310,7 @@
     // batch 10 (b10a): in-browser tamper check of a PDF permit as soon as it is chosen (nothing uploaded by this check)
     f.f.addEventListener('change', function(){ var file = f.f.files[0], o = $('c7-pdfx'); if (!o) return; if (!file || !/pdf$/i.test(file.type)) { o.innerHTML = ''; return; }
       var go = function(){ window.KBPDF.check(file, o); };
-      if (window.KBPDF) go(); else { var sc = document.createElement('script'); sc.src = '/tools/pdf-check/inline.js?v=b10a1'; sc.onload = go; document.head.appendChild(sc); } });
+      if (window.KBPDF) go(); else { var sc = document.createElement('script'); sc.src = '/tools/pdf-check/inline.js?v=kpdf1'; sc.onload = go; document.head.appendChild(sc); } });
     f.onsubmit = function(e){ e.preventDefault(); var file = f.f.files[0], er = $('c7-upe'), out = $('c7-upo'); er.textContent = '';
       if (!file) { er.textContent = 'Choose the permit file first.'; f.f.focus(); return; }
       if (!/^(application\/pdf|image\/(jpeg|png|webp))$/.test(file.type)) { er.textContent = 'Use a PDF, JPG, PNG or WebP file.'; return; }

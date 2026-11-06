@@ -12,13 +12,13 @@
   function css() {
     if (document.getElementById('kbpdf-css')) return;
     var s = document.createElement('style'); s.id = 'kbpdf-css';
-    s.textContent = '.kbp{display:grid;gap:8px;margin-top:10px}.kbp-f{border:1px solid var(--line,#D8D6CE);border-left-width:4px;border-radius:10px;padding:10px 12px;background:var(--card,#fff);font-size:.93rem}' +
-      '.kbp-f.look{border-left-color:#B42318}.kbp-f.note{border-left-color:#B7791F}.kbp-f.ok{border-left-color:#0B7A55}.kbp-f.info{border-left-color:var(--line,#D8D6CE)}' +
-      '.kbp-f b{display:block;margin-bottom:2px}.kbp-f p{margin:4px 0 0;color:var(--ink-2,#333)}.kbp-t{font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;margin-right:6px}' +
-      '.kbp-f.look .kbp-t{color:#B42318}.kbp-f.note .kbp-t{color:#8a5300}.kbp-f.ok .kbp-t{color:#0B7A55}.kbp-f.info .kbp-t{color:var(--muted,#666)}' +
-      '.kbp-mx{border-radius:4px;padding:0 2px}.kbp-mx.hot{background:#FFE7DB;color:#7a1d00;outline:1px solid #F7B697}.kbp-m{font-size:.85rem;color:var(--muted,#666);margin:6px 0 0}' +
-      '.kbp-box input[type=file]{min-height:44px;font:inherit;max-width:100%}.kbp-box label{font-weight:700;display:block;margin-bottom:6px}' +
-      '.kbp-head{font-weight:800;margin:4px 0 0}.kbp ul{margin:4px 0 0 18px;padding:0}.kbp li{margin:2px 0;overflow-wrap:anywhere}';
+    s.textContent = '.kpdf{display:grid;gap:8px;margin-top:10px}.kpdf-f{border:1px solid var(--line,#D8D6CE);border-left-width:4px;border-radius:10px;padding:10px 12px;background:var(--card,#fff);font-size:.93rem}' +
+      '.kpdf-f.look{border-left-color:#B42318}.kpdf-f.note{border-left-color:#B7791F}.kpdf-f.ok{border-left-color:#0B7A55}.kpdf-f.info{border-left-color:var(--line,#D8D6CE)}' +
+      '.kpdf-f b{display:block;margin-bottom:2px}.kpdf-f p{margin:4px 0 0;color:var(--ink-2,#333)}.kpdf-t{font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:.05em;margin-right:6px}' +
+      '.kpdf-f.look .kpdf-t{color:#B42318}.kpdf-f.note .kpdf-t{color:#8a5300}.kpdf-f.ok .kpdf-t{color:#0B7A55}.kpdf-f.info .kpdf-t{color:var(--muted,#666)}' +
+      '.kpdf-mx{border-radius:4px;padding:0 2px}.kpdf-mx.hot{background:#FFE7DB;color:#7a1d00;outline:1px solid #F7B697}.kpdf-m{font-size:.85rem;color:var(--muted,#666);margin:6px 0 0}' +
+      '.kpdf-box input[type=file]{min-height:44px;font:inherit;max-width:100%}.kpdf-box label{font-weight:700;display:block;margin-bottom:6px}' +
+      '.kpdf-head{font-weight:800;margin:4px 0 0}.kpdf ul{margin:4px 0 0 18px;padding:0}.kpdf li{margin:2px 0;overflow-wrap:anywhere}';
     document.head.appendChild(s);
   }
   function engine() {
@@ -35,7 +35,7 @@
     if (LG === 'ru') { var a = n % 10, b = n % 100; i = a === 1 && b !== 11 ? 0 : a >= 2 && a <= 4 && (b < 12 || b > 14) ? 1 : 2; } else i = n === 1 ? 0 : 1;
     return n + ' ' + (F[Math.min(i, F.length - 1)]); }
   function f(level, title, body) {
-    return '<div class="kbp-f ' + level + '"><b><span class="kbp-t">' + esc(t('tag_' + level)) + '</span>' + esc(title) + '</b>' + (body || '') + '</div>';
+    return '<div class="kpdf-f ' + level + '"><b><span class="kpdf-t">' + esc(t('tag_' + level)) + '</span>' + esc(title) + '</b>' + (body || '') + '</div>';
   }
   function P(k, v) { return '<p>' + esc(t(k, v)) + '</p>'; }
   function findings(rep) {
@@ -74,7 +74,7 @@
     // fonts mixed inside one line
     var ml = rep.mixedLines || [], mr = ml.filter(function (l) { return l.rare && l.rare.length; });
     if (mr.length) F.push([1, f('look', t('mix', { k: pl(mr.length, 'line') }), '<ul>' + mr.slice(0, 5).map(function (l) {
-      var tx = l.parts && l.parts.every(function (x) { return x.text != null; }) ? l.parts.map(function (x) { return '<span class="kbp-mx' + (l.rare.indexOf(x.fam) >= 0 ? ' hot' : '') + '" title="' + esc(x.fam) + '">' + esc(x.text) + '</span>'; }).join('') : '<i>' + esc(t('unread')) + '</i>';
+      var tx = l.parts && l.parts.every(function (x) { return x.text != null; }) ? l.parts.map(function (x) { return '<span class="kpdf-mx' + (l.rare.indexOf(x.fam) >= 0 ? ' hot' : '') + '" title="' + esc(x.fam) + '">' + esc(x.text) + '</span>'; }).join('') : '<i>' + esc(t('unread')) + '</i>';
       return '<li>' + esc(t('page_n', { p: l.page })) + ': ' + tx + ' (' + l.fams.map(esc).join(' + ') + ')</li>'; }).join('') + '</ul>' + P('mix_p'))]);
     else if (ml.length) F.push([5, f('info', t('two', { k: pl(rep.mixedLinesTotal || ml.length, 'line') }), P('two_p'))]);
     else if (rep.lineScan && rep.lineScan.lines) F.push([5, f('ok', t('nomix'), P('nomix_p', { k: pl(rep.lineScan.lines, 'pline') }))]);
@@ -91,21 +91,21 @@
     css();
     if (!file) { el.innerHTML = ''; return Promise.resolve(null); }
     if (!/pdf$/i.test(file.type) && !/\.pdf$/i.test(file.name || '')) { el.innerHTML = ''; return Promise.resolve(null); }
-    el.innerHTML = '<p class="kbp-m" aria-live="polite">' + esc(t('busy')) + '</p>';
+    el.innerHTML = '<p class="kpdf-m" aria-live="polite">' + esc(t('busy')) + '</p>';
     return Promise.all([engine(), file.arrayBuffer()]).then(function (x) { return x[0].analyze(new Uint8Array(x[1])); }).then(function (rep) {
-      if (rep.notPdf) { el.innerHTML = '<div class="kbp">' + f('look', t('notpdf'), P('notpdf_p')) + '</div>'; return rep; }
+      if (rep.notPdf) { el.innerHTML = '<div class="kpdf">' + f('look', t('notpdf'), P('notpdf_p')) + '</div>'; return rep; }
       var n = (rep.revisions || []).length;
-      el.innerHTML = '<p class="kbp-head">' + esc(t('head', { f: file.name || 'PDF', p: pl(rep.pages || 0, 'page'), s: pl(n, 'save') })) + '</p><div class="kbp">' + findings(rep) + '</div>' +
-        '<p class="kbp-m">' + esc(t('done')) + ' <a href="/tools/pdf-check/">' + esc(t('full')) + '</a>.</p>';
+      el.innerHTML = '<p class="kpdf-head">' + esc(t('head', { f: file.name || 'PDF', p: pl(rep.pages || 0, 'page'), s: pl(n, 'save') })) + '</p><div class="kpdf">' + findings(rep) + '</div>' +
+        '<p class="kpdf-m">' + esc(t('done')) + ' <a href="/tools/pdf-check/">' + esc(t('full')) + '</a>.</p>';
       return rep;
-    }).catch(function () { el.innerHTML = '<p class="kbp-m">' + esc(t('fail')) + ' <a href="/tools/pdf-check/">' + esc(t('fail_l')) + '</a>.</p>'; return null; });
+    }).catch(function () { el.innerHTML = '<p class="kpdf-m">' + esc(t('fail')) + ' <a href="/tools/pdf-check/">' + esc(t('fail_l')) + '</a>.</p>'; return null; });
   }
   function box(el) {
     css();
-    var id = 'kbp' + Math.random().toString(36).slice(2, 8);
-    el.classList.add('kbp-box');
-    el.innerHTML = '<label for="' + id + '">' + esc(t('pick')) + '</label><input type="file" id="' + id + '" accept="application/pdf,.pdf"><div class="kbp-o" aria-live="polite"></div>';
-    var inp = el.querySelector('input'), o = el.querySelector('.kbp-o');
+    var id = 'kpdf' + Math.random().toString(36).slice(2, 8);
+    el.classList.add('kpdf-box');
+    el.innerHTML = '<label for="' + id + '">' + esc(t('pick')) + '</label><input type="file" id="' + id + '" accept="application/pdf,.pdf"><div class="kpdf-o" aria-live="polite"></div>';
+    var inp = el.querySelector('input'), o = el.querySelector('.kpdf-o');
     inp.addEventListener('change', function () { check(inp.files[0], o); });
   }
   G.KBPDF = { check: check, box: box };
