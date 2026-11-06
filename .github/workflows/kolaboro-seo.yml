@@ -5,15 +5,8 @@ name: Kolaboro SEO
 #  - audit: daily and on demand, crawl every sitemap URL (GET and HEAD): status, canonical, hreflang reciprocity, JSON-LD validity,
 #    true lastmod of static pages. Result: kolaboro.com/data/seo-audit.json, shown on kolaboro.com/engineering/seo/.
 on:
-  workflow_run:
-    workflows: ['Kolaboro deploy guard']
-    types: [completed]
   schedule:
-    - cron: '41 */3 * * *'
-    - cron: '13 5 * * *'
-  push:
-    branches: [main]
-    paths: ['tools/kolaboro-seo/**', '.github/workflows/kolaboro-seo.yml']
+    - cron: '41 9 * * 2'
   workflow_dispatch:
     inputs:
       job:
@@ -21,6 +14,7 @@ on:
         type: choice
         options: [both, indexnow, audit]
         default: both
+
 permissions:
   contents: write
 concurrency:

@@ -4,13 +4,7 @@ name: Kolaboro discovery agent
 # Spends at least KB_DISCOVER_MIN_USD and at most KB_DISCOVER_MAX_USD per run, then triggers the research agent.
 on:
   schedule:
-    - cron: '41 3 * * *'
-    - cron: '17 9 * * *'
-    - cron: '29 15 * * *'
-    - cron: '53 21 * * *'
-  workflow_run:
-    workflows: ["Kolaboro monitor"]
-    types: [completed]
+    - cron: '41 3 */2 * *'
   workflow_dispatch:
     inputs:
       min_usd:
@@ -28,6 +22,7 @@ on:
       max_calls:
         description: "Maximum Claude calls this run"
         default: "40"
+
 permissions:
   contents: write
   actions: write

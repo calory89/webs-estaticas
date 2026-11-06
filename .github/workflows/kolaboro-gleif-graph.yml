@@ -5,11 +5,9 @@ name: Kolaboro global company graph (GLEIF)
 # private workflow artifact (this repository is private), never published.
 on:
   schedule:
-    - cron: '17 4 * * 2'
-  push:
-    branches: [main]
-    paths: ['tools/kolaboro-w/gleif_graph.py', 'tools/kolaboro-w/wcommon.py', '.github/workflows/kolaboro-gleif-graph.yml']
+    - cron: '17 4 4 * *'
   workflow_dispatch:
+
 permissions:
   contents: write
 concurrency:

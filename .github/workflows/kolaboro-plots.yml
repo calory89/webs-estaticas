@@ -2,11 +2,9 @@ name: Kolaboro plot watch
 # Daily: Sentinel-2 (or Sentinel-1 radar under clouds) comparison for every client plot on the map; result sealed into the case.
 on:
   schedule:
-    - cron: '23 6 * * *'
-  push:
-    branches: [main]
-    paths: ['tools/kolaboro-agent/plots.py']
+    - cron: '23 6 * * 6'
   workflow_dispatch:
+
 permissions:
   contents: read
 concurrency:

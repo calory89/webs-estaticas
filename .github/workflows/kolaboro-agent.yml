@@ -3,15 +3,13 @@ name: Kolaboro research agent
 # (internal, this private repo) and publishes aggregates only to kolaboro.com/data/bali-claims.json.
 on:
   schedule:
-    - cron: '17 6 * * 1'
-  push:
-    branches: [main]
-    paths: ['tools/kolaboro-agent/projects.json', 'tools/kolaboro-agent/projects-world.json', 'tools/kolaboro-agent/ships.json']
+    - cron: '17 6 1,15 * *'
   workflow_dispatch:
     inputs:
       max_calls:
         description: "Max Claude API calls this run"
         default: "160"
+
 permissions:
   contents: write
 concurrency:

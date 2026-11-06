@@ -5,13 +5,11 @@ name: Kolaboro land watch (night lights, stalled sites)
 # No paid imagery, no API keys.
 on:
   schedule:
-    - cron: '41 4 * * 3'
-  push:
-    branches: [main]
-    paths: ['tools/kolaboro-landwatch/night.py', 'tools/kolaboro-landwatch/stalled.py', '.github/workflows/kolaboro-landwatch.yml']
+    - cron: '41 4 12 * *'
   workflow_dispatch:
     inputs:
       only: { description: 'night, stalled or empty for both', required: false, default: '' }
+
 permissions:
   contents: write
 concurrency:

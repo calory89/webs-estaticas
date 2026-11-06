@@ -2,11 +2,9 @@ name: Kolaboro backup
 # Daily: database snapshot (30 kept) and every evidence file, by SHA-256, into this private repo.
 on:
   schedule:
-    - cron: '37 2 * * *'
-  push:
-    branches: [main]
-    paths: ['tools/kolaboro-agent/backup.py']
+    - cron: '37 2 * * 0'
   workflow_dispatch:
+
 permissions:
   contents: write
 concurrency:

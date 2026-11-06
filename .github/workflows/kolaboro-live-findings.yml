@@ -4,17 +4,13 @@ name: Kolaboro live findings
 # kolaboro.com/data/live-findings.json and /data/findings-by-project.json. Budget: 5 USD a day, spread over the runs (KB_LIVE_DAY_USD).
 on:
   schedule:
-    - cron: '34 * * * *'
-  # Backup clock (5 Nov 2026: GitHub fired no scheduled run in the repo for 5 hours): every finished deploy guard run also
-  # wakes this job, and the gate below skips it unless the last run started 55 minutes ago or more.
-  workflow_run:
-    workflows: ["Kolaboro deploy guard"]
-    types: [completed]
+    - cron: '34 7 * * *'
   workflow_dispatch:
     inputs:
       max_pages:
         description: "Max project pages this run"
         default: "500"
+
 permissions:
   contents: write
   actions: read

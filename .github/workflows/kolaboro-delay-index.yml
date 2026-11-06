@@ -4,19 +4,14 @@ name: Kolaboro delay index
 # the press release is regenerated on the first run of each month, on push and on manual dispatch. AI drafts one paragraph only.
 on:
   schedule:
-    - cron: '7 3 1 * *'     # monthly: first day of the month (snapshot and press release)
-    - cron: '37 16 * * *'   # daily refresh after the research agent's data lands
-  workflow_run:
-    workflows: ['Kolaboro research agent', 'Kolaboro price index']
-    types: [completed]
-  push:
-    branches: [main]
-    paths: ['tools/kolaboro-v/**', '.github/workflows/kolaboro-delay-index.yml']
+    - cron: '7 3 1 * *'
+    - cron: '37 16 * * 4'
   workflow_dispatch:
     inputs:
       press:
         description: "Regenerate this month's press release (yes/no)"
         default: "no"
+
 permissions:
   contents: write
 concurrency:

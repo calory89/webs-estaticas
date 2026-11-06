@@ -6,11 +6,9 @@ name: Kolaboro site manifest
 # manifest's own deploy does not trigger another manifest.
 on:
   schedule:
-    - cron: '23,53 * * * *'
-  push:
-    branches: [main]
-    paths: ['tools/kolaboro-manifest/**', '.github/workflows/kolaboro-manifest.yml']
+    - cron: '23 4 * * 1'
   workflow_dispatch:
+
 permissions:
   contents: write
 concurrency:

@@ -9,6 +9,7 @@ on:
         description: 'haiku or sonnet'
         required: true
         default: haiku
+
 permissions:
   contents: write
   id-token: write

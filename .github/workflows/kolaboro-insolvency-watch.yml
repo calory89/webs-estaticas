@@ -6,15 +6,13 @@ name: Kolaboro insolvency watch
 # The human-readable reason for each hit, with the company name, is kept as a private workflow artifact.
 on:
   schedule:
-    - cron: '23 7 * * *'
-  push:
-    branches: [main]
-    paths: ['tools/kolaboro-w/insolvency_watch.py', '.github/workflows/kolaboro-insolvency-watch.yml']
+    - cron: '23 7 5 * *'
   workflow_dispatch:
     inputs:
       backfill_days:
         description: 'BORME days to (re)scan when missing from the index'
         default: '180'
+
 permissions:
   contents: write
 concurrency:

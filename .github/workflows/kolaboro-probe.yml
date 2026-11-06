@@ -3,11 +3,9 @@ name: Kolaboro outside probe
 # Results go to the worker with GitHub's OIDC token as proof of origin (no stored secret); they appear on kolaboro.com/status.
 on:
   schedule:
-    - cron: '13 * * * *'
-  push:
-    branches: [main]
-    paths: ['.github/workflows/kolaboro-probe.yml']
+    - cron: '13 8 * * *'
   workflow_dispatch:
+
 permissions:
   contents: read
   id-token: write

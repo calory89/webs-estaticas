@@ -4,11 +4,9 @@ name: Kolaboro visual diff
 # Screenshots stay private: rolling baselines in the Actions cache, before/after/diff images as a 90-day artifact.
 on:
   schedule:
-    - cron: '23 15 * * *'
-  push:
-    branches: [main]
-    paths: ['tools/kolaboro-agent/visual_diff.py', '.github/workflows/kolaboro-visual.yml']
+    - cron: '23 15 6 * *'
   workflow_dispatch:
+
 permissions:
   contents: write
 concurrency:

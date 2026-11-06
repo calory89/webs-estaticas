@@ -3,8 +3,9 @@ name: Kolaboro QA
 # A failed run means something on the live site needs fixing (GitHub emails the repo owner).
 on:
   schedule:
-    - cron: '23 5 * * *'
+    - cron: '23 5 10 * *'
   workflow_dispatch:
+
 permissions:
   contents: write
 jobs:

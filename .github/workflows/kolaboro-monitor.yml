@@ -2,11 +2,9 @@ name: Kolaboro monitor
 # Every two hours: pages, API and database; emails hello@kolaboro.com on failure.
 on:
   schedule:
-    - cron: '7 */2 * * *'
-  push:
-    branches: [main]
-    paths: ['tools/kolaboro-agent/monitor.py']
+    - cron: '7 5 * * *'
   workflow_dispatch:
+
 permissions:
   contents: read
 jobs:

@@ -8,13 +8,7 @@ name: Kolaboro follow-up (promises and search alerts)
 #    plain-language alert against the public data and sends at most one digest email per address per day.
 on:
   schedule:
-    - cron: '23 11 * * *'
-  workflow_run:
-    workflows: ['Kolaboro research agent']
-    types: [completed]
-  push:
-    branches: [main]
-    paths: ['tools/kolaboro-agent/promises.py', '.github/workflows/kolaboro-followup.yml']
+    - cron: '23 11 * * 3'
   workflow_dispatch:
     inputs:
       run_usd:
@@ -23,6 +17,7 @@ on:
       skip_alerts:
         description: "Skip the alerts job (1 = skip)"
         default: "0"
+
 permissions:
   contents: write
   id-token: write

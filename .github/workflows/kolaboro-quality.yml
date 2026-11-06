@@ -10,11 +10,9 @@ name: Kolaboro quality
 # A page-weight budget breach marks the run failed after publishing. It never blocks or reverts a deploy.
 on:
   schedule:
-    - cron: '41 6 * * *'
-  push:
-    branches: [main]
-    paths: ['tools/kolaboro-quality/**', '.github/workflows/kolaboro-quality.yml']
+    - cron: '41 6 * * 5'
   workflow_dispatch:
+
 permissions:
   contents: write
 concurrency:

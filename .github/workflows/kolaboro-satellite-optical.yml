@@ -4,14 +4,12 @@ name: Kolaboro satellite optical progress
 # Publishes kolaboro.com/data/satellite-optical.json and kolaboro.com/k/sat/<site>/opt/*.
 on:
   schedule:
-    - cron: '17 9 * * 2'
-  push:
-    branches: [main]
-    paths: ['tools/kolaboro-agent/satellite_optical.py']
+    - cron: '17 9 11 * *'
   workflow_dispatch:
     inputs:
       sites: { description: 'comma separated site ids (empty = all)', required: false, default: '' }
       full: { description: 'recompute every month (ignore the published file)', required: false, default: 'false' }
+
 permissions:
   contents: write
 concurrency:

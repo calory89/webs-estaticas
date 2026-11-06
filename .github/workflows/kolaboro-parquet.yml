@@ -4,14 +4,9 @@ name: Kolaboro Parquet export
 # Only fields of the public JSON go in. The site worker signs the manifest after re-hashing the files (/api/x/e/parquet-manifest).
 on:
   schedule:
-    - cron: '43 7 * * *'
-  workflow_run:
-    workflows: ['Kolaboro research agent']
-    types: [completed]
-  push:
-    branches: [main]
-    paths: ['tools/kolaboro-agent/parquet_export.py', '.github/workflows/kolaboro-parquet.yml']
+    - cron: '43 7 * * 4'
   workflow_dispatch:
+
 permissions:
   contents: write
 concurrency:

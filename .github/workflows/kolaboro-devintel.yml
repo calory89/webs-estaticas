@@ -4,14 +4,9 @@ name: Kolaboro developer intelligence
 # Domains stay private: the lookup cache lives only in the Actions cache, the public files carry derived dates only.
 on:
   schedule:
-    - cron: '43 9 * * *'
-  workflow_run:
-    workflows: ['Kolaboro research agent']
-    types: [completed]
-  push:
-    branches: [main]
-    paths: ['tools/kolaboro-agent/dev_intel.py', '.github/workflows/kolaboro-devintel.yml']
+    - cron: '43 9 16 * *'
   workflow_dispatch:
+
 permissions:
   contents: write
 concurrency:

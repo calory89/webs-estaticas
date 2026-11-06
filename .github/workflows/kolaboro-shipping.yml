@@ -7,11 +7,9 @@ name: Kolaboro shipping log
 # Code: tools/kolaboro-ship/ship.py
 on:
   schedule:
-    - cron: '19 * * * *'
-  push:
-    branches: [main]
-    paths: ['tools/kolaboro-ship/**', '.github/workflows/kolaboro-shipping.yml']
+    - cron: '19 12 * * 5'
   workflow_dispatch:
+
 permissions:
   contents: write
   actions: read

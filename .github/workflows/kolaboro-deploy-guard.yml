@@ -4,11 +4,8 @@ name: Kolaboro deploy guard
 # Logic: kolaboro.com/open/deploy-guard.py (read from pub/_lovable at run time). The same file lives on main (schedule, manual drill)
 # and on pub/_lovable (push trigger). Pushes made by other workflows do not trigger push runs, so the schedule catches those.
 on:
-  push:
-    branches: ['pub/_lovable']
-    paths: ['_worker.js/**', '_s/kolaboro.com/**', '!_s/kolaboro.com/data/**']
   schedule:
-    - cron: '7,37 * * * *'
+    - cron: '37 6 * * *'
   workflow_dispatch:
     inputs:
       mode:
@@ -16,6 +13,7 @@ on:
         type: choice
         options: [drill, check]
         default: drill
+
 permissions:
   contents: write
 concurrency:

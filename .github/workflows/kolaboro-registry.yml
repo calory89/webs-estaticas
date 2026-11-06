@@ -3,8 +3,9 @@ name: Kolaboro registry watch
 # save the results on main, then rebuild the public data so each anonymous case shows the latest register status.
 on:
   schedule:
-    - cron: '17 6 * * 2'
+    - cron: '17 6 20 * *'
   workflow_dispatch:
+
 permissions:
   contents: write
   actions: write

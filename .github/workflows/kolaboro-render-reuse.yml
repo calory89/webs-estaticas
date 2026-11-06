@@ -3,11 +3,9 @@ name: Kolaboro render reuse
 # plus kdh1 perceptual hashes of every kept image (kolaboro.com/data/image-hashes.json) for the in-browser check at /tools/image-check/.
 on:
   schedule:
-    - cron: '37 6 * * 0'
-  push:
-    branches: [main]
-    paths: ['tools/kolaboro-agent/render_reuse.py', 'tools/kolaboro-agent/kdhash.py', '.github/workflows/kolaboro-render-reuse.yml']
+    - cron: '37 6 7 * *'
   workflow_dispatch:
+
 permissions:
   contents: write
 concurrency:

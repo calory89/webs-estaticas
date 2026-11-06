@@ -5,11 +5,9 @@ name: Kolaboro Lighthouse
 # published file. It never reverts anything: the deploy guard handles broken deploys, this only reports.
 on:
   schedule:
-    - cron: '23 4 * * *'
-  push:
-    branches: [main]
-    paths: ['tools/kolaboro-lighthouse/**', '.github/workflows/kolaboro-lighthouse.yml']
+    - cron: '23 4 17 * *'
   workflow_dispatch:
+
 permissions:
   contents: write
 concurrency:

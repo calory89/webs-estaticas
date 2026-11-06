@@ -2,11 +2,9 @@ name: Kolaboro render index
 # Weekly: perceptual hashes of every image on the tracked project websites, published to kolaboro.com/data/image-index.json.
 on:
   schedule:
-    - cron: '51 4 * * 0'
-  push:
-    branches: [main]
-    paths: ['tools/kolaboro-agent/image_index.py']
+    - cron: '51 4 14 * *'
   workflow_dispatch:
+
 permissions:
   contents: write
 concurrency:

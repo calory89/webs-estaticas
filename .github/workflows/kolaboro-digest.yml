@@ -4,7 +4,7 @@ name: Kolaboro weekly digest
 # claude-sonnet-5-5 may draft the intro paragraph only; code checks every number in it against the counts, else a template is used.
 on:
   schedule:
-    - cron: '23 6 * * 1'     # every Monday: the week just ended
+    - cron: '23 6 * * 1'
   workflow_dispatch:
     inputs:
       no_ai:
@@ -13,6 +13,7 @@ on:
       rebuild:
         description: "Rebuild finished weeks too (yes/no)"
         default: "no"
+
 permissions:
   contents: write
 concurrency:

@@ -4,11 +4,9 @@ name: Kolaboro user journeys
 # (last 48 runs) and /data/journeys/<step>.webp; they are shown on kolaboro.com/status.
 on:
   schedule:
-    - cron: '41 * * * *'
-  push:
-    branches: [main]
-    paths: ['tools/kolaboro-reliability/journeys.js', '.github/workflows/kolaboro-journeys.yml']
+    - cron: '41 4 * * 4'
   workflow_dispatch:
+
 permissions:
   contents: write
 concurrency:

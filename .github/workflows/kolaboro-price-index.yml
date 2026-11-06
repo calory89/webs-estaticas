@@ -3,14 +3,9 @@ name: Kolaboro price index
 # (tools/kolaboro-agent/data/runs), published to kolaboro.com/data/price-index.json. Aggregates only, no project ids or amounts.
 on:
   schedule:
-    - cron: '41 14 * * *'
-  workflow_run:
-    workflows: ['Kolaboro research agent']
-    types: [completed]
-  push:
-    branches: [main]
-    paths: ['tools/kolaboro-agent/price_index.py', '.github/workflows/kolaboro-price-index.yml']
+    - cron: '41 14 * * 3'
   workflow_dispatch:
+
 permissions:
   contents: write
 concurrency:

@@ -4,11 +4,9 @@ name: Kolaboro market truth
 # and register-checks.json. Research records (names, URLs, company numbers) are read here and never published.
 on:
   schedule:
-    - cron: '17 4 * * 1'
-  push:
-    branches: [main]
-    paths: ['tools/kolaboro-h/**', '.github/workflows/kolaboro-market-truth.yml']
+    - cron: '17 4 13 * *'
   workflow_dispatch:
+
 permissions:
   contents: write
 concurrency:

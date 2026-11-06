@@ -6,14 +6,9 @@ name: Kolaboro alerts and portal lookup
 #    public record with the last state and sends one encrypted alert per changed project (kolaboro.com/alerts/).
 on:
   schedule:
-    - cron: '37 10 * * *'
-  workflow_run:
-    workflows: ['Kolaboro research agent']
-    types: [completed]
-  push:
-    branches: [main]
-    paths: ['tools/kolaboro-agent/ext_map.py', '.github/workflows/kolaboro-alerts.yml']
+    - cron: '37 10 * * 3'
   workflow_dispatch:
+
 permissions:
   contents: write
   id-token: write

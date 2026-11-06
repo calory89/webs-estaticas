@@ -4,11 +4,9 @@ name: Kolaboro partner webhooks
 # partner webhook (kolaboro.com/docs/webhooks/), retrying failures and logging every attempt. Project details stay out of this log.
 on:
   schedule:
-    - cron: '53 10 * * *'
-  workflow_run:
-    workflows: ['Kolaboro research agent']
-    types: [completed]
+    - cron: '53 10 * * 3'
   workflow_dispatch:
+
 permissions:
   id-token: write
 concurrency:

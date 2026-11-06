@@ -7,11 +7,9 @@ name: Kolaboro data catalog
 # A failing contract publishes the results first and then turns this job red. It never blocks another workflow (nothing depends on it).
 on:
   schedule:
-    - cron: '29 17 * * *'
-  push:
-    branches: [main]
-    paths: ['tools/kolaboro-data/**', '.github/workflows/kolaboro-data-catalog.yml']
+    - cron: '29 17 * * 5'
   workflow_dispatch:
+
 permissions:
   contents: write
 concurrency:

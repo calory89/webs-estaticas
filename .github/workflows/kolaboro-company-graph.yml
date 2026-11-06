@@ -4,11 +4,9 @@ name: Kolaboro company graph
 # file, kolaboro.com/data/company-graph.json: no company names or numbers, no officer names, birth dates or addresses.
 on:
   schedule:
-    - cron: '41 5 * * 3'
-  push:
-    branches: [main]
-    paths: ['tools/kolaboro-q/company_graph.py', '.github/workflows/kolaboro-company-graph.yml']
+    - cron: '41 5 8 * *'
   workflow_dispatch:
+
 permissions:
   contents: write
 concurrency:

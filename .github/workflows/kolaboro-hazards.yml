@@ -4,10 +4,8 @@ name: Kolaboro natural hazards
 on:
   schedule:
     - cron: '17 3 9 * *'
-  push:
-    branches: [main]
-    paths: ['tools/kolaboro-hazards/**', '.github/workflows/kolaboro-hazards.yml']
   workflow_dispatch:
+
 permissions:
   contents: write
 concurrency:

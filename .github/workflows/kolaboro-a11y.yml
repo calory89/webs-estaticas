@@ -3,11 +3,9 @@ name: Kolaboro accessibility
 # go to kolaboro.com/data/a11y.json and are shown on kolaboro.com/status. Goal: 0 serious or critical.
 on:
   schedule:
-    - cron: '47 2 * * *'
-  push:
-    branches: [main]
-    paths: ['tools/kolaboro-reliability/a11y.js', '.github/workflows/kolaboro-a11y.yml']
+    - cron: '47 2 19 * *'
   workflow_dispatch:
+
 permissions:
   contents: write
 concurrency:

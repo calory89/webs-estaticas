@@ -4,14 +4,9 @@ name: Kolaboro discovery data
 # Publishes /data/similar.json (with the market points inside, key market_points) to kolaboro.com; one file because the shared Pages project is at its file limit.
 on:
   schedule:
-    - cron: '23 2 * * *'
-  workflow_run:
-    workflows: ['Kolaboro research agent']
-    types: [completed]
-  push:
-    branches: [main]
-    paths: ['tools/kolaboro-disc/**', '.github/workflows/kolaboro-discovery.yml']
+    - cron: '23 2 * * 2'
   workflow_dispatch:
+
 permissions:
   contents: write
 concurrency:

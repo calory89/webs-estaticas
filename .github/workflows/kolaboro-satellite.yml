@@ -3,11 +3,9 @@ name: Kolaboro satellite watch
 # published to kolaboro.com/k/sat/ and kolaboro.com/data/satellite.json.
 on:
   schedule:
-    - cron: '41 7 * * 1'
-  push:
-    branches: [main]
-    paths: ['tools/kolaboro-agent/satellite-sites.json', 'tools/kolaboro-agent/satellite.py']
+    - cron: '41 7 3 * *'
   workflow_dispatch:
+
 permissions:
   contents: write
 concurrency:
