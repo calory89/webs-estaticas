@@ -1,9 +1,9 @@
 {
- "updated": "2026-11-05",
- "projects": 1116,
+ "updated": "2026-11-06",
+ "projects": 1124,
  "markets": {
   "Abu Dhabi": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Abu Dhabi",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 19,
@@ -53,13 +53,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -133,11 +126,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Accra": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Accra",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 4,
@@ -184,13 +184,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -264,11 +257,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Ajman": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Ajman",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 6,
@@ -315,13 +315,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -395,11 +388,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Alanya": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Alanya",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 3,
@@ -446,13 +446,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -526,11 +519,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Albania": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Albania",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 4,
@@ -578,13 +578,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -658,11 +651,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Algarve": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Algarve",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 8,
@@ -710,13 +710,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -789,15 +782,22 @@
      "mode": "ai",
      "pages_ok": 8,
      "pages_failed": 2,
+     "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
      "changes": 0
     }
    ]
   },
   "Almaty": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Almaty",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 0,
+   "projects": 1,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -819,9 +819,9 @@
     "known": 0
    },
    "guaranteed_language": 0,
-   "permit_claims": 0,
-   "permit_numbers_published": 0,
-   "plans_published": 0,
+   "permit_claims": 1,
+   "permit_numbers_published": 1,
+   "plans_published": 1,
    "price_usd": {
     "known": 0,
     "median": null,
@@ -833,15 +833,10 @@
     "median": null,
     "max": null
    },
-   "completion": {},
+   "completion": {
+    "2027": 1
+   },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -917,15 +912,22 @@
      "mode": "ai",
      "pages_ok": 8,
      "pages_failed": 2,
+     "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
      "changes": 0
     }
    ]
   },
   "Amman": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Amman",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 0,
+   "projects": 2,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -961,15 +963,11 @@
     "median": null,
     "max": null
    },
-   "completion": {},
+   "completion": {
+    "2026": 1,
+    "2027": 1
+   },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -1046,11 +1044,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Antalya": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Antalya",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 7,
@@ -1099,13 +1104,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -1179,11 +1177,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Antigua": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Antigua",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 3,
@@ -1229,13 +1234,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -1309,14 +1307,21 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Argentina": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Argentina",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 0,
+   "projects": 3,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -1340,7 +1345,7 @@
    "guaranteed_language": 0,
    "permit_claims": 0,
    "permit_numbers_published": 0,
-   "plans_published": 0,
+   "plans_published": 2,
    "price_usd": {
     "known": 0,
     "median": null,
@@ -1352,15 +1357,10 @@
     "median": null,
     "max": null
    },
-   "completion": {},
+   "completion": {
+    "unknown": 3
+   },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -1437,11 +1437,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Aruba": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Aruba",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 1,
@@ -1487,13 +1494,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -1567,11 +1567,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Austin": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Austin",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 2,
@@ -1617,13 +1624,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -1697,11 +1697,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Bacalar": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Bacalar",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 1,
@@ -1747,13 +1754,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -1827,14 +1827,21 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Bahamas": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Bahamas",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 2,
+   "projects": 6,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -1860,9 +1867,9 @@
    "permit_numbers_published": 0,
    "plans_published": 0,
    "price_usd": {
-    "known": 1,
-    "median": 27000000.0,
-    "min": 27000000.0,
+    "known": 3,
+    "median": 9000000.0,
+    "min": 6500000.0,
     "max": 27000000.0
    },
    "yield": {
@@ -1871,17 +1878,12 @@
     "max": null
    },
    "completion": {
-    "2027": 1,
-    "2029": 1
+    "2026": 1,
+    "2027": 2,
+    "2029": 1,
+    "unknown": 2
    },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -1958,11 +1960,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Bahrain": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Bahrain",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 7,
@@ -2011,13 +2020,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -2091,17 +2093,24 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Baku": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Baku",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 0,
+   "projects": 4,
    "title": {
     "leasehold": 0,
-    "known": 0
+    "known": 1
    },
    "lease": {
     "known": 0,
@@ -2122,27 +2131,23 @@
    "guaranteed_language": 0,
    "permit_claims": 0,
    "permit_numbers_published": 0,
-   "plans_published": 0,
+   "plans_published": 1,
    "price_usd": {
-    "known": 0,
-    "median": null,
-    "min": null,
-    "max": null
+    "known": 1,
+    "median": 135000.0,
+    "min": 135000.0,
+    "max": 135000.0
    },
    "yield": {
     "known": 0,
     "median": null,
     "max": null
    },
-   "completion": {},
+   "completion": {
+    "2030": 1,
+    "unknown": 3
+   },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -2219,14 +2224,21 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Balearics": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Balearics",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 5,
+   "projects": 6,
    "title": {
     "leasehold": 0,
     "known": 2
@@ -2250,10 +2262,10 @@
    "guaranteed_language": 0,
    "permit_claims": 0,
    "permit_numbers_published": 0,
-   "plans_published": 3,
+   "plans_published": 4,
    "price_usd": {
-    "known": 4,
-    "median": 674000.0,
+    "known": 5,
+    "median": 810000.0,
     "min": 366000.0,
     "max": 4828000.0
    },
@@ -2263,19 +2275,13 @@
     "max": null
    },
    "completion": {
+    "2026": 1,
     "2027": 2,
     "2028": 1,
     "2029": 1,
     "unknown": 1
    },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -2352,11 +2358,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Bali": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Bali",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 76,
@@ -2407,13 +2420,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -2487,11 +2493,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Bangkok": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Bangkok",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 8,
@@ -2540,13 +2553,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -2620,14 +2626,21 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Barbados": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Barbados",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 2,
+   "projects": 4,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -2653,9 +2666,9 @@
    "permit_numbers_published": 0,
    "plans_published": 0,
    "price_usd": {
-    "known": 1,
-    "median": 2120000.0,
-    "min": 2120000.0,
+    "known": 2,
+    "median": 1485000.0,
+    "min": 850000.0,
     "max": 2120000.0
    },
    "yield": {
@@ -2664,17 +2677,11 @@
     "max": null
    },
    "completion": {
+    "2026": 1,
     "2027": 1,
-    "unknown": 1
+    "unknown": 2
    },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -2751,14 +2758,21 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Belgrade": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Belgrade",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 0,
+   "projects": 4,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -2780,9 +2794,9 @@
     "known": 0
    },
    "guaranteed_language": 0,
-   "permit_claims": 0,
+   "permit_claims": 1,
    "permit_numbers_published": 0,
-   "plans_published": 0,
+   "plans_published": 1,
    "price_usd": {
     "known": 0,
     "median": null,
@@ -2794,15 +2808,11 @@
     "median": null,
     "max": null
    },
-   "completion": {},
+   "completion": {
+    "2028": 1,
+    "unknown": 3
+   },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -2879,11 +2889,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Belize": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Belize",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 4,
@@ -2930,13 +2947,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -3010,14 +3020,21 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Berlin": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Berlin",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 0,
+   "projects": 2,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -3053,15 +3070,11 @@
     "median": null,
     "max": null
    },
-   "completion": {},
+   "completion": {
+    "2027": 1,
+    "2028": 1
+   },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -3138,11 +3151,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Birmingham": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Birmingham",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 3,
@@ -3189,13 +3209,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -3269,11 +3282,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Bodrum": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Bodrum",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 3,
@@ -3320,13 +3340,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -3400,11 +3413,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Brazil": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Brazil",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 4,
@@ -3453,13 +3473,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -3533,11 +3546,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Brisbane": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Brisbane",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 2,
@@ -3584,13 +3604,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -3663,15 +3676,22 @@
      "mode": "ai",
      "pages_ok": 8,
      "pages_failed": 2,
+     "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
      "changes": 0
     }
    ]
   },
   "Bucharest": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Bucharest",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 0,
+   "projects": 3,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -3695,27 +3715,22 @@
    "guaranteed_language": 0,
    "permit_claims": 0,
    "permit_numbers_published": 0,
-   "plans_published": 0,
+   "plans_published": 1,
    "price_usd": {
-    "known": 0,
-    "median": null,
-    "min": null,
-    "max": null
+    "known": 1,
+    "median": 187000.0,
+    "min": 187000.0,
+    "max": 187000.0
    },
    "yield": {
     "known": 0,
     "median": null,
     "max": null
    },
-   "completion": {},
+   "completion": {
+    "unknown": 3
+   },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -3791,15 +3806,22 @@
      "mode": "ai",
      "pages_ok": 8,
      "pages_failed": 2,
+     "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
      "changes": 0
     }
    ]
   },
   "Budapest": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Budapest",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 0,
+   "projects": 4,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -3823,7 +3845,7 @@
    "guaranteed_language": 0,
    "permit_claims": 0,
    "permit_numbers_published": 0,
-   "plans_published": 0,
+   "plans_published": 1,
    "price_usd": {
     "known": 0,
     "median": null,
@@ -3835,15 +3857,11 @@
     "median": null,
     "max": null
    },
-   "completion": {},
+   "completion": {
+    "2028": 2,
+    "unknown": 2
+   },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -3920,11 +3938,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Buenos Aires": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Buenos Aires",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 3,
@@ -3972,13 +3997,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -4052,11 +4070,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Bulgaria": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Bulgaria",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 6,
@@ -4105,13 +4130,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -4185,11 +4203,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Cambodia": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Cambodia",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 9,
@@ -4238,13 +4263,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -4318,11 +4336,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Canary Islands": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Canary Islands",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 6,
@@ -4368,13 +4393,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -4448,11 +4466,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Cape Town": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Cape Town",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 5,
@@ -4501,13 +4526,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -4581,11 +4599,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Cape Verde": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Cape Verde",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 7,
@@ -4634,13 +4659,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -4714,11 +4732,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Cartagena": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Cartagena",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 1,
@@ -4764,13 +4789,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -4844,14 +4862,21 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Cayman Islands": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Cayman Islands",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 3,
+   "projects": 6,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -4888,16 +4913,9 @@
     "max": null
    },
    "completion": {
-    "unknown": 3
+    "unknown": 6
    },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -4974,11 +4992,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Chiang Mai": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Chiang Mai",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 4,
@@ -5026,13 +5051,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -5106,14 +5124,21 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Chile": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Chile",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 0,
+   "projects": 2,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -5149,15 +5174,11 @@
     "median": null,
     "max": null
    },
-   "completion": {},
+   "completion": {
+    "2027": 1,
+    "2028": 1
+   },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -5234,11 +5255,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Colombia": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Colombia",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 3,
@@ -5286,13 +5314,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -5366,14 +5387,21 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Costa Blanca": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Costa Blanca",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 6,
+   "projects": 12,
    "title": {
     "leasehold": 0,
     "known": 1
@@ -5397,11 +5425,11 @@
    "guaranteed_language": 0,
    "permit_claims": 0,
    "permit_numbers_published": 0,
-   "plans_published": 4,
+   "plans_published": 5,
    "price_usd": {
-    "known": 5,
-    "median": 373000.0,
-    "min": 356000.0,
+    "known": 6,
+    "median": 367000.0,
+    "min": 254000.0,
     "max": 431000.0
    },
    "yield": {
@@ -5413,16 +5441,9 @@
     "2026": 1,
     "2027": 1,
     "2028": 2,
-    "unknown": 2
+    "unknown": 8
    },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -5499,11 +5520,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Costa Rica": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Costa Rica",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 9,
@@ -5551,13 +5579,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -5631,14 +5652,21 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Costa del Sol": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Costa del Sol",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 20,
+   "projects": 24,
    "title": {
     "leasehold": 0,
     "known": 1
@@ -5662,10 +5690,10 @@
    "guaranteed_language": 0,
    "permit_claims": 1,
    "permit_numbers_published": 0,
-   "plans_published": 16,
+   "plans_published": 18,
    "price_usd": {
-    "known": 18,
-    "median": 427000.0,
+    "known": 20,
+    "median": 429000.0,
     "min": 329000.0,
     "max": 1242000.0
    },
@@ -5678,16 +5706,9 @@
     "2026": 1,
     "2027": 6,
     "2028": 1,
-    "unknown": 12
+    "unknown": 16
    },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -5764,11 +5785,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Croatia": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Croatia",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 7,
@@ -5817,13 +5845,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -5897,11 +5918,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Curacao": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Curacao",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 1,
@@ -5947,13 +5975,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -6027,14 +6048,21 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Cyprus": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Cyprus",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 9,
+   "projects": 12,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -6058,9 +6086,9 @@
    "guaranteed_language": 0,
    "permit_claims": 1,
    "permit_numbers_published": 0,
-   "plans_published": 3,
+   "plans_published": 6,
    "price_usd": {
-    "known": 6,
+    "known": 8,
     "median": 505000.0,
     "min": 232000.0,
     "max": 886000.0
@@ -6073,16 +6101,9 @@
    "completion": {
     "2027": 2,
     "2028": 2,
-    "unknown": 5
+    "unknown": 8
    },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -6159,11 +6180,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Da Nang": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Da Nang",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 1,
@@ -6209,13 +6237,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -6289,11 +6310,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Diani": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Diani",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 1,
@@ -6339,13 +6367,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -6419,11 +6440,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Dominican Republic": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Dominican Republic",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 5,
@@ -6471,13 +6499,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -6551,17 +6572,24 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Dubai": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Dubai",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 71,
+   "projects": 118,
    "title": {
     "leasehold": 0,
-    "known": 26
+    "known": 27
    },
    "lease": {
     "known": 0,
@@ -6582,34 +6610,27 @@
    "guaranteed_language": 1,
    "permit_claims": 30,
    "permit_numbers_published": 34,
-   "plans_published": 23,
+   "plans_published": 42,
    "price_usd": {
-    "known": 64,
-    "median": 464000.0,
+    "known": 80,
+    "median": 449000.0,
     "min": 135000.0,
     "max": 15584000.0
    },
    "yield": {
-    "known": 3,
-    "median": 6,
-    "max": 7.8
+    "known": 4,
+    "median": 6.9,
+    "max": 8
    },
    "completion": {
     "2026": 9,
-    "2027": 19,
-    "2028": 23,
-    "2029": 14,
+    "2027": 32,
+    "2028": 29,
+    "2029": 26,
     "2030": 5,
-    "unknown": 1
+    "unknown": 17
    },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -6686,11 +6707,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Dublin": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Dublin",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 2,
@@ -6736,13 +6764,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -6816,14 +6837,21 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Ecuador": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Ecuador",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 1,
+   "projects": 4,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -6849,10 +6877,10 @@
    "permit_numbers_published": 0,
    "plans_published": 0,
    "price_usd": {
-    "known": 0,
-    "median": null,
-    "min": null,
-    "max": null
+    "known": 1,
+    "median": 182000.0,
+    "min": 182000.0,
+    "max": 182000.0
    },
    "yield": {
     "known": 0,
@@ -6860,16 +6888,11 @@
     "max": null
    },
    "completion": {
-    "2029": 1
+    "2027": 1,
+    "2029": 1,
+    "unknown": 2
    },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -6946,11 +6969,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Edinburgh": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Edinburgh",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 1,
@@ -6996,13 +7026,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -7076,11 +7099,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Egypt": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Egypt",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 13,
@@ -7130,13 +7160,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -7210,11 +7233,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "El Salvador": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "El Salvador",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 1,
@@ -7260,13 +7290,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -7340,11 +7363,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Fiji": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Fiji",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 3,
@@ -7391,13 +7421,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -7471,11 +7494,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Fort Lauderdale": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Fort Lauderdale",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 3,
@@ -7522,13 +7552,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -7602,11 +7625,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "French Alps": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "French Alps",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 1,
@@ -7652,13 +7682,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -7732,11 +7755,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "French Riviera": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "French Riviera",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 4,
@@ -7783,13 +7813,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -7863,11 +7886,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Georgia": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Georgia",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 12,
@@ -7916,13 +7946,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -7996,11 +8019,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Gili Islands": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Gili Islands",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 1,
@@ -8046,13 +8076,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -8126,11 +8149,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Glasgow": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Glasgow",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 1,
@@ -8176,13 +8206,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -8256,11 +8279,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Goa": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Goa",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 6,
@@ -8287,7 +8317,7 @@
    "guaranteed_language": 0,
    "permit_claims": 5,
    "permit_numbers_published": 5,
-   "plans_published": 2,
+   "plans_published": 3,
    "price_usd": {
     "known": 0,
     "median": null,
@@ -8306,13 +8336,6 @@
     "unknown": 3
    },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -8389,11 +8412,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Gold Coast": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Gold Coast",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 8,
@@ -8441,13 +8471,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -8521,17 +8544,24 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Greece": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Greece",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 11,
+   "projects": 12,
    "title": {
     "leasehold": 0,
-    "known": 2
+    "known": 3
    },
    "lease": {
     "known": 0,
@@ -8554,8 +8584,8 @@
    "permit_numbers_published": 0,
    "plans_published": 4,
    "price_usd": {
-    "known": 4,
-    "median": 3413000.0,
+    "known": 5,
+    "median": 1728000.0,
     "min": 276000.0,
     "max": 8640000.0
    },
@@ -8569,16 +8599,9 @@
     "2027": 3,
     "2028": 3,
     "2029": 1,
-    "unknown": 3
+    "unknown": 4
    },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -8655,11 +8678,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Grenada": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Grenada",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 3,
@@ -8706,13 +8736,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -8786,11 +8809,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Hakuba": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Hakuba",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 1,
@@ -8836,13 +8866,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -8916,11 +8939,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Hawaii": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Hawaii",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 2,
@@ -8967,13 +8997,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -9047,11 +9070,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Ho Chi Minh City": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Ho Chi Minh City",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 2,
@@ -9098,13 +9128,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -9178,11 +9201,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Houston": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Houston",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 1,
@@ -9228,13 +9258,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -9308,11 +9331,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Hua Hin": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Hua Hin",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 5,
@@ -9361,13 +9391,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -9441,11 +9464,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Istanbul": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Istanbul",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 13,
@@ -9495,13 +9525,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -9575,11 +9598,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Italy": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Italy",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 4,
@@ -9627,13 +9657,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -9707,11 +9730,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Izmir": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Izmir",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 1,
@@ -9757,13 +9787,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -9837,11 +9860,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Jakarta": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Jakarta",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 2,
@@ -9887,13 +9917,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -9967,14 +9990,21 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Jamaica": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Jamaica",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 1,
+   "projects": 3,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -10000,10 +10030,10 @@
    "permit_numbers_published": 1,
    "plans_published": 0,
    "price_usd": {
-    "known": 0,
-    "median": null,
-    "min": null,
-    "max": null
+    "known": 2,
+    "median": 381000.0,
+    "min": 243000.0,
+    "max": 520000.0
    },
    "yield": {
     "known": 0,
@@ -10011,16 +10041,9 @@
     "max": null
    },
    "completion": {
-    "unknown": 1
+    "unknown": 3
    },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -10097,11 +10120,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Japan": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Japan",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 3,
@@ -10148,13 +10178,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -10228,11 +10251,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Kigali": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Kigali",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 5,
@@ -10281,13 +10311,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -10361,11 +10384,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Koh Phangan": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Koh Phangan",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 1,
@@ -10411,13 +10441,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -10491,11 +10514,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Koh Samui": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Koh Samui",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 12,
@@ -10543,13 +10573,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -10623,11 +10646,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Krabi": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Krabi",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 4,
@@ -10676,13 +10706,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -10756,17 +10779,24 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Kuala Lumpur": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Kuala Lumpur",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 0,
+   "projects": 3,
    "title": {
     "leasehold": 0,
-    "known": 0
+    "known": 2
    },
    "lease": {
     "known": 0,
@@ -10785,29 +10815,25 @@
     "known": 0
    },
    "guaranteed_language": 0,
-   "permit_claims": 0,
-   "permit_numbers_published": 0,
-   "plans_published": 0,
+   "permit_claims": 1,
+   "permit_numbers_published": 1,
+   "plans_published": 3,
    "price_usd": {
-    "known": 0,
-    "median": null,
-    "min": null,
-    "max": null
+    "known": 1,
+    "median": 419000.0,
+    "min": 419000.0,
+    "max": 419000.0
    },
    "yield": {
     "known": 0,
     "median": null,
     "max": null
    },
-   "completion": {},
+   "completion": {
+    "2028": 1,
+    "unknown": 2
+   },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -10884,11 +10910,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Kyoto": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Kyoto",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 1,
@@ -10934,13 +10967,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -11014,11 +11040,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Labuan Bajo": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Labuan Bajo",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 4,
@@ -11066,13 +11099,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -11146,11 +11172,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Lagos": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Lagos",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 2,
@@ -11196,13 +11229,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -11276,28 +11302,35 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Laos": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Laos",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 1,
+   "projects": 2,
    "title": {
     "leasehold": 0,
     "known": 0
    },
    "lease": {
-    "known": 0,
-    "median": null,
-    "min": null,
-    "max": null,
+    "known": 1,
+    "median": 60,
+    "min": 60,
+    "max": 60,
     "hist": {
      "under 30": 0,
      "30 to 34": 0,
      "35 to 39": 0,
-     "40 or more": 0
+     "40 or more": 1
     }
    },
    "extension_promised": {
@@ -11309,10 +11342,10 @@
    "permit_numbers_published": 0,
    "plans_published": 0,
    "price_usd": {
-    "known": 0,
-    "median": null,
-    "min": null,
-    "max": null
+    "known": 1,
+    "median": 71000.0,
+    "min": 71000.0,
+    "max": 71000.0
    },
    "yield": {
     "known": 0,
@@ -11320,16 +11353,9 @@
     "max": null
    },
    "completion": {
-    "unknown": 1
+    "unknown": 2
    },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -11406,11 +11432,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Las Vegas": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Las Vegas",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 2,
@@ -11457,13 +11490,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -11537,11 +11563,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Leeds": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Leeds",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 2,
@@ -11588,13 +11621,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -11668,11 +11694,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Lisbon": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Lisbon",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 4,
@@ -11719,13 +11752,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -11799,11 +11825,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Liverpool": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Liverpool",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 4,
@@ -11850,13 +11883,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -11930,11 +11956,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Lombok": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Lombok",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 24,
@@ -11983,13 +12016,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -12063,11 +12089,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "London": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "London",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 7,
@@ -12115,13 +12148,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -12195,11 +12221,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Los Cabos": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Los Cabos",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 15,
@@ -12247,13 +12280,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -12327,17 +12353,24 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Madeira": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Madeira",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 2,
+   "projects": 5,
    "title": {
     "leasehold": 0,
-    "known": 0
+    "known": 2
    },
    "lease": {
     "known": 0,
@@ -12360,10 +12393,10 @@
    "permit_numbers_published": 0,
    "plans_published": 0,
    "price_usd": {
-    "known": 0,
-    "median": null,
-    "min": null,
-    "max": null
+    "known": 2,
+    "median": 475000.0,
+    "min": 464000.0,
+    "max": 486000.0
    },
    "yield": {
     "known": 0,
@@ -12371,17 +12404,11 @@
     "max": null
    },
    "completion": {
+    "2027": 1,
     "2029": 1,
-    "unknown": 1
+    "unknown": 3
    },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -12458,11 +12485,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Malaysia": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Malaysia",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 19,
@@ -12513,13 +12547,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -12593,11 +12620,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Maldives": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Maldives",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 3,
@@ -12644,13 +12678,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -12724,11 +12751,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Malta": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Malta",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 6,
@@ -12776,13 +12810,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -12856,11 +12883,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Manchester": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Manchester",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 7,
@@ -12907,13 +12941,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -12987,14 +13014,21 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Marrakech": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Marrakech",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 4,
+   "projects": 8,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -13018,7 +13052,7 @@
    "guaranteed_language": 0,
    "permit_claims": 0,
    "permit_numbers_published": 0,
-   "plans_published": 1,
+   "plans_published": 2,
    "price_usd": {
     "known": 0,
     "median": null,
@@ -13031,18 +13065,11 @@
     "max": null
    },
    "completion": {
-    "2027": 1,
-    "2028": 1,
-    "unknown": 2
+    "2027": 2,
+    "2028": 3,
+    "unknown": 3
    },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -13119,11 +13146,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Mauritius": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Mauritius",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 9,
@@ -13171,13 +13205,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -13251,11 +13278,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Medellín": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Medellín",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 4,
@@ -13303,13 +13337,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -13383,11 +13410,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Melbourne": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Melbourne",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 3,
@@ -13434,13 +13468,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -13514,11 +13541,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Mexico City": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Mexico City",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 5,
@@ -13565,13 +13599,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -13645,14 +13672,21 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Miami": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Miami",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 13,
+   "projects": 16,
    "title": {
     "leasehold": 0,
     "known": 1
@@ -13676,7 +13710,7 @@
    "guaranteed_language": 0,
    "permit_claims": 2,
    "permit_numbers_published": 1,
-   "plans_published": 2,
+   "plans_published": 4,
    "price_usd": {
     "known": 6,
     "median": 1900000.0,
@@ -13693,16 +13727,9 @@
     "2028": 3,
     "2029": 1,
     "2030": 1,
-    "unknown": 4
+    "unknown": 7
    },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -13779,11 +13806,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Montenegro": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Montenegro",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 8,
@@ -13831,13 +13865,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -13911,11 +13938,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Mozambique": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Mozambique",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 3,
@@ -13961,13 +13995,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -14041,14 +14068,21 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Mumbai": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Mumbai",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 0,
+   "projects": 4,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -14070,9 +14104,9 @@
     "known": 0
    },
    "guaranteed_language": 0,
-   "permit_claims": 0,
-   "permit_numbers_published": 0,
-   "plans_published": 0,
+   "permit_claims": 3,
+   "permit_numbers_published": 3,
+   "plans_published": 1,
    "price_usd": {
     "known": 0,
     "median": null,
@@ -14084,15 +14118,12 @@
     "median": null,
     "max": null
    },
-   "completion": {},
+   "completion": {
+    "2030": 1,
+    "2033": 1,
+    "unknown": 2
+   },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -14169,11 +14200,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Mérida": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Mérida",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 8,
@@ -14221,13 +14259,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -14301,14 +14332,21 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Nairobi": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Nairobi",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 3,
+   "projects": 6,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -14346,16 +14384,9 @@
    },
    "completion": {
     "2028": 2,
-    "unknown": 1
+    "unknown": 4
    },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -14432,11 +14463,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Namibia": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Namibia",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 6,
@@ -14484,13 +14522,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -14564,11 +14595,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Naples": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Naples",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 1,
@@ -14614,13 +14652,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -14694,11 +14725,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Nashville": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Nashville",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 2,
@@ -14745,13 +14783,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -14825,11 +14856,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "New York": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "New York",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 3,
@@ -14876,13 +14914,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -14956,11 +14987,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "New Zealand": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "New Zealand",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 4,
@@ -15007,13 +15045,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -15087,11 +15118,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Nicaragua": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Nicaragua",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 1,
@@ -15137,13 +15175,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -15217,11 +15248,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Niseko": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Niseko",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 4,
@@ -15270,13 +15308,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -15350,11 +15381,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Northern Cyprus": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Northern Cyprus",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 8,
@@ -15403,13 +15441,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -15483,11 +15514,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Okinawa": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Okinawa",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 3,
@@ -15534,13 +15572,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -15614,11 +15645,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Oman": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Oman",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 14,
@@ -15667,13 +15705,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -15747,11 +15778,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Orlando": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Orlando",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 3,
@@ -15798,13 +15836,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -15878,11 +15909,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Palm Beach County": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Palm Beach County",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 1,
@@ -15928,13 +15966,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -16008,11 +16039,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Panama": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Panama",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 3,
@@ -16060,13 +16098,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -16140,11 +16171,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Panama City": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Panama City",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 6,
@@ -16192,13 +16230,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -16272,14 +16303,21 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Paraguay": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Paraguay",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 0,
+   "projects": 4,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -16305,25 +16343,21 @@
    "permit_numbers_published": 0,
    "plans_published": 0,
    "price_usd": {
-    "known": 0,
-    "median": null,
-    "min": null,
-    "max": null
+    "known": 2,
+    "median": 54000.0,
+    "min": 40000.0,
+    "max": 68000.0
    },
    "yield": {
     "known": 0,
     "median": null,
     "max": null
    },
-   "completion": {},
+   "completion": {
+    "2028": 1,
+    "unknown": 3
+   },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -16400,11 +16434,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Pattaya": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Pattaya",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 12,
@@ -16454,13 +16495,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -16534,11 +16568,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Perth": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Perth",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 2,
@@ -16584,13 +16625,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -16664,14 +16698,21 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Peru": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Peru",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 0,
+   "projects": 3,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -16707,15 +16748,10 @@
     "median": null,
     "max": null
    },
-   "completion": {},
+   "completion": {
+    "unknown": 3
+   },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -16792,11 +16828,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Philippines": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Philippines",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 14,
@@ -16846,13 +16889,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -16926,14 +16962,21 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Phuket": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Phuket",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 21,
+   "projects": 23,
    "title": {
     "leasehold": 2,
     "known": 11
@@ -16957,10 +17000,10 @@
    "guaranteed_language": 1,
    "permit_claims": 4,
    "permit_numbers_published": 0,
-   "plans_published": 8,
+   "plans_published": 9,
    "price_usd": {
-    "known": 16,
-    "median": 131000.0,
+    "known": 17,
+    "median": 126000.0,
     "min": 86000.0,
     "max": 318000.0
    },
@@ -16972,18 +17015,11 @@
    "completion": {
     "2026": 4,
     "2027": 2,
-    "2028": 11,
+    "2028": 12,
     "2029": 1,
-    "unknown": 3
+    "unknown": 4
    },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -17060,11 +17096,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Porto de Galinhas": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Porto de Galinhas",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 3,
@@ -17111,13 +17154,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -17191,11 +17227,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Portugal": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Portugal",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 9,
@@ -17244,13 +17287,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -17324,14 +17360,21 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Prague": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Prague",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 0,
+   "projects": 3,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -17367,15 +17410,11 @@
     "median": null,
     "max": null
    },
-   "completion": {},
+   "completion": {
+    "2027": 2,
+    "2028": 1
+   },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -17452,11 +17491,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Puerto Rico": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Puerto Rico",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 3,
@@ -17502,13 +17548,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -17582,11 +17621,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Puerto Vallarta": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Puerto Vallarta",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 12,
@@ -17634,13 +17680,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -17714,11 +17753,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Punta Cana": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Punta Cana",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 3,
@@ -17766,13 +17812,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -17846,11 +17885,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Qatar": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Qatar",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 6,
@@ -17899,13 +17945,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -17979,14 +18018,21 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Ras Al Khaimah": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Ras Al Khaimah",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 17,
+   "projects": 24,
    "title": {
     "leasehold": 0,
     "known": 11
@@ -18010,7 +18056,7 @@
    "guaranteed_language": 1,
    "permit_claims": 0,
    "permit_numbers_published": 0,
-   "plans_published": 8,
+   "plans_published": 13,
    "price_usd": {
     "known": 17,
     "median": 654000.0,
@@ -18023,20 +18069,14 @@
     "max": null
    },
    "completion": {
-    "2026": 2,
-    "2027": 3,
-    "2028": 9,
+    "2026": 3,
+    "2027": 4,
+    "2028": 13,
     "2029": 2,
-    "2030": 1
+    "2030": 1,
+    "unknown": 1
    },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -18113,14 +18153,21 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Riga": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Riga",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 0,
+   "projects": 4,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -18142,29 +18189,25 @@
     "known": 0
    },
    "guaranteed_language": 0,
-   "permit_claims": 0,
+   "permit_claims": 1,
    "permit_numbers_published": 0,
-   "plans_published": 0,
+   "plans_published": 1,
    "price_usd": {
-    "known": 0,
-    "median": null,
-    "min": null,
-    "max": null
+    "known": 1,
+    "median": 108000.0,
+    "min": 108000.0,
+    "max": 108000.0
    },
    "yield": {
     "known": 0,
     "median": null,
     "max": null
    },
-   "completion": {},
+   "completion": {
+    "2028": 2,
+    "unknown": 2
+   },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -18241,11 +18284,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Riviera Maya": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Riviera Maya",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 21,
@@ -18293,13 +18343,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -18373,11 +18416,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Riviera Nayarit": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Riviera Nayarit",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 3,
@@ -18423,13 +18473,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -18503,11 +18546,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Saint Lucia": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Saint Lucia",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 1,
@@ -18553,13 +18603,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -18633,11 +18676,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Saudi Arabia": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Saudi Arabia",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 7,
@@ -18686,13 +18736,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -18766,11 +18809,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Senegal": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Senegal",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 1,
@@ -18816,13 +18866,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -18896,14 +18939,21 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Seoul": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Seoul",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 0,
+   "projects": 4,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -18939,15 +18989,10 @@
     "median": null,
     "max": null
    },
-   "completion": {},
+   "completion": {
+    "unknown": 4
+   },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -19024,11 +19069,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Serbia": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Serbia",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 1,
@@ -19074,13 +19126,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -19154,11 +19199,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Seychelles": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Seychelles",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 3,
@@ -19205,13 +19257,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -19285,17 +19330,24 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Sharjah": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Sharjah",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 10,
+   "projects": 11,
    "title": {
     "leasehold": 0,
-    "known": 7
+    "known": 8
    },
    "lease": {
     "known": 0,
@@ -19318,8 +19370,8 @@
    "permit_numbers_published": 0,
    "plans_published": 2,
    "price_usd": {
-    "known": 9,
-    "median": 564000.0,
+    "known": 10,
+    "median": 541000.0,
     "min": 190000.0,
     "max": 681000.0
    },
@@ -19332,16 +19384,9 @@
     "2026": 2,
     "2028": 3,
     "2029": 2,
-    "unknown": 3
+    "unknown": 4
    },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -19418,28 +19463,35 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Singapore": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Singapore",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 0,
+   "projects": 2,
    "title": {
-    "leasehold": 0,
-    "known": 0
+    "leasehold": 1,
+    "known": 1
    },
    "lease": {
-    "known": 0,
-    "median": null,
-    "min": null,
-    "max": null,
+    "known": 1,
+    "median": 99,
+    "min": 99,
+    "max": 99,
     "hist": {
      "under 30": 0,
      "30 to 34": 0,
      "35 to 39": 0,
-     "40 or more": 0
+     "40 or more": 1
     }
    },
    "extension_promised": {
@@ -19448,8 +19500,8 @@
    },
    "guaranteed_language": 0,
    "permit_claims": 0,
-   "permit_numbers_published": 0,
-   "plans_published": 0,
+   "permit_numbers_published": 1,
+   "plans_published": 2,
    "price_usd": {
     "known": 0,
     "median": null,
@@ -19461,15 +19513,11 @@
     "median": null,
     "max": null
    },
-   "completion": {},
+   "completion": {
+    "2034": 1,
+    "unknown": 1
+   },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -19546,11 +19594,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Spain": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Spain",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 11,
@@ -19598,13 +19653,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -19678,11 +19726,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Sri Lanka": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Sri Lanka",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 10,
@@ -19730,13 +19785,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -19810,11 +19858,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "St Kitts and Nevis": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "St Kitts and Nevis",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 2,
@@ -19860,13 +19915,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -19940,11 +19988,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "St Lucia": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "St Lucia",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 1,
@@ -19990,13 +20045,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -20070,11 +20118,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Sumba": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Sumba",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 5,
@@ -20122,13 +20177,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -20202,11 +20250,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Sydney": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Sydney",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 6,
@@ -20255,13 +20310,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -20334,15 +20382,22 @@
      "mode": "ai",
      "pages_ok": 8,
      "pages_failed": 2,
+     "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
      "changes": 0
     }
    ]
   },
   "Taiwan": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Taiwan",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 0,
+   "projects": 1,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -20378,15 +20433,10 @@
     "median": null,
     "max": null
    },
-   "completion": {},
+   "completion": {
+    "2029": 1
+   },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -20462,15 +20512,22 @@
      "mode": "ai",
      "pages_ok": 8,
      "pages_failed": 2,
+     "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
      "changes": 0
     }
    ]
   },
   "Tallinn": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Tallinn",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 0,
+   "projects": 4,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -20496,25 +20553,22 @@
    "permit_numbers_published": 0,
    "plans_published": 0,
    "price_usd": {
-    "known": 0,
-    "median": null,
-    "min": null,
-    "max": null
+    "known": 1,
+    "median": 270000.0,
+    "min": 270000.0,
+    "max": 270000.0
    },
    "yield": {
-    "known": 0,
-    "median": null,
-    "max": null
+    "known": 1,
+    "median": 6.0,
+    "max": 6.0
    },
-   "completion": {},
+   "completion": {
+    "2026": 1,
+    "2027": 2,
+    "unknown": 1
+   },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -20591,11 +20645,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Tampa": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Tampa",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 3,
@@ -20643,13 +20704,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -20723,14 +20777,21 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Tangier": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Tangier",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 0,
+   "projects": 3,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -20754,7 +20815,7 @@
    "guaranteed_language": 0,
    "permit_claims": 0,
    "permit_numbers_published": 0,
-   "plans_published": 0,
+   "plans_published": 2,
    "price_usd": {
     "known": 0,
     "median": null,
@@ -20766,15 +20827,11 @@
     "median": null,
     "max": null
    },
-   "completion": {},
+   "completion": {
+    "2027": 1,
+    "unknown": 2
+   },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -20851,11 +20908,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Tokyo": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Tokyo",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 2,
@@ -20902,13 +20966,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -20982,14 +21039,21 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Toronto": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Toronto",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 0,
+   "projects": 4,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -21012,8 +21076,8 @@
    },
    "guaranteed_language": 0,
    "permit_claims": 0,
-   "permit_numbers_published": 0,
-   "plans_published": 0,
+   "permit_numbers_published": 1,
+   "plans_published": 2,
    "price_usd": {
     "known": 0,
     "median": null,
@@ -21025,15 +21089,10 @@
     "median": null,
     "max": null
    },
-   "completion": {},
+   "completion": {
+    "unknown": 4
+   },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -21110,11 +21169,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Turks and Caicos": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Turks and Caicos",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 2,
@@ -21161,13 +21227,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -21241,11 +21300,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Umm Al Quwain": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Umm Al Quwain",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 4,
@@ -21292,13 +21358,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -21372,11 +21431,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Uruguay": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Uruguay",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 2,
@@ -21423,13 +21489,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -21503,14 +21562,21 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Vancouver": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Vancouver",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 0,
+   "projects": 4,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -21534,7 +21600,7 @@
    "guaranteed_language": 0,
    "permit_claims": 0,
    "permit_numbers_published": 0,
-   "plans_published": 0,
+   "plans_published": 2,
    "price_usd": {
     "known": 0,
     "median": null,
@@ -21546,15 +21612,10 @@
     "median": null,
     "max": null
    },
-   "completion": {},
+   "completion": {
+    "unknown": 4
+   },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -21631,11 +21692,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Vanuatu": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Vanuatu",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 1,
@@ -21681,13 +21749,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -21761,11 +21822,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Vietnam": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Vietnam",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 11,
@@ -21815,13 +21883,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -21894,15 +21955,22 @@
      "mode": "ai",
      "pages_ok": 8,
      "pages_failed": 2,
+     "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
      "changes": 0
     }
    ]
   },
   "Warsaw": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Warsaw",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 0,
+   "projects": 1,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -21938,15 +22006,10 @@
     "median": null,
     "max": null
    },
-   "completion": {},
+   "completion": {
+    "2027": 1
+   },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -22022,15 +22085,22 @@
      "mode": "ai",
      "pages_ok": 8,
      "pages_failed": 2,
+     "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
      "changes": 0
     }
    ]
   },
   "Yerevan": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Yerevan",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
-   "projects": 0,
+   "projects": 4,
    "title": {
     "leasehold": 0,
     "known": 0
@@ -22062,19 +22132,15 @@
     "max": null
    },
    "yield": {
-    "known": 0,
-    "median": null,
-    "max": null
+    "known": 1,
+    "median": 15,
+    "max": 15
    },
-   "completion": {},
+   "completion": {
+    "2027": 2,
+    "unknown": 2
+   },
    "runs": [
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
     {
      "date": "2026-11-03",
      "mode": "ai",
@@ -22151,11 +22217,18 @@
      "pages_ok": 8,
      "pages_failed": 2,
      "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
+     "changes": 0
     }
    ]
   },
   "Zanzibar": {
-   "updated": "2026-11-05",
+   "updated": "2026-11-06",
    "market": "Zanzibar",
    "source": "What developers advertise on their own pages and on new-build portals. Advertised claims, not verified facts.",
    "projects": 6,
@@ -22204,13 +22277,6 @@
     {
      "date": "2026-11-03",
      "mode": "ai",
-     "pages_ok": 737,
-     "pages_failed": 84,
-     "changes": 33
-    },
-    {
-     "date": "2026-11-03",
-     "mode": "ai",
      "pages_ok": 762,
      "pages_failed": 103,
      "changes": 36
@@ -22283,6 +22349,13 @@
      "mode": "ai",
      "pages_ok": 8,
      "pages_failed": 2,
+     "changes": 0
+    },
+    {
+     "date": "2026-11-06",
+     "mode": "ai",
+     "pages_ok": 160,
+     "pages_failed": 91,
      "changes": 0
     }
    ]
