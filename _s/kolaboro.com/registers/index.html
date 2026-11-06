@@ -25,7 +25,7 @@
 <script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',region:["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});try{if(localStorage.getItem('kb-consent')==='yes')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}</script><script>(window.kbLate||function(f){addEventListener("load",function(){setTimeout(f,1500)})})(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V";document.head.appendChild(s)})</script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');gtag('config','G-H5TGZJ1KNG');</script>
 
 <link rel="alternate" type="application/rss+xml" title="Kolaboro: what we shipped" href="/feed.xml">
-<link rel="stylesheet" href="/registers/registers.css?v=lk1">
+<link rel="stylesheet" href="/registers/registers.css?v=ml1">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -89,6 +89,18 @@
 <p class="lk-foot">Machine-readable: <a href="/api/kb/lookup/coverage">/api/kb/lookup/coverage</a>. Developers: <a href="/docs/api/">API docs</a> (<code>/api/kb/lookup</code>, <code>/api/v1/lookup</code>).</p>
 </div></section>
 <!-- lookup-coverage:end -->
+
+<section class="ml-sec" id="map-lookup" aria-labelledby="ml-h"><div class="wrap">
+<p class="eyebrow">Map lookup</p><h2 id="ml-h">Click a plot in Spain or a lot in New York City</h2>
+<p class="lead ml-lead">Click the map where the project is. In Spain we ask the Catastro for the parcel nearest to that point and its record (use, built area, year built). In New York City we find the nearest address point, then its tax lot in PLUTO and its building permits at the Department of Buildings. Every answer is kept byte for byte and sealed into one link you can share.</p>
+<div class="ml-jump" role="group" aria-label="Go to"><button type="button" class="fchip" data-ml-jump="spain">Spain</button><button type="button" class="fchip" data-ml-jump="marbella">Marbella</button><button type="button" class="fchip" data-ml-jump="madrid">Madrid</button><button type="button" class="fchip" data-ml-jump="nyc">New York City</button><button type="button" class="fchip" data-ml-jump="manhattan">Midtown Manhattan</button><button type="button" class="fchip" data-ml-jump="brooklyn">Downtown Brooklyn</button></div>
+<div class="ml-grid">
+<div><div class="ml-map" id="mlMap" role="application" aria-label="Map: click a point to look it up in the official registers"><p class="ml-fail">Loading the map...</p></div>
+<form class="ml-form" id="mlForm"><label for="mlLL">Or type coordinates</label><div><input id="mlLL" name="ll" inputmode="decimal" autocomplete="off" placeholder="36.5097, -4.8853"><button class="btn btn-hi btn-sm" type="submit">Look up</button></div></form>
+<p class="ml-hint">Zoom in until you see the buildings, then click. The Basque Country and Navarra keep their own cadastres, which this lookup does not reach.</p></div>
+<div class="ml-side"><p class="ml-status" id="mlStatus" aria-live="polite">Click the map to start. Registers only: no AI, nothing stored about you.</p><div id="mlOut" hidden></div></div>
+</div>
+</div></section>
 
 <section class="rg-cta" id="check"><div class="wrap rg-cta-in">
 <div><p class="eyebrow">Short on time or language?</p><h2>We can check it for you</h2>
@@ -197,7 +209,7 @@
     <p class="fine">© 2026 Kolaboro, operated by Equinox Investment Group LLC, 30 N Gould St Ste N, Sheridan, WY 82801, USA. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Reports are opinions based on the evidence listed in them.</p>
   </div>
 </footer>
-<script src="/registers/registers.js?v=2" defer></script><script src="/k/site.js?v=235dbb8852" defer></script><script src="/k/prov.js?v=85080e1313" defer></script>
+<script src="/registers/registers.js?v=2" defer></script><script src="/registers/maplookup.js?v=1" defer></script><script src="/k/site.js?v=235dbb8852" defer></script><script src="/k/prov.js?v=85080e1313" defer></script>
 <script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script>
 <div class="cc" id="cc" role="dialog" aria-label="Cookies" hidden><p>We use analytics cookies to improve Kolaboro. <a href="/legal/privacy">Privacy</a></p><div><button class="btn btn-line btn-sm" data-cc="no">Only necessary</button><button class="btn btn-hi btn-sm" data-cc="yes">Accept</button></div></div>
 <script>(function(){var EU=["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"];var st=null;try{st=localStorage;}catch(e){}var c=st&&st.getItem('kb-consent');if(c)return;

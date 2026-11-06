@@ -378,6 +378,85 @@
       if (revs.length) { var lo = Math.min.apply(null, revs); pg.fonts.forEach(function (f) { if (f.rev != null && f.rev > lo && f.obj != null && segs[f.rev] && segs[f.rev].added.some(function (o) { return o.num === f.obj; })) rep.fontOddities.push({ page: pg.n, kind: 'later-font', font: f.name, rev: f.rev + 1 }); }); }
     });
 
+    // 7b. fonts mixed inside one printed line (batch 10): replay the text operators of each page's own content streams, place
+    // every text run at its position on the page (text matrix x CTM) and group runs on the same baseline. A line that switches
+    // font family part-way is what a "type over" edit usually leaves (the editor cannot reuse the original subset font).
+    var SYM = /symbol|dingbat|wingding|webding|marlett|zapf/i;
+    function family(n) {
+      n = String(n || '').replace(/^[A-Z]{6}\+/, '').replace(/(PS)?MT$/, '').replace(/,.*$/, '');
+      n = n.replace(/[-_ ]?(Bold|Italic|Oblique|Regular|Roman|Book|Light|Medium|Semibold|SemiBold|Demi|Black|Heavy|Thin|Condensed|Cond|Narrow|It|Bd|BdIt)+$/i, '').replace(/[-_ ](Bold|Italic|Regular|Light|Medium)\w*$/i, '').replace(/(PS)?MT$/, '');
+      return n || '(unnamed)';
+    }
+    function lineScan(ops, fmap) {
+      var S = ops, n = S.length, i = 0, st = [], runs = [], ctm = [1, 0, 0, 1, 0, 0], gs = [], tm = [1, 0, 0, 1, 0, 0], tlm = [1, 0, 0, 1, 0, 0], lead = 0, font = null, guard = 0;
+      function mul(m, k) { return [m[0] * k[0] + m[1] * k[2], m[0] * k[1] + m[1] * k[3], m[2] * k[0] + m[3] * k[2], m[2] * k[1] + m[3] * k[3], m[4] * k[0] + m[5] * k[2] + k[4], m[4] * k[1] + m[5] * k[3] + k[5]]; }
+      function td(tx, ty) { tlm = [tlm[0], tlm[1], tlm[2], tlm[3], tx * tlm[0] + ty * tlm[2] + tlm[4], tx * tlm[1] + ty * tlm[3] + tlm[5]]; tm = tlm.slice(); }
+      function show(text) {
+        var d = mul(tm, ctm), f = fmap[font] || { name: font || '?', two: false };
+        runs.push({ x: d[4], y: d[5], fam: family(f.name), font: f.name, text: f.two ? null : text });
+        if (runs.length > 20000) i = n;
+      }
+      while (i < n && guard++ < 2000000) {
+        var c = S[i];
+        if (WS.indexOf(c) >= 0) { i++; continue; }
+        if (c === '%') { while (i < n && S[i] !== '\n' && S[i] !== '\r') i++; continue; }
+        if (c === '(') { var depth = 1, s = ''; i++; while (i < n && depth) { var ch = S[i]; if (ch === '\\') { var nx = S[i + 1]; s += nx === 'n' ? '\n' : nx === 'r' ? '' : nx === 't' ? ' ' : /[0-7]/.test(nx) ? String.fromCharCode(parseInt(S.substr(i + 1, 3).match(/^[0-7]{1,3}/)[0], 8)) : nx; i += /[0-7]/.test(nx) ? 1 + S.substr(i + 1, 3).match(/^[0-7]{1,3}/)[0].length : 2; continue; } if (ch === '(') depth++; else if (ch === ')') { depth--; if (!depth) { i++; break; } } s += ch; i++; } st.push({ s: s }); continue; }
+        if (c === '<') { if (S[i + 1] === '<') { i += 2; continue; } var e = S.indexOf('>', i); if (e < 0) break; st.push({ s: null }); i = e + 1; continue; }
+        if (c === '>' && S[i + 1] === '>') { i += 2; continue; }
+        if (c === '[') { st.push('['); i++; continue; }
+        if (c === ']') { var arr = [], k = st.length - 1; while (k >= 0 && st[k] !== '[') k--; arr = st.splice(k < 0 ? 0 : k); arr.shift(); st.push({ a: arr }); i++; continue; }
+        if (c === '{' || c === '}' || c === ')') { i++; continue; }
+        var j = i + 1; if (c === '/') { while (j < n && isReg(S[j])) j++; st.push(S.slice(i, j)); i = j; continue; }
+        while (j < n && isReg(S[j])) j++;
+        var w = S.slice(i, j); i = j;
+        if (/^[-+.\d]/.test(w)) { st.push(+w); continue; }
+        var a = st; st = [];
+        var num = function (k) { var v = a[a.length - k]; return typeof v === 'number' ? v : 0; };
+        switch (w) {
+          case 'q': gs.push(ctm.slice()); break;
+          case 'Q': if (gs.length) ctm = gs.pop(); break;
+          case 'cm': ctm = mul([num(6), num(5), num(4), num(3), num(2), num(1)], ctm); break;
+          case 'BT': tm = [1, 0, 0, 1, 0, 0]; tlm = tm.slice(); break;
+          case 'Tf': font = typeof a[a.length - 2] === 'string' ? a[a.length - 2].slice(1).replace(/#([0-9a-fA-F]{2})/g, function (_, h) { return String.fromCharCode(parseInt(h, 16)); }) : font; break;
+          case 'Tm': tm = [num(6), num(5), num(4), num(3), num(2), num(1)]; tlm = tm.slice(); break;
+          case 'Td': td(num(2), num(1)); break;
+          case 'TD': lead = -num(1); td(num(2), num(1)); break;
+          case 'TL': lead = num(1); break;
+          case 'T*': td(0, -lead); break;
+          case 'Tj': show(a.length && a[a.length - 1] && a[a.length - 1].s !== undefined ? a[a.length - 1].s : null); break;
+          case "'": td(0, -lead); show(a.length && a[a.length - 1] ? a[a.length - 1].s : null); break;
+          case '"': td(0, -lead); show(a.length && a[a.length - 1] ? a[a.length - 1].s : null); break;
+          case 'TJ': var A = a.length && a[a.length - 1] && a[a.length - 1].a; show(A ? A.map(function (x) { return x && x.s != null ? x.s : (typeof x === 'number' && x < -200 ? ' ' : ''); }).join('') : null); break;
+          case 'ID': var ei = S.slice(i).search(/[\0\t\n\f\r ]EI(?![^\0\t\n\f\r ()<>\[\]{}\/%])/); i = ei < 0 ? n : i + ei + 3; break;
+        }
+      }
+      return runs;
+    }
+    rep.mixedLines = []; rep.lineScan = { pages: 0, lines: 0, approx: false };
+    var famLines = new Map(), allLines = [];
+    for (var pj = 0; pj < pages.length && pj < 400; pj++) {
+      var pgx = pages[pj], R = get(pgx.res), F2 = R && isDict(R) ? get(R.Font) : null, fmap = {};
+      if (isDict(F2)) Object.keys(F2).forEach(function (k) { var fd = get(F2[k]); if (isDict(fd)) fmap[k] = { name: nm(get(fd.BaseFont)) || nm(fd.Name) || k, two: nm(fd.Subtype) === 'Type0' }; });
+      var ops = await opsOf(pgx.contents); if (ops == null) { rep.lineScan.approx = true; continue; }
+      var runs; try { runs = lineScan(ops, fmap); } catch (e) { rep.lineScan.approx = true; continue; }
+      rep.lineScan.pages++;
+      runs = runs.filter(function (r) { return !SYM.test(r.font) && (r.text == null || /\S/.test(r.text)); }).sort(function (p, q) { return q.y - p.y || p.x - q.x; });
+      var lines = [];
+      runs.forEach(function (r) { var l = lines[lines.length - 1]; if (l && Math.abs(l.y - r.y) <= 1.5) l.runs.push(r); else lines.push({ y: r.y, runs: [r] }); });
+      lines.forEach(function (l) {
+        l.runs.sort(function (p, q) { return p.x - q.x; });
+        var fams = []; l.runs.forEach(function (r) { if (fams.indexOf(r.fam) < 0) fams.push(r.fam); });
+        fams.forEach(function (f) { famLines.set(f, (famLines.get(f) || 0) + 1); });
+        rep.lineScan.lines++;
+        if (fams.length > 1) allLines.push({ page: pgx.n, fams: fams, text: l.runs.every(function (r) { return r.text != null; }) ? l.runs.map(function (r) { return r.text; }).join('').replace(/\s+/g, ' ').trim().slice(0, 140) : null,
+          parts: l.runs.map(function (r) { return { fam: r.fam, text: r.text == null ? null : r.text.slice(0, 60) }; }).slice(0, 12) });
+      });
+    }
+    allLines.forEach(function (l) { l.rare = l.fams.filter(function (f) { return (famLines.get(f) || 0) <= 3; }); });
+    rep.mixedLinesTotal = allLines.length;
+    rep.mixedLines = allLines.sort(function (p, q) { return (q.rare.length ? 1 : 0) - (p.rare.length ? 1 : 0) || p.page - q.page; }).slice(0, 40);
+    rep.familyLines = Array.from(famLines.entries()).map(function (e) { return { family: e[0], lines: e[1] }; }).sort(function (p, q) { return q.lines - p.lines; }).slice(0, 30);
+
     // 8. describe an object for the revision lists
     function describe(o) {
       var d = o.val, t = isDict(d) ? nm(d.Type) : null, st = isDict(d) ? nm(d.Subtype) : null, pg = pageOfObj.get(o.num);

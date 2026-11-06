@@ -83,3 +83,4 @@ details.ft-more[open] summary{margin-bottom:10px}
 .ft-bar i{display:block;height:100%;background:var(--band)}
 /* site.css hides any .ok element (form success box); keep tool cards and tags with class ok visible */
 .ft-f.ok{display:block}.ft-tag.ok{display:inline;border:0}
+.ft-mx{border-radius:4px;padding:0 2px}.ft-mx.hot{background:var(--t-warn-bg,#FFE7DB);color:inherit;outline:1px solid #F7B697}

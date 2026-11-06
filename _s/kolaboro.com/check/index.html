@@ -88,6 +88,13 @@
     <div class="az-step" id="az-4"></div>
   </div>
 </div></section>
+<section class="sec" id="evidence" aria-labelledby="ev-h" data-clarity-mask="True"><div class="wrap">
+<h2 id="ev-h">Check what the developer sent you</h2><p class="lead">Two checks that run on this device: nothing you choose here is uploaded.</p>
+<div class="grid2 ev-grid">
+<div id="pdf-check"><h3>Permit or contract PDF: was it edited?</h3><p class="ev-m">Reads the file structure: saves made on top of the original, digital signatures and whether the signed bytes still match, producer and dates, and lines where the font changes part-way (what typing over a price or date leaves).</p><div data-kbpdf></div></div>
+<div id="photo-check"><h3>Construction photos: when, where, and reused?</h3><p class="ev-m">Reads the date, camera and GPS position stored in each photo, measures the distance to the project's market, and compares each picture with the images of the projects we track.</p><div data-kbphoto></div></div>
+</div></div></section>
+<style>.ev-grid h3{font-size:1.1rem;margin:0 0 6px}.ev-m{color:var(--muted);font-size:.95rem;margin:0 0 10px}.ev-grid>div{min-width:0}</style>
 <section class="sec alt"><div class="wrap"><h2>What a full check covers</h2><p class="lead">Title and land, permits, the developer's delivery record, progress on site, where your money goes, the contract, and whether the promised returns are realistic. <a href="/how-we-score">See the method</a> · <a href="/pricing">Prices</a>.</p><div class="r26-more"><a href="/technology#certificate"><b>Read a document →</b><span>Contract, certificate, permit or invoice, in your language.</span></a><a href="/technology#price"><b>Check the price per m² →</b><span>Against published data for the area.</span></a><a href="/portal/demo"><b>See the client portal →</b><span>Our demo account, no sign-up.</span></a></div></div></section>
 <section class="sec alt" id="start" hidden><div class="wrap grid2">
   <div><h2>Request a verification</h2><p class="lead">We'll look for it in our records and reply within two working days with what we know and what a full check would cost.</p></div>
@@ -227,7 +234,7 @@
     <p class="fine">© 2026 Kolaboro, operated by Equinox Investment Group LLC, 30 N Gould St Ste N, Sheridan, WY 82801, USA. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Reports are opinions based on the evidence listed in them.</p>
   </div>
 </footer>
-<script src="/k/site.js?v=235dbb8852" defer></script><script src="/k/prov.js?v=85080e1313" defer></script>
+<script src="/k/site.js?v=235dbb8852" defer></script><script src="/tools/pdf-check/inline.js?v=b10a1" defer></script><script src="/tools/image-check/photo.js?v=b10a1" defer></script><script src="/k/prov.js?v=85080e1313" defer></script>
 <script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script>
 <div class="cc" id="cc" role="dialog" aria-label="Cookies" hidden><p>We use analytics cookies to improve Kolaboro. <a href="/legal/privacy">Privacy</a></p><div><button class="btn btn-line btn-sm" data-cc="no">Only necessary</button><button class="btn btn-hi btn-sm" data-cc="yes">Accept</button></div></div>
 <script>(function(){var EU=["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"];var st=null;try{st=localStorage;}catch(e){}var c=st&&st.getItem('kb-consent');if(c)return;
@@ -243,7 +250,7 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   window.addEventListener('scroll', function(){ b.classList.toggle('on', window.scrollY > window.innerHeight * 1.5); }, { passive: true });
 })();
 </script>
-<script src="/k/cycle.js?v=c7f9"></script>
+<script src="/k/cycle.js?v=c7f9b10a"></script>
 <script>
 (function(){
   var $ = function(i){ return document.getElementById(i); };

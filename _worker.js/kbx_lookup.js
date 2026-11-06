@@ -2,6 +2,7 @@
 //   POST /api/kb/lookup {url?, q?, country?, refcat?, address?, permit?, company?, lat?, lng?, image_hashes?[]}   public, rate limited
 //   GET  /api/kb/lookup?url=&q=&...                                                                             same, for testing
 //   GET  /api/kb/lookup/coverage      per country: what can be verified online vs needs a site visit (from /data/lookup-coverage.json)
+//   GET  /api/kb/lookup/points     named projects with their market and one public point per market (photo check)
 //   GET  /api/kb/lookup/stats         real counter of lookups done (kolaboro_api_runs, kind 'lookup', via kolaboro_public_stats)
 //   GET  /api/kb/lookup/r/{root}      a sealed lookup result again (edge cache, 30 days)
 //   GET  /api/kb/lookup/raw/{sha256}  the exact bytes an official source returned (edge cache, 30 days)
@@ -182,6 +183,25 @@ async function nycAddress(addr, ctx) {
   if (!pad || !pad.bbl || (n && f.properties.housenumber && f.properties.housenumber !== n)) { c.status = 'not_found'; c.note = 'No exact New York City address match.'; return { c }; }
   c.status = 'found'; c.fields = { address: f.properties.label, borough: f.properties.borough || null, bbl: pad.bbl, bin: pad.bin || null };
   return { c, bbl: pad.bbl, bin: pad.bin };
+}
+// map click in New York City (batch 10, b10a): nearest PAD address point to the coordinates -> BBL/BIN -> PLUTO and DOB permits
+const NYC_BOX = (lat, lng) => lat > 40.476 && lat < 40.918 && lng > -74.26 && lng < -73.70;
+async function nycCoords(lat, lng, ctx) {
+  const url = 'https://geosearch.planninglabs.nyc/v2/reverse?point.lat=' + lat + '&point.lon=' + lng + '&size=5';
+  const c = check('us_nyc_coords', 'NYC Planning GeoSearch (NYC PAD), address point nearest to coordinates', 'https://geosearch.planninglabs.nyc/', 'US', { by: 'coordinates (WGS84)', value: lat + ',' + lng, url });
+  const raw = await getRaw(url); c.ms = raw.ms; c.snapshot = snap(raw, ctx);
+  if (!raw.sha256 || !raw.ok) { c.note = 'GeoSearch did not answer.'; return { c }; }
+  const j = jparse(raw.text), fs = (j && j.features || []).filter(f => f.properties && f.properties.addendum && f.properties.addendum.pad && f.properties.addendum.pad.bbl);
+  const f = fs[0];
+  if (!f) { c.status = 'not_found'; c.note = 'No New York City address point near these coordinates.'; return { c }; }
+  const km = +f.properties.distance || 0, pad = f.properties.addendum.pad;
+  if (km > 0.15) { c.status = 'not_found'; c.fields = { nearest_address: f.properties.label, distance_m: Math.round(km * 1000) }; c.note = 'The nearest address point is ' + Math.round(km * 1000) + ' m away (park, water or a lot without an address), so no tax lot is matched.'; return { c }; }
+  const real = b => b && !/^[1-5]000000$/.test(b);
+  const binF = fs.find(x => x.properties.addendum.pad.bbl === pad.bbl && real(x.properties.addendum.pad.bin));
+  const bin = binF ? binF.properties.addendum.pad.bin : null;
+  c.status = 'found'; c.fields = { address: f.properties.label, borough: f.properties.borough || null, bbl: pad.bbl, bin, distance_m: Math.round(km * 1000) };
+  if (!bin) c.note = 'GeoSearch gives no building number (BIN) for this lot, so permits are not looked up by building.';
+  return { c, bbl: pad.bbl, bin };
 }
 const LANDUSE = { '01': 'One and two family buildings', '02': 'Multi-family walk-up buildings', '03': 'Multi-family elevator buildings', '04': 'Mixed residential and commercial', '05': 'Commercial and office', '06': 'Industrial and manufacturing', '07': 'Transportation and utility', '08': 'Public facilities and institutions', '09': 'Open space and outdoor recreation', '10': 'Parking facilities', '11': 'Vacant land' };
 async function nycPluto(bbl, ctx) {
@@ -485,6 +505,7 @@ async function run(inp, req, env, ctx, opts) {
   if (ids.some(x => x.type === 'es_refcat')) cs.add('ES');
   if (ids.some(x => /^nyc_|^miami/.test(x.type))) cs.add('US');
   if (inp.lat != null && inp.lng != null && inp.lat > 27.5 && inp.lat < 44 && inp.lng > -18.5 && inp.lng < 4.5) cs.add('ES');
+  const nycPt = inp.lat != null && inp.lng != null && NYC_BOX(inp.lat, inp.lng); if (nycPt) cs.add('US');
   if (!cs.size && pageText) countriesFrom(pageText.slice(0, 20000)).slice(0, 1).forEach(x => cs.add(x));
   // 2..7 register checks
   const reg = [];
@@ -499,6 +520,11 @@ async function run(inp, req, env, ctx, opts) {
       return [r.c, p].concat(d);
     }));
   }
+  if (nycPt && !addr && !ids.some(x => /^nyc_/.test(x.type))) reg.push(nycCoords(inp.lat, inp.lng, ctx).then(async r => {
+    if (!r.bbl) return [r.c];
+    const [p, d] = await Promise.all([nycPluto(r.bbl, ctx), r.bin ? nycDob('bin', r.bin, ctx) : Promise.resolve([])]);
+    return [r.c, p].concat(d);
+  }));
   ids.filter(x => x.type === 'nyc_bis_job').slice(0, 2).forEach(x => reg.push(nycDob('job', x.value, ctx).then(a => a)));
   ids.filter(x => x.type === 'nyc_dobnow_job').slice(0, 2).forEach(x => reg.push(nycDob('dobnow', x.value, ctx).then(a => a)));
   if (addr && MIAMI_HINT.test(addrText)) reg.push(miamiDade('address', mdAddr(addr), ctx));
@@ -599,6 +625,22 @@ async function stats(ctx) {
     return out({ counting: true, lookups: (d.runs && d.runs.lookup) || 0, lookups_7d: (d.runs_7d && d.runs_7d.lookup) || 0, p50_ms_7d: (d.p50_ms_7d && d.p50_ms_7d.lookup) || null, source: 'kolaboro_api_runs (kind lookup), one row per completed lookup that was not served from cache', generated_at: d.generated_at }, 200, { 'cache-control': 'public, max-age=60' });
   } catch (e) { return out({ error: 'db' }, 503); }
 }
+// photo check (batch 10, b10a): every named project with its market, and one public point per market (Natural Earth / GeoNames,
+// key market_points of /data/similar.json). Never per-project coordinates. Sumba is left out (conflict of interest, see kbx_named.js).
+let PTS = null;
+async function points(env) {
+  if (PTS && Date.now() - PTS.t < 600000) return out(PTS.v, 200, { 'cache-control': 'public, max-age=3600' });
+  try {
+    const nm = await import('./kbx_named.js');
+    const [ix, simR] = await Promise.all([nm.data(env), env.ASSETS ? env.ASSETS.fetch(new Request('https://kolaboro.com/_s/kolaboro.com/data/similar.json')) : fetch('https://kolaboro.com/data/similar.json')]);
+    const sim = simR.ok ? await simR.json() : {}, mp = (sim.market_points && sim.market_points.markets) || {}, markets = {};
+    const projects = ix.P.filter(x => x.s && x.n && x.mk && mp[x.mk]).map(x => [x.s, x.n, x.mk]).sort((a, b) => a[1].localeCompare(b[1]));
+    Object.keys(mp).forEach(k => { if (k.toLowerCase() !== 'sumba') markets[k] = { lat: mp[k].lat, lng: mp[k].lng, place: mp[k].place || k, src: mp[k].src || null }; });
+    const v = { version: 'photo-points-1', generated: new Date().toISOString(), what: 'One public point per market (rounded to about 1 km), not the project plot. Built from /data/similar.json market_points.', method_url: 'https://kolaboro.com/data/similar.json', markets, projects };
+    PTS = { t: Date.now(), v };
+    return out(v, 200, { 'cache-control': 'public, max-age=3600' });
+  } catch (e) { return out({ error: 'points_unavailable' }, 503); }
+}
 export async function handle(req, u, env, ctx) {
   const p = u.pathname.replace(/\/+$/, '');
   if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: { 'access-control-allow-origin': '*', 'access-control-allow-headers': 'x-api-key, content-type', 'access-control-allow-methods': 'GET, POST, OPTIONS', 'access-control-max-age': '86400' } });
@@ -607,6 +649,7 @@ export async function handle(req, u, env, ctx) {
   if (req.method !== 'GET') return out({ error: 'method' }, 405);
   if (p === '/api/kb/lookup/coverage') { const v = await coverage(env); return v ? out(v, 200, { 'cache-control': 'public, max-age=600' }) : out({ error: 'coverage file missing' }, 503); }
   if (p === '/api/kb/lookup/stats') return stats(ctx);
+  if (p === '/api/kb/lookup/points') return points(env);
   let m = p.match(/^\/api\/kb\/lookup\/raw\/([0-9a-f]{64})$/);
   if (m) { const r = await caches.default.match(RAWKEY(m[1])); if (!r) return out({ error: 'not_in_edge_cache', note: 'Raw responses are kept 30 days in the edge cache of the data centre that made the lookup.' }, 404);
     return new Response(r.body, { headers: { 'content-type': 'text/plain; charset=utf-8', 'x-content-type-options': 'nosniff', 'content-security-policy': "default-src 'none'", 'access-control-allow-origin': '*', 'cache-control': 'public, max-age=86400' } }); }

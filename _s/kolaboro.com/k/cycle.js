@@ -295,6 +295,7 @@
   function upHtml(D){
     return '<h3 style="margin:0 0 4px;font-size:1rem" id="c7-uph">Upload a permit</h3><p class="c7-mut" style="margin:0">A building permit (PBG, IMB, SLF or the local equivalent), as a PDF or a photo, up to 2.8 MB. Our document reader transcribes it, then we look the permit number up on the official registers we can query. The file is read once and not stored, unless you add it to a case.</p>' +
       '<form class="c7-up" id="c7-upf" novalidate><label>Permit file<br><input type="file" name="f" accept="application/pdf,image/jpeg,image/png,image/webp" required></label>' +
+      '<div id="c7-pdfx" aria-live="polite"></div>' +
       '<label>Add the original to a case (optional)<br><select name="cs"><option value="">Do not store the file</option>' + (D.cases || []).map(function(c){ return '<option value="' + esc(c.id) + '">' + esc(c.code + ' · ' + (c.project_name || c.project_url || 'case')) + '</option>'; }).join('') + '</select></label>' +
       '<div class="c7-row"><button class="c7-btn" type="submit">Read the permit and check the register</button></div><p class="c7-err" id="c7-upe" role="alert"></p></form><div id="c7-upo" aria-live="polite"></div>';
   }
@@ -306,6 +307,10 @@
   }
   function bindUp(){
     var f = $('c7-upf'); if (!f || f.dataset.b) return; f.dataset.b = '1';
+    // batch 10 (b10a): in-browser tamper check of a PDF permit as soon as it is chosen (nothing uploaded by this check)
+    f.f.addEventListener('change', function(){ var file = f.f.files[0], o = $('c7-pdfx'); if (!o) return; if (!file || !/pdf$/i.test(file.type)) { o.innerHTML = ''; return; }
+      var go = function(){ window.KBPDF.check(file, o); };
+      if (window.KBPDF) go(); else { var sc = document.createElement('script'); sc.src = '/tools/pdf-check/inline.js?v=b10a1'; sc.onload = go; document.head.appendChild(sc); } });
     f.onsubmit = function(e){ e.preventDefault(); var file = f.f.files[0], er = $('c7-upe'), out = $('c7-upo'); er.textContent = '';
       if (!file) { er.textContent = 'Choose the permit file first.'; f.f.focus(); return; }
       if (!/^(application\/pdf|image\/(jpeg|png|webp))$/.test(file.type)) { er.textContent = 'Use a PDF, JPG, PNG or WebP file.'; return; }

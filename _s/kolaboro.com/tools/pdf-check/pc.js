@@ -126,6 +126,23 @@
       F.push([4, finding('info', 'Font patterns', '<ul>' + lines.join('') + '</ul>', 'Pages that use a font no other page uses can be a cover page, a table or a pasted-in section. Compare them with the rest.', 'On their own these patterns are common in genuine files.')]);
     }
 
+    // fonts mixed inside one line (batch 10)
+    var ml = rep.mixedLines || [], mlr = ml.filter(function (l) { return l.rare && l.rare.length; });
+    if (ml.length) {
+      var mlRow = function (l) {
+        var t = l.parts && l.parts.every(function (x) { return x.text != null; }) ? l.parts.map(function (x) { return '<span class="ft-mx' + (l.rare.indexOf(x.fam) >= 0 ? ' hot' : '') + '" title="' + esc(x.fam) + '">' + esc(x.text) + '</span>'; }).join('') : '<i>text not readable as plain characters</i>';
+        return '<li>Page ' + l.page + ': ' + t + ' <span class="ft-file">(' + l.fams.map(esc).join(' + ') + ')</span></li>';
+      };
+      var show = (mlr.length ? mlr : ml).slice(0, 8);
+      if (mlr.length) look++;
+      F.push([mlr.length ? 1 : 4, finding(mlr.length ? 'look' : 'info', mlr.length ? plural(mlr.length, 'line') + ' mix in a font used almost nowhere else' : plural(rep.mixedLinesTotal || ml.length, 'line') + ' use two font families',
+        '<ul>' + show.map(mlRow).join('') + ((mlr.length || ml.length) > 8 ? '<li>and ' + ((mlr.length || ml.length) - 8) + ' more</li>' : '') + '</ul><p class="ft-file">Highlighted: text in a font family that appears on 3 lines or fewer in the whole file. Bold and italic of the same family count as one family.</p>',
+        mlr.length ? 'Part of a line was written in a different font from the words around it. When someone types over a price, a date or a name in a finished PDF, the editor usually cannot reuse the original font, so the new words come out in another one.' : 'Lines that switch font family part-way. In genuine files this is common for labels, numbers in tables or symbols.',
+        'A different font alone is not proof of an edit: templates mix fonts on purpose. Compare the highlighted words with an earlier copy of the document.')]);
+    } else if (rep.lineScan && rep.lineScan.lines) {
+      F.push([4, finding('ok', 'No line mixes font families', '<p>' + plural(rep.lineScan.lines, 'printed line') + ' on ' + plural(rep.lineScan.pages, 'page') + ' checked' + (rep.lineScan.approx ? ' (some page content could not be decoded)' : '') + '.</p>', 'Each line is written in one font family (bold and italic count as the same family).', 'An edit made with the same font, or a page that was scanned or rebuilt, leaves no font trace.')]);
+    }
+
     // active content
     var A = rep.active || {}, al = [];
     if (A.js || A.jsNames) al.push('JavaScript (' + (A.js || 1) + ' script' + ((A.js || 1) === 1 ? '' : 's') + (A.jsWhere && A.jsWhere.length ? ', ' + esc(A.jsWhere.join(', ')) : '') + ')');
