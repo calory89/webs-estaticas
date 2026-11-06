@@ -15,8 +15,19 @@
 //   POST /api/x/y/asks/get {t} | /report {t, answered, answered_on, checkable}
 //   GET  /api/x/y/asks/stats?id=X           response figures, only for groups with 5 or more reports
 // Tables: scratchpad m12/y.sql. Until applied, everything that stores answers {ready:false} and the pages say "opens soon".
-// Email: Brevo (the provider already authenticated for kolaboro.com in DNS). Needs the worker secret BREVO_API_KEY.
+// Email: Brevo (the provider already authenticated for kolaboro.com in DNS). With the worker secret BREVO_API_KEY the worker sends
+// directly; without it, through the DB outbox (RPC kolaboro_worker_mail, worker key only, per-recipient daily limit; the key stays in the
+// DB and the existing kolaboro-send cron delivers within a minute).
 import { json, rpc, rpcW, sha, claude, openData } from './kolaboro.js';
+
+// Is there a way to send? Direct key, or the DB outbox RPC (probed once a minute with a call it refuses: no kind, nothing queued).
+let MAILER = { t: 0, v: false };
+async function mailer(env) {
+  if (env.BREVO_API_KEY) return 'direct';
+  if (Date.now() - MAILER.t < 60000) return MAILER.v ? 'outbox' : null;
+  let v = false; try { const r = await rpcW('kolaboro_worker_mail', { p_to: 'probe@kolaboro.test', p_subject: 'probe', p_html: 'probe', p_kind: 'probe', p_dedupe: 'probe-none' }); v = !!(r && r.error === 'kind'); } catch (e) {}
+  MAILER = { t: Date.now(), v }; return v ? 'outbox' : null;
+}
 
 export const PATHS = /^\/api\/x\/y(\/|$)/;
 
@@ -76,9 +87,9 @@ export async function handle(req, u, env, ctx) {
 }
 
 async function status(env) {
-  const r = await ready();
+  const [r, ml] = await Promise.all([ready(), mailer(env)]);
   const pr = await asset(env, '/data/promises.json');
-  return out({ alerts: { table: r.alerts, email_sender: !!env.BREVO_API_KEY, open: r.alerts && !!env.BREVO_API_KEY, parser: !!env.ANTHROPIC_API_KEY },
+  return out({ alerts: { table: r.alerts, email_sender: !!ml, open: r.alerts && !!ml, parser: !!env.ANTHROPIC_API_KEY },
     asks: { table: r.asks, open: r.asks }, promises: pr ? { updated: pr.updated, projects: (pr.counts || {}).projects, promises: (pr.counts || {}).promises } : null },
     200, { 'cache-control': 'public, max-age=60' });
 }
@@ -204,8 +215,12 @@ async function alertParse(req, env, ctx) {
   if (!Object.keys(filter).length) return out({ error: 'empty', message: 'We could not turn this into a filter our data can check. Name a market or country and what must be published, for example: "Bali, under 300k USD, permit and escrow".', not_used: warn }, 422);
   return out({ text, filter, labels: labels(filter), not_used: warn, ...preview(cases, filter), data_updated: d.updated, model: HAIKU, cached, check: 'Every field was checked in code against the public data: places must exist in the database, numbers must be in range.' });
 }
-async function sendMail(env, to, subject, text, html, stopUrl) {
-  if (!env.BREVO_API_KEY) return { ok: false, error: 'no_sender' };
+async function sendMail(env, to, subject, text, html, stopUrl, kind, dedupe) {
+  if (!env.BREVO_API_KEY) {
+    if (!(await mailer(env))) return { ok: false, error: 'no_sender' };
+    try { const r = await rpcW('kolaboro_worker_mail', { p_to: to, p_subject: subject, p_html: html, p_kind: kind, p_dedupe: dedupe, p_stop_url: stopUrl || null }); return r && r.ok ? { ok: true, via: 'outbox' } : { ok: false, error: (r && r.error) || 'db' }; }
+    catch (e) { return { ok: false, error: 'db' }; }
+  }
   const h = { sender: { name: 'Kolaboro alerts', email: env.KB_MAIL_FROM || 'alerts@kolaboro.com' }, to: [{ email: to }], subject, textContent: text, htmlContent: html };
   if (stopUrl) h.headers = { 'List-Unsubscribe': '<' + stopUrl + '>' };
   try {
@@ -215,8 +230,8 @@ async function sendMail(env, to, subject, text, html, stopUrl) {
 }
 const esc = t => String(t == null ? '' : t).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 async function alertSave(req, env, ctx) {
-  const r = await ready();
-  if (!r.alerts || !env.BREVO_API_KEY) return out({ error: 'not_open', message: 'Email alerts open soon: ' + (!r.alerts ? 'the alerts table is not installed yet' : 'the email sender is not connected yet') + '. Nothing was saved.' }, 503);
+  const [r, ml] = await Promise.all([ready(), mailer(env)]);
+  if (!r.alerts || !ml) return out({ error: 'not_open', message: 'Email alerts open soon: ' + (!r.alerts ? 'the alerts table is not installed yet' : 'the email sender is not connected yet') + '. Nothing was saved.' }, 503);
   const b = await body(req); if (!b) return out({ error: 'input' }, 400);
   const email = String(b.email || '').trim().toLowerCase(), text = String(b.text || '').replace(/\s+/g, ' ').trim().slice(0, 300);
   if (!EMAIL_RE.test(email) || email.length > 160) return out({ error: 'email', message: 'That email does not look right.' }, 400);
@@ -230,12 +245,12 @@ async function alertSave(req, env, ctx) {
   const link = SITE + '/search-alerts/?confirm=' + t, stop = SITE + '/search-alerts/?stop=' + t;
   const L = labels(filter).map(x => x.t);
   const m = await sendMail(env, email, 'Confirm your Kolaboro alert', 'You asked Kolaboro: "' + text + '"\n\nWe read it as:\n- ' + L.join('\n- ') + '\n\nConfirm the alert: ' + link + '\n\nIf you did not ask for this, ignore this email: nothing is sent without confirmation, and the request expires in 7 days.\nStop this alert at any time: ' + stop + '\n',
-    '<p>You asked Kolaboro: <i>' + esc(text) + '</i></p><p>We read it as:</p><ul>' + L.map(x => '<li>' + esc(x) + '</li>').join('') + '</ul><p><a href="' + link + '">Confirm the alert</a></p><p style="color:#59626B;font-size:13px">If you did not ask for this, ignore this email: nothing is sent without confirmation, and the request expires in 7 days.</p>', stop);
-  if (!m.ok) return out({ error: 'mail', message: 'Saved, but the confirmation email could not be sent. Try again later.' }, 502);
+    '<p>You asked Kolaboro: <i>' + esc(text) + '</i></p><p>We read it as:</p><ul>' + L.map(x => '<li>' + esc(x) + '</li>').join('') + '</ul><p><a href="' + link + '">Confirm the alert</a></p><p style="color:#59626B;font-size:13px">If you did not ask for this, ignore this email: nothing is sent without confirmation, and the request expires in 7 days.</p>', stop, 'alert_confirm', 'yconf:' + th.slice(0, 40));
+  if (!m.ok) return out({ error: 'mail', message: m.error === 'limit' ? 'Saved, but this address already got the most alert emails we send in a day. Try again tomorrow.' : 'Saved, but the confirmation email could not be sent. Try again later.' }, 502);
   return out({ ok: true, message: 'Check your inbox: the alert starts when you click the confirmation link.', matching_today: seen.length });
 }
 async function stopSig(env, emailHash) {   // "stop every alert of this address" link in digests; we keep only token hashes, so it is signed instead
-  const sec = env.KB_SIGN_KEY || env.BREVO_API_KEY; if (!sec) return null;
+  const sec = env.KB_SIGN_KEY || env.BREVO_API_KEY || env.KB_HOOK_KEY; if (!sec) return null;   // worker secrets only, never a constant
   const k = await crypto.subtle.importKey('raw', te.encode('kolaboro-y-stop-v1|' + sec), { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']);
   return [...new Uint8Array(await crypto.subtle.sign('HMAC', k, te.encode(emailHash)))].slice(0, 16).map(x => x.toString(16).padStart(2, '0')).join('');
 }
@@ -280,7 +295,7 @@ async function alertRun(req, env) {
   let cl = null; try { cl = await githubOidc(req, 'kolaboro-followup.yml'); } catch (e) {}
   if (!cl) return out({ error: 'unauthorized' }, 401);
   if (!(await ready()).alerts) return out({ ok: true, skipped: 'alerts table not installed' });
-  if (!env.BREVO_API_KEY) return out({ ok: true, skipped: 'email sender not connected' });
+  if (!(await mailer(env))) return out({ ok: true, skipped: 'email sender not connected' });
   const [d, job] = await Promise.all([openData(), rpcW('kolaboro_y_alert_job', {})]);
   if (!job || job.error) return out({ ok: false, error: 'job' }, 503);
   const cases = d.cases || [], by = {}; cases.forEach(c => { by[c.id] = c; });
@@ -304,7 +319,7 @@ async function alertRun(req, env) {
       '\n\nProjects are anonymous until verification is complete. Public checks are what the developer publishes, not proof that it is true.\nStop all your Kolaboro alerts: ' + stopAll + '\n';
     const html = '<p>New projects in the Kolaboro database match your alert' + (parts.length > 1 ? 's' : '') + '.</p>' + parts.map(x => '<p><b>' + esc(x.a.sentence) + '</b></p><ul>' + x.N.slice(0, 20).map(id => '<li><a href="' + SITE + '/p/?id=' + id + '">' + esc(row(id)) + '</a></li>').join('') + '</ul>' + (x.N.length > 20 ? '<p>and ' + (x.N.length - 20) + ' more.</p>' : '')).join('') +
       '<p style="color:#59626B;font-size:13px">Projects are anonymous until verification is complete. Public checks are what the developer publishes, not proof that it is true. <a href="' + stopAll + '">Stop all your Kolaboro alerts</a>.</p>';
-    const r = await sendMail(env, to, n + ' new project' + (n === 1 ? '' : 's') + ' match your Kolaboro alert', txt, html, stopAll);
+    const r = await sendMail(env, to, n + ' new project' + (n === 1 ? '' : 's') + ' match your Kolaboro alert', txt, html, stopAll, 'alert_digest', 'ydig:' + eh.slice(0, 40) + ':' + new Date().toISOString().slice(0, 10));
     if (!r.ok) { failed++; continue; }
     digests.push({ email_hash: eh, alerts: parts.length, projects: n });
     parts.forEach(x => updates.push({ id: x.a.id, seen: [...new Set([...(x.a.seen || []), ...x.M])], sent: true }));

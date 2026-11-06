@@ -6,8 +6,8 @@
   var CUR = null, OPEN = false;
   fetch('/api/x/y/status').then(function(r){ return r.json(); }).then(function(s){
     var a = s.alerts || {}; OPEN = !!a.open;
-    $('saopentxt').innerHTML = OPEN ? '<b>Email alerts are open.</b> At most one email a day, a stop link in every email.' :
-      '<b>Email alerts open soon.</b> You can already write and check an alert below; saving it needs ' + (!a.table && !a.email_sender ? 'the alerts table and the email sender, which are not connected yet.' : !a.table ? 'the alerts table, which is not installed yet.' : 'the email sender, which is not connected yet.') + ' Nothing is stored until then.';
+    $('saopentxt').innerHTML = OPEN ? '<b>Email alerts are open.</b> The confirmation email usually arrives within a few minutes; check spam if it does not. At most one alert email a day, a stop link in every email.' :
+      '<b>Email alerts open soon.</b> You can already write and check an alert below; saving it needs ' + (!a.table && !a.email_sender ? 'the alerts table and the email sender, which are not connected yet.' : !a.table ? 'the alerts table, which is not installed yet.' : 'the email sender, which is not reachable right now.') + ' Nothing is stored until then.';
     if (!OPEN) { $('sasavebtn').disabled = true; $('saemail').disabled = true; }
   }).catch(function(){ $('saopentxt').textContent = 'Could not check whether alerts are open.'; });
   Array.prototype.forEach.call(document.querySelectorAll('[data-ex]'), function(b){ b.addEventListener('click', function(){ $('satext').value = b.getAttribute('data-ex'); $('satext').focus(); }); });

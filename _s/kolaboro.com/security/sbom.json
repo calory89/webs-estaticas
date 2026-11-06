@@ -6528,13 +6528,13 @@
     },
     {
      "alg": "SHA-256",
-     "content": "7c2f59dd7343e86a4ac7e9840878d90ee72169c049cd17b036bb6c75a2c90b40"
+     "content": "6ce9124203ef64b22d3bfda006f0e2d93c02780a9b28e3ef650a0c2b9bac9543"
     }
    ],
    "externalReferences": [
     {
      "type": "distribution",
-     "url": "https://kolaboro.com/search-alerts/sa.js?v=7e06f53648"
+     "url": "https://kolaboro.com/search-alerts/sa.js?v=0772168834"
     }
    ],
    "properties": [
