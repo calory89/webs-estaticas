@@ -78,7 +78,7 @@ function words(a, b) {
 }
 const short = (t, n) => { t = mask(norm(t)); return t.length > n ? t.slice(0, n) + ' …' : t; };
 
-const CSS = '<style>.kd-v{width:100%;border-collapse:collapse;font-size:.92rem}.kd-v th,.kd-v td{text-align:start;padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:top}.kd-v code{font-size:.8rem;overflow-wrap:anywhere}' +
+const CSS = '<style>.kwrap .ki code{white-space:normal;overflow-wrap:anywhere;word-break:break-all}.kd-v{width:100%;border-collapse:collapse;font-size:.92rem}.kd-v th,.kd-v td{text-align:start;padding:7px 8px;border-bottom:1px solid var(--line);vertical-align:top}.kd-v code{font-size:.8rem;overflow-wrap:anywhere}' +
   '.kd-sum{overflow-wrap:anywhere;border:2px solid var(--ink);border-radius:16px;padding:14px 16px;margin:14px 0}.kd-g{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0;border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:14px 0}' +
   '.kd-h{font-weight:700;padding:10px 12px;background:var(--card,var(--paper));border-bottom:1px solid var(--line);font-size:.9rem;overflow-wrap:anywhere}.kd-c{padding:8px 12px;border-bottom:1px dashed var(--line);font-size:.93rem;line-height:1.5;overflow-wrap:anywhere;min-width:0}' +
   '.kd-c.l{border-inline-end:1px solid var(--line)}.kd-c.del{background:#FDE7E1}.kd-c.add{background:#E3F4EA}.kd-c.empty{background:repeating-linear-gradient(45deg,transparent 0 6px,rgba(0,0,0,.03) 6px 12px)}.kd-c del{background:#F6B9A8;text-decoration:line-through;color:inherit}.kd-c ins{background:#A9E0BF;text-decoration:none;color:inherit}' +
@@ -152,7 +152,7 @@ export async function diffRoute(req, u, env, ctx, shell, x, sha) {
   const desc = n > 1 ? 'Side-by-side, dated comparison of the ' + x.n + ' developer page text across ' + n + ' archived versions, with sealed SHA-256 copies.' : 'Archived copy of the ' + x.n + ' developer page text with its SHA-256 fingerprint.';
   const pg = { title, desc, canon, body, noindex: !!u.search || n < 2, lastmod: '', alt: () => canon,
     ld: { '@context': 'https://schema.org', '@type': 'WebPage', url: canon, name: title.replace(/ \| Kolaboro$/, ''), description: desc, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' }, about: { '@id': ORIGIN + '/projects/' + x.s + '/#place' } } };
-  const ck = new Request(ORIGIN + '/__named_diff/v2/' + encodeURIComponent(P.updated || '') + '/' + x.s + '/' + encodeURIComponent(u.search));
+  const ck = new Request(ORIGIN + '/__named_diff/v3/' + encodeURIComponent(P.updated || '') + '/' + x.s + '/' + encodeURIComponent(u.search));
   try { const hit = await caches.default.match(ck); if (hit) return new Response(hit.body, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-cache', 'x-named-cache': 'hit' } }); } catch (e) {}
   const html = await assemble(pg, 'en', await shell('/how-we-score/'));
   try { const put = caches.default.put(ck, new Response(html, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'max-age=3600' } })); if (ctx && ctx.waitUntil) ctx.waitUntil(put.catch(() => {})); } catch (e) {}
