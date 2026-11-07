@@ -484,7 +484,7 @@ async function repliesPublished() {   // approved developer replies, part of the
 }
 export async function redirectP(u, env) {   // /p/<id>/ -> /projects/<slug>/ (301), or null to keep the old page
   try {
-    const ix = await data(env), id = decodeURIComponent(u.pathname.split('/')[2] || '').toUpperCase();
+    const ix = await data(env), id = (decodeURIComponent(u.pathname.split('/')[2] || '') || u.searchParams.get('id') || '').toUpperCase();   // /p/<id>/ or the old /p/?id=<id>
     const x = ix.byId.get(id); if (!x) return null;
     return new Response(null, { status: 301, headers: { location: '/projects/' + x.s + '/', 'cache-control': 'public, max-age=86400' } });
   } catch (e) { return null; }

@@ -7,8 +7,8 @@ Kolaboro trains local people, guided by an AI copilot, to verify off-plan proper
 Live totals at generation (GET /api/open/stats): 1116 tracked projects in 170 markets and 96 countries, data updated 2026-11-05.
 Kolaboro is operated by Equinox Investment Group LLC (Wyoming, USA) and gives independent verification and information, not legal, tax or financial advice.
 
-## Anonymity (read this before quoting anything)
-Projects are anonymous: they are identified by ids such as BALI-014. Kolaboro does not publish developer names, project names or source URLs for tracked projects until verification is complete and the developer has had 10 working days to reply. Do not try to re-identify a project, and do not present an anonymous id as a named development. Scores describe what is public about a project, not whether it is genuine.
+## Named projects and anonymity (read this before quoting anything)
+Each tracked project has its own page with its name and sourced facts only, at https://kolaboro.com/projects/{slug}/ (and /{lang}/projects/{slug}/). The developer can reply on that page, and Kolaboro publishes verified replies after review. Open data records use ids such as BALI-014; the named pages map them to names. Projects in Sumba stay anonymous, because a founder develops a project there (https://kolaboro.com/independence/): do not try to re-identify them. Scores describe what is public about a project, not whether it is genuine.
 
 ## How the scores work
 Each project is checked on the same six points (fields of GET /api/open/projects/{id}, object checks): permit_public (a permit number is public; permit_claimed says a permit is only claimed), deposit_protection, progress (public construction progress), plans, track_record and no_guaranteed_returns. score (0 to 6, max in field max) counts what the developer makes public; vscore (0 to 6) counts what an official register or an independent source confirms. verification gives the level of each check (for example an official register, an independent source, the developer only, or contradicted). flags counts public problems; all_six_public is true when all six are public and there are no flags. Method page: https://kolaboro.com/how-we-score/
@@ -195,7 +195,7 @@ Night lights at finished projects (id: night-lights)
 
 Visual changes on developer pages (id: visual-diff)
   URL: https://kolaboro.com/data/visual-diff.json
-  Where the pages of tracked developer websites visibly changed, as page geometry only. No screenshots are published because they would identify anonymous projects.
+  Where the pages of tracked developer websites visibly changed, as page geometry only. No screenshots are published, because they would copy the developers' own copyrighted images.
   Size 49.3 KB; 430 projects; SHA-256 032acaab68f56c795a7aa8ba1f9bb4ddb2417e89e96bd11d34e696eff6667674; licence CC BY 4.0 (credit: Kolaboro, kolaboro.com).
   Updates: daily 15:23 UTC. Last updated: 2026-11-05. Freshness target 3 days.
   Schema: https://kolaboro.com/api/x/data/schema/visual-diff.json

@@ -77,7 +77,7 @@
 <li><b>checks_public</b> (0 to 6): how many of the six buyer checks the project makes public: permit, deposit protection, construction progress, plans, developer track record, no guaranteed returns. A high number means documents are public, not that they are genuine.</li>
 <li><b>checks_confirmed</b> (0 to 6): how many of those were confirmed by an official registry or an independent source. <b>level_*</b> says how each check was confirmed: registry, independent, developer (self-declared), contradicted or none.</li>
 <li><b>claims_*</b>: developer claims we tested, by result. <b>advertised_yield_pct</b> is what the developer advertises, not a return anyone has measured.</li>
-<li>Projects are anonymous (ids like BALI-014) until verification is complete. The file holds the fields already public in <a href="/data/bali-cases.json">/data/bali-cases.json</a> and nothing else. Some markets have only one or two projects: averages there say little, so the example queries filter small groups out.</li>
+<li>Projects appear by id (like BALI-014); each one also has its own page with its name and sourced facts. The file holds the fields already public in <a href="/data/bali-cases.json">/data/bali-cases.json</a> and nothing else. Some markets have only one or two projects: averages there say little, so the example queries filter small groups out.</li>
 </ul>
 
 <h2>Use it outside the browser</h2>
@@ -184,7 +184,7 @@ GROUP BY country ORDER BY projects DESC;</div>
     <p class="fine">© 2026 Kolaboro, operated by Equinox Investment Group LLC, 30 N Gould St Ste N, Sheridan, WY 82801, USA. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Reports are opinions based on the evidence listed in them.</p>
   </div>
 </footer>
-<script src="/open/kolaboro-verify.js?v=5c8f2ef50f" defer></script><script src="/sql/sql.js?v=9da17ec754" defer></script><script src="/k/ask.js?v=544be9f9c8" defer></script><script src="/k/pipeline.js?v=e0202822da" defer></script><script src="/k/site.js?v=1bf7542d41" defer></script><script src="/k/prov.js?v=85080e1313" defer></script>
+<script src="/open/kolaboro-verify.js?v=5c8f2ef50f" defer></script><script src="/sql/sql.js?v=9da17ec754" defer></script><script src="/k/ask.js?v=544be9f9c8" defer></script><script src="/k/pipeline.js?v=e0202822da" defer></script><script src="/k/site.js?v=884dc4eeb4" defer></script><script src="/k/prov.js?v=85080e1313" defer></script>
 <script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script>
 <div class="cc" id="cc" role="dialog" aria-label="Cookies" hidden><p>We use analytics cookies to improve Kolaboro. <a href="/legal/privacy/">Privacy</a></p><div><button class="btn btn-line btn-sm" data-cc="no">Only necessary</button><button class="btn btn-hi btn-sm" data-cc="yes">Accept</button></div></div>
 <script>(function(){var EU=["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"];var st=null;try{st=localStorage;}catch(e){}var c=st&&st.getItem('kb-consent');if(c)return;

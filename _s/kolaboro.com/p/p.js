@@ -1,4 +1,5 @@
-/* Kolaboro project file: /p/?id=BALI-014. Renders one anonymous project from /data/bali-cases.json */
+/* Kolaboro project file: /p/<id>/. Since 5 Nov 2026 every named project 301s to /projects/<slug>/ (worker); this page now renders only
+   the projects that stay anonymous (Sumba, conflict of interest) from /data/bali-cases.json */
 (function(){
   var CK = [
     ['permit', 'Permit or licence number', 'An official permit or sales licence number a buyer can look up.'],
@@ -121,7 +122,7 @@
       '<p class="crumb"><a href="/">Kolaboro</a> / <a href="/cases">Live cases</a> / <a href="/cases?q=' + encodeURIComponent(c.market) + '">' + esc(c.market) + '</a> / ' + esc(c.id) + '</p>' +
       '<div class="pf-top"><span class="pf-id">' + esc(c.id) + '</span><span class="pf-tier" style="color:' + t[1] + '">' + t[0] + '</span></div>' +
       '<h1>' + esc(h1) + '</h1>' +
-      '<p class="lead">An anonymous project file. We publish what the developer says in public and what an official register or an independent source confirms. Names stay hidden until a verification is finished and the developer has had time to reply.</p>' +
+      '<p class="lead">An anonymous project file. Projects in Sumba stay anonymous, because a founder develops a project there (<a href="/independence/">independence</a>); every other project has its own page with its name. We publish what the developer says in public and what an official register or an independent source confirms.</p>' +
       '<dl class="pf-facts">' + facts.map(function(f){ return '<div><dt>' + f[0] + '</dt><dd>' + esc(f[1]) + '</dd></div>'; }).join('') + '</dl>' +
       '<div class="pf-act"><a class="btn btn-hi" href="/compare/?ids=' + ids.map(encodeURIComponent).join(',') + '">Compare with similar projects</a><button type="button" class="btn btn-line" id="pf-follow" aria-expanded="false" aria-controls="pf-fol">Email me when it changes</button><a class="btn btn-line" href="/alerts/?id=' + encodeURIComponent(c.id) + '">Browser alerts</a>' + starBtn +
       '<button type="button" class="btn btn-line" id="pf-print">Download dossier (PDF)</button></div>' +
@@ -156,7 +157,7 @@
       '</div></section>' +
 
       '<section class="pf-sec"><div class="wrap"><h2>Developer claims tested</h2>' +
-      '<p class="sub">Each claim was checked against an official register, an independent source (regulator, court, filing, press) or only the developer\'s own material. The source links stay private while the project is anonymous, because they would identify it; they are published with the verdict.</p>' +
+      '<p class="sub">Each claim was checked against an official register, an independent source (regulator, court, filing, press) or only the developer\'s own material. The source links are not shown here, because they would identify this anonymous project.</p>' +
       (ct ? '<p class="sub">We tested ' + ct + ' claim' + (ct === 1 ? '' : 's') + ' from the developer\'s own marketing against registers, courts and press.</p>' +
         '<div class="pf-claims" role="img" aria-label="' + cl.verified + ' verified, ' + cl.unverified + ' unverified, ' + cl.contradicted + ' contradicted"><i style="width:' + pct(cl.verified) + '%;background:#0B7A55"></i><i style="width:' + pct(cl.unverified) + '%;background:#B9B4A8"></i><i style="width:' + pct(cl.contradicted) + '%;background:#C9461A"></i></div>' +
         '<div class="pf-cl"><span style="--c:#0B7A55">Verified <b>' + cl.verified + '</b></span><span style="--c:#B9B4A8">Unverified <b>' + cl.unverified + '</b></span><span style="--c:#C9461A">Contradicted <b>' + cl.contradicted + '</b></span></div>'
@@ -286,7 +287,7 @@
   function webHtml(j, c){
     var w = j && j.website, M = j && j.website_meta;
     if (!M) return '<p class="pf-wait">Starting: the daily website-age job has not published its first results yet. This section fills in automatically once it has.</p>';
-    var src = '<p class="pf-fine">Source: RDAP (the registry\'s own record, found through the IANA bootstrap) and Certificate Transparency logs (crt.sh)' + (w && w.checked ? ', checked ' + esc(w.checked) : '') + '. The domain itself is not shown, because projects stay anonymous until verification is complete. Certificate logs are complete only from 2018, and a domain can change hands, so an old domain is not proof of an old company.</p>';
+    var src = '<p class="pf-fine">Source: RDAP (the registry\'s own record, found through the IANA bootstrap) and Certificate Transparency logs (crt.sh)' + (w && w.checked ? ', checked ' + esc(w.checked) : '') + '. The domain itself is not shown, because projects in Sumba stay anonymous. Certificate logs are complete only from 2018, and a domain can change hands, so an old domain is not proof of an old company.</p>';
     if (!w) return '<p class="sub">No website record for this project.</p>' + src;
     var f = w.founded_claim;
     if (w.site !== 'own') return '<p class="pf-call ok" style="border-color:var(--line);background:#fff">The page we track for this project is on a third-party site (a listing portal, agent or news site), so its domain age says nothing about the developer and we do not date it.' + (f ? ' The developer states it was founded in <b>' + f + '</b>; we have not dated its own website.' : '') + '</p>' + src;

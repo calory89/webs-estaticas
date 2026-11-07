@@ -738,7 +738,7 @@ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.c
       '<a href="https://twitter.com/intent/tweet?text=' + t + '&url=' + u + '" target="_blank" rel="noopener" data-ev="share_x">X</a>' +
       '<a href="mailto:?subject=' + encodeURIComponent(data.title) + '&body=' + encodeURIComponent(data.text + '\n\n' + data.url) + '" data-ev="share_email">Email</a>' +
       '<button type="button" data-kx-copy data-ev="share_copy">Copy link</button></div><p class="kx-sh-s" role="status" aria-live="polite"></p>' +
-      '<p class="kx-note">Only public, anonymous project data and the link are shared. Nothing you typed on this site is included.</p>';
+      '<p class="kx-note">Only public project data and the link are shared. Nothing you typed on this site is included.</p>';
     var d = dialog('kx-share', data.heading || 'Share', body, op), s = d.querySelector('.kx-sh-s');
     d.querySelector('[data-kx-copy]').addEventListener('click', function () { copyText(data.url, function (ok) { s.textContent = ok ? 'Link copied.' : 'Could not copy. Select the link above and copy it.'; }); });
     var nb = d.querySelector('[data-kx-native]'); if (nb) nb.addEventListener('click', function () { navigator.share({ title: data.title, text: data.text, url: data.url }).catch(function () {}); });
@@ -840,7 +840,7 @@ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.c
       var sb = btn('Share'); sb.setAttribute('data-ev', 'share_project'); row.appendChild(sb);
       sb.addEventListener('click', function () {
         var f = facts(), sc = D.querySelectorAll('.pf-sc .n b');
-        var txt = id + ' · ' + (f.Market || '') + (f.Country ? ', ' + f.Country : '') + ' · ' + (((D.querySelector('.pf-tier') || {}).textContent) || '').trim() + ' · ' + (sc[0] ? sc[0].textContent : '?') + ' of 6 buyer checks published, ' + (sc[1] ? sc[1].textContent : '?') + ' confirmed (Kolaboro, anonymous project file)';
+        var txt = id + ' · ' + (f.Market || '') + (f.Country ? ', ' + f.Country : '') + ' · ' + (((D.querySelector('.pf-tier') || {}).textContent) || '').trim() + ' · ' + (sc[0] ? sc[0].textContent : '?') + ' of 6 buyer checks published, ' + (sc[1] ? sc[1].textContent : '?') + ' confirmed (Kolaboro project file)';
         share({ kind: 'project', heading: 'Share ' + id, title: 'Kolaboro project file ' + id, text: txt, url: 'https://kolaboro.com/p/' + encodeURIComponent(id) + '/' }, sb);
       });
       offButton({ title: id + ': ' + ((D.querySelector('#pf h1') || {}).textContent || '').trim(), kind: 'project', sub: (facts().Market || '') }, row);
@@ -874,7 +874,7 @@ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.c
       (calls ? '<ul class="kx-sc-c">' + calls + '</ul>' : '') +
       (fp ? '<p class="kx-sc-p"><b>Evidence fingerprint (SHA-256 of the developer page as read):</b> <code>' + esc(fp.textContent) + '</code></p>' : '') +
       '<p class="kx-sc-d"><b>Dates:</b> ' + esc(fresh ? fresh.textContent.replace(/^⚠\s*/, '').replace(/\. Our agent.*$/, '.') : '') + ' Database updated ' + esc(updated || 'date not stated') + '. Printed ' + today + '.</p>' +
-      '<p class="kx-sc-f">Sources: developer claims come from the developer\'s own pages and listings; verification levels come from official registers, regulators, courts, stock-exchange filings and major newspapers. The project stays anonymous until a verification is finished and the developer has had time to reply. A published document is not proof that it is genuine. This scorecard is information, not legal, tax or financial advice. Method: kolaboro.com/how-we-score. Live version: ' + esc(url) + '</p>';
+      '<p class="kx-sc-f">Sources: developer claims come from the developer\'s own pages and listings; verification levels come from official registers, regulators, courts, stock-exchange filings and major newspapers. Every fact has its source, and the developer can reply on the project page. A published document is not proof that it is genuine. This scorecard is information, not legal, tax or financial advice. Method: kolaboro.com/how-we-score. Live version: ' + esc(url) + '</p>';
     var box = D.getElementById('kb-sc'); if (!box) { box = D.createElement('section'); box.id = 'kb-sc'; box.setAttribute('aria-hidden', 'true'); (D.getElementById('main') || D.body).appendChild(box); }
     box.innerHTML = h;
     var go = function () { H.classList.add('kb-print-sc'); var off = function () { H.classList.remove('kb-print-sc'); removeEventListener('afterprint', off); }; addEventListener('afterprint', off); try { window.print(); } catch (e) {} };

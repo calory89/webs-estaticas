@@ -83,7 +83,7 @@
   function listSec(C, label, showMarket){
     var top = C.slice().sort(byScore).slice(0, 4).map(function(c){ return c.id; });
     var h = '<section class="mk-sec" id="projects"><div class="wrap"><p class="eyebrow">Projects</p><h2>All ' + C.length + ' project' + (C.length === 1 ? '' : 's') + ' tracked in ' + esc(label) + '</h2>' +
-      '<p class="sub">Anonymous until a verification is finished. Published is how many of the 6 checks the developer makes public; confirmed is how many an official or independent source backs.</p>' +
+      '<p class="sub">Each project also has its own page with its name and sourced facts. Published is how many of the 6 checks the developer makes public; confirmed is how many an official or independent source backs.</p>' +
       '<div class="mk-tools" role="group" aria-label="Sort projects"><span class="lbl">Sort</span>' +
       '<button type="button" class="mk-sort" data-s="desc" aria-pressed="true">Score, high to low</button><button type="button" class="mk-sort" data-s="asc" aria-pressed="false">Score, low to high</button><button type="button" class="mk-sort" data-s="id" aria-pressed="false">ID</button></div>' +
       '<ol class="mk-list" id="mk-list"></ol><div class="mk-acts">';
@@ -114,13 +114,13 @@
     var cs = Object.keys(G).sort();
     var nm = 0; cs.forEach(function(c){ nm += Object.keys(G[c]).length; });
     $('mk-root').innerHTML = '<p class="eyebrow">Market files</p><h1 id="mk-h1">Every off-plan market we track</h1>' +
-      (miss ? '<p class="lead">We have no market or country called "' + esc(miss) + '" yet. Pick one below, or <a href="/check">tell us about your project</a>.</p>' : '<p class="lead">' + fmt(C.length) + ' anonymous projects in ' + nm + ' markets and ' + cs.length + ' countries. Pick a market for its disclosure numbers, transparency index and project list.</p>');
+      (miss ? '<p class="lead">We have no market or country called "' + esc(miss) + '" yet. Pick one below, or <a href="/check">tell us about your project</a>.</p>' : '<p class="lead">' + fmt(C.length) + ' projects in ' + nm + ' markets and ' + cs.length + ' countries. Pick a market for its disclosure numbers, transparency index and project list.</p>');
     $('mk-body').innerHTML = '<section class="mk-sec"><div class="wrap"><h2>Markets by country</h2><div class="mk-grp">' + cs.map(function(c){
       var ms = Object.keys(G[c]).sort(), tot = ms.reduce(function(s, m){ return s + G[c][m]; }, 0);
       return '<section><h3>' + (ms.length > 1 ? '<a href="' + clink(c) + '">' + esc(c) + '</a>' : esc(c)) + ' <small style="color:var(--muted);font-weight:600">' + tot + '</small></h3>' + chips(ms.map(function(m){ return { name: m, n: G[c][m], href: mlink(m) }; })) + '</section>';
     }).join('') + '</div></div></section>' + cta();
     setMeta(miss ? 'Market not found: all off-plan markets | Kolaboro' : 'Off-plan market files: ' + nm + ' markets, ' + cs.length + ' countries | Kolaboro',
-      'Disclosure, verification and transparency index for every off-plan property market Kolaboro tracks: ' + fmt(C.length) + ' anonymous projects in ' + nm + ' markets.', BASE);
+      'Disclosure, verification and transparency index for every off-plan property market Kolaboro tracks: ' + fmt(C.length) + ' projects in ' + nm + ' markets.', BASE);
   }
 
   function renderMarket(d, market, R){
@@ -130,7 +130,7 @@
     var sibs = Object.keys(sib).sort();
     $('mk-crumb').innerHTML = ' / ' + esc(market);
     $('mk-root').innerHTML = '<p class="eyebrow">Market file · ' + esc(country) + '</p><h1 id="mk-h1">Off-plan in ' + esc(market) + '</h1>' +
-      '<p class="lead">' + C.length + ' anonymous project' + (C.length === 1 ? '' : 's') + ' tracked in ' + esc(place) + '. What developers publish, what an official or independent source confirms, and what is contradicted. Data updated ' + esc(K.fmtDate ? K.fmtDate(d.updated) : d.updated) + '.</p>' +
+      '<p class="lead">' + C.length + ' project' + (C.length === 1 ? '' : 's') + ' tracked in ' + esc(place) + '. What developers publish, what an official or independent source confirms, and what is contradicted. Data updated ' + esc(K.fmtDate ? K.fmtDate(d.updated) : d.updated) + '.</p>' +
       '<div class="mk-tags"><span class="mk-tag">' + esc(country) + '</span><span class="mk-tag"><b>' + C.length + '</b> project' + (C.length === 1 ? '' : 's') + ' tracked</span>' + stageTags(C) + '</div>' + tiBlock(r, K.MIN || 3, R.rows.length);
     var L = listSec(C, market, false);
     $('mk-body').innerHTML =
@@ -165,7 +165,7 @@
     var RI = {}; R.rows.forEach(function(r){ RI[r.market] = r; });
     $('mk-crumb').innerHTML = ' / ' + esc(country);
     $('mk-root').innerHTML = '<p class="eyebrow">Country file</p><h1 id="mk-h1">Off-plan in ' + esc(country) + '</h1>' +
-      '<p class="lead">' + C.length + ' anonymous projects tracked across ' + ms.length + ' market' + (ms.length === 1 ? '' : 's') + ' in ' + esc(country) + '. Data updated ' + esc(K.fmtDate ? K.fmtDate(d.updated) : d.updated) + '.</p>' +
+      '<p class="lead">' + C.length + ' projects tracked across ' + ms.length + ' market' + (ms.length === 1 ? '' : 's') + ' in ' + esc(country) + '. Data updated ' + esc(K.fmtDate ? K.fmtDate(d.updated) : d.updated) + '.</p>' +
       '<div class="mk-tags"><span class="mk-tag"><b>' + ms.length + '</b> market' + (ms.length === 1 ? '' : 's') + '</span><span class="mk-tag"><b>' + C.length + '</b> project' + (C.length === 1 ? '' : 's') + ' tracked</span>' + stageTags(C) + '</div>';
     var L = listSec(C, country, true);
     $('mk-body').innerHTML =

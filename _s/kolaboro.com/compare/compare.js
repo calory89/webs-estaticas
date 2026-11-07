@@ -1,4 +1,4 @@
-/* Kolaboro compare: /compare/?ids=A,B,C. Puts 2 to 4 anonymous projects side by side from /data/bali-cases.json */
+/* Kolaboro compare: /compare/?ids=A,B,C. Puts 2 to 4 projects side by side from /data/bali-cases.json */
 (function(){
   var CK = [['permit', 'Permit or licence number'], ['escrow', 'Deposit protection'], ['progress', 'Construction progress'], ['plans', 'Site or floor plans'], ['record', 'Developer track record'], ['returns_ok', 'No guaranteed returns']];
   var LV = { registry: ['Registry', 4], independent: ['Confirmed', 3], developer: ['Not confirmed', 2], none: ['No source', 1], contradicted: ['Contradicted', 0] };

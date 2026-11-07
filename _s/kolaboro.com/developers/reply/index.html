@@ -45,7 +45,7 @@
 </header>
 <main id="main" data-clarity-mask="True">
 <section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / <a href="/developers/">Developers</a> / Right of reply</p><h1>Answer any finding, free</h1>
-<p class="lead">Every project in our database is anonymous. If you build one of them, you can answer what we found with documents: prove the project's domain is yours with one DNS record, attach your licence, permit or land title, and write your reply. A person reviews it, and only then is it published next to the finding. Developers never pay us, and paying is not possible.</p></div></section>
+<p class="lead">Each project has its own page with its name and sourced facts only. If you build one of them, you can answer what we found with documents: prove the project's domain is yours with one DNS record, attach your licence, permit or land title, and write your reply. A person reviews it, and only then is it published next to the finding. Developers never pay us, and paying is not possible.</p></div></section>
 <style>
 .dr{max-width:820px}.dr h2{margin-top:44px}.dr-st{border:2px solid var(--ink);border-radius:18px;padding:16px 18px;background:var(--paper);margin:0 0 22px;font-size:.98rem}
 .dr-st.soon{border-color:var(--hivis);background:#FFF2EA}.dr-st b{display:block;margin-bottom:4px}
@@ -107,7 +107,7 @@
 <label class="f">Which check or finding are you answering?<select name="topic"><option>Permit or licence number</option><option>Deposit protection (escrow, guarantee)</option><option>Construction progress</option><option>Plans and specification</option><option>Track record</option><option>Returns or rental language</option><option>A contradicted claim</option><option>A problem reported in public sources</option><option>Completion date or delay</option><option>Something else</option></select></label>
 </div>
 <label class="f">Your reply<textarea name="reply" rows="7" required minlength="20" maxlength="3000" data-msg="Please write a reply of at least 20 characters." placeholder="What is correct, and which document shows it"></textarea></label>
-<label class="dr-chk"><input type="checkbox" name="publish_company"> Publish our company name and domain with the reply. If unticked, the reply is published under the project id only and the project stays anonymous.</label>
+<label class="dr-chk"><input type="checkbox" name="publish_company"> Publish our company name and domain with the reply. If unticked, the reply is published without your company name and domain.</label>
 <label class="dr-chk"><input type="checkbox" name="ok" required data-msg="Please confirm you can speak for the developer."> I can speak for this developer and agree that this reply, the document types and their fingerprints may be published next to the finding after review.</label>
 <input name="website" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
 <div class="dr-acts"><button class="btn btn-hi" type="submit" id="dr-send">Send for review</button></div>
@@ -242,7 +242,7 @@
     <p class="fine">© 2026 Kolaboro, operated by Equinox Investment Group LLC, 30 N Gould St Ste N, Sheridan, WY 82801, USA. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Reports are opinions based on the evidence listed in them.</p>
   </div>
 </footer>
-<script src="/k/ask.js?v=544be9f9c8" defer></script><script src="/k/pipeline.js?v=e0202822da" defer></script><script src="/k/site.js?v=1bf7542d41" defer></script><script src="/k/prov.js?v=85080e1313" defer></script>
+<script src="/k/ask.js?v=544be9f9c8" defer></script><script src="/k/pipeline.js?v=e0202822da" defer></script><script src="/k/site.js?v=884dc4eeb4" defer></script><script src="/k/prov.js?v=85080e1313" defer></script>
 <script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script>
 <div class="cc" id="cc" role="dialog" aria-label="Cookies" hidden><p>We use analytics cookies to improve Kolaboro. <a href="/legal/privacy/">Privacy</a></p><div><button class="btn btn-line btn-sm" data-cc="no">Only necessary</button><button class="btn btn-hi btn-sm" data-cc="yes">Accept</button></div></div>
 <script>(function(){var EU=["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"];var st=null;try{st=localStorage;}catch(e){}var c=st&&st.getItem('kb-consent');if(c)return;

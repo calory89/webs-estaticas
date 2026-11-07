@@ -5,7 +5,7 @@
   "title": "Kolaboro public API",
   "version": "2026-11-06",
   "summary": "Open data on tracked off-plan property projects (anonymous), public log proofs, market statistics and the partner risk feed.",
-  "description": "Read-only HTTP API of kolaboro.com. Projects are anonymous until verification is complete and the developer has had 10 working days to reply. Scores describe what is public about a project, not whether it is genuine. Open endpoints need no key and are cached at the edge (usually 10 minutes). Answers of /api/open/* and the partner feed are signed: x-kolaboro-signature is base64 Ed25519 over \"kolaboro-sig-v1\\n\" + SHA-256 hex of the body, key id in x-kolaboro-key-id, public keys at https://kolaboro.com/.well-known/kolaboro-keys.json. Response schemas in this file were inferred from live responses on the date in x-kolaboro-checked and are checked against the live API every day by the Kolaboro data catalog job (results: https://kolaboro.com/data/#contracts). They describe what the API returned, which can grow over time.",
+  "description": "Read-only HTTP API of kolaboro.com. Records use project ids; each project has its own page with its name and sourced facts at /projects/{slug}/, except projects in Sumba (conflict of interest). Scores describe what is public about a project, not whether it is genuine. Open endpoints need no key and are cached at the edge (usually 10 minutes). Answers of /api/open/* and the partner feed are signed: x-kolaboro-signature is base64 Ed25519 over \"kolaboro-sig-v1\\n\" + SHA-256 hex of the body, key id in x-kolaboro-key-id, public keys at https://kolaboro.com/.well-known/kolaboro-keys.json. Response schemas in this file were inferred from live responses on the date in x-kolaboro-checked and are checked against the live API every day by the Kolaboro data catalog job (results: https://kolaboro.com/data/#contracts). They describe what the API returned, which can grow over time.",
   "license": {
    "name": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
    "identifier": "CC-BY-4.0"
@@ -205,7 +205,7 @@
          "license": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
          "auth": "none",
          "rate": "cached 10 minutes at the edge",
-         "note": "Projects are anonymous until verification is complete and the developer has had 10 working days to reply. Scores describe what is public, not whether it is genuine.",
+         "note": "Records use project ids; each project has its own page with its name and sourced facts at /projects/{slug}/, except projects in Sumba (conflict of interest). Scores describe what is public, not whether it is genuine.",
          "endpoints": {
           "GET /api/open/stats": "database totals (projects, markets, countries, claims tested, verification levels)",
           "GET /api/open/summary": "small summary used by the site: totals, latest seal and shipping log",
@@ -375,7 +375,7 @@
         "example": {
          "updated": "2026-11-04",
          "license": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
-         "note": "Projects are anonymous until verification is complete and the developer has had 10 working days to reply. Scores describe what is public, not whether it is genuine.",
+         "note": "Records use project ids; each project has its own page with its name and sourced facts at /projects/{slug}/, except projects in Sumba (conflict of interest). Scores describe what is public, not whether it is genuine.",
          "projects": 1011,
          "markets": 170,
          "countries": 96,
@@ -1121,7 +1121,7 @@
         "example": {
          "updated": "2026-11-04",
          "license": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
-         "note": "Projects are anonymous until verification is complete and the developer has had 10 working days to reply. Scores describe what is public, not whether it is genuine.",
+         "note": "Records use project ids; each project has its own page with its name and sourced facts at /projects/{slug}/, except projects in Sumba (conflict of interest). Scores describe what is public, not whether it is genuine.",
          "total": 76,
          "offset": 0,
          "limit": 5,
@@ -1570,7 +1570,7 @@
         "example": {
          "updated": "2026-11-04",
          "license": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
-         "note": "Projects are anonymous until verification is complete and the developer has had 10 working days to reply. Scores describe what is public, not whether it is genuine.",
+         "note": "Records use project ids; each project has its own page with its name and sourced facts at /projects/{slug}/, except projects in Sumba (conflict of interest). Scores describe what is public, not whether it is genuine.",
          "project": {
           "id": "BALI-014",
           "market": "Bali",
@@ -2099,7 +2099,7 @@
         "example": {
          "updated": "2026-11-04",
          "license": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
-         "note": "Projects are anonymous until verification is complete and the developer has had 10 working days to reply. Scores describe what is public, not whether it is genuine.",
+         "note": "Records use project ids; each project has its own page with its name and sourced facts at /projects/{slug}/, except projects in Sumba (conflict of interest). Scores describe what is public, not whether it is genuine.",
          "method": "transparency_index = 60% average public-disclosure score + 30% average confirmed score + 10% share without public problems; markets with 3+ projects",
          "markets": [
           {
@@ -2270,7 +2270,7 @@
         "example": {
          "updated": "2026-11-04",
          "license": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
-         "note": "Projects are anonymous until verification is complete and the developer has had 10 working days to reply. Scores describe what is public, not whether it is genuine.",
+         "note": "Records use project ids; each project has its own page with its name and sourced facts at /projects/{slug}/, except projects in Sumba (conflict of interest). Scores describe what is public, not whether it is genuine.",
          "since": "2026-11-01",
          "count": 222,
          "changes": [
@@ -2421,7 +2421,7 @@
         "example": {
          "updated": "2026-11-04",
          "license": "CC BY 4.0 (credit: Kolaboro, kolaboro.com)",
-         "note": "Projects are anonymous until verification is complete and the developer has had 10 working days to reply. Scores describe what is public, not whether it is genuine.",
+         "note": "Records use project ids; each project has its own page with its name and sourced facts at /projects/{slug}/, except projects in Sumba (conflict of interest). Scores describe what is public, not whether it is genuine.",
          "objective": "90% of projects re-read from their source within 7 days",
          "projects": 1011,
          "within_7d": 1011,
@@ -4704,7 +4704,7 @@
           "license": {
            "name": "CC BY 4.0"
           },
-          "description": "Projects are anonymous until verification is complete and the developer has had 10 working days to reply. Scores describe what is public, not whether it is genuine."
+          "description": "Records use project ids; each project has its own page with its name and sourced facts at /projects/{slug}/, except projects in Sumba (conflict of interest). Scores describe what is public, not whether it is genuine."
          },
          "servers": [
           {

@@ -1,6 +1,19 @@
 /* Kolaboro live cases: every tracked off-plan project worldwide, with a public-transparency scorecard, map and filters */
 (function(){
   var D = window.KB_CASES || { cases: [] }, C = D.cases;
+  // named project pages (decision 5 Nov 2026): /api/v1/search-index maps each id to its public name and page. Sumba projects are not
+  // in it (conflict of interest, see /independence/), so they keep their anonymous id card and /p/<id>/ file.
+  var NM = {}, LG = (document.documentElement.lang || 'en').slice(0, 2), NL = ['es', 'de', 'fr', 'nl', 'ru', 'zh', 'ar'].indexOf(LG) >= 0 ? '/' + LG : '';
+  function nmSet(j){ if (!j || !j.p) return false; NM = {}; j.p.forEach(function(p){ NM[p[2]] = p; }); return true; }
+  function nmLoad(){
+    var st = null, c = null; try { st = window.localStorage; c = JSON.parse(st.getItem('kb-sx-named-v1') || 'null'); } catch (e) { st = null; }
+    var had = c && c.ix && nmSet(c.ix);
+    if (had && Date.now() - c.at < 6 * 3600e3) return;
+    fetch('/api/v1/search-index').then(function(r){ return r.ok ? r.json() : null; }).then(function(j){
+      if (!nmSet(j)) return; try { st && st.setItem('kb-sx-named-v1', JSON.stringify({ at: Date.now(), ix: j })); } catch (e) {}
+      if ($('cgrid')) render();
+    }).catch(function(){});
+  }
   var CENT = { 'Izmir':[38.42,27.14], 'Bacalar':[18.68,-88.39], 'Gili Islands':[-8.35,116.04], 'Koh Phangan':[9.73,100.01], 'Naples':[26.14,-81.79], 'Riviera Nayarit':[20.87,-105.44], 'Serbia':[44.8,20.46], 'Vanuatu':[-17.73,168.32], 'Aruba':[12.52,-70.03], 'Curacao':[12.17,-68.98], 'Laos':[17.97,102.6], 'Accra':[5.6,-0.19], 'Kigali':[-1.95,30.06], 'Nicaragua':[11.5,-86.4], 'Saint Lucia':[13.9,-60.98], 'Cartagena':[10.39,-75.51], 'Da Nang':[16.05,108.22], 'Diani':[-4.32,39.58], 'Ecuador':[-0.95,-80.73], 'El Salvador':[13.49,-89.38], 'French Alps':[45.92,6.87], 'Ho Chi Minh City':[10.78,106.7], 'Jamaica':[18.41,-77.1], 'Japan':[36.2,138.25], 'Medellín':[6.24,-75.58], 'Palm Beach County':[26.7,-80.06], 'Panama City':[8.98,-79.52], 'Porto de Galinhas':[-8.5,-35.0], 'Punta Cana':[18.58,-68.4], 'Bali':[-8.65,115.2], 'Lombok':[-8.65,116.3], 'Labuan Bajo':[-8.5,119.9], 'Phuket':[7.88,98.39], 'Koh Samui':[9.5,100.0], 'Pattaya':[12.93,100.88], 'Bangkok':[13.75,100.5], 'Hua Hin':[12.57,99.96], 'Krabi':[8.09,98.9], 'Chiang Mai':[18.79,98.98],
     'Dubai':[25.2,55.27], 'Abu Dhabi':[24.45,54.38], 'Ras Al Khaimah':[25.79,55.94], 'Oman':[23.59,58.41], 'Istanbul':[41.01,28.98], 'Antalya':[36.9,30.7], 'Egypt':[30.0,31.2], 'Cyprus':[34.7,33.0], 'Northern Cyprus':[35.33,33.32],
     'Greece':[37.98,23.73], 'Montenegro':[42.29,18.84], 'Croatia':[45.1,13.9], 'Georgia':[41.64,41.63], 'Spain':[38.35,-0.48], 'Costa del Sol':[36.51,-4.88], 'Portugal':[38.72,-9.14], 'Algarve':[37.09,-8.25],
@@ -55,7 +68,7 @@
     var rest = [];
     for (var i = 0; i < words.length; i++) { var two = words[i] + ' ' + (words[i + 1] || ''), three = two + ' ' + (words[i + 2] || '');
       if (places[three.trim()]) { rest.push(three.trim()); i += 2; } else if (places[two.trim()]) { rest.push(two.trim()); i += 1; } else rest.push(words[i]); }
-    rest.forEach(function(w){ L.push('"' + w + '"'); T.push(function(c){ return [c.market, c.country, c.region, c.id, c.band, c.title, c.stage].concat(c.flags || [], c.notes || [], c.q || []).join(' ').toLowerCase().indexOf(w) >= 0; }); });
+    rest.forEach(function(w){ L.push('"' + w + '"'); T.push(function(c){ return [c.market, c.country, c.region, c.id, (NM[c.id] || [])[1], (NM[c.id] || [])[3], c.band, c.title, c.stage].concat(c.flags || [], c.notes || [], c.q || []).join(' ').toLowerCase().indexOf(w) >= 0; }); });
     return { labels: raw && raw.trim() ? L : [], test: function(c){ for (var j = 0; j < T.length; j++) if (!T[j](c)) return false; return true; } };
   }
   function showQ(P){ var el = $('kqi'); if (!el) { var kn = $('kn'); if (!kn) return; el = document.createElement('p'); el.id = 'kqi'; el.className = 'kqi'; kn.parentNode.insertBefore(el, kn); }
@@ -78,13 +91,14 @@
       var lv = c.verified && c.verified[k[0]], vb = !lv ? '' : lv === 'registry' ? '<b class="kv r" title="Confirmed in an official registry">registry</b>' : lv === 'independent' ? '<b class="kv i" title="Confirmed by an independent source">confirmed</b>' : lv === 'contradicted' ? '<b class="kv x" title="Sources disagree">contradicted</b>' : (ok && lv === 'developer') ? '<b class="kv d" title="Only the developer or its agents say so">not confirmed</b>' : '';
       return '<li class="' + (ok ? 'y' : half ? 'h' : 'n') + '"><i aria-hidden="true">' + (ok ? '✓' : half ? '~' : '✗') + '</i>' + esc(txt) + vb + '</li>'; }).join('') + (R.length < 6 ? '<li class="u"><i aria-hidden="true">·</i><em>Deposit protection, progress and track record: being researched</em></li>' : '');
     var steps = [['Promises read by AI', c.read, c.read ? c.checked : 'Queued'], ['Developer invited', !!c.invited, c.invited || 'Next'], ['Registry check', false, 'Pending'], ['Site visit with GPS video', false, 'Pending'], ['Verified and published', false, 'Pending']];
+    var nm = NM[c.id], where = esc(c.region === c.market ? c.market : c.region + ', ' + c.market);
     return '<article class="case kc t-' + esc(c.tier || 'mixed') + '"><header><span class="cid">' + esc(c.id) + '</span><span class="kt" style="color:' + t[1] + ';border-color:' + t[1] + '">' + t[0] + '</span></header>' +
-      '<h3>Off-plan project · ' + esc(c.region === c.market ? c.market : c.region + ', ' + c.market) + '<small> · ' + esc(c.country) + '</small></h3><p class="cmeta">' + esc(meta) + '</p>' + (c.sat && c.sat.status === 'no visible change' && c.stage === 'under construction' ? '<p class="kod">🛰 Almost no change visible from space in a year</p>' : '') + (c.overdue ? '<p class="kod">⏱ ' + c.overdue + ' month' + (c.overdue === 1 ? '' : 's') + ' past the promised handover</p>' : '') +
+      (nm ? '<h3><a href="' + NL + '/projects/' + encodeURIComponent(nm[0]) + '/">' + esc(nm[1]) + '</a><small> · ' + where + ', ' + esc(c.country) + (nm[3] ? ' · ' + esc(nm[3]) : '') + '</small></h3>' : '<h3>Off-plan project · ' + where + '<small> · ' + esc(c.country) + '</small></h3>') + '<p class="cmeta">' + esc(meta) + '</p>' + (c.sat && c.sat.status === 'no visible change' && c.stage === 'under construction' ? '<p class="kod">🛰 Almost no change visible from space in a year</p>' : '') + (c.overdue ? '<p class="kod">⏱ ' + c.overdue + ' month' + (c.overdue === 1 ? '' : 's') + ' past the promised handover</p>' : '') +
       (mx === 6 ? (full(c) ? '<p class="k100 y">✓ 100% public: all 6 checks published</p>' : '<p class="k100 n">Not 100%: missing ' + esc(CK.filter(function(k){ return !okk(c, k[0]); }).map(function(k){ return k[1].split(' (')[0].toLowerCase(); }).join(', ')) + '</p>') : '') + '<div class="ksc"><b>' + (c.score || 0) + '/' + mx + '</b><span>public checks' + (mx < 6 ? ' (deeper research pending)' : '') + (c.vscore != null ? ' · <strong class="kcf">' + c.vscore + '/6 confirmed</strong>' : '') + '</span><i style="width:' + ((c.score || 0) / mx * 100) + '%;background:' + t[1] + '"></i></div><ul class="k6">' + ticks + '</ul>' +
       (c.vscore != null ? '<p class="kvs"><b>' + c.vscore + '/6</b> confirmed by a registry or independent source' + (c.claims ? ' · ' + (c.claims.verified + c.claims.unverified + c.claims.contradicted) + ' claims checked: ' + c.claims.verified + ' verified, ' + c.claims.unverified + ' unverified' + (c.claims.contradicted ? ', <b class="kv x">' + c.claims.contradicted + ' contradicted</b>' : '') : '') + (c.delay ? ' · handover moved ' + c.delay + ' months' : '') + '</p>' : '') +
       ((c.flags || []).length ? '<p class="kfl">' + c.flags.map(function(f){ return '<span>⚠ ' + esc(f) + '</span>'; }).join('') + '</p>' : '') +
       ((c.notes || []).length ? '<p class="kfl kno">' + c.notes.map(function(f){ return '<span>ℹ ' + esc(f) + '</span>'; }).join('') + '</p>' : '') +
-      '<p class="kopen"><a href="/p/?id=' + encodeURIComponent(c.id) + '">Open project file →</a><a href="/compare/?ids=' + encodeURIComponent(c.id) + '">Compare</a></p>' + '<details><summary>What our agent asks on site</summary>' + ((c.q || []).length ? '<ul class="cq">' + c.q.map(function(x){ return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>' : '') +
+      '<p class="kopen">' + (nm ? '<a href="' + NL + '/projects/' + encodeURIComponent(nm[0]) + '/">Open project page →</a>' : '<a href="/p/' + encodeURIComponent(c.id) + '/">Open project file →</a>') + '<a href="/compare/?ids=' + encodeURIComponent(c.id) + '">Compare</a></p>' + '<details><summary>What our agent asks on site</summary>' + ((c.q || []).length ? '<ul class="cq">' + c.q.map(function(x){ return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>' : '') +
       '<ol class="csteps">' + steps.map(function(x){ return '<li class="' + (x[1] ? 'ok1' : '') + '"><span>' + x[0] + '</span><small>' + esc(x[2]) + '</small></li>'; }).join('') + '</ol>' +
       '<p class="kfoll"><a href="/check#analyze">Buying here? Get a free desk review →</a></p></details></article>';
   }
@@ -126,7 +140,7 @@
     });
   }
   function start(){
-    stat(); bind();
+    nmLoad(); stat(); bind();
     // filters live in the address, so a filtered list can be shared and survives Back from a project file
     try { var P = new URLSearchParams(location.search), qs = P.get('q');
       if (qs) { $('kq').value = qs; S.q = qs.trim(); }

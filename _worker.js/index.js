@@ -248,7 +248,7 @@ export default {
       const r = await knm.handle(req, u, env, ctx, shell);
       if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
     }
-    if (host === 'kolaboro.com' && req.method === 'GET' && /^\/p\/[A-Za-z0-9-]{3,20}\/?$/.test(u.pathname)) { if (!knm) knm = await import('./kbx_named.js'); const rd = await knm.redirectP(u, env); if (rd) return rd; }
+    if (host === 'kolaboro.com' && req.method === 'GET' && (/^\/p\/[A-Za-z0-9-]{3,20}\/?$/.test(u.pathname) || (/^\/p\/?$/.test(u.pathname) && u.searchParams.has('id')))) { if (!knm) knm = await import('./kbx_named.js'); const rd = await knm.redirectP(u, env); if (rd) return rd; }
     if (host === 'kolaboro.com' && req.method === 'GET' && KSEO.test(u.pathname)) {
       if (!kseo) kseo = await import('./kbx_seo.js');
       const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { headers: req.headers }), env, ctx, su, host); };

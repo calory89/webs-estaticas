@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Project timeline | Kolaboro</title>
-<meta name="description" content="Every dated public event for one anonymous off-plan project: first seen, developer page changes, promises and their status, register checks, satellite readings, delay moves, hazards and developer replies.">
+<meta name="description" content="Every dated public event for one off-plan project: first seen, developer page changes, promises and their status, register checks, satellite readings, delay moves, hazards and developer replies.">
 
 <link rel="canonical" href="https://kolaboro.com/timeline/">
 <link rel="icon" href="/k/favicon.svg" type="image/svg+xml">
@@ -12,7 +12,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Kolaboro">
 <meta property="og:title" content="Project timeline | Kolaboro">
-<meta property="og:description" content="Every dated public event for one anonymous off-plan project: first seen, developer page changes, promises and their status, register checks, satellite readings, delay moves, hazards and developer replies.">
+<meta property="og:description" content="Every dated public event for one off-plan project: first seen, developer page changes, promises and their status, register checks, satellite readings, delay moves, hazards and developer replies.">
 <meta property="og:url" content="https://kolaboro.com/timeline/">
 <meta property="og:image" content="https://kolaboro.com/k/og/pricing.png">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
@@ -119,7 +119,7 @@
 .sim-tl{margin-top:14px}
 .dc-note code,.dc-sec code{overflow-wrap:anywhere;word-break:break-word}
 .sim-list ul li{border:0;padding:0;margin:0;background:none;border-radius:0;box-shadow:none;min-height:0;display:list-item}</style>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Project timeline", "description": "Every dated public event for one anonymous off-plan project: first seen, developer page changes, promises and their status, register checks, satellite readings, delay moves, hazards and developer replies.", "url": "https://kolaboro.com/timeline/", "isPartOf": {"@type": "WebSite", "name": "Kolaboro", "url": "https://kolaboro.com/"}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebPage", "name": "Project timeline", "description": "Every dated public event for one off-plan project: first seen, developer page changes, promises and their status, register checks, satellite readings, delay moves, hazards and developer replies.", "url": "https://kolaboro.com/timeline/", "isPartOf": {"@type": "WebSite", "name": "Kolaboro", "url": "https://kolaboro.com/"}}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -140,7 +140,7 @@
 <main id="main">
 <section class="dc-hero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / <a href="/cases/">Live cases</a> / Timeline</p>
 <h1 id="tl-h">Project timeline</h1>
-<p class="lead" id="tl-lead">Every dated public event for one anonymous project on one line: first seen, page changes, promises, register checks, satellite readings, delay moves, hazards and developer replies.</p>
+<p class="lead" id="tl-lead">Every dated public event for one project on one line: first seen, page changes, promises, register checks, satellite readings, delay moves, hazards and developer replies.</p>
 <form class="tl-form" id="tl-form" aria-label="Open a project timeline"><label for="tl-id" class="sr-only">Project id</label><input id="tl-id" placeholder="BALI-014" autocomplete="off" spellcheck="false" maxlength="10"><button class="dc-btn" type="submit">Show timeline</button></form>
 <p class="dc-note" id="tl-err" role="alert"></p>
 <div class="tl-sum" id="tl-sum"></div>
@@ -188,7 +188,7 @@
     E.sort(function (a, b) { return a.date < b.date ? 1 : a.date > b.date ? -1 : 0; });
     document.title = 'Timeline of ' + id + ' | Kolaboro';
     $('tl-h').textContent = 'Timeline of ' + id;
-    $('tl-lead').innerHTML = 'Anonymous project in ' + esc(j.market) + ', ' + esc(j.country) + '. ' + E.length + ' dated public event' + (E.length === 1 ? '' : 's') + ', newest first. <a href="/p/?id=' + encodeURIComponent(id) + '">Open the project file</a>.';
+    $('tl-lead').innerHTML = (j.id ? 'Project ' + esc(j.id) + ' in ' : 'Project in ') + esc(j.market) + ', ' + esc(j.country) + '. ' + E.length + ' dated public event' + (E.length === 1 ? '' : 's') + ', newest first. <a href="/p/?id=' + encodeURIComponent(id) + '">Open the project file</a>.';
     var cnt = {}; KINDS.forEach(function (k) { cnt[k[0]] = 0; }); E.forEach(function (e) { cnt[e.kind] = (cnt[e.kind] || 0) + 1; });
     $('tl-sum').innerHTML = KINDS.map(function (k) { return '<a href="#k-' + k[0] + '"' + (cnt[k[0]] ? '' : ' class="z"') + '><i aria-hidden="true" style="width:10px;height:10px;border-radius:50%;background:' + COL[k[0]] + '"></i>' + esc(k[1]) + ' <b>' + cnt[k[0]] + '</b></a>'; }).join('');
     var seenKind = {};
@@ -302,7 +302,7 @@
     <p class="fine">© 2026 Kolaboro, operated by Equinox Investment Group LLC, 30 N Gould St Ste N, Sheridan, WY 82801, USA. Kolaboro agents provide independent verification and information, not legal, tax or financial advice. Reports are opinions based on the evidence listed in them.</p>
   </div>
 </footer>
-<script src="/k/site.js?v=1bf7542d41" defer></script><script src="/k/prov.js?v=85080e1313" defer></script>
+<script src="/k/site.js?v=884dc4eeb4" defer></script><script src="/k/prov.js?v=85080e1313" defer></script>
 <script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script>
 <div class="cc" id="cc" role="dialog" aria-label="Cookies" hidden><p>We use analytics cookies to improve Kolaboro. <a href="/legal/privacy/">Privacy</a></p><div><button class="btn btn-line btn-sm" data-cc="no">Only necessary</button><button class="btn btn-hi btn-sm" data-cc="yes">Accept</button></div></div>
 <script>(function(){var EU=["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"];var st=null;try{st=localStorage;}catch(e){}var c=st&&st.getItem('kb-consent');if(c)return;

@@ -150,7 +150,7 @@ async function sources(env, ctx) {
     return o;
   }));
   const d = { sources: res, automated_project_checks: 0,
-    why_no_automatic_checks: 'Developers of tracked projects are anonymous on Kolaboro, and Find Case Law needs a licence for programmatic bulk searching. Until that licence is granted, no project is searched automatically and no per-project court counts are published.',
+    why_no_automatic_checks: 'Find Case Law needs a licence for programmatic bulk searching. Until that licence is granted, no project is searched automatically and no per-project court counts are published.',
     exact_name_rule: 'We only ever search an exact legal company name and only list cases with that exact name in the title, labelled as needing a same-company check. We never search people.' };
   ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(d), { headers: { 'content-type': 'application/json', 'cache-control': 'public, max-age=21600' } })));
   return out(d, 200, 600);

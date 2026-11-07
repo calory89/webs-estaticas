@@ -16,7 +16,7 @@ const MAX_BODY = 65536;
 const RATE_MCP = 60, RATE_FILE = 30;   // requests per minute per IP
 const INSTRUCTIONS = 'Kolaboro tracks off-plan property projects worldwide and publishes what each one makes public (permit, deposit protection, ' +
   'construction progress, plans, track record, no guaranteed returns) and how much of it was confirmed by a registry or independent source. ' +
-  'Projects are anonymous (ids like BALI-014) until verification is complete: never guess a developer or project name. Scores describe what is public, ' +
+  'Records use ids like BALI-014 and carry no developer or project names: never guess one. Each project also has a public page with its name and sourced facts at https://kolaboro.com/projects/{slug}/, except projects in Sumba (conflict of interest). Scores describe what is public, ' +
   'not whether it is genuine, and nothing here is financial or legal advice. Every tool result contains the exact body that was signed and a signature ' +
   'block (Ed25519 over "kolaboro-sig-v1\\n" + SHA-256 hex of the body; public keys at ' + KEYS_URL + '); verify_signature checks one. ' +
   'For whole-database questions, the same data is a signed Parquet file at https://kolaboro.com/data/kolaboro.parquet (SQL in the browser: https://kolaboro.com/sql/).';

@@ -1331,7 +1331,7 @@ function marketStats(cases) {
 const csvCell = v => { v = v === null || v === undefined ? '' : typeof v === 'object' ? JSON.stringify(v) : String(v); return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; };
 const OPEN_DOC = {
   name: 'Kolaboro open data API', version: '1.0', license: 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)', auth: 'none', rate: 'cached 10 minutes at the edge',
-  note: 'Projects are anonymous until verification is complete and the developer has had 10 working days to reply. Scores describe what is public, not whether it is genuine.',
+  note: 'Records use project ids; each project has its own page with its name and sourced facts at /projects/{slug}/, except projects in Sumba (conflict of interest). Scores describe what is public, not whether it is genuine.',
   endpoints: {
     'GET /api/open/stats': 'database totals (projects, markets, countries, claims tested, verification levels)',
     'GET /api/open/summary': 'small summary used by the site: totals, latest seal and shipping log',
@@ -1463,7 +1463,7 @@ async function openRoutes(req, u, path, L) {
     const list = items.filter(x => !alertsOnly || /past the promised|from space|not approved|not in the approved/.test(x.title)).sort((a, b) => (b.date || '').localeCompare(a.date || '')).slice(0, 100);
     const title = alertsOnly ? 'Kolaboro alerts: overdue, stalled and unapproved projects' : 'Kolaboro: ' + (pool.length && new Set(pool.map(c => c.market)).size > 1 ? pool[0].country : (pool[0] ? pool[0].market : mk)) + ' changes';
     if (path.endsWith('.json')) return openResp({ version: 'https://jsonfeed.org/version/1.1', title, home_page_url: 'https://kolaboro.com/database', items: list.map(x => ({ id: x.id, url: x.url, title: x.title, content_text: x.title, date_published: x.date + 'T12:00:00Z' })) }, 'application/feed+json; charset=utf-8');
-    return openResp('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>' + xesc(title) + '</title><link>https://kolaboro.com/database</link><description>Changes on developer pages and alerts from the Kolaboro database. Projects are anonymous.</description>' +
+    return openResp('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>' + xesc(title) + '</title><link>https://kolaboro.com/database</link><description>Changes on developer pages and alerts from the Kolaboro database. Projects appear by id.</description>' +
       list.map(x => '<item><title>' + xesc(x.title) + '</title><link>' + x.url + '</link><guid isPermaLink="false">' + xesc(x.id) + '</guid><pubDate>' + new Date((x.date || d.updated) + 'T12:00:00Z').toUTCString() + '</pubDate></item>').join('') + '</channel></rss>', 'application/rss+xml; charset=utf-8');
   }
   const bm = path.match(/^\/api\/open\/badge\/([A-Za-z0-9-]{3,20})\.svg$/);
