@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><script>(function(){var _c=window.clarity;try{Object.defineProperty(window,'clarity',{configurable:true,get:function(){return _c},set:function(v){if(typeof v==='function'&&!v.q)v.q=[];_c=v;}})}catch(e){}})();</script><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Your case | Kolaboro</title><meta name="robots" content="noindex,nofollow"><link rel="icon" href="/k/favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#17212B">
-<link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/k/app.css?v=71f6655e8c"><link rel="stylesheet" href="/k/console.css?v=0cea4127"><script src="/k/console.js?v=a731f54f"></script>
+<link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/k/app.css?v=71f6655e8c"><link rel="stylesheet" href="/k/console.css?v=5dc9f6eb"><script src="/k/console.js?v=a731f54f"></script>
 
 <script src="/portal/es.js?v=379754f9"></script><link rel="manifest" href="/portal/manifest.webmanifest"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="/agents/icon-192.png">
 <script>(window.kbLate||function(f){addEventListener("load",function(){setTimeout(f,1500)})})(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V";document.head.appendChild(s)})</script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');gtag('config','G-H5TGZJ1KNG');</script></head><body>
@@ -264,7 +264,7 @@ var KB = (function(){
   var steps = [['Your case, stage by stage', 'Six stages, each with a date: case opened, documents, land and title, building permit, site visit, report. Nothing is "almost done".'],
     ['Evidence you can check', 'Every site photo carries GPS, time and a fingerprint. Open a photo to see where and when it was taken.'],
     ['Your agent, one message away', 'Write to your agent here. Add your next payment date and we tell you to hold if our report is not ready.']], i = 0;
-  function go(){ var d = document.createElement('div'); d.className = 'r31-tour'; d.setAttribute('role', 'dialog'); d.setAttribute('aria-label', 'Quick tour');
+  function go(){ if (!document.querySelector('.ap-steps')) { setTimeout(go, 3000); return; } /* the tour explains a case: wait until one is on screen */ var d = document.createElement('div'); d.className = 'r31-tour'; d.setAttribute('role', 'dialog'); d.setAttribute('aria-label', 'Quick tour');
     function draw(){ d.innerHTML = '<p class="r31-tk">' + (i + 1) + ' of 3</p><b>' + steps[i][0] + '</b><p>' + steps[i][1] + '</p><div><button type="button" data-a="skip">Skip</button><button type="button" data-a="next" class="on">' + (i < 2 ? 'Next' : 'Got it') + '</button></div>'; d.querySelector('[data-a=next]').focus(); }
     d.addEventListener('click', function(e){ var a = e.target.getAttribute('data-a'); if (!a) return; if (a === 'next' && i < 2) { i++; draw(); return; } d.remove(); try { localStorage.setItem(K, '1'); } catch (x) {} });
     document.body.appendChild(d); draw(); }
