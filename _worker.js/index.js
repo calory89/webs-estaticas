@@ -96,9 +96,13 @@ function kbHeaders(r, u) {
   h.delete('access-control-allow-origin');
   h.set('cache-control', priv ? 'no-store' : 'no-cache'); // a nonce must never be reused from a cache
   const out = new Response(r.body, { status: r.status, statusText: r.statusText, headers: h });
+  // design system (d12a, 7 Nov 2026): /k/ds.css goes right after site.css or app.css, or at the end of <head> when a page has neither
+  let ds = false; const DSL = '<link rel="stylesheet" href="/k/ds.css?v=' + KB_DS_V + '">';
   return new HTMLRewriter().on('script', { element(e) { e.setAttribute('nonce', nonce); } })
-    .on('head', { element(e) { e.prepend('<script nonce="' + nonce + '">' + KB_LATE + '</script>', { html: true }); } }).transform(out);
+    .on('link[rel="stylesheet"]', { element(e) { if (!ds && /^\/k\/(site|app)\.css/.test(e.getAttribute('href') || '')) { e.after(DSL, { html: true }); ds = true; } } })
+    .on('head', { element(e) { e.prepend('<script nonce="' + nonce + '">' + KB_LATE + '</script>', { html: true }); e.onEndTag(t => { if (!ds) { t.before(DSL, { html: true }); ds = true; } }); } }).transform(out);
 }
+const KB_DS_V = 'df8e7e74b6';   // bump with ds.css (scratchpad d12a/dsv.sh does it)
 // kolaboro.com mobile speed (b9c, 6 Nov 2026): third-party tags wait for the first interaction (tap, key, scroll, mouse move)
 // or 8 s after load, whichever comes first. window.kbLate(fn) queues work for that moment (the static pages load gtag through it);
 // Cloudflare Zaraz (Clarity) is held the same way by deferring its zaraz.init call. Events queued before that are kept.
