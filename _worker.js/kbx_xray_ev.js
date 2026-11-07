@@ -347,12 +347,12 @@ function pixelOf(asset, it, lat, lng) {
 // PNG encoder (RGB, 8 bit, filter 0)
 const CRC = (() => { const t = new Uint32Array(256); for (let n = 0; n < 256; n++) { let c = n; for (let k = 0; k < 8; k++) c = c & 1 ? 0xedb88320 ^ (c >>> 1) : c >>> 1; t[n] = c >>> 0; } return t; })();
 function crc32(b) { let c = 0xffffffff; for (let i = 0; i < b.length; i++) c = CRC[(c ^ b[i]) & 255] ^ (c >>> 8); return (c ^ 0xffffffff) >>> 0; }
-async function encodePng(rgb, w, h) {
+async function encodePng(rgb, w, h, year) {
   const raw = new Uint8Array((w * 3 + 1) * h); for (let y = 0; y < h; y++) raw.set(rgb.subarray(y * w * 3, (y + 1) * w * 3), y * (w * 3 + 1) + 1);
   const z = await deflate(raw);
   const chunk = (type, data) => { const o = new Uint8Array(12 + data.length), v = new DataView(o.buffer); v.setUint32(0, data.length); o.set(new TextEncoder().encode(type), 4); o.set(data, 8); v.setUint32(8 + data.length, crc32(o.subarray(4, 8 + data.length))); return o; };
   const ih = new Uint8Array(13), iv = new DataView(ih.buffer); iv.setUint32(0, w); iv.setUint32(4, h); ih[8] = 8; ih[9] = 2;
-  const txt = new TextEncoder().encode('Comment\0Contains modified Copernicus Sentinel data ' + new Date().getUTCFullYear() + ', processed by Kolaboro');
+  const txt = new TextEncoder().encode('Comment\0Contains modified Copernicus Sentinel data ' + (year || new Date().getUTCFullYear()) + ', processed by Kolaboro');
   const parts = [new Uint8Array([137, 80, 78, 71, 13, 10, 26, 10]), chunk('IHDR', ih), chunk('tEXt', txt), chunk('IDAT', z), chunk('IEND', new Uint8Array(0))];
   const out = new Uint8Array(parts.reduce((a, p) => a + p.length, 0)); let o = 0; for (const p of parts) { out.set(p, o); o += p.length; } return out;
 }
@@ -390,15 +390,17 @@ async function satRender(f, lat, lng, stat) {
   for (let a = 0; a < 360; a += 2) { const t = a * Math.PI / 180; for (const rr of [7, 8]) put(Math.round(cx + rr * Math.cos(t)), Math.round(cy + rr * Math.sin(t)), 255, 91, 20); }
   for (let x = 10; x <= 110; x++) for (let y = SAT_PX - 14; y <= SAT_PX - 11; y++) put(x, y, 255, 255, 255);
   for (const x of [10, 110]) for (let y = SAT_PX - 20; y <= SAT_PX - 11; y++) put(x, y, 255, 255, 255);
-  return encodePng(rgb, SAT_PX, SAT_PX);
+  return encodePng(rgb, SAT_PX, SAT_PX, String((f.properties || {}).datetime || '').slice(0, 4));
 }
 const satKey = (id, lat, lng) => ORIGIN + '/api/xev/sat.png?s=' + encodeURIComponent(id) + '&lat=' + lat.toFixed(5) + '&lng=' + lng.toFixed(5);
-const SAT_CREDIT = 'Contains modified Copernicus Sentinel data ' + new Date().getUTCFullYear() + ' (Copernicus Sentinel-2 L2A, via AWS Open Data / Element 84 Earth Search), processed by Kolaboro';
+const satCredit = y => 'Contains modified Copernicus Sentinel data ' + y + ' (Copernicus Sentinel-2 L2A, via AWS Open Data / Element 84 Earth Search), processed by Kolaboro. White bar: 1 km; orange ring: the pin.';
 async function evSatellite(S, env, ctx) {
   const c = card('satellite', 12), pin = S.pin;
   c.limits = ['Each pixel is 10 x 10 m: you can see cleared land, roads, roofs and large slabs, not floors, workers or quality.', 'The image is the latest clear pass over this point, not a live view; the date is shown.', 'The pin comes from the page (card 11), so the image shows the place the page points to, which may not be the plot.'];
   if (!pin) { c.status = 'not_applicable'; c.summary = 'No pin, so no satellite image (the page publishes no usable address or map).'; return c._done(); }
   if (S.coi) { c.status = 'not_applicable'; c.summary = 'Not published for this area (conflict of interest, see our independence policy).'; return c._done(); }
+  const skey = new Request(ORIGIN + '/__xev/satcard/' + pin.lat.toFixed(4) + ',' + pin.lng.toFixed(4));
+  try { const hit = await caches.default.match(skey); if (hit) { const o = await hit.json(); Object.assign(c, o, { proof: c.proof }); c.sources = (o.sources || []).map(x => Object.assign({}, x, { cache: 'hit' })); c.summary = o.summary; return c._done(); } } catch (e) {}
   const stat = { bytes: 0, tiles: 0 }; c._host('sentinel-cogs.s3.us-west-2.amazonaws.com');
   const { f, tried, pick, partly } = await satPick(pin.lat, pin.lng, stat, c);
   c.data = { lat: pin.lat, lng: pin.lng, tried, scene: null, png: null, px_m: 10, box_km: SAT_PX * 10 / 1000 };
@@ -410,7 +412,7 @@ async function evSatellite(S, env, ctx) {
   const sceneUrl = STAC + '/collections/sentinel-2-l2a/items/' + f.id;
   c.data.scene = { id: f.id, date, cloud_pct: Math.round(p['eo:cloud_cover'] * 10) / 10, local_cloud_pct: pick.local_cloud_pct, centre_cloud_pct: pick.centre_cloud_pct, partly_cloudy: !!partly, mgrs: p['s2:mgrs_tile'] || [p['mgrs:utm_zone'], p['mgrs:latitude_band'], p['mgrs:grid_square']].filter(Boolean).join(''), stac: sceneUrl, tci: f.assets.visual.href };
   c.data.png = key.replace(ORIGIN, ''); c.data.png_sha256 = digest;
-  c.img = { src: c.data.png, alt: 'Sentinel-2 true-colour image of ' + (SAT_PX * 10 / 1000) + ' km around the pin, ' + date, w: SAT_PX, h: SAT_PX, credit: SAT_CREDIT, scale: '100 px = 1 km' };
+  c.img = { src: c.data.png, alt: 'Sentinel-2 true-colour image of ' + (SAT_PX * 10 / 1000) + ' km around the pin, ' + date, w: SAT_PX, h: SAT_PX, credit: satCredit(date.slice(0, 4)), scale: '100 px = 1 km' };
   c._src({ name: 'Copernicus Sentinel-2 L2A true colour (TCI) and scene classification (SCL), Cloud-Optimised GeoTIFF', url: f.assets.visual.href, licence: 'Copernicus Sentinel data, free, full and open (Copernicus legal notice); credit: "Contains modified Copernicus Sentinel data ' + date.slice(0, 4) + '"', fetched: now(), bytes: stat.bytes, sha256: digest, note: stat.tiles + ' tiles read with HTTP range requests; sha256 is of the PNG we made' }, stat.bytes);
   c.status = 'found';
   c.summary = (partly ? 'Partly cloudy' : 'Clear') + ' Sentinel-2 view of the pin from ' + date + ' (' + days + ' days ago), ' + pick.centre_cloud_pct + '% cloud within 300 m of the pin' + (partly ? ', ' + pick.local_cloud_pct + '% over the whole image' : '') + '.';
@@ -421,7 +423,8 @@ async function evSatellite(S, env, ctx) {
     { label: 'What you cannot tell', value: 'Floors, finishes, workers on site, permits, or who owns the land. A small villa project may be only a few pixels.', kind: 'text' },
   ];
   const newer = tried.filter(t => t.date > date || (t.date === date && t.id !== f.id && t.centre_cloud_pct > pick.centre_cloud_pct));
-  if (newer.length) c.items.push({ label: 'Newer passes skipped', value: newer.slice(0, 5).map(t => t.date + ' (' + t.centre_cloud_pct + '% cloud within 300 m of the pin)').join('; ') + (newer.length > 5 ? '; ...' : ''), kind: 'text' });
+  if (newer.length) c.items.push({ label: 'Newer passes skipped', value: newer.slice(0, 5).map(t => t.date + ' (' + t.centre_cloud_pct + '% cloud within 300 m of the pin, ' + t.local_cloud_pct + '% over the image)').join('; ') + (newer.length > 5 ? '; ...' : ''), kind: 'text' });
+  if (ctx) { const keep = { status: c.status, summary: c.summary, items: c.items, img: c.img, limits: c.limits, sources: c.sources, data: c.data }; ctx.waitUntil(caches.default.put(skey, new Response(JSON.stringify(keep), { headers: { 'content-type': 'application/json', 'cache-control': 'public, max-age=21600' } })).catch(() => {})); }
   return c._done();
 }
 async function satRoute(u, env, ctx) {
