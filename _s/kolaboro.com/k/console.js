@@ -56,6 +56,12 @@
         if (r === head) return; var i = 0;
         [].forEach.call(r.cells, function (c) { if (c.tagName === 'TD' && !c.hasAttribute('data-l')) c.setAttribute('data-l', names[i] || ''); i += c.colSpan || 1; });
       });
+      // numeric columns are right-aligned so figures line up (tabular numerals are on)
+      var rows = [].filter.call(t.rows, function (r) { return r !== head; }), NUM = /^[\s\u20ac$]*(EUR|USD|IDR|AED)?\s?-?[\d.,]+\s?(%|s|ms)?$/;
+      if (rows.length) names.forEach(function (n, i) {
+        var cells = rows.map(function (r) { return r.cells[i]; }).filter(function (c) { return c && c.colSpan === 1 && c.textContent.trim() && c.textContent.trim() !== '-'; });
+        if (cells.length && cells.filter(function (c) { return NUM.test(c.textContent.trim()); }).length / cells.length >= 0.8) { cells.forEach(function (c) { c.classList.add('kc-n'); }); if (head.cells[i]) head.cells[i].classList.add('kc-n'); }
+      });
       t.classList.add('kc-rt');
     });
   }
