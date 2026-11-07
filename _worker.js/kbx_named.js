@@ -22,7 +22,7 @@ import { ppmSection, gleifNet, networkHtml, NET_CSS, NET_JS } from './kbx_named_
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v15';   // v15: d12b redesign (H1 tail line, key-facts panel, side contents on desktop, tables as cards on phones)
+const CACHE_V = 'named-v16';   // v16: design-system tokens (d12b); v15: d12b redesign (H1 tail line, key-facts panel, side contents on desktop, tables as cards on phones)
 // v13: sticky section chips, folded long lists, 44 px source pills (ux11); v11: og:image share cards, price per m2, company network (b10c); v10: page-history line (b9b)
 export const OPINION_RX = /\b(scam\w*|fraud\w*|ponzi|swindl\w*|rip-?off|avoid\w*|beware|dodgy|shady|crook\w*|estafa\w*|fraude\w*|timo|timador\w*|betrug\w*|betrüg\w*|abzocke\w*|arnaque\w*|escroquer\w*|escroc\w*|oplichting|oplichter\w*|bedrog\w*)\b|мошен|обман|афер|骗局|诈骗|欺诈|احتيال|نصب/i;
 
@@ -437,6 +437,8 @@ const D12CSS = '<style id="kd12b-css">' +
   '.tw.kcards tr{border:1px solid var(--line);border-radius:14px;background:var(--card,var(--paper));padding:12px 14px;margin:0 0 10px}.tw.kcards td,.tw.kcards tbody th{border:0;padding:3px 0}.tw.kcards tbody th,.tw.kcards td:first-child{font-size:1rem;padding-bottom:6px}.tw.kcards td[data-l]:not(:first-child)::before{content:attr(data-l);display:block;font-size:.78rem;font-weight:600;color:var(--muted)}.tw.kcards td:empty{display:none}.tw.kcards tbody tr:hover{background:var(--card,var(--paper))}}' +
   '@media(min-width:1180px){.kwrap:has(>.ktoc){display:grid;grid-template-columns:210px minmax(0,1fr);column-gap:56px;align-items:start}.kwrap>.ktoc{grid-column:1;grid-row:1/span 60;flex-direction:column;gap:2px;overflow:visible;background:none;box-shadow:none;padding:44px 0 0;z-index:1}' +
   '.kwrap>.ktoc a{min-height:36px;border:0;border-radius:8px;padding:0 12px;background:none;border-inline-start:2px solid var(--line);border-radius:0;white-space:normal;line-height:1.25;padding-block:6px}.kwrap>.ktoc a:hover{color:var(--ink);border-inline-start-color:var(--ink)}.kwrap>.ktoc a[aria-current]{background:none;color:var(--ink);font-weight:700;border-inline-start-color:var(--k-sea,#155C75)}.kwrap:has(>.ktoc)>:not(.ktoc){grid-column:2}}' +
+  '.ks h2 small{font-size:.5em;font-weight:500;color:var(--muted);margin-inline-start:8px;font-variant-numeric:tabular-nums;letter-spacing:0}[data-kx-lists] .lk{list-style:none;padding:0;column-gap:40px}[data-kx-lists] .lk li{margin:0;padding:7px 0;break-inside:avoid;border-bottom:1px solid var(--line)}[data-kx-lists] .lk small{display:block;font-size:.84rem;margin-top:1px}[data-kx-lists] .ks{padding-top:36px}' +
+  '.kmkt summary{list-style:none;display:flex;align-items:center;gap:8px}.kmkt summary::-webkit-details-marker{display:none}.kmkt summary::after{content:"";width:7px;height:7px;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg) translateY(-2px)}.kmkt[open] summary::after{transform:rotate(-135deg) translateY(-2px)}.kmkt a{border-radius:var(--k-r-md,10px)}' +
   '@media(prefers-reduced-motion:reduce){a.src{transition:none}}</style>';
 
 function head(pg, lang) {
