@@ -365,7 +365,7 @@
     if (logged) return sum + '<p class="kxc-m">' + esc(t('pan_in')) + '</p><div class="kxc-row"><button class="kxc-btn" type="button" id="kxc-go">' + esc(t('go_btn')) + '</button></div><p class="kxc-msg" id="kxc-pan-m" aria-live="polite"></p>';
     var next = location.pathname + location.search + '#kxc-buy';
     return sum + '<p class="kxc-m">' + esc(t('pan_out')) + '</p>' +
-      '<div class="kxc-row"><a class="kxc-btn" id="kxc-login" href="' + PRE + '/login/?next=' + encodeURIComponent(next) + '#signup">' + esc(t('login_btn')) + '</a><a class="kxc-btn l" id="kxc-pp" href="' + PAY + '" rel="noopener" data-ev="pay_check_xray">' + esc(t('pp_btn')) + '</a></div>';
+      '<div class="kxc-row"><a class="kxc-btn" id="kxc-login" href="' + '/login/?next=' + encodeURIComponent(next) + '#signup">' + esc(t('login_btn')) + '</a><a class="kxc-btn l" id="kxc-pp" href="' + PAY + '" rel="noopener" data-ev="pay_check_xray">' + esc(t('pp_btn')) + '</a></div>';
   }
   function msg(id, t, bad) { var m = $(id); if (m) { m.textContent = t; m.className = 'kxc-msg' + (bad ? ' bad' : ''); } }
   function bind() {
@@ -414,7 +414,7 @@
   }
   function monitor(b) {
     track('monitor_opened');
-    if (!token()) { location.href = PRE + '/login/?next=' + encodeURIComponent(location.pathname + location.search + '#kxc-mon') + '#signup'; return; }
+    if (!token()) { location.href = '/login/?next=' + encodeURIComponent(location.pathname + location.search + '#kxc-mon') + '#signup'; return; }
     b.disabled = true; msg('kxc-mon-m', t('mon_opening'));
     openCase('Monitoring requested').then(function (r) {
       if (r.error) { b.disabled = false; msg('kxc-mon-m', tf('mon_err', { e: r.error }), 1); return; }

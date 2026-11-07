@@ -145,7 +145,7 @@
     <div class="fgrid">
       <div>
         <a class="brand" href="/" aria-label="Kolaboro home" style="font-size:1.15rem"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4v24M8 16 23 6.5M8 16l15 9.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="24" cy="6" r="3.4" fill="currentColor"/><circle cx="24" cy="26" r="3.4" fill="currentColor"/><circle cx="8" cy="16" r="4.2" fill="#FF5B14"/></svg>kolaboro</a>
-        <p style="margin-top:12px;max-width:34ch">Independent property checks for people buying abroad. Recruiting our first local agents; desk research in <span data-db="markets">144</span> markets.</p>
+        <p style="margin-top:12px;max-width:34ch">Independent property checks for people buying abroad. Recruiting our first local agents; desk research in <span data-db="markets">170</span> markets.</p>
         <form class="news" data-news novalidate><label for="nl-email">Monthly research notes: what developers promise, and what changed.</label>
           <div class="qform light" style="margin-top:10px"><input id="nl-email" name="email" type="email" placeholder="Your email" autocomplete="email"><button class="btn btn-hi btn-sm" type="submit">Subscribe</button></div>
           <p class="nmsg" aria-live="polite"></p></form>
@@ -264,7 +264,7 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   function knownEmail(){ var e = ($('az-email') && $('az-email').value.trim()) || ($('az-cpe') && $('az-cpe').value.trim()) || ''; if (!e) try { e = localStorage.getItem('kb-desk-email') || ''; } catch (x) {} return e; }
   function norm(v){ v = v.trim(); if (!v) return ''; if (!/^https?:\/\//i.test(v)) v = 'https://' + v; try { var u = new URL(v); return /\./.test(u.hostname) ? u.toString() : ''; } catch (e) { return ''; } }
   function step1(){ var raw = $('az-url').value, v = norm(raw); if (!v) { if (window.KBC7 && KBC7.only(raw)) { $('az-e1').textContent = ''; return; } $('az-e1').textContent = 'Type at least 3 characters: a website, a project name or a permit number.'; return; }
-    url = v; if (window.KBC7) KBC7.start(raw, v); try { history.replaceState(null, '', '/check/?url=' + encodeURIComponent(v) + '#analyze'); } catch (x) {} try { localStorage.setItem('kb-desk-url', v); } catch(x){} $('az-e1').textContent = ''; $('az-host').textContent = new URL(url).hostname.replace(/^www\./, ''); ev('desk_url'); run(''); }
+    url = v; if (window.KBC7) KBC7.start(raw, v); try { history.replaceState(null, '', '/check/?url=' + encodeURIComponent(v) + (/^#kxc-(buy|mon)$/.test(location.hash) ? location.hash : '#analyze')); } catch (x) {} try { localStorage.setItem('kb-desk-url', v); } catch(x){} $('az-e1').textContent = ''; $('az-host').textContent = new URL(url).hostname.replace(/^www\./, ''); ev('desk_url'); run(''); }
   $('az-f1').addEventListener('submit', step1);
   $('az-url').addEventListener('input', function(){ if ($('az-e1').textContent && !$('az-e1').querySelector('a')) $('az-e1').textContent = ''; });
   document.addEventListener('click', function(e){ if (e.target.closest && e.target.closest('[data-show-start]')) $('start').hidden = false; });

@@ -1403,6 +1403,9 @@ export async function open(req, u, env) {
 async function openRoutes(req, u, path, L) {
   const d = L.d;
   const cases = d.cases || [], meta = { updated: d.updated, license: OPEN_DOC.license, note: OPEN_DOC.note };
+  // one spelling per country (the research data has 'St Lucia' and 'Saint Lucia', 'Puerto Rico (USA)' and 'Puerto Rico'): same aliases as the country hubs (kbx_seo.js), so every page shows the same count
+  const CTRY_ALIAS = { 'Puerto Rico (USA)': 'Puerto Rico', 'St Lucia': 'Saint Lucia', 'United States': 'USA', 'United Arab Emirates': 'UAE' };
+  const nCountries = cases.length ? new Set(cases.map(c => CTRY_ALIAS[c.country] || c.country).filter(Boolean)).size : d.countries;
   if (path === '/api/open/log-input') { const lines = fpLines(cases), m = await merkle(lines, null); return openResp({ date: new Date().toISOString().slice(0, 10), updated: d.updated, dataset_sha256: L.sha, dataset_bytes: L.bytes, projects_root: m.root, projects_count: lines.length }, null, 60); }
   if (path === '/api/open/log') { try { const lg = await rpc('kolaboro_log_public', {}); for (const h of (lg.heads || [])) if (h.cosign) h.cosign_check = await verifyAssertion(h.cosign, 'kolaboro-cosign-v1\n' + h.day + '\n' + h.head); return openResp(lg, null, 300); } catch (e) { return openResp({ error: 'log_unavailable' }, null, 30); } }
   let dpath = path; try { dpath = decodeURIComponent(path); } catch (e) {}
@@ -1434,8 +1437,8 @@ async function openRoutes(req, u, path, L) {
     const markets = Object.values(per).map(p => Object.assign(p, { pct_7d: Math.round(1000 * p.within_7d / p.projects) / 10 })).sort((a, b) => a.pct_7d - b.pct_7d || b.projects - a.projects);
     return openResp({ ...meta, objective: '90% of projects re-read from their source within 7 days', projects: cases.length, within_7d: f7, within_30d: f30, unknown: unk, pct_7d: Math.round(1000 * f7 / cases.length) / 10, meets_objective: f7 / cases.length >= 0.9, markets_below_objective: markets.filter(m => m.pct_7d < 90).length, markets }, null, 600);
   }
-  if (path === '/api/open/stats') return openResp({ ...meta, projects: cases.length, markets: d.markets, countries: d.countries, ...(d.db || {}) });
-  if (path === '/api/open/summary') return openResp({ updated: d.updated, projects: cases.length, markets: d.markets, countries: d.countries, db: d.db || {}, seal: d.seal || null, ships: (d.ships || []).slice(0, 20) });
+  if (path === '/api/open/stats') return openResp({ ...meta, projects: cases.length, markets: d.markets, ...(d.db || {}), countries: nCountries });
+  if (path === '/api/open/summary') return openResp({ updated: d.updated, projects: cases.length, markets: d.markets, countries: nCountries, db: Object.assign({}, d.db || {}, { countries: nCountries }), seal: d.seal || null, ships: (d.ships || []).slice(0, 20) });
   if (path === '/api/open/markets') return openResp({ ...meta, method: 'transparency_index = 60% average public-disclosure score + 30% average confirmed score + 10% share without public problems; markets with 3+ projects', markets: marketStats(cases) });
   if (path === '/api/open/markets.csv') { const m = marketStats(cases), k = Object.keys(m[0] || {}); return openResp([k.join(',')].concat(m.map(r => k.map(x => csvCell(r[x])).join(','))).join('\n'), 'text/csv; charset=utf-8'); }
   if (path === '/api/open/projects' || path === '/api/open/projects.csv') {
@@ -1543,7 +1546,7 @@ export async function ask(req, env, ctx) {
   const pick = (named.length ? cases.filter(c => named.includes(c.market) || named.includes(c.country)) : []).slice(0, 80);
   const row = c => [c.id, c.market, c.stage || '', c.band || '', c.done || '', c.title || '', c.score, c.vscore ?? '', (c.checks || {}).permit === 2 ? 'permit' : '', (c.checks || {}).escrow === true ? 'escrow' : '', c.overdue || '', c.delay || '', (c.claims || {}).contradicted || 0, (c.flags || []).length].join('|');
   const db = d.db || {};
-  const ctxt = 'DATA updated ' + d.updated + '\nTOTALS: ' + JSON.stringify({ projects: cases.length, markets: d.markets, countries: d.countries, claims: db.claims, claims_total: db.claims_total, checks_by_level: db.checks_by_level, stages: db.stages, all_six_public: db.all_six_public, with_flags: db.with_flags, overdue: db.overdue, overdue_avg_months: db.overdue_avg_months, delayed: db.delayed }) +
+  const ctxt = 'DATA updated ' + d.updated + '\nTOTALS: ' + JSON.stringify({ projects: cases.length, markets: d.markets, countries: new Set(cases.map(c => ({ 'Puerto Rico (USA)': 'Puerto Rico', 'St Lucia': 'Saint Lucia' })[c.country] || c.country)).size, claims: db.claims, claims_total: db.claims_total, checks_by_level: db.checks_by_level, stages: db.stages, all_six_public: db.all_six_public, with_flags: db.with_flags, overdue: db.overdue, overdue_avg_months: db.overdue_avg_months, delayed: db.delayed }) +
     '\nMARKETS (market|country|projects|avg_checks|avg_confirmed|permit_public_pct|deposit_protection_pct|all_six_public|with_flags|transparency_index):\n' + ms.join('\n') +
     (pick.length ? '\nPROJECTS IN NAMED MARKETS (id|market|stage|band|completion|title|score|confirmed|permit|escrow|overdue_months|delay_months|contradicted_claims|flags):\n' + pick.map(row).join('\n') : '');
   let out; try { out = await claude(env, ASK_PROMPT + '\n\n' + ctxt + '\n\nQUESTION: ' + q, null, null, 6000); } catch (e) { return json({ error: 'model' }, 503); }

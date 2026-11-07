@@ -200,7 +200,7 @@ async function dossier(env) {
   const d = L && L.d, db = d && d.db || {};
   if (d) {
     add('projects', 'Projects tracked', (d.cases || []).length, 'projects', '/data/bali-cases.json', d.updated);
-    add('markets', 'Markets with desk research', d.markets, 'markets', '/api/open/stats', d.updated, (d.countries || '?') + ' countries');
+    add('markets', 'Markets with desk research', d.markets, 'markets', '/api/open/stats', d.updated, (d.cases && d.cases.length ? new Set(d.cases.map(c => ({ 'Puerto Rico (USA)': 'Puerto Rico', 'St Lucia': 'Saint Lucia' })[c.country] || c.country)).size : (d.countries || '?')) + ' countries');
     add('sources', 'Public sources read', db.sources, 'sources', '/api/open/stats', db.updated);
     add('claims', 'Developer claims tested', db.claims_total, 'claims', '/api/open/stats', db.updated, db.claims ? db.claims.verified + ' verified, ' + db.claims.unverified + ' unverified, ' + db.claims.contradicted + ' contradicted' : null);
     add('changes', 'Changes detected on developer pages', db.changes_detected, 'changes', '/api/open/stats', db.updated);

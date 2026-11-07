@@ -22,7 +22,7 @@ import { ppmSection, gleifNet, networkHtml, NET_CSS, NET_JS } from './kbx_named_
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v18';   // v18: RTL-safe honeypot (d12b); v17: changes page (d12b); v16: design-system tokens (d12b); v15: d12b redesign (H1 tail line, key-facts panel, side contents on desktop, tables as cards on phones)
+const CACHE_V = 'named-v19';   // v19: search empty state links to the free check, claims 'checked against' translated (qa13); v18: RTL-safe honeypot (d12b); v17: changes page (d12b); v16: design-system tokens (d12b); v15: d12b redesign (H1 tail line, key-facts panel, side contents on desktop, tables as cards on phones)
 // v13: sticky section chips, folded long lists, 44 px source pills (ux11); v11: og:image share cards, price per m2, company network (b10c); v10: page-history line (b9b)
 export const OPINION_RX = /\b(scam\w*|fraud\w*|ponzi|swindl\w*|rip-?off|avoid\w*|beware|dodgy|shady|crook\w*|estafa\w*|fraude\w*|timo|timador\w*|betrug\w*|betrüg\w*|abzocke\w*|arnaque\w*|escroquer\w*|escroc\w*|oplichting|oplichter\w*|bedrog\w*)\b|мошен|обман|афер|骗局|诈骗|欺诈|احتيال|نصب/i;
 
@@ -218,7 +218,7 @@ function projectPage(ix, x, lang, extra) {
   // claims
   const CL = (x.cl || []).filter(r => cleanOk(r[0]));
   const claims = CL.length ? '<div class="tw"><table><thead><tr><th>' + esc(tr(lang, 'th_claim')) + '</th><th>' + esc(tr(lang, 'th_status')) + '</th><th>' + esc(tr(lang, 'th_by')) + '</th><th>' + esc(tr(lang, 'th_source')) + '</th></tr></thead><tbody>' +
-    CL.map(r => '<tr class="kfact"><td>' + en(r[0]) + '</td><td><span class="kpill c-' + esc(r[1]) + '">' + esc(tr(lang, 'cs_' + r[1])) + '</span></td><td>' + (r[2] && r[2] !== 'none' ? en(r[2]) : '') + '</td><td>' + srcA(r[3]) + '</td></tr>').join('') + '</tbody></table></div>' : '<p>' + esc(tr(lang, 'no_hist')) + '</p>';
+    CL.map(r => '<tr class="kfact"><td>' + en(r[0]) + '</td><td><span class="kpill c-' + esc(r[1]) + '">' + esc(tr(lang, 'cs_' + r[1])) + '</span></td><td>' + (r[2] && r[2] !== 'none' ? (r[2] === 'independent' || r[2] === 'registry' ? esc(tr(lang, 'by_' + r[2])) : en(r[2])) : '') + '</td><td>' + srcA(r[3]) + '</td></tr>').join('') + '</tbody></table></div>' : '<p>' + esc(tr(lang, 'no_hist')) + '</p>';
 
   // history
   const H = [];

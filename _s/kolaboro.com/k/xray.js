@@ -145,7 +145,7 @@
   }
   function skeleton(box, sealed){
     box.innerHTML = '<div class="xr-h"><h2 id="xr-h">' + esc(sealed ? tx('found_h') : tx('title')) + '</h2>' + (sealed ? '<span class="xr-seal">' + esc(tx('sealed')) + '</span>' : '') + '<span class="xr-clock" id="xr-clock"></span></div><p class="xr-sub">' + esc(tx('sub')) + '</p>' +
-      '<div class="xr-known" id="xr-known" hidden></div><div class="xr-bar"><div class="xr-bar-t"><b id="xr-bar-n" aria-live="polite"></b><span class="xr-tally" id="xr-tally"></span></div><div class="xr-meter" role="progressbar" id="xr-meter" aria-valuemin="0" aria-valuenow="0"><i id="xr-meter-i"></i></div></div>' +
+      '<div class="xr-known" id="xr-known" hidden></div><div class="xr-bar"><div class="xr-bar-t"><b id="xr-bar-n" aria-live="polite"></b><span class="xr-tally" id="xr-tally"></span></div><div class="xr-meter" role="progressbar" id="xr-meter" aria-labelledby="xr-bar-n xr-h" aria-valuemin="0" aria-valuenow="0"><i id="xr-meter-i"></i></div></div>' +
       '<details class="xr-progd" id="xr-progd"' + (sealed ? '' : ' open') + '><summary>' + esc(tx('jump')) + '</summary><ol class="xr-prog" id="xr-prog"></ol></details><p class="xr-msg" id="xr-msg" role="status"></p><div class="xr-g" id="xr-g"></div><div class="xr-foot" id="xr-foot" hidden></div><div id="xr-conv"></div>';
   }
   function gapsFallback(){

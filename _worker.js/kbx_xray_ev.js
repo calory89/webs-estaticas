@@ -417,9 +417,9 @@ async function evSatellite(S, env, ctx) {
   c.img = { src: c.data.png, alt: 'Sentinel-2 true-colour image of ' + (SAT_PX * 10 / 1000) + ' km around the pin, ' + date, w: SAT_PX, h: SAT_PX, credit: satCredit(date.slice(0, 4)), scale: '100 px = 1 km' };
   c._src({ name: 'Copernicus Sentinel-2 L2A true colour (TCI) and scene classification (SCL), Cloud-Optimised GeoTIFF', url: f.assets.visual.href, licence: 'Copernicus Sentinel data, free, full and open (Copernicus legal notice); credit: "Contains modified Copernicus Sentinel data ' + date.slice(0, 4) + '"', fetched: now(), bytes: stat.bytes, sha256: digest, note: stat.tiles + ' tiles read with HTTP range requests; sha256 is of the PNG we made' }, stat.bytes);
   c.status = 'found';
-  c.summary = (partly ? 'Partly cloudy' : 'Clear') + ' Sentinel-2 view of the pin from ' + date + ' (' + days + ' days ago), ' + pick.centre_cloud_pct + '% cloud within 300 m of the pin' + (partly ? ', ' + pick.local_cloud_pct + '% over the whole image' : '') + '.';
+  c.summary = (partly ? 'Partly cloudy' : 'Clear') + ' Sentinel-2 view of the pin from ' + date + ' (' + (days <= 0 ? 'today' : days === 1 ? '1 day ago' : days + ' days ago') + '), ' + pick.centre_cloud_pct + '% cloud within 300 m of the pin' + (partly ? ', ' + pick.local_cloud_pct + '% over the whole image' : '') + '.';
   c.items = [
-    { label: 'Image date', value: date + ' (' + days + ' days ago), tile ' + c.data.scene.mgrs, url: sceneUrl, kind: 'link' },
+    { label: 'Image date', value: date + ' (' + (days <= 0 ? 'today' : days === 1 ? '1 day ago' : days + ' days ago') + '), tile ' + c.data.scene.mgrs, url: sceneUrl, kind: 'link' },
     { label: 'Clouds', value: pick.centre_cloud_pct + '% within 300 m of the pin, ' + c.data.scene.local_cloud_pct + '% over the 2.56 km image (scene classification), ' + c.data.scene.cloud_pct + '% over the whole 110 km tile', kind: 'num' },
     { label: 'What you can tell', value: 'Whether the area is built up, cleared, farmland or forest; roads and the coastline; large roofs or slabs if the project is big enough.', kind: 'text' },
     { label: 'What you cannot tell', value: 'Floors, finishes, workers on site, permits, or who owns the land. A small villa project may be only a few pixels.', kind: 'text' },
@@ -659,7 +659,7 @@ async function evMarket(S, env, ctx) {
   if (dm && dm.with_date >= MIN_N) {
     c.data.share_past_first = dm.share_past_first; c.data.median_months_late = dm.past_first ? dm.median_late : null;
     c.items.push({ label: 'Past their first handover date', value: dm.past_first + ' of ' + dm.with_date + ' projects with a date (' + dm.share_past_first + '%)', url: ORIGIN + '/data/delay-index.json', kind: 'num' });
-    if (dm.past_first) c.items.push({ label: 'Median delay of those', value: dm.median_late + ' months late' + (dm.past_first < MIN_N ? ' (only ' + dm.past_first + ' projects)' : ''), url: ORIGIN + '/data/delay-index.json', kind: 'num' });
+    if (dm.past_first && dm.median_late != null) c.items.push({ label: 'Median delay of those', value: dm.median_late + ' months late' + (dm.past_first < MIN_N ? ' (only ' + dm.past_first + ' project' + (dm.past_first === 1 ? '' : 's') + ')' : ''), url: ORIGIN + '/data/delay-index.json', kind: 'num' });
     if (dm.moved) c.items.push({ label: 'Handover date moved at least once', value: dm.moved + ' of ' + dm.tracked + ' tracked projects', url: ORIGIN + '/data/delay-index.json', kind: 'num' });
   } else c.items.push({ label: 'Delays', value: 'Too few projects with a handover date (' + (dm ? dm.with_date : 0) + ', we need ' + MIN_N + ') for a delay rate.', kind: 'text' });
   if (rev.length >= MIN_N) {
@@ -783,7 +783,7 @@ export async function evRun(page, hint, env, ctx, onCard, opts) {
   hint = hint || {}; page = page || {};
   const only = new Set((opts && opts.only && opts.only.length ? opts.only : EV_IDS).filter(id => RUN[id]));
   const emit = c => { try { onCard && onCard(c); } catch (e) {} return c; };
-  const fail = (id, e) => emit({ id, n: NUM[id], title: TITLES[id], status: 'error', summary: 'This check could not run: ' + String((e && e.message) || e).slice(0, 160), items: [], limits: [], paid: PAID[id] || null, sources: [], proof: { ms: 0, bytes: 0, edge: true, contacted: [] }, data: {} });
+  const fail = (id, e) => emit({ id, n: NUM[id], title: TITLES[id], status: 'error', summary: (/timed out/.test(String((e && e.message) || e)) ? 'The source did not answer in time, so this check could not run. The other checks are not affected; run the X-ray again in a few minutes.' : 'This check could not run: ' + String((e && e.message) || e).slice(0, 160)), error: String((e && e.message) || e).slice(0, 160), items: [], limits: [], paid: PAID[id] || null, sources: [], proof: { ms: 0, bytes: 0, edge: true, contacted: [] }, data: {} });
   let B; try { B = await base(env); } catch (e) { return [...only].map(id => fail(id, e)); }
   const html = String(page.html || '');
   const S = { B, html, url: page.final_url || page.url || '', fetched: page.fetched || null, page_sha: page.sha256 || null, hint, market: null, country: null, coi: false, pin: null, place: null };
