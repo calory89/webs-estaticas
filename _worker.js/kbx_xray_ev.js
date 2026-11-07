@@ -656,7 +656,7 @@ async function evMarket(S, env, ctx) {
   c.data = { market: M, tracked: all.length, reviewed: rev.length, share_past_first: null, median_months_late: null, permit_share: null, deposit_share: null, delay_with_date: dm ? dm.with_date : null };
   if (dm && dm.with_date >= MIN_N) {
     c.data.share_past_first = dm.share_past_first; c.data.median_months_late = dm.past_first ? dm.median_late : null;
-    c.items.push({ label: 'Past their first handover date', value: dm.share_past_first + '% of ' + dm.with_date + ' projects with a date (' + dm.past_first + ')', url: ORIGIN + '/data/delay-index.json', kind: 'num' });
+    c.items.push({ label: 'Past their first handover date', value: dm.past_first + ' of ' + dm.with_date + ' projects with a date (' + dm.share_past_first + '%)', url: ORIGIN + '/data/delay-index.json', kind: 'num' });
     if (dm.past_first) c.items.push({ label: 'Median delay of those', value: dm.median_late + ' months late' + (dm.past_first < MIN_N ? ' (only ' + dm.past_first + ' projects)' : ''), url: ORIGIN + '/data/delay-index.json', kind: 'num' });
     if (dm.moved) c.items.push({ label: 'Handover date moved at least once', value: dm.moved + ' of ' + dm.tracked + ' tracked projects', url: ORIGIN + '/data/delay-index.json', kind: 'num' });
   } else c.items.push({ label: 'Delays', value: 'Too few projects with a handover date (' + (dm ? dm.with_date : 0) + ', we need ' + MIN_N + ') for a delay rate.', kind: 'text' });
