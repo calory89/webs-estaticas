@@ -131,7 +131,7 @@ def words(a, l): return len(re.sub(r"<[^>]+>", " ", body_raw(a, l)).split())
 def mins(a, l): return max(1, round(words(a, l) / 220))
 def body_raw(a, l):
     b = a[l]["body"]
-    b = re.sub(r"(?<!<div class=\"tw\">)<table", '<div class="tw"><table', b).replace("</table>", "</table></div>").replace("</table></div></div>", "</table></div>")
+    b = re.sub(r"(?<!<div class=\"tw\" tabindex=\"0\" role=\"region\" aria-label=\"Table\">)<table", '<div class="tw" tabindex="0" role="region" aria-label="Table"><table', b).replace("</table>", "</table></div>").replace("</table></div></div>", "</table></div>")
     if a.get("table"): b = b.replace("{TABLE}", stay_table(l))
     return b
 def lead_item():
@@ -160,7 +160,7 @@ nav.s:after{content:"";position:absolute;right:0;top:0;bottom:1px;width:28px;bac
 .ticker{display:flex;gap:14px;align-items:baseline;border-bottom:1px solid var(--line);padding:9px 0;font:14px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;overflow-x:auto;white-space:nowrap;scrollbar-width:none}
 .ticker b{color:var(--red);text-transform:uppercase;letter-spacing:.08em;font-size:12px}.ticker a{text-decoration:none}.ticker time{color:var(--muted);margin-right:5px;font-variant-numeric:tabular-nums}
 .k{font:700 12px -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);margin:0 0 6px}.k a{text-decoration:none}
-.badge[hidden]{display:none!important}.badge{display:inline-block;background:var(--red);color:#fff;font:700 10.5px -apple-system,sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:2px 6px;border-radius:3px;margin-right:6px;vertical-align:2px}
+.badge[hidden]{display:none!important}.badge{display:inline-block;background:#a3271c;color:#fff;font:700 10.5px -apple-system,sans-serif;letter-spacing:.08em;text-transform:uppercase;padding:2px 6px;border-radius:3px;margin-right:6px;vertical-align:2px}
 h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:700;font-size:clamp(34px,6vw,56px);line-height:1.06;margin:.15em 0 .3em}
 h2{font-size:23px;line-height:1.3;margin:1.6em 0 .4em}h3{font-size:21px;line-height:1.25;margin:.2em 0 .3em}
 .dek{font-size:21px;color:var(--muted);line-height:1.45;margin:0 0 .8em}
@@ -210,7 +210,7 @@ footer{border-top:3px double var(--ink);margin-top:44px;padding:20px 0 40px;font
 .map{height:460px;border-radius:6px;overflow:hidden;background:var(--card);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;margin:14px 0 6px}.map button{padding:12px 18px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:600 15px -apple-system,sans-serif;cursor:pointer}
 .maplibregl-popup-content{font:14px/1.4 -apple-system,sans-serif;color:#1d1b18}
 @media(max-width:600px){.facts dl{grid-template-columns:1fr}.facts dt{margin-top:6px}.hero{min-height:480px}.hv{padding:22px 18px}}
-header.m{position:relative}.ear{position:absolute;top:22px;width:200px;border:1px solid var(--ink);padding:7px 9px;font:12px/1.35 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;text-align:left;color:var(--muted)}.ear b{display:block;color:var(--ink);text-transform:uppercase;letter-spacing:.06em;font-size:10.5px}.ear.l{left:0}.ear.r{right:0;text-align:right}
+header.m{position:relative}.mh{margin:0;font-size:inherit;line-height:1}.ear{position:absolute;top:22px;width:200px;border:1px solid var(--ink);padding:7px 9px;font:12px/1.35 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;text-align:left;color:var(--muted)}.ear b{display:block;color:var(--ink);text-transform:uppercase;letter-spacing:.06em;font-size:10.5px}.ear.l{left:0}.ear.r{right:0;text-align:right}
 .rh{font:800 12.5px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:.11em;text-transform:uppercase;margin:0 0 10px;padding-top:7px;border-top:3px solid var(--ink)}.rh a{text-decoration:none}
 .fp{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2.3fr) minmax(0,1.15fr);gap:0;padding:18px 0 22px;border-bottom:1px solid var(--ink)}
 .fp>.brf{padding-right:20px;border-right:1px solid var(--line)}.fp>.lead{padding:0 22px}.fp>.rail{padding-left:20px;border-left:1px solid var(--line)}
@@ -264,7 +264,7 @@ def masthead(l, path_tpl, active=None, front=False):
     nav = "".join(f'<a href="/{l}/{s}/" class="{"on" if s==active else ""}{" pl" if s=="plan" else ""}">{esc(sec_name(l,s))}</a>' for s in NAV)
     return f"""<div class="w"><div class="bar"><span><time id="st-today" datetime="{NOW.date().isoformat()}">{today_str(l)}</time> · <span class="daily">{x["daily"]}</span></span>
 <span class="r"><a href="/{l}/search/" aria-label="{x["search"]}">&#9906; {x["search"]}</a>{langs}<button type="button" onclick="stTheme()" aria-label="{x["dark"]}">&#9680;</button></span></div>
-<header class="m">{('<div class="ear l"><b>' + N[l]["ed"] + '</b><span>Sumba · Nusa Tenggara Timur</span></div><div class="ear r"><b>' + N[l]["wx"] + '</b><span id="ear-wx">Waingapu</span></div>') if front else ''}<a class="mt" href="/{l}/">The Sumba Times</a><div class="tg">{esc(UI[l]["tagline"])}</div></header>
+<header class="m">{('<div class="ear l"><b>' + N[l]["ed"] + '</b><span>Sumba · Nusa Tenggara Timur</span></div><div class="ear r"><b>' + N[l]["wx"] + '</b><span id="ear-wx">Waingapu</span></div>') if front else ''}{'<h1 class="mh">' if front else ''}<a class="mt" href="/{l}/">The Sumba Times</a>{'</h1>' if front else ''}<div class="tg">{esc(UI[l]["tagline"])}</div></header>
 <nav class="s" aria-label="{esc(sec_name(l,'news'))}"><div class="in">{nav}</div></nav></div>
 <script>function stLang(x){{try{{document.cookie='st_lang='+x+';path=/;max-age=31536000;samesite=lax'}}catch(e){{}}}}function stTheme(){{var d=document.documentElement,c=d.getAttribute('data-theme'),dark=c?c==='dark':matchMedia('(prefers-color-scheme: dark)').matches,n=dark?'light':'dark';d.setAttribute('data-theme',n);try{{localStorage.setItem('st-theme',n)}}catch(e){{}}}}</script>"""
 
