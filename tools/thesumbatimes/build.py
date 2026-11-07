@@ -11,7 +11,7 @@ try:
     from images import IMAGES
 except Exception:
     IMAGES = {}
-from travel import SLUGS, T, N, HERO_IMG, BASE_PLACES, load_guides, candidate_image
+from travel import SLUGS, T, N, AI, HERO_IMG, BASE_PLACES, load_guides, candidate_image
 _GUIDES = load_guides()
 _have = {a["slug"] for a in ARTICLES}
 ARTICLES = ARTICLES + [g for g in _GUIDES if g["slug"] not in _have]
@@ -234,6 +234,20 @@ header.m{position:relative}.mh{margin:0;font-size:inherit;line-height:1}.ear{pos
 article p:first-of-type .dl+*{}
 @media(max-width:980px){.fp{grid-template-columns:1fr}.fp>.lead{order:-1;padding:0 0 18px}.fp>.brf,.fp>.rail{border:0;padding:16px 0 0}.strip,.c4,.cols{grid-template-columns:1fr 1fr}.strip>.st{padding:16px 10px 16px 0;border-right:0}.tr,.bottom{grid-template-columns:1fr}.ear{display:none}}
 @media(max-width:560px){.strip,.c4,.cols,.trl{grid-template-columns:1fr}.strip>.st{border-bottom:1px solid var(--line)}}
+.sa[hidden]{display:none}.sa{position:fixed;right:16px;bottom:16px;z-index:50;font:15px/1.45 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+.sa-b{display:flex;align-items:center;gap:8px;background:#1d1b18;color:#f7f3ec;border:1px solid #3a352e;border-radius:999px;padding:12px 18px 12px 14px;box-shadow:0 8px 24px rgba(0,0,0,.25);cursor:pointer;font:700 14.5px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;min-height:48px}
+.sa-b:hover{background:#a3271c}.sa.on .sa-b{display:none}
+.sa-p{position:fixed;right:16px;bottom:16px;width:380px;max-width:calc(100vw - 32px);height:min(600px,calc(100vh - 32px));background:var(--bg);color:var(--ink);border:1px solid var(--line);border-radius:12px;box-shadow:0 18px 50px rgba(0,0,0,.3);display:flex;flex-direction:column;overflow:hidden}
+.sa-p[hidden]{display:none}.sa-p header{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;background:#1d1b18;color:#f7f3ec;border-bottom:3px double #d8b27a}.sa-p header b{display:block;font:700 18px 'Cormorant Garamond',Georgia,serif}.sa-p header small{color:#cfc6b6;font-size:12px}
+.sa-x{background:none;border:0;color:#f7f3ec;font-size:28px;line-height:1;cursor:pointer;width:40px;height:40px}
+.sa-m{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:10px}.sa-m .m{max-width:88%;padding:9px 12px;border-radius:12px}.sa-m .m p{margin:0 0 .45em;font-size:15px;white-space:pre-line}.sa-m .m p:last-child{margin:0}
+.sa-m .b{background:var(--card);border:1px solid var(--line);align-self:flex-start;border-bottom-left-radius:3px}.sa-m .u{background:#1d1b18;color:#f7f3ec;align-self:flex-end;border-bottom-right-radius:3px}
+.sa-l{display:block;margin-top:4px;color:var(--accent);font-weight:600}.typing p{animation:sap 1s infinite}@keyframes sap{50%{opacity:.35}}
+.sa-c{display:flex;flex-wrap:wrap;gap:6px}.ac{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:7px 11px;font:13.5px -apple-system,sans-serif;cursor:pointer;text-align:left}.ac:hover{border-color:var(--accent)}
+.sa-f{display:flex;gap:8px;padding:10px;border-top:1px solid var(--line)}.sa-f textarea{flex:1;resize:none;border:1px solid var(--line);border-radius:10px;padding:10px 12px;font:16px -apple-system,sans-serif;background:var(--card);color:var(--ink);max-height:120px}
+.sa-f button{width:46px;border:0;border-radius:10px;background:#a3271c;color:#fff;font-size:18px;cursor:pointer}.sa-n{margin:0;padding:0 12px 10px;font-size:11.5px;color:var(--muted)}
+@media(max-width:600px){.sa-b span{display:none}.sa-b{padding:13px}.sa-p{right:0;bottom:0;width:100vw;max-width:100vw;height:100dvh;border-radius:0}}
+@media print{.sa{display:none}}
 @media(max-width:820px){.front{grid-template-columns:1fr}.side{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:16px}}
 @media print{.bar,nav.s,.ticker,.sub,.share,footer .links,.toc{display:none!important}body{background:#fff;color:#000;font-size:12pt}a{text-decoration:none}}"""
 
@@ -286,11 +300,35 @@ fetch('{SB_URL}/rest/v1/newsletter_subscribers',{{method:'POST',headers:{{'apike
 try{{var td=document.getElementById('st-today');if(td)td.textContent=new Intl.DateTimeFormat('{l}',{{weekday:'long',day:'numeric',month:'long',year:'numeric',timeZone:'Asia/Makassar'}}).format(new Date())}}catch(e){{}}
 document.querySelectorAll('[data-date]').forEach(function(el){{if(el.getAttribute('data-date')===t){{el.textContent={json.dumps(X[l]["today"])};el.hidden=false}}}})}})();</script>"""
 
+def assistant(l):
+    a = AI[l]
+    chips = "".join(f'<button type="button" class="ac">{esc(c)}</button>' for c in a["chips"])
+    return rf"""<div id="sa" class="sa" data-l="{l}" hidden><button type="button" class="sa-b" aria-expanded="false" aria-controls="sa-p"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H9l-5 4v-4H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm3 6.5a1.5 1.5 0 1 0 0 .01zm5 0a1.5 1.5 0 1 0 0 .01zm5 0a1.5 1.5 0 1 0 0 .01z"/></svg><span>{esc(a["btn"])}</span></button>
+<section id="sa-p" class="sa-p" role="dialog" aria-label="{esc(a["title"])}" hidden><header><div><b>{esc(a["title"])}</b><small>{esc(a["sub"])}</small></div><button type="button" class="sa-x" aria-label="{esc(a["close"])}">×</button></header>
+<div class="sa-m" aria-live="polite"><div class="m b"><p>{esc(a["hello"])}</p></div><div class="sa-c">{chips}</div></div>
+<form class="sa-f"><textarea rows="1" maxlength="600" placeholder="{esc(a["ph"])}" aria-label="{esc(a["ph"])}"></textarea><button type="submit" aria-label="{esc(a["send"])}">➤</button></form><p class="sa-n">{esc(a["note"])}</p></section></div>
+<script>(function(){{var R=document.getElementById('sa'),P=R.querySelector('.sa-p'),B=R.querySelector('.sa-b'),M=R.querySelector('.sa-m'),F=R.querySelector('form'),T=F.querySelector('textarea'),L=R.dataset.l,TX={json.dumps({k: a[k] for k in ("err","limit","off")}, ensure_ascii=False)},H=[],busy=false;
+try{{H=JSON.parse(sessionStorage.getItem('sa-h')||'[]')}}catch(e){{}}
+function link(p,t){{var r=/→\s*([^|\n]+?)\s*\|\s*(https:\/\/thesumbatimes\.com\/[^\s]*)/g,i=0,m;while((m=r.exec(t))){{p.appendChild(document.createTextNode(t.slice(i,m.index)));var a=document.createElement('a');a.href=m[2];a.textContent='→ '+m[1];a.className='sa-l';p.appendChild(a);i=r.lastIndex}}p.appendChild(document.createTextNode(t.slice(i)))}}
+function add(role,t){{var d=document.createElement('div');d.className='m '+(role==='user'?'u':'b');t.split(/\n{{2,}}/).forEach(function(x){{var p=document.createElement('p');link(p,x);d.appendChild(p)}});M.appendChild(d);M.scrollTop=M.scrollHeight;return d}}
+H.forEach(function(m){{add(m.role,m.content)}});fetch('/api/ask').then(function(r){{return r.json()}}).then(function(j){{if(j.on)R.hidden=false}}).catch(function(){{}});
+function open(o){{P.hidden=!o;B.setAttribute('aria-expanded',o);R.classList.toggle('on',o);if(o){{T.focus();try{{clarity('event','assistant_open')}}catch(e){{}}}}}}
+B.onclick=function(){{open(P.hidden)}};R.querySelector('.sa-x').onclick=function(){{open(false);B.focus()}};document.addEventListener('keydown',function(e){{if(e.key==='Escape'&&!P.hidden){{open(false);B.focus()}}}});
+R.querySelectorAll('.ac').forEach(function(c){{c.onclick=function(){{T.value=c.textContent;F.requestSubmit?F.requestSubmit():F.onsubmit()}}}});
+T.addEventListener('keydown',function(e){{if(e.key==='Enter'&&!e.shiftKey){{e.preventDefault();F.requestSubmit?F.requestSubmit():F.onsubmit()}}}});
+T.addEventListener('input',function(){{T.style.height='auto';T.style.height=Math.min(T.scrollHeight,120)+'px'}});
+F.onsubmit=function(e){{if(e)e.preventDefault();var q=T.value.trim();if(!q||busy)return false;busy=true;T.value='';T.style.height='auto';var c=R.querySelector('.sa-c');if(c)c.remove();
+add('user',q);var w=add('assistant','…');w.classList.add('typing');try{{clarity('event','assistant_ask')}}catch(_){{}}
+fetch('/api/ask',{{method:'POST',headers:{{'content-type':'application/json'}},body:JSON.stringify({{q:q,lang:L,page:location.pathname,history:H.slice(-6)}})}}).then(function(r){{return r.json().then(function(j){{return [r.status,j]}})}}).then(function(z){{
+w.remove();var s=z[0],j=z[1];if(s===200&&j.text){{add('assistant',j.text);H.push({{role:'user',content:q}},{{role:'assistant',content:j.text}});H=H.slice(-12);try{{sessionStorage.setItem('sa-h',JSON.stringify(H))}}catch(e){{}}}}
+else if(s===429)add('assistant',TX.limit+'\n\n→ '+document.title.split(' · ')[0]+' | https://thesumbatimes.com/'+L+'/plan/');
+else if(s===503)add('assistant',TX.off+'\n\n→ '+'The Sumba Times | https://thesumbatimes.com/'+L+'/plan/');else add('assistant',TX.err)}}).catch(function(){{w.remove();add('assistant',TX.err)}}).then(function(){{busy=false}});return false}};}})();</script>"""
+
 def footer(l):
     u = UI[l]; x = X[l]
     links = "".join(f'<a href="/{l}/{s}/">{esc(sec_name(l,s))}</a>' for s in NAV)
     return f"""<div class="w"><footer><div class="links">{links}</div><p><b>The Sumba Times</b> · <a href="/{l}/about/">{x["about"]}</a> · <a href="/{l}/feed.xml">{x["rss"]}</a> · <a href="mailto:{CONTACT}">{CONTACT}</a><br>
-<a href="https://ecobeachcity.com/" rel="noopener">{u["published_by"]}</a>. {u["disclosure"]}<br>© {NOW.year} The Sumba Times</p></footer></div>{sub_js(l)}</body></html>"""
+<a href="https://ecobeachcity.com/" rel="noopener">{u["published_by"]}</a>. {u["disclosure"]}<br>© {NOW.year} The Sumba Times</p></footer></div>{sub_js(l)}{assistant(l)}</body></html>"""
 
 def picture(a, l, sizes="(max-width: 820px) 100vw, 760px", eager=False, cap=True):
     im = img_of(a)

@@ -135,3 +135,19 @@ N = {
                     ["3 malam", "rata-rata lama tinggal di Sumba Timur", "/id/business/east-sumba-visitor-numbers-2025/"], ["~1.500", "kamar hotel di seluruh pulau", "/id/where-to-stay/tempat-menginap-di-sumba/"],
                     ["2", "bandara: Tambolaka dan Waingapu", "/id/getting-here/cara-ke-sumba-dari-bali/"], ["4x", "penerbangan langsung Bali-Waingapu per minggu", "/id/news/new-direct-flights-bali-waingapu/"]]},
 }
+
+# Reader assistant (bottom-right chat)
+AI = {
+ "en": {"btn": "Ask about Sumba", "title": "Sumba assistant", "sub": "Answers from our guides, in your language", "hello": "Hi! Ask me anything about Sumba: when to go, how to get around, beaches, villages, the Pasola, costs or safety.",
+        "ph": "Ask about Sumba…", "send": "Send", "chips": ["When is the best time to visit?", "How do I get from Bali to Sumba?", "How many days do I need?"],
+        "note": "AI answers based on The Sumba Times guides. It can make mistakes: check important details.", "err": "Sorry, I could not answer right now. Please try again in a moment.",
+        "limit": "You have reached today's limit of questions. Our guides have the full answers.", "off": "The assistant is starting soon. Meanwhile, our travel guides have the answers:", "close": "Close"},
+ "es": {"btn": "Pregunta sobre Sumba", "title": "Asistente de Sumba", "sub": "Responde con nuestras guías, en tu idioma", "hello": "¡Hola! Pregúntame lo que quieras sobre Sumba: cuándo ir, cómo moverte, playas, pueblos, la Pasola, cuánto cuesta o la seguridad.",
+        "ph": "Pregunta sobre Sumba…", "send": "Enviar", "chips": ["¿Cuál es la mejor época para ir?", "¿Cómo llego de Bali a Sumba?", "¿Cuántos días necesito?"],
+        "note": "Respuestas con IA basadas en las guías de The Sumba Times. Puede equivocarse: comprueba lo importante.", "err": "Lo siento, ahora no he podido responder. Inténtalo de nuevo en un momento.",
+        "limit": "Has llegado al límite de preguntas de hoy. Nuestras guías tienen las respuestas completas.", "off": "El asistente arranca muy pronto. Mientras tanto, nuestras guías de viaje tienen las respuestas:", "close": "Cerrar"},
+ "id": {"btn": "Tanya soal Sumba", "title": "Asisten Sumba", "sub": "Menjawab dari panduan kami, dalam bahasa Anda", "hello": "Halo! Tanyakan apa saja tentang Sumba: kapan sebaiknya datang, cara berkeliling, pantai, kampung adat, Pasola, biaya atau keamanan.",
+        "ph": "Tanya soal Sumba…", "send": "Kirim", "chips": ["Kapan waktu terbaik ke Sumba?", "Bagaimana cara ke Sumba dari Bali?", "Berapa hari yang dibutuhkan?"],
+        "note": "Jawaban AI berdasarkan panduan The Sumba Times. Bisa keliru: periksa hal penting.", "err": "Maaf, saat ini saya tidak bisa menjawab. Coba lagi sebentar lagi.",
+        "limit": "Anda sudah mencapai batas pertanyaan hari ini. Panduan kami berisi jawaban lengkapnya.", "off": "Asisten akan segera aktif. Sementara itu, panduan wisata kami punya jawabannya:", "close": "Tutup"},
+}
