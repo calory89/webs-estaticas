@@ -1,6 +1,19 @@
 {
  "deploys": [
   {
+   "at": "2026-11-07T11:07:07Z",
+   "commit": "4e464cb093f73ae27219b962ef0648fadfd3bc3e",
+   "checks_passed": 32,
+   "checks_total": 32,
+   "failed": [],
+   "run": "https://github.com/calory89/webs-estaticas/actions/runs/42366592780",
+   "result": "pass",
+   "wait_s": 102,
+   "changes": [
+    "4e464cb093f7"
+   ]
+  },
+  {
    "at": "2026-11-07T02:47:30Z",
    "commit": "74bdb95095dc1ab67f488cd3ddcb5f84bb9aa765",
    "checks_passed": 32,
@@ -2243,13 +2256,13 @@
  "canary": "Cloudflare Pages sends each push to all visitors at once and offers no percentage canary, so none is claimed. A bad push can be visible for a few minutes until the rollback is live.",
  "rollback_mode": "Rollback: a git commit restoring the files changed since the last passing commit; Pages deploys it in about 1 to 2 minutes. An instant Cloudflare API rollback is built in but needs a Pages-scoped token, not configured yet.",
  "latest_checks": {
-  "at": "2026-11-07T02:47:30.870Z",
-  "commit": "74bdb95095dc1ab67f488cd3ddcb5f84bb9aa765",
+  "at": "2026-11-07T11:07:07.029Z",
+  "commit": "4e464cb093f73ae27219b962ef0648fadfd3bc3e",
   "checks": [
    {
     "name": "build: live commit",
     "ok": true,
-    "detail": "live 74bdb95095dc"
+    "detail": "live 4e464cb093f7"
    },
    {
     "name": "page /",
@@ -2259,7 +2272,7 @@
    {
     "name": "page /check/",
     "ok": true,
-    "detail": "200, 72972 bytes"
+    "detail": "200, 72978 bytes"
    },
    {
     "name": "page /database/",
@@ -2334,12 +2347,12 @@
    {
     "name": "api /api/open/checkpoint",
     "ok": true,
-    "detail": "tree size 5"
+    "detail": "tree size 6"
    },
    {
     "name": "api /api/x/l/trust",
     "ok": true,
-    "detail": "{\"controls\":13,\"pass\":11,\"warn\":1,\"fail\":0,\"stale\":1,\"unknown\":0}"
+    "detail": "{\"controls\":13,\"pass\":10,\"warn\":1,\"fail\":0,\"stale\":2,\"unknown\":0}"
    },
    {
     "name": "tls: plain http redirects to https",
@@ -2408,7 +2421,7 @@
    }
   ]
  },
- "last_checked": "74bdb95095dc1ab67f488cd3ddcb5f84bb9aa765",
- "last_good": "74bdb95095dc1ab67f488cd3ddcb5f84bb9aa765",
- "updated": "2026-11-07T02:47:30Z"
+ "last_checked": "4e464cb093f73ae27219b962ef0648fadfd3bc3e",
+ "last_good": "4e464cb093f73ae27219b962ef0648fadfd3bc3e",
+ "updated": "2026-11-07T11:07:07Z"
 }
