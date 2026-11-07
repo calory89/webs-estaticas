@@ -37,7 +37,7 @@ var KB = (function(){
   function kev(n, p){ try { if (window.gtag) gtag('event', n, p || {}); } catch (e) {} try { if (window.clarity) clarity('event', n); } catch (e) {} }
   var TAGGED = false;
   function call(action, payload){ if (D && D.user && D.user.demo && ['me','read','logout'].indexOf(action || 'me') < 0) { KB.toast('This is the demo account: nothing is saved. Create your own case to try it for real.'); return Promise.resolve(D); } return KB.rpc('kolaboro_portal', { p_token: TOKEN, p_action: action || 'me', p_payload: payload || {} }).then(function(d){ if (d.error === 'auth') { KB.del('kb-token'); KB.del('kb-token-as'); location.href = '/login/?next=' + encodeURIComponent(location.pathname + location.search + location.hash); } return d; }).catch(function(){ return { error: 'network' }; }); }
-  function fmt(t, withTime){ if (!t) return ''; var d = new Date(t); return d.toLocaleDateString(window.KB_LOCALE || undefined, { day:'numeric', month:'short', year: d.getFullYear() !== new Date().getFullYear() ? 'numeric' : undefined }) + (withTime ? ' · ' + d.toTimeString().slice(0,5) : ''); }
+  function fmt(t, withTime){ if (!t) return ''; var d = new Date(t); return d.toLocaleDateString(window.KB_LOCALE || 'en-GB', { day:'numeric', month:'short', year: d.getFullYear() !== new Date().getFullYear() ? 'numeric' : undefined }) + (withTime ? ' · ' + d.toTimeString().slice(0,5) : ''); }
   function days(t){ return Math.ceil((new Date(t) - new Date()) / 864e5); }
   function load(action, payload){ return call(action, payload).then(function(d){ if (d.error) { document.querySelectorAll('#app form button[disabled]').forEach(function(b){ b.disabled = false; });
       if (!action || action === 'me') { if (!D) $('app').innerHTML = '<div class="ap-card"><h2>Could not open your portal</h2><p class="ap-muted">' + (d.error === 'network' ? 'We could not reach the server. Check your connection, then try again.' : 'Something went wrong on our side. Try again in a minute.') + '</p><button class="ap-btn" type="button" onclick="location.reload()">Try again</button></div>'; return; }
@@ -258,7 +258,7 @@ var KB = (function(){
   load('me');
   setInterval(function(){ if (!document.hidden && !document.activeElement.closest('form')) load('me'); }, 45000);
 })();
-</script><script src="/k/case.js?v=75e678c6a9"></script><script src="/k/cycle.js?v=fbb83df0-s13"></script>
+</script><script src="/k/case.js?v=18cb5621c5"></script><script src="/k/cycle.js?v=fbb83df0-s13"></script>
 <script>
 (function(){ var K = 'kb-portal-tour'; try { if (localStorage.getItem(K)) return; } catch (e) { return; }
   var steps = [['Your case, stage by stage', 'Six stages, each with a date: case opened, documents, land and title, building permit, site visit, report. Nothing is "almost done".'],
