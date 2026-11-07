@@ -6,7 +6,71 @@
     <atom:link href="https://jurimatch.com/feeds/changelog.xml" rel="self" type="application/rss+xml" />
     <description>The improvements we publish on JuriMatch each week, in plain language.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 31 Oct 2026 12:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Fixed an error that could appear on the sign-in page when the browser filled in your...</title>
+      <link>https://jurimatch.com/changelog</link>
+      <guid isPermaLink="false">jurimatch-changelog-2026-11-07-14j29s4</guid>
+      <pubDate>Sat, 07 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Week of 2 November 2026</category>
+      <description>Fixed an error that could appear on the sign-in page when the browser filled in your details automatically.</description>
+    </item>
+    <item>
+      <title>The home page now shows how many searches were made in the last 90 days, counted live...</title>
+      <link>https://jurimatch.com/changelog</link>
+      <guid isPermaLink="false">jurimatch-changelog-2026-11-07-dv2s7z</guid>
+      <pubDate>Sat, 07 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Week of 2 November 2026</category>
+      <description>The home page now shows how many searches were made in the last 90 days, counted live from our database.</description>
+    </item>
+    <item>
+      <title>Search results now link to how we verify firms and to the no-win-no-fee cost calculator.</title>
+      <link>https://jurimatch.com/changelog</link>
+      <guid isPermaLink="false">jurimatch-changelog-2026-11-04-zyikov</guid>
+      <pubDate>Wed, 04 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Week of 2 November 2026</category>
+      <description>Search results now link to how we verify firms and to the no-win-no-fee cost calculator.</description>
+    </item>
+    <item>
+      <title>The firm inbox has keyboard shortcuts for working through cases.</title>
+      <link>https://jurimatch.com/changelog</link>
+      <guid isPermaLink="false">jurimatch-changelog-2026-11-01-csk8fj</guid>
+      <pubDate>Sun, 01 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Week of 2 November 2026</category>
+      <description>The firm inbox has keyboard shortcuts for working through cases.</description>
+    </item>
+    <item>
+      <title>Each verified firm has a badge it can show on its own website, linking to its...</title>
+      <link>https://jurimatch.com/changelog</link>
+      <guid isPermaLink="false">jurimatch-changelog-2026-11-01-131iwq4</guid>
+      <pubDate>Sun, 01 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Week of 2 November 2026</category>
+      <description>Each verified firm has a badge it can show on its own website, linking to its JuriMatch profile.</description>
+    </item>
+    <item>
+      <title>The search box recognises the type of case in seven languages, even when the AI is...</title>
+      <link>https://jurimatch.com/changelog</link>
+      <guid isPermaLink="false">jurimatch-changelog-2026-11-01-130iics</guid>
+      <pubDate>Sun, 01 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Week of 2 November 2026</category>
+      <description>The search box recognises the type of case in seven languages, even when the AI is slow to answer.</description>
+    </item>
+    <item>
+      <title>Pages by city for the main case types, and free claim tools in seven languages.</title>
+      <link>https://jurimatch.com/changelog</link>
+      <guid isPermaLink="false">jurimatch-changelog-2026-11-01-14f84e1</guid>
+      <pubDate>Sun, 01 Nov 2026 12:00:00 GMT</pubDate>
+      <category>Week of 2 November 2026</category>
+      <description>Pages by city for the main case types, and free claim tools in seven languages.</description>
+    </item>
+    <item>
+      <title>New questions and answers page for law firms: what joining costs, how cases arrive and...</title>
+      <link>https://jurimatch.com/changelog</link>
+      <guid isPermaLink="false">jurimatch-changelog-2026-10-31-1qkt7up</guid>
+      <pubDate>Sat, 31 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Week of 26 October 2026</category>
+      <description>New questions and answers page for law firms: what joining costs, how cases arrive and how to leave.</description>
+    </item>
     <item>
       <title>The case score on your dashboard is now explained in plain words.</title>
       <link>https://jurimatch.com/changelog</link>
@@ -70,6 +134,14 @@
       <pubDate>Wed, 28 Oct 2026 12:00:00 GMT</pubDate>
       <category>Week of 26 October 2026</category>
       <description>Firm profiles now explain how a firm can claim or correct its listing.</description>
+    </item>
+    <item>
+      <title>When a firm joins, open cases that fit its practice are sent to it straight away.</title>
+      <link>https://jurimatch.com/changelog</link>
+      <guid isPermaLink="false">jurimatch-changelog-2026-10-27-wt010f</guid>
+      <pubDate>Tue, 27 Oct 2026 12:00:00 GMT</pubDate>
+      <category>Week of 26 October 2026</category>
+      <description>When a firm joins, open cases that fit its practice are sent to it straight away.</description>
     </item>
     <item>
       <title>While online payment is not open, you see your matched firms in full with their...</title>

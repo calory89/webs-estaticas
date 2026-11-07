@@ -6,7 +6,15 @@
     <atom:link href="https://jurimatch.com/blog/rss.xml" rel="self" type="application/rss+xml" />
     <description>Articles on no-win-no-fee claims, litigation funding and landmark cases.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 01 Nov 2026 08:02:39 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 08:01:12 GMT</lastBuildDate>
+    <item>
+      <title>Collective Redress in the EU: The RAD Explained</title>
+      <link>https://jurimatch.com/blog/2026-11-04-collective-redress-in-the-eu-the-rad-explained</link>
+      <guid isPermaLink="true">https://jurimatch.com/blog/2026-11-04-collective-redress-in-the-eu-the-rad-explained</guid>
+      <pubDate>Wed, 04 Nov 2026 08:01:12 GMT</pubDate>
+      <category>Corporate</category>
+      <description>Learn how the EU Representative Actions Directive empowers consumers through collective redress, cross-border claims, and accessible legal action.</description>
+    </item>
     <item>
       <title>Evidence to Gather for a No-Win-No-Fee Lawyer</title>
       <link>https://jurimatch.com/blog/2026-11-01-evidence-to-gather-for-a-no-win-no-fee-lawyer</link>
@@ -398,14 +406,6 @@
       <pubDate>Wed, 15 Apr 2026 08:00:42 GMT</pubDate>
       <category>International</category>
       <description>Explore how legal aid systems worldwide provide crucial access to justice for individuals who cannot afford legal representation. Understand the mechanisms and challenges.</description>
-    </item>
-    <item>
-      <title>Rylands v. Fletcher: The Birth of Strict Liability</title>
-      <link>https://jurimatch.com/blog/2026-04-14-rylands-v-fletcher-the-birth-of-strict-liability</link>
-      <guid isPermaLink="true">https://jurimatch.com/blog/2026-04-14-rylands-v-fletcher-the-birth-of-strict-liability</guid>
-      <pubDate>Tue, 14 Apr 2026 06:00:35 GMT</pubDate>
-      <category>Corporate</category>
-      <description>Explore Rylands v. Fletcher (1868), a landmark UK case establishing strict liability for dangerous escapes, and its legacy for compensation claims.</description>
     </item>
   </channel>
 </rss>
