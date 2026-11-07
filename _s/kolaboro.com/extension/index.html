@@ -4,16 +4,16 @@
 <script>(function(d){d.setAttribute('data-kdk','');try{var t=localStorage.getItem('kb-theme')}catch(e){}if(t==='dark'||(t!=='light'&&matchMedia('(prefers-color-scheme: dark)').matches))d.setAttribute('data-theme','dark')})(document.documentElement)</script>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Kolaboro browser extension: check off-plan projects in one click | Kolaboro</title>
-<meta name="description" content="Free Chrome extension for off-plan property buyers: send any project page to the Kolaboro desk review and tick the six things a developer should publish. No tracking.">
+<title>Kolaboro X-ray browser extension: check off-plan projects on property portals | Kolaboro</title>
+<meta name="description" content="Free Chrome and Edge extension: on Property Finder, Bayut, idealista, Fotocasa, Rightmove, Zillow and any developer site, see what Kolaboro&#39;s records say and run a live X-ray of public sources. No tracking.">
 
 <link rel="canonical" href="https://kolaboro.com/extension/">
 <link rel="icon" href="/k/favicon.svg" type="image/svg+xml">
 <meta name="theme-color" content="#17212B">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Kolaboro">
-<meta property="og:title" content="Kolaboro browser extension: check off-plan projects in one click | Kolaboro">
-<meta property="og:description" content="Free Chrome extension for off-plan property buyers: send any project page to the Kolaboro desk review and tick the six things a developer should publish. No tracking.">
+<meta property="og:title" content="Kolaboro X-ray browser extension: check off-plan projects on property portals | Kolaboro">
+<meta property="og:description" content="Free Chrome and Edge extension: on Property Finder, Bayut, idealista, Fotocasa, Rightmove, Zillow and any developer site, see what Kolaboro&#39;s records say and run a live X-ray of public sources. No tracking.">
 <meta property="og:url" content="https://kolaboro.com/extension/">
 <meta property="og:image" content="https://kolaboro.com/k/og/pricing.png">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
@@ -21,7 +21,7 @@
 <meta name="twitter:image" content="https://kolaboro.com/k/og/pricing.png">
 <link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/k/site.css?v=4d436e54fe">
-<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Kolaboro","url":"https://kolaboro.com/","logo":"https://kolaboro.com/k/favicon.svg"},{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Kolaboro: check off-plan projects","applicationCategory":"BrowserApplication","operatingSystem":"Chrome","softwareVersion":"1.1.0","url":"https://kolaboro.com/extension/","downloadUrl":"https://kolaboro.com/extension/kolaboro-extension.zip","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}]</script>
+<script type="application/ld+json">[{"@context":"https://schema.org","@type":"Organization","name":"Kolaboro","url":"https://kolaboro.com/","logo":"https://kolaboro.com/k/favicon.svg"},{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Kolaboro X-ray","applicationCategory":"BrowserApplication","operatingSystem":"Chrome, Microsoft Edge","softwareVersion":"2.0.0","datePublished":"2026-11-07","url":"https://kolaboro.com/extension/","downloadUrl":"https://kolaboro.com/extension/kolaboro-extension.zip","inLanguage":["en","es","de","fr","nl","ru","zh","ar"],"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}]</script>
 <script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('consent','default',{analytics_storage:'granted',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied',region:["AT", "BE", "BG", "HR", "CY", "CZ", "DK", "EE", "FI", "FR", "DE", "GR", "HU", "IE", "IT", "LV", "LT", "LU", "MT", "NL", "PL", "PT", "RO", "SK", "SI", "ES", "SE", "IS", "LI", "NO", "GB", "CH"]});try{if(localStorage.getItem('kb-consent')==='yes')gtag('consent','update',{analytics_storage:'granted'});}catch(e){}</script><script>(window.kbLate||function(f){addEventListener("load",function(){setTimeout(f,1500)})})(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V";document.head.appendChild(s)})</script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');gtag('config','G-H5TGZJ1KNG');</script>
 
 <link rel="alternate" type="application/rss+xml" title="Kolaboro: what we shipped" href="/feed.xml">
@@ -44,121 +44,98 @@
 </header>
 <main id="main">
 <style>
-.ext-hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(28px,5vw,72px);align-items:center}
-.ext-hero .hero-cta{display:flex;flex-wrap:wrap;gap:12px}
-.ext-meta{margin-top:14px;font-size:.92rem;color:var(--muted)}
-.ext-shot{margin:0;justify-self:center;width:100%;max-width:360px}
-.ext-shot img{width:100%;height:auto;border-radius:14px;border:1px solid var(--line);box-shadow:0 24px 60px -24px rgba(23,33,43,.45);background:var(--paper)}
-.ext-shot figcaption{margin-top:10px;font-size:.88rem;color:var(--muted);text-align:center}
-.ext-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:32px}
-.ext-card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:22px}
-.sec.alt .ext-card{background:var(--card,#fff)}
-.ext-card h3{font-size:1.15rem;line-height:1.25;margin-bottom:8px}
-.ext-card p{color:var(--ink-2);font-size:1rem}
-.ext-ico{width:40px;height:40px;border-radius:10px;background:var(--band);color:var(--band-ink);display:grid;place-items:center;margin-bottom:14px}
-.ext-ico svg{width:22px;height:22px}
-.ext-pair{display:grid;grid-template-columns:repeat(2,minmax(0,320px));gap:clamp(20px,4vw,48px);margin-top:32px;justify-content:start}
-.ext-steps{list-style:none;counter-reset:s;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-top:32px}
-.ext-steps li{counter-increment:s;background:var(--card,#fff);border:1px solid var(--line);border-radius:16px;padding:22px}
-.ext-steps li::before{content:counter(s);display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--hivis);color:#170800;font-weight:800;margin-bottom:12px}
-.ext-steps b{display:block;margin-bottom:6px}
-.ext-steps p{font-size:.98rem;color:var(--ink-2)}
-.ext-steps code,.ext-perm code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.9em;background:var(--concrete);padding:.1em .35em;border-radius:5px;word-break:break-all}
-.ext-note{margin-top:24px;display:flex;gap:12px;align-items:flex-start;background:var(--card,#fff);border:1px dashed var(--ink);border-radius:14px;padding:16px 18px;max-width:760px}
-.ext-note b{white-space:nowrap}
-.ext-perm{margin-top:28px;border-top:1px solid var(--line)}
-.ext-perm div{display:grid;grid-template-columns:minmax(140px,220px) 1fr;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
-.ext-perm dt{font-weight:700}
-.ext-perm dd{color:var(--ink-2)}
-.ext-files{margin-top:18px;font-size:.95rem;color:var(--muted)}
-.ext-files a{color:var(--ink)}
-.ext-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.ov-grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);gap:clamp(24px,4vw,56px);align-items:start;margin-top:24px}
-.ov-p{margin-top:14px;color:var(--ink-2)}
-.ov-card{margin:0;justify-self:center;width:100%;max-width:300px}
-.ov-card>.ov-h{display:flex;align-items:center;gap:8px;background:var(--band);color:var(--band-ink);padding:10px 12px;border-radius:14px 14px 0 0}
-.ov-h span{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.8rem;color:#C9CDD1}.ov-h i{margin-left:auto;font-style:normal;font-size:1.2rem}
-.ov-c{background:var(--paper);border:1px solid var(--line);border-top:0;border-radius:0 0 14px 14px;padding:12px;box-shadow:0 18px 50px -18px rgba(23,33,43,.55);font-size:.92rem}
-.ov-n{font-size:1.4rem}.ov-t{display:inline-block;margin-top:6px;font-size:.78rem;font-weight:700;color:#fff;background:#8A5A00;border-radius:999px;padding:2px 9px}
-.ov-m{margin-top:8px;font-size:.8rem;color:var(--muted)}.ov-a{display:block;margin-top:10px;text-align:center;background:var(--hivis);color:#170800;font-weight:800;border-radius:999px;padding:8px}
-.ov-card figcaption{margin-top:10px;font-size:.88rem;color:var(--muted);text-align:center}
-@media(max-width:900px){.ov-grid{grid-template-columns:1fr}}
-@media(max-width:900px){.ext-hero{grid-template-columns:1fr}.ext-grid{grid-template-columns:1fr}.ext-steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:560px){.ext-hero>.ext-shot{display:none}.ext-steps{grid-template-columns:1fr}.ext-pair{grid-template-columns:1fr;justify-content:stretch}.ext-pair .ext-shot{max-width:320px}.ext-perm div{grid-template-columns:1fr;gap:4px}.ext-hero .hero-cta .btn{width:100%}.ext-note{flex-direction:column;gap:4px}}
+.xr-hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:clamp(24px,5vw,64px);align-items:center}
+.xr-hero figure{margin:0}
+.xr-hero img{display:block;width:min(340px,100%);height:auto;border-radius:var(--k-r-lg);border:1px solid var(--k-line-2);box-shadow:var(--k-sh-3)}
+.xr-hero figcaption,.xr-shot figcaption{margin-top:var(--k-2);font-size:var(--k-fs-xs);color:var(--k-muted)}
+.xr-cta{display:flex;flex-wrap:wrap;gap:var(--k-3);margin-top:var(--k-5)}
+.xr-meta{margin-top:var(--k-4);font-size:var(--k-fs-sm);color:var(--k-muted);max-width:60ch}
+.xr-meta .k-hash{margin-top:var(--k-2);display:flex;max-width:100%}
+.xr-meta .k-hash code{overflow-wrap:anywhere;word-break:break-all;white-space:normal;min-width:0}
+.xr-three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--k-5);margin-top:var(--k-5);list-style:none;padding:0}
+.xr-three li{border-top:2px solid var(--k-ink);padding-top:var(--k-4)}
+.xr-three h3{font-size:var(--k-fs-lg);margin:0 0 var(--k-2)}
+.xr-three p{margin:0;color:var(--k-ink-2)}
+.xr-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--k-4);margin-top:var(--k-5)}
+.xr-shot{margin:var(--k-6) 0 0}
+.xr-shot img{display:block;width:100%;height:auto;border-radius:var(--k-r-lg);border:1px solid var(--k-line)}
+.xr-sec h2{max-width:24ch}
+.xr-sec .lead{max-width:62ch}
+.xr-two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--k-6);margin-top:var(--k-5)}
+.xr-two h3{font-size:var(--k-fs-lg);margin:0 0 var(--k-3)}
+.xr-sites{columns:2;gap:var(--k-5);margin:var(--k-3) 0 0;padding-inline-start:1.1em}
+.xr-sites li{margin-bottom:var(--k-1)}
+.xr-langs{font-size:var(--k-fs-sm);color:var(--k-muted);margin-top:var(--k-4)}
+@media (max-width:860px){.xr-hero{grid-template-columns:minmax(0,1fr)}.xr-three,.xr-two{grid-template-columns:minmax(0,1fr)}.xr-stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:420px){.xr-sites{columns:1}.xr-cta .k-btn{width:100%;justify-content:center}}
 </style>
 
-<section class="phero"><div class="wrap ext-hero">
+<section class="k-phead"><div class="k-wrap xr-hero">
  <div>
-  <p class="crumb"><a href="/">Kolaboro</a> / Browser extension</p>
-  <h1>Check an off-plan project from the page you are on</h1>
-  <p class="lead">A small Chrome extension for buyers. On property portals it quietly shows Kolaboro's public record when a listing is a project we track. On any developer or agent page, one click sends that address to Kolaboro's free desk review, and a six-point checklist shows what the page should be telling you before you pay a deposit.</p>
-  <div class="hero-cta"><a class="btn btn-hi" href="/extension/kolaboro-extension.zip" download data-ev="ext_download">Download for Chrome</a><a class="btn btn-line" href="#install">How to install</a></div>
-  <p class="ext-meta">Version 1.1.0 (3 Nov 2026): adds the overlay on property portals. Free. No account. Chrome Web Store listing coming soon.</p>
+  <p class="k-crumb"><a href="/">Kolaboro</a> / Browser extension</p>
+  <h1>Kolaboro X-ray, on the listing you are looking at</h1>
+  <p class="lead">A free extension for Chrome and Edge. On property portals it shows what our records say about the project in front of you, with a link to its full public page. On any developer site, one click does the same. Then run a live X-ray of public sources without leaving the page.</p>
+  <div class="xr-cta"><a class="k-btn k-btn--primary k-btn--lg" href="/extension/kolaboro-extension.zip" download data-ev="ext_download">Download for Chrome and Edge</a><a class="k-btn k-btn--ghost k-btn--lg" href="#install">How to install</a></div>
+  <div class="xr-meta"><p>Version 2.0.0, 7 Nov 2026. Zip, 36 KB. Not in the Chrome Web Store yet, so you load it yourself in about a minute.</p>
+   <span class="k-hash"><code>sha256:8d86e641ac1c2decf57a99ffdd6603cecc5489c7510856ec48682380cf6e0ae6</code><button type="button">Copy</button></span></div>
  </div>
- <figure class="ext-shot"><picture><source srcset="/extension/popup-web.webp" type="image/webp"><img src="/extension/popup-web.png" width="360" height="730" alt="The Kolaboro extension popup on a project page: the page address, an orange Check this project button, and a checklist with three of six items ticked."></picture><figcaption>The popup on a project page</figcaption></figure>
+ <figure><img src="/extension/x-ray-panel.webp" width="340" height="651" alt="The Kolaboro X-ray panel on a Property Finder project page: project name and developer from our records, place, stage, promised handover, buyer checks public, last checked date, and a sealed X-ray with 16 checks each marked Found, Not found or Not published."><figcaption>The panel after an X-ray, on a Property Finder project page</figcaption></figure>
 </div></section>
 
-<section class="sec"><div class="wrap">
- <p class="eyebrow">What it does</p>
- <h2>Four things, and nothing sent without a reason</h2>
- <div class="ext-grid">
-  <div class="ext-card"><div class="ext-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h12M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>Check this project</h3><p>Opens <a href="/check/">kolaboro.com/check</a> in a new tab with the page address filled in, so the free desk review starts straight away.</p></div>
-  <div class="ext-card"><div class="ext-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7l2 2 4-4M4 17l2 2 4-4M13 7h7M13 17h7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></div><h3>A six-point checklist</h3><p>Tick what you can see on the page: permit number, deposit protection, construction progress, plans, track record, and no guaranteed returns. Each gap is a question for the seller.</p></div>
-  <div class="ext-card"><div class="ext-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4l10 7-4.5 1 2.5 5-2 1-2.5-5L7 16z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div><h3>Right-click any link</h3><p>"Check with Kolaboro" appears when you right-click a page or a link, handy on listing portals where each project is a link.</p></div>
- <div class="ext-card"><div class="ext-ico"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><rect x="11" y="12" width="8" height="6" rx="1.5" fill="currentColor"/></svg></div><h3>Our record on portals</h3><p>On Property Finder, Bayut, Rumah123, FazWaz and other portals, a small card shows Kolaboro's public record when the listing is a project we track. <a href="#overlay">How it works</a>.</p></div>
+<section class="k-sec k-sec--tint xr-sec"><div class="k-wrap">
+ <h2>What it does</h2>
+ <ul class="xr-three">
+  <li><h3>Recognises the project</h3><p>On six property portals the panel appears when the listing is a project or developer we track: name, developer, place, stage at our last check, the handover date the developer promised, and when we last checked. Projects we have not reviewed yet show facts only, no score.</p></li>
+  <li><h3>Works on developer sites</h3><p>Click the Kolaboro icon on a developer's or agent's page. If the website belongs to a developer we track, you see the project or the list of its projects we follow, each linking to its named page.</p></li>
+  <li><h3>Runs the X-ray</h3><p>Registers, domain and certificate history, the Internet Archive, hosting, location and satellite, reused images, market base rates and buyer law. Each check says Found, Not found or Not published, and the result is sealed with a fingerprint.</p></li>
+ </ul>
+ <div class="xr-stats" aria-describedby="xr-upd">
+  <div class="k-stat"><b data-xr="projects">…</b><span>projects it can recognise</span></div>
+  <div class="k-stat"><b data-xr="developers">…</b><span>developers</span></div>
+  <div class="k-stat"><b data-xr="u">…</b><span>page addresses known</span></div>
+  <div class="k-stat"><b data-xr="d">…</b><span>websites known by domain</span></div>
  </div>
+ <p class="k-small k-muted" id="xr-upd">Counting live from the lookup table.</p>
+ <figure class="xr-shot"><img src="/extension/x-ray-popup.webp" width="1280" height="800" loading="lazy" alt="Two Kolaboro popups on developer websites: one recognises a single project with its record, the other lists the projects we track on that developer's website."><figcaption>The popup on two developer websites: one project, and a developer with several projects</figcaption></figure>
 </div></section>
 
-<section class="sec" id="overlay"><div class="wrap">
- <p class="eyebrow">New in 1.1.0</p>
- <h2>Our record, on the listing you are looking at</h2>
- <div class="ov-grid">
-  <div>
-   <p class="lead">Open a listing on a property portal. If it is one of the projects Kolaboro tracks, a small card appears in the corner: the project's anonymous id, how many of the six buyer checks are public, any risk report, and a link to the full record. If it is not tracked, nothing appears.</p>
-   <p class="ov-p">It matches in two ways: by the listing's address, when that exact page is one of our research sources, or by the project's name in the listing title, only within the portal's own country. A name match says so on the card, so you can confirm it is the same project.</p>
-   <p class="ov-p" id="ov-stats">Coverage today: <b data-ov="url">190</b> projects by listing address and <b data-ov="name">771</b> by project name, of 891 tracked.</p>
-   <p class="ov-p"><b>Portals:</b> Property Finder (UAE, Bahrain, Egypt, Qatar, Saudi Arabia), Bayut, Rumah123, FazWaz, Dot Property, Thailand-Property, Rumavi, Realting, Emlak Platform, Pincali, EdgeProp, PropertyGuru Malaysia, idealista (Spain, Portugal) and Apartments.com.au. These are the portals that appear in our research sources, plus the main portals of our largest markets.</p>
-  </div>
-  <figure class="ov-card" aria-label="Example of the card"><div class="ov-h"><b>kolaboro</b><span>DXB-041</span><i aria-hidden="true">&times;</i></div><div class="ov-c"><p><b class="ov-n">3 of 6</b> buyer checks public</p><span class="ov-t">Some checks public</span><p class="ov-m">Matched by this listing's address. Dubai. Checked 3 Nov 2026.</p><span class="ov-a">See the full public record</span></div><figcaption>The card, as drawn by the extension (example values)</figcaption></figure>
+<section class="k-sec xr-sec"><div class="k-wrap">
+ <h2>Where the panel appears</h2>
+ <div class="xr-two">
+  <div><h3>Property portals</h3>
+   <ul class="xr-sites"><li>Property Finder (UAE, Bahrain, Egypt, Qatar, Saudi Arabia)</li><li>Bayut (UAE, Saudi Arabia, Egypt)</li><li>idealista (Spain, Portugal, Italy)</li><li>Fotocasa (Spain)</li><li>Rightmove (UK and overseas)</li><li>Zillow (USA)</li></ul>
+   <p class="k-small k-muted">On a listing we track you see the full panel. On another listing page you see a small "Kolaboro X-ray" button that opens it. On search and home pages nothing appears.</p></div>
+  <div><h3>Everywhere else</h3>
+   <p>Click the icon. The extension reads the address and title of that tab at that moment, and only then. It works on developer sites, agents' pages and smaller portals.</p>
+   <p class="k-small k-muted">How a match is made, in order: the exact page address, the website's domain, the project name on the page (only within the portal's own country), then the developer name. The panel says which one matched, so you can confirm it is the same project.</p></div>
  </div>
- <div class="ext-note"><b>How it stays private</b><span>The page address and title never leave your browser. The extension hashes them (SHA-256) on your device and sends only the first 4 characters of each hash, so our server answers with every tracked key in those buckets and the match is made on your device. Same idea as a password range check. No cookies, no identifiers, nothing stored, and it runs only on the portals above.</span></div>
+ <p class="xr-langs">Interface in English, Español, Deutsch, Français, Nederlands, Русский, 中文 and العربية, following your browser language.</p>
 </div></section>
 
-<section class="sec alt"><div class="wrap">
- <p class="eyebrow">Screenshots</p>
- <h2>What you see when you click the icon</h2>
- <p class="lead">The checklist is the same six points we use on every project in <a href="/database/">the database</a>. Your ticks stay in your browser, saved per page.</p>
- <div class="ext-pair">
-  <figure class="ext-shot"><picture><source srcset="/extension/popup-web.webp" type="image/webp"><img src="/extension/popup-web.png" width="360" height="730" loading="lazy" alt="Popup on a project website with the Check this project button active and three of six checklist items ticked."></picture><figcaption>On a project website</figcaption></figure>
-  <figure class="ext-shot"><picture><source srcset="/extension/popup-chrome.webp" type="image/webp"><img src="/extension/popup-chrome.png" width="360" height="711" loading="lazy" alt="Popup on a Chrome internal page: the button is greyed out with a message asking you to open the developer's project page."></picture><figcaption>On a browser page, the button is switched off</figcaption></figure>
- </div>
-</div></section>
-
-<section class="sec" id="install"><div class="wrap">
- <p class="eyebrow">Install</p>
- <h2>Install it in Chrome in four steps</h2>
- <p class="lead">Until the Chrome Web Store listing is live, you load it yourself. It takes about a minute.</p>
- <ol class="ext-steps">
-  <li><b>Download and unzip</b><p><a href="/extension/kolaboro-extension.zip" download>Download the zip</a> and unzip it. You get a folder called <code>kolaboro-extension</code>.</p></li>
-  <li><b>Open extensions</b><p>Type <code>chrome://extensions</code> in the address bar and press Enter.</p></li>
-  <li><b>Turn on Developer mode</b><p>Use the Developer mode switch in the top right corner of that page.</p></li>
-  <li><b>Load unpacked</b><p>Click Load unpacked and pick the <code>kolaboro-extension</code> folder. Pin the Kolaboro icon from the puzzle menu.</p></li>
+<section class="k-sec k-sec--tint xr-sec" id="install"><div class="k-wrap">
+ <h2>Install it in about a minute</h2>
+ <p class="lead">Until the store listings are live, you load the extension yourself. Chrome and Edge use the same file.</p>
+ <ol class="k-steps">
+  <li><b>Download and unzip</b><p><a href="/extension/kolaboro-extension.zip" download>Download the zip</a> and unzip it. You get a folder called <code>kolaboro-x-ray</code>.</p></li>
+  <li><b>Open the extensions page</b><p>In Chrome type <code>chrome://extensions</code> in the address bar. In Edge type <code>edge://extensions</code>.</p></li>
+  <li><b>Turn on Developer mode</b><p>The switch is in the top right corner in Chrome, and in the left column in Edge.</p></li>
+  <li><b>Load unpacked</b><p>Click Load unpacked and pick the <code>kolaboro-x-ray</code> folder. Pin the Kolaboro icon from the puzzle menu so it is one click away.</p></li>
  </ol>
- <div class="ext-note"><b>Coming soon</b><span>A Chrome Web Store listing is on the way. Until then Chrome may show a reminder that a developer mode extension is installed; that is normal for extensions loaded this way.</span></div>
- <div class="ext-cta"><a class="btn btn-hi" href="/extension/kolaboro-extension.zip" download data-ev="ext_download_2">Download for Chrome</a><a class="btn btn-line" href="/check/">Or check a project on the site</a></div>
+ <div class="k-alert" role="note"><b>Updating from version 1</b><span>Remove the old "Kolaboro: check off-plan projects" extension first, then load the new folder. Chrome may remind you that a developer mode extension is installed; that is normal for extensions loaded this way.</span></div>
+ <div class="xr-cta"><a class="k-btn k-btn--dark" href="/extension/kolaboro-extension.zip" download data-ev="ext_download_2">Download the zip</a><a class="k-btn k-btn--ghost" href="/check/">Or run an X-ray on the site</a></div>
 </div></section>
 
-<section class="sec alt" id="privacy"><div class="wrap">
- <p class="eyebrow">Privacy</p>
- <h2>No tracking. The overlay sends hash fragments, not addresses.</h2>
- <p class="lead">The extension has no analytics. It runs code only on the property portals listed above, to look for a tracked project, and there it sends only 4-character hash prefixes, never the address or the title. Everywhere else it reads nothing. The address of a page goes to kolaboro.com only when you press Check this project or pick Check with Kolaboro.</p>
- <dl class="ext-perm">
-  <div><dt><code>activeTab</code></dt><dd>Lets the popup read the address of the tab you are on, only at the moment you click the icon. No access to other tabs or your history.</dd></div>
-  <div><dt><code>contextMenus</code></dt><dd>Adds the "Check with Kolaboro" item to the right-click menu.</dd></div>
-  <div><dt>Property portals only</dt><dd>A content script runs on the portals listed above, and nowhere else. It reads the listing's address, its main heading and the page title, hashes them on your device and adds the card when there is a match. It changes nothing else on the page. No other host permissions.</dd></div>
-  <div><dt>Checklist ticks</dt><dd>Stored only in your browser, inside the extension. Removing the extension deletes them.</dd></div>
+<section class="k-sec xr-sec" id="privacy"><div class="k-wrap k-prose">
+ <h2>Privacy statement</h2>
+ <p class="lead">No tracking. The automatic lookup sends hash fragments, not addresses. The page address goes to Kolaboro only when you press Run the X-ray.</p>
+ <dl class="k-ledger">
+  <dt>The lookup</dt><dd>On the six portals, and in the popup when you click the icon, the extension takes the page address, its domain, the main heading and the title, and hashes them on your device (SHA-256). It sends only the first 4 characters of each hash to <code>kolaboro.com/api/x/j/xr</code>. Our server answers with every record in those buckets and the match is made on your device, so we cannot tell which page you were on.</dd>
+  <dt>The X-ray</dt><dd>Only when you press Run the X-ray, the page address is sent to kolaboro.com, which checks it against public sources. The result (the address and what the sources returned) is kept as a sealed record so its link works. It holds no name, account, IP address or other identifier. Your IP address is used only for a rate-limit counter that expires within an hour.</dd>
+  <dt>Permissions</dt><dd><code>activeTab</code>: read the address and title of the current tab when you click the icon, and at no other time. Host access only to the six portals listed above, to show the panel there. No access to your history, bookmarks, other tabs or other sites.</dd>
+  <dt>What is stored</dt><dd>Nothing. The extension has no storage permission, no cookies, no analytics and no identifiers. Removing it removes everything.</dd>
+  <dt>Code</dt><dd>All code is in the zip, not minified, with no code loaded from elsewhere. It only fetches data from kolaboro.com.</dd>
  </dl>
- <p class="ext-files">Once kolaboro.com opens, the normal <a href="/legal/privacy/">site privacy policy</a> applies. Read the full source before you install: <a href="/extension/src/manifest.json">manifest.json</a>, <a href="/extension/src/background.js">background.js</a>, <a href="/extension/src/popup.html">popup.html</a>, <a href="/extension/src/popup.js">popup.js</a>, <a href="/extension/src/content.js">content.js</a>.</p>
+ <p class="k-small k-muted">Once kolaboro.com opens in a tab, the <a href="/legal/privacy/">site privacy policy</a> applies. Questions or corrections: <a href="/corrections/">corrections</a>.</p>
 </div></section>
 </main>
 <div class="mcta"><a class="btn btn-hi" href="/#start" data-role="buyer" data-ev="cta_sticky">Protect my purchase</a></div>
@@ -286,6 +263,7 @@ if(v==='yes'){if(window.gtag)gtag('consent','update',{analytics_storage:'granted
   window.addEventListener('scroll', function(){ b.classList.toggle('on', window.scrollY > window.innerHeight * 1.5); }, { passive: true });
 })();
 </script>
-<script>fetch('/api/x/j/match/meta').then(function(r){return r.json();}).then(function(m){var a=document.querySelector('[data-ov="url"]'),b=document.querySelector('[data-ov="name"]'),t=document.getElementById('ov-stats');if(a&&m.by_address!=null){a.textContent=m.by_address;b.textContent=m.by_name;t.lastChild.textContent=' by project name, of '+m.projects+' tracked (lookup table built '+m.built+').';}}).catch(function(){});</script>
+<script src="/k/ds.js?v=1" defer></script>
+<script>(function(){var n=function(x){return Number(x).toLocaleString('en');};fetch('/api/x/j/xr/meta').then(function(r){return r.ok?r.json():null;}).then(function(m){if(!m||!m.keys)throw 0;var s={projects:m.projects,developers:m.developers,u:m.keys.u,d:m.keys.d};Object.keys(s).forEach(function(k){var e=document.querySelector('[data-xr="'+k+'"]');if(e)e.textContent=n(s[k]);});var w=document.getElementById('xr-upd');if(w)w.textContent='Live from the lookup table. Records updated '+m.updated+'.';}).catch(function(){var w=document.getElementById('xr-upd');if(w)w.textContent='Live counts are not available right now.';[].forEach.call(document.querySelectorAll('[data-xr]'),function(e){e.textContent='-';});});})();</script>
 </body>
 </html>
