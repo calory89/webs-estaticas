@@ -352,6 +352,17 @@ def extras_html(a, l):
             f'<li><b>{esc(p["name"])}</b>{" · " + esc(p["area"]) if p.get("area") else ""} · <a href="{gmaps(p)}" target="_blank" rel="noopener">{t["open_map"]}</a></li>' for p in pls) + f'</ul><p><a href="/{l}/plan/#map">{t["map_t"]} →</a></p></section>'
     return top, bottom
 
+_LINKS = None
+def fix_links(b):
+    """Point internal links that use English slugs straight at the localized URL (no redirect hop)."""
+    global _LINKS
+    if _LINKS is None:
+        _LINKS = {}
+        for x in all_items():
+            for l in LANGS:
+                _LINKS[f"/{l}/{x['section']}/{x['slug']}/"] = url_of(x, l)
+    return re.sub(r'href="(/(?:en|es|id)/[^"#?]*/)', lambda m: 'href="' + _LINKS.get(m.group(1), m.group(1)), b)
+
 def article_ld(a, l, url, imgs, grp):
     c = a[l]; x = X[l]; kind = kind_of(a)
     mod = a.get("updated") or a["date"]
@@ -389,7 +400,7 @@ def article_page(a, l):
     if a.get("updated"): extra += f'<meta property="article:modified_time" content="{a["updated"]}">'
     s = head(l, c["title"] + " · The Sumba Times", c["dek"], tpl, "article", extra, og) + masthead(l, tpl, grp)
     srcs = "".join(f'<li><a href="{esc(h)}" rel="nofollow noopener" target="_blank">{esc(t)}</a></li>' for t, h in a.get("sources", []))
-    b, toc = with_toc(body_raw(a, l), l)
+    b, toc = with_toc(fix_links(body_raw(a, l)), l)
     if a.get("dateline"):
         b = re.sub(r"^<p>", f'<p><span class="dl">{esc(a["dateline"])} —</span> ', b, count=1)
     if kind_of(a) != "letter": b = inline_sub(b, l)
