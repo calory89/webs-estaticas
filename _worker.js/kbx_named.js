@@ -23,7 +23,7 @@ import { satData, satSection, satToc, satHeading } from './kbx_named_sat.js';   
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v20';   // v20: construction progress from space (f14b);   // v19: search empty state links to the free check, claims 'checked against' translated (qa13); v18: RTL-safe honeypot (d12b); v17: changes page (d12b); v16: design-system tokens (d12b); v15: d12b redesign (H1 tail line, key-facts panel, side contents on desktop, tables as cards on phones)
+const CACHE_V = 'named-v21';   // v20: construction progress from space (f14b);   // v19: search empty state links to the free check, claims 'checked against' translated (qa13); v18: RTL-safe honeypot (d12b); v17: changes page (d12b); v16: design-system tokens (d12b); v15: d12b redesign (H1 tail line, key-facts panel, side contents on desktop, tables as cards on phones)
 // v13: sticky section chips, folded long lists, 44 px source pills (ux11); v11: og:image share cards, price per m2, company network (b10c); v10: page-history line (b9b)
 export const OPINION_RX = /\b(scam\w*|fraud\w*|ponzi|swindl\w*|rip-?off|avoid\w*|beware|dodgy|shady|crook\w*|estafa\w*|fraude\w*|timo|timador\w*|betrug\w*|betrüg\w*|abzocke\w*|arnaque\w*|escroquer\w*|escroc\w*|oplichting|oplichter\w*|bedrog\w*)\b|мошен|обман|афер|骗局|诈骗|欺诈|احتيال|نصب/i;
 
