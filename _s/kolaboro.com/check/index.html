@@ -34,12 +34,12 @@
   <div class="wrap nav-in">
     <a class="brand" href="/" aria-label="Kolaboro home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4v24M8 16 23 6.5M8 16l15 9.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="24" cy="6" r="3.4" fill="currentColor"/><circle cx="24" cy="26" r="3.4" fill="currentColor"/><circle cx="8" cy="16" r="4.2" fill="#FF5B14"/></svg>kolaboro</a>
     <div class="nav-right">
-      <a class="btn btn-hi btn-sm nav-cta-m" href="/#start" data-role="buyer" data-ev="cta_nav_mobile">Protect my purchase</a>
+      <a class="btn btn-hi btn-sm nav-cta-m" href="/check/" aria-current="page" data-ev="cta_nav_mobile_check">Check a project</a>
       <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 20 20"><path d="M2 5h16M2 10h16M2 15h16" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>
     </div>
     <nav class="links" id="menu" aria-label="Main">
-      <a href="/#how">How it works</a><a href="/check">Check a project</a><a href="/database">Database</a><a href="/pricing">Pricing</a><a href="/cases">Live cases</a><a href="/about">About</a>
-      <details class="lsw"><summary aria-label="Language: EN (English)"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M2 10h16M10 2c2.4 2.3 3.4 5 3.4 8s-1 5.7-3.4 8M10 2C7.6 4.3 6.6 7 6.6 10s1 5.7 3.4 8" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="lsw-w">Language:</span> EN</summary><ul><li><a href="/check/" hreflang="en" lang="en" aria-current="page">EN <span>English</span></a></li><li><a href="/de/check/" hreflang="de" lang="de">DE <span>Deutsch</span></a></li><li><a href="/fr/check/" hreflang="fr" lang="fr">FR <span>Français</span></a></li><li><a href="/ru/check/" hreflang="ru" lang="ru">RU <span>Русский</span></a></li><li><a href="/nl/check/" hreflang="nl" lang="nl">NL <span>Nederlands</span></a></li><li><a href="/ar/check/" hreflang="ar" lang="ar">AR <span dir="rtl">العربية</span></a></li><li><a href="/zh/check/" hreflang="zh" lang="zh">ZH <span>简体中文</span></a></li></ul></details><a class="btn btn-hi btn-sm" href="/#start" data-role="buyer" data-ev="cta_nav">Protect my purchase</a>
+      <a href="/#how">How it works</a><a href="/database/">Database</a><a href="/pricing/">Pricing</a><a href="/cases/">Live cases</a><a href="/about/">About</a>
+      <details class="lsw"><summary aria-label="Language: EN (English)"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="8" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M2 10h16M10 2c2.4 2.3 3.4 5 3.4 8s-1 5.7-3.4 8M10 2C7.6 4.3 6.6 7 6.6 10s1 5.7 3.4 8" fill="none" stroke="currentColor" stroke-width="1.6"/></svg><span class="lsw-w">Language:</span> EN</summary><ul><li><a href="/check/" hreflang="en" lang="en" aria-current="page">EN <span>English</span></a></li><li><a href="/de/check/" hreflang="de" lang="de">DE <span>Deutsch</span></a></li><li><a href="/fr/check/" hreflang="fr" lang="fr">FR <span>Français</span></a></li><li><a href="/ru/check/" hreflang="ru" lang="ru">RU <span>Русский</span></a></li><li><a href="/nl/check/" hreflang="nl" lang="nl">NL <span>Nederlands</span></a></li><li><a href="/ar/check/" hreflang="ar" lang="ar">AR <span dir="rtl">العربية</span></a></li><li><a href="/zh/check/" hreflang="zh" lang="zh">ZH <span>简体中文</span></a></li></ul></details><a class="btn btn-hi btn-sm" href="/check/" aria-current="page" data-ev="cta_nav_check">Check a project</a>
     </nav>
   </div>
 </header>
@@ -60,16 +60,16 @@
 <section class="sec" id="analyze"><div class="wrap">
   <div class="az" id="az">
     <div class="az-step on" id="az-1">
-      <p class="az-k">Free desk review · about a minute</p>
+      <p class="az-k">Free. About a minute.</p>
       <h2>Paste a project website, name or permit number</h2>
-      <p class="lead">A website gets the desk review: our research agent reads what the developer promises and tells you what to verify. Every input is also looked up live on the official registers we can query, with links to the source and a sealed copy of each answer.</p>
-      <form id="az-f1" class="qform light" data-nosubmit><input id="az-url" name="url" type="text" inputmode="url" autocomplete="url" autocapitalize="off" spellcheck="false" enterkeyhint="go" placeholder="Website, project name or permit number" aria-label="Project website, name or permit number"><button class="btn btn-hi" type="submit">Check this project</button></form>
+      <p class="lead">For a website, our research agent reads what the developer promises and lists what to verify. Any input is also looked up live on the official registers we can query. Each answer links to its source and is sealed.</p>
+      <form id="az-f1" class="qform light k-omni" data-nosubmit><input id="az-url" name="url" type="text" inputmode="url" autocomplete="url" autocapitalize="off" spellcheck="false" enterkeyhint="go" placeholder="Website, project name or permit number" aria-label="Project website, name or permit number"><button class="btn btn-hi" type="submit">Check this project</button></form>
       <p class="fe" id="az-e1" role="alert"></p>
     </div>
     <div class="az-step" id="az-2">
       <p class="az-k" id="az-host"></p>
       <h2>Where should we send your desk review?</h2>
-      <p class="lead">We start reading the website now. You'll see the results here, and we'll follow up by email.</p>
+      <p class="lead">We start reading the website now. Results appear here, and we follow up by email.</p>
       <form id="az-f2" data-nosubmit>
         <label class="f">Email<input id="az-email" type="email" autocomplete="email" required></label>
         <label class="hp" aria-hidden="true">Company<input id="az-co" tabindex="-1" autocomplete="off"></label>
@@ -81,7 +81,7 @@
     <div class="az-step" id="az-3" aria-live="polite">
       <p class="az-k" id="az-first"></p>
       <h2>Analysing the project</h2>
-      <p class="muted lv-sub">Each line below is a real step of the review, shown as it finishes on our server, with the time it took.</p>
+      <p class="muted lv-sub">Each line is a real step on our server. It appears when it finishes, with the time it took.</p>
       <ol class="lv" id="az-prog"></ol>
       <p class="muted lv-foot" id="az-lvf"></p>
     </div>

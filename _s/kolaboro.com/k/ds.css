@@ -322,6 +322,122 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 /* dark band text */
 .k-sec--band h2,.k-sec--band h3{color:var(--k-band-ink)}.k-sec--band p{color:var(--k-band-muted)}
 
+/* ---------- 4. Marketing pages (site.css pages only; scoped at build) ---------- */
+/* phone sticky button: a docked bar, not a floating pill over the text */
+:where(:root:has(link[href*="/k/site.css"])) .mcta{left:0;right:0;bottom:0;padding:10px var(--k-gut) calc(10px + env(safe-area-inset-bottom));background:color-mix(in srgb,var(--k-surface) 92%,transparent);border-top:1px solid var(--k-line);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+:where(:root:has(link[href*="/k/site.css"])) .mcta .btn{box-shadow:none;min-height:48px}
+
+/* home hero: the one bold moment. A faint survey grid behind a calm headline and the paste box. */
+:where(:root:has(link[href*="/k/site.css"])) .hero{position:relative;background:var(--k-paper);isolation:isolate}
+:where(:root:has(link[href*="/k/site.css"])) .hero::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(var(--k-line) 1px,transparent 1px),linear-gradient(90deg,var(--k-line) 1px,transparent 1px);background-size:56px 56px;background-position:-1px -1px;opacity:.55;-webkit-mask-image:radial-gradient(120% 90% at 20% 30%,#000 30%,transparent 75%);mask-image:radial-gradient(120% 90% at 20% 30%,#000 30%,transparent 75%)}
+:where(:root:has(link[href*="/k/site.css"])) .hero h1{font-size:clamp(2.5rem,1.4rem + 4.6vw,4.5rem);font-weight:740;font-stretch:104%;line-height:1.02;letter-spacing:-.03em;max-width:13ch}
+:where(:root:has(link[href*="/k/site.css"])) .hero .lead{font-size:clamp(1.08rem,1rem + .35vw,1.25rem);line-height:1.55;color:var(--k-ink-2);max-width:46ch;margin-top:20px}
+:where(:root:has(link[href*="/k/site.css"])) .hero .hero-check.k-omni{margin-top:28px;max-width:560px}
+:where(:root:has(link[href*="/k/site.css"])) .hero .hero-check.k-omni .btn{min-width:0;padding-inline:1.4rem}
+:where(:root:has(link[href*="/k/site.css"])) .hero .hero-sub{margin-top:12px;font-size:var(--k-fs-sm);color:var(--k-muted)}
+:where(:root:has(link[href*="/k/site.css"])) .hero .hero-alt{margin-top:22px}
+:where(:root:has(link[href*="/k/site.css"])) .hero .hero-alt a{font-weight:650;color:var(--k-ink);text-decoration:underline;text-decoration-color:var(--k-brand);text-decoration-thickness:2px;text-underline-offset:.25em}
+:where(:root:has(link[href*="/k/site.css"])) .hero .launch{margin-top:14px;font-size:var(--k-fs-sm);color:var(--k-muted)}
+:where(:root:has(link[href*="/k/site.css"])) .hero .launch a{color:var(--k-ink-2)}
+:where(:root:has(link[href*="/k/site.css"])) .insp{border-radius:var(--k-r-lg)!important;box-shadow:var(--k-sh-3)!important}
+:where(:root:has(link[href*="/k/site.css"])) .hero .example a{color:var(--k-muted);font-size:var(--k-fs-xs)}
+:where(:root:has(link[href*="/k/site.css"])) .insp-legend b{background:var(--k-ink);color:var(--k-surface)}
+@media (max-width:560px){:where(:root:has(link[href*="/k/site.css"])) .hero h1{font-size:clamp(2.3rem,10.5vw,3rem)}:where(:root:has(link[href*="/k/site.css"])) .hero .lead{font-size:1.05rem}}
+
+/* the numbers strip: light, readable, still one line on desktop */
+:where(:root:has(link[href*="/k/site.css"])) .r28-strip{background:var(--k-surface);border-block:1px solid var(--k-line)}
+:where(:root:has(link[href*="/k/site.css"])) .r28-strip a{color:var(--k-ink-2);font-size:var(--k-fs-sm)}
+:where(:root:has(link[href*="/k/site.css"])) .r28-strip b{color:var(--k-ink)}
+:where(:root:has(link[href*="/k/site.css"])) .r28-strip em{color:var(--k-sea);font-weight:650}
+:where(:root:has(link[href*="/k/site.css"])) .r28-dot{background:var(--k-ok)!important}
+:where(:root:has(link[href*="/k/site.css"])) .trust{background:var(--k-paper);border-bottom:1px solid var(--k-line)}
+:where(:root:has(link[href*="/k/site.css"])) .tr-l{text-transform:none;letter-spacing:0;font-size:var(--k-fs-sm);font-weight:650;color:var(--k-ink)}
+:where(:root:has(link[href*="/k/site.css"])) .trust a{font-size:var(--k-fs-sm);color:var(--k-ink-2)}
+:where(:root:has(link[href*="/k/site.css"])) .lv{background:var(--k-paper)}
+:where(:root:has(link[href*="/k/site.css"])) .lv-h{text-transform:none!important;letter-spacing:0!important;font-size:var(--k-fs-sm)!important;font-weight:650!important}
+:where(:root:has(link[href*="/k/site.css"])) .lv-l>li{border-radius:var(--k-r-md)!important;border-color:var(--k-line)!important;background:var(--k-surface)!important;box-shadow:none!important}
+
+/* how it works: a real sequence, so numbered; quiet nodes */
+:where(:root:has(link[href*="/k/site.css"])) .how{background:var(--k-surface);border-block:1px solid var(--k-line);padding:var(--k-sec) 0!important}
+:where(:root:has(link[href*="/k/site.css"])) .how-head h2{font-size:var(--k-fs-3xl)}
+:where(:root:has(link[href*="/k/site.css"])) .track .node{border-width:1.5px!important;font-weight:700;background:var(--k-surface)}
+:where(:root:has(link[href*="/k/site.css"])) .track li:last-child .node{background:var(--k-ink)!important;border-color:var(--k-ink)!important;color:var(--k-surface)!important}
+:where(:root:has(link[href*="/k/site.css"])) .track h3{font-size:var(--k-fs-lg)}
+:where(:root:has(link[href*="/k/site.css"])) .track p{color:var(--k-ink-2);font-size:var(--k-fs-md)}
+
+/* findings: white cards, badges in sentence case */
+:where(:root:has(link[href*="/k/site.css"])) .fd{background:var(--k-surface)!important;border:1px solid var(--k-line)!important;border-radius:var(--k-r-md)!important;box-shadow:none!important}
+:where(:root:has(link[href*="/k/site.css"])) .fd-m em{text-transform:none!important;letter-spacing:0!important;font-size:var(--k-fs-xs)!important;font-weight:640!important}
+:where(:root:has(link[href*="/k/site.css"])) .fd-t{font-size:var(--k-fs-md);line-height:1.5}
+:where(:root:has(link[href*="/k/site.css"])) .fd-x{color:var(--k-muted);font-size:var(--k-fs-xs)}
+
+/* product + tools */
+:where(:root:has(link[href*="/k/site.css"])) .prod-shot,:where(:root:has(link[href*="/k/site.css"])) .prod-vid{border-radius:var(--k-r-lg)!important}
+:where(:root:has(link[href*="/k/site.css"])) .prod-stack{border-radius:var(--k-r-md)!important;border-color:var(--k-line)!important;background:var(--k-line)!important}
+:where(:root:has(link[href*="/k/site.css"])) .prod-stack a b{font-stretch:var(--k-wdisplay);font-weight:720}
+:where(:root:has(link[href*="/k/site.css"])) .prod-stack a span::after{content:none}
+:where(:root:has(link[href*="/k/site.css"])) .prod-stack a:hover{background:var(--k-sea-soft)}
+:where(:root:has(link[href*="/k/site.css"])) .r21-try a{border-radius:var(--k-r-md);border-color:var(--k-line)}
+:where(:root:has(link[href*="/k/site.css"])) .r21-try a:hover{transform:none;border-color:var(--k-line-2);box-shadow:var(--k-sh-2)}
+:where(:root:has(link[href*="/k/site.css"])) .r21-try a b{font-size:var(--k-fs-md)}
+:where(:root:has(link[href*="/k/site.css"])) .r21-try a .d{color:var(--k-ink-2);font-size:var(--k-fs-sm)}
+:where(:root:has(link[href*="/k/site.css"])) .r21-try a em{font-style:normal;color:var(--k-sea);font-weight:650;font-size:var(--k-fs-sm);margin-top:auto}
+
+/* buying alone vs with Kolaboro */
+:where(:root:has(link[href*="/k/site.css"])) .vs-hk,:where(:root:has(link[href*="/k/site.css"])) .vs-k{background:var(--k-band)!important}
+:where(:root:has(link[href*="/k/site.css"])) .vs-hk{border-radius:var(--k-r-lg) var(--k-r-lg) 0 0!important}
+:where(:root:has(link[href*="/k/site.css"])) .vs-row:last-child .vs-k{border-radius:0 0 var(--k-r-lg) var(--k-r-lg)!important}
+:where(:root:has(link[href*="/k/site.css"])) .vs-k .vs-tag{color:var(--k-band-muted)!important}
+
+/* prices */
+:where(:root:has(link[href*="/k/site.css"])) .tile{border:1px solid var(--k-line)!important;border-radius:var(--k-r-lg)!important;background:var(--k-surface);box-shadow:none!important}
+:where(:root:has(link[href*="/k/site.css"])) .tile.hot,:where(:root:has(link[href*="/k/site.css"])) .sec.alt .tile.hot{background:var(--k-band)!important;border-color:var(--k-band)!important}
+:where(:root:has(link[href*="/k/site.css"])) .tile .price{font-stretch:var(--k-wdisplay);font-weight:740;letter-spacing:-.03em}
+:where(:root:has(link[href*="/k/site.css"])) .tile ul li::before{border-radius:2px}
+:where(:root:has(link[href*="/k/site.css"])) .tile .tag{text-transform:none;letter-spacing:0;font-weight:650;border-radius:var(--k-r-pill)}
+:where(:root:has(link[href*="/k/site.css"])) .tile .per{color:var(--k-muted)}
+:where(:root:has(link[href*="/k/site.css"])) .tile.hot .per,:where(:root:has(link[href*="/k/site.css"])) .tile.hot p{color:var(--k-band-muted)}
+
+/* FAQ: rows, not boxed pills */
+:where(:root:has(link[href*="/k/site.css"])) .faq details{background:transparent!important;border:0!important;border-bottom:1px solid var(--k-line)!important;border-radius:0!important;padding:0!important}
+:where(:root:has(link[href*="/k/site.css"])) .faq details:first-child{border-top:1px solid var(--k-line)!important}
+:where(:root:has(link[href*="/k/site.css"])) .faq summary{font-stretch:100%!important;font-weight:640!important;font-size:var(--k-fs-md)!important}
+:where(:root:has(link[href*="/k/site.css"])) .faq summary::after{font-weight:400!important;color:var(--k-muted)}
+:where(:root:has(link[href*="/k/site.css"])) .faq details p{max-width:62ch}
+:where(:root:has(link[href*="/k/site.css"])) .faq-card{border-radius:var(--k-r-md)!important;border:1px solid var(--k-line)!important;background:var(--k-surface)!important;box-shadow:none!important;color:var(--k-ink)!important}
+:where(:root:has(link[href*="/k/site.css"])) .faq-card p{color:var(--k-ink-2)!important}
+
+/* founder note + contact form */
+:where(:root:has(link[href*="/k/site.css"])) .founder{background:var(--k-surface);border-block:1px solid var(--k-line)}
+:where(:root:has(link[href*="/k/site.css"])) .asks li{border-radius:var(--k-r-sm)!important;font-style:normal!important}
+:where(:root:has(link[href*="/k/site.css"])) .seg{border:1px solid var(--k-line-2)!important;border-radius:var(--k-r-md)!important;background:var(--k-sunken)}
+:where(:root:has(link[href*="/k/site.css"])) .seg span{border-color:var(--k-line-2)!important;font-weight:620!important}
+:where(:root:has(link[href*="/k/site.css"])) .seg input:checked+span{background:var(--k-surface)!important;color:var(--k-ink)!important;box-shadow:inset 0 0 0 2px var(--k-ink)}
+:where(:root:has(link[href*="/k/site.css"])) .perk{border-radius:var(--k-r-md)!important;background:var(--k-sunken)!important;border:0!important}
+:where(:root:has(link[href*="/k/site.css"])) .start .f input,:where(:root:has(link[href*="/k/site.css"])) .start .f select,:where(:root:has(link[href*="/k/site.css"])) .start .f textarea,:where(:root:has(link[href*="/k/site.css"])) .start input:not([type=radio]):not([type=checkbox]),:where(:root:has(link[href*="/k/site.css"])) .start textarea,:where(:root:has(link[href*="/k/site.css"])) .start select{border:1px solid var(--k-field)!important;border-radius:var(--k-r-sm)!important;background:var(--k-surface)!important;min-height:48px}
+/* sentence case everywhere: legacy labels that were tracked ALL CAPS */
+:where(:root:has(link[href*="/k/site.css"])) .toast b,:where(:root:has(link[href*="/k/site.css"])) .file span,:where(:root:has(link[href*="/k/site.css"])) .cq-h,:where(:root:has(link[href*="/k/site.css"])) .ptable th,:where(:root:has(link[href*="/k/site.css"])) .pcard span,:where(:root:has(link[href*="/k/site.css"])) .az-k,:where(:root:has(link[href*="/k/site.css"])) .az-facts span,:where(:root:has(link[href*="/k/site.css"])) .cp-status span,:where(:root:has(link[href*="/k/site.css"])) .mk-t th,:where(:root:has(link[href*="/k/site.css"])) .rp-k,:where(:root:has(link[href*="/k/site.css"])) .rp-t th,:where(:root:has(link[href*="/k/site.css"])) .t20-pill,:where(:root:has(link[href*="/k/site.css"])) .r21-try i,:where(:root:has(link[href*="/k/site.css"])) .st-t th,:where(:root:has(link[href*="/k/site.css"])) .ct-f span,:where(:root:has(link[href*="/k/site.css"])) .x-area span,:where(:root:has(link[href*="/k/site.css"])) .f-kpis span,:where(:root:has(link[href*="/k/site.css"])) .kv,:where(:root:has(link[href*="/k/site.css"])) .ship-l,:where(:root:has(link[href*="/k/site.css"])) .rm-i em,:where(:root:has(link[href*="/k/site.css"])) .vs-h,:where(:root:has(link[href*="/k/site.css"])) .vs-tag,:where(:root:has(link[href*="/k/site.css"])) .trust .tr-l,:where(:root:has(link[href*="/k/site.css"])) .cl-feed em,:where(:root:has(link[href*="/k/site.css"])) .kx-sc-h b,:where(:root:has(link[href*="/k/site.css"])) .kx-sc-t th,:where(:root:has(link[href*="/k/site.css"])) .toc-m-l{text-transform:none!important;letter-spacing:0!important}
+:where(:root:has(link[href*="/k/site.css"])) .faq-card a{color:var(--k-sea)!important;font-weight:650!important}
+/* header icon buttons: hairline instead of heavy outlines */
+:where(:root:has(link[href*="/k/site.css"])) .burger,:where(:root:has(link[href*="/k/site.css"])) .kx-sb{border:1px solid var(--k-line-2)!important;border-radius:var(--k-r-sm)!important;background:var(--k-surface)!important;color:var(--k-ink)!important}
+:where(:root:has(link[href*="/k/site.css"])) .burger:hover,:where(:root:has(link[href*="/k/site.css"])) .kx-sb:hover{border-color:var(--k-ink-2)!important}
+@media (min-width:901px){:where(:root:has(link[href*="/k/site.css"])) .nav .kx-th{border:1px solid var(--k-line-2)!important;border-radius:var(--k-r-sm)!important}}
+:where(:root:has(link[href*="/k/site.css"])) .news input,:where(:root:has(link[href*="/k/site.css"])) .qform input{border-radius:var(--k-r-sm)!important}
+/* inner page header */
+:where(:root:has(link[href*="/k/site.css"])) .phero{background:var(--k-paper)}
+:where(:root:has(link[href*="/k/site.css"])) .phero h1{font-size:var(--k-fs-4xl);font-weight:740;font-stretch:104%;line-height:1.04;letter-spacing:-.03em;max-width:20ch}
+:where(:root:has(link[href*="/k/site.css"])) .phero .lead{max-width:56ch}
+:where(:root:has(link[href*="/k/site.css"])) .crumb{font-size:var(--k-fs-sm);color:var(--k-muted)}
+:where(:root:has(link[href*="/k/site.css"])) .crumb a{color:inherit}
+/* /check: the paste panel */
+:where(:root:has(link[href*="/k/site.css"])) .az{border-radius:var(--k-r-lg)!important;border:1px solid var(--k-line)!important;background:var(--k-surface)!important;box-shadow:var(--k-sh-2)!important}
+:where(:root:has(link[href*="/k/site.css"])) .az-k{text-transform:none!important;letter-spacing:0!important;font-size:var(--k-fs-sm)!important;font-weight:650!important;color:var(--k-muted)!important}
+:where(:root:has(link[href*="/k/site.css"])) .az h2{font-size:var(--k-fs-2xl)!important}
+:where(:root:has(link[href*="/k/site.css"])) .az .lead{font-size:var(--k-fs-md);max-width:62ch}
+:where(:root:has(link[href*="/k/site.css"])) .az .qform.k-omni{margin-top:20px;max-width:none}
+:where(:root:has(link[href*="/k/site.css"])) .r26-more a{border-radius:var(--k-r-md)!important;border-color:var(--k-line)!important}
+/* ---------- end 4 ---------- */
+
 /* reduced motion: no animation, no smooth scroll */
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
