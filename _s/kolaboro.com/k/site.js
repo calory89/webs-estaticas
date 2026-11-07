@@ -893,12 +893,12 @@ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.c
   var secs = links.map(function (a) { return D.getElementById(a.getAttribute('href').slice(1)); });
   var hdr = D.querySelector('header.nav'), last = null;
   var spy = function () {
-    var top = (hdr ? Math.max(0, hdr.getBoundingClientRect().bottom) : 0) + toc.offsetHeight + 24, cur = -1;
+    var side = toc.offsetHeight > 120, top = (hdr ? Math.max(0, hdr.getBoundingClientRect().bottom) : 0) + (side ? 0 : toc.offsetHeight) + 24, cur = -1;   // side: the contents list is a column beside the text on wide screens (d12b)
     toc.style.top = (hdr ? hdr.offsetHeight : 0) + 'px';
     secs.forEach(function (s, i) { if (s && s.getBoundingClientRect().top < top) cur = i; });
     if (cur === last) return; last = cur;
     links.forEach(function (a, i) { if (i === cur) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current'); });
-    var a = links[cur]; if (a) { var r = a.getBoundingClientRect(), tr = toc.getBoundingClientRect(); if (r.left < tr.left || r.right > tr.right) toc.scrollTo({ left: a.offsetLeft - 16, behavior: 'smooth' }); }
+    var a = links[cur]; if (a && !side) { var r = a.getBoundingClientRect(), tr = toc.getBoundingClientRect(); if (r.left < tr.left || r.right > tr.right) toc.scrollTo({ left: a.offsetLeft - 16, behavior: 'smooth' }); }
   };
   if (toc) { addEventListener('scroll', spy, { passive: true }); addEventListener('resize', spy); spy(); }
   // long lists: first 6 shown, the rest behind one button (everything stays in the page for search engines and Ctrl+F)

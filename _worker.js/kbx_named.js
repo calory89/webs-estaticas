@@ -22,7 +22,8 @@ import { ppmSection, gleifNet, networkHtml, NET_CSS, NET_JS } from './kbx_named_
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v14';   // v13: sticky section chips, folded long lists, 44 px source pills (ux11); v11: og:image share cards, price per m2, company network (b10c); v10: page-history line (b9b)
+const CACHE_V = 'named-v15';   // v15: d12b redesign (H1 tail line, key-facts panel, side contents on desktop, tables as cards on phones)
+// v13: sticky section chips, folded long lists, 44 px source pills (ux11); v11: og:image share cards, price per m2, company network (b10c); v10: page-history line (b9b)
 export const OPINION_RX = /\b(scam\w*|fraud\w*|ponzi|swindl\w*|rip-?off|avoid\w*|beware|dodgy|shady|crook\w*|estafa\w*|fraude\w*|timo|timador\w*|betrug\w*|betrüg\w*|abzocke\w*|arnaque\w*|escroquer\w*|escroc\w*|oplichting|oplichter\w*|bedrog\w*)\b|мошен|обман|афер|骗局|诈骗|欺诈|احتيال|نصب/i;
 
 // ------------------------------------------------------------------------------------------------ data
@@ -286,7 +287,7 @@ function projectPage(ix, x, lang, extra) {
   const crumbs = [[tr(lang, 'crumb_home'), ORIGIN + pre(lang) + '/'], [tr(lang, 'crumb_projects'), ORIGIN + pre(lang) + '/projects/'], [x.mk, ORIGIN + '/m/' + slugM(x.mk) + '/'], [name, canon]];
   const toc = [['glance', 's_glance'], ['promise', 's_promise'], ['ppm', 's_ppm_toc'], ['delivery', 's_delivery'], ['permits', 's_permits'], ['checks', 's_checks'], ['claims', 's_claims'], ['history', 's_history'], ['reports', 's_reports'], ['developer', 's_devsec'], ['reviews', 's_reviews'], ['reply', 's_reply'], ['faq', 's_faq'], ['sources', 's_sources']];
   const body = '<section class="phero kp"><div class="wrap"><p class="crumb">' + crumbs.slice(0, 3).map(([l, u]) => '<a href="' + esc(u.replace(ORIGIN, '')) + '">' + esc(l) + '</a>').join(' / ') + '</p>' +
-    '<h1>' + esc(tr(lang, 'h1_p', { n: name })) + '</h1><p class="lead">' + esc(tr(lang, 'lead_p', { n: name, place })) + '</p>' + keys + watchBox(lang, x.id, name, '/projects/' + x.s + '/') + '</div></section>' +
+    '<h1>' + h1x(tr(lang, 'h1_p', { n: name }), name) + '</h1><p class="lead">' + esc(tr(lang, 'lead_p', { n: name, place })) + '</p>' + keys + watchBox(lang, x.id, name, '/projects/' + x.s + '/') + '</div></section>' +
     '<div class="wrap kwrap"><nav class="ktoc" aria-label="' + esc(tr(lang, 's_glance')) + '">' + toc.map(([i, k]) => '<a href="#' + i + '">' + esc(tr(lang, k)) + '</a>').join('') + '</nav>' +
     sec('glance', esc(tr(lang, 's_glance')), '<ul class="fl glance">' + g.join('') + '</ul>') + sec('promise', esc(tr(lang, 's_promise')), promised) + sec('ppm', esc(tr(lang, 's_ppm')), ppmSection(x, lang).html) + sec('delivery', esc(tr(lang, 's_delivery')), delivery) +
     sec('permits', esc(tr(lang, 's_permits')), permits) + sec('checks', esc(tr(lang, 's_checks')), checks) + sec('claims', esc(tr(lang, 's_claims')), claims) + sec('history', esc(tr(lang, 's_history')), history) +
@@ -364,7 +365,7 @@ function devPage(ix, dv, lang, extra) {
   const S = [...new Set(L.flatMap(x => [x.url, x.du]).concat(FLu.map(f => f[1])).filter(okHttp))];
   const sources = '<p class="ki">' + esc(tr(lang, 'src_intro')) + '</p><ol class="srcs">' + S.slice(0, 60).map(srcLi).join('') + '</ol>';
   const crumbs = [[tr(lang, 'crumb_home'), ORIGIN + pre(lang) + '/'], [tr(lang, 'crumb_devs'), ORIGIN + '/developers/'], [name, canon]];
-  const body = '<section class="phero kp"><div class="wrap"><p class="crumb">' + crumbs.slice(0, 2).map(([l, u]) => '<a href="' + esc(u.replace(ORIGIN, '')) + '">' + esc(l) + '</a>').join(' / ') + '</p><h1>' + esc(tr(lang, 'h1_d', { dev: name })) + '</h1><p class="lead">' + esc(tr(lang, 'lead_d', { dev: name })) + '</p>' + feedLinks(lang, '/developers/' + dv.s + '/', name) + '</div></section>' +
+  const body = '<section class="phero kp"><div class="wrap"><p class="crumb">' + crumbs.slice(0, 2).map(([l, u]) => '<a href="' + esc(u.replace(ORIGIN, '')) + '">' + esc(l) + '</a>').join(' / ') + '</p><h1>' + h1x(tr(lang, 'h1_d', { dev: name }), name) + '</h1><p class="lead">' + esc(tr(lang, 'lead_d', { dev: name })) + '</p>' + feedLinks(lang, '/developers/' + dv.s + '/', name) + '</div></section>' +
     '<div class="wrap kwrap">' + sec('glance', esc(tr(lang, 's_glance')), '<ul class="fl glance">' + g.join('') + '</ul>') + sec('projects', esc(tr(lang, 's_dprojects')), projects) + sec('network', esc(tr(lang, 's_network')), networkHtml(name, gl.matches[0] && extra.netOk ? gl.matches[0] : null, extra.net, L, pre(lang), '/developers/' + dv.s + '/', extra.netOk ? null : gl.matches[0], lang) + NET_CSS + '<script>' + NET_JS + '</script>') + sec('record', esc(tr(lang, 's_drecord')), record) +
     sec('registers', esc(tr(lang, 's_dreg')), reg) + sec('reports', esc(tr(lang, 's_dreports')), reports) + sec('reply', esc(tr(lang, 's_reply')), reply) + sec('cta', esc(tr(lang, 's_cta')), cta) + sec('faq', esc(tr(lang, 's_faq')), faq) + sec('sources', esc(tr(lang, 's_sources')), sources) +
     '<p class="ki kfoot">' + tr(lang, 'foot', { d: esc(fd(checked, lang)), link: own('/data-policy/', tr(lang, 'm_data_policy')) }) + '</p></div>';
@@ -412,17 +413,43 @@ const JS = "(function(){var b=document.querySelector('[data-live]');if(!b)return
   "o.textContent='';o.appendChild(ul);if(d.seal&&d.seal.result_url){var p=document.createElement('p');var a2=document.createElement('a');a2.href=d.seal.result_url;a2.textContent=M.open+' (SHA-256 '+d.seal.root_sha256.slice(0,12)+'...)';p.appendChild(a2);o.appendChild(p);}b.disabled=false;})" +
   ".catch(function(){o.textContent=M.err;b.disabled=false;});});})();";
 
+// d12b: the page name leads the H1; the ": reviews and facts" tail sits on a smaller second line (same text for search engines)
+function h1x(h, name) { if (h.indexOf(name) !== 0 || h.length <= name.length) return esc(h); const t = h.slice(name.length), m = t.match(/^\s*[:\uFF1A]\s*/); return esc(name) + (m ? esc(m[0].trim()) + ' ' : '') + '<span class="kh1s">' + esc(m ? t.slice(m[0].length) : t) + '</span>'; }
+// d12b: every plain .tw table gets its header text on each cell (data-l) so phones can show rows as labelled cards
+function cardify(html) {
+  return html.replace(/<div class="tw"><table><thead><tr>([\s\S]*?)<\/tr><\/thead><tbody>([\s\S]*?)<\/tbody><\/table><\/div>/g, (m, hr, rows) => {
+    const L = (hr.match(/<th[^>]*>([\s\S]*?)<\/th>/g) || []).map(t => t.replace(/<[^>]+>/g, '').replace(/"/g, '&quot;').trim());
+    const out = rows.replace(/<tr([^>]*)>([\s\S]*?)<\/tr>/g, (m2, ta, cells) => { let i = 0; return '<tr' + ta + '>' + cells.replace(/<(td|th)(\s[^>]*)?>/g, (m3, tg, at) => { const l = L[i++] || ''; return '<' + tg + (at || '') + (l && tg === 'td' ? ' data-l="' + l + '"' : '') + '>'; }) + '</tr>'; });
+    return '<div class="tw kcards"><table><thead><tr>' + hr + '</tr></thead><tbody>' + out + '</tbody></table></div>';
+  });
+}
+const D12CSS = '<style id="kd12b-css">' +
+  '.kp h1{font-size:clamp(2.1rem,6vw,4.4rem);line-height:1.02;max-width:18ch;overflow-wrap:anywhere;text-wrap:balance}.kh1s{display:block;font-size:.46em;line-height:1.2;margin-top:.3em;color:var(--ink-2);letter-spacing:0;font-weight:inherit}' +
+  '.kp .lead{max-width:60ch;text-wrap:pretty}.kp .kfs{gap:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:var(--card,var(--paper));grid-template-columns:repeat(auto-fill,minmax(min(220px,100%),1fr))}' +
+  '.kp .kf{border:0;border-radius:0;box-shadow:inset -1px -1px 0 var(--line);padding:14px 16px;min-height:0;background:transparent}.kp dt{text-transform:none;letter-spacing:0;font-size:.82rem;font-weight:600;color:var(--muted)}.kp dd{margin:4px 0 0;font-size:1.02rem;line-height:1.35}.kp dd a.src{display:table;margin:8px 0 0}.kp dd small{font-weight:500;color:var(--muted)}' +
+  '.ks{padding:44px 0 14px}.ks h2{font-size:clamp(1.35rem,2.6vw,1.85rem);letter-spacing:-.01em;margin:0 0 10px}.ks>.ki:first-of-type{margin-top:0}.ki{line-height:1.55}' +
+  '.fl li{border-top:1px solid var(--line);padding:12px 0;line-height:1.55}.fl li b,.fl li strong{font-weight:700}a.src{transition:border-color .15s}a.src:hover{border-color:var(--ink);color:var(--ink)}' +
+  '.kwatch{border:1px solid var(--line);border-inline-start:4px solid var(--hivis);border-radius:16px;padding:20px 22px;margin:20px 0 0}.kwatch>.kfeeds{grid-column:1/-1;max-width:none;margin:6px 0 0;padding-top:12px;border-top:1px solid var(--line);font-size:.86rem;display:flex;flex-wrap:wrap;align-items:center;gap:4px 14px}.kwatch>.kfeeds span{color:var(--muted)}.kw-t b{font-size:1.1rem}' +
+  '.klive{border:1px solid var(--line);border-radius:16px;background:var(--card,var(--paper));padding:20px 22px}.knote{border-style:solid;border-width:1px}' +
+  '.tw{border:1px solid var(--line);border-radius:14px;background:var(--card,var(--paper))}.tw table{min-width:0}.tw th,.tw td{padding:12px 14px}.tw thead th{text-transform:none;font-size:.82rem;font-weight:600;letter-spacing:0;background:var(--paper);border-bottom:1px solid var(--line)}.tw tbody tr:last-child>*{border-bottom:0}.tw tbody tr:hover{background:color-mix(in srgb,var(--ink) 3%,transparent)}.tw tbody th{font-weight:700}' +
+  '.kpill{padding:3px 10px;border:0;font-size:.76rem}' +
+  '@media(max-width:640px){.kp .kfs{grid-template-columns:repeat(2,minmax(0,1fr))}.kp .kf{padding:12px}.kp dd{font-size:.95rem}}@media(max-width:700px){.tw.kcards{border:0;background:none;overflow:visible}.tw.kcards table,.tw.kcards tbody,.tw.kcards tr,.tw.kcards td,.tw.kcards tbody th{display:block}.tw.kcards thead{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}' +
+  '.tw.kcards tr{border:1px solid var(--line);border-radius:14px;background:var(--card,var(--paper));padding:12px 14px;margin:0 0 10px}.tw.kcards td,.tw.kcards tbody th{border:0;padding:3px 0}.tw.kcards tbody th,.tw.kcards td:first-child{font-size:1rem;padding-bottom:6px}.tw.kcards td[data-l]:not(:first-child)::before{content:attr(data-l);display:block;font-size:.78rem;font-weight:600;color:var(--muted)}.tw.kcards td:empty{display:none}.tw.kcards tbody tr:hover{background:var(--card,var(--paper))}}' +
+  '@media(min-width:1180px){.kwrap:has(>.ktoc){display:grid;grid-template-columns:210px minmax(0,1fr);column-gap:56px;align-items:start}.kwrap>.ktoc{grid-column:1;grid-row:1/span 60;flex-direction:column;gap:2px;overflow:visible;background:none;box-shadow:none;padding:44px 0 0;z-index:1}' +
+  '.kwrap>.ktoc a{min-height:36px;border:0;border-radius:8px;padding:0 12px;background:none;border-inline-start:2px solid var(--line);border-radius:0;white-space:normal;line-height:1.25;padding-block:6px}.kwrap>.ktoc a:hover{color:var(--ink);border-inline-start-color:var(--ink)}.kwrap>.ktoc a[aria-current]{background:none;color:var(--ink);font-weight:700;border-inline-start-color:var(--hivis)}.kwrap:has(>.ktoc)>:not(.ktoc){grid-column:2}}' +
+  '@media(prefers-reduced-motion:reduce){a.src{transition:none}}</style>';
+
 function head(pg, lang) {
   const alts = LANGS.map(l => '<link rel="alternate" hreflang="' + l + '" href="' + pg.alt(l) + '">').join('') + '<link rel="alternate" hreflang="x-default" href="' + pg.alt('en') + '">';
   return '<title>' + esc(pg.title) + '</title><meta name="description" content="' + esc(pg.desc) + '"><link rel="canonical" href="' + pg.canon + '">' + alts +
     '<meta property="og:type" content="website"><meta property="og:site_name" content="Kolaboro"><meta property="og:title" content="' + esc(pg.title) + '"><meta property="og:description" content="' + esc(pg.desc) + '"><meta property="og:url" content="' + pg.canon + '"><meta property="og:locale" content="' + (LOCALE[lang] || 'en-GB').replace('-', '_') + '">' +
     (pg.feed ? '<meta property="og:image" content="' + ORIGIN + '/og' + pg.feed.path.replace(/\/$/, '') + '.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="' + esc(tr(lang, 'og_alt', { n: pg.feed.name })) + '"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="' + ORIGIN + '/og' + pg.feed.path.replace(/\/$/, '') + '.png">' : '<meta name="twitter:card" content="summary">') + '<meta name="robots" content="' + (pg.noindex ? 'noindex' : 'index, follow, max-snippet:-1') + '">' +
     (pg.feed ? '<link rel="alternate" type="application/atom+xml" title="' + esc(pg.feed.name) + ' (Atom)" href="' + pg.feed.path + 'feed.atom"><link rel="alternate" type="application/feed+json" title="' + esc(pg.feed.name) + ' (JSON Feed)" href="' + pg.feed.path + 'feed.json">' : '') +
-    '<script type="application/ld+json">' + JSON.stringify(pg.ld).replace(/</g, '\\u003c') + '</script>' + CSS + W9CSS;
+    '<script type="application/ld+json">' + JSON.stringify(pg.ld).replace(/</g, '\\u003c') + '</script>' + CSS + W9CSS + D12CSS;
 }
 async function assemble(pg, lang, shellRes) {
   const msg = { wait: tr(lang, 'live_wait'), err: tr(lang, 'live_err'), found: tr(lang, 'live_found'), nf: tr(lang, 'live_notfound'), un: tr(lang, 'live_unavail'), open: tr(lang, 'live_open') };
-  const body = pg.body.replace('<div class="klive" ', '<div class="klive" data-msg="' + esc(JSON.stringify(msg)) + '" ');
+  const body = cardify(pg.body).replace('<div class="klive" ', '<div class="klive" data-msg="' + esc(JSON.stringify(msg)) + '" ');
   const tags = head(pg, lang);
   const res = new HTMLRewriter()
     .on('title', { element(e) { e.remove(); } })
