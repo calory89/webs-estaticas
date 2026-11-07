@@ -170,11 +170,11 @@ async function emailRoute(req, u, env, ctx) {
   const orig = req.headers.get('origin'); if (orig && !/^https:\/\/(www\.)?kolaboro\.com$/.test(orig)) return out({ error: 'origin' }, 403);
   const b = await body(req); if (!b) return out({ error: 'body' }, 400);
   if (b.hp) return out({ ok: true });   // honeypot: looks like success, nothing sent
-  const e = String(b.email || '').trim().toLowerCase(), root = String(b.root || ''), d = hostOf(String(b.domain || ''));
+  const e = String(b.email || '').trim().toLowerCase(), root = String(b.root || ''), d = hostOf(String(b.domain || '')), pu = String(b.url || '');
   if (e.length > 120 || !EMAIL_RX.test(e)) return out({ error: 'email' }, 400);
   if (!ROOT_RX.test(root) || !DOM_RX.test(d)) return out({ error: 'xray' }, 400);
   if (!(await allow(ctx, 'xm|' + ipOf(req), 5, 3600))) return out({ error: 'rate' }, 429);
-  const t = await mkTok(env, { e, r: root, d, x: Date.now() + 7 * 86400000 }); if (!t) return out({ error: 'not_configured' }, 503);
+  const t = await mkTok(env, Object.assign({ e, r: root, d, x: Date.now() + 7 * 86400000 }, /^https?:\/\/[^\s"<>]{3,240}$/.test(pu) && hostOf(pu) === d ? { u: pu } : {})); if (!t) return out({ error: 'not_configured' }, 503);
   const link = SITE + '/api/x/xc/email/confirm?t=' + t;
   const html = '<p>Someone, hopefully you, asked Kolaboro to email the Project X-ray of <b>' + esc(d) + '</b> to this address.</p>' +
     '<p>Confirm with the button below and we send the link to the X-ray once. If it was not you, ignore this email: nothing else will be sent.</p>';
@@ -201,13 +201,14 @@ async function confirmRoute(req, u, env, ctx) {
   if (req.method !== 'POST') return out({ error: 'method' }, 405);
   const b = await body(req), o = await rdTok(env, b && b.t);
   if (!o) return page('Link not valid', '<h1>This link is not valid</h1><p class="muted">It may have expired after 7 days.</p>', 400);
-  const xu = SITE + '/x/' + o.r + '/';
-  const html = '<p>Here is the Project X-ray of <b>' + esc(o.d) + '</b> you asked for. It is sealed: the link always shows the same result, with its sources.</p>' +
+  // The sealed copy lives in the edge cache until the durable X-ray store is applied, so the button re-runs the X-ray (always works)
+  const xu = SITE + '/x/' + o.r + '/', ru = SITE + '/check/?url=' + encodeURIComponent(o.u || 'https://' + o.d) + '#xr';
+  const html = '<p>Here is the Project X-ray of <b>' + esc(o.d) + '</b> you asked for. The button runs it again with today\'s sources. The sealed copy of the run you saw: <a href="' + xu + '">' + esc(xu.replace('https://', '')) + '</a> (kept while our storage allows; the button always works).</p>' +
     '<p>What the X-ray cannot show: the land title at the land office, the building permit file, what is really on the plot, and your contract terms. The €490 pre-purchase check covers those, with a full refund if we cannot take your case: <a href="' + SITE + '/pricing">pricing</a>.</p>';
-  const r = await xc('mail', { kind: 'xray_send', to: o.e, subject: 'Your Project X-ray of ' + o.d, html, dedupe: 'xs:' + (await sha(b.t)).slice(0, 40), cta: 'Open the X-ray', url: xu });
+  const r = await xc('mail', { kind: 'xray_send', to: o.e, subject: 'Your Project X-ray of ' + o.d, html, dedupe: 'xs:' + (await sha(b.t)).slice(0, 40), cta: 'Open the X-ray', url: ru });
   if (!r || !r.ok) return page('Not sent', '<h1>We could not send it</h1><p class="muted">' + esc(r && r.error === 'limit' ? 'This address got the most X-ray emails allowed today. Try tomorrow.' : 'Try again in a few minutes.') + '</p>', 503);
   ctx.waitUntil(xc('ev', { step: 'email_sent', domain: o.d, page: '/api/x/xc/email/confirm', data: { root: o.r } }));
-  return page('Sent', '<h1>Sent</h1><p>' + (r.duplicate ? 'We already sent this X-ray to you; check your inbox and spam folder.' : 'Check your inbox in a minute.') + '</p><p><a class="xcb" href="/x/' + esc(o.r) + '/">Open the X-ray now</a></p>');
+  return page('Sent', '<h1>Sent</h1><p>' + (r.duplicate ? 'We already sent this X-ray to you; check your inbox and spam folder.' : 'Check your inbox in a minute.') + '</p><p><a class="xcb" href="' + esc(ru.replace(SITE, '')) + '">Open the X-ray now</a></p>');
 }
 
 // ------------------------------------------------------------------ seen (logged-in) and reminder stop
