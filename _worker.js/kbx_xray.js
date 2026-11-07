@@ -15,7 +15,7 @@
 import { fetchPage, okUrl, pageParts, scanInjection, rpc, sha, WKEY, api as kbApi, logApi } from './kolaboro.js';
 
 export const PATHS = /^\/api\/kb\/xray(?:\/stats)?\/?$|^\/api\/v1\/xray(?:\/openapi\.json)?\/?$|^\/x\/[0-9a-f]{64}(?:\/|\.json|\/vc)?$/;
-const XV = 'x11a2';   // keep equal to KXR_V in index.js (cache-busting of /k/xray.js)
+const XV = 'x11a3';   // keep equal to KXR_V in index.js (cache-busting of /k/xray.js)
 const ORIGIN = 'https://kolaboro.com', VERSION = 'kolaboro-xray-1', PER_IP_HOUR = 30, CARD_MS = 12000;
 const UA = 'Mozilla/5.0 (compatible; KolaboroXray/1.0; +https://kolaboro.com/data-policy)';
 const te = new TextEncoder();
@@ -30,6 +30,7 @@ const CORS = { 'access-control-allow-origin': '*', 'access-control-allow-headers
 const out = (o, s, extra) => new Response(JSON.stringify(o, null, 1), { status: s || 200, headers: Object.assign({ 'content-type': 'application/json; charset=utf-8', 'cache-control': 'no-store', 'x-content-type-options': 'nosniff' }, CORS, extra || {}) });
 const RESKEY = r => new Request(ORIGIN + '/__xray_r/' + r);
 const INKEY = k => new Request(ORIGIN + '/__xray_in/' + k);
+const ent = t => String(t).replace(/&gt;/g, '>').replace(/&lt;/g, '<').replace(/&#(\d{1,6});/g, (m, n) => { try { return String.fromCodePoint(+n); } catch (e) { return ' '; } }).replace(/&#x([0-9a-f]{1,6});/gi, (m, n) => { try { return String.fromCodePoint(parseInt(n, 16)); } catch (e) { return ' '; } }).replace(/&(?:nbsp|#160);/g, ' ').replace(/&[a-z]{2,8};/gi, ' ');
 const clip = (s, n) => { s = String(s == null ? '' : s).replace(/\s+/g, ' ').trim(); return s.length > n ? s.slice(0, n - 1).replace(/\s+\S*$/, '') + '…' : s; };
 const isoDay = d => { try { return new Date(d).toISOString().slice(0, 10); } catch (e) { return null; } };
 const yearsSince = d => { const t = Date.parse(d); return isFinite(t) ? Math.floor((Date.now() - t) / (365.25 * 86400000) * 10) / 10 : null; };
@@ -135,8 +136,8 @@ function matchCard(ix, m, inp) {
 function sentences(text) { return text.replace(/\s+/g, ' ').split(/(?<=[.!?])\s+(?=[A-Z0-9"“(])|\s{2,}|\s[|•·]\s/); }
 function sentenceAt(text, idx, len) {
   let a = Math.max(text.lastIndexOf('. ', idx), text.lastIndexOf('! ', idx), text.lastIndexOf('? ', idx), text.lastIndexOf(' | ', idx));
-  a = a < 0 || idx - a > 220 ? Math.max(0, idx - 110) : a + 2;
-  let b = text.slice(idx + len).search(/[.!?](\s|$)|\s\|\s/); b = b < 0 || b > 220 ? Math.min(text.length, idx + len + 110) : idx + len + b + 1;
+  if (a < 0 || idx - a > 220) { a = Math.max(0, idx - 110); if (a > 0) { const sp = text.indexOf(' ', a); if (sp > 0 && sp < idx) a = sp + 1; } } else a += 2;
+  let b = text.slice(idx + len).search(/[.!?](\s|$)|\s\|\s/); if (b < 0 || b > 220) { b = Math.min(text.length, idx + len + 110); const sp = text.lastIndexOf(' ', b); if (sp > idx + len) b = sp; } else b = idx + len + b + 1;
   return clip(text.slice(a, b), 260);
 }
 function meta(html, re) { const m = html.match(re); return m ? clip(m[1].replace(/&amp;/g, '&').replace(/&#39;|&rsquo;/g, "'").replace(/&quot;/g, '"'), 160) : null; }
@@ -174,7 +175,7 @@ function identityFacts(pg, inp) {
   let loc = null, locQ = null;
   const addr = ld.map(x => x.address).find(Boolean);
   if (addr) { loc = typeof addr === 'string' ? addr : [addr.streetAddress, addr.addressLocality, addr.addressRegion, addr.addressCountry && (addr.addressCountry.name || addr.addressCountry)].filter(Boolean).join(', '); locQ = loc; }
-  if (!loc) { const m = text.match(/\b(?:[Ll]ocated|[Ss]ituated|[Nn]estled|[Aa]ddress|[Ll]ocation)\s*(?:in|at|on|:)?\s+([A-Z][^.!?|]{3,90})/); if (m) { loc = clip(m[1], 90); locQ = sentenceAt(text, m.index, m[0].length); } }
+  if (!loc) { const m = text.match(/\b(?:[Ll]ocated|[Ss]ituated|[Nn]estled|[Aa]ddress)\s*(?:in|at|on|:)?\s+([A-Z][^.!?|]{3,90})/); if (m) { loc = clip(m[1], 90); locQ = sentenceAt(text, m.index, m[0].length); } }
   if (loc) facts.push({ k: 'Location stated', key: 'f_loc', v: clip(loc, 120), q: locQ, src }); else gaps.push('location');
   // stage
   STAGE_RX.lastIndex = 0; const st = STAGE_RX.exec(text);
@@ -214,10 +215,10 @@ const ABSENT = [
 function flagFacts(pg) {
   const text = pg.text, src = pg.url, facts = [], gaps = [];
   for (const r of FLAG_RULES) {
-    if (r.special === 'ai') { const hits = scanInjection(text, pg.hidden || []); if (hits.length) facts.push({ k: r.k, key: r.key, v: 'found', q: clip(hits[0].quote || hits[0].text || '', 240), src, rule: r.id }); continue; }
-    const m = r.rx.exec(text); if (m) facts.push({ k: r.k, key: r.key, v: 'found', q: sentenceAt(text, m.index, m[0].length), src, rule: r.id });
+    if (r.special === 'ai') { const hits = scanInjection(text, pg.hidden || []); if (hits.length) facts.push({ k: r.k, key: r.key, v: clip(hits[0].text || '', 80), q: clip(hits[0].text || '', 240), src, rule: r.id, hit: true }); continue; }
+    const m = r.rx.exec(text); if (m) facts.push({ k: r.k, key: r.key, v: clip(m[0], 80), q: sentenceAt(text, m.index, m[0].length), src, rule: r.id, hit: true });
   }
-  for (const r of ABSENT) { if (!r.rx.test(text)) { facts.push({ k: r.k, key: r.key, v: 'not found', src, rule: r.id, absent: true }); gaps.push(r.gap); } }
+  for (const r of ABSENT) { if (!r.rx.test(text)) { facts.push({ k: r.k, key: r.key, v: '', src, rule: r.id, absent: true }); gaps.push(r.gap); } }
   return { facts, gaps };
 }
 
@@ -453,7 +454,7 @@ async function runXray(inp, opts, emit) {
     if (pg.error) { rec.error = pg.error; return { ok: false, error: pg.error, status: pg.status, detail: pg.detail }; }
     const buf = te.encode(pg.html); rec.bytes = buf.byteLength; rec.sha256 = await sha256Buf(buf); if (pg.url !== inp.url) rec.final_url = pg.url;
     const parts = pageParts(pg.html);
-    return { ok: true, url: pg.url, status: pg.status, html: pg.html, text: parts.visible.slice(0, 300000), hidden: parts.hidden, hidden_blocks: parts.hidden.length, bytes: buf.byteLength, sha256: rec.sha256, hops: pg.hops };
+    return { ok: true, url: pg.url, status: pg.status, html: pg.html, text: ent(parts.visible).slice(0, 300000), hidden: parts.hidden, hidden_blocks: parts.hidden.length, bytes: buf.byteLength, sha256: rec.sha256, hops: pg.hops };
   })() : Promise.resolve(null);
   const done = (c, def, t, srcs) => {
     c = c || { status: 'skipped' }; c.id = def.id; c.title = c.title || def.title; c.ms = Date.now() - t; c.where = c.where || def.where || 'edge';
@@ -539,7 +540,7 @@ function sse(req, env, ctx, inp, lang) {
   const send = o => w.write(te.encode('data: ' + JSON.stringify(o) + '\n\n')).catch(() => {});
   const job = (async () => {
     try {
-      const ik = await sha(VERSION + '|' + lang + '|' + (inp.url || '') + '|' + (inp.q || ''));
+      const ik = await sha(VERSION + XV + '|' + lang + '|' + (inp.url || '') + '|' + (inp.q || ''));
       const hit = await caches.default.match(INKEY(ik));
       if (hit) { const res = await hit.json(); send({ type: 'plan', checks: res.cards.map(c => ({ id: c.id, title: c.title })), input: res.meta.input, cached: true, at: res.meta.started_at }); for (const c of res.cards) send({ type: 'card', card: c, cached: true }); send({ type: 'done', root: res.root, url: res.url, total_ms: res.proof.total_ms, proof: res.proof, cached: true, stored: res.stored }); return; }
       if (!(await rateOk(req, ctx))) { send({ type: 'error', error: 'rate', limit: PER_IP_HOUR + ' X-rays an hour per visitor' }); return; }

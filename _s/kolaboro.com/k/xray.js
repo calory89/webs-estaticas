@@ -95,8 +95,8 @@
   function emit(phase, extra){ var d = Object.assign({ phase: phase, input: S.input, cards: S.cards.slice(), root: S.root, url: S.url, lang: LANG }, extra || {}); subs.forEach(function(f){ try { f(d); } catch (e) {} }); try { D.dispatchEvent(new CustomEvent('kb:xray', { detail: d })); } catch (e) {} }
 
   function factHtml(f){
-    var lbl = (f.key && sub('f', f.key)) || f.k, val = f.vk ? (sub('f', f.vk) || f.v) : f.v === 'found' ? sub('f', 'v_found') : f.v === 'not found' ? sub('f', 'v_notfound') : f.v;
-    var src = safeUrl(f.src), cls = f.absent ? 'abs' : f.rule && f.v === 'found' ? 'hit' : '';
+    var lbl = (f.key && sub('f', f.key)) || f.k, val = f.vk ? (sub('f', f.vk) || f.v) : f.absent ? sub('f', 'v_notfound') : f.v === 'found' ? sub('f', 'v_found') : f.v === 'not found' ? sub('f', 'v_notfound') : f.v;
+    var src = safeUrl(f.src), cls = f.absent ? 'abs' : f.hit || (f.rule && f.v === 'found') ? 'hit' : '';
     return '<li class="' + cls + '"><span class="k">' + esc(lbl) + '</span><span class="v">' + esc(val) + '</span>' + (src ? '<a class="xr-src" href="' + esc(src) + '" target="_blank" rel="noopener nofollow">' + esc(tx('source')) + ': ' + esc(hostOf(src) || src) + '</a>' : '') + (f.q ? '<q class="xr-q">' + esc(f.q) + '</q>' : '') + '</li>';
   }
   function cardHtml(c){
@@ -120,7 +120,7 @@
   var ORDER = ['coi', 'match', 'identity', 'flags', 'registers', 'domain', 'wayback', 'location', 'satellite', 'ppm', 'market', 'developer', 'law', 'similar', 'images', 'tls', 'hosting', 'desk'];
   function placeCard(c){
     var g = $('xr-g'); if (!g) return; var id = 'xr-c-' + c.id, el = $(id);
-    if (!el) { el = D.createElement('article'); el.id = id; el.className = 'xr-c' + (c.id === 'identity' || c.id === 'flags' ? ' wide' : ''); el.setAttribute('data-ord', String(ORDER.indexOf(c.id) < 0 ? 40 : ORDER.indexOf(c.id)));
+    if (!el) { el = D.createElement('article'); el.id = id; el.className = 'xr-c' + (c.id === 'identity' || c.id === 'flags' || c.id === 'match' || c.id === 'coi' ? ' wide' : ''); el.setAttribute('data-ord', String(ORDER.indexOf(c.id) < 0 ? 40 : ORDER.indexOf(c.id)));
       var o = +el.getAttribute('data-ord'), after = null; [].slice.call(g.children).forEach(function(x){ if (+x.getAttribute('data-ord') <= o) after = x; });
       g.insertBefore(el, after ? after.nextSibling : g.firstChild); }
     el.innerHTML = cardHtml(c);
