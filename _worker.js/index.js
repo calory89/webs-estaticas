@@ -37,6 +37,7 @@ let rr = null;
 let kb = null, kbx = null, ksat = null, klk = null;
 let kfw = null; const KFW = /^\/api\/v1\/(?:projects|developers)(?:\/[a-z0-9-]{1,90})?\/?$|^\/api\/v1\/(?:search-index|watch)$|^\/(?:projects|developers)\/[a-z0-9-]{1,90}\/feed\.(?:atom|json)$/;   // b9a: public named API, feeds, watch (keep equal to PATHS9 in kbx_follow.js)
 let kog = null, kbk = null; const KB10 = /^\/og\/(?:projects|developers)\/[a-z0-9-]{1,90}\.png$|^\/bulk-check\/?$|^\/api\/kb\/bulk\/?$/;   // b10c: keep equal to PATHS in kbx_og.js + kbx_bulk.js
+let kxev = null; const KXEV = /^\/api\/xev(?:\/sat\.png)?$/;   // x11b (batch 11): X-ray evidence cards + Sentinel-2 crop, keep equal to PATHS in kbx_xray_ev.js
 let knm = null; const KNM = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects|developers)(?:\/|$)|^\/api\/seo\/(?:urls|scan)$/;   // seoP named pages, keep equal to PATHS in kbx_named.js
 let kxc = null; const KXC = /^\/api\/x\/xc(\/|$)|^\/embed\/xray(\.js|\/)?$|^\/__k\/kxc-admin\.js$/;   // x11c (batch 11): X-ray conversion block, partner embed, admin tab (keep equal to PATHS in kbx_xc.js)
 let kseo = null; const KSEO = /^\/(sitemap_index\.xml|sitemaps\/[a-z0-9-]+\.xml|llms(-full)?\.txt|countries(\/.*)?|rankings(\/.*)?|new\/?|vs(\/.*)?|embed\/(delay|project|widgets)(\/.*)?|engineering\/seo\/?|press\/delivery-index(\/.*)?|7f3c9a1e5b2d4c8fa06e91d3b7c4f259\.txt)$/;   // keep equal to PATHS in kbx_seo.js
@@ -222,6 +223,8 @@ export default {
     if (host === 'kolaboro.com' && KFW.test(u.pathname)) { if (!kfw) kfw = await import('./kbx_follow.js'); const r = await kfw.handle(req, u, env, ctx); if (r) return r; }
     // kolaboro.com (x11c, batch 11): Project X-ray conversion block API, "X-ray this project" partner button, admin X-rays tab (see kbx_xc.js)
     if (host === 'kolaboro.com' && KXC.test(u.pathname)) { if (!kxc) kxc = await import('./kbx_xc.js'); return kxc.handle(req, u, env, ctx); }
+    // kolaboro.com (x11b, batch 11): Project X-ray evidence cards 11-18 (/api/xev) and the Sentinel-2 crop (/api/xev/sat.png), see kbx_xray_ev.js
+    if (host === 'kolaboro.com' && KXEV.test(u.pathname)) { if (!kxev) kxev = await import('./kbx_xray_ev.js'); return kxev.handle(req, u, env, ctx); }
     // kolaboro.com (b10c, batch 10): bulk register check page + API (kbx_bulk.js), 1200x630 share images per named project/developer (kbx_og.js)
     if (host === 'kolaboro.com' && KB10.test(u.pathname)) {
       if (u.pathname.startsWith('/og/')) { if (!kog) kog = await import('./kbx_og.js'); const r = await kog.handle(req, u, env, ctx); if (r) return r; }

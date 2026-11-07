@@ -85,6 +85,32 @@ export function ppmSection(x, lang = 'en') {
   return { html: '<ul class="fl">' + ownLine + '</ul>' + none(x.co === 'UAE' && x.mk !== 'Dubai' ? t('ppm_uae', { m: x.mk }) : t('ppm_noset', { m: x.mk || x.co })), cmp: [] };
 }
 
+// x11b (batch 11): the same comparison as data for the Project X-ray card (kbx_xray_ev.js). x = { n, ar, mk, co, fx: { price_min,
+// size_min_m2, currency } }, as on the named pages. Returns { own, cur, price, size, official: [...], why } (why = reason for no row).
+export function ppmData(x) {
+  const fx = x.fx || {}, price = +fx.price_min, size = +fx.size_min_m2, cur = String(fx.currency || '').toUpperCase();
+  const out = { own: null, cur, price: price > 0 ? price : null, size: size > 0 ? size : null, official: [], why: null };
+  if (!(price > 0 && size >= 15 && size <= 5000)) { out.why = price > 0 ? 'no_size' : size > 0 ? 'no_price' : 'no_price_size'; return out; }
+  const own = out.own = price / size, d = v => Math.round((own / v - 1) * 100);
+  if (x.co === 'UAE' && x.mk === 'Dubai') {
+    if (cur !== 'AED') { out.why = 'currency'; return out; }
+    const { pk, ak } = dldMatch(x), per = DLD.from + ' to ' + DLD.to, u = 'https://dubailand.gov.ae/en/open-data/real-estate-data/';
+    if (pk) { const [m, n, a] = DLD.projects[pk]; out.official.push({ name: 'Dubai Land Department, registered off-plan sales of DLD project ' + pk, value: m, unit: 'AED per m2 (median)', n, period: per, url: u, diff_pct: d(m), key: pk, area: a }); }
+    if (ak) { const [m, n] = DLD.areas[ak]; out.official.push({ name: 'Dubai Land Department, registered off-plan sales in DLD area ' + ak, value: m, unit: 'AED per m2 (median)', n, period: per, url: u, diff_pct: d(m), key: ak }); }
+    if (!out.official.length) out.why = 'no_match';
+    return out;
+  }
+  if (x.co === 'Spain') {
+    if (cur !== 'EUR') { out.why = 'currency'; return out; }
+    const { mk, pv } = esMatch(x);
+    if (mk) { const [nw, tot] = ES.muni[mk], v = nw || tot; out.official.push({ name: 'MIVAU appraised value of free-market housing, ' + mk + (nw ? ' (dwellings up to five years old)' : ' (all dwellings)'), value: v, unit: 'EUR per m2 (appraised, not a sale price)', period: ES.muni_q, url: ES.src_muni, diff_pct: d(v), key: mk }); }
+    if (pv && ES.prov[pv]) { const v = ES.prov[pv]; out.official.push({ name: 'MIVAU appraised value of free-market housing, province of ' + pv, value: v, unit: 'EUR per m2 (appraised, not a sale price)', period: ES.prov_q, url: ES.src_prov, diff_pct: d(v), key: pv }); }
+    if (!out.official.length) out.why = 'no_match';
+    return out;
+  }
+  out.why = 'no_dataset'; return out;
+}
+
 // ---------------------------------------------------------------- company network (GLEIF level 2)
 const GH = { accept: 'application/vnd.api+json', 'user-agent': 'KolaboroRegisterCheck/1.0 (+https://kolaboro.com/registers/)' };
 async function gj(path) {
