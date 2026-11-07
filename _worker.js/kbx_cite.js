@@ -147,8 +147,8 @@ function codesPage(X, x, lang, vr) {
   const code = s => '<pre style="white-space:pre-wrap;overflow-wrap:anywhere;background:var(--sk);border-radius:8px;padding:8px 10px;font-size:12px;margin:6px 0 14px"><code>' + esc(s) + '</code></pre>';
   const rv = X.rev(x);
   let b = '<p class="h">' + esc(t(lang, 'e_title', { n: x.n })) + '</p><p>' + esc(t(lang, 'e_lead')) + '</p>';
-  b += '<p class="h" style="margin-top:14px">' + esc(t(lang, 'e_card')) + '</p>' + ifr(card, rv ? 300 : 170, x.n) + '<p class="s">' + esc(t(lang, 'e_code')) + '</p>' + code(ifr(card, rv ? 300 : 170, 'Kolaboro: ' + x.n));
-  b += '<p class="h">' + esc(t(lang, 'e_tracker')) + '</p>' + ifr(trk, rv ? 260 : 170, x.n) + '<p class="s">' + esc(t(lang, 'e_code')) + '</p>' + code(ifr(trk, rv ? 260 : 170, 'Kolaboro: ' + x.n));
+  b += '<p class="h" style="margin-top:14px">' + esc(t(lang, 'e_card')) + '</p>' + ifr(card, rv ? 470 : 190, x.n) + '<p class="s">' + esc(t(lang, 'e_code')) + '</p>' + code(ifr(card, rv ? 470 : 190, 'Kolaboro: ' + x.n));
+  b += '<p class="h">' + esc(t(lang, 'e_tracker')) + '</p>' + ifr(trk, rv ? 380 : 190, x.n) + '<p class="s">' + esc(t(lang, 'e_code')) + '</p>' + code(ifr(trk, rv ? 380 : 190, 'Kolaboro: ' + x.n));
   b += '<p class="h">' + esc(t(lang, 'e_badge')) + '</p><p>' + esc(t(lang, 'e_badge_txt')) + '</p>' + (vr && vr.domain ? '<p>' + esc(t(lang, 'e_badge_yes', { d: vr.domain })) + '</p><p><img src="' + bdg + '" alt="Tracked by Kolaboro"/></p>' + code('<a href="' + pUrl('en', x) + '"><img src="' + bdg + '" alt="Tracked by Kolaboro" height="22"></a>')
     : '<p>' + esc(t(lang, 'e_badge_no')) + ' <a href="' + ORIGIN + '/developers/reply/?id=' + encodeURIComponent(x.id) + '" target="_top">' + esc(t(lang, 'e_reply')) + '</a></p>');
   b += '<p class="f">' + esc(t(lang, 'e_lang')) + ' ' + esc(t(lang, 'e_lic')) + ' <a href="' + pUrl(lang, x) + '" target="_top">' + esc(t(lang, 'open')) + '</a></p>';
