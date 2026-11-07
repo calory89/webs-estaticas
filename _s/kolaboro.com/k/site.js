@@ -375,17 +375,28 @@
 (function () {
   var URL_ = 'https://oykcsmextclpdnugixqz.supabase.co/rest/v1/rpc/kolaboro_apply';
   var KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im95a2NzbWV4dGNscGRudWdpeHF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTIzOTMzNjYsImV4cCI6MjEwNzk2OTM2Nn0.n4lmkzPgZe64B18altwRMYFiQrLQ2Quqg9uV9SoJhAw';
+  // monthly newsletter in the footer: messages in the page language, one request at a time (a double click used to send two)
+  var NWL = { en: ['Add a valid email address.', 'Subscribing…', "You're subscribed. Check your inbox once a month.", 'Could not subscribe. Check your connection and try again.'],
+    es: ['Escribe un email válido.', 'Suscribiendo…', 'Listo, estás suscrito. Te escribimos una vez al mes.', 'No se pudo suscribir. Revisa tu conexión e inténtalo de nuevo.'],
+    de: ['Bitte eine gültige E-Mail-Adresse eingeben.', 'Wird abonniert…', 'Erledigt. Sie erhalten einmal im Monat eine E-Mail.', 'Abonnieren fehlgeschlagen. Verbindung prüfen und erneut versuchen.'],
+    fr: ['Saisissez une adresse e-mail valide.', 'Inscription…', 'C’est fait. Vous recevrez un e-mail par mois.', 'Inscription impossible. Vérifiez votre connexion et réessayez.'],
+    nl: ['Vul een geldig e-mailadres in.', 'Aanmelden…', 'Gelukt. U krijgt één e-mail per maand.', 'Aanmelden mislukt. Controleer uw verbinding en probeer opnieuw.'],
+    ru: ['Введите корректный email.', 'Подписываем…', 'Готово. Мы пишем раз в месяц.', 'Не удалось подписаться. Проверьте соединение и попробуйте ещё раз.'],
+    zh: ['请输入有效的邮箱地址。', '正在订阅…', '订阅成功。我们每月发一封邮件。', '订阅失败。请检查网络后重试。'],
+    ar: ['أدخل بريدًا إلكترونيًا صحيحًا.', 'جارٍ الاشتراك…', 'تم الاشتراك. نراسلك مرة واحدة في الشهر.', 'تعذّر الاشتراك. تحقّق من اتصالك وحاول مجددًا.'] };
   document.querySelectorAll('form[data-news]').forEach(function (f) {
+    var lg = (document.documentElement.lang || 'en').slice(0, 2), NM = NWL[lg] || NWL.en, busy = false;
     f.addEventListener('submit', function (e) {
-      e.preventDefault(); var m = f.querySelector('.nmsg'), em = (f.email.value || '').trim();
-      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)) { m.textContent = (document.documentElement.lang || '').indexOf('id') === 0 ? 'Tambahkan alamat email yang valid.' : 'Add a valid email address.'; m.style.color = 'var(--hivis-ink)'; return; }
-      m.textContent = 'Subscribing…'; m.style.color = '';
+      e.preventDefault(); if (busy) return; var m = f.querySelector('.nmsg'), em = (f.email.value || '').trim(), btn = f.querySelector('[type=submit]');
+      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)) { m.textContent = NM[0]; m.style.color = 'var(--hivis-ink)'; f.email.setAttribute('aria-invalid', 'true'); f.email.focus(); return; }
+      f.email.removeAttribute('aria-invalid'); busy = true; if (btn) btn.disabled = true; m.textContent = NM[1]; m.style.color = '';
       fetch(URL_, { method: 'POST', headers: { apikey: KEY, Authorization: 'Bearer ' + KEY, 'Content-Type': 'application/json' },
         body: JSON.stringify({ p_name: 'Newsletter subscriber', p_email: em, p_country: '', p_phone: '', p_who: 'newsletter | ' + location.pathname,
-          p_bring: 'Subscribed to the monthly newsletter from ' + location.pathname, p_learn: '', p_week: '', p_lang: 'en', p_source: 'yc-newsletter', p_plan: 'yc-newsletter' }) })
+          p_bring: 'Subscribed to the monthly newsletter from ' + location.pathname, p_learn: '', p_week: '', p_lang: NWL[lg] ? lg : 'en', p_source: 'yc-newsletter', p_plan: 'yc-newsletter' }) })
         .then(function (r) { return r.json(); }).then(function (d) {
-          if (d === 'ok' || d === 'too_many') { m.textContent = "You're subscribed."; f.email.value = ''; if (window.kbEvent) kbEvent('newsletter_signup'); return; }
-          throw 0; }).catch(function () { m.textContent = 'Could not subscribe. Try again.'; m.style.color = 'var(--hivis-ink)'; });
+          busy = false; if (btn) btn.disabled = false;
+          if (d === 'ok' || d === 'too_many') { m.textContent = NM[2]; f.email.value = ''; if (window.kbEvent) kbEvent('newsletter_signup'); return; }
+          throw 0; }).catch(function () { busy = false; if (btn) btn.disabled = false; m.textContent = NM[3]; m.style.color = 'var(--hivis-ink)'; });
     });
   });
 
