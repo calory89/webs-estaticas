@@ -371,8 +371,8 @@ async function satPick(lat, lng, stat, c) {
     for (let i = 0; i < s.length; i++) { const v = s[i], bad = v === 3 || v === 8 || v === 9 || v === 10, x = i % w, y = (i / w) | 0; if (v === 0) nod++; else if (bad) cloud++; if (x >= lo && x < hi && y >= lo && y < hi) { cn++; if (bad || v === 0) cc++; } }
     return { f, id: f.id, date: f.properties.datetime.slice(0, 10), scene_cloud_pct: Math.round(f.properties['eo:cloud_cover'] * 10) / 10, local_cloud_pct: Math.round(cloud / s.length * 1000) / 10, centre_cloud_pct: Math.round(cc / cn * 1000) / 10, nodata_pct: Math.round(nod / s.length * 1000) / 10 };
   };
-  for (let i = 0; i < feats.length && i < 24 && Date.now() - t0 < 9000; i += 8) {
-    const got = (await Promise.all(feats.slice(i, i + 8).map(f => look(f).catch(() => null)))).filter(Boolean);
+  for (let i = 0; i < feats.length && i < 24 && Date.now() - t0 < 9000; i += 4) {
+    const got = (await Promise.all(feats.slice(i, i + 4).map(f => look(f).catch(() => null)))).filter(Boolean);
     tried.push(...got);
     const ok = got.find(t => t.local_cloud_pct <= 5 && t.centre_cloud_pct <= 1 && t.nodata_pct <= 1);
     if (ok) return { f: ok.f, pick: ok, tried: tried.map(({ f, ...t }) => t) };
@@ -526,7 +526,9 @@ async function evImages(S, env, ctx) {
   c.limits = ['A match means the same picture (or a near copy) is on another tracked project: it can be the same developer, a shared agency render, or a stock image. It is not proof of anything by itself.', 'Pages that serve only WebP or AVIF images, or block downloads, cannot be checked here; the browser tool /tools/image-check/ can check any image you save.'];
   if (!list.length) { c.status = 'not_published'; c.summary = S.html ? 'No photos or renders found in the page HTML (they may load with JavaScript).' : 'The page could not be read.'; return c._done(); }
   const t0 = Date.now(); let bytes = 0;
-  const bufs = await Promise.all(pick.map(x => fetchImage(x.url, S.url).then(b => { bytes += b.length; return b; }, e => { skipped.push({ url: x.url, why: String(e.message || e) }); return null; })));
+  // three at a time: a Worker invocation has six outgoing connections, shared with the other X-ray cards
+  const bufs = new Array(pick.length).fill(null); let next = 0;
+  await Promise.all([0, 1, 2].map(async () => { while (next < pick.length && Date.now() - t0 < 9000) { const i = next++, x = pick[i]; try { const b = await fetchImage(x.url, S.url); bytes += b.length; bufs[i] = b; } catch (e) { skipped.push({ url: x.url, why: String(e.message || e) }); } } }));
   const idx = B.imgs && imgIndex(B.imgs);
   for (let i = 0; i < pick.length; i++) {
     const b = bufs[i]; if (!b) continue;
