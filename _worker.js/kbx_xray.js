@@ -15,7 +15,7 @@
 import { fetchPage, okUrl, pageParts, scanInjection, rpc, sha, WKEY, api as kbApi, logApi } from './kolaboro.js';
 
 export const PATHS = /^\/api\/kb\/xray(?:\/stats)?\/?$|^\/api\/v1\/xray(?:\/openapi\.json)?\/?$|^\/x\/[0-9a-f]{64}(?:\/|\.json|\/vc)?$/;
-const XV = 'x11a1';   // keep equal to KXR_V in index.js (cache-busting of /k/xray.js)
+const XV = 'x11a2';   // keep equal to KXR_V in index.js (cache-busting of /k/xray.js)
 const ORIGIN = 'https://kolaboro.com', VERSION = 'kolaboro-xray-1', PER_IP_HOUR = 30, CARD_MS = 12000;
 const UA = 'Mozilla/5.0 (compatible; KolaboroXray/1.0; +https://kolaboro.com/data-policy)';
 const te = new TextEncoder();
@@ -305,20 +305,31 @@ async function cardDomain(X) {
 async function cardTls(X) {
   const h = X.input.host; const c = { id: 'tls', title: 'Security certificate history', facts: [], links: [], gaps: [] };
   if (!h) { c.status = 'skipped'; c.summary = 'No website given.'; c.sk = 'dm_noweb'; return c; }
-  const rd = regDomain(h), src = 'https://sslmate.com/certspotter/';
-  const r = await X.fetch('https://api.certspotter.com/v1/issuances?domain=' + encodeURIComponent(rd) + '&include_subdomains=true&expand=issuer&expand=dns_names', null, 'Certificate Transparency logs (SSLMate Cert Spotter API)', 10000);
+  const rd = regDomain(h), crt = 'https://crt.sh/?q=' + encodeURIComponent(rd);
+  // Cert Spotter (fast, current certificates) and crt.sh (full history, often slow): both Certificate Transparency log searches
+  const [r, r2] = await Promise.all([
+    X.fetch('https://api.certspotter.com/v1/issuances?domain=' + encodeURIComponent(rd) + '&include_subdomains=true&expand=issuer', null, 'Certificate Transparency (SSLMate Cert Spotter API)', 9000),
+    X.fetch(crt + '&output=json', null, 'Certificate Transparency history (crt.sh)', 10000)
+  ]);
   let a = null; try { a = r.ok ? r.json() : null; } catch (e) {}
-  c.links.push({ label: 'Search crt.sh', key: 'l_crt', url: 'https://crt.sh/?q=' + encodeURIComponent(rd) });
-  if (!Array.isArray(a)) { c.status = r.status === 429 ? 'unavailable' : 'unavailable'; c.summary = r.status === 429 ? 'The Certificate Transparency search is at its free hourly limit. Try again later or use crt.sh.' : 'The Certificate Transparency search did not answer.'; c.sk = r.status === 429 ? 'tl_rate' : 'tl_down'; return c; }
-  if (!a.length) { c.status = 'not_found'; c.summary = 'No certificate for ' + rd + ' is listed in the public Certificate Transparency logs.'; c.sk = 'tl_none'; c.sa = { d: rd }; return c; }
-  const byStart = a.slice().sort((x, y) => Date.parse(x.not_before) - Date.parse(y.not_before)), first = byStart[0], last = byStart[byStart.length - 1];
+  let hist = null; try { hist = r2 && r2.ok ? r2.json() : null; } catch (e) {}
+  c.links.push({ label: 'Search crt.sh', key: 'l_crt', url: crt });
+  if (!Array.isArray(a) && !Array.isArray(hist)) { c.status = 'unavailable'; c.summary = r.status === 429 ? 'The Certificate Transparency search is at its free hourly limit. Try again later or use crt.sh.' : 'The Certificate Transparency search did not answer.'; c.sk = r.status === 429 ? 'tl_rate' : 'tl_down'; return c; }
+  const cur = Array.isArray(a) ? a : [], all = Array.isArray(hist) ? hist : [];
+  if (!cur.length && !all.length) { c.status = 'not_found'; c.summary = 'No certificate for ' + rd + ' is listed in the public Certificate Transparency logs.'; c.sk = 'tl_none'; c.sa = { d: rd }; return c; }
   c.status = 'found';
-  c.facts.push({ k: 'First certificate in the public logs', key: 'f_tl_first', v: isoDay(first.not_before) + ' (' + yearsSince(first.not_before) + ' years ago)', src: 'https://crt.sh/?q=' + encodeURIComponent(rd) });
-  c.facts.push({ k: 'Current certificate issuer', key: 'f_tl_issuer', v: (last.issuer && (last.issuer.friendly_name || last.issuer.name)) || 'unknown', src });
-  c.facts.push({ k: 'Current certificate valid', key: 'f_tl_valid', v: isoDay(last.not_before) + ' to ' + isoDay(last.not_after), src });
-  c.facts.push({ k: 'Certificates listed', key: 'f_tl_n', v: String(a.length) + (a.length >= 100 ? '+' : ''), src });
-  c.summary = 'The first certificate for ' + rd + ' in the public logs dates from ' + isoDay(first.not_before) + '; the current one is from ' + ((last.issuer && last.issuer.friendly_name) || 'an unnamed issuer') + '.';
-  c.sk = 'tl_first'; c.sa = { d: rd, day: isoDay(first.not_before), by: (last.issuer && last.issuer.friendly_name) || '' };
+  const firstAll = all.length ? all.map(x => x.not_before).filter(Boolean).sort()[0] : null;
+  const byStart = cur.slice().sort((x, y) => Date.parse(x.not_before) - Date.parse(y.not_before)), last = byStart[byStart.length - 1];
+  if (firstAll) c.facts.push({ k: 'First certificate in the public logs', key: 'f_tl_first', v: isoDay(firstAll) + ' (' + yearsSince(firstAll) + ' years ago)', src: crt });
+  else if (byStart.length) c.facts.push({ k: 'Oldest certificate still valid today', key: 'f_tl_oldcur', v: isoDay(byStart[0].not_before) + ' (full history: crt.sh did not answer in time)', src: crt });
+  if (last) {
+    c.facts.push({ k: 'Current certificate issuer', key: 'f_tl_issuer', v: (last.issuer && (last.issuer.friendly_name || last.issuer.name)) || 'unknown', src: 'https://sslmate.com/certspotter/' });
+    c.facts.push({ k: 'Current certificate valid', key: 'f_tl_valid', v: isoDay(last.not_before) + ' to ' + isoDay(last.not_after), src: 'https://sslmate.com/certspotter/' });
+  }
+  c.facts.push({ k: 'Certificates listed', key: 'f_tl_n', v: String(all.length || cur.length), src: crt });
+  const by = last && last.issuer && last.issuer.friendly_name || '';
+  if (firstAll) { c.summary = 'The first certificate for ' + rd + ' in the public logs dates from ' + isoDay(firstAll) + (by ? '; the current one is from ' + by : '') + '.'; c.sk = 'tl_first'; c.sa = { d: rd, day: isoDay(firstAll), by }; }
+  else { c.summary = 'Current certificates for ' + rd + (by ? ' are from ' + by : '') + '; the full history did not load in time.'; c.sk = 'tl_cur'; c.sa = { d: rd, by }; }
   return c;
 }
 const CDN = /cloudflare|amazon|aws|google|akamai|fastly|vercel|netlify|microsoft|azure|incapsula|imperva|sucuri|bunny|ovh|hetzner|digitalocean|wix|squarespace|shopify|automattic|wpengine|hostinger/i;
@@ -347,7 +358,7 @@ async function cardHosting(X) {
 }
 async function cardRegisters(X) {
   const c = { id: 'registers', title: 'Official registers', facts: [], links: [], gaps: [] };
-  const m = await X.match, idf = X.found.identity || ((await X.page) && X.found.identity) || null;
+  const m = await X.match, pg0 = await X.page, idf = pg0 && pg0.ok ? identityFacts(pg0, X.input) : null;
   const company = (m && m.developer && m.developer.n) || (m && m.project && m.project.dv) || (idf && idf.dev) || null;
   const body = { ai: '0' }; if (X.input.url) body.url = X.input.url; else body.q = X.input.q; if (company && company.length >= 3 && company.length <= 120) body.company = company;
   const t = Date.now(); let d = null;

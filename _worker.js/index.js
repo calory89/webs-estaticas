@@ -35,7 +35,7 @@ let jm = null;
 let jb = null;
 let rr = null;
 let kb = null, kbx = null, ksat = null, klk = null;
-const KXR_V = 'x11a1'; let kxr = null; const KXR = /^\/api\/kb\/xray(?:\/stats)?\/?$|^\/api\/v1\/xray(?:\/openapi\.json)?\/?$|^\/x\/[0-9a-f]{64}(?:\/|\.json|\/vc)?$/;   // b11 x11a: Project X-ray (keep equal to PATHS in kbx_xray.js)
+const KXR_V = 'x11a2'; let kxr = null; const KXR = /^\/api\/kb\/xray(?:\/stats)?\/?$|^\/api\/v1\/xray(?:\/openapi\.json)?\/?$|^\/x\/[0-9a-f]{64}(?:\/|\.json|\/vc)?$/;   // b11 x11a: Project X-ray (keep equal to PATHS in kbx_xray.js)
 let kfw = null; const KFW = /^\/api\/v1\/(?:projects|developers)(?:\/[a-z0-9-]{1,90})?\/?$|^\/api\/v1\/(?:search-index|watch)$|^\/(?:projects|developers)\/[a-z0-9-]{1,90}\/feed\.(?:atom|json)$/;   // b9a: public named API, feeds, watch (keep equal to PATHS9 in kbx_follow.js)
 let kog = null, kbk = null; const KB10 = /^\/og\/(?:projects|developers)\/[a-z0-9-]{1,90}\.png$|^\/bulk-check\/?$|^\/api\/kb\/bulk\/?$/;   // b10c: keep equal to PATHS in kbx_og.js + kbx_bulk.js
 let kxev = null; const KXEV = /^\/api\/xev(?:\/sat\.png)?$/;   // x11b (batch 11): X-ray evidence cards + Sentinel-2 crop, keep equal to PATHS in kbx_xray_ev.js
