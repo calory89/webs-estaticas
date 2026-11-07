@@ -47,10 +47,13 @@ def sitemap_urls():
     st, h, body = get(BASE + '/sitemap_index.xml')
     if st != 200: raise SystemExit('sitemap index %s' % st)
     maps = re.findall(r'<loc>([^<]+)</loc>', body.decode())
-    out = {}
+    out, imgs = {}, {}
     for m in maps:
         st, h, b = get(m)
         t = b.decode('utf-8', 'replace')
+        if m.endswith('/images.xml'):   # image sitemap (batch 15): same page URLs as projects-en/developers-en; only the images are new
+            for u in re.finditer(r'<url><loc>([^<]+)</loc>.*?</url>', t): imgs[html.unescape(u.group(1))] = [html.unescape(x) for x in re.findall(r'<image:loc>([^<]+)</image:loc>', u.group(0))]
+            continue
         for u in re.finditer(r'<url><loc>([^<]+)</loc>(?:<lastmod>([^<]+)</lastmod>)?', t):
             out[html.unescape(u.group(1))] = {'sitemap': m.rsplit('/', 1)[-1], 'lastmod': u.group(2)}
     # Named pages in the 7 translated languages share templates with English: crawl every English page and an even sample of the
@@ -61,6 +64,7 @@ def sitemap_urls():
             us = sorted(u for u, v in out.items() if v['sitemap'] == sm); step = max(1, len(us) // n)
             for i, u in enumerate(us):
                 if i % step: out[u]['skip'] = True
+    sitemap_urls.images = imgs
     return maps, out
 
 
@@ -96,6 +100,13 @@ def check_ld(blocks):
                 me = n.get('mainEntity') or []
                 if not me or any(not (q.get('name') and (q.get('acceptedAnswer') or {}).get('text')) for q in me): errs.append('FAQPage question without name or answer'); block_ok = False
             if t == 'Dataset' and not (n.get('name') and n.get('description')): errs.append('Dataset without name or description'); block_ok = False
+            # batch 15: the other types named pages carry
+            if t == 'Dataset' and not n.get('license'): errs.append('Dataset without license (recommended by Google, not required)')
+            if t in ('Residence', 'ApartmentComplex', 'Place') and not n.get('name'): errs.append('%s without name' % t); block_ok = False
+            g = n.get('geo') if isinstance(n.get('geo'), dict) else None
+            if g and not (isinstance(g.get('latitude'), (int, float)) and isinstance(g.get('longitude'), (int, float))): errs.append('geo without numeric latitude and longitude'); block_ok = False
+            for im in [n] if t == 'ImageObject' else [x for x in (n.get('image'), n.get('primaryImageOfPage')) if isinstance(x, dict) and x.get('@type') == 'ImageObject']:
+                if not (im.get('contentUrl') or im.get('url')): errs.append('ImageObject without contentUrl'); block_ok = False
         valid += 1 if block_ok else 0
     return errs, sorted(types), (valid == len(blocks) and len(blocks) > 0)
 
@@ -180,6 +191,22 @@ def main(out_dir):
         if r['status'] == 200 and len(can) == 1 and can[0] == u and not r['noindex']: S['indexable'] += 1
     for t, us in titles.items():
         if len(us) > 1: S['duplicate_titles'] += len(us); P(us[0], 'title shared with %d other URL(s): %s' % (len(us) - 1, t[:80]))
+    # image sitemap (batch 15): every listed page must be in another sitemap; a sample of images must answer 200 with an image type
+    imgs = getattr(sitemap_urls, 'images', {}) or {}
+    S['image_sitemap_pages'] = len(imgs); S['image_sitemap_images'] = sum(len(v) for v in imgs.values()); S['image_errors'] = 0
+    for u in imgs:
+        if u not in urls: S['image_errors'] += 1; P(u, 'in the image sitemap but in no page sitemap')
+    flat = sorted({x for v in imgs.values() for x in v}); step = max(1, len(flat) // int(os.environ.get('KB_IMG_SAMPLE', '60')))
+    def img_one(x):
+        st, h, _ = get(x, 'HEAD'); return x, st, h.get('content-type', '')
+    with cf.ThreadPoolExecutor(3) as ex:
+        for x, st, ct in ex.map(img_one, flat[::step]):
+            if st != 200 or not ct.startswith('image/'): S['image_errors'] += 1; P(x, 'image %s %s' % (st, ct))
+    S['image_sampled'] = len(flat[::step])
+    # lastmod sanity: never in the future
+    today = dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%d'); S['lastmod_future'] = 0
+    for u, v in urls.items():
+        if v.get('lastmod') and v['lastmod'][:10] > today: S['lastmod_future'] += 1; P(u, 'lastmod %s is in the future' % v['lastmod'])
     static = [u.replace(BASE, '') for u, v in urls.items() if v['sitemap'].startswith('pages-')]
     exclude = sorted(u.replace(BASE, '') for u, v in urls.items() if v['sitemap'].startswith('pages-') and (by[u]['status'] != 200 or by[u].get('noindex')))
     prev = {}

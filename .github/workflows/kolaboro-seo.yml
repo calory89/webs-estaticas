@@ -1,12 +1,16 @@
 name: Kolaboro SEO
 # Search and answer-engine upkeep for kolaboro.com (seoT, batch 8). Scripts: tools/kolaboro-seo/.
-#  - indexnow: after every deploy-guard run (each deploy of pub/_lovable is guarded) and every 3 hours, submit new or changed sitemap
-#    URLs to IndexNow (Bing, Yandex, Naver, Seznam, Yep). State: kolaboro.com/data/indexnow.json. Google reads the sitemaps instead.
-#  - audit: daily and on demand, crawl every sitemap URL (GET and HEAD): status, canonical, hreflang reciprocity, JSON-LD validity,
-#    true lastmod of static pages. Result: kolaboro.com/data/seo-audit.json, shown on kolaboro.com/engineering/seo/.
+#  - indexnow (daily 09:41 UTC, about 1 minute, after the daily live-findings run is deployed): pin the true lastmod of every named
+#    page (tools/kolaboro-seo/lastmod.py, state kolaboro.com/data/lastmod.json), then submit to IndexNow (Bing, Yandex, Naver, Seznam,
+#    Yep) only the sitemap URLs whose lastmod moved, i.e. whose data really changed. Both files go out in one commit (one deploy).
+#    State: kolaboro.com/data/indexnow.json. Google does not take IndexNow; it reads the sitemaps.
+#  - audit (weekly, Tuesday 09:47 UTC, and on demand): crawl every sitemap URL (GET and HEAD): status, canonical, hreflang reciprocity,
+#    JSON-LD validity, image sitemap, true lastmod of static pages. Result: kolaboro.com/data/seo-audit.json, on /engineering/seo/.
+# Batch 15 fix: the spend cut of 6 Nov left one weekly cron whose value matched neither job's condition, so no scheduled run happened.
 on:
   schedule:
-    - cron: '41 9 * * 2'
+    - cron: '41 9 * * *'
+    - cron: '47 9 * * 2'
   workflow_dispatch:
     inputs:
       job:
@@ -18,11 +22,11 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: kolaboro-seo-${{ github.event_name == 'schedule' && github.event.schedule == '13 5 * * *' && 'audit' || 'indexnow' }}
+  group: kolaboro-seo
   cancel-in-progress: false
 jobs:
   audit:
-    if: (github.event_name == 'schedule' && github.event.schedule == '13 5 * * *') || github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && github.event.inputs.job != 'indexnow')
+    if: (github.event_name == 'schedule' && github.event.schedule == '47 9 * * 2') || (github.event_name == 'workflow_dispatch' && github.event.inputs.job != 'indexnow')
     runs-on: ubuntu-latest
     timeout-minutes: 50
     steps:
@@ -40,7 +44,7 @@ jobs:
         run: |
           bash tools/kolaboro-reliability/publish.sh "kolaboro.com: SEO crawl audit $(date -u +%FT%H:%M)" "$RUNNER_TEMP/seo/seo-audit.json=_s/kolaboro.com/data/seo-audit.json"
   indexnow:
-    if: github.event_name == 'workflow_run' || (github.event_name == 'schedule' && github.event.schedule == '41 */3 * * *') || github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && github.event.inputs.job != 'audit')
+    if: (github.event_name == 'schedule' && github.event.schedule == '41 9 * * *') || (github.event_name == 'workflow_dispatch' && github.event.inputs.job != 'audit')
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -50,17 +54,22 @@ jobs:
           sparse-checkout: |
             tools/kolaboro-seo
             tools/kolaboro-reliability
-      - name: Wait for the guarded deploy to be served
-        if: github.event_name == 'workflow_run'
-        run: sleep 60
+      - name: Pin the true lastmod of named pages
+        id: pin
+        run: |
+          set +e; python3 tools/kolaboro-seo/lastmod.py "$RUNNER_TEMP/inow"; c=$?; set -e
+          echo "code=$c" >> "$GITHUB_OUTPUT"
+          if [ "$c" != "0" ] && [ "$c" != "3" ]; then echo "::warning::lastmod pin failed (exit $c); sitemaps keep the published pins"; fi
       - name: Submit to IndexNow
         id: inow
         run: |
           set +e; python3 tools/kolaboro-seo/indexnow.py "$RUNNER_TEMP/inow"; c=$?; set -e
           echo "code=$c" >> "$GITHUB_OUTPUT"
           if [ "$c" != "0" ] && [ "$c" != "3" ]; then echo "::warning::IndexNow submission did not return 200/202 (exit $c)"; fi
-      - name: Publish state to kolaboro.com
-        if: steps.inow.outputs.code != '3'
+      - name: Publish state to kolaboro.com (one commit for both files)
         run: |
-          [ -f "$RUNNER_TEMP/inow/indexnow.json" ] || exit 0
-          bash tools/kolaboro-reliability/publish.sh "kolaboro.com: IndexNow $(date -u +%FT%H:%M)" "$RUNNER_TEMP/inow/indexnow.json=_s/kolaboro.com/data/indexnow.json"
+          F=""
+          [ -f "$RUNNER_TEMP/inow/indexnow.json" ] && F="$F $RUNNER_TEMP/inow/indexnow.json=_s/kolaboro.com/data/indexnow.json"
+          [ -f "$RUNNER_TEMP/inow/lastmod.json" ] && F="$F $RUNNER_TEMP/inow/lastmod.json=_s/kolaboro.com/data/lastmod.json"
+          [ -n "$F" ] || { echo "nothing changed"; exit 0; }
+          bash tools/kolaboro-reliability/publish.sh "kolaboro.com: true lastmod pins and IndexNow $(date -u +%FT%H:%M)" $F
