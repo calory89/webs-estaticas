@@ -98,12 +98,12 @@
   function factHtml(f){
     var lbl = (f.key && sub('f', f.key)) || f.k, val = f.vk ? (sub('f', f.vk) || f.v) : f.absent ? sub('f', 'v_notfound') : f.v === 'found' ? sub('f', 'v_found') : f.v === 'not found' ? sub('f', 'v_notfound') : f.v;
     var src = safeUrl(f.src), cls = f.absent ? 'abs' : f.hit || (f.rule && f.v === 'found') ? 'hit' : '';
-    return '<li class="' + cls + '"><span class="k">' + esc(lbl) + '</span><span class="v">' + esc(val) + '</span>' + (src ? '<a class="xr-src" href="' + hu(src) + '" target="_blank" rel="noopener nofollow" aria-label="' + esc(tx('source')) + ': ' + esc(hostOf(src) || src) + '">' + esc(hostOf(src) || src) + '</a>' : '') + (f.q ? '<q class="xr-q"' + (f.q.length > 160 ? ' tabindex="0" title="' + esc(f.q.slice(0, 300)) + '"' : '') + '>' + esc(f.q) + '</q>' : '') + '</li>';
+    return '<li class="' + cls + '"><span class="k">' + esc(lbl) + '</span><span class="v" dir="auto">' + esc(val) + '</span>' + (src ? '<a class="xr-src" href="' + hu(src) + '" target="_blank" rel="noopener nofollow" aria-label="' + esc(tx('source')) + ': ' + esc(hostOf(src) || src) + '">' + esc(hostOf(src) || src) + '</a>' : '') + (f.q ? '<q class="xr-q" dir="auto"' + (f.q.length > 160 ? ' tabindex="0" title="' + esc(f.q.slice(0, 300)) + '"' : '') + '>' + esc(f.q) + '</q>' : '') + '</li>';
   }
   function cardHtml(c){
     var title = sub('c', c.id) || c.title || c.id, st = c.status || 'ok';
     var h = '<div class="xr-ch"><h3>' + esc(title) + '</h3><span class="xr-pill ' + esc(st) + '"><i aria-hidden="true"></i>' + esc(sub('st', st) || st) + '</span></div>';
-    h += '<p class="xr-s">' + esc(summaryOf(c)) + '</p>';
+    h += '<p class="xr-s" dir="auto">' + esc(summaryOf(c)) + '</p>';
     if (c.years && c.years.length) { var mx = Math.max.apply(null, c.years.map(function(y){ return y.n; })) || 1;
       h += '<p class="xr-k">' + esc(tx('years')) + '</p><ul class="xr-yr" aria-label="' + esc(tx('years')) + '">' + c.years.map(function(y){ return '<li style="height:' + Math.max(6, Math.round(y.n / mx * 100)) + '%" title="' + y.y + ': ' + y.n + '"><a href="' + hu(y.url) + '" target="_blank" rel="noopener nofollow" aria-label="' + y.y + ': ' + y.n + '"></a></li>'; }).join('') + '</ul><div class="xr-yrx"><span>' + c.years[0].y + '</span><span>' + c.years[c.years.length - 1].y + '</span></div>'; }
     if (c.img && safeUrl(c.img.url)) h += '<figure class="xr-img"><img src="' + esc(c.img.url) + '" alt="' + esc(c.img.alt || title) + '" loading="lazy" width="640" height="360"><figcaption>' + (safeUrl(c.img.credit_url) ? '<a href="' + esc(c.img.credit_url) + '" target="_blank" rel="noopener">' + esc(c.img.credit || '') + '</a>' : esc(c.img.credit || '')) + '</figcaption></figure>';
