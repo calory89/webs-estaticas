@@ -268,7 +268,7 @@
     var src = S && S.source;
     h += '<p class="kpay-lim">' + esc(t('lim')) + '</p><p class="ap-small ap-muted kpay-src">' + esc(t('private')) + (src ? ' ' + esc(t('src')) + '. <a class="k-src" href="' + esc(src.url) + '" rel="noopener" target="_blank">Copernicus Sentinel-2 L2A</a> <a class="k-src" href="' + esc(src.method) + '">' + esc(t('meth')) + ', ' + esc(t('upd', { d: fd(S.updated) })) + '</a>' : '') +
       (S && S.page_section ? ' <a class="k-src" href="' + esc(S.page_section) + '">' + esc(t('page')) + '</a>' : '') + '</p>';
-    el.innerHTML = h; bind();
+    el.classList.toggle('is-narrow', el.clientWidth < 720); el.innerHTML = h; bind();
     syncObs(rows, cmp);
     if (!ST.scrolled && location.hash === '#kpay') { ST.scrolled = true; el.scrollIntoView(); }
   }
@@ -358,7 +358,7 @@
   };
 
   var css = document.createElement('style'); css.id = 'kpay-css';
-  css.textContent = '#kpay{container-type:inline-size}#kpay .k-badge{white-space:normal;text-align:start;line-height:1.35}#kpay .kpay-in{margin-top:0}#kpay .kpay-sel{max-width:420px;margin:0 0 var(--k-3)}#kpay .kpay-sum{list-style:none;margin:0 0 var(--k-3);padding:0}#kpay .kpay-sum li{border-top:1px solid var(--k-line);padding:var(--k-2) 0;line-height:1.5;font-size:var(--k-fs-sm);color:var(--k-ink-2)}' +
+  css.textContent = '#kpay .k-badge{white-space:normal;text-align:start;line-height:1.35}#kpay .kpay-in{margin-top:0}#kpay .kpay-sel{max-width:420px;margin:0 0 var(--k-3)}#kpay .kpay-sum{list-style:none;margin:0 0 var(--k-3);padding:0}#kpay .kpay-sum li{border-top:1px solid var(--k-line);padding:var(--k-2) 0;line-height:1.5;font-size:var(--k-fs-sm);color:var(--k-ink-2)}' +
     '#kpay .kpay-ch{margin:0 0 var(--k-4);padding:var(--k-3) 0 0;border-top:1px solid var(--k-line)}#kpay .kpay-ch>div{overflow-x:auto}#kpay svg{display:block;max-width:100%;height:auto;overflow:visible}#kpay svg text{fill:var(--k-muted);font-size:11px;font-variant-numeric:tabular-nums}' +
     '#kpay .ax{stroke:var(--k-line-2);stroke-width:1}#kpay .gl{stroke:var(--k-line);stroke-width:1;stroke-dasharray:2 4}#kpay .bd{fill:color-mix(in srgb,var(--k-sea) 9%,transparent)}#kpay .lx{fill:none;stroke:var(--k-sea);stroke-width:2.2;stroke-linejoin:round}#kpay .px{fill:var(--k-sea)}' +
     '#kpay .ms{fill:color-mix(in srgb,var(--k-ink) 7%,transparent)}#kpay .ml{stroke:var(--k-ink);stroke-width:1.5}#kpay .mo{stroke:var(--k-muted);stroke-width:1;stroke-dasharray:3 3}#kpay svg .mt{fill:var(--k-ink);font-weight:600}#kpay svg .rp{fill:var(--k-ink-2)}' +
@@ -372,8 +372,8 @@
     '#kpay .kpay-f{margin:var(--k-5) 0 0;padding:var(--k-4);border:1px solid var(--k-line);border-radius:var(--k-r-md);background:var(--k-sunken)}#kpay .kpay-f h3{margin:0 0 var(--k-3);font-size:var(--k-fs-md)}#kpay .kpay-fg{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:var(--k-3)}#kpay .kpay-wl{grid-column:1/-1}' +
     '#kpay .kpay-f .k-field{margin:0}#kpay .kpay-f .k-input,#kpay .kpay-f .k-select{width:100%;min-height:44px}#kpay .k-seg>*{min-height:38px}#kpay .kpay-fa{display:flex;gap:var(--k-2);flex-wrap:wrap;margin-top:var(--k-3)}#kpay .k-err[hidden]{display:none}' +
     '#kpay .kpay-lim{font-size:var(--k-fs-sm);color:var(--k-ink-2);line-height:1.55;margin:var(--k-4) 0 var(--k-2);max-width:72ch}#kpay .kpay-src{margin:0;line-height:1.6}#kpay .kpay-src .k-src{margin-inline-start:4px}#kpay .k-alert{margin:0 0 var(--k-3)}' +
-    '@container (max-width:720px){#kpay .kpay-t thead{display:none}#kpay .kpay-t,#kpay .kpay-t tbody{display:block}#kpay .kpay-t tr{display:block;padding:10px 14px;border-bottom:1px solid var(--k-line)}#kpay .kpay-t td{display:flex;justify-content:space-between;gap:16px;padding:4px 0;border:0;text-align:end}' +
-    '#kpay .kpay-t td::before{content:attr(data-label);color:var(--k-muted);text-align:start;font-weight:500;flex:none;max-width:45%}#kpay .kpay-t td:first-child{font-weight:700}#kpay .kpay-t td:first-child::before{content:none}' +
-    '#kpay .kpay-t td.kpay-s{display:block;text-align:start}#kpay .kpay-t td.kpay-s::before{display:block;max-width:none;margin-bottom:4px}#kpay .kpay-t td.kpay-a{justify-content:flex-end}#kpay .kpay-t td.kpay-a::before{content:none}#kpay .kpay-t .kpay-ck{justify-content:flex-end}}';
+    '#kpay.is-narrow{}#kpay.is-narrow .kpay-t thead{display:none}#kpay.is-narrow .kpay-t,#kpay.is-narrow .kpay-t tbody{display:block}#kpay.is-narrow .kpay-t tr{display:block;padding:10px 14px;border-bottom:1px solid var(--k-line)}#kpay.is-narrow .kpay-t td{display:flex;justify-content:space-between;gap:16px;padding:4px 0;border:0;text-align:end}' +
+    '#kpay.is-narrow .kpay-t td::before{content:attr(data-label);color:var(--k-muted);text-align:start;font-weight:500;flex:none;max-width:45%}#kpay.is-narrow .kpay-t td:first-child{font-weight:700}#kpay.is-narrow .kpay-t td:first-child::before{content:none}' +
+    '#kpay.is-narrow .kpay-t td.kpay-s{display:block;text-align:start}#kpay.is-narrow .kpay-t td.kpay-s::before{display:block;max-width:none;margin-bottom:4px}#kpay.is-narrow .kpay-t td.kpay-a{justify-content:flex-end}#kpay.is-narrow .kpay-t td.kpay-a::before{content:none}#kpay.is-narrow .kpay-t .kpay-ck{justify-content:flex-end}';
   (document.head || document.documentElement).appendChild(css);
 })();
