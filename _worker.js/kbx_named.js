@@ -23,7 +23,8 @@ import { satData, satSection, satToc, satHeading } from './kbx_named_sat.js';   
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v21';   // v20: construction progress from space (f14b);   // v19: search empty state links to the free check, claims 'checked against' translated (qa13); v18: RTL-safe honeypot (d12b); v17: changes page (d12b); v16: design-system tokens (d12b); v15: d12b redesign (H1 tail line, key-facts panel, side contents on desktop, tables as cards on phones)
+const CACHE_V = 'named-v22';   // v22: search-intent titles, short answer, freshness line, more FAQ, related pages, image objects (s15a)
+//   // v20: construction progress from space (f14b);   // v19: search empty state links to the free check, claims 'checked against' translated (qa13); v18: RTL-safe honeypot (d12b); v17: changes page (d12b); v16: design-system tokens (d12b); v15: d12b redesign (H1 tail line, key-facts panel, side contents on desktop, tables as cards on phones)
 // v13: sticky section chips, folded long lists, 44 px source pills (ux11); v11: og:image share cards, price per m2, company network (b10c); v10: page-history line (b9b)
 export const OPINION_RX = /\b(scam\w*|fraud\w*|ponzi|swindl\w*|rip-?off|avoid\w*|beware|dodgy|shady|crook\w*|estafa\w*|fraude\w*|timo|timador\w*|betrug\w*|betrüg\w*|abzocke\w*|arnaque\w*|escroquer\w*|escroc\w*|oplichting|oplichter\w*|bedrog\w*)\b|мошен|обман|афер|骗局|诈骗|欺诈|احتيال|نصب/i;
 
@@ -56,14 +57,15 @@ async function data(env) {
   // named or scored by name; they stay anonymous (/p/<id>/, market only). Same rule as the published independence policy.
   const P = (named.projects || []).filter(x => caseBy.has(x.id) && !COI_MARKETS.has(String(x.mk || '').toLowerCase()));
   for (const x of P) if (x.n) x.n = cleanName(x.n);
-  const byId = new Map(P.map(x => [x.id, x])), bySlug = new Map(P.map(x => [x.s, x])), devs = new Map(), mk = new Map();
+  const byId = new Map(P.map(x => [x.id, x])), bySlug = new Map(P.map(x => [x.s, x])), devs = new Map(), mk = new Map(), byAr = new Map();
   for (const x of P) {
     if (x.dvs && !RESERVED.has(x.dvs)) { if (!devs.has(x.dvs)) devs.set(x.dvs, { s: x.dvs, n: x.dv, ids: [] }); devs.get(x.dvs).ids.push(x.id); }
+    if (x.ar && x.ar !== x.mk) { const a = x.mk + '|' + x.ar; if (!byAr.has(a)) byAr.set(a, []); byAr.get(a).push(x); }   // s15a: same area, for related links
     const c = caseBy.get(x.id), m = mk.get(x.mk) || { k: 0, pn: 0, esc: 0 };
     m.k++; if ((c.checks || {}).permit === 2) m.pn++; if ((c.checks || {}).escrow === true) m.esc++; mk.set(x.mk, m);
   }
   const dmk = new Map(((delay && delay.markets) || []).map(m => [m.market, m]));
-  IDX = { named, cases, P, byId, bySlug, devs, caseBy, mk, dmk, prom: (prom && prom.projects) || {}, find: (find && find.projects) || {}, sim: (sim && sim.projects) || {}, updated: cases.updated || named.updated };
+  IDX = { named, cases, P, byId, bySlug, devs, caseBy, mk, dmk, byAr, sat: null, prom: (prom && prom.projects) || {}, find: (find && find.projects) || {}, sim: (sim && sim.projects) || {}, updated: cases.updated || named.updated };
   return IDX;
 }
 
@@ -135,6 +137,21 @@ function lastmod(ix, x) {
   return ds.length ? ds[ds.length - 1] : (iso(ix.updated) || new Date().toISOString().slice(0, 10));
 }
 
+// s15a: hub slugs (same rule as kbx_seo.js slug) and the page's images: the share card and, where we have a series, the monthly satellite strip
+const dot = t => String(t).replace(/\.\.(?=\s|$)/g, '.');   // "4 нояб. 2026 г." at the end of a sentence
+const slugA = s => String(s || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+const ymFmt = (ym, lang) => fd(ym, lang);
+function projImages(x, lang, canon, sat) {
+  const out = [{ '@id': canon + '#og', url: ORIGIN + '/og/projects/' + x.s + '.png', contentUrl: ORIGIN + '/og/projects/' + x.s + '.png', width: 1200, height: 630, caption: tr(lang, 'og_alt', { n: x.n }), name: tr(lang, 'og_alt', { n: x.n }) }];
+  const r = sat && sat.projects && sat.projects[x.id];
+  if (r && r.frames && r.v && r.m0 && r.n) {
+    const [y, m] = r.m0.split('-').map(Number), e = new Date(Date.UTC(y, m - 1 + r.n - 1, 1)), last = e.getUTCFullYear() + '-' + String(e.getUTCMonth() + 1).padStart(2, '0');
+    const cap = tr(lang, 'img_sat', { n: x.n, a: ymFmt(r.m0, lang), b: ymFmt(last, lang) }), u = ORIGIN + '/k/sat/proj/' + encodeURIComponent(x.id) + '.jpg?v=' + encodeURIComponent(r.v);
+    out.push({ '@id': canon + '#sat', url: u, contentUrl: u, caption: cap, name: cap, creditText: 'Contains modified Copernicus Sentinel data', license: 'https://sentinels.copernicus.eu/documents/247904/690755/Sentinel_Data_Legal_Notice', acquireLicensePage: ORIGIN + '/satellite/' });
+  }
+  return out;
+}
+
 // ------------------------------------------------------------------------------------------------ project page
 function projectPage(ix, x, lang, extra) {
   const c = ix.caseBy.get(x.id), ck = c.checks || {}, vf = c.verified || {}, cl = c.claims || { verified: 0, unverified: 0, contradicted: 0 };
@@ -144,8 +161,10 @@ function projectPage(ix, x, lang, extra) {
   const cN = cl.verified + cl.unverified + cl.contradicted, rvd = reviewed(c), nrB = tr(lang, 'nr_badge', { d: fd(x.ad || c.checked, lang) });
   const canon = pUrl(lang, x.s), devPage = x.dvs && ix.devs.has(x.dvs) ? dUrl(lang, x.dvs) : null, rec = '/api/open/projects/' + encodeURIComponent(x.id);
   const title = tr(lang, 'title_p', { n: name });
-  const desc = rvd ? tr(lang, 'desc_p', { n: name, place, stage, h: ho ? fd(ho.d, lang) : tr(lang, 'v_none'), pn: x.pn ? tr(lang, 'v_pub') : tr(lang, 'v_notpub'), c: cN, v: cl.verified, d: fd(checked, lang) })
-    : tr(lang, 'g_listed', { n: name, stage, place }) + ' ' + nrB + '.';
+  // s15a: the description answers the search ("<project> reviews / opiniones / avis ...") with our data, in the page's language
+  const rv = extra.reviews || { approved_total: 0, reports: [] }, rvN = rv.approved_total || 0;
+  const dv0 = { n: name, place, stage, by: x.dv ? tr(lang, 'by_dev', { dev: x.dv }) : '', h: ho ? fd(ho.d, lang) : tr(lang, 'v_none'), pn: x.pn ? tr(lang, 'v_pub') : tr(lang, 'v_notpub'), c: cN, v: cl.verified, r: rvN ? num(rvN, lang) : tr(lang, 'r_none'), d: fd(checked, lang) };
+  const desc = dot(tr(lang, rvd ? 'desc_p2' : 'desc_nr', dv0));
 
   // in short (answer-ready summary)
   const g = [];
@@ -199,7 +218,7 @@ function projectPage(ix, x, lang, extra) {
     (c.delay ? fact(esc(tr(lang, 'delay_line', { m: c.delay })), page) : '') + '</ul>';
 
   // construction progress from space (only projects with a plot-level pin and a Sentinel-2 series)
-  const satHtml = extra.sat ? satSection(extra.sat, x.id, ix.prom[x.id] || [], fx, lang, d => fd(d, lang), k => tr(lang, 'pk_' + k)) : '';
+  const satHtml = extra.sat ? satSection(extra.sat, x.id, ix.prom[x.id] || [], fx, lang, d => fd(d, lang), k => tr(lang, 'pk_' + k), d => tr(lang, 'sat_tile', { n: name, d })) : '';
 
   // permits and licences
   const rw = x.rw, lk = { url: page || '', q: name, country: COUNTRY_ISO[x.co] || '', permit: x.pn && x.pn.length <= 40 ? x.pn : '', company: x.dv || '', ai: '0' };   // ai=0: registers only, no paid desk review from a page view
@@ -260,7 +279,6 @@ function projectPage(ix, x, lang, extra) {
     '<p><a class="more" href="/m/' + slugM(x.mk) + '/">' + esc(tr(lang, 'mk_link', { mk: x.mk })) + '</a></p>';
 
   // reviews (verified, moderated)
-  const rv = extra.reviews || { approved_total: 0, reports: [] };
   const reviews = (rv.approved_total ? '<p>' + esc(tr(lang, 'rev_some', { k: rv.approved_total })) + '</p><div class="ugc" data-ugc>' + (rv.reports || []).slice(0, 10).map(r => '<blockquote lang="en">' + esc(r.body || r.text || '') + '</blockquote>').join('') + '</div>' : '<p>' + esc(tr(lang, 'rev_none', { n: name })) + '</p>') +
     '<p class="ki">' + esc(tr(lang, 'rev_pending')) + '</p><p><a class="btn btn-line kbtn" href="/buyer-reports/?project=' + encodeURIComponent(x.id) + '">' + esc(tr(lang, 'rev_btn')) + '</a></p>';
 
@@ -280,7 +298,17 @@ function projectPage(ix, x, lang, extra) {
     [tr(lang, 'q_deliv', { n: name }), ho ? tr(lang, 'a_deliv', { h: fd(ho.d, lang) }) + (hand && hand.mv ? ' ' + tr(lang, 'g_moved', { k: hand.mv, mm: hand.mm }) : '') + (c.overdue ? ' ' + tr(lang, 'g_over', { m: c.overdue }) : '') : tr(lang, 'a_deliv_none')],
     [tr(lang, 'q_dev', { n: name }), x.dv ? tr(lang, 'a_dev', { dev: x.dv }) : tr(lang, 'a_dev_none')],
     [tr(lang, 'q_permit', { n: name }), vf.permit === 'registry' ? tr(lang, 'a_permit_reg') : x.pn ? tr(lang, 'a_permit_pn', { pn: x.pn }) : tr(lang, 'a_permit_none')],
-    [tr(lang, 'q_rev', { n: name }), rv.approved_total ? tr(lang, 'rev_some', { k: rv.approved_total }) : tr(lang, 'a_rev')]];
+    [tr(lang, 'q_rev2', { n: name }), rv.approved_total ? tr(lang, 'rev_some', { k: rv.approved_total }) : tr(lang, 'a_rev')]];
+  // s15a: more of the questions people search, each answered only from the facts on this page
+  FAQ.splice(1, 0, [tr(lang, 'q_where', { n: name }), tr(lang, 'a_where', { n: name, place })]);
+  FAQ.splice(3, 0, [tr(lang, 'q_delay', { n: name }), c.overdue ? tr(lang, 'g_over', { m: c.overdue }) + (ho ? ' ' + tr(lang, 'a_delay_latest', { h: fd(ho.d, lang) }) : '')
+    : hand && hand.mv ? tr(lang, 'g_moved', { k: hand.mv, mm: hand.mm }) + ' ' + tr(lang, 'a_delay_latest', { h: fd(hand.d, lang) })
+    : hand && hand.st === 'pending' ? tr(lang, 'a_delay_ahead', { h: fd(hand.d, lang) }) : hand ? tr(lang, 'a_delay_rec', { h: fd(hand.d, lang), st: tr(lang, 'ps_' + hand.st) }) : ho ? tr(lang, 'g_h', { h: fd(ho.d, lang) }) : tr(lang, 'a_deliv_none')]);
+  if (fx.price_min && cleanOk(String(fx.price_min))) FAQ.push([tr(lang, 'q_price', { n: name }), tr(lang, 'a_price', { p: cur + num(fx.price_min, lang), to: fx.price_max ? tr(lang, 'a_price_to', { p2: cur + num(fx.price_max, lang) }) : '' })]);
+  if (fx.foreign_ownership && cleanOk(String(fx.foreign_ownership))) FAQ.push([tr(lang, 'q_own', { n: name }), tr(lang, 'a_own', { o: String(fx.foreign_ownership) })]);
+  const hN = (c.history || []).length;
+  FAQ.push([tr(lang, 'q_change', { n: name }), [tr(lang, 'a_change', { d: fd(checked, lang) }), ph && ph.n > 1 ? tr(lang, 'ph_line', { n: ph.n, a: fd(ph.first, lang), b: fd(ph.last, lang), c: ph.changed }) : '', hN ? tr(lang, 'a_change_k', { k: hN }) : (ph && ph.changed ? '' : tr(lang, 'a_change_none'))].filter(Boolean).join(' ')]);
+  for (const f of FAQ) f[1] = dot(f[1]);
   const faq = FAQ.map(([q, a]) => '<details class="kfaq"><summary>' + esc(q) + '</summary><p>' + esc(a) + '</p></details>').join('');
 
   // sources
@@ -288,33 +316,55 @@ function projectPage(ix, x, lang, extra) {
   const sources = '<p class="ki">' + esc(tr(lang, 'src_intro')) + '</p><ol class="srcs">' + S.map(srcLi).join('') + '</ol>' +
     (okHttp(page) ? '<p><a href="https://web.archive.org/web/*/' + esc(fixU(page)) + '" rel="nofollow noopener" target="_blank">' + esc(tr(lang, 'src_archive')) + '</a></p>' : '');
 
+  // s15a: short answer at the top (what people search: legit, delivery date, permit, developer, reviews), built from the facts below
+  const aS = [x.dv ? tr(lang, 'g_listed_dev', { n: name, stage, place, dev: x.dv }) : tr(lang, 'g_listed', { n: name, stage, place }),
+    ho ? tr(lang, 'g_h', { h: fd(ho.d, lang) }) : tr(lang, 'g_h_none'), c.overdue ? tr(lang, 'g_over', { m: c.overdue }) : hand && hand.mv ? tr(lang, 'g_moved', { k: hand.mv, mm: hand.mm }) : '',
+    x.pn ? tr(lang, 'g_pn') : tr(lang, 'g_pn_none'), rvd ? (cN ? tr(lang, 'g_claims', { c: cN, v: cl.verified, u: cl.unverified, x: cl.contradicted }) : '') : nrB + '.',
+    rvN ? tr(lang, 'ans_rev', { k: num(rvN, lang) }) : tr(lang, 'ans_rev0')].filter(Boolean);
+  const fresh = '<time datetime="' + esc(checked) + '">' + esc(tr(lang, 'upd_checked', { d: fd(checked, lang) })) + '</time>' +
+    (ph && ph.n > 1 ? ' · ' + esc(tr(lang, 'upd_ver', { n: ph.n, a: fd(ph.first, lang), c: ph.changed })) : '') + (ph && ph.n ? ' · <a href="' + chg + '">' + esc(tr(lang, 'upd_log')) + '</a>' : '') +
+    ' · <a href="#glance">' + esc(tr(lang, 'ans_more')) + '</a>';
+  const answer = '<div class="kans" id="answer"><p class="kans-t"><b class="kans-l">' + esc(tr(lang, 'ans_lbl')) + '</b> ' + esc(dot(aS.join(' '))) + '</p><p class="kans-u">' + fresh + '</p></div>';
+
+  // s15a: related pages (same developer, same area, similar, side-by-side, market and country hubs)
+  const AR = x.ar && x.ar !== x.mk ? (ix.byAr.get(x.mk + '|' + x.ar) || []).filter(o => o.id !== x.id).slice(0, 8) : [];
+  const relL = [];
+  if (devPage && others.length) relL.push('<li><a href="' + devPage.replace(ORIGIN, '') + '">' + esc(tr(lang, 'rel_dev', { dev: x.dv })) + '</a> <small>' + (others.length + 1) + '</small></li>');
+  if (SM.length) relL.push('<li><a href="/compare/?ids=' + [x.id, ...SM.slice(0, 3).map(o => o.id)].map(encodeURIComponent).join(',') + '" rel="nofollow">' + esc(tr(lang, 'rel_cmp', { n: name })) + '</a></li>');
+  relL.push('<li><a href="/vs/#' + slugA(x.mk) + '">' + esc(tr(lang, 'rel_vs', { mk: x.mk })) + '</a></li>');
+  if (x.co) relL.push('<li><a href="/countries/' + slugA(x.co) + '/">' + esc(tr(lang, 'rel_country', { co: x.co })) + '</a></li>');
+  const related = (AR.length ? '<h3>' + esc(tr(lang, 'rel_area', { ar: x.ar })) + '</h3><ul class="lk">' + AR.map(o => '<li><a href="' + pre(lang) + '/projects/' + o.s + '/">' + esc(o.n) + '</a>' + (o.dv ? ' <small>' + esc(o.dv) + '</small>' : '') + '</li>').join('') + '</ul>' : '') +
+    '<ul class="lk">' + relL.join('') + '</ul>';
+
   const crumbs = [[tr(lang, 'crumb_home'), ORIGIN + pre(lang) + '/'], [tr(lang, 'crumb_projects'), ORIGIN + pre(lang) + '/projects/'], [x.mk, ORIGIN + '/m/' + slugM(x.mk) + '/'], [name, canon]];
   const toc = [['glance', 's_glance'], ['promise', 's_promise'], ['ppm', 's_ppm_toc'], ['delivery', 's_delivery'], ...(satHtml ? [['space', null]] : []), ['permits', 's_permits'], ['checks', 's_checks'], ['claims', 's_claims'], ['history', 's_history'], ['reports', 's_reports'], ['developer', 's_devsec'], ['reviews', 's_reviews'], ['reply', 's_reply'], ['faq', 's_faq'], ['sources', 's_sources']];
   const body = '<section class="phero kp"><div class="wrap"><p class="crumb">' + crumbs.slice(0, 3).map(([l, u]) => '<a href="' + esc(u.replace(ORIGIN, '')) + '">' + esc(l) + '</a>').join(' / ') + '</p>' +
-    '<h1>' + h1x(tr(lang, 'h1_p', { n: name }), name) + '</h1><p class="lead">' + esc(tr(lang, 'lead_p', { n: name, place })) + '</p>' + keys + watchBox(lang, x.id, name, '/projects/' + x.s + '/') + '</div></section>' +
+    '<h1>' + h1x(tr(lang, 'h1_p', { n: name }), name) + '</h1><p class="lead">' + esc(tr(lang, 'lead_p', { n: name, place })) + '</p>' + answer + keys + watchBox(lang, x.id, name, '/projects/' + x.s + '/') + '</div></section>' +
     '<div class="wrap kwrap"><nav class="ktoc" aria-label="' + esc(tr(lang, 's_glance')) + '">' + toc.map(([i, k]) => '<a href="#' + i + '">' + esc(k ? tr(lang, k) : satToc(lang)) + '</a>').join('') + '</nav>' +
     sec('glance', esc(tr(lang, 's_glance')), '<ul class="fl glance">' + g.join('') + '</ul>') + sec('promise', esc(tr(lang, 's_promise')), promised) + sec('ppm', esc(tr(lang, 's_ppm')), ppmSection(x, lang).html) + sec('delivery', esc(tr(lang, 's_delivery')), delivery) + (satHtml ? sec('space', esc(satHeading(lang)), satHtml) : '') +
     sec('permits', esc(tr(lang, 's_permits')), permits) + sec('checks', esc(tr(lang, 's_checks')), checks) + sec('claims', esc(tr(lang, 's_claims')), claims) + sec('history', esc(tr(lang, 's_history')), history) +
     sec('reports', esc(tr(lang, 's_reports')), reports) + sec('developer', esc(tr(lang, 's_devsec')), devsec) + (similar ? sec('similar', esc(tr(lang, 's_similar')), similar) : '') +
-    sec('market', esc(tr(lang, 's_market', { mk: x.mk })), market) + sec('reviews', esc(tr(lang, 's_reviews')), reviews) + sec('reply', esc(tr(lang, 's_reply')), reply) +
+    sec('market', esc(tr(lang, 's_market', { mk: x.mk })), market) + sec('related', esc(tr(lang, 'rel_h')), related) + sec('reviews', esc(tr(lang, 's_reviews')), reviews) + sec('reply', esc(tr(lang, 's_reply')), reply) +
     sec('cta', esc(tr(lang, 's_cta')), cta) + sec('faq', esc(tr(lang, 's_faq')), faq) + sec('sources', esc(tr(lang, 's_sources')), sources) +
     '<p class="ki kfoot">' + tr(lang, 'foot', { d: esc(fd(checked, lang)), link: own('/data-policy/', tr(lang, 'm_data_policy')) }) + '</p></div>';
 
+  const imgs = projImages(x, lang, canon, extra.sat);
   const placeType = /villa|house|home/i.test(name + ' ' + ((fx.unit_types || []).join(' '))) && !/apartment|tower|condo|residences/i.test(name) ? 'Residence' : 'ApartmentComplex';
   const geo = typeof fx.lat === 'number' && typeof fx.lng === 'number' ? { '@type': 'GeoCoordinates', latitude: fx.lat, longitude: fx.lng } : undefined;
   const orgId = (devPage ? dUrl('en', x.dvs) : canon) + '#org';
   const ld = { '@context': 'https://schema.org', '@graph': [
     { '@type': 'WebPage', '@id': canon + '#page', url: canon, name: title.replace(/ \| Kolaboro$/, ''), description: desc, inLanguage: lang, dateModified: checked, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' },
-      publisher: { '@id': ORIGIN + '/#org' }, about: [{ '@id': canon + '#place' }].concat(x.dv ? [{ '@id': orgId }] : []), breadcrumb: { '@id': canon + '#bc' }, mainEntity: { '@id': canon + '#faq' } },
+      publisher: { '@id': ORIGIN + '/#org' }, primaryImageOfPage: { '@id': canon + '#og' }, speakable: { '@type': 'SpeakableSpecification', cssSelector: ['#answer .kans-t'] }, about: [{ '@id': canon + '#place' }].concat(x.dv ? [{ '@id': orgId }] : []), breadcrumb: { '@id': canon + '#bc' }, mainEntity: { '@id': canon + '#faq' } },
     { '@type': 'Organization', '@id': ORIGIN + '/#org', name: 'Kolaboro', url: ORIGIN + '/', logo: ORIGIN + '/k/favicon.svg' },
-    Object.assign({ '@type': placeType, '@id': canon + '#place', name, address: { '@type': 'PostalAddress', addressLocality: x.ar || x.mk, addressRegion: x.mk, addressCountry: COUNTRY_ISO[x.co] || x.co } }, geo ? { geo } : {}),
+    ...imgs.map(i => Object.assign({ '@type': 'ImageObject' }, i)),
+    Object.assign({ '@type': placeType, '@id': canon + '#place', name, image: imgs.map(i => ({ '@id': i['@id'] })), address: { '@type': 'PostalAddress', addressLocality: x.ar || x.mk, addressRegion: x.mk, addressCountry: COUNTRY_ISO[x.co] || x.co } }, geo ? { geo } : {}),
     ...(x.dv ? [Object.assign({ '@type': 'Organization', '@id': orgId, name: x.dv }, devPage ? { url: dUrl('en', x.dvs) } : {})] : []),
     { '@type': 'Dataset', '@id': canon + '#data', name: 'Kolaboro record: ' + name, description: rvd ? 'Sourced facts about ' + name + ' (' + place + '): developer claims tested, six buyer checks with verification level, dated promises and change history. Kolaboro public id ' + x.id + '.' : 'Sourced facts about ' + name + ' (' + place + ') as published, with links. Not yet reviewed by Kolaboro; no checks or score. Kolaboro public id ' + x.id + '.',
       url: canon, identifier: x.id, license: 'https://creativecommons.org/licenses/by/4.0/', isAccessibleForFree: true, creator: { '@id': ORIGIN + '/#org' }, dateModified: checked, spatialCoverage: { '@id': canon + '#place' },
       distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: ORIGIN + rec }] },
     { '@type': 'BreadcrumbList', '@id': canon + '#bc', itemListElement: crumbs.map(([l, u], i) => ({ '@type': 'ListItem', position: i + 1, name: l, item: u })) },
     { '@type': 'FAQPage', '@id': canon + '#faq', mainEntity: FAQ.map(([q, a]) => ({ '@type': 'Question', name: q, acceptedAnswer: { '@type': 'Answer', text: a } })) }] };
-  return { title, desc, canon, body, ld, lastmod: checked, alt: l => pUrl(l, x.s), feed: { path: '/projects/' + x.s + '/', name } };
+  return { title, desc, canon, body, ld, lastmod: checked, alt: l => pUrl(l, x.s), feed: { path: '/projects/' + x.s + '/', name }, images: imgs };
 }
 
 // ------------------------------------------------------------------------------------------------ developer page
@@ -342,7 +392,7 @@ function devPage(ix, dv, lang, extra) {
   const pn = L.filter(x => x.pn).length, P = L.flatMap(x => ix.prom[x.id] || []);
   const cnt = st => P.filter(p => p.st === st).length, moved = P.filter(p => p.mv).length;
   const title = tr(lang, 'title_d', { dev: name });
-  const desc = tr(lang, 'desc_d', { dev: name, k: L.length, mks: mks.join(', '), pn, p: P.length, mv: moved, d: fd(checked, lang) });
+  const desc = dot(tr(lang, 'desc_d2', { dev: name, k: L.length, mks: mks.join(', '), pn, p: P.length, mv: moved, d: fd(checked, lang) }));
   const first = L[0], fx = Object.assign({}, ...L.map(x => x.fx || {}).reverse());
   const g = [fact(esc(tr(lang, 'g_d', { k: L.length, dev: name, mks: mks.join(', ') })), first.url), fact(esc(tr(lang, 'g_d_pn', { pn, k: L.length })), first.du || first.url)];
   if (P.length) g.push(fact(esc(tr(lang, 'g_d_rec', { p: P.length, kept: cnt('kept'), broken: cnt('broken'), moved: cnt('moved'), pending: cnt('pending') })), '/promises/', tr(lang, 'm_promises')));
@@ -365,16 +415,22 @@ function devPage(ix, dv, lang, extra) {
   const FAQ = [[tr(lang, 'q_dlegit', { dev: name }), tr(lang, 'a_dlegit', { facts: factsTxt })],
     [tr(lang, 'q_dcompl', { dev: name }), FLu.length ? tr(lang, 'a_dcompl_some', { list: [...new Set(FLu.map(f => tr(lang, 'rc_' + f[0])))].join('; ') }) : tr(lang, 'a_dcompl_none')],
     [tr(lang, 'q_dproj', { dev: name }), L.map(x => x.n + ' (' + x.mk + ')').join(', ') + '.']];
+  // s15a: register, on-time delivery and buyer reviews, answered from the GLEIF lookup and our promise record
+  FAQ.splice(1, 0, [tr(lang, 'q_dreg', { dev: name }), gl.matches.length ? gl.matches.slice(0, 2).map(m => tr(lang, 'gleif_found', { legal: m.legal, lei: m.lei, jur: m.jur, st: m.st, ls: m.ls, reg: fd(m.reg, lang) })).join(' ') : gl.ok ? tr(lang, 'a_dreg_none', { d: fd(gl.at, lang) }) : tr(lang, 'a_dreg_err')]);
+  FAQ.splice(2, 0, [tr(lang, 'q_ddeliv', { dev: name }), P.length ? tr(lang, 'g_d_rec', { p: P.length, kept: cnt('kept'), broken: cnt('broken'), moved: cnt('moved'), pending: cnt('pending') }) : tr(lang, 'drec_none')]);
+  FAQ.push([tr(lang, 'q_drev', { dev: name }), tr(lang, 'a_drev')]);
+  const answer = '<div class="kans" id="answer"><p class="kans-t"><b class="kans-l">' + esc(tr(lang, 'ans_lbl')) + '</b> ' + esc(factsTxt) + '</p><p class="kans-u"><time datetime="' + esc(checked) + '">' + esc(tr(lang, 'upd_checked', { d: fd(checked, lang) })) + '</time> · <a href="#glance">' + esc(tr(lang, 'ans_more')) + '</a></p></div>';
+  for (const f of FAQ) f[1] = dot(f[1]);
   const faq = FAQ.map(([q, a]) => '<details class="kfaq"><summary>' + esc(q) + '</summary><p>' + esc(a) + '</p></details>').join('');
   const S = [...new Set(L.flatMap(x => [x.url, x.du]).concat(FLu.map(f => f[1])).filter(okHttp))];
   const sources = '<p class="ki">' + esc(tr(lang, 'src_intro')) + '</p><ol class="srcs">' + S.slice(0, 60).map(srcLi).join('') + '</ol>';
   const crumbs = [[tr(lang, 'crumb_home'), ORIGIN + pre(lang) + '/'], [tr(lang, 'crumb_devs'), ORIGIN + '/developers/'], [name, canon]];
-  const body = '<section class="phero kp"><div class="wrap"><p class="crumb">' + crumbs.slice(0, 2).map(([l, u]) => '<a href="' + esc(u.replace(ORIGIN, '')) + '">' + esc(l) + '</a>').join(' / ') + '</p><h1>' + h1x(tr(lang, 'h1_d', { dev: name }), name) + '</h1><p class="lead">' + esc(tr(lang, 'lead_d', { dev: name })) + '</p>' + feedLinks(lang, '/developers/' + dv.s + '/', name) + '</div></section>' +
+  const body = '<section class="phero kp"><div class="wrap"><p class="crumb">' + crumbs.slice(0, 2).map(([l, u]) => '<a href="' + esc(u.replace(ORIGIN, '')) + '">' + esc(l) + '</a>').join(' / ') + '</p><h1>' + h1x(tr(lang, 'h1_d', { dev: name }), name) + '</h1><p class="lead">' + esc(tr(lang, 'lead_d', { dev: name })) + '</p>' + answer + feedLinks(lang, '/developers/' + dv.s + '/', name) + '</div></section>' +
     '<div class="wrap kwrap">' + sec('glance', esc(tr(lang, 's_glance')), '<ul class="fl glance">' + g.join('') + '</ul>') + sec('projects', esc(tr(lang, 's_dprojects')), projects) + sec('network', esc(tr(lang, 's_network')), networkHtml(name, gl.matches[0] && extra.netOk ? gl.matches[0] : null, extra.net, L, pre(lang), '/developers/' + dv.s + '/', extra.netOk ? null : gl.matches[0], lang) + NET_CSS + '<script>' + NET_JS + '</script>') + sec('record', esc(tr(lang, 's_drecord')), record) +
     sec('registers', esc(tr(lang, 's_dreg')), reg) + sec('reports', esc(tr(lang, 's_dreports')), reports) + sec('reply', esc(tr(lang, 's_reply')), reply) + sec('cta', esc(tr(lang, 's_cta')), cta) + sec('faq', esc(tr(lang, 's_faq')), faq) + sec('sources', esc(tr(lang, 's_sources')), sources) +
     '<p class="ki kfoot">' + tr(lang, 'foot', { d: esc(fd(checked, lang)), link: own('/data-policy/', tr(lang, 'm_data_policy')) }) + '</p></div>';
   const ld = { '@context': 'https://schema.org', '@graph': [
-    { '@type': 'ProfilePage', '@id': canon + '#page', url: canon, name: title.replace(/ \| Kolaboro$/, ''), description: desc, inLanguage: lang, dateModified: checked, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' }, publisher: { '@id': ORIGIN + '/#org' }, mainEntity: { '@id': dUrl('en', dv.s) + '#org' }, breadcrumb: { '@id': canon + '#bc' } },
+    { '@type': 'ProfilePage', '@id': canon + '#page', url: canon, name: title.replace(/ \| Kolaboro$/, ''), description: desc, inLanguage: lang, dateModified: checked, speakable: { '@type': 'SpeakableSpecification', cssSelector: ['#answer .kans-t'] }, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' }, publisher: { '@id': ORIGIN + '/#org' }, mainEntity: { '@id': dUrl('en', dv.s) + '#org' }, breadcrumb: { '@id': canon + '#bc' } },
     { '@type': 'Organization', '@id': ORIGIN + '/#org', name: 'Kolaboro', url: ORIGIN + '/', logo: ORIGIN + '/k/favicon.svg' },
     Object.assign({ '@type': 'Organization', '@id': dUrl('en', dv.s) + '#org', name, url: dUrl('en', dv.s) }, gl.matches[0] ? { leiCode: gl.matches[0].lei, legalName: gl.matches[0].legal } : {}, { subjectOf: L.slice(0, 50).map(x => ({ '@type': 'WebPage', url: pUrl(lang, x.s), name: x.n })) }),
     { '@type': 'BreadcrumbList', '@id': canon + '#bc', itemListElement: crumbs.map(([l, u], i) => ({ '@type': 'ListItem', position: i + 1, name: l, item: u })) },
@@ -443,6 +499,7 @@ const D12CSS = '<style id="kd12b-css">' +
   '.kwrap>.ktoc a{min-height:36px;border:0;border-radius:8px;padding:0 12px;background:none;border-inline-start:2px solid var(--line);border-radius:0;white-space:normal;line-height:1.25;padding-block:6px}.kwrap>.ktoc a:hover{color:var(--ink);border-inline-start-color:var(--ink)}.kwrap>.ktoc a[aria-current]{background:none;color:var(--ink);font-weight:700;border-inline-start-color:var(--k-sea,#155C75)}.kwrap:has(>.ktoc)>:not(.ktoc){grid-column:2}}' +
   '.ks h2 small{font-size:.5em;font-weight:500;color:var(--muted);margin-inline-start:8px;font-variant-numeric:tabular-nums;letter-spacing:0}[data-kx-lists] .lk{list-style:none;padding:0;column-gap:40px}[data-kx-lists] .lk li{margin:0;padding:7px 0;break-inside:avoid;border-bottom:1px solid var(--line)}[data-kx-lists] .lk small{display:block;font-size:.84rem;margin-top:1px}[data-kx-lists] .ks{padding-top:36px}' +
   '.kmkt summary{list-style:none;display:flex;align-items:center;gap:8px}.kmkt summary::-webkit-details-marker{display:none}.kmkt summary::after{content:"";width:7px;height:7px;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg) translateY(-2px)}.kmkt[open] summary::after{transform:rotate(-135deg) translateY(-2px)}.kmkt a{border-radius:var(--k-r-md,10px)}' +
+  '.kans{margin:22px 0 0;padding:16px 20px;border:1px solid var(--line);border-inline-start:4px solid var(--k-sea,#155C75);border-radius:var(--k-r-lg,14px);background:var(--card,var(--paper));max-width:80ch}.kans p{margin:0}.kans-t{font-size:1.04rem;line-height:1.55;text-wrap:pretty}.kans-l{display:block;font-size:.82rem;font-weight:700;color:var(--muted);margin-bottom:4px}.kans-u{margin-top:10px!important;font-size:.86rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:2px 6px}.kans-u a{color:var(--ink-2);font-weight:600}' +
   '@media(prefers-reduced-motion:reduce){a.src{transition:none}}</style>';
 
 function head(pg, lang) {
@@ -545,9 +602,10 @@ async function urls(env) {
   const out = [];
   const add = (type, f, base, lm, en_) => { for (const l of LANGS) out.push(Object.assign({ url: f(l), lang: l, type, lastmod: lm }, base, l === 'en' ? Object.assign({ alternates: alt(f) }, en_ || {}) : {})); };
   add('index', l => ORIGIN + pre(l) + '/projects/', {}, iso(ix.updated));
-  for (const x of ix.P) add('project', l => pUrl(l, x.s), { id: x.id, reviewed: reviewed(ix.caseBy.get(x.id)) }, lastmod(ix, x), { added: x.ad || null, listing_page: okHttp(x.url) && isListing(x.url), name: x.n, developer: x.dv || null, developer_url: x.dvs && ix.devs.has(x.dvs) ? dUrl('en', x.dvs) : null, market: x.mk, country: x.co });
+  let sat = null; try { sat = await satData(env); } catch (e) { sat = null; }
+  for (const x of ix.P) add('project', l => pUrl(l, x.s), { id: x.id, reviewed: reviewed(ix.caseBy.get(x.id)) }, lastmod(ix, x), { images: projImages(x, 'en', pUrl('en', x.s), sat).map(i => ({ loc: i.contentUrl, title: i.name, caption: i.caption })), added: x.ad || null, listing_page: okHttp(x.url) && isListing(x.url), name: x.n, developer: x.dv || null, developer_url: x.dvs && ix.devs.has(x.dvs) ? dUrl('en', x.dvs) : null, market: x.mk, country: x.co });
   for (const d of ix.devs.values()) { const lm = d.ids.map(i => lastmod(ix, ix.byId.get(i))).sort(); add('developer', l => dUrl(l, d.s), {}, lm[lm.length - 1], { name: d.n, projects: d.ids }); }
-  return jsonOut({ version: 'seo-urls-1', updated: ix.updated, languages: LANGS, note: 'One entry per URL and language. The English entry carries the hreflang alternates and the names; the others share its path under /<lang>/. reviewed=false: not yet reviewed by Kolaboro, show facts only, no score, checks or label.',
+  return jsonOut({ version: 'seo-urls-1', updated: ix.updated, languages: LANGS, note: 'One entry per URL and language. English project entries carry images (share card and, where we have one, the monthly satellite strip) with captions for an image sitemap. The English entry carries the hreflang alternates and the names; the others share its path under /<lang>/. reviewed=false: not yet reviewed by Kolaboro, show facts only, no score, checks or label.',
     counts: { projects: ix.P.length, developers: ix.devs.size, languages: LANGS.length, urls: out.length }, redirects: [{ from: '/p/{id}/', to: '/projects/{slug}/', status: 301 }], urls: out });
 }
 

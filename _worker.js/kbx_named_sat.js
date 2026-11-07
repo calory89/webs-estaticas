@@ -60,7 +60,7 @@ const S = {
     clear: 'В {c} из {n} месяцев обзор был ясным (не менее 90% круга без облаков).', xl: 'Индекс изменений за последние 3 ясных месяца ({a} – {b}): {x} п.',
     vis: 'С {base} участок изменился сильнее, чем окрестности.', novis: 'С {base} на участке нет изменений сверх обычных колебаний.', bl: 'Застроенная или открытая земля в круге: {b1}% в первые ясные месяцы, {b2}% в последние. Вокруг: {r1}% и {r2}%.',
     few: 'Слишком мало ясных месяцев для ряда: в {c} из {n} месяцев обзор был ясным. Облака слишком часто закрывают участок.', none: 'Для этого места не найдено пригодных снимков Sentinel-2.',
-    strip: 'Ежемесячные снимки в естественных цветах, 640 м в поперечнике. Белый круг — измеряемая зона. Самый новый справа.', cloudy: 'Нет ясного обзора', chart: 'Индекс изменений и сроки застройщика',
+    strip: 'Ежемесячные снимки в естественных цветах, 640 м в поперечнике. Белый круг: измеряемая зона. Самый новый справа.', cloudy: 'Нет ясного обзора', chart: 'Индекс изменений и сроки застройщика',
     lx: 'Индекс изменений: доля застроенной или открытой земли в круге минус та же доля вокруг, в пунктах, относительно первых 3 ясных месяцев', lb: 'Обычные колебания от месяца к месяцу (15 пунктов в обе стороны)', lm: 'Срок, обещанный застройщиком (заливка: квартал или год)', lo: 'Ранее обещанный срок',
     lim: 'Пиксели имеют размер 10 м. Видны расчищенная земля, плиты, крыши и краны, но не этажи и не интерьеры. Башня на участке, который уже был забетонирован, меняет картину мало, а готовое здание должно выглядеть неизменным. Сезон, низкое зимнее солнце, дымка и влажная почва тоже влияют на индекс. Используйте его, чтобы запросить у застройщика датированные фото стройки, а не как доказательство.',
     tbl: 'Значения по месяцам', th: ["Месяц", "Дата снимка", "Ясно", "Застроено или открыто, круг", "Окрестности", "Индекс изменений"], method: 'метод и данные', later: 'после конца графика', upd: 'обновлено {d}', aria: 'График ежемесячного индекса изменений с {a} по {b} со сроками застройщика.' },
@@ -171,7 +171,7 @@ function chart(rec, ix, ms, lang, fd, trk, W) {
 }
 
 // rec: one project from construction-progress.json; meta: the whole file. trk(kind) = translated milestone kind, fd(date) = display date.
-export function satSection(meta, id, prom, fx, lang, fd, trk) {
+export function satSection(meta, id, prom, fx, lang, fd, trk, tl) {   // tl(date): the tile's accessible name with the project name (s15a)
   const rec = meta && meta.projects && meta.projects[id];
   if (!rec || !rec.n || !rec.m0) return '';
   const m0 = mi(rec.m0), n = rec.n, months = Array.from({ length: n }, (_, i) => ym(m0 + i));
@@ -192,7 +192,7 @@ export function satSection(meta, id, prom, fx, lang, fd, trk) {
     const li = [];
     for (let i = n - 1; i >= 0; i--) {
       const f = rec.f[i], lab = esc(fd(months[i]));
-      li.push(f >= 0 ? '<li><span class="ksat-tile" role="img" aria-label="Sentinel-2, ' + esc(fd(rec.dt[i] || months[i])) + '" style="background-image:url(' + img + ');background-size:calc(var(--ksat-t) * ' + rec.frames + ') var(--ksat-t);background-position:calc(var(--ksat-t) * -' + f + ') 0"></span><small>' + lab + '</small></li>'
+      li.push(f >= 0 ? '<li><span class="ksat-tile" role="img" aria-label="' + esc(tl ? tl(fd(rec.dt[i] || months[i])) : 'Sentinel-2, ' + fd(rec.dt[i] || months[i])) + '" style="background-image:url(' + img + ');background-size:calc(var(--ksat-t) * ' + rec.frames + ') var(--ksat-t);background-position:calc(var(--ksat-t) * -' + f + ') 0"></span><small>' + lab + '</small></li>'
         : '<li><span class="ksat-tile is-none" role="img" aria-label="' + lab + ': ' + esc(t(lang, 'cloudy')) + '"></span><small>' + lab + '</small></li>');
     }
     strip = '<figure dir="ltr"><ol class="ksat-strip">' + li.join('') + '</ol><figcaption>' + esc(t(lang, 'strip')) + '</figcaption></figure>';
