@@ -1172,7 +1172,15 @@ GUIDES = [
              ["Eksplorasi budaya megalitik di Pulau Sumba, Times Indonesia, 14 Oct 2023", "https://timesindonesia.co.id/peristiwa-daerah/472461/eksplorasi-budaya-megalitik-di-pulau-sumba-kampung-adat-tertua-dan-penuh-sejarah"],
              ["Ikat hunting in Sumba, What's Next Naomi (travel blog), May 2016", "https://whatsnextnaomi.com/2016/05/ikat-hunting-in-sumba.html"],
              ["Melolo, Travelfish", "https://www.travelfish.org/location/indonesia/east_nusa_tenggara/sumba/melolo"]],
- "image_candidate": None
+ "image_candidate": {
+  "file_page": "https://commons.wikimedia.org/wiki/File:Traditional_Sumba_House_in_Rende_Village.jpg",
+  "direct_url": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Traditional_Sumba_House_in_Rende_Village.jpg",
+  "credit": "Irfantraveller",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "caption": {"en": "A traditional high-roofed Sumba house in Rende village, East Sumba, beside old stone graves.",
+              "es": "Una casa tradicional sumbanesa de tejado alto en el pueblo de Rende, Sumba Oriental, junto a antiguas tumbas de piedra.",
+              "id": "Rumah adat Sumba beratap menjulang di Kampung Rende, Sumba Timur, di samping kubur batu tua."}}
 },
 
 # ---------------------------------------------------------------------------
@@ -1655,7 +1663,15 @@ GUIDES = [
              ["Air Terjun Waimarang, Lonely Planet", "https://www.lonelyplanet.com/points-of-interest/air-terjun-waimarang/1609256"],
              ["The Southeast of Sumba, Sumba Information", "https://sumba-information.com/where-to-go3"],
              ["Air Terjun Waimarang, OpenStreetMap / Nominatim", "https://nominatim.openstreetmap.org/ui/search.html?q=Air+Terjun+Waimarang"]],
- "image_candidate": None
+ "image_candidate": {
+  "file_page": "https://commons.wikimedia.org/wiki/File:Surga_tersembunyi_di_Waimarang,_Sumba.jpg",
+  "direct_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Surga_tersembunyi_di_Waimarang%2C_Sumba.jpg",
+  "credit": "Jordan siva",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+  "caption": {"en": "The turquoise pool of Waimarang waterfall, inland from Melolo in East Sumba.",
+              "es": "La poza turquesa de la cascada de Waimarang, tierra adentro desde Melolo, en Sumba Oriental.",
+              "id": "Kolam toska Air Terjun Waimarang di pedalaman Melolo, Sumba Timur."}}
 },
 # ---------------------------------------------------------------------------
 # 11) LONDA LIMA BEACH
