@@ -80,7 +80,7 @@ const isEscrow = c => (c.checks || {}).escrow === true;
 const fval = (lang, f, v, c) => {   // a value from promise-drift, in words
   if (f === 'price_from' && c && c.pct != null) return v === c.to ? (c.pct > 0 ? '+' : '') + num(c.pct, lang) + '%' : t(lang, 'f_price_from');
   if (v === true) return nt(lang, 'yes'); if (v === false) return nt(lang, 'no'); if (v == null) return t(lang, 'notstated');
-  return typeof v === 'number' ? num(v, lang) : '<span lang="en">' + esc(v) + '</span>';
+  return typeof v === 'number' ? (f === 'completion_year' ? String(v) : num(v, lang)) : '<span lang="en">' + esc(v) + '</span>';
 };
 
 // ------------------------------------------------------------------------------------------------ embeds (standalone HTML, no scripts)
