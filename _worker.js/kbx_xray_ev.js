@@ -256,9 +256,10 @@ async function evLocation(S, env, ctx) {
   }
   if (market && B.mp[market]) mpt = B.mp[market];
   const coi = isCoi(market);
-  S.market = coi ? null : market; S.coi = coi; S.country = country || (market && B.mToC.get(market)) || null; S.pin = pin; S.place = geo ? geo.display_name : null;
+  if (coi) { const nm = it => !/sumba/i.test(String(it.value || it.text || '') + ' ' + String(it.quote || '')); c.items = c.items.filter(nm); c.data.candidates = c.data.candidates.filter(nm); }
+  S.market = coi ? null : market; S.coi = coi; S.country = country || (market && B.mToC.get(market)) || null; S.pin = pin; S.place = geo && !coi ? geo.display_name : null;
   c.data.pin = pin; c.data.country = S.country; c.data.market = coi ? null : market;
-  if (geo) c.items.push({ label: pin && pin.how === 'geocode' ? (pin.from === 'our_record' ? 'Area in our record, placed by OpenStreetMap' : 'Pin from the address (OpenStreetMap)') : 'Place at these coordinates (OpenStreetMap)', value: geo.display_name, quote: null, url: 'https://www.openstreetmap.org/' + (geo.osm_type || 'node') + '/' + geo.osm_id, kind: 'link' });
+  if (geo && !coi) c.items.push({ label: pin && pin.how === 'geocode' ? (pin.from === 'our_record' ? 'Area in our record, placed by OpenStreetMap' : 'Pin from the address (OpenStreetMap)') : 'Place at these coordinates (OpenStreetMap)', value: geo.display_name, quote: null, url: 'https://www.openstreetmap.org/' + (geo.osm_type || 'node') + '/' + geo.osm_id, kind: 'link' });
   if (pin) {
     c.items.push({ label: 'Pin', value: pin.lat.toFixed(5) + ', ' + pin.lng.toFixed(5) + (pin.precision_m ? ' (about ' + fmt(pin.precision_m) + ' m accuracy: ' + (geo.addresstype || geo.type || 'place') + ' level)' : pin.how === 'geocode' ? (pin.from === 'our_record' ? ' (area level, not the plot)' : '') : ' (as published on the page)'), url: 'https://www.openstreetmap.org/?mlat=' + pin.lat.toFixed(5) + '&mlon=' + pin.lng.toFixed(5) + '#map=16/' + pin.lat.toFixed(5) + '/' + pin.lng.toFixed(5), kind: 'link' });
     if (pin.from === 'our_record') c.items.push({ label: 'Note', value: 'The pin is the area in our record of this project (' + R.ar + '), not a plot.', kind: 'warn' });
@@ -798,12 +799,13 @@ export async function handle(req, u, env, ctx) {
   if (!target) return J({ about: 'Project X-ray evidence cards (items 11 to 18). GET /api/xev?url=<project page>[&only=' + EV_IDS.join(',') + ']', cards: EV_IDS.map(id => ({ id, n: NUM[id], title: TITLES[id] })), contract: 'Card fields: id, n, title, status (found|not_found|not_published|not_applicable|error), summary, items[], img, limits[], paid, sources[], proof{ms,bytes,edge,contacted}, data{}' });
   if (!publicUrl(target)) return J({ error: 'url must be a public http(s) URL' }, 400);
   const only = (u.searchParams.get('only') || '').split(',').filter(x => EV_IDS.includes(x));
-  const ck = new Request(ORIGIN + '/__xev/run/' + (await sha256(target + '|' + only.join(','))).slice(0, 40));
+  const pid = u.searchParams.get('project_id') || '';
+  const ck = new Request(ORIGIN + '/__xev/run/' + (await sha256([target, only.join(','), pid, (env && env.CF_PAGES_COMMIT_SHA) || ''].join('|'))).slice(0, 40));
   const hit = await caches.default.match(ck); if (hit) { const h = new Headers(hit.headers); h.set('x-xev-cache', 'hit'); return new Response(hit.body, { headers: h }); }
   if (Date.now() - RL.t > 60000) RL = { t: Date.now(), n: 0 }; if (++RL.n > 20) return J({ error: 'busy, try again in a minute' }, 429, { 'retry-after': '60' });
   const t0 = Date.now(); let page;
   try { page = await fetchPage(target); } catch (e) { page = { url: target, final_url: target, html: '', error: String(e.message || e) }; }
-  const cards = await evRun(page, { project_id: u.searchParams.get('project_id') || undefined }, env, ctx, null, { only });
+  const cards = await evRun(page, { project_id: pid || undefined }, env, ctx, null, { only });
   const body = { url: target, final_url: page.final_url, page: { status: page.status || null, bytes: page.bytes || 0, sha256: page.sha256 || null, fetched: page.fetched || null, error: page.error || null }, ms: Date.now() - t0, cards };
   const res = J(body, 200, { 'cache-control': 'public, max-age=0' });
   ctx.waitUntil(caches.default.put(ck, new Response(JSON.stringify(body, null, 1), { headers: { 'content-type': 'application/json; charset=utf-8', 'access-control-allow-origin': '*', 'cache-control': 'public, max-age=3600' } })).catch(() => {}));
