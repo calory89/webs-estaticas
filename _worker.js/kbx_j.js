@@ -41,6 +41,8 @@ export async function handle(req, u, env, ctx) {
   if (req.method === 'OPTIONS') return new Response(null, { status: 204, headers: CORS });
   try {
     if (p === '/api/x/j/match' && req.method === 'GET') return await match(req, u, ctx);
+    if (p === '/api/x/j/xr' && req.method === 'GET') return await xrMatch(req, u, env, ctx);
+    if (p === '/api/x/j/xr/meta') return out((await xrIndex(env)).meta, 200, { 'cache-control': 'public, max-age=600' });
     if (p === '/api/x/j/match/meta') return out({ built: MAP.built, projects: MAP.projects, by_address: MAP.url_projects, by_name: MAP.name_projects, keys: MAP.url_keys + MAP.name_keys, prefix_hex_chars: 4 }, 200, { 'cache-control': 'public, max-age=600' });
     if (p === '/api/x/j/tg' && req.method === 'POST') return await tgHook(req, env, ctx);
     if (p === '/api/x/j/tg/status') return await tgStatus(env);
@@ -51,7 +53,7 @@ export async function handle(req, u, env, ctx) {
     const m = p.match(/^\/api\/x\/j\/push\/(watch|unwatch|mine|test)$/);
     if (m && req.method === 'POST') return await pushUser(m[1], req, env, ctx);
   } catch (e) { return out({ error: 'server', detail: String(e && e.message || e).slice(0, 160) }, 500); }
-  return out({ error: 'not_found', see: ['/api/x/j/match', '/api/x/j/tg/status', '/api/x/j/push/key', '/api/x/j/push/status', '/api/x/j/push/selftest'] }, 404);
+  return out({ error: 'not_found', see: ['/api/x/j/xr', '/api/x/j/xr/meta', '/api/x/j/match', '/api/x/j/tg/status', '/api/x/j/push/key', '/api/x/j/push/status', '/api/x/j/push/selftest'] }, 404);
 }
 
 // =====================================================================================================================
@@ -82,6 +84,94 @@ async function match(req, u, ctx) {
   }
   return out({ v: 1, built: MAP.built, keys: MAP.url_keys + MAP.name_keys, hits: hits.filter(x => projects[x.id]), projects },
     200, { 'cache-control': 'public, max-age=3600' });
+}
+
+// =====================================================================================================================
+// 9b. Kolaboro X-ray extension 2.x (f14a): the same k-anonymity range query, now against the NAMED records (kbx_named.js data),
+//     so the panel can say which project or developer this is and link its named page.
+//   GET /api/x/j/xr?p=ab12,cd34   up to 500 prefixes -> { v: 2, hits: [{h, k, r}], refs: {r: record} }
+//   GET /api/x/j/xr/meta          real key counts by kind
+// Keys (SHA-256 hex, first 16 chars, computed on the device by the extension the same way):
+//   u|<host+path>   exact page: the project page we track, or a portal page about exactly one project (our sources + kbx_j_map)
+//   d|<domain>      registrable domain of a developer's own site (portals, social sites and any domain used by 3+ developers excluded)
+//   n|<name>        project name (2+ words, 8+ characters), normalised like the extension's windows()
+//   v|<name>        developer name (6+ characters)
+// Records: p (project: name, developer, market, stage, promised handover, last checked; score only when reviewed by Kolaboro),
+// v (developer: name, number of projects), g (a website that lists several tracked projects). Sumba never appears (data() drops it).
+// =====================================================================================================================
+const XR = { ix: null, b: null, refs: null, meta: null };
+const xNorm = t => String(t || '').normalize('NFKD').replace(/[^\x00-\x7f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+const xH16 = async s => { const b = await crypto.subtle.digest('SHA-256', te.encode(s)); return [...new Uint8Array(b)].slice(0, 8).map(x => x.toString(16).padStart(2, '0')).join(''); };
+const NOT_DEV = /(^|\.)(instagram|facebook|fb|youtube|youtu|linkedin|linktr|twitter|x|tiktok|wa|whatsapp|google|goo|bit|medium|wikipedia|blogspot|wordpress|wixsite|squarespace|webflow|notion|github|archive|issuu|scribd|dropbox|t|telegram|pinterest|yelp|tripadvisor|booking|airbnb|trustpilot|reddit)\.[a-z.]+$/;
+const DEV_SUFFIX = /\b(properties|property|developments?|developers?|development company|real estate|realty|group|holdings?|pjsc|llc|l l c|ltd|limited|s a|s l|sa|sl|inc|co|company|plc|bhd|sdn|pt|tbk|jsc|q p s c|w l l)\b/g;
+async function xrIndex(env) {
+  const NM = await import('./kbx_named.js'), ix = await NM.data(env);
+  if (XR.ix === ix) return XR;
+  const { regDomain } = await import('./kbx_xray.js');
+  const host = u => { try { return new URL(u).hostname.toLowerCase().replace(/^www\./, ''); } catch (e) { return ''; } };
+  const refs = {}, keys = new Map(), add = (k, s, r) => { const kk = k + '|' + s; if (!keys.has(kk)) keys.set(kk, new Set()); keys.get(kk).add(r); };
+  const devCountry = new Map();
+  for (const x of ix.P) {
+    const c = ix.caseBy.get(x.id) || {}, rv = NM.reviewed(c), h = NM.handoverOf(ix, x), dv = x.dvs && ix.devs.has(x.dvs) ? x.dvs : null;
+    refs['p:' + x.s] = { t: 'p', s: x.s, n: x.n, dv: x.dv || null, dvs: dv, mk: x.mk || null, co: x.co || null, ar: x.ar || null, st: c.stage || x.st || null,
+      ho: h ? String(h.d) : null, ov: c.overdue || null, ck: c.checked || null, rv, sc: rv ? c.score : null, mx: rv ? c.max : null };
+    if (dv) { if (!devCountry.has(dv)) devCountry.set(dv, new Set()); if (x.co) devCountry.get(dv).add(x.co); }
+    const names = new Set(), full = xNorm(x.n);
+    names.add(full); names.add(xNorm(String(x.n).replace(/\([^)]*\)/g, ' '))); names.add(xNorm(String(x.n).replace(/\s+by\s+.+$/i, '')));
+    names.forEach(n => { if (n.length >= 8 && n.split(' ').length >= 2) add('n', n, 'p:' + x.s); });
+  }
+  for (const [s, d] of ix.devs) {
+    refs['v:' + s] = { t: 'v', s, n: d.n, np: d.ids.length, co: [...(devCountry.get(s) || [])].slice(0, 6) };
+    const full = xNorm(d.n), short = full.replace(DEV_SUFFIX, ' ').replace(/\s+/g, ' ').trim();
+    if (full.length >= 6) add('v', full, 'v:' + s);
+    if (short && short !== full && short.length >= 7) add('v', short, 'v:' + s);
+  }
+  // exact pages: the tracked page itself, plus portal pages in our sources that are about one project only
+  const pageOf = new Map();
+  const page = (u, r) => { if (!NM.okHttp(u) || /[?#]/.test(u)) return; const k = urlKey(u); if (!k) return; if (!pageOf.has(k)) pageOf.set(k, new Set()); pageOf.get(k).add(r); };
+  for (const x of ix.P) { page(x.url, 'p:' + x.s); (x.src || []).forEach(u => { if (NM.isListing(u)) page(u, 'p:' + x.s); }); }
+  pageOf.forEach((rs, k) => { if (rs.size === 1) add('u', k, [...rs][0]); });
+  // developer websites by registrable domain
+  const dom = new Map(), dget = d => { if (!dom.has(d)) dom.set(d, { ps: new Set(), devs: new Set(), own: new Set() }); return dom.get(d); };
+  for (const x of ix.P) {
+    const dv = x.dvs && ix.devs.has(x.dvs) ? x.dvs : null;
+    for (const [u, isDev] of [[x.url, false], [x.du, true]]) {
+      const h = NM.okHttp(u) ? host(u) : ''; if (!h || NM.isListing(u) || NOT_DEV.test(h)) continue;
+      const g = dget(regDomain(h)); if (!isDev) g.ps.add(x.s); if (dv) { g.devs.add(dv); if (isDev) g.own.add(dv); }
+    }
+  }
+  let gN = 0;
+  for (const [d, g] of dom) {
+    if (g.devs.size >= 3) continue;
+    const dvs = g.own.size === 1 ? [...g.own][0] : (g.devs.size === 1 ? [...g.devs][0] : null);
+    if (g.ps.size === 1 && (!dvs || g.devs.size <= 1)) { add('d', d, 'p:' + [...g.ps][0]); if (dvs) add('d', d, 'v:' + dvs); continue; }
+    if (g.ps.size === 0) { if (dvs) add('d', d, 'v:' + dvs); continue; }
+    const r = 'g:' + (++gN); refs[r] = { t: 'g', np: g.ps.size, ps: [...g.ps].slice(0, 6).map(s => 'p:' + s), dvs };
+    add('d', d, r);
+  }
+  // the research agent's older portal-address table (hash only) for the same projects
+  for (const h in MAP.u) { const x = ix.byId.get(MAP.u[h]); if (x) keys.set('#' + h, new Set(['p:' + x.s])); }
+  const b = new Map(), kinds = { u: 0, d: 0, n: 0, v: 0 }, seen = new Set();
+  for (const [kk, rs] of keys) {
+    let h, k;
+    if (kk[0] === '#') { h = kk.slice(1); k = 'u'; } else { k = kk[0]; h = await xH16(kk); }
+    const bk = h.slice(0, 4); if (!b.has(bk)) b.set(bk, []);
+    let fresh = false;
+    rs.forEach(r => { if (seen.has(h + r)) return; seen.add(h + r); fresh = true; b.get(bk).push({ h, k, r }); });
+    if (fresh && !seen.has(h)) { seen.add(h); kinds[k]++; }
+  }
+  XR.ix = ix; XR.b = b; XR.refs = refs;
+  XR.meta = { v: 2, updated: ix.updated, projects: ix.P.length, developers: ix.devs.size, keys: kinds, prefix_hex_chars: 4, hash: 'first 16 hex characters of SHA-256 of "<kind>|<normalised text>"' };
+  return XR;
+}
+async function xrMatch(req, u, env, ctx) {
+  const pre = [...new Set((u.searchParams.get('p') || '').toLowerCase().split(',').filter(x => /^[0-9a-f]{4}$/.test(x)))].slice(0, 500);
+  if (!pre.length) return out({ error: 'prefixes', note: 'p = comma-separated 4-hex-character SHA-256 prefixes, up to 500' }, 400);
+  if (!(await allow(ctx, 'xr/' + ip(req) + '/' + new Date().toISOString().slice(0, 13), 900, 3600))) return out({ error: 'rate' }, 429);
+  const X = await xrIndex(env), hits = [], refs = {};
+  const need = r => { if (refs[r] || !X.refs[r]) return; const o = X.refs[r]; refs[r] = o; if (o.dvs) need('v:' + o.dvs); (o.ps || []).forEach(need); };
+  pre.forEach(b => (X.b.get(b) || []).forEach(x => { hits.push(x); need(x.r); }));
+  return out({ v: 2, updated: X.meta.updated, hits: hits.filter(x => refs[x.r]), refs }, 200, { 'cache-control': 'public, max-age=3600' });
 }
 
 // =====================================================================================================================
