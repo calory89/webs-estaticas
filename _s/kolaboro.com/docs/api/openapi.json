@@ -18501,6 +18501,102 @@
      }
     }
    }
+  },
+  "/api/v1/xray": {
+   "post": {
+    "summary": "Project X-ray: every free check on a project website or name, sealed by a SHA-256 root",
+    "description": "Our database match, what the page says (literal quotes), Internet Archive history, domain RDAP, certificate transparency, hosting network, official registers, fixed-rule statements and evidence cards (location, Sentinel-2, image reuse, price per m2, market base rates, developer record, law, similar projects). No AI unless a partner key sends desk: true. Full description: https://kolaboro.com/api/v1/xray/openapi.json",
+    "tags": [
+     "xray"
+    ],
+    "security": [
+     {},
+     {
+      "apiKey": []
+     }
+    ],
+    "requestBody": {
+     "required": true,
+     "content": {
+      "application/json": {
+       "schema": {
+        "type": "object",
+        "properties": {
+         "url": {
+          "type": "string"
+         },
+         "q": {
+          "type": "string"
+         },
+         "desk": {
+          "type": "boolean"
+         },
+         "lang": {
+          "type": "string",
+          "enum": [
+           "en",
+           "es",
+           "de",
+           "fr",
+           "nl",
+           "ru",
+           "zh",
+           "ar"
+          ]
+         }
+        }
+       },
+       "example": {
+        "url": "https://www.teus-group.com/amani-melasti"
+       }
+      }
+     }
+    },
+    "responses": {
+     "200": {
+      "description": "{version, root, url, meta, cards[], proof, disclaimer}"
+     },
+     "400": {
+      "description": "empty or invalid input"
+     },
+     "401": {
+      "description": "desk without a valid key"
+     },
+     "429": {
+      "description": "hourly limit"
+     }
+    },
+    "externalDocs": {
+     "url": "https://kolaboro.com/api/v1/xray/openapi.json"
+    }
+   }
+  },
+  "/x/{root}.json": {
+   "get": {
+    "summary": "A sealed Project X-ray again (also /x/{root}/ as a page and /x/{root}/vc as a W3C verifiable credential)",
+    "tags": [
+     "xray"
+    ],
+    "parameters": [
+     {
+      "name": "root",
+      "in": "path",
+      "required": true,
+      "schema": {
+       "type": "string",
+       "pattern": "^[0-9a-f]{64}$"
+      }
+     }
+    ],
+    "responses": {
+     "200": {
+      "description": "the sealed result"
+     },
+     "404": {
+      "description": "not stored"
+     }
+    }
+   }
   }
  },
  "components": {
