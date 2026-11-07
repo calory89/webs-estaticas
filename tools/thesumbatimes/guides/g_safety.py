@@ -25,7 +25,6 @@ GUIDES = [
 <ul>
 <li><strong>See a travel clinic 4-6 weeks before you fly</strong> and tell them specifically that you are going to Sumba, not only to Bali. Many travellers are prescribed antimalarial tablets for Sumba even when they do not need them in Bali.</li>
 <li><strong>Avoid bites from dusk to dawn</strong>, when the malaria mosquito (<em>Anopheles</em>) feeds. Use a repellent with DEET (around 50%) or picaridin, wear long sleeves and trousers in the evening, and sleep under a mosquito net or in a screened, air-conditioned room.</li>
-<li><strong>Bring repellent from home.</strong> You can buy local brands in Waingapu and Tambolaka minimarkets, but strong DEET products are harder to find.</li>
 <li><strong>Fever is an emergency.</strong> Any fever during your trip or in the months after you return needs a malaria blood test the same day. Tell the doctor you were in Sumba.</li>
 </ul>
 <p>Day-biting mosquitoes also spread dengue, which Australia's Smartraveller describes as present year-round in Indonesia. There is no simple tablet for dengue, so the same repellent habits, used in daytime too, are your best protection.</p>
@@ -33,14 +32,13 @@ GUIDES = [
 <h2>Water, food, rabies and the sun</h2>
 <p>Do not drink tap water anywhere in Sumba. Use sealed bottled water or refill from large filtered gallons, which most guesthouses provide; a reusable bottle with a filter is a good idea and cuts plastic waste on an island with limited recycling. Smartraveller warns that waterborne and foodborne diseases are widespread in Indonesia. Eat food that is freshly cooked and hot, peel your fruit, and carry oral rehydration salts.</p>
 <p><strong>Rabies</strong> is present throughout Indonesia, and Smartraveller is blunt: it is 100% fatal once symptoms start. Sumba has many village dogs. Do not pet dogs, cats or monkeys, and if you are bitten or scratched, wash the wound with soap and running water for 15 minutes and get medical care immediately. Post-exposure vaccines may not be available on Sumba and you may need to fly to Bali or further, so ask your travel clinic about pre-exposure rabies vaccination, especially for long or rural trips.</p>
-<p>At around 10 degrees south of the equator, the sun is fierce, particularly on open savanna with no shade. Carry a hat, high-factor sunscreen and at least 2 litres of water per person on hikes to hills such as Wairinding or to waterfalls.</p>
+<p>At around 10 degrees south of the equator, the sun is fierce, particularly on open savanna with no shade. Carry a hat, strong sunscreen and plenty of water on hikes to hills such as Wairinding.</p>
 
 <h2>Hospitals and medical care: why insurance with evacuation is essential</h2>
-<p>Sumba has public regional hospitals (RSUD) in the main towns, including <strong>RSUD Umbu Rara Meha in Waingapu</strong> (Jalan Adam Malik 54, East Sumba) and <strong>RSUD Waikabubak</strong> (Jalan Adhyaksa km 3, West Sumba). In Southwest Sumba, the area around Tambolaka airport, the regency hospital <strong>RSUD Reda Bolo</strong> was still classed as a basic Class D hospital in 2025, with an upgrade under way. There are also community health centres (puskesmas) in every district and small private clinics and pharmacies (apotek) in the towns.</p>
+<p>Sumba has public regional hospitals (RSUD) in the main towns, including <strong>RSUD Umbu Rara Meha in Waingapu</strong> and <strong>RSUD Waikabubak</strong>. In Southwest Sumba, the area around Tambolaka airport, the regency hospital <strong>RSUD Reda Bolo</strong> was still classed as a basic Class D hospital in 2025, with an upgrade under way. There are also community health centres (puskesmas) in every district and small private clinics and pharmacies (apotek) in the towns.</p>
 <p>These facilities can treat common problems, test for malaria and stabilise an injury, but specialist care is limited. Smartraveller notes that many regional hospitals in Indonesia offer only basic facilities and that tourists must pay for all medical care, including evacuation. For anything serious (a head injury from a motorbike crash, a complicated fracture, a severe infection) the realistic option is a medical flight to Bali, which can cost many thousands of US dollars.</p>
 <ul>
 <li>Buy <strong>travel insurance that explicitly covers emergency medical evacuation</strong>, and check whether it covers riding a motorbike, surfing and diving if you plan to do them.</li>
-<li>Save your insurer's 24-hour assistance number in your phone and on paper.</li>
 <li>Bring a small first-aid kit: plasters, antiseptic, rehydration salts, antihistamines, a basic painkiller, any personal prescriptions in their original packaging.</li>
 </ul>
 
@@ -60,11 +58,10 @@ GUIDES = [
 <li><strong>Avoid driving at night.</strong> There is little street lighting, animals sleep on warm tarmac and potholes are invisible.</li>
 <li>The most comfortable and safest option for most visitors is a car with a local driver, who also knows village etiquette and the way to places without signs. Our guide to <a href="/en/getting-here/getting-around-sumba/">getting around Sumba</a> compares options.</li>
 <li>If you ride a motorbike, wear a good helmet and carry an International Driving Permit that covers motorcycles. The UK Foreign Office warns that foreigners involved in even minor accidents may be vulnerable to extortion, and many travel insurance policies refuse claims from unlicensed riders.</li>
-<li>Fill up whenever you can. Fuel stations are found in towns; in villages fuel is sold in bottles at small stalls.</li>
 </ul>
 
 <h2>Crime, scams and personal safety</h2>
-<p>Sumba is not a pickpocket hotspot like crowded Kuta, but ordinary precautions still apply. Lock your room, do not leave phones or cameras on a beach while you swim, and keep valuables out of sight in a parked car. At some popular viewpoints and beaches you may be asked for informal parking or "entrance" fees by local youths; these are usually small (often IDR 5,000-20,000 per person or vehicle, around 0.30-1.20 USD) and it is easier to agree a price calmly before parking.</p>
+<p>Sumba is not a pickpocket hotspot like crowded Kuta, but ordinary precautions still apply. Lock your room and do not leave phones or cameras on a beach while you swim. At some popular viewpoints and beaches you may be asked for informal parking or "entrance" fees by local youths; these are usually small (often IDR 5,000-20,000 per person or vehicle, around 0.30-1.20 USD) and it is easier to agree a price calmly before parking.</p>
 <p>You will notice many men in West and Southwest Sumba carrying a <strong>parang</strong>, a long knife worn with traditional dress. It is a cultural item and a farming tool, not a threat; a local guide can explain its meaning. Watch your drink in bars and avoid unlabelled spirits: the UK Foreign Office warns that methanol poisoning from counterfeit alcohol has caused deaths in Indonesia.</p>
 
 <h2>Cultural sensitivity is part of staying safe</h2>
@@ -84,15 +81,13 @@ GUIDES = [
 <h2>Visa on arrival and e-VOA for Indonesia (2026)</h2>
 <p>Most international visitors fly into Bali or Jakarta first and clear immigration there, not in Sumba. Citizens of many countries, including the EU, UK, US and Australia, can use Indonesia's <strong>Visa on Arrival (VOA)</strong>, which allows a stay of 30 days and can be extended once for another 30 days (up to 60 days in total). You can buy it at the airport counter or, faster, online in advance as an <strong>e-VOA</strong> on the official Directorate General of Immigration site, evisa.imigrasi.go.id. Beware of look-alike sites that charge extra.</p>
 <p><strong>The price:</strong> the official fee has been IDR 500,000 (around 28-30 USD or 26-28 EUR), and an extension costs another IDR 500,000 according to the immigration office in Yogyakarta. In August 2026 the Director General of Immigration announced a planned increase to IDR 750,000 for an e-VOA bought before departure and IDR 1,000,000 for a VOA bought on arrival. As of October 2026 travel and visa publications reported that no implementation date had been confirmed. Check the official site shortly before you travel, and buy online in advance anyway: it will likely be the cheaper option if the new tiers come in. Overstaying costs IDR 1,000,000 per day.</p>
-<p>Your passport needs at least six months of validity and you should have an onward ticket. From Bali, the flight to Sumba is domestic; see <a href="/en/getting-here/how-to-get-to-sumba-from-bali/">how to get to Sumba from Bali</a>.</p>
+<p>From Bali, the flight to Sumba is domestic; see <a href="/en/getting-here/how-to-get-to-sumba-from-bali/">how to get to Sumba from Bali</a>.</p>
 
 <h2>SIM cards, mobile signal and internet</h2>
 <p><strong>Telkomsel</strong> is the network to have on Sumba. Travellers and local guides consistently report that it has the broadest and most reliable coverage on the island, especially outside the towns; XL works in larger towns but fades quickly in the countryside. Even with Telkomsel, expect no signal in some valleys, on remote beaches and on parts of the south coast.</p>
 <ul>
 <li>Buy and register a tourist SIM or an eSIM <strong>before you arrive</strong>, ideally at Bali airport or online. You may find a Telkomsel outlet (GraPARI) in Waingapu, but do not count on it as your only plan.</li>
-<li>Phones bought abroad and used with a local SIM for longer stays may need IMEI registration; short-term tourist SIMs bought at the airport normally handle this.</li>
 <li>Download offline maps (Google Maps or Maps.me) and your booking details before leaving town.</li>
-<li>Guesthouse Wi-Fi is often slow and power cuts happen, so a power bank is useful.</li>
 </ul>
 
 <h2>Cash, ATMs and cards</h2>
@@ -104,17 +99,6 @@ GUIDES = [
 </ul>
 <p>For typical daily budgets see our guide to <a href="/en/getting-here/sumba-travel-costs/">Sumba travel costs</a>, and for the dry and rainy months (malaria transmission tends to rise with rain) see the <a href="/en/things-to-do/best-time-to-visit-sumba/">best time to visit Sumba</a>.</p>
 
-<h2>Quick safety checklist for Sumba</h2>
-<ol>
-<li>Travel clinic visit and antimalarial advice for East Nusa Tenggara.</li>
-<li>Strong repellent, long sleeves, a light mosquito net if your room has none.</li>
-<li>Travel insurance with medical evacuation, covering any activities you plan.</li>
-<li>e-VOA bought on the official site before departure.</li>
-<li>Telkomsel SIM or eSIM, offline maps, power bank.</li>
-<li>Enough cash in small notes before leaving the towns.</li>
-<li>A driver for long distances, no driving after dark.</li>
-<li>Ask locals before swimming, and ask permission before every photo.</li>
-</ol>
 <p>Prepared this way, Sumba is not a risky destination but a deeply rewarding one: an island where strangers greet you on the road and the biggest danger is wanting to stay longer than planned.</p>
 """
 },
@@ -133,7 +117,6 @@ GUIDES = [
 <ul>
 <li><strong>Acude a una consulta de medicina del viajero 4-6 semanas antes</strong> y di claramente que vas a Sumba, no solo a Bali. A muchos viajeros se les recetan antipalúdicos para Sumba aunque no los necesiten en Bali.</li>
 <li><strong>Evita las picaduras del anochecer al amanecer</strong>, cuando pica el mosquito de la malaria (<em>Anopheles</em>). Usa repelente con DEET (en torno al 50%) o icaridina, ropa de manga larga y pantalón largo por la tarde, y duerme bajo mosquitera o en una habitación con mosquiteras y aire acondicionado.</li>
-<li><strong>Lleva el repelente desde casa.</strong> En los minimercados de Waingapu y Tambolaka hay marcas locales, pero los productos con DEET fuerte son difíciles de encontrar.</li>
 <li><strong>La fiebre es una urgencia.</strong> Cualquier fiebre durante el viaje o en los meses posteriores requiere un análisis de malaria ese mismo día. Dile al médico que estuviste en Sumba.</li>
 </ul>
 <p>Los mosquitos que pican de día transmiten el dengue, que según el servicio australiano Smartraveller está presente todo el año en Indonesia. No hay una pastilla sencilla contra el dengue, así que los mismos hábitos con el repelente, también de día, son tu mejor protección.</p>
@@ -141,14 +124,13 @@ GUIDES = [
 <h2>Agua, comida, rabia y sol</h2>
 <p>No bebas agua del grifo en ningún lugar de Sumba. Usa agua embotellada precintada o rellena desde los garrafones filtrados que ofrecen casi todos los alojamientos; una botella reutilizable con filtro es buena idea y reduce plástico en una isla con poco reciclaje. Smartraveller advierte de que las enfermedades transmitidas por agua y alimentos están muy extendidas en Indonesia. Come comida recién hecha y caliente, pela la fruta y lleva sales de rehidratación oral.</p>
 <p>La <strong>rabia</strong> está presente en toda Indonesia, y Smartraveller es tajante: es mortal en el 100% de los casos una vez aparecen los síntomas. En Sumba hay muchos perros sueltos en los pueblos. No acaricies perros, gatos ni monos, y si te muerden o arañan, lava la herida con agua corriente y jabón durante 15 minutos y busca atención médica de inmediato. Es posible que en Sumba no haya vacuna posexposición y tengas que volar a Bali o más lejos, así que pregunta en la consulta del viajero por la vacunación preexposición, sobre todo para viajes largos o rurales.</p>
-<p>A unos 10 grados al sur del ecuador, el sol es intenso, sobre todo en la sabana abierta y sin sombra. Lleva sombrero, protector solar alto y al menos 2 litros de agua por persona en las caminatas a colinas como Wairinding o a las cascadas.</p>
+<p>A unos 10 grados al sur del ecuador, el sol es intenso, sobre todo en la sabana abierta y sin sombra. Lleva sombrero, protector solar alto y mucha agua en las caminatas a colinas como Wairinding.</p>
 
 <h2>Hospitales y atención médica: por qué el seguro con evacuación es imprescindible</h2>
-<p>Sumba tiene hospitales públicos regionales (RSUD) en las principales ciudades, como el <strong>RSUD Umbu Rara Meha en Waingapu</strong> (Jalan Adam Malik 54, Sumba Oriental) y el <strong>RSUD Waikabubak</strong> (Jalan Adhyaksa km 3, Sumba Occidental). En Sumba Suroccidental, la zona del aeropuerto de Tambolaka, el hospital de la regencia, <strong>RSUD Reda Bolo</strong>, seguía clasificado en 2025 como hospital básico de clase D, con una ampliación en marcha. También hay centros de salud (puskesmas) en cada distrito y pequeñas clínicas privadas y farmacias (apotek) en las ciudades.</p>
+<p>Sumba tiene hospitales públicos regionales (RSUD) en las principales ciudades, como el <strong>RSUD Umbu Rara Meha en Waingapu</strong> y el <strong>RSUD Waikabubak</strong>. En Sumba Suroccidental, la zona del aeropuerto de Tambolaka, el hospital de la regencia, <strong>RSUD Reda Bolo</strong>, seguía clasificado en 2025 como hospital básico de clase D, con una ampliación en marcha. También hay centros de salud (puskesmas) en cada distrito y pequeñas clínicas privadas y farmacias (apotek) en las ciudades.</p>
 <p>Estos centros pueden tratar problemas comunes, hacer pruebas de malaria y estabilizar a un herido, pero la atención especializada es limitada. Smartraveller señala que muchos hospitales regionales de Indonesia solo ofrecen servicios básicos y que los turistas deben pagar toda la atención médica, incluida la evacuación. Ante algo grave (un traumatismo craneal en moto, una fractura complicada, una infección severa), lo realista es un vuelo medicalizado a Bali, que puede costar muchos miles de dólares.</p>
 <ul>
 <li>Contrata un <strong>seguro de viaje que cubra expresamente la evacuación médica de urgencia</strong>, y comprueba si cubre moto, surf y buceo si piensas practicarlos.</li>
-<li>Guarda el teléfono de asistencia 24 horas de tu aseguradora en el móvil y en papel.</li>
 <li>Lleva un botiquín pequeño: tiritas, antiséptico, sales de rehidratación, antihistamínicos, un analgésico básico y tus medicamentos con receta en su envase original.</li>
 </ul>
 
@@ -168,7 +150,6 @@ GUIDES = [
 <li><strong>Evita conducir de noche.</strong> Casi no hay alumbrado, los animales duermen sobre el asfalto caliente y los baches no se ven.</li>
 <li>La opción más cómoda y segura para la mayoría es un coche con conductor local, que además conoce las normas de cortesía en las aldeas y el camino a lugares sin señalizar. Nuestra guía para <a href="/es/getting-here/getting-around-sumba/">moverse por Sumba</a> compara opciones.</li>
 <li>Si vas en moto, usa un buen casco y lleva un permiso internacional de conducir válido para motos. El Ministerio de Exteriores británico advierte de que los extranjeros implicados incluso en accidentes leves pueden sufrir extorsión, y muchos seguros rechazan reclamaciones de motoristas sin permiso.</li>
-<li>Llena el depósito siempre que puedas. Las gasolineras están en las ciudades; en los pueblos se vende combustible en botellas en pequeños puestos.</li>
 </ul>
 
 <h2>Delincuencia, timos y seguridad personal</h2>
@@ -192,15 +173,13 @@ GUIDES = [
 <h2>Visado a la llegada y e-VOA para Indonesia (2026)</h2>
 <p>La mayoría de los viajeros internacionales entra primero por Bali o Yakarta y pasa allí inmigración, no en Sumba. Los ciudadanos de muchos países, incluidos la UE, España, México, Argentina, Reino Unido y EE. UU., pueden usar el <strong>visado a la llegada (VOA)</strong> de Indonesia, que permite 30 días de estancia y se puede prorrogar una vez otros 30 días (hasta 60 en total). Se compra en el mostrador del aeropuerto o, más rápido, por internet con antelación como <strong>e-VOA</strong> en la web oficial de la Dirección General de Inmigración, evisa.imigrasi.go.id. Cuidado con las webs imitación que cobran de más.</p>
 <p><strong>El precio:</strong> la tasa oficial ha sido de 500.000 IDR (unos 26-28 EUR o 28-30 USD), y la prórroga cuesta otros 500.000 IDR según la oficina de inmigración de Yogyakarta. En agosto de 2026 el director general de Inmigración anunció una subida prevista a 750.000 IDR para el e-VOA comprado antes de salir y a 1.000.000 IDR para el VOA comprado a la llegada. En octubre de 2026, publicaciones de viajes y visados indicaban que aún no se había confirmado la fecha de aplicación. Consulta la web oficial poco antes de viajar y cómpralo por internet de todos modos: probablemente será la opción más barata si entran en vigor las nuevas tarifas. Quedarse más tiempo del permitido cuesta 1.000.000 IDR por día.</p>
-<p>El pasaporte debe tener al menos seis meses de validez y conviene llevar billete de salida. Desde Bali, el vuelo a Sumba es nacional; mira <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a>.</p>
+<p>Desde Bali, el vuelo a Sumba es nacional; mira <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a>.</p>
 
 <h2>Tarjeta SIM, cobertura e internet</h2>
 <p><strong>Telkomsel</strong> es la red que necesitas en Sumba. Viajeros y guías locales coinciden en que tiene la cobertura más amplia y fiable de la isla, sobre todo fuera de las ciudades; XL funciona en las ciudades grandes, pero se pierde rápido en el campo. Incluso con Telkomsel, cuenta con zonas sin señal en algunos valles, playas remotas y partes de la costa sur.</p>
 <ul>
 <li>Compra y registra una SIM turística o una eSIM <strong>antes de llegar</strong>, idealmente en el aeropuerto de Bali o por internet. Puede que encuentres una tienda de Telkomsel (GraPARI) en Waingapu, pero no lo tengas como único plan.</li>
-<li>Los móviles comprados en el extranjero y usados con SIM local durante estancias largas pueden necesitar registro del IMEI; las SIM turísticas del aeropuerto suelen resolverlo.</li>
 <li>Descarga mapas sin conexión (Google Maps o Maps.me) y tus reservas antes de salir de la ciudad.</li>
-<li>El wifi de los alojamientos suele ser lento y hay cortes de luz, así que una batería externa es útil.</li>
 </ul>
 
 <h2>Efectivo, cajeros y tarjetas</h2>
@@ -212,17 +191,6 @@ GUIDES = [
 </ul>
 <p>Para presupuestos diarios orientativos consulta nuestra guía de <a href="/es/getting-here/sumba-travel-costs/">costes de viajar a Sumba</a>, y para los meses secos y lluviosos (la transmisión de malaria suele aumentar con las lluvias), la <a href="/es/things-to-do/best-time-to-visit-sumba/">mejor época para visitar Sumba</a>.</p>
 
-<h2>Lista rápida de seguridad para Sumba</h2>
-<ol>
-<li>Consulta de medicina del viajero y consejo antipalúdico para Nusa Tenggara Oriental.</li>
-<li>Repelente fuerte, manga larga y una mosquitera ligera si tu habitación no la tiene.</li>
-<li>Seguro de viaje con evacuación médica que cubra tus actividades.</li>
-<li>e-VOA comprado en la web oficial antes de salir.</li>
-<li>SIM o eSIM de Telkomsel, mapas sin conexión y batería externa.</li>
-<li>Efectivo suficiente en billetes pequeños antes de dejar las ciudades.</li>
-<li>Conductor para las distancias largas y nada de conducir de noche.</li>
-<li>Pregunta a la gente local antes de bañarte y pide permiso antes de cada foto.</li>
-</ol>
 <p>Con esta preparación, Sumba no es un destino arriesgado sino uno profundamente gratificante: una isla donde los desconocidos te saludan en la carretera y el mayor peligro es querer quedarte más de lo previsto.</p>
 """
 },
@@ -241,7 +209,6 @@ GUIDES = [
 <ul>
 <li><strong>Konsultasikan ke klinik kesehatan perjalanan 4-6 minggu sebelum berangkat</strong> dan sebutkan dengan jelas bahwa Anda akan ke Sumba, bukan hanya Bali. Banyak wisatawan diberi obat antimalaria untuk Sumba meski tidak memerlukannya di Bali.</li>
 <li><strong>Hindari gigitan dari senja hingga fajar</strong>, saat nyamuk malaria (<em>Anopheles</em>) aktif. Gunakan losion antinyamuk dengan DEET (sekitar 50%) atau pikaridin, kenakan lengan dan celana panjang pada sore hari, dan tidur di bawah kelambu atau di kamar berkasa nyamuk dan ber-AC.</li>
-<li><strong>Bawa losion antinyamuk dari rumah.</strong> Merek lokal tersedia di minimarket Waingapu dan Tambolaka, tetapi produk DEET kadar tinggi sulit dicari.</li>
 <li><strong>Demam adalah keadaan darurat.</strong> Demam apa pun selama perjalanan atau dalam beberapa bulan setelah pulang perlu tes darah malaria pada hari yang sama. Beri tahu dokter bahwa Anda pernah ke Sumba.</li>
 </ul>
 <p>Nyamuk yang menggigit pada siang hari menularkan demam berdarah dengue, yang menurut layanan Australia Smartraveller ada sepanjang tahun di Indonesia. Tidak ada tablet sederhana untuk mencegah dengue, jadi kebiasaan memakai losion antinyamuk, juga pada siang hari, adalah perlindungan terbaik.</p>
@@ -249,14 +216,13 @@ GUIDES = [
 <h2>Air, makanan, rabies, dan matahari</h2>
 <p>Jangan minum air keran di mana pun di Sumba. Gunakan air kemasan bersegel atau isi ulang dari galon air yang disediakan sebagian besar penginapan; botol isi ulang berfilter adalah pilihan bagus dan mengurangi sampah plastik di pulau yang fasilitas daur ulangnya terbatas. Smartraveller memperingatkan bahwa penyakit yang ditularkan lewat air dan makanan tersebar luas di Indonesia. Makanlah makanan yang baru dimasak dan masih panas, kupas buah sendiri, dan bawa oralit.</p>
 <p><strong>Rabies</strong> ada di seluruh Indonesia, dan Smartraveller menegaskan bahwa penyakit ini 100% fatal begitu gejalanya muncul. Banyak anjing berkeliaran di desa-desa Sumba. Jangan mengelus anjing, kucing, atau monyet, dan jika digigit atau dicakar, cuci luka dengan sabun di bawah air mengalir selama 15 menit lalu segera cari pertolongan medis. Vaksin pascapajanan mungkin tidak tersedia di Sumba sehingga Anda mungkin harus terbang ke Bali atau lebih jauh, jadi tanyakan vaksinasi rabies prapajanan di klinik perjalanan, terutama untuk perjalanan lama atau ke pedesaan.</p>
-<p>Di sekitar 10 derajat lintang selatan, matahari sangat terik, terutama di sabana terbuka tanpa naungan. Bawa topi, tabir surya SPF tinggi, dan minimal 2 liter air per orang saat mendaki bukit seperti Wairinding atau menuju air terjun.</p>
+<p>Di sekitar 10 derajat lintang selatan, matahari sangat terik, terutama di sabana terbuka tanpa naungan. Bawa topi, tabir surya SPF tinggi, dan air minum yang cukup saat mendaki bukit seperti Wairinding.</p>
 
 <h2>Rumah sakit dan layanan medis: mengapa asuransi dengan evakuasi itu wajib</h2>
-<p>Sumba memiliki rumah sakit umum daerah (RSUD) di kota-kota utama, antara lain <strong>RSUD Umbu Rara Meha di Waingapu</strong> (Jalan Adam Malik 54, Sumba Timur) dan <strong>RSUD Waikabubak</strong> (Jalan Adhyaksa Km 3, Sumba Barat). Di Sumba Barat Daya, kawasan Bandara Tambolaka, rumah sakit kabupaten <strong>RSUD Reda Bolo</strong> masih berstatus kelas D pada 2025, dengan peningkatan yang sedang berjalan. Ada pula puskesmas di setiap kecamatan serta klinik swasta kecil dan apotek di kota.</p>
+<p>Sumba memiliki rumah sakit umum daerah (RSUD) di kota-kota utama, antara lain <strong>RSUD Umbu Rara Meha di Waingapu</strong> dan <strong>RSUD Waikabubak</strong>. Di Sumba Barat Daya, kawasan Bandara Tambolaka, rumah sakit kabupaten <strong>RSUD Reda Bolo</strong> masih berstatus kelas D pada 2025, dengan peningkatan yang sedang berjalan. Ada pula puskesmas di setiap kecamatan serta klinik swasta kecil dan apotek di kota.</p>
 <p>Fasilitas ini dapat menangani masalah umum, melakukan tes malaria, dan menstabilkan korban cedera, tetapi layanan spesialis terbatas. Smartraveller mencatat bahwa banyak rumah sakit daerah di Indonesia hanya memiliki fasilitas dasar dan wisatawan harus membayar seluruh biaya perawatan, termasuk evakuasi. Untuk kasus serius (cedera kepala akibat kecelakaan motor, patah tulang rumit, infeksi berat), pilihan realistisnya adalah penerbangan medis ke Bali, yang bisa menelan biaya ribuan dolar AS.</p>
 <ul>
 <li>Beli <strong>asuransi perjalanan yang secara tegas menanggung evakuasi medis darurat</strong>, dan periksa apakah polis menanggung naik motor, berselancar, dan menyelam bila Anda berencana melakukannya.</li>
-<li>Simpan nomor bantuan 24 jam asuransi Anda di ponsel dan di kertas.</li>
 <li>Bawa kotak P3K kecil: plester, antiseptik, oralit, antihistamin, obat pereda nyeri, dan obat resep pribadi dalam kemasan aslinya.</li>
 </ul>
 
@@ -276,7 +242,6 @@ GUIDES = [
 <li><strong>Hindari berkendara malam hari.</strong> Penerangan jalan minim, hewan tidur di aspal yang hangat, dan lubang jalan tidak terlihat.</li>
 <li>Pilihan paling nyaman dan aman bagi kebanyakan pengunjung adalah mobil dengan sopir lokal, yang juga memahami tata krama di kampung adat dan jalan menuju tempat tanpa papan penunjuk. Panduan <a href="/id/getting-here/getting-around-sumba/">berkeliling Sumba</a> kami membandingkan pilihan transportasi.</li>
 <li>Jika naik motor, pakai helm yang baik dan bawa SIM internasional yang berlaku untuk sepeda motor. Kementerian Luar Negeri Inggris memperingatkan bahwa warga asing yang terlibat kecelakaan kecil pun bisa menjadi sasaran pemerasan, dan banyak asuransi menolak klaim pengendara tanpa SIM.</li>
-<li>Isi bensin setiap ada kesempatan. SPBU ada di kota; di desa bensin dijual dalam botol di kios kecil.</li>
 </ul>
 
 <h2>Kejahatan, penipuan, dan keselamatan pribadi</h2>
@@ -300,15 +265,13 @@ GUIDES = [
 <h2>Visa on arrival dan e-VOA Indonesia (2026)</h2>
 <p>Bagian ini terutama untuk tamu mancanegara: wisatawan domestik cukup membawa KTP. Sebagian besar wisatawan asing masuk lebih dulu lewat Bali atau Jakarta dan melewati imigrasi di sana, bukan di Sumba. Warga banyak negara, termasuk Uni Eropa, Inggris, AS, dan Australia, dapat memakai <strong>Visa on Arrival (VOA)</strong> yang berlaku untuk tinggal 30 hari dan dapat diperpanjang satu kali selama 30 hari lagi (maksimal 60 hari). VOA dapat dibeli di loket bandara atau, lebih cepat, secara daring sebelum berangkat sebagai <strong>e-VOA</strong> di situs resmi Direktorat Jenderal Imigrasi, evisa.imigrasi.go.id. Waspadai situs tiruan yang memungut biaya tambahan.</p>
 <p><strong>Tarifnya:</strong> tarif resmi selama ini Rp500.000 (sekitar 28-30 dolar AS), dan perpanjangan dikenai Rp500.000 lagi menurut Kantor Imigrasi Yogyakarta. Pada Agustus 2026 Direktur Jenderal Imigrasi mengumumkan rencana kenaikan menjadi Rp750.000 untuk e-VOA yang dibeli sebelum keberangkatan dan Rp1.000.000 untuk VOA yang dibeli saat kedatangan. Hingga Oktober 2026, media perjalanan dan visa melaporkan bahwa tanggal berlakunya belum dipastikan. Periksa situs resmi menjelang keberangkatan dan tetap beli secara daring lebih awal: kemungkinan itu pilihan termurah jika tarif baru diberlakukan. Denda tinggal melebihi izin adalah Rp1.000.000 per hari.</p>
-<p>Paspor harus berlaku minimal enam bulan dan sebaiknya Anda memiliki tiket keluar. Dari Bali, penerbangan ke Sumba adalah penerbangan domestik; lihat <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a>.</p>
+<p>Dari Bali, penerbangan ke Sumba adalah penerbangan domestik; lihat <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a>.</p>
 
 <h2>Kartu SIM, sinyal, dan internet</h2>
 <p><strong>Telkomsel</strong> adalah jaringan yang paling andal di Sumba. Wisatawan dan pemandu lokal sepakat bahwa jangkauannya paling luas dan stabil di pulau ini, terutama di luar kota; XL berfungsi di kota besar tetapi cepat melemah di pedesaan. Bahkan dengan Telkomsel, bersiaplah tanpa sinyal di beberapa lembah, pantai terpencil, dan sebagian pesisir selatan.</p>
 <ul>
 <li>Beli dan registrasi kartu SIM turis atau eSIM <strong>sebelum tiba</strong>, idealnya di Bandara Bali atau secara daring. Mungkin ada GraPARI Telkomsel di Waingapu, tetapi jangan jadikan itu satu-satunya rencana.</li>
-<li>Ponsel yang dibeli di luar negeri dan dipakai dengan SIM lokal untuk tinggal lama mungkin memerlukan registrasi IMEI; SIM turis yang dibeli di bandara biasanya sudah mengurusnya.</li>
 <li>Unduh peta luring (Google Maps atau Maps.me) dan detail pemesanan sebelum meninggalkan kota.</li>
-<li>Wi-Fi penginapan sering lambat dan listrik kadang padam, jadi bawa power bank.</li>
 </ul>
 
 <h2>Uang tunai, ATM, dan kartu</h2>
@@ -320,17 +283,6 @@ GUIDES = [
 </ul>
 <p>Untuk perkiraan anggaran harian, lihat panduan <a href="/id/getting-here/sumba-travel-costs/">biaya liburan ke Sumba</a>, dan untuk bulan kemarau dan hujan (penularan malaria cenderung naik saat musim hujan), lihat <a href="/id/things-to-do/best-time-to-visit-sumba/">waktu terbaik ke Sumba</a>.</p>
 
-<h2>Daftar periksa keselamatan singkat untuk Sumba</h2>
-<ol>
-<li>Konsultasi ke klinik perjalanan dan saran antimalaria untuk NTT.</li>
-<li>Losion antinyamuk yang kuat, baju lengan panjang, dan kelambu ringan jika kamar tidak menyediakannya.</li>
-<li>Asuransi perjalanan dengan evakuasi medis yang mencakup kegiatan Anda.</li>
-<li>e-VOA dibeli di situs resmi sebelum berangkat (untuk tamu asing).</li>
-<li>SIM atau eSIM Telkomsel, peta luring, dan power bank.</li>
-<li>Uang tunai pecahan kecil yang cukup sebelum meninggalkan kota.</li>
-<li>Sopir untuk jarak jauh, dan jangan berkendara setelah gelap.</li>
-<li>Tanyakan warga sebelum berenang, dan minta izin sebelum setiap foto.</li>
-</ol>
 <p>Dengan persiapan seperti ini, Sumba bukan tujuan yang berisiko, melainkan sangat memikat: pulau tempat orang asing menyapa Anda di jalan, dan bahaya terbesarnya adalah ingin tinggal lebih lama dari rencana.</p>
 """
 },
@@ -394,7 +346,6 @@ GUIDES = [
 "sources": [
 ["Malaria Information and Prophylaxis, by Country [I] (Indonesia), US CDC, reviewed 2021, published 2024", "https://www.cdc.gov/malaria/travelers/country_table/i.html"],
 ["Sembilan daerah di NTT dinyatakan bebas dari penyakit malaria, Antara Kupang, 2 Dec 2023", "https://kupang.antaranews.com/berita/122454/sembilan-daerah-di-ntt-dinyatakan-bebas-dari-penyakit-malaria"],
-["List of designated hospitals in East Nusa Tenggara (incl. RSUD Waikabubak, RSUD Umbu Rara Meha), Consulate-General of Japan in Denpasar", "https://www.denpasar.id.emb-japan.go.jp/files/100099755.pdf"],
 ["Kemenko PMK kawal peningkatan layanan kesehatan di RSUD Reda Bolo, Sumba Barat Daya, Kemenko PMK, 18 Jul 2025", "https://www.kemenkopmk.go.id/kemenko-pmk-kawal-peningkatan-layanan-kesehatan-di-rsud-reda-bolo-sumba-barat-daya"],
 ["Indonesia travel advice, Smartraveller (Australian Government), accessed Nov 2026", "https://www.smartraveller.gov.au/destinations/asia/indonesia"],
 ["Indonesia travel advice: safety and security, GOV.UK FCDO, updated Sep 2026", "https://www.gov.uk/foreign-travel-advice/indonesia/safety-and-security"],
@@ -418,7 +369,7 @@ GUIDES = [
 # ---------------------------------------------------------------------------
 {
 "section": "things-to-do",
-"slug": "sumba-vs-bali-flores",
+"img_key": "magnitude-6-1-earthquake-southwest-sumba", "slug": "sumba-vs-bali-flores",
 "date": "2026-11-07",
 "time": "13:00",
 "kind": "guide",
@@ -482,14 +433,14 @@ GUIDES = [
 <p>All three islands sit along the same chain east of Java, and the main hub is Bali (Denpasar, DPS). Some useful connections, as of late 2026 (schedules change, always check with the airline):</p>
 <ul>
 <li><strong>Bali to Sumba:</strong> Wings Air flies Bali-Tambolaka several times a day (about 1h30), and TransNusa has flown Bali-Waingapu non-stop four times a week (Tuesday, Wednesday, Friday, Saturday) since 15 July 2026. Details in <a href="/en/getting-here/how-to-get-to-sumba-from-bali/">how to get to Sumba from Bali</a>.</li>
-<li><strong>Sumba to Flores:</strong> Wings Air flies Tambolaka-Labuan Bajo non-stop about three times a week, a flight of roughly 45 minutes. Ferries also link Waingapu with ports in Flores such as Ende and Aimere, a slow overnight-style trip of around 8-10 hours on irregular schedules.</li>
+<li><strong>Sumba to Flores:</strong> Wings Air flies Tambolaka-Labuan Bajo non-stop about three times a week, a flight of roughly 45 minutes.</li>
 <li><strong>Flores to Bali:</strong> Labuan Bajo has frequent direct flights to Bali and Jakarta.</li>
 </ul>
 <h3>Three sample combinations</h3>
 <ol>
 <li><strong>Bali + Sumba (10-14 days).</strong> 4-5 days in Bali, then fly to Tambolaka and cross the island by car to fly out of Waingapu (or the reverse), back to Bali. This is the easiest and most popular combination. Our <a href="/en/things-to-do/sumba-itinerary-5-7-10-days/">Sumba itinerary for 5, 7 or 10 days</a> shows how to split your time.</li>
 <li><strong>Sumba + Flores / Komodo (10-14 days).</strong> Fly Bali to Waingapu, explore East and West Sumba for 5-7 days, fly Tambolaka to Labuan Bajo, spend 3-4 days on a Komodo boat trip, then fly Labuan Bajo to Bali. Book the TMC-LBJ flight early because it does not run daily, and keep a buffer day: delays on small regional routes are common.</li>
-<li><strong>The full triangle (2.5-3 weeks).</strong> Bali, then Labuan Bajo and overland across Flores to Kelimutu and Ende or Maumere, a flight or ferry to Sumba, and back to Bali from Tambolaka. Rewarding but tiring; give each island at least five days.</li>
+<li><strong>The full triangle (2.5-3 weeks).</strong> Bali, then Labuan Bajo and overland across Flores to Kelimutu and Ende or Maumere, a flight to Sumba, and back to Bali from Tambolaka. Rewarding but tiring; give each island at least five days.</li>
 </ol>
 <p>Season matters for all three. The dry season (roughly May to September, lasting longer in East Sumba) is the best time for savannas, roads and boat trips; the rains run roughly from November or December to March. If you want to see Pasola in Sumba, plan for February or March and expect higher prices. See the <a href="/en/things-to-do/best-time-to-visit-sumba/">best time to visit Sumba</a>, and our guide to <a href="/en/where-to-stay/where-to-stay-in-sumba/">where to stay in Sumba</a> for choosing a base in the east or west.</p>
 
@@ -556,14 +507,14 @@ GUIDES = [
 <p>Las tres islas están en la misma cadena al este de Java, y el gran nudo de conexiones es Bali (Denpasar, DPS). Algunas conexiones útiles a finales de 2026 (los horarios cambian, confírmalos siempre con la aerolínea):</p>
 <ul>
 <li><strong>Bali a Sumba:</strong> Wings Air vuela Bali-Tambolaka varias veces al día (unos 1h30), y TransNusa opera Bali-Waingapu sin escalas cuatro veces por semana (martes, miércoles, viernes y sábado) desde el 15 de julio de 2026. Detalles en <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a>.</li>
-<li><strong>Sumba a Flores:</strong> Wings Air vuela Tambolaka-Labuan Bajo sin escalas unas tres veces por semana, en unos 45 minutos. También hay ferris entre Waingapu y puertos de Flores como Ende y Aimere, un viaje lento de unas 8-10 horas con horarios irregulares.</li>
+<li><strong>Sumba a Flores:</strong> Wings Air vuela Tambolaka-Labuan Bajo sin escalas unas tres veces por semana, en unos 45 minutos.</li>
 <li><strong>Flores a Bali:</strong> Labuan Bajo tiene vuelos directos frecuentes a Bali y a Yakarta.</li>
 </ul>
 <h3>Tres combinaciones de ejemplo</h3>
 <ol>
 <li><strong>Bali + Sumba (10-14 días).</strong> 4-5 días en Bali, vuelo a Tambolaka y cruce de la isla en coche para salir desde Waingapu (o al revés), de vuelta a Bali. Es la combinación más fácil y popular. Nuestro <a href="/es/things-to-do/sumba-itinerary-5-7-10-days/">itinerario por Sumba de 5, 7 o 10 días</a> te ayuda a repartir el tiempo.</li>
 <li><strong>Sumba + Flores / Komodo (10-14 días).</strong> Vuelo de Bali a Waingapu, 5-7 días por el este y el oeste de Sumba, vuelo de Tambolaka a Labuan Bajo, 3-4 días en barco por Komodo y vuelo de Labuan Bajo a Bali. Reserva pronto el vuelo TMC-LBJ porque no es diario, y deja un día de margen: los retrasos en las rutas regionales pequeñas son frecuentes.</li>
-<li><strong>El triángulo completo (2,5-3 semanas).</strong> Bali, Labuan Bajo y Flores por tierra hasta el Kelimutu y Ende o Maumere, vuelo o ferri a Sumba y regreso a Bali desde Tambolaka. Gratificante pero cansado; dedica al menos cinco días a cada isla.</li>
+<li><strong>El triángulo completo (2,5-3 semanas).</strong> Bali, Labuan Bajo y Flores por tierra hasta el Kelimutu y Ende o Maumere, vuelo a Sumba y regreso a Bali desde Tambolaka. Gratificante pero cansado; dedica al menos cinco días a cada isla.</li>
 </ol>
 <p>La temporada importa en las tres. La estación seca (aproximadamente de mayo a septiembre, más larga en Sumba Oriental) es la mejor para sabanas, carreteras y barcos; las lluvias van más o menos de noviembre o diciembre a marzo. Si quieres ver la Pasola en Sumba, planifica para febrero o marzo y cuenta con precios más altos. Consulta la <a href="/es/things-to-do/best-time-to-visit-sumba/">mejor época para visitar Sumba</a> y nuestra guía de <a href="/es/where-to-stay/where-to-stay-in-sumba/">dónde alojarse en Sumba</a> para elegir base en el este o el oeste.</p>
 
@@ -630,14 +581,14 @@ GUIDES = [
 <p>Ketiga pulau berada di rangkaian yang sama di timur Jawa, dan pusat penghubung utamanya adalah Bali (Denpasar, DPS). Beberapa koneksi penting per akhir 2026 (jadwal bisa berubah, selalu cek ke maskapai):</p>
 <ul>
 <li><strong>Bali ke Sumba:</strong> Wings Air terbang Bali-Tambolaka beberapa kali sehari (sekitar 1 jam 30 menit), dan TransNusa melayani Bali-Waingapu langsung empat kali seminggu (Selasa, Rabu, Jumat, Sabtu) sejak 15 Juli 2026. Detailnya di <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a>.</li>
-<li><strong>Sumba ke Flores:</strong> Wings Air terbang langsung Tambolaka-Labuan Bajo sekitar tiga kali seminggu, dengan waktu tempuh sekitar 45 menit. Ada juga kapal feri antara Waingapu dan pelabuhan di Flores seperti Ende dan Aimere, perjalanan lambat sekitar 8-10 jam dengan jadwal tidak tetap.</li>
+<li><strong>Sumba ke Flores:</strong> Wings Air terbang langsung Tambolaka-Labuan Bajo sekitar tiga kali seminggu, dengan waktu tempuh sekitar 45 menit.</li>
 <li><strong>Flores ke Bali:</strong> Labuan Bajo memiliki penerbangan langsung yang sering ke Bali dan Jakarta.</li>
 </ul>
 <h3>Tiga contoh kombinasi</h3>
 <ol>
 <li><strong>Bali + Sumba (10-14 hari).</strong> 4-5 hari di Bali, lalu terbang ke Tambolaka dan menyeberangi pulau dengan mobil untuk pulang dari Waingapu (atau sebaliknya), kembali ke Bali. Ini kombinasi termudah dan paling populer. <a href="/id/things-to-do/sumba-itinerary-5-7-10-days/">Itinerary Sumba 5, 7, atau 10 hari</a> kami membantu membagi waktu.</li>
 <li><strong>Sumba + Flores / Komodo (10-14 hari).</strong> Terbang dari Bali ke Waingapu, jelajahi Sumba Timur dan Barat selama 5-7 hari, terbang dari Tambolaka ke Labuan Bajo, habiskan 3-4 hari dengan kapal di Komodo, lalu terbang dari Labuan Bajo ke Bali. Pesan penerbangan TMC-LBJ lebih awal karena tidak setiap hari, dan sisihkan satu hari cadangan: penundaan di rute regional kecil sering terjadi.</li>
-<li><strong>Segitiga lengkap (2,5-3 minggu).</strong> Bali, lalu Labuan Bajo dan jalur darat melintasi Flores ke Kelimutu dan Ende atau Maumere, terbang atau naik feri ke Sumba, lalu kembali ke Bali dari Tambolaka. Memuaskan tetapi melelahkan; berikan minimal lima hari untuk setiap pulau.</li>
+<li><strong>Segitiga lengkap (2,5-3 minggu).</strong> Bali, lalu Labuan Bajo dan jalur darat melintasi Flores ke Kelimutu dan Ende atau Maumere, terbang ke Sumba, lalu kembali ke Bali dari Tambolaka. Memuaskan tetapi melelahkan; berikan minimal lima hari untuk setiap pulau.</li>
 </ol>
 <p>Musim berpengaruh di ketiga pulau. Musim kemarau (kira-kira Mei hingga September, lebih panjang di Sumba Timur) adalah waktu terbaik untuk sabana, perjalanan darat, dan pelayaran; musim hujan berlangsung kira-kira dari November atau Desember hingga Maret. Jika ingin menyaksikan Pasola di Sumba, rencanakan Februari atau Maret dan bersiaplah dengan harga lebih tinggi. Lihat <a href="/id/things-to-do/best-time-to-visit-sumba/">waktu terbaik ke Sumba</a> dan panduan <a href="/id/where-to-stay/where-to-stay-in-sumba/">tempat menginap di Sumba</a> untuk memilih basis di timur atau barat.</p>
 
@@ -709,8 +660,6 @@ GUIDES = [
 ["Flights from Tambolaka to Labuan Bajo, FlightConnections, accessed Nov 2026", "https://www.flightconnections.com/flights-from-tmc-to-lbj"],
 ["Sumba, Wikipedia, accessed Nov 2026", "https://en.wikipedia.org/wiki/Sumba"],
 ["Flores, Wikipedia, accessed Nov 2026", "https://en.wikipedia.org/wiki/Flores"],
-["How to Get to Sumba: Flights and Ferries, Backindo, 2026", "https://www.backindo.com/how-to-get-to-sumba-flights"],
-["Sumba or Labuan Bajo?, Indonesia Juara, 2026", "https://indonesiajuara.asia/en/blog/sumba-or-labuan-bajo"],
 ["Malaria Information and Prophylaxis, by Country [I], US CDC", "https://www.cdc.gov/malaria/travelers/country_table/i.html"],
 ["Bali, Wikipedia, accessed Nov 2026", "https://en.wikipedia.org/wiki/Bali"]
 ],

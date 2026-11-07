@@ -101,3 +101,12 @@ BASE_PLACES = [
     {"name": "Waingapu (WGP airport)", "lat": -9.6692, "lon": 120.3020, "area": "East Sumba"},
     {"name": "Waikabubak", "lat": -9.6450, "lon": 119.4120, "area": "West Sumba"},
 ]
+
+# Guide photos imported from Wikimedia Commons into KV by claude-ops jobs/tst_images.py (3:2 crop, 1280x853).
+IMPORTED = {"sumba-ikat-weaving-where-to-buy", "sumbanese-food", "sumba-travel-costs", "getting-around-sumba", "sumba-itinerary-5-7-10-days",
+            "best-time-to-visit-sumba", "sumba-travel-safety-health", "surfing-in-sumba", "sumba-horses-sandalwood-pony"}
+
+def candidate_image(a):
+    c = a.get("image_candidate")
+    if not c or a["slug"] not in IMPORTED: return None
+    return {"w": 1280, "h": 853, "credit": c["credit"], "license": c["license"], "license_url": c.get("license_url", ""), "page": c["file_page"], "ai": False, "caption": c["caption"]}

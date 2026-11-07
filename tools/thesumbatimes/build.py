@@ -11,7 +11,7 @@ try:
     from images import IMAGES
 except Exception:
     IMAGES = {}
-from travel import SLUGS, T, HERO_IMG, BASE_PLACES, load_guides
+from travel import SLUGS, T, HERO_IMG, BASE_PLACES, load_guides, candidate_image
 _GUIDES = load_guides()
 _have = {a["slug"] for a in ARTICLES}
 ARTICLES = ARTICLES + [g for g in _GUIDES if g["slug"] not in _have]
@@ -112,7 +112,7 @@ def url_of(a, l): return f"/{l}/{a['section']}/{slug_l(a, l)}/"
 def paths_of(a): return {x: url_of(a, x) for x in LANGS}
 def P(path_tpl, l): return path_tpl[l] if isinstance(path_tpl, dict) else path_tpl.format(l=l)
 def img_key(a): return a.get("img_key") or a["slug"]
-def img_of(a): return a.get("image") or IMAGES.get(img_key(a))
+def img_of(a): return a.get("image") or IMAGES.get(img_key(a)) or candidate_image(a)
 def words(a, l): return len(re.sub(r"<[^>]+>", " ", body_raw(a, l)).split())
 def mins(a, l): return max(1, round(words(a, l) / 220))
 def body_raw(a, l):
