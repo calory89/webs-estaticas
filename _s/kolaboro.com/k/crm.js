@@ -40,7 +40,7 @@
   ];
   function tpl(t, l){ var first = (l.name || '').split(' ')[0] || 'there', project = (l.learn || '').replace(/^https?:\/\/(www\.)?/, '').replace(/\/.*$/, '') || 'the project'; return t.replace(/\{first\}/g, first).replace(/\{project\}/g, project); }
   var PICK = {};
-  function act(action, payload){ return A.rpc('kolaboro_admin', { p_key: A.pw(), p_action: action, p_payload: payload }).then(function(d){ if (d && d.error) { alert('Not saved: ' + d.error); return; } A.reload(); }); }
+  function act(action, payload){ return A.rpc('kolaboro_admin', { p_key: A.pw(), p_action: action, p_payload: payload }).then(function(d){ if (d && d.error) { (window.KBUI?KBUI.toast:function(m){alert(m)})('Not saved. ' + (A.err ? A.err(d) : d.error), 'bad'); return; } A.reload(); }); }
 
   // tab + section
   var nav = document.querySelector('nav.tabs'), main = document.querySelector('main');

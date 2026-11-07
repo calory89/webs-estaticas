@@ -26,7 +26,8 @@
     var t = cols.map(function(c){ return c[0]; }).join(',') + '\r\n' + rows.map(function(r){ return cols.map(function(c){ return cell(c[1](r)); }).join(','); }).join('\r\n');
     var a = document.createElement('a'), u = URL.createObjectURL(new Blob(['\ufeff' + t], { type: 'text/csv;charset=utf-8' })); a.href = u; a.download = name + '-' + today() + '.csv'; document.body.appendChild(a); a.click(); a.remove(); setTimeout(function(){ URL.revokeObjectURL(u); }, 4000);
   }
-  function fail(d){ if (d && d.error) { if (d.error !== 'denied') alert('Not saved. ' + (A.err ? A.err(d) : d.error)); return true; } return false; }
+  function ok(m){ if (window.KBUI) KBUI.toast(m, 'ok'); }
+  function fail(d){ if (d && d.error) { if (d.error !== 'denied') (window.KBUI?KBUI.toast:function(m){alert(m)})('Not saved. ' + (A.err ? A.err(d) : d.error), 'bad'); return true; } return false; }
 
   var STG = ['Case opened', 'Documents', 'Land & title', 'Building permit', 'Site visit', 'Report'];
   var PIPE = [['visit', 'Visited check'], ['lookup', 'Lookup done'], ['signup', 'Signed up'], ['paid', 'Paid'], ['ordered', 'Visit ordered'], ['agent', 'Agent assigned'], ['report', 'Report delivered']];
@@ -283,9 +284,9 @@
       var jobs = []; if (u) jobs.push(adm('user_update', { id: u.id, next_action: f.next.value, tags: tags })); if (lastLead) jobs.push(adm('lead_update', { id: lastLead.id, next_action: f.next.value, tags: tags }));
       Promise.all(jobs).then(function(r){ if (!r.some(fail)) A.reload(); }); };
     $('bz-an').onsubmit = function(e){ e.preventDefault(); var f = e.target, b = f.body.value.trim(); if (!b) return;
-      adm('add_note', { user_id: u ? u.id : '', lead_id: lastLead ? lastLead.id : '', kind: f.kind.value, body: b, due: f.due.value }).then(function(d){ if (!fail(d)) A.reload(); }); };
-    sec.querySelectorAll('[data-nd]').forEach(function(b){ b.onclick = function(){ adm('note_done', { id: +b.dataset.nd, done: b.dataset.v === 'true' }).then(function(d){ if (!fail(d)) A.reload(); }); }; });
-    sec.querySelectorAll('form.bz-msg').forEach(function(f){ f.onsubmit = function(e){ e.preventDefault(); var t = f.body.value.trim(); if (!t) return; adm('admin_message', { case_id: f.dataset.case, body: t }).then(function(d){ if (!fail(d)) A.reload(); }); }; });
+      adm('add_note', { user_id: u ? u.id : '', lead_id: lastLead ? lastLead.id : '', kind: f.kind.value, body: b, due: f.due.value }).then(function(d){ if (!fail(d)) { ok('Note added'); A.reload(); } }); };
+    sec.querySelectorAll('[data-nd]').forEach(function(b){ b.onclick = function(){ adm('note_done', { id: +b.dataset.nd, done: b.dataset.v === 'true' }).then(function(d){ if (!fail(d)) { ok(b.dataset.v === 'true' ? 'Marked done' : 'Reopened'); A.reload(); } }); }; });
+    sec.querySelectorAll('form.bz-msg').forEach(function(f){ f.onsubmit = function(e){ e.preventDefault(); var t = f.body.value.trim(); if (!t) return; adm('admin_message', { case_id: f.dataset.case, body: t }).then(function(d){ if (!fail(d)) { ok('Message sent'); A.reload(); } }); }; });
     sec.querySelectorAll('[data-cstage]').forEach(function(s){ s.onchange = function(){ moveCase(s.dataset.cstage, +s.value); }; });
     var lf = $('bz-lf'); if (lf) lf.onclick = function(){ loadFiles(p); };
     var sl = $('bz-svl'); if (sl) sl.onclick = function(){ loadSaved(p, sl); };
@@ -314,7 +315,7 @@
   }
   function sla(d, c){ if (c && c.eta && c.eta < today() && !c.report_url) return 'b'; return d >= 14 ? 'b' : d >= 7 ? 'w' : ''; }
   function moveCase(id, stage){
-    return adm('case_update', { id: id, stage: stage, log_note: 'Moved to ' + STG[stage] + ' from the admin' }).then(function(d){ if (!fail(d)) A.reload(); });
+    return adm('case_update', { id: id, stage: stage, log_note: 'Moved to ' + STG[stage] + ' from the admin' }).then(function(d){ if (!fail(d)) { ok('Moved to ' + STG[stage]); A.reload(); } });
   }
 
   // ---------- saved checks (kolaboro_saved, ref CHK-...), watch and pay_next. Since migration adm8 (5 Nov 2026) kolaboro_admin
@@ -399,7 +400,7 @@
     sec.querySelectorAll('[data-bstage]').forEach(function(s){ s.onchange = function(){ moveCase(s.dataset.bstage, +s.value); }; });
     sec.querySelectorAll('form.bz-asg').forEach(function(f){ f.onsubmit = function(e){ e.preventDefault(); var em = f.agent.value; if (!em) return; var o = { case_code: f.dataset.code, agent_email: em, due: f.due.value, fee: f.fee.value, kind: 'site_visit' };
       f.querySelector('button').disabled = true;
-      ops('assign', o).then(function(d){ if (fail(d)) { f.querySelector('button').disabled = false; return; } return logAudit('agent_assign', { case_id: f.dataset.case, task_id: d.task }).then(function(){ X.at = 0; return more(true); }).then(function(){ A.reload(); }); }); }; });
+      ops('assign', o).then(function(d){ if (fail(d)) { f.querySelector('button').disabled = false; return; } ok('Agent assigned'); return logAudit('agent_assign', { case_id: f.dataset.case, task_id: d.task }).then(function(){ X.at = 0; return more(true); }).then(function(){ A.reload(); }); }); }; });
   }
   function daysInStage(c){ var last = (c.log || []).filter(function(l){ return l.stage === c.stage; }).slice(-1)[0]; return daysSince(last ? last.at : c.created_at); }
   function boardCard(x, agents){

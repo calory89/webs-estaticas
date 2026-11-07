@@ -198,14 +198,14 @@
         navigator.credentials.create({ publicKey: { challenge: crypto.getRandomValues(new Uint8Array(32)), rp: { id: 'kolaboro.com', name: 'Kolaboro log co-signer' }, user: { id: crypto.getRandomValues(new Uint8Array(16)), name: 'Kolaboro founder', displayName: 'Kolaboro founder' }, pubKeyCredParams: [{ type: 'public-key', alg: -7 }, { type: 'public-key', alg: -8 }, { type: 'public-key', alg: -257 }], authenticatorSelection: { userVerification: 'required', residentKey: 'preferred' }, attestation: 'none' } })
           .then(function(c){ var res = c.response; if (!res.getPublicKey) throw new Error('browser cannot export the key'); return act('cosign_key_add', { cred_id: c.id, spki: b64(res.getPublicKey()), alg: res.getPublicKeyAlgorithm(), label: navigator.platform || 'device' }); })
           .then(function(d){ if (d && d.error) throw new Error(d.error); try { localStorage.setItem('kb-cosign-ids', JSON.stringify((JSON.parse(localStorage.getItem('kb-cosign-ids') || '[]')).concat([d && d.cred_id].filter(Boolean)))); } catch (e) {} paint(); })
-          .catch(function(e){ alert('Not registered: ' + (e.message || e)); });
+          .catch(function(e){ (window.KBUI?KBUI.toast:function(m){alert(m)})('Not registered: ' + (e.message || e), 'bad'); });
       };
       box.querySelectorAll('[data-cs]').forEach(function(b){ b.onclick = function(){
         var p = b.dataset.cs.split('|'), day = p[0], head = p[1]; b.disabled = true;
         crypto.subtle.digest('SHA-256', new TextEncoder().encode('kolaboro-cosign-v1\n' + day + '\n' + head)).then(function(ch){
           return navigator.credentials.get({ publicKey: { challenge: ch, rpId: 'kolaboro.com', allowCredentials: keys.map(function(k){ return { type: 'public-key', id: unb64u(k.cred_id) }; }), userVerification: 'required' } });
         }).then(function(a){ var r2 = a.response; return act('cosign', { day: day, head: head, cred_id: a.id, authenticator_data: b64u(r2.authenticatorData), client_data_json: b64u(r2.clientDataJSON), signature: b64u(r2.signature) }); })
-          .then(function(d){ if (d && d.error) throw new Error(d.error); paint(); }).catch(function(e){ b.disabled = false; alert('Not co-signed: ' + (e.message || e)); });
+          .then(function(d){ if (d && d.error) throw new Error(d.error); paint(); }).catch(function(e){ b.disabled = false; (window.KBUI?KBUI.toast:function(m){alert(m)})('Not co-signed: ' + (e.message || e), 'bad'); });
       }; });
     });
   }

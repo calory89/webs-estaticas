@@ -9,6 +9,11 @@
   document.documentElement.lang = 'es';
   var E = {
     '+ Project': '+ Proyecto', 'Password': 'Contraseña', 'Log out': 'Salir',
+    'Upload a permit and check it': 'Sube un permiso y compruébalo', 'Account': 'Cuenta', 'Change password': 'Cambiar contraseña', 'Keyboard shortcuts': 'Atajos de teclado', 'Dismiss': 'Cerrar', 'Close': 'Cerrar',
+    'No messages yet. Ask anything about this case and a person on the team answers.': 'Aún no hay mensajes. Pregunta lo que quieras sobre este caso y te responde una persona del equipo.',
+    'Every stage change appears here with its date.': 'Cada cambio de etapa aparece aquí con su fecha.',
+    'Open a new case': 'Abrir un caso nuevo', 'Go to messages': 'Ir a los mensajes', 'Compact or comfortable layout': 'Vista compacta o cómoda', 'Send a message': 'Enviar un mensaje', 'Show this sheet': 'Mostrar esta lista', 'then': 'luego',
+    'Compact rows': 'Vista compacta', 'Comfortable rows': 'Vista cómoda', 'More': 'Más', 'More actions': 'Más acciones',
     'Free account': 'Cuenta gratis', 'Check a project': 'Comprueba un proyecto', 'Open case': 'Abrir caso',
     "Paste the developer's website or listing. Our research agent reads it in about a minute and lists what to ask before paying. The desk review is free; the on-the-ground check is €490 and starts only when you pay.": 'Pega la web o el anuncio del promotor. Nuestro agente de investigación la lee en un minuto y te dice qué preguntar antes de pagar. La revisión es gratis; la comprobación sobre el terreno cuesta 490 € y empieza solo cuando pagas.',
     'Save projects from the database, get a free desk review of any developer website, and keep your payment schedule in one place. When you want someone on the ground to check a project before you pay, open a case.': 'Guarda proyectos de la base de datos, consigue una revisión gratis de la web de cualquier promotor y ten tu calendario de pagos en un solo sitio. Cuando quieras que alguien sobre el terreno compruebe un proyecto antes de pagar, abre un caso.',
