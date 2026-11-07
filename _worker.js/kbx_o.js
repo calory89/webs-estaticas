@@ -9,7 +9,7 @@
 //   GET  /api/x/o/slo            service level objectives and remaining error budgets, computed from uptime probes, the API log and
 //                                real-user vitals at request time
 import * as K from './kolaboro.js';
-const { json, rpc, sha, deskReview, pageParts, qnorm, quoteFound, signBody, logHeads, WKEY, PUB_RAW_B64 } = K;
+const { json, rpc, sha, deskReview, pageParts, qnorm, quoteFound, signBody, logHeads, PUB_RAW_B64 } = K;   // WKEY is read live as K.WKEY (it can come from a secret)
 
 export const PATHS = /^\/api\/x\/o\//;
 const te = new TextEncoder();
@@ -102,7 +102,7 @@ async function witnessPost(req, env, ctx) {
     ours = true;
   }
   let r;
-  try { r = await rpc('kolaboro_o_witness_put', { p_wkey: WKEY, p_name: name, p_pub: pk, p_contact: contact, p_ours: ours, p_time: ts, p_size: size, p_root: rootB64, p_line: line }); }
+  try { r = await rpc('kolaboro_o_witness_put', { p_wkey: K.WKEY, p_name: name, p_pub: pk, p_contact: contact, p_ours: ours, p_time: ts, p_size: size, p_root: rootB64, p_line: line }); }
   catch (e) { return json({ accepted: false, state: 'opens_soon', verified: true, checks, message: OPENS_SOON }, 503); }
   if (!r || r.ok !== true) return json({ accepted: false, verified: true, checks, error: (r && r.error) || 'rejected', why: r && r.why }, 409);
   return json({ accepted: true, verified: true, checks, witness: name, tree_size: size, cosignatures: r.cosignatures });

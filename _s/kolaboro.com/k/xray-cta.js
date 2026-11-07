@@ -229,6 +229,7 @@
   var S = { st: null, ctx: null, ctxFor: '', sid: '', sent: {}, el: null, mode: 'run', open: false, busy: false, seen: null };
   function $(i) { return document.getElementById(i); }
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+  function hu(u){ u = String(u == null ? '' : u).trim(); return esc(/^(https?:\/\/|mailto:)/i.test(u) || /^(\/(?!\/)|#|\?)/.test(u) ? u : '#'); }   // href values: http(s), mailto or same-site only (sec13)
   function ls(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
   function token() { var t = null; try { t = sessionStorage.getItem('kb-token-as') || localStorage.getItem('kb-token'); } catch (e) {} return ls('kb-role') === 'agent' ? null : t; }
   function rpc(fn, b) { return fetch(SB + fn, { method: 'POST', headers: { apikey: AK, Authorization: 'Bearer ' + AK, 'Content-Type': 'application/json' }, body: JSON.stringify(b) }).then(function (r) { return r.json(); }); }
@@ -339,11 +340,11 @@
       '<div class="kxc-row"><button class="kxc-btn" type="button" id="kxc-open" aria-expanded="' + (S.open ? 'true' : 'false') + '" aria-controls="kxc-pan">' + esc(t(copy.cta)) + '</button></div>' +
       '<div class="kxc-panel" id="kxc-pan"' + (S.open ? '' : ' hidden') + '>' + panel(logged, I, x) + '</div>') +
       sec('kxc-get', '<h3>' + esc(t('get')) + '</h3><ol class="kxc-tl">' + (O.timeline || []).map(function (s) { return '<li><b>' + esc(t(s[0])) + '</b>' + esc(t(s[1])) + '</li>'; }).join('') + '</ol>' +
-        '<p style="margin-top:12px"><a class="kxc-btn l" id="kxc-sample" href="' + esc((C.sample && C.sample.url) || '/report/sample') + '">' + esc(t('sample')) + '</a></p><p class="kxc-m">' + esc((C.sample && C.sample.note) ? tf('sample_n', { x: t(C.sample.note) }) : '') + '</p><p class="kxc-links"><a href="' + PRE + '/pricing/">' + esc(t('pricing')) + '</a><a href="' + PRE + '/book/">' + esc(t('how_book')) + '</a></p>') + '</div>';
+        '<p style="margin-top:12px"><a class="kxc-btn l" id="kxc-sample" href="' + hu((C.sample && C.sample.url) || '/report/sample') + '">' + esc(t('sample')) + '</a></p><p class="kxc-m">' + esc((C.sample && C.sample.note) ? tf('sample_n', { x: t(C.sample.note) }) : '') + '</p><p class="kxc-links"><a href="' + PRE + '/pricing/">' + esc(t('pricing')) + '</a><a href="' + PRE + '/book/">' + esc(t('how_book')) + '</a></p>') + '</div>';
     // (23) monitoring, only when the project is off-plan with a future handover
     if (C.monitoring && C.monitoring.offered) {
       var M = C.monitor_offer || {};
-      h += sec('kxc-mon', '<p class="kxc-k">' + esc(t('mon_k')) + '</p><h3>' + esc(tf('mon_h', { p: M.price, per: t(M.per) })) + '</h3><p class="kxc-m">' + esc(t('mon_why')).replace('{s}', '<b>' + esc(C.monitoring.stage) + '</b>').replace('{h}', '<b>' + esc(C.monitoring.handover) + '</b>') + ' (<a href="' + esc(C.monitoring.source) + '">' + esc(t('project_page')) + '</a>).</p>' +
+      h += sec('kxc-mon', '<p class="kxc-k">' + esc(t('mon_k')) + '</p><h3>' + esc(tf('mon_h', { p: M.price, per: t(M.per) })) + '</h3><p class="kxc-m">' + esc(t('mon_why')).replace('{s}', '<b>' + esc(C.monitoring.stage) + '</b>').replace('{h}', '<b>' + esc(C.monitoring.handover) + '</b>') + ' (<a href="' + hu(C.monitoring.source) + '">' + esc(t('project_page')) + '</a>).</p>' +
         '<ul class="kxc-inc">' + (M.items || []).map(function (i) { return '<li>' + esc(t(i)) + '</li>'; }).join('') + '</ul><div class="kxc-row"><button class="kxc-btn l" type="button" id="kxc-mon-b">' + esc(t('mon_btn')) + '</button></div><p class="kxc-msg" id="kxc-mon-m" aria-live="polite"></p>');
     }
     // (20) questions
@@ -355,12 +356,12 @@
     if (logged) w += '<div class="kxc-row" style="margin-top:10px"><button class="kxc-btn l" type="button" id="kxc-save">' + esc(t('save_btn')) + '</button></div>' +
       (x.root ? '<label class="kxc-chk"><input type="checkbox" id="kxc-rem"' + (S.seen && S.seen.optin ? ' checked' : '') + '><span>' + esc(t('rem')) + '</span></label>' : '');
     if (x.root) w += '<form class="kxc-form" id="kxc-em" novalidate><label class="kxc-m" for="kxc-ee" style="flex-basis:100%">' + esc(t('em_lbl')) + '</label><input id="kxc-ee" type="email" autocomplete="email" placeholder="you@example.com" required><input class="kxc-hp" tabindex="-1" aria-hidden="true" name="hp"><button class="kxc-btn l" type="submit">' + esc(t('em_btn')) + '</button></form>';
-    if (w) h += sec('kxc-keep', '<p class="kxc-k">' + esc(t('keep_k')) + '</p><h3>' + esc(t('keep_h')) + '</h3>' + (n && n.url ? '<p class="kxc-m">' + esc(t('dossier')) + ' <a href="' + esc(n.url) + '">' + esc(n.name) + '</a>.</p>' : '') + w + '<p class="kxc-msg" id="kxc-keep-m" aria-live="polite"></p>');
+    if (w) h += sec('kxc-keep', '<p class="kxc-k">' + esc(t('keep_k')) + '</p><h3>' + esc(t('keep_h')) + '</h3>' + (n && n.url ? '<p class="kxc-m">' + esc(t('dossier')) + ' <a href="' + hu(n.url) + '">' + esc(n.name) + '</a>.</p>' : '') + w + '<p class="kxc-msg" id="kxc-keep-m" aria-live="polite"></p>');
     return h;
   }
   function panel(logged, I, x) {
     var name = I.name || x.domain || x.q;
-    var sum = '<p><b>' + esc(name) + '</b>' + (x.url ? '<br><span class="kxc-m">' + esc(x.url) + '</span>' : '') + (x.xurl ? '<br><span class="kxc-m">X-ray: <a href="' + esc(x.xurl) + '">' + esc(x.xurl.replace('https://', '')) + '</a></span>' : '') + '</p>';
+    var sum = '<p><b>' + esc(name) + '</b>' + (x.url ? '<br><span class="kxc-m">' + esc(x.url) + '</span>' : '') + (x.xurl ? '<br><span class="kxc-m">X-ray: <a href="' + hu(x.xurl) + '">' + esc(x.xurl.replace('https://', '')) + '</a></span>' : '') + '</p>';
     if (logged) return sum + '<p class="kxc-m">' + esc(t('pan_in')) + '</p><div class="kxc-row"><button class="kxc-btn" type="button" id="kxc-go">' + esc(t('go_btn')) + '</button></div><p class="kxc-msg" id="kxc-pan-m" aria-live="polite"></p>';
     var next = location.pathname + location.search + '#kxc-buy';
     return sum + '<p class="kxc-m">' + esc(t('pan_out')) + '</p>' +

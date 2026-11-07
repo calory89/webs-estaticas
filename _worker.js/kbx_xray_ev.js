@@ -61,6 +61,8 @@ function publicUrl(u) {
   if (!h.includes('.') || /^(localhost|.*\.local|.*\.internal|.*\.lan)$/.test(h)) return null;
   if (/^\d+\.\d+\.\d+\.\d+$/.test(h) && /^(10\.|127\.|0\.|169\.254\.|192\.168\.|172\.(1[6-9]|2\d|3[01])\.|100\.(6[4-9]|[7-9]\d|1[01]\d|12[0-7])\.)/.test(h)) return null;
   if (h.startsWith('[')) return null;
+  // sec13: same address rules as the desk review (no IP literals, wildcard-DNS hosts, odd ports or our own zone)
+  if (/^[\d.]+$/.test(h) || /(^|\.)(nip|sslip|xip)\.io$/.test(h) || /(^|\.)localhost$/.test(h) || h === 'kolaboro.com' || h.endsWith('.kolaboro.com') || (x.port && x.port !== '80' && x.port !== '443')) return null;
   return x;
 }
 // read a response body up to max bytes (abort beyond), returns Uint8Array or null when too large
@@ -763,9 +765,18 @@ const NUM = { location: 11, satellite: 12, images: 13, ppm: 14, market: 15, deve
 const TMO = { location: 12000, satellite: 20000, images: 16000, ppm: 15000, market: 15000, developer: 6000, law: 15000, similar: 15000 };
 async function fetchPage(url) {
   const u = publicUrl(url); if (!u) throw new Error('not a public http(s) URL');
-  const r = await withTimeout(fetch(u.toString(), { headers: { 'user-agent': BUA, accept: 'text/html,application/xhtml+xml;q=0.9,*/*;q=0.5', 'accept-language': 'en' }, redirect: 'follow' }), 9000, 'page');
+  // sec13: follow redirects by hand so every hop passes publicUrl (a public page must not bounce us to a private or internal address)
+  let r, cur = u;
+  for (let hop = 0; hop < 5; hop++) {
+    r = await withTimeout(fetch(cur.toString(), { headers: { 'user-agent': BUA, accept: 'text/html,application/xhtml+xml;q=0.9,*/*;q=0.5', 'accept-language': 'en' }, redirect: 'manual' }), 9000, 'page');
+    if (r.status < 300 || r.status >= 400 || !r.headers.get('location')) break;
+    let nx = null; try { nx = publicUrl(new URL(r.headers.get('location'), cur).toString()); } catch (e) {}
+    if (!nx) throw new Error('redirect to a non-public address');
+    try { r.body && r.body.cancel(); } catch (e) {}
+    cur = nx; if (hop === 4) throw new Error('too many redirects');
+  }
   const b = await readMax(r, 3000000); if (!b) throw new Error('page larger than 3 MB');
-  return { url: u.toString(), final_url: r.url || u.toString(), html: new TextDecoder().decode(b), status: r.status, bytes: b.length, sha256: await sha256(b), fetched: now() };
+  return { url: u.toString(), final_url: cur.toString(), html: new TextDecoder().decode(b), status: r.status, bytes: b.length, sha256: await sha256(b), fetched: now() };
 }
 // page = { url, final_url, html, text?, fetched?, sha256? }; hint = { project_id, developer, name, market, country, price, currency, size_m2, stage, location_text }
 export async function evRun(page, hint, env, ctx, onCard, opts) {

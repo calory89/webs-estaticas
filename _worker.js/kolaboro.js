@@ -369,7 +369,7 @@ function propertyLinks(html, base, max) {
 // sitemap.xml: one cheap request; used when the page itself links to few candidates (sites built in the browser often have no links in their HTML)
 async function sitemapLinks(base, ms) {
   let b; try { b = new URL(base); } catch (e) { return []; }
-  const get = async p => { try { const r = await fetch(new URL(p, b.origin).toString(), { headers: { 'user-agent': 'Mozilla/5.0 (compatible; KolaboroResearchAgent/1.0; +https://kolaboro.com/data-policy)' }, redirect: 'follow', signal: AbortSignal.timeout(ms) }); return r.ok ? (await r.text()).slice(0, 400000) : ''; } catch (e) { return ''; } };
+  const get = async p => { try { const v = okUrl(new URL(p, b.origin).toString()); if (!v) return ''; const r = await fetchPage(v, ms); return r && r.html ? r.html.slice(0, 400000) : ''; } catch (e) { return ''; } };   // sec13: every redirect hop re-checked by fetchPage
   let x = await get('/sitemap.xml');
   if (/<sitemapindex/i.test(x)) { const sub = [...x.matchAll(/<loc>\s*([^<\s]+)\s*<\/loc>/gi)].map(m => m[1]).find(l => { try { return sameSite(new URL(l), b) && /page|propert|project|listing|villa|residen|post_type|sitemap-?0?1|sitemap\.xml/i.test(l); } catch (e) { return false; } }); x = sub ? await get(new URL(sub).pathname + new URL(sub).search) : ''; }
   const out = [];
@@ -443,7 +443,9 @@ function readable(html) {
 
 const PILOT = new WeakSet();
 // identifies this worker to the database for usage logging and timestamp storage (private: the worker source is not served)
-const WKEY = 'kbw_05b9a76d1e8195c0d4b0ef74e8d01b5d16b0276008bbc0d0';
+// sec13: the Cloudflare secret KB_WKEY replaces this built-in value when it is set (see useEnv); rotate the key once the secret is in place
+let WKEY = 'kbw_05b9a76d1e8195c0d4b0ef74e8d01b5d16b0276008bbc0d0';
+export function useEnv(env) { if (env && typeof env.KB_WKEY === 'string' && /^kbw_[0-9a-f]{32,}$/.test(env.KB_WKEY) && env.KB_WKEY !== WKEY) WKEY = env.KB_WKEY; }
 async function rateLimited(req, ctx) {
   if (PILOT.has(req)) return false;
   const ip0 = req.headers.get('cf-connecting-ip') || 'x';
@@ -1328,7 +1330,7 @@ function marketStats(cases) {
       transparency_index: n >= 3 ? Math.floor((0.6 * disc + 0.3 * conf + 0.1 * clean) * 100 + 0.5 + 1e-9) : null };
   }).sort((x, y) => (y.transparency_index ?? -1) - (x.transparency_index ?? -1) || y.projects - x.projects);
 }
-const csvCell = v => { v = v === null || v === undefined ? '' : typeof v === 'object' ? JSON.stringify(v) : String(v); return /[",\n]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; };
+const csvCell = v => { v = v === null || v === undefined ? '' : typeof v === 'object' ? JSON.stringify(v) : String(v); if (/^[=+\-@\t\r]/.test(v) && !/^-?\d+(\.\d+)?$/.test(v)) v = "'" + v; return /[",\n\r]/.test(v) ? '"' + v.replace(/"/g, '""') + '"' : v; };   // sec13: no spreadsheet formulas from text cells
 const OPEN_DOC = {
   name: 'Kolaboro open data API', version: '1.0', license: 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)', auth: 'none', rate: 'cached 10 minutes at the edge',
   note: 'Records use project ids; each project has its own page with its name and sourced facts at /projects/{slug}/, except projects in Sumba (conflict of interest). Scores describe what is public, not whether it is genuine.',
