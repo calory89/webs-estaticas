@@ -104,7 +104,8 @@ BASE_PLACES = [
 
 # Guide photos imported from Wikimedia Commons into KV by claude-ops jobs/tst_images.py (3:2 crop, 1280x853).
 IMPORTED = {"sumba-ikat-weaving-where-to-buy", "sumbanese-food", "sumba-travel-costs", "getting-around-sumba", "sumba-itinerary-5-7-10-days",
-            "best-time-to-visit-sumba", "sumba-travel-safety-health", "surfing-in-sumba", "sumba-horses-sandalwood-pony"}
+            "best-time-to-visit-sumba", "sumba-travel-safety-health", "surfing-in-sumba", "sumba-horses-sandalwood-pony",
+            "wairinding-hill", "walakiri-beach", "puru-kambera", "rende-village", "waimarang-waterfall", "weekuri-lagoon", "mandorak-beach", "ratenggaro-village", "kodi", "tambolaka-town", "praijing-village", "lapopu-waterfall", "manupeu-tanah-daru-national-park", "waikabubak-town", "pasola-2027-dates"}
 
 def candidate_image(a):
     c = a.get("image_candidate")
