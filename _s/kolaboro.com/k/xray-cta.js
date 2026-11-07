@@ -43,7 +43,7 @@
   function gaps() {
     var G = gapSet(), I = ident(), out = [];
     var permit = fact(/permit|licen[cs]e|PBG|IMB|RERA|registration|DHSUD|TEDUH|LTS/i, /[A-Z0-9]{3,}/i);
-    var dep = fact(/escrow|deposit|guarantee|trust account/i);
+    var dep = fact(/escrow|deposit|bank guarantee|trust account|buyer protection/i); if (dep && /return|income|yield|rent|profit|roi/i.test(dep.k + ' ' + dep.v)) dep = null;
     var sat = find(/^satellite$/), loc = find(/^location$/), dev = find(/^developer$/), comp = find(/company|register|lookup|domain/);
     var satD = sat && sat.data && sat.data.scene && sat.data.scene.date;
     out.push({ k: 'land', t: 'Land title and zoning', on: 'Land certificates are not public online in most markets. The X-ray only reads what the developer publishes about the land' + (fact(/title|certificate|tenure|leasehold|freehold|SHM|HGB|chanote/i) ? ': "' + fact(/title|certificate|tenure|leasehold|freehold|SHM|HGB|chanote/i).v + '".' : '.'),
