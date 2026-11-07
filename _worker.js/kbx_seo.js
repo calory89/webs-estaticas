@@ -544,6 +544,10 @@ export async function handle(req, u, env, ctx, shell, inner) {
   if (p === '/' + INDEXNOW_KEY + '.txt') return new Response(INDEXNOW_KEY, { headers: { 'content-type': 'text/plain; charset=utf-8', 'cache-control': 'public, max-age=86400' } });
   if (p === '/api/seo/lastmod') return lastmodRoute(env);   // batch 15: true lastmod state (published as /data/lastmod.json by the SEO workflow)
   if (/^\/(countries|rankings|vs|new|embed\/(delay|project|widgets)|engineering\/seo|press\/delivery-index)(\/[^?#.]*)?$/.test(p) && !p.endsWith('/')) return new Response(null, { status: 301, headers: { location: p + '/' + u.search } });
+  // batch 15 (s15b): hub and guide pages are cached at the edge per deploy (every data publish is a deploy), so a crawler gets the
+  // HTML without the data join (TTFB). Only clean URLs; a query string always renders fresh.
+  const ckey = req.method === 'GET' && !u.search && env && env.CF_PAGES_COMMIT_SHA && /^\/(countries|rankings|vs|new|press\/delivery-index|embed\/widgets)\//.test(p) && typeof caches !== 'undefined' ? new Request(SITE + '/__seo_html/v1/' + env.CF_PAGES_COMMIT_SHA + p) : null;
+  if (ckey) { try { const hit = await caches.default.match(ckey); if (hit) { const h = new Headers(hit.headers); h.set('x-seo-cache', 'hit'); h.set('cache-control', 'no-cache'); return new Response(hit.body, { status: hit.status, headers: h }); } } catch (e) {} }
   let B; try { B = await base(env, inner); } catch (e) { return new Response('Data temporarily unavailable', { status: 503, headers: { 'retry-after': '60', 'content-type': 'text/plain' } }); }
   if (p === '/sitemap_index.xml') return sitemaps(env, B, 'index');
   let m = /^\/sitemaps\/([a-z0-9-]+)\.xml$/.exec(p); if (m) return sitemaps(env, B, m[1]);
@@ -571,6 +575,11 @@ export async function handle(req, u, env, ctx, shell, inner) {
   else if (p === '/press/delivery-index/') R = pDeliveryIndex(B, null);
   else if ((m = /^\/press\/delivery-index\/(\d{4}-\d{2})\/$/.exec(p))) R = pDeliveryIndex(B, m[1]);
   if (!R) return nf();
-  return shellOut(shell, R);
+  const res = await shellOut(shell, R);
+  if (!ckey || res.status !== 200) return res;
+  const html = await res.text(), h = new Headers(res.headers); h.set('cache-control', 'max-age=3600');
+  try { const put = caches.default.put(ckey, new Response(html, { status: 200, headers: h })); if (ctx && ctx.waitUntil) ctx.waitUntil(put.catch(() => {})); } catch (e) {}
+  const h2 = new Headers(res.headers); h2.set('x-seo-cache', 'miss'); h2.set('cache-control', 'no-cache');
+  return new Response(html, { status: 200, headers: h2 });
 }
 export { sitemaps, countryList, hubUrls };
