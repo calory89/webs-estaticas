@@ -5,7 +5,7 @@ WA = "https://www.waingapu.com/"
 BRIEFS = [
 {
  "section": "business", "slug": "east-sumba-first-customary-land-certificate", "date": "2026-11-07", "time": "20:30",
- "dateline": "WAINGAPU", "kind": "brief", "top": True,
+ "dateline": "WAINGAPU", "kind": "brief",
  "en": {"title": "East Sumba could issue NTT's first customary land certificate",
   "dek": "Three customary communities have applied for communal land titles at the East Sumba land office. One file is nearly finished.",
   "body": "<p>Three customary law communities (<em>masyarakat hukum adat</em>) in East Sumba are applying for communal certificates over their land at the regency's land office (ATR/BPN), Deputy Regent Yonathan Hani said on Friday evening, 7 November. One of the three files is nearly complete, he said. If that certificate is issued, it could be the first customary land certificate in East Nusa Tenggara (NTT).</p><p>He spoke at a farewell for the outgoing head of the East Sumba land office, Kuntoro Hadi Saputra, who is moving to the West Manggarai office and who pushed the process forward. His successor, Danial Imanuel Liunesi, now carries it on. According to the report, the process requires the customary institution to be organised and formally recognised, and the community's rights over its territory to be clearly defined. No certificate has been issued yet.</p><h2>What it means</h2><p>Land on Sumba is often subject to customary claims, and unclear titles can lead to disputes. Formal communal certificates would make it clearer who holds rights over an area. Anyone planning to lease land, build or invest on the island should follow how these first files are handled.</p>"},
