@@ -35,6 +35,7 @@ let jm = null;
 let jb = null;
 let rr = null;
 let kb = null, kbx = null, ksat = null, klk = null;
+const KXR_V = 'x11a1'; let kxr = null; const KXR = /^\/api\/kb\/xray(?:\/stats)?\/?$|^\/api\/v1\/xray(?:\/openapi\.json)?\/?$|^\/x\/[0-9a-f]{64}(?:\/|\.json|\/vc)?$/;   // b11 x11a: Project X-ray (keep equal to PATHS in kbx_xray.js)
 let kfw = null; const KFW = /^\/api\/v1\/(?:projects|developers)(?:\/[a-z0-9-]{1,90})?\/?$|^\/api\/v1\/(?:search-index|watch)$|^\/(?:projects|developers)\/[a-z0-9-]{1,90}\/feed\.(?:atom|json)$/;   // b9a: public named API, feeds, watch (keep equal to PATHS9 in kbx_follow.js)
 let kog = null, kbk = null; const KB10 = /^\/og\/(?:projects|developers)\/[a-z0-9-]{1,90}\.png$|^\/bulk-check\/?$|^\/api\/kb\/bulk\/?$/;   // b10c: keep equal to PATHS in kbx_og.js + kbx_bulk.js
 let kxev = null; const KXEV = /^\/api\/xev(?:\/sat\.png)?$/;   // x11b (batch 11): X-ray evidence cards + Sentinel-2 crop, keep equal to PATHS in kbx_xray_ev.js
@@ -220,6 +221,10 @@ export default {
     // kolaboro.com (b9a, batch 9): public named-facts API /api/v1/projects/<slug>, search index, Atom/JSON feeds, email watch (see kbx_follow.js)
     // kolaboro.com (b10b, batch 10): DID document for did:web:kolaboro.com, the issuer of Kolaboro's W3C verifiable credentials (see kbx_acct.js)
     if (host === 'kolaboro.com' && u.pathname === '/.well-known/did.json' && (req.method === 'GET' || req.method === 'HEAD')) { const ka = await import('./kbx_acct.js'); return ka.did(env); }
+    // kolaboro.com (b11 x11a, batch 11): Project X-ray stream /api/kb/xray, API /api/v1/xray, sealed X-rays /x/<root>/ (see kbx_xray.js)
+    if (host === 'kolaboro.com' && KXR.test(u.pathname)) { if (!kxr) kxr = await import('./kbx_xray.js');
+      const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
+      const r = await kxr.handle(req, u, env, ctx, shell); if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r; }
     if (host === 'kolaboro.com' && KFW.test(u.pathname)) { if (!kfw) kfw = await import('./kbx_follow.js'); const r = await kfw.handle(req, u, env, ctx); if (r) return r; }
     // kolaboro.com (x11c, batch 11): Project X-ray conversion block API, "X-ray this project" partner button, admin X-rays tab (see kbx_xc.js)
     if (host === 'kolaboro.com' && KXC.test(u.pathname)) { if (!kxc) kxc = await import('./kbx_xc.js'); return kxc.handle(req, u, env, ctx); }
@@ -255,7 +260,7 @@ export default {
       const base = kbHeaders(await this.site(new Request(shell, req), env, ctx, shell, host), shell);
       return kb.ssr(base, u, isP ? 'p' : 'm');
     }
-    if (host === 'kolaboro.com') { const kr = kbHeaders(await this.site(req, env, ctx, u, host), u), kn = kbNonce(kr); if (req.method === 'GET' && /^\/admin\/?$/.test(u.pathname) && /text\/html/.test(kr.headers.get('content-type') || '')) return new HTMLRewriter().on('body', { element(e) { e.append('<script' + kn + ' src="/__k/ktraffic.js?v=1" defer></script><script' + kn + ' src="/__k/kxc-admin.js?v=1" defer></script>', { html: true }); } }).transform(kr); if (req.method === 'GET' && /^\/check\/?$/.test(u.pathname) && u.searchParams.get('utm_source') === 'realhunt' && /text\/html/.test(kr.headers.get('content-type') || '')) return new HTMLRewriter().on('body', { element(e) { e.append('<script' + kn + ' src="/__k/kbrh.js?v=1" defer></script>', { html: true }); } }).transform(kr); return kbLd(kr, u, env); }
+    if (host === 'kolaboro.com') { let kr = kbHeaders(await this.site(req, env, ctx, u, host), u); const kn = kbNonce(kr); if (req.method === 'GET' && /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?check\/?$/.test(u.pathname) && kr.status === 200 && /text\/html/.test(kr.headers.get('content-type') || '')) kr = new HTMLRewriter().on('body', { element(e) { e.append('<script' + kn + ' src="/k/xray.js?v=' + KXR_V + '" defer></script><script' + kn + ' src="/k/xray-cta.js?v=1" defer></script>', { html: true }); } }).transform(kr); if (req.method === 'GET' && /^\/admin\/?$/.test(u.pathname) && /text\/html/.test(kr.headers.get('content-type') || '')) return new HTMLRewriter().on('body', { element(e) { e.append('<script' + kn + ' src="/__k/ktraffic.js?v=1" defer></script><script' + kn + ' src="/__k/kxc-admin.js?v=1" defer></script>', { html: true }); } }).transform(kr); if (req.method === 'GET' && /^\/check\/?$/.test(u.pathname) && u.searchParams.get('utm_source') === 'realhunt' && /text\/html/.test(kr.headers.get('content-type') || '')) return new HTMLRewriter().on('body', { element(e) { e.append('<script' + kn + ' src="/__k/kbrh.js?v=1" defer></script>', { html: true }); } }).transform(kr); return kbLd(kr, u, env); }
     return this.site(req, env, ctx, u, host);
   },
   async site(req, env, ctx, u, host) {
