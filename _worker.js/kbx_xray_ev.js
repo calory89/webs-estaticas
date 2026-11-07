@@ -777,9 +777,13 @@ export async function evRun(page, hint, env, ctx, onCard, opts) {
   if (!S.market && hint.market) { S.market = isCoi(hint.market) ? null : hint.market; S.coi = isCoi(hint.market); }
   if (!S.country && hint.country) S.country = ctry(hint.country);
   S.ps = priceSizeOnPage(page.text || htmlText(html));
-  const run = id => withTimeout(RUN[id](S, env, ctx), TMO[id], TITLES[id]).then(emit, e => fail(id, e));
+  // conflict of interest: once the project is placed in that area, no card text names it (strings are replaced, items dropped)
+  const scrub = c => { if (!S.coi || !c) return c; const rx = /sumba/i, deep = o => { if (typeof o === 'string') return rx.test(o) ? '(not shown)' : o; if (Array.isArray(o)) return o.map(deep); if (o && typeof o === 'object') { const r = {}; for (const k of Object.keys(o)) r[k] = deep(o[k]); return r; } return o; };
+    c.items = (c.items || []).filter(it => !rx.test(JSON.stringify(it))); c.data = deep(c.data || {}); c.sources = deep(c.sources || []); c.summary = deep(c.summary); return c; };
+  let locDone = null;
+  const run = id => withTimeout(RUN[id](S, env, ctx), TMO[id], TITLES[id]).then(async c => { if (id !== 'location' && locDone) await locDone; return emit(scrub(c)); }, e => fail(id, e));
   // location first decides pin, market and country (it is fast unless Nominatim is slow); images and developer do not need it
-  const loc = only.has('location') || only.has('satellite') || (!S.market && (only.has('ppm') || only.has('market') || only.has('law') || only.has('similar'))) ? run('location') : Promise.resolve(null);
+  const loc = locDone = only.has('location') || only.has('satellite') || (!S.market && (only.has('ppm') || only.has('market') || only.has('law') || only.has('similar'))) ? run('location') : Promise.resolve(null);
   const jobs = {};
   for (const id of ['images', 'developer']) if (only.has(id)) jobs[id] = run(id);
   for (const id of ['satellite', 'ppm', 'market', 'law', 'similar']) if (only.has(id)) jobs[id] = loc.then(() => run(id));
