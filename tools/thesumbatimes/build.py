@@ -11,7 +11,7 @@ try:
     from images import IMAGES
 except Exception:
     IMAGES = {}
-from travel import SLUGS, T, HERO_IMG, BASE_PLACES, load_guides, candidate_image
+from travel import SLUGS, T, N, HERO_IMG, BASE_PLACES, load_guides, candidate_image
 _GUIDES = load_guides()
 _have = {a["slug"] for a in ARTICLES}
 ARTICLES = ARTICLES + [g for g in _GUIDES if g["slug"] not in _have]
@@ -25,7 +25,7 @@ CONTACT = "info@ecobeachcity.com"
 WITA = datetime.timezone(datetime.timedelta(hours=8))
 NOW = datetime.datetime.now(WITA)
 
-NAV = ["plan", "news", "travel", "business", "culture", "living", "projects", "guides", "low-tide"]
+NAV = ["news", "travel", "business", "culture", "living", "projects", "guides", "low-tide", "plan"]
 GROUP = {"getting-here": "travel", "things-to-do": "travel", "where-to-stay": "travel"}
 LEGACY = ["getting-here", "things-to-do", "where-to-stay"]
 HTML_LANG = {"en": "en", "es": "es", "id": "id"}
@@ -39,7 +39,7 @@ WD = {"en": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sund
 
 X = {
  "en": {"sec": {"news": "News", "travel": "Travel", "business": "Business & investment", "culture": "Culture", "living": "Living on Sumba", "projects": "Projects", "guides": "Guides", "low-tide": "Low Tide"},
-        "sdesc": {"travel": "Getting here, getting around and what to see.", "business": "Land rules for foreigners, infrastructure, budgets, tourism figures and the economy of the island.", "living": "Healthcare, schools, visas, cost of living, safety and seasons for people who live here.", "guides": "Our evergreen guides to Sumba: how to get here, culture, beaches, where to stay and what is being built.", "culture": "Marapu, the Pasola, ikat weaving and the traditional villages of Sumba."},
+        "sdesc": {"travel": "Travel guides to Sumba: getting here, getting around, when to go, what it costs and the beaches, villages and waterfalls worth the drive.", "business": "Land rules for foreigners, infrastructure, budgets, tourism figures and the economy of the island.", "living": "Healthcare, schools, visas, cost of living, safety and seasons for people who live here.", "guides": "Our evergreen guides to Sumba: how to get here, culture, beaches, where to stay and what is being built.", "culture": "Marapu, the Pasola, ikat weaving and the traditional villages of Sumba."},
         "daily": "New stories every morning at 6:00 Sumba time (WITA)", "desk": "By The Sumba Times desk", "pub": "Published", "upd": "Updated",
         "min": "min read", "ticker": "Latest", "today": "Today", "newest": "New", "toc": "In this article", "share": "Share", "copy": "Copy link", "copied": "Link copied",
         "related": "Related stories", "search": "Search", "search_ph": "Search The Sumba Times", "search_none": "No stories found.", "photo": "Photo", "ai": "AI-generated illustration",
@@ -49,7 +49,7 @@ X = {
         "about_title": "About The Sumba Times",
         "about_body": "<p>The Sumba Times covers news, travel, business and everyday life on the island of Sumba, in East Nusa Tenggara, Indonesia, in English, Spanish and Indonesian. New stories are published every morning at 6:00 Sumba time (WITA).</p><h2>Who publishes it</h2><p>The Sumba Times is published by Eco Beach City, which operates Villa Eco Beach on Sumba. We say so on every page. We cover the whole island, including other hotels, projects and businesses, and we do not report on Eco Beach City's own commercial or legal matters.</p><h2>Our standards</h2><ul><li>Every story is based on named, linked sources: local and national media, official agencies and regency governments.</li><li>We do not invent facts. When a number comes from a single source, we say so.</li><li>No paid placements. No rankings with our publisher first.</li><li>Photos are real and credited with their licence. If we ever use an AI-generated illustration, it is labelled as such and never shows real people, sacred rituals or other hotels.</li></ul><h2>Corrections</h2><p>If you spot an error, write to " + CONTACT + " and we will correct it and note the change.</p>"},
  "es": {"sec": {"news": "Noticias", "travel": "Viajar", "business": "Negocios e inversión", "culture": "Cultura", "living": "Vivir en Sumba", "projects": "Proyectos", "guides": "Guías", "low-tide": "Marea baja"},
-        "sdesc": {"travel": "Cómo llegar, cómo moverse y qué ver.", "business": "Normas sobre la tierra para extranjeros, infraestructuras, presupuestos, cifras de turismo y la economía de la isla.", "living": "Sanidad, colegios, visados, coste de vida, seguridad y estaciones para quien vive aquí.", "guides": "Nuestras guías de Sumba: cómo llegar, cultura, playas, dónde dormir y qué se está construyendo.", "culture": "Marapu, la Pasola, los tejidos ikat y los pueblos tradicionales de Sumba."},
+        "sdesc": {"travel": "Guías de viaje de Sumba: cómo llegar, cómo moverse, cuándo ir, cuánto cuesta y las playas, pueblos y cascadas que merecen el viaje.", "business": "Normas sobre la tierra para extranjeros, infraestructuras, presupuestos, cifras de turismo y la economía de la isla.", "living": "Sanidad, colegios, visados, coste de vida, seguridad y estaciones para quien vive aquí.", "guides": "Nuestras guías de Sumba: cómo llegar, cultura, playas, dónde dormir y qué se está construyendo.", "culture": "Marapu, la Pasola, los tejidos ikat y los pueblos tradicionales de Sumba."},
         "daily": "Noticias nuevas cada mañana a las 6:00, hora de Sumba (WITA)", "desk": "Por la redacción de The Sumba Times", "pub": "Publicado", "upd": "Actualizado",
         "min": "min de lectura", "ticker": "Última hora", "today": "Hoy", "newest": "Nuevo", "toc": "En este artículo", "share": "Compartir", "copy": "Copiar enlace", "copied": "Enlace copiado",
         "related": "Noticias relacionadas", "search": "Buscar", "search_ph": "Buscar en The Sumba Times", "search_none": "No hay resultados.", "photo": "Foto", "ai": "Ilustración generada con IA",
@@ -59,7 +59,7 @@ X = {
         "about_title": "Sobre The Sumba Times",
         "about_body": "<p>The Sumba Times cuenta las noticias, los viajes, los negocios y la vida diaria de la isla de Sumba, en Nusa Tenggara Oriental (Indonesia), en inglés, español e indonesio. Publicamos noticias nuevas cada mañana a las 6:00, hora de Sumba (WITA).</p><h2>Quién lo publica</h2><p>The Sumba Times lo publica Eco Beach City, que gestiona Villa Eco Beach en Sumba. Lo decimos en todas las páginas. Cubrimos toda la isla, incluidos otros hoteles, proyectos y negocios, y no informamos sobre los asuntos comerciales o legales de Eco Beach City.</p><h2>Nuestras normas</h2><ul><li>Cada noticia se basa en fuentes con nombre y enlace: medios locales y nacionales, organismos oficiales y gobiernos de las regencias.</li><li>No inventamos datos. Cuando una cifra viene de una sola fuente, lo decimos.</li><li>Sin contenidos pagados. Sin rankings con nuestro editor en primer lugar.</li><li>Las fotos son reales y llevan su autor y licencia. Si alguna vez usamos una ilustración generada con IA, lo indicamos y nunca muestra personas reales, rituales sagrados ni otros hoteles.</li></ul><h2>Correcciones</h2><p>Si ves un error, escribe a " + CONTACT + " y lo corregiremos indicando el cambio.</p>"},
  "id": {"sec": {"news": "Berita", "travel": "Wisata", "business": "Bisnis & investasi", "culture": "Budaya", "living": "Tinggal di Sumba", "projects": "Proyek", "guides": "Panduan", "low-tide": "Air Surut"},
-        "sdesc": {"travel": "Cara ke Sumba, berkeliling dan tempat yang layak dikunjungi.", "business": "Aturan tanah bagi warga asing, infrastruktur, anggaran daerah, data pariwisata dan ekonomi pulau.", "living": "Kesehatan, sekolah, visa, biaya hidup, keamanan dan musim bagi yang tinggal di sini.", "guides": "Panduan kami tentang Sumba: cara ke sini, budaya, pantai, tempat menginap dan apa yang sedang dibangun.", "culture": "Marapu, Pasola, tenun ikat dan kampung adat Sumba."},
+        "sdesc": {"travel": "Panduan wisata Sumba: cara ke sana, transportasi, waktu terbaik, biaya, serta pantai, kampung adat dan air terjun yang layak dikunjungi.", "business": "Aturan tanah bagi warga asing, infrastruktur, anggaran daerah, data pariwisata dan ekonomi pulau.", "living": "Kesehatan, sekolah, visa, biaya hidup, keamanan dan musim bagi yang tinggal di sini.", "guides": "Panduan kami tentang Sumba: cara ke sini, budaya, pantai, tempat menginap dan apa yang sedang dibangun.", "culture": "Marapu, Pasola, tenun ikat dan kampung adat Sumba."},
         "daily": "Berita baru setiap pagi pukul 06.00 waktu Sumba (WITA)", "desk": "Oleh redaksi The Sumba Times", "pub": "Terbit", "upd": "Diperbarui",
         "min": "menit baca", "ticker": "Terbaru", "today": "Hari ini", "newest": "Baru", "toc": "Dalam artikel ini", "share": "Bagikan", "copy": "Salin tautan", "copied": "Tautan disalin",
         "related": "Berita terkait", "search": "Cari", "search_ph": "Cari di The Sumba Times", "search_none": "Tidak ada hasil.", "photo": "Foto", "ai": "Ilustrasi buatan AI",
@@ -71,7 +71,21 @@ X = {
 }
 
 for _l in X: X[_l]["sec"]["plan"] = T[_l]["plan"]
+X["en"]["sdesc"]["projects"] = "New hotels, roads, ports and developments on Sumba: what is being built across the island, by whom and what it means."
+X["es"]["sdesc"]["projects"] = "Nuevos hoteles, carreteras, puertos y desarrollos en Sumba: qué se construye en la isla, quién lo hace y qué supone."
+X["id"]["sdesc"]["projects"] = "Hotel, jalan, pelabuhan dan pembangunan baru di Sumba: apa yang dibangun di seluruh pulau, oleh siapa dan apa dampaknya."
 def esc(s): return html.escape(str(s), quote=True)
+SUF = " · The Sumba Times"
+def seo_title(t):
+    """Keep <title> under ~65 chars: drop the subtitle after a colon, then the brand suffix, then cut on a word."""
+    if not t.endswith(SUF) or len(t) <= 65: return t if len(t) <= 70 else t[:67].rsplit(" ", 1)[0] + "…"
+    core = t[:-len(SUF)]
+    if ":" in core and len(core.split(":")[0]) >= 18: core = core.split(":")[0]
+    if len(core) + len(SUF) <= 65: return core + SUF
+    return core if len(core) <= 70 else core[:67].rsplit(" ", 1)[0] + "…"
+def seo_desc(d):
+    d = re.sub(r"\s+", " ", d).strip()
+    return d if len(d) <= 158 else d[:155].rsplit(" ", 1)[0].rstrip(",;:") + "…"
 def sec_name(l, s): return X[l]["sec"].get(s) or UI[l]["sections"].get(s, s)
 def sec_desc(l, s): return X[l]["sdesc"].get(s) or UI[l]["section_desc"].get(s, "")
 def group_of(a): return GROUP.get(a["section"], a["section"])
@@ -117,6 +131,7 @@ def words(a, l): return len(re.sub(r"<[^>]+>", " ", body_raw(a, l)).split())
 def mins(a, l): return max(1, round(words(a, l) / 220))
 def body_raw(a, l):
     b = a[l]["body"]
+    b = re.sub(r"(?<!<div class=\"tw\">)<table", '<div class="tw"><table', b).replace("</table>", "</table></div>").replace("</table></div></div>", "</table></div>")
     if a.get("table"): b = b.replace("{TABLE}", stay_table(l))
     return b
 def lead_item():
@@ -139,8 +154,8 @@ img{max-width:100%;height:auto}picture{display:block}.lead img{width:100%;aspect
 header.m{border-bottom:3px double var(--ink);padding:16px 0 10px;text-align:center}
 .mt{font-family:'Cormorant Garamond',Georgia,serif;font-weight:700;font-size:clamp(40px,9vw,82px);line-height:1;letter-spacing:.005em;text-decoration:none;display:inline-block}
 .tg{font:12.5px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:var(--muted);letter-spacing:.08em;text-transform:uppercase;margin-top:8px}
-nav.s{position:relative}nav.s .in{display:flex;gap:20px;overflow-x:auto;white-space:nowrap;padding:10px 0;border-bottom:1px solid var(--line);font:600 14px -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;scrollbar-width:none}
-nav.s .in::-webkit-scrollbar{display:none}nav.s a{text-decoration:none;padding:4px 0}nav.s a.on{border-bottom:2px solid var(--ink)}
+nav.s{position:relative}nav.s .in{display:flex;gap:20px;padding-right:30px!important;overflow-x:auto;white-space:nowrap;padding:10px 0;border-bottom:1px solid var(--line);font:600 14px -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;scrollbar-width:none}
+nav.s .in::-webkit-scrollbar{display:none}nav.s a{text-decoration:none;padding:4px 0}nav.s a.pl{margin-left:auto;color:var(--red)}nav.s a.on{border-bottom:2px solid var(--ink)}
 nav.s:after{content:"";position:absolute;right:0;top:0;bottom:1px;width:28px;background:linear-gradient(90deg,transparent,var(--bg));pointer-events:none}
 .ticker{display:flex;gap:14px;align-items:baseline;border-bottom:1px solid var(--line);padding:9px 0;font:14px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;overflow-x:auto;white-space:nowrap;scrollbar-width:none}
 .ticker b{color:var(--red);text-transform:uppercase;letter-spacing:.08em;font-size:12px}.ticker a{text-decoration:none}.ticker time{color:var(--muted);margin-right:5px;font-variant-numeric:tabular-nums}
@@ -154,7 +169,7 @@ h2{font-size:23px;line-height:1.3;margin:1.6em 0 .4em}h3{font-size:21px;line-hei
 .crumbs{font:13px -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:var(--muted);margin:18px 0 4px}.crumbs a{text-decoration:none}
 figure{margin:0 0 18px}figure img{width:100%;height:auto;display:block;background:var(--line);border-radius:2px}
 figcaption{font:13px/1.45 -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:var(--muted);padding-top:7px}figcaption .ai{color:var(--red);font-weight:700}
-article p,article li{font-size:19px}article ul,article ol{padding-left:22px}article li{margin:.35em 0}
+article p,article li{font-size:19px}.body>p:first-of-type:first-letter{float:left;font:700 64px/.82 'Cormorant Garamond',Georgia,serif;margin:6px 8px 0 0;color:var(--ink)}article ul,article ol{padding-left:22px}article li{margin:.35em 0}
 .dl{font:700 14px -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;letter-spacing:.06em}
 ol.regrets{background:var(--card);border:1px solid var(--line);padding:18px 18px 18px 42px;border-radius:6px}.note{font-size:16px!important;color:var(--muted)}
 .toc{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:12px 16px;margin:0 0 20px;font:15px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif}.toc b{display:block;margin-bottom:4px}.toc ol{margin:0;padding-left:20px}.toc a{text-decoration:none}
@@ -195,6 +210,30 @@ footer{border-top:3px double var(--ink);margin-top:44px;padding:20px 0 40px;font
 .map{height:460px;border-radius:6px;overflow:hidden;background:var(--card);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;margin:14px 0 6px}.map button{padding:12px 18px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:600 15px -apple-system,sans-serif;cursor:pointer}
 .maplibregl-popup-content{font:14px/1.4 -apple-system,sans-serif;color:#1d1b18}
 @media(max-width:600px){.facts dl{grid-template-columns:1fr}.facts dt{margin-top:6px}.hero{min-height:480px}.hv{padding:22px 18px}}
+header.m{position:relative}.ear{position:absolute;top:22px;width:200px;border:1px solid var(--ink);padding:7px 9px;font:12px/1.35 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;text-align:left;color:var(--muted)}.ear b{display:block;color:var(--ink);text-transform:uppercase;letter-spacing:.06em;font-size:10.5px}.ear.l{left:0}.ear.r{right:0;text-align:right}
+.rh{font:800 12.5px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;letter-spacing:.11em;text-transform:uppercase;margin:0 0 10px;padding-top:7px;border-top:3px solid var(--ink)}.rh a{text-decoration:none}
+.fp{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2.3fr) minmax(0,1.15fr);gap:0;padding:18px 0 22px;border-bottom:1px solid var(--ink)}
+.fp>.brf{padding-right:20px;border-right:1px solid var(--line)}.fp>.lead{padding:0 22px}.fp>.rail{padding-left:20px;border-left:1px solid var(--line)}
+.lead h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(32px,4.2vw,50px);line-height:1.03;margin:.2em 0 .25em}.lead h2 a{text-decoration:none}.lead .dek{font-size:19.5px}
+.rel{list-style:none;padding:0;margin:12px 0 0;border-top:1px solid var(--line)}.rel li{padding:8px 0;border-bottom:1px solid var(--line);font:600 15.5px/1.35 Georgia,serif}.rel li:before{content:"▸ ";color:var(--red)}.rel a{text-decoration:none}
+.bi{padding:9px 0;border-bottom:1px solid var(--line);font-size:16px;line-height:1.3}.bi time{display:block;font:700 11.5px -apple-system,sans-serif;color:var(--red);letter-spacing:.04em;margin-bottom:2px;font-variant-numeric:tabular-nums}.bi a{text-decoration:none;font-weight:600}
+.more{display:inline-block;margin-top:10px;font:600 13px -apple-system,sans-serif;color:var(--accent)}
+.st h3{font-size:19px;line-height:1.2;margin:.1em 0 .25em}.st h3 a{text-decoration:none}.st .dk{font-size:15.5px;color:var(--muted);margin:.2em 0 .3em;line-height:1.45}.st .ph{display:block;margin-bottom:8px}.st img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;display:block;background:var(--line)}
+.live{margin-bottom:20px}.lv{display:grid;grid-template-columns:1fr;gap:0;font:14px/1.35 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.lv div{display:flex;justify-content:space-between;gap:8px;padding:6px 0;border-bottom:1px dotted var(--line)}.lv b{font-weight:600}.lv span{color:var(--muted);text-align:right;font-variant-numeric:tabular-nums}.src2{font:11px -apple-system,sans-serif;color:var(--muted);margin:6px 0 0}
+.desk .st h3{font-size:21px}.plan{display:block;margin-top:14px;background:var(--ink);color:var(--bg);padding:13px 14px;border-radius:3px;text-decoration:none;font:14px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.plan b{display:block;font-size:15px;margin-bottom:3px}.plan:hover{color:var(--bg);opacity:.92}
+.strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-bottom:1px solid var(--ink)}.strip>.st{padding:18px 16px;border-right:1px solid var(--line)}.strip>.st:first-child{padding-left:0}.strip>.st:last-child{border-right:0;padding-right:0}
+.sec{padding:20px 0 6px;border-bottom:1px solid var(--line)}.sec>.hd{display:flex;justify-content:space-between;align-items:baseline;border-top:3px solid var(--ink);padding-top:8px;margin-bottom:14px}.sec>.hd h2{margin:0;font:800 15px -apple-system,sans-serif;letter-spacing:.1em;text-transform:uppercase}.sec>.hd a{font:13px -apple-system,sans-serif;color:var(--muted)}
+.tr{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:26px}.tr .big h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(28px,3.4vw,40px);line-height:1.05}.tr .big .dk{font-size:18px}
+.trl{display:grid;grid-template-columns:1fr 1fr;gap:18px}.trl .st h3{font-size:17px}
+.c4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+.cols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;padding:22px 0;border-bottom:1px solid var(--line)}
+.bottom{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr) minmax(0,1.2fr);gap:26px;padding:22px 0}
+.fg{display:grid;grid-template-columns:1fr 1fr;gap:0}.fg a{display:block;padding:10px 8px 10px 0;border-bottom:1px solid var(--line);text-decoration:none}.fg b{display:block;font:700 30px/1 'Cormorant Garamond',Georgia,serif;color:var(--red)}.fg span{font:13px/1.35 -apple-system,sans-serif;color:var(--muted)}
+.ess ol{margin:0;padding-left:22px;font-size:16px;line-height:1.35}.ess li{padding:6px 0;border-bottom:1px solid var(--line)}.ess a{text-decoration:none;font-weight:600}
+.letter .st h3{font-style:italic;font-size:22px}.letter .sub{margin-top:12px}
+article p:first-of-type .dl+*{}
+@media(max-width:980px){.fp{grid-template-columns:1fr}.fp>.lead{order:-1;padding:0 0 18px}.fp>.brf,.fp>.rail{border:0;padding:16px 0 0}.strip,.c4,.cols{grid-template-columns:1fr 1fr}.strip>.st{padding:16px 10px 16px 0;border-right:0}.tr,.bottom{grid-template-columns:1fr}.ear{display:none}}
+@media(max-width:560px){.strip,.c4,.cols,.trl{grid-template-columns:1fr}.strip>.st{border-bottom:1px solid var(--line)}}
 @media(max-width:820px){.front{grid-template-columns:1fr}.side{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:16px}}
 @media print{.bar,nav.s,.ticker,.sub,.share,footer .links,.toc{display:none!important}body{background:#fff;color:#000;font-size:12pt}a{text-decoration:none}}"""
 
@@ -205,6 +244,7 @@ def head(l, title, desc, path_tpl, og_type="website", extra="", image=None, noin
     xdef = "/" if P(path_tpl, "en") == "/en/" else P(path_tpl, "en")
     alts += f'<link rel="alternate" hreflang="x-default" href="{BASE}{xdef}">'
     url = BASE + P(path_tpl, l)
+    title = seo_title(title); desc = seo_desc(desc)
     og = image or (BASE + "/og.png")
     robots = '<meta name="robots" content="noindex">' if noindex else '<meta name="robots" content="max-image-preview:large">'
     return f"""<!doctype html><html lang="{HTML_LANG[l]}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -218,13 +258,13 @@ def head(l, title, desc, path_tpl, og_type="website", extra="", image=None, noin
 <script>(function(c,l,a,r,i,t,y){{c[a]=c[a]||function(){{(c[a].q=c[a].q||[]).push(arguments)}};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);}})(window,document,"clarity","script","{CLARITY}");</script>
 {extra}</head><body><a class="skip" href="#main">{X[l]["skip"]}</a>"""
 
-def masthead(l, path_tpl, active=None):
+def masthead(l, path_tpl, active=None, front=False):
     x = X[l]
     langs = "".join(f'<a href="{P(path_tpl, y)}" hreflang="{y}" lang="{y}" class="{"on" if y==l else ""}" onclick="stLang(\'{y}\')">{y.upper()}</a>' for y in LANGS)
-    nav = "".join(f'<a href="/{l}/{s}/" class="{"on" if s==active else ""}">{esc(sec_name(l,s))}</a>' for s in NAV)
+    nav = "".join(f'<a href="/{l}/{s}/" class="{"on" if s==active else ""}{" pl" if s=="plan" else ""}">{esc(sec_name(l,s))}</a>' for s in NAV)
     return f"""<div class="w"><div class="bar"><span><time id="st-today" datetime="{NOW.date().isoformat()}">{today_str(l)}</time> · <span class="daily">{x["daily"]}</span></span>
 <span class="r"><a href="/{l}/search/" aria-label="{x["search"]}">&#9906; {x["search"]}</a>{langs}<button type="button" onclick="stTheme()" aria-label="{x["dark"]}">&#9680;</button></span></div>
-<header class="m"><a class="mt" href="/{l}/">The Sumba Times</a><div class="tg">{esc(UI[l]["tagline"])}</div></header>
+<header class="m">{('<div class="ear l"><b>' + N[l]["ed"] + '</b><span>Sumba · Nusa Tenggara Timur</span></div><div class="ear r"><b>' + N[l]["wx"] + '</b><span id="ear-wx">Waingapu</span></div>') if front else ''}<a class="mt" href="/{l}/">The Sumba Times</a><div class="tg">{esc(UI[l]["tagline"])}</div></header>
 <nav class="s" aria-label="{esc(sec_name(l,'news'))}"><div class="in">{nav}</div></nav></div>
 <script>function stLang(x){{try{{document.cookie='st_lang='+x+';path=/;max-age=31536000;samesite=lax'}}catch(e){{}}}}function stTheme(){{var d=document.documentElement,c=d.getAttribute('data-theme'),dark=c?c==='dark':matchMedia('(prefers-color-scheme: dark)').matches,n=dark?'light':'dark';d.setAttribute('data-theme',n);try{{localStorage.setItem('st-theme',n)}}catch(e){{}}}}</script>"""
 
@@ -279,6 +319,7 @@ def kicker(a, l):
     return c.get("kicker") or sec_name(l, group_of(a))
 
 def badge(a):
+    if kind_of(a) == "guide": return ""
     return f'<span class="badge" data-date="{a["date"]}" hidden></span>'
 
 def card(a, l, img=True):
@@ -411,7 +452,7 @@ def article_page(a, l):
     s += f"""<main id="main" class="w"><article class="nar">{crumbs}<p class="k">{badge(a)}{esc(kicker(a,l))}</p>
 <h1>{esc(c["title"])}</h1><p class="dek">{esc(c["dek"])}</p>
 <div class="meta"><span><b>{x["desk"]}</b></span><span>{x["pub"]} <time datetime="{iso(a)}">{fdate(a,l)}</time></span>{upd}<span>{mins(a,l)} {x["min"]}</span></div>
-{picture(a,l,eager=True)}{top_x}{toc}{b}{bot_x}{plan_cta}{share(a,l)}
+{picture(a,l,eager=True)}{top_x}{toc}<div class="{"body" if not a.get("dateline") and kind_of(a) != "letter" else "body0"}">{b}</div>{bot_x}{plan_cta}{share(a,l)}
 <div class="src"><b>{u["sources"]}</b><ol>{srcs}</ol><p class="corr">{x["corr"]} <a href="mailto:{CONTACT}">{CONTACT}</a>.</p></div>
 <div style="margin-top:26px">{subscribe(l)}</div></article>{related(a,l)}</main>""" + footer(l)
     write(tpl[l], s)
@@ -444,36 +485,91 @@ def hero(l):
 <div class="hv"><p class="hk">{t["hero_k"]}</p><h1>{t["hero_t"]}</h1><p class="hp">{t["hero_p"]}</p>
 <p class="hb"><a class="b1" href="/{l}/plan/" onclick="try{{clarity('event','hero_plan')}}catch(e){{}}">{t["hero_b1"]}</a><a class="b2" href="/{l}/guides/">{t["hero_b2"]}</a></p></div></section>"""
 
+def hl(a, l, cls="", img=False, dek=True, when=True, size=640):
+    """A newspaper story unit: optional photo, kicker, headline, dek, time."""
+    c = a[l]; im = img_of(a)
+    ph = ""
+    if img and im:
+        k = img_key(a)
+        ph = f'<a class="ph" href="{url_of(a,l)}" tabindex="-1"><img src="/img/{k}-{size}.webp" width="{size}" height="{int(size*2/3)}" alt="{esc(im["caption"][l])}" loading="lazy" decoding="async"></a>'
+    kind = X[l]["brief"] if kind_of(a) == "brief" else sec_name(l, "guides")[:-1] if l == "en" else kicker(a, l)
+    k = f'<p class="k">{badge(a)}<a href="/{l}/{group_of(a)}/">{esc(kicker(a,l))}</a></p>'
+    d = f'<p class="dk">{esc(c["dek"])}</p>' if dek else ""
+    w = f'<div class="when"><time datetime="{iso(a)}">{fdate(a,l)}</time></div>' if when else ""
+    return f'<article class="st {cls}">{ph}{k}<h3><a href="{url_of(a,l)}">{esc(c["title"])}</a></h3>{d}{w}</article>'
+
+def live_box(l):
+    n = N[l]
+    return f"""<section class="live" aria-label="{esc(n["today_t"])}"><h2 class="rh">{n["today_t"]}</h2>
+<div class="lv"><div><b>Waingapu</b><span id="wx-wgp">…</span></div><div><b>Tambolaka</b><span id="wx-tmc">…</span></div>
+<div><b>{n["sunrise"]} / {n["sunset"]}</b><span id="wx-sun">…</span></div><div><b>{n["fx"]}</b><span id="fx">…</span></div></div>
+<p class="src2">{n["wx_src"]}</p></section>"""
+
+def live_js(l):
+    n = N[l]
+    return f"""<script>(function(){{var W={json.dumps(n["wcode"], ensure_ascii=False)};function wc(c){{c=+c;var ks=Object.keys(W).map(Number).sort(function(a,b){{return a-b}}),r=W['0'];ks.forEach(function(k){{if(c>=k)r=W[k]}});return r}}
+function set(id,t){{var e=document.getElementById(id);if(e)e.textContent=t}}
+fetch('https://api.open-meteo.com/v1/forecast?latitude=-9.656,-9.43&longitude=120.264,119.24&current=temperature_2m,weather_code&daily=sunrise,sunset&timezone=Asia%2FMakassar&forecast_days=1').then(function(r){{return r.json()}}).then(function(j){{
+var a=j[0],b=j[1];function t(x){{return Math.round(x.current.temperature_2m)+'°C · '+wc(x.current.weather_code)}}
+set('wx-wgp',t(a));set('wx-tmc',t(b));set('ear-wx','Waingapu '+t(a));set('wx-sun',a.daily.sunrise[0].slice(11)+' / '+a.daily.sunset[0].slice(11)+' WITA')}}).catch(function(){{set('wx-wgp','–');set('wx-tmc','–');set('wx-sun','–')}});
+fetch('https://open.er-api.com/v6/latest/EUR').then(function(r){{return r.json()}}).then(function(j){{var e=j.rates.IDR,u=j.rates.IDR/j.rates.USD;set('fx','1 € = '+Math.round(e).toLocaleString('{l}')+' IDR · 1 $ = '+Math.round(u).toLocaleString('{l}')+' IDR')}}).catch(function(){{set('fx','–')}});}})();</script>"""
+
+def figures(l):
+    n = N[l]
+    return f'<section class="figs"><h2 class="rh">{n["figures_t"]}</h2><div class="fg">' + "".join(f'<a href="{u}"><b>{esc(v)}</b><span>{esc(t)}</span></a>' for v, t, u in n["figures"]) + "</div></section>"
+
 def home(l):
-    u = UI[l]; x = X[l]; t = T[l]; tpl = "/{l}/"
+    u = UI[l]; x = X[l]; t = T[l]; n = N[l]; tpl = "/{l}/"
     items = all_items()
     top = lead_item()
-    news = [a for a in items if a is not top and kind_of(a) == "brief"]
-    side = news[:4]
-    ticker = "".join(f'<a href="{url_of(a,l)}"><time datetime="{iso(a)}">{dt(a).strftime("%d/%m %H:%M")}</time>{esc(a[l]["title"])}</a>' for a in items if kind_of(a) == "brief")
+    briefs = [a for a in items if kind_of(a) == "brief" and a is not top]
+    guides = travel_guides()
+    feat = next((g for g in guides if g["slug"] == "best-time-to-visit-sumba"), guides[0])
     ld = [{"@context": "https://schema.org", "@type": "WebSite", "name": "The Sumba Times", "url": BASE + f"/{l}/", "inLanguage": l,
            "potentialAction": {"@type": "SearchAction", "target": BASE + f"/{l}/search/?q={{search_term_string}}", "query-input": "required name=search_term_string"}},
           {"@context": "https://schema.org", "@type": "NewsMediaOrganization", "name": "The Sumba Times", "url": BASE, "logo": BASE + "/apple-touch-icon.png",
            "publishingPrinciples": BASE + f"/{l}/about/", "parentOrganization": {"@type": "Organization", "name": "Eco Beach City", "url": "https://ecobeachcity.com"}}]
-    pre = f'<link rel="preload" as="image" href="/img/{HERO_IMG}-1280.webp" imagesrcset="/img/{HERO_IMG}-640.webp 640w, /img/{HERO_IMG}-1280.webp 1280w" imagesizes="100vw">'
-    s = head(l, "The Sumba Times · " + u["tagline"], t["hero_p"] + " " + x["daily"] + ".", tpl, extra=pre + f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>') + masthead(l, tpl)
-    guides = travel_guides()
+    tk = img_key(top)
+    pre = f'<link rel="preload" as="image" href="/img/{tk}-1280.webp" imagesrcset="/img/{tk}-640.webp 640w, /img/{tk}-1280.webp 1280w" imagesizes="(max-width: 980px) 100vw, 620px">'
+    s = head(l, "The Sumba Times · " + u["tagline"], u["tagline"] + ". " + x["daily"] + ".", tpl, extra=pre + f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>') + masthead(l, tpl, front=True)
+    ticker = "".join(f'<a href="{url_of(a,l)}"><time datetime="{iso(a)}">{dt(a).strftime("%d/%m %H:%M")}</time>{esc(a[l]["title"])}</a>' for a in items if kind_of(a) == "brief")
+    rel = [a for a in briefs if group_of(a) == group_of(top)][:2]
+    lead = f"""<div class="lead"><p class="k">{badge(top)}{x["top_story"]} · <a href="/{l}/{group_of(top)}/">{esc(sec_name(l,group_of(top)))}</a></p>
+<a href="{url_of(top,l)}" tabindex="-1" style="display:block">{picture(top,l,"(max-width: 980px) 100vw, 620px",eager=True,cap=False)}</a>
+<h2><a href="{url_of(top,l)}">{esc(top[l]["title"])}</a></h2><p class="dek">{esc(top[l]["dek"])}</p>
+<div class="when">{x["desk"]} · <time datetime="{iso(top)}">{fdate(top,l)}</time></div>
+{('<ul class="rel">' + "".join(f'<li><a href="{url_of(a,l)}">{esc(a[l]["title"])}</a></li>' for a in rel) + '</ul>') if rel else ''}</div>"""
+    brief_col = f'<div class="brf"><h2 class="rh">{n["brief_t"]}</h2>' + "".join(
+        f'<div class="bi"><time datetime="{iso(a)}">{dt(a).strftime("%d/%m · %H:%M")}</time><a href="{url_of(a,l)}">{esc(a[l]["title"])}</a></div>' for a in briefs[:7]) + f'<a class="more" href="/{l}/news/">{n["more_news"]} →</a></div>'
+    rail = f"""<div class="rail">{live_box(l)}<section class="desk"><h2 class="rh">{n["travel_desk"]}</h2>{hl(feat, l, img=True, when=False)}
+<a class="plan" href="/{l}/plan/"><b>{n["start"]}</b><span>{t["plan_cta_p"]}</span></a></section></div>"""
     s += f"""<main id="main" class="w"><div class="ticker" aria-label="{x["ticker"]}"><b>{x["ticker"]}</b>{ticker}</div>
-{hero(l)}{facts_strip(l)}
-<section class="block"><div class="hd"><h2>{t["start_t"]}</h2><a href="/{l}/guides/">{esc(sec_name(l,"guides"))} →</a></div><div class="grid">{"".join(card(a,l) for a in guides[:9])}</div></section>"""
-    sidehtml = "".join(f'<div class="it"><p class="k">{badge(a)}<a href="/{l}/{group_of(a)}/">{esc(kicker(a,l))}</a></p><h3><a href="{url_of(a,l)}">{esc(a[l]["title"])}</a></h3><p>{esc(a[l]["dek"])}</p><div class="when"><time datetime="{iso(a)}">{fdate(a,l)}</time></div></div>' for a in side)
-    s += f"""<section class="block"><div class="hd"><h2>{t["news_t"]}</h2><a href="/{l}/news/">{x["all"]} {esc(sec_name(l,"news"))} →</a></div></section>
-<section class="front"><div class="lead"><p class="k">{badge(top)}{x["top_story"]} · <a href="/{l}/{group_of(top)}/">{esc(sec_name(l,group_of(top)))}</a></p>
-<a href="{url_of(top,l)}" tabindex="-1" style="display:block">{picture(top,l,"(max-width: 820px) 100vw, 780px",cap=False)}</a>
-<h2><a href="{url_of(top,l)}">{esc(top[l]["title"])}</a></h2><p class="dek">{esc(top[l]["dek"])}</p><div class="when">{x["desk"]} · <time datetime="{iso(top)}">{fdate(top,l)}</time></div></div>
-<aside class="side">{sidehtml}</aside></section>"""
-    shown = set(id(a) for a in [top] + side + guides[:9])
-    for sec in ["culture", "travel", "business", "projects", "living"]:
-        its = [a for a in items if group_of(a) == sec and id(a) not in shown][:3]
-        if not its: continue
-        s += f'<section class="block"><div class="hd"><h2>{esc(sec_name(l,sec))}</h2><a href="/{l}/{sec}/">{x["all"]} {esc(sec_name(l,sec))} →</a></div><div class="grid">{"".join(card(a,l) for a in its)}</div></section>'
-    s += f'<section class="block"><div class="hd"><h2>{x["lt_t"]}</h2><a href="/{l}/low-tide/">{esc(sec_name(l,"low-tide"))} →</a></div><div class="front" style="border:0"><div>{card(LETTER,l)}</div><div>{subscribe(l)}</div></div></section>'
-    s += "</main>" + footer(l)
+<section class="fp">{brief_col}{lead}{rail}</section>"""
+    # secondary strip: next stories with photos (news first, then guides)
+    used = {id(top), id(feat)} | {id(a) for a in briefs[:7]}
+    strip = [a for a in briefs[7:] + [g for g in guides if id(g) not in used]][:4]
+    used |= {id(a) for a in strip}
+    s += f'<section class="strip">{"".join(hl(a, l, img=True, dek=False) for a in strip)}</section>'
+    # travel section: big feature + list
+    tr = [g for g in guides if id(g) not in used and g["section"] in ("things-to-do", "getting-here", "where-to-stay")][:5]
+    used |= {id(a) for a in tr}
+    if tr:
+        s += f"""<section class="sec"><div class="hd"><h2>{esc(sec_name(l,"travel"))}</h2><a href="/{l}/travel/">{x["all"]} {esc(sec_name(l,"travel"))} →</a></div>
+<div class="tr">{hl(tr[0], l, "big", img=True, size=1280)}<div class="trl">{"".join(hl(a, l, img=True, when=False) for a in tr[1:5])}</div></div></section>"""
+    cu = [a for a in items if group_of(a) == "culture" and id(a) not in used][:4]
+    used |= {id(a) for a in cu}
+    if cu:
+        s += f'<section class="sec"><div class="hd"><h2>{esc(sec_name(l,"culture"))}</h2><a href="/{l}/culture/">{x["all"]} {esc(sec_name(l,"culture"))} →</a></div><div class="c4">{"".join(hl(a, l, img=True, when=False) for a in cu)}</div></section>'
+    cols = ""
+    for sec in ["business", "living", "projects", "news"]:
+        its = [a for a in items if group_of(a) == sec and kind_of(a) != "letter" and a is not top][:4]
+        if its:
+            cols += f'<div class="col"><h2 class="rh"><a href="/{l}/{sec}/">{esc(sec_name(l,sec))}</a></h2>' + "".join(f'<div class="bi"><a href="{url_of(a,l)}">{esc(a[l]["title"])}</a></div>' for a in its) + "</div>"
+    s += f'<section class="cols">{cols}</section>'
+    ess = "".join(f'<li><a href="{url_of(a,l)}">{esc(a[l]["title"])}</a></li>' for a in guides[:10])
+    s += f"""<section class="bottom">{figures(l)}<section class="ess"><h2 class="rh">{n["essential_t"]}</h2><ol>{ess}</ol></section>
+<section class="letter"><h2 class="rh">{n["letter_t"]}</h2>{hl(LETTER, l, img=False, when=True)}{subscribe(l)}</section></section>"""
+    s += "</main>" + footer(l) + live_js(l)
     write(tpl.format(l=l), s)
 
 def all_places():

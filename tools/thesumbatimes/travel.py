@@ -110,3 +110,28 @@ def candidate_image(a):
     c = a.get("image_candidate")
     if not c or a["slug"] not in IMPORTED: return None
     return {"w": 1280, "h": 853, "credit": c["credit"], "license": c["license"], "license_url": c.get("license_url", ""), "page": c["file_page"], "ai": False, "caption": c["caption"]}
+
+# Newspaper front page strings (7 Nov 2026, v3)
+N = {
+ "en": {"ed": "International edition", "brief_t": "Briefing", "travel_desk": "The travel desk", "today_t": "Today on Sumba", "more_news": "More news",
+        "wx": "Weather", "sunrise": "Sunrise", "sunset": "Sunset", "fx": "Exchange rate", "wx_src": "Live data: Open-Meteo, ExchangeRate-API",
+        "figures_t": "Sumba in figures", "letter_t": "The Sunday letter", "essential_t": "Essential guides", "start": "New to Sumba? Start here",
+        "wcode": {"0": "Clear", "1": "Mostly clear", "2": "Partly cloudy", "3": "Cloudy", "45": "Fog", "51": "Drizzle", "61": "Rain", "63": "Rain", "65": "Heavy rain", "80": "Showers", "81": "Showers", "82": "Heavy showers", "95": "Thunderstorm"},
+        "figures": [["41,524", "visitors to East Sumba in 2025", "/en/business/east-sumba-visitor-numbers-2025/"], ["1 in 8", "of them came from abroad", "/en/business/east-sumba-visitor-numbers-2025/"],
+                    ["3 nights", "average stay in East Sumba", "/en/business/east-sumba-visitor-numbers-2025/"], ["~1,500", "hotel rooms on the whole island", "/en/where-to-stay/where-to-stay-in-sumba/"],
+                    ["2", "airports: Tambolaka and Waingapu", "/en/getting-here/how-to-get-to-sumba-from-bali/"], ["4x", "weekly non-stop flights Bali-Waingapu", "/en/news/new-direct-flights-bali-waingapu/"]]},
+ "es": {"ed": "Edición en español", "brief_t": "Breves", "travel_desk": "La mesa de viajes", "today_t": "Hoy en Sumba", "more_news": "Más noticias",
+        "wx": "El tiempo", "sunrise": "Amanece", "sunset": "Anochece", "fx": "Cambio", "wx_src": "Datos en vivo: Open-Meteo, ExchangeRate-API",
+        "figures_t": "Sumba en cifras", "letter_t": "La carta del domingo", "essential_t": "Guías esenciales", "start": "¿Primera vez en Sumba? Empieza aquí",
+        "wcode": {"0": "Despejado", "1": "Casi despejado", "2": "Nubes y claros", "3": "Nublado", "45": "Niebla", "51": "Llovizna", "61": "Lluvia", "63": "Lluvia", "65": "Lluvia fuerte", "80": "Chubascos", "81": "Chubascos", "82": "Chubascos fuertes", "95": "Tormenta"},
+        "figures": [["41.524", "visitantes en Sumba Oriental en 2025", "/es/business/east-sumba-visitor-numbers-2025/"], ["1 de 8", "llegó del extranjero", "/es/business/east-sumba-visitor-numbers-2025/"],
+                    ["3 noches", "estancia media en Sumba Oriental", "/es/business/east-sumba-visitor-numbers-2025/"], ["~1.500", "habitaciones de hotel en toda la isla", "/es/where-to-stay/donde-dormir-en-sumba/"],
+                    ["2", "aeropuertos: Tambolaka y Waingapu", "/es/getting-here/como-llegar-a-sumba-desde-bali/"], ["4", "vuelos directos semanales Bali-Waingapu", "/es/news/new-direct-flights-bali-waingapu/"]]},
+ "id": {"ed": "Edisi bahasa Indonesia", "brief_t": "Kabar singkat", "travel_desk": "Meja wisata", "today_t": "Hari ini di Sumba", "more_news": "Berita lainnya",
+        "wx": "Cuaca", "sunrise": "Matahari terbit", "sunset": "Matahari terbenam", "fx": "Kurs", "wx_src": "Data langsung: Open-Meteo, ExchangeRate-API",
+        "figures_t": "Sumba dalam angka", "letter_t": "Surat hari Minggu", "essential_t": "Panduan utama", "start": "Pertama kali ke Sumba? Mulai di sini",
+        "wcode": {"0": "Cerah", "1": "Cerah berawan", "2": "Berawan sebagian", "3": "Berawan", "45": "Kabut", "51": "Gerimis", "61": "Hujan", "63": "Hujan", "65": "Hujan lebat", "80": "Hujan lokal", "81": "Hujan lokal", "82": "Hujan lebat lokal", "95": "Badai petir"},
+        "figures": [["41.524", "wisatawan ke Sumba Timur pada 2025", "/id/business/east-sumba-visitor-numbers-2025/"], ["1 dari 8", "datang dari luar negeri", "/id/business/east-sumba-visitor-numbers-2025/"],
+                    ["3 malam", "rata-rata lama tinggal di Sumba Timur", "/id/business/east-sumba-visitor-numbers-2025/"], ["~1.500", "kamar hotel di seluruh pulau", "/id/where-to-stay/tempat-menginap-di-sumba/"],
+                    ["2", "bandara: Tambolaka dan Waingapu", "/id/getting-here/cara-ke-sumba-dari-bali/"], ["4x", "penerbangan langsung Bali-Waingapu per minggu", "/id/news/new-direct-flights-bali-waingapu/"]]},
+}
