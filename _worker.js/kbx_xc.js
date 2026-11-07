@@ -14,7 +14,7 @@
 // DB: RPC kolaboro_xc (worker key) and kolaboro_xc_admin (admin key), cron kolaboro-xray-remind (see /home/claude/wtk/x11c/MIGRATION.sql).
 import { rpcW, sha } from './kolaboro.js';
 
-export const PATHS = /^\/api\/x\/xc(\/|$)|^\/embed\/xray(\.js|\/)?$|^\/__k\/kxc-admin\.js$/;
+export const PATHS = /^\/k\/xray-cta\.js$|^\/api\/x\/xc(\/|$)|^\/embed\/xray(\.js|\/)?$|^\/__k\/kxc-admin\.js$/;
 const SITE = 'https://kolaboro.com';
 const PAY = 'https://www.paypal.com/ncp/payment/32ENX4QK833GE';   // the existing PayPal checkout, unchanged
 const te = new TextEncoder();
@@ -332,6 +332,10 @@ async function status(env) {
 
 export async function handle(req, u, env, ctx) {
   const p = u.pathname;
+  if (p === '/k/xray-cta.js') {   // served here with a short cache, so pages that load it with a fixed ?v= still get fixes within minutes
+    const r = await env.ASSETS.fetch(new Request(SITE + '/_s/kolaboro.com/k/xray-cta.js'));
+    return new Response(r.body, { status: r.status, headers: { 'content-type': 'application/javascript; charset=utf-8', 'cache-control': 'public, max-age=300', 'x-content-type-options': 'nosniff' } });
+  }
   if (p === '/embed/xray.js') return new Response(EMBED_JS, { headers: { 'content-type': 'application/javascript; charset=utf-8', 'cache-control': 'public, max-age=3600', 'access-control-allow-origin': '*', 'x-content-type-options': 'nosniff', 'cross-origin-resource-policy': 'cross-origin' } });
   if (p === '/embed/xray' || p === '/embed/xray/') return p.endsWith('/') ? embedDoc() : new Response(null, { status: 301, headers: { location: '/embed/xray/' } });
   if (p === '/__k/kxc-admin.js') return new Response(ADMIN_JS, { headers: { 'content-type': 'application/javascript; charset=utf-8', 'cache-control': 'no-store' } });
