@@ -413,9 +413,29 @@
   if (!prose || location.pathname === '/' ) return;
   var hs = prose.querySelectorAll('h2');
   function slug(t) { return t.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); }
-  if (hs.length >= 3) {
-    var toc = document.createElement('nav'); toc.className = 'toc'; toc.setAttribute('aria-label', 'On this page');
-    var ol = '<b>On this page</b><ol>';
+  var otp = ({ es: 'En esta página', de: 'Auf dieser Seite', fr: 'Sur cette page', nl: 'Op deze pagina', ru: 'На этой странице', zh: '本页内容', ar: 'في هذه الصفحة' })[(document.documentElement.lang || 'en').slice(0, 2)] || 'On this page';
+  if (hs.length >= 3 && matchMedia('(max-width:760px)').matches) {
+    // phones: no block pushed in above the text (it shifted the page after load); a bar under the header instead, shown once you scroll into the text
+    hs.forEach(function (h) { if (!h.id) h.id = slug(h.textContent); });
+    var tm = document.createElement('nav'); tm.className = 'toc-m'; tm.setAttribute('aria-label', otp);
+    tm.innerHTML = '<button type="button" aria-expanded="false"><span class="toc-m-l">' + otp + '</span><span class="toc-m-c"></span></button><ol hidden>' +
+      Array.prototype.map.call(hs, function (h) { return '<li><a href="#' + h.id + '">' + h.textContent.replace(/[<&]/g, '') + '</a></li>'; }).join('') + '</ol>';
+    document.body.appendChild(tm);
+    var tb = tm.querySelector('button'), tl = tm.querySelector('ol'), tc = tm.querySelector('.toc-m-c'), hdr = document.querySelector('header.nav');
+    var setOpen = function (o) { tb.setAttribute('aria-expanded', o ? 'true' : 'false'); tl.hidden = !o; };
+    tb.addEventListener('click', function () { setOpen(tl.hidden); });
+    tl.addEventListener('click', function (e) { if (e.target.closest('a')) setOpen(false); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !tl.hidden) { setOpen(false); tb.focus(); } });
+    var tick = function () {
+      var top = hdr ? Math.max(0, hdr.getBoundingClientRect().bottom) : 0; tm.style.top = top + 'px';
+      var cur = null; hs.forEach(function (h) { if (h.getBoundingClientRect().top < top + 80) cur = h; });
+      tm.classList.toggle('on', !!cur); if (!cur) setOpen(false);
+      if (cur && tc.textContent !== cur.textContent) tc.textContent = cur.textContent;
+    };
+    addEventListener('scroll', tick, { passive: true }); addEventListener('resize', tick); tick();
+  } else if (hs.length >= 3) {
+    var toc = document.createElement('nav'); toc.className = 'toc'; toc.setAttribute('aria-label', otp);
+    var ol = '<b>' + otp + '</b><ol>';
     hs.forEach(function (h) { if (!h.id) h.id = slug(h.textContent); ol += '<li><a href="#' + h.id + '">' + h.textContent + '</a></li>'; });
     toc.innerHTML = ol + '</ol>'; prose.insertBefore(toc, prose.firstChild);
     var bar = document.createElement('div'); bar.className = 'readbar'; document.body.appendChild(bar);
@@ -862,4 +882,36 @@ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.c
     qrLib().then(function (Q) { var t = D.createElement('div'); new Q(t, { text: url, width: 220, height: 220, correctLevel: Q.CorrectLevel.M }); var cv = t.querySelector('canvas'), im = box.querySelector('.kx-sc-q img'); if (cv && im) { im.src = cv.toDataURL('image/png'); im.hidden = false; return new Promise(function (r) { if (im.complete) r(); else { im.onload = r; im.onerror = r; } }); } })
       .catch(function () {}).then(function () { b.disabled = false; go(); if (window.kbEvent) kbEvent('print_scorecard'); });
   }
+})();
+
+/* 7 Nov 2026 UX: named project and developer pages: the section chips stay under the header and follow the reader; long lists fold */
+(function () {
+  var D = document, toc = D.querySelector('.ktoc'); if (!D.querySelector('.kwrap')) return;
+  var L = (D.documentElement.lang || 'en').slice(0, 2);
+  var T = { en: ['Show all {n}', 'Show fewer'], es: ['Ver los {n}', 'Ver menos'], de: ['Alle {n} zeigen', 'Weniger zeigen'], fr: ['Voir les {n}', 'Voir moins'], nl: ['Toon alle {n}', 'Toon minder'], ru: ['Показать все ({n})', 'Свернуть'], zh: ['显示全部 {n} 项', '收起'], ar: ['عرض الكل ({n})', 'عرض أقل'] }[L] || ['Show all {n}', 'Show fewer'];
+  var links = toc ? Array.prototype.slice.call(toc.querySelectorAll('a[href^="#"]')) : [];
+  var secs = links.map(function (a) { return D.getElementById(a.getAttribute('href').slice(1)); });
+  var hdr = D.querySelector('header.nav'), last = null;
+  var spy = function () {
+    var top = (hdr ? Math.max(0, hdr.getBoundingClientRect().bottom) : 0) + toc.offsetHeight + 24, cur = -1;
+    toc.style.top = (hdr ? hdr.offsetHeight : 0) + 'px';
+    secs.forEach(function (s, i) { if (s && s.getBoundingClientRect().top < top) cur = i; });
+    if (cur === last) return; last = cur;
+    links.forEach(function (a, i) { if (i === cur) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current'); });
+    var a = links[cur]; if (a) { var r = a.getBoundingClientRect(), tr = toc.getBoundingClientRect(); if (r.left < tr.left || r.right > tr.right) toc.scrollTo({ left: a.offsetLeft - 16, behavior: 'smooth' }); }
+  };
+  if (toc) { addEventListener('scroll', spy, { passive: true }); addEventListener('resize', spy); spy(); }
+  // long lists: first 6 shown, the rest behind one button (everything stays in the page for search engines and Ctrl+F)
+  D.querySelectorAll('.kwrap ul.fl:not(.glance), .kwrap ol.srcs, .kwrap .tw tbody, [data-kx-lists] ul.lk').forEach(function (ul) {
+    var li = ul.children; if (li.length <= (ul.classList.contains('lk') ? 12 : 8)) return;
+    ul.classList.add('kfold');
+    var b = D.createElement('button'); b.type = 'button'; b.className = 'kmore'; b.setAttribute('aria-expanded', 'false');
+    b.textContent = T[0].replace('{n}', li.length);
+    b.addEventListener('click', function () { var o = ul.classList.toggle('kopen'); b.setAttribute('aria-expanded', o ? 'true' : 'false'); b.textContent = o ? T[1] : T[0].replace('{n}', li.length); if (!o) (ul.closest('.tw') || ul).scrollIntoView({ block: 'nearest' }); });
+    var at = ul.closest('.tw') || ul; at.parentNode.insertBefore(b, at.nextSibling); ul._kb = b;
+  });
+  // a link to a folded item (or Ctrl+F landing inside one) opens the list
+  var openFor = function (el) { var ul = el && el.closest && el.closest('.kfold'); if (ul && !ul.classList.contains('kopen') && ul._kb) ul._kb.click(); };
+  addEventListener('hashchange', function () { try { openFor(D.querySelector(location.hash)); } catch (e) {} });
+  D.addEventListener('beforematch', function (e) { openFor(e.target); }, true);
 })();

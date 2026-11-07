@@ -1343,3 +1343,35 @@ footer .fgrid:last-child,footer .fgrid{border-bottom:1px solid var(--line)}
   .kx-sc-f{margin-top:10px;padding-top:6px;border-top:1px solid #000;font-size:7.6pt;color:#222;max-width:none}
   @page{margin:12mm}
 }
+/* 7 Nov 2026 UX sweep (ux11) */
+/* home hero: the paste box is the one primary action; the paid check is a quiet second path */
+.hero .hero-check{margin-top:30px!important}
+.hero .hero-check input{min-height:56px}
+.hero-alt{margin:6px 0 0}
+.hero-alt a{display:inline-flex;align-items:center;gap:6px;min-height:44px;font-weight:700;color:var(--ink);text-decoration:underline;text-decoration-color:var(--hivis);text-decoration-thickness:2px;text-underline-offset:5px}
+.hero-alt a:hover{text-decoration-thickness:3px}
+/* phones: one contents bar under the header on long text pages (replaces the block that pushed the text down after load) */
+.toc-m{position:fixed;left:0;right:0;top:0;z-index:19;background:var(--nav-bg);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line);transform:translateY(-130%);visibility:hidden;transition:transform .2s,visibility .2s}
+.toc-m.on{transform:none;visibility:visible}
+.toc-m button{display:flex;align-items:center;gap:8px;width:100%;min-height:46px;padding:0 var(--gut,16px);border:0;background:none;font:inherit;font-size:.9rem;color:var(--ink);text-align:start;cursor:pointer}
+.toc-m button::after{content:"";flex:none;width:7px;height:7px;margin-inline-start:auto;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:translateY(-2px) rotate(45deg);transition:transform .2s}
+.toc-m button[aria-expanded=true]::after{transform:translateY(2px) rotate(-135deg)}
+.toc-m-l{flex:none;font-size:.74rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
+.toc-m-c{min-width:0;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.toc-m ol{list-style:none;margin:0;padding:4px var(--gut,16px) 12px;max-height:60vh;overflow:auto;border-top:1px solid var(--line)}
+.toc-m ol a{display:flex;align-items:center;min-height:44px;color:var(--ink);text-decoration:none;font-weight:600;border-bottom:1px dashed var(--line)}
+.toc-m button:focus-visible,.toc-m a:focus-visible{outline:3px solid var(--hivis);outline-offset:-3px}
+@media (min-width:761px){.toc-m{display:none}}
+@media print{.toc-m{display:none!important}}
+/* footer on wide screens: the long Data list in two columns so the footer is not one tall stripe */
+@media (min-width:1101px){footer .fgrid{grid-template-columns:1.3fr 1fr 1.8fr 1fr 1fr}footer .fgrid>div:nth-child(3)>ul{display:block;columns:2;column-gap:28px}footer .fgrid>div:nth-child(3)>ul>li{break-inside:avoid;margin-bottom:8px}}
+/* tap targets: 44 px on phones for controls that were 21 to 40 px tall */
+.nav .brand,footer .brand{min-height:44px}
+.qform .btn{min-height:44px}
+main summary{min-height:44px;align-content:center}
+@media (max-width:760px){
+  .lv-more,.launch a,.faq-card a,.note-box a,.share a,.share button,.rp-nav a,.rp-nav button,.rp-verify,.rp-crumb a,.rp-banner a,.ktier button,.ask-chip,.perk a,#tr-st,#tr-log,.kopen a,th>button.db-sb,.ft-f h3 a{min-height:44px;display:inline-flex;align-items:center}
+  .kcur-bar select{min-height:44px}
+}
+.hero-alt a span{display:inline-block}
+@media (max-width:760px){.prose h2[id]{scroll-margin-top:128px}}

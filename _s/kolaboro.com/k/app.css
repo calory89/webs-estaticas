@@ -184,3 +184,9 @@ a{color:inherit}button,input,select,textarea{font:inherit;color:inherit}
 .ap-key{background:#17212B;color:#fff;border-radius:14px;padding:14px;margin-top:12px;font:13px/1.5 ui-monospace,monospace;word-break:break-all;white-space:pre-wrap}
 .pay-cards{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:8px;font-size:.8rem;color:var(--muted)}.pay-cards svg{height:22px;width:auto}
 .btn .pc-i{display:inline-flex;gap:3px;margin-left:8px;vertical-align:middle}
+/* 7 Nov 2026 UX sweep (ux11): 44 px tap targets on the login and portal screens */
+.kl-tabs button{min-height:44px!important}
+.ap-pw button{min-height:44px;min-width:48px;margin-top:0;right:4px;border-radius:8px}
+.ap-pw button:focus-visible{outline:3px solid var(--hivis,#FF5B14);outline-offset:-3px}
+.ap-brand{min-height:44px}
+@media (max-width:900px){.ap-auth-l{gap:10px}}

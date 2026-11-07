@@ -77,7 +77,7 @@ const en = {
   q_dlegit: 'Is {dev} a legitimate developer?', a_dlegit: 'Kolaboro does not label developers. What the public record shows: {facts} Check the sources on this page before paying.',
   q_dcompl: 'Are there complaints about {dev}?', a_dcompl_none: 'We found no reports of disputes, regulator action, stoppages or financial difficulty in the sources we read. Verified buyers can submit a review on each project page.', a_dcompl_some: 'Public sources report: {list}. Each report is linked on this page.',
   q_dproj: 'Which projects by {dev} does Kolaboro track?',
-  title_i: 'Off-plan projects and developers we track: names and facts | Kolaboro', h1_i: 'Off-plan projects we track', lead_i: '{k} projects in {m} markets, each with its sourced facts, delivery record and right of reply.',
+  jump_mk: 'Jump to a market', title_i: 'Off-plan projects and developers we track: names and facts | Kolaboro', h1_i: 'Off-plan projects we track', lead_i: '{k} projects in {m} markets, each with its sourced facts, delivery record and right of reply.',
   nf_h: 'Not found', nf_p: 'We do not track a project or developer at this address.', search_db: 'Search the database',
 };
 
@@ -150,7 +150,7 @@ const es = {
   q_dlegit: '¿Es {dev} un promotor fiable?', a_dlegit: 'Kolaboro no etiqueta promotores. Lo que muestra el registro público: {facts} Revisa las fuentes de esta página antes de pagar.',
   q_dcompl: '¿Hay quejas sobre {dev}?', a_dcompl_none: 'No encontramos informaciones sobre litigios, actuaciones del regulador, paralizaciones o dificultades financieras en las fuentes consultadas. Los compradores verificados pueden enviar una opinión en cada proyecto.', a_dcompl_some: 'Fuentes públicas informan de: {list}. Cada información está enlazada en esta página.',
   q_dproj: '¿Qué proyectos de {dev} sigue Kolaboro?',
-  title_i: 'Proyectos sobre plano y promotores que seguimos: nombres y datos | Kolaboro', h1_i: 'Proyectos sobre plano que seguimos', lead_i: '{k} proyectos en {m} mercados, cada uno con sus datos con fuente, historial de entrega y derecho de réplica.',
+  jump_mk: 'Ir a un mercado', title_i: 'Proyectos sobre plano y promotores que seguimos: nombres y datos | Kolaboro', h1_i: 'Proyectos sobre plano que seguimos', lead_i: '{k} proyectos en {m} mercados, cada uno con sus datos con fuente, historial de entrega y derecho de réplica.',
   nf_h: 'No encontrado', nf_p: 'No seguimos ningún proyecto ni promotor en esta dirección.', search_db: 'Buscar en la base de datos',
 };
 
@@ -223,7 +223,7 @@ const de = {
   q_dlegit: 'Ist {dev} ein seriöser Bauträger?', a_dlegit: 'Kolaboro vergibt keine Etiketten an Bauträger. Was die öffentliche Aktenlage zeigt: {facts} Prüfen Sie die Quellen auf dieser Seite, bevor Sie zahlen.',
   q_dcompl: 'Gibt es Beschwerden über {dev}?', a_dcompl_none: 'In den gelesenen Quellen haben wir keine Berichte über Rechtsstreite, Maßnahmen der Aufsicht, Baustopps oder finanzielle Schwierigkeiten gefunden. Verifizierte Käufer können auf jeder Projektseite eine Bewertung abgeben.', a_dcompl_some: 'Öffentliche Quellen berichten: {list}. Jeder Bericht ist auf dieser Seite verlinkt.',
   q_dproj: 'Welche Projekte von {dev} verfolgt Kolaboro?',
-  title_i: 'Off-Plan-Projekte und Bauträger, die wir verfolgen: Namen und Fakten | Kolaboro', h1_i: 'Off-Plan-Projekte, die wir verfolgen', lead_i: '{k} Projekte in {m} Märkten, jeweils mit belegten Fakten, Übergabeverlauf und Recht auf Gegendarstellung.',
+  jump_mk: 'Zu einem Markt springen', title_i: 'Off-Plan-Projekte und Bauträger, die wir verfolgen: Namen und Fakten | Kolaboro', h1_i: 'Off-Plan-Projekte, die wir verfolgen', lead_i: '{k} Projekte in {m} Märkten, jeweils mit belegten Fakten, Übergabeverlauf und Recht auf Gegendarstellung.',
   nf_h: 'Nicht gefunden', nf_p: 'Unter dieser Adresse verfolgen wir kein Projekt und keinen Bauträger.', search_db: 'Datenbank durchsuchen',
 };
 
@@ -296,7 +296,7 @@ const fr = {
   q_dlegit: '{dev} est-il un promoteur fiable ?', a_dlegit: 'Kolaboro ne colle pas d’étiquette aux promoteurs. Ce que montre le dossier public : {facts} Vérifiez les sources de cette page avant de payer.',
   q_dcompl: 'Y a-t-il des plaintes contre {dev} ?', a_dcompl_none: 'Nous n’avons trouvé aucune information sur des litiges, actions du régulateur, arrêts de chantier ou difficultés financières dans les sources consultées. Les acheteurs vérifiés peuvent déposer un avis sur chaque page projet.', a_dcompl_some: 'Des sources publiques font état de : {list}. Chaque information est liée sur cette page.',
   q_dproj: 'Quels projets de {dev} Kolaboro suit-il ?',
-  title_i: 'Projets sur plan et promoteurs suivis : noms et faits | Kolaboro', h1_i: 'Projets sur plan que nous suivons', lead_i: '{k} projets sur {m} marchés, chacun avec ses faits sourcés, son historique de livraison et un droit de réponse.',
+  jump_mk: 'Aller à un marché', title_i: 'Projets sur plan et promoteurs suivis : noms et faits | Kolaboro', h1_i: 'Projets sur plan que nous suivons', lead_i: '{k} projets sur {m} marchés, chacun avec ses faits sourcés, son historique de livraison et un droit de réponse.',
   nf_h: 'Introuvable', nf_p: 'Nous ne suivons aucun projet ni promoteur à cette adresse.', search_db: 'Chercher dans la base',
 };
 
@@ -369,7 +369,7 @@ const nl = {
   q_dlegit: 'Is {dev} een betrouwbare ontwikkelaar?', a_dlegit: 'Kolaboro plakt geen labels op ontwikkelaars. Wat het openbare dossier laat zien: {facts} Controleer de bronnen op deze pagina voordat u betaalt.',
   q_dcompl: 'Zijn er klachten over {dev}?', a_dcompl_none: 'We vonden in de gelezen bronnen geen berichten over geschillen, optreden van een toezichthouder, bouwstops of financiële problemen. Geverifieerde kopers kunnen op elke projectpagina een beoordeling indienen.', a_dcompl_some: 'Openbare bronnen melden: {list}. Elk bericht is op deze pagina gelinkt.',
   q_dproj: 'Welke projecten van {dev} volgt Kolaboro?',
-  title_i: 'Projecten op plan en ontwikkelaars die we volgen: namen en feiten | Kolaboro', h1_i: 'Projecten op plan die we volgen', lead_i: '{k} projecten in {m} markten, elk met feiten met bron, opleverhistorie en recht op weerwoord.',
+  jump_mk: 'Ga naar een markt', title_i: 'Projecten op plan en ontwikkelaars die we volgen: namen en feiten | Kolaboro', h1_i: 'Projecten op plan die we volgen', lead_i: '{k} projecten in {m} markten, elk met feiten met bron, opleverhistorie en recht op weerwoord.',
   nf_h: 'Niet gevonden', nf_p: 'Op dit adres volgen we geen project of ontwikkelaar.', search_db: 'Zoek in de database',
 };
 
@@ -442,7 +442,7 @@ const ru = {
   q_dlegit: '{dev}: надёжный ли застройщик?', a_dlegit: 'Kolaboro не вешает ярлыков на застройщиков. Что показывают публичные данные: {facts} Проверьте источники на этой странице до оплаты.',
   q_dcompl: 'Есть ли жалобы на {dev}?', a_dcompl_none: 'В прочитанных источниках мы не нашли сообщений о судебных спорах, мерах регулятора, остановке стройки или финансовых трудностях. Проверенные покупатели могут оставить отзыв на странице каждого проекта.', a_dcompl_some: 'Публичные источники сообщают: {list}. Каждое сообщение со ссылкой на этой странице.',
   q_dproj: 'Какие проекты {dev} отслеживает Kolaboro?',
-  title_i: 'Проекты на этапе строительства и застройщики: названия и факты | Kolaboro', h1_i: 'Проекты, которые мы отслеживаем', lead_i: '{k} проектов на {m} рынках, у каждого факты с источниками, история сдачи и право на ответ.',
+  jump_mk: 'Перейти к рынку', title_i: 'Проекты на этапе строительства и застройщики: названия и факты | Kolaboro', h1_i: 'Проекты, которые мы отслеживаем', lead_i: '{k} проектов на {m} рынках, у каждого факты с источниками, история сдачи и право на ответ.',
   nf_h: 'Не найдено', nf_p: 'По этому адресу мы не отслеживаем ни проект, ни застройщика.', search_db: 'Поиск по базе',
 };
 
@@ -515,7 +515,7 @@ const zh = {
   q_dlegit: '{dev} 是可靠的开发商吗？', a_dlegit: 'Kolaboro 不给开发商贴标签。公开记录显示：{facts} 付款前请查看本页来源。',
   q_dcompl: '有关于 {dev} 的投诉吗？', a_dcompl_none: '在我们阅读的来源中，未发现有关纠纷、监管行动、停工或财务困难的报道。经核实的买家可在每个项目页面提交评价。', a_dcompl_some: '公开来源报道：{list}。每条报道的链接都在本页。',
   q_dproj: 'Kolaboro 跟踪 {dev} 的哪些项目？',
-  title_i: '我们跟踪的期房项目和开发商：名称与事实 | Kolaboro', h1_i: '我们跟踪的期房项目', lead_i: '{m} 个市场的 {k} 个项目，每个都有带来源的事实、交付记录和答复权。',
+  jump_mk: '跳转到市场', title_i: '我们跟踪的期房项目和开发商：名称与事实 | Kolaboro', h1_i: '我们跟踪的期房项目', lead_i: '{m} 个市场的 {k} 个项目，每个都有带来源的事实、交付记录和答复权。',
   nf_h: '未找到', nf_p: '我们没有在此地址跟踪任何项目或开发商。', search_db: '搜索数据库',
 };
 
@@ -588,7 +588,7 @@ const ar = {
   q_dlegit: 'هل {dev} مطوّر موثوق؟', a_dlegit: 'لا تضع Kolaboro تصنيفات على المطوّرين. ما يُظهره السجل العام: {facts} راجع المصادر في هذه الصفحة قبل الدفع.',
   q_dcompl: 'هل توجد شكاوى بشأن {dev}؟', a_dcompl_none: 'لم نجد في المصادر التي قرأناها تقارير عن نزاعات أو إجراءات رقابية أو توقف للبناء أو صعوبات مالية. يمكن للمشترين الموثّقين إرسال تقييم في صفحة كل مشروع.', a_dcompl_some: 'تذكر مصادر علنية: {list}. كل تقرير مرتبط في هذه الصفحة.',
   q_dproj: 'ما مشاريع {dev} التي تتابعها Kolaboro؟',
-  title_i: 'مشاريع على المخطط ومطوّرون نتابعهم: الأسماء والحقائق | Kolaboro', h1_i: 'مشاريع على المخطط نتابعها', lead_i: '{k} مشروعًا في {m} سوقًا، لكل منها حقائق موثّقة المصدر وسجل تسليم وحق رد.',
+  jump_mk: 'انتقل إلى سوق', title_i: 'مشاريع على المخطط ومطوّرون نتابعهم: الأسماء والحقائق | Kolaboro', h1_i: 'مشاريع على المخطط نتابعها', lead_i: '{k} مشروعًا في {m} سوقًا، لكل منها حقائق موثّقة المصدر وسجل تسليم وحق رد.',
   nf_h: 'غير موجود', nf_p: 'لا نتابع أي مشروع أو مطوّر على هذا العنوان.', search_db: 'ابحث في قاعدة البيانات',
 };
 

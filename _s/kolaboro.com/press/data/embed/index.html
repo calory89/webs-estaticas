@@ -35,7 +35,7 @@ a:focus-visible{outline:3px solid #FF5B14;outline-offset:2px;border-radius:3px}
 (function(){
   var K = window.KDD, w = document.getElementById('w'), id = '';
   try { id = (new URLSearchParams(location.search).get('c') || '').trim(); } catch (e) {}
-  function foot(c, R){ return '<div class="ft"><span>Data: <a href="/press/data/' + (c ? '#c-' + c.id : '') + '" target="_blank" rel="noopener">Kolaboro</a>' + (R ? ', ' + K.esc(R.dateShort) : '') + '</span><a href="/how-we-score" target="_blank" rel="noopener">Method</a></div>'; }
+  function foot(c, R){ return '<div class="ft"><span>Data: <a href="/press/data/' + (c ? '#c-' + c.id : '') + '" target="_blank" rel="noopener">Kolaboro</a>' + (R ? ', ' + K.esc(R.dateShort) : '') + '</span><a href="/how-we-score/" target="_blank" rel="noopener">Method</a></div>'; }
   function fail(html){ w.innerHTML = '<p class="eb">Kolaboro data desk</p><p class="msg">' + html + '</p>' + foot(); }
   if (!K){ fail('The chart could not load.'); return; }
   K.load().then(function(R){
