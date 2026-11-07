@@ -13971,7 +13971,7 @@
   },
   "visual-diff": {
    "title": "Visual changes on developer pages",
-   "description": "Contract of https://kolaboro.com/data/visual-diff.json. Where the pages of tracked developer websites visibly changed, as page geometry only. No screenshots are published because they would identify anonymous projects.",
+   "description": "Contract of https://kolaboro.com/data/visual-diff.json. Where the pages of tracked developer websites visibly changed, as page geometry only. No screenshots are published, because they would copy the developers' own copyrighted images.",
    "type": "object",
    "properties": {
     "version": {
