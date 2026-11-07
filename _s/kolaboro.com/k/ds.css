@@ -450,6 +450,16 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 /* generic tables on content pages */
 :where(:root:has(link[href*="/k/site.css"])) main table:not(.k-table){font-variant-numeric:tabular-nums}
 :where(:root:has(link[href*="/k/site.css"])) main table:not(.k-table) th{font-weight:650;color:var(--k-ink-2)}
+/* boxes that used 2px black outlines: hairline borders, the system radius */
+:where(:root:has(link[href*="/k/site.css"])) .sides,:where(:root:has(link[href*="/k/site.css"])) .note-box,:where(:root:has(link[href*="/k/site.css"])) .exit .box,:where(:root:has(link[href*="/k/site.css"])) .dn,:where(:root:has(link[href*="/k/site.css"])) .cc,:where(:root:has(link[href*="/k/site.css"])) .v-report{border:1px solid var(--k-line-2)!important;border-radius:var(--k-r-md)!important;box-shadow:none}
+:where(:root:has(link[href*="/k/site.css"])) .note-box{background:var(--k-surface)!important;line-height:1.6}
+:where(:root:has(link[href*="/k/site.css"])) .note-box p{line-height:1.6}
+:where(:root:has(link[href*="/k/site.css"])) .note-box a{display:inline!important;min-height:0!important;color:var(--k-sea);text-decoration-color:color-mix(in srgb,currentColor 45%,transparent)}
+:where(:root:has(link[href*="/k/site.css"])) .badge{border-width:1px!important;border-color:var(--k-line-2)!important}
+:where(:root:has(link[href*="/k/site.css"])) .share a,:where(:root:has(link[href*="/k/site.css"])) .share button,:where(:root:has(link[href*="/k/site.css"])) .helpful button,:where(:root:has(link[href*="/k/site.css"])) .cfilter button,:where(:root:has(link[href*="/k/site.css"])) .v-verdict button,:where(:root:has(link[href*="/k/site.css"])) .exit .x{border:1px solid var(--k-line-2)!important;border-radius:var(--k-r-sm)!important;background:var(--k-surface)}
+:where(:root:has(link[href*="/k/site.css"])) .share a:hover,:where(:root:has(link[href*="/k/site.css"])) .share button:hover,:where(:root:has(link[href*="/k/site.css"])) .helpful button:hover,:where(:root:has(link[href*="/k/site.css"])) .cfilter button:hover{border-color:var(--k-ink-2)!important}
+:where(:root:has(link[href*="/k/site.css"])) .cfilter button[aria-pressed=true],:where(:root:has(link[href*="/k/site.css"])) .cfilter button.on{background:var(--k-ink)!important;color:var(--k-surface)!important;border-color:var(--k-ink)!important}
+:where(:root:has(link[href*="/k/site.css"])) .founder ol li::before,:where(:root:has(link[href*="/k/site.css"])) .nxt li::before{border-width:1.5px!important}
 /* ---------- end 4 ---------- */
 
 
