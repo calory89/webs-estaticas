@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-06",
+ "updated": "2026-11-07",
  "markets": 170,
  "countries": 96,
- "note": "Anonymised until verification is complete. Advertised claims, not verified facts.",
+ "note": "Each project has a named page with sourced facts, except projects in Sumba (conflict of interest). Advertised claims, not verified facts.",
  "cases": [
   {
    "id": "BALI-014",
@@ -3184,11 +3184,11 @@
    "region": "Bukit peninsula",
    "docs": false,
    "plans": true,
-   "band": "Under $100k",
+   "band": "$100k to $200k",
    "done": 2028,
-   "title": "Leasehold",
+   "title": "leasehold",
    "lease": 27,
-   "yield": null,
+   "yield": 10,
    "units": 154,
    "checks": {
     "permit": 0,
@@ -3196,7 +3196,7 @@
     "progress": null,
     "plans": true,
     "record": true,
-    "returns_ok": true,
+    "returns_ok": false,
     "researched": [
      "permit",
      "escrow",
@@ -3206,15 +3206,18 @@
      "returns_ok"
     ]
    },
-   "score": 3,
+   "score": 2,
    "max": 6,
    "flags": [],
    "notes": [],
    "tier": "mixed",
    "read": true,
-   "checked": "5 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
@@ -3236,7 +3239,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 7,
+   "fp": {
+    "sha256": "306272765e6c3ae5820067b50ae82cc9461ce7dbaa7619c3ae983fda34d92566",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "BALI-008",
@@ -4642,9 +4649,9 @@
    "plans": true,
    "band": "$100k to $200k",
    "done": 2028,
-   "title": "Leasehold",
+   "title": "leasehold",
    "lease": 35,
-   "yield": null,
+   "yield": 16,
    "units": 111,
    "checks": {
     "permit": 1,
@@ -4652,7 +4659,7 @@
     "progress": null,
     "plans": true,
     "record": true,
-    "returns_ok": true,
+    "returns_ok": false,
     "researched": [
      "permit",
      "escrow",
@@ -4662,17 +4669,20 @@
      "returns_ok"
     ]
    },
-   "score": 3,
+   "score": 2,
    "max": 6,
    "flags": [],
    "notes": [],
    "tier": "mixed",
    "read": true,
-   "checked": "5 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
-    "A building permit is claimed: does it exist in the official system and match this plot?",
-    "Completion advertised for 2028: does progress on site match?",
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "An extension is promised: is it a binding clause with a fixed price, or only a promise?",
+    "Advertised rental yield of 12% or more: does real occupancy nearby support it?",
+    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
+    "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
@@ -4692,7 +4702,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 13
+   "profile": 13,
+   "fp": {
+    "sha256": "ed64a758ad06bbfc728cdfb7def5140e456570922cb4950e40ad430fd708171d",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "BALI-019",
@@ -7304,7 +7318,7 @@
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "6 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -7329,7 +7343,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 9
+   "profile": 9,
+   "fp": {
+    "sha256": "9f7ff2166292e886330d9270ca38b3230c7a31f4c90b6c3f2ba1ce01673f8e5d",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "ACC-006",
@@ -7342,7 +7360,7 @@
    "done": null,
    "title": "Registered title stated by developer, no title number shown",
    "lease": null,
-   "yield": null,
+   "yield": 8,
    "units": 140,
    "checks": {
     "permit": 0,
@@ -7350,7 +7368,7 @@
     "progress": null,
     "plans": true,
     "record": true,
-    "returns_ok": true,
+    "returns_ok": false,
     "researched": [
      "permit",
      "escrow",
@@ -7360,15 +7378,16 @@
      "returns_ok"
     ]
    },
-   "score": 3,
+   "score": 2,
    "max": 6,
    "flags": [],
    "notes": [],
    "tier": "mixed",
    "read": true,
-   "checked": "6 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
+    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
@@ -7389,7 +7408,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 7,
+   "fp": {
+    "sha256": "516866d1f9fd85805ed7f450bf27c61234c5d2e2dfbeb115bc897cf8639c1d61",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "ACC-007",
@@ -7402,7 +7425,7 @@
    "done": null,
    "title": null,
    "lease": null,
-   "yield": null,
+   "yield": 8,
    "units": null,
    "checks": {
     "permit": 0,
@@ -7426,7 +7449,7 @@
    "notes": [],
    "tier": "mixed",
    "read": true,
-   "checked": "6 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -7450,7 +7473,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 9
+   "profile": 9,
+   "fp": {
+    "sha256": "df76248c404b675db0f3b82d5d55942cfc9cbfc245c308041ee85074a7705d86",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "ACC-008",
@@ -7487,7 +7514,7 @@
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "6 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -7511,7 +7538,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 2,
+   "fp": {
+    "sha256": "abd89f001d41a2ecea62bd6698321abfb4b1d78a4626afd0617ab00b9cfbf76b",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "AJM-001",
@@ -9003,7 +9034,7 @@
    "country": "Portugal",
    "region": "Algarve",
    "docs": false,
-   "plans": false,
+   "plans": true,
    "band": "$400k and up",
    "done": 2028,
    "title": null,
@@ -9014,7 +9045,7 @@
     "permit": 0,
     "escrow": null,
     "progress": null,
-    "plans": false,
+    "plans": true,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -9026,13 +9057,13 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 2,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "mixed",
    "read": true,
-   "checked": "5 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -9057,7 +9088,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 5
+   "profile": 5,
+   "fp": {
+    "sha256": "8f50688eb1a096fd818096180bec2986403d10199855b45d640e353434cf25f4",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "ALG-010",
@@ -9094,7 +9129,7 @@
    "notes": [],
    "tier": "mixed",
    "read": true,
-   "checked": "5 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -9118,7 +9153,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 3
+   "profile": 3,
+   "fp": {
+    "sha256": "f067e9a11fd416875fd1457727dbdec8efb0f6996cd85a5247489cbc035aab2e",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "ALM-001",
@@ -9887,7 +9926,7 @@
     "progress": null,
     "plans": false,
     "record": false,
-    "returns_ok": false,
+    "returns_ok": true,
     "researched": [
      "permit",
      "escrow",
@@ -9897,13 +9936,13 @@
      "returns_ok"
     ]
    },
-   "score": 0,
+   "score": 1,
    "max": 6,
    "flags": [],
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "5 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -9927,7 +9966,11 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null
+   "profile": null,
+   "fp": {
+    "sha256": "09626e5dddffad112b8d5e3190700530bf9075c9bd223f60e378baf97ae60c7e",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "AYT-009",
@@ -9948,7 +9991,7 @@
     "progress": null,
     "plans": false,
     "record": false,
-    "returns_ok": false,
+    "returns_ok": true,
     "researched": [
      "permit",
      "escrow",
@@ -9958,13 +10001,13 @@
      "returns_ok"
     ]
    },
-   "score": 0,
+   "score": 1,
    "max": 6,
    "flags": [],
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "5 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -9988,7 +10031,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": null
+   "profile": null,
+   "fp": {
+    "sha256": "cc617e59f50662d218d31eeca4c83f2808e73fcc2645ad240eecd161a8efb423",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "ANU-001",
@@ -14178,7 +14225,7 @@
    "notes": [],
    "tier": "mixed",
    "read": true,
-   "checked": "5 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -14203,7 +14250,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 3
+   "profile": 3,
+   "fp": {
+    "sha256": "f81087dab88c9c7ebd8d4ca4f2d0cc21f8857fb1ff1660f222f6d0c0561a22dd",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "BJV-005",
@@ -14240,7 +14291,7 @@
    "notes": [],
    "tier": "mixed",
    "read": true,
-   "checked": "5 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -14264,7 +14315,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 4,
+   "fp": {
+    "sha256": "c367554a718b525d38f0c74ab76f7ae00a99faf90e7aea40993b2f86d70bf324",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "BRA-001",
@@ -19947,7 +20002,7 @@
     "progress": null,
     "plans": false,
     "record": true,
-    "returns_ok": false,
+    "returns_ok": true,
     "researched": [
      "permit",
      "escrow",
@@ -19957,16 +20012,15 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 2,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "mixed",
    "read": true,
-   "checked": "5 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
-    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
@@ -19988,7 +20042,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 8
+   "profile": 8,
+   "fp": {
+    "sha256": "6c82715d4f931b75fb56ca7b4043f822afb377fbfb84d746dc4cad76eb80e24a",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "CDS-001",
@@ -21369,7 +21427,7 @@
     "progress": null,
     "plans": false,
     "record": false,
-    "returns_ok": false,
+    "returns_ok": true,
     "researched": [
      "permit",
      "escrow",
@@ -21379,13 +21437,13 @@
      "returns_ok"
     ]
    },
-   "score": 0,
+   "score": 1,
    "max": 6,
    "flags": [],
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "5 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -21409,7 +21467,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": null
+   "profile": null,
+   "fp": {
+    "sha256": "47b2fc9b7b72bb4f2f20d6610c827547eeaefe05ca6076a88cd6ff0909ec1e90",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "CDS-023",
@@ -21547,20 +21609,20 @@
    "country": "Spain",
    "region": "Costa del Sol",
    "docs": false,
-   "plans": false,
-   "band": "Price not stated",
-   "done": null,
+   "plans": true,
+   "band": "$400k and up",
+   "done": 2026,
    "title": null,
    "lease": null,
    "yield": null,
    "units": null,
    "checks": {
-    "permit": 0,
+    "permit": 1,
     "escrow": null,
     "progress": null,
-    "plans": false,
+    "plans": true,
     "record": false,
-    "returns_ok": false,
+    "returns_ok": true,
     "researched": [
      "permit",
      "escrow",
@@ -21570,17 +21632,18 @@
      "returns_ok"
     ]
    },
-   "score": 0,
+   "score": 2,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "mixed",
    "read": true,
-   "checked": "5 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
-    "No building permit mentioned: ask for the number before paying.",
+    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
@@ -21600,7 +21663,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": null
+   "profile": null,
+   "fp": {
+    "sha256": "7f976f5e6afe8d105a532472f5a5c064b6fd0924f55dcbd02262658e5b55c1e5",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "CDS-026",
@@ -21608,9 +21675,9 @@
    "country": "Spain",
    "region": "Costa del Sol",
    "docs": false,
-   "plans": false,
-   "band": "Price not stated",
-   "done": null,
+   "plans": true,
+   "band": "$400k and up",
+   "done": 2026,
    "title": null,
    "lease": null,
    "yield": null,
@@ -21619,9 +21686,9 @@
     "permit": 0,
     "escrow": null,
     "progress": null,
-    "plans": false,
+    "plans": true,
     "record": false,
-    "returns_ok": false,
+    "returns_ok": true,
     "researched": [
      "permit",
      "escrow",
@@ -21631,17 +21698,18 @@
      "returns_ok"
     ]
    },
-   "score": 0,
+   "score": 2,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "mixed",
    "read": true,
-   "checked": "5 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
     "No building permit mentioned: ask for the number before paying.",
+    "Completion advertised for 2026: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
@@ -21661,7 +21729,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": null
+   "profile": null,
+   "fp": {
+    "sha256": "30e302d12b5a09dde5256de9c566b0f2a6fb9e2aa756c2ef7307fe16c0b3a4da",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "HRV-001",
@@ -38512,10 +38584,10 @@
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "5 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
-    "A building permit is claimed: does it exist in the official system and match this plot?",
+    "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
@@ -38536,7 +38608,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 6
+   "profile": 6,
+   "fp": {
+    "sha256": "97640329143dffd06dfc65e6f517de684dc55b2de2b3cbebf68051ee5f9c81f9",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "IST-015",
@@ -38573,7 +38649,7 @@
    "notes": [],
    "tier": "mixed",
    "read": true,
-   "checked": "5 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
     "No building permit mentioned: ask for the number before paying.",
@@ -38597,7 +38673,11 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 9
+   "profile": 9,
+   "fp": {
+    "sha256": "fd2250d4fd8607eb65fd3438ca419f9516fc71d957df6b0cd889c5a42b1b24dd",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "IST-016",
@@ -38634,7 +38714,7 @@
    "notes": [],
    "tier": "clear",
    "read": true,
-   "checked": "5 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
     "No building permit mentioned: ask for the number before paying.",
@@ -38658,7 +38738,11 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 9
+   "profile": 9,
+   "fp": {
+    "sha256": "9eac805a2129af64376dd04e7342145a76a90842629a17791dbe1ee01ded3854",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "IST-017",
@@ -38666,7 +38750,7 @@
    "country": "Turkey",
    "region": "Istanbul",
    "docs": false,
-   "plans": false,
+   "plans": true,
    "band": "$200k to $400k",
    "done": 2028,
    "title": "Mesa Yenikent",
@@ -38677,7 +38761,7 @@
     "permit": 0,
     "escrow": null,
     "progress": null,
-    "plans": false,
+    "plans": true,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -38689,13 +38773,13 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 2,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "mixed",
    "read": true,
-   "checked": "5 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
     "No building permit mentioned: ask for the number before paying.",
@@ -38719,7 +38803,11 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 5
+   "profile": 5,
+   "fp": {
+    "sha256": "b58d78eaa848fb2c011ce636a50d8358969dcd073c157d46cbb4a2876c2c55b9",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "ITA-001",
@@ -40871,7 +40959,7 @@
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "5 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -40896,7 +40984,11 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 8
+   "profile": 8,
+   "fp": {
+    "sha256": "337948f1e0b4e0b7823284a364516f79b1c667c16397fdfb61a3e6ec765b79be",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "KSM-014",
@@ -40905,7 +40997,7 @@
    "region": "Koh Samui",
    "docs": false,
    "plans": false,
-   "band": "Price not stated",
+   "band": "$400k and up",
    "done": null,
    "title": null,
    "lease": null,
@@ -40933,10 +41025,11 @@
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "5 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
+    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
     "No building permit mentioned: ask for the number before paying.",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
@@ -40957,7 +41050,11 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null
+   "profile": null,
+   "fp": {
+    "sha256": "a685cc0782aebaa7be404b8b4f206005488f6c2596255001a0458fa7bece1f0c",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "KBV-001",
@@ -41906,7 +42003,7 @@
    "notes": [],
    "tier": "mixed",
    "read": true,
-   "checked": "6 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
     "No building permit mentioned: ask for the number before paying.",
@@ -41930,7 +42027,11 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 7
+   "profile": 7,
+   "fp": {
+    "sha256": "aa5f7035d48f8ec5087c653350680a0afdee4714889c00455fe2fdf074e8d3c8",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "LAG-004",
@@ -42859,7 +42960,7 @@
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "5 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -42884,7 +42985,11 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 5
+   "profile": 5,
+   "fp": {
+    "sha256": "47a1e6ac6ac74c9c2761da1ef5176be515ed6c35e66b2e238f7405bda0c94ade",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "LIS-006",
@@ -42921,7 +43026,7 @@
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "5 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -42945,7 +43050,11 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 4,
+   "fp": {
+    "sha256": "c90a51f5ddcb2acba95d38a9f4b9a19c373fec20f36f429d084404658da3e5bb",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "LIS-007",
@@ -42953,7 +43062,7 @@
    "country": "Portugal",
    "region": "Lisbon",
    "docs": false,
-   "plans": false,
+   "plans": true,
    "band": "$400k and up",
    "done": 2028,
    "title": null,
@@ -42964,7 +43073,7 @@
     "permit": 0,
     "escrow": null,
     "progress": null,
-    "plans": false,
+    "plans": true,
     "record": false,
     "returns_ok": true,
     "researched": [
@@ -42976,13 +43085,13 @@
      "returns_ok"
     ]
    },
-   "score": 1,
+   "score": 2,
    "max": 6,
    "flags": [],
    "notes": [],
-   "tier": "caution",
+   "tier": "mixed",
    "read": true,
-   "checked": "5 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -43007,7 +43116,11 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 5
+   "profile": 5,
+   "fp": {
+    "sha256": "e2680b7ec0a65a22362a36ca87eb5b807b5feaf9e4a1a069149912ab440e38b2",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "LPL-001",
@@ -46518,7 +46631,7 @@
    "notes": [],
    "tier": "mixed",
    "read": true,
-   "checked": "5 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
     "No building permit mentioned: ask for the number before paying.",
@@ -46541,7 +46654,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 4
+   "profile": 4,
+   "fp": {
+    "sha256": "9aa45a82ad47c0acc4dc96d361a507e4631e071ac743a5df18be183eedcb81ae",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "FNC-001",
@@ -52241,7 +52358,7 @@
    "region": "Miami",
    "docs": false,
    "plans": false,
-   "band": "Price not stated",
+   "band": "$400k and up",
    "done": null,
    "title": null,
    "lease": null,
@@ -52253,7 +52370,7 @@
     "progress": null,
     "plans": false,
     "record": false,
-    "returns_ok": false,
+    "returns_ok": true,
     "researched": [
      "permit",
      "escrow",
@@ -52263,13 +52380,13 @@
      "returns_ok"
     ]
    },
-   "score": 0,
+   "score": 1,
    "max": 6,
    "flags": [],
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "5 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -52293,7 +52410,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": null
+   "profile": null,
+   "fp": {
+    "sha256": "857856d9741081ccf4867c3e1d0ad1985d6fdbae1e6626760dc1f0f4feef3f4e",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "MNE-001",
@@ -52895,7 +53016,7 @@
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "5 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -52920,7 +53041,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 2
+   "profile": 2,
+   "fp": {
+    "sha256": "84cc3e907e14031d56178b35ab77ef0b1fa68caf7c9996224ba96e145c49a9b6",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "MOZ-001",
@@ -59531,7 +59656,7 @@
    "notes": [],
    "tier": "mixed",
    "read": true,
-   "checked": "5 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
     "No building permit mentioned: ask for the number before paying.",
@@ -59555,7 +59680,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 11
+   "profile": 11,
+   "fp": {
+    "sha256": "b8fcea75632925f15ab8b3aa988ed565e145ffeeb6339ce040313e0c68e3aae0",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "PAT-014",
@@ -59566,9 +59695,9 @@
    "plans": true,
    "band": "Under $100k",
    "done": 2028,
-   "title": "Freehold condominium unit, foreign quota (Thai quota units from 1.93M to 1.99M THB, with leasehold as fallback)",
+   "title": "leasehold",
    "lease": null,
-   "yield": null,
+   "yield": 8,
    "units": 139,
    "checks": {
     "permit": 0,
@@ -59576,7 +59705,7 @@
     "progress": null,
     "plans": true,
     "record": true,
-    "returns_ok": true,
+    "returns_ok": false,
     "researched": [
      "permit",
      "escrow",
@@ -59586,15 +59715,17 @@
      "returns_ok"
     ]
    },
-   "score": 3,
+   "score": 2,
    "max": 6,
    "flags": [],
    "notes": [],
    "tier": "mixed",
    "read": true,
-   "checked": "5 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
+    "Leasehold: is the lease registered, and is the base term the one advertised?",
+    "\"Guaranteed\" returns: who guarantees them, and what happens if they can't pay?",
     "No building permit mentioned: ask for the number before paying.",
     "Completion advertised for 2028: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
@@ -59616,7 +59747,11 @@
    "stage": "off-plan",
    "delay": null,
    "overdue": null,
-   "profile": 8
+   "profile": 8,
+   "fp": {
+    "sha256": "30156b059d334385011c181f6957db583d6f7eda46b83e0c5c8c3847b937a029",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "PAT-015",
@@ -59626,7 +59761,7 @@
    "docs": false,
    "plans": true,
    "band": "$100k to $200k",
-   "done": 2029,
+   "done": 2027,
    "title": "Freehold condominium unit, foreign quota (lowest foreign quota offer per Pearl; Thai quota from 3.79M THB)",
    "lease": null,
    "yield": null,
@@ -59653,11 +59788,11 @@
    "notes": [],
    "tier": "mixed",
    "read": true,
-   "checked": "5 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
     "No building permit mentioned: ask for the number before paying.",
-    "Completion advertised for 2029: does progress on site match?",
+    "Completion advertised for 2027: does progress on site match?",
     "No deposit protection published: will your payments go into an escrow or trust account in your name?"
    ],
    "verified": {
@@ -59677,7 +59812,11 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": 9
+   "profile": 9,
+   "fp": {
+    "sha256": "80c032a9cd2ca7d743e029360892050ed2e9f4213ffd15fa4417a22b64e6445b",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "PAT-016",
@@ -59759,7 +59898,7 @@
     "progress": null,
     "plans": false,
     "record": false,
-    "returns_ok": false,
+    "returns_ok": true,
     "researched": [
      "permit",
      "escrow",
@@ -59769,13 +59908,13 @@
      "returns_ok"
     ]
    },
-   "score": 0,
+   "score": 1,
    "max": 6,
    "flags": [],
    "notes": [],
    "tier": "caution",
    "read": true,
-   "checked": "5 Nov 2026",
+   "checked": "7 Nov 2026",
    "invited": null,
    "q": [
     "Title type not stated: leasehold, freehold or a company structure?",
@@ -59799,7 +59938,11 @@
    "stage": "under construction",
    "delay": null,
    "overdue": null,
-   "profile": null
+   "profile": null,
+   "fp": {
+    "sha256": "aee8c585500ea45a56f7e3b62a3ddaa2a23edb8a4f78a511c3096573f6adbf33",
+    "date": "2026-11-07"
+   }
   },
   {
    "id": "PER-001",
@@ -76958,7 +77101,7 @@
   }
  ],
  "db": {
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "projects": 1124,
   "markets": 170,
   "countries": 96,
@@ -76995,9 +77138,9 @@
   "register_watched": 32
  },
  "seal": {
-  "date": "2026-11-06",
-  "count": 992,
-  "root": "79250951c77c1e608a0cbc5aac64bb279cfc07db6b9335b19ba421ea0db2a827",
+  "date": "2026-11-07",
+  "count": 1025,
+  "root": "70caf64ff99698b45cb821d93e425ea8412d585a87ca98a1ae8c1b2e11e8be7e",
   "method": "root = sha256 of the lines \"ID SHA256\" (one per project with a fingerprint, sorted by id, each ending with a newline); each SHA256 is the hash of the developer page text as read by the agent; the root is timestamped in Bitcoin through OpenTimestamps",
   "stamped": true
  },
