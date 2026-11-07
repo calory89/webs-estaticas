@@ -593,7 +593,7 @@ async function vc(root, env) {
 const escH = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 async function page(root, env, ctx, shell) {
   const d = await load(root, env);
-  const base = await shell('/check/');
+  const base = await shell('/about/');   // a plain page shell (header, footer, styles); /check/ has inline scripts that need its form
   const name = d ? ((d.cards.find(c => c.id === 'match') || {}).project || {}).name || (d.meta.input.url ? d.meta.input.url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '') : d.meta.input.q) : null;
   const title = d ? 'Project X-ray: ' + clip(name, 60) + ' | Kolaboro' : 'Project X-ray not found | Kolaboro';
   const noJs = d ? '<noscript><ol>' + d.cards.map(c => '<li><b>' + escH(c.title) + '</b>: ' + escH(c.summary || c.status) + '<ul>' + (c.facts || []).map(f => '<li>' + escH(f.k) + ': ' + escH(f.v) + (f.q ? ' "' + escH(f.q) + '"' : '') + (f.src ? ' (' + escH(f.src) + ')' : '') + '</li>').join('') + '</ul></li>').join('') + '</ol></noscript>' : '';
@@ -611,6 +611,7 @@ async function page(root, env, ctx, shell) {
     .on('head', { element(e) { e.append('<meta name="robots" content="noindex, follow">', { html: true }); } })
     .on('main', { element(e) { e.setInnerContent(main, { html: true }); } })
     .on('script[src^="/k/cycle.js"]', { element(e) { e.remove(); } })
+    .on('script[type="application/ld+json"]', { element(e) { e.remove(); } })
     .transform(base);
   const h = new Headers(r.headers); h.set('x-robots-tag', 'noindex, follow');
   return new Response(r.body, { status: d ? 200 : 404, headers: h });
