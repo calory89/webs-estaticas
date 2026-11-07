@@ -90,7 +90,8 @@ const ECSS = '<style>:root{--i:#13222E;--m:#56636F;--l:#D9DFDC;--p:#fff;--s:#155
   'ol{margin:6px 0 0;padding-inline-start:18px}li{margin:3px 0}.f{color:var(--m);font-size:12px;margin:10px 0 0;border-top:1px solid var(--l);padding-top:8px}a{color:var(--s)}code{font-size:11px;overflow-wrap:anywhere}.k{display:inline-block;background:var(--sk);border-radius:6px;padding:1px 7px;font-size:13px}' +
   '@media(max-width:420px){dl{grid-template-columns:1fr}dt{margin-top:4px}}</style>';
 function embedPage(lang, title, inner, canon) {
-  return '<!doctype html><html lang="' + lang + '"' + dir(lang) + '><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex, follow"><link rel="canonical" href="' + canon + '"><title>' + esc(title) + '</title>' + ECSS + '</head><body><div class="w">' + inner + '</div></body></html>';
+  // served as XHTML: Cloudflare's zone tag injection (analytics) only rewrites text/html, so the widgets stay free of tracking code
+  return '<?xml version="1.0" encoding="utf-8"?>\n<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="' + lang + '" xml:lang="' + lang + '"' + dir(lang) + '><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="robots" content="noindex, follow"/><link rel="canonical" href="' + canon + '"/><title>' + esc(title) + '</title>' + ECSS + '</head><body><div class="w">' + inner + '</div></body></html>';
 }
 const langOf = u => { const l = u.searchParams.get('lang'); return LANGS.includes(l) ? l : 'en'; };
 function head(X, x, lang) {
@@ -148,7 +149,7 @@ function codesPage(X, x, lang, vr) {
   let b = '<p class="h">' + esc(t(lang, 'e_title', { n: x.n })) + '</p><p>' + esc(t(lang, 'e_lead')) + '</p>';
   b += '<p class="h" style="margin-top:14px">' + esc(t(lang, 'e_card')) + '</p>' + ifr(card, rv ? 300 : 170, x.n) + '<p class="s">' + esc(t(lang, 'e_code')) + '</p>' + code(ifr(card, rv ? 300 : 170, 'Kolaboro: ' + x.n));
   b += '<p class="h">' + esc(t(lang, 'e_tracker')) + '</p>' + ifr(trk, rv ? 260 : 170, x.n) + '<p class="s">' + esc(t(lang, 'e_code')) + '</p>' + code(ifr(trk, rv ? 260 : 170, 'Kolaboro: ' + x.n));
-  b += '<p class="h">' + esc(t(lang, 'e_badge')) + '</p><p>' + esc(t(lang, 'e_badge_txt')) + '</p>' + (vr && vr.domain ? '<p>' + esc(t(lang, 'e_badge_yes', { d: vr.domain })) + '</p><p><img src="' + bdg + '" alt="Tracked by Kolaboro"></p>' + code('<a href="' + pUrl('en', x) + '"><img src="' + bdg + '" alt="Tracked by Kolaboro" height="22"></a>')
+  b += '<p class="h">' + esc(t(lang, 'e_badge')) + '</p><p>' + esc(t(lang, 'e_badge_txt')) + '</p>' + (vr && vr.domain ? '<p>' + esc(t(lang, 'e_badge_yes', { d: vr.domain })) + '</p><p><img src="' + bdg + '" alt="Tracked by Kolaboro"/></p>' + code('<a href="' + pUrl('en', x) + '"><img src="' + bdg + '" alt="Tracked by Kolaboro" height="22"></a>')
     : '<p>' + esc(t(lang, 'e_badge_no')) + ' <a href="' + ORIGIN + '/developers/reply/?id=' + encodeURIComponent(x.id) + '" target="_top">' + esc(t(lang, 'e_reply')) + '</a></p>');
   b += '<p class="f">' + esc(t(lang, 'e_lang')) + ' ' + esc(t(lang, 'e_lic')) + ' <a href="' + pUrl(lang, x) + '" target="_top">' + esc(t(lang, 'open')) + '</a></p>';
   return embedPage(lang, t(lang, 'e_title', { n: x.n }), b, ORIGIN + '/embed/p/' + x.s + '/');
@@ -363,7 +364,7 @@ export async function handle(req, u, env, ctx, shell) {
     if (!m[3]) return new Response(null, { status: 301, headers: { location: p + '/' + u.search } });
     const x = X.ix.bySlug.get(m[2]); if (!x) return nf();
     const lang = langOf(u), html = m[1] === 'card' ? eCard(X, x, lang) : m[1] === 'tracker' ? eTracker(X, x, lang) : codesPage(X, x, lang, await verifiedReply(x, ctx));
-    return new Response(html, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=900, no-transform' } });
+    return new Response(html, { headers: { 'content-type': 'application/xhtml+xml; charset=utf-8', 'cache-control': 'public, max-age=900, no-transform', 'x-robots-tag': 'noindex, follow' } });
   }
   if ((m = /^\/embed\/badge\/([a-z0-9-]{1,90})\.svg$/.exec(p))) {
     const x = X.ix.bySlug.get(m[1]); if (!x) return nf();
