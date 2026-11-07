@@ -520,7 +520,7 @@
    "path": "visual-diff.json",
    "title": "Visual changes on developer pages",
    "kind": "data",
-   "description": "Where the pages of tracked developer websites visibly changed, as page geometry only. No screenshots are published because they would identify anonymous projects.",
+   "description": "Where the pages of tracked developer websites visibly changed, as page geometry only. No screenshots are published, because they would copy the developers' own copyrighted images.",
    "workflow": "kolaboro-visual.yml",
    "schedule": "monthly, on the 6th at 15:23 UTC",
    "interval_hours": 744,

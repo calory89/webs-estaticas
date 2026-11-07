@@ -316,7 +316,7 @@ pub.sort(key=lambda r: (-(len(r['changes']) and 1), r['changes'][-1]['date'] if 
 pub.sort(key=lambda r: (r['changes'][-1]['date'] if r['changes'] else ''), reverse=True)
 doc = {
     'version': 'visual-diff-1', 'generated': TODAY,
-    'what': 'Where the pages of tracked developer websites visibly changed, as page geometry only. No screenshots are published: they would identify anonymous projects. Before, after and highlighted diff images are kept privately for 90 days and are available to a buyer on request.',
+    'what': 'Where the pages of tracked developer websites visibly changed, as page geometry only. No screenshots are published: they would copy the developers\' own copyrighted images. Before, after and highlighted diff images are kept privately for 90 days and are available to a buyer on request.',
     'trigger': 'A capture is taken when the research agent sees the page text change (text fingerprint), or once to make a first baseline.',
     'method': ['Full-page screenshot in Chromium at %d px wide, animations off, lazy images scrolled into view, capped at %d px of page height.' % (VIEW_W, MAX_CSS_H),
                'Both captures scaled to %d px wide and turned grey. Pixel rows are aligned between the two captures (longest matching blocks), so content that only moved down is not counted as changed.' % STORE_W,

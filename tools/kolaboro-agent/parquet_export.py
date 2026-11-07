@@ -164,7 +164,7 @@ def main(src, out_dir):
         'source': {'url': SRC_URL, 'sha256': src_sha, 'updated': d.get('updated'), 'projects': len(cases)},
         'files': files,
         'signed_manifest': 'https://kolaboro.com/api/x/e/parquet-manifest',
-        'note': 'Advertised claims and what is public, not verified facts. Projects are anonymous until verification is complete. '
+        'note': 'Advertised claims and what is public, not verified facts. Each project has a named page with sourced facts, except projects in Sumba. '
                 'Built daily by a GitHub Actions workflow from the public JSON; the signed manifest is produced by the site worker after it re-hashes these files.',
     }
     with open(os.path.join(out_dir, 'kolaboro.parquet.json'), 'w') as f:

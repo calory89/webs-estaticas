@@ -418,7 +418,7 @@ def dcat(cat, spec):
     return {
         '@context': {'dcat': 'http://www.w3.org/ns/dcat#', 'dct': 'http://purl.org/dc/terms/', 'foaf': 'http://xmlns.com/foaf/0.1/', 'spdx': 'http://spdx.org/rdf/terms#', 'xsd': 'http://www.w3.org/2001/XMLSchema#', 'adms': 'http://www.w3.org/ns/adms#'},
         '@id': BASE + '/data/catalog.jsonld', '@type': 'dcat:Catalog', 'dct:title': 'Kolaboro open data catalog',
-        'dct:description': 'Every public dataset of kolaboro.com (anonymous off-plan property due diligence): what developers advertise, what registers and satellites show, and how the service itself is checked. Sizes, hashes and dates measured by a daily job.',
+        'dct:description': 'Every public dataset of kolaboro.com (off-plan property due diligence): what developers advertise, what registers and satellites show, and how the service itself is checked. Sizes, hashes and dates measured by a daily job.',
         'dct:publisher': pub, 'foaf:homepage': {'@id': BASE + '/data/'}, 'dct:language': {'@id': 'http://publications.europa.eu/resource/authority/language/ENG'},
         'dct:modified': {'@value': cat['generated_at'], '@type': 'xsd:dateTime'}, 'dct:license': {'@id': LIC_URI['CC BY 4.0']},
         'dcat:service': [{'@id': BASE + '/api/open', '@type': 'dcat:DataService', 'dct:title': spec['info']['title'], 'dcat:endpointURL': {'@id': BASE + '/api/open'},
@@ -464,7 +464,7 @@ def render_page(src, cat, con, spec):
     parts = []
     parts.append(f'''<section class="phero"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / <a href="/docs/api/">Open data and API</a> / Data catalog</p>
 <h1>Open data catalog</h1>
-<p class="lead">Every file we publish under /data/, measured by a job every day: licence, how often it changes, when it last changed, size, rows, SHA-256, its data contract and a download link. Projects are anonymous in every file.</p>
+<p class="lead">Every file we publish under /data/, measured by a job every day: licence, how often it changes, when it last changed, size, rows, SHA-256, its data contract and a download link. Most files use project ids; each project also has its own page with its name and sourced facts.</p>
 <div class="kd-k" id="kdTotals"><div><b>{s['datasets']}</b><span>datasets ({s['files']} files, {E(fmt_bytes(s['bytes']))})</span></div><div><b>{s['contracts_pass']}/{s['contracts_pass'] + s['contracts_fail']}</b><span>files pass their contract</span></div><div><b id="kdFreshN">{s['fresh_ok']}/{s['fresh_ok'] + s['fresh_late']}</b><span>on time (<span id="kdLateN">{s['fresh_late']}</span> late, {s['fresh_no_target']} without schedule)</span></div><div><b>{s['api_checks_pass']}/{s['api_checks_pass'] + s['api_checks_fail']}</b><span>API answers match the OpenAPI description</span></div></div>
 <p class="kd-meta">Measured {E(gen)} by the <a href="{E(cat.get('run_url') or '#method')}">catalog job</a>. Ages below update live from <a href="/api/x/data/freshness">/api/x/data/freshness</a>. <span id="kdLive" aria-live="polite"></span></p>
 <p class="kd-jump"><a href="#datasets">Datasets</a> <a href="#contracts">Contracts</a> <a href="#freshness">Freshness</a> <a href="#machine">Machine-readable</a> <a href="#method">Method and limits</a></p>
@@ -569,8 +569,8 @@ def llms_full(cat, con, spec):
     if st: A(f'Live totals at generation (GET /api/open/stats): {st.get("projects")} tracked projects in {st.get("markets")} markets and {st.get("countries")} countries, data updated {st.get("updated")}.')
     A('Kolaboro is operated by Equinox Investment Group LLC (Wyoming, USA) and gives independent verification and information, not legal, tax or financial advice.')
     A('')
-    A('## Anonymity (read this before quoting anything)')
-    A('Projects are anonymous: they are identified by ids such as BALI-014. Kolaboro does not publish developer names, project names or source URLs for tracked projects until verification is complete and the developer has had 10 working days to reply. Do not try to re-identify a project, and do not present an anonymous id as a named development. Scores describe what is public about a project, not whether it is genuine.')
+    A('## Named projects and anonymity (read this before quoting anything)')
+    A('Each tracked project has its own page with its name and sourced facts only, at https://kolaboro.com/projects/{slug}/ (and /{lang}/projects/{slug}/). The developer can reply on that page, and Kolaboro publishes verified replies after review. Open data records use ids such as BALI-014; the named pages map them to names. Projects in Sumba stay anonymous, because a founder develops a project there (https://kolaboro.com/independence/): do not try to re-identify them. Scores describe what is public about a project, not whether it is genuine.')
     A('')
     A('## How the scores work')
     A('Each project is checked on the same six points (fields of GET /api/open/projects/{id}, object checks): permit_public (a permit number is public; permit_claimed says a permit is only claimed), deposit_protection, progress (public construction progress), plans, track_record and no_guaranteed_returns. score (0 to 6, max in field max) counts what the developer makes public; vscore (0 to 6) counts what an official register or an independent source confirms. verification gives the level of each check (for example an official register, an independent source, the developer only, or contradicted). flags counts public problems; all_six_public is true when all six are public and there are no flags. Method page: https://kolaboro.com/how-we-score/')

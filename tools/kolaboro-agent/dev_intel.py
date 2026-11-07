@@ -224,7 +224,7 @@ def domain_age(P, ids, prev):
         'method': 'For each tracked project whose page is on the developer\'s or the project\'s own website, the domain registration '
                   'date from the registry\'s RDAP service (found through the IANA RDAP bootstrap) and the earliest TLS certificate for the '
                   'domain or any subdomain in Certificate Transparency logs (crt.sh). Dates are published to the month and the domain itself is '
-                  'not published, because projects stay anonymous until verification is complete. Pages on listing portals, agents or news '
+                  'not published in this file. Pages on listing portals, agents or news '
                   'sites are marked third-party: their domain age says nothing about the developer. A domain can be re-registered or bought '
                   'second-hand, so an old domain is not proof of an old company; a young one next to a long claimed history is a question to ask. '
                   'Certificate Transparency logging became mandatory in 2018, so certificates before then may be missing.',

@@ -362,7 +362,7 @@ def public_cases(projects, latest):
                     'q': q[:6], 'verified': _verification(p), 'vscore': sum(1 for l in (_verification(p) or {}).values() if l in ('registry', 'independent')) if _verification(p) else None,
                     'claims': _claims(p), 'stage': (lambda st: 'completed' if 'complet' in st or 'handed' in st else 'under construction' if 'construct' in st else 'off-plan' if 'off' in st or 'plan' in st else None)(str(p.get('stage') or '').lower()), 'delay': (p.get('facts') or {}).get('delay_months'), 'overdue': _overdue(p), 'profile': sum(1 for k in FACT_KEYS if _filled((p.get('facts') or {}).get(k))) or None})
     out.sort(key=lambda c: (0 if c['invited'] else 1, 0 if c['market'] == 'Bali' else 1, c['market'], c['region'], c['id']))
-    res = {'updated': TODAY, 'markets': len({c['market'] for c in out}), 'countries': len({c['country'] for c in out}), 'note': 'Anonymised until verification is complete. Advertised claims, not verified facts.', 'cases': out}
+    res = {'updated': TODAY, 'markets': len({c['market'] for c in out}), 'countries': len({c['country'] for c in out}), 'note': 'Each project has a named page with sourced facts, except projects in Sumba (conflict of interest). Advertised claims, not verified facts.', 'cases': out}
     HK = {'permit_claim': 'permit claimed', 'plans_published': 'plans published', 'price': 'price from', 'completion': 'completion', 'escrow': 'deposit protection stated',
           'progress_pct': 'construction progress %', 'guaranteed_language': 'guaranteed-return language', 'yield_pct': 'advertised yield %', 'units': 'units', 'permit_number': 'permit number published'}
     hist = {}
