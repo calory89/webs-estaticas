@@ -39,6 +39,7 @@ const KXR_V = 'qa13c'; let kxr = null; const KXR = /^\/api\/kb\/xray(?:\/stats)?
 let kfw = null; const KFW = /^\/api\/v1\/(?:projects|developers)(?:\/[a-z0-9-]{1,90})?\/?$|^\/api\/v1\/(?:search-index|watch)$|^\/(?:projects|developers)\/[a-z0-9-]{1,90}\/feed\.(?:atom|json)$/;   // b9a: public named API, feeds, watch (keep equal to PATHS9 in kbx_follow.js)
 let kog = null, kbk = null; const KB10 = /^\/og\/(?:projects|developers)\/[a-z0-9-]{1,90}\.png$|^\/bulk-check\/?$|^\/api\/kb\/bulk\/?$/;   // b10c: keep equal to PATHS in kbx_og.js + kbx_bulk.js
 let kxev = null; const KXEV = /^\/api\/xev(?:\/sat\.png)?$/;   // x11b (batch 11): X-ray evidence cards + Sentinel-2 crop, keep equal to PATHS in kbx_xray_ev.js
+let knet = null; const KNET = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:graph\/developers|live\/xrays)\/?$|^\/api\/x\/net\/(?:graph|live)$/;   // b14 f14c: developer network graph + live X-ray globe (keep equal to PATHS in kbx_net.js)
 let knm = null; const KNM = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects|developers)(?:\/|$)|^\/api\/seo\/(?:urls|scan)$/;   // seoP named pages, keep equal to PATHS in kbx_named.js
 let kxc = null; const KXC = /^\/k\/xray-cta\.js$|^\/api\/x\/xc(\/|$)|^\/embed\/xray(\.js|\/)?$|^\/__k\/kxc-admin\.js$/;   // x11c (batch 11): X-ray conversion block, partner embed, admin tab (keep equal to PATHS in kbx_xc.js)
 let kseo = null; const KSEO = /^\/(sitemap_index\.xml|sitemaps\/[a-z0-9-]+\.xml|llms(-full)?\.txt|countries(\/.*)?|rankings(\/.*)?|new\/?|vs(\/.*)?|embed\/(delay|project|widgets)(\/.*)?|engineering\/seo\/?|press\/delivery-index(\/.*)?|7f3c9a1e5b2d4c8fa06e91d3b7c4f259\.txt)$/;   // keep equal to PATHS in kbx_seo.js
@@ -241,6 +242,13 @@ export default {
       else { if (!kbk) kbk = await import('./kbx_bulk.js'); if (!klk) klk = await import('./kbx_lookup.js');
         const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
         const r = await kbk.handle(req, u, env, ctx, shell, klk.handle); if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r; }
+    }
+    // kolaboro.com (f14c, batch 14): developer network graph /graph/developers/, live X-ray globe /live/xrays/, /api/x/net/* (see kbx_net.js)
+    if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && KNET.test(u.pathname)) {
+      if (!knet) knet = await import('./kbx_net.js');
+      const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
+      const r = await knet.handle(req, u, env, ctx, shell);
+      if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
     }
     // kolaboro.com (seoP, batch 8): named project and developer pages in 8 languages, /p/<id>/ 301 to them, /api/seo/urls (see kbx_named.js)
     if (host === 'kolaboro.com' && req.method === 'GET' && KNM.test(u.pathname)) {
