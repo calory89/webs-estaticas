@@ -24,7 +24,8 @@ import { seoLd } from './kbx_lastmod.js';   // batch 15 (s15b): true dateModifie
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v23';   // v23: country hub slug for 'X (USA)' and 'St X' (s15a)
+const CACHE_V = 'named-v24';   // v24: embed link and monthly market story links (s15a for s15c)
+//   // v23: country hub slug for 'X (USA)' and 'St X' (s15a)
 //   // v22: search-intent titles, short answer, freshness line, more FAQ, related pages, image objects (s15a)
 //   // v20: construction progress from space (f14b);   // v19: search empty state links to the free check, claims 'checked against' translated (qa13); v18: RTL-safe honeypot (d12b); v17: changes page (d12b); v16: design-system tokens (d12b); v15: d12b redesign (H1 tail line, key-facts panel, side contents on desktop, tables as cards on phones)
 // v13: sticky section chips, folded long lists, 44 px source pills (ux11); v11: og:image share cards, price per m2, company network (b10c); v10: page-history line (b9b)
@@ -64,7 +65,7 @@ async function data(env) {
     if (x.dvs && !RESERVED.has(x.dvs)) { if (!devs.has(x.dvs)) devs.set(x.dvs, { s: x.dvs, n: x.dv, ids: [] }); devs.get(x.dvs).ids.push(x.id); }
     if (x.ar && x.ar !== x.mk) { const a = x.mk + '|' + x.ar; if (!byAr.has(a)) byAr.set(a, []); byAr.get(a).push(x); }   // s15a: same area, for related links
     const c = caseBy.get(x.id), m = mk.get(x.mk) || { k: 0, pn: 0, esc: 0 };
-    m.k++; if ((c.checks || {}).permit === 2) m.pn++; if ((c.checks || {}).escrow === true) m.esc++; mk.set(x.mk, m);
+    m.k++; if (reviewed(c)) m.rv = (m.rv || 0) + 1; if ((c.checks || {}).permit === 2) m.pn++; if ((c.checks || {}).escrow === true) m.esc++; mk.set(x.mk, m);
   }
   const dmk = new Map(((delay && delay.markets) || []).map(m => [m.market, m]));
   IDX = { named, cases, P, byId, bySlug, devs, caseBy, mk, dmk, byAr, sat: null, prom: (prom && prom.projects) || {}, find: (find && find.projects) || {}, sim: (sim && sim.projects) || {}, updated: cases.updated || named.updated };
@@ -279,7 +280,8 @@ function projectPage(ix, x, lang, extra) {
   const ms = ix.mk.get(x.mk), dm = ix.dmk.get(x.mk);
   const market = '<ul class="fl">' + fact(esc(tr(lang, 'mk_line', { k: ms.k, mk: x.mk, pp: Math.round(ms.pn / ms.k * 100), pe: Math.round(ms.esc / ms.k * 100) })), '/m/' + slugM(x.mk) + '/', 'kolaboro.com/m') +
     (dm && dm.past_first && dm.median_late != null ? fact(esc(tr(lang, 'mk_delay', { mk: x.mk, k: dm.past_first, m: dm.median_late })), '/index/delays/', 'kolaboro.com/index/delays') : '') + '</ul>' +
-    '<p><a class="more" href="/m/' + slugM(x.mk) + '/">' + esc(tr(lang, 'mk_link', { mk: x.mk })) + '</a></p>';
+    '<p><a class="more" href="/m/' + slugM(x.mk) + '/">' + esc(tr(lang, 'mk_link', { mk: x.mk })) + '</a></p>' +
+    ((ms.rv || 0) >= 8 && iso(ix.updated) ? '<p><a class="more" href="' + pre(lang) + '/stories/' + iso(ix.updated).slice(0, 7) + '/' + slugA(x.mk) + '/">' + esc(tr(lang, 'rel_story', { mk: x.mk, mo: fd(iso(ix.updated).slice(0, 7), lang) })) + '</a></p>' : '');
 
   // reviews (verified, moderated)
   const reviews = (rv.approved_total ? '<p>' + esc(tr(lang, 'rev_some', { k: rv.approved_total })) + '</p><div class="ugc" data-ugc>' + (rv.reports || []).slice(0, 10).map(r => '<blockquote lang="en">' + esc(r.body || r.text || '') + '</blockquote>').join('') + '</div>' : '<p>' + esc(tr(lang, 'rev_none', { n: name })) + '</p>') +
@@ -335,6 +337,8 @@ function projectPage(ix, x, lang, extra) {
   if (devPage && others.length) relL.push('<li><a href="' + devPage.replace(ORIGIN, '') + '">' + esc(tr(lang, 'rel_dev', { dev: x.dv })) + '</a> <small>' + (others.length + 1) + '</small></li>');
   if (SM.length) relL.push('<li><a href="/compare/?ids=' + [x.id, ...SM.slice(0, 3).map(o => o.id)].map(encodeURIComponent).join(',') + '" rel="nofollow">' + esc(tr(lang, 'rel_cmp', { n: name })) + '</a></li>');
   relL.push('<li><a href="/vs/#' + slugA(x.mk) + '">' + esc(tr(lang, 'rel_vs', { mk: x.mk })) + '</a></li>');
+  // s15c: embeddable fact card, (the market's monthly data story is linked from the market section: 8+ reviewed named projects, same rule as kbx_cite.js)
+  relL.push('<li><a href="/embed/p/' + x.s + '/">' + esc(tr(lang, 'rel_embed')) + '</a></li>');
   if (x.co) relL.push('<li><a href="/countries/' + slugA(CO_HUB[x.co] || x.co) + '/">' + esc(tr(lang, 'rel_country', { co: x.co })) + '</a></li>');
   const related = (AR.length ? '<h3>' + esc(tr(lang, 'rel_area', { ar: x.ar })) + '</h3><ul class="lk">' + AR.map(o => '<li><a href="' + pre(lang) + '/projects/' + o.s + '/">' + esc(o.n) + '</a>' + (o.dv ? ' <small>' + esc(o.dv) + '</small>' : '') + '</li>').join('') + '</ul>' : '') +
     '<ul class="lk">' + relL.join('') + '</ul>';
