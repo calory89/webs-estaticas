@@ -436,7 +436,46 @@ a.k-src:hover{color:var(--k-sea);border-bottom-color:currentColor}
 :where(:root:has(link[href*="/k/site.css"])) .az .lead{font-size:var(--k-fs-md);max-width:62ch}
 :where(:root:has(link[href*="/k/site.css"])) .az .qform.k-omni{margin-top:20px;max-width:none}
 :where(:root:has(link[href*="/k/site.css"])) .r26-more a{border-radius:var(--k-r-md)!important;border-color:var(--k-line)!important}
+:where(:root:has(link[href*="/k/site.css"])) .lv-t em,:where(:root:has(link[href*="/k/site.css"])) .flabel,:where(:root:has(link[href*="/k/site.css"])) .rgc-reg,:where(:root:has(link[href*="/k/site.css"])) dt.d-ok,:where(:root:has(link[href*="/k/site.css"])) dt.d-no,:where(:root:has(link[href*="/k/site.css"])) dt.d-how,:where(:root:has(link[href*="/k/site.css"])) .lk-col h4,:where(:root:has(link[href*="/k/site.css"])) .st-c span,:where(:root:has(link[href*="/k/site.css"])) .ft-tag,:where(:root:has(link[href*="/k/site.css"])) main th{text-transform:none!important;letter-spacing:0!important}
+/* tools index: calm category edge instead of thick orange bars */
+:where(:root:has(link[href*="/k/site.css"])) .ft-f{border:1px solid var(--k-line)!important;border-inline-start:3px solid var(--k-line-2)!important;border-radius:var(--k-r-md)!important}
+:where(:root:has(link[href*="/k/site.css"])) .ft-f.look{border-inline-start-color:var(--k-sea)!important}:where(:root:has(link[href*="/k/site.css"])) .ft-f.note{border-inline-start-color:var(--k-warn)!important}:where(:root:has(link[href*="/k/site.css"])) .ft-f.ok{border-inline-start-color:var(--k-ok)!important}
+:where(:root:has(link[href*="/k/site.css"])) .ft-f:hover{box-shadow:var(--k-sh-2)}
+:where(:root:has(link[href*="/k/site.css"])) .ft-f h3 a{text-decoration:none;color:var(--k-ink)}:where(:root:has(link[href*="/k/site.css"])) .ft-f h3 a:hover{text-decoration:underline}
+:where(:root:has(link[href*="/k/site.css"])) .ft-tag{font-weight:640!important;font-size:var(--k-fs-xs)!important}
+/* status and data cards */
+:where(:root:has(link[href*="/k/site.css"])) .st-c{border-color:var(--k-line)!important;border-radius:var(--k-r-md)!important}
+:where(:root:has(link[href*="/k/site.css"])) .st-c span{font-size:var(--k-fs-sm)!important;font-weight:600!important}
+:where(:root:has(link[href*="/k/site.css"])) .st-c b{font-stretch:var(--k-wdisplay);letter-spacing:-.02em}
+/* generic tables on content pages */
+:where(:root:has(link[href*="/k/site.css"])) main table:not(.k-table){font-variant-numeric:tabular-nums}
+:where(:root:has(link[href*="/k/site.css"])) main table:not(.k-table) th{font-weight:650;color:var(--k-ink-2)}
 /* ---------- end 4 ---------- */
+
+
+/* auth pages (login, sign-up, reset, confirm email, thanks): calm split screen, works on app.css pages */
+.ap-auth{background:var(--k-paper);color:var(--k-ink);font-family:var(--k-font)}
+.ap-auth-l{background:var(--k-band)!important;color:var(--k-band-ink)}
+.ap-auth-l::after{background:none!important;inset:0!important;width:auto!important;height:auto!important;border-radius:0!important;background-image:linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px)!important;background-size:56px 56px!important;-webkit-mask-image:radial-gradient(90% 70% at 80% 100%,#000 10%,transparent 70%);mask-image:radial-gradient(90% 70% at 80% 100%,#000 10%,transparent 70%);pointer-events:none}
+.ap-auth-l h1{font-stretch:104%;font-weight:720;letter-spacing:-.025em}
+.ap-auth-l li{color:var(--k-band-muted)!important;line-height:1.5}
+.ap-auth-l li b{color:var(--k-band-ink)!important;font-weight:650}
+.ap-auth-r{background:var(--k-paper)}
+.ap-auth-box{background:var(--k-surface);border:1px solid var(--k-line);border-radius:var(--k-r-lg);padding:clamp(20px,4vw,36px);box-shadow:var(--k-sh-2)}
+.ap-auth-box h2{font-stretch:104%;font-weight:700;letter-spacing:-.02em;color:var(--k-ink)}
+.ap-auth-box label{font-weight:620!important;color:var(--k-ink)}
+.ap-auth-box input:not([type=checkbox]):not([type=radio]),.ap-auth-box select{border:1px solid var(--k-field)!important;border-radius:var(--k-r-sm)!important;min-height:48px!important;background:var(--k-surface)!important;color:var(--k-ink)}
+.ap-auth-box input:focus-visible,.ap-auth-box select:focus-visible{outline:none;border-color:var(--k-sea)!important;box-shadow:0 0 0 3px color-mix(in srgb,var(--k-sea) 22%,transparent)}
+.ap-auth .ap-btn{background:var(--k-brand);color:var(--k-on-brand);border-radius:var(--k-r-md);font-weight:650}
+.ap-auth .ap-btn:focus-visible{outline:none;box-shadow:var(--k-focus)}
+.ap-auth .kl-tabs{background:var(--k-sunken)!important;border-radius:var(--k-r-md)!important}
+.ap-auth .kl-tabs button{border-radius:var(--k-r-sm)!important;font-weight:620!important;color:var(--k-muted)!important}
+.ap-auth .kl-tabs button[aria-selected=true]{background:var(--k-surface)!important;color:var(--k-ink)!important;box-shadow:var(--k-sh-1)!important}
+.ap-auth .ap-muted{color:var(--k-muted)}
+.ap-auth .ap-small a,.ap-auth-box p a{color:var(--k-sea)}
+.ap-auth .ap-err{color:var(--k-bad)}
+.ap-pw button{color:var(--k-sea);font-weight:620}
+@media (max-width:820px){.ap-auth-box{border:0;box-shadow:none;background:transparent;padding:0}}
 
 /* reduced motion: no animation, no smooth scroll */
 @media (prefers-reduced-motion:reduce){
