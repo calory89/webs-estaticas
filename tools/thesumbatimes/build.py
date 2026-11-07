@@ -17,6 +17,7 @@ _have = {a["slug"] for a in ARTICLES}
 ARTICLES = ARTICLES + [g for g in _GUIDES if g["slug"] not in _have]
 
 BASE = "https://thesumbatimes.com"
+INDEXNOW = "7f3c1e9a5b2d4c8e9f0a1b2c3d4e5f60"   # public IndexNow key (served at /<key>.txt)
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "out")
 CLARITY = "z9xpaay63s"
 SB_URL = "https://oykcsmextclpdnugixqz.supabase.co"
@@ -26,8 +27,8 @@ WITA = datetime.timezone(datetime.timedelta(hours=8))
 NOW = datetime.datetime.now(WITA)
 
 NAV = ["news", "travel", "business", "culture", "living", "projects", "guides", "low-tide", "plan"]
-GROUP = {"getting-here": "travel", "things-to-do": "travel", "where-to-stay": "travel"}
-LEGACY = ["getting-here", "things-to-do", "where-to-stay"]
+GROUP = {"getting-here": "travel", "things-to-do": "travel", "where-to-stay": "travel", "places": "travel"}
+LEGACY = ["getting-here", "things-to-do", "where-to-stay", "places"]
 HTML_LANG = {"en": "en", "es": "es", "id": "id"}
 OG_LOC = {"en": "en_US", "es": "es_ES", "id": "id_ID"}
 MONTHS = {"en": ["January","February","March","April","May","June","July","August","September","October","November","December"],
@@ -71,6 +72,10 @@ X = {
 }
 
 for _l in X: X[_l]["sec"]["plan"] = T[_l]["plan"]
+X["en"]["sec"]["places"] = "Places"; X["es"]["sec"]["places"] = "Lugares"; X["id"]["sec"]["places"] = "Tempat"
+X["en"]["sdesc"]["places"] = "Every beach, waterfall, hill and traditional village of Sumba worth the drive: how to get there, when to go and how to visit with respect."
+X["es"]["sdesc"]["places"] = "Cada playa, cascada, colina y pueblo tradicional de Sumba que merece el viaje: cómo llegar, cuándo ir y cómo visitarlo con respeto."
+X["id"]["sdesc"]["places"] = "Setiap pantai, air terjun, bukit dan kampung adat di Sumba yang layak dikunjungi: cara ke sana, waktu terbaik dan cara berkunjung dengan hormat."
 X["en"]["sdesc"]["projects"] = "New hotels, roads, ports and developments on Sumba: what is being built across the island, by whom and what it means."
 X["es"]["sdesc"]["projects"] = "Nuevos hoteles, carreteras, puertos y desarrollos en Sumba: qué se construye en la isla, quién lo hace y qué supone."
 X["id"]["sdesc"]["projects"] = "Hotel, jalan, pelabuhan dan pembangunan baru di Sumba: apa yang dibangun di seluruh pulau, oleh siapa dan apa dampaknya."
@@ -328,7 +333,7 @@ def footer(l):
     u = UI[l]; x = X[l]
     links = "".join(f'<a href="/{l}/{s}/">{esc(sec_name(l,s))}</a>' for s in NAV)
     return f"""<div class="w"><footer><div class="links">{links}</div><p><b>The Sumba Times</b> · <a href="/{l}/about/">{x["about"]}</a> · <a href="/{l}/feed.xml">{x["rss"]}</a> · <a href="mailto:{CONTACT}">{CONTACT}</a><br>
-<a href="https://ecobeachcity.com/" rel="noopener">{u["published_by"]}</a>. {u["disclosure"]}<br>© {NOW.year} The Sumba Times</p></footer></div>{sub_js(l)}{assistant(l)}</body></html>"""
+<a href="https://ecobeachcity.com/" rel="noopener">{u["published_by"]}</a>. {u["disclosure"]}<br>© {NOW.year} The Sumba Times</p></footer></div>{sub_js(l)}{assistant(l)}<script>if('serviceWorker' in navigator)addEventListener('load',function(){{navigator.serviceWorker.register('/sw.js').catch(function(){{}})}})</script></body></html>"""
 
 def picture(a, l, sizes="(max-width: 820px) 100vw, 760px", eager=False, cap=True):
     im = img_of(a)
@@ -403,7 +408,7 @@ def share(a, l):
 <a href="https://www.facebook.com/sharer/sharer.php?u={qu}" target="_blank" rel="noopener">Facebook</a>
 <a href="https://www.linkedin.com/sharing/share-offsite/?url={qu}" target="_blank" rel="noopener">LinkedIn</a>
 <a href="mailto:?subject={qt}&body={qu}">Email</a>
-<button type="button" onclick="var b=this;if(navigator.share){{navigator.share({{title:{esc(json.dumps(t))},url:'{u}'}}).catch(function(){{}})}}else{{navigator.clipboard.writeText('{u}').then(function(){{b.textContent={esc(json.dumps(x['copied']))}}})}}">{x["copy"]}</button></div>"""
+<button type="button" onclick="window.print()">PDF</button><button type="button" onclick="var b=this;if(navigator.share){{navigator.share({{title:{esc(json.dumps(t))},url:'{u}'}}).catch(function(){{}})}}else{{navigator.clipboard.writeText('{u}').then(function(){{b.textContent={esc(json.dumps(x['copied']))}}})}}">{x["copy"]}</button></div>"""
 
 def related(a, l):
     items = [b for b in all_items() if b is not a]
@@ -431,6 +436,32 @@ def extras_html(a, l):
             f'<li><b>{esc(p["name"])}</b>{" · " + esc(p["area"]) if p.get("area") else ""} · <a href="{gmaps(p)}" target="_blank" rel="noopener">{t["open_map"]}</a></li>' for p in pls) + f'</ul><p><a href="/{l}/plan/#map">{t["map_t"]} →</a></p></section>'
     return top, bottom
 
+_PLACE_RX = None
+def place_links(b, a, l):
+    """Link the first plain-text mention of each place that has its own page (max 8 per article)."""
+    global _PLACE_RX
+    if _PLACE_RX is None:
+        _PLACE_RX = []
+        for x in all_items():
+            if x["section"] != "places": continue
+            for ll in LANGS:
+                nm = (x.get("names") or {}).get(ll) or re.split(r"[,:]", x[ll]["title"])[0].strip()
+                if len(nm) >= 4: _PLACE_RX.append((ll, nm, x))
+    n = 0
+    for ll, nm, x in sorted(_PLACE_RX, key=lambda z: -len(z[1])):
+        if ll != l or x is a or n >= 8: continue
+        href = url_of(x, l)
+        if href in b: continue
+        pat = re.compile(r"(?<![\w>/-])(" + re.escape(nm) + r")(?![\w<])")
+        parts = re.split(r"(<a\b.*?</a>|<h[1-6][^>]*>.*?</h[1-6]>|<[^>]+>)", b, flags=re.S)
+        for i, part in enumerate(parts):
+            if part.startswith("<"): continue
+            m = pat.search(part)
+            if m:
+                parts[i] = part[:m.start()] + f'<a href="{href}">{m.group(1)}</a>' + part[m.end():]; n += 1; break
+        b = "".join(parts)
+    return b
+
 _LINKS = None
 def fix_links(b):
     """Point internal links that use English slugs straight at the localized URL (no redirect hop)."""
@@ -452,11 +483,20 @@ def article_ld(a, l, url, imgs, grp):
            "publisher": {"@type": "Organization", "name": "The Sumba Times", "logo": {"@type": "ImageObject", "url": BASE + "/apple-touch-icon.png"}, "parentOrganization": {"@type": "Organization", "name": "Eco Beach City", "url": "https://ecobeachcity.com"}},
            "about": {"@type": "Place", "name": "Sumba", "sameAs": "https://en.wikipedia.org/wiki/Sumba"}}
     if a.get("sources"): art["citation"] = [h for _, h in a["sources"]]
-    if c.get("answer"): art["abstract"] = c["answer"]
+    if c.get("answer"):
+        art["abstract"] = c["answer"]
+        art["speakable"] = {"@type": "SpeakableSpecification", "cssSelector": [".ans p", "h1", ".dek"]}
     ld = [art, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
               {"@type": "ListItem", "position": 1, "name": x["home"], "item": BASE + f"/{l}/"},
               {"@type": "ListItem", "position": 2, "name": sec_name(l, grp), "item": BASE + f"/{l}/{grp}/"},
               {"@type": "ListItem", "position": 3, "name": c["title"], "item": url}]}]
+    ev = a.get("event")
+    if ev and ev.get("start") and ev.get("end"):
+        ld.append({"@context": "https://schema.org", "@type": "Event", "name": ev["name"] + " " + ev["start"][:4], "description": c["dek"],
+                   "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "eventStatus": "https://schema.org/EventScheduled",
+                   "startDate": ev["start"], "endDate": ev["end"],
+                   "location": {"@type": "Place", "name": ev["location"], "address": {"@type": "PostalAddress", "addressRegion": "Nusa Tenggara Timur", "addressCountry": "ID"}},
+                   "isAccessibleForFree": True, "url": url, "organizer": {"@type": "Organization", "name": "Rato (customary elders) of Sumba"}})
     fq = (a.get("faq") or {}).get(l)
     if fq:
         ld.append({"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": l, "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": an}} for q, an in fq]})
@@ -479,7 +519,7 @@ def article_page(a, l):
     if a.get("updated"): extra += f'<meta property="article:modified_time" content="{a["updated"]}">'
     s = head(l, c["title"] + " · The Sumba Times", c["dek"], tpl, "article", extra, og) + masthead(l, tpl, grp)
     srcs = "".join(f'<li><a href="{esc(h)}" rel="nofollow noopener" target="_blank">{esc(t)}</a></li>' for t, h in a.get("sources", []))
-    b, toc = with_toc(fix_links(body_raw(a, l)), l)
+    b, toc = with_toc(place_links(fix_links(body_raw(a, l)), a, l), l)
     if a.get("dateline"):
         b = re.sub(r"^<p>", f'<p><span class="dl">{esc(a["dateline"])} —</span> ', b, count=1)
     if kind_of(a) != "letter": b = inline_sub(b, l)
@@ -502,7 +542,8 @@ def section_page(sec, l):
     else: items = [a for a in all_items() if group_of(a) == sec]
     s = head(l, sec_name(l, sec) + " · The Sumba Times", sec_desc(l, sec), tpl) + masthead(l, tpl, GROUP.get(sec, sec))
     grid = "".join(card(a, l) for a in items) or f'<p>{UI[l]["coming"]}</p>'
-    s += f'<main id="main" class="w"><div class="sec-h"><h1>{esc(sec_name(l,sec))}</h1><p>{esc(sec_desc(l,sec))}</p></div><div class="grid">{grid}</div>'
+    s += f'<main id="main" class="w"><div class="crumbs"><a href="/{l}/">{x["home"]}</a>' + (f' › <a href="/{l}/{GROUP[sec]}/">{esc(sec_name(l,GROUP[sec]))}</a>' if sec in GROUP else '') + '</div>'
+    s += f'<div class="sec-h"><h1>{esc(sec_name(l,sec))}</h1><p>{esc(sec_desc(l,sec))}</p></div><div class="grid">{grid}</div>'
     if sec == "low-tide": s += f'<div class="nar">{subscribe(l)}</div>'
     s += '</main>' + footer(l)
     write(tpl.format(l=l), s)
@@ -624,7 +665,7 @@ def all_places():
 def plan_page(l):
     t = T[l]; x = X[l]; tpl = "/{l}/plan/"
     gs = travel_guides()
-    groups = [(t["g_before"], ["getting-here", "where-to-stay"]), (t["g_island"], ["things-to-do", "travel"]), (t["g_culture"], ["culture"])]
+    groups = [(t["g_before"], ["getting-here", "where-to-stay"]), (t["g_island"], ["things-to-do", "travel"]), (t["g_culture"], ["culture"]), (sec_name(l, "places"), ["places"])]
     used = set(); blocks = ""
     for name, secs in groups:
         its = [a for a in gs if a["section"] in secs and id(a) not in used]
@@ -637,7 +678,10 @@ def plan_page(l):
     faqs = faqs[:14]
     pls = all_places()
     pts = [{"n": p["name"], "a": p.get("area", ""), "la": p["lat"], "lo": p["lon"], "u": url_of(p["url"], l) if p.get("url") else ""} for p in pls]
-    ld = [{"@context": "https://schema.org", "@type": "CollectionPage", "name": t["plan_title"], "description": t["plan_dek"], "inLanguage": l, "url": BASE + f"/{l}/plan/",
+    ld = [{"@context": "https://schema.org", "@type": "TouristDestination", "name": "Sumba", "sameAs": "https://en.wikipedia.org/wiki/Sumba",
+           "geo": {"@type": "GeoCoordinates", "latitude": -9.70, "longitude": 119.97}, "containedInPlace": {"@type": "Place", "name": "Nusa Tenggara Timur, Indonesia"},
+           "includesAttraction": [{"@type": "TouristAttraction", "name": p["name"], "geo": {"@type": "GeoCoordinates", "latitude": p["lat"], "longitude": p["lon"]}} for p in pls[:40]]},
+          {"@context": "https://schema.org", "@type": "CollectionPage", "name": t["plan_title"], "description": t["plan_dek"], "inLanguage": l, "url": BASE + f"/{l}/plan/",
            "about": {"@type": "Place", "name": "Sumba", "sameAs": "https://en.wikipedia.org/wiki/Sumba"},
            "hasPart": [{"@type": "Article", "headline": a[l]["title"], "url": BASE + url_of(a, l)} for a in gs]}]
     if faqs: ld.append({"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": l, "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": an}} for q, an, _ in faqs]})
@@ -714,6 +758,14 @@ def sitemaps():
     for s in NAV + LEGACY: add("/{l}/" + s + "/", NOW.date().isoformat() if s in ("plan", "guides", "news") else None)
     add("/{l}/about/")
     for a in all_items(): add(paths_of(a), a.get("updated") or a["date"])
+    imgs = []
+    for a in all_items():
+        im = img_of(a)
+        if not im: continue
+        for l in LANGS:
+            imgs.append(f'<url><loc>{BASE}{url_of(a,l)}</loc><image:image><image:loc>{BASE}/img/{img_key(a)}-1280.webp</image:loc></image:image></url>')
+    write("/image-sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">' + "".join(imgs) + "</urlset>")
+    write("/" + INDEXNOW + ".txt", INDEXNOW)
     write("/sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">' + "".join(urls) + "</urlset>")
     news = []
     for a in all_items():
@@ -725,7 +777,7 @@ def sitemaps():
     bots = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "anthropic-ai", "PerplexityBot", "Perplexity-User", "Google-Extended", "Applebot-Extended", "Bingbot", "CCBot", "meta-externalagent", "DuckAssistBot", "MistralAI-User"]
     rb = "# The Sumba Times welcomes search engines and AI assistants. Please cite and link the article you use.\n"
     rb += "".join(f"User-agent: {b}\n" for b in bots) + "Allow: /\nDisallow: /*/search/\n\n"
-    rb += "User-agent: *\nAllow: /\nDisallow: /*/search/\n\nSitemap: https://thesumbatimes.com/sitemap.xml\nSitemap: https://thesumbatimes.com/news-sitemap.xml\n"
+    rb += "User-agent: *\nAllow: /\nDisallow: /*/search/\n\nSitemap: https://thesumbatimes.com/sitemap.xml\nSitemap: https://thesumbatimes.com/news-sitemap.xml\nSitemap: https://thesumbatimes.com/image-sitemap.xml\n"
     write("/robots.txt", rb)
     llms()
 
@@ -741,6 +793,10 @@ def llms():
     t += "\n## News\n" + "".join(f"- [{a['en']['title']}]({BASE}{url_of(a,'en')}) ({a['date']})\n" for a in all_items() if kind_of(a) == "brief")
     t += f"\n## Optional\n- About and editorial standards: {BASE}/en/about/\n- RSS: {BASE}/en/feed.xml\n- Sitemap: {BASE}/sitemap.xml\n"
     write("/llms.txt", t)
+    for ll in ("es", "id"):
+        hdr = {"es": "# The Sumba Times (español)\n\n> Noticias, guías de viaje y cultura de la isla de Sumba (Indonesia). Fuentes enlazadas en cada artículo.\n\n",
+               "id": "# The Sumba Times (Bahasa Indonesia)\n\n> Berita, panduan wisata dan budaya Pulau Sumba, Indonesia. Sumber ditautkan di setiap artikel.\n\n"}[ll]
+        write(f"/{ll}/llms.txt", hdr + lines(ll) + "\n" + "".join(f"- [{a[ll]['title']}]({BASE}{url_of(a,ll)})\n" for a in all_items() if kind_of(a) == "brief"))
     full = ""
     for a in travel_guides():
         c = a["en"]
@@ -758,7 +814,10 @@ def redirects():
             if old != url_of(a, l): r[old] = url_of(a, l)
     write("/_redirects.json", json.dumps(r))
 
+SW_JS = "const V='tst-v1';\nself.addEventListener('install',e=>{self.skipWaiting()});\nself.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==V).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});\nself.addEventListener('fetch',e=>{const r=e.request,u=new URL(r.url);if(r.method!=='GET'||u.origin!==location.origin||u.pathname.startsWith('/api/'))return;\n if(u.pathname.startsWith('/img/')){e.respondWith(caches.open(V).then(c=>c.match(r).then(m=>m||fetch(r).then(x=>{if(x.ok)c.put(r,x.clone());return x}))));return}\n if(r.mode==='navigate'||(r.headers.get('accept')||'').includes('text/html')){e.respondWith(fetch(r).then(x=>{if(x.ok){const y=x.clone();caches.open(V).then(c=>c.put(r,y))}return x}).catch(()=>caches.match(r).then(m=>m||caches.match('/'+(u.pathname.split('/')[1]||'en')+'/plan/')||new Response('<h1>Offline</h1>',{headers:{'content-type':'text/html'}}))))}});"
+
 def assets():
+    write("/sw.js", SW_JS)
     write("/favicon.svg", '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="10" fill="#1d1b18"/><text x="32" y="45" font-family="Georgia,serif" font-size="38" text-anchor="middle" fill="#f7f3ec">S</text></svg>')
     write("/manifest.webmanifest", json.dumps({"name": "The Sumba Times", "short_name": "Sumba Times", "start_url": "/", "display": "standalone", "background_color": "#f7f3ec", "theme_color": "#1d1b18",
         "icons": [{"src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png"}, {"src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml"}]}))
