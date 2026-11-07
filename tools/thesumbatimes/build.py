@@ -11,6 +11,10 @@ try:
     from images import IMAGES
 except Exception:
     IMAGES = {}
+from travel import SLUGS, T, HERO_IMG, BASE_PLACES, load_guides
+_GUIDES = load_guides()
+_have = {a["slug"] for a in ARTICLES}
+ARTICLES = ARTICLES + [g for g in _GUIDES if g["slug"] not in _have]
 
 BASE = "https://thesumbatimes.com"
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "out")
@@ -21,7 +25,7 @@ CONTACT = "info@ecobeachcity.com"
 WITA = datetime.timezone(datetime.timedelta(hours=8))
 NOW = datetime.datetime.now(WITA)
 
-NAV = ["news", "travel", "business", "culture", "living", "projects", "guides", "low-tide"]
+NAV = ["plan", "news", "travel", "business", "culture", "living", "projects", "guides", "low-tide"]
 GROUP = {"getting-here": "travel", "things-to-do": "travel", "where-to-stay": "travel"}
 LEGACY = ["getting-here", "things-to-do", "where-to-stay"]
 HTML_LANG = {"en": "en", "es": "es", "id": "id"}
@@ -66,6 +70,7 @@ X = {
         "about_body": "<p>The Sumba Times memberitakan kabar, wisata, bisnis dan kehidupan sehari-hari di Pulau Sumba, Nusa Tenggara Timur, Indonesia, dalam bahasa Inggris, Spanyol dan Indonesia. Berita baru terbit setiap pagi pukul 06.00 waktu Sumba (WITA).</p><h2>Siapa penerbitnya</h2><p>The Sumba Times diterbitkan oleh Eco Beach City, pengelola Villa Eco Beach di Sumba. Kami menyebutkannya di setiap halaman. Kami meliput seluruh pulau, termasuk hotel, proyek dan usaha lain, dan tidak memberitakan urusan komersial atau hukum Eco Beach City sendiri.</p><h2>Standar kami</h2><ul><li>Setiap berita berdasar sumber yang jelas dan bertautan: media lokal dan nasional, lembaga resmi dan pemerintah kabupaten.</li><li>Kami tidak mengarang fakta. Jika suatu angka hanya dari satu sumber, kami menyebutkannya.</li><li>Tanpa konten berbayar. Tanpa peringkat yang menempatkan penerbit kami di urutan pertama.</li><li>Foto adalah foto asli dan mencantumkan pembuat serta lisensinya. Jika kami memakai ilustrasi buatan AI, kami menandainya dan ilustrasi itu tidak menampilkan orang nyata, ritual sakral atau hotel lain.</li></ul><h2>Koreksi</h2><p>Jika menemukan kesalahan, tulis ke " + CONTACT + " dan kami akan memperbaikinya serta mencatat perubahannya.</p>"},
 }
 
+for _l in X: X[_l]["sec"]["plan"] = T[_l]["plan"]
 def esc(s): return html.escape(str(s), quote=True)
 def sec_name(l, s): return X[l]["sec"].get(s) or UI[l]["sections"].get(s, s)
 def sec_desc(l, s): return X[l]["sdesc"].get(s) or UI[l]["section_desc"].get(s, "")
@@ -100,8 +105,14 @@ def all_items():
         seen.add(a["slug"]); items.append(a)
     return sorted(items, key=dt, reverse=True)
 
-def url_of(a, l): return f"/{l}/{a['section']}/{a['slug']}/"
-def img_of(a): return a.get("image") or IMAGES.get(a["slug"])
+def slug_l(a, l):
+    if l == "en": return a["slug"]
+    return (a.get("slugs") or {}).get(l) or SLUGS.get(a["slug"], {}).get(l) or a["slug"]
+def url_of(a, l): return f"/{l}/{a['section']}/{slug_l(a, l)}/"
+def paths_of(a): return {x: url_of(a, x) for x in LANGS}
+def P(path_tpl, l): return path_tpl[l] if isinstance(path_tpl, dict) else path_tpl.format(l=l)
+def img_key(a): return a.get("img_key") or a["slug"]
+def img_of(a): return a.get("image") or IMAGES.get(img_key(a))
 def words(a, l): return len(re.sub(r"<[^>]+>", " ", body_raw(a, l)).split())
 def mins(a, l): return max(1, round(words(a, l) / 220))
 def body_raw(a, l):
@@ -169,15 +180,31 @@ ol.regrets{background:var(--card);border:1px solid var(--line);padding:18px 18px
 footer{border-top:3px double var(--ink);margin-top:44px;padding:20px 0 40px;font:13.5px/1.7 -apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif;color:var(--muted)}footer b{color:var(--ink)}footer .links a{margin-right:14px}
 .sec-h{border-bottom:1px solid var(--ink);padding:22px 0 8px}.sec-h p{color:var(--muted);margin:.2em 0 0}
 .srch{display:flex;gap:8px;margin:18px 0}.srch input{flex:1;padding:12px;font:17px -apple-system,sans-serif;border:1px solid var(--line);border-radius:4px;background:var(--card);color:var(--ink)}
+.hero{position:relative;margin:18px 0 0;border-radius:6px;overflow:hidden;background:#1d1b18;min-height:420px;display:flex;align-items:flex-end}
+.hero picture,.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 30%,rgba(0,0,0,.72))}
+.hv{position:relative;z-index:1;color:#fff;padding:28px 26px;max-width:760px}.hv h1{color:#fff;font-size:clamp(36px,6.5vw,64px);margin:.05em 0 .25em}.hk{font:700 12px -apple-system,sans-serif;letter-spacing:.14em;text-transform:uppercase;margin:0;color:#f0d9b0}
+.hp{font-size:clamp(17px,2.2vw,21px);line-height:1.45;margin:0 0 16px;color:#f3ede3}.hb{display:flex;gap:10px;flex-wrap:wrap;margin:0}
+.hb a{font:700 15px -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;text-decoration:none;padding:13px 18px;border-radius:999px;min-height:46px;display:inline-flex;align-items:center}
+.hb .b1{background:#d8b27a;color:#1d1b18}.hb .b2{border:1px solid rgba(255,255,255,.7);color:#fff}.hb a:hover{opacity:.9;color:inherit}
+.qf{border-bottom:1px solid var(--line);padding:20px 0}.qf h2{font:700 15px -apple-system,sans-serif;letter-spacing:.08em;text-transform:uppercase;margin:0 0 12px}
+.qf dl{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px 22px;margin:0}.qf dt{font:700 12px -apple-system,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}.qf dd{margin:2px 0 0;font-size:16.5px;line-height:1.45}
+.ans,.facts,.pcta{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:6px;padding:14px 16px;margin:0 0 18px}.ans b,.facts>b{font:700 12px -apple-system,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}.ans p{margin:.3em 0 0;font-size:18px}
+.facts dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 14px;margin:8px 0 0;font:15px/1.45 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.facts dt{font-weight:700}.facts dd{margin:0}
+.faq details{border-bottom:1px solid var(--line);padding:10px 0}.faq summary{cursor:pointer;font-weight:700;font-size:18px}.faq details p{margin:.5em 0 0}
+.pls ul{font:16px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.pcta{font:15.5px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin-top:24px}
+.map{height:460px;border-radius:6px;overflow:hidden;background:var(--card);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;margin:14px 0 6px}.map button{padding:12px 18px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:600 15px -apple-system,sans-serif;cursor:pointer}
+.maplibregl-popup-content{font:14px/1.4 -apple-system,sans-serif;color:#1d1b18}
+@media(max-width:600px){.facts dl{grid-template-columns:1fr}.facts dt{margin-top:6px}.hero{min-height:480px}.hv{padding:22px 18px}}
 @media(max-width:820px){.front{grid-template-columns:1fr}.side{border-left:0;padding-left:0;border-top:1px solid var(--line);padding-top:16px}}
 @media print{.bar,nav.s,.ticker,.sub,.share,footer .links,.toc{display:none!important}body{background:#fff;color:#000;font-size:12pt}a{text-decoration:none}}"""
 
 THEME_JS = "<script>try{var t=localStorage.getItem('st-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>"
 
 def head(l, title, desc, path_tpl, og_type="website", extra="", image=None, noindex=False):
-    alts = "".join(f'<link rel="alternate" hreflang="{x}" href="{BASE}{path_tpl.format(l=x)}">' for x in LANGS)
-    alts += f'<link rel="alternate" hreflang="x-default" href="{BASE}{path_tpl.format(l="en")}">'
-    url = BASE + path_tpl.format(l=l)
+    alts = "".join(f'<link rel="alternate" hreflang="{x}" href="{BASE}{P(path_tpl, x)}">' for x in LANGS)
+    xdef = "/" if P(path_tpl, "en") == "/en/" else P(path_tpl, "en")
+    alts += f'<link rel="alternate" hreflang="x-default" href="{BASE}{xdef}">'
+    url = BASE + P(path_tpl, l)
     og = image or (BASE + "/og.png")
     robots = '<meta name="robots" content="noindex">' if noindex else '<meta name="robots" content="max-image-preview:large">'
     return f"""<!doctype html><html lang="{HTML_LANG[l]}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -193,13 +220,13 @@ def head(l, title, desc, path_tpl, og_type="website", extra="", image=None, noin
 
 def masthead(l, path_tpl, active=None):
     x = X[l]
-    langs = "".join(f'<a href="{path_tpl.format(l=y)}" hreflang="{y}" lang="{y}" class="{"on" if y==l else ""}">{y.upper()}</a>' for y in LANGS)
+    langs = "".join(f'<a href="{P(path_tpl, y)}" hreflang="{y}" lang="{y}" class="{"on" if y==l else ""}" onclick="stLang(\'{y}\')">{y.upper()}</a>' for y in LANGS)
     nav = "".join(f'<a href="/{l}/{s}/" class="{"on" if s==active else ""}">{esc(sec_name(l,s))}</a>' for s in NAV)
     return f"""<div class="w"><div class="bar"><span><time id="st-today" datetime="{NOW.date().isoformat()}">{today_str(l)}</time> · <span class="daily">{x["daily"]}</span></span>
 <span class="r"><a href="/{l}/search/" aria-label="{x["search"]}">&#9906; {x["search"]}</a>{langs}<button type="button" onclick="stTheme()" aria-label="{x["dark"]}">&#9680;</button></span></div>
 <header class="m"><a class="mt" href="/{l}/">The Sumba Times</a><div class="tg">{esc(UI[l]["tagline"])}</div></header>
 <nav class="s" aria-label="{esc(sec_name(l,'news'))}"><div class="in">{nav}</div></nav></div>
-<script>function stTheme(){{var d=document.documentElement,c=d.getAttribute('data-theme'),dark=c?c==='dark':matchMedia('(prefers-color-scheme: dark)').matches,n=dark?'light':'dark';d.setAttribute('data-theme',n);try{{localStorage.setItem('st-theme',n)}}catch(e){{}}}}</script>"""
+<script>function stLang(x){{try{{document.cookie='st_lang='+x+';path=/;max-age=31536000;samesite=lax'}}catch(e){{}}}}function stTheme(){{var d=document.documentElement,c=d.getAttribute('data-theme'),dark=c?c==='dark':matchMedia('(prefers-color-scheme: dark)').matches,n=dark?'light':'dark';d.setAttribute('data-theme',n);try{{localStorage.setItem('st-theme',n)}}catch(e){{}}}}</script>"""
 
 def subscribe(l, inline=False):
     u = UI[l]
@@ -228,7 +255,7 @@ def footer(l):
 def picture(a, l, sizes="(max-width: 820px) 100vw, 760px", eager=False, cap=True):
     im = img_of(a)
     if not im: return ""
-    s = a["slug"]
+    s = img_key(a)
     alt = im["caption"][l]
     load = 'fetchpriority="high" loading="eager"' if eager else 'loading="lazy" decoding="async"'
     pic = f'<picture><source type="image/webp" srcset="/img/{s}-640.webp 640w, /img/{s}-1280.webp {im["w"]}w" sizes="{sizes}"><img src="/img/{s}-1280.webp" width="{im["w"]}" height="{im["h"]}" alt="{esc(alt)}" {load}></picture>'
@@ -244,8 +271,8 @@ def picture(a, l, sizes="(max-width: 820px) 100vw, 760px", eager=False, cap=True
 def thumb(a, l):
     im = img_of(a)
     if not im: return ""
-    s = a["slug"]
-    return f'<a class="ph" href="{url_of(a,l)}" tabindex="-1" aria-hidden="true"><img src="/img/{s}-640.webp" width="640" height="427" alt="" loading="lazy" decoding="async"></a>'
+    s = img_key(a)
+    return f'<a class="ph" href="{url_of(a,l)}" tabindex="-1"><img src="/img/{s}-640.webp" width="640" height="427" alt="{esc(im["caption"][l])}" loading="lazy" decoding="async"></a>'
 
 def kicker(a, l):
     c = a[l]
@@ -306,37 +333,77 @@ def related(a, l):
     pick = (same + rest)[:3]
     return f'<section class="block"><div class="hd"><h2>{X[l]["related"]}</h2></div><div class="grid">{"".join(card(b,l) for b in pick)}</div></section>'
 
-def article_page(a, l):
-    u = UI[l]; c = a[l]; x = X[l]
-    tpl = "/{l}/" + a["section"] + "/" + a["slug"] + "/"
-    url = BASE + tpl.format(l=l)
-    im = img_of(a)
-    og = f"{BASE}/og/{a['slug']}.jpg" if im else None
-    imgs = [og, f"{BASE}/img/{a['slug']}-1280.webp"] if im else [BASE + "/og.png"]
-    grp = group_of(a)
-    ld = [{"@context": "https://schema.org", "@type": "NewsArticle", "headline": c["title"][:110], "description": c["dek"], "inLanguage": l,
-           "datePublished": iso(a), "dateModified": iso(a), "mainEntityOfPage": url, "image": imgs, "articleSection": sec_name(l, grp), "wordCount": words(a, l),
+def gmaps(pl): return f"https://www.google.com/maps/search/?api=1&query={pl['lat']},{pl['lon']}"
+
+def extras_html(a, l):
+    """Quick answer + key facts box (top of body) and FAQ + places (bottom)."""
+    t = T[l]; c = a[l]; top = ""; bottom = ""
+    if c.get("answer"):
+        top += f'<div class="ans"><b>{t["answer"]}</b><p>{esc(c["answer"])}</p></div>'
+    fx = (a.get("facts") or {}).get(l)
+    if fx:
+        top += f'<div class="facts"><b>{t["facts_box"]}</b><dl>' + "".join(f"<dt>{esc(k)}</dt><dd>{esc(v)}</dd>" for k, v in fx) + "</dl></div>"
+    fq = (a.get("faq") or {}).get(l)
+    if fq:
+        bottom += f'<section class="faq"><h2 id="faq">{t["faq_t"]}</h2>' + "".join(f"<details><summary>{esc(q)}</summary><p>{esc(an)}</p></details>" for q, an in fq) + "</section>"
+    pls = a.get("places") or []
+    if pls:
+        bottom += f'<section class="pls"><h2 id="places">{t["places_t"]}</h2><ul>' + "".join(
+            f'<li><b>{esc(p["name"])}</b>{" · " + esc(p["area"]) if p.get("area") else ""} · <a href="{gmaps(p)}" target="_blank" rel="noopener">{t["open_map"]}</a></li>' for p in pls) + f'</ul><p><a href="/{l}/plan/#map">{t["map_t"]} →</a></p></section>'
+    return top, bottom
+
+def article_ld(a, l, url, imgs, grp):
+    c = a[l]; x = X[l]; kind = kind_of(a)
+    mod = a.get("updated") or a["date"]
+    art = {"@context": "https://schema.org", "@type": "NewsArticle" if kind == "brief" else "Article", "headline": c["title"][:110], "description": c["dek"], "inLanguage": l,
+           "datePublished": iso(a), "dateModified": (mod + "T" + tm(a) + ":00+08:00") if a.get("updated") else iso(a), "mainEntityOfPage": url, "image": imgs,
+           "articleSection": sec_name(l, grp), "wordCount": words(a, l),
            "author": {"@type": "Organization", "name": "The Sumba Times", "url": BASE + f"/{l}/about/"},
-           "publisher": {"@type": "Organization", "name": "The Sumba Times", "logo": {"@type": "ImageObject", "url": BASE + "/apple-touch-icon.png"}, "parentOrganization": {"@type": "Organization", "name": "Eco Beach City", "url": "https://ecobeachcity.com"}}},
-          {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
+           "publisher": {"@type": "Organization", "name": "The Sumba Times", "logo": {"@type": "ImageObject", "url": BASE + "/apple-touch-icon.png"}, "parentOrganization": {"@type": "Organization", "name": "Eco Beach City", "url": "https://ecobeachcity.com"}},
+           "about": {"@type": "Place", "name": "Sumba", "sameAs": "https://en.wikipedia.org/wiki/Sumba"}}
+    if a.get("sources"): art["citation"] = [h for _, h in a["sources"]]
+    if c.get("answer"): art["abstract"] = c["answer"]
+    ld = [art, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
               {"@type": "ListItem", "position": 1, "name": x["home"], "item": BASE + f"/{l}/"},
               {"@type": "ListItem", "position": 2, "name": sec_name(l, grp), "item": BASE + f"/{l}/{grp}/"},
               {"@type": "ListItem", "position": 3, "name": c["title"], "item": url}]}]
+    fq = (a.get("faq") or {}).get(l)
+    if fq:
+        ld.append({"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": l, "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": an}} for q, an in fq]})
+    if a.get("places"):
+        ld.append({"@context": "https://schema.org", "@type": "ItemList", "name": T[l]["places_t"], "itemListElement": [
+            {"@type": "ListItem", "position": i + 1, "item": {"@type": "TouristAttraction", "name": p["name"], "geo": {"@type": "GeoCoordinates", "latitude": p["lat"], "longitude": p["lon"]},
+             "containedInPlace": {"@type": "Place", "name": (p.get("area") or "Sumba") + ", Indonesia"}}} for i, p in enumerate(a["places"])]})
+    return ld
+
+def article_page(a, l):
+    u = UI[l]; c = a[l]; x = X[l]
+    tpl = paths_of(a)
+    url = BASE + tpl[l]
+    im = img_of(a)
+    og = f"{BASE}/og/{img_key(a)}.jpg" if im else None
+    imgs = [og, f"{BASE}/img/{img_key(a)}-1280.webp"] if im else [BASE + "/og.png"]
+    grp = group_of(a)
+    ld = article_ld(a, l, url, imgs, grp)
     extra = f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script><meta property="article:published_time" content="{iso(a)}"><meta property="article:section" content="{esc(sec_name(l,grp))}">'
+    if a.get("updated"): extra += f'<meta property="article:modified_time" content="{a["updated"]}">'
     s = head(l, c["title"] + " · The Sumba Times", c["dek"], tpl, "article", extra, og) + masthead(l, tpl, grp)
     srcs = "".join(f'<li><a href="{esc(h)}" rel="nofollow noopener" target="_blank">{esc(t)}</a></li>' for t, h in a.get("sources", []))
     b, toc = with_toc(body_raw(a, l), l)
     if a.get("dateline"):
         b = re.sub(r"^<p>", f'<p><span class="dl">{esc(a["dateline"])} —</span> ', b, count=1)
     if kind_of(a) != "letter": b = inline_sub(b, l)
+    top_x, bot_x = extras_html(a, l)
+    upd = f'<span>{x["upd"]} <time datetime="{a["updated"]}">{fdate(dict(a, date=a["updated"]), l, False)}</time></span>' if a.get("updated") and a["updated"] != a["date"] else ""
     crumbs = f'<div class="crumbs"><a href="/{l}/">{x["home"]}</a> › <a href="/{l}/{grp}/">{esc(sec_name(l,grp))}</a></div>'
+    plan_cta = "" if kind_of(a) == "letter" else f'<div class="pcta"><b>{T[l]["plan_cta_t"]}</b> {T[l]["plan_cta_p"]} <a href="/{l}/plan/">{T[l]["plan_cta_b"]} →</a></div>'
     s += f"""<main id="main" class="w"><article class="nar">{crumbs}<p class="k">{badge(a)}{esc(kicker(a,l))}</p>
 <h1>{esc(c["title"])}</h1><p class="dek">{esc(c["dek"])}</p>
-<div class="meta"><span><b>{x["desk"]}</b></span><span>{x["pub"]} <time datetime="{iso(a)}">{fdate(a,l)}</time></span><span>{mins(a,l)} {x["min"]}</span></div>
-{picture(a,l,eager=True)}{toc}{b}{share(a,l)}
+<div class="meta"><span><b>{x["desk"]}</b></span><span>{x["pub"]} <time datetime="{iso(a)}">{fdate(a,l)}</time></span>{upd}<span>{mins(a,l)} {x["min"]}</span></div>
+{picture(a,l,eager=True)}{top_x}{toc}{b}{bot_x}{plan_cta}{share(a,l)}
 <div class="src"><b>{u["sources"]}</b><ol>{srcs}</ol><p class="corr">{x["corr"]} <a href="mailto:{CONTACT}">{CONTACT}</a>.</p></div>
 <div style="margin-top:26px">{subscribe(l)}</div></article>{related(a,l)}</main>""" + footer(l)
-    write(tpl.format(l=l), s)
+    write(tpl[l], s)
 
 def section_page(sec, l):
     x = X[l]; tpl = "/{l}/" + sec + "/"
@@ -350,35 +417,103 @@ def section_page(sec, l):
     s += '</main>' + footer(l)
     write(tpl.format(l=l), s)
 
+def travel_guides():
+    order = ["things-to-do", "getting-here", "culture", "where-to-stay", "travel", "projects", "business", "living"]
+    gs = [a for a in all_items() if kind_of(a) == "guide"]
+    return sorted(gs, key=lambda a: (0 if a.get("answer_first") else 1, order.index(a["section"]) if a["section"] in order else 9, -dt(a).timestamp()))
+
+def facts_strip(l):
+    t = T[l]
+    return f'<section class="qf" aria-label="{esc(t["facts_t"])}"><h2>{t["facts_t"]}</h2><dl>' + "".join(f'<div><dt>{esc(k)}</dt><dd>{esc(v)}</dd></div>' for k, v in t["facts"]) + "</dl></section>"
+
+def hero(l):
+    t = T[l]; k = HERO_IMG; im = IMAGES.get(k, {})
+    alt = esc(im.get("caption", {}).get(l, "Sumba"))
+    return f"""<section class="hero"><picture><source type="image/webp" srcset="/img/{k}-640.webp 640w, /img/{k}-1280.webp 1280w" sizes="100vw"><img src="/img/{k}-1280.webp" alt="{alt}" width="1280" height="853" fetchpriority="high" loading="eager"></picture>
+<div class="hv"><p class="hk">{t["hero_k"]}</p><h1>{t["hero_t"]}</h1><p class="hp">{t["hero_p"]}</p>
+<p class="hb"><a class="b1" href="/{l}/plan/" onclick="try{{clarity('event','hero_plan')}}catch(e){{}}">{t["hero_b1"]}</a><a class="b2" href="/{l}/guides/">{t["hero_b2"]}</a></p></div></section>"""
+
 def home(l):
-    u = UI[l]; x = X[l]; tpl = "/{l}/"
+    u = UI[l]; x = X[l]; t = T[l]; tpl = "/{l}/"
     items = all_items()
     top = lead_item()
     news = [a for a in items if a is not top and kind_of(a) == "brief"]
-    side = news[:5]
+    side = news[:4]
     ticker = "".join(f'<a href="{url_of(a,l)}"><time datetime="{iso(a)}">{dt(a).strftime("%d/%m %H:%M")}</time>{esc(a[l]["title"])}</a>' for a in items if kind_of(a) == "brief")
     ld = [{"@context": "https://schema.org", "@type": "WebSite", "name": "The Sumba Times", "url": BASE + f"/{l}/", "inLanguage": l,
            "potentialAction": {"@type": "SearchAction", "target": BASE + f"/{l}/search/?q={{search_term_string}}", "query-input": "required name=search_term_string"}},
           {"@context": "https://schema.org", "@type": "NewsMediaOrganization", "name": "The Sumba Times", "url": BASE, "logo": BASE + "/apple-touch-icon.png",
            "publishingPrinciples": BASE + f"/{l}/about/", "parentOrganization": {"@type": "Organization", "name": "Eco Beach City", "url": "https://ecobeachcity.com"}}]
-    s = head(l, "The Sumba Times · " + u["tagline"], x["daily"] + ". " + u["tagline"] + ".", tpl, extra=f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>') + masthead(l, tpl)
-    sidehtml = "".join(f'<div class="it"><p class="k">{badge(a)}<a href="/{l}/{group_of(a)}/">{esc(kicker(a,l))}</a></p><h3><a href="{url_of(a,l)}">{esc(a[l]["title"])}</a></h3><p>{esc(a[l]["dek"])}</p><div class="when"><time datetime="{iso(a)}">{fdate(a,l)}</time></div></div>' for a in side)
+    pre = f'<link rel="preload" as="image" href="/img/{HERO_IMG}-1280.webp" imagesrcset="/img/{HERO_IMG}-640.webp 640w, /img/{HERO_IMG}-1280.webp 1280w" imagesizes="100vw">'
+    s = head(l, "The Sumba Times · " + u["tagline"], t["hero_p"] + " " + x["daily"] + ".", tpl, extra=pre + f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>') + masthead(l, tpl)
+    guides = travel_guides()
     s += f"""<main id="main" class="w"><div class="ticker" aria-label="{x["ticker"]}"><b>{x["ticker"]}</b>{ticker}</div>
+{hero(l)}{facts_strip(l)}
+<section class="block"><div class="hd"><h2>{t["start_t"]}</h2><a href="/{l}/guides/">{esc(sec_name(l,"guides"))} →</a></div><div class="grid">{"".join(card(a,l) for a in guides[:9])}</div></section>"""
+    sidehtml = "".join(f'<div class="it"><p class="k">{badge(a)}<a href="/{l}/{group_of(a)}/">{esc(kicker(a,l))}</a></p><h3><a href="{url_of(a,l)}">{esc(a[l]["title"])}</a></h3><p>{esc(a[l]["dek"])}</p><div class="when"><time datetime="{iso(a)}">{fdate(a,l)}</time></div></div>' for a in side)
+    s += f"""<section class="block"><div class="hd"><h2>{t["news_t"]}</h2><a href="/{l}/news/">{x["all"]} {esc(sec_name(l,"news"))} →</a></div></section>
 <section class="front"><div class="lead"><p class="k">{badge(top)}{x["top_story"]} · <a href="/{l}/{group_of(top)}/">{esc(sec_name(l,group_of(top)))}</a></p>
-<a href="{url_of(top,l)}" tabindex="-1" aria-hidden="true" style="display:block">{picture(top,l,"(max-width: 820px) 100vw, 780px",eager=True,cap=False)}</a>
+<a href="{url_of(top,l)}" tabindex="-1" style="display:block">{picture(top,l,"(max-width: 820px) 100vw, 780px",cap=False)}</a>
 <h2><a href="{url_of(top,l)}">{esc(top[l]["title"])}</a></h2><p class="dek">{esc(top[l]["dek"])}</p><div class="when">{x["desk"]} · <time datetime="{iso(top)}">{fdate(top,l)}</time></div></div>
 <aside class="side">{sidehtml}</aside></section>"""
-    for sec in ["news", "travel", "business", "culture", "living", "projects"]:
-        its = [a for a in items if group_of(a) == sec and a is not top and a not in side][:3]
-        if len(its) < 3:
-            extra_its = [a for a in items if group_of(a) == sec and a is not top and a not in its][:3 - len(its)]
-            its += extra_its
+    shown = set(id(a) for a in [top] + side + guides[:9])
+    for sec in ["culture", "travel", "business", "projects", "living"]:
+        its = [a for a in items if group_of(a) == sec and id(a) not in shown][:3]
         if not its: continue
         s += f'<section class="block"><div class="hd"><h2>{esc(sec_name(l,sec))}</h2><a href="/{l}/{sec}/">{x["all"]} {esc(sec_name(l,sec))} →</a></div><div class="grid">{"".join(card(a,l) for a in its)}</div></section>'
-    guides = [a for a in items if kind_of(a) == "guide"]
-    s += f'<section class="block"><div class="hd"><h2>{x["guides_t"]}</h2><a href="/{l}/guides/">{esc(sec_name(l,"guides"))} →</a></div><div class="grid">{"".join(card(a,l) for a in guides[:6])}</div></section>'
     s += f'<section class="block"><div class="hd"><h2>{x["lt_t"]}</h2><a href="/{l}/low-tide/">{esc(sec_name(l,"low-tide"))} →</a></div><div class="front" style="border:0"><div>{card(LETTER,l)}</div><div>{subscribe(l)}</div></div></section>'
     s += "</main>" + footer(l)
+    write(tpl.format(l=l), s)
+
+def all_places():
+    seen, out = set(), []
+    for a in all_items():
+        for p in a.get("places") or []:
+            k = p["name"].strip().lower()
+            if k in seen: continue
+            seen.add(k); out.append(dict(p, url=a))
+    for p in BASE_PLACES:
+        if p["name"].lower() not in seen: out.append(dict(p, url=None))
+    return out
+
+def plan_page(l):
+    t = T[l]; x = X[l]; tpl = "/{l}/plan/"
+    gs = travel_guides()
+    groups = [(t["g_before"], ["getting-here", "where-to-stay"]), (t["g_island"], ["things-to-do", "travel"]), (t["g_culture"], ["culture"])]
+    used = set(); blocks = ""
+    for name, secs in groups:
+        its = [a for a in gs if a["section"] in secs and id(a) not in used]
+        used.update(id(a) for a in its)
+        if its: blocks += f'<section class="block"><div class="hd"><h2>{esc(name)}</h2></div><div class="grid">{"".join(card(a,l) for a in its)}</div></section>'
+    faqs = []
+    for a in gs:
+        for q, an in ((a.get("faq") or {}).get(l) or [])[:2]:
+            faqs.append((q, an, a))
+    faqs = faqs[:14]
+    pls = all_places()
+    pts = [{"n": p["name"], "a": p.get("area", ""), "la": p["lat"], "lo": p["lon"], "u": url_of(p["url"], l) if p.get("url") else ""} for p in pls]
+    ld = [{"@context": "https://schema.org", "@type": "CollectionPage", "name": t["plan_title"], "description": t["plan_dek"], "inLanguage": l, "url": BASE + f"/{l}/plan/",
+           "about": {"@type": "Place", "name": "Sumba", "sameAs": "https://en.wikipedia.org/wiki/Sumba"},
+           "hasPart": [{"@type": "Article", "headline": a[l]["title"], "url": BASE + url_of(a, l)} for a in gs]}]
+    if faqs: ld.append({"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": l, "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": an}} for q, an, _ in faqs]})
+    s = head(l, t["plan_title"] + " · The Sumba Times", t["plan_dek"], tpl, extra=f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>') + masthead(l, tpl, "plan")
+    faq_html = "".join(f'<details><summary>{esc(q)}</summary><p>{esc(an)} <a href="{url_of(a,l)}">→</a></p></details>' for q, an, a in faqs)
+    s += f"""<main id="main" class="w"><div class="nar"><div class="crumbs"><a href="/{l}/">{x["home"]}</a></div><h1>{t["plan_title"]}</h1><p class="dek">{t["plan_dek"]}</p>{t["plan_intro"]}</div>
+{facts_strip(l)}{blocks}
+<section class="block" id="map"><div class="hd"><h2>{t["map_t"]}</h2></div><div id="stmap" class="map"><button type="button" onclick="stMap()">{t["map_btn"]}</button></div><p class="when">{t["map_note"]}</p></section>
+{f'<section class="block nar faq"><div class="hd"><h2>{t["faq_t"]}</h2></div>{faq_html}</section>' if faqs else ''}
+<div class="nar" style="margin-top:26px">{subscribe(l)}</div></main>
+<script>var STP={json.dumps(pts, ensure_ascii=False)};var stMapOn=false;
+function stMap(){{if(stMapOn)return;stMapOn=true;var el=document.getElementById('stmap');el.innerHTML='';
+var c=document.createElement('link');c.rel='stylesheet';c.href='https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css';document.head.appendChild(c);
+var sc=document.createElement('script');sc.src='https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js';sc.onload=function(){{
+var m=new maplibregl.Map({{container:'stmap',style:'https://tiles.openfreemap.org/styles/liberty',center:[119.75,-9.65],zoom:7.4,cooperativeGestures:true}});
+m.addControl(new maplibregl.NavigationControl({{showCompass:false}}));
+STP.forEach(function(p){{var d=document.createElement('div');d.innerHTML='<b></b><br><span></span>';d.querySelector('b').textContent=p.n;d.querySelector('span').textContent=p.a;
+if(p.u){{var a=document.createElement('a');a.href=p.u;a.textContent=' →';d.appendChild(a)}}
+new maplibregl.Marker({{color:'#a3271c'}}).setLngLat([p.lo,p.la]).setPopup(new maplibregl.Popup({{offset:18}}).setDOMContent(d)).addTo(m)}});
+try{{clarity('event','map_open')}}catch(e){{}}}};document.body.appendChild(sc)}}
+if('IntersectionObserver' in window){{new IntersectionObserver(function(e,o){{if(e[0].isIntersecting){{o.disconnect();stMap()}}}},{{rootMargin:'200px'}}).observe(document.getElementById('stmap'))}}</script>""" + footer(l)
     write(tpl.format(l=l), s)
 
 def about(l):
@@ -411,7 +546,7 @@ def feed(l):
     its = ""
     for a in all_items():
         im = img_of(a)
-        enc = f'<enclosure url="{BASE}/img/{a["slug"]}-1280.webp" type="image/webp" length="0"/>' if im else ""
+        enc = f'<enclosure url="{BASE}/img/{img_key(a)}-1280.webp" type="image/webp" length="0"/>' if im else ""
         its += f"<item><title>{esc(a[l]['title'])}</title><link>{BASE}{url_of(a,l)}</link><guid>{BASE}{url_of(a,l)}</guid><description>{esc(a[l]['dek'])}</description><category>{esc(sec_name(l,group_of(a)))}</category><pubDate>{dt(a).strftime('%a, %d %b %Y %H:%M:00 +0800')}</pubDate>{enc}</item>"
     write(f"/{l}/feed.xml", f'<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>The Sumba Times</title><link>{BASE}/{l}/</link><description>{esc(UI[l]["tagline"])}</description><language>{l}</language>{its}</channel></rss>')
 
@@ -419,7 +554,7 @@ def root():
     s = """<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Sumba Times · News, culture and travel from Sumba, Indonesia</title>
 <meta name="description" content="News, travel, business and life on the island of Sumba, Indonesia. New stories every morning at 6:00 Sumba time. In English, Spanish and Indonesian."><link rel="canonical" href="https://thesumbatimes.com/en/">
 <link rel="alternate" hreflang="en" href="https://thesumbatimes.com/en/"><link rel="alternate" hreflang="es" href="https://thesumbatimes.com/es/"><link rel="alternate" hreflang="id" href="https://thesumbatimes.com/id/"><link rel="alternate" hreflang="x-default" href="https://thesumbatimes.com/">
-<script>(function(){var l=(navigator.language||'en').slice(0,2).toLowerCase();var t=l==='es'?'/es/':(l==='id'||l==='ms')?'/id/':'/en/';location.replace(t)})();</script>
+<link rel="alternate" type="text/plain" title="llms.txt" href="https://thesumbatimes.com/llms.txt">
 <style>body{font:18px Georgia,serif;background:#f7f3ec;color:#1d1b18;text-align:center;padding:15vh 16px}a{margin:0 10px}</style></head>
 <body><h1>The Sumba Times</h1><p><a href="/en/">English</a><a href="/es/">Español</a><a href="/id/">Bahasa Indonesia</a></p></body></html>"""
     write("/", s)
@@ -427,13 +562,13 @@ def root():
 def sitemaps():
     urls = []
     def add(tpl, lastmod=None):
-        alts = "".join(f'<xhtml:link rel="alternate" hreflang="{x}" href="{BASE}{tpl.format(l=x)}"/>' for x in LANGS)
+        alts = "".join(f'<xhtml:link rel="alternate" hreflang="{x}" href="{BASE}{P(tpl, x)}"/>' for x in LANGS)
         lm = f"<lastmod>{lastmod}</lastmod>" if lastmod else ""
-        for l in LANGS: urls.append(f"<url><loc>{BASE}{tpl.format(l=l)}</loc>{lm}{alts}</url>")
+        for l in LANGS: urls.append(f"<url><loc>{BASE}{P(tpl, l)}</loc>{lm}{alts}</url>")
     add("/{l}/", NOW.date().isoformat())
-    for s in NAV + LEGACY: add("/{l}/" + s + "/")
+    for s in NAV + LEGACY: add("/{l}/" + s + "/", NOW.date().isoformat() if s in ("plan", "guides", "news") else None)
     add("/{l}/about/")
-    for a in all_items(): add("/{l}/" + a["section"] + "/" + a["slug"] + "/", a["date"])
+    for a in all_items(): add(paths_of(a), a.get("updated") or a["date"])
     write("/sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">' + "".join(urls) + "</urlset>")
     news = []
     for a in all_items():
@@ -442,7 +577,41 @@ def sitemaps():
         for l in LANGS:
             news.append(f'<url><loc>{BASE}{url_of(a,l)}</loc><news:news><news:publication><news:name>The Sumba Times</news:name><news:language>{l}</news:language></news:publication><news:publication_date>{iso(a)}</news:publication_date><news:title>{esc(a[l]["title"])}</news:title></news:news></url>')
     write("/news-sitemap.xml", '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">' + "".join(news) + "</urlset>")
-    write("/robots.txt", "User-agent: *\nAllow: /\nDisallow: /*/search/\nSitemap: https://thesumbatimes.com/sitemap.xml\nSitemap: https://thesumbatimes.com/news-sitemap.xml\n")
+    bots = ["GPTBot", "OAI-SearchBot", "ChatGPT-User", "ClaudeBot", "Claude-SearchBot", "Claude-User", "anthropic-ai", "PerplexityBot", "Perplexity-User", "Google-Extended", "Applebot-Extended", "Bingbot", "CCBot", "meta-externalagent", "DuckAssistBot", "MistralAI-User"]
+    rb = "# The Sumba Times welcomes search engines and AI assistants. Please cite and link the article you use.\n"
+    rb += "".join(f"User-agent: {b}\n" for b in bots) + "Allow: /\nDisallow: /*/search/\n\n"
+    rb += "User-agent: *\nAllow: /\nDisallow: /*/search/\n\nSitemap: https://thesumbatimes.com/sitemap.xml\nSitemap: https://thesumbatimes.com/news-sitemap.xml\n"
+    write("/robots.txt", rb)
+    llms()
+
+def llms():
+    def lines(l):
+        out = ""
+        for a in travel_guides():
+            c = a[l]; out += f"- [{c['title']}]({BASE}{url_of(a,l)}): {c.get('answer') or c['dek']}\n"
+        return out
+    t = "# The Sumba Times\n\n> Independent-style news, travel guides and culture from the island of Sumba, East Nusa Tenggara, Indonesia, in English, Spanish and Indonesian. New stories every morning at 6:00 WITA. Published by Eco Beach City (disclosed on every page); covers the whole island; sources are linked under every story.\n\n"
+    t += f"Plan a trip: {BASE}/en/plan/ (Spanish {BASE}/es/plan/, Indonesian {BASE}/id/plan/)\n\n"
+    t += "## Travel guides (English)\n" + lines("en") + "\n## Guías de viaje (español)\n" + lines("es") + "\n## Panduan perjalanan (Bahasa Indonesia)\n" + lines("id")
+    t += "\n## News\n" + "".join(f"- [{a['en']['title']}]({BASE}{url_of(a,'en')}) ({a['date']})\n" for a in all_items() if kind_of(a) == "brief")
+    t += f"\n## Optional\n- About and editorial standards: {BASE}/en/about/\n- RSS: {BASE}/en/feed.xml\n- Sitemap: {BASE}/sitemap.xml\n"
+    write("/llms.txt", t)
+    full = ""
+    for a in travel_guides():
+        c = a["en"]
+        full += f"# {c['title']}\nURL: {BASE}{url_of(a,'en')}\n\n{c['dek']}\n\n" + (c.get("answer", "") + "\n\n" if c.get("answer") else "")
+        full += re.sub(r"\n{3,}", "\n\n", re.sub(r"<[^>]+>", "", re.sub(r"</(p|h2|h3|li|tr)>", "\n", body_raw(a, "en")))) + "\n\n"
+        for q, an in (a.get("faq") or {}).get("en") or []: full += f"Q: {q}\nA: {an}\n\n"
+        full += "---\n\n"
+    write("/llms-full.txt", full)
+
+def redirects():
+    r = {}
+    for a in all_items():
+        for l in LANGS:
+            old = f"/{l}/{a['section']}/{a['slug']}/"
+            if old != url_of(a, l): r[old] = url_of(a, l)
+    write("/_redirects.json", json.dumps(r))
 
 def assets():
     write("/favicon.svg", '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="10" fill="#1d1b18"/><text x="32" y="45" font-family="Georgia,serif" font-size="38" text-anchor="middle" fill="#f7f3ec">S</text></svg>')
@@ -473,7 +642,9 @@ if __name__ == "__main__":
     shutil.rmtree(OUT, ignore_errors=True)
     for l in LANGS:
         home(l); feed(l); about(l); search_page(l); notfound(l)
-        for s in NAV + LEGACY: section_page(s, l)
+        plan_page(l)
+        for s in NAV + LEGACY:
+            if s != "plan": section_page(s, l)
         for a in all_items(): article_page(a, l)
-    root(); sitemaps(); assets()
+    root(); sitemaps(); redirects(); assets()
     n = sum(len(f) for _, _, f in os.walk(OUT)); print("files", n)

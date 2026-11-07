@@ -28,3 +28,10 @@ Images live in Workers KV namespace `thesumbatimes-img` (id f0aa5acc53a44f3194e7
 ## Deploy (Composio workbench)
 Build in a local dir (not /mnt/files, it is slow): `python3 build.py && python3 deploy.py`. Then run CLOUDFLARE_MCP_EXECUTE with JS that gunzips the base64-gzipped `worker/index.js`, builds multipart (`metadata` part = worker/metadata.json incl. the KV binding, `index.js` part as application/javascript+module) and `PUT /accounts/${accountId}/workers/scripts/thesumbatimes` (contentType multipart/form-data; boundary=..., rawBody: true). Worker is ~2.3 MB today (gzip ~0.3 MB); plan limit is compressed size.
 Then resubmit https://thesumbatimes.com/sitemap.xml and /news-sitemap.xml in Search Console (sc-domain:thesumbatimes.com).
+
+## Travel layer (7 Nov 2026)
+- `travel.py`: localized slugs for older guides (`SLUGS`), homepage hero/quick facts/"Plan your trip" strings (`T`), base map points.
+- `guides/g_*.py`: long travel guides (each defines `GUIDES`). Extra optional fields on any item: `"slugs": {"es","id"}` (localized URL; old English-slug URLs 301 automatically via `/_redirects.json`), `"updated": "YYYY-MM-DD"`, `"img_key"` (reuse another slug's KV image), per-language `"answer"` (quick answer box, used by AI/llms.txt), `"facts"`, `"faq"` (FAQPage schema), `"places"` [{name, lat, lon, area}] (map on /LANG/plan/ + TouristAttraction schema).
+- New pages: `/LANG/plan/` (hub + MapLibre/OpenFreeMap map), `/llms.txt`, `/llms-full.txt`. robots.txt explicitly allows AI crawlers.
+- Worker: `/` redirects by cookie `st_lang` (set when the reader clicks EN/ES/ID), then country (Spanish-speaking countries → /es/, ID → /id/), then Accept-Language, else /en/. Bots are never redirected (they get the language chooser, hreflang x-default).
+- Daily briefs can keep English-only slugs; nothing else changes for the daily task.

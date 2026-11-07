@@ -14,7 +14,10 @@ for root, _, files in os.walk(OUT):
         if f.endswith(TEXT): F[p] = {"t": open(fp, encoding="utf-8").read()}
         else: F[p] = {"b64": base64.b64encode(open(fp, "rb").read()).decode()}
 JS = "const F=" + json.dumps(F, ensure_ascii=False) + r""";
-const CT={html:'text/html; charset=utf-8',xml:'application/xml; charset=utf-8',txt:'text/plain; charset=utf-8',svg:'image/svg+xml',png:'image/png',json:'application/json; charset=utf-8',webmanifest:'application/manifest+json',webp:'image/webp',jpg:'image/jpeg'};
+const RD=F['/_redirects.json']?JSON.parse(F['/_redirects.json'].t):{};
+const ES=new Set(['ES','MX','AR','CO','CL','PE','VE','EC','GT','CU','BO','DO','HN','PY','SV','NI','CR','PA','UY','PR','GQ']);
+const BOT=/bot|crawl|spider|slurp|facebookexternalhit|embedly|preview|whatsapp|telegram|lighthouse|headless|gptbot|claude|anthropic|perplexity|google-extended|ccbot|bytespider|applebot|bingpreview/i;
+const CT={html:'text/html; charset=utf-8',xml:'application/xml; charset=utf-8',txt:'text/plain; charset=utf-8',md:'text/markdown; charset=utf-8',svg:'image/svg+xml',png:'image/png',json:'application/json; charset=utf-8',webmanifest:'application/manifest+json',webp:'image/webp',jpg:'image/jpeg'};
 const SEC={'x-content-type-options':'nosniff','referrer-policy':'strict-origin-when-cross-origin','strict-transport-security':'max-age=31536000; includeSubDomains','permissions-policy':'camera=(), microphone=(), geolocation=()','x-frame-options':'SAMEORIGIN'};
 function hdr(ext,cache){return Object.assign({'content-type':CT[ext]||'application/octet-stream','cache-control':cache},SEC);}
 function resp(p,status){const f=F[p];const ext=p.split('.').pop();const cache=ext==='html'?'public, max-age=300, stale-while-revalidate=600':(ext==='xml'||ext==='json')?'public, max-age=600':'public, max-age=86400';
@@ -22,6 +25,12 @@ function resp(p,status){const f=F[p];const ext=p.split('.').pop();const cache=ex
 export default{async fetch(req,env){const u=new URL(req.url);
  if(u.hostname.startsWith('www.')){u.hostname=u.hostname.slice(4);return Response.redirect(u.toString(),301);}
  let p=decodeURIComponent(u.pathname);
+ if(p==='/'||p==='/index.html'){const ua=req.headers.get('user-agent')||'';
+  if(!BOT.test(ua)){const ck=(req.headers.get('cookie')||'').match(/(?:^|;\s*)st_lang=(en|es|id)/);
+   let l=ck?ck[1]:null;if(!l){const c=(req.cf&&req.cf.country)||req.headers.get('cf-ipcountry')||'';l=ES.has(c)?'es':(c==='ID'?'id':null);}
+   if(!l){const al=(req.headers.get('accept-language')||'').toLowerCase().slice(0,2);l=al==='es'?'es':(al==='id'||al==='ms')?'id':'en';}
+   return new Response(null,{status:302,headers:Object.assign({'location':'/'+l+'/'+u.search,'cache-control':'private, no-store','vary':'Cookie, Accept-Language'},SEC)});}}
+ if(RD[p]||RD[p+'/']){return Response.redirect(u.origin+(RD[p]||RD[p+'/'])+u.search,301);}
  if(p.startsWith('/img/')||p.startsWith('/og/')){const k=p.slice(1);const v=env.IMG?await env.IMG.get(k,{type:'arrayBuffer'}):null;if(v){return new Response(v,{headers:hdr(k.split('.').pop(),'public, max-age=2592000')});}return new Response('Not found',{status:404,headers:hdr('txt','public, max-age=60')});}
  if(p.endsWith('/'))p+='index.html';
  if(F[p])return resp(p,200);
