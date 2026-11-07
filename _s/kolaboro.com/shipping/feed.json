@@ -13,17 +13,31 @@
  ],
  "items": [
   {
+   "id": "https://kolaboro.com/shipping/#d-2026-11-07",
+   "url": "https://kolaboro.com/shipping/#d-2026-11-07",
+   "title": "7 November 2026: 57 changes shipped so far",
+   "content_text": "- Replace outdated 'anonymous until verification / 10 working days' statements with the named-pages policy in 8 languages; cases cards link to named pages; /p/?id= 301s too\n- Redesign: login, sign-up, reset and thanks screens on the design system; sentence case on registers, status, security and tools; calmer tool cards and status tiles\n- Developer network graph laid out as packed clusters with labels (readable on phones), bottom sheet for details on phones, globe pulse fix (no negative radius)\n- Project X-ray evidence cards 11-18 (location, Sentinel-2 now, image reuse, price per m2, market base rates, developer record, law, similar) at /api/xev\n- Construction progress from space on named project pages (monthly Sentinel-2 thumbnails, change index chart with the developer's dates, 8 languages)\n- Portal and admin console, part 2: design-system tokens, vertical stage list on phones, numeric columns, inbox empty states, destructive buttons\n\nDay in progress: summary taken from the commit subjects so far.",
+   "content_html": "<ul><li>Replace outdated &#x27;anonymous until verification / 10 working days&#x27; statements with the named-pages policy in 8 languages; cases cards link to named pages; /p/?id= 301s too</li><li>Redesign: login, sign-up, reset and thanks screens on the design system; sentence case on registers, status, security and tools; calmer tool cards and status tiles</li><li>Developer network graph laid out as packed clusters with labels (readable on phones), bottom sheet for details on phones, globe pulse fix (no negative radius)</li><li>Project X-ray evidence cards 11-18 (location, Sentinel-2 now, image reuse, price per m2, market base rates, developer record, law, similar) at /api/xev</li><li>Construction progress from space on named project pages (monthly Sentinel-2 thumbnails, change index chart with the developer&#x27;s dates, 8 languages)</li><li>Portal and admin console, part 2: design-system tokens, vertical stage list on phones, numeric columns, inbox empty states, destructive buttons</li></ul><p>Day in progress: summary taken from the commit subjects so far.</p>",
+   "date_published": "2026-11-07T00:00:00Z",
+   "date_modified": "2026-11-07T14:38:02Z",
+   "_kolaboro": {
+    "ships": 57,
+    "data_updates": 41,
+    "method": "so-far"
+   }
+  },
+  {
    "id": "https://kolaboro.com/shipping/#d-2026-11-06",
-   "url": "https://kolaboro.com/shipping/#d-2026-11-06",
-   "title": "6 November 2026: 34 changes shipped so far",
-   "content_text": "- Verified developer replies (DNS TXT or homepage meta, official-domain badge, moderated) and what-changed diff viewer on named pages\n- Passkey sign-in for buyers, optional admin two-factor (TOTP), W3C verifiable credentials for reports and sealed lookups (did:web)\n- PDF and photo checks in 8 languages (evidence section on every localized /check/ page), changelog line for the afternoon fixes\n- Search alerts send through the DB outbox (worker-key RPC kolaboro_worker_mail) when no direct mail key is set\n- Mobile speed (third-party tags wait for first interaction or 8 s), /api/x/live status checks and CSP counts\n- Bump site.js version so the search palette with named projects and developers reaches cached visitors\n\nDay in progress: summary taken from the commit subjects so far.",
-   "content_html": "<ul><li>Verified developer replies (DNS TXT or homepage meta, official-domain badge, moderated) and what-changed diff viewer on named pages</li><li>Passkey sign-in for buyers, optional admin two-factor (TOTP), W3C verifiable credentials for reports and sealed lookups (did:web)</li><li>PDF and photo checks in 8 languages (evidence section on every localized /check/ page), changelog line for the afternoon fixes</li><li>Search alerts send through the DB outbox (worker-key RPC kolaboro_worker_mail) when no direct mail key is set</li><li>Mobile speed (third-party tags wait for first interaction or 8 s), /api/x/live status checks and CSP counts</li><li>Bump site.js version so the search palette with named projects and developers reaches cached visitors</li></ul><p>Day in progress: summary taken from the commit subjects so far.</p>",
+   "url": "https://kolaboro.com/changelog/2026-11-06/",
+   "title": "6 November 2026: 34 changes shipped",
+   "content_text": "- You can now click a spot on the map to look up official property registers, with a check that works on phones.\n- Uploaded PDFs are checked for signs of tampering, and developer photos are checked for date, location and reused images.\n- Price per m2 can now be compared with official data, and a developer's company network is shown on its page.\n- Developers can have their replies verified, and a viewer shows what changed on a project page, including on phones.\n- Search for named projects is instant in 8 languages, and you can watch a project with one click.\n- You can check many registers at once with the new bulk check, shown as cards on phones.\n\nSummary written by AI from the day's commits and checked by code.",
+   "content_html": "<ul><li>You can now click a spot on the map to look up official property registers, with a check that works on phones.</li><li>Uploaded PDFs are checked for signs of tampering, and developer photos are checked for date, location and reused images.</li><li>Price per m2 can now be compared with official data, and a developer&#x27;s company network is shown on its page.</li><li>Developers can have their replies verified, and a viewer shows what changed on a project page, including on phones.</li><li>Search for named projects is instant in 8 languages, and you can watch a project with one click.</li><li>You can check many registers at once with the new bulk check, shown as cards on phones.</li></ul><p>Summary written by AI from the day&#x27;s commits and checked by code.</p>",
    "date_published": "2026-11-06T00:00:00Z",
-   "date_modified": "2026-11-06T11:36:44Z",
+   "date_modified": "2026-11-06T21:22:28Z",
    "_kolaboro": {
     "ships": 34,
-    "data_updates": 26,
-    "method": "so-far"
+    "data_updates": 29,
+    "method": "ai-checked"
    }
   },
   {
