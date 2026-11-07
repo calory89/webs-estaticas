@@ -21,8 +21,10 @@ def main(out):
     os.makedirs(out, exist_ok=True)
     if get(BASE + '/' + KEY + '.txt').strip() != KEY: raise SystemExit('key file not served')
     cur = {}
-    for m in re.findall(r'<loc>([^<]+)</loc>', get(BASE + '/sitemap_index.xml')):
-        for u, lm in re.findall(r'<url><loc>([^<]+)</loc>(?:<lastmod>([^<]+)</lastmod>)?', get(m)): cur[u.replace('&amp;', '&')] = lm or ''
+    # the zone caches .xml at the edge for hours; a throwaway query (ignored by the worker) reads the sitemaps as they are now
+    bust = '?fresh=' + dt.datetime.now(dt.timezone.utc).strftime('%Y%m%d%H%M')
+    for m in re.findall(r'<loc>([^<]+)</loc>', get(BASE + '/sitemap_index.xml' + bust)):
+        for u, lm in re.findall(r'<url><loc>([^<]+)</loc>(?:<lastmod>([^<]+)</lastmod>)?', get(m + bust)): cur[u.replace('&amp;', '&')] = lm or ''
     try: prev = json.loads(get(BASE + '/data/indexnow.json'))
     except Exception: prev = {}
     sent = prev.get('sent') or {}

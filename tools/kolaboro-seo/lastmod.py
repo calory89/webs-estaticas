@@ -24,7 +24,7 @@ def main(out):
     cur = get(BASE + '/api/seo/lastmod')
     if cur.get('version') != 'lastmod-1' or not isinstance(cur.get('p'), dict) or len(cur['p']) < 100:
         raise SystemExit('unexpected /api/seo/lastmod answer')
-    try: prev = get(BASE + '/data/lastmod.json')
+    try: prev = get(BASE + '/data/lastmod.json?fresh=' + str(os.getpid()))
     except Exception: prev = {}
     changed = sum(1 for k, v in cur['p'].items() if (prev.get('p') or {}).get(k) != v) + sum(1 for k in (prev.get('p') or {}) if k not in cur['p'])
     print('projects', len(cur['p']), 'changed or new', changed)
