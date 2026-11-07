@@ -23,7 +23,8 @@ import { satData, satSection, satToc, satHeading } from './kbx_named_sat.js';   
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v22';   // v22: search-intent titles, short answer, freshness line, more FAQ, related pages, image objects (s15a)
+const CACHE_V = 'named-v23';   // v23: country hub slug for 'X (USA)' and 'St X' (s15a)
+//   // v22: search-intent titles, short answer, freshness line, more FAQ, related pages, image objects (s15a)
 //   // v20: construction progress from space (f14b);   // v19: search empty state links to the free check, claims 'checked against' translated (qa13); v18: RTL-safe honeypot (d12b); v17: changes page (d12b); v16: design-system tokens (d12b); v15: d12b redesign (H1 tail line, key-facts panel, side contents on desktop, tables as cards on phones)
 // v13: sticky section chips, folded long lists, 44 px source pills (ux11); v11: og:image share cards, price per m2, company network (b10c); v10: page-history line (b9b)
 export const OPINION_RX = /\b(scam\w*|fraud\w*|ponzi|swindl\w*|rip-?off|avoid\w*|beware|dodgy|shady|crook\w*|estafa\w*|fraude\w*|timo|timador\w*|betrug\w*|betrüg\w*|abzocke\w*|arnaque\w*|escroquer\w*|escroc\w*|oplichting|oplichter\w*|bedrog\w*)\b|мошен|обман|афер|骗局|诈骗|欺诈|احتيال|نصب/i;
@@ -138,6 +139,7 @@ function lastmod(ix, x) {
 }
 
 // s15a: hub slugs (same rule as kbx_seo.js slug) and the page's images: the share card and, where we have a series, the monthly satellite strip
+const CO_HUB = { 'Puerto Rico (USA)': 'Puerto Rico', 'St Lucia': 'Saint Lucia' };   // country spellings whose hub page uses another name (checked 7 Nov 2026)
 const dot = t => String(t).replace(/\.\.(?=\s|$)/g, '.');   // "4 нояб. 2026 г." at the end of a sentence
 const slugA = s => String(s || '').normalize('NFKD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/&/g, ' and ').replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 const ymFmt = (ym, lang) => fd(ym, lang);
@@ -332,7 +334,7 @@ function projectPage(ix, x, lang, extra) {
   if (devPage && others.length) relL.push('<li><a href="' + devPage.replace(ORIGIN, '') + '">' + esc(tr(lang, 'rel_dev', { dev: x.dv })) + '</a> <small>' + (others.length + 1) + '</small></li>');
   if (SM.length) relL.push('<li><a href="/compare/?ids=' + [x.id, ...SM.slice(0, 3).map(o => o.id)].map(encodeURIComponent).join(',') + '" rel="nofollow">' + esc(tr(lang, 'rel_cmp', { n: name })) + '</a></li>');
   relL.push('<li><a href="/vs/#' + slugA(x.mk) + '">' + esc(tr(lang, 'rel_vs', { mk: x.mk })) + '</a></li>');
-  if (x.co) relL.push('<li><a href="/countries/' + slugA(x.co) + '/">' + esc(tr(lang, 'rel_country', { co: x.co })) + '</a></li>');
+  if (x.co) relL.push('<li><a href="/countries/' + slugA(CO_HUB[x.co] || x.co) + '/">' + esc(tr(lang, 'rel_country', { co: x.co })) + '</a></li>');
   const related = (AR.length ? '<h3>' + esc(tr(lang, 'rel_area', { ar: x.ar })) + '</h3><ul class="lk">' + AR.map(o => '<li><a href="' + pre(lang) + '/projects/' + o.s + '/">' + esc(o.n) + '</a>' + (o.dv ? ' <small>' + esc(o.dv) + '</small>' : '') + '</li>').join('') + '</ul>' : '') +
     '<ul class="lk">' + relL.join('') + '</ul>';
 
