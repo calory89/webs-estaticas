@@ -19,7 +19,8 @@ import { rpc } from './kolaboro.js';
 import { watchBox, searchBox, feedLinks, W9JS, W9CSS } from './kbx_follow.js';   // batch 9 (b9a): watch button, instant search, feeds (UI parts; endpoints in kbx_follow.js)
 import { diffRoute, phSummary } from './kbx_named_diff.js';   // batch 9 (b9b): what-changed viewer
 import { ppmSection, gleifNet, networkHtml, NET_CSS, NET_JS } from './kbx_named_plus.js';
-import { satData, satSection, satToc, satHeading } from './kbx_named_sat.js';   // batch 14 (f14b): construction progress from space   // batch 10 (b10c): price per m2 vs official data, company network graph
+import { satData, satSection, satToc, satHeading } from './kbx_named_sat.js';
+import { seoLd } from './kbx_lastmod.js';   // batch 15 (s15b): true dateModified and ImageObject in the JSON-LD   // batch 14 (f14b): construction progress from space   // batch 10 (b10c): price per m2 vs official data, company network graph
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
@@ -588,6 +589,7 @@ export async function handle(req, u, env, ctx, shell) {
   const ck = new Request(ORIGIN + '/__named_html/' + CACHE_V + '/' + encodeURIComponent(ix.updated + '|' + (ix.named.count || 0) + '|' + ix.P.length + '|' + (ix.named.updated || '') + '|r' + (key && kind === 'projects' ? await repliesPublished() : 0) + '|s' + (key && kind === 'projects' ? (((await satData(env).catch(() => null)) || {}).updated || '') : '')) + p);
   try { const hit = await caches.default.match(ck); if (hit) return new Response(hit.body, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'x-named-cache': 'hit', 'cache-control': 'no-cache' } }); } catch (e) {}
   const pg = await render(ix, key ? kind : 'i', key, lang, env, ctx);
+  if (pg && key) try { await seoLd(pg, env, kind, key); } catch (e) {}
   const sh = await shell(pre(lang) + '/how-we-score/');
   if (!pg) {
     const nf = { title: tr(lang, 'nf_h') + ' | Kolaboro', desc: tr(lang, 'nf_p'), canon: ORIGIN + p, noindex: true, body: '<section class="phero"><div class="wrap"><h1>' + esc(tr(lang, 'nf_h')) + '</h1><p class="lead">' + esc(tr(lang, 'nf_p')) + '</p><p class="bts"><a class="btn btn-hi kbtn" href="' + pre(lang) + '/projects/">' + esc(tr(lang, 'h1_i')) + '</a> <a class="btn btn-line kbtn" href="/database/">' + esc(tr(lang, 'search_db')) + '</a></p></div></section>', ld: { '@context': 'https://schema.org', '@type': 'WebPage', name: tr(lang, 'nf_h') }, lastmod: '', alt: l => ORIGIN + pre(l) + '/projects/' };

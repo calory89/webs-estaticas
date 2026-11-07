@@ -15,11 +15,12 @@
 //   /<key>.txt                                  IndexNow key file
 // Facts only: every number is computed from the data files named on the page; named project pages belong to seoP (/api/seo/urls).
 import * as KB from './kolaboro.js';
+import { trueLastmod, lastmodRoute } from './kbx_lastmod.js';   // batch 15 (s15b): date of the last real data change per project
 const { openData } = KB;
 
 const SITE = 'https://kolaboro.com';
 export const INDEXNOW_KEY = '7f3c9a1e5b2d4c8fa06e91d3b7c4f259';
-export const PATHS = /^\/(sitemap_index\.xml|sitemaps\/[a-z0-9-]+\.xml|llms(-full)?\.txt|countries(\/.*)?|rankings(\/.*)?|new\/?|vs(\/.*)?|embed\/(delay|project|widgets)(\/.*)?|engineering\/seo\/?|press\/delivery-index(\/.*)?|7f3c9a1e5b2d4c8fa06e91d3b7c4f259\.txt)$/;
+export const PATHS = /^\/(sitemap_index\.xml|api\/seo\/lastmod|sitemaps\/[a-z0-9-]+\.xml|llms(-full)?\.txt|countries(\/.*)?|rankings(\/.*)?|new\/?|vs(\/.*)?|embed\/(delay|project|widgets)(\/.*)?|engineering\/seo\/?|press\/delivery-index(\/.*)?|7f3c9a1e5b2d4c8fa06e91d3b7c4f259\.txt)$/;
 const LANGS = ['en', 'es', 'de', 'fr', 'ru', 'nl', 'ar', 'zh'];
 const CHECKS = ['permit', 'escrow', 'progress', 'plans', 'record', 'returns_ok'];
 const CKN = { permit: 'Permit or licence number', escrow: 'Deposit protection', progress: 'Construction progress', plans: 'Site or floor plans', record: 'Developer track record', returns_ok: 'No guaranteed-return language' };
@@ -72,6 +73,7 @@ async function base(env, inner) {
     file(env, '/data/delay-index.json'), file(env, '/data/on-time.json'), file(env, '/data/promises.json'), file(env, '/data/promise-drift.json'),
     file(env, '/data/register-checks.json'), file(env, '/data/lookup-coverage.json'), file(env, '/tools/law/law.json'), file(env, '/tools/late-handover/lh.json'), file(env, '/registers/index.html', 900000)]);
   const N = await named(inner);
+  const T = await trueLastmod(env).catch(() => null);
   const all = (d.cases || []).map(c => Object.assign({}, c, { country: ctry(c.country) }));
   // Legal-safety rule (lead, batch 8): a project the research agent has not read yet (no deep profile and no verification evidence)
   // is shown only as "Not yet reviewed by Kolaboro": no score, no caution or risk label, never in a ranking or a statistic.
@@ -79,7 +81,7 @@ async function base(env, inner) {
   const byCountry = new Map(); for (const c of cases) { if (!byCountry.has(c.country)) byCountry.set(c.country, []); byCountry.get(c.country).push(c); }
   const uByCountry = new Map(); for (const c of unrev) { if (!uByCountry.has(c.country)) uByCountry.set(c.country, []); uByCountry.get(c.country).push(c); }
   const mToC = new Map(); for (const c of all) if (!mToC.has(c.market)) mToC.set(c.market, c.country);
-  return { d, all, cases, unrev, byCountry, uByCountry, mToC, delay, ontime, promises, drift, regs, cover, law, lh, regCards: parseRegisters(regHtml), N };
+  return { d, all, cases, unrev, byCountry, uByCountry, mToC, delay, ontime, promises, drift, regs, cover, law, lh, regCards: parseRegisters(regHtml), N, T };
 }
 // The /registers/ page is our own static HTML: one card per market or country, one item per register.
 export const NOT_REVIEWED = 'Not yet reviewed by Kolaboro';
@@ -127,6 +129,11 @@ function stats(L) {
   s.avg = n ? s.avg / n : 0; s.vavg = n ? s.vavg / n : 0; return s;
 }
 function pname(B, c) { const e = B.N.projects.get(c.id); return e && e.name ? e.name : c.id; }
+// true lastmod (batch 15): a project's date is the last real change of its data (kbx_lastmod.js); a hub's date is the latest of the
+// projects it lists, plus the first day of the reference month for pages whose month counts (months late, new this month)
+function tl(B, c) { const d = B.T && B.T.project.get(c.id); if (d) return d; const h = (c.history || []).map(x => x.d).filter(Boolean).sort(); return h[h.length - 1] || B.d.updated; }
+function maxLm(B, L, extra) { let m = ''; for (const c of L) { const d = tl(B, c); if (d > m) m = d; } for (const e of extra || []) if (e && e > m) m = e; const today = new Date().toISOString().slice(0, 10); return m > today ? today : (m || B.d.updated); }
+let HLM = null;   // path -> true lastmod of the hub being rendered (set by handle() for render())
 function plink(B, c) { const e = B.N.projects.get(c.id); return e ? e.loc.replace(SITE, '') : '/p/' + encodeURIComponent(c.id) + '/'; }
 const place = c => (c.region && c.region !== c.market ? c.region + ', ' : '') + c.market;
 
@@ -154,7 +161,7 @@ function tableWrap(head, rows) {   // d12b: each cell carries its column name (d
   return '<div class="sx-tw"><table class="ptable"><thead><tr>' + head.map(h => '<th scope="col">' + h + '</th>').join('') + '</tr></thead><tbody>' + R.join('') + '</tbody></table></div>'; }
 function render(P) {
   const canon = SITE + P.path;
-  const ld = { '@context': 'https://schema.org', '@graph': [Object.assign({ '@type': P.type || 'WebPage', '@id': canon + '#page', url: canon, name: P.h1 || P.title, description: P.desc, inLanguage: 'en', dateModified: P.updated, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: SITE + '/' }, publisher: { '@type': 'Organization', name: 'Kolaboro', url: SITE + '/' } }, P.pageLd || {}), crumbLd(P.crumbs)].concat(P.ld || []) };
+  const ld = { '@context': 'https://schema.org', '@graph': [Object.assign({ '@type': P.type || 'WebPage', '@id': canon + '#page', url: canon, name: P.h1 || P.title, description: P.desc, inLanguage: 'en', dateModified: (HLM && HLM.get(P.path)) || P.updated, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: SITE + '/' }, publisher: { '@type': 'Organization', name: 'Kolaboro', url: SITE + '/' } }, P.pageLd || {}), crumbLd(P.crumbs)].concat(P.ld || []) };
   const head = '<title>' + esc(P.title) + '</title><meta name="description" content="' + esc(P.desc) + '"><link rel="canonical" href="' + canon + '">' +
     (P.noindex ? '<meta name="robots" content="noindex, follow">' : '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1"><link rel="alternate" hreflang="en" href="' + canon + '"><link rel="alternate" hreflang="x-default" href="' + canon + '">') +
     '<meta property="og:title" content="' + esc(P.title) + '"><meta property="og:description" content="' + esc(P.desc) + '"><meta property="og:url" content="' + canon + '"><meta name="twitter:title" content="' + esc(P.title) + '"><meta name="twitter:description" content="' + esc(P.desc) + '">' +
@@ -422,7 +429,16 @@ function pWidgets(B) {
 
 // ---------- sitemaps ----------
 const XHDR = { 'content-type': 'application/xml; charset=utf-8', 'cache-control': 'public, max-age=600', 'x-robots-tag': 'noindex' };
-const urlset = (items, alt) => '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"' + (alt ? ' xmlns:xhtml="http://www.w3.org/1999/xhtml"' : '') + '>\n' + items.map(i => '<url><loc>' + xesc(i.loc) + '</loc>' + (i.lastmod ? '<lastmod>' + i.lastmod + '</lastmod>' : '') + (i.alt || []).map(a => '<xhtml:link rel="alternate" hreflang="' + a[0] + '" href="' + xesc(a[1]) + '"/>').join('') + '</url>').join('\n') + '\n</urlset>\n';
+const urlset = (items, alt, img) => '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"' + (alt ? ' xmlns:xhtml="http://www.w3.org/1999/xhtml"' : '') + (img ? ' xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"' : '') + '>\n' + items.map(i => '<url><loc>' + xesc(i.loc) + '</loc>' + (i.lastmod ? '<lastmod>' + i.lastmod + '</lastmod>' : '') + (i.alt || []).map(a => '<xhtml:link rel="alternate" hreflang="' + a[0] + '" href="' + xesc(a[1]) + '"/>').join('') + (i.img || []).map(u => '<image:image><image:loc>' + xesc(u) + '</image:loc></image:image>').join('') + '</url>').join('\n') + '\n</urlset>\n';
+// image sitemap (batch 15): the share card of every named project and developer page (rendered by kbx_og.js from the same facts) and,
+// where we hold one, the monthly Sentinel-2 thumbnail strip shown in "Construction progress from space" (kbx_named_sat.js).
+// English pages only: the images are the same in every language and the hreflang set already links the translations.
+async function imageUrls(env, B, NP, ND) {
+  const prog = await file(env, '/data/construction-progress.json'), sp = (prog && prog.projects) || {};
+  const one = (i, kind) => { const b = i.base, img = [SITE + '/og' + b.replace(/\/$/, '') + '.png']; const r = kind === 'project' && i.id && sp[i.id]; if (r && r.frames && r.v) img.push(SITE + '/k/sat/proj/' + encodeURIComponent(i.id) + '.jpg?v=' + encodeURIComponent(r.v)); return { loc: i.loc, lastmod: i.lastmod, img }; };
+  const en = i => !/^https:\/\/kolaboro\.com\/(es|de|fr|ru|nl|ar|zh)\//.test(i.loc);
+  return NP.filter(i => en(i) && /^\/projects\/[^/]+\/$/.test(i.base || '')).map(i => one(i, 'project')).concat(ND.filter(i => en(i) && /^\/developers\/[^/]+\/$/.test(i.base || '')).map(i => one(i, 'developer')));
+}
 async function staticPages(env, audit) {   // the static sitemap (kept as /sitemap.xml for the QA tools) grouped by language
   const sm = (await file(env, '/sitemap.xml')) || '';
   const locs = [...sm.matchAll(/<url><loc>([^<]+)<\/loc>(?:<lastmod>([^<]+)<\/lastmod>)?/g)].map(m => ({ loc: m[1], lastmod: m[2] || null }));
@@ -432,32 +448,38 @@ async function staticPages(env, audit) {   // the static sitemap (kept as /sitem
   return locs.filter(x => !drop.has(x.loc.replace(SITE, ''))).map(x => { const [l, p] = key(x.loc), alt = LANGS.map(L => [L, SITE + (L === 'en' ? p : '/' + L + p)]).filter(a => set.has(a[1])); return { loc: x.loc, lang: l, lastmod: lm[x.loc.replace(SITE, '')] || x.lastmod, alt: alt.length > 1 ? alt.concat([['x-default', SITE + p]]) : null }; });
 }
 async function hubUrls(B) {
-  const up = B.d.updated, list = countryList(B), out = [];
-  out.push({ loc: SITE + '/countries/', lastmod: up, t: 'countries' });
-  for (const x of list) { out.push({ loc: SITE + '/countries/' + x.s + '/', lastmod: up, t: 'countries' }); if (x.L.length) out.push({ loc: SITE + '/countries/' + x.s + '/how-to-check/', lastmod: up, t: 'guides' }); if (x.L.length >= SAFE_MIN) out.push({ loc: SITE + '/countries/' + x.s + '/is-it-safe/', lastmod: up, t: 'guides' }); if (lawFor(B, x.c).length) out.push({ loc: SITE + '/countries/' + x.s + '/buyer-protection-law/', lastmod: (B.law && B.law.version) || up, t: 'guides' }); }
-  out.push({ loc: SITE + '/rankings/', lastmod: up, t: 'rankings' }, { loc: SITE + '/rankings/most-delayed/', lastmod: up, t: 'rankings' }, { loc: SITE + '/rankings/changed-promises/', lastmod: (B.drift && B.drift.updated) || up, t: 'rankings' }, { loc: SITE + '/new/', lastmod: up, t: 'rankings' }, { loc: SITE + '/embed/widgets/', lastmod: up, t: 'rankings' });
+  const up = B.d.updated, list = countryList(B), out = [], asOf = B.ontime && B.ontime.as_of_month ? B.ontime.as_of_month + '-01' : null;
+  out.push({ loc: SITE + '/countries/', lastmod: maxLm(B, B.all), t: 'countries' });
+  for (const x of list) { out.push({ loc: SITE + '/countries/' + x.s + '/', lastmod: maxLm(B, x.L.concat(x.U), x.L.some(c => lateMonths(B, c)) ? [asOf] : []), t: 'countries' }); if (x.L.length) out.push({ loc: SITE + '/countries/' + x.s + '/how-to-check/', lastmod: maxLm(B, x.L), t: 'guides' }); if (x.L.length >= SAFE_MIN) out.push({ loc: SITE + '/countries/' + x.s + '/is-it-safe/', lastmod: maxLm(B, x.L, [asOf]), t: 'guides' }); if (lawFor(B, x.c).length) out.push({ loc: SITE + '/countries/' + x.s + '/buyer-protection-law/', lastmod: (B.law && B.law.version) || up, t: 'guides' }); }
+  const dl = delayedList(B, () => true).map(o => o.c), drift = (B.drift && B.drift.projects) || {}, m0 = up.slice(0, 7) + '-01', A = addedDates(B);
+  out.push({ loc: SITE + '/rankings/', lastmod: maxLm(B, B.cases, [asOf]), t: 'rankings' }, { loc: SITE + '/rankings/most-delayed/', lastmod: maxLm(B, dl, [asOf]), t: 'rankings' }, { loc: SITE + '/rankings/changed-promises/', lastmod: maxLm(B, B.cases.filter(c => drift[c.id])), t: 'rankings' }, { loc: SITE + '/new/', lastmod: maxLm(B, B.all.filter(c => !reviewed(c) || (A.get(c.id) || '').slice(0, 7) === m0.slice(0, 7)), [m0]), t: 'rankings' }, { loc: SITE + '/embed/widgets/', lastmod: maxLm(B, B.all), t: 'rankings' });
   out.push({ loc: SITE + '/press/delivery-index/', lastmod: (diMonths(B)[0] || {}).taken || up, t: 'rankings' }); for (const h of diMonths(B)) out.push({ loc: SITE + '/press/delivery-index/' + h.month + '/', lastmod: h.taken, t: 'rankings' });
-  for (const [m] of marketsWithDelays(B)) out.push({ loc: SITE + '/rankings/most-delayed/' + slug(m) + '/', lastmod: up, t: 'rankings' });
-  const P = pairs(B); if (P.length) { out.push({ loc: SITE + '/vs/', lastmod: up, t: 'compare' }); for (const [a, b] of P) out.push({ loc: SITE + pairPath(a, b), lastmod: up, t: 'compare' }); }
+  for (const [m] of marketsWithDelays(B)) out.push({ loc: SITE + '/rankings/most-delayed/' + slug(m) + '/', lastmod: maxLm(B, dl.filter(c => c.market === m), [asOf]), t: 'rankings' });
+  const P = pairs(B); if (P.length) { out.push({ loc: SITE + '/vs/', lastmod: maxLm(B, P.flat()), t: 'compare' }); for (const [a, b] of P) out.push({ loc: SITE + pairPath(a, b), lastmod: maxLm(B, [a, b]), t: 'compare' }); }
+  for (const o of out) if (o.lastmod) o.lastmod = String(o.lastmod).slice(0, 10);
   return out;
 }
-function namedUrls(B, type) {   // seoP's named pages, grouped by base URL with hreflang alternates when they publish languages
-  const list = B.N.all.filter(e => e.type === type); const byBase = new Map();
+function namedUrls(B, type) {   // seoP's named pages, grouped by base URL with hreflang alternates; lastmod = last real data change (kbx_lastmod.js)
+  const list = B.N.all.filter(e => e.type === type); const byBase = new Map(), T = B.T;
+  const all = T ? [...T.project.values()].sort() : [], newest = all[all.length - 1] || null;
+  const tlm = (e, b) => { if (!T) return null; if (type === 'project' && e.id) return T.project.get(e.id) || null; if (type === 'developer') { const m = /^\/developers\/([^/]+)\/$/.exec(b); return m ? T.developer.get(m[1]) || null : null; } if (type === 'index') return newest; return null; };
   for (const e of list) { const p = e.loc.replace(SITE, ''), m = /^\/(es|de|fr|ru|nl|ar|zh)(\/.*)$/.exec(p), b = m ? m[2] : p; if (!byBase.has(b)) byBase.set(b, []); byBase.get(b).push(Object.assign({ l: m ? m[1] : (e.lang || 'en') }, e)); }
   const out = [];
-  for (const [b, g] of byBase) { const alt = g.length > 1 ? g.map(e => [e.l, e.loc]).concat([['x-default', SITE + b]]) : null; for (const e of g) out.push({ loc: e.loc, lastmod: (e.lastmod || '').slice(0, 10) || null, alt }); }
+  for (const [b, g] of byBase) { const alt = g.length > 1 ? g.map(e => [e.l, e.loc]).concat([['x-default', SITE + b]]) : null; const en = g.find(e => e.l === 'en') || g[0], d = tlm(en, b); for (const e of g) out.push({ loc: e.loc, lastmod: d || (e.lastmod || '').slice(0, 10) || null, alt, id: en.id, base: b }); }
   return out;
 }
 async function sitemaps(env, B, name) {
   const audit = await file(env, '/data/seo-audit.json');
   const pages = await staticPages(env, audit), hubs = await hubUrls(B), up = B.d.updated;
-  const mk = [...new Set(B.all.map(c => c.market))].map(m => ({ loc: SITE + '/m/' + slugM(m) + '/', lastmod: up }));
-  const anon = B.all.filter(c => !B.N.projects.has(c.id) && /^[A-Za-z0-9-]{3,20}$/.test(c.id)).map(c => ({ loc: SITE + '/p/' + encodeURIComponent(c.id) + '/', lastmod: (c.fp && c.fp.date) || up }));
+  const byM = new Map(); for (const c of B.all) { if (!byM.has(c.market)) byM.set(c.market, []); byM.get(c.market).push(c); }
+  const mk = [...byM.entries()].map(([m, L]) => ({ loc: SITE + '/m/' + slugM(m) + '/', lastmod: maxLm(B, L) }));
+  const anon = B.all.filter(c => !B.N.projects.has(c.id) && /^[A-Za-z0-9-]{3,20}$/.test(c.id)).map(c => ({ loc: SITE + '/p/' + encodeURIComponent(c.id) + '/', lastmod: tl(B, c) }));
   const S = { ['pages-en']: pages.filter(p => p.lang === 'en') };
   for (const l of LANGS.slice(1)) S['pages-' + l] = pages.filter(p => p.lang === l);
   Object.assign(S, { countries: hubs.filter(h => h.t === 'countries'), guides: hubs.filter(h => h.t === 'guides'), rankings: hubs.filter(h => h.t === 'rankings'), compare: hubs.filter(h => h.t === 'compare'), markets: mk, 'projects-anonymous': anon });
   const NP = namedUrls(B, 'index').concat(namedUrls(B, 'project')), ND = namedUrls(B, 'developer'), lg = i => (/^https:\/\/kolaboro\.com\/(es|de|fr|ru|nl|ar|zh)\//.exec(i.loc) || [0, 'en'])[1];
   for (const l of LANGS) { S['projects-' + l] = NP.filter(i => lg(i) === l); S['developers-' + l] = ND.filter(i => lg(i) === l); }
+  S.images = await imageUrls(env, B, NP, ND);
   if (name === 'index' || name === 'stats') {
     const keys = Object.keys(S).filter(k => S[k].length);
     if (name === 'stats') return Object.fromEntries(Object.keys(S).map(k => [k, S[k].length]));
@@ -465,7 +487,7 @@ async function sitemaps(env, B, name) {
     return new Response('<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + keys.map(k => '<sitemap><loc>' + SITE + '/sitemaps/' + k + '.xml</loc><lastmod>' + last(k) + '</lastmod></sitemap>').join('\n') + '\n</sitemapindex>\n', { headers: XHDR });
   }
   if (!S[name] || !S[name].length) return new Response('Not found', { status: 404 });
-  return new Response(urlset(S[name], S[name].some(i => i.alt)), { headers: XHDR });
+  return new Response(urlset(S[name], S[name].some(i => i.alt), S[name].some(i => i.img)), { headers: XHDR });
 }
 
 // ---------- llms.txt / llms-full.txt: the published file plus live sections ----------
@@ -495,13 +517,24 @@ async function pSeo(env, B) {
   body += h2('sitemaps', 'Sitemap coverage') + tableWrap(['Sitemap', 'URLs'], Object.entries(cnt).map(([k, v]) => '<tr><td>' + (v ? '<a href="/sitemaps/' + k + '.xml">' + k + '</a>' : k) + '</td><td>' + v + '</td></tr>'));
   if (audit) {
     const s = audit.summary;
-    body += h2('crawl', 'Crawl audit') + '<p class="muted">Crawler: tools/kolaboro-seo/audit.py on main (user agent KolaboroSEOAudit/1.0). It fetches every sitemap URL with GET and HEAD and checks status codes, canonicals, hreflang reciprocity and JSON-LD.</p><div class="sx-kv">' + [['crawled', 'URLs crawled'], ['ok_200', 'answered 200'], ['indexable', 'indexable (200, self-canonical, not noindex)'], ['schema_valid_pages', 'pages with valid JSON-LD'], ['schema_errors', 'JSON-LD errors'], ['head_mismatch', 'HEAD differs from GET'], ['canonical_mismatch', 'canonical points elsewhere'], ['hreflang_errors', 'hreflang errors'], ['redirects', 'sitemap URLs that redirect'], ['errors_4xx_5xx', '4xx or 5xx']].map(([k, t]) => '<div><b>' + fmt(s[k]) + '</b><span>' + t + '</span></div>').join('') + '</div>';
+    body += h2('crawl', 'Crawl audit') + '<p class="muted">Crawler: tools/kolaboro-seo/audit.py on main (user agent KolaboroSEOAudit/1.0). It fetches every sitemap URL with GET and HEAD and checks status codes, canonicals, hreflang reciprocity and JSON-LD.</p><div class="sx-kv">' + [['crawled', 'URLs crawled'], ['ok_200', 'answered 200'], ['indexable', 'indexable (200, self-canonical, not noindex)'], ['schema_valid_pages', 'pages with valid JSON-LD'], ['schema_errors', 'JSON-LD errors'], ['head_mismatch', 'HEAD differs from GET'], ['canonical_mismatch', 'canonical points elsewhere'], ['hreflang_errors', 'hreflang errors'], ['redirects', 'sitemap URLs that redirect'], ['errors_4xx_5xx', '4xx or 5xx'], ['image_sitemap_images', 'images in the image sitemap'], ['image_errors', 'image sitemap errors'], ['lastmod_future', 'lastmod dates in the future']].filter(([k]) => s[k] != null).map(([k, t]) => '<div><b>' + fmt(s[k]) + '</b><span>' + t + '</span></div>').join('') + '</div>';
     if ((audit.problems || []).length) body += '<h3>Open problems (first 40)</h3><ul class="sx-l">' + audit.problems.slice(0, 40).map(p => '<li><code>' + esc(p.url.replace(SITE, '')) + '</code>: ' + esc(p.issue) + '</li>').join('') + '</ul>';
     if ((audit.history || []).length) body += '<h3>History</h3>' + tableWrap(['Run', 'Crawled', 'Indexable', 'Valid schema', 'Problems'], audit.history.slice(-14).reverse().map(h => '<tr><td>' + esc(h.at) + '</td><td>' + h.crawled + '</td><td>' + h.indexable + '</td><td>' + h.schema_valid_pages + '</td><td>' + h.problems + '</td></tr>'));
   }
   if (lh && Array.isArray(lh.runs)) { const rows = lh.runs.filter(r => r.form_factor === 'mobile'); const over = rows.filter(r => (r.metrics || {}).lcp_ms >= 2500 || (r.metrics || {}).cls >= 0.1 || (r.metrics || {}).tbt_ms >= 200).length; body += h2('cwv', 'Core Web Vitals budget (lab, Lighthouse, mobile)') + '<p>Budget per page: LCP under 2,500 ms, CLS under 0.1, TBT under 200 ms (lab stand-in for INP). ' + (rows.length - over) + ' of ' + rows.length + ' key pages are within budget. Source: <a href="/data/lighthouse.json">/data/lighthouse.json</a>, run ' + esc(String(lh.generated || '').slice(0, 16).replace('T', ' ')) + ' UTC. Real-user figures: <a href="/engineering/speed/">speed</a>.</p>' + tableWrap(['Page', 'Performance', 'LCP', 'CLS', 'TBT', 'Budget'], rows.map(r => { const m = r.metrics || {}, ok = m.lcp_ms < 2500 && m.cls < 0.1 && m.tbt_ms < 200; return '<tr><td><a href="' + esc(r.page) + '">' + esc(r.page) + '</a></td><td>' + esc((r.scores || {}).performance) + '</td><td>' + fmt(m.lcp_ms) + ' ms</td><td>' + m.cls + '</td><td>' + fmt(m.tbt_ms) + ' ms</td><td>' + (ok ? 'within' : 'over') + '</td></tr>'; })); }
+  // batch 15: true lastmod, image sitemap, crawl rules
+  const T = B.T;
+  if (T) {
+    const ds = [...T.project.values()].sort(), today = new Date().toISOString().slice(0, 10), wk = new Date(Date.now() - 7 * 864e5).toISOString().slice(0, 10);
+    const byDay = new Map(); for (const d of ds) byDay.set(d, (byDay.get(d) || 0) + 1);
+    body += h2('lastmod', 'True lastmod') + '<p>Every named project page carries the date of the last real change of its data, not the date we last checked it and not the deploy date. Five parts are fingerprinted per project without volatile dates (facts in <a href="/data/named.json">named.json</a>, the case in <a href="/data/bali-cases.json">bali-cases.json</a>, dated promises, live findings, the satellite series); a part keeps the date its fingerprint was first seen (<a href="/data/lastmod.json">/data/lastmod.json</a>, ' + (T.pinned ? 'pinned ' + esc(String(T.pinned).slice(0, 16).replace('T', ' ')) + ' UTC' : 'no pin published yet') + '). Developer pages take the latest of their projects; hubs the latest of the projects they list. IndexNow only receives URLs whose lastmod moved.</p>' +
+      '<div class="sx-kv"><div><b>' + fmt(ds.length) + '</b><span>projects with a true lastmod</span></div><div><b>' + fmt(ds.filter(d => d >= wk).length) + '</b><span>changed in the last 7 days</span></div><div><b>' + fmt(ds.filter(d => d === today).length) + '</b><span>changed today</span></div></div>' +
+      tableWrap(['Last data change', 'Projects'], [...byDay.entries()].sort((a, b) => a[0] < b[0] ? 1 : -1).slice(0, 10).map(([d, n]) => '<tr><td>' + longDate(d) + '</td><td>' + fmt(n) + '</td></tr>'));
+  }
+  body += h2('images', 'Image sitemap') + '<p><a href="/sitemaps/images.xml">/sitemaps/images.xml</a> lists ' + fmt(cnt.images || 0) + ' English named pages with their 1200 x 630 facts card and, where we hold one, the monthly Sentinel-2 thumbnail strip. Each card is also an <code>ImageObject</code> (primaryImageOfPage) in the page\'s JSON-LD.</p>';
+  body += h2('hygiene', 'Crawl rules') + '<ul class="sx-l"><li>One URL per page: trailing slash, lower case; <code>/p/&lt;id&gt;/</code>, <code>/projects/x</code> and <code>index.html</code> answer one 301 to the final URL (no chains).</li><li>Pages reached with a functional query (<code>?q=</code>, <code>?sort=</code>, <code>?lang=</code> ...) answer <code>X-Robots-Tag: noindex, follow</code>; tracking-only queries (<code>utm_*</code>, <code>gclid</code>, <code>fbclid</code>) keep the canonical as the only signal.</li><li><a href="/robots.txt">robots.txt</a> allows every search and answer-engine crawler (Googlebot, Bingbot, GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, Applebot and others) on public pages.</li><li>Structured data on named pages: WebPage or ProfilePage, Organization, Residence or ApartmentComplex with GeoCoordinates where the location is public, Dataset, FAQPage, BreadcrumbList, ImageObject. Never Review, AggregateRating or ClaimReview.</li></ul>';
   body += h2('indexnow', 'IndexNow') + (inow ? '<p>Last submission ' + esc(inow.at) + ': ' + fmt(inow.submitted) + ' URLs, HTTP ' + esc(inow.status) + ' from api.indexnow.org (shared with Bing, Yandex, Naver, Seznam and Yep). ' + fmt(inow.known) + ' URLs known in total.</p>' : '<p>No submission recorded yet.</p>') + '<p>Key file: <a href="/' + INDEXNOW_KEY + '.txt">/' + INDEXNOW_KEY + '.txt</a>. Google does not use IndexNow; it reads <a href="/sitemap_index.xml">the sitemap index</a> listed in <a href="/robots.txt">robots.txt</a>.</p>';
-  body += h2('search-console', 'Search Console and Bing Webmaster') + '<p>Not connected yet. Clicks and impressions will only be shown once the site owner verifies the domain and grants read access.</p>';
+  body += h2('search-console', 'Search Console and Bing Webmaster') + '<p>Not connected yet. The domain is verified in Search Console; clicks, impressions and index coverage will only be shown here once the site owner grants read access (Search Console API with the read-only scope, or a service account added as a restricted user). We do not estimate them. Sitemap to submit: <a href="/sitemap_index.xml">/sitemap_index.xml</a>.</p>';
   return render({ path: '/engineering/seo/', title: 'Search and indexation: sitemaps, crawl audit, structured data | Kolaboro engineering', h1: 'Search and indexation', lead: 'How much of kolaboro.com search engines and answer engines can find, measured, not estimated.', desc: fmt(total) + ' URLs in the sitemaps; crawl audit of status codes, canonicals, hreflang and structured data; Core Web Vitals budget; IndexNow submissions.', updated: (audit && audit.generated_at || B.d.updated).slice(0, 10), crumbs: [['Kolaboro', '/'], ['Engineering', '/engineering/'], ['Search and indexation', '/engineering/seo/']], body });
 }
 
@@ -509,6 +542,7 @@ async function pSeo(env, B) {
 export async function handle(req, u, env, ctx, shell, inner) {
   const p = u.pathname;
   if (p === '/' + INDEXNOW_KEY + '.txt') return new Response(INDEXNOW_KEY, { headers: { 'content-type': 'text/plain; charset=utf-8', 'cache-control': 'public, max-age=86400' } });
+  if (p === '/api/seo/lastmod') return lastmodRoute(env);   // batch 15: true lastmod state (published as /data/lastmod.json by the SEO workflow)
   if (/^\/(countries|rankings|vs|new|embed\/(delay|project|widgets)|engineering\/seo|press\/delivery-index)(\/[^?#.]*)?$/.test(p) && !p.endsWith('/')) return new Response(null, { status: 301, headers: { location: p + '/' + u.search } });
   let B; try { B = await base(env, inner); } catch (e) { return new Response('Data temporarily unavailable', { status: 503, headers: { 'retry-after': '60', 'content-type': 'text/plain' } }); }
   if (p === '/sitemap_index.xml') return sitemaps(env, B, 'index');
@@ -518,6 +552,7 @@ export async function handle(req, u, env, ctx, shell, inner) {
   const nf = async () => { const s = await shell('/404'); return new Response(s.body, { status: 404, headers: { 'content-type': 'text/html; charset=utf-8' } }); };
   if ((m = /^\/embed\/delay\/([a-z0-9-]+)\/$/.exec(p))) { const h = eDelay(B, m[1]); return h ? new Response(h, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=3600' } }) : nf(); }
   if ((m = /^\/embed\/project\/([a-z0-9-]+)\/$/.exec(p))) { const h = eProject(B, m[1]); return h ? new Response(h, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'public, max-age=3600' } }) : nf(); }
+  try { const k = B.d.updated + '|' + ((B.T && B.T.pinned) || '') + '|' + B.N.all.length; if (!MEMO.__hlm || MEMO.__hlm.k !== k) MEMO.__hlm = { k, v: new Map((await hubUrls(B)).map(h => [h.loc.replace(SITE, ''), h.lastmod])) }; HLM = MEMO.__hlm.v; } catch (e) { HLM = null; }
   let R = null;
   if (p === '/countries/') R = pCountries(B);
   else if ((m = /^\/countries\/([a-z0-9-]+)\/(?:(how-to-check|is-it-safe|buyer-protection-law)\/)?$/.exec(p))) {
