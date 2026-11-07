@@ -1,0 +1,103 @@
+name: Kolaboro construction progress from space
+# Monthly (batch 14, f14b): Sentinel-2 L2A monthly change series and thumbnails per named project with a plot-level pin
+# (tools/kolaboro-landwatch/progress.py). Free open data (Element84 Earth Search STAC, COGs on AWS Open Data, range reads),
+# no account, no model calls. Publishes kolaboro.com/data/construction-progress.json and the sprites /k/sat/proj/<id>.jpg
+# (inside the satellite packs, tools/kolaboro-agent/satpack.py: the Pages project is near its 20,000-file limit).
+on:
+  schedule:
+    - cron: '23 5 3 * *'
+  workflow_dispatch:
+    inputs:
+      only: { description: 'comma separated project ids (empty = all)', required: false, default: '' }
+      from: { description: 'first month YYYY-MM', required: false, default: '2023-07' }
+
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-progress
+  cancel-in-progress: false
+jobs:
+  series:
+    runs-on: ubuntu-latest
+    timeout-minutes: 100
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            tools/kolaboro-agent
+            tools/kolaboro-landwatch
+      - name: Monthly series (shard ${{ matrix.shard }} of 4)
+        env:
+          ONLY: ${{ github.event.inputs.only }}
+          FROM: ${{ github.event.inputs.from }}
+        run: |
+          pip install -q rasterio pystac-client numpy pillow
+          A="--shard ${{ matrix.shard }}/4"
+          if [ -n "$ONLY" ]; then [ "${{ matrix.shard }}" = "0" ] || exit 0; A="--only $ONLY"; fi
+          python3 -W ignore tools/kolaboro-landwatch/progress.py "$RUNNER_TEMP/out" --from "${FROM:-2023-07}" --workers 16 --budget-min 80 $A
+          du -sh "$RUNNER_TEMP/out"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: progress-${{ matrix.shard }}
+          path: ${{ runner.temp }}/out
+          if-no-files-found: ignore
+          retention-days: 3
+  publish:
+    needs: series
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            tools/kolaboro-agent
+            tools/kolaboro-landwatch
+      - uses: actions/download-artifact@v4
+        with:
+          pattern: progress-*
+          merge-multiple: true
+          path: ${{ runner.temp }}/out
+      - name: Merge shards
+        run: |
+          set -e
+          mkdir -p "$RUNNER_TEMP/img"; [ -d "$RUNNER_TEMP/out/proj" ] && cp -r "$RUNNER_TEMP/out/proj" "$RUNNER_TEMP/img/"
+          P=""
+          if [ -n "${{ github.event.inputs.only }}" ]; then
+            curl -sf "https://kolaboro.com/data/construction-progress.json?run=$(date +%s)" -o "$RUNNER_TEMP/prev.json" && P="--prev $RUNNER_TEMP/prev.json" || true
+          fi
+          python3 tools/kolaboro-landwatch/progress_merge.py "$RUNNER_TEMP/out" "$RUNNER_TEMP/img" "$RUNNER_TEMP/construction-progress.json" $P
+          ls "$RUNNER_TEMP/img/proj" | wc -l; du -sh "$RUNNER_TEMP/img"
+      - name: Publish to kolaboro.com
+        run: |
+          set -e
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          K=_s/kolaboro.com/k/sat
+          for i in 1 2 3 4 5; do
+            P=$(git rev-parse FETCH_HEAD)
+            rm -rf $RUNNER_TEMP/cur $RUNNER_TEMP/pk; mkdir -p $RUNNER_TEMP/cur
+            git cat-file blob $P:$K/packs.json > $RUNNER_TEMP/cur/packs.json   # no index: stop, never rebuild it from one run
+            for p in $(python3 -c "import json,sys; print(' '.join(sorted({e[0] for r, e in json.load(open(sys.argv[1]))['files'].items() if r.startswith('proj/')})))" $RUNNER_TEMP/cur/packs.json); do
+              git cat-file blob $P:$K/$p > $RUNNER_TEMP/cur/$p
+            done
+            if [ -d "$RUNNER_TEMP/img/proj" ]; then
+              python3 tools/kolaboro-agent/satpack.py merge --cur $RUNNER_TEMP/cur --new "$RUNNER_TEMP/img" --out $RUNNER_TEMP/pk > $RUNNER_TEMP/drop.txt
+              python3 tools/kolaboro-agent/satpack.py verify --packs $RUNNER_TEMP/pk --partial
+            else mkdir -p $RUNNER_TEMP/pk; : > $RUNNER_TEMP/drop.txt; fi
+            export GIT_INDEX_FILE=$RUNNER_TEMP/idx; rm -f $GIT_INDEX_FILE; git read-tree $P
+            for f in $(ls $RUNNER_TEMP/pk); do H=$(git hash-object -w $RUNNER_TEMP/pk/$f); git update-index --add --cacheinfo 100644,$H,$K/$f; done
+            sed -n 's/^drop //p' $RUNNER_TEMP/drop.txt | while read p; do git update-index --force-remove "$K/$p"; done
+            H=$(git hash-object -w "$RUNNER_TEMP/construction-progress.json")
+            git update-index --add --cacheinfo 100644,$H,_s/kolaboro.com/data/construction-progress.json
+            T=$(git write-tree --missing-ok); unset GIT_INDEX_FILE
+            [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
+            C=$(git commit-tree $T -p $P -m "kolaboro.com: construction progress from space $(date -u +%F)")
+            git push -q origin $C:refs/heads/pub/_lovable && exit 0
+            sleep $((5 + RANDOM % 10)); git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          done; exit 1
