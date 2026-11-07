@@ -18,11 +18,12 @@ import { T, LANGS, LOCALE } from './kbx_named_i18n.js';
 import { rpc } from './kolaboro.js';
 import { watchBox, searchBox, feedLinks, W9JS, W9CSS } from './kbx_follow.js';   // batch 9 (b9a): watch button, instant search, feeds (UI parts; endpoints in kbx_follow.js)
 import { diffRoute, phSummary } from './kbx_named_diff.js';   // batch 9 (b9b): what-changed viewer
-import { ppmSection, gleifNet, networkHtml, NET_CSS, NET_JS } from './kbx_named_plus.js';   // batch 10 (b10c): price per m2 vs official data, company network graph
+import { ppmSection, gleifNet, networkHtml, NET_CSS, NET_JS } from './kbx_named_plus.js';
+import { satData, satSection, satToc, satHeading } from './kbx_named_sat.js';   // batch 14 (f14b): construction progress from space   // batch 10 (b10c): price per m2 vs official data, company network graph
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v19';   // v19: search empty state links to the free check, claims 'checked against' translated (qa13); v18: RTL-safe honeypot (d12b); v17: changes page (d12b); v16: design-system tokens (d12b); v15: d12b redesign (H1 tail line, key-facts panel, side contents on desktop, tables as cards on phones)
+const CACHE_V = 'named-v20';   // v20: construction progress from space (f14b);   // v19: search empty state links to the free check, claims 'checked against' translated (qa13); v18: RTL-safe honeypot (d12b); v17: changes page (d12b); v16: design-system tokens (d12b); v15: d12b redesign (H1 tail line, key-facts panel, side contents on desktop, tables as cards on phones)
 // v13: sticky section chips, folded long lists, 44 px source pills (ux11); v11: og:image share cards, price per m2, company network (b10c); v10: page-history line (b9b)
 export const OPINION_RX = /\b(scam\w*|fraud\w*|ponzi|swindl\w*|rip-?off|avoid\w*|beware|dodgy|shady|crook\w*|estafa\w*|fraude\w*|timo|timador\w*|betrug\w*|betrüg\w*|abzocke\w*|arnaque\w*|escroquer\w*|escroc\w*|oplichting|oplichter\w*|bedrog\w*)\b|мошен|обман|афер|骗局|诈骗|欺诈|احتيال|نصب/i;
 
@@ -197,6 +198,9 @@ function projectPage(ix, x, lang, extra) {
     (c.overdue ? fact(esc(tr(lang, 'over_line', { m: c.overdue })), '/promises/', tr(lang, 'm_promises')) : '') +
     (c.delay ? fact(esc(tr(lang, 'delay_line', { m: c.delay })), page) : '') + '</ul>';
 
+  // construction progress from space (only projects with a plot-level pin and a Sentinel-2 series)
+  const satHtml = extra.sat ? satSection(extra.sat, x.id, ix.prom[x.id] || [], fx, lang, d => fd(d, lang), k => tr(lang, 'pk_' + k)) : '';
+
   // permits and licences
   const rw = x.rw, lk = { url: page || '', q: name, country: COUNTRY_ISO[x.co] || '', permit: x.pn && x.pn.length <= 40 ? x.pn : '', company: x.dv || '', ai: '0' };   // ai=0: registers only, no paid desk review from a page view
   const permits = '<ul class="fl">' + (x.pn ? fact(esc(tr(lang, 'permit_pn', { pn: '%%PN%%' })).replace('%%PN%%', en(x.pn)), x.du || page) : '<li>' + esc(tr(lang, 'permit_none')) + '</li>') +
@@ -285,11 +289,11 @@ function projectPage(ix, x, lang, extra) {
     (okHttp(page) ? '<p><a href="https://web.archive.org/web/*/' + esc(fixU(page)) + '" rel="nofollow noopener" target="_blank">' + esc(tr(lang, 'src_archive')) + '</a></p>' : '');
 
   const crumbs = [[tr(lang, 'crumb_home'), ORIGIN + pre(lang) + '/'], [tr(lang, 'crumb_projects'), ORIGIN + pre(lang) + '/projects/'], [x.mk, ORIGIN + '/m/' + slugM(x.mk) + '/'], [name, canon]];
-  const toc = [['glance', 's_glance'], ['promise', 's_promise'], ['ppm', 's_ppm_toc'], ['delivery', 's_delivery'], ['permits', 's_permits'], ['checks', 's_checks'], ['claims', 's_claims'], ['history', 's_history'], ['reports', 's_reports'], ['developer', 's_devsec'], ['reviews', 's_reviews'], ['reply', 's_reply'], ['faq', 's_faq'], ['sources', 's_sources']];
+  const toc = [['glance', 's_glance'], ['promise', 's_promise'], ['ppm', 's_ppm_toc'], ['delivery', 's_delivery'], ...(satHtml ? [['space', null]] : []), ['permits', 's_permits'], ['checks', 's_checks'], ['claims', 's_claims'], ['history', 's_history'], ['reports', 's_reports'], ['developer', 's_devsec'], ['reviews', 's_reviews'], ['reply', 's_reply'], ['faq', 's_faq'], ['sources', 's_sources']];
   const body = '<section class="phero kp"><div class="wrap"><p class="crumb">' + crumbs.slice(0, 3).map(([l, u]) => '<a href="' + esc(u.replace(ORIGIN, '')) + '">' + esc(l) + '</a>').join(' / ') + '</p>' +
     '<h1>' + h1x(tr(lang, 'h1_p', { n: name }), name) + '</h1><p class="lead">' + esc(tr(lang, 'lead_p', { n: name, place })) + '</p>' + keys + watchBox(lang, x.id, name, '/projects/' + x.s + '/') + '</div></section>' +
-    '<div class="wrap kwrap"><nav class="ktoc" aria-label="' + esc(tr(lang, 's_glance')) + '">' + toc.map(([i, k]) => '<a href="#' + i + '">' + esc(tr(lang, k)) + '</a>').join('') + '</nav>' +
-    sec('glance', esc(tr(lang, 's_glance')), '<ul class="fl glance">' + g.join('') + '</ul>') + sec('promise', esc(tr(lang, 's_promise')), promised) + sec('ppm', esc(tr(lang, 's_ppm')), ppmSection(x, lang).html) + sec('delivery', esc(tr(lang, 's_delivery')), delivery) +
+    '<div class="wrap kwrap"><nav class="ktoc" aria-label="' + esc(tr(lang, 's_glance')) + '">' + toc.map(([i, k]) => '<a href="#' + i + '">' + esc(k ? tr(lang, k) : satToc(lang)) + '</a>').join('') + '</nav>' +
+    sec('glance', esc(tr(lang, 's_glance')), '<ul class="fl glance">' + g.join('') + '</ul>') + sec('promise', esc(tr(lang, 's_promise')), promised) + sec('ppm', esc(tr(lang, 's_ppm')), ppmSection(x, lang).html) + sec('delivery', esc(tr(lang, 's_delivery')), delivery) + (satHtml ? sec('space', esc(satHeading(lang)), satHtml) : '') +
     sec('permits', esc(tr(lang, 's_permits')), permits) + sec('checks', esc(tr(lang, 's_checks')), checks) + sec('claims', esc(tr(lang, 's_claims')), claims) + sec('history', esc(tr(lang, 's_history')), history) +
     sec('reports', esc(tr(lang, 's_reports')), reports) + sec('developer', esc(tr(lang, 's_devsec')), devsec) + (similar ? sec('similar', esc(tr(lang, 's_similar')), similar) : '') +
     sec('market', esc(tr(lang, 's_market', { mk: x.mk })), market) + sec('reviews', esc(tr(lang, 's_reviews')), reviews) + sec('reply', esc(tr(lang, 's_reply')), reply) +
@@ -499,7 +503,8 @@ export async function render(ix, kind, key, lang, env, ctx) {   // exported for 
     let replies = [];
     try { const k = new Request(ORIGIN + '/__named_dr/v1/' + x.id + '/' + (await repliesPublished())), hit = await caches.default.match(k); if (hit) replies = await hit.json(); else { replies = (await rpc('kolaboro_devreply_public', { p_id: x.id })) || []; const p = caches.default.put(k, new Response(JSON.stringify(replies), { headers: { 'cache-control': 'max-age=3600' } })); if (ctx && ctx.waitUntil) ctx.waitUntil(p.catch(() => {})); } } catch (e) { replies = []; }
     let ph = null, phErr = false; try { ph = await phSummary(env, x.id); } catch (e) { ph = null; phErr = true; }
-    const pg = projectPage(ix, x, lang, { reviews, replies, ph }); if (phErr) pg.nocache = true;   // page history not loaded: do not cache
+    let sat = null; try { sat = await satData(env); } catch (e) { sat = null; }
+    const pg = projectPage(ix, x, lang, { reviews, replies, ph, sat }); if (phErr) pg.nocache = true;   // page history not loaded: do not cache
     return pg;
   }
   const dv = ix.devs.get(key); if (!dv) return null;
@@ -521,7 +526,7 @@ export async function handle(req, u, env, ctx, shell) {
   if (key && kind === 'developers' && RESERVED.has(key)) return null;   // /developers/reply/ etc. stay static
   if (!p.endsWith('/')) return new Response(null, { status: 301, headers: { location: p + '/' + u.search, 'cache-control': 'public, max-age=86400' } });
   let ix; try { ix = await data(env); } catch (e) { return null; }
-  const ck = new Request(ORIGIN + '/__named_html/' + CACHE_V + '/' + encodeURIComponent(ix.updated + '|' + (ix.named.count || 0) + '|' + ix.P.length + '|' + (ix.named.updated || '') + '|r' + (key && kind === 'projects' ? await repliesPublished() : 0)) + p);
+  const ck = new Request(ORIGIN + '/__named_html/' + CACHE_V + '/' + encodeURIComponent(ix.updated + '|' + (ix.named.count || 0) + '|' + ix.P.length + '|' + (ix.named.updated || '') + '|r' + (key && kind === 'projects' ? await repliesPublished() : 0) + '|s' + (key && kind === 'projects' ? (((await satData(env).catch(() => null)) || {}).updated || '') : '')) + p);
   try { const hit = await caches.default.match(ck); if (hit) return new Response(hit.body, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'x-named-cache': 'hit', 'cache-control': 'no-cache' } }); } catch (e) {}
   const pg = await render(ix, key ? kind : 'i', key, lang, env, ctx);
   const sh = await shell(pre(lang) + '/how-we-score/');
