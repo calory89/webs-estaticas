@@ -12,7 +12,7 @@
   function esc(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]; }); }
   function surl(u){ u = String(u == null ? '' : u).trim(); return /^https?:\/\//i.test(u) ? esc(u) : '#'; }
   function day(t){ return t ? String(t).slice(0, 10) : ''; }
-  function today(){ return new Date().toISOString().slice(0, 10); }
+  function today(){ var d = new Date(); return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }   // local date: next actions and due dates are the admin's own calendar days
   function daysSince(t){ return t ? Math.max(0, Math.floor((Date.now() - new Date(t)) / 864e5)) : null; }
   function ago(t){ if (!t) return ''; var s = (Date.now() - new Date(t)) / 1000; if (s < 3600) return Math.max(1, Math.round(s / 60)) + ' min ago'; if (s < 86400) return Math.round(s / 3600) + ' h ago'; return Math.round(s / 86400) + ' d ago'; }
   function num(n){ return (+n || 0).toLocaleString(undefined, { maximumFractionDigits: 2 }); }

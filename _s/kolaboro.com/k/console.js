@@ -17,14 +17,23 @@
 
   // ---------- toasts: one live region, stacked, dismissable, errors stay longer
   var tz = D.createElement('div'); tz.className = 'kc-toasts'; tz.setAttribute('role', 'status'); tz.setAttribute('aria-live', 'polite');
-  function toast(msg, kind) {
+  // toast(msg, kind, {action:'Undo', onAction:fn, ms}): an action button (e.g. Undo) keeps the toast up for 8 s by default
+  function toast(msg, kind, o) {
+    o = o || {};
     if (!tz.isConnected) D.body.appendChild(tz);
     var t = D.createElement('div'); t.className = 'kc-toast' + (kind ? ' ' + kind : '');
     var s = D.createElement('span'); s.textContent = String(msg == null ? '' : msg); t.appendChild(s);
+    function gone() { t.classList.remove('on'); setTimeout(function () { t.remove(); }, 300); }
+    if (o.action && typeof o.onAction === 'function') {
+      var a = D.createElement('button'); a.type = 'button'; a.className = 'kc-tact'; a.textContent = o.action;
+      a.onclick = function () { a.disabled = true; try { o.onAction(); } finally { gone(); } }; t.appendChild(a);
+    }
     var x = D.createElement('button'); x.type = 'button'; x.setAttribute('aria-label', 'Dismiss'); x.textContent = '×'; x.onclick = function () { t.remove(); }; t.appendChild(x);
     tz.appendChild(t); while (tz.children.length > 4) tz.firstChild.remove();
     requestAnimationFrame(function () { t.classList.add('on'); });
-    setTimeout(function () { t.classList.remove('on'); setTimeout(function () { t.remove(); }, 300); }, kind === 'bad' ? 7000 : 3200);
+    var ms = o.ms || (o.action ? 8000 : kind === 'bad' ? 7000 : 3200), tm = setTimeout(gone, ms);
+    t.addEventListener('mouseenter', function () { clearTimeout(tm); }); t.addEventListener('mouseleave', function () { clearTimeout(tm); tm = setTimeout(gone, 2500); });
+    t.addEventListener('focusin', function () { clearTimeout(tm); });
     return t;
   }
 
@@ -68,8 +77,8 @@
   var lt = 0; function soon() { clearTimeout(lt); lt = setTimeout(function () { labelTables(); if (ADMIN) groupNav(); }, 120); }
 
   // ---------- admin side navigation, grouped by job
-  var GROUPS = [['Today', ['ov', 'inbox', 'crm']], ['Sales', ['pipe', 'cust', 'leads']], ['Delivery', ['board', 'clients', 'ops', 'agents']], ['Money', ['pay']], ['Insight', ['growth', 'reports', 'audits', 'graph', 'tools']], ['System', ['tests']]];
-  var KEYS = { o: 'ov', i: 'inbox', c: 'crm', p: 'pipe', u: 'cust', l: 'leads', b: 'board', k: 'clients', e: 'ops', a: 'agents', m: 'pay', g: 'growth', r: 'reports', t: 'tests', y: 'tools' };
+  var GROUPS = [['Today', ['today', 'ov', 'inbox', 'crm']], ['Sales', ['pipe', 'cust', 'leads', 'xrays']], ['Delivery', ['board', 'clients', 'ops', 'agents']], ['Money', ['pay']], ['Insight', ['traffic', 'growth', 'reports', 'audits', 'graph', 'tools']], ['System', ['tests']]];
+  var KEYS = { h: 'today', o: 'ov', i: 'inbox', c: 'crm', p: 'pipe', u: 'cust', l: 'leads', x: 'xrays', b: 'board', k: 'clients', e: 'ops', a: 'agents', m: 'pay', g: 'growth', r: 'reports', t: 'tests', y: 'tools' };
   var grouped = '';
   function groupNav() {
     var nav = D.querySelector('nav.tabs'); if (!nav) return;
@@ -93,7 +102,7 @@
   // ---------- keyboard: g + letter jumps (admin), / search, ? help, d density, r refresh
   var pending = 0;
   function help() {
-    var rows = ADMIN ? [['/', 'Search in this section'], ['Ctrl K', 'Search everything'], ['g then o', 'Overview'], ['g then i', 'Inbox'], ['g then c', 'CRM'], ['g then p', 'Pipeline'], ['g then u', 'Customers'], ['g then l', 'Leads and emails'], ['g then b', 'Cases board'], ['g then k', 'Clients'], ['g then e', 'Operations'], ['g then a', 'Agents'], ['g then m', 'Payments'], ['g then t', 'Tests and health'], ['r', 'Refresh the data'], ['d', 'Compact or comfortable rows'], ['Esc', 'Close a customer record or this sheet'], ['?', 'Show this sheet']]
+    var rows = ADMIN ? [['/', 'Search in this section'], ['Ctrl K', 'Search everything and run commands'], ['g then h', 'Today'], ['g then o', 'Overview'], ['g then i', 'Inbox'], ['g then c', 'CRM'], ['g then p', 'Pipeline'], ['g then u', 'Customers'], ['g then l', 'Leads and emails'], ['g then x', 'X-rays'], ['g then b', 'Cases board'], ['g then k', 'Clients'], ['g then e', 'Operations'], ['g then a', 'Agents'], ['g then m', 'Payments'], ['g then t', 'Tests and health'], ['r', 'Refresh the data'], ['d', 'Compact or comfortable rows'], ['j / k', 'Next or previous item in Today'], ['Ctrl Z', 'Undo the last inline change (CRM)'], ['Esc', 'Close a customer record or this sheet'], ['?', 'Show this sheet']]
       : [['n', 'Open a new case'], ['m', 'Go to messages'], ['d', 'Compact or comfortable layout'], ['Ctrl Enter', 'Send a message'], ['?', 'Show this sheet']];
     modal('Keyboard shortcuts', '<dl class="kc-keys">' + rows.map(function (r) { return '<dt>' + r[0].split(' ').map(function (k) { return k === 'then' ? '<span>then</span>' : '<kbd>' + k + '</kbd>'; }).join(' ') + '</dt><dd>' + r[1] + '</dd>'; }).join('') + '</dl>');
   }

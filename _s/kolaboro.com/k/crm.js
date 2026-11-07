@@ -12,7 +12,7 @@
   function stOf(l){ var s = l.status || 'new'; return LEGACY[s] || (ST.some(function(x){ return x[0] === s; }) ? s : 'new'); }
   function isTest(l){ return /(^|@)(test|example)\b|@example\.com$/i.test(l.email || ''); }
   function day(t){ return t ? String(t).slice(0, 10) : ''; }
-  function today(){ return new Date().toISOString().slice(0, 10); }
+  function today(){ var d = new Date(); return d.getFullYear() + '-' + ('0' + (d.getMonth() + 1)).slice(-2) + '-' + ('0' + d.getDate()).slice(-2); }   // local date: next actions and due dates are the admin's own calendar days
   function ago(t){ if (!t) return ''; var s = (Date.now() - new Date(t)) / 1000; if (s < 3600) return Math.max(1, Math.round(s / 60)) + ' min'; if (s < 86400) return Math.round(s / 3600) + ' h'; return Math.round(s / 86400) + ' d'; }
   function src(l){ return l.src || l.source || 'direct'; }
   function has(){ return D && D.kpi !== undefined; }
@@ -146,18 +146,71 @@
         col.addEventListener('drop', function(e){ e.preventDefault(); col.classList.remove('drop'); var id = e.dataTransfer.getData('text/plain'); if (id) setStatus(id, col.dataset.st); });
       });
     } else {
-      el.innerHTML = '<div class="card"><div class="row" id="crm-bulk" style="margin-bottom:8px"><span class="muted" id="crm-bn">0 selected</span><select id="crm-bs"><option value="">Move selected to…</option>' + ST.map(function(s){ return '<option value="' + s[0] + '">' + s[1] + '</option>'; }).join('') + '</select><button class="btn2" id="crm-bx">Export selected</button><button class="btn2" id="crm-bm">Email selected (BCC)</button></div><div class="tw"><table><tr><th><input type="checkbox" id="crm-ba" aria-label="Select all"></th><th>Priority</th><th>When</th><th>Name</th><th>Stage</th><th>Type</th><th>Source</th><th>Next</th><th>Value</th></tr>' + F.sort(function(a, b){ return prio(b).n - prio(a).n; }).map(function(l){ var pr = prio(l); return '<tr data-open="' + l.id + '" style="cursor:pointer"><td><input type="checkbox" data-pick="' + l.id + '"' + (PICK[l.id] ? ' checked' : '') + '></td><td><span class="crm-pr ' + pr.lvl + '" style="float:none" title="' + esc(pr.why) + '">' + pr.n + '</span></td><td>' + esc(day(l.created_at)) + '</td><td><b>' + esc(l.name) + '</b><br><small class="muted">' + esc(l.email) + '</small></td><td>' + esc(stOf(l)) + '</td><td>' + esc(l.plan || 'other') + '</td><td>' + esc(src(l)) + '</td><td>' + esc(l.next_action || '') + '</td><td>' + (l.value_eur ? '€' + esc(l.value_eur) : '') + '</td></tr>'; }).join('') + '</table></div></div>';
-      var upd = function(){ $('crm-bn').textContent = Object.keys(PICK).length + ' selected'; };
+      var H = has(), stSel = function(l){ return '<select class="crm-ie" data-ie="' + l.id + '|status" aria-label="Stage of ' + esc(l.name || l.email) + '">' + ST.map(function(s){ return '<option value="' + s[0] + '"' + (stOf(l) === s[0] ? ' selected' : '') + '>' + s[1] + '</option>'; }).join('') + '</select>'; };
+      el.innerHTML = '<div class="card"><div class="row crm-bulk" id="crm-bulk" style="margin-bottom:8px"><span class="muted" id="crm-bn" aria-live="polite">0 selected</span>' +
+        '<select id="crm-bs" aria-label="Move selected to stage"><option value="">Move selected to…</option>' + ST.map(function(s){ return '<option value="' + s[0] + '">' + s[1] + '</option>'; }).join('') + '</select>' +
+        (H ? '<label class="crm-bl">Next action <input type="date" id="crm-bd" aria-label="Set next action date for selected"></label><button class="btn2" id="crm-bdg" type="button">Set date</button><input id="crm-btg" placeholder="tag" aria-label="Tag to add to selected" style="width:110px"><button class="btn2" id="crm-btga" type="button">Add tag</button><button class="btn2" id="crm-btgr" type="button">Remove tag</button>' : '') +
+        '<button class="btn2" id="crm-bx" type="button">Export selected</button><button class="btn2" id="crm-bm" type="button">Email selected (BCC)</button><button class="btn2" id="crm-bc" type="button">Clear selection</button></div>' +
+        '<p class="muted crm-ieh">Stage, next action and value save as you change them. Undo from the message that appears, or Ctrl+Z.</p>' +
+        '<div class="tw"><table class="crm-lt"><tr><th><input type="checkbox" id="crm-ba" aria-label="Select all shown"></th><th>Priority</th><th>When</th><th>Name</th><th>Stage</th><th>Type</th><th>Source</th><th>Next</th><th>Value</th></tr>' + F.sort(function(a, b){ return prio(b).n - prio(a).n; }).map(function(l){ var pr = prio(l);
+          return '<tr data-open="' + l.id + '" style="cursor:pointer"><td><input type="checkbox" data-pick="' + l.id + '"' + (PICK[l.id] ? ' checked' : '') + ' aria-label="Select ' + esc(l.name || l.email) + '"></td><td><span class="crm-pr ' + pr.lvl + '" style="float:none" title="' + esc(pr.why) + '">' + pr.n + '</span></td><td>' + esc(day(l.created_at)) + '</td><td><b>' + esc(l.name) + '</b><br><small class="muted">' + esc(l.email) + '</small></td><td>' + stSel(l) + '</td><td>' + esc(l.plan || 'other') + '</td><td>' + esc(src(l)) + '</td>' +
+            '<td>' + (H ? '<input type="date" class="crm-ie" data-ie="' + l.id + '|next_action" value="' + esc(l.next_action || '') + '" aria-label="Next action for ' + esc(l.name || l.email) + '"' + (l.next_action && l.next_action <= today() && ['won','lost'].indexOf(stOf(l)) < 0 ? ' data-due="1"' : '') + '>' : esc(l.next_action || '')) + '</td>' +
+            '<td>' + (H ? '<input type="number" min="0" step="1" class="crm-ie crm-iev" data-ie="' + l.id + '|value_eur" value="' + esc(l.value_eur || '') + '" placeholder="€" aria-label="Deal value in euros for ' + esc(l.name || l.email) + '">' : (l.value_eur ? '€' + esc(l.value_eur) : '')) + '</td></tr>'; }).join('') + '</table></div></div>';
+      var upd = function(){ var n = Object.keys(PICK).length; $('crm-bn').textContent = n + ' selected'; $('crm-bulk').classList.toggle('on', n > 0); };
       el.querySelectorAll('[data-pick]').forEach(function(c){ c.onclick = function(e){ e.stopPropagation(); if (c.checked) PICK[c.dataset.pick] = 1; else delete PICK[c.dataset.pick]; upd(); }; });
+      el.querySelectorAll('.crm-ie').forEach(function(c){ c.addEventListener('click', function(e){ e.stopPropagation(); }); c.addEventListener('keydown', function(e){ e.stopPropagation(); if (e.key === 'Enter' && c.tagName === 'INPUT') c.blur(); }); c.addEventListener('change', function(){ var p = c.dataset.ie.split('|'), o = {}; o[p[1]] = c.value; edit([p[0]], o, 'inline'); }); });
       $('crm-ba').onclick = function(e){ e.stopPropagation(); F.forEach(function(l){ if (e.target.checked) PICK[l.id] = 1; else delete PICK[l.id]; }); body(); };
-      $('crm-bs').onchange = function(){ var v = this.value, ids = Object.keys(PICK); if (!v || !ids.length) return; if (!confirm('Move ' + ids.length + ' lead(s) to ' + v + '?')) return; Promise.all(ids.map(function(id){ return A.rpc('kolaboro_admin', { p_key: A.pw(), p_action: has() ? 'lead_update' : 'set_status', p_payload: { id: id, status: v } }); })).then(function(){ PICK = {}; A.reload(); }); };
-      $('crm-bx').onclick = function(){ csv(leads().filter(function(l){ return PICK[l.id]; })); };
-      $('crm-bm').onclick = function(){ var em = leads().filter(function(l){ return PICK[l.id] && l.email; }).map(function(l){ return l.email; }); if (em.length) location.href = 'mailto:?bcc=' + encodeURIComponent(em.join(',')); };
+      var picked = function(){ var ids = Object.keys(PICK).filter(function(id){ return leads().some(function(l){ return l.id === id; }); }); if (!ids.length) toast('Select one or more leads first.', 'info'); return ids; };
+      $('crm-bs').onchange = function(){ var v = this.value, ids = picked(); this.value = ''; if (!v || !ids.length) return; edit(ids, { status: v }, 'bulk'); };
+      if (H) {
+        $('crm-bdg').onclick = function(){ var v = $('crm-bd').value, ids = picked(); if (!ids.length) return; if (!v) { toast('Pick a date first.', 'info'); $('crm-bd').focus(); return; } edit(ids, { next_action: v }, 'bulk'); };
+        var tagOp = function(add){ var t = String($('crm-btg').value || '').trim().toLowerCase().slice(0, 30), ids = picked(); if (!ids.length) return; if (!t) { toast('Type a tag first.', 'info'); $('crm-btg').focus(); return; }
+          edit(ids, function(l){ var cur = (l.tags || []).slice(); if (add && cur.indexOf(t) < 0) cur.push(t); if (!add) cur = cur.filter(function(x){ return x !== t; }); return { tags: cur }; }, 'bulk', (add ? 'added tag ' : 'removed tag ') + t); };
+        $('crm-btga').onclick = function(){ tagOp(true); }; $('crm-btgr').onclick = function(){ tagOp(false); };
+      }
+      $('crm-bx').onclick = function(){ var ids = picked(); if (ids.length) csv(leads().filter(function(l){ return PICK[l.id]; })); };
+      $('crm-bm').onclick = function(){ var em = leads().filter(function(l){ return PICK[l.id] && l.email; }).map(function(l){ return l.email; }); if (em.length) location.href = 'mailto:?bcc=' + encodeURIComponent(em.join(',')); else toast('Select one or more leads first.', 'info'); };
+      $('crm-bc').onclick = function(){ PICK = {}; body(); };
       upd();
+      if (FOCUS) { var fe = el.querySelector('[data-ie="' + FOCUS + '"]'); FOCUS = null; if (fe) fe.focus(); }
     }
   }
+  // ---------- inline and bulk edits: optimistic, saved through lead_update (or set_status before the CRM update), undoable
+  var UNDO = [], FOCUS = null, RL = 0;
+  function toast(m, k, o){ if (window.KBUI) return KBUI.toast(m, k, o); if (k === 'bad') alert(m); }
+  function snap(l){ return { status: stOf(l), next_action: l.next_action || '', value_eur: l.value_eur == null ? '' : String(l.value_eur), tags: (l.tags || []).slice() }; }
+  function apply(l, o){ Object.keys(o).forEach(function(k){ l[k] = k === 'value_eur' ? (o[k] === '' ? null : +o[k]) : k === 'next_action' ? (o[k] || null) : o[k]; }); }
+  function save(id, o){ var H = has(); if (!H) { if (!o.status) return Promise.resolve({ error: 'needs the CRM database update' }); return A.rpc('kolaboro_admin', { p_key: A.pw(), p_action: 'set_status', p_payload: { id: id, status: o.status } }); }
+    var pl = { id: id }; Object.keys(o).forEach(function(k){ pl[k] = o[k]; }); return A.rpc('kolaboro_admin', { p_key: A.pw(), p_action: 'lead_update', p_payload: pl }); }
+  function laterReload(){ clearTimeout(RL); RL = setTimeout(function(){ var a = document.activeElement; if (a && a.closest && a.closest('#crm-body .crm-ie, .crm-drawer form')) return laterReload(); A.reload(); }, 6000); }
+  function words(o){ return Object.keys(o).map(function(k){ return k === 'status' ? 'stage ' + ((ST.filter(function(s){ return s[0] === o[k]; })[0] || [0, o[k]])[1]) : k === 'next_action' ? (o[k] ? 'next action ' + o[k] : 'next action cleared') : k === 'value_eur' ? (o[k] !== '' ? 'value €' + o[k] : 'value cleared') : 'tags ' + ((o[k] || []).join(', ') || 'none'); }).join(', '); }
+  // ids: lead ids; change: {field: value} or function(lead) -> {field: value}; how: 'inline' | 'bulk' | 'undo'
+  function edit(ids, change, how, label){
+    var L = leads(), jobs = [], before = [], after = [];
+    var a = document.activeElement; FOCUS = a && a.dataset && a.dataset.ie || null;
+    ids.forEach(function(id){ var l = L.filter(function(x){ return x.id === id; })[0]; if (!l) return; var o = typeof change === 'function' ? change(l) : change, prev = snap(l), b = {};
+      Object.keys(o).forEach(function(k){ b[k] = prev[k]; }); if (JSON.stringify(b) === JSON.stringify(o)) return; before.push({ id: id, o: b }); after.push({ id: id, o: o }); apply(l, o); });
+    if (!after.length) { if (how !== 'undo') toast('Nothing to change.', 'info'); return Promise.resolve(); }
+    if (how === 'bulk' && after.length > 1 && !confirm('Change ' + (label || words(after[0].o)) + ' on ' + after.length + ' leads?')) { before.forEach(function(x){ var l = L.filter(function(y){ return y.id === x.id; })[0]; if (l) apply(l, x.o); }); return Promise.resolve(); }
+    body();
+    after.forEach(function(x){ jobs.push(save(x.id, x.o).then(function(d){ return { id: x.id, ok: !(d && d.error), err: d && d.error && (A.err ? A.err(d) : d.error) }; }, function(){ return { id: x.id, ok: false, err: 'network' }; })); });
+    return Promise.all(jobs).then(function(r){
+      var bad = r.filter(function(x){ return !x.ok; }), good = r.filter(function(x){ return x.ok; });
+      bad.forEach(function(x){ var b = before.filter(function(y){ return y.id === x.id; })[0], l = leads().filter(function(y){ return y.id === x.id; })[0]; if (b && l) apply(l, b.o); });
+      if (bad.length) { body(); toast((good.length ? good.length + ' saved, ' : '') + bad.length + ' not saved. ' + (bad[0].err || ''), 'bad'); }
+      var ok = before.filter(function(b){ return good.some(function(g){ return g.id === b.id; }); });
+      if (good.length && how !== 'undo') { UNDO.push(ok); if (UNDO.length > 20) UNDO.shift();
+        var who = good.length === 1 ? (function(){ var l = leads().filter(function(y){ return y.id === good[0].id; })[0]; return l ? (l.name || l.email) : 'lead'; })() : good.length + ' leads';
+        toast('Saved ' + (label || words(after[0].o)) + ' for ' + who + '.', 'ok', { action: 'Undo', onAction: function(){ undo(ok); } }); }
+      if (good.length && how === 'undo') toast('Undone.', 'ok');
+      if (good.length) laterReload();
+    });
+  }
+  function undo(set){ if (!set) set = UNDO.pop(); else UNDO = UNDO.filter(function(x){ return x !== set; }); if (!set || !set.length) { toast('Nothing to undo.', 'info'); return; }
+    var by = {}; set.forEach(function(x){ by[x.id] = x.o; }); edit(Object.keys(by), function(l){ return by[l.id]; }, 'undo'); }
+  document.addEventListener('keydown', function(e){ if ((e.ctrlKey || e.metaKey) && !e.shiftKey && e.key.toLowerCase() === 'z' && !sec.classList.contains('hide') && !(e.target.closest && e.target.closest('input:not([type=checkbox]),textarea,select'))) { if (UNDO.length) { e.preventDefault(); undo(); } } });
   sec.addEventListener('click', function(e){ var o = e.target.closest('[data-open]'); if (o) { e.preventDefault(); open(o.dataset.open); } });
-  function setStatus(id, s){ return act(has() ? 'lead_update' : 'set_status', { id: id, status: s }); }
+  function setStatus(id, s){ return edit([id], { status: s }, 'inline'); }
 
   function open(id, keep){
     var l = leads().filter(function(x){ return x.id === id; })[0]; if (!l) { close(); return; }
@@ -194,9 +247,13 @@
   }
   function csv(rows){
     var F = Array.isArray(rows) ? rows : filtered(), c = ['created_at','name','email','phone','country','plan','status','src','medium','campaign','referrer','landing','learn','who','bring','tags','next_action','value_eur'];
-    var t = c.join(',') + '\n' + F.map(function(l){ return c.map(function(k){ var v = k === 'status' ? stOf(l) : k === 'tags' ? (l.tags || []).join('|') : l[k]; v = String(v == null ? '' : v); if (/^[\s]*[=+\-@\t\r]/.test(v)) v = "'" + v; return '"' + v.replace(/"/g, '""') + '"'; }).join(','); }).join('\n');
-    var a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([t], { type: 'text/csv' })); a.download = 'kolaboro-crm-' + today() + '.csv'; a.click();
+    var cell = A.csvCell || function(v){ v = String(v == null ? '' : v); if (/^[\s]*[=+\-@\t\r]/.test(v)) v = "'" + v; return '"' + v.replace(/"/g, '""') + '"'; };
+    var t = c.join(',') + '\r\n' + F.map(function(l){ return c.map(function(k){ return cell(k === 'status' ? stOf(l) : k === 'tags' ? (l.tags || []).join('|') : l[k]); }).join(','); }).join('\r\n');
+    if (A.csvSave) return A.csvSave('kolaboro-crm', t);
+    var a = document.createElement('a'); a.href = URL.createObjectURL(new Blob(['\ufeff' + t], { type: 'text/csv;charset=utf-8' })); a.download = 'kolaboro-crm-' + today() + '.csv'; document.body.appendChild(a); a.click(); a.remove();
   }
+  // other admin modules (Today, palette, saved views) use these
+  window.KBCRM = { open: function(id){ var b = document.querySelector('nav.tabs button[data-t=crm]'); if (b && !b.classList.contains('on')) b.click(); open(id); }, edit: edit, undo: undo, stOf: stOf, prio: function(l){ DUP = DUP || {}; return prio(l); }, has: has, list: function(){ VIEW = 'list'; render(); } };
   document.addEventListener('kbadm', function(e){ D = e.detail; render(); });
   if (A.D) { D = A.D; render(); }
   setTimeout(function(){ try { var t = localStorage.getItem('kb-adm-tab'), b = t && document.querySelector('nav.tabs button[data-t="' + t + '"]'); if (b) b.click(); } catch (x) {} }, 0);

@@ -60,8 +60,11 @@
     ta.addEventListener('input', function(){ st('kb-ib-draft-' + c.id, ta.value); });
     ta.addEventListener('keydown', function(e){ if (e.key === 'Enter' && (e.metaKey || e.ctrlKey)) f.requestSubmit(); });
     d.querySelectorAll('[data-sn]').forEach(function(b){ b.onclick = function(){ ta.value = (ta.value ? ta.value + '\n\n' : '') + SNIP[+b.dataset.sn][1]; ta.focus(); st('kb-ib-draft-' + c.id, ta.value); }; });
-    f.onsubmit = function(e){ e.preventDefault(); var v = ta.value.trim(); if (!v) return; f.querySelector('button').disabled = true;
-      A.rpc('kolaboro_admin', { p_key: A.pw(), p_action: 'admin_message', p_payload: { case_id: c.id, body: v } }).then(function(){ try { localStorage.removeItem('kb-ib-draft-' + c.id); } catch (x) {} A.reload(); }); };
+    f.onsubmit = function(e){ e.preventDefault(); var v = ta.value.trim(), sb = f.querySelector('button'); if (!v || sb.disabled) return; sb.disabled = true;
+      // keep the draft until the server confirms: a failed send used to drop the reply silently
+      A.rpc('kolaboro_admin', { p_key: A.pw(), p_action: 'admin_message', p_payload: { case_id: c.id, body: v } }).then(function(d){
+        if (d && d.error) { sb.disabled = false; if (d.error !== 'denied') (window.KBUI ? KBUI.toast : function(m){ alert(m); })('Reply not sent. ' + (A.err ? A.err(d) : d.error) + ' Your text is kept.', 'bad'); return; }
+        try { localStorage.removeItem('kb-ib-draft-' + c.id); } catch (x) {} if (window.KBUI) KBUI.toast('Reply sent to ' + (u.name || u.email) + '.', 'ok'); A.reload(); }); };
     $('ib-case').onclick = function(){ var b = document.querySelector('nav.tabs button[data-t=clients]'); if (b) b.click(); var x = document.querySelector('[data-cs="' + c.id + '"]'); if (x) x.click(); };
     if (t.unread) A.rpc('kolaboro_admin', { p_key: A.pw(), p_action: 'mark_read', p_payload: { case_id: c.id } });
   }
@@ -80,31 +83,67 @@
     box.innerHTML = '<h2>Last 12 weeks</h2><div class="g-leg"><span><i style="background:#F6B08F"></i>Leads</span><span><i style="background:#3B6FD8"></i>Accounts</span><span><i style="background:var(--ok)"></i>Payments</span></div><div class="wk">' + W.map(function(k){ var x = m[k]; return '<div title="Week of ' + k + ': ' + x.a + ' leads, ' + x.b + ' accounts, ' + x.c + ' payments"><div style="display:flex;gap:2px;align-items:flex-end;height:130px"><i class="a" style="flex:1;height:' + (100 * x.a / mx) + '%"></i><i class="b" style="flex:1;height:' + (100 * x.b / mx) + '%"></i><i class="c" style="flex:1;height:' + (100 * x.c / mx) + '%"></i></div><span>' + k.slice(5) + '</span></div>'; }).join('') + '</div>';
   }
 
-  // ---------- Command palette
-  var pal = document.createElement('div'); pal.className = 'cmdk'; pal.hidden = true; pal.innerHTML = '<div class="box" role="dialog" aria-label="Search everything"><input id="cmdk-q" placeholder="Search leads, clients, cases, tabs…" autocomplete="off"><ul id="cmdk-l"></ul></div>'; document.body.appendChild(pal);
-  var IDX = 0, ITEMS = [];
-  function items(q){
-    q = q.toLowerCase(); var out = [];
-    document.querySelectorAll('nav.tabs button').forEach(function(b){ var n = b.textContent.replace(/\d+/g, '').trim(); out.push({ t: n, s: 'Tab', go: function(){ b.click(); } }); });
-    (D && D.leads || []).forEach(function(l){ out.push({ t: (l.name || '') + ' · ' + (l.email || ''), s: 'Lead · ' + (l.plan || '') + ' · ' + (l.status || 'new'), k: [l.name, l.email, l.learn, l.country, (l.tags || []).join(' ')].join(' '), go: function(){ var b = document.querySelector('nav.tabs button[data-t=crm]'); if (b) b.click(); setTimeout(function(){ var c = document.querySelector('[data-open="' + l.id + '"]'); if (c) c.click(); }, 50); } }); });
-    (D && D.users || []).forEach(function(u){ (u.cases || []).forEach(function(c){ out.push({ t: (c.project_name || c.code) + ' · ' + (u.name || u.email), s: 'Case ' + c.code + ' · stage ' + c.stage, k: [u.name, u.email, c.code, c.project_name, c.project_url].join(' '), go: function(){ SEL = c.id; tb.click(); inbox(); } }); }); });
-    [['New payment', 'pay'], ['Run health checks', 'tests']].forEach(function(x){ out.push({ t: x[0], s: 'Action', go: function(){ var b = document.querySelector('nav.tabs button[data-t=' + x[1] + ']'); if (b) b.click(); } }); });
-    if (!q) return out.filter(function(x){ return x.s === 'Tab'; });
-    return out.filter(function(x){ return (x.t + ' ' + (x.k || '') + ' ' + x.s).toLowerCase().indexOf(q) >= 0; }).slice(0, 40);
+  // ---------- Command palette (Ctrl/Cmd+K): commands, tabs, leads, customers, cases, plus whatever other modules register
+  // through window.KBPAL.add(fn(q) -> [{t, s, k, go, cmd}]). Ranked: exact/prefix > word start > anywhere. ">" lists commands only.
+  var pal = document.createElement('div'); pal.className = 'cmdk'; pal.hidden = true;
+  pal.innerHTML = '<div class="box" role="dialog" aria-modal="true" aria-label="Search and commands"><input id="cmdk-q" role="combobox" aria-expanded="true" aria-controls="cmdk-l" aria-autocomplete="list" placeholder="Search leads, customers, cases, X-rays… or type > for commands" autocomplete="off" spellcheck="false"><ul id="cmdk-l" role="listbox" aria-label="Results"></ul><p class="cmdk-f"><span><kbd>↑</kbd><kbd>↓</kbd> move</span><span><kbd>Enter</kbd> open</span><span><kbd>Esc</kbd> close</span><span><kbd>&gt;</kbd> commands</span></p></div>'; document.body.appendChild(pal);
+  var IDX = 0, ITEMS = [], PREV = null, PROV = [];
+  window.KBPAL = { add: function(fn){ if (typeof fn === 'function') PROV.push(fn); }, open: function(q){ openPal(q); } };
+  function tabBtn(t){ return document.querySelector('nav.tabs button[data-t="' + t + '"]'); }
+  function goTab(t){ var b = tabBtn(t); if (b) { if (/^#c=/.test(location.hash)) history.pushState(null, '', location.pathname); b.click(); } }
+  function cmds(){
+    var c = [
+      ['Go to Today', function(){ goTab('today'); }, 'home due tasks calls'],
+      ['Refresh data', function(){ var r = $('rf'); if (r) r.click(); }, 'reload'],
+      ['Record a payment', function(){ goTab('pay'); setTimeout(function(){ var f = document.querySelector('#pform input[name=amount]'); if (f) f.focus(); }, 60); }, 'add payment paypal'],
+      ['Reply to clients waiting', function(){ st('kb-ib-f', 'waiting'); goTab('inbox'); inbox(); }, 'inbox messages'],
+      ['CRM list view (inline editing and bulk actions)', function(){ goTab('crm'); if (window.KBCRM) KBCRM.list(); }, 'bulk edit table'],
+      ['Undo last CRM change', function(){ if (window.KBCRM) KBCRM.undo(); }, 'revert'],
+      ['Open X-rays', function(){ goTab('xrays'); }, 'xray sealed domains conversion'],
+      ['Run health checks', function(){ goTab('tests'); }, 'tests status'],
+      ['Compact or comfortable rows', function(){ if (window.KBUI) KBUI.toast(KBUI.density(document.body.classList.contains('kc-compact') ? 'comfortable' : 'compact') ? 'Compact rows' : 'Comfortable rows'); }, 'density'],
+      ['Keyboard shortcuts', function(){ var h = $('kc-help'); if (h) h.click(); }, 'help keys'],
+      ['Export leads as CSV', function(){ goTab('leads'); var x = $('csv'); if (x) x.click(); }, 'download spreadsheet']
+    ];
+    return c.map(function(x){ return { t: x[0], s: 'Command', k: x[2], go: x[1], cmd: 1 }; });
   }
-  function drawPal(){ ITEMS = items($('cmdk-q').value); IDX = Math.min(IDX, Math.max(0, ITEMS.length - 1)); $('cmdk-l').innerHTML = ITEMS.map(function(x, i){ return '<li data-i="' + i + '" class="' + (i === IDX ? 'on' : '') + '"><span>' + esc(x.t) + '</span><small>' + esc(x.s) + '</small></li>'; }).join('') || '<li><small>No match</small></li>'; }
-  function openPal(){ pal.hidden = false; $('cmdk-q').value = ''; IDX = 0; drawPal(); $('cmdk-q').focus(); }
-  function closePal(){ pal.hidden = true; }
+  function score(x, q){ var t = x.t.toLowerCase(), all = (x.t + ' ' + (x.k || '') + ' ' + x.s).toLowerCase(), i = t.indexOf(q);
+    if (t === q) return 100; if (i === 0) return 80; if (i > 0 && /[\s·.@\/-]/.test(t.charAt(i - 1))) return 60; if (i > 0) return 40;
+    var j = all.indexOf(q); if (j < 0) { var w = q.split(/\s+/).filter(Boolean); return w.length > 1 && w.every(function(p){ return all.indexOf(p) >= 0; }) ? 15 : -1; } return j === 0 || /[\s·.@\/-]/.test(all.charAt(j - 1)) ? 30 : 20; }
+  function items(q){
+    q = q.toLowerCase().trim(); var cmdOnly = q.charAt(0) === '>'; if (cmdOnly) q = q.slice(1).trim();
+    var out = cmds();
+    if (!cmdOnly) {
+      document.querySelectorAll('nav.tabs button[data-t]').forEach(function(b){ var n = (b.childNodes[0] ? b.childNodes[0].textContent : b.textContent).trim(); out.push({ t: n, s: 'Tab', k: b.dataset.t, go: function(){ goTab(b.dataset.t); } }); });
+      (D && D.leads || []).forEach(function(l){ out.push({ t: (l.name || l.email || 'Lead'), s: 'Lead · ' + (l.email || '') + ' · ' + (l.plan || '') + ' · ' + (l.status || 'new'), k: [l.email, l.learn, l.country, (l.tags || []).join(' ')].join(' '), go: function(){ if (window.KBCRM) KBCRM.open(l.id); } }); });
+      (D && D.users || []).forEach(function(u){ if (u.email) out.push({ t: (u.name || u.email), s: 'Customer · ' + u.email + ' · ' + (u.status || ''), k: (u.cases || []).map(function(c){ return c.code + ' ' + (c.project_name || ''); }).join(' '), go: function(){ goTab('cust'); location.hash = 'c=' + encodeURIComponent(u.id); } });
+        (u.cases || []).forEach(function(c){ out.push({ t: (c.project_name || c.code) + ' · ' + (u.name || u.email), s: 'Case ' + c.code + ' · stage ' + c.stage + (c.paid ? '' : ' · unpaid'), k: [u.email, c.code, c.project_url].join(' '), go: function(){ SEL = c.id; goTab('inbox'); inbox(); } }); }); });
+      PROV.forEach(function(fn){ try { (fn(q) || []).forEach(function(x){ if (x && x.t && x.go) out.push(x); }); } catch (e) {} });
+    }
+    if (!q) return out.filter(function(x){ return x.cmd || (!cmdOnly && x.s === 'Tab'); }).slice(0, 60);
+    return out.map(function(x){ var n = score(x, q); return { x: x, n: n < 0 ? -1 : n + (x.cmd ? 5 : 0) }; }).filter(function(r){ return r.n >= 0; }).sort(function(a, b){ return b.n - a.n; }).slice(0, 50).map(function(r){ return r.x; });
+  }
+  function hl(t, q){ q = q.replace(/^>\s*/, '').trim().toLowerCase(); var i = q ? t.toLowerCase().indexOf(q) : -1; return i < 0 ? esc(t) : esc(t.slice(0, i)) + '<mark>' + esc(t.slice(i, i + q.length)) + '</mark>' + esc(t.slice(i + q.length)); }
+  function drawPal(){ var q = $('cmdk-q').value; ITEMS = items(q); IDX = Math.min(IDX, Math.max(0, ITEMS.length - 1));
+    $('cmdk-l').innerHTML = ITEMS.map(function(x, i){ return '<li role="option" id="cmdk-o' + i + '" data-i="' + i + '" aria-selected="' + (i === IDX) + '" class="' + (i === IDX ? 'on' : '') + '"><span>' + hl(x.t, q) + '</span><small>' + esc(x.s) + '</small></li>'; }).join('') || '<li class="cmdk-none" role="option" aria-disabled="true"><small>No match. Try an email, a case code or a domain.</small></li>';
+    $('cmdk-q').setAttribute('aria-activedescendant', ITEMS.length ? 'cmdk-o' + IDX : '');
+    var on = $('cmdk-o' + IDX); if (on && on.scrollIntoView) on.scrollIntoView({ block: 'nearest' }); }
+  function openPal(q){ if ($('app').classList.contains('hide')) return; PREV = document.activeElement; pal.hidden = false; $('cmdk-q').value = q || ''; IDX = 0; drawPal(); $('cmdk-q').focus(); }
+  function closePal(){ if (pal.hidden) return; pal.hidden = true; if (PREV && PREV.focus && document.contains(PREV)) try { PREV.focus(); } catch (e) {} }
   function pick(i){ var x = ITEMS[i]; closePal(); if (x) x.go(); }
   document.addEventListener('keydown', function(e){
     if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') { e.preventDefault(); if ($('app').classList.contains('hide')) return; pal.hidden ? openPal() : closePal(); return; }
     if (pal.hidden) return;
-    if (e.key === 'Escape') closePal(); else if (e.key === 'ArrowDown') { IDX = Math.min(IDX + 1, ITEMS.length - 1); drawPal(); e.preventDefault(); } else if (e.key === 'ArrowUp') { IDX = Math.max(IDX - 1, 0); drawPal(); e.preventDefault(); } else if (e.key === 'Enter') { e.preventDefault(); pick(IDX); }
-  });
+    if (e.key === 'Escape') { e.preventDefault(); e.stopPropagation(); closePal(); }
+    else if (e.key === 'ArrowDown') { IDX = Math.min(IDX + 1, ITEMS.length - 1); drawPal(); e.preventDefault(); } else if (e.key === 'ArrowUp') { IDX = Math.max(IDX - 1, 0); drawPal(); e.preventDefault(); }
+    else if (e.key === 'Home' && e.ctrlKey) { IDX = 0; drawPal(); e.preventDefault(); } else if (e.key === 'End' && e.ctrlKey) { IDX = Math.max(0, ITEMS.length - 1); drawPal(); e.preventDefault(); }
+    else if (e.key === 'Enter') { e.preventDefault(); pick(IDX); } else if (e.key === 'Tab') { e.preventDefault(); $('cmdk-q').focus(); }
+  }, true);
   $('cmdk-q').addEventListener('input', function(){ IDX = 0; drawPal(); });
+  pal.addEventListener('mousemove', function(e){ var li = e.target.closest('li[data-i]'); if (li && +li.dataset.i !== IDX) { IDX = +li.dataset.i; [].forEach.call($('cmdk-l').children, function(x, i){ x.classList.toggle('on', i === IDX); x.setAttribute('aria-selected', i === IDX); }); } });
   pal.addEventListener('click', function(e){ var li = e.target.closest('li[data-i]'); if (li) pick(+li.dataset.i); else if (e.target === pal) closePal(); });
   var hdr = document.querySelector('header .sp');
-  if (hdr) { var kb = document.createElement('button'); kb.type = 'button'; kb.textContent = matchMedia('(max-width:700px)').matches ? 'Search' : 'Search  ⌘K'; kb.onclick = openPal; hdr.parentNode.insertBefore(kb, hdr.nextSibling); var lv = document.createElement('span'); lv.className = 'live'; lv.innerHTML = '<i></i>Live'; lv.title = 'Refreshes every 60 seconds while this tab is open'; hdr.parentNode.insertBefore(lv, hdr); }
+  if (hdr) { var kb = document.createElement('button'); kb.type = 'button'; kb.textContent = matchMedia('(max-width:700px)').matches ? 'Search' : 'Search  ⌘K'; kb.setAttribute('aria-keyshortcuts', 'Control+K'); kb.onclick = function(){ openPal(); }; hdr.parentNode.insertBefore(kb, hdr.nextSibling); var lv = document.createElement('span'); lv.className = 'live'; lv.innerHTML = '<i></i>Live'; lv.title = 'Refreshes every 60 seconds while this tab is open'; hdr.parentNode.insertBefore(lv, hdr); }
 
   // ---------- Live refresh + notifications
   var seen = null, baseTitle = document.title;
@@ -136,7 +175,7 @@
     box.innerHTML = '<h2>Automatic confirmation</h2><p class="muted" style="margin-top:0">PayPal tells the site about every payment. Payments from a Kolaboro buyer (same email as their account or lead, or "Kolaboro" in the item name) are recorded and their case is marked paid automatically. Others wait here so you can assign them.</p>' +
       (E.length ? '<div class="tw"><table><tr><th>When</th><th>Source</th><th>Status</th><th>Payer</th><th>Amount</th><th>Item</th><th></th></tr>' + E.slice(0, 50).map(function(e){ return '<tr><td>' + esc(String(e.created_at).slice(0, 16).replace('T', ' ')) + '</td><td>' + esc(e.source) + '</td><td>' + esc(e.status) + '</td><td>' + esc(e.email || '-') + '</td><td>' + esc((e.currency || '') + ' ' + (e.amount == null ? '' : e.amount)) + '</td><td>' + esc(e.item || '') + '</td><td>' + (e.matched ? '<span class="pill" style="background:#DDEFE7">recorded</span>' : (/completed/i.test(e.status || '') ? '<button class="btn2" data-pe="' + e.id + '">Assign to buyer</button>' : '')) + '</td></tr>'; }).join('') + '</table></div>' : '<p class="muted">No PayPal notifications received yet.</p>') +
       (un.length ? '<p style="margin-bottom:0"><b>' + un.length + ' payment' + (un.length > 1 ? 's' : '') + ' not matched to a buyer.</b> If one is for Kolaboro, assign it with the buyer\'s account email.</p>' : '');
-    box.querySelectorAll('[data-pe]').forEach(function(b){ b.onclick = function(){ var em = prompt('Email of the Kolaboro account this payment belongs to'); if (!em) return; A.rpc('kolaboro_admin', { p_key: A.pw(), p_action: 'assign_event', p_payload: { id: +b.dataset.pe, email: em } }).then(function(r){ if (r && r.error) alert('Not assigned: ' + r.error); A.reload(); }); }; });
+    box.querySelectorAll('[data-pe]').forEach(function(b){ b.onclick = function(){ var em = prompt('Email of the Kolaboro account this payment belongs to'); if (!em) return; A.rpc('kolaboro_admin', { p_key: A.pw(), p_action: 'assign_event', p_payload: { id: +b.dataset.pe, email: em } }).then(function(r){ if (r && r.error) (window.KBUI ? KBUI.toast : function(m){ alert(m); })('Not assigned: ' + (A.err ? A.err(r) : r.error), 'bad'); else if (window.KBUI) KBUI.toast('Payment assigned to ' + em + '.', 'ok'); A.reload(); }); }; });
   }
   document.addEventListener('kbadm', function(e){ draw(e.detail); });
   if (A.D) draw(A.D);
