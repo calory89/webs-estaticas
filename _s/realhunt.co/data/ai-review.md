@@ -1,7 +1,7 @@
 ## RealHunt AI score
-Scored now: 0 · total: 528 · approx cost (Haiku): $0.00
+Scored now: 7 · total: 535 · approx cost (Haiku): $0.05
 
-### Homes to review (326)
+### Homes to review (328)
 | home | beauty | condition | cover ok | keep | flags |
 |---|---|---|---|---|---|
 | [fr-esperaza-86k-sxd5p3](https://realhunt.co/deal/fr-esperaza-86k-sxd5p3) | 45 | 50 | False | False | dated kitchen cabinets and appliances, worn tile flooring throughout, cluttered, |
@@ -294,6 +294,7 @@ Scored now: 0 · total: 528 · approx cost (Haiku): $0.00
 | [jp-izu-amagi-cabin-onsen-10k-835694](https://realhunt.co/deal/jp-izu-amagi-cabin-onsen-10k-835694) | 72 | 58 | False | False | 1982 cabin showing age and wear, dated wood interiors need refreshing, exterior  |
 | [jp-agano-forest-cabin-23k-775004](https://realhunt.co/deal/jp-agano-forest-cabin-23k-775004) | 72 | 75 | False | True | exterior looks dated and overgrown, photo 0 too dark and forest-heavy, appliance |
 | [jp-gifu-renovated-house-19k-991953](https://realhunt.co/deal/jp-gifu-renovated-house-19k-991953) | 72 | 85 | False | False | exterior looks institutional and plain, bright green flooring appears temporary, |
+| [us-aventura-20301-523-299k](https://realhunt.co/deal/us-aventura-20301-523-299k) | 72 | 75 | False | False | exterior looks dated and worn, photo 0 shows aging facade, basic finishes throug |
 | [it-san-siro-95k-057133](https://realhunt.co/deal/it-san-siro-95k-057133) | 75 | 72 | False | True | exterior looks aged and weathered, overgrown vegetation and clutter in courtyard |
 | [dk-hurup-66k-a04f4a](https://realhunt.co/deal/dk-hurup-66k-a04f4a) | 75 | 78 | False | True | Cover photo out of focus with obstructed view, Historic 1850s building may feel  |
 | [dk-hygum-90k-715977](https://realhunt.co/deal/dk-hygum-90k-715977) | 75 | 80 | False | True | Photo 0 exterior looks dated and industrial, Brick facade shows weathering, Sett |
@@ -330,3 +331,4 @@ Scored now: 0 · total: 528 · approx cost (Haiku): $0.00
 | [it-sardinia-vignola-sea-view-160k](https://realhunt.co/deal/it-sardinia-vignola-sea-view-160k) | 78 | 75 | False | False | Photo 0 shows run-down neighboring roofs, Mismatched architectural styles visibl |
 | [it-tuscany-montaione-renovated-140k](https://realhunt.co/deal/it-tuscany-montaione-renovated-140k) | 78 | 75 | False | True | Living room walls show stains and wear marks, Kitchen backsplash has visible wat |
 | [es-golf-del-sur-250k-061726](https://realhunt.co/deal/es-golf-del-sur-250k-061726) | 82 | 85 | False | True | Photo 0 interior looks dated and dark, Worn roller blinds need replacement, Olde |
+| [us-aventura-18011-1904-350k](https://realhunt.co/deal/us-aventura-18011-1904-350k) | 82 | 85 | False | True | Marina view in cover photo lacks appeal, Exterior shot not representative of int |
