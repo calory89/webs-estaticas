@@ -484,7 +484,13 @@ async function sitemaps(env, B, name) {
     const keys = Object.keys(S).filter(k => S[k].length);
     if (name === 'stats') return Object.fromEntries(Object.keys(S).map(k => [k, S[k].length]));
     const last = k => S[k].reduce((a, i) => (i.lastmod && i.lastmod > a ? i.lastmod : a), '') || up;
-    return new Response('<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + keys.map(k => '<sitemap><loc>' + SITE + '/sitemaps/' + k + '.xml</loc><lastmod>' + last(k) + '</lastmod></sitemap>').join('\n') + '\n</sitemapindex>\n', { headers: XHDR });
+    // sitemaps published by other modules (batch 15: s15c's data stories and change log), listed only while they answer 200 with XML
+    const ext = [];
+    for (const x of ['/stories/sitemap.xml']) {
+      let ok = MEMO['__ext' + x]; if (!ok || Date.now() - ok.t > 600000) { let v = null; try { const r = B.inner ? await B.inner(x) : null; if (r && r.ok && /xml/.test(r.headers.get('content-type') || '')) { const t = await r.text(); const ds = [...t.matchAll(/<lastmod>(\d{4}-\d{2}-\d{2})/g)].map(m => m[1]).sort(); v = { last: ds[ds.length - 1] || null, n: (t.match(/<url>/g) || []).length }; } } catch (e) { v = null; } ok = MEMO['__ext' + x] = { t: Date.now(), v }; }
+      if (ok.v && ok.v.n) ext.push('<sitemap><loc>' + SITE + x + '</loc>' + (ok.v.last ? '<lastmod>' + ok.v.last + '</lastmod>' : '') + '</sitemap>');
+    }
+    return new Response('<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' + keys.map(k => '<sitemap><loc>' + SITE + '/sitemaps/' + k + '.xml</loc><lastmod>' + last(k) + '</lastmod></sitemap>').concat(ext).join('\n') + '\n</sitemapindex>\n', { headers: XHDR });
   }
   if (!S[name] || !S[name].length) return new Response('Not found', { status: 404 });
   return new Response(urlset(S[name], S[name].some(i => i.alt), S[name].some(i => i.img)), { headers: XHDR });
@@ -549,7 +555,7 @@ export async function handle(req, u, env, ctx, shell, inner) {
   const ckey = req.method === 'GET' && !u.search && env && env.CF_PAGES_COMMIT_SHA && /^\/(countries|rankings|vs|new|press\/delivery-index|embed\/widgets)\//.test(p) && typeof caches !== 'undefined' ? new Request(SITE + '/__seo_html/v1/' + env.CF_PAGES_COMMIT_SHA + p) : null;
   if (ckey) { try { const hit = await caches.default.match(ckey); if (hit) { const h = new Headers(hit.headers); h.set('x-seo-cache', 'hit'); h.set('cache-control', 'no-cache'); return new Response(hit.body, { status: hit.status, headers: h }); } } catch (e) {} }
   let B; try { B = await base(env, inner); } catch (e) { return new Response('Data temporarily unavailable', { status: 503, headers: { 'retry-after': '60', 'content-type': 'text/plain' } }); }
-  if (p === '/sitemap_index.xml') return sitemaps(env, B, 'index');
+  if (p === '/sitemap_index.xml') { B.inner = inner; return sitemaps(env, B, 'index'); }
   let m = /^\/sitemaps\/([a-z0-9-]+)\.xml$/.exec(p); if (m) return sitemaps(env, B, m[1]);
   if (p === '/llms.txt' || p === '/llms-full.txt') return llms(env, B, p === '/llms-full.txt');
   if ((m = /^\/press\/delivery-index\/(\d{4}-\d{2})\.csv$/.exec(p))) { const c = diCsv(B, m[1]); return c ? new Response(c, { headers: { 'content-type': 'text/csv; charset=utf-8', 'content-disposition': 'inline; filename="kolaboro-delivery-index-' + m[1] + '.csv"', 'link': '<https://kolaboro.com/press/delivery-index/' + m[1] + '/>; rel="describedby"', 'cache-control': 'public, max-age=86400' } }) : new Response('Not found', { status: 404 }); }
