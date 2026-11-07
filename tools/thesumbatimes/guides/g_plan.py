@@ -313,7 +313,305 @@ G1 = {
  ["Mata Yangu Waterfall, Travelfish", "https://www.travelfish.org/sight_profile/indonesia/east_nusa_tenggara/sumba/waikabubak/3714"],
  ["Sumba travel 2026: east vs west route and seven essential tips, Telkomsel", "https://www.telkomsel.com/en/jelajah/jelajah-nusantara/sumba-travel-2026-east-vs-west-route-and-seven-essential-tips"]
 ],
-"image_candidate": None,
+"image_candidate": {"file_page": "https://commons.wikimedia.org/wiki/File:Puru_Kambera,_Sumba_Timur.jpg", "direct_url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Puru_Kambera%2C_Sumba_Timur.jpg", "credit": "Djakartacaver", "license": "CC BY-SA 4.0", "license_url": "https://creativecommons.org/licenses/by-sa/4.0", "caption": {"en": "Savanna and karst hills around Puru Kambera, East Sumba, a highlight of the final days of a west-to-east itinerary.", "es": "Sabana y colinas kársticas en Puru Kambera, Sumba Oriental, uno de los grandes momentos de los últimos días de la ruta de oeste a este.", "id": "Sabana dan bukit karst di sekitar Puru Kambera, Sumba Timur, salah satu sorotan di hari-hari terakhir rute barat ke timur."}},
 }
 
 # END_G1
+
+G2 = {
+"section": "things-to-do", "slug": "best-time-to-visit-sumba", "date": "2026-11-07", "time": "09:00", "kind": "guide",
+"slugs": {"es": "mejor-epoca-para-viajar-a-sumba", "id": "waktu-terbaik-ke-sumba"},
+"en": {
+ "title": "Best time to visit Sumba: a month-by-month guide",
+ "dek": "Green hills or golden savanna, roaring waterfalls or clear pools, Pasola horsemen or empty surf: in Sumba, the month you choose decides the trip you get.",
+ "answer": "For most travellers the best time to visit Sumba is the dry season, roughly May to October, with June to August the sunniest and most comfortable months. Come in February or March for the Pasola and green hills, accepting rain and muddy roads; April and early May are a sweet spot, when the island is still green but the rains are ending.",
+ "body": """<p>In March the hills of East Sumba are the colour of new rice, waterfalls thunder brown through the forest and the air is thick and warm after an afternoon storm. By August the same hills have turned to gold and copper, the grass hisses in a dry wind, horses stand in the shade of a single tree and the sky is clean enough to see the curve of the coast from Wairinding. Sumba is one island with two faces, and the month you choose decides which one you meet.</p>
+<p>The quick answer: the <strong>dry season, roughly May to October</strong>, is the best time for most trips, with clear skies, easier roads and calm swimming. <strong>June to August</strong> is the classic window. <strong>February and March</strong> bring the Pasola and the greenest landscapes, but also the heaviest rain. <strong>April to early May</strong> is the in-between season many photographers love.</p>
+
+<h2>Sumba's climate in one paragraph</h2>
+<p>Sumba sits in the drier part of Indonesia. In Waingapu, on the north-east coast, average rainfall is only about 810 mm a year, falling on roughly 80 days, according to 1991-2020 climate data. Almost all of it comes between December and March: January averages about 170 mm, while August and September get about 5 mm each. Temperatures barely change, with daytime highs around 31-33 C all year and nights from about 20 C in August to about 24 C in the wet season. The west is wetter and greener than the east, and inland hills get more rain than the coast. Wikipedia sums it up as a dry season from May to November and a rainy season from December to April; local sources put the turn of the rains anywhere from late October to December, depending on the year and the area.</p>
+<table>
+<tr><th>Month</th><th>Rain in Waingapu</th><th>Rainy days</th><th>Max / min</th><th>Sea</th></tr>
+<tr><td>January</td><td>170 mm</td><td>13</td><td>32 / 24 C</td><td>29.5 C</td></tr>
+<tr><td>February</td><td>160 mm</td><td>13</td><td>32 / 24 C</td><td>29 C</td></tr>
+<tr><td>March</td><td>145 mm</td><td>11</td><td>32 / 24 C</td><td>29.5 C</td></tr>
+<tr><td>April</td><td>70 mm</td><td>9</td><td>32 / 23 C</td><td>29.5 C</td></tr>
+<tr><td>May</td><td>35 mm</td><td>6</td><td>32 / 23 C</td><td>28.5 C</td></tr>
+<tr><td>June</td><td>25 mm</td><td>4</td><td>31 / 22 C</td><td>27.5 C</td></tr>
+<tr><td>July</td><td>10 mm</td><td>3</td><td>31 / 21 C</td><td>27 C</td></tr>
+<tr><td>August</td><td>5 mm</td><td>1</td><td>31 / 20 C</td><td>26.5 C</td></tr>
+<tr><td>September</td><td>5 mm</td><td>1</td><td>32 / 21 C</td><td>27 C</td></tr>
+<tr><td>October</td><td>10 mm</td><td>2</td><td>33 / 23 C</td><td>28 C</td></tr>
+<tr><td>November</td><td>40 mm</td><td>6</td><td>33 / 24 C</td><td>29.5 C</td></tr>
+<tr><td>December</td><td>135 mm</td><td>11</td><td>33 / 25 C</td><td>29.5 C</td></tr>
+</table>
+<p>These figures are for Waingapu, the driest part of the island. In West Sumba and in the hills expect more rain, especially from December to March.</p>
+
+<h2>Month by month</h2>
+<h3>January: green, hot and wet</h3>
+<p>The wettest month in the east. Hills are deep green, rivers are full and waterfalls are at their most powerful, but often brown with mud and too strong to swim near. Dirt roads to remote beaches and villages can become impassable. Fewer visitors, and a good month only if you are flexible and happy with a slower trip.</p>
+<h3>February: Pasola in the west</h3>
+<p>Still rainy, but this is when the first <a href="/en/culture/pasola-explained/">Pasola</a> ritual battles usually take place, in the Kodi and Lamboya areas of the west. The dates are set by the Rato elders following the appearance of the <em>nyale</em> sea worms, and are often confirmed only a week or two ahead. In 2026 they fell on 9, 10 and 11 February. If you plan around the Pasola, build in spare days and book transport early.</p>
+<h3>March: the second Pasola and the greenest island</h3>
+<p>The Pasola moves to Wanokaka and Gaura, usually in March (in 2026, on 9, 10 and 11 March). Rain eases a little through the month. The landscape is at its greenest, which many visitors find surprising in an island famous for golden savanna. Waterfalls are full, and Matayangu in particular is spectacular after rain.</p>
+<h3>April: the sweet spot begins</h3>
+<p>Rainfall in Waingapu halves to about 70 mm. Hills are still green, waterfalls still flowing and roads start to dry out. A very good month for photographers and for travellers who want the green island without the worst of the rain. Surf on the south and west coasts starts to pick up as the southern swell season begins.</p>
+<h3>May: green turning gold</h3>
+<p>One of the best all-round months. Rain drops to a few showers, skies clear, waterfalls such as Lapopu and Tanggedu start to run clear and are safer to swim in, and the first gold appears on the eastern savanna. Visitor numbers are still modest.</p>
+<h3>June: dry season in full</h3>
+<p>Sunny days, cooler nights and very little rain. Swimming at Weekuri Lagoon is perfect, and from June into July the sun sets right between the two cliffs at Mandorak beach. Roads are at their easiest. Indonesian school holidays usually begin in late June, so domestic travel increases.</p>
+<h3>July: peak season</h3>
+<p>The coolest nights of the year (around 20-21 C in Waingapu) and steady sunshine. This is the busiest month on the island, with both foreign holidays and Indonesian school holidays (in East Nusa Tenggara the new school year started on 13 July 2026). Flights and the limited supply of rooms fill up, so book cars and accommodation weeks ahead. Even at its busiest, Sumba is quiet by Bali standards.</p>
+<h3>August: golden Sumba</h3>
+<p>The driest month, with about one rainy day. The savanna of Wairinding and Puru Kambera turns fully golden, horses graze on dry grass and the light at sunset is extraordinary. Waterfalls are lower but clear, and some in the interior can almost dry up. The sea is at its coolest, around 26-27 C, and the south-east trade winds blow.</p>
+<h3>September: hot, dry and quiet</h3>
+<p>Very dry, increasingly hot and less busy after the holidays end. One of the best months for the dry, golden landscape without the crowds. Late afternoons can be hazy from grass fires.</p>
+<h3>October: the hottest month</h3>
+<p>Daytime highs of around 33 C. The landscape is at its driest and dustiest. Surfers often find glassy days and solid swells from October into December. The first storms may arrive late in the month, especially inland and in the hills.</p>
+<h3>November: the turn of the season</h3>
+<p>The rains begin, first as short afternoon storms. In the east the dry weather often lasts well into November; in the west it usually breaks earlier. The first rains turn the hills green again within days. Fewer visitors and lower prices.</p>
+<h3>December: rain and holidays</h3>
+<p>Rain becomes regular, about 135 mm and 11 rainy days in Waingapu. The Christmas and New Year period (the end-of-semester school break in East Nusa Tenggara runs from 21 December 2026 to 2 January 2027) brings families home to Sumba, and local beaches such as Walakiri fill with people at weekends. Book flights early.</p>
+
+<h2>Green hills or golden savanna?</h2>
+<p>This is the question photographers ask most. The answer is simple: for <strong>green hills</strong>, come during or just after the rainy season, roughly late January to April. For the <strong>classic golden savanna</strong> of East Sumba, come in the dry season, from about July to October. May and June are a transition, with patches of both.</p>
+
+<h2>Waterfalls by season</h2>
+<p>Sumba's waterfalls are a trade-off between power and clarity. In the rainy season Lapopu, a 90 m multi-tiered fall, runs brown and strong and you cannot get close; Matayangu becomes a wall of water, but the trail is muddy and slippery. In the dry season the water is lower but clear, the pools are calm and swimming is easier and safer. Some smaller falls in the interior can almost dry up by September. The best compromise for most travellers: <strong>April to June</strong>. See our guide to <a href="/en/things-to-do/beaches-lagoons-waterfalls/">beaches, lagoons and waterfalls</a>.</p>
+
+<h2>The sea, surf and swimming</h2>
+<p>The sea is warm all year, from about 26.5 C in August to 29.5 C in the wet months. The <strong>surf season</strong> on the south and west coasts runs roughly from April to October, when the southern hemisphere winter sends Indian Ocean swells and the south-east trade winds blow offshore at many breaks. October to December can bring glassy days. Some breaks work in the wet season westerlies. Big swells also mean strong currents: swim only where locals do, and never alone on empty beaches. More in <a href="/en/things-to-do/surfing-in-sumba/">surfing in Sumba</a>.</p>
+
+<h2>Crowds, holidays and prices</h2>
+<p>Sumba is never crowded in the way Bali is. East Sumba counted 41,524 visitors in the whole of 2025, about one in eight from abroad, with an average stay of three nights. But the island has very few rooms, so busy periods are felt quickly:</p>
+<ul>
+<li><strong>Busiest:</strong> July and August (foreign and Indonesian holidays), and late December to early January.</li>
+<li><strong>Busy around the Pasola:</strong> a few days in February and March in the west.</li>
+<li><strong>Quietest:</strong> January (outside New Year), November and the shoulder months of April-May and September-October.</li>
+</ul>
+<p>Accommodation and car hire cost more in the dry season. Lonely Planet (2026) notes that rooms and cars should be booked ahead for June to August. Typical car-with-driver prices are covered in <a href="/en/getting-here/sumba-travel-costs/">Sumba travel costs</a>.</p>
+
+<h2>Our recommendation</h2>
+<ul>
+<li><strong>First visit, best all-round weather:</strong> late May to early July, or September.</li>
+<li><strong>Golden savanna photos:</strong> August to October.</li>
+<li><strong>Green hills and full waterfalls:</strong> March to April.</li>
+<li><strong>Pasola:</strong> February or March, with flexible dates.</li>
+<li><strong>Surf:</strong> April to October.</li>
+</ul>
+<p>Whatever the month, bring sun protection, insect repellent and some patience. Read our <a href="/en/getting-here/sumba-travel-safety-health/">safety and health guide</a> before you go, and when you are ready, plan the route with our <a href="/en/things-to-do/sumba-itinerary-5-7-10-days/">Sumba itinerary for 5, 7 and 10 days</a>. Comparing islands? See <a href="/en/things-to-do/sumba-vs-bali-flores/">Sumba vs Bali and Flores</a>.</p>"""
+},
+"es": {
+ "title": "Mejor época para viajar a Sumba: guía mes a mes",
+ "dek": "Colinas verdes o sabana dorada, cascadas rugientes o pozas cristalinas, jinetes de la Pasola u olas vacías: en Sumba, el mes que elijas decide el viaje que tendrás.",
+ "answer": "Para la mayoría de viajeros, la mejor época para visitar Sumba es la estación seca, más o menos de mayo a octubre, y de junio a agosto son los meses más soleados y agradables. Ven en febrero o marzo por la Pasola y las colinas verdes, aceptando lluvia y caminos embarrados; abril y principios de mayo son un punto dulce, con la isla aún verde y las lluvias terminando.",
+ "body": """<p>En marzo, las colinas de Sumba Oriental tienen el color del arroz recién brotado, las cascadas bajan marrones y estruendosas por el bosque y el aire es denso y cálido tras una tormenta de tarde. En agosto, esas mismas colinas se han vuelto oro y cobre, la hierba silba con el viento seco, los caballos buscan la sombra de un único árbol y el cielo está tan limpio que desde Wairinding se ve la curva de la costa. Sumba es una isla con dos caras, y el mes que elijas decide cuál vas a conocer.</p>
+<p>La respuesta rápida: la <strong>estación seca, más o menos de mayo a octubre</strong>, es la mejor para casi todos los viajes, con cielos despejados, carreteras más fáciles y baños tranquilos. <strong>De junio a agosto</strong> es la ventana clásica. <strong>Febrero y marzo</strong> traen la Pasola y los paisajes más verdes, pero también la lluvia más intensa. <strong>De abril a principios de mayo</strong> es la temporada intermedia que adoran muchos fotógrafos.</p>
+
+<h2>El clima de Sumba en un párrafo</h2>
+<p>Sumba está en la parte más seca de Indonesia. En Waingapu, en la costa noreste, la lluvia media es de solo unos 810 mm al año, repartidos en unos 80 días, según los datos climáticos de 1991-2020. Casi toda cae entre diciembre y marzo: enero ronda los 170 mm, mientras que agosto y septiembre reciben unos 5 mm cada uno. La temperatura apenas cambia, con máximas de unos 31-33 C todo el año y noches desde unos 20 C en agosto hasta unos 24 C en la estación húmeda. El oeste es más lluvioso y verde que el este, y las colinas del interior reciben más lluvia que la costa. Wikipedia lo resume como una estación seca de mayo a noviembre y una de lluvias de diciembre a abril; las fuentes locales sitúan la llegada de las lluvias entre finales de octubre y diciembre, según el año y la zona.</p>
+<table>
+<tr><th>Mes</th><th>Lluvia en Waingapu</th><th>Días de lluvia</th><th>Máx. / mín.</th><th>Mar</th></tr>
+<tr><td>Enero</td><td>170 mm</td><td>13</td><td>32 / 24 C</td><td>29,5 C</td></tr>
+<tr><td>Febrero</td><td>160 mm</td><td>13</td><td>32 / 24 C</td><td>29 C</td></tr>
+<tr><td>Marzo</td><td>145 mm</td><td>11</td><td>32 / 24 C</td><td>29,5 C</td></tr>
+<tr><td>Abril</td><td>70 mm</td><td>9</td><td>32 / 23 C</td><td>29,5 C</td></tr>
+<tr><td>Mayo</td><td>35 mm</td><td>6</td><td>32 / 23 C</td><td>28,5 C</td></tr>
+<tr><td>Junio</td><td>25 mm</td><td>4</td><td>31 / 22 C</td><td>27,5 C</td></tr>
+<tr><td>Julio</td><td>10 mm</td><td>3</td><td>31 / 21 C</td><td>27 C</td></tr>
+<tr><td>Agosto</td><td>5 mm</td><td>1</td><td>31 / 20 C</td><td>26,5 C</td></tr>
+<tr><td>Septiembre</td><td>5 mm</td><td>1</td><td>32 / 21 C</td><td>27 C</td></tr>
+<tr><td>Octubre</td><td>10 mm</td><td>2</td><td>33 / 23 C</td><td>28 C</td></tr>
+<tr><td>Noviembre</td><td>40 mm</td><td>6</td><td>33 / 24 C</td><td>29,5 C</td></tr>
+<tr><td>Diciembre</td><td>135 mm</td><td>11</td><td>33 / 25 C</td><td>29,5 C</td></tr>
+</table>
+<p>Estos datos son de Waingapu, la zona más seca de la isla. En Sumba Occidental y en las colinas llueve más, sobre todo de diciembre a marzo.</p>
+
+<h2>Mes a mes</h2>
+<h3>Enero: verde, caluroso y húmedo</h3>
+<p>El mes más lluvioso en el este. Las colinas están muy verdes, los ríos llenos y las cascadas en su máxima fuerza, aunque a menudo marrones de barro y demasiado bravas para acercarse. Los caminos de tierra hacia playas y aldeas remotas pueden quedar intransitables. Hay pocos visitantes; buen mes solo si eres flexible y no te importa viajar más despacio.</p>
+<h3>Febrero: la Pasola en el oeste</h3>
+<p>Sigue lloviendo, pero es cuando suelen celebrarse las primeras batallas rituales de la <a href="/es/culture/pasola-explained/">Pasola</a>, en las zonas de Kodi y Lamboya, al oeste. Las fechas las fijan los ancianos Rato según la aparición de los gusanos marinos <em>nyale</em>, y a menudo se confirman solo una o dos semanas antes. En 2026 cayeron el 9, 10 y 11 de febrero. Si planeas el viaje en torno a la Pasola, deja días de margen y reserva el transporte con tiempo.</p>
+<h3>Marzo: la segunda Pasola y la isla más verde</h3>
+<p>La Pasola pasa a Wanokaka y Gaura, normalmente en marzo (en 2026, el 9, 10 y 11 de marzo). La lluvia afloja un poco a lo largo del mes. El paisaje está en su momento más verde, algo que sorprende en una isla famosa por su sabana dorada. Las cascadas van llenas, y Matayangu en particular es espectacular después de llover.</p>
+<h3>Abril: empieza el punto dulce</h3>
+<p>La lluvia en Waingapu baja a la mitad, unos 70 mm. Las colinas siguen verdes, las cascadas siguen con caudal y las carreteras empiezan a secarse. Muy buen mes para fotógrafos y para quien quiera la isla verde sin lo peor de la lluvia. Las olas de las costas sur y oeste empiezan a crecer con el inicio de la temporada de mar de fondo del sur.</p>
+<h3>Mayo: del verde al oro</h3>
+<p>Uno de los mejores meses en conjunto. La lluvia se queda en algún chubasco, el cielo se abre, cascadas como Lapopu y Tanggedu empiezan a bajar claras y es más seguro bañarse, y aparecen los primeros tonos dorados en la sabana del este. Todavía hay pocos visitantes.</p>
+<h3>Junio: estación seca en pleno</h3>
+<p>Días de sol, noches más frescas y casi nada de lluvia. El baño en la laguna de Weekuri es perfecto, y de junio a julio el sol se pone justo entre los dos acantilados de la playa de Mandorak. Las carreteras están en su mejor momento. Las vacaciones escolares de Indonesia suelen empezar a finales de junio, así que aumenta el turismo nacional.</p>
+<h3>Julio: temporada alta</h3>
+<p>Las noches más frescas del año (unos 20-21 C en Waingapu) y sol constante. Es el mes más concurrido de la isla, con las vacaciones extranjeras y las escolares indonesias a la vez (en Nusa Tenggara Oriental el curso escolar empezó el 13 de julio de 2026). Los vuelos y las pocas habitaciones disponibles se llenan, así que reserva coche y alojamiento con semanas de antelación. Aun así, para lo que es Bali, Sumba sigue siendo tranquila.</p>
+<h3>Agosto: la Sumba dorada</h3>
+<p>El mes más seco, con apenas un día de lluvia. La sabana de Wairinding y Puru Kambera se vuelve completamente dorada, los caballos pastan hierba seca y la luz del atardecer es extraordinaria. Las cascadas llevan menos agua pero clara, y algunas del interior casi se secan. El mar está en su punto más fresco, unos 26-27 C, y soplan los alisios del sureste.</p>
+<h3>Septiembre: calor, sequía y calma</h3>
+<p>Muy seco, cada vez más caluroso y con menos gente tras las vacaciones. Uno de los mejores meses para el paisaje dorado sin aglomeraciones. Al final de la tarde puede haber bruma por las quemas de pasto.</p>
+<h3>Octubre: el mes más caluroso</h3>
+<p>Máximas de unos 33 C. El paisaje está en su punto más seco y polvoriento. Los surfistas suelen encontrar días de mar plato y buenas series de octubre a diciembre. Las primeras tormentas pueden llegar a final de mes, sobre todo en el interior y en las colinas.</p>
+<h3>Noviembre: cambio de estación</h3>
+<p>Empiezan las lluvias, primero como tormentas cortas de tarde. En el este el tiempo seco suele durar hasta bien entrado noviembre; en el oeste se rompe antes. Las primeras lluvias vuelven a teñir de verde las colinas en pocos días. Menos visitantes y precios más bajos.</p>
+<h3>Diciembre: lluvia y fiestas</h3>
+<p>La lluvia se vuelve habitual, unos 135 mm y 11 días de lluvia en Waingapu. La Navidad y el Año Nuevo (las vacaciones escolares de fin de semestre en Nusa Tenggara Oriental van del 21 de diciembre de 2026 al 2 de enero de 2027) traen a muchas familias de vuelta a Sumba, y playas locales como Walakiri se llenan los fines de semana. Reserva los vuelos con tiempo.</p>
+
+<h2>¿Colinas verdes o sabana dorada?</h2>
+<p>Es la pregunta que más hacen los fotógrafos. La respuesta es sencilla: para <strong>colinas verdes</strong>, ven durante la temporada de lluvias o justo después, más o menos de finales de enero a abril. Para la <strong>sabana dorada clásica</strong> de Sumba Oriental, ven en la estación seca, de julio a octubre aproximadamente. Mayo y junio son de transición, con un poco de cada.</p>
+
+<h2>Las cascadas según la estación</h2>
+<p>Las cascadas de Sumba obligan a elegir entre fuerza y transparencia. En la temporada de lluvias, Lapopu, una cascada de 90 m en varios escalones, baja marrón y con fuerza y no te puedes acercar; Matayangu se convierte en un muro de agua, pero el sendero está embarrado y resbala. En la estación seca el agua baja con menos caudal pero clara, las pozas están tranquilas y bañarse es más fácil y seguro. Algunas cascadas pequeñas del interior casi se secan en septiembre. El mejor equilibrio para la mayoría: <strong>de abril a junio</strong>. Mira nuestra guía de <a href="/es/things-to-do/beaches-lagoons-waterfalls/">playas, lagunas y cascadas</a>.</p>
+
+<h2>El mar, el surf y el baño</h2>
+<p>El mar está caliente todo el año, desde unos 26,5 C en agosto hasta 29,5 C en los meses húmedos. La <strong>temporada de surf</strong> en las costas sur y oeste va más o menos de abril a octubre, cuando el invierno austral manda mar de fondo del Índico y los alisios del sureste soplan de tierra en muchos rompientes. De octubre a diciembre puede haber días de mar plato. Algunos rompientes funcionan con los vientos del oeste de la estación húmeda. Las olas grandes también traen corrientes fuertes: báñate solo donde lo hace la gente del lugar y nunca solo en playas vacías. Más en <a href="/es/things-to-do/surfing-in-sumba/">surf en Sumba</a>.</p>
+
+<h2>Gente, fiestas y precios</h2>
+<p>Sumba nunca está saturada como Bali. Sumba Oriental contó 41.524 visitantes en todo 2025, más o menos uno de cada ocho extranjero, con una estancia media de tres noches. Pero la isla tiene muy pocas habitaciones, así que los periodos de más movimiento se notan enseguida:</p>
+<ul>
+<li><strong>Más concurridos:</strong> julio y agosto (vacaciones extranjeras e indonesias) y de finales de diciembre a principios de enero.</li>
+<li><strong>Con movimiento por la Pasola:</strong> unos días de febrero y marzo en el oeste.</li>
+<li><strong>Más tranquilos:</strong> enero (fuera de Año Nuevo), noviembre y los meses intermedios de abril-mayo y septiembre-octubre.</li>
+</ul>
+<p>El alojamiento y el alquiler de coche son más caros en la estación seca. Lonely Planet (2026) aconseja reservar habitaciones y coche con antelación para junio-agosto. Los precios habituales de coche con conductor están en <a href="/es/getting-here/sumba-travel-costs/">cuánto cuesta viajar a Sumba</a>.</p>
+
+<h2>Nuestra recomendación</h2>
+<ul>
+<li><strong>Primer viaje, mejor clima en general:</strong> de finales de mayo a principios de julio, o septiembre.</li>
+<li><strong>Fotos de sabana dorada:</strong> de agosto a octubre.</li>
+<li><strong>Colinas verdes y cascadas llenas:</strong> de marzo a abril.</li>
+<li><strong>Pasola:</strong> febrero o marzo, con fechas flexibles.</li>
+<li><strong>Surf:</strong> de abril a octubre.</li>
+</ul>
+<p>Sea cual sea el mes, lleva protección solar, repelente y algo de paciencia. Lee nuestra <a href="/es/getting-here/sumba-travel-safety-health/">guía de seguridad y salud</a> antes de salir y, cuando lo tengas claro, prepara la ruta con nuestro <a href="/es/things-to-do/sumba-itinerary-5-7-10-days/">itinerario por Sumba de 5, 7 y 10 días</a>. ¿Dudas entre islas? Mira <a href="/es/things-to-do/sumba-vs-bali-flores/">Sumba frente a Bali y Flores</a>.</p>"""
+},
+"id": {
+ "title": "Waktu terbaik ke Sumba: panduan bulan demi bulan",
+ "dek": "Bukit hijau atau sabana keemasan, air terjun yang bergemuruh atau kolam jernih, para penunggang Pasola atau ombak yang sepi: di Sumba, bulan yang Anda pilih menentukan perjalanan yang Anda dapat.",
+ "answer": "Bagi kebanyakan wisatawan, waktu terbaik ke Sumba adalah musim kemarau, kira-kira Mei sampai Oktober, dengan Juni sampai Agustus sebagai bulan paling cerah dan nyaman. Datanglah pada Februari atau Maret untuk Pasola dan bukit hijau, dengan risiko hujan dan jalan berlumpur; April dan awal Mei adalah waktu yang pas, saat pulau masih hijau tetapi hujan mulai reda.",
+ "body": """<p>Pada bulan Maret, bukit-bukit Sumba Timur berwarna seperti padi muda, air terjun mengalir cokelat dan bergemuruh di dalam hutan, dan udara terasa pekat dan hangat setelah hujan sore. Pada bulan Agustus, bukit yang sama sudah berubah menjadi emas dan tembaga, rumput berdesir ditiup angin kering, kuda-kuda berteduh di bawah sebatang pohon, dan langit begitu bersih sehingga lengkung pantai terlihat dari Wairinding. Sumba adalah satu pulau dengan dua wajah, dan bulan yang Anda pilih menentukan wajah mana yang akan Anda temui.</p>
+<p>Jawaban singkatnya: <strong>musim kemarau, kira-kira Mei sampai Oktober</strong>, adalah waktu terbaik untuk sebagian besar perjalanan, dengan langit cerah, jalan lebih mudah, dan laut yang tenang untuk berenang. <strong>Juni sampai Agustus</strong> adalah masa klasik. <strong>Februari dan Maret</strong> membawa Pasola dan pemandangan paling hijau, tetapi juga hujan paling lebat. <strong>April sampai awal Mei</strong> adalah musim peralihan yang disukai banyak fotografer.</p>
+
+<h2>Iklim Sumba secara singkat</h2>
+<p>Sumba terletak di bagian Indonesia yang lebih kering. Di Waingapu, di pesisir timur laut, curah hujan rata-rata hanya sekitar 810 mm per tahun dalam kira-kira 80 hari hujan, menurut data iklim 1991-2020. Hampir semuanya turun antara Desember dan Maret: Januari rata-rata sekitar 170 mm, sementara Agustus dan September masing-masing hanya sekitar 5 mm. Suhu nyaris tidak berubah, dengan suhu maksimum siang sekitar 31-33 C sepanjang tahun dan malam hari dari sekitar 20 C pada Agustus hingga sekitar 24 C di musim hujan. Wilayah barat lebih basah dan hijau daripada timur, dan perbukitan di pedalaman lebih sering hujan daripada pesisir. Wikipedia meringkasnya sebagai musim kemarau Mei sampai November dan musim hujan Desember sampai April; sumber lokal menyebut awal musim hujan antara akhir Oktober dan Desember, tergantung tahun dan wilayahnya.</p>
+<table>
+<tr><th>Bulan</th><th>Hujan di Waingapu</th><th>Hari hujan</th><th>Maks / min</th><th>Laut</th></tr>
+<tr><td>Januari</td><td>170 mm</td><td>13</td><td>32 / 24 C</td><td>29,5 C</td></tr>
+<tr><td>Februari</td><td>160 mm</td><td>13</td><td>32 / 24 C</td><td>29 C</td></tr>
+<tr><td>Maret</td><td>145 mm</td><td>11</td><td>32 / 24 C</td><td>29,5 C</td></tr>
+<tr><td>April</td><td>70 mm</td><td>9</td><td>32 / 23 C</td><td>29,5 C</td></tr>
+<tr><td>Mei</td><td>35 mm</td><td>6</td><td>32 / 23 C</td><td>28,5 C</td></tr>
+<tr><td>Juni</td><td>25 mm</td><td>4</td><td>31 / 22 C</td><td>27,5 C</td></tr>
+<tr><td>Juli</td><td>10 mm</td><td>3</td><td>31 / 21 C</td><td>27 C</td></tr>
+<tr><td>Agustus</td><td>5 mm</td><td>1</td><td>31 / 20 C</td><td>26,5 C</td></tr>
+<tr><td>September</td><td>5 mm</td><td>1</td><td>32 / 21 C</td><td>27 C</td></tr>
+<tr><td>Oktober</td><td>10 mm</td><td>2</td><td>33 / 23 C</td><td>28 C</td></tr>
+<tr><td>November</td><td>40 mm</td><td>6</td><td>33 / 24 C</td><td>29,5 C</td></tr>
+<tr><td>Desember</td><td>135 mm</td><td>11</td><td>33 / 25 C</td><td>29,5 C</td></tr>
+</table>
+<p>Angka ini untuk Waingapu, bagian paling kering di pulau. Di Sumba Barat dan di perbukitan, hujan lebih banyak, terutama Desember sampai Maret.</p>
+
+<h2>Bulan demi bulan</h2>
+<h3>Januari: hijau, panas, dan basah</h3>
+<p>Bulan paling basah di wilayah timur. Bukit-bukit hijau pekat, sungai penuh, dan air terjun sedang deras-derasnya, tetapi sering cokelat berlumpur dan terlalu kuat untuk didekati. Jalan tanah menuju pantai dan kampung terpencil bisa tidak dapat dilalui. Pengunjung sedikit; bulan yang baik hanya jika Anda fleksibel dan tidak keberatan bepergian lebih lambat.</p>
+<h3>Februari: Pasola di barat</h3>
+<p>Masih musim hujan, tetapi inilah saat pertempuran ritual <a href="/id/culture/pasola-explained/">Pasola</a> pertama biasanya digelar, di wilayah Kodi dan Lamboya di barat. Tanggalnya ditetapkan para Rato berdasarkan munculnya cacing laut <em>nyale</em>, dan sering baru dipastikan satu atau dua minggu sebelumnya. Pada 2026, Pasola jatuh pada 9, 10, dan 11 Februari. Jika merencanakan perjalanan untuk Pasola, sisakan hari cadangan dan pesan transportasi lebih awal.</p>
+<h3>Maret: Pasola kedua dan pulau paling hijau</h3>
+<p>Pasola berpindah ke Wanokaka dan Gaura, biasanya pada Maret (pada 2026, tanggal 9, 10, dan 11 Maret). Hujan sedikit berkurang sepanjang bulan. Pemandangan sedang hijau-hijaunya, hal yang mengejutkan banyak pengunjung di pulau yang terkenal dengan sabana keemasan. Air terjun penuh, dan Matayangu khususnya luar biasa setelah hujan.</p>
+<h3>April: masa terbaik dimulai</h3>
+<p>Curah hujan di Waingapu turun setengahnya menjadi sekitar 70 mm. Bukit masih hijau, air terjun masih mengalir, dan jalan mulai mengering. Bulan yang sangat baik untuk fotografer dan wisatawan yang ingin melihat pulau hijau tanpa hujan terburuk. Ombak di pesisir selatan dan barat mulai naik seiring dimulainya musim swell dari selatan.</p>
+<h3>Mei: hijau berubah emas</h3>
+<p>Salah satu bulan terbaik secara keseluruhan. Hujan tinggal gerimis sesekali, langit cerah, air terjun seperti Lapopu dan Tanggedu mulai jernih dan lebih aman untuk berenang, dan warna emas pertama muncul di sabana timur. Jumlah pengunjung masih sedang.</p>
+<h3>Juni: kemarau sepenuhnya</h3>
+<p>Hari-hari cerah, malam lebih sejuk, dan hampir tanpa hujan. Berenang di Danau Weekuri terasa sempurna, dan dari Juni hingga Juli matahari terbenam tepat di antara dua tebing Pantai Mandorak. Kondisi jalan paling baik. Libur sekolah di Indonesia biasanya dimulai akhir Juni, sehingga wisatawan domestik bertambah.</p>
+<h3>Juli: musim ramai</h3>
+<p>Malam paling sejuk dalam setahun (sekitar 20-21 C di Waingapu) dan sinar matahari yang stabil. Ini bulan tersibuk di pulau, dengan liburan wisatawan asing dan libur sekolah Indonesia bersamaan (di NTT tahun ajaran baru dimulai 13 Juli 2026). Penerbangan dan kamar yang jumlahnya terbatas cepat penuh, jadi pesan mobil dan penginapan beberapa minggu sebelumnya. Meski begitu, dibanding Bali, Sumba tetap tenang.</p>
+<h3>Agustus: Sumba keemasan</h3>
+<p>Bulan paling kering, dengan sekitar satu hari hujan. Sabana Wairinding dan Puru Kambera berubah sepenuhnya menjadi keemasan, kuda-kuda merumput di padang kering, dan cahaya senja luar biasa. Debit air terjun lebih kecil tetapi jernih, dan beberapa di pedalaman bisa hampir kering. Laut paling sejuk, sekitar 26-27 C, dan angin pasat tenggara bertiup.</p>
+<h3>September: panas, kering, dan sepi</h3>
+<p>Sangat kering, makin panas, dan lebih sepi setelah musim liburan. Salah satu bulan terbaik untuk menikmati lanskap emas tanpa keramaian. Sore hari bisa berkabut karena pembakaran padang rumput.</p>
+<h3>Oktober: bulan terpanas</h3>
+<p>Suhu siang sekitar 33 C. Lanskap paling kering dan berdebu. Peselancar sering mendapat hari-hari dengan laut licin seperti kaca dan swell yang solid dari Oktober hingga Desember. Badai pertama bisa datang di akhir bulan, terutama di pedalaman dan perbukitan.</p>
+<h3>November: pergantian musim</h3>
+<p>Hujan mulai turun, awalnya berupa badai singkat di sore hari. Di timur, cuaca kering sering bertahan sampai pertengahan November atau lebih; di barat biasanya berakhir lebih awal. Hujan pertama membuat bukit kembali hijau dalam beberapa hari. Pengunjung lebih sedikit dan harga lebih rendah.</p>
+<h3>Desember: hujan dan liburan</h3>
+<p>Hujan mulai rutin, sekitar 135 mm dan 11 hari hujan di Waingapu. Masa Natal dan Tahun Baru (libur akhir semester ganjil di NTT berlangsung 21 Desember 2026 sampai 2 Januari 2027) membawa banyak keluarga pulang ke Sumba, dan pantai-pantai lokal seperti Walakiri ramai pada akhir pekan. Pesan tiket pesawat lebih awal.</p>
+
+<h2>Bukit hijau atau sabana keemasan?</h2>
+<p>Ini pertanyaan yang paling sering diajukan fotografer. Jawabannya sederhana: untuk <strong>bukit hijau</strong>, datanglah selama atau tepat setelah musim hujan, kira-kira akhir Januari sampai April. Untuk <strong>sabana keemasan klasik</strong> Sumba Timur, datanglah pada musim kemarau, sekitar Juli sampai Oktober. Mei dan Juni adalah masa peralihan, dengan sedikit dari keduanya.</p>
+
+<h2>Air terjun menurut musim</h2>
+<p>Air terjun di Sumba menuntut pilihan antara kekuatan dan kejernihan. Pada musim hujan, Lapopu, air terjun bertingkat setinggi 90 m, mengalir cokelat dan deras sehingga tidak bisa didekati; Matayangu berubah menjadi dinding air, tetapi jalurnya berlumpur dan licin. Pada musim kemarau, debit lebih kecil tetapi jernih, kolamnya tenang, dan berenang lebih mudah dan aman. Beberapa air terjun kecil di pedalaman bisa hampir kering pada September. Kompromi terbaik bagi kebanyakan orang: <strong>April sampai Juni</strong>. Lihat panduan <a href="/id/things-to-do/beaches-lagoons-waterfalls/">pantai, laguna, dan air terjun</a> kami.</p>
+
+<h2>Laut, selancar, dan berenang</h2>
+<p>Laut hangat sepanjang tahun, dari sekitar 26,5 C pada Agustus hingga 29,5 C di bulan-bulan basah. <strong>Musim selancar</strong> di pesisir selatan dan barat kira-kira April sampai Oktober, ketika musim dingin belahan bumi selatan mengirim swell Samudra Hindia dan angin pasat tenggara bertiup dari darat di banyak titik ombak. Oktober sampai Desember bisa membawa hari-hari dengan laut licin. Beberapa titik ombak bekerja dengan angin barat di musim hujan. Ombak besar juga berarti arus kuat: berenanglah hanya di tempat warga setempat berenang, dan jangan sendirian di pantai yang sepi. Selengkapnya di <a href="/id/things-to-do/surfing-in-sumba/">berselancar di Sumba</a>.</p>
+
+<h2>Keramaian, libur, dan harga</h2>
+<p>Sumba tidak pernah sepadat Bali. Sumba Timur mencatat 41.524 pengunjung sepanjang 2025, sekitar satu dari delapan adalah wisatawan mancanegara, dengan rata-rata lama tinggal tiga malam. Namun jumlah kamar di pulau ini sangat sedikit, sehingga masa ramai cepat terasa:</p>
+<ul>
+<li><strong>Paling ramai:</strong> Juli dan Agustus (liburan wisatawan asing dan domestik), serta akhir Desember sampai awal Januari.</li>
+<li><strong>Ramai saat Pasola:</strong> beberapa hari pada Februari dan Maret di wilayah barat.</li>
+<li><strong>Paling sepi:</strong> Januari (di luar Tahun Baru), November, dan bulan-bulan peralihan April-Mei serta September-Oktober.</li>
+</ul>
+<p>Penginapan dan sewa mobil lebih mahal di musim kemarau. Lonely Planet (2026) menyarankan memesan kamar dan mobil lebih awal untuk Juni sampai Agustus. Kisaran harga mobil dengan sopir ada di panduan <a href="/id/getting-here/sumba-travel-costs/">biaya liburan ke Sumba</a>.</p>
+
+<h2>Rekomendasi kami</h2>
+<ul>
+<li><strong>Kunjungan pertama, cuaca terbaik secara umum:</strong> akhir Mei sampai awal Juli, atau September.</li>
+<li><strong>Foto sabana keemasan:</strong> Agustus sampai Oktober.</li>
+<li><strong>Bukit hijau dan air terjun penuh:</strong> Maret sampai April.</li>
+<li><strong>Pasola:</strong> Februari atau Maret, dengan tanggal yang fleksibel.</li>
+<li><strong>Selancar:</strong> April sampai Oktober.</li>
+</ul>
+<p>Bulan apa pun yang Anda pilih, bawalah pelindung matahari, obat antinyamuk, dan sedikit kesabaran. Baca panduan <a href="/id/getting-here/sumba-travel-safety-health/">keamanan dan kesehatan</a> sebelum berangkat, lalu susun rute dengan <a href="/id/things-to-do/sumba-itinerary-5-7-10-days/">itinerary Sumba 5, 7, dan 10 hari</a> kami. Sedang membandingkan pulau? Lihat <a href="/id/things-to-do/sumba-vs-bali-flores/">Sumba, Bali, atau Flores</a>.</p>"""
+},
+"facts": {
+ "en": [["Best overall", "Dry season, roughly May-October (June-August classic)"], ["Wettest months", "December-March (Waingapu: about 135-170 mm a month)"], ["Driest months", "August-September (about 5 mm, 1 rainy day)"], ["Pasola", "Usually February (Kodi, Lamboya) and March (Wanokaka, Gaura)"], ["Green vs golden", "Green: late Jan-April; golden: July-October"], ["Surf season", "Roughly April-October, south and west coasts"]],
+ "es": [["Mejor en general", "Estación seca, más o menos de mayo a octubre (junio-agosto, lo clásico)"], ["Meses más lluviosos", "Diciembre-marzo (Waingapu: unos 135-170 mm al mes)"], ["Meses más secos", "Agosto-septiembre (unos 5 mm, 1 día de lluvia)"], ["Pasola", "Normalmente febrero (Kodi, Lamboya) y marzo (Wanokaka, Gaura)"], ["Verde u oro", "Verde: finales de enero-abril; dorado: julio-octubre"], ["Temporada de surf", "Más o menos abril-octubre, costas sur y oeste"]],
+ "id": [["Terbaik secara umum", "Kemarau, kira-kira Mei-Oktober (Juni-Agustus paling klasik)"], ["Bulan terbasah", "Desember-Maret (Waingapu: sekitar 135-170 mm per bulan)"], ["Bulan terkering", "Agustus-September (sekitar 5 mm, 1 hari hujan)"], ["Pasola", "Biasanya Februari (Kodi, Lamboya) dan Maret (Wanokaka, Gaura)"], ["Hijau atau emas", "Hijau: akhir Januari-April; emas: Juli-Oktober"], ["Musim selancar", "Kira-kira April-Oktober, pesisir selatan dan barat"]]
+},
+"faq": {
+ "en": [
+  ["What is the best month to visit Sumba?", "June to August offers the most reliable sunshine and easiest roads. May and September are nearly as good and quieter."],
+  ["When is the rainy season in Sumba?", "Roughly December to March, with the turn of the rains anywhere from late October to December. The east is drier than the west."],
+  ["When is the Pasola in Sumba?", "Usually February in Kodi and Lamboya and March in Wanokaka and Gaura. Rato elders set the dates following the nyale sea worms, often only a week or two ahead."],
+  ["When are Sumba's hills green?", "During and just after the rainy season, roughly late January to April. From July to October the savanna turns golden."],
+  ["Are Sumba's waterfalls worth visiting in the dry season?", "Yes. Flow is lower but the water is clear and swimming is safer. In the rainy season they are more powerful but often brown and hard to approach."],
+  ["Is Sumba crowded in July and August?", "It is the busiest period, but still quiet compared with Bali. The island has few rooms, so book cars and accommodation weeks ahead."]],
+ "es": [
+  ["¿Cuál es el mejor mes para viajar a Sumba?", "De junio a agosto hay el sol más fiable y las carreteras más fáciles. Mayo y septiembre son casi igual de buenos y más tranquilos."],
+  ["¿Cuándo es la temporada de lluvias en Sumba?", "Más o menos de diciembre a marzo, aunque las lluvias pueden llegar entre finales de octubre y diciembre. El este es más seco que el oeste."],
+  ["¿Cuándo se celebra la Pasola en Sumba?", "Normalmente en febrero en Kodi y Lamboya y en marzo en Wanokaka y Gaura. Los ancianos Rato fijan las fechas según los gusanos marinos nyale, a menudo solo una o dos semanas antes."],
+  ["¿Cuándo están verdes las colinas de Sumba?", "Durante la temporada de lluvias y justo después, más o menos de finales de enero a abril. De julio a octubre la sabana se vuelve dorada."],
+  ["¿Merece la pena ver las cascadas de Sumba en la estación seca?", "Sí. Llevan menos agua, pero está clara y bañarse es más seguro. En la temporada de lluvias tienen más fuerza, aunque suelen bajar marrones y cuesta acercarse."],
+  ["¿Hay mucha gente en Sumba en julio y agosto?", "Es la época de más movimiento, pero sigue siendo tranquila comparada con Bali. Hay pocas habitaciones, así que reserva coche y alojamiento con semanas de antelación."]],
+ "id": [
+  ["Bulan apa yang terbaik untuk ke Sumba?", "Juni sampai Agustus memberikan cuaca cerah paling bisa diandalkan dan jalan paling mudah. Mei dan September hampir sama baiknya dan lebih sepi."],
+  ["Kapan musim hujan di Sumba?", "Kira-kira Desember sampai Maret, dengan awal hujan antara akhir Oktober dan Desember. Wilayah timur lebih kering daripada barat."],
+  ["Kapan Pasola di Sumba?", "Biasanya Februari di Kodi dan Lamboya, dan Maret di Wanokaka dan Gaura. Para Rato menetapkan tanggalnya berdasarkan cacing laut nyale, sering hanya satu atau dua minggu sebelumnya."],
+  ["Kapan bukit-bukit di Sumba hijau?", "Selama dan tepat setelah musim hujan, kira-kira akhir Januari sampai April. Dari Juli sampai Oktober sabana berubah menjadi keemasan."],
+  ["Apakah air terjun di Sumba layak dikunjungi saat kemarau?", "Ya. Debitnya lebih kecil tetapi airnya jernih dan berenang lebih aman. Saat musim hujan airnya lebih deras, tetapi sering cokelat dan sulit didekati."],
+  ["Apakah Sumba ramai pada Juli dan Agustus?", "Itu masa tersibuk, tetapi tetap tenang dibanding Bali. Jumlah kamar terbatas, jadi pesan mobil dan penginapan beberapa minggu sebelumnya."]]
+},
+"places": [
+ {"name": "Waingapu", "lat": -9.6497, "lon": 120.2637, "area": "East Sumba"},
+ {"name": "Wairinding hill", "lat": -9.6795, "lon": 120.1001, "area": "East Sumba"},
+ {"name": "Puru Kambera savanna", "lat": -9.5443, "lon": 120.1143, "area": "East Sumba"},
+ {"name": "Walakiri beach", "lat": -9.6286, "lon": 120.4275, "area": "East Sumba"},
+ {"name": "Weekuri Lagoon", "lat": -9.4911, "lon": 118.9598, "area": "Southwest Sumba"},
+ {"name": "Lapopu waterfall", "lat": -9.6783, "lon": 119.4930, "area": "West/Central Sumba"},
+ {"name": "Matayangu waterfall", "lat": -9.6733, "lon": 119.5047, "area": "Central Sumba"},
+ {"name": "Bondo Kodi (Pasola area)", "lat": -9.5933, "lon": 118.9927, "area": "Southwest Sumba"},
+ {"name": "Wanokaka beach (Pasola area)", "lat": -9.7441, "lon": 119.4518, "area": "West Sumba"},
+ {"name": "Marosi beach (Lamboya)", "lat": -9.7624, "lon": 119.3146, "area": "West Sumba"}
+],
+"sources": [
+ ["Sumba climate: average weather, temperature, rain, Climates to Travel (1991-2020 data, Waingapu)", "https://climatestotravel.com/climate/indonesia/sumba"],
+ ["Sumba, Wikipedia (climate, highest point)", "https://en.wikipedia.org/wiki/Sumba"],
+ ["A guide to Sumba, Indonesia, Lonely Planet (Charukesi Ramadurai), 10 April 2026", "https://www.lonelyplanet.com/articles/a-guide-to-sumba-indonesia"],
+ ["Pasola Festival in Sumba: a traveler's guide (2026 dates), Backindo", "https://www.backindo.com/pasola-sumba"],
+ ["Sumba surf travel guide, Perfect Wave Travel", "https://www.perfectwavetravel.com/sumba-surf-guide"],
+ ["41.524 wisatawan kunjungi Sumba Timur sepanjang tahun 2025, Kumparan, 14 January 2026", "https://kumparan.com/kumparantravel/41-524-wisatawan-kunjungi-sumba-timur-sepanjang-tahun-2025-26cpoh4Uzcp"],
+ ["Kalender Pendidikan Nusa Tenggara Timur 2026/2027, Komunitas Belajar, July 2026", "https://www.komunitasbelajar.id/2026/07/kalender-pendidikan-nusa-tenggara-timur-NTT-2026-2027.html"],
+ ["Sumba ultimate guide, Seek Sophie", "https://www.seeksophie.com/en/magazine/a/sumba-ultimate-guide"]
+],
+"image_candidate": {"file_page": "https://commons.wikimedia.org/wiki/File:Bukit_Wairinding-Sumba_Timur.jpg", "direct_url": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Bukit_Wairinding-Sumba_Timur.jpg", "credit": "Djakartacaver", "license": "CC BY-SA 4.0", "license_url": "https://creativecommons.org/licenses/by-sa/4.0", "caption": {"en": "The rolling hills of Wairinding, East Sumba, which turn from green in the rainy season to gold in the dry months.", "es": "Las colinas onduladas de Wairinding, en Sumba Oriental, que pasan del verde en la temporada de lluvias al dorado en los meses secos.", "id": "Bukit-bukit Wairinding di Sumba Timur, yang berubah dari hijau di musim hujan menjadi keemasan di bulan-bulan kemarau."}},
+}
+
+GUIDES = [G1, G2]
