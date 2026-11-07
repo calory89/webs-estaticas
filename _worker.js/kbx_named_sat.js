@@ -100,7 +100,7 @@ function span(d) {
 }
 
 // milestones: promise tracker first (with earlier dates of moved promises), then the record's facts for kinds it lacks
-function milestones(prom, fx) {
+export function milestones(prom, fx) {
   const out = [], seen = new Set();
   const add = (k, d, old) => { const sp = span(d); if (!sp) return; const key = k + '|' + sp[0] + '|' + sp[1]; if (seen.has(key)) return; seen.add(key); out.push({ k, d: String(d), a: sp[0], b: sp[1], old: !!old }); };
   for (const p of prom || []) { add(p.k, p.d, false); for (const h of p.hist || []) if (h.d && h.d !== p.d) add(p.k, h.d, true); }
@@ -126,8 +126,8 @@ const CSS = '<style id="ksat-css">.ksat{--ksat-t:76px}.ksat .ksat-sum{margin:0 0
 // change index per month: (built-up or bare share of the circle minus that of the ring) minus the median of that difference over the first
 // 3 clear months, in points. Season and haze move circle and ring together, so the difference is far steadier than either share alone
 // (on our 125 series the single-month deviation in the first months has a median of 4 points and a 90th percentile of 15).
-const BAND = 15;
-function index(rec) {
+export const BAND = 15;
+export function index(rec) {
   const d = rec.b.map((v, i) => v != null && rec.r[i] != null ? v - rec.r[i] : null), ok = d.map((v, i) => v == null ? -1 : i).filter(i => i >= 0);
   if (ok.length < 6) return null;
   const med = a => { const v = a.slice().sort((x, y) => x - y), h = v.length >> 1; return v.length % 2 ? v[h] : (v[h - 1] + v[h]) / 2; };

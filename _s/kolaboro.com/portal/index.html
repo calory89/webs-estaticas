@@ -3,7 +3,7 @@
 <title>Your case | Kolaboro</title><meta name="robots" content="noindex,nofollow"><link rel="icon" href="/k/favicon.svg" type="image/svg+xml"><meta name="theme-color" content="#17212B">
 <link rel="preload" href="/k/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/k/app.css?v=71f6655e8c"><link rel="stylesheet" href="/k/console.css?v=955106df"><script src="/k/console.js?v=6ae3492a"></script>
 
-<script src="/portal/es.js?v=379754f9"></script><link rel="manifest" href="/portal/manifest.webmanifest"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="/agents/icon-192.png">
+<script src="/portal/es.js?v=379754f9"></script><script src="/k/pay16.js?v=1"></script><link rel="manifest" href="/portal/manifest.webmanifest"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="/agents/icon-192.png">
 <script>(window.kbLate||function(f){addEventListener("load",function(){setTimeout(f,1500)})})(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V";document.head.appendChild(s)})</script><script>window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-FJKJE77K4V');gtag('config','G-H5TGZJ1KNG');</script></head><body>
 <header class="ap-top"><div class="ap-top-in"><a class="ap-brand" href="/portal/"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 4v24M8 16 23 6.5M8 16l15 9.5" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/><circle cx="24" cy="6" r="3.4" fill="currentColor"/><circle cx="24" cy="26" r="3.4" fill="currentColor"/><circle cx="8" cy="16" r="4.2" fill="#FF5B14"/></svg>kolaboro</a><span class="ap-muted" style="color:#9FB0BF" id="who"></span><span class="ap-sp"></span>
 <button class="ap-chip" id="newc">+ Project</button><button class="ap-chip" id="lng" title="English / Español">ES</button><details class="kc-menu"><summary class="ap-chip" aria-label="Account">Account</summary><div><button type="button" id="pwb">Change password</button><button type="button" id="kc-keys-b">Keyboard shortcuts</button><button type="button" id="out">Log out</button></div></details></div></header>
@@ -96,7 +96,7 @@ var KB = (function(){
     h += '<section class="ap-card"><h2>What we need from you</h2><ul class="ap-chk">' + chk.map(function(x){ return '<li class="' + (x[1] ? 'y' : '') + '"><i>' + (x[1] ? '✓' : '') + '</i>' + x[0] + '</li>'; }).join('') + '</ul></section>';
     // timeline
     h += '<section class="ap-card"><h2>Case timeline</h2>' + (c.log.length ? '' : '<p class="kc-none">Every stage change appears here with its date.</p>') + '<ul class="ap-tl">' + c.log.slice().reverse().map(function(l){ return '<li><b>' + STAGES[l.stage] + '</b><div class="ap-small ap-muted">' + fmt(l.at, true) + '</div>' + (l.note ? '<div>' + esc(l.note) + '</div>' : '') + '</li>'; }).join('') + '</ul></section>';
-    if (D.saved) h += savedHtml() + dataHtml();
+    if (D.saved) h += savedHtml() + payHtml() + dataHtml();
     h += '</div></div>';
     $('app').innerHTML = h; if (window.KBX) KBX(c, D, TOKEN); bindPlus(c); c7();
     var ch = $('chat'); if (ch) ch.scrollTop = ch.scrollHeight;
@@ -142,7 +142,7 @@ var KB = (function(){
     var gs = [['Create your account', true], ['Save a project from the database', dbSaved().length > 0, '/database/'], ['Open a case and get a free desk review', D.cases.length > 0, '#hf'], ['Add your payment schedule', false], ['Ask for the on-the-ground check before you pay', false, '/pricing/']], gd = gs.filter(function(x){ return x[1]; }).length;
     h += '<section class="ap-card"><h2>Getting started <span class="ap-muted ap-small">' + gd + ' of ' + gs.length + '</span></h2><div class="kp-prog"><i style="width:' + (100 * gd / gs.length) + '%"></i></div><ul class="ap-chk">' + gs.map(function(x){ return '<li class="' + (x[1] ? 'y' : '') + '"><i>' + (x[1] ? '✓' : '') + '</i>' + (x[2] && !x[1] ? '<a href="' + x[2] + '">' + x[0] + '</a>' : x[0]) + '</li>'; }).join('') + '</ul></section>';
     h += '<section class="ap-card"><h2>How it works</h2><ol class="ap-list"><li>Save the projects you are considering. We show you here when their public record changes.</li><li>Open a case for the one you are about to pay. The desk review is free.</li><li>Pay €490 for the full check: land title, building permit, developer and a site visit by someone who lives there.</li><li>Before each instalment, you see whether the evidence supports paying it.</li></ol><p class="ap-small ap-muted" style="margin-bottom:0"><a href="/database/">Browse the database</a> · <a href="/cases/files/kolaboro-report-example-safe-to-pay.pdf" target="_blank" rel="noopener">Example report</a> · <a href="/pricing/">Pricing</a></p></section>';
-    h += '</div><div class="ap-col">' + (D.saved ? savedHtml() + dataHtml() : '') + '</div></div>';
+    h += '</div><div class="ap-col">' + (D.saved ? savedHtml() + payHtml() + dataHtml() : '') + '</div></div>';
     return h;
   }
   function savedHtml(){
@@ -195,7 +195,7 @@ var KB = (function(){
         call('share_create', o).then(function(d){ if (d.error) { KB.toast(d.error === 'limit' ? 'You already have 10 active links' : 'Could not create the link'); return; } var tok = d.share_token; D = d; render(); kev('case_share');
           if (tok) { var url = location.origin + '/shared/#t=' + tok, out = $('shout'); if (out) { out.innerHTML = '<div class="ap-banner ok" style="margin:10px 0 0;word-break:break-all"><b>Link ready. Copy it now, it is shown only once:</b><br><code>' + esc(url) + '</code><br><button class="ap-chip" id="shcp" style="margin-top:8px;background:#17212B">Copy link</button></div>'; $('shcp').onclick = function(){ try { navigator.clipboard.writeText(url); KB.toast('Copied'); } catch (x) {} }; out.scrollIntoView({ block: 'nearest' }); } } }); };
     }
-    var dx = $('dexp'); if (dx) dx.onclick = function(){ dx.disabled = true; call('export').then(function(d){ dx.disabled = false; if (!d || !d.export) { KB.toast('Could not export'); return; } var o = { exported_from: 'kolaboro.com', export: d.export, cases: d.cases, saved: d.saved }; var a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([JSON.stringify(o, null, 2)], { type: 'application/json' })); a.download = 'kolaboro-my-data-' + new Date().toISOString().slice(0, 10) + '.json'; a.click(); kev('data_export'); }); };
+    var dx = $('dexp'); if (dx) dx.onclick = function(){ dx.disabled = true; call('export').then(function(d){ return (window.KBPay ? KBPay.exportRows({ token: TOKEN, rpc: KB.rpc }) : Promise.resolve(null)).then(function(ps){ dx.disabled = false; if (!d || !d.export) { KB.toast('Could not export'); return; } var o = { exported_from: 'kolaboro.com', export: d.export, cases: d.cases, saved: d.saved, payment_schedules: ps || [] }; var a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([JSON.stringify(o, null, 2)], { type: 'application/json' })); a.download = 'kolaboro-my-data-' + new Date().toISOString().slice(0, 10) + '.json'; a.click(); kev('data_export'); }); }); };
     var dd = $('ddel'); if (dd) dd.onclick = function(){ if (D.user.admin_view) { KB.toast('Not available in admin view'); return; } if (!confirm('Delete your account, all your cases, messages, saved projects and share links? This cannot be undone.')) return; var pw = prompt('Type your password to confirm'); if (!pw) return; call('delete_account', { password: pw }).then(function(d){ if (d && d.deleted) { KB.del('kb-token'); KB.del('kb-token-as'); alert('Your account was deleted.'); location.href = '/'; } else KB.toast(d && d.error === 'wrong' ? 'Wrong password' : 'Could not delete'); }); };
     var plb = $('plb'); if (plb && c) plb.onclick = function(){
       var f = $('plf').files[0], t = $('plt').value.trim(), out = $('plo');
@@ -214,7 +214,11 @@ var KB = (function(){
       if (f) { var rd = new FileReader(); rd.onload = function(){ go(rd.result); }; rd.readAsDataURL(f); } else go(null);
     };
     fillSaved();
+    mountPay();
   }
+  // payments vs progress (/k/pay16.js, pay16): own rows in kolaboro_pay_schedules through the session-checked kolaboro_pay_schedule
+  function payHtml(){ return window.KBPay ? '<section class="ap-card" id="kpay"></section>' : ''; }
+  function mountPay(){ var el = $('kpay'); if (el && window.KBPay) KBPay.mount(el, { token: TOKEN, rpc: KB.rpc, refs: dbSaved().map(function(x){ return x.ref; }), toast: KB.toast }); }
   var SYNCED = false;
   function syncWatch(){
     if (SYNCED || !D || !D.saved || D.user.demo || D.user.admin_view) return; SYNCED = true;

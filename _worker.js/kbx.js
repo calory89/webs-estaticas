@@ -32,8 +32,9 @@ import * as m_disc from './kbx_disc.js'; // discovery: world map, similar projec
 import * as m_qa from './kbx_qa.js'; // quality engineering: visual regression, page weight, SBOM, real-user vitals, accessibility
 import * as m_live from './kbx_live.js'; // status: server-side endpoint checks and incident history, CSP violation counts (b9c)
 import * as m_acct from './kbx_acct.js'; // accounts and trust: buyer passkeys, W3C verifiable credentials, did:web (b10b)
+import * as m_pay from './kbx_pay.js'; // buyer portal: payments vs progress, per-project satellite series (pay16)
 import * as m_ins from './kbx_ins.js'; // insight: weekly market digest, market page figures, score explainer, project-scoped questions, change heatmap
-const MODS = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, m_ship, m_data, m_disc, m_qa, m_ins, m_live, m_acct];
+const MODS = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, m_ship, m_data, m_disc, m_qa, m_ins, m_live, m_acct, m_pay];
 export async function route(req, u, env, ctx) {
   for (const m of MODS) if (m.PATHS && m.PATHS.test(u.pathname)) return m.handle(req, u, env, ctx);
   return new Response(JSON.stringify({ error: 'not found' }), { status: 404, headers: { 'content-type': 'application/json' } });
