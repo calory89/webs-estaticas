@@ -80,6 +80,13 @@
 - [Public log: daily hash-chained heads timestamped in Bitcoin](https://kolaboro.com/log/)
 - [Open data and API](https://kolaboro.com/docs/api/)
 
+
+## Citation assets (data of the day, CC BY 4.0)
+- [Every named project, one citation-ready block each](https://kolaboro.com/llms-projects.txt): handover on record, permit number published or not, buyer checks, last checked
+- Canonical answers per project in Markdown: https://kolaboro.com/answers/<slug>.md (is it legit, delivery date, permit, developer, buyer reviews, what changed, sources, how to cite); slugs in https://kolaboro.com/api/v1/projects
+- [Monthly market data stories](https://kolaboro.com/stories/): delays, dated promises, permits, advertised prices vs registered sales, page changes; each with a CSV and a citation line
+- [What changed this month](https://kolaboro.com/changes/): changes between dated, fingerprinted copies of developer pages ([Atom](https://kolaboro.com/changes/feed.atom))
+- Embeddable fact card and delivery tracker per project: https://kolaboro.com/embed/p/<slug>/
 ## Facts
 - Prices: Kolaboro pre-purchase check EUR 490; construction monitoring EUR 99 per month; buyer's agent 1% of price, minimum EUR 2,000.
 - Agents are never paid by developers. Paying for verification never changes a Trust Score.
