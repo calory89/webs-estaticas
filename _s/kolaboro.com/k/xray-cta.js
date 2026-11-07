@@ -244,7 +244,7 @@
   function cards() { return ((S.st && S.st.cards) || []).filter(Boolean); }
   function facts(c) { var f = c && (c.facts || c.items) || []; return f.filter(function (x) { return x && !x.absent; }).map(function (x) { return { k: String(x.k || x.label || ''), v: String(x.v != null ? x.v : x.value != null ? x.value : ''), q: x.q || x.quote || '', src: x.src || x.url || '' }; }); }
   function find(rx) { return cards().filter(function (c) { return rx.test(String(c.id || '')); })[0] || null; }
-  function fact(rxK, rxV) { var all = cards().filter(function (c) { return !/^(flags|market|law|similar|developer)$/.test(c.id); }); /* d12b: market-wide, legal and other-project cards are not facts about this project */ for (var i = 0; i < all.length; i++) { var F = facts(all[i]); for (var j = 0; j < F.length; j++) if (rxK.test(F[j].k) && (!rxV || rxV.test(F[j].v)) && F[j].v) return F[j]; } return null; }
+  function fact(rxK, rxV) { var all = cards().filter(function (c) { return !/^(flags|market|law|similar|developer|tls|domain|hosting|wayback|images|satellite)$/.test(c.id); }); /* d12b: market-wide, legal and other-project cards are not facts about this project */ for (var i = 0; i < all.length; i++) { var F = facts(all[i]); for (var j = 0; j < F.length; j++) if (rxK.test(F[j].k) && (!rxV || rxV.test(F[j].v)) && F[j].v) return F[j]; } return null; }
   function okSt(c) { return c && /^(ok|found)$/.test(c.status || ''); }
   function gapSet() { var g = {}; cards().forEach(function (c) { (c.gaps || []).forEach(function (k) { g[String(k)] = 1; }); }); return g; }
   function ctxNamed() { return (S.ctx && S.ctx.named) || null; }

@@ -15,7 +15,7 @@
 import { fetchPage, okUrl, pageParts, scanInjection, rpc, sha, WKEY, api as kbApi, logApi } from './kolaboro.js';
 
 export const PATHS = /^\/api\/kb\/xray(?:\/stats)?\/?$|^\/api\/v1\/xray(?:\/openapi\.json)?\/?$|^\/x\/[0-9a-f]{64}(?:\/|\.json|\/vc)?$/;
-const XV = 'd12b4';   // keep equal to KXR_V in index.js (cache-busting of /k/xray.js)
+const XV = 'd12b5';   // keep equal to KXR_V in index.js (cache-busting of /k/xray.js)
 const ORIGIN = 'https://kolaboro.com', VERSION = 'kolaboro-xray-1', PER_IP_HOUR = 30, CARD_MS = 12000;
 const UA = 'Mozilla/5.0 (compatible; KolaboroXray/1.0; +https://kolaboro.com/data-policy)';
 const te = new TextEncoder();
@@ -601,7 +601,7 @@ async function page(root, env, ctx, shell) {
     (d ? '<p class="lead">What free public sources said about this project on ' + escH(String(d.meta.started_at).slice(0, 10)) + ' at ' + escH(String(d.meta.started_at).slice(11, 16)) + ' UTC. Every fact links to its source. The copy is sealed, so any change would show.</p><p class="xr-fp">Fingerprint (SHA-256)<code>' + root + '</code></p><p class="xr-hcta"><a class="btn btn-line btn-sm" href="/check/' + (d.meta.input.url ? '?url=' + encodeURIComponent(d.meta.input.url) : '') + '">Run it again today</a></p>' : '<p class="lead">Sealed X-rays are kept in our edge cache and database. This one is not there, or the link is incomplete.</p><p><a class="btn btn-hi" href="/check/">Run a new X-ray</a></p>') + '</div></section>' +
     '<style>.xr-h1{font-size:clamp(1.9rem,5vw,3.2rem);line-height:1.05;overflow-wrap:anywhere;max-width:22ch}.xr-fp{font-size:.82rem;color:var(--muted);margin:10px 0 0;overflow-wrap:anywhere}.xr-fp code{font:600 .8rem ui-monospace,Menlo,monospace;color:var(--ink-2);margin-inline-start:6px}.xr-hcta{margin:14px 0 0}#analyze.sec{padding-top:8px}</style>' +
     '<section class="sec" id="analyze"><div class="wrap"><div id="xr-sealed" data-root="' + root + '"></div>' + noJs + '</div></section>' +
-    '<script src="/k/xray.js?v=' + XV + '" defer></script><script src="/k/xray-cta.js?v=4" defer></script>' + (d ? '<script type="application/json" id="xr-data">' + JSON.stringify(d).replace(/</g, '\\u003c') + '</script>' : '');
+    '<script src="/k/xray.js?v=' + XV + '" defer></script><script src="/k/xray-cta.js?v=5" defer></script>' + (d ? '<script type="application/json" id="xr-data">' + JSON.stringify(d).replace(/</g, '\\u003c') + '</script>' : '');
   const r = new HTMLRewriter()
     .on('title', { element(e) { e.setInnerContent(title); } })
     .on('meta[name="description"]', { element(e) { e.setAttribute('content', 'A sealed Kolaboro Project X-ray: what free public sources and the project page said, each item with its source and SHA-256.'); } })
