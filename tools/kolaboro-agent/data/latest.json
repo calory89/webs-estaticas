@@ -30362,17 +30362,24 @@
    "title_type": null,
    "lease_years_base": null,
    "extension_promised": null,
-   "guaranteed_language": null,
+   "guaranteed_language": false,
    "advertised_yield_pct": null,
    "completion_year": null,
    "permit_claim": false,
    "permit_number": null,
    "plans_published": false,
    "escrow_or_guarantee": null,
-   "quotes": []
+   "quotes": [
+    "Evergreen Homes is a gated residential complex with 80 three and four-bedroom townhouses",
+    "Key ready. Visit show home.",
+    "Development financed by: Evergreen Homes"
+   ]
   },
-  "source": "seed",
-  "last_error": "HTTP Error 522: <none>"
+  "source": "ai",
+  "hash": "47b2fc9b7b72bb4f",
+  "sha256": "47b2fc9b7b72bb4f2f20d6610c827547eeaefe05ca6076a88cd6ff0909ec1e90",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
  },
  "proa-costa-del-sol": {
   "name": "Proa",
@@ -30786,12 +30793,329 @@
   "url": "https://www.elleresidencesmiami.com/",
   "market": "Miami",
   "claims": {
+   "price_from": 600000,
+   "currency": "USD",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Live Fashionably from $600,000 to $1.5 million",
+    "take advantage of our fully managed rental program when not in residence",
+    "the world's first ELLE Residences arrives fully finished, perfectly furnished and ready-to-live"
+   ]
+  },
+  "source": "ai",
+  "hash": "857856d9741081cc",
+  "sha256": "857856d9741081ccf4867c3e1d0ad1985d6fdbae1e6626760dc1f0f4feef3f4e",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "altura-160-costa-del-sol": {
+  "name": "Altura 160",
+  "url": "https://taylorwimpeyspain.com/es/casa/altura-160-benahavis-marbella-malaga/",
+  "market": "Costa del Sol",
+  "claims": {
+   "price_from": 499000,
+   "currency": "EUR",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2026,
+   "permit_claim": true,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "El proyecto cuenta con licencia de obras",
+    "Entrega prevista: Septiembre 2026.",
+    "Su contenido no constituye un contrato, parte de un contrato, ni una garantía."
+   ]
+  },
+  "source": "ai",
+  "hash": "7f976f5e6afe8d10",
+  "sha256": "7f976f5e6afe8d105a532472f5a5c064b6fd0924f55dcbd02262658e5b55c1e5",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "sunny-golf-costa-del-sol": {
+  "name": "Sunny Golf",
+  "url": "https://taylorwimpeyspain.com/es/casa/sunny-golf-estepona-malaga/",
+  "market": "Costa del Sol",
+  "claims": {
+   "price_from": 375000,
+   "currency": "EUR",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2026,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Desde 375.000€ 2 habitaciones 2 baños 83.76 m2",
+    "Fase 3: Agosto 2026 (Bloque 4).",
+    "Venta directa de Taylor Wimpey España."
+   ]
+  },
+  "source": "ai",
+  "hash": "30e302d12b5a09dd",
+  "sha256": "30e302d12b5a09dde5256de9c566b0f2a6fb9e2aa756c2ef7307fe16c0b3a4da",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "windmill-bay-algarve-residence-algarve": {
+  "name": "Windmill Bay,  Algarve Residence",
+  "url": "https://www.thepreplan.com/en/buy-property-portugal/silves/windmill-bay",
+  "market": "Algarve",
+  "claims": {
+   "price_from": 775000,
+   "currency": "EUR",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2028,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Prices ranging from €775,000.00 to €995,000.00",
+    "The developer's estimated completion date for Windmill Bay is June 2028.",
+    "According to the plans submitted, construction of the villas is due to begin in the first quarter of 2027"
+   ]
+  },
+  "source": "ai",
+  "hash": "8f50688eb1a096fd",
+  "sha256": "8f50688eb1a096fd818096180bec2986403d10199855b45d640e353434cf25f4",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "villa-magna-eco-resort-algarve": {
+  "name": "Villa Magna Eco-Resort",
+  "url": "http://www.livingroup.com.pt",
+  "market": "Algarve",
+  "claims": {
    "price_from": null,
    "currency": null,
    "title_type": null,
    "lease_years_base": null,
    "extension_promised": null,
-   "guaranteed_language": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "This Account has been suspended."
+   ]
+  },
+  "source": "ai",
+  "hash": "f067e9a11fd41687",
+  "sha256": "f067e9a11fd416875fd1457727dbdec8efb0f6996cd85a5247489cbc035aab2e",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "bocage-65-lisbon": {
+  "name": "Bocage 65",
+  "url": "https://www.bocage65.pt/",
+  "market": "Lisbon",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Composto por 19 apartamentos de tipologías T1 ,T2, T3 e T4",
+    "todos os apartamentos Bocage 65 possuem tomadas para carregamento de veículos eléctricos e arrecadações.",
+    "Um projecto de arquitectura vanguardista e reconhecida qualidade FORUS."
+   ]
+  },
+  "source": "ai",
+  "hash": "47a1e6ac6ac74c9c",
+  "sha256": "47a1e6ac6ac74c9c2761da1ef5176be515ed6c35e66b2e238f7405bda0c94ade",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "estrela-75-lisbon": {
+  "name": "Estrela 75",
+  "url": "https://estrela75.com/apresentacao/",
+  "market": "Lisbon",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "O Estrela 75 tem 9 apartamentos, de tipologias entre T2+1 a T4+1 e de diversas dimensões.",
+    "Todos os apartamentos dispõem de estacionamento e acabamentos de alta qualidade.",
+    "Os pés direitos originais serão mantidos para conservar a originalidade do edifício."
+   ]
+  },
+  "source": "ai",
+  "hash": "c90a51f5ddcb2acb",
+  "sha256": "c90a51f5ddcb2acba95d38a9f4b9a19c373fec20f36f429d084404658da3e5bb",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "vila-gra-a-lisbon": {
+  "name": "Vila Graça",
+  "url": "https://www.imovirtual.com/pt/empreendimento/vila-graca-ID1izcP",
+  "market": "Lisbon",
+  "claims": {
+   "price_from": 690000,
+   "currency": "EUR",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Conclusão prevista Sem informação",
+    "Estado da construção : em construção",
+    "Data de início da construção : sem informação"
+   ]
+  },
+  "source": "ai",
+  "hash": "e2680b7ec0a65a22",
+  "sha256": "e2680b7ec0a65a22362a36ca87eb5b807b5feaf9e4a1a069149912ab440e38b2",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "mountain-residences-at-palmilla-reserve-los-cabos": {
+  "name": "Mountain Residences at Palmilla Reserve",
+  "url": "https://palmillareserve.com/own/mountain-residences/",
+  "market": "Los Cabos",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Pricing Available upon Request",
+    "Be among the first to own in Palmilla Reserve's new private neighborhood",
+    "Register now to receive floorplans, pricing, and availability updates."
+   ]
+  },
+  "source": "ai",
+  "hash": "9aa45a82ad47c0ac",
+  "sha256": "9aa45a82ad47c0acc4dc96d361a507e4631e071ac743a5df18be183eedcb81ae",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "condominio-marea-jac-marea-residences-costa-rica": {
+  "name": "Condominio Marea Jacó (Marea Residences)",
+  "url": "https://hogaresdecostarica.com/condominio-marea-jaco/",
+  "market": "Costa Rica",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "maximizar plusvalía y demanda de alquiler",
+    "generar ingresos pasivos con bajo mantenimiento y alta seguridad",
+    "sostener una rentabilidad constante"
+   ]
+  },
+  "source": "ai",
+  "hash": "6c82715d4f931b75",
+  "sha256": "6c82715d4f931b75fb56ca7b4043f822afb377fbfb84d746dc4cad76eb80e24a",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "ata-ehir-173-istanbul": {
+  "name": "Ataşehir 173",
+  "url": "https://dapyapi.com.tr/en/projects/dap-atasehir",
+  "market": "Istanbul",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Ataşehir 173, realized with the assurance of DAP Real Estate and Emlak Konut, brings the \"Quiet Luxury\" concept",
+    "it promises an exclusive lifestyle in Istanbul's most strategic location",
+    "Ataşehir 173 offers its residents a private world that slows down time."
+   ]
+  },
+  "source": "ai",
+  "hash": "97640329143dffd0",
+  "sha256": "97640329143dffd06dfc65e6f517de684dc55b2de2b3cbebf68051ee5f9c81f9",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "babacan-lagoon-istanbul": {
+  "name": "Babacan Lagoon",
+  "url": "https://babacanyapi.com/babacan-lagoon-pp/",
+  "market": "Istanbul",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
    "advertised_yield_pct": null,
    "completion_year": null,
    "permit_claim": false,
@@ -30800,7 +31124,622 @@
    "escrow_or_guarantee": null,
    "quotes": []
   },
+  "source": "ai",
+  "hash": "fd2250d4fd8607eb",
+  "sha256": "fd2250d4fd8607eb65fd3438ca419f9516fc71d957df6b0cd889c5a42b1b24dd",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "kuzey-adalar-northern-islands-kartal-istanbul": {
+  "name": "Kuzey Adalar (Northern Islands) Kartal",
+  "url": "https://www.kuzeyadalar.com/",
+  "market": "Istanbul",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Daire Planları",
+    "Tüm görsel çalışmalar tanıtım ve bilgi amaçlıdır.",
+    "Proje Konumu Gebze’yi Halkalı’ya bağlayan Marmaray Yunus durağı yürüme mesafesinde."
+   ]
+  },
+  "source": "ai",
+  "hash": "9eac805a2129af64",
+  "sha256": "9eac805a2129af64376dd04e7342145a76a90842629a17791dbe1ee01ded3854",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "mesa-yenikent-new-300-home-phase-istanbul": {
+  "name": "Mesa Yenikent (new 300-home phase)",
+  "url": "https://mesayenikent.com/",
+  "market": "Istanbul",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Mesa, geliştirdiği bütün projelerde “Koşulsuz Müşteri Memnuniyeti Garantisi” ile hareket eder.",
+    "tek etaplı bir konut projesi yerine, uzun vadeli bir şehir planlamasının ilk adımı olarak kurgulandı.",
+    "Daire Planları"
+   ]
+  },
+  "source": "ai",
+  "hash": "b58d78eaa848fb2c",
+  "sha256": "b58d78eaa848fb2c011ce636a50d8358969dcd073c157d46cbb4a2876c2c55b9",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "the-st-regis-karya-cove-resort-bodrum-and-the-residences-bod": {
+  "name": "The St. Regis Karya Cove Resort, Bodrum and The Residences",
+  "url": "https://www.kuzugrup.com/proje/st-regis-karya-cove-resort-bodrum-the-residences/",
+  "market": "Bodrum",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2030,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "2030 yılında kapılarını açması planlanan St. Regis Karya Cove Resort, Bodrum",
+    "Planlanan Açılış Yılı: 2030",
+    "Toplam Markalı Konut Sayısı: 188"
+   ]
+  },
+  "source": "ai",
+  "hash": "f81087dab88c9c7e",
+  "sha256": "f81087dab88c9c7ebd8d4ca4f2d0cc21f8857fb1ff1660f222f6d0c0561a22dd",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "armada-praxis-yal-kavak-marinn-bodrum": {
+  "name": "Armada Praxis Yalıkavak Marinn",
+  "url": "https://www.armadapraxis.com/projelerimiz/yalikavak-marinn-villalari/",
+  "market": "Bodrum",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "66 dönüm arsa üzerine kurulu 46 adet villa ve 1 malikaneden oluşan bir imza projedir.",
+    "Bodrum’un en özel projesinde size ve sevdiklerinize kalan; Bodrum’un Tadını Çıkarmak.",
+    "3+1 Flat Villalar, 700 mt2 arsa içerisinde 180mt2 kullanım alanına sahiptir."
+   ]
+  },
+  "source": "ai",
+  "hash": "c367554a718b525d",
+  "sha256": "c367554a718b525d38f0c74ab76f7ae00a99faf90e7aea40993b2f86d70bf324",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "parkside-residences-montenegro": {
+  "name": "Parkside Residences",
+  "url": "https://solumgroup.me/parkside-residences/",
+  "market": "Montenegro",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Comprising three buildings with 133 residences, Parkside Residences range from studios to grand five-bedroom units.",
+    "We welcome enquiries for primary living or long-term investment in Montenegro's authentic coastal address.",
+    "Download brochure"
+   ]
+  },
+  "source": "ai",
+  "hash": "84cc3e907e14031d",
+  "sha256": "84cc3e907e14031d56178b35ab77ef0b1fa68caf7c9996224ba96e145c49a9b6",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "black-sands-oasis-bali": {
+  "name": "Black Sands Oasis",
+  "url": "https://blacksandsoasis.com/",
+  "market": "Bali",
+  "claims": {
+   "price_from": 115400,
+   "currency": "USD",
+   "title_type": "leasehold",
+   "lease_years_base": 35,
+   "extension_promised": true,
+   "guaranteed_language": true,
+   "advertised_yield_pct": 16,
+   "completion_year": 2028,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Leasehold of 35 years plus a guaranteed 20-year extension.",
+    "Full refund of all payments if the PBG permit is not obtained",
+    "Up to 16% annually from short-term villa rentals in Bali's established resort areas"
+   ]
+  },
+  "source": "ai",
+  "hash": "ed64a758ad06bbfc",
+  "sha256": "ed64a758ad06bbfc728cdfb7def5140e456570922cb4950e40ad430fd708171d",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "green-village-loyo-bondar-nusa-dua-not-the-ibuku-bamboo-gree": {
+  "name": "Green Village (Loyo & Bondar, Nusa Dua; not the IBUKU bamboo Green Village in Sibang)",
+  "url": "https://bali-development.com/green-village/",
+  "market": "Bali",
+  "claims": {
+   "price_from": 110000,
+   "currency": "USD",
+   "title_type": "leasehold",
+   "lease_years_base": 27,
+   "extension_promised": true,
+   "guaranteed_language": true,
+   "advertised_yield_pct": 10,
+   "completion_year": 2028,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Confirmed annual returns starting from 10% through a transparent financial model",
+    "Ownership type: Leasehold 27 + 25 years",
+    "Handover: Q4 2028"
+   ]
+  },
+  "source": "ai",
+  "hash": "306272765e6c3ae5",
+  "sha256": "306272765e6c3ae5820067b50ae82cc9461ce7dbaa7619c3ae983fda34d92566",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "casa-una-residence-koh-samui": {
+  "name": "Casa Una Residence",
+  "url": "https://casauna-samui.com/en/koh-samui-villa-prices/",
+  "market": "Koh Samui",
+  "claims": {
+   "price_from": 145000,
+   "currency": "EUR",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2027,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "a one-bedroom villa from €145,000 (THB 5,500,000)",
+    "completion scheduled for the fourth quarter of 2027",
+    "At Casa Una, the reservation commits 5% of the price"
+   ]
+  },
+  "source": "ai",
+  "hash": "337948f1e0b4e0b7",
+  "sha256": "337948f1e0b4e0b7823284a364516f79b1c667c16397fdfb61a3e6ec765b79be",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "love-it-wongamat-beach-pattaya": {
+  "name": "Love It Wongamat Beach",
+  "url": "https://love-it-wongamat.com/",
+  "market": "Pattaya",
+  "claims": {
+   "price_from": 2600000,
+   "currency": "THB",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Pricing is based on ฿100,000 per sqm, with pre-sale terms available for early registrants.",
+    "Yes. Both freehold and leasehold options are available.",
+    "Renders are arriving shortly — check back for the full visual guide to every layout."
+   ]
+  },
+  "source": "ai",
+  "hash": "b8fcea75632925f1",
+  "sha256": "b8fcea75632925f15ab8b3aa988ed565e145ffeeb6339ce040313e0c68e3aae0",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "level-pratumnak-pattaya": {
+  "name": "Level Pratumnak",
+  "url": "https://levelpratumnak.com/",
+  "market": "Pattaya",
+  "claims": {
+   "price_from": 1890000,
+   "currency": "THB",
+   "title_type": "leasehold",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": true,
+   "advertised_yield_pct": 8,
+   "completion_year": 2028,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "From 7% to 8% guaranteed income on your investment, subject to final unit and contract terms.",
+    "Rental projections are indicative only and may vary depending on final pricing, furnishing packages, and the selected property management model.",
+    "if you cannot proceed with the installment plan, we can discuss a buy-out or resale solution based on your contract terms."
+   ]
+  },
+  "source": "ai",
+  "hash": "30156b059d334385",
+  "sha256": "30156b059d334385011c181f6957db583d6f7eda46b83e0c5c8c3847b937a029",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "embassy-life-pattaya": {
+  "name": "Embassy Life",
+  "url": "https://embassypattaya.com/",
+  "market": "Pattaya",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2027,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Starting from 3.39 MB*",
+    "Expected to be completed APX. Year 2027",
+    "Explore Master Plan Floor Plan Unit Plan"
+   ]
+  },
+  "source": "ai",
+  "hash": "80c032a9cd2ca7d7",
+  "sha256": "80c032a9cd2ca7d743e029360892050ed2e9f4213ffd15fa4417a22b64e6445b",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "elegance-residence-pattaya": {
+  "name": "Elegance Residence",
+  "url": "https://eleganceresidencepattaya.com/",
+  "market": "Pattaya",
+  "claims": {
+   "price_from": 6420000,
+   "currency": "THB",
+   "title_type": "Freehold condominium unit, foreign quota on floors 8 to 14 only (39 units)",
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2029,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": []
+  },
   "source": "seed",
-  "last_error": "call budget reached"
+  "last_error": "Remote end closed connection without response"
+ },
+ "park-ya-am-antalya-antalya": {
+  "name": "Park Yaşam Antalya",
+  "url": "https://emlakkonut.com.tr/en-US/park-yasam-antalya",
+  "market": "Antalya",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "In the project, which was implemented with the assurance of Emlak Konut and the vision of İzka İnşaat",
+    "Park Yaşam Antalya aims to bring a brand new perspective to city life as Antalya's new generation living project.",
+    "There are 1+1, 2+1, 3+1, 4+1 duplex and 5+1 duplex options."
+   ]
+  },
+  "source": "ai",
+  "hash": "09626e5dddffad11",
+  "sha256": "09626e5dddffad112b8d5e3190700530bf9075c9bd223f60e378baf97ae60c7e",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "the-indeed-condo-pattaya-pattaya": {
+  "name": "The Indeed Condo Pattaya",
+  "url": "https://www.theindeedcondo.com/",
+  "market": "Pattaya",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": []
+  },
+  "source": "ai",
+  "hash": "aee8c585500ea45a",
+  "sha256": "aee8c585500ea45a56f7e3b62a3ddaa2a23edb8a4f78a511c3096573f6adbf33",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "vitrin-antalya-antalya": {
+  "name": "Vitrin Antalya",
+  "url": "https://www.suryapi.com.tr/projelerimiz/sur-yapi-vitrin-antalya",
+  "market": "Antalya",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Sur Yapı Vitrin Antalya, 77 – 126 metrekare aralığındaki 2+1 ve 3+1 evleri, bahçeli daireleri, muhteşem peyzajı, parkları ve yüzme havuzlarıyla",
+    "231 KONUT ADEDİ 22.134 m² İNŞAAT ALANI",
+    "Sur Yapı’nın Antalya’da kurduğu yeni şehrin Vitrin’inde yaşam çok ayrıcalıklı olacak."
+   ]
+  },
+  "source": "ai",
+  "hash": "cc617e59f50662d2",
+  "sha256": "cc617e59f50662d218d31eeca4c83f2808e73fcc2645ad240eecd161a8efb423",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "sense8-samui-villas-koh-samui": {
+  "name": "Sense8 Samui Villas",
+  "url": "https://www.sense8samui.com/",
+  "market": "Koh Samui",
+  "claims": {
+   "price_from": 29000000,
+   "currency": "THB",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": true,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Opt in, guaranteed rental income",
+    "Starting at 29mb to 42mb",
+    "Secure legal structure to ensure you get what you pay for and your ownership is secure"
+   ]
+  },
+  "source": "ai",
+  "hash": "a685cc0782aebaa7",
+  "sha256": "a685cc0782aebaa7be404b8b4f206005488f6c2596255001a0458fa7bece1f0c",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "city-vallanza-accra": {
+  "name": "City Vallanza",
+  "url": "https://www.youtube.com/@goldsyngroup",
+  "market": "Accra",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": null,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": null,
+   "permit_number": null,
+   "plans_published": null,
+   "escrow_or_guarantee": null,
+   "quotes": []
+  },
+  "source": "ai",
+  "hash": "9f7ff2166292e886",
+  "sha256": "9f7ff2166292e886330d9270ca38b3230c7a31f4c90b6c3f2ba1ce01673f8e5d",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "deiterra-accra": {
+  "name": "Deiterra",
+  "url": "https://landmarkhomesgh.com/deiterra/",
+  "market": "Accra",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": true,
+   "advertised_yield_pct": 8,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Purchasing at Deiterra is backed by a verifiable history of returns.",
+    "8 - 12% Target Annual Yield. Historical rental yields achieved per annum across Landmark Homes' prime portfolio.",
+    "If you are considering placing a deposit today, the track record exists to support that decision."
+   ]
+  },
+  "source": "ai",
+  "hash": "516866d1f9fd8580",
+  "sha256": "516866d1f9fd85805ed7f450bf27c61234c5d2e2dfbeb115bc897cf8639c1d61",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "heritage-100-tower-2-residences-accra": {
+  "name": "Heritage 100 (Tower 2 residences)",
+  "url": "https://heritage100ghana.com/invest.html",
+  "market": "Accra",
+  "claims": {
+   "price_from": 145000,
+   "currency": "USD",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": 8,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "Developer projection of net rental yield; not guaranteed.",
+    "Rental performance is not guaranteed. Figures are projections based on market assumptions, fees and occupancy.",
+    "Fully managed residences in prime Labone, built for rental income and long-term value."
+   ]
+  },
+  "source": "ai",
+  "hash": "df76248c404b675d",
+  "sha256": "df76248c404b675db0f3b82d5d55942cfc9cbfc245c308041ee85074a7705d86",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "puna-accra": {
+  "name": "PUNA",
+  "url": "https://vaal.com.gh/off-plan-properties-accra-risk-reward-guide/",
+  "market": "Accra",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": []
+  },
+  "source": "ai",
+  "hash": "abd89f001d41a2ec",
+  "sha256": "abd89f001d41a2ecea62bd6698321abfb4b1d78a4626afd0617ab00b9cfbf76b",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "a-a-towers-lagos": {
+  "name": "A&A Towers",
+  "url": "https://arklandproperties.com/locations/a-a-towers/",
+  "market": "Lagos",
+  "claims": {
+   "price_from": null,
+   "currency": null,
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": null,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": false,
+   "escrow_or_guarantee": null,
+   "quotes": [
+    "A&A Towers is an innovative 23-floor mixed-use development, including residential, retail, and office elements.",
+    "A&A Tower incorporates dual-level penthouses, two-bedroom and three-bedroom apartments, high-quality office spaces, and well-designed retail spaces with mezzanine floors.",
+    "Its projecting edges provide the building with excellent stability."
+   ]
+  },
+  "source": "ai",
+  "hash": "aa5f7035d48f8ec5",
+  "sha256": "aa5f7035d48f8ec5087c653350680a0afdee4714889c00455fe2fdf074e8d3c8",
+  "sealed": "2026-11-07",
+  "checked": "2026-11-07"
+ },
+ "le-r-ve-lagos": {
+  "name": "Le Rêve",
+  "url": "https://augustxing.com/projects/le-reve/",
+  "market": "Lagos",
+  "claims": {
+   "price_from": 550000,
+   "currency": "USD",
+   "title_type": null,
+   "lease_years_base": null,
+   "extension_promised": null,
+   "guaranteed_language": false,
+   "advertised_yield_pct": null,
+   "completion_year": 2026,
+   "permit_claim": false,
+   "permit_number": null,
+   "plans_published": true,
+   "escrow_or_guarantee": null,
+   "quotes": []
+  },
+  "source": "seed",
+  "last_error": "spend budget reached"
  }
 }
