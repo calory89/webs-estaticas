@@ -15,7 +15,7 @@
 import { fetchPage, okUrl, pageParts, scanInjection, rpc, sha, WKEY, api as kbApi, logApi } from './kolaboro.js';
 
 export const PATHS = /^\/api\/kb\/xray(?:\/stats)?\/?$|^\/api\/v1\/xray(?:\/openapi\.json)?\/?$|^\/x\/[0-9a-f]{64}(?:\/|\.json|\/vc)?$/;
-const XV = 'x11a3';   // keep equal to KXR_V in index.js (cache-busting of /k/xray.js)
+const XV = 'd12b1';   // keep equal to KXR_V in index.js (cache-busting of /k/xray.js)
 const ORIGIN = 'https://kolaboro.com', VERSION = 'kolaboro-xray-1', PER_IP_HOUR = 30, CARD_MS = 12000;
 const UA = 'Mozilla/5.0 (compatible; KolaboroXray/1.0; +https://kolaboro.com/data-policy)';
 const te = new TextEncoder();
@@ -597,8 +597,9 @@ async function page(root, env, ctx, shell) {
   const name = d ? ((d.cards.find(c => c.id === 'match') || {}).project || {}).name || (d.meta.input.url ? d.meta.input.url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '') : d.meta.input.q) : null;
   const title = d ? 'Project X-ray: ' + clip(name, 60) + ' | Kolaboro' : 'Project X-ray not found | Kolaboro';
   const noJs = d ? '<noscript><ol>' + d.cards.map(c => '<li><b>' + escH(c.title) + '</b>: ' + escH(c.summary || c.status) + '<ul>' + (c.facts || []).map(f => '<li>' + escH(f.k) + ': ' + escH(f.v) + (f.q ? ' "' + escH(f.q) + '"' : '') + (f.src ? ' (' + escH(f.src) + ')' : '') + '</li>').join('') + '</ul></li>').join('') + '</ol></noscript>' : '';
-  const main = '<section class="phero tight"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / <a href="/check/">Check a project</a> / X-ray</p><h1>' + (d ? 'Project X-ray' : 'This X-ray is not stored here') + '</h1>' +
-    (d ? '<p class="lead">' + escH(name) + ' · sealed ' + escH(String(d.meta.started_at).slice(0, 16).replace('T', ' ')) + ' UTC · root <code style="overflow-wrap:anywhere">' + root + '</code></p>' : '<p class="lead">Sealed X-rays are kept in our edge cache and database. This one is not there (or the link is incomplete). <a href="/check/">Run a new X-ray</a>.</p>') + '</div></section>' +
+  const main = '<section class="phero tight"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / <a href="/check/">Check a project</a> / X-ray</p><h1 class="xr-h1">' + (d ? 'X-ray of ' + escH(clip(name, 80)) : 'This X-ray is not stored here') + '</h1>' +
+    (d ? '<p class="lead">What free public sources said about this project on ' + escH(String(d.meta.started_at).slice(0, 10)) + ' at ' + escH(String(d.meta.started_at).slice(11, 16)) + ' UTC. Every fact links to its source. The copy is sealed, so any change would show.</p><p class="xr-fp">Fingerprint (SHA-256) <code>' + root + '</code></p><p class="xr-hcta"><a class="btn btn-line btn-sm" href="/check/' + (d.meta.input.url ? '?url=' + encodeURIComponent(d.meta.input.url) : '') + '">Run it again today</a></p>' : '<p class="lead">Sealed X-rays are kept in our edge cache and database. This one is not there, or the link is incomplete.</p><p><a class="btn btn-hi" href="/check/">Run a new X-ray</a></p>') + '</div></section>' +
+    '<style>.xr-h1{font-size:clamp(1.9rem,5vw,3.2rem);line-height:1.05;overflow-wrap:anywhere;max-width:22ch}.xr-fp{font-size:.82rem;color:var(--muted);margin:10px 0 0;overflow-wrap:anywhere}.xr-fp code{font:600 .8rem ui-monospace,Menlo,monospace;color:var(--ink-2);margin-inline-start:6px}.xr-hcta{margin:14px 0 0}#analyze.sec{padding-top:8px}</style>' +
     '<section class="sec" id="analyze"><div class="wrap"><div id="xr-sealed" data-root="' + root + '"></div>' + noJs + '</div></section>' +
     '<script src="/k/xray.js?v=' + XV + '" defer></script><script src="/k/xray-cta.js?v=1" defer></script>' + (d ? '<script type="application/json" id="xr-data">' + JSON.stringify(d).replace(/</g, '\\u003c') + '</script>' : '');
   const r = new HTMLRewriter()
