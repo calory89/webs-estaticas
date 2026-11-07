@@ -15,7 +15,7 @@
 import { fetchPage, okUrl, pageParts, scanInjection, rpc, sha, WKEY, api as kbApi, logApi } from './kolaboro.js';
 
 export const PATHS = /^\/api\/kb\/xray(?:\/stats)?\/?$|^\/api\/v1\/xray(?:\/openapi\.json)?\/?$|^\/x\/[0-9a-f]{64}(?:\/|\.json|\/vc)?$/;
-const XV = 'd12b3';   // keep equal to KXR_V in index.js (cache-busting of /k/xray.js)
+const XV = 'd12b4';   // keep equal to KXR_V in index.js (cache-busting of /k/xray.js)
 const ORIGIN = 'https://kolaboro.com', VERSION = 'kolaboro-xray-1', PER_IP_HOUR = 30, CARD_MS = 12000;
 const UA = 'Mozilla/5.0 (compatible; KolaboroXray/1.0; +https://kolaboro.com/data-policy)';
 const te = new TextEncoder();

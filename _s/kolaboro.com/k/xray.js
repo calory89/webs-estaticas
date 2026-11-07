@@ -111,7 +111,7 @@
     if (c.limits && c.limits.length) h += '<details class="xr-det"><summary>' + esc(tx('limits')) + '</summary><ul>' + c.limits.map(function(x){ return '<li>' + esc(x) + '</li>'; }).join('') + '</ul></details>';
     if (c.paid) h += '<p class="xr-paid">' + esc(c.paid) + '</p>';
     var ls = (c.links || []).filter(function(l){ return safeUrl(l.url); });
-    if (ls.length) h += '<div class="xr-l">' + ls.map(function(l){ var own = /^https:\/\/kolaboro\.com\//.test(l.url); return '<a ' + (l.primary ? 'class="btn btn-hi btn-sm" ' : '') + 'href="' + esc(own ? l.url.replace('https://kolaboro.com', '') : l.url) + '"' + (own ? '' : ' target="_blank" rel="noopener nofollow"') + '>' + esc((l.key && sub('l', l.key)) || l.label) + (own ? '' : ' ↗') + '</a>'; }).join('') + '</div>';
+    if (ls.length) h += '<div class="xr-l">' + ls.map(function(l){ var own = /^https:\/\/kolaboro\.com\//.test(l.url); return '<a ' + (l.primary ? 'class="btn ' + (c.id === 'match' ? 'btn-line' : 'btn-hi') + ' btn-sm" ' : '') + 'href="' + esc(own ? l.url.replace('https://kolaboro.com', '') : l.url) + '"' + (own ? '' : ' target="_blank" rel="noopener nofollow"') + '>' + esc((l.key && sub('l', l.key)) || l.label) + (own ? '' : ' ↗') + '</a>'; }).join('') + '</div>';
     var srcs = c.sources || [];
     h += '<div class="xr-meta"><span>' + esc(tx('ms')) + ' <code>' + fms(c.ms) + '</code></span><span>' + esc(c.where === 'edge+db' ? tx('db') : fill(tx('edge'), { c: (S.proof && S.proof.colo) || S.colo || 'Cloudflare' })) + '</span>' + (c.sha256 ? '<span>SHA-256 <code>' + esc(c.sha256.slice(0, 12)) + '…</code></span>' : '') + '</div>';
     if (srcs.length) h += '<details class="xr-det"><summary>' + esc(tx('sources')) + ' (' + srcs.length + ')</summary><ul>' + srcs.map(function(s){ var u = safeUrl(s.url); return '<li>' + esc(s.name || '') + ': ' + (u ? '<a href="' + esc(u) + '" target="_blank" rel="noopener nofollow">' + esc(hostOf(u)) + '</a>' : '') + (s.status ? ' · HTTP ' + esc(s.status) : s.error ? ' · ' + esc(s.error) : '') + (s.bytes ? ' · ' + kb(s.bytes) : '') + (s.ms != null ? ' · ' + fms(s.ms) : '') + (s.sha256 ? ' · <code>' + esc(String(s.sha256).slice(0, 16)) + '…</code>' : '') + '</li>'; }).join('') + '</ul></details>';
@@ -128,8 +128,8 @@
   }
   function known(c){
     var k = $('xr-known'); if (!k) return;
-    if (c.project) { k.hidden = false; k.innerHTML = '<div><b>' + esc(tx('known')) + ': ' + esc(c.project.name) + '</b><p>' + esc([c.project.developer, [c.project.area, c.project.market].filter(Boolean).join(', ')].filter(Boolean).join(' · ')) + '</p></div><a class="btn btn-hi" href="' + esc(c.project.url.replace('https://kolaboro.com', '')) + '">' + esc(tx('open')) + ' →</a>'; }
-    else if (c.developer) { k.hidden = false; k.innerHTML = '<div><b>' + esc(tx('knownDev')) + ': ' + esc(c.developer.name) + '</b><p>' + esc(fill(sub('s', 'match_dev'), { dev: c.developer.name, n: c.developer.projects })) + '</p></div><a class="btn btn-hi" href="' + esc(c.developer.url.replace('https://kolaboro.com', '')) + '">' + esc(tx('dev')) + ' →</a>'; }
+    if (c.project) { k.hidden = false; k.innerHTML = '<div><b>' + esc(tx('known')) + ': ' + esc(c.project.name) + '</b><p>' + esc([c.project.developer, [c.project.area, c.project.market].filter(Boolean).join(', ')].filter(Boolean).join(' · ')) + '</p></div><a class="btn btn-hi" href="' + esc(c.project.url.replace('https://kolaboro.com', '')) + '">' + esc(tx('open')) + '</a>'; }
+    else if (c.developer) { k.hidden = false; k.innerHTML = '<div><b>' + esc(tx('knownDev')) + ': ' + esc(c.developer.name) + '</b><p>' + esc(fill(sub('s', 'match_dev'), { dev: c.developer.name, n: c.developer.projects })) + '</p></div><a class="btn btn-hi" href="' + esc(c.developer.url.replace('https://kolaboro.com', '')) + '">' + esc(tx('dev')) + '</a>'; }
   }
   var GRP = { found: 'ok', ok: 'ok', not_found: 'amb', not_published: 'amb', unavailable: 'bad', error: 'bad', needs_key: 'bad' };
   function progress(){
@@ -149,7 +149,7 @@
   }
   function gapsFallback(){
     var cv = $('xr-conv'); if (!cv || window.KXC || cv.getAttribute('data-owner') || cv.children.length) return;
-    cv.innerHTML = '<div class="xr-gap"><b>' + esc(tx('gapsT')) + '</b><p>' + esc(tx('gapsP')) + '</p><a class="btn btn-line btn-sm" href="' + (LANG === 'en' ? '' : '/' + LANG) + '/pricing/">' + esc(tx('gapsL')) + ' →</a></div>';
+    cv.innerHTML = '<div class="xr-gap"><b>' + esc(tx('gapsT')) + '</b><p>' + esc(tx('gapsP')) + '</p><a class="btn btn-line btn-sm" href="' + (LANG === 'en' ? '' : '/' + LANG) + '/pricing/">' + esc(tx('gapsL')) + '</a></div>';
   }
   function proofHtml(pf){
     if (!pf) return '';
