@@ -17,6 +17,9 @@ Env: ANTHROPIC_API_KEY (optional: without it, aggregates are rebuilt from the se
 import json, os, re, sys, time, hashlib, statistics, urllib.request, html as H
 from datetime import datetime, timezone
 
+# one spelling per country, so counts agree with the country hubs (kbx_seo.js ALIAS) and the open API
+COUNTRY_ALIAS = {'Puerto Rico (USA)': 'Puerto Rico', 'St Lucia': 'Saint Lucia', 'United States': 'USA', 'United Arab Emirates': 'UAE'}
+
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, 'data')
 TODAY = datetime.now(timezone.utc).strftime('%Y-%m-%d')
@@ -354,7 +357,7 @@ def public_cases(projects, latest):
         if ck['escrow'] is not True: q.append('No deposit protection published: will your payments go into an escrow or trust account in your name?')
         for f in fl[:2]: q.insert(0, f + ' in public sources: ask the developer for the current status, in writing.')
         for f in notes[:1]: q.insert(0, f + ': ask for the correct figures in writing before paying.')
-        out.append({'_slug': p.get('slug'), 'id': '%s-%03d' % (PREFIX.get(mk, re.sub(r'[^A-Za-z]', '', mk)[:3].upper()), i + 1), 'market': mk, 'country': p.get('country', 'Indonesia'), 'region': _region(p['area']) if mk == 'Bali' else mk,
+        out.append({'_slug': p.get('slug'), 'id': '%s-%03d' % (PREFIX.get(mk, re.sub(r'[^A-Za-z]', '', mk)[:3].upper()), i + 1), 'market': mk, 'country': COUNTRY_ALIAS.get(p.get('country', 'Indonesia'), p.get('country', 'Indonesia')), 'region': _region(p['area']) if mk == 'Bali' else mk,
                     'docs': ck['permit'] == 2, 'plans': ck['plans'], 'band': _band(m), 'done': m.get('completion_year'),
                     'title': m.get('title_type'), 'lease': m.get('lease_years_base'), 'yield': m.get('advertised_yield_pct') or s.get('yield_pct'), 'units': s.get('units'),
                     'checks': ck, 'score': int(score), 'max': mx, 'flags': fl, 'notes': notes, 'tier': tier,

@@ -202,7 +202,7 @@ def main():
             entry['format'] = fmt
             entry['media_type'] = MEDIA.get(fl[0].rsplit('.', 1)[-1], 'application/octet-stream')
             entry['files'] = per if len(per) <= 20 else None
-            entry['download_hint'] = 'One file per tile: ' + ', '.join(x['path'] for x in sorted(per, key=lambda x: x['path'])[:3]) + ' ...'
+            entry['download_hint'] = 'One file per ' + ('tile' if d['prefix'].rstrip('/') in ('coast', 'mangroves') else 'item') + ': ' + ', '.join(x['path'] for x in sorted(per, key=lambda x: x['path'])[:3]) + ' ...'
         # parse, contract, rows, own timestamp
         cres = []
         for x in per:
@@ -480,7 +480,7 @@ def render_page(src, cat, con, spec):
             tgt = human_hours(fr['target_hours'])
             rows = f"{x['rows']:,} {E(x.get('rows_unit') or 'rows')}" if isinstance(x.get('rows'), int) else 'not a table'
             sha = x.get('sha256') or ''
-            dl = (f'<a class="btn btn-hi btn-sm" href="{E(x["url"])}" download>Download</a>' if not x.get('file_count') else f'<a class="btn btn-line btn-sm" href="{E(x["url"])}{E((x.get("download_hint") or "").split(": ")[-1].split(",")[0])}">First tile</a>')
+            dl = (f'<a class="btn btn-hi btn-sm" href="{E(x["url"])}" download>Download</a>' if not x.get('file_count') else f'<a class="btn btn-line btn-sm" href="{E(BASE + "/data/" + (x.get("download_hint") or "").split(": ")[-1].split(",")[0].strip())}">First file</a>')
             sch = f'<a href="{E(x["schema_url"])}">schema</a>' if x.get('schema_url') else 'no schema'
             con_ = {'pass': '<span class="kd-c kd-ok-t">contract passes</span>', 'fail': '<a class="kd-c kd-late-t" href="#c-' + E(x['id']) + '">contract fails</a>', 'no_contract': '<span class="kd-c">no contract</span>', 'not_live': '<span class="kd-c">not served yet</span>'}[x['contract']]
             stamp_txt = E(fr['stamp']) if fr.get('stamp') else ('last commit ' + E(fr['published_at']) if fr.get('published_at') else 'not stated')
