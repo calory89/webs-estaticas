@@ -357,21 +357,27 @@ async function encodePng(rgb, w, h) {
 }
 const SAT_PX = 256;   // 256 x 256 pixels of 10 m = 2.56 km box
 async function satPick(lat, lng, stat, c) {
-  const body = { collections: ['sentinel-2-l2a'], intersects: { type: 'Point', coordinates: [lng, lat] }, query: { 'eo:cloud_cover': { lt: 40 } }, sortby: [{ field: 'properties.datetime', direction: 'desc' }], limit: 8,
+  const body = { collections: ['sentinel-2-l2a'], intersects: { type: 'Point', coordinates: [lng, lat] }, query: { 'eo:cloud_cover': { lt: 70 } }, sortby: [{ field: 'properties.datetime', direction: 'desc' }], limit: 30,
     fields: { include: ['id', 'properties.datetime', 'properties.eo:cloud_cover', 'properties.proj:epsg', 'properties.proj:code', 'properties.s2:mgrs_tile', 'properties.mgrs:utm_zone', 'properties.mgrs:latitude_band', 'properties.mgrs:grid_square', 'assets.visual', 'assets.scl'] } };
   const j = await getJ(STAC + '/search', { method: 'POST', headers: { 'content-type': 'application/json', 'user-agent': UA }, body: JSON.stringify(body) }, 7000, 'Earth Search STAC (Element 84), Sentinel-2 L2A', c);
   const feats = (j.features || []).filter(f => f.assets && f.assets.visual && f.assets.scl);
-  const tried = [];
-  for (const f of feats.slice(0, 4)) {
-    const p = pixelOf(f.assets.scl, f, lat, lng); if (!p) continue;
-    const w = SAT_PX / 2, x0 = Math.round(p[0] - w / 2), y0 = Math.round(p[1] - w / 2);
-    const s = await cogWindow(f.assets.scl.href, x0, y0, w, w, stat);
-    let cloud = 0, nod = 0; for (const v of s) { if (v === 0) nod++; else if (v === 3 || v === 8 || v === 9 || v === 10) cloud++; }
-    const cp = Math.round(cloud / s.length * 1000) / 10, np = Math.round(nod / s.length * 1000) / 10;
-    tried.push({ id: f.id, date: f.properties.datetime.slice(0, 10), scene_cloud_pct: Math.round(f.properties['eo:cloud_cover'] * 10) / 10, local_cloud_pct: cp, nodata_pct: np });
-    if (cp <= 5 && np <= 1) return { f, tried, local_cloud_pct: cp };
+  // cloud over the pin from the scene classification layer (20 m): cloud shadow 3, cloud medium 8, high 9, thin cirrus 10; no data 0
+  const tried = [], t0 = Date.now();
+  const look = async f => {
+    const p = pixelOf(f.assets.scl, f, lat, lng); if (!p) return null;
+    const w = SAT_PX / 2, s = await cogWindow(f.assets.scl.href, Math.round(p[0] - w / 2), Math.round(p[1] - w / 2), w, w, stat);
+    let cloud = 0, nod = 0, cc = 0, cn = 0; const lo = w / 2 - 16, hi = w / 2 + 16;   // centre: 32 x 32 px of 20 m = 640 m around the pin
+    for (let i = 0; i < s.length; i++) { const v = s[i], bad = v === 3 || v === 8 || v === 9 || v === 10, x = i % w, y = (i / w) | 0; if (v === 0) nod++; else if (bad) cloud++; if (x >= lo && x < hi && y >= lo && y < hi) { cn++; if (bad || v === 0) cc++; } }
+    return { f, id: f.id, date: f.properties.datetime.slice(0, 10), scene_cloud_pct: Math.round(f.properties['eo:cloud_cover'] * 10) / 10, local_cloud_pct: Math.round(cloud / s.length * 1000) / 10, centre_cloud_pct: Math.round(cc / cn * 1000) / 10, nodata_pct: Math.round(nod / s.length * 1000) / 10 };
+  };
+  for (let i = 0; i < feats.length && i < 24 && Date.now() - t0 < 9000; i += 8) {
+    const got = (await Promise.all(feats.slice(i, i + 8).map(f => look(f).catch(() => null)))).filter(Boolean);
+    tried.push(...got);
+    const ok = got.find(t => t.local_cloud_pct <= 5 && t.centre_cloud_pct <= 1 && t.nodata_pct <= 1);
+    if (ok) return { f: ok.f, pick: ok, tried: tried.map(({ f, ...t }) => t) };
   }
-  return { f: null, tried };
+  const best = tried.filter(t => t.nodata_pct <= 1 && t.centre_cloud_pct <= 1 && t.local_cloud_pct <= 25).sort((a, b) => a.local_cloud_pct - b.local_cloud_pct)[0];
+  return { f: best ? best.f : null, pick: best || null, partly: !!best, tried: tried.map(({ f, ...t }) => t) };
 }
 async function satRender(f, lat, lng, stat) {
   const p = pixelOf(f.assets.visual, f, lat, lng); if (!p) throw new Error('no projection');
@@ -393,27 +399,28 @@ async function evSatellite(S, env, ctx) {
   if (!pin) { c.status = 'not_applicable'; c.summary = 'No pin, so no satellite image (the page publishes no usable address or map).'; return c._done(); }
   if (S.coi) { c.status = 'not_applicable'; c.summary = 'Not published for this area (conflict of interest, see our independence policy).'; return c._done(); }
   const stat = { bytes: 0, tiles: 0 }; c._host('sentinel-cogs.s3.us-west-2.amazonaws.com');
-  const { f, tried } = await satPick(pin.lat, pin.lng, stat, c);
+  const { f, tried, pick, partly } = await satPick(pin.lat, pin.lng, stat, c);
   c.data = { lat: pin.lat, lng: pin.lng, tried, scene: null, png: null, px_m: 10, box_km: SAT_PX * 10 / 1000 };
-  if (!f) { c.status = 'not_found'; c.summary = 'No recent Sentinel-2 pass with a clear view of this point (checked ' + tried.length + ' scenes; clouds over the pin in each).'; c.items = tried.map(t => ({ label: 'Scene ' + t.date, value: t.local_cloud_pct + '% cloud over the pin', kind: 'text' })); c.proof.bytes += stat.bytes; return c._done(); }
+  if (!f) { c.status = 'not_found'; c.summary = 'No recent Sentinel-2 pass with a clear view of this point (checked the latest ' + tried.length + ' passes; clouds over the pin in each).'; c.items = tried.slice(0, 6).map(t => ({ label: 'Scene ' + t.date, value: t.centre_cloud_pct + '% cloud within 300 m of the pin', kind: 'text' })); c.proof.bytes += stat.bytes; return c._done(); }
   const png = await satRender(f, pin.lat, pin.lng, stat);
   const key = satKey(f.id, pin.lat, pin.lng), digest = await sha256(png);
   if (ctx) ctx.waitUntil(caches.default.put(new Request(key), new Response(png, { headers: { 'content-type': 'image/png', 'cache-control': 'public, max-age=2592000', 'x-sha256': digest } })).catch(() => {}));
   const p = f.properties, date = p.datetime.slice(0, 10), days = Math.round((Date.now() - Date.parse(p.datetime)) / 86400000);
   const sceneUrl = STAC + '/collections/sentinel-2-l2a/items/' + f.id;
-  c.data.scene = { id: f.id, date, cloud_pct: Math.round(p['eo:cloud_cover'] * 10) / 10, local_cloud_pct: tried[tried.length - 1].local_cloud_pct, mgrs: p['s2:mgrs_tile'] || [p['mgrs:utm_zone'], p['mgrs:latitude_band'], p['mgrs:grid_square']].filter(Boolean).join(''), stac: sceneUrl, tci: f.assets.visual.href };
+  c.data.scene = { id: f.id, date, cloud_pct: Math.round(p['eo:cloud_cover'] * 10) / 10, local_cloud_pct: pick.local_cloud_pct, centre_cloud_pct: pick.centre_cloud_pct, partly_cloudy: !!partly, mgrs: p['s2:mgrs_tile'] || [p['mgrs:utm_zone'], p['mgrs:latitude_band'], p['mgrs:grid_square']].filter(Boolean).join(''), stac: sceneUrl, tci: f.assets.visual.href };
   c.data.png = key.replace(ORIGIN, ''); c.data.png_sha256 = digest;
   c.img = { src: c.data.png, alt: 'Sentinel-2 true-colour image of ' + (SAT_PX * 10 / 1000) + ' km around the pin, ' + date, w: SAT_PX, h: SAT_PX, credit: SAT_CREDIT, scale: '100 px = 1 km' };
   c._src({ name: 'Copernicus Sentinel-2 L2A true colour (TCI) and scene classification (SCL), Cloud-Optimised GeoTIFF', url: f.assets.visual.href, licence: 'Copernicus Sentinel data, free, full and open (Copernicus legal notice); credit: "Contains modified Copernicus Sentinel data ' + date.slice(0, 4) + '"', fetched: now(), bytes: stat.bytes, sha256: digest, note: stat.tiles + ' tiles read with HTTP range requests; sha256 is of the PNG we made' }, stat.bytes);
   c.status = 'found';
-  c.summary = 'Clear Sentinel-2 view of the pin from ' + date + ' (' + days + ' days ago), ' + c.data.scene.local_cloud_pct + '% cloud over the pin.';
+  c.summary = (partly ? 'Partly cloudy' : 'Clear') + ' Sentinel-2 view of the pin from ' + date + ' (' + days + ' days ago), ' + pick.centre_cloud_pct + '% cloud within 300 m of the pin' + (partly ? ', ' + pick.local_cloud_pct + '% over the whole image' : '') + '.';
   c.items = [
     { label: 'Image date', value: date + ' (' + days + ' days ago), tile ' + c.data.scene.mgrs, url: sceneUrl, kind: 'link' },
-    { label: 'Clouds', value: c.data.scene.local_cloud_pct + '% over the pin (scene classification), ' + c.data.scene.cloud_pct + '% over the whole 110 km tile', kind: 'num' },
+    { label: 'Clouds', value: pick.centre_cloud_pct + '% within 300 m of the pin, ' + c.data.scene.local_cloud_pct + '% over the 2.56 km image (scene classification), ' + c.data.scene.cloud_pct + '% over the whole 110 km tile', kind: 'num' },
     { label: 'What you can tell', value: 'Whether the area is built up, cleared, farmland or forest; roads and the coastline; large roofs or slabs if the project is big enough.', kind: 'text' },
     { label: 'What you cannot tell', value: 'Floors, finishes, workers on site, permits, or who owns the land. A small villa project may be only a few pixels.', kind: 'text' },
   ];
-  if (tried.length > 1) c.items.push({ label: 'Newer passes skipped', value: tried.slice(0, -1).map(t => t.date + ' (' + t.local_cloud_pct + '% cloud over the pin)').join('; '), kind: 'text' });
+  const newer = tried.filter(t => t.date > date || (t.date === date && t.id !== f.id && t.centre_cloud_pct > pick.centre_cloud_pct));
+  if (newer.length) c.items.push({ label: 'Newer passes skipped', value: newer.slice(0, 5).map(t => t.date + ' (' + t.centre_cloud_pct + '% cloud within 300 m of the pin)').join('; ') + (newer.length > 5 ? '; ...' : ''), kind: 'text' });
   return c._done();
 }
 async function satRoute(u, env, ctx) {
@@ -715,7 +722,7 @@ async function evLaw(S, env, ctx) {
     c._src(OWN('/data/lookup-coverage.json'), 0);
   }
   c.status = rules.length ? 'found' : 'not_published';
-  c.summary = rules.length ? rules.length + ' rules of ' + C + ' law for off-plan buyers, quoted from the official text' + (cov && cov.code !== 'ANY' ? '; ' + (cov.online || []).length + ' registers we query live, ' + (cov.manual || []).length + ' checked by hand.' : '.')
+  c.summary = rules.length ? rules.length + ' rules of ' + C + ' law for off-plan buyers, quoted from the official text' + (cov && cov.code !== 'ANY' ? '; ' + ((cov.online || []).length ? (cov.online || []).length + ' registers we query live, ' : 'no register with open online access, ') + (cov.manual || []).length + ' checked by hand.' : '.')
     : 'We have not quoted the buyer protection law of ' + C + ' yet (we cover Indonesia, UAE, Thailand, Spain and Portugal).' + (cov ? ' Registers: ' + (cov.code === 'ANY' ? 'general checks for any country.' : (cov.online || []).length + ' live, ' + (cov.manual || []).length + ' by hand.') : '');
   return c._done();
 }
