@@ -96,7 +96,7 @@
   function daysTo(s) { var m = String(s).match(/^(\d{4})-(\d{2})-(\d{2})/); return m ? Math.round((Date.UTC(+m[1], +m[2] - 1, +m[3]) - today()) / 864e5) : null; }
   function median(a) { var v = a.slice().sort(function (x, y) { return x - y; }), h = v.length >> 1; return v.length % 2 ? v[h] : (v[h - 1] + v[h]) / 2; }
   function num(v, max) { return new Intl.NumberFormat(LOC, { maximumFractionDigits: max == null ? 2 : max }).format(+v); }
-  function money(v, c) { try { return new Intl.NumberFormat(LOC, { style: 'currency', currency: c, maximumFractionDigits: 2, minimumFractionDigits: 0 }).format(+v); } catch (e) { return num(v) + ' ' + c; } }
+  function money(v, c) { try { return new Intl.NumberFormat(LOC, { style: 'currency', currency: c, maximumFractionDigits: 2, minimumFractionDigits: +v % 1 ? 2 : 0 }).format(+v); } catch (e) { return num(v) + ' ' + c; } }
   function share(p) { return [p.pct != null ? num(p.pct) + '%' : '', p.amount != null ? money(p.amount, p.currency) : ''].filter(Boolean).join(' · '); }
 
   // ---- the comparison. For instalment k: from the previous instalment (or the series baseline, the first 3 clear months) to this one,
@@ -358,7 +358,7 @@
   };
 
   var css = document.createElement('style'); css.id = 'kpay-css';
-  css.textContent = '#kpay .kpay-in{margin-top:0}#kpay .kpay-sel{max-width:420px;margin:0 0 var(--k-3)}#kpay .kpay-sum{list-style:none;margin:0 0 var(--k-3);padding:0}#kpay .kpay-sum li{border-top:1px solid var(--k-line);padding:var(--k-2) 0;line-height:1.5;font-size:var(--k-fs-sm);color:var(--k-ink-2)}' +
+  css.textContent = '#kpay{container-type:inline-size}#kpay .k-badge{white-space:normal;text-align:start;line-height:1.35}#kpay .kpay-in{margin-top:0}#kpay .kpay-sel{max-width:420px;margin:0 0 var(--k-3)}#kpay .kpay-sum{list-style:none;margin:0 0 var(--k-3);padding:0}#kpay .kpay-sum li{border-top:1px solid var(--k-line);padding:var(--k-2) 0;line-height:1.5;font-size:var(--k-fs-sm);color:var(--k-ink-2)}' +
     '#kpay .kpay-ch{margin:0 0 var(--k-4);padding:var(--k-3) 0 0;border-top:1px solid var(--k-line)}#kpay .kpay-ch>div{overflow-x:auto}#kpay svg{display:block;max-width:100%;height:auto;overflow:visible}#kpay svg text{fill:var(--k-muted);font-size:11px;font-variant-numeric:tabular-nums}' +
     '#kpay .ax{stroke:var(--k-line-2);stroke-width:1}#kpay .gl{stroke:var(--k-line);stroke-width:1;stroke-dasharray:2 4}#kpay .bd{fill:color-mix(in srgb,var(--k-sea) 9%,transparent)}#kpay .lx{fill:none;stroke:var(--k-sea);stroke-width:2.2;stroke-linejoin:round}#kpay .px{fill:var(--k-sea)}' +
     '#kpay .ms{fill:color-mix(in srgb,var(--k-ink) 7%,transparent)}#kpay .ml{stroke:var(--k-ink);stroke-width:1.5}#kpay .mo{stroke:var(--k-muted);stroke-width:1;stroke-dasharray:3 3}#kpay svg .mt{fill:var(--k-ink);font-weight:600}#kpay svg .rp{fill:var(--k-ink-2)}' +
@@ -368,10 +368,12 @@
     '#kpay .kpay-lg i.lx{border-top:2.2px solid var(--k-sea);height:0}#kpay .kpay-lg i.bd{background:color-mix(in srgb,var(--k-sea) 14%,transparent)}#kpay .kpay-lg i.ml{width:0;height:12px;border-inline-start:1.5px solid var(--k-ink)}#kpay .kpay-lg i.mo{width:0;height:12px;border-inline-start:1px dashed var(--k-muted)}' +
     '#kpay .kpay-lg i.pd{border-top:1.6px dashed var(--k-ink-2);height:0}#kpay .kpay-lg i.im{width:12px;height:12px;border-radius:50%;border:1.4px solid var(--k-ink)}#kpay .kpay-lg i.im.f{border:0;border-radius:0;background:var(--k-warn);clip-path:polygon(50% 0,100% 100%,0 100%)}' +
     '#kpay figcaption{font-size:var(--k-fs-xs);color:var(--k-muted);margin-top:var(--k-2)}#kpay .kpay-t td{vertical-align:top}#kpay .kpay-t .kpay-s small,#kpay .kpay-t td>small{display:block;color:var(--k-muted);font-size:var(--k-fs-xs);margin-top:4px;line-height:1.4}' +
-    '#kpay .kpay-t tr.is-f td:first-child{box-shadow:inset 3px 0 0 var(--k-warn)}#kpay .kpay-a{white-space:nowrap;text-align:end}#kpay .kpay-a .k-btn{min-height:36px}#kpay .kpay-ck{display:inline-flex;align-items:center;gap:8px;min-height:44px;cursor:pointer;font-size:var(--k-fs-sm)}#kpay .kpay-ck input{width:18px;height:18px;accent-color:var(--k-sea)}' +
+    '#kpay .kpay-t tr.is-f{box-shadow:inset 3px 0 0 var(--k-warn)}#kpay .kpay-a{white-space:nowrap;text-align:end}#kpay .kpay-a .k-btn{min-height:36px}#kpay .kpay-ck{display:inline-flex;align-items:center;gap:8px;min-height:44px;cursor:pointer;font-size:var(--k-fs-sm)}#kpay .kpay-ck input{width:18px;height:18px;accent-color:var(--k-sea)}' +
     '#kpay .kpay-f{margin:var(--k-5) 0 0;padding:var(--k-4);border:1px solid var(--k-line);border-radius:var(--k-r-md);background:var(--k-sunken)}#kpay .kpay-f h3{margin:0 0 var(--k-3);font-size:var(--k-fs-md)}#kpay .kpay-fg{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:var(--k-3)}#kpay .kpay-wl{grid-column:1/-1}' +
     '#kpay .kpay-f .k-field{margin:0}#kpay .kpay-f .k-input,#kpay .kpay-f .k-select{width:100%;min-height:44px}#kpay .k-seg>*{min-height:38px}#kpay .kpay-fa{display:flex;gap:var(--k-2);flex-wrap:wrap;margin-top:var(--k-3)}#kpay .k-err[hidden]{display:none}' +
     '#kpay .kpay-lim{font-size:var(--k-fs-sm);color:var(--k-ink-2);line-height:1.55;margin:var(--k-4) 0 var(--k-2);max-width:72ch}#kpay .kpay-src{margin:0;line-height:1.6}#kpay .kpay-src .k-src{margin-inline-start:4px}#kpay .k-alert{margin:0 0 var(--k-3)}' +
-    '@media(max-width:640px){#kpay .kpay-t td.kpay-s{display:block;text-align:start}#kpay .kpay-t td.kpay-s::before{display:block;margin-bottom:4px}#kpay .kpay-a{justify-content:flex-end}#kpay .kpay-t td.kpay-a::before{content:none}}';
+    '@container (max-width:720px){#kpay .kpay-t thead{display:none}#kpay .kpay-t,#kpay .kpay-t tbody{display:block}#kpay .kpay-t tr{display:block;padding:10px 14px;border-bottom:1px solid var(--k-line)}#kpay .kpay-t td{display:flex;justify-content:space-between;gap:16px;padding:4px 0;border:0;text-align:end}' +
+    '#kpay .kpay-t td::before{content:attr(data-label);color:var(--k-muted);text-align:start;font-weight:500;flex:none;max-width:45%}#kpay .kpay-t td:first-child{font-weight:700}#kpay .kpay-t td:first-child::before{content:none}' +
+    '#kpay .kpay-t td.kpay-s{display:block;text-align:start}#kpay .kpay-t td.kpay-s::before{display:block;max-width:none;margin-bottom:4px}#kpay .kpay-t td.kpay-a{justify-content:flex-end}#kpay .kpay-t td.kpay-a::before{content:none}#kpay .kpay-t .kpay-ck{justify-content:flex-end}}';
   (document.head || document.documentElement).appendChild(css);
 })();
