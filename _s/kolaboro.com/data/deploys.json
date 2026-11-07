@@ -1,6 +1,21 @@
 {
  "deploys": [
   {
+   "at": "2026-11-07T01:47:06Z",
+   "commit": "40d74bbb2979fba52377ca20114791c47342c44a",
+   "checks_passed": 32,
+   "checks_total": 32,
+   "failed": [],
+   "run": "https://github.com/calory89/webs-estaticas/actions/runs/42325548295",
+   "result": "pass",
+   "wait_s": 121,
+   "changes": [
+    "851f97d894e8",
+    "d90b2784dbb1",
+    "40d74bbb2979"
+   ]
+  },
+  {
    "at": "2026-11-07T01:43:52Z",
    "commit": "f90588adc1b0594255321e1250522b13d42d4656",
    "checks_passed": 32,
@@ -2049,13 +2064,13 @@
  "canary": "Cloudflare Pages sends each push to all visitors at once and offers no percentage canary, so none is claimed. A bad push can be visible for a few minutes until the rollback is live.",
  "rollback_mode": "Rollback: a git commit restoring the files changed since the last passing commit; Pages deploys it in about 1 to 2 minutes. An instant Cloudflare API rollback is built in but needs a Pages-scoped token, not configured yet.",
  "latest_checks": {
-  "at": "2026-11-07T01:43:51.991Z",
-  "commit": "f90588adc1b0594255321e1250522b13d42d4656",
+  "at": "2026-11-07T01:47:06.638Z",
+  "commit": "40d74bbb2979fba52377ca20114791c47342c44a",
   "checks": [
    {
     "name": "build: live commit",
     "ok": true,
-    "detail": "live f90588adc1b0"
+    "detail": "live 40d74bbb2979"
    },
    {
     "name": "page /",
@@ -2214,7 +2229,7 @@
    }
   ]
  },
- "last_checked": "f90588adc1b0594255321e1250522b13d42d4656",
- "last_good": "f90588adc1b0594255321e1250522b13d42d4656",
- "updated": "2026-11-07T01:43:52Z"
+ "last_checked": "40d74bbb2979fba52377ca20114791c47342c44a",
+ "last_good": "40d74bbb2979fba52377ca20114791c47342c44a",
+ "updated": "2026-11-07T01:47:06Z"
 }
