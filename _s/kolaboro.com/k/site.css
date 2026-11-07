@@ -1370,8 +1370,11 @@ footer .fgrid:last-child,footer .fgrid{border-bottom:1px solid var(--line)}
 .qform .btn{min-height:44px}
 main summary{min-height:44px;align-content:center}
 @media (max-width:760px){
-  .lv-more,.launch a,.faq-card a,.note-box a,.share a,.share button,.rp-nav a,.rp-nav button,.rp-verify,.rp-crumb a,.rp-banner a,.ktier button,.ask-chip,.perk a,#tr-st,#tr-log,.kopen a,th>button.db-sb,.ft-f h3 a{min-height:44px;display:inline-flex;align-items:center}
+  .lv-more,.launch a,.faq-card a,.note-box a,.share a,.share button,.rp-nav a,.rp-nav button,.rp-verify,.rp-crumb a,.rp-banner a,.ktier button,.ask-chip,.perk a,#tr-st,#tr-log,#tr-st~a,.kopen a,th>button.db-sb,.ft-f h3 a{min-height:44px;display:inline-flex;align-items:center}
   .kcur-bar select{min-height:44px}
 }
 .hero-alt a span{display:inline-block}
 @media (max-width:760px){.prose h2[id]{scroll-margin-top:128px}}
+details.kvb>summary{min-height:44px}
+main details>summary{min-height:44px!important}
+@media (max-width:760px){a[data-r]{min-width:44px;justify-content:center}}
