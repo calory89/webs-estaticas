@@ -1,0 +1,68 @@
+name: Kolaboro open history
+# n18e (batch 18, 8 Nov 2026): keeps the weekly history of kolaboro.com/open (/data/traction.json on pub/_lovable) up to date on its own.
+# Daily, it reads the public JSON https://kolaboro.com/api/x/fc/open (computed by the worker from public aggregate functions only,
+# no keys, no personal data) and freezes the closed weeks that the worker can count exactly ("history_update": sealed X-rays and
+# Bitcoin stamps per week) into /data/traction.json, then advances "complete_until" per series. Nothing is written when nothing changed.
+# X-ray runs per week have no public source and keep their last value from the claude-ops snapshot (marked partial on /open).
+# Developer answer speed needs no job: /data/dev-response.json is served live by the worker.
+on:
+  schedule:
+    - cron: '41 0 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-open-history
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: .github/workflows
+      - name: Merge closed weeks into traction.json and publish
+        run: |
+          set -e
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          K=_s/kolaboro.com/data/traction.json
+          curl -sSf --retry 3 -H 'user-agent: kolaboro-open-history (GitHub Actions)' "https://kolaboro.com/api/x/fc/open?h=$(date +%s)" -o $RUNNER_TEMP/open.json
+          for i in 1 2 3 4 5; do
+            git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+            P=$(git rev-parse FETCH_HEAD)
+            git show FETCH_HEAD:$K > $RUNNER_TEMP/tr.json
+            python3 - "$RUNNER_TEMP/open.json" "$RUNNER_TEMP/tr.json" "$RUNNER_TEMP/new.json" <<'PY'
+          import json, sys, datetime
+          o, t = json.load(open(sys.argv[1])), json.load(open(sys.argv[2]))
+          hu = o.get('history_update') or {}
+          cu_new = hu.get('complete_until') or {}
+          cu = dict(t.get('complete_until') or {})
+          changed = False
+          for k in ('xrays_sealed', 'bitcoin_stamps'):
+              lim = cu_new.get(k)
+              if not lim: continue
+              ser = dict((w, n) for w, n in (t.get('series', {}).get(k) or []))
+              for w, n in hu.get(k) or []:
+                  if w < lim and isinstance(n, int) and ser.get(w) != n: ser[w] = n; changed = True
+              if lim > cu.get(k, '') and all(w in ser for w in [x for x, _ in hu.get(k) or []] if w < lim): cu[k] = lim; changed = True
+              t.setdefault('series', {})[k] = sorted(ser.items())[-104:]
+          if changed:
+              t['complete_until'] = cu
+              t['updated'] = datetime.datetime.utcnow().replace(microsecond=0).isoformat() + 'Z'
+              t['history_job'] = '.github/workflows/kolaboro-open-history.yml on main: daily, closed weeks from https://kolaboro.com/api/x/fc/open (public aggregate functions only)'
+          if changed: json.dump(t, open(sys.argv[3], 'w'), ensure_ascii=False)
+          else: open(sys.argv[3], 'w').write(open(sys.argv[2]).read())
+          print('changed' if changed else 'no change', json.dumps(cu))
+          PY
+            cmp -s $RUNNER_TEMP/tr.json $RUNNER_TEMP/new.json && { echo "no change"; exit 0; }
+            python3 -c "import json,sys; json.load(open(sys.argv[1]))" $RUNNER_TEMP/new.json
+            export GIT_INDEX_FILE=$RUNNER_TEMP/idx; rm -f $GIT_INDEX_FILE; git read-tree $P
+            H=$(git hash-object -w $RUNNER_TEMP/new.json); git update-index --add --cacheinfo 100644,$H,$K
+            T=$(git write-tree --missing-ok); unset GIT_INDEX_FILE
+            [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
+            C=$(git commit-tree $T -p $P -m "kolaboro.com: /open weekly history $(date -u +%F) (closed weeks from public aggregates)")
+            git push -q origin $C:refs/heads/pub/_lovable && { echo "published $C"; exit 0; }
+            sleep 5
+          done; exit 1
