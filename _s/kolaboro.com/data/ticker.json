@@ -4,6 +4,20 @@
   {
    "date": "2026-11-08",
    "kind": "shipped",
+   "text": "Seal a site visit: GPS and photo fingerprints checked against the project pin, signed, photos never uploaded",
+   "tl": {
+    "es": "Sella tu visita a la obra: GPS y huellas de las fotos frente a la parcela del proyecto, firmado, sin subir las fotos",
+    "fr": "Scellez une visite de chantier : GPS et empreintes des photos comparés au point du projet, signé, photos jamais envoyées",
+    "de": "Baustellenbesuch versiegeln: GPS und Foto-Fingerabdrücke gegen den Projektpunkt, signiert, Fotos werden nie hochgeladen",
+    "nl": "Verzegel een bouwplaatsbezoek: GPS en foto-vingerafdrukken naast de projectlocatie, ondertekend, foto's nooit geüpload",
+    "ru": "Запечатайте визит на стройку: GPS и отпечатки фото против точки проекта, с подписью, фото не загружаются",
+    "zh": "为工地探访加封：GPS 和照片指纹与项目位置对照并签名，照片从不上传",
+    "ar": "اختم زيارتك للموقع: يُقارَن GPS وبصمات الصور بموقع المشروع ويُوقَّع السجل، ولا تُرفع الصور أبدًا"
+   }
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "shipped",
    "text": "Is this payment email really from the developer? Paste it and we check the sender, lookalike domains and bank-change wording",
    "tl": {
     "es": "¿Este email de pago es del promotor? Pégalo y comprobamos el remitente, dominios que imitan al real y frases de cambio de cuenta",
