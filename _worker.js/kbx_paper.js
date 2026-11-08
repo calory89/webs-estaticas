@@ -220,7 +220,7 @@ export function pricesHtml(pd, x, lang) {
     L.push('<li class="kfact">' + esc(nt(lang, 'ph_last', { p: last.head.p, d: fdt(last.d, lang) })).replace(esc(last.head.p), ltr(last.head.p)) + src(last) + '</li>');
     if (curs.length > 1) L.push('<li class="kfact">' + esc(nt(lang, 'ph_cur2')) + src(last) + '</li>');
     else if (withP.every(p => p.head.v === first.head.v)) L.push('<li class="kfact">' + esc(nt(lang, 'ph_same', { n: withP.length })) + src(last) + '</li>');
-    else { const pct = (last.head.v - first.head.v) / first.head.v * 100; L.push('<li class="kfact">' + esc(nt(lang, 'ph_chg', { cur: first.head.cur, pct: (pct > 0 ? '+' : '') + pct.toFixed(1) + '%' })) + src(last) + '</li>'); }
+    else { const pct = (last.head.v - first.head.v) / first.head.v * 100; L.push('<li class="kfact">' + esc(nt(lang, 'ph_chg', { cur: first.head.cur, pct: (pct > 0 ? '+' : '') + pct.toFixed(Math.abs(pct) < 1 ? 2 : 1) + '%' })) + src(last) + '</li>'); }
   }
   const main = curs.length ? curs.map(c => [c, withP.filter(p => p.head.cur === c).length]).sort((a, b) => b[1] - a[1])[0][0] : null;
   const th = nt(lang, 'ph_th');
@@ -273,7 +273,7 @@ catch(x){o.textContent=T.err;b.disabled=false}})})})();`;
 export const paperHeading = (lang, k) => nt(lang, k);
 export const PAPER_CSS = '.kph-fig{margin:14px 0 10px;max-width:720px}.kph-svg{width:100%;height:auto;display:block}.kph-grid{stroke:var(--k-line,#d5dbd8);stroke-width:1}.kph-ax{font-size:12px;fill:var(--k-muted,#56636F)}' +
   '.kph-line{fill:none;stroke:var(--k-sea,#155C75);stroke-width:2}.kph-pt{fill:var(--k-surface,#fff);stroke:var(--k-sea,#155C75);stroke-width:2.5}.kph-pt.is-ia{fill:var(--k-sea,#155C75)}a:focus-visible .kph-pt{stroke-width:4}' +
-  '@media(max-width:600px){.kph-ax{font-size:21px}}.kph-fig figcaption{font-size:.84rem;color:var(--k-muted,#56636F)}.kph-ctx{display:inline-block;max-width:46ch;overflow-wrap:anywhere}.kph-t td,.kpl-t td{vertical-align:top}.kpl-t td{overflow-wrap:anywhere}.kpl-live{margin:10px 0}.kpl-out{margin-top:10px}';
+  '@media(max-width:600px){.kph-ax{font-size:21px}}.kph-fig figcaption{font-size:.84rem;color:var(--k-muted,#56636F)}.kph-ctx{display:inline-block;max-width:46ch;overflow-wrap:anywhere}.kph-t td,.kpl-t td{vertical-align:top}.kpl-t td{overflow-wrap:break-word}.kpl-t td::before{overflow-wrap:normal;word-break:normal}.kpl-live{margin:10px 0}.kpl-out{margin-top:10px}';
 
 // ------------------------------------------------------------------------------------------------ England: planning.data.gov.uk now (edge)
 const R0 = 6371008.8, rad = v => v * Math.PI / 180;
