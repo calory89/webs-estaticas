@@ -24,11 +24,13 @@ import { fcData, fcProjectHtml, fcDevGroup, rsData, rsDevHtml, rsHeading } from 
 import { webData, webProjectHtml, webDevHealthHtml, webDevLinksHtml, webHeading } from './kbx_web.js';   // batch 18 (n18a): website health, shared website identifiers
 import { cohortCard, cohortKey } from './kbx_cohort.js';
 import { paperData, pricesHtml, planningHtml, paperHeading, PAPER_CSS } from './kbx_paper.js';   // batch 18 (n18d): prices over time, planning records near the site   // batch 18 (n18e): buyer group card, empty while the feature is off
+import { seeData, seeHtml, seeToc, seeHeading } from './kbx_see.js';   // batch 18 (n18c): street-level photos and 3D view
 import { seoLd } from './kbx_lastmod.js';   // batch 15 (s15b): true dateModified and ImageObject in the JSON-LD   // batch 14 (f14b): construction progress from space   // batch 10 (b10c): price per m2 vs official data, company network graph
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v32';   // v32: small price changes with 2 decimals, planning table labels (n18d)
+const CACHE_V = 'named-v33';   // v33: street-level photos and 3D view section #ground (n18c)
+//     // v32: small price changes with 2 decimals, planning table labels (n18d)
 //   // v31: prices over time, headline only after a word like from or price (n18d)
 //   // v30: time machine and construction stage estimate in the from-space section (n18b)
 //   // v29: prices over time (#prices) and planning records near the site (#planning) (n18d)
@@ -234,6 +236,7 @@ function projectPage(ix, x, lang, extra) {
 
   // construction progress from space (only projects with a plot-level pin and a Sentinel-2 series)
   const webHtml = extra.web ? webProjectHtml(extra.web, x, lang) : '';   // n18a
+  const seeSec = extra.see ? seeHtml(extra.see, x.id, lang, d => fd(d, lang), name) : '';   // n18c
   const satHtml = extra.sat ? satSection(extra.sat, x.id, ix.prom[x.id] || [], fx, lang, d => fd(d, lang), k => tr(lang, 'pk_' + k), d => tr(lang, 'sat_tile', { n: name, d })) : '';
 
   // permits and licences
@@ -357,11 +360,11 @@ function projectPage(ix, x, lang, extra) {
 
   const crumbs = [[tr(lang, 'crumb_home'), ORIGIN + pre(lang) + '/'], [tr(lang, 'crumb_projects'), ORIGIN + pre(lang) + '/projects/'], [x.mk, ORIGIN + '/m/' + slugM(x.mk) + '/'], [name, canon]];
   const priceH = extra.paper ? pricesHtml(extra.paper, x, lang) : '', planH = extra.paper ? planningHtml(extra.paper, x, lang) : '';   // n18d
-  const toc = [['glance', 's_glance'], ['promise', 's_promise'], ...(priceH ? [['prices', null, paperHeading(lang, 'ph_toc')]] : []), ['ppm', 's_ppm_toc'], ['delivery', 's_delivery'], ...(satHtml ? [['space', null]] : []), ['permits', 's_permits'], ...(planH ? [['planning', null, paperHeading(lang, 'pl_toc')]] : []), ['checks', 's_checks'], ['claims', 's_claims'], ['history', 's_history'], ['reports', 's_reports'], ['developer', 's_devsec'], ...(webHtml ? [['web', null, webHeading(lang, 'h')]] : []), ['reviews', 's_reviews'], ['reply', 's_reply'], ['faq', 's_faq'], ['sources', 's_sources']];
+  const toc = [['glance', 's_glance'], ['promise', 's_promise'], ...(priceH ? [['prices', null, paperHeading(lang, 'ph_toc')]] : []), ['ppm', 's_ppm_toc'], ['delivery', 's_delivery'], ...(satHtml ? [['space', null]] : []), ...(seeSec ? [['ground', null, seeToc(lang)]] : []), ['permits', 's_permits'], ...(planH ? [['planning', null, paperHeading(lang, 'pl_toc')]] : []), ['checks', 's_checks'], ['claims', 's_claims'], ['history', 's_history'], ['reports', 's_reports'], ['developer', 's_devsec'], ...(webHtml ? [['web', null, webHeading(lang, 'h')]] : []), ['reviews', 's_reviews'], ['reply', 's_reply'], ['faq', 's_faq'], ['sources', 's_sources']];
   const body = '<section class="phero kp"><div class="wrap"><p class="crumb">' + crumbs.slice(0, 3).map(([l, u]) => '<a href="' + esc(u.replace(ORIGIN, '')) + '">' + esc(l) + '</a>').join(' / ') + '</p>' +
     '<h1>' + h1x(tr(lang, 'h1_p', { n: name }), name) + '</h1><p class="lead">' + esc(tr(lang, 'lead_p', { n: name, place })) + '</p>' + answer + keys + watchBox(lang, x.id, name, '/projects/' + x.s + '/') + (extra.coh || '') + '</div></section>' +
     '<div class="wrap kwrap"><nav class="ktoc" aria-label="' + esc(tr(lang, 's_glance')) + '">' + toc.map(([i, k, lbl]) => '<a href="#' + i + '">' + esc(lbl || (k ? tr(lang, k) : satToc(lang))) + '</a>').join('') + '</nav>' +
-    sec('glance', esc(tr(lang, 's_glance')), '<ul class="fl glance">' + g.join('') + '</ul>') + sec('promise', esc(tr(lang, 's_promise')), promised) + (priceH ? sec('prices', esc(paperHeading(lang, 'ph_h')), '<style>' + PAPER_CSS + '</style>' + priceH) : '') + sec('ppm', esc(tr(lang, 's_ppm')), ppmSection(x, lang).html) + sec('delivery', esc(tr(lang, 's_delivery')), delivery) + (satHtml ? sec('space', esc(satHeading(lang)), satHtml) : '') +
+    sec('glance', esc(tr(lang, 's_glance')), '<ul class="fl glance">' + g.join('') + '</ul>') + sec('promise', esc(tr(lang, 's_promise')), promised) + (priceH ? sec('prices', esc(paperHeading(lang, 'ph_h')), '<style>' + PAPER_CSS + '</style>' + priceH) : '') + sec('ppm', esc(tr(lang, 's_ppm')), ppmSection(x, lang).html) + sec('delivery', esc(tr(lang, 's_delivery')), delivery) + (satHtml ? sec('space', esc(satHeading(lang)), satHtml) : '') + (seeSec ? sec('ground', esc(seeHeading(lang)), seeSec) : '') +
     sec('permits', esc(tr(lang, 's_permits')), permits) + (planH ? sec('planning', esc(paperHeading(lang, 'pl_h')), (priceH ? '' : '<style>' + PAPER_CSS + '</style>') + planH) : '') + sec('checks', esc(tr(lang, 's_checks')), checks) + sec('claims', esc(tr(lang, 's_claims')), claims) + sec('history', esc(tr(lang, 's_history')), history) +
     sec('reports', esc(tr(lang, 's_reports')), reports) + sec('developer', esc(tr(lang, 's_devsec')), devsec) + (webHtml ? sec('web', esc(webHeading(lang, 'h')), webHtml) : '') + (similar ? sec('similar', esc(tr(lang, 's_similar')), similar) : '') +
     sec('market', esc(tr(lang, 's_market', { mk: x.mk })), market) + sec('related', esc(tr(lang, 'rel_h')), related) + sec('reviews', esc(tr(lang, 's_reviews')), reviews) + sec('reply', esc(tr(lang, 's_reply')), reply) +
@@ -585,7 +588,8 @@ export async function render(ix, kind, key, lang, env, ctx) {   // exported for 
     let web = null; try { web = await webData(env); } catch (e) { web = null; }
     let coh = ''; try { coh = await cohortCard(env, lang, x.id); } catch (e) { coh = ''; }
     let paper = null; try { paper = await paperData(env); } catch (e) { paper = null; }   // n18d
-    const pg = projectPage(ix, x, lang, { reviews, replies, ph, sat, fc, fdg, web, coh, paper }); if (phErr) pg.nocache = true;   // page history not loaded: do not cache
+    let see = null; try { see = await seeData(env); } catch (e) { see = null; }
+    const pg = projectPage(ix, x, lang, { reviews, replies, ph, sat, fc, fdg, web, coh, paper, see }); if (phErr) pg.nocache = true;   // page history not loaded: do not cache
     return pg;
   }
   const dv = ix.devs.get(key); if (!dv) return null;
@@ -609,7 +613,7 @@ export async function handle(req, u, env, ctx, shell) {
   if (key && kind === 'developers' && RESERVED.has(key)) return null;   // /developers/reply/ etc. stay static
   if (!p.endsWith('/')) return new Response(null, { status: 301, headers: { location: p + '/' + u.search, 'cache-control': 'public, max-age=86400' } });
   let ix; try { ix = await data(env); } catch (e) { return null; }
-  const ck = new Request(ORIGIN + '/__named_html/' + CACHE_V + cohortKey(env) + '/' + encodeURIComponent(ix.updated + '|' + (ix.named.count || 0) + '|' + ix.P.length + '|' + (ix.named.updated || '') + '|r' + (key && kind === 'projects' ? await repliesPublished() : 0) + '|s' + (key && kind === 'projects' ? (sd => (sd.updated || '') + '|' + ((sd.space || {}).v || ''))((await satData(env).catch(() => null)) || {}) : '')) + p);
+  const ck = new Request(ORIGIN + '/__named_html/' + CACHE_V + cohortKey(env) + '/' + encodeURIComponent(ix.updated + '|' + (ix.named.count || 0) + '|' + ix.P.length + '|' + (ix.named.updated || '') + '|r' + (key && kind === 'projects' ? await repliesPublished() : 0) + '|s' + (key && kind === 'projects' ? (sd => (sd.updated || '') + '|' + ((sd.space || {}).v || ''))((await satData(env).catch(() => null)) || {}) + '|g' + (((await seeData(env).catch(() => null)) || {}).v || '') : '')) + p);
   try { const hit = await caches.default.match(ck); if (hit) return new Response(hit.body, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'x-named-cache': 'hit', 'cache-control': 'no-cache' } }); } catch (e) {}
   const pg = await render(ix, key ? kind : 'i', key, lang, env, ctx);
   if (pg && key) try { await seoLd(pg, env, kind, key); } catch (e) {}

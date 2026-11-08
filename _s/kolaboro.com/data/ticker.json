@@ -4,6 +4,20 @@
   {
    "date": "2026-11-08",
    "kind": "shipped",
+   "text": "See the site: open street-level photos within 200 m of the pin on 59 project pages, and a 3D view with terrain and 12,328 mapped buildings on 125",
+   "tl": {
+    "es": "Ver la obra: fotos abiertas a pie de calle a menos de 200 m del punto en 59 proyectos y una vista 3D con relieve y 12.328 edificios cartografiados en 125",
+    "fr": "Voir le site : photos libres au niveau de la rue à moins de 200 m du point sur 59 projets, et une vue 3D avec relief et 12 328 bâtiments cartographiés sur 125",
+    "de": "Das Grundstück sehen: freie Straßenfotos im Umkreis von 200 m auf 59 Projektseiten und eine 3D-Ansicht mit Gelände und 12.328 kartierten Gebäuden auf 125",
+    "nl": "Zie het terrein: open straatfoto's binnen 200 m van het punt op 59 projectpagina's en een 3D-weergave met terrein en 12.328 gekarteerde gebouwen op 125",
+    "ru": "Увидеть участок: открытые уличные фото в пределах 200 м от точки на 59 страницах проектов и 3D-вид с рельефом и 12 328 зданиями на 125",
+    "zh": "查看地块：59 个项目页面显示定位点 200 米内的开放街景照片，125 个项目页面提供带地形和 12,328 栋已绘制建筑的三维视图",
+    "ar": "شاهد الموقع: صور مفتوحة على مستوى الشارع ضمن 200 م من النقطة في 59 صفحة مشروع، وعرض ثلاثي الأبعاد بالتضاريس و12,328 مبنى مرسومًا في 125"
+   }
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "shipped",
    "text": "Construction stage estimate on 125 project pages: one stage per month from satellite, radar and mapped buildings, with confidence and reasons",
    "tl": {
     "es": "Estimación de la fase de obra en 125 proyectos: una fase por mes a partir de satélite, radar y edificios cartografiados, con confianza y motivos",
