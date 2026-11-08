@@ -1,0 +1,66 @@
+name: Kolaboro radar and building footprints
+# Monthly (after the optical progress run): Sentinel-1 RTC radar for cloudy plots (Microsoft Planetary Computer, anonymous SAS token)
+# and Overture Maps buildings with GERS first-seen dates for every project with a plot-level pin. No model calls.
+# Publishes kolaboro.com/data/satellite-radar.json and kolaboro.com/data/buildings.json (tools/kolaboro-agent/space_extra.py).
+on:
+  schedule:
+    - cron: '41 6 13 * *'
+  workflow_dispatch:
+    inputs:
+      what: { description: 'radar, buildings or both', required: false, default: 'both' }
+      only: { description: 'comma separated project ids (empty = all)', required: false, default: '' }
+
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-space-extra
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: tools/kolaboro-agent
+      - name: Build
+        env:
+          WHAT: ${{ github.event.inputs.what || 'both' }}
+          ONLY: ${{ github.event.inputs.only }}
+        run: |
+          pip install -q rasterio numpy shapely duckdb datafusion
+          mkdir -p "$RUNNER_TEMP/out"
+          A=""; [ -n "$ONLY" ] && A="--only $ONLY"
+          if [ "$WHAT" != "buildings" ]; then python3 -u -W ignore tools/kolaboro-agent/space_extra.py radar "$RUNNER_TEMP/out/satellite-radar.json" --budget-min 90 $A || true; fi
+          if [ "$WHAT" != "radar" ]; then python3 -u -W ignore tools/kolaboro-agent/space_extra.py buildings "$RUNNER_TEMP/out/buildings.json" $A 2>&1 | tr '\r' '\n' | grep -v '%' || true; fi
+          ls -la "$RUNNER_TEMP/out"
+      - name: Publish to kolaboro.com
+        env:
+          ONLY: ${{ github.event.inputs.only }}
+        run: |
+          set -e
+          cd "$RUNNER_TEMP/out"
+          for f in satellite-radar.json buildings.json; do
+            [ -f "$f" ] || continue
+            python3 -c "import json,sys; d=json.load(open('$f')); assert d.get('projects'), 'empty'" || { echo "skip $f (empty)"; rm -f "$f"; continue; }
+            if [ -n "$ONLY" ]; then   # partial run: merge into the published file
+              curl -sf "https://kolaboro.com/data/$f?run=$(date +%s)" -o "prev-$f" || echo '{"projects":{}}' > "prev-$f"
+              python3 -c "import json; p=json.load(open('prev-$f')); n=json.load(open('$f')); p2=dict(p.get('projects',{})); p2.update(n['projects']); n['projects']=p2; json.dump(n,open('$f','w'),separators=(',',':'),ensure_ascii=False)"
+            fi
+          done
+          ls *.json 2>/dev/null | grep -v '^prev-' > files.txt || true
+          [ -s files.txt ] || { echo "nothing to publish"; exit 0; }
+          cd "$GITHUB_WORKSPACE"
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          for i in 1 2 3 4 5; do
+            git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+            P=$(git rev-parse FETCH_HEAD)
+            export GIT_INDEX_FILE=$RUNNER_TEMP/idx; rm -f $GIT_INDEX_FILE; git read-tree $P
+            while read f; do H=$(git hash-object -w "$RUNNER_TEMP/out/$f"); git update-index --add --cacheinfo 100644,$H,_s/kolaboro.com/data/$f; done < "$RUNNER_TEMP/out/files.txt"
+            T=$(git write-tree --missing-ok); unset GIT_INDEX_FILE
+            [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
+            C=$(git commit-tree $T -p $P -m "kolaboro.com: radar and building footprints $(date -u +%F)")
+            git push -q origin $C:refs/heads/pub/_lovable && exit 0
+            sleep 7
+          done; exit 1
