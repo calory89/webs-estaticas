@@ -26,7 +26,7 @@ const S = {
     o_green: 'Satellite: the circle looks {x} points less built-up or bare than its surroundings, against {base}.', o_gap: 'Satellite: no clear view this month (last clear view: {m}).', o_never: 'Satellite: no clear view this month.', o_base: 'Satellite: {m} is one of the first 3 clear months, which the index is measured against.',
     r_up: 'Radar: VV backscatter {x} dB against the first months, beyond normal variation (±{b} dB). New walls, frames and roofs usually do this.', r_flat: 'Radar: no change beyond normal variation (±{b} dB).', r_down: 'Radar: VV backscatter {x} dB, below normal variation (±{b} dB).',
     r_vh: 'Radar: VH {x} dB, as when vegetation is cleared.', r_na: 'Radar: not read for this site (clear skies in most months).', r_gap: 'Radar: no reading for this month.',
-    b_yes: 'Map: {n} building footprints cover {p}% of the circle (Overture {rel}), first seen {d}.', b_low: 'Map: building footprints cover {p}% of the circle, under the {t}% these rules count (Overture {rel}).', b_no: 'Map: no building footprint in the circle (Overture {rel}).', b_later: 'Map: footprints first seen {d}, after this month.',
+    b_yes: 'Map: {n} building footprints cover {p}% of the circle (Overture {rel}).', b_yesf: 'Map: {n} building footprints cover {p}% of the circle (Overture {rel}), first seen {d}.', b_low: 'Map: building footprints cover {p}% of the circle, under the {t}% these rules count (Overture {rel}).', b_no: 'Map: no building footprint in the circle (Overture {rel}).', b_later: 'Map: footprints first seen {d}, after this month.',
     d_ro: 'Signals disagree: radar shows a change that the optical images do not.', d_bo: 'Signals disagree: buildings are mapped, but the images show no change since {base}. They may be older than the series or belong to a neighbour.',
     d_g: 'The site looks greener than at the start; these rules do not read that as a stage.', d_rd: 'Radar went down while no clear image was available; these rules do not read that alone.',
     p_hand: 'The developer\'s promised handover ({d}) has passed.', p_start: 'The developer\'s promised construction start ({d}) is more than 6 months earlier.',
@@ -48,7 +48,7 @@ const S = {
     o_green: 'Satélite: el círculo se ve {x} puntos menos edificado o desnudo que su entorno, frente a {base}.', o_gap: 'Satélite: ninguna vista despejada este mes (la última: {m}).', o_never: 'Satélite: ninguna vista despejada este mes.', o_base: 'Satélite: {m} es uno de los 3 primeros meses despejados, la referencia del índice.',
     r_up: 'Radar: retrodispersión VV {x} dB frente a los primeros meses, por encima de la variación normal (±{b} dB). Muros, estructuras y cubiertas nuevas suelen producirlo.', r_flat: 'Radar: ningún cambio por encima de la variación normal (±{b} dB).', r_down: 'Radar: retrodispersión VV {x} dB, por debajo de la variación normal (±{b} dB).',
     r_vh: 'Radar: VH {x} dB, como cuando se desbroza la vegetación.', r_na: 'Radar: no lo leemos en este lugar (cielo despejado la mayoría de los meses).', r_gap: 'Radar: sin lectura este mes.',
-    b_yes: 'Mapa: {n} huellas de edificios cubren el {p}% del círculo (Overture {rel}), vistas por primera vez {d}.', b_low: 'Mapa: las huellas de edificios cubren el {p}% del círculo, menos del {t}% que cuentan estas reglas (Overture {rel}).', b_no: 'Mapa: ninguna huella de edificio en el círculo (Overture {rel}).', b_later: 'Mapa: huellas vistas por primera vez {d}, después de este mes.',
+    b_yes: 'Mapa: {n} huellas de edificios cubren el {p}% del círculo (Overture {rel}).', b_yesf: 'Mapa: {n} huellas de edificios cubren el {p}% del círculo (Overture {rel}), vistas por primera vez {d}.', b_low: 'Mapa: las huellas de edificios cubren el {p}% del círculo, menos del {t}% que cuentan estas reglas (Overture {rel}).', b_no: 'Mapa: ninguna huella de edificio en el círculo (Overture {rel}).', b_later: 'Mapa: huellas vistas por primera vez {d}, después de este mes.',
     d_ro: 'Las señales no coinciden: el radar muestra un cambio que las imágenes ópticas no muestran.', d_bo: 'Las señales no coinciden: hay edificios cartografiados, pero las imágenes no muestran cambios desde {base}. Pueden ser anteriores a la serie o de un vecino.',
     d_g: 'El lugar se ve más verde que al principio; estas reglas no lo leen como una fase.', d_rd: 'El radar bajó sin ninguna imagen despejada disponible; estas reglas no lo leen por sí solo.',
     p_hand: 'La entrega prometida por el promotor ({d}) ya ha pasado.', p_start: 'El inicio de obra prometido por el promotor ({d}) fue hace más de 6 meses.',
@@ -70,7 +70,7 @@ const S = {
     o_green: 'Satellit: Der Kreis wirkt {x} Punkte weniger bebaut oder kahl als seine Umgebung, gegenüber {base}.', o_gap: 'Satellit: in diesem Monat keine klare Sicht (zuletzt: {m}).', o_never: 'Satellit: in diesem Monat keine klare Sicht.', o_base: 'Satellit: {m} ist einer der ersten 3 klaren Monate, an denen der Index gemessen wird.',
     r_up: 'Radar: VV-Rückstreuung {x} dB gegenüber den ersten Monaten, über der normalen Schwankung (±{b} dB). Neue Wände, Tragwerke und Dächer bewirken das meist.', r_flat: 'Radar: keine Änderung über die normale Schwankung (±{b} dB).', r_down: 'Radar: VV-Rückstreuung {x} dB, unter der normalen Schwankung (±{b} dB).',
     r_vh: 'Radar: VH {x} dB, wie wenn Vegetation geräumt wird.', r_na: 'Radar: für diesen Ort nicht gelesen (in den meisten Monaten klarer Himmel).', r_gap: 'Radar: kein Messwert in diesem Monat.',
-    b_yes: 'Karte: {n} Gebäudegrundrisse bedecken {p} % des Kreises (Overture {rel}), zuerst gesehen {d}.', b_low: 'Karte: Gebäudegrundrisse bedecken {p} % des Kreises, weniger als die {t} %, die diese Regeln zählen (Overture {rel}).', b_no: 'Karte: kein Gebäudegrundriss im Kreis (Overture {rel}).', b_later: 'Karte: Grundrisse zuerst gesehen {d}, nach diesem Monat.',
+    b_yes: 'Karte: {n} Gebäudegrundrisse bedecken {p} % des Kreises (Overture {rel}).', b_yesf: 'Karte: {n} Gebäudegrundrisse bedecken {p} % des Kreises (Overture {rel}), zuerst gesehen {d}.', b_low: 'Karte: Gebäudegrundrisse bedecken {p} % des Kreises, weniger als die {t} %, die diese Regeln zählen (Overture {rel}).', b_no: 'Karte: kein Gebäudegrundriss im Kreis (Overture {rel}).', b_later: 'Karte: Grundrisse zuerst gesehen {d}, nach diesem Monat.',
     d_ro: 'Die Signale widersprechen sich: Das Radar zeigt eine Änderung, die optischen Bilder nicht.', d_bo: 'Die Signale widersprechen sich: Gebäude sind kartiert, aber die Bilder zeigen seit {base} keine Änderung. Sie können älter als die Reihe sein oder zu einem Nachbarn gehören.',
     d_g: 'Der Ort wirkt grüner als zu Beginn; diese Regeln lesen das nicht als Bauphase.', d_rd: 'Das Radar sank, ohne dass ein klares Bild vorlag; diese Regeln lesen das allein nicht.',
     p_hand: 'Die vom Bauträger versprochene Übergabe ({d}) ist vorbei.', p_start: 'Der vom Bauträger versprochene Baubeginn ({d}) liegt mehr als 6 Monate zurück.',
@@ -92,7 +92,7 @@ const S = {
     o_green: 'Satellite : le cercle paraît {x} points moins bâti ou nu que ses abords, par rapport à {base}.', o_gap: 'Satellite : aucune vue claire ce mois-ci (dernière : {m}).', o_never: 'Satellite : aucune vue claire ce mois-ci.', o_base: 'Satellite : {m} fait partie des 3 premiers mois clairs, la référence de l\'indice.',
     r_up: 'Radar : rétrodiffusion VV {x} dB par rapport aux premiers mois, au-delà de la variation normale (±{b} dB). De nouveaux murs, ossatures et toits font en général cela.', r_flat: 'Radar : aucun changement au-delà de la variation normale (±{b} dB).', r_down: 'Radar : rétrodiffusion VV {x} dB, sous la variation normale (±{b} dB).',
     r_vh: 'Radar : VH {x} dB, comme lorsque la végétation est défrichée.', r_na: 'Radar : non lu pour ce site (ciel dégagé la plupart des mois).', r_gap: 'Radar : pas de mesure ce mois-ci.',
-    b_yes: 'Carte : {n} emprises de bâtiments couvrent {p} % du cercle (Overture {rel}), vues pour la première fois {d}.', b_low: 'Carte : les emprises de bâtiments couvrent {p} % du cercle, moins que les {t} % retenus par ces règles (Overture {rel}).', b_no: 'Carte : aucune emprise de bâtiment dans le cercle (Overture {rel}).', b_later: 'Carte : emprises vues pour la première fois {d}, après ce mois.',
+    b_yes: 'Carte : {n} emprises de bâtiments couvrent {p} % du cercle (Overture {rel}).', b_yesf: 'Carte : {n} emprises de bâtiments couvrent {p} % du cercle (Overture {rel}), vues pour la première fois {d}.', b_low: 'Carte : les emprises de bâtiments couvrent {p} % du cercle, moins que les {t} % retenus par ces règles (Overture {rel}).', b_no: 'Carte : aucune emprise de bâtiment dans le cercle (Overture {rel}).', b_later: 'Carte : emprises vues pour la première fois {d}, après ce mois.',
     d_ro: 'Les signaux divergent : le radar montre un changement que les images optiques ne montrent pas.', d_bo: 'Les signaux divergent : des bâtiments sont cartographiés, mais les images ne montrent aucun changement depuis {base}. Ils peuvent être antérieurs à la série ou appartenir à un voisin.',
     d_g: 'Le site paraît plus vert qu\'au début ; ces règles ne le lisent pas comme une étape.', d_rd: 'Le radar a baissé sans image claire disponible ; ces règles ne le lisent pas seul.',
     p_hand: 'La livraison promise par le promoteur ({d}) est passée.', p_start: 'Le début des travaux promis par le promoteur ({d}) date de plus de 6 mois.',
@@ -114,7 +114,7 @@ const S = {
     o_green: 'Satelliet: de cirkel lijkt {x} punten minder bebouwd of kaal dan de omgeving, tegenover {base}.', o_gap: 'Satelliet: deze maand geen helder beeld (laatste: {m}).', o_never: 'Satelliet: deze maand geen helder beeld.', o_base: 'Satelliet: {m} is een van de eerste 3 heldere maanden, waartegen de index wordt gemeten.',
     r_up: 'Radar: VV-terugstrooiing {x} dB tegenover de eerste maanden, boven de normale schommeling (±{b} dB). Nieuwe muren, skeletten en daken doen dat meestal.', r_flat: 'Radar: geen verandering boven de normale schommeling (±{b} dB).', r_down: 'Radar: VV-terugstrooiing {x} dB, onder de normale schommeling (±{b} dB).',
     r_vh: 'Radar: VH {x} dB, zoals wanneer begroeiing wordt verwijderd.', r_na: 'Radar: niet gelezen voor deze plek (meestal heldere lucht).', r_gap: 'Radar: geen meting deze maand.',
-    b_yes: 'Kaart: {n} gebouwcontouren bedekken {p}% van de cirkel (Overture {rel}), voor het eerst gezien {d}.', b_low: 'Kaart: gebouwcontouren bedekken {p}% van de cirkel, minder dan de {t}% die deze regels tellen (Overture {rel}).', b_no: 'Kaart: geen gebouwcontour in de cirkel (Overture {rel}).', b_later: 'Kaart: contouren voor het eerst gezien {d}, na deze maand.',
+    b_yes: 'Kaart: {n} gebouwcontouren bedekken {p}% van de cirkel (Overture {rel}).', b_yesf: 'Kaart: {n} gebouwcontouren bedekken {p}% van de cirkel (Overture {rel}), voor het eerst gezien {d}.', b_low: 'Kaart: gebouwcontouren bedekken {p}% van de cirkel, minder dan de {t}% die deze regels tellen (Overture {rel}).', b_no: 'Kaart: geen gebouwcontour in de cirkel (Overture {rel}).', b_later: 'Kaart: contouren voor het eerst gezien {d}, na deze maand.',
     d_ro: 'De signalen spreken elkaar tegen: de radar toont een verandering die de optische beelden niet tonen.', d_bo: 'De signalen spreken elkaar tegen: er zijn gebouwen gekarteerd, maar de beelden tonen geen verandering sinds {base}. Ze kunnen ouder zijn dan de reeks of bij een buur horen.',
     d_g: 'De plek lijkt groener dan aan het begin; deze regels lezen dat niet als een fase.', d_rd: 'De radar daalde terwijl er geen helder beeld was; deze regels lezen dat niet alleen.',
     p_hand: 'De door de ontwikkelaar beloofde oplevering ({d}) is voorbij.', p_start: 'De door de ontwikkelaar beloofde bouwstart ({d}) ligt meer dan 6 maanden terug.',
@@ -136,7 +136,7 @@ const S = {
     o_green: 'Спутник: круг выглядит на {x} п. менее застроенным или голым, чем окрестности, по сравнению с {base}.', o_gap: 'Спутник: в этом месяце ясного снимка нет (последний: {m}).', o_never: 'Спутник: в этом месяце ясного снимка нет.', o_base: 'Спутник: {m} входит в первые 3 ясных месяца, от которых отсчитывается индекс.',
     r_up: 'Радар: обратное рассеяние VV {x} дБ к первым месяцам, сверх обычных колебаний (±{b} дБ). Так обычно дают новые стены, каркасы и крыши.', r_flat: 'Радар: изменений сверх обычных колебаний (±{b} дБ) нет.', r_down: 'Радар: обратное рассеяние VV {x} дБ, ниже обычных колебаний (±{b} дБ).',
     r_vh: 'Радар: VH {x} дБ, как при расчистке растительности.', r_na: 'Радар: для этого места не читаем (в большинстве месяцев ясно).', r_gap: 'Радар: в этом месяце данных нет.',
-    b_yes: 'Карта: {n} контуров зданий покрывают {p}% круга (Overture {rel}), впервые замечены {d}.', b_low: 'Карта: контуры зданий покрывают {p}% круга, меньше {t}%, которые учитывают эти правила (Overture {rel}).', b_no: 'Карта: в круге нет контуров зданий (Overture {rel}).', b_later: 'Карта: контуры впервые замечены {d}, после этого месяца.',
+    b_yes: 'Карта: {n} контуров зданий покрывают {p}% круга (Overture {rel}).', b_yesf: 'Карта: {n} контуров зданий покрывают {p}% круга (Overture {rel}), впервые замечены {d}.', b_low: 'Карта: контуры зданий покрывают {p}% круга, меньше {t}%, которые учитывают эти правила (Overture {rel}).', b_no: 'Карта: в круге нет контуров зданий (Overture {rel}).', b_later: 'Карта: контуры впервые замечены {d}, после этого месяца.',
     d_ro: 'Сигналы расходятся: радар показывает изменение, которого нет на оптических снимках.', d_bo: 'Сигналы расходятся: здания на карте есть, но снимки не показывают изменений с {base}. Они могут быть старше ряда или принадлежать соседу.',
     d_g: 'Участок выглядит зеленее, чем в начале; эти правила не считают это стадией.', d_rd: 'Радар снизился, когда ясного снимка не было; одно это правила не учитывают.',
     p_hand: 'Обещанная застройщиком сдача ({d}) уже прошла.', p_start: 'Обещанное застройщиком начало строительства ({d}) было более 6 месяцев назад.',
@@ -158,7 +158,7 @@ const S = {
     o_green: '卫星：与 {base} 相比，圆内比周边看起来少 {x} 个点的建成或裸露地面。', o_gap: '卫星：本月没有晴朗影像（最近一次：{m}）。', o_never: '卫星：本月没有晴朗影像。', o_base: '卫星：{m} 是最早的 3 个晴朗月份之一，指数以此为基准。',
     r_up: '雷达：VV 后向散射相对最初几个月 {x} dB，超出正常波动（±{b} dB）。新墙体、框架和屋顶通常会这样。', r_flat: '雷达：没有超出正常波动（±{b} dB）的变化。', r_down: '雷达：VV 后向散射 {x} dB，低于正常波动（±{b} dB）。',
     r_vh: '雷达：VH {x} dB，与清除植被时相似。', r_na: '雷达：此地未读取（大多数月份天空晴朗）。', r_gap: '雷达：本月无读数。',
-    b_yes: '地图：{n} 个建筑轮廓覆盖圆的 {p}%（Overture {rel}），首次出现于 {d}。', b_low: '地图：建筑轮廓覆盖圆的 {p}%，低于这些规则计入的 {t}%（Overture {rel}）。', b_no: '地图：圆内没有建筑轮廓（Overture {rel}）。', b_later: '地图：轮廓首次出现于 {d}，晚于本月。',
+    b_yes: '地图：{n} 个建筑轮廓覆盖圆的 {p}%（Overture {rel}）。', b_yesf: '地图：{n} 个建筑轮廓覆盖圆的 {p}%（Overture {rel}），首次出现于 {d}。', b_low: '地图：建筑轮廓覆盖圆的 {p}%，低于这些规则计入的 {t}%（Overture {rel}）。', b_no: '地图：圆内没有建筑轮廓（Overture {rel}）。', b_later: '地图：轮廓首次出现于 {d}，晚于本月。',
     d_ro: '信号不一致：雷达显示变化，而光学影像没有。', d_bo: '信号不一致：地图上有建筑，但自 {base} 以来影像没有变化。它们可能早于本序列，或属于邻近地块。',
     d_g: '此地比开始时更绿；这些规则不把这视为一个阶段。', d_rd: '雷达下降时没有晴朗影像；这些规则不单凭这一点判断。',
     p_hand: '开发商承诺的交付日期（{d}）已过。', p_start: '开发商承诺的开工日期（{d}）已过去 6 个月以上。',
@@ -180,7 +180,7 @@ const S = {
     o_green: 'القمر الصناعي: تبدو الدائرة مبنية أو جرداء أقل من محيطها بـ {x} نقطة مقارنة بـ {base}.', o_gap: 'القمر الصناعي: لا صورة صافية هذا الشهر (آخر صورة: {m}).', o_never: 'القمر الصناعي: لا صورة صافية هذا الشهر.', o_base: 'القمر الصناعي: {m} من أول 3 أشهر صافية يُقاس المؤشر بالنسبة إليها.',
     r_up: 'الرادار: الارتداد VV بلغ {x} ديسيبل مقارنة بالأشهر الأولى، فوق التذبذب المعتاد (±{b} ديسيبل). الجدران والهياكل والأسقف الجديدة تفعل ذلك عادة.', r_flat: 'الرادار: لا تغيّر يتجاوز التذبذب المعتاد (±{b} ديسيبل).', r_down: 'الرادار: الارتداد VV بلغ {x} ديسيبل، دون التذبذب المعتاد (±{b} ديسيبل).',
     r_vh: 'الرادار: VH بلغ {x} ديسيبل، كما يحدث عند إزالة الغطاء النباتي.', r_na: 'الرادار: لا نقرؤه لهذا الموقع (السماء صافية في معظم الأشهر).', r_gap: 'الرادار: لا قراءة هذا الشهر.',
-    b_yes: 'الخريطة: {n} مخططات مبانٍ تغطي {p}% من الدائرة (Overture {rel})، ظهرت أول مرة في {d}.', b_low: 'الخريطة: مخططات المباني تغطي {p}% من الدائرة، أقل من {t}% التي تحتسبها هذه القواعد (Overture {rel}).', b_no: 'الخريطة: لا مخطط مبنى في الدائرة (Overture {rel}).', b_later: 'الخريطة: ظهرت المخططات أول مرة في {d}، بعد هذا الشهر.',
+    b_yes: 'الخريطة: {n} مخططات مبانٍ تغطي {p}% من الدائرة (Overture {rel}).', b_yesf: 'الخريطة: {n} مخططات مبانٍ تغطي {p}% من الدائرة (Overture {rel})، ظهرت أول مرة في {d}.', b_low: 'الخريطة: مخططات المباني تغطي {p}% من الدائرة، أقل من {t}% التي تحتسبها هذه القواعد (Overture {rel}).', b_no: 'الخريطة: لا مخطط مبنى في الدائرة (Overture {rel}).', b_later: 'الخريطة: ظهرت المخططات أول مرة في {d}، بعد هذا الشهر.',
     d_ro: 'الإشارات متعارضة: يُظهر الرادار تغيّرًا لا تُظهره الصور البصرية.', d_bo: 'الإشارات متعارضة: هناك مبانٍ على الخريطة، لكن الصور لا تُظهر أي تغيّر منذ {base}. قد تكون أقدم من السلسلة أو تخص جارًا.',
     d_g: 'يبدو الموقع أكثر خضرة مما كان في البداية؛ ولا تقرأ هذه القواعد ذلك كمرحلة.', d_rd: 'انخفض الرادار دون توفر صورة صافية؛ ولا تقرأ هذه القواعد ذلك وحده.',
     p_hand: 'مضى موعد التسليم الذي وعد به المطوّر ({d}).', p_start: 'مضى أكثر من 6 أشهر على موعد بدء البناء الذي وعد به المطوّر ({d}).',
@@ -270,7 +270,7 @@ export function stages(rec, ix, rd, bd, ms, id) {
       if (!bl.n) reasons.push(['b_no', { rel }]);
       else if (bCover < R.footprint_cover_pct) reasons.push(['b_low', { p: bCover, t: R.footprint_cover_pct, rel }]);
       else if (!bOk) reasons.push(['b_far', { d: bNear, t: R.footprint_near_m, rel }]);
-      else if (bm) reasons.push(['b_yes', { n: bl.n, p: bCover, rel, d: ym(bFrom) }]);
+      else if (bm) reasons.push(bl.first_seen_min ? ['b_yesf', { n: bl.n, p: bCover, rel, d: relDate(bl.first_seen_min) }] : ['b_yes', { n: bl.n, p: bCover, rel }]);
       else reasons.push(['b_later', { d: ym(bFrom) }]);
     }
     // stage
@@ -315,7 +315,7 @@ const CSS = '<style id="kstage-css">.kstage{margin-top:28px;padding-top:4px;bord
 const SRC = { o: '/data/construction-progress.json', r: '/data/satellite-radar.json', b: '/data/buildings.json', d: '/promises/', p: '/promises/' };
 function reasonText(lang, fd, code, p) {
   const q = Object.assign({}, p);
-  for (const k of ['base', 'm', 'd']) if (q[k] && /^\d{4}(-\d{2})?/.test(q[k])) q[k] = fd(q[k]);
+  for (const k of ['base', 'm', 'd', 'rel']) if (q[k] && /^\d{4}(-\d{2})?/.test(q[k])) q[k] = fd(q[k]);
   if (q.rel) q.rel = q.rel;
   return t(lang, code, q);
 }
@@ -337,7 +337,7 @@ export function stageHtml(est, lang, fd, id) {
   const used = [...new Set(M.map(x => x.s))];
   const lg = '<ul class="kstage-lg">' + ['base', 'none', 'cleared', 'earthworks', 'structure', 'roofed', 'cant', 'nodata'].filter(s => used.includes(s)).map(s => '<li><i class="s-' + s + '"></i>' + esc(stageWord(lang, s)) + '</li>').join('') + '</ul><p class="ksat-src">' + esc(t(lang, 'leg')) + '</p>';
   const th = t(lang, 'th');
-  const sigs = x => x.r.map(([code, p]) => code === 'o_up' || code === 'o_green' || code === 'o_same' ? (code === 'o_same' ? '' : t(lang, 's_o', { x: code === 'o_green' ? '-' + p.x : p.x })) : code === 'r_up' || code === 'r_down' || code === 'r_flat' ? t(lang, 's_r', { x: p.x }) : code === 'b_yes' ? t(lang, 's_b') : '').filter(Boolean).join(', ');
+  const sigs = x => x.r.map(([code, p]) => code === 'o_up' || code === 'o_green' || code === 'o_same' ? (code === 'o_same' ? '' : t(lang, 's_o', { x: code === 'o_green' ? '-' + p.x : p.x })) : code === 'r_up' || code === 'r_down' || code === 'r_flat' ? t(lang, 's_r', { x: p.x }) : code === 'b_yes' || code === 'b_yesf' ? t(lang, 's_b') : '').filter(Boolean).join(', ');
   const rows = M.slice().reverse().map(x => '<tr><td>' + esc(fd(x.m)) + '</td><td>' + esc(stageWord(lang, x.s)) + '</td><td>' + esc(x.c ? t(lang, 'c_' + x.c) : '') + '</td><td>' + esc(sigs(x)) + '</td></tr>').join('');
   const table = '<details><summary>' + esc(t(lang, 'tbl')) + '</summary><div class="tw"><table><thead><tr>' + th.map(h => '<th scope="col">' + esc(h) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div></details>';
   return CSS + '<div class="kstage" id="stage">' + head + now + rib + lg + '<p class="ksat-lim">' + esc(t(lang, 'lim')) + '</p>' + links + table + '</div>';
@@ -385,7 +385,7 @@ function methodBody(lang) {
   const fill = s => s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m);
   const keys = ['base', 'roofed', 'structure', 'earthworks', 'cleared', 'none'];
   const rules = t(lang, 'm_rules').map((s, i) => '<li><span class="kstg-sw s-' + keys[i] + '" aria-hidden="true"></span>' + esc(fill(s)) + '</li>').join('');
-  return '<div class="kstg-pg"><section class="k-sec"><div class="k-wrap"><div class="k-phead"><p class="k-crumb"><a href="' + pre(lang) + '/">Kolaboro</a> / <a href="' + pre(lang) + '/methods/delivery-forecast/">' + esc(t(lang, 'method')) + '</a></p><h1>' + esc(t(lang, 'm_title')) + '</h1><p class="lead">' + esc(t(lang, 'm_lead')) + '</p></div>' +
+  return '<div class="kstg-pg"><section class="k-sec"><div class="k-wrap"><div class="k-phead"><p class="k-crumb"><a href="' + pre(lang) + '/">Kolaboro</a></p><h1>' + esc(t(lang, 'm_title')) + '</h1><p class="lead">' + esc(t(lang, 'm_lead')) + '</p></div>' +
     '<h2>' + esc(t(lang, 'm_h_in')) + '</h2><ul>' + t(lang, 'm_in').map(s => '<li>' + esc(fill(s)) + '</li>').join('') + '</ul></div></section>' +
     '<section class="k-sec"><div class="k-wrap"><h2>' + esc(t(lang, 'm_h_rules')) + '</h2><ol>' + rules + '</ol>' +
     '<p>' + esc(fill(t(lang, 'm_rule_x'))) + '</p><h2>' + esc(t(lang, 'm_h_conf')) + '</h2><p>' + esc(t(lang, 'm_conf')) + '</p>' +
