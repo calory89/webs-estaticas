@@ -152,3 +152,18 @@ AI = {
         "note": "Jawaban AI berdasarkan panduan The Sumba Times. Bisa keliru: periksa hal penting.", "err": "Maaf, saat ini saya tidak bisa menjawab. Coba lagi sebentar lagi.",
         "limit": "Anda sudah mencapai batas pertanyaan hari ini. Panduan kami berisi jawaban lengkapnya.", "off": "Asisten akan segera aktif. Sementara itu, panduan wisata kami punya jawabannya:", "close": "Tutup"},
 }
+
+# Budget calculator + reader questions (plan page). Ranges derived from guides/g_money.py (2 people, 7 days, 2026).
+CALC = {
+ "en": {"t": "Trip budget calculator", "days": "Days in Sumba", "people": "Travellers", "style": "Style", "styles": ["Budget", "Mid-range", "Luxury"], "res": "Estimated total, including return flights from Bali",
+        "pp": "per person", "note": "A rough estimate built from the ranges in our cost guide (2026 prices), not a quote. Prices rise in July-August and Pasola weeks.", "more": "How we calculate it"},
+ "es": {"t": "Calculadora de presupuesto", "days": "Días en Sumba", "people": "Viajeros", "style": "Estilo", "styles": ["Económico", "Medio", "Lujo"], "res": "Total estimado, con vuelos de ida y vuelta desde Bali",
+        "pp": "por persona", "note": "Estimación orientativa a partir de los rangos de nuestra guía de costes (precios de 2026), no un presupuesto. Los precios suben en julio-agosto y en semanas de Pasola.", "more": "Cómo lo calculamos"},
+ "id": {"t": "Kalkulator biaya perjalanan", "days": "Hari di Sumba", "people": "Jumlah orang", "style": "Gaya", "styles": ["Hemat", "Menengah", "Mewah"], "res": "Perkiraan total, termasuk tiket pulang pergi dari Bali",
+        "pp": "per orang", "note": "Perkiraan kasar dari kisaran di panduan biaya kami (harga 2026), bukan penawaran. Harga naik pada Juli-Agustus dan pekan Pasola.", "more": "Cara kami menghitung"},
+}
+QF = {
+ "en": {"t": "Ask The Sumba Times", "p": "A question about Sumba our guides do not answer? Send it to the desk. We read every one, and the most common questions become new guides.", "q": "Your question", "e": "Email (optional, only if you want a reply)", "b": "Send question", "ok": "Thank you. Your question reached the desk.", "err": "It could not be sent. Please try again later."},
+ "es": {"t": "Pregunta a The Sumba Times", "p": "¿Tienes una pregunta sobre Sumba que nuestras guías no responden? Envíala a la redacción. Las leemos todas y las más repetidas se convierten en guías nuevas.", "q": "Tu pregunta", "e": "Email (opcional, solo si quieres respuesta)", "b": "Enviar pregunta", "ok": "Gracias. Tu pregunta ha llegado a la redacción.", "err": "No se ha podido enviar. Inténtalo más tarde."},
+ "id": {"t": "Tanya The Sumba Times", "p": "Punya pertanyaan tentang Sumba yang belum dijawab panduan kami? Kirim ke redaksi. Kami membaca semuanya, dan pertanyaan yang sering muncul menjadi panduan baru.", "q": "Pertanyaan Anda", "e": "Email (opsional, hanya jika ingin dibalas)", "b": "Kirim pertanyaan", "ok": "Terima kasih. Pertanyaan Anda sudah sampai ke redaksi.", "err": "Gagal terkirim. Coba lagi nanti."},
+}

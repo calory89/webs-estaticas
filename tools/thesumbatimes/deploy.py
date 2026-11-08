@@ -48,8 +48,22 @@ async function ask(req,env){const H=Object.assign({'content-type':'application/j
  const hist=(Array.isArray(b.history)?b.history:[]).slice(-6).map(m=>({role:m.role==='assistant'?'assistant':'user',content:String(m.content||'').slice(0,700)}));
  try{const r=await fetch(AI_URL,{method:'POST',headers:{'content-type':'application/json','x-tst-secret':env.TST_SECRET},body:JSON.stringify({q,lang:l,page,history:hist,ctx:ctxFor(q+' '+hist.filter(m=>m.role==='user').map(m=>m.content).join(' '),l,page)})});
   const j=await r.json();return new Response(JSON.stringify({text:j.text||'',error:j.error||null}),{status:r.ok?200:502,headers:H})}catch(e){return new Response('{"error":"upstream"}',{status:502,headers:H})}}
+
+async function question(req,env){const H=Object.assign({'content-type':'application/json'},SEC);
+ if(req.method!=='POST')return new Response('{}',{status:405,headers:H});
+ const o=req.headers.get('origin')||'';if(o&&!/^https:\/\/(www\.)?thesumbatimes\.com$/.test(o))return new Response('{}',{status:403,headers:H});
+ let b={};try{b=await req.json()}catch(e){return new Response('{}',{status:400,headers:H})}
+ if(b.w)return new Response('{"ok":true}',{headers:H});
+ const q=String(b.q||'').trim().slice(0,1500),e=String(b.e||'').trim().slice(0,200);if(q.length<5)return new Response('{}',{status:400,headers:H});
+ if(e&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e))return new Response('{}',{status:400,headers:H});
+ const ip=req.headers.get('cf-connecting-ip')||'x',d=new Date().toISOString().slice(0,10),kl='qlim/'+d+'/'+ip,c=+(await env.IMG.get(kl))||0;if(c>=5)return new Response('{}',{status:429,headers:H});
+ await env.IMG.put(kl,String(c+1),{expirationTtl:172800});
+ const k='q/'+new Date().toISOString()+'-'+Math.random().toString(36).slice(2,8);
+ await env.IMG.put(k,JSON.stringify({q,e,lang:['en','es','id'].includes(b.lang)?b.lang:'en',page:String(b.page||'').slice(0,200),country:(req.cf&&req.cf.country)||'',at:new Date().toISOString()}));
+ return new Response('{"ok":true}',{headers:H})}
 export default{async fetch(req,env){const u=new URL(req.url);
  if(u.pathname==='/api/ask')return ask(req,env);
+ if(u.pathname==='/api/question')return question(req,env);
  if(u.hostname.startsWith('www.')){u.hostname=u.hostname.slice(4);return Response.redirect(u.toString(),301);}
  let p=decodeURIComponent(u.pathname);
  if(p==='/'||p==='/index.html'){const ua=req.headers.get('user-agent')||'';

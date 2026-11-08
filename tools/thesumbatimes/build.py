@@ -11,7 +11,7 @@ try:
     from images import IMAGES
 except Exception:
     IMAGES = {}
-from travel import SLUGS, T, N, AI, HERO_IMG, BASE_PLACES, load_guides, candidate_image
+from travel import SLUGS, T, N, AI, CALC, QF, HERO_IMG, BASE_PLACES, load_guides, candidate_image
 _GUIDES = load_guides()
 try:
     from brief_meta import BRIEF_META
@@ -237,7 +237,7 @@ footer{border-top:3px double var(--ink);margin-top:44px;padding:20px 0 40px;font
 .facts dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 14px;margin:8px 0 0;font:15px/1.45 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.facts dt{font-weight:700}.facts dd{margin:0}
 .faq details{border-bottom:1px solid var(--line);padding:10px 0}.faq summary{cursor:pointer;font-weight:700;font-size:18px}.faq details p{margin:.5em 0 0}
 .pls ul{font:16px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.pcta{font:15.5px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin-top:24px}
-.map{height:460px;border-radius:6px;overflow:hidden;background:var(--card);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;margin:14px 0 6px}.map button{padding:12px 18px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:600 15px -apple-system,sans-serif;cursor:pointer}
+.cf{display:flex;flex-wrap:wrap;gap:12px}.cf label{display:flex;flex-direction:column;font:600 13px -apple-system,sans-serif;gap:4px;color:var(--muted)}.cf input,.cf select,.qf2 textarea,.qf2 input{font:16px -apple-system,sans-serif;padding:10px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--ink);min-width:120px}.cr{margin:14px 0 4px;font:15px -apple-system,sans-serif}.cr span{display:block;color:var(--muted)}.cr b{display:block;font:700 28px/1.2 'Cormorant Garamond',Georgia,serif;margin:4px 0}.cr small{color:var(--muted)}.qf2 form{display:flex;flex-direction:column;gap:8px;max-width:640px}.qf2 button{align-self:flex-start;background:#a3271c;color:#fff;border:0;border-radius:999px;padding:11px 18px;font:700 14px -apple-system,sans-serif;cursor:pointer}.hp{position:absolute;left:-9999px}.qm{font:14px -apple-system,sans-serif;margin:0}.mf{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 0}.mf button{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--card);color:var(--muted);border-radius:999px;padding:7px 12px;font:13.5px -apple-system,sans-serif;cursor:pointer;min-height:36px}.mf button.on{color:var(--ink);border-color:var(--ink)}.mf i{width:10px;height:10px;border-radius:50%;display:inline-block}.map{height:460px;border-radius:6px;overflow:hidden;background:var(--card);border:1px solid var(--line);display:flex;align-items:center;justify-content:center;margin:14px 0 6px}.map button{padding:12px 18px;border-radius:999px;border:1px solid var(--line);background:var(--bg);color:var(--ink);font:600 15px -apple-system,sans-serif;cursor:pointer}
 .maplibregl-popup-content{font:14px/1.4 -apple-system,sans-serif;color:#1d1b18}
 @media(max-width:600px){.facts dl{grid-template-columns:1fr}.facts dt{margin-top:6px}.hero{min-height:480px}.hv{padding:22px 18px}}
 header.m{position:relative}.mh{margin:0;font-size:inherit;line-height:1}.ear{position:absolute;top:22px;width:200px;border:1px solid var(--ink);padding:7px 9px;font:12px/1.35 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;text-align:left;color:var(--muted)}.ear b{display:block;color:var(--ink);text-transform:uppercase;letter-spacing:.06em;font-size:10.5px}.ear.l{left:0}.ear.r{right:0;text-align:right}
@@ -734,6 +734,38 @@ def all_places():
         if p["name"].lower() not in seen: out.append(dict(p, url=None))
     return out
 
+PTYPES = {"beach": ("#1f7a8c", {"en": "Beaches", "es": "Playas", "id": "Pantai"}), "water": ("#2a6fdb", {"en": "Waterfalls", "es": "Cascadas", "id": "Air terjun"}),
+          "village": ("#a3271c", {"en": "Villages", "es": "Pueblos", "id": "Kampung adat"}), "view": ("#c77d1a", {"en": "Hills and views", "es": "Colinas y miradores", "id": "Bukit"}),
+          "nature": ("#3d7a3a", {"en": "Nature parks", "es": "Parques naturales", "id": "Taman nasional"}), "town": ("#555", {"en": "Towns and airports", "es": "Ciudades y aeropuertos", "id": "Kota dan bandara"})}
+def ptype(p):
+    n = (p["name"] + " " + ((p.get("url") or {}).get("slug", "") if isinstance(p.get("url"), dict) else "")).lower()
+    for k, ws in (("water", ("waterfall", "air terjun", "falls", "lapopu", "tanggedu", "matayangu", "waimarang")), ("beach", ("beach", "pantai", "lagoon", "laguna", "weekuri", "walakiri", "bay", "londa")),
+                  ("nature", ("national park", "taman nasional", "manupeu", "wanggameti")), ("village", ("village", "kampung", "ratenggaro", "praijing", "tarung", "prailiu", "rende", "pau", "wainyapu", "praiyawang", "field")),
+                  ("view", ("hill", "bukit", "wairinding", "kambera", "savanna", "persaudaraan")), ("town", ("airport", "town", "waingapu", "waikabubak", "tambolaka", "kodi", "labuan"))):
+        if any(w in n for w in ws): return k
+    return "town"
+
+def calc_html(l):
+    c = CALC[l]; cost = next((a for a in all_items() if a["slug"] == "sumba-travel-costs"), None)
+    more = f' <a href="{url_of(cost,l)}">{c["more"]} →</a>' if cost else ""
+    opts = "".join(f'<option value="{i}"{" selected" if i == 1 else ""}>{esc(n)}</option>' for i, n in enumerate(c["styles"]))
+    return f"""<section class="block calc" id="budget"><div class="hd"><h2>{c["t"]}</h2></div><form class="cf" onsubmit="return false">
+<label>{c["days"]}<input type="number" id="cd" min="2" max="30" value="7" inputmode="numeric"></label><label>{c["people"]}<input type="number" id="cp" min="1" max="10" value="2" inputmode="numeric"></label>
+<label>{c["style"]}<select id="cs">{opts}</select></label></form><p class="cr"><span>{c["res"]}</span><b id="ct">…</b><small id="cpp"></small></p><p class="when">{c["note"]}{more}</p></section>
+<script>(function(){{var G=[[0.56,0.99],[1.46,3.34],[5.74,9.86]],F=[[2.3,2.8],[2.4,2.8],[2.4,3.0]],R=20200,L='{l}';
+function f(x){{return x>=10?Math.round(x)+' M':x.toFixed(1).replace('.',L==='en'?'.':',')+' M'}}
+function u(){{var d=Math.max(2,Math.min(30,+document.getElementById('cd').value||7)),p=Math.max(1,Math.min(10,+document.getElementById('cp').value||2)),s=+document.getElementById('cs').value,k=0.5+0.25*p;
+var lo=G[s][0]*d*k+F[s][0]*p,hi=G[s][1]*d*k+F[s][1]*p;document.getElementById('ct').textContent='IDR '+f(lo)+' - '+f(hi)+'  (~EUR '+Math.round(lo*1e6/R/10)*10+' - '+Math.round(hi*1e6/R/10)*10+')';
+document.getElementById('cpp').textContent='IDR '+f(lo/p)+' - '+f(hi/p)+' {c["pp"]}'}}
+['cd','cp','cs'].forEach(function(i){{document.getElementById(i).addEventListener('input',u)}});u()}})();</script>"""
+
+def qform_html(l):
+    q = QF[l]
+    return f"""<section class="block qf2" id="ask"><div class="hd"><h2>{q["t"]}</h2></div><p>{q["p"]}</p><form id="qf"><textarea name="q" rows="3" maxlength="1500" required aria-label="{esc(q["q"])}" placeholder="{esc(q["q"])}"></textarea>
+<input type="email" name="e" maxlength="200" aria-label="{esc(q["e"])}" placeholder="{esc(q["e"])}"><input type="text" name="w" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true"><button type="submit">{q["b"]}</button><p class="qm" aria-live="polite"></p></form></section>
+<script>(function(){{var f=document.getElementById('qf'),m=f.querySelector('.qm');f.onsubmit=function(e){{e.preventDefault();var b=f.querySelector('button');b.disabled=true;
+fetch('/api/question',{{method:'POST',headers:{{'content-type':'application/json'}},body:JSON.stringify({{q:f.q.value,e:f.e.value,w:f.w.value,lang:'{l}',page:location.pathname}})}}).then(function(r){{m.textContent=r.ok?{json.dumps(q["ok"], ensure_ascii=False)}:{json.dumps(q["err"], ensure_ascii=False)};if(r.ok){{f.reset();try{{clarity('event','question_sent')}}catch(_){{}}}}}}).catch(function(){{m.textContent={json.dumps(q["err"], ensure_ascii=False)}}}).then(function(){{b.disabled=false}})}}}})();</script>"""
+
 def plan_page(l):
     t = T[l]; x = X[l]; tpl = "/{l}/plan/"
     gs = travel_guides()
@@ -749,7 +781,7 @@ def plan_page(l):
             faqs.append((q, an, a))
     faqs = faqs[:14]
     pls = all_places()
-    pts = [{"n": p["name"], "a": p.get("area", ""), "la": p["lat"], "lo": p["lon"], "u": url_of(p["url"], l) if p.get("url") else ""} for p in pls]
+    pts = [{"n": p["name"], "a": p.get("area", ""), "la": p["lat"], "lo": p["lon"], "u": url_of(p["url"], l) if p.get("url") else "", "k": ptype(p)} for p in pls]
     ld = [{"@context": "https://schema.org", "@type": "TouristDestination", "name": "Sumba", "sameAs": "https://en.wikipedia.org/wiki/Sumba",
            "geo": {"@type": "GeoCoordinates", "latitude": -9.70, "longitude": 119.97}, "containedInPlace": {"@type": "Place", "name": "Nusa Tenggara Timur, Indonesia"},
            "includesAttraction": [{"@type": "TouristAttraction", "name": p["name"], "geo": {"@type": "GeoCoordinates", "latitude": p["lat"], "longitude": p["lon"]}} for p in pls[:40]]},
@@ -761,10 +793,11 @@ def plan_page(l):
     faq_html = "".join(f'<details><summary>{esc(q)}</summary><p>{esc(an)} <a href="{url_of(a,l)}">→</a></p></details>' for q, an, a in faqs)
     s += f"""<main id="main" class="w"><div class="nar"><div class="crumbs"><a href="/{l}/">{x["home"]}</a></div><h1>{t["plan_title"]}</h1><p class="dek">{t["plan_dek"]}</p>{t["plan_intro"]}</div>
 {facts_strip(l)}{blocks}
-<section class="block" id="map"><div class="hd"><h2>{t["map_t"]}</h2></div><div id="stmap" class="map"><button type="button" onclick="stMap()">{t["map_btn"]}</button></div><p class="when">{t["map_note"]}</p></section>
-{f'<section class="block nar faq"><div class="hd"><h2>{t["faq_t"]}</h2></div>{faq_html}</section>' if faqs else ''}
+<section class="block" id="map"><div class="hd"><h2>{t["map_t"]}</h2></div><div class="mf" role="group" aria-label="{t["map_t"]}">{"".join(f'<button type="button" class="on" data-k="{k}" aria-pressed="true"><i style="background:{c}"></i>{esc(nm[l])}</button>' for k, (c, nm) in PTYPES.items())}</div><div id="stmap" class="map"><button type="button" onclick="stMap()">{t["map_btn"]}</button></div><p class="when">{t["map_note"]}</p></section>
+{calc_html(l)}{f'<section class="block nar faq"><div class="hd"><h2>{t["faq_t"]}</h2></div>{faq_html}</section>' if faqs else ''}{qform_html(l)}
 <div class="nar" style="margin-top:26px">{subscribe(l)}</div></main>
-<script>var STP={json.dumps(pts, ensure_ascii=False)};var stMapOn=false;
+<script>var STP={json.dumps(pts, ensure_ascii=False)},STC={json.dumps({k: c for k, (c, _) in PTYPES.items()})},STM=[];var stMapOn=false;
+document.querySelectorAll('.mf button').forEach(function(b){{b.onclick=function(){{var on=b.classList.toggle('on');b.setAttribute('aria-pressed',on);STM.forEach(function(x){{if(x.k===b.dataset.k)x.m.getElement().style.display=on?'':'none'}});try{{clarity('event','map_filter')}}catch(e){{}}}}}});
 function stMap(){{if(stMapOn)return;stMapOn=true;var el=document.getElementById('stmap');el.innerHTML='';
 var c=document.createElement('link');c.rel='stylesheet';c.href='https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css';document.head.appendChild(c);
 var sc=document.createElement('script');sc.src='https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js';sc.onload=function(){{
@@ -772,7 +805,7 @@ var m=new maplibregl.Map({{container:'stmap',style:'https://tiles.openfreemap.or
 m.addControl(new maplibregl.NavigationControl({{showCompass:false}}));
 STP.forEach(function(p){{var d=document.createElement('div');d.innerHTML='<b></b><br><span></span>';d.querySelector('b').textContent=p.n;d.querySelector('span').textContent=p.a;
 if(p.u){{var a=document.createElement('a');a.href=p.u;a.textContent=' →';d.appendChild(a)}}
-new maplibregl.Marker({{color:'#a3271c'}}).setLngLat([p.lo,p.la]).setPopup(new maplibregl.Popup({{offset:18}}).setDOMContent(d)).addTo(m)}});
+var mk=new maplibregl.Marker({{color:STC[p.k]||'#a3271c'}}).setLngLat([p.lo,p.la]).setPopup(new maplibregl.Popup({{offset:18}}).setDOMContent(d)).addTo(m);STM.push({{k:p.k,m:mk}});var f=document.querySelector('.mf button[data-k="'+p.k+'"]');if(f&&!f.classList.contains('on'))mk.getElement().style.display='none'}});
 try{{clarity('event','map_open')}}catch(e){{}}}};document.body.appendChild(sc)}}
 if('IntersectionObserver' in window){{new IntersectionObserver(function(e,o){{if(e[0].isIntersecting){{o.disconnect();stMap()}}}},{{rootMargin:'200px'}}).observe(document.getElementById('stmap'))}}</script>""" + footer(l)
     write(tpl.format(l=l), s)
