@@ -4,6 +4,48 @@
   {
    "date": "2026-11-08",
    "kind": "shipped",
+   "text": "Contract addendum builder: protective clauses for 9 markets, each with the law article it relies on, as PDF or Word, made in your browser",
+   "tl": {
+    "es": "Generador de anexo al contrato: cláusulas de protección para 9 mercados, cada una con su artículo de ley, en PDF o Word, creado en su navegador",
+    "fr": "Générateur d'avenant : clauses protectrices pour 9 marchés, chacune avec son article de loi, en PDF ou Word, créé dans votre navigateur",
+    "de": "Vertragsnachtrag: Schutzklauseln für 9 Märkte, jede mit ihrem Gesetzesartikel, als PDF oder Word, im Browser erstellt",
+    "nl": "Aanvulling op het contract: beschermende clausules voor 9 markten, elk met het wetsartikel, als PDF of Word, gemaakt in uw browser",
+    "ru": "Конструктор дополнения к договору: защитные условия для 9 рынков, каждое со статьёй закона, в PDF или Word, прямо в браузере",
+    "zh": "合同补充条款生成器：9 个市场的保护性条款，每条注明法律条文，可在浏览器中生成 PDF 或 Word",
+    "ar": "منشئ ملحق العقد: بنود حمائية لـ 9 أسواق، لكل منها مادتها القانونية، بصيغة PDF أو Word، في متصفحك"
+   }
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "data",
+   "text": "Planning and building records within 200 m of the pin on project pages in England, New York City and Miami, from the official registers",
+   "tl": {
+    "es": "Expedientes urbanísticos y de obra a menos de 200 m del punto en las fichas de Inglaterra, Nueva York y Miami, de los registros oficiales",
+    "fr": "Dossiers d'urbanisme et de construction à moins de 200 m du repère sur les fiches en Angleterre, à New York et à Miami, issus des registres officiels",
+    "de": "Bau- und Planungsakten im Umkreis von 200 m auf Projektseiten in England, New York City und Miami, aus den amtlichen Registern",
+    "nl": "Bouw- en planningsdossiers binnen 200 m van de markering op projectpagina's in Engeland, New York en Miami, uit de officiële registers",
+    "ru": "Градостроительные и строительные записи в радиусе 200 м на страницах проектов в Англии, Нью-Йорке и Майами, из официальных реестров",
+    "zh": "英格兰、纽约市和迈阿密项目页面显示定位点 200 米内的官方规划和建筑记录",
+    "ar": "سجلات التخطيط والبناء ضمن 200 م من الدبوس في صفحات المشاريع في إنجلترا ونيويورك وميامي، من السجلات الرسمية"
+   }
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "shipped",
+   "text": "Prices over time on project pages: the prices printed on the page we track, by date of copy, each linked to its sealed copy",
+   "tl": {
+    "es": "Precios en el tiempo en las fichas: los precios impresos en la página que seguimos, por fecha de copia, cada uno enlazado a su copia sellada",
+    "fr": "Les prix dans le temps sur les fiches : les prix imprimés sur la page suivie, par date de copie, chacun relié à sa copie scellée",
+    "de": "Preise im Zeitverlauf auf Projektseiten: die Preise der verfolgten Seite nach Datum der Kopie, jeder mit seiner versiegelten Kopie verlinkt",
+    "nl": "Prijzen door de tijd op projectpagina's: de prijzen op de gevolgde pagina per datum van de kopie, elk gekoppeld aan de verzegelde kopie",
+    "ru": "Цены во времени на страницах проектов: цены с отслеживаемой страницы по дате копии, каждая со ссылкой на запечатанную копию",
+    "zh": "项目页面的价格变化：按副本日期列出所跟踪页面上的价格，每个价格都链接到封存副本",
+    "ar": "الأسعار عبر الزمن في صفحات المشاريع: الأسعار المطبوعة على الصفحة التي نتابعها حسب تاريخ النسخة، وكل منها مرتبط بنسخته المختومة"
+   }
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "shipped",
    "text": "Open numbers refresh on their own: developer answer counts read live, new weeks counted from public data, paying customers shown as a count",
    "tl": {
     "es": "Las cifras abiertas se actualizan solas: respuestas de promotoras en directo, semanas nuevas contadas con datos públicos y clientes que pagan como recuento",
