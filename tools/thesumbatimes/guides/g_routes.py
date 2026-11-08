@@ -68,16 +68,16 @@ GUIDES = [
 "es": {
 "title": "De Yakarta a Sumba: vuelos vía Bali, Kupang o Surabaya y cuánto se tarda",
 "dek": "No hay vuelo directo de Yakarta a Sumba, pero con una sola conexión bien elegida pasas en un día del tráfico de la capital a la sabana tranquila de Sumba.",
-"answer": "No hay vuelos directos de Yakarta a Sumba, así que haces una conexión: lo más habitual es volar de Yakarta a Bali (unas 2 horas) y de Bali a Tambolaka (TMC, alrededor de 1 h 30 min); Kupang y Surabaya son buenas alternativas. Con una buena conexión se tarda unas 5-8 horas de aeropuerto a aeropuerto. Elige Tambolaka para el oeste y el suroeste de Sumba y Waingapu (WGP) para el este, y consulta siempre a la aerolínea antes de reservar, porque los horarios cambian.",
+"answer": "No hay vuelos directos de Yakarta a Sumba, así que hay que hacer escala: lo más habitual es volar de Yakarta a Bali (unas 2 horas) y de Bali a Tambolaka (TMC, alrededor de 1 h 30 min); Kupang y Surabaya son buenas alternativas. Con una buena conexión se tarda unas 5-8 horas de aeropuerto a aeropuerto. Elige Tambolaka para el oeste y el suroeste de Sumba y Waingapu (WGP) para el este, y consulta siempre a la aerolínea antes de reservar, porque los horarios cambian.",
 "body": """
-<p>Sales de Yakarta entre la neblina gris de la hora punta, con diez millones de personas y sus motos allá abajo. A media tarde, las hélices de un avión pequeño frenan sobre una costa de caliza clara y hierba dorada, y el aire que te recibe en la escalerilla de Tambolaka huele a tierra seca y a mar. Sumba está a una sola conexión de la capital, y el viaje entero cabe en un día si eliges bien el segundo vuelo.</p>
+<p>Sales de Yakarta entre la neblina gris de la hora punta, con diez millones de personas y sus motos allá abajo. A media tarde, un pequeño avión de hélice desciende sobre una costa de caliza clara y hierba dorada, y el aire que te recibe en la escalerilla de Tambolaka huele a tierra seca y a mar. Sumba está a una sola conexión de la capital, y el viaje entero cabe en un día si eliges bien el segundo vuelo.</p>
 <p><strong>La respuesta rápida:</strong> no hay vuelo sin escalas de Yakarta a Sumba. Vuelas de Yakarta a Bali (Denpasar, DPS) y allí cambias a Tambolaka (TMC) o Waingapu (WGP), o conectas por Kupang (KOE) o Surabaya (SUB). De aeropuerto a aeropuerto, una conexión fluida lleva unas 5-8 horas. Los horarios cambian a menudo en el este de Indonesia: consulta siempre a la aerolínea antes de reservar.</p>
 
 <h2>¿Qué aeropuerto: Tambolaka (TMC) o Waingapu (WGP)?</h2>
 <p>Sumba tiene dos aeropuertos separados por unos 200 km, y elegir bien te ahorra un trayecto largo por carretera.</p>
 <ul>
-<li><strong>Tambolaka (TMC)</strong>, rebautizado oficialmente como aeropuerto Lede Kalumbang en noviembre de 2022, está en Sumba Suroccidental. Es el más transitado: Wikipedia, con datos de la aviación civil indonesia, cuenta 165.416 pasajeros en 2024 y una pista de 2.300 m. Vuela aquí para las playas y lagunas del oeste, los pueblos tradicionales y las zonas de Pasola.</li>
-<li><strong>Waingapu (WGP)</strong>, aeropuerto Umbu Mehang Kunda, está a unos 4 km de la ciudad de Waingapu, en Sumba Oriental. Es más pequeño (58.819 pasajeros en 2024, pista de 1.950 m) y sirve para las colinas de sabana, la costa este y los pueblos tejedores cercanos.</li>
+<li><strong>Tambolaka (TMC)</strong>, rebautizado oficialmente como aeropuerto Lede Kalumbang en noviembre de 2022, está en Sumba Suroccidental. Es el más transitado: Wikipedia, con datos de la aviación civil indonesia, registra 165.416 pasajeros en 2024 y una pista de 2.300 m. Es el aeropuerto que conviene para las playas y lagunas del oeste, los pueblos tradicionales y las zonas de Pasola.</li>
+<li><strong>Waingapu (WGP)</strong>, aeropuerto Umbu Mehang Kunda, está a unos 4 km de la ciudad de Waingapu, en Sumba Oriental. Es más pequeño (58.819 pasajeros en 2024, pista de 1.950 m) y es la puerta de entrada a las colinas de sabana, la costa este y los pueblos tejedores cercanos.</li>
 </ul>
 <p>Muchos viajeros llegan por un aeropuerto y salen por el otro para cruzar la isla una sola vez. Nuestra guía sobre <a href="/es/getting-here/getting-around-sumba/">cómo moverse por Sumba</a> explica conductores, carreteras y distancias.</p>
 
@@ -96,20 +96,20 @@ GUIDES = [
 <p>Las frecuencias son las que mostraban las bases de datos de vuelos en otoño de 2026. Sirven de orientación, no son un horario: consulta a la aerolínea antes de reservar.</p>
 
 <h2>Vía Bali: la conexión más sencilla</h2>
-<p>Bali es el centro natural. Yakarta-Denpasar es una de las rutas con más vuelos del país, así que puedes elegir uno de mañana que aterrice con margen antes de las salidas a Sumba. En un horario publicado por Bali.live en 2024, Wings Air salía de Bali hacia Tambolaka a las 10:35, 14:15 y 15:20, con vuelos de unos 85-90 minutos. Las horas cambian según la temporada, pero las salidas de media mañana y de tarde se han mantenido, de modo que un vuelo desde Yakarta entre las 06:00 y las 09:00 suele conectar el mismo día.</p>
-<p>Para Sumba Oriental, el vuelo directo de TransNusa entre Bali y Waingapu opera cuatro días por semana. Los demás días, vuela a Tambolaka y cruza la isla por carretera (cuenta con casi un día) o pasa por Kupang. Todo sobre el tramo desde Bali, incluidos traslados y precios, está en nuestra guía sobre <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a>.</p>
+<p>Bali es el gran nudo natural. Yakarta-Denpasar es una de las rutas con más vuelos del país, así que puedes elegir uno de mañana que aterrice con margen antes de las salidas a Sumba. En un horario publicado por Bali.live en 2024, Wings Air salía de Bali hacia Tambolaka a las 10:35, 14:15 y 15:20, con vuelos de unos 85-90 minutos. Las horas cambian según la temporada, pero las salidas de media mañana y de tarde se han mantenido, de modo que un vuelo desde Yakarta entre las 06:00 y las 09:00 suele conectar el mismo día.</p>
+<p>Para Sumba Oriental, el vuelo directo de TransNusa entre Bali y Waingapu opera cuatro días por semana. Los demás días, vuela a Tambolaka y cruza la isla por carretera (cuenta con casi un día) o pasa por Kupang. En nuestra guía sobre <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a> encontrarás todo sobre el tramo desde Bali, incluidos traslados y precios.</p>
 <p><strong>Tiempo total vía Bali:</strong> unas 5-8 horas de aeropuerto a aeropuerto, con una escala de 1,5-3 horas.</p>
 
-<h2>Vía Kupang: la mejor para Waingapu y el este</h2>
-<p>Kupang, capital de Nusa Tenggara Oriental, en la isla de Timor, es el gran nudo de la provincia y tiene vuelos a los dos aeropuertos de Sumba. De Yakarta a Kupang hay unas 3 horas. Desde Kupang, Wings Air vuela a diario a Waingapu en alrededor de 1 h 15 min, con salida por la tarde, y entre Nam Air y Wings Air suman unos diez vuelos semanales a Tambolaka. Es más largo que pasar por Bali, unas 6-9 horas de aeropuerto a aeropuerto, pero resulta útil los días sin vuelo Bali-Waingapu o si quieres conocer también Timor. Lee nuestra guía <a href="/es/getting-here/kupang-to-sumba/">de Kupang a Sumba</a>, con los barcos de Pelni incluidos.</p>
+<h2>Vía Kupang: la mejor opción para Waingapu y el este</h2>
+<p>Kupang, capital de Nusa Tenggara Oriental, en la isla de Timor, es el gran nudo de la provincia y tiene vuelos a los dos aeropuertos de Sumba. El vuelo de Yakarta a Kupang dura unas 3 horas. Desde Kupang, Wings Air vuela a diario a Waingapu en alrededor de 1 h 15 min, con salida por la tarde, y entre Nam Air y Wings Air suman unos diez vuelos semanales a Tambolaka. Es más largo que pasar por Bali, unas 6-9 horas de aeropuerto a aeropuerto, pero resulta útil los días sin vuelo Bali-Waingapu o si quieres conocer también Timor. Lee nuestra guía <a href="/es/getting-here/kupang-to-sumba/">de Kupang a Sumba</a>, con los barcos de Pelni incluidos.</p>
 
 <h2>Vía Surabaya: una alternativa más tranquila</h2>
-<p>Nam Air vuela de Surabaya a Tambolaka unas tres veces por semana en alrededor de 1 h 30 min, según FlightConnections. Combinado con alguno de los unos 30 vuelos diarios Yakarta-Surabaya, puede funcionar bien, sobre todo si los vuelos por Bali están llenos en temporada alta. El problema es la baja frecuencia: si tu vuelo desde Yakarta se retrasa, la siguiente salida a Tambolaka puede tardar días. Mira nuestra guía <a href="/es/getting-here/surabaya-to-sumba/">de Surabaya a Sumba</a>.</p>
+<p>Nam Air vuela de Surabaya a Tambolaka unas tres veces por semana en alrededor de 1 h 30 min, según FlightConnections. Combinada con alguno de los cerca de 30 vuelos diarios Yakarta-Surabaya, puede funcionar bien, sobre todo si los vuelos por Bali están llenos en temporada alta. El problema es la baja frecuencia: si tu vuelo desde Yakarta se retrasa, la siguiente salida a Tambolaka puede tardar días. Consulta nuestra guía <a href="/es/getting-here/surabaya-to-sumba/">de Surabaya a Sumba</a>.</p>
 
 <h2>Precios habituales en 2025-2026</h2>
 <ul>
-<li><strong>Yakarta-Bali:</strong> en diciembre de 2025, Metro TV (con datos de Traveloka) citaba billetes de ida en turista desde unas 850.000 IDR en aerolíneas de bajo coste hasta unos 1,8 millones en Garuda Indonesia (unos 42-90 EUR).</li>
-<li><strong>Bali-Tambolaka:</strong> los billetes directos de ida rondaban 1,2-1,4 millones de IDR (unos 60-70 EUR) para noviembre de 2026; las promociones han salido más baratas. Nuestra guía sobre <a href="/es/getting-here/sumba-travel-costs/">cuánto cuesta viajar a Sumba</a> pone el viaje completo en contexto.</li>
+<li><strong>Yakarta-Bali:</strong> en diciembre de 2025, Metro TV (con datos de Traveloka) citaba billetes de ida en turista desde unas 850.000 rupias en aerolíneas de bajo coste hasta 1,8 millones en Garuda Indonesia (unos 42-90 euros).</li>
+<li><strong>Bali-Tambolaka:</strong> los billetes directos de ida rondaban 1,2-1,4 millones de rupias (unos 60-70 euros) para noviembre de 2026; las promociones han salido más baratas. Nuestra guía sobre <a href="/es/getting-here/sumba-travel-costs/">cuánto cuesta viajar a Sumba</a> pone el viaje completo en contexto.</li>
 </ul>
 <p>Los precios se disparan en Navidad, Año Nuevo, el fin del Ramadán (Lebaran) y las vacaciones escolares indonesias (de finales de junio a mediados de julio). Reserva con antelación para esas fechas.</p>
 
@@ -119,12 +119,12 @@ GUIDES = [
 <li><strong>Deja margen.</strong> Con billetes separados, deja al menos 3 horas en Bali o duerme allí una noche. Los retrasos domésticos son frecuentes, y perder el último vuelo del día a Sumba te obliga igualmente a dormir en Bali.</li>
 <li><strong>Ojo con el equipaje.</strong> Los turbohélices que van a Sumba tienen límites estrictos. El equipaje de mano suele limitarse a 7 kg y algunas tarifas de bajo coste (sobre todo Wings Air) no incluyen maleta facturada gratis: págala por internet, sale más barato que en el aeropuerto. Usa bolsas blandas y lleva lo de valor contigo.</li>
 <li><strong>Elige bien el día.</strong> Si vas a Waingapu, organízate según los días de TransNusa desde Bali (mar, mié, vie, sáb) o el vuelo diario desde Kupang. Los vuelos de mañana desde Yakarta te dan más opciones.</li>
-<li><strong>Reserva conductor con antelación.</strong> Ningún aeropuerto tiene apenas transporte público. Tambolaka está en el extremo oeste: Sumba Occidental queda cerca, pero Sumba Oriental está a un día entero de coche.</li>
+<li><strong>Reserva conductor con antelación.</strong> En ninguno de los dos aeropuertos hay apenas transporte público. Tambolaka está en el extremo oeste: Sumba Occidental queda cerca, pero Sumba Oriental está a un día entero de coche.</li>
 </ul>
 """,
 },
 "id": {
-"title": "Jakarta ke Sumba: penerbangan via Bali, Kupang atau Surabaya, dan berapa lama",
+"title": "Dari Jakarta ke Sumba: penerbangan via Bali, Kupang, atau Surabaya dan lama perjalanannya",
 "dek": "Belum ada penerbangan langsung dari Jakarta ke Sumba, tetapi dengan satu transit yang tepat Anda bisa berpindah dari macetnya ibu kota ke sabana Sumba yang tenang dalam sehari.",
 "answer": "Tidak ada penerbangan langsung dari Jakarta ke Sumba, jadi Anda perlu transit satu kali: kebanyakan wisatawan terbang Jakarta-Bali (sekitar 2 jam) lalu Bali-Tambolaka (TMC, sekitar 1 jam 30 menit), sementara Kupang dan Surabaya bisa menjadi alternatif. Dengan transit yang pas, perjalanan memakan sekitar 5-8 jam dari bandara ke bandara. Pilih Tambolaka untuk Sumba Barat dan Sumba Barat Daya, Waingapu (WGP) untuk Sumba Timur, dan selalu cek maskapai sebelum memesan karena jadwal sering berubah.",
 "body": """
@@ -134,7 +134,7 @@ GUIDES = [
 <h2>Bandara mana: Tambolaka (TMC) atau Waingapu (WGP)?</h2>
 <p>Sumba punya dua bandara yang berjarak sekitar 200 km. Memilih yang tepat menghemat perjalanan darat yang panjang.</p>
 <ul>
-<li><strong>Tambolaka (TMC)</strong>, resmi berganti nama menjadi Bandara Lede Kalumbang pada November 2022, ada di Sumba Barat Daya. Bandara ini lebih ramai: Wikipedia, mengutip data Ditjen Perhubungan Udara, mencatat 165.416 penumpang pada 2024 dan landasan 2.300 m. Pilih bandara ini untuk pantai dan danau di barat, kampung adat di barat, dan wilayah Pasola.</li>
+<li><strong>Tambolaka (TMC)</strong>, resmi berganti nama menjadi Bandara Lede Kalumbang pada November 2022, ada di Sumba Barat Daya. Bandara ini lebih ramai: Wikipedia, mengutip data Ditjen Perhubungan Udara, mencatat 165.416 penumpang pada 2024 dan landasan 2.300 m. Pilih bandara ini untuk pantai, laguna, dan kampung adat di barat serta wilayah Pasola.</li>
 <li><strong>Waingapu (WGP)</strong>, Bandara Umbu Mehang Kunda, berjarak sekitar 4 km dari kota Waingapu di Sumba Timur. Bandaranya lebih kecil (58.819 penumpang pada 2024, landasan 1.950 m) dan melayani bukit sabana, pesisir timur, serta kampung tenun di sekitar kota.</li>
 </ul>
 <p>Banyak wisatawan datang lewat satu bandara dan pulang lewat bandara lainnya agar cukup sekali melintasi pulau. Panduan kami tentang <a href="/id/getting-here/getting-around-sumba/">transportasi keliling Sumba</a> menjelaskan sopir, jalan dan jarak.</p>
@@ -151,23 +151,23 @@ GUIDES = [
 <tr><td>Jakarta (CGK) ke Surabaya (SUB)</td><td>Garuda Indonesia, Citilink, Batik Air, Lion Air, Super Air Jet, Pelita Air</td><td>Sekitar 30 kali sehari</td><td>Sekitar 1 jam 30 menit</td></tr>
 <tr><td>Surabaya (SUB) ke Tambolaka (TMC)</td><td>Nam Air</td><td>3 kali seminggu (FlightConnections)</td><td>Sekitar 1 jam 30 menit</td></tr>
 </table>
-<p>Frekuensi di atas adalah data database penerbangan pada musim gugur 2026. Gunakan sebagai gambaran, bukan jadwal resmi: cek maskapai sebelum memesan.</p>
+<p>Frekuensi di atas bersumber dari database penerbangan pada akhir 2026. Gunakan sebagai gambaran, bukan jadwal resmi: cek maskapai sebelum memesan.</p>
 
 <h2>Via Bali: transit paling mudah</h2>
-<p>Bali adalah simpul utama. Jakarta-Denpasar termasuk rute tersibuk di Indonesia, jadi Anda bisa memilih penerbangan pagi yang mendarat jauh sebelum keberangkatan ke Sumba. Dalam jadwal yang dimuat Bali.live pada 2024, Wings Air berangkat dari Bali ke Tambolaka pukul 10:35, 14:15 dan 15:20, masing-masing sekitar 85-90 menit. Jam terbang berubah dari musim ke musim, tetapi pola keberangkatan siang dan sore cukup stabil, sehingga penerbangan dari Jakarta sekitar pukul 06:00-09:00 biasanya bisa tersambung di hari yang sama.</p>
-<p>Untuk Sumba Timur, penerbangan langsung TransNusa Bali-Waingapu beroperasi empat kali seminggu. Di hari lain, terbanglah ke Tambolaka lalu lanjut lewat darat ke timur (hampir seharian), atau lewat Kupang. Semua tentang rute dari Bali, termasuk transfer dan harga tiket, ada di panduan kami <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a>.</p>
+<p>Bali adalah simpul utama. Jakarta-Denpasar termasuk rute tersibuk di Indonesia, jadi Anda bisa memilih penerbangan pagi yang mendarat jauh sebelum keberangkatan ke Sumba. Dalam jadwal yang dimuat Bali.live pada 2024, Wings Air berangkat dari Bali ke Tambolaka pukul 10.35, 14.15 dan 15.20, masing-masing sekitar 85-90 menit. Jam terbang berubah dari musim ke musim, tetapi pola keberangkatan siang dan sore cukup stabil, sehingga penerbangan dari Jakarta sekitar pukul 06.00-09.00 biasanya bisa tersambung di hari yang sama.</p>
+<p>Untuk Sumba Timur, penerbangan langsung TransNusa Bali-Waingapu beroperasi empat kali seminggu. Di hari lain, terbanglah ke Tambolaka lalu lanjut lewat darat ke timur (hampir seharian), atau lewat Kupang. Informasi lengkap tentang rute dari Bali, termasuk transfer dan harga tiket, ada di panduan kami <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a>.</p>
 <p><strong>Total waktu via Bali:</strong> sekitar 5-8 jam dari bandara ke bandara, termasuk transit 1,5-3 jam.</p>
 
 <h2>Via Kupang: terbaik untuk Waingapu dan Sumba Timur</h2>
-<p>Kupang, ibu kota Nusa Tenggara Timur di Pulau Timor, adalah simpul utama provinsi dan punya penerbangan ke kedua bandara Sumba. Jakarta-Kupang sekitar 3 jam. Dari Kupang, Wings Air terbang setiap hari ke Waingapu dalam sekitar 1 jam 15 menit dengan keberangkatan sore, sedangkan Nam Air dan Wings Air bersama-sama terbang sekitar sepuluh kali seminggu ke Tambolaka. Rute ini lebih lama daripada lewat Bali, sekitar 6-9 jam dari bandara ke bandara, tetapi berguna pada hari tanpa penerbangan Bali-Waingapu atau bila Anda juga ingin melihat Timor. Baca panduan <a href="/id/getting-here/kupang-to-sumba/">Kupang ke Sumba</a>, termasuk kapal Pelni.</p>
+<p>Kupang, ibu kota Nusa Tenggara Timur di Pulau Timor, adalah simpul utama provinsi dan punya penerbangan ke kedua bandara Sumba. Penerbangan Jakarta-Kupang memakan waktu sekitar 3 jam. Dari Kupang, Wings Air terbang setiap hari ke Waingapu dalam sekitar 1 jam 15 menit dengan keberangkatan sore, sedangkan Nam Air dan Wings Air bersama-sama terbang sekitar sepuluh kali seminggu ke Tambolaka. Rute ini lebih lama daripada lewat Bali, sekitar 6-9 jam dari bandara ke bandara, tetapi berguna pada hari tanpa penerbangan Bali-Waingapu atau bila Anda juga ingin melihat Timor. Baca panduan <a href="/id/getting-here/kupang-to-sumba/">Kupang ke Sumba</a>, termasuk kapal Pelni.</p>
 
 <h2>Via Surabaya: alternatif yang lebih sepi</h2>
 <p>Nam Air terbang Surabaya-Tambolaka sekitar tiga kali seminggu dalam sekitar 1 jam 30 menit, menurut FlightConnections. Digabung dengan salah satu dari sekitar 30 penerbangan harian Jakarta-Surabaya, rute ini bisa jadi pilihan bagus, terutama saat penerbangan lewat Bali penuh di musim ramai. Kelemahannya frekuensi rendah: jika penerbangan dari Jakarta terlambat, keberangkatan berikutnya ke Tambolaka bisa baru beberapa hari lagi. Lihat panduan <a href="/id/getting-here/surabaya-to-sumba/">Surabaya ke Sumba</a>.</p>
 
 <h2>Kisaran harga tiket 2025-2026</h2>
 <ul>
-<li><strong>Jakarta-Bali:</strong> pada Desember 2025, Metro TV (mengutip Traveloka) mencantumkan tiket sekali jalan kelas ekonomi mulai sekitar Rp850.000 di maskapai berbiaya rendah hingga sekitar Rp1,8 juta di Garuda Indonesia.</li>
-<li><strong>Bali-Tambolaka:</strong> tiket langsung sekali jalan sekitar Rp1,2-1,4 juta untuk November 2026; tiket promo pernah lebih murah. Panduan kami tentang <a href="/id/getting-here/sumba-travel-costs/">biaya liburan ke Sumba</a> merangkum keseluruhan biaya.</li>
+<li><strong>Jakarta-Bali:</strong> pada Desember 2025, Metro TV (mengutip Traveloka) mencantumkan tiket sekali jalan kelas ekonomi mulai sekitar Rp 850.000 di maskapai berbiaya rendah hingga sekitar Rp 1,8 juta di Garuda Indonesia.</li>
+<li><strong>Bali-Tambolaka:</strong> tiket langsung sekali jalan sekitar Rp 1,2-1,4 juta untuk November 2026; tiket promo pernah lebih murah. Panduan kami tentang <a href="/id/getting-here/sumba-travel-costs/">biaya liburan ke Sumba</a> merangkum keseluruhan biaya.</li>
 </ul>
 <p>Harga melonjak saat Natal, Tahun Baru, Lebaran dan libur sekolah (akhir Juni sampai pertengahan Juli). Pesan jauh hari untuk tanggal-tanggal itu.</p>
 
@@ -291,12 +291,12 @@ GUIDES = [
 <p><strong>La respuesta rápida:</strong> vuela. Kupang (aeropuerto El Tari, KOE) tiene vuelos directos a los dos aeropuertos de Sumba: alrededor de 1 h 15 min hasta Waingapu (WGP), en el este, y de 1 h a 1 h 35 min hasta Tambolaka (TMC), en el oeste. Si tienes tiempo y te apetece ir despacio, los barcos de pasajeros de Pelni navegan de Kupang a Waingapu varias veces al mes. Los horarios cambian: consulta a la aerolínea o a Pelni antes de reservar.</p>
 
 <h2>Vuelos de Kupang a Sumba</h2>
-<p>Kupang es la capital de Nusa Tenggara Oriental, la provincia a la que pertenece Sumba, y funciona como centro de los vuelos entre islas. Hay dos rutas que importan:</p>
+<p>Kupang es la capital de Nusa Tenggara Oriental, la provincia a la que pertenece Sumba, y es el centro de los vuelos entre islas. Interesan dos rutas:</p>
 <ul>
 <li><strong>Kupang-Waingapu (Sumba Oriental).</strong> Wings Air vuela una vez al día con un turbohélice ATR 72, según AirportOverview, con salida de Kupang por la tarde (indicada a las 15:15, llegada a las 16:30). El vuelo de vuelta sale de Waingapu a primera hora de la mañana. Wikipedia también cita a Wings Air en esta ruta.</li>
 <li><strong>Kupang-Tambolaka (Sumba Occidental y Suroccidental).</strong> FlightsFrom indica unos diez vuelos semanales: Nam Air una vez al día (salida por la tarde, indicada a las 15:00) y Wings Air los martes, jueves y sábados (salida a media mañana, indicada a las 11:10).</li>
 </ul>
-<p>¿Cuál elegir? Si tus planes están en Sumba Oriental (las colinas de sabana, las playas de la costa este, los pueblos tejedores cerca de Waingapu), vuela a Waingapu. Si vas a las playas, lagunas y pueblos tradicionales del oeste, vuela a Tambolaka. Los dos aeropuertos están a unos 200 km y el trayecto por carretera lleva casi un día: nuestra guía sobre <a href="/es/getting-here/getting-around-sumba/">cómo moverse por Sumba</a> explica las carreteras.</p>
+<p>¿Cuál elegir? Si vas a moverte por Sumba Oriental (las colinas de sabana, las playas de la costa este, los pueblos tejedores cerca de Waingapu), vuela a Waingapu. Si vas a las playas, lagunas y pueblos tradicionales del oeste, vuela a Tambolaka. Los dos aeropuertos están a unos 200 km y el trayecto por carretera lleva casi un día: nuestra guía sobre <a href="/es/getting-here/getting-around-sumba/">cómo moverse por Sumba</a> explica las carreteras.</p>
 
 <h2>Las opciones de un vistazo</h2>
 <table>
@@ -316,42 +316,42 @@ GUIDES = [
 <li><strong>KM Lawit</strong> el 28 de julio (04:00), por Lewoleba, Ende, Waingapu, Bima, Benoa y Surabaya.</li>
 <li><strong>KM Sabuk Nusantara 90</strong>, un barco pionero más pequeño, los días 6, 16 y 26 de julio (21:00), en una ruta lenta por Sabu, Raijua y Ende que termina en Waingapu.</li>
 </ul>
-<p>Rome2rio calcula unas 16 horas de travesía de Kupang a Waingapu, con billetes de unos 13-22 USD (unas 240.000-400.000 IDR) en clase económica. Pelni advierte de que sus horarios son provisionales y cambian con el tiempo y la operativa, así que tómalos como un patrón, no como una garantía. Los billetes se venden en la oficina de Pelni en Kupang, en pelni.co.id y en la app PELNI Mobile.</p>
+<p>Rome2rio calcula unas 16 horas de travesía de Kupang a Waingapu, con billetes de unos 13-22 dólares (unas 240.000-400.000 rupias) en clase económica. Pelni advierte de que sus horarios son provisionales y cambian según la meteorología y las necesidades operativas, así que tómalos como un patrón, no como una garantía. Los billetes se venden en la oficina de Pelni en Kupang, en pelni.co.id y en la app PELNI Mobile.</p>
 <p><strong>¿Y los ferris de ASDP?</strong> ASDP Indonesia Ferry ha operado un ferri de vehículos desde el puerto de Bolok, en Kupang, vía Aimere (Flores) hasta Waingapu. Antara informó en 2019 de que salía dos veces por semana (lunes y jueves a las 08:00). No hemos podido confirmar un horario vigente en 2026, así que pregunta a ASDP o en el puerto de Bolok antes de contar con él. Las travesías por el mar de Savu se cancelan a menudo con mar gruesa, sobre todo en la temporada de lluvias (más o menos de diciembre a marzo).</p>
 
 <h2>Tiempo total y precios</h2>
 <ul>
 <li><strong>En avión:</strong> de 1 h 15 min a 1 h 35 min de vuelo, o unas 3-4 horas desde que sales de tu alojamiento en Kupang hasta llegar al de Sumba si está cerca del aeropuerto.</li>
-<li><strong>Precio del vuelo:</strong> Rome2rio mostraba billetes de ida de Kupang a Tambolaka desde unos 65 USD y a Waingapu desde unos 80 USD, con picos de unos 245-275 USD (aprox. 1,2-5 millones de IDR) en 2026. En vacaciones suben.</li>
+<li><strong>Precio del vuelo:</strong> Rome2rio mostraba billetes de ida de Kupang a Tambolaka desde unos 65 dólares y a Waingapu desde unos 80 dólares, con picos de unos 245-275 dólares (aprox. 1,2-5 millones de rupias) en 2026. En vacaciones suben.</li>
 <li><strong>En barco:</strong> cuenta con un día y una noche a bordo, más la espera, porque los barcos suelen ir con retraso.</li>
 </ul>
-<p>Para el presupuesto una vez en la isla, mira nuestra guía sobre <a href="/es/getting-here/sumba-travel-costs/">cuánto cuesta viajar a Sumba</a>. ¿Llegas desde Bali? Lee <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a>.</p>
+<p>Para el presupuesto una vez en la isla, consulta nuestra guía sobre <a href="/es/getting-here/sumba-travel-costs/">cuánto cuesta viajar a Sumba</a>. ¿Llegas desde Bali? Lee <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a>.</p>
 
 <h2>Consejos prácticos</h2>
 <ul>
 <li><strong>Equipaje en aviones pequeños.</strong> Wings Air vuela con turbohélices ATR, con un límite de 7 kg en cabina (40 x 30 x 20 cm) y, en muchas tarifas, sin maleta facturada gratis. Paga la facturación por internet, sale más barato que en el mostrador, y usa bolsas blandas que quepan en bodegas pequeñas. En Nam Air, revisa también qué incluye tu tarifa.</li>
 <li><strong>Deja margen.</strong> Si llegas a Kupang desde Yakarta o Bali con otro billete, no programes el vuelo a Sumba esa misma tarde salvo que tengas al menos 3 horas. Mejor aún, duerme una noche en Kupang.</li>
-<li><strong>Elige bien el día.</strong> Los vuelos de Wings Air a Tambolaka solo operan martes, jueves y sábado; el resto de días Nam Air es la única opción directa. A Waingapu hay vuelo todos los días.</li>
+<li><strong>Elige bien el día.</strong> Los vuelos de Wings Air a Tambolaka solo operan martes, jueves y sábado; el resto de los días Nam Air es la única opción directa. A Waingapu hay vuelo todos los días.</li>
 <li><strong>Los barcos se retrasan.</strong> Pelni puede llegar a Waingapu de noche. Organiza la recogida con antelación y lleva el móvil cargado. Para la cubierta económica, lleva agua, algo de comer, un sarong o una manta ligera y tapones para los oídos.</li>
 <li><strong>Combínalo con Flores.</strong> Como los barcos paran en Ende, puedes detenerte en Flores y seguir a Sumba después, o usar el vuelo diario desde Kupang para un trayecto y el barco para el otro.</li>
 </ul>
 """,
 },
 "id": {
-"title": "Kupang ke Sumba: penerbangan ke Waingapu dan Tambolaka, serta kapal Pelni",
+"title": "Dari Kupang ke Sumba: penerbangan ke Waingapu dan Tambolaka serta kapal Pelni",
 "dek": "Dari Timor, Sumba hanya sedikit lebih dari satu jam dengan pesawat baling-baling, atau satu malam panjang di laut dengan kapal Pelni yang singgah di Ende, Flores.",
 "answer": "Cara tercepat dari Kupang ke Sumba adalah penerbangan langsung: Wings Air terbang setiap hari ke Waingapu (WGP) sekitar 1 jam 15 menit, sedangkan Nam Air (setiap hari) dan Wings Air (tiga kali seminggu) terbang ke Tambolaka (TMC) sekitar 1 jam sampai 1 jam 35 menit. Lewat laut, kapal Pelni dari Pelabuhan Tenau singgah di Waingapu beberapa kali sebulan, biasanya via Ende, sekitar 16 jam atau lebih. Jadwal bisa berubah, jadi cek maskapai atau Pelni sebelum memesan.",
 "body": """
-<p>Kupang bangun pagi. Bemo dengan pengeras suara menggelegar melaju di sepanjang pantai, pelabuhan beraroma solar dan ikan bakar, dan perbukitan Timor berubah dari cokelat menjadi keemasan di cahaya pertama. Di seberang Laut Sawu di sebelah barat terbentang Sumba: cukup dekat untuk penerbangan singkat, cukup jauh untuk terasa seperti dunia lain, dengan sabana luas, kampung adat beratap menjulang dan sedikit sekali wisatawan.</p>
+<p>Kupang bangun lebih awal. Bemo dengan pengeras suara menggelegar melaju di sepanjang pantai, pelabuhan beraroma solar dan ikan bakar, dan perbukitan Timor berubah dari cokelat menjadi keemasan di cahaya pertama. Di seberang Laut Sawu di sebelah barat terbentang Sumba: cukup dekat untuk penerbangan singkat, cukup jauh untuk terasa seperti dunia lain, dengan sabana luas, kampung adat beratap menjulang dan sedikit sekali wisatawan.</p>
 <p><strong>Jawaban singkat:</strong> naik pesawat. Kupang (Bandara El Tari, KOE) punya penerbangan langsung ke kedua bandara Sumba: sekitar 1 jam 15 menit ke Waingapu (WGP) di timur dan sekitar 1 jam sampai 1 jam 35 menit ke Tambolaka (TMC) di barat. Jika punya waktu dan ingin cara yang lebih santai, kapal penumpang Pelni berlayar dari Kupang ke Waingapu beberapa kali sebulan. Jadwal bisa berubah, jadi cek maskapai atau Pelni sebelum memesan.</p>
 
 <h2>Penerbangan dari Kupang ke Sumba</h2>
 <p>Kupang adalah ibu kota Nusa Tenggara Timur, provinsi tempat Sumba berada, dan menjadi simpul penerbangan antarpulau. Ada dua rute penting:</p>
 <ul>
-<li><strong>Kupang ke Waingapu (Sumba Timur).</strong> Wings Air terbang sekali sehari dengan pesawat baling-baling ATR 72, menurut AirportOverview, berangkat dari Kupang sore hari (tercatat pukul 15:15, tiba 16:30). Penerbangan balik ke Kupang berangkat dari Waingapu pagi-pagi sekali. Wikipedia juga mencantumkan Wings Air di rute ini.</li>
-<li><strong>Kupang ke Tambolaka (Sumba Barat dan Sumba Barat Daya).</strong> FlightsFrom mencatat sekitar sepuluh penerbangan seminggu: Nam Air sekali sehari (berangkat sore, tercatat pukul 15:00) dan Wings Air setiap Selasa, Kamis dan Sabtu (berangkat menjelang siang, tercatat pukul 11:10).</li>
+<li><strong>Kupang ke Waingapu (Sumba Timur).</strong> Wings Air terbang sekali sehari dengan pesawat baling-baling ATR 72, menurut AirportOverview, berangkat dari Kupang sore hari (tercatat pukul 15.15, tiba 16.30). Penerbangan balik ke Kupang berangkat dari Waingapu pagi-pagi sekali. Wikipedia juga mencantumkan Wings Air di rute ini.</li>
+<li><strong>Kupang ke Tambolaka (Sumba Barat dan Sumba Barat Daya).</strong> FlightsFrom mencatat sekitar sepuluh penerbangan seminggu: Nam Air sekali sehari (berangkat sore, tercatat pukul 15.00) dan Wings Air setiap Selasa, Kamis dan Sabtu (berangkat menjelang siang, tercatat pukul 11.10).</li>
 </ul>
-<p>Mana yang dipilih? Jika rencana Anda di Sumba Timur (bukit sabana, pantai di pesisir timur, kampung tenun dekat Waingapu), terbanglah ke Waingapu. Jika menuju pantai, danau dan kampung adat di barat, terbanglah ke Tambolaka. Kedua bandara berjarak sekitar 200 km dan perjalanan darat di antaranya hampir seharian: panduan kami tentang <a href="/id/getting-here/getting-around-sumba/">transportasi keliling Sumba</a> menjelaskan kondisi jalan.</p>
+<p>Mana yang sebaiknya dipilih? Jika rencana Anda di Sumba Timur (bukit sabana, pantai di pesisir timur, kampung tenun dekat Waingapu), terbanglah ke Waingapu. Jika menuju pantai, laguna, dan kampung adat di barat, terbanglah ke Tambolaka. Kedua bandara berjarak sekitar 200 km dan perjalanan darat di antaranya hampir seharian: panduan kami tentang <a href="/id/getting-here/getting-around-sumba/">transportasi keliling Sumba</a> menjelaskan kondisi jalan.</p>
 
 <h2>Ringkasan pilihan rute</h2>
 <table>
@@ -366,18 +366,18 @@ GUIDES = [
 <h2>Lewat laut: kapal Pelni dari Tenau</h2>
 <p>Pelni, perusahaan pelayaran penumpang milik negara, melayani rute panjang berputar di Indonesia timur, dan beberapa di antaranya menghubungkan Kupang dengan Waingapu. Jadwal Juli 2026 dari Pelabuhan Tenau yang dimuat Metro TV mencantumkan:</p>
 <ul>
-<li><strong>KM Awu</strong> pada 3, 17 dan 31 Juli (17:00), kira-kira dua minggu sekali, dengan rute Ende, Waingapu, Bima, Benoa (Bali) dan Surabaya.</li>
-<li><strong>KM Wilis</strong> pada 9 dan 23 Juli (14:00), lewat Ende, Waingapu, Waikelo (dekat Tambolaka), Bima, Labuan Bajo dan Makassar.</li>
-<li><strong>KM Lawit</strong> pada 28 Juli (04:00), lewat Lewoleba, Ende, Waingapu, Bima, Benoa dan Surabaya.</li>
-<li><strong>KM Sabuk Nusantara 90</strong>, kapal perintis yang lebih kecil, pada 6, 16 dan 26 Juli (21:00), dengan rute lambat lewat Sabu, Raijua dan Ende yang berakhir di Waingapu.</li>
+<li><strong>KM Awu</strong> pada 3, 17 dan 31 Juli (17.00), kira-kira dua minggu sekali, dengan rute Ende, Waingapu, Bima, Benoa (Bali) dan Surabaya.</li>
+<li><strong>KM Wilis</strong> pada 9 dan 23 Juli (14.00), lewat Ende, Waingapu, Waikelo (dekat Tambolaka), Bima, Labuan Bajo dan Makassar.</li>
+<li><strong>KM Lawit</strong> pada 28 Juli (04.00), lewat Lewoleba, Ende, Waingapu, Bima, Benoa dan Surabaya.</li>
+<li><strong>KM Sabuk Nusantara 90</strong>, kapal perintis yang lebih kecil, pada 6, 16 dan 26 Juli (21.00), dengan rute lambat lewat Sabu, Raijua dan Ende yang berakhir di Waingapu.</li>
 </ul>
-<p>Rome2rio memperkirakan pelayaran Kupang-Waingapu sekitar 16 jam, dengan tarif kelas ekonomi sekitar USD 13-22 (kira-kira Rp240.000-400.000). Pelni menyebut jadwalnya bersifat sementara dan dapat berubah karena cuaca dan operasional, jadi anggap ini sebagai pola, bukan kepastian. Tiket dijual di kantor Pelni Kupang, di pelni.co.id dan di aplikasi PELNI Mobile.</p>
-<p><strong>Bagaimana dengan feri ASDP?</strong> ASDP Indonesia Ferry pernah melayani kapal feri dari Pelabuhan Bolok di Kupang via Aimere, Flores, ke Waingapu. Antara memberitakan pada 2019 bahwa kapal ini berlayar dua kali seminggu (Senin dan Kamis pukul 08:00). Kami belum bisa memastikan jadwal 2026, jadi tanyakan ke ASDP atau di Pelabuhan Bolok sebelum mengandalkannya. Penyeberangan di Laut Sawu sering dibatalkan saat gelombang tinggi, terutama pada musim hujan (kira-kira Desember sampai Maret).</p>
+<p>Rome2rio memperkirakan pelayaran Kupang-Waingapu sekitar 16 jam, dengan tarif kelas ekonomi sekitar USD 13-22 (kira-kira Rp 240.000-400.000). Pelni menyebut jadwalnya bersifat sementara dan dapat berubah karena cuaca dan operasional, jadi anggap ini sebagai pola, bukan kepastian. Tiket dijual di kantor Pelni Kupang, di pelni.co.id dan di aplikasi PELNI Mobile.</p>
+<p><strong>Bagaimana dengan feri ASDP?</strong> ASDP Indonesia Ferry pernah melayani kapal feri dari Pelabuhan Bolok di Kupang via Aimere, Flores, ke Waingapu. Antara memberitakan pada 2019 bahwa kapal ini berlayar dua kali seminggu (Senin dan Kamis pukul 08.00). Kami belum bisa memastikan jadwal 2026, jadi tanyakan ke ASDP atau di Pelabuhan Bolok sebelum mengandalkannya. Penyeberangan di Laut Sawu sering dibatalkan saat gelombang tinggi, terutama pada musim hujan (kira-kira Desember sampai Maret).</p>
 
 <h2>Total waktu dan harga</h2>
 <ul>
 <li><strong>Pesawat:</strong> sekitar 1 jam 15 menit sampai 1 jam 35 menit di udara, atau sekitar 3-4 jam dari penginapan di Kupang hingga penginapan di Sumba jika letaknya dekat bandara.</li>
-<li><strong>Harga tiket pesawat:</strong> Rome2rio mencantumkan tiket sekali jalan Kupang-Tambolaka mulai sekitar USD 65 dan Kupang-Waingapu mulai sekitar USD 80, dengan harga puncak sekitar USD 245-275 (kira-kira Rp1,2-5 juta) pada 2026. Harga naik saat libur.</li>
+<li><strong>Harga tiket pesawat:</strong> Rome2rio mencantumkan tiket sekali jalan Kupang-Tambolaka mulai sekitar USD 65 dan Kupang-Waingapu mulai sekitar USD 80, dengan harga puncak sekitar USD 245-275 (kira-kira Rp 1,2-5 juta) pada 2026. Harga naik saat libur.</li>
 <li><strong>Kapal:</strong> siapkan sehari semalam di atas kapal, ditambah waktu menunggu, karena kapal sering terlambat.</li>
 </ul>
 <p>Untuk anggaran setelah tiba, lihat panduan kami tentang <a href="/id/getting-here/sumba-travel-costs/">biaya liburan ke Sumba</a>. Datang dari Bali? Baca <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a>.</p>
@@ -394,7 +394,7 @@ GUIDES = [
 },
 "facts": {
 "en": [["Kupang to Waingapu (WGP)", "Wings Air, daily, about 1 hour 15 minutes"], ["Kupang to Tambolaka (TMC)", "Nam Air daily; Wings Air Tue, Thu, Sat"], ["Typical one-way fare", "From around USD 65-80 (2026), more in holidays"], ["Pelni ships", "Several a month from Tenau to Waingapu via Ende (July 2026)"], ["Sea crossing time", "Around 16 hours or more"], ["Check before booking", "Airline websites, pelni.co.id, ASDP"]],
-"es": [["Kupang a Waingapu (WGP)", "Wings Air, diario, alrededor de 1 h 15 min"], ["Kupang a Tambolaka (TMC)", "Nam Air diario; Wings Air mar, jue, sáb"], ["Precio habitual de ida", "Desde unos 65-80 USD (2026), más en vacaciones"], ["Barcos de Pelni", "Varios al mes de Tenau a Waingapu vía Ende (julio de 2026)"], ["Travesía por mar", "Unas 16 horas o más"], ["Consulta antes de reservar", "Webs de las aerolíneas, pelni.co.id, ASDP"]],
+"es": [["Kupang a Waingapu (WGP)", "Wings Air, diario, alrededor de 1 h 15 min"], ["Kupang a Tambolaka (TMC)", "Nam Air diario; Wings Air mar, jue, sáb"], ["Precio habitual de ida", "Desde unos 65-80 dólares (2026), más en vacaciones"], ["Barcos de Pelni", "Varios al mes de Tenau a Waingapu vía Ende (julio de 2026)"], ["Travesía por mar", "Unas 16 horas o más"], ["Consulta antes de reservar", "Webs de las aerolíneas, pelni.co.id, ASDP"]],
 "id": [["Kupang ke Waingapu (WGP)", "Wings Air, setiap hari, sekitar 1 jam 15 menit"], ["Kupang ke Tambolaka (TMC)", "Nam Air setiap hari; Wings Air Selasa, Kamis, Sabtu"], ["Harga tiket sekali jalan", "Mulai sekitar USD 65-80 (2026), lebih mahal saat libur"], ["Kapal Pelni", "Beberapa kali sebulan dari Tenau ke Waingapu via Ende (Juli 2026)"], ["Waktu pelayaran", "Sekitar 16 jam atau lebih"], ["Cek sebelum memesan", "Situs maskapai, pelni.co.id, ASDP"]],
 },
 "faq": {
@@ -408,7 +408,7 @@ GUIDES = [
 ["¿Cuánto dura el vuelo de Kupang a Sumba?", "Alrededor de 1 h 15 min hasta Waingapu y de 1 h a 1 h 35 min hasta Tambolaka, según la aerolínea y el avión."],
 ["¿Qué aerolíneas vuelan de Kupang a Sumba?", "Wings Air vuela a diario a Waingapu y tres veces por semana a Tambolaka; Nam Air vuela a diario a Tambolaka. Consulta a la aerolínea antes de reservar porque los horarios cambian."],
 ["¿Hay ferri de Kupang a Sumba?", "Sí, los barcos de pasajeros de Pelni salen del puerto de Tenau, en Kupang, hacia Waingapu varias veces al mes, normalmente vía Ende, en unas 16 horas o más. ASDP ha operado un ferri de vehículos vía Aimere, pero no se ha podido confirmar su horario de 2026."],
-["¿Avión o barco desde Kupang?", "Avión si vas justo de tiempo: algo más de una hora y billetes desde unos 65-80 USD. Barco de Pelni si quieres un viaje barato y lento y tienes fechas flexibles."],
+["¿Avión o barco desde Kupang?", "Avión si vas justo de tiempo: algo más de una hora y billetes desde unos 65-80 dólares. Barco de Pelni si quieres un viaje barato y lento y tienes fechas flexibles."],
 ],
 "id": [
 ["Berapa lama penerbangan Kupang ke Sumba?", "Sekitar 1 jam 15 menit ke Waingapu dan sekitar 1 jam sampai 1 jam 35 menit ke Tambolaka, tergantung maskapai dan pesawat."],
@@ -492,9 +492,9 @@ GUIDES = [
 "es": {
 "title": "De Labuan Bajo a Sumba: vuelos a Tambolaka, ferris y cómo combinar Komodo con Sumba",
 "dek": "Los dragones de Komodo y los pueblos de clanes de Sumba están a menos de una hora de vuelo, una de las combinaciones más gratificantes del este de Indonesia si aciertas con los horarios.",
-"answer": "La forma más rápida de ir de Labuan Bajo a Sumba es el vuelo de Wings Air a Tambolaka (TMC), de unos 50 minutos, que aparece unas tres veces por semana y es estacional (de noviembre a marzo según las bases de datos de vuelos). Si no opera, vuela de Labuan Bajo a Bali (alrededor de 1 h 10 min, muchos vuelos diarios) y sigue a Tambolaka el mismo día. Por mar no hay ferri directo: puedes cruzar de Labuan Bajo a Sape, en Sumbawa (unas 6,5 horas), y luego de Sape a Waikelo, ruta reabierta en mayo de 2026 sin horario publicado. Consulta a la aerolínea o a ASDP antes de reservar.",
+"answer": "La forma más rápida de ir de Labuan Bajo a Sumba es el vuelo de Wings Air a Tambolaka (TMC), de unos 50 minutos, que figura unas tres veces por semana en los horarios y es estacional (de noviembre a marzo según las bases de datos de vuelos). Si no opera, vuela de Labuan Bajo a Bali (alrededor de 1 h 10 min, muchos vuelos diarios) y sigue a Tambolaka el mismo día. Por mar no hay ferri directo: puedes cruzar de Labuan Bajo a Sape, en Sumbawa (unas 6,5 horas), y luego de Sape a Waikelo, ruta reabierta en mayo de 2026 sin horario publicado. Consulta a la aerolínea o a ASDP antes de reservar.",
 "body": """
-<p>Por la mañana estás en un barco de madera en el Parque Nacional de Komodo, viendo la arena rosa y el paso lento y pesado de un dragón por la orilla. A última hora de la tarde puedes estar aterrizando en Sumba, donde las colinas se cubren de sabana, los caballos pastan junto a la carretera y los tejados de las casas tradicionales se alzan como sombreros altos sobre los árboles. Labuan Bajo y Sumba son vecinas en el mapa, y el salto corto entre ambas es una de las mejores formas de ver dos caras muy distintas de Nusa Tenggara Oriental en un mismo viaje.</p>
+<p>Por la mañana estás en un barco de madera en el Parque Nacional de Komodo, viendo la arena rosa y el paso lento y pesado de un dragón por la orilla. A última hora de la tarde puedes aterrizar ya en Sumba, donde las colinas se cubren de sabana, los caballos pastan junto a la carretera y los tejados de las casas tradicionales se alzan como sombreros altos sobre los árboles. Labuan Bajo y Sumba son vecinas en el mapa, y el salto corto entre ambas es una de las mejores formas de ver dos caras muy distintas de Nusa Tenggara Oriental en un mismo viaje.</p>
 <p><strong>La respuesta rápida:</strong> vuela. Wings Air ha operado un vuelo directo Labuan Bajo (LBJ)-Tambolaka (TMC) de unos 50 minutos, que figura unas tres veces por semana y como estacional. Cuando no opera, la alternativa fiable es volver a Bali y conectar con Tambolaka el mismo día. La ruta por mar vía Sumbawa existe, pero es lenta e irregular. Los horarios cambian: consulta a la aerolínea antes de reservar.</p>
 
 <h2>Opciones de ruta desde Labuan Bajo</h2>
@@ -509,11 +509,11 @@ GUIDES = [
 </table>
 
 <h2>El vuelo directo a Tambolaka</h2>
-<p>FlightConnections indica que Wings Air es la única aerolínea que vuela sin escalas de Labuan Bajo a Tambolaka, con el vuelo IW 1916 por la tarde (indicado a las 16:05, llegada a las 16:55) en un turbohélice ATR 42 o ATR 72. La distancia es de solo unos 124 km. La misma base de datos marca la ruta como estacional, de noviembre a marzo, con unos 13 vuelos al mes en el panel de Tambolaka. Es decir, la conexión más cómoda puede no existir en la estación seca, justo cuando viaja más gente. Compruébalo para tus fechas y, si no está a la venta, usa la conexión por Bali.</p>
-<p>Tambolaka es el aeropuerto adecuado para Sumba Occidental y Suroccidental: las lagunas, las playas del oeste, los pueblos tradicionales y las zonas de Pasola. Para Sumba Oriental tendrás que cruzar la isla por carretera (casi un día; mira <a href="/es/getting-here/getting-around-sumba/">cómo moverse por Sumba</a>) o probar el pequeño servicio de Susi Air a Waingapu que cita Wikipedia. Las avionetas de Susi Air llevan pocos pasajeros y tienen límites de peso estrictos, así que pregunta directamente a la aerolínea.</p>
+<p>FlightConnections indica que Wings Air es la única aerolínea que vuela sin escalas de Labuan Bajo a Tambolaka, con el vuelo IW 1916 por la tarde (indicado a las 16:05, llegada a las 16:55) en un turbohélice ATR 42 o ATR 72. La distancia es de solo unos 124 km. La misma base de datos marca la ruta como estacional, de noviembre a marzo, con unos 13 vuelos al mes en el panel de Tambolaka. Es decir, puede que la conexión más cómoda no exista en la estación seca, justo cuando viaja más gente. Compruébalo para tus fechas y, si no está a la venta, usa la conexión por Bali.</p>
+<p>Tambolaka es el aeropuerto adecuado para Sumba Occidental y Suroccidental: las lagunas, las playas del oeste, los pueblos tradicionales y las zonas de Pasola. Para Sumba Oriental tendrás que cruzar la isla por carretera (casi un día; consulta <a href="/es/getting-here/getting-around-sumba/">cómo moverse por Sumba</a>) o probar el pequeño servicio de Susi Air a Waingapu que cita Wikipedia. Las avionetas de Susi Air llevan pocos pasajeros y tienen límites de peso estrictos, así que pregunta directamente a la aerolínea.</p>
 
 <h2>Vía Bali: la alternativa fiable</h2>
-<p>Labuan Bajo-Bali es una ruta muy transitada, de alrededor de 1 h 10 min, con unos 35 vuelos directos a la semana según FlightConnections. Kiwi.com mostraba billetes de ida desde unos 45-55 USD para noviembre de 2026. En Bali enlazas con uno de los vuelos diarios a Tambolaka o con el directo de TransNusa a Waingapu, que opera cuatro días por semana (martes, miércoles, viernes y sábado). Toma un vuelo de mañana desde Labuan Bajo para llegar a Denpasar antes de las salidas a Sumba de primera hora de la tarde. Nuestra guía sobre <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a> detalla ese tramo.</p>
+<p>Labuan Bajo-Bali es una ruta muy transitada, de alrededor de 1 h 10 min, con unos 35 vuelos directos a la semana según FlightConnections. Kiwi.com mostraba billetes de ida desde unos 45-55 dólares para noviembre de 2026. En Bali enlazas con uno de los vuelos diarios a Tambolaka o con el directo de TransNusa a Waingapu, que opera cuatro días por semana (martes, miércoles, viernes y sábado). Toma un vuelo de mañana desde Labuan Bajo para llegar a Denpasar antes de las salidas a Sumba de primera hora de la tarde. Nuestra guía sobre <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a> detalla ese tramo.</p>
 <p><strong>Tiempo total vía Bali:</strong> unas 4-7 horas de aeropuerto a aeropuerto, con la escala incluida.</p>
 
 <h2>Por mar: Labuan Bajo, Sape y Waikelo</h2>
@@ -537,13 +537,13 @@ GUIDES = [
 <ul>
 <li><strong>Equipaje en aviones pequeños.</strong> En los ATR de Wings Air el equipaje de mano se limita a 7 kg (40 x 30 x 20 cm) y muchas tarifas no incluyen maleta facturada gratis. Págala por internet, viaja ligero y usa bolsas blandas; el equipo de buceo puede hacerte superar el límite.</li>
 <li><strong>Buceo y avión.</strong> Tras la última inmersión hay que esperar un tiempo antes de volar. Pregunta a tu centro de buceo y planifica el vuelo a Sumba en consecuencia.</li>
-<li><strong>Efectivo.</strong> Hay pocos cajeros fuera de Tambolaka, Waikabubak y Waingapu. Lleva efectivo; nuestra guía sobre <a href="/es/getting-here/sumba-travel-costs/">cuánto cuesta viajar a Sumba</a> te dice cuánto.</li>
+<li><strong>Efectivo.</strong> Hay pocos cajeros fuera de Tambolaka, Waikabubak y Waingapu. Lleva efectivo; nuestra guía sobre <a href="/es/getting-here/sumba-travel-costs/">cuánto cuesta viajar a Sumba</a> te orienta sobre cuánto llevar.</li>
 </ul>
 """,
 },
 "id": {
-"title": "Labuan Bajo ke Sumba: penerbangan ke Tambolaka, kapal feri dan menggabungkan Komodo dengan Sumba",
-"dek": "Komodo dan kampung adat Sumba hanya terpisah kurang dari satu jam penerbangan, pasangan perjalanan paling berkesan di Indonesia timur, asalkan jadwalnya pas.",
+"title": "Dari Labuan Bajo ke Sumba: penerbangan ke Tambolaka, kapal feri, dan cara memadukan Komodo dengan Sumba",
+"dek": "Komodo dan kampung adat Sumba hanya terpisah kurang dari satu jam penerbangan, dan keduanya menjadi pasangan perjalanan paling berkesan di Indonesia timur, asalkan jadwalnya pas.",
 "answer": "Cara tercepat dari Labuan Bajo ke Sumba adalah penerbangan Wings Air ke Tambolaka (TMC), sekitar 50 menit, tercatat sekitar tiga kali seminggu dan bersifat musiman (November sampai Maret menurut database penerbangan). Jika tidak beroperasi, terbanglah Labuan Bajo-Bali (sekitar 1 jam 10 menit, banyak penerbangan setiap hari) lalu lanjut ke Tambolaka di hari yang sama. Lewat laut tidak ada feri langsung: Anda bisa menyeberang Labuan Bajo-Sape di Sumbawa (sekitar 6,5 jam), lalu Sape-Waikelo yang dibuka kembali pada Mei 2026 tanpa jadwal resmi, jadi cek maskapai atau ASDP sebelum memesan.",
 "body": """
 <p>Pagi hari Anda berada di kapal kayu di Taman Nasional Komodo, menyaksikan pasir merah muda dan langkah komodo yang lambat dan berat di tepi pantai. Menjelang sore Anda sudah bisa mendarat di Sumba, tempat bukit-bukit diselimuti sabana, kuda merumput di pinggir jalan dan atap rumah adat menjulang seperti topi tinggi di atas pepohonan. Labuan Bajo dan Sumba bertetangga di peta, dan penerbangan singkat di antara keduanya adalah salah satu cara terbaik melihat dua wajah Nusa Tenggara Timur yang sangat berbeda dalam satu perjalanan.</p>
@@ -561,8 +561,8 @@ GUIDES = [
 </table>
 
 <h2>Penerbangan langsung ke Tambolaka</h2>
-<p>FlightConnections mencatat Wings Air sebagai satu-satunya maskapai nonstop Labuan Bajo-Tambolaka, dengan penerbangan IW 1916 berangkat sore hari (tercatat pukul 16:05, tiba 16:55) menggunakan ATR 42 atau ATR 72. Jaraknya hanya sekitar 124 km. Database yang sama menandai rute ini musiman, November sampai Maret, dengan sekitar 13 penerbangan sebulan di papan keberangkatan Tambolaka. Artinya, sambungan paling praktis ini mungkin tidak ada di musim kemarau, justru saat paling banyak orang bepergian. Cek dulu untuk tanggal Anda, dan jika tidak dijual, gunakan sambungan lewat Bali.</p>
-<p>Tambolaka adalah bandara yang tepat untuk Sumba Barat dan Sumba Barat Daya: danau air asin, pantai-pantai barat, kampung adat dan wilayah Pasola. Untuk Sumba Timur, Anda perlu melintasi pulau lewat darat (hampir seharian; lihat <a href="/id/getting-here/getting-around-sumba/">transportasi keliling Sumba</a>) atau mencoba layanan kecil Susi Air ke Waingapu yang tercantum di Wikipedia. Pesawat kecil Susi Air hanya memuat sedikit penumpang dan batas beratnya ketat, jadi tanyakan langsung ke maskapai.</p>
+<p>FlightConnections mencatat Wings Air sebagai satu-satunya maskapai nonstop Labuan Bajo-Tambolaka, dengan penerbangan IW 1916 berangkat sore hari (tercatat pukul 16.05, tiba 16.55) menggunakan ATR 42 atau ATR 72. Jaraknya hanya sekitar 124 km. Database yang sama menandai rute ini musiman, November sampai Maret, dengan sekitar 13 penerbangan sebulan di papan keberangkatan Tambolaka. Artinya, sambungan paling praktis ini mungkin tidak ada di musim kemarau, justru saat paling banyak orang bepergian. Cek dulu untuk tanggal Anda, dan jika tidak dijual, gunakan sambungan lewat Bali.</p>
+<p>Tambolaka adalah bandara yang tepat untuk Sumba Barat dan Sumba Barat Daya: laguna, pantai-pantai barat, kampung adat, dan wilayah Pasola. Untuk Sumba Timur, Anda perlu melintasi pulau lewat darat (hampir seharian; lihat <a href="/id/getting-here/getting-around-sumba/">transportasi keliling Sumba</a>) atau mencoba layanan kecil Susi Air ke Waingapu yang tercantum di Wikipedia. Pesawat kecil Susi Air hanya memuat sedikit penumpang dan batas beratnya ketat, jadi tanyakan langsung ke maskapai.</p>
 
 <h2>Via Bali: cadangan yang andal</h2>
 <p>Labuan Bajo-Bali adalah rute ramai, sekitar 1 jam 10 menit dengan sekitar 35 penerbangan nonstop seminggu menurut FlightConnections. Kiwi.com menampilkan tiket sekali jalan mulai sekitar USD 45-55 untuk November 2026. Di Bali Anda lanjut dengan salah satu penerbangan harian ke Tambolaka, atau penerbangan langsung TransNusa ke Waingapu yang beroperasi empat kali seminggu (Selasa, Rabu, Jumat dan Sabtu). Pilih penerbangan pagi dari Labuan Bajo agar tiba di Denpasar sebelum keberangkatan ke Sumba di awal sore. Panduan kami <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a> membahas rute itu secara rinci.</p>
@@ -571,8 +571,8 @@ GUIDES = [
 <h2>Lewat laut: Labuan Bajo, Sape dan Waikelo</h2>
 <p>Tidak ada feri langsung dari Labuan Bajo ke Sumba. Rute darat dan laut harus lewat Sumbawa di barat lebih dulu:</p>
 <ol>
-<li><strong>Labuan Bajo ke Sape.</strong> Feri ASDP menyeberangi Selat Sape ke Pelabuhan Sape di Bima, ujung timur Sumbawa. Seorang wisatawan yang naik KMP Cakalang pada April 2024 berangkat pukul 10:30 dan tiba pukul 17:00, sekitar 6,5 jam. Jam keberangkatan berbeda setiap hari, dan pelayaran bisa dibatalkan saat gelombang tinggi.</li>
-<li><strong>Sape ke Waikelo.</strong> Lintasan feri Sape dan Pelabuhan Waikelo, dekat Tambolaka, dibuka kembali pada 24 Mei 2026 dengan seremoni oleh ASDP dan Pemkab Sumba Barat Daya; Pemkab menyebut kapalnya KMP Cakalang. Jadwal dan lama pelayaran tidak diumumkan, jadi tanyakan ke ASDP Cabang Sape atau di Pelabuhan Waikelo sebelum mengandalkannya.</li>
+<li><strong>Labuan Bajo ke Sape.</strong> Feri ASDP menyeberangi Selat Sape ke Pelabuhan Sape di Bima, ujung timur Sumbawa. Seorang wisatawan yang naik KMP Cakalang pada April 2024 berangkat pukul 10.30 dan tiba pukul 17.00, sekitar 6,5 jam. Jam keberangkatan berbeda setiap hari, dan pelayaran bisa dibatalkan saat gelombang tinggi.</li>
+<li><strong>Sape ke Waikelo.</strong> Lintasan feri antara Sape dan Pelabuhan Waikelo, dekat Tambolaka, dibuka kembali pada 24 Mei 2026 dengan seremoni oleh ASDP dan Pemkab Sumba Barat Daya; Pemkab menyebut kapalnya KMP Cakalang. Jadwal dan lama pelayaran tidak diumumkan, jadi tanyakan ke ASDP Cabang Sape atau di Pelabuhan Waikelo sebelum mengandalkannya.</li>
 </ol>
 <p>Karena kapal yang sama pernah dikaitkan dengan kedua lintasan, keberangkatan mungkin tidak setiap hari. Sediakan minimal dua sampai tiga hari untuk rute ini dan bersiaplah menginap di Sape atau Bima.</p>
 <p><strong>Pelni:</strong> KM Wilis milik perusahaan pelayaran negara melayani rute berputar yang singgah di Labuan Bajo, Bima, Waikelo dan Waingapu. Pada Juli 2026 kapal ini singgah kira-kira dua minggu sekali, menurut jadwal Pelni Kupang. Cek pelni.co.id atau aplikasi PELNI Mobile untuk tanggal dan arah pelayaran terbaru.</p>
@@ -692,8 +692,8 @@ GUIDES = [
 "dek": "Surabaya es una de las pocas ciudades fuera de Nusa Tenggara con vuelo sin escalas a Sumba, y cuando no encaja con tus fechas, Bali está a solo una hora.",
 "answer": "Desde Surabaya puedes volar directo a Tambolaka (TMC) con Nam Air en alrededor de 1 h 30 min, unas tres veces por semana según las bases de datos de vuelos. Los demás días, vuela de Surabaya a Bali (alrededor de 1 hora, más de 100 vuelos semanales) y conecta con Tambolaka o Waingapu (WGP): unas 3,5-6 horas en total. Los barcos de Pelni también unen Surabaya con Waingapu en rutas de varios días. Los horarios cambian: consulta a la aerolínea antes de reservar.",
 "body": """
-<p>Surabaya es calor, tráfico y energía: puestos callejeros que preparan rawon y rujak, un puerto lleno de grúas y barcos y un aeropuerto que nunca parece dormir. Noventa minutos después puedes estar saliendo al silencio de Tambolaka, donde lo que más se oye es el viento y los grillos, y la carretera desde el aeropuerto pasa junto a tumbas de piedra y campos de maíz. Surabaya es una de las pocas grandes ciudades indonesias con enlace directo a Sumba, lo que la convierte en una buena puerta de entrada para quien viaja desde Java.</p>
-<p><strong>La respuesta rápida:</strong> Nam Air vuela sin escalas de Surabaya (Juanda, SUB) a Tambolaka (TMC) en alrededor de 1 h 30 min, unas tres veces por semana. Si ese vuelo no te encaja, ve por Bali: de Surabaya a Denpasar hay alrededor de una hora, con muchos vuelos diarios, y desde Bali salen varios vuelos al día a Sumba. Los horarios cambian: consulta a la aerolínea antes de reservar.</p>
+<p>Surabaya es calor, tráfico y energía: puestos callejeros que preparan rawon y rujak, un puerto lleno de grúas y barcos y un aeropuerto que nunca parece dormir. Noventa minutos después puedes salir ya al silencio de Tambolaka, donde lo que más se oye son el viento y los grillos, y la carretera desde el aeropuerto pasa junto a tumbas de piedra y campos de maíz. Surabaya es una de las pocas grandes ciudades indonesias con enlace directo a Sumba, lo que la convierte en una buena puerta de entrada para quien viaja desde Java.</p>
+<p><strong>La respuesta rápida:</strong> Nam Air vuela sin escalas de Surabaya (Juanda, SUB) a Tambolaka (TMC) en alrededor de 1 h 30 min, unas tres veces por semana. Si ese vuelo no te encaja, pasa por Bali: el vuelo de Surabaya a Denpasar dura alrededor de una hora, con muchos vuelos diarios, y desde Bali salen varios vuelos al día a Sumba. Los horarios cambian: consulta a la aerolínea antes de reservar.</p>
 
 <h2>Opciones de ruta desde Surabaya</h2>
 <table>
@@ -707,21 +707,21 @@ GUIDES = [
 <p>Estas frecuencias proceden de bases de datos de vuelos y de una programación de Pelni de julio de 2026. Sirven de orientación: consulta a la aerolínea o a Pelni antes de reservar.</p>
 
 <h2>El vuelo directo: Nam Air a Tambolaka</h2>
-<p>Nam Air, del grupo Sriwijaya Air, es la única aerolínea que vuela sin escalas de Surabaya a Tambolaka, según FlightConnections y Skyscanner. El vuelo dura alrededor de 1 h 30 min y cubre unos 744 km. FlightConnections lo indica tres veces por semana en un Boeing 737-500, un reactor en lugar de los turbohélices que cubren la mayoría de rutas a Sumba. El vuelo de vuelta sale de Tambolaka por la mañana (indicado entre las 09:45 y las 10:50, según la fecha).</p>
-<p>Tambolaka te deja en Sumba Suroccidental, cerca de las lagunas, las playas del oeste y los pueblos tradicionales. Si tu viaje es por Sumba Oriental, tendrás que cruzar la isla por carretera, casi un día: mira <a href="/es/getting-here/getting-around-sumba/">cómo moverse por Sumba</a>.</p>
+<p>Nam Air, del grupo Sriwijaya Air, es la única aerolínea que vuela sin escalas de Surabaya a Tambolaka, según FlightConnections y Skyscanner. El vuelo dura alrededor de 1 h 30 min y cubre unos 744 km. FlightConnections lo indica tres veces por semana en un Boeing 737-500, un reactor en lugar de los turbohélices que cubren la mayoría de las rutas a Sumba. El vuelo de vuelta sale de Tambolaka por la mañana (indicado entre las 09:45 y las 10:50, según la fecha).</p>
+<p>Tambolaka te deja en Sumba Suroccidental, cerca de las lagunas, las playas del oeste y los pueblos tradicionales. Si vas a recorrer Sumba Oriental, tendrás que cruzar la isla por carretera, casi un día: consulta <a href="/es/getting-here/getting-around-sumba/">cómo moverse por Sumba</a>.</p>
 
 <h2>Vía Bali: más opciones y más flexibilidad</h2>
-<p>Cuando el vuelo directo está lleno o no opera el día que necesitas, Bali es la alternativa fácil. FlightConnections cuenta unos 117 vuelos directos semanales entre Surabaya y Denpasar, de alrededor de una hora. Toma un vuelo de mañana desde Surabaya y conecta en Bali con un vuelo de tarde a Tambolaka, o con el directo de TransNusa a Waingapu los martes, miércoles, viernes y sábados. Todo sobre el tramo desde Bali está en nuestra guía sobre <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a>.</p>
+<p>Cuando el vuelo directo está lleno o no opera el día que necesitas, Bali es la alternativa fácil. FlightConnections cuenta unos 117 vuelos directos semanales entre Surabaya y Denpasar, de alrededor de una hora. Toma un vuelo de mañana desde Surabaya y conecta en Bali con un vuelo de tarde a Tambolaka, o con el directo de TransNusa a Waingapu los martes, miércoles, viernes y sábados. Nuestra guía sobre <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a> lo explica todo sobre ese tramo.</p>
 <p><strong>Tiempo total vía Bali:</strong> unas 3,5-6 horas de aeropuerto a aeropuerto, con una escala de 1,5-3 horas.</p>
-<p>También puedes conectar en Kupang, que tiene vuelos diarios a Waingapu y unos diez semanales a Tambolaka; resulta útil sobre todo si combinas Sumba con Timor. Mira <a href="/es/getting-here/kupang-to-sumba/">de Kupang a Sumba</a>.</p>
+<p>También puedes conectar en Kupang, que tiene vuelos diarios a Waingapu y unos diez semanales a Tambolaka; resulta útil sobre todo si combinas Sumba con Timor. Consulta nuestra guía <a href="/es/getting-here/kupang-to-sumba/">de Kupang a Sumba</a>.</p>
 
 <h2>Por mar: Pelni desde Surabaya</h2>
-<p>Los barcos de larga distancia de Pelni unen Surabaya con Sumba. En julio de 2026, su programación desde Kupang incluía el <strong>KM Awu</strong>, más o menos cada dos semanas, en una ruta circular por Ende, Waingapu, Bima, Benoa y Surabaya, y el <strong>KM Lawit</strong> en una ruta por Ende, Waingapu, Bima, Benoa y Surabaya. Saliendo de Surabaya, estos barcos paran en Benoa (Bali) y en Bima (Sumbawa) antes de llegar a Waingapu, así que cuenta con más de un día a bordo. Pelni advierte de que sus horarios son provisionales y pueden cambiar por el tiempo o la operativa. Consulta fechas y sentido de la ruta en pelni.co.id o en la app PELNI Mobile, y organiza la recogida en Waingapu, porque los barcos pueden llegar de noche.</p>
+<p>Los barcos de larga distancia de Pelni unen Surabaya con Sumba. En julio de 2026, su programación desde Kupang incluía el <strong>KM Awu</strong>, más o menos cada dos semanas, en una ruta circular por Ende, Waingapu, Bima, Benoa y Surabaya, y el <strong>KM Lawit</strong> en una ruta por Ende, Waingapu, Bima, Benoa y Surabaya. Desde Surabaya, estos barcos hacen escala en Benoa (Bali) y en Bima (Sumbawa) antes de llegar a Waingapu, así que cuenta con más de un día a bordo. Pelni advierte de que sus horarios son provisionales y pueden cambiar por la meteorología o por necesidades operativas. Consulta fechas y sentido de la ruta en pelni.co.id o en la app PELNI Mobile, y organiza la recogida en Waingapu, porque los barcos pueden llegar de noche.</p>
 
 <h2>Precios habituales en 2026</h2>
 <ul>
-<li><strong>Surabaya-Tambolaka:</strong> Skyscanner mostraba billetes de ida y vuelta desde unos 214 EUR y de ida desde unos 113 EUR para diciembre de 2026 y febrero de 2027. Esas tarifas más baratas eran itinerarios con escala; el directo de Nam Air puede costar más.</li>
-<li><strong>Bali-Tambolaka:</strong> los billetes directos de ida rondaban 1,2-1,4 millones de IDR (unos 60-70 EUR) para noviembre de 2026.</li>
+<li><strong>Surabaya-Tambolaka:</strong> Skyscanner mostraba billetes de ida y vuelta desde unos 214 euros y de ida desde unos 113 euros para diciembre de 2026 y febrero de 2027. Esas tarifas más baratas eran itinerarios con escala; el directo de Nam Air puede costar más.</li>
+<li><strong>Bali-Tambolaka:</strong> los billetes directos de ida rondaban 1,2-1,4 millones de rupias (unos 60-70 euros) para noviembre de 2026.</li>
 </ul>
 <p>Los precios suben en Navidad y Año Nuevo, en el fin del Ramadán y en las vacaciones escolares indonesias. Para el presupuesto completo en la isla, lee <a href="/es/getting-here/sumba-travel-costs/">cuánto cuesta viajar a Sumba</a>.</p>
 
@@ -736,11 +736,11 @@ GUIDES = [
 """,
 },
 "id": {
-"title": "Surabaya ke Sumba: penerbangan langsung Nam Air, transit di Bali dan kapal Pelni",
+"title": "Dari Surabaya ke Sumba: penerbangan langsung Nam Air, transit di Bali, dan kapal Pelni",
 "dek": "Surabaya adalah salah satu dari sedikit kota di luar Nusa Tenggara yang punya penerbangan nonstop ke Sumba, dan jika jadwalnya tidak cocok, Bali hanya sejam jauhnya.",
 "answer": "Dari Surabaya Anda bisa terbang langsung ke Tambolaka (TMC) dengan Nam Air sekitar 1 jam 30 menit, sekitar tiga kali seminggu menurut database penerbangan. Di hari lain, terbanglah Surabaya-Bali (sekitar 1 jam, lebih dari 100 penerbangan seminggu) lalu lanjut ke Tambolaka atau Waingapu (WGP), total sekitar 3,5-6 jam. Kapal Pelni juga menghubungkan Surabaya dengan Waingapu dalam pelayaran beberapa hari. Jadwal berubah, jadi cek maskapai sebelum memesan.",
 "body": """
-<p>Surabaya adalah panas, macet dan semangat: warung kaki lima yang menyajikan rawon dan rujak, pelabuhan penuh derek dan kapal, serta bandara yang seolah tak pernah tidur. Sembilan puluh menit kemudian Anda bisa melangkah keluar ke ketenangan Tambolaka, tempat suara paling keras adalah angin dan jangkrik, dan jalan dari bandara melewati kubur batu dan ladang jagung. Surabaya termasuk sedikit kota besar di Indonesia yang punya penerbangan langsung ke Sumba, menjadikannya gerbang yang cerdas bagi wisatawan dari Jawa.</p>
+<p>Surabaya identik dengan panas, macet, dan semangat: warung kaki lima yang menyajikan rawon dan rujak, pelabuhan penuh derek dan kapal, serta bandara yang seolah tak pernah tidur. Sembilan puluh menit kemudian Anda bisa melangkah keluar ke ketenangan Tambolaka, tempat suara paling keras adalah angin dan jangkrik, dan jalan dari bandara melewati kubur batu dan ladang jagung. Surabaya termasuk sedikit kota besar di Indonesia yang punya penerbangan langsung ke Sumba, sehingga menjadi gerbang yang tepat bagi wisatawan dari Jawa.</p>
 <p><strong>Jawaban singkat:</strong> Nam Air terbang nonstop dari Surabaya (Juanda, SUB) ke Tambolaka (TMC) sekitar 1 jam 30 menit, kira-kira tiga kali seminggu. Jika penerbangan itu tidak cocok, lewat Bali saja: Surabaya-Denpasar sekitar satu jam dengan banyak penerbangan setiap hari, dan dari Bali ada beberapa penerbangan sehari ke Sumba. Jadwal berubah, jadi cek maskapai sebelum memesan.</p>
 
 <h2>Pilihan rute dari Surabaya</h2>
@@ -755,11 +755,11 @@ GUIDES = [
 <p>Frekuensi ini berasal dari database penerbangan dan jadwal Pelni Juli 2026. Gunakan sebagai gambaran: cek maskapai atau Pelni sebelum memesan.</p>
 
 <h2>Penerbangan langsung: Nam Air ke Tambolaka</h2>
-<p>Nam Air, bagian dari grup Sriwijaya Air, adalah satu-satunya maskapai yang terbang nonstop Surabaya-Tambolaka, menurut FlightConnections dan Skyscanner. Penerbangan memakan sekitar 1 jam 30 menit untuk jarak sekitar 744 km. FlightConnections mencatatnya tiga kali seminggu dengan Boeing 737-500, pesawat jet, bukan pesawat baling-baling seperti di kebanyakan rute ke Sumba. Penerbangan balik dari Tambolaka berangkat pagi hari (tercatat antara sekitar pukul 09:45 dan 10:50 tergantung tanggal).</p>
-<p>Tambolaka mendaratkan Anda di Sumba Barat Daya, dekat danau, pantai-pantai barat dan kampung adat. Jika perjalanan Anda di Sumba Timur, Anda perlu melintasi pulau lewat darat, hampir seharian: lihat <a href="/id/getting-here/getting-around-sumba/">transportasi keliling Sumba</a>.</p>
+<p>Nam Air, bagian dari grup Sriwijaya Air, adalah satu-satunya maskapai yang terbang nonstop Surabaya-Tambolaka, menurut FlightConnections dan Skyscanner. Penerbangan memakan sekitar 1 jam 30 menit untuk jarak sekitar 744 km. FlightConnections mencatatnya tiga kali seminggu dengan Boeing 737-500, pesawat jet, bukan pesawat baling-baling seperti di kebanyakan rute ke Sumba. Penerbangan balik dari Tambolaka berangkat pagi hari (tercatat antara sekitar pukul 09.45 dan 10.50 tergantung tanggal).</p>
+<p>Di Tambolaka, Anda mendarat di Sumba Barat Daya, dekat laguna, pantai-pantai barat, dan kampung adat. Jika tujuan Anda Sumba Timur, Anda perlu melintasi pulau lewat darat, hampir seharian: lihat <a href="/id/getting-here/getting-around-sumba/">transportasi keliling Sumba</a>.</p>
 
 <h2>Via Bali: lebih banyak pilihan, lebih fleksibel</h2>
-<p>Saat penerbangan langsung penuh atau tidak terbang di hari yang Anda butuhkan, Bali adalah alternatif mudah. FlightConnections mencatat sekitar 117 penerbangan nonstop seminggu antara Surabaya dan Denpasar, sekitar satu jam. Ambil penerbangan pagi dari Surabaya lalu sambung di Bali dengan penerbangan sore ke Tambolaka, atau penerbangan langsung TransNusa ke Waingapu setiap Selasa, Rabu, Jumat dan Sabtu. Semua tentang rute dari Bali ada di panduan kami <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a>.</p>
+<p>Saat penerbangan langsung penuh atau tidak terbang di hari yang Anda butuhkan, Bali adalah alternatif mudah. FlightConnections mencatat sekitar 117 penerbangan nonstop seminggu antara Surabaya dan Denpasar, sekitar satu jam. Ambil penerbangan pagi dari Surabaya lalu sambung di Bali dengan penerbangan sore ke Tambolaka, atau penerbangan langsung TransNusa ke Waingapu setiap Selasa, Rabu, Jumat dan Sabtu. Informasi lengkap tentang rute dari Bali ada di panduan kami <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a>.</p>
 <p><strong>Total waktu via Bali:</strong> sekitar 3,5-6 jam dari bandara ke bandara, termasuk transit 1,5-3 jam.</p>
 <p>Anda juga bisa transit di Kupang, yang punya penerbangan harian ke Waingapu dan sekitar sepuluh kali seminggu ke Tambolaka; ini terutama berguna bila Anda menggabungkan Sumba dengan Timor. Lihat <a href="/id/getting-here/kupang-to-sumba/">Kupang ke Sumba</a>.</p>
 
@@ -768,8 +768,8 @@ GUIDES = [
 
 <h2>Kisaran harga tiket 2026</h2>
 <ul>
-<li><strong>Surabaya-Tambolaka:</strong> Skyscanner menampilkan tiket pulang-pergi mulai sekitar EUR 214 (kira-kira Rp4,3 juta) dan sekali jalan mulai sekitar EUR 113 (kira-kira Rp2,3 juta) untuk Desember 2026 dan Februari 2027. Harga termurah itu untuk rute dengan transit; penerbangan langsung Nam Air bisa lebih mahal.</li>
-<li><strong>Bali-Tambolaka:</strong> tiket langsung sekali jalan sekitar Rp1,2-1,4 juta untuk November 2026.</li>
+<li><strong>Surabaya-Tambolaka:</strong> Skyscanner menampilkan tiket pulang-pergi mulai sekitar EUR 214 (kira-kira Rp 4,3 juta) dan sekali jalan mulai sekitar EUR 113 (kira-kira Rp 2,3 juta) untuk Desember 2026 dan Februari 2027. Harga termurah itu untuk rute dengan transit; penerbangan langsung Nam Air bisa lebih mahal.</li>
+<li><strong>Bali-Tambolaka:</strong> tiket langsung sekali jalan sekitar Rp 1,2-1,4 juta untuk November 2026.</li>
 </ul>
 <p>Harga naik saat Natal dan Tahun Baru, Lebaran dan libur sekolah. Untuk anggaran lengkap selama di pulau, baca <a href="/id/getting-here/sumba-travel-costs/">biaya liburan ke Sumba</a>.</p>
 
@@ -785,7 +785,7 @@ GUIDES = [
 },
 "facts": {
 "en": [["Direct flight", "Nam Air SUB-TMC, about 1 hour 30 minutes"], ["Frequency", "About 3-4 a week (flight databases, late 2026)"], ["Via Bali", "SUB-DPS about 1 hour, about 117 flights a week"], ["Total time via Bali", "Roughly 3.5-6 hours airport to airport"], ["Typical fare", "From around EUR 113 one-way, EUR 214 return (2026-2027)"], ["By sea", "Pelni KM Awu and KM Lawit to Waingapu, more than a day"]],
-"es": [["Vuelo directo", "Nam Air SUB-TMC, alrededor de 1 h 30 min"], ["Frecuencia", "Unos 3-4 a la semana (bases de datos de vuelos, finales de 2026)"], ["Vía Bali", "SUB-DPS alrededor de 1 hora, unos 117 vuelos semanales"], ["Tiempo total vía Bali", "Unas 3,5-6 horas de aeropuerto a aeropuerto"], ["Precio habitual", "Desde unos 113 EUR ida y 214 EUR ida y vuelta (2026-2027)"], ["Por mar", "Pelni KM Awu y KM Lawit a Waingapu, más de un día"]],
+"es": [["Vuelo directo", "Nam Air SUB-TMC, alrededor de 1 h 30 min"], ["Frecuencia", "Unos 3-4 a la semana (bases de datos de vuelos, finales de 2026)"], ["Vía Bali", "SUB-DPS alrededor de 1 hora, unos 117 vuelos semanales"], ["Tiempo total vía Bali", "Unas 3,5-6 horas de aeropuerto a aeropuerto"], ["Precio habitual", "Desde unos 113 euros ida y 214 euros ida y vuelta (2026-2027)"], ["Por mar", "Pelni KM Awu y KM Lawit a Waingapu, más de un día"]],
 "id": [["Penerbangan langsung", "Nam Air SUB-TMC, sekitar 1 jam 30 menit"], ["Frekuensi", "Sekitar 3-4 kali seminggu (database penerbangan, akhir 2026)"], ["Via Bali", "SUB-DPS sekitar 1 jam, sekitar 117 penerbangan seminggu"], ["Total waktu via Bali", "Sekitar 3,5-6 jam dari bandara ke bandara"], ["Harga tiket", "Mulai sekitar EUR 113 sekali jalan, EUR 214 pulang-pergi (2026-2027)"], ["Lewat laut", "Pelni KM Awu dan KM Lawit ke Waingapu, lebih dari sehari"]],
 },
 "faq": {
@@ -797,8 +797,8 @@ GUIDES = [
 ],
 "es": [
 ["¿Hay vuelo directo de Surabaya a Sumba?", "Sí. Nam Air vuela sin escalas de Surabaya a Tambolaka en alrededor de 1 h 30 min, unas tres veces por semana según las bases de datos de vuelos. Consulta a la aerolínea antes de reservar porque los horarios cambian."],
-["¿Cómo voy de Surabaya a Waingapu?", "No hay vuelo directo a Waingapu. Vuela de Surabaya a Bali y toma el vuelo de TransNusa a Waingapu (martes, miércoles, viernes y sábado), conecta en Kupang o vuela a Tambolaka y cruza la isla en coche. Los barcos de Pelni también navegan de Surabaya a Waingapu."],
-["¿Cuánto cuesta un vuelo de Surabaya a Sumba?", "Skyscanner mostraba precios desde unos 113 EUR solo ida y 214 EUR ida y vuelta para finales de 2026 y principios de 2027, en itinerarios con escala. En vacaciones suben."],
+["¿Cómo se va de Surabaya a Waingapu?", "No hay vuelo directo a Waingapu. Vuela de Surabaya a Bali y toma el vuelo de TransNusa a Waingapu (martes, miércoles, viernes y sábado), conecta en Kupang o vuela a Tambolaka y cruza la isla en coche. Los barcos de Pelni también navegan de Surabaya a Waingapu."],
+["¿Cuánto cuesta un vuelo de Surabaya a Sumba?", "Skyscanner mostraba precios desde unos 113 euros solo ida y 214 euros ida y vuelta para finales de 2026 y principios de 2027, en itinerarios con escala. En vacaciones suben."],
 ["¿Se puede ir en barco de Surabaya a Sumba?", "Sí. El KM Awu y el KM Lawit de Pelni hacen rutas que unen Surabaya con Waingapu vía Benoa y Bima, varias veces al mes a mediados de 2026. Cuenta con más de un día de navegación y consulta las fechas en pelni.co.id."],
 ],
 "id": [
@@ -886,17 +886,17 @@ GUIDES = [
 "es": {
 "title": "De Europa a Sumba: vuelos vía Doha, Dubái, Estambul o Singapur y cuánto se tarda",
 "dek": "Ir de Europa a Sumba exige un vuelo largo hasta Bali y un salto corto, y con la escala adecuada el trayecto ya forma parte de la aventura.",
-"answer": "No hay vuelos directos de Europa a Sumba. Vuelas a Bali (Denpasar, DPS) con una escala, normalmente en Doha, Dubái, Estambul o Singapur, lo que lleva unas 16-18 horas desde Londres, y después tomas un vuelo nacional de alrededor de 1 h 30 min a Tambolaka (TMC) o Waingapu (WGP). Casi todos los viajeros duermen una noche en Bali, así que cuenta con 1,5-2 días de puerta a puerta. Desde Madrid, Skyscanner mostraba billetes de ida y vuelta a Bali desde unos 520 EUR. Consulta a la aerolínea antes de reservar porque los horarios cambian.",
+"answer": "No hay vuelos directos de Europa a Sumba. Vuelas a Bali (Denpasar, DPS) con una escala, normalmente en Doha, Dubái, Estambul o Singapur, lo que lleva unas 16-18 horas desde Londres, y después tomas un vuelo nacional de alrededor de 1 h 30 min a Tambolaka (TMC) o Waingapu (WGP). Casi todos los viajeros duermen una noche en Bali, así que cuenta con 1,5-2 días de puerta a puerta. Desde Madrid, Skyscanner mostraba billetes de ida y vuelta a Bali desde unos 520 euros. Consulta a la aerolínea antes de reservar porque los horarios cambian.",
 "body": """
-<p>En algún punto sobre el océano Índico, tras una noche de películas y sueño a trozos, alguien sube la persiana de la ventanilla y el cielo se vuelve naranja. Unas horas después estás en el aire cálido de Bali, que huele a frangipani, y al día siguiente un avión pequeño te lleva hacia el este sobre las islas menores de la Sonda, hasta que el verde de Bali deja paso a las colinas secas y doradas de Sumba, a sus playas solitarias y a sus pueblos de casas de tejados altísimos. Desde Europa, Sumba está lejos, pero no es complicado: un vuelo largo con escala y uno nacional corto.</p>
-<p><strong>La respuesta rápida:</strong> vuela de Europa a Bali (DPS) con una conexión y luego toma un vuelo nacional de alrededor de 1 h 30 min a Tambolaka (TMC), en el oeste, o a Waingapu (WGP), en el este. El tramo largo dura unas 16-18 horas desde Londres con una sola escala. Como la mayoría de vuelos intercontinentales llegan a Bali por la tarde-noche o demasiado tarde para los vuelos a Sumba, duerme una noche en Bali y cuenta con 1,5-2 días de puerta a puerta. Los horarios cambian: consulta a la aerolínea antes de reservar.</p>
+<p>En algún punto sobre el océano Índico, tras una noche de películas y sueño entrecortado, alguien sube la persiana de la ventanilla y el cielo se vuelve naranja. Unas horas después estás en el aire cálido de Bali, que huele a frangipani, y al día siguiente un avión pequeño te lleva hacia el este sobre las islas menores de la Sonda, hasta que el verde de Bali deja paso a las colinas secas y doradas de Sumba, a sus playas solitarias y a sus pueblos de casas de tejados altísimos. Desde Europa, Sumba está lejos, pero no es complicado: un vuelo largo con escala y uno nacional corto.</p>
+<p><strong>La respuesta rápida:</strong> vuela de Europa a Bali (DPS) con una conexión y luego toma un vuelo nacional de alrededor de 1 h 30 min a Tambolaka (TMC), en el oeste, o a Waingapu (WGP), en el este. El tramo largo dura unas 16-18 horas desde Londres con una sola escala. Como la mayoría de los vuelos intercontinentales llegan a Bali por la tarde-noche o demasiado tarde para los vuelos a Sumba, duerme una noche en Bali y cuenta con 1,5-2 días de puerta a puerta. Los horarios cambian: consulta a la aerolínea antes de reservar.</p>
 
 <h2>Los principales puntos de escala entre Europa y Bali</h2>
 <p>No hay vuelo regular sin escalas entre Europa occidental y Bali. FlightConnections muestra estos centros de conexión con vuelos directos a Denpasar:</p>
 <ul>
 <li><strong>Doha (Qatar Airways):</strong> todo el año, unas 9 h 30 min de Doha a Bali.</li>
 <li><strong>Dubái (Emirates):</strong> todo el año, unas 9 h 20 min de Dubái a Bali.</li>
-<li><strong>Estambul (Turkish Airlines):</strong> sin escalas de Estambul a Bali en unas 13 h 15 min. Turkish pasó a volar a diario en esta ruta desde octubre de 2024 con un Airbus A350-900, con llegada a Bali por la tarde-noche (indicada a las 19:10).</li>
+<li><strong>Estambul (Turkish Airlines):</strong> sin escalas de Estambul a Bali en unas 13 h 15 min. Turkish vuela a diario en esta ruta desde octubre de 2024 con un Airbus A350-900, con llegada a Bali por la tarde-noche (indicada a las 19:10).</li>
 <li><strong>Singapur (Singapore Airlines, KLM, Garuda Indonesia, Scoot, Jetstar):</strong> unas 2 h 30 min de Singapur a Bali, con muchos vuelos al día.</li>
 <li><strong>Kuala Lumpur (Malaysia Airlines, AirAsia, Batik Air):</strong> unas 3 h 5 min hasta Bali.</li>
 </ul>
@@ -915,14 +915,14 @@ GUIDES = [
 </table>
 
 <h2>De Bali a Sumba</h2>
-<p>El último tramo es corto. Varios vuelos diarios unen Bali con Tambolaka en una hora a hora y media, y TransNusa vuela sin escalas a Waingapu cuatro veces por semana. Elige Tambolaka para Sumba Occidental y Suroccidental (las lagunas, las playas del oeste, los pueblos tradicionales y las zonas de Pasola) y Waingapu para Sumba Oriental (colinas de sabana, la costa este y los pueblos tejedores). Muchos viajeros entran por un aeropuerto y salen por el otro. Nuestra guía sobre <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a> detalla este tramo, y la de <a href="/es/getting-here/getting-around-sumba/">cómo moverse por Sumba</a> explica conductores y distancias.</p>
+<p>El último tramo es corto. Varios vuelos diarios unen Bali con Tambolaka en entre una hora y hora y media, y TransNusa vuela sin escalas a Waingapu cuatro veces por semana. Elige Tambolaka para Sumba Occidental y Suroccidental (las lagunas, las playas del oeste, los pueblos tradicionales y las zonas de Pasola) y Waingapu para Sumba Oriental (colinas de sabana, la costa este y los pueblos tejedores). Muchos viajeros entran por un aeropuerto y salen por el otro. Nuestra guía sobre <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a> detalla este tramo, y la de <a href="/es/getting-here/getting-around-sumba/">cómo moverse por Sumba</a> explica conductores y distancias.</p>
 <p><strong>¿El mismo día o con noche en Bali?</strong> Las salidas de Bali a Sumba han sido a media mañana y por la tarde (por ejemplo a las 10:35, 14:15 y 15:20 en un horario de Wings Air de 2024). Un vuelo largo que aterrice en Bali por la mañana puede conectar el mismo día; uno que llegue por la tarde-noche, no. En la práctica, lo normal es dormir una noche en Bali, que además sirve de colchón ante retrasos.</p>
 
 <h2>Tiempo total y precios habituales</h2>
 <ul>
 <li><strong>Tiempo total:</strong> unas 16-18 horas de Londres a Bali con una escala, más alrededor de 1 h 30 min hasta Sumba. De puerta a puerta, con una noche en Bali, cuenta con 1,5-2 días.</li>
-<li><strong>Vuelos desde Madrid:</strong> Skyscanner mostraba billetes de ida y vuelta Madrid-Bali desde unos 520 EUR para febrero y marzo de 2027, que subían a unos 750-840 EUR en julio, agosto y octubre. Eran estimaciones de búsquedas recientes y cambian cada día.</li>
-<li><strong>Bali-Sumba:</strong> los billetes directos de ida rondaban 1,2-1,4 millones de IDR (unos 60-70 EUR) para noviembre de 2026.</li>
+<li><strong>Vuelos desde Madrid:</strong> Skyscanner mostraba billetes de ida y vuelta Madrid-Bali desde unos 520 euros para febrero y marzo de 2027, que subían a unos 750-840 euros en julio, agosto y octubre. Eran estimaciones de búsquedas recientes y cambian cada día.</li>
+<li><strong>Bali-Sumba:</strong> los billetes directos de ida rondaban 1,2-1,4 millones de rupias (unos 60-70 euros) para noviembre de 2026.</li>
 </ul>
 <p>Nuestra guía sobre <a href="/es/getting-here/sumba-travel-costs/">cuánto cuesta viajar a Sumba</a> pone el viaje completo en contexto, del conductor a los donativos en los pueblos.</p>
 
@@ -931,16 +931,16 @@ GUIDES = [
 
 <h2>Consejos para el viaje</h2>
 <ul>
-<li><strong>Cuidado con el salto de equipaje.</strong> Los billetes intercontinentales suelen incluir 20-30 kg facturados, pero los aviones pequeños a Sumba son más estrictos: el equipaje de mano suele limitarse a 7 kg y algunas tarifas de Wings Air no incluyen maleta facturada. Paga el equipaje extra por internet para el tramo nacional, o deja una maleta en Bali.</li>
+<li><strong>Ojo al cambio de franquicia de equipaje.</strong> Los billetes intercontinentales suelen incluir 20-30 kg facturados, pero los aviones pequeños a Sumba son más estrictos: el equipaje de mano suele limitarse a 7 kg y algunas tarifas de Wings Air no incluyen maleta facturada. Paga el equipaje extra por internet para el tramo nacional, o deja una maleta en Bali.</li>
 <li><strong>Deja margen, sobre todo con billetes separados.</strong> El vuelo largo y el nacional suelen ir en reservas distintas, así que un retraso corre de tu cuenta. Una noche en Bali a la ida y a la vuelta es lo más seguro.</li>
 <li><strong>Elige la escala por comodidad.</strong> Doha y Dubái dividen el viaje en dos vuelos parecidos; Estambul te da un único vuelo largo sin escalas; Singapur deja un último tramo corto y muchas opciones diarias.</li>
 <li><strong>Elige bien el día.</strong> Si vas a Waingapu, vuela desde Bali en martes, miércoles, viernes o sábado. A la vuelta, sal de Sumba como mínimo el día antes de tu vuelo intercontinental.</li>
-<li><strong>Desfase horario.</strong> Bali y Sumba están en la hora WITA (UTC+8), 7 horas por delante de España peninsular en invierno y 6 en verano. Un primer día tranquilo en Bali o cerca del aeropuerto en Sumba ayuda.</li>
+<li><strong>Desfase horario.</strong> Bali y Sumba están en la hora WITA (UTC+8), 7 horas por delante de España peninsular en invierno y 6 en verano. Conviene reservar un primer día tranquilo en Bali o cerca del aeropuerto de Sumba.</li>
 </ul>
 """,
 },
 "id": {
-"title": "Eropa ke Sumba: penerbangan via Doha, Dubai, Istanbul atau Singapura, dan berapa lama",
+"title": "Dari Eropa ke Sumba: penerbangan via Doha, Dubai, Istanbul, atau Singapura dan lama perjalanannya",
 "dek": "Dari Eropa ke Sumba dibutuhkan satu penerbangan jarak jauh ke Bali dan satu penerbangan singkat, dan dengan transit yang tepat perjalanan itu menjadi bagian dari petualangan.",
 "answer": "Tidak ada penerbangan langsung dari Eropa ke Sumba. Anda terbang ke Bali (Denpasar, DPS) dengan satu transit, biasanya di Doha, Dubai, Istanbul atau Singapura, sekitar 16-18 jam dari London, lalu naik penerbangan domestik sekitar 1 jam 30 menit ke Tambolaka (TMC) atau Waingapu (WGP). Kebanyakan wisatawan bermalam di Bali, jadi siapkan sekitar 1,5-2 hari dari pintu ke pintu, dan cek maskapai sebelum memesan karena jadwal berubah.",
 "body": """
@@ -952,7 +952,7 @@ GUIDES = [
 <ul>
 <li><strong>Doha (Qatar Airways):</strong> sepanjang tahun, sekitar 9 jam 30 menit dari Doha ke Bali.</li>
 <li><strong>Dubai (Emirates):</strong> sepanjang tahun, sekitar 9 jam 20 menit dari Dubai ke Bali.</li>
-<li><strong>Istanbul (Turkish Airlines):</strong> nonstop Istanbul-Bali sekitar 13 jam 15 menit. Turkish terbang setiap hari di rute ini sejak Oktober 2024 dengan Airbus A350-900, dengan kedatangan di Bali malam hari (tercatat pukul 19:10).</li>
+<li><strong>Istanbul (Turkish Airlines):</strong> nonstop Istanbul-Bali sekitar 13 jam 15 menit. Turkish terbang setiap hari di rute ini sejak Oktober 2024 dengan Airbus A350-900, dengan kedatangan di Bali malam hari (tercatat pukul 19.10).</li>
 <li><strong>Singapura (Singapore Airlines, KLM, Garuda Indonesia, Scoot, Jetstar):</strong> sekitar 2 jam 30 menit dari Singapura ke Bali, dengan banyak penerbangan setiap hari.</li>
 <li><strong>Kuala Lumpur (Malaysia Airlines, AirAsia, Batik Air):</strong> sekitar 3 jam 5 menit ke Bali.</li>
 </ul>
@@ -971,14 +971,14 @@ GUIDES = [
 </table>
 
 <h2>Dari Bali ke Sumba</h2>
-<p>Bagian terakhir singkat saja. Beberapa penerbangan sehari menghubungkan Bali dengan Tambolaka dalam sekitar satu sampai satu setengah jam, dan TransNusa terbang nonstop ke Waingapu empat kali seminggu. Pilih Tambolaka untuk Sumba Barat dan Sumba Barat Daya (danau, pantai barat, kampung adat dan wilayah Pasola) dan Waingapu untuk Sumba Timur (bukit sabana, pesisir timur dan kampung tenun). Banyak wisatawan datang lewat satu bandara dan pulang lewat bandara lain. Panduan kami <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a> membahas rute ini secara rinci, dan <a href="/id/getting-here/getting-around-sumba/">transportasi keliling Sumba</a> menjelaskan sopir dan jarak setelah Anda mendarat.</p>
-<p><strong>Hari yang sama atau bermalam?</strong> Keberangkatan dari Bali ke Sumba selama ini menjelang siang dan sore (misalnya 10:35, 14:15 dan 15:20 dalam jadwal Wings Air 2024). Penerbangan jarak jauh yang tiba di Bali pagi hari bisa tersambung di hari yang sama; yang tiba malam tidak. Dalam praktiknya, bermalam di Bali adalah hal biasa dan menjadi cadangan yang bijak bila ada keterlambatan.</p>
+<p>Bagian terakhir singkat saja. Beberapa penerbangan sehari menghubungkan Bali dengan Tambolaka dalam sekitar satu sampai satu setengah jam, dan TransNusa terbang nonstop ke Waingapu empat kali seminggu. Pilih Tambolaka untuk Sumba Barat dan Sumba Barat Daya (laguna, pantai barat, kampung adat, dan wilayah Pasola) dan Waingapu untuk Sumba Timur (bukit sabana, pesisir timur dan kampung tenun). Banyak wisatawan datang lewat satu bandara dan pulang lewat bandara lain. Panduan kami <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a> membahas rute ini secara rinci, dan <a href="/id/getting-here/getting-around-sumba/">transportasi keliling Sumba</a> menjelaskan sopir dan jarak setelah Anda mendarat.</p>
+<p><strong>Hari yang sama atau bermalam?</strong> Keberangkatan dari Bali ke Sumba selama ini menjelang siang dan sore (misalnya 10.35, 14.15 dan 15.20 dalam jadwal Wings Air 2024). Penerbangan jarak jauh yang tiba di Bali pagi hari bisa tersambung di hari yang sama; yang tiba malam tidak. Dalam praktiknya, bermalam di Bali adalah hal biasa dan menjadi cadangan yang bijak bila ada keterlambatan.</p>
 
 <h2>Total waktu dan kisaran harga</h2>
 <ul>
 <li><strong>Total waktu:</strong> sekitar 16-18 jam dari London ke Bali dengan satu transit, ditambah sekitar 1 jam 30 menit ke Sumba. Dari pintu ke pintu, dengan bermalam di Bali, siapkan sekitar 1,5-2 hari.</li>
 <li><strong>Tiket jarak jauh:</strong> sebagai contoh, Skyscanner menampilkan tiket pulang-pergi Madrid-Bali mulai sekitar EUR 520 untuk Februari dan Maret 2027, naik menjadi sekitar EUR 750-840 pada Juli, Agustus dan Oktober. Angka ini perkiraan dari pencarian terbaru dan berubah setiap hari.</li>
-<li><strong>Bali-Sumba:</strong> tiket langsung sekali jalan sekitar Rp1,2-1,4 juta untuk November 2026.</li>
+<li><strong>Bali-Sumba:</strong> tiket langsung sekali jalan sekitar Rp 1,2-1,4 juta untuk November 2026.</li>
 </ul>
 <p>Panduan kami tentang <a href="/id/getting-here/sumba-travel-costs/">biaya liburan ke Sumba</a> merangkum keseluruhan biaya, dari sopir hingga sumbangan di kampung adat.</p>
 
@@ -997,7 +997,7 @@ GUIDES = [
 },
 "facts": {
 "en": [["Direct flights Europe-Sumba", "None; fly to Bali (DPS) with one stop"], ["Main hubs", "Doha, Dubai, Istanbul, Singapore, Kuala Lumpur"], ["London to Bali", "About 16-18 hours with one stop"], ["Bali to Sumba", "About 1 hour 30 minutes to TMC or WGP"], ["Door to door", "Roughly 1.5-2 days with a night in Bali"], ["Visas and health", "See our Sumba safety and health guide"]],
-"es": [["Vuelos directos Europa-Sumba", "No hay; vuela a Bali (DPS) con una escala"], ["Escalas principales", "Doha, Dubái, Estambul, Singapur, Kuala Lumpur"], ["Madrid a Bali", "Sin directos; ida y vuelta desde unos 520 EUR (2027)"], ["Bali a Sumba", "Alrededor de 1 h 30 min a TMC o WGP"], ["De puerta a puerta", "Unos 1,5-2 días con una noche en Bali"], ["Visados y salud", "Consulta nuestra guía de seguridad y salud en Sumba"]],
+"es": [["Vuelos directos Europa-Sumba", "No hay; vuela a Bali (DPS) con una escala"], ["Escalas principales", "Doha, Dubái, Estambul, Singapur, Kuala Lumpur"], ["Madrid a Bali", "Sin directos; ida y vuelta desde unos 520 euros (2027)"], ["Bali a Sumba", "Alrededor de 1 h 30 min a TMC o WGP"], ["De puerta a puerta", "Unos 1,5-2 días con una noche en Bali"], ["Visados y salud", "Consulta nuestra guía de seguridad y salud en Sumba"]],
 "id": [["Penerbangan langsung Eropa-Sumba", "Tidak ada; terbang ke Bali (DPS) dengan satu transit"], ["Transit utama", "Doha, Dubai, Istanbul, Singapura, Kuala Lumpur"], ["London ke Bali", "Sekitar 16-18 jam dengan satu transit"], ["Bali ke Sumba", "Sekitar 1 jam 30 menit ke TMC atau WGP"], ["Pintu ke pintu", "Sekitar 1,5-2 hari dengan bermalam di Bali"], ["Visa dan kesehatan", "Lihat panduan keamanan dan kesehatan Sumba kami"]],
 },
 "faq": {
@@ -1010,8 +1010,8 @@ GUIDES = [
 "es": [
 ["¿Se puede volar directo de Europa a Sumba?", "No. Vuelas a Bali con una escala, normalmente en Doha, Dubái, Estambul o Singapur, y luego tomas un vuelo nacional de alrededor de 1 h 30 min a Tambolaka o Waingapu."],
 ["¿Cuánto se tarda de España a Sumba?", "No hay vuelos directos de Madrid a Bali: se hace al menos una escala, y de Londres a Bali se calculan unas 16-18 horas con una escala. Sumando el vuelo a Sumba y la noche habitual en Bali, cuenta con 1,5-2 días de puerta a puerta."],
-["¿Cuánto cuesta volar de Madrid a Bali?", "Skyscanner mostraba billetes de ida y vuelta desde unos 520 EUR para febrero y marzo de 2027, con picos de unos 750-840 EUR en verano y octubre. Son estimaciones que cambian cada día."],
-["¿Necesito visado para ir a Sumba?", "Sumba es Indonesia, así que se aplican las normas de entrada indonesias, que dependen de tu nacionalidad. Lee nuestra guía de seguridad y salud en Sumba y consulta las recomendaciones de viaje de tu país antes de reservar."],
+["¿Cuánto cuesta volar de Madrid a Bali?", "Skyscanner mostraba billetes de ida y vuelta desde unos 520 euros para febrero y marzo de 2027, con picos de unos 750-840 euros en verano y octubre. Son estimaciones que cambian cada día."],
+["¿Necesito visado para ir a Sumba?", "Sumba forma parte de Indonesia, así que se aplican las normas de entrada indonesias, que dependen de tu nacionalidad. Lee nuestra guía de seguridad y salud en Sumba y consulta las recomendaciones de viaje de tu país antes de reservar."],
 ],
 "id": [
 ["Apakah bisa terbang langsung dari Eropa ke Sumba?", "Tidak. Anda terbang ke Bali dengan satu transit, biasanya di Doha, Dubai, Istanbul atau Singapura, lalu naik penerbangan domestik sekitar 1 jam 30 menit ke Tambolaka atau Waingapu."],
@@ -1096,7 +1096,7 @@ GUIDES = [
 "dek": "Sumba está más cerca de Australia de lo que parece: vuela a Bali, duerme allí si hace falta y a la mañana siguiente un vuelo corto te deja en una isla casi sin multitudes.",
 "answer": "No hay vuelos directos de Australia a Sumba: vuelas a Bali (Denpasar, DPS) y conectas con Tambolaka (TMC) o Waingapu (WGP), alrededor de 1 h 30 min. Los vuelos directos a Bali duran unas 2,5-3 horas desde Darwin, 3,5-4 desde Perth y 6-6,5 desde Sídney o Melbourne, así que el viaje lleva unas 7-12 horas de aeropuerto a aeropuerto con buena conexión, o día y medio con una noche en Bali. Consulta a la aerolínea antes de reservar porque los horarios cambian.",
 "body": """
-<p>Muchos australianos conocen Bali como una segunda casa: la cola del aeropuerto, el aire cálido de la noche, las motos en la circunvalación. Menos saben que, a poco más de una hora hacia el este, hay una isla donde las olas rompen sobre arrecifes vacíos, los caballos corren por la playa al atardecer y los pueblos de altas casas de paja aún se reúnen para ceremonias ancestrales. Sumba es el paso siguiente a Bali y, desde Perth o Darwin, se puede llegar en un solo día.</p>
+<p>Para muchos australianos, Bali es una segunda casa: la cola del aeropuerto, el aire cálido de la noche, las motos en la circunvalación. Menos conocido es que, a poco más de una hora hacia el este, hay una isla donde las olas rompen sobre arrecifes vacíos, los caballos corren por la playa al atardecer y los pueblos de altas casas de paja aún se reúnen para ceremonias ancestrales. Sumba es el siguiente paso después de Bali y, desde Perth o Darwin, se puede llegar en un solo día.</p>
 <p><strong>La respuesta rápida:</strong> vuela de Australia a Bali (DPS) y toma un vuelo nacional de alrededor de 1 h 30 min a Tambolaka (TMC), en el oeste, o a Waingapu (WGP), en el este. Desde Perth y Darwin suele ser posible conectar el mismo día; desde Sídney y Melbourne, la mayoría duerme una noche en Bali. Los horarios cambian: consulta a la aerolínea antes de reservar.</p>
 
 <h2>Vuelos de Australia a Bali</h2>
@@ -1113,15 +1113,15 @@ GUIDES = [
 
 <h2>Desde cada ciudad</h2>
 <h3>Perth</h3>
-<p>Perth es la puerta de entrada más fácil. El vuelo a Bali dura unas 3,5-4 horas y Perth tiene la misma hora que Bali y Sumba (UTC+8), así que no hay desfase horario. HelloRoam hablaba de ofertas de unos 200-350 AUD ida y vuelta en 2026. Una salida de mañana desde Perth puede aterrizar en Bali a tiempo para un vuelo de tarde a Tambolaka, de modo que Perth-Sumba es posible en un día, unas 7-9 horas de aeropuerto a aeropuerto.</p>
+<p>Perth es la puerta de entrada más fácil. El vuelo a Bali dura unas 3,5-4 horas y Perth tiene la misma hora que Bali y Sumba (UTC+8), así que no hay desfase horario. HelloRoam hablaba de ofertas de unos 200-350 dólares australianos ida y vuelta en 2026. Una salida de mañana desde Perth puede aterrizar en Bali a tiempo para un vuelo de tarde a Tambolaka, de modo que Perth-Sumba es posible en un día, unas 7-9 horas de aeropuerto a aeropuerto.</p>
 <h3>Darwin</h3>
 <p>Darwin es la gran ciudad más cercana, a unas 2,5-3 horas de Bali. Menos aerolíneas cubren la ruta, así que las plazas se agotan en la estación seca y en vacaciones escolares. Darwin va 1,5 horas por delante de Bali, lo que ayuda: un vuelo de mañana aterriza en Bali antes del mediodía local, con margen para las salidas de tarde a Sumba.</p>
 <h3>Sídney y Melbourne</h3>
-<p>Desde la costa este, Bali está a unas 6-6,5 horas, con mucha oferta de aerolíneas. Sídney y Melbourne van 2-3 horas por delante de Bali según el horario de verano. Muchos vuelos llegan a Bali por la tarde o la noche, después de las últimas salidas a Sumba, así que duerme una noche en Bali y sigue a la mañana siguiente. HelloRoam señalaba que los billetes de ida y vuelta desde la costa este bajan a menudo de 300 AUD en temporada media. Con noche en Bali, el viaje completo lleva alrededor de día y medio.</p>
+<p>Desde la costa este, Bali está a unas 6-6,5 horas, con mucha oferta de aerolíneas. Sídney y Melbourne van 2-3 horas por delante de Bali, según rija o no el horario de verano. Muchos vuelos llegan a Bali por la tarde o la noche, después de las últimas salidas a Sumba, así que duerme una noche en Bali y sigue a la mañana siguiente. HelloRoam señalaba que los billetes de ida y vuelta desde la costa este bajan a menudo de 300 dólares australianos en temporada media. Con noche en Bali, el viaje completo lleva alrededor de día y medio.</p>
 
 <h2>De Bali a Sumba</h2>
 <p>Varios vuelos diarios unen Bali con Tambolaka, y TransNusa vuela sin escalas a Waingapu cuatro veces por semana. Elige Tambolaka para Sumba Occidental y Suroccidental (las lagunas, la costa surfera del oeste, los pueblos tradicionales y las zonas de Pasola) y Waingapu para Sumba Oriental (colinas de sabana, la costa este y los pueblos tejedores). En un horario de Wings Air de 2024, los vuelos Bali-Tambolaka salían a las 10:35, 14:15 y 15:20. Las horas cambian, pero las salidas de media mañana y tarde son las que permiten conectar el mismo día desde Perth y Darwin. Nuestra guía sobre <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a> detalla este tramo, y la de <a href="/es/getting-here/getting-around-sumba/">cómo moverse por Sumba</a> trata conductores y carreteras.</p>
-<p><strong>Precios:</strong> los billetes directos de ida Bali-Tambolaka rondaban 1,2-1,4 millones de IDR para noviembre de 2026. Para el presupuesto completo, lee <a href="/es/getting-here/sumba-travel-costs/">cuánto cuesta viajar a Sumba</a>.</p>
+<p><strong>Precios:</strong> los billetes directos de ida Bali-Tambolaka rondaban 1,2-1,4 millones de rupias para noviembre de 2026. Para el presupuesto completo, lee <a href="/es/getting-here/sumba-travel-costs/">cuánto cuesta viajar a Sumba</a>.</p>
 
 <h2>Tiempo total de viaje</h2>
 <ul>
@@ -1136,18 +1136,18 @@ GUIDES = [
 <ul>
 <li><strong>Tablas de surf y aviones pequeños.</strong> Las tarifas básicas de Jetstar solo incluyen equipaje de mano, y algunas tarifas de Wings Air a Sumba no incluyen maleta facturada gratis, con un límite de 7 kg en cabina. Las tablas y las maletas grandes hay que pagarlas por adelantado y quizá no quepan en los aviones más pequeños. Pregunta a la aerolínea antes de reservar o alquila tabla en Sumba.</li>
 <li><strong>Compara el precio real.</strong> HelloRoam recomienda comparar las tarifas con la maleta facturada incluida: Garuda Indonesia incluye equipaje y comida, mientras que las de bajo coste los cobran aparte.</li>
-<li><strong>No vayas justo.</strong> El vuelo desde Australia y el de Sumba casi siempre son billetes separados. Deja al menos 3 horas en Bali o duerme allí. A la vuelta, sal de Sumba el día antes de tu vuelo a Australia.</li>
+<li><strong>No vayas con el tiempo justo.</strong> El vuelo desde Australia y el de Sumba casi siempre son billetes separados. Deja al menos 3 horas en Bali o duerme allí. A la vuelta, sal de Sumba el día antes de tu vuelo a Australia.</li>
 <li><strong>Elige bien el día para Waingapu.</strong> El directo de TransNusa opera martes, miércoles, viernes y sábado. Los demás días, vuela a Tambolaka y cruza la isla por carretera (casi un día) o pasa por Kupang.</li>
 <li><strong>Evita las vacaciones escolares.</strong> Los vuelos de Australia a Bali se llenan en las vacaciones escolares australianas, y las fiestas indonesias (de finales de junio a mediados de julio, Navidad, fin del Ramadán) complican el tramo a Sumba.</li>
 </ul>
 """,
 },
 "id": {
-"title": "Australia ke Sumba: penerbangan dari Perth, Darwin, Sydney dan Melbourne via Bali",
+"title": "Dari Australia ke Sumba: penerbangan dari Perth, Darwin, Sydney, dan Melbourne via Bali",
 "dek": "Sumba lebih dekat ke Australia daripada yang dikira: terbanglah ke Bali, bermalam di sana bila perlu, dan keesokan paginya penerbangan singkat membawa Anda ke pulau yang nyaris tanpa keramaian.",
 "answer": "Tidak ada penerbangan langsung dari Australia ke Sumba, jadi Anda terbang ke Bali (Denpasar, DPS) lalu lanjut ke Tambolaka (TMC) atau Waingapu (WGP), sekitar 1 jam 30 menit. Penerbangan langsung ke Bali sekitar 2,5-3 jam dari Darwin, 3,5-4 jam dari Perth dan 6-6,5 jam dari Sydney atau Melbourne, sehingga perjalanan memakan sekitar 7-12 jam dari bandara ke bandara jika transit pas, atau satu setengah hari dengan bermalam di Bali. Cek maskapai sebelum memesan karena jadwal berubah.",
 "body": """
-<p>Banyak warga Australia mengenal Bali seperti rumah kedua: antrean bandara, udara malam yang hangat, motor di jalan bypass. Lebih sedikit yang tahu bahwa sedikit lebih dari satu jam ke timur ada pulau tempat ombak pecah di karang yang sepi, kuda berlari di pantai saat senja dan kampung-kampung beratap ilalang tinggi masih berkumpul untuk upacara leluhur. Sumba adalah langkah berikutnya setelah Bali, dan dari Perth atau Darwin bisa dicapai dalam sehari.</p>
+<p>Banyak warga Australia mengenal Bali seperti rumah kedua: antrean bandara, udara malam yang hangat, motor di jalan bypass. Namun, tak banyak yang tahu bahwa sedikit lebih dari satu jam ke timur ada pulau tempat ombak pecah di karang yang sepi, kuda berlari di pantai saat senja dan kampung-kampung beratap ilalang tinggi masih berkumpul untuk upacara leluhur. Sumba adalah langkah berikutnya setelah Bali, dan dari Perth atau Darwin bisa dicapai dalam sehari.</p>
 <p><strong>Jawaban singkat:</strong> terbanglah dari Australia ke Bali (DPS), lalu naik penerbangan domestik sekitar 1 jam 30 menit ke Tambolaka (TMC) di barat atau Waingapu (WGP) di timur. Dari Perth dan Darwin sering bisa tersambung di hari yang sama; dari Sydney dan Melbourne kebanyakan wisatawan bermalam di Bali. Jadwal berubah, jadi cek maskapai sebelum memesan.</p>
 
 <h2>Penerbangan dari Australia ke Bali</h2>
@@ -1168,11 +1168,11 @@ GUIDES = [
 <h3>Darwin</h3>
 <p>Darwin adalah kota besar terdekat, sekitar 2,5-3 jam dari Bali. Maskapai yang melayani rute ini lebih sedikit, jadi kursi bisa habis di musim kemarau dan libur sekolah. Waktu Darwin 1,5 jam lebih cepat dari Bali, dan itu menguntungkan: penerbangan pagi tiba di Bali sebelum tengah hari waktu setempat, cukup jauh sebelum keberangkatan sore ke Sumba.</p>
 <h3>Sydney dan Melbourne</h3>
-<p>Dari pesisir timur, Bali berjarak sekitar 6-6,5 jam, dengan banyak pilihan maskapai. Waktu Sydney dan Melbourne 2-3 jam lebih cepat dari Bali tergantung musim panas. Banyak penerbangan tiba di Bali sore atau malam, setelah keberangkatan terakhir ke Sumba, jadi rencanakan bermalam di Bali dan lanjut keesokan paginya. HelloRoam mencatat tiket pulang-pergi dari pesisir timur ke Bali sering di bawah A$300 di musim peralihan. Dengan bermalam, total perjalanan sekitar satu setengah hari.</p>
+<p>Dari pesisir timur, Bali berjarak sekitar 6-6,5 jam, dengan banyak pilihan maskapai. Waktu Sydney dan Melbourne 2-3 jam lebih cepat dari Bali, tergantung berlaku tidaknya waktu musim panas. Banyak penerbangan tiba di Bali sore atau malam, setelah keberangkatan terakhir ke Sumba, jadi rencanakan bermalam di Bali dan lanjut keesokan paginya. HelloRoam mencatat tiket pulang-pergi dari pesisir timur ke Bali sering di bawah A$300 di musim peralihan. Dengan bermalam, total perjalanan sekitar satu setengah hari.</p>
 
 <h2>Dari Bali ke Sumba</h2>
-<p>Beberapa penerbangan sehari menghubungkan Bali dengan Tambolaka, dan TransNusa terbang nonstop ke Waingapu empat kali seminggu. Pilih Tambolaka untuk Sumba Barat dan Sumba Barat Daya (danau, pesisir selancar di barat, kampung adat dan wilayah Pasola) dan Waingapu untuk Sumba Timur (bukit sabana, pesisir timur dan kampung tenun). Dalam jadwal Wings Air 2024, penerbangan Bali-Tambolaka berangkat pukul 10:35, 14:15 dan 15:20. Jam bisa berubah, tetapi pola keberangkatan menjelang siang dan sore inilah yang membuat transit di hari yang sama dari Perth dan Darwin memungkinkan. Panduan kami <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a> membahas rute ini secara rinci, dan <a href="/id/getting-here/getting-around-sumba/">transportasi keliling Sumba</a> membahas sopir dan jalan.</p>
-<p><strong>Harga:</strong> tiket langsung sekali jalan Bali-Tambolaka sekitar Rp1,2-1,4 juta untuk November 2026. Untuk anggaran lengkap, baca <a href="/id/getting-here/sumba-travel-costs/">biaya liburan ke Sumba</a>.</p>
+<p>Beberapa penerbangan sehari menghubungkan Bali dengan Tambolaka, dan TransNusa terbang nonstop ke Waingapu empat kali seminggu. Pilih Tambolaka untuk Sumba Barat dan Sumba Barat Daya (laguna, pesisir selancar di barat, kampung adat, dan wilayah Pasola) dan Waingapu untuk Sumba Timur (bukit sabana, pesisir timur dan kampung tenun). Dalam jadwal Wings Air 2024, penerbangan Bali-Tambolaka berangkat pukul 10.35, 14.15 dan 15.20. Jam bisa berubah, tetapi pola keberangkatan menjelang siang dan sore inilah yang membuat transit di hari yang sama dari Perth dan Darwin memungkinkan. Panduan kami <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a> membahas rute ini secara rinci, dan <a href="/id/getting-here/getting-around-sumba/">transportasi keliling Sumba</a> membahas sopir dan jalan.</p>
+<p><strong>Harga:</strong> tiket langsung sekali jalan Bali-Tambolaka sekitar Rp 1,2-1,4 juta untuk November 2026. Untuk anggaran lengkap, baca <a href="/id/getting-here/sumba-travel-costs/">biaya liburan ke Sumba</a>.</p>
 
 <h2>Total waktu perjalanan</h2>
 <ul>
@@ -1187,7 +1187,7 @@ GUIDES = [
 <ul>
 <li><strong>Papan selancar dan pesawat kecil.</strong> Tarif dasar Jetstar hanya termasuk bagasi kabin, dan beberapa tarif Wings Air ke Sumba tanpa bagasi tercatat gratis, dengan batas kabin 7 kg. Papan dan tas besar harus dibayar di muka dan mungkin tidak muat di pesawat terkecil. Tanyakan ke maskapai sebelum memesan, atau sewa papan di Sumba.</li>
 <li><strong>Bandingkan harga sebenarnya.</strong> HelloRoam menyarankan membandingkan tarif yang sudah termasuk bagasi: Garuda Indonesia sudah termasuk bagasi dan makan, sedangkan maskapai berbiaya rendah memungut biaya tambahan.</li>
-<li><strong>Jangan terlalu mepet.</strong> Penerbangan dari Australia dan ke Sumba hampir selalu tiket terpisah. Sisakan minimal 3 jam di Bali atau menginap semalam. Saat pulang, tinggalkan Sumba sehari sebelum penerbangan ke Australia.</li>
+<li><strong>Jangan terlalu mepet.</strong> Penerbangan dari Australia dan penerbangan ke Sumba hampir selalu memakai tiket terpisah. Sisakan minimal 3 jam di Bali atau menginap semalam. Saat pulang, tinggalkan Sumba sehari sebelum penerbangan ke Australia.</li>
 <li><strong>Pilih hari yang tepat untuk Waingapu.</strong> Penerbangan nonstop TransNusa beroperasi Selasa, Rabu, Jumat dan Sabtu. Di hari lain, terbanglah ke Tambolaka lalu lewat darat ke timur (hampir seharian) atau lewat Kupang.</li>
 <li><strong>Hindari puncak libur sekolah.</strong> Penerbangan dari Australia ke Bali penuh saat libur sekolah Australia, dan libur di Indonesia (akhir Juni sampai pertengahan Juli, Natal, Lebaran) membuat tiket ke Sumba lebih sulit didapat.</li>
 </ul>
@@ -1195,7 +1195,7 @@ GUIDES = [
 },
 "facts": {
 "en": [["Direct flights Australia-Sumba", "None; connect in Bali (DPS)"], ["Darwin or Perth to Bali", "About 2.5-3 hours or 3.5-4 hours"], ["Sydney or Melbourne to Bali", "About 6-6.5 hours"], ["Bali to Sumba", "About 1 hour 30 minutes to TMC or WGP"], ["Total time", "Roughly 7-12 hours, or about 1.5 days with a night in Bali"], ["Typical fare to Bali", "Sale returns from around A$200-350 from Perth (2026)"]],
-"es": [["Vuelos directos Australia-Sumba", "No hay; conexión en Bali (DPS)"], ["Darwin o Perth a Bali", "Unas 2,5-3 horas o 3,5-4 horas"], ["Sídney o Melbourne a Bali", "Unas 6-6,5 horas"], ["Bali a Sumba", "Alrededor de 1 h 30 min a TMC o WGP"], ["Tiempo total", "Unas 7-12 horas, o día y medio con noche en Bali"], ["Precio habitual a Bali", "Ofertas de ida y vuelta desde unos 200-350 AUD desde Perth (2026)"]],
+"es": [["Vuelos directos Australia-Sumba", "No hay; conexión en Bali (DPS)"], ["Darwin o Perth a Bali", "Unas 2,5-3 horas o 3,5-4 horas"], ["Sídney o Melbourne a Bali", "Unas 6-6,5 horas"], ["Bali a Sumba", "Alrededor de 1 h 30 min a TMC o WGP"], ["Tiempo total", "Unas 7-12 horas, o día y medio con noche en Bali"], ["Precio habitual a Bali", "Ofertas de ida y vuelta desde unos 200-350 dólares australianos desde Perth (2026)"]],
 "id": [["Penerbangan langsung Australia-Sumba", "Tidak ada; transit di Bali (DPS)"], ["Darwin atau Perth ke Bali", "Sekitar 2,5-3 jam atau 3,5-4 jam"], ["Sydney atau Melbourne ke Bali", "Sekitar 6-6,5 jam"], ["Bali ke Sumba", "Sekitar 1 jam 30 menit ke TMC atau WGP"], ["Total waktu", "Sekitar 7-12 jam, atau sekitar 1,5 hari dengan bermalam di Bali"], ["Harga tiket ke Bali", "Promo pulang-pergi mulai sekitar A$200-350 dari Perth (2026)"]],
 },
 "faq": {

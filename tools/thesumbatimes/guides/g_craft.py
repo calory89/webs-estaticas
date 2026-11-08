@@ -128,18 +128,18 @@ GUIDES = [
 
 "es": {
 "title": "Ikat de Sumba: cómo se teje, qué significa y dónde comprarlo a las tejedoras",
-"dek": "Un solo hinggi puede llevar casi un año de trabajo, y cada caballo, gamba o árbol de calaveras que lleva cuenta algo. Así se lee, así se teje y así se compra con justicia.",
-"answer": "El ikat de Sumba es ikat de urdimbre: el dibujo se ata y se tiñe en los hilos antes de tejer, tradicionalmente con índigo para el azul y raíz de morinda para el rojo, y una tela grande con tintes naturales puede llevar entre 4 y 12 meses. El lugar más fácil para comprar directamente a las tejedoras es Kampung Raja Prailiu, a las afueras de Waingapu, y más al sureste están las aldeas del delta de Melolo (Pau, Umabara), Rende y Kaliuda. Cuenta con unas Rp 250.000 por una pieza pequeña con tinte químico y desde Rp 1,5 millones hasta más de Rp 10 millones por un hinggi grande de algodón hilado a mano y tinte natural (2025-2026, los precios varían).",
+"dek": "Un solo hinggi puede llevar casi un año de trabajo, y cada caballo, gamba o árbol de calaveras que aparece en él cuenta una historia. Así se lee, así se teje y así se compra de forma justa.",
+"answer": "El ikat de Sumba es ikat de urdimbre: el dibujo se ata y se tiñe en los hilos antes de tejer, tradicionalmente con índigo para el azul y raíz de morinda para el rojo, y una tela grande con tintes naturales puede llevar entre 4 y 12 meses. El sitio más accesible para comprar directamente a las tejedoras es Kampung Raja Prailiu, a las afueras de Waingapu, y más al sureste están las aldeas del delta de Melolo (Pau, Umabara), Rende y Kaliuda. Calcula unas 250.000 rupias por una pieza pequeña con tinte químico, y desde 1,5 millones hasta más de 10 millones de rupias por un hinggi grande de algodón hilado a mano y tinte natural (2025-2026, los precios varían).",
 "body": """
-<p>A media mañana en Prailiu, en el extremo oriental de Waingapu, el sonido más fuerte suele ser el golpe de una pala de madera contra un telar de cintura. Bajo los aleros de las casas de tejado alto cuelgan madejas de algodón atado, unas del color óxido de la raíz de morinda, otras de un azul tan profundo que parece negro. Una mujer sentada en el suelo, con el telar sujeto a la cadera, se echa hacia atrás para tensar la urdimbre, y poco a poco aparece un caballo de cola rizada, línea a línea. Esto es el ikat de Sumba, una de las grandes tradiciones textiles de Indonesia, y en esta isla se sigue tejiendo para funerales y bodas, no solo para los visitantes.</p>
-<p>La respuesta corta: la tela de Sumba es <strong>ikat de urdimbre</strong>, es decir, el dibujo se ata y se tiñe en los hilos longitudinales antes de tejer una sola pasada. Las mejores piezas con tintes naturales vienen de Sumba Oriental, y puedes comprarlas directamente a las tejedoras en aldeas que van de Waingapu a Melolo, Rende y Kaliuda. Compra sin prisa, pregunta mucho y asume que pagas meses de trabajo.</p>
+<p>A media mañana en Prailiu, en el extremo oriental de Waingapu, el sonido más fuerte suele ser el golpe de una pala de madera contra un telar de cintura. Bajo los aleros de las casas de tejado alto cuelgan madejas de algodón atado, unas del color óxido de la raíz de morinda, otras de un azul tan profundo que parece negro. Una mujer sentada en el suelo, con el telar sujeto a la cadera, se echa hacia atrás para tensar la urdimbre, y poco a poco aparece un caballo de cola rizada, línea a línea. Así es el ikat de Sumba, una de las grandes tradiciones textiles de Indonesia, y en esta isla se sigue tejiendo para funerales y bodas, no solo para los visitantes.</p>
+<p>La respuesta corta: la tela de Sumba es <strong>ikat de urdimbre</strong>, es decir, el dibujo se ata y se tiñe en los hilos longitudinales antes de tejer una sola pasada. Las mejores piezas con tintes naturales vienen de Sumba Oriental, y puedes comprarlas directamente a las tejedoras en aldeas que van de Waingapu a Melolo, Rende y Kaliuda. Compra sin prisa, pregunta mucho y ten presente que estás pagando meses de trabajo.</p>
 
 <h2>Hinggi, lau y las demás telas de Sumba</h2>
 <p>Con dos palabras te defenderás en cualquier conversación sobre textiles de Sumba.</p>
 <ul>
 <li><strong>Hinggi</strong> es la gran tela rectangular masculina. Tradicionalmente se hace en parejas: una se enrolla en la cadera y la otra se lleva sobre el hombro. Los hinggi nobles son más grandes y van teñidos de rojo e índigo; antiguamente solo los nobles podían llevarlos, sobre todo en fiestas.</li>
 <li><strong>Lau</strong> (o lawu) es la falda tubular femenina. Muchos lau no son ikat, sino tejido liso decorado con urdimbre suplementaria (<em>lau pahudu</em>), bordados, cuentas o conchas (<em>lau hada</em>). La técnica de urdimbre suplementaria, llamada <em>pahikung</em>, es un oficio distinto del ikat.</li>
-<li><strong>Tiara</strong> son telas estrechas que se usan como chal o como cinta para la cabeza.</li>
+<li>Las <strong>tiara</strong> son telas estrechas que se usan como chal o como cinta para la cabeza.</li>
 </ul>
 <p>Estas telas son mucho más que ropa. Marcan el estatus, se intercambian como contrapartida de los caballos, búfalos y oro que se entregan como dote en las bodas y se regalan en los funerales. En los funerales importantes el cuerpo se envuelve en muchas capas de tela y se entierra con ellas. El arcón de telas antiguas de una familia es además su archivo de diseños, del que las tejedoras jóvenes copian motivos. Para entender las creencias que hay detrás, lee nuestra guía de <a href="/es/culture/marapu-ikat-traditional-villages/">Marapu, ikat y aldeas tradicionales</a>.</p>
 
@@ -149,7 +149,7 @@ GUIDES = [
 <li><strong>Hilado.</strong> Las mejores telas empiezan con algodón local hilado a mano. Muchas telas baratas usan hilo industrial.</li>
 <li><strong>Urdido.</strong> Los hilos se enrollan en un bastidor cuya longitud fija la de la tela. Los hinggi suelen tejerse en dos paños idénticos que luego se cosen, y el dibujo es simétrico de extremo a extremo y de lado a lado.</li>
 <li><strong>Atado.</strong> Se atan con fuerza manojos de hilos de urdimbre con un material que resiste el tinte (tradicionalmente hoja de palmera gebang, hoy a menudo cordel de plástico) allí donde no debe entrar el color. Las tejedoras mayores llevaban el dibujo entero en la memoria; desde los años setenta muchos diseños se pasan a papel cuadriculado para que aprendan las jóvenes.</li>
-<li><strong>Teñido.</strong> La urdimbre atada entra en el baño de tinte. Después se desata, se vuelve a atar en otros puntos y se tiñe otra vez por cada color adicional. Rojo y azul superpuestos dan marrones oscuros y casi negros.</li>
+<li><strong>Teñido.</strong> La urdimbre atada entra en el baño de tinte. Después se desata, se vuelve a atar en otros puntos y se tiñe otra vez por cada color adicional. El rojo y el azul superpuestos dan marrones oscuros y casi negros.</li>
 <li><strong>Tejido.</strong> Solo al terminar el teñido se montan los hilos en el telar de cintura. El motivo aparece fila a fila, con esos bordes suaves y algo difuminados que delatan el ikat auténtico.</li>
 </ol>
 <p>En los hogares tradicionales cada fase, del urdido al atado, el teñido y el tejido, se abre con oraciones a los Marapu, y antes del teñido azul algunas familias aún ofrecen un pollo. Tejer es trabajo de mujeres: las niñas empiezan a hilar muy pequeñas y a los doce o trece años muchas ya hacen piezas pequeñas.</p>
@@ -159,7 +159,7 @@ GUIDES = [
 <ul>
 <li><strong>El azul</strong> sale de las hojas de índigo (<em>nila</em> o <em>tarum</em>). Los baños repetidos llevan el color del celeste a casi negro.</li>
 <li><strong>El rojo</strong> sale de la corteza de la raíz de morinda (<em>Morinda citrifolia</em>, llamada <em>mengkudu</em> o kombu). El hilo se golpea entre baño y baño para que el color penetre. El rojo de morinda estuvo reservado a la nobleza, una norma que hoy casi ha desaparecido.</li>
-<li><strong>Otros colores</strong>: amarillo de la madera <em>kayu kuning</em> o de cúrcuma, marrón de corteza de mangle o de barro, y nuez de la India (candlenut) para aceitar el hilo.</li>
+<li><strong>Otros colores</strong>: amarillo de la madera <em>kayu kuning</em> o de cúrcuma, marrón de corteza de mangle o de barro, y nuez de la India para aceitar el hilo.</li>
 <li><strong>El mordiente</strong> que fija el rojo es la <em>loba</em>, una planta rica en aluminio (<em>Symplocos</em>) que se recoge en bosques por encima de unos 600 m.</li>
 </ul>
 <p>El tinte natural es lento. Teñir y secar es la parte más larga del trabajo, y el hilo necesita varios días para secarse entre baños. Por eso muchas tejedoras pasaron a los tintes sintéticos, y por eso varios programas forman ahora a tejedoras de Sumba Oriental para recuperar el color natural.</p>
@@ -172,7 +172,7 @@ GUIDES = [
 <tr><td>Hinggi grande, unos 3 m x 1,2 m, tinte natural</td><td>Entre 4 y 8 meses, a veces un año o más</td></tr>
 <tr><td>Tela ceremonial o de calidad de herencia</td><td>Muchos meses, a veces años</td></tr>
 </table>
-<p>Ten estas cifras presentes cuando oigas un precio. Un hinggi grande de tinte natural son meses de trabajo especializado de varias personas de una familia.</p>
+<p>Ten estas cifras presentes cuando oigas un precio. Un hinggi grande de tinte natural supone meses de trabajo especializado de varias personas de una familia.</p>
 
 <h2>Motivos y lo que significan</h2>
 <p>Los motivos de Sumba son un bestiario. En los hinggi de Sumba Oriental verás:</p>
@@ -185,11 +185,11 @@ GUIDES = [
 <li><strong>Mamuli</strong>, el adorno de oro que se entrega como dote, símbolo de fertilidad y rango.</li>
 <li>Préstamos extranjeros como <strong>los leones del escudo holandés</strong> y dragones chinos, incorporados en la época colonial.</li>
 </ul>
-<p>Se cree que llevar un animal transmite sus cualidades a quien lo viste. Pero los significados cambian de aldea en aldea y de familia en familia, así que la mejor fuente es la propia tejedora. Pregúntale qué significan las figuras de su tela: es la pregunta más agradecida que puedes hacer en Sumba.</p>
+<p>Se cree que vestir una tela con un animal transmite sus cualidades a quien la lleva. Pero los significados cambian de aldea en aldea y de familia en familia, así que la mejor fuente es la propia tejedora. Pregúntale qué significan las figuras de su tela: es la pregunta más agradecida que puedes hacer en Sumba.</p>
 
 <h2>Estilos de Sumba Oriental y Sumba Occidental</h2>
 <p><strong>Sumba Oriental</strong> (Waingapu, Kambera, Melolo, Rende, Kaliuda) es la cuna de los famosos hinggi grandes y figurativos en índigo y morinda, el estilo en el que piensan los coleccionistas cuando dicen "ikat de Sumba". <em>Kambera</em> es a la vez el distrito que rodea Waingapu (Prailiu y Lambanapu están en él) y el nombre de un estilo regional conocido por sus gallos y leones.</p>
-<p><strong>Sumba Occidental y Suroccidental</strong> (Waikabubak, Kodi, Wewewa) también tejen, pero sus telas usan más dibujos geométricos, rayas y tonos oscuros, y buena parte se hace con hilo teñido industrialmente. Las piezas sencillas pueden ser más rápidas y baratas. Puedes ver tejer en aldeas del oeste como Prai Ijing, cerca de Waikabubak.</p>
+<p><strong>Sumba Occidental y Suroccidental</strong> (Waikabubak, Kodi, Wewewa) también tejen, pero sus telas usan más dibujos geométricos, rayas y tonos oscuros, y buena parte se hace con hilo teñido industrialmente. Las piezas sencillas se tejen más rápido y son más baratas. Puedes ver tejer en aldeas del oeste como Prai Ijing, cerca de Waikabubak.</p>
 
 <h2>Dónde comprar: aldeas tejedoras de Sumba Oriental</h2>
 <p>Las distancias se cuentan por carretera desde el centro de Waingapu; los tiempos son aproximados y dependen del tráfico y de las obras. Consulta nuestra <a href="/es/getting-here/getting-around-sumba/">guía para moverse por Sumba</a> si buscas conductor o moto.</p>
@@ -202,7 +202,7 @@ GUIDES = [
 <h3>Rende (Praiyawang), unos 70 km, alrededor de 1,5 horas</h3>
 <p>A siete kilómetros al sur de Melolo, el antiguo recinto real de Rende guarda algunas de las mayores tumbas de piedra de la isla, y aquí las mujeres tejen telas para ceremonias, no solo para turistas. La vecina Rindi es célebre por sus hinggi.</p>
 <h3>Kaliuda (unos 105 km, entre 1,5 y 2 horas)</h3>
-<p>En la costa sureste, en el distrito de Pahunga Lodu, Kaliuda es una de las zonas productoras de ikat más importantes, famosa por sus jinetes a caballo en azul y blanco. Los telares suelen montarse delante de las casas. Es para amantes de los textiles que puedan dedicarle un día.</p>
+<p>En la costa sureste, en el distrito de Pahunga Lodu, Kaliuda es una de las zonas productoras de ikat más importantes, famosa por sus jinetes a caballo en azul y blanco. Los telares suelen montarse delante de las casas. Merece la pena para los amantes de los textiles que puedan dedicarle un día entero.</p>
 <p>¿Quieres organizar el viaje en torno al tejido? Nuestros <a href="/es/things-to-do/sumba-itinerary-5-7-10-days/">itinerarios de 5, 7 y 10 días por Sumba</a> incluyen un circuito por el este.</p>
 
 <h2>Cómo distinguir un ikat tejido a mano y con tinte natural de uno industrial o químico</h2>
@@ -216,7 +216,7 @@ GUIDES = [
 </ul>
 
 <h2>Precios en 2025-2026 (rangos orientativos)</h2>
-<p>No hay precios fijos: dependen del tamaño, la antigüedad, el hilo, el tinte, la complejidad y el lugar de compra. Como referencia según informaciones recientes (unas Rp 100.000 = 5 EUR / 6 USD):</p>
+<p>No hay precios fijos: dependen del tamaño, la antigüedad, el hilo, el tinte, la complejidad y el lugar de compra. Como referencia, según informaciones recientes (100.000 rupias equivalen a unos 5 euros o 6 dólares):</p>
 <table>
 <tr><th>Tipo</th><th>Precio aproximado</th></tr>
 <tr><td>Piezas pequeñas de recuerdo, pañuelos, hilo industrial</td><td>Unas Rp 100.000-500.000 (5-27 EUR)</td></tr>
@@ -224,11 +224,11 @@ GUIDES = [
 <tr><td>Ikat grande tejido a mano</td><td>Unas Rp 1.500.000-5.000.000 o más (80-270 EUR o más)</td></tr>
 <tr><td>Hinggi grande de algodón hilado a mano y tinte natural, calidad ceremonial</td><td>Varios millones, hasta Rp 10 millones o más (150-530 EUR o más)</td></tr>
 </table>
-<p>Algunas piezas excepcionales de exposición se han ofrecido en galerías de Waingapu por unos Rp 30 millones. Los precios se multiplican cuando la tela pasa por intermediarios, otra razón para comprar en origen. Para el presupuesto completo, mira <a href="/es/getting-here/sumba-travel-costs/">cuánto cuesta un viaje a Sumba</a>.</p>
+<p>Algunas piezas excepcionales de exposición se han ofrecido en galerías de Waingapu por unos 30 millones de rupias. Los precios se multiplican cuando la tela pasa por intermediarios, otra razón para comprar en origen. Para el presupuesto completo, consulta <a href="/es/getting-here/sumba-travel-costs/">cuánto cuesta un viaje a Sumba</a>.</p>
 
 <h2>Cómo comprar de forma justa y respetuosa</h2>
 <ul>
-<li><strong>Compra a la tejedora o a una cooperativa de la aldea</strong> siempre que puedas. Así más dinero se queda con quien la hizo.</li>
+<li><strong>Compra a la tejedora o a una cooperativa de la aldea</strong> siempre que puedas. Así, una parte mayor del dinero llega a quien la ha tejido.</li>
 <li><strong>Lleva efectivo</strong> en billetes grandes y pequeños. Hay cajeros en Waingapu y Waikabubak, no en las aldeas.</li>
 <li><strong>Regatea con suavidad o no regatees.</strong> Regatear fuerte por artesanía puede ofender. Si un precio te parece alto, piensa en los meses de trabajo; si te parece muy bajo para una pieza "de tinte natural", desconfía.</li>
 <li><strong>Visitar no obliga a comprar.</strong> Puedes mirar sin comprar, pero firma el libro de visitas, deja una pequeña aportación y piensa en llevar como regalo un poco de betel (sirih pinang).</li>
@@ -242,10 +242,10 @@ GUIDES = [
 "id": {
 "title": "Tenun ikat Sumba: cara membuat, makna motif, dan tempat membeli langsung dari penenun",
 "dek": "Satu lembar hinggi bisa memakan waktu hampir setahun, dan setiap kuda, udang, dan pohon tengkorak di atasnya punya cerita. Begini cara membacanya, melihat proses tenunnya, dan membelinya secara adil.",
-"answer": "Tenun ikat Sumba adalah ikat lungsin: motif diikat dan dicelup pada benang sebelum ditenun, secara tradisional dengan nila untuk biru dan akar mengkudu untuk merah, dan satu kain besar berpewarna alam bisa memakan waktu sekitar 4 sampai 12 bulan. Tempat termudah untuk membeli langsung dari penenun adalah Kampung Raja Prailiu di pinggir Waingapu, lalu desa-desa delta Melolo (Pau, Umabara), Rende, dan Kaliuda di tenggara. Siapkan sekitar Rp250.000 untuk kain kecil berpewarna kimia dan mulai sekitar Rp1,5 juta hingga lebih dari Rp10 juta untuk hinggi besar dari benang pintal tangan dan pewarna alam (2025-2026, harga bervariasi).",
+"answer": "Tenun ikat Sumba adalah ikat lungsin: motif diikat dan dicelup pada benang sebelum ditenun, secara tradisional dengan nila untuk biru dan akar mengkudu untuk merah, dan satu kain besar berpewarna alam bisa memakan waktu sekitar 4 sampai 12 bulan. Tempat termudah untuk membeli langsung dari penenun adalah Kampung Raja Prailiu di pinggir Waingapu, lalu desa-desa delta Melolo (Pau, Umabara), Rende, dan Kaliuda di tenggara. Siapkan sekitar Rp 250.000 untuk kain kecil berpewarna kimia dan mulai sekitar Rp 1,5 juta hingga lebih dari Rp 10 juta untuk hinggi besar dari benang pintal tangan dan pewarna alam (2025-2026, harga bervariasi).",
 "body": """
 <p>Menjelang siang di Prailiu, di ujung timur Waingapu, suara paling nyaring biasanya adalah ketukan kayu pada alat tenun gedogan. Gulungan benang yang sudah diikat tergantung di bawah atap rumah menara yang tinggi, sebagian berwarna karat dari akar mengkudu, sebagian biru pekat hingga tampak hitam. Seorang perempuan duduk di lantai dengan alat tenun terikat di pinggang, bersandar ke belakang agar benang lungsin tetap tegang, dan perlahan seekor kuda berekor melengkung muncul baris demi baris. Inilah tenun ikat Sumba, salah satu tradisi tekstil terbesar di Indonesia, yang di pulau ini masih dibuat untuk upacara kematian dan pernikahan, bukan hanya untuk wisatawan.</p>
-<p>Jawaban singkatnya: kain Sumba adalah <strong>ikat lungsin</strong>, artinya motif diikat dan dicelup pada benang memanjang sebelum satu helai pun ditenun. Kain berpewarna alam terbaik berasal dari Sumba Timur, dan Anda bisa membelinya langsung dari penenun di desa-desa dari Waingapu hingga Melolo, Rende, dan Kaliuda. Belilah dengan santai, banyak bertanya, dan ingat bahwa Anda membayar kerja berbulan-bulan.</p>
+<p>Jawaban singkatnya: kain Sumba adalah <strong>ikat lungsin</strong>, artinya motif diikat dan dicelup pada benang memanjang sebelum satu helai pun ditenun. Kain berpewarna alam terbaik berasal dari Sumba Timur, dan Anda bisa membelinya langsung dari penenun di desa-desa dari Waingapu hingga Melolo, Rende, dan Kaliuda. Belilah tanpa terburu-buru, banyak bertanya, dan ingat bahwa yang Anda bayar adalah kerja berbulan-bulan.</p>
 
 <h2>Hinggi, lau, dan kain Sumba lainnya</h2>
 <p>Dua kata ini cukup untuk memulai percakapan tentang kain Sumba.</p>
@@ -261,7 +261,7 @@ GUIDES = [
 <ol>
 <li><strong>Memintal.</strong> Kain terbaik dimulai dari kapas lokal yang dipintal tangan. Banyak kain murah memakai benang pabrik.</li>
 <li><strong>Menghani.</strong> Benang digulung pada rangka yang panjangnya menentukan panjang kain. Hinggi biasanya ditenun dalam dua lembar identik lalu dijahit, dan motifnya simetris dari ujung ke ujung serta dari sisi ke sisi.</li>
-<li><strong>Mengikat.</strong> Ikatan benang lungsin diikat kencang dengan bahan tahan celup (dulu daun gebang, kini sering tali plastik) di bagian yang tidak boleh terkena warna. Penenun tua menyimpan seluruh motif di kepala; sejak tahun 1970-an banyak motif digambar di kertas berpetak agar mudah dipelajari generasi muda.</li>
+<li><strong>Mengikat.</strong> Kelompok benang lungsin diikat kencang dengan bahan tahan celup (dulu daun gebang, kini sering tali plastik) di bagian yang tidak boleh terkena warna. Penenun tua menyimpan seluruh motif di kepala; sejak tahun 1970-an banyak motif digambar di kertas berpetak agar mudah dipelajari generasi muda.</li>
 <li><strong>Mencelup.</strong> Benang yang sudah diikat dicelup. Lalu ikatan dibuka, diikat ulang di tempat lain, dan dicelup lagi untuk setiap warna tambahan. Merah dan biru yang ditumpuk menghasilkan cokelat tua hingga hampir hitam.</li>
 <li><strong>Menenun.</strong> Setelah pencelupan selesai, benang dipasang di alat tenun gedogan. Motif muncul baris demi baris, dengan tepi yang lembut dan sedikit kabur, ciri khas ikat asli.</li>
 </ol>
@@ -288,26 +288,26 @@ GUIDES = [
 <p>Ingat angka-angka ini saat mendengar harga. Hinggi besar berpewarna alam adalah kerja terampil berbulan-bulan dari beberapa anggota keluarga.</p>
 
 <h2>Motif dan maknanya</h2>
-<p>Motif Sumba adalah kumpulan satwa. Pada hinggi Sumba Timur Anda akan melihat:</p>
+<p>Motif Sumba ibarat ensiklopedia satwa. Pada hinggi Sumba Timur Anda akan melihat:</p>
 <ul>
 <li><strong>Kuda</strong> (<em>njara</em>): kekayaan, gengsi, dan identitas pulau. Kuda juga bagian dari belis.</li>
 <li><strong>Ayam jantan</strong> (<em>manu</em>): berkaitan dengan kurban adat dan muncul pada kain raja.</li>
 <li><strong>Udang dan lobster</strong> (<em>kurangu</em>): kelahiran kembali, karena udang berganti kulit, dan juga kekuasaan seorang raja.</li>
-<li><strong>Rusa</strong> bertanduk lebar, <strong>buaya</strong>, <strong>ular</strong>, <strong>penyu</strong>, <strong>kakatua</strong>, dan <strong>cicak terbang</strong>.</li>
+<li><strong>Rusa</strong> bertanduk lebar, <strong>buaya</strong>, <strong>ular</strong>, <strong>penyu</strong>, <strong>kakatua</strong>, dan <strong>cicak</strong>.</li>
 <li><strong>Pohon tengkorak</strong> (<em>andung</em>), kenangan masa perburuan kepala, dan sosok manusia yang sering melambangkan leluhur.</li>
 <li><strong>Mamuli</strong>, perhiasan emas yang diberikan sebagai belis, lambang kesuburan dan derajat.</li>
 <li>Pengaruh asing seperti <strong>singa dari lambang Belanda</strong> dan naga Tiongkok, yang masuk pada masa kolonial.</li>
 </ul>
-<p>Memakai motif satwa dipercaya memberi sifat satwa itu kepada pemakainya. Tetapi makna berbeda dari kampung ke kampung dan dari keluarga ke keluarga, jadi sumber terbaik adalah penenunnya sendiri. Tanyakan arti gambar pada kainnya; itu pertanyaan paling berharga yang bisa Anda ajukan di Sumba.</p>
+<p>Memakai motif satwa dipercaya memberi sifat satwa itu kepada pemakainya. Namun, maknanya berbeda dari kampung ke kampung dan dari keluarga ke keluarga, jadi sumber terbaik adalah penenunnya sendiri. Tanyakan arti gambar pada kainnya; itu pertanyaan paling berharga yang bisa Anda ajukan di Sumba.</p>
 
 <h2>Gaya Sumba Timur dan Sumba Barat</h2>
-<p><strong>Sumba Timur</strong> (Waingapu, Kambera, Melolo, Rende, Kaliuda) adalah rumah hinggi besar bermotif figuratif dalam warna nila dan mengkudu, gaya yang dimaksud kolektor saat menyebut "ikat Sumba". <em>Kambera</em> adalah kecamatan yang mengelilingi Waingapu (Prailiu dan Lambanapu ada di sini) sekaligus nama gaya daerah yang dikenal dengan motif ayam jantan dan singa.</p>
+<p><strong>Sumba Timur</strong> (Waingapu, Kambera, Melolo, Rende, Kaliuda) adalah asal hinggi besar bermotif figuratif dalam warna nila dan mengkudu, gaya yang dimaksud kolektor saat menyebut "ikat Sumba". <em>Kambera</em> adalah kecamatan yang mengelilingi Waingapu (Prailiu dan Lambanapu ada di sini) sekaligus nama gaya daerah yang dikenal dengan motif ayam jantan dan singa.</p>
 <p><strong>Sumba Barat dan Sumba Barat Daya</strong> (Waikabubak, Kodi, Wewewa) juga menenun, tetapi kainnya lebih sering bermotif geometris, bergaris, dan berwarna gelap, dan sebagian besar memakai benang yang dicelup pabrik. Kain sederhana bisa lebih cepat dibuat dan lebih murah. Anda bisa melihat penenun di kampung seperti Prai Ijing dekat Waikabubak.</p>
 
 <h2>Tempat membeli: kampung tenun di Sumba Timur</h2>
 <p>Jarak dihitung lewat jalan dari pusat Waingapu; waktu tempuh perkiraan dan tergantung lalu lintas serta perbaikan jalan. Lihat <a href="/id/getting-here/getting-around-sumba/">panduan transportasi di Sumba</a> untuk sopir dan sewa motor.</p>
 <h3>Kampung Raja Prailiu (2 km, sekitar 10 menit)</h3>
-<p>Kampung raja Prailiu ada di ujung timur kota, kira-kira di tengah antara bandara dan pusat kota, di Jalan R. Suprapto. Sebagian besar warganya menenun, Anda bisa melihat setiap tahap dari mengikat hingga menenun, dan cara menjualnya tidak memaksa. Biasanya Anda duduk, mengobrol, mengisi buku tamu, dan memberi sumbangan. Tempat termudah untuk kunjungan pertama.</p>
+<p>Kampung raja Prailiu ada di ujung timur kota, kira-kira di tengah antara bandara dan pusat kota, di Jalan R. Suprapto. Sebagian besar warganya menenun, Anda bisa melihat setiap tahap dari mengikat hingga menenun, dan penjualnya tidak memaksa. Biasanya Anda duduk, mengobrol, mengisi buku tamu, dan memberi sumbangan. Inilah tempat termudah untuk kunjungan pertama.</p>
 <h3>Lambanapu (sekitar 6 km, 15 menit)</h3>
 <p>Lambanapu, di selatan kota dalam Kecamatan Kambera, dikenal dengan tenun pewarna alam. Kampung ini kurang siap menerima tamu dibanding Prailiu, jadi sebaiknya datang bersama pemandu atau sopir lokal yang mengenal keluarga penenun.</p>
 <h3>Pau dan Umabara, delta Melolo (sekitar 60-65 km, kira-kira 1-1,5 jam)</h3>
@@ -325,26 +325,26 @@ GUIDES = [
 <li><strong>Warna.</strong> Nila dan mengkudu alami memberi warna lebih lembut dan bersahaja: karat, bata, biru tua, cokelat kehitaman. Merah muda menyala, ungu terang, dan warna yang sangat rata dan pekat biasanya pewarna sintetis.</li>
 <li><strong>Berat dan aroma.</strong> Penenun Sumba Timur mengatakan kain pewarna alam lebih berat daripada kain pewarna sintetis dari benang yang sama, dan beraroma tumbuhan samar yang makin kuat bila disimpan.</li>
 <li><strong>Benang.</strong> Kapas pintal tangan lebih tebal dan sedikit tidak rata; benang pabrik tipis dan seragam. Pewarna alam sulit meresap ke benang pabrik, jadi keduanya biasanya berpasangan.</li>
-<li><strong>Bertanya.</strong> Siapa pembuatnya, berapa lama, tanaman apa yang dipakai, dan apakah kapasnya dipintal tangan. Penenun akan menjawab dengan rinci; pedagang perantara sering tidak tahu.</li>
+<li><strong>Tanyakan.</strong> Siapa pembuatnya, berapa lama, tanaman apa yang dipakai, dan apakah kapasnya dipintal tangan. Penenun akan menjawab dengan rinci; pedagang perantara sering tidak tahu.</li>
 </ul>
 
 <h2>Harga 2025-2026 (kisaran kasar)</h2>
-<p>Tidak ada harga pasti; semuanya tergantung ukuran, usia, benang, pewarna, kerumitan, dan tempat membeli. Sebagai gambaran dari laporan terbaru (sekitar Rp100.000 = 5 EUR / 6 USD):</p>
+<p>Tidak ada harga pasti; semuanya tergantung ukuran, usia, benang, pewarna, kerumitan, dan tempat membeli. Sebagai gambaran dari laporan terbaru (Rp 100.000 setara sekitar 5 euro atau 6 dollar AS):</p>
 <table>
 <tr><th>Jenis</th><th>Kisaran harga</th></tr>
-<tr><td>Suvenir kecil, syal, benang pabrik</td><td>Sekitar Rp100.000-500.000</td></tr>
-<tr><td>Kain sedang, sarung sederhana</td><td>Sekitar Rp500.000-1.500.000</td></tr>
-<tr><td>Ikat tenun tangan ukuran besar</td><td>Sekitar Rp1.500.000-5.000.000 atau lebih</td></tr>
-<tr><td>Hinggi besar benang pintal tangan, pewarna alam, kualitas upacara</td><td>Beberapa juta hingga Rp10 juta atau lebih</td></tr>
+<tr><td>Suvenir kecil, syal, benang pabrik</td><td>Sekitar Rp 100.000-500.000</td></tr>
+<tr><td>Kain sedang, sarung sederhana</td><td>Sekitar Rp 500.000-1.500.000</td></tr>
+<tr><td>Ikat tenun tangan ukuran besar</td><td>Sekitar Rp 1.500.000-5.000.000 atau lebih</td></tr>
+<tr><td>Hinggi besar benang pintal tangan, pewarna alam, kualitas upacara</td><td>Beberapa juta hingga Rp 10 juta atau lebih</td></tr>
 </table>
-<p>Beberapa kain pajangan istimewa di galeri Waingapu pernah ditawarkan sekitar Rp30 juta. Harga bisa berlipat saat kain melewati beberapa perantara, satu alasan lagi untuk membeli di sumbernya. Untuk anggaran lengkap, lihat <a href="/id/getting-here/sumba-travel-costs/">biaya perjalanan ke Sumba</a>.</p>
+<p>Beberapa kain pajangan istimewa di galeri Waingapu pernah ditawarkan sekitar Rp 30 juta. Harga bisa berlipat saat kain melewati beberapa perantara, satu alasan lagi untuk membeli di sumbernya. Untuk anggaran lengkap, lihat <a href="/id/getting-here/sumba-travel-costs/">biaya perjalanan ke Sumba</a>.</p>
 
 <h2>Cara membeli dengan adil dan hormat</h2>
 <ul>
-<li><strong>Belilah dari penenun atau koperasi kampung</strong> bila memungkinkan. Lebih banyak uang sampai ke pembuatnya.</li>
+<li><strong>Belilah dari penenun atau koperasi kampung</strong> bila memungkinkan. Dengan begitu, lebih banyak uang sampai ke tangan pembuatnya.</li>
 <li><strong>Bawa uang tunai</strong> pecahan besar dan kecil. ATM ada di Waingapu dan Waikabubak, tidak di kampung.</li>
 <li><strong>Menawar secukupnya atau tidak sama sekali.</strong> Menawar terlalu keras untuk kerajinan bisa menyinggung. Jika harga terasa tinggi, ingat kerja berbulan-bulan; jika sangat murah untuk kain "pewarna alam", berhati-hatilah.</li>
-<li><strong>Berkunjung tidak wajib membeli.</strong> Anda boleh melihat tanpa membeli, tetapi isilah buku tamu, beri sumbangan kecil, dan pertimbangkan membawa sirih pinang sebagai buah tangan.</li>
+<li><strong>Berkunjung tidak berarti wajib membeli.</strong> Anda boleh melihat tanpa membeli, tetapi isilah buku tamu, beri sumbangan kecil, dan pertimbangkan membawa sirih pinang sebagai buah tangan.</li>
 <li><strong>Minta izin sebelum memotret</strong> penenun atau menyentuh kain, dan jangan pernah menyentuh kubur atau benda ritual. Kampung adalah rumah, bukan museum.</li>
 <li><strong>Lokakarya</strong> mencoba mengikat atau menenun biasanya perlu diatur lebih dulu melalui pemandu.</li>
 <li><strong>Kain lama:</strong> kain pusaka bisa memiliki nilai ritual bagi keluarga. Jangan mendesak siapa pun untuk menjualnya.</li>
@@ -367,7 +367,7 @@ GUIDES = [
  ["Tintes naturales", "Índigo (azul), raíz de morinda (rojo), mordiente de hojas de loba"],
  ["Tiempo de trabajo", "De 1 semana (sencilla) a 4-12 meses (hinggi grande de tinte natural)"],
  ["Mejores aldeas", "Prailiu y Lambanapu (Waingapu), Pau, Umabara, Rende, Kaliuda"],
- ["Precios orientativos 2025-2026", "Rp 100.000-500.000 piezas pequeñas; Rp 1,5-10 millones o más las grandes de tinte natural"],
+ ["Precios orientativos 2025-2026", "Rp 100.000-500.000 las piezas pequeñas; Rp 1,5-10 millones o más las grandes de tinte natural"],
 ],
 "id": [
  ["Teknik", "Ikat lungsin (motif diikat dan dicelup pada benang sebelum ditenun)"],
@@ -375,7 +375,7 @@ GUIDES = [
  ["Pewarna alam", "Nila (biru), akar mengkudu (merah), mordan dari daun loba"],
  ["Lama pembuatan", "Sekitar 1 minggu (sederhana) hingga 4-12 bulan (hinggi besar pewarna alam)"],
  ["Kampung utama", "Prailiu dan Lambanapu (Waingapu), Pau, Umabara, Rende, Kaliuda"],
- ["Kisaran harga 2025-2026", "Rp100.000-500.000 kain kecil; Rp1,5-10 juta lebih untuk kain besar pewarna alam"],
+ ["Kisaran harga 2025-2026", "Rp 100.000-500.000 kain kecil; Rp 1,5-10 juta atau lebih untuk kain besar pewarna alam"],
 ],
 },
 
@@ -390,8 +390,8 @@ GUIDES = [
 ],
 "es": [
  ["¿Qué diferencia hay entre hinggi y lau?", "El hinggi es la gran tela rectangular masculina, que suele hacerse en parejas (una para la cadera y otra para el hombro). El lau es la falda tubular femenina, decorada a menudo con urdimbre suplementaria, cuentas o conchas más que con ikat."],
- ["¿Dónde se compra mejor el ikat en Sumba?", "Directamente a las tejedoras de Sumba Oriental: Kampung Raja Prailiu, en Waingapu, es lo más fácil, y Pau y Umabara cerca de Melolo, Rende y Kaliuda tienen trabajo de tinte natural más serio a 1-2 horas en coche."],
- ["¿Cuánto cuesta un ikat de Sumba?", "Aproximadamente Rp 100.000-500.000 por piezas pequeñas y desde Rp 1,5 millones hasta más de Rp 10 millones por un hinggi grande de algodón hilado a mano y tinte natural (2025-2026). Depende del tamaño, el tinte y la complejidad."],
+ ["¿Dónde se compra mejor el ikat en Sumba?", "Directamente a las tejedoras de Sumba Oriental: Kampung Raja Prailiu, en Waingapu, es la opción más sencilla, y Pau y Umabara cerca de Melolo, Rende y Kaliuda tienen trabajo de tinte natural más serio a 1-2 horas en coche."],
+ ["¿Cuánto cuesta un ikat de Sumba?", "Entre 100.000 y 500.000 rupias, aproximadamente, por una pieza pequeña, y desde 1,5 millones hasta más de 10 millones de rupias por un hinggi grande de algodón hilado a mano y tinte natural (2025-2026). Depende del tamaño, el tinte y la complejidad."],
  ["¿Cómo sé si un ikat de Sumba tiene tinte natural?", "El índigo y la morinda naturales dan tonos suaves y terrosos (óxido, ladrillo, azul marino), la tela pesa más y huele levemente a planta, y suele estar tejida con algodón grueso hilado a mano. Colores muy vivos y uniformes apuntan a tinte sintético. Pregunta siempre a la tejedora."],
  ["¿Cuánto se tarda en tejer un ikat de Sumba?", "Una tela sencilla con hilo industrial, de una semana a un mes; un hinggi grande de tinte natural de unos 3 m x 1,2 m, normalmente de 4 a 8 meses y a veces un año o más."],
  ["¿Puedo visitar las aldeas tejedoras sin comprar?", "Sí. Firma el libro de visitas, deja una pequeña aportación, pide permiso antes de hacer fotos y no toques tumbas ni objetos rituales. Comprar se agradece, pero nunca es obligatorio."],
@@ -399,7 +399,7 @@ GUIDES = [
 "id": [
  ["Apa beda hinggi dan lau?", "Hinggi adalah kain persegi panjang besar untuk laki-laki, biasanya sepasang (satu untuk pinggang, satu untuk bahu). Lau adalah sarung tabung perempuan, sering dihias lungsin tambahan, manik-manik, atau kerang, bukan ikat."],
  ["Di mana tempat terbaik membeli tenun ikat di Sumba?", "Langsung dari penenun di Sumba Timur: Kampung Raja Prailiu di Waingapu paling mudah, sedangkan Pau dan Umabara dekat Melolo, Rende, dan Kaliuda menawarkan karya pewarna alam yang lebih serius, sekitar 1-2 jam berkendara."],
- ["Berapa harga kain ikat Sumba?", "Sekitar Rp100.000-500.000 untuk kain kecil dan mulai sekitar Rp1,5 juta hingga lebih dari Rp10 juta untuk hinggi besar dari benang pintal tangan dan pewarna alam (2025-2026). Harga tergantung ukuran, pewarna, dan kerumitan."],
+ ["Berapa harga kain ikat Sumba?", "Sekitar Rp 100.000-500.000 untuk kain kecil dan mulai sekitar Rp 1,5 juta hingga lebih dari Rp 10 juta untuk hinggi besar dari benang pintal tangan dan pewarna alam (2025-2026). Harga tergantung ukuran, pewarna, dan kerumitan."],
  ["Bagaimana tahu kain ikat Sumba berpewarna alam?", "Nila dan mengkudu alami memberi warna lembut seperti karat, bata, dan biru tua, kainnya lebih berat dan beraroma tumbuhan samar, dan biasanya ditenun dari kapas pintal tangan yang tebal. Warna sangat terang dan rata menandakan pewarna sintetis. Selalu tanyakan kepada penenunnya."],
  ["Berapa lama menenun satu kain ikat Sumba?", "Kain sederhana dengan benang pabrik sekitar seminggu hingga sebulan; hinggi besar pewarna alam berukuran sekitar 3 m x 1,2 m biasanya 4-8 bulan, kadang setahun atau lebih."],
  ["Bolehkah berkunjung ke kampung tenun tanpa membeli?", "Boleh. Isi buku tamu, beri sumbangan kecil, minta izin sebelum memotret, dan jangan menyentuh kubur atau benda ritual. Membeli sangat dihargai, tetapi tidak wajib."],
@@ -530,9 +530,9 @@ GUIDES = [
 "es": {
 "title": "Qué comer en Sumba: platos locales, mercados y café",
 "dek": "Maíz y arroz, katemak dulce, pescado a la brasa junto al puerto, betel en cada porche y un robusta premiado: guía práctica para comer bien y con buenos modales en Sumba.",
-"answer": "La comida cotidiana de Sumba es sencilla y contundente: arroz a menudo mezclado con maíz, mandioca y otros tubérculos, verduras como hojas de mandioca y de papaya, pescado a la brasa en la costa y mucho sambal, mientras que el cerdo y el búfalo son sobre todo carne de fiesta en bodas y funerales. Prueba el jagung katemak (guiso de maíz), los dulces kaparrak y manggulu, el café robusta del suroeste de Sumba y los mercados matinales de Waingapu y Waikabubak. Acepta el sirih pinang (betel) cuando te lo ofrezcan, o toma educadamente el café en su lugar.",
+"answer": "La comida cotidiana de Sumba es sencilla y contundente: arroz a menudo mezclado con maíz, mandioca y otros tubérculos, verduras como hojas de mandioca y de papaya, pescado a la brasa en la costa y mucho sambal, mientras que el cerdo y el búfalo son sobre todo carne de fiesta en bodas y funerales. Prueba el jagung katemak (guiso de maíz), los dulces kaparrak y manggulu, el café robusta del suroeste de Sumba y los mercados matinales de Waingapu y Waikabubak. Acepta el sirih pinang (betel) cuando te lo ofrezcan, o, si lo prefieres, acepta con educación un café en su lugar.",
 "body": """
-<p>A primera hora, el mercado de Waingapu huele a humo de leña, pescado seco y hojas verdes mojadas. Las mujeres se sientan tras pequeñas pirámides de guindillas, chalotas y limas; montones de hoja de betel y nuez de areca descansan junto a bolsitas de cal blanca; alguien vende manojos de hojas de mandioca y boniatos recién arrancados. En las aldeas, al invitado se le ofrece primero una caja de sirih pinang y un vaso de café tan dulce que la cuchara casi se queda de pie. Sumba no es un destino gastronómico, y no hay que esperar la escena de cafés de Bali, pero su comida cuenta mucho de cómo se vive en una isla seca y orgullosa.</p>
+<p>A primera hora, el mercado de Waingapu huele a humo de leña, pescado seco y hojas verdes mojadas. Las mujeres se sientan tras pequeñas pirámides de guindillas, chalotas y limas; montones de hoja de betel y nuez de areca descansan junto a bolsitas de cal blanca; alguien vende manojos de hojas de mandioca y boniatos recién arrancados. En las aldeas, al invitado se le ofrece primero una caja de sirih pinang y un vaso de café tan dulce que la cuchara casi se queda de pie. Sumba no es un destino gastronómico, y no conviene esperar el ambiente de cafeterías de Bali, pero su comida cuenta mucho de cómo se vive en una isla seca y orgullosa.</p>
 <p>La respuesta corta: comerás arroz (a menudo con maíz), tubérculos, verduras de hoja, pescado y pollo a la brasa con un sambal que pica de verdad en warungs sencillos, y beberás café local fuerte y dulce. El cerdo y el búfalo aparecen sobre todo en las ceremonias. Aprende el protocolo del betel y te recibirán bien en todas partes.</p>
 
 <h2>Los básicos: maíz, arroz, mandioca y tubérculos</h2>
@@ -552,30 +552,30 @@ GUIDES = [
 <p>Dulce tradicional de Sumba Oriental hecho con plátano seco prensado con cacahuetes y envuelto en hoja de plátano seca, masticable como el dodol. El manggulu y el kaparrak se han vuelto raros: búscalos en mercados, festivales gastronómicos y tiendas de recuerdos comestibles de Sumba.</p>
 <h3>Pescado y pollo a la brasa con sambal</h3>
 <p>En la costa, el <em>ikan bakar</em> (pescado a la brasa) es la comida local más fácil de encontrar, sobre todo junto al puerto viejo de Waingapu. El pollo a la brasa o frito (<em>ayam bakar</em>, <em>ayam goreng</em>) está en todas partes. Ambos llevan arroz, verdura y sambal, una pasta de guindilla fresca a veces con tomate, lima o chalota. Los warungs locales pican más que los sitios para turistas; di <em>tidak pedas</em> (sin picante) o <em>sedikit pedas</em> (poco picante).</p>
-<h3>Pollos del suroeste de Sumba</h3>
+<h3>El pollo de Sumba Suroccidental</h3>
 <p>En Sumba Suroccidental busca el <em>ayam rebus</em>, pollo hervido, al estilo de Kodi con leche de coco o al de Wewewa en caldo especiado, y las gachas de arroz con hojas de boniato machacadas.</p>
 <h3>Comida indonesia de diario</h3>
 <p>En las ciudades está también el repertorio indonesio de siempre: <em>nasi goreng</em>, <em>mie goreng</em>, <em>cap cay</em> (verduras salteadas), restaurantes Padang con su vitrina de platos ya cocinados y warungs javaneses y sundaneses. La cabra también merece la pena.</p>
 
 <h2>Cerdo, búfalo y comida de fiesta</h2>
-<p>En Sumba la carne es ante todo cosa de ceremonia e intercambio. El búfalo de agua aporta la carne de los banquetes rituales y mide la riqueza; en los funerales nobles pueden sacrificarse muchos animales, aunque hoy las normas del gobierno limitan el número. Cerdos y pollos se ofrecen en los rituales de siembra y se llevan como regalo a los actos familiares, y caballos, búfalos y cerdos circulan entre familias como dote y contrarregalo junto a las telas ikat (mira nuestra <a href="/es/culture/sumba-ikat-weaving-where-to-buy/">guía del ikat de Sumba</a>).</p>
+<p>En Sumba la carne es ante todo cosa de ceremonia e intercambio. El búfalo de agua aporta la carne de los banquetes rituales y mide la riqueza; en los funerales nobles pueden sacrificarse muchos animales, aunque hoy las normas del gobierno limitan el número. Cerdos y pollos se ofrecen en los rituales de siembra y se llevan como regalo a los actos familiares, y caballos, búfalos y cerdos circulan entre familias como dote y contrarregalo junto a las telas ikat (consulta nuestra <a href="/es/culture/sumba-ikat-weaving-where-to-buy/">guía del ikat de Sumba</a>).</p>
 <p>Si te invitan a una boda o a un funeral, puede que te ofrezcan carne de los animales sacrificados ese día, normalmente con arroz blanco. Que te den de comer es un honor. Come lo que puedas sin forzarte y, si no comes carne, díselo discretamente a tu anfitrión o guía en lugar de rechazarla delante de todos. El sacrificio en los funerales es público y puede impresionar; es parte del rito, no un espectáculo, así que guarda la cámara salvo que te inviten a usarla.</p>
 
 <h2>Sirih pinang: la cultura del betel y su protocolo</h2>
 <p>En Sumba verás sonrisas teñidas de rojo y escupitajos rojos por todas partes. El <strong>sirih pinang</strong> consiste en mascar hoja o amento de betel (<em>sirih</em>) con nuez de areca (<em>pinang</em>) y cal apagada (<em>kapur</em>). En Sumba Oriental el ofrecimiento de betel al invitado se llama <em>pahappa</em>, y la caja tejida o tallada que lo contiene es la <em>mbola happa</em>. Ofrecer sirih pinang es el gesto básico de respeto a quien llega; también se comparte en bodas, funerales y ante las tumbas de los antepasados para pedir su bendición.</p>
 <ul>
-<li><strong>Lleva un poco.</strong> Una bolsita de sirih pinang comprada en el mercado es el regalo clásico al visitar una aldea, junto con tu donativo. Pregunta a tu guía cuánto comprar.</li>
+<li><strong>Lleva sirih pinang.</strong> Una bolsita de sirih pinang comprada en el mercado es el regalo clásico al visitar una aldea, junto con tu donativo. Pregunta a tu guía cuánto comprar.</li>
 <li><strong>Cuando te lo ofrezcan, acéptalo con la mano derecha.</strong> No tienes que mascarlo. Coger un trozo, o simplemente tocar la caja, reconoce la bienvenida. A quien no toma betel se le ofrece café, y eso es perfectamente aceptable.</li>
-<li><strong>Si lo pruebas</strong>, masca poco, no te tragues el jugo y escupe con discreción. La cal es cáustica y la areca es estimulante; no es un hábito para adoptar.</li>
+<li><strong>Si lo pruebas</strong>, masca poco, no te tragues el jugo y escupe con discreción. La cal es cáustica y la areca es estimulante; no es un hábito recomendable.</li>
 </ul>
 
 <h2>El café de Sumba</h2>
 <p>En casi todas las casas de Sumba se toma café. La isla cultiva sobre todo <strong>robusta</strong>, en especial en las tierras altas y frescas de Wewewa, en Sumba Suroccidental, donde hay cafetos en casi todos los patios, en huertos mixtos. En 2017 un robusta fermentado de la aldea de Kadi Roma, en Wewewa Central, fue elegido el robusta más sabroso de Indonesia en el Festival Kopi Nusantara, con notas de chocolate según los catadores.</p>
-<p>Tradicionalmente las familias tuestan el grano en casa con rodajas de jengibre y sirven el café con mucho azúcar, así que el <em>kopi jahe</em> (café con jengibre) es un clásico local. Si lo quieres sin azúcar, pide <em>kopi pahit</em> o <em>tanpa gula</em>. Los paquetes pequeños de café molido local son un buen regalo para llevar. En las ciudades grandes ya hay cafeterías con espresso, normalmente por menos de unas Rp 40.000 (unos 2 EUR) la taza en 2026.</p>
+<p>Tradicionalmente las familias tuestan el grano en casa con rodajas de jengibre y sirven el café con mucho azúcar, así que el <em>kopi jahe</em> (café con jengibre) es un clásico local. Si lo quieres sin azúcar, pide <em>kopi pahit</em> o <em>tanpa gula</em>. Los paquetes pequeños de café molido local son un buen regalo para llevar. En las ciudades grandes ya hay cafeterías con espresso, normalmente por menos de 40.000 rupias (unos 2 euros) la taza en 2026.</p>
 
 <h2>Mercados de Waingapu y Waikabubak</h2>
-<p><strong>Waingapu: Pasar Inpres</strong>, en la zona de Matawai, es el principal mercado matinal: verduras, hierbas, guindillas, especias, pescado, betel y a veces telas tejidas u objetos ceremoniales. Ve a primera hora de la mañana para verlo en plena actividad. Es el sitio para comprar sirih pinang antes de salir hacia las aldeas. Por la tarde-noche es fácil encontrar pescado a la brasa cerca del puerto viejo.</p>
-<p><strong>Waikabubak: Pasar Waikabubak</strong> (a menudo llamado Pasar Baru), cerca del centro, es un mercado de trabajo, nada pensado para turistas: productos de la huerta, pescado seco, pollos vivos, betel, menaje y a veces tela local. Está a pocos minutos de la aldea tradicional de Kampung Tarung.</p>
+<p><strong>Waingapu: Pasar Inpres</strong>, en la zona de Matawai, es el principal mercado matinal: verduras, hierbas, guindillas, especias, pescado, betel y a veces telas tejidas u objetos ceremoniales. Ve a primera hora de la mañana para verlo en plena actividad. Es el sitio para comprar sirih pinang antes de salir hacia las aldeas. Al caer la tarde es fácil encontrar pescado a la brasa cerca del puerto viejo.</p>
+<p><strong>Waikabubak: Pasar Waikabubak</strong> (a menudo llamado Pasar Baru), cerca del centro, es un mercado de diario, nada pensado para turistas: productos de la huerta, pescado seco, pollos vivos, betel, menaje y a veces tela local. Está a pocos minutos de la aldea tradicional de Kampung Tarung.</p>
 <p>Protocolo en el mercado: pide permiso antes de fotografiar a los vendedores, lleva billetes pequeños y da por hecho que los precios de la comida suelen ser justos y fijos. Se regatea más por telas que por comida.</p>
 
 <h2>Comida y religión: musulmanes y cristianos</h2>
@@ -588,19 +588,19 @@ GUIDES = [
 </ul>
 
 <h2>Consejos para vegetarianos</h2>
-<p>Con un poco de planificación se come bien siendo vegetariano en Sumba. Frases útiles: <em>saya vegetarian</em>, <em>tanpa daging</em> (sin carne), <em>tanpa ikan</em> (sin pescado). Platos seguros: <em>cap cay</em>, <em>sayur daun ubi</em>, flor de papaya, <em>tempe</em> y <em>tahu</em> (tofu), <em>gado-gado</em> o <em>pecel</em>, platos de huevo y arroz frito sin carne. Ojo: el sambal y algunas sopas llevan pasta de gamba (<em>terasi</em>) o caldo de pescado; pregunta <em>pakai terasi?</em>. El katemak dulce de Sumba Oriental suele ser vegetariano. En el campo hay muy poca oferta y muchos warungs cierran hacia las 19:00, así que lleva tentempiés y comida para los trayectos largos.</p>
+<p>Con un poco de planificación, un vegetariano puede comer bien en Sumba. Frases útiles: <em>saya vegetarian</em>, <em>tanpa daging</em> (sin carne), <em>tanpa ikan</em> (sin pescado). Platos seguros: <em>cap cay</em>, <em>sayur daun ubi</em>, flor de papaya, <em>tempe</em> y <em>tahu</em> (tofu), <em>gado-gado</em> o <em>pecel</em>, platos de huevo y arroz frito sin carne. Ojo: el sambal y algunas sopas llevan pasta de gamba (<em>terasi</em>) o caldo de pescado; pregunta <em>pakai terasi?</em>. El katemak dulce de Sumba Oriental suele ser vegetariano. En el campo hay muy poca oferta y muchos warungs cierran hacia las 19:00, así que lleva tentempiés y comida para los trayectos largos.</p>
 
 <h2>Higiene alimentaria y salud</h2>
 <ul>
 <li><strong>No bebas agua del grifo.</strong> Usa agua embotellada o filtrada y lleva una botella reutilizable para reducir plástico.</li>
 <li><strong>Elige sitios con movimiento</strong>, donde la comida se cocine al momento y bien caliente. El pescado y el pollo recién salidos de las brasas suelen ser seguros; lo que lleva horas al sol, no tanto.</li>
-<li><strong>El hielo</strong> en las ciudades suele hacerse con agua tratada; en lugares remotos, si dudas, pasa.</li>
+<li><strong>El hielo</strong> en las ciudades suele hacerse con agua tratada; en lugares remotos, si tienes dudas, evítalo.</li>
 <li><strong>Pela tú la fruta</strong> y ten cuidado con las ensaladas crudas.</li>
 <li><strong>Lleva sales de rehidratación</strong> y medicación básica para el estómago. Para clínicas, farmacias y seguro de viaje, mira nuestra <a href="/es/getting-here/sumba-travel-safety-health/">guía de seguridad y salud en Sumba</a>.</li>
 </ul>
 
 <h2>¿Cuánto cuesta comer en Sumba?</h2>
-<p>Comer es barato para el bolsillo extranjero (unas Rp 100.000 = 5 EUR / 6 USD). Como referencia para 2025-2026, un plato sencillo de warung con arroz, verdura y pollo o pescado cuesta unas Rp 20.000-50.000; un pescado mediano a la brasa, unas Rp 50.000 a precio de mercado; una comida en un restaurante orientado al turismo, unas Rp 50.000-100.000 por persona; y una bolsita de sirih pinang para una visita a una aldea, unas decenas de miles de rupias. Los precios varían según la ciudad y la temporada. Consulta <a href="/es/getting-here/sumba-travel-costs/">cuánto cuesta viajar a Sumba</a> para un presupuesto diario completo y nuestros <a href="/es/things-to-do/sumba-itinerary-5-7-10-days/">itinerarios</a> para planificar las paradas para comer en los trayectos largos.</p>
+<p>Comer es barato para el bolsillo extranjero (100.000 rupias equivalen a unos 5 euros o 6 dólares). Como referencia para 2025-2026, un plato sencillo de warung con arroz, verdura y pollo o pescado cuesta entre 20.000 y 50.000 rupias; un pescado mediano a la brasa, unas 50.000 rupias a precio de mercado; una comida en un restaurante orientado al turismo, entre 50.000 y 100.000 rupias por persona; y una bolsita de sirih pinang para una visita a una aldea, unas decenas de miles de rupias. Los precios varían según la ciudad y la temporada. Consulta <a href="/es/getting-here/sumba-travel-costs/">cuánto cuesta viajar a Sumba</a> para un presupuesto diario completo y nuestros <a href="/es/things-to-do/sumba-itinerary-5-7-10-days/">itinerarios</a> para planificar las paradas para comer en los trayectos largos.</p>
 """
 },
 
@@ -610,7 +610,7 @@ GUIDES = [
 "answer": "Makanan sehari-hari di Sumba sederhana dan mengenyangkan: nasi yang sering dicampur jagung, ubi kayu dan umbi lain, sayur seperti daun ubi dan daun pepaya, ikan bakar di pesisir, dan banyak sambal, sedangkan babi dan kerbau terutama disajikan saat pesta pernikahan dan kematian. Cobalah jagung katemak, kaparrak dan manggulu, kopi robusta dari Sumba Barat Daya, serta pasar pagi di Waingapu dan Waikabubak. Terimalah sirih pinang saat disuguhkan, atau dengan sopan pilih kopi sebagai gantinya.",
 "body": """
 <p>Pagi-pagi, pasar di Waingapu beraroma asap kayu, ikan asin, dan daun hijau yang basah. Para mama duduk di balik tumpukan kecil cabai, bawang merah, dan jeruk nipis; tumpukan sirih dan pinang berjejer di samping kantong kapur putih; seseorang menjual ikatan daun ubi dan ubi jalar yang baru dicabut. Di kampung, tamu pertama-tama disuguhi tempat sirih pinang dan segelas kopi yang begitu manis hingga sendok nyaris berdiri. Sumba bukan tujuan wisata kuliner mewah, dan jangan berharap suasana kafe seperti di Bali, tetapi makanannya bercerita banyak tentang kehidupan di pulau yang kering dan penuh harga diri ini.</p>
-<p>Jawaban singkatnya: Anda akan makan nasi (sering dicampur jagung), umbi-umbian, sayur daun, ikan dan ayam bakar dengan sambal yang benar-benar pedas di warung sederhana, dan minum kopi lokal yang kental dan manis. Babi dan kerbau muncul terutama saat upacara adat. Pahami tata krama sirih pinang dan Anda akan disambut di mana saja.</p>
+<p>Jawaban singkatnya: Anda akan makan nasi (sering dicampur jagung), umbi-umbian, sayur daun, ikan dan ayam bakar dengan sambal yang benar-benar pedas di warung sederhana, dan minum kopi lokal yang kental dan manis. Babi dan kerbau muncul terutama saat upacara adat. Pahami tata krama sirih pinang, dan Anda akan disambut hangat di mana pun.</p>
 
 <h2>Makanan pokok: jagung, nasi, ubi kayu, dan umbi-umbian</h2>
 <p>Sumba adalah salah satu pulau terkering di Indonesia, dan dapurnya bertumpu pada tanaman yang tahan kemarau.</p>
@@ -636,19 +636,19 @@ GUIDES = [
 
 <h2>Babi, kerbau, dan hidangan pesta adat</h2>
 <p>Di Sumba, daging pertama-tama adalah urusan upacara dan pertukaran adat. Kerbau menjadi daging untuk pesta ritual sekaligus ukuran kekayaan; pada pemakaman bangsawan banyak hewan bisa disembelih, meski kini aturan pemerintah membatasi jumlahnya. Babi dan ayam dipersembahkan dalam ritual tanam dan dibawa sebagai bawaan ke acara keluarga, sedangkan kuda, kerbau, dan babi berpindah antarkeluarga sebagai belis dan balasan bersama kain tenun (lihat <a href="/id/culture/sumba-ikat-weaving-where-to-buy/">panduan tenun ikat Sumba</a>).</p>
-<p>Jika diundang ke pernikahan atau upacara kematian, Anda mungkin disuguhi daging hewan yang disembelih hari itu, biasanya dengan nasi putih. Dijamu makan adalah kehormatan. Makanlah sebisanya, dan jika Anda tidak makan daging, sampaikan dengan pelan kepada tuan rumah atau pemandu, bukan menolak di depan semua orang. Penyembelihan saat pemakaman dilakukan terbuka dan bisa mengejutkan; itu bagian dari ritual, bukan tontonan, jadi simpan kamera kecuali dipersilakan.</p>
+<p>Jika diundang ke pernikahan atau upacara kematian, Anda mungkin disuguhi daging hewan yang disembelih hari itu, biasanya dengan nasi putih. Dijamu makan adalah kehormatan. Makanlah sebisanya, dan jika Anda tidak makan daging, sampaikan dengan pelan kepada tuan rumah atau pemandu, alih-alih menolaknya di depan semua orang. Penyembelihan saat pemakaman dilakukan terbuka dan bisa mengejutkan; itu bagian dari ritual, bukan tontonan, jadi simpan kamera kecuali dipersilakan.</p>
 
 <h2>Sirih pinang: budaya dan tata kramanya</h2>
 <p>Di Sumba Anda akan melihat senyum bernoda merah dan bekas ludah merah di mana-mana. <strong>Sirih pinang</strong> adalah tradisi mengunyah daun atau buah sirih dengan pinang dan kapur. Di Sumba Timur, menyuguhkan sirih pinang kepada tamu disebut <em>pahappa</em>, dan wadahnya disebut <em>mbola happa</em>. Menyuguhkan sirih pinang adalah ungkapan hormat paling dasar kepada tamu; sirih pinang juga dibagikan dalam pernikahan, kematian, dan di kubur leluhur untuk memohon restu.</p>
 <ul>
-<li><strong>Bawalah sedikit.</strong> Sekantong sirih pinang dari pasar adalah buah tangan klasik saat berkunjung ke kampung, di samping sumbangan. Tanyakan kepada pemandu berapa banyak yang pantas.</li>
+<li><strong>Bawalah sirih pinang.</strong> Sekantong sirih pinang dari pasar adalah buah tangan klasik saat berkunjung ke kampung, di samping sumbangan. Tanyakan kepada pemandu berapa banyak yang pantas.</li>
 <li><strong>Saat disuguhi, terima dengan tangan kanan.</strong> Anda tidak wajib mengunyahnya. Mengambil sepotong atau sekadar menyentuh wadahnya sudah menghargai sambutan. Tamu yang tidak mengambil sirih pinang akan disuguhi kopi, dan itu sepenuhnya wajar.</li>
-<li><strong>Jika ingin mencoba</strong>, kunyah sedikit saja, jangan telan airnya, dan meludahlah dengan sopan. Kapur bersifat keras bagi mulut dan pinang adalah perangsang; ini bukan kebiasaan untuk diikuti.</li>
+<li><strong>Jika ingin mencoba</strong>, kunyah sedikit saja, jangan telan airnya, dan meludahlah dengan sopan. Kapur bersifat kaustik dan pinang adalah perangsang; ini bukan kebiasaan yang patut ditiru.</li>
 </ul>
 
 <h2>Kopi Sumba</h2>
 <p>Kopi diminum di hampir setiap rumah di Sumba. Pulau ini terutama menanam <strong>robusta</strong>, khususnya di dataran tinggi Wewewa di Sumba Barat Daya yang sejuk, tempat pohon kopi tumbuh di hampir setiap pekarangan dalam kebun campur. Pada 2017, robusta fermentasi dari Desa Kadi Roma, Wewewa Tengah, dinobatkan sebagai robusta terenak di Indonesia dalam Festival Kopi Nusantara, dengan cita rasa cokelat menurut para penguji.</p>
-<p>Secara tradisional, keluarga menyangrai biji kopi di rumah bersama irisan jahe dan menyajikannya dengan banyak gula, sehingga <em>kopi jahe</em> menjadi klasik setempat. Jika ingin tanpa gula, minta <em>kopi pahit</em> atau <em>tanpa gula</em>. Bungkus kecil kopi bubuk lokal adalah oleh-oleh yang bagus. Di kota besar kini juga ada kafe dengan espresso, umumnya di bawah sekitar Rp40.000 per cangkir pada 2026.</p>
+<p>Secara tradisional, keluarga menyangrai biji kopi di rumah bersama irisan jahe dan menyajikannya dengan banyak gula, sehingga <em>kopi jahe</em> menjadi minuman khas setempat. Jika ingin tanpa gula, minta <em>kopi pahit</em> atau <em>tanpa gula</em>. Bungkus kecil kopi bubuk lokal adalah oleh-oleh yang bagus. Di kota besar kini juga ada kafe dengan espresso, umumnya di bawah sekitar Rp 40.000 per cangkir pada 2026.</p>
 
 <h2>Pasar di Waingapu dan Waikabubak</h2>
 <p><strong>Waingapu: Pasar Inpres</strong> di kawasan Matawai adalah pasar pagi utama: sayur, rempah, cabai, bumbu, ikan, sirih pinang, dan kadang kain tenun atau barang upacara. Datanglah pagi-pagi, saat pasar paling ramai. Di sinilah tempat membeli sirih pinang sebelum ke kampung. Sore hingga malam, ikan bakar mudah ditemukan di dekat pelabuhan lama.</p>
@@ -671,13 +671,13 @@ GUIDES = [
 <ul>
 <li><strong>Jangan minum air keran.</strong> Gunakan air kemasan atau air isi ulang yang tersaring, dan bawa botol minum sendiri untuk mengurangi plastik.</li>
 <li><strong>Pilih tempat yang ramai</strong>, tempat makanan dimasak segar dan panas. Ikan dan ayam yang baru diangkat dari bara umumnya aman; makanan yang berjam-jam terkena matahari lebih berisiko.</li>
-<li><strong>Es batu</strong> di kota biasanya dibuat dari air olahan; di tempat terpencil, lewati saja bila ragu.</li>
+<li><strong>Es batu</strong> di kota biasanya dibuat dari air olahan; di tempat terpencil, sebaiknya hindari bila ragu.</li>
 <li><strong>Kupas buah sendiri</strong> dan hati-hati dengan lalapan mentah.</li>
 <li><strong>Bawa oralit</strong> dan obat sakit perut. Untuk klinik, apotek, dan asuransi perjalanan, lihat <a href="/id/getting-here/sumba-travel-safety-health/">panduan keamanan dan kesehatan di Sumba</a>.</li>
 </ul>
 
 <h2>Berapa biaya makan di Sumba?</h2>
-<p>Biaya makan tergolong murah. Sebagai gambaran kasar untuk 2025-2026, sepiring nasi, sayur, dan ayam atau ikan di warung sederhana sekitar Rp20.000-50.000; ikan bakar ukuran sedang sekitar Rp50.000 sesuai harga pasar; makan di rumah makan yang melayani wisatawan sekitar Rp50.000-100.000 per orang; dan sekantong kecil sirih pinang untuk kunjungan ke kampung beberapa puluh ribu rupiah. Harga berbeda menurut kota dan musim. Lihat <a href="/id/getting-here/sumba-travel-costs/">biaya perjalanan ke Sumba</a> untuk anggaran harian lengkap, dan <a href="/id/things-to-do/sumba-itinerary-5-7-10-days/">itinerary kami</a> untuk merencanakan tempat makan di perjalanan panjang.</p>
+<p>Biaya makan tergolong murah. Sebagai gambaran kasar untuk 2025-2026, sepiring nasi, sayur, dan ayam atau ikan di warung sederhana sekitar Rp 20.000-50.000; ikan bakar ukuran sedang sekitar Rp 50.000 sesuai harga pasar; makan di rumah makan yang melayani wisatawan sekitar Rp 50.000-100.000 per orang; dan sekantong kecil sirih pinang untuk kunjungan ke kampung beberapa puluh ribu rupiah. Harga berbeda menurut kota dan musim. Lihat <a href="/id/getting-here/sumba-travel-costs/">biaya perjalanan ke Sumba</a> untuk anggaran harian lengkap, dan <a href="/id/things-to-do/sumba-itinerary-5-7-10-days/">itinerary kami</a> untuk merencanakan tempat makan di perjalanan panjang.</p>
 """
 },
 
@@ -704,7 +704,7 @@ GUIDES = [
  ["Daging pesta adat", "Kerbau dan babi saat pernikahan dan kematian; babi dan ayam dalam ritual"],
  ["Kopi", "Terutama robusta dari Wewewa, Sumba Barat Daya; sering manis dengan jahe"],
  ["Pasar utama", "Pasar Inpres (Waingapu), Pasar Waikabubak; datang pagi"],
- ["Makan di warung", "Sekitar Rp20.000-50.000 (2025-2026)"],
+ ["Makan di warung", "Sekitar Rp 20.000-50.000 (2025-2026)"],
 ],
 },
 

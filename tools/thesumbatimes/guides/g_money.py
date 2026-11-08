@@ -94,60 +94,60 @@ COSTS_EN = """<p>The plane drops over a coast of white limestone and pale green 
 </ul>
 <p>Before you go, also read <a href="/en/getting-here/sumba-travel-safety-health/">our Sumba safety and health guide</a>.</p>"""
 
-COSTS_ES = """<p>El avión baja sobre una costa de caliza blanca y colinas verde pálido, y lo primero que se nota en Tambolaka es el silencio: unas pocas motos, un caballo pastando junto a la carretera, olor a leña y a clavo. Sumba se siente lejos de Bali, pero está a una hora de vuelo, y se puede visitar con casi cualquier presupuesto. Lo que dispara la cuenta no es la comida ni las entradas, que son baratas, sino tres partidas grandes: los vuelos, dónde duermes y cómo te mueves por una isla que es más o menos el doble de Bali.</p>
-<p><strong>La respuesta corta:</strong> para dos personas que viajan juntas 7 días, calcula en total unos 8,5-12,5 millones de rupias con presupuesto ajustado (unos 420-620 EUR o 470-690 USD), unos 15-29 millones en gama media con coche privado y conductor (unos 750-1.430 EUR o 830-1.600 USD) y desde unos 45 millones en resorts de alta gama (unos 2.250 EUR o 2.500 USD en adelante). Los precios de esta guía son rangos habituales publicados en 2025-2026; varían según la temporada, la demanda y tu capacidad de negociar, así que tómalos como orientación, no como presupuesto cerrado.</p>
+COSTS_ES = """<p>El avión baja sobre una costa de caliza blanca y colinas verde pálido, y lo primero que se nota en Tambolaka es el silencio: unas pocas motos, un caballo pastando junto a la carretera, olor a leña y a clavo. Sumba parece muy lejos de Bali, pero está a una hora de vuelo, y se puede visitar con casi cualquier presupuesto. Lo que dispara la factura no es la comida ni las entradas, que son baratas, sino tres grandes partidas: los vuelos, el alojamiento y el transporte por una isla que duplica aproximadamente la superficie de Bali.</p>
+<p><strong>La respuesta corta:</strong> para dos personas que viajan juntas 7 días, calcula en total unos 8,5-12,5 millones de rupias con presupuesto ajustado (unos 420-620 euros o 470-690 dólares), unos 15-29 millones en gama media con coche privado y conductor (unos 750-1.430 euros o 830-1.600 dólares) y desde unos 45 millones en resorts de alta gama (unos 2.250 euros o 2.500 dólares en adelante). Los precios de esta guía son rangos habituales publicados en 2025-2026; varían según la temporada, la demanda y tu capacidad de negociar, así que tómalos como una orientación, no como un presupuesto cerrado.</p>
 
 <h2>Tipo de cambio y cómo leer los precios</h2>
-<p>A principios de noviembre de 2026, un euro valía unas 20.200 rupias y un dólar estadounidense unas 18.150. Regla rápida: 1.000.000 IDR son unos 50 EUR o 55 USD, y 100.000 IDR son unos 5 EUR. Todos los precios están en rupias indonesias (IDR), con conversiones redondeadas.</p>
+<p>A principios de noviembre de 2026, un euro valía unas 20.200 rupias y un dólar estadounidense unas 18.150. Para calcular rápido: 1.000.000 rupias son unos 50 euros o 55 dólares, y 100.000 rupias son unos 5 euros. Todos los precios están en rupias indonesias (IDR), con conversiones redondeadas.</p>
 
 <h2>Vuelos desde Bali</h2>
-<p>Casi todos los viajeros llegan en avión desde Bali (Denpasar, DPS). Hay dos aeropuertos: Tambolaka (TMC), en el noroeste, y Waingapu (WGP), en el este. Entre Bali y Tambolaka hay varios vuelos diarios de una hora a hora y media; entre Bali y Waingapu, TransNusa vuela sin escalas cuatro veces por semana desde julio de 2026. Lee nuestra guía sobre <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a>.</p>
+<p>Casi todos los viajeros llegan en avión desde Bali (Denpasar, DPS). Hay dos aeropuertos: Tambolaka (TMC), en el noroeste, y Waingapu (WGP), en el este. Entre Bali y Tambolaka hay varios vuelos diarios, de entre una hora y hora y media; entre Bali y Waingapu, TransNusa vuela sin escalas cuatro veces por semana desde julio de 2026. Lee nuestra guía sobre <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a>.</p>
 <ul>
-<li><strong>Tarifa habitual Bali-Tambolaka:</strong> los buscadores mostraban vuelos directos de ida por unas 1,2-1,4 millones de rupias (unos 60-70 EUR) para noviembre de 2026, así que la ida y vuelta suele rondar 2,3-2,8 millones por persona.</li>
-<li><strong>Equipaje:</strong> los aviones regionales pequeños suelen tener franquicias bajas (10 kg ha sido habitual en algunas tarifas). El exceso puede salir caro: revísalo antes de hacer la maleta.</li>
+<li><strong>Tarifa habitual Bali-Tambolaka:</strong> los buscadores mostraban vuelos directos de ida por unos 1,2-1,4 millones de rupias (unos 60-70 euros) para noviembre de 2026, así que la ida y vuelta suele rondar 2,3-2,8 millones por persona.</li>
+<li><strong>Equipaje:</strong> los pequeños aviones regionales suelen tener franquicias de equipaje reducidas (10 kg ha sido lo habitual en algunas tarifas). El exceso puede salir caro: compruébalo antes de hacer la maleta.</li>
 <li><strong>Para ahorrar:</strong> reserva con antelación para julio-agosto y para las semanas de la Pasola en febrero-marzo, y compara billetes de solo ida, entrando por un aeropuerto y saliendo por el otro.</li>
 </ul>
 
-<h2>Moverse: el mayor gasto diario</h2>
-<p>El transporte público es escaso e irregular, así que la mayoría alquila coche con conductor local o va en moto. Nuestra guía para <a href="/es/getting-here/getting-around-sumba/">moverse por Sumba</a> explica las carreteras y los tiempos reales.</p>
+<h2>Transporte: el mayor gasto diario</h2>
+<p>El transporte público es escaso e irregular, así que la mayoría de los viajeros alquila un coche con conductor local o se mueve en moto. Nuestra guía para <a href="/es/getting-here/getting-around-sumba/">moverse por Sumba</a> explica las carreteras y los tiempos reales.</p>
 <ul>
-<li><strong>Coche con conductor:</strong> aproximadamente 600.000-1.000.000 IDR al día (unos 30-50 EUR), según guías recientes; algunas guías internacionales hablan de unos 75 USD al día, sobre todo si incluye guía o en temporada alta. Pregunta siempre si incluye gasolina, las comidas del conductor y su alojamiento en rutas de varios días.</li>
-<li><strong>Coche sin conductor:</strong> unos 400.000-650.000 IDR al día sin gasolina, donde lo haya. Pocos viajeros lo hacen: apenas hay señales y se exige el permiso internacional de conducir.</li>
-<li><strong>Moto (scooter):</strong> entre unos 70.000 y 200.000 IDR al día; en 2025-2026 lo habitual en Tambolaka y Waingapu era 150.000-200.000. En agosto pueden agotarse con hasta dos semanas de antelación.</li>
-<li><strong>Gasolina:</strong> en noviembre de 2026 el precio oficial de la Pertalite, la gasolina normal, era de 10.000 IDR por litro, y la Pertamax de 15.950. Los vendedores de carretera cobran más: en Waingapu, en octubre de 2026, una botella de 1,5 litros de Pertalite costaba unas 20.000 IDR.</li>
-<li><strong>Autobuses y coches compartidos:</strong> baratos pero lentos. Listados antiguos daban unas 50.000-100.000 IDR para el autobús que cruza la isla y 15.000-30.000 para los microbuses locales; cuenta con que hayan subido.</li>
-<li><strong>Traslados del aeropuerto:</strong> del aeropuerto de Waingapu al centro hay unos 5-6 km y el taxi ha costado unas 50.000 IDR; los traslados de hotel, 50.000-100.000. Acuerda el precio antes de subir.</li>
+<li><strong>Coche con conductor:</strong> aproximadamente 600.000-1.000.000 rupias al día (unos 30-50 euros), según guías recientes; algunas guías internacionales hablan de unos 75 dólares al día, sobre todo si incluye guía o en temporada alta. Pregunta siempre si incluye gasolina, las comidas del conductor y su alojamiento en rutas de varios días.</li>
+<li><strong>Coche sin conductor:</strong> unas 400.000-650.000 rupias al día sin gasolina, donde se ofrece. Pocos viajeros optan por esta fórmula: apenas hay señales y se exige el permiso internacional de conducir.</li>
+<li><strong>Moto (scooter):</strong> entre unos 70.000 y 200.000 rupias al día; en 2025-2026 lo habitual en Tambolaka y Waingapu era 150.000-200.000. En agosto pueden agotarse hasta con dos semanas de antelación.</li>
+<li><strong>Gasolina:</strong> en noviembre de 2026 el precio oficial de la Pertalite, la gasolina normal, era de 10.000 rupias por litro, y la Pertamax de 15.950. Los vendedores de carretera cobran más: en Waingapu, en octubre de 2026, una botella de 1,5 litros de Pertalite costaba unas 20.000 rupias.</li>
+<li><strong>Autobuses y coches compartidos:</strong> baratos pero lentos. Listados antiguos indicaban unas 50.000-100.000 rupias para el autobús que cruza la isla y 15.000-30.000 para los microbuses locales; cuenta con que hayan subido.</li>
+<li><strong>Traslados del aeropuerto:</strong> del aeropuerto de Waingapu al centro hay unos 5-6 km y el taxi ha costado unas 50.000 rupias; los traslados de hotel, 50.000-100.000. Acuerda el precio antes de subir.</li>
 </ul>
 
 <h2>Dónde dormir</h2>
 <ul>
-<li><strong>Homestays y pensiones sencillas:</strong> unas 150.000-300.000 IDR por noche.</li>
-<li><strong>Hoteles de gama media en Tambolaka, Waikabubak o Waingapu:</strong> unas 300.000-1.500.000 IDR; los hoteles urbanos bien valorados suelen rondar los 35-55 USD.</li>
-<li><strong>Resorts de alta gama en la costa suroeste:</strong> normalmente 250-400 USD por noche, y los más exclusivos superan con creces los 1.000 USD.</li>
+<li><strong>Homestays y pensiones sencillas:</strong> unas 150.000-300.000 rupias por noche.</li>
+<li><strong>Hoteles de gama media en Tambolaka, Waikabubak o Waingapu:</strong> unas 300.000-1.500.000 rupias; los hoteles urbanos bien valorados suelen rondar los 35-55 dólares.</li>
+<li><strong>Resorts de alta gama en la costa suroeste:</strong> normalmente 250-400 dólares por noche, y los más exclusivos superan con creces los 1.000 dólares.</li>
 </ul>
 <p>Consulta <a href="/es/where-to-stay/where-to-stay-in-sumba/">dónde alojarse en Sumba</a> para elegir base según la zona.</p>
 
 <h2>Comida y bebida</h2>
-<p>Comer como la gente local es barato. Un plato de arroz con pescado, pollo o verduras en un warung cuesta unas 20.000-50.000 IDR (1-2,5 EUR). En restaurantes de gama media y cartas de hotel, unas 70.000-150.000 por plato. En los resorts, precios de Bali. El agua, el café y la fruta son baratos en los mercados, pero abastécete antes de los trayectos largos: en el campo hay pocas tiendas. Nuestra guía de <a href="/es/culture/sumbanese-food/">comida de Sumba</a> te dice qué pedir.</p>
+<p>Comer como la gente local es barato. Un plato de arroz con pescado, pollo o verduras cuesta en un warung unas 20.000-50.000 rupias (1-2,5 euros). En restaurantes de gama media y en las cartas de hotel, unas 70.000-150.000 por plato. En los resorts, los precios son los de Bali. El agua, el café y la fruta son baratos en los mercados, pero abastécete antes de los trayectos largos: en el campo hay pocas tiendas. Nuestra guía de <a href="/es/culture/sumbanese-food/">comida de Sumba</a> explica qué pedir.</p>
 
 <h2>Entradas, donativos en los pueblos y guías</h2>
-<p>Los lugares de Sumba son baratos, pero hay muchos pagos pequeños y casi todos en efectivo. Lleva billetes pequeños (10.000, 20.000 y 50.000 IDR).</p>
+<p>Visitar Sumba es barato, pero hay que hacer muchos pagos pequeños, casi todos en efectivo. Lleva billetes pequeños (10.000, 20.000 y 50.000 rupias).</p>
 <ul>
-<li><strong>Pueblos tradicionales:</strong> lo normal es firmar en un libro de visitas y dejar un donativo, en torno a 10.000-40.000 IDR por persona según guías de 2026. Algunos pueblos muy visitados piden más: en Ratenggaro se han citado unas 50.000 IDR por persona. Las guías internacionales hablan de 2-5 USD. El dinero va a la comunidad: dalo con gusto.</li>
+<li><strong>Pueblos tradicionales:</strong> lo normal es firmar en un libro de visitas y dejar un donativo, en torno a 10.000-40.000 rupias por persona según guías de 2026. Algunos pueblos muy visitados piden más: en Ratenggaro se han citado unas 50.000 rupias por persona. Las guías internacionales hablan de 2-5 dólares. El dinero es para la comunidad: dalo de buena gana.</li>
 <li><strong>Nuez de betel (sirih pinang):</strong> un pequeño manojo comprado en el mercado es un regalo tradicional y bien recibido al visitar un pueblo. Recuerda que los pueblos son hogares, no museos: pide permiso antes de hacer fotos, vístete con recato y no toques nunca tumbas ni objetos rituales. Más en nuestra guía sobre <a href="/es/culture/marapu-ikat-traditional-villages/">el Marapu, el ikat y los pueblos tradicionales</a>.</li>
-<li><strong>Laguna de Weekuri:</strong> antes era un donativo voluntario; después pasó a tener entrada, citada en 20.000 IDR para extranjeros y 5.000 para indonesios, y la ducha se paga aparte.</li>
-<li><strong>Cascada de Tanggedu:</strong> unas 5.000-10.000 IDR por persona más 5.000-10.000 de aparcamiento (finales de 2025); algunos visitantes pagan a un motorista local para el último tramo.</li>
-<li><strong>Playas:</strong> muchas son gratuitas, como Tarimbang; otras cobran aparcamiento. En Mandorak se ha citado un aparcamiento de 50.000 IDR por moto.</li>
-<li><strong>Extras:</strong> en la colina de Wairinding, la gente local alquila caballos o trajes tradicionales para fotos por unas 50.000 IDR. Cruces en barca, duchas y fotos con niños llevan pequeños pagos o propinas.</li>
-<li><strong>Guías:</strong> muchos conductores hacen también de guía informal. Un guía local aparte (útil para ceremonias, pueblos tranquilos o cascadas como Lapopu) se negocia directamente; a una viajera le pidieron en 2023 unos 150 AUD al día por conductor más guía. Acordad precio y plan la noche anterior.</li>
+<li><strong>Laguna de Weekuri:</strong> antes se pagaba con un donativo voluntario; ahora tiene entrada, que se ha citado en 20.000 rupias para extranjeros y 5.000 para indonesios, y la ducha se paga aparte.</li>
+<li><strong>Cascada de Tanggedu:</strong> unas 5.000-10.000 rupias por persona más 5.000-10.000 de aparcamiento (finales de 2025); algunos visitantes pagan a un motorista local para hacer el último tramo.</li>
+<li><strong>Playas:</strong> muchas son gratuitas, como Tarimbang; otras cobran aparcamiento. En Mandorak se ha citado un aparcamiento de 50.000 rupias por moto.</li>
+<li><strong>Extras:</strong> en la colina de Wairinding, los vecinos alquilan caballos o trajes tradicionales para hacerse fotos por unas 50.000 rupias. Los cruces en barca, las duchas y las fotos con niños suelen conllevar pequeños pagos o propinas.</li>
+<li><strong>Guías:</strong> muchos conductores hacen también de guía informal. Un guía local aparte (útil para ceremonias, pueblos tranquilos o cascadas como Lapopu) se negocia directamente; a una viajera le pidieron en 2023 unos 150 dólares australianos al día por conductor más guía. Acuerda el precio y el plan la noche anterior.</li>
 </ul>
-<p>Para los lugares en sí, mira nuestra guía de <a href="/es/things-to-do/beaches-lagoons-waterfalls/">playas, lagunas y cascadas</a>.</p>
+<p>Para conocer los lugares en sí, consulta nuestra guía de <a href="/es/things-to-do/beaches-lagoons-waterfalls/">playas, lagunas y cascadas</a>.</p>
 
 <h2>Tarjeta SIM y datos</h2>
-<p>Compra la SIM o eSIM en Bali, en el aeropuerto o en la ciudad. Telkomsel es la que mejor cobertura tiene en Sumba; las demás redes flojean fuera de las ciudades. Un paquete turístico de 30 días ha costado unas 250.000 IDR (unos 13 EUR). Los móviles comprados fuera deben tener el IMEI registrado para funcionar en redes indonesias; las SIM turísticas lo resuelven durante un periodo limitado, así que revisa las condiciones al comprarla.</p>
+<p>Compra la SIM o eSIM en Bali, en el aeropuerto o en la ciudad. Telkomsel es el operador con mejor cobertura en Sumba; las demás redes fallan fuera de las ciudades. Un paquete turístico de 30 días ha costado unas 250.000 rupias (unos 13 euros). Los móviles comprados fuera deben tener el IMEI registrado para funcionar en redes indonesias; las SIM turísticas lo resuelven durante un periodo limitado, así que revisa las condiciones al comprar la tuya.</p>
 
 <h2>Presupuesto de ejemplo para 7 días y dos personas</h2>
-<p>Son totales aproximados para dos personas que comparten habitación y transporte durante 7 días y 6 noches, saliendo y volviendo a Bali. Son estimaciones hechas con los rangos anteriores, no presupuestos.</p>
+<p>Son totales aproximados para dos personas que comparten habitación y transporte durante 7 días y 6 noches, saliendo y volviendo a Bali. Son estimaciones elaboradas con los rangos anteriores, no presupuestos.</p>
 <table>
 <thead><tr><th>Partida (2 personas, 7 días)</th><th>Mochilero</th><th>Gama media</th><th>Lujo</th></tr></thead>
 <tbody>
@@ -160,100 +160,100 @@ COSTS_ES = """<p>El avión baja sobre una costa de caliza blanca y colinas verde
 <tr><td><strong>Total para dos</strong></td><td><strong>unos 8,5-12,5 M IDR (420-620 EUR, 470-690 USD)</strong></td><td><strong>unos 15-29 M IDR (750-1.430 EUR, 830-1.600 USD)</strong></td><td><strong>unos 45-75 M IDR (2.250-3.700 EUR, 2.500-4.100 USD)</strong></td></tr>
 <tr><td>Por persona</td><td>unos 4,2-6,3 M IDR</td><td>unos 7,5-14,5 M IDR</td><td>unos 22,5-37,5 M IDR</td></tr>
 </tbody></table>
-<p>Si viajas solo, pagas el coche y la habitación tú solo, así que el gasto diario en gama media sube mucho. Compartir coche y conductor con otros viajeros es la forma más fácil de ahorrar. Para organizar los días, lee nuestros <a href="/es/things-to-do/sumba-itinerary-5-7-10-days/">itinerarios de 5, 7 y 10 días por Sumba</a> y consulta <a href="/es/things-to-do/best-time-to-visit-sumba/">la mejor época para viajar a Sumba</a>: julio-agosto y las semanas de la Pasola encarecen los precios.</p>
+<p>Si viajas solo, el coche y la habitación corren enteramente de tu cuenta, así que el gasto diario en gama media se dispara. Compartir coche y conductor con otros viajeros es la forma más fácil de ahorrar. Para organizar los días, lee nuestros <a href="/es/things-to-do/sumba-itinerary-5-7-10-days/">itinerarios de 5, 7 y 10 días por Sumba</a> y consulta <a href="/es/things-to-do/best-time-to-visit-sumba/">la mejor época para viajar a Sumba</a>: julio-agosto y las semanas de la Pasola encarecen los precios.</p>
 
 <h2>Efectivo y cajeros</h2>
 <p>En Sumba manda el efectivo. Hay cajeros en las ciudades principales, Tambolaka, Waikabubak y Waingapu, pero son raros o inexistentes en el campo, las playas y los pueblos, y en los aeropuertos no hay casa de cambio. El pago con tarjeta se limita sobre todo a los hoteles grandes.</p>
 <ul>
 <li>Saca en la ciudad lo suficiente para los días siguientes y guarda una reserva por si un cajero está vacío o sin conexión.</li>
-<li>Lleva muchos billetes pequeños: donativos, aparcamientos, warungs y gasolina de carretera los necesitan.</li>
-<li>Paga al conductor en efectivo; acordad el total de antemano y confirma qué incluye.</li>
-<li>Regatea con justicia. Regatear demasiado el ikat o los recuerdos puede ofender; mira nuestra guía sobre <a href="/es/culture/sumba-ikat-weaving-where-to-buy/">dónde comprar ikat en Sumba</a>.</li>
+<li>Lleva muchos billetes pequeños: los necesitarás para donativos, aparcamientos, warungs y la gasolina de los puestos de carretera.</li>
+<li>Paga al conductor en efectivo; acuerda el total de antemano y confirma qué incluye.</li>
+<li>Regatea con mesura. Apretar demasiado con el ikat o los recuerdos puede ofender; consulta nuestra guía sobre <a href="/es/culture/sumba-ikat-weaving-where-to-buy/">dónde comprar ikat en Sumba</a>.</li>
 </ul>
 
 <h2>Cómo gastar menos (y mejor)</h2>
 <ul>
 <li>Entra por Tambolaka y sal por Waingapu (o al revés) para no repetir carretera.</li>
-<li>Cambia pocas veces de base: los traslados largos se comen un día de alquiler.</li>
+<li>Cambia pocas veces de base: cada traslado largo se come un día de alquiler.</li>
 <li>Come en warungs a mediodía y compra fruta en los mercados.</li>
-<li>Viaja en mayo-junio o septiembre-octubre: seco, pero más tranquilo que julio-agosto.</li>
-<li>Gasta en lo local: compra ikat directamente a las tejedoras y deja donativos en los pueblos; así es como el turismo ayuda a Sumba.</li>
+<li>Viaja en mayo-junio o septiembre-octubre: es temporada seca, pero más tranquila que julio-agosto.</li>
+<li>Gasta en el comercio local: compra ikat directamente a las tejedoras y deja donativos en los pueblos; así es como el turismo ayuda a Sumba.</li>
 </ul>
 <p>Antes de ir, lee también <a href="/es/getting-here/sumba-travel-safety-health/">nuestra guía de seguridad y salud en Sumba</a>.</p>"""
 
-COSTS_ID = """<p>Pesawat turun di atas pantai kapur putih dan bukit hijau pucat, dan hal pertama yang terasa di Tambolaka adalah ketenangannya: beberapa motor, seekor kuda merumput di pinggir jalan, aroma asap kayu dan cengkih. Sumba terasa jauh dari Bali, padahal hanya sekitar satu jam penerbangan, dan bisa dikunjungi dengan anggaran apa pun. Yang membuat biaya membengkak bukan makanan atau tiket masuk, yang tetap murah, melainkan tiga pos besar: tiket pesawat, tempat menginap, dan cara berkeliling pulau yang luasnya kira-kira dua kali Bali.</p>
-<p><strong>Jawaban singkat:</strong> untuk dua orang selama 7 hari, siapkan total sekitar Rp8,5-12,5 juta untuk gaya hemat (sekitar USD 470-690), sekitar Rp15-29 juta untuk kelas menengah dengan mobil dan sopir pribadi (sekitar USD 830-1.600), dan mulai sekitar Rp45 juta ke atas jika menginap di resor mewah. Harga di panduan ini adalah kisaran umum yang dilaporkan pada 2025-2026; bisa berubah menurut musim, permintaan, dan hasil tawar-menawar, jadi anggap sebagai patokan, bukan penawaran pasti.</p>
+COSTS_ID = """<p>Pesawat merendah di atas pesisir batu kapur putih dan bukit hijau pucat, dan hal pertama yang terasa di Tambolaka adalah ketenangannya: beberapa motor, seekor kuda merumput di pinggir jalan, aroma asap kayu dan cengkih. Sumba terasa jauh dari Bali, padahal hanya sekitar satu jam penerbangan, dan bisa dikunjungi dengan anggaran apa pun. Yang membuat biaya membengkak bukanlah makanan atau tiket masuk, yang harganya tetap murah, melainkan tiga pos besar: tiket pesawat, tempat menginap, dan cara berkeliling pulau yang luasnya kira-kira dua kali Bali.</p>
+<p><strong>Jawaban singkat:</strong> untuk dua orang selama 7 hari, siapkan total sekitar Rp 8,5-12,5 juta untuk gaya hemat (sekitar USD 470-690), sekitar Rp 15-29 juta untuk kelas menengah dengan mobil dan sopir pribadi (sekitar USD 830-1.600), dan mulai sekitar Rp 45 juta ke atas jika menginap di resor mewah. Harga di panduan ini adalah kisaran umum yang dilaporkan pada 2025-2026; bisa berubah menurut musim, permintaan, dan hasil tawar-menawar, jadi anggaplah sebagai patokan, bukan penawaran pasti.</p>
 
 <h2>Kurs dan cara membaca harga</h2>
-<p>Pada awal November 2026, satu euro sekitar Rp20.200 dan satu dolar AS sekitar Rp18.150. Patokan cepat: Rp1.000.000 kira-kira USD 55 atau EUR 50. Semua harga dalam rupiah, dengan konversi dibulatkan.</p>
+<p>Pada awal November 2026, satu euro sekitar Rp 20.200 dan satu dolar AS sekitar Rp 18.150. Patokan cepat: Rp 1.000.000 kira-kira USD 55 atau EUR 50. Semua harga dalam rupiah, dengan konversi dibulatkan.</p>
 
 <h2>Penerbangan dari Bali</h2>
-<p>Hampir semua wisatawan terbang dari Bali (Denpasar, DPS). Ada dua bandara: Tambolaka (TMC) di barat laut dan Waingapu (WGP) di timur. Rute Bali-Tambolaka dilayani beberapa kali sehari, sekitar satu sampai satu setengah jam; rute Bali-Waingapu dilayani TransNusa tanpa transit empat kali seminggu sejak Juli 2026. Baca panduan kami <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a>.</p>
+<p>Hampir semua wisatawan terbang dari Bali (Denpasar, DPS). Ada dua bandara: Tambolaka (TMC) di barat laut dan Waingapu (WGP) di timur. Rute Bali-Tambolaka dilayani beberapa kali sehari dengan waktu tempuh satu sampai satu setengah jam; rute Bali-Waingapu dilayani TransNusa tanpa transit empat kali seminggu sejak Juli 2026. Baca panduan kami <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a>.</p>
 <ul>
-<li><strong>Harga umum Bali-Tambolaka:</strong> situs pemesanan menampilkan tiket langsung sekali jalan sekitar Rp1,2-1,4 juta untuk November 2026, sehingga pulang-pergi sering sekitar Rp2,3-2,8 juta per orang.</li>
-<li><strong>Bagasi:</strong> pesawat regional kecil sering memberi jatah bagasi rendah (10 kg cukup umum di sebagian tarif). Kelebihan bagasi bisa mahal, jadi cek sebelum berkemas.</li>
+<li><strong>Harga umum Bali-Tambolaka:</strong> situs pemesanan menampilkan tiket langsung sekali jalan sekitar Rp 1,2-1,4 juta untuk November 2026, sehingga pulang-pergi sering sekitar Rp 2,3-2,8 juta per orang.</li>
+<li><strong>Bagasi:</strong> pesawat regional kecil sering memberi jatah bagasi yang kecil (10 kg cukup umum di sebagian tarif). Kelebihan bagasi bisa mahal, jadi cek sebelum berkemas.</li>
 <li><strong>Tips hemat:</strong> pesan jauh hari untuk Juli-Agustus dan pekan Pasola di Februari-Maret, dan bandingkan tiket sekali jalan: masuk lewat satu bandara, pulang lewat bandara lainnya.</li>
 </ul>
 
 <h2>Transportasi: biaya harian terbesar</h2>
 <p>Angkutan umum terbatas dan tidak teratur, jadi kebanyakan wisatawan menyewa mobil dengan sopir lokal atau naik motor. Panduan <a href="/id/getting-here/getting-around-sumba/">keliling Sumba</a> kami membahas kondisi jalan dan waktu tempuh sebenarnya.</p>
 <ul>
-<li><strong>Mobil dengan sopir:</strong> kira-kira Rp600.000-1.000.000 per hari menurut panduan wisata terbaru; sebagian panduan internasional menyebut sekitar USD 75 per hari, terutama jika termasuk pemandu atau di musim ramai. Selalu tanyakan apakah sudah termasuk BBM, makan sopir, dan penginapan sopir untuk perjalanan menginap.</li>
-<li><strong>Mobil lepas kunci:</strong> sekitar Rp400.000-650.000 per hari tanpa BBM, jika tersedia. Rambu jalan jarang, dan wisatawan asing wajib membawa SIM internasional.</li>
-<li><strong>Motor:</strong> dilaporkan antara sekitar Rp70.000 dan Rp200.000 per hari; pada 2025-2026, harga umum di Tambolaka dan Waingapu Rp150.000-200.000. Pada bulan Agustus, motor bisa habis dipesan hingga dua minggu sebelumnya.</li>
-<li><strong>BBM:</strong> pada November 2026 harga resmi Pertalite Rp10.000 per liter dan Pertamax Rp15.950. Pengecer pinggir jalan lebih mahal: di Waingapu pada Oktober 2026, satu botol 1,5 liter Pertalite dijual sekitar Rp20.000.</li>
-<li><strong>Bus dan travel:</strong> murah tetapi lambat. Data lama menyebut bus lintas pulau sekitar Rp50.000-100.000 dan angkutan lokal Rp15.000-30.000; kemungkinan sekarang lebih mahal.</li>
-<li><strong>Transfer bandara:</strong> Bandara Waingapu ke kota sekitar 5-6 km, taksi sekitar Rp50.000; antar-jemput hotel sekitar Rp50.000-100.000. Sepakati harga sebelum naik.</li>
+<li><strong>Mobil dengan sopir:</strong> kira-kira Rp 600.000-1.000.000 per hari menurut panduan wisata terbaru; sebagian panduan internasional menyebut sekitar USD 75 per hari, terutama jika termasuk pemandu atau di musim ramai. Selalu tanyakan apakah sudah termasuk BBM, makan sopir, dan penginapan sopir untuk perjalanan beberapa hari.</li>
+<li><strong>Mobil lepas kunci:</strong> sekitar Rp 400.000-650.000 per hari tanpa BBM, jika tersedia. Rambu jalan jarang, dan wisatawan asing wajib membawa SIM internasional.</li>
+<li><strong>Motor:</strong> dilaporkan antara sekitar Rp 70.000 dan Rp 200.000 per hari; pada 2025-2026, harga umum di Tambolaka dan Waingapu Rp 150.000-200.000. Pada Agustus, motor bisa habis dipesan hingga dua minggu sebelumnya.</li>
+<li><strong>BBM:</strong> pada November 2026 harga resmi Pertalite Rp 10.000 per liter dan Pertamax Rp 15.950. Pengecer pinggir jalan lebih mahal: di Waingapu pada Oktober 2026, satu botol 1,5 liter Pertalite dijual sekitar Rp 20.000.</li>
+<li><strong>Bus dan travel:</strong> murah tetapi lambat. Data lama menyebut bus lintas pulau sekitar Rp 50.000-100.000 dan angkutan lokal Rp 15.000-30.000; kemungkinan sekarang lebih mahal.</li>
+<li><strong>Transfer bandara:</strong> Bandara Waingapu ke kota sekitar 5-6 km, taksi sekitar Rp 50.000; antar-jemput hotel sekitar Rp 50.000-100.000. Sepakati harga sebelum naik.</li>
 </ul>
 
 <h2>Penginapan</h2>
 <ul>
-<li><strong>Homestay dan penginapan sederhana:</strong> sekitar Rp150.000-300.000 per malam.</li>
-<li><strong>Hotel menengah di Tambolaka, Waikabubak, atau Waingapu:</strong> sekitar Rp300.000-1.500.000; hotel kota yang bagus ulasannya sering sekitar USD 35-55.</li>
+<li><strong>Homestay dan penginapan sederhana:</strong> sekitar Rp 150.000-300.000 per malam.</li>
+<li><strong>Hotel menengah di Tambolaka, Waikabubak, atau Waingapu:</strong> sekitar Rp 300.000-1.500.000; hotel kota yang bagus ulasannya sering sekitar USD 35-55.</li>
 <li><strong>Resor mewah di pesisir barat daya:</strong> umumnya USD 250-400 per malam, dan yang paling eksklusif jauh di atas USD 1.000.</li>
 </ul>
 <p>Baca <a href="/id/where-to-stay/where-to-stay-in-sumba/">tempat menginap di Sumba</a> untuk memilih basis menurut wilayah.</p>
 
 <h2>Makan dan minum</h2>
-<p>Makan ala warga lokal itu murah. Sepiring nasi dengan ikan, ayam, atau sayur di warung sekitar Rp20.000-50.000. Restoran menengah dan menu hotel sekitar Rp70.000-150.000 per hidangan. Harga di resor setara Bali. Air minum, kopi, dan buah murah di pasar, tetapi belilah persediaan sebelum perjalanan jauh karena di pedesaan toko jarang. Panduan <a href="/id/culture/sumbanese-food/">kuliner Sumba</a> kami membantu memilih menu.</p>
+<p>Makan ala warga setempat itu murah. Sepiring nasi dengan ikan, ayam, atau sayur di warung sekitar Rp 20.000-50.000. Restoran menengah dan menu hotel sekitar Rp 70.000-150.000 per hidangan. Harga di resor setara Bali. Air minum, kopi, dan buah murah di pasar, tetapi belilah persediaan sebelum perjalanan jauh karena di pedesaan toko jarang. Panduan <a href="/id/culture/sumbanese-food/">kuliner Sumba</a> kami membantu memilih menu.</p>
 
 <h2>Tiket masuk, donasi kampung, dan pemandu</h2>
-<p>Objek wisata Sumba murah, tetapi banyak pembayaran kecil dan hampir semuanya tunai. Bawa uang pecahan kecil (Rp10.000, Rp20.000, Rp50.000).</p>
+<p>Tiket objek wisata di Sumba murah, tetapi ada banyak pungutan kecil dan hampir semuanya dibayar tunai. Bawa uang pecahan kecil (Rp 10.000, Rp 20.000, Rp 50.000).</p>
 <ul>
-<li><strong>Kampung adat:</strong> biasanya Anda diminta mengisi buku tamu dan memberi donasi, umumnya sekitar Rp10.000-40.000 per orang menurut panduan 2026. Beberapa kampung populer meminta lebih: Ratenggaro dilaporkan sekitar Rp50.000 per orang. Panduan internasional menyebut sekitar USD 2-5. Uang ini untuk masyarakat, jadi berikan dengan senang hati.</li>
-<li><strong>Sirih pinang:</strong> seikat kecil yang dibeli di pasar adalah buah tangan tradisional yang dihargai saat berkunjung ke kampung. Ingat, kampung adalah rumah, bukan museum: minta izin sebelum memotret, berpakaian sopan, dan jangan menyentuh kubur batu atau benda ritual. Selengkapnya di panduan <a href="/id/culture/marapu-ikat-traditional-villages/">Marapu, tenun ikat, dan kampung adat</a>.</li>
-<li><strong>Danau Weekuri:</strong> dulu berupa donasi sukarela, lalu berubah menjadi tiket, dilaporkan Rp20.000 untuk wisatawan asing dan Rp5.000 untuk wisatawan lokal; mandi bilas dibayar terpisah.</li>
-<li><strong>Air Terjun Tanggedu:</strong> sekitar Rp5.000-10.000 per orang ditambah parkir Rp5.000-10.000 (akhir 2025), dan sebagian pengunjung membayar ojek lokal untuk ruas terakhir.</li>
-<li><strong>Pantai:</strong> banyak yang gratis, seperti Tarimbang; yang lain memungut parkir. Di Mandorak dilaporkan parkir Rp50.000 per motor.</li>
-<li><strong>Tambahan:</strong> di Bukit Wairinding, warga menyewakan kuda atau pakaian adat untuk foto sekitar Rp50.000. Penyeberangan perahu, kamar bilas, dan foto bersama anak-anak biasanya disertai bayaran kecil atau tip.</li>
+<li><strong>Kampung adat:</strong> biasanya Anda diminta mengisi buku tamu dan memberi donasi, umumnya sekitar Rp 10.000-40.000 per orang menurut panduan 2026. Beberapa kampung populer meminta lebih: Ratenggaro dilaporkan sekitar Rp 50.000 per orang. Panduan internasional menyebut sekitar USD 2-5. Uang ini untuk masyarakat setempat, jadi berikanlah dengan senang hati.</li>
+<li><strong>Sirih pinang:</strong> seikat kecil yang dibeli di pasar adalah buah tangan tradisional yang dihargai saat berkunjung ke kampung. Ingat, kampung adat adalah tempat tinggal, bukan museum: minta izin sebelum memotret, berpakaian sopan, dan jangan menyentuh kubur batu atau benda ritual. Selengkapnya di panduan <a href="/id/culture/marapu-ikat-traditional-villages/">Marapu, tenun ikat, dan kampung adat</a>.</li>
+<li><strong>Danau Weekuri:</strong> dulu cukup dengan donasi sukarela, kini dikenai tiket masuk yang dilaporkan sebesar Rp 20.000 untuk wisatawan asing dan Rp 5.000 untuk wisatawan lokal; mandi bilas dibayar terpisah.</li>
+<li><strong>Air Terjun Tanggedu:</strong> sekitar Rp 5.000-10.000 per orang ditambah parkir Rp 5.000-10.000 (akhir 2025), dan sebagian pengunjung membayar ojek lokal untuk ruas terakhir.</li>
+<li><strong>Pantai:</strong> banyak yang gratis, seperti Tarimbang; yang lain memungut parkir. Di Mandorak dilaporkan parkir Rp 50.000 per motor.</li>
+<li><strong>Tambahan:</strong> di Bukit Wairinding, warga menyewakan kuda atau pakaian adat untuk foto sekitar Rp 50.000. Penyeberangan perahu, kamar bilas, dan foto bersama anak-anak biasanya disertai bayaran kecil atau tip.</li>
 <li><strong>Pemandu:</strong> banyak sopir sekaligus menjadi pemandu informal. Pemandu lokal terpisah (berguna untuk upacara, kampung yang lebih sepi, atau air terjun seperti Lapopu) dinegosiasikan langsung; seorang wisatawan pada 2023 mendapat tawaran sekitar AUD 150 per hari untuk sopir plus pemandu. Sepakati harga dan rencana sehari sebelumnya.</li>
 </ul>
 <p>Untuk objek wisatanya, lihat panduan <a href="/id/things-to-do/beaches-lagoons-waterfalls/">pantai, laguna, dan air terjun</a>.</p>
 
 <h2>Kartu SIM dan data</h2>
-<p>Belilah SIM atau eSIM di Bali, di bandara atau di kota. Telkomsel punya jangkauan terluas di Sumba; operator lain lemah di luar kota. Paket turis 30 hari sekitar Rp250.000. Ponsel yang dibeli di luar negeri harus didaftarkan IMEI-nya agar bisa memakai jaringan Indonesia; SIM turis mengurus ini untuk jangka waktu terbatas, jadi cek ketentuannya saat membeli.</p>
+<p>Belilah SIM atau eSIM di Bali, di bandara atau di kota. Telkomsel punya jangkauan terluas di Sumba; operator lain lemah di luar kota. Paket turis 30 hari sekitar Rp 250.000. Ponsel yang dibeli di luar negeri harus didaftarkan IMEI-nya agar bisa memakai jaringan Indonesia; SIM turis sudah mencakup pendaftaran ini untuk jangka waktu terbatas, jadi cek ketentuannya saat membeli.</p>
 
 <h2>Contoh anggaran 7 hari untuk dua orang</h2>
-<p>Ini perkiraan total untuk dua orang yang berbagi kamar dan kendaraan selama 7 hari 6 malam, berangkat dan kembali ke Bali. Angka ini disusun dari kisaran di atas, bukan penawaran harga.</p>
+<p>Berikut perkiraan total untuk dua orang yang berbagi kamar dan kendaraan selama 7 hari 6 malam, berangkat dan kembali ke Bali. Angka ini disusun dari kisaran di atas, bukan penawaran harga.</p>
 <table>
 <thead><tr><th>Pos (2 orang, 7 hari)</th><th>Hemat</th><th>Menengah</th><th>Mewah</th></tr></thead>
 <tbody>
-<tr><td>Tiket pesawat PP Bali-Sumba</td><td>Rp4,6-5,6 jt</td><td>Rp4,8-5,6 jt</td><td>Rp4,8-6 jt</td></tr>
-<tr><td>Penginapan (6 malam)</td><td>Rp0,9-1,8 jt (homestay)</td><td>Rp3-9 jt (hotel)</td><td>Rp27-44 jt (resor)</td></tr>
-<tr><td>Transportasi</td><td>Rp1,35-1,9 jt (motor, BBM, satu kali bus)</td><td>Rp4,2-8 jt (mobil dan sopir, BBM)</td><td>Rp7-10,5 jt (mobil, sopir, dan pemandu)</td></tr>
-<tr><td>Makan dan minum</td><td>Rp0,85-2,1 jt</td><td>Rp2-4,5 jt</td><td>Rp5-12 jt</td></tr>
-<tr><td>Tiket, donasi, sirih pinang, tip</td><td>Rp0,3-0,6 jt</td><td>Rp0,6-1,2 jt</td><td>Rp1-2 jt</td></tr>
-<tr><td>SIM dan data</td><td>Rp0,5 jt</td><td>Rp0,5 jt</td><td>Rp0,5 jt</td></tr>
-<tr><td><strong>Total berdua</strong></td><td><strong>sekitar Rp8,5-12,5 jt (USD 470-690)</strong></td><td><strong>sekitar Rp15-29 jt (USD 830-1.600)</strong></td><td><strong>sekitar Rp45-75 jt (USD 2.500-4.100)</strong></td></tr>
-<tr><td>Per orang</td><td>sekitar Rp4,2-6,3 jt</td><td>sekitar Rp7,5-14,5 jt</td><td>sekitar Rp22,5-37,5 jt</td></tr>
+<tr><td>Tiket pesawat PP Bali-Sumba</td><td>Rp 4,6-5,6 jt</td><td>Rp 4,8-5,6 jt</td><td>Rp 4,8-6 jt</td></tr>
+<tr><td>Penginapan (6 malam)</td><td>Rp 0,9-1,8 jt (homestay)</td><td>Rp 3-9 jt (hotel)</td><td>Rp 27-44 jt (resor)</td></tr>
+<tr><td>Transportasi</td><td>Rp 1,35-1,9 jt (motor, BBM, satu kali bus)</td><td>Rp 4,2-8 jt (mobil dan sopir, BBM)</td><td>Rp 7-10,5 jt (mobil, sopir, dan pemandu)</td></tr>
+<tr><td>Makan dan minum</td><td>Rp 0,85-2,1 jt</td><td>Rp 2-4,5 jt</td><td>Rp 5-12 jt</td></tr>
+<tr><td>Tiket, donasi, sirih pinang, tip</td><td>Rp 0,3-0,6 jt</td><td>Rp 0,6-1,2 jt</td><td>Rp 1-2 jt</td></tr>
+<tr><td>SIM dan data</td><td>Rp 0,5 jt</td><td>Rp 0,5 jt</td><td>Rp 0,5 jt</td></tr>
+<tr><td><strong>Total berdua</strong></td><td><strong>sekitar Rp 8,5-12,5 jt (USD 470-690)</strong></td><td><strong>sekitar Rp 15-29 jt (USD 830-1.600)</strong></td><td><strong>sekitar Rp 45-75 jt (USD 2.500-4.100)</strong></td></tr>
+<tr><td>Per orang</td><td>sekitar Rp 4,2-6,3 jt</td><td>sekitar Rp 7,5-14,5 jt</td><td>sekitar Rp 22,5-37,5 jt</td></tr>
 </tbody></table>
-<p>Jika bepergian sendiri, Anda menanggung mobil dan kamar sendirian, sehingga biaya harian kelas menengah per orang naik tajam. Berbagi mobil dan sopir dengan wisatawan lain adalah cara termudah untuk berhemat. Untuk menyusun hari-harinya, baca <a href="/id/things-to-do/sumba-itinerary-5-7-10-days/">itinerary Sumba 5, 7, dan 10 hari</a> dan cek <a href="/id/things-to-do/best-time-to-visit-sumba/">waktu terbaik ke Sumba</a>, karena Juli-Agustus dan pekan Pasola membuat harga naik.</p>
+<p>Jika bepergian sendiri, Anda menanggung biaya mobil dan kamar sendirian, sehingga pengeluaran harian kelas menengah per orang naik tajam. Berbagi mobil dan sopir dengan wisatawan lain adalah cara termudah untuk berhemat. Untuk menyusun hari-harinya, baca <a href="/id/things-to-do/sumba-itinerary-5-7-10-days/">rencana perjalanan Sumba 5, 7, dan 10 hari</a> dan cek <a href="/id/things-to-do/best-time-to-visit-sumba/">waktu terbaik ke Sumba</a>, karena Juli-Agustus dan pekan Pasola membuat harga naik.</p>
 
 <h2>Uang tunai dan ATM</h2>
-<p>Di Sumba, uang tunai adalah raja. ATM ada di kota-kota utama, Tambolaka, Waikabubak, dan Waingapu, tetapi jarang atau tidak ada di pedesaan, pantai, dan kampung, dan bandara tidak punya tempat penukaran uang. Pembayaran kartu umumnya hanya di hotel besar.</p>
+<p>Di Sumba, uang tunai tetap yang utama. ATM ada di kota-kota utama, Tambolaka, Waikabubak, dan Waingapu, tetapi jarang atau tidak ada di pedesaan, pantai, dan kampung, dan bandara tidak punya tempat penukaran uang. Pembayaran kartu umumnya hanya di hotel besar.</p>
 <ul>
-<li>Tarik uang di kota untuk beberapa hari ke depan, dan simpan cadangan kalau ATM kosong atau gangguan.</li>
-<li>Bawa banyak uang pecahan kecil: donasi, parkir, warung, dan BBM eceran membutuhkannya.</li>
+<li>Tarik uang di kota untuk beberapa hari ke depan, dan simpan cadangan untuk berjaga-jaga jika ATM kosong atau sedang gangguan.</li>
+<li>Bawa banyak uang pecahan kecil untuk donasi, parkir, warung, dan BBM eceran.</li>
 <li>Bayar sopir dengan tunai; sepakati total di awal dan pastikan apa saja yang termasuk.</li>
 <li>Tawar-menawar secara wajar. Menawar terlalu keras untuk tenun ikat atau suvenir bisa menyinggung; lihat panduan <a href="/id/culture/sumba-ikat-weaving-where-to-buy/">tempat membeli tenun ikat di Sumba</a>.</li>
 </ul>
@@ -261,10 +261,10 @@ COSTS_ID = """<p>Pesawat turun di atas pantai kapur putih dan bukit hijau pucat,
 <h2>Cara berhemat (dan berbelanja lebih bijak)</h2>
 <ul>
 <li>Masuk lewat Tambolaka dan pulang lewat Waingapu (atau sebaliknya) agar tidak melewati jalan yang sama dua kali.</li>
-<li>Kurangi pindah penginapan: perjalanan jauh menghabiskan satu hari sewa mobil.</li>
+<li>Jangan terlalu sering berpindah penginapan: setiap perjalanan jauh menghabiskan satu hari sewa mobil.</li>
 <li>Makan siang di warung dan beli buah di pasar.</li>
 <li>Datang pada Mei-Juni atau September-Oktober: kering, tetapi lebih sepi daripada Juli-Agustus.</li>
-<li>Belanja di warga lokal: beli tenun langsung dari penenun dan beri donasi di kampung; dengan begitu pariwisata membantu Sumba.</li>
+<li>Berbelanjalah pada warga setempat: beli tenun langsung dari penenun dan beri donasi di kampung; dengan begitu pariwisata membantu Sumba.</li>
 </ul>
 <p>Sebelum berangkat, baca juga <a href="/id/getting-here/sumba-travel-safety-health/">panduan keamanan dan kesehatan di Sumba</a>.</p>"""
 
@@ -278,13 +278,13 @@ GUIDES.append({
   "body": COSTS_EN},
  "es": {
   "title": "¿Cuánto cuesta viajar a Sumba? Presupuesto mochilero, medio y de lujo",
-  "dek": "Vuelos, conductor, gasolina, donativos en los pueblos y una tabla de 7 días: lo que cuesta de verdad Sumba en 2026 y cómo gastarlo bien.",
-  "answer": "Para dos personas que viajan juntas 7 días, un viaje a Sumba cuesta en total unos 8,5-12,5 millones de rupias con presupuesto ajustado (unos 420-620 EUR), unos 15-29 millones en gama media con coche y conductor (unos 750-1.430 EUR) y desde unos 45 millones en resorts de alta gama. Los grandes gastos son los vuelos desde Bali (a menudo 2,3-2,8 millones ida y vuelta por persona), el alojamiento y el transporte (coche con conductor, unas 600.000-1.000.000 IDR al día); comida y entradas son baratas, pero lleva efectivo porque solo hay cajeros en las ciudades principales.",
+  "dek": "Vuelos, conductor, gasolina, donativos en los pueblos y una tabla para 7 días: lo que cuesta realmente viajar a Sumba en 2026 y cómo gastar con cabeza.",
+  "answer": "Para dos personas que viajan juntas 7 días, un viaje a Sumba cuesta en total unos 8,5-12,5 millones de rupias con presupuesto ajustado (unos 420-620 euros), unos 15-29 millones en gama media con coche y conductor (unos 750-1.430 euros) y desde unos 45 millones en resorts de alta gama. Los grandes gastos son los vuelos desde Bali (a menudo 2,3-2,8 millones ida y vuelta por persona), el alojamiento y el transporte (un coche con conductor cuesta unas 600.000-1.000.000 rupias al día); la comida y las entradas son baratas, pero lleva efectivo, porque solo hay cajeros en las ciudades principales.",
   "body": COSTS_ES},
  "id": {
   "title": "Berapa biaya liburan ke Sumba? Anggaran hemat, menengah, dan mewah",
-  "dek": "Tiket pesawat, sopir, BBM, donasi kampung, dan tabel anggaran 7 hari: biaya nyata ke Sumba pada 2026 dan cara membelanjakannya dengan bijak.",
-  "answer": "Untuk dua orang selama 7 hari, liburan ke Sumba menghabiskan total sekitar Rp8,5-12,5 juta untuk gaya hemat, sekitar Rp15-29 juta untuk kelas menengah dengan mobil dan sopir, dan mulai sekitar Rp45 juta jika menginap di resor mewah. Biaya terbesar adalah tiket pesawat dari Bali (sering sekitar Rp2,3-2,8 juta pulang-pergi per orang), penginapan, dan transportasi (mobil dengan sopir sekitar Rp600.000-1.000.000 per hari); makan dan tiket masuk tetap murah, tetapi bawa uang tunai karena ATM hanya ada di kota-kota utama.",
+  "dek": "Tiket pesawat, sopir, BBM, donasi kampung, dan tabel anggaran 7 hari: biaya sebenarnya berlibur ke Sumba pada 2026 dan cara membelanjakannya dengan bijak.",
+  "answer": "Untuk dua orang selama 7 hari, liburan ke Sumba menghabiskan total sekitar Rp 8,5-12,5 juta untuk gaya hemat, sekitar Rp 15-29 juta untuk kelas menengah dengan mobil dan sopir, dan mulai sekitar Rp 45 juta jika menginap di resor mewah. Biaya terbesar adalah tiket pesawat dari Bali (sering sekitar Rp 2,3-2,8 juta pulang-pergi per orang), penginapan, dan transportasi (mobil dengan sopir sekitar Rp 600.000-1.000.000 per hari); makan dan tiket masuk tetap murah, tetapi bawalah uang tunai karena ATM hanya ada di kota-kota utama.",
   "body": COSTS_ID},
  "facts": {
   "en": [
@@ -302,12 +302,12 @@ GUIDES.append({
    ["Donativo en pueblos", "Normalmente 10.000-40.000 IDR por persona; unas 50.000 en Ratenggaro"],
    ["7 días para dos personas", "Unos 8,5-12,5 M IDR mochilero, 15-29 M gama media, 45 M+ lujo"]],
   "id": [
-   ["Tiket PP Bali-Tambolaka", "Sering sekitar Rp2,3-2,8 juta per orang (akhir 2026)"],
-   ["Mobil dengan sopir", "Sekitar Rp600.000-1.000.000 per hari"],
-   ["Sewa motor", "Sekitar Rp150.000-200.000 per hari pada 2025-2026"],
-   ["Bensin (Pertalite)", "Rp10.000/liter di SPBU (Nov 2026); lebih mahal di pengecer"],
-   ["Donasi kampung adat", "Umumnya Rp10.000-40.000 per orang; sekitar Rp50.000 di Ratenggaro"],
-   ["7 hari untuk dua orang", "Sekitar Rp8,5-12,5 jt hemat, Rp15-29 jt menengah, Rp45 jt+ mewah"]]},
+   ["Tiket PP Bali-Tambolaka", "Sering sekitar Rp 2,3-2,8 juta per orang (akhir 2026)"],
+   ["Mobil dengan sopir", "Sekitar Rp 600.000-1.000.000 per hari"],
+   ["Sewa motor", "Sekitar Rp 150.000-200.000 per hari pada 2025-2026"],
+   ["Bensin (Pertalite)", "Rp 10.000/liter di SPBU (Nov 2026); lebih mahal di pengecer"],
+   ["Donasi kampung adat", "Umumnya Rp 10.000-40.000 per orang; sekitar Rp 50.000 di Ratenggaro"],
+   ["7 hari untuk dua orang", "Sekitar Rp 8,5-12,5 jt hemat, Rp 15-29 jt menengah, Rp 45 jt+ mewah"]]},
  "faq": {
   "en": [
    ["Is Sumba expensive compared with Bali?", "Day to day, Sumba is cheap: warung meals cost roughly IDR 20,000-50,000 and village donations are small. What makes it feel expensive is transport, since you usually need a car with driver (roughly IDR 600,000-1,000,000 a day), plus the flight from Bali and a limited choice of mid-range hotels."],
@@ -317,19 +317,19 @@ GUIDES.append({
    ["How much cash should I bring for a week in Sumba?", "It depends on your style, but plan to pay most things in cash: driver, fuel, warungs, donations and parking. Withdraw in town every few days rather than carrying everything, and keep a reserve in case an ATM is empty."],
    ["What is the cheapest way to travel around Sumba?", "A rented scooter (roughly IDR 150,000-200,000 a day in 2025-2026) plus public buses for the long cross-island leg. Buses are cheap but slow and irregular, and you need an International Driving Permit with a motorcycle category to ride legally."]],
   "es": [
-   ["¿Es Sumba cara comparada con Bali?", "En el día a día Sumba es barata: comer en un warung cuesta unas 20.000-50.000 IDR y los donativos en los pueblos son pequeños. Lo que la encarece es el transporte, porque casi siempre hace falta coche con conductor (unas 600.000-1.000.000 IDR al día), además del vuelo desde Bali y la escasa oferta de hoteles de gama media."],
-   ["¿Cuánto cuesta un coche con conductor al día en Sumba?", "Unas 600.000-1.000.000 IDR al día según guías recientes, y unos 75 USD en algunos presupuestos internacionales, sobre todo con guía o en temporada alta. Pregunta si incluye gasolina, comidas y alojamiento del conductor."],
-   ["¿Hay que pagar para visitar los pueblos tradicionales de Sumba?", "Normalmente sí: se firma un libro de visitas y se deja un donativo, en torno a 10.000-40.000 IDR por persona, y en Ratenggaro se han citado unas 50.000. Un manojo de nuez de betel es un regalo bien recibido. Pide siempre permiso antes de hacer fotos."],
+   ["¿Es Sumba más cara que Bali?", "En el día a día, Sumba es barata: comer en un warung cuesta unas 20.000-50.000 rupias y los donativos en los pueblos son pequeños. Lo que la encarece es el transporte, porque casi siempre hace falta coche con conductor (unas 600.000-1.000.000 rupias al día), además del vuelo desde Bali y la escasa oferta de hoteles de gama media."],
+   ["¿Cuánto cuesta un coche con conductor al día en Sumba?", "Unas 600.000-1.000.000 rupias al día según guías recientes, y unos 75 dólares en algunos presupuestos internacionales, sobre todo con guía o en temporada alta. Pregunta si el precio incluye la gasolina y las comidas y el alojamiento del conductor."],
+   ["¿Hay que pagar para visitar los pueblos tradicionales de Sumba?", "Normalmente sí: se firma un libro de visitas y se deja un donativo, en torno a 10.000-40.000 rupias por persona, y en Ratenggaro se han citado unas 50.000. Un manojo de nuez de betel es un regalo bien recibido. Pide siempre permiso antes de hacer fotos."],
    ["¿Hay cajeros automáticos en Sumba?", "Sí, en las ciudades principales: Tambolaka, Waikabubak y Waingapu. Son raros o inexistentes en el campo, las playas y los pueblos, y en los aeropuertos no hay cambio de moneda, así que saca efectivo en la ciudad y lleva billetes pequeños."],
-   ["¿Cuánto efectivo llevar para una semana en Sumba?", "Depende de tu estilo, pero cuenta con pagar casi todo en efectivo: conductor, gasolina, warungs, donativos y aparcamientos. Saca dinero en la ciudad cada pocos días en lugar de llevarlo todo encima y guarda una reserva por si un cajero está vacío."],
-   ["¿Cuál es la forma más barata de moverse por Sumba?", "Una moto de alquiler (unas 150.000-200.000 IDR al día en 2025-2026) y autobuses para el gran trayecto que cruza la isla. Los autobuses son baratos pero lentos e irregulares, y para conducir moto legalmente necesitas el permiso internacional con categoría de motocicleta."]],
+   ["¿Cuánto efectivo hay que llevar para una semana en Sumba?", "Depende de tu forma de viajar, pero cuenta con pagar casi todo en efectivo: conductor, gasolina, warungs, donativos y aparcamientos. Saca dinero en la ciudad cada pocos días en lugar de llevarlo todo encima y guarda una reserva por si un cajero está vacío."],
+   ["¿Cuál es la forma más barata de moverse por Sumba?", "Una moto de alquiler (unas 150.000-200.000 rupias al día en 2025-2026) y el autobús para el largo trayecto que cruza la isla. Los autobuses son baratos, pero lentos e irregulares, y para conducir una moto legalmente necesitas el permiso internacional con categoría de motocicleta."]],
   "id": [
-   ["Apakah Sumba lebih mahal daripada Bali?", "Untuk kebutuhan sehari-hari, Sumba murah: makan di warung sekitar Rp20.000-50.000 dan donasi kampung kecil. Yang membuatnya terasa mahal adalah transportasi, karena biasanya perlu mobil dengan sopir (sekitar Rp600.000-1.000.000 per hari), ditambah tiket pesawat dari Bali dan pilihan hotel menengah yang terbatas."],
-   ["Berapa sewa mobil dengan sopir per hari di Sumba?", "Sekitar Rp600.000-1.000.000 per hari menurut panduan terbaru, dan sekitar USD 75 di sebagian penawaran internasional, terutama jika termasuk pemandu atau di musim ramai. Tanyakan apakah sudah termasuk BBM, makan, dan penginapan sopir."],
-   ["Apakah harus membayar untuk masuk kampung adat di Sumba?", "Biasanya ya: Anda mengisi buku tamu dan memberi donasi, umumnya sekitar Rp10.000-40.000 per orang, dan di Ratenggaro dilaporkan sekitar Rp50.000. Sirih pinang adalah buah tangan yang dihargai. Selalu minta izin sebelum memotret."],
+   ["Apakah Sumba lebih mahal daripada Bali?", "Untuk kebutuhan sehari-hari, Sumba murah: makan di warung sekitar Rp 20.000-50.000 dan donasi di kampung tidak besar. Yang membuatnya terasa mahal adalah transportasi, karena biasanya perlu mobil dengan sopir (sekitar Rp 600.000-1.000.000 per hari), ditambah tiket pesawat dari Bali dan pilihan hotel menengah yang terbatas."],
+   ["Berapa sewa mobil dengan sopir per hari di Sumba?", "Sekitar Rp 600.000-1.000.000 per hari menurut panduan terbaru, dan sekitar USD 75 di sebagian penawaran internasional, terutama jika termasuk pemandu atau di musim ramai. Tanyakan apakah sudah termasuk BBM, makan, dan penginapan sopir."],
+   ["Apakah harus membayar untuk masuk kampung adat di Sumba?", "Biasanya ya: Anda mengisi buku tamu dan memberi donasi, umumnya sekitar Rp 10.000-40.000 per orang, dan di Ratenggaro dilaporkan sekitar Rp 50.000. Sirih pinang adalah buah tangan yang dihargai. Selalu minta izin sebelum memotret."],
    ["Apakah ada ATM di Sumba?", "Ada, di kota-kota utama: Tambolaka, Waikabubak, dan Waingapu. Di pedesaan, pantai, dan kampung jarang atau tidak ada, dan bandara tidak punya tempat penukaran uang, jadi tarik tunai di kota dan bawa pecahan kecil."],
-   ["Berapa uang tunai yang perlu dibawa untuk seminggu di Sumba?", "Tergantung gaya perjalanan, tetapi rencanakan membayar hampir semuanya tunai: sopir, BBM, warung, donasi, dan parkir. Tarik uang di kota setiap beberapa hari daripada membawa semuanya, dan simpan cadangan kalau ATM kosong."],
-   ["Apa cara termurah berkeliling Sumba?", "Sewa motor (sekitar Rp150.000-200.000 per hari pada 2025-2026) ditambah bus untuk perjalanan jauh lintas pulau. Bus murah tetapi lambat dan tidak teratur, dan wisatawan asing perlu SIM internasional golongan motor untuk berkendara secara sah."]]},
+   ["Berapa uang tunai yang perlu dibawa untuk seminggu di Sumba?", "Tergantung gaya perjalanan, tetapi rencanakan membayar hampir semuanya tunai: sopir, BBM, warung, donasi, dan parkir. Tarik uang di kota setiap beberapa hari alih-alih membawa semuanya sekaligus, dan simpan cadangan untuk berjaga-jaga jika ATM kosong."],
+   ["Apa cara termurah berkeliling Sumba?", "Sewa motor (sekitar Rp 150.000-200.000 per hari pada 2025-2026) ditambah bus untuk perjalanan jauh lintas pulau. Bus murah tetapi lambat dan tidak teratur, dan wisatawan asing perlu SIM internasional golongan motor untuk berkendara secara sah."]]},
  "places": [
   {"name": "Tambolaka", "lat": -9.4242, "lon": 119.2448, "area": "Southwest Sumba"},
   {"name": "Waikabubak", "lat": -9.6356, "lon": 119.4101, "area": "West Sumba"},
@@ -354,8 +354,8 @@ GUIDES.append({
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "caption": {
    "en": "Sumba, the 'island of a thousand hills': green grassland ridges seen from above.",
-   "es": "Sumba, la 'isla de las mil colinas': lomas de pradera verde vistas desde lo alto.",
-   "id": "Sumba, 'pulau seribu bukit': punggung bukit berumput hijau dilihat dari ketinggian."}}
+   "es": "Sumba, la \"isla de las mil colinas\": lomas cubiertas de pradera verde vistas desde lo alto.",
+   "id": "Sumba, \"pulau seribu bukit\": punggung bukit berumput hijau dilihat dari ketinggian."}}
 })
 
 # ---------------------------------------------------------------------------
@@ -427,21 +427,21 @@ AROUND_EN = """<p>On Sumba the road is part of the trip. It climbs from the coas
 <h2>Respect on the road</h2>
 <p>Slow down through villages, where children and animals share the road. If a funeral or ceremony blocks the way, wait patiently. Ask your driver before stopping to photograph people or houses, and leave a donation when you visit a village. Our guide to <a href="/en/culture/marapu-ikat-traditional-villages/">Marapu, ikat and traditional villages</a> explains the etiquette, and if you are wondering what all this costs, read <a href="/en/getting-here/sumba-travel-costs/">how much a trip to Sumba costs</a>.</p>"""
 
-AROUND_ES = """<p>En Sumba la carretera es parte del viaje. Sube desde la costa hacia praderas onduladas, baja a valles de arrozales y palmeras y atraviesa pueblos donde las casas de clan de techo altísimo rodean tumbas de piedra. Caballos y búfalos cruzan el asfalto, los niños saludan desde el patio del colegio y durante largos tramos el tuyo es el único coche. Es precioso, y es lento: Sumba mide unos 200 km de largo, es más o menos el doble que Bali, y las distancias del mapa siempre llevan más tiempo de lo que parece.</p>
-<p><strong>La respuesta corta:</strong> la forma más fácil de moverse por Sumba es alquilar coche con conductor local, por unas 600.000-1.000.000 IDR al día. La moto va bien para quien conduce con soltura y tiene el permiso adecuado, y los autobuses unen las ciudades principales, pero son lentos e irregulares. Calcula unas 4-5 horas en coche entre Tambolaka, en el oeste, y Waingapu, en el este; no conduzcas de noche, llena el depósito siempre que veas una gasolinera de verdad y descarga mapas sin conexión antes de salir de la ciudad.</p>
+AROUND_ES = """<p>En Sumba, la carretera forma parte del viaje. Sube desde la costa hacia praderas onduladas, baja a valles de arrozales y palmeras y atraviesa pueblos donde las casas de clan de techo altísimo rodean tumbas de piedra. Caballos y búfalos cruzan el asfalto, los niños saludan desde el patio del colegio y durante largos tramos el tuyo es el único coche. Es precioso, y también lento: Sumba mide unos 200 km de largo, casi el doble que Bali, y recorrer las distancias del mapa siempre lleva más tiempo de lo que parece.</p>
+<p><strong>La respuesta corta:</strong> la forma más fácil de moverse por Sumba es alquilar un coche con conductor local, por unas 600.000-1.000.000 rupias al día. La moto es una buena opción para quien conduce con soltura y tiene el permiso adecuado, y los autobuses unen las ciudades principales, pero son lentos e irregulares. Calcula unas 4-5 horas en coche entre Tambolaka, en el oeste, y Waingapu, en el este; no conduzcas de noche, llena el depósito siempre que veas una gasolinera propiamente dicha y descarga mapas sin conexión antes de salir de la ciudad.</p>
 
 <h2>Tus opciones de un vistazo</h2>
 <h3>Coche con conductor local (recomendado)</h3>
-<p>Es lo que hace la mayoría, y con razón. Hay pocas señales, a los pueblos se llega por desvíos sin indicar, y un conductor local sabe qué caminos están practicables, cuándo hay ceremonias y cómo presentarte con educación en un pueblo. Cuenta con unas 600.000-1.000.000 IDR al día en 2025-2026; algunas guías internacionales hablan de unos 75 USD. Pregunta si incluye gasolina, las comidas del conductor y su habitación en rutas de varios días, y acordad plan y precio la noche anterior. Hoteles y homestays pueden conseguir conductor, y en temporada alta (junio a agosto) conviene reservar.</p>
+<p>Es la opción de la mayoría, y con razón. Hay pocas señales, a los pueblos se llega por desvíos sin indicar y un conductor local sabe qué caminos son practicables, cuándo hay ceremonias y cómo presentarte con educación en un pueblo. Cuenta con unas 600.000-1.000.000 rupias al día en 2025-2026; algunas guías internacionales hablan de unos 75 dólares. Pregunta si incluye gasolina, las comidas del conductor y su habitación en rutas de varios días, y acuerda el plan y el precio la noche anterior. Hoteles y homestays pueden buscarte conductor, y en temporada alta (junio a agosto) conviene reservar.</p>
 <h3>Moto</h3>
-<p>Las motos cuestan unas 150.000-200.000 IDR al día en Tambolaka y Waingapu en 2025-2026, y en agosto pueden estar agotadas con dos semanas de antelación. Las flotas son más viejas que en Bali: revisa frenos, luces, neumáticos y claxon antes de salir. Conducir por las tranquilas carreteras de la costa oeste es una delicia, pero los días largos cruzando la isla cansan, el firme cambia rápido de asfalto liso a grava, arena o barro, y muchas cascadas y playas están al final de pistas malas.</p>
+<p>Las motos cuestan unas 150.000-200.000 rupias al día en Tambolaka y Waingapu en 2025-2026, y en agosto pueden estar agotadas con dos semanas de antelación. Las flotas son más viejas que en Bali: revisa frenos, luces, neumáticos y claxon antes de salir. Recorrer las tranquilas carreteras de la costa oeste es una delicia, pero las largas jornadas cruzando la isla agotan, el firme pasa en un instante del asfalto liso a la grava, la arena o el barro, y muchas cascadas y playas están al final de pistas en mal estado.</p>
 <h3>Coche sin conductor</h3>
-<p>Disponible en pocos sitios, por unas 400.000-650.000 IDR al día sin gasolina. Solo compensa si conduces con experiencia y te manejas con mapas sin conexión, y debes llevar el permiso internacional de conducir.</p>
+<p>Se ofrece en pocos sitios, por unas 400.000-650.000 rupias al día sin gasolina. Solo compensa si eres un conductor experimentado y te manejas con mapas sin conexión, y es obligatorio llevar el permiso internacional de conducir.</p>
 <h3>Autobuses, microbuses y coches compartidos</h3>
-<p>El transporte público une las ciudades principales. Listados antiguos indican un autobús diario a primera hora de Waitabula (Tambolaka) a Waingapu, por Waikabubak y Lewa, de unas 6 horas, y microbuses compartidos ("travel") más rápidos que salen cuando se llenan; de Waitabula a Waikabubak se tarda alrededor de 1,5 horas y a Kodi alrededor de 1 hora. De Waikabubak a Waingapu, unas 4,5 horas. Los billetes son baratos (decenas de miles de rupias), pero los horarios son flexibles, apenas hay servicio por la tarde-noche y no llegan a la mayoría de playas ni pueblos. Los mototaxis (ojek) sirven para trayectos cortos y se pueden contratar por día.</p>
+<p>El transporte público une las ciudades principales. Listados antiguos indican un autobús diario a primera hora de Waitabula (Tambolaka) a Waingapu, por Waikabubak y Lewa, de unas 6 horas, y microbuses compartidos ("travel") más rápidos que salen cuando se llenan; de Waitabula a Waikabubak se tarda alrededor de 1,5 horas y a Kodi alrededor de 1 hora. De Waikabubak a Waingapu, unas 4,5 horas. Los billetes son baratos (decenas de miles de rupias), pero los horarios son flexibles, apenas hay servicio a última hora del día y no llegan a la mayoría de las playas ni de los pueblos. Los mototaxis (ojek) sirven para trayectos cortos y se pueden contratar por día.</p>
 
 <h2>Tiempos reales entre los puntos principales</h2>
-<p>La tabla da distancias aproximadas por carretera (cálculo de rutas de OpenStreetMap, redondeado) y tiempos realistas en coche en temporada seca, a partir de testimonios locales y horarios de autobús. Las aplicaciones suelen quedarse cortas: suma tiempo para fotos, ganado, obras y lluvia.</p>
+<p>La tabla recoge distancias aproximadas por carretera (cálculo de rutas de OpenStreetMap, redondeado) y tiempos realistas en coche en temporada seca, a partir de testimonios locales y horarios de autobús. Las aplicaciones suelen quedarse cortas: añade tiempo para fotos, ganado, obras y lluvia.</p>
 <table>
 <thead><tr><th>Ruta</th><th>Distancia</th><th>Tiempo en coche</th></tr></thead>
 <tbody>
@@ -458,55 +458,55 @@ AROUND_ES = """<p>En Sumba la carretera es parte del viaje. Sube desde la costa 
 <tr><td>Waingapu a la playa de Tarimbang</td><td>unos 85-90 km</td><td>3-4 h, el último tramo lento</td></tr>
 <tr><td>Wairinding a Waikabubak</td><td>unos 110 km</td><td>3-4 h</td></tr>
 </tbody></table>
-<p>La carretera principal este-oeste pasa por Tambolaka, Waikabubak, Waibakul, Lewa y Waingapu. Lewa está más o menos a mitad de camino, y el desvío a Tarimbang sale hacia el sur justo al este. Tanggedu termina en una pista de tierra y piedras y una caminata de hasta 30 minutos por trayecto (motoristas locales ofrecen llevarte en el último tramo). Para saber qué ver por el camino, lee nuestra guía de <a href="/es/things-to-do/beaches-lagoons-waterfalls/">playas, lagunas y cascadas</a>, y para encadenarlo todo, nuestros <a href="/es/things-to-do/sumba-itinerary-5-7-10-days/">itinerarios de 5, 7 y 10 días</a>.</p>
+<p>La carretera principal este-oeste pasa por Tambolaka, Waikabubak, Waibakul, Lewa y Waingapu. Lewa está más o menos a mitad de camino, y el desvío a Tarimbang sale hacia el sur justo al este. Para llegar a Tanggedu hay que recorrer una pista de tierra y piedras y caminar hasta 30 minutos por trayecto (los motoristas locales se ofrecen a llevarte en el último tramo). Para saber qué ver por el camino, lee nuestra guía de <a href="/es/things-to-do/beaches-lagoons-waterfalls/">playas, lagunas y cascadas</a>, y para encadenarlo todo, nuestros <a href="/es/things-to-do/sumba-itinerary-5-7-10-days/">itinerarios de 5, 7 y 10 días</a>.</p>
 
 <h2>Estado de las carreteras y estaciones</h2>
-<p>Hay poco tráfico, y la carretera transversal de Sumba y la costera del norte en el oeste son casi todo asfalto. Fuera de ellas, todo cambia rápido: baches, grava, arena, cuestas fuertes y puentes estrechos. Muchos caminos a playas y pueblos son pistas de tierra, y algunos solo se pueden recorrer en seco. Cuenta con cabras, vacas, caballos, perros y vehículos por el carril contrario.</p>
-<p>En la estación de lluvias (más o menos de noviembre/diciembre a marzo) algunas rutas se inundan o se convierten en barro, y unas pocas pueden quedar casi intransitables; en la seca (más o menos de mayo a septiembre, y hasta noviembre en el este) todo es más fácil. Consulta <a href="/es/things-to-do/best-time-to-visit-sumba/">la mejor época para viajar a Sumba</a>. Sea cual sea la estación, lo más sencillo es llegar por un aeropuerto y salir por el otro, para cruzar la isla una sola vez; mira <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a>.</p>
+<p>Hay poco tráfico, y tanto la carretera transversal de Sumba como la costera del norte, en el oeste, están asfaltadas casi en su totalidad. Fuera de ellas, el panorama cambia rápido: baches, grava, arena, cuestas fuertes y puentes estrechos. Muchos caminos a playas y pueblos son pistas de tierra, y algunos solo son transitables con tiempo seco. Cuenta con encontrarte cabras, vacas, caballos, perros y vehículos por el carril contrario.</p>
+<p>En la estación de lluvias (más o menos de noviembre/diciembre a marzo) algunas rutas se inundan o se convierten en barro, y unas pocas pueden quedar casi intransitables; en la seca (más o menos de mayo a septiembre, y hasta noviembre en el este) todo es más fácil. Consulta <a href="/es/things-to-do/best-time-to-visit-sumba/">la mejor época para viajar a Sumba</a>. Sea cual sea la estación, lo más sencillo es llegar por un aeropuerto y salir por el otro, para cruzar la isla una sola vez; consulta <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a>.</p>
 
 <h2>Conducir de noche</h2>
-<p>Evítalo. Fuera de las ciudades apenas hay alumbrado, los animales duermen sobre el asfalto caliente, los baches no se ven y, si tienes una avería, puede no haber cobertura. Las guías de viaje llevan años desaconsejando circular de noche por zonas remotas del oeste y suroeste de Sumba, incluida la zona de Kodi, y los conductores locales prefieren estar en casa al anochecer. Organiza los traslados largos para terminar a media tarde (el sol se pone hacia las 18:00 WITA casi todo el año), y ten en cuenta que algunos lugares, como la laguna de Weekuri, han cerrado hacia las 17:00. Más consejos en nuestra <a href="/es/getting-here/sumba-travel-safety-health/">guía de seguridad y salud en Sumba</a>.</p>
+<p>Evítalo. Fuera de las ciudades apenas hay alumbrado, los animales duermen sobre el asfalto caliente, los baches no se ven y, si tienes una avería, puede no haber cobertura. Las guías de viaje llevan años desaconsejando circular de noche por zonas remotas del oeste y suroeste de Sumba, incluida la zona de Kodi, y los conductores locales prefieren estar en casa antes de que anochezca. Organiza los traslados largos para terminar a media tarde (el sol se pone hacia las 18:00 WITA casi todo el año), y ten en cuenta que algunos lugares, como la laguna de Weekuri, han cerrado hacia las 17:00. Más consejos en nuestra <a href="/es/getting-here/sumba-travel-safety-health/">guía de seguridad y salud en Sumba</a>.</p>
 
 <h2>Gasolina: precios, escasez y límites</h2>
-<p>Las gasolineras (SPBU) están en las ciudades y sus alrededores, y escasean en el resto. Llena el depósito siempre que pases por una de verdad.</p>
+<p>Las gasolineras (SPBU) están en las ciudades y sus alrededores, y escasean en el resto. Llena el depósito siempre que pases por una.</p>
 <ul>
-<li><strong>Precios:</strong> en noviembre de 2026 la Pertalite, la gasolina normal subvencionada, costaba 10.000 IDR el litro en surtidor; la Pertamax, de mayor octanaje, 15.950.</li>
-<li><strong>Venta en la carretera:</strong> en los pueblos se vende gasolina en botellas en pequeños puestos. Sirve para una emergencia, pero es más cara: en Waingapu, en octubre de 2026, una botella de 1,5 litros costaba unas 20.000 IDR, y la calidad varía.</li>
-<li><strong>Escasez y colas:</strong> Sumba sufre episodios repetidos de colas en las gasolineras. A mediados de octubre de 2026, el suministro a las estaciones de Waingapu bajó de unos 16.000 a 8.000 litros diarios por tipo de combustible, y las colas llegaron a la carretera principal. Las autoridades culpan en parte a revendedores que compran combustible subvencionado para revenderlo; en 2024 las cuatro regencias acordaron ajustar cupos y prohibir comprarlo para reventa. Desde finales de octubre de 2026, el gobierno local del oeste limita además la compra de Pertalite y Pertamax a 5 litros por moto y 15 por coche (lo contamos <a href="/es/living/pertamina-fuel-shipment-sumba-queues/">aquí</a>).</li>
+<li><strong>Precios:</strong> en noviembre de 2026 la Pertalite, la gasolina normal subvencionada, costaba 10.000 rupias el litro en surtidor; la Pertamax, de mayor octanaje, 15.950.</li>
+<li><strong>Venta en la carretera:</strong> en los pueblos se vende gasolina en botellas en pequeños puestos. Sirve para una emergencia, pero es más cara: en Waingapu, en octubre de 2026, una botella de 1,5 litros costaba unas 20.000 rupias, y la calidad varía.</li>
+<li><strong>Escasez y colas:</strong> en Sumba se repiten los episodios de colas en las gasolineras. A mediados de octubre de 2026, el suministro a las estaciones de Waingapu bajó de unos 16.000 a 8.000 litros diarios por tipo de combustible, y las colas llegaron a la carretera principal. Las autoridades culpan en parte a quienes compran combustible subvencionado para revenderlo; en 2024 las cuatro regencias acordaron ajustar los cupos y prohibir su compra para la reventa. Desde finales de octubre de 2026, el gobierno local del oeste limita además la compra de Pertalite y Pertamax a 5 litros por moto y 15 por coche (lo contamos <a href="/es/living/pertamina-fuel-shipment-sumba-queues/">aquí</a>).</li>
 <li><strong>Límites:</strong> la Pertalite subvencionada para coches está ligada al registro con código QR de Pertamina, que gestionan los conductores de alquiler. Si hay mucha cola, la fila de Pertamax (sin subvención) suele ir más rápida. No bajes nunca de medio depósito antes de un tramo remoto.</li>
 </ul>
 
 <h2>Permiso internacional de conducir</h2>
-<p>Para conducir coche o moto en Indonesia, los extranjeros necesitan su carné nacional más el permiso internacional de conducir (PIC) expedido en su país. Indonesia sigue el formato de la Convención de Ginebra de 1949, y el permiso debe incluir la categoría correcta: A para motos y scooters, B para coches. Un carné solo de coche no cubre una moto de 125 cc. La policía puede multar en el acto, unas 300.000-500.000 IDR por cada documento que falte, y el casco es obligatorio. Más importante aún: el seguro de viaje puede negarse a pagar los gastos médicos de un accidente si no tenías permiso para ese vehículo. Muchas tiendas de alquiler no piden el permiso internacional; eso no hace legal conducir sin él.</p>
+<p>Para conducir coche o moto en Indonesia, los extranjeros necesitan su carné nacional más el permiso internacional de conducir (PIC) expedido en su país. Indonesia sigue el formato de la Convención de Ginebra de 1949, y el permiso debe incluir la categoría correcta: A para motos y scooters, B para coches. Un carné que solo sea de coche no cubre una moto de 125 cc. La policía puede poner multas en el acto, unas 300.000-500.000 rupias por cada documento que falte, y el casco es obligatorio. Más importante aún: el seguro de viaje puede negarse a pagar los gastos médicos de un accidente si no tenías permiso para ese vehículo. Muchas empresas de alquiler no piden el permiso internacional, pero eso no hace legal conducir sin él.</p>
 
 <h2>Mapas, aplicaciones y cobertura</h2>
 <ul>
 <li><strong>Descarga mapas sin conexión</strong> (zonas offline de Google Maps, o apps como Maps.me u OsmAnd) de toda la isla antes de salir de una ciudad con wifi. Los datos móviles desaparecen en muchas colinas y valles.</li>
 <li><strong>Usa el modo coche</strong> incluso en moto: las rutas de coche de Google suelen ir por mejores carreteras, mientras que las de moto pueden meterte por pistas.</li>
 <li><strong>Suma tiempo:</strong> los trayectos suelen durar más de lo que dice Google Maps.</li>
-<li><strong>Hazte con una SIM de Telkomsel:</strong> es la de mayor cobertura en Sumba, y las demás flojean fuera de las ciudades. Cómprala en Bali, y recuerda que aun así la cobertura es irregular, sobre todo en el interior central y oriental y en lugares como Tanggedu.</li>
+<li><strong>Hazte con una SIM de Telkomsel:</strong> es la de mayor cobertura en Sumba, y las demás fallan fuera de las ciudades. Cómprala en Bali y recuerda que, aun así, la cobertura es irregular, sobre todo en el interior central y oriental y en lugares como Tanggedu.</li>
 <li><strong>Sin apps de transporte:</strong> no hay coches de Grab ni Gojek como en Bali, ni taxis con taxímetro; acuerda el precio antes de cada trayecto.</li>
-<li><strong>Guarda los números:</strong> apunta en papel el teléfono del conductor y del alojamiento, por si te quedas sin batería.</li>
+<li><strong>Guarda los números:</strong> apunta también en papel el teléfono del conductor y del alojamiento, por si te quedas sin batería.</li>
 </ul>
 
 <h2>Respeto en la carretera</h2>
 <p>Reduce la velocidad al cruzar pueblos, donde niños y animales comparten la calzada. Si un funeral o una ceremonia corta el paso, espera con paciencia. Pregunta al conductor antes de parar a fotografiar personas o casas, y deja un donativo cuando visites un pueblo. Nuestra guía sobre <a href="/es/culture/marapu-ikat-traditional-villages/">el Marapu, el ikat y los pueblos tradicionales</a> explica las normas, y si te preguntas cuánto cuesta todo esto, lee <a href="/es/getting-here/sumba-travel-costs/">cuánto cuesta viajar a Sumba</a>.</p>"""
 
-AROUND_ID = """<p>Di Sumba, jalan adalah bagian dari perjalanan. Jalan naik dari pesisir ke padang rumput yang bergelombang, turun ke lembah sawah dan pohon lontar, lalu melewati kampung tempat rumah adat beratap menjulang mengelilingi kubur batu. Kuda dan kerbau menyeberang aspal, anak-anak melambai dari halaman sekolah, dan di banyak ruas hanya mobil Anda yang lewat. Indah, dan lambat: panjang Sumba sekitar 200 km, kira-kira dua kali luas Bali, dan jarak di peta selalu memakan waktu lebih lama dari dugaan.</p>
-<p><strong>Jawaban singkat:</strong> cara termudah berkeliling Sumba adalah menyewa mobil dengan sopir lokal, sekitar Rp600.000-1.000.000 per hari. Motor cocok untuk pengendara yang percaya diri dan punya SIM yang sesuai, sedangkan bus menghubungkan kota-kota utama tetapi lambat dan tidak teratur. Siapkan sekitar 4-5 jam perjalanan darat antara Tambolaka di barat dan Waingapu di timur, hindari berkendara malam, isi BBM setiap kali melihat SPBU, dan unduh peta offline sebelum meninggalkan kota.</p>
+AROUND_ID = """<p>Di Sumba, jalan adalah bagian dari perjalanan. Jalannya mendaki dari pesisir ke padang rumput yang bergelombang, turun ke lembah sawah dan pohon lontar, lalu melewati kampung tempat rumah adat beratap menjulang mengelilingi kubur batu. Kuda dan kerbau melintas di aspal, anak-anak melambai dari halaman sekolah, dan di banyak ruas hanya mobil Anda yang lewat. Indah, tetapi lambat: panjang Sumba sekitar 200 km, kira-kira dua kali luas Bali, dan jarak di peta selalu memakan waktu lebih lama dari dugaan.</p>
+<p><strong>Jawaban singkat:</strong> cara termudah berkeliling Sumba adalah menyewa mobil dengan sopir lokal, sekitar Rp 600.000-1.000.000 per hari. Motor cocok untuk pengendara yang percaya diri dan punya SIM yang sesuai, sedangkan bus menghubungkan kota-kota utama tetapi lambat dan tidak teratur. Siapkan sekitar 4-5 jam perjalanan darat antara Tambolaka di barat dan Waingapu di timur, hindari berkendara malam, isi BBM setiap kali melihat SPBU, dan unduh peta offline sebelum meninggalkan kota.</p>
 
 <h2>Pilihan transportasi</h2>
 <h3>Mobil dengan sopir lokal (disarankan)</h3>
-<p>Ini pilihan kebanyakan wisatawan, dan alasannya jelas. Rambu jalan jarang, kampung dicapai lewat belokan tanpa penanda, dan sopir lokal tahu jalan mana yang bisa dilewati, kapan ada upacara adat, dan cara memperkenalkan Anda dengan sopan di kampung. Siapkan sekitar Rp600.000-1.000.000 per hari pada 2025-2026; sebagian panduan internasional menyebut sekitar USD 75. Tanyakan apakah sudah termasuk BBM, makan sopir, dan kamar sopir untuk perjalanan menginap, dan sepakati rencana serta harga sehari sebelumnya. Hotel dan homestay bisa mencarikan sopir, dan pada musim ramai (Juni-Agustus) sebaiknya pesan lebih awal.</p>
+<p>Inilah pilihan kebanyakan wisatawan, dan alasannya jelas. Rambu jalan jarang, kampung dicapai lewat belokan tanpa penanda, dan sopir lokal tahu jalan mana yang bisa dilewati, kapan ada upacara adat, dan cara memperkenalkan Anda dengan sopan di kampung. Siapkan sekitar Rp 600.000-1.000.000 per hari pada 2025-2026; sebagian panduan internasional menyebut sekitar USD 75. Tanyakan apakah sudah termasuk BBM, makan sopir, dan kamar sopir untuk perjalanan beberapa hari, serta sepakati rencana serta harga sehari sebelumnya. Hotel dan homestay bisa mencarikan sopir, dan pada musim ramai (Juni-Agustus) sebaiknya pesan lebih awal.</p>
 <h3>Motor</h3>
-<p>Sewa motor sekitar Rp150.000-200.000 per hari di Tambolaka dan Waingapu pada 2025-2026, dan pada Agustus bisa habis dipesan dua minggu sebelumnya. Armadanya lebih tua daripada di Bali: cek rem, lampu, ban, dan klakson sebelum berangkat. Berkendara di jalan pesisir barat yang sepi sangat menyenangkan, tetapi perjalanan panjang lintas pulau melelahkan, permukaan jalan cepat berubah dari aspal mulus ke kerikil, pasir, atau lumpur, dan banyak air terjun serta pantai berada di ujung jalan rusak.</p>
+<p>Sewa motor sekitar Rp 150.000-200.000 per hari di Tambolaka dan Waingapu pada 2025-2026, dan pada Agustus bisa habis dipesan dua minggu sebelumnya. Armadanya lebih tua daripada di Bali: cek rem, lampu, ban, dan klakson sebelum berangkat. Berkendara di jalan pesisir barat yang sepi sangat menyenangkan, tetapi perjalanan panjang lintas pulau melelahkan, permukaan jalan cepat berubah dari aspal mulus ke kerikil, pasir, atau lumpur, dan banyak air terjun serta pantai berada di ujung jalan rusak.</p>
 <h3>Mobil lepas kunci</h3>
-<p>Tersedia di beberapa tempat, sekitar Rp400.000-650.000 per hari tanpa BBM. Hanya layak jika Anda pengemudi berpengalaman yang terbiasa dengan peta offline, dan wisatawan asing wajib membawa SIM internasional.</p>
+<p>Tersedia di beberapa tempat, sekitar Rp 400.000-650.000 per hari tanpa BBM. Pilihan ini hanya layak jika Anda pengemudi berpengalaman yang terbiasa dengan peta offline, dan wisatawan asing wajib membawa SIM internasional.</p>
 <h3>Bus, angkutan, dan travel</h3>
 <p>Angkutan umum menghubungkan kota-kota utama. Data lama menyebut ada bus harian pagi-pagi dari Waitabula (Tambolaka) ke Waingapu lewat Waikabubak dan Lewa sekitar 6 jam, serta minibus "travel" yang lebih cepat dan berangkat saat penuh; dari Waitabula ke Waikabubak sekitar 1,5 jam dan ke Kodi sekitar 1 jam. Dari Waikabubak ke Waingapu sekitar 4,5 jam. Ongkosnya murah (puluhan ribu rupiah), tetapi jadwalnya longgar, hampir tidak ada layanan malam, dan tidak menjangkau sebagian besar pantai atau kampung. Ojek bisa dipakai untuk jarak dekat dan bisa disewa harian.</p>
 
-<h2>Waktu tempuh nyata antar titik utama</h2>
-<p>Tabel berikut memuat perkiraan jarak jalan (dari perhitungan rute OpenStreetMap, dibulatkan) dan waktu tempuh realistis dengan mobil di musim kemarau, berdasarkan laporan setempat dan jadwal bus. Aplikasi peta cenderung meremehkan: tambahkan waktu untuk berhenti memotret, ternak, perbaikan jalan, dan hujan.</p>
+<h2>Waktu tempuh sebenarnya antarkota dan objek utama</h2>
+<p>Tabel berikut memuat perkiraan jarak jalan (dari perhitungan rute OpenStreetMap, dibulatkan) dan waktu tempuh realistis dengan mobil di musim kemarau, berdasarkan laporan setempat dan jadwal bus. Perkiraan aplikasi peta cenderung terlalu singkat: tambahkan waktu untuk berhenti memotret, ternak, perbaikan jalan, dan hujan.</p>
 <table>
 <thead><tr><th>Rute</th><th>Jarak</th><th>Waktu tempuh</th></tr></thead>
 <tbody>
@@ -523,39 +523,39 @@ AROUND_ID = """<p>Di Sumba, jalan adalah bagian dari perjalanan. Jalan naik dari
 <tr><td>Waingapu ke Pantai Tarimbang</td><td>sekitar 85-90 km</td><td>3-4 jam, ruas akhir lambat</td></tr>
 <tr><td>Wairinding ke Waikabubak</td><td>sekitar 110 km</td><td>3-4 jam</td></tr>
 </tbody></table>
-<p>Jalan utama timur-barat melewati Tambolaka, Waikabubak, Waibakul, Lewa, dan Waingapu. Lewa kira-kira di tengah, dan jalan ke Tarimbang berbelok ke selatan tepat di timurnya. Tanggedu diakhiri jalan tanah berbatu dan jalan kaki hingga sekitar 30 menit sekali jalan (ojek warga menawarkan tumpangan untuk ruas terakhir). Untuk tempat yang bisa disinggahi, baca panduan <a href="/id/things-to-do/beaches-lagoons-waterfalls/">pantai, laguna, dan air terjun</a>, dan untuk merangkai semuanya, <a href="/id/things-to-do/sumba-itinerary-5-7-10-days/">itinerary 5, 7, dan 10 hari</a> kami.</p>
+<p>Jalan utama timur-barat melewati Tambolaka, Waikabubak, Waibakul, Lewa, dan Waingapu. Lewa kira-kira di tengah, dan jalan ke Tarimbang berbelok ke selatan tepat di timurnya. Menuju Tanggedu, perjalanan diakhiri jalan tanah berbatu dan berjalan kaki hingga sekitar 30 menit sekali jalan (ojek warga menawarkan tumpangan untuk ruas terakhir). Untuk tempat yang bisa disinggahi, baca panduan <a href="/id/things-to-do/beaches-lagoons-waterfalls/">pantai, laguna, dan air terjun</a>, dan untuk merangkai semuanya, panduan <a href="/id/things-to-do/sumba-itinerary-5-7-10-days/">rencana perjalanan 5, 7, dan 10 hari</a> kami.</p>
 
 <h2>Kondisi jalan dan musim</h2>
-<p>Lalu lintas sepi, dan jalan trans-Sumba serta jalan pantai utara di wilayah barat sebagian besar beraspal. Di luar itu, kondisi cepat berubah: lubang, kerikil, pasir, tanjakan curam, dan jembatan sempit. Banyak jalan ke pantai dan kampung masih tanah, dan sebagian hanya bisa dilewati saat kering. Waspadai kambing, sapi, kuda, anjing, dan kendaraan yang mengambil lajur berlawanan.</p>
-<p>Di musim hujan (kira-kira November/Desember sampai Maret) beberapa rute tergenang atau berlumpur, dan sebagian hampir tidak bisa dilewati; di musim kemarau (kira-kira Mei sampai September, hingga November di timur) semuanya lebih mudah. Lihat panduan <a href="/id/things-to-do/best-time-to-visit-sumba/">waktu terbaik ke Sumba</a>. Apa pun musimnya, rencana paling sederhana adalah tiba di satu bandara dan pulang dari bandara lainnya, sehingga Anda hanya sekali menyeberangi pulau; baca <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a>.</p>
+<p>Lalu lintas sepi, dan jalan trans-Sumba serta jalan pantai utara di wilayah barat sebagian besar beraspal. Di luar kedua jalan itu, kondisinya cepat berubah: lubang, kerikil, pasir, tanjakan curam, dan jembatan sempit. Banyak jalan ke pantai dan kampung masih tanah, dan sebagian hanya bisa dilewati saat kering. Waspadai kambing, sapi, kuda, anjing, dan kendaraan yang mengambil lajur berlawanan.</p>
+<p>Di musim hujan (kira-kira November/Desember sampai Maret) beberapa rute tergenang atau berlumpur, dan sebagian hampir tidak bisa dilewati; di musim kemarau (kira-kira Mei sampai September, hingga November di timur) semuanya lebih mudah. Lihat panduan <a href="/id/things-to-do/best-time-to-visit-sumba/">waktu terbaik ke Sumba</a>. Apa pun musimnya, rencana paling sederhana adalah tiba di satu bandara dan pulang dari bandara lainnya, sehingga Anda hanya sekali melintasi pulau; baca <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a>.</p>
 
 <h2>Berkendara malam hari</h2>
-<p>Hindari. Di luar kota hampir tidak ada penerangan jalan, hewan tidur di atas aspal yang hangat, lubang tidak terlihat, dan jika kendaraan mogok bisa jadi tidak ada sinyal. Panduan wisata sejak lama juga menyarankan tidak bepergian setelah gelap di daerah terpencil Sumba Barat dan Sumba Barat Daya, termasuk wilayah Kodi, dan sopir lokal umumnya memilih sudah di rumah saat malam. Atur perjalanan jauh agar selesai sore hari (matahari terbenam sekitar pukul 18.00 WITA hampir sepanjang tahun), dan ingat beberapa objek wisata, seperti Danau Weekuri, pernah tutup sekitar pukul 17.00. Tips lain ada di <a href="/id/getting-here/sumba-travel-safety-health/">panduan keamanan dan kesehatan di Sumba</a>.</p>
+<p>Sebaiknya hindari. Di luar kota hampir tidak ada penerangan jalan, hewan tidur di atas aspal yang hangat, lubang tidak terlihat, dan jika kendaraan mogok bisa jadi tidak ada sinyal. Panduan wisata sejak lama juga menyarankan tidak bepergian setelah gelap di daerah terpencil Sumba Barat dan Sumba Barat Daya, termasuk wilayah Kodi, dan sopir lokal umumnya memilih sudah tiba di rumah sebelum malam. Atur perjalanan jauh agar selesai sore hari (matahari terbenam sekitar pukul 18.00 WITA hampir sepanjang tahun), dan ingat beberapa objek wisata, seperti Danau Weekuri, pernah tutup sekitar pukul 17.00. Tips lain ada di <a href="/id/getting-here/sumba-travel-safety-health/">panduan keamanan dan kesehatan di Sumba</a>.</p>
 
 <h2>BBM: harga, kelangkaan, dan pembatasan</h2>
-<p>SPBU ada di kota dan sekitarnya, tetapi jarang di tempat lain. Isi penuh setiap kali melewati SPBU.</p>
+<p>SPBU ada di kota dan sekitarnya, tetapi jarang di tempat lain. Isi tangki sampai penuh setiap kali melewati SPBU.</p>
 <ul>
-<li><strong>Harga:</strong> pada November 2026 Pertalite, bensin bersubsidi, Rp10.000 per liter di SPBU; Pertamax Rp15.950.</li>
-<li><strong>Pengecer:</strong> di kampung, bensin dijual dalam botol di kios. Boleh untuk darurat, tetapi lebih mahal: di Waingapu pada Oktober 2026 satu botol 1,5 liter sekitar Rp20.000, dan kualitasnya bervariasi.</li>
-<li><strong>Kelangkaan dan antrean:</strong> Sumba berulang kali mengalami antrean BBM. Pada pertengahan Oktober 2026, pasokan ke SPBU di Waingapu turun dari sekitar 16.000 menjadi 8.000 liter per hari per jenis BBM, dan antrean meluber ke jalan utama. Pihak berwenang menyebut salah satu penyebabnya pengecer yang membeli BBM bersubsidi untuk dijual kembali; pada 2024 empat kabupaten di Sumba sepakat menyesuaikan kuota dan melarang pembelian BBM bersubsidi untuk diecer. Sejak akhir Oktober 2026, pemerintah daerah di bagian barat juga membatasi pembelian Pertalite dan Pertamax 5 liter untuk motor dan 15 liter untuk mobil (<a href="/id/living/pertamina-fuel-shipment-sumba-queues/">baca beritanya</a>).</li>
+<li><strong>Harga:</strong> pada November 2026, Pertalite, bensin bersubsidi, dijual Rp 10.000 per liter di SPBU, sedangkan Pertamax Rp 15.950.</li>
+<li><strong>Pengecer:</strong> di kampung, bensin dijual dalam botol di kios. Boleh dipakai saat darurat, tetapi harganya lebih mahal: di Waingapu pada Oktober 2026 satu botol 1,5 liter sekitar Rp 20.000, dan kualitasnya bervariasi.</li>
+<li><strong>Kelangkaan dan antrean:</strong> Sumba berulang kali mengalami antrean BBM. Pada pertengahan Oktober 2026, pasokan ke SPBU di Waingapu turun dari sekitar 16.000 menjadi 8.000 liter per hari per jenis BBM, dan antrean meluber ke jalan utama. Pihak berwenang menyebut salah satu penyebabnya adalah pengecer yang membeli BBM bersubsidi untuk dijual kembali; pada 2024 empat kabupaten di Sumba sepakat menyesuaikan kuota dan melarang pembelian BBM bersubsidi untuk diecer. Sejak akhir Oktober 2026, pemerintah daerah di bagian barat juga membatasi pembelian Pertalite dan Pertamax 5 liter untuk motor dan 15 liter untuk mobil (<a href="/id/living/pertamina-fuel-shipment-sumba-queues/">baca beritanya</a>).</li>
 <li><strong>Pembatasan:</strong> pembelian Pertalite untuk mobil terkait pendaftaran kode QR Pertamina, yang diurus sopir rental. Jika antrean panjang, jalur Pertamax (nonsubsidi) sering lebih cepat. Jangan biarkan tangki di bawah setengah sebelum melewati ruas terpencil.</li>
 </ul>
 
 <h2>SIM internasional</h2>
-<p>Untuk mengemudi mobil atau motor di Indonesia, wisatawan asing memerlukan SIM dari negaranya ditambah International Driving Permit (IDP) yang diterbitkan di negara asal. Indonesia mengikuti format Konvensi Jenewa 1949, dan IDP harus mencakup golongan yang tepat: A untuk motor, B untuk mobil. SIM mobil saja tidak mencakup motor 125 cc. Polisi bisa menilang di tempat, sekitar Rp300.000-500.000 untuk setiap dokumen yang tidak ada, dan helm wajib. Yang lebih penting, asuransi perjalanan bisa menolak membayar biaya medis kecelakaan jika Anda tidak berhak mengendarai kendaraan itu. Banyak tempat sewa tidak menanyakan IDP; itu tidak membuat berkendara tanpa IDP menjadi sah.</p>
+<p>Untuk mengemudi mobil atau motor di Indonesia, wisatawan asing memerlukan SIM dari negaranya ditambah SIM internasional atau International Driving Permit (IDP) yang diterbitkan di negara asal. Indonesia mengikuti format Konvensi Jenewa 1949, dan IDP harus mencakup golongan yang tepat: A untuk motor, B untuk mobil. SIM mobil saja tidak mencakup motor 125 cc. Polisi bisa menilang di tempat, sekitar Rp 300.000-500.000 untuk setiap dokumen yang tidak ada, dan helm wajib dipakai. Yang lebih penting, asuransi perjalanan bisa menolak membayar biaya medis kecelakaan jika Anda tidak berhak mengendarai kendaraan itu. Banyak tempat penyewaan tidak menanyakan IDP, tetapi hal itu tidak membuat berkendara tanpa IDP menjadi sah.</p>
 
 <h2>Peta, aplikasi, dan sinyal</h2>
 <ul>
-<li><strong>Unduh peta offline</strong> (area offline Google Maps, atau aplikasi seperti Maps.me atau OsmAnd) untuk seluruh pulau sebelum meninggalkan kota yang ada Wi-Fi. Data seluler hilang di banyak bukit dan lembah.</li>
+<li><strong>Unduh peta offline</strong> (area offline Google Maps, atau aplikasi seperti Maps.me atau OsmAnd) untuk seluruh pulau sebelum meninggalkan kota yang memiliki Wi-Fi. Data seluler hilang di banyak bukit dan lembah.</li>
 <li><strong>Gunakan mode mobil</strong> meski naik motor: rute mobil Google cenderung lewat jalan yang lebih baik, sedangkan rute motor bisa membawa Anda ke jalan setapak.</li>
 <li><strong>Tambahkan waktu:</strong> perjalanan sering lebih lama daripada perkiraan Google Maps.</li>
 <li><strong>Pakai SIM Telkomsel:</strong> jangkauannya paling luas di Sumba, sedangkan operator lain lemah di luar kota. Belilah di Bali, dan ingat sinyal tetap putus-putus, terutama di pedalaman tengah dan timur serta di tempat seperti Tanggedu.</li>
 <li><strong>Tanpa ojek daring:</strong> tidak ada mobil Grab atau Gojek seperti di Bali, dan tidak ada taksi argo; sepakati harga sebelum setiap perjalanan.</li>
-<li><strong>Catat nomor penting:</strong> tulis nomor sopir dan penginapan di kertas juga, kalau-kalau baterai ponsel habis.</li>
+<li><strong>Catat nomor penting:</strong> tulis juga nomor sopir dan penginapan di kertas, untuk berjaga-jaga jika baterai ponsel habis.</li>
 </ul>
 
 <h2>Sopan santun di jalan</h2>
-<p>Pelankan kendaraan saat melewati kampung, tempat anak-anak dan hewan berbagi jalan. Jika upacara kematian atau upacara adat menutup jalan, tunggulah dengan sabar. Tanyakan sopir sebelum berhenti untuk memotret orang atau rumah, dan beri donasi saat mengunjungi kampung. Panduan <a href="/id/culture/marapu-ikat-traditional-villages/">Marapu, tenun ikat, dan kampung adat</a> menjelaskan etikanya, dan jika ingin tahu biayanya, baca <a href="/id/getting-here/sumba-travel-costs/">berapa biaya liburan ke Sumba</a>.</p>"""
+<p>Pelankan kendaraan saat melewati kampung, tempat anak-anak dan hewan berbagi jalan. Jika upacara kematian atau upacara adat menutup jalan, tunggulah dengan sabar. Tanyakan kepada sopir sebelum berhenti untuk memotret orang atau rumah, dan beri donasi saat mengunjungi kampung. Panduan <a href="/id/culture/marapu-ikat-traditional-villages/">Marapu, tenun ikat, dan kampung adat</a> menjelaskan etikanya, dan jika ingin tahu biayanya, baca <a href="/id/getting-here/sumba-travel-costs/">berapa biaya liburan ke Sumba</a>.</p>"""
 
 GUIDES.append({
  "section": "getting-here", "slug": "getting-around-sumba", "date": "2026-11-07", "time": "11:00", "kind": "guide",
@@ -567,13 +567,13 @@ GUIDES.append({
   "body": AROUND_EN},
  "es": {
   "title": "Cómo moverse por Sumba: coche con conductor, moto, autobuses y tiempos reales",
-  "dek": "Una tabla de tiempos reales entre Tambolaka, Waikabubak, Kodi, Waingapu y los mejores lugares de la isla, y la verdad sobre carreteras, gasolina y conducir de noche.",
-  "answer": "La forma más fácil de moverse por Sumba es alquilar coche con conductor local, por unas 600.000-1.000.000 IDR al día; la moto (unas 150.000-200.000 IDR al día) va bien para quien conduce con soltura y lleva el permiso internacional, y los autobuses unen las ciudades principales pero son lentos e irregulares. Calcula unas 4-5 horas en coche entre Tambolaka y Waingapu, no conduzcas de noche, llena el depósito en cada gasolinera porque hay colas y escasez, y descarga mapas sin conexión porque la cobertura es irregular.",
+  "dek": "Una tabla con los tiempos reales entre Tambolaka, Waikabubak, Kodi, Waingapu y los mejores lugares de la isla, y lo que hay que saber sobre las carreteras, la gasolina y la conducción nocturna.",
+  "answer": "La forma más fácil de moverse por Sumba es alquilar un coche con conductor local, por unas 600.000-1.000.000 rupias al día; la moto (unas 150.000-200.000 rupias al día) es buena opción para quien conduce con soltura y tiene el permiso internacional, y los autobuses unen las ciudades principales pero son lentos e irregulares. Calcula unas 4-5 horas en coche entre Tambolaka y Waingapu, no conduzcas de noche, llena el depósito en cada gasolinera porque hay colas y escasez, y descarga mapas sin conexión porque la cobertura es irregular.",
   "body": AROUND_ES},
  "id": {
-  "title": "Transportasi keliling Sumba: mobil dan sopir, motor, bus, dan waktu tempuh nyata",
-  "dek": "Tabel waktu tempuh nyata antara Tambolaka, Waikabubak, Kodi, Waingapu, dan objek wisata terbaik, plus fakta soal jalan, BBM, dan berkendara malam.",
-  "answer": "Cara termudah berkeliling Sumba adalah menyewa mobil dengan sopir lokal, sekitar Rp600.000-1.000.000 per hari; motor (sekitar Rp150.000-200.000 per hari) cocok untuk pengendara yang percaya diri dengan SIM yang sesuai, dan bus menghubungkan kota-kota utama tetapi lambat dan tidak teratur. Siapkan sekitar 4-5 jam perjalanan mobil antara Tambolaka dan Waingapu, hindari berkendara malam, isi BBM di setiap SPBU karena antrean dan kelangkaan bisa terjadi, dan unduh peta offline karena sinyal putus-putus.",
+  "title": "Transportasi keliling Sumba: mobil dan sopir, motor, bus, dan waktu tempuh sebenarnya",
+  "dek": "Tabel waktu tempuh sebenarnya antara Tambolaka, Waikabubak, Kodi, Waingapu, dan objek wisata terbaik, ditambah fakta soal jalan, BBM, dan berkendara malam.",
+  "answer": "Cara termudah berkeliling Sumba adalah menyewa mobil dengan sopir lokal, sekitar Rp 600.000-1.000.000 per hari; motor (sekitar Rp 150.000-200.000 per hari) cocok untuk pengendara yang percaya diri dengan SIM yang sesuai, dan bus menghubungkan kota-kota utama tetapi lambat dan tidak teratur. Siapkan sekitar 4-5 jam perjalanan mobil antara Tambolaka dan Waingapu, hindari berkendara malam, isi BBM di setiap SPBU karena antrean dan kelangkaan bisa terjadi, dan unduh peta offline karena sinyal putus-putus.",
   "body": AROUND_ID},
  "facts": {
   "en": [
@@ -591,10 +591,10 @@ GUIDES.append({
    ["Conducir de noche", "Evítalo: sin alumbrado, animales en la vía, sin cobertura en zonas"],
    ["Red móvil", "Telkomsel es la de mayor cobertura; descarga mapas sin conexión"]],
   "id": [
-   ["Pilihan terbaik", "Mobil dengan sopir lokal, sekitar Rp600.000-1.000.000 per hari"],
+   ["Pilihan terbaik", "Mobil dengan sopir lokal, sekitar Rp 600.000-1.000.000 per hari"],
    ["Tambolaka ke Waingapu", "Sekitar 170 km, 4-5 jam dengan mobil"],
-   ["Motor", "Sekitar Rp150.000-200.000 per hari; wisatawan asing perlu IDP golongan A"],
-   ["BBM", "Pertalite Rp10.000/l, Pertamax Rp15.950/l (Nov 2026); antrean bisa terjadi"],
+   ["Motor", "Sekitar Rp 150.000-200.000 per hari; wisatawan asing perlu IDP golongan A"],
+   ["BBM", "Pertalite Rp 10.000/l, Pertamax Rp 15.950/l (Nov 2026); antrean bisa terjadi"],
    ["Berkendara malam", "Hindari: tanpa lampu jalan, hewan di jalan, sinyal hilang di beberapa tempat"],
    ["Jaringan seluler", "Telkomsel paling luas jangkauannya; unduh peta offline"]]},
  "faq": {
@@ -606,16 +606,16 @@ GUIDES.append({
    ["Is there a fuel shortage in Sumba?", "Fuel queues are recurrent. In October 2026, supply to stations in Waingapu was cut by about half for several days and queues spilled onto the road. Fill up whenever you pass a station, and use roadside bottle sellers only in an emergency."],
    ["Does Google Maps work in Sumba?", "Yes in towns, but mobile data disappears in many hills and valleys. Download offline maps for the whole island, use car mode even on a scooter, and expect journeys to take longer than Google estimates."]],
   "es": [
-   ["¿Cuánto se tarda en coche de Tambolaka a Waingapu?", "Unas 4-5 horas en coche para unos 170 km por la carretera principal de Sumba, pasando por Waikabubak y Lewa. Los autobuses tardan unas 6 horas. Suma tiempo en época de lluvias y para las paradas."],
-   ["¿Es seguro alquilar moto en Sumba?", "Es posible si tienes experiencia, pero el firme cambia rápido de asfalto a grava, arena o barro, los animales invaden la calzada y las distancias son largas. Legalmente necesitas el carné de moto de tu país y el permiso internacional con categoría A, además del casco; sin ellos tu seguro de viaje puede no pagar tras un accidente."],
-   ["¿Hay Grab o Gojek en Sumba?", "No. No hay coches de apps de transporte ni taxis con taxímetro como en Bali. Busca conductor a través de tu alojamiento, usa mototaxis (ojek) para trayectos cortos y acuerda siempre el precio antes."],
+   ["¿Cuánto se tarda en coche de Tambolaka a Waingapu?", "Unas 4-5 horas para recorrer unos 170 km por la carretera principal de Sumba, pasando por Waikabubak y Lewa. Los autobuses tardan unas 6 horas. Añade tiempo en la época de lluvias y para las paradas."],
+   ["¿Es seguro alquilar moto en Sumba?", "Es posible si tienes experiencia, pero el firme pasa rápidamente del asfalto a la grava, arena o barro, los animales invaden la calzada y las distancias son largas. Legalmente necesitas el carné de moto de tu país y el permiso internacional con categoría A, además del casco; sin ellos, el seguro de viaje puede negarse a pagar tras un accidente."],
+   ["¿Hay Grab o Gojek en Sumba?", "No. A diferencia de Bali, no hay coches de aplicaciones de transporte ni taxis con taxímetro. Busca conductor a través de tu alojamiento, usa mototaxis (ojek) para trayectos cortos y acuerda siempre el precio de antemano."],
    ["¿Se puede conducir de noche en Sumba?", "Mejor no. Fuera de las ciudades hay poco alumbrado, los animales descansan en la carretera, los baches casi no se ven y puede no haber cobertura. Las guías de viaje también desaconsejan circular de noche por zonas remotas del oeste y suroeste de Sumba, incluida la zona de Kodi."],
    ["¿Hay escasez de gasolina en Sumba?", "Las colas son recurrentes. En octubre de 2026 el suministro a las gasolineras de Waingapu se redujo a la mitad durante varios días y las colas llegaron a la carretera. Llena el depósito siempre que pases por una gasolinera y usa la venta en botellas solo en caso de emergencia."],
    ["¿Funciona Google Maps en Sumba?", "En las ciudades sí, pero los datos móviles desaparecen en muchas colinas y valles. Descarga mapas sin conexión de toda la isla, usa el modo coche incluso en moto y cuenta con que los trayectos duren más de lo que calcula Google."]],
   "id": [
    ["Berapa lama perjalanan darat dari Tambolaka ke Waingapu?", "Sekitar 4-5 jam dengan mobil untuk jarak sekitar 170 km lewat jalan utama trans-Sumba melalui Waikabubak dan Lewa. Bus umum sekitar 6 jam. Tambahkan waktu di musim hujan dan untuk singgah."],
-   ["Apakah aman menyewa motor di Sumba?", "Bisa bagi pengendara berpengalaman, tetapi permukaan jalan cepat berubah dari aspal ke kerikil, pasir, atau lumpur, hewan sering ke jalan, dan jaraknya jauh. Wisatawan asing secara hukum memerlukan SIM motor dari negaranya plus IDP golongan A, serta helm; tanpa itu asuransi perjalanan bisa tidak membayar setelah kecelakaan."],
-   ["Apakah ada Grab atau Gojek di Sumba?", "Tidak ada. Tidak ada mobil ojek daring atau taksi argo seperti di Bali. Cari sopir lewat penginapan, gunakan ojek untuk jarak dekat, dan sepakati harga di awal."],
+   ["Apakah aman menyewa motor di Sumba?", "Bisa bagi pengendara berpengalaman, tetapi permukaan jalan cepat berubah dari aspal ke kerikil, pasir, atau lumpur, hewan sering masuk ke jalan, dan jaraknya jauh. Wisatawan asing secara hukum memerlukan SIM motor dari negaranya plus IDP golongan A, serta helm; tanpa itu asuransi perjalanan bisa tidak membayar setelah kecelakaan."],
+   ["Apakah ada Grab atau Gojek di Sumba?", "Tidak ada. Berbeda dengan Bali, di Sumba tidak ada taksi daring maupun taksi argo. Cari sopir lewat penginapan, gunakan ojek untuk jarak dekat, dan sepakati harga di awal."],
    ["Apakah boleh berkendara malam di Sumba?", "Sebaiknya dihindari. Di luar kota lampu jalan sedikit, hewan beristirahat di jalan, lubang sulit terlihat, dan sinyal bisa hilang. Panduan wisata juga menyarankan tidak bepergian setelah gelap di daerah terpencil Sumba Barat dan Sumba Barat Daya, termasuk wilayah Kodi."],
    ["Apakah ada kelangkaan BBM di Sumba?", "Antrean BBM kerap terjadi. Pada Oktober 2026, pasokan ke SPBU di Waingapu berkurang sekitar separuh selama beberapa hari dan antrean meluber ke jalan. Isi BBM setiap melewati SPBU, dan gunakan pengecer botol hanya saat darurat."],
    ["Apakah Google Maps berfungsi di Sumba?", "Di kota berfungsi, tetapi data seluler hilang di banyak bukit dan lembah. Unduh peta offline seluruh pulau, gunakan mode mobil meski naik motor, dan perkirakan perjalanan lebih lama daripada estimasi Google."]]},
@@ -647,6 +647,6 @@ GUIDES.append({
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
   "caption": {
    "en": "A road linking West and East Sumba winds through the island's green hills.",
-   "es": "Una carretera que une el oeste y el este de Sumba serpentea entre las colinas verdes de la isla.",
+   "es": "Una carretera que une el oeste y el este de Sumba serpentea entre las verdes colinas de la isla.",
    "id": "Jalan penghubung Sumba Barat dan Sumba Timur berkelok di antara bukit-bukit hijau."}}
 })

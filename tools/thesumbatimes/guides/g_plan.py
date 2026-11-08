@@ -87,15 +87,15 @@ G1 = {
 },
 "es": {
  "title": "Itinerario por Sumba: 5, 7 y 10 días de oeste a este",
- "dek": "Llega por Tambolaka, cruza la isla entre aldeas, cascadas y sabana, y vuela de vuelta desde Waingapu sin perder un solo día desandando el camino.",
- "answer": "La forma más eficiente de recorrer Sumba es en un solo sentido: aterrizar en Tambolaka, al oeste, y salir desde Waingapu, al este, lo que te ahorra unos 170 km de carretera. Con cinco días ves lo esencial a buen ritmo, siete días es la duración ideal para la mayoría y con diez puedes sumar la costa sur, una caminata a una cascada en la selva y el extremo oriental.",
+ "dek": "Entra por Tambolaka, cruza la isla entre aldeas, cascadas y sabanas y despídete desde Waingapu sin perder un solo día en volver sobre tus pasos.",
+ "answer": "La manera más práctica de recorrer Sumba es en un solo sentido: aterrizar en Tambolaka, al oeste, y despegar de Waingapu, al este, lo que ahorra unos 170 km de carretera. Cinco días bastan para ver lo esencial a buen ritmo; siete son la duración ideal para la mayoría de los viajeros, y con diez se pueden sumar la costa sur, una caminata hasta una cascada en plena selva y el tranquilo extremo oriental.",
  "body": """<p>El avión baja sobre una costa de coral blanco y matorral verde oscuro, y de pronto estás en Tambolaka, donde el aire huele a hierba seca y a leña. En la carretera, los niños saludan desde la caja de las camionetas, un hombre monta a pelo un caballo pequeño por el arcén y los altísimos tejados de paja de una aldea asoman entre los anacardos como mástiles de barco. Sumba no se deja ver en un día. Es aproximadamente el doble de grande que Bali, con mucha menos gente y muchas menos carreteras, y lo mejor está repartido de punta a punta.</p>
-<p>Por eso importa más la forma del viaje que su duración. La respuesta corta: <strong>entra por Tambolaka (TMC) y sal por Waingapu (WGP)</strong>, o al revés, y cruza la isla una sola vez. Así ves las lagunas de coral y las aldeas marapu del oeste, las cascadas del centro y la sabana dorada del este sin repetir carretera.</p>
+<p>Por eso importa más el trazado del viaje que su duración. La respuesta corta: <strong>entra por Tambolaka (TMC) y sal por Waingapu (WGP)</strong>, o al revés, y cruza la isla una sola vez. Así ves las lagunas de coral y las aldeas marapu del oeste, las cascadas del centro y la sabana dorada del este sin repetir carretera.</p>
 
 <h2>Antes de planificar: distancias, carreteras y vuelos</h2>
-<p>Sumba mide unos 200 km de largo. En el mapa parece poco, pero las carreteras son estrechas, con muchas curvas y a veces en mal estado, y pararás a menudo. Una regla útil: cuenta con <strong>30-40 km por hora de conducción</strong> en cuanto dejes la carretera principal que cruza la isla. Estos son los tramos clave, con distancias medidas sobre rutas de OpenStreetMap y tiempos realistas según los programas de los operadores locales:</p>
+<p>Sumba mide unos 200 km de largo. Sobre el mapa las distancias parecen cortas, pero las carreteras son estrechas, sinuosas y a veces están en mal estado, y pararás a menudo. Una regla útil: calcula <strong>30-40 km por cada hora al volante</strong> en cuanto abandones la carretera principal que atraviesa la isla. Estos son los tramos clave, con distancias medidas sobre rutas de OpenStreetMap y tiempos realistas según los programas de los operadores locales:</p>
 <table>
-<tr><th>Tramo</th><th>Distancia</th><th>Tiempo real en coche</th></tr>
+<tr><th>Tramo</th><th>Distancia</th><th>Tiempo realista en coche</th></tr>
 <tr><td>Aeropuerto de Tambolaka a la laguna de Weekuri</td><td>unos 40 km</td><td>1-1,5 h</td></tr>
 <tr><td>Weekuri a Ratenggaro (Kodi)</td><td>unos 23 km</td><td>45 min-1 h</td></tr>
 <tr><td>Tambolaka a Waikabubak</td><td>unos 42 km</td><td>alrededor de 1 h</td></tr>
@@ -108,73 +108,73 @@ G1 = {
 <tr><td>Waingapu a la playa de Walakiri</td><td>unos 22 km</td><td>30-40 min</td></tr>
 <tr><td>Waingapu a Tarimbang</td><td>unos 85 km</td><td>3 h o más</td></tr>
 </table>
-<p>Los vuelos marcan todo lo demás. Wings Air vuela de Bali a Tambolaka varias veces al día (alrededor de 1 h 30) y, desde el 15 de julio de 2026, TransNusa conecta Bali y Waingapu sin escalas cuatro veces por semana (martes, miércoles, viernes y sábado). Comprueba qué días sale tu vuelo desde Waingapu antes de cerrar la ruta y deja margen: los horarios cambian y a veces se reprograman vuelos. Lo explicamos en <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a>.</p>
-<p>Lo más cómodo es un <strong>coche con conductor local</strong>, que además sabe qué aldeas reciben visitas ese día y puede presentarte. Lonely Planet (2026) habla de unos 75 USD al día con conductor, alrededor de 1,2 millones de IDR (unos 70 EUR), y el precio cambia según la temporada y el vehículo. Más en <a href="/es/getting-here/getting-around-sumba/">cómo moverse por Sumba</a> y <a href="/es/getting-here/sumba-travel-costs/">cuánto cuesta viajar a Sumba</a>.</p>
+<p>Los vuelos marcan todo lo demás. Wings Air vuela de Bali a Tambolaka varias veces al día (alrededor de 1 h 30) y, desde el 15 de julio de 2026, TransNusa conecta Bali y Waingapu sin escalas cuatro veces por semana (martes, miércoles, viernes y sábado). Comprueba qué días sale tu vuelo desde Waingapu antes de cerrar la ruta y deja margen: los horarios cambian y a veces los vuelos se reprograman. Te lo explicamos en <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a>.</p>
+<p>Lo más cómodo es un <strong>coche con conductor local</strong>, que además sabe qué aldeas reciben visitas ese día y puede presentarte a los vecinos. Lonely Planet (2026) calcula unos 75 dólares al día con conductor, alrededor de 1,2 millones de rupias (unos 70 euros), aunque el precio varía según la temporada y el vehículo. Más información en <a href="/es/getting-here/getting-around-sumba/">cómo moverse por Sumba</a> y <a href="/es/getting-here/sumba-travel-costs/">cuánto cuesta viajar a Sumba</a>.</p>
 
 <h2>5 días: la travesía rápida</h2>
-<p>Cinco días bastan para lo esencial si aceptas una jornada larga de coche. Funciona mejor en la estación seca, con carreteras más fáciles.</p>
+<p>Cinco días bastan para lo esencial si aceptas una jornada larga al volante. Funciona mejor en la estación seca, cuando las carreteras están en mejor estado.</p>
 <h3>Día 1: Tambolaka, la laguna de Weekuri y Mandorak</h3>
-<p>Aterriza en Tambolaka y conduce una hora hacia el oeste hasta la <strong>laguna de Weekuri</strong>, una laguna de agua salada asombrosamente transparente que se llena con el mar a través de las rocas. Báñate, pero con sandalias: el coral corta. A pocos minutos, la <strong>playa de Mandorak</strong> se encaja entre dos acantilados; en junio y julio el sol se pone justo en medio. Duerme en la zona de Tambolaka o en la costa noroeste.</p>
-<h3>Día 2: Aldeas de Kodi y camino a Waikabubak</h3>
-<p>Mañana en la zona de Kodi. <strong>Ratenggaro</strong> es famosa por sus tejados puntiagudos altísimos y sus tumbas de piedra sobre un promontorio frente al mar, con la playa y el pueblo pesquero de <strong>Pero</strong> muy cerca. Ve sin prisa: son casas, no museos al aire libre. Por la tarde, unas 2-2,5 horas hacia el este hasta <strong>Waikabubak</strong>, la pequeña capital de Sumba Occidental, y sube al atardecer a <strong>Kampung Tarung</strong>, una aldea tradicional en lo alto de una colina en pleno centro.</p>
-<h3>Día 3: Praijing, Lapopu y la gran carretera al este</h3>
-<p>Empieza temprano en <strong>Praijing</strong>, una aldea de casas de paja escalonadas en una ladera, a poca distancia de Waikabubak. Luego, la <strong>cascada de Lapopu</strong>, de unos 90 m y en varios escalones, a 5 minutos andando del aparcamiento. Después de comer llega el gran trayecto: unas 4-5 horas con paradas hasta Waingapu. Calcula para llegar a la <strong>colina de Wairinding</strong>, unos 25 km antes de Waingapu, a la hora del atardecer sobre la sabana. Un programa de la oficina de turismo regional describe este cruce como «un viaje de unas 5 horas».</p>
+<p>Aterriza en Tambolaka y conduce alrededor de una hora hacia el oeste hasta la <strong>laguna de Weekuri</strong>, de agua salada y asombrosamente transparente, que el mar alimenta a través de las rocas. Báñate, pero con sandalias: el coral corta. A pocos minutos, la <strong>playa de Mandorak</strong> se encaja entre dos acantilados; en junio y julio el sol se pone justo en medio. Duerme en la zona de Tambolaka o en la costa noroeste.</p>
+<h3>Día 2: Las aldeas de Kodi y el camino a Waikabubak</h3>
+<p>La mañana, en la zona de Kodi. <strong>Ratenggaro</strong> es famosa por sus tejados puntiagudos altísimos y sus tumbas de piedra sobre un promontorio frente al mar, con la playa y el pueblo pesquero de <strong>Pero</strong> muy cerca. Ve sin prisa: son hogares, no museos al aire libre. Por la tarde, conduce unas 2-2,5 horas hacia el este hasta <strong>Waikabubak</strong>, la pequeña capital de Sumba Occidental, y sube al atardecer a <strong>Kampung Tarung</strong>, una aldea tradicional en lo alto de una colina en pleno centro.</p>
+<h3>Día 3: Praijing, Lapopu y el largo camino hacia el este</h3>
+<p>Empieza temprano en <strong>Praijing</strong>, una aldea de casas de paja escalonadas en una ladera, a poca distancia de Waikabubak. Después, la <strong>cascada de Lapopu</strong>, de unos 90 m y en varios escalones, a 5 minutos a pie del aparcamiento. Tras la comida llega el gran trayecto: unas 4-5 horas con paradas hasta Waingapu. Calcula el tiempo para llegar a la <strong>colina de Wairinding</strong>, unos 25 km antes de Waingapu, cuando el sol se pone sobre la sabana. Un programa de la oficina de turismo regional describe esta travesía como "un viaje de unas 5 horas".</p>
 <h3>Día 4: La sabana del noreste</h3>
-<p>Unas 2 horas al noroeste de Waingapu está la <strong>cascada de Tanggedu</strong>, a la que llaman el Gran Cañón de Sumba, con pozas excavadas en la roca. El último tramo, casi 3 km, se hace a pie o en <em>ojek</em> (mototaxi). A la vuelta, para en <strong>Puru Kambera</strong>, donde pastan caballos salvajes en una sabana que baja hasta una playa larga y vacía.</p>
+<p>A unas 2 horas al noroeste de Waingapu se encuentra la <strong>cascada de Tanggedu</strong>, apodada el Gran Cañón de Sumba, con pozas excavadas en la roca. El último tramo, casi 3 km, se hace a pie o en <em>ojek</em> (mototaxi). A la vuelta, para en <strong>Puru Kambera</strong>, donde pastan caballos salvajes en una sabana que baja hasta una playa larga y vacía.</p>
 <h3>Día 5: Waingapu y regreso</h3>
 <p>Visita la aldea real de <strong>Prailiu</strong>, a las afueras de Waingapu, conocida por sus tejedoras de ikat (mira <a href="/es/culture/sumba-ikat-weaving-where-to-buy/">dónde comprar ikat en Sumba</a>), y sube a <strong>Bukit Persaudaraan</strong>, una colina junto al aeropuerto con vistas amplias, antes de tu vuelo.</p>
 
 <h2>7 días: el viaje clásico de oeste a este</h2>
-<p>Siete días es lo que recomiendan la mayoría de guías y operadores. Elimina la jornada larga de coche y suma la costa sur del oeste y el extremo oriental.</p>
+<p>Siete días es la duración que recomiendan la mayoría de las guías y de los operadores. Se evita la jornada maratoniana al volante y se suman la costa sur del oeste y el extremo oriental.</p>
 <ul>
 <li><strong>Día 1:</strong> Llegada a Tambolaka. Tarde en la laguna de Weekuri y atardecer en Mandorak.</li>
 <li><strong>Día 2:</strong> Kodi: Ratenggaro, Pero y la carretera de la costa. Si viajas en febrero, pregunta a tu conductor por la <a href="/es/culture/pasola-explained/">Pasola</a>. Noche en Tambolaka o Kodi.</li>
 <li><strong>Día 3:</strong> A Waikabubak (alrededor de 1 hora desde Tambolaka). Kampung Tarung por la mañana y después el valle de <strong>Wanokaka</strong>, al sur (unos 20 km), con arrozales, aldeas y una playa amplia, o la playa de <strong>Marosi</strong>, en la costa de Lamboya (unos 30 km). Noche en Waikabubak.</li>
 <li><strong>Día 4:</strong> Praijing temprano, cascada de Lapopu y después hacia el este por Sumba Central, con parada en <strong>Waibakul</strong> o en la aldea tradicional de <strong>Pasunga</strong>, conocida por su gran tumba de piedra. Atardecer en Wairinding. Noche en Waingapu.</li>
 <li><strong>Día 5:</strong> Cascada de Tanggedu y Puru Kambera.</li>
-<li><strong>Día 6:</strong> El sureste: las aldeas de <strong>Praiyawang</strong> (Rindi) y la zona de Rende, a unos 70 km y 2 horas de Waingapu, famosas por sus grandes tumbas de piedra y su ikat. Vuelve por la costa para ver el atardecer en <strong>Walakiri</strong>, donde unos manglares pequeños se alzan sobre la arena como bailarines. Mira la marea: con marea alta quedan bajo el agua.</li>
+<li><strong>Día 6:</strong> El sureste: las aldeas de <strong>Praiyawang</strong> (Rindi) y la zona de Rende, a unos 70 km y 2 horas de Waingapu, famosas por sus grandes tumbas de piedra y su ikat. Regresa por la costa para ver el atardecer en <strong>Walakiri</strong>, donde unos pequeños manglares se alzan sobre la arena como bailarines. Consulta las mareas: con la pleamar quedan bajo el agua.</li>
 <li><strong>Día 7:</strong> Prailiu y Bukit Persaudaraan, y vuelo desde Waingapu.</li>
 </ul>
 
 <h2>10 días: Sumba sin prisa</h2>
-<p>Con diez días puedes dejar de correr, dormir dos noches en cada base y llegar a lugares que casi nadie ve.</p>
+<p>Con diez días puedes olvidarte de las prisas, dormir dos noches en cada base y llegar a lugares que casi nadie visita.</p>
 <ul>
 <li><strong>Días 1-2:</strong> El noroeste y Kodi con calma: Weekuri, Mandorak, Ratenggaro, Pero y la costa tranquila de Bondo Kodi.</li>
 <li><strong>Día 3:</strong> Waikabubak, Kampung Tarung y una tarde en Wanokaka.</li>
-<li><strong>Día 4:</strong> Lapopu y la caminata hasta <strong>Matayangu</strong>, una cascada dentro del Parque Nacional de Manupeu Tanah Daru. Lonely Planet la sitúa a unos 90 minutos a pie desde el mismo aparcamiento que Lapopu; el sendero es empinado y resbaladizo, así que ve con un guía local.</li>
+<li><strong>Día 4:</strong> Lapopu y la caminata hasta <strong>Matayangu</strong>, una cascada dentro del Parque Nacional de Manupeu Tanah Daru. Según Lonely Planet, está a unos 90 minutos a pie desde el mismo aparcamiento que Lapopu; el sendero es empinado y resbaladizo, así que conviene ir con un guía local.</li>
 <li><strong>Día 5:</strong> Lamboya y la costa suroeste (Marosi), o día de descanso. Noche en Waikabubak.</li>
-<li><strong>Día 6:</strong> Praijing, Pasunga y Waibakul, cruzando despacio Sumba Central hasta Wairinding para el atardecer.</li>
+<li><strong>Día 6:</strong> Praijing, Pasunga y Waibakul: una travesía pausada por Sumba Central hasta Wairinding, a tiempo para el atardecer.</li>
 <li><strong>Día 7:</strong> Tanggedu y Puru Kambera.</li>
-<li><strong>Días 8-9:</strong> Costa sur: <strong>Tarimbang</strong>, una bahía amplia en la costa sur de Sumba Oriental, a la que se llega por una carretera de montaña con muchas curvas (cuenta al menos 3 horas desde Waingapu). Quédate una noche, báñate si el mar está tranquilo y mira el surf. Por el camino se ven las colinas boscosas del <strong>Parque Nacional de Laiwangi Wanggameti</strong>, donde está el punto más alto de la isla.</li>
+<li><strong>Días 8-9:</strong> Costa sur: <strong>Tarimbang</strong>, una bahía amplia en la costa sur de Sumba Oriental, a la que se llega por una carretera de montaña con muchas curvas (cuenta al menos 3 horas desde Waingapu). Quédate una noche, báñate si el mar está en calma y contempla a los surfistas. Por el camino se ven las colinas boscosas del <strong>Parque Nacional de Laiwangi Wanggameti</strong>, donde está el punto más alto de la isla.</li>
 <li><strong>Día 10:</strong> Regreso a Waingapu: Walakiri al atardecer si vuelas a la mañana siguiente, o Prailiu antes de un vuelo de tarde.</li>
 </ul>
-<p>Si haces surf, puedes cambiar los días de la costa sur por una estancia más larga en la costa oeste. Mira nuestra guía de <a href="/es/things-to-do/surfing-in-sumba/">surf en Sumba</a>.</p>
+<p>Si practicas surf, puedes cambiar los días de la costa sur por una estancia más larga en la costa oeste. Consulta nuestra guía de <a href="/es/things-to-do/surfing-in-sumba/">surf en Sumba</a>.</p>
 
 <h2>Visitar las aldeas con respeto</h2>
 <p>Muchos sumbaneses siguen practicando el <strong>marapu</strong>, la religión de los antepasados, y las aldeas que visitas son hogares vivos donde hay ceremonias, entierros y vida diaria. Pide permiso antes de fotografiar a alguien o de entrar en una casa, firma el libro de visitas y deja una pequeña aportación: Lonely Planet (2026) cifra la entrada habitual en unos 2-5 USD por persona, que se pagan al jefe de la aldea o a través del guía. Viste con modestia, no te sientes ni te subas a las tumbas de piedra y no toques objetos rituales. Lo contamos en <a href="/es/culture/marapu-ikat-traditional-villages/">marapu, ikat y aldeas tradicionales</a>.</p>
-<p>En playas y miradores suele haber una tarifa informal que cobran los vecinos que cuidan el lugar. En Wairinding ha rondado los 10.000 IDR por persona y en Tanggedu unos 5.000 IDR, más unos 50.000 IDR por el ojek de ida y vuelta desde el pueblo (datos de 2024, cambian). Lleva billetes pequeños: los cajeros están sobre todo en Waingapu, Waikabubak y Tambolaka.</p>
+<p>En playas y miradores suele haber una tarifa informal que cobran los vecinos que cuidan el lugar. En Wairinding ha rondado las 10.000 rupias por persona y en Tanggedu, unas 5.000, más unas 50.000 rupias por el ojek de ida y vuelta desde el pueblo (datos de 2024, sujetos a cambios). Lleva billetes pequeños: los cajeros están sobre todo en Waingapu, Waikabubak y Tambolaka.</p>
 
 <h2>Consejos prácticos para cualquier duración</h2>
 <ul>
-<li><strong>¿De este a oeste o de oeste a este?</strong> Las dos funcionan. Empezar por el oeste deja primero los días más suaves (lagunas, playas) y los atardeceres de sabana para el final.</li>
+<li><strong>¿De este a oeste o de oeste a este?</strong> Ambas opciones funcionan. Empezar por el oeste deja para el principio los días más suaves (lagunas, playas) y los atardeceres de sabana para el final.</li>
 <li><strong>La estación cambia la ruta.</strong> En la temporada de lluvias, más o menos de diciembre a marzo, algunos caminos a cascadas y a la costa sur se embarran o se cortan, y las cascadas bajan marrones. Lee nuestra <a href="/es/things-to-do/best-time-to-visit-sumba/">guía mes a mes</a>.</li>
-<li><strong>Madruga.</strong> La luz es más suave, hace menos calor y llegas antes del bochorno del mediodía.</li>
+<li><strong>Madruga.</strong> La luz es más suave, hace menos calor y llegas a los sitios antes del bochorno del mediodía.</li>
 <li><strong>Descarga mapas sin conexión.</strong> La cobertura desaparece en las colinas.</li>
 <li><strong>Lleva:</strong> efectivo en billetes pequeños, escarpines o sandalias, protector solar, sombrero, repelente y un sarong para las aldeas. Lee nuestra <a href="/es/getting-here/sumba-travel-safety-health/">guía de seguridad y salud</a>.</li>
-<li><strong>Come local.</strong> En cada pueblo hay warungs sencillos con pescado, arroz y verduras; mira <a href="/es/culture/sumbanese-food/">la comida de Sumba</a>.</li>
+<li><strong>Come local.</strong> En cada pueblo hay warungs sencillos con pescado, arroz y verduras; consulta <a href="/es/culture/sumbanese-food/">la comida de Sumba</a>.</li>
 <li><strong>Dónde dormir.</strong> Bases que funcionan: Tambolaka o la costa noroeste, Waikabubak y Waingapu. Más en <a href="/es/where-to-stay/where-to-stay-in-sumba/">dónde alojarse en Sumba</a>.</li>
 </ul>
 <p>Elijas la duración que elijas, deja hueco para lo imprevisto: una carrera de caballos en el campo de una aldea, una invitación a mascar nuez de betel, un funeral que te piden mirar desde lejos. En Sumba, esos momentos suelen ser el viaje.</p>"""
 },
 "id": {
- "title": "Itinerary Sumba: 5, 7, dan 10 hari dari barat ke timur",
- "dek": "Mendarat di Tambolaka, menyeberangi pulau melewati kampung adat, air terjun, dan sabana, lalu pulang dari Waingapu tanpa membuang sehari pun untuk bolak-balik.",
- "answer": "Cara paling efisien menjelajah Sumba adalah satu arah: mendarat di Tambolaka di barat dan pulang dari Waingapu di timur, sehingga Anda menghemat perjalanan darat sekitar 170 km. Lima hari cukup untuk tempat-tempat utama dengan tempo cepat, tujuh hari paling pas untuk kebanyakan wisatawan, dan sepuluh hari memberi waktu untuk pantai selatan, trekking ke air terjun di hutan, dan ujung timur yang sepi.",
- "body": """<p>Pesawat terbang rendah di atas garis pantai karang putih dan semak hijau tua, lalu Anda sudah menjejak Tambolaka, tempat udara berbau rumput kering dan asap kayu bakar. Di jalan keluar kota, anak-anak melambai dari bak mobil pikap, seorang pria menunggang kuda kecil tanpa pelana di pinggir jalan, dan atap-atap ilalang yang menjulang dari sebuah kampung muncul di antara pohon jambu mete seperti tiang kapal. Sumba tidak bisa dikenal dalam sehari. Luasnya kira-kira dua kali Bali, dengan penduduk dan jalan yang jauh lebih sedikit, dan tempat-tempat terbaiknya tersebar dari ujung ke ujung.</p>
-<p>Karena itu, bentuk perjalanan lebih penting daripada lamanya. Jawaban singkatnya: <strong>masuk lewat Tambolaka (TMC) dan keluar lewat Waingapu (WGP)</strong>, atau sebaliknya, dan seberangi pulau sekali saja. Anda melihat laguna karang dan kampung Marapu di barat, air terjun di tengah, dan sabana keemasan di timur, tanpa melewati jalan yang sama dua kali.</p>
+ "title": "Rencana perjalanan Sumba: 5, 7, dan 10 hari dari barat ke timur",
+ "dek": "Mendarat di Tambolaka, melintasi pulau dari kampung adat, air terjun, hingga sabana, lalu pulang dari Waingapu tanpa membuang sehari pun untuk kembali ke titik awal.",
+ "answer": "Cara paling efisien menjelajahi Sumba adalah perjalanan satu arah: mendarat di Tambolaka di barat dan pulang dari Waingapu di timur, sehingga Anda menghemat perjalanan darat sekitar 170 km. Lima hari cukup untuk tempat-tempat utama dengan tempo cepat, tujuh hari paling pas bagi kebanyakan wisatawan, dan sepuluh hari memberi waktu untuk pantai selatan, jalan kaki ke air terjun di tengah hutan, serta ujung timur yang sepi.",
+ "body": """<p>Pesawat terbang rendah di atas garis pantai karang putih dan semak hijau tua, lalu Anda sudah menjejakkan kaki di Tambolaka, yang udaranya beraroma rumput kering dan asap kayu bakar. Di jalan keluar kota, anak-anak melambai dari bak mobil pikap, seorang pria menunggang kuda kecil tanpa pelana di pinggir jalan, dan atap-atap ilalang yang menjulang dari sebuah kampung muncul di antara pohon jambu mete seperti tiang kapal. Sumba tidak bisa dikenal dalam sehari. Luasnya kira-kira dua kali Bali, dengan penduduk dan jalan yang jauh lebih sedikit, dan tempat-tempat terbaiknya tersebar dari ujung ke ujung.</p>
+<p>Karena itu, bentuk perjalanan lebih penting daripada lamanya. Jawaban singkatnya: <strong>masuk lewat Tambolaka (TMC) dan keluar lewat Waingapu (WGP)</strong>, atau sebaliknya, dan lintasi pulau sekali saja. Anda akan melihat laguna karang dan kampung Marapu di barat, air terjun di tengah, dan sabana keemasan di timur, tanpa melewati jalan yang sama dua kali.</p>
 
 <h2>Sebelum merencanakan: jarak, jalan, dan penerbangan</h2>
-<p>Panjang Sumba sekitar 200 km. Di peta jaraknya tampak dekat, tetapi jalannya sempit, berkelok, kadang rusak, dan Anda akan sering berhenti. Patokan yang berguna: hitung <strong>30-40 km per jam</strong> begitu keluar dari jalan utama lintas Sumba. Berikut ruas-ruas penting, dengan jarak dari rute OpenStreetMap dan waktu yang realistis berdasarkan program tur lokal:</p>
+<p>Panjang Sumba sekitar 200 km. Di peta jaraknya tampak dekat, tetapi jalannya sempit, berkelok-kelok, dan kadang rusak, sementara Anda akan sering berhenti. Patokan yang berguna: hitung <strong>30-40 km per jam</strong> begitu keluar dari jalan utama lintas Sumba. Berikut ruas-ruas utama, dengan jarak menurut rute OpenStreetMap dan waktu tempuh realistis berdasarkan program tur lokal:</p>
 <table>
 <tr><th>Ruas</th><th>Jarak</th><th>Waktu tempuh realistis</th></tr>
 <tr><td>Bandara Tambolaka ke Danau Weekuri</td><td>sekitar 40 km</td><td>1-1,5 jam</td></tr>
@@ -189,68 +189,68 @@ G1 = {
 <tr><td>Waingapu ke Pantai Walakiri</td><td>sekitar 22 km</td><td>30-40 menit</td></tr>
 <tr><td>Waingapu ke Tarimbang</td><td>sekitar 85 km</td><td>3 jam atau lebih</td></tr>
 </table>
-<p>Jadwal penerbangan menentukan semuanya. Wings Air terbang dari Bali ke Tambolaka beberapa kali sehari (sekitar 1 jam 30 menit), dan sejak 15 Juli 2026 TransNusa terbang langsung Bali-Waingapu empat kali seminggu (Selasa, Rabu, Jumat, dan Sabtu). Pastikan hari penerbangan pulang dari Waingapu sebelum mengunci rute, dan sisakan cadangan waktu: jadwal bisa berubah dan penerbangan kadang dijadwal ulang. Detailnya ada di panduan <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a>.</p>
-<p>Cara paling nyaman adalah <strong>mobil dengan sopir lokal</strong>, yang juga tahu kampung mana yang menerima tamu hari itu dan bisa memperkenalkan Anda. Lonely Planet (2026) menyebut sekitar USD 75 per hari dengan sopir, kira-kira Rp1,2 juta (sekitar EUR 70), dan harganya berbeda menurut musim dan jenis mobil. Lihat <a href="/id/getting-here/getting-around-sumba/">transportasi di Sumba</a> dan <a href="/id/getting-here/sumba-travel-costs/">biaya liburan ke Sumba</a>.</p>
+<p>Jadwal penerbangan menentukan segalanya. Wings Air terbang dari Bali ke Tambolaka beberapa kali sehari (sekitar 1 jam 30 menit), dan sejak 15 Juli 2026 TransNusa terbang langsung Bali-Waingapu empat kali seminggu (Selasa, Rabu, Jumat, dan Sabtu). Pastikan hari penerbangan pulang dari Waingapu sebelum mengunci rute, dan sisakan waktu cadangan: jadwal bisa berubah dan penerbangan kadang dijadwalkan ulang. Detailnya ada di panduan <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a>.</p>
+<p>Cara paling nyaman adalah <strong>mobil dengan sopir lokal</strong>, yang juga tahu kampung mana yang menerima tamu hari itu dan bisa memperkenalkan Anda. Lonely Planet (2026) menyebut sekitar USD 75 per hari dengan sopir, kira-kira Rp 1,2 juta (sekitar EUR 70), dan harganya bervariasi menurut musim dan jenis mobil. Lihat <a href="/id/getting-here/getting-around-sumba/">transportasi di Sumba</a> dan <a href="/id/getting-here/sumba-travel-costs/">biaya liburan ke Sumba</a>.</p>
 
-<h2>5 hari: penyeberangan cepat</h2>
-<p>Lima hari cukup untuk yang paling penting jika Anda siap dengan satu hari perjalanan panjang. Paling cocok di musim kemarau, saat jalan lebih mudah dilalui.</p>
+<h2>5 hari: lintas Sumba kilat</h2>
+<p>Lima hari cukup untuk tempat-tempat terpenting jika Anda siap menjalani satu hari perjalanan panjang. Paling cocok di musim kemarau, saat jalan lebih mudah dilalui.</p>
 <h3>Hari 1: Tambolaka, Danau Weekuri, dan Mandorak</h3>
-<p>Mendarat di Tambolaka dan berkendara sekitar satu jam ke barat menuju <strong>Danau (Laguna) Weekuri</strong>, laguna air asin yang luar biasa jernih dan terisi air laut lewat celah batu. Berenanglah, tetapi pakai sandal: karangnya tajam. Beberapa menit dari sana, <strong>Pantai Mandorak</strong> terselip di antara dua tebing; pada Juni dan Juli matahari terbenam tepat di tengahnya. Menginap di sekitar Tambolaka atau pesisir barat laut.</p>
+<p>Mendarat di Tambolaka dan berkendara sekitar satu jam ke barat menuju <strong>Danau (Laguna) Weekuri</strong>, laguna air asin yang luar biasa jernih dan terisi air laut lewat celah batu. Silakan berenang, tetapi pakailah sandal karena karangnya tajam. Beberapa menit dari sana, <strong>Pantai Mandorak</strong> terselip di antara dua tebing; pada Juni dan Juli matahari terbenam tepat di tengahnya. Menginap di sekitar Tambolaka atau pesisir barat laut.</p>
 <h3>Hari 2: Kampung adat Kodi dan perjalanan ke Waikabubak</h3>
-<p>Pagi di wilayah Kodi. <strong>Ratenggaro</strong> terkenal dengan atap menara yang sangat tinggi dan kubur batu di tanjung menghadap laut, dengan Pantai dan kampung nelayan <strong>Pero</strong> di dekatnya. Jangan terburu-buru: ini rumah orang, bukan museum terbuka. Sore hari, berkendara sekitar 2-2,5 jam ke timur menuju <strong>Waikabubak</strong>, ibu kota kecil Sumba Barat, lalu naik ke <strong>Kampung Tarung</strong> saat matahari terbenam, kampung adat di puncak bukit di tengah kota.</p>
+<p>Pagi di wilayah Kodi. <strong>Ratenggaro</strong> terkenal dengan atap menaranya yang menjulang tinggi dan kubur batu di tanjung yang menghadap laut, tidak jauh dari pantai dan kampung nelayan <strong>Pero</strong>. Jangan terburu-buru: ini rumah tinggal warga, bukan museum terbuka. Sore hari, berkendara sekitar 2-2,5 jam ke timur menuju <strong>Waikabubak</strong>, ibu kota kecil Sumba Barat, lalu saat matahari terbenam naiklah ke <strong>Kampung Tarung</strong>, kampung adat di puncak bukit di tengah kota.</p>
 <h3>Hari 3: Praijing, Lapopu, dan jalan panjang ke timur</h3>
-<p>Mulai pagi-pagi di <strong>Praijing</strong>, kampung rumah ilalang yang berundak di lereng bukit, tak jauh dari Waikabubak. Lalu ke <strong>Air Terjun Lapopu</strong>, setinggi sekitar 90 m dan bertingkat, 5 menit berjalan kaki dari tempat parkir. Setelah makan siang, perjalanan besar: sekitar 4-5 jam dengan berhenti-henti sampai Waingapu. Atur waktunya agar tiba di <strong>Bukit Wairinding</strong>, sekitar 25 km sebelum Waingapu, saat matahari terbenam di atas sabana. Program wisata dinas pariwisata menyebut penyeberangan ini sebagai "perjalanan sekitar 5 jam".</p>
+<p>Mulai pagi-pagi di <strong>Praijing</strong>, kampung rumah ilalang yang berundak di lereng bukit, tak jauh dari Waikabubak. Lalu ke <strong>Air Terjun Lapopu</strong>, setinggi sekitar 90 m dan bertingkat, 5 menit berjalan kaki dari tempat parkir. Setelah makan siang, tibalah perjalanan panjang: sekitar 4-5 jam sampai Waingapu, termasuk waktu singgah. Atur waktunya agar tiba di <strong>Bukit Wairinding</strong>, sekitar 25 km sebelum Waingapu, saat matahari terbenam di atas sabana. Program wisata dinas pariwisata setempat menyebut perjalanan lintas ini sebagai "perjalanan sekitar 5 jam".</p>
 <h3>Hari 4: Sabana timur laut</h3>
-<p>Sekitar 2 jam ke barat laut dari Waingapu terdapat <strong>Air Terjun Tanggedu</strong>, yang dijuluki Grand Canyon-nya Sumba, dengan kolam-kolam yang terpahat di batu. Bagian terakhir, hampir 3 km, ditempuh jalan kaki atau naik ojek. Dalam perjalanan pulang, mampir ke <strong>Puru Kambera</strong>, tempat kuda liar merumput di sabana yang turun sampai ke pantai panjang yang sepi.</p>
+<p>Sekitar 2 jam ke barat laut dari Waingapu terdapat <strong>Air Terjun Tanggedu</strong>, yang dijuluki Grand Canyon-nya Sumba, dengan kolam-kolam alami yang terpahat di batu. Ruas terakhir sepanjang hampir 3 km ditempuh dengan berjalan kaki atau naik ojek. Dalam perjalanan pulang, mampir ke <strong>Puru Kambera</strong>, tempat kuda liar merumput di sabana yang turun sampai ke pantai panjang yang sepi.</p>
 <h3>Hari 5: Waingapu dan pulang</h3>
 <p>Kunjungi kampung raja <strong>Prailiu</strong> di pinggir Waingapu, terkenal dengan para penenun ikatnya (lihat <a href="/id/culture/sumba-ikat-weaving-where-to-buy/">tempat membeli ikat di Sumba</a>), lalu naik ke <strong>Bukit Persaudaraan</strong>, bukit di samping bandara dengan pemandangan luas, sebelum terbang.</p>
 
 <h2>7 hari: perjalanan klasik barat ke timur</h2>
-<p>Tujuh hari adalah durasi yang paling sering disarankan panduan dan program tur. Tidak ada hari perjalanan yang terlalu panjang, dan Anda bisa menambah pantai selatan di barat serta ujung timur.</p>
+<p>Tujuh hari adalah durasi yang paling sering disarankan buku panduan dan operator tur. Tidak ada hari perjalanan yang terlalu melelahkan, dan Anda bisa menambahkan pantai selatan di barat serta ujung timur.</p>
 <ul>
 <li><strong>Hari 1:</strong> Tiba di Tambolaka. Sore di Danau Weekuri, matahari terbenam di Mandorak.</li>
-<li><strong>Hari 2:</strong> Kodi: Ratenggaro, Pero, dan jalan pesisir. Jika datang bulan Februari, tanyakan sopir Anda tentang <a href="/id/culture/pasola-explained/">Pasola</a>. Menginap di Tambolaka atau Kodi.</li>
+<li><strong>Hari 2:</strong> Kodi: Ratenggaro, Pero, dan jalan pesisir. Jika datang pada bulan Februari, tanyakan kepada sopir Anda tentang <a href="/id/culture/pasola-explained/">Pasola</a>. Menginap di Tambolaka atau Kodi.</li>
 <li><strong>Hari 3:</strong> Ke Waikabubak (sekitar 1 jam dari Tambolaka). Kampung Tarung pada pagi hari, lalu lembah <strong>Wanokaka</strong> di selatan kota (sekitar 20 km) dengan sawah, kampung, dan pantai yang lebar, atau Pantai <strong>Marosi</strong> di pesisir Lamboya (sekitar 30 km). Menginap di Waikabubak.</li>
 <li><strong>Hari 4:</strong> Praijing pagi-pagi, Air Terjun Lapopu, lalu ke timur melewati Sumba Tengah, singgah di <strong>Waibakul</strong> atau kampung adat <strong>Pasunga</strong> yang terkenal dengan kubur batunya yang besar. Matahari terbenam di Wairinding. Menginap di Waingapu.</li>
 <li><strong>Hari 5:</strong> Air Terjun Tanggedu dan Puru Kambera.</li>
-<li><strong>Hari 6:</strong> Tenggara: kampung <strong>Praiyawang</strong> (Rindi) dan kawasan Rende, sekitar 70 km dan 2 jam dari Waingapu, terkenal dengan kubur batu besar dan ikatnya. Kembali lewat pesisir untuk matahari terbenam di <strong>Walakiri</strong>, tempat bakau-bakau kecil berdiri di pasir seperti penari. Perhatikan pasang surut: saat pasang, pohon-pohonnya terendam.</li>
+<li><strong>Hari 6:</strong> Tenggara: kampung <strong>Praiyawang</strong> (Rindi) dan kawasan Rende, sekitar 70 km dan 2 jam dari Waingapu, terkenal dengan kubur batu besar dan ikatnya. Kembali lewat pesisir untuk matahari terbenam di <strong>Walakiri</strong>, tempat bakau-bakau kecil berdiri di pasir seperti penari. Perhatikan jadwal pasang surut: saat air pasang, pohon-pohon itu terendam.</li>
 <li><strong>Hari 7:</strong> Prailiu dan Bukit Persaudaraan, lalu terbang dari Waingapu.</li>
 </ul>
 
 <h2>10 hari: Sumba dengan santai</h2>
-<p>Dengan sepuluh hari Anda bisa berhenti terburu-buru, menginap dua malam di setiap basis, dan mencapai tempat yang jarang dikunjungi.</p>
+<p>Dengan sepuluh hari, Anda tak perlu terburu-buru, bisa menginap dua malam di setiap basis, dan mencapai tempat yang jarang dikunjungi.</p>
 <ul>
 <li><strong>Hari 1-2:</strong> Barat laut dan Kodi dengan santai: Weekuri, Mandorak, Ratenggaro, Pero, dan pesisir yang lebih sepi di sekitar Bondo Kodi.</li>
 <li><strong>Hari 3:</strong> Waikabubak, Kampung Tarung, dan sore di Wanokaka.</li>
-<li><strong>Hari 4:</strong> Lapopu, lalu trekking ke <strong>Matayangu</strong>, air terjun di Taman Nasional Manupeu Tanah Daru. Lonely Planet menyebutnya sekitar 90 menit berjalan kaki dari tempat parkir yang sama dengan Lapopu; jalurnya curam dan licin, jadi pergilah dengan pemandu lokal.</li>
+<li><strong>Hari 4:</strong> Lapopu, lalu berjalan kaki ke <strong>Matayangu</strong>, air terjun di Taman Nasional Manupeu Tanah Daru. Lonely Planet menyebutnya sekitar 90 menit berjalan kaki dari tempat parkir yang sama dengan Lapopu; jalurnya curam dan licin, jadi pergilah dengan pemandu lokal.</li>
 <li><strong>Hari 5:</strong> Lamboya dan pesisir barat daya (Marosi), atau hari istirahat. Menginap di Waikabubak.</li>
-<li><strong>Hari 6:</strong> Praijing, Pasunga, dan Waibakul, menyeberangi Sumba Tengah pelan-pelan sampai Wairinding untuk matahari terbenam.</li>
+<li><strong>Hari 6:</strong> Praijing, Pasunga, dan Waibakul, melintasi Sumba Tengah dengan santai hingga Wairinding untuk menikmati matahari terbenam.</li>
 <li><strong>Hari 7:</strong> Tanggedu dan Puru Kambera.</li>
-<li><strong>Hari 8-9:</strong> Pantai selatan: <strong>Tarimbang</strong>, teluk lebar di pesisir selatan Sumba Timur, dicapai lewat jalan berkelok melintasi perbukitan (sediakan minimal 3 jam dari Waingapu). Menginap semalam, berenang jika laut tenang, dan menonton ombak. Di perjalanan tampak perbukitan berhutan <strong>Taman Nasional Laiwangi Wanggameti</strong>, tempat titik tertinggi di pulau ini.</li>
+<li><strong>Hari 8-9:</strong> Pantai selatan: <strong>Tarimbang</strong>, teluk lebar di pesisir selatan Sumba Timur, dicapai lewat jalan berkelok melintasi perbukitan (sediakan minimal 3 jam dari Waingapu). Menginap semalam, berenang jika laut tenang, dan menonton ombak. Sepanjang perjalanan tampak perbukitan berhutan <strong>Taman Nasional Laiwangi Wanggameti</strong>, lokasi titik tertinggi di pulau ini.</li>
 <li><strong>Hari 10:</strong> Kembali ke Waingapu: Walakiri saat senja jika terbang keesokan paginya, atau Prailiu sebelum penerbangan sore.</li>
 </ul>
-<p>Peselancar bisa menukar hari-hari di pantai selatan dengan tinggal lebih lama di pesisir barat. Lihat panduan <a href="/id/things-to-do/surfing-in-sumba/">berselancar di Sumba</a>.</p>
+<p>Peselancar bisa mengganti hari-hari di pantai selatan dengan tinggal lebih lama di pesisir barat. Lihat panduan <a href="/id/things-to-do/surfing-in-sumba/">berselancar di Sumba</a>.</p>
 
 <h2>Berkunjung ke kampung adat dengan hormat</h2>
-<p>Banyak orang Sumba masih menganut <strong>Marapu</strong>, kepercayaan leluhur, dan kampung yang Anda kunjungi adalah rumah yang hidup, tempat upacara, pemakaman, dan kehidupan sehari-hari berlangsung. Minta izin sebelum memotret orang atau masuk rumah, isi buku tamu, dan berikan kontribusi kecil: Lonely Planet (2026) menyebut biaya masuk kampung biasanya sekitar USD 2-5 per orang, dibayarkan kepada kepala kampung atau melalui pemandu. Berpakaian sopan, jangan duduk atau berdiri di atas kubur batu, dan jangan menyentuh benda ritual. Penjelasan lengkap ada di panduan <a href="/id/culture/marapu-ikat-traditional-villages/">Marapu, ikat, dan kampung adat</a>.</p>
-<p>Pantai dan titik pandang sering memiliki biaya tidak resmi yang dipungut warga penjaga. Di Wairinding sekitar Rp10.000 per orang, dan di Tanggedu sekitar Rp5.000, ditambah sekitar Rp50.000 untuk ojek pulang-pergi dari desa (angka 2024, bisa berubah). Bawa uang pecahan kecil: ATM kebanyakan ada di Waingapu, Waikabubak, dan Tambolaka.</p>
+<p>Banyak orang Sumba masih menganut <strong>Marapu</strong>, kepercayaan leluhur, dan kampung yang Anda kunjungi adalah rumah yang hidup, tempat upacara, pemakaman, dan kehidupan sehari-hari berlangsung. Minta izin sebelum memotret orang atau masuk rumah, isi buku tamu, dan berikan sumbangan kecil: Lonely Planet (2026) menyebut biaya masuk kampung biasanya sekitar USD 2-5 per orang, dibayarkan kepada kepala kampung atau melalui pemandu. Berpakaian sopan, jangan duduk atau berdiri di atas kubur batu, dan jangan menyentuh benda ritual. Penjelasan lengkap ada di panduan <a href="/id/culture/marapu-ikat-traditional-villages/">Marapu, ikat, dan kampung adat</a>.</p>
+<p>Di pantai dan titik pandang sering ada pungutan tidak resmi dari warga yang menjaga tempat itu. Di Wairinding besarnya sekitar Rp 10.000 per orang dan di Tanggedu sekitar Rp 5.000, ditambah sekitar Rp 50.000 untuk ojek pulang-pergi dari desa (angka 2024, bisa berubah). Bawa uang pecahan kecil: ATM kebanyakan ada di Waingapu, Waikabubak, dan Tambolaka.</p>
 
 <h2>Tips praktis untuk durasi berapa pun</h2>
 <ul>
-<li><strong>Timur ke barat atau barat ke timur?</strong> Keduanya bisa. Mulai dari barat berarti hari-hari yang lebih santai (laguna, pantai) di awal dan senja di sabana di akhir.</li>
-<li><strong>Musim mengubah rute.</strong> Pada musim hujan, kira-kira Desember sampai Maret, beberapa jalan ke air terjun dan pantai selatan menjadi berlumpur atau tidak bisa dilalui, dan air terjun berwarna cokelat. Baca <a href="/id/things-to-do/best-time-to-visit-sumba/">panduan bulan demi bulan</a> kami.</li>
-<li><strong>Berangkat pagi.</strong> Cahaya lebih lembut, udara lebih sejuk, dan Anda tiba sebelum panas siang.</li>
+<li><strong>Timur ke barat atau barat ke timur?</strong> Keduanya bisa. Memulai dari barat berarti hari-hari yang lebih santai (laguna, pantai) ada di awal, sedangkan senja di sabana menjadi penutup.</li>
+<li><strong>Musim mengubah rute.</strong> Pada musim hujan, kira-kira Desember sampai Maret, beberapa jalan ke air terjun dan pantai selatan menjadi berlumpur atau tidak bisa dilalui, dan air terjun berubah cokelat. Baca <a href="/id/things-to-do/best-time-to-visit-sumba/">panduan bulan demi bulan</a> kami.</li>
+<li><strong>Berangkat pagi.</strong> Cahaya lebih lembut, udara lebih sejuk, dan Anda tiba sebelum terik siang.</li>
 <li><strong>Unduh peta offline.</strong> Sinyal sering hilang di perbukitan.</li>
 <li><strong>Bawa:</strong> uang tunai pecahan kecil, sepatu karang atau sandal, tabir surya, topi, obat antinyamuk, dan sarung untuk berkunjung ke kampung. Baca panduan <a href="/id/getting-here/sumba-travel-safety-health/">keamanan dan kesehatan</a>.</li>
 <li><strong>Makan lokal.</strong> Warung sederhana di setiap kota menyajikan ikan, nasi, dan sayur; lihat <a href="/id/culture/sumbanese-food/">kuliner Sumba</a>.</li>
 <li><strong>Tempat menginap.</strong> Basis yang praktis: Tambolaka atau pesisir barat laut, Waikabubak, dan Waingapu. Lihat <a href="/id/where-to-stay/where-to-stay-in-sumba/">tempat menginap di Sumba</a>.</li>
 </ul>
-<p>Berapa pun lamanya, sisakan ruang untuk hal tak terduga: pacuan kuda di lapangan kampung, ajakan mengunyah sirih pinang, atau upacara kematian yang boleh Anda saksikan dari kejauhan. Di Sumba, momen-momen itulah yang sering menjadi inti perjalanan.</p>"""
+<p>Berapa pun lama perjalanan Anda, sisakan ruang untuk hal tak terduga: pacuan kuda di lapangan kampung, ajakan mengunyah sirih pinang, atau upacara kematian yang boleh Anda saksikan dari kejauhan. Di Sumba, momen-momen itulah yang sering menjadi inti perjalanan.</p>"""
 },
 "facts": {
  "en": [["Best route", "Fly into Tambolaka (TMC), out of Waingapu (WGP), or the reverse"], ["Ideal length", "7 days; 5 at a fast pace, 10 to include the south coast"], ["Longest drive", "Waikabubak to Waingapu, about 130 km, 3.5-4.5 h"], ["Getting around", "Car with local driver, around USD 75 a day (2026)"], ["Village visits", "Ask permission, sign the book, contribution around USD 2-5"], ["Best season to drive", "Dry season, roughly May-October"]],
- "es": [["Mejor ruta", "Entrar por Tambolaka (TMC) y salir por Waingapu (WGP), o al revés"], ["Duración ideal", "7 días; 5 a buen ritmo, 10 para sumar la costa sur"], ["Trayecto más largo", "Waikabubak a Waingapu, unos 130 km, 3,5-4,5 h"], ["Cómo moverse", "Coche con conductor local, unos 75 USD al día (2026)"], ["Visitas a aldeas", "Pedir permiso, firmar el libro, aportación de unos 2-5 USD"], ["Mejor época para la carretera", "Estación seca, más o menos de mayo a octubre"]],
- "id": [["Rute terbaik", "Masuk lewat Tambolaka (TMC), keluar lewat Waingapu (WGP), atau sebaliknya"], ["Durasi ideal", "7 hari; 5 hari tempo cepat, 10 hari untuk pantai selatan"], ["Perjalanan terpanjang", "Waikabubak ke Waingapu, sekitar 130 km, 3,5-4,5 jam"], ["Transportasi", "Mobil dengan sopir lokal, sekitar USD 75 per hari (2026)"], ["Kunjungan kampung", "Minta izin, isi buku tamu, kontribusi sekitar USD 2-5"], ["Musim terbaik di jalan", "Kemarau, kira-kira Mei-Oktober"]]
+ "es": [["Mejor ruta", "Entrar por Tambolaka (TMC) y salir por Waingapu (WGP), o al revés"], ["Duración ideal", "7 días; 5 a buen ritmo, 10 para sumar la costa sur"], ["Trayecto más largo", "Waikabubak a Waingapu, unos 130 km, 3,5-4,5 h"], ["Cómo moverse", "Coche con conductor local, unos 75 USD al día (2026)"], ["Visitas a aldeas", "Pedir permiso, firmar el libro de visitas y dejar unos 2-5 USD"], ["Mejor época para conducir", "Estación seca, aproximadamente de mayo a octubre"]],
+ "id": [["Rute terbaik", "Masuk lewat Tambolaka (TMC), keluar lewat Waingapu (WGP), atau sebaliknya"], ["Durasi ideal", "7 hari; 5 hari dengan tempo cepat, 10 hari untuk menambah pantai selatan"], ["Perjalanan terpanjang", "Waikabubak ke Waingapu, sekitar 130 km, 3,5-4,5 jam"], ["Transportasi", "Mobil dengan sopir lokal, sekitar USD 75 per hari (2026)"], ["Kunjungan kampung", "Minta izin, isi buku tamu, sumbangan sekitar USD 2-5"], ["Musim terbaik untuk berkendara", "Kemarau, kira-kira Mei-Oktober"]]
 },
 "faq": {
  "en": [
@@ -261,19 +261,19 @@ G1 = {
   ["Is it worth going to East Sumba?", "Yes. The savanna hills of Wairinding and Puru Kambera, Tanggedu waterfall and the stone tombs of Praiyawang are very different from the west."],
   ["Can I do Sumba in the rainy season?", "Yes, but expect muddy tracks, brown waterfalls and slower driving, roughly December to March. Keep the itinerary flexible."]],
  "es": [
-  ["¿Cuántos días hacen falta para ver Sumba?", "Siete días es lo ideal para cruzarla de oeste a este. Con cinco se puede a buen ritmo y una jornada larga de coche; tres o cuatro días dan solo para un extremo de la isla."],
-  ["¿Es mejor llegar a Tambolaka o a Waingapu?", "Llega a uno y sal por el otro. Tambolaka tiene varios vuelos diarios desde Bali; Waingapu tiene vuelo directo de TransNusa desde Bali cuatro veces por semana (mar, mié, vie, sáb) desde julio de 2026."],
+  ["¿Cuántos días hacen falta para ver Sumba?", "Lo ideal son siete días para cruzarla de oeste a este. Con cinco es posible a buen ritmo y con una jornada larga al volante; tres o cuatro días solo dan para un extremo de la isla."],
+  ["¿Es mejor llegar a Tambolaka o a Waingapu?", "Llega a uno y sal por el otro. Tambolaka tiene varios vuelos diarios desde Bali, y Waingapu cuenta desde julio de 2026 con un vuelo directo de TransNusa desde Bali cuatro veces por semana (martes, miércoles, viernes y sábado)."],
   ["¿Cuánto se tarda en coche de Tambolaka a Waingapu?", "Son unos 170 km. Sin paradas, unas 4-5 horas; con visitas por el camino, cuenta un día entero."],
-  ["¿Se puede recorrer Sumba sin conductor?", "Sí, alquilando moto o coche, pero las carreteras tienen muchas curvas y poca señalización. Un conductor local lo hace más fácil y te presenta en las aldeas."],
+  ["¿Se puede recorrer Sumba sin conductor?", "Sí, alquilando una moto o un coche, pero las carreteras son sinuosas y están mal señalizadas. Con un conductor local todo es más fácil, y además te presenta en las aldeas."],
   ["¿Merece la pena ir a Sumba Oriental?", "Sí. Las colinas de sabana de Wairinding y Puru Kambera, la cascada de Tanggedu y las tumbas de piedra de Praiyawang son muy distintas del oeste."],
-  ["¿Se puede viajar a Sumba en temporada de lluvias?", "Sí, pero con caminos embarrados, cascadas marrones y trayectos más lentos, más o menos de diciembre a marzo. Mantén el itinerario flexible."]],
+  ["¿Se puede viajar a Sumba en temporada de lluvias?", "Sí, pero entre diciembre y marzo, aproximadamente, habrá caminos embarrados, cascadas marrones y trayectos más lentos. Conviene llevar un itinerario flexible."]],
  "id": [
-  ["Berapa hari yang dibutuhkan untuk ke Sumba?", "Tujuh hari ideal untuk menyeberang dari barat ke timur. Lima hari bisa dengan tempo cepat dan satu hari perjalanan panjang; tiga atau empat hari hanya cukup untuk satu sisi pulau."],
+  ["Berapa hari yang dibutuhkan untuk menjelajahi Sumba?", "Tujuh hari ideal untuk melintasi pulau dari barat ke timur. Lima hari bisa dengan tempo cepat dan satu hari perjalanan panjang; tiga atau empat hari hanya cukup untuk satu sisi pulau."],
   ["Lebih baik mendarat di Tambolaka atau Waingapu?", "Masuk lewat satu bandara dan keluar lewat yang lain. Tambolaka punya beberapa penerbangan harian dari Bali; Waingapu punya penerbangan langsung TransNusa dari Bali empat kali seminggu (Selasa, Rabu, Jumat, Sabtu) sejak Juli 2026."],
   ["Berapa lama perjalanan darat dari Tambolaka ke Waingapu?", "Sekitar 170 km. Tanpa berhenti kira-kira 4-5 jam; dengan singgah di tempat wisata, sediakan satu hari penuh."],
   ["Bisakah keliling Sumba tanpa sopir?", "Bisa, dengan menyewa motor atau mobil, tetapi jalannya berkelok dan petunjuk jalan minim. Sopir lokal membuat perjalanan lebih mudah dan membantu saat berkunjung ke kampung."],
   ["Apakah Sumba Timur layak dikunjungi?", "Ya. Bukit sabana Wairinding dan Puru Kambera, Air Terjun Tanggedu, dan kubur batu Praiyawang sangat berbeda dari wilayah barat."],
-  ["Bisakah ke Sumba saat musim hujan?", "Bisa, tetapi bersiaplah dengan jalan berlumpur, air terjun cokelat, dan perjalanan lebih lambat, kira-kira Desember sampai Maret. Buat itinerary yang fleksibel."]]
+  ["Bisakah ke Sumba saat musim hujan?", "Bisa, tetapi bersiaplah dengan jalan berlumpur, air terjun cokelat, dan perjalanan lebih lambat, kira-kira Desember sampai Maret. Susun rencana perjalanan yang fleksibel."]]
 },
 "places": [
  {"name": "Tambolaka Airport (Lede Kalumbang)", "lat": -9.4102, "lon": 119.2433, "area": "Southwest Sumba"},
@@ -313,7 +313,7 @@ G1 = {
  ["Mata Yangu Waterfall, Travelfish", "https://www.travelfish.org/sight_profile/indonesia/east_nusa_tenggara/sumba/waikabubak/3714"],
  ["Sumba travel 2026: east vs west route and seven essential tips, Telkomsel", "https://www.telkomsel.com/en/jelajah/jelajah-nusantara/sumba-travel-2026-east-vs-west-route-and-seven-essential-tips"]
 ],
-"image_candidate": {"file_page": "https://commons.wikimedia.org/wiki/File:Puru_Kambera,_Sumba_Timur.jpg", "direct_url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Puru_Kambera%2C_Sumba_Timur.jpg", "credit": "Djakartacaver", "license": "CC BY-SA 4.0", "license_url": "https://creativecommons.org/licenses/by-sa/4.0", "caption": {"en": "Savanna and karst hills around Puru Kambera, East Sumba, a highlight of the final days of a west-to-east itinerary.", "es": "Sabana y colinas kársticas en Puru Kambera, Sumba Oriental, uno de los grandes momentos de los últimos días de la ruta de oeste a este.", "id": "Sabana dan bukit karst di sekitar Puru Kambera, Sumba Timur, salah satu sorotan di hari-hari terakhir rute barat ke timur."}},
+"image_candidate": {"file_page": "https://commons.wikimedia.org/wiki/File:Puru_Kambera,_Sumba_Timur.jpg", "direct_url": "https://upload.wikimedia.org/wikipedia/commons/7/7e/Puru_Kambera%2C_Sumba_Timur.jpg", "credit": "Djakartacaver", "license": "CC BY-SA 4.0", "license_url": "https://creativecommons.org/licenses/by-sa/4.0", "caption": {"en": "Savanna and karst hills around Puru Kambera, East Sumba, a highlight of the final days of a west-to-east itinerary.", "es": "Sabana y colinas kársticas en los alrededores de Puru Kambera (Sumba Oriental), uno de los platos fuertes de los últimos días de la ruta de oeste a este.", "id": "Sabana dan bukit karst di sekitar Puru Kambera, Sumba Timur, salah satu daya tarik utama pada hari-hari terakhir rute barat ke timur."}},
 }
 
 # END_G1
@@ -404,72 +404,72 @@ G2 = {
 "es": {
  "title": "Mejor época para viajar a Sumba: guía mes a mes",
  "dek": "Colinas verdes o sabana dorada, cascadas rugientes o pozas cristalinas, jinetes de la Pasola u olas vacías: en Sumba, el mes que elijas decide el viaje que tendrás.",
- "answer": "Para la mayoría de viajeros, la mejor época para visitar Sumba es la estación seca, más o menos de mayo a octubre, y de junio a agosto son los meses más soleados y agradables. Ven en febrero o marzo por la Pasola y las colinas verdes, aceptando lluvia y caminos embarrados; abril y principios de mayo son un punto dulce, con la isla aún verde y las lluvias terminando.",
+ "answer": "Para la mayoría de los viajeros, la mejor época para visitar Sumba es la estación seca, aproximadamente de mayo a octubre, y los meses más soleados y agradables son de junio a agosto. Febrero y marzo son el momento de la Pasola y de las colinas verdes, a cambio de lluvia y caminos embarrados; abril y principios de mayo ofrecen un buen término medio, con la isla todavía verde y las lluvias en retirada.",
  "body": """<p>En marzo, las colinas de Sumba Oriental tienen el color del arroz recién brotado, las cascadas bajan marrones y estruendosas por el bosque y el aire es denso y cálido tras una tormenta de tarde. En agosto, esas mismas colinas se han vuelto oro y cobre, la hierba silba con el viento seco, los caballos buscan la sombra de un único árbol y el cielo está tan limpio que desde Wairinding se ve la curva de la costa. Sumba es una isla con dos caras, y el mes que elijas decide cuál vas a conocer.</p>
-<p>La respuesta rápida: la <strong>estación seca, más o menos de mayo a octubre</strong>, es la mejor para casi todos los viajes, con cielos despejados, carreteras más fáciles y baños tranquilos. <strong>De junio a agosto</strong> es la ventana clásica. <strong>Febrero y marzo</strong> traen la Pasola y los paisajes más verdes, pero también la lluvia más intensa. <strong>De abril a principios de mayo</strong> es la temporada intermedia que adoran muchos fotógrafos.</p>
+<p>La respuesta rápida: la <strong>estación seca, más o menos de mayo a octubre</strong>, es la mejor para casi todos los viajes, con cielos despejados, carreteras más fáciles y baños tranquilos. <strong>De junio a agosto</strong> es el periodo clásico. <strong>Febrero y marzo</strong> traen la Pasola y los paisajes más verdes, pero también la lluvia más intensa. <strong>De abril a principios de mayo</strong> llega la temporada intermedia, la favorita de muchos fotógrafos.</p>
 
 <h2>El clima de Sumba en un párrafo</h2>
-<p>Sumba está en la parte más seca de Indonesia. En Waingapu, en la costa noreste, la lluvia media es de solo unos 810 mm al año, repartidos en unos 80 días, según los datos climáticos de 1991-2020. Casi toda cae entre diciembre y marzo: enero ronda los 170 mm, mientras que agosto y septiembre reciben unos 5 mm cada uno. La temperatura apenas cambia, con máximas de unos 31-33 C todo el año y noches desde unos 20 C en agosto hasta unos 24 C en la estación húmeda. El oeste es más lluvioso y verde que el este, y las colinas del interior reciben más lluvia que la costa. Wikipedia lo resume como una estación seca de mayo a noviembre y una de lluvias de diciembre a abril; las fuentes locales sitúan la llegada de las lluvias entre finales de octubre y diciembre, según el año y la zona.</p>
+<p>Sumba se encuentra en la región más seca de Indonesia. En Waingapu, en la costa noreste, la lluvia media es de solo unos 810 mm al año, repartidos en unos 80 días, según los datos climáticos de 1991-2020. Casi toda cae entre diciembre y marzo: enero ronda los 170 mm, mientras que agosto y septiembre reciben unos 5 mm cada uno. La temperatura apenas cambia, con máximas de unos 31-33 °C todo el año y noches desde unos 20 °C en agosto hasta unos 24 °C en la estación húmeda. El oeste es más lluvioso y verde que el este, y las colinas del interior reciben más lluvia que la costa. Wikipedia lo resume como una estación seca de mayo a noviembre y una de lluvias de diciembre a abril; las fuentes locales sitúan la llegada de las lluvias entre finales de octubre y diciembre, según el año y la zona.</p>
 <table>
 <tr><th>Mes</th><th>Lluvia en Waingapu</th><th>Días de lluvia</th><th>Máx. / mín.</th><th>Mar</th></tr>
-<tr><td>Enero</td><td>170 mm</td><td>13</td><td>32 / 24 C</td><td>29,5 C</td></tr>
-<tr><td>Febrero</td><td>160 mm</td><td>13</td><td>32 / 24 C</td><td>29 C</td></tr>
-<tr><td>Marzo</td><td>145 mm</td><td>11</td><td>32 / 24 C</td><td>29,5 C</td></tr>
-<tr><td>Abril</td><td>70 mm</td><td>9</td><td>32 / 23 C</td><td>29,5 C</td></tr>
-<tr><td>Mayo</td><td>35 mm</td><td>6</td><td>32 / 23 C</td><td>28,5 C</td></tr>
-<tr><td>Junio</td><td>25 mm</td><td>4</td><td>31 / 22 C</td><td>27,5 C</td></tr>
-<tr><td>Julio</td><td>10 mm</td><td>3</td><td>31 / 21 C</td><td>27 C</td></tr>
-<tr><td>Agosto</td><td>5 mm</td><td>1</td><td>31 / 20 C</td><td>26,5 C</td></tr>
-<tr><td>Septiembre</td><td>5 mm</td><td>1</td><td>32 / 21 C</td><td>27 C</td></tr>
-<tr><td>Octubre</td><td>10 mm</td><td>2</td><td>33 / 23 C</td><td>28 C</td></tr>
-<tr><td>Noviembre</td><td>40 mm</td><td>6</td><td>33 / 24 C</td><td>29,5 C</td></tr>
-<tr><td>Diciembre</td><td>135 mm</td><td>11</td><td>33 / 25 C</td><td>29,5 C</td></tr>
+<tr><td>Enero</td><td>170 mm</td><td>13</td><td>32 / 24 °C</td><td>29,5 °C</td></tr>
+<tr><td>Febrero</td><td>160 mm</td><td>13</td><td>32 / 24 °C</td><td>29 °C</td></tr>
+<tr><td>Marzo</td><td>145 mm</td><td>11</td><td>32 / 24 °C</td><td>29,5 °C</td></tr>
+<tr><td>Abril</td><td>70 mm</td><td>9</td><td>32 / 23 °C</td><td>29,5 °C</td></tr>
+<tr><td>Mayo</td><td>35 mm</td><td>6</td><td>32 / 23 °C</td><td>28,5 °C</td></tr>
+<tr><td>Junio</td><td>25 mm</td><td>4</td><td>31 / 22 °C</td><td>27,5 °C</td></tr>
+<tr><td>Julio</td><td>10 mm</td><td>3</td><td>31 / 21 °C</td><td>27 °C</td></tr>
+<tr><td>Agosto</td><td>5 mm</td><td>1</td><td>31 / 20 °C</td><td>26,5 °C</td></tr>
+<tr><td>Septiembre</td><td>5 mm</td><td>1</td><td>32 / 21 °C</td><td>27 °C</td></tr>
+<tr><td>Octubre</td><td>10 mm</td><td>2</td><td>33 / 23 °C</td><td>28 °C</td></tr>
+<tr><td>Noviembre</td><td>40 mm</td><td>6</td><td>33 / 24 °C</td><td>29,5 °C</td></tr>
+<tr><td>Diciembre</td><td>135 mm</td><td>11</td><td>33 / 25 °C</td><td>29,5 °C</td></tr>
 </table>
 <p>Estos datos son de Waingapu, la zona más seca de la isla. En Sumba Occidental y en las colinas llueve más, sobre todo de diciembre a marzo.</p>
 
 <h2>Mes a mes</h2>
 <h3>Enero: verde, caluroso y húmedo</h3>
-<p>El mes más lluvioso en el este. Las colinas están muy verdes, los ríos llenos y las cascadas en su máxima fuerza, aunque a menudo marrones de barro y demasiado bravas para acercarse. Los caminos de tierra hacia playas y aldeas remotas pueden quedar intransitables. Hay pocos visitantes; buen mes solo si eres flexible y no te importa viajar más despacio.</p>
+<p>El mes más lluvioso en el este. Las colinas están muy verdes, los ríos llenos y las cascadas en su máxima fuerza, aunque a menudo marrones de barro y demasiado bravas para acercarse. Los caminos de tierra hacia playas y aldeas remotas pueden quedar intransitables. Hay pocos visitantes; es un buen mes solo si eres flexible y no te importa viajar más despacio.</p>
 <h3>Febrero: la Pasola en el oeste</h3>
-<p>Sigue lloviendo, pero es cuando suelen celebrarse las primeras batallas rituales de la <a href="/es/culture/pasola-explained/">Pasola</a>, en las zonas de Kodi y Lamboya, al oeste. Las fechas las fijan los ancianos Rato según la aparición de los gusanos marinos <em>nyale</em>, y a menudo se confirman solo una o dos semanas antes. En 2026 cayeron el 9, 10 y 11 de febrero. Si planeas el viaje en torno a la Pasola, deja días de margen y reserva el transporte con tiempo.</p>
+<p>Sigue lloviendo, pero es el mes en que suelen celebrarse las primeras batallas rituales de la <a href="/es/culture/pasola-explained/">Pasola</a>, en las zonas de Kodi y Lamboya, al oeste. Las fechas las fijan los ancianos rato según la aparición de los gusanos marinos <em>nyale</em>, y a menudo se confirman solo una o dos semanas antes. En 2026 se celebró los días 9, 10 y 11 de febrero. Si planeas el viaje en torno a la Pasola, deja días de margen y reserva el transporte con tiempo.</p>
 <h3>Marzo: la segunda Pasola y la isla más verde</h3>
-<p>La Pasola pasa a Wanokaka y Gaura, normalmente en marzo (en 2026, el 9, 10 y 11 de marzo). La lluvia afloja un poco a lo largo del mes. El paisaje está en su momento más verde, algo que sorprende en una isla famosa por su sabana dorada. Las cascadas van llenas, y Matayangu en particular es espectacular después de llover.</p>
-<h3>Abril: empieza el punto dulce</h3>
-<p>La lluvia en Waingapu baja a la mitad, unos 70 mm. Las colinas siguen verdes, las cascadas siguen con caudal y las carreteras empiezan a secarse. Muy buen mes para fotógrafos y para quien quiera la isla verde sin lo peor de la lluvia. Las olas de las costas sur y oeste empiezan a crecer con el inicio de la temporada de mar de fondo del sur.</p>
+<p>La Pasola pasa a Wanokaka y Gaura, normalmente en marzo (en 2026, el 9, 10 y 11 de marzo). La lluvia afloja un poco a medida que avanza el mes. El paisaje alcanza su verde más intenso, algo que sorprende en una isla famosa por su sabana dorada. Las cascadas van llenas, y Matayangu en particular es espectacular después de llover.</p>
+<h3>Abril: comienza la mejor transición</h3>
+<p>La lluvia en Waingapu baja a la mitad, unos 70 mm. Las colinas siguen verdes, las cascadas siguen con caudal y las carreteras empiezan a secarse. Es un mes excelente para los fotógrafos y para quien quiera ver la isla verde sin lo peor de las lluvias. Las olas de las costas sur y oeste empiezan a crecer con el inicio de la temporada de mar de fondo del sur.</p>
 <h3>Mayo: del verde al oro</h3>
-<p>Uno de los mejores meses en conjunto. La lluvia se queda en algún chubasco, el cielo se abre, cascadas como Lapopu y Tanggedu empiezan a bajar claras y es más seguro bañarse, y aparecen los primeros tonos dorados en la sabana del este. Todavía hay pocos visitantes.</p>
-<h3>Junio: estación seca en pleno</h3>
+<p>Uno de los mejores meses en conjunto. La lluvia se reduce a algún chubasco aislado, el cielo se despeja, cascadas como Lapopu y Tanggedu empiezan a bajar claras y es más seguro bañarse, y aparecen los primeros tonos dorados en la sabana del este. Todavía hay pocos visitantes.</p>
+<h3>Junio: plena estación seca</h3>
 <p>Días de sol, noches más frescas y casi nada de lluvia. El baño en la laguna de Weekuri es perfecto, y de junio a julio el sol se pone justo entre los dos acantilados de la playa de Mandorak. Las carreteras están en su mejor momento. Las vacaciones escolares de Indonesia suelen empezar a finales de junio, así que aumenta el turismo nacional.</p>
 <h3>Julio: temporada alta</h3>
-<p>Las noches más frescas del año (unos 20-21 C en Waingapu) y sol constante. Es el mes más concurrido de la isla, con las vacaciones extranjeras y las escolares indonesias a la vez (en Nusa Tenggara Oriental el curso escolar empezó el 13 de julio de 2026). Los vuelos y las pocas habitaciones disponibles se llenan, así que reserva coche y alojamiento con semanas de antelación. Aun así, para lo que es Bali, Sumba sigue siendo tranquila.</p>
+<p>Las noches más frescas del año (unos 20-21 °C en Waingapu) y sol constante. Es el mes más concurrido de la isla, con las vacaciones extranjeras y las escolares indonesias a la vez (en Nusa Tenggara Oriental el curso escolar empezó el 13 de julio de 2026). Los vuelos y las pocas habitaciones disponibles se llenan, así que reserva coche y alojamiento con semanas de antelación. Aun así, comparada con Bali, Sumba sigue siendo tranquila.</p>
 <h3>Agosto: la Sumba dorada</h3>
-<p>El mes más seco, con apenas un día de lluvia. La sabana de Wairinding y Puru Kambera se vuelve completamente dorada, los caballos pastan hierba seca y la luz del atardecer es extraordinaria. Las cascadas llevan menos agua pero clara, y algunas del interior casi se secan. El mar está en su punto más fresco, unos 26-27 C, y soplan los alisios del sureste.</p>
+<p>El mes más seco, con apenas un día de lluvia. La sabana de Wairinding y Puru Kambera se vuelve completamente dorada, los caballos pastan hierba seca y la luz del atardecer es extraordinaria. Las cascadas llevan menos caudal, pero el agua baja clara, y algunas del interior casi se secan. El mar está en su punto más fresco, unos 26-27 °C, y soplan los alisios del sureste.</p>
 <h3>Septiembre: calor, sequía y calma</h3>
-<p>Muy seco, cada vez más caluroso y con menos gente tras las vacaciones. Uno de los mejores meses para el paisaje dorado sin aglomeraciones. Al final de la tarde puede haber bruma por las quemas de pasto.</p>
+<p>Muy seco, cada vez más caluroso y con menos gente una vez terminadas las vacaciones. Uno de los mejores meses para el paisaje dorado sin aglomeraciones. A última hora de la tarde puede haber bruma por la quema de pastos.</p>
 <h3>Octubre: el mes más caluroso</h3>
-<p>Máximas de unos 33 C. El paisaje está en su punto más seco y polvoriento. Los surfistas suelen encontrar días de mar plato y buenas series de octubre a diciembre. Las primeras tormentas pueden llegar a final de mes, sobre todo en el interior y en las colinas.</p>
+<p>Máximas de unos 33 °C. El paisaje está más seco y polvoriento que nunca. Los surfistas suelen encontrar días de mar plato y buenas series de octubre a diciembre. Las primeras tormentas pueden llegar a finales de mes, sobre todo en el interior y en las colinas.</p>
 <h3>Noviembre: cambio de estación</h3>
 <p>Empiezan las lluvias, primero como tormentas cortas de tarde. En el este el tiempo seco suele durar hasta bien entrado noviembre; en el oeste se rompe antes. Las primeras lluvias vuelven a teñir de verde las colinas en pocos días. Menos visitantes y precios más bajos.</p>
 <h3>Diciembre: lluvia y fiestas</h3>
 <p>La lluvia se vuelve habitual, unos 135 mm y 11 días de lluvia en Waingapu. La Navidad y el Año Nuevo (las vacaciones escolares de fin de semestre en Nusa Tenggara Oriental van del 21 de diciembre de 2026 al 2 de enero de 2027) traen a muchas familias de vuelta a Sumba, y playas locales como Walakiri se llenan los fines de semana. Reserva los vuelos con tiempo.</p>
 
 <h2>¿Colinas verdes o sabana dorada?</h2>
-<p>Es la pregunta que más hacen los fotógrafos. La respuesta es sencilla: para <strong>colinas verdes</strong>, ven durante la temporada de lluvias o justo después, más o menos de finales de enero a abril. Para la <strong>sabana dorada clásica</strong> de Sumba Oriental, ven en la estación seca, de julio a octubre aproximadamente. Mayo y junio son de transición, con un poco de cada.</p>
+<p>Es la pregunta que más se hacen los fotógrafos. La respuesta es sencilla: para <strong>colinas verdes</strong>, ven durante la temporada de lluvias o justo después, más o menos de finales de enero a abril. Para la <strong>sabana dorada clásica</strong> de Sumba Oriental, ven en la estación seca, de julio a octubre aproximadamente. Mayo y junio son de transición, con un poco de cada.</p>
 
 <h2>Las cascadas según la estación</h2>
-<p>Las cascadas de Sumba obligan a elegir entre fuerza y transparencia. En la temporada de lluvias, Lapopu, una cascada de 90 m en varios escalones, baja marrón y con fuerza y no te puedes acercar; Matayangu se convierte en un muro de agua, pero el sendero está embarrado y resbala. En la estación seca el agua baja con menos caudal pero clara, las pozas están tranquilas y bañarse es más fácil y seguro. Algunas cascadas pequeñas del interior casi se secan en septiembre. El mejor equilibrio para la mayoría: <strong>de abril a junio</strong>. Mira nuestra guía de <a href="/es/things-to-do/beaches-lagoons-waterfalls/">playas, lagunas y cascadas</a>.</p>
+<p>Las cascadas de Sumba obligan a elegir entre fuerza y transparencia. En la temporada de lluvias, Lapopu, una cascada de 90 m en varios escalones, baja marrón y con tanta fuerza que no es posible acercarse; Matayangu se convierte en un muro de agua, pero el sendero está embarrado y resbala. En la estación seca el agua baja con menos caudal pero clara, las pozas están tranquilas y bañarse es más fácil y seguro. Algunas cascadas pequeñas del interior casi se secan en septiembre. El mejor equilibrio para la mayoría: <strong>de abril a junio</strong>. Consulta nuestra guía de <a href="/es/things-to-do/beaches-lagoons-waterfalls/">playas, lagunas y cascadas</a>.</p>
 
 <h2>El mar, el surf y el baño</h2>
-<p>El mar está caliente todo el año, desde unos 26,5 C en agosto hasta 29,5 C en los meses húmedos. La <strong>temporada de surf</strong> en las costas sur y oeste va más o menos de abril a octubre, cuando el invierno austral manda mar de fondo del Índico y los alisios del sureste soplan de tierra en muchos rompientes. De octubre a diciembre puede haber días de mar plato. Algunos rompientes funcionan con los vientos del oeste de la estación húmeda. Las olas grandes también traen corrientes fuertes: báñate solo donde lo hace la gente del lugar y nunca solo en playas vacías. Más en <a href="/es/things-to-do/surfing-in-sumba/">surf en Sumba</a>.</p>
+<p>El mar está caliente todo el año, desde unos 26,5 °C en agosto hasta 29,5 °C en los meses húmedos. La <strong>temporada de surf</strong> en las costas sur y oeste va más o menos de abril a octubre, cuando el invierno austral envía mar de fondo desde el Índico y los alisios del sureste soplan de tierra en muchos rompientes. De octubre a diciembre puede haber días de mar plato. Algunos rompientes funcionan con los vientos del oeste de la estación húmeda. Las olas grandes también traen corrientes fuertes: báñate únicamente donde lo hacen los vecinos y nunca a solas en playas desiertas. Más en <a href="/es/things-to-do/surfing-in-sumba/">surf en Sumba</a>.</p>
 
 <h2>Gente, fiestas y precios</h2>
-<p>Sumba nunca está saturada como Bali. Sumba Oriental contó 41.524 visitantes en todo 2025, más o menos uno de cada ocho extranjero, con una estancia media de tres noches. Pero la isla tiene muy pocas habitaciones, así que los periodos de más movimiento se notan enseguida:</p>
+<p>Sumba nunca está saturada como Bali. Sumba Oriental recibió 41.524 visitantes en todo 2025, de los que aproximadamente uno de cada ocho era extranjero, con una estancia media de tres noches. Pero la isla cuenta con muy pocas habitaciones, así que los periodos de más afluencia se notan enseguida:</p>
 <ul>
 <li><strong>Más concurridos:</strong> julio y agosto (vacaciones extranjeras e indonesias) y de finales de diciembre a principios de enero.</li>
-<li><strong>Con movimiento por la Pasola:</strong> unos días de febrero y marzo en el oeste.</li>
+<li><strong>Afluencia por la Pasola:</strong> unos días de febrero y marzo en el oeste.</li>
 <li><strong>Más tranquilos:</strong> enero (fuera de Año Nuevo), noviembre y los meses intermedios de abril-mayo y septiembre-octubre.</li>
 </ul>
-<p>El alojamiento y el alquiler de coche son más caros en la estación seca. Lonely Planet (2026) aconseja reservar habitaciones y coche con antelación para junio-agosto. Los precios habituales de coche con conductor están en <a href="/es/getting-here/sumba-travel-costs/">cuánto cuesta viajar a Sumba</a>.</p>
+<p>El alojamiento y el alquiler de coche son más caros en la estación seca. Lonely Planet (2026) aconseja reservar habitaciones y coche con antelación para junio-agosto. Los precios habituales de un coche con conductor figuran en <a href="/es/getting-here/sumba-travel-costs/">cuánto cuesta viajar a Sumba</a>.</p>
 
 <h2>Nuestra recomendación</h2>
 <ul>
@@ -479,71 +479,71 @@ G2 = {
 <li><strong>Pasola:</strong> febrero o marzo, con fechas flexibles.</li>
 <li><strong>Surf:</strong> de abril a octubre.</li>
 </ul>
-<p>Sea cual sea el mes, lleva protección solar, repelente y algo de paciencia. Lee nuestra <a href="/es/getting-here/sumba-travel-safety-health/">guía de seguridad y salud</a> antes de salir y, cuando lo tengas claro, prepara la ruta con nuestro <a href="/es/things-to-do/sumba-itinerary-5-7-10-days/">itinerario por Sumba de 5, 7 y 10 días</a>. ¿Dudas entre islas? Mira <a href="/es/things-to-do/sumba-vs-bali-flores/">Sumba frente a Bali y Flores</a>.</p>"""
+<p>Sea cual sea el mes, lleva protector solar, repelente y algo de paciencia. Lee nuestra <a href="/es/getting-here/sumba-travel-safety-health/">guía de seguridad y salud</a> antes de salir y, cuando lo tengas claro, prepara la ruta con nuestro <a href="/es/things-to-do/sumba-itinerary-5-7-10-days/">itinerario por Sumba de 5, 7 y 10 días</a>. ¿Dudas entre varias islas? Consulta <a href="/es/things-to-do/sumba-vs-bali-flores/">Sumba frente a Bali y Flores</a>.</p>"""
 },
 "id": {
- "title": "Waktu terbaik ke Sumba: panduan bulan demi bulan",
- "dek": "Bukit hijau atau sabana keemasan, air terjun yang bergemuruh atau kolam jernih, para penunggang Pasola atau ombak yang sepi: di Sumba, bulan yang Anda pilih menentukan perjalanan yang Anda dapat.",
- "answer": "Bagi kebanyakan wisatawan, waktu terbaik ke Sumba adalah musim kemarau, kira-kira Mei sampai Oktober, dengan Juni sampai Agustus sebagai bulan paling cerah dan nyaman. Datanglah pada Februari atau Maret untuk Pasola dan bukit hijau, dengan risiko hujan dan jalan berlumpur; April dan awal Mei adalah waktu yang pas, saat pulau masih hijau tetapi hujan mulai reda.",
- "body": """<p>Pada bulan Maret, bukit-bukit Sumba Timur berwarna seperti padi muda, air terjun mengalir cokelat dan bergemuruh di dalam hutan, dan udara terasa pekat dan hangat setelah hujan sore. Pada bulan Agustus, bukit yang sama sudah berubah menjadi emas dan tembaga, rumput berdesir ditiup angin kering, kuda-kuda berteduh di bawah sebatang pohon, dan langit begitu bersih sehingga lengkung pantai terlihat dari Wairinding. Sumba adalah satu pulau dengan dua wajah, dan bulan yang Anda pilih menentukan wajah mana yang akan Anda temui.</p>
+ "title": "Waktu terbaik berkunjung ke Sumba: panduan dari bulan ke bulan",
+ "dek": "Bukit hijau atau sabana keemasan, air terjun yang bergemuruh atau kolam jernih, para penunggang Pasola atau ombak yang sepi: di Sumba, bulan yang Anda pilih menentukan pengalaman yang Anda dapatkan.",
+ "answer": "Bagi kebanyakan wisatawan, waktu terbaik ke Sumba adalah musim kemarau, kira-kira Mei sampai Oktober, dengan Juni sampai Agustus sebagai bulan paling cerah dan nyaman. Datanglah pada Februari atau Maret untuk Pasola dan bukit hijau, dengan konsekuensi hujan dan jalan berlumpur; April dan awal Mei adalah masa yang pas, ketika pulau masih hijau tetapi hujan mulai reda.",
+ "body": """<p>Pada bulan Maret, bukit-bukit Sumba Timur berwarna seperti padi muda, air terjun mengalir cokelat dan bergemuruh di tengah hutan, sementara udara terasa lembap dan hangat selepas hujan sore. Pada bulan Agustus, bukit yang sama sudah berubah menjadi emas dan tembaga, rumput berdesir ditiup angin kering, kuda-kuda berteduh di bawah sebatang pohon, dan langit begitu bersih sehingga lengkung pantai terlihat dari Wairinding. Sumba adalah pulau dengan dua wajah, dan bulan yang Anda pilih menentukan wajah mana yang akan Anda temui.</p>
 <p>Jawaban singkatnya: <strong>musim kemarau, kira-kira Mei sampai Oktober</strong>, adalah waktu terbaik untuk sebagian besar perjalanan, dengan langit cerah, jalan lebih mudah, dan laut yang tenang untuk berenang. <strong>Juni sampai Agustus</strong> adalah masa klasik. <strong>Februari dan Maret</strong> membawa Pasola dan pemandangan paling hijau, tetapi juga hujan paling lebat. <strong>April sampai awal Mei</strong> adalah musim peralihan yang disukai banyak fotografer.</p>
 
 <h2>Iklim Sumba secara singkat</h2>
-<p>Sumba terletak di bagian Indonesia yang lebih kering. Di Waingapu, di pesisir timur laut, curah hujan rata-rata hanya sekitar 810 mm per tahun dalam kira-kira 80 hari hujan, menurut data iklim 1991-2020. Hampir semuanya turun antara Desember dan Maret: Januari rata-rata sekitar 170 mm, sementara Agustus dan September masing-masing hanya sekitar 5 mm. Suhu nyaris tidak berubah, dengan suhu maksimum siang sekitar 31-33 C sepanjang tahun dan malam hari dari sekitar 20 C pada Agustus hingga sekitar 24 C di musim hujan. Wilayah barat lebih basah dan hijau daripada timur, dan perbukitan di pedalaman lebih sering hujan daripada pesisir. Wikipedia meringkasnya sebagai musim kemarau Mei sampai November dan musim hujan Desember sampai April; sumber lokal menyebut awal musim hujan antara akhir Oktober dan Desember, tergantung tahun dan wilayahnya.</p>
+<p>Sumba terletak di kawasan paling kering di Indonesia. Di Waingapu, di pesisir timur laut, curah hujan rata-rata hanya sekitar 810 mm per tahun dalam kira-kira 80 hari hujan, menurut data iklim 1991-2020. Hampir semuanya turun antara Desember dan Maret: curah hujan Januari rata-rata sekitar 170 mm, sedangkan Agustus dan September masing-masing hanya sekitar 5 mm. Suhu nyaris tidak berubah, dengan suhu maksimum siang sekitar 31-33 °C sepanjang tahun serta suhu malam dari sekitar 20 °C pada Agustus hingga sekitar 24 °C di musim hujan. Wilayah barat lebih basah dan hijau daripada timur, dan perbukitan di pedalaman lebih sering hujan daripada pesisir. Wikipedia merangkumnya sebagai musim kemarau Mei sampai November dan musim hujan Desember sampai April; sumber lokal menyebut awal musim hujan antara akhir Oktober dan Desember, tergantung tahun dan wilayahnya.</p>
 <table>
 <tr><th>Bulan</th><th>Hujan di Waingapu</th><th>Hari hujan</th><th>Maks / min</th><th>Laut</th></tr>
-<tr><td>Januari</td><td>170 mm</td><td>13</td><td>32 / 24 C</td><td>29,5 C</td></tr>
-<tr><td>Februari</td><td>160 mm</td><td>13</td><td>32 / 24 C</td><td>29 C</td></tr>
-<tr><td>Maret</td><td>145 mm</td><td>11</td><td>32 / 24 C</td><td>29,5 C</td></tr>
-<tr><td>April</td><td>70 mm</td><td>9</td><td>32 / 23 C</td><td>29,5 C</td></tr>
-<tr><td>Mei</td><td>35 mm</td><td>6</td><td>32 / 23 C</td><td>28,5 C</td></tr>
-<tr><td>Juni</td><td>25 mm</td><td>4</td><td>31 / 22 C</td><td>27,5 C</td></tr>
-<tr><td>Juli</td><td>10 mm</td><td>3</td><td>31 / 21 C</td><td>27 C</td></tr>
-<tr><td>Agustus</td><td>5 mm</td><td>1</td><td>31 / 20 C</td><td>26,5 C</td></tr>
-<tr><td>September</td><td>5 mm</td><td>1</td><td>32 / 21 C</td><td>27 C</td></tr>
-<tr><td>Oktober</td><td>10 mm</td><td>2</td><td>33 / 23 C</td><td>28 C</td></tr>
-<tr><td>November</td><td>40 mm</td><td>6</td><td>33 / 24 C</td><td>29,5 C</td></tr>
-<tr><td>Desember</td><td>135 mm</td><td>11</td><td>33 / 25 C</td><td>29,5 C</td></tr>
+<tr><td>Januari</td><td>170 mm</td><td>13</td><td>32 / 24 °C</td><td>29,5 °C</td></tr>
+<tr><td>Februari</td><td>160 mm</td><td>13</td><td>32 / 24 °C</td><td>29 °C</td></tr>
+<tr><td>Maret</td><td>145 mm</td><td>11</td><td>32 / 24 °C</td><td>29,5 °C</td></tr>
+<tr><td>April</td><td>70 mm</td><td>9</td><td>32 / 23 °C</td><td>29,5 °C</td></tr>
+<tr><td>Mei</td><td>35 mm</td><td>6</td><td>32 / 23 °C</td><td>28,5 °C</td></tr>
+<tr><td>Juni</td><td>25 mm</td><td>4</td><td>31 / 22 °C</td><td>27,5 °C</td></tr>
+<tr><td>Juli</td><td>10 mm</td><td>3</td><td>31 / 21 °C</td><td>27 °C</td></tr>
+<tr><td>Agustus</td><td>5 mm</td><td>1</td><td>31 / 20 °C</td><td>26,5 °C</td></tr>
+<tr><td>September</td><td>5 mm</td><td>1</td><td>32 / 21 °C</td><td>27 °C</td></tr>
+<tr><td>Oktober</td><td>10 mm</td><td>2</td><td>33 / 23 °C</td><td>28 °C</td></tr>
+<tr><td>November</td><td>40 mm</td><td>6</td><td>33 / 24 °C</td><td>29,5 °C</td></tr>
+<tr><td>Desember</td><td>135 mm</td><td>11</td><td>33 / 25 °C</td><td>29,5 °C</td></tr>
 </table>
 <p>Angka ini untuk Waingapu, bagian paling kering di pulau. Di Sumba Barat dan di perbukitan, hujan lebih banyak, terutama Desember sampai Maret.</p>
 
-<h2>Bulan demi bulan</h2>
+<h2>Dari bulan ke bulan</h2>
 <h3>Januari: hijau, panas, dan basah</h3>
-<p>Bulan paling basah di wilayah timur. Bukit-bukit hijau pekat, sungai penuh, dan air terjun sedang deras-derasnya, tetapi sering cokelat berlumpur dan terlalu kuat untuk didekati. Jalan tanah menuju pantai dan kampung terpencil bisa tidak dapat dilalui. Pengunjung sedikit; bulan yang baik hanya jika Anda fleksibel dan tidak keberatan bepergian lebih lambat.</p>
+<p>Bulan paling basah di wilayah timur. Bukit-bukit hijau pekat, sungai meluap, dan air terjun sedang deras-derasnya, tetapi sering cokelat berlumpur dan terlalu kuat untuk didekati. Jalan tanah menuju pantai dan kampung terpencil bisa tak dapat dilalui. Pengunjung sedikit; bulan ini cocok hanya jika Anda fleksibel dan tidak keberatan bepergian lebih lambat.</p>
 <h3>Februari: Pasola di barat</h3>
-<p>Masih musim hujan, tetapi inilah saat pertempuran ritual <a href="/id/culture/pasola-explained/">Pasola</a> pertama biasanya digelar, di wilayah Kodi dan Lamboya di barat. Tanggalnya ditetapkan para Rato berdasarkan munculnya cacing laut <em>nyale</em>, dan sering baru dipastikan satu atau dua minggu sebelumnya. Pada 2026, Pasola jatuh pada 9, 10, dan 11 Februari. Jika merencanakan perjalanan untuk Pasola, sisakan hari cadangan dan pesan transportasi lebih awal.</p>
+<p>Masih musim hujan, tetapi inilah saat pertempuran ritual <a href="/id/culture/pasola-explained/">Pasola</a> pertama biasanya digelar, di wilayah Kodi dan Lamboya di barat. Tanggalnya ditetapkan para Rato berdasarkan munculnya cacing laut <em>nyale</em>, dan sering baru dipastikan satu atau dua minggu sebelumnya. Pada 2026, Pasola digelar pada 9, 10, dan 11 Februari. Jika merencanakan perjalanan khusus untuk Pasola, sisakan hari cadangan dan pesan transportasi lebih awal.</p>
 <h3>Maret: Pasola kedua dan pulau paling hijau</h3>
-<p>Pasola berpindah ke Wanokaka dan Gaura, biasanya pada Maret (pada 2026, tanggal 9, 10, dan 11 Maret). Hujan sedikit berkurang sepanjang bulan. Pemandangan sedang hijau-hijaunya, hal yang mengejutkan banyak pengunjung di pulau yang terkenal dengan sabana keemasan. Air terjun penuh, dan Matayangu khususnya luar biasa setelah hujan.</p>
-<h3>April: masa terbaik dimulai</h3>
-<p>Curah hujan di Waingapu turun setengahnya menjadi sekitar 70 mm. Bukit masih hijau, air terjun masih mengalir, dan jalan mulai mengering. Bulan yang sangat baik untuk fotografer dan wisatawan yang ingin melihat pulau hijau tanpa hujan terburuk. Ombak di pesisir selatan dan barat mulai naik seiring dimulainya musim swell dari selatan.</p>
-<h3>Mei: hijau berubah emas</h3>
-<p>Salah satu bulan terbaik secara keseluruhan. Hujan tinggal gerimis sesekali, langit cerah, air terjun seperti Lapopu dan Tanggedu mulai jernih dan lebih aman untuk berenang, dan warna emas pertama muncul di sabana timur. Jumlah pengunjung masih sedang.</p>
-<h3>Juni: kemarau sepenuhnya</h3>
-<p>Hari-hari cerah, malam lebih sejuk, dan hampir tanpa hujan. Berenang di Danau Weekuri terasa sempurna, dan dari Juni hingga Juli matahari terbenam tepat di antara dua tebing Pantai Mandorak. Kondisi jalan paling baik. Libur sekolah di Indonesia biasanya dimulai akhir Juni, sehingga wisatawan domestik bertambah.</p>
+<p>Pasola berpindah ke Wanokaka dan Gaura, biasanya pada Maret (pada 2026, tanggal 9, 10, dan 11 Maret). Hujan sedikit berkurang sepanjang bulan. Pemandangan sedang hijau-hijaunya, hal yang mengejutkan banyak pengunjung di pulau yang terkenal dengan sabana keemasannya. Debit air terjun melimpah, dan Matayangu khususnya tampak luar biasa setelah hujan.</p>
+<h3>April: awal masa peralihan terbaik</h3>
+<p>Curah hujan di Waingapu turun setengahnya menjadi sekitar 70 mm. Bukit masih hijau, air terjun masih mengalir, dan jalan mulai mengering. Bulan ini sangat baik bagi fotografer dan wisatawan yang ingin melihat pulau yang hijau tanpa harus menghadapi hujan terlebat. Ombak di pesisir selatan dan barat mulai meninggi seiring datangnya musim swell dari selatan.</p>
+<h3>Mei: dari hijau ke emas</h3>
+<p>Salah satu bulan terbaik secara keseluruhan. Hujan tinggal gerimis sesekali, langit mulai cerah, air terjun seperti Lapopu dan Tanggedu mulai jernih dan lebih aman untuk berenang, dan warna emas pertama muncul di sabana timur. Jumlah pengunjung masih sedang.</p>
+<h3>Juni: puncak kemarau dimulai</h3>
+<p>Hari-hari cerah, malam lebih sejuk, dan hampir tanpa hujan. Berenang di Danau Weekuri terasa sempurna, dan dari Juni hingga Juli matahari terbenam tepat di antara dua tebing Pantai Mandorak. Kondisi jalan sedang paling baik. Libur sekolah di Indonesia biasanya dimulai akhir Juni, sehingga wisatawan domestik bertambah.</p>
 <h3>Juli: musim ramai</h3>
-<p>Malam paling sejuk dalam setahun (sekitar 20-21 C di Waingapu) dan sinar matahari yang stabil. Ini bulan tersibuk di pulau, dengan liburan wisatawan asing dan libur sekolah Indonesia bersamaan (di NTT tahun ajaran baru dimulai 13 Juli 2026). Penerbangan dan kamar yang jumlahnya terbatas cepat penuh, jadi pesan mobil dan penginapan beberapa minggu sebelumnya. Meski begitu, dibanding Bali, Sumba tetap tenang.</p>
+<p>Malam paling sejuk dalam setahun (sekitar 20-21 °C di Waingapu) dan matahari bersinar sepanjang hari. Ini bulan tersibuk di pulau, dengan liburan wisatawan asing dan libur sekolah Indonesia bersamaan (di NTT tahun ajaran baru dimulai 13 Juli 2026). Kursi pesawat dan kamar yang jumlahnya terbatas cepat habis, jadi pesanlah mobil dan penginapan beberapa minggu sebelumnya. Meski begitu, dibandingkan dengan Bali, Sumba tetap tenang.</p>
 <h3>Agustus: Sumba keemasan</h3>
-<p>Bulan paling kering, dengan sekitar satu hari hujan. Sabana Wairinding dan Puru Kambera berubah sepenuhnya menjadi keemasan, kuda-kuda merumput di padang kering, dan cahaya senja luar biasa. Debit air terjun lebih kecil tetapi jernih, dan beberapa di pedalaman bisa hampir kering. Laut paling sejuk, sekitar 26-27 C, dan angin pasat tenggara bertiup.</p>
+<p>Bulan paling kering, dengan sekitar satu hari hujan. Sabana Wairinding dan Puru Kambera berubah sepenuhnya menjadi keemasan, kuda-kuda merumput di padang yang kering, dan cahaya senjanya luar biasa. Debit air terjun lebih kecil tetapi jernih, dan beberapa di pedalaman bisa hampir kering. Laut paling sejuk, sekitar 26-27 °C, dan angin pasat tenggara bertiup.</p>
 <h3>September: panas, kering, dan sepi</h3>
-<p>Sangat kering, makin panas, dan lebih sepi setelah musim liburan. Salah satu bulan terbaik untuk menikmati lanskap emas tanpa keramaian. Sore hari bisa berkabut karena pembakaran padang rumput.</p>
+<p>Sangat kering, makin panas, dan lebih sepi selepas musim liburan. Salah satu bulan terbaik untuk menikmati lanskap emas tanpa keramaian. Sore hari bisa berkabut karena pembakaran padang rumput.</p>
 <h3>Oktober: bulan terpanas</h3>
-<p>Suhu siang sekitar 33 C. Lanskap paling kering dan berdebu. Peselancar sering mendapat hari-hari dengan laut licin seperti kaca dan swell yang solid dari Oktober hingga Desember. Badai pertama bisa datang di akhir bulan, terutama di pedalaman dan perbukitan.</p>
+<p>Suhu siang sekitar 33 °C. Lanskap paling kering dan berdebu. Dari Oktober hingga Desember, peselancar kerap menjumpai laut yang licin seperti kaca dan swell yang solid. Badai pertama bisa datang di akhir bulan, terutama di pedalaman dan perbukitan.</p>
 <h3>November: pergantian musim</h3>
 <p>Hujan mulai turun, awalnya berupa badai singkat di sore hari. Di timur, cuaca kering sering bertahan sampai pertengahan November atau lebih; di barat biasanya berakhir lebih awal. Hujan pertama membuat bukit kembali hijau dalam beberapa hari. Pengunjung lebih sedikit dan harga lebih rendah.</p>
 <h3>Desember: hujan dan liburan</h3>
-<p>Hujan mulai rutin, sekitar 135 mm dan 11 hari hujan di Waingapu. Masa Natal dan Tahun Baru (libur akhir semester ganjil di NTT berlangsung 21 Desember 2026 sampai 2 Januari 2027) membawa banyak keluarga pulang ke Sumba, dan pantai-pantai lokal seperti Walakiri ramai pada akhir pekan. Pesan tiket pesawat lebih awal.</p>
+<p>Hujan mulai turun secara rutin, sekitar 135 mm dalam 11 hari hujan di Waingapu. Pada masa Natal dan Tahun Baru (libur akhir semester ganjil di NTT berlangsung 21 Desember 2026 sampai 2 Januari 2027), banyak keluarga pulang kampung ke Sumba, dan pantai-pantai lokal seperti Walakiri ramai pada akhir pekan. Pesan tiket pesawat lebih awal.</p>
 
 <h2>Bukit hijau atau sabana keemasan?</h2>
 <p>Ini pertanyaan yang paling sering diajukan fotografer. Jawabannya sederhana: untuk <strong>bukit hijau</strong>, datanglah selama atau tepat setelah musim hujan, kira-kira akhir Januari sampai April. Untuk <strong>sabana keemasan klasik</strong> Sumba Timur, datanglah pada musim kemarau, sekitar Juli sampai Oktober. Mei dan Juni adalah masa peralihan, dengan sedikit dari keduanya.</p>
 
 <h2>Air terjun menurut musim</h2>
-<p>Air terjun di Sumba menuntut pilihan antara kekuatan dan kejernihan. Pada musim hujan, Lapopu, air terjun bertingkat setinggi 90 m, mengalir cokelat dan deras sehingga tidak bisa didekati; Matayangu berubah menjadi dinding air, tetapi jalurnya berlumpur dan licin. Pada musim kemarau, debit lebih kecil tetapi jernih, kolamnya tenang, dan berenang lebih mudah dan aman. Beberapa air terjun kecil di pedalaman bisa hampir kering pada September. Kompromi terbaik bagi kebanyakan orang: <strong>April sampai Juni</strong>. Lihat panduan <a href="/id/things-to-do/beaches-lagoons-waterfalls/">pantai, laguna, dan air terjun</a> kami.</p>
+<p>Air terjun di Sumba memaksa Anda memilih antara derasnya arus dan jernihnya air. Pada musim hujan, Lapopu, air terjun bertingkat setinggi 90 m, mengalir cokelat dan deras sehingga tidak bisa didekati; Matayangu berubah menjadi dinding air, tetapi jalurnya berlumpur dan licin. Pada musim kemarau, debit lebih kecil tetapi jernih, kolamnya tenang, dan berenang lebih mudah dan aman. Beberapa air terjun kecil di pedalaman bisa hampir kering pada September. Kompromi terbaik bagi kebanyakan orang: <strong>April sampai Juni</strong>. Lihat panduan <a href="/id/things-to-do/beaches-lagoons-waterfalls/">pantai, laguna, dan air terjun</a> kami.</p>
 
 <h2>Laut, selancar, dan berenang</h2>
-<p>Laut hangat sepanjang tahun, dari sekitar 26,5 C pada Agustus hingga 29,5 C di bulan-bulan basah. <strong>Musim selancar</strong> di pesisir selatan dan barat kira-kira April sampai Oktober, ketika musim dingin belahan bumi selatan mengirim swell Samudra Hindia dan angin pasat tenggara bertiup dari darat di banyak titik ombak. Oktober sampai Desember bisa membawa hari-hari dengan laut licin. Beberapa titik ombak bekerja dengan angin barat di musim hujan. Ombak besar juga berarti arus kuat: berenanglah hanya di tempat warga setempat berenang, dan jangan sendirian di pantai yang sepi. Selengkapnya di <a href="/id/things-to-do/surfing-in-sumba/">berselancar di Sumba</a>.</p>
+<p>Laut hangat sepanjang tahun, dari sekitar 26,5 °C pada Agustus hingga 29,5 °C di bulan-bulan basah. <strong>Musim selancar</strong> di pesisir selatan dan barat kira-kira April sampai Oktober, ketika musim dingin belahan bumi selatan mengirim swell Samudra Hindia dan angin pasat tenggara bertiup dari darat di banyak titik ombak. Oktober sampai Desember bisa membawa hari-hari dengan laut licin. Beberapa titik ombak justru bagus saat angin barat bertiup di musim hujan. Ombak besar juga berarti arus kuat: berenanglah hanya di tempat warga setempat berenang, dan jangan sendirian di pantai yang sepi. Selengkapnya di <a href="/id/things-to-do/surfing-in-sumba/">berselancar di Sumba</a>.</p>
 
-<h2>Keramaian, libur, dan harga</h2>
-<p>Sumba tidak pernah sepadat Bali. Sumba Timur mencatat 41.524 pengunjung sepanjang 2025, sekitar satu dari delapan adalah wisatawan mancanegara, dengan rata-rata lama tinggal tiga malam. Namun jumlah kamar di pulau ini sangat sedikit, sehingga masa ramai cepat terasa:</p>
+<h2>Keramaian, musim libur, dan harga</h2>
+<p>Sumba tidak pernah sepadat Bali. Sumba Timur mencatat 41.524 pengunjung sepanjang 2025, sekitar seperdelapannya wisatawan mancanegara, dengan rata-rata lama tinggal tiga malam. Namun jumlah kamar di pulau ini sangat sedikit, sehingga masa ramai cepat terasa:</p>
 <ul>
 <li><strong>Paling ramai:</strong> Juli dan Agustus (liburan wisatawan asing dan domestik), serta akhir Desember sampai awal Januari.</li>
 <li><strong>Ramai saat Pasola:</strong> beberapa hari pada Februari dan Maret di wilayah barat.</li>
@@ -559,11 +559,11 @@ G2 = {
 <li><strong>Pasola:</strong> Februari atau Maret, dengan tanggal yang fleksibel.</li>
 <li><strong>Selancar:</strong> April sampai Oktober.</li>
 </ul>
-<p>Bulan apa pun yang Anda pilih, bawalah pelindung matahari, obat antinyamuk, dan sedikit kesabaran. Baca panduan <a href="/id/getting-here/sumba-travel-safety-health/">keamanan dan kesehatan</a> sebelum berangkat, lalu susun rute dengan <a href="/id/things-to-do/sumba-itinerary-5-7-10-days/">itinerary Sumba 5, 7, dan 10 hari</a> kami. Sedang membandingkan pulau? Lihat <a href="/id/things-to-do/sumba-vs-bali-flores/">Sumba, Bali, atau Flores</a>.</p>"""
+<p>Bulan apa pun yang Anda pilih, bawalah pelindung matahari, obat antinyamuk, dan sedikit kesabaran. Baca panduan <a href="/id/getting-here/sumba-travel-safety-health/">keamanan dan kesehatan</a> sebelum berangkat, lalu susun rute dengan panduan <a href="/id/things-to-do/sumba-itinerary-5-7-10-days/">rencana perjalanan Sumba 5, 7, dan 10 hari</a> kami. Sedang membandingkan pulau? Lihat <a href="/id/things-to-do/sumba-vs-bali-flores/">Sumba, Bali, atau Flores</a>.</p>"""
 },
 "facts": {
  "en": [["Best overall", "Dry season, roughly May-October (June-August classic)"], ["Wettest months", "December-March (Waingapu: about 135-170 mm a month)"], ["Driest months", "August-September (about 5 mm, 1 rainy day)"], ["Pasola", "Usually February (Kodi, Lamboya) and March (Wanokaka, Gaura)"], ["Green vs golden", "Green: late Jan-April; golden: July-October"], ["Surf season", "Roughly April-October, south and west coasts"]],
- "es": [["Mejor en general", "Estación seca, más o menos de mayo a octubre (junio-agosto, lo clásico)"], ["Meses más lluviosos", "Diciembre-marzo (Waingapu: unos 135-170 mm al mes)"], ["Meses más secos", "Agosto-septiembre (unos 5 mm, 1 día de lluvia)"], ["Pasola", "Normalmente febrero (Kodi, Lamboya) y marzo (Wanokaka, Gaura)"], ["Verde u oro", "Verde: finales de enero-abril; dorado: julio-octubre"], ["Temporada de surf", "Más o menos abril-octubre, costas sur y oeste"]],
+ "es": [["Mejor época en general", "Estación seca, aproximadamente de mayo a octubre (junio-agosto, lo clásico)"], ["Meses más lluviosos", "Diciembre-marzo (Waingapu: unos 135-170 mm al mes)"], ["Meses más secos", "Agosto-septiembre (unos 5 mm, 1 día de lluvia)"], ["Pasola", "Normalmente febrero (Kodi, Lamboya) y marzo (Wanokaka, Gaura)"], ["¿Verde o dorada?", "Verde: de finales de enero a abril; dorada: de julio a octubre"], ["Temporada de surf", "Aproximadamente de abril a octubre, costas sur y oeste"]],
  "id": [["Terbaik secara umum", "Kemarau, kira-kira Mei-Oktober (Juni-Agustus paling klasik)"], ["Bulan terbasah", "Desember-Maret (Waingapu: sekitar 135-170 mm per bulan)"], ["Bulan terkering", "Agustus-September (sekitar 5 mm, 1 hari hujan)"], ["Pasola", "Biasanya Februari (Kodi, Lamboya) dan Maret (Wanokaka, Gaura)"], ["Hijau atau emas", "Hijau: akhir Januari-April; emas: Juli-Oktober"], ["Musim selancar", "Kira-kira April-Oktober, pesisir selatan dan barat"]]
 },
 "faq": {
@@ -575,19 +575,19 @@ G2 = {
   ["Are Sumba's waterfalls worth visiting in the dry season?", "Yes. Flow is lower but the water is clear and swimming is safer. In the rainy season they are more powerful but often brown and hard to approach."],
   ["Is Sumba crowded in July and August?", "It is the busiest period, but still quiet compared with Bali. The island has few rooms, so book cars and accommodation weeks ahead."]],
  "es": [
-  ["¿Cuál es el mejor mes para viajar a Sumba?", "De junio a agosto hay el sol más fiable y las carreteras más fáciles. Mayo y septiembre son casi igual de buenos y más tranquilos."],
-  ["¿Cuándo es la temporada de lluvias en Sumba?", "Más o menos de diciembre a marzo, aunque las lluvias pueden llegar entre finales de octubre y diciembre. El este es más seco que el oeste."],
-  ["¿Cuándo se celebra la Pasola en Sumba?", "Normalmente en febrero en Kodi y Lamboya y en marzo en Wanokaka y Gaura. Los ancianos Rato fijan las fechas según los gusanos marinos nyale, a menudo solo una o dos semanas antes."],
+  ["¿Cuál es el mejor mes para viajar a Sumba?", "De junio a agosto el sol está casi garantizado y las carreteras están en mejor estado. Mayo y septiembre son casi igual de buenos y más tranquilos."],
+  ["¿Cuándo es la temporada de lluvias en Sumba?", "Aproximadamente de diciembre a marzo, aunque las lluvias pueden empezar entre finales de octubre y diciembre. El este es más seco que el oeste."],
+  ["¿Cuándo se celebra la Pasola en Sumba?", "Normalmente en febrero en Kodi y Lamboya y en marzo en Wanokaka y Gaura. Los ancianos rato fijan las fechas según la aparición de los gusanos marinos nyale, a menudo con solo una o dos semanas de antelación."],
   ["¿Cuándo están verdes las colinas de Sumba?", "Durante la temporada de lluvias y justo después, más o menos de finales de enero a abril. De julio a octubre la sabana se vuelve dorada."],
-  ["¿Merece la pena ver las cascadas de Sumba en la estación seca?", "Sí. Llevan menos agua, pero está clara y bañarse es más seguro. En la temporada de lluvias tienen más fuerza, aunque suelen bajar marrones y cuesta acercarse."],
-  ["¿Hay mucha gente en Sumba en julio y agosto?", "Es la época de más movimiento, pero sigue siendo tranquila comparada con Bali. Hay pocas habitaciones, así que reserva coche y alojamiento con semanas de antelación."]],
+  ["¿Merece la pena ver las cascadas de Sumba en la estación seca?", "Sí. Llevan menos caudal, pero el agua está clara y bañarse es más seguro. En la temporada de lluvias tienen más fuerza, aunque suelen bajar marrones y cuesta acercarse."],
+  ["¿Hay mucha gente en Sumba en julio y agosto?", "Es la época de mayor afluencia, pero la isla sigue siendo tranquila en comparación con Bali. Hay pocas habitaciones, así que reserva coche y alojamiento con semanas de antelación."]],
  "id": [
-  ["Bulan apa yang terbaik untuk ke Sumba?", "Juni sampai Agustus memberikan cuaca cerah paling bisa diandalkan dan jalan paling mudah. Mei dan September hampir sama baiknya dan lebih sepi."],
+  ["Bulan apa yang terbaik untuk ke Sumba?", "Juni sampai Agustus menawarkan cuaca cerah yang paling dapat diandalkan dan kondisi jalan terbaik. Mei dan September hampir sama baiknya dan lebih sepi."],
   ["Kapan musim hujan di Sumba?", "Kira-kira Desember sampai Maret, dengan awal hujan antara akhir Oktober dan Desember. Wilayah timur lebih kering daripada barat."],
   ["Kapan Pasola di Sumba?", "Biasanya Februari di Kodi dan Lamboya, dan Maret di Wanokaka dan Gaura. Para Rato menetapkan tanggalnya berdasarkan cacing laut nyale, sering hanya satu atau dua minggu sebelumnya."],
   ["Kapan bukit-bukit di Sumba hijau?", "Selama dan tepat setelah musim hujan, kira-kira akhir Januari sampai April. Dari Juli sampai Oktober sabana berubah menjadi keemasan."],
   ["Apakah air terjun di Sumba layak dikunjungi saat kemarau?", "Ya. Debitnya lebih kecil tetapi airnya jernih dan berenang lebih aman. Saat musim hujan airnya lebih deras, tetapi sering cokelat dan sulit didekati."],
-  ["Apakah Sumba ramai pada Juli dan Agustus?", "Itu masa tersibuk, tetapi tetap tenang dibanding Bali. Jumlah kamar terbatas, jadi pesan mobil dan penginapan beberapa minggu sebelumnya."]]
+  ["Apakah Sumba ramai pada Juli dan Agustus?", "Itu masa tersibuk, tetapi suasananya tetap tenang dibandingkan dengan Bali. Jumlah kamar terbatas, jadi pesan mobil dan penginapan beberapa minggu sebelumnya."]]
 },
 "places": [
  {"name": "Waingapu", "lat": -9.6497, "lon": 120.2637, "area": "East Sumba"},
