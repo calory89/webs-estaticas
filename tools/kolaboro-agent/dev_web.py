@@ -30,6 +30,9 @@ DAYS = 30
 HUB = 4            # an identifier carried by more than this many developers is a platform, template or shared host: not a link
 HUB_TRACK = 8      # analytics/pixel ids: an agency can run many accounts' tags from one container, allow a bit more
 ARGS = sys.argv[1:]
+# --local: run outside GitHub Actions behind an egress proxy that may refuse hosts and re-signs TLS. Then a failed connection is
+# recorded as 'not checked' (we cannot tell a refused host from a down one) and certificate dates are not read.
+LOCAL = '--local' in ARGS
 OUT = ARGS[0] if ARGS and not ARGS[0].startswith('--') else 'out'
 
 
@@ -88,7 +91,7 @@ def doh(name, typ):
     j = get_json('https://cloudflare-dns.com/dns-query?name=' + urllib.parse.quote(name) + '&type=' + typ, timeout=10, accept='application/dns-json')
     if not j:
         j = get_json('https://dns.google/resolve?name=' + urllib.parse.quote(name) + '&type=' + typ, timeout=10)
-    if not j:
+    if not j or j.get('Status') not in (0, 3):   # 0 answer, 3 NXDOMAIN; anything else is a failed lookup
         return None
     code = {'A': 1, 'NS': 2, 'CNAME': 5, 'PTR': 12}[typ]
     return sorted({a['data'].rstrip('.').lower() for a in j.get('Answer') or [] if a.get('type') == code})
@@ -263,9 +266,12 @@ def check(d, st):
     week_old = lambda k: not st.get(k + '_at') or st[k + '_at'] < (NOW - timedelta(days=7)).strftime('%Y-%m-%d')
     # DNS (Cloudflare DNS over HTTPS: no request to the site itself)
     a = doh(d, 'A')
+    if a == []:   # no address on the bare domain: the site may live on www only
+        a = doh('www.' + d, 'A')
     ns = doh(d, 'NS') or []
-    if a is None:
-        a = []
+    if a is None:   # the DNS lookup itself failed: today is not checked
+        h['s'] = None
+        return h, ids, st
     h['dns'] = 1 if a else 0
     # robots.txt (weekly)
     base = None
@@ -312,6 +318,10 @@ def check(d, st):
                     if gen:
                         h['gen'] = re.sub(r'[^\w .:/()-]', '', gen)[:60]
         except Exception as e:
+            if LOCAL:
+                h['s'] = None
+                h['err'] = 'local'
+                return h, ids, st
             h['s'] = 0
             h['err'] = 'timeout' if 'timed out' in str(e).lower() else 'tls' if 'ssl' in str(e).lower() or 'certificate' in str(e).lower() else 'connect'
     elif not a:
@@ -319,7 +329,7 @@ def check(d, st):
         h['err'] = 'dns'
     # TLS certificate of the host that serves the homepage
     host = urllib.parse.urlparse(base).hostname or d
-    if a:
+    if a and not LOCAL:
         na, san = tls_cert(host)
         if na:
             h['ce'] = na
@@ -420,6 +430,8 @@ def main():
                     h[k] = p[k]
                 else:
                     h.pop(k, None)
+        if 'ce' not in h and p.get('ce') and (LOCAL or h.get('s') is None):
+            h['ce'] = p['ce']   # certificate not read today: keep the last date we read
         h['dv'] = D[d]['url'].strip('/').split('/')[-1]
         H[d] = h
     health = {
@@ -431,8 +443,10 @@ def main():
                    'lm': 'Last-Modified header of the homepage', 'sm': 'newest <lastmod> in the site\'s sitemap', 'to': 'the homepage redirects to this other domain',
                    'rb': '1 when robots.txt asks robots not to fetch the homepage: we then only read DNS, the TLS certificate and RDAP', 'dns': '1 when the domain resolves', 'gen': 'generator meta tag',
                    'dv': 'developer page slug (/developers/<dv>/)'},
-        'method': 'One request to the homepage per domain per day from a GitHub Actions runner, user agent KolaboroResearchAgent, after reading robots.txt (weekly). '
-                  'TLS expiry from the certificate the server presents; domain expiry from the registry RDAP record (weekly); sitemap weekly. No page text is kept.',
+        'method': ('One request to the homepage per domain per day, user agent KolaboroResearchAgent, after reading robots.txt (weekly). '
+                   'TLS expiry from the certificate the server presents; domain expiry from the registry RDAP record (weekly); sitemap weekly. No page text is kept.')
+                  + (' This run was made outside the daily job, behind a network proxy: sites we could not reach are marked not checked, and certificate dates were not read.' if LOCAL else ''),
+        'local_run': LOCAL,
         'source': 'https://kolaboro.com/api/x/fraud/domains (developer and project websites in /data/named.json)', 'licence': 'CC BY 4.0, Kolaboro',
         'd': H,
     }
