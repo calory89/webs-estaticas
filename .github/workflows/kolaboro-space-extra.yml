@@ -17,8 +17,13 @@ concurrency:
   cancel-in-progress: false
 jobs:
   run:
+    # radar and buildings run side by side; each publishes its own file
+    strategy:
+      fail-fast: false
+      matrix:
+        part: [radar, buildings]
     runs-on: ubuntu-latest
-    timeout-minutes: 150
+    timeout-minutes: 170
     steps:
       - uses: actions/checkout@v4
         with:
@@ -27,13 +32,15 @@ jobs:
       - name: Build
         env:
           WHAT: ${{ github.event.inputs.what || 'both' }}
+          PART: ${{ matrix.part }}
           ONLY: ${{ github.event.inputs.only }}
         run: |
           pip install -q rasterio numpy shapely duckdb datafusion
           mkdir -p "$RUNNER_TEMP/out"
           A=""; [ -n "$ONLY" ] && A="--only $ONLY"
-          if [ "$WHAT" != "buildings" ]; then python3 -u -W ignore tools/kolaboro-agent/space_extra.py radar "$RUNNER_TEMP/out/satellite-radar.json" --budget-min 90 $A || true; fi
-          if [ "$WHAT" != "radar" ]; then python3 -u -W ignore tools/kolaboro-agent/space_extra.py buildings "$RUNNER_TEMP/out/buildings.json" $A 2>&1 | tr '\r' '\n' | grep -v '%' || true; fi
+          [ "$WHAT" = "both" ] || [ "$WHAT" = "$PART" ] || { echo "skip $PART"; exit 0; }
+          if [ "$PART" = "radar" ]; then python3 -u -W ignore tools/kolaboro-agent/space_extra.py radar "$RUNNER_TEMP/out/satellite-radar.json" --budget-min 140 $A || true; fi
+          if [ "$PART" = "buildings" ]; then python3 -u -W ignore tools/kolaboro-agent/space_extra.py buildings "$RUNNER_TEMP/out/buildings.json" $A 2>&1 | tr '\r' '\n' | grep -v '%' || true; fi
           ls -la "$RUNNER_TEMP/out"
       - name: Publish to kolaboro.com
         env:

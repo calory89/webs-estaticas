@@ -88,6 +88,8 @@ def radar_site(p, mlist, deadline):
     from rasterio.windows import from_bounds
     from rasterio.warp import transform as warp_xy
     t0 = time.time()
+    if t0 > deadline - 6 * 60:   # not enough time left for a whole series: leave the project out rather than publish holes
+        print('radar skip (time budget)', p['id']); return None
     last_day = (datetime.date(int(mlist[-1][:4]), int(mlist[-1][5:]), 28) + datetime.timedelta(days=4)).replace(day=1) - datetime.timedelta(days=1)
     items = pc_items(p['lat'], p['lng'], mlist[0] + '-01', last_day.isoformat())
     tracks = {}
@@ -143,7 +145,6 @@ def radar_site(p, mlist, deadline):
 
     for mo in mlist:
         cands = by_m.get(mo, [])
-        if time.time() > deadline: cands = []
         # spread the picks over the month (first, middle, last) rather than the first three passes
         if len(cands) > MAX_SCENES: cands = [cands[0], cands[len(cands) // 2], cands[-1]]
         with concurrent.futures.ThreadPoolExecutor(6) as ex: got = [g for g in ex.map(read, cands) if g]
@@ -184,7 +185,7 @@ def run_radar(a):
     mlist = months(a.frm or cp.get('from') or '2023-07', end)
     deadline = time.time() + a.budget_min * 60
     res = []
-    with concurrent.futures.ThreadPoolExecutor(3) as ex:
+    with concurrent.futures.ThreadPoolExecutor(6) as ex:
         for r in ex.map(lambda p: _safe(radar_site, p, mlist, deadline), sel):
             if r: res.append(r)
     # normal variation: 90th percentile of the month-to-month change of the index over every project (consecutive months with data)
