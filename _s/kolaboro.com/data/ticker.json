@@ -4,6 +4,34 @@
   {
    "date": "2026-11-08",
    "kind": "shipped",
+   "text": "Radar through the clouds: Sentinel-1 monthly series on 28 project pages where clouds hide the site",
+   "tl": {
+    "es": "Radar a través de las nubes: serie mensual Sentinel-1 en 28 proyectos donde las nubes tapan la obra",
+    "fr": "Le radar à travers les nuages : série mensuelle Sentinel-1 sur 28 projets cachés par les nuages",
+    "de": "Radar durch die Wolken: monatliche Sentinel-1-Reihe auf 28 Projektseiten, wo Wolken die Baustelle verdecken",
+    "nl": "Radar door de wolken: maandelijkse Sentinel-1-reeks op 28 projectpagina's waar wolken de bouwplaats verbergen",
+    "ru": "Радар сквозь облака: ежемесячный ряд Sentinel-1 на 28 проектах, скрытых облаками",
+    "zh": "穿透云层的雷达：在 28 个常被云层遮挡的项目页显示 Sentinel-1 月度序列",
+    "ar": "رادار يرى عبر السحب: سلسلة Sentinel-1 الشهرية في 28 مشروعًا تحجبها السحب"
+   }
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "data",
+   "text": "Buildings mapped at the plot: Overture footprints within 150 m of 125 project pins, with source and height",
+   "tl": {
+    "es": "Edificios en la parcela: huellas de Overture a menos de 150 m de 125 proyectos, con fuente y altura",
+    "fr": "Bâtiments sur la parcelle : emprises Overture à moins de 150 m de 125 projets, avec source et hauteur",
+    "de": "Gebäude auf dem Grundstück: Overture-Grundrisse im Umkreis von 150 m um 125 Projekte, mit Quelle und Höhe",
+    "nl": "Gebouwen op het perceel: Overture-footprints binnen 150 m van 125 projecten, met bron en hoogte",
+    "ru": "Здания на участке: контуры Overture в радиусе 150 м от 125 проектов, с источником и высотой",
+    "zh": "地块上的建筑：125 个项目点 150 米内的 Overture 建筑轮廓，附来源和高度",
+    "ar": "المباني في قطعة الأرض: مخططات Overture ضمن 150 م من 125 مشروعًا، مع المصدر والارتفاع"
+   }
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "shipped",
    "text": "Seal a site visit: GPS and photo fingerprints checked against the project pin, signed, photos never uploaded",
    "tl": {
     "es": "Sella tu visita a la obra: GPS y huellas de las fotos frente a la parcela del proyecto, firmado, sin subir las fotos",

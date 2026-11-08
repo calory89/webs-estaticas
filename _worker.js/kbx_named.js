@@ -25,7 +25,7 @@ import { seoLd } from './kbx_lastmod.js';   // batch 15 (s15b): true dateModifie
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v26';   // v26: radar and building footprints inside the from-space section (n17b)
+const CACHE_V = 'named-v27';   // v26: radar and building footprints inside the from-space section (n17b)
 //   // v25: delivery forecast in #delivery, answers to buyer questions on developer pages (n17c)
 //   // v24: embed link and monthly market story links (s15a for s15c)
 //   // v23: country hub slug for 'X (USA)' and 'St X' (s15a)
