@@ -162,7 +162,7 @@ for (const [name, url, expect, rx] of PAGES) {
   }
   // the extension's copy of the checks must equal the library part of the live page script
   try {
-    const live = await (await fetch('https://kolaboro.com/tools/payment-email-check/pec.js')).text();
+    const live = await (await fetch('https://kolaboro.com/tools/payment-email-check/pec.js?t=' + Date.now(), { cache: 'no-store' })).text();
     const mine = fs.readFileSync(path.join(EXT, 'mailcheck.js'), 'utf8');
     const part = s => s.slice(s.indexOf('  var SLD = {'), s.indexOf('function wording(text)'));
     log('Gmail checks identical to /tools/payment-email-check/pec.js', part(live).length > 1000 && part(live) === part(mine));
