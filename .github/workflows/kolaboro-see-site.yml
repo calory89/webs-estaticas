@@ -1,0 +1,73 @@
+name: Kolaboro see the site (street photos and 3D)
+# Batch 18 (n18c). No model calls, no accounts, no keys.
+#  street: open street-level photos within 200 m of each reliable pin (Panoramax, KartaView, Wikimedia Commons), weekly
+#  3d:     Overture Maps building footprints within 250 m of each pin for the 3D view, monthly (Overture releases monthly)
+# Publishes kolaboro.com/data/street-photos.json and kolaboro.com/data/site-3d.json (tools/kolaboro-agent/see_site.py).
+on:
+  schedule:
+    - cron: '23 5 * * 2'     # street, weekly
+    - cron: '17 9 14 * *'    # 3d, monthly (after the buildings run on the 13th)
+  workflow_dispatch:
+    inputs:
+      what: { description: 'street, 3d or both', required: false, default: 'both' }
+      only: { description: 'comma separated project ids (empty = all)', required: false, default: '' }
+
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-see-site
+  cancel-in-progress: false
+jobs:
+  run:
+    strategy:
+      fail-fast: false
+      matrix:
+        part: [street, 3d]
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: tools/kolaboro-agent
+      - name: Build
+        env:
+          WHAT: ${{ github.event.inputs.what || (github.event.schedule == '23 5 * * 2' && 'street' || '3d') }}
+          PART: ${{ matrix.part }}
+          ONLY: ${{ github.event.inputs.only }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/out"
+          [ "$WHAT" = "both" ] || [ "$WHAT" = "$PART" ] || { echo "skip $PART"; exit 0; }
+          A=""; [ -n "$ONLY" ] && A="--only $ONLY"
+          if [ "$PART" = "street" ]; then python3 -u -W ignore tools/kolaboro-agent/see_site.py street "$RUNNER_TEMP/out/street-photos.json" $A || true; fi
+          if [ "$PART" = "3d" ]; then pip install -q duckdb shapely && python3 -u -W ignore tools/kolaboro-agent/see_site.py 3d "$RUNNER_TEMP/out/site-3d.json" $A || true; fi
+          ls -la "$RUNNER_TEMP/out"
+      - name: Publish to kolaboro.com
+        env:
+          ONLY: ${{ github.event.inputs.only }}
+        run: |
+          set -e
+          cd "$RUNNER_TEMP/out"
+          for f in street-photos.json site-3d.json; do
+            [ -f "$f" ] || continue
+            python3 -c "import json; d=json.load(open('$f')); assert d.get('projects'), 'empty'" || { echo "skip $f (empty)"; rm -f "$f"; continue; }
+            if [ -n "$ONLY" ]; then   # partial run: merge into the published file
+              curl -sf "https://kolaboro.com/data/$f?run=$(date +%s)" -o "prev-$f" || echo '{"projects":{}}' > "prev-$f"
+              python3 -c "import json; p=json.load(open('prev-$f')); n=json.load(open('$f')); p2=dict(p.get('projects',{})); p2.update(n['projects']); n['projects']=p2; json.dump(n,open('$f','w'),separators=(',',':'),ensure_ascii=False)"
+            fi
+          done
+          ls *.json 2>/dev/null | grep -v '^prev-' > files.txt || true
+          [ -s files.txt ] || { echo "nothing to publish"; exit 0; }
+          cd "$GITHUB_WORKSPACE"
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          for i in 1 2 3 4 5; do
+            git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+            P=$(git rev-parse FETCH_HEAD)
+            export GIT_INDEX_FILE=$RUNNER_TEMP/idx; rm -f $GIT_INDEX_FILE; git read-tree $P
+            while read f; do H=$(git hash-object -w "$RUNNER_TEMP/out/$f"); git update-index --add --cacheinfo 100644,$H,_s/kolaboro.com/data/$f; done < "$RUNNER_TEMP/out/files.txt"
+            T=$(git write-tree --missing-ok); unset GIT_INDEX_FILE
+            [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
+            C=$(git commit-tree $T -p $P -m "kolaboro.com: street photos and 3D footprints $(date -u +%F)")
+            git push -q origin $C:refs/heads/pub/_lovable && exit 0
+            sleep 7
+          done; exit 1
