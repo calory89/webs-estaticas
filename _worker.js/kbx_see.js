@@ -230,7 +230,7 @@ const UA = 'Kolaboro-see-site/1.0 (+https://kolaboro.com/data/; agent@kolaboro.c
 async function thumb(req, sd, id, n, ctx) {
   const rec = sd.ph && sd.ph.projects && sd.ph.projects[id], x = rec && rec.ph && rec.ph[n];
   if (!x || !/^https:\/\//.test(x.thumb || '')) return new Response('not found', { status: 404, headers: { 'cache-control': 'public, max-age=3600' } });
-  const ck = new Request(ORIGIN + '/__see_ph/' + encodeURIComponent(id) + '/' + n + '/' + encodeURIComponent(x.src + ':' + x.id));
+  const ck = new Request(ORIGIN + '/__see_ph/' + encodeURIComponent(id) + '/' + n + '/' + encodeURIComponent(x.src + ':' + x.id + ':' + x.thumb.slice(-48)));
   try { const hit = await caches.default.match(ck); if (hit) return hit; } catch (e) {}
   let r;
   try { r = await fetch(x.thumb, { headers: { 'user-agent': UA, accept: 'image/jpeg,image/webp,image/png,image/*' }, cf: { cacheTtl: 604800, cacheEverything: true }, redirect: 'follow' }); } catch (e) { r = null; }
