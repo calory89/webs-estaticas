@@ -13,6 +13,23 @@ except Exception:
     IMAGES = {}
 from travel import SLUGS, T, N, AI, HERO_IMG, BASE_PLACES, load_guides, candidate_image
 _GUIDES = load_guides()
+try:
+    from brief_meta import BRIEF_META
+except Exception:
+    BRIEF_META = {}
+def _merge_meta(items):
+    for a in items:
+        m = BRIEF_META.get(a["slug"])
+        if not m: continue
+        for k, v in m.items():
+            if k in ("en", "es", "id"):
+                for kk, vv in v.items(): a[k].setdefault(kk, vv)
+            elif k == "extra_sources":
+                have = {u for _, u in a.get("sources", [])}
+                a["sources"] = a.get("sources", []) + [s_ for s_ in v if s_[1] not in have]
+            else:
+                a.setdefault(k, v)
+_merge_meta(BRIEFS); _merge_meta(ARTICLES)
 _have = {a["slug"] for a in ARTICLES}
 ARTICLES = ARTICLES + [g for g in _GUIDES if g["slug"] not in _have]
 
@@ -124,9 +141,17 @@ def all_items():
         seen.add(a["slug"]); items.append(a)
     return sorted(items, key=dt, reverse=True)
 
+def url_slug(t):
+    import unicodedata
+    t = unicodedata.normalize("NFD", t.lower()); t = "".join(ch for ch in t if unicodedata.category(ch) != "Mn")
+    t = re.sub(r"[^a-z0-9]+", "-", t).strip("-")
+    return t[:70].rsplit("-", 1)[0] if len(t) > 70 else t
 def slug_l(a, l):
     if l == "en": return a["slug"]
-    return (a.get("slugs") or {}).get(l) or SLUGS.get(a["slug"], {}).get(l) or a["slug"]
+    s_ = (a.get("slugs") or {}).get(l) or SLUGS.get(a["slug"], {}).get(l)
+    if s_: return s_
+    if a.get("kind") == "brief" and a.get(l, {}).get("title"): return url_slug(a[l]["title"])
+    return a["slug"]
 def url_of(a, l): return f"/{l}/{a['section']}/{slug_l(a, l)}/"
 def paths_of(a): return {x: url_of(a, x) for x in LANGS}
 def P(path_tpl, l): return path_tpl[l] if isinstance(path_tpl, dict) else path_tpl.format(l=l)
@@ -208,7 +233,7 @@ footer{border-top:3px double var(--ink);margin-top:44px;padding:20px 0 40px;font
 .hb .b1{background:#d8b27a;color:#1d1b18}.hb .b2{border:1px solid rgba(255,255,255,.7);color:#fff}.hb a:hover{opacity:.9;color:inherit}
 .qf{border-bottom:1px solid var(--line);padding:20px 0}.qf h2{font:700 15px -apple-system,sans-serif;letter-spacing:.08em;text-transform:uppercase;margin:0 0 12px}
 .qf dl{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px 22px;margin:0}.qf dt{font:700 12px -apple-system,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}.qf dd{margin:2px 0 0;font-size:16.5px;line-height:1.45}
-.ans,.facts,.pcta{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:6px;padding:14px 16px;margin:0 0 18px}.ans b,.facts>b{font:700 12px -apple-system,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}.ans p{margin:.3em 0 0;font-size:18px}.keys ul{margin:.4em 0 0;padding-left:20px;font-size:17px;line-height:1.45}.vis p{margin:.4em 0 0;font:16px/1.5 Georgia,serif}
+.ans,.facts,.pcta{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:6px;padding:14px 16px;margin:0 0 18px}.ans b,.facts>b{font:700 12px -apple-system,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}.ans p{margin:.3em 0 0;font-size:18px}.wk{border-bottom:1px solid var(--line);padding:14px 0}.wk h2{font-size:22px;margin:.15em 0 .3em}.wk h2 a{text-decoration:none}.wk p{margin:0}.corr2{font:14.5px/1.5 -apple-system,sans-serif;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}.corr2 b{color:var(--ink)}.nwb ul{margin:.4em 0 0;padding-left:18px;font-size:16px}.nwb li{margin:4px 0}.nwb time{color:var(--muted);font-size:13px;margin-left:6px}.keys ul{margin:.4em 0 0;padding-left:20px;font-size:17px;line-height:1.45}.vis p{margin:.4em 0 0;font:16px/1.5 Georgia,serif}
 .facts dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 14px;margin:8px 0 0;font:15px/1.45 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.facts dt{font-weight:700}.facts dd{margin:0}
 .faq details{border-bottom:1px solid var(--line);padding:10px 0}.faq summary{cursor:pointer;font-weight:700;font-size:18px}.faq details p{margin:.5em 0 0}
 .pls ul{font:16px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.pcta{font:15.5px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin-top:24px}
@@ -426,6 +451,8 @@ def extras_html(a, l):
         top += f'<div class="ans"><b>{t["answer"]}</b><p>{esc(c["answer"])}</p></div>'
     if c.get("keys"):
         top += f'<div class="ans keys"><b>{KEYS_T[l]}</b><ul>' + "".join(f"<li>{esc(k)}</li>" for k in c["keys"]) + "</ul></div>"
+    if c.get("correction"):
+        bottom += f'<p class="corr2"><b>{CORR_T[l]}</b> {esc(c["correction"])}</p>'
     if c.get("visitors"):
         bottom = f'<div class="facts vis"><b>{VIS_T[l]}</b><p>{esc(c["visitors"])}</p></div>' + bottom
     fx = (a.get("facts") or {}).get(l)
@@ -434,12 +461,21 @@ def extras_html(a, l):
     fq = (a.get("faq") or {}).get(l)
     if fq:
         bottom += f'<section class="faq"><h2 id="faq">{t["faq_t"]}</h2>' + "".join(f"<details><summary>{esc(q)}</summary><p>{esc(an)}</p></details>" for q, an in fq) + "</section>"
+    if kind_of(a) == "guide":
+        names = [re.split(r"[,:]", a[l]["title"])[0].strip()] + [p["name"] for p in (a.get("places") or [])]
+        names = [n for n in names if len(n) >= 5]
+        me = url_of(a, l)
+        news = [b for b in all_items() if kind_of(b) == "brief" and (me in body_raw(b, l) or a["slug"] in body_raw(b, "en") or any(n.lower() in (b[l]["title"] + " " + b[l]["dek"] + " " + body_raw(b, l)).lower() for n in names[1:]))][:4]
+        if news:
+            bottom += f'<div class="facts nwb"><b>{NEWS_T[l]}</b><ul>' + "".join(f'<li><a href="{url_of(b,l)}">{esc(b[l]["title"])}</a><time datetime="{iso(b)}">{fdate(b,l,False)}</time></li>' for b in news) + "</ul></div>"
     pls = a.get("places") or []
     if pls:
         bottom += f'<section class="pls"><h2 id="places">{t["places_t"]}</h2><ul>' + "".join(
             f'<li><b>{esc(p["name"])}</b>{" · " + esc(p["area"]) if p.get("area") else ""} · <a href="{gmaps(p)}" target="_blank" rel="noopener">{t["open_map"]}</a></li>' for p in pls) + f'</ul><p><a href="/{l}/plan/#map">{t["map_t"]} →</a></p></section>'
     return top, bottom
 
+CORR_T = {"en": "Correction:", "es": "Corrección:", "id": "Koreksi:"}
+NEWS_T = {"en": "Latest news about this", "es": "Últimas noticias sobre esto", "id": "Berita terbaru tentang ini"}
 KEYS_T = {"en": "Key points", "es": "Claves", "id": "Poin penting"}
 VIS_T = {"en": "If you are travelling to Sumba", "es": "Si viajas a Sumba", "id": "Jika Anda bepergian ke Sumba"}
 _PLACE_RX = None
@@ -642,7 +678,7 @@ def home(l):
 <div class="when">{x["desk"]} · <time datetime="{iso(top)}">{fdate(top,l)}</time></div>
 {('<ul class="rel">' + "".join(f'<li><a href="{url_of(a,l)}">{esc(a[l]["title"])}</a></li>' for a in rel) + '</ul>') if rel else ''}</div>"""
     brief_col = f'<div class="brf"><h2 class="rh">{n["brief_t"]}</h2>' + "".join(
-        f'<div class="bi"><time datetime="{iso(a)}">{dt(a).strftime("%d/%m · %H:%M")}</time><a href="{url_of(a,l)}">{esc(a[l]["title"])}</a></div>' for a in briefs[:7]) + f'<a class="more" href="/{l}/news/">{n["more_news"]} →</a></div>'
+        f'<div class="bi"><time datetime="{iso(a)}">{dt(a).strftime("%d/%m · %H:%M")}</time><a href="{url_of(a,l)}">{esc(a[l]["title"])}</a></div>' for a in briefs[:7]) + f'<a class="more" href="/{l}/news/">{n["more_news"]} →</a> · <a class="more" href="/{l}/week/">{WEEK_T[l][0]} →</a></div>'
     rail = f"""<div class="rail">{live_box(l)}<section class="desk"><h2 class="rh">{n["travel_desk"]}</h2>{hl(feat, l, img=True, when=False)}
 <a class="plan" href="/{l}/plan/"><b>{n["start"]}</b><span>{t["plan_cta_p"]}</span></a></section></div>"""
     s += f"""<main id="main" class="w"><div class="ticker" aria-label="{x["ticker"]}"><b>{x["ticker"]}</b>{ticker}</div>
@@ -673,6 +709,19 @@ def home(l):
 <section class="letter"><h2 class="rh">{n["letter_t"]}</h2>{hl(LETTER, l, img=False, when=True)}{subscribe(l)}</section></section>"""
     s += "</main>" + footer(l) + live_js(l)
     write(tpl.format(l=l), s)
+
+WEEK_T = {"en": ("This week in Sumba", "Every story we published on Sumba in the last seven days, in one page: transport, weather, culture, business and life on the island."),
+          "es": ("Esta semana en Sumba", "Todas las noticias que publicamos sobre Sumba en los últimos siete días, en una sola página: transporte, tiempo, cultura, negocios y vida en la isla."),
+          "id": ("Pekan ini di Sumba", "Semua berita tentang Sumba yang kami terbitkan dalam tujuh hari terakhir, dalam satu halaman: transportasi, cuaca, budaya, bisnis dan kehidupan di pulau.")}
+
+def week_page(l):
+    t, d = WEEK_T[l]; x = X[l]; tpl = "/{l}/week/"
+    its = [a for a in all_items() if kind_of(a) == "brief" and (NOW - dt(a)).days < 7] or [a for a in all_items() if kind_of(a) == "brief"][:7]
+    ld = [{"@context": "https://schema.org", "@type": "ItemList", "name": t, "inLanguage": l, "itemListElement": [{"@type": "ListItem", "position": i + 1, "url": BASE + url_of(a, l), "name": a[l]["title"]} for i, a in enumerate(its)]}]
+    s_ = head(l, t + " · The Sumba Times", d, tpl, extra=f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>') + masthead(l, tpl, "news")
+    rows = "".join(f'<article class="wk"><p class="k">{esc(kicker(a,l))} · <time datetime="{iso(a)}">{fdate(a,l)}</time></p><h2><a href="{url_of(a,l)}">{esc(a[l]["title"])}</a></h2><p>{esc(a[l].get("answer") or a[l]["dek"])}</p></article>' for a in its)
+    s_ += f'<main id="main" class="w"><div class="nar"><div class="crumbs"><a href="/{l}/">{x["home"]}</a></div><h1>{t}</h1><p class="dek">{d}</p>{rows}<div style="margin-top:24px">{subscribe(l)}</div></div></main>' + footer(l)
+    write(tpl.format(l=l), s_)
 
 def all_places():
     seen, out = set(), []
@@ -759,8 +808,9 @@ def feed(l):
     for a in all_items():
         im = img_of(a)
         enc = f'<enclosure url="{BASE}/img/{img_key(a)}-1280.webp" type="image/webp" length="0"/>' if im else ""
-        its += f"<item><title>{esc(a[l]['title'])}</title><link>{BASE}{url_of(a,l)}</link><guid>{BASE}{url_of(a,l)}</guid><description>{esc(a[l]['dek'])}</description><category>{esc(sec_name(l,group_of(a)))}</category><pubDate>{dt(a).strftime('%a, %d %b %Y %H:%M:00 +0800')}</pubDate>{enc}</item>"
-    write(f"/{l}/feed.xml", f'<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>The Sumba Times</title><link>{BASE}/{l}/</link><description>{esc(UI[l]["tagline"])}</description><language>{l}</language>{its}</channel></rss>')
+        full = "<![CDATA[" + (f'<p><img src="{BASE}/img/{img_key(a)}-1280.webp" alt=""></p>' if im else "") + body_raw(a, l).replace("]]>", "") + "]]>"
+        its += f"<item><title>{esc(a[l]['title'])}</title><link>{BASE}{url_of(a,l)}</link><guid>{BASE}{url_of(a,l)}</guid><description>{esc(a[l]['dek'])}</description><content:encoded>{full}</content:encoded><category>{esc(sec_name(l,group_of(a)))}</category><pubDate>{dt(a).strftime('%a, %d %b %Y %H:%M:00 +0800')}</pubDate>{enc}</item>"
+    write(f"/{l}/feed.xml", f'<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>The Sumba Times</title><link>{BASE}/{l}/</link><description>{esc(UI[l]["tagline"])}</description><language>{l}</language>{its}</channel></rss>')
 
 def root():
     s = """<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Sumba Times · News, culture and travel from Sumba, Indonesia</title>
@@ -778,6 +828,7 @@ def sitemaps():
         lm = f"<lastmod>{lastmod}</lastmod>" if lastmod else ""
         for l in LANGS: urls.append(f"<url><loc>{BASE}{P(tpl, l)}</loc>{lm}{alts}</url>")
     add("/{l}/", NOW.date().isoformat())
+    add("/{l}/week/", NOW.date().isoformat())
     for s in NAV + LEGACY: add("/{l}/" + s + "/", NOW.date().isoformat() if s in ("plan", "guides", "news") else None)
     add("/{l}/about/")
     for a in all_items(): add(paths_of(a), a.get("updated") or a["date"])
@@ -869,7 +920,7 @@ if __name__ == "__main__":
     shutil.rmtree(OUT, ignore_errors=True)
     for l in LANGS:
         home(l); feed(l); about(l); search_page(l); notfound(l)
-        plan_page(l)
+        plan_page(l); week_page(l)
         for s in NAV + LEGACY:
             if s != "plan": section_page(s, l)
         for a in all_items(): article_page(a, l)

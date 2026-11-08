@@ -1,5 +1,7 @@
 # The Sumba Times: daily desk rules + 100-point SEO/GEO checklist per story (8 Nov 2026)
 
+Machine check: `python3 check.py --recent` after `python3 build.py` (errors block publishing; warnings point to the item numbers below).
+
 Read this before writing any story. The build already does the items marked [auto]; the writer must do the rest, in EVERY language (en, es, id).
 
 ## Editorial line (what to publish)
@@ -126,7 +128,7 @@ Read this before writing any story. The build already does the items marked [aut
 ### I. Publishing and distribution (91-100)
 91. Publish between 05:00 and 08:00 WITA (morning edition); breaking news as soon as verified.
 92. Set "top": True on the most important story of the day only.
-93. Build, run the broken-link and schema check, deploy via claude-ops (README), confirm upload 200 and exit 0.
+93. Build, then run `python3 check.py --recent`: 0 errors is required to publish, fix the warnings for today's stories. Deploy via claude-ops (README), confirm upload 200 and exit 0.
 94. Check the story live on /en/, /es/, /id/ and on mobile.
 95. Confirm IndexNow returned 200/202 in out/tst_deploy.txt.
 96. Add the story to the weekly newsletter queue (when the newsletter exists).

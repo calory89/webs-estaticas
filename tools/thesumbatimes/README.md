@@ -3,7 +3,7 @@
 Static site generator, EN/ES/ID. `python3 build.py` writes `out/`. `python3 deploy.py` turns `out/` into `worker/index.js` + `worker/metadata.json`.
 
 ## Daily stories: read EDITORIAL.md first
-At least one story per day (WITA), more when there is real news; newspaper mix, not a travel blog. EDITORIAL.md has the editorial line and the 100-point SEO/GEO checklist per story and language. Optional fields the build now uses: "slugs", "keywords" {en,es,id}, per-language "answer", "keys" (3-5 bullets), "visitors" (practical paragraph), "faq", "updated".
+At least one story per day (WITA), more when there is real news; newspaper mix, not a travel blog. EDITORIAL.md has the editorial line and the 100-point SEO/GEO checklist per story and language. Optional fields the build now uses (per-language ones inside en/es/id): "correction" (shown at the end), "slugs", "keywords" {en,es,id}, per-language "answer", "keys" (3-5 bullets), "visitors" (practical paragraph), "faq", "updated".
 
 ## Files
 - `content.py`  - UI strings, evergreen guides (`ARTICLES`), the Low Tide letter (`LETTER`), stay table. The daily task adds new stories here.
@@ -31,7 +31,7 @@ Images live in Workers KV namespace `thesumbatimes-img` (id f0aa5acc53a44f3194e7
 ## Deploy (via calory89/claude-ops, since 8 Nov 2026)
 The old Composio route (CLOUDFLARE_MCP_EXECUTE) does NOT work: that connection was never authorised, so the daily story was written but not published. Publish like this instead:
 1. Add calory89/claude-ops to the session with push access and clone it to /home/claude/claude-ops.
-2. Here: `python3 build.py && python3 deploy.py` (from a fresh clone of main, so the guides/ and travel.py are included).
+2. Here: `python3 build.py && python3 check.py --recent && python3 deploy.py` (check.py must report 0 errors) (from a fresh clone of main, so the guides/ and travel.py are included).
 3. `gzip -9 -c worker/index.js > /home/claude/claude-ops/data/thesumbatimes/index.js.gz` and `cp worker/metadata.json /home/claude/claude-ops/data/thesumbatimes/`.
 4. In claude-ops: write `webs-estaticas <short sha> <UTC time>` to `data/thesumbatimes/BUILD`, append a line `# <UTC time> <what>` to `jobs/tst_deploy.sh` (the push of a job file is what triggers it), commit and push to main.
 5. About a minute later `git pull` and read `out/tst_deploy.txt`: it must say `upload http 200`, `success True` and end with `# exit=0`; it also pings IndexNow. Then check the story on https://thesumbatimes.com/en/.

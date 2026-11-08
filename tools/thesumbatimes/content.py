@@ -53,7 +53,7 @@ UI = {
 
 S_FLIGHT = [("ANTARA News Bali, 17 Jul 2026","https://bali.antaranews.com/berita/409805/bandara-ngurah-rai-tambah-dua-rute-baru-ke-waingapu-dan-wakatobi"),
             ("Times Indonesia, 12 Jul 2026","https://timesindonesia.co.id/ekonomi/598638/transnusa-buka-rute-waingapudenpasar-bupati-sumba-timur-tantangannya-menjaga-penerbangan-tetap-beroperasi")]
-S_GET = S_FLIGHT + [("Bali.live, Wings Air Bali–Sumba, 1 Aug 2024","https://bali.live/p/wings-air-takes-off-with-new-direct-flights-from-bali-to-sumba")]
+S_GET = S_FLIGHT + [("Bali.live, Wings Air Bali-Sumba, 1 Aug 2024","https://bali.live/p/wings-air-takes-off-with-new-direct-flights-from-bali-to-sumba")]
 S_PASOLA = [("Backindo, Pasola Festival guide","https://www.backindo.com/pasola-sumba"),("Explore Sumba, festivals","https://exploresumba.com/sumba-island-indonesia/festivals")]
 S_CULT = [("Topologica, Sumba island guide","https://topologica.co/local-guides/indonesia/sumba-island-pasola-megaliths-guide")]
 S_BEACH = [("Seek Sophie, Sumba guide","https://www.seeksophie.com/en/magazine/a/sumba-ultimate-guide"),("Topologica, Sumba island guide","https://topologica.co/local-guides/indonesia/sumba-island-pasola-megaliths-guide")]
@@ -64,8 +64,8 @@ ARTICLES = []
 ARTICLES.append({"section":"news","slug":"new-direct-flights-bali-waingapu","date":"2026-11-07",
 "en":{"title":"Bali to Waingapu, non-stop: what the new TransNusa route means for East Sumba",
  "dek":"Since 15 July, East Sumba has a direct link to Bali four times a week. The hard part, says the regent, is keeping it.",
- "body":"""<p>For years, travelling from Bali to East Sumba meant a stop in Lombok or Kupang. Since <strong>15 July 2026</strong>, TransNusa flies <strong>Denpasar–Waingapu non-stop</strong>, four times a week: Tuesday, Wednesday, Friday and Saturday.</p>
-<p>Bali's Ngurah Rai airport announced the route together with a new Bali–Wakatobi service, opened the next day. According to ANTARA, the Waingapu flight (8B-5652) leaves Bali at 08:19 local time and the return (8B-5653) lands back in Bali at 12:24, on a Comac ARJ-21 jet.</p>
+ "body":"""<p>For years, travelling from Bali to East Sumba meant a stop in Lombok or Kupang. Since <strong>15 July 2026</strong>, TransNusa flies <strong>Denpasar-Waingapu non-stop</strong>, four times a week: Tuesday, Wednesday, Friday and Saturday.</p>
+<p>Bali's Ngurah Rai airport announced the route together with a new Bali-Wakatobi service, opened the next day. According to ANTARA, the Waingapu flight (8B-5652) leaves Bali at 08:19 local time and the return (8B-5653) lands back in Bali at 12:24, on a Comac ARJ-21 jet.</p>
 <h2>Why it matters</h2>
 <p>West Sumba already had daily flights to Tambolaka. The east, with its savannas, Wairinding hill, Walakiri beach and Tanggedu waterfall, was harder to reach. A direct link makes a classic route possible: <strong>fly into one airport and out of the other</strong>, crossing the island by road.</p>
 <h2>"The hard part is not the plane arriving"</h2>
@@ -73,17 +73,17 @@ ARTICLES.append({"section":"news","slug":"new-direct-flights-bali-waingapu","dat
 <p>In short: if you want the route to stay, use it. Schedules can change, so check the airline before you book.</p>"""},
 "es":{"title":"De Bali a Waingapu sin escalas: qué supone la nueva ruta de TransNusa para el este de Sumba",
  "dek":"Desde el 15 de julio, el este de Sumba tiene vuelo directo a Bali cuatro veces por semana. Lo difícil, dice el regente, es mantenerlo.",
- "body":"""<p>Durante años, ir de Bali al este de Sumba significaba hacer escala en Lombok o Kupang. Desde el <strong>15 de julio de 2026</strong>, TransNusa vuela <strong>Denpasar–Waingapu sin escalas</strong> cuatro veces por semana: martes, miércoles, viernes y sábado.</p>
-<p>El aeropuerto Ngurah Rai de Bali anunció la ruta junto a un nuevo vuelo Bali–Wakatobi, que empezó al día siguiente. Según ANTARA, el vuelo a Waingapu (8B-5652) sale de Bali a las 08:19, hora local, y el de vuelta (8B-5653) llega a Bali a las 12:24, en un avión Comac ARJ-21.</p>
+ "body":"""<p>Durante años, ir de Bali al este de Sumba significaba hacer escala en Lombok o Kupang. Desde el <strong>15 de julio de 2026</strong>, TransNusa vuela <strong>Denpasar-Waingapu sin escalas</strong> cuatro veces por semana: martes, miércoles, viernes y sábado.</p>
+<p>El aeropuerto Ngurah Rai de Bali anunció la ruta junto a un nuevo vuelo Bali-Wakatobi, que empezó al día siguiente. Según ANTARA, el vuelo a Waingapu (8B-5652) sale de Bali a las 08:19, hora local, y el de vuelta (8B-5653) llega a Bali a las 12:24, en un avión Comac ARJ-21.</p>
 <h2>Por qué importa</h2>
 <p>El oeste de Sumba ya tenía vuelos diarios a Tambolaka. El este, con sus sabanas, la colina de Wairinding, la playa de Walakiri y la cascada de Tanggedu, era más difícil de alcanzar. Con un vuelo directo se puede hacer la ruta clásica: <strong>entrar por un aeropuerto y salir por el otro</strong>, cruzando la isla por carretera.</p>
 <h2>"Lo difícil no es que llegue el avión"</h2>
 <p>El regente del este de Sumba, Umbu Lili Pekuwali, celebró la ruta, pero avisó de que el verdadero reto es mantenerla. El director del aeropuerto pidió apoyo para que los nuevos vuelos duren y crezcan.</p>
 <p>En resumen: si quieres que la ruta siga, úsala. Los horarios pueden cambiar, así que confírmalos con la aerolínea antes de reservar.</p>"""},
-"id":{"title":"Bali–Waingapu tanpa transit: arti rute baru TransNusa bagi Sumba Timur",
+"id":{"title":"Bali-Waingapu tanpa transit: arti rute baru TransNusa bagi Sumba Timur",
  "dek":"Sejak 15 Juli, Sumba Timur punya penerbangan langsung ke Bali empat kali seminggu. Tantangannya, kata bupati, adalah menjaganya tetap ada.",
- "body":"""<p>Selama bertahun-tahun, perjalanan dari Bali ke Sumba Timur berarti transit di Lombok atau Kupang. Sejak <strong>15 Juli 2026</strong>, TransNusa terbang <strong>Denpasar–Waingapu tanpa transit</strong> empat kali seminggu: Selasa, Rabu, Jumat, dan Sabtu.</p>
-<p>Bandara Ngurah Rai Bali mengumumkan rute ini bersama rute baru Bali–Wakatobi yang dibuka sehari kemudian. Menurut ANTARA, penerbangan ke Waingapu (8B-5652) berangkat dari Bali pukul 08.19 WITA dan penerbangan pulang (8B-5653) tiba di Bali pukul 12.24, dengan pesawat Comac ARJ-21.</p>
+ "body":"""<p>Selama bertahun-tahun, perjalanan dari Bali ke Sumba Timur berarti transit di Lombok atau Kupang. Sejak <strong>15 Juli 2026</strong>, TransNusa terbang <strong>Denpasar-Waingapu tanpa transit</strong> empat kali seminggu: Selasa, Rabu, Jumat, dan Sabtu.</p>
+<p>Bandara Ngurah Rai Bali mengumumkan rute ini bersama rute baru Bali-Wakatobi yang dibuka sehari kemudian. Menurut ANTARA, penerbangan ke Waingapu (8B-5652) berangkat dari Bali pukul 08.19 WITA dan penerbangan pulang (8B-5653) tiba di Bali pukul 12.24, dengan pesawat Comac ARJ-21.</p>
 <h2>Mengapa penting</h2>
 <p>Sumba bagian barat sudah punya penerbangan harian ke Tambolaka. Bagian timur, dengan sabana, Bukit Wairinding, Pantai Walakiri, dan Air Terjun Tanggedu, lebih sulit dijangkau. Dengan penerbangan langsung, rute klasik jadi mungkin: <strong>masuk lewat satu bandara dan keluar lewat bandara lainnya</strong>, menyeberangi pulau lewat darat.</p>
 <h2>"Yang sulit bukan hadirnya pesawat"</h2>
@@ -99,8 +99,8 @@ ARTICLES.append({"section":"getting-here","slug":"how-to-get-to-sumba-from-bali"
 <ul><li><strong>Tambolaka (TMC)</strong>, in the north-west. The main gateway for West and Southwest Sumba: Kodi, Lamboya, Wanokaka, the traditional villages and the Pasola fields.</li>
 <li><strong>Waingapu (WGP)</strong>, in the east. Closest to the savannas, Wairinding hill, Walakiri beach and Tanggedu waterfall.</li></ul>
 <h2>Flights from Bali</h2>
-<ul><li><strong>Bali–Tambolaka:</strong> Wings Air has flown several daily flights, about 1 h 30 each way.</li>
-<li><strong>Bali–Waingapu:</strong> TransNusa has flown non-stop four times a week since 15 July 2026 (Tuesday, Wednesday, Friday, Saturday).</li></ul>
+<ul><li><strong>Bali-Tambolaka:</strong> Wings Air has flown several daily flights, about 1 h 30 each way.</li>
+<li><strong>Bali-Waingapu:</strong> TransNusa has flown non-stop four times a week since 15 July 2026 (Tuesday, Wednesday, Friday, Saturday).</li></ul>
 <p>Schedules on small regional routes change often. Always check the airline before booking.</p>
 <h2>The route that works best</h2>
 <p>Sumba is about 200 km long and roughly twice the size of Bali. Roads are slow. The easiest plan is to <strong>fly into Tambolaka and out of Waingapu</strong>, or the other way round, and cross the island by car.</p>
@@ -116,8 +116,8 @@ ARTICLES.append({"section":"getting-here","slug":"how-to-get-to-sumba-from-bali"
 <ul><li><strong>Tambolaka (TMC)</strong>, en el noroeste. Es la puerta principal al oeste y suroeste de Sumba: Kodi, Lamboya, Wanokaka, los pueblos tradicionales y los campos de la Pasola.</li>
 <li><strong>Waingapu (WGP)</strong>, en el este. El más cercano a las sabanas, la colina de Wairinding, la playa de Walakiri y la cascada de Tanggedu.</li></ul>
 <h2>Vuelos desde Bali</h2>
-<ul><li><strong>Bali–Tambolaka:</strong> Wings Air ha operado varios vuelos diarios, de una hora y media aproximadamente.</li>
-<li><strong>Bali–Waingapu:</strong> TransNusa vuela sin escalas cuatro veces por semana desde el 15 de julio de 2026 (martes, miércoles, viernes y sábado).</li></ul>
+<ul><li><strong>Bali-Tambolaka:</strong> Wings Air ha operado varios vuelos diarios, de una hora y media aproximadamente.</li>
+<li><strong>Bali-Waingapu:</strong> TransNusa vuela sin escalas cuatro veces por semana desde el 15 de julio de 2026 (martes, miércoles, viernes y sábado).</li></ul>
 <p>En estas rutas regionales los horarios cambian a menudo. Confírmalos siempre con la aerolínea antes de reservar.</p>
 <h2>La ruta que mejor funciona</h2>
 <p>Sumba mide unos 200 km de largo y es aproximadamente el doble que Bali. Las carreteras son lentas. Lo más fácil es <strong>llegar a Tambolaka y salir desde Waingapu</strong>, o al revés, y cruzar la isla en coche.</p>
@@ -133,8 +133,8 @@ ARTICLES.append({"section":"getting-here","slug":"how-to-get-to-sumba-from-bali"
 <ul><li><strong>Tambolaka (TMC)</strong>, di barat laut. Gerbang utama ke Sumba Barat dan Sumba Barat Daya: Kodi, Lamboya, Wanokaka, kampung adat, dan lapangan Pasola.</li>
 <li><strong>Waingapu (WGP)</strong>, di timur. Paling dekat ke sabana, Bukit Wairinding, Pantai Walakiri, dan Air Terjun Tanggedu.</li></ul>
 <h2>Penerbangan dari Bali</h2>
-<ul><li><strong>Bali–Tambolaka:</strong> Wings Air telah melayani beberapa penerbangan setiap hari, sekitar 1 jam 30 menit.</li>
-<li><strong>Bali–Waingapu:</strong> TransNusa terbang tanpa transit empat kali seminggu sejak 15 Juli 2026 (Selasa, Rabu, Jumat, Sabtu).</li></ul>
+<ul><li><strong>Bali-Tambolaka:</strong> Wings Air telah melayani beberapa penerbangan setiap hari, sekitar 1 jam 30 menit.</li>
+<li><strong>Bali-Waingapu:</strong> TransNusa terbang tanpa transit empat kali seminggu sejak 15 Juli 2026 (Selasa, Rabu, Jumat, Sabtu).</li></ul>
 <p>Jadwal rute regional sering berubah. Selalu cek ke maskapai sebelum memesan.</p>
 <h2>Rute terbaik</h2>
 <p>Panjang Sumba sekitar 200 km dan luasnya kira-kira dua kali Bali. Jalannya lambat. Rencana termudah adalah <strong>tiba di Tambolaka dan pulang dari Waingapu</strong>, atau sebaliknya, lalu menyeberangi pulau dengan mobil.</p>
@@ -156,7 +156,7 @@ ARTICLES.append({"section":"culture","slug":"pasola-explained","date":"2026-11-0
 <h2>Where</h2>
 <p>In the regions of Kodi, Lamboya, Wanokaka and Gaura. Most visitors stay near Tambolaka and drive up to about 2.5 hours to the fields.</p>
 <h2>2026, for reference</h2>
-<p>Local schedules announced for 2026 were 9–11 February (Homba Kalayo, Bondo Kawango, Rara Winyo) and 9–11 March (Maliti Bondo Ate, Wai Ha, Wainyapu). Dates for 2027 will depend, as always, on the elders.</p>
+<p>Local schedules announced for 2026 were 9-11 February (Homba Kalayo, Bondo Kawango, Rara Winyo) and 9-11 March (Maliti Bondo Ate, Wai Ha, Wainyapu). Dates for 2027 will depend, as always, on the elders.</p>
 <h2>How to be a good guest</h2>
 <ul><li>Remember that this is a ritual, not a performance for tourists.</li>
 <li>Dress modestly and stay well back from the field. Riders fall, and horses run where they want.</li>
@@ -190,7 +190,7 @@ ARTICLES.append({"section":"culture","slug":"pasola-explained","date":"2026-11-0
 <h2>Di mana</h2>
 <p>Di wilayah Kodi, Lamboya, Wanokaka, dan Gaura. Sebagian besar pengunjung menginap di sekitar Tambolaka dan berkendara hingga sekitar 2,5 jam ke lapangan.</p>
 <h2>Sebagai acuan: 2026</h2>
-<p>Jadwal lokal yang diumumkan untuk 2026 adalah 9–11 Februari (Homba Kalayo, Bondo Kawango, Rara Winyo) dan 9–11 Maret (Maliti Bondo Ate, Wai Ha, Wainyapu). Tanggal untuk 2027, seperti biasa, bergantung pada para tetua.</p>
+<p>Jadwal lokal yang diumumkan untuk 2026 adalah 9-11 Februari (Homba Kalayo, Bondo Kawango, Rara Winyo) dan 9-11 Maret (Maliti Bondo Ate, Wai Ha, Wainyapu). Tanggal untuk 2027, seperti biasa, bergantung pada para tetua.</p>
 <h2>Menjadi tamu yang baik</h2>
 <ul><li>Ingat bahwa ini ritual, bukan pertunjukan untuk wisatawan.</li>
 <li>Berpakaian sopan dan jaga jarak dari lapangan. Penunggang bisa jatuh, dan kuda berlari ke mana saja.</li>
