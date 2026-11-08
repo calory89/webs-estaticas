@@ -188,17 +188,46 @@ def months(a, b):
     return out
 
 
+def _q(cat, bbox, a, b):
+    return list(cat.search(collections=['sentinel-2-l2a'], bbox=bbox, datetime='%s-01T00:00:00Z/%sT23:59:59Z' % (a, last_day(b)),
+                           query={'eo:cloud_cover': {'lt': 70}}, limit=100).items())
+
+
+def search(cat, bbox, mlist, gaps):
+    """STAC search one calendar year at a time; a year whose paging fails on Earth Search ("Internal server error", seen for
+    2019 at some places) is searched month by month, 3 tries each; a month that still fails is left empty and listed in gaps.
+    The archive holds two copies of many 2017 to 2021 scenes (..._0_L2A, original processing, and ..._1_L2A, reprocessed with
+    the current harmonised baseline): only the newest copy of each acquisition is kept, so a month never counts one scene twice."""
+    out, y0, y1 = [], int(mlist[0][:4]), int(mlist[-1][:4])
+    for y in range(y0, y1 + 1):
+        ms = [m for m in mlist if m.startswith('%d-' % y)]
+        try: out += _q(cat, bbox, ms[0], ms[-1]); continue
+        except Exception: pass
+        for m in ms:
+            for k in range(3):
+                try: out += _q(cat, bbox, m, m); break
+                except Exception:
+                    if k == 2: gaps.append(m)
+                    else: time.sleep(2 + 4 * k)
+    best = {}
+    for it in out:
+        parts = it.id.rsplit('_', 2)            # S2A_39RZH_20200302_1_L2A -> base, version
+        base, ver = (parts[0], int(parts[1])) if len(parts) == 3 and parts[1].isdigit() else (it.id, 0)
+        if base not in best or ver > best[base][0]: best[base] = (ver, it)
+    return [v[1] for v in best.values()]
+
+
 def project(cat, p, mlist, outdir, deadline):
     t0 = time.time(); N = len(mlist)
     rec = {'m0': mlist[0], 'n': N, 'k': [0] * N, 'c': [None] * N, 'b': [None] * N, 'r': [None] * N, 'x': [None] * N, 'f': [-1] * N, 'dt': [''] * N}
     if time.time() > deadline: rec['status'] = 'not processed (time budget)'; return rec
     d = 0.007
     win_pts = [(p['lng'] - .006, p['lat'] - .006), (p['lng'] + .006, p['lat'] - .006), (p['lng'] - .006, p['lat'] + .006), (p['lng'] + .006, p['lat'] + .006)]
-    try:
-        items = list(cat.search(collections=['sentinel-2-l2a'], bbox=(p['lng'] - d, p['lat'] - d, p['lng'] + d, p['lat'] + d),
-                                datetime='%s-01T00:00:00Z/%sT23:59:59Z' % (mlist[0], last_day(mlist[-1])), query={'eo:cloud_cover': {'lt': 70}}, limit=200).items())
+    gaps = []
+    try: items = search(cat, (p['lng'] - d, p['lat'] - d, p['lng'] + d, p['lat'] + d), mlist, gaps)
     except Exception as e:
         rec['status'] = 'search failed'; print('search fail', p['id'], str(e)[:120]); return rec
+    if gaps: rec['search_gaps'] = gaps
     items = [it for it in items if all(inside(q, it.geometry or {}) for q in win_pts)]   # footprint covers the whole window
     if not items: rec['status'] = 'no scenes listed'; return rec
     tiles = {}

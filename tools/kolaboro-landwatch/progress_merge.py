@@ -24,7 +24,7 @@ LIMITS = ('Sentinel-2 pixels are 10 m. They show cleared ground, slabs, roofs an
           'Season, low winter sun (longer shadows), haze and wet ground also move the index. Cloudy months are empty. '
           'The pin comes from public sources and is about 100 m accurate, so the circle can miss part of a large site or include a neighbour. '
           'This is a prompt to ask the developer for dated site photos, not proof of progress or of a stop.')
-KEEP = ('m0', 'n', 'k', 'c', 'b', 'r', 'x', 'f', 'dt', 't', 'base', 'frames', 'clear_months', 'status', 'sum')
+KEEP = ('m0', 'n', 'k', 'c', 'b', 'r', 'x', 'f', 'dt', 't', 'base', 'frames', 'clear_months', 'status', 'sum', 'search_gaps')
 
 
 def main():
@@ -56,7 +56,7 @@ def main():
            'images': '/k/sat/proj/<id>.jpg?v=<v>: one 96 x 96 px tile per clear month, in month order; f[i] is the tile index of month i (-1: no clear scene).',
            'fields': {'m0': 'first month', 'n': 'months', 'k': 'scenes listed (cloud cover < 70%) per month', 'c': 'share of the circle seen clear, % (null: no clear scene)',
                       'b': 'built-up or bare share of the circle, %', 'r': 'built-up or bare share of the 300-600 m ring, %', 'x': 'share of the circle differing visibly from the first clear month, % (reference, noisier)',
-                      'f': 'thumbnail index', 'dt': 'date of the first scene used', 't': 'Sentinel-2 tile', 'base': 'first clear month', 'sum': 'medians of the first and last 3 clear months'},
+                      'f': 'thumbnail index', 'dt': 'date of the first scene used', 't': 'Sentinel-2 tile', 'base': 'first clear month', 'sum': 'medians of the first and last 3 clear months', 'search_gaps': 'months whose archive search failed (left empty)'},
            'projects': dict(sorted(res.items()))}
     json.dump(out, open(a.out, 'w'), separators=(',', ':'))
     print('projects', len(res), st, 'bytes', os.path.getsize(a.out))
