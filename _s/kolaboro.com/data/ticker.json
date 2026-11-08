@@ -3,6 +3,20 @@
  "items": [
   {
    "date": "2026-11-08",
+   "kind": "data",
+   "text": "Satellite images back to January 2017: the monthly Sentinel-2 series on 125 project pages now covers almost ten years",
+   "tl": {
+    "es": "Imágenes de satélite desde enero de 2017: la serie mensual Sentinel-2 de 125 proyectos cubre ya casi diez años",
+    "fr": "Images satellite depuis janvier 2017 : la série mensuelle Sentinel-2 de 125 projets couvre désormais près de dix ans",
+    "de": "Satellitenbilder seit Januar 2017: die monatliche Sentinel-2-Reihe auf 125 Projektseiten umfasst nun fast zehn Jahre",
+    "nl": "Satellietbeelden sinds januari 2017: de maandelijkse Sentinel-2-reeks op 125 projectpagina's beslaat nu bijna tien jaar",
+    "ru": "Спутниковые снимки с января 2017 года: ежемесячный ряд Sentinel-2 на 125 проектах теперь охватывает почти десять лет",
+    "zh": "卫星影像回溯至 2017 年 1 月：125 个项目页的 Sentinel-2 月度序列现覆盖近十年",
+    "ar": "صور الأقمار الصناعية منذ يناير 2017: تغطي سلسلة Sentinel-2 الشهرية في 125 صفحة مشروع الآن نحو عشر سنوات"
+   }
+  },
+  {
+   "date": "2026-11-08",
    "kind": "shipped",
    "text": "See the site: open street-level photos within 200 m of the pin on 59 project pages, and a 3D view with terrain and 12,328 mapped buildings on 125",
    "tl": {
