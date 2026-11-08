@@ -196,8 +196,9 @@ def _q(cat, bbox, a, b):
 def search(cat, bbox, mlist, gaps):
     """STAC search one calendar year at a time; a year whose paging fails on Earth Search ("Internal server error", seen for
     2019 at some places) is searched month by month, 3 tries each; a month that still fails is left empty and listed in gaps.
-    The archive holds two copies of many 2017 to 2021 scenes (..._0_L2A, original processing, and ..._1_L2A, reprocessed with
-    the current harmonised baseline): only the newest copy of each acquisition is kept, so a month never counts one scene twice."""
+    The archive holds two copies of many 2017 to 2021 scenes (..._0_L2A, Cloud-Optimized GeoTIFFs on the open sentinel-cogs
+    bucket, and ..._1_L2A, a reprocessing whose assets are JPEG 2000 in a requester-pays bucket we cannot read without an
+    account): one copy per acquisition is kept, the COG one, so a month never counts one scene twice."""
     out, y0, y1 = [], int(mlist[0][:4]), int(mlist[-1][:4])
     for y in range(y0, y1 + 1):
         ms = [m for m in mlist if m.startswith('%d-' % y)]
@@ -209,12 +210,15 @@ def search(cat, bbox, mlist, gaps):
                 except Exception:
                     if k == 2: gaps.append(m)
                     else: time.sleep(2 + 4 * k)
+    def cog(it):
+        a = it.assets.get('scl')
+        return bool(a and str(a.href).startswith('https://sentinel-cogs.'))
     best = {}
     for it in out:
-        parts = it.id.rsplit('_', 2)            # S2A_39RZH_20200302_1_L2A -> base, version
-        base, ver = (parts[0], int(parts[1])) if len(parts) == 3 and parts[1].isdigit() else (it.id, 0)
-        if base not in best or ver > best[base][0]: best[base] = (ver, it)
-    return [v[1] for v in best.values()]
+        parts = it.id.rsplit('_', 2)            # S2A_39RZH_20200302_0_L2A -> base, version
+        base = parts[0] if len(parts) == 3 and parts[1].isdigit() else it.id
+        if base not in best or (cog(it) and not cog(best[base])): best[base] = it
+    return [it for it in best.values() if cog(it)]
 
 
 def project(cat, p, mlist, outdir, deadline):
