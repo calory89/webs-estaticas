@@ -42,6 +42,7 @@ let kxev = null; const KXEV = /^\/api\/xev(?:\/sat\.png)?$/;   // x11b (batch 11
 let kpp = null; const KPP = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?tools\/permit-photo\/?$/;   // n17d: permit photo reader (keep equal to PATHS in kbx_pp.js)
 let kca = null; const KCA = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?tools\/contract-addendum\/?$/;   // n18d: contract addendum builder (keep equal to TOOL_RX in kbx_paper.js)
 let knet = null; const KNET = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:graph\/developers|live\/xrays)\/?$|^\/api\/x\/net\/(?:graph|live)$/;   // b14 f14c: developer network graph + live X-ray globe (keep equal to PATHS in kbx_net.js)
+let kstg = null; const KSTG = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?methods\/construction-stage\/?$/;   // n18b (batch 18): construction stage method page (see kbx_stage.js)
 let kfc = null; const KFC = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:open|methods\/delivery-forecast)\/?$/;   // n17c (batch 17): /open live figures, delivery-forecast method page (see kbx_fc.js)
 let knm = null; const KNM = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects|developers)(?:\/|$)|^\/api\/seo\/(?:urls|scan)$/;   // seoP named pages, keep equal to PATHS in kbx_named.js
 let kxc = null; const KXC = /^\/k\/xray-cta\.js$|^\/api\/x\/xc(\/|$)|^\/embed\/xray(\.js|\/)?$|^\/__k\/kxc-admin\.js$/;   // x11c (batch 11): X-ray conversion block, partner embed, admin tab (keep equal to PATHS in kbx_xc.js)
@@ -286,6 +287,13 @@ export default {
     }
     // kolaboro.com (n18e, batch 18): /data/dev-response.json is computed live from public aggregate functions (the static file is the fallback)
     if (host === 'kolaboro.com' && req.method === 'GET' && u.pathname === '/data/dev-response.json') { if (!kfc) kfc = await import('./kbx_fc.js'); return kfc.devResponseJson(env); }
+    // kolaboro.com (n18b, batch 18): /methods/construction-stage/ in 8 languages (see kbx_stage.js)
+    if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && KSTG.test(u.pathname)) {
+      if (!kstg) kstg = await import('./kbx_stage.js');
+      const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
+      const r = await kstg.method(req, u, env, ctx, shell);
+      if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
+    }
     // kolaboro.com (n17c, batch 17): /open live figures and /methods/delivery-forecast/ in 8 languages (see kbx_fc.js)
     if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && KFC.test(u.pathname)) {
       if (!kfc) kfc = await import('./kbx_fc.js');

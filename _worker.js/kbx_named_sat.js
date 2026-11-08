@@ -5,6 +5,7 @@
 // served from the satellite packs by kbsat.js). Shown with the developer's promised dates (/data/promises.json and the
 // record's facts) on the same timeline. Server-rendered SVG, no client script. Projects without a series get no section.
 import { spaceData, spaceHtml } from './kbx_space.js';   // n17b: Sentinel-1 radar and Overture buildings, same circle
+import { stages, stageHtml, stageLabels } from './kbx_stage.js';   // n18b: construction stage estimate per month (rules), time machine labels
 const ORIGIN = 'https://kolaboro.com';
 let MEMO = null;
 export async function satData(env) {
@@ -172,6 +173,43 @@ function chart(rec, ix, ms, lang, fd, trk, W) {
   return { svg: '<svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="' + esc(t(lang, 'aria', { a: fd(rec.m0), b: fd(ym(last)) })) + '">' + g + '</svg>', after };
 }
 
+// n18b: time machine (slider over the real monthly thumbnails of the sprite, drawn on a canvas, image loaded only near the viewport)
+const TM = {
+  en: { h: 'Time machine', play: 'Play', pause: 'Pause', lab: 'Month shown', scene: 'Sentinel-2 image of {d}', est: 'Stage estimate: {s}', cap: 'Real Sentinel-2 true-colour images, 640 m across, one per clear month: {k} of {n} months from {a} to {b}. The white circle is the 150 m area measured. Cloudy months are skipped, never filled in.', alt: 'Sentinel-2 image of the site, {d}' },
+  es: { h: 'Máquina del tiempo', play: 'Reproducir', pause: 'Pausa', lab: 'Mes mostrado', scene: 'Imagen de Sentinel-2 del {d}', est: 'Estimación de la fase: {s}', cap: 'Imágenes reales de Sentinel-2 en color real, 640 m de lado, una por mes despejado: {k} de {n} meses de {a} a {b}. El círculo blanco es la zona medida de 150 m. Los meses nublados se omiten, nunca se rellenan.', alt: 'Imagen de Sentinel-2 de la parcela, {d}' },
+  de: { h: 'Zeitmaschine', play: 'Abspielen', pause: 'Pause', lab: 'Angezeigter Monat', scene: 'Sentinel-2-Bild vom {d}', est: 'Geschätzte Phase: {s}', cap: 'Echte Sentinel-2-Bilder in Echtfarben, 640 m breit, eines pro klarem Monat: {k} von {n} Monaten von {a} bis {b}. Der weiße Kreis ist die gemessene Fläche von 150 m. Bewölkte Monate werden übersprungen, nie aufgefüllt.', alt: 'Sentinel-2-Bild des Grundstücks, {d}' },
+  fr: { h: 'Machine à remonter le temps', play: 'Lecture', pause: 'Pause', lab: 'Mois affiché', scene: 'Image Sentinel-2 du {d}', est: 'Étape estimée : {s}', cap: 'Vraies images Sentinel-2 en couleurs réelles, 640 m de côté, une par mois clair : {k} mois sur {n} de {a} à {b}. Le cercle blanc est la zone mesurée de 150 m. Les mois nuageux sont sautés, jamais comblés.', alt: 'Image Sentinel-2 du site, {d}' },
+  nl: { h: 'Tijdmachine', play: 'Afspelen', pause: 'Pauze', lab: 'Getoonde maand', scene: 'Sentinel-2-beeld van {d}', est: 'Geschatte fase: {s}', cap: 'Echte Sentinel-2-beelden in ware kleuren, 640 m breed, één per heldere maand: {k} van {n} maanden van {a} tot {b}. De witte cirkel is het gemeten gebied van 150 m. Bewolkte maanden worden overgeslagen, nooit ingevuld.', alt: 'Sentinel-2-beeld van de plek, {d}' },
+  ru: { h: 'Машина времени', play: 'Воспроизвести', pause: 'Пауза', lab: 'Показанный месяц', scene: 'Снимок Sentinel-2 от {d}', est: 'Оценка стадии: {s}', cap: 'Настоящие снимки Sentinel-2 в естественных цветах, 640 м в поперечнике, по одному на ясный месяц: {k} из {n} месяцев с {a} по {b}. Белый круг — измеряемая зона 150 м. Облачные месяцы пропущены и никогда не дорисовываются.', alt: 'Снимок участка Sentinel-2, {d}' },
+  zh: { h: '时光机', play: '播放', pause: '暂停', lab: '显示的月份', scene: '{d} 的 Sentinel-2 影像', est: '阶段估计：{s}', cap: '真实的 Sentinel-2 真彩色影像，宽 640 米，每个晴朗月份一张：{a} 至 {b} 的 {n} 个月中有 {k} 个。白色圆圈是测量的 150 米范围。多云月份被跳过，从不填补。', alt: '该地块的 Sentinel-2 影像，{d}' },
+  ar: { h: 'آلة الزمن', play: 'تشغيل', pause: 'إيقاف مؤقت', lab: 'الشهر المعروض', scene: 'صورة Sentinel-2 بتاريخ {d}', est: 'تقدير المرحلة: {s}', cap: 'صور حقيقية من Sentinel-2 بالألوان الطبيعية بعرض 640 م، صورة لكل شهر صافٍ: {k} من {n} شهرًا من {a} إلى {b}. الدائرة البيضاء هي المنطقة المقاسة بنصف قطر 150 م. تُتخطى الأشهر الغائمة ولا تُملأ أبدًا.', alt: 'صورة Sentinel-2 للموقع، {d}' }
+};
+const tt = (lang, k, v) => { const s = (TM[lang] && TM[lang][k]) || TM.en[k]; return v ? s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m) : s; };
+const TM_CSS = '<style id="ktm-css">.ktm{margin:18px 0 0;border:1px solid var(--k-line,var(--line));border-radius:var(--k-r-lg,14px);background:var(--k-surface,var(--card,#fff));padding:14px 14px 10px}.ktm h3{margin:0 0 10px;font-size:var(--k-fs-lg,1.2rem)}' +
+  '.ktm-v{display:flex;justify-content:center}.ktm canvas{display:block;width:min(384px,100%);height:auto;aspect-ratio:1;border-radius:var(--k-r-sm,6px);background:var(--k-sunken,#E8ECEA)}' +
+  '.ktm-c{display:flex;align-items:center;gap:12px;margin:12px auto 0;max-width:520px}.ktm-c input{flex:1 1 auto;min-width:0;min-height:44px;accent-color:var(--k-sea,#155C75)}.ktm-c button{flex:0 0 auto;min-width:96px;min-height:44px}' +
+  '.ktm-o{margin:6px 0 0;text-align:center;font-variant-numeric:tabular-nums;line-height:1.45}.ktm-o b{font-size:var(--k-fs-lg,1.15rem)}.ktm-o span{display:block;font-size:var(--k-fs-sm,.92rem);color:var(--k-muted,var(--muted))}.ktm-o i{display:block;font-style:normal;font-weight:600;color:var(--k-ink-2,var(--ink))}' +
+  '.ktm figcaption{font-size:var(--k-fs-xs,.82rem);color:var(--k-muted,var(--muted));margin:8px 0 0;line-height:1.45}.ksat-strip.is-on .ksat-tile:not(.is-none){background-image:var(--ksat-u)}</style>';
+const TM_JS = "(function(){var f=document.getElementById('ktm');if(!f||!f.nextElementSibling)return;var d;try{d=JSON.parse(f.nextElementSibling.textContent)}catch(e){return}" +
+  "var n=d.length,c=f.querySelector('canvas'),x=c.getContext('2d'),r=f.querySelector('input'),b=f.querySelector('button'),o=f.querySelector('.ktm-o'),im=null,tm=null,cur=n-1,T=+f.getAttribute('data-t')||96;" +
+  "function draw(){if(!im||!im.complete||!im.naturalWidth)return;var k=d[cur][3];x.imageSmoothingEnabled=true;x.imageSmoothingQuality='high';x.drawImage(im,k*T,0,T,T,0,0,c.width,c.height)}" +
+  "function show(i){cur=i;var e=d[i];o.children[0].textContent=e[0];o.children[1].textContent=e[1];o.children[2].textContent=e[2]||'';o.children[2].hidden=!e[2];c.setAttribute('aria-label',e[4]);r.setAttribute('aria-valuetext',e[0]+(e[2]?', '+e[2]:''));draw()}" +
+  "function stop(){if(tm){clearInterval(tm);tm=null;b.textContent=b.getAttribute('data-play')}}" +
+  "r.addEventListener('input',function(){stop();show(+r.value)});" +
+  "b.addEventListener('click',function(){if(tm){stop();return}var i=+r.value;if(i>=n-1)i=-1;b.textContent=b.getAttribute('data-pause');tm=setInterval(function(){i++;if(i>=n){stop();return}r.value=i;show(i)},650)});" +
+  "function on(){if(im)return;im=new Image();im.decoding='async';im.onload=draw;im.src=f.getAttribute('data-u');var st=document.querySelector('.ksat-strip');if(st)st.classList.add('is-on')}" +
+  "f.hidden=false;show(n-1);if('IntersectionObserver'in window){var io=new IntersectionObserver(function(e){for(var j=0;j<e.length;j++)if(e[j].isIntersecting){on();io.disconnect();break}},{rootMargin:'800px 0px'});io.observe(f)}else on()})();";
+function timeMachine(rec, months, lang, fd, img, labels) {
+  const ix = []; for (let i = 0; i < rec.n; i++) if (rec.f[i] >= 0) ix.push(i);
+  if (ix.length < 2) return '';
+  const d = ix.map(i => { const dd = fd(rec.dt[i] || months[i]); return [fd(months[i]), tt(lang, 'scene', { d: dd }), labels[months[i]] ? tt(lang, 'est', { s: labels[months[i]] }) : '', rec.f[i], tt(lang, 'alt', { d: dd })]; });
+  const cap = tt(lang, 'cap', { k: ix.length, n: rec.n, a: fd(months[0]), b: fd(months[rec.n - 1]) });
+  return '<figure class="ktm" id="ktm" hidden data-u="' + esc(img) + '" data-t="96"><h3>' + esc(tt(lang, 'h')) + '</h3><div class="ktm-v" dir="ltr"><canvas width="384" height="384" role="img" aria-label=""></canvas></div>' +
+    '<div class="ktm-c" dir="ltr"><button type="button" class="k-btn k-btn--sm" data-play="' + esc(tt(lang, 'play')) + '" data-pause="' + esc(tt(lang, 'pause')) + '">' + esc(tt(lang, 'play')) + '</button><input type="range" min="0" max="' + (d.length - 1) + '" step="1" value="' + (d.length - 1) + '" aria-label="' + esc(tt(lang, 'lab')) + '"></div>' +
+    '<p class="ktm-o" aria-live="polite"><b></b><span></span><i></i></p><figcaption>' + esc(cap) + '</figcaption></figure>' +
+    '<script type="application/json">' + JSON.stringify(d).replace(/</g, '\\u003c') + '</script><script>' + TM_JS + '</script>';
+}
+
 // rec: one project from construction-progress.json; meta: the whole file. trk(kind) = translated milestone kind, fd(date) = display date.
 export function satSection(meta, id, prom, fx, lang, fd, trk, tl) {   // tl(date): the tile's accessible name with the project name (s15a)
   const rec = meta && meta.projects && meta.projects[id];
@@ -187,6 +225,9 @@ export function satSection(meta, id, prom, fx, lang, fd, trk, tl) {   // tl(date
     if (rec.sum && rec.sum.b_first != null && rec.sum.b_last != null) sum += '<li>' + esc(t(lang, 'bl', { b1: Math.round(rec.sum.b_first), b2: Math.round(rec.sum.b_last), r1: rec.sum.r_first == null ? '-' : Math.round(rec.sum.r_first), r2: rec.sum.r_last == null ? '-' : Math.round(rec.sum.r_last) })) + '</li>';
   } else sum += '<li>' + esc(t(lang, clearN ? 'few' : 'none', { c: clearN, n })) + '</li>';
   sum += '</ul>';
+  const msAll = milestones(prom, fx || {});
+  const est = stages(rec, ix, meta.space && meta.space.radar, meta.space && meta.space.bld, msAll, id);   // n18b
+  let tmach = '';
   // strip: every month, newest first in the DOM; row-reverse shows them oldest-to-newest and starts scrolled to the newest
   let strip = '';
   if (rec.frames && rec.v) {
@@ -194,10 +235,13 @@ export function satSection(meta, id, prom, fx, lang, fd, trk, tl) {   // tl(date
     const li = [];
     for (let i = n - 1; i >= 0; i--) {
       const f = rec.f[i], lab = esc(fd(months[i]));
-      li.push(f >= 0 ? '<li><span class="ksat-tile" role="img" aria-label="' + esc(tl ? tl(fd(rec.dt[i] || months[i])) : 'Sentinel-2, ' + fd(rec.dt[i] || months[i])) + '" style="background-image:url(' + img + ');background-size:calc(var(--ksat-t) * ' + rec.frames + ') var(--ksat-t);background-position:calc(var(--ksat-t) * -' + f + ') 0"></span><small>' + lab + '</small></li>'
+      li.push(f >= 0 ? '<li><span class="ksat-tile" role="img" aria-label="' + esc(tl ? tl(fd(rec.dt[i] || months[i])) : 'Sentinel-2, ' + fd(rec.dt[i] || months[i])) + '" style="background-size:calc(var(--ksat-t) * ' + rec.frames + ') var(--ksat-t);background-position:calc(var(--ksat-t) * -' + f + ') 0"></span><small>' + lab + '</small></li>'
         : '<li><span class="ksat-tile is-none" role="img" aria-label="' + lab + ': ' + esc(t(lang, 'cloudy')) + '"></span><small>' + lab + '</small></li>');
     }
-    strip = '<figure dir="ltr"><ol class="ksat-strip">' + li.join('') + '</ol><figcaption>' + esc(t(lang, 'strip')) + '</figcaption></figure>';
+    // n18b: the sprite loads only when the section comes near the viewport (TM_JS adds is-on); without script, noscript shows it
+    strip = '<figure dir="ltr"><ol class="ksat-strip" style="--ksat-u:url(' + img + ')">' + li.join('') + '</ol><noscript><style>.ksat-strip .ksat-tile:not(.is-none){background-image:var(--ksat-u)}</style></noscript><figcaption>' + esc(t(lang, 'strip')) + '</figcaption></figure>';
+    tmach = timeMachine(rec, months, lang, fd, img, stageLabels(est, lang));
+    if (!tmach) strip = strip.replace('class="ksat-strip"', 'class="ksat-strip is-on"');
   }
   let ch = '';
   if (ix) {
@@ -210,5 +254,6 @@ export function satSection(meta, id, prom, fx, lang, fd, trk, tl) {   // tl(date
   const rows = months.map((m, i) => '<tr><td>' + esc(fd(m)) + '</td><td>' + esc(rec.dt[i] ? fd(rec.dt[i]) : t(lang, 'cloudy')) + '</td><td>' + pc(rec.c[i]) + '</td><td>' + pc(rec.b[i]) + '</td><td>' + pc(rec.r[i]) + '</td><td>' + (ix ? pt(ix.y[i]) : '') + '</td></tr>').reverse().join('');
   const table = clearN ? '<details><summary>' + esc(t(lang, 'tbl')) + '</summary><div class="tw"><table><thead><tr>' + th.map(h => '<th>' + esc(h) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div></details>' : '';
   const spc = meta.space ? spaceHtml(meta.space, id, lang, fd, milestones(prom, fx || {}), { cloudy: n - clearN, n }) : '';
-  return CSS + '<div class="ksat"><p class="ki">' + esc(t(lang, 'intro')) + '</p>' + sum + ch + strip + '<p class="ksat-lim">' + esc(t(lang, 'lim')) + '</p>' + srcLine + table + spc + '</div>';
+  const stg = stageHtml(est, lang, fd, id);
+  return CSS + (strip ? TM_CSS : '') + '<div class="ksat"><p class="ki">' + esc(t(lang, 'intro')) + '</p>' + sum + tmach + ch + strip + '<p class="ksat-lim">' + esc(t(lang, 'lim')) + '</p>' + srcLine + table + spc + stg + '</div>';
 }

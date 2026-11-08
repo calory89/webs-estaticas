@@ -4,6 +4,34 @@
   {
    "date": "2026-11-08",
    "kind": "shipped",
+   "text": "Construction stage estimate on 125 project pages: one stage per month from satellite, radar and mapped buildings, with confidence and reasons",
+   "tl": {
+    "es": "Estimación de la fase de obra en 125 proyectos: una fase por mes a partir de satélite, radar y edificios cartografiados, con confianza y motivos",
+    "fr": "Estimation de l'étape du chantier sur 125 projets : une étape par mois d'après satellite, radar et bâtiments cartographiés, avec confiance et raisons",
+    "de": "Geschätzter Baufortschritt auf 125 Projektseiten: eine Phase pro Monat aus Satellit, Radar und kartierten Gebäuden, mit Sicherheit und Gründen",
+    "nl": "Geschatte bouwfase op 125 projectpagina's: één fase per maand uit satelliet, radar en gekarteerde gebouwen, met zekerheid en redenen",
+    "ru": "Оценка стадии строительства на 125 проектах: стадия на каждый месяц по спутнику, радару и зданиям на карте, с уверенностью и причинами",
+    "zh": "125 个项目页新增施工阶段估计：根据卫星、雷达和已测绘建筑给出每月阶段，并附可信度和原因",
+    "ar": "تقدير مرحلة البناء في 125 صفحة مشروع: مرحلة لكل شهر من القمر الصناعي والرادار والمباني على الخريطة، مع درجة الثقة والأسباب"
+   }
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "shipped",
+   "text": "Time machine on project pages: slide through every clear monthly Sentinel-2 image of the site",
+   "tl": {
+    "es": "Máquina del tiempo en los proyectos: recorra cada imagen mensual despejada de Sentinel-2 de la obra",
+    "fr": "Machine à remonter le temps sur les projets : parcourez chaque image Sentinel-2 mensuelle claire du site",
+    "de": "Zeitmaschine auf Projektseiten: durch jedes klare monatliche Sentinel-2-Bild der Baustelle blättern",
+    "nl": "Tijdmachine op projectpagina's: schuif door elk helder maandelijks Sentinel-2-beeld van de bouwplaats",
+    "ru": "Машина времени на страницах проектов: листайте все ясные ежемесячные снимки Sentinel-2 участка",
+    "zh": "项目页新增时光机：逐月浏览该地块每张晴朗的 Sentinel-2 影像",
+    "ar": "آلة الزمن في صفحات المشاريع: تصفّح كل صورة شهرية صافية من Sentinel-2 للموقع"
+   }
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "shipped",
    "text": "Contract addendum builder: protective clauses for 9 markets, each with the law article it relies on, as PDF or Word, made in your browser",
    "tl": {
     "es": "Generador de anexo al contrato: cláusulas de protección para 9 mercados, cada una con su artículo de ley, en PDF o Word, creado en su navegador",
