@@ -406,8 +406,8 @@ function renderFix(){
   var dx = (FIX.lng - P.pin.lng) * 111320 * k * S, dy = -(FIX.lat - P.pin.lat) * 110540 * S;
   var svg = '<svg viewBox="-110 -110 220 220" role="img" aria-label="' + esc(t('dist') + ': ' + nf(d) + ' m') + '"><circle class="gr" r="100"/><circle class="pl" r="' + (150 * S).toFixed(1) + '"/><circle class="pin" r="3.5"/>' +
     '<circle class="acc" cx="' + dx.toFixed(1) + '" cy="' + dy.toFixed(1) + '" r="' + Math.max(3, Math.min(100, (FIX.accuracy_m || 0) * S)).toFixed(1) + '"/><circle class="me" cx="' + dx.toFixed(1) + '" cy="' + dy.toFixed(1) + '" r="5"/>' +
-    '<text x="0" y="106" text-anchor="middle">' + esc(nf(Math.round(span)) + ' m') + '</text></svg>';
-  el.innerHTML = '<div class="sv-fix"><figure style="margin:0">' + svg + '<figcaption class="k-xs k-muted">' + esc(t('plot')) + '. ' + esc(t('you')) + ' ●</figcaption></figure><dl class="k-ledger"><dt>' + esc(t('dist')) + '</dt><dd><b class="k-num">' + nf(d) + ' m</b></dd><dt>' + esc(t('acc')) + '</dt><dd>± ' + nf(FIX.accuracy_m) + ' m</dd><dt>' + esc(t('inside')) + '</dt><dd><span class="k-badge ' + (inside ? 'k-badge--ok' : 'k-badge--warn') + '">' + esc(t(inside ? 'yes' : 'no')) + '</span></dd><dt>GPS</dt><dd class="k-num">' + FIX.lat + ', ' + FIX.lng + '</dd></dl></div>';
+    '<text x="0" y="106" text-anchor="middle">r ' + esc(nf(Math.round(span)) + ' m') + '</text></svg>';
+  el.innerHTML = '<div class="sv-fix"><figure style="margin:0">' + svg + '<figcaption class="k-xs k-muted">' + esc(t('plot')) + '. ' + esc(t('you')) + ' <span style="color:var(--k-brand,#FF5B14)" aria-hidden="true">●</span></figcaption></figure><dl class="k-ledger"><dt>' + esc(t('dist')) + '</dt><dd><b class="k-num" dir="ltr">' + nf(d) + ' m</b></dd><dt>' + esc(t('acc')) + '</dt><dd dir="ltr">± ' + nf(FIX.accuracy_m) + ' m</dd><dt>' + esc(t('inside')) + '</dt><dd><span class="k-badge ' + (inside ? 'k-badge--ok' : 'k-badge--warn') + '">' + esc(t(inside ? 'yes' : 'no')) + '</span></dd><dt>GPS</dt><dd class="k-num" dir="ltr">' + FIX.lat + ', ' + FIX.lng + '</dd></dl></div>';
 }
 
 // ---------- 3. photos: SHA-256 and EXIF (DateTimeOriginal, GPS) read here
@@ -471,7 +471,7 @@ $('svSeal').addEventListener('click', function(){
 function renderSealed(d){
   var c = d.vc.credentialSubject.checked_by_kolaboro, st = d.stamp || {};
   $('svOut').innerHTML = '<div class="k-alert k-alert--ok" role="status"><b>' + esc(t('sealed')) + '</b></div><dl class="k-ledger" style="margin-top:12px"><dt>' + esc(t('root')) + '</dt><dd><code class="k-num" style="word-break:break-all">' + esc(d.root) + '</code></dd>' +
-    (c.position_distance_m != null ? '<dt>' + esc(t('dist')) + '</dt><dd>' + nf(c.position_distance_m) + ' m</dd>' : '') +
+    (c.position_distance_m != null ? '<dt>' + esc(t('dist')) + '</dt><dd dir="ltr">' + nf(c.position_distance_m) + ' m</dd>' : '') +
     (c.device_clock_minus_server_s != null ? '<dt>UTC</dt><dd>' + esc(c.received_at) + '. ' + esc(t('clock', { s: nf(c.device_clock_minus_server_s) })) + '</dd>' : '<dt>UTC</dt><dd>' + esc(c.received_at) + '</dd>') +
     '<dt>' + esc(t('stamp')) + '</dt><dd>' + esc(st.status === 'submitted' ? t('stOk') : t('stNo')) + '</dd></dl>' +
     '<div class="sv-act"><button type="button" class="k-btn k-btn--dark" id="svJ">' + esc(t('json')) + '</button><button type="button" class="k-btn" id="svP">' + esc(t('pdf')) + '</button><a class="k-btn k-btn--ghost" href="/verify/#vc">' + esc(t('verify')) + '</a></div><p class="k-xs k-muted">' + esc(t('pdfn')) + '</p>';
