@@ -108,7 +108,7 @@ def kartaview(p):
         if f.get('status') != 'active' or f.get('visibility', 'public') != 'public': continue
         try: lat, lng = float(f['lat']), float(f['lng'])
         except Exception: continue
-        th = f.get('imageLthUrl') or f.get('fileurlLTh') or f.get('imageThUrl')
+        th = f.get('imageThUrl') or f.get('fileurlTh')   # 200 px, no EXIF (the large thumbnail is 1280 px with EXIF)
         if not https(th): continue
         dm = dist(p['lat'], p['lng'], lat, lng)
         if dm > R_PH: continue
