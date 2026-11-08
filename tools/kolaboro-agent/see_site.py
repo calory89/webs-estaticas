@@ -3,8 +3,8 @@
 
   see_site.py street OUT.json   Open street-level photos within 200 m of each reliable project pin, newest first, at most one per
                                 sequence: Panoramax (meta-catalogue api.panoramax.xyz, CC BY-SA 4.0 / Licence Ouverte 2.0 per photo),
-                                KartaView (api.kartaview.org, CC BY-SA 4.0) and Wikimedia Commons geotagged files (only CC0, public
-                                domain, CC BY 4.0 and CC BY-SA 4.0, which allow credit through a link to the file page).
+                                KartaView (api.kartaview.org, CC BY-SA 4.0) and Wikimedia Commons street-level files imported from
+                                Mapillary (only CC0, public domain, CC BY 4.0 and CC BY-SA 4.0, which allow credit through a link to the file page).
                                 We keep the source page, capture date, distance, camera heading, licence and the source's own thumbnail
                                 URL (kolaboro.com shows that thumbnail unchanged through /api/x/see/ph/<ID>/<n>.jpg). No EXIF, no names.
   see_site.py 3d OUT.json       Overture Maps building footprints (latest release, ODbL) within 250 m of each pin, in metres from the
@@ -127,6 +127,13 @@ COMMONS_OK = [(re.compile(r'^cc0'), 'CC0 1.0', 'https://creativecommons.org/publ
               (re.compile(r'^cc by 4\.0$'), 'CC BY 4.0', 'https://creativecommons.org/licenses/by/4.0/')]
 
 
+# geotagged Commons files that are clearly not a view of a place (food, people, documents, maps, logos) are left out
+# only street-level imagery: Commons files imported from Mapillary (the import keeps the CC BY-SA 4.0 licence and the capture date);
+# other geotagged files near a pin turned out to be birds, food and artworks, not views of the site
+COMMONS_STREET = re.compile(r'^File:Mapillary[ _]')
+COMMONS_SKIP = re.compile(r'(?i)salad|food|dish|meal|menu|cake|coffee|drink|portrait|selfie|people|person|logo|map\b|diagram|plan\b|floor ?plan|document|screenshot|poster|ticket|interior|museum exhibit|painting')
+
+
 def commons(p):
     q = urllib.parse.urlencode({'action': 'query', 'format': 'json', 'formatversion': 2, 'generator': 'geosearch', 'ggscoord': '%f|%f' % (p['lat'], p['lng']),
                                 'ggsradius': R_PH, 'ggslimit': 50, 'ggsnamespace': 6, 'prop': 'imageinfo|coordinates', 'iiprop': 'url|extmetadata|mime',
@@ -137,6 +144,7 @@ def commons(p):
     for pg in pages:
         ii = (pg.get('imageinfo') or [{}])[0]; co = (pg.get('coordinates') or [{}])[0]
         if ii.get('mime') not in ('image/jpeg', 'image/png', 'image/webp'): continue
+        if not COMMONS_STREET.match(pg.get('title') or '') or COMMONS_SKIP.search(pg.get('title') or ''): continue
         em = ii.get('extmetadata') or {}
         ln = re.sub('<[^>]+>', '', (em.get('LicenseShortName') or {}).get('value', '')).strip().lower()
         ok = next((o for o in COMMONS_OK if o[0].search(ln)), None)
@@ -186,7 +194,7 @@ def run_street(a):
            'sources': {
                'panoramax': {'name': 'Panoramax', 'url': 'https://panoramax.fr/', 'api': PX, 'licence': 'per photo: CC BY-SA 4.0 or Licence Ouverte 2.0 (etalab-2.0)', 'note': 'Federated open street-level imagery; faces and number plates are blurred by the hosting instance.'},
                'kartaview': {'name': 'KartaView', 'url': 'https://kartaview.org/', 'api': 'https://api.kartaview.org/2.0/photo/', 'licence': 'CC BY-SA 4.0', 'licence_url': 'https://creativecommons.org/licenses/by-sa/4.0/', 'note': 'Open street-level imagery; faces and number plates are blurred by KartaView.'},
-               'commons': {'name': 'Wikimedia Commons', 'url': 'https://commons.wikimedia.org/', 'api': 'https://commons.wikimedia.org/w/api.php (geosearch)', 'licence': 'only files under CC0, public domain, CC BY 4.0 or CC BY-SA 4.0', 'note': 'Geotagged files; the author and full licence are on each file page.'},
+               'commons': {'name': 'Wikimedia Commons', 'url': 'https://commons.wikimedia.org/', 'api': 'https://commons.wikimedia.org/w/api.php (geosearch)', 'licence': 'only files under CC0, public domain, CC BY 4.0 or CC BY-SA 4.0', 'note': 'Only street-level files imported from Mapillary (title starting "Mapillary"); the author and full licence are on each file page.'},
                'not_used': {'Mapillary': 'needs an account access token', 'Google Street View': 'needs an API key and its terms do not allow storing results'}},
            'method': ('For each pin, every photo the three sources return within %d m, newest capture first, at most one photo per sequence (a drive or walk of many frames counts once), '
                       'at most %d per project. d: metres from the pin; az: the direction the camera faced, degrees from north, where recorded; to: the direction from the photo to the pin. '
@@ -219,12 +227,18 @@ def run_3d(a):
     con = duckdb.connect()
     con.sql("install httpfs; load httpfs")
     con.sql("create secret (type s3, key_id '', secret '', region 'us-west-2')")
-    for q in ("set parquet_metadata_cache=true", "set memory_limit='%s'" % os.environ.get('DUCKDB_MEM', '6GB'), "set threads=%s" % os.environ.get('DUCKDB_THREADS', '8'), "set enable_progress_bar=false"):
+    for q in ("set parquet_metadata_cache=%s" % os.environ.get("PARQUET_CACHE", "true"), "set memory_limit='%s'" % os.environ.get('DUCKDB_MEM', '6GB'), "set threads=%s" % os.environ.get('DUCKDB_THREADS', '8'), "set enable_progress_bar=false"):
         try: con.sql(q)
         except Exception as e: print('duckdb setting', q, str(e)[:80])
     src = "read_parquet('s3://%s/release/%s/theme=buildings/type=building/*.parquet')" % (OV, rel)
     res, t0 = {}, time.time()
+    ck = os.environ.get('CHECKPOINT')   # optional jsonl of finished projects, so a killed run can resume
+    if ck and os.path.exists(ck):
+        for ln in open(ck):
+            try: o = json.loads(ln); res[o['id']] = o['r']
+            except Exception: pass
     for p in P:
+        if p['id'] in res: continue
         lat, lng = p['lat'], p['lng']
         dy = (R_3D + 40) / 110540.0; dx = (R_3D + 40) / (111320.0 * math.cos(math.radians(lat)))
         q = ("select id, geometry, height, num_floors, min_height, [s.dataset for s in sources] as ds from " + src +
@@ -252,6 +266,8 @@ def run_3d(a):
         L.sort(key=lambda b: b['d'])
         res[p['id']] = {'lat': lat, 'lng': lng, 'dec': p['dec'], 'n': len(L), 'n_in': sum(b['i'] for b in L), 'cut': len(L) > MAX_B,
                         'b': [{k_: v_ for k_, v_ in b.items() if v_ is not None and k_ != 'd'} for b in L[:MAX_B]]}
+        if ck:
+            with open(ck, 'a') as fh: fh.write(json.dumps({'id': p['id'], 'r': res[p['id']]}, separators=(',', ':')) + '\n')
         print('3d', p['id'], len(L), round(time.time() - t0), 's')
     out = {'v': 1, 'updated': datetime.date.today().isoformat(), 'release': rel, 'radius_m': R_3D, 'circle_m': R_IN, 'unit': 'c: footprint outline as x,y pairs in half-metres east and north of the pin',
            'source': {'name': 'Overture Maps Foundation, buildings theme, release ' + rel, 'url': 'https://docs.overturemaps.org/guides/buildings/',
