@@ -1,7 +1,7 @@
 {
  "version": "company-graph-1",
- "updated": "2026-11-04",
- "generated_at": "2026-11-04T13:15:03Z",
+ "updated": "2026-11-08",
+ "generated_at": "2026-11-08T12:12:20Z",
  "register": {
   "name": "Companies House (United Kingdom)",
   "url": "https://find-and-update.company-information.service.gov.uk",
@@ -17,17 +17,17 @@
   "ambiguous": 0,
   "not_found": 2,
   "directors": 56,
-  "appointments_read": 1766,
+  "appointments_read": 1767,
   "officers_truncated": 7,
-  "network_companies": 1253,
+  "network_companies": 1254,
   "projects_with_graph": 17,
   "requests": 312,
-  "retries": 1
+  "retries": 0
  },
  "complete": true,
  "archive": {
   "lines": 312,
-  "root": "5cf911826f2162405794506c717a7a0950fa6af7bab38d6320234bfde5747ae5",
+  "root": "ff11c464fcdb40cde95e8e2de6f8a96996878b491ef4dcd26ed091bded34a446",
   "line_format": "sha256 time kind (kind replaces the URL, which would identify a company)"
  },
  "method": [
@@ -3496,8 +3496,8 @@
      "type": "director",
      "label": "Director A",
      "corporate": false,
-     "appointments_total": 8,
-     "appointments_read": 8,
+     "appointments_total": 9,
+     "appointments_read": 9,
      "truncated": false
     },
     {
@@ -3529,8 +3529,8 @@
      "id": "ADA",
      "type": "group",
      "status": "active",
-     "count": 7,
-     "label": "7 active companies"
+     "count": 8,
+     "label": "8 active companies"
     },
     {
      "id": "ADB",
@@ -3578,7 +3578,7 @@
     }
    ],
    "network": {
-    "active": 13,
+    "active": 14,
     "dissolved": 1,
     "dissolved_within_2y": 1,
     "dissolved_last_5y": 1,
@@ -3589,7 +3589,7 @@
    "directors": 3,
    "summary": [
     "1 of 1 named company matched exactly one company on Companies House.",
-    "Its 3 current directors have been directors (now or in the past) of 14 other UK companies: 13 active, 1 dissolved (1 of them within 2 years of incorporation), 0 in liquidation, administration or receivership.",
+    "Its 3 current directors have been directors (now or in the past) of 15 other UK companies: 14 active, 1 dissolved (1 of them within 2 years of incorporation), 0 in liquidation, administration or receivership.",
     "Director B of the developing company has been a director of 1 company dissolved within 2 years of incorporation."
    ],
    "partial": false,
