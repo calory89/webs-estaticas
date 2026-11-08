@@ -4,6 +4,20 @@
   {
    "date": "2026-11-08",
    "kind": "shipped",
+   "text": "Website health on project and developer pages: daily homepage check, TLS certificate and domain expiry dates, and public ids shared between developer websites (also in the developer graph)",
+   "tl": {
+    "es": "Salud de la web en páginas de proyectos y promotores: comprobación diaria de la página de inicio, fechas de caducidad del certificado TLS y del dominio, e ids públicos compartidos entre webs de promotores (también en el grafo)",
+    "fr": "Santé des sites sur les pages projets et promoteurs : contrôle quotidien de la page d'accueil, dates d'expiration du certificat TLS et du domaine, et identifiants publics partagés entre sites de promoteurs (aussi dans le graphe)",
+    "de": "Website-Zustand auf Projekt- und Bauträgerseiten: tägliche Prüfung der Startseite, Ablaufdaten von TLS-Zertifikat und Domain sowie öffentliche Kennungen, die Bauträger-Websites teilen (auch im Graphen)",
+    "nl": "Websitegezondheid op project- en ontwikkelaarspagina's: dagelijkse controle van de homepage, vervaldata van TLS-certificaat en domein, en openbare id's die websites van ontwikkelaars delen (ook in de grafiek)",
+    "ru": "Состояние сайтов на страницах проектов и застройщиков: ежедневная проверка главной страницы, сроки TLS-сертификата и домена, общие публичные id сайтов застройщиков (также на графе)",
+    "zh": "项目和开发商页面上的网站状况：每日检查首页、TLS 证书和域名到期日期，以及开发商网站之间共享的公开 ID（也在开发商网络图中）",
+    "ar": "حالة المواقع في صفحات المشاريع والمطورين: فحص يومي للصفحة الرئيسية، وتواريخ انتهاء شهادة TLS والنطاق، والمعرّفات العامة المشتركة بين مواقع المطورين (وفي مخطط الشبكة أيضاً)"
+   }
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "shipped",
    "text": "Radar through the clouds: Sentinel-1 monthly series on 28 project pages where clouds hide the site",
    "tl": {
     "es": "Radar a través de las nubes: serie mensual Sentinel-1 en 28 proyectos donde las nubes tapan la obra",

@@ -14,6 +14,7 @@
 //   POST /api/x/j/push/run                  the change. GET /api/x/j/push/selftest runs the RFC 8291 Appendix A test vector live.
 //   GET  /api/x/j/push/status
 import { json, rpc, sha, anthropic, signBody, openData, deskReview, pageParts } from './kolaboro.js';
+import { webStates, webDiff } from './kbx_web.js';   // batch 18 (n18a): developer website health in the daily alert state
 import { MAP } from './kbx_j_map.js';
 
 export const PATHS = /^\/api\/x\/j\//;
@@ -494,6 +495,7 @@ export function diffOf(a, b) {   // plain-language list of what changed, most im
   if (a.vscore !== b.vscore) L.push('Independently confirmed checks: ' + fmt(a.vscore) + ' → ' + fmt(b.vscore));
   if (a.sat !== b.sat && b.sat) L.push('Satellite: ' + b.sat);
   if (a.register !== b.register && b.register) L.push('Official register: ' + b.register);
+  L.push(...webDiff(a.web, b.web));
   if ((b.drift || 0) > (a.drift || 0) && b.drift_last) L.push('Developer page changed: ' + b.drift_last.label + (b.drift_last.from != null || b.drift_last.to != null ? ' ' + fmt(b.drift_last.from) + ' → ' + fmt(b.drift_last.to) : ''));
   return L;
 }
@@ -515,13 +517,13 @@ async function pushRun(req, env, ctx) {
   if (!env.VAPID_PRIVATE_KEY) return out({ ok: true, skipped: 'sending key not installed' });
   const key = await jobKey(env);
   let job; try { job = await rpc('kolaboro_push_job', { p_key: key }); } catch (e) { return out({ ok: true, skipped: 'alerts table not installed' }); }
-  const [d, drift] = await Promise.all([openData(), loadJson('/data/promise-drift.json')]);
+  const [d, drift, wst] = await Promise.all([openData(), loadJson('/data/promise-drift.json'), webStates(env).catch(() => ({}))]);
   const by = {}; (d.cases || []).forEach(c => { by[c.id] = c; });
   const prev = job.states || {}, subs = job.subs || [], watched = new Set(); subs.forEach(s => (s.projects || []).forEach(p => watched.add(p)));
   const states = {}, changes = {};
   watched.forEach(id => {
     const c = by[id]; if (!c) return;
-    const now = stateOf(c, drift); states[id] = now;
+    const now = stateOf(c, drift); if (wst[id]) now.web = wst[id]; states[id] = now;
     if (prev[id]) { const L = diffOf(prev[id], now); if (L.length) changes[id] = L; }   // first sight of a project only records its state
   });
   let sent = 0, failed = 0; const gone = [], okIds = [];
