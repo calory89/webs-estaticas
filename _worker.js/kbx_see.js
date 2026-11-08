@@ -173,7 +173,7 @@ export function seeHtml(sd, id, lang, fd, name) {
       ' <a class="src" href="/data/site-3d.json">' + esc(t(lang, 'method')) + ', ' + esc(t(lang, 'upd', { d: fd(sd.d3.updated) })) + '</a></p>' +
       '<script>(function(){var b=document.querySelectorAll(".ksee-go");b.forEach(function(x){x.addEventListener("click",function(){var r=x.closest(".ksee-3d");if(!r||r.dataset.on)return;r.dataset.on="1";x.setAttribute("aria-expanded","true");x.disabled=true;' +
       'var m=r.querySelector(".ksee-map");m.hidden=false;m.innerHTML="<div class=\\"msg\\" role=\\"status\\"><span class=\\"k-spin\\"></span>&nbsp;"+r.dataset.l.replace(/</g,"&lt;")+"</div>";' +
-      'if(window.kSee3D){window.kSee3D(r);return;}var s=document.createElement("script");s.src="/api/x/see/3d.js?v=' + ML + '-3";s.onload=function(){window.kSee3D(r)};s.onerror=function(){m.innerHTML="<div class=\\"msg\\">"+r.dataset.e.replace(/</g,"&lt;")+"</div>"};document.head.appendChild(s);});});})();</script>';
+      'if(window.kSee3D){window.kSee3D(r);return;}var s=document.createElement("script");s.src="/api/x/see/3d.js?v=' + ML + '-4";s.onload=function(){window.kSee3D(r)};s.onerror=function(){m.innerHTML="<div class=\\"msg\\">"+r.dataset.e.replace(/</g,"&lt;")+"</div>"};document.head.appendChild(s);});});})();</script>';
   }
   return h + '</div>';
 }
@@ -198,7 +198,7 @@ window.kSee3D=function(r){
   var map=new maplibregl.Map({container:m,center:[lng,lat],zoom:16.2,pitch:58,bearing:-24,maxPitch:78,minZoom:13,maxZoom:19,attributionControl:false,cooperativeGestures:phone,
    style:{version:8,sources:{
     osm:{type:"raster",tiles:["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],tileSize:256,maxzoom:19,attribution:'<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap contributors</a>'},
-    dem:{type:"raster-dem",tiles:["https://s3.amazonaws.com/elevation-tiles-prod/terrarium/{z}/{x}/{y}.png"],tileSize:256,maxzoom:15,encoding:"terrarium",attribution:'<a href="https://github.com/tilezen/joerd/blob/master/docs/attribution.md" target="_blank" rel="noopener">Terrain Tiles (Mapzen, AWS Open Data)</a>'},
+    dem:{type:"raster-dem",tiles:["https://elevation-tiles-prod.s3.amazonaws.com/terrarium/{z}/{x}/{y}.png"],tileSize:256,maxzoom:13,encoding:"terrarium",attribution:'<a href="https://github.com/tilezen/joerd/blob/master/docs/attribution.md" target="_blank" rel="noopener">Terrain Tiles (Mapzen, AWS Open Data)</a>'},
     b:{type:"geojson",data:{type:"FeatureCollection",features:F},attribution:'<a href="https://docs.overturemaps.org/attribution/" target="_blank" rel="noopener">Overture Maps (ODbL)</a>'},
     c:{type:"geojson",data:{type:"FeatureCollection",features:[{type:"Feature",properties:{t:"c"},geometry:{type:"LineString",coordinates:circle(lat,lng,150,96)}},{type:"Feature",properties:{t:"a"},geometry:{type:"LineString",coordinates:circle(lat,lng,acc,72)}}]}},
     p:{type:"geojson",data:{type:"Feature",properties:{},geometry:{type:"Point",coordinates:[lng,lat]}}}},
