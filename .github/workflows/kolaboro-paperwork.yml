@@ -1,0 +1,51 @@
+name: Kolaboro paperwork
+# Batch 18 (n18d). Daily, no model calls, no cost:
+#  - price history: prices printed on the page we track per named project, from our sealed copies (page-history-*.json) and
+#    Internet Archive captures since 2017 (CDX API, polite: one query per address, few captures, pauses, budget, stop on 429)
+#  - planning: official planning applications / building permits within 200 m of reliable pins (England: planning.data.gov.uk,
+#    OGL v3.0; New York City: DOB NOW filings; City of Miami: building permits). No personal data is copied.
+# Writes kolaboro.com/data/price-history.json and /data/planning.json (tools/kolaboro-agent/paperwork.py).
+on:
+  schedule:
+    - cron: '17 4 * * *'
+  push:
+    branches: [main]
+    paths: ['tools/kolaboro-agent/paperwork.py', '.github/workflows/kolaboro-paperwork.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-paperwork
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 50
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            tools/kolaboro-agent
+            tools/kolaboro-reliability
+      - name: Inputs
+        run: |
+          mkdir -p "$RUNNER_TEMP/in" "$RUNNER_TEMP/out"
+          curl -fsS --retry 3 https://kolaboro.com/data/named.json -o "$RUNNER_TEMP/in/named.json"
+          for k in 0 1 2; do curl -fsS --retry 3 "https://kolaboro.com/data/page-history-$k.json?r=$GITHUB_RUN_ID" -o "$RUNNER_TEMP/in/page-history-$k.json"; done
+          curl -fsS "https://kolaboro.com/data/price-history.json?r=$GITHUB_RUN_ID" -o "$RUNNER_TEMP/in/price-history.json" || echo '{}' > "$RUNNER_TEMP/in/price-history.json"
+          curl -fsS "https://kolaboro.com/data/planning.json?r=$GITHUB_RUN_ID" -o "$RUNNER_TEMP/in/planning.json" || echo '{}' > "$RUNNER_TEMP/in/planning.json"
+          ls -la "$RUNNER_TEMP/in"
+      - name: Planning records near the site
+        timeout-minutes: 15
+        run: python3 tools/kolaboro-agent/paperwork.py planning "$RUNNER_TEMP/in/named.json" "$RUNNER_TEMP/in/planning.json" "$RUNNER_TEMP/out/planning.json"
+      - name: Price history
+        timeout-minutes: 30
+        run: python3 tools/kolaboro-agent/paperwork.py prices "$RUNNER_TEMP/in/named.json" "$RUNNER_TEMP/in" "$RUNNER_TEMP/in/price-history.json" "$RUNNER_TEMP/out/price-history.json" 360
+      - name: Publish to kolaboro.com
+        run: |
+          ls -la "$RUNNER_TEMP/out"
+          python3 -c "import json,sys; [json.load(open(f)) for f in sys.argv[1:]]" "$RUNNER_TEMP/out/planning.json" "$RUNNER_TEMP/out/price-history.json"
+          bash tools/kolaboro-reliability/publish.sh "kolaboro.com: price history and planning records $(date -u +%FT%H:%MZ)" \
+            "$RUNNER_TEMP/out/price-history.json=_s/kolaboro.com/data/price-history.json" \
+            "$RUNNER_TEMP/out/planning.json=_s/kolaboro.com/data/planning.json"
