@@ -140,11 +140,12 @@ const FC_CSS = '<style id="kfc17">.kfc{margin:28px 0 0;padding:20px 22px;border:
   '.kfc p{margin:8px 0;line-height:1.55;max-width:72ch}.kfc .tw{margin:12px 0}.kfc td.n,.kfc th.n{text-align:end;font-variant-numeric:tabular-nums;white-space:nowrap}.kfc-bar{display:inline-block;vertical-align:middle;width:72px;height:8px;border-radius:4px;background:var(--k-sunken,#E8ECEA);margin-inline-start:8px;overflow:hidden}' +
   '.kfc-bar i{display:block;height:100%;width:var(--v);background:var(--k-sea,#155C75)}.kfc .k-alert{margin:12px 0}.kfc-fine{font-size:var(--k-fs-xs,13px);color:var(--k-muted,#56636F)}.kfc-links a{margin-inline-end:16px}.kfc-fig{margin:14px 0;direction:ltr}.kfc-fig svg{width:100%;height:auto;max-width:640px;display:block}' +
   '.kfc-fig figcaption{font-size:var(--k-fs-xs,13px);color:var(--k-muted)}.kfc-ln{fill:none;stroke:var(--k-sea,#155C75);stroke-width:2.5}.kfc-bd{fill:var(--k-sea-soft,#DCEBF0);stroke:none}.kfc-gr{stroke:var(--k-line,#D5DBD8);stroke-width:1}.kfc-tx{fill:var(--k-muted,#56636F);font-size:12px;font-family:inherit}' +
+  '.kfc-m{max-width:860px}.kfc-m h2{font-size:var(--k-fs-2xl,28px);margin:0 0 8px}.kfc .k-table-wrap{margin:12px 0}.kfc .k-table td.n,.kfc .k-table th.n{text-align:end}' +
   '@media(max-width:640px){.kfc{padding:16px}.kfc-bar{width:48px}}</style>';
-function rowsTable(rows, lang, rel, prj) {
+function rowsTable(rows, lang, rel, prj, kt) {
   if (!rows.length) return '';
   const lbl = r => rel ? (r.k === 0 ? t(lang, 'k0') : t(lang, 'kn', { m: r.k })) : esc(monthName(prj.first + r.k, lang)) + ' <small class="kfc-fine">(' + esc(r.k === 0 ? t(lang, 'k0') : t(lang, 'kn', { m: r.k })) + ')</small>';
-  return '<div class="tw"><table><thead><tr><th>' + esc(t(lang, 'th_by')) + '</th><th class="n">' + esc(t(lang, 'th_p')) + '</th><th class="n">' + esc(t(lang, 'th_ci')) + '</th></tr></thead><tbody>' +
+  return (kt ? '<div class="k-table-wrap"><table class="k-table k-table--dense"><thead><tr><th scope="col">' : '<div class="tw"><table><thead><tr><th>') + esc(t(lang, 'th_by')) + '</th><th class="n">' + esc(t(lang, 'th_p')) + '</th><th class="n">' + esc(t(lang, 'th_ci')) + '</th></tr></thead><tbody>' +
     rows.map(r => '<tr><td>' + (rel ? esc(lbl(r)) : lbl(r)) + '</td><td class="n">' + pct(r.p, lang) + '<span class="kfc-bar" aria-hidden="true"><i style="--v:' + Math.round(r.p * 100) + '%"></i></span></td><td class="n">' + pct(r.lo, lang) + ' - ' + pct(r.hi, lang) + '</td></tr>').join('') + '</tbody></table></div>';
 }
 function gLine(g, lang) { return t(lang, g.level === 'developer' ? 'g_dev' : g.level === 'all' ? 'g_all' : 'g_mk', { n: nf(g.n, lang), k: nf(g.k, lang), g: g.name }); }
@@ -173,7 +174,8 @@ const methodLink = lang => '<p class="kfc-fine kfc-links"><a href="' + pre(lang)
 
 function curveSvg(g, lang) {   // step curve of the share handed over (1 - S) with its 95% band, 0 to 24 months
   const W = 640, H = 250, L = 46, Rr = 14, T = 14, Bt = 40, maxK = 24;
-  const X = m => L + (W - L - Rr) * m / maxK, Y = p => T + (H - T - Bt) * (1 - p);
+  const top = Math.max(.2, Math.ceil(Math.max(0, ...g.steps.filter(s => s.t <= maxK).map(s => 1 - s.S * Math.exp(-Z * Math.sqrt(s.v)))) * 10 + .5) / 10), yT = [0, .25, .5, .75, 1].map(f => f * Math.min(1, top));
+  const X = m => L + (W - L - Rr) * m / maxK, Y = p => T + (H - T - Bt) * (1 - p / Math.min(1, top));
   const lim = KS.slice().reverse().find(k => risk(g.R, k) >= MIN_R); const end = lim == null ? 0 : Math.min(maxK, Math.max(lim, ...g.steps.filter(s => s.t <= maxK && s.n >= MIN_R).map(s => s.t)));
   const pts = [{ t: 0, S: 1, v: 0 }, ...g.steps.filter(s => s.t <= end)];
   let line = '', up = [], dn = [];
@@ -183,7 +185,7 @@ function curveSvg(g, lang) {   // step curve of the share handed over (1 - S) wi
     line += (i ? 'L' : 'M') + X(s.t).toFixed(1) + ' ' + Y(F).toFixed(1) + 'L' + X(nx).toFixed(1) + ' ' + Y(F).toFixed(1);
     up.push(X(s.t).toFixed(1) + ' ' + Y(hi).toFixed(1), X(nx).toFixed(1) + ' ' + Y(hi).toFixed(1)); dn.unshift(X(nx).toFixed(1) + ' ' + Y(lo).toFixed(1), X(s.t).toFixed(1) + ' ' + Y(lo).toFixed(1));
   });
-  const gy = [0, .25, .5, .75, 1].map(p => '<line class="kfc-gr" x1="' + L + '" x2="' + (W - Rr) + '" y1="' + Y(p).toFixed(1) + '" y2="' + Y(p).toFixed(1) + '"/><text class="kfc-tx" x="' + (L - 6) + '" y="' + (Y(p) + 4).toFixed(1) + '" text-anchor="end">' + Math.round(p * 100) + '%</text>').join('');
+  const gy = yT.map(p => '<line class="kfc-gr" x1="' + L + '" x2="' + (W - Rr) + '" y1="' + Y(p).toFixed(1) + '" y2="' + Y(p).toFixed(1) + '"/><text class="kfc-tx" x="' + (L - 6) + '" y="' + (Y(p) + 4).toFixed(1) + '" text-anchor="end">' + Math.round(p * 100) + '%</text>').join('');
   const gx = KS.map(k => '<text class="kfc-tx" x="' + X(k).toFixed(1) + '" y="' + (H - Bt + 18) + '" text-anchor="middle">' + k + '</text>').join('');
   return '<figure class="kfc-fig"><svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="' + esc(t(lang, 'm_curve')) + '">' + gy + gx +
     '<polygon class="kfc-bd" points="' + up.concat(dn).join(' ') + '"/><path class="kfc-ln" d="' + line + '"/>' +
@@ -195,9 +197,9 @@ export async function fcMarketHtml(env, marketKey) {   // English: /m/<market>/ 
     const key = String(marketKey || '').toLowerCase().replace(/-/g, ' ');
     const g = [...fc.markets.values()].find(m => String(m.name).toLowerCase() === key || encodeURIComponent(String(m.name).toLowerCase().replace(/\s+/g, '-')) === String(marketKey).toLowerCase());
     if (!g || COI.test(g.name)) return '';
-    let b = '<section class="sec" id="forecast"><div class="wrap"><div class="kfc"><h2>' + esc(t(lang, 'fc_h')) + ': ' + esc(g.name) + '</h2><p>' + esc(t(lang, 'fc_intro')) + '</p>';
-    if (g.enough) b += '<p>' + esc(gLine(g, lang)) + ' ' + srcMark(fc, lang) + '</p>' + rowsTable(g.by.filter(Boolean), lang, true) + curveSvg(g, lang);
-    else b += '<div class="k-alert" role="status"><span>' + esc(t(lang, 'nd', { g: g.name, n: g.n, k: g.k, N: MIN_N, K: MIN_K })) + '</span></div><p><b>' + esc(t(lang, 'pool')) + '</b> ' + esc(gLine(fc.all, lang)) + ' ' + srcMark(fc, lang) + '</p>' + rowsTable(fc.all.by.filter(Boolean), lang, true);
+    let b = '<section class="sec" id="forecast"><div class="wrap"><div class="kfc kfc-m"><h2>' + esc(t(lang, 'fc_h')) + ': ' + esc(g.name) + '</h2><p>' + esc(t(lang, 'fc_intro')) + '</p>';
+    if (g.enough) b += '<p>' + esc(gLine(g, lang)) + ' ' + srcMark(fc, lang) + '</p>' + rowsTable(g.by.filter(Boolean), lang, true, null, 1) + curveSvg(g, lang);
+    else b += '<div class="k-alert" role="status"><span>' + esc(t(lang, 'nd', { g: g.name, n: g.n, k: g.k, N: MIN_N, K: MIN_K })) + '</span></div><p><b>For context only, all markets pooled:</b> ' + fc.all.n + ' projects whose first promised handover has passed; ' + fc.all.k + ' recorded as handed over. This is not an estimate for ' + esc(g.name) + '. ' + srcMark(fc, lang) + '</p>' + rowsTable(fc.all.by.filter(Boolean), lang, true, null, 1);
     return b + '<p class="kfc-fine">' + esc(t(lang, 'bias')) + '</p>' + methodLink(lang) + '</div></div></section>' + FC_CSS;
   } catch (e) { return ''; }
 }
@@ -272,7 +274,7 @@ const PG_CSS = '<style id="kfc17p">.kfc-pg .k-phead{padding-block:var(--k-7,48px
   '.kfc-pg .k-sec{padding-block:var(--k-6,32px)}.kfc-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:0;border:1px solid var(--k-line);border-radius:var(--k-r-lg,14px);background:var(--k-surface);overflow:hidden}' +
   '.kfc-stats>div{padding:18px 20px;box-shadow:inset -1px -1px 0 var(--k-line)}.kfc-stats b{display:block;font-size:var(--k-fs-3xl,36px);line-height:1.05;font-weight:700;font-variant-numeric:tabular-nums;color:var(--k-ink)}.kfc-stats span{display:block;font-weight:600;margin-top:4px}.kfc-stats small{display:block;color:var(--k-muted);margin-top:2px;font-size:var(--k-fs-sm,15px)}' +
   '.kfc-stats .k-src{display:inline-block;margin-top:8px}.kfc-pg td.k-n,.kfc-pg th.k-n{text-align:end}.kfc-wk{display:inline-block;vertical-align:middle;height:8px;border-radius:4px;background:var(--k-sea,#155C75);margin-inline-start:8px;min-width:2px}.kfc-pg tr.is-now td{background:var(--k-sea-soft)}' +
-  '.kfc-pg .k-ledger dd{font-variant-numeric:tabular-nums}.kfc-pg .kfc-fine{font-size:var(--k-fs-xs,13px);color:var(--k-muted)}.kfc-pg .k-prose p{max-width:68ch}.kfc-pg .kfc-links a{margin-inline-end:16px}@media(max-width:640px){.kfc-stats b{font-size:var(--k-fs-2xl,28px)}}</style>';
+  '.kfc-pg .k-ledger dd{font-variant-numeric:tabular-nums}.kfc-pg .kfc-fine{font-size:var(--k-fs-xs,13px);color:var(--k-muted)}.kfc-meth p,.kfc-meth ul{max-width:68ch;line-height:1.6}.kfc-meth h2{font-size:var(--k-fs-xl,24px);margin:var(--k-6,32px) 0 var(--k-2,8px)}.kfc-meth h2:first-child{margin-top:0}.kfc-pg .kfc-links a{margin-inline-end:16px}@media(max-width:640px){.kfc-stats b{font-size:var(--k-fs-2xl,28px)}}</style>';
 const dur = (s, lang) => s == null ? t(lang, 'o_none') : s >= 90 ? nf(Math.round(s / 6) / 10, lang) + ' ' + t(lang, 'min') : nf(s, lang) + ' ' + t(lang, 's');
 const N = (v, lang) => v == null ? '<span class="k-muted">' + esc(t(lang, 'o_none')) + '</span>' : nf(v, lang);
 function openBody(d, lang) {
@@ -307,7 +309,7 @@ function openBody(d, lang) {
     '<section class="k-sec"><div class="k-wrap"><h2>' + esc(t(lang, 'o_s_week')) + '</h2>' + week + '</div></section>' +
     '<section class="k-sec"><div class="k-wrap"><h2>' + esc(t(lang, 'o_s_seal')) + '</h2>' + sealed + '</div></section>' +
     '<section class="k-sec"><div class="k-wrap"><h2>' + esc(t(lang, 'o_s_ship')) + '</h2>' + ship + '</div></section>' + slot +
-    '<section class="k-sec"><div class="k-wrap k-prose"><h2>' + esc(t(lang, 'o_s_src')) + '</h2><p>' + esc(t(lang, 'o_src_t')) + '</p><p class="kfc-links"><a href="/api/x/fc/open">/api/x/fc/open</a> <a href="/data/traction.json">/data/traction.json</a> <span>CC BY 4.0</span></p></div></section></div>';
+    '<section class="k-sec"><div class="k-wrap kfc-meth"><h2>' + esc(t(lang, 'o_s_src')) + '</h2><p>' + esc(t(lang, 'o_src_t')) + '</p><p class="kfc-links"><a href="/api/x/fc/open">/api/x/fc/open</a> <a href="/data/traction.json">/data/traction.json</a> <span>CC BY 4.0</span></p></div></section></div>';
 }
 function methodBody(fc, lang) {
   const rows = [fc.all, ...[...fc.markets.values()].filter(g => g.n > 0).sort((a, b) => b.n - a.n || a.name.localeCompare(b.name))];
@@ -317,8 +319,8 @@ function methodBody(fc, lang) {
   const tb = tbl(rows.slice(0, 13)) + (rows.length > 13 ? '<div class="k-disc"><details><summary>+' + nf(rows.length - 13, lang) + '</summary>' + tbl(rows.slice(13)) + '</details></div>' : '');
   const P = (h, p) => '<h2>' + esc(t(lang, h)) + '</h2><p>' + esc(p) + '</p>';
   return '<div class="kfc-pg"><section class="k-sec"><div class="k-wrap"><div class="k-phead"><p class="k-crumb"><a href="' + pre(lang) + '/">Kolaboro</a> / <a href="/index/delays/">' + esc(t(lang, 'm_crumb')) + '</a></p><h1>' + esc(t(lang, 'm_title')) + '</h1><p class="lead">' + esc(t(lang, 'm_lead')) + '</p></div>' +
-    '<div class="kfc">' + curveSvg(fc.all, lang) + '<p>' + esc(gLine(fc.all, lang)) + ' ' + srcMark(fc, lang) + '</p>' + rowsTable(fc.all.by.filter(Boolean), lang, true) + '<p class="kfc-fine">' + esc(t(lang, 'bias')) + '</p></div></div></section>' +
-    '<section class="k-sec"><div class="k-wrap k-prose">' + P('m_h_data', t(lang, 'm_data')) + P('m_h_time', t(lang, 'm_time')) + '<p class="kfc-fine">' + esc(t(lang, 'm_excl', { n: nf(fc.cnt.excluded, lang) })) + '</p>' + P('m_h_est', t(lang, 'm_est')) +
+    '<div class="kfc kfc-m">' + curveSvg(fc.all, lang) + '<p>' + esc(gLine(fc.all, lang)) + ' ' + srcMark(fc, lang) + '</p>' + rowsTable(fc.all.by.filter(Boolean), lang, true, null, 1) + '<p class="kfc-fine">' + esc(t(lang, 'bias')) + '</p></div></div></section>' +
+    '<section class="k-sec"><div class="k-wrap kfc-meth">' + P('m_h_data', t(lang, 'm_data')) + P('m_h_time', t(lang, 'm_time')) + '<p class="kfc-fine">' + esc(t(lang, 'm_excl', { n: nf(fc.cnt.excluded, lang) })) + '</p>' + P('m_h_est', t(lang, 'm_est')) +
     P('m_h_rule', t(lang, 'm_rule', { N: MIN_N, K: MIN_K, ND: MIN_ND, R: MIN_R })) + '<h2>' + esc(t(lang, 'm_h_lim')) + '</h2><ul><li>' + esc(t(lang, 'bias')) + '</li><li>' + esc(t(lang, 'm_lim2')) + '</li><li>' + esc(t(lang, 'm_lim3')) + '</li></ul></div></section>' +
     '<section class="k-sec"><div class="k-wrap"><h2>' + esc(t(lang, 'm_h_now')) + '</h2>' + tb + '<p class="kfc-fine kfc-links"><a href="/api/x/fc/curves">' + esc(t(lang, 'm_api')) + '</a> <a href="/data/promises.json">/data/promises.json</a> <a href="/data/bali-cases.json">/data/bali-cases.json</a> <span>CC BY 4.0</span></p></div></section></div>';
 }
