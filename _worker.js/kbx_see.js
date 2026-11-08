@@ -120,7 +120,7 @@ export const seeHeading = lang => t(lang, 'h');
 const SRCN = { panoramax: 'Panoramax', kartaview: 'KartaView', commons: 'Wikimedia Commons' };
 const adiff = (a, b) => { const d = Math.abs(a - b) % 360; return d > 180 ? 360 - d : d; };
 
-const CSS = '<style id="ksee-css">.ksee h3{margin:20px 0 6px;font-size:var(--k-fs-lg,1.2rem)}.ksee-ph{list-style:none;margin:12px 0;padding:0;display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr))}' +
+const CSS = '<style id="ksee-css">.ksee h3{margin:20px 0 6px;font-size:var(--k-fs-lg,1.2rem)}.ksee-ph{list-style:none;margin:12px 0;padding:0;display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(min(100%,150px),1fr))}@media (min-width:700px){.ksee-ph{grid-template-columns:repeat(auto-fill,minmax(220px,1fr))}}' +
   '.ksee-ph li{margin:0;border:1px solid var(--k-line,var(--line));border-radius:var(--k-r-md,10px);overflow:hidden;background:var(--k-surface,#fff);display:flex;flex-direction:column}' +
   '.ksee-ph a.im{display:block;aspect-ratio:4/3;background:var(--k-sunken,#E8ECEA)}.ksee-ph img{display:block;width:100%;height:100%;object-fit:cover}.ksee-ph .tx{padding:10px 12px 12px;font-size:var(--k-fs-xs,.82rem);color:var(--k-ink-2,inherit);display:flex;flex-direction:column;gap:4px}' +
   '.ksee-ph .tx b{font-size:var(--k-fs-sm,.92rem);color:var(--k-ink,inherit)}.ksee-ph .tx a{color:var(--k-sea,#155C75)}.ksee-lnk{display:flex;flex-wrap:wrap;gap:8px 16px;margin:6px 0 0;padding:0;list-style:none}.ksee-lnk a{color:var(--k-sea,#155C75)}' +
@@ -129,7 +129,7 @@ const CSS = '<style id="ksee-css">.ksee h3{margin:20px 0 6px;font-size:var(--k-f
   '.ksee-lg{list-style:none;margin:10px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:6px 18px;font-size:var(--k-fs-xs,.82rem);color:var(--k-ink-2,inherit)}.ksee-lg li{display:flex;align-items:center;gap:6px}' +
   '.ksee-lg i{display:inline-block;width:16px;height:12px;border-radius:2px;flex:none}.ksee-lg .k{background:#155C75}.ksee-lg .u{background:#9FB4BF}.ksee-lg .c{border:2px solid #FF5B14;border-radius:50%;width:12px}.ksee-lg .a{border:2px dashed #13222E;border-radius:50%;width:12px}' +
   '.ksee-lg .p{background:#FF5B14;border:2px solid #fff;border-radius:50%;width:10px;height:10px;box-shadow:0 0 0 1px #13222E}.ksee .k-btn{min-height:44px}.ksee-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin:8px 0}' +
-  ':root[data-theme=dark] .ksee-lg .a{border-color:#E6ECEF}</style>';
+  ':root[data-theme=dark] .ksee-lg .a{border-color:#E6ECEF}.ksee-map summary{list-style:none}.ksee-map summary::-webkit-details-marker{display:none}.ksee-map summary::after,.ksee-map summary::before{content:none!important;display:none!important}</style>';
 
 // inside the named project page: section "street level and 3D"
 export function seeHtml(sd, id, lang, fd, name) {
@@ -173,7 +173,7 @@ export function seeHtml(sd, id, lang, fd, name) {
       ' <a class="src" href="/data/site-3d.json">' + esc(t(lang, 'method')) + ', ' + esc(t(lang, 'upd', { d: fd(sd.d3.updated) })) + '</a></p>' +
       '<script>(function(){var b=document.querySelectorAll(".ksee-go");b.forEach(function(x){x.addEventListener("click",function(){var r=x.closest(".ksee-3d");if(!r||r.dataset.on)return;r.dataset.on="1";x.setAttribute("aria-expanded","true");x.disabled=true;' +
       'var m=r.querySelector(".ksee-map");m.hidden=false;m.innerHTML="<div class=\\"msg\\" role=\\"status\\"><span class=\\"k-spin\\"></span>&nbsp;"+r.dataset.l.replace(/</g,"&lt;")+"</div>";' +
-      'if(window.kSee3D){window.kSee3D(r);return;}var s=document.createElement("script");s.src="/api/x/see/3d.js?v=' + ML + '-2";s.onload=function(){window.kSee3D(r)};s.onerror=function(){m.innerHTML="<div class=\\"msg\\">"+r.dataset.e.replace(/</g,"&lt;")+"</div>"};document.head.appendChild(s);});});})();</script>';
+      'if(window.kSee3D){window.kSee3D(r);return;}var s=document.createElement("script");s.src="/api/x/see/3d.js?v=' + ML + '-3";s.onload=function(){window.kSee3D(r)};s.onerror=function(){m.innerHTML="<div class=\\"msg\\">"+r.dataset.e.replace(/</g,"&lt;")+"</div>"};document.head.appendChild(s);});});})();</script>';
   }
   return h + '</div>';
 }
@@ -212,7 +212,7 @@ window.kSee3D=function(r){
   map.addControl(new maplibregl.AttributionControl({compact:true}));
   map.addControl(new maplibregl.NavigationControl({visualizePitch:true}),"top-right");
   map.addControl(new maplibregl.FullscreenControl(),"top-right");
-  map.on("load",function(){try{map.setTerrain({source:"dem",exaggeration:1})}catch(e){}});
+  map.on("load",function(){try{map.setTerrain({source:"dem",exaggeration:1})}catch(e){}if(phone){var at=m.querySelector(".maplibregl-ctrl-attrib");if(at){at.classList.remove("maplibregl-compact-show");at.removeAttribute("open");}}});
   map.on("error",function(e){if(window.console&&e&&e.error&&!/tile|Failed to fetch|AJAXError/i.test(String(e.error.message||"")))console.warn("3D view",e.error.message);});
   var bt=document.createElement("button");bt.type="button";bt.className="k-btn k-btn--sm";bt.textContent=r.dataset.r;bt.addEventListener("click",function(){map.easeTo({center:[lng,lat],zoom:16.2,pitch:58,bearing:-24})});
   var bar=r.querySelector(".ksee-bar");if(bar){var g=r.querySelector(".ksee-go");if(g)g.remove();bar.prepend(bt);}

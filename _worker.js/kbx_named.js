@@ -29,7 +29,8 @@ import { seoLd } from './kbx_lastmod.js';   // batch 15 (s15b): true dateModifie
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v33';   // v33: street-level photos and 3D view section #ground (n18c)
+const CACHE_V = 'named-v34';   // v34: street photos two per row on phones, map attribution marker (n18c)
+//     // v33: street-level photos and 3D view section #ground (n18c)
 //     // v32: small price changes with 2 decimals, planning table labels (n18d)
 //   // v31: prices over time, headline only after a word like from or price (n18d)
 //   // v30: time machine and construction stage estimate in the from-space section (n18b)
