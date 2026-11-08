@@ -73,7 +73,7 @@ ARTICLES.append({"section":"news","slug":"new-direct-flights-bali-waingapu","dat
 <h2>What it means</h2>
 
 <p>In short: if you want the route to stay, use it. Schedules can change, so check the airline before you book.</p>"""},
-"es":{"title":"De Bali a Waingapu sin escalas: qué supone la ruta de TransNusa",
+"es":{"title":"Bali-Waingapu sin escalas: qué supone la ruta de TransNusa para Sumba",
  "dek":"Desde el 15 de julio, el este de Sumba tiene vuelo directo a Bali cuatro veces por semana. Lo difícil, dice el regente, es mantenerlo.",
  "body":"""<p>Durante años, ir de Bali al este de Sumba significaba hacer escala en Lombok o Kupang. Desde el <strong>15 de julio de 2026</strong>, TransNusa vuela <strong>Denpasar-Waingapu sin escalas</strong> cuatro veces por semana: martes, miércoles, viernes y sábado.</p>
 <p>El aeropuerto Ngurah Rai de Bali anunció la ruta junto a un nuevo vuelo Bali-Wakatobi, que empezó al día siguiente. Según ANTARA, el vuelo a Waingapu (8B-5652) sale de Bali a las 08:19, hora local, y el de vuelta (8B-5653) llega a Bali a las 12:24, en un avión Comac ARJ-21.</p>
