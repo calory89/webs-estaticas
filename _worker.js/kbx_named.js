@@ -25,7 +25,8 @@ import { seoLd } from './kbx_lastmod.js';   // batch 15 (s15b): true dateModifie
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v25';   // v25: delivery forecast in #delivery, answers to buyer questions on developer pages (n17c)
+const CACHE_V = 'named-v26';   // v26: radar and building footprints inside the from-space section (n17b)
+//   // v25: delivery forecast in #delivery, answers to buyer questions on developer pages (n17c)
 //   // v24: embed link and monthly market story links (s15a for s15c)
 //   // v23: country hub slug for 'X (USA)' and 'St X' (s15a)
 //   // v22: search-intent titles, short answer, freshness line, more FAQ, related pages, image objects (s15a)
@@ -594,7 +595,7 @@ export async function handle(req, u, env, ctx, shell) {
   if (key && kind === 'developers' && RESERVED.has(key)) return null;   // /developers/reply/ etc. stay static
   if (!p.endsWith('/')) return new Response(null, { status: 301, headers: { location: p + '/' + u.search, 'cache-control': 'public, max-age=86400' } });
   let ix; try { ix = await data(env); } catch (e) { return null; }
-  const ck = new Request(ORIGIN + '/__named_html/' + CACHE_V + '/' + encodeURIComponent(ix.updated + '|' + (ix.named.count || 0) + '|' + ix.P.length + '|' + (ix.named.updated || '') + '|r' + (key && kind === 'projects' ? await repliesPublished() : 0) + '|s' + (key && kind === 'projects' ? (((await satData(env).catch(() => null)) || {}).updated || '') : '')) + p);
+  const ck = new Request(ORIGIN + '/__named_html/' + CACHE_V + '/' + encodeURIComponent(ix.updated + '|' + (ix.named.count || 0) + '|' + ix.P.length + '|' + (ix.named.updated || '') + '|r' + (key && kind === 'projects' ? await repliesPublished() : 0) + '|s' + (key && kind === 'projects' ? (sd => (sd.updated || '') + '|' + ((sd.space || {}).v || ''))((await satData(env).catch(() => null)) || {}) : '')) + p);
   try { const hit = await caches.default.match(ck); if (hit) return new Response(hit.body, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'x-named-cache': 'hit', 'cache-control': 'no-cache' } }); } catch (e) {}
   const pg = await render(ix, key ? kind : 'i', key, lang, env, ctx);
   if (pg && key) try { await seoLd(pg, env, kind, key); } catch (e) {}

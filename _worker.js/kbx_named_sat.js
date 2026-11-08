@@ -4,6 +4,7 @@
 // (change index, built-up or bare share, surroundings) and one sprite of monthly true-colour thumbnails (/k/sat/proj/<id>.jpg,
 // served from the satellite packs by kbsat.js). Shown with the developer's promised dates (/data/promises.json and the
 // record's facts) on the same timeline. Server-rendered SVG, no client script. Projects without a series get no section.
+import { spaceData, spaceHtml } from './kbx_space.js';   // n17b: Sentinel-1 radar and Overture buildings, same circle
 const ORIGIN = 'https://kolaboro.com';
 let MEMO = null;
 export async function satData(env) {
@@ -12,6 +13,7 @@ export async function satData(env) {
   try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/construction-progress.json')); } catch (e) { r = null; }
   if (!r || !r.ok) { try { r = await fetch(ORIGIN + '/data/construction-progress.json', { cf: { cacheTtl: 300, cacheEverything: true } }); } catch (e) { r = null; } }
   const v = r && r.ok ? await r.json().catch(() => null) : null;
+  if (v) { try { v.space = await spaceData(env); } catch (e) { v.space = null; } }
   MEMO = { t: Date.now(), v }; return v;
 }
 
@@ -207,5 +209,6 @@ export function satSection(meta, id, prom, fx, lang, fd, trk, tl) {   // tl(date
   const th = t(lang, 'th'), pc = v => v == null ? '' : v + '%', pt = v => v == null ? '' : (v > 0 ? '+' : '') + v;
   const rows = months.map((m, i) => '<tr><td>' + esc(fd(m)) + '</td><td>' + esc(rec.dt[i] ? fd(rec.dt[i]) : t(lang, 'cloudy')) + '</td><td>' + pc(rec.c[i]) + '</td><td>' + pc(rec.b[i]) + '</td><td>' + pc(rec.r[i]) + '</td><td>' + (ix ? pt(ix.y[i]) : '') + '</td></tr>').reverse().join('');
   const table = clearN ? '<details><summary>' + esc(t(lang, 'tbl')) + '</summary><div class="tw"><table><thead><tr>' + th.map(h => '<th>' + esc(h) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div></details>' : '';
-  return CSS + '<div class="ksat"><p class="ki">' + esc(t(lang, 'intro')) + '</p>' + sum + ch + strip + '<p class="ksat-lim">' + esc(t(lang, 'lim')) + '</p>' + srcLine + table + '</div>';
+  const spc = meta.space ? spaceHtml(meta.space, id, lang, fd, milestones(prom, fx || {}), { cloudy: n - clearN, n }) : '';
+  return CSS + '<div class="ksat"><p class="ki">' + esc(t(lang, 'intro')) + '</p>' + sum + ch + strip + '<p class="ksat-lim">' + esc(t(lang, 'lim')) + '</p>' + srcLine + table + spc + '</div>';
 }

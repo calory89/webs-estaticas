@@ -5,6 +5,7 @@
 // No model calls. Projects in conflict-of-interest markets are not named (kbx_named.js data()), so they get no series here either.
 import { data } from './kbx_named.js';
 import { satData, index, milestones, BAND } from './kbx_named_sat.js';
+import { radarSeries } from './kbx_space.js';   // n17b: Sentinel-1 radar for cloudy sites (null elsewhere)
 
 export const PATHS = /^\/api\/x\/pay\/series\/[A-Za-z0-9-]{3,20}$/;
 const H = { 'content-type': 'application/json; charset=utf-8', 'access-control-allow-origin': '*', 'x-content-type-options': 'nosniff' };
@@ -31,6 +32,7 @@ export async function handle(req, u, env) {
     },
     updated: sat.updated, resolution_m: sat.resolution_m, radius_m: sat.radius_m,
     source: { attribution: sat.source.attribution, url: sat.source.url, licence_url: sat.source.licence_url, method: '/data/construction-progress.json' },
+    radar: radarSeries(sat.space, id),
     page_section: '/projects/' + x.s + '/#space',
   }));
 }
