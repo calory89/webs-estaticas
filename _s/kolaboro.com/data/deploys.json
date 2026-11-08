@@ -1,6 +1,19 @@
 {
  "deploys": [
   {
+   "at": "2026-11-08T21:56:09Z",
+   "commit": "b6916fb234573f161a760afb40ab49963af7262f",
+   "checks_passed": 32,
+   "checks_total": 32,
+   "failed": [],
+   "run": "https://github.com/calory89/webs-estaticas/actions/runs/42527372803",
+   "result": "pass",
+   "wait_s": 142,
+   "changes": [
+    "b6916fb23457"
+   ]
+  },
+  {
    "at": "2026-11-08T21:49:21Z",
    "commit": "eeab109cd5209f6a6d405d6943da281ee8395a65",
    "checks_passed": 32,
@@ -2748,22 +2761,6 @@
     "5b394720dec8",
     "c33f957b0ba6"
    ]
-  },
-  {
-   "at": "2026-11-03T13:15:41Z",
-   "commit": "88192a35ff5eff533e8769c080937fde04e04a92",
-   "checks_passed": 32,
-   "checks_total": 32,
-   "failed": [],
-   "run": "https://github.com/calory89/webs-estaticas/actions/runs/41642119615",
-   "result": "pass",
-   "wait_s": 185,
-   "changes": [
-    "eddf5f599bc0",
-    "40e1d843cfff",
-    "f61cec3d82a1",
-    "88192a35ff5e"
-   ]
   }
  ],
  "drills": [],
@@ -2771,13 +2768,13 @@
  "canary": "Cloudflare Pages sends each push to all visitors at once and offers no percentage canary, so none is claimed. A bad push can be visible for a few minutes until the rollback is live.",
  "rollback_mode": "Rollback: a git commit restoring the files changed since the last passing commit; Pages deploys it in about 1 to 2 minutes. An instant Cloudflare API rollback is built in but needs a Pages-scoped token, not configured yet.",
  "latest_checks": {
-  "at": "2026-11-08T21:49:21.399Z",
-  "commit": "eeab109cd5209f6a6d405d6943da281ee8395a65",
+  "at": "2026-11-08T21:56:09.497Z",
+  "commit": "b6916fb234573f161a760afb40ab49963af7262f",
   "checks": [
    {
     "name": "build: live commit",
     "ok": true,
-    "detail": "live eeab109cd520"
+    "detail": "live b6916fb23457"
    },
    {
     "name": "page /",
@@ -2822,7 +2819,7 @@
    {
     "name": "page /changelog/",
     "ok": true,
-    "detail": "200, 75796 bytes"
+    "detail": "200, 77892 bytes"
    },
    {
     "name": "page /docs/api/",
@@ -2936,7 +2933,7 @@
    }
   ]
  },
- "last_checked": "eeab109cd5209f6a6d405d6943da281ee8395a65",
- "last_good": "eeab109cd5209f6a6d405d6943da281ee8395a65",
- "updated": "2026-11-08T21:49:21Z"
+ "last_checked": "b6916fb234573f161a760afb40ab49963af7262f",
+ "last_good": "b6916fb234573f161a760afb40ab49963af7262f",
+ "updated": "2026-11-08T21:56:09Z"
 }
