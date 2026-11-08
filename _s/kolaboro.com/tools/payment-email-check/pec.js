@@ -60,8 +60,9 @@
       else if (ol.length >= 5 && new RegExp('(^|[.-])' + ol.replace(/[^a-z0-9]/g, '') + '([.-]|$)').test(labs.slice(0, labs.length - sl.length))) why = 'sub';
       if (why) r.look.push({ o: x, why: why, dist: dist });
     });
-    var rank = { glyph: 0, tld: 1, typo: 2, sub: 3, contains: 4 };
-    r.look.sort(function (a, b) { return (rank[a.why] - rank[b.why]) || (b.o.m - a.o.m) || (b.o.p - a.o.p); });
+    var rank = { glyph: 0, tld: 1, word: 2, typo: 3, sub: 4, contains: 5 };   // word: the name as a whole word (emaar-properties)
+    var rk = function (l) { return l.why === 'contains' && new RegExp('(^|-)' + labelOf(l.o.d) + '(-|$)').test(sl) ? rank.word : rank[l.why]; };
+    r.look.sort(function (a, b) { return (rk(a) - rk(b)) || (b.o.m - a.o.m) || (b.o.p - a.o.p); });
     r.look = r.look.slice(0, 3);
     return r;
   }
@@ -85,12 +86,15 @@
       /\btransferencia\b/i, /\bpago\b/i, /\bvirement\b/i, /\bpaiement\b/i, /[üu]berweisung/i, /\bzahlung\b/i, /\boverboeking\b/i, /\bbetaling\b/i, /перевод/i, /оплат/i, /汇款|转账|付款/, /تحويل|دفع|الدفعة/, /\btransfer\b/i, /\bpembayaran\b/i]
   };
   function wording(text) {
-    var o = { hits: {}, any: false }, t = String(text || '').slice(0, 200000);
+    var o = { hits: {}, any: false }, t = String(text || '').slice(0, 200000).replace(/\b[A-Z]{2}\d{2}(?: ?[A-Z0-9]{2,4}){2,8}\b/g, '[account number]');   // never quote an account number
     Object.keys(WD).forEach(function (k) {
       WD[k].forEach(function (rx) {
         var m = t.match(rx); if (!m) return;
-        var at = t.indexOf(m[0]), snip = t.slice(Math.max(0, at - 30), at + m[0].length + 30).replace(/\s+/g, ' ').trim();
-        snip = snip.replace(/\b[A-Z]{2}\d{2}[A-Z0-9 ]{10,32}\b/g, '[account number]').replace(/\b\d{8,}\b/g, '[number]');
+        var at = t.indexOf(m[0]), st = Math.max(0, at - 40), en = Math.min(t.length, at + m[0].length + 40), sp;
+        if (st > 0 && (sp = t.indexOf(' ', st)) > 0 && sp < at) st = sp + 1;   // whole words only
+        if (en < t.length && (sp = t.lastIndexOf(' ', en)) > at + m[0].length) en = sp;
+        var snip = t.slice(st, en).replace(/\s+/g, ' ').trim();
+        snip = snip.replace(/\b[A-Z]{2}\d{2}[A-Z0-9 ]{10,32}\b/g, '[account number]').replace(/\d[\d ]{6,}\d/g, '[number]');
         (o.hits[k] = o.hits[k] || []).push(snip);
       });
       if (o.hits[k]) { o.hits[k] = o.hits[k].filter(function (s, i, a) { return a.indexOf(s) === i; }).slice(0, 3); o.any = true; }
