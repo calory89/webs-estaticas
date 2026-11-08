@@ -148,7 +148,7 @@ def prices(text, limit=8):
         if any(abs(f['a'] - o['a']) < 3 for o in out):
             continue
         out.append(f)
-    head = next((f for f in out if f['k'] == 'price' and f['h']), None) or next((f for f in out if f['k'] == 'price'), None)
+    head = next((f for f in out if f['k'] == 'price' and f['h']), None)   # only a price introduced by a word like 'from' or 'price' is a headline
     uniq = []
     for f in out:
         key = (f['cur'], f['v'], f['k'])
@@ -247,7 +247,7 @@ def build_prices(named_p, ph_dir, prev_p, out_p, budget=int(sys.argv[6]) if len(
     doc = {'version': 'price-history-1', 'updated': time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()),
            'what': 'Prices printed on the page we track for each named project, by date of the copy: our sealed copies (SHA-256) and Internet Archive captures since 2017. Currency as printed, nothing converted.',
            'rules': ['A price is a currency sign or code next to an amount, exactly as printed on the page.',
-                     'Headline of a copy: the first price printed after a word such as "from", "price" or "starting" (8 languages); otherwise the first price printed.',
+                     'Headline of a copy: the first price printed after a word such as "from", "price" or "starting" (8 languages). A copy without such a word has no headline; its prices are still listed.',
                      'Amounts per square metre or square foot, rents and yields, and amounts too small to be a unit price (fees, deposits) are kept in the list with a label and never used as the headline.',
                      'Portal pages can show prices of other projects next to this one; each price keeps a short snippet of the text around it so you can see what it refers to.',
                      'Internet Archive is read politely: one CDX query per address, at most %d captures per address, %.1f s between requests, a budget of %d requests per run, stop on the first 429.' % (per, 1.5, budget)],
