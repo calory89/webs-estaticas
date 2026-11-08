@@ -934,6 +934,7 @@ def redirects():
         for l in LANGS:
             old = f"/{l}/{a['section']}/{a['slug']}/"
             if old != url_of(a, l): r[old] = url_of(a, l)
+            for o in (a.get("old_slugs") or {}).get(l, []): r[f"/{l}/{a['section']}/{o}/"] = url_of(a, l)
     write("/_redirects.json", json.dumps(r))
 
 SW_JS = "const V='tst-v1';\nself.addEventListener('install',e=>{self.skipWaiting()});\nself.addEventListener('activate',e=>{e.waitUntil(caches.keys().then(ks=>Promise.all(ks.filter(k=>k!==V).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});\nself.addEventListener('fetch',e=>{const r=e.request,u=new URL(r.url);if(r.method!=='GET'||u.origin!==location.origin||u.pathname.startsWith('/api/'))return;\n if(u.pathname.startsWith('/img/')){e.respondWith(caches.open(V).then(c=>c.match(r).then(m=>m||fetch(r).then(x=>{if(x.ok)c.put(r,x.clone());return x}))));return}\n if(r.mode==='navigate'||(r.headers.get('accept')||'').includes('text/html')){e.respondWith(fetch(r).then(x=>{if(x.ok){const y=x.clone();caches.open(V).then(c=>c.put(r,y))}return x}).catch(()=>caches.match(r).then(m=>m||caches.match('/'+(u.pathname.split('/')[1]||'en')+'/plan/')||new Response('<h1>Offline</h1>',{headers:{'content-type':'text/html'}}))))}});"

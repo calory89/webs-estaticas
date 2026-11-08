@@ -14,8 +14,8 @@ IMAGES = {
   "ai": false,
   "caption": {
    "en": "A plane takes off from Umbu Mehang Kunda (Mau Hau) airport, Waingapu.",
-   "es": "Un avión despega del aeropuerto Umbu Mehang Kunda (Mau Hau), en Waingapu.",
-   "id": "Pesawat lepas landas dari Bandara Umbu Mehang Kunda (Mau Hau), Waingapu."
+   "es": "Un avión despega del aeropuerto Umbu Mehang Kunda (Mau Hau) de Waingapu.",
+   "id": "Sebuah pesawat lepas landas dari Bandara Umbu Mehang Kunda (Mau Hau), Waingapu."
   }
  },
  "how-to-get-to-sumba-from-bali": {
@@ -56,7 +56,7 @@ IMAGES = {
   "ai": false,
   "caption": {
    "en": "High-roofed houses and stone tombs in Ratenggaro, Southwest Sumba.",
-   "es": "Casas de tejado alto y tumbas de piedra en Ratenggaro, Sumba Suroccidental.",
+   "es": "Casas de tejado alto y tumbas de piedra en el pueblo tradicional de Ratenggaro (Sumba Suroccidental).",
    "id": "Rumah beratap menara dan kubur batu di Kampung Adat Ratenggaro, Sumba Barat Daya."
   }
  },
@@ -70,7 +70,7 @@ IMAGES = {
   "ai": false,
   "caption": {
    "en": "Low tide and mangrove trees at Walakiri beach, East Sumba.",
-   "es": "Marea baja y manglares en la playa de Walakiri, Sumba Oriental.",
+   "es": "Manglares con la marea baja en la playa de Walakiri (Sumba Oriental).",
    "id": "Air surut dan pohon bakau di Pantai Walakiri, Sumba Timur."
   }
  },
@@ -84,7 +84,7 @@ IMAGES = {
   "ai": false,
   "caption": {
    "en": "The Wairinding hills, East Sumba.",
-   "es": "Las colinas de Wairinding, Sumba Oriental.",
+   "es": "Las colinas de Wairinding, en Sumba Oriental.",
    "id": "Bukit Wairinding, Sumba Timur."
   }
  },
@@ -98,8 +98,8 @@ IMAGES = {
   "ai": false,
   "caption": {
    "en": "The rock arch at Mbawana beach, Kodi, Southwest Sumba.",
-   "es": "El arco de roca de la playa de Mbawana, en Kodi, Sumba Suroccidental.",
-   "id": "Batu berlubang di Pantai Mbawana, Kodi, Sumba Barat Daya."
+   "es": "El arco de roca de la playa de Mbawana, en Kodi (Sumba Suroccidental).",
+   "id": "Batu karang berlubang di Pantai Mbawana, Kodi, Sumba Barat Daya."
   }
  },
  "1": {
@@ -126,7 +126,7 @@ IMAGES = {
   "ai": false,
   "caption": {
    "en": "Savanna meets the sea near Waingapu, East Sumba.",
-   "es": "La sabana llega hasta el mar cerca de Waingapu, Sumba Oriental.",
+   "es": "La sabana se encuentra con el mar cerca de Waingapu (Sumba Oriental).",
    "id": "Padang sabana bertemu laut di dekat Waingapu, Sumba Timur."
   }
  },
@@ -140,7 +140,7 @@ IMAGES = {
   "ai": false,
   "caption": {
    "en": "Savanna and coast at Puru Kambera, East Sumba. File photo.",
-   "es": "Sabana y costa en Puru Kambera, Sumba Oriental. Foto de archivo.",
+   "es": "Sabana y costa en Puru Kambera (Sumba Oriental). Foto de archivo.",
    "id": "Sabana dan pesisir di Puru Kambera, Sumba Timur. Foto arsip."
   }
  },
@@ -154,7 +154,7 @@ IMAGES = {
   "ai": false,
   "caption": {
    "en": "Waingapu port, East Sumba. File photo.",
-   "es": "El puerto de Waingapu, Sumba Oriental. Foto de archivo.",
+   "es": "El puerto de Waingapu, en Sumba Oriental. Foto de archivo.",
    "id": "Pelabuhan Waingapu, Sumba Timur. Foto arsip."
   }
  },
@@ -182,7 +182,7 @@ IMAGES = {
   "ai": false,
   "caption": {
    "en": "Weekuri lagoon, Southwest Sumba. File photo.",
-   "es": "La laguna de Weekuri, Sumba Suroccidental. Foto de archivo.",
+   "es": "La laguna de Weekuri, en Sumba Suroccidental. Foto de archivo.",
    "id": "Laguna Weekuri, Sumba Barat Daya. Foto arsip."
   }
  },
@@ -196,7 +196,7 @@ IMAGES = {
   "ai": false,
   "caption": {
    "en": "Praijing traditional village, West Sumba. File photo.",
-   "es": "El pueblo tradicional de Praijing, Sumba Occidental. Foto de archivo.",
+   "es": "El pueblo tradicional de Praijing, en Sumba Occidental. Foto de archivo.",
    "id": "Kampung Adat Praijing, Sumba Barat. Foto arsip."
   }
  },

@@ -431,10 +431,10 @@ G2 = {
 <h3>Enero: verde, caluroso y húmedo</h3>
 <p>El mes más lluvioso en el este. Las colinas están muy verdes, los ríos llenos y las cascadas en su máxima fuerza, aunque a menudo marrones de barro y demasiado bravas para acercarse. Los caminos de tierra hacia playas y aldeas remotas pueden quedar intransitables. Hay pocos visitantes; es un buen mes solo si eres flexible y no te importa viajar más despacio.</p>
 <h3>Febrero: la Pasola en el oeste</h3>
-<p>Sigue lloviendo, pero es el mes en que suelen celebrarse las primeras batallas rituales de la <a href="/es/culture/pasola-explained/">Pasola</a>, en las zonas de Kodi y Lamboya, al oeste. Las fechas las fijan los ancianos rato según la aparición de los gusanos marinos <em>nyale</em>, y a menudo se confirman solo una o dos semanas antes. En 2026 se celebró los días 9, 10 y 11 de febrero. Si planeas el viaje en torno a la Pasola, deja días de margen y reserva el transporte con tiempo.</p>
+<p>Sigue lloviendo, pero es el mes en que suelen celebrarse las primeras batallas rituales de la <a href="/es/culture/pasola-explained/">Pasola</a>, en las zonas de Kodi y Lamboya, al oeste. Las fechas las fijan los ancianos Rato según la aparición de los gusanos marinos <em>nyale</em>, y a menudo se confirman solo una o dos semanas antes. En 2026 se celebró los días 9, 10 y 11 de febrero. Si planeas el viaje en torno a la Pasola, deja días de margen y reserva el transporte con tiempo.</p>
 <h3>Marzo: la segunda Pasola y la isla más verde</h3>
 <p>La Pasola pasa a Wanokaka y Gaura, normalmente en marzo (en 2026, el 9, 10 y 11 de marzo). La lluvia afloja un poco a medida que avanza el mes. El paisaje alcanza su verde más intenso, algo que sorprende en una isla famosa por su sabana dorada. Las cascadas van llenas, y Matayangu en particular es espectacular después de llover.</p>
-<h3>Abril: comienza la mejor transición</h3>
+<h3>Abril: empieza la mejor época</h3>
 <p>La lluvia en Waingapu baja a la mitad, unos 70 mm. Las colinas siguen verdes, las cascadas siguen con caudal y las carreteras empiezan a secarse. Es un mes excelente para los fotógrafos y para quien quiera ver la isla verde sin lo peor de las lluvias. Las olas de las costas sur y oeste empiezan a crecer con el inicio de la temporada de mar de fondo del sur.</p>
 <h3>Mayo: del verde al oro</h3>
 <p>Uno de los mejores meses en conjunto. La lluvia se reduce a algún chubasco aislado, el cielo se despeja, cascadas como Lapopu y Tanggedu empiezan a bajar claras y es más seguro bañarse, y aparecen los primeros tonos dorados en la sabana del este. Todavía hay pocos visitantes.</p>
@@ -577,7 +577,7 @@ G2 = {
  "es": [
   ["¿Cuál es el mejor mes para viajar a Sumba?", "De junio a agosto el sol está casi garantizado y las carreteras están en mejor estado. Mayo y septiembre son casi igual de buenos y más tranquilos."],
   ["¿Cuándo es la temporada de lluvias en Sumba?", "Aproximadamente de diciembre a marzo, aunque las lluvias pueden empezar entre finales de octubre y diciembre. El este es más seco que el oeste."],
-  ["¿Cuándo se celebra la Pasola en Sumba?", "Normalmente en febrero en Kodi y Lamboya y en marzo en Wanokaka y Gaura. Los ancianos rato fijan las fechas según la aparición de los gusanos marinos nyale, a menudo con solo una o dos semanas de antelación."],
+  ["¿Cuándo se celebra la Pasola en Sumba?", "Normalmente en febrero en Kodi y Lamboya y en marzo en Wanokaka y Gaura. Los ancianos Rato fijan las fechas según la aparición de los gusanos marinos nyale, a menudo con solo una o dos semanas de antelación."],
   ["¿Cuándo están verdes las colinas de Sumba?", "Durante la temporada de lluvias y justo después, más o menos de finales de enero a abril. De julio a octubre la sabana se vuelve dorada."],
   ["¿Merece la pena ver las cascadas de Sumba en la estación seca?", "Sí. Llevan menos caudal, pero el agua está clara y bañarse es más seguro. En la temporada de lluvias tienen más fuerza, aunque suelen bajar marrones y cuesta acercarse."],
   ["¿Hay mucha gente en Sumba en julio y agosto?", "Es la época de mayor afluencia, pero la isla sigue siendo tranquila en comparación con Bali. Hay pocas habitaciones, así que reserva coche y alojamiento con semanas de antelación."]],

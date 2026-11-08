@@ -20,35 +20,35 @@ UI = {
         "disclosure":"The Sumba Times is published by Eco Beach City, which operates Villa Eco Beach on Sumba. We cover the whole island, including other hotels and projects.",
         "privacy":"We only use your email to send the letter. Unsubscribe in one click.","updated":"Published","coming":"New stories are added every day."},
  "es": {"tagline": "Noticias, cultura y viajes desde la isla de Sumba, Indonesia",
-        "sections": {"news":"Noticias","getting-here":"Cómo llegar","things-to-do":"Qué hacer y ver","culture":"Tribus y cultura","where-to-stay":"Dónde dormir","projects":"Proyectos","low-tide":"Marea baja"},
-        "section_desc": {"news":"Lo que pasa en Sumba: vuelos, carreteras, festivales y decisiones que afectan a la isla.",
-                         "getting-here":"Vuelos, aeropuertos y consejos prácticos para llegar a Sumba y moverse por ella.",
+        "sections": {"news":"Noticias","getting-here":"Cómo llegar","things-to-do":"Qué hacer y ver","culture":"Cultura y tradiciones","where-to-stay":"Dónde dormir","projects":"Proyectos","low-tide":"Marea baja"},
+        "section_desc": {"news":"La actualidad de Sumba: vuelos, carreteras, fiestas y decisiones que afectan a la isla.",
+                         "getting-here":"Vuelos, aeropuertos y consejos prácticos para llegar a Sumba y desplazarse por la isla.",
                          "things-to-do":"Playas, lagunas, cascadas y colinas que merecen el viaje.",
                          "culture":"El marapu, la Pasola, los tejidos ikat y los pueblos tradicionales de Sumba.",
                          "where-to-stay":"Todos los tipos de alojamiento de la isla, sin favoritismos.",
                          "projects":"Lo que se construye en Sumba, lo haga quien lo haga.",
-                         "low-tide":"Una carta semanal sobre vivir bien. Sin vender nunca nada."},
-        "published_by":"Publicado por Eco Beach City","read":"Leer","sources":"Fuentes","latest":"Lo último",
-        "top":"Noticia principal","more":"Más en The Sumba Times","home":"Portada","lang_name":"Español",
-        "sub_title":"Marea baja, cada domingo","sub_text":"Una carta corta a la semana sobre vivir bien, desde una isla con más caballos que semáforos. Gratis.",
-        "sub_ph":"Tu email","sub_btn":"Suscribirme","sub_ok":"Gracias. La próxima carta te llegará el domingo.","sub_err":"Algo ha fallado. Inténtalo de nuevo.",
-        "disclosure":"The Sumba Times lo publica Eco Beach City, que gestiona Villa Eco Beach en Sumba. Cubrimos toda la isla, incluidos otros hoteles y proyectos.",
-        "privacy":"Solo usamos tu email para enviarte la carta. Te das de baja con un clic.","updated":"Publicado","coming":"Cada día añadimos historias nuevas."},
+                         "low-tide":"Una carta semanal sobre el arte de vivir bien. Nunca vendemos nada."},
+        "published_by":"Publicado por Eco Beach City","read":"Leer más","sources":"Fuentes","latest":"Última hora",
+        "top":"Noticia principal","more":"Más de The Sumba Times","home":"Portada","lang_name":"Español",
+        "sub_title":"Marea baja, todos los domingos","sub_text":"Una carta breve a la semana sobre vivir bien, desde una isla con más caballos que semáforos. Gratis.",
+        "sub_ph":"Tu correo electrónico","sub_btn":"Suscribirme","sub_ok":"Gracias. La próxima carta te llegará el domingo.","sub_err":"Algo ha fallado. Inténtalo de nuevo.",
+        "disclosure":"The Sumba Times es una publicación de Eco Beach City, empresa que gestiona Villa Eco Beach en Sumba. Cubrimos toda la isla, incluidos otros hoteles y proyectos.",
+        "privacy":"Solo usamos tu correo para enviarte la carta. Puedes darte de baja con un clic.","updated":"Publicado","coming":"Cada día publicamos noticias nuevas."},
  "id": {"tagline": "Berita, budaya, dan perjalanan dari Pulau Sumba, Indonesia",
-        "sections": {"news":"Berita","getting-here":"Cara ke Sumba","things-to-do":"Wisata","culture":"Suku & budaya","where-to-stay":"Tempat menginap","projects":"Proyek","low-tide":"Air Surut"},
-        "section_desc": {"news":"Apa yang terjadi di Sumba: penerbangan, jalan, festival, dan keputusan yang memengaruhi pulau ini.",
-                         "getting-here":"Penerbangan, bandara, dan saran praktis untuk tiba di Sumba dan berkeliling.",
+        "sections": {"news":"Berita","getting-here":"Cara ke Sumba","things-to-do":"Wisata","culture":"Budaya & tradisi","where-to-stay":"Tempat menginap","projects":"Proyek","low-tide":"Air Surut"},
+        "section_desc": {"news":"Kabar terkini dari Sumba: penerbangan, jalan, festival, dan kebijakan yang berdampak pada pulau ini.",
+                         "getting-here":"Penerbangan, bandara, dan saran praktis untuk menuju Sumba dan berkeliling pulau.",
                          "things-to-do":"Pantai, laguna, air terjun, dan bukit yang layak dikunjungi.",
                          "culture":"Marapu, Pasola, tenun ikat, dan kampung adat Sumba.",
-                         "where-to-stay":"Semua jenis penginapan di pulau ini, disajikan secara adil.",
-                         "projects":"Apa yang sedang dibangun di Sumba, oleh siapa pun.",
-                         "low-tide":"Surat mingguan tentang hidup yang baik. Tanpa jualan."},
-        "published_by":"Diterbitkan oleh Eco Beach City","read":"Baca","sources":"Sumber","latest":"Terbaru",
+                         "where-to-stay":"Semua jenis penginapan di pulau ini, tanpa pilih kasih.",
+                         "projects":"Semua yang sedang dibangun di Sumba, siapa pun pembangunnya.",
+                         "low-tide":"Surat mingguan tentang menjalani hidup dengan baik. Tanpa promosi."},
+        "published_by":"Diterbitkan oleh Eco Beach City","read":"Baca selengkapnya","sources":"Sumber","latest":"Terbaru",
         "top":"Berita utama","more":"Lainnya dari The Sumba Times","home":"Beranda","lang_name":"Bahasa Indonesia",
-        "sub_title":"Air Surut, setiap Minggu","sub_text":"Satu surat singkat setiap minggu tentang hidup yang baik, dari pulau yang punya lebih banyak kuda daripada lampu lalu lintas. Gratis.",
-        "sub_ph":"Email Anda","sub_btn":"Berlangganan","sub_ok":"Terima kasih. Surat berikutnya akan tiba hari Minggu.","sub_err":"Terjadi kesalahan. Silakan coba lagi.",
+        "sub_title":"Air Surut, setiap Minggu","sub_text":"Satu surat singkat setiap minggu tentang menjalani hidup dengan baik, dari pulau yang punya lebih banyak kuda daripada lampu lalu lintas. Gratis.",
+        "sub_ph":"Email Anda","sub_btn":"Berlangganan","sub_ok":"Terima kasih. Surat berikutnya akan sampai kepada Anda pada hari Minggu.","sub_err":"Terjadi kesalahan. Silakan coba lagi.",
         "disclosure":"The Sumba Times diterbitkan oleh Eco Beach City, yang mengelola Villa Eco Beach di Sumba. Kami meliput seluruh pulau, termasuk hotel dan proyek lain.",
-        "privacy":"Email Anda hanya dipakai untuk mengirim surat. Berhenti berlangganan dengan satu klik.","updated":"Terbit","coming":"Cerita baru ditambahkan setiap hari."},
+        "privacy":"Email Anda hanya kami gunakan untuk mengirim surat ini. Anda bisa berhenti berlangganan dengan satu klik.","updated":"Terbit","coming":"Berita baru terbit setiap hari."},
 }
 
 S_FLIGHT = [("ANTARA News Bali, 17 Jul 2026","https://bali.antaranews.com/berita/409805/bandara-ngurah-rai-tambah-dua-rute-baru-ke-waingapu-dan-wakatobi"),
@@ -74,22 +74,22 @@ ARTICLES.append({"section":"news","slug":"new-direct-flights-bali-waingapu","dat
 
 <p>In short: if you want the route to stay, use it. Schedules can change, so check the airline before you book.</p>"""},
 "es":{"title":"Bali-Waingapu sin escalas: qué supone la ruta de TransNusa para Sumba",
- "dek":"Desde el 15 de julio, el este de Sumba tiene vuelo directo a Bali cuatro veces por semana. Lo difícil, dice el regente, es mantenerlo.",
- "body":"""<p>Durante años, ir de Bali al este de Sumba significaba hacer escala en Lombok o Kupang. Desde el <strong>15 de julio de 2026</strong>, TransNusa vuela <strong>Denpasar-Waingapu sin escalas</strong> cuatro veces por semana: martes, miércoles, viernes y sábado.</p>
-<p>El aeropuerto Ngurah Rai de Bali anunció la ruta junto a un nuevo vuelo Bali-Wakatobi, que empezó al día siguiente. Según ANTARA, el vuelo a Waingapu (8B-5652) sale de Bali a las 08:19, hora local, y el de vuelta (8B-5653) llega a Bali a las 12:24, en un avión Comac ARJ-21.</p>
+ "dek":"Desde el 15 de julio, Sumba Oriental tiene vuelo directo a Bali cuatro veces por semana. Lo difícil, advierte el regente, será mantenerlo.",
+ "body":"""<p>Durante años, viajar de Bali a Sumba Oriental obligaba a hacer escala en Lombok o Kupang. Desde el <strong>15 de julio de 2026</strong>, TransNusa vuela <strong>Denpasar-Waingapu sin escalas</strong> cuatro veces por semana: martes, miércoles, viernes y sábado.</p>
+<p>El aeropuerto Ngurah Rai de Bali anunció la ruta junto con un nuevo vuelo Bali-Wakatobi, inaugurado al día siguiente. Según ANTARA, el vuelo a Waingapu (8B-5652) sale de Bali a las 08:19, hora local, y el de vuelta (8B-5653) llega a Bali a las 12:24, en un avión Comac ARJ-21.</p>
 <h2>Por qué importa el vuelo Bali-Waingapu</h2>
-<p>El oeste de Sumba ya tenía vuelos diarios a Tambolaka. El este, con sus sabanas, la colina de Wairinding, la playa de Walakiri y la cascada de Tanggedu, era más difícil de alcanzar. Con un vuelo directo se puede hacer la ruta clásica: <strong>entrar por un aeropuerto y salir por el otro</strong>, cruzando la isla por carretera.</p>
+<p>El oeste de Sumba ya tenía vuelos diarios a Tambolaka. El este, con sus sabanas, la colina de Wairinding, la playa de Walakiri y la cascada de Tanggedu, era de más difícil acceso. Con un vuelo directo se puede hacer la ruta clásica: <strong>entrar por un aeropuerto y salir por el otro</strong>, cruzando la isla por carretera.</p>
 <h2>"Lo difícil no es que llegue el avión"</h2>
-<p>El regente del este de Sumba, Umbu Lili Pekuwali, celebró la ruta, pero avisó de que el verdadero reto es mantenerla. El director del aeropuerto pidió apoyo para que los nuevos vuelos duren y crezcan.</p>
+<p>El regente de Sumba Oriental, Umbu Lili Pekuwali, celebró la ruta, pero advirtió de que el verdadero reto es mantenerla. El director del aeropuerto pidió apoyo para que los nuevos vuelos se consoliden y crezcan.</p>
 <h2>Qué significa</h2>
 
-<p>En resumen: si quieres que la ruta siga, úsala. Los horarios pueden cambiar, así que confírmalos con la aerolínea antes de reservar.</p>"""},
+<p>En resumen: si quieres que la ruta se mantenga, utilízala. Los horarios pueden cambiar, así que confírmalos con la aerolínea antes de reservar.</p>"""},
 "id":{"title":"Bali-Waingapu tanpa transit: arti rute TransNusa bagi Sumba Timur",
- "dek":"Sejak 15 Juli, Sumba Timur punya penerbangan langsung ke Bali empat kali seminggu. Tantangannya, kata bupati, adalah menjaganya tetap ada.",
+ "dek":"Sejak 15 Juli, Sumba Timur punya penerbangan langsung ke Bali empat kali seminggu. Tantangannya, kata bupati, adalah mempertahankannya.",
  "body":"""<p>Selama bertahun-tahun, perjalanan dari Bali ke Sumba Timur berarti transit di Lombok atau Kupang. Sejak <strong>15 Juli 2026</strong>, TransNusa terbang <strong>Denpasar-Waingapu tanpa transit</strong> empat kali seminggu: Selasa, Rabu, Jumat, dan Sabtu.</p>
 <p>Bandara Ngurah Rai Bali mengumumkan rute ini bersama rute baru Bali-Wakatobi yang dibuka sehari kemudian. Menurut ANTARA, penerbangan ke Waingapu (8B-5652) berangkat dari Bali pukul 08.19 WITA dan penerbangan pulang (8B-5653) tiba di Bali pukul 12.24, dengan pesawat Comac ARJ-21.</p>
 <h2>Mengapa penerbangan Bali-Waingapu penting</h2>
-<p>Sumba bagian barat sudah punya penerbangan harian ke Tambolaka. Bagian timur, dengan sabana, Bukit Wairinding, Pantai Walakiri, dan Air Terjun Tanggedu, lebih sulit dijangkau. Dengan penerbangan langsung, rute klasik jadi mungkin: <strong>masuk lewat satu bandara dan keluar lewat bandara lainnya</strong>, menyeberangi pulau lewat darat.</p>
+<p>Sumba bagian barat sudah punya penerbangan harian ke Tambolaka. Bagian timur, dengan sabana, Bukit Wairinding, Pantai Walakiri, dan Air Terjun Tanggedu, lebih sulit dijangkau. Dengan penerbangan langsung, rute klasik pun bisa ditempuh: <strong>masuk lewat satu bandara dan keluar lewat bandara lainnya</strong>, menyeberangi pulau lewat darat.</p>
 <h2>"Yang sulit bukan hadirnya pesawat"</h2>
 <p>Bupati Sumba Timur, Umbu Lili Pekuwali, menyambut rute ini, tetapi mengingatkan bahwa tantangan sebenarnya adalah menjaga penerbangan tetap beroperasi. General manager bandara mengajak semua pihak mendukung agar penerbangan baru ini bertahan dan berkembang.</p>
 <h2>Apa artinya</h2>
@@ -117,21 +117,21 @@ ARTICLES.append({"section":"getting-here","slug":"how-to-get-to-sumba-from-bali"
 <li>The dry season (roughly May to September) makes roads and waterfalls easier. In the rainy season (roughly November to March) some routes get hard.</li></ul>"""},
 "es":{"title":"Cómo llegar a Sumba desde Bali: vuelos, aeropuertos y la ruta que mejor funciona",
  "dek":"Dos aeropuertos, vuelos cortos y una regla sencilla: llegar por un extremo de la isla y salir por el otro.",
- "body":"""<p>Sumba está al sureste de Bali y no tiene vuelos internacionales directos. Casi todo el mundo llega en un vuelo nacional corto desde Bali (Denpasar, DPS).</p>
+ "body":"""<p>Sumba está al sureste de Bali y no tiene vuelos internacionales directos. Casi todos los viajeros llegan en un vuelo nacional corto desde Bali (Denpasar, DPS).</p>
 <h2>Los dos aeropuertos</h2>
-<ul><li><strong>Tambolaka (TMC)</strong>, en el noroeste. Es la puerta principal al oeste y suroeste de Sumba: Kodi, Lamboya, Wanokaka, los pueblos tradicionales y los campos de la Pasola.</li>
+<ul><li><strong>Tambolaka (TMC)</strong>, en el noroeste. Es la principal puerta de entrada al oeste y el suroeste de Sumba: Kodi, Lamboya, Wanokaka, los pueblos tradicionales y los campos de la Pasola.</li>
 <li><strong>Waingapu (WGP)</strong>, en el este. El más cercano a las sabanas, la colina de Wairinding, la playa de Walakiri y la cascada de Tanggedu.</li></ul>
 <h2>Vuelos desde Bali</h2>
-<ul><li><strong>Bali-Tambolaka:</strong> Wings Air ha operado varios vuelos diarios, de una hora y media aproximadamente.</li>
+<ul><li><strong>Bali-Tambolaka:</strong> Wings Air ha operado varios vuelos diarios, de una hora y media de duración aproximada.</li>
 <li><strong>Bali-Waingapu:</strong> TransNusa vuela sin escalas cuatro veces por semana desde el 15 de julio de 2026 (martes, miércoles, viernes y sábado).</li></ul>
 <p>En estas rutas regionales los horarios cambian a menudo. Confírmalos siempre con la aerolínea antes de reservar.</p>
 <h2>La ruta que mejor funciona</h2>
-<p>Sumba mide unos 200 km de largo y es aproximadamente el doble que Bali. Las carreteras son lentas. Lo más fácil es <strong>llegar a Tambolaka y salir desde Waingapu</strong>, o al revés, y cruzar la isla en coche.</p>
+<p>Sumba mide unos 200 km de largo y su superficie duplica aproximadamente la de Bali. Las carreteras son lentas. Lo más fácil es <strong>llegar a Tambolaka y salir desde Waingapu</strong>, o al revés, y cruzar la isla en coche.</p>
 <h2>Consejos prácticos</h2>
-<ul><li>Aviones pequeños, franquicias de equipaje pequeñas. Revisa la tuya antes de hacer la maleta.</li>
-<li>Alquila coche con conductor local. Hay pocas señales y un conductor conoce los pueblos, las costumbres y el estado de las carreteras.</li>
+<ul><li>Aviones pequeños, franquicias de equipaje reducidas: revisa la tuya antes de hacer la maleta.</li>
+<li>Alquila coche con conductor local. Hay poca señalización y un conductor de la zona conoce los pueblos, las costumbres y el estado de las carreteras.</li>
 <li>Lleva efectivo. Fuera de las ciudades casi no hay cajeros ni pago con tarjeta.</li>
-<li>La estación seca (más o menos de mayo a septiembre) facilita las carreteras y las cascadas. En la de lluvias (más o menos de noviembre a marzo) algunas rutas se complican.</li></ul>"""},
+<li>La estación seca (aproximadamente de mayo a septiembre) facilita los desplazamientos por carretera y las visitas a las cascadas. En la de lluvias (aproximadamente de noviembre a marzo), algunas rutas se complican.</li></ul>"""},
 "id":{"title":"Cara ke Sumba dari Bali: penerbangan, bandara, dan rute terbaik",
  "dek":"Dua bandara, penerbangan singkat, dan satu aturan sederhana: tiba di satu ujung pulau dan pulang dari ujung lainnya.",
  "body":"""<p>Sumba terletak di tenggara Bali dan tidak memiliki penerbangan internasional langsung. Hampir semua orang tiba dengan penerbangan domestik singkat dari Bali (Denpasar, DPS).</p>
@@ -139,15 +139,15 @@ ARTICLES.append({"section":"getting-here","slug":"how-to-get-to-sumba-from-bali"
 <ul><li><strong>Tambolaka (TMC)</strong>, di barat laut. Gerbang utama ke Sumba Barat dan Sumba Barat Daya: Kodi, Lamboya, Wanokaka, kampung adat, dan lapangan Pasola.</li>
 <li><strong>Waingapu (WGP)</strong>, di timur. Paling dekat ke sabana, Bukit Wairinding, Pantai Walakiri, dan Air Terjun Tanggedu.</li></ul>
 <h2>Penerbangan dari Bali</h2>
-<ul><li><strong>Bali-Tambolaka:</strong> Wings Air telah melayani beberapa penerbangan setiap hari, sekitar 1 jam 30 menit.</li>
+<ul><li><strong>Bali-Tambolaka:</strong> Wings Air telah melayani beberapa penerbangan setiap hari, dengan waktu tempuh sekitar 1 jam 30 menit.</li>
 <li><strong>Bali-Waingapu:</strong> TransNusa terbang tanpa transit empat kali seminggu sejak 15 Juli 2026 (Selasa, Rabu, Jumat, Sabtu).</li></ul>
 <p>Jadwal rute regional sering berubah. Selalu cek ke maskapai sebelum memesan.</p>
 <h2>Rute terbaik</h2>
 <p>Panjang Sumba sekitar 200 km dan luasnya kira-kira dua kali Bali. Jalannya lambat. Rencana termudah adalah <strong>tiba di Tambolaka dan pulang dari Waingapu</strong>, atau sebaliknya, lalu menyeberangi pulau dengan mobil.</p>
 <h2>Tips praktis</h2>
 <ul><li>Pesawat kecil berarti jatah bagasi kecil. Cek jatah Anda sebelum berkemas.</li>
-<li>Sewa mobil dengan sopir lokal. Rambu jarang, dan sopir lokal paham kampung, adat, dan kondisi jalan.</li>
-<li>Bawa uang tunai. Di luar kota, ATM dan pembayaran kartu jarang ada.</li>
+<li>Sewa mobil dengan sopir lokal. Rambu jalan masih jarang, dan sopir lokal paham kampung, adat, dan kondisi jalan.</li>
+<li>Bawa uang tunai. Di luar kota, ATM dan pembayaran dengan kartu jarang tersedia.</li>
 <li>Musim kemarau (kira-kira Mei sampai September) memudahkan perjalanan dan kunjungan ke air terjun. Di musim hujan (kira-kira November sampai Maret) beberapa rute jadi sulit.</li></ul>"""},
 "sources":S_GET})
 
@@ -169,39 +169,39 @@ ARTICLES.append({"section":"culture","slug":"pasola-explained","date":"2026-11-0
 <li>Ask before photographing people, especially during the ceremonies around the battle.</li>
 <li>Bring water, sun protection and cash. There is usually no ticket.</li>
 <li>Go with a local guide or driver who can tell you when and where to be.</li></ul>"""},
-"es":{"title":"La Pasola, explicada: la batalla ritual a caballo de Sumba",
- "dek":"Jinetes que se lanzan lanzas de madera sin punta en un campo abierto. No es un espectáculo. Es un ritual que abre la temporada de siembra.",
- "body":"""<p>Cada año, normalmente en febrero y marzo, jinetes del oeste y el suroeste de Sumba se reúnen en dos equipos en un campo abierto y cargan unos contra otros, lanzándose lanzas de madera mientras las esquivan. Es la <strong>Pasola</strong>.</p>
+"es":{"title":"Qué es la Pasola, la batalla ritual a caballo de Sumba",
+ "dek":"Jinetes que se arrojan lanzas de madera sin punta en campo abierto. No es un espectáculo, sino el ritual que abre la temporada de siembra.",
+ "body":"""<p>Cada año, normalmente en febrero y marzo, jinetes del oeste y el suroeste de Sumba se dividen en dos bandos en un campo abierto y cargan unos contra otros: se arrojan lanzas de madera e intentan esquivarlas. Es la <strong>Pasola</strong>.</p>
 <h2>Por qué se celebra</h2>
-<p>La Pasola forma parte del <strong>marapu</strong>, la religión ancestral de Sumba. Está ligada al año agrícola y a los antepasados. Los relatos antiguos dicen que la sangre derramada en el campo alimentaba la tierra. Hoy las lanzas no tienen punta, pero el sentido ritual sigue ahí.</p>
+<p>La Pasola forma parte del <strong>marapu</strong>, la religión ancestral de Sumba. Está ligada al año agrícola y a los antepasados. Según los relatos antiguos, la sangre derramada en el campo fertilizaba la tierra. Hoy las lanzas no tienen punta, pero el sentido ritual se mantiene.</p>
 <h2>Quién decide la fecha</h2>
-<p>No hay una fecha fija en el calendario. Los <strong>rato</strong>, los ancianos tradicionales, leen las señales. Una de ellas es la llegada de los <strong>nyale</strong>, unos gusanos marinos que aparecen en la orilla. Cuando llegan los nyale, puede empezar la Pasola.</p>
+<p>No hay una fecha fija en el calendario. Los <strong>rato</strong>, los ancianos de la comunidad, interpretan las señales. Una de ellas es la llegada de los <strong>nyale</strong>, unos gusanos marinos que aparecen en la orilla. Cuando llegan los nyale, puede empezar la Pasola.</p>
 <h2>Dónde</h2>
-<p>En las regiones de Kodi, Lamboya, Wanokaka y Gaura. La mayoría de los visitantes se aloja cerca de Tambolaka y conduce hasta unas dos horas y media hasta los campos.</p>
-<h2>2026, como referencia</h2>
-<p>Los calendarios locales anunciados para 2026 fueron del 9 al 11 de febrero (Homba Kalayo, Bondo Kawango, Rara Winyo) y del 9 al 11 de marzo (Maliti Bondo Ate, Wai Ha, Wainyapu). Las fechas de 2027 dependerán, como siempre, de los ancianos.</p>
+<p>En las regiones de Kodi, Lamboya, Wanokaka y Gaura. La mayoría de los visitantes se aloja cerca de Tambolaka, y el trayecto en coche hasta los campos puede llevar unas dos horas y media.</p>
+<h2>Las fechas de 2026, como referencia</h2>
+<p>Los calendarios locales anunciados para 2026 fijaron la Pasola del 9 al 11 de febrero (Homba Kalayo, Bondo Kawango, Rara Winyo) y del 9 al 11 de marzo (Maliti Bondo Ate, Wai Ha, Wainyapu). Las fechas de 2027 dependerán, como siempre, de los ancianos.</p>
 <h2>Cómo ser un buen invitado</h2>
 <ul><li>Recuerda que es un ritual, no una actuación para turistas.</li>
-<li>Viste con discreción y quédate bien lejos del campo. Los jinetes se caen y los caballos van donde quieren.</li>
-<li>Pregunta antes de fotografiar a la gente, sobre todo en las ceremonias que rodean la batalla.</li>
+<li>Viste con discreción y mantente a buena distancia del campo: los jinetes se caen y los caballos van donde quieren.</li>
+<li>Pide permiso antes de fotografiar a la gente, sobre todo en las ceremonias que rodean la batalla.</li>
 <li>Lleva agua, protección solar y efectivo. Normalmente no hay entrada.</li>
-<li>Ve con un guía o conductor local que te diga cuándo y dónde estar.</li></ul>"""},
+<li>Ve con un guía o un conductor local que te indique cuándo y dónde situarte.</li></ul>"""},
 "id":{"title":"Mengenal Pasola: perang adat berkuda di Sumba",
  "dek":"Para penunggang kuda saling melempar lembing kayu tumpul di lapangan terbuka. Ini bukan pertunjukan, melainkan ritual pembuka musim tanam.",
- "body":"""<p>Setiap tahun, biasanya pada bulan Februari dan Maret, para penunggang kuda di Sumba Barat dan Sumba Barat Daya berkumpul dalam dua kelompok di lapangan terbuka. Mereka saling menyerbu sambil melempar lembing kayu dan menghindarinya. Inilah <strong>Pasola</strong>.</p>
+ "body":"""<p>Setiap tahun, biasanya pada bulan Februari dan Maret, para penunggang kuda di Sumba Barat dan Sumba Barat Daya berkumpul dalam dua kelompok di lapangan terbuka. Mereka saling menyerbu sambil melempar lembing kayu dan berkelit dari lembing lawan. Inilah <strong>Pasola</strong>.</p>
 <h2>Mengapa diadakan</h2>
 <p>Pasola adalah bagian dari <strong>Marapu</strong>, kepercayaan leluhur Sumba. Ritual ini terkait dengan siklus pertanian dan para leluhur. Kisah lama menyebut darah yang tertumpah di lapangan menyuburkan tanah. Kini lembingnya tumpul, tetapi makna ritualnya tetap ada.</p>
 <h2>Siapa yang menentukan tanggal</h2>
-<p>Tidak ada tanggal tetap di kalender. Para <strong>rato</strong>, tetua adat, membaca tanda-tanda alam. Salah satunya adalah munculnya <strong>nyale</strong>, cacing laut yang muncul di pantai. Ketika nyale datang, Pasola bisa dimulai.</p>
+<p>Tidak ada tanggal tetap di kalender. Para <strong>rato</strong>, tetua adat, membaca tanda-tanda alam. Salah satunya adalah kemunculan <strong>nyale</strong>, cacing laut yang naik ke tepi pantai. Ketika nyale datang, Pasola bisa dimulai.</p>
 <h2>Di mana</h2>
 <p>Di wilayah Kodi, Lamboya, Wanokaka, dan Gaura. Sebagian besar pengunjung menginap di sekitar Tambolaka dan berkendara hingga sekitar 2,5 jam ke lapangan.</p>
 <h2>Sebagai acuan: 2026</h2>
 <p>Jadwal lokal yang diumumkan untuk 2026 adalah 9-11 Februari (Homba Kalayo, Bondo Kawango, Rara Winyo) dan 9-11 Maret (Maliti Bondo Ate, Wai Ha, Wainyapu). Tanggal untuk 2027, seperti biasa, bergantung pada para tetua.</p>
 <h2>Menjadi tamu yang baik</h2>
 <ul><li>Ingat bahwa ini ritual, bukan pertunjukan untuk wisatawan.</li>
-<li>Berpakaian sopan dan jaga jarak dari lapangan. Penunggang bisa jatuh, dan kuda berlari ke mana saja.</li>
+<li>Berpakaian sopan dan jaga jarak dari lapangan. Penunggang bisa jatuh, dan kuda bisa berlari ke mana saja.</li>
 <li>Minta izin sebelum memotret orang, terutama saat upacara di sekitar Pasola.</li>
-<li>Bawa air, pelindung matahari, dan uang tunai. Biasanya tidak ada tiket masuk.</li>
+<li>Bawa air, tabir surya, dan uang tunai. Biasanya tidak ada tiket masuk.</li>
 <li>Datanglah bersama pemandu atau sopir lokal yang tahu kapan dan di mana harus berada.</li></ul>"""},
 "sources":S_PASOLA})
 
@@ -223,26 +223,26 @@ ARTICLES.append({"section":"culture","slug":"marapu-ikat-traditional-villages","
 <li>Many villages ask for a small contribution or entry fee. Pay it gladly.</li>
 <li>Buy ikat directly from the weavers when you can. It is the fairest way to keep the craft alive.</li>
 <li>A local guide helps with language and custom, and can explain what you are looking at.</li></ul>"""},
-"es":{"title":"Marapu, ikat y pueblos tradicionales: guía respetuosa de la cultura de Sumba",
- "dek":"Tejados de paja altísimos, tumbas de piedra que siguen en uso y telas que se tardan cientos de horas en tejer.",
+"es":{"title":"Marapu, ikat y pueblos tradicionales: guía para conocer Sumba con respeto",
+ "dek":"Tejados de paja altísimos, tumbas de piedra todavía en uso y telas que exigen cientos de horas de trabajo.",
  "body":"""<p>Sumba es uno de los pocos lugares de Indonesia donde una religión ancestral sigue formando parte de la vida diaria. Se llama <strong>marapu</strong>.</p>
 <h2>El marapu</h2>
-<p>En el marapu, los antepasados siguen presentes en el mundo de los vivos y hay que honrarlos con ofrendas y ceremonias. Las rocas, los árboles y los manantiales pueden albergar espíritus. El marapu guía la siembra, el matrimonio y la resolución de conflictos. Las estimaciones de cuántos habitantes lo siguen varían, de alrededor de una cuarta parte a más de un tercio, sobre todo en los pueblos tradicionales del oeste y el centro.</p>
+<p>Para el marapu, los antepasados siguen presentes en el mundo de los vivos y hay que honrarlos con ofrendas y ceremonias. Las rocas, los árboles y los manantiales pueden albergar espíritus. El marapu guía la siembra, el matrimonio y la resolución de conflictos. Las estimaciones sobre el número de fieles varían entre una cuarta parte y más de un tercio de la población, sobre todo en los pueblos tradicionales del oeste y el centro.</p>
 <h2>Los pueblos</h2>
-<ul><li><strong>Praijing</strong> (oeste de Sumba): tumbas de piedra y casas de tejados altos y puntiagudos (uma mbatangu).</li>
-<li><strong>Waitabar</strong> (oeste de Sumba): un pueblo en lo alto de una colina, con tumbas y casas donde alojarse.</li>
+<ul><li><strong>Praijing</strong> (Sumba Occidental): tumbas de piedra y casas de tejados altos y puntiagudos (uma mbatangu).</li>
+<li><strong>Waitabar</strong> (Sumba Occidental): un pueblo en lo alto de una colina, con tumbas y casas donde alojarse.</li>
 <li><strong>Tarung</strong> (junto a Waikabubak): un pueblo grande con decenas de tumbas megalíticas y una comunidad marapu activa.</li>
-<li><strong>Ratenggaro</strong> (suroeste de Sumba): tejados altísimos y tumbas frente al océano. Es muy visitado, así que ve temprano.</li></ul>
+<li><strong>Ratenggaro</strong> (Sumba Suroccidental): tejados altísimos y tumbas frente al océano. Es muy visitado, así que ve temprano.</li></ul>
 <h2>El ikat</h2>
-<p>El ikat de Sumba es una tela que se hace atando y tiñendo los hilos antes de tejerlos. Los tintes tradicionales salen del índigo, la raíz de morinda (rojo) y la cúrcuma (amarillo). Las mujeres tejen en telares de cintura, y una buena pieza puede llevar <strong>de 200 a 400 horas</strong>. El este de Sumba es conocido por diseños más oscuros y densos. Las piezas buenas se usan en ceremonias, se regalan en las bodas y se entierran con los muertos.</p>
-<h2>Cómo visitar bien</h2>
+<p>El ikat de Sumba es un tejido que se elabora atando y tiñendo los hilos antes de tejerlos. Los tintes tradicionales se obtienen del índigo, la raíz de morinda (rojo) y la cúrcuma (amarillo). Las mujeres tejen en telares de cintura, y una buena pieza puede llevar <strong>de 200 a 400 horas</strong>. Sumba Oriental es conocida por sus diseños más oscuros y densos. Las mejores piezas se usan en ceremonias, se regalan en las bodas y se entierran con los muertos.</p>
+<h2>Cómo visitarlos con respeto</h2>
 <ul><li>Son casas, no museos. Pide permiso antes de entrar y antes de hacer fotos.</li>
-<li>Muchos pueblos piden una pequeña aportación o entrada. Págala con gusto.</li>
+<li>Muchos pueblos piden un pequeño donativo o una entrada. Págalos de buen grado.</li>
 <li>Compra el ikat directamente a las tejedoras siempre que puedas. Es la forma más justa de mantener vivo el oficio.</li>
 <li>Un guía local ayuda con el idioma y las costumbres, y te explica lo que estás viendo.</li></ul>"""},
 "id":{"title":"Marapu, ikat, dan kampung adat: panduan menghormati budaya Sumba",
  "dek":"Atap ilalang yang menjulang, makam batu yang masih digunakan, dan kain yang ditenun ratusan jam.",
- "body":"""<p>Sumba adalah salah satu dari sedikit tempat di Indonesia di mana kepercayaan leluhur masih menjadi bagian kehidupan sehari-hari. Namanya <strong>Marapu</strong>.</p>
+ "body":"""<p>Sumba adalah salah satu dari sedikit tempat di Indonesia yang kepercayaan leluhurnya masih menjadi bagian dari kehidupan sehari-hari. Namanya <strong>Marapu</strong>.</p>
 <h2>Marapu</h2>
 <p>Dalam Marapu, para leluhur tetap hadir di dunia orang hidup dan harus dihormati dengan persembahan dan upacara. Batu, pohon, dan mata air dapat menjadi tempat tinggal roh. Marapu menuntun masa tanam, pernikahan, dan penyelesaian sengketa. Perkiraan jumlah penganutnya berbeda-beda, dari sekitar seperempat hingga lebih dari sepertiga penduduk, terutama di kampung adat di bagian barat dan tengah.</p>
 <h2>Kampung adat</h2>
@@ -252,10 +252,10 @@ ARTICLES.append({"section":"culture","slug":"marapu-ikat-traditional-villages","
 <li><strong>Ratenggaro</strong> (Sumba Barat Daya): atap sangat tinggi dan makam menghadap samudra. Ramai dikunjungi, jadi datanglah pagi.</li></ul>
 <h2>Tenun ikat</h2>
 <p>Ikat Sumba adalah kain yang dibuat dengan mengikat dan mewarnai benang sebelum ditenun. Pewarna tradisionalnya dari nila, akar mengkudu (merah), dan kunyit (kuning). Para perempuan menenun dengan alat tenun gedogan, dan satu kain yang baik bisa memakan waktu <strong>200 sampai 400 jam</strong>. Sumba Timur dikenal dengan motif yang lebih gelap dan padat. Kain terbaik dipakai dalam upacara, diberikan dalam pernikahan, dan dikuburkan bersama orang yang meninggal.</p>
-<h2>Berkunjung dengan baik</h2>
+<h2>Berkunjung dengan hormat</h2>
 <ul><li>Ini rumah, bukan museum. Minta izin sebelum masuk dan sebelum memotret.</li>
 <li>Banyak kampung meminta sumbangan kecil atau tiket masuk. Bayarlah dengan senang hati.</li>
-<li>Belilah ikat langsung dari penenunnya bila bisa. Itu cara paling adil untuk menjaga kerajinan ini tetap hidup.</li>
+<li>Belilah ikat langsung dari penenunnya bila memungkinkan. Itu cara paling adil untuk menjaga kerajinan ini tetap hidup.</li>
 <li>Pemandu lokal membantu soal bahasa dan adat, dan bisa menjelaskan apa yang Anda lihat.</li></ul>"""},
 "sources":S_CULT})
 
@@ -276,25 +276,25 @@ ARTICLES.append({"section":"things-to-do","slug":"beaches-lagoons-waterfalls","d
 <h2>When to go</h2>
 <p>The dry season, roughly May to September, brings golden landscapes and easier roads. In the rainy season, roughly November to March, some tracks and waterfalls are hard to reach.</p>
 <p>Please take your rubbish with you. Most of these places have no bins, and they stay beautiful because people care for them.</p>"""},
-"es":{"title":"Playas, lagunas y cascadas de Sumba: nueve sitios que merecen el viaje",
+"es":{"title":"Playas, lagunas y cascadas de Sumba: nueve lugares que merecen el viaje",
  "dek":"De una laguna turquesa en el noroeste a unos manglares que parecen bailar al atardecer en el este.",
- "body":"""<p>Sumba es grande y tranquila. Muchos de sus mejores sitios no tienen nada de gente. Estos son nueve, de oeste a este.</p>
+ "body":"""<p>Sumba es grande y tranquila, y muchos de sus mejores rincones apenas reciben visitas. Estos son nueve, de oeste a este.</p>
 <h2>Oeste y suroeste</h2>
-<ul><li><strong>Laguna de Weekuri.</strong> Una laguna de agua salada muy transparente, perfecta para bañarse. Cuidado con el coral afilado. Hay baños sencillos y una ducha.</li>
+<ul><li><strong>Laguna de Weekuri.</strong> Una laguna de agua salada y cristalina, perfecta para el baño. Cuidado con el coral afilado. Hay baños sencillos y una ducha.</li>
 <li><strong>Playa de Mandorak.</strong> Una playa pequeña entre dos acantilados. En junio y julio el sol se pone justo en medio.</li>
-<li><strong>Pero y Marosi.</strong> Playas amplias en la costa suroeste, muchas veces completamente vacías.</li>
-<li><strong>Cascada de Lapopu.</strong> Una cascada alta que cae en escalones, a un paseo corto del aparcamiento. Mejor en la estación seca. Después de llover el agua baja marrón y con fuerza.</li></ul>
+<li><strong>Pero y Marosi.</strong> Playas amplias en la costa suroeste, a menudo completamente desiertas.</li>
+<li><strong>Cascada de Lapopu.</strong> Una cascada alta que cae en escalones, a un corto paseo del aparcamiento. Luce más en la estación seca: después de las lluvias, el agua baja turbia y con fuerza.</li></ul>
 <h2>Este</h2>
-<ul><li><strong>Colina de Wairinding.</strong> La colina más famosa de la isla, sabana ondulada en todas direcciones. Ve al atardecer.</li>
-<li><strong>Playa de Walakiri.</strong> Pequeños manglares sobre la arena que parecen bailarines al atardecer. Mira la marea: con marea alta quedan bajo el agua.</li>
-<li><strong>Cascada de Tanggedu.</strong> La llaman el Gran Cañón de Sumba, con pozas excavadas en la roca. El último tramo son 15 o 20 minutos andando, o un trayecto corto en moto.</li>
+<ul><li><strong>Colina de Wairinding.</strong> La colina más famosa de la isla, rodeada de sabana ondulada hasta donde alcanza la vista. Ve al atardecer.</li>
+<li><strong>Playa de Walakiri.</strong> Pequeños mangles sobre la arena que, al atardecer, parecen bailarines. Consulta las mareas: con la pleamar quedan bajo el agua.</li>
+<li><strong>Cascada de Tanggedu.</strong> La llaman el Gran Cañón de Sumba, con pozas excavadas en la roca. El último tramo se hace a pie, en 15 o 20 minutos, o con un corto trayecto en moto.</li>
 <li><strong>Cascada de Waimarang.</strong> Una poza turquesa en mitad del bosque, a unos 20 minutos de caminata en cada sentido.</li></ul>
 <h2>Cuándo ir</h2>
-<p>La estación seca, más o menos de mayo a septiembre, trae paisajes dorados y carreteras más fáciles. En la de lluvias, más o menos de noviembre a marzo, algunos caminos y cascadas son difíciles de alcanzar.</p>
-<p>Por favor, llévate tu basura. La mayoría de estos sitios no tienen papeleras, y siguen siendo preciosos porque la gente los cuida.</p>"""},
+<p>La estación seca, aproximadamente de mayo a septiembre, trae paisajes dorados y carreteras más transitables. En la de lluvias, aproximadamente de noviembre a marzo, algunos caminos y cascadas resultan de difícil acceso.</p>
+<p>Por favor, llévate tu basura. La mayoría de estos lugares no tiene papeleras y, si siguen siendo preciosos, es porque la gente los cuida.</p>"""},
 "id":{"title":"Pantai, laguna, dan air terjun di Sumba: sembilan tempat yang layak dikunjungi",
  "dek":"Dari laguna toska di barat laut hingga bakau yang seolah menari saat matahari terbenam di timur.",
- "body":"""<p>Sumba luas dan tenang. Banyak tempat terbaiknya sama sekali tidak ramai. Berikut sembilan di antaranya, dari barat ke timur.</p>
+ "body":"""<p>Sumba luas dan tenang. Banyak tempat terindahnya masih sepi pengunjung. Berikut sembilan di antaranya, dari barat ke timur.</p>
 <h2>Barat dan Barat Daya</h2>
 <ul><li><strong>Danau Weekuri.</strong> Laguna air asin yang sangat jernih, cocok untuk berenang. Hati-hati dengan karang tajam. Tersedia toilet dan pancuran sederhana.</li>
 <li><strong>Pantai Mandorak.</strong> Pantai kecil di antara dua tebing. Pada Juni dan Juli matahari terbenam tepat di tengahnya.</li>
@@ -303,11 +303,11 @@ ARTICLES.append({"section":"things-to-do","slug":"beaches-lagoons-waterfalls","d
 <h2>Timur</h2>
 <ul><li><strong>Bukit Wairinding.</strong> Bukit paling terkenal di pulau ini, sabana bergelombang ke segala arah. Datanglah saat matahari terbenam.</li>
 <li><strong>Pantai Walakiri.</strong> Pohon bakau kecil di atas pasir yang tampak seperti penari saat matahari terbenam. Cek pasang surut: saat pasang, pohonnya terendam.</li>
-<li><strong>Air Terjun Tanggedu.</strong> Dijuluki Grand Canyon-nya Sumba, dengan kolam yang terukir di batu. Bagian terakhir ditempuh 15 sampai 20 menit berjalan kaki, atau sebentar dengan motor.</li>
+<li><strong>Air Terjun Tanggedu.</strong> Dijuluki Grand Canyon-nya Sumba, dengan kolam yang terukir di batu. Bagian terakhir ditempuh 15 sampai 20 menit berjalan kaki, atau naik motor sebentar.</li>
 <li><strong>Air Terjun Waimarang.</strong> Kolam toska di tengah hutan, sekitar 20 menit berjalan kaki sekali jalan.</li></ul>
 <h2>Kapan berkunjung</h2>
 <p>Musim kemarau, kira-kira Mei sampai September, menghadirkan pemandangan keemasan dan jalan yang lebih mudah. Di musim hujan, kira-kira November sampai Maret, beberapa jalur dan air terjun sulit dijangkau.</p>
-<p>Mohon bawa pulang sampah Anda. Sebagian besar tempat ini tidak punya tempat sampah, dan tetap indah karena orang menjaganya.</p>"""},
+<p>Mohon bawa pulang sampah Anda. Sebagian besar tempat ini tidak punya tempat sampah, dan tempat-tempat ini tetap indah karena orang ikut menjaganya.</p>"""},
 "sources":S_BEACH})
 
 STAY_ROWS = [
@@ -332,11 +332,11 @@ STAY_ROWS = [
 def stay_table(lang):
     h = {"en":("Place","Area","Size"),"es":("Alojamiento","Zona","Tamaño"),"id":("Penginapan","Wilayah","Ukuran")}[lang]
     tr = {
-      "es": {"Southwest Sumba":"Suroeste de Sumba","West Sumba":"Oeste de Sumba","Kodi, Southwest Sumba":"Kodi, suroeste de Sumba"},
+      "es": {"Southwest Sumba":"Sumba Suroccidental","West Sumba":"Sumba Occidental","Kodi, Southwest Sumba":"Kodi, Sumba Suroccidental"},
       "id": {"Southwest Sumba":"Sumba Barat Daya","West Sumba":"Sumba Barat","Kodi, Southwest Sumba":"Kodi, Sumba Barat Daya"},
     }
     sz = {
-      "es": {"Small boutique property, about 6 rooms":"Pequeño alojamiento boutique, unas 6 habitaciones","About 14 villas":"Unas 14 villas","About 19 villas, under construction (expected 2027)":"Unas 19 villas, en construcción (prevista para 2027)","About 60 keys (40 rooms and 20 villas), opened 2023":"Unas 60 unidades (40 habitaciones y 20 villas), abrió en 2023","City hotel, roughly 40 to 90 rooms depending on the source":"Hotel urbano, entre 40 y 90 habitaciones según la fuente","About 54 rooms":"Unas 54 habitaciones","About 69 rooms":"Unas 69 habitaciones","About 14 rooms":"Unas 14 habitaciones","About 27 villas":"Unas 27 villas","About 9 rooms":"Unas 9 habitaciones","About 127 rooms, opened November 2025, the largest hotel on the island":"Unas 127 habitaciones, abrió en noviembre de 2025, el hotel más grande de la isla","About 31 villas, works continuing to 2027":"Unas 31 villas, con obras hasta 2027","Roughly 33 to 56 rooms":"Entre 33 y 56 habitaciones","About 11 rooms":"Unas 11 habitaciones","About 102 rooms, opened 2023":"Unas 102 habitaciones, abrió en 2023","About 29 rooms":"Unas 29 habitaciones","Run by Eco Beach City, the publisher of this site":"Gestionado por Eco Beach City, que publica esta web"},
+      "es": {"Small boutique property, about 6 rooms":"Pequeño alojamiento boutique, unas 6 habitaciones","About 14 villas":"Unas 14 villas","About 19 villas, under construction (expected 2027)":"Unas 19 villas, en construcción (apertura prevista en 2027)","About 60 keys (40 rooms and 20 villas), opened 2023":"Unas 60 unidades (40 habitaciones y 20 villas), inaugurado en 2023","City hotel, roughly 40 to 90 rooms depending on the source":"Hotel urbano, entre 40 y 90 habitaciones según la fuente","About 54 rooms":"Unas 54 habitaciones","About 69 rooms":"Unas 69 habitaciones","About 14 rooms":"Unas 14 habitaciones","About 27 villas":"Unas 27 villas","About 9 rooms":"Unas 9 habitaciones","About 127 rooms, opened November 2025, the largest hotel on the island":"Unas 127 habitaciones, inaugurado en noviembre de 2025; el hotel más grande de la isla","About 31 villas, works continuing to 2027":"Unas 31 villas, con obras hasta 2027","Roughly 33 to 56 rooms":"Entre 33 y 56 habitaciones","About 11 rooms":"Unas 11 habitaciones","About 102 rooms, opened 2023":"Unas 102 habitaciones, inaugurado en 2023","About 29 rooms":"Unas 29 habitaciones","Run by Eco Beach City, the publisher of this site":"Gestionado por Eco Beach City, que publica esta web"},
       "id": {"Small boutique property, about 6 rooms":"Penginapan butik kecil, sekitar 6 kamar","About 14 villas":"Sekitar 14 vila","About 19 villas, under construction (expected 2027)":"Sekitar 19 vila, sedang dibangun (diperkirakan 2027)","About 60 keys (40 rooms and 20 villas), opened 2023":"Sekitar 60 unit (40 kamar dan 20 vila), dibuka 2023","City hotel, roughly 40 to 90 rooms depending on the source":"Hotel kota, sekitar 40 sampai 90 kamar tergantung sumber","About 54 rooms":"Sekitar 54 kamar","About 69 rooms":"Sekitar 69 kamar","About 14 rooms":"Sekitar 14 kamar","About 27 villas":"Sekitar 27 vila","About 9 rooms":"Sekitar 9 kamar","About 127 rooms, opened November 2025, the largest hotel on the island":"Sekitar 127 kamar, dibuka November 2025, hotel terbesar di pulau ini","About 31 villas, works continuing to 2027":"Sekitar 31 vila, pembangunan berlanjut hingga 2027","Roughly 33 to 56 rooms":"Sekitar 33 sampai 56 kamar","About 11 rooms":"Sekitar 11 kamar","About 102 rooms, opened 2023":"Sekitar 102 kamar, dibuka 2023","About 29 rooms":"Sekitar 29 kamar","Run by Eco Beach City, the publisher of this site":"Dikelola oleh Eco Beach City, penerbit situs ini"},
     }
     rows = "".join(f"<tr><td>{n}</td><td>{tr.get(lang,{}).get(a,a)}</td><td>{sz.get(lang,{}).get(s,s)}</td></tr>" for n,a,s in STAY_ROWS)
@@ -354,26 +354,26 @@ ARTICLES.append({"section":"where-to-stay","slug":"where-to-stay-in-sumba","date
 <p>Alphabetical, no ranking. Sizes are approximate and come from public sources that do not always agree.</p>
 {TABLE}
 <p class="note">We will keep this list updated. If you run a place to stay on Sumba and it is missing or wrong, write to us and we will fix it.</p>"""},
-"es":{"title":"Dónde dormir en Sumba: todos los tipos de hotel de la isla, sin favoritismos",
- "dek":"Unas 1.500 habitaciones para una isla el doble de grande que Bali. Aquí están, por orden alfabético.",
- "body":"""<p>Sumba sigue siendo una de las islas menos desarrolladas de Indonesia para el turismo. Según la oficina de estadística de Nusa Tenggara Oriental (BPS), en 2024 la isla entera tenía unos <strong>60 alojamientos y unas 1.460 habitaciones</strong>. Para comparar, solo la zona de Labuan Bajo tenía más del doble.</p>
-<h2>Dónde instalarte</h2>
+"es":{"title":"Dónde dormir en Sumba: todo tipo de alojamientos, sin favoritismos",
+ "dek":"Unas 1.500 habitaciones en una isla que dobla en tamaño a Bali. Esta es la lista, por orden alfabético.",
+ "body":"""<p>Sumba sigue siendo una de las islas indonesias menos desarrolladas turísticamente. Según la oficina de estadística de Nusa Tenggara Oriental (BPS), en 2024 la isla entera tenía unos <strong>60 alojamientos y unas 1.460 habitaciones</strong>. A modo de comparación, solo la zona de Labuan Bajo tenía más del doble.</p>
+<h2>En qué zona alojarse</h2>
 <ul><li><strong>Tambolaka</strong> (noroeste): junto al aeropuerto principal, con los hoteles urbanos más grandes.</li>
 <li><strong>Costa suroeste</strong> (Kodi, Wanokaka, Lamboya): los resorts famosos, las playas vacías y los campos de la Pasola.</li>
-<li><strong>Waingapu</strong> (este): la capital del este de Sumba, cerca de las sabanas y las cascadas.</li></ul>
+<li><strong>Waingapu</strong> (este): la capital de Sumba Oriental, cerca de las sabanas y las cascadas.</li></ul>
 <h2>La lista</h2>
-<p>Por orden alfabético, sin ranking. Los tamaños son aproximados y salen de fuentes públicas que no siempre coinciden.</p>
+<p>Por orden alfabético, sin ranking. Las cifras de tamaño son aproximadas y proceden de fuentes públicas que no siempre coinciden.</p>
 {TABLE}
-<p class="note">Mantendremos esta lista al día. Si gestionas un alojamiento en Sumba y falta o hay un error, escríbenos y lo corregimos.</p>"""},
-"id":{"title":"Tempat menginap di Sumba: semua jenis hotel di pulau ini, disajikan secara adil",
- "dek":"Sekitar 1.500 kamar untuk pulau yang dua kali lebih luas dari Bali. Ini daftarnya, urut abjad.",
- "body":"""<p>Untuk pariwisata, Sumba masih termasuk pulau yang paling sedikit berkembang di Indonesia. Menurut BPS Provinsi Nusa Tenggara Timur, pada 2024 seluruh pulau memiliki sekitar <strong>60 akomodasi dan sekitar 1.460 kamar</strong>. Sebagai perbandingan, wilayah Labuan Bajo saja memiliki lebih dari dua kali lipatnya.</p>
+<p class="note">Mantendremos esta lista al día. Si gestionas un alojamiento en Sumba y no aparece o hay algún error, escríbenos y lo corregiremos.</p>"""},
+"id":{"title":"Menginap di Sumba: semua jenis penginapan di pulau ini, tanpa pilih kasih",
+ "dek":"Sekitar 1.500 kamar untuk pulau yang dua kali lebih luas dari Bali. Berikut daftarnya, menurut abjad.",
+ "body":"""<p>Dari sisi pariwisata, Sumba masih tergolong pulau yang paling belum berkembang di Indonesia. Menurut BPS Provinsi Nusa Tenggara Timur, pada 2024 seluruh pulau memiliki sekitar <strong>60 akomodasi dan sekitar 1.460 kamar</strong>. Sebagai perbandingan, wilayah Labuan Bajo saja memiliki lebih dari dua kali lipatnya.</p>
 <h2>Di mana menginap</h2>
 <ul><li><strong>Tambolaka</strong> (barat laut): dekat bandara utama, dengan hotel kota yang lebih besar.</li>
 <li><strong>Pesisir barat daya</strong> (Kodi, Wanokaka, Lamboya): resor terkenal, pantai sepi, dan lapangan Pasola.</li>
 <li><strong>Waingapu</strong> (timur): ibu kota Sumba Timur, dekat sabana dan air terjun.</li></ul>
-<h2>Daftarnya</h2>
-<p>Urut abjad, tanpa peringkat. Ukuran bersifat perkiraan dan berasal dari sumber publik yang tidak selalu sama.</p>
+<h2>Daftar penginapan</h2>
+<p>Disusun menurut abjad, tanpa peringkat. Ukuran bersifat perkiraan dan berasal dari sumber publik yang tidak selalu sama.</p>
 {TABLE}
 <p class="note">Daftar ini akan terus kami perbarui. Jika Anda mengelola penginapan di Sumba dan datanya belum ada atau keliru, hubungi kami dan akan kami perbaiki.</p>"""},
 "sources":S_STAY, "table":True})
@@ -393,30 +393,30 @@ ARTICLES.append({"section":"projects","slug":"what-is-being-built-in-sumba","dat
 <h2>What is not happening</h2>
 <p>There is no announced project with more than 100 new rooms in the pipeline, and none of the big international chains has a hotel on the island yet. Sumba is also not one of Indonesia's special economic zones.</p>
 <p class="note">Building something on Sumba? Tell us. This page is for every project on the island, not just ours.</p>"""},
-"es":{"title":"Qué se construye en Sumba: los nuevos hoteles y proyectos a seguir",
- "dek":"Un hotel de 127 habitaciones en Waingapu, villas nuevas en el oeste y ningún megaresort a la vista.",
- "body":"""<p>Sumba está cambiando, pero despacio. Esto es lo que ha abierto, lo que se construye y lo que no está pasando.</p>
-<h2>Abiertos hace poco</h2>
-<ul><li><strong>Myze Hotel Waingapu</strong> (grupo Artotel) abrió en noviembre de 2025 con unas 127 habitaciones y un salón de eventos. Es ahora el hotel más grande de la isla.</li>
+"es":{"title":"Qué se construye en Sumba: hoteles y proyectos nuevos que seguir de cerca",
+ "dek":"Un hotel de 127 habitaciones en Waingapu, villas nuevas en el oeste y ningún macrocomplejo turístico a la vista.",
+ "body":"""<p>Sumba está cambiando, pero despacio. Esto es lo que ha abierto, lo que está en obras y lo que no está ocurriendo.</p>
+<h2>Aperturas recientes</h2>
+<ul><li><strong>Myze Hotel Waingapu</strong> (grupo Artotel) abrió en noviembre de 2025 con unas 127 habitaciones y un salón para eventos. Es ya el hotel más grande de la isla.</li>
 <li><strong>Sima Sumba Hotel</strong> (Swiss-Belhotel) abrió en Tambolaka en 2023 con unas 102 habitaciones.</li>
 <li><strong>Cap Karoso</strong> abrió en Kodi en 2023 con unas 60 habitaciones y villas.</li></ul>
 <h2>En construcción</h2>
-<ul><li><strong>NIHI Sumba</strong> está añadiendo villas, con obras previstas hasta 2027.</li>
-<li><strong>ARYA Sumba</strong>, unas 19 villas, está prevista para 2027.</li>
+<ul><li><strong>NIHI Sumba</strong> amplía su oferta de villas, con obras previstas hasta 2027.</li>
+<li><strong>ARYA Sumba</strong>, con unas 19 villas, tiene prevista su apertura en 2027.</li>
 <li><strong>Eco Beach City</strong>, que publica esta web, construye una comunidad frente al mar para el deporte, el trabajo y el bienestar, junto a las villas que ya gestiona.</li></ul>
-<h2>Lo que no está pasando</h2>
-<p>No hay anunciado ningún proyecto de más de 100 habitaciones nuevas, y ninguna de las grandes cadenas internacionales tiene todavía un hotel en la isla. Sumba tampoco es una de las zonas económicas especiales de Indonesia.</p>
-<p class="note">¿Construyes algo en Sumba? Cuéntanoslo. Esta página es para todos los proyectos de la isla, no solo el nuestro.</p>"""},
+<h2>Lo que no está ocurriendo</h2>
+<p>No se ha anunciado ningún proyecto de más de 100 habitaciones nuevas, y ninguna de las grandes cadenas internacionales tiene todavía un hotel en la isla. Sumba tampoco figura entre las zonas económicas especiales de Indonesia.</p>
+<p class="note">¿Construyes algo en Sumba? Cuéntanoslo. Esta página es para todos los proyectos de la isla, no solo para el nuestro.</p>"""},
 "id":{"title":"Apa yang sedang dibangun di Sumba: hotel dan proyek baru yang patut diikuti",
  "dek":"Hotel 127 kamar di Waingapu, vila baru di barat, dan belum ada resor raksasa.",
- "body":"""<p>Sumba sedang berubah, tetapi perlahan. Berikut yang sudah buka, yang sedang dibangun, dan yang belum terjadi.</p>
+ "body":"""<p>Sumba sedang berubah, tetapi perlahan. Berikut yang sudah beroperasi, yang sedang dibangun, dan yang belum terjadi.</p>
 <h2>Baru dibuka</h2>
 <ul><li><strong>Myze Hotel Waingapu</strong> (Artotel Group) dibuka pada November 2025 dengan sekitar 127 kamar dan ruang acara. Kini menjadi hotel terbesar di pulau ini.</li>
 <li><strong>Sima Sumba Hotel</strong> (Swiss-Belhotel) dibuka di Tambolaka pada 2023 dengan sekitar 102 kamar.</li>
 <li><strong>Cap Karoso</strong> dibuka di Kodi pada 2023 dengan sekitar 60 kamar dan vila.</li></ul>
 <h2>Sedang dibangun</h2>
 <ul><li><strong>NIHI Sumba</strong> sedang menambah vila, dengan pembangunan diperkirakan berlanjut hingga 2027.</li>
-<li><strong>ARYA Sumba</strong>, sekitar 19 vila, diperkirakan sekitar 2027.</li>
+<li><strong>ARYA Sumba</strong>, dengan sekitar 19 vila, diperkirakan dibuka pada 2027.</li>
 <li><strong>Eco Beach City</strong>, penerbit situs ini, sedang membangun komunitas tepi pantai untuk olahraga, kerja, dan kesehatan, di samping vila yang sudah dikelolanya.</li></ul>
 <h2>Yang belum terjadi</h2>
 <p>Belum ada proyek yang diumumkan dengan lebih dari 100 kamar baru, dan belum ada jaringan hotel internasional besar yang punya hotel di pulau ini. Sumba juga bukan salah satu kawasan ekonomi khusus di Indonesia.</p>
@@ -430,19 +430,19 @@ ARTICLES.append({"section":"living","slug":"el-nino-late-rainy-season-ntt-sumba-
 "en":{"title":"Very strong El Niño delays rains in most of NTT until December",
 "dek":"Indonesia's weather agency expects a late, short rainy season across East Nusa Tenggara, the province that includes Sumba. November should stay drier than normal.",
 "body":"<p>The rainy season will come late and be shorter than usual in most of East Nusa Tenggara (NTT), the province that includes Sumba, because of a very strong El Niño, Indonesia's meteorology agency BMKG says. In its national outlook for 2026/2027, BMKG expects the wet season to start in December 2026 in most of NTT and in November only in a small part of the province. The peak is forecast for January 2027 in parts of NTT and February 2027 in most of it.</p><h2>What BMKG says about the very strong El Niño</h2><p>\"The rainy season is arriving late and will be shorter,\" BMKG head Teuku Faisal Fathani said. The agency put the Niño 3.4 sea-surface anomaly at +2.83 at the end of August, a reading it classes as a very strong El Niño. Nationally, it expects the start of the rains to come later than normal across about 61% of Indonesia's land area.</p><h2>Rainfall forecast for NTT, month by month</h2><p>NTT's climatology station gave monthly figures for the province: 0 to 20 mm of rain in October, 51 to 100 mm in November, both below normal, and 201 to 300 mm in December, still generally below normal. These are province-wide forecasts; BMKG did not publish separate figures for Sumba's four regencies in these outlooks.</p><h2>How Sumba farmers are preparing for the late rains</h2><p>On the island, farmers are getting ready. On Friday, 6 November, a village army officer in Karita, Tabundung district, East Sumba, urged farmers to prepare their fields now so rice can be planted on time when the rains arrive, local outlet SERGAP reported.</p><h2>What it means</h2><p><strong>Visitors:</strong> November should be mostly dry, with easy roads and golden savanna, but some seasonal waterfalls may run low. Expect heat and dust; carry water.</p><p><strong>Residents:</strong> BMKG asks people to use water sparingly, stay alert to drought and grass fires, and prepare for dengue, floods and landslides once the rains start and peak. Check your tank, well and drainage now, and use mosquito protection from December.</p><p><strong>Investors and builders:</strong> outdoor work and road travel may stay easier into December, but water for building sites and farms may be tight. Plan for heavier rain in January and February 2027.</p> <p>Planning a trip around the weather? Our <a href=\"/en/things-to-do/best-time-to-visit-sumba/\">month-by-month guide to the best time to visit Sumba</a> explains how the seasons usually run.</p>"},
-"es":{"title":"El Niño muy fuerte retrasa a diciembre las lluvias en casi todo NTT",
-"dek":"La agencia meteorológica indonesia prevé lluvias tardías y cortas en Nusa Tenggara Oriental, la provincia de Sumba. Noviembre seguirá más seco de lo normal.",
-"body":"<p>La estación de lluvias llegará tarde y será más corta de lo habitual en la mayor parte de Nusa Tenggara Oriental (NTT), la provincia a la que pertenece Sumba, por un El Niño muy fuerte, según la agencia meteorológica de Indonesia, BMKG. En su previsión nacional para 2026/2027, BMKG espera que la estación húmeda empiece en diciembre de 2026 en la mayor parte de NTT y en noviembre solo en una pequeña parte de la provincia. El pico se prevé para enero de 2027 en parte de NTT y para febrero de 2027 en la mayoría.</p><h2>Qué dice BMKG sobre este El Niño muy fuerte</h2><p>\"La estación de lluvias llega tarde y será más corta\", dijo el director de BMKG, Teuku Faisal Fathani. La agencia situó la anomalía de temperatura del mar Niño 3.4 en +2,83 a finales de agosto, un valor que clasifica como El Niño muy fuerte. A escala nacional, espera que el inicio de las lluvias llegue más tarde de lo normal en cerca del 61% de la superficie terrestre de Indonesia.</p><h2>Previsión de lluvias en NTT, mes a mes</h2><p>La estación climatológica de NTT dio cifras mensuales para la provincia: entre 0 y 20 mm de lluvia en octubre y entre 51 y 100 mm en noviembre, ambos por debajo de lo normal, y entre 201 y 300 mm en diciembre, todavía en general por debajo de lo normal. Son previsiones para toda la provincia; BMKG no publicó en estos informes cifras separadas para las cuatro regencias de Sumba.</p><h2>Cómo se preparan los agricultores de Sumba para las lluvias tardías</h2><p>En la isla, los agricultores se preparan. El viernes 6 de noviembre, un suboficial del ejército destinado en la aldea de Karita, en el distrito de Tabundung (Sumba Oriental), pidió a los campesinos que preparen ya sus campos para plantar el arroz a tiempo cuando lleguen las lluvias, según el medio local SERGAP.</p><h2>Qué significa</h2><p><strong>Visitantes:</strong> noviembre debería ser sobre todo seco, con carreteras fáciles y la sabana dorada, aunque algunas cascadas de temporada pueden llevar poca agua. Cuenta con calor y polvo; lleva agua.</p><p><strong>Residentes:</strong> BMKG pide usar el agua con moderación, estar atentos a la sequía y a los incendios de pasto, y prepararse para el dengue, las inundaciones y los deslizamientos cuando empiecen y lleguen al máximo las lluvias. Revisa ya el depósito, el pozo y los desagües, y protégete de los mosquitos a partir de diciembre.</p><p><strong>Inversores y constructores:</strong> las obras al aire libre y los viajes por carretera pueden seguir siendo más fáciles hasta diciembre, pero el agua para obras y cultivos puede escasear. Planifica lluvias más intensas en enero y febrero de 2027.</p> <p>¿Planeas el viaje según el tiempo? Nuestra <a href=\"/es/things-to-do/best-time-to-visit-sumba/\">guía mes a mes de la mejor época para ir a Sumba</a> explica cómo suelen ser las estaciones.</p>"},
-"id":{"title":"El Niño sangat kuat: musim hujan sebagian besar NTT baru Desember",
+"es":{"title":"El Niño retrasa hasta diciembre las lluvias en Sumba y casi toda NTT",
+"dek":"La agencia meteorológica indonesia prevé una estación de lluvias tardía y corta en Nusa Tenggara Oriental, la provincia de Sumba. Noviembre seguirá más seco de lo normal.",
+"body":"<p>Un episodio muy intenso de El Niño retrasará y acortará la estación de lluvias en la mayor parte de Nusa Tenggara Oriental (NTT), la provincia a la que pertenece Sumba, según la agencia meteorológica indonesia (BMKG). En su previsión nacional para 2026/2027, BMKG prevé que las lluvias comiencen en diciembre de 2026 en la mayor parte de NTT y que solo una pequeña parte de la provincia las vea llegar en noviembre. El máximo de precipitaciones se espera en enero de 2027 en parte de NTT y en febrero de 2027 en la mayor parte de la provincia.</p><h2>Qué dice BMKG sobre la intensidad de este El Niño</h2><p>\"La estación de lluvias llega tarde y será más corta\", afirmó el director de BMKG, Teuku Faisal Fathani. La agencia situó a finales de agosto la anomalía de la temperatura del mar en la región Niño 3.4 en +2,83, un valor que, según su clasificación, corresponde a un El Niño muy fuerte. A escala nacional, prevé que las lluvias empiecen más tarde de lo normal en cerca del 61% de la superficie terrestre de Indonesia.</p><h2>Previsión de lluvias en NTT, mes a mes</h2><p>La estación climatológica de NTT ofreció previsiones mensuales para la provincia: entre 0 y 20 mm de lluvia en octubre y entre 51 y 100 mm en noviembre, ambos por debajo de lo normal, y entre 201 y 300 mm en diciembre, todavía en general por debajo de lo normal. Son previsiones para toda la provincia; BMKG no publicó en estos informes cifras separadas para las cuatro regencias de Sumba.</p><h2>Cómo se preparan los agricultores de Sumba para las lluvias tardías</h2><p>En la isla, los agricultores ya se preparan. El viernes 6 de noviembre, un suboficial del ejército destinado en la aldea de Karita, en el distrito de Tabundung (Sumba Oriental), pidió a los campesinos que preparasen sus campos para poder sembrar el arroz a tiempo cuando lleguen las lluvias, según el medio local SERGAP.</p><h2>Qué significa</h2><p><strong>Visitantes:</strong> noviembre debería ser mayoritariamente seco, con carreteras transitables y la sabana dorada, aunque algunas cascadas estacionales pueden llevar poca agua. Cuenta con calor y polvo, y lleva agua.</p><p><strong>Residentes:</strong> BMKG pide usar el agua con moderación, vigilar la sequía y los incendios de pastos, y prepararse para el dengue, las inundaciones y los corrimientos de tierra al inicio y en el pico de la temporada de lluvias. Revisa ya el depósito, el pozo y los desagües, y protégete de los mosquitos a partir de diciembre.</p><p><strong>Inversores y constructores:</strong> las obras al aire libre y los desplazamientos por carretera pueden seguir siendo más sencillos hasta diciembre, pero el agua para obras y cultivos puede escasear. Hay que prever lluvias más intensas en enero y febrero de 2027.</p> <p>¿Organizas tu viaje en función del tiempo? Nuestra <a href=\"/es/things-to-do/best-time-to-visit-sumba/\">guía mes a mes de la mejor época para ir a Sumba</a> explica cómo suelen ser las estaciones.</p>"},
+"id":{"title":"El Nino sangat kuat, musim hujan di sebagian besar NTT mundur ke Desember",
 "dek":"BMKG memprakirakan musim hujan terlambat dan lebih singkat di NTT, provinsi tempat Pulau Sumba berada. November diperkirakan lebih kering dari normal.",
-"body":"<p>Musim hujan akan datang terlambat dan lebih singkat dari biasanya di sebagian besar Nusa Tenggara Timur (NTT), provinsi tempat Pulau Sumba berada, akibat El Niño sangat kuat, menurut Badan Meteorologi, Klimatologi, dan Geofisika (BMKG). Dalam prakiraan nasional 2026/2027, BMKG memperkirakan awal musim hujan jatuh pada Desember 2026 di sebagian besar NTT, dan pada November hanya di sebagian kecil provinsi ini. Puncaknya diprakirakan pada Januari 2027 di sebagian NTT dan Februari 2027 di sebagian besar NTT.</p><h2>Penjelasan BMKG soal El Niño sangat kuat</h2><p>\"Musim hujan datang terlambat dan terjadi lebih singkat,\" kata Kepala BMKG Teuku Faisal Fathani. BMKG mencatat anomali suhu muka laut Nino 3.4 sebesar +2,83 pada akhir Agustus, yang dikategorikan El Niño sangat kuat. Secara nasional, awal musim hujan diprakirakan mundur dari normalnya di sekitar 61% wilayah daratan Indonesia.</p><h2>Prakiraan curah hujan NTT per bulan</h2><p>Stasiun Klimatologi NTT memberikan angka bulanan untuk provinsi ini: curah hujan 0 sampai 20 mm pada Oktober dan 51 sampai 100 mm pada November, keduanya di bawah normal, lalu 201 sampai 300 mm pada Desember, yang umumnya masih di bawah normal. Ini prakiraan tingkat provinsi; BMKG tidak merilis angka terpisah untuk empat kabupaten di Sumba dalam prakiraan tersebut.</p><h2>Persiapan petani Sumba menghadapi hujan yang terlambat</h2><p>Di pulau ini, petani mulai bersiap. Pada Jumat, 6 November, Babinsa Koramil 04/Tabundung di Desa Karita, Kecamatan Tabundung, Sumba Timur, mengajak petani menyiapkan lahan sejak sekarang agar padi bisa ditanam tepat waktu saat hujan tiba, seperti diberitakan media lokal SERGAP.</p><h2>Apa artinya</h2><p><strong>Wisatawan:</strong> November diperkirakan sebagian besar kering, jalan lebih mudah dilalui dan sabana berwarna keemasan, tetapi beberapa air terjun musiman bisa berdebit kecil. Bersiaplah untuk panas dan debu; bawa air minum.</p><p><strong>Penduduk:</strong> BMKG meminta warga berhemat air, waspada kekeringan dan kebakaran padang rumput, serta bersiap menghadapi demam berdarah, banjir dan tanah longsor saat awal dan puncak musim hujan. Periksa tandon, sumur dan saluran air sekarang, dan lindungi diri dari nyamuk mulai Desember.</p><p><strong>Investor dan pembangun:</strong> pekerjaan luar ruang dan perjalanan darat mungkin tetap lebih mudah hingga Desember, tetapi pasokan air untuk proyek dan lahan pertanian bisa terbatas. Rencanakan hujan yang lebih lebat pada Januari dan Februari 2027.</p> <p>Merencanakan perjalanan sesuai cuaca? <a href=\"/id/things-to-do/best-time-to-visit-sumba/\">Panduan bulan per bulan waktu terbaik ke Sumba</a> menjelaskan pola musim yang biasa terjadi.</p>"},
+"body":"<p>Musim hujan akan datang terlambat dan lebih singkat dari biasanya di sebagian besar Nusa Tenggara Timur (NTT), provinsi tempat Pulau Sumba berada, akibat El Nino yang sangat kuat, menurut Badan Meteorologi, Klimatologi, dan Geofisika (BMKG). Dalam prakiraan nasional 2026/2027, BMKG memperkirakan awal musim hujan di sebagian besar NTT jatuh pada Desember 2026, sedangkan pada November hanya di sebagian kecil wilayah provinsi ini. Puncaknya diprakirakan pada Januari 2027 di sebagian NTT dan Februari 2027 di sebagian besar NTT.</p><h2>Penjelasan BMKG soal El Nino sangat kuat</h2><p>\"Musim hujan datang terlambat dan terjadi lebih singkat,\" kata Kepala BMKG Teuku Faisal Fathani. BMKG mencatat anomali suhu muka laut Nino 3.4 sebesar +2,83 pada akhir Agustus, yang masuk kategori El Nino sangat kuat. Secara nasional, awal musim hujan diprakirakan mundur dari normalnya di sekitar 61% wilayah daratan Indonesia.</p><h2>Prakiraan curah hujan NTT per bulan</h2><p>Stasiun Klimatologi NTT merilis prakiraan bulanan untuk provinsi ini: curah hujan 0 sampai 20 mm pada Oktober dan 51 sampai 100 mm pada November, keduanya di bawah normal, lalu 201 sampai 300 mm pada Desember, yang umumnya masih di bawah normal. Ini prakiraan tingkat provinsi; BMKG tidak merilis angka terpisah untuk empat kabupaten di Sumba dalam prakiraan tersebut.</p><h2>Persiapan petani Sumba menghadapi hujan yang terlambat</h2><p>Di pulau ini, petani mulai bersiap. Pada Jumat, 6 November, Babinsa Koramil 04/Tabundung di Desa Karita, Kecamatan Tabundung, Sumba Timur, mengajak petani menyiapkan lahan sejak sekarang agar padi bisa ditanam tepat waktu saat hujan tiba, seperti diberitakan media lokal SERGAP.</p><h2>Apa artinya</h2><p><strong>Wisatawan:</strong> November diperkirakan sebagian besar kering, jalan lebih mudah dilalui dan sabana berwarna keemasan, tetapi beberapa air terjun musiman bisa berdebit kecil. Bersiaplah menghadapi panas dan debu, dan bawa air minum.</p><p><strong>Penduduk:</strong> BMKG meminta warga berhemat air, waspada kekeringan dan kebakaran padang rumput, serta bersiap menghadapi demam berdarah, banjir dan tanah longsor saat awal dan puncak musim hujan. Periksa tandon, sumur dan saluran air sekarang, dan lindungi diri dari nyamuk mulai Desember.</p><p><strong>Investor dan pembangun:</strong> pekerjaan luar ruang dan perjalanan darat mungkin tetap lebih mudah hingga Desember, tetapi pasokan air untuk proyek dan lahan pertanian bisa terbatas. Perhitungkan hujan yang lebih lebat pada Januari dan Februari 2027.</p> <p>Merencanakan perjalanan sesuai cuaca? <a href=\"/id/things-to-do/best-time-to-visit-sumba/\">Panduan bulan per bulan waktu terbaik ke Sumba</a> menjelaskan pola musim yang biasa terjadi.</p>"},
 "sources":[["BMKG: El Niño Sangat Kuat sedang Terjadi, Musim Hujan 2026/2027 Diprediksi Datang Lebih Lambat (22 Sep 2026)","https://www.bmkg.go.id/siaran-pers/bmkg-el-nino-sangat-kuat-sedang-terjadi-musim-hujan-2026-2027-diprediksi-datang-lebih-lambat"],
 ["Dinas Pertanian dan Ketahanan Pangan Provinsi NTT: BMKG Prediksi Curah Hujan NTT Meningkat Bertahap hingga Desember 2026 (23 Sep 2026)","https://distankp.nttprov.go.id/prediksi-curah-hujan-ntt-oktober-desember-2026/"],
 ["detikNews: Prakiraan Awal dan Puncak Musim Hujan 2026/2027 di Indonesia (23 Sep 2026)","https://news.detik.com/berita/d-8675280/prakiraan-awal-dan-puncak-musim-hujan-2026-2027-di-indonesia"],
 ["SERGAP: Sambut Musim Hujan, Babinsa Tabundung Ajak Petani Siapkan Lahan Tanam Padi (6 Nov 2026)","https://sergap.co.id/2026/11/06/sambut-musim-hujan-babinsa-tabundung-ajak-petani-siapkan-lahan-tanam-padi/"]],
 "image":{"w":1280,"h":853,"credit":"Jordan siva","license":"CC BY-SA 4.0","license_url":"https://creativecommons.org/licenses/by-sa/4.0","page":"https://commons.wikimedia.org/wiki/File:Liarnya_keindahan_Sumba.jpg","ai":False,
 "caption":{"en":"File photo: horses graze the dry, golden savanna at Puru Kambera, East Sumba, in May 2018.",
-"es":"Foto de archivo: caballos pastan en la sabana seca y dorada de Puru Kambera, en Sumba Oriental, en mayo de 2018.",
+"es":"Foto de archivo: unos caballos pastan en la sabana seca y dorada de Puru Kambera (Sumba Oriental), en mayo de 2018.",
 "id":"Foto arsip: kuda merumput di sabana kering keemasan di Puru Kambera, Sumba Timur, Mei 2018."}}})
 
 LETTER = {"section":"low-tide","slug":"1","date":"2026-11-08",
@@ -474,7 +474,7 @@ LETTER = {"section":"low-tide","slug":"1","date":"2026-11-08",
 <p>Which of the five hurt the most? Reply with a number from 1 to 5. We read every answer, and next week we will tell you which one most people chose.</p>
 <p>From Sumba,<br><em>The Sumba Times</em></p>
 <p class="note">P.S. If you know someone who needs to read this, forward it to them. Sometimes that is all it takes.</p>"""},
-"es":{"title":"Lo que dicen los que se van","kicker":"Marea baja · Nº 1",
+"es":{"title":"Lo que dicen los que se van","kicker":"Marea baja · n.º 1",
  "dek":"Una enfermera escuchó a cientos de personas en sus últimas semanas. Repetían cinco cosas.",
  "body":"""<p>Bronnie Ware fue enfermera de cuidados paliativos en Australia durante años. Se sentaba junto a personas a las que les quedaban semanas, a veces días. Les preguntaba si se arrepentían de algo.</p>
 <p>Casi nadie habló de dinero. Casi todos dijeron alguna de estas cinco cosas:</p>
@@ -489,21 +489,21 @@ LETTER = {"section":"low-tide","slug":"1","date":"2026-11-08",
 <ol><li>Escribe en un papel una cosa que harías si nadie fuera a juzgarte. Solo escríbela.</li>
 <li>Un día de esta semana, cierra el ordenador una hora antes.</li>
 <li>Dile a alguien algo bonito que nunca le hayas dicho.</li>
-<li>Escribe hoy a un amigo con el que no hablas desde hace un año. Vale con "me he acordado de ti".</li>
-<li>Sal diez minutos antes de las 9, sin móvil. Mira el cielo.</li></ol>
+<li>Escribe hoy a un amigo con el que no hablas desde hace un año. Basta con un "me he acordado de ti".</li>
+<li>Sal a la calle diez minutos antes de las 9, sin el móvil. Mira el cielo.</li></ol>
 <h2>¿Y el mar?</h2>
-<p>En la Universidad de Exeter llevan años estudiándolo. Quienes viven cerca de la costa suelen decir que tienen mejor salud. Y en otro de sus estudios, quienes pasaban unas dos horas a la semana en la naturaleza eran los que más decían sentirse sanos y felices.</p>
+<p>Investigadores de la Universidad de Exeter llevan años estudiándolo. Quienes viven cerca de la costa suelen declarar mejor salud. Y en otro de sus estudios, quienes pasaban unas dos horas a la semana en la naturaleza eran los que con más frecuencia decían sentirse sanos y felices.</p>
 <p>Dos horas a la semana. No hace falta cambiar de vida. Basta con cambiar de semana.</p>
 <h2>Desde la isla</h2>
-<p>Las 06:12 en Sumba. Marea baja. Más de 2 km de arena sin una sola huella. Unos caballos cruzan la orilla. Nadie los guía. Nadie mira el móvil.</p>
+<p>Son las 06:12 en Sumba. Marea baja. Más de 2 km de arena sin una sola huella. Unos caballos cruzan la orilla. Nadie los guía. Nadie mira el móvil.</p>
 <h2>Tu gente</h2>
-<p>Somos más de 160.000 personas en 176 países. Casi nadie nos conocemos. Algunos lo haremos un día, en una playa.</p>
+<p>Somos más de 160.000 personas en 176 países. La mayoría no nos conocemos. Algunos lo haremos un día, en una playa.</p>
 <h2>Una pregunta</h2>
 <p>¿Cuál de las cinco frases te ha dolido más? Responde con un número del 1 al 5. Leemos todas las respuestas y en la próxima carta te contamos cuál eligió más gente.</p>
 <p>Desde Sumba,<br><em>The Sumba Times</em></p>
-<p class="note">P.D. Si conoces a alguien que necesita leer esto, reenvíaselo. A veces es lo único que hace falta.</p>"""},
+<p class="note">P.D. Si conoces a alguien que necesite leer esto, reenvíaselo. A veces es lo único que hace falta.</p>"""},
 "id":{"title":"Kata mereka di akhir hidup","kicker":"Air Surut · No. 1",
- "dek":"Seorang perawat mendengarkan ratusan orang di minggu-minggu terakhir hidup mereka. Mereka terus mengucapkan lima hal.",
+ "dek":"Seorang perawat mendengarkan ratusan orang di minggu-minggu terakhir hidup mereka. Lima hal ini terus mereka ucapkan.",
  "body":"""<p>Bronnie Ware bertahun-tahun bekerja sebagai perawat paliatif di Australia. Ia duduk menemani orang-orang yang hidupnya tinggal beberapa minggu, kadang beberapa hari. Ia bertanya apakah mereka menyesali sesuatu.</p>
 <p>Hampir tidak ada yang membicarakan uang. Hampir semua mengatakan salah satu dari lima hal ini:</p>
 <ol class="regrets"><li>Andai saya berani menjalani hidup sesuai keinginan saya sendiri, bukan hidup yang diharapkan orang lain.</li>
@@ -516,10 +516,10 @@ LETTER = {"section":"low-tide","slug":"1","date":"2026-11-08",
 <h2>Lima hal untuk minggu ini</h2>
 <ol><li>Tulis satu hal yang akan Anda lakukan seandainya tidak ada yang menghakimi. Cukup tuliskan.</li>
 <li>Satu hari minggu ini, tutup laptop satu jam lebih awal.</li>
-<li>Katakan sesuatu yang baik kepada seseorang, yang belum pernah Anda katakan.</li>
+<li>Sampaikan kepada seseorang hal baik yang belum pernah Anda katakan kepadanya.</li>
 <li>Kirim pesan kepada teman yang sudah setahun tidak Anda ajak bicara. "Aku teringat kamu" sudah cukup.</li>
 <li>Keluarlah sepuluh menit sebelum jam 9 pagi, tanpa ponsel. Pandangi langit.</li></ol>
-<h2>Lalu, laut?</h2>
+<h2>Bagaimana dengan laut?</h2>
 <p>Para peneliti di University of Exeter sudah bertahun-tahun menelitinya. Orang yang tinggal dekat pantai cenderung merasa lebih sehat. Dalam penelitian lain mereka, orang yang menghabiskan sekitar dua jam seminggu di alam paling sering mengaku merasa sehat dan bahagia.</p>
 <p>Dua jam seminggu. Bukan hidup baru. Cukup minggu yang berbeda.</p>
 <h2>Dari pulau</h2>
