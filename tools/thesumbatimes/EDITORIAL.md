@@ -2,6 +2,8 @@
 
 Machine check: `python3 check.py --recent` after `python3 build.py` (errors block publishing; warnings point to the item numbers below).
 
+Spanish and Indonesian: write natively following guides/STYLE_ES_ID.md (never translate word for word; e.g. "El Niño retrasa hasta diciembre las lluvias en Sumba", not "El Niño muy fuerte retrasa").
+
 Read this before writing any story. The build already does the items marked [auto]; the writer must do the rest, in EVERY language (en, es, id).
 
 ## Editorial line (what to publish)
