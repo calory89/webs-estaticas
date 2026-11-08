@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "__MSG_name__",
   "short_name": "Kolaboro X-ray",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "__MSG_description__",
   "default_locale": "en",
   "homepage_url": "https://kolaboro.com/extension/",
@@ -26,6 +26,11 @@
         "https://*.zillow.com/*"
       ],
       "js": ["i18n.js", "kx.js", "content.js"],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": ["https://mail.google.com/mail/*"],
+      "js": ["i18n.js", "kx.js", "mailcheck.js", "mail.js"],
       "run_at": "document_idle"
     }
   ],

@@ -2,7 +2,7 @@
 // Run: node tools/kolaboro-extension/test/ext.test.mjs [outDir]   (needs playwright + its Chromium; network access)
 // Checks: the extension loads, the popup recognises a tracked project from a developer site and runs a live X-ray to the sealed
 // result, the in-page panel appears on portal listing pages we track (by address), unknown listing pages get the small button only,
-// no errors from extension code. Portals that block automated browsers are reported as "blocked", not as failures of the extension.
+// no errors from extension code, and (v2.1) the payment email panel on a copy of Gmail's message markup. Portals that block automated browsers are reported as "blocked", not as failures of the extension.
 import { createRequire } from 'node:module';
 import path from 'node:path';
 import fs from 'node:fs';
@@ -126,6 +126,47 @@ for (const [name, url, expect, rx] of PAGES) {
     }
   } else log(name, true, p ? (/In our records/.test(p.text) ? 'panel: ' : 'button: ') + p.text.slice(0, 100) : 'no panel (not a listing page by our rules, or not tracked)');
   await page.close();
+}
+
+// Gmail web (v2.1): the payment email panel on a local copy of Gmail's message markup (we cannot sign in to a real mailbox here).
+// Case 1: lookalike sender + Reply-To elsewhere + changed bank details -> panel with warnings. Case 2: an email with no payment -> nothing.
+{
+  const gm = (from, name, body, rows) => '<!doctype html><html><body><div role="main"><div class="adn ads"><h3><span class="gD" email="' + from + '" name="' + name + '">' + name + '</span></h3>' +
+    (rows ? '<table><tbody>' + rows.map(r => '<tr><td>' + r[0] + '</td><td><span>' + r[1] + '</span></td></tr>').join('') + '</tbody></table>' : '') +
+    '<div class="a3s aiL">' + body + '</div></div></div></body></html>';
+  const CASES = [
+    ['Gmail: lookalike sender asking to pay', gm('accounts@damacproperties.co', 'DAMAC Accounts', '<p>Dear client, our bank details have changed due to an audit. Please do not use the old account and transfer the instalment today to the new account: GB82 WEST 1234 5698 7654 32.</p>', [['reply-to:', 'DAMAC Finance &lt;finance.damac@gmail.com&gt;'], ['mailed-by:', 'damacproperties.co']]), /looks like damacproperties\.com/],
+    ['Gmail: email without a payment', gm('friend@example.org', 'A friend', '<p>See you on Saturday at the beach.</p>', null), null]
+  ];
+  async function shadowText(page, id) {
+    const s = await ctx.newCDPSession(page);
+    const { root } = await s.send('DOM.getDocument', { depth: -1, pierce: true });
+    let host = null; const walk = n => { if (host) return; if (n.attributes && n.attributes.includes(id)) host = n; (n.children || []).forEach(walk); (n.shadowRoots || []).forEach(walk); };
+    walk(root); if (!host) { await s.detach(); return null; }
+    let text = ''; const collect = n => { if (n.nodeName === 'STYLE') return; if (n.nodeType === 3) text += n.nodeValue + ' '; (n.children || []).forEach(collect); (n.shadowRoots || []).forEach(collect); };
+    (host.shadowRoots || []).forEach(collect); await s.detach(); return text.replace(/\s+/g, ' ').trim();
+  }
+  for (const [name, html, rx] of CASES) {
+    const page = await ctx.newPage();
+    page.on('pageerror', e => { if (String(e.stack || '').includes('chrome-extension://' + extId)) extErrors.push(name + ': ' + e.message); });
+    await page.route('https://mail.google.com/**', r => r.fulfill({ status: 200, contentType: 'text/html', body: html }));
+    await page.goto('https://mail.google.com/mail/u/0/#inbox/test', { waitUntil: 'domcontentloaded' });
+    let txt = null; for (let i = 0; i < 12; i++) { await page.waitForTimeout(1000); txt = await shadowText(page, 'kolaboro-mail'); if (txt && /registered|DMARC/.test(txt)) break; }
+    if (rx) {
+      const ok = !!txt && rx.test(txt) && /call the developer/i.test(txt) && /Replies go to gmail\.com/.test(txt) && /bank details changed/i.test(txt);
+      log(name, ok, txt ? txt.slice(0, 260) : 'no panel');
+      await page.screenshot({ path: path.join(OUT, 'gmail-panel.png') });
+      await page.setViewportSize({ width: 390, height: 844 }); await page.waitForTimeout(400); await page.screenshot({ path: path.join(OUT, 'gmail-panel-390.png') }); await page.setViewportSize({ width: 1440, height: 900 });
+    } else log(name, !txt, txt ? 'panel shown: ' + txt.slice(0, 80) : 'no panel, as expected');
+    await page.close();
+  }
+  // the extension's copy of the checks must equal the library part of the live page script
+  try {
+    const live = await (await fetch('https://kolaboro.com/tools/payment-email-check/pec.js')).text();
+    const mine = fs.readFileSync(path.join(EXT, 'mailcheck.js'), 'utf8');
+    const part = s => s.slice(s.indexOf('  var SLD = {'), s.indexOf('function wording(text)'));
+    log('Gmail checks identical to /tools/payment-email-check/pec.js', part(live).length > 1000 && part(live) === part(mine));
+  } catch (e) { log('Gmail checks identical to /tools/payment-email-check/pec.js', false, String(e)); }
 }
 log('no errors from extension code', extErrors.length === 0, extErrors.slice(0, 5).join(' | '));
 await ctx.close();
