@@ -297,7 +297,7 @@ def head(l, title, desc, path_tpl, og_type="website", extra="", image=None, noin
 <meta name="theme-color" content="#f7f3ec" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#141311" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/manifest.webmanifest">
 <link rel="alternate" type="application/rss+xml" title="The Sumba Times" href="{BASE}/{l}/feed.xml"><link rel="search" type="application/opensearchdescription+xml" title="The Sumba Times" href="/opensearch.xml">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+<link rel="preload" href="/fonts/cormorant-garamond-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin><style>@font-face{{font-family:"Cormorant Garamond";font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/cormorant-garamond-latin-700-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}}@font-face{{font-family:"Cormorant Garamond";font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/cormorant-garamond-latin-ext-700-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}}</style>
 {THEME_JS}<style>{CSS}</style>
 <script>(function(c,l,a,r,i,t,y){{c[a]=c[a]||function(){{(c[a].q=c[a].q||[]).push(arguments)}};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);}})(window,document,"clarity","script","{CLARITY}");</script>
 {extra}</head><body><a class="skip" href="#main">{X[l]["skip"]}</a>"""
@@ -925,6 +925,10 @@ SW_JS = "const V='tst-v1';\nself.addEventListener('install',e=>{self.skipWaiting
 
 def assets():
     write("/sw.js", SW_JS)
+    import shutil
+    os.makedirs(os.path.join(OUT, "fonts"), exist_ok=True)
+    for fn in os.listdir(os.path.join(os.path.dirname(OUT), "static", "fonts")):
+        shutil.copy(os.path.join(os.path.dirname(OUT), "static", "fonts", fn), os.path.join(OUT, "fonts", fn))
     write("/favicon.svg", '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="10" fill="#1d1b18"/><text x="32" y="45" font-family="Georgia,serif" font-size="38" text-anchor="middle" fill="#f7f3ec">S</text></svg>')
     write("/manifest.webmanifest", json.dumps({"name": "The Sumba Times", "short_name": "Sumba Times", "start_url": "/", "display": "standalone", "background_color": "#f7f3ec", "theme_color": "#1d1b18",
         "icons": [{"src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png"}, {"src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml"}]}))

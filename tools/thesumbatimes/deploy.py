@@ -17,10 +17,10 @@ JS = "const F=" + json.dumps(F, ensure_ascii=False) + r""";
 const RD=F['/_redirects.json']?JSON.parse(F['/_redirects.json'].t):{};
 const ES=new Set(['ES','MX','AR','CO','CL','PE','VE','EC','GT','CU','BO','DO','HN','PY','SV','NI','CR','PA','UY','PR','GQ']);
 const BOT=/bot|crawl|spider|slurp|facebookexternalhit|embedly|preview|whatsapp|telegram|lighthouse|headless|gptbot|claude|anthropic|perplexity|google-extended|ccbot|bytespider|applebot|bingpreview/i;
-const CT={html:'text/html; charset=utf-8',xml:'application/xml; charset=utf-8',txt:'text/plain; charset=utf-8',md:'text/markdown; charset=utf-8',svg:'image/svg+xml',png:'image/png',json:'application/json; charset=utf-8',webmanifest:'application/manifest+json',webp:'image/webp',jpg:'image/jpeg',js:'application/javascript; charset=utf-8'};
+const CT={html:'text/html; charset=utf-8',xml:'application/xml; charset=utf-8',txt:'text/plain; charset=utf-8',md:'text/markdown; charset=utf-8',svg:'image/svg+xml',png:'image/png',woff2:'font/woff2',json:'application/json; charset=utf-8',webmanifest:'application/manifest+json',webp:'image/webp',jpg:'image/jpeg',js:'application/javascript; charset=utf-8'};
 const SEC={'x-content-type-options':'nosniff','referrer-policy':'strict-origin-when-cross-origin','strict-transport-security':'max-age=31536000; includeSubDomains','permissions-policy':'camera=(), microphone=(), geolocation=()','x-frame-options':'SAMEORIGIN'};
 function hdr(ext,cache){return Object.assign({'content-type':CT[ext]||'application/octet-stream','cache-control':cache},SEC);}
-function resp(p,status){const f=F[p];const ext=p.split('.').pop();const cache=ext==='html'?'public, max-age=300, stale-while-revalidate=600':(ext==='xml'||ext==='json')?'public, max-age=600':'public, max-age=86400';
+function resp(p,status){const f=F[p];const ext=p.split('.').pop();const cache=ext==='woff2'?'public, max-age=31536000, immutable':ext==='html'?'public, max-age=300, stale-while-revalidate=600':(ext==='xml'||ext==='json')?'public, max-age=600':'public, max-age=86400';
  const h=hdr(ext,cache);if(f.b64){const b=Uint8Array.from(atob(f.b64),c=>c.charCodeAt(0));return new Response(b,{status,headers:h});}return new Response(f.t,{status,headers:h});}
 
 const AI_URL='https://gmdalfsvtfhzepyrdmjj.supabase.co/functions/v1/sumba-ai';
