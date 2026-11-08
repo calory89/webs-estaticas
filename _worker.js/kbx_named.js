@@ -28,7 +28,8 @@ import { seoLd } from './kbx_lastmod.js';   // batch 15 (s15b): true dateModifie
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v30';   // v30: time machine and construction stage estimate in the from-space section (n18b)
+const CACHE_V = 'named-v31';   // v31: prices over time, headline only after a word like from or price (n18d)
+//   // v30: time machine and construction stage estimate in the from-space section (n18b)
 //   // v29: prices over time (#prices) and planning records near the site (#planning) (n18d)
 //   // v28: website health (#web, #webhealth) and shared website identifiers (#weblinks) (n18a)
 //   // v26: radar and building footprints inside the from-space section (n17b)

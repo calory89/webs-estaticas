@@ -40,7 +40,7 @@ export async function paperData(env) {
 
 // ------------------------------------------------------------------------------------------------ strings for named pages (8 languages)
 const N = {
-  en: { ph_h: 'Prices over time', ph_toc: 'Prices',
+  en: { ph_nohead: 'No price on this page is introduced by a word like "from" or "price", so we list the prices as printed and pick no headline.', ph_h: 'Prices over time', ph_toc: 'Prices',
     ph_intro: 'Prices printed on the page we track ({host}), by date of our copy. Currency as printed; we convert nothing.',
     ph_first: 'First headline price we hold: {p} ({d}).', ph_last: 'Latest: {p} ({d}).', ph_same: 'The headline price is the same in all {n} dated copies.',
     ph_chg: 'Change from the first to the latest copy, in {cur}: {pct}.', ph_cur2: 'Copies show the headline in more than one currency, so we do not compute a change.',
@@ -56,7 +56,7 @@ const N = {
     pl_out: 'This site is outside England. Scotland, Wales and Northern Ireland run their own planning portals and have no national open API. Search the council\'s portal, for Scotland:',
     pl_lic: 'Licence', pl_priv: 'We never copy names, phone numbers or e-mail addresses of applicants, owners or contractors.', pl_rule_nyc: 'Shown: new-building filings and other filings with an estimated cost of USD 1 million or more.',
     pl_rule_mia: 'Shown: permits with a total cost of USD 1 million or more. City of Miami only.', pl_cost: 'cost', pl_load: 'Asking the register', pl_live_none: 'No record found within 200 m today.', pl_live_err: 'The register is not answering right now. Try again later.', pl_stale: 'Last good answer, from {d}.' },
-  es: { ph_h: 'Precios a lo largo del tiempo', ph_toc: 'Precios',
+  es: { ph_nohead: 'Ningún precio de esta página va precedido de palabras como "desde" o "precio", así que listamos los precios tal como aparecen sin elegir uno destacado.', ph_h: 'Precios a lo largo del tiempo', ph_toc: 'Precios',
     ph_intro: 'Precios impresos en la página que seguimos ({host}), por fecha de nuestra copia. Moneda tal como aparece; no convertimos nada.',
     ph_first: 'Primer precio destacado que tenemos: {p} ({d}).', ph_last: 'Último: {p} ({d}).', ph_same: 'El precio destacado es el mismo en las {n} copias fechadas.',
     ph_chg: 'Cambio de la primera a la última copia, en {cur}: {pct}.', ph_cur2: 'Las copias muestran el precio en más de una moneda, así que no calculamos un cambio.',
@@ -72,7 +72,7 @@ const N = {
     pl_out: 'Este solar está fuera de Inglaterra. Escocia, Gales e Irlanda del Norte tienen sus propios portales sin API abierta nacional. Busque en el portal del ayuntamiento; para Escocia:',
     pl_lic: 'Licencia', pl_priv: 'Nunca copiamos nombres, teléfonos ni correos de solicitantes, propietarios o constructores.', pl_rule_nyc: 'Se muestran: solicitudes de obra nueva y otras con un coste estimado de 1 millón de USD o más.',
     pl_rule_mia: 'Se muestran: permisos con un coste total de 1 millón de USD o más. Solo la ciudad de Miami.', pl_cost: 'coste', pl_load: 'Consultando el registro', pl_live_none: 'Hoy no hay ningún registro a menos de 200 m.', pl_live_err: 'El registro no responde ahora. Inténtelo más tarde.', pl_stale: 'Última respuesta válida, del {d}.' },
-  fr: { ph_h: 'Les prix dans le temps', ph_toc: 'Prix',
+  fr: { ph_nohead: 'Aucun prix de cette page n\'est introduit par un mot comme « à partir de » ou « prix » ; nous listons donc les prix tels qu\'imprimés, sans prix affiché.', ph_h: 'Les prix dans le temps', ph_toc: 'Prix',
     ph_intro: 'Prix imprimés sur la page que nous suivons ({host}), par date de notre copie. Devise telle qu\'imprimée ; nous ne convertissons rien.',
     ph_first: 'Premier prix affiché que nous avons : {p} ({d}).', ph_last: 'Dernier : {p} ({d}).', ph_same: 'Le prix affiché est le même dans les {n} copies datées.',
     ph_chg: 'Variation de la première à la dernière copie, en {cur} : {pct}.', ph_cur2: 'Les copies affichent le prix dans plusieurs devises ; nous ne calculons donc pas de variation.',
@@ -88,7 +88,7 @@ const N = {
     pl_out: 'Ce terrain est hors d\'Angleterre. L\'Écosse, le pays de Galles et l\'Irlande du Nord ont leurs propres portails, sans API ouverte nationale. Cherchez sur le portail du conseil ; pour l\'Écosse :',
     pl_lic: 'Licence', pl_priv: 'Nous ne copions jamais les noms, téléphones ou e-mails des demandeurs, propriétaires ou entrepreneurs.', pl_rule_nyc: 'Affichés : demandes de construction neuve et autres demandes d\'un coût estimé d\'au moins 1 million USD.',
     pl_rule_mia: 'Affichés : permis d\'un coût total d\'au moins 1 million USD. Ville de Miami uniquement.', pl_cost: 'coût', pl_load: 'Interrogation du registre', pl_live_none: 'Aucun dossier à moins de 200 m aujourd\'hui.', pl_live_err: 'Le registre ne répond pas pour le moment. Réessayez plus tard.', pl_stale: 'Dernière réponse valide, du {d}.' },
-  de: { ph_h: 'Preise im Zeitverlauf', ph_toc: 'Preise',
+  de: { ph_nohead: 'Kein Preis auf dieser Seite steht nach einem Wort wie „ab“ oder „Preis“; wir listen die Preise wie angegeben und wählen keinen angezeigten Preis.', ph_h: 'Preise im Zeitverlauf', ph_toc: 'Preise',
     ph_intro: 'Preise, die auf der von uns verfolgten Seite ({host}) stehen, nach Datum unserer Kopie. Währung wie angegeben; wir rechnen nichts um.',
     ph_first: 'Erster angezeigter Preis in unseren Kopien: {p} ({d}).', ph_last: 'Neuester: {p} ({d}).', ph_same: 'Der angezeigte Preis ist in allen {n} datierten Kopien gleich.',
     ph_chg: 'Änderung von der ersten zur neuesten Kopie, in {cur}: {pct}.', ph_cur2: 'Die Kopien zeigen den Preis in mehr als einer Währung, daher berechnen wir keine Änderung.',
@@ -104,7 +104,7 @@ const N = {
     pl_out: 'Dieses Grundstück liegt außerhalb Englands. Schottland, Wales und Nordirland haben eigene Portale ohne landesweite offene Schnittstelle. Suchen Sie im Portal der Gemeinde; für Schottland:',
     pl_lic: 'Lizenz', pl_priv: 'Wir übernehmen nie Namen, Telefonnummern oder E-Mail-Adressen von Antragstellern, Eigentümern oder Baufirmen.', pl_rule_nyc: 'Angezeigt: Neubauanträge und andere Anträge mit geschätzten Kosten ab 1 Mio. USD.',
     pl_rule_mia: 'Angezeigt: Genehmigungen mit Gesamtkosten ab 1 Mio. USD. Nur Stadt Miami.', pl_cost: 'Kosten', pl_load: 'Register wird abgefragt', pl_live_none: 'Heute kein Eintrag im Umkreis von 200 m.', pl_live_err: 'Das Register antwortet gerade nicht. Bitte später erneut versuchen.', pl_stale: 'Letzte gültige Antwort vom {d}.' },
-  nl: { ph_h: 'Prijzen door de tijd', ph_toc: 'Prijzen',
+  nl: { ph_nohead: 'Geen prijs op deze pagina staat na een woord als "vanaf" of "prijs", dus we tonen de prijzen zoals vermeld zonder getoonde prijs te kiezen.', ph_h: 'Prijzen door de tijd', ph_toc: 'Prijzen',
     ph_intro: 'Prijzen die op de pagina staan die we volgen ({host}), per datum van onze kopie. Valuta zoals vermeld; we rekenen niets om.',
     ph_first: 'Eerste getoonde prijs in onze kopieën: {p} ({d}).', ph_last: 'Laatste: {p} ({d}).', ph_same: 'De getoonde prijs is gelijk in alle {n} gedateerde kopieën.',
     ph_chg: 'Verandering van de eerste naar de laatste kopie, in {cur}: {pct}.', ph_cur2: 'De kopieën tonen de prijs in meer dan één valuta, dus we berekenen geen verandering.',
@@ -120,7 +120,7 @@ const N = {
     pl_out: 'Dit terrein ligt buiten Engeland. Schotland, Wales en Noord-Ierland hebben eigen portalen zonder landelijke open API. Zoek in het portaal van de gemeente; voor Schotland:',
     pl_lic: 'Licentie', pl_priv: 'We nemen nooit namen, telefoonnummers of e-mailadressen van aanvragers, eigenaren of aannemers over.', pl_rule_nyc: 'Getoond: aanvragen voor nieuwbouw en andere aanvragen met geschatte kosten vanaf 1 miljoen USD.',
     pl_rule_mia: 'Getoond: vergunningen met totale kosten vanaf 1 miljoen USD. Alleen de stad Miami.', pl_cost: 'kosten', pl_load: 'Register wordt geraadpleegd', pl_live_none: 'Vandaag geen dossier binnen 200 m.', pl_live_err: 'Het register antwoordt nu niet. Probeer het later opnieuw.', pl_stale: 'Laatste geldige antwoord, van {d}.' },
-  ru: { ph_h: 'Цены во времени', ph_toc: 'Цены',
+  ru: { ph_nohead: 'Ни одна цена на этой странице не идёт после слов вроде «от» или «цена», поэтому мы показываем цены как есть, без заявленной цены.', ph_h: 'Цены во времени', ph_toc: 'Цены',
     ph_intro: 'Цены, напечатанные на странице, которую мы отслеживаем ({host}), по дате нашей копии. Валюта как на странице; мы ничего не пересчитываем.',
     ph_first: 'Первая заявленная цена в наших копиях: {p} ({d}).', ph_last: 'Последняя: {p} ({d}).', ph_same: 'Заявленная цена одинакова во всех {n} датированных копиях.',
     ph_chg: 'Изменение от первой до последней копии, в {cur}: {pct}.', ph_cur2: 'В копиях цена указана в разных валютах, поэтому изменение не считаем.',
@@ -136,7 +136,7 @@ const N = {
     pl_out: 'Участок находится вне Англии. У Шотландии, Уэльса и Северной Ирландии свои порталы без общенационального открытого API. Ищите на портале совета; для Шотландии:',
     pl_lic: 'Лицензия', pl_priv: 'Мы никогда не копируем имена, телефоны и e-mail заявителей, владельцев или подрядчиков.', pl_rule_nyc: 'Показаны: заявки на новое строительство и другие заявки со сметой от 1 млн USD.',
     pl_rule_mia: 'Показаны: разрешения с общей стоимостью от 1 млн USD. Только город Майами.', pl_cost: 'стоимость', pl_load: 'Запрашиваем реестр', pl_live_none: 'Сегодня записей в радиусе 200 м нет.', pl_live_err: 'Реестр сейчас не отвечает. Попробуйте позже.', pl_stale: 'Последний успешный ответ от {d}.' },
-  zh: { ph_h: '价格变化', ph_toc: '价格',
+  zh: { ph_nohead: '该页面上没有价格出现在“起”或“价格”等词之后，因此我们按原样列出价格，不选取标价。', ph_h: '价格变化', ph_toc: '价格',
     ph_intro: '我们跟踪的页面（{host}）上印出的价格，按我们副本的日期排列。货币按原样显示，我们不做换算。',
     ph_first: '我们最早的标价：{p}（{d}）。', ph_last: '最新：{p}（{d}）。', ph_same: '所有 {n} 份带日期的副本中标价相同。',
     ph_chg: '从最早到最新副本的变化（{cur}）：{pct}。', ph_cur2: '各副本的标价使用了不同货币，因此我们不计算变化。',
@@ -152,7 +152,7 @@ const N = {
     pl_out: '该地块不在英格兰。苏格兰、威尔士和北爱尔兰有各自的规划门户，没有全国性的开放接口。请在当地议会门户查询；苏格兰：',
     pl_lic: '许可', pl_priv: '我们从不复制申请人、业主或承包商的姓名、电话或电子邮件。', pl_rule_nyc: '显示：新建建筑申请，以及估算费用 100 万美元及以上的其他申请。',
     pl_rule_mia: '显示：总费用 100 万美元及以上的许可。仅限迈阿密市。', pl_cost: '费用', pl_load: '正在查询登记册', pl_live_none: '今天 200 米范围内没有记录。', pl_live_err: '登记册暂时没有响应，请稍后再试。', pl_stale: '最后一次有效结果，日期 {d}。' },
-  ar: { ph_h: 'الأسعار عبر الزمن', ph_toc: 'الأسعار',
+  ar: { ph_nohead: 'لا يأتي أي سعر في هذه الصفحة بعد كلمة مثل «ابتداءً من» أو «السعر»، لذا نعرض الأسعار كما طُبعت دون اختيار سعر رئيسي.', ph_h: 'الأسعار عبر الزمن', ph_toc: 'الأسعار',
     ph_intro: 'الأسعار المطبوعة على الصفحة التي نتابعها ({host})، حسب تاريخ نسختنا. العملة كما طُبعت؛ لا نحوّل شيئًا.',
     ph_first: 'أول سعر رئيسي لدينا: {p} ({d}).', ph_last: 'الأحدث: {p} ({d}).', ph_same: 'السعر الرئيسي نفسه في جميع النسخ المؤرخة وعددها {n}.',
     ph_chg: 'التغير من أول نسخة إلى أحدث نسخة، بعملة {cur}: {pct}.', ph_cur2: 'تعرض النسخ السعر بأكثر من عملة، لذا لا نحسب التغير.',
@@ -207,14 +207,15 @@ export function pricesHtml(pd, x, lang) {
   if (!pts.length) return '<p class="ki">' + esc(nt(lang, 'ph_nocopy')) + json + '</p>';
   const nC = pts.filter(p => p.src === 'copy').length, nI = pts.filter(p => p.src === 'ia').length;
   const intro = '<p class="ki">' + esc(nt(lang, 'ph_intro', { host: hostOf(url) || '-' })) + '</p>';
-  const withP = pts.filter(p => p.head);
-  if (!withP.length) return intro + '<ul class="fl"><li class="kfact">' + esc(nt(lang, 'ph_none', { n: pts.length, a: fdt(pts[0].d, lang), b: fdt(pts[pts.length - 1].d, lang) })) +
+  const withP = pts.filter(p => p.head), anyP = pts.some(p => (p.all || []).some(a => a.k === 'price'));
+  if (!anyP) return intro + '<ul class="fl"><li class="kfact">' + esc(nt(lang, 'ph_none', { n: pts.length, a: fdt(pts[0].d, lang), b: fdt(pts[pts.length - 1].d, lang) })) +
     ' <a class="src" href="' + esc(copyHref(x, pts[pts.length - 1], url)) + '"' + (pts[pts.length - 1].src === 'ia' ? ' rel="nofollow noopener" target="_blank"' : '') + '>' + esc(nt(lang, 'ph_open')) + '</a></li></ul><p class="k-small k-muted">' + esc(nt(lang, 'ph_src', { a: nC, b: nI })) + json + '</p>';
-  const first = withP[0], last = withP[withP.length - 1];
+  const first = withP[0] || null, last = withP[withP.length - 1] || null;
   const curs = [...new Set(withP.map(p => p.head.cur))];
   const L = [];
   const src = p => ' <a class="src" href="' + esc(copyHref(x, p, url)) + '"' + (p.src === 'ia' ? ' rel="nofollow noopener" target="_blank"' : '') + '>' + esc(nt(lang, p.src === 'ia' ? 'ph_ia' : 'ph_copy')) + '</a>';
-  L.push('<li class="kfact">' + esc(nt(lang, 'ph_first', { p: first.head.p, d: fdt(first.d, lang) })).replace(esc(first.head.p), ltr(first.head.p)) + src(first) + '</li>');
+  if (!first) L.push('<li class="kfact">' + esc(nt(lang, 'ph_nohead')) + src(pts[pts.length - 1]) + '</li>');
+  else L.push('<li class="kfact">' + esc(nt(lang, 'ph_first', { p: first.head.p, d: fdt(first.d, lang) })).replace(esc(first.head.p), ltr(first.head.p)) + src(first) + '</li>');
   if (withP.length > 1) {
     L.push('<li class="kfact">' + esc(nt(lang, 'ph_last', { p: last.head.p, d: fdt(last.d, lang) })).replace(esc(last.head.p), ltr(last.head.p)) + src(last) + '</li>');
     if (curs.length > 1) L.push('<li class="kfact">' + esc(nt(lang, 'ph_cur2')) + src(last) + '</li>');
@@ -228,8 +229,9 @@ export function pricesHtml(pd, x, lang) {
     const ctx = p.head && p.head.c && !OPINION.test(p.head.c) ? '<br><small class="k-muted kph-ctx" dir="auto">' + esc(MASK(p.head.c)) + '</small>' : '';
     const others = (p.all || []).filter(a => !(p.head && a.cur === p.head.cur && a.v === p.head.v));
     const oth = others.slice(0, 4).map(a => ltr(a.p) + kind(a.k)).join(', ') + (others.length > 4 ? ' ' + '+' + (others.length - 4) : '');
-    return '<tr class="kfact"><td data-label="' + esc(th[0]) + '">' + esc(fdt(p.d, lang)) + '</td><td data-label="' + esc(th[1]) + '"><a class="src" href="' + esc(copyHref(x, p, url)) + '"' + (p.src === 'ia' ? ' rel="nofollow noopener" target="_blank"' : '') + '>' + esc(nt(lang, p.src === 'ia' ? 'ph_ia' : 'ph_copy')) + '</a></td>' +
-      '<td data-label="' + esc(th[2]) + '">' + (p.head ? '<b>' + ltr(p.head.p) + '</b>' + ctx : '<span class="k-muted">' + esc(nt(lang, 'ph_noprice')) + '</span>') + '</td><td data-label="' + esc(th[3]) + '">' + (oth || '<span class="k-muted">-</span>') + '</td></tr>';
+    const noP = !(p.all || []).some(a => a.k === 'price');
+    return '<tr class="kfact"><td data-label="' + esc(th[0]) + '"><span>' + esc(fdt(p.d, lang)) + '</span></td><td data-label="' + esc(th[1]) + '"><span><a class="src" href="' + esc(copyHref(x, p, url)) + '"' + (p.src === 'ia' ? ' rel="nofollow noopener" target="_blank"' : '') + '>' + esc(nt(lang, p.src === 'ia' ? 'ph_ia' : 'ph_copy')) + '</a></span></td>' +
+      '<td data-label="' + esc(th[2]) + '"><span>' + (p.head ? '<b>' + ltr(p.head.p) + '</b>' + ctx : '<span class="k-muted">' + (noP ? esc(nt(lang, 'ph_noprice')) : '-') + '</span>') + '</span></td><td data-label="' + esc(th[3]) + '"><span>' + (oth || '<span class="k-muted">-</span>') + '</span></td></tr>';
   }).join('');
   return intro + '<ul class="fl">' + L.join('') + '</ul>' + (main ? chart(pts, main, x, url, lang) : '') +
     '<div class="k-table-wrap"><table class="k-table k-table--dense k-table--stack kph-t"><thead><tr>' + th.map(h => '<th scope="col">' + esc(h) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div>' +
@@ -239,8 +241,8 @@ export function pricesHtml(pd, x, lang) {
 function planRows(items, lang) {
   const th = nt(lang, 'pl_th');
   return '<div class="k-table-wrap"><table class="k-table k-table--dense k-table--stack kpl-t"><thead><tr>' + th.map(h => '<th scope="col">' + esc(h) + '</th>').join('') + '</tr></thead><tbody>' +
-    items.map(it => '<tr class="kfact"><td data-label="' + esc(th[0]) + '"><a class="src" href="' + esc(it.url) + '" rel="nofollow noopener" target="_blank">' + ltr(it.ref || '-') + '</a></td><td data-label="' + esc(th[1]) + '">' + esc(MASK(it.name || '-')) + '</td>' +
-      '<td data-label="' + esc(th[2]) + '">' + esc(MASK(it.desc || '-')) + (it.cost ? ' <small class="k-muted">(' + esc(nt(lang, 'pl_cost')) + ' ' + ltr((it.cur || '') + ' ' + nf(it.cost, lang)) + ')</small>' : '') + '</td>' +
+    items.map(it => '<tr class="kfact"><td data-label="' + esc(th[0]) + '"><span><a class="src" href="' + esc(it.url) + '" rel="nofollow noopener" target="_blank">' + ltr(it.ref || '-') + '</a></span></td><td data-label="' + esc(th[1]) + '">' + esc(MASK(it.name || '-')) + '</td>' +
+      '<td data-label="' + esc(th[2]) + '"><span>' + esc(MASK(it.desc || '-')) + (it.cost ? ' <small class="k-muted">(' + esc(nt(lang, 'pl_cost')) + ' ' + ltr((it.cur || '') + ' ' + nf(it.cost, lang)) + ')</small>' : '') + '</span></td>' +
       '<td data-label="' + esc(th[3]) + '">' + esc(it.status || '-') + '</td><td data-label="' + esc(th[4]) + '">' + (it.d_in ? esc(fdt(it.d_in, lang)) : '-') + '</td><td data-label="' + esc(th[5]) + '">' + (it.d_dec ? esc(fdt(it.d_dec, lang)) : '-') + '</td>' +
       '<td data-label="' + esc(th[6]) + '" class="k-n">' + (it.dist_m != null ? esc(nf(it.dist_m, lang)) + ' m' : '-') + '</td></tr>').join('') + '</tbody></table></div>';
 }
@@ -271,7 +273,7 @@ catch(x){o.textContent=T.err;b.disabled=false}})})})();`;
 export const paperHeading = (lang, k) => nt(lang, k);
 export const PAPER_CSS = '.kph-fig{margin:14px 0 10px;max-width:720px}.kph-svg{width:100%;height:auto;display:block}.kph-grid{stroke:var(--k-line,#d5dbd8);stroke-width:1}.kph-ax{font-size:12px;fill:var(--k-muted,#56636F)}' +
   '.kph-line{fill:none;stroke:var(--k-sea,#155C75);stroke-width:2}.kph-pt{fill:var(--k-surface,#fff);stroke:var(--k-sea,#155C75);stroke-width:2.5}.kph-pt.is-ia{fill:var(--k-sea,#155C75)}a:focus-visible .kph-pt{stroke-width:4}' +
-  '.kph-fig figcaption{font-size:.84rem;color:var(--k-muted,#56636F)}.kph-ctx{display:inline-block;max-width:46ch;overflow-wrap:anywhere}.kph-t td,.kpl-t td{vertical-align:top}.kpl-t td{overflow-wrap:anywhere}.kpl-live{margin:10px 0}.kpl-out{margin-top:10px}';
+  '@media(max-width:600px){.kph-ax{font-size:21px}}.kph-fig figcaption{font-size:.84rem;color:var(--k-muted,#56636F)}.kph-ctx{display:inline-block;max-width:46ch;overflow-wrap:anywhere}.kph-t td,.kpl-t td{vertical-align:top}.kpl-t td{overflow-wrap:anywhere}.kpl-live{margin:10px 0}.kpl-out{margin-top:10px}';
 
 // ------------------------------------------------------------------------------------------------ England: planning.data.gov.uk now (edge)
 const R0 = 6371008.8, rad = v => v * Math.PI / 180;
@@ -318,7 +320,7 @@ export async function handle(req, u, env, ctx) {
       const ck = new Request(ORIGIN + '/__kpaper_uk/v1/' + x.id);
       const hit = await caches.default.match(ck); if (hit) return new Response(hit.body, { status: 200, headers: Object.assign({ 'cache-control': 'public, max-age=3600', 'x-cache': 'hit' }, HJ) });
       if (await limited(req, ctx, 'uk', 30)) return out({ error: 'rate', note: 'At most 30 live checks per hour from one address.' }, 429);
-      let items; try { items = await ukLive(rec.pin[0], rec.pin[1]); } catch (e) { return out({ error: 'register_unavailable', source: 'planning.data.gov.uk' }, 502); }
+      let items; try { items = await ukLive(rec.pin[0], rec.pin[1]); } catch (e) { return out({ error: 'register_unavailable', source: 'planning.data.gov.uk', note: 'HTTP 200 on purpose: the page shows its own message.' }, 200); }
       const body = JSON.stringify({ id: x.id, checked: new Date().toISOString(), radius_m: 200, source: (pd.pl.sources || {}).uk || null, items: items.slice(0, 40) });
       const put = caches.default.put(ck, new Response(body, { headers: { 'cache-control': 'max-age=86400' } })); if (ctx && ctx.waitUntil) ctx.waitUntil(put.catch(() => {}));
       return new Response(body, { status: 200, headers: Object.assign({ 'cache-control': 'public, max-age=3600' }, HJ) });
@@ -497,7 +499,7 @@ const tt = l => Object.assign({}, T.en, T[l] || {});
 async function lawNotes(env) {
   const lj = await loadOne(env, '/tools/law/law.json', 3600000);
   const out = {};
-  if (lj) for (const r of lj.rules || []) { const s = (lj.sources || {})[r.source] || {}; out[r.id] = { law: s.law || r.source, cite: r.cite, url: s.url || '/tools/law/', lang: s.language || 'en', quote: String(r.quote || '').slice(0, 420), tr: r.translation || '', title: r.title || '', checked: r.checked || lj.version, kb: '/tools/law/#' + r.id }; }
+  if (lj) for (const r of lj.rules || []) { const s = (lj.sources || {})[r.source] || {}; out[r.id] = { law: s.law || r.source, cite: r.cite, url: s.url || '/tools/law/', lang: s.language || 'en', quote: String(r.quote || ''), tr: r.translation || '', title: r.title || '', checked: r.checked || lj.version, kb: '/tools/law/#' + r.id }; }
   for (const [k, v] of Object.entries(EXTRA)) out[k] = Object.assign({ checked: '2026-11-08' }, v);
   return out;
 }
