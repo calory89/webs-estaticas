@@ -25,9 +25,14 @@ Images live in Workers KV namespace `thesumbatimes-img` (id f0aa5acc53a44f3194e7
 2. If no good real photo exists, generate a super-realistic image with Higgsfield and set `"ai": True`: the caption then shows "AI-generated illustration / Ilustracion generada con IA / Ilustrasi buatan AI". Never present AI as real, never depict identifiable real people, sacred Marapu rituals or other hotels.
 3. Process: 640w and 1280w WebP (quality ~78) + 1200x630 JPEG OG with a dark band and "The Sumba Times" at the bottom; upload to KV with the bulk API (`PUT /accounts/<acct>/storage/kv/namespaces/<ns>/bulk`, items `{key, value: base64, base64: true}`, keep each call < ~700 KB of base64). Save a copy in `img/`.
 
-## Deploy (Composio workbench)
-Build in a local dir (not /mnt/files, it is slow): `python3 build.py && python3 deploy.py`. Then run CLOUDFLARE_MCP_EXECUTE with JS that gunzips the base64-gzipped `worker/index.js`, builds multipart (`metadata` part = worker/metadata.json incl. the KV binding, `index.js` part as application/javascript+module) and `PUT /accounts/${accountId}/workers/scripts/thesumbatimes` (contentType multipart/form-data; boundary=..., rawBody: true). Worker is ~2.3 MB today (gzip ~0.3 MB); plan limit is compressed size.
-Then resubmit https://thesumbatimes.com/sitemap.xml and /news-sitemap.xml in Search Console (sc-domain:thesumbatimes.com).
+## Deploy (via calory89/claude-ops, since 8 Nov 2026)
+The old Composio route (CLOUDFLARE_MCP_EXECUTE) does NOT work: that connection was never authorised, so the daily story was written but not published. Publish like this instead:
+1. Add calory89/claude-ops to the session with push access and clone it to /home/claude/claude-ops.
+2. Here: `python3 build.py && python3 deploy.py` (from a fresh clone of main, so the guides/ and travel.py are included).
+3. `gzip -9 -c worker/index.js > /home/claude/claude-ops/data/thesumbatimes/index.js.gz` and `cp worker/metadata.json /home/claude/claude-ops/data/thesumbatimes/`.
+4. In claude-ops: write `webs-estaticas <short sha> <UTC time>` to `data/thesumbatimes/BUILD`, append a line `# <UTC time> <what>` to `jobs/tst_deploy.sh` (the push of a job file is what triggers it), commit and push to main.
+5. About a minute later `git pull` and read `out/tst_deploy.txt`: it must say `upload http 200`, `success True` and end with `# exit=0`; it also pings IndexNow. Then check the story on https://thesumbatimes.com/en/.
+New photos for KV: add {slug: commons direct url} to `data/thesumbatimes/images.json` and push `jobs/tst_images.py` (or keep using the img/ upload you already do). Worker secret TST_SECRET (assistant) is kept automatically (metadata keep_bindings).
 
 ## Travel layer (7 Nov 2026)
 - `travel.py`: localized slugs for older guides (`SLUGS`), homepage hero/quick facts/"Plan your trip" strings (`T`), base map points.
