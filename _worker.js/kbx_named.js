@@ -22,6 +22,7 @@ import { ppmSection, gleifNet, networkHtml, NET_CSS, NET_JS } from './kbx_named_
 import { satData, satSection, satToc, satHeading } from './kbx_named_sat.js';
 import { fcData, fcProjectHtml, fcDevGroup, rsData, rsDevHtml, rsHeading } from './kbx_fc.js';   // batch 17 (n17c): delivery forecast, developer answer speed
 import { webData, webProjectHtml, webDevHealthHtml, webDevLinksHtml, webHeading } from './kbx_web.js';   // batch 18 (n18a): website health, shared website identifiers
+import { cohortCard, cohortKey } from './kbx_cohort.js';   // batch 18 (n18e): buyer group card, empty while the feature is off
 import { seoLd } from './kbx_lastmod.js';   // batch 15 (s15b): true dateModified and ImageObject in the JSON-LD   // batch 14 (f14b): construction progress from space   // batch 10 (b10c): price per m2 vs official data, company network graph
 
 const ORIGIN = 'https://kolaboro.com';
@@ -352,7 +353,7 @@ function projectPage(ix, x, lang, extra) {
   const crumbs = [[tr(lang, 'crumb_home'), ORIGIN + pre(lang) + '/'], [tr(lang, 'crumb_projects'), ORIGIN + pre(lang) + '/projects/'], [x.mk, ORIGIN + '/m/' + slugM(x.mk) + '/'], [name, canon]];
   const toc = [['glance', 's_glance'], ['promise', 's_promise'], ['ppm', 's_ppm_toc'], ['delivery', 's_delivery'], ...(satHtml ? [['space', null]] : []), ['permits', 's_permits'], ['checks', 's_checks'], ['claims', 's_claims'], ['history', 's_history'], ['reports', 's_reports'], ['developer', 's_devsec'], ...(webHtml ? [['web', null, webHeading(lang, 'h')]] : []), ['reviews', 's_reviews'], ['reply', 's_reply'], ['faq', 's_faq'], ['sources', 's_sources']];
   const body = '<section class="phero kp"><div class="wrap"><p class="crumb">' + crumbs.slice(0, 3).map(([l, u]) => '<a href="' + esc(u.replace(ORIGIN, '')) + '">' + esc(l) + '</a>').join(' / ') + '</p>' +
-    '<h1>' + h1x(tr(lang, 'h1_p', { n: name }), name) + '</h1><p class="lead">' + esc(tr(lang, 'lead_p', { n: name, place })) + '</p>' + answer + keys + watchBox(lang, x.id, name, '/projects/' + x.s + '/') + '</div></section>' +
+    '<h1>' + h1x(tr(lang, 'h1_p', { n: name }), name) + '</h1><p class="lead">' + esc(tr(lang, 'lead_p', { n: name, place })) + '</p>' + answer + keys + watchBox(lang, x.id, name, '/projects/' + x.s + '/') + (extra.coh || '') + '</div></section>' +
     '<div class="wrap kwrap"><nav class="ktoc" aria-label="' + esc(tr(lang, 's_glance')) + '">' + toc.map(([i, k, lbl]) => '<a href="#' + i + '">' + esc(lbl || (k ? tr(lang, k) : satToc(lang))) + '</a>').join('') + '</nav>' +
     sec('glance', esc(tr(lang, 's_glance')), '<ul class="fl glance">' + g.join('') + '</ul>') + sec('promise', esc(tr(lang, 's_promise')), promised) + sec('ppm', esc(tr(lang, 's_ppm')), ppmSection(x, lang).html) + sec('delivery', esc(tr(lang, 's_delivery')), delivery) + (satHtml ? sec('space', esc(satHeading(lang)), satHtml) : '') +
     sec('permits', esc(tr(lang, 's_permits')), permits) + sec('checks', esc(tr(lang, 's_checks')), checks) + sec('claims', esc(tr(lang, 's_claims')), claims) + sec('history', esc(tr(lang, 's_history')), history) +
@@ -576,7 +577,8 @@ export async function render(ix, kind, key, lang, env, ctx) {   // exported for 
     let sat = null; try { sat = await satData(env); } catch (e) { sat = null; }
     let fc = null, fdg = null; try { fc = await fcData(env); fdg = x.dvs ? await fcDevGroup(env, x.dvs) : null; } catch (e) { fc = null; }
     let web = null; try { web = await webData(env); } catch (e) { web = null; }
-    const pg = projectPage(ix, x, lang, { reviews, replies, ph, sat, fc, fdg, web }); if (phErr) pg.nocache = true;   // page history not loaded: do not cache
+    let coh = ''; try { coh = await cohortCard(env, lang, x.id); } catch (e) { coh = ''; }
+    const pg = projectPage(ix, x, lang, { reviews, replies, ph, sat, fc, fdg, web, coh }); if (phErr) pg.nocache = true;   // page history not loaded: do not cache
     return pg;
   }
   const dv = ix.devs.get(key); if (!dv) return null;
@@ -600,7 +602,7 @@ export async function handle(req, u, env, ctx, shell) {
   if (key && kind === 'developers' && RESERVED.has(key)) return null;   // /developers/reply/ etc. stay static
   if (!p.endsWith('/')) return new Response(null, { status: 301, headers: { location: p + '/' + u.search, 'cache-control': 'public, max-age=86400' } });
   let ix; try { ix = await data(env); } catch (e) { return null; }
-  const ck = new Request(ORIGIN + '/__named_html/' + CACHE_V + '/' + encodeURIComponent(ix.updated + '|' + (ix.named.count || 0) + '|' + ix.P.length + '|' + (ix.named.updated || '') + '|r' + (key && kind === 'projects' ? await repliesPublished() : 0) + '|s' + (key && kind === 'projects' ? (sd => (sd.updated || '') + '|' + ((sd.space || {}).v || ''))((await satData(env).catch(() => null)) || {}) : '')) + p);
+  const ck = new Request(ORIGIN + '/__named_html/' + CACHE_V + cohortKey(env) + '/' + encodeURIComponent(ix.updated + '|' + (ix.named.count || 0) + '|' + ix.P.length + '|' + (ix.named.updated || '') + '|r' + (key && kind === 'projects' ? await repliesPublished() : 0) + '|s' + (key && kind === 'projects' ? (sd => (sd.updated || '') + '|' + ((sd.space || {}).v || ''))((await satData(env).catch(() => null)) || {}) : '')) + p);
   try { const hit = await caches.default.match(ck); if (hit) return new Response(hit.body, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'x-named-cache': 'hit', 'cache-control': 'no-cache' } }); } catch (e) {}
   const pg = await render(ix, key ? kind : 'i', key, lang, env, ctx);
   if (pg && key) try { await seoLd(pg, env, kind, key); } catch (e) {}

@@ -23,10 +23,22 @@ const MIN_N = 20, MIN_K = 5, MIN_ND = 10, MIN_R = 10, RS_MIN = 5, Z = 1.95996398
 const COI = /^sumba$/i;
 const VERSION = 'fc-km-1';
 
+// n18e (batch 18) strings: live answer counts, partial weeks, paying-customer count (8 languages)
+const FT2 = {
+  en: { rs_few: 'No project of {dev} has {k} or more reported questions yet. We break a project out from {k}.', rs_live: 'Counted live, {d}', o_partial: '(to {d})', o_s_cust: 'Paying customers', c_cust: 'paid checks', c_cust_s: 'Payments recorded for a paid pre-purchase check, all time', c_cust_n: 'A count only, read live from our payment records. Revenue amounts are not published.', o_auto: 'Weeks after the weekly history are counted live from the public X-ray function.' },
+  es: { rs_few: 'Ningún proyecto de {dev} tiene aún {k} o más preguntas informadas. Mostramos un proyecto a partir de {k}.', rs_live: 'Contado en directo, {d}', o_partial: '(hasta {d})', o_s_cust: 'Clientes que pagan', c_cust: 'revisiones pagadas', c_cust_s: 'Pagos registrados por una revisión previa a la compra, desde el inicio', c_cust_n: 'Solo un recuento, leído en directo de nuestros registros de pago. No publicamos importes.', o_auto: 'Las semanas posteriores al histórico semanal se cuentan en directo con la función pública de radiografías.' },
+  fr: { rs_few: 'Aucun projet de {dev} n’a encore {k} questions signalées ou plus. Nous détaillons un projet à partir de {k}.', rs_live: 'Compté en direct, {d}', o_partial: '(jusqu’au {d})', o_s_cust: 'Clients payants', c_cust: 'vérifications payées', c_cust_s: 'Paiements enregistrés pour une vérification avant achat, depuis le début', c_cust_n: 'Un simple comptage, lu en direct dans nos enregistrements de paiement. Les montants ne sont pas publiés.', o_auto: 'Les semaines après l’historique hebdomadaire sont comptées en direct avec la fonction publique des radiographies.' },
+  de: { rs_few: 'Noch kein Projekt von {dev} hat {k} oder mehr gemeldete Fragen. Wir zeigen ein Projekt ab {k} einzeln.', rs_live: 'Live gezählt, {d}', o_partial: '(bis {d})', o_s_cust: 'Zahlende Kunden', c_cust: 'bezahlte Prüfungen', c_cust_s: 'Erfasste Zahlungen für eine Prüfung vor dem Kauf, seit Beginn', c_cust_n: 'Nur eine Anzahl, live aus unseren Zahlungsdaten gelesen. Beträge veröffentlichen wir nicht.', o_auto: 'Wochen nach dem Wochenverlauf werden live über die öffentliche Röntgen-Funktion gezählt.' },
+  nl: { rs_few: 'Nog geen project van {dev} heeft {k} of meer gemelde vragen. We tonen een project apart vanaf {k}.', rs_live: 'Live geteld, {d}', o_partial: '(tot {d})', o_s_cust: 'Betalende klanten', c_cust: 'betaalde checks', c_cust_s: 'Geregistreerde betalingen voor een check vóór aankoop, sinds het begin', c_cust_n: 'Alleen een aantal, live gelezen uit onze betaalgegevens. Bedragen publiceren we niet.', o_auto: 'Weken na de weekgeschiedenis worden live geteld met de openbare röntgenfunctie.' },
+  ru: { rs_few: 'Ни у одного проекта {dev} пока нет {k} или больше сообщённых вопросов. Проект показывается отдельно от {k}.', rs_live: 'Подсчитано в реальном времени, {d}', o_partial: '(до {d})', o_s_cust: 'Платящие клиенты', c_cust: 'оплаченных проверок', c_cust_s: 'Зарегистрированные платежи за проверку перед покупкой, за всё время', c_cust_n: 'Только количество, в реальном времени из наших записей о платежах. Суммы не публикуются.', o_auto: 'Недели после недельной истории считаются в реальном времени через публичную функцию рентген-отчётов.' },
+  zh: { rs_few: '{dev} 的项目目前都还没有 {k} 个或以上的已报告问题。项目达到 {k} 个后单独显示。', rs_live: '实时统计,{d}', o_partial: '(截至 {d})', o_s_cust: '付费客户', c_cust: '已付费核查', c_cust_s: '自开始以来记录的购房前核查付款笔数', c_cust_n: '仅为数量,实时读取自我们的付款记录。不公布金额。', o_auto: '每周历史之后的各周通过公开的透视报告函数实时统计。' },
+  ar: { rs_few: 'لا يوجد بعد مشروع لـ {dev} لديه {k} أسئلة مُبلغ عنها أو أكثر. نعرض المشروع منفصلًا ابتداءً من {k}.', rs_live: 'محسوب مباشرة، {d}', o_partial: '(حتى {d})', o_s_cust: 'العملاء الدافعون', c_cust: 'فحوص مدفوعة', c_cust_s: 'مدفوعات مسجلة لفحص ما قبل الشراء، منذ البداية', c_cust_n: 'عدد فقط، يُقرأ مباشرة من سجلات الدفع لدينا. لا ننشر المبالغ.', o_auto: 'الأسابيع التي تلي السجل الأسبوعي تُحسب مباشرة من دالة الأشعة العامة.' }
+};
+
 // ------------------------------------------------------------------------------------------------ helpers
 const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const pre = l => l === 'en' ? '' : '/' + l;
-function t(lang, k, v) { const s = (FT[lang] && FT[lang][k]) || FT.en[k] || k; return v ? s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m) : s; }
+function t(lang, k, v) { const s = (FT2[lang] && FT2[lang][k]) || (FT[lang] && FT[lang][k]) || FT2.en[k] || FT.en[k] || k; return v ? s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m) : s; }
 const nf = (n, lang) => { try { return new Intl.NumberFormat(LOCALE[lang] || 'en-GB').format(n); } catch (e) { return String(n); } };
 const pct = (x, lang) => x == null ? '' : nf(Math.round(x * 100), lang) + '%';
 const ym = i => { const y = Math.floor((i - 1) / 12), m = (i - 1) % 12 + 1; return y + '-' + String(m).padStart(2, '0'); };
@@ -205,22 +217,52 @@ export async function fcMarketHtml(env, marketKey) {   // English: /m/<market>/ 
 }
 
 // ------------------------------------------------------------------------------------------------ developer answer speed
-export async function rsData(env) { try { return await file(env, 'dev-response.json', 600000); } catch (e) { return null; } }
+// n18e (batch 18): read live at request time from the existing public aggregate functions (no new DB objects), 10 min memo;
+// the 8 Nov snapshot file /data/dev-response.json is only the fallback when the database does not answer. /data/dev-response.json
+// itself is served live by the worker (devResponseJson), so the public file refreshes on its own too.
+let RS_LIVE = null;
+export async function rsData(env) {
+  if (RS_LIVE && Date.now() - RS_LIVE.t < 600000) return RS_LIVE.v;
+  try {
+    const [ya, dr] = await Promise.all([rpc('kolaboro_y_asks_public', {}), rpc('kolaboro_devreply_public', { p_id: '' })]);
+    if (!ya || typeof ya !== 'object' || !Array.isArray(dr)) throw new Error('shape');
+    const projects = {}, replies = {};
+    for (const g of ya.groups || []) if (g.grp === 'project') projects[g.key] = { reported: g.n || 0, answered: g.answered || 0, median_days: g.median_days == null ? null : +g.median_days };
+    for (const r of dr) { if (!r || !r.project_id) continue; const o = replies[r.project_id] || (replies[r.project_id] = { approved: 0 }); o.approved++; }
+    const v = { version: 'dev-response-live-1', generated: new Date().toISOString(), live: true,
+      job: 'computed live by the kolaboro.com worker from the public aggregate functions kolaboro_y_asks_public and kolaboro_devreply_public (10 minute cache)',
+      sources: { asks: 'kolaboro_y_asks_public: questions a buyer sent from /ask-developer/ and later reported back (answered or not, and the day); a project is broken out from ' + (ya.min_sample || 5) + ' reported questions', replies: 'kolaboro_devreply_public: right-of-reply submissions approved by a moderator (newest 200)' },
+      note: 'Counts and day medians per project id only. No messages, emails, names, tokens or IP hashes. Developer pages add these up over the developer’s projects.',
+      licence: 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)', min_reported_per_project: ya.min_sample || 5,
+      totals: { asks_opened: ya.opened || 0, asks_reported: ya.reported || 0, projects_below_min: ya.projects_below_min || 0, replies_approved: dr.length }, projects, replies };
+    RS_LIVE = { t: Date.now(), v }; return v;
+  } catch (e) {
+    try { const v = await file(env, 'dev-response.json', 600000); RS_LIVE = { t: Date.now() - 480000, v }; return v; } catch (e2) { return null; }
+  }
+}
+export async function devResponseJson(env) {   // GET /data/dev-response.json (live; same fields as the 8 Nov snapshot plus "live")
+  const v = await rsData(env);
+  if (!v) return out({ error: 'unavailable' }, 503, 'no-store');
+  return new Response(JSON.stringify(v, null, 1), { status: 200, headers: { 'content-type': 'application/json; charset=utf-8', 'access-control-allow-origin': '*', 'cache-control': 'public, max-age=300', 'x-kb-live': '1' } });
+}
 function rsAgg(rs, ids) {
   const o = { opened: 0, reported: 0, answered: 0, days: [], replies: 0 };
-  for (const id of ids) { const a = (rs.projects || {})[id]; if (a) { o.opened += a.opened || 0; o.reported += a.reported || 0; o.answered += a.answered || 0; o.days.push(...(a.days || [])); } const r = (rs.replies || {})[id]; if (r) o.replies += r.approved || 0; }
+  o.meds = [];
+  for (const id of ids) { const a = (rs.projects || {})[id]; if (a) { o.opened += a.opened || 0; o.reported += a.reported || 0; o.answered += a.answered || 0; o.days.push(...(a.days || [])); if (a.median_days != null && !a.days) o.meds.push({ id, m: a.median_days, n: a.reported }); } const r = (rs.replies || {})[id]; if (r) o.replies += r.approved || 0; }
   o.days.sort((a, b) => a - b);
-  o.median_days = o.days.length >= RS_MIN ? (o.days.length % 2 ? o.days[(o.days.length - 1) / 2] : (o.days[o.days.length / 2 - 1] + o.days[o.days.length / 2]) / 2) : null;
+  if (o.meds.length === 1) o.median_days = o.meds[0].m;   // live data: one project broken out, its median is exact
+  else if (!o.meds.length) o.median_days = o.days.length >= RS_MIN ? (o.days.length % 2 ? o.days[(o.days.length - 1) / 2] : (o.days[o.days.length / 2 - 1] + o.days[o.days.length / 2]) / 2) : null;
+  else o.median_days = null;   // several projects broken out: their medians are listed, not merged
   return o;
 }
 export function rsDevHtml(rs, dv, lang, firstId) {
   try {
     if (!rs) return '';
     const a = rsAgg(rs, dv.ids), name = dv.n;
-    const src = '<a class="k-src src" href="/data/dev-response.json">' + esc(t(lang, 'rs_at', { d: dayName(rs.generated, lang) })) + '</a>';
+    const src = '<a class="k-src src" href="/data/dev-response.json">' + esc(t(lang, rs.live ? 'rs_live' : 'rs_at', { d: dayName(rs.generated, lang) })) + '</a>';
     let b = '<p class="ki">' + esc(t(lang, 'rs_intro')) + '</p>';
-    if (!a.reported && !a.replies) b += '<div class="k-empty"><strong>' + esc(t(lang, 'rs_none', { dev: name })) + '</strong><p>' + src + '</p><a class="k-btn" href="/ask-developer/?id=' + encodeURIComponent(firstId) + '">' + esc(t(lang, 'rs_btn', { dev: name })) + '</a></div>';
-    else b += '<dl class="k-ledger"><dt>' + esc(t(lang, 'rs_q')) + '</dt><dd>' + nf(a.reported, lang) + ' ' + src + '</dd><dt>' + esc(t(lang, 'rs_a')) + '</dt><dd>' + nf(a.answered, lang) + '</dd><dt>' + esc(t(lang, 'rs_med')) + '</dt><dd>' + (a.median_days != null ? nf(a.median_days, lang) : '<span class="k-muted">' + esc(t(lang, 'rs_min', { k: RS_MIN })) + '</span>') + '</dd><dt>' + esc(t(lang, 'rs_rr')) + '</dt><dd>' + nf(a.replies, lang) + '</dd></dl>' +
+    if (!a.reported && !a.replies) b += '<div class="k-empty"><strong>' + esc(t(lang, rs.live && rs.totals && rs.totals.projects_below_min ? 'rs_few' : 'rs_none', { dev: name, k: rs.min_reported_per_project || RS_MIN })) + '</strong><p>' + src + '</p><a class="k-btn" href="/ask-developer/?id=' + encodeURIComponent(firstId) + '">' + esc(t(lang, 'rs_btn', { dev: name })) + '</a></div>';
+    else b += '<dl class="k-ledger"><dt>' + esc(t(lang, 'rs_q')) + '</dt><dd>' + nf(a.reported, lang) + ' ' + src + '</dd><dt>' + esc(t(lang, 'rs_a')) + '</dt><dd>' + nf(a.answered, lang) + '</dd><dt>' + esc(t(lang, 'rs_med')) + '</dt><dd>' + (a.median_days != null ? nf(a.median_days, lang) : a.meds && a.meds.length > 1 ? a.meds.map(x => nf(x.m, lang) + ' <small class="k-muted">(' + esc(x.id) + ')</small>').join(', ') : '<span class="k-muted">' + esc(t(lang, 'rs_min', { k: RS_MIN })) + '</span>') + '</dd><dt>' + esc(t(lang, 'rs_rr')) + '</dt><dd>' + nf(a.replies, lang) + '</dd></dl>' +
       '<p><a class="k-btn" href="/ask-developer/?id=' + encodeURIComponent(firstId) + '">' + esc(t(lang, 'rs_btn', { dev: name })) + '</a></p>';
     return b + '<div class="k-disc"><details><summary>' + esc(t(lang, 'rs_method')) + '</summary><p>' + esc(t(lang, 'rs_meth_t', { k: RS_MIN })) + '</p></details></div>';
   } catch (e) { return ''; }
@@ -231,31 +273,54 @@ export async function fcDevGroup(env, slug) { try { const fc = await fcData(env)
 // ------------------------------------------------------------------------------------------------ /open data
 async function openNumbers(env) {
   const S = p => p.then(v => ({ ok: true, v }), () => ({ ok: false, v: null }));
-  const [xl, met, push, al, log, tr, dep, ship, nmod] = await Promise.all([S(rpc('kolaboro_xray_live', { p_hours: 24 })), S(rpc('kolaboro_metrics_public', {})), S(rpc('kolaboro_push_public', {})),
-    S(rpc('kolaboro_y_alerts_public', {})), S(rpc('kolaboro_log_public', {})), S(file(env, 'traction.json', 120000)), S(file(env, 'deploys.json', 120000)), S(file(env, 'shipping.json', 120000)), S(import('./kbx_named.js'))]);
+  const [xl, met, push, al, log, tr, dep, ship, nmod, xl7] = await Promise.all([S(rpc('kolaboro_xray_live', { p_hours: 24 })), S(rpc('kolaboro_metrics_public', {})), S(rpc('kolaboro_push_public', {})),
+    S(rpc('kolaboro_y_alerts_public', {})), S(rpc('kolaboro_log_public', {})), S(file(env, 'traction.json', 120000)), S(file(env, 'deploys.json', 120000)), S(file(env, 'shipping.json', 120000)), S(import('./kbx_named.js')), S(rpc('kolaboro_xray_live', { p_hours: 168 }))]);
   let named = null; if (nmod.ok) try { const ix = await nmod.v.data(env); named = { projects: ix.P.length, developers: ix.devs.size, languages: LANGS.length }; } catch (e) { named = null; }
   let seal = null; try { const cs = await file(env, 'bali-cases.json'); seal = cs.seal ? { date: cs.seal.date, count: cs.seal.count } : null; } catch (e) {}
-  const m = met.ok && met.v ? met.v : null;   // only stamps and followers are read from this function: paying customers and revenue stay out (pending approval)
+  const m = met.ok && met.v ? met.v : null;   // read from this function: stamps, followers and (n18e, authorised by Carlos 8 Nov 2026) the paid-check COUNT; revenue fields are never read
   const weeksSt = m && Array.isArray(m.weeks) ? new Map(m.weeks.map(w => [w.week, w.stamps])) : new Map();
   const T = tr.ok ? tr.v : null, X = xl.ok && xl.v ? xl.v.totals || null : null;
   const wk = new Date(); wk.setUTCHours(0, 0, 0, 0); wk.setUTCDate(wk.getUTCDate() - ((wk.getUTCDay() + 6) % 7)); const thisWeek = wk.toISOString().slice(0, 10);
   const ser = k => new Map(((T && T.series && T.series[k]) || []).map(([w, n]) => [w, n]));
-  const xs = ser('xrays_sealed'), xr = ser('xray_runs');
+  const xs = ser('xrays_sealed'), xr = ser('xray_runs'), stH = ser('bitcoin_stamps');
+  // n18e (batch 18): the weekly history refreshes on its own. A history week counts as complete only when the history was computed
+  // after that week ended (complete_until per series, else the file's "generated" time); the 8 Nov snapshot's last week was partial.
+  // Weeks after the last complete one are counted live from the public function kolaboro_xray_live: this week from its 7-day list
+  // (exact while the list is under its 120-row cap), one closed week in between as the all-time total minus every other week.
+  // Two or more such weeks cannot be split exactly and read "Not measured yet" until the daily history job freezes them.
+  const DAY = 864e5, wkT = w => Date.parse(w + 'T00:00:00Z'), wkS = d => new Date(d).toISOString().slice(0, 10), tW = wkT(thisWeek);
+  const upto = k => { const c = T && T.complete_until && T.complete_until[k]; return (c ? wkT(c) : T ? Date.parse(T.generated) : 0) || 0; };
+  const full = (k, w) => wkT(w) + 7 * DAY <= upto(k);
+  const xsF = new Map([...xs].filter(([w]) => full('xrays_sealed', w)));
+  const R7 = xl7 && xl7.ok && xl7.v && Array.isArray(xl7.v.recent) ? xl7.v.recent : null;
+  const thisN = R7 && (R7.length < 120 || R7.some(r => Date.parse(r.t) < tW)) ? R7.filter(r => Date.parse(r.t) >= tW).length : null;
+  const lastFull = [...xsF.keys()].sort().pop(), gap = [];
+  if (lastFull) for (let d = wkT(lastFull) + 7 * DAY; d < tW; d += 7 * DAY) gap.push(wkS(d));
+  const all = X && typeof X.all === 'number' ? X.all : null, sumF = [...xsF.values()].reduce((a, n) => a + n, 0), derived = new Map();
+  if (all != null && lastFull) {
+    if (!gap.length) derived.set(thisWeek, Math.max(0, all - sumF));
+    else if (gap.length === 1 && thisN != null) { derived.set(gap[0], Math.max(0, all - sumF - thisN)); derived.set(thisWeek, thisN); }
+    else if (thisN != null) derived.set(thisWeek, thisN);
+  }
   const D = dep.ok ? (dep.v.deploys || []) : [];
   const depW = new Map(); for (const d of D) { if (!d.at || d.result === 'not_deployed') continue; const x = new Date(d.at.slice(0, 10) + 'T00:00:00Z'); x.setUTCDate(x.getUTCDate() - ((x.getUTCDay() + 6) % 7)); const k = x.toISOString().slice(0, 10); depW.set(k, (depW.get(k) || 0) + 1); }
-  let weeks = [...new Set([...xs.keys(), ...weeksSt.keys(), thisWeek])].sort().slice(-12);
-  const busy = w => (xs.get(w) || 0) + (weeksSt.get(w) || 0) + (depW.get(w) || 0) + (xr.get(w) || 0) > 0;
+  let weeks = [...new Set([...xs.keys(), ...weeksSt.keys(), ...gap, thisWeek])].filter(w => w <= thisWeek).sort().slice(-12);
+  const sealedOf = w => xsF.has(w) ? xsF.get(w) : derived.has(w) ? derived.get(w) : null;
+  const busy = w => (sealedOf(w) || 0) + (weeksSt.get(w) || 0) + (depW.get(w) || 0) + (xr.get(w) || 0) > 0;
   const f0 = weeks.findIndex(busy); weeks = weeks.slice(f0 < 0 ? weeks.length - 1 : f0).slice(-8);   // from the first week with any activity
-  const pastSealed = [...xs.entries()].filter(([w]) => w < thisWeek).reduce((a, [, n]) => a + n, 0);
+  const runsTo = T ? String(T.generated).slice(0, 10) : null;
   const rows = weeks.map(w => ({ week: w, current: w === thisWeek,
-    xrays_sealed: w === thisWeek && X && typeof X.all === 'number' ? Math.max(0, X.all - pastSealed) : xs.has(w) ? xs.get(w) : null,
-    xray_runs: xr.has(w) ? xr.get(w) : null, xray_runs_partial: w === thisWeek && T ? true : undefined,
-    bitcoin_stamps: weeksSt.has(w) ? weeksSt.get(w) : null, deploys_checked_live: depW.get(w) || 0 }));
+    xrays_sealed: sealedOf(w), xrays_sealed_from: xsF.has(w) ? 'weekly history' : derived.has(w) ? 'live (kolaboro_xray_live)' : undefined,
+    xray_runs: xr.has(w) ? xr.get(w) : null, xray_runs_partial_until: xr.has(w) && !full('xray_runs', w) ? runsTo : undefined,
+    bitcoin_stamps: weeksSt.has(w) ? weeksSt.get(w) : full('bitcoin_stamps', w) && stH.has(w) ? stH.get(w) : null, deploys_checked_live: depW.get(w) || 0 }));
+  // what the daily history job (.github/workflows/kolaboro-open-history.yml on main) may freeze into /data/traction.json: closed weeks only
+  const unknown = gap.filter(w => !derived.has(w)), cu = unknown.length ? unknown[0] : thisWeek;
+  const freeze = { complete_until: { xrays_sealed: cu, bitcoin_stamps: thisWeek }, xrays_sealed: [...derived].filter(([w]) => w < cu), bitcoin_stamps: [...weeksSt].filter(([w]) => w < thisWeek) };
   const sh = ship.ok ? ship.v : null, ctl = sh && sh.metrics && sh.metrics.commit_to_live;
   const d7 = Date.now() - 7 * 864e5, dep7 = D.filter(d => d.at && Date.parse(d.at) >= d7 && d.result !== 'not_deployed');
   const heads = log.ok && log.v && Array.isArray(log.v.heads) ? log.v.heads : [];
   return {
-    generated: new Date().toISOString(), version: 'open-1', note: 'Aggregates only. Paying customers and revenue are not published here.',
+    generated: new Date().toISOString(), version: 'open-1', note: 'Aggregates only. The paying-customer figure is a count; revenue amounts are not published.',
     xrays: { sealed_total: X ? X.all : null, last_24h: X ? X.h24 : null, markets_24h: X ? X.markets : null, source: '/live/xrays/ (public function kolaboro_xray_live)' },
     pages: Object.assign({ source: '/api/seo/urls' }, named || { projects: null, developers: null, languages: LANGS.length }),
     watching: { email: m && m.totals ? m.totals.followers : null, push_devices: push.ok && push.v ? push.v.devices : null, saved_alerts: al.ok && al.v ? al.v.live : null, source: 'public functions kolaboro_metrics_public (followers only), kolaboro_push_public, kolaboro_y_alerts_public' },
@@ -264,8 +329,9 @@ async function openNumbers(env) {
     shipping: { ships_last_7_days: sh && sh.totals ? sh.totals.ships_last_7_days : null, streak_days: sh && sh.streak ? sh.streak.current : null, as_of: sh ? sh.generated_at : null,
       deploys_last_7_days: dep7.length, rollbacks_last_7_days: dep7.filter(d => d.result === 'rolled_back').length,
       commit_to_live_median_s: ctl ? ctl.median_s : null, commit_to_live_p90_s: ctl ? ctl.p90_s : null, commit_to_live_samples: ctl ? ctl.samples : null, source: '/shipping/ (/data/shipping.json, /data/deploys.json)' },
-    weeks: rows, weekly_history: T ? { generated: T.generated, file: '/data/traction.json' } : null,
-    caveats: ['X-ray counts include runs by the Kolaboro team while testing; they are not separated yet.', 'This week’s sealed X-rays are the live total minus the closed weeks of the weekly history; X-ray runs for this week are as of the weekly history.']
+    customers: { paid_checks: m && m.totals && typeof m.totals.paid_checks === 'number' ? m.totals.paid_checks : null, source: 'public function kolaboro_metrics_public (count of payments recorded for a paid check; authorised by Carlos on 8 Nov 2026)', note: 'A count only. Revenue amounts are not published.' },
+    weeks: rows, weekly_history: T ? { generated: T.generated, complete_until: T.complete_until || null, file: '/data/traction.json' } : null, history_update: freeze,
+    caveats: ['X-ray counts include runs by the Kolaboro team while testing; they are not separated yet.', 'Sealed X-rays for weeks after the weekly history are counted live from the public function kolaboro_xray_live (see history_update). X-ray runs come only from the weekly history job; a week it has not completed is marked partial.']
   };
 }
 
@@ -274,7 +340,7 @@ const PG_CSS = '<style id="kfc17p">.kfc-pg .k-phead{padding-block:var(--k-7,48px
   '.kfc-pg .k-sec{padding-block:var(--k-6,32px)}.kfc-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:0;border:1px solid var(--k-line);border-radius:var(--k-r-lg,14px);background:var(--k-surface);overflow:hidden}' +
   '.kfc-stats>div{padding:18px 20px;box-shadow:inset -1px -1px 0 var(--k-line)}.kfc-stats b{display:block;font-size:var(--k-fs-3xl,36px);line-height:1.05;font-weight:700;font-variant-numeric:tabular-nums;color:var(--k-ink)}.kfc-stats span{display:block;font-weight:600;margin-top:4px}.kfc-stats small{display:block;color:var(--k-muted);margin-top:2px;font-size:var(--k-fs-sm,15px)}' +
   '.kfc-stats .k-src{display:inline-block;margin-top:8px}.kfc-pg td.k-n,.kfc-pg th.k-n{text-align:end}.kfc-wk{display:inline-block;vertical-align:middle;height:8px;border-radius:4px;background:var(--k-sea,#155C75);margin-inline-start:8px;min-width:2px}.kfc-pg tr.is-now td{background:var(--k-sea-soft)}' +
-  '.kfc-pg .k-ledger dd{font-variant-numeric:tabular-nums}.kfc-pg .kfc-fine{font-size:var(--k-fs-xs,13px);color:var(--k-muted)}.kfc-meth p,.kfc-meth ul{max-width:68ch;line-height:1.6}.kfc-meth h2{font-size:var(--k-fs-xl,24px);margin:var(--k-6,32px) 0 var(--k-2,8px)}.kfc-meth h2:first-child{margin-top:0}.kfc-pg .kfc-links a{margin-inline-end:16px}@media(max-width:640px){.kfc-stats b{font-size:var(--k-fs-2xl,28px)}}</style>';
+  '.kfc-pg .k-ledger dd{font-variant-numeric:tabular-nums}.kfc-pg .kfc-fine{font-size:var(--k-fs-xs,13px);color:var(--k-muted)}.kfc-meth p,.kfc-meth ul{max-width:68ch;line-height:1.6}.kfc-meth h2{font-size:var(--k-fs-xl,24px);margin:var(--k-6,32px) 0 var(--k-2,8px)}.kfc-meth h2:first-child{margin-top:0}.kfc-pg .kfc-links a{margin-inline-end:16px}.kfc-stats--one{max-width:420px}@media(max-width:640px){.kfc-stats b{font-size:var(--k-fs-2xl,28px)}}</style>';
 const dur = (s, lang) => s == null ? t(lang, 'o_none') : s >= 90 ? nf(Math.round(s / 6) / 10, lang) + ' ' + t(lang, 'min') : nf(s, lang) + ' ' + t(lang, 's');
 const N = (v, lang) => v == null ? '<span class="k-muted">' + esc(t(lang, 'o_none')) + '</span>' : nf(v, lang);
 function openBody(d, lang) {
@@ -291,9 +357,9 @@ function openBody(d, lang) {
   const maxX = Math.max(1, ...d.weeks.map(r => r.xrays_sealed || 0));
   const wkRows = d.weeks.slice().reverse().map(r => '<tr' + (r.current ? ' class="is-now"' : '') + '><td data-label="' + esc(t(lang, 'th_week')) + '">' + esc(dayName(r.week, lang)) + (r.current ? ' <small class="k-muted">(' + esc(t(lang, 'o_this')) + ')</small>' : '') + '</td>' +
     '<td class="k-n" data-label="' + esc(t(lang, 'th_xr')) + '">' + N(r.xrays_sealed, lang) + (r.xrays_sealed ? '<span class="kfc-wk" aria-hidden="true" style="width:' + Math.round(64 * r.xrays_sealed / maxX) + 'px"></span>' : '') + '</td>' +
-    '<td class="k-n" data-label="' + esc(t(lang, 'th_runs')) + '">' + N(r.xray_runs, lang) + '</td><td class="k-n" data-label="' + esc(t(lang, 'th_st')) + '">' + N(r.bitcoin_stamps, lang) + '</td><td class="k-n" data-label="' + esc(t(lang, 'th_dep')) + '">' + N(r.deploys_checked_live, lang) + '</td></tr>').join('');
+    '<td class="k-n" data-label="' + esc(t(lang, 'th_runs')) + '">' + N(r.xray_runs, lang) + (r.xray_runs != null && r.xray_runs_partial_until ? ' <small class="k-muted">' + esc(t(lang, 'o_partial', { d: dayName(r.xray_runs_partial_until, lang) })) + '</small>' : '') + '</td><td class="k-n" data-label="' + esc(t(lang, 'th_st')) + '">' + N(r.bitcoin_stamps, lang) + '</td><td class="k-n" data-label="' + esc(t(lang, 'th_dep')) + '">' + N(r.deploys_checked_live, lang) + '</td></tr>').join('');
   const week = '<div class="k-table-wrap"><table class="k-table k-table--stack"><thead><tr><th scope="col">' + esc(t(lang, 'th_week')) + '</th><th scope="col" class="k-n">' + esc(t(lang, 'th_xr')) + '</th><th scope="col" class="k-n">' + esc(t(lang, 'th_runs')) + '</th><th scope="col" class="k-n">' + esc(t(lang, 'th_st')) + '</th><th scope="col" class="k-n">' + esc(t(lang, 'th_dep')) + '</th></tr></thead><tbody>' + wkRows + '</tbody></table></div>' +
-    '<p class="kfc-fine">' + esc(t(lang, 'o_note_test')) + ' ' + src('/data/traction.json', '/data/traction.json') + ' ' + src('/data/deploys.json', '/data/deploys.json') + '</p>';
+    '<p class="kfc-fine">' + esc(t(lang, 'o_note_test')) + ' ' + esc(t(lang, 'o_auto')) + ' ' + src('/data/traction.json', '/data/traction.json') + ' ' + src('/data/deploys.json', '/data/deploys.json') + '</p>';
   const kv = (key, vals, h, l, extra) => { const full = t(lang, key, vals), k = full.search(/[:：]/); return '<dt>' + esc(k < 0 ? full : full.slice(0, k).trim()) + '</dt><dd>' + esc(k < 0 ? '' : full.slice(k + 1).trim()) + (extra || '') + ' ' + src(h, l) + '</dd>'; };
   const nn = v => v == null ? t(lang, 'o_none') : nf(v, lang);
   const sealed = '<dl class="k-ledger">' + kv('s_log', { n: nn(se.log_days), d: dayName(se.log_first, lang) }, '/log/', 'kolaboro.com/log') +
@@ -301,8 +367,10 @@ function openBody(d, lang) {
     kv('s_st', { n: nn(se.bitcoin_stamps), c: nn(se.stamps_confirmed) }, '/log/', 'kolaboro.com/log') + '</dl>';
   const ship = '<dl class="k-ledger">' + kv('sh_7', { n: nn(sh.ships_last_7_days) }, '/shipping/', 'kolaboro.com/shipping') + kv('sh_streak', { n: nn(sh.streak_days) }, '/shipping/', 'kolaboro.com/shipping') +
     kv('sh_dep', { n: nf(sh.deploys_last_7_days, lang), f: nf(sh.rollbacks_last_7_days, lang) }, '/data/deploys.json', '/data/deploys.json') + '</dl>' + (sh.as_of ? '<p class="kfc-fine">' + esc(t(lang, 'rs_at', { d: dayName(sh.as_of, lang) })) + '</p>' : '');
-  // Slot for paying customers and revenue: hidden until Carlos approves publishing them. Do not fill or unhide without that approval.
-  const slot = '<section class="k-sec" id="customers-revenue" hidden aria-hidden="true" data-slot="customers-revenue" data-status="pending-approval"><!-- Paying customers and revenue: pending Carlos’s approval. Keep hidden. --></section>';
+  // n18e (batch 18): paying customers as a COUNT (Carlos authorised it on 8 Nov 2026). Revenue amounts stay unpublished: never read them here.
+  const cu = d.customers || {};
+  const slot = '<section class="k-sec" id="customers" data-slot="customers"><div class="k-wrap"><h2>' + esc(t(lang, 'o_s_cust')) + '</h2><div class="kfc-stats kfc-stats--one">' +
+    stat(cu.paid_checks, t(lang, 'c_cust'), t(lang, 'c_cust_s'), src('/api/x/fc/open', 'kolaboro.com/api/x/fc/open')) + '</div><p class="kfc-fine">' + esc(t(lang, 'c_cust_n')) + '</p></div></section>';
   const upd = t(lang, 'o_upd', { t: d.generated.slice(11, 16), d: d.weekly_history ? dayName(d.weekly_history.generated, lang) : t(lang, 'o_none') });
   return '<div class="kfc-pg"><section class="k-sec"><div class="k-wrap"><div class="k-phead"><p class="k-crumb"><a href="' + pre(lang) + '/">Kolaboro</a></p><h1>' + esc(t(lang, 'o_h1')) + '</h1><p class="lead">' + esc(t(lang, 'o_lead')) + '</p><p class="kfc-fine"><time datetime="' + esc(d.generated) + '">' + esc(upd) + '</time></p></div>' +
     '<h2>' + esc(t(lang, 'o_s_now')) + '</h2>' + stats + '</div></section>' +
@@ -372,7 +440,7 @@ export async function handle(req, u, env, ctx, shell) {
         const nm = await import('./kbx_named.js'), ix = await nm.data(env), dv = ix.devs.get(slug);
         if (!dv) return out({ error: 'give ?dev=<developer slug> of a named developer page', totals: rs.totals, generated: rs.generated }, 404);
         const a = rsAgg(rs, dv.ids);
-        return out({ developer: dv.n, slug, projects: dv.ids.length, questions_reported: a.reported, questions_opened: a.opened, answered: a.answered, median_days_to_answer: a.median_days, median_shown_from: RS_MIN, replies_approved: a.replies, counted: rs.generated, source: '/data/dev-response.json', method: rs.sources, licence: rs.licence });
+        return out({ developer: dv.n, slug, projects: dv.ids.length, questions_reported: a.reported, questions_opened: a.opened, answered: a.answered, median_days_to_answer: a.median_days, medians_by_project: a.meds && a.meds.length > 1 ? a.meds : undefined, median_shown_from: RS_MIN, live: !!rs.live, replies_approved: a.replies, counted: rs.generated, source: '/data/dev-response.json', method: rs.sources, licence: rs.licence });
       }
       if (q === '/api/x/fc/open') return out(await openNumbers(env), 200, 'public, max-age=60');
     } catch (e) { return out({ error: 'unavailable', detail: String(e && e.message || e).slice(0, 120) }, 503, 'no-store'); }

@@ -269,6 +269,15 @@ export default {
       const r = await kpp.handle(req, u, env, ctx, shell);
       if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
     }
+    // kolaboro.com (n18e, batch 18): /cohort/ buyer groups page in 8 languages (feature behind KB_COHORT + migration; see kbx_cohort.js)
+    if (host === 'kolaboro.com' && req.method === 'GET' && /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?cohort\/?$/.test(u.pathname)) {
+      const kco = await import('./kbx_cohort.js');
+      const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
+      const r = await kco.page(req, u, env, ctx, shell);
+      if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
+    }
+    // kolaboro.com (n18e, batch 18): /data/dev-response.json is computed live from public aggregate functions (the static file is the fallback)
+    if (host === 'kolaboro.com' && req.method === 'GET' && u.pathname === '/data/dev-response.json') { if (!kfc) kfc = await import('./kbx_fc.js'); return kfc.devResponseJson(env); }
     // kolaboro.com (n17c, batch 17): /open live figures and /methods/delivery-forecast/ in 8 languages (see kbx_fc.js)
     if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && KFC.test(u.pathname)) {
       if (!kfc) kfc = await import('./kbx_fc.js');

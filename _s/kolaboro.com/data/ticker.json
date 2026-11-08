@@ -4,6 +4,34 @@
   {
    "date": "2026-11-08",
    "kind": "shipped",
+   "text": "Open numbers refresh on their own: developer answer counts read live, new weeks counted from public data, paying customers shown as a count",
+   "tl": {
+    "es": "Las cifras abiertas se actualizan solas: respuestas de promotoras en directo, semanas nuevas contadas con datos públicos y clientes que pagan como recuento",
+    "fr": "Les chiffres ouverts se mettent à jour seuls : réponses des promoteurs en direct, nouvelles semaines comptées sur données publiques, clients payants affichés en nombre",
+    "de": "Offene Zahlen aktualisieren sich selbst: Antworten der Bauträger live, neue Wochen aus öffentlichen Daten gezählt, zahlende Kunden als Anzahl",
+    "nl": "Open cijfers vernieuwen vanzelf: antwoorden van ontwikkelaars live, nieuwe weken geteld uit openbare data, betalende klanten als aantal",
+    "ru": "Открытые цифры обновляются сами: ответы застройщиков в реальном времени, новые недели по публичным данным, платящие клиенты в виде числа",
+    "zh": "公开数据自动刷新：开发商答复实时统计，新的周数据由公开数据计算，付费客户以数量显示",
+    "ar": "الأرقام المفتوحة تتحدث تلقائيًا: ردود المطورين مباشرة، والأسابيع الجديدة من بيانات عامة، والعملاء الدافعون كعدد"
+   }
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "shipped",
+   "text": "Buyer groups per project built behind a switch: meet other buyers of the same project, emails shared only when both accept (preview at /cohort/)",
+   "tl": {
+    "es": "Grupos de compradores por proyecto, listos tras un interruptor: conoce a otros compradores del mismo proyecto, los emails solo se comparten si ambos aceptan (vista previa en /cohort/)",
+    "fr": "Groupes d’acheteurs par projet, prêts derrière un interrupteur : rencontrer d’autres acheteurs du même projet, e-mails partagés seulement si les deux acceptent (aperçu sur /cohort/)",
+    "de": "Käufergruppen pro Projekt hinter einem Schalter gebaut: andere Käufer desselben Projekts kennenlernen, E-Mails nur bei Zustimmung beider (Vorschau unter /cohort/)",
+    "nl": "Kopersgroepen per project gebouwd achter een schakelaar: andere kopers van hetzelfde project ontmoeten, e-mails alleen gedeeld als beiden akkoord zijn (voorbeeld op /cohort/)",
+    "ru": "Группы покупателей по проектам готовы и ждут включения: знакомство с покупателями того же проекта, email передаются только при согласии обоих (предпросмотр на /cohort/)",
+    "zh": "按项目的买家群组已建成，待开启：认识同一项目的其他买家，双方同意后才交换邮箱（预览见 /cohort/）",
+    "ar": "مجموعات المشترين لكل مشروع جاهزة بانتظار التفعيل: تعرّف على مشترين آخرين للمشروع نفسه، ولا تُشارك عناوين البريد إلا بموافقة الطرفين (معاينة في /cohort/)"
+   }
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "shipped",
    "text": "Website health on project and developer pages: daily homepage check, TLS certificate and domain expiry dates, and public ids shared between developer websites (also in the developer graph)",
    "tl": {
     "es": "Salud de la web en páginas de proyectos y promotores: comprobación diaria de la página de inicio, fechas de caducidad del certificado TLS y del dominio, e ids públicos compartidos entre webs de promotores (también en el grafo)",

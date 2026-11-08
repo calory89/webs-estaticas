@@ -37,8 +37,9 @@ import * as m_space from './kbx_space.js'; // n17b: radar through clouds, buildi
 import * as m_ins from './kbx_ins.js'; // insight: weekly market digest, market page figures, score explainer, project-scoped questions, change heatmap
 import * as m_fc from './kbx_fc.js'; // batch 17 (n17c): delivery forecast (Kaplan-Meier), developer answer speed, /open figures
 import * as m_fraud from './kbx_fraud.js'; // payment fraud (n17a): developer domains for lookalike checks, sender-domain DNS/RDAP, BIC to bank name (GLEIF)
+import * as m_cohort from './kbx_cohort.js'; // batch 18 (n18e): buyer groups per project, anonymous intro relay (behind KB_COHORT flag + migration)
 import * as m_web from './kbx_web.js'; // batch 18 (n18a): developer website health, identifiers shared between developer websites
-const MODS = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, m_ship, m_data, m_disc, m_qa, m_ins, m_live, m_acct, m_pay, m_fc, m_space, m_fraud, m_web];
+const MODS = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, m_ship, m_data, m_disc, m_qa, m_ins, m_live, m_acct, m_pay, m_fc, m_space, m_fraud, m_web, m_cohort];
 export async function route(req, u, env, ctx) {
   for (const m of MODS) if (m.PATHS && m.PATHS.test(u.pathname)) return m.handle(req, u, env, ctx);
   return new Response(JSON.stringify({ error: 'not found' }), { status: 404, headers: { 'content-type': 'application/json' } });
