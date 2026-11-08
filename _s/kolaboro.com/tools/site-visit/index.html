@@ -357,7 +357,7 @@ function t(k, v){ var s = (T[L] && T[L][k]) || T.en[k] || k; return v ? s.replac
 function esc(s){ return String(s == null ? '' : s).replace(/[&<>"']/g, function(c){ return { '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]; }); }
 function nf(v){ try { return new Intl.NumberFormat(L === 'en' ? 'en-GB' : L).format(v); } catch (e) { return String(v); } }
 function apply(){
-  document.documentElement.lang = L; document.documentElement.dir = L === 'ar' ? 'rtl' : 'ltr';
+  var M = $('main'); M.lang = L; M.dir = L === 'ar' ? 'rtl' : 'ltr';   // the site header and footer stay English and left-to-right
   var els = document.querySelectorAll('[data-t]');
   for (var i = 0; i < els.length; i++) els[i].textContent = t(els[i].getAttribute('data-t'));
   $('svLang').value = L; renderProj(); renderFix(); renderPhotos();
