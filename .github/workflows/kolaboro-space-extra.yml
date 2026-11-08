@@ -40,7 +40,7 @@ jobs:
           A=""; [ -n "$ONLY" ] && A="--only $ONLY"
           [ "$WHAT" = "both" ] || [ "$WHAT" = "$PART" ] || { echo "skip $PART"; exit 0; }
           if [ "$PART" = "radar" ]; then python3 -u -W ignore tools/kolaboro-agent/space_extra.py radar "$RUNNER_TEMP/out/satellite-radar.json" --budget-min 140 $A || true; fi
-          if [ "$PART" = "buildings" ]; then python3 -u -W ignore tools/kolaboro-agent/space_extra.py buildings "$RUNNER_TEMP/out/buildings.json" $A 2>&1 | tr '\r' '\n' | grep -v '%' || true; fi
+          if [ "$PART" = "buildings" ]; then python3 -u -W ignore tools/kolaboro-agent/space_extra.py buildings "$RUNNER_TEMP/out/buildings.json" $A || true; fi
           ls -la "$RUNNER_TEMP/out"
       - name: Publish to kolaboro.com
         env:
