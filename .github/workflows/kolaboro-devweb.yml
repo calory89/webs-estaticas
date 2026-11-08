@@ -1,0 +1,52 @@
+name: Kolaboro developer websites
+# Daily: one homepage request per own developer website (robots.txt respected, weekly), DNS over HTTPS, the TLS certificate
+# from the handshake, registry RDAP expiry (weekly) and sitemap freshness (weekly). No model calls.
+# Publishes kolaboro.com/data/web-health.json (website health on named project and developer pages, push-alert state) and
+# kolaboro.com/data/dev-links.json (public identifiers shared by websites of different developers, /graph/developers/).
+# tools/kolaboro-agent/dev_web.py. Private state (robots, RDAP, sitemap results with dates) stays in the Actions cache.
+on:
+  schedule:
+    - cron: '23 4 * * *'
+  push:
+    branches: [main]
+    paths: ['tools/kolaboro-agent/dev_web.py', '.github/workflows/kolaboro-devweb.yml']
+  workflow_dispatch:
+    inputs:
+      only: { description: 'comma separated domains (empty = all)', required: false, default: '' }
+
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-devweb
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            tools/kolaboro-agent/dev_web.py
+            tools/kolaboro-reliability
+          sparse-checkout-cone-mode: false
+      - uses: actions/cache@v4
+        with:
+          path: ${{ runner.temp }}/dev-web-private.json
+          key: devweb-state-${{ github.run_id }}
+          restore-keys: devweb-state-
+      - name: Build
+        env:
+          ONLY: ${{ github.event.inputs.only }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/out"
+          A=""; [ -n "$ONLY" ] && A="--only $ONLY"
+          python3 tools/kolaboro-agent/dev_web.py "$RUNNER_TEMP/out" --state "$RUNNER_TEMP/dev-web-private.json" $A
+          python3 -c "import json,sys;h=json.load(open('$RUNNER_TEMP/out/web-health.json'));l=json.load(open('$RUNNER_TEMP/out/dev-links.json'));assert h['n']>=(1 if '$ONLY' else 300),h['n'];print('health',h['n'],'runner_ok',h['runner_ok'],'groups',len(l['groups']))"
+      - name: Publish to kolaboro.com
+        if: github.event.inputs.only == '' || github.event.inputs.only == null
+        run: |
+          bash tools/kolaboro-reliability/publish.sh "kolaboro.com: developer website health and shared identifiers $(date -u +%F)" \
+            "$RUNNER_TEMP/out/web-health.json=_s/kolaboro.com/data/web-health.json" \
+            "$RUNNER_TEMP/out/dev-links.json=_s/kolaboro.com/data/dev-links.json"
