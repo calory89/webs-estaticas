@@ -1347,6 +1347,104 @@ var X = {
 		sourcesText: "Gæstescorer, antal anmeldelser, referencepriser og hotelfotos: Booking.com. Byfotos: Wikimedia Commons. Seværdigheder: Wikipedia. Kort: OpenStreetMap."
 	}
 };
+/** Podium mark: Budget, Best Value (tallest, with the star) and Luxury. Same drawing as tools/brand/icon.svg. */
+var MARK = (size = 34, cls = "t3-mark") => `<svg class="${cls}" viewBox="0 0 64 64" width="${size}" height="${size}" aria-hidden="true" focusable="false"><rect width="64" height="64" rx="15" fill="#0b1122"/><rect x=".75" y=".75" width="62.5" height="62.5" rx="14.25" fill="none" stroke="#fff" stroke-opacity=".1" stroke-width="1.5"/><g transform="translate(0 2.2)"><path d="M10.5 50V35Q10.5 32 13.5 32H21Q24 32 24 35V50Z" fill="#34d399"/><path d="M25.25 50V25Q25.25 22 28.25 22H35.75Q38.75 22 38.75 25V50Z" fill="#ff4d64"/><path d="M40 50V39Q40 36 43 36H50.5Q53.5 36 53.5 39V50Z" fill="#ffc25c"/><path d="M32 6.6L33.7 10.85L38.28 11.16L34.76 14.1L35.88 18.54L32 16.1L28.12 18.54L29.24 14.1L25.72 11.16L30.3 10.85Z" fill="#fff"/><rect x="8" y="51.5" width="48" height="2.6" rx="1.3" fill="#fff" fill-opacity=".22"/></g></svg>`;
+var WORD = `<span class="t3-word">top<b>3</b>hotels</span>`;
+/** Logo link. `home` is the language home ("/", "/es", ...). */
+var BRAND_LINK = (home, label = "Top3Hotels, home", size = 34) => `<a class="logo t3-brand" href="${home}" aria-label="${label}">${MARK(size)}${WORD}</a>`;
+var OG_LANGS = [
+	"en",
+	"es",
+	"de",
+	"fr",
+	"it",
+	"pt",
+	"da"
+];
+var ogImage = (L) => `https://www.top3hotels.com/og/${OG_LANGS.includes(L) ? L : "en"}.png?v=6`;
+/** Icons live under /brand/ because the edge Worker still answers /favicon.ico, /icon.svg and /apple-touch-icon.png itself. */
+var ICON_LINKS = `<link rel="icon" href="/brand/favicon.ico?v=6" sizes="48x48"><link rel="icon" href="/brand/icon.svg?v=6" type="image/svg+xml"><link rel="apple-touch-icon" href="/brand/apple-touch-icon.png?v=6">`;
+var V6_CSS = `
+/* ---------- v6 brand ---------- */
+a.t3-brand{display:inline-flex!important;align-items:center!important;gap:10px!important;flex:none;text-decoration:none!important;color:inherit!important;letter-spacing:0!important;margin-right:clamp(18px,3vw,44px)!important;border-radius:12px}
+a.t3-brand:focus-visible{outline:3px solid #ff4d64;outline-offset:4px}
+.t3-mark{flex:none;display:block;border-radius:9px;box-shadow:0 6px 16px -8px #0b112299;transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+a.t3-brand:hover .t3-mark{transform:translateY(-1px) rotate(-5deg)}
+.t3-word{font:650 23px/1 Fraunces,"Fraunces Fallback",Georgia,serif;letter-spacing:-.035em;color:var(--ink,#0b1220);white-space:nowrap}
+.t3-word b{font-weight:800;color:#e8344d;padding:0 .015em}
+footer a.t3-brand .t3-word{font-size:21px}footer a.t3-brand{margin-right:0!important}
+@media (prefers-color-scheme:dark){.t3-word{color:#eef2f8}.t3-word b{color:#ff6b7f}
+ .t3-citybar{background:rgba(19,27,39,.96)!important;border-color:#233041!important;color:#eef2f8!important}.t3-citybar .t,.t3-citybar small{color:#a8b3c1!important}.t3-citybar input,.cityq{color:#eef2f8!important;background:transparent!important}
+ .city-page-link,#city-page-link{color:#8fb8ff!important}
+ .cbar{background:#131b27!important;color:#eef2f8!important;border-color:#233041!important}.cbar a{color:#cfd8e6!important}
+ .cbar button{background:transparent!important;color:#eef2f8!important;border:1px solid #3a4a63!important}.cbar button:last-of-type{background:#eef2f8!important;color:#0b1122!important;border-color:#eef2f8!important}}
+/* ---------- v6 header: room between the logo and the menu, nothing glued, nothing cut off ---------- */
+header.top,.shell>header{gap:12px!important;min-width:0}
+header.top nav,.shell>header nav{min-width:0;margin-left:auto;gap:clamp(10px,1.6vw,22px)!important}
+header nav>a:not(.tbtn):not(.t3x-ib):not(.v3-cta):not(.cta){font-weight:550;color:var(--ink,#0b1220);opacity:.82;transition:opacity .15s}
+header nav>a:not(.tbtn):not(.t3x-ib):hover{opacity:1}
+header nav select,#v3-lang-sel{min-height:40px}
+@media (max-width:980px){header nav>a.hide-md,header nav>a[href$="/map"],header nav>a[href="/guides"]{display:none!important}}
+@media (max-width:760px){
+ header.top,.shell>header{height:64px!important;min-height:64px}
+ header nav>a:not(.tbtn):not(.t3x-ib){display:none!important}
+ header nav{gap:8px!important}
+ .t3-word{font-size:20.5px}.t3-mark{width:30px;height:30px}
+ a.t3-brand{gap:8px!important;margin-right:8px!important}
+ header nav select,label.lang select,#v3-lang-sel{width:76px!important;max-width:76px!important;padding-left:30px!important;padding-right:12px!important;background-position:9px 50%!important;text-overflow:clip}
+ header .tbtn .lbl,header .tbtn kbd{display:none!important}
+}
+@media (max-width:360px){.t3-word{font-size:18.5px}header nav .tbtn[href$="/saved"],header nav a.t3x-ib[href="/saved"]{display:none!important}}
+/* ---------- v6 cookie bar: one compact row on phones ---------- */
+@media (max-width:620px){
+ .cbar{font-size:13px!important;line-height:1.45!important;padding:12px 14px!important;gap:8px 10px!important;border-radius:16px!important;left:10px!important;right:10px!important}
+ .cbar p{flex:1 1 100%!important}
+ .cbar button{flex:1 1 0;min-height:42px!important;font-size:14px!important}
+}
+/* ---------- v6 city hero: shorter on phones (the full answer stays for search and screen readers) ---------- */
+@media (max-width:620px){
+ .hero .lead{font-size:16px!important;line-height:1.5!important}
+ .hero .lead.answer{font-size:14px!important;opacity:.78;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+ .hero .eyebrow{letter-spacing:.14em!important}
+}
+/* ---------- v6 destination lists: a compact grid instead of 30 full-width rows ---------- */
+@media (max-width:620px){
+ ul.dir-popular{display:grid!important;grid-template-columns:1fr 1fr!important;gap:8px!important}
+ ul.dir-popular li{margin:0!important}
+ ul.dir-popular a{padding:11px 12px!important;font-size:13.5px!important;line-height:1.3!important;min-height:44px;display:flex!important;align-items:center}
+}
+/* ---------- v6 accessibility and comfort ---------- */
+footer li a{display:inline-block;padding:5px 0}
+@media (max-width:620px){footer li a{padding:9px 0}.crumbs a,nav[aria-label*="readcrumb"] a{display:inline-block;padding:8px 2px}}
+[id]{scroll-margin-top:84px}
+a{text-underline-offset:.18em}
+::selection{background:#ff4d6433}
+@media print{header,footer,.cbar,.skip,#v2-sticky,.sticky3,[data-pal]{display:none!important}body{background:#fff!important;color:#000!important}a{text-decoration:underline}}
+.skip{position:fixed;left:12px;top:-90px;z-index:2147483646;background:#fff;color:#0b1220;padding:12px 16px;border-radius:12px;box-shadow:0 10px 30px #0003;font-weight:600;text-decoration:none}.skip:focus{top:12px}
+main:focus{outline:none}
+:where(a,button,select,input,summary):focus-visible{outline:3px solid #ff4d64!important;outline-offset:3px!important}
+.skip:focus{z-index:2147483646!important}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased}
+img{max-width:100%}
+h2,h3,main h1:not(#headline){text-wrap:balance}p{text-wrap:pretty}
+button,a,summary,select,label{touch-action:manipulation}
+@media (prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+@supports (padding:max(0px)){footer{padding-bottom:max(24px,env(safe-area-inset-bottom))}}
+`;
+/** Language menu: phones show "EN", "ES"... in the closed menu (full names when it opens), so it never overflows. */
+var V6_JS = `(function(){
+function code(v){var m=String(v||'').match(/^\\/(es|de|fr|it|pt|da)(?:\\/|$)/);return (m?m[1]:'en').toUpperCase()}
+var mq=window.matchMedia?matchMedia('(max-width:760px)'):null;
+function sel(){return document.querySelectorAll('header select')}
+function short(s){for(var i=0;i<s.options.length;i++){var o=s.options[i];if(!o.getAttribute('data-full'))o.setAttribute('data-full',o.textContent);o.textContent=(mq&&mq.matches&&o.selected)?code(o.value||location.pathname):o.getAttribute('data-full')}}
+function full(s){for(var i=0;i<s.options.length;i++){var o=s.options[i];if(o.getAttribute('data-full'))o.textContent=o.getAttribute('data-full')}}
+function all(){sel().forEach(function(s){short(s);if(s.__t3v6)return;s.__t3v6=1;s.addEventListener('focus',function(){full(s)});s.addEventListener('mousedown',function(){full(s)});s.addEventListener('blur',function(){short(s)})})}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',all);else all();
+if(mq&&mq.addEventListener)mq.addEventListener('change',all);
+/* external links opened in a new tab never get access to this page */
+document.addEventListener('click',function(e){var a=e.target&&e.target.closest?e.target.closest('a[target=_blank]'):null;if(a){var r=(a.getAttribute('rel')||'');if(!/noopener/.test(r))a.setAttribute('rel',(r+' noopener').trim())}},true);
+})();`;
 var js = (o) => o;
 var Y = {
 	en: {
@@ -2035,7 +2133,7 @@ var Z = {
 		accept: "Accept",
 		reject: "Reject",
 		more: "Cookie policy",
-		filming: (c) => `Hotels in ${c}: we're filming our ${c} picks in late October 2026`,
+		filming: (c) => `Hotels in ${c}: be part of our ${c} videos`,
 		filmingLead: "Want your hotel in our videos and featured as a labelled partner on this page? Tell us now, we confirm one hotel per category.",
 		hotelsTitle: (c) => `Run a hotel in ${c}?`,
 		hotelsLead: "Get a free badge for your website, see how travellers find you, or apply for a labelled partner feature with photos and video.",
@@ -2047,7 +2145,7 @@ var Z = {
 		accept: "Aceptar",
 		reject: "Rechazar",
 		more: "Política de cookies",
-		filming: (c) => `Hoteles de ${c}: grabamos nuestra selección de ${c} a finales de octubre de 2026`,
+		filming: (c) => `Hoteles de ${c}: aparece en nuestros vídeos de ${c}`,
 		filmingLead: "¿Quieres tu hotel en nuestros vídeos y destacado como partner (siempre etiquetado) en esta página? Escríbenos ya, confirmamos un hotel por categoría.",
 		hotelsTitle: (c) => `¿Tienes un hotel en ${c}?`,
 		hotelsLead: "Consigue un sello gratis para tu web, descubre cómo te encuentran los viajeros o solicita aparecer como partner etiquetado con fotos y vídeo.",
@@ -2059,7 +2157,7 @@ var Z = {
 		accept: "Akzeptieren",
 		reject: "Ablehnen",
 		more: "Cookie-Richtlinie",
-		filming: (c) => `Hotels in ${c}: Ende Oktober 2026 filmen wir unsere Auswahl in ${c}`,
+		filming: (c) => `Hotels in ${c}: Seien Sie in unseren Videos aus ${c} dabei`,
 		filmingLead: "Möchtest du dein Hotel in unseren Videos und als gekennzeichneten Partner auf dieser Seite? Melde dich jetzt, wir bestätigen ein Hotel pro Kategorie.",
 		hotelsTitle: (c) => `Du führst ein Hotel in ${c}?`,
 		hotelsLead: "Hol dir ein kostenloses Siegel für deine Website oder bewirb dich als gekennzeichneter Partner mit Fotos und Video.",
@@ -2071,7 +2169,7 @@ var Z = {
 		accept: "Accepter",
 		reject: "Refuser",
 		more: "Politique cookies",
-		filming: (c) => `Hôtels à ${c} : nous filmons notre sélection à ${c} fin octobre 2026`,
+		filming: (c) => `Hôtels à ${c} : apparaissez dans nos vidéos de ${c}`,
 		filmingLead: "Votre hôtel dans nos vidéos et mis en avant comme partenaire (toujours signalé) sur cette page ? Écrivez-nous, nous confirmons un hôtel par catégorie.",
 		hotelsTitle: (c) => `Vous gérez un hôtel à ${c} ?`,
 		hotelsLead: "Obtenez un badge gratuit pour votre site ou proposez-vous comme partenaire signalé, avec photos et vidéo.",
@@ -2083,7 +2181,7 @@ var Z = {
 		accept: "Accetta",
 		reject: "Rifiuta",
 		more: "Cookie policy",
-		filming: (c) => `Hotel a ${c}: a fine ottobre 2026 filmiamo la nostra selezione di ${c}`,
+		filming: (c) => `Hotel a ${c}: entra nei nostri video su ${c}`,
 		filmingLead: "Vuoi il tuo hotel nei nostri video e in evidenza come partner (sempre indicato) su questa pagina? Scrivici, confermiamo un hotel per categoria.",
 		hotelsTitle: (c) => `Gestisci un hotel a ${c}?`,
 		hotelsLead: "Ottieni un badge gratuito per il tuo sito o candidati come partner indicato, con foto e video.",
@@ -2095,7 +2193,7 @@ var Z = {
 		accept: "Aceitar",
 		reject: "Rejeitar",
 		more: "Política de cookies",
-		filming: (c) => `Hotéis em ${c}: vamos filmar a nossa seleção de ${c} no final de outubro de 2026`,
+		filming: (c) => `Hotéis em ${c}: apareça nos nossos vídeos de ${c}`,
 		filmingLead: "Quer o seu hotel nos nossos vídeos e em destaque como parceiro (sempre identificado) nesta página? Fale connosco, confirmamos um hotel por categoria.",
 		hotelsTitle: (c) => `Tem um hotel em ${c}?`,
 		hotelsLead: "Obtenha um selo gratuito para o seu site ou candidate-se a parceiro identificado, com fotos e vídeo.",
@@ -2107,7 +2205,7 @@ var Z = {
 		accept: "Accepter",
 		reject: "Afvis",
 		more: "Cookiepolitik",
-		filming: (c) => `Hoteller i ${c}: vi filmer vores udvalg i ${c} i slutningen af oktober 2026`,
+		filming: (c) => `Hoteller i ${c}: kom med i vores videoer fra ${c}`,
 		filmingLead: "Vil du have dit hotel med i vores videoer og fremhævet som (altid markeret) partner på denne side? Skriv nu, vi bekræfter ét hotel pr. kategori.",
 		hotelsTitle: (c) => `Driver du et hotel i ${c}?`,
 		hotelsLead: "Få et gratis badge til din hjemmeside, eller søg om at blive markeret partner med billeder og video.",
@@ -20016,30 +20114,56 @@ self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(ks=>Promise.a
 self.addEventListener('fetch',e=>{const r=e.request;if(r.method!=='GET'||r.mode!=='navigate'||new URL(r.url).origin!==location.origin)return;
 e.respondWith(fetch(r).then(res=>{if(res.ok){const cp=res.clone();caches.open(C).then(c=>c.put(r,cp))}return res}).catch(()=>caches.match(r).then(m=>m||caches.match('/'))))});`;
 var MANIFEST = JSON.stringify({
-	name: "Top3Hotels",
+	id: "/",
+	name: "Top3Hotels: the 3 best hotels in any city",
 	short_name: "Top3Hotels",
 	description: "Three hotels per city, chosen by public rules: budget, best value and luxury.",
+	lang: "en",
+	dir: "ltr",
 	start_url: "/?source=pwa",
 	scope: "/",
 	display: "standalone",
-	background_color: "#f7f8fa",
-	theme_color: "#0e1520",
+	orientation: "portrait",
+	background_color: "#faf9f5",
+	theme_color: "#0b1122",
+	categories: ["travel", "lifestyle"],
 	icons: [
 		{
-			src: "/icon-192.png",
+			src: "/brand/icon.svg?v=6",
+			sizes: "any",
+			type: "image/svg+xml"
+		},
+		{
+			src: "/brand/icon-192.png?v=6",
 			sizes: "192x192",
-			type: "image/png"
+			type: "image/png",
+			purpose: "any"
 		},
 		{
-			src: "/icon-512.png",
+			src: "/brand/icon-512.png?v=6",
 			sizes: "512x512",
-			type: "image/png"
+			type: "image/png",
+			purpose: "any"
 		},
 		{
-			src: "/icon-512.png",
+			src: "/brand/icon-maskable-512.png?v=6",
 			sizes: "512x512",
 			type: "image/png",
 			purpose: "maskable"
+		}
+	],
+	shortcuts: [
+		{
+			name: "All destinations",
+			url: "/destinations?source=pwa"
+		},
+		{
+			name: "Saved hotels",
+			url: "/saved?source=pwa"
+		},
+		{
+			name: "Cheapest cities",
+			url: "/cheap-cities?source=pwa"
 		}
 	]
 });
@@ -21430,7 +21554,6 @@ function bookingLink(h, ci, co) {
 	}
 }
 var mapLink = (h, city) => "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(`${h.name}, ${h.address ?? ""}, ${city.city}, ${city.country}`);
-var LOGO = `<svg width="28" height="24" viewBox="0 0 28 24" aria-hidden="true"><rect x="0" y="11" width="7.5" height="13" rx="2.2" fill="#1f7a5a"/><rect x="10.25" y="0" width="7.5" height="24" rx="2.2" fill="#d83b51"/><rect x="20.5" y="5.5" width="7.5" height="18.5" rx="2.2" fill="#c9971c"/></svg>`;
 var CSS = `@font-face{font-family:Fraunces;font-style:normal;font-weight:300 700;font-display:swap;src:url(/fonts/fraunces-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
 @font-face{font-family:Fraunces;font-style:normal;font-weight:300 700;font-display:swap;src:url(/fonts/fraunces-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C4,U+2113,U+2C60-2C7F,U+A720-A7FF}
 @font-face{font-family:Inter;font-style:normal;font-weight:400 700;font-display:swap;src:url(/fonts/inter-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
@@ -21600,15 +21723,15 @@ function page(o) {
 	};
 	const t = T[o.L];
 	const url = SITE + P(o.L, o.path);
-	const image = o.image ?? `https://www.top3hotels.com/og.png`;
+	const image = o.image ?? ogImage(o.L);
 	const alt = o.altLinks ? o.altLinks.map(([l, h]) => `<link rel="alternate" hreflang="${l}" href="${SITE}${h}">`).join("") + (o.altLinks.find(([l]) => l === "en") ? `<link rel="alternate" hreflang="x-default" href="${SITE}${o.altLinks.find(([l]) => l === "en")[1]}">` : "") : o.langs ? LANGS.map((l) => `<link rel="alternate" hreflang="${l}" href="${SITE}${P(l, o.path)}">`).join("") + `<link rel="alternate" hreflang="x-default" href="${SITE}${o.path}">` : o.alts ? o.alts.map((l) => `<link rel="alternate" hreflang="${l}" href="${SITE}${P(l, o.path)}">`).join("") + `<link rel="alternate" hreflang="x-default" href="${SITE}${o.path}">` : "";
 	const langSel = o.langs ? `<label class="lang"><span class="sr" hidden>Language</span><select aria-label="Language" onchange="location.href=this.value">${LANGS.map((l) => `<option value="${P(l, o.path)}"${l === o.L ? " selected" : ""}>${T[l].name}</option>`).join("")}</select></label>` : "";
 	return `<!doctype html><html lang="${t.htmlLang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(o.title)}</title><meta name="description" content="${esc(o.description)}">
 ${o.noindex ? "<meta name=\"robots\" content=\"noindex,follow\">" : `<link rel="canonical" href="${esc(url)}"><meta name="robots" content="index,follow,max-image-preview:large">`}${alt}
-<meta property="og:site_name" content="Top3Hotels"><meta property="og:type" content="website"><meta property="og:url" content="${esc(url)}"><meta property="og:title" content="${esc(o.title)}"><meta property="og:description" content="${esc(o.description)}"><meta property="og:image" content="${esc(image)}">${image.endsWith("/og.png") ? "<meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\">" : ""}<meta property="og:image:alt" content="${esc(o.title)}"><meta property="og:locale" content="${t.htmlLang}">
-<meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@mrstartups"><meta name="twitter:creator" content="@mrstartups"><meta name="twitter:title" content="${esc(o.title)}"><meta name="twitter:description" content="${esc(o.description)}"><meta name="twitter:image" content="${esc(image)}">
-<meta name="theme-color" content="#f7f8fa" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0e1520" media="(prefers-color-scheme: dark)"><meta name="color-scheme" content="light dark"><link rel="icon" href="/favicon.ico" sizes="any"><link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:site_name" content="Top3Hotels"><meta property="og:type" content="website"><meta property="og:url" content="${esc(url)}"><meta property="og:title" content="${esc(o.title)}"><meta property="og:description" content="${esc(o.description)}"><meta property="og:image" content="${esc(image)}">${image.includes("/og/") || image.endsWith("/og.png") ? "<meta property=\"og:image:width\" content=\"1200\"><meta property=\"og:image:height\" content=\"630\"><meta property=\"og:image:type\" content=\"image/png\">" : ""}<meta property="og:image:alt" content="${esc(o.title)}"><meta property="og:locale" content="${t.htmlLang}">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@mrstartups"><meta name="twitter:creator" content="@mrstartups"><meta name="twitter:title" content="${esc(o.title)}"><meta name="twitter:description" content="${esc(o.description)}"><meta name="twitter:image" content="${esc(image)}"><meta name="twitter:image:alt" content="${esc(o.title)}">
+<meta name="theme-color" content="#f7f8fa" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#0e1520" media="(prefers-color-scheme: dark)"><meta name="color-scheme" content="light dark"><meta name="application-name" content="Top3Hotels"><meta name="apple-mobile-web-app-title" content="Top3Hotels"><meta name="format-detection" content="telephone=no">${ICON_LINKS}<link rel="preload" href="/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin>
 <style>${CSS}
 ${CSS_PLUS}
 ${CSS_TRUST}${CSS_ALT}
@@ -21617,10 +21740,10 @@ ${CSS_SOCIAL}
 ${CSS_DP}</style><link rel="preconnect" href="https://cf.bstatic.com"><link rel="manifest" href="/manifest.webmanifest">
 ${(o.ld ?? []).map((x) => `<script type="application/ld+json">${json(x)}<\/script>`).join("")}
 <script>window.t3track=function(e,p){try{(window.dataLayer=window.dataLayer||[]).push(Object.assign({event:e},p||{}));if(window.gtag)gtag('event',e,p||{});if(window.plausible)plausible(e,{props:p||{}})}catch(_){}};document.addEventListener('click',function(ev){var a=ev.target.closest&&ev.target.closest('[data-t]');if(a)t3track(a.dataset.t,{city:a.dataset.city,category:a.dataset.cat,provider:a.dataset.p})});<\/script>
-${consentScript(Z[o.L])}</head><body><div class="wrap">
-<header class="top"><a class="logo" href="${P(o.L, "/")}">${LOGO}<span>top3hotels<em>.</em></span></a><nav aria-label="Main"><a href="${P(o.L, "/destinations")}">${t.allDest}</a><a class="hide-sm" href="${P(o.L, "/lists")}">${t.lists}</a><a class="hide-sm" href="${o.L === "es" ? "/es/guides" : "/guides"}">${o.L === "es" ? "Guías" : "Guides"}</a><a class="hide-sm" href="/how-we-choose">${t.how}</a><a class="hide-sm hide-md" href="${P(o.L, "/map")}">🗺 ${esc(M[o.L].map)}</a><a class="hide-sm hide-md" href="/affiliate-disclosure">${esc(M[o.L].money)}</a><a class="cta" href="/partners">${X[o.L].forHotels}</a><button type="button" class="tbtn" data-pal aria-label="${esc(Y[o.L].js["search"])}">🔍 <span class="lbl">${esc(Y[o.L].js["search"])}</span> <kbd>/</kbd></button><a class="tbtn" href="${P(o.L, "/saved")}" aria-label="${esc(Y[o.L].js["saved"])}">♡<span class="n" data-savedn hidden></span></a>${langSel}</nav></header>
-${socialPill(o.L)}<main>${o.body}</main>
-<footer><div class="cols"><div><a class="logo" href="${P(o.L, "/")}" style="font-size:20px">${LOGO}<span>top3hotels<em>.</em></span></a><p style="max-width:340px;margin:12px 0 0">${t.footer} ${X[o.L].independent} · ${X[o.L].noPaid}.</p></div>
+${consentScript(Z[o.L])}</head><body><style id="t3-v6">${V6_CSS}</style><a class="skip" href="#main">${o.L === "es" ? "Ir al contenido" : o.L === "de" ? "Zum Inhalt" : o.L === "fr" ? "Aller au contenu" : o.L === "it" ? "Vai al contenuto" : o.L === "pt" ? "Ir para o conteúdo" : o.L === "da" ? "Gå til indhold" : "Skip to content"}</a><div class="wrap">
+<header class="top">${BRAND_LINK(P(o.L, "/"))}<nav aria-label="Main"><a href="${P(o.L, "/destinations")}">${t.allDest}</a><a class="hide-sm" href="${P(o.L, "/lists")}">${t.lists}</a><a class="hide-sm" href="${o.L === "es" ? "/es/guides" : "/guides"}">${o.L === "es" ? "Guías" : "Guides"}</a><a class="hide-sm" href="/how-we-choose">${t.how}</a><a class="hide-sm hide-md" href="${P(o.L, "/map")}">🗺 ${esc(M[o.L].map)}</a><a class="hide-sm hide-md" href="/affiliate-disclosure">${esc(M[o.L].money)}</a><a class="cta" href="/partners">${X[o.L].forHotels}</a><button type="button" class="tbtn" data-pal aria-label="${esc(Y[o.L].js["search"])}">🔍 <span class="lbl">${esc(Y[o.L].js["search"])}</span> <kbd>/</kbd></button><a class="tbtn" href="${P(o.L, "/saved")}" aria-label="${esc(Y[o.L].js["saved"])}">♡<span class="n" data-savedn hidden></span></a>${langSel}</nav></header>
+${socialPill(o.L)}<main id="main" tabindex="-1">${o.body.replace(/<img(?![^>]*\bdecoding=)/g, "<img decoding=\"async\"")}</main>
+<footer><div class="cols"><div>${BRAND_LINK(P(o.L, "/"), "Top3Hotels", 30)}<p style="max-width:340px;margin:12px 0 0">${t.footer} ${X[o.L].independent} · ${X[o.L].noPaid}.</p></div>
 <div><h3>${X[o.L].explore}</h3><ul><li><a href="${P(o.L, "/destinations")}">${t.allDest}</a></li><li><a href="${P(o.L, "/lists")}">${t.lists}</a></li><li><a href="${P(GROWTH_LANGS.includes(o.L) ? o.L : "en", "/hotel-price-index")}">${o.L === "es" ? "Índice de precios" : "Hotel Price Index"}</a></li><li><a href="${P(GROWTH_LANGS.includes(o.L) ? o.L : "en", "/open-data")}">${o.L === "es" ? "Datos abiertos" : "Open data"}</a></li>${o.L === "da" ? `<li><a href="${P(o.L, "/from/billund")}">✈ Billund</a></li><li><a href="${P(o.L, "/from/aalborg")}">✈ Aalborg</a></li><li><a href="${P(o.L, "/from/aarhus")}">✈ Aarhus</a></li>` : ""}<li><a href="${P(o.L, "/cheap-cities")}">${esc(Y[o.L].cheapNav)}</a></li><li><a href="${P(o.L, "/map")}">🗺 ${esc(M[o.L].map)}</a></li><li><a href="/random">🎲 ${esc(Y[o.L].js["surprise"])}</a></li><li><a href="/press">Press &amp; data</a></li><li><a href="${o.L === "es" ? "/es/guides" : "/guides"}">${o.L === "es" ? "Guías" : "Guides"}</a></li></ul></div>
 <div><h3>${X[o.L].company}</h3><ul><li><a href="/about">${X[o.L].about}</a></li><li><a href="/how-we-choose">${t.how}</a></li><li><a href="/partners">${X[o.L].forHotels}</a></li><li><a href="/contact">${X[o.L].contact}</a></li></ul></div>
 <div><h3>${X[o.L].legal}</h3><ul><li><a href="/privacy">${X[o.L].privacy}</a></li><li><a href="/cookies">${X[o.L].cookies}</a></li><li><a href="/terms">${X[o.L].terms}</a></li><li><a href="/imprint">${X[o.L].imprint}</a></li><li><a href="/affiliate-disclosure">Affiliate disclosure</a></li><li><a href="/sitemap.xml">Sitemap</a></li></ul></div></div>
@@ -21628,7 +21751,7 @@ ${socialPill(o.L)}<main>${o.body}</main>
 </div>${o.scripts ?? ""}<script>window.T3L=${json(o.L)};window.T3S=${json(Y[o.L].js)};${GLOBAL_JS}
 ${JS_PLUS}
 window.T3V=${json(M[o.L].voice)};${JS_MORE}
-${REPORT_JS}${INSTALL_JS}${VOTE_JS}<\/script><script>${JS_DP}<\/script></body></html>`;
+${REPORT_JS}${INSTALL_JS}${VOTE_JS}<\/script><script>${JS_DP}<\/script><script>${V6_JS}<\/script></body></html>`;
 }
 var html = (body, status = 200, cache = "public, max-age=600, s-maxage=86400") => new Response(body, {
 	status,
@@ -22003,7 +22126,7 @@ async function cityPage(city, L) {
 		path,
 		body: `<p class="crumbs"><a href="${P(L, "/")}">${esc(t.home)}</a> › <a href="${P(L, `/country/${city.cslug}`)}">${esc(cname)}</a> › ${esc(city.city)}</p>
 <div class="hero${hero?.img ? "" : " noimg"}">${hero?.img ? `<img src="/api/img/${esc(city.id)}/big" srcset="/api/img/${esc(city.id)}/small 500w, /api/img/${esc(city.id)}/mid 960w, /api/img/${esc(city.id)}/big 1280w" sizes="(max-width: 960px) 100vw, 1180px" alt="${esc(city.city)}" fetchpriority="high" onerror="this.onerror=null;this.src='/api/img/${esc(city.id)}/orig'">` : ""}
-<div class="in"><p class="eyebrow">${esc(cname)} · 3 · ${esc(t.ourPick)}</p><h1>${esc(t.h1(city.city))}<em>.</em></h1><p class="lead">${esc(t.lead(sample))}</p><p class="lead answer">${esc(description)}</p></div>${hero?.page ? `<small>${esc(t.photo)}: <a href="${esc(hero.page)}" rel="nofollow noopener" target="_blank">Wikimedia Commons</a></small>` : ""}</div>
+<div class="in"><p class="eyebrow">${esc(cname)} · Top 3</p><h1>${esc(t.h1(city.city))}<em>.</em></h1><p class="lead">${esc(t.lead(sample))}</p><p class="lead answer">${esc(description)}</p></div>${hero?.page ? `<small>${esc(t.photo)}: <a href="${esc(hero.page)}" rel="nofollow noopener" target="_blank">Wikimedia Commons</a></small>` : ""}</div>
 <p class="byline"><span class="ok">${esc(xt.reviewed(updated))}</span><span class="ok">${esc(xt.independent)}</span><span class="ok">${esc(xt.noPaid)}</span></p>${flights}${in1}${jump}<span hidden data-track="${esc(JSON.stringify({
 			s: city.slug,
 			c: city.city
@@ -22012,7 +22135,14 @@ async function cityPage(city, L) {
 <div class="cards" id="hotels">${hs.map((h, i) => card(h, city, i, L, sights, hero?.img ? `/api/img/${city.id}/big` : void 0, hpLive.has(hotelSlug(h.name, city.slug)) ? P(hpL.get(hotelSlug(h.name, city.slug))?.includes(L) ? L : "en", `/hotel/${hotelSlug(h.name, city.slug)}`) : void 0)).join("")}</div>
 <p class="more-links" style="margin:14px 0 4px;font-size:15px"><a href="${P(GROWTH_LANGS.includes(L) ? L : "en", `/compare-picks/${city.slug}`)}">${L === "es" ? "Comparar los tres hoteles" : "Compare the three hotels side by side"}</a>${(sights ?? []).length ? ` · ${L === "es" ? "Hoteles cerca de" : "Hotels near"}: ${(sights ?? []).slice(0, 6).map((x) => `<a href="${P(GROWTH_LANGS.includes(L) ? L : "en", `/near/${city.slug}/${x.name.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase().replace(/&/g, " and ").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}`)}">${esc(x.name)}</a>`).join(", ")}` : ""}</p>${GROWTH_LANGS.includes(L) ? voteWidget(L, city.slug) : ""}
 ${gymLink(city.id, city.slug, L)}${poolLink(city.id, city.slug, L)}<aside class="curator"><span class="av" aria-hidden="true">CO</span><div><h3>${esc(M[L].curatorT)}</h3><p>${esc(M[L].curatorB)}</p><p style="margin-top:6px"><a href="/how-we-choose">${esc(M[L].how)} →</a><a href="/affiliate-disclosure">${esc(M[L].money)} →</a></p></div></aside>${guideFor(city.slug) ? `<p class="note" style="margin:14px 0"><a href="/guides/${guideFor(city.slug).slug}">📖 ${esc(guideFor(city.slug).h1)}: areas, tips and our three picks →</a></p>` : ""}
-<p class="note">${esc(t.refRate)}: ${esc(dates)}, ${esc(({ es: "2 adultos, 1 habitación", de: "2 Erwachsene, 1 Zimmer", fr: "2 adultes, 1 chambre", it: "2 adulti, 1 camera", pt: "2 adultos, 1 quarto", da: "2 voksne, 1 værelse" })[L] || "2 adults, 1 room")} · ${esc(checkedText)}.</p>
+<p class="note">${esc(t.refRate)}: ${esc(dates)}, ${esc({
+			es: "2 adultos, 1 habitación",
+			de: "2 Erwachsene, 1 Zimmer",
+			fr: "2 adultes, 1 chambre",
+			it: "2 adulti, 1 camera",
+			pt: "2 adultos, 1 quarto",
+			da: "2 voksne, 1 værelse"
+		}[L] || "2 adults, 1 room")} · ${esc(checkedText)}.</p>
 <div class="sharebar"><span>${esc(xt.share)}:</span><button type="button" data-shareimg="${esc(JSON.stringify({
 			slug: city.slug,
 			city: city.city,
@@ -23327,16 +23457,22 @@ async function alerts(request, env) {
 		headers: { "content-type": "application/json" }
 	});
 	if (request.method === "GET") return res({ enabled: true });
+	if (request.method !== "POST") return res({ error: "method" }, 405);
+	const origin = request.headers.get("origin");
+	if (origin && !/^https:\/\/(www\.)?top3hotels\.com$/.test(origin)) return res({ error: "origin" }, 403);
+	if (!(request.headers.get("content-type") ?? "").includes("application/json")) return res({ error: "content_type" }, 415);
+	if (Number(request.headers.get("content-length") ?? 0) > 2048) return res({ error: "too_large" }, 413);
 	let body;
 	try {
-		body = await request.json();
+		body = JSON.parse((await request.text()).slice(0, 2048));
 	} catch {
 		return res({ error: "bad_json" }, 400);
 	}
 	const email = String(body.email ?? "").trim().toLowerCase();
 	if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email) || email.length > 200) return res({ error: "bad_email" }, 400);
-	const city = String(body.city ?? "").slice(0, 80);
-	const category = String(body.category ?? "").slice(0, 20);
+	if (body.website) return res({ ok: true });
+	const city = String(body.city ?? "").replace(/[<>"]/g, "").slice(0, 80);
+	const category = String(body.category ?? "").replace(/[^a-z -]/gi, "").slice(0, 20);
 	const max = Math.max(1, Math.min(1e5, Math.round(Number(body.max) || 0)));
 	if (!key || !audience) return (await fetch(`${SB_URL}/rest/v1/top3_alerts`, {
 		method: "POST",
@@ -23444,6 +23580,14 @@ async function handleSeo(request, env) {
 	}
 	if (p === "/random") return randomCity();
 	if (p === "/api/map.json") return mapJson();
+	if (p === "/.well-known/security.txt" || p === "/security.txt") return new Response("Contact: mailto:carlos@equinoxinvestmentgroup.com\nExpires: 2027-11-08T00:00:00.000Z\nPreferred-Languages: en, es\nCanonical: https://www.top3hotels.com/.well-known/security.txt\nPolicy: https://www.top3hotels.com/terms\n", { headers: {
+		"content-type": "text/plain; charset=utf-8",
+		"cache-control": "public, max-age=86400"
+	} });
+	if (p === "/site.webmanifest") return new Response(MANIFEST, { headers: {
+		"content-type": "application/manifest+json",
+		"cache-control": "public, max-age=86400"
+	} });
 	if (p === "/manifest.webmanifest") return new Response(MANIFEST, { headers: {
 		"content-type": "application/manifest+json",
 		"cache-control": "public, max-age=86400"
@@ -23642,7 +23786,7 @@ async function handleSeo(request, env) {
 }
 var serverEntryPromise;
 async function getServerEntry() {
-	if (!serverEntryPromise) serverEntryPromise = import("./server-gd4jOjB0.mjs").then((m) => m.default ?? m);
+	if (!serverEntryPromise) serverEntryPromise = import("./server-CW6UWq0F.mjs").then((m) => m.default ?? m);
 	return serverEntryPromise;
 }
 async function normalizeCatastrophicSsrResponse(response) {
@@ -23664,13 +23808,41 @@ function isH3SwallowedErrorBody(body) {
 		return false;
 	}
 }
+/** Browser security headers for every response of the top3hotels worker (8-nov-2026).
+*  CSP keeps inline scripts (the pages are server-rendered with inline JS) but blocks plugins, <base> hijacking,
+*  form posts to other sites and framing by other sites. /embed/* is meant to be framed by blogs, so it is the exception. */
+function secure(res, url) {
+	const h = new Headers(res.headers);
+	const embed = url.pathname.startsWith("/embed");
+	const ct = h.get("content-type") ?? "";
+	h.set("x-content-type-options", "nosniff");
+	h.set("referrer-policy", "strict-origin-when-cross-origin");
+	h.set("permissions-policy", "camera=(), microphone=(self), geolocation=(self), payment=(), usb=(), serial=(), bluetooth=(), browsing-topics=(), interest-cohort=()");
+	h.set("x-permitted-cross-domain-policies", "none");
+	if (ct.includes("text/html")) {
+		h.set("content-security-policy", `object-src 'none'; base-uri 'self'; form-action 'self' https://www.booking.com; frame-ancestors ${embed ? "*" : "'self'"}; upgrade-insecure-requests`);
+		if (!embed) h.set("x-frame-options", "SAMEORIGIN");
+		h.set("cross-origin-opener-policy", "same-origin-allow-popups");
+	}
+	return new Response(res.body, {
+		status: res.status,
+		statusText: res.statusText,
+		headers: h
+	});
+}
 var server_default = { async fetch(request, env, ctx) {
+	const url = new URL(request.url);
+	const res = await handle(request, env, ctx);
+	if (res.status >= 300 && res.status < 400) return res;
+	return secure(res, url);
+} };
+async function handle(request, env, ctx) {
 	try {
 		const url = new URL(request.url);
 		const readRequest = request.method === "GET" || request.method === "HEAD";
 		if (url.pathname === "/top3hotels.html" && readRequest) return Response.redirect(new URL("/" + url.search, url).href, 301);
 		if (url.pathname === "/" && readRequest) {
-			const html = request.method === "HEAD" ? null : (await import("./home-zmvuxtZd.mjs")).default;
+			const html = request.method === "HEAD" ? null : (await import("./home-CHP4aC8w.mjs")).default;
 			return new Response(html, {
 				status: 200,
 				headers: {
@@ -23689,6 +23861,6 @@ var server_default = { async fetch(request, env, ctx) {
 			headers: { "content-type": "text/html; charset=utf-8" }
 		});
 	}
-} };
+}
 //#endregion
 export { server_default as default, renderErrorPage as t };
