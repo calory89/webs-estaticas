@@ -51,30 +51,30 @@ GUIDES = [
  "es": {
   "title": "Laguna Weekuri, Sumba: cómo llegar, cuándo ir y qué saber",
   "dek": "Una piscina de agua salada transparente que el océano Índico llena a través del coral, en el extremo occidental de Sumba: cómo llegar, a qué hora ir y cómo bañarse con seguridad.",
-  "answer": "La laguna Weekuri (Danau Weekuri) es una laguna de agua salada en Kodi Utara, Sumba Suroccidental, que se llena con el agua de mar que se filtra por la roca coralina que la separa del océano. Está a unos 40-60 km del aeropuerto de Tambolaka, alrededor de 1,5-2 horas en coche, y en 2025-2026 se solía pedir unas 15.000-20.000 IDR por persona. Ve en temporada seca (aproximadamente de mayo a septiembre), por la mañana y entre semana, y lleva escarpines para las rocas resbaladizas.",
+  "answer": "La laguna Weekuri (Danau Weekuri) es una laguna de agua salada en Kodi Utara, Sumba Suroccidental, que se llena con el agua de mar que se filtra por la roca coralina que la separa del océano. Está a unos 40-60 km del aeropuerto de Tambolaka, alrededor de 1,5-2 horas en coche, y en 2025-2026 se solía pedir unas 15.000-20.000 rupias por persona. Ve en temporada seca (aproximadamente de mayo a septiembre), por la mañana y entre semana, y lleva escarpines para las rocas resbaladizas.",
   "body": """<p>El océano se oye antes de ver la laguna: un estruendo grave al otro lado de las rocas y luego un siseo cuando la espuma trepa por la pared de coral y vuelve a caer. De este lado, todo está quieto. El agua es tan clara que el fondo de arena y las manchas oscuras de coral parecen al alcance de la mano, y su color pasa del verde pálido de las orillas al turquesa intenso del centro. Los niños del pueblo se tiran en bomba desde las rocas, algunos bañistas flotan boca arriba y el puente de madera cruje bajo los pies descalzos.</p>
 <p>Weekuri es el paraje natural más visitado del extremo oeste de Sumba, y con razón. Aquí te contamos qué es, cómo llegar, cuándo ir y cómo visitarla con seguridad y respeto.</p>
 
 <h2>Qué es la laguna Weekuri y por qué ir</h2>
-<p>Weekuri (también escrito Waikuri) es una laguna de agua salada en Desa Moromanduyo, distrito de Kodi Utara, Sumba Suroccidental. Una barrera natural de roca coralina la separa del océano Índico y el agua de mar se filtra y salpica por sus huecos, de modo que el nivel y el color cambian con la marea. Se dice que el nombre viene de la palabra local para la espuma del mar que forma el lago.</p>
-<p>Es pequeña: unos 130-150 m de largo y 40-50 m de ancho, según la fuente. La profundidad va de unos 30 cm en la orilla a unos 2,5 m, y la prensa local habla de hasta 5 m con marea alta. Como el agua es salada se flota con facilidad, y como las olas rompen en las rocas exteriores, la laguna está en calma. Lonely Planet la describe con agua tranquila y fresca a un lado y el océano golpeando rocas y bufaderos al otro, y ese es justo su encanto: un baño protegido junto a una costa salvaje.</p>
+<p>Weekuri (también escrito Waikuri) es una laguna de agua salada en Desa Moromanduyo, distrito de Kodi Utara, Sumba Suroccidental. Una barrera natural de roca coralina la separa del océano Índico y el agua de mar se filtra y salpica por sus huecos, de modo que el nivel y el color cambian con la marea. Según la tradición, el nombre procede de la palabra local que designa la espuma del mar que forma el lago.</p>
+<p>Es pequeña: unos 130-150 m de largo y 40-50 m de ancho, según la fuente. La profundidad va de unos 30 cm en la orilla a unos 2,5 m, y la prensa local habla de hasta 5 m con marea alta. Como el agua es salada se flota con facilidad, y como las olas rompen en las rocas exteriores, la laguna está en calma. Lonely Planet la describe con agua tranquila y fresca a un lado y al otro, el océano que golpea las rocas y los bufaderos; ese es justo su encanto: un baño protegido junto a una costa salvaje.</p>
 
 <h2>Cómo llegar a la laguna Weekuri</h2>
 <p>Weekuri está cerca del extremo occidental de Sumba. Las distancias desde Tambolaka van de unos 40 a 60 km según el punto de partida y la ruta; calcula <strong>1,5-2 horas</strong> por trayecto en coche o moto. La carretera es casi toda asfaltada, pero el último tramo es una pista estrecha y en parte llena de baches, y varios caminos salen de la carretera principal Waitabula-Bondokodi hacia la laguna.</p>
 <ul>
-<li><strong>Desde Tambolaka (TMC):</strong> lo más cómodo es un coche con conductor para el día, normalmente unas 1.000.000-1.500.000 IDR (unos 50-75 EUR / 60-90 USD) en 2025-2026; el precio varía según la temporada y la ruta. Reportajes locales más antiguos citaban unas 800.000 IDR.</li>
+<li><strong>Desde Tambolaka (TMC):</strong> lo más cómodo es un coche con conductor para el día, normalmente entre 1 y 1,5 millones de rupias (unos 50-75 euros o 60-90 dólares) en 2025-2026; el precio varía según la temporada y la ruta. Reportajes locales más antiguos citaban unas 800.000 rupias.</li>
 <li><strong>En moto:</strong> posible para conductores con experiencia, pero la señalización es escasa y los últimos kilómetros son malos.</li>
 <li><strong>Desde Waingapu (WGP):</strong> Weekuri está en el otro extremo de la isla, así que conviene dormir en el oeste. Por carretera, Waingapu-Tambolaka lleva unas 4-6 horas.</li>
 </ul>
 <p>No hay transporte público hasta la laguna. Para los vuelos, consulta nuestra guía <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a>.</p>
 
-<h2>Cuándo ir y mejor hora del día</h2>
+<h2>Cuándo ir y a qué hora</h2>
 <p>La temporada seca, aproximadamente de <strong>mayo a septiembre</strong>, trae agua más clara, cielos azules y carreteras más fáciles. En los meses de lluvia (más o menos de diciembre a marzo) la pista puede embarrarse y el agua pierde transparencia.</p>
 <p>La hora importa más que el mes. La mayoría de las guías recomiendan ir entre las <strong>8:00 y las 16:00</strong>, y una visita temprana entre semana es más tranquila; el fin de semana llegan familias locales. A quienes fueron con marea baja les dijeron que la laguna es aún más bonita con marea alta, cuando está más llena y el turquesa es más profundo, así que mira la tabla de mareas si puedes.</p>
 
 <h2>Consejos y normas de respeto</h2>
 <ul>
-<li><strong>Entrada:</strong> no hay una tarifa oficial única para extranjeros. En 2025-2026 se solía pedir unas <strong>15.000-20.000 IDR</strong> por persona (alrededor de 1 EUR / 1,20 USD), a veces presentadas como aparcamiento o acceso, y antes los visitantes firmaban un libro con un donativo. Se han alquilado flotadores por unas 10.000 IDR. Lleva billetes pequeños.</li>
+<li><strong>Entrada:</strong> no hay una tarifa oficial única para extranjeros. En 2025-2026 se solía pedir unas <strong>15.000-20.000 rupias</strong> por persona (alrededor de 1 euro o 1,20 dólares), a veces presentadas como aparcamiento o acceso, y antes los visitantes firmaban un libro con un donativo. Se han alquilado flotadores por unas 10.000 rupias. Lleva billetes pequeños.</li>
 <li><strong>Seguridad:</strong> no hay socorristas. Las rocas y los escalones resbalan mucho, la profundidad cambia de golpe y que los niños del lugar salten no significa que cualquier punto sea seguro para ti. Comprueba la profundidad antes de tirarte y no te acerques al lado del océano.</li>
 <li><strong>Qué llevar:</strong> escarpines, gafas de buceo (hay pececillos y algo de coral en el extremo norte), protección solar, agua y efectivo. Unos puestos sencillos venden cocos, bebidas y fideos instantáneos.</li>
 <li><strong>Respeto:</strong> no pises el coral, llévate tu basura, pide permiso antes de fotografiar a la gente y pregunta antes de volar un dron. Lonely Planet desaconseja comprar pulseras de concha de tortuga, cuya exportación es ilegal.</li>
@@ -90,34 +90,34 @@ GUIDES = [
 <p>Para más lugares de baño, lee nuestra guía de <a href="/es/things-to-do/beaches-lagoons-waterfalls/">playas, lagunas y cascadas de Sumba</a>.</p>"""
  },
  "id": {
-  "title": "Danau Weekuri, Sumba: rute, waktu terbaik dan tips berkunjung",
-  "dek": "Kolam air asin sebening kaca yang diisi Samudra Hindia lewat celah karang di ujung barat Sumba: cara ke sana, jam terbaik dan cara berenang dengan aman.",
-  "answer": "Danau Weekuri adalah laguna air asin di Kodi Utara, Sumba Barat Daya, yang terisi air laut yang merembes melalui batu karang pemisahnya dengan laut lepas. Jaraknya sekitar 40-60 km dari Bandara Tambolaka, kira-kira 1,5-2 jam berkendara, dan pada 2025-2026 pengunjung biasanya diminta sekitar Rp15.000-20.000 per orang. Datanglah pada musim kemarau (sekitar Mei-September), pagi hari pada hari kerja, dan pakai sepatu air karena batunya licin.",
+  "title": "Danau Weekuri, Sumba: rute, waktu terbaik, dan tips berkunjung",
+  "dek": "Kolam air asin sebening kaca yang diisi Samudra Hindia lewat celah karang di ujung barat Sumba: cara ke sana, jam terbaik, dan cara berenang dengan aman.",
+  "answer": "Danau Weekuri adalah laguna air asin di Kodi Utara, Sumba Barat Daya, yang terisi air laut yang merembes melalui batu karang pemisahnya dengan laut lepas. Jaraknya sekitar 40-60 km dari Bandara Tambolaka, kira-kira 1,5-2 jam berkendara, dan pada 2025-2026 pengunjung biasanya diminta sekitar Rp 15.000-20.000 per orang. Datanglah pada musim kemarau (sekitar Mei-September), pagi hari pada hari kerja, dan pakai sepatu air karena batunya licin.",
   "body": """<p>Suara laut terdengar sebelum danaunya terlihat: dentuman rendah dari balik batu, lalu desis ketika buih ombak memanjat dinding karang dan jatuh kembali. Di sisi dalam, semuanya tenang. Airnya begitu jernih sehingga dasar pasir dan petak karang gelap seolah bisa disentuh, warnanya bergeser dari hijau pucat di tepi ke biru toska pekat di tengah. Anak-anak kampung melompat dari batu, beberapa orang mengapung telentang, dan jembatan kayu berderit di bawah kaki telanjang.</p>
 <p>Weekuri adalah objek alam yang paling banyak dikunjungi di ujung barat Sumba, dan memang layak. Halaman ini menjelaskan apa itu Weekuri, cara ke sana, kapan sebaiknya datang dan cara berkunjung dengan aman serta sopan.</p>
 
 <h2>Apa itu Danau Weekuri dan mengapa layak dikunjungi</h2>
 <p>Weekuri (juga ditulis Waikuri) adalah laguna air asin di Desa Moromanduyo, Kecamatan Kodi Utara, Sumba Barat Daya. Dinding alami dari batu karang memisahkannya dari Samudra Hindia, dan air laut merembes serta memercik lewat celah-celahnya, sehingga tinggi air dan warnanya berubah mengikuti pasang surut. Namanya konon berasal dari kata setempat untuk percikan air laut yang membentuk danau ini.</p>
-<p>Ukurannya kecil, sekitar 130-150 m panjang dan 40-50 m lebar, tergantung sumbernya. Kedalamannya sekitar 30 cm di bagian dangkal hingga kira-kira 2,5 m, dan media lokal menyebut bisa mencapai 5 m saat pasang. Karena airnya asin, tubuh mudah mengapung, dan karena ombak pecah di batu bagian luar, permukaan laguna tetap tenang. Lonely Planet menggambarkan air yang tenang dan sejuk di satu sisi, dan laut yang menghantam batu serta lubang semburan di sisi lain. Itulah daya tariknya: berenang di tempat terlindung di samping pantai yang liar.</p>
+<p>Ukurannya kecil: panjangnya sekitar 130-150 m dan lebarnya 40-50 m, tergantung sumbernya. Kedalamannya sekitar 30 cm di bagian dangkal hingga kira-kira 2,5 m, dan media lokal menyebut bisa mencapai 5 m saat pasang. Karena airnya asin, tubuh mudah mengapung, dan karena ombak pecah di batu bagian luar, permukaan laguna tetap tenang. Lonely Planet menggambarkan air yang tenang dan sejuk di satu sisi, dan laut yang menghantam batu serta lubang semburan di sisi lain. Itulah daya tariknya: berenang di tempat terlindung di samping pantai yang liar.</p>
 
 <h2>Cara ke Danau Weekuri</h2>
 <p>Weekuri berada dekat ujung barat Pulau Sumba. Jarak dari Tambolaka yang disebut berbagai sumber berkisar 40 sampai 60 km, tergantung titik awal dan rutenya; siapkan sekitar <strong>1,5-2 jam</strong> sekali jalan dengan mobil atau motor. Jalannya sebagian besar aspal, tetapi bagian terakhir berupa jalan sempit yang sebagian berlubang, dan beberapa jalan kecil bercabang dari jalan utama Waitabula-Bondokodi menuju laguna.</p>
 <ul>
-<li><strong>Dari Tambolaka (TMC):</strong> paling praktis menyewa mobil dengan sopir seharian, biasanya sekitar Rp1.000.000-1.500.000 (kira-kira EUR 50-75 / USD 60-90) pada 2025-2026; harga berbeda menurut musim dan rute. Laporan lokal yang lebih lama menyebut sekitar Rp800.000.</li>
+<li><strong>Dari Tambolaka (TMC):</strong> paling praktis menyewa mobil dengan sopir seharian, biasanya sekitar Rp 1.000.000-1.500.000 (kira-kira 50-75 euro atau 60-90 dolar AS) pada 2025-2026; harga berbeda menurut musim dan rute. Laporan lokal yang lebih lama menyebut sekitar Rp 800.000.</li>
 <li><strong>Dengan motor:</strong> bisa bagi pengendara berpengalaman, tetapi petunjuk jalan minim dan beberapa kilometer terakhir rusak.</li>
 <li><strong>Dari Waingapu (WGP):</strong> Weekuri ada di ujung pulau yang berlawanan, jadi sebaiknya menginap di wilayah barat. Perjalanan darat Waingapu-Tambolaka sekitar 4-6 jam.</li>
 </ul>
 <p>Tidak ada angkutan umum sampai ke laguna. Untuk penerbangan, baca panduan kami <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a>.</p>
 
 <h2>Kapan datang dan jam terbaik</h2>
-<p>Musim kemarau, kira-kira <strong>Mei sampai September</strong>, membawa air lebih jernih, langit biru dan jalan yang lebih mudah. Pada bulan hujan (sekitar Desember sampai Maret) jalan bisa berlumpur dan air kurang jernih.</p>
+<p>Musim kemarau, kira-kira <strong>Mei sampai September</strong>, membawa air lebih jernih, langit biru, dan jalan yang lebih mudah. Pada bulan hujan (sekitar Desember sampai Maret) jalan bisa berlumpur dan air kurang jernih.</p>
 <p>Jam kunjungan lebih penting daripada bulan. Kebanyakan panduan menyarankan datang antara pukul <strong>08.00 dan 16.00</strong>, dan kunjungan pagi pada hari kerja lebih sepi; akhir pekan ramai keluarga lokal. Pengunjung yang datang saat surut diberi tahu bahwa laguna lebih indah saat pasang, ketika airnya penuh dan warna toskanya lebih dalam, jadi cek tabel pasang surut bila bisa.</p>
 
 <h2>Tips dan etika</h2>
 <ul>
-<li><strong>Tiket:</strong> belum ada tarif resmi tunggal untuk wisatawan asing. Pada 2025-2026 pengunjung biasanya diminta sekitar <strong>Rp15.000-20.000</strong> per orang (sekitar EUR 1 / USD 1,20), kadang disebut biaya parkir atau masuk, dan dulu pengunjung mengisi buku tamu sambil memberi donasi. Ban pelampung pernah disewakan sekitar Rp10.000. Bawa uang pecahan kecil.</li>
+<li><strong>Tiket:</strong> belum ada tarif resmi tunggal untuk wisatawan asing. Pada 2025-2026 pengunjung biasanya diminta sekitar <strong>Rp 15.000-20.000</strong> per orang (sekitar 1 euro atau 1,20 dolar AS), kadang disebut biaya parkir atau masuk, dan dulu pengunjung mengisi buku tamu sambil memberi donasi. Ban pelampung pernah disewakan sekitar Rp 10.000. Bawa uang pecahan kecil.</li>
 <li><strong>Keselamatan:</strong> tidak ada penjaga pantai. Batu dan anak tangga sangat licin, kedalaman berubah tiba-tiba, dan anak lokal yang melompat bukan berarti semua titik aman untuk Anda. Cek kedalaman sebelum melompat dan jauhi sisi laut lepas.</li>
-<li><strong>Yang perlu dibawa:</strong> sepatu air, masker selam (ada ikan kecil dan sedikit karang di ujung utara), pelindung matahari, air minum dan uang tunai. Warung sederhana menjual kelapa muda, minuman dan mi instan.</li>
+<li><strong>Yang perlu dibawa:</strong> sepatu air, masker selam (ada ikan kecil dan sedikit karang di ujung utara), pelindung matahari, air minum, dan uang tunai. Warung sederhana menjual kelapa muda, minuman, dan mi instan.</li>
 <li><strong>Hormati tempat ini:</strong> jangan menginjak karang, bawa pulang sampah Anda, minta izin sebelum memotret orang dan tanyakan dulu sebelum menerbangkan drone. Lonely Planet menyarankan untuk tidak membeli gelang dari cangkang penyu, yang ilegal untuk dibawa ke luar negeri.</li>
 </ul>
 
@@ -128,12 +128,12 @@ GUIDES = [
 <li><a href="/id/places/ratenggaro-village/">Kampung Adat Ratenggaro</a>: rumah adat beratap menjulang di tepi laut, tak jauh setelah Pero.</li>
 <li><a href="/id/places/kodi/">Kodi</a>: wilayah budaya yang mencakup semua tempat di atas.</li>
 </ul>
-<p>Untuk tempat berenang lainnya, baca panduan kami tentang <a href="/id/things-to-do/beaches-lagoons-waterfalls/">pantai, laguna dan air terjun di Sumba</a>.</p>"""
+<p>Untuk tempat berenang lainnya, baca panduan kami tentang <a href="/id/things-to-do/beaches-lagoons-waterfalls/">pantai, laguna, dan air terjun di Sumba</a>.</p>"""
  },
  "facts": {
   "en": [["Where", "Desa Moromanduyo, Kodi Utara, Southwest Sumba"], ["From the nearest airport", "Tambolaka (TMC): roughly 40-60 km, about 1.5-2 hours by car"], ["Best time", "Dry season (roughly May-September), 8 am-4 pm, ideally at higher tide on a weekday"], ["Entry", "Around IDR 15,000-20,000 per person (2025-2026), no single official fee"], ["Good for", "Calm saltwater swimming, floating, photos, families"]],
-  "es": [["Dónde", "Desa Moromanduyo, Kodi Utara, Sumba Suroccidental"], ["Desde el aeropuerto más cercano", "Tambolaka (TMC): unos 40-60 km, alrededor de 1,5-2 horas en coche"], ["Mejor época", "Temporada seca (aprox. mayo-septiembre), de 8:00 a 16:00, mejor con marea alta y entre semana"], ["Entrada", "Unas 15.000-20.000 IDR por persona (2025-2026), sin tarifa oficial única"], ["Ideal para", "Baño tranquilo en agua salada, flotar, fotos, familias"]],
-  "id": [["Lokasi", "Desa Moromanduyo, Kodi Utara, Sumba Barat Daya"], ["Dari bandara terdekat", "Tambolaka (TMC): sekitar 40-60 km, kira-kira 1,5-2 jam bermobil"], ["Waktu terbaik", "Musim kemarau (sekitar Mei-September), pukul 08.00-16.00, idealnya saat pasang pada hari kerja"], ["Tiket masuk", "Sekitar Rp15.000-20.000 per orang (2025-2026), belum ada tarif resmi tunggal"], ["Cocok untuk", "Berenang di air asin yang tenang, mengapung, foto, keluarga"]]
+  "es": [["Dónde", "Desa Moromanduyo, Kodi Utara, Sumba Suroccidental"], ["Desde el aeropuerto más cercano", "Tambolaka (TMC): unos 40-60 km, alrededor de 1,5-2 horas en coche"], ["Mejor época", "Temporada seca (aprox. mayo-septiembre), de 8:00 a 16:00, mejor con marea alta y entre semana"], ["Entrada", "Unas 15.000-20.000 rupias por persona (2025-2026), sin tarifa oficial única"], ["Ideal para", "Baño tranquilo en agua salada, flotar, fotos, familias"]],
+  "id": [["Lokasi", "Desa Moromanduyo, Kodi Utara, Sumba Barat Daya"], ["Dari bandara terdekat", "Tambolaka (TMC): sekitar 40-60 km, kira-kira 1,5-2 jam bermobil"], ["Waktu terbaik", "Musim kemarau (sekitar Mei-September), pukul 08.00-16.00, idealnya saat pasang pada hari kerja"], ["Tiket masuk", "Sekitar Rp 15.000-20.000 per orang (2025-2026), belum ada tarif resmi tunggal"], ["Cocok untuk", "Berenang di air asin yang tenang, mengapung, foto, keluarga"]]
  },
  "faq": {
   "en": [
@@ -146,14 +146,14 @@ GUIDES = [
   "es": [
    ["¿La laguna Weekuri es de agua dulce o salada?", "Salada. El agua de mar se filtra y salpica a través de la roca coralina que separa la laguna del océano Índico, así que es salada y se flota con facilidad."],
    ["¿Qué profundidad tiene la laguna Weekuri?", "Desde unos 30 cm en las orillas hasta unos 2,5 m en algunos puntos, y la prensa local habla de hasta unos 5 m con marea alta. Comprueba la profundidad antes de saltar."],
-   ["¿Cuánto cuesta la entrada a Weekuri?", "No hay una tarifa oficial única para extranjeros; en 2025-2026 se solía pedir unas 15.000-20.000 IDR por persona. Lleva efectivo en billetes pequeños."],
+   ["¿Cuánto cuesta la entrada a Weekuri?", "No hay una tarifa oficial única para extranjeros; en 2025-2026 se solía pedir unas 15.000-20.000 rupias por persona. Lleva efectivo en billetes pequeños."],
    ["¿Cuánto se tarda del aeropuerto de Tambolaka a Weekuri?", "Alrededor de 1,5-2 horas en coche para unos 40-60 km, según la ruta. No hay transporte público hasta la laguna."],
    ["¿Se puede combinar Weekuri con otros lugares?", "Sí. La playa de Mandorak está a cerca de un kilómetro, y la playa de Pero y la aldea de Ratenggaro quedan a poca distancia al sur: un día sencillo por Kodi."]
   ],
   "id": [
    ["Apakah air Danau Weekuri tawar atau asin?", "Asin. Air laut merembes dan memercik melalui batu karang yang memisahkan laguna dari Samudra Hindia, jadi airnya asin dan tubuh mudah mengapung."],
    ["Seberapa dalam Danau Weekuri?", "Sekitar 30 cm di tepi hingga kira-kira 2,5 m di beberapa bagian, dan laporan lokal menyebut bisa sekitar 5 m saat pasang. Cek kedalaman sebelum melompat."],
-   ["Berapa tiket masuk Danau Weekuri?", "Belum ada tarif resmi tunggal untuk wisatawan asing; pada 2025-2026 pengunjung biasanya diminta sekitar Rp15.000-20.000 per orang. Bawa uang tunai pecahan kecil."],
+   ["Berapa tiket masuk Danau Weekuri?", "Belum ada tarif resmi tunggal untuk wisatawan asing; pada 2025-2026 pengunjung biasanya diminta sekitar Rp 15.000-20.000 per orang. Bawa uang tunai pecahan kecil."],
    ["Berapa lama perjalanan dari Bandara Tambolaka ke Weekuri?", "Sekitar 1,5-2 jam bermobil untuk jarak kira-kira 40-60 km, tergantung rute. Tidak ada angkutan umum sampai ke laguna."],
    ["Bisakah Weekuri digabung dengan tempat lain?", "Bisa. Pantai Mandorak sekitar satu kilometer jauhnya, sedangkan Pantai Pero dan Kampung Ratenggaro tak jauh ke selatan, cocok untuk sehari keliling Kodi."]
   ]
@@ -218,29 +218,29 @@ GUIDES = [
  "es": {
   "title": "Playa de Mandorak, Sumba: cómo llegar y qué esperar",
   "dek": "Un bolsillo de arena blanca entre dos acantilados de caliza que se abre al mar por una grieta estrecha: cómo es Mandorak, cómo llegar y cómo visitarla sin sorpresas.",
-  "answer": "La playa de Mandorak es una cala diminuta de arena blanca encerrada entre acantilados en Kodi Utara, Sumba Suroccidental, a unos 41 km de Tambolaka (alrededor de 1,5-2 horas en coche) y a cerca de un kilómetro de la laguna Weekuri. En 2025-2026 se solía pedir unas 15.000-20.000 IDR por persona, aunque los cobros son informales y algunos viajeros han hablado de tarifas de aparcamiento más altas. Funciona mejor como parada breve junto a Weekuri, en temporada seca y con el mar en calma.",
+  "answer": "La playa de Mandorak es una cala diminuta de arena blanca encerrada entre acantilados en Kodi Utara, Sumba Suroccidental, a unos 41 km de Tambolaka (alrededor de 1,5-2 horas en coche) y a cerca de un kilómetro de la laguna Weekuri. En 2025-2026 se solía pedir unas 15.000-20.000 rupias por persona, aunque los cobros son informales y algunos viajeros han hablado de tarifas de aparcamiento más altas. Funciona mejor como parada breve junto a Weekuri, en temporada seca y con el mar en calma.",
   "body": """<p>El sendero termina al borde de un acantilado y, abajo, aparece una pequeña media luna de arena blanca tan encajada entre dos paredes de caliza gris que parece una habitación abierta al mar. Las olas entran por una grieta en la roca de apenas unos metros, pierden fuerza y se extienden por la orilla en un abanico de espuma. Con el mar en calma, el agua de dentro es de un azul sorprendente; con mar de fondo, la espuma revienta sobre las rocas exteriores con un ruido de portazo.</p>
 <p>Mandorak es una de las calas más fotografiadas del oeste de Sumba y una de las más pequeñas. Aquí te explicamos cómo llegar, cuándo ir y qué conviene saber antes de bajar.</p>
 
 <h2>Qué es la playa de Mandorak y por qué ir</h2>
 <p>Mandorak está en Desa Kalena Rongo, distrito de Kodi Utara, Sumba Suroccidental. La prensa indonesia describe una playa de solo unos 50 m de ancho, encajada entre sólidos acantilados y abierta al mar por un hueco en el coral de unos 3 m. Detrás se alza un acantilado escarpado y alrededor hay matorral seco y pradera, lejos de cualquier pueblo.</p>
 <p>Su atractivo es el escenario: al estar cerrada, las olas dentro suelen ser más suaves que en la costa abierta, y desde lo alto de los acantilados se tienen algunas de las mejores vistas de Kodi. No es un sitio para pasar el día. La mayoría de los viajeros se queda entre 30 y 60 minutos, dentro de una ruta con la cercana laguna Weekuri.</p>
-<p>Parte del terreno que rodea la cala ha sido desarrollado por un operador privado, y la prensa local la ha descrito como una playa que parece casi privada. Trátala como tierra de alguien: sigue los senderos y, si te piden que salgas de una zona, hazlo con educación.</p>
+<p>Un operador privado ha urbanizado parte del terreno que rodea la cala, y la prensa local la ha descrito como una playa que parece casi privada. Trátala como tierra de alguien: sigue los senderos y, si te piden que salgas de una zona, hazlo con educación.</p>
 
 <h2>Cómo llegar a la playa de Mandorak</h2>
 <p>Mandorak está a unos <strong>41 km de Tambolaka</strong>, cerca del extremo occidental de la isla. Calcula unas <strong>1,5-2 horas</strong> por trayecto en coche, como para Weekuri. El último tramo es una pista estrecha y en parte en mal estado.</p>
 <ul>
-<li><strong>Desde Tambolaka (TMC):</strong> un coche con conductor para el día cuesta unas 1.000.000-1.500.000 IDR (unos 50-75 EUR / 60-90 USD) en 2025-2026, según temporada y ruta. Combina Mandorak con Weekuri, Pero y Ratenggaro para aprovechar el viaje.</li>
+<li><strong>Desde Tambolaka (TMC):</strong> un coche con conductor para el día cuesta entre 1 y 1,5 millones de rupias (unos 50-75 euros o 60-90 dólares) en 2025-2026, según temporada y ruta. Combina Mandorak con Weekuri, Pero y Ratenggaro para aprovechar el viaje.</li>
 <li><strong>En moto:</strong> factible para conductores con experiencia; pregunta el camino en la zona, porque hay pocas señales.</li>
 <li><strong>Desde Waingapu (WGP):</strong> el otro extremo de Sumba; unas 4-6 horas por carretera hasta Tambolaka antes de seguir hacia el oeste, así que duerme una noche en el oeste.</li>
 </ul>
 
-<h2>Cuándo ir y mejor hora del día</h2>
+<h2>Cuándo ir y a qué hora</h2>
 <p>Ve en temporada seca, aproximadamente de <strong>mayo a septiembre</strong>, con cielos más despejados y pistas secas. La luz de la mañana, a tu espalda, ilumina el agua de la cala; a última hora de la tarde los acantilados toman colores cálidos, como muestran las fotos de atardecer de Wikimedia Commons. Evita los días de mar grande si quieres meterte en el agua: las olas pueden entrar con fuerza por la grieta.</p>
 
 <h2>Consejos y normas de respeto</h2>
 <ul>
-<li><strong>Cobros:</strong> no hay una entrada oficial clara. En 2025-2026 se solía pedir unas <strong>15.000-20.000 IDR</strong> por persona (alrededor de 1 EUR / 1,20 USD). Algunos viajeros han hablado de cobros no oficiales en la entrada, incluido un aparcamiento fijo de unas 50.000 IDR por moto según un visitante. Pregunta el precio antes de aparcar, lleva billetes pequeños y mantén la calma si las cifras no coinciden.</li>
+<li><strong>Cobros:</strong> no hay una entrada oficial clara. En 2025-2026 se solía pedir unas <strong>15.000-20.000 rupias</strong> por persona (alrededor de 1 euro o 1,20 dólares). Algunos viajeros han hablado de cobros no oficiales en la entrada, incluido un aparcamiento fijo de unas 50.000 rupias por moto según un visitante. Pregunta el precio antes de aparcar, lleva billetes pequeños y mantén la calma si las cifras no coinciden.</li>
 <li><strong>Baño:</strong> solo con el mar en calma y solo en la parte poco profunda de dentro de la cala. Aléjate de la grieta, donde las corrientes son más fuertes. No hay socorristas.</li>
 <li><strong>Acantilados:</strong> la caliza es cortante y los bordes no tienen valla. Lleva calzado adecuado y vigila a los niños.</li>
 <li><strong>Qué llevar:</strong> agua, protección solar y efectivo. En la cala no hay puestos de comida fiables; en Weekuri hay puestos sencillos.</li>
@@ -257,21 +257,21 @@ GUIDES = [
 <p>¿Planeas un día completo? Nuestra guía de <a href="/es/things-to-do/beaches-lagoons-waterfalls/">playas, lagunas y cascadas de Sumba</a> tiene más ideas.</p>"""
  },
  "id": {
-  "title": "Pantai Mandorak, Sumba: rute dan apa yang perlu diketahui",
-  "dek": "Sekantong pasir putih di antara dua tebing kapur yang terbuka ke laut lewat celah sempit: seperti apa Mandorak, cara ke sana dan cara berkunjung tanpa kejutan.",
-  "answer": "Pantai Mandorak adalah teluk mungil berpasir putih yang diapit tebing batu di Kodi Utara, Sumba Barat Daya, sekitar 41 km dari Tambolaka (kira-kira 1,5-2 jam bermobil) dan sekitar satu kilometer dari Danau Weekuri. Pada 2025-2026 pengunjung biasanya diminta sekitar Rp15.000-20.000 per orang, meski pungutannya tidak resmi dan sebagian wisatawan melaporkan biaya parkir yang lebih tinggi. Paling pas sebagai persinggahan singkat bersama Weekuri, pada musim kemarau dan saat laut tenang.",
+  "title": "Pantai Mandorak, Sumba: rute dan hal yang perlu diketahui",
+  "dek": "Ceruk kecil berpasir putih di antara dua tebing kapur yang terbuka ke laut lewat celah sempit: seperti apa Mandorak, cara ke sana dan cara berkunjung tanpa kejutan.",
+  "answer": "Pantai Mandorak adalah teluk mungil berpasir putih yang diapit tebing batu di Kodi Utara, Sumba Barat Daya, sekitar 41 km dari Tambolaka (kira-kira 1,5-2 jam bermobil) dan sekitar satu kilometer dari Danau Weekuri. Pada 2025-2026 pengunjung biasanya diminta sekitar Rp 15.000-20.000 per orang, meski pungutannya tidak resmi dan sebagian wisatawan melaporkan biaya parkir yang lebih tinggi. Paling pas sebagai persinggahan singkat bersama Weekuri, pada musim kemarau dan saat laut tenang.",
   "body": """<p>Jalan setapak berakhir di bibir tebing, dan di bawah sana terhampar bulan sabit kecil berpasir putih yang begitu rapat dijepit dua dinding batu kapur kelabu, seperti ruangan yang terbuka ke laut. Ombak masuk lewat celah batu yang lebarnya hanya beberapa meter, kehilangan tenaga, lalu menyebar di perairan dangkal seperti kipas buih. Saat laut tenang, air di dalamnya biru mencolok; saat gelombang besar, buih meledak di batu luar dengan suara seperti pintu dibanting.</p>
-<p>Mandorak adalah salah satu teluk yang paling sering difoto di Sumba bagian barat, sekaligus salah satu yang terkecil. Halaman ini menjelaskan cara ke sana, waktu terbaik dan hal yang perlu diketahui sebelum turun.</p>
+<p>Mandorak adalah salah satu teluk yang paling sering difoto di Sumba bagian barat, sekaligus salah satu yang terkecil. Halaman ini menjelaskan cara ke sana, waktu terbaik, dan hal yang perlu diketahui sebelum turun.</p>
 
 <h2>Apa itu Pantai Mandorak dan mengapa layak dikunjungi</h2>
-<p>Mandorak terletak di Desa Kalena Rongo, Kecamatan Kodi Utara, Sumba Barat Daya. Media Indonesia menggambarkan pantai selebar sekitar 50 m yang terjepit di antara tebing batu kokoh dan terbuka ke laut lewat celah karang selebar kira-kira 3 m. Di belakangnya berdiri tebing curam, dan sekelilingnya semak kering serta padang rumput yang jauh dari permukiman.</p>
+<p>Mandorak terletak di Desa Kalena Rongo, Kecamatan Kodi Utara, Sumba Barat Daya. Media nasional menggambarkan pantai selebar sekitar 50 m yang terjepit di antara tebing batu kokoh dan terbuka ke laut lewat celah karang selebar kira-kira 3 m. Di belakangnya berdiri tebing curam, dan sekelilingnya semak kering serta padang rumput yang jauh dari permukiman.</p>
 <p>Daya tariknya adalah lanskapnya: karena bentuknya tertutup, ombak di dalam biasanya lebih lembut daripada di pantai terbuka, dan puncak tebingnya menyuguhkan salah satu pemandangan terbaik di Kodi. Ini bukan tempat untuk seharian di pantai. Kebanyakan wisatawan menghabiskan 30-60 menit di sini sebagai bagian dari rute bersama Danau Weekuri.</p>
-<p>Sebagian lahan di sekitar teluk telah dikembangkan oleh pengelola swasta, dan media lokal menyebut pantai ini terasa seperti milik pribadi. Perlakukan sebagai tanah milik orang: ikuti jalan setapak, dan bila diminta meninggalkan suatu area, lakukan dengan sopan.</p>
+<p>Pengelola swasta telah mengembangkan sebagian lahan di sekitar teluk, dan media lokal menyebut pantai ini terasa seperti milik pribadi. Perlakukan kawasan ini sebagai tanah milik orang lain: ikuti jalan setapak, dan bila diminta meninggalkan suatu area, lakukan dengan sopan.</p>
 
 <h2>Cara ke Pantai Mandorak</h2>
 <p>Mandorak berjarak sekitar <strong>41 km dari Tambolaka</strong>, dekat ujung barat pulau. Siapkan kira-kira <strong>1,5-2 jam</strong> sekali jalan dengan mobil, mirip dengan ke Weekuri. Bagian terakhir berupa jalan sempit yang sebagian rusak.</p>
 <ul>
-<li><strong>Dari Tambolaka (TMC):</strong> sewa mobil dengan sopir seharian sekitar Rp1.000.000-1.500.000 (kira-kira EUR 50-75 / USD 60-90) pada 2025-2026, tergantung musim dan rute. Gabungkan Mandorak dengan Weekuri, Pero dan Ratenggaro agar perjalanan lebih efisien.</li>
+<li><strong>Dari Tambolaka (TMC):</strong> sewa mobil dengan sopir seharian sekitar Rp 1.000.000-1.500.000 (kira-kira 50-75 euro atau 60-90 dolar AS) pada 2025-2026, tergantung musim dan rute. Gabungkan Mandorak dengan Weekuri, Pero, dan Ratenggaro agar perjalanan lebih efisien.</li>
 <li><strong>Dengan motor:</strong> bisa bagi pengendara berpengalaman; tanyakan arah kepada warga karena petunjuk jalan terbatas.</li>
 <li><strong>Dari Waingapu (WGP):</strong> ujung Sumba yang berlawanan; sekitar 4-6 jam lewat darat ke Tambolaka sebelum lanjut ke barat, jadi menginaplah semalam di wilayah barat.</li>
 </ul>
@@ -281,10 +281,10 @@ GUIDES = [
 
 <h2>Tips dan etika</h2>
 <ul>
-<li><strong>Pungutan:</strong> belum ada tiket resmi yang jelas. Pada 2025-2026 pengunjung biasanya diminta sekitar <strong>Rp15.000-20.000</strong> per orang (sekitar EUR 1 / USD 1,20). Sebagian wisatawan melaporkan pungutan tidak resmi di pintu masuk, termasuk parkir tetap sekitar Rp50.000 per motor menurut seorang pengunjung. Tanyakan harga sebelum parkir, bawa uang pecahan kecil dan tetap tenang bila jumlahnya berbeda.</li>
+<li><strong>Pungutan:</strong> belum ada tiket resmi yang jelas. Pada 2025-2026 pengunjung biasanya diminta sekitar <strong>Rp 15.000-20.000</strong> per orang (sekitar 1 euro atau 1,20 dolar AS). Sebagian wisatawan melaporkan pungutan tidak resmi di pintu masuk, termasuk parkir tetap sekitar Rp 50.000 per motor menurut seorang pengunjung. Tanyakan harga sebelum parkir, bawa uang pecahan kecil dan tetap tenang bila jumlahnya berbeda.</li>
 <li><strong>Berenang:</strong> hanya saat laut tenang, dan hanya di bagian dangkal di dalam teluk. Jauhi celah karang, tempat arus paling kuat. Tidak ada penjaga pantai.</li>
 <li><strong>Tebing:</strong> batu kapurnya tajam dan tepinya tanpa pagar. Pakai alas kaki yang layak dan awasi anak-anak.</li>
-<li><strong>Yang perlu dibawa:</strong> air minum, pelindung matahari dan uang tunai. Di teluk tidak selalu ada penjual makanan; di Weekuri ada warung sederhana.</li>
+<li><strong>Yang perlu dibawa:</strong> air minum, pelindung matahari, dan uang tunai. Di teluk tidak selalu ada penjual makanan; di Weekuri ada warung sederhana.</li>
 <li><strong>Hormati tempat ini:</strong> bawa pulang sampah, minta izin sebelum memotret orang dan tanyakan dulu sebelum menerbangkan drone di atas lahan pribadi.</li>
 </ul>
 
@@ -293,14 +293,14 @@ GUIDES = [
 <li><a href="/id/places/weekuri-lagoon/">Danau Weekuri</a>: laguna air asin sekitar satu kilometer dari sini, pasangan alami Mandorak.</li>
 <li><a href="/id/places/pero-beach/">Pantai Pero</a>: pantai panjang dan kampung nelayan di selatan, bagus untuk matahari terbenam.</li>
 <li><a href="/id/places/ratenggaro-village/">Kampung Adat Ratenggaro</a>: rumah beratap menjulang dan kubur batu megalitik di tepi laut.</li>
-<li><a href="/id/places/tambolaka-town/">Tambolaka</a>: kota terdekat dengan bandara, ATM dan pasar.</li>
+<li><a href="/id/places/tambolaka-town/">Tambolaka</a>: kota terdekat dengan bandara, ATM, dan pasar.</li>
 </ul>
-<p>Merencanakan satu hari penuh? Panduan kami tentang <a href="/id/things-to-do/beaches-lagoons-waterfalls/">pantai, laguna dan air terjun di Sumba</a> punya lebih banyak ide.</p>"""
+<p>Merencanakan satu hari penuh? Panduan kami tentang <a href="/id/things-to-do/beaches-lagoons-waterfalls/">pantai, laguna, dan air terjun di Sumba</a> punya lebih banyak ide.</p>"""
  },
  "facts": {
   "en": [["Where", "Desa Kalena Rongo, Kodi Utara, Southwest Sumba"], ["From the nearest airport", "Tambolaka (TMC): about 41 km, roughly 1.5-2 hours by car"], ["Best time", "Dry season (roughly May-September), morning or late afternoon, calm sea"], ["Entry", "Informal: around IDR 15,000-20,000 per person (2025-2026); ask before parking"], ["Good for", "Cliff views, photography, a short dip on calm days"]],
-  "es": [["Dónde", "Desa Kalena Rongo, Kodi Utara, Sumba Suroccidental"], ["Desde el aeropuerto más cercano", "Tambolaka (TMC): unos 41 km, alrededor de 1,5-2 horas en coche"], ["Mejor época", "Temporada seca (aprox. mayo-septiembre), por la mañana o al final de la tarde, con mar en calma"], ["Entrada", "Informal: unas 15.000-20.000 IDR por persona (2025-2026); pregunta antes de aparcar"], ["Ideal para", "Vistas desde los acantilados, fotografía, un baño breve en días tranquilos"]],
-  "id": [["Lokasi", "Desa Kalena Rongo, Kodi Utara, Sumba Barat Daya"], ["Dari bandara terdekat", "Tambolaka (TMC): sekitar 41 km, kira-kira 1,5-2 jam bermobil"], ["Waktu terbaik", "Musim kemarau (sekitar Mei-September), pagi atau sore, saat laut tenang"], ["Tiket masuk", "Tidak resmi: sekitar Rp15.000-20.000 per orang (2025-2026); tanyakan sebelum parkir"], ["Cocok untuk", "Pemandangan tebing, fotografi, berendam singkat saat laut tenang"]]
+  "es": [["Dónde", "Desa Kalena Rongo, Kodi Utara, Sumba Suroccidental"], ["Desde el aeropuerto más cercano", "Tambolaka (TMC): unos 41 km, alrededor de 1,5-2 horas en coche"], ["Mejor época", "Temporada seca (aprox. mayo-septiembre), por la mañana o al final de la tarde, con mar en calma"], ["Entrada", "Informal: unas 15.000-20.000 rupias por persona (2025-2026); pregunta antes de aparcar"], ["Ideal para", "Vistas desde los acantilados, fotografía, un baño breve en días tranquilos"]],
+  "id": [["Lokasi", "Desa Kalena Rongo, Kodi Utara, Sumba Barat Daya"], ["Dari bandara terdekat", "Tambolaka (TMC): sekitar 41 km, kira-kira 1,5-2 jam bermobil"], ["Waktu terbaik", "Musim kemarau (sekitar Mei-September), pagi atau sore, saat laut tenang"], ["Tiket masuk", "Tidak resmi: sekitar Rp 15.000-20.000 per orang (2025-2026); tanyakan sebelum parkir"], ["Cocok untuk", "Pemandangan tebing, fotografi, berendam singkat saat laut tenang"]]
  },
  "faq": {
   "en": [
@@ -312,13 +312,13 @@ GUIDES = [
   "es": [
    ["¿Se puede nadar en la playa de Mandorak?", "Sí, en la parte poco profunda de dentro de la cala cuando el mar está en calma. Aléjate de la grieta en la roca, donde las olas y las corrientes son más fuertes, y no te bañes con mar de fondo."],
    ["¿A qué distancia está Mandorak de la laguna Weekuri?", "A cerca de un kilómetro, así que la mayoría visita ambas en la misma mañana o tarde."],
-   ["¿Hay que pagar entrada en Mandorak?", "No hay una entrada oficial clara. En 2025-2026 se solía pedir unas 15.000-20.000 IDR por persona, y algunos viajeros hablaron de aparcamientos informales más caros, así que acuerda el importe antes."],
-   ["¿Mandorak es una playa privada?", "Parte del terreno que la rodea se ha desarrollado de forma privada y la cala puede parecer privada, pero los viajeros la visitan. Sigue los senderos y respeta cualquier petición de salir de una zona."]
+   ["¿Hay que pagar entrada en Mandorak?", "No hay una entrada oficial clara. En 2025-2026 se solía pedir unas 15.000-20.000 rupias por persona, y algunos viajeros hablaron de aparcamientos informales más caros, así que acuerda el importe antes."],
+   ["¿Mandorak es una playa privada?", "Una empresa privada ha urbanizado parte del terreno que la rodea y la cala puede parecer de uso privado, pero los viajeros la visitan. Sigue los senderos y respeta cualquier petición de salir de una zona."]
   ],
   "id": [
    ["Apakah bisa berenang di Pantai Mandorak?", "Bisa, di bagian dangkal di dalam teluk saat laut tenang. Jauhi celah sempit di batu karang, tempat ombak dan arus paling kuat, dan jangan berenang saat gelombang besar."],
    ["Berapa jarak Pantai Mandorak dari Danau Weekuri?", "Sekitar satu kilometer, jadi kebanyakan orang mengunjungi keduanya dalam satu pagi atau sore."],
-   ["Apakah ada tiket masuk ke Mandorak?", "Belum ada tiket resmi yang jelas. Pada 2025-2026 pengunjung biasanya diminta sekitar Rp15.000-20.000 per orang, dan sebagian melaporkan parkir tidak resmi yang lebih mahal, jadi sepakati jumlahnya dulu."],
+   ["Apakah ada tiket masuk ke Mandorak?", "Belum ada tiket resmi yang jelas. Pada 2025-2026 pengunjung biasanya diminta sekitar Rp 15.000-20.000 per orang, dan sebagian melaporkan parkir tidak resmi yang lebih mahal, jadi sepakati jumlahnya dulu."],
    ["Apakah Mandorak pantai pribadi?", "Sebagian lahan di sekitarnya dikembangkan pihak swasta dan teluknya bisa terasa privat, tetapi wisatawan tetap berkunjung. Ikuti jalan setapak dan hormati permintaan untuk meninggalkan suatu area."]
   ]
  },
@@ -380,30 +380,30 @@ GUIDES = [
  },
  "es": {
   "title": "Playa de Bawana (Mbawana), Sumba: cómo llegar y qué saber",
-  "dek": "Arena dorada bajo altos acantilados en la costa suroeste de Sumba, a la que se baja por una escalera empinada: qué queda tras la caída del famoso arco, cómo llegar y cómo ir seguro.",
-  "answer": "La playa de Bawana, también escrita Mbawana o Bwanna y conocida en la zona como Batu Bolong, es una playa bajo acantilados en la región de Kodi, Sumba Suroccidental, a unos 52-60 km de Tambolaka (alrededor de 1,5-2 horas en coche). Su famoso arco marino se derrumbó a mediados de noviembre de 2020, pero siguen los acantilados, la arena y el mirador. Cuenta con una bajada empinada de unos 300 escalones, un cobro informal de unas 10.000-20.000 IDR por persona (2025-2026) y mar bravo, así que ve con marea baja y en temporada seca.",
+  "dek": "Arena dorada bajo altos acantilados en la costa suroeste de Sumba, a la que se baja por una escalera empinada: qué queda tras la caída del famoso arco, cómo llegar y cómo visitarla con seguridad.",
+  "answer": "La playa de Bawana, también escrita Mbawana o Bwanna y conocida en la zona como Batu Bolong, es una playa bajo acantilados en la región de Kodi, Sumba Suroccidental, a unos 52-60 km de Tambolaka (alrededor de 1,5-2 horas en coche). Su famoso arco marino se derrumbó a mediados de noviembre de 2020, pero siguen los acantilados, la arena y el mirador. Prepárate para una bajada empinada de unos 300 escalones, un cobro informal de unas 10.000-20.000 rupias por persona (2025-2026) y un mar bravo: ve con marea baja y en temporada seca.",
   "body": """<p>Desde lo alto del acantilado la costa cae por capas: matorral verde, luego franjas de roca ocre y gris, y abajo un largo delantal de arena dorada y el océano Índico rompiendo en blanco sobre el arrecife. Las aves marinas giran por debajo de ti. Al bajar los escalones, el ruido de las olas crece hasta llenarlo todo, y abajo, con marea baja, la arena es tan suave y ancha que los acantilados a tu espalda parecen la pared de un cañón.</p>
 <p>Durante años esta playa fue famosa por un único elemento: un enorme arco de piedra sobre un cabo estrecho, al que la gente del lugar llamaba <em>Batu Bolong</em> (roca con agujero) o <em>Batu Cincin</em> (roca anillo). Ese arco ya no existe, pero la playa sigue siendo uno de los lugares más impresionantes de la costa suroeste de Sumba. Esto es lo que encontrarás hoy.</p>
 
 <h2>Qué es la playa de Bawana y por qué ir</h2>
-<p>Bawana tiene varios nombres: Mbawana, Bawana, Bwanna, Banna y, en algunas señales, Radar, por el cabo cercano. Está en Desa Panenggo Ede, en la región de Kodi, Sumba Suroccidental (las fuentes la sitúan en Kodi Bangedo o en el distrito más reciente de Kodi Balaghar). En 2017 fue nominada en un premio nacional de turismo como nuevo destino popular.</p>
+<p>Bawana tiene varios nombres: Mbawana, Bawana, Bwanna, Banna y, en algunas señales, Radar, por el cabo cercano. Está en Desa Panenggo Ede, en la región de Kodi, Sumba Suroccidental (las fuentes la sitúan en Kodi Bangedo o en el distrito más reciente de Kodi Balaghar). En 2017 fue candidata a un premio nacional de turismo en la categoría de nuevo destino popular.</p>
 <p><strong>El arco se derrumbó a mediados de noviembre de 2020.</strong> La prensa indonesia contó que cayó de noche; el responsable de turismo de Sumba Suroccidental lo atribuyó al oleaje del mar del sur y a los frecuentes terremotos. No hubo heridos. Un reportaje de 2026 describe los escombros en parte arrastrados por el mar y los bloques restantes esparcidos por la playa. Algunas webs y excursiones todavía muestran el arco, así que no te sorprendas: hoy se viene por la amplitud de la arena, los acantilados y la vista desde el cabo.</p>
 
 <h2>Cómo llegar a la playa de Bawana</h2>
 <p>Bawana está en la costa sur de Kodi, a unos <strong>52-60 km de Tambolaka</strong>. Calcula unas <strong>1,5-2 horas</strong> en coche por trayecto; la ruta más rápida pasa por Kodi Bangedo, entre aldeas de altos tejados de paja.</p>
 <ul>
-<li><strong>Desde Tambolaka (TMC):</strong> alquila un coche con conductor para el día, unas 1.000.000-1.500.000 IDR (unos 50-75 EUR / 60-90 USD) en 2025-2026; los precios varían. El transporte privado es imprescindible: no hay transporte público hasta la playa.</li>
+<li><strong>Desde Tambolaka (TMC):</strong> alquila un coche con conductor para el día, entre 1 y 1,5 millones de rupias (unos 50-75 euros o 60-90 dólares) en 2025-2026; los precios varían. El transporte privado es imprescindible: no hay transporte público hasta la playa.</li>
 <li><strong>Cómo orientarse:</strong> con tantos nombres, pregunta en la zona por "batu bolong" o "Pantai Mbawana". El último tramo es una pista estrecha hasta un aparcamiento.</li>
 <li><strong>Desde Waingapu (WGP):</strong> el otro lado de la isla, unas 4-6 horas por carretera hasta Tambolaka antes de seguir al suroeste; duerme una noche en el oeste.</li>
 </ul>
 <p>Desde el aparcamiento, una escalera empinada de unos <strong>300 escalones</strong> baja por el acantilado. Resbala cuando está mojada y la subida cansa con el calor.</p>
 
-<h2>Cuándo ir y mejor hora del día</h2>
+<h2>Cuándo ir y a qué hora</h2>
 <p>Ve en temporada seca, aproximadamente de <strong>mayo a septiembre</strong>, con carreteras y escalones secos. Mira la marea antes de ir: con <strong>marea baja</strong> la playa se ensancha y se puede caminar por ella; con marea alta el mar cubre buena parte de la arena. La costa mira al oeste y al sur, así que a última hora de la tarde la luz es cálida sobre los acantilados, pero deja luz suficiente para subir y volver en coche. Algunos autores de viajes desaconsejan conducir de noche por las carreteras aisladas de Kodi.</p>
 
 <h2>Consejos y normas de respeto</h2>
 <ul>
-<li><strong>Cobros:</strong> las referencias van de unas <strong>10.000 a 20.000 IDR</strong> por persona (unos 0,60-1,20 EUR / USD) en 2024-2026, más el aparcamiento. A veces guías locales se ofrecen a enseñarte el camino por una pequeña cantidad. Lleva billetes pequeños.</li>
+<li><strong>Cobros:</strong> las referencias van de unas <strong>10.000 a 20.000 rupias</strong> por persona (unos 0,60-1,20 euros o dólares) en 2024-2026, más el aparcamiento. A veces guías locales se ofrecen a enseñarte el camino por una pequeña cantidad. Lleva billetes pequeños.</li>
 <li><strong>Baño:</strong> el mar aquí es bravo, con olas grandes que atraen a surfistas. Mójate solo en orillas tranquilas con marea baja y nunca solo. No hay socorristas.</li>
 <li><strong>Seguridad:</strong> aléjate del pie de los acantilados y de los bloques de roca que quedan, que aún pueden moverse. Lleva calzado con buen agarre para los escalones.</li>
 <li><strong>Qué llevar:</strong> mucha agua, protección solar, algo de comer y efectivo. Los servicios son mínimos.</li>
@@ -422,18 +422,18 @@ GUIDES = [
  "id": {
   "title": "Pantai Bawana (Mbawana), Sumba: rute dan hal yang perlu diketahui",
   "dek": "Pasir keemasan di bawah tebing tinggi di pesisir barat daya Sumba, dicapai lewat tangga curam: apa yang tersisa setelah batu bolong runtuh, cara ke sana dan cara tetap aman.",
-  "answer": "Pantai Bawana, juga ditulis Mbawana atau Bwanna dan dikenal warga sebagai Batu Bolong, adalah pantai berlatar tebing di wilayah Kodi, Sumba Barat Daya, sekitar 52-60 km dari Tambolaka (kira-kira 1,5-2 jam bermobil). Lengkungan batu lautnya yang terkenal runtuh pada pertengahan November 2020, tetapi tebing, pasir dan titik pandangnya masih ada. Bersiaplah menuruni sekitar 300 anak tangga curam, membayar pungutan tidak resmi sekitar Rp10.000-20.000 per orang (2025-2026) dan menghadapi laut berombak, jadi datanglah saat surut dan pada musim kemarau.",
+  "answer": "Pantai Bawana, juga ditulis Mbawana atau Bwanna dan dikenal warga sebagai Batu Bolong, adalah pantai berlatar tebing di wilayah Kodi, Sumba Barat Daya, sekitar 52-60 km dari Tambolaka (kira-kira 1,5-2 jam bermobil). Lengkungan batu lautnya yang terkenal runtuh pada pertengahan November 2020, tetapi tebing, pasir dan titik pandangnya masih ada. Bersiaplah menuruni sekitar 300 anak tangga curam, membayar pungutan tidak resmi sekitar Rp 10.000-20.000 per orang (2025-2026) dan menghadapi laut berombak, jadi datanglah saat surut dan pada musim kemarau.",
   "body": """<p>Dari puncak tebing, garis pantai turun berlapis-lapis: semak hijau, lalu pita batu oker dan kelabu, lalu hamparan panjang pasir keemasan dan Samudra Hindia yang pecah putih di atas karang. Burung laut berputar di bawah Anda. Saat menuruni tangga, suara ombak makin keras hingga memenuhi segalanya, dan di bawah, saat surut, pasirnya begitu lembut dan luas sehingga tebing di belakang tampak seperti dinding ngarai.</p>
-<p>Bertahun-tahun pantai ini terkenal karena satu hal: lengkungan batu raksasa di tanjung sempit yang oleh warga disebut <em>Batu Bolong</em> atau <em>Batu Cincin</em>. Lengkungan itu sudah tidak ada, tetapi pantai ini tetap salah satu tempat paling dramatis di pesisir barat daya Sumba. Inilah yang bisa Anda harapkan sekarang.</p>
+<p>Bertahun-tahun pantai ini terkenal karena satu hal: lengkungan batu raksasa di tanjung sempit yang oleh warga disebut <em>Batu Bolong</em> atau <em>Batu Cincin</em>. Lengkungan itu sudah tidak ada, tetapi pantai ini tetap salah satu tempat paling dramatis di pesisir barat daya Sumba. Inilah yang bisa Anda temui sekarang.</p>
 
 <h2>Apa itu Pantai Bawana dan mengapa layak dikunjungi</h2>
-<p>Bawana punya banyak nama: Mbawana, Bawana, Bwanna, Banna dan, di sebagian papan jalan, Radar, mengikuti nama tanjung di dekatnya. Lokasinya di Desa Panenggo Ede, wilayah Kodi, Sumba Barat Daya (sumber menyebut Kecamatan Kodi Bangedo atau kecamatan yang lebih baru, Kodi Balaghar). Pada 2017 pantai ini masuk nominasi penghargaan pariwisata nasional sebagai destinasi baru terpopuler.</p>
-<p><strong>Lengkungan batu runtuh pada pertengahan November 2020.</strong> Media Indonesia memberitakan batu itu runtuh pada malam hari; Kepala Dinas Pariwisata Sumba Barat Daya menyebut penyebabnya ombak laut selatan dan gempa yang sering terjadi. Tidak ada korban. Sebuah laporan tahun 2026 menggambarkan sebagian reruntuhan terbawa ombak dan bongkahan yang tersisa berserakan di pantai. Sebagian situs dan paket wisata masih menampilkan foto lengkungan itu, jadi jangan kaget: yang dicari sekarang adalah hamparan pasir, tebing dan pemandangan dari tanjung.</p>
+<p>Bawana punya banyak nama: Mbawana, Bawana, Bwanna, Banna, dan, di sebagian papan jalan, Radar, mengikuti nama tanjung di dekatnya. Lokasinya di Desa Panenggo Ede, wilayah Kodi, Sumba Barat Daya (sumber menyebut Kecamatan Kodi Bangedo atau kecamatan yang lebih baru, Kodi Balaghar). Pada 2017 pantai ini masuk nominasi penghargaan pariwisata nasional sebagai destinasi baru terpopuler.</p>
+<p><strong>Lengkungan batu runtuh pada pertengahan November 2020.</strong> Media nasional memberitakan batu itu runtuh pada malam hari; Kepala Dinas Pariwisata Sumba Barat Daya menyebut penyebabnya ombak laut selatan dan gempa yang sering terjadi. Tidak ada korban. Sebuah laporan tahun 2026 menggambarkan sebagian reruntuhan terbawa ombak dan bongkahan yang tersisa berserakan di pantai. Sebagian situs dan paket wisata masih menampilkan foto lengkungan itu, jadi jangan kaget: yang dicari sekarang adalah hamparan pasir, tebing, dan pemandangan dari tanjung.</p>
 
 <h2>Cara ke Pantai Bawana</h2>
 <p>Bawana berada di pesisir selatan wilayah Kodi, sekitar <strong>52-60 km dari Tambolaka</strong>. Siapkan kira-kira <strong>1,5-2 jam</strong> sekali jalan dengan mobil; rute tercepat melewati Kodi Bangedo, di antara kampung-kampung beratap ilalang tinggi.</p>
 <ul>
-<li><strong>Dari Tambolaka (TMC):</strong> sewa mobil dengan sopir seharian, sekitar Rp1.000.000-1.500.000 (kira-kira EUR 50-75 / USD 60-90) pada 2025-2026; harga bervariasi. Kendaraan pribadi wajib, karena tidak ada angkutan umum ke pantai.</li>
+<li><strong>Dari Tambolaka (TMC):</strong> sewa mobil dengan sopir seharian, sekitar Rp 1.000.000-1.500.000 (kira-kira 50-75 euro atau 60-90 dolar AS) pada 2025-2026; harga bervariasi. Kendaraan pribadi mutlak diperlukan karena tidak ada angkutan umum ke pantai.</li>
 <li><strong>Petunjuk arah:</strong> karena namanya banyak, tanyakan kepada warga "batu bolong" atau "Pantai Mbawana". Bagian terakhir berupa jalan sempit menuju tempat parkir.</li>
 <li><strong>Dari Waingapu (WGP):</strong> sisi pulau yang berlawanan, sekitar 4-6 jam lewat darat ke Tambolaka sebelum lanjut ke barat daya; rencanakan menginap di wilayah barat.</li>
 </ul>
@@ -444,10 +444,10 @@ GUIDES = [
 
 <h2>Tips dan etika</h2>
 <ul>
-<li><strong>Pungutan:</strong> laporan berkisar sekitar <strong>Rp10.000 sampai 20.000</strong> per orang (kira-kira EUR/USD 0,60-1,20) pada 2024-2026, ditambah parkir. Pemandu lokal kadang menawarkan diri menunjukkan jalan dengan imbalan kecil. Bawa uang pecahan kecil.</li>
+<li><strong>Pungutan:</strong> laporan berkisar sekitar <strong>Rp 10.000 sampai 20.000</strong> per orang (kira-kira 0,60-1,20 euro atau dolar AS) pada 2024-2026, ditambah parkir. Pemandu lokal kadang menawarkan diri menunjukkan jalan dengan imbalan kecil. Bawa uang pecahan kecil.</li>
 <li><strong>Berenang:</strong> laut di sini berombak besar dan menarik peselancar. Hanya bermain air di bagian dangkal yang tenang saat surut, dan jangan sendirian. Tidak ada penjaga pantai.</li>
 <li><strong>Keselamatan:</strong> jauhi kaki tebing dan bongkahan batu yang tersisa, yang masih bisa bergeser. Pakai sepatu yang tidak licin untuk tangga.</li>
-<li><strong>Yang perlu dibawa:</strong> air minum yang cukup, pelindung matahari, camilan dan uang tunai. Fasilitas sangat minim.</li>
+<li><strong>Yang perlu dibawa:</strong> air minum yang cukup, pelindung matahari, camilan, dan uang tunai. Fasilitas sangat minim.</li>
 <li><strong>Hormati tempat ini:</strong> tanah ini milik keluarga setempat. Bawa naik sampah Anda, minta izin sebelum memotret orang dan tanyakan dulu sebelum menerbangkan drone.</li>
 </ul>
 
@@ -458,12 +458,12 @@ GUIDES = [
 <li><a href="/id/places/ratenggaro-village/">Kampung Ratenggaro</a>: atap tertinggi di Kodi, di seberang muara dari Wainyapu.</li>
 <li><a href="/id/places/kodi/">Kodi</a>: wilayah dan budayanya, termasuk Pasola.</li>
 </ul>
-<p>Untuk pesisir lainnya, baca panduan kami tentang <a href="/id/things-to-do/beaches-lagoons-waterfalls/">pantai, laguna dan air terjun di Sumba</a>.</p>"""
+<p>Untuk pesisir lainnya, baca panduan kami tentang <a href="/id/things-to-do/beaches-lagoons-waterfalls/">pantai, laguna, dan air terjun di Sumba</a>.</p>"""
  },
  "facts": {
   "en": [["Where", "Desa Panenggo Ede, Kodi area (Kodi Bangedo/Kodi Balaghar), Southwest Sumba"], ["From the nearest airport", "Tambolaka (TMC): roughly 52-60 km, about 1.5-2 hours by car, then about 300 steps down"], ["Best time", "Dry season (roughly May-September), at low tide, leaving before dark"], ["Entry", "Informal: around IDR 10,000-20,000 per person (2024-2026) plus parking"], ["Good for", "Cliff views, photography, walking the sand at low tide; experienced surfers"]],
-  "es": [["Dónde", "Desa Panenggo Ede, región de Kodi (Kodi Bangedo/Kodi Balaghar), Sumba Suroccidental"], ["Desde el aeropuerto más cercano", "Tambolaka (TMC): unos 52-60 km, alrededor de 1,5-2 horas en coche y luego unos 300 escalones de bajada"], ["Mejor época", "Temporada seca (aprox. mayo-septiembre), con marea baja, saliendo antes de que oscurezca"], ["Entrada", "Informal: unas 10.000-20.000 IDR por persona (2024-2026) más aparcamiento"], ["Ideal para", "Vistas de acantilados, fotografía, pasear por la arena con marea baja; surfistas con experiencia"]],
-  "id": [["Lokasi", "Desa Panenggo Ede, wilayah Kodi (Kodi Bangedo/Kodi Balaghar), Sumba Barat Daya"], ["Dari bandara terdekat", "Tambolaka (TMC): sekitar 52-60 km, kira-kira 1,5-2 jam bermobil, lalu turun sekitar 300 anak tangga"], ["Waktu terbaik", "Musim kemarau (sekitar Mei-September), saat surut, pulang sebelum gelap"], ["Tiket masuk", "Tidak resmi: sekitar Rp10.000-20.000 per orang (2024-2026) ditambah parkir"], ["Cocok untuk", "Pemandangan tebing, fotografi, menyusuri pasir saat surut; peselancar berpengalaman"]]
+  "es": [["Dónde", "Desa Panenggo Ede, región de Kodi (Kodi Bangedo/Kodi Balaghar), Sumba Suroccidental"], ["Desde el aeropuerto más cercano", "Tambolaka (TMC): unos 52-60 km, alrededor de 1,5-2 horas en coche y luego unos 300 escalones de bajada"], ["Mejor época", "Temporada seca (aprox. mayo-septiembre), con marea baja, saliendo antes de que oscurezca"], ["Entrada", "Informal: unas 10.000-20.000 rupias por persona (2024-2026) más aparcamiento"], ["Ideal para", "Vistas de acantilados, fotografía, pasear por la arena con marea baja; surfistas con experiencia"]],
+  "id": [["Lokasi", "Desa Panenggo Ede, wilayah Kodi (Kodi Bangedo/Kodi Balaghar), Sumba Barat Daya"], ["Dari bandara terdekat", "Tambolaka (TMC): sekitar 52-60 km, kira-kira 1,5-2 jam bermobil, lalu turun sekitar 300 anak tangga"], ["Waktu terbaik", "Musim kemarau (sekitar Mei-September), saat surut, pulang sebelum gelap"], ["Tiket masuk", "Tidak resmi: sekitar Rp 10.000-20.000 per orang (2024-2026) ditambah parkir"], ["Cocok untuk", "Pemandangan tebing, fotografi, menyusuri pasir saat surut; peselancar berpengalaman"]]
  },
  "faq": {
   "en": [
@@ -552,7 +552,7 @@ GUIDES = [
   "dek": "Casas de madera pintadas, canoas con balancín y una larga ola de arrecife en el extremo occidental de Sumba: cómo llegar a Pero, cuándo ir y cómo disfrutarla con respeto.",
   "answer": "Pero es un pueblo de pescadores y una playa en Kodi, Sumba Suroccidental, a unos 45 km de Tambolaka; calcula alrededor de 1,5-2,5 horas en coche según la carretera y las paradas. Es una base tranquila para atardeceres, paseos por el arrecife y surf (marea media a alta, para nivel intermedio y avanzado), con Weekuri unos 20 km al norte y Ratenggaro unos 6 km al sureste. No hay entrada formal; el mar suele estar demasiado bravo para nadar de verdad.",
   "body": """<p>Última hora de la tarde en Pero: la luz se vuelve dorada, las canoas con balancín descansan de lado por encima de la línea de marea y los hombres remiendan redes a la sombra de casas bajas pintadas de colores vivos. Unos búfalos pastan en un prado junto a las rocas mientras los niños se les suben al lomo. En el arrecife, una derecha se abre hacia la bahía, y en algún punto de la costa recortada un bufadero lanza una columna de espuma con una tos grave. Luego el sol se hunde en el océano Índico casi justo delante de ti.</p>
-<p>Pero no es un lugar para ver en diez minutos. Es un sitio para frenar una tarde o para instalarse unos días en la costa de Kodi. Esto es lo que conviene saber.</p>
+<p>Pero no es un lugar para ver en diez minutos. Es un sitio para bajar el ritmo durante una tarde o para quedarse unos días en la costa de Kodi. Esto es lo que conviene saber.</p>
 
 <h2>Qué es Pero y por qué ir</h2>
 <p>Pero está en la costa más occidental de Sumba, en el distrito de Kodi, Sumba Suroccidental (la administración local es Desa Pero Batang). A diferencia de la mayor parte de Kodi, que sigue la creencia marapu o el cristianismo, Pero es una comunidad pesquera mayoritariamente musulmana, con muchas familias de origen bugis, y eso se nota: casas bajas de ladrillo o madera pintadas de colores, una mezquita y barcas por todas partes.</p>
@@ -567,14 +567,14 @@ GUIDES = [
 <h2>Cómo llegar a la playa de Pero</h2>
 <p>Pero está a unos <strong>45 km de Tambolaka</strong>. Las estimaciones del trayecto van de 1,5 a 2,5 horas, según la carretera, las paradas y la fuente.</p>
 <ul>
-<li><strong>Coche con conductor desde Tambolaka (TMC):</strong> unas 1.000.000-1.500.000 IDR (unos 50-75 EUR / 60-90 USD) al día en 2025-2026; los precios varían.</li>
-<li><strong>Minibús público:</strong> salen minibuses compartidos de Waitabula (Tambolaka) hacia Bondo Kodi cuando se llenan, durante el día; los viajeros han pagado unas 20.000 IDR. Desde Bondo Kodi, un <em>ojek</em> (mototaxi) para los últimos kilómetros. Pide el <em>bis umum</em> para que no piensen que quieres alquilar el vehículo entero.</li>
+<li><strong>Coche con conductor desde Tambolaka (TMC):</strong> entre 1 y 1,5 millones de rupias (unos 50-75 euros o 60-90 dólares) al día en 2025-2026; los precios varían.</li>
+<li><strong>Minibús público:</strong> salen minibuses compartidos de Waitabula (Tambolaka) hacia Bondo Kodi cuando se llenan, durante el día; los viajeros han pagado unas 20.000 rupias. Desde Bondo Kodi, un <em>ojek</em> (mototaxi) para los últimos kilómetros. Pide el <em>bis umum</em> para que no piensen que quieres alquilar el vehículo entero.</li>
 <li><strong>Desde Waingapu (WGP):</strong> unas 4-6 horas por carretera hasta Tambolaka y luego hasta Kodi. Duerme al menos una noche en el oeste.</li>
 </ul>
 
-<h2>Cuándo ir y mejor hora del día</h2>
-<p>La temporada seca, aproximadamente de <strong>mayo a septiembre</strong>, trae los cielos más limpios y el surf más fiable con mar de fondo del suroeste; a los surfistas también les gustan los meses intermedios de abril y octubre, más tranquilos. En <strong>febrero</strong> se celebra la Pasola en Kodi, muy cerca; los Rato fijan las fechas cada año, así que confírmalas antes de organizarte (lee <a href="/es/culture/pasola-explained/">la Pasola explicada</a>).</p>
-<p>Ven para las dos últimas horas de luz y el atardecer. Los surfistas deberían salir temprano, cuando el viento suele ser más flojo, y ajustar las sesiones a la marea.</p>
+<h2>Cuándo ir y a qué hora</h2>
+<p>La temporada seca, aproximadamente de <strong>mayo a septiembre</strong>, trae los cielos más limpios y el surf más fiable con mar de fondo del suroeste; a los surfistas también les gustan los meses intermedios de abril y octubre, más tranquilos. En <strong>febrero</strong> se celebra la Pasola en Kodi, muy cerca; los Rato fijan las fechas cada año, así que confírmalas antes de organizarte (lee <a href="/es/culture/pasola-explained/">nuestra guía sobre la Pasola</a>).</p>
+<p>Llega a tiempo para las dos últimas horas de luz y el atardecer. Los surfistas deberían salir temprano, cuando el viento suele ser más flojo, y ajustar las sesiones a la marea.</p>
 
 <h2>Consejos y normas de respeto</h2>
 <ul>
@@ -594,8 +594,8 @@ GUIDES = [
 </ul>"""
  },
  "id": {
-  "title": "Pantai Pero, Sumba: kampung nelayan, ombak dan senja di Kodi",
-  "dek": "Rumah kayu berwarna cerah, perahu bercadik dan ombak karang panjang di ujung barat Sumba: cara ke Pero, kapan datang dan cara menikmatinya dengan sopan.",
+  "title": "Pantai Pero, Sumba: kampung nelayan, ombak, dan senja di Kodi",
+  "dek": "Rumah kayu berwarna cerah, perahu bercadik, dan ombak karang panjang di ujung barat Sumba: cara ke Pero, kapan datang, dan cara menikmatinya dengan sopan.",
   "answer": "Pero adalah kampung nelayan dan pantai di Kodi, Sumba Barat Daya, sekitar 45 km dari Tambolaka; siapkan kira-kira 1,5-2,5 jam bermobil tergantung jalan dan persinggahan. Tempat ini cocok untuk menikmati senja, berjalan di tepi karang dan berselancar (pasang sedang hingga tinggi, untuk tingkat menengah dan mahir), dengan Weekuri sekitar 20 km ke utara dan Ratenggaro sekitar 6 km ke tenggara. Tidak ada tiket masuk resmi; lautnya sering terlalu berombak untuk berenang sungguhan.",
   "body": """<p>Sore hari di Pero: cahaya berubah keemasan, perahu bercadik berbaring miring di atas garis pasang, dan para lelaki memperbaiki jala di bawah naungan rumah-rumah rendah berwarna cerah. Kerbau merumput di lapangan berumput dekat bebatuan sementara anak-anak memanjat punggungnya. Di atas karang, ombak kanan mengalir ke arah teluk, dan di suatu titik di pantai berbatu yang bergerigi, lubang semburan menembakkan pilar buih dengan suara batuk yang dalam. Lalu matahari tenggelam ke Samudra Hindia, hampir tepat di depan Anda.</p>
 <p>Pero bukan tempat yang selesai dilihat dalam sepuluh menit. Ini tempat untuk melambat satu sore, atau untuk menetap beberapa hari di pesisir Kodi. Berikut yang perlu diketahui.</p>
@@ -611,10 +611,10 @@ GUIDES = [
 </ul>
 
 <h2>Cara ke Pantai Pero</h2>
-<p>Pero berjarak sekitar <strong>45 km dari Tambolaka</strong>. Perkiraan waktu tempuh berkisar 1,5 sampai 2,5 jam, tergantung jalan, persinggahan dan sumbernya.</p>
+<p>Pero berjarak sekitar <strong>45 km dari Tambolaka</strong>. Perkiraan waktu tempuh berkisar 1,5 sampai 2,5 jam, tergantung jalan, persinggahan, dan sumbernya.</p>
 <ul>
-<li><strong>Mobil dengan sopir dari Tambolaka (TMC):</strong> sekitar Rp1.000.000-1.500.000 (kira-kira EUR 50-75 / USD 60-90) per hari pada 2025-2026; harga bervariasi.</li>
-<li><strong>Angkutan umum:</strong> minibus bersama berangkat dari Waitabula (Tambolaka) ke arah Bondo Kodi setelah penuh, sepanjang siang; wisatawan melaporkan ongkos sekitar Rp20.000. Dari Bondo Kodi, naik ojek untuk beberapa kilometer terakhir. Sebut <em>bis umum</em> agar sopir tidak mengira Anda mencarter seluruh kendaraan.</li>
+<li><strong>Mobil dengan sopir dari Tambolaka (TMC):</strong> sekitar Rp 1.000.000-1.500.000 (kira-kira 50-75 euro atau 60-90 dolar AS) per hari pada 2025-2026; harga bervariasi.</li>
+<li><strong>Angkutan umum:</strong> minibus bersama berangkat dari Waitabula (Tambolaka) ke arah Bondo Kodi setelah penuh, sepanjang siang; wisatawan melaporkan ongkos sekitar Rp 20.000. Dari Bondo Kodi, naik ojek untuk beberapa kilometer terakhir. Sebut <em>bis umum</em> agar sopir tidak mengira Anda mencarter seluruh kendaraan.</li>
 <li><strong>Dari Waingapu (WGP):</strong> sekitar 4-6 jam lewat darat ke Tambolaka, lalu lanjut ke Kodi. Menginaplah setidaknya semalam di wilayah barat.</li>
 </ul>
 
@@ -636,7 +636,7 @@ GUIDES = [
 <li><a href="/id/places/ratenggaro-village/">Kampung Ratenggaro</a>: sekitar 6 km ke tenggara, atau sekitar 40 menit berjalan menyusuri pantai.</li>
 <li><a href="/id/places/weekuri-lagoon/">Danau Weekuri</a>: sekitar 20 km ke utara.</li>
 <li><a href="/id/places/mandorak-beach/">Pantai Mandorak</a>: bersebelahan dengan Weekuri.</li>
-<li><a href="/id/places/kodi/">Kodi</a>: wilayah yang lebih luas, kampung-kampungnya dan Pasola.</li>
+<li><a href="/id/places/kodi/">Kodi</a>: wilayah yang lebih luas, kampung-kampungnya, dan Pasola.</li>
 </ul>"""
  },
  "facts": {
@@ -654,13 +654,13 @@ GUIDES = [
   "es": [
    ["¿A qué distancia está la playa de Pero del aeropuerto de Tambolaka?", "A unos 45 km. Calcula alrededor de 1,5-2,5 horas en coche según el estado de la carretera y las paradas."],
    ["¿Se puede nadar en la playa de Pero?", "El mar suele estar bravo, así que no se recomienda nadar de verdad. Mojarse cerca de la orilla en días tranquilos no es problema; evita la desembocadura y el estuario."],
-   ["¿Pero es buena para surfistas principiantes?", "No mucho. Las olas de arrecife de Pero son para nivel intermedio y avanzado, y el interior queda peligrosamente somero con marea baja. Los principiantes solo deberían probar en días muy pequeños y con consejo local."],
+   ["¿Es Pero un buen sitio para surfistas principiantes?", "No mucho. Las olas de arrecife de Pero son para nivel intermedio y avanzado, y el interior queda peligrosamente somero con marea baja. Los principiantes solo deberían probar en días muy pequeños y con consejo local."],
    ["¿A qué distancia está Pero de Ratenggaro y Weekuri?", "Ratenggaro está a unos 6 km al sureste (unos 40 minutos a pie por la orilla) y la laguna Weekuri a unos 20 km al norte."]
   ],
   "id": [
    ["Berapa jarak Pantai Pero dari Bandara Tambolaka?", "Sekitar 45 km. Siapkan kira-kira 1,5-2,5 jam bermobil tergantung kondisi jalan dan persinggahan."],
    ["Apakah bisa berenang di Pantai Pero?", "Lautnya sering berombak, jadi berenang sungguhan tidak disarankan. Bermain air dekat tepi saat laut tenang tidak masalah; hindari muara sungai."],
-   ["Apakah Pero cocok untuk peselancar pemula?", "Kurang cocok. Ombak karang Pero untuk tingkat menengah dan mahir, dan bagian dalamnya berbahaya dangkal saat surut. Pemula hanya sebaiknya mencoba saat ombak sangat kecil dengan saran warga."],
+   ["Apakah Pero cocok untuk peselancar pemula?", "Kurang cocok. Ombak karang Pero untuk tingkat menengah dan mahir, dan bagian dalamnya sangat dangkal dan berbahaya saat surut. Pemula sebaiknya hanya mencoba saat ombak sangat kecil dengan saran warga."],
    ["Berapa jarak Pero ke Ratenggaro dan Weekuri?", "Ratenggaro sekitar 6 km ke tenggara (sekitar 40 menit berjalan menyusuri pantai) dan Danau Weekuri sekitar 20 km ke utara."]
   ]
  },
@@ -728,9 +728,9 @@ GUIDES = [
  "es": {
   "title": "Aldea de Ratenggaro, Sumba: cómo visitarla con respeto",
   "dek": "Tejados de paja altísimos y siglos de tumbas de piedra junto a una laguna frente al Índico: cómo llegar a Ratenggaro, qué dar, qué evitar y cuándo ir.",
-  "answer": "Ratenggaro es una aldea tradicional marapu en Kodi Bangedo, Sumba Suroccidental, conocida por sus casas de tejados de paja altísimos y cientos de tumbas megalíticas junto al mar. Está a unos 50-56 km de Tambolaka, alrededor de 1-1,5 horas en coche por una carretera casi toda asfaltada. Se espera que firmes el libro de visitas y dejes un donativo de unas 20.000 IDR o más por persona (2025-2026), que pidas permiso antes de hacer fotos y que nunca toques tumbas ni objetos rituales.",
+  "answer": "Ratenggaro es una aldea tradicional marapu en Kodi Bangedo, Sumba Suroccidental, conocida por sus casas de tejados de paja altísimos y cientos de tumbas megalíticas junto al mar. Está a unos 50-56 km de Tambolaka, alrededor de 1-1,5 horas en coche por una carretera casi toda asfaltada. Se espera que firmes el libro de visitas y dejes un donativo de unas 20.000 rupias o más por persona (2025-2026), que pidas permiso antes de hacer fotos y que nunca toques tumbas ni objetos rituales.",
   "body": """<p>Primero aparecen los tejados, por encima de los cocoteros: conos de paja altos y estrechos que se alzan sobre las casas como cascos de barcos volcados, más oscuros en lo alto, donde el humo de los fogones se ha filtrado durante años. Debajo, losas de piedra por todas partes, unas sobre pilares cortos, otras talladas, otras verdes de musgo. Las gallinas escarban entre las tumbas, una mujer teje bajo un porche y, más allá de la última casa, el río se abre en una laguna turquesa y luego en el océano Índico.</p>
-<p>Ratenggaro es una de las aldeas tradicionales más visitadas de Sumba y, también, un hogar habitado. Aquí te explicamos qué estás viendo, cómo llegar y cómo visitarla dejando buena impresión para el siguiente viajero.</p>
+<p>Ratenggaro es una de las aldeas tradicionales más visitadas de Sumba y, a la vez, el hogar de quienes viven en ella. Aquí te explicamos qué estás viendo, cómo llegar y cómo visitarla dejando buena impresión para el siguiente viajero.</p>
 
 <h2>Qué es Ratenggaro y por qué ir</h2>
 <p>Ratenggaro (Kampung Adat Ratenggaro) está en la costa de Desa Maliti Bondo Ate, distrito de Kodi Bangedo, Sumba Suroccidental, a un lado de un estuario. Sus habitantes siguen el <strong>marapu</strong>, la creencia ancestral de Sumba (lee <a href="/es/culture/marapu-ikat-traditional-villages/">marapu, ikat y aldeas tradicionales</a>). El nombre suele explicarse como <em>rate</em> (tumba) y <em>garo</em>, el pueblo de Garo, en recuerdo de una antigua guerra.</p>
@@ -743,18 +743,18 @@ GUIDES = [
 <h2>Cómo llegar a Ratenggaro</h2>
 <p>Ratenggaro está a unos <strong>50-56 km de Tambolaka</strong>, al suroeste. Calcula alrededor de <strong>1-1,5 horas</strong> en coche por una carretera casi toda asfaltada, más con paradas.</p>
 <ul>
-<li><strong>Desde Tambolaka (TMC):</strong> coche con conductor, unas 1.000.000-1.500.000 IDR (unos 50-75 EUR / 60-90 USD) al día en 2025-2026; los precios varían. Un guía o conductor local que conozca a las familias hace la visita más fácil y con más sentido.</li>
+<li><strong>Desde Tambolaka (TMC):</strong> coche con conductor, entre 1 y 1,5 millones de rupias (unos 50-75 euros o 60-90 dólares) al día en 2025-2026; los precios varían. Un guía o conductor local que conozca a las familias hace la visita más fácil y con más sentido.</li>
 <li><strong>Transporte público:</strong> minibuses compartidos de Waitabula a Bondo Kodi y luego un <em>ojek</em> para el último tramo.</li>
 <li><strong>A pie desde Pero:</strong> unos 40 minutos por la orilla desde <a href="/es/places/pero-beach/">Pero</a>.</li>
 <li><strong>Desde Waingapu (WGP):</strong> unas 4-6 horas por carretera hasta Tambolaka primero; duerme una noche en el oeste.</li>
 </ul>
 
-<h2>Cuándo ir y mejor hora del día</h2>
-<p>Se puede ir todo el año, pero la temporada seca (aproximadamente de <strong>mayo a septiembre</strong>) facilita las carreteras. La luz de la mañana es suave sobre los tejados, y una visita al final de la tarde se combina con el atardecer en las playas cercanas. En <strong>febrero</strong> se celebra en esta zona la Pasola de Kodi; los Rato fijan las fechas siguiendo a los gusanos marinos nyale, así que confírmalas en el lugar (lee <a href="/es/culture/pasola-explained/">la Pasola explicada</a>). Si hay un funeral o una ceremonia, pregunta si los visitantes son bienvenidos antes de entrar.</p>
+<h2>Cuándo ir y a qué hora</h2>
+<p>Se puede ir todo el año, pero la temporada seca (aproximadamente de <strong>mayo a septiembre</strong>) facilita las carreteras. La luz de la mañana es suave sobre los tejados, y una visita al final de la tarde se combina con el atardecer en las playas cercanas. En <strong>febrero</strong> se celebra en esta zona la Pasola de Kodi; los Rato fijan las fechas siguiendo a los gusanos marinos nyale, así que confírmalas en el lugar (lee <a href="/es/culture/pasola-explained/">nuestra guía sobre la Pasola</a>). Si hay un funeral o una ceremonia, pregunta si los visitantes son bienvenidos antes de entrar.</p>
 
 <h2>Consejos y normas de respeto</h2>
 <ul>
-<li><strong>Donativo:</strong> firma el libro de visitas y deja una aportación, unas <strong>20.000 IDR</strong> por persona o más (alrededor de 1,20 EUR / USD) en 2025-2026. Puede haber pequeños cobros extra por probarse la ropa tradicional o entrar en una casa. En mayo de 2025 se hizo viral un vídeo de visitantes presionados para pagar aquí, y el Gobierno provincial anunció grupos de turismo (pokdarwis) para gestionar los cobros; da a través del libro o de una persona reconocida, no a cualquiera que lo pida.</li>
+<li><strong>Donativo:</strong> firma el libro de visitas y deja una aportación, unas <strong>20.000 rupias</strong> por persona o más (alrededor de 1,20 euros o dólares) en 2025-2026. Puede haber pequeños cobros extra por probarse la ropa tradicional o entrar en una casa. En mayo de 2025 se hizo viral un vídeo de visitantes presionados para pagar aquí, y el Gobierno provincial anunció grupos de turismo (pokdarwis) para gestionar los cobros; da a través del libro o de una persona reconocida, no a cualquiera que lo pida.</li>
 <li><strong>Niños:</strong> es posible que los niños pidan dinero o caramelos. Es mejor dar al libro de donativos o llevar material escolar para entregar a los adultos.</li>
 <li><strong>Betel:</strong> un pequeño regalo de betel y nuez de areca (<em>sirih pinang</em>) es un saludo tradicional y se agradece.</li>
 <li><strong>Respeto:</strong> es un hogar, no un museo. Pide permiso antes de fotografiar a la gente o entrar en una casa, viste con recato y nunca te sientes, te subas ni toques las tumbas u objetos rituales.</li>
@@ -773,22 +773,22 @@ GUIDES = [
  "id": {
   "title": "Kampung Adat Ratenggaro, Sumba: cara berkunjung dengan hormat",
   "dek": "Atap ilalang menjulang dan kubur batu berabad-abad di tepi laguna menghadap Samudra Hindia: cara ke Ratenggaro, apa yang perlu diberikan, apa yang dihindari dan kapan datang.",
-  "answer": "Ratenggaro adalah kampung adat penganut Marapu di Kodi Bangedo, Sumba Barat Daya, terkenal dengan rumah beratap ilalang menjulang dan ratusan kubur batu megalitik di tepi laut. Jaraknya sekitar 50-56 km dari Tambolaka, kira-kira 1-1,5 jam bermobil lewat jalan yang sebagian besar beraspal. Pengunjung diharapkan mengisi buku tamu dan memberi donasi sekitar Rp20.000 atau lebih per orang (2025-2026), minta izin sebelum memotret dan tidak pernah menyentuh kubur atau benda ritual.",
+  "answer": "Ratenggaro adalah kampung adat penganut Marapu di Kodi Bangedo, Sumba Barat Daya, terkenal dengan rumah beratap ilalang menjulang dan ratusan kubur batu megalitik di tepi laut. Jaraknya sekitar 50-56 km dari Tambolaka, kira-kira 1-1,5 jam bermobil lewat jalan yang sebagian besar beraspal. Pengunjung diharapkan mengisi buku tamu dan memberi donasi sekitar Rp 20.000 atau lebih per orang (2025-2026), minta izin sebelum memotret dan tidak pernah menyentuh kubur atau benda ritual.",
   "body": """<p>Atapnya yang pertama terlihat, di atas pohon kelapa: kerucut ilalang yang tinggi dan ramping menjulang dari rumah-rumah seperti lambung perahu terbalik, lebih gelap di puncaknya karena asap tungku merembes selama bertahun-tahun. Di bawahnya, lempeng batu ada di mana-mana, sebagian di atas tiang pendek, sebagian berukir, sebagian hijau berlumut. Ayam mengais di antara kubur, seorang perempuan menenun di bawah beranda, dan setelah rumah terakhir sungai membuka menjadi laguna toska lalu Samudra Hindia.</p>
 <p>Ratenggaro adalah salah satu kampung adat yang paling banyak dikunjungi di Sumba, sekaligus rumah yang dihuni. Halaman ini menjelaskan apa yang Anda lihat, cara ke sana dan cara berkunjung yang meninggalkan kesan baik bagi wisatawan berikutnya.</p>
 
 <h2>Apa itu Ratenggaro dan mengapa layak dikunjungi</h2>
-<p>Ratenggaro (Kampung Adat Ratenggaro) berada di pesisir Desa Maliti Bondo Ate, Kecamatan Kodi Bangedo, Sumba Barat Daya, di satu sisi muara sungai. Warganya menganut <strong>Marapu</strong>, kepercayaan leluhur Sumba (baca <a href="/id/culture/marapu-ikat-traditional-villages/">Marapu, ikat dan kampung adat</a>). Namanya sering dijelaskan dari kata <em>rate</em> (kubur) dan <em>garo</em>, suku Garo, mengenang perang di masa lalu.</p>
+<p>Ratenggaro (Kampung Adat Ratenggaro) berada di pesisir Desa Maliti Bondo Ate, Kecamatan Kodi Bangedo, Sumba Barat Daya, di satu sisi muara sungai. Warganya menganut <strong>Marapu</strong>, kepercayaan leluhur Sumba (baca <a href="/id/culture/marapu-ikat-traditional-villages/">Marapu, ikat, dan kampung adat</a>). Namanya sering dijelaskan dari kata <em>rate</em> (kubur) dan <em>garo</em>, suku Garo, mengenang perang di masa lalu.</p>
 <ul>
-<li><strong>Rumahnya:</strong> rumah panggung dengan atap menara yang termasuk tertinggi di Sumba. Angkanya berbeda-beda, dari sekitar 15 m hingga sekitar 25-30 m menurut sumbernya; atap tinggi itu menjadi ruang bagi leluhur dan pusaka. Sebuah laporan Indonesia menyebut empat rumah sakral saling berhadapan sesuai arah mata angin. Kampung ini dilaporkan pernah terbakar dan dibangun kembali dengan bantuan pemerintah.</li>
-<li><strong>Kubur batunya:</strong> kubur megalitik besar berdiri di dalam kampung dan di sepanjang pantai. Sebuah laporan Indonesia mencatat sekitar 304 kubur batu, termasuk milik para pendiri. Sebagian berjajar di pesisir sekitar 500 m dari rumah-rumah.</li>
+<li><strong>Rumahnya:</strong> rumah panggung dengan atap menara yang termasuk tertinggi di Sumba. Angkanya berbeda-beda, dari sekitar 15 m hingga sekitar 25-30 m menurut sumbernya; atap tinggi itu menjadi ruang bagi leluhur dan pusaka. Sebuah laporan media nasional menyebut empat rumah sakral saling berhadapan sesuai arah mata angin. Kampung ini dilaporkan pernah terbakar dan dibangun kembali dengan bantuan pemerintah.</li>
+<li><strong>Kubur batunya:</strong> kubur megalitik besar berdiri di dalam kampung dan di sepanjang pantai. Sebuah laporan media nasional mencatat sekitar 304 kubur batu, termasuk milik para pendiri. Sebagian berjajar di pesisir sekitar 500 m dari rumah-rumah.</li>
 <li><strong>Lokasinya:</strong> sedikit kampung di Sumba yang sedekat ini dengan laut. Di seberang muara terlihat atap-atap <a href="/id/places/wainyapu-village/">Wainyapu</a>.</li>
 </ul>
 
 <h2>Cara ke Ratenggaro</h2>
 <p>Ratenggaro berjarak sekitar <strong>50-56 km dari Tambolaka</strong>, ke arah barat daya. Siapkan kira-kira <strong>1-1,5 jam</strong> bermobil lewat jalan yang sebagian besar beraspal, lebih lama bila banyak berhenti.</p>
 <ul>
-<li><strong>Dari Tambolaka (TMC):</strong> mobil dengan sopir, sekitar Rp1.000.000-1.500.000 (kira-kira EUR 50-75 / USD 60-90) per hari pada 2025-2026; harga bervariasi. Pemandu atau sopir lokal yang mengenal keluarga di sana membuat kunjungan lebih mudah dan bermakna.</li>
+<li><strong>Dari Tambolaka (TMC):</strong> mobil dengan sopir, sekitar Rp 1.000.000-1.500.000 (kira-kira 50-75 euro atau 60-90 dolar AS) per hari pada 2025-2026; harga bervariasi. Pemandu atau sopir lokal yang mengenal keluarga di sana membuat kunjungan lebih mudah dan bermakna.</li>
 <li><strong>Angkutan umum:</strong> minibus bersama dari Waitabula ke Bondo Kodi, lalu ojek untuk bagian terakhir.</li>
 <li><strong>Jalan kaki dari Pero:</strong> sekitar 40 menit menyusuri pantai dari <a href="/id/places/pero-beach/">Pero</a>.</li>
 <li><strong>Dari Waingapu (WGP):</strong> sekitar 4-6 jam lewat darat ke Tambolaka lebih dulu; rencanakan menginap di wilayah barat.</li>
@@ -799,7 +799,7 @@ GUIDES = [
 
 <h2>Tips dan etika</h2>
 <ul>
-<li><strong>Donasi:</strong> isi buku tamu dan beri kontribusi, sekitar <strong>Rp20.000</strong> per orang atau lebih (kira-kira EUR/USD 1,20) pada 2025-2026. Bisa ada biaya kecil tambahan untuk mencoba pakaian adat atau masuk ke rumah. Pada Mei 2025 video wisatawan yang dimintai uang secara paksa di sini viral, dan Pemprov NTT menyatakan akan membentuk pokdarwis untuk mengelola pungutan; berikan lewat buku tamu atau orang yang jelas mewakili kampung, bukan kepada siapa saja yang meminta.</li>
+<li><strong>Donasi:</strong> isi buku tamu dan beri kontribusi, sekitar <strong>Rp 20.000</strong> per orang atau lebih (kira-kira 1,20 euro atau dolar AS) pada 2025-2026. Bisa ada biaya kecil tambahan untuk mencoba pakaian adat atau masuk ke rumah. Pada Mei 2025 video wisatawan yang dimintai uang secara paksa di sini viral, dan Pemprov NTT menyatakan akan membentuk pokdarwis untuk mengelola pungutan; berikan lewat buku tamu atau orang yang jelas mewakili kampung, bukan kepada siapa saja yang meminta.</li>
 <li><strong>Anak-anak:</strong> anak-anak mungkin meminta uang atau permen. Lebih baik memberi lewat buku donasi, atau membawa alat tulis untuk diserahkan kepada orang dewasa.</li>
 <li><strong>Sirih pinang:</strong> membawa sedikit sirih pinang adalah salam adat yang dihargai.</li>
 <li><strong>Hormati kampung:</strong> ini rumah, bukan museum. Minta izin sebelum memotret orang atau masuk rumah, berpakaian sopan, dan jangan duduk, memanjat atau menyentuh kubur batu maupun benda ritual.</li>
@@ -812,13 +812,13 @@ GUIDES = [
 <li><a href="/id/places/wainyapu-village/">Kampung Wainyapu</a>: di seberang muara, salah satu kampung terbesar di Kodi.</li>
 <li><a href="/id/places/pero-beach/">Pantai Pero</a>: kampung nelayan dan senja, sekitar 6 km ke barat laut.</li>
 <li><a href="/id/places/weekuri-lagoon/">Danau Weekuri</a>: untuk berenang, sekitar 45 menit sampai satu jam ke utara.</li>
-<li><a href="/id/places/kodi/">Kodi</a>: wilayahnya, warganya dan Pasola.</li>
+<li><a href="/id/places/kodi/">Kodi</a>: wilayahnya, warganya, dan Pasola.</li>
 </ul>"""
  },
  "facts": {
   "en": [["Where", "Desa Maliti Bondo Ate, Kodi Bangedo, Southwest Sumba"], ["From the nearest airport", "Tambolaka (TMC): roughly 50-56 km, about 1-1.5 hours by car"], ["Best time", "Year-round; dry season (roughly May-September) for easier roads; morning light"], ["Entry", "Guest book and donation, around IDR 20,000+ per person (2025-2026)"], ["Good for", "Traditional architecture, megalithic tombs, Marapu culture, ikat"]],
-  "es": [["Dónde", "Desa Maliti Bondo Ate, Kodi Bangedo, Sumba Suroccidental"], ["Desde el aeropuerto más cercano", "Tambolaka (TMC): unos 50-56 km, alrededor de 1-1,5 horas en coche"], ["Mejor época", "Todo el año; temporada seca (aprox. mayo-septiembre) por las carreteras; luz de la mañana"], ["Entrada", "Libro de visitas y donativo, unas 20.000 IDR o más por persona (2025-2026)"], ["Ideal para", "Arquitectura tradicional, tumbas megalíticas, cultura marapu, ikat"]],
-  "id": [["Lokasi", "Desa Maliti Bondo Ate, Kodi Bangedo, Sumba Barat Daya"], ["Dari bandara terdekat", "Tambolaka (TMC): sekitar 50-56 km, kira-kira 1-1,5 jam bermobil"], ["Waktu terbaik", "Sepanjang tahun; musim kemarau (sekitar Mei-September) agar jalan lebih mudah; cahaya pagi"], ["Tiket masuk", "Buku tamu dan donasi, sekitar Rp20.000 atau lebih per orang (2025-2026)"], ["Cocok untuk", "Arsitektur tradisional, kubur megalitik, budaya Marapu, ikat"]]
+  "es": [["Dónde", "Desa Maliti Bondo Ate, Kodi Bangedo, Sumba Suroccidental"], ["Desde el aeropuerto más cercano", "Tambolaka (TMC): unos 50-56 km, alrededor de 1-1,5 horas en coche"], ["Mejor época", "Todo el año; temporada seca (aprox. mayo-septiembre) por las carreteras; luz de la mañana"], ["Entrada", "Libro de visitas y donativo, unas 20.000 rupias o más por persona (2025-2026)"], ["Ideal para", "Arquitectura tradicional, tumbas megalíticas, cultura marapu, ikat"]],
+  "id": [["Lokasi", "Desa Maliti Bondo Ate, Kodi Bangedo, Sumba Barat Daya"], ["Dari bandara terdekat", "Tambolaka (TMC): sekitar 50-56 km, kira-kira 1-1,5 jam bermobil"], ["Waktu terbaik", "Sepanjang tahun; musim kemarau (sekitar Mei-September) agar jalan lebih mudah; cahaya pagi"], ["Tiket masuk", "Buku tamu dan donasi, sekitar Rp 20.000 atau lebih per orang (2025-2026)"], ["Cocok untuk", "Arsitektur tradisional, kubur megalitik, budaya Marapu, ikat"]]
  },
  "faq": {
   "en": [
@@ -829,14 +829,14 @@ GUIDES = [
    ["How far is Ratenggaro from Tambolaka?", "Roughly 50-56 km, about 1-1.5 hours by car on a mostly paved road."]
   ],
   "es": [
-   ["¿Cuánto cuesta visitar la aldea de Ratenggaro?", "No hay entrada fija. Los visitantes firman un libro y dejan un donativo, unas 20.000 IDR por persona o más en 2025-2026, con pequeños cobros extra por probarse la ropa tradicional o entrar en una casa."],
+   ["¿Cuánto cuesta visitar la aldea de Ratenggaro?", "No hay entrada fija. Los visitantes firman un libro y dejan un donativo, unas 20.000 rupias por persona o más en 2025-2026, con pequeños cobros extra por probarse la ropa tradicional o entrar en una casa."],
    ["¿Qué altura tienen los tejados de Ratenggaro?", "Están entre los más altos de Sumba. Las fuentes dan cifras de unos 15 m hasta unos 25-30 m."],
    ["¿Se pueden hacer fotos en Ratenggaro?", "Sí, de la aldea y los tejados, pero pide permiso antes de fotografiar a personas o entrar en una casa, y no te subas ni te sientes en las tumbas."],
    ["¿Se puede nadar en Ratenggaro?", "En el estuario no, hay avisos de cocodrilos. La playa del mar, solo en días tranquilos."],
    ["¿A qué distancia está Ratenggaro de Tambolaka?", "A unos 50-56 km, alrededor de 1-1,5 horas en coche por una carretera casi toda asfaltada."]
   ],
   "id": [
-   ["Berapa biaya berkunjung ke Kampung Ratenggaro?", "Tidak ada tiket tetap. Pengunjung mengisi buku tamu dan memberi donasi, sekitar Rp20.000 per orang atau lebih pada 2025-2026, dengan biaya kecil tambahan untuk mencoba pakaian adat atau masuk rumah."],
+   ["Berapa biaya berkunjung ke Kampung Ratenggaro?", "Tidak ada tiket tetap. Pengunjung mengisi buku tamu dan memberi donasi, sekitar Rp 20.000 per orang atau lebih pada 2025-2026, dengan biaya kecil tambahan untuk mencoba pakaian adat atau masuk rumah."],
    ["Seberapa tinggi atap rumah di Ratenggaro?", "Termasuk yang tertinggi di Sumba. Sumber menyebut angka sekitar 15 m hingga sekitar 25-30 m."],
    ["Bolehkah memotret di Ratenggaro?", "Boleh memotret kampung dan atapnya, tetapi minta izin sebelum memotret orang atau masuk rumah, dan jangan memanjat atau duduk di atas kubur batu."],
    ["Apakah bisa berenang di Ratenggaro?", "Jangan di muara, karena ada peringatan buaya. Pantai lautnya hanya untuk hari yang tenang."],
@@ -909,10 +909,10 @@ GUIDES = [
  },
  "es": {
   "title": "Aldea de Wainyapu, Sumba: tumbas, tejados altos y cómo visitarla",
-  "dek": "Una de las aldeas tradicionales más grandes de Kodi, frente a Ratenggaro al otro lado de una desembocadura, con tumbas de piedra a cientos y un campo de Pasola al lado: cómo visitarla con cuidado.",
-  "answer": "Wainyapu es una gran aldea tradicional marapu en Kodi Balaghar, Sumba Suroccidental, en la orilla sur de la desembocadura del río Luku Lambatama, justo enfrente de Ratenggaro. Está a unos 55-63 km de Tambolaka, alrededor de 1,5-2 horas en coche, y es conocida por sus decenas de casas de tejado alto, mil o más tumbas megalíticas y su campo de Pasola. No hay entrada: firma el libro de visitas, deja un donativo de unas 20.000 IDR o más por persona (2025-2026) y pide permiso antes de hacer fotos.",
+  "dek": "Una de las aldeas tradicionales más grandes de Kodi, frente a Ratenggaro al otro lado de una desembocadura, con cientos de tumbas de piedra y un campo de Pasola al lado: cómo visitarla con cuidado.",
+  "answer": "Wainyapu es una gran aldea tradicional marapu en Kodi Balaghar, Sumba Suroccidental, en la orilla sur de la desembocadura del río Luku Lambatama, justo enfrente de Ratenggaro. Está a unos 55-63 km de Tambolaka, alrededor de 1,5-2 horas en coche, y es conocida por sus decenas de casas de tejado alto, mil o más tumbas megalíticas y su campo de Pasola. No hay entrada: firma el libro de visitas, deja un donativo de unas 20.000 rupias o más por persona (2025-2026) y pide permiso antes de hacer fotos.",
   "body": """<p>Desde la orilla del río se ven los tejados de Wainyapu al otro lado del estuario, una multitud de altos picos de paja sobre árboles bajos y piedra gris. De cerca la aldea es mayor de lo que parece: casa tras casa agrupadas por clanes, cada una con tumbas de piedra delante, unas desnudas y nuevas, otras hundidas en la hierba y pulidas por el tiempo. Más allá de las casas hay un campo abierto de tierra dura y, detrás, una franja de arena dorada y el rumor del océano Índico.</p>
-<p>Wainyapu recibe menos visitantes que Ratenggaro, su vecina al otro lado del agua, pero es una de las aldeas más impresionantes del oeste de Sumba. Así se puede ver bien y con respeto.</p>
+<p>Wainyapu recibe menos visitantes que Ratenggaro, su vecina al otro lado del agua, pero es una de las aldeas más impresionantes del oeste de Sumba. Así puedes visitarla a fondo y con respeto.</p>
 
 <h2>Qué es Wainyapu y por qué ir</h2>
 <p>Wainyapu (Kampung Adat Wainyapu) está en Desa Wainyapu, distrito de Kodi Balaghar, Sumba Suroccidental, a unos 8 km del extremo occidental de la isla, en la orilla sur del estuario del río Luku Lambatama. Sus habitantes son kodi y muchos siguen el <strong>marapu</strong>, la creencia ancestral de Sumba (lee <a href="/es/culture/marapu-ikat-traditional-villages/">marapu, ikat y aldeas tradicionales</a>).</p>
@@ -920,25 +920,25 @@ GUIDES = [
 <li><strong>Tamaño:</strong> las cifras varían. Un autor de viajes oyó hablar de unas 47 casas en grupos de cinco a siete por clan; un reportaje indonesio cuenta unas 60 casas tradicionales <em>uma kalada</em>. En cualquier caso, es una de las aldeas más grandes de Kodi.</li>
 <li><strong>Tumbas:</strong> las estimaciones van de unas 1.058 tumbas de piedra a unos 1.400 dólmenes, una de las mayores concentraciones de Sumba. Aquí se siguen construyendo tumbas megalíticas. La aldea es dueña de una cantera que proporciona las grandes losas: en 2008, unos 400 hombres arrastraron una losa de unas 16 toneladas a lo largo de unos 5 km.</li>
 <li><strong>Antigüedad:</strong> la prensa indonesia dice que la aldea se remonta al siglo XV, lo que la situaría entre las más antiguas de Sumba; tómalo como tradición, no como una fecha medida.</li>
-<li><strong>Pasola:</strong> el campo de Pasola está junto a la aldea y cobra vida durante el ritual, normalmente en febrero o marzo, cuando los Rato fijan las fechas según la llegada de los gusanos marinos nyale (lee <a href="/es/culture/pasola-explained/">la Pasola explicada</a>).</li>
+<li><strong>Pasola:</strong> el campo de Pasola está junto a la aldea y cobra vida durante el ritual, normalmente en febrero o marzo, cuando los Rato fijan las fechas según la llegada de los gusanos marinos nyale (lee <a href="/es/culture/pasola-explained/">nuestra guía sobre la Pasola</a>).</li>
 </ul>
 <p>En septiembre de 2022 un incendio destruyó aquí 23 casas tradicionales; reconstruirlas con materiales tradicionales lleva años, así que puede que veas casas en obras.</p>
 
 <h2>Cómo llegar a Wainyapu</h2>
 <p>Wainyapu está a unos <strong>55-63 km de Tambolaka</strong>, según la fuente. Calcula alrededor de <strong>1,5-2 horas</strong> en coche.</p>
 <ul>
-<li><strong>Desde Tambolaka (TMC):</strong> coche con conductor, unas 1.000.000-1.500.000 IDR (unos 50-75 EUR / 60-90 USD) al día en 2025-2026; los precios varían. Se recomienda transporte privado.</li>
+<li><strong>Desde Tambolaka (TMC):</strong> coche con conductor, entre 1 y 1,5 millones de rupias (unos 50-75 euros o 60-90 dólares) al día en 2025-2026; los precios varían. Se recomienda transporte privado.</li>
 <li><strong>Transporte público:</strong> minibuses compartidos de Waitabula a Bondo Kodi (alrededor de una hora) y luego un <em>ojek</em>.</li>
 <li><strong>Desde Ratenggaro:</strong> las dos aldeas se miran de frente a ambos lados de la desembocadura. Los hombres del lugar la cruzan a pie, pero el agua puede cubrir mucho; un viajero recomienda el paso que usan mujeres y niños unos 200 m río arriba. Pregunta en el lugar y no cruces si el río va crecido. Rodear por carretera es la opción segura.</li>
 <li><strong>Desde Waingapu (WGP):</strong> unas 4-6 horas por carretera hasta Tambolaka primero; duerme en el oeste.</li>
 </ul>
 
-<h2>Cuándo ir y mejor hora del día</h2>
+<h2>Cuándo ir y a qué hora</h2>
 <p>La temporada seca, aproximadamente de <strong>mayo a septiembre</strong>, tiene las carreteras más fáciles. Las mañanas son más frescas y la luz más suave para las fotos. En época de Pasola la aldea está más animada, pero también es un espacio ritual: sigue las indicaciones de tu guía. Si hay un funeral o un arrastre de tumba, pregunta antes de acercarte; a veces se recibe a los visitantes, pero la decisión es de la familia.</p>
 
 <h2>Consejos y normas de respeto</h2>
 <ul>
-<li><strong>Donativo:</strong> no hay entrada. Firma el libro de visitas y deja unas <strong>20.000 IDR</strong> por persona o más (alrededor de 1,20 EUR / USD, 2025-2026), como en otras aldeas de Kodi.</li>
+<li><strong>Donativo:</strong> no hay entrada. Firma el libro de visitas y deja unas <strong>20.000 rupias</strong> por persona o más (alrededor de 1,20 euros o dólares, 2025-2026), como en otras aldeas de Kodi.</li>
 <li><strong>Guía:</strong> un guía local que conozca a las familias ayuda con las presentaciones, las explicaciones y la posibilidad de pasar la noche, algo que recomiendan autores de viajes.</li>
 <li><strong>Betel:</strong> lleva un poco de betel y nuez de areca (<em>sirih pinang</em>) como regalo de saludo.</li>
 <li><strong>Respeto:</strong> pide permiso antes de fotografiar a la gente o entrar en una casa, viste con recato y nunca te sientes, te subas ni toques las tumbas u objetos rituales.</li>
@@ -955,18 +955,18 @@ GUIDES = [
 </ul>"""
  },
  "id": {
-  "title": "Kampung Adat Wainyapu, Sumba: kubur batu, atap tinggi dan tips",
+  "title": "Kampung Adat Wainyapu, Sumba: kubur batu, atap tinggi, dan tips berkunjung",
   "dek": "Salah satu kampung adat terbesar di Kodi, berhadapan dengan Ratenggaro di seberang muara, dengan ratusan kubur batu dan lapangan Pasola di sisinya: cara berkunjung dengan hati-hati.",
-  "answer": "Wainyapu adalah kampung adat Marapu yang besar di Kodi Balaghar, Sumba Barat Daya, di sisi selatan muara Sungai Luku Lambatama, tepat di seberang Ratenggaro. Jaraknya sekitar 55-63 km dari Tambolaka, kira-kira 1,5-2 jam bermobil, dan dikenal dengan puluhan rumah beratap tinggi, sekitar seribu atau lebih kubur batu megalitik dan lapangan Pasolanya. Tidak ada tiket: isi buku tamu, beri donasi sekitar Rp20.000 atau lebih per orang (2025-2026) dan minta izin sebelum memotret.",
+  "answer": "Wainyapu adalah kampung adat Marapu yang besar di Kodi Balaghar, Sumba Barat Daya, di sisi selatan muara Sungai Luku Lambatama, tepat di seberang Ratenggaro. Jaraknya sekitar 55-63 km dari Tambolaka, kira-kira 1,5-2 jam bermobil, dan dikenal dengan puluhan rumah beratap tinggi, sekitar seribu atau lebih kubur batu megalitik dan lapangan Pasolanya. Tidak ada tiket: isi buku tamu, beri donasi sekitar Rp 20.000 atau lebih per orang (2025-2026) dan minta izin sebelum memotret.",
   "body": """<p>Dari tepi sungai terlihat atap-atap Wainyapu di seberang muara, deretan puncak ilalang tinggi di atas pepohonan rendah dan batu kelabu. Dari dekat kampung ini lebih besar dari kelihatannya: rumah demi rumah berkelompok menurut kabisu (klan), masing-masing dengan kubur batu di depannya, ada yang masih baru dan polos, ada yang tenggelam di rumput dan aus dimakan waktu. Di balik rumah-rumah terbentang lapangan tanah keras, lalu hamparan pasir keemasan dan suara Samudra Hindia.</p>
 <p>Wainyapu menerima lebih sedikit tamu dibanding Ratenggaro, tetangganya di seberang air, tetapi termasuk kampung paling mengesankan di Sumba bagian barat. Begini cara menikmatinya dengan baik dan hormat.</p>
 
 <h2>Apa itu Wainyapu dan mengapa layak dikunjungi</h2>
-<p>Wainyapu (Kampung Adat Wainyapu) berada di Desa Wainyapu, Kecamatan Kodi Balaghar, Sumba Barat Daya, sekitar 8 km dari ujung barat pulau, di sisi selatan muara Sungai Luku Lambatama. Warganya orang Kodi dan banyak yang menganut <strong>Marapu</strong>, kepercayaan leluhur Sumba (baca <a href="/id/culture/marapu-ikat-traditional-villages/">Marapu, ikat dan kampung adat</a>).</p>
+<p>Wainyapu (Kampung Adat Wainyapu) berada di Desa Wainyapu, Kecamatan Kodi Balaghar, Sumba Barat Daya, sekitar 8 km dari ujung barat pulau, di sisi selatan muara Sungai Luku Lambatama. Warganya orang Kodi dan banyak yang menganut <strong>Marapu</strong>, kepercayaan leluhur Sumba (baca <a href="/id/culture/marapu-ikat-traditional-villages/">Marapu, ikat, dan kampung adat</a>).</p>
 <ul>
-<li><strong>Ukuran:</strong> angkanya berbeda-beda. Seorang penulis perjalanan mendengar sekitar 47 rumah dalam kelompok lima sampai tujuh per klan; sebuah laporan Indonesia mencatat sekitar 60 rumah adat <em>uma kalada</em>. Bagaimanapun, ini salah satu kampung terbesar di Kodi.</li>
-<li><strong>Kubur batu:</strong> perkiraannya dari sekitar 1.058 kubur batu hingga sekitar 1.400 dolmen, salah satu konsentrasi tertinggi di Sumba. Kubur megalitik masih dibangun di sini. Kampung ini memiliki tambang batu yang memasok lempengan besar: pada 2008 sebuah lempengan sekitar 16 ton ditarik sejauh kira-kira 5 km oleh sekitar 400 orang.</li>
-<li><strong>Usia:</strong> media Indonesia menyebut kampung ini berasal dari sekitar abad ke-15, sehingga termasuk yang tertua di Sumba; anggaplah ini tradisi lisan, bukan tanggal yang terukur.</li>
+<li><strong>Ukuran:</strong> angkanya berbeda-beda. Seorang penulis perjalanan mendengar sekitar 47 rumah dalam kelompok lima sampai tujuh per klan; sebuah laporan media nasional mencatat sekitar 60 rumah adat <em>uma kalada</em>. Bagaimanapun, ini salah satu kampung terbesar di Kodi.</li>
+<li><strong>Kubur batu:</strong> perkiraannya dari sekitar 1.058 kubur batu hingga sekitar 1.400 dolmen, salah satu konsentrasi tertinggi di Sumba. Kubur megalitik masih dibangun di sini. Kampung ini memiliki tambang batu yang memasok lempengan besar: pada 2008 sekitar 400 orang menarik sebuah lempengan seberat kira-kira 16 ton sejauh sekitar 5 km.</li>
+<li><strong>Usia:</strong> media nasional menyebut kampung ini berasal dari sekitar abad ke-15, sehingga termasuk yang tertua di Sumba; anggaplah ini tradisi lisan, bukan tanggal yang terukur.</li>
 <li><strong>Pasola:</strong> lapangan Pasola berada tepat di samping kampung dan hidup saat ritual berlangsung, biasanya Februari atau Maret, ketika tanggal yang ditetapkan para Rato mengikuti kemunculan nyale (baca <a href="/id/culture/pasola-explained/">penjelasan tentang Pasola</a>).</li>
 </ul>
 <p>Pada September 2022 kebakaran menghanguskan 23 rumah adat di sini; membangun kembali dengan bahan tradisional memakan waktu bertahun-tahun, jadi Anda mungkin melihat rumah yang sedang dibangun.</p>
@@ -974,7 +974,7 @@ GUIDES = [
 <h2>Cara ke Wainyapu</h2>
 <p>Wainyapu berjarak sekitar <strong>55-63 km dari Tambolaka</strong> menurut berbagai sumber. Siapkan kira-kira <strong>1,5-2 jam</strong> bermobil.</p>
 <ul>
-<li><strong>Dari Tambolaka (TMC):</strong> mobil dengan sopir, sekitar Rp1.000.000-1.500.000 (kira-kira EUR 50-75 / USD 60-90) per hari pada 2025-2026; harga bervariasi. Kendaraan pribadi lebih disarankan.</li>
+<li><strong>Dari Tambolaka (TMC):</strong> mobil dengan sopir, sekitar Rp 1.000.000-1.500.000 (kira-kira 50-75 euro atau 60-90 dolar AS) per hari pada 2025-2026; harga bervariasi. Kendaraan pribadi lebih disarankan.</li>
 <li><strong>Angkutan umum:</strong> minibus bersama dari Waitabula ke Bondo Kodi (sekitar satu jam), lalu ojek.</li>
 <li><strong>Dari Ratenggaro:</strong> kedua kampung saling berhadapan di seberang muara. Warga laki-laki menyeberang dengan berjalan kaki, tetapi airnya bisa dalam; seorang wisatawan menyarankan jalur yang dipakai perempuan dan anak-anak sekitar 200 m ke hulu. Tanyakan kepada warga, dan jangan menyeberang saat sungai meluap. Memutar lewat jalan raya adalah pilihan aman.</li>
 <li><strong>Dari Waingapu (WGP):</strong> sekitar 4-6 jam lewat darat ke Tambolaka lebih dulu; menginaplah di wilayah barat.</li>
@@ -985,8 +985,8 @@ GUIDES = [
 
 <h2>Tips dan etika</h2>
 <ul>
-<li><strong>Donasi:</strong> tidak ada tiket. Isi buku tamu dan beri sekitar <strong>Rp20.000</strong> per orang atau lebih (kira-kira EUR/USD 1,20, 2025-2026), seperti di kampung Kodi lainnya.</li>
-<li><strong>Pemandu:</strong> pemandu lokal yang mengenal keluarga di sana membantu perkenalan, penjelasan dan kemungkinan menginap, seperti yang disarankan penulis perjalanan.</li>
+<li><strong>Donasi:</strong> tidak ada tiket. Isi buku tamu dan beri sekitar <strong>Rp 20.000</strong> per orang atau lebih (kira-kira 1,20, euro atau dolar AS 2025-2026), seperti di kampung Kodi lainnya.</li>
+<li><strong>Pemandu:</strong> pemandu lokal yang mengenal keluarga di sana membantu perkenalan, penjelasan, dan kemungkinan menginap, seperti yang disarankan penulis perjalanan.</li>
 <li><strong>Sirih pinang:</strong> bawa sedikit sirih pinang sebagai salam.</li>
 <li><strong>Hormati kampung:</strong> minta izin sebelum memotret orang atau masuk rumah, berpakaian sopan, dan jangan duduk, memanjat atau menyentuh kubur batu maupun benda ritual.</li>
 <li><strong>Keselamatan:</strong> jangan berenang di muara. Waspadai arus kuat saat menyeberang.</li>
@@ -1003,8 +1003,8 @@ GUIDES = [
  },
  "facts": {
   "en": [["Where", "Desa Wainyapu, Kodi Balaghar, Southwest Sumba"], ["From the nearest airport", "Tambolaka (TMC): about 55-63 km, roughly 1.5-2 hours by car"], ["Best time", "Dry season (roughly May-September); February-March for the Pasola (dates vary)"], ["Entry", "Guest book and donation, around IDR 20,000+ per person (2025-2026)"], ["Good for", "Megalithic tombs, traditional houses, Marapu culture, the Pasola"]],
-  "es": [["Dónde", "Desa Wainyapu, Kodi Balaghar, Sumba Suroccidental"], ["Desde el aeropuerto más cercano", "Tambolaka (TMC): unos 55-63 km, alrededor de 1,5-2 horas en coche"], ["Mejor época", "Temporada seca (aprox. mayo-septiembre); febrero-marzo para la Pasola (fechas variables)"], ["Entrada", "Libro de visitas y donativo, unas 20.000 IDR o más por persona (2025-2026)"], ["Ideal para", "Tumbas megalíticas, casas tradicionales, cultura marapu, la Pasola"]],
-  "id": [["Lokasi", "Desa Wainyapu, Kodi Balaghar, Sumba Barat Daya"], ["Dari bandara terdekat", "Tambolaka (TMC): sekitar 55-63 km, kira-kira 1,5-2 jam bermobil"], ["Waktu terbaik", "Musim kemarau (sekitar Mei-September); Februari-Maret untuk Pasola (tanggal berubah)"], ["Tiket masuk", "Buku tamu dan donasi, sekitar Rp20.000 atau lebih per orang (2025-2026)"], ["Cocok untuk", "Kubur megalitik, rumah adat, budaya Marapu, Pasola"]]
+  "es": [["Dónde", "Desa Wainyapu, Kodi Balaghar, Sumba Suroccidental"], ["Desde el aeropuerto más cercano", "Tambolaka (TMC): unos 55-63 km, alrededor de 1,5-2 horas en coche"], ["Mejor época", "Temporada seca (aprox. mayo-septiembre); febrero-marzo para la Pasola (fechas variables)"], ["Entrada", "Libro de visitas y donativo, unas 20.000 rupias o más por persona (2025-2026)"], ["Ideal para", "Tumbas megalíticas, casas tradicionales, cultura marapu, la Pasola"]],
+  "id": [["Lokasi", "Desa Wainyapu, Kodi Balaghar, Sumba Barat Daya"], ["Dari bandara terdekat", "Tambolaka (TMC): sekitar 55-63 km, kira-kira 1,5-2 jam bermobil"], ["Waktu terbaik", "Musim kemarau (sekitar Mei-September); Februari-Maret untuk Pasola (tanggal berubah)"], ["Tiket masuk", "Buku tamu dan donasi, sekitar Rp 20.000 atau lebih per orang (2025-2026)"], ["Cocok untuk", "Kubur megalitik, rumah adat, budaya Marapu, Pasola"]]
  },
  "faq": {
   "en": [
@@ -1017,13 +1017,13 @@ GUIDES = [
    ["¿Cuántas casas y tumbas hay en Wainyapu?", "Las fuentes no coinciden: unas 47-60 casas tradicionales y entre unas 1.000 y 1.400 tumbas de piedra, lo que la convierte en una de las aldeas más grandes de Kodi."],
    ["¿Wainyapu y Ratenggaro son lo mismo?", "No. Son dos aldeas distintas, una frente a otra a ambos lados de la desembocadura del río Luku Lambatama; Ratenggaro en la orilla norte y Wainyapu en la sur."],
    ["¿Cuándo es la Pasola en Wainyapu?", "Normalmente en febrero o marzo. Los Rato fijan las fechas cada año según los gusanos marinos nyale, así que confírmalas en el lugar poco antes."],
-   ["¿Hay que pagar entrada en Wainyapu?", "No hay entrada. Firma el libro de visitas y deja un donativo, unas 20.000 IDR por persona o más en 2025-2026."]
+   ["¿Hay que pagar entrada en Wainyapu?", "No hay entrada. Firma el libro de visitas y deja un donativo, unas 20.000 rupias por persona o más en 2025-2026."]
   ],
   "id": [
    ["Berapa jumlah rumah dan kubur batu di Wainyapu?", "Sumber berbeda-beda: sekitar 47-60 rumah adat dan kira-kira 1.000 sampai 1.400 kubur batu, menjadikannya salah satu kampung terbesar di Kodi."],
    ["Apakah Wainyapu sama dengan Ratenggaro?", "Tidak. Keduanya kampung terpisah yang saling berhadapan di muara Sungai Luku Lambatama; Ratenggaro di sisi utara, Wainyapu di sisi selatan."],
    ["Kapan Pasola di Wainyapu?", "Biasanya Februari atau Maret. Tanggalnya ditetapkan para Rato setiap tahun mengikuti nyale, jadi pastikan kepada warga menjelang waktunya."],
-   ["Apakah ada tiket masuk ke Wainyapu?", "Tidak ada tiket. Isi buku tamu dan beri donasi, sekitar Rp20.000 per orang atau lebih pada 2025-2026."]
+   ["Apakah ada tiket masuk ke Wainyapu?", "Tidak ada tiket. Isi buku tamu dan beri donasi, sekitar Rp 20.000 per orang atau lebih pada 2025-2026."]
   ]
  },
  "places": [{"name": "Wainyapu village", "lat": -9.6310, "lon": 119.0077, "area": "Southwest Sumba"}],
@@ -1090,7 +1090,7 @@ GUIDES = [
  "es": {
   "title": "Kodi, Sumba: aldeas, playas y Pasola en el extremo oeste",
   "dek": "El rincón más occidental de Sumba, donde los altos tejados de paja se asoman al océano Índico: qué es Kodi, cómo llegar, cuándo ir y cómo recorrerlo con respeto.",
-  "answer": "Kodi es la región más occidental de Sumba, en el distrito de Sumba Suroccidental, hogar del pueblo kodi y hoy dividida en cuatro distritos: Kodi, Kodi Utara, Kodi Bangedo y Kodi Balaghar. Su localidad principal, Bondo Kodi, está a una hora en minibús de Tambolaka, y la región reúne la laguna Weekuri, Pero, Ratenggaro, Wainyapu y la Pasola de febrero. Ve en temporada seca (aprox. mayo-septiembre) con coche y conductor, efectivo y una actitud respetuosa en las aldeas.",
+  "answer": "Kodi es la región más occidental de Sumba, en la regencia de Sumba Suroccidental, hogar del pueblo kodi y hoy dividida en cuatro distritos: Kodi, Kodi Utara, Kodi Bangedo y Kodi Balaghar. Su localidad principal, Bondo Kodi, está a una hora en minibús de Tambolaka, y la región reúne la laguna Weekuri, Pero, Ratenggaro, Wainyapu y la Pasola de febrero. Ve en temporada seca (aprox. mayo-septiembre) con coche y conductor, efectivo y una actitud respetuosa en las aldeas.",
   "body": """<p>Si conduces hacia el oeste desde Tambolaka, el terreno se aplana en llanuras de hierba baja y campos de maíz. Luego empiezan los tejados: altos picos de paja sobre las palmeras, una aldea tras otra, tumbas de piedra delante de las casas y niños saludando desde la cuneta. La carretera termina en el océano, donde las olas rompen sobre el arrecife, las canoas de pesca descansan en la arena y, en febrero, las llanuras se llenan de jinetes para la Pasola. Esto es Kodi, el rincón más occidental de Sumba y, para muchos viajeros, el más inolvidable.</p>
 
 <h2>Qué es Kodi y por qué ir</h2>
@@ -1100,26 +1100,26 @@ GUIDES = [
 <ul>
 <li><strong>Aldeas tradicionales</strong> con algunos de los tejados más altos de Sumba y cientos de tumbas megalíticas, todavía en uso y aún en construcción: <a href="/es/places/ratenggaro-village/">Ratenggaro</a> y <a href="/es/places/wainyapu-village/">Wainyapu</a> son las más conocidas.</li>
 <li><strong>Costa:</strong> <a href="/es/places/weekuri-lagoon/">laguna Weekuri</a>, <a href="/es/places/mandorak-beach/">Mandorak</a>, <a href="/es/places/pero-beach/">Pero</a>, <a href="/es/places/bawana-beach/">Bawana</a> y <a href="/es/places/watu-maladong-beach/">Watu Maladong</a>.</li>
-<li><strong>Pasola:</strong> la Pasola de Kodi, una batalla ritual a caballo con lanzas romas, suele celebrarse en febrero, en torno a las ceremonias de los gusanos marinos nyale; los Rato fijan las fechas. Lee <a href="/es/culture/pasola-explained/">la Pasola explicada</a>.</li>
+<li><strong>Pasola:</strong> la Pasola de Kodi, una batalla ritual a caballo con lanzas romas, suele celebrarse en febrero, en torno a las ceremonias de los gusanos marinos nyale; los Rato fijan las fechas. Lee <a href="/es/culture/pasola-explained/">nuestra guía sobre la Pasola</a>.</li>
 <li><strong>Tejidos:</strong> el ikat de Kodi y las telas teñidas con añil se venden en todo Sumba Occidental.</li>
 </ul>
 
 <h2>Cómo llegar a Kodi</h2>
 <p>Kodi empieza a unos 30-40 km al oeste de Tambolaka, y los lugares de la costa quedan a unos <strong>40-63 km</strong> de la ciudad según el sitio. Calcula alrededor de <strong>1-2 horas</strong> por trayecto en coche.</p>
 <ul>
-<li><strong>Coche con conductor desde Tambolaka (TMC):</strong> unas 1.000.000-1.500.000 IDR (unos 50-75 EUR / 60-90 USD) al día en 2025-2026; los precios varían. Es la forma más práctica de enlazar varios lugares en un día. Grab y Gojek no funcionan aquí.</li>
-<li><strong>Minibús público:</strong> minibuses compartidos van de Waitabula a Bondo Kodi en una hora aproximadamente y salen cuando se llenan durante el día; los viajeros han pagado unas 20.000 IDR. Después, <em>ojek</em> hasta playas y aldeas.</li>
+<li><strong>Coche con conductor desde Tambolaka (TMC):</strong> entre 1 y 1,5 millones de rupias (unos 50-75 euros o 60-90 dólares) al día en 2025-2026; los precios varían. Es la forma más práctica de enlazar varios lugares en un día. Grab y Gojek no funcionan aquí.</li>
+<li><strong>Minibús público:</strong> minibuses compartidos van de Waitabula a Bondo Kodi en una hora aproximadamente y salen cuando se llenan durante el día; los viajeros han pagado unas 20.000 rupias. Después, <em>ojek</em> hasta playas y aldeas.</li>
 <li><strong>Moto:</strong> solo para conductores con experiencia; las carreteras pueden ser malas y hay pocas señales.</li>
 <li><strong>Desde Waingapu (WGP):</strong> unas 4-6 horas por carretera hasta Tambolaka primero. Lee <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a>.</li>
 </ul>
 
-<h2>Cuándo ir y mejor hora del día</h2>
+<h2>Cuándo ir y a qué hora</h2>
 <p>La temporada seca, aproximadamente de <strong>mayo a septiembre</strong>, trae las carreteras más fáciles y el agua más clara. Llueve más o menos de octubre o noviembre a abril, y algunas pistas se vuelven lentas tras lluvias fuertes. <strong>Febrero</strong> es el mes de la Pasola en Kodi: inolvidable, pero concurrido, y las fechas pueden cambiar. Empieza pronto, organiza las playas según la marea y vuelve a las carreteras principales antes de que oscurezca: algunos autores de viajes cuentan que los conductores evitan de noche las carreteras aisladas de Kodi.</p>
 
 <h2>Consejos y normas de respeto</h2>
 <ul>
 <li><strong>Efectivo:</strong> no hay cajeros en Kodi. Saca dinero en Tambolaka y lleva billetes pequeños para donativos y aparcamientos.</li>
-<li><strong>Cobros:</strong> las aldeas piden un donativo con libro de visitas, unas 20.000 IDR por persona o más; las playas cobran tarifas informales de unas 10.000-20.000 IDR (2025-2026). Acuerda los importes con educación antes de pagar.</li>
+<li><strong>Cobros:</strong> las aldeas piden un donativo con libro de visitas, unas 20.000 rupias por persona o más; las playas cobran tarifas informales de unas 10.000-20.000 rupias (2025-2026). Acuerda los importes con educación antes de pagar.</li>
 <li><strong>Las aldeas son hogares:</strong> pide permiso para las fotos, viste con recato, nunca toques tumbas ni objetos rituales y lleva <em>sirih pinang</em> (betel y areca) como regalo de saludo. Lee antes <a href="/es/culture/marapu-ikat-traditional-villages/">marapu, ikat y aldeas tradicionales</a>.</li>
 <li><strong>Seguridad en el agua:</strong> muchas playas tienen corrientes fuertes y ningún socorrista, y en los estuarios puede haber cocodrilos.</li>
 <li><strong>Pemali:</strong> algunos lugares son tabú (<em>pemali</em>) para forasteros o para las fotos. Pregunta a tu conductor o guía.</li>
@@ -1133,9 +1133,9 @@ GUIDES = [
 </ul>"""
  },
  "id": {
-  "title": "Kodi, Sumba: kampung adat, pantai dan Pasola di ujung barat",
-  "dek": "Sudut paling barat Pulau Sumba, tempat atap ilalang menjulang bertemu Samudra Hindia: apa itu Kodi, cara ke sana, kapan datang dan cara menjelajahinya dengan hormat.",
-  "answer": "Kodi adalah wilayah paling barat Sumba, di Kabupaten Sumba Barat Daya, tanah orang Kodi yang kini terbagi menjadi empat kecamatan: Kodi, Kodi Utara, Kodi Bangedo dan Kodi Balaghar. Pusatnya, Bondo Kodi, sekitar satu jam naik minibus dari Tambolaka, dan wilayah ini memiliki Danau Weekuri, Pero, Ratenggaro, Wainyapu dan Pasola pada Februari. Datanglah pada musim kemarau (sekitar Mei-September) dengan mobil dan sopir, uang tunai dan sikap hormat di kampung adat.",
+  "title": "Kodi, Sumba: kampung adat, pantai, dan Pasola di ujung barat",
+  "dek": "Sudut paling barat Pulau Sumba, tempat atap ilalang menjulang bertemu Samudra Hindia: apa itu Kodi, cara ke sana, kapan datang, dan cara menjelajahinya dengan hormat.",
+  "answer": "Kodi adalah wilayah paling barat Sumba, di Kabupaten Sumba Barat Daya, tanah orang Kodi yang kini terbagi menjadi empat kecamatan: Kodi, Kodi Utara, Kodi Bangedo, dan Kodi Balaghar. Pusatnya, Bondo Kodi, sekitar satu jam naik minibus dari Tambolaka, dan wilayah ini memiliki Danau Weekuri, Pero, Ratenggaro, Wainyapu dan Pasola pada Februari. Datanglah pada musim kemarau (sekitar Mei-September) dengan mobil dan sopir, uang tunai, serta sikap hormat di kampung adat.",
   "body": """<p>Berkendara ke barat dari Tambolaka, daratan melandai menjadi padang rumput rendah dan ladang jagung. Lalu atap-atap mulai muncul: puncak ilalang tinggi di atas pohon kelapa, satu kampung demi satu kampung, kubur batu di depan rumah dan anak-anak melambai dari pinggir jalan. Jalan berakhir di laut, tempat ombak bergulung di atas karang, perahu nelayan berbaring di pasir, dan pada Februari padang-padang dipenuhi penunggang kuda untuk Pasola. Inilah Kodi, sudut paling barat Sumba dan, bagi banyak wisatawan, yang paling berkesan.</p>
 
 <h2>Apa itu Kodi dan mengapa layak dikunjungi</h2>
@@ -1152,8 +1152,8 @@ GUIDES = [
 <h2>Cara ke Kodi</h2>
 <p>Wilayah Kodi dimulai sekitar 30-40 km di barat Tambolaka, dan objek wisata pesisirnya berjarak sekitar <strong>40-63 km</strong> dari kota, tergantung tempatnya. Siapkan kira-kira <strong>1-2 jam</strong> sekali jalan dengan mobil.</p>
 <ul>
-<li><strong>Mobil dengan sopir dari Tambolaka (TMC):</strong> sekitar Rp1.000.000-1.500.000 (kira-kira EUR 50-75 / USD 60-90) per hari pada 2025-2026; harga bervariasi. Ini cara paling praktis menyambung beberapa tempat dalam sehari. Grab dan Gojek tidak beroperasi di sini.</li>
-<li><strong>Minibus umum:</strong> minibus bersama dari Waitabula ke Bondo Kodi sekitar satu jam, berangkat setelah penuh sepanjang siang; wisatawan melaporkan ongkos sekitar Rp20.000. Lalu naik ojek ke pantai dan kampung.</li>
+<li><strong>Mobil dengan sopir dari Tambolaka (TMC):</strong> sekitar Rp 1.000.000-1.500.000 (kira-kira 50-75 euro atau 60-90 dolar AS) per hari pada 2025-2026; harga bervariasi. Ini cara paling praktis menyambung beberapa tempat dalam sehari. Grab dan Gojek tidak beroperasi di sini.</li>
+<li><strong>Minibus umum:</strong> minibus bersama dari Waitabula ke Bondo Kodi sekitar satu jam, berangkat setelah penuh sepanjang siang; wisatawan melaporkan ongkos sekitar Rp 20.000. Lalu naik ojek ke pantai dan kampung.</li>
 <li><strong>Motor:</strong> hanya untuk pengendara berpengalaman; jalan bisa rusak dan petunjuk arah minim.</li>
 <li><strong>Dari Waingapu (WGP):</strong> sekitar 4-6 jam lewat darat ke Tambolaka lebih dulu. Baca <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a>.</li>
 </ul>
@@ -1164,8 +1164,8 @@ GUIDES = [
 <h2>Tips dan etika</h2>
 <ul>
 <li><strong>Uang tunai:</strong> tidak ada ATM di Kodi. Tarik uang di Tambolaka dan bawa pecahan kecil untuk donasi dan parkir.</li>
-<li><strong>Pungutan:</strong> kampung adat meminta donasi lewat buku tamu, sekitar Rp20.000 per orang atau lebih; pantai memungut biaya tidak resmi sekitar Rp10.000-20.000 (2025-2026). Sepakati jumlahnya dengan sopan sebelum membayar.</li>
-<li><strong>Kampung adalah rumah:</strong> minta izin sebelum memotret, berpakaian sopan, jangan menyentuh kubur atau benda ritual, dan bawa <em>sirih pinang</em> sebagai salam. Baca dulu <a href="/id/culture/marapu-ikat-traditional-villages/">Marapu, ikat dan kampung adat</a>.</li>
+<li><strong>Pungutan:</strong> kampung adat meminta donasi lewat buku tamu, sekitar Rp 20.000 per orang atau lebih; pantai memungut biaya tidak resmi sekitar Rp 10.000-20.000 (2025-2026). Sepakati jumlahnya dengan sopan sebelum membayar.</li>
+<li><strong>Kampung adalah rumah:</strong> minta izin sebelum memotret, berpakaian sopan, jangan menyentuh kubur atau benda ritual, dan bawa <em>sirih pinang</em> sebagai salam. Baca dulu <a href="/id/culture/marapu-ikat-traditional-villages/">Marapu, ikat, dan kampung adat</a>.</li>
 <li><strong>Keselamatan di air:</strong> banyak pantai berarus kuat tanpa penjaga, dan di muara bisa ada buaya.</li>
 <li><strong>Pemali:</strong> sebagian tempat pemali bagi orang luar atau untuk difoto. Tanyakan kepada sopir atau pemandu.</li>
 </ul>
@@ -1179,8 +1179,8 @@ GUIDES = [
  },
  "facts": {
   "en": [["Where", "Far west of Sumba: Kodi, Kodi Utara, Kodi Bangedo and Kodi Balaghar districts, Southwest Sumba"], ["From the nearest airport", "Tambolaka (TMC): about 1 hour to Bondo Kodi; 40-63 km to the coastal sights (1-2 hours)"], ["Best time", "Dry season (roughly May-September); February for the Kodi Pasola (dates vary)"], ["Entry", "No regional fee; village donations around IDR 20,000+, beach fees around IDR 10,000-20,000 (2025-2026)"], ["Good for", "Traditional villages, Marapu culture, beaches, surfing, the Pasola"]],
-  "es": [["Dónde", "Extremo oeste de Sumba: distritos de Kodi, Kodi Utara, Kodi Bangedo y Kodi Balaghar, Sumba Suroccidental"], ["Desde el aeropuerto más cercano", "Tambolaka (TMC): alrededor de 1 hora hasta Bondo Kodi; 40-63 km a los lugares de la costa (1-2 horas)"], ["Mejor época", "Temporada seca (aprox. mayo-septiembre); febrero para la Pasola de Kodi (fechas variables)"], ["Entrada", "Sin tasa regional; donativos en aldeas de unas 20.000 IDR o más, playas unas 10.000-20.000 IDR (2025-2026)"], ["Ideal para", "Aldeas tradicionales, cultura marapu, playas, surf, la Pasola"]],
-  "id": [["Lokasi", "Ujung barat Sumba: Kecamatan Kodi, Kodi Utara, Kodi Bangedo dan Kodi Balaghar, Sumba Barat Daya"], ["Dari bandara terdekat", "Tambolaka (TMC): sekitar 1 jam ke Bondo Kodi; 40-63 km ke objek pesisir (1-2 jam)"], ["Waktu terbaik", "Musim kemarau (sekitar Mei-September); Februari untuk Pasola Kodi (tanggal berubah)"], ["Tiket masuk", "Tidak ada retribusi wilayah; donasi kampung sekitar Rp20.000 atau lebih, pantai sekitar Rp10.000-20.000 (2025-2026)"], ["Cocok untuk", "Kampung adat, budaya Marapu, pantai, selancar, Pasola"]]
+  "es": [["Dónde", "Extremo oeste de Sumba: distritos de Kodi, Kodi Utara, Kodi Bangedo y Kodi Balaghar, Sumba Suroccidental"], ["Desde el aeropuerto más cercano", "Tambolaka (TMC): alrededor de 1 hora hasta Bondo Kodi; 40-63 km a los lugares de la costa (1-2 horas)"], ["Mejor época", "Temporada seca (aprox. mayo-septiembre); febrero para la Pasola de Kodi (fechas variables)"], ["Entrada", "Sin tasa regional; donativos en aldeas de unas 20.000 rupias o más, playas unas 10.000-20.000 rupias (2025-2026)"], ["Ideal para", "Aldeas tradicionales, cultura marapu, playas, surf, la Pasola"]],
+  "id": [["Lokasi", "Ujung barat Sumba: Kecamatan Kodi, Kodi Utara, Kodi Bangedo, dan Kodi Balaghar, Sumba Barat Daya"], ["Dari bandara terdekat", "Tambolaka (TMC): sekitar 1 jam ke Bondo Kodi; 40-63 km ke objek pesisir (1-2 jam)"], ["Waktu terbaik", "Musim kemarau (sekitar Mei-September); Februari untuk Pasola Kodi (tanggal berubah)"], ["Tiket masuk", "Tidak ada retribusi wilayah; donasi kampung sekitar Rp 20.000 atau lebih, pantai sekitar Rp 10.000-20.000 (2025-2026)"], ["Cocok untuk", "Kampung adat, budaya Marapu, pantai, selancar, Pasola"]]
  },
  "faq": {
   "en": [
@@ -1190,13 +1190,13 @@ GUIDES = [
    ["Are there ATMs in Kodi?", "No. Withdraw cash in Tambolaka before you go and carry small notes for donations and fees."]
   ],
   "es": [
-   ["¿Dónde está Kodi en Sumba?", "En el extremo oeste de la isla, en el distrito de Sumba Suroccidental. La antigua zona de Kodi se divide hoy en cuatro distritos: Kodi, Kodi Utara, Kodi Bangedo y Kodi Balaghar."],
+   ["¿Dónde está Kodi en Sumba?", "En el extremo oeste de la isla, en la regencia de Sumba Suroccidental. La antigua zona de Kodi se divide hoy en cuatro distritos: Kodi, Kodi Utara, Kodi Bangedo y Kodi Balaghar."],
    ["¿Cómo llego de Tambolaka a Kodi?", "En coche con conductor (alrededor de 1-2 horas a la mayoría de los lugares) o en minibús compartido de Waitabula a Bondo Kodi (una hora aproximadamente) y luego ojek."],
    ["¿Cuándo es la Pasola en Kodi?", "Normalmente en febrero, en torno a las ceremonias de los gusanos marinos nyale. Los Rato fijan las fechas exactas cada año, así que confírmalas en el lugar poco antes."],
    ["¿Hay cajeros en Kodi?", "No. Saca efectivo en Tambolaka antes de ir y lleva billetes pequeños para donativos y tarifas."]
   ],
   "id": [
-   ["Di mana letak Kodi di Sumba?", "Di ujung barat pulau, di Kabupaten Sumba Barat Daya. Wilayah Kodi lama kini menjadi empat kecamatan: Kodi, Kodi Utara, Kodi Bangedo dan Kodi Balaghar."],
+   ["Di mana letak Kodi di Sumba?", "Di ujung barat pulau, di Kabupaten Sumba Barat Daya. Wilayah Kodi lama kini menjadi empat kecamatan: Kodi, Kodi Utara, Kodi Bangedo, dan Kodi Balaghar."],
    ["Bagaimana cara dari Tambolaka ke Kodi?", "Dengan mobil dan sopir (sekitar 1-2 jam ke sebagian besar objek) atau minibus bersama dari Waitabula ke Bondo Kodi (sekitar satu jam), lalu ojek."],
    ["Kapan Pasola di Kodi?", "Biasanya Februari, bersamaan dengan upacara nyale. Tanggal pastinya ditetapkan para Rato setiap tahun, jadi pastikan kepada warga menjelang waktunya."],
    ["Apakah ada ATM di Kodi?", "Tidak ada. Tarik uang tunai di Tambolaka sebelum berangkat dan bawa pecahan kecil untuk donasi dan pungutan."]
@@ -1261,7 +1261,7 @@ GUIDES = [
  },
  "es": {
   "title": "Playa de Watu Maladong, Sumba: islotes de roca, mareas y acceso",
-  "dek": "Torres de caliza que emergen de una bahía turquesa en la costa sur de Kodi, una con un arco bajo el que se camina con marea baja: cómo llegar y cómo ir seguro.",
+  "dek": "Torres de caliza que emergen de una bahía turquesa en la costa sur de Kodi, una con un arco bajo el que se camina con marea baja: cómo llegar y cómo visitarla con seguridad.",
   "answer": "Watu Maladong (también escrito Watu Malandong o Watu Malando) es una playa en Desa Panenggo Ede, Kodi Balaghar, Sumba Suroccidental, conocida por un grupo de islotes de caliza, el mayor de forma triangular y con un arco. Está a unos 57-65 km de Tambolaka, alrededor de 1,5-2 horas en coche, y solo se llega en transporte privado. Ve con marea baja y en temporada seca, no te bañes (hay corrientes fuertes) y vuelve antes de que oscurezca.",
   "body": """<p>La carretera termina sobre una pequeña bahía y ahí están: altos bloques de caliza pálida plantados en el mar como los restos de un muro roto, con la base rodeada de espuma blanca y la cima verde de matorral. El más grande es un triángulo tosco y, con marea baja, el agua se retira de la arena a su alrededor y se puede caminar hasta él y ponerse bajo su arco, oyendo el eco de las olas dentro de la roca. A tu espalda, un río se desliza hacia el mar entre palmeras.</p>
 <p>Watu Maladong es uno de los paisajes costeros más espectaculares del oeste de Sumba y todavía poco visitado. Aquí te explicamos cómo llegar, cuándo ir y cómo visitarlo con seguridad.</p>
@@ -1274,18 +1274,18 @@ GUIDES = [
 <h2>Cómo llegar a Watu Maladong</h2>
 <p>Watu Maladong está a unos <strong>57-65 km de Tambolaka</strong>, según la fuente y la ruta. Calcula alrededor de <strong>1,5-2 horas</strong> por trayecto en coche. La carretera es larga y sinuosa, casi toda asfaltada, y las señales no siempre llevan hasta el final; una carretera más nueva baja hasta la playa.</p>
 <ul>
-<li><strong>Desde Tambolaka (TMC):</strong> coche con conductor, unas 1.000.000-1.500.000 IDR (unos 50-75 EUR / 60-90 USD) al día en 2025-2026; los precios varían. El transporte privado es la opción práctica.</li>
+<li><strong>Desde Tambolaka (TMC):</strong> coche con conductor, entre 1 y 1,5 millones de rupias (unos 50-75 euros o 60-90 dólares) al día en 2025-2026; los precios varían. El transporte privado es la opción práctica.</li>
 <li><strong>Transporte público:</strong> hay minibuses hacia Walandimu y luego un <em>ojek</em> hasta la playa; es lento y poco recomendable para una excursión de un día. Un mototaxista local que conozca el camino también ayuda.</li>
 <li><strong>Desde Waingapu (WGP):</strong> unas 4-6 horas por carretera hasta Tambolaka primero; duerme una noche en el oeste.</li>
 </ul>
 <p>Watu Maladong se combina fácilmente con la <a href="/es/places/bawana-beach/">playa de Bawana</a>, un poco más al oeste por la misma costa.</p>
 
-<h2>Cuándo ir y mejor hora del día</h2>
+<h2>Cuándo ir y a qué hora</h2>
 <p>La temporada seca, aproximadamente de <strong>mayo a septiembre</strong>, tiene las carreteras más fáciles. Más importante es la marea: lo mejor es la <strong>marea baja</strong>, cuando se puede caminar hasta la gran roca triangular y su arco. Mira una tabla de mareas antes de salir de Tambolaka. La costa mira al sur y al oeste, así que a última hora de la tarde la luz es cálida, pero organízate para dejar las carreteras aisladas de Kodi antes de que oscurezca: según algunos autores de viajes, los conductores locales prefieren no circular aquí de noche.</p>
 
 <h2>Consejos y normas de respeto</h2>
 <ul>
-<li><strong>Cobros:</strong> no hay entrada oficial publicada. Cuenta con tarifas informales de aparcamiento o acceso parecidas a las de otras playas de Kodi, unas 10.000-20.000 IDR (2025-2026). Lleva billetes pequeños.</li>
+<li><strong>Cobros:</strong> no hay entrada oficial publicada. Cuenta con tarifas informales de aparcamiento o acceso parecidas a las de otras playas de Kodi, unas 10.000-20.000 rupias (2025-2026). Lleva billetes pequeños.</li>
 <li><strong>No te bañes:</strong> las corrientes son fuertes y no hay socorristas. Mójate solo en orillas tranquilas y vigila la subida de la marea cuando camines hacia las rocas para no quedarte aislado.</li>
 <li><strong>Escalada:</strong> la caliza es cortante y puede estar suelta. Escala solo con experiencia y calzado adecuado.</li>
 <li><strong>Qué llevar:</strong> agua, algo de comer, protección solar y efectivo; los servicios son mínimos o inexistentes.</li>
@@ -1301,21 +1301,21 @@ GUIDES = [
 </ul>"""
  },
  "id": {
-  "title": "Pantai Watu Maladong, Sumba: pulau batu, pasang surut dan akses",
+  "title": "Pantai Watu Maladong, Sumba: pulau batu, pasang surut, dan akses",
   "dek": "Menara batu kapur yang muncul dari teluk toska di pesisir selatan Kodi, salah satunya berlubang dan bisa dilewati saat surut: cara ke sana dan cara tetap aman.",
   "answer": "Watu Maladong (juga ditulis Watu Malandong atau Watu Malando) adalah pantai di Desa Panenggo Ede, Kodi Balaghar, Sumba Barat Daya, terkenal dengan gugusan pulau batu kapur, yang terbesar berbentuk segitiga dan berlubang. Jaraknya sekitar 57-65 km dari Tambolaka, kira-kira 1,5-2 jam bermobil, dan hanya bisa dicapai dengan kendaraan pribadi. Datanglah saat surut pada musim kemarau, jangan berenang (arusnya kuat) dan pulang sebelum gelap.",
   "body": """<p>Jalan berakhir di atas teluk kecil, dan di sanalah mereka: bongkahan batu kapur pucat yang tinggi berdiri di laut seperti sisa tembok yang runtuh, kakinya dikelilingi buih putih, puncaknya hijau oleh semak. Yang terbesar berbentuk segitiga kasar, dan saat surut air menyusut dari pasir di sekelilingnya sehingga Anda bisa berjalan ke sana dan berdiri di bawah lengkungannya, mendengar gema ombak di dalam batu. Di belakang Anda, sebuah sungai mengalir ke laut di antara pohon kelapa.</p>
-<p>Watu Maladong adalah salah satu lanskap pesisir paling dramatis di Sumba bagian barat, dan masih jarang dikunjungi. Halaman ini menjelaskan cara ke sana, kapan datang dan cara berkunjung dengan aman.</p>
+<p>Watu Maladong adalah salah satu lanskap pesisir paling dramatis di Sumba bagian barat, dan masih jarang dikunjungi. Halaman ini menjelaskan cara ke sana, kapan datang, dan cara berkunjung dengan aman.</p>
 
 <h2>Apa itu Watu Maladong dan mengapa layak dikunjungi</h2>
 <p>Watu Maladong berada di Desa Panenggo Ede, Kecamatan Kodi Balaghar, Sumba Barat Daya, dekat muara sungai di pesisir selatan wilayah Kodi. Daya tarik utamanya adalah gugusan pulau karst batu kapur di dekat pantai: penulis perjalanan menghitung lima (atau empat pulau dan satu batu besar). Yang terbesar berbentuk segitiga, nama lokalnya merujuk pada bentuk itu, dan ada lengkungan yang bisa Anda masuki sambil berdiri. Batu lainnya konon mirip rumah adat Sumba dengan empat tiang. Tidak ada satu titik pandang yang memperlihatkan semuanya: dari teluk kecil di ujung jalan terlihat dua, dari pantai di tepi sungai terlihat empat.</p>
-<p>Nama ini juga milik sebuah legenda Sumba. Dalam sastra lisan, <em>Watu Maladong</em> adalah batu bertuah yang mendatangkan kesuburan tanah, panen dan mata air di negeri sabana yang kering; kisahnya mempertemukan petani yang gigih dengan kepala kampung yang menyalahgunakan kesaktian, dibantu seorang perempuan tua. Layak diketahui sambil memandangi batu-batunya.</p>
+<p>Nama ini juga milik sebuah legenda Sumba. Dalam sastra lisan, <em>Watu Maladong</em> adalah batu bertuah yang mendatangkan kesuburan tanah, panen, dan mata air di negeri sabana yang kering; kisahnya mempertemukan petani yang gigih dengan kepala kampung yang menyalahgunakan kesaktian, dibantu seorang perempuan tua. Layak diketahui sambil memandangi batu-batunya.</p>
 <p>Batu-batu besar menarik minat pemanjat tebing, dan teluknya tempat yang luar biasa untuk menyaksikan perubahan cahaya. Ini bukan pantai untuk berenang.</p>
 
 <h2>Cara ke Watu Maladong</h2>
 <p>Watu Maladong berjarak sekitar <strong>57-65 km dari Tambolaka</strong>, tergantung sumber dan rutenya. Siapkan kira-kira <strong>1,5-2 jam</strong> sekali jalan dengan mobil. Jalannya panjang dan berkelok, sebagian besar beraspal, dan papan petunjuk tidak selalu mengantar sampai tujuan; jalan yang lebih baru turun sampai ke pantai.</p>
 <ul>
-<li><strong>Dari Tambolaka (TMC):</strong> mobil dengan sopir, sekitar Rp1.000.000-1.500.000 (kira-kira EUR 50-75 / USD 60-90) per hari pada 2025-2026; harga bervariasi. Kendaraan pribadi adalah pilihan yang praktis.</li>
+<li><strong>Dari Tambolaka (TMC):</strong> mobil dengan sopir, sekitar Rp 1.000.000-1.500.000 (kira-kira 50-75 euro atau 60-90 dolar AS) per hari pada 2025-2026; harga bervariasi. Kendaraan pribadi adalah pilihan yang praktis.</li>
 <li><strong>Angkutan umum:</strong> ada minibus ke arah Walandimu, lalu ojek ke pantai; lambat dan kurang cocok untuk perjalanan sehari. Tukang ojek lokal yang tahu jalan juga sangat membantu.</li>
 <li><strong>Dari Waingapu (WGP):</strong> sekitar 4-6 jam lewat darat ke Tambolaka lebih dulu; rencanakan menginap di wilayah barat.</li>
 </ul>
@@ -1326,10 +1326,10 @@ GUIDES = [
 
 <h2>Tips dan etika</h2>
 <ul>
-<li><strong>Pungutan:</strong> tidak ada tiket resmi yang diumumkan. Siapkan biaya parkir atau masuk tidak resmi seperti di pantai Kodi lainnya, sekitar Rp10.000-20.000 (2025-2026). Bawa uang pecahan kecil.</li>
+<li><strong>Pungutan:</strong> tidak ada tiket resmi yang diumumkan. Siapkan biaya parkir atau masuk tidak resmi seperti di pantai Kodi lainnya, sekitar Rp 10.000-20.000 (2025-2026). Bawa uang pecahan kecil.</li>
 <li><strong>Jangan berenang:</strong> arusnya kuat dan tidak ada penjaga pantai. Bermain air hanya di bagian dangkal yang tenang, dan perhatikan air pasang saat berjalan ke batu agar tidak terjebak.</li>
 <li><strong>Memanjat:</strong> batu kapurnya tajam dan bisa rapuh. Panjat hanya jika berpengalaman dan memakai alas kaki yang tepat.</li>
-<li><strong>Yang perlu dibawa:</strong> air minum, camilan, pelindung matahari dan uang tunai; fasilitas minim atau tidak ada.</li>
+<li><strong>Yang perlu dibawa:</strong> air minum, camilan, pelindung matahari, dan uang tunai; fasilitas minim atau tidak ada.</li>
 <li><strong>Hormati tempat ini:</strong> tanah ini milik keluarga setempat dan sebagian tempat di pesisir Sumba bersifat <em>pemali</em>. Tanyakan kepada sopir, bawa pulang sampah dan minta izin sebelum memotret orang.</li>
 </ul>
 
@@ -1338,13 +1338,13 @@ GUIDES = [
 <li><a href="/id/places/bawana-beach/">Pantai Bawana (Mbawana)</a>: tebing dan pasir keemasan sedikit ke barat.</li>
 <li><a href="/id/places/wainyapu-village/">Kampung Wainyapu</a>: kurang dari 20 km ke barat, dengan ratusan kubur batu.</li>
 <li><a href="/id/places/ratenggaro-village/">Kampung Ratenggaro</a>: di seberang muara dari Wainyapu.</li>
-<li><a href="/id/places/kodi/">Kodi</a>: wilayahnya, kampung-kampungnya dan Pasola.</li>
+<li><a href="/id/places/kodi/">Kodi</a>: wilayahnya, kampung-kampungnya, dan Pasola.</li>
 </ul>"""
  },
  "facts": {
   "en": [["Where", "Desa Panenggo Ede, Kodi Balaghar, Southwest Sumba"], ["From the nearest airport", "Tambolaka (TMC): roughly 57-65 km, about 1.5-2 hours by car"], ["Best time", "Dry season (roughly May-September), at low tide, leaving before dark"], ["Entry", "No published ticket; a small informal fee may be asked"], ["Good for", "Rock formations, photography, low-tide walks, experienced climbers"]],
   "es": [["Dónde", "Desa Panenggo Ede, Kodi Balaghar, Sumba Suroccidental"], ["Desde el aeropuerto más cercano", "Tambolaka (TMC): unos 57-65 km, alrededor de 1,5-2 horas en coche"], ["Mejor época", "Temporada seca (aprox. mayo-septiembre), con marea baja, volviendo antes de que oscurezca"], ["Entrada", "Sin entrada publicada; puede que pidan una pequeña aportación informal"], ["Ideal para", "Formaciones rocosas, fotografía, paseos con marea baja, escaladores con experiencia"]],
-  "id": [["Lokasi", "Desa Panenggo Ede, Kodi Balaghar, Sumba Barat Daya"], ["Dari bandara terdekat", "Tambolaka (TMC): sekitar 57-65 km, kira-kira 1,5-2 jam bermobil"], ["Waktu terbaik", "Musim kemarau (sekitar Mei-September), saat surut, pulang sebelum gelap"], ["Tiket masuk", "Tidak ada tiket resmi; mungkin ada pungutan kecil tidak resmi)"], ["Cocok untuk", "Formasi batu, fotografi, jalan-jalan saat surut, pemanjat berpengalaman"]]
+  "id": [["Lokasi", "Desa Panenggo Ede, Kodi Balaghar, Sumba Barat Daya"], ["Dari bandara terdekat", "Tambolaka (TMC): sekitar 57-65 km, kira-kira 1,5-2 jam bermobil"], ["Waktu terbaik", "Musim kemarau (sekitar Mei-September), saat surut, pulang sebelum gelap"], ["Tiket masuk", "Tidak ada tiket resmi; mungkin ada pungutan kecil tidak resmi"], ["Cocok untuk", "Formasi batu, fotografi, jalan-jalan saat surut, pemanjat berpengalaman"]]
  },
  "faq": {
   "en": [
@@ -1363,7 +1363,7 @@ GUIDES = [
    ["Apakah bisa berenang di Pantai Watu Maladong?", "Tidak disarankan. Arusnya kuat dan tidak ada penjaga pantai; cukup bermain air di bagian dangkal yang tenang."],
    ["Kapan waktu terbaik ke Watu Maladong?", "Saat surut, ketika Anda bisa berjalan ke batu segitiga besar dan berdiri di bawah lengkungannya, idealnya pada musim kemarau (sekitar Mei-September)."],
    ["Berapa jarak Watu Maladong dari Tambolaka?", "Sekitar 57-65 km, kira-kira 1,5-2 jam bermobil. Kendaraan pribadi adalah pilihan yang praktis."],
-   ["Apa arti Watu Maladong?", "Nama batu bertuah dalam legenda Sumba yang mendatangkan kesuburan tanah, panen dan mata air di negeri sabana yang kering; pantai ini mengambil namanya dari batu itu."]
+   ["Apa arti Watu Maladong?", "Nama batu bertuah dalam legenda Sumba yang mendatangkan kesuburan tanah, panen, dan mata air di negeri sabana yang kering; pantai ini mengambil namanya dari batu itu."]
   ]
  },
  "places": [{"name": "Watu Maladong Beach", "lat": -9.7138, "lon": 119.1020, "area": "Southwest Sumba"}],
@@ -1431,20 +1431,20 @@ GUIDES = [
 <p>Kerewe es una de las playas más tranquilas de la costa de Lamboya, en Sumba Occidental, apreciada por surfistas y por viajeros que buscan alojamiento sencillo en casas locales y arena vacía. Esto es lo que conviene saber.</p>
 
 <h2>Qué es la playa de Kerewe y por qué ir</h2>
-<p>Kerewe está en la zona de Lamboya, en <strong>Sumba Occidental</strong> (distrito de Sumba Barat), cerca de la aldea de Patiala Bawa y de la playa de Marosi, a una hora a pie. La arena es clara, algo más gris que en las playas vecinas, aunque algunos lugareños la llaman arena negra. En el extremo oeste se levanta un grupo de islotes kársticos espectaculares; el mayor es popular para trepar y ofrece vistas de agua cristalina y un pequeño arrecife. Si caminas al oeste y subes la colina de hierba, llegas a un mirador sobre pequeñas calas escondidas. Verás secaderos de algas, un campo de fútbol bajo las palmeras y un pequeño quiosco que vende bebidas y gasolina.</p>
+<p>Kerewe está en la zona de Lamboya, en <strong>Sumba Occidental</strong> (regencia de Sumba Barat), cerca de la aldea de Patiala Bawa y de la playa de Marosi, a una hora a pie. La arena es clara, algo más gris que en las playas vecinas, aunque algunos lugareños la llaman arena negra. En el extremo oeste se levanta un grupo de islotes kársticos espectaculares; el mayor es popular para trepar y ofrece vistas de agua cristalina y un pequeño arrecife. Si caminas al oeste y subes la colina de hierba, llegas a un mirador sobre pequeñas calas escondidas. Verás secaderos de algas, un campo de fútbol bajo las palmeras y un pequeño quiosco que vende bebidas y gasolina.</p>
 <p><strong>El surf:</strong> Kerewe es conocida sobre todo por una derecha de arrecife de unos 500 m. Funciona con mar de fondo del sureste al suroeste desde unos 2 pies, mejor con marea media y viento del norte; la marea baja deja el arrecife somero al descubierto. Las guías de surf la recomiendan para nivel intermedio y avanzado y advierten de que las olas de Sumba son gruesas y potentes. Lee nuestra guía de <a href="/es/things-to-do/surfing-in-sumba/">surf en Sumba</a>.</p>
 
 <h2>Cómo llegar a la playa de Kerewe</h2>
 <p>Kerewe está en el suroeste de Sumba Occidental, a unos <strong>70 km de Tambolaka</strong>, como la vecina Marosi. Calcula alrededor de <strong>1,5-2 horas</strong> en coche. Los últimos kilómetros son pistas de tierra y un camino de arena, transitables en moto o coche en temporada seca.</p>
 <ul>
-<li><strong>Desde Tambolaka (TMC):</strong> coche con conductor, unas 1.000.000-1.500.000 IDR (unos 50-75 EUR / 60-90 USD) al día en 2025-2026; los precios varían.</li>
+<li><strong>Desde Tambolaka (TMC):</strong> coche con conductor, entre 1 y 1,5 millones de rupias (unos 50-75 euros o 60-90 dólares) al día en 2025-2026; los precios varían.</li>
 <li><strong>Desde Waikabubak:</strong> la capital de Sumba Occidental es la ciudad más cercana con cajeros y tiendas; ve hacia el sur, hacia Lamboya, y pregunta el camino en la zona.</li>
-<li><strong>Transporte local:</strong> hay <em>ojeks</em> (mototaxis) en Wanokaka y Lamboya; un viajero pagó unas 50.000 IDR por un ojek de Wanokaka a Marosi (precio de 2017, hoy probablemente más alto).</li>
+<li><strong>Transporte local:</strong> hay <em>ojeks</em> (mototaxis) en Wanokaka y Lamboya; un viajero pagó unas 50.000 rupias por un ojek de Wanokaka a Marosi (precio de 2017, hoy probablemente más alto).</li>
 <li><strong>Desde Waingapu (WGP):</strong> unas 4-5 horas por carretera hasta Waikabubak y luego al sur, hacia la costa.</li>
 </ul>
 
-<h2>Cuándo ir y mejor hora del día</h2>
-<p>La temporada seca, aproximadamente de <strong>mayo a septiembre</strong>, trae pistas secas y el mar de fondo del suroeste más fiable; algunas guías de surf sugieren el inicio de temporada, de marzo a junio aproximadamente, para las olas al este de Bali. Para surfear, busca la marea media y las primeras horas, antes de que suba el viento. En <strong>febrero</strong> suele celebrarse en esta zona la Pasola de Lamboya, con fechas fijadas por los ancianos (lee <a href="/es/culture/pasola-explained/">la Pasola explicada</a>). Al final de la tarde, la colina sobre las calas del oeste es preciosa para el atardecer.</p>
+<h2>Cuándo ir y a qué hora</h2>
+<p>La temporada seca, aproximadamente de <strong>mayo a septiembre</strong>, trae pistas secas y el mar de fondo del suroeste más fiable; algunas guías de surf sugieren el inicio de temporada, de marzo a junio aproximadamente, para las olas al este de Bali. Para surfear, busca la marea media y las primeras horas, antes de que suba el viento. En <strong>febrero</strong> suele celebrarse en esta zona la Pasola de Lamboya, con fechas fijadas por los ancianos (lee <a href="/es/culture/pasola-explained/">nuestra guía sobre la Pasola</a>). Al final de la tarde, la colina sobre las calas del oeste es preciosa para el atardecer.</p>
 
 <h2>Consejos y normas de respeto</h2>
 <ul>
@@ -1466,7 +1466,7 @@ GUIDES = [
 </ul>"""
  },
  "id": {
-  "title": "Pantai Kerewe, Sumba: ombak, pulau karst dan teluk sepi di Lamboya",
+  "title": "Pantai Kerewe, Sumba: ombak, pulau karst, dan teluk sepi di Lamboya",
   "dek": "Ombak kanan yang panjang, pulau batu di ujung barat dan teluk tersembunyi di balik bukit: seperti apa Kerewe (Kerewei), cara ke sana dan apa yang perlu diketahui.",
   "answer": "Kerewe (juga ditulis Kerewei atau Kerewee) adalah pantai di Lamboya, Sumba Barat, dekat Marosi di pesisir barat daya pulau, terkenal dengan ombak kanan panjang di atas karang dan pulau-pulau batu kapur di ujung baratnya. Jaraknya sekitar 70 km dari Tambolaka, kira-kira 1,5-2 jam bermobil, dengan bagian akhir berupa jalan tanah. Peselancar datang pada musim kemarau (sekitar April-Oktober) saat pasang sedang; ombaknya untuk tingkat menengah dan mahir, bukan pemula.",
   "body": """<p>Jalan tanah menurun di antara pohon kelapa dan berhenti di pasir. Di barat, gugusan pulau batu kapur kelabu berdiri di air jernih di atas karang kecil; di timur, pantai melengkung panjang dan pucat. Di ujung tanjung, ombak kanan bergulung seolah tak ada habisnya, dan yang terdengar hanya ombak, angin di pucuk kelapa dan sesekali motor yang membawa rumput laut pulang dari para-para jemuran.</p>
@@ -1479,9 +1479,9 @@ GUIDES = [
 <h2>Cara ke Pantai Kerewe</h2>
 <p>Kerewe berada di barat daya Sumba Barat, sekitar <strong>70 km dari Tambolaka</strong>, mirip dengan Marosi di sebelahnya. Siapkan kira-kira <strong>1,5-2 jam</strong> bermobil. Beberapa kilometer terakhir berupa jalan tanah dan jalur berpasir, bisa dilalui motor atau mobil pada musim kemarau.</p>
 <ul>
-<li><strong>Dari Tambolaka (TMC):</strong> mobil dengan sopir, sekitar Rp1.000.000-1.500.000 (kira-kira EUR 50-75 / USD 60-90) per hari pada 2025-2026; harga bervariasi.</li>
+<li><strong>Dari Tambolaka (TMC):</strong> mobil dengan sopir, sekitar Rp 1.000.000-1.500.000 (kira-kira 50-75 euro atau 60-90 dolar AS) per hari pada 2025-2026; harga bervariasi.</li>
 <li><strong>Dari Waikabubak:</strong> ibu kota Sumba Barat adalah kota terdekat dengan ATM dan toko; arahkan ke selatan menuju Lamboya dan tanyakan jalan kepada warga.</li>
-<li><strong>Transportasi lokal:</strong> ojek tersedia dari Wanokaka dan Lamboya; seorang wisatawan membayar sekitar Rp50.000 untuk ojek dari Wanokaka ke Marosi (harga tahun 2017, kemungkinan kini lebih mahal).</li>
+<li><strong>Transportasi lokal:</strong> ojek tersedia dari Wanokaka dan Lamboya; seorang wisatawan membayar sekitar Rp 50.000 untuk ojek dari Wanokaka ke Marosi (harga tahun 2017, kemungkinan kini lebih mahal).</li>
 <li><strong>Dari Waingapu (WGP):</strong> sekitar 4-5 jam lewat darat ke Waikabubak, lalu ke selatan menuju pesisir.</li>
 </ul>
 
@@ -1521,12 +1521,12 @@ GUIDES = [
   ],
   "es": [
    ["¿Kerewe y Kerewei son lo mismo?", "Sí. Kerewe, Kerewei y Kerewee son grafías de la misma playa de Lamboya, en Sumba Occidental."],
-   ["¿Kerewe es buena para surfistas principiantes?", "No. La derecha de arrecife es para nivel intermedio y avanzado; con marea baja queda al descubierto un arrecife somero y las olas son potentes."],
+   ["¿Es Kerewe un buen sitio para surfistas principiantes?", "No. La derecha de arrecife es para nivel intermedio y avanzado; con marea baja queda al descubierto un arrecife somero y las olas son potentes."],
    ["¿A qué distancia está la playa de Kerewe del aeropuerto de Tambolaka?", "A unos 70 km, alrededor de 1,5-2 horas en coche, con el último tramo por pistas de tierra."],
    ["¿Hay que pagar entrada en la playa de Kerewe?", "No se conoce entrada para la playa en sí. Lleva algo de efectivo para aparcamiento o aportaciones locales."]
   ],
   "id": [
-   ["Apakah Kerewe sama dengan Kerewei?", "Ya. Kerewe, Kerewei dan Kerewee adalah ejaan untuk pantai yang sama di Lamboya, Sumba Barat."],
+   ["Apakah Kerewe sama dengan Kerewei?", "Ya. Kerewe, Kerewei, dan Kerewee adalah ejaan untuk pantai yang sama di Lamboya, Sumba Barat."],
    ["Apakah Kerewe cocok untuk peselancar pemula?", "Tidak. Ombak kanan di atas karang ini untuk tingkat menengah dan mahir; saat surut karang dangkal terbuka dan ombaknya bertenaga."],
    ["Berapa jarak Pantai Kerewe dari Bandara Tambolaka?", "Sekitar 70 km, kira-kira 1,5-2 jam bermobil, dengan bagian akhir berupa jalan tanah."],
    ["Apakah ada tiket masuk ke Pantai Kerewe?", "Belum ada laporan tiket masuk untuk pantainya. Bawa uang tunai kecil untuk parkir atau sumbangan setempat."]
@@ -1602,8 +1602,8 @@ GUIDES = [
   "body": """<p>El avión baja sobre una costa de caliza pálida y colinas verdes y aterriza en una pista flanqueada por hierba y caballos pastando. Diez minutos después estás en la ciudad: motos zigzagueando entre minibuses, una campana de iglesia, olor a cigarrillos de clavo y maíz asado, y un mercado donde mujeres con sarongs de ikat venden betel, pescado seco y manojos de verdura. Tambolaka no es una ciudad bonita, pero es animada, amable y el corazón práctico del oeste de Sumba.</p>
 <p>La mayoría de los viajeros la usa solo como lugar de paso. Aquí te contamos qué hay, cómo moverse y qué merece unas horas antes de salir.</p>
 
-<h2>Qué es Tambolaka y por qué parar</h2>
-<p>Tambolaka es la capital del distrito de Sumba Suroccidental, creado en 2007 a partir de Sumba Occidental. La ciudad se conoció durante mucho tiempo por su nombre local, <strong>Waitabula</strong> (también Weetabula), y el nombre de Tambolaka se extendió con el aeropuerto. El distrito de Kota Tambolaka tenía unos 36.000 habitantes en el censo de 2020 y unos 38.000 estimados en 2025.</p>
+<h2>Qué es Tambolaka y por qué detenerse</h2>
+<p>Tambolaka es la capital de la regencia de Sumba Suroccidental, creado en 2007 a partir de Sumba Occidental. La ciudad se conoció durante mucho tiempo por su nombre local, <strong>Waitabula</strong> (también Weetabula), y el nombre de Tambolaka se extendió con el aeropuerto. El distrito de Kota Tambolaka tenía unos 36.000 habitantes en el censo de 2020 y unos 38.000 estimados en 2025.</p>
 <ul>
 <li><strong>El aeropuerto:</strong> Tambolaka (TMC), también llamado Lede Kalumbang, está al norte de la ciudad, a unos 1,5 km del centro de Waitabula. Wings Air vuela varias veces al día desde Bali (alrededor de 1 h 30). Lee <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a>.</li>
 <li><strong>El mercado:</strong> Waitabula tiene lo que las guías locales describen como el mayor mercado permanente de Sumba, centro comercial de las aldeas del oeste.</li>
@@ -1613,14 +1613,14 @@ GUIDES = [
 
 <h2>Cómo llegar y moverse por Tambolaka</h2>
 <ul>
-<li><strong>Desde el aeropuerto:</strong> ojek al centro por unas 10.000 IDR o taxi compartido por unas 30.000 IDR por persona, según viajeros (los precios varían; acuérdalo antes). Grab y Gojek no funcionan aquí.</li>
-<li><strong>A Kodi:</strong> minibuses compartidos a Bondo Kodi en una hora aproximadamente (unas 20.000 IDR), que salen cuando se llenan durante el día. Weekuri, Pero y Ratenggaro quedan a unos 40-56 km, 1-2 horas en coche.</li>
-<li><strong>A Waikabubak:</strong> minibuses en alrededor de 1,5 horas (unas 15.000 IDR).</li>
+<li><strong>Desde el aeropuerto:</strong> ojek al centro por unas 10.000 rupias o taxi compartido por unas 30.000 rupias por persona, según viajeros (los precios varían; acuérdalo antes). Grab y Gojek no funcionan aquí.</li>
+<li><strong>A Kodi:</strong> minibuses compartidos a Bondo Kodi en una hora aproximadamente (unas 20.000 rupias), que salen cuando se llenan durante el día. Weekuri, Pero y Ratenggaro quedan a unos 40-56 km, 1-2 horas en coche.</li>
+<li><strong>A Waikabubak:</strong> minibuses en alrededor de 1,5 horas (unas 15.000 rupias).</li>
 <li><strong>Desde Waingapu (WGP):</strong> autobuses diarios y coches compartidos "travel" unen las dos ciudades por Waikabubak en unas 4-6 horas.</li>
-<li><strong>Coche con conductor:</strong> unas 1.000.000-1.500.000 IDR al día (unos 50-75 EUR / 60-90 USD) en 2025-2026; moto, unas 150.000-200.000 IDR al día.</li>
+<li><strong>Coche con conductor:</strong> entre 1 y 1,5 millones de rupias al día (unos 50-75 euros o 60-90 dólares) en 2025-2026; moto, unas 150.000-200.000 rupias al día.</li>
 </ul>
 
-<h2>Cuándo ir y mejor hora del día</h2>
+<h2>Cuándo ir y a qué hora</h2>
 <p>La temporada seca, aproximadamente de <strong>mayo a septiembre</strong>, es la más cómoda para las excursiones. El mercado está más animado por la mañana. Para el atardecer, la colina de sabana de <strong>Bukit Lendongara</strong>, al este de la ciudad, está verde en la temporada de lluvias y dorada en los meses secos, con vistas al mar; no hay entrada oficial, solo un pequeño donativo o el aparcamiento.</p>
 <p>Otras escapadas cortas: <strong>la playa de Newa</strong> (a unos 5 km del aeropuerto), <strong>la playa de Oro</strong> (a unos 9 km) y <strong>Pantai Kita (Mananga Aba)</strong>, una larga playa de arena blanca a unos 20 km del aeropuerto. La <strong>Rumah Budaya Sumba</strong>, centro cultural y museo a unos 2-3 km al oeste de Waitabula por la carretera de Pero, la fundó el padre Robert Ramone y reúne objetos sumbaneses y tallas de piedra; dentro no se ha permitido hacer fotos, y se agradece un pequeño donativo.</p>
 
@@ -1643,28 +1643,28 @@ GUIDES = [
 <p>¿Buscas dónde dormir? Lee <a href="/es/where-to-stay/where-to-stay-in-sumba/">dónde alojarse en Sumba</a>.</p>"""
  },
  "id": {
-  "title": "Tambolaka, Sumba: kota bandara, apa yang bisa dilakukan dan tips",
-  "dek": "Kebanyakan wisatawan hanya lewat, padahal gerbang barat Sumba punya pasar terbesar di pulau ini, museum budaya dan pantai beberapa menit dari landasan: panduan praktis.",
-  "answer": "Tambolaka (juga dikenal sebagai Waitabula atau Weetabula) adalah ibu kota Sumba Barat Daya dan gerbang utama ke wilayah barat pulau, dengan Bandara Tambolaka (TMC) sekitar 1,5 km dari pusat kota. Di sinilah tempat menarik uang, membeli perbekalan dan menyewa mobil sebelum ke Kodi atau Waikabubak; Bondo Kodi sekitar satu jam naik minibus dan Waikabubak sekitar 1,5 jam. Layak disinggahi beberapa jam untuk pasar, museum Rumah Budaya Sumba dan pantai terdekat seperti Newa dan Pantai Kita.",
-  "body": """<p>Pesawat turun di atas pesisir batu kapur pucat dan bukit hijau, lalu mendarat di landasan yang diapit rumput dan kuda yang merumput. Sepuluh menit kemudian Anda sudah di kota: motor meliuk di antara minibus, lonceng gereja, aroma rokok kretek dan jagung bakar, serta pasar tempat para mama bersarung ikat menjual sirih pinang, ikan kering dan ikatan sayur. Tambolaka bukan kota yang cantik, tetapi ramai, ramah dan menjadi jantung praktis Sumba bagian barat.</p>
-<p>Kebanyakan wisatawan hanya menjadikan Tambolaka tempat transit. Halaman ini menjelaskan apa yang ada di sini, cara berkeliling dan apa yang layak disinggahi beberapa jam sebelum berangkat.</p>
+  "title": "Tambolaka, Sumba: kota bandara, tempat menarik, dan tips berkunjung",
+  "dek": "Kebanyakan wisatawan hanya lewat, padahal gerbang barat Sumba punya pasar terbesar di pulau ini, museum budaya, dan pantai beberapa menit dari landasan: panduan praktis.",
+  "answer": "Tambolaka (juga dikenal sebagai Waitabula atau Weetabula) adalah ibu kota Sumba Barat Daya dan gerbang utama ke wilayah barat pulau, dengan Bandara Tambolaka (TMC) sekitar 1,5 km dari pusat kota. Di sinilah tempat menarik uang, membeli perbekalan, dan menyewa mobil sebelum ke Kodi atau Waikabubak; Bondo Kodi sekitar satu jam naik minibus dan Waikabubak sekitar 1,5 jam. Layak disinggahi beberapa jam untuk pasar, museum Rumah Budaya Sumba dan pantai terdekat seperti Newa dan Pantai Kita.",
+  "body": """<p>Pesawat turun di atas pesisir batu kapur pucat dan bukit hijau, lalu mendarat di landasan yang diapit rumput dan kuda yang merumput. Sepuluh menit kemudian Anda sudah di kota: motor meliuk di antara minibus, lonceng gereja, aroma rokok kretek dan jagung bakar, serta pasar tempat para mama bersarung ikat menjual sirih pinang, ikan kering, dan ikatan sayur. Tambolaka bukan kota yang cantik, tetapi ramai, ramah dan menjadi jantung praktis Sumba bagian barat.</p>
+<p>Kebanyakan wisatawan hanya menjadikan Tambolaka tempat transit. Halaman ini menjelaskan apa saja yang ada di sini, cara berkeliling, dan tempat yang layak disinggahi beberapa jam sebelum berangkat.</p>
 
-<h2>Apa itu Tambolaka dan mengapa singgah</h2>
+<h2>Apa itu Tambolaka dan mengapa layak disinggahi</h2>
 <p>Tambolaka adalah ibu kota Kabupaten Sumba Barat Daya, yang dibentuk pada 2007 dari Sumba Barat. Kota ini lama dikenal dengan nama lokalnya, <strong>Waitabula</strong> (juga ditulis Weetabula), dan nama Tambolaka makin dikenal bersama bandaranya. Kecamatan Kota Tambolaka berpenduduk sekitar 36.000 jiwa pada sensus 2020 dan diperkirakan sekitar 38.000 pada 2025.</p>
 <ul>
 <li><strong>Bandara:</strong> Bandara Tambolaka (TMC), juga disebut Lede Kalumbang, berada di utara kota, sekitar 1,5 km dari pusat Waitabula. Wings Air terbang beberapa kali sehari dari Bali (sekitar 1 jam 30 menit). Baca <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a>.</li>
 <li><strong>Pasar:</strong> Waitabula memiliki pasar yang oleh pemandu lokal disebut pasar permanen terbesar di Sumba, pusat dagang bagi kampung-kampung di barat.</li>
-<li><strong>Pusat Katolik:</strong> kota ini memiliki katedral, rumah sakit dan rumah-rumah biara.</li>
+<li><strong>Pusat Katolik:</strong> kota ini memiliki katedral, rumah sakit, dan rumah-rumah biara.</li>
 <li><strong>Pelabuhan Waikelo:</strong> sekitar 6 km ke utara, pelabuhan untuk kapal besar; kapal feri Waikelo-Sape (Sumbawa) kembali beroperasi pada Mei 2026.</li>
 </ul>
 
-<h2>Cara ke dan berkeliling Tambolaka</h2>
+<h2>Cara ke Tambolaka dan berkeliling kota</h2>
 <ul>
-<li><strong>Dari bandara:</strong> ojek ke kota sekitar Rp10.000, atau taksi bersama sekitar Rp30.000 per orang, menurut laporan wisatawan (harga bervariasi; sepakati dulu). Grab dan Gojek tidak beroperasi di sini.</li>
-<li><strong>Ke Kodi:</strong> minibus bersama ke Bondo Kodi sekitar satu jam (sekitar Rp20.000), berangkat setelah penuh sepanjang siang. Weekuri, Pero dan Ratenggaro berjarak sekitar 40-56 km, 1-2 jam bermobil.</li>
-<li><strong>Ke Waikabubak:</strong> minibus sekitar 1,5 jam (sekitar Rp15.000).</li>
+<li><strong>Dari bandara:</strong> ojek ke kota sekitar Rp 10.000, atau taksi bersama sekitar Rp 30.000 per orang, menurut laporan wisatawan (harga bervariasi; sepakati dulu). Grab dan Gojek tidak beroperasi di sini.</li>
+<li><strong>Ke Kodi:</strong> minibus bersama ke Bondo Kodi sekitar satu jam (sekitar Rp 20.000), berangkat setelah penuh sepanjang siang. Weekuri, Pero, dan Ratenggaro berjarak sekitar 40-56 km, 1-2 jam bermobil.</li>
+<li><strong>Ke Waikabubak:</strong> minibus sekitar 1,5 jam (sekitar Rp 15.000).</li>
 <li><strong>Dari Waingapu (WGP):</strong> bus harian dan mobil "travel" menghubungkan kedua kota lewat Waikabubak, sekitar 4-6 jam.</li>
-<li><strong>Mobil dengan sopir:</strong> sekitar Rp1.000.000-1.500.000 per hari (kira-kira EUR 50-75 / USD 60-90) pada 2025-2026; motor sekitar Rp150.000-200.000 per hari.</li>
+<li><strong>Mobil dengan sopir:</strong> sekitar Rp 1.000.000-1.500.000 per hari (kira-kira 50-75 euro atau 60-90 dolar AS) pada 2025-2026; motor sekitar Rp 150.000-200.000 per hari.</li>
 </ul>
 
 <h2>Kapan datang dan jam terbaik</h2>
@@ -1703,17 +1703,17 @@ GUIDES = [
    ["How far is Tambolaka from Waikabubak?", "About 1.5 hours by minibus or car."]
   ],
   "es": [
-   ["¿Tambolaka y Waitabula son lo mismo?", "En la práctica, sí. Waitabula (o Weetabula) es el nombre local de la ciudad; Tambolaka es el nombre del aeropuerto y de la capital del distrito que creció a su alrededor."],
-   ["¿A qué distancia está el aeropuerto de Tambolaka de la ciudad?", "A unos 1,5 km del centro de Waitabula. Un ojek cuesta unas 10.000 IDR y un taxi compartido unas 30.000 IDR por persona, según viajeros."],
+   ["¿Tambolaka y Waitabula son lo mismo?", "En la práctica, sí. Waitabula (o Weetabula) es el nombre local de la ciudad; Tambolaka es el nombre del aeropuerto y de la capital de la regencia que creció a su alrededor."],
+   ["¿A qué distancia está el aeropuerto de Tambolaka de la ciudad?", "A unos 1,5 km del centro de Waitabula. Un ojek cuesta unas 10.000 rupias y un taxi compartido unas 30.000 rupias por persona, según viajeros."],
    ["¿Hay cajeros en Tambolaka?", "Sí. Saca aquí efectivo para varios días, porque en Kodi y en la mayoría de las playas no hay cajeros y el aeropuerto no tiene cambio de moneda."],
    ["¿Qué hacer en Tambolaka?", "Visitar el gran mercado por la mañana, el museo Rumah Budaya Sumba, el atardecer en Bukit Lendongara y playas cercanas como Newa, Oro y Pantai Kita."],
-   ["¿A qué distancia está Tambolaka de Waikabubak?", "A alrededor de 1,5 horas en minibús o coche."]
+   ["¿A qué distancia está Tambolaka de Waikabubak?", "A cerca de hora y media en minibús o coche."]
   ],
   "id": [
    ["Apakah Tambolaka sama dengan Waitabula?", "Secara praktis, ya. Waitabula (atau Weetabula) adalah nama lokal kota ini; Tambolaka adalah nama bandara dan ibu kota kabupaten yang tumbuh di sekitarnya."],
-   ["Berapa jarak Bandara Tambolaka ke kota?", "Sekitar 1,5 km dari pusat Waitabula. Ojek sekitar Rp10.000 dan taksi bersama sekitar Rp30.000 per orang, menurut laporan wisatawan."],
+   ["Berapa jarak Bandara Tambolaka ke kota?", "Sekitar 1,5 km dari pusat Waitabula. Ojek sekitar Rp 10.000 dan taksi bersama sekitar Rp 30.000 per orang, menurut laporan wisatawan."],
    ["Apakah ada ATM di Tambolaka?", "Ada. Tarik uang tunai di sini untuk beberapa hari, karena di Kodi dan sebagian besar pantai tidak ada ATM dan bandara tidak punya tempat penukaran uang."],
-   ["Apa yang bisa dilakukan di Tambolaka?", "Mengunjungi pasar besar pada pagi hari, museum Rumah Budaya Sumba, senja di Bukit Lendongara, dan pantai terdekat seperti Newa, Oro dan Pantai Kita."],
+   ["Apa saja yang menarik di Tambolaka?", "Mengunjungi pasar besar pada pagi hari, museum Rumah Budaya Sumba, senja di Bukit Lendongara, dan pantai terdekat seperti Newa, Oro dan Pantai Kita."],
    ["Berapa jarak Tambolaka ke Waikabubak?", "Sekitar 1,5 jam dengan minibus atau mobil."]
   ]
  },

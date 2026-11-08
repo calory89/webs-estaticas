@@ -72,12 +72,12 @@ GUIDES = [
  "es": {
   "title": "Sumba Oriental (Sumba Timur): lo que debes saber antes de ir",
   "dek": "Dos tercios de la isla, poca gente y muchísimo cielo: cómo funciona Sumba Oriental, adónde ir y qué resolver antes de salir de Waingapu.",
-  "answer": "Sumba Oriental (Kabupaten Sumba Timur) es la mayor de las cuatro regencias de Sumba, con unos 7.000 km² y cerca de 263.000 habitantes (estimación de BPS a mediados de 2025). Su capital es Waingapu, con aeropuerto (WGP) y vuelos directos desde Bali. Es la mitad seca y abierta de la isla: colinas de sabana como Wairinding, playas en la costa norte, aldeas reales de tejedoras cerca de Melolo y los bosques de Laiwangi Wanggameti. Ve en la estación seca, más o menos de mayo a noviembre, y sal de Waingapu con efectivo, gasolina y mapas sin conexión.",
+  "answer": "Sumba Oriental (Kabupaten Sumba Timur) es la mayor de las cuatro regencias de Sumba, con unos 7.000 km² y cerca de 263.000 habitantes (estimación de la oficina estadística indonesia, BPS, para mediados de 2025). Su capital es Waingapu, con aeropuerto (WGP) y vuelos directos desde Bali. Es la mitad seca y abierta de la isla: colinas de sabana como Wairinding, playas en la costa norte, aldeas reales de tejedoras cerca de Melolo y los bosques de Laiwangi Wanggameti. Ve en la estación seca, más o menos de mayo a noviembre, y sal de Waingapu con efectivo, gasolina y mapas sin conexión.",
   "body": """<p>Sal de Waingapu en agosto y el color se va apagando hasta que solo quedan el dorado y el azul: hierba color paja sobre colinas que ruedan hasta el horizonte, un cielo tan limpio que se ven las montañas de Flores al otro lado del estrecho, y caballos quietos bajo la única sombra en kilómetros. Luego la carretera baja a un valle y todo vuelve a ser verde: arrozales, cocoteros y los tejados altísimos de una aldea de clan. Sumba Oriental es tierra de distancias largas, poca gente y vistas enormes.</p>
-<p>En resumen: Sumba Oriental es la más grande y la más seca de las cuatro regencias de Sumba, gobernada desde Waingapu. Ocupa casi dos tercios de la isla pero tiene menos de un tercio de su población. Se viene por la sabana, las playas vacías, el tejido ikat y las aldeas reales, no por la vida nocturna.</p>
+<p>En resumen: Sumba Oriental es la más grande y la más seca de las cuatro regencias de Sumba, gobernada desde Waingapu. Ocupa casi dos tercios de la isla pero tiene menos de un tercio de su población. Aquí se viene por la sabana, las playas vacías, el tejido ikat y las aldeas reales, no por la vida nocturna.</p>
 
 <h2>Sumba Oriental en cifras</h2>
-<p>La regencia de Sumba Oriental (Kabupaten Sumba Timur) abarca unos 7.000,5 km², alrededor del 64% de la superficie de la isla, y tenía unos 262.975 habitantes estimados a mediados de 2025, según cifras de BPS recogidas en Wikipedia. Son menos de 40 personas por km², la densidad más baja de Sumba. Se divide en 22 distritos (kecamatan) y 156 aldeas.</p>
+<p>La regencia de Sumba Oriental (Kabupaten Sumba Timur) abarca unos 7.000,5 km², alrededor del 64% de la superficie de la isla, y tenía unos 262.975 habitantes estimados a mediados de 2025, según cifras de BPS recogidas en Wikipedia. Eso supone menos de 40 habitantes por km², la densidad más baja de Sumba. Se divide en 22 distritos (kecamatan) y 156 aldeas.</p>
 <p>La capital, <a href="/es/places/waingapu-town/">Waingapu</a>, está en la costa norte, en la desembocadura del río Kambaniru. Junto con el distrito vecino de Kambera suma algo más de 73.000 habitantes y es la ciudad más grande de la isla. Otros centros son Melolo, población comercial del sureste, y Lewa, más o menos a mitad de camino hacia el oeste.</p>
 
 <h2>Cómo llegar</h2>
@@ -89,7 +89,7 @@ GUIDES = [
 <p>Lo más práctico es entrar por un aeropuerto y salir por el otro, para cruzar la isla una sola vez. Consulta <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a>.</p>
 
 <h2>El paisaje</h2>
-<p>Sumba Oriental está a la sombra de las lluvias. En Waingapu caen solo unos 900 mm al año y agosto es casi totalmente seco. El noreste, desde Waingapu hasta el cabo norte de Tanjung Sasar, es el rincón más seco y menos poblado de Sumba: marrón y polvoriento tras meses sin lluvia, verde lima desde marzo, después del monzón. En el interior, las colinas de sabana se alternan con valles verdes y crestas de caliza.</p>
+<p>Sumba Oriental está en una zona de sombra pluviométrica. En Waingapu caen solo unos 900 mm al año y agosto es casi totalmente seco. El noreste, desde Waingapu hasta el cabo norte de Tanjung Sasar, es el rincón más seco y menos poblado de Sumba: marrón y polvoriento tras meses sin lluvia, verde lima desde marzo, después del monzón. En el interior, las colinas de sabana se alternan con valles verdes y crestas de caliza.</p>
 <p>El sur es otro mundo. Los ríos bajan de las montañas al océano Índico y los bosques del <a href="/es/places/laiwangi-wanggameti-national-park/">Parque Nacional Laiwangi Wanggameti</a> suben hasta el monte Wanggameti (1.225 m), el punto más alto de la isla. Las carreteras de la costa sur son malas y algunos tramos quedan intransitables en la estación de lluvias.</p>
 
 <h2>Lugares principales</h2>
@@ -114,7 +114,7 @@ GUIDES = [
 </ul>
 
 <h2>Cultura: lengua, tejidos y Marapu</h2>
-<p>La lengua del este es el kambera, hablado por unas 240.000 personas. Toma su nombre de un antiguo dominio cercano a Waingapu y se convirtió en la lengua común del este porque el comercio del siglo XIX se concentraba en el puerto. Casi todo el mundo habla también indonesio; el inglés es raro fuera del turismo. Unas pocas palabras de indonesio abren muchas puertas: mira nuestra <a href="/es/getting-here/sumba-phrasebook-useful-words/">guía de frases útiles</a>.</p>
+<p>La lengua del este es el kambera, hablado por unas 240.000 personas. Toma su nombre de un antiguo dominio cercano a Waingapu y se convirtió en la lengua común del este porque el comercio del siglo XIX se concentraba en el puerto. Casi todo el mundo habla también indonesio; el inglés es raro fuera del turismo. Unas pocas palabras de indonesio abren muchas puertas: consulta nuestra <a href="/es/getting-here/sumba-phrasebook-useful-words/">guía de frases útiles</a>.</p>
 <p>Las aldeas reales de Sumba Oriental son famosas por sus tejidos. En Prailiu, Rende y Pau se puede ver a las tejedoras trabajar, y en Melolo una cooperativa vende telas de las aldeas del delta. Las tumbas de Rende y Pau están entre las mayores de la isla. La religión ancestral, Marapu, sigue muy viva, y la tradición sitúa la llegada de los primeros antepasados en Wunga, cerca del extremo norte.</p>
 <p>La Pasola, la batalla ritual a caballo con lanzas, es una tradición de Sumba Occidental y Suroccidental y no se celebra en el este. Lee <a href="/es/culture/marapu-ikat-traditional-villages/">Marapu, ikat y aldeas tradicionales</a> antes de visitar una aldea: firma el libro de visitas, deja un pequeño donativo, vístete con discreción, pide permiso para las fotos y no toques nunca tumbas ni objetos rituales.</p>
 
@@ -122,20 +122,20 @@ GUIDES = [
 <ul>
 <li><strong>Efectivo:</strong> saca dinero en Waingapu. Los cajeros más fiables para tarjetas extranjeras son los de BNI y Mandiri; fuera de la ciudad casi no hay. Lleva billetes pequeños para donativos y aparcamientos.</li>
 <li><strong>Salud:</strong> el hospital de la regencia, RSUD Umbu Rara Meha, está en Waingapu, y hay centros de salud (puskesmas) en los distritos. Los casos graves suelen evacuarse a Bali; lee nuestra <a href="/es/getting-here/sumba-travel-safety-health/">guía de seguridad y salud</a>.</li>
-<li><strong>Gasolina:</strong> las gasolineras están en Waingapu y alguna población grande. Llena el depósito antes de cada excursión. A mediados de octubre de 2026 se redujo el suministro a Waingapu y hubo colas; ver <a href="/es/getting-here/getting-around-sumba/">cómo moverse por Sumba</a>.</li>
+<li><strong>Gasolina:</strong> las gasolineras están en Waingapu y alguna población grande. Llena el depósito antes de cada excursión. A mediados de octubre de 2026 se redujo el suministro a Waingapu y hubo colas; consulta <a href="/es/getting-here/getting-around-sumba/">cómo moverse por Sumba</a>.</li>
 <li><strong>Cobertura:</strong> Telkomsel es la mejor red, pero no esperes señal en valles, montañas y gran parte del sur. Descarga mapas sin conexión.</li>
 <li><strong>Domingos:</strong> muchas tiendas cierran y las familias van a misa.</li>
 <li><strong>Baño:</strong> aléjate de desembocaduras y manglares; hay cocodrilos en varios ríos, entre ellos cerca de Melolo y del Kambaniru.</li>
 </ul>
 
 <h2>Cuándo ir</h2>
-<p>La estación seca, aproximadamente de mayo a noviembre en el este, es la más cómoda: cielos limpios, colinas doradas y caminos secundarios practicables. Más o menos de diciembre a marzo la lluvia lo pone todo verde, pero algunas carreteras, sobre todo en el sur, se embarran o se cortan. Las primeras y últimas horas del día son las mejores para los miradores; al mediodía hace calor y no hay sombra. Sumba Oriental recibió 41.524 visitantes en 2025, uno de cada ocho extranjero, así que fuera de las vacaciones indonesias tendrás muchos miradores para ti. Para el panorama de toda la isla, mira <a href="/es/things-to-do/beaches-lagoons-waterfalls/">playas, lagunas y cascadas</a> y <a href="/es/where-to-stay/where-to-stay-in-sumba/">dónde alojarse en Sumba</a>.</p>""",
+<p>La estación seca, aproximadamente de mayo a noviembre en el este, es la más cómoda: cielos limpios, colinas doradas y caminos secundarios practicables. Más o menos de diciembre a marzo la lluvia lo pone todo verde, pero algunas carreteras, sobre todo en el sur, se embarran o se cortan. Las primeras y últimas horas del día son las mejores para los miradores; al mediodía hace calor y no hay sombra. Sumba Oriental recibió 41.524 visitantes en 2025, de los que uno de cada ocho era extranjero, así que fuera de las vacaciones indonesias tendrás muchos miradores para ti. Para el panorama de toda la isla, consulta <a href="/es/things-to-do/beaches-lagoons-waterfalls/">playas, lagunas y cascadas</a> y <a href="/es/where-to-stay/where-to-stay-in-sumba/">dónde alojarse en Sumba</a>.</p>""",
  },
  "id": {
   "title": "Sumba Timur: yang perlu diketahui sebelum berangkat",
-  "dek": "Dua pertiga pulau, penduduk sedikit dan langit yang luas: cara kerja Sumba Timur, ke mana harus pergi dan apa yang perlu disiapkan sebelum meninggalkan Waingapu.",
-  "answer": "Kabupaten Sumba Timur adalah kabupaten terluas dari empat kabupaten di Sumba, sekitar 7.000 km² dengan kira-kira 263.000 penduduk (proyeksi BPS pertengahan 2025). Ibu kotanya Waingapu, yang memiliki bandara (WGP) dengan penerbangan langsung dari Bali. Inilah separuh pulau yang kering dan terbuka: bukit sabana seperti Wairinding, pantai di pesisir utara, kampung raja penenun di sekitar Melolo dan hutan Laiwangi Wanggameti. Datanglah saat kemarau, kira-kira Mei sampai November, dan bawa uang tunai, bensin penuh serta peta offline dari Waingapu.",
-  "body": """<p>Keluar dari Waingapu pada bulan Agustus, warna perlahan memudar hingga tinggal emas dan biru: rumput sewarna jerami di atas bukit yang bergelombang sampai cakrawala, langit begitu jernih sehingga pegunungan Flores terlihat di seberang selat, dan kuda-kuda berdiri di satu-satunya keteduhan sejauh berkilo-kilometer. Lalu jalan turun ke lembah sungai dan semuanya kembali hijau: sawah, pohon kelapa dan atap menjulang sebuah kampung adat. Sumba Timur adalah tanah jarak yang jauh, penduduk yang jarang dan pemandangan yang sangat luas.</p>
+  "dek": "Dua pertiga pulau, penduduk sedikit dan langit yang luas: seluk-beluk Sumba Timur, ke mana harus pergi dan apa yang perlu disiapkan sebelum meninggalkan Waingapu.",
+  "answer": "Kabupaten Sumba Timur adalah kabupaten terluas dari empat kabupaten di Sumba, sekitar 7.000 km² dengan kira-kira 263.000 penduduk (proyeksi Badan Pusat Statistik atau BPS untuk pertengahan 2025). Ibu kotanya Waingapu, yang memiliki bandara (WGP) dengan penerbangan langsung dari Bali. Inilah separuh pulau yang kering dan terbuka: bukit sabana seperti Wairinding, pantai di pesisir utara, kampung raja penenun di sekitar Melolo dan hutan Laiwangi Wanggameti. Datanglah saat kemarau, kira-kira Mei sampai November, dan sebelum meninggalkan Waingapu, siapkan uang tunai, tangki bensin penuh, serta peta offline.",
+  "body": """<p>Begitu keluar dari Waingapu pada bulan Agustus, warna perlahan memudar hingga tinggal emas dan biru: rumput sewarna jerami di atas bukit yang bergelombang sampai cakrawala, langit begitu jernih sehingga pegunungan Flores terlihat di seberang selat, dan kuda-kuda berdiri di satu-satunya keteduhan sejauh berkilo-kilometer. Lalu jalan turun ke lembah sungai dan semuanya kembali hijau: sawah, pohon kelapa dan atap menjulang sebuah kampung adat. Sumba Timur adalah negeri berjarak jauh, berpenduduk jarang, dan berpemandangan luas.</p>
 <p>Singkatnya: Sumba Timur adalah kabupaten terbesar dan terkering di Sumba, dengan pusat pemerintahan di Waingapu. Luasnya hampir dua pertiga pulau, tetapi penduduknya kurang dari sepertiga. Orang datang ke sini untuk sabana, pantai sepi, tenun ikat dan kampung raja, bukan untuk keramaian.</p>
 
 <h2>Sekilas Sumba Timur</h2>
@@ -151,7 +151,7 @@ GUIDES = [
 <p>Rencana paling praktis adalah masuk lewat satu bandara dan keluar lewat bandara lain, sehingga Anda hanya sekali melintasi pulau. Baca <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a>.</p>
 
 <h2>Bentang alam</h2>
-<p>Sumba Timur berada di bayang-bayang hujan. Curah hujan di Waingapu hanya sekitar 900 mm per tahun dan Agustus hampir tanpa hujan. Wilayah timur laut, dari Waingapu sampai Tanjung Sasar di ujung utara, adalah sudut Sumba yang paling kering dan paling jarang penduduknya: cokelat berdebu setelah berbulan-bulan kemarau, lalu hijau muda sejak sekitar Maret setelah musim hujan. Di pedalaman, bukit sabana berselang-seling dengan lembah hijau dan punggung bukit kapur.</p>
+<p>Sumba Timur termasuk daerah bayangan hujan. Curah hujan di Waingapu hanya sekitar 900 mm per tahun dan Agustus hampir tanpa hujan. Wilayah timur laut, dari Waingapu sampai Tanjung Sasar di ujung utara, adalah sudut Sumba yang paling kering dan paling jarang penduduknya: cokelat berdebu setelah berbulan-bulan kemarau, lalu hijau muda sejak sekitar Maret setelah musim hujan. Di pedalaman, bukit sabana berselang-seling dengan lembah hijau dan punggung bukit kapur.</p>
 <p>Bagian selatan berbeda lagi. Sungai-sungai mengalir dari pegunungan ke Samudra Hindia, dan hutan <a href="/id/places/laiwangi-wanggameti-national-park/">Taman Nasional Laiwangi Wanggameti</a> naik sampai Gunung Wanggameti (1.225 m), titik tertinggi di Sumba. Jalan di pesisir selatan buruk dan sebagian tidak bisa dilalui pada musim hujan.</p>
 
 <h2>Tempat-tempat utama</h2>
@@ -191,7 +191,7 @@ GUIDES = [
 </ul>
 
 <h2>Waktu terbaik</h2>
-<p>Musim kemarau, kira-kira Mei sampai November di wilayah timur, paling nyaman: langit cerah, bukit keemasan dan jalan kecil bisa dilalui. Kira-kira Desember sampai Maret hujan membuat semuanya hijau, tetapi beberapa jalan, terutama di selatan, berlumpur atau terputus. Pagi dan sore hari paling cocok untuk titik pandang sabana; siang hari panas tanpa naungan sepanjang tahun. Sumba Timur mencatat 41.524 wisatawan pada 2025, sekitar satu dari delapan wisatawan asing, jadi di luar musim libur Anda sering memiliki bukit-bukit itu untuk diri sendiri. Untuk gambaran seluruh pulau, baca <a href="/id/things-to-do/beaches-lagoons-waterfalls/">pantai, laguna dan air terjun</a> serta <a href="/id/where-to-stay/where-to-stay-in-sumba/">tempat menginap di Sumba</a>.</p>""",
+<p>Musim kemarau, kira-kira Mei sampai November di wilayah timur, paling nyaman: langit cerah, bukit keemasan dan jalan kecil bisa dilalui. Kira-kira Desember sampai Maret hujan membuat semuanya hijau, tetapi beberapa jalan, terutama di selatan, berlumpur atau terputus. Pagi dan sore hari paling cocok untuk titik pandang sabana; siang hari panas tanpa naungan sepanjang tahun. Sumba Timur mencatat 41.524 wisatawan pada 2025, sekitar seperdelapannya wisatawan asing, jadi di luar musim libur Anda sering bisa menikmati bukit-bukit itu tanpa keramaian. Untuk gambaran seluruh pulau, baca <a href="/id/things-to-do/beaches-lagoons-waterfalls/">pantai, laguna dan air terjun</a> serta <a href="/id/where-to-stay/where-to-stay-in-sumba/">tempat menginap di Sumba</a>.</p>""",
  },
  "facts": {
   "en": [["Capital", "Waingapu (north coast)"], ["Size and population", "About 7,000 km²; 262,975 people (BPS mid-2025 estimate)"], ["Airport", "Umbu Mehang Kunda (WGP), Waingapu; non-stop from Bali 4x a week"], ["Highlights", "Wairinding, Walakiri, Puru Kambera, Tanggedu, Pau and Rende, Tarimbang"], ["Best time", "Dry season, roughly May-November"]],
@@ -208,7 +208,7 @@ GUIDES = [
   ],
   "es": [
    ["¿Cuál es la capital de Sumba Oriental?", "Waingapu, en la costa norte. Es la ciudad más grande de Sumba, con aeropuerto (WGP) y el principal puerto de la isla."],
-   ["¿Cómo llego a Sumba Oriental desde Bali?", "En vuelo directo Bali-Waingapu con TransNusa (cuatro veces por semana desde julio de 2026), o volando a Tambolaka, en el oeste, y conduciendo unas 4-5 horas hacia el este."],
+   ["¿Cómo se llega a Sumba Oriental desde Bali?", "En vuelo directo Bali-Waingapu con TransNusa (cuatro veces por semana desde julio de 2026), o en avión hasta Tambolaka, en el oeste, y después unas 4-5 horas de coche hacia el este."],
    ["¿Merece la pena Sumba Oriental?", "Sí, si te gustan los paisajes abiertos, las playas tranquilas y el tejido tradicional. Tiene las vistas de sabana más famosas de la isla y aldeas reales, con muchos menos visitantes que el oeste."],
    ["¿Cuál es la mejor época para ir a Sumba Oriental?", "La estación seca, aproximadamente de mayo a noviembre, por las colinas doradas y las carreteras en buen estado; los meses de lluvia (más o menos diciembre-marzo) son más verdes, pero algunas carreteras del sur se complican."],
    ["¿Hay cajeros en Sumba Oriental?", "Sí, en Waingapu (BNI y Mandiri son los más fiables con tarjetas extranjeras). Fuera de la ciudad casi no hay, así que saca efectivo antes de las excursiones."],
@@ -301,7 +301,7 @@ GUIDES = [
  "es": {
   "title": "Sumba Occidental (Sumba Barat): lo que debes saber antes de ir",
   "dek": "La regencia más pequeña reúne una capital fresca de montaña, aldeas de clan en cada colina, cascadas en la selva y dos campos de Pasola: guía práctica de Sumba Occidental.",
-  "answer": "Sumba Occidental (Kabupaten Sumba Barat) es la más pequeña de las cuatro regencias de Sumba, con unos 737 km² y cerca de 160.000 habitantes (estimación de BPS a mediados de 2025). Se gobierna desde Waikabubak, ciudad de montaña a unos 42 km y 1 hora del aeropuerto de Tambolaka. Es el rincón más tradicional para el viajero: aldeas de clan como Tarung y Praijing, la cascada de Lapopu, las playas de surf de Lamboya y la Pasola de Lamboya, Wanokaka y Gaura en febrero y marzo. Alójate en Waikabubak y saca efectivo allí.",
+  "answer": "Sumba Occidental (Kabupaten Sumba Barat) es la más pequeña de las cuatro regencias de Sumba, con unos 737 km² y cerca de 160.000 habitantes (estimación de la oficina estadística indonesia, BPS, para mediados de 2025). Su capital es Waikabubak, ciudad de montaña a unos 42 km y 1 hora del aeropuerto de Tambolaka. Es donde el viajero encuentra la Sumba más tradicional: aldeas de clan como Tarung y Praijing, la cascada de Lapopu, las playas de surf de Lamboya y la Pasola de Lamboya, Wanokaka y Gaura en febrero y marzo. Alójate en Waikabubak y saca efectivo allí.",
   "body": """<p>En la meseta de Waikabubak anochece pronto, y con la noche llega una brisa fresca que casi no parece tropical. Los búfalos bajan por la calle principal camino de casa, las campanas de las iglesias se mezclan con la llamada a la oración, y en las colinas boscosas alrededor de la ciudad los altos tejados de paja de las aldeas de clan se recortan negros contra el cielo. A media hora al sur, la tierra cae hacia las terrazas de arroz del valle de Wanokaka y las playas blancas del océano Índico.</p>
 <p>En resumen: Sumba Occidental es pequeña, verde y muy poblada, y es donde la mayoría de los viajeros descubre por primera vez la vida de las aldeas tradicionales de Sumba. Waikabubak es la base; todo lo demás queda a una hora como mucho.</p>
 
@@ -339,31 +339,31 @@ GUIDES = [
 <li><a href="/es/places/marosi-beach/">Marosi</a>: una larga playa curva de arena blanca en Lamboya, a unos 30 km (45 minutos a 1 hora) de Waikabubak.</li>
 <li><a href="/es/places/kerewe-beach/">Kerewe</a>: ola de arrecife cerca de Marosi para surfistas de nivel medio y avanzado.</li>
 </ul>
-<p>Parte de la costa de Lamboya está hoy vallada por villas y complejos privados, así que el acceso a algunas playas es limitado. Pregunta en el lugar antes de caminar por la orilla.</p>
+<p>Parte de la costa de Lamboya está hoy vallada por villas y complejos privados, así que el acceso a algunas playas es limitado. Pregunta a la gente del lugar antes de caminar por la orilla.</p>
 
 <h2>Cultura: lenguas, Pasola y tejidos</h2>
-<p>Sumba Occidental es un mosaico de lenguas pequeñas. El wanukaka y el lamboya tienen cada uno menos de unos 20.000 hablantes; alrededor de Waikabubak, en Loli y en Tana Righu se hablan variedades emparentadas con el weyewa. Con los forasteros todo el mundo usa el indonesio, y el inglés es escaso fuera del turismo, así que un guía local es muy útil en las aldeas. Nuestra <a href="/es/getting-here/sumba-phrasebook-useful-words/">guía de frases útiles</a> tiene lo básico.</p>
-<p>Aquí están dos de las cuatro zonas de Pasola de Sumba. Lamboya celebra la suya en febrero (1 de febrero en 2025, 10 de febrero en 2026), y Wanokaka y Gaura (en Lamboya Oeste) la siguen en marzo. Las fechas las fijan cada año los ancianos Rato según la luna y los gusanos marinos nyale; lee <a href="/es/culture/pasola-explained/">la Pasola explicada</a>.</p>
+<p>Sumba Occidental es un mosaico de lenguas pequeñas. El wanukaka y el lamboya no llegan, cada uno, a unos 20.000 hablantes; alrededor de Waikabubak, en Loli y en Tana Righu se hablan variedades emparentadas con el weyewa. Con los forasteros todo el mundo usa el indonesio, y el inglés es escaso fuera del turismo, así que un guía local es muy útil en las aldeas. Nuestra <a href="/es/getting-here/sumba-phrasebook-useful-words/">guía de frases útiles</a> tiene lo básico.</p>
+<p>La regencia alberga dos de las cuatro zonas de Pasola de Sumba. Lamboya celebra la suya en febrero (1 de febrero en 2025, 10 de febrero en 2026), y Wanokaka y Gaura (en Lamboya Oeste) la siguen en marzo. Las fechas las fijan cada año los ancianos Rato según la luna y los gusanos marinos nyale; lee <a href="/es/culture/pasola-explained/">la Pasola explicada</a>.</p>
 <p>Muchas aldeas son comunidades Marapu, con tumbas delante de las casas y objetos rituales guardados bajo los tejados. Lee <a href="/es/culture/marapu-ikat-traditional-villages/">Marapu, ikat y aldeas tradicionales</a>: firma el libro de visitas, deja un pequeño donativo, vístete con discreción, pide permiso antes de fotografiar a personas o casas y no toques nunca tumbas ni objetos rituales. Varias aldeas han ardido en los últimos años, un recordatorio de que son hogares, no museos al aire libre.</p>
 
 <h2>Aspectos prácticos</h2>
 <ul>
 <li><strong>Efectivo:</strong> en Waikabubak hay cajeros; BNI y Mandiri son los más fiables con tarjetas extranjeras. En la costa hay pocos o ninguno, así que saca dinero antes de ir a las playas y lleva billetes pequeños.</li>
 <li><strong>Salud:</strong> el RSUD Waikabubak, hospital de la regencia, estrenó un edificio nuevo tras una visita presidencial en octubre de 2024 y es centro de referencia para enfermedades graves como cáncer y cardiopatías. Clínicas pequeñas y puskesmas atienden los distritos; para urgencias graves, lo habitual sigue siendo la evacuación a Bali. Consulta nuestra <a href="/es/getting-here/sumba-travel-safety-health/">guía de seguridad y salud</a>.</li>
-<li><strong>Gasolina:</strong> llena el depósito en Waikabubak o cerca. Tras las colas de gasolina en la vecina Sumba Suroccidental en octubre de 2026, el gobierno local limitó la compra de Pertalite y Pertamax a 5 litros por moto y 15 por coche; ver <a href="/es/getting-here/getting-around-sumba/">cómo moverse por Sumba</a>.</li>
+<li><strong>Gasolina:</strong> llena el depósito en Waikabubak o cerca. Tras las colas de gasolina en la vecina Sumba Suroccidental en octubre de 2026, el gobierno local limitó la compra de Pertalite y Pertamax a 5 litros por moto y 15 por coche; consulta <a href="/es/getting-here/getting-around-sumba/">cómo moverse por Sumba</a>.</li>
 <li><strong>Cobertura:</strong> Telkomsel funciona en la ciudad y en las carreteras principales, pero se pierde en los valles y en partes de la costa sur.</li>
 <li><strong>Por la noche:</strong> los semáforos suelen dejar de funcionar al oscurecer y los animales ocupan la calzada. Conduce despacio y evita los trayectos largos de noche.</li>
 </ul>
 
 <h2>Cuándo ir</h2>
-<p>La estación seca, aproximadamente de mayo a septiembre, ofrece las carreteras más fiables y el agua más clara en cascadas y playas; las olas de la costa sur son más constantes en esos meses. Febrero y marzo son más lluviosos, pero traen la Pasola. Los meses de lluvia, más o menos de diciembre a marzo, ponen las colinas de un verde espectacular y las cascadas a pleno caudal, aunque los caminos pueden convertirse en barro. Para el panorama general, mira <a href="/es/things-to-do/beaches-lagoons-waterfalls/">playas, lagunas y cascadas</a> y <a href="/es/where-to-stay/where-to-stay-in-sumba/">dónde alojarse en Sumba</a>.</p>""",
+<p>La estación seca, aproximadamente de mayo a septiembre, ofrece las carreteras más fiables y el agua más clara en cascadas y playas; las olas de la costa sur son más constantes en esos meses. Febrero y marzo son más lluviosos, pero traen la Pasola. Los meses de lluvia, más o menos de diciembre a marzo, ponen las colinas de un verde espectacular y las cascadas a pleno caudal, aunque los caminos pueden convertirse en barro. Para el panorama general, consulta <a href="/es/things-to-do/beaches-lagoons-waterfalls/">playas, lagunas y cascadas</a> y <a href="/es/where-to-stay/where-to-stay-in-sumba/">dónde alojarse en Sumba</a>.</p>""",
  },
  "id": {
   "title": "Sumba Barat: yang perlu diketahui sebelum berangkat",
   "dek": "Kabupaten terkecil ini punya ibu kota sejuk di dataran tinggi, kampung adat di setiap bukit, air terjun di hutan dan dua lapangan Pasola: panduan praktis Sumba Barat.",
-  "answer": "Kabupaten Sumba Barat adalah kabupaten terkecil dari empat kabupaten di Sumba, sekitar 737 km² dengan kira-kira 160.000 penduduk (proyeksi BPS pertengahan 2025), beribu kota di Waikabubak, kota dataran tinggi sekitar 42 km atau 1 jam dari Bandara Tambolaka. Bagi wisatawan, inilah sudut paling tradisional di Sumba: kampung adat Tarung dan Praijing, Air Terjun Lapopu, pantai selancar di Lamboya serta Pasola di Lamboya, Wanokaka dan Gaura pada Februari dan Maret. Menginaplah di Waikabubak dan tarik uang tunai di sana.",
+  "answer": "Kabupaten Sumba Barat adalah kabupaten terkecil dari empat kabupaten di Sumba, sekitar 737 km² dengan kira-kira 160.000 penduduk (proyeksi Badan Pusat Statistik atau BPS untuk pertengahan 2025), beribu kota di Waikabubak, kota dataran tinggi sekitar 42 km atau 1 jam dari Bandara Tambolaka. Bagi wisatawan, inilah sudut paling tradisional di Sumba: kampung adat Tarung dan Praijing, Air Terjun Lapopu, pantai selancar di Lamboya serta Pasola di Lamboya, Wanokaka dan Gaura pada Februari dan Maret. Menginaplah di Waikabubak dan tarik uang tunai di sana.",
   "body": """<p>Senja datang cepat di dataran tinggi Waikabubak, membawa angin sejuk yang hampir tidak terasa tropis. Kerbau-kerbau berjalan pulang menyusuri jalan utama, lonceng gereja bersahutan dengan azan, dan di bukit-bukit berhutan di sekitar kota, puncak atap ilalang kampung adat tampak hitam di langit sore. Setengah jam ke selatan, tanah menurun ke sawah berundak di lembah Wanokaka dan pantai putih Samudra Hindia.</p>
-<p>Singkatnya: Sumba Barat kecil, hijau dan padat penduduk, dan di sinilah kebanyakan wisatawan pertama kali menyaksikan kehidupan kampung adat Sumba. Waikabubak adalah basisnya; tempat lain bisa dicapai dalam sekitar satu jam.</p>
+<p>Singkatnya: Sumba Barat kecil, hijau dan padat penduduk, dan di sinilah kebanyakan wisatawan pertama kali menyaksikan kehidupan kampung adat Sumba. Waikabubak menjadi titik awal; tempat lain bisa dicapai dalam sekitar satu jam.</p>
 
 <h2>Sekilas Sumba Barat</h2>
 <p>Kabupaten Sumba Barat dibentuk pada 1958 dan dulu jauh lebih luas, sampai 2007 ketika Kabupaten Sumba Barat Daya dan Sumba Tengah dimekarkan darinya. Kini luasnya hanya 737,42 km², terkecil di antara empat kabupaten, dengan proyeksi penduduk 160.170 jiwa pada pertengahan 2025 menurut data BPS yang dikutip Wikipedia. Ada enam kecamatan (Lamboya, Wanokaka, Laboya Barat, Loli, Kota Waikabubak dan Tana Righu) dan 74 desa/kelurahan.</p>
@@ -404,7 +404,7 @@ GUIDES = [
 <h2>Budaya: bahasa, Pasola dan tenun</h2>
 <p>Sumba Barat adalah mozaik bahasa-bahasa kecil. Bahasa Wanukaka dan Lamboya masing-masing dituturkan kurang dari sekitar 20.000 orang; di sekitar Waikabubak, Loli dan Tana Righu orang memakai ragam yang berkerabat dengan bahasa Weyewa. Dengan pendatang semua orang memakai bahasa Indonesia, sedangkan bahasa Inggris terbatas di luar pariwisata, jadi pemandu lokal sangat membantu di kampung. Lihat juga <a href="/id/getting-here/sumba-phrasebook-useful-words/">kosakata berguna di Sumba</a>.</p>
 <p>Dua dari empat wilayah Pasola di Sumba ada di sini. Lamboya menggelar Pasola pada Februari (1 Februari 2025, 10 Februari 2026), disusul Wanokaka dan Gaura (di Laboya Barat) pada Maret. Tanggalnya ditetapkan setiap tahun oleh para Rato berdasarkan bulan dan munculnya cacing laut nyale; baca <a href="/id/culture/pasola-explained/">penjelasan Pasola</a>.</p>
-<p>Banyak kampung adalah komunitas Marapu, dengan kubur batu di depan rumah dan benda-benda ritual disimpan di bawah atap. Baca <a href="/id/culture/marapu-ikat-traditional-villages/">Marapu, ikat dan kampung adat</a>: isi buku tamu, beri sumbangan sukarela, berpakaian sopan, minta izin sebelum memotret orang atau rumah, dan jangan pernah menyentuh kubur atau benda ritual. Beberapa kampung terbakar dalam beberapa tahun terakhir, pengingat bahwa ini adalah rumah, bukan museum terbuka.</p>
+<p>Banyak kampung adalah komunitas Marapu, dengan kubur batu di depan rumah dan benda-benda ritual disimpan di bawah atap. Baca <a href="/id/culture/marapu-ikat-traditional-villages/">Marapu, ikat dan kampung adat</a>: isi buku tamu, beri sumbangan sukarela, berpakaian sopan, minta izin sebelum memotret orang atau rumah, dan jangan pernah menyentuh kubur atau benda ritual. Beberapa kampung terbakar dalam beberapa tahun terakhir, sebuah pengingat bahwa kampung-kampung ini adalah rumah, bukan museum terbuka.</p>
 
 <h2>Hal praktis</h2>
 <ul>
@@ -416,7 +416,7 @@ GUIDES = [
 </ul>
 
 <h2>Waktu terbaik</h2>
-<p>Musim kemarau, kira-kira Mei sampai September, memberi jalan paling andal dan air paling jernih di air terjun dan pantai; ombak di pesisir selatan juga paling konsisten pada bulan-bulan ini. Februari dan Maret lebih basah, tetapi ada Pasola. Bulan hujan, kira-kira Desember sampai Maret, membuat bukit hijau memukau dan air terjun deras, meski jalan tanah bisa berlumpur. Untuk gambaran lebih luas, baca <a href="/id/things-to-do/beaches-lagoons-waterfalls/">pantai, laguna dan air terjun</a> serta <a href="/id/where-to-stay/where-to-stay-in-sumba/">tempat menginap di Sumba</a>.</p>""",
+<p>Musim kemarau, kira-kira Mei sampai September, memberi jalan paling andal dan air paling jernih di air terjun dan pantai; ombak di pesisir selatan juga paling konsisten pada bulan-bulan ini. Februari dan Maret lebih basah, tetapi pada bulan-bulan inilah Pasola digelar. Bulan hujan, kira-kira Desember sampai Maret, membuat bukit hijau memukau dan air terjun deras, meski jalan tanah bisa berlumpur. Untuk gambaran lebih luas, baca <a href="/id/things-to-do/beaches-lagoons-waterfalls/">pantai, laguna dan air terjun</a> serta <a href="/id/where-to-stay/where-to-stay-in-sumba/">tempat menginap di Sumba</a>.</p>""",
  },
  "facts": {
   "en": [["Capital", "Waikabubak (plateau, about 400 m)"], ["Size and population", "737.42 km², the smallest regency; 160,170 people (BPS mid-2025 estimate)"], ["Nearest airport", "Tambolaka (TMC), about 42 km, roughly 1 hour"], ["Highlights", "Tarung, Praijing, Lapopu waterfall, Wanokaka valley, Marosi"], ["Pasola", "Lamboya (February); Wanokaka and Gaura (March)"]],
@@ -527,7 +527,7 @@ GUIDES = [
  "es": {
   "title": "Sumba Suroccidental (Sumba Barat Daya): lo que debes saber antes de ir",
   "dek": "El aeropuerto, la laguna, las aldeas de tejados altísimos de Kodi y la Pasola de febrero: casi todos los viajes empiezan en Sumba Suroccidental. Así encaja todo.",
-  "answer": "Sumba Suroccidental (Kabupaten Sumba Barat Daya) es la regencia más poblada de Sumba, con unos 1.382 km² y entre 335.000 y 366.000 habitantes según la publicación de BPS. Su capital, Tambolaka, tiene el aeropuerto con más tráfico de la isla (TMC) y varios vuelos diarios desde Bali. Abarca la región de Kodi, en el extremo oeste (laguna de Weekuri, Mandorak, Ratenggaro, Wainyapu, la Pasola de febrero y marzo), y las tierras altas de Wewewa. Saca efectivo y llena el depósito en Tambolaka, y calcula 1-2 horas en coche hasta la costa de Kodi.",
+  "answer": "Sumba Suroccidental (Kabupaten Sumba Barat Daya) es la regencia más poblada de Sumba, con unos 1.382 km² y entre 335.000 y 366.000 habitantes, según la publicación de la oficina estadística indonesia (BPS) que se consulte. Su capital, Tambolaka, tiene el aeropuerto con más tráfico de la isla (TMC) y varios vuelos diarios desde Bali. Abarca la región de Kodi, en el extremo oeste (laguna de Weekuri, Mandorak, Ratenggaro, Wainyapu, la Pasola de febrero y marzo), y las tierras altas de Wewewa. Saca efectivo y llena el depósito en Tambolaka, y calcula 1-2 horas en coche hasta la costa de Kodi.",
   "body": """<p>El avión entra bajo sobre caliza clara y campos verdes y aterriza en una pista junto a la que pastan caballos. Una hora después estás en la costa oeste: el oleaje retumba contra el arrecife, huele a sal y a leña, y sobre una loma frente al mar se alza una aldea de tejados de paja altísimos, con las puntas inclinadas como sombreros sobre un campo de tumbas de piedra. Sumba Suroccidental es la puerta de entrada de la isla y no tarda en causar impresión.</p>
 <p>En resumen: Sumba Suroccidental es la regencia con más movimiento de viajeros, con el aeropuerto principal, la laguna y las playas más famosas y las aldeas tradicionales de Kodi. También es la zona más densamente poblada de la isla, así que habrá más tráfico y más gente que en el este.</p>
 
@@ -538,7 +538,7 @@ GUIDES = [
 
 <h2>Cómo llegar</h2>
 <ul>
-<li><strong>En avión:</strong> el aeropuerto de Tambolaka (TMC, también llamado Lede Kalumbang) está justo al norte de la ciudad. Wings Air vuela desde Bali varias veces al día, en 1 h 30 min aproximadamente. Ver <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a>.</li>
+<li><strong>En avión:</strong> el aeropuerto de Tambolaka (TMC, también llamado Lede Kalumbang) está justo al norte de la ciudad. Wings Air vuela desde Bali varias veces al día, en 1 h 30 min aproximadamente. Más información en <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a>.</li>
 <li><strong>Por mar:</strong> el ferri Waikelo-Sape, a Sumbawa, volvió a funcionar en mayo de 2026.</li>
 <li><strong>Desde Waingapu:</strong> unos 170 km y 4-5 horas en coche, o unas 4-6 horas en autobús o coche compartido por Waikabubak.</li>
 <li><strong>Hacia Kodi:</strong> los minibuses compartidos de Tambolaka a Bondo Kodi tardan alrededor de una hora; para casi todo lo demás en la costa necesitas coche con conductor.</li>
@@ -569,16 +569,16 @@ GUIDES = [
 </ul>
 
 <h2>Cultura: lenguas, Pasola y aldeas</h2>
-<p>Se hablan dos lenguas principales. El weyewa (wejewa) tiene unos 65.000 hablantes en los distritos orientales; el kodi, con unos 20.000, se considera una lengua en peligro. Ambas son muy distintas del kambera del este. Con los visitantes se usa el indonesio; mira nuestra <a href="/es/getting-here/sumba-phrasebook-useful-words/">guía de frases útiles</a>.</p>
-<p>Kodi tiene la temporada de Pasola más larga de la isla: dos rondas de tres Pasolas cada una, en febrero y marzo, repartidas entre Kodi, Kodi Bangedo y Kodi Balaghar, con Wainyapu como uno de los campos más conocidos. Las fechas las fijan cada año los ancianos Rato cuando aparecen los gusanos marinos nyale y suelen confirmarse a finales de enero; consulta <a href="/es/culture/pasola-explained/">la Pasola explicada</a>. Muchas aldeas de Kodi siguen el Marapu. Lee <a href="/es/culture/marapu-ikat-traditional-villages/">Marapu, ikat y aldeas tradicionales</a> antes de ir: firma el libro de visitas, deja un donativo de unos 20.000 IDR o más por persona (2025-2026), pide permiso antes de las fotos y no toques nunca tumbas ni objetos rituales.</p>
+<p>Se hablan dos lenguas principales. El weyewa (wejewa) tiene unos 65.000 hablantes en los distritos orientales; el kodi, con unos 20.000, se considera una lengua en peligro. Ambas son muy distintas del kambera del este. Con los visitantes se usa el indonesio; consulta nuestra <a href="/es/getting-here/sumba-phrasebook-useful-words/">guía de frases útiles</a>.</p>
+<p>Kodi tiene la temporada de Pasola más larga de la isla: dos rondas de tres Pasolas cada una, en febrero y marzo, repartidas entre Kodi, Kodi Bangedo y Kodi Balaghar, con Wainyapu como uno de los campos más conocidos. Las fechas las fijan cada año los ancianos Rato cuando aparecen los gusanos marinos nyale y suelen confirmarse a finales de enero; consulta <a href="/es/culture/pasola-explained/">la Pasola explicada</a>. Muchas aldeas de Kodi siguen el Marapu. Lee <a href="/es/culture/marapu-ikat-traditional-villages/">Marapu, ikat y aldeas tradicionales</a> antes de ir: firma el libro de visitas, deja un donativo de unos 20.000 rupias o más por persona (2025-2026), pide permiso antes de las fotos y no toques nunca tumbas ni objetos rituales.</p>
 
 <h2>Aspectos prácticos</h2>
 <ul>
 <li><strong>Efectivo:</strong> saca dinero en Tambolaka. Los cajeros de BNI y Mandiri son los más fiables con tarjetas extranjeras; en casi toda la costa de Kodi no hay, y en el aeropuerto no se cambia moneda.</li>
-<li><strong>Salud:</strong> Tambolaka tiene un hospital católico, RS Karitas, en Waitabula, y el hospital de la regencia, RSUD Reda Bolo, que en 2025 seguía siendo un hospital básico de clase D con una mejora en marcha. Para algo grave, cuenta con una evacuación a Bali; ver nuestra <a href="/es/getting-here/sumba-travel-safety-health/">guía de seguridad y salud</a>.</li>
-<li><strong>Gasolina:</strong> en octubre de 2026 se formaron colas en varias gasolineras de Sumba Suroccidental. Pertamina envió suministro extra y el gobierno local limitó la compra de Pertalite y Pertamax a 5 litros por moto y 15 por coche. Llena el depósito en Tambolaka antes de ir al oeste; ver <a href="/es/getting-here/getting-around-sumba/">cómo moverse por Sumba</a>.</li>
+<li><strong>Salud:</strong> Tambolaka tiene un hospital católico, RS Karitas, en Waitabula, y el hospital de la regencia, RSUD Reda Bolo, que en 2025 seguía siendo un hospital básico de clase D con una mejora en marcha. Para algo grave, cuenta con una evacuación a Bali; consulta nuestra <a href="/es/getting-here/sumba-travel-safety-health/">guía de seguridad y salud</a>.</li>
+<li><strong>Gasolina:</strong> en octubre de 2026 se formaron colas en varias gasolineras de Sumba Suroccidental. Pertamina envió suministro extra y el gobierno local limitó la compra de Pertalite y Pertamax a 5 litros por moto y 15 por coche. Llena el depósito en Tambolaka antes de ir al oeste; consulta <a href="/es/getting-here/getting-around-sumba/">cómo moverse por Sumba</a>.</li>
 <li><strong>Cobertura:</strong> Telkomsel cubre las ciudades y las carreteras principales; en la costa de Kodi la señal va y viene.</li>
-<li><strong>Seguridad:</strong> no te bañes cerca de desembocaduras como las de Waikelo, Katewel o Wainyapu (cocodrilos), respeta las corrientes en las playas de arrecife y planea estar de vuelta en la carretera principal antes de que oscurezca; las recomendaciones de viaje llevan años pidiendo prudencia de noche en las zonas remotas de Kodi.</li>
+<li><strong>Seguridad:</strong> no te bañes cerca de desembocaduras como las de Waikelo, Katewel o Wainyapu (cocodrilos), respeta las corrientes en las playas de arrecife y procura estar de vuelta en la carretera principal antes de que oscurezca; las recomendaciones de viaje llevan años pidiendo prudencia de noche en las zonas remotas de Kodi.</li>
 </ul>
 
 <h2>Cuándo ir</h2>
@@ -587,8 +587,8 @@ GUIDES = [
  "id": {
   "title": "Sumba Barat Daya: yang perlu diketahui sebelum berangkat",
   "dek": "Bandara, danau air asin, kampung beratap menjulang di Kodi dan Pasola bulan Februari: kebanyakan perjalanan dimulai di Sumba Barat Daya. Begini gambarannya.",
-  "answer": "Kabupaten Sumba Barat Daya adalah kabupaten berpenduduk terbanyak di Sumba, sekitar 1.382 km² dengan kira-kira 335.000-366.000 jiwa tergantung rilis BPS, dan ibu kotanya, Tambolaka, punya bandara tersibuk di pulau ini (TMC) dengan beberapa penerbangan sehari dari Bali. Wilayahnya mencakup Kodi di ujung barat (Danau Weekuri, Mandorak, Ratenggaro, Wainyapu, Pasola Februari dan Maret) serta dataran tinggi Wewewa. Tarik uang tunai dan isi bensin di Tambolaka, lalu siapkan 1-2 jam perjalanan bermobil ke pesisir Kodi.",
-  "body": """<p>Pesawat terbang rendah di atas batu kapur pucat dan ladang hijau, lalu mendarat di landasan yang pagarnya dikelilingi kuda merumput. Sejam kemudian Anda sudah di pesisir barat: ombak berdentum di karang, aroma garam dan asap kayu, dan di atas bukit kecil menghadap laut berdiri kampung dengan atap ilalang menjulang, puncaknya condong seperti topi tinggi di atas hamparan kubur batu. Sumba Barat Daya adalah pintu depan pulau ini, dan kesan pertamanya langsung kuat.</p>
+  "answer": "Kabupaten Sumba Barat Daya adalah kabupaten berpenduduk terbanyak di Sumba, sekitar 1.382 km² dengan kira-kira 335.000-366.000 jiwa tergantung rilis Badan Pusat Statistik (BPS), dan ibu kotanya, Tambolaka, punya bandara tersibuk di pulau ini (TMC) dengan beberapa penerbangan sehari dari Bali. Wilayahnya mencakup Kodi di ujung barat (Danau Weekuri, Mandorak, Ratenggaro, Wainyapu, Pasola Februari dan Maret) serta dataran tinggi Wewewa. Tarik uang tunai dan isi bensin di Tambolaka, lalu siapkan 1-2 jam perjalanan bermobil ke pesisir Kodi.",
+  "body": """<p>Pesawat terbang rendah di atas batu kapur pucat dan ladang hijau, lalu mendarat di landasan yang di sisinya kuda-kuda merumput. Sejam kemudian Anda sudah di pesisir barat: ombak berdentum di karang, aroma garam dan asap kayu, dan di atas bukit kecil menghadap laut berdiri kampung dengan atap ilalang menjulang, puncaknya condong seperti topi tinggi di atas hamparan kubur batu. Sumba Barat Daya adalah pintu gerbang pulau ini, dan kesan pertamanya langsung kuat.</p>
 <p>Singkatnya: Sumba Barat Daya adalah kabupaten tersibuk bagi wisatawan, dengan bandara utama, danau dan pantai paling terkenal, serta kampung adat Kodi. Ini juga wilayah terpadat di Sumba, jadi lalu lintas dan keramaian lebih terasa daripada di timur.</p>
 
 <h2>Sekilas Sumba Barat Daya</h2>
@@ -614,7 +614,7 @@ GUIDES = [
 <li><a href="/id/places/mandorak-beach/">Mandorak</a>: teluk mungil di antara tebing, sekitar satu kilometer dari Weekuri.</li>
 <li><a href="/id/places/pero-beach/">Pero</a>: kampung nelayan dan pantai matahari terbenam dekat Bondo Kodi, dengan ombak selancar pada pasang yang tepat.</li>
 <li><a href="/id/places/bawana-beach/">Bawana (Mbawana)</a>: tebing dan pantai yang dicapai lewat jalan setapak curam; lengkung batunya yang terkenal runtuh pada 2020.</li>
-<li><a href="/id/places/watu-maladong-beach/">Watu Maladong</a>: pulau-pulau batu kapur di muara Sungai Polapare. Untuk dinikmati, bukan untuk berenang.</li>
+<li><a href="/id/places/watu-maladong-beach/">Watu Maladong</a>: pulau-pulau batu kapur di muara Sungai Polapare. Cukup dipandang, bukan untuk berenang.</li>
 </ul>
 <h3>Kampung adat</h3>
 <ul>
@@ -630,7 +630,7 @@ GUIDES = [
 
 <h2>Budaya: bahasa, Pasola dan kampung</h2>
 <p>Ada dua bahasa utama. Bahasa Weyewa (Wejewa) dituturkan sekitar 65.000 orang di kecamatan-kecamatan timur; bahasa Kodi, dengan sekitar 20.000 penutur, tergolong terancam punah. Keduanya sangat berbeda dari bahasa Kambera di timur. Dengan tamu, orang memakai bahasa Indonesia; lihat juga <a href="/id/getting-here/sumba-phrasebook-useful-words/">kosakata berguna di Sumba</a>.</p>
-<p>Kodi memiliki musim Pasola terpanjang di pulau ini: dua putaran, masing-masing tiga Pasola, pada Februari dan Maret, tersebar di Kodi, Kodi Bangedo dan Kodi Balaghar, dengan Wainyapu sebagai salah satu lapangan paling terkenal. Tanggalnya ditetapkan setiap tahun oleh para Rato setelah cacing laut nyale muncul dan biasanya diumumkan akhir Januari; baca <a href="/id/culture/pasola-explained/">penjelasan Pasola</a>. Banyak kampung di Kodi menganut Marapu. Baca <a href="/id/culture/marapu-ikat-traditional-villages/">Marapu, ikat dan kampung adat</a> sebelum berkunjung: isi buku tamu, beri sumbangan sekitar Rp20.000 atau lebih per orang (2025-2026), minta izin sebelum memotret dan jangan pernah menyentuh kubur atau benda ritual.</p>
+<p>Kodi memiliki musim Pasola terpanjang di pulau ini: dua putaran, masing-masing tiga Pasola, pada Februari dan Maret, tersebar di Kodi, Kodi Bangedo dan Kodi Balaghar, dengan Wainyapu sebagai salah satu lapangan paling terkenal. Tanggalnya ditetapkan setiap tahun oleh para Rato setelah cacing laut nyale muncul dan biasanya diumumkan akhir Januari; baca <a href="/id/culture/pasola-explained/">penjelasan Pasola</a>. Banyak kampung di Kodi menganut Marapu. Baca <a href="/id/culture/marapu-ikat-traditional-villages/">Marapu, ikat dan kampung adat</a> sebelum berkunjung: isi buku tamu, beri sumbangan sekitar Rp 20.000 atau lebih per orang (2025-2026), minta izin sebelum memotret dan jangan pernah menyentuh kubur atau benda ritual.</p>
 
 <h2>Hal praktis</h2>
 <ul>
@@ -642,7 +642,7 @@ GUIDES = [
 </ul>
 
 <h2>Waktu terbaik</h2>
-<p>Musim kemarau, kira-kira Mei sampai September, paling cocok untuk danau, pantai dan jalan ke Kodi; Juli dan Agustus paling ramai dan penginapan cepat penuh. Februari dan Maret adalah bulan Pasola, lebih basah tetapi tak terlupakan jika tanggalnya pas. Musim hujan, kira-kira Desember sampai Maret, membawa bukit hijau dan laut yang lebih besar. Selengkapnya di <a href="/id/things-to-do/beaches-lagoons-waterfalls/">pantai, laguna dan air terjun</a> serta <a href="/id/where-to-stay/where-to-stay-in-sumba/">tempat menginap di Sumba</a>.</p>""",
+<p>Musim kemarau, kira-kira Mei sampai September, paling cocok untuk danau, pantai dan jalan ke Kodi; Juli dan Agustus paling ramai dan penginapan cepat penuh. Februari dan Maret adalah bulan Pasola, lebih basah tetapi tak terlupakan jika tanggalnya pas. Musim hujan, kira-kira Desember sampai Maret, membawa bukit hijau dan gelombang laut yang lebih tinggi. Selengkapnya di <a href="/id/things-to-do/beaches-lagoons-waterfalls/">pantai, laguna dan air terjun</a> serta <a href="/id/where-to-stay/where-to-stay-in-sumba/">tempat menginap di Sumba</a>.</p>""",
  },
  "facts": {
   "en": [["Capital", "Tambolaka (Waitabula)"], ["Size and population", "1,381.94 km²; about 335,000-366,000 people (BPS mid-2025, figures vary by release)"], ["Airport", "Tambolaka (TMC), several daily flights from Bali"], ["Highlights", "Weekuri Lagoon, Mandorak, Pero, Ratenggaro, Wainyapu, Waikelo Sawah"], ["Pasola", "Kodi, Kodi Bangedo and Kodi Balaghar (February and March)"]],
@@ -661,14 +661,14 @@ GUIDES = [
    ["¿Cuál es la capital de Sumba Suroccidental?", "Tambolaka, parte de la ciudad conocida desde siempre como Waitabula (Weetebula). El aeropuerto con más tráfico de la isla, Tambolaka (TMC), está justo al norte del centro."],
    ["¿A qué distancia está la laguna de Weekuri del aeropuerto de Tambolaka?", "Entre unos 40 y 60 km según la ruta, alrededor de 1,5-2 horas en coche."],
    ["¿Dónde se celebra la Pasola en Sumba Suroccidental?", "En la región de Kodi: dos rondas de tres Pasolas, en febrero y marzo, en Kodi, Kodi Bangedo y Kodi Balaghar (incluida Wainyapu). Los ancianos Rato anuncian las fechas, normalmente a finales de enero."],
-   ["¿Es seguro Sumba Suroccidental para turistas?", "En general sí. Toma precauciones normales, evita conducir de noche por zonas remotas de Kodi, aléjate de las desembocaduras por los cocodrilos y respeta las corrientes en las playas de arrecife."],
+   ["¿Es segura Sumba Suroccidental para los turistas?", "En general, sí. Basta con tomar las precauciones habituales, evita conducir de noche por zonas remotas de Kodi, aléjate de las desembocaduras por los cocodrilos y respeta las corrientes en las playas de arrecife."],
    ["¿Hay cajeros en Kodi?", "En casi toda la costa no. Saca en Tambolaka efectivo suficiente para donativos, entradas, comida y gasolina antes de ir al oeste."],
   ],
   "id": [
    ["Apa ibu kota Sumba Barat Daya?", "Tambolaka, bagian dari kota yang sejak lama dikenal sebagai Waitabula (Weetebula). Bandara tersibuk di pulau ini, Tambolaka (TMC), berada tepat di utara pusat kota."],
    ["Berapa jauh Danau Weekuri dari Bandara Tambolaka?", "Sekitar 40-60 km tergantung rute, kira-kira 1,5-2 jam bermobil."],
    ["Di mana Pasola di Sumba Barat Daya?", "Di wilayah Kodi: dua putaran tiga Pasola, pada Februari dan Maret, di Kodi, Kodi Bangedo dan Kodi Balaghar (termasuk Wainyapu). Para Rato mengumumkan tanggalnya, biasanya akhir Januari."],
-   ["Apakah Sumba Barat Daya aman bagi wisatawan?", "Umumnya aman. Lakukan kewaspadaan biasa, hindari berkendara malam di wilayah terpencil Kodi, jauhi muara sungai karena buaya, dan hormati arus kuat di pantai berkarang."],
+   ["Apakah Sumba Barat Daya aman bagi wisatawan?", "Umumnya aman. Tetaplah waspada seperti biasa, hindari berkendara malam di wilayah terpencil Kodi, jauhi muara sungai karena buaya, dan waspadai arus kuat di pantai berkarang."],
    ["Apakah ada ATM di Kodi?", "Di sebagian besar pesisir tidak ada. Tarik uang tunai secukupnya di Tambolaka untuk sumbangan, tiket masuk, makan dan bensin sebelum ke barat."],
   ],
  },
@@ -747,9 +747,9 @@ GUIDES = [
  "es": {
   "title": "Sumba Central (Sumba Tengah): lo que debes saber antes de ir",
   "dek": "La regencia que casi todos cruzan sin parar esconde las mayores tumbas de piedra de Sumba, una cascada en la selva y aldeas tranquilas en la llanura de Anakalang. Por qué detenerse.",
-  "answer": "Sumba Central (Kabupaten Sumba Tengah) es la menos poblada de las cuatro regencias de Sumba, con unos 1.790 km² y cerca de 94.000 habitantes (estimación de BPS a mediados de 2025). Se gobierna desde Waibakul, en la llanura de Anakalang, a unos 20 km al este de Waikabubak. No tiene aeropuerto: está en la carretera principal entre Tambolaka (unos 58 km) y Waingapu (unos 107 km). Detente por las tumbas megalíticas talladas de Anakalang, como las de Pasunga y Gallubakul, y por la cascada de Matayangu en el Parque Nacional Manupeu Tanah Daru, pero lleva efectivo desde Waikabubak o Waingapu.",
-  "body": """<p>Al este de Waikabubak la carretera sube entre bosques y luego se abre en una ancha llanura verde a unos 400 m. Los arrozales llegan hasta el pie de las colinas, los búfalos se revuelcan en las acequias y, junto a la misma carretera, una enorme losa de piedra tallada con las figuras de un jefe y su esposa, con las manos en la cintura, vigila una tumba desde 1926. Esto es Anakalang, el corazón de Sumba Central, y la mayoría de los viajeros solo lo ve por la ventanilla durante el largo trayecto de un lado a otro de la isla.</p>
-<p>En resumen: Sumba Central es pequeña, rural y tranquila, sin aeropuerto y con pocos servicios para visitantes. Merece medio día o un día entero de camino entre el oeste y el este, por sus tumbas megalíticas, una cascada y las aldeas que rodean la llanura.</p>
+  "answer": "Sumba Central (Kabupaten Sumba Tengah) es la menos poblada de las cuatro regencias de Sumba, con unos 1.790 km² y cerca de 94.000 habitantes (estimación de la oficina estadística indonesia, BPS, para mediados de 2025). Su capital es Waibakul, en la llanura de Anakalang, a unos 20 km al este de Waikabubak. No tiene aeropuerto: está en la carretera principal entre Tambolaka (unos 58 km) y Waingapu (unos 107 km). Merece la pena parar por las tumbas megalíticas talladas de Anakalang, como las de Pasunga y Gallubakul, y por la cascada de Matayangu en el Parque Nacional Manupeu Tanah Daru, pero lleva efectivo desde Waikabubak o Waingapu.",
+  "body": """<p>Al este de Waikabubak la carretera sube entre bosques y luego se abre en una ancha llanura verde a unos 400 m. Los arrozales llegan hasta el pie de las colinas, los búfalos se revuelcan en las acequias y, junto a la misma carretera, una enorme losa de piedra tallada con las figuras de un jefe y su esposa, con las manos en la cintura, vigila una tumba desde 1926. Es Anakalang, el corazón de Sumba Central, y la mayoría de los viajeros solo lo ve por la ventanilla durante el largo trayecto de un lado a otro de la isla.</p>
+<p>En resumen: Sumba Central es pequeña, rural y tranquila, sin aeropuerto y con pocos servicios para visitantes. Merece una parada de medio día o un día entero en el trayecto entre el oeste y el este, por sus tumbas megalíticas, una cascada y las aldeas que rodean la llanura.</p>
 
 <h2>Sumba Central en cifras</h2>
 <p>La regencia de Sumba Central (Kabupaten Sumba Tengah) se creó el 22 de mayo de 2007 con partes de Sumba Occidental y Sumba Oriental. Abarca 1.789,69 km² y tenía unos 94.187 habitantes estimados a mediados de 2025, según cifras de BPS recogidas en Wikipedia, lo que la convierte en la regencia menos poblada de la isla. Tiene seis distritos y 65 aldeas, todas rurales.</p>
@@ -765,7 +765,7 @@ GUIDES = [
 <p>Para los vuelos a la isla, consulta <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a>.</p>
 
 <h2>El paisaje</h2>
-<p>Sumba Central ocupa la espina montañosa de la isla, entre el este seco y el oeste verde. Viniendo de Lewa, el paisaje se suaviza y reverdece, entre montañas, valles fluviales y bosque caducifolio denso dentro del parque nacional. La llanura de Anakalang es tierra de arrozales de regadío rodeada de colinas, con aldeas originales en casi todas las cimas de sus bordes. Al sur, el parque baja entre bosques y pastizales hasta bahías remotas del Índico, como Konda y Maloba, a unos 35 km de Gallubakul; parte de esa costa es hoy terreno privado y está vallada.</p>
+<p>Sumba Central ocupa la espina montañosa de la isla, entre el este seco y el oeste verde. Viniendo de Lewa, el paisaje se suaviza y reverdece, entre montañas, valles fluviales y bosque caducifolio denso dentro del parque nacional. La llanura de Anakalang es tierra de arrozales de regadío rodeada de colinas, con aldeas ancestrales en casi todas las cimas que la bordean. Al sur, el parque baja entre bosques y pastizales hasta bahías remotas del Índico, como Konda y Maloba, a unos 35 km de Gallubakul; parte de esa costa es hoy terreno privado y está vallada.</p>
 
 <h2>Lugares principales</h2>
 <h3>Las tumbas de Anakalang</h3>
@@ -777,22 +777,22 @@ GUIDES = [
 </ul>
 <h3>Cascada y bosque</h3>
 <ul>
-<li><a href="/es/places/matayangu-waterfall/">Matayangu</a>: una cascada de unos 75-80 m en el Parque Nacional Manupeu Tanah Daru que cae en una poza turquesa. El acceso es una bajada empinada y resbaladiza por la selva, mejor con guía local y en la estación seca. Es un lugar sagrado para el Marapu.</li>
+<li><a href="/es/places/matayangu-waterfall/">Matayangu</a>: una cascada de unos 75-80 m en el Parque Nacional Manupeu Tanah Daru que cae en una poza turquesa. El acceso es una bajada empinada y resbaladiza por la selva, mejor con guía local y en la estación seca. Es un lugar sagrado para los fieles del Marapu.</li>
 <li><a href="/es/places/lapopu-waterfall/">Lapopu</a>: río abajo, ya en Sumba Occidental y de acceso más fácil, normalmente desde Waikabubak.</li>
 </ul>
 <p>Cerca, en Sumba Occidental, están las aldeas de <a href="/es/places/tarung-village/">Tarung</a> y <a href="/es/places/praijing-village/">Praijing</a>, en Waikabubak; hacia el este, la carretera sigue por la sabana hasta <a href="/es/places/wairinding-hill/">Wairinding</a>.</p>
 
 <h2>Cultura: lenguas, aldeas y tumbas</h2>
 <p>Las principales lenguas locales son el anakalang en la llanura y el mamboru (o momboru) en el norte, además del indonesio. El inglés apenas se habla, así que un conductor o guía que conozca la zona marca la diferencia; nuestra <a href="/es/getting-here/sumba-phrasebook-useful-words/">guía de frases útiles</a> tiene lo básico. Muchas casas tradicionales junto a la carretera tienen hoy techo de chapa; para ver tejados de paja hay que alejarse unos kilómetros de las rutas principales.</p>
-<p>Sumba Central no tiene Pasola propia; los campos más cercanos están en Wanokaka y Lamboya, en Sumba Occidental (ver <a href="/es/culture/pasola-explained/">la Pasola explicada</a>). Los funerales, con el arrastre de losas para las tumbas y sacrificios de búfalos, siguen siendo centrales en la vida local. Lee <a href="/es/culture/marapu-ikat-traditional-villages/">Marapu, ikat y aldeas tradicionales</a> antes de ir: firma el libro de visitas, deja un pequeño donativo, vístete con discreción, pide permiso antes de las fotos y no te subas ni toques las tumbas.</p>
+<p>Sumba Central no tiene Pasola propia; los campos más cercanos están en Wanokaka y Lamboya, en Sumba Occidental (consulta <a href="/es/culture/pasola-explained/">la Pasola explicada</a>). Los funerales, con el arrastre de losas para las tumbas y sacrificios de búfalos, siguen siendo centrales en la vida local. Lee <a href="/es/culture/marapu-ikat-traditional-villages/">Marapu, ikat y aldeas tradicionales</a> antes de ir: firma el libro de visitas, deja un pequeño donativo, vístete con discreción, pide permiso antes de las fotos y no te subas ni toques las tumbas.</p>
 
 <h2>Aspectos prácticos</h2>
 <ul>
 <li><strong>Efectivo:</strong> no cuentes con cajeros en Waibakul. Los más fiables para tarjetas extranjeras (BNI y Mandiri) están en Waikabubak, Waingapu y Tambolaka, así que llega con suficientes billetes pequeños.</li>
 <li><strong>Salud:</strong> Waibakul tiene un pequeño hospital de la regencia y hay puskesmas en los distritos, pero para algo más que atención básica el hospital grande más cercano es el RSUD Waikabubak, a unos 20 km al oeste. Consulta nuestra <a href="/es/getting-here/sumba-travel-safety-health/">guía de seguridad y salud</a>.</li>
-<li><strong>Gasolina:</strong> llena el depósito en Waikabubak o Waingapu antes de cruzar la isla; entre medias hay pocas gasolineras, y en octubre de 2026 hubo colas y límites de compra en el oeste. Ver <a href="/es/getting-here/getting-around-sumba/">cómo moverse por Sumba</a>.</li>
+<li><strong>Gasolina:</strong> llena el depósito en Waikabubak o Waingapu antes de cruzar la isla; entre medias hay pocas gasolineras, y en octubre de 2026 hubo colas y límites de compra en el oeste. Más información en <a href="/es/getting-here/getting-around-sumba/">cómo moverse por Sumba</a>.</li>
 <li><strong>Cobertura:</strong> Telkomsel funciona a lo largo de la carretera principal; en el parque nacional y los valles del sur no esperes señal.</li>
-<li><strong>Comer y dormir:</strong> en Waibakul las opciones son muy escasas; la mayoría duerme en Waikabubak y viene en excursión de un día. Ver <a href="/es/where-to-stay/where-to-stay-in-sumba/">dónde alojarse en Sumba</a>.</li>
+<li><strong>Comer y dormir:</strong> en Waibakul las opciones son muy escasas; la mayoría duerme en Waikabubak y viene en excursión de un día. Más información en <a href="/es/where-to-stay/where-to-stay-in-sumba/">dónde alojarse en Sumba</a>.</li>
 </ul>
 
 <h2>Cuándo ir</h2>
@@ -800,10 +800,10 @@ GUIDES = [
  },
  "id": {
   "title": "Sumba Tengah: yang perlu diketahui sebelum berangkat",
-  "dek": "Kabupaten yang biasanya hanya dilintasi ini menyimpan kubur batu terbesar di Sumba, air terjun di tengah hutan dan kampung-kampung tenang di dataran Anakalang. Ini alasan untuk singgah.",
-  "answer": "Kabupaten Sumba Tengah adalah kabupaten dengan penduduk paling sedikit di Sumba, sekitar 1.790 km² dengan kira-kira 94.000 jiwa (proyeksi BPS pertengahan 2025), beribu kota di Waibakul di dataran Anakalang, sekitar 20 km di timur Waikabubak. Tidak ada bandara: kabupaten ini dilalui jalan utama antara Tambolaka (sekitar 58 km) dan Waingapu (sekitar 107 km). Singgahlah untuk kubur megalitik berukir di Anakalang, seperti di Pasunga dan Gallubakul, serta Air Terjun Matayangu di Taman Nasional Manupeu Tanah Daru, tetapi bawa uang tunai dari Waikabubak atau Waingapu.",
+  "dek": "Kabupaten yang biasanya hanya dilintasi ini menyimpan kubur batu terbesar di Sumba, air terjun di tengah hutan dan kampung-kampung tenang di dataran Anakalang. Inilah alasan untuk singgah.",
+  "answer": "Kabupaten Sumba Tengah adalah kabupaten dengan penduduk paling sedikit di Sumba, sekitar 1.790 km² dengan kira-kira 94.000 jiwa (proyeksi Badan Pusat Statistik atau BPS untuk pertengahan 2025), beribu kota di Waibakul di dataran Anakalang, sekitar 20 km di timur Waikabubak. Tidak ada bandara: kabupaten ini dilalui jalan utama antara Tambolaka (sekitar 58 km) dan Waingapu (sekitar 107 km). Singgahlah untuk kubur megalitik berukir di Anakalang, seperti di Pasunga dan Gallubakul, serta Air Terjun Matayangu di Taman Nasional Manupeu Tanah Daru, tetapi bawa uang tunai dari Waikabubak atau Waingapu.",
   "body": """<p>Di timur Waikabubak jalan mendaki menembus hutan, lalu mendatar di dataran hijau yang luas pada ketinggian sekitar 400 m. Sawah membentang sampai kaki bukit, kerbau berkubang di parit, dan tepat di tepi jalan sebuah lempeng batu raksasa berukir sosok seorang raja dan istrinya, bertolak pinggang, berdiri di atas kubur sejak 1926. Inilah Anakalang, jantung Sumba Tengah, yang oleh kebanyakan wisatawan hanya dilihat dari jendela mobil dalam perjalanan panjang melintasi pulau.</p>
-<p>Singkatnya: Sumba Tengah kecil, pedesaan dan tenang, tanpa bandara dan dengan fasilitas wisata yang minim. Wilayah ini layak disinggahi setengah atau satu hari dalam perjalanan antara barat dan timur, untuk kubur megalitik, air terjun dan kampung-kampung di tepi dataran.</p>
+<p>Singkatnya: Sumba Tengah kecil, bernuansa pedesaan, dan tenang, tanpa bandara dan dengan fasilitas wisata yang minim. Wilayah ini layak disinggahi setengah atau satu hari dalam perjalanan antara barat dan timur, untuk kubur megalitik, air terjun dan kampung-kampung di tepi dataran.</p>
 
 <h2>Sekilas Sumba Tengah</h2>
 <p>Kabupaten Sumba Tengah dibentuk pada 22 Mei 2007 dari sebagian wilayah Sumba Barat dan Sumba Timur. Luasnya 1.789,69 km² dengan proyeksi penduduk 94.187 jiwa pada pertengahan 2025 menurut data BPS yang dikutip Wikipedia, menjadikannya kabupaten berpenduduk paling sedikit di Sumba. Ada enam kecamatan dan 65 desa.</p>
@@ -819,11 +819,11 @@ GUIDES = [
 <p>Untuk penerbangan ke Sumba, baca <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a>.</p>
 
 <h2>Bentang alam</h2>
-<p>Sumba Tengah terletak di punggung pegunungan pulau, di antara timur yang kering dan barat yang hijau. Dari arah Lewa, bentang alam makin landai dan hijau, melewati pegunungan, lembah sungai dan hutan gugur yang lebat di taman nasional. Dataran Anakalang adalah persawahan beririgasi yang dikelilingi bukit, dengan kampung asli di hampir setiap puncak bukit di tepinya. Di selatan, taman nasional turun melalui hutan dan padang rumput ke teluk-teluk terpencil di Samudra Hindia, seperti Konda dan Maloba, sekitar 35 km dari Gallubakul; sebagian pesisir itu kini menjadi lahan pribadi dan dipagari.</p>
+<p>Sumba Tengah terletak di punggung pegunungan pulau, di antara timur yang kering dan barat yang hijau. Dari arah Lewa, bentang alam makin landai dan hijau, melewati pegunungan, lembah sungai dan hutan gugur yang lebat di taman nasional. Dataran Anakalang adalah persawahan beririgasi yang dikelilingi bukit, dengan kampung lama di hampir setiap puncak bukit di tepinya. Di selatan, taman nasional turun melalui hutan dan padang rumput ke teluk-teluk terpencil di Samudra Hindia, seperti Konda dan Maloba, sekitar 35 km dari Gallubakul; sebagian pesisir itu kini menjadi lahan pribadi dan dipagari.</p>
 
 <h2>Tempat-tempat utama</h2>
 <h3>Kubur batu Anakalang</h3>
-<p>Anakalang memiliki sebagian kubur megalitik terbesar di Sumba, dengan ukiran yang lebih kaya dibanding daerah lain. Titik awal yang baik:</p>
+<p>Anakalang memiliki sebagian kubur megalitik terbesar di Sumba, dengan ukiran yang lebih kaya dibanding daerah lain. Beberapa tempat yang baik untuk memulai:</p>
 <ul>
 <li><strong>Kampung Pasunga:</strong> tepat di tepi jalan utama, sekitar 22 km di timur Waikabubak, di seberang pertigaan Waibakul. Kubur paling terkenalnya berupa lempeng tegak berukir raja dan istrinya, dibuat pada 1926; pengukirannya memakan waktu enam bulan dan 150 ekor kerbau dikorbankan dalam upacara pemakamannya. Warga sudah terbiasa dengan tamu.</li>
 <li><strong>Kabunduk:</strong> kampung sekitar 1 km di selatan Pasunga, tempat bangunan lama dan baru bercampur. Dari sini, ditemani warga, Anda bisa mendaki ke kampung di puncak bukit, Makatakeri dan Lai Tarung, dengan pemandangan dataran sawah.</li>
@@ -846,7 +846,7 @@ GUIDES = [
 <li><strong>Kesehatan:</strong> Waibakul punya rumah sakit daerah yang kecil dan ada puskesmas di kecamatan, tetapi untuk perawatan lebih dari dasar, rumah sakit besar terdekat adalah RSUD Waikabubak, sekitar 20 km ke barat. Baca <a href="/id/getting-here/sumba-travel-safety-health/">panduan keamanan dan kesehatan</a> kami.</li>
 <li><strong>BBM:</strong> isi penuh di Waikabubak atau Waingapu sebelum melintasi pulau; SPBU di antaranya sedikit, dan pada Oktober 2026 terjadi antrean serta pembatasan pembelian di wilayah barat. Lihat <a href="/id/getting-here/getting-around-sumba/">berkeliling Sumba</a>.</li>
 <li><strong>Sinyal:</strong> Telkomsel berfungsi di sepanjang jalan utama; di taman nasional dan lembah selatan biasanya tidak ada sinyal.</li>
-<li><strong>Makan dan menginap:</strong> pilihan di Waibakul sangat terbatas; kebanyakan wisatawan menginap di Waikabubak dan datang sebagai perjalanan sehari. Lihat <a href="/id/where-to-stay/where-to-stay-in-sumba/">tempat menginap di Sumba</a>.</li>
+<li><strong>Makan dan menginap:</strong> pilihan di Waibakul sangat terbatas; kebanyakan wisatawan menginap di Waikabubak dan datang dalam perjalanan pergi-pulang sehari. Lihat <a href="/id/where-to-stay/where-to-stay-in-sumba/">tempat menginap di Sumba</a>.</li>
 </ul>
 
 <h2>Waktu terbaik</h2>
@@ -877,7 +877,7 @@ GUIDES = [
    ["Apakah Sumba Tengah punya bandara?", "Tidak. Bandara terdekat adalah Tambolaka (TMC), sekitar 58 km atau kira-kira 1,5 jam; Waingapu (WGP) sekitar 107 km ke timur."],
    ["Apa yang bisa dilihat di Sumba Tengah?", "Kubur megalitik berukir di Anakalang (Pasunga, Kabunduk, Gallubakul), kampung-kampung di perbukitan sekitar dataran, dan Air Terjun Matayangu di Taman Nasional Manupeu Tanah Daru."],
    ["Apakah ada Pasola di Sumba Tengah?", "Tidak. Lapangan Pasola terdekat ada di Wanokaka dan Lamboya, Sumba Barat (Februari-Maret)."],
-   ["Bisakah menginap di Sumba Tengah?", "Pilihannya sangat terbatas, jadi kebanyakan wisatawan menginap di Waikabubak, sekitar 30 menit, dan mengunjungi Anakalang serta Matayangu sebagai perjalanan sehari."],
+   ["Bisakah menginap di Sumba Tengah?", "Pilihannya sangat terbatas, jadi kebanyakan wisatawan menginap di Waikabubak, sekitar 30 menit, dan mengunjungi Anakalang serta Matayangu dalam perjalanan sehari."],
   ],
  },
  "places": [{"name": "Waibakul", "lat": -9.6216, "lon": 119.5987, "area": "Central Sumba"}],
@@ -1066,8 +1066,8 @@ GUIDES = [
  "es": {
   "title": "Frases útiles en Sumba: indonesio y palabras locales para viajeros",
   "dek": "Fuera de los complejos turísticos, el inglés se acaba pronto. Lo esencial del indonesio y unas pocas palabras verificadas en kambera y weyewa te abrirán mercados, caminos y aldeas.",
-  "answer": "El indonesio (bahasa Indonesia) se entiende en casi todo Sumba y es la lengua que conviene aprender: empieza por terima kasih (gracias), permisi (con permiso), berapa harganya? (¿cuánto cuesta?) y los números. En casa la gente habla una de las nueve lenguas locales aproximadamente, como el kambera en el este y el weyewa o el kodi en el oeste, y el inglés se limita sobre todo a las ciudades y al turismo. Unas pocas palabras locales, como los números en kambera o los títulos Umbu y Rambu, arrancan sonrisas al instante.",
-  "body": """<p>El conductor deja el asfalto, la carretera se estrecha hasta ser un camino entre maizales y de repente estás en una aldea de altos tejados de paja. Unos niños llegan corriendo y gritan un alegre "¡Halo!", un anciano envuelto en un paño ikat saluda con la cabeza desde la sombra de un porche y alguien te pregunta algo que no entiendes. Es el momento en que unas pocas palabras de indonesio lo cambian todo: un saludo, un gracias, una pregunta por el camino. En Sumba, donde el inglés escasea en cuanto sales de las ciudades, te convierten de espectador en invitado.</p>
+  "answer": "El indonesio (bahasa Indonesia) se entiende en casi todo Sumba y es la lengua que conviene aprender: empieza por terima kasih (gracias), permisi (con permiso), berapa harganya? (¿cuánto cuesta?) y los números. En casa la gente habla alguna de las cerca de nueve lenguas locales, como el kambera en el este y el weyewa o el kodi en el oeste, y el inglés se limita sobre todo a las ciudades y al turismo. Unas pocas palabras locales, como los números en kambera o los títulos Umbu y Rambu, arrancan sonrisas al instante.",
+  "body": """<p>El conductor deja el asfalto, la carretera se estrecha hasta ser un camino entre maizales y de repente estás en una aldea de altos tejados de paja. Unos niños llegan corriendo y gritan un alegre "¡Halo!", un anciano envuelto en un paño ikat saluda con la cabeza desde la sombra de un porche y alguien te pregunta algo que no entiendes. Es el momento en que unas pocas palabras de indonesio lo cambian todo: un saludo, un gracias, una pregunta por el camino. En Sumba, donde el inglés escasea en cuanto sales de las ciudades, hacen que pases de espectador a invitado.</p>
 <p>Esta página reúne el indonesio que de verdad usarás en la isla, con pistas de pronunciación pensadas para hispanohablantes, y un puñado de palabras en las lenguas propias de Sumba que hemos podido comprobar en fuentes lingüísticas.</p>
 
 <h2>¿Qué lenguas se hablan en Sumba?</h2>
@@ -1112,7 +1112,7 @@ GUIDES = [
 <tr><td>Tolong bicara lebih pelan</td><td>Hable más despacio, por favor</td><td>TO-long bi-CHA-ra L'BI P'LAN</td></tr>
 <tr><td>Selamat jalan / Sampai jumpa</td><td>Adiós (a quien se va) / Hasta luego</td><td>s'LA-mat DYA-lan / SAM-pai DYUM-pa</td></tr>
 </table>
-<p><strong>Cómo dirigirse a la gente:</strong> a un hombre de tu edad o mayor llámalo <em>Bapak</em> o <em>Pak</em>, y a una mujer, <em>Ibu</em> o <em>Bu</em>. <em>Kakak</em> (hermano o hermana mayor) es una forma cercana para alguien algo mayor que tú, y <em>Adik</em> sirve para niños o gente más joven. Estas fórmulas importan en Sumba, donde la edad y el rango marcan cómo se habla la gente.</p>
+<p><strong>Cómo dirigirse a la gente:</strong> a un hombre de tu edad o mayor llámalo <em>Bapak</em> o <em>Pak</em>, y a una mujer, <em>Ibu</em> o <em>Bu</em>. <em>Kakak</em> (hermano o hermana mayor) es una forma cercana para alguien algo mayor que tú, y <em>Adik</em> sirve para niños o gente más joven. Estas fórmulas importan en Sumba, donde la edad y el rango marcan la forma en que la gente se dirige a los demás.</p>
 
 <h2>Números, dinero y precios</h2>
 <table>
@@ -1127,7 +1127,7 @@ GUIDES = [
 <tr><td>100.000</td><td>seratus ribu</td><td>s'RA-tus RI-bu</td></tr>
 <tr><td>1.000.000</td><td>satu juta</td><td>SA-tu DYU-ta</td></tr>
 </table>
-<p>Los precios casi siempre se dan en miles y a menudo se omiten los ceros: "lima puluh" en un puesto del mercado suele significar 50.000 IDR. Los donativos en las aldeas, el aparcamiento y las entradas se pagan con billetes pequeños, así que practica <em>sepuluh ribu</em> y <em>dua puluh ribu</em>.</p>
+<p>Los precios casi siempre se dan en miles y a menudo se omiten los ceros: "lima puluh" en un puesto del mercado suele significar 50.000 rupias. Los donativos en las aldeas, el aparcamiento y las entradas se pagan con billetes pequeños, así que practica <em>sepuluh ribu</em> y <em>dua puluh ribu</em>.</p>
 <table>
 <tr><th>Frase</th><th>Significado</th><th>Cómo suena</th></tr>
 <tr><td>Berapa harganya?</td><td>¿Cuánto cuesta?</td><td>b'RA-pa HAR-ga-ña</td></tr>
@@ -1151,7 +1151,7 @@ GUIDES = [
 <tr><td>Pom bensin / bensin</td><td>Gasolinera / gasolina</td><td>pom BEN-sin</td></tr>
 <tr><td>Utara / selatan / timur / barat</td><td>Norte / sur / este / oeste</td><td>u-TA-ra / s'LA-tan / TI-mur / BA-rat</td></tr>
 </table>
-<p>Palabras útiles para orientarse: <em>pantai</em> (playa), <em>air terjun</em> (cascada), <em>bukit</em> (colina), <em>kampung adat</em> (aldea tradicional), <em>pasar</em> (mercado) y <em>bandara</em> (aeropuerto). En los carteles verás los nombres de las regencias: Sumba Barat (Occidental), Sumba Barat Daya (Suroccidental), Sumba Tengah (Central) y Sumba Timur (Oriental). Para el transporte, mira <a href="/es/getting-here/getting-around-sumba/">cómo moverse por Sumba</a>.</p>
+<p>Palabras útiles para orientarse: <em>pantai</em> (playa), <em>air terjun</em> (cascada), <em>bukit</em> (colina), <em>kampung adat</em> (aldea tradicional), <em>pasar</em> (mercado) y <em>bandara</em> (aeropuerto). En los carteles verás los nombres de las regencias: Sumba Barat (Occidental), Sumba Barat Daya (Suroccidental), Sumba Tengah (Central) y Sumba Timur (Oriental). Para el transporte, consulta <a href="/es/getting-here/getting-around-sumba/">cómo moverse por Sumba</a>.</p>
 
 <h2>Comida y bebida</h2>
 <table>
@@ -1217,7 +1217,7 @@ GUIDES = [
 <tr><td>Umbu</td><td>hombre; título de respeto ante el nombre de un hombre</td><td>UM-bu</td></tr>
 <tr><td>Rambu</td><td>mujer; título de respeto ante el nombre de una mujer</td><td>RAM-bu</td></tr>
 </table>
-<p>Verás <em>wai</em> y <em>wee</em> en topónimos por todas partes: Waingapu, Waikabubak, Weekuri, Waikelo. Umbu y Rambu se asocian tradicionalmente con las familias nobles de Sumba Oriental, así que úsalos solo como oigas que los usa la gente del lugar.</p>
+<p>Verás <em>wai</em> y <em>wee</em> en topónimos por todas partes: Waingapu, Waikabubak, Weekuri, Waikelo. Umbu y Rambu se asocian tradicionalmente con las familias nobles de Sumba Oriental, así que úsalos solo como veas que lo hace la gente del lugar.</p>
 <h3>Weyewa (Sumba Suroccidental)</h3>
 <p>No hemos encontrado una lista publicada y fiable de saludos en weyewa, así que no nos la inventamos. Un estudio de 2025 sobre los términos de parentesco del weyewa recoge <em>ama</em> (padre) e <em>inna</em> (madre), palabras que oirás constantemente en la vida familiar, y señala que las formas de tratamiento siguen la edad, lo que marca el respeto y la cortesía. Para el kodi no hemos encontrado ninguna fuente fiable de frases cotidianas: allí, mejor el indonesio.</p>
 
@@ -1228,7 +1228,7 @@ GUIDES = [
 <li><strong>Ve con guía a las aldeas:</strong> puede traducir a la lengua local y explicarte las costumbres. Consulta <a href="/es/where-to-stay/where-to-stay-in-sumba/">dónde alojarse en Sumba</a> para bases cerca de las aldeas.</li>
 <li><strong>Descarga un traductor sin conexión:</strong> la cobertura desaparece en las colinas, así que baja el paquete de indonesio antes de salir de la ciudad.</li>
 </ul>
-<p>¿Planeando el viaje? Empieza por <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a> y nuestras guías de las regencias: <a href="/es/places/east-sumba-regency/">Sumba Oriental</a>, <a href="/es/places/west-sumba-regency/">Occidental</a>, <a href="/es/places/southwest-sumba-regency/">Suroccidental</a> y <a href="/es/places/central-sumba-regency/">Central</a>.</p>""",
+<p>¿Estás preparando el viaje? Empieza por <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a> y nuestras guías de las regencias: <a href="/es/places/east-sumba-regency/">Sumba Oriental</a>, <a href="/es/places/west-sumba-regency/">Occidental</a>, <a href="/es/places/southwest-sumba-regency/">Suroccidental</a> y <a href="/es/places/central-sumba-regency/">Central</a>.</p>""",
  },
  "id": {
   "title": "Kosakata berguna di Sumba: bahasa daerah dan ungkapan untuk wisatawan",
@@ -1248,7 +1248,7 @@ GUIDES = [
 <p>Bahasa-bahasa di barat sangat berbeda satu sama lain, sampai warga kampung bertetangga kadang tidak saling mengerti, sedangkan di timur ada satu bahasa dengan banyak dialek. Di pedalaman, orang tua kadang lebih lancar berbahasa daerah daripada bahasa Indonesia, sementara anak-anak belajar bahasa Indonesia di sekolah dan sering menjadi penerjemah. Bahasa Inggris hanya berguna di kota dan di tempat wisata.</p>
 
 <h2>Lafal dan logat</h2>
-<p>Bagi penutur bahasa Indonesia tidak ada kesulitan lafal. Yang perlu diperhatikan hanyalah nama-nama tempat dan kata daerah: banyak yang diawali bunyi sengau seperti <em>mb</em>, <em>nd</em> dan <em>ngg</em> (Mbawana, Ndapayami, Nggongi), yang diucapkan menyatu, bukan dengan jeda. Dalam bahasa Kambera ada pula huruf ɗ, bunyi d "implosif" yang diucapkan sambil sedikit menarik udara ke dalam. Mengucapkannya sebagai d biasa pun tetap dimengerti.</p>
+<p>Bagi penutur bahasa Indonesia, lafal tidak menjadi masalah. Yang perlu diperhatikan hanyalah nama-nama tempat dan kata daerah: banyak yang diawali bunyi sengau seperti <em>mb</em>, <em>nd</em> dan <em>ngg</em> (Mbawana, Ndapayami, Nggongi), yang diucapkan menyatu, bukan dengan jeda. Dalam bahasa Kambera ada pula huruf ɗ, bunyi d "implosif" yang diucapkan sambil sedikit menarik udara ke dalam. Mengucapkannya sebagai d biasa pun tetap dimengerti.</p>
 <ul>
 <li>Bunyi <em>h</em> dalam bahasa Kambera sering menggantikan <em>s</em> dalam bahasa lain: sekitar tahun 1900 semua bunyi s lama dalam bahasa Kambera berubah menjadi h.</li>
 <li>Karena itu, pulau ini disebut <em>Humba</em> dalam bahasa-bahasa setempat, dan bahasa Kambera juga dikenal sebagai <em>Hilu Humba</em>.</li>
@@ -1289,7 +1289,7 @@ GUIDES = [
 <tr><td>100.000</td><td>seratus ribu</td><td>(sama)</td></tr>
 <tr><td>1.000.000</td><td>satu juta</td><td>(sama)</td></tr>
 </table>
-<p>Di pasar, harga biasanya disebut dalam ribuan tanpa kata "ribu": "lima puluh" berarti Rp50.000. Sumbangan di kampung adat, parkir dan tiket masuk dibayar dengan uang kecil, jadi siapkan pecahan sepuluh ribu dan dua puluh ribu sebelum meninggalkan kota.</p>
+<p>Di pasar, harga biasanya disebut dalam ribuan tanpa kata "ribu": "lima puluh" berarti Rp 50.000. Sumbangan di kampung adat, parkir dan tiket masuk dibayar dengan uang kecil, jadi siapkan pecahan sepuluh ribu dan dua puluh ribu sebelum meninggalkan kota.</p>
 <table>
 <tr><th>Ungkapan</th><th>Bahasa Inggris</th><th>Catatan pemakaian di Sumba</th></tr>
 <tr><td>Berapa harganya?</td><td>How much is it?</td><td>Untuk kain tenun, tanyakan juga lama pembuatannya</td></tr>
@@ -1389,7 +1389,7 @@ GUIDES = [
 <li><strong>Pakai pemandu di kampung:</strong> pemandu lokal bisa menerjemahkan ke bahasa daerah dan menjelaskan adat. Lihat <a href="/id/where-to-stay/where-to-stay-in-sumba/">tempat menginap di Sumba</a> untuk basis dekat kampung-kampung.</li>
 <li><strong>Hormati bahasa daerah:</strong> jangan menertawakan logat atau bahasa setempat; bagi banyak warga, bahasa daerah adalah bagian dari adat dan Marapu.</li>
 </ul>
-<p>Merencanakan perjalanan? Mulailah dengan <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a> dan panduan kabupaten kami: <a href="/id/places/east-sumba-regency/">Sumba Timur</a>, <a href="/id/places/west-sumba-regency/">Sumba Barat</a>, <a href="/id/places/southwest-sumba-regency/">Sumba Barat Daya</a> dan <a href="/id/places/central-sumba-regency/">Sumba Tengah</a>.</p>""",
+<p>Sedang merencanakan perjalanan? Mulailah dengan <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a> dan panduan kabupaten kami: <a href="/id/places/east-sumba-regency/">Sumba Timur</a>, <a href="/id/places/west-sumba-regency/">Sumba Barat</a>, <a href="/id/places/southwest-sumba-regency/">Sumba Barat Daya</a> dan <a href="/id/places/central-sumba-regency/">Sumba Tengah</a>.</p>""",
  },
  "facts": {
   "en": [["Official language", "Indonesian (Bahasa Indonesia), understood almost everywhere"], ["Local languages", "About nine, including Kambera (east), Weyewa and Kodi (west)"], ["Largest local language", "Kambera, about 240,000 speakers"], ["English", "Mostly in towns, hotels and with guides"], ["Most useful phrase", "Terima kasih (thank you); permisi (excuse me) in villages"]],

@@ -56,9 +56,9 @@ GUIDES = [
   "dek": "Colinas de hierba que pasan del verde al dorado según la estación, a media hora de Waingapu: la vista más famosa del este de Sumba y cómo disfrutarla bien.",
   "answer": "La colina de Wairinding (Bukit Wairinding) es un mirador de sabana a unos 20-25 km al oeste de Waingapu, en la carretera principal hacia Waikabubak, a unos 30-45 minutos en coche. No hay entrada oficial, aunque a veces se cobra un pequeño aparcamiento; ve al amanecer o a última hora de la tarde, en la estación seca (aproximadamente mayo-septiembre) si quieres colinas doradas o en la de lluvias si las prefieres verdes.",
   "body": """<p>La carretera sale de Waingapu, las casas se espacian y, de repente, el paisaje se abre. Desde lo alto de Wairinding las colinas se extienden en todas direcciones como una manta arrugada, con pliegues y crestas que atrapan el sol bajo y hondonadas cada vez más oscuras. En los meses secos la hierba tiene color de paja y miel; tras las lluvias se vuelve de un verde suave, casi irreal. El viento no para, se oye correr entre la hierba, y a veces llegan las voces de los pastores que bajan vacas o caballos por una ladera lejana.</p>
-<p>Wairinding es la imagen clásica del este de Sumba y es fácil llegar. Aquí explicamos dónde está, cuándo es mejor la luz y cómo visitarlo sin ser el viajero que los vecinos recuerdan por malos motivos.</p>
+<p>Wairinding es la imagen clásica del este de Sumba y es fácil llegar. Aquí explicamos dónde está, cuándo es mejor la luz y cómo visitarlo sin convertirte en el viajero al que los vecinos recuerdan por malos motivos.</p>
 
-<h2>Qué es y por qué ir</h2>
+<h2>Qué es y por qué merece la pena</h2>
 <p>Bukit Wairinding es una zona de colinas redondeadas y cubiertas de hierba en la regencia de Sumba Oriental, parte de la sabana que cubre gran parte de la mitad este, más seca, de la isla. La información turística oficial de Indonesia la describe verde en la estación húmeda y de un marrón dorado en la seca, y recomienda el atardecer. Las colinas salieron en las películas indonesias <em>Pendekar Tongkat Emas</em> (2014) y <em>Susah Sinyal</em> (2017), lo que las hizo famosas entre viajeros nacionales y fotógrafos de bodas.</p>
 <p>No hay edificios, ni senderos marcados, ni nada que "hacer" salvo subir, sentarse y ver cómo cambia la luz. Esa es la gracia. Para muchos viajeros es el momento en que entienden lo distinto que es el este de Sumba del oeste, verde y boscoso.</p>
 
@@ -68,9 +68,9 @@ GUIDES = [
 <li><strong>Desde el aeropuerto de Waingapu (WGP):</strong> unos 30-45 minutos; una parada fácil al principio o al final de un viaje por el este.</li>
 <li><strong>Desde Tambolaka (TMC):</strong> de Tambolaka a Waingapu hay unos 170 km y 4-5 horas en coche, y Wairinding está en esa carretera, así que calcula unas 4 horas y para de camino al este.</li>
 </ul>
-<p>No hay transporte público regular hasta el mirador. Casi todo el mundo va en coche con conductor o en moto de alquiler; guías recientes hablan de motos desde unos 100.000 IDR al día y coche con conductor desde unos 500.000 IDR al día en Waingapu (2025-2026, los precios varían).</p>
+<p>No hay transporte público regular hasta el mirador. Casi todo el mundo va en coche con conductor o en moto de alquiler; guías recientes hablan de motos desde unas 100.000 rupias al día y coche con conductor desde unas 500.000 rupias al día en Waingapu (2025-2026, los precios varían).</p>
 
-<h2>Cuándo ir y mejor hora del día</h2>
+<h2>Cuándo ir y a qué hora</h2>
 <p>Ve al amanecer o en la última hora o dos antes de la puesta de sol, cuando la luz lateral marca los pliegues de las colinas. A mediodía la luz es plana, hace calor y no hay sombra. En cuanto al color:</p>
 <ul>
 <li><strong>Estación seca (aproximadamente mayo-septiembre, a menudo hasta noviembre en el este):</strong> colinas doradas y marrones, cielos despejados, caminos polvorientos.</li>
@@ -80,8 +80,8 @@ GUIDES = [
 
 <h2>Consejos y normas de respeto</h2>
 <ul>
-<li><strong>Tarifas:</strong> las fuentes oficiales dicen que no hay entrada. A veces se cobra un pequeño aparcamiento (un relato de 2018 habla de 5.000 IDR); lleva billetes pequeños.</li>
-<li><strong>Niños y caballos:</strong> puede que niños que cuidan animales se ofrezcan a guiarte o a posar con caballos, y se ha informado de alquiler de caballo o traje tradicional para fotos por unos 50.000 IDR. Si haces la foto, acuerda antes el precio y paga lo justo. Pide permiso antes de fotografiar a nadie.</li>
+<li><strong>Tarifas:</strong> las fuentes oficiales dicen que no hay entrada. A veces se cobra un pequeño aparcamiento (un relato de 2018 habla de 5.000 rupias); lleva billetes pequeños.</li>
+<li><strong>Niños y caballos:</strong> puede que niños que cuidan animales se ofrezcan a guiarte o a posar con caballos, y se ha informado de alquiler de caballo o traje tradicional para fotos por unas 50.000 rupias. Si haces la foto, acuerda antes el precio y paga lo justo. Pide permiso antes de fotografiar a nadie.</li>
 <li><strong>Lleva:</strong> agua, sombrero, protector solar y calzado con buen agarre; en la colina no hay sombra.</li>
 <li><strong>Respeta la tierra:</strong> estas colinas son pastos de familias locales, no un parque. Llévate toda la basura, no enciendas fuego y no vueles drones sobre personas o animales sin preguntar.</li>
 <li><strong>Seguridad:</strong> las laderas son más empinadas de lo que parecen en las fotos; aléjate de los bordes con viento o después de llover.</li>
@@ -96,13 +96,13 @@ GUIDES = [
 <p>Para más paisajes del este de Sumba, consulta nuestra guía de <a href="/es/things-to-do/beaches-lagoons-waterfalls/">playas, lagunas y cascadas</a>.</p>"""
  },
  "id": {
-  "title": "Bukit Wairinding, Sumba: kapan datang, rute, dan yang perlu diketahui",
+  "title": "Bukit Wairinding, Sumba: kapan datang, rute, dan hal yang perlu diketahui",
   "dek": "Perbukitan rumput yang berganti dari hijau ke keemasan mengikuti musim, setengah jam dari Waingapu: pemandangan paling terkenal di Sumba Timur dan cara menikmatinya.",
   "answer": "Bukit Wairinding adalah titik pandang sabana sekitar 20-25 km di barat Waingapu, di jalan utama menuju Waikabubak, kira-kira 30-45 menit naik mobil. Tidak ada tiket masuk resmi, meski kadang ada biaya parkir kecil; datanglah saat matahari terbit atau sore hari, pada musim kemarau (kira-kira Mei-September) untuk bukit keemasan atau musim hujan untuk bukit hijau.",
   "body": """<p>Jalan menanjak meninggalkan Waingapu, rumah-rumah makin jarang, lalu lanskap tiba-tiba terbuka. Dari puncak Wairinding, perbukitan bergelombang ke segala arah seperti selimut kusut, lipatan dan punggungannya menangkap cahaya matahari rendah, setiap cekungan sedikit lebih gelap dari yang lain. Pada bulan-bulan kering rumputnya berwarna jerami dan madu; setelah hujan berubah hijau lembut, nyaris tak nyata. Angin tak pernah berhenti, terdengar menyisir rumput, dan kadang terdengar seruan gembala yang menggiring sapi atau kuda menuruni lereng di kejauhan.</p>
 <p>Wairinding adalah gambaran klasik Sumba Timur dan mudah dijangkau. Halaman ini menjelaskan lokasinya, kapan cahayanya paling bagus, dan cara berkunjung dengan sopan.</p>
 
-<h2>Apa itu dan mengapa ke sana</h2>
+<h2>Mengenal lebih dekat</h2>
 <p>Bukit Wairinding adalah kawasan bukit-bukit rumput yang membulat di Kabupaten Sumba Timur, bagian dari bentang sabana yang menutupi sebagian besar wilayah timur pulau yang lebih kering. Materi pariwisata resmi Indonesia menggambarkannya hijau segar di musim hujan dan cokelat keemasan di musim kemarau, serta menyarankan datang saat senja. Bukit ini menjadi lokasi film <em>Pendekar Tongkat Emas</em> (2014) dan <em>Susah Sinyal</em> (2017), yang membuatnya terkenal di kalangan wisatawan domestik dan fotografer prewedding.</p>
 <p>Tidak ada bangunan, tidak ada jalur resmi, dan tidak ada "kegiatan" selain naik, duduk, dan menyaksikan cahaya berubah. Justru itu intinya. Bagi banyak pelancong, di sinilah mereka menyadari betapa berbedanya Sumba Timur dari Sumba bagian barat yang hijau dan berhutan.</p>
 
@@ -112,7 +112,7 @@ GUIDES = [
 <li><strong>Dari Bandara Waingapu (WGP):</strong> sekitar 30-45 menit; cocok sebagai persinggahan pertama atau terakhir dalam perjalanan di Sumba Timur.</li>
 <li><strong>Dari Tambolaka (TMC):</strong> Tambolaka ke Waingapu sekitar 170 km dan 4-5 jam bermobil, dan Wairinding ada di jalur itu, jadi perkirakan sekitar 4 jam dan mampir dalam perjalanan ke timur.</li>
 </ul>
-<p>Tidak ada angkutan umum rutin sampai ke titik pandang. Kebanyakan pengunjung datang dengan mobil plus sopir atau motor sewaan; panduan terbaru menyebut sewa motor mulai sekitar Rp100.000 per hari dan mobil dengan sopir mulai sekitar Rp500.000 per hari di Waingapu (2025-2026, harga bervariasi).</p>
+<p>Tidak ada angkutan umum rutin sampai ke titik pandang. Kebanyakan pengunjung datang dengan mobil plus sopir atau motor sewaan; panduan terbaru menyebut sewa motor mulai sekitar Rp 100.000 per hari dan mobil dengan sopir mulai sekitar Rp 500.000 per hari di Waingapu (2025-2026, harga bervariasi).</p>
 
 <h2>Kapan datang dan jam terbaik</h2>
 <p>Datanglah saat matahari terbit atau satu-dua jam terakhir sebelum matahari terbenam, ketika cahaya dari samping menonjolkan lipatan bukit. Siang hari cahayanya datar, panas, dan tanpa naungan. Soal warna:</p>
@@ -124,8 +124,8 @@ GUIDES = [
 
 <h2>Tips dan etika</h2>
 <ul>
-<li><strong>Biaya:</strong> sumber resmi menyebut tidak ada tiket masuk. Kadang ada biaya parkir kecil (satu catatan tahun 2018: Rp5.000); bawa uang pecahan kecil.</li>
-<li><strong>Anak-anak dan kuda:</strong> anak-anak gembala mungkin menawarkan diri jadi pemandu atau berpose dengan kuda, dan sewa kuda atau pakaian adat untuk foto dilaporkan sekitar Rp50.000. Jika ingin memotret, sepakati harganya dulu dan bayar dengan layak. Minta izin sebelum memotret siapa pun.</li>
+<li><strong>Biaya:</strong> sumber resmi menyebut tidak ada tiket masuk. Kadang ada biaya parkir kecil (satu catatan tahun 2018: Rp 5.000); bawa uang pecahan kecil.</li>
+<li><strong>Anak-anak dan kuda:</strong> anak-anak gembala mungkin menawarkan diri jadi pemandu atau berpose dengan kuda, dan sewa kuda atau pakaian adat untuk foto dilaporkan sekitar Rp 50.000. Jika ingin memotret, sepakati harganya dulu dan bayar dengan layak. Minta izin sebelum memotret siapa pun.</li>
 <li><strong>Bawa:</strong> air minum, topi, tabir surya, dan alas kaki yang tidak licin; tidak ada tempat berteduh di bukit.</li>
 <li><strong>Hormati lahan:</strong> bukit ini adalah padang penggembalaan milik keluarga setempat, bukan taman. Bawa pulang semua sampah, jangan menyalakan api, dan jangan menerbangkan drone di atas orang atau ternak tanpa izin.</li>
 <li><strong>Keselamatan:</strong> lerengnya lebih curam daripada yang terlihat di foto; jauhi tepian saat berangin atau setelah hujan.</li>
@@ -151,7 +151,7 @@ GUIDES = [
   "es": [["¿A qué distancia está Wairinding de Waingapu?", "A unos 20-25 km al oeste por la carretera de Waikabubak, unos 30-45 minutos en coche o moto."],
          ["¿Se paga entrada en Bukit Wairinding?", "Las fuentes oficiales dicen que no. A veces se cobra un pequeño aparcamiento, y los vecinos pueden pedir una propina si fotografías sus caballos o alquilas trajes."],
          ["¿Cuándo está verde Wairinding?", "Durante y justo después de la estación de lluvias, aproximadamente de diciembre a abril. De mayo a septiembre, más o menos, la hierba se vuelve marrón dorada."],
-         ["¿Es mejor el amanecer o el atardecer en Wairinding?", "Los dos funcionan porque la luz baja dibuja la forma de las colinas. El atardecer es más popular; el amanecer, más tranquilo."]],
+         ["¿Es mejor el amanecer o el atardecer en Wairinding?", "Los dos merecen la pena, porque la luz rasante dibuja la forma de las colinas. El atardecer es más popular; el amanecer, más tranquilo."]],
   "id": [["Berapa jarak Bukit Wairinding dari Waingapu?", "Sekitar 20-25 km ke barat lewat jalan utama menuju Waikabubak, kira-kira 30-45 menit dengan mobil atau motor."],
          ["Apakah ada tiket masuk di Bukit Wairinding?", "Sumber resmi menyebut tidak ada. Kadang ada biaya parkir kecil, dan warga bisa meminta imbalan jika Anda memotret kudanya atau menyewa pakaian adat."],
          ["Kapan Bukit Wairinding berwarna hijau?", "Selama dan sesudah musim hujan, kira-kira Desember sampai April. Dari sekitar Mei sampai September rumputnya menjadi cokelat keemasan."],
@@ -231,7 +231,7 @@ GUIDES = [
   "body": """<p>Última hora de la tarde en Walakiri: el mar se ha retirado tanto que puedes caminar sobre arena mojada y charcas someras. Sobre la llanura se alzan los manglares: arbolitos nudosos no más altos que una persona, con troncos torcidos y ramas lanzadas hacia los lados, como si se hubieran quedado congelados en mitad de un baile. Cuando el sol baja hacia el estrecho de Sumba el agua se vuelve cobriza, los árboles se ponen negros y solo se oyen olas pequeñas, niños gritando en la orilla y el chisporroteo del pescado a la brasa en un puesto detrás de la playa.</p>
 <p>Walakiri es el atardecer más fotografiado del este de Sumba y una de las excursiones más fáciles desde Waingapu. Así se acierta con el momento.</p>
 
-<h2>Qué es y por qué ir</h2>
+<h2>Qué es y por qué merece la pena</h2>
 <p>Pantai Walakiri es una playa larga y poco profunda de arena clara en la aldea de Watumbaka, distrito de Pandawai, orientada al norte, hacia el estrecho entre Sumba y Flores. Lo que la hace especial es la hilera de manglares (<em>bakau</em>) bajos, con aspecto de bonsái, que crecen en el agua cerca de la orilla. Vecinos y viajeros los llaman los "manglares que bailan". Con marea alta el agua les llega a la cintura; con marea baja puede cubrir solo los tobillos o desaparecer, y se camina entre ellos.</p>
 <p>Es un sitio para mirar, pasear y fotografiar, no para bucear ni nadar en serio. El ambiente es local y tranquilo: sin beach clubs ni música alta, con algunos puestos sencillos de pescado y marisco a la brasa y familias de Waingapu los fines de semana y festivos.</p>
 
@@ -242,7 +242,7 @@ GUIDES = [
 <li><strong>Desde Tambolaka (TMC):</strong> unos 170 km y 4-5 horas hasta Waingapu y media hora más. En la práctica es una parada del este, no una excursión de un día desde el oeste.</li>
 </ul>
 
-<h2>Cuándo ir y mejor hora del día</h2>
+<h2>Cuándo ir y a qué hora</h2>
 <p>En Walakiri todo depende del momento. La imagen clásica requiere <strong>marea baja cerca de la puesta de sol</strong>. Con marea alta la playa puede parecer anodina y los manglares quedan medio sumergidos.</p>
 <ul>
 <li>Consulta una tabla de mareas de Waingapu y elige una tarde en que la bajamar caiga en la última hora o dos de luz.</li>
@@ -277,7 +277,7 @@ GUIDES = [
   "body": """<p>Sore hari di Walakiri, laut sudah surut begitu jauh sehingga Anda bisa berjalan di atas pasir basah dan genangan dangkal. Di hamparan itu berdiri pohon-pohon bakau: kecil, bergonjong, tak lebih tinggi dari orang dewasa, batangnya meliuk dan rantingnya terentang ke samping, seolah berhenti di tengah tarian. Ketika matahari turun ke arah Selat Sumba, air berubah warna tembaga, pohon-pohon menjadi hitam, dan yang terdengar hanya ombak kecil, teriakan anak-anak di tepi pantai, serta asap dan desis ikan bakar di lapak belakang pantai.</p>
 <p>Walakiri adalah senja yang paling banyak difoto di Sumba Timur dan salah satu tujuan termudah dari Waingapu. Berikut cara mengatur waktunya.</p>
 
-<h2>Apa itu dan mengapa ke sana</h2>
+<h2>Mengenal lebih dekat</h2>
 <p>Pantai Walakiri adalah pantai panjang dan landai berpasir terang di Desa Watumbaka, Kecamatan Pandawai, menghadap ke utara ke selat antara Sumba dan Flores. Yang membuatnya istimewa adalah deretan bakau pendek mirip bonsai yang tumbuh di perairan dangkal dekat pantai. Warga dan penulis perjalanan menyebutnya "mangrove menari". Saat pasang, air setinggi pinggang; saat surut, air bisa hanya semata kaki atau kering, sehingga Anda bisa berjalan di antara pepohonan itu.</p>
 <p>Tempat ini untuk menikmati pemandangan, berjalan, dan memotret, bukan untuk snorkeling atau berenang serius. Suasananya lokal dan santai: tanpa beach club, tanpa musik keras, ada beberapa lapak sederhana yang menjual ikan bakar dan hidangan laut, serta keluarga dari Waingapu pada akhir pekan dan hari libur.</p>
 
@@ -401,33 +401,33 @@ GUIDES = [
  "es": {
   "title": "Cascada de Tanggedu, Sumba: las pozas del cañón del este",
   "dek": "Agua turquesa trenzándose por un desfiladero de caliza tallada tras una larga caminata por la sabana: lo que cuesta llegar a Tanggedu y cómo disfrutarlo con seguridad.",
-  "answer": "La cascada de Tanggedu (Air Terjun Tanggedu) está en la aldea de Tanggedu, distrito de Kanatang, al norte de Waingapu: a unos 46-60 km y unas 2 horas por carretera, más una caminata de unos 3 km (o un trayecto en ojek) por la sabana. La entrada ronda los 5.000-10.000 IDR por persona según informaciones recientes; ve en la estación seca, entre semana y por la mañana.",
+  "answer": "La cascada de Tanggedu (Air Terjun Tanggedu) está en la aldea de Tanggedu, distrito de Kanatang, al norte de Waingapu: a unos 46-60 km y unas 2 horas por carretera, más una caminata de unos 3 km (o un trayecto en ojek) por la sabana. La entrada ronda las 5.000-10.000 rupias por persona según informaciones recientes; ve en la estación seca, entre semana y por la mañana.",
   "body": """<p>En el último tramo solo hay hierba, cielo y calor. El sendero cruza un puente, sube por una loma de roca clara y, de pronto, el suelo se hunde en un desfiladero estrecho. Abajo, un agua color jade corre por canales y marmitas excavadas en la caliza lisa, saltando de una poza a otra con un rugido constante que rebota en las paredes. Después de la sabana seca y abierta, el aire fresco y el ruido del agua casi sorprenden.</p>
 <p>Tanggedu es uno de los paisajes naturales más espectaculares del este de Sumba, y uno de los más difíciles de alcanzar. Esto es lo que te espera.</p>
 
-<h2>Qué es y por qué ir</h2>
+<h2>Qué es y por qué merece la pena</h2>
 <p>Air Terjun Tanggedu no es una gran caída única sino un conjunto de cascadas y pozas naturales donde los ríos atraviesan un cañón de caliza. El salto principal es modesto, una fuente habla de unos 8 m, pero el escenario es lo que impresiona: roca esculpida, terrazas escalonadas y pozas profundas de color azul verdoso. La prensa indonesia a veces lo llama el "Gran Cañón" de Sumba Oriental. Lo gestionan los vecinos y tiene aparcamiento básico, aseos y puestos sencillos de comida.</p>
 <p>Con el agua en calma, las pozas anchas son populares para bañarse y flotar. Explorar las cascadas puede implicar trepar rocas y saltar pequeños arroyos.</p>
 
 <h2>Cómo llegar</h2>
 <p>Tanggedu está tierra adentro de la costa norte, al noroeste de Waingapu. Las fuentes hablan de entre unos 46 km y 60 km, y de unas 2 horas en coche o moto; la carretera principal está casi toda asfaltada, pero el último tramo es de tierra y piedra. La ruta habitual sigue la carretera de la costa norte pasando Puru Kambera hasta el mercado de Mondu, y luego gira hacia el interior hasta la aldea de Tanggedu y un puente colgante donde acaba la carretera.</p>
 <ul>
-<li><strong>La aproximación final:</strong> desde el final de la carretera hay unos 3 km a pie por sabana y roca, unos 40 minutos o más por trayecto, descritos como bastante exigentes. Algunos mototaxistas (ojek) locales han ofrecido el trayecto desde la aldea por unos 50.000 IDR ida y vuelta por persona (dato de 2024; los precios cambian).</li>
+<li><strong>La aproximación final:</strong> desde el final de la carretera hay unos 3 km a pie por sabana y roca, unos 40 minutos o más por trayecto, descritos como bastante exigentes. Algunos mototaxistas (ojek) locales han ofrecido el trayecto desde la aldea por unas 50.000 rupias ida y vuelta por persona (dato de 2024; los precios cambian).</li>
 <li><strong>Desde el aeropuerto de Waingapu (WGP):</strong> unas 2 horas, así que es excursión de medio día o día completo.</li>
 <li><strong>Desde Tambolaka (TMC):</strong> no es viable en el día; alójate en Waingapu.</li>
 </ul>
-<p>Lo más sencillo es ir con un conductor que conozca la ruta. Se ha informado de que la señalización no es fiable, y un 4x4 o saber manejarse en moto fuera del asfalto ayuda en el último tramo, sobre todo después de llover.</p>
+<p>Lo más sencillo es ir con un conductor que conozca la ruta. Según algunos viajeros, la señalización no es fiable, y un 4x4 o saber manejarse en moto fuera del asfalto ayuda en el último tramo, sobre todo después de llover.</p>
 
-<h2>Cuándo ir y mejor hora del día</h2>
+<h2>Cuándo ir y a qué hora</h2>
 <ul>
 <li><strong>Estación:</strong> la estación seca (aproximadamente mayo-octubre) ofrece el acceso más fácil y el agua más clara. En la de lluvias el camino se embarra y los ríos pueden crecer deprisa y enturbiarse; no te bañes después de lluvias fuertes.</li>
-<li><strong>Hora:</strong> llega por la mañana, hacia las 08:00-10:00, para tener luz suave y caminar con menos calor. Se ha informado de un horario de 08:00 a 17:00 (hora WITA).</li>
+<li><strong>Hora:</strong> llega por la mañana, hacia las 08:00-10:00, para tener luz suave y caminar con menos calor. Según algunas informaciones, abre de 08:00 a 17:00 (hora WITA).</li>
 <li><strong>Día:</strong> los fines de semana hay muchos visitantes locales; entre semana, menos.</li>
 </ul>
 
 <h2>Consejos y normas de respeto</h2>
 <ul>
-<li><strong>Tarifas:</strong> unos 5.000-10.000 IDR de entrada por persona y una cantidad parecida por aparcar (datos de 2024-2025). Lleva efectivo en billetes pequeños.</li>
+<li><strong>Tarifas:</strong> unas 5.000-10.000 rupias de entrada por persona y una cantidad parecida por aparcar (datos de 2024-2025). Lleva efectivo en billetes pequeños.</li>
 <li><strong>Lleva:</strong> mucha agua, algo de comer, sombrero y protector solar para una caminata sin sombra, y calzado o sandalias firmes con agarre; la roca resbala.</li>
 <li><strong>Para quién:</strong> una fuente indonesia no recomienda la caminata a niños pequeños ni a personas mayores. Sé sincero con tu forma física y el calor.</li>
 <li><strong>Baño seguro:</strong> comprueba la profundidad antes de saltar, evita los canales rápidos y sal del agua si empieza a subir o a enturbiarse.</li>
@@ -445,18 +445,18 @@ GUIDES = [
  "id": {
   "title": "Air Terjun Tanggedu, Sumba: kolam ngarai di Sumba Timur",
   "dek": "Air toska yang mengalir di sela ngarai kapur setelah perjalanan panjang melintasi sabana: apa yang dibutuhkan untuk mencapai Tanggedu dan cara menikmatinya dengan aman.",
-  "answer": "Air Terjun Tanggedu berada di Desa Tanggedu, Kecamatan Kanatang, di utara Waingapu: sekitar 46-60 km dan kira-kira 2 jam perjalanan darat, ditambah jalan kaki sekitar 3 km (atau naik ojek) melintasi sabana. Tiket masuk dilaporkan sekitar Rp5.000-10.000 per orang; datanglah pada musim kemarau, di hari kerja, dan pagi hari.",
+  "answer": "Air Terjun Tanggedu berada di Desa Tanggedu, Kecamatan Kanatang, di utara Waingapu: sekitar 46-60 km dan kira-kira 2 jam perjalanan darat, ditambah jalan kaki sekitar 3 km (atau naik ojek) melintasi sabana. Tiket masuk dilaporkan sekitar Rp 5.000-10.000 per orang; datanglah pada musim kemarau, di hari kerja, dan pagi hari.",
   "body": """<p>Di bagian terakhir perjalanan hanya ada rumput, langit, dan panas. Jalur melintasi jembatan, mendaki punggungan batu pucat, lalu tanah tiba-tiba menurun ke ngarai sempit. Di bawah, air berwarna giok mengalir melalui saluran dan lubang-lubang yang terukir di batu kapur halus, tumpah dari satu kolam ke kolam berikutnya dengan gemuruh yang memantul di dinding tebing. Setelah sabana yang kering dan terbuka di atas, udara sejuk dan suara air terasa nyaris mengejutkan.</p>
 <p>Tanggedu adalah salah satu pemandangan alam paling memukau di Sumba Timur, sekaligus salah satu yang paling sulit dicapai. Inilah yang perlu Anda ketahui.</p>
 
-<h2>Apa itu dan mengapa ke sana</h2>
-<p>Air Terjun Tanggedu bukan satu air terjun tinggi, melainkan rangkaian jeram dan kolam alami tempat sungai membelah ngarai batu kapur. Terjunan utamanya tidak tinggi, satu sumber menyebut sekitar 8 m, tetapi lanskapnya yang menjadi daya tarik: batu berpahat alam, teras bertingkat, dan kolam biru kehijauan yang dalam. Media Indonesia kadang menyebutnya "Grand Canyon" Sumba Timur. Lokasi ini dikelola warga setempat dan memiliki parkir sederhana, toilet, serta lapak makanan.</p>
+<h2>Mengenal lebih dekat</h2>
+<p>Air Terjun Tanggedu bukan satu air terjun tinggi, melainkan rangkaian jeram dan kolam alami tempat sungai membelah ngarai batu kapur. Terjunan utamanya tidak tinggi, satu sumber menyebut sekitar 8 m, tetapi lanskapnya yang menjadi daya tarik: batu berpahat alam, teras bertingkat, dan kolam biru kehijauan yang dalam. Media nasional kadang menyebutnya "Grand Canyon" Sumba Timur. Lokasi ini dikelola warga setempat dan memiliki parkir sederhana, toilet, serta lapak makanan.</p>
 <p>Saat air tenang, kolam-kolamnya yang lebar populer untuk berenang dan mengapung. Menjelajahi jeramnya bisa berarti memanjat batu dan melompati aliran kecil.</p>
 
 <h2>Cara ke sana</h2>
 <p>Tanggedu terletak di pedalaman pesisir utara, di barat laut Waingapu. Sumber menyebut jaraknya antara sekitar 46 km hingga 60 km, dengan waktu tempuh kira-kira 2 jam naik mobil atau motor; jalan utama sebagian besar beraspal, tetapi bagian terakhir berupa tanah dan batu. Rute umum mengikuti jalan pesisir utara melewati Puru Kambera sampai Pasar Mondu, lalu berbelok ke pedalaman menuju Desa Tanggedu dan sebuah jembatan gantung tempat jalan berakhir.</p>
 <ul>
-<li><strong>Bagian akhir:</strong> dari ujung jalan, sekitar 3 km berjalan kaki melintasi sabana dan bebatuan, kira-kira 40 menit atau lebih sekali jalan dan tergolong cukup menantang. Ojek warga pernah menawarkan antar-jemput dari desa sekitar Rp50.000 per orang pulang-pergi (laporan 2024; harga bisa berubah).</li>
+<li><strong>Bagian akhir:</strong> dari ujung jalan, sekitar 3 km berjalan kaki melintasi sabana dan bebatuan, kira-kira 40 menit atau lebih sekali jalan dan tergolong cukup menantang. Ojek warga pernah menawarkan antar-jemput dari desa sekitar Rp 50.000 per orang pulang-pergi (laporan 2024; harga bisa berubah).</li>
 <li><strong>Dari Bandara Waingapu (WGP):</strong> sekitar 2 jam, jadi rencanakan setengah hari atau sehari penuh.</li>
 <li><strong>Dari Tambolaka (TMC):</strong> tidak realistis untuk perjalanan sehari; menginaplah di Waingapu.</li>
 </ul>
@@ -471,9 +471,9 @@ GUIDES = [
 
 <h2>Tips dan etika</h2>
 <ul>
-<li><strong>Biaya:</strong> sekitar Rp5.000-10.000 per orang untuk tiket dan jumlah serupa untuk parkir (laporan 2024-2025). Bawa uang tunai pecahan kecil.</li>
+<li><strong>Biaya:</strong> sekitar Rp 5.000-10.000 per orang untuk tiket dan jumlah serupa untuk parkir (laporan 2024-2025). Bawa uang tunai pecahan kecil.</li>
 <li><strong>Bawa:</strong> air minum yang cukup, camilan, topi dan tabir surya untuk jalur tanpa naungan, serta sepatu atau sandal gunung yang tidak licin; batunya licin.</li>
-<li><strong>Siapa yang cocok:</strong> satu sumber Indonesia tidak menyarankan jalur ini untuk anak kecil atau lansia. Ukur kemampuan fisik Anda di tengah panas.</li>
+<li><strong>Siapa yang cocok:</strong> satu sumber berbahasa Indonesia tidak menyarankan jalur ini untuk anak kecil atau lansia. Ukur kemampuan fisik Anda di tengah panas.</li>
 <li><strong>Aman berenang:</strong> cek kedalaman sebelum melompat, hindari aliran deras, dan keluar dari air jika mulai naik atau keruh.</li>
 <li><strong>Hormat:</strong> ini tanah desa. Sapa warga, minta izin sebelum memotret orang, dan bawa pulang semua sampah.</li>
 </ul>
@@ -488,8 +488,8 @@ GUIDES = [
  },
  "facts": {
   "en": [["Where", "Tanggedu village, Kanatang district, north of Waingapu, East Sumba"], ["From the nearest airport", "Waingapu (WGP): roughly 46-60 km, about 2 hours, then a 3 km walk"], ["Best time", "Dry season (roughly May-October), weekday mornings"], ["Entry", "Around IDR 5,000-10,000 per person plus parking (2024-2025)"], ["Good for", "Swimming in natural pools, canyon scenery, an adventurous day"]],
-  "es": [["Dónde", "Aldea de Tanggedu, distrito de Kanatang, al norte de Waingapu, Sumba Oriental"], ["Desde el aeropuerto más cercano", "Waingapu (WGP): unos 46-60 km, unas 2 horas y luego 3 km a pie"], ["Mejor momento", "Estación seca (aprox. mayo-octubre), mañanas entre semana"], ["Entrada", "Unos 5.000-10.000 IDR por persona más aparcamiento (2024-2025)"], ["Ideal para", "Bañarse en pozas naturales, paisaje de cañón, un día de aventura"]],
-  "id": [["Lokasi", "Desa Tanggedu, Kecamatan Kanatang, utara Waingapu, Sumba Timur"], ["Dari bandara terdekat", "Waingapu (WGP): sekitar 46-60 km, kira-kira 2 jam, lalu jalan kaki 3 km"], ["Waktu terbaik", "Musim kemarau (kira-kira Mei-Oktober), pagi hari kerja"], ["Tiket", "Sekitar Rp5.000-10.000 per orang plus parkir (2024-2025)"], ["Cocok untuk", "Berenang di kolam alami, pemandangan ngarai, petualangan sehari"]]},
+  "es": [["Dónde", "Aldea de Tanggedu, distrito de Kanatang, al norte de Waingapu, Sumba Oriental"], ["Desde el aeropuerto más cercano", "Waingapu (WGP): unos 46-60 km, unas 2 horas y luego 3 km a pie"], ["Mejor momento", "Estación seca (aprox. mayo-octubre), mañanas entre semana"], ["Entrada", "Unas 5.000-10.000 rupias por persona más aparcamiento (2024-2025)"], ["Ideal para", "Bañarse en pozas naturales, paisaje de cañón, un día de aventura"]],
+  "id": [["Lokasi", "Desa Tanggedu, Kecamatan Kanatang, utara Waingapu, Sumba Timur"], ["Dari bandara terdekat", "Waingapu (WGP): sekitar 46-60 km, kira-kira 2 jam, lalu jalan kaki 3 km"], ["Waktu terbaik", "Musim kemarau (kira-kira Mei-Oktober), pagi hari kerja"], ["Tiket", "Sekitar Rp 5.000-10.000 per orang plus parkir (2024-2025)"], ["Cocok untuk", "Berenang di kolam alami, pemandangan ngarai, petualangan sehari"]]},
  "faq": {
   "en": [["How long does it take to get to Tanggedu Waterfall from Waingapu?", "About 2 hours by car or scooter for roughly 46-60 km, then around 3 km on foot (or by ojek) from the end of the road."],
          ["Can you swim at Tanggedu?", "Yes, the wide pools are popular for swimming when the water is calm. Avoid fast channels and do not swim after heavy rain."],
@@ -497,11 +497,11 @@ GUIDES = [
          ["Do I need a 4WD to reach Tanggedu?", "Not always, but the last section is dirt and rock. A local driver, a 4WD or confident off-road riding is recommended, especially in the rainy season."]],
   "es": [["¿Cuánto se tarda en llegar a Tanggedu desde Waingapu?", "Unas 2 horas en coche o moto para unos 46-60 km, y luego unos 3 km a pie (o en ojek) desde el final de la carretera."],
          ["¿Se puede nadar en Tanggedu?", "Sí, las pozas anchas son populares para bañarse cuando el agua está tranquila. Evita los canales rápidos y no te bañes después de lluvias fuertes."],
-         ["¿Cuánto cuesta la entrada?", "Según datos de 2024-2025, unos 5.000-10.000 IDR por persona, más un importe similar por aparcar."],
+         ["¿Cuánto cuesta la entrada?", "Según datos de 2024-2025, unas 5.000-10.000 rupias por persona, más un importe similar por aparcar."],
          ["¿Hace falta un 4x4 para llegar a Tanggedu?", "No siempre, pero el último tramo es de tierra y piedra. Se recomienda conductor local, 4x4 o experiencia en moto fuera del asfalto, sobre todo en la estación de lluvias."]],
   "id": [["Berapa lama perjalanan ke Air Terjun Tanggedu dari Waingapu?", "Sekitar 2 jam naik mobil atau motor untuk jarak sekitar 46-60 km, lalu sekitar 3 km berjalan kaki (atau naik ojek) dari ujung jalan."],
          ["Bisakah berenang di Tanggedu?", "Bisa, kolam-kolamnya yang lebar populer untuk berenang saat air tenang. Hindari aliran deras dan jangan berenang setelah hujan lebat."],
-         ["Berapa harga tiket masuknya?", "Laporan 2024-2025 menyebut sekitar Rp5.000-10.000 per orang, ditambah biaya parkir dengan jumlah serupa."],
+         ["Berapa harga tiket masuknya?", "Laporan 2024-2025 menyebut sekitar Rp 5.000-10.000 per orang, ditambah biaya parkir dengan jumlah serupa."],
          ["Apakah perlu mobil 4WD ke Tanggedu?", "Tidak selalu, tetapi bagian terakhir berupa tanah dan batu. Sopir lokal, 4WD, atau kemampuan berkendara motor di jalan tanah disarankan, terutama di musim hujan."]]},
  "places": [{"name": "Tanggedu Waterfall", "lat": -9.5748, "lon": 120.0884, "area": "East Sumba"}],
  "sources": [["Air Terjun Tanggedu, surga di Sumba Timur, tiket cuma Rp5 ribu, Metro TV News, 2 Dec 2025", "https://www.metrotvnews.com/read/K5nCR8pp-air-terjun-tanggedu-surga-di-sumba-timur-tiket-cuma-rp5-ribu"],
@@ -569,7 +569,7 @@ GUIDES = [
   "body": """<p>La carretera de la costa sale de Waingapu y avanza hacia el oeste por campo abierto: hierba parda, rocas de caliza blanca, algún árbol solitario doblado por el viento. Y entonces, en Puru Kambera, aparecen: un grupo de caballos pastando entre la hierba alta sin que nadie los sujete, sacudiendo la cola y levantando la cabeza para mirarte. Un poco más allá el terreno baja hasta el mar, la hierba deja paso a casuarinas que susurran con la brisa y una larga playa de arena dorada se adentra suavemente en un agua cálida, clara y casi inmóvil.</p>
 <p>Puru Kambera son dos experiencias en una: la sabana y la playa. Las dos quedan cerca de Waingapu y juntas llenan media jornada sin prisas.</p>
 
-<h2>Qué es y por qué ir</h2>
+<h2>Qué es y por qué merece la pena</h2>
 <p>El nombre abarca un tramo de la costa norte en la aldea de Mondu, distrito de Kanatang (una fuente de 2018 lo sitúa en el distrito de Haharu). Tierra adentro está la <strong>sabana de Puru Kambera</strong>, praderas onduladas por las que los caballos de Sumba se mueven libres. Algunos viajeros la llaman "la pequeña África". Los caballos no son mascotas: pertenecen a familias de la zona y desconfían de la gente. En la estación de lluvias la hierba está verde; en la seca se vuelve de un ocre cálido y los caballos pastan más a la vista.</p>
 <p>En la costa está <strong>Pantai Puru Kambera</strong>, una playa larga bordeada de casuarinas. El agua es tranquila y poco profunda, buena para un baño suave. Hay coral frente a la orilla, y un relato de 2018 cuenta que buceadores locales llevaban visitantes al arrecife, pero no hay centro de buceo. Una zona vallada al este de la playa se ha descrito como base de una granja de perlas.</p>
 
@@ -581,7 +581,7 @@ GUIDES = [
 </ul>
 <p>Puru Kambera queda de camino a <a href="/es/places/tanggedu-waterfall/">la cascada de Tanggedu</a>, y muchos viajeros combinan las dos en un día: Tanggedu por la mañana, con fresco, y a la vuelta la sabana y un baño en Puru Kambera, para terminar con el atardecer sobre la hierba. La carretera de la costa pasa además por el mercado de los viernes de Mondu, un mercado de aldea sencillo que merece una mirada si coincide.</p>
 
-<h2>Cuándo ir y mejor hora del día</h2>
+<h2>Cuándo ir y a qué hora</h2>
 <ul>
 <li><strong>Para ver caballos:</strong> la estación seca (aproximadamente mayo-octubre), con la sabana dorada y los animales más visibles.</li>
 <li><strong>Para paisajes verdes:</strong> durante o justo después de las lluvias, más o menos enero-abril.</li>
@@ -607,13 +607,13 @@ GUIDES = [
 </ul>"""
  },
  "id": {
-  "title": "Puru Kambera, Sumba: sabana, kuda liar, dan pantai tenang",
+  "title": "Puru Kambera, Sumba: sabana, kuda yang merumput bebas, dan pantai tenang",
   "dek": "Padang rumput keemasan tempat kuda Sumba merumput bebas, lalu pantai panjang berjajar cemara dengan air tenang: setengah hari yang santai dari Waingapu.",
   "answer": "Puru Kambera adalah kawasan sabana dan pantai di pesisir utara Sumba Timur, di Desa Mondu, Kecamatan Kanatang, sekitar 24-26 km dari Waingapu (kira-kira 45-60 menit bermobil). Sabananya terkenal dengan kuda Sumba yang berkeliaran bebas, paling mudah dilihat saat kemarau, dan pantainya berair tenang dan dangkal; sumber terbaru tidak menyebut adanya tiket masuk.",
   "body": """<p>Jalan pesisir meninggalkan Waingapu dan melaju ke barat melewati lahan terbuka: rumput cokelat, bongkahan batu kapur putih, beberapa pohon tunggal yang condong diterpa angin. Lalu, di Puru Kambera, mereka terlihat: sekawanan kuda merumput di antara rumput tinggi tanpa ada yang memegang tali, ekornya mengibas, kepalanya terangkat memperhatikan Anda. Sedikit lebih jauh, tanah menurun ke laut, rumput berganti pohon cemara yang berdesir ditiup angin, dan pantai panjang berpasir keemasan melandai ke air yang hangat, jernih, dan nyaris tak beriak.</p>
 <p>Puru Kambera menawarkan dua pengalaman sekaligus: sabana dan pantai. Keduanya mudah dicapai dari Waingapu dan bersama-sama menjadi setengah hari yang santai.</p>
 
-<h2>Apa itu dan mengapa ke sana</h2>
+<h2>Mengenal lebih dekat</h2>
 <p>Nama ini mencakup bentangan pesisir utara di Desa Mondu, Kecamatan Kanatang (satu sumber tahun 2018 menyebut Kecamatan Haharu). Di pedalaman ada <strong>Sabana Puru Kambera</strong>, padang rumput bergelombang tempat kuda Sumba berkeliaran bebas. Penulis perjalanan kadang menyebutnya "Afrika kecil". Kuda-kuda ini bukan hewan peliharaan jinak: mereka milik keluarga setempat dan waspada terhadap manusia. Di musim hujan rumputnya hijau; di musim kemarau berubah kuning kecokelatan, dan kuda lebih sering merumput di tempat terbuka.</p>
 <p>Di pesisir ada <strong>Pantai Puru Kambera</strong>, pantai panjang yang dinaungi pohon cemara. Airnya tenang dan dangkal, cocok untuk berenang santai. Ada terumbu karang di lepas pantai, dan laporan tahun 2018 menyebut penyelam lokal mengantar pengunjung ke terumbu, tetapi tidak ada pusat selam. Area berpagar di timur pantai disebut sebagai basis budidaya mutiara.</p>
 
@@ -740,7 +740,7 @@ GUIDES = [
   "body": """<p>Después de horas de curvas por colinas peladas y de bajar entre bosque, la carretera se acaba y el último tramo se hace a pie bajo árboles que dan sombra. Entonces los árboles se abren y aparece: una amplia herradura de arena blanca, acantilados rocosos en cada extremo, el bosque detrás y el océano Índico delante. Más allá de la laguna, sobre el arrecife, una línea de mar de fondo se levanta y abre hacia la derecha, y su sonido llega con el viento un segundo después. En la playa puede que no haya nadie, salvo unos niños y un pescador remendando una red.</p>
 <p>Tarimbang es una de las playas más bonitas y menos visitadas de Sumba. Llegar cuesta. Esto es lo que necesitas saber.</p>
 
-<h2>Qué es y por qué ir</h2>
+<h2>Qué es y por qué merece la pena</h2>
 <p>Pantai Tarimbang está en la aldea de Tarimbang, distrito de Tabundung, en el sur de la regencia de Sumba Oriental. Las fuentes describen una playa ancha de arena blanca y fina flanqueada por acantilados, con arrecifes a ambos lados de la bahía y bosque detrás. Cerca de la orilla el agua suele ser tranquila y buena para nadar, y con el mar en calma se puede hacer snorkel en el lado protegido del arrecife.</p>
 <p>Para los surfistas, Tarimbang es conocida por una larga derecha sobre arrecife, a veces llamada Miller's Right, que las guías de surf describen como una de las olas más surfeadas de Sumba, con secciones rápidas y huecas y hombros más suaves. Rompe a unos 500 m de la orilla, así que la mayoría paga a un barquero local para ir y volver.</p>
 
@@ -752,7 +752,7 @@ GUIDES = [
 </ul>
 <p>Sal temprano, llena el depósito y descarga mapas sin conexión; la cobertura y las gasolineras escasean.</p>
 
-<h2>Cuándo ir y mejor hora del día</h2>
+<h2>Cuándo ir y a qué hora</h2>
 <ul>
 <li><strong>Temporada de surf:</strong> la estación seca, aproximadamente abril-octubre, trae los mares de fondo del sur más constantes. Algunas guías dicen que al este de Bali las olas pueden estar mejor más o menos de marzo a junio, antes de los alisios más fuertes.</li>
 <li><strong>Baño y snorkel:</strong> mejor las mañanas tranquilas y soleadas; el viento suele subir por la tarde.</li>
@@ -766,7 +766,7 @@ GUIDES = [
 <li><strong>Lleva:</strong> agua, comida, efectivo, escarpines, botiquín y protector solar respetuoso con el arrecife. En la playa hay pocos servicios.</li>
 <li><strong>Seguridad en el agua:</strong> la ola rompe sobre arrecife poco profundo. Los principiantes deben ir con un guía con experiencia o esperar a días pequeños, y nadie debería surfear solo.</li>
 <li><strong>Dormir allí:</strong> hay alojamientos sencillos en casas del pueblo cerca de la playa; resérvalos a través de vecinos o de tu conductor y espera habitaciones básicas y comidas compartidas.</li>
-<li><strong>Respeto:</strong> Tarimbang es un pueblo, no un resort. Vístete con modestia fuera de la arena, saluda, pide permiso antes de fotografiar a nadie y no entres en tumbas ni zonas rituales. A 1 km hay una pequeña aldea marapu, Tamandino: visítala solo con alguien del lugar y deja una aportación en el libro de visitas.</li>
+<li><strong>Respeto:</strong> Tarimbang es un pueblo, no un resort. Vístete con recato fuera de la arena, saluda, pide permiso antes de fotografiar a nadie y no entres en tumbas ni zonas rituales. A 1 km hay una pequeña aldea marapu, Tamandino: visítala solo con alguien del lugar y deja una aportación en el libro de visitas.</li>
 </ul>
 
 <h2>Cerca de aquí</h2>
@@ -784,7 +784,7 @@ GUIDES = [
   "body": """<p>Setelah berjam-jam melewati tikungan di perbukitan gundul lalu turun menembus hutan, jalan berakhir dan Anda berjalan kaki di bawah pepohonan rindang. Lalu pepohonan terbuka dan teluk itu terlihat: hamparan pasir putih berbentuk tapal kuda, tebing batu di kedua ujung, hutan di belakang, dan Samudra Hindia di depan. Di balik laguna, di atas terumbu, sebaris gelombang berdiri dan pecah ke kanan, suaranya terbawa angin sedetik kemudian. Di pantai mungkin tak ada siapa-siapa kecuali beberapa anak dan seorang nelayan yang memperbaiki jala.</p>
 <p>Tarimbang adalah salah satu pantai terindah sekaligus paling jarang dikunjungi di Sumba. Butuh usaha untuk sampai ke sana. Inilah yang perlu Anda ketahui.</p>
 
-<h2>Apa itu dan mengapa ke sana</h2>
+<h2>Mengenal lebih dekat</h2>
 <p>Pantai Tarimbang terletak di Desa Tarimbang, Kecamatan Tabundung, di bagian selatan Kabupaten Sumba Timur. Sumber menggambarkan pantai lebar berpasir putih lembut yang diapit tebing batu, dengan terumbu di kedua sisi teluk dan hutan di belakangnya. Dekat pantai airnya biasanya tenang dan cocok untuk berenang, dan saat laut tenang bisa snorkeling di sisi terumbu yang terlindung.</p>
 <p>Bagi peselancar, Tarimbang dikenal dengan ombak kanan panjang di atas terumbu, kadang disebut Miller's Right, yang oleh panduan selancar disebut sebagai salah satu ombak paling sering diselancari di Sumba, dengan bagian cepat dan berongga serta bahu ombak yang lebih lembut. Ombaknya pecah sekitar 500 m dari pantai, jadi kebanyakan peselancar membayar nelayan setempat untuk mengantar pulang-pergi dengan perahu.</p>
 
@@ -831,7 +831,7 @@ GUIDES = [
          ["Can you swim at Tarimbang Beach?", "Yes, close to shore the water is usually gentle, and there is snorkelling on the sheltered side of the reef when the sea is calm."],
          ["Can I visit Tarimbang as a day trip?", "It is possible but tiring, with about 6 hours of driving. Staying a night in a village homestay is more rewarding."]],
   "es": [["¿Cuánto se tarda de Waingapu a Tarimbang?", "Unas 3 horas en coche para unos 87 km, por una carretera de montaña asfaltada pero estrecha y sinuosa."],
-         ["¿Es Tarimbang buena para surfistas principiantes?", "La ola principal rompe sobre arrecife y tiene secciones rápidas; sus hombros más suaves pueden servir a quien está progresando en días pequeños, pero los principiantes deben ir con guía y nunca solos."],
+         ["¿Es Tarimbang un buen sitio para surfistas principiantes?", "La ola principal rompe sobre arrecife y tiene secciones rápidas; sus hombros más suaves pueden servir a quien está progresando en días pequeños, pero los principiantes deben ir con guía y nunca solos."],
          ["¿Se puede nadar en Tarimbang?", "Sí, cerca de la orilla el agua suele estar tranquila, y con el mar en calma se puede hacer snorkel en el lado protegido del arrecife."],
          ["¿Se puede ir a Tarimbang en el día?", "Se puede, pero cansa: son unas 6 horas de coche. Compensa mucho más dormir una noche en una casa del pueblo."]],
   "id": [["Berapa lama perjalanan dari Waingapu ke Tarimbang?", "Sekitar 3 jam bermobil untuk jarak sekitar 87 km, lewat jalan pegunungan beraspal yang sempit dan berkelok."],
@@ -904,7 +904,7 @@ GUIDES = [
   "body": """<p>Basta con salir de la carretera transitada del este de Waingapu para que el ruido desaparezca. Bajo los altos tejados en punta de las casas antiguas, unas mujeres se sientan en esteras con telares de cintura atados al cuerpo y pasan los hilos a mano, mientras el batidor de madera golpea suavemente en cada pasada. Entre las casas se alzan pesadas tumbas de piedra con losas talladas con cocodrilos, tortugas y caballos. Pasean gallinas, corre un niño, alguien te ofrece asiento en el porche. La ciudad está alrededor y, sin embargo, esto es claramente otro mundo.</p>
 <p>Prailiu es el pueblo tradicional más fácil de visitar en el este de Sumba y una buena primera lección sobre la cultura sumbanesa y el ikat.</p>
 
-<h2>Qué es y por qué ir</h2>
+<h2>Qué es y por qué merece la pena</h2>
 <p>Kampung Raja Prailiu ("pueblo real de Prailiu") está en el distrito de Kambera, dentro de Waingapu. Sus vecinos cuentan que fue sede de uno de los reinos de Sumba; durante el dominio colonial neerlandés un noble del pueblo fue elegido raja. El último rey, Umbu Djaka, murió en 2008, y su tumba de piedra, de unas 40 toneladas según la prensa, es la más elaborada del lugar.</p>
 <p>Las casas tradicionales, llamadas <em>uma mbatangu</em> o <em>uma hori</em>, tienen altos tejados en forma de torre y tres niveles: según la creencia sumbanesa, uno abajo para los muertos o los animales, otro para los vivos y el tejado para los antepasados y los espíritus. Las tallas de las tumbas indican el rango del difunto. El pueblo está ligado a la creencia marapu, aunque muchas familias son hoy también cristianas.</p>
 <p>Sobre todo, Prailiu es un pueblo de tejedoras. Las mujeres hilan, atan, tiñen con materiales naturales y tejen paños <em>hinggi</em> y <em>lau</em> con motivos de caballos, cocodrilos, gambas y antiguos gobernantes. El tejido es una de sus principales fuentes de ingresos, y en diciembre de 2025 el ministro de Cultura de Indonesia visitó la galería de ikat del pueblo dentro de un impulso para proteger su patrimonio.</p>
@@ -917,7 +917,7 @@ GUIDES = [
 </ul>
 <p>No hace falta guía, pero un conductor o guía local puede traducir y ayudarte a entender lo que ves.</p>
 
-<h2>Cuándo ir y mejor hora del día</h2>
+<h2>Cuándo ir y a qué hora</h2>
 <ul>
 <li><strong>Días:</strong> de lunes a sábado. Los domingos muchos vecinos están en la iglesia y normalmente no se teje a la vista.</li>
 <li><strong>Hora:</strong> por la mañana y a media tarde se ve tejer a la sombra. Evita llegar a la hora de comer.</li>
@@ -926,7 +926,7 @@ GUIDES = [
 
 <h2>Consejos y normas de respeto</h2>
 <ul>
-<li><strong>Donativo:</strong> no hay entrada. Firma el libro de visitas y deja una aportación; unos 20.000-50.000 IDR por persona es habitual, pero lo decides tú.</li>
+<li><strong>Donativo:</strong> no hay entrada. Firma el libro de visitas y deja una aportación; unas 20.000-50.000 rupias por persona es habitual, pero lo decides tú.</li>
 <li><strong>Bienvenida:</strong> puede que te reciban con <em>sirih pinang</em> (hoja de betel y nuez de areca), el gesto tradicional de hospitalidad. Acéptalo con educación aunque no lo mastiques.</li>
 <li><strong>Fotos:</strong> pide siempre permiso antes de fotografiar a personas, a las tejedoras y el interior de las casas.</li>
 <li><strong>Tumbas:</strong> no te sientes, no te subas ni toques las tumbas, y mantente lejos de los objetos rituales.</li>
@@ -949,7 +949,7 @@ GUIDES = [
   "body": """<p>Begitu meninggalkan jalan ramai di timur Waingapu, kebisingan langsung mereda. Di bawah atap menjulang rumah-rumah adat, para perempuan duduk di atas tikar dengan alat tenun gedogan terikat di pinggang, menyelipkan benang dengan tangan, dan bilah kayu pemukul berbunyi pelan setiap kali benang dirapatkan. Di antara rumah berdiri kubur batu yang berat, lempengannya terukir buaya, penyu, dan kuda. Ayam berkeliaran, seorang anak berlari lewat, seseorang mempersilakan Anda duduk di beranda. Kota ada di sekeliling, tetapi di sini jelas dunia yang lain.</p>
 <p>Prailiu adalah kampung adat yang paling mudah dikunjungi di Sumba Timur dan tempat yang baik untuk mulai mengenal budaya Sumba dan tenun ikat.</p>
 
-<h2>Apa itu dan mengapa ke sana</h2>
+<h2>Mengenal lebih dekat</h2>
 <p>Kampung Raja Prailiu berada di Kecamatan Kambera, Kota Waingapu. Warga menyebut kampung ini pernah menjadi pusat salah satu kerajaan di Sumba; pada masa kolonial Belanda seorang bangsawan dari kampung ini dipilih menjadi raja. Raja terakhir, Umbu Djaka, wafat pada 2008, dan kubur batunya, yang dilaporkan seberat sekitar 40 ton, adalah yang paling megah di kampung.</p>
 <p>Rumah adatnya, disebut <em>uma mbatangu</em> atau <em>uma hori</em>, beratap menara tinggi dan terdiri atas tiga tingkat: menurut kepercayaan Sumba, bagian bawah untuk arwah atau hewan, bagian tengah untuk manusia, dan atap untuk leluhur dan roh. Ukiran pada kubur menunjukkan status orang yang dimakamkan. Kampung ini terkait dengan kepercayaan Marapu, meski kini banyak keluarga juga memeluk agama Kristen.</p>
 <p>Lebih dari segalanya, Prailiu adalah kampung tenun. Para perempuan memintal, mengikat, mewarnai dengan bahan alami, dan menenun kain <em>hinggi</em> dan <em>lau</em> bermotif kuda, buaya, udang, serta raja-raja masa lalu. Menenun adalah sumber penghasilan utama, dan pada Desember 2025 Menteri Kebudayaan mengunjungi galeri tenun ikat di kampung ini sebagai bagian dari upaya pelindungan warisan budayanya.</p>
@@ -971,7 +971,7 @@ GUIDES = [
 
 <h2>Tips dan etika</h2>
 <ul>
-<li><strong>Sumbangan:</strong> tidak ada tiket. Isi buku tamu dan beri sumbangan; sekitar Rp20.000-50.000 per orang lazim, tetapi jumlahnya terserah Anda.</li>
+<li><strong>Sumbangan:</strong> tidak ada tiket. Isi buku tamu dan beri sumbangan; sekitar Rp 20.000-50.000 per orang lazim, tetapi jumlahnya terserah Anda.</li>
 <li><strong>Penyambutan:</strong> Anda mungkin disambut dengan sirih pinang, tanda keramahan tradisional. Terimalah dengan sopan meski tidak mengunyahnya.</li>
 <li><strong>Foto:</strong> selalu minta izin sebelum memotret orang, penenun, dan bagian dalam rumah.</li>
 <li><strong>Kubur batu:</strong> jangan duduk, memanjat, atau menyentuh kubur, dan jauhi benda-benda ritual.</li>
@@ -997,11 +997,11 @@ GUIDES = [
          ["Can you watch ikat weaving at Prailiu?", "Usually yes, from Monday to Saturday. On Sundays many residents are at church and weaving is often not on show."],
          ["Can I buy ikat in Prailiu?", "Yes, directly from weavers and a village gallery. Hand-spun, naturally dyed cloth takes months to make and large pieces can cost millions of rupiah."]],
   "es": [["¿Dónde está el pueblo de Prailiu?", "Dentro de Waingapu, en el lado este entre el aeropuerto y el centro, en el distrito de Kambera. A unos 15 minutos a pie del centro."],
-         ["¿Se paga entrada en Kampung Raja Prailiu?", "No hay entrada, pero los visitantes firman el libro y dejan un donativo. Lo habitual son unos 20.000-50.000 IDR por persona."],
+         ["¿Se paga entrada en Kampung Raja Prailiu?", "No hay entrada, pero los visitantes firman el libro y dejan un donativo. Lo habitual son unas 20.000-50.000 rupias por persona."],
          ["¿Se puede ver tejer ikat en Prailiu?", "Normalmente sí, de lunes a sábado. Los domingos muchos vecinos están en la iglesia y a menudo no se teje a la vista."],
          ["¿Se puede comprar ikat en Prailiu?", "Sí, directamente a las tejedoras y en una galería del pueblo. Un paño hilado a mano y con tinte natural lleva meses y las piezas grandes pueden costar millones de rupias."]],
   "id": [["Di mana letak Kampung Prailiu?", "Di dalam kota Waingapu, di sisi timur antara bandara dan pusat kota, Kecamatan Kambera. Sekitar 15 menit berjalan kaki dari pusat kota."],
-         ["Apakah ada tiket masuk di Kampung Raja Prailiu?", "Tidak ada tiket, tetapi pengunjung mengisi buku tamu dan memberi sumbangan. Sekitar Rp20.000-50.000 per orang lazim."],
+         ["Apakah ada tiket masuk di Kampung Raja Prailiu?", "Tidak ada tiket, tetapi pengunjung mengisi buku tamu dan memberi sumbangan. Sekitar Rp 20.000-50.000 per orang lazim."],
          ["Bisakah melihat proses menenun di Prailiu?", "Biasanya bisa, Senin sampai Sabtu. Pada hari Minggu banyak warga ke gereja dan sering tidak ada kegiatan menenun."],
          ["Bisakah membeli tenun ikat di Prailiu?", "Bisa, langsung dari penenun dan di galeri kampung. Kain berbenang pintal tangan dan pewarna alami dibuat berbulan-bulan, dan kain besar bisa berharga jutaan rupiah."]]},
  "places": [{"name": "Kampung Raja Prailiu", "lat": -9.6591, "lon": 120.2767, "area": "East Sumba"}],
@@ -1069,7 +1069,7 @@ GUIDES = [
   "body": """<p>El pueblo está en una loma sobre un valle verde y lo primero que llama la atención es la piedra. En el centro, entre dos hileras de casas altas, están las tumbas: losas enormes sobre patas de piedra, algunas rematadas con figuras de animales tallados unos sobre otros, cocodrilos, tortugas, caballos y gallos, con la superficie suavizada por el tiempo. Bajo los aleros cuelgan cuernos de búfalo. Hay mucho silencio, salvo un telar que alguien prepara en un porche y el viento en las palmeras.</p>
 <p>Rende es el más famoso de los pueblos reales del este de Sumba y uno de los mejores lugares de la isla para entender cómo se entrelazan linaje, rango y piedra.</p>
 
-<h2>Qué es y por qué ir</h2>
+<h2>Qué es y por qué merece la pena</h2>
 <p>Rende, o Rindi, es la antigua sede del dominio de Rindi, en el distrito del mismo nombre en Sumba Oriental. Las guías de viaje lo llaman "pueblo de reyes". La aldea de Praiyawang, dentro de Desa Rindi, es donde va la mayoría: uno de los pueblos tradicionales más antiguos del este de Sumba, con megalitos intactos y casas tradicionales altísimas. Según la prensa local, las tumbas de piedra, construidas para la nobleza, pesan entre 1 y 5 toneladas aproximadamente, y todavía se guardan y usan en los rituales reliquias como gongs, tambores y prendas antiguas, algunas de varios siglos según dicen.</p>
 <p>Tradicionalmente la sociedad se ha dividido aquí por nacimiento entre nobles y quienes les servían, una estructura ligada a la creencia marapu, y el visitante lo percibe en quién habla en nombre del pueblo. Rende es también conocido por su ikat. Las familias reales tejedoras de la zona de Umalulu y Rindi están unidas por matrimonios con la cercana Pau, y aquí la tela se hace para las ceremonias, no solo para vender. Las piezas con tinte natural cuestan mucho más que las de tinte industrial.</p>
 
@@ -1081,7 +1081,7 @@ GUIDES = [
 </ul>
 <p>Es muy recomendable ir con un conductor o guía local, idealmente alguien con lazos familiares que te presente en el pueblo. La mayoría combina Rende con <a href="/es/places/pau-village/">Pau</a> y <a href="/es/places/waimarang-waterfall/">Waimarang</a> en un día largo desde Waingapu: salir temprano, ver los pueblos con el fresco de la mañana, bañarse en Waimarang a mediodía y parar en Walakiri para el atardecer de vuelta.</p>
 
-<h2>Cuándo ir y mejor hora del día</h2>
+<h2>Cuándo ir y a qué hora</h2>
 <ul>
 <li><strong>Hora:</strong> por la mañana o a media tarde. El mediodía en el sureste es muy caluroso.</li>
 <li><strong>Estación:</strong> la estación seca (aproximadamente mayo-noviembre en el este) facilita el viaje. En los meses de lluvia el valle está más verde.</li>
@@ -1090,7 +1090,7 @@ GUIDES = [
 
 <h2>Consejos y normas de respeto</h2>
 <ul>
-<li><strong>Donativo:</strong> no hay entrada. Firma el libro de visitas y deja una aportación, normalmente unos 20.000-50.000 IDR por persona (2025-2026); llevar <em>sirih pinang</em> (betel y nuez de areca) como regalo es un gesto apreciado.</li>
+<li><strong>Donativo:</strong> no hay entrada. Firma el libro de visitas y deja una aportación, normalmente unas 20.000-50.000 rupias por persona (2025-2026); llevar <em>sirih pinang</em> (betel y nuez de areca) como regalo es un gesto apreciado.</li>
 <li><strong>Las tumbas son sagradas:</strong> no te subas, no te sientes ni te apoyes en ellas, y no toques las tallas, los cuernos ni los objetos rituales.</li>
 <li><strong>Pregunta antes:</strong> de fotografiar a personas o entrar en una casa.</li>
 <li><strong>Vístete con modestia:</strong> hombros y rodillas cubiertos.</li>
@@ -1112,7 +1112,7 @@ GUIDES = [
   "body": """<p>Kampung ini berdiri di atas tanah tinggi di atas lembah sungai yang hijau, dan yang pertama terlihat adalah batu. Di tengahnya, di antara dua deret rumah tinggi, terbaring kubur-kubur: lempengan raksasa yang ditopang kaki batu, sebagian dihiasi ukiran hewan yang bertumpuk, buaya, penyu, kuda, dan ayam jantan, permukaannya melunak dimakan cuaca. Tanduk kerbau tergantung di bawah atap. Suasananya sangat sunyi, kecuali bunyi alat tenun yang sedang dipasang di beranda dan angin di pohon kelapa.</p>
 <p>Rende adalah kampung raja paling terkenal di Sumba Timur dan salah satu tempat terbaik di pulau ini untuk memahami bagaimana garis keturunan, status, dan batu saling terjalin.</p>
 
-<h2>Apa itu dan mengapa ke sana</h2>
+<h2>Mengenal lebih dekat</h2>
 <p>Rende, atau Rindi, adalah bekas pusat wilayah adat Rindi di Kecamatan Rindi, Sumba Timur. Panduan wisata menyebutnya "kampung para raja". Kampung Praiyawang di Desa Rindi adalah tujuan sebagian besar pengunjung: salah satu kampung adat tertua di Sumba Timur, dengan megalit yang masih utuh dan rumah adat bermenara tinggi. Laporan media lokal menyebut kubur batu yang dibangun untuk kaum bangsawan berbobot sekitar 1 sampai 5 ton, dan benda pusaka seperti gong, tambur, dan pakaian adat, sebagian disebut berusia ratusan tahun, masih disimpan dan digunakan dalam ritual.</p>
 <p>Secara tradisional, masyarakat di sini terbagi berdasarkan kelahiran antara bangsawan dan mereka yang melayani, struktur yang terkait dengan kepercayaan Marapu, dan pengunjung bisa merasakannya dari siapa yang berbicara mewakili kampung. Rende juga dikenal dengan tenun ikatnya. Keluarga bangsawan penenun di wilayah Umalulu dan Rindi terikat perkawinan dengan Pau di dekatnya, dan kain di sini dibuat untuk keperluan adat, bukan hanya untuk dijual. Kain berpewarna alami jauh lebih mahal daripada yang berpewarna pabrik.</p>
 
@@ -1133,7 +1133,7 @@ GUIDES = [
 
 <h2>Tips dan etika</h2>
 <ul>
-<li><strong>Sumbangan:</strong> tidak ada tiket. Isi buku tamu dan beri sumbangan, biasanya sekitar Rp20.000-50.000 per orang (2025-2026); membawa sirih pinang sebagai buah tangan adalah sikap yang dihargai.</li>
+<li><strong>Sumbangan:</strong> tidak ada tiket. Isi buku tamu dan beri sumbangan, biasanya sekitar Rp 20.000-50.000 per orang (2025-2026); membawa sirih pinang sebagai buah tangan adalah sikap yang dihargai.</li>
 <li><strong>Kubur itu sakral:</strong> jangan memanjat, duduk, atau bersandar, dan jangan menyentuh ukiran, tanduk, atau benda ritual.</li>
 <li><strong>Minta izin:</strong> sebelum memotret orang atau masuk ke rumah.</li>
 <li><strong>Berpakaian sopan:</strong> tutup bahu dan lutut.</li>
@@ -1150,8 +1150,8 @@ GUIDES = [
  },
  "facts": {
   "en": [["Where", "Rindi district, East Sumba, about 7 km south of Melolo"], ["From the nearest airport", "Waingapu (WGP): roughly 70 km, about 1.5-2 hours by car"], ["Best time", "Morning or mid-afternoon; dry season for the easiest drive"], ["Entry", "No ticket; guest book and donation (around IDR 20,000-50,000)"], ["Good for", "Megalithic royal tombs, traditional houses, ikat"]],
-  "es": [["Dónde", "Distrito de Rindi, Sumba Oriental, a unos 7 km al sur de Melolo"], ["Desde el aeropuerto más cercano", "Waingapu (WGP): unos 70 km, unas 1,5-2 horas en coche"], ["Mejor momento", "Mañana o media tarde; estación seca para el viaje más cómodo"], ["Entrada", "Sin entrada; libro de visitas y donativo (unos 20.000-50.000 IDR)"], ["Ideal para", "Tumbas reales megalíticas, casas tradicionales, ikat"]],
-  "id": [["Lokasi", "Kecamatan Rindi, Sumba Timur, sekitar 7 km di selatan Melolo"], ["Dari bandara terdekat", "Waingapu (WGP): sekitar 70 km, kira-kira 1,5-2 jam bermobil"], ["Waktu terbaik", "Pagi atau sore; musim kemarau untuk perjalanan paling mudah"], ["Tiket", "Tidak ada tiket; buku tamu dan sumbangan (sekitar Rp20.000-50.000)"], ["Cocok untuk", "Kubur megalitik raja, rumah adat, tenun ikat"]]},
+  "es": [["Dónde", "Distrito de Rindi, Sumba Oriental, a unos 7 km al sur de Melolo"], ["Desde el aeropuerto más cercano", "Waingapu (WGP): unos 70 km, unas 1,5-2 horas en coche"], ["Mejor momento", "Mañana o media tarde; estación seca para el viaje más cómodo"], ["Entrada", "Sin entrada; libro de visitas y donativo (unas 20.000-50.000 rupias)"], ["Ideal para", "Tumbas reales megalíticas, casas tradicionales, ikat"]],
+  "id": [["Lokasi", "Kecamatan Rindi, Sumba Timur, sekitar 7 km di selatan Melolo"], ["Dari bandara terdekat", "Waingapu (WGP): sekitar 70 km, kira-kira 1,5-2 jam bermobil"], ["Waktu terbaik", "Pagi atau sore; musim kemarau untuk perjalanan paling mudah"], ["Tiket", "Tidak ada tiket; buku tamu dan sumbangan (sekitar Rp 20.000-50.000)"], ["Cocok untuk", "Kubur megalitik raja, rumah adat, tenun ikat"]]},
  "faq": {
   "en": [["How far is Rende from Waingapu?", "Roughly 70 km: about 65 km to Melolo and 7 km further south, around 1.5-2 hours by car."],
          ["Are Rende and Praiyawang the same place?", "Praiyawang is the traditional village (kampung) within Desa Rindi that most visitors mean when they say Rende."],
@@ -1159,11 +1159,11 @@ GUIDES = [
          ["Can I see a funeral ceremony at Rende?", "Only if you are invited. Funerals are family and community events; follow your host and do not photograph without permission."]],
   "es": [["¿A qué distancia está Rende de Waingapu?", "A unos 70 km: unos 65 km hasta Melolo y 7 km más al sur, alrededor de 1,5-2 horas en coche."],
          ["¿Rende y Praiyawang son el mismo sitio?", "Praiyawang es el pueblo tradicional (kampung) dentro de Desa Rindi al que se refiere la mayoría cuando dice Rende."],
-         ["¿Se paga entrada en Rende?", "No hay entrada. Se firma el libro de visitas y se deja un donativo, normalmente unos 20.000-50.000 IDR por persona."],
+         ["¿Se paga entrada en Rende?", "No hay entrada. Se firma el libro de visitas y se deja un donativo, normalmente unas 20.000-50.000 rupias por persona."],
          ["¿Puedo ver un funeral en Rende?", "Solo si te invitan. Los funerales son actos de la familia y la comunidad; sigue a tu anfitrión y no hagas fotos sin permiso."]],
   "id": [["Berapa jarak Rende dari Waingapu?", "Sekitar 70 km: kira-kira 65 km ke Melolo dan 7 km lagi ke selatan, sekitar 1,5-2 jam bermobil."],
          ["Apakah Rende dan Praiyawang tempat yang sama?", "Praiyawang adalah kampung adat di Desa Rindi yang biasanya dimaksud pengunjung ketika menyebut Rende."],
-         ["Apakah ada tiket masuk ke Kampung Rende?", "Tidak ada tiket. Pengunjung mengisi buku tamu dan memberi sumbangan, biasanya sekitar Rp20.000-50.000 per orang."],
+         ["Apakah ada tiket masuk ke Kampung Rende?", "Tidak ada tiket. Pengunjung mengisi buku tamu dan memberi sumbangan, biasanya sekitar Rp 20.000-50.000 per orang."],
          ["Bisakah menyaksikan upacara pemakaman di Rende?", "Hanya jika diundang. Pemakaman adalah acara keluarga dan komunitas; ikuti tuan rumah dan jangan memotret tanpa izin."]]},
  "places": [{"name": "Praiyawang, Rende", "lat": -9.9356, "lon": 120.6700, "area": "East Sumba"}],
  "sources": [["Rende village, Travelfish", "https://www.travelfish.org/sight_profile/indonesia/east_nusa_tenggara/sumba/melolo/3706"],
@@ -1239,7 +1239,7 @@ GUIDES = [
   "body": """<p>El delta del río Melolo es llano, verde y húmedo, un mosaico de arrozales, cocoteros y agua parda y lenta. En Pau, a pocos minutos de la carretera principal, puede que el sonido más fuerte sea el golpe rítmico del batidor en un telar. Una mujer se sienta en el suelo de un porche elevado, con las piernas estiradas y un telar de cintura atado a las caderas, levantando hilos uno a uno con una varilla fina para formar un dibujo en relieve de pájaros y figuras. A su lado, una mujer mayor devana hilo. Nadie tiene prisa.</p>
 <p>Pau no es un pueblo escaparate. Es un lugar para bajar el ritmo, ver un trabajo muy hábil y aprender sobre una de las grandes tradiciones textiles de Sumba.</p>
 
-<h2>Qué es y por qué ir</h2>
+<h2>Qué es y por qué merece la pena</h2>
 <p>Pau está en el distrito de Umalulu, en el delta del río Melolo. Los investigadores textiles lo describen como el antiguo dominio real de la zona, con su centro real en Uma Bara, junto al recinto real de Watu Panunggul. Se dice que el nombre significa "mango". Las guías de viaje citan Pau junto a Umabara como pueblos con algunos de los mejores tejidos de Sumba, y una web local de guías lo considera lo mejor de los pueblos del delta.</p>
 <p>Pau es conocido sobre todo por el <strong>pahikung</strong>, una técnica de urdimbre suplementaria que se teje en telares de cintura para crear dibujos en relieve en los <em>lau</em> (faldas tubulares de mujer) y en los <em>hinggi</em> (paños de hombre). Lo hacen las mujeres, también las nobles, y se transmite de madre a hija. Las familias nobles de Pau están unidas por matrimonio a la casa real de Praiyawang, en Rende, y tradicionalmente las muchachas de allí venían a Pau a aprender el oficio.</p>
 
@@ -1251,7 +1251,7 @@ GUIDES = [
 </ul>
 <p>Ya allí, los pueblos del delta se recorren a pie en unas horas. Un guía local ayuda con las presentaciones y la traducción. Por el camino, la carretera de la costa entre Waingapu y Melolo pasa junto a arrozales bordeados de cocoteros y, a una hora al sur de Waingapu, junto a los lagos y marismas de Menggitimbi, un buen sitio para observar aves.</p>
 
-<h2>Cuándo ir y mejor hora del día</h2>
+<h2>Cuándo ir y a qué hora</h2>
 <ul>
 <li><strong>Hora:</strong> por la mañana, cuando las tejedoras trabajan y hace menos calor.</li>
 <li><strong>Días:</strong> de lunes a sábado; los domingos suelen ser para la iglesia y la familia.</li>
@@ -1260,7 +1260,7 @@ GUIDES = [
 
 <h2>Consejos y normas de respeto</h2>
 <ul>
-<li><strong>Donativo:</strong> no hay entrada. Si hay libro de visitas, fírmalo y deja una aportación, normalmente unos 20.000-50.000 IDR por persona (2025-2026), o algo más si alguien dedica tiempo a explicarte su trabajo.</li>
+<li><strong>Donativo:</strong> no hay entrada. Si hay libro de visitas, fírmalo y deja una aportación, normalmente unas 20.000-50.000 rupias por persona (2025-2026), o algo más si alguien dedica tiempo a explicarte su trabajo.</li>
 <li><strong>Mira, no toques:</strong> no manipules telares ni telas a medio hacer sin preguntar. Algunas técnicas se guardan con celo, así que acepta un "no" si no quieren que fotografíes un dibujo.</li>
 <li><strong>Comprar:</strong> el pahikung y el ikat de tinte natural llevan muchísimo tiempo, así que los precios son altos y justos. Compra directamente a la tejedora si puedes.</li>
 <li><strong>Respeto:</strong> pide permiso antes de fotografiar a nadie, no pises las tumbas y vístete con modestia.</li>
@@ -1283,7 +1283,7 @@ GUIDES = [
   "body": """<p>Delta Sungai Melolo datar, hijau, dan lembap, hamparan sawah, pohon kelapa, dan air cokelat yang mengalir pelan. Di Pau, beberapa menit dari jalan utama, suara paling keras mungkin hanya ketukan berirama bilah pemukul pada alat tenun. Seorang perempuan duduk di lantai beranda panggung, kakinya diluruskan, alat tenun gedogan terikat di pinggulnya, mengangkat benang satu per satu dengan lidi untuk membentuk motif timbul berupa burung dan sosok manusia. Di sampingnya, seorang perempuan tua menggulung benang. Tak ada yang terburu-buru.</p>
 <p>Pau bukan kampung pajangan. Ini tempat untuk memperlambat langkah, menyaksikan keterampilan tinggi, dan belajar tentang salah satu tradisi tekstil besar Sumba.</p>
 
-<h2>Apa itu dan mengapa ke sana</h2>
+<h2>Mengenal lebih dekat</h2>
 <p>Pau terletak di Kecamatan Umalulu, di delta Sungai Melolo. Peneliti tekstil menyebutnya sebagai bekas wilayah kerajaan di kawasan ini, dengan pusat kerajaan di Uma Bara di samping kompleks kerajaan Watu Panunggul. Namanya konon berarti "mangga". Panduan wisata menyebut Pau bersama Umabara sebagai kampung dengan tenun terbaik di Sumba, dan satu situs panduan lokal menyebut Pau sebagai sorotan utama kampung-kampung di delta.</p>
 <p>Pau terutama dikenal dengan <strong>pahikung</strong>, teknik lungsi tambahan yang ditenun pada alat tenun gedogan untuk menghasilkan motif timbul pada <em>lau</em> (sarung perempuan) dan <em>hinggi</em> (kain laki-laki). Pahikung dikerjakan perempuan, termasuk perempuan bangsawan, dan diwariskan dari ibu ke anak perempuan. Keluarga bangsawan Pau terikat perkawinan dengan rumah raja Praiyawang di Rende, dan secara tradisional gadis-gadis dari sana dikirim ke Pau untuk belajar menenun.</p>
 
@@ -1304,7 +1304,7 @@ GUIDES = [
 
 <h2>Tips dan etika</h2>
 <ul>
-<li><strong>Sumbangan:</strong> tidak ada tiket. Jika ada buku tamu, isi dan beri sumbangan, biasanya sekitar Rp20.000-50.000 per orang (2025-2026), atau lebih jika ada yang meluangkan waktu menjelaskan pekerjaannya.</li>
+<li><strong>Sumbangan:</strong> tidak ada tiket. Jika ada buku tamu, isi dan beri sumbangan, biasanya sekitar Rp 20.000-50.000 per orang (2025-2026), atau lebih jika ada yang meluangkan waktu menjelaskan pekerjaannya.</li>
 <li><strong>Lihat, jangan sentuh:</strong> jangan memegang alat tenun atau kain yang sedang dikerjakan tanpa izin. Sebagian teknik dijaga ketat, jadi terimalah jika Anda tidak diizinkan memotret suatu motif.</li>
 <li><strong>Membeli:</strong> kain pahikung dan ikat berpewarna alami dibuat sangat lama, jadi harganya tinggi dan wajar. Belilah langsung dari penenun bila memungkinkan.</li>
 <li><strong>Hormat:</strong> minta izin sebelum memotret orang, jangan menginjak kubur, dan berpakaian sopan.</li>
@@ -1322,8 +1322,8 @@ GUIDES = [
  },
  "facts": {
   "en": [["Where", "Umalulu district, Melolo river delta, East Sumba"], ["From the nearest airport", "Waingapu (WGP): roughly 60-65 km, about 1.5-2 hours by car"], ["Best time", "Weekday mornings; dry season for easier roads"], ["Entry", "No ticket; donation (around IDR 20,000-50,000)"], ["Good for", "Pahikung and ikat weaving, textile lovers, a slow village walk"]],
-  "es": [["Dónde", "Distrito de Umalulu, delta del río Melolo, Sumba Oriental"], ["Desde el aeropuerto más cercano", "Waingapu (WGP): unos 60-65 km, unas 1,5-2 horas en coche"], ["Mejor momento", "Mañanas entre semana; estación seca para carreteras más fáciles"], ["Entrada", "Sin entrada; donativo (unos 20.000-50.000 IDR)"], ["Ideal para", "Tejido pahikung e ikat, amantes de los textiles, un paseo tranquilo"]],
-  "id": [["Lokasi", "Kecamatan Umalulu, delta Sungai Melolo, Sumba Timur"], ["Dari bandara terdekat", "Waingapu (WGP): sekitar 60-65 km, kira-kira 1,5-2 jam bermobil"], ["Waktu terbaik", "Pagi hari kerja; musim kemarau untuk jalan yang lebih mudah"], ["Tiket", "Tidak ada tiket; sumbangan (sekitar Rp20.000-50.000)"], ["Cocok untuk", "Tenun pahikung dan ikat, pencinta kain, jalan santai di kampung"]]},
+  "es": [["Dónde", "Distrito de Umalulu, delta del río Melolo, Sumba Oriental"], ["Desde el aeropuerto más cercano", "Waingapu (WGP): unos 60-65 km, unas 1,5-2 horas en coche"], ["Mejor momento", "Mañanas entre semana; estación seca para carreteras más fáciles"], ["Entrada", "Sin entrada; donativo (unas 20.000-50.000 rupias)"], ["Ideal para", "Tejido pahikung e ikat, amantes de los textiles, un paseo tranquilo"]],
+  "id": [["Lokasi", "Kecamatan Umalulu, delta Sungai Melolo, Sumba Timur"], ["Dari bandara terdekat", "Waingapu (WGP): sekitar 60-65 km, kira-kira 1,5-2 jam bermobil"], ["Waktu terbaik", "Pagi hari kerja; musim kemarau untuk jalan yang lebih mudah"], ["Tiket", "Tidak ada tiket; sumbangan (sekitar Rp 20.000-50.000)"], ["Cocok untuk", "Tenun pahikung dan ikat, pencinta kain, jalan santai di kampung"]]},
  "faq": {
   "en": [["What is Pau village known for?", "Fine weaving, especially pahikung, a supplementary warp technique that creates raised patterns, made by women of the old Umalulu royal domain."],
          ["How do I get to Pau from Waingapu?", "Drive south-east on the coastal road towards Melolo, roughly 60-65 km and 1.5-2 hours. Pau is reached just before the bridge over the Melolo River."],
@@ -1331,11 +1331,11 @@ GUIDES = [
          ["Can I combine Pau and Rende in one day?", "Yes. Rende is about 7 km south of Melolo, so the two make a natural day trip from Waingapu, with Waimarang waterfall as an optional extra."]],
   "es": [["¿Por qué es conocido el pueblo de Pau?", "Por su tejido fino, sobre todo el pahikung, una técnica de urdimbre suplementaria que crea dibujos en relieve, obra de las mujeres del antiguo dominio real de Umalulu."],
          ["¿Cómo se llega a Pau desde Waingapu?", "Por la carretera de la costa hacia el sureste, en dirección a Melolo, unos 60-65 km y 1,5-2 horas. Se llega justo antes del puente sobre el río Melolo."],
-         ["¿Se paga entrada en Pau?", "No hay entrada. Deja un donativo, normalmente unos 20.000-50.000 IDR por persona, sobre todo si alguien te enseña su trabajo."],
+         ["¿Se paga entrada en Pau?", "No hay entrada. Deja un donativo, normalmente unas 20.000-50.000 rupias por persona, sobre todo si alguien te enseña su trabajo."],
          ["¿Puedo combinar Pau y Rende en un día?", "Sí. Rende está a unos 7 km al sur de Melolo, así que los dos forman una excursión natural desde Waingapu, con la cascada de Waimarang como extra opcional."]],
   "id": [["Kampung Pau terkenal karena apa?", "Tenun halus, terutama pahikung, teknik lungsi tambahan yang menghasilkan motif timbul, dibuat oleh para perempuan bekas wilayah kerajaan Umalulu."],
          ["Bagaimana cara ke Pau dari Waingapu?", "Berkendara ke tenggara lewat jalan pesisir menuju Melolo, sekitar 60-65 km dan 1,5-2 jam. Pau dicapai tepat sebelum jembatan Sungai Melolo."],
-         ["Apakah ada tiket masuk di Pau?", "Tidak ada tiket. Berikan sumbangan, biasanya sekitar Rp20.000-50.000 per orang, terutama jika ada yang menunjukkan hasil tenunnya."],
+         ["Apakah ada tiket masuk di Pau?", "Tidak ada tiket. Berikan sumbangan, biasanya sekitar Rp 20.000-50.000 per orang, terutama jika ada yang menunjukkan hasil tenunnya."],
          ["Bisakah Pau dan Rende dikunjungi dalam sehari?", "Bisa. Rende sekitar 7 km di selatan Melolo, jadi keduanya cocok untuk perjalanan sehari dari Waingapu, dengan Air Terjun Waimarang sebagai tambahan."]]},
  "places": [{"name": "Pau", "lat": -9.8935, "lon": 120.6399, "area": "East Sumba"}],
  "sources": [["Pahikung: supplementary warp weaving of Pau, Asian Textile Studies", "https://asiantextilestudies.com/pahikung-01.html"],
@@ -1397,12 +1397,12 @@ GUIDES = [
  "es": {
   "title": "Parque nacional Laiwangi Wanggameti, Sumba: bosque y cima",
   "dek": "Bosque nuboso, cacatúas y la cumbre de 1.225 m de Sumba en el remoto sureste: cómo planear una visita al rincón más salvaje de la isla.",
-  "answer": "El parque nacional Laiwangi Wanggameti protege unos 470 km2 de bosque en el sureste de Sumba, incluido el monte Wanggameti (1.225 m), el punto más alto de la isla. Desde 2016 se gestiona junto con Manupeu Tanah Daru como parque nacional Matalawa, con oficina en Waingapu; el inicio de la ruta en la aldea de Wanggameti está a unas 3-4 horas en coche de Waingapu, y la mejor época es la seca (mayo-octubre).",
+  "answer": "El Parque Nacional Laiwangi Wanggameti protege unos 470 km² de bosque en el sureste de Sumba, incluido el monte Wanggameti (1.225 m), el punto más alto de la isla. Desde 2016 se gestiona junto con Manupeu Tanah Daru como Parque Nacional Matalawa, con oficina en Waingapu; el inicio de la ruta en la aldea de Wanggameti está a unas 3-4 horas en coche de Waingapu, y la mejor época es la seca (mayo-octubre).",
   "body": """<p>Al subir desde las praderas secas del este, el aire cambia. La carretera a Wanggameti serpentea entre colinas cada vez más verdes hasta meterse entre árboles altos cubiertos de musgo, con niebla entre los troncos y un suelo blando de hojas. Arriba pasa chillando una bandada de cacatúas; las alas de un cálao suenan como un tren que pasa. Abajo, en Waingapu, quizá no llueva desde hace meses. Aquí arriba el bosque gotea.</p>
 <p>Laiwangi Wanggameti es el mayor bloque de bosque que le queda a Sumba y su parque nacional más remoto. No está preparado para el turismo casual, y precisamente por eso recompensa a ornitólogos, senderistas y a cualquiera con curiosidad por el lado salvaje de la isla.</p>
 
-<h2>Qué es y por qué ir</h2>
-<p>El parque se creó en 1998 y abarca unos 470 km2 en el sureste de Sumba Oriental. Desde 2016 se gestiona junto con el parque nacional Manupeu Tanah Daru, en el oeste, bajo el nombre de Matalawa. Protege la mayoría de los tipos de bosque de Sumba y es la principal cuenca de agua del este de la isla.</p>
+<h2>Qué es y por qué merece la pena</h2>
+<p>El parque se creó en 1998 y abarca unos 470 km² en el sureste de Sumba Oriental. Desde 2016 se gestiona junto con el Parque Nacional de Manupeu Tanah Daru, en el oeste, bajo el nombre de Matalawa. Protege la mayoría de los tipos de bosque de Sumba y es la principal cuenca de agua del este de la isla.</p>
 <p>Para los aficionados a las aves es el gran reclamo. Entre las especies registradas en el parque están la cacatúa de cresta citrina, la paloma verde de Sumba, el torillo de Sumba, el papamoscas de Sumba, el oruguero de Sumba y el suimanga de Sumba. Los parques de Matalawa suman 84 especies de aves, 10 de ellas exclusivas de Sumba, y BirdLife International considera la zona Área Importante para las Aves y la Biodiversidad.</p>
 <p>Los senderistas vienen por el <strong>monte Wanggameti</strong>, de 1.225 m, el punto más alto de Sumba. La ruta es una caminata por el bosque con muchas subidas y bajadas, no una escalada técnica. Algunos operadores llevan también a cascadas dentro y alrededor del parque, como Laputi.</p>
 
@@ -1414,7 +1414,7 @@ GUIDES = [
 </ul>
 <p><strong>La subida a la cima:</strong> el sendero empieza a unos 1.160 m, aproximadamente 1,5 km después de la caseta de entrada del parque, por encima de la aldea de Wanggameti. Hay unos 7 km hasta la cumbre, unas 3 horas por trayecto con paradas. No hay agua en el camino.</p>
 
-<h2>Cuándo ir y mejor hora del día</h2>
+<h2>Cuándo ir y a qué hora</h2>
 <ul>
 <li><strong>Estación:</strong> muy recomendable la seca, aproximadamente mayo-octubre. En la de lluvias las carreteras son peores y en el bosque abundan las sanguijuelas.</li>
 <li><strong>Hora:</strong> empieza con la primera luz. Las aves están más activas a primera hora, el bosque está más fresco y las nubes suelen cubrir la cima hacia mediodía.</li>
@@ -1422,7 +1422,7 @@ GUIDES = [
 
 <h2>Consejos y normas de respeto</h2>
 <ul>
-<li><strong>Permisos y tarifas:</strong> contacta antes con la oficina del parque nacional Matalawa en Waingapu (Jalan Adam Malik) para preguntar por permisos, tarifas de entrada y la posibilidad de dormir en el puesto del parque. Las tarifas de los parques nacionales indonesios suelen ser modestas, pero confírmalas; cambian.</li>
+<li><strong>Permisos y tarifas:</strong> contacta antes con la oficina del Parque Nacional Matalawa en Waingapu (Jalan Adam Malik) para preguntar por permisos, tarifas de entrada y la posibilidad de dormir en el puesto del parque. Las tarifas de los parques nacionales indonesios suelen ser modestas, pero confírmalas; cambian.</li>
 <li><strong>Guías:</strong> contrata un guía local en la aldea de Wanggameti. Ayuda a la comunidad, y los senderos no siempre son evidentes.</li>
 <li><strong>Lleva:</strong> toda el agua que necesites, comida (las últimas tiendas pequeñas están en Tanarara), ropa de lluvia, calcetines antisanguijuelas en la estación húmeda, prismáticos y frontal.</li>
 <li><strong>Respeto:</strong> en los bosques de Sumba puede haber lugares sagrados para la creencia marapu. Sigue a tu guía, no entres en sitios señalados o vallados y no recojas plantas ni animales.</li>
@@ -1434,18 +1434,18 @@ GUIDES = [
 <li><a href="/es/places/tarimbang-beach/">La playa de Tarimbang</a>, la bahía de la costa sur al oeste del parque.</li>
 <li><a href="/es/places/waimarang-waterfall/">La cascada de Waimarang</a>, una poza turquesa en la carretera hacia Kananggar.</li>
 <li><a href="/es/places/waingapu-town/">Waingapu</a>, punto de partida y sede de la oficina del parque.</li>
-<li><a href="/es/places/manupeu-tanah-daru-national-park/">El parque nacional Manupeu Tanah Daru</a>, su parque hermano en el oeste.</li>
+<li><a href="/es/places/manupeu-tanah-daru-national-park/">El Parque Nacional de Manupeu Tanah Daru</a>, su parque hermano en el oeste.</li>
 </ul>"""
  },
  "id": {
   "title": "Taman Nasional Laiwangi Wanggameti, Sumba: hutan dan puncak tertinggi",
   "dek": "Hutan berkabut, kakatua, dan puncak 1.225 m di pedalaman tenggara Sumba: cara merencanakan kunjungan ke sudut paling liar di pulau ini.",
-  "answer": "Taman Nasional Laiwangi Wanggameti melindungi sekitar 470 km2 hutan di tenggara Sumba, termasuk Gunung Wanggameti (1.225 m), titik tertinggi di pulau ini. Sejak 2016 taman ini dikelola bersama Manupeu Tanah Daru sebagai Taman Nasional Matalawa, dengan kantor di Waingapu; titik awal pendakian di Desa Wanggameti sekitar 3-4 jam bermobil dari Waingapu, dan musim kemarau (Mei-Oktober) paling baik.",
+  "answer": "Taman Nasional Laiwangi Wanggameti melindungi sekitar 470 km² hutan di tenggara Sumba, termasuk Gunung Wanggameti (1.225 m), titik tertinggi di pulau ini. Sejak 2016 taman ini dikelola bersama Manupeu Tanah Daru sebagai Taman Nasional Matalawa, dengan kantor di Waingapu; titik awal pendakian di Desa Wanggameti sekitar 3-4 jam bermobil dari Waingapu, dan musim kemarau (Mei-Oktober) paling baik.",
   "body": """<p>Begitu naik meninggalkan padang rumput kering di timur, udaranya berubah. Jalan menuju Wanggameti berkelok melewati perbukitan yang makin hijau hingga Anda berada di antara pohon-pohon tinggi berselimut lumut, kabut melayang di antara batang, dan tanah empuk oleh dedaunan. Di atas, sekawanan kakatua melintas sambil memekik; kepakan sayap rangkong berbunyi seperti kereta lewat. Di Waingapu mungkin sudah berbulan-bulan tidak hujan. Di sini hutan selalu basah.</p>
 <p>Laiwangi Wanggameti adalah bentang hutan terbesar yang tersisa di Sumba dan taman nasionalnya yang paling terpencil. Tempat ini tidak dirancang untuk wisata santai, dan justru karena itu memberi pengalaman berharga bagi pengamat burung, pendaki, dan siapa pun yang ingin mengenal sisi liar pulau ini.</p>
 
-<h2>Apa itu dan mengapa ke sana</h2>
-<p>Taman nasional ini ditetapkan pada 1998 dan mencakup sekitar 470 km2 di tenggara Kabupaten Sumba Timur. Sejak 2016 pengelolaannya digabung dengan Taman Nasional Manupeu Tanah Daru di barat dengan nama Matalawa. Kawasan ini melindungi sebagian besar tipe hutan di Sumba dan menjadi daerah tangkapan air utama di bagian timur pulau.</p>
+<h2>Mengenal lebih dekat</h2>
+<p>Taman nasional ini ditetapkan pada 1998 dan mencakup sekitar 470 km² di tenggara Kabupaten Sumba Timur. Sejak 2016 pengelolaannya digabung dengan Taman Nasional Manupeu Tanah Daru di barat dengan nama Matalawa. Kawasan ini melindungi sebagian besar tipe hutan di Sumba dan menjadi daerah tangkapan air utama di bagian timur pulau.</p>
 <p>Bagi pengamat burung, inilah daya tarik utamanya. Spesies yang tercatat di taman ini antara lain kakatua jambul jingga, punai Sumba, gemak Sumba, sikatan Sumba, kepudang-sungu Sumba, dan burung-madu Sumba. Kedua taman di bawah Matalawa mencatat 84 spesies burung, 10 di antaranya hanya ada di Sumba, dan BirdLife International menetapkan kawasan ini sebagai Daerah Penting bagi Burung dan Keanekaragaman Hayati.</p>
 <p>Para pendaki datang untuk <strong>Gunung Wanggameti</strong>, 1.225 m, titik tertinggi di Sumba. Jalurnya berupa perjalanan menembus hutan dengan banyak naik-turun, bukan pendakian teknis. Operator tur juga mengajak pengunjung ke air terjun di dalam dan sekitar taman, seperti Laputi.</p>
 
@@ -1489,9 +1489,9 @@ GUIDES = [
          ["How long does it take to climb Wanggameti?", "About 7 km from the forest trailhead to the summit, roughly 3 hours each way, so plan around 6 hours return."],
          ["Do I need a permit for Laiwangi Wanggameti National Park?", "Contact the Matalawa National Park office in Waingapu before you go; it can advise on permits, fees, guides and staying at the park post."],
          ["What birds can I see in Laiwangi Wanggameti?", "Recorded species include the citron-crested cockatoo, Sumba green pigeon, Sumba buttonquail, Sumba flycatcher and other birds found only on Sumba."]],
-  "es": [["¿Cuál es la montaña más alta de Sumba?", "El monte Wanggameti, de 1.225 m, dentro del parque nacional Laiwangi Wanggameti, en Sumba Oriental."],
+  "es": [["¿Cuál es la montaña más alta de Sumba?", "El monte Wanggameti, de 1.225 m, dentro del Parque Nacional Laiwangi Wanggameti, en Sumba Oriental."],
          ["¿Cuánto se tarda en subir al Wanggameti?", "Unos 7 km desde el inicio del sendero en el bosque hasta la cima, unas 3 horas por trayecto, así que calcula unas 6 horas ida y vuelta."],
-         ["¿Necesito permiso para el parque nacional Laiwangi Wanggameti?", "Contacta antes con la oficina del parque nacional Matalawa en Waingapu; te informarán sobre permisos, tarifas, guías y alojamiento en el puesto del parque."],
+         ["¿Necesito permiso para el Parque Nacional Laiwangi Wanggameti?", "Contacta antes con la oficina del Parque Nacional Matalawa en Waingapu; te informarán sobre permisos, tarifas, guías y alojamiento en el puesto del parque."],
          ["¿Qué aves se pueden ver en Laiwangi Wanggameti?", "Entre las especies registradas están la cacatúa de cresta citrina, la paloma verde de Sumba, el torillo de Sumba, el papamoscas de Sumba y otras aves exclusivas de la isla."]],
   "id": [["Apa gunung tertinggi di Sumba?", "Gunung Wanggameti, 1.225 m, di dalam Taman Nasional Laiwangi Wanggameti, Sumba Timur."],
          ["Berapa lama mendaki Gunung Wanggameti?", "Sekitar 7 km dari titik awal di hutan ke puncak, kira-kira 3 jam sekali jalan, jadi rencanakan sekitar 6 jam pulang-pergi."],
@@ -1561,7 +1561,7 @@ GUIDES = [
   "body": """<p>El sendero cae en picado desde el aparcamiento hacia los árboles, y el calor de la sabana deja paso a la sombra, al canto de los pájaros y al olor a tierra húmeda. Cruzas un arroyo, bajas trepando por las últimas rocas y el bosque se abre alrededor de una poza tan azul que parece iluminada desde abajo. Una fina cortina de agua resbala por una pared de caliza hasta ella. Paredes de roca clara y raíces colgantes cierran la poza por tres lados, y solo se oye el agua al caer y el chapuzón de alguien que salta.</p>
 <p>Waimarang es pequeña, pero es uno de los lugares de baño más bonitos del este de Sumba y una pausa perfecta en un día de pueblos por el sureste.</p>
 
-<h2>Qué es y por qué ir</h2>
+<h2>Qué es y por qué merece la pena</h2>
 <p>Air Terjun Waimarang es una cascada modesta que alimenta una amplia poza natural de agua turquesa y transparente, rodeada de paredes de caliza y bosque. No es alta ni potente. El color y el entorno son el motivo de la visita. Hay una cornisa a un lado y una poza más pequeña junto a la principal. Está en la aldea de Tamburi, distrito de Rindi, en las colinas del interior de la costa sureste.</p>
 <p>Parte de la magia está en el contraste. El camino cruza praderas abiertas y doradas por las que vagan vacas, cerdos y cabras, sobre todo en los meses secos de agosto y septiembre, y luego el sendero se hunde en un rincón de bosque verde que se mantiene fresco y sombreado. Reserva al menos una o dos horas para la poza; casi todos se bañan, descansan en las rocas y comen algo antes de afrontar la subida.</p>
 
@@ -1573,7 +1573,7 @@ GUIDES = [
 <li><strong>Desde Tambolaka (TMC):</strong> primero unas 4-5 horas hasta Waingapu; visítala desde una base en el este.</li>
 </ul>
 
-<h2>Cuándo ir y mejor hora del día</h2>
+<h2>Cuándo ir y a qué hora</h2>
 <ul>
 <li><strong>Hora:</strong> llega temprano. La poza está más tranquila y la luz entre los árboles es más suave, y te adelantas a los grupos.</li>
 <li><strong>Día:</strong> evita fines de semana y festivos si puedes.</li>
@@ -1582,7 +1582,7 @@ GUIDES = [
 
 <h2>Consejos y normas de respeto</h2>
 <ul>
-<li><strong>Tarifas:</strong> un artículo de 2020 hablaba de entrada gratuita y aparcamiento de unos 10.000 IDR para coches y 5.000 IDR para motos; puede haber cambiado, así que lleva billetes pequeños.</li>
+<li><strong>Tarifas:</strong> un artículo de 2020 hablaba de entrada gratuita y aparcamiento de unas 10.000 rupias para coches y 5.000 rupias para motos; puede haber cambiado, así que lleva billetes pequeños.</li>
 <li><strong>Lleva:</strong> agua, comida, ropa de recambio y calzado o sandalias con agarre. En la poza no hay vestuarios, solo unos sencillos junto al aparcamiento.</li>
 <li><strong>Baño seguro:</strong> comprueba la profundidad antes de saltar y no te tires de cabeza en agua que no conoces.</li>
 <li><strong>Respeto:</strong> la cascada está en tierra de la aldea. Haz poco ruido, pide permiso antes de fotografiar a nadie y súbete toda la basura.</li>
@@ -1593,7 +1593,7 @@ GUIDES = [
 <ul>
 <li><a href="/es/places/rende-village/">Rende</a>, el pueblo real con tumbas megalíticas al sur de Melolo.</li>
 <li><a href="/es/places/pau-village/">Pau</a>, el pueblo de tejedoras del delta del río Melolo.</li>
-<li><a href="/es/places/laiwangi-wanggameti-national-park/">El parque nacional Laiwangi Wanggameti</a>, más hacia el interior pasando por Kananggar.</li>
+<li><a href="/es/places/laiwangi-wanggameti-national-park/">El Parque Nacional Laiwangi Wanggameti</a>, más hacia el interior pasando por Kananggar.</li>
 </ul>
 <p>Más en nuestra guía de <a href="/es/things-to-do/beaches-lagoons-waterfalls/">playas, lagunas y cascadas</a>.</p>"""
  },
@@ -1604,7 +1604,7 @@ GUIDES = [
   "body": """<p>Jalur menurun tajam dari tempat parkir ke dalam hutan, panas sabana berganti teduh, kicau burung, dan aroma tanah basah. Anda menyeberangi aliran sungai kecil, menuruni bebatuan terakhir, lalu hutan terbuka di sekeliling kolam yang begitu biru seolah diterangi dari bawah. Tirai air tipis meluncur di dinding kapur ke dalamnya. Dinding batu pucat dan akar-akar menggantung menutup kolam di tiga sisi, dan yang terdengar hanya air jatuh dan bunyi orang yang melompat ke air.</p>
 <p>Waimarang memang kecil, tetapi termasuk tempat berenang terindah di Sumba Timur, dan jeda sempurna di tengah hari mengunjungi kampung-kampung di tenggara.</p>
 
-<h2>Apa itu dan mengapa ke sana</h2>
+<h2>Mengenal lebih dekat</h2>
 <p>Air Terjun Waimarang adalah air terjun kecil yang mengisi kolam alami lebar berair toska jernih, dikelilingi dinding kapur dan hutan. Tidak tinggi dan tidak deras. Warna dan suasananya yang menjadi alasan datang. Ada tebing rendah di satu sisi dan kolam kecil di samping kolam utama. Lokasinya di Desa Tamburi, Kecamatan Rindi, di perbukitan pedalaman pesisir tenggara.</p>
 <p>Sebagian pesonanya terletak pada kontrasnya. Perjalanan ke sana melintasi padang terbuka keemasan tempat sapi, babi, dan kambing berkeliaran, terutama pada bulan-bulan kering sekitar Agustus dan September, lalu jalur turun ke kantong hutan hijau yang tetap sejuk dan teduh. Sediakan setidaknya satu-dua jam di kolam; kebanyakan orang berenang, beristirahat di bebatuan, dan makan bekal sebelum mendaki kembali.</p>
 
@@ -1625,7 +1625,7 @@ GUIDES = [
 
 <h2>Tips dan etika</h2>
 <ul>
-<li><strong>Biaya:</strong> laporan tahun 2020 menyebut masuk gratis dengan parkir sekitar Rp10.000 untuk mobil dan Rp5.000 untuk motor; jumlahnya mungkin sudah berubah, jadi bawa uang pecahan kecil.</li>
+<li><strong>Biaya:</strong> laporan tahun 2020 menyebut masuk gratis dengan parkir sekitar Rp 10.000 untuk mobil dan Rp 5.000 untuk motor; jumlahnya mungkin sudah berubah, jadi bawa uang pecahan kecil.</li>
 <li><strong>Bawa:</strong> air, makanan, baju ganti, dan sepatu atau sandal yang tidak licin. Tidak ada ruang ganti di kolam, hanya yang sederhana di area parkir.</li>
 <li><strong>Aman berenang:</strong> cek kedalaman sebelum melompat dan jangan terjun kepala lebih dulu ke air yang belum Anda kenal.</li>
 <li><strong>Hormat:</strong> air terjun ini berada di tanah desa. Jaga suara, minta izin sebelum memotret orang, dan bawa kembali semua sampah.</li>
@@ -1642,8 +1642,8 @@ GUIDES = [
  },
  "facts": {
   "en": [["Where", "Tamburi village, Rindi district, inland from Melolo, East Sumba"], ["From the nearest airport", "Waingapu (WGP): about 1.5-2 hours by car, then a 20-45 minute walk"], ["Best time", "Weekday mornings; dry season for clear water"], ["Entry", "Free in a 2020 report; parking around IDR 5,000-10,000"], ["Good for", "Swimming, photography, a cool break on a south-east day trip"]],
-  "es": [["Dónde", "Aldea de Tamburi, distrito de Rindi, interior de Melolo, Sumba Oriental"], ["Desde el aeropuerto más cercano", "Waingapu (WGP): unas 1,5-2 horas en coche y luego 20-45 minutos a pie"], ["Mejor momento", "Mañanas entre semana; estación seca para el agua clara"], ["Entrada", "Gratis según un artículo de 2020; aparcamiento de unos 5.000-10.000 IDR"], ["Ideal para", "Bañarse, fotografiar, un respiro fresco en una excursión por el sureste"]],
-  "id": [["Lokasi", "Desa Tamburi, Kecamatan Rindi, pedalaman Melolo, Sumba Timur"], ["Dari bandara terdekat", "Waingapu (WGP): sekitar 1,5-2 jam bermobil, lalu jalan kaki 20-45 menit"], ["Waktu terbaik", "Pagi hari kerja; musim kemarau untuk air jernih"], ["Tiket", "Gratis menurut laporan 2020; parkir sekitar Rp5.000-10.000"], ["Cocok untuk", "Berenang, fotografi, jeda sejuk di perjalanan ke tenggara"]]},
+  "es": [["Dónde", "Aldea de Tamburi, distrito de Rindi, interior de Melolo, Sumba Oriental"], ["Desde el aeropuerto más cercano", "Waingapu (WGP): unas 1,5-2 horas en coche y luego 20-45 minutos a pie"], ["Mejor momento", "Mañanas entre semana; estación seca para el agua clara"], ["Entrada", "Gratis según un artículo de 2020; aparcamiento de unas 5.000-10.000 rupias"], ["Ideal para", "Bañarse, fotografiar, un respiro fresco en una excursión por el sureste"]],
+  "id": [["Lokasi", "Desa Tamburi, Kecamatan Rindi, pedalaman Melolo, Sumba Timur"], ["Dari bandara terdekat", "Waingapu (WGP): sekitar 1,5-2 jam bermobil, lalu jalan kaki 20-45 menit"], ["Waktu terbaik", "Pagi hari kerja; musim kemarau untuk air jernih"], ["Tiket", "Gratis menurut laporan 2020; parkir sekitar Rp 5.000-10.000"], ["Cocok untuk", "Berenang, fotografi, jeda sejuk di perjalanan ke tenggara"]]},
  "faq": {
   "en": [["How far is Waimarang Waterfall from Waingapu?", "About 1.5-2 hours by car via Melolo and the road towards Kananggar, then a 20-45 minute walk down from the car park."],
          ["Can you swim at Waimarang?", "Yes, the wide turquoise pool is good for swimming. Check depth before jumping."],
@@ -1726,11 +1726,11 @@ GUIDES = [
  "es": {
   "title": "Playa de Londa Lima, Sumba: la arena blanca más cercana a Waingapu",
   "dek": "Arena blanca, agua tranquila y colinas de sabana que bajan hasta el mar, a poca distancia de la ciudad: un baño fácil y una tarde tranquila en la costa norte de Sumba.",
-  "answer": "Londa Lima (también llamada Pantai Kuta, por la aldea de Kuta) es una playa de arena blanca en la costa norte de Sumba Oriental, en el distrito de Kanatang, a unos 9-15 km al noroeste de Waingapu: unos 20-45 minutos por carretera. El agua suele estar lo bastante tranquila para nadar, se ha informado de una entrada simbólica de 2.500 IDR o menos, y hay más gente los fines de semana y festivos.",
+  "answer": "Londa Lima (también llamada Pantai Kuta, por la aldea de Kuta) es una playa de arena blanca en la costa norte de Sumba Oriental, en el distrito de Kanatang, a unos 9-15 km al noroeste de Waingapu: unos 20-45 minutos por carretera. El agua suele estar lo bastante tranquila para nadar, se ha informado de una entrada simbólica de 2.500 rupias o menos, y hay más gente los fines de semana y festivos.",
   "body": """<p>La carretera sale de Waingapu siguiendo la costa y pronto las colinas de sabana bajan hasta la orilla: hierba clara, algunos árboles grandes que dan sombra, vacas paseando al borde de la arena. Londa Lima es una larga curva de playa blanca con un agua que va del verde transparente junto a la orilla al azul profundo más allá, donde el fondo cae hacia el estrecho. Una tarde entre semana quizá la compartas con unas pocas familias y unos chicos pescando desde las rocas, y solo se oyen olas pequeñas y perezosas.</p>
 <p>Londa Lima es la playa de verdad más cercana a Waingapu y un baño fácil entre excursiones más largas.</p>
 
-<h2>Qué es y por qué ir</h2>
+<h2>Qué es y por qué merece la pena</h2>
 <p>Pantai Londa Lima está en la aldea de Kuta, distrito de Kanatang, en la costa norte. Los vecinos suelen llamarla Pantai Kuta (nada que ver con la Kuta de Bali). Una fuente dice que el nombre significa "cogerse del brazo" en la lengua local y que la playa se abrió al turismo en 2001 por iniciativa del jefe de la aldea. Tiene arena blanca, agua tranquila, grandes árboles de sombra y colinas de sabana detrás; el color del agua se debe al fondo en pendiente entre Sumba y Flores.</p>
 <p>Londa Lima no es una playa espectacular de olas como las de las costas sur y oeste. Su encanto es la sencillez: un baño fácil y tranquilo, sombra bajo los árboles y colinas de sabana que se encuentran con el mar, todo a poca distancia de tu cama en Waingapu. Encaja bien la tarde de llegada o como parada sin prisas a la vuelta de Puru Kambera o Tanggedu.</p>
 <p>Ante todo es una playa local. Las familias de Waingapu vienen los fines de semana y festivos, la gente pesca y se ha informado de que ciertos días se celebra aquí una ceremonia marapu llamada <em>hamayang</em>. Trátala como un espacio de la comunidad, no como un resort.</p>
@@ -1743,7 +1743,7 @@ GUIDES = [
 </ul>
 <p>Desde la playa, una carretera empinada sube unos 5 km hacia el interior, hasta la parte tradicional de la aldea de Kuta, con vistas sobre la costa y Waingapu.</p>
 
-<h2>Cuándo ir y mejor hora del día</h2>
+<h2>Cuándo ir y a qué hora</h2>
 <ul>
 <li><strong>Hora:</strong> por la mañana para el agua más tranquila y los colores más limpios; a última hora de la tarde para una luz más suave y un baño más fresco.</li>
 <li><strong>Días:</strong> entre semana está tranquila. Los fines de semana y festivos como el Lebaran se llena de visitantes locales.</li>
@@ -1752,7 +1752,7 @@ GUIDES = [
 
 <h2>Consejos y normas de respeto</h2>
 <ul>
-<li><strong>Tarifas:</strong> un listado indica una entrada de 2.500 IDR por persona; puede haber también un pequeño pago por aparcar. Lleva monedas y billetes pequeños.</li>
+<li><strong>Tarifas:</strong> un listado indica una entrada de 2.500 rupias por persona; puede haber también un pequeño pago por aparcar. Lleva monedas y billetes pequeños.</li>
 <li><strong>Lleva:</strong> agua, algo de comer, protector solar y algo para hacer sombra. Los servicios son básicos.</li>
 <li><strong>Baño:</strong> el agua suele estar tranquila, pero no hay socorristas. No te alejes de donde haces pie y vigila de cerca a los niños.</li>
 <li><strong>Ropa:</strong> el bañador está bien en la playa, pero tápate al ir a la carretera o a la aldea. Muchas mujeres locales se bañan vestidas.</li>
@@ -1771,11 +1771,11 @@ GUIDES = [
  "id": {
   "title": "Pantai Londa Lima, Sumba: pantai pasir putih terdekat dari Waingapu",
   "dek": "Pasir putih, air tenang, dan bukit sabana yang turun ke laut, tak jauh dari kota: tempat berenang santai dan sore yang tenang di pesisir utara Sumba.",
-  "answer": "Londa Lima (juga disebut Pantai Kuta, sesuai nama Desa Kuta) adalah pantai pasir putih di pesisir utara Sumba Timur, Kecamatan Kanatang, sekitar 9-15 km di barat laut Waingapu: kira-kira 20-45 menit lewat jalan darat. Airnya biasanya cukup tenang untuk berenang, tiket masuk dilaporkan hanya sekitar Rp2.500 atau kurang, dan paling ramai pada akhir pekan dan hari libur.",
+  "answer": "Londa Lima (juga disebut Pantai Kuta, sesuai nama Desa Kuta) adalah pantai pasir putih di pesisir utara Sumba Timur, Kecamatan Kanatang, sekitar 9-15 km di barat laut Waingapu: kira-kira 20-45 menit lewat jalan darat. Airnya biasanya cukup tenang untuk berenang, tiket masuk dilaporkan hanya sekitar Rp 2.500 atau kurang, dan paling ramai pada akhir pekan dan hari libur.",
   "body": """<p>Jalan keluar dari Waingapu meliuk menyusuri pantai, dan tak lama kemudian bukit-bukit sabana turun sampai ke tepi laut: rumput pucat, beberapa pohon besar yang rindang, sapi berkeliaran di tepi pasir. Londa Lima adalah lengkung panjang pantai putih dengan air yang berubah dari hijau jernih di tepi menjadi biru tua di kejauhan, tempat dasar laut menurun ke arah selat. Pada sore hari kerja, mungkin Anda hanya berbagi pantai dengan beberapa keluarga dan anak-anak yang memancing dari bebatuan, dan yang terdengar hanya ombak kecil yang malas.</p>
 <p>Londa Lima adalah pantai yang paling dekat dari Waingapu dan tempat berenang yang mudah di sela perjalanan yang lebih jauh.</p>
 
-<h2>Apa itu dan mengapa ke sana</h2>
+<h2>Mengenal lebih dekat</h2>
 <p>Pantai Londa Lima terletak di Desa Kuta, Kecamatan Kanatang, di pesisir utara. Warga sering menyebutnya Pantai Kuta (bukan Kuta di Bali). Satu sumber menyebut namanya berarti "bergandengan tangan" dalam bahasa setempat, dan pantai ini mulai dibuka sebagai tempat wisata pada 2001 atas prakarsa kepala desa. Pantai ini berpasir putih, berair tenang, dinaungi pohon-pohon besar, dengan bukit sabana di belakangnya; warna airnya berasal dari dasar laut yang melandai antara Sumba dan Flores.</p>
 <p>Londa Lima bukan pantai ombak besar seperti di pesisir selatan dan barat. Daya tariknya justru kesederhanaan: berenang santai dengan rasa aman, teduh di bawah pepohonan, dan pemandangan bukit sabana yang bertemu laut, semuanya tak jauh dari penginapan Anda di Waingapu. Cocok untuk sore hari kedatangan atau persinggahan santai sepulang dari Puru Kambera atau Tanggedu.</p>
 <p>Ini terutama pantai warga. Keluarga dari Waingapu datang pada akhir pekan dan hari libur, orang memancing, dan pada hari tertentu dilaporkan ada upacara Marapu bernama <em>hamayang</em> di sini. Perlakukan sebagai ruang milik komunitas, bukan resor.</p>
@@ -1797,7 +1797,7 @@ GUIDES = [
 
 <h2>Tips dan etika</h2>
 <ul>
-<li><strong>Biaya:</strong> satu situs mencantumkan tiket Rp2.500 per orang; mungkin juga ada biaya parkir kecil. Bawa uang receh dan pecahan kecil.</li>
+<li><strong>Biaya:</strong> satu situs mencantumkan tiket Rp 2.500 per orang; mungkin juga ada biaya parkir kecil. Bawa uang receh dan pecahan kecil.</li>
 <li><strong>Bawa:</strong> air, camilan, tabir surya, dan peneduh. Fasilitas seadanya.</li>
 <li><strong>Berenang:</strong> airnya biasanya tenang, tetapi tidak ada penjaga pantai. Jangan berenang terlalu jauh dan awasi anak-anak.</li>
 <li><strong>Pakaian:</strong> baju renang wajar di pantai, tetapi kenakan penutup saat ke jalan atau ke desa. Banyak perempuan setempat berenang dengan pakaian lengkap.</li>
@@ -1815,8 +1815,8 @@ GUIDES = [
  },
  "facts": {
   "en": [["Where", "Kuta village, Kanatang district, north coast of East Sumba"], ["From the nearest airport", "Waingapu (WGP): roughly 30-45 minutes by road"], ["Best time", "Weekday mornings or late afternoons; dry season for sun"], ["Entry", "Token fee (around IDR 2,500 in one listing) plus possible parking"], ["Good for", "An easy swim, a quiet beach afternoon close to town"]],
-  "es": [["Dónde", "Aldea de Kuta, distrito de Kanatang, costa norte de Sumba Oriental"], ["Desde el aeropuerto más cercano", "Waingapu (WGP): unos 30-45 minutos por carretera"], ["Mejor momento", "Mañanas o últimas horas entre semana; estación seca para el sol"], ["Entrada", "Tarifa simbólica (unos 2.500 IDR según un listado) y quizá aparcamiento"], ["Ideal para", "Un baño fácil, una tarde de playa tranquila cerca de la ciudad"]],
-  "id": [["Lokasi", "Desa Kuta, Kecamatan Kanatang, pesisir utara Sumba Timur"], ["Dari bandara terdekat", "Waingapu (WGP): sekitar 30-45 menit lewat jalan darat"], ["Waktu terbaik", "Pagi atau sore hari kerja; musim kemarau untuk cuaca cerah"], ["Tiket", "Tarif kecil (sekitar Rp2.500 menurut satu situs) dan mungkin parkir"], ["Cocok untuk", "Berenang santai, sore yang tenang di pantai dekat kota"]]},
+  "es": [["Dónde", "Aldea de Kuta, distrito de Kanatang, costa norte de Sumba Oriental"], ["Desde el aeropuerto más cercano", "Waingapu (WGP): unos 30-45 minutos por carretera"], ["Mejor momento", "Mañanas o últimas horas entre semana; estación seca para el sol"], ["Entrada", "Tarifa simbólica (unas 2.500 rupias según un listado) y quizá aparcamiento"], ["Ideal para", "Un baño fácil, una tarde de playa tranquila cerca de la ciudad"]],
+  "id": [["Lokasi", "Desa Kuta, Kecamatan Kanatang, pesisir utara Sumba Timur"], ["Dari bandara terdekat", "Waingapu (WGP): sekitar 30-45 menit lewat jalan darat"], ["Waktu terbaik", "Pagi atau sore hari kerja; musim kemarau untuk cuaca cerah"], ["Tiket", "Tarif kecil (sekitar Rp 2.500 menurut satu situs) dan mungkin parkir"], ["Cocok untuk", "Berenang santai, sore yang tenang di pantai dekat kota"]]},
  "faq": {
   "en": [["How far is Londa Lima Beach from Waingapu?", "Roughly 9-15 km north-west along the coast road, about 20-45 minutes by car or scooter."],
          ["Is Londa Lima the same as Pantai Kuta?", "Yes. Locals often call it Pantai Kuta because it is in Kuta village; it has nothing to do with Kuta in Bali."],
@@ -1899,7 +1899,7 @@ GUIDES = [
   "body": """<p>Primera hora en Waingapu y la ciudad despierta despacio. Los bemos traquetean por Jalan Ahmad Yani, el mercado se llena de mujeres que venden nuez de betel, guindillas y pescado seco, y de los warungs sale olor a cigarrillos de clavo y plátano frito. En el puerto viejo los barcos se mecen amarrados y, al caer la tarde, el paseo se llena del humo del pescado asado sobre cáscaras de coco. Alrededor, las colinas están pardas y secas gran parte del año. Es uno de los lugares más secos de Indonesia, y la luz tiene aquí un filo duro y limpio.</p>
 <p>Waingapu no es una ciudad bonita ni pretende serlo. Pero es amable, práctica y está bien situada, y casi todos los que viajan al este de Sumba pasan por ella.</p>
 
-<h2>Qué es y por qué ir</h2>
+<h2>Qué es y por qué merece la pena</h2>
 <p>Waingapu es la capital de la regencia de Sumba Oriental y se extiende sobre unas cuantas colinas en la costa norte. Contando los distritos de Kota Waingapu y Kambera, tenía unos 74.600 habitantes según una estimación de mediados de 2025. Creció como puerto: según fuentes de viaje fue el principal puerto de la isla para exportar los famosos caballos de Sumba, y hoy sigue siendo el único de Sumba que admite petroleros, con barcos de pasaje de Pelni cada una o dos semanas, más o menos. El yacimiento prehistórico de Lambanapu, a unos 5 km al sur, se ha datado hacia el 2800 a. C.</p>
 <p>En cuanto al clima, Waingapu es de los lugares más secos de Indonesia, con unos 900 mm de lluvia al año; en agosto apenas llueve y febrero es el mes más húmedo.</p>
 
@@ -1909,7 +1909,7 @@ GUIDES = [
 <li><strong>Desde Tambolaka (TMC):</strong> unos 170 km y 4-5 horas en coche pasando por Waikabubak; coches compartidos y autobuses unen Waikabubak y Waingapu en unas 3-4 horas.</li>
 <li><strong>Por mar:</strong> Pelni y otras navieras hacen escala en Waingapu; los horarios cambian a menudo, así que compruébalos cerca de la fecha.</li>
 </ul>
-<p>Para moverse por la ciudad, los ojek (mototaxis) son baratos y abundantes. Para excursiones, la mayoría alquila moto (desde unos 100.000 IDR al día) o coche con conductor (aproximadamente 500.000-1.000.000 IDR al día en 2025-2026, los precios varían).</p>
+<p>Para moverse por la ciudad, los ojek (mototaxis) son baratos y abundantes. Para excursiones, la mayoría alquila moto (desde unas 100.000 rupias al día) o coche con conductor (entre 500.000 y 1 millón de rupias al día en 2025-2026, los precios varían).</p>
 
 <h2>Qué hacer en la ciudad y cuándo ir</h2>
 <ul>
@@ -1917,7 +1917,7 @@ GUIDES = [
 <li><strong>El mercado:</strong> ve por la mañana a ver fruta y verdura, pescado, especias, betel y a veces tejidos.</li>
 <li><strong>El puerto viejo:</strong> pasea por el frente marítimo al atardecer y cena pescado a la brasa en los puestos.</li>
 <li><strong>Bukit Persaudaraan:</strong> un mirador rápido y fácil cerca del aeropuerto.</li>
-<li><strong>Tiendas de ikat:</strong> varias tiendas venden tejidos de Sumba; las buenas piezas tejidas a mano cuestan desde aproximadamente 1 millón hasta varios millones de IDR (2025-2026).</li>
+<li><strong>Tiendas de ikat:</strong> varias tiendas venden tejidos de Sumba; las buenas piezas tejidas a mano cuestan desde aproximadamente 1 millón hasta varios millones de rupias (2025-2026).</li>
 </ul>
 <p><strong>Cuándo:</strong> la estación seca (aproximadamente mayo-noviembre en el este) es la mejor para las excursiones. El mediodía es caluroso todo el año; sal a primera hora y a última de la tarde.</p>
 
@@ -1938,16 +1938,16 @@ GUIDES = [
 <li><a href="/es/places/londa-lima-beach/">Londa Lima</a> y <a href="/es/places/puru-kambera/">Puru Kambera</a>, en la costa norte.</li>
 <li><a href="/es/places/rende-village/">Rende</a>, <a href="/es/places/pau-village/">Pau</a> y <a href="/es/places/waimarang-waterfall/">Waimarang</a>, en el sureste.</li>
 </ul>
-<p>¿Planeando el viaje completo? Consulta <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a> y <a href="/es/where-to-stay/where-to-stay-in-sumba/">dónde alojarse en Sumba</a>.</p>"""
+<p>¿Estás planeando el viaje completo? Consulta <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a> y <a href="/es/where-to-stay/where-to-stay-in-sumba/">dónde alojarse en Sumba</a>.</p>"""
  },
  "id": {
-  "title": "Waingapu, Sumba: yang bisa dilakukan di kota utama Sumba Timur",
+  "title": "Waingapu, Sumba: panduan kota utama Sumba Timur",
   "dek": "Pelabuhan dagang kuda, kota pasar, dan gerbang menuju sabana: cara menghabiskan sehari di Waingapu dan menjadikannya basis menjelajah Sumba Timur.",
   "answer": "Waingapu adalah ibu kota Kabupaten Sumba Timur dan kota terbesar di bagian timur pulau, dengan sekitar 75.000 penduduk (perkiraan 2025), bandara (Umbu Mehang Kunda, WGP), dan pelabuhan laut. Objek wisata di dalam kota tidak banyak selain kampung raja Prailiu, pasar, dan pelabuhan, tetapi Waingapu adalah basis alami untuk ke Wairinding, Walakiri, Puru Kambera, Tanggedu, dan kampung-kampung di tenggara.",
   "body": """<p>Pagi di Waingapu, kota bangun perlahan. Bemo berderak di Jalan Ahmad Yani, pasar dipenuhi mama-mama yang menjual pinang, cabai, dan ikan asin, dan aroma rokok kretek serta pisang goreng mengepul dari warung-warung. Di pelabuhan lama, perahu-perahu bergoyang di tambatan, dan menjelang malam tepi laut dipenuhi asap ikan yang dibakar di atas sabut kelapa. Di sekeliling kota, bukit-bukit cokelat dan kering hampir sepanjang tahun. Ini salah satu tempat terkering di Indonesia, dan cahayanya terasa tegas dan jernih.</p>
 <p>Waingapu bukan kota yang cantik, dan tidak berpura-pura cantik. Tetapi kotanya ramah, praktis, dan letaknya strategis, dan hampir semua pelancong ke Sumba Timur melewatinya.</p>
 
-<h2>Apa itu dan mengapa ke sana</h2>
+<h2>Mengenal lebih dekat</h2>
 <p>Waingapu adalah ibu kota Kabupaten Sumba Timur yang tersebar di beberapa bukit di pesisir utara. Termasuk Kecamatan Kota Waingapu dan Kambera, penduduknya sekitar 74.600 jiwa menurut perkiraan pertengahan 2025. Kota ini tumbuh sebagai pelabuhan: menurut sumber perjalanan, dulu inilah pelabuhan utama pulau untuk mengekspor kuda Sumba yang terkenal, dan kini masih satu-satunya pelabuhan di Sumba yang bisa disinggahi kapal tanker, dengan kapal penumpang Pelni kira-kira setiap satu sampai dua minggu. Situs prasejarah Lambanapu, sekitar 5 km di selatan, ditaksir berasal dari sekitar 2.800 SM.</p>
 <p>Dari segi iklim, Waingapu termasuk tempat terkering di Indonesia, dengan curah hujan sekitar 900 mm per tahun; Agustus nyaris tanpa hujan dan Februari adalah bulan terbasah.</p>
 
@@ -1957,15 +1957,15 @@ GUIDES = [
 <li><strong>Dari Tambolaka (TMC):</strong> sekitar 170 km dan 4-5 jam bermobil lewat Waikabubak; mobil travel dan bus menghubungkan Waikabubak dan Waingapu dalam sekitar 3-4 jam.</li>
 <li><strong>Kapal laut:</strong> Pelni dan kapal lain singgah di Waingapu; jadwal sering berubah, jadi cek menjelang tanggal keberangkatan.</li>
 </ul>
-<p>Untuk berkeliling kota, ojek murah dan mudah ditemukan. Untuk perjalanan sehari, kebanyakan pengunjung menyewa motor (mulai sekitar Rp100.000 per hari) atau mobil dengan sopir (sekitar Rp500.000-1.000.000 per hari pada 2025-2026, harga bervariasi).</p>
+<p>Untuk berkeliling kota, ojek murah dan mudah ditemukan. Untuk perjalanan sehari, kebanyakan pengunjung menyewa motor (mulai sekitar Rp 100.000 per hari) atau mobil dengan sopir (sekitar Rp 500.000-1.000.000 per hari pada 2025-2026, harga bervariasi).</p>
 
-<h2>Yang bisa dilakukan di kota dan kapan datang</h2>
+<h2>Tempat menarik di kota dan kapan datang</h2>
 <ul>
 <li><strong>Kampung Raja Prailiu:</strong> kampung raja dengan kubur megalitik dan tenun ikat, di antara bandara dan pusat kota. Lihat <a href="/id/places/prailiu-village/">halaman Prailiu</a> kami.</li>
 <li><strong>Pasar:</strong> datang pagi hari untuk melihat sayur dan buah, ikan, rempah, pinang, dan kadang kain tenun.</li>
 <li><strong>Pelabuhan lama:</strong> berjalan-jalan di tepi laut saat senja dan makan ikan bakar di lapak.</li>
 <li><strong>Bukit Persaudaraan:</strong> titik pandang cepat dan mudah dekat bandara.</li>
-<li><strong>Toko tenun:</strong> beberapa toko di kota menjual kain Sumba; kain tenun tangan yang bagus berharga mulai sekitar Rp1 juta hingga beberapa juta rupiah (2025-2026).</li>
+<li><strong>Toko tenun:</strong> beberapa toko di kota menjual kain Sumba; kain tenun tangan yang bagus berharga mulai sekitar Rp 1 juta hingga beberapa juta rupiah (2025-2026).</li>
 </ul>
 <p><strong>Kapan:</strong> musim kemarau (kira-kira Mei-November di timur) paling cocok untuk perjalanan sehari. Siang hari panas sepanjang tahun; rencanakan keluar pagi-pagi dan sore hari.</p>
 

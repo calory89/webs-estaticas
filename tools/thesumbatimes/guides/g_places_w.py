@@ -69,13 +69,13 @@ GUIDES = [
 </ul>
 <p>El último tramo sube a lo alto de la colina. No hay transporte público regular hasta la entrada, así que la mayoría llega con conductor o en ojek desde Waikabubak.</p>
 
-<h2>Cuándo ir y mejor hora del día</h2>
+<h2>Cuándo ir y a qué hora</h2>
 <p>La temporada seca, aproximadamente de mayo a septiembre, ofrece las carreteras más fiables y cielos despejados. La mañana es el mejor momento: luz suave sobre los tejados, aire fresco en las tierras altas de Waikabubak y la vida diaria en marcha. La última hora de la tarde también es buena para fotos. Hacia noviembre, las comunidades de la zona de Waikabubak celebran el Wulla Poddu, un periodo sagrado de rituales; en esos días algunas actividades o zonas pueden estar cerradas a los visitantes, así que pregunta a tu guía antes de ir.</p>
 
 <h2>Consejos y normas de respeto</h2>
 <ul>
-<li><strong>Tarifas:</strong> cuenta con una tasa del pueblo (retribusi) o un donativo anotado en el libro de visitas. Los paquetes guiados publicados en 2026 rondaban los 250.000 IDR por persona para una visita patrimonial de hasta tres horas y unos 430.000 IDR para el día completo con la tasa incluida (aproximadamente 13-23 EUR o 15-26 USD). El alojamiento en casas locales rondaba los 300.000 IDR por persona y noche con tres comidas. Los precios varían, así que confírmalos al llegar.</li>
-<li><strong>Pide permiso antes de cada foto</strong>, a personas y de casas. No te subas a las tumbas ni toques objetos rituales, altares o los postes de las casas sagradas.</li>
+<li><strong>Tarifas:</strong> cuenta con una tasa del pueblo (retribusi) o un donativo anotado en el libro de visitas. Los paquetes guiados publicados en 2026 rondaban las 250.000 rupias por persona para una visita patrimonial de hasta tres horas y unas 430.000 rupias para el día completo con la tasa incluida (aproximadamente 13-23 euros o 15-26 dólares). El alojamiento en casas locales rondaba las 300.000 rupias por persona y noche con tres comidas. Los precios varían, así que confírmalos al llegar.</li>
+<li><strong>Pide permiso antes de cada foto</strong>, tanto de personas como de casas. No te subas a las tumbas ni toques objetos rituales, altares o los postes de las casas sagradas.</li>
 <li><strong>Vístete con recato</strong>: hombros y rodillas cubiertos. Un sarong es perfecto.</li>
 <li><strong>Si los niños piden caramelos o dinero:</strong> es mejor dar a los padres, al libro de visitas o a la empresa del pueblo, o comprar tejidos directamente a las mujeres que los hicieron.</li>
 <li>Un pequeño regalo de nuez de betel (sirih pinang) es un gesto tradicional de respeto si te invitan a entrar en una casa.</li>
@@ -89,9 +89,9 @@ GUIDES = [
 <li><a href="/es/places/lapopu-waterfall/">La cascada de Lapopu</a>, unos 16 km al sur, la cascada escalonada del parque nacional.</li>
 <li><a href="/es/places/waikelo-sawah-waterfall/">La cascada de Waikelo Sawah</a>, en la carretera de Tambolaka, buena parada para un baño.</li>
 </ul>
-<p>¿Organizando tus días en la isla? Consulta <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a> y <a href="/es/where-to-stay/where-to-stay-in-sumba/">dónde alojarse en Sumba</a>.</p>"""},
+<p>¿Estás organizando tus días en la isla? Consulta <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a> y <a href="/es/where-to-stay/where-to-stay-in-sumba/">dónde alojarse en Sumba</a>.</p>"""},
  "id": {
-  "title": "Kampung Adat Praijing, Sumba: cara berkunjung dan yang perlu tahu",
+  "title": "Kampung Adat Praijing, Sumba: cara berkunjung dan hal yang perlu diketahui",
   "dek": "Teras-teras atap alang-alang menjulang di bukit dekat Waikabubak, kampung Marapu yang hidup dan kini mengelola wisatanya sendiri.",
   "answer": "Praijing (juga ditulis Prai Ijing) adalah kampung adat di Desa Tebara, sekitar 3 km dari pusat Waikabubak, Sumba Barat, terkenal dengan teras rumah beratap tinggi yang mengelilingi kubur batu megalitik. Jaraknya sekitar 45 km, kira-kira 1 jam bermobil, dari Bandara Tambolaka; pengunjung membayar retribusi atau kontribusi kecil, dan kampung menyediakan tur berpemandu, lokakarya tenun, serta homestay.",
   "body": """<p>Pagi buta di bukit Praijing. Kabut masih menggantung di lembah di bawah Waikabubak, asap kayu bakar merembes dari bawah atap, dan cahaya pertama menyentuh puncak-puncak menara alang-alang yang menjulang jauh di atas rumah seperti tangan terangkat. Ayam mengais di antara kubur batu di halaman tengah, seorang ibu menyiapkan alat tenun di beranda, dan di kolong salah satu rumah seekor babi menggerutu. Ini rumah orang sebelum menjadi objek wisata, dan salah satu kampung terindah di pulau ini.</p>
@@ -115,10 +115,10 @@ GUIDES = [
 
 <h2>Tips dan etika</h2>
 <ul>
-<li><strong>Biaya:</strong> siapkan retribusi kampung atau kontribusi yang dicatat di buku tamu. Paket berpemandu yang diberitakan pada 2026 sekitar Rp250.000 per orang untuk tur warisan budaya hingga tiga jam dan sekitar Rp430.000 untuk sehari penuh termasuk retribusi (kira-kira EUR 13-23 atau USD 15-26). Homestay diberitakan sekitar Rp300.000 per orang per malam termasuk tiga kali makan. Harga bisa berubah, jadi pastikan di lokasi.</li>
+<li><strong>Biaya:</strong> siapkan retribusi kampung atau kontribusi yang dicatat di buku tamu. Paket berpemandu yang diberitakan pada 2026 sekitar Rp 250.000 per orang untuk tur warisan budaya hingga tiga jam dan sekitar Rp 430.000 untuk sehari penuh termasuk retribusi (kira-kira 13-23 euro atau 15-26 dolar AS). Homestay diberitakan sekitar Rp 300.000 per orang per malam termasuk tiga kali makan. Harga bisa berubah, jadi pastikan di lokasi.</li>
 <li><strong>Minta izin sebelum memotret</strong>, baik orang maupun rumah. Jangan naik ke kubur batu atau menyentuh benda ritual, altar, atau tiang rumah sakral.</li>
 <li><strong>Berpakaian sopan</strong>: bahu dan lutut tertutup. Sarung sangat praktis.</li>
-<li><strong>Anak-anak meminta permen atau uang:</strong> lebih baik memberi melalui orang tua, buku tamu, atau BUMDes, atau membeli tenun langsung dari para penenunnya.</li>
+<li><strong>Jika anak-anak meminta permen atau uang:</strong> lebih baik memberi melalui orang tua, buku tamu, atau BUMDes, atau membeli tenun langsung dari para penenunnya.</li>
 <li>Oleh-oleh kecil berupa sirih pinang adalah tanda hormat tradisional bila Anda dipersilakan masuk ke rumah.</li>
 <li>Bawa uang tunai pecahan kecil; ATM tersedia di Waikabubak.</li>
 </ul>
@@ -140,12 +140,12 @@ GUIDES = [
   "es": [["Dónde", "Desa Tebara, a unos 3 km del centro de Waikabubak, Sumba Occidental"],
          ["Desde el aeropuerto más cercano", "Tambolaka (TMC): unos 45 km, alrededor de 1 hora en coche"],
          ["Mejor época", "Temporada seca (aprox. mayo-septiembre), a primera hora"],
-         ["Entrada", "Tasa o donativo; visitas guiadas de unos 250.000-430.000 IDR (2026)"],
+         ["Entrada", "Tasa o donativo; visitas guiadas de unas 250.000-430.000 rupias (2026)"],
          ["Ideal para", "Arquitectura, cultura marapu, tejido ikat, alojamiento local"]],
   "id": [["Lokasi", "Desa Tebara, sekitar 3 km dari pusat Waikabubak, Sumba Barat"],
          ["Dari bandara terdekat", "Tambolaka (TMC): sekitar 45 km, kira-kira 1 jam bermobil"],
          ["Waktu terbaik", "Musim kemarau (sekitar Mei-September), pagi hari"],
-         ["Tiket", "Retribusi atau kontribusi; tur berpemandu sekitar Rp250.000-430.000 (2026)"],
+         ["Tiket", "Retribusi atau kontribusi; tur berpemandu sekitar Rp 250.000-430.000 (2026)"],
          ["Cocok untuk", "Arsitektur, budaya Marapu, tenun ikat, homestay"]]},
  "faq": {
   "en": [["How far is Praijing from Waikabubak?", "About 3 km from the town centre, 10-20 minutes by car or ojek. From Tambolaka airport it is about 45 km, roughly 1 hour."],
@@ -153,12 +153,12 @@ GUIDES = [
          ["Can you stay overnight in Praijing?", "Yes. The village offers homestays, reported at around IDR 300,000 per person per night with three meals in 2026."],
          ["Can I take photos in Praijing?", "Usually yes, but always ask first, both for people and for houses, and never climb on the stone tombs."]],
   "es": [["¿A qué distancia está Praijing de Waikabubak?", "A unos 3 km del centro, 10-20 minutos en coche u ojek. Desde el aeropuerto de Tambolaka hay unos 45 km, alrededor de 1 hora."],
-         ["¿Hay que pagar entrada en Praijing?", "Se paga una tasa del pueblo o un donativo en el libro de visitas. Las visitas guiadas del propio pueblo publicadas en 2026 costaban unos 250.000 IDR hasta tres horas y unos 430.000 IDR el día completo. Los precios varían."],
-         ["¿Se puede dormir en Praijing?", "Sí. El pueblo ofrece alojamiento en casas locales, publicado en 2026 a unos 300.000 IDR por persona y noche con tres comidas."],
-         ["¿Puedo hacer fotos en Praijing?", "Normalmente sí, pero pide siempre permiso, a las personas y para las casas, y nunca te subas a las tumbas de piedra."]],
+         ["¿Hay que pagar entrada en Praijing?", "Se paga una tasa del pueblo o un donativo en el libro de visitas. Las visitas guiadas del propio pueblo publicadas en 2026 costaban unas 250.000 rupias hasta tres horas y unas 430.000 rupias el día completo. Los precios varían."],
+         ["¿Se puede dormir en Praijing?", "Sí. El pueblo ofrece alojamiento en casas locales, publicado en 2026 a unas 300.000 rupias por persona y noche con tres comidas."],
+         ["¿Puedo hacer fotos en Praijing?", "Normalmente sí, pero pide siempre permiso antes de fotografiar a personas o casas, y nunca te subas a las tumbas de piedra."]],
   "id": [["Berapa jauh Praijing dari Waikabubak?", "Sekitar 3 km dari pusat kota, 10-20 menit dengan mobil atau ojek. Dari Bandara Tambolaka sekitar 45 km, kira-kira 1 jam."],
-         ["Apakah ada tiket masuk Kampung Praijing?", "Pengunjung membayar retribusi kampung atau kontribusi di buku tamu. Tur berpemandu yang dikelola kampung pada 2026 sekitar Rp250.000 hingga tiga jam dan sekitar Rp430.000 sehari penuh. Harga bisa berubah."],
-         ["Bisakah menginap di Praijing?", "Bisa. Kampung menyediakan homestay, diberitakan sekitar Rp300.000 per orang per malam termasuk tiga kali makan pada 2026."],
+         ["Apakah ada tiket masuk Kampung Praijing?", "Pengunjung membayar retribusi kampung atau kontribusi di buku tamu. Tur berpemandu yang dikelola kampung pada 2026 sekitar Rp 250.000 hingga tiga jam dan sekitar Rp 430.000 sehari penuh. Harga bisa berubah."],
+         ["Bisakah menginap di Praijing?", "Bisa. Kampung menyediakan homestay, diberitakan sekitar Rp 300.000 per orang per malam termasuk tiga kali makan pada 2026."],
          ["Bolehkah memotret di Praijing?", "Umumnya boleh, tetapi selalu minta izin dulu, untuk orang maupun rumah, dan jangan pernah naik ke kubur batu."]]},
  "places": [{"name": "Praijing village", "lat": -9.6416, "lon": 119.4309, "area": "Waikabubak, West Sumba"}],
  "sources": [
@@ -230,7 +230,7 @@ GUIDES = [
   "dek": "Un pueblo de clanes en lo alto de una colina en mitad de la ciudad, donde los sacerdotes marapu aún fijan el calendario del mes sagrado.",
   "answer": "Tarung es un pueblo tradicional marapu sobre una pequeña colina en el lado oeste de Waikabubak, capital de Sumba Occidental, unido a su vecino Waitabar por un sendero bordeado de piedras. Está a unos 40 km, alrededor de 1 hora en coche, del aeropuerto de Tambolaka y a un paseo corto o un trayecto en ojek del centro. Sus 30 casas ardieron en octubre de 2017 y la mayoría se han reconstruido al estilo tradicional; ve con guía, firma el libro de visitas y deja un pequeño donativo.",
   "body": """<p>Dejas el tráfico de Waikabubak, subes unos minutos por un camino pedregoso y la ciudad parece desaparecer. Altos tejados de paja se alinean en dos filas alrededor de un patio de enormes tumbas de piedra, de una galería cuelgan cuernos de búfalo y un perro duerme sobre una losa más antigua que la memoria de cualquiera. Abajo todavía se oyen motos. Aquí arriba se habla de clanes, de antepasados y de la luna.</p>
-<p>Tarung y Waitabar son el corazón ritual de la zona de Loli, alrededor de Waikabubak, y de los pueblos tradicionales más fáciles de visitar en Sumba. Que sean accesibles no los hace menos sagrados.</p>
+<p>Tarung y Waitabar son el corazón ritual de la zona de Loli, alrededor de Waikabubak, y están entre los pueblos tradicionales más fáciles de visitar de Sumba. Que sean accesibles no los hace menos sagrados.</p>
 
 <h2>Qué es Tarung y por qué ir</h2>
 <p>Tarung se asienta sobre una pequeña colina en el lado occidental de Waikabubak, y su vecino Waitabar queda al otro extremo de un sendero bordeado de piedras, de modo que parecen un solo pueblo. Ambos tienen altas casas de clan de paja sobre pilotes, con el ganado debajo, y grandes tumbas de losas de piedra en los patios. Varias casas tienen funciones especiales: unas guardan reliquias sagradas como machetes, gongs y tambores, y otras deciden cuándo empieza el <strong>Wulla Poddu</strong>, el mes sagrado. El Wulla Poddu es un periodo de ritos austeros, aproximadamente entre octubre y noviembre, que termina con ofrendas, cantos y danzas. Waitabar tiene sus propios jefes y objetos sagrados, y algunas casas exhiben largas hileras de cuernos de búfalo de antiguos sacrificios, señal de prestigio.</p>
@@ -245,12 +245,12 @@ GUIDES = [
 </ul>
 <p>Los coches llegan cerca, pero el último tramo se hace a pie por el camino y el sendero entre los dos pueblos.</p>
 
-<h2>Cuándo ir y mejor hora del día</h2>
+<h2>Cuándo ir y a qué hora</h2>
 <p>Cualquier mañana de la temporada seca (aproximadamente de mayo a septiembre) es agradable, y más fresca que la costa porque Waikabubak está en las colinas. La luz de la tarde es preciosa sobre los tejados y es posible ver a las mujeres tejiendo en las galerías. Durante el Wulla Poddu (hacia octubre-noviembre) rigen normas rituales estrictas y algunas ceremonias están cerradas o restringidas; si vas en esas fechas, hazlo solo con un guía local y sigue sus indicaciones. Los ancianos fijan las fechas exactas cada año.</p>
 
 <h2>Consejos y normas de respeto</h2>
 <ul>
-<li><strong>Donativo:</strong> no hay entrada fija; firma el libro de visitas y deja una aportación. Entre 10.000 y 40.000 IDR por persona (aproximadamente 0,50-2 EUR o 0,60-2,50 USD) es lo habitual en los pueblos de Sumba en 2025-2026, algo más si alguien dedica tiempo a explicarte el pueblo.</li>
+<li><strong>Donativo:</strong> no hay entrada fija; firma el libro de visitas y deja una aportación. Entre 10.000 y 40.000 rupias por persona (aproximadamente 0,50-2 euros o 0,60-2,50 dólares) es lo habitual en los pueblos de Sumba en 2025-2026, algo más si alguien dedica tiempo a explicarte el pueblo.</li>
 <li><strong>Ve con guía</strong> de la ciudad o del propio pueblo. Los jóvenes suelen hablar buen inglés y a veces invitan a entrar, pero un guía te ayuda a evitar los lugares sagrados.</li>
 <li><strong>Pide permiso antes de fotografiar</strong> personas, casas, altares y tumbas. No te sientes ni te subas a las tumbas y no toques objetos rituales ni cuernos de búfalo.</li>
 <li><strong>Vístete con recato</strong> y habla en voz baja junto a las casas sagradas.</li>
@@ -290,7 +290,7 @@ GUIDES = [
 
 <h2>Tips dan etika</h2>
 <ul>
-<li><strong>Sumbangan:</strong> tidak ada tiket tetap; isi buku tamu dan beri kontribusi. Sekitar Rp10.000-40.000 per orang (kira-kira EUR 0,50-2 atau USD 0,60-2,50) lazim di kampung-kampung Sumba pada 2025-2026, lebih bila ada warga yang meluangkan waktu menjelaskan kampung.</li>
+<li><strong>Sumbangan:</strong> tidak ada tiket tetap; isi buku tamu dan beri kontribusi. Sekitar Rp 10.000-40.000 per orang (kira-kira 0,50-2 euro atau 0,60-2,50 dolar AS) lazim di kampung-kampung Sumba pada 2025-2026, lebih bila ada warga yang meluangkan waktu menjelaskan kampung.</li>
 <li><strong>Datang bersama pemandu</strong> dari kota atau dari kampung. Anak muda di sini sering fasih berbahasa Inggris dan kadang mengajak masuk, tetapi pemandu membantu Anda menghindari tempat sakral.</li>
 <li><strong>Minta izin sebelum memotret</strong> orang, rumah, altar, dan kubur. Jangan duduk atau naik ke kubur batu dan jangan menyentuh benda ritual atau tanduk kerbau.</li>
 <li><strong>Berpakaian sopan</strong> dan bicara pelan di dekat rumah sakral.</li>
@@ -314,12 +314,12 @@ GUIDES = [
   "es": [["Dónde", "Lado oeste de Waikabubak, Sumba Occidental (junto a Waitabar)"],
          ["Desde el aeropuerto más cercano", "Tambolaka (TMC): unos 40 km, alrededor de 1 hora en coche"],
          ["Mejor época", "Mañanas o tardes de temporada seca; Wulla Poddu hacia oct-nov (restringido)"],
-         ["Entrada", "Sin entrada fija; libro de visitas y donativo, unos 10.000-40.000 IDR"],
+         ["Entrada", "Sin entrada fija; libro de visitas y donativo, unas 10.000-40.000 rupias"],
          ["Ideal para", "Cultura marapu, tumbas megalíticas, ikat, paseo fácil desde la ciudad"]],
   "id": [["Lokasi", "Sisi barat Waikabubak, Sumba Barat (bersama Kampung Waitabar)"],
          ["Dari bandara terdekat", "Tambolaka (TMC): sekitar 40 km, kira-kira 1 jam bermobil"],
          ["Waktu terbaik", "Pagi atau sore di musim kemarau; Wulla Poddu sekitar Okt-Nov (terbatas)"],
-         ["Tiket", "Tidak ada tiket tetap; buku tamu dan sumbangan sekitar Rp10.000-40.000"],
+         ["Tiket", "Tidak ada tiket tetap; buku tamu dan sumbangan sekitar Rp 10.000-40.000"],
          ["Cocok untuk", "Budaya Marapu, kubur megalitik, tenun ikat, jalan kaki mudah dari kota"]]},
  "faq": {
   "en": [["Is Tarung village open to visitors after the 2017 fire?", "Yes. The fire in October 2017 burned all 30 houses, but most have been rebuilt in the traditional style and visitors are welcome. Some older listings still wrongly say it is closed."],
@@ -329,11 +329,11 @@ GUIDES = [
   "es": [["¿Se puede visitar Tarung después del incendio de 2017?", "Sí. El incendio de octubre de 2017 quemó las 30 casas, pero la mayoría se han reconstruido al estilo tradicional y los visitantes son bienvenidos. Algunas guías antiguas aún dicen, por error, que está cerrado."],
          ["¿Qué es el Wulla Poddu?", "El mes sagrado de las comunidades marapu de la zona de Waikabubak, un periodo de ritos austeros hacia octubre-noviembre que termina con ofrendas, cantos y danzas. Algunas casas de Tarung deciden cuándo empieza."],
          ["¿Necesito guía para visitar Tarung?", "No es obligatorio, pero un guía de la ciudad o del pueblo te ayuda a entender las casas de clan y a evitar lugares sagrados."],
-         ["¿Cuánto debo donar en Tarung?", "No hay tarifa fija. Firma el libro de visitas y deja unos 10.000-40.000 IDR por persona, algo más si alguien te acompaña y te explica el pueblo."]],
+         ["¿Cuánto debo donar en Tarung?", "No hay tarifa fija. Firma el libro de visitas y deja unas 10.000-40.000 rupias por persona, algo más si alguien te acompaña y te explica el pueblo."]],
   "id": [["Apakah Kampung Tarung masih bisa dikunjungi setelah kebakaran 2017?", "Bisa. Kebakaran Oktober 2017 menghanguskan ke-30 rumah, tetapi sebagian besar sudah dibangun kembali secara tradisional dan tamu disambut. Beberapa daftar wisata lama keliru menyebutnya tertutup."],
          ["Apa itu Wulla Poddu?", "Bulan suci komunitas Marapu di sekitar Waikabubak, masa ritual penuh pantangan sekitar Oktober-November yang ditutup dengan persembahan, nyanyian, dan tarian. Beberapa rumah di Tarung menentukan kapan dimulainya."],
          ["Perlukah pemandu ke Tarung?", "Tidak wajib, tetapi pemandu dari kota atau kampung membantu Anda memahami rumah marga dan menghindari tempat sakral."],
-         ["Berapa sumbangan yang pantas di Tarung?", "Tidak ada tarif tetap. Isi buku tamu dan beri sekitar Rp10.000-40.000 per orang, lebih bila ada warga yang menemani dan menjelaskan."]]},
+         ["Berapa sumbangan yang pantas di Tarung?", "Tidak ada tarif tetap. Isi buku tamu dan beri sekitar Rp 10.000-40.000 per orang, lebih bila ada warga yang menemani dan menjelaskan."]]},
  "places": [{"name": "Tarung village", "lat": -9.6324, "lon": 119.4075, "area": "Waikabubak, West Sumba"}],
  "sources": [
   ["Tarung, Wikipedia", "https://en.wikipedia.org/wiki/Tarung"],
@@ -393,7 +393,7 @@ GUIDES = [
  "es": {
   "title": "Cascada de Lapopu, Sumba: cómo llegar y cuándo ir",
   "dek": "La cascada más alta de Sumba baja por una escalera de roca dentro del parque nacional, a un corto paseo por el bosque desde la carretera.",
-  "answer": "Lapopu es una cascada escalonada de unos 90 m de altura dentro del Parque Nacional de Manupeu Tanah Daru, en la zona de Wanokaka, al sureste de Waikabubak (Sumba Occidental). Está a unos 16 km (unos 40-45 minutos) de Waikabubak y a unos 56 km (alrededor de 1,5 horas) del aeropuerto de Tambolaka, más un paseo de 10-20 minutos con un puente de bambú. Ve en la temporada seca, aproximadamente de mayo a octubre, cuando la poza está lo bastante clara para bañarse; los extranjeros han pagado unos 150.000 IDR de entrada en los últimos años.",
+  "answer": "Lapopu es una cascada escalonada de unos 90 m de altura dentro del Parque Nacional de Manupeu Tanah Daru, en la zona de Wanokaka, al sureste de Waikabubak (Sumba Occidental). Está a unos 16 km (unos 40-45 minutos) de Waikabubak y a unos 56 km (alrededor de 1,5 horas) del aeropuerto de Tambolaka, más un paseo de 10-20 minutos con un puente de bambú. Ve en la temporada seca, aproximadamente de mayo a octubre, cuando la poza está lo bastante clara para bañarse; los extranjeros han pagado unas 150.000 rupias de entrada en los últimos años.",
   "body": """<p>Lapopu se oye antes de verse: un rugido constante que sube por el valle entre los árboles y crece a cada paso por el sendero de rocas junto al río. De pronto el bosque se abre y todo el acantilado se mueve, el agua resbala escalón tras escalón de roca clara, se divide en decenas de cintas blancas y vuelve a reunirse en una poza turquesa. La espuma flota sobre las piedras, los macacos observan desde las ramas y el aire refresca de golpe.</p>
 <p>Lapopu es la cascada más conocida de Sumba Occidental y, según la mayoría de las fuentes, la más alta de la isla. Se llega con facilidad en media jornada desde Waikabubak, y aun así conserva un aire salvaje.</p>
 
@@ -409,12 +409,12 @@ GUIDES = [
 </ul>
 <p>El último tramo es de grava o está parcialmente sin asfaltar y la señalización es irregular, así que un conductor que conozca el camino ahorra tiempo. Desde el aparcamiento hay unos 10-20 minutos a pie junto al río: rocas, tramos resbaladizos, una pequeña cuesta empinada y un puente de bambú que se cruza de uno en uno. Algunos relatos antiguos hablan de una caminata mucho más larga desde la carretera principal; en coche se llega hasta el puesto.</p>
 
-<h2>Cuándo ir y mejor hora del día</h2>
+<h2>Cuándo ir y a qué hora</h2>
 <p>La temporada seca, aproximadamente de mayo a octubre, es la mejor: el sendero es más seguro, el puente más fiable y la poza se vuelve turquesa. Tras lluvias fuertes el agua puede bajar marrón y con demasiada corriente para bañarse, y a principios de 2023 una tormenta rompió el puente de bambú durante un tiempo. Ve por la mañana para tener luz suave en el acantilado y menos gente; los fines de semana y festivos indonesios hay más visitantes.</p>
 
 <h2>Consejos y normas de respeto</h2>
 <ul>
-<li><strong>Tarifas:</strong> las tasas del parque y locales cambian a menudo. Los extranjeros han pagado unos 150.000 IDR por persona en los últimos años (aproximadamente 8 EUR o 9 USD), con una tarifa más alta en festivos, mientras que los indonesios pagan mucho menos; el aparcamiento ronda los 10.000 IDR. Un guía o porteador local puede pedir unos 50.000 IDR. Confirma el precio en el puesto de guardas y pide el tique.</li>
+<li><strong>Tarifas:</strong> las tasas del parque y locales cambian a menudo. Los extranjeros han pagado unas 150.000 rupias por persona en los últimos años (aproximadamente 8 euros o 9 dólares), con una tarifa más alta en festivos, mientras que los indonesios pagan mucho menos; el aparcamiento ronda las 10.000 rupias. Un guía o porteador local puede pedir unas 50.000 rupias. Confirma el precio en el puesto de guardas y pide el tique.</li>
 <li><strong>Calzado:</strong> lleva zapatillas con buen agarre, no chanclas. Las rocas junto a la cascada resbalan.</li>
 <li><strong>Baño:</strong> se permite en la temporada seca, pero no te bañes después de llover ni intentes cruzar el río con corriente fuerte.</li>
 <li>Hay un aseo básico en el aparcamiento y a veces alguien vende cocos. Lleva agua y llévate toda tu basura.</li>
@@ -432,7 +432,7 @@ GUIDES = [
  "id": {
   "title": "Air Terjun Lapopu, Sumba: cara ke sana dan kapan datang",
   "dek": "Air terjun tertinggi di Sumba mengalir menuruni tangga batu di dalam taman nasional, hanya jalan kaki singkat menembus hutan dari jalan.",
-  "answer": "Lapopu adalah air terjun bertingkat setinggi sekitar 90 m di dalam Taman Nasional Manupeu Tanah Daru, di wilayah Wanokaka, tenggara Waikabubak, Sumba Barat. Jaraknya sekitar 16 km (sekitar 40-45 menit) dari Waikabubak dan sekitar 56 km (kira-kira 1,5 jam) dari Bandara Tambolaka, disusul jalan kaki 10-20 menit melewati jembatan bambu. Datanglah di musim kemarau, kira-kira Mei sampai Oktober, saat kolamnya cukup jernih untuk berenang; wisatawan asing membayar sekitar Rp150.000 dalam beberapa tahun terakhir.",
+  "answer": "Lapopu adalah air terjun bertingkat setinggi sekitar 90 m di dalam Taman Nasional Manupeu Tanah Daru, di wilayah Wanokaka, tenggara Waikabubak, Sumba Barat. Jaraknya sekitar 16 km (sekitar 40-45 menit) dari Waikabubak dan sekitar 56 km (kira-kira 1,5 jam) dari Bandara Tambolaka, disusul jalan kaki 10-20 menit melewati jembatan bambu. Datanglah di musim kemarau, kira-kira Mei sampai Oktober, saat kolamnya cukup jernih untuk berenang; wisatawan asing membayar sekitar Rp 150.000 dalam beberapa tahun terakhir.",
   "body": """<p>Lapopu terdengar sebelum terlihat: deru yang terus naik dari lembah menembus pepohonan, makin keras di setiap langkah di jalur berbatu tepi sungai. Lalu hutan terbuka dan seluruh tebing seakan bergerak, air meluncur dari satu undakan batu pucat ke undakan berikutnya, terpecah menjadi puluhan pita putih lalu berkumpul lagi di kolam toska. Percikan air melayang di atas bebatuan, kera ekor panjang mengamati dari dahan, dan udara tiba-tiba sejuk.</p>
 <p>Lapopu adalah air terjun paling terkenal di Sumba Barat dan, menurut banyak sumber, yang tertinggi di pulau ini. Cukup mudah dijangkau dalam setengah hari dari Waikabubak, tetapi suasananya tetap liar.</p>
 
@@ -453,7 +453,7 @@ GUIDES = [
 
 <h2>Tips dan etika</h2>
 <ul>
-<li><strong>Biaya:</strong> tarif taman nasional dan pungutan lokal sering berubah. Wisatawan asing membayar sekitar Rp150.000 per orang dalam beberapa tahun terakhir (kira-kira EUR 8 atau USD 9), dengan tarif lebih tinggi saat libur, sedangkan wisatawan Indonesia jauh lebih murah; parkir sekitar Rp10.000. Pemandu atau porter lokal bisa meminta sekitar Rp50.000. Pastikan tarif terbaru di pos jaga dan minta karcis.</li>
+<li><strong>Biaya:</strong> tarif taman nasional dan pungutan lokal sering berubah. Wisatawan asing membayar sekitar Rp 150.000 per orang dalam beberapa tahun terakhir (kira-kira 8 euro atau 9 dolar AS), dengan tarif lebih tinggi saat libur, sedangkan wisatawan Indonesia jauh lebih murah; parkir sekitar Rp 10.000. Pemandu atau porter lokal bisa meminta sekitar Rp 50.000. Pastikan tarif terbaru di pos jaga dan minta karcis.</li>
 <li><strong>Alas kaki:</strong> pakai sepatu yang mencengkeram, bukan sandal jepit. Batu di dekat air terjun licin.</li>
 <li><strong>Berenang:</strong> boleh di musim kemarau, tetapi jangan masuk air setelah hujan dan jangan menyeberang sungai saat arus kuat.</li>
 <li>Ada toilet sederhana di parkiran dan kadang penjual kelapa. Bawa air minum dan bawa pulang semua sampah.</li>
@@ -477,12 +477,12 @@ GUIDES = [
   "es": [["Dónde", "Parque Nacional de Manupeu Tanah Daru, zona de Wanokaka, Sumba Occidental"],
          ["Desde el aeropuerto más cercano", "Tambolaka (TMC): unos 56 km, alrededor de 1,5 h, más 10-20 min a pie"],
          ["Mejor época", "Temporada seca (aprox. mayo-octubre), por la mañana"],
-         ["Entrada", "Extranjeros unos 150.000 IDR en los últimos años; los precios cambian"],
+         ["Entrada", "Extranjeros unas 150.000 rupias en los últimos años; los precios cambian"],
          ["Ideal para", "Una gran cascada escalonada, baño en temporada seca, media jornada fácil"]],
   "id": [["Lokasi", "Taman Nasional Manupeu Tanah Daru, wilayah Wanokaka, Sumba Barat"],
          ["Dari bandara terdekat", "Tambolaka (TMC): sekitar 56 km, kira-kira 1,5 jam, plus jalan kaki 10-20 menit"],
          ["Waktu terbaik", "Musim kemarau (sekitar Mei-Oktober), pagi hari"],
-         ["Tiket", "Wisatawan asing sekitar Rp150.000 beberapa tahun terakhir; tarif bisa berubah"],
+         ["Tiket", "Wisatawan asing sekitar Rp 150.000 beberapa tahun terakhir; tarif bisa berubah"],
          ["Cocok untuk", "Air terjun bertingkat besar, berenang di musim kemarau, wisata setengah hari"]]},
  "faq": {
   "en": [["How tall is Lapopu waterfall?", "About 90 m, falling in several tiers. It is usually described as the tallest waterfall in Sumba."],
@@ -492,11 +492,11 @@ GUIDES = [
   "es": [["¿Qué altura tiene la cascada de Lapopu?", "Unos 90 m, en varios escalones. Suele describirse como la cascada más alta de Sumba."],
          ["¿Cuánto se camina hasta Lapopu?", "Desde el aparcamiento, unos 10-20 minutos junto al río, entre rocas y por un puente de bambú. Lleva calzado con agarre."],
          ["¿Se puede nadar en Lapopu?", "Sí. En la temporada seca la poza (de unos 2 m de profundidad) está clara y se permite el baño. Tras lluvias fuertes el agua baja marrón y la corriente puede ser peligrosa."],
-         ["¿Cuánto cuesta la entrada a Lapopu?", "Los extranjeros han pagado unos 150.000 IDR por persona en los últimos años, más en festivos, además de unos 10.000 IDR de aparcamiento. Las tarifas cambian, así que confírmalas en el puesto de guardas."]],
+         ["¿Cuánto cuesta la entrada a Lapopu?", "Los extranjeros han pagado unas 150.000 rupias por persona en los últimos años, más en festivos, además de unas 10.000 rupias de aparcamiento. Las tarifas cambian, así que confírmalas en el puesto de guardas."]],
   "id": [["Berapa tinggi Air Terjun Lapopu?", "Sekitar 90 m, jatuh dalam beberapa tingkat. Biasanya disebut sebagai air terjun tertinggi di Sumba."],
          ["Berapa lama jalan kaki ke Lapopu?", "Dari parkiran sekitar 10-20 menit di tepi sungai, melewati batu dan jembatan bambu. Pakai sepatu yang mencengkeram."],
          ["Bolehkah berenang di Lapopu?", "Boleh. Di musim kemarau kolamnya (sedalam sekitar 2 m) jernih dan boleh untuk berenang. Setelah hujan deras air keruh dan arus bisa berbahaya."],
-         ["Berapa tiket masuk Lapopu?", "Wisatawan asing membayar sekitar Rp150.000 per orang dalam beberapa tahun terakhir, lebih mahal saat libur, ditambah parkir sekitar Rp10.000. Tarif bisa berubah, jadi pastikan di pos jaga."]]},
+         ["Berapa tiket masuk Lapopu?", "Wisatawan asing membayar sekitar Rp 150.000 per orang dalam beberapa tahun terakhir, lebih mahal saat libur, ditambah parkir sekitar Rp 10.000. Tarif bisa berubah, jadi pastikan di pos jaga."]]},
  "places": [{"name": "Lapopu waterfall", "lat": -9.6783, "lon": 119.4930, "area": "Wanokaka, West Sumba"}],
  "sources": [
   ["La Popu waterfall, Travelfish (Sally Arnold)", "https://www.travelfish.org/sight_profile/indonesia/east_nusa_tenggara/sumba/wanokaka_and_lamboya/3719"],
@@ -576,12 +576,12 @@ GUIDES = [
 </ul>
 <p>Al final de la carretera, junto a las últimas casas, esperan los guías locales. La caminata empieza con aproximadamente 1,5 km de camino llano, a menudo embarrado, entre hierba hasta una pequeña cabaña; luego entra en el bosque y sube y baja con fuerza por una senda estrecha, sin señalizar y con caliza afilada, y termina con una larga escalera (una fuente cuenta más de 500 peldaños) hasta la poza. Cuenta con 1-1,5 horas por trayecto, más si está mojado, y unas 4-5 horas para toda la excursión.</p>
 
-<h2>Cuándo ir y mejor hora del día</h2>
+<h2>Cuándo ir y a qué hora</h2>
 <p>La temporada seca, aproximadamente de mayo a octubre, ofrece el sendero más fácil y menos resbaladizo y el agua más clara para bañarse. La temporada de lluvias (aproximadamente de diciembre a marzo) trae el segundo salto, más alto, y una enorme cortina de agua, pero el camino se vuelve embarrado, lento y más peligroso, con sanguijuelas. Sal temprano: en el bosque hace más fresco y volverás antes de que aprieten el calor o los chubascos de la tarde.</p>
 
 <h2>Consejos y normas de respeto</h2>
 <ul>
-<li><strong>Contrata un guía local</strong> al final de la carretera: el sendero no está señalizado. A menudo el precio queda a tu criterio, así que acordad la cantidad antes de salir. Se ha publicado una tasa oficial del parque de unos 150.000 IDR para extranjeros, aunque no siempre se cobra.</li>
+<li><strong>Contrata un guía local</strong> al final de la carretera: el sendero no está señalizado. A menudo el precio queda a tu criterio, así que acordad la cantidad antes de salir. Se ha publicado una tasa oficial del parque de unas 150.000 rupias para extranjeros, aunque no siempre se cobra.</li>
 <li><strong>Lleva calzado adecuado</strong> con buen agarre, calcetines altos o pantalón largo contra la hierba y las sanguijuelas, y al menos 1,5 litros de agua por persona y algo de comer.</li>
 <li><strong>Baño:</strong> solo con agua tranquila y clara en temporada seca, y solo si el guía lo ve bien. La bajada a la zona de baño es empinada.</li>
 <li>Pregunta al guía si hay lugares donde no debes entrar o hacer fotos, y no grites, no dejes basura ni muevas piedras en este lugar sagrado.</li>
@@ -595,7 +595,7 @@ GUIDES = [
 <li><a href="/es/places/tarung-village/">El pueblo de Tarung</a>, en Waikabubak, para una tarde cultural después de la caminata.</li>
 </ul>"""},
  "id": {
-  "title": "Air Terjun Matayangu, Sumba: trekking hutan dan yang perlu tahu",
+  "title": "Air Terjun Matayangu, Sumba: menembus hutan dan hal yang perlu diketahui",
   "dek": "Air terjun 75 m yang keluar dari gua ke kolam hijau kebiruan, hanya bisa dicapai berjalan kaki menembus salah satu hutan dataran rendah terakhir di Sumba.",
   "answer": "Matayangu adalah air terjun setinggi sekitar 75 m di Taman Nasional Manupeu Tanah Daru, dekat Desa Waimanu, Sumba Tengah, dengan air terjun kedua yang lebih tinggi dan hanya mengalir di musim hujan. Jaraknya sekitar 20-25 km dari Waikabubak, kira-kira 1-1,5 jam bermobil di jalan yang kurang baik, lalu trekking hutan yang berat sekitar 1-1,5 jam sekali jalan. Pergilah bersama pemandu lokal, di musim kemarau (kira-kira Mei-Oktober) agar jalur lebih mudah, dan hormati tempat ini sebagai situs sakral Marapu.",
   "body": """<p>Jalur dimulai di padang rumput tinggi lalu masuk ke hutan yang begitu rapat sampai cahaya berubah hijau. Akar dan batu kapur tajam di bawah kaki, dengung serangga, kepak sayap julang di atas kanopi. Lalu, setelah anak tangga curam terakhir, suara deru datang dan hutan terbuka di depan tebing tempat tiang air putih memancar dari batu ke kolam berwarna giok. Bagi banyak pelancong inilah air terjun paling berkesan di Sumba, justru karena sulit dicapai.</p>
@@ -617,7 +617,7 @@ GUIDES = [
 
 <h2>Tips dan etika</h2>
 <ul>
-<li><strong>Sewa pemandu lokal</strong> di ujung jalan: jalurnya tidak bertanda. Tarifnya sering diserahkan kepada Anda, jadi sepakati jumlahnya dengan jelas sebelum berangkat. Tarif resmi taman nasional sekitar Rp150.000 untuk wisatawan asing pernah dilaporkan, meski tidak selalu ditarik.</li>
+<li><strong>Sewa pemandu lokal</strong> di ujung jalan: jalurnya tidak bertanda. Tarifnya sering diserahkan kepada Anda, jadi sepakati jumlahnya dengan jelas sebelum berangkat. Tarif resmi taman nasional sekitar Rp 150.000 untuk wisatawan asing pernah dilaporkan, meski tidak selalu ditarik.</li>
 <li><strong>Pakai sepatu yang layak</strong> dan mencengkeram, kaus kaki panjang atau celana panjang untuk melindungi dari rumput dan pacet, dan bawa minimal 1,5 liter air per orang serta camilan.</li>
 <li><strong>Berenang:</strong> hanya bila air tenang dan jernih di musim kemarau dan pemandu mengizinkan. Jalan turun ke tempat berenang curam.</li>
 <li>Tanyakan pemandu apakah ada tempat yang tidak boleh dimasuki atau dipotret, dan jangan berteriak, membuang sampah, atau memindahkan batu di situs sakral ini.</li>
@@ -639,12 +639,12 @@ GUIDES = [
   "es": [["Dónde", "Pueblo de Waimanu, Sumba Central, en el Parque Nacional de Manupeu Tanah Daru"],
          ["Desde el aeropuerto más cercano", "Tambolaka (TMC): unos 65 km, 2-2,5 h al sendero y 1-1,5 h a pie"],
          ["Mejor época", "Temporada seca (aprox. mayo-octubre), salida temprano"],
-         ["Entrada", "Guía local unos 50.000-100.000 IDR por grupo; tasa del parque no siempre cobrada"],
+         ["Entrada", "Guía local unas 50.000-100.000 rupias por grupo; tasa del parque no siempre cobrada"],
          ["Ideal para", "Senderistas en forma, aves del bosque, una cascada sagrada y salvaje"]],
   "id": [["Lokasi", "Desa Waimanu, Sumba Tengah, di Taman Nasional Manupeu Tanah Daru"],
          ["Dari bandara terdekat", "Tambolaka (TMC): sekitar 65 km, 2-2,5 jam ke titik awal, lalu trekking 1-1,5 jam"],
          ["Waktu terbaik", "Musim kemarau (sekitar Mei-Oktober), berangkat pagi"],
-         ["Tiket", "Pemandu lokal sekitar Rp50.000-100.000 per rombongan; tiket taman nasional tidak selalu ditarik"],
+         ["Tiket", "Pemandu lokal sekitar Rp 50.000-100.000 per rombongan; tiket taman nasional tidak selalu ditarik"],
          ["Cocok untuk", "Pendaki bugar, burung hutan, air terjun sakral yang masih liar"]]},
  "faq": {
   "en": [["How hard is the trek to Matayangu waterfall?", "Moderate to hard: about 1-1.5 hours each way on a narrow, unmarked trail with steep sections, sharp limestone and a long flight of steps at the end. It is muddy and slower in the rainy season."],
@@ -732,7 +732,7 @@ GUIDES = [
 </ul>
 <p>Los microbuses públicos (bemo) de la carretera Tambolaka-Waikabubak te pueden dejar en el desvío, desde donde hay aproximadamente 1,5 km a pie. En coche u ojek se llega cerca.</p>
 
-<h2>Cuándo ir y mejor hora del día</h2>
+<h2>Cuándo ir y a qué hora</h2>
 <p>La temporada seca, aproximadamente de mayo a octubre, es la mejor para bañarse: el caudal baja y algunos visitantes incluso nadan un poco hacia el interior de la cueva. En la temporada de lluvias el río puede ser muy fuerte, y algunas guías dicen que entonces no es apto para el baño. Media mañana y primera hora de la tarde son los momentos más cálidos para meterse; los fines de semana y vacaciones escolares hay más gente.</p>
 
 <h2>Consejos y normas de respeto</h2>
@@ -796,7 +796,7 @@ GUIDES = [
   "es": [["Dónde", "Pueblo de Tema Tana, Wewewa Oriental, Sumba Suroccidental; a unos 11 km al oeste de Waikabubak"],
          ["Desde el aeropuerto más cercano", "Tambolaka (TMC): unos 30 km, alrededor de 45 minutos en coche"],
          ["Mejor época", "Temporada seca (aprox. mayo-octubre), de media mañana a primera hora de la tarde"],
-         ["Entrada", "Pequeña tasa de aparcamiento o entrada, unos 5.000-20.000 IDR, a veces gratis"],
+         ["Entrada", "Pequeña tasa de aparcamiento o entrada, unas 5.000-20.000 rupias, a veces gratis"],
          ["Ideal para", "Un baño frío, un río que sale de una cueva, parada fácil entre el aeropuerto y la ciudad"]],
   "id": [["Lokasi", "Desa Tema Tana, Wewewa Timur, Sumba Barat Daya; sekitar 11 km di barat Waikabubak"],
          ["Dari bandara terdekat", "Tambolaka (TMC): sekitar 30 km, kira-kira 45 menit bermobil"],
@@ -874,7 +874,7 @@ GUIDES = [
   "body": """<p>La carretera de Lamboya baja entre colinas secas y parcelas de maíz y, de repente, aparece la bahía entera: una larga media luna de arena blanca, un pequeño islote rocoso en mitad del arco y líneas de mar de fondo que entran desde el océano Índico. De cerca, la arena es tan fina y suave que los pies se hunden hasta el tobillo. Solo se oyen las olas, el viento en los cocoteros y, de vez en cuando, un búfalo en la desembocadura del río.</p>
 
 <h2>Qué es Marosi y por qué ir</h2>
-<p>Marosi (Pantai Marosi) está en el distrito de Lamboya, Sumba Occidental, al oeste de la playa de Kerewe. La playa se extiende casi 4 km en una curva suave, con un islote cerca del centro y un pequeño estuario rodeado de manglares. Es uno de los spots de surf más conocidos de Sumba: una rompiente de arrecife expuesta, con izquierdas y derechas, que funciona mejor con mar de fondo del suroeste y viento suave del nornoreste, normalmente con marea alta. Esta costa forma parte también de la tierra de la Pasola de Lamboya, y se dice que por esta orilla aparecen los gusanos marinos nyale que anuncian la fiesta (lee <a href="/es/culture/pasola-explained/">la Pasola explicada</a>).</p>
+<p>Marosi (Pantai Marosi) está en el distrito de Lamboya, Sumba Occidental, al oeste de la playa de Kerewe. La playa se extiende casi 4 km en una curva suave, con un islote cerca del centro y un pequeño estuario rodeado de manglares. Es una de las zonas de surf más conocidas de Sumba: una rompiente de arrecife expuesta, con izquierdas y derechas, que funciona mejor con mar de fondo del suroeste y viento suave del nornoreste, normalmente con marea alta. Esta costa forma parte también de la tierra de la Pasola de Lamboya, y se dice que por esta orilla aparecen los gusanos marinos nyale que anuncian la fiesta (lee <a href="/es/culture/pasola-explained/">nuestra guía sobre la Pasola</a>).</p>
 <p>Para quien no surfea, el atractivo es sencillo: espacio, luz y un horizonte vacío. Se han comprado terrenos junto a la costa y hay algunas propiedades privadas en las colinas, pero la mayoría de los días la playa está casi desierta.</p>
 
 <h2>Cómo llegar a Marosi</h2>
@@ -883,9 +883,9 @@ GUIDES = [
 <li><strong>Desde el aeropuerto de Tambolaka (TMC):</strong> unos 70 km, en la práctica 1,5-2 horas en coche pasando por Waikabubak.</li>
 <li><strong>Desde Waingapu (WGP):</strong> unos 165 km, 4,5-5,5 horas, así que solo tiene sentido durmiendo en Sumba Occidental.</li>
 </ul>
-<p>No hay transporte público regular hasta la playa. Algunos viajeros sin coche han usado un ojek desde la zona de Wanokaka (un relato habla de unos 50.000 IDR hace unos años). La carretera está asfaltada casi todo el trayecto, pero cerca de la costa puede ser estrecha y estar en mal estado.</p>
+<p>No hay transporte público regular hasta la playa. Algunos viajeros sin coche han usado un ojek desde la zona de Wanokaka (un relato habla de unas 50.000 rupias hace unos años). La carretera está asfaltada casi todo el trayecto, pero cerca de la costa puede ser estrecha y estar en mal estado.</p>
 
-<h2>Cuándo ir y mejor hora del día</h2>
+<h2>Cuándo ir y a qué hora</h2>
 <p>Para surfear, la temporada seca, aproximadamente de mayo a octubre, es la principal, y abril suele ser bueno también. Para un día de playa, esos mismos meses secos traen cielos soleados y menos viento por la mañana. A primera hora y en las dos últimas horas antes del atardecer la luz es más suave y la arena está más fresca. En la temporada de lluvias (aproximadamente de diciembre a marzo) el río puede bajar marrón y el acceso se embarra. Si quieres ver la Pasola de Lamboya, suele celebrarse en febrero, en la fecha que fijan los ancianos Rato.</p>
 
 <h2>Consejos y normas de respeto</h2>
@@ -912,7 +912,7 @@ GUIDES = [
   "body": """<p>Jalan dari Lamboya menurun melewati bukit kering dan ladang jagung, lalu seluruh teluk muncul sekaligus: bulan sabit panjang pasir putih, sebuah pulau karang kecil di tengah lengkungan, dan barisan ombak yang masuk dari Samudra Hindia. Dari dekat pasirnya begitu halus dan lembut sampai kaki terbenam hingga mata kaki. Yang terdengar hanya debur ombak, angin di pohon kelapa, dan sesekali kerbau melenguh di muara sungai.</p>
 
 <h2>Apa itu Marosi dan mengapa layak dikunjungi</h2>
-<p>Pantai Marosi berada di Kecamatan Lamboya, Sumba Barat, di sebelah barat Pantai Kerewe. Pantainya membentang hampir 4 km dalam lengkungan landai, dengan sebuah pulau kecil di dekat tengahnya dan muara sungai kecil berlatar bakau. Ini salah satu spot selancar paling dikenal di Sumba: reef break terbuka dengan ombak kiri dan kanan yang paling baik saat groundswell barat daya dan angin ringan dari utara-timur laut, biasanya ketika air pasang. Pesisir ini juga bagian dari wilayah Pasola Lamboya, dan cacing laut nyale yang menandai datangnya festival konon muncul di sepanjang pantai ini (baca <a href="/id/culture/pasola-explained/">penjelasan Pasola</a>).</p>
+<p>Pantai Marosi berada di Kecamatan Lamboya, Sumba Barat, di sebelah barat Pantai Kerewe. Pantainya membentang hampir 4 km dalam lengkungan landai, dengan sebuah pulau kecil di dekat tengahnya dan muara sungai kecil berlatar bakau. Ini salah satu titik selancar paling dikenal di Sumba: ombak karang (reef break) terbuka dengan ombak kiri dan kanan yang paling bagus saat alun besar dari barat daya dan angin lemah dari utara-timur laut, biasanya ketika air pasang. Pesisir ini juga bagian dari wilayah Pasola Lamboya, dan cacing laut nyale yang menandai datangnya festival konon muncul di sepanjang pantai ini (baca <a href="/id/culture/pasola-explained/">penjelasan Pasola</a>).</p>
 <p>Bagi yang tidak berselancar, daya tariknya sederhana: ruang, cahaya, dan cakrawala yang kosong. Tanah di dekat pantai sudah dibeli dan ada beberapa properti pribadi di perbukitan, tetapi pada kebanyakan hari pantainya nyaris kosong.</p>
 
 <h2>Cara ke Marosi</h2>
@@ -921,7 +921,7 @@ GUIDES = [
 <li><strong>Dari Bandara Tambolaka (TMC):</strong> sekitar 70 km, realistisnya 1,5-2 jam bermobil lewat Waikabubak.</li>
 <li><strong>Dari Waingapu (WGP):</strong> sekitar 165 km, 4,5-5,5 jam, jadi hanya masuk akal bila menginap di Sumba Barat.</li>
 </ul>
-<p>Tidak ada angkutan umum reguler ke pantai. Pelancong tanpa mobil pernah memakai ojek dari wilayah Wanokaka (satu catatan menyebut sekitar Rp50.000 beberapa tahun lalu). Jalan sebagian besar beraspal tetapi bisa sempit dan rusak di dekat pesisir.</p>
+<p>Tidak ada angkutan umum reguler ke pantai. Pelancong tanpa mobil pernah memakai ojek dari wilayah Wanokaka (satu catatan menyebut sekitar Rp 50.000 beberapa tahun lalu). Jalan sebagian besar beraspal tetapi bisa sempit dan rusak di dekat pesisir.</p>
 
 <h2>Kapan berkunjung dan waktu terbaik</h2>
 <p>Untuk selancar, musim kemarau, kira-kira Mei sampai Oktober, adalah musim utama, dan April sering juga bagus. Untuk bersantai di pantai, bulan-bulan kering itu memberi langit cerah dan angin lebih tenang di pagi hari. Pagi buta dan dua jam terakhir sebelum matahari terbenam memberi cahaya paling lembut dan pasir paling sejuk. Di musim hujan (kira-kira Desember-Maret) sungai bisa keruh dan jalan akses berlumpur. Bila ingin melihat Pasola Lamboya, biasanya berlangsung pada Februari, dengan tanggal yang ditetapkan para Rato.</p>
@@ -930,7 +930,7 @@ GUIDES = [
 <ul>
 <li><strong>Biaya:</strong> biasanya tidak ada tiket tetap. Warga kadang meminta kontribusi parkir atau masuk yang kecil; siapkan uang kecil.</li>
 <li><strong>Keselamatan berenang:</strong> panduan selancar mencatat arus balik, batu, dan karang tajam di sini. Berenanglah hanya saat laut tenang di dekat bagian berpasir, jangan sendirian, dan jangan masuk saat ombak besar. Tidak ada penjaga pantai.</li>
-<li><strong>Selancar:</strong> ini reef break untuk peselancar menengah dan mahir. Bawa papan, fin, dan sepatu karang sendiri; penyewaan sangat terbatas. Lihat panduan kami tentang <a href="/id/things-to-do/surfing-in-sumba/">surfing di Sumba</a>.</li>
+<li><strong>Selancar:</strong> ini ombak karang untuk peselancar tingkat menengah dan mahir. Bawa papan, fin, dan sepatu karang sendiri; penyewaan sangat terbatas. Lihat panduan kami tentang <a href="/id/things-to-do/surfing-in-sumba/">berselancar di Sumba</a>.</li>
 <li><strong>Bawa semuanya:</strong> air, makanan, peneduh, dan tabir surya. Tidak ada warung atau toilet di pantai.</li>
 <li>Muara dan hutan bakau tampak seperti habitat buaya dan belum ada yang memastikan: hindari berenang di muara sungai.</li>
 <li>Berpakaian sopan saat melewati kampung, minta izin sebelum memotret orang, dan bawa pulang sampah Anda.</li>
@@ -969,7 +969,7 @@ GUIDES = [
          ["¿A qué distancia está Marosi de Waikabubak?", "A unos 30 km, entre 45 minutos y 1 hora en coche. Desde el aeropuerto de Tambolaka hay unos 70 km, 1,5-2 horas."],
          ["¿Hay servicios en la playa de Marosi?", "Prácticamente ninguno. Lleva agua, comida, sombra y protector solar, y llévate tu basura."]],
   "id": [["Apakah aman berenang di Pantai Marosi?", "Hanya dengan hati-hati. Panduan selancar mencatat arus balik, batu, dan karang, dan tidak ada penjaga pantai. Berenanglah saat laut tenang di dekat bagian berpasir dan jangan masuk air saat ombak besar."],
-         ["Kapan musim selancar di Marosi?", "Kira-kira Mei sampai Oktober, musim kemarau, saat groundswell barat daya datang; April juga bisa bagus. Ini reef break untuk peselancar menengah dan mahir."],
+         ["Kapan musim selancar di Marosi?", "Kira-kira Mei sampai Oktober, musim kemarau, saat alun besar dari barat daya datang; April juga bisa bagus. Ini ombak karang untuk peselancar tingkat menengah dan mahir."],
          ["Berapa jauh Marosi dari Waikabubak?", "Sekitar 30 km, kira-kira 45 menit sampai 1 jam bermobil. Dari Bandara Tambolaka sekitar 70 km, 1,5-2 jam."],
          ["Apakah ada fasilitas di Pantai Marosi?", "Praktis tidak ada. Bawa air, makanan, peneduh, dan tabir surya, dan bawa pulang sampah Anda."]]},
  "places": [{"name": "Marosi beach", "lat": -9.7624, "lon": 119.3146, "area": "Lamboya, West Sumba"}],
@@ -1040,12 +1040,12 @@ GUIDES = [
 <li><strong>Dentro del parque:</strong> hay pocas carreteras. Se accede por las entradas de las cascadas, los pueblos del borde del parque y una zona de observación de aves junto a la carretera principal; lo práctico es ir en coche con un conductor que conozca la zona.</li>
 </ul>
 
-<h2>Cuándo ir y mejor hora del día</h2>
+<h2>Cuándo ir y a qué hora</h2>
 <p>La temporada seca, aproximadamente de mayo a octubre, ofrece senderos más seguros, agua más clara en las cascadas y carreteras más fáciles. Algunos operadores locales recomiendan aproximadamente marzo-junio y octubre-diciembre para ver el bosque más verde y observar aves, y septiembre se ha señalado como buen mes para los cálaos. Sea cual sea el mes, madruga: las aves están más activas desde el amanecer hasta las 9 de la mañana y el bosque está más fresco. En la temporada de lluvias (aproximadamente de diciembre a marzo) las tormentas de la tarde vuelven resbaladizos los senderos.</p>
 
 <h2>Consejos y normas de respeto</h2>
 <ul>
-<li><strong>Tarifas:</strong> paga en el puesto de guardas de cada lugar y pide el tique. En Lapopu los extranjeros han pagado unos 150.000 IDR por persona en los últimos años (aproximadamente 8 EUR o 9 USD), los indonesios mucho menos; las tarifas cambian.</li>
+<li><strong>Tarifas:</strong> paga en el puesto de guardas de cada lugar y pide el tique. En Lapopu los extranjeros han pagado unas 150.000 rupias por persona en los últimos años (aproximadamente 8 euros o 9 dólares), los indonesios mucho menos; las tarifas cambian.</li>
 <li><strong>Guías:</strong> contrata un guía local o del parque para cualquier caminata más allá de los senderos de las cascadas, y un guía especializado para las aves. Lleva prismáticos.</li>
 <li><strong>Equipo:</strong> calzado con agarre, pantalón largo, repelente, calcetines antisanguijuelas en época de lluvias y al menos 1,5 litros de agua por persona.</li>
 <li><strong>Respeto:</strong> muchos manantiales, cuevas y cascadas son lugares sagrados marapu. Pregunta antes de entrar en cuevas o fotografiar lugares rituales, no hagas ruido y llévate toda la basura.</li>
@@ -1062,10 +1062,10 @@ GUIDES = [
   "title": "Taman Nasional Manupeu Tanah Daru, Sumba: panduan berkunjung",
   "dek": "Hutan dataran rendah besar terakhir di Sumba bagian barat, rumah julang sumba, kakatua sumba, dan air terjun paling terkenal di pulau ini.",
   "answer": "Manupeu Tanah Daru adalah taman nasional di Sumba Barat dan Sumba Tengah, ditetapkan pada 1998 dan kini dikelola bersama Laiwangi Wanggameti sebagai Taman Nasional Matalawa, satu-satunya taman nasional di pulau ini. Kawasan ini melindungi hutan dataran rendah di lereng curam hingga sekitar 600-900 m, burung endemik langka seperti julang sumba, serta Air Terjun Lapopu dan Matayangu. Waikabubak (sekitar 16-25 km dari pintu masuk utama) menjadi basis, sekitar 1-1,5 jam dari Bandara Tambolaka; kebanyakan pengunjung datang untuk air terjun di musim kemarau dan mengamati burung di pagi hari.",
-  "body": """<p>Fajar di tepi hutan di selatan Waikabubak. Padang rumput keperakan oleh embun, pepohonan di depan masih gelap, dan suara pertama adalah burung: pekik kasar kakatua, desir sayap julang yang melintasi lembah, paduan suara burung kecil yang tak bisa Anda sebutkan namanya. Di bawah sana, sebuah sungai mengalir menembus batu kapur menuju laut. Inilah salah satu tempat terakhir di mana Anda masih bisa melihat rupa sebagian besar Sumba sebelum hutan dibuka untuk padang ternak dan ladang.</p>
+  "body": """<p>Fajar di tepi hutan di selatan Waikabubak. Padang rumput keperakan oleh embun, pepohonan di depan masih gelap, dan suara pertama adalah burung: pekik kasar kakatua, desir sayap julang yang melintasi lembah, paduan suara burung kecil yang tak bisa Anda sebutkan namanya. Di bawah sana, sebuah sungai mengalir menembus batu kapur menuju laut. Inilah salah satu tempat terakhir yang masih memperlihatkan rupa sebagian besar Sumba sebelum hutan dibuka untuk padang ternak dan ladang.</p>
 
 <h2>Apa itu taman nasional ini dan mengapa layak dikunjungi</h2>
-<p>Taman Nasional Manupeu Tanah Daru ditetapkan pada 1998 untuk melindungi blok hutan dataran rendah terbesar yang tersisa di Sumba, di lereng curam dari dekat permukaan laut sampai sekitar 600-900 m. Luas resminya berbeda menurut sumber: Wikipedia menyebut sekitar 88.000 ha, sedangkan pemberitaan Indonesia menyebut sekitar 50.000 ha untuk Manupeu Tanah Daru dan sekitar 92.000 ha untuk gabungan Taman Nasional Matalawa (Manupeu Tanah Daru ditambah Laiwangi Wanggameti di Sumba Timur). Bagaimanapun, ini kawasan luas yang hampir tanpa jalan di Sumba Barat dan Sumba Tengah.</p>
+<p>Taman Nasional Manupeu Tanah Daru ditetapkan pada 1998 untuk melindungi blok hutan dataran rendah terbesar yang tersisa di Sumba, di lereng curam dari dekat permukaan laut sampai sekitar 600-900 m. Luas resminya berbeda menurut sumber: Wikipedia menyebut sekitar 88.000 ha, sedangkan pemberitaan media nasional menyebut sekitar 50.000 ha untuk Manupeu Tanah Daru dan sekitar 92.000 ha untuk gabungan Taman Nasional Matalawa (Manupeu Tanah Daru ditambah Laiwangi Wanggameti di Sumba Timur). Bagaimanapun, ini kawasan luas yang hampir tanpa jalan di Sumba Barat dan Sumba Tengah.</p>
 <p>Taman ini terutama adalah suaka burung. Sumba punya beberapa spesies endemik, di antaranya julang sumba, kakatua jambul kuning sumba (kakatua cempaka), punai sumba, sikatan sumba, kepudang-sungu sumba, dan burung-madu sumba. Julang dan kakatua adalah dua spesies prioritas yang terancam di taman ini. Matalawa mencatat lebih dari 150 spesies burung, selain monyet ekor panjang, rusa timor, dan puluhan spesies kupu-kupu. Namun bagi kebanyakan pelancong, taman ini identik dengan air terjun: <a href="/id/places/lapopu-waterfall/">Lapopu</a> dan <a href="/id/places/matayangu-waterfall/">Matayangu</a>.</p>
 
 <h2>Cara ke sana</h2>
@@ -1080,7 +1080,7 @@ GUIDES = [
 
 <h2>Tips dan etika</h2>
 <ul>
-<li><strong>Biaya:</strong> bayar di pos jaga setiap lokasi dan minta karcis. Di Lapopu wisatawan asing membayar sekitar Rp150.000 per orang dalam beberapa tahun terakhir (kira-kira EUR 8 atau USD 9), wisatawan Indonesia jauh lebih murah; tarif bisa berubah.</li>
+<li><strong>Biaya:</strong> bayar di pos jaga setiap lokasi dan minta karcis. Di Lapopu wisatawan asing membayar sekitar Rp 150.000 per orang dalam beberapa tahun terakhir (kira-kira 8 euro atau 9 dolar AS), wisatawan Indonesia jauh lebih murah; tarif bisa berubah.</li>
 <li><strong>Pemandu:</strong> sewa pemandu lokal atau petugas taman untuk jalan kaki di luar jalur air terjun, dan pemandu khusus untuk pengamatan burung. Bawa teropong.</li>
 <li><strong>Perlengkapan:</strong> sepatu yang mencengkeram, celana panjang, losion antinyamuk, kaus kaki antipacet di musim hujan, dan minimal 1,5 liter air per orang.</li>
 <li><strong>Hormati adat:</strong> banyak mata air, gua, dan air terjun adalah tempat sakral Marapu. Minta izin sebelum masuk gua atau memotret tempat ritual, jangan berisik, dan bawa pulang semua sampah.</li>
@@ -1102,12 +1102,12 @@ GUIDES = [
   "es": [["Dónde", "Sumba Occidental y Central; parte del Parque Nacional Matalawa"],
          ["Desde el aeropuerto más cercano", "Tambolaka (TMC): 1-1,5 h hasta Waikabubak y de 40 min a 1,5 h hasta las entradas"],
          ["Mejor época", "Temporada seca (aprox. mayo-octubre) para senderos; el amanecer para aves"],
-         ["Entrada", "Tique por lugar; Lapopu unos 150.000 IDR para extranjeros en los últimos años"],
+         ["Entrada", "Tique por lugar; Lapopu unas 150.000 rupias para extranjeros en los últimos años"],
          ["Ideal para", "Cascadas, aves endémicas (cálao y cacatúa de Sumba), paseos por el bosque"]],
   "id": [["Lokasi", "Sumba Barat dan Sumba Tengah; bagian dari Taman Nasional Matalawa"],
          ["Dari bandara terdekat", "Tambolaka (TMC): sekitar 1-1,5 jam ke Waikabubak, lalu 40 menit-1,5 jam ke pintu masuk"],
          ["Waktu terbaik", "Musim kemarau (sekitar Mei-Oktober) untuk jalur; fajar untuk burung"],
-         ["Tiket", "Karcis per lokasi; Lapopu sekitar Rp150.000 untuk wisatawan asing beberapa tahun terakhir"],
+         ["Tiket", "Karcis per lokasi; Lapopu sekitar Rp 150.000 untuk wisatawan asing beberapa tahun terakhir"],
          ["Cocok untuk", "Air terjun, burung endemik (julang dan kakatua sumba), jalan-jalan di hutan"]]},
  "faq": {
   "en": [["What is Matalawa National Park?", "The joint name for Manupeu Tanah Daru (West and Central Sumba) and Laiwangi Wanggameti (East Sumba) national parks, managed by one office. It is the only national park on Sumba."],
@@ -1121,7 +1121,7 @@ GUIDES = [
   "id": [["Apa itu Taman Nasional Matalawa?", "Nama gabungan Taman Nasional Manupeu Tanah Daru (Sumba Barat dan Sumba Tengah) dan Laiwangi Wanggameti (Sumba Timur), yang dikelola satu balai. Ini satu-satunya taman nasional di Sumba."],
          ["Burung apa saja yang bisa dilihat di Manupeu Tanah Daru?", "Burung endemik Sumba seperti julang sumba, kakatua jambul kuning sumba, punai sumba, sikatan sumba, dan burung-madu sumba, di antara lebih dari 150 spesies yang tercatat di Matalawa."],
          ["Air terjun apa saja yang ada di Taman Nasional Manupeu Tanah Daru?", "Yang paling terkenal adalah Lapopu, dekat dari jalan, dan Matayangu, yang dicapai lewat trekking hutan yang lebih berat. Keduanya di selatan dan tenggara Waikabubak."],
-         ["Berapa luas Taman Nasional Manupeu Tanah Daru?", "Sumber berbeda: sekitar 50.000 ha menurut pemberitaan Indonesia, sekitar 88.000 ha menurut Wikipedia. Gabungan Taman Nasional Matalawa sekitar 92.000 ha."]]},
+         ["Berapa luas Taman Nasional Manupeu Tanah Daru?", "Sumber berbeda: sekitar 50.000 ha menurut pemberitaan media nasional, sekitar 88.000 ha menurut Wikipedia. Gabungan Taman Nasional Matalawa sekitar 92.000 ha."]]},
  "places": [{"name": "Manupeu Tanah Daru National Park", "lat": -9.7333, "lon": 119.6833, "area": "West and Central Sumba"}],
  "sources": [
   ["Manupeu Tanah Daru National Park, Wikipedia", "https://en.wikipedia.org/wiki/Manupeu_Tanah_Daru_National_Park"],
@@ -1203,13 +1203,13 @@ GUIDES = [
 </ul>
 <p>Para vuelos y ferris, consulta <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a>.</p>
 
-<h2>Cuándo ir y mejor hora del día</h2>
-<p>La temporada seca, aproximadamente de mayo a septiembre, es la más cómoda, con carreteras más fiables. En febrero y marzo se celebra la Pasola en las cercanas Wanokaka y Lamboya (lee <a href="/es/culture/pasola-explained/">la Pasola explicada</a>), y hacia octubre-noviembre los pueblos de alrededor celebran el Wulla Poddu, el mes sagrado. En la ciudad, ve al mercado (Pasar Baru) a primera hora, cuando más ambiente hay, con verduras, pescado seco, gallinas vivas, nuez de betel y a veces tejidos. La última hora de la tarde es el mejor momento para subir a Tarung.</p>
+<h2>Cuándo ir y a qué hora</h2>
+<p>La temporada seca, aproximadamente de mayo a septiembre, es la más cómoda, con carreteras más fiables. En febrero y marzo se celebra la Pasola en las cercanas Wanokaka y Lamboya (lee <a href="/es/culture/pasola-explained/">nuestra guía sobre la Pasola</a>), y hacia octubre-noviembre los pueblos de alrededor celebran el Wulla Poddu, el mes sagrado. En la ciudad, ve al mercado (Pasar Baru) a primera hora, cuando más ambiente hay, con verduras, pescado seco, gallinas vivas, nuez de betel y a veces tejidos. La última hora de la tarde es el mejor momento para subir a Tarung.</p>
 
 <h2>Consejos y normas de respeto</h2>
 <ul>
 <li><strong>Dinero:</strong> hay cajeros en Waikabubak (se suelen recomendar BNI y Mandiri). Saca efectivo aquí antes de ir a pueblos y playas, y lleva billetes pequeños para donativos y aparcamientos.</li>
-<li><strong>Precios:</strong> las habitaciones sencillas de las pensiones de la ciudad están desde hace tiempo entre las más baratas de la isla, desde unos 200.000-300.000 IDR la noche (aproximadamente 11-17 EUR o 12-18 USD) en 2025-2026; un coche con conductor suele costar más que en Bali. Consulta <a href="/es/where-to-stay/where-to-stay-in-sumba/">dónde alojarse en Sumba</a>.</li>
+<li><strong>Precios:</strong> las habitaciones sencillas de las pensiones de la ciudad están desde hace tiempo entre las más baratas de la isla, desde unas 200.000-300.000 rupias la noche (aproximadamente 11-17 euros o 12-18 dólares) en 2025-2026; un coche con conductor suele costar más que en Bali. Consulta <a href="/es/where-to-stay/where-to-stay-in-sumba/">dónde alojarse en Sumba</a>.</li>
 <li><strong>En los pueblos:</strong> firma el libro de visitas, deja un pequeño donativo, vístete con recato y pide siempre permiso antes de hacer fotos.</li>
 <li><strong>Por la noche:</strong> los semáforos suelen dejar de funcionar al oscurecer y hay animales en las carreteras, así que conduce despacio.</li>
 <li>Fuera del turismo se habla poco inglés, así que un guía local es útil en los pueblos, y unas palabras de indonesio abren muchas puertas.</li>
@@ -1248,7 +1248,7 @@ GUIDES = [
 <h2>Tips dan etika</h2>
 <ul>
 <li><strong>Uang:</strong> ada ATM di Waikabubak (BNI dan Mandiri sering disarankan). Tarik tunai di sini sebelum ke kampung dan pantai, dan bawa pecahan kecil untuk sumbangan dan parkir.</li>
-<li><strong>Harga:</strong> kamar sederhana di penginapan kota sejak lama termasuk yang termurah di pulau ini, mulai sekitar Rp200.000-300.000 per malam (kira-kira EUR 11-17 atau USD 12-18) pada 2025-2026; sewa mobil dengan sopir biasanya lebih mahal daripada di Bali. Lihat <a href="/id/where-to-stay/where-to-stay-in-sumba/">tempat menginap di Sumba</a>.</li>
+<li><strong>Harga:</strong> kamar sederhana di penginapan kota sejak lama termasuk yang termurah di pulau ini, mulai sekitar Rp 200.000-300.000 per malam (kira-kira 11-17 euro atau 12-18 dolar AS) pada 2025-2026; sewa mobil dengan sopir biasanya lebih mahal daripada di Bali. Lihat <a href="/id/where-to-stay/where-to-stay-in-sumba/">tempat menginap di Sumba</a>.</li>
 <li><strong>Etika di kampung:</strong> isi buku tamu, beri sumbangan kecil, berpakaian sopan, dan selalu minta izin sebelum memotret.</li>
 <li><strong>Malam hari:</strong> lampu lalu lintas sering padam setelah gelap dan hewan berkeliaran di jalan, jadi berkendaralah pelan.</li>
 <li>Bahasa Inggris terbatas di luar sektor wisata, jadi pemandu lokal berguna untuk kunjungan kampung.</li>
@@ -1372,9 +1372,9 @@ GUIDES = [
 <li><strong>Desde el centro de Waingapu:</strong> unos 7 km, 10-15 minutos en coche u ojek. Un bemo que vaya hacia el este por Jalan Ahmad Yani puede dejarte cerca del desvío: pide "masuk Bukit Persaudaraan".</li>
 <li><strong>Desde Tambolaka (TMC):</strong> unos 175 km, en la práctica 4,5-5,5 horas cruzando la isla, así que combínalo con una estancia en Sumba Oriental.</li>
 </ul>
-<p>Según dónde te dejen, el último tramo es una subida a pie de hasta unos 30 minutos por hierba y camino irregular. Un trayecto en ojek desde la ciudad ha costado unos 10.000-20.000 IDR por trayecto en años anteriores, algo más si el conductor espera; acuerda la vuelta antes de salir.</p>
+<p>Según dónde te dejen, el último tramo es una subida a pie de hasta unos 30 minutos por hierba y camino irregular. Un trayecto en ojek desde la ciudad ha costado unas 10.000-20.000 rupias por trayecto en años anteriores, algo más si el conductor espera; acuerda la vuelta antes de salir.</p>
 
-<h2>Cuándo ir y mejor hora del día</h2>
+<h2>Cuándo ir y a qué hora</h2>
 <p>A última hora de la tarde, llegando una hora antes del atardecer, da tiempo a ver las cuevas y luego mirar cómo cambia la luz. El amanecer también es precioso y más fresco. En la temporada seca, aproximadamente de mayo a noviembre en Sumba Oriental, el cielo está más despejado y la hierba es dorada; en la de lluvias, aproximadamente de diciembre a marzo, las colinas se vuelven verdes pero los chubascos son frecuentes. Los fines de semana hay más visitantes locales.</p>
 
 <h2>Consejos y normas de respeto</h2>
@@ -1410,7 +1410,7 @@ GUIDES = [
 <li><strong>Dari pusat Kota Waingapu:</strong> sekitar 7 km, 10-15 menit dengan mobil atau ojek. Bemo yang menuju timur di Jalan Ahmad Yani bisa menurunkan Anda dekat simpang: sebut "masuk Bukit Persaudaraan".</li>
 <li><strong>Dari Tambolaka (TMC):</strong> sekitar 175 km, realistisnya 4,5-5,5 jam melintasi pulau, jadi gabungkan dengan menginap di Sumba Timur.</li>
 </ul>
-<p>Tergantung tempat Anda diturunkan, bagian terakhir adalah jalan kaki menanjak hingga sekitar 30 menit di rerumputan dan jalan tanah. Ojek dari kota pernah bertarif sekitar Rp10.000-20.000 sekali jalan pada tahun-tahun sebelumnya, sedikit lebih bila pengemudi menunggu; sepakati ongkos pulang sebelum berangkat.</p>
+<p>Tergantung tempat Anda diturunkan, bagian terakhir adalah jalan kaki menanjak hingga sekitar 30 menit di rerumputan dan jalan tanah. Ojek dari kota pernah bertarif sekitar Rp 10.000-20.000 sekali jalan pada tahun-tahun sebelumnya, sedikit lebih bila pengemudi menunggu; sepakati ongkos pulang sebelum berangkat.</p>
 
 <h2>Kapan berkunjung dan waktu terbaik</h2>
 <p>Sore hari, tiba sekitar satu jam sebelum matahari terbenam, memberi waktu menjelajah gua lalu menikmati perubahan cahaya. Matahari terbit juga indah dan lebih sejuk. Di musim kemarau, kira-kira Mei sampai November di Sumba Timur, langit paling cerah dan rumput keemasan; di musim hujan, kira-kira Desember sampai Maret, bukit menghijau tetapi hujan sering turun. Akhir pekan lebih ramai pengunjung lokal.</p>
