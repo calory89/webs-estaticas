@@ -1,19 +1,138 @@
 {
-  "about": "Lines for the 'Shipping daily' bar at the top of every kolaboro.com page, newest first. Added in the same commit as each change. Rendered by _worker.js/kbx_ticker.js.",
-  "items": [
-    {"date": "2026-11-08", "kind": "shipped", "text": "Is this payment email really from the developer? Paste it and we check the sender, lookalike domains and bank-change wording"},
-    {"date": "2026-11-08", "kind": "shipped", "text": "Account check: IBAN, bank and country against the project, in your browser only, with Dubai escrow rules"},
-    {"date": "2026-11-08", "kind": "shipped", "text": "Kolaboro extension 2.1 now warns inside Gmail when an email asks for a payment"},
-    {"date": "2026-11-08", "kind": "shipped", "text": "Photo of a permit: we read the number on your phone and check it in the official register"},
-    {"date": "2026-11-08", "kind": "shipped", "text": "Delivery forecast from our dated history, with an honest 'not enough data' where samples are small"},
-    {"date": "2026-11-08", "kind": "shipped", "text": "Developer pages now show how many buyer questions they answered and how fast"},
-    {"date": "2026-11-08", "kind": "shipped", "text": "New /open page: live X-rays, sealed checks, deploys and commit-to-live time"},
-    {"date": "2026-11-07", "kind": "shipped", "text": "Payments vs progress in the buyer portal: your instalments against what the satellite sees"},
-    {"date": "2026-11-07", "kind": "shipped", "text": "Project X-ray on /check: 16 checks stream in live, sealed with one SHA-256 root"},
-    {"date": "2026-11-07", "kind": "shipped", "text": "Construction progress from space on 125 project pages, monthly since July 2023"},
-    {"date": "2026-11-07", "kind": "shipped", "text": "Developer network graph and a live globe of X-rays as they run"},
-    {"date": "2026-11-07", "kind": "data", "text": "Delivery Index, November 2026: 8.2% of 755 dated projects are past their first handover date"},
-    {"date": "2026-11-06", "kind": "shipped", "text": "Click the map in Spain or New York for the official parcel record, sealed"},
-    {"date": "2026-11-06", "kind": "shipped", "text": "Sign in with a passkey; every sealed check available as a signed Verifiable Credential"}
-  ]
+ "about": "Lines for the 'Shipping daily' bar at the top of every kolaboro.com page, newest first. Added in the same commit as each change. Rendered by _worker.js/kbx_ticker.js. Optional 'tl' holds the line in other page languages; translated pages show only lines that have one (or fixed agent templates).",
+ "items": [
+  {
+   "date": "2026-11-08",
+   "kind": "shipped",
+   "text": "Is this payment email really from the developer? Paste it and we check the sender, lookalike domains and bank-change wording",
+   "tl": {
+    "es": "¿Este email de pago es del promotor? Pégalo y comprobamos el remitente, dominios que imitan al real y frases de cambio de cuenta",
+    "fr": "Cet e-mail de paiement vient-il vraiment du promoteur ? Collez-le : nous vérifions l’expéditeur, les domaines imitant le vrai et les demandes de changement de compte",
+    "de": "Kommt diese Zahlungs-E-Mail wirklich vom Bauträger? Einfügen, und wir prüfen Absender, nachgeahmte Domains und Hinweise auf Kontowechsel",
+    "nl": "Komt deze betaalmail echt van de ontwikkelaar? Plak hem en we controleren afzender, nagemaakte domeinen en verzoeken om een ander rekeningnummer",
+    "ru": "Это письмо об оплате действительно от застройщика? Вставьте его: проверим отправителя, поддельные домены и просьбы сменить счёт",
+    "zh": "这封付款邮件真是开发商发的吗？粘贴后我们检查发件人、仿冒域名和更换账户的措辞",
+    "ar": "هل رسالة الدفع هذه من المطوّر فعلاً؟ الصقها ونتحقق من المرسل والنطاقات المقلِّدة وعبارات تغيير الحساب"
+   }
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "shipped",
+   "text": "Account check: IBAN, bank and country against the project, in your browser only, with Dubai escrow rules",
+   "tl": {
+    "es": "Comprobación de cuenta: IBAN, banco y país frente al proyecto, solo en tu navegador, con las reglas de escrow de Dubái",
+    "fr": "Vérification de compte : IBAN, banque et pays comparés au projet, uniquement dans votre navigateur, avec les règles d’escrow de Dubaï",
+    "de": "Kontoprüfung: IBAN, Bank und Land gegen das Projekt, nur im Browser, mit den Treuhandregeln für Dubai",
+    "nl": "Rekeningcheck: IBAN, bank en land naast het project, alleen in je browser, met de escrowregels van Dubai",
+    "ru": "Проверка счёта: IBAN, банк и страна против проекта, только в вашем браузере, с правилами эскроу в Дубае",
+    "zh": "账户核查：IBAN、银行和国家与项目对照，只在你的浏览器中运行，附迪拜托管规定",
+    "ar": "فحص الحساب: رقم IBAN والبنك والدولة مقارنةً بالمشروع، داخل متصفحك فقط، مع قواعد حساب الضمان في دبي"
+   }
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "shipped",
+   "text": "Kolaboro extension 2.1 now warns inside Gmail when an email asks for a payment",
+   "tl": {
+    "es": "La extensión de Kolaboro 2.1 avisa dentro de Gmail cuando un email pide un pago",
+    "fr": "L’extension Kolaboro 2.1 alerte dans Gmail quand un e-mail demande un paiement",
+    "de": "Die Kolaboro-Erweiterung 2.1 warnt in Gmail, wenn eine E-Mail eine Zahlung verlangt",
+    "nl": "De Kolaboro-extensie 2.1 waarschuwt in Gmail als een mail om een betaling vraagt",
+    "ru": "Расширение Kolaboro 2.1 предупреждает в Gmail, когда письмо просит оплату",
+    "zh": "Kolaboro 扩展 2.1 会在 Gmail 中提醒要求付款的邮件",
+    "ar": "إضافة Kolaboro 2.1 تنبّهك داخل Gmail عندما تطلب رسالة دفعة مالية"
+   }
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "shipped",
+   "text": "Photo of a permit: we read the number on your phone and check it in the official register",
+   "tl": {
+    "es": "Foto del permiso: leemos el número en tu móvil y lo comprobamos en el registro oficial",
+    "fr": "Photo d’un permis : nous lisons le numéro sur votre téléphone et le vérifions dans le registre officiel",
+    "de": "Foto einer Genehmigung: Wir lesen die Nummer auf Ihrem Handy und prüfen sie im amtlichen Register",
+    "nl": "Foto van een vergunning: we lezen het nummer op je telefoon en controleren het in het officiële register",
+    "ru": "Фото разрешения: считываем номер на вашем телефоне и проверяем его в официальном реестре",
+    "zh": "许可证照片：在你的手机上识别编号并在官方登记中核查",
+    "ar": "صورة التصريح: نقرأ الرقم على هاتفك ونتحقق منه في السجل الرسمي"
+   }
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "shipped",
+   "text": "Delivery forecast from our dated history, with an honest 'not enough data' where samples are small",
+   "tl": {
+    "es": "Pronóstico de entrega con nuestro histórico fechado, y un honesto «no hay datos suficientes» cuando la muestra es pequeña",
+    "fr": "Prévision de livraison à partir de notre historique daté, avec un « pas assez de données » honnête quand l’échantillon est petit",
+    "de": "Übergabeprognose aus unserer datierten Historie, mit ehrlichem „zu wenig Daten“ bei kleinen Stichproben",
+    "nl": "Opleveringsprognose uit onze gedateerde historie, met een eerlijk ‘te weinig gegevens’ bij kleine steekproeven",
+    "ru": "Прогноз сдачи по нашей датированной истории, с честным «недостаточно данных» при малой выборке",
+    "zh": "基于我们带日期的历史记录预测交付，样本少时如实显示“数据不足”",
+    "ar": "توقّع التسليم من سجلّنا المؤرَّخ، مع عبارة «بيانات غير كافية» بصدق عندما تكون العيّنة صغيرة"
+   }
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "shipped",
+   "text": "Developer pages now show how many buyer questions they answered and how fast",
+   "tl": {
+    "es": "Las páginas de promotores muestran cuántas preguntas de compradores contestaron y en cuánto tiempo",
+    "fr": "Les pages promoteurs indiquent combien de questions d’acheteurs ils ont traitées et en combien de temps",
+    "de": "Bauträgerseiten zeigen, wie viele Käuferfragen beantwortet wurden und wie schnell",
+    "nl": "Ontwikkelaarspagina’s tonen hoeveel kopersvragen zijn beantwoord en hoe snel",
+    "ru": "На страницах застройщиков видно, на сколько вопросов покупателей они ответили и как быстро",
+    "zh": "开发商页面显示回答了多少买家问题以及回复速度",
+    "ar": "صفحات المطوّرين تعرض عدد أسئلة المشترين التي أجابوا عنها وسرعة الرد"
+   }
+  },
+  {
+   "date": "2026-11-08",
+   "kind": "shipped",
+   "text": "New /open page: live X-rays, sealed checks, deploys and commit-to-live time",
+   "tl": {
+    "es": "Nueva página /open: X-rays en directo, comprobaciones selladas, despliegues y tiempo de commit a publicación",
+    "fr": "Nouvelle page /open : X-rays en direct, vérifications scellées, déploiements et délai de mise en ligne",
+    "de": "Neue Seite /open: X-rays live, versiegelte Prüfungen, Deploys und Zeit vom Commit bis live",
+    "nl": "Nieuwe pagina /open: X-rays live, verzegelde checks, deploys en tijd van commit tot live",
+    "ru": "Новая страница /open: X-ray в реальном времени, запечатанные проверки, деплои и время от коммита до публикации",
+    "zh": "新页面 /open：实时 X-ray、加封核查、部署次数和从提交到上线的时间",
+    "ar": "صفحة /open الجديدة: فحوص X-ray مباشرة، وفحوص مختومة، وعمليات النشر، والوقت من الإيداع إلى النشر"
+   }
+  },
+  {
+   "date": "2026-11-07",
+   "kind": "shipped",
+   "text": "Payments vs progress in the buyer portal: your instalments against what the satellite sees"
+  },
+  {
+   "date": "2026-11-07",
+   "kind": "shipped",
+   "text": "Project X-ray on /check: 16 checks stream in live, sealed with one SHA-256 root"
+  },
+  {
+   "date": "2026-11-07",
+   "kind": "shipped",
+   "text": "Construction progress from space on 125 project pages, monthly since July 2023"
+  },
+  {
+   "date": "2026-11-07",
+   "kind": "shipped",
+   "text": "Developer network graph and a live globe of X-rays as they run"
+  },
+  {
+   "date": "2026-11-07",
+   "kind": "data",
+   "text": "Delivery Index, November 2026: 8.2% of 755 dated projects are past their first handover date"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "shipped",
+   "text": "Click the map in Spain or New York for the official parcel record, sealed"
+  },
+  {
+   "date": "2026-11-06",
+   "kind": "shipped",
+   "text": "Sign in with a passkey; every sealed check available as a signed Verifiable Credential"
+  }
+ ]
 }

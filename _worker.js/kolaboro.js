@@ -1390,7 +1390,7 @@ export async function open(req, u, env) {
   if (path === '/api/open' || path === '/api/open/docs') return openResp(OPEN_DOC);
   if (path === '/api/open/openapi.json') return openResp(openapiSpec());
   let L; try { L = await openLoad(); } catch (e) { return openResp({ error: 'data_unavailable' }, null, 30); }
-  const res = (await extraRoutes(req, u, path, env)) || await openRoutes(req, u, path, L);
+  const res = (await extraRoutes(req, u, path, env)) || await openRoutes(req, u, path, L, env);
   if (!res || !/json|csv|xml/.test(res.headers.get('content-type') || '')) return res;
   // every answer carries the fingerprint of the dataset it came from, and supports conditional requests
   const tag = '"' + L.sha.slice(0, 20) + '-' + (await sha(u.pathname + u.search)).slice(0, 8) + '"', h = new Headers(res.headers);
@@ -1400,7 +1400,7 @@ export async function open(req, u, env) {
   try { const sg = await signBody(env, body); if (sg) { h.set('x-kolaboro-signature', sg); h.set('x-kolaboro-key-id', (env && env.KB_SIGN_KID) || 'kb'); h.set('access-control-expose-headers', 'x-kolaboro-dataset-sha256, etag, x-kolaboro-signature, x-kolaboro-key-id, x-kolaboro-build'); } } catch (e) {}
   return new Response(body, { status: res.status, headers: h });
 }
-async function openRoutes(req, u, path, L) {
+async function openRoutes(req, u, path, L, env) {
   const d = L.d;
   const cases = d.cases || [], meta = { updated: d.updated, license: OPEN_DOC.license, note: OPEN_DOC.note };
   // one spelling per country (the research data has 'St Lucia' and 'Saint Lucia', 'Puerto Rico (USA)' and 'Puerto Rico'): same aliases as the country hubs (kbx_seo.js), so every page shows the same count
@@ -1438,7 +1438,7 @@ async function openRoutes(req, u, path, L) {
     return openResp({ ...meta, objective: '90% of projects re-read from their source within 7 days', projects: cases.length, within_7d: f7, within_30d: f30, unknown: unk, pct_7d: Math.round(1000 * f7 / cases.length) / 10, meets_objective: f7 / cases.length >= 0.9, markets_below_objective: markets.filter(m => m.pct_7d < 90).length, markets }, null, 600);
   }
   if (path === '/api/open/stats') return openResp({ ...meta, projects: cases.length, markets: d.markets, ...(d.db || {}), countries: nCountries });
-  if (path === '/api/open/summary') return openResp({ updated: d.updated, projects: cases.length, markets: d.markets, countries: nCountries, db: Object.assign({}, d.db || {}, { countries: nCountries }), seal: d.seal || null, ships: (d.ships || []).slice(0, 20) });
+  if (path === '/api/open/summary') { let ships = (d.ships || []).slice(0, 20); try { ships = (await import('./kbx_ticker.js')).mergeShips(await (await import('./kbx_ticker.js')).tickerItems(env), d.ships || []); } catch (e) {} return openResp({ updated: d.updated, projects: cases.length, markets: d.markets, countries: nCountries, db: Object.assign({}, d.db || {}, { countries: nCountries }), seal: d.seal || null, ships }); }
   if (path === '/api/open/markets') return openResp({ ...meta, method: 'transparency_index = 60% average public-disclosure score + 30% average confirmed score + 10% share without public problems; markets with 3+ projects', markets: marketStats(cases) });
   if (path === '/api/open/markets.csv') { const m = marketStats(cases), k = Object.keys(m[0] || {}); return openResp([k.join(',')].concat(m.map(r => k.map(x => csvCell(r[x])).join(','))).join('\n'), 'text/csv; charset=utf-8'); }
   if (path === '/api/open/projects' || path === '/api/open/projects.csv') {

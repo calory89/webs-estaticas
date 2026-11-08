@@ -8,10 +8,26 @@ const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const day = s => { const x = new Date(String(s).slice(0, 10) + 'T00:00:00Z'); return isNaN(x) ? '' : MON[x.getUTCMonth()] + ' ' + x.getUTCDate(); };
 let C = { t: 0, h: null };
+const SITE_V = 'tk18b'; // bump when _s/kolaboro.com/k/site.js changes (pages hard-code an older ?v=)
 
 async function file(env, n) {
   try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/' + n)); if (r.ok) return await r.json(); } catch (e) {}
   return null;
+}
+
+let I = { t: 0, v: null };
+export async function tickerItems(env) {
+  if (I.v && Date.now() - I.t < 300000) return I.v;
+  const T = await file(env, 'ticker.json');
+  I = { t: Date.now(), v: ((T && T.items) || []).filter(x => x && x.text && x.date) };
+  return I.v;
+}
+// /api/open/summary ships list (read by site.js for the live bar): hand lines first, then the automatic agent entries, newest first
+export function mergeShips(items, ships) {
+  const a = items.map(x => ({ d: String(x.date).slice(0, 10), k: x.kind === 'data' ? 'data' : 'feature', t: x.text, tl: x.tl || undefined, u: x.url || undefined }));
+  const seen = new Set(a.map(x => x.t.toLowerCase()));
+  for (const s of ships) if (s && s.t && !seen.has(s.t.toLowerCase())) a.push(s);
+  return a.sort((x, y) => String(y.d).localeCompare(String(x.d))).slice(0, 24);
 }
 
 export async function tickerHtml(env) {
@@ -33,6 +49,6 @@ export async function kbTick(req, r, env) {
     if (req.method !== 'GET' || !r || r.status !== 200 || !/text\/html/.test(r.headers.get('content-type') || '')) return r;
     const h = await tickerHtml(env);
     if (!h) return r;
-    return new HTMLRewriter().on('.ship-g', { element(e) { e.setInnerContent(h, { html: true }); } }).transform(r);
+    return new HTMLRewriter().on('.ship-g', { element(e) { e.setInnerContent(h, { html: true }); } }).on('script[src^="/k/site.js"]', { element(e) { e.setAttribute('src', '/k/site.js?v=' + SITE_V); } }).transform(r);
   } catch (e) { return r; }
 }
