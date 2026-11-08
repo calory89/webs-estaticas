@@ -1,0 +1,19 @@
+{
+  "about": "Lines for the 'Shipping daily' bar at the top of every kolaboro.com page, newest first. Added in the same commit as each change. Rendered by _worker.js/kbx_ticker.js.",
+  "items": [
+    {"date": "2026-11-08", "kind": "shipped", "text": "Is this payment email really from the developer? Paste it and we check the sender, lookalike domains and bank-change wording"},
+    {"date": "2026-11-08", "kind": "shipped", "text": "Account check: IBAN, bank and country against the project, in your browser only, with Dubai escrow rules"},
+    {"date": "2026-11-08", "kind": "shipped", "text": "Kolaboro extension 2.1 now warns inside Gmail when an email asks for a payment"},
+    {"date": "2026-11-08", "kind": "shipped", "text": "Photo of a permit: we read the number on your phone and check it in the official register"},
+    {"date": "2026-11-08", "kind": "shipped", "text": "Delivery forecast from our dated history, with an honest 'not enough data' where samples are small"},
+    {"date": "2026-11-08", "kind": "shipped", "text": "Developer pages now show how many buyer questions they answered and how fast"},
+    {"date": "2026-11-08", "kind": "shipped", "text": "New /open page: live X-rays, sealed checks, deploys and commit-to-live time"},
+    {"date": "2026-11-07", "kind": "shipped", "text": "Payments vs progress in the buyer portal: your instalments against what the satellite sees"},
+    {"date": "2026-11-07", "kind": "shipped", "text": "Project X-ray on /check: 16 checks stream in live, sealed with one SHA-256 root"},
+    {"date": "2026-11-07", "kind": "shipped", "text": "Construction progress from space on 125 project pages, monthly since July 2023"},
+    {"date": "2026-11-07", "kind": "shipped", "text": "Developer network graph and a live globe of X-rays as they run"},
+    {"date": "2026-11-07", "kind": "data", "text": "Delivery Index, November 2026: 8.2% of 755 dated projects are past their first handover date"},
+    {"date": "2026-11-06", "kind": "shipped", "text": "Click the map in Spain or New York for the official parcel record, sealed"},
+    {"date": "2026-11-06", "kind": "shipped", "text": "Sign in with a passkey; every sealed check available as a signed Verifiable Credential"}
+  ]
+}

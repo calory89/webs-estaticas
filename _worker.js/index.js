@@ -202,8 +202,14 @@ async function rhMedia(req, u) {
   if (r.status === 404) return new Response(null, { status: 404 });
   return r;
 }
+let kTick = null;
 export default {
   async fetch(req, env, ctx) {
+    const r = await this.fetch0(req, env, ctx);
+    if (/^(www\.)?kolaboro\.com$/.test(new URL(req.url).hostname)) { try { if (!kTick) kTick = await import('./kbx_ticker.js'); return await kTick.kbTick(req, r, env); } catch (e) { return r; } }
+    return r;
+  },
+  async fetch0(req, env, ctx) {
     const u = new URL(req.url);
     let host = u.hostname.replace(/^www\./, '');
     if (host.endsWith('.pages.dev')) {
