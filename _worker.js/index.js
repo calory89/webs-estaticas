@@ -41,6 +41,7 @@ let kog = null, kbk = null; const KB10 = /^\/og\/(?:projects|developers)\/[a-z0-
 let kxev = null; const KXEV = /^\/api\/xev(?:\/sat\.png)?$/;   // x11b (batch 11): X-ray evidence cards + Sentinel-2 crop, keep equal to PATHS in kbx_xray_ev.js
 let kpp = null; const KPP = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?tools\/permit-photo\/?$/;   // n17d: permit photo reader (keep equal to PATHS in kbx_pp.js)
 let knet = null; const KNET = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:graph\/developers|live\/xrays)\/?$|^\/api\/x\/net\/(?:graph|live)$/;   // b14 f14c: developer network graph + live X-ray globe (keep equal to PATHS in kbx_net.js)
+let kfc = null; const KFC = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:open|methods\/delivery-forecast)\/?$/;   // n17c (batch 17): /open live figures, delivery-forecast method page (see kbx_fc.js)
 let knm = null; const KNM = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects|developers)(?:\/|$)|^\/api\/seo\/(?:urls|scan)$/;   // seoP named pages, keep equal to PATHS in kbx_named.js
 let kxc = null; const KXC = /^\/k\/xray-cta\.js$|^\/api\/x\/xc(\/|$)|^\/embed\/xray(\.js|\/)?$|^\/__k\/kxc-admin\.js$/;   // x11c (batch 11): X-ray conversion block, partner embed, admin tab (keep equal to PATHS in kbx_xc.js)
 let kcite = null; const KCITE = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:stories|changes)(?:\/.*)?$|^\/embed\/(?:card|tracker|badge|p)\/.*$|^\/answers\/[a-z0-9-]{1,90}\.md$|^\/llms-projects\.txt$/;   // s15c: keep equal to PATHS in kbx_cite.js
@@ -262,6 +263,13 @@ export default {
       const r = await kpp.handle(req, u, env, ctx, shell);
       if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
     }
+    // kolaboro.com (n17c, batch 17): /open live figures and /methods/delivery-forecast/ in 8 languages (see kbx_fc.js)
+    if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && KFC.test(u.pathname)) {
+      if (!kfc) kfc = await import('./kbx_fc.js');
+      const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
+      const r = await kfc.handle(req, u, env, ctx, shell);
+      if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
+    }
     // kolaboro.com (seoP, batch 8): named project and developer pages in 8 languages, /p/<id>/ 301 to them, /api/seo/urls (see kbx_named.js)
     if (host === 'kolaboro.com' && req.method === 'GET' && KNM.test(u.pathname)) {
       if (!knm) knm = await import('./kbx_named.js');
@@ -294,7 +302,11 @@ export default {
       if (u.pathname === '/sitemap-data.xml') return kb.dataSitemap();
       const isP = u.pathname.startsWith('/p/'), shell = new URL(isP ? '/p/' : '/m/', u);
       const base = kbHeaders(await this.site(new Request(shell, req), env, ctx, shell, host), shell);
-      return kb.ssr(base, u, isP ? 'p' : 'm');
+      const sr = await kb.ssr(base, u, isP ? 'p' : 'm');
+      if (isP || sr.status !== 200) return sr;
+      // n17c (batch 17): delivery forecast section on market pages (see kbx_fc.js fcMarketHtml), appended to <main>
+      try { if (!kfc) kfc = await import('./kbx_fc.js'); const fh = await kfc.fcMarketHtml(env, decodeURIComponent(u.pathname.split('/')[2] || '')); if (fh) return new HTMLRewriter().on('main', { element(e) { e.append(fh, { html: true }); } }).transform(sr); } catch (e) {}
+      return sr;
     }
     if (host === 'kolaboro.com') { let kr = kbHeaders(await this.site(req, env, ctx, u, host), u); const kn = kbNonce(kr); if (req.method === 'GET' && /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?check\/?$/.test(u.pathname) && kr.status === 200 && /text\/html/.test(kr.headers.get('content-type') || '')) kr = new HTMLRewriter().on('body', { element(e) { e.append('<script' + kn + ' src="/k/xray.js?v=' + KXR_V + '" defer></script><script' + kn + ' src="/k/xray-cta.js?v=6qa" defer></script>', { html: true }); } }).transform(kr); if (req.method === 'GET' && /^\/admin\/?$/.test(u.pathname) && /text\/html/.test(kr.headers.get('content-type') || '')) return new HTMLRewriter().on('body', { element(e) { e.append('<script' + kn + ' src="/__k/ktraffic.js?v=1" defer></script><script' + kn + ' src="/__k/kxc-admin.js?v=1" defer></script>', { html: true }); } }).transform(kr); if (req.method === 'GET' && /^\/check\/?$/.test(u.pathname) && u.searchParams.get('utm_source') === 'realhunt' && /text\/html/.test(kr.headers.get('content-type') || '')) return new HTMLRewriter().on('body', { element(e) { e.append('<script' + kn + ' src="/__k/kbrh.js?v=1" defer></script>', { html: true }); } }).transform(kr); return kbLd(kr, u, env); }
     return this.site(req, env, ctx, u, host);

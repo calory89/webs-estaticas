@@ -20,11 +20,13 @@ import { watchBox, searchBox, feedLinks, W9JS, W9CSS } from './kbx_follow.js';  
 import { diffRoute, phSummary } from './kbx_named_diff.js';   // batch 9 (b9b): what-changed viewer
 import { ppmSection, gleifNet, networkHtml, NET_CSS, NET_JS } from './kbx_named_plus.js';
 import { satData, satSection, satToc, satHeading } from './kbx_named_sat.js';
+import { fcData, fcProjectHtml, fcDevGroup, rsData, rsDevHtml, rsHeading } from './kbx_fc.js';   // batch 17 (n17c): delivery forecast, developer answer speed
 import { seoLd } from './kbx_lastmod.js';   // batch 15 (s15b): true dateModified and ImageObject in the JSON-LD   // batch 14 (f14b): construction progress from space   // batch 10 (b10c): price per m2 vs official data, company network graph
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v24';   // v24: embed link and monthly market story links (s15a for s15c)
+const CACHE_V = 'named-v25';   // v25: delivery forecast in #delivery, answers to buyer questions on developer pages (n17c)
+//   // v24: embed link and monthly market story links (s15a for s15c)
 //   // v23: country hub slug for 'X (USA)' and 'St X' (s15a)
 //   // v22: search-intent titles, short answer, freshness line, more FAQ, related pages, image objects (s15a)
 //   // v20: construction progress from space (f14b);   // v19: search empty state links to the free check, claims 'checked against' translated (qa13); v18: RTL-safe honeypot (d12b); v17: changes page (d12b); v16: design-system tokens (d12b); v15: d12b redesign (H1 tail line, key-facts panel, side contents on desktop, tables as cards on phones)
@@ -219,7 +221,7 @@ function projectPage(ix, x, lang, extra) {
   }).join('');
   const delivery = '<p class="ki">' + tr(lang, 'del_intro', { link: own('/promises/', tr(lang, 'm_promises')) }) + '</p><ul class="fl">' + (prLi || '<li>' + esc(tr(lang, 'no_promises')) + '</li>') +
     (c.overdue ? fact(esc(tr(lang, 'over_line', { m: c.overdue })), '/promises/', tr(lang, 'm_promises')) : '') +
-    (c.delay ? fact(esc(tr(lang, 'delay_line', { m: c.delay })), page) : '') + '</ul>';
+    (c.delay ? fact(esc(tr(lang, 'delay_line', { m: c.delay })), page) : '') + '</ul>' + (extra.fc ? fcProjectHtml(extra.fc, x, lang, extra.fdg) : '');
 
   // construction progress from space (only projects with a plot-level pin and a Sentinel-2 series)
   const satHtml = extra.sat ? satSection(extra.sat, x.id, ix.prom[x.id] || [], fx, lang, d => fd(d, lang), k => tr(lang, 'pk_' + k), d => tr(lang, 'sat_tile', { n: name, d })) : '';
@@ -434,7 +436,7 @@ function devPage(ix, dv, lang, extra) {
   const crumbs = [[tr(lang, 'crumb_home'), ORIGIN + pre(lang) + '/'], [tr(lang, 'crumb_devs'), ORIGIN + '/developers/'], [name, canon]];
   const body = '<section class="phero kp"><div class="wrap"><p class="crumb">' + crumbs.slice(0, 2).map(([l, u]) => '<a href="' + esc(u.replace(ORIGIN, '')) + '">' + esc(l) + '</a>').join(' / ') + '</p><h1>' + h1x(tr(lang, 'h1_d', { dev: name }), name) + '</h1><p class="lead">' + esc(tr(lang, 'lead_d', { dev: name })) + '</p>' + answer + feedLinks(lang, '/developers/' + dv.s + '/', name) + '</div></section>' +
     '<div class="wrap kwrap">' + sec('glance', esc(tr(lang, 's_glance')), '<ul class="fl glance">' + g.join('') + '</ul>') + sec('projects', esc(tr(lang, 's_dprojects')), projects) + sec('network', esc(tr(lang, 's_network')), networkHtml(name, gl.matches[0] && extra.netOk ? gl.matches[0] : null, extra.net, L, pre(lang), '/developers/' + dv.s + '/', extra.netOk ? null : gl.matches[0], lang) + NET_CSS + '<script>' + NET_JS + '</script>') + sec('record', esc(tr(lang, 's_drecord')), record) +
-    sec('registers', esc(tr(lang, 's_dreg')), reg) + sec('reports', esc(tr(lang, 's_dreports')), reports) + sec('reply', esc(tr(lang, 's_reply')), reply) + sec('cta', esc(tr(lang, 's_cta')), cta) + sec('faq', esc(tr(lang, 's_faq')), faq) + sec('sources', esc(tr(lang, 's_sources')), sources) +
+    sec('registers', esc(tr(lang, 's_dreg')), reg) + sec('reports', esc(tr(lang, 's_dreports')), reports) + (extra.rs ? sec('answers', esc(rsHeading(lang)), rsDevHtml(extra.rs, dv, lang, first.id)) : '') + sec('reply', esc(tr(lang, 's_reply')), reply) + sec('cta', esc(tr(lang, 's_cta')), cta) + sec('faq', esc(tr(lang, 's_faq')), faq) + sec('sources', esc(tr(lang, 's_sources')), sources) +
     '<p class="ki kfoot">' + tr(lang, 'foot', { d: esc(fd(checked, lang)), link: own('/data-policy/', tr(lang, 'm_data_policy')) }) + '</p></div>';
   const ld = { '@context': 'https://schema.org', '@graph': [
     { '@type': 'ProfilePage', '@id': canon + '#page', url: canon, name: title.replace(/ \| Kolaboro$/, ''), description: desc, inLanguage: lang, dateModified: checked, speakable: { '@type': 'SpeakableSpecification', cssSelector: ['#answer .kans-t'] }, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' }, publisher: { '@id': ORIGIN + '/#org' }, mainEntity: { '@id': dUrl('en', dv.s) + '#org' }, breadcrumb: { '@id': canon + '#bc' } },
@@ -568,13 +570,15 @@ export async function render(ix, kind, key, lang, env, ctx) {   // exported for 
     try { const k = new Request(ORIGIN + '/__named_dr/v1/' + x.id + '/' + (await repliesPublished())), hit = await caches.default.match(k); if (hit) replies = await hit.json(); else { replies = (await rpc('kolaboro_devreply_public', { p_id: x.id })) || []; const p = caches.default.put(k, new Response(JSON.stringify(replies), { headers: { 'cache-control': 'max-age=3600' } })); if (ctx && ctx.waitUntil) ctx.waitUntil(p.catch(() => {})); } } catch (e) { replies = []; }
     let ph = null, phErr = false; try { ph = await phSummary(env, x.id); } catch (e) { ph = null; phErr = true; }
     let sat = null; try { sat = await satData(env); } catch (e) { sat = null; }
-    const pg = projectPage(ix, x, lang, { reviews, replies, ph, sat }); if (phErr) pg.nocache = true;   // page history not loaded: do not cache
+    let fc = null, fdg = null; try { fc = await fcData(env); fdg = x.dvs ? await fcDevGroup(env, x.dvs) : null; } catch (e) { fc = null; }
+    const pg = projectPage(ix, x, lang, { reviews, replies, ph, sat, fc, fdg }); if (phErr) pg.nocache = true;   // page history not loaded: do not cache
     return pg;
   }
   const dv = ix.devs.get(key); if (!dv) return null;
   const gl = await gleif(dv.n, ctx), m0 = gl.matches[0], cs = new Set(dv.ids.map(i => ix.byId.get(i)).filter(Boolean).map(x => COUNTRY_ISO[x.co] || x.co));
   const netOk = !!(m0 && cs.has(m0.country)), net = netOk ? await gleifNet(m0.lei, ctx) : null;   // a same-name company in another country is not shown as this developer's group
-  return devPage(ix, dv, lang, { gleif: gl, net, netOk });
+  let rs = null; try { rs = await rsData(env); } catch (e) { rs = null; }
+  return devPage(ix, dv, lang, { gleif: gl, net, netOk, rs });
 }
 
 // shell(path) -> Response of the site's static page at that path (header, footer, styles of that language)
