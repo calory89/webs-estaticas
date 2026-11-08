@@ -208,7 +208,7 @@ footer{border-top:3px double var(--ink);margin-top:44px;padding:20px 0 40px;font
 .hb .b1{background:#d8b27a;color:#1d1b18}.hb .b2{border:1px solid rgba(255,255,255,.7);color:#fff}.hb a:hover{opacity:.9;color:inherit}
 .qf{border-bottom:1px solid var(--line);padding:20px 0}.qf h2{font:700 15px -apple-system,sans-serif;letter-spacing:.08em;text-transform:uppercase;margin:0 0 12px}
 .qf dl{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px 22px;margin:0}.qf dt{font:700 12px -apple-system,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}.qf dd{margin:2px 0 0;font-size:16.5px;line-height:1.45}
-.ans,.facts,.pcta{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:6px;padding:14px 16px;margin:0 0 18px}.ans b,.facts>b{font:700 12px -apple-system,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}.ans p{margin:.3em 0 0;font-size:18px}
+.ans,.facts,.pcta{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:6px;padding:14px 16px;margin:0 0 18px}.ans b,.facts>b{font:700 12px -apple-system,sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}.ans p{margin:.3em 0 0;font-size:18px}.keys ul{margin:.4em 0 0;padding-left:20px;font-size:17px;line-height:1.45}.vis p{margin:.4em 0 0;font:16px/1.5 Georgia,serif}
 .facts dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 14px;margin:8px 0 0;font:15px/1.45 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.facts dt{font-weight:700}.facts dd{margin:0}
 .faq details{border-bottom:1px solid var(--line);padding:10px 0}.faq summary{cursor:pointer;font-weight:700;font-size:18px}.faq details p{margin:.5em 0 0}
 .pls ul{font:16px/1.6 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}.pcta{font:15.5px/1.5 -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;margin-top:24px}
@@ -265,10 +265,10 @@ def head(l, title, desc, path_tpl, og_type="website", extra="", image=None, noin
     url = BASE + P(path_tpl, l)
     title = seo_title(title); desc = seo_desc(desc)
     og = image or (BASE + "/og.png")
-    robots = '<meta name="robots" content="noindex">' if noindex else '<meta name="robots" content="max-image-preview:large">'
+    robots = '<meta name="robots" content="noindex">' if noindex else '<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">'
     return f"""<!doctype html><html lang="{HTML_LANG[l]}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>{esc(title)}</title><meta name="description" content="{esc(desc)}">{robots}<link rel="canonical" href="{url}">{alts}
-<meta property="og:site_name" content="The Sumba Times"><meta property="og:type" content="{og_type}"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="{url}"><meta property="og:locale" content="{OG_LOC[l]}"><meta property="og:image" content="{og}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{og}">
+<meta property="og:site_name" content="The Sumba Times"><meta property="og:type" content="{og_type}"><meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="{url}"><meta property="og:locale" content="{OG_LOC[l]}">{"".join(f'<meta property="og:locale:alternate" content="{OG_LOC[y]}">' for y in LANGS if y != l)}<meta property="og:image" content="{og}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="{og}">
 <meta name="theme-color" content="#f7f3ec" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#141311" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/manifest.webmanifest">
 <link rel="alternate" type="application/rss+xml" title="The Sumba Times" href="{BASE}/{l}/feed.xml"><link rel="search" type="application/opensearchdescription+xml" title="The Sumba Times" href="/opensearch.xml">
@@ -424,6 +424,10 @@ def extras_html(a, l):
     t = T[l]; c = a[l]; top = ""; bottom = ""
     if c.get("answer"):
         top += f'<div class="ans"><b>{t["answer"]}</b><p>{esc(c["answer"])}</p></div>'
+    if c.get("keys"):
+        top += f'<div class="ans keys"><b>{KEYS_T[l]}</b><ul>' + "".join(f"<li>{esc(k)}</li>" for k in c["keys"]) + "</ul></div>"
+    if c.get("visitors"):
+        bottom = f'<div class="facts vis"><b>{VIS_T[l]}</b><p>{esc(c["visitors"])}</p></div>' + bottom
     fx = (a.get("facts") or {}).get(l)
     if fx:
         top += f'<div class="facts"><b>{t["facts_box"]}</b><dl>' + "".join(f"<dt>{esc(k)}</dt><dd>{esc(v)}</dd>" for k, v in fx) + "</dl></div>"
@@ -436,6 +440,8 @@ def extras_html(a, l):
             f'<li><b>{esc(p["name"])}</b>{" · " + esc(p["area"]) if p.get("area") else ""} · <a href="{gmaps(p)}" target="_blank" rel="noopener">{t["open_map"]}</a></li>' for p in pls) + f'</ul><p><a href="/{l}/plan/#map">{t["map_t"]} →</a></p></section>'
     return top, bottom
 
+KEYS_T = {"en": "Key points", "es": "Claves", "id": "Poin penting"}
+VIS_T = {"en": "If you are travelling to Sumba", "es": "Si viajas a Sumba", "id": "Jika Anda bepergian ke Sumba"}
 _PLACE_RX = None
 def place_links(b, a, l):
     """Link the first plain-text mention of each place that has its own page (max 8 per article)."""
@@ -483,6 +489,21 @@ def article_ld(a, l, url, imgs, grp):
            "publisher": {"@type": "Organization", "name": "The Sumba Times", "logo": {"@type": "ImageObject", "url": BASE + "/apple-touch-icon.png"}, "parentOrganization": {"@type": "Organization", "name": "Eco Beach City", "url": "https://ecobeachcity.com"}},
            "about": {"@type": "Place", "name": "Sumba", "sameAs": "https://en.wikipedia.org/wiki/Sumba"}}
     if a.get("sources"): art["citation"] = [h for _, h in a["sources"]]
+    art["isAccessibleForFree"] = True
+    art["copyrightYear"] = int(a["date"][:4]); art["copyrightHolder"] = {"@type": "Organization", "name": "The Sumba Times"}
+    art["workTranslation" if l == "en" else "translationOfWork"] = [{"@type": "CreativeWork", "@id": BASE + url_of(a, y), "inLanguage": y} for y in LANGS if y != l] if l == "en" else {"@id": BASE + url_of(a, "en")}
+    if a.get("dateline"):
+        art["locationCreated"] = {"@type": "Place", "name": a["dateline"].title() + ", Sumba, Indonesia"}
+        art["dateline"] = a["dateline"].title()
+    kw = (a.get("keywords") or {}).get(l) if isinstance(a.get("keywords"), dict) else a.get("keywords")
+    if kw: art["keywords"] = kw if isinstance(kw, str) else ", ".join(kw)
+    im = img_of(a)
+    if im:
+        art["image"] = [{"@type": "ImageObject", "url": u, "caption": im["caption"][l], "creditText": im.get("credit", ""), "license": im.get("license_url") or None,
+                         "acquireLicensePage": im.get("page") or None, "width": 1280 if "-1280" in u else 1200, "height": 853 if "-1280" in u else 630} for u in imgs]
+        art["thumbnailUrl"] = f"{BASE}/img/{img_key(a)}-640.webp"
+    ments = [x for x in all_items() if x is not a and x["section"] == "places" and url_of(x, l) in (c.get("body") or "") + place_links(fix_links(body_raw(a, l)), a, l)]
+    if ments: art["mentions"] = [{"@type": "TouristAttraction", "name": re.split(r"[,:]", x[l]["title"])[0], "url": BASE + url_of(x, l)} for x in ments[:8]]
     if c.get("answer"):
         art["abstract"] = c["answer"]
         art["speakable"] = {"@type": "SpeakableSpecification", "cssSelector": [".ans p", "h1", ".dek"]}
@@ -517,6 +538,8 @@ def article_page(a, l):
     ld = article_ld(a, l, url, imgs, grp)
     extra = f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script><meta property="article:published_time" content="{iso(a)}"><meta property="article:section" content="{esc(sec_name(l,grp))}">'
     if a.get("updated"): extra += f'<meta property="article:modified_time" content="{a["updated"]}">'
+    kw = (a.get("keywords") or {}).get(l) if isinstance(a.get("keywords"), dict) else a.get("keywords")
+    if kw: extra += "".join(f'<meta property="article:tag" content="{esc(k.strip())}">' for k in (kw.split(",") if isinstance(kw, str) else kw))
     s = head(l, c["title"] + " · The Sumba Times", c["dek"], tpl, "article", extra, og) + masthead(l, tpl, grp)
     srcs = "".join(f'<li><a href="{esc(h)}" rel="nofollow noopener" target="_blank">{esc(t)}</a></li>' for t, h in a.get("sources", []))
     b, toc = with_toc(place_links(fix_links(body_raw(a, l)), a, l), l)

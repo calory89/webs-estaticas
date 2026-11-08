@@ -2,6 +2,9 @@
 
 Static site generator, EN/ES/ID. `python3 build.py` writes `out/`. `python3 deploy.py` turns `out/` into `worker/index.js` + `worker/metadata.json`.
 
+## Daily stories: read EDITORIAL.md first
+At least one story per day (WITA), more when there is real news; newspaper mix, not a travel blog. EDITORIAL.md has the editorial line and the 100-point SEO/GEO checklist per story and language. Optional fields the build now uses: "slugs", "keywords" {en,es,id}, per-language "answer", "keys" (3-5 bullets), "visitors" (practical paragraph), "faq", "updated".
+
 ## Files
 - `content.py`  - UI strings, evergreen guides (`ARTICLES`), the Low Tide letter (`LETTER`), stay table. The daily task adds new stories here.
 - `news_briefs.py` - news briefs (`BRIEFS`), same schema.
