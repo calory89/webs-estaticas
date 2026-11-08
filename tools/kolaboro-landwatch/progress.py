@@ -13,7 +13,10 @@ Copernicus Sentinel-2 L2A (Element84 Earth Search STAC, COGs on AWS Open Data, r
   - one true-colour thumbnail per clear month (640 m square), all months of a project in one JPEG sprite.
 Writes OUT/part-<shard>.json and OUT/proj/<ID>.jpg. Coordinates are not written to the output.
 
-Usage: progress.py OUTDIR [--from 2023-07] [--shard 0/4] [--only ID,ID] [--workers 16] [--budget-min 70]"""
+Series start (n18b, 8 Nov 2026): January 2017, the first month of the Sentinel-2 L2A archive on Earth Search (checked for Dubai, Bali,
+Antalya, Tulum, Phuket, Costa del Sol and Sydney). Months with no archived scene stay empty (k = 0), never filled in.
+
+Usage: progress.py OUTDIR [--from 2017-01] [--shard 0/4] [--only ID,ID] [--workers 16] [--budget-min 70]"""
 import json, os, sys, math, time, datetime, argparse, concurrent.futures, statistics
 os.environ.setdefault('AWS_NO_SIGN_REQUEST', 'YES')
 os.environ.setdefault('GDAL_DISABLE_READDIR_ON_OPEN', 'EMPTY_DIR')
@@ -257,7 +260,7 @@ def last_day(mo):
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument('outdir')
-    ap.add_argument('--from', dest='frm', default='2023-07'); ap.add_argument('--to', default='')
+    ap.add_argument('--from', dest='frm', default='2017-01'); ap.add_argument('--to', default='')
     ap.add_argument('--shard', default='0/1'); ap.add_argument('--only', default='')
     ap.add_argument('--workers', type=int, default=16); ap.add_argument('--budget-min', type=float, default=70)
     a = ap.parse_args()

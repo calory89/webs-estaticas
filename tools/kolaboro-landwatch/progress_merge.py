@@ -17,7 +17,7 @@ METHOD = ('Per project, a 150 m circle around the pin from our project record. P
           'circle and ring together, so the difference is steadier than either share (single-month deviation in the first months: median 4, 90th percentile 15 points, '
           'so 15 points either way is shown as normal variation). x: share of the circle whose pixels differ visibly from the first clear month (brightness moved by more than 25 of 255, '
           'or a switch between built-up/bare and not with NDBI moving more than 0.1, after subtracting the median shift of the ring); kept for reference, noisier. '
-          'Months without a clear scene are left empty, never filled in. '
+          'The series starts in January 2017, the first month of the Sentinel-2 L2A archive on Earth Search; months without a clear scene are left empty, never filled in. '
           'Thumbnails: true colour, 640 m square, one linear stretch per project; the white circle is the 150 m analysis circle.')
 LIMITS = ('Sentinel-2 pixels are 10 m. They show cleared ground, slabs, roofs and large cranes, not floors, interiors or quality of work: '
           'a tower going up on a plot that was already concrete changes little, and a finished building should look unchanged. '

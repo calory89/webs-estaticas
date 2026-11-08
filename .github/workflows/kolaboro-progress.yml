@@ -1,7 +1,7 @@
 name: Kolaboro construction progress from space
 # Monthly (batch 14, f14b): Sentinel-2 L2A monthly change series and thumbnails per named project with a plot-level pin
 # (tools/kolaboro-landwatch/progress.py). Free open data (Element84 Earth Search STAC, COGs on AWS Open Data, range reads),
-# no account, no model calls. Publishes kolaboro.com/data/construction-progress.json and the sprites /k/sat/proj/<id>.jpg
+# no account, no model calls. Since n18b (8 Nov 2026) the series starts in January 2017, the first month of the L2A archive on Earth Search. Publishes kolaboro.com/data/construction-progress.json and the sprites /k/sat/proj/<id>.jpg
 # (inside the satellite packs, tools/kolaboro-agent/satpack.py: the Pages project is near its 20,000-file limit).
 on:
   schedule:
@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
     inputs:
       only: { description: 'comma separated project ids (empty = all)', required: false, default: '' }
-      from: { description: 'first month YYYY-MM', required: false, default: '2023-07' }
+      from: { description: 'first month YYYY-MM', required: false, default: '2017-01' }
 
 permissions:
   contents: write
@@ -39,7 +39,7 @@ jobs:
           pip install -q rasterio pystac-client numpy pillow
           A="--shard ${{ matrix.shard }}/4"
           if [ -n "$ONLY" ]; then [ "${{ matrix.shard }}" = "0" ] || exit 0; A="--only $ONLY"; fi
-          python3 -W ignore tools/kolaboro-landwatch/progress.py "$RUNNER_TEMP/out" --from "${FROM:-2023-07}" --workers 16 --budget-min 80 $A
+          python3 -W ignore tools/kolaboro-landwatch/progress.py "$RUNNER_TEMP/out" --from "${FROM:-2017-01}" --workers 16 --budget-min 80 $A
           du -sh "$RUNNER_TEMP/out"
       - uses: actions/upload-artifact@v4
         with:
