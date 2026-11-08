@@ -1,6 +1,19 @@
 {
  "deploys": [
   {
+   "at": "2026-11-08T21:37:07Z",
+   "commit": "2fc179d3137ef32ab5d2d90369f993547f5efe9a",
+   "checks_passed": 32,
+   "checks_total": 32,
+   "failed": [],
+   "run": "https://github.com/calory89/webs-estaticas/actions/runs/42525778000",
+   "result": "pass",
+   "wait_s": 163,
+   "changes": [
+    "2fc179d3137e"
+   ]
+  },
+  {
    "at": "2026-11-08T21:32:44Z",
    "commit": "d1e3aec2560ef6f939ec76ba6a3183571d7bae96",
    "checks_passed": 32,
@@ -2760,19 +2773,6 @@
     "45a62595c091",
     "fdda8e20288e"
    ]
-  },
-  {
-   "at": "2026-11-03T13:00:45Z",
-   "commit": "0c2bc1f808739aa348e975e8080e871267677d08",
-   "checks_passed": 32,
-   "checks_total": 32,
-   "failed": [],
-   "run": "https://github.com/calory89/webs-estaticas/actions/runs/41639826061",
-   "result": "pass",
-   "wait_s": 243,
-   "changes": [
-    "0c2bc1f80873"
-   ]
   }
  ],
  "drills": [],
@@ -2780,13 +2780,13 @@
  "canary": "Cloudflare Pages sends each push to all visitors at once and offers no percentage canary, so none is claimed. A bad push can be visible for a few minutes until the rollback is live.",
  "rollback_mode": "Rollback: a git commit restoring the files changed since the last passing commit; Pages deploys it in about 1 to 2 minutes. An instant Cloudflare API rollback is built in but needs a Pages-scoped token, not configured yet.",
  "latest_checks": {
-  "at": "2026-11-08T21:32:44.495Z",
-  "commit": "d1e3aec2560ef6f939ec76ba6a3183571d7bae96",
+  "at": "2026-11-08T21:37:07.611Z",
+  "commit": "2fc179d3137ef32ab5d2d90369f993547f5efe9a",
   "checks": [
    {
     "name": "build: live commit",
     "ok": true,
-    "detail": "live d1e3aec2560e"
+    "detail": "live 2fc179d3137e"
    },
    {
     "name": "page /",
@@ -2945,7 +2945,7 @@
    }
   ]
  },
- "last_checked": "d1e3aec2560ef6f939ec76ba6a3183571d7bae96",
- "last_good": "d1e3aec2560ef6f939ec76ba6a3183571d7bae96",
- "updated": "2026-11-08T21:32:44Z"
+ "last_checked": "2fc179d3137ef32ab5d2d90369f993547f5efe9a",
+ "last_good": "2fc179d3137ef32ab5d2d90369f993547f5efe9a",
+ "updated": "2026-11-08T21:37:07Z"
 }
