@@ -1,0 +1,56 @@
+name: Kolaboro sanctions screening
+# Daily (n19a, batch 19): developer company names in the named project data against the entity entries of OFAC SDN and
+# non-SDN, UK Sanctions List (FCDO), EU consolidated financial sanctions and UN Security Council lists. No model calls.
+# Public: kolaboro.com/data/sanctions.json (lists screened, developer pages with no possible match). Possible matches are never
+# published: they go to the admin CRM (Screening tab, kept with the internal risk graph) and an email alert when they change.
+# Skips everything when neither the lists nor the developer names changed since the last run.
+on:
+  schedule:
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-sanctions
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            tools/kolaboro-agent/sanctions_screen.py
+            tools/kolaboro-agent/graph.py
+            tools/kolaboro-agent/projects.json
+            tools/kolaboro-agent/projects-world.json
+            tools/kolaboro-agent/data/latest.json
+            tools/kolaboro-reliability
+          sparse-checkout-cone-mode: false
+      - uses: actions/cache@v4
+        with:
+          path: ${{ runner.temp }}/state
+          key: sanctions-state-${{ github.run_id }}
+          restore-keys: sanctions-state-
+      - name: Screen
+        run: |
+          mkdir -p "$RUNNER_TEMP/out" "$RUNNER_TEMP/priv" "$RUNNER_TEMP/state"
+          python3 -u tools/kolaboro-agent/sanctions_screen.py "$RUNNER_TEMP/out" "$RUNNER_TEMP/priv"
+          python3 -c "import json;j=json.load(open('$RUNNER_TEMP/out/sanctions.json'));ok=[l['id'] for l in j['lists'] if l['ok']];assert len(ok)>=2,ok;assert len(j['no_match'])>=300,len(j['no_match']);print('lists',ok,'no match',len(j['no_match']))"
+          H=$(python3 -c "import json;j=json.load(open('$RUNNER_TEMP/out/sanctions.json'));p=json.load(open('$RUNNER_TEMP/priv/review.json'));print(json.dumps([[(l['id'],l.get('list_date'),l.get('entities')) for l in j['lists']],j['no_match'],p['key']]))" | sha256sum | cut -c1-16)
+          if [ -f "$RUNNER_TEMP/state/inputs" ] && [ "$(cat $RUNNER_TEMP/state/inputs)" = "$H" ] && [ "$(cat $RUNNER_TEMP/state/day 2>/dev/null)" \> "$(date -u -d '-6 days' +%F)" ]; then echo "SKIP=1" >> $GITHUB_ENV; echo "lists and names unchanged"; fi
+          echo "$H" > "$RUNNER_TEMP/state/inputs.new"
+      - name: Review list to the admin CRM
+        if: env.SKIP != '1'
+        env:
+          KB_MACHINE_KEY: ${{ secrets.KB_MACHINE_KEY }}
+        run: python3 -u tools/kolaboro-agent/sanctions_screen.py "$RUNNER_TEMP/out" "$RUNNER_TEMP/priv" --upload "$RUNNER_TEMP/state/review-key"
+      - name: Publish to kolaboro.com
+        if: env.SKIP != '1'
+        run: |
+          bash tools/kolaboro-reliability/publish.sh "kolaboro.com: sanctions screening $(date -u +%F)" \
+            "$RUNNER_TEMP/out/sanctions.json=_s/kolaboro.com/data/sanctions.json"
+          mv "$RUNNER_TEMP/state/inputs.new" "$RUNNER_TEMP/state/inputs"; date -u +%F > "$RUNNER_TEMP/state/day"
