@@ -123,10 +123,11 @@ TLDS = ['com', 'net', 'org', 'co', 'io', 'info', 'biz', 'online', 'site', 'store
         'property', 'estate', 'realestate', 'ae', 'es', 'pt', 'co.uk', 'uk', 'eu', 'de', 'fr', 'it', 'me', 'us', 'id', 'co.id', 'com.my',
         'co.th', 'com.mx', 'com.tr', 'ph', 'vn', 'cy', 'gr', 'asia', 'global', 'world', 'cc', 'ws', 'ltd', 'llc', 'agency', 'sale',
         'house', 'villas', 'luxury', 'capital', 'finance', 'invest', 'investments', 'pro', 'app', 'one', 'today', 'icu', 'shop', 'vip']
+EXTRA = set(WORDS) | set(PREFIX) | {'realestate', 'estate', 'estates', 'property', 'developer', 'development', 'invest', 'investor', 'investors', 'sale', 'deals', 'booking', 'reservations', 'project', 'projects', 'payment', 'secure', 'portal', 'account', 'accounts', 'support', 'service', 'team', 'agent', 'agents', 'broker', 'brokers', 'office', 'co', 'company', 'inc'}
 # names too generic to watch: a lookalike of 'living.com' or 'emerge.com' says nothing
 GENERIC = set('living homes house villas villa resort tower towers group realty estate property properties capital invest residence '
               'residences city park garden gardens marina beach ocean island bay view vista luxury prime royal grand golden green urban '
-              'emerge pillar native modern nova vida casa terra alpha omega horizon summit legacy elite select premier global'.split())
+              'emerge pillar native modern nova vida casa terra alpha omega horizon summit legacy elite select premier global urbanescape'.split())
 
 GLYPH = {'o': ['0'], 'l': ['1', 'i'], 'i': ['1', 'l'], 'e': ['3'], 's': ['5'], 'm': ['rn'], 'w': ['vv'], 'd': ['cl'], 'a': ['а'], 'c': ['с'], 'p': ['р']}
 
@@ -176,12 +177,13 @@ def why(cand, off):
         return 'hyphen'
     if skel(ol) == skel(sl):
         return 'glyph'
-    if len(ol) >= 5 and osa(sl, ol) <= (2 if len(ol) >= 9 else 1):
+    if len(ol) >= 6 and osa(sl, ol) <= (2 if len(ol) >= 9 else 1):
         return 'typo'
-    if len(ol) >= 5 and re.search(r'(^|-)' + re.escape(ol) + r'(-|$)', sl):
-        return 'word'
-    if len(ol) >= 7 and ol in sl:
-        return 'contains'
+    # the name plus one of the words sellers and imitators add (sales, invest, official...); other words are too common to mean much
+    if ol in sl:
+        rest = [x for x in sl.replace(ol, ' ', 1).replace('-', ' ').split() if x]
+        if rest and all(x in EXTRA for x in rest):
+            return 'word' if re.search(r'(^|-)' + re.escape(ol) + r'(-|$)', sl) else 'contains'
     return None
 
 
@@ -406,8 +408,8 @@ def main():
             neg[p] = TODAY
     # previously published lookalikes are re-checked every day
     for dname, x in old.items():
-        if dname not in found and x.get('o') in official:
-            found[dname] = {'o': x['o'], 'why': x.get('why') or why(dname, x['o']) or 'word', 'src': x.get('src', 'dns'), 'cert': x.get('cert')}
+        if dname not in found and x.get('o') in official and why(dname, x['o']):
+            found[dname] = {'o': x['o'], 'why': why(dname, x['o']), 'src': x.get('src', 'dns'), 'cert': x.get('cert') if x.get('reg') else None}
 
     # 3. Facts about each lookalike: registration (RDAP), certificates, resolves today, name servers (6 at a time, RDAP 1/s per registry)
     def ns_of(d):
@@ -420,7 +422,7 @@ def main():
         c = enr.get(cand)
         age = (NOW - datetime.fromisoformat(c['at'] + 'T00:00:00+00:00')).days if c else 99
         recent_reg = bool(c and c.get('reg')) and (NOW.date() - datetime.strptime(c['reg'], '%Y-%m-%d').date()).days <= WINDOW
-        if age >= 7 or (recent_reg and not c.get('cert') and age >= 1 and not c.get('crt_ok')):
+        if age >= 7 or ((recent_reg and not c.get('cert') or not c.get('reg')) and age >= 1 and not c.get('crt_ok')):
             todo.append(cand)
     todo = todo[:budget]
 
@@ -429,7 +431,7 @@ def main():
             return
         e = found[cand]
         reg, rst = rdap(cand)
-        if e.get('cert'):
+        if e.get('cert') and reg:
             cert, first = e['cert'], False
         elif reg and (NOW.date() - datetime.strptime(reg, '%Y-%m-%d').date()).days > WINDOW:
             cert, first = None, False        # registered long ago: not published, no certificate lookup needed
@@ -464,9 +466,8 @@ def main():
         c, live, alive = F[cand]
         o = e['o']
         same_ns = bool(c.get('ns')) and set(c['ns']) == set(off_ns.get(o) or []) and not PLATFORM_NS.search(' '.join(c['ns']))
-        cert = e.get('cert') or c.get('cert')
-        new_ct = e.get('src') == 'ct' and e.get('cert') and not c.get('reg')
-        when = c.get('reg') or (cert if (c.get('first') or new_ct) else None)
+        cert = c.get('cert') or (e.get('cert') if c.get('reg') else None)
+        when = c.get('reg') or (c.get('cert') if c.get('first') else None)   # no registration date: the first certificate stands in
         recent = bool(when) and (NOW.date() - datetime.strptime(when, '%Y-%m-%d').date()).days <= WINDOW
         if same_ns or not recent:
             continue
