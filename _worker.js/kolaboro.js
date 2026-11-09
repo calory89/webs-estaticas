@@ -1489,10 +1489,15 @@ async function openRoutes(req, u, path, L, env) {
     return new Response(svg, { headers: { 'content-type': 'image/svg+xml; charset=utf-8', 'cache-control': 'public, max-age=3600', 'access-control-allow-origin': '*' } });
   }
   if (path === '/feed.json' || path === '/feed.xml') {
-    const items = (d.ships || []).map((s, i) => ({ id: 'kolaboro-' + s.d + '-' + i, date: s.d + 'T12:00:00Z', title: s.t, tag: s.k }));
-    if (path === '/feed.json') return openResp({ version: 'https://jsonfeed.org/version/1.1', title: 'Kolaboro: what we shipped', home_page_url: 'https://kolaboro.com/changelog', feed_url: 'https://kolaboro.com/feed.json', items: items.map(x => ({ id: x.id, url: 'https://kolaboro.com/changelog', title: x.title, content_text: x.title, date_published: x.date, tags: [x.tag] })) }, 'application/feed+json; charset=utf-8');
-    const rss = '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel><title>Kolaboro: what we shipped</title><link>https://kolaboro.com/changelog</link><description>New data and features, every day.</description>' +
-      items.map(x => '<item><title>' + xesc(x.title) + '</title><link>https://kolaboro.com/changelog</link><guid isPermaLink="false">' + x.id + '</guid><pubDate>' + new Date(x.date).toUTCString() + '</pubDate><category>' + x.tag + '</category></item>').join('') + '</channel></rss>';
+    // n20f: the feed read only the automatic agent entries (d.ships) and had stopped at 6 Nov while the "Shipping daily" bar went on;
+    // it now carries the same lines as the bar (/data/ticker.json) first, then the automatic entries. Ids come from the text, so they are stable.
+    let ships = d.ships || [];
+    try { const tk = await import('./kbx_ticker.js'); const merged = [], seen = new Set(); for (const s of tk.mergeShips(await tk.tickerItems(env), []).concat(ships)) { const k = String(s.t || '').toLowerCase(); if (s && s.t && s.d && !seen.has(k)) { seen.add(k); merged.push(s); } } ships = merged.sort((x, y) => String(y.d).localeCompare(String(x.d))).slice(0, 60); } catch (e) {}
+    const fid = t => { let h = 5381; for (let i = 0; i < t.length; i++) h = ((h << 5) + h + t.charCodeAt(i)) >>> 0; return h.toString(36); };
+    const items = ships.map(s => ({ id: 'kolaboro-' + s.d + '-' + fid(String(s.t)), date: s.d + 'T12:00:00Z', title: s.t, tag: s.k }));
+    if (path === '/feed.json') return openResp({ version: 'https://jsonfeed.org/version/1.1', title: 'Kolaboro: what we shipped', home_page_url: 'https://kolaboro.com/changelog/', feed_url: 'https://kolaboro.com/feed.json', items: items.map(x => ({ id: x.id, url: 'https://kolaboro.com/changelog/', title: x.title, content_text: x.title, date_published: x.date, tags: [x.tag] })) }, 'application/feed+json; charset=utf-8');
+    const rss = '<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kolaboro: what we shipped</title><link>https://kolaboro.com/changelog/</link><atom:link href="https://kolaboro.com/feed.xml" rel="self" type="application/rss+xml"/><description>New data and features, every day.</description>' +
+      items.map(x => '<item><title>' + xesc(x.title) + '</title><link>https://kolaboro.com/changelog/</link><guid isPermaLink="false">' + x.id + '</guid><pubDate>' + new Date(x.date).toUTCString() + '</pubDate><category>' + x.tag + '</category></item>').join('') + '</channel></rss>';
     return openResp(rss, 'application/rss+xml; charset=utf-8');
   }
   return new Response(JSON.stringify({ error: 'not_found', docs: 'https://kolaboro.com/api/open' }), { status: 404, headers: { 'content-type': 'application/json', 'access-control-allow-origin': '*' } });

@@ -4,6 +4,20 @@
   {
    "date": "2026-11-09",
    "kind": "shipped",
+   "text": "Full working test of the site (checks, tools, accounts, feeds, API): a saved X-ray now shows in your dashboard, project pages have a Save to my list button again, and the update feed is current",
+   "tl": {
+    "es": "Prueba completa del sitio (comprobaciones, herramientas, cuentas, feeds, API): la radiografía guardada ya aparece en tu panel, las páginas de proyecto vuelven a tener el botón Guardar en mi lista y el feed de novedades está al día",
+    "fr": "Test complet du site (vérifications, outils, comptes, flux, API) : la radiographie enregistrée apparaît dans votre tableau de bord, les pages projet retrouvent le bouton Enregistrer dans ma liste et le flux des nouveautés est à jour",
+    "de": "Vollständiger Funktionstest der Website (Prüfungen, Werkzeuge, Konten, Feeds, API): Ein gespeichertes Röntgen erscheint jetzt im Dashboard, Projektseiten haben wieder die Schaltfläche In meiner Liste speichern, und der Neuigkeiten-Feed ist aktuell",
+    "nl": "Volledige werkingstest van de site (controles, tools, accounts, feeds, API): een bewaarde röntgen staat nu in je dashboard, projectpagina's hebben weer de knop Bewaren in mijn lijst en de updatefeed is actueel",
+    "ru": "Полная проверка работы сайта (проверки, инструменты, аккаунты, ленты, API): сохранённый рентген теперь виден в панели, на страницах проектов снова есть кнопка «Сохранить в мой список», лента обновлений актуальна",
+    "zh": "全站功能测试（核查、工具、账户、订阅源、API）：保存的透视现在会显示在您的面板中，项目页面恢复了“保存到我的清单”按钮，更新订阅源已同步到最新",
+    "ar": "اختبار كامل لعمل الموقع (الفحوص والأدوات والحسابات والخلاصات وواجهة البرمجة): الأشعة المحفوظة تظهر الآن في لوحتك، وعاد زر «احفظ في قائمتي» إلى صفحات المشاريع، وخلاصة التحديثات محدّثة"
+   }
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "shipped",
    "text": "Security hardening: pages now refuse inline script handlers, links built from third-party data cannot run scripts, the map and text-reading libraries are pinned with integrity hashes, and payment-check lookups are rate limited",
    "tl": {
     "es": "Refuerzo de seguridad: las páginas rechazan los manejadores de script en línea, los enlaces creados con datos de terceros no pueden ejecutar scripts, las bibliotecas de mapas y de lectura de texto quedan fijadas con hashes de integridad y las consultas de comprobación de pagos tienen límite de frecuencia",

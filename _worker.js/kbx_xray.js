@@ -545,7 +545,9 @@ function sse(req, env, ctx, inp, lang) {
       if (hit) { const res = await hit.json(); send({ type: 'plan', checks: res.cards.map(c => ({ id: c.id, title: c.title })), input: res.meta.input, cached: true, at: res.meta.started_at }); for (const c of res.cards) send({ type: 'card', card: c, cached: true }); send({ type: 'done', root: res.root, url: res.url, total_ms: res.proof.total_ms, proof: res.proof, cached: true, stored: res.stored }); return; }
       if (!(await rateOk(req, ctx))) { send({ type: 'error', error: 'rate', limit: PER_IP_HOUR + ' X-rays an hour per visitor' }); return; }
       const res = await runXray(inp, { env, ctx, req, lang }, send);
-      ctx.waitUntil(caches.default.put(INKEY(ik), new Response(JSON.stringify(res), { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=600' } })).catch(() => {}));
+      // a run where a check timed out tells the visitor to run it again in a few minutes: keep that answer for 1 minute only, not 10
+      const ttl = (res.cards || []).some(c => c && c.status === 'error') ? 60 : 600;
+      ctx.waitUntil(caches.default.put(INKEY(ik), new Response(JSON.stringify(res), { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=' + ttl } })).catch(() => {}));
     } catch (e) { send({ type: 'error', error: 'server', detail: clip(String(e && e.message || e), 160) }); }
     finally { try { await w.close(); } catch (e) {} }
   })();

@@ -353,7 +353,7 @@
     // (25) save, watch, email me
     var w = '';
     if (n && n.slug) w += '<form class="kxc-form" id="kxc-watch" novalidate><label class="kxc-m" for="kxc-we" style="flex-basis:100%">' + esc(tf('watch_lbl', { n: n.name })) + '</label><input id="kxc-we" type="email" autocomplete="email" placeholder="you@example.com" required><input class="kxc-hp" tabindex="-1" aria-hidden="true" name="hp"><button class="kxc-btn l" type="submit">' + esc(t('watch_btn')) + '</button></form>';
-    if (logged) w += '<div class="kxc-row" style="margin-top:10px"><button class="kxc-btn l" type="button" id="kxc-save">' + esc(t('save_btn')) + '</button></div>' +
+    if (logged && done) w += '<div class="kxc-row" style="margin-top:10px"><button class="kxc-btn l" type="button" id="kxc-save"' + (S.saved ? ' data-saved="1"' : '') + '>' + esc(t(S.saved ? 'saved_btn' : 'save_btn')) + '</button></div>' +
       (x.root ? '<label class="kxc-chk"><input type="checkbox" id="kxc-rem"' + (S.seen && S.seen.optin ? ' checked' : '') + '><span>' + esc(t('rem')) + '</span></label>' : '');
     if (x.root) w += '<form class="kxc-form" id="kxc-em" novalidate><label class="kxc-m" for="kxc-ee" style="flex-basis:100%">' + esc(t('em_lbl')) + '</label><input id="kxc-ee" type="email" autocomplete="email" placeholder="you@example.com" required><input class="kxc-hp" tabindex="-1" aria-hidden="true" name="hp"><button class="kxc-btn l" type="submit">' + esc(t('em_btn')) + '</button></form>';
     if (w) h += sec('kxc-keep', '<p class="kxc-k">' + esc(t('keep_k')) + '</p><h3>' + esc(t('keep_h')) + '</h3>' + (n && n.url ? '<p class="kxc-m">' + esc(t('dossier')) + ' <a href="' + hu(n.url) + '">' + esc(n.name) + '</a>.</p>' : '') + w + '<p class="kxc-msg" id="kxc-keep-m" aria-live="polite"></p>');
@@ -389,8 +389,9 @@
   function refFor(q) { var k = String(q || '').trim().replace(/\s+/g, ' ').slice(0, 300).toLowerCase().replace(/^https?:\/\/(www\.)?/, '').replace(/\/+$/, ''); return crypto.subtle.digest('SHA-256', new TextEncoder().encode(k)).then(function (b) { return 'CHK-' + hex(b).slice(0, 10).toUpperCase(); }); }
   function save(b) {
     var x = inp(), I = ident(); b.disabled = true;
-    refFor(x.url || x.q).then(function (ref) { return portal('save_project', { ref: ref, snap: { u: x.url || '', q: x.q || '', t: Date.now(), w: true, proj: I.name || '', dev: I.dev || '', x: x.root || '' }, note: ('Project X-ray ' + (x.xurl || '')).slice(0, 500) }); })
-      .then(function (r) { b.disabled = false; if (r && !r.error) { b.textContent = t('saved_btn'); msg('kxc-keep-m', t('saved')); track('watch', { via: 'account' }); } else msg('kxc-keep-m', r && r.error === 'auth' ? t('expired') : tf('save_err', { e: (r && r.error) || 'error' }), 1); });
+    // k: 'chk' and at are what the dashboard (/k/cycle.js) lists under "Checks"; without them a saved X-ray never showed up there
+    refFor(x.url || x.q).then(function (ref) { var now = Date.now(); return portal('save_project', { ref: ref, snap: { k: 'chk', v: 1, u: x.url || '', q: x.q || '', at: now, t: now, w: true, proj: I.name || '', dev: I.dev || '', x: x.root || '' }, note: ('Project X-ray ' + (x.xurl || '')).slice(0, 500) }); })
+      .then(function (r) { b.disabled = false; if (r && !r.error) { S.saved = 1; b.textContent = t('saved_btn'); msg('kxc-keep-m', t('saved')); track('watch', { via: 'account' }); } else msg('kxc-keep-m', r && r.error === 'auth' ? t('expired') : tf('save_err', { e: (r && r.error) || 'error' }), 1); });
   }
   function openCase(note) {
     var x = inp(), I = ident();
@@ -438,7 +439,7 @@
   function onState(st) {
     if (!st) return;
     var prev = S.st, newRun = !prev || ((prev.input || {}).q !== (st.input || {}).q) || (prev.root && st.root && prev.root !== st.root);
-    if (newRun) { S.sid = Math.random().toString(36).slice(2, 12); S.sent = {}; S.open = /#kxc-buy$/.test(location.hash); S.seen = null; }
+    if (newRun) { S.sid = Math.random().toString(36).slice(2, 12); S.sent = {}; S.open = /#kxc-buy$/.test(location.hash); S.seen = null; S.saved = 0; }
     S.st = st;
     var el = S.el || $('xr-conv'); if (!el) return; S.el = el;
     var x = inp();

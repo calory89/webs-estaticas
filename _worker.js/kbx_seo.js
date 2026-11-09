@@ -486,6 +486,7 @@ async function sitemaps(env, B, name) {
   const NP = namedUrls(B, 'index').concat(namedUrls(B, 'project')), ND = namedUrls(B, 'developer'), lg = i => (/^https:\/\/kolaboro\.com\/(es|de|fr|ru|nl|ar|zh)\//.exec(i.loc) || [0, 'en'])[1];
   for (const l of LANGS) { S['projects-' + l] = NP.filter(i => lg(i) === l); S['developers-' + l] = ND.filter(i => lg(i) === l); }
   S.images = await imageUrls(env, B, NP, ND);
+  for (const k of Object.keys(S)) if (k !== 'images') { const seen = new Set(); S[k] = S[k].filter(i => i && i.loc && !seen.has(i.loc) && seen.add(i.loc)); }   // n20f: one URL once per sitemap (/report/sample/ was listed twice)
   if (name === 'index' || name === 'stats') {
     const keys = Object.keys(S).filter(k => S[k].length);
     if (name === 'stats') return Object.fromEntries(Object.keys(S).map(k => [k, S[k].length]));
