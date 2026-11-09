@@ -206,7 +206,7 @@ export const landHeading = lang => t(lang, 'h');
 export const histToc = lang => t(lang, 'mtoc');
 export const histHeading = lang => t(lang, 'mh');
 
-const CSS = '<style id="kland-css">.kland h3{margin:20px 0 6px;font-size:var(--k-fs-lg,1.2rem)}.kland .k-ledger{margin:10px 0}.kland ul.kl{margin:4px 0 0;padding-inline-start:20px}.kland ul.kl li{margin:2px 0}' +
+const CSS = '<style id="kland-css">.kland h3{margin:20px 0 6px;font-size:var(--k-fs-lg,1.2rem)}.kland .kl-led{display:grid;grid-template-columns:minmax(0,1fr);margin:10px 0;border-top:1px solid var(--k-line,#ccd)}.kl-led>dt{margin:0;padding:12px 0 2px;font-weight:640;color:var(--k-ink,inherit)}.kl-led>dd{margin:0;padding:0 0 12px;border-bottom:1px solid var(--k-line,#ccd);text-align:start;line-height:1.55}@media (min-width:760px){.kl-led{grid-template-columns:220px minmax(0,1fr)}.kl-led>dt{padding:12px 16px 12px 0;padding-inline:0 16px;border-bottom:1px solid var(--k-line,#ccd)}.kl-led>dd{padding:12px 0}}.kl-led .k-src{display:inline-flex;margin-inline-start:4px}.kl-led ul.kl{margin:6px 0}.kland ul.kl{margin:4px 0 0;padding-inline-start:20px}.kland ul.kl li{margin:2px 0}' +
   '.kland .lim{font-size:var(--k-fs-xs,.82rem);color:var(--k-muted,#56636F);margin:8px 0}.kland .srcl{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:var(--k-fs-xs,.82rem);margin:8px 0 0}.kland .srcl a{color:var(--k-sea,#155C75)}' +
   '.kland code{font-size:.85em;background:var(--k-sunken,#E8ECEA);padding:1px 4px;border-radius:4px;overflow-wrap:anywhere}.kland dd{overflow-wrap:anywhere}' +
   '.klh-yr{display:flex;align-items:flex-end;gap:3px;height:76px;margin:8px 0 2px;padding:0;list-style:none;max-width:560px}.klh-yr li{flex:1 1 0;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;height:100%;font-size:11px;color:var(--k-muted,#56636F)}' +
@@ -268,7 +268,7 @@ export function landHtml(ld, x, lang, fd) {
   if (!rows.length) return '';
   const q = lat != null ? '?lat=' + (+lat).toFixed(4) + '&lng=' + (+lng).toFixed(4) : '';
   return CSS + '<div class="kland"><p class="ki">' + esc(t(lang, 'intro', { d: ck, a: num(acc, lang) })) + '</p>' +
-    '<dl class="k-ledger">' + rows.map(([a, b]) => '<dt>' + esc(a) + '</dt><dd>' + b + '</dd>').join('') + '</dl>' +
+    '<dl class="kl-led">' + rows.map(([a, b]) => '<dt>' + esc(a) + '</dt><dd>' + b + '</dd>').join('') + '</dl>' +
     '<p class="lim">' + esc(t(lang, 'lim')) + '</p><p class="srcl"><a href="/hazards/' + esc(q) + '#protected">' + esc(t(lang, 'live')) + '</a><a href="/api/x/land/' + encodeURIComponent(x.id) + '">' + esc(t(lang, 'method')) + cm(lang) + esc(t(lang, 'upd', { d: fd(lr.updated) })) + '</a></p></div>';
 }
 
@@ -323,7 +323,7 @@ export function histHtml(ld, x, lang, fd) {
   if (rc && rc.last) ev.push([rc.last, t(lang, 't_last', { k: tagLabel(lang, rc.tag) || rc.tag }), null, osmU(rc.t, rc.id)]);
   ev.sort((p, q) => p[0].localeCompare(q[0]));
   const tl = ev.length ? '<h3>' + esc(t(lang, 'tl')) + '</h3><ol class="klh-tl">' + ev.map(([d, txt, y, u]) => '<li><time datetime="' + esc(y || d) + '">' + esc(y || fd(d)) + '</time>' + esc(txt) + (u ? ' ' + src(u, t(lang, 'hist')) : '') + '</li>').join('') + '</ol>' : '';
-  return CSS + '<div class="kland"><p class="ki">' + esc(t(lang, 'mintro')) + '</p><dl class="k-ledger">' + rows.map(([a, c]) => '<dt>' + esc(a) + '</dt><dd>' + c + '</dd>').join('') + '</dl>' + yr + tl +
+  return CSS + '<div class="kland"><p class="ki">' + esc(t(lang, 'mintro')) + '</p><dl class="kl-led">' + rows.map(([a, c]) => '<dt>' + esc(a) + '</dt><dd>' + c + '</dd>').join('') + '</dl>' + yr + tl +
     '<p class="lim">' + esc(t(lang, 'mlim', { a: num(acc, lang) })) + '</p><p class="srcl">' + src(s.url, t(lang, 'msrc')) + '<a href="/api/x/land/' + encodeURIComponent(x.id) + '">' + esc(t(lang, 'method')) + cm(lang) + esc(t(lang, 'upd', { d: fd(mh.updated) })) + '</a></p></div>';
 }
 
