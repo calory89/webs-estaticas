@@ -32,15 +32,15 @@
   {
    "date": "2026-11-09",
    "kind": "shipped",
-   "text": "Speed: project and developer pages are answered from the edge copy before any data is read and load their data in parallel, the open numbers page keeps its figures for a minute, and analytics waits for the first tap on the tools pages",
+   "text": "Speed: the browser no longer restyles the whole page after every small change, project and developer pages are answered from an edge copy before any data is read, sections far from the screen are drawn as you get near them, and the open numbers page keeps its figures for a minute",
    "tl": {
-    "es": "Velocidad: las páginas de proyectos y promotores se sirven desde la copia en el borde antes de leer datos y cargan sus datos en paralelo, la página de cifras abiertas guarda sus cifras un minuto y la analítica espera al primer toque en las páginas de herramientas",
-    "fr": "Vitesse : les pages projets et promoteurs sont servies depuis la copie en périphérie avant toute lecture de données et chargent leurs données en parallèle, la page des chiffres ouverts garde ses chiffres une minute et la mesure d'audience attend le premier geste sur les pages d'outils",
-    "de": "Tempo: Projekt- und Bauträgerseiten kommen aus der Kopie am Netzrand, bevor Daten gelesen werden, und laden ihre Daten parallel, die Seite mit den offenen Zahlen behält ihre Zahlen eine Minute, und die Analyse wartet auf den Werkzeugseiten bis zur ersten Berührung",
-    "nl": "Snelheid: project- en ontwikkelaarspagina's komen uit de kopie aan de rand van het netwerk voordat er data wordt gelezen en laden hun data parallel, de pagina met open cijfers bewaart haar cijfers een minuut en de statistieken wachten op de toolpagina's tot de eerste tik",
-    "ru": "Скорость: страницы проектов и застройщиков отдаются из копии на границе сети до чтения данных и загружают данные параллельно, страница открытых цифр хранит цифры одну минуту, а аналитика на страницах инструментов ждёт первого касания",
-    "zh": "速度：项目和开发商页面在读取数据之前先由边缘副本响应，并行加载数据；公开数据页面的数字保留一分钟；工具页面的统计代码等到首次点击后才加载",
-    "ar": "السرعة: صفحات المشاريع والمطورين تُقدَّم من النسخة المحفوظة على حافة الشبكة قبل قراءة أي بيانات وتُحمَّل بياناتها بالتوازي، وصفحة الأرقام المفتوحة تحتفظ بأرقامها دقيقة واحدة، والتحليلات تنتظر أول لمسة في صفحات الأدوات"
+    "es": "Velocidad: el navegador ya no recalcula los estilos de toda la página tras cada pequeño cambio, las páginas de proyectos y promotores se sirven desde una copia en el borde antes de leer datos, las secciones lejos de la pantalla se dibujan al acercarse y la página de cifras abiertas guarda sus cifras un minuto",
+    "fr": "Vitesse : le navigateur ne recalcule plus les styles de toute la page après chaque petit changement, les pages projets et promoteurs sont servies depuis une copie en périphérie avant toute lecture de données, les sections loin de l'écran sont dessinées à l'approche et la page des chiffres ouverts garde ses chiffres une minute",
+    "de": "Tempo: Der Browser berechnet nicht mehr nach jeder kleinen Änderung die Stile der ganzen Seite neu, Projekt- und Bauträgerseiten kommen aus einer Kopie am Netzrand, bevor Daten gelesen werden, Abschnitte fern vom Bildschirm werden erst beim Näherkommen gezeichnet, und die Seite mit den offenen Zahlen behält ihre Zahlen eine Minute",
+    "nl": "Snelheid: de browser berekent niet meer na elke kleine wijziging de stijlen van de hele pagina opnieuw, project- en ontwikkelaarspagina's komen uit een kopie aan de rand van het netwerk voordat er data wordt gelezen, secties ver van het scherm worden pas getekend als je dichtbij komt, en de pagina met open cijfers bewaart haar cijfers een minuut",
+    "ru": "Скорость: браузер больше не пересчитывает стили всей страницы после каждого небольшого изменения, страницы проектов и застройщиков отдаются из копии на границе сети до чтения данных, разделы вдали от экрана отрисовываются при приближении, а страница открытых цифр хранит цифры одну минуту",
+    "zh": "速度：浏览器不再在每次小改动后重新计算整页样式；项目和开发商页面在读取数据之前先由边缘副本响应；远离屏幕的部分在接近时才绘制；公开数据页面的数字保留一分钟",
+    "ar": "السرعة: المتصفح لم يعد يعيد حساب أنماط الصفحة كلها بعد كل تغيير صغير، وصفحات المشاريع والمطورين تُقدَّم من نسخة على حافة الشبكة قبل قراءة أي بيانات، والأقسام البعيدة عن الشاشة تُرسم عند الاقتراب منها، وصفحة الأرقام المفتوحة تحتفظ بأرقامها دقيقة واحدة"
    }
   },
   {
