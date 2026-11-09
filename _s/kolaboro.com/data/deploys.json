@@ -1,6 +1,19 @@
 {
  "deploys": [
   {
+   "at": "2026-11-09T09:29:40Z",
+   "commit": "223065c762a6cefc91b65a8e0e3a1620f7a3424e",
+   "checks_passed": 32,
+   "checks_total": 32,
+   "failed": [],
+   "run": "https://github.com/calory89/webs-estaticas/actions/runs/42593497043",
+   "result": "pass",
+   "wait_s": 82,
+   "changes": [
+    "223065c762a6"
+   ]
+  },
+  {
    "at": "2026-11-09T09:24:38Z",
    "commit": "43e67baa94483643062f5e099b69333306d1fde6",
    "checks_passed": 32,
@@ -2736,19 +2749,6 @@
    "changes": [
     "70ee1ef60043"
    ]
-  },
-  {
-   "at": "2026-11-03T14:18:20Z",
-   "commit": "c8c0ca38330bce71738ed3221b6e7780ea8175d3",
-   "checks_passed": 32,
-   "checks_total": 32,
-   "failed": [],
-   "run": "https://github.com/calory89/webs-estaticas/actions/runs/41651374105",
-   "result": "pass",
-   "wait_s": 163,
-   "changes": [
-    "c8c0ca38330b"
-   ]
   }
  ],
  "drills": [],
@@ -2756,13 +2756,13 @@
  "canary": "Cloudflare Pages sends each push to all visitors at once and offers no percentage canary, so none is claimed. A bad push can be visible for a few minutes until the rollback is live.",
  "rollback_mode": "Rollback: a git commit restoring the files changed since the last passing commit; Pages deploys it in about 1 to 2 minutes. An instant Cloudflare API rollback is built in but needs a Pages-scoped token, not configured yet.",
  "latest_checks": {
-  "at": "2026-11-09T09:24:38.148Z",
-  "commit": "43e67baa94483643062f5e099b69333306d1fde6",
+  "at": "2026-11-09T09:29:40.835Z",
+  "commit": "223065c762a6cefc91b65a8e0e3a1620f7a3424e",
   "checks": [
    {
     "name": "build: live commit",
     "ok": true,
-    "detail": "live 43e67baa9448"
+    "detail": "live 223065c762a6"
    },
    {
     "name": "page /",
@@ -2921,7 +2921,7 @@
    }
   ]
  },
- "last_checked": "43e67baa94483643062f5e099b69333306d1fde6",
- "last_good": "43e67baa94483643062f5e099b69333306d1fde6",
- "updated": "2026-11-09T09:24:38Z"
+ "last_checked": "223065c762a6cefc91b65a8e0e3a1620f7a3424e",
+ "last_good": "223065c762a6cefc91b65a8e0e3a1620f7a3424e",
+ "updated": "2026-11-09T09:29:40Z"
 }
