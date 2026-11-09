@@ -39,11 +39,14 @@ const FT2 = {
 const esc = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const pre = l => l === 'en' ? '' : '/' + l;
 function t(lang, k, v) { const s = (FT2[lang] && FT2[lang][k]) || (FT[lang] && FT[lang][k]) || FT2.en[k] || FT.en[k] || k; return v ? s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m) : s; }
-const nf = (n, lang) => { try { return new Intl.NumberFormat(LOCALE[lang] || 'en-GB').format(n); } catch (e) { return String(n); } };
+// n20p: one formatter per locale and options for the life of the isolate (building one per call cost most of the render time)
+const dtf = (L, o) => { const c = (globalThis.__kbFmt = globalThis.__kbFmt || {}), k = 'd' + L + JSON.stringify(o || 0); return c[k] || (c[k] = new Intl.DateTimeFormat(L, o)); };
+const nmf = (L, o) => { const c = (globalThis.__kbFmt = globalThis.__kbFmt || {}), k = 'n' + L + JSON.stringify(o || 0); return c[k] || (c[k] = new Intl.NumberFormat(L, o)); };
+const nf = (n, lang) => { try { return nmf(LOCALE[lang] || 'en-GB').format(n); } catch (e) { return String(n); } };
 const pct = (x, lang) => x == null ? '' : nf(Math.round(x * 100), lang) + '%';
 const ym = i => { const y = Math.floor((i - 1) / 12), m = (i - 1) % 12 + 1; return y + '-' + String(m).padStart(2, '0'); };
-function monthName(i, lang) { const s = ym(i); try { return new Intl.DateTimeFormat(LOCALE[lang] || 'en-GB', { month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(Date.UTC(+s.slice(0, 4), +s.slice(5) - 1, 1))); } catch (e) { return s; } }
-function dayName(d, lang) { if (!d) return ''; try { return new Intl.DateTimeFormat(LOCALE[lang] || 'en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(String(d).slice(0, 10) + 'T00:00:00Z')); } catch (e) { return String(d).slice(0, 10); } }
+function monthName(i, lang) { const s = ym(i); try { return dtf(LOCALE[lang] || 'en-GB', { month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(Date.UTC(+s.slice(0, 4), +s.slice(5) - 1, 1))); } catch (e) { return s; } }
+function dayName(d, lang) { if (!d) return ''; try { return dtf(LOCALE[lang] || 'en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(String(d).slice(0, 10) + 'T00:00:00Z')); } catch (e) { return String(d).slice(0, 10); } }
 function mi(s) {   // a promised date to a month index (year*12+month); quarters, halves and years read as their last month
   s = String(s || ''); let m;
   if ((m = s.match(/^(\d{4})-Q([1-4])$/i))) return +m[1] * 12 + +m[2] * 3;

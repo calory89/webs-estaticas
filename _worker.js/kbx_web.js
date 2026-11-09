@@ -47,7 +47,10 @@ export function regDomain(u) {
 }
 const DAY = 86400000;
 const daysTo = (d, today) => Math.round((Date.parse(d + 'T00:00:00Z') - Date.parse(today + 'T00:00:00Z')) / DAY);
-function fdt(d, lang) { try { return new Intl.DateTimeFormat(LOCALE[lang] || 'en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(d + 'T00:00:00Z')); } catch (e) { return d; } }
+// n20p: one formatter per locale and options for the life of the isolate (building one per call cost most of the render time)
+const dtf = (L, o) => { const c = (globalThis.__kbFmt = globalThis.__kbFmt || {}), k = 'd' + L + JSON.stringify(o || 0); return c[k] || (c[k] = new Intl.DateTimeFormat(L, o)); };
+const nmf = (L, o) => { const c = (globalThis.__kbFmt = globalThis.__kbFmt || {}), k = 'n' + L + JSON.stringify(o || 0); return c[k] || (c[k] = new Intl.NumberFormat(L, o)); };
+function fdt(d, lang) { try { return dtf(LOCALE[lang] || 'en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(d + 'T00:00:00Z')); } catch (e) { return d; } }
 const pre = l => l === 'en' ? '' : '/' + l;
 // last N checked days: how many had no answer or a server error
 function lastN(h, n) { const s = (h.h || '').replace(/-/g, ''); const w = s.slice(-n); return { n: w.length, bad: [...w].filter(c => c === '0' || c === 'x').length }; }

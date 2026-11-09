@@ -189,10 +189,13 @@ function bldHtml(bd, id, lang, fd, num) {
   return h;
 }
 
+// n20p: one formatter per locale and options for the life of the isolate (building one per call cost most of the render time)
+const dtf = (L, o) => { const c = (globalThis.__kbFmt = globalThis.__kbFmt || {}), k = 'd' + L + JSON.stringify(o || 0); return c[k] || (c[k] = new Intl.DateTimeFormat(L, o)); };
+const nmf = (L, o) => { const c = (globalThis.__kbFmt = globalThis.__kbFmt || {}), k = 'n' + L + JSON.stringify(o || 0); return c[k] || (c[k] = new Intl.NumberFormat(L, o)); };
 // inside the "from space" section of a named page: sp = spaceData(), opt = { cloudy months, months } from the optical series
 export function spaceHtml(sp, id, lang, fd, ms, opt) {
   if (!sp) return '';
-  const num = v => { try { return new Intl.NumberFormat(lang === 'en' ? 'en-GB' : lang).format(v); } catch (e) { return String(v); } };
+  const num = v => { try { return nmf(lang === 'en' ? 'en-GB' : lang).format(v); } catch (e) { return String(v); } };
   const a = radarHtml(sp.radar, id, lang, fd, ms, opt), b = bldHtml(sp.bld, id, lang, fd, num);
   const lk = '<p class="ksat-src"><a href="/tools/site-visit/?p=' + encodeURIComponent(id) + (lang !== 'en' ? '&amp;lang=' + lang : '') + '">' + esc(t(lang, 'sv')) + '</a></p>';
   return a || b ? CSS + '<div class="kspace">' + a + b + lk + '</div>' : '';

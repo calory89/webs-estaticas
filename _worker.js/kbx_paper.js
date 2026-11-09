@@ -170,8 +170,11 @@ const N = {
     pl_rule_mia: 'المعروض: تصاريح بتكلفة إجمالية مليون دولار أمريكي أو أكثر. مدينة ميامي فقط.', pl_cost: 'التكلفة', pl_load: 'جارٍ الاستعلام من السجل', pl_live_none: 'لا سجل ضمن 200 م اليوم.', pl_live_err: 'السجل لا يستجيب الآن. حاول لاحقًا.', pl_stale: 'آخر إجابة صالحة، بتاريخ {d}.' }
 };
 const nt = (l, k, v) => { let s = (N[l] && N[l][k] != null ? N[l][k] : N.en[k]); if (v && typeof s === 'string') s = s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m); return s; };
-const fdt = (d, l) => { try { return new Intl.DateTimeFormat(LOC[l] || 'en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(String(d).slice(0, 10) + 'T00:00:00Z')); } catch (e) { return String(d || ''); } };
-const nf = (v, l) => { try { return new Intl.NumberFormat(LOC[l] || 'en-GB', { maximumFractionDigits: 0 }).format(v); } catch (e) { return String(v); } };
+// n20p: one formatter per locale and options for the life of the isolate (building one per call cost most of the render time)
+const dtf = (L, o) => { const c = (globalThis.__kbFmt = globalThis.__kbFmt || {}), k = 'd' + L + JSON.stringify(o || 0); return c[k] || (c[k] = new Intl.DateTimeFormat(L, o)); };
+const nmf = (L, o) => { const c = (globalThis.__kbFmt = globalThis.__kbFmt || {}), k = 'n' + L + JSON.stringify(o || 0); return c[k] || (c[k] = new Intl.NumberFormat(L, o)); };
+const fdt = (d, l) => { try { return dtf(LOC[l] || 'en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(String(d).slice(0, 10) + 'T00:00:00Z')); } catch (e) { return String(d || ''); } };
+const nf = (v, l) => { try { return nmf(LOC[l] || 'en-GB', { maximumFractionDigits: 0 }).format(v); } catch (e) { return String(v); } };
 const hostOf = u => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch (e) { return ''; } };
 const ia = (ts, url) => 'https://web.archive.org/web/' + ts + '/' + url;
 const ltr = t => '<bdi dir="ltr">' + esc(t) + '</bdi>';
@@ -190,7 +193,7 @@ function chart(pts, cur, x, url, lang) {
   const W = 640, H = 220, L = 74, R = 16, TP = 14, B = 30;
   const X = t => L + (t - t0) / (t1 - t0) * (W - L - R), Y = v => TP + (1 - (v - v0) / (v1 - v0)) * (H - TP - B);
   const ticks = [v0 + (v1 - v0) * 0.1, (v0 + v1) / 2, v1 - (v1 - v0) * 0.1];
-  const short = v => { try { return new Intl.NumberFormat(LOC[lang] || 'en-GB', { notation: 'compact', maximumFractionDigits: 2 }).format(v); } catch (e) { return String(Math.round(v)); } };
+  const short = v => { try { return nmf(LOC[lang] || 'en-GB', { notation: 'compact', maximumFractionDigits: 2 }).format(v); } catch (e) { return String(Math.round(v)); } };
   const line = P.map((p, i) => (i ? 'L' : 'M') + X(T[i]).toFixed(1) + ' ' + Y(V[i]).toFixed(1)).join(' ');
   return '<figure class="kph-fig"><svg viewBox="0 0 ' + W + ' ' + H + '" role="img" aria-label="' + esc(nt(lang, 'ph_chart', { cur })) + '" class="kph-svg">' +
     ticks.map(v => '<line x1="' + L + '" x2="' + (W - R) + '" y1="' + Y(v).toFixed(1) + '" y2="' + Y(v).toFixed(1) + '" class="kph-grid"/><text x="' + (L - 8) + '" y="' + (Y(v) + 4).toFixed(1) + '" text-anchor="end" class="kph-ax">' + esc(short(v)) + '</text>').join('') +

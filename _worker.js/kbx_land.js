@@ -214,7 +214,10 @@ const CSS = '<style id="kland-css">.kland h3{margin:20px 0 6px;font-size:var(--k
   '.klh-tl{list-style:none;margin:8px 0;padding:0;border-inline-start:2px solid var(--k-line,#ccd)}.klh-tl li{position:relative;margin:0 0 8px;padding-inline-start:16px}.klh-tl li::before{content:"";position:absolute;inset-inline-start:-6px;top:.45em;width:10px;height:10px;border-radius:50%;background:var(--k-surface,#fff);border:2px solid var(--k-sea,#155C75)}' +
   '.klh-tl time{font-variant-numeric:tabular-nums;font-weight:600;margin-inline-end:6px}</style>';
 
-const num = (v, lang) => { try { return new Intl.NumberFormat(lang === 'en' ? 'en-GB' : lang).format(v); } catch (e) { return String(v); } };
+// n20p: one formatter per locale and options for the life of the isolate (building one per call cost most of the render time)
+const dtf = (L, o) => { const c = (globalThis.__kbFmt = globalThis.__kbFmt || {}), k = 'd' + L + JSON.stringify(o || 0); return c[k] || (c[k] = new Intl.DateTimeFormat(L, o)); };
+const nmf = (L, o) => { const c = (globalThis.__kbFmt = globalThis.__kbFmt || {}), k = 'n' + L + JSON.stringify(o || 0); return c[k] || (c[k] = new Intl.NumberFormat(L, o)); };
+const num = (v, lang) => { try { return nmf(lang === 'en' ? 'en-GB' : lang).format(v); } catch (e) { return String(v); } };
 const src = (href, label) => okU(href) ? '<a class="k-src" href="' + esc(href) + '" rel="noopener" target="_blank">' + esc(label) + '</a>' : '';
 
 // ------------------------------------------------------------------------------------------------ #land

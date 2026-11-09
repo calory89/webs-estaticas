@@ -131,12 +131,15 @@ const CSS = '<style id="ksee-css">.ksee h3{margin:20px 0 6px;font-size:var(--k-f
   '.ksee-lg .p{background:#FF5B14;border:2px solid #fff;border-radius:50%;width:10px;height:10px;box-shadow:0 0 0 1px #13222E}.ksee .k-btn{min-height:44px}.ksee-bar{display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;margin:8px 0}' +
   ':root[data-theme=dark] .ksee-lg .a{border-color:#E6ECEF}.ksee-map summary{list-style:none}.ksee-map summary::-webkit-details-marker{display:none}.ksee-map summary::after,.ksee-map summary::before{content:none!important;display:none!important}</style>';
 
+// n20p: one formatter per locale and options for the life of the isolate (building one per call cost most of the render time)
+const dtf = (L, o) => { const c = (globalThis.__kbFmt = globalThis.__kbFmt || {}), k = 'd' + L + JSON.stringify(o || 0); return c[k] || (c[k] = new Intl.DateTimeFormat(L, o)); };
+const nmf = (L, o) => { const c = (globalThis.__kbFmt = globalThis.__kbFmt || {}), k = 'n' + L + JSON.stringify(o || 0); return c[k] || (c[k] = new Intl.NumberFormat(L, o)); };
 // inside the named project page: section "street level and 3D"
 export function seeHtml(sd, id, lang, fd, name) {
   if (!sd) return '';
   const php = sd.ph && sd.ph.projects && sd.ph.projects[id], d3 = sd.d3 && sd.d3.projects && sd.d3.projects[id];
   if (!php && !d3) return '';
-  const num = v => { try { return new Intl.NumberFormat(lang === 'en' ? 'en-GB' : lang).format(v); } catch (e) { return String(v); } };
+  const num = v => { try { return nmf(lang === 'en' ? 'en-GB' : lang).format(v); } catch (e) { return String(v); } };
   const lat = d3 ? d3.lat : null, lng = d3 ? d3.lng : null, dec = d3 ? d3.dec : 3, acc = accM(dec);
   let h = CSS + '<div class="ksee">';
   if (php) {

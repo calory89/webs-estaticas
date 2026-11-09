@@ -183,9 +183,12 @@ const S = {
 const t = (lang, k, v) => { const s = (S[lang] && S[lang][k] != null) ? S[lang][k] : S.en[k]; return v && typeof s === 'string' ? s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m) : s; };
 export const moneyToc = lang => t(lang, 'toc');
 export const moneyHeading = lang => t(lang, 'h');
-const fdt = (d, l) => { try { return new Intl.DateTimeFormat(LOC[l] || 'en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(String(d).slice(0, 10) + 'T00:00:00Z')); } catch (e) { return String(d || ''); } };
-const fnum = (n, l) => { try { return new Intl.NumberFormat(LOC[l] || 'en-GB', { maximumFractionDigits: 0 }).format(n); } catch (e) { return String(n); } };
-const fcur = (n, cur, l) => { if (n == null) return '-'; try { return new Intl.NumberFormat(LOC[l] || 'en-GB', { style: 'currency', currency: cur, maximumFractionDigits: 0 }).format(n); } catch (e) { return (cur || '') + ' ' + fnum(n, l); } };
+// n20p: one formatter per locale and options for the life of the isolate (building one per call cost most of the render time)
+const dtf = (L, o) => { const c = (globalThis.__kbFmt = globalThis.__kbFmt || {}), k = 'd' + L + JSON.stringify(o || 0); return c[k] || (c[k] = new Intl.DateTimeFormat(L, o)); };
+const nmf = (L, o) => { const c = (globalThis.__kbFmt = globalThis.__kbFmt || {}), k = 'n' + L + JSON.stringify(o || 0); return c[k] || (c[k] = new Intl.NumberFormat(L, o)); };
+const fdt = (d, l) => { try { return dtf(LOC[l] || 'en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(String(d).slice(0, 10) + 'T00:00:00Z')); } catch (e) { return String(d || ''); } };
+const fnum = (n, l) => { try { return nmf(LOC[l] || 'en-GB', { maximumFractionDigits: 0 }).format(n); } catch (e) { return String(n); } };
+const fcur = (n, cur, l) => { if (n == null) return '-'; try { return nmf(LOC[l] || 'en-GB', { style: 'currency', currency: cur, maximumFractionDigits: 0 }).format(n); } catch (e) { return (cur || '') + ' ' + fnum(n, l); } };
 // values go in as plain text, then numbers are wrapped in <bdi> so they read left to right on Arabic pages
 const fill = (lang, k, v) => { const raw = {}, mark = {}; let i = 0; for (const [a, b] of Object.entries(v || {})) { const key = '\u0001' + (i++) + '\u0002'; raw[a] = key; mark[key] = b; } let s = esc(t(lang, k, raw)); for (const [key, b] of Object.entries(mark)) s = s.split(esc(key)).join(typeof b === 'object' && b && b.html ? b.html : ltr(b)); return s; };
 const H = s => ({ html: s });

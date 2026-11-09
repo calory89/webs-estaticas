@@ -136,16 +136,19 @@ function iso(d) {   // any date we store, to YYYY-MM-DD (or null)
   m = s.match(MON); if (m) return m[3] + '-' + String(MI[m[2]]).padStart(2, '0') + '-' + m[1].padStart(2, '0');
   return null;
 }
+// n20p: one formatter per locale and options for the life of the isolate (building one per call cost most of the render time)
+const dtf = (L, o) => { const c = (globalThis.__kbFmt = globalThis.__kbFmt || {}), k = 'd' + L + JSON.stringify(o || 0); return c[k] || (c[k] = new Intl.DateTimeFormat(L, o)); };
+const nmf = (L, o) => { const c = (globalThis.__kbFmt = globalThis.__kbFmt || {}), k = 'n' + L + JSON.stringify(o || 0); return c[k] || (c[k] = new Intl.NumberFormat(L, o)); };
 function fd(d, lang) {   // a date or period for display: 2027-Q2, 2028-08, 2027, 2026-11-05, "5 Nov 2026"
   if (d == null || d === '') return '';
   const s = String(d), L = LOCALE[lang] || 'en-GB';
   let m = s.match(/^(\d{4})-Q([1-4])$/i); if (m) return 'Q' + m[2] + ' ' + m[1];
   m = s.match(/^(\d{4})-H([12])$/i); if (m) return 'H' + m[2] + ' ' + m[1];
-  m = s.match(/^(\d{4})-(\d{2})$/); if (m) { try { return new Intl.DateTimeFormat(L, { month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(Date.UTC(+m[1], +m[2] - 1, 1))); } catch (e) { return s; } }
-  const i = iso(s); if (i) { try { return new Intl.DateTimeFormat(L, { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(i + 'T00:00:00Z')); } catch (e) { return i; } }
+  m = s.match(/^(\d{4})-(\d{2})$/); if (m) { try { return dtf(L, { month: 'long', year: 'numeric', timeZone: 'UTC' }).format(new Date(Date.UTC(+m[1], +m[2] - 1, 1))); } catch (e) { return s; } }
+  const i = iso(s); if (i) { try { return dtf(L, { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }).format(new Date(i + 'T00:00:00Z')); } catch (e) { return i; } }
   return s;
 }
-const num = (n, lang) => { try { return new Intl.NumberFormat(LOCALE[lang] || 'en-GB').format(n); } catch (e) { return String(n); } };
+const num = (n, lang) => { try { return nmf(LOCALE[lang] || 'en-GB').format(n); } catch (e) { return String(n); } };
 // a source link: our own pages link plainly, other sites open in a new tab with nofollow
 const srcA = (u, label) => typeof u === 'string' && (u.startsWith(ORIGIN + '/') || /^\/[a-z]/.test(u)) ? ' <a class="src" href="' + esc(u.replace(ORIGIN, '')) + '">' + esc(label || 'kolaboro.com') + '</a>'
   : okHttp(u) ? ' <a class="src" href="' + esc(fixU(u)) + '" rel="nofollow noopener" target="_blank">' + esc(label || host(u)) + '</a>' : '';
@@ -636,20 +639,25 @@ export async function render(ix, kind, key, lang, env, ctx) {   // exported for 
     // n20p: the thirteen reads below are independent, so they run together (they used to run one after another, which made a page
     // that was not in the edge cache take 1 to 5 s on a fresh isolate). Each still fails on its own without breaking the page.
     const soft = (f, d) => (async () => { try { return await f(); } catch (e) { return d; } })();
-    let phErr = false;
+    // the two database reads wait 2.5 s at most; a page built without an answer is shown but not kept in the cache
+    let phErr = false, dbSlow = false; const tm = {}, t0 = Date.now();
+    const timed = (n, pr) => pr.then(v => { tm[n] = Date.now() - t0; return v; });
+    const capped = (n, pr, d) => timed(n, Promise.race([pr, new Promise(r => setTimeout(() => { dbSlow = true; r(d); }, 2500))]));
+    const dbDone = { rv: false, dr: false };
     let [reviews, replies, ph, sat, fcs, web, coh, paper, see, money, land] = await Promise.all([
-      soft(async () => { const k = new Request(ORIGIN + '/__named_rev/v1/' + x.id), hit = await caches.default.match(k); if (hit) return await hit.json(); const rv = await rpc('kolaboro_t_reports_public', { p_project: x.id }); const p = caches.default.put(k, new Response(JSON.stringify(rv || {}), { headers: { 'cache-control': 'max-age=1800' } })); if (ctx && ctx.waitUntil) ctx.waitUntil(p.catch(() => {})); return rv; }, null),
-      soft(async () => { const k = new Request(ORIGIN + '/__named_dr/v1/' + x.id + '/' + (await repliesPublished())), hit = await caches.default.match(k); if (hit) return await hit.json(); const rp = (await rpc('kolaboro_devreply_public', { p_id: x.id })) || []; const p = caches.default.put(k, new Response(JSON.stringify(rp), { headers: { 'cache-control': 'max-age=3600' } })); if (ctx && ctx.waitUntil) ctx.waitUntil(p.catch(() => {})); return rp; }, []),
-      (async () => { try { return await phSummary(env, x.id); } catch (e) { phErr = true; return null; } })(),
-      soft(() => satData(env), null),
-      (async () => { let fc = null, fdg = null; try { fc = await fcData(env); fdg = x.dvs ? await fcDevGroup(env, x.dvs) : null; } catch (e) { fc = null; } return { fc, fdg }; })(),
-      soft(() => webData(env), null),
-      soft(() => cohortCard(env, lang, x.id), ''),
-      soft(() => paperData(env), null),   // n18d
-      soft(() => seeData(env), null),
-      soft(() => moneyData(env), null),   // n19b
-      soft(() => landData(env), null),   // n19c
+      capped('rv', soft(async () => { const k = new Request(ORIGIN + '/__named_rev/v1/' + x.id), hit = await caches.default.match(k); if (hit) return await hit.json(); const rv = await rpc('kolaboro_t_reports_public', { p_project: x.id }); const p = caches.default.put(k, new Response(JSON.stringify(rv || {}), { headers: { 'cache-control': 'max-age=1800' } })); if (ctx && ctx.waitUntil) ctx.waitUntil(p.catch(() => {})); return rv; }, null).then(v => { dbDone.rv = true; return v; }), null),
+      capped('dr', soft(async () => { const k = new Request(ORIGIN + '/__named_dr/v1/' + x.id + '/' + (await repliesPublished())), hit = await caches.default.match(k); if (hit) return await hit.json(); const rp = (await rpc('kolaboro_devreply_public', { p_id: x.id })) || []; const p = caches.default.put(k, new Response(JSON.stringify(rp), { headers: { 'cache-control': 'max-age=3600' } })); if (ctx && ctx.waitUntil) ctx.waitUntil(p.catch(() => {})); return rp; }, []).then(v => { dbDone.dr = true; return v; }), []),
+      timed('ph', (async () => { try { return await phSummary(env, x.id); } catch (e) { phErr = true; return null; } })()),
+      timed('sat', soft(() => satData(env), null)),
+      timed('fc', (async () => { let fc = null, fdg = null; try { fc = await fcData(env); fdg = x.dvs ? await fcDevGroup(env, x.dvs) : null; } catch (e) { fc = null; } return { fc, fdg }; })()),
+      timed('web', soft(() => webData(env), null)),
+      timed('coh', soft(() => cohortCard(env, lang, x.id), '')),
+      timed('paper', soft(() => paperData(env), null)),   // n18d
+      timed('see', soft(() => seeData(env), null)),
+      timed('money', soft(() => moneyData(env), null)),   // n19b
+      timed('land', soft(() => landData(env), null)),   // n19c
     ]);
+    dbSlow = dbSlow && !(dbDone.rv && dbDone.dr);
     const fc = fcs.fc, fdg = fcs.fdg;
     // n19f: sections computed from a pin that was later corrected are hidden for that project until the data is rebuilt with the
     // new pin. PIN_HOLD lists hand corrections (date of the fix); data files that store the pin they used are also compared with
@@ -658,7 +666,8 @@ export async function render(ix, kind, key, lang, env, ctx) {   // exported for 
     if (hold) { sat = null; see = null; money = null; }
     if (hold || off(land && land.lr && land.lr.projects && land.lr.projects[x.id] && land.lr.projects[x.id].pin)) land = null;
     if (paper && paper.pl && paper.pl.projects && paper.pl.projects[x.id] && (hold || off(paper.pl.projects[x.id].pin))) paper = Object.assign({}, paper, { pl: Object.assign({}, paper.pl, { projects: Object.assign({}, paper.pl.projects, { [x.id]: undefined }) }) });
-    const pg = projectPage(ix, x, lang, { reviews, replies, ph, sat, fc, fdg, web, coh, paper, see, money, land }); if (phErr) pg.nocache = true;   // page history not loaded: do not cache
+    const pg = projectPage(ix, x, lang, { reviews, replies, ph, sat, fc, fdg, web, coh, paper, see, money, land }); if (phErr || dbSlow) pg.nocache = true;   // page history not loaded, or the database did not answer in time: do not cache
+    pg.tm = Object.keys(tm).map(k => k + ';dur=' + tm[k]).join(', ');
     return pg;
   }
   const dv = ix.devs.get(key); if (!dv) return null;
@@ -713,7 +722,7 @@ export async function handle(req, u, env, ctx, shell) {
   }
   const html = await assemble(pg, lang, sh), lm = new Date((pg.lastmod || '2026-11-01') + 'T00:00:00Z').toUTCString(), t3 = Date.now();
   if (!pg.nocache) try { const put = fastPut(fk, html, await dataVer(ix, env, kind, key), lm); if (ctx && ctx.waitUntil) ctx.waitUntil(put.catch(() => {})); } catch (e) {}
-  return new Response(html, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'x-named-cache': 'miss', 'cache-control': 'no-cache', 'last-modified': lm, 'server-timing': 'data;dur=' + (t1 - t0) + ', render;dur=' + (t2 - t1) + ', page;dur=' + (t3 - t2) } });
+  return new Response(html, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'x-named-cache': 'miss', 'cache-control': 'no-cache', 'last-modified': lm, 'server-timing': 'data;dur=' + (t1 - t0) + ', render;dur=' + (t2 - t1) + ', page;dur=' + (t3 - t2) + (pg.tm ? ', ' + pg.tm : '') } });
 }
 const FAST_FRESH = 60000, FAST_TTL = 21600, REFRESHING = new Set();
 // the data version a page was built from: any change here means the page must be rendered again
