@@ -41,8 +41,9 @@ import * as m_paper from './kbx_paper.js'; // n18d: prices over time, planning r
 import * as m_cohort from './kbx_cohort.js'; // batch 18 (n18e): buyer groups per project, anonymous intro relay (behind KB_COHORT flag + migration)
 import * as m_web from './kbx_web.js'; // batch 18 (n18a): developer website health, identifiers shared between developer websites
 import * as m_see from './kbx_see.js'; // batch 18 (n18c): street-level photos near the pin, 3D view of the site
+import * as m_money from './kbx_money.js'; // batch 19 (n19b): short lets (Inside Airbnb) and recorded sale prices (official registers) within 1 km
 import * as m_stage from './kbx_stage.js'; // n18b (batch 18): construction stage estimate per month (rules over optical, radar, footprints, promised dates)
-const MODS = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, m_ship, m_data, m_disc, m_qa, m_ins, m_live, m_acct, m_pay, m_fc, m_space, m_fraud, m_paper, m_web, m_cohort, m_stage, m_see];
+const MODS = [a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z, m_ship, m_data, m_disc, m_qa, m_ins, m_live, m_acct, m_pay, m_fc, m_space, m_fraud, m_paper, m_web, m_cohort, m_stage, m_see, m_money];
 export async function route(req, u, env, ctx) {
   for (const m of MODS) if (m.PATHS && m.PATHS.test(u.pathname)) return m.handle(req, u, env, ctx);
   return new Response(JSON.stringify({ error: 'not found' }), { status: 404, headers: { 'content-type': 'application/json' } });

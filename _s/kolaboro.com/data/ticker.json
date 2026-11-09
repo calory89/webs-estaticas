@@ -4,6 +4,34 @@
   {
    "date": "2026-11-09",
    "kind": "shipped",
+   "text": "Short-let reality check on 28 project pages: Inside Airbnb listings within 1 km, median nightly price and their occupancy estimate, next to any rental yield the page we track prints",
+   "tl": {
+    "es": "Comprobación del alquiler turístico en 28 proyectos: anuncios de Inside Airbnb a menos de 1 km, precio mediano por noche y su estimación de ocupación, junto a la rentabilidad que imprime la página que seguimos",
+    "fr": "Vérification des locations courtes sur 28 projets : annonces Inside Airbnb à moins de 1 km, prix médian par nuit et leur estimation d'occupation, à côté du rendement imprimé sur la page suivie",
+    "de": "Realitätscheck Kurzzeitvermietung auf 28 Projektseiten: Inside-Airbnb-Inserate im Umkreis von 1 km, Medianpreis pro Nacht und deren Belegungsschätzung, neben der Rendite auf der verfolgten Seite",
+    "nl": "Realiteitscheck kortetermijnverhuur op 28 projectpagina's: Inside Airbnb-advertenties binnen 1 km, mediane nachtprijs en hun bezettingsschatting, naast het rendement op de gevolgde pagina",
+    "ru": "Проверка краткосрочной аренды на 28 страницах проектов: объявления Inside Airbnb в радиусе 1 км, медианная цена за ночь и их оценка загрузки рядом с доходностью, указанной на отслеживаемой странице",
+    "zh": "28 个项目页新增短租现实核对：1 公里内的 Inside Airbnb 房源、每晚价格中位数及其入住率估算，与我们跟踪页面上印出的收益率并列",
+    "ar": "التحقق من واقع الإيجار القصير في 28 صفحة مشروع: إعلانات Inside Airbnb ضمن 1 كم، ووسيط سعر الليلة وتقديرهم للإشغال، بجانب أي عائد إيجار تطبعه الصفحة التي نتابعها"
+   }
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "data",
+   "text": "Recorded sale prices within 1 km on 14 project pages: HM Land Registry (England), DVF (France) and NYC rolling sales, medians and price per m2 next to the developer's own headline price",
+   "tl": {
+    "es": "Precios de venta registrados a menos de 1 km en 14 proyectos: HM Land Registry (Inglaterra), DVF (Francia) y ventas de Nueva York, medianas y precio por m2 junto al precio del promotor",
+    "fr": "Prix de vente enregistrés à moins de 1 km sur 14 projets : HM Land Registry (Angleterre), DVF (France) et ventes de New York, médianes et prix au m2 à côté du prix affiché par le promoteur",
+    "de": "Registrierte Verkaufspreise im Umkreis von 1 km auf 14 Projektseiten: HM Land Registry (England), DVF (Frankreich) und New Yorker Verkäufe, Mediane und Preis pro m2 neben dem Preis des Bauträgers",
+    "nl": "Geregistreerde verkoopprijzen binnen 1 km op 14 projectpagina's: HM Land Registry (Engeland), DVF (Frankrijk) en verkopen in New York, medianen en prijs per m2 naast de prijs van de ontwikkelaar",
+    "ru": "Зарегистрированные цены продаж в радиусе 1 км на 14 страницах проектов: HM Land Registry (Англия), DVF (Франция) и продажи в Нью-Йорке, медианы и цена за м2 рядом с ценой застройщика",
+    "zh": "14 个项目页新增 1 公里内登记成交价：英国土地登记局（英格兰）、法国 DVF 和纽约成交记录，中位数和每平方米价格与开发商自己的标题价格并列",
+    "ar": "أسعار البيع المسجلة ضمن 1 كم في 14 صفحة مشروع: HM Land Registry (إنجلترا) وDVF (فرنسا) ومبيعات نيويورك، الوسيط والسعر للمتر المربع بجانب السعر الرئيسي للمطوّر"
+   }
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "shipped",
    "text": "Project and developer pages are easier to read: identical price copies merged into one row, the overdue date sits next to the date it is about, correct singular wording, Arabic names no longer flip punctuation, and the website-health method is translated",
    "tl": {
     "es": "Las páginas de proyectos y promotores se leen mejor: copias de precios idénticas en una sola fila, el retraso junto a la fecha a la que se refiere, singular correcto, los nombres latinos en árabe ya no desplazan la puntuación y el método de salud de la web está traducido",
