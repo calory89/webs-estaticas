@@ -234,15 +234,15 @@ def check_text(text, allowed):
     return {'numbers_found': nums, 'all_backed': not probs, 'problems': probs}
 
 
-def ask_claude(facts, key, model='claude-sonnet-5-5', max_usd=0.25):   # 6 Nov 2026: cap 0.25 USD per run, all calls together
+def ask_claude(facts, key, model='claude-haiku-5-5', max_usd=0.05):   # 9 Nov 2026 (owner): Kolaboro AI capped at 10 USD a week in total, Haiku only
     prompt = ('You write the intro paragraph of a weekly digest of off-plan property data. Use ONLY the numbers in the JSON below, copied exactly '
               '(digits, not words). Do not add any other number, date, cause, forecast, comparison or opinion. Do not name any developer, project or project id. '
               'No adjectives unless a number in the same sentence backs them. No dashes. Plain English, 60 to 120 words, third person ("Kolaboro data show"). '
               'Say that the figures come from the public data files and their daily history. If the JSON has a "note", state it in your own words. Return only the paragraph.\n\nJSON:\n' + json.dumps(facts, ensure_ascii=False))
-    worst = (len(prompt) / 2.5) * 3e-6 + 800 * 15e-6   # worst case of this request, checked before it is sent
+    worst = (len(prompt) / 2.5) * 3e-6 + 400 * 15e-6   # worst case of this request, checked before it is sent
     if SPEND['usd'] + worst > max_usd:
         raise RuntimeError('spend guard: run cap reached')
-    body = json.dumps({'model': model, 'max_tokens': 800, 'messages': [{'role': 'user', 'content': prompt}]}).encode()
+    body = json.dumps({'model': model, 'max_tokens': 400, 'messages': [{'role': 'user', 'content': prompt}]}).encode()
     req = urllib.request.Request('https://api.anthropic.com/v1/messages', data=body, method='POST', headers={
         'x-api-key': key, 'anthropic-version': '2023-06-01', 'content-type': 'application/json'})
     with urllib.request.urlopen(req, timeout=90) as r:
@@ -717,7 +717,7 @@ def main():
     HM = heatmap(today, H, CM, hist_start)
     D = {'version': 'digest-1', 'generated': dt.datetime.now(dt.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'), 'history_starts': hist_start.isoformat(), 'latest': latest,
          'licence': 'CC BY 4.0 (credit: Kolaboro, kolaboro.com)', 'sources': ['/data/' + n for n in names], 'weeks': WL, 'changes': HM,
-         'ai': {'model': 'claude-sonnet-5-5', 'role': 'intro paragraph only, checked by code', 'this_run_usd': round(SPEND['usd'], 4)}}
+         'ai': {'model': 'claude-haiku-5-5', 'role': 'intro paragraph only, checked by code', 'this_run_usd': round(SPEND['usd'], 4)}}
     data = '<script type="application/json" id="digest-data">' + json.dumps(D, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/') + '</script>'
     # one page and no other file (file budget of the shared Pages project): the data rides inside the page and the worker serves it
     # as /api/x/ins/digest.json; latest week in full, earlier weeks summarised, heatmap of 7 and 30 days (file budget of the shared Pages project): latest week in full, earlier weeks summarised, heatmap of 7 and 30 days

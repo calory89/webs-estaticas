@@ -40,8 +40,8 @@ TODAY = NOW.strftime('%Y-%m-%d')
 TODAY_M = NOW.year * 12 + NOW.month          # month index
 KEY = os.environ.get('ANTHROPIC_API_KEY', '').strip()
 AI = bool(KEY) and '--no-ai' not in sys.argv
-HAIKU, SONNET = 'claude-haiku-5-5', 'claude-sonnet-5-5'
-PRICE = {HAIKU: (0.10, 0.50), SONNET: (2.0, 10.0)}   # USD per million tokens in / out, list prices (platform.claude.com/docs/en/about-claude/pricing, Nov 2026)
+HAIKU, SONNET = 'claude-haiku-5-5', 'claude-haiku-5-5'   # 9 Nov 2026 (owner): Kolaboro AI capped at 10 USD a week in total, Haiku only: date conflicts resolved by Haiku too
+PRICE = {HAIKU: (0.10, 0.50)}   # USD per million tokens in / out, list prices (platform.claude.com/docs/en/about-claude/pricing, Nov 2026)
 MAX_TOTAL = float(os.environ.get('KB_PROMISE_MAX_USD', '9.5'))
 MAX_RUN = float(os.environ.get('KB_PROMISE_RUN_USD', '0.25'))
 MAX_DAY = float(os.environ.get('KB_PROMISE_DAY_USD', '0.25'))   # 6 Nov 2026: hard daily cap for all runs together
@@ -242,7 +242,7 @@ def budget_left():
     return min(MAX_RUN - used, MAX_TOTAL - (spend['prior'] + used), MAX_DAY - (spend['today'] + used))
 
 
-def call(model, prompt, max_tokens=4000):
+def call(model, prompt, max_tokens=1500):
     with lock:
         if budget_left() <= 0.02:
             raise RuntimeError('budget')
@@ -349,7 +349,7 @@ def resolve_conflict(cache, kind, a, b):
     if not AI:
         return None
     try:
-        o = call(SONNET, RESOLVE.format(kind=KIND_LABEL[kind], da=a['date'], qa=a['quote'], db=b['date'], qb=b['quote']), 3000)
+        o = call(SONNET, RESOLVE.format(kind=KIND_LABEL[kind], da=a['date'], qa=a['quote'], db=b['date'], qb=b['quote']), 1000)
     except RuntimeError:
         return None
     ans = (o or {}).get('answer') if isinstance(o, dict) else None

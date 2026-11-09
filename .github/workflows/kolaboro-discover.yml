@@ -38,8 +38,8 @@ jobs:
       - name: Discover new projects
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          KB_DISCOVER_MIN_USD: ${{ github.event.inputs.min_usd || '0.25' }}
-          KB_DISCOVER_MAX_USD: '0.25'
+          KB_DISCOVER_MIN_USD: '0.10'
+          KB_DISCOVER_MAX_USD: '0.10'
           KB_DISCOVER_MODEL: claude-haiku-5-5
           KB_DISCOVER_FORCE: ${{ github.event.inputs.force || '' }}
           KB_DISCOVER_MARKETS: ${{ github.event.inputs.markets || '' }}

@@ -21,7 +21,7 @@ import argparse, datetime as dt, hashlib, html, json, os, re, statistics, subpro
 SITE = '_s/kolaboro.com'
 PATHS = [SITE + '/', '_worker.js/kolaboro.js', '_worker.js/kbx*']
 ORIGIN = 'https://kolaboro.com'
-MODEL = os.environ.get('KB_SHIP_MODEL', 'claude-sonnet-5-5')
+MODEL = os.environ.get('KB_SHIP_MODEL', 'claude-haiku-5-5')   # 9 Nov 2026 (owner): Kolaboro AI capped at 10 USD a week in total, Haiku only
 PRICE_IN, PRICE_OUT = 3.0 / 1e6, 15.0 / 1e6        # conservative USD per token, used as a spending guard and for the spend log
 MAX_USD_RUN = float(os.environ.get('KB_SHIP_RUN_USD', '0.25'))   # per run (6 Nov 2026: lowered from 1.0)
 DAY_USD = float(os.environ.get('KB_SHIP_DAY_USD', '0.25'))       # all runs of the UTC day together, from ai.by_day in shipping.json
@@ -224,7 +224,7 @@ def ai_summary(date, day_commits, key):
         'Answer with JSON only: {"lines":[{"text":"...","commits":["<id>"]}]}\n\nCommits:\n%s' % (date, lo, listing))
     worst = (len(prompt) / 2.5) * PRICE_IN + 1200 * PRICE_OUT   # worst case of this request, reserved before it is sent
     if AI['in'] * PRICE_IN + AI['out'] * PRICE_OUT + worst > MAX_USD_RUN: raise RuntimeError('run spend cap reached')
-    body = json.dumps({'model': MODEL, 'max_tokens': 1200, 'messages': [{'role': 'user', 'content': prompt}]}).encode()
+    body = json.dumps({'model': MODEL, 'max_tokens': 600, 'messages': [{'role': 'user', 'content': prompt}]}).encode()
     req = urllib.request.Request('https://api.anthropic.com/v1/messages', data=body, method='POST', headers={
         'x-api-key': key, 'anthropic-version': '2023-06-01', 'content-type': 'application/json'})
     with urllib.request.urlopen(req, timeout=120) as r: d = json.loads(r.read())

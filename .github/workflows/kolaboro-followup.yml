@@ -37,8 +37,8 @@ jobs:
       - name: Read promises
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          KB_PROMISE_RUN_USD: ${{ github.event.inputs.run_usd || '0.25' }}
-          KB_PROMISE_DAY_USD: '0.25'
+          KB_PROMISE_RUN_USD: '0.10'
+          KB_PROMISE_DAY_USD: '0.10'
           KB_PROMISE_MAX_USD: '9.5'
         run: |
           if [ -z "$ANTHROPIC_API_KEY" ]; then echo "::warning::ANTHROPIC_API_KEY is not set: only cached readings are used"; fi

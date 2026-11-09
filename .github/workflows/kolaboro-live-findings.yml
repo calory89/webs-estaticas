@@ -46,7 +46,7 @@ jobs:
         if: steps.gate.outputs.go == '1'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          KB_LIVE_DAY_USD: '0.25'
+          KB_LIVE_DAY_USD: '0.10'
           KB_LIVE_RUNS_LEFT: '1'   # one scheduled run a day (6 Nov 2026): it gets the whole remainder of the daily cap
           KB_LIVE_MAX_PAGES: ${{ github.event.inputs.max_pages || '500' }}
           KB_LIVE_MAX_SECONDS: '1500'

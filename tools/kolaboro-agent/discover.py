@@ -16,7 +16,7 @@ MAX_USD = float(os.environ.get('KB_DISCOVER_MAX_USD', '0.25'))
 MIN_USD = min(MAX_USD, float(os.environ.get('KB_DISCOVER_MIN_USD', '0.25')))
 MAX_CALLS = int(os.environ.get('KB_DISCOVER_MAX_CALLS', '40'))
 PER_CALL = int(os.environ.get('KB_DISCOVER_PER_CALL', '4'))
-MODELS = [m for m in [os.environ.get('KB_DISCOVER_MODEL'), 'claude-haiku-5-5', 'claude-sonnet-5-5'] if m]
+MODELS = [m for m in [os.environ.get('KB_DISCOVER_MODEL'), 'claude-haiku-5-5'] if m]   # 9 Nov 2026: no Sonnet fallback
 PRICE = {'claude-sonnet-5-5': (3e-6, 15e-6), 'claude-haiku-5-5': (1e-6, 5e-6)}
 SEARCH_USD = 0.01
 MAX_TOKENS = 8000; MAX_USES = 3; INPUT_GUESS = 60000   # per request: output cap, searches and fetches, input tokens assumed
