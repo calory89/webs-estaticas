@@ -329,7 +329,9 @@ def main():
     official = {x['d']: x for x in lst['domains']}
     shared = set(lst.get('shared') or [])
     only = set((arg('--only') or '').split(',')) - {''}
-    watch = [d for d in official if (not only or d in only) and len(label_of(d).replace('-', '')) >= 5 and label_of(d).replace('-', '') not in GENERIC]
+    # only websites whose name carries the developer's or the project's name (m=1): a linked news site or software tool is not imitated for buyers
+    watch = [d for d in official if (not only or d in only) and official[d].get('m') and len(label_of(d).replace('-', '')) >= 5 and label_of(d).replace('-', '') not in GENERIC]
+    watch_set = set(watch)
     print('official', len(official), 'watched', len(watch))
 
     found = {}   # candidate domain -> {o, why, src, cert}
@@ -408,7 +410,7 @@ def main():
             neg[p] = TODAY
     # previously published lookalikes are re-checked every day
     for dname, x in old.items():
-        if dname not in found and x.get('o') in official and why(dname, x['o']):
+        if dname not in found and x.get('o') in watch_set and why(dname, x['o']):
             found[dname] = {'o': x['o'], 'why': why(dname, x['o']), 'src': x.get('src', 'dns'), 'cert': x.get('cert') if x.get('reg') else None}
 
     # 3. Facts about each lookalike: registration (RDAP), certificates, resolves today, name servers (6 at a time, RDAP 1/s per registry)

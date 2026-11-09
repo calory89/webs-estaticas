@@ -39,7 +39,7 @@ jobs:
           mkdir -p "$RUNNER_TEMP/out"
           A=""; [ -n "$ONLY" ] && A="--only $ONLY"
           python3 -u tools/kolaboro-agent/fake_sites.py "$RUNNER_TEMP/out" --state "$RUNNER_TEMP/lookalikes-private.json" $A
-          python3 -c "import json;j=json.load(open('$RUNNER_TEMP/out/lookalikes.json'));assert j['watched']>=(1 if '$ONLY' else 300),j['watched'];print('items',j['n'],'unchanged',j.get('unchanged'))"
+          python3 -c "import json;j=json.load(open('$RUNNER_TEMP/out/lookalikes.json'));assert j['watched']>=(1 if '$ONLY' else 250),j['watched'];print('items',j['n'],'unchanged',j.get('unchanged'))"
       - name: Publish to kolaboro.com
         if: github.event.inputs.only == '' || github.event.inputs.only == null
         run: |
