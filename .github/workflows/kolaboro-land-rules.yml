@@ -1,0 +1,60 @@
+name: Kolaboro rules on the land (protected land, map history)
+# Batch 19 (n19c). No model calls, no accounts, no keys. One light job (budget rule 9 Nov 2026: weekly, a few minutes, low timeout).
+#  rules:   Natura 2000 (EEA), England planning data, Spain coast distance (Ley de Costas), OpenStreetMap protected areas; records older than 28 days
+#  osmhist: OpenStreetMap history within 150 m of each pin (OSM API); records older than 7 days
+# Each run starts from the published file, redoes only projects whose pin changed or whose record is stale, stops after ~6 minutes
+# per part, and publishes nothing when nothing changed. Publishes kolaboro.com/data/land-rules.json and /data/map-history.json.
+on:
+  schedule:
+    - cron: '41 4 * * 3'     # weekly, Wednesday
+  workflow_dispatch:
+    inputs:
+      only: { description: 'comma separated project ids (empty = stale ones)', required: false, default: '' }
+
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-land-rules
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: tools/kolaboro-agent
+      - name: Build
+        env:
+          ONLY: ${{ github.event.inputs.only }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/out"
+          A=""; [ -n "$ONLY" ] && A="--only $ONLY"
+          pip install -q mapbox-vector-tile==2.2.0
+          python3 -u -W ignore tools/kolaboro-agent/land_rules.py osmhist "$RUNNER_TEMP/out/map-history.json" --budget 360 $A || true
+          python3 -u -W ignore tools/kolaboro-agent/land_rules.py rules "$RUNNER_TEMP/out/land-rules.json" --budget 360 $A || true
+          ls -la "$RUNNER_TEMP/out"
+      - name: Publish to kolaboro.com
+        run: |
+          set -e
+          cd "$RUNNER_TEMP/out"
+          for f in map-history.json land-rules.json; do
+            [ -f "$f" ] || continue
+            python3 -c "import json; d=json.load(open('$f')); assert d.get('projects'), 'empty'" || { echo "skip $f (empty)"; rm -f "$f"; }
+          done
+          ls *.json 2>/dev/null > files.txt || true
+          [ -s files.txt ] || { echo "nothing to publish"; exit 0; }
+          cd "$GITHUB_WORKSPACE"
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          for i in 1 2 3 4 5; do
+            git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+            P=$(git rev-parse FETCH_HEAD)
+            export GIT_INDEX_FILE=$RUNNER_TEMP/idx; rm -f $GIT_INDEX_FILE; git read-tree $P
+            while read f; do H=$(git hash-object -w "$RUNNER_TEMP/out/$f"); git update-index --add --cacheinfo 100644,$H,_s/kolaboro.com/data/$f; done < "$RUNNER_TEMP/out/files.txt"
+            T=$(git write-tree --missing-ok); unset GIT_INDEX_FILE
+            [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
+            C=$(git commit-tree $T -p $P -m "kolaboro.com: protected land and map history $(date -u +%F)")
+            git push -q origin $C:refs/heads/pub/_lovable && exit 0
+            sleep 7
+          done; exit 1
