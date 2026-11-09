@@ -38,6 +38,11 @@ FLAG_RX = [('criminal', r'\b(prosecutor|prosecuted|criminal (?:case|complaint|ch
 FACT_KEEP = ('developer_founded', 'developer_hq', 'developer_company', 'developer_projects_delivered', 'developer_units_delivered', 'listed_or_audited',
              'construction_start', 'handover_promised', 'original_handover', 'delay_months', 'unit_types', 'size_min_m2', 'size_max_m2', 'price_min',
              'price_max', 'currency', 'deposit_pct', 'payment_plan', 'foreign_ownership', 'service_charge', 'permit_authority', 'brand', 'lat', 'lng')
+# Pin corrections checked by hand (n19f, 9 Nov 2026). The research record had these two Birmingham pins one degree of latitude
+# too far north (Peak District). Sources: OpenStreetMap "Former Police Station > 59x Apartments Conversion (Priors Gate)",
+# Steelhouse Lane B4 6QA (developer page: former Steelhouse Lane Police Headquarters); postcodes.io B5 7AY, the postcode on
+# investinplc.com/developments/boulevard-birmingham/. Applied after the research facts so a later research run cannot undo them.
+PIN_FIX = {'BHX-002': (52.4843, -1.8933), 'BHX-003': (52.4681, -1.9000)}
 NO_DEV = re.compile(r'^\s*(not |unknown|n/?a\b|none\b|unnamed|undisclosed|private\b)', re.I)
 GIVEN = set('''Aaron Adam Adrian Ahmed Alan Alex Alexander Ali Andre Andrea Andrew Andrey Anna Anthony Antonio Carlos Charles Chris Christian Daniel David Dmitry Eduardo Elena Eric Fernando Francisco Frank Frederic Gary George Gilles Hans Igor Ivan Jack Jairo Jako James Jan Javier Jean Jeffrey John Jorge Jose Joseph Juan Kaweh Kevin Luis Marco Maria Mario Mark Martin Matthew Mehmet Mert Michael Mohamed Mohammed Nicolas Oleg Omar Paul Pedro Peter Pierre Rafael Richard Robert Roberto Sam Sergey Sonia Stefan Steven Sunny Thomas Tihomir Tom Victor Vladimir Wilcko William Yuri'''.split())
 
@@ -118,6 +123,7 @@ def main(cases_path, out_path):
                 if not v: continue
             if isinstance(v, list): v = [clean(x, 80) for x in v if isinstance(x, str) and ok_text(x)][:12]
             fx[k] = v
+        if pid in PIN_FIX: fx['lat'], fx['lng'] = PIN_FIX[pid]
         lt = latest.get(p.get('slug')) or {}
         rw = regw.get(p.get('slug'))
         out.append({'id': pid, 's': slug, 'n': clean(p.get('name'), 140), 'dv': dev, 'dvs': slugify(dev) if dev else None, 'mk': mk, 'co': p.get('country', 'Indonesia'),
