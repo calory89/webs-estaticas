@@ -1,0 +1,69 @@
+name: Kolaboro money near the site (short lets and recorded sales)
+# Batch 19 (n19b). No model calls, no accounts, no keys.
+#  shortlet: Inside Airbnb (CC BY 4.0) listings within 1 km of each reliable pin, aggregates only, plus yield claims from our sealed copies
+#  sold:     recorded sale prices within 1 km from HM Land Registry Price Paid (OGL), France DVF (Licence Ouverte), NYC rolling sales
+# Publishes kolaboro.com/data/short-lets.json and kolaboro.com/data/sales-nearby.json (tools/kolaboro-agent/money_nearby.py).
+on:
+  schedule:
+    - cron: '41 6 24 * *'    # monthly: HM Land Registry publishes around the 20th, NYC rolling sales monthly, Inside Airbnb quarterly
+  workflow_dispatch:
+    inputs:
+      what: { description: 'shortlet, sold or both', required: false, default: 'both' }
+      only: { description: 'comma separated project ids (empty = all)', required: false, default: '' }
+
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-money-nearby
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20    # budget rule (9 Nov): light Actions only; each part skips itself when its inputs did not change
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: tools/kolaboro-agent
+      - name: Build (both parts side by side, one job)
+        env:
+          WHAT: ${{ github.event.inputs.what || 'both' }}
+          ONLY: ${{ github.event.inputs.only }}
+        run: |
+          mkdir -p "$RUNNER_TEMP/out"
+          A=""; [ -n "$ONLY" ] && A="--only $ONLY"
+          M=tools/kolaboro-agent/money_nearby.py
+          [ "$WHAT" = "sold" ] || timeout 17m python3 -u -W ignore $M shortlet "$RUNNER_TEMP/out/short-lets.json" $A > "$RUNNER_TEMP/sl.log" 2>&1 &
+          [ "$WHAT" = "shortlet" ] || timeout 17m python3 -u -W ignore $M sold "$RUNNER_TEMP/out/sales-nearby.json" $A > "$RUNNER_TEMP/so.log" 2>&1 &
+          wait || true
+          tail -n 40 "$RUNNER_TEMP"/*.log || true
+          ls -la "$RUNNER_TEMP/out"
+      - name: Publish to kolaboro.com
+        env:
+          ONLY: ${{ github.event.inputs.only }}
+        run: |
+          set -e
+          cd "$RUNNER_TEMP/out"
+          for f in short-lets.json sales-nearby.json; do
+            [ -f "$f" ] || continue
+            python3 -c "import json; d=json.load(open('$f')); assert d.get('projects'), 'empty'" || { echo "skip $f (empty)"; rm -f "$f"; continue; }
+            if [ -n "$ONLY" ]; then   # partial run: merge into the published file
+              curl -sf "https://kolaboro.com/data/$f?run=$(date +%s)" -o "prev-$f" || echo '{"projects":{}}' > "prev-$f"
+              python3 -c "import json; p=json.load(open('prev-$f')); n=json.load(open('$f')); p2=dict(p.get('projects',{})); p2.update(n['projects']); n['projects']=p2; json.dump(n,open('$f','w'),separators=(',',':'),ensure_ascii=False)"
+            fi
+          done
+          ls *.json 2>/dev/null | grep -v '^prev-' > files.txt || true
+          [ -s files.txt ] || { echo "nothing to publish"; exit 0; }
+          cd "$GITHUB_WORKSPACE"
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          for i in 1 2 3 4 5; do
+            git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+            P=$(git rev-parse FETCH_HEAD)
+            export GIT_INDEX_FILE=$RUNNER_TEMP/idx; rm -f $GIT_INDEX_FILE; git read-tree $P
+            while read f; do H=$(git hash-object -w "$RUNNER_TEMP/out/$f"); git update-index --add --cacheinfo 100644,$H,_s/kolaboro.com/data/$f; done < "$RUNNER_TEMP/out/files.txt"
+            T=$(git write-tree --missing-ok); unset GIT_INDEX_FILE
+            [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
+            C=$(git commit-tree $T -p $P -m "kolaboro.com: rent and resale near the site $(date -u +%F)")
+            git push -q origin $C:refs/heads/pub/_lovable && exit 0
+            sleep 7
+          done; exit 1
