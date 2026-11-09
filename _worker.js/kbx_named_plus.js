@@ -172,3 +172,79 @@ export const NET_JS = "(function(){document.querySelectorAll('[data-knet]').forE
   "var p=document.createElementNS(ns,'path');p.setAttribute('d','M'+x+' '+y1+' C'+x+' '+m+' '+cx+' '+m+' '+cx+' '+y2);if(n.classList.contains('on'))p.setAttribute('class','on');n._p=p;s.appendChild(p);});}" +
   "function on(n){nodes.concat([d]).forEach(function(k){k.classList.toggle('on',k===n);if(k._p)k._p.setAttribute('class',k===n?'on':'');});cap.textContent=n.getAttribute('data-rel')||'';}" +
   "nodes.concat([d]).forEach(function(n){n.addEventListener('mouseenter',function(){on(n);});n.addEventListener('focus',function(){on(n);});});draw();var t;window.addEventListener('resize',function(){clearTimeout(t);t=setTimeout(draw,120);});if(window.ResizeObserver)new ResizeObserver(function(){clearTimeout(t);t=setTimeout(draw,60);}).observe(w);});})();";
+
+// ---------------------------------------------------------------- corporate family (n19e, batch 19)
+// /data/gleif-family.json, rebuilt weekly by .github/workflows/kolaboro-gleif-family.yml on main (tools/kolaboro-w/gleif_family.py):
+// every named developer matched to ONE LEI by exact legal name plus country, with its GLEIF level 2 relationships (CC0), and the
+// links between developers we track (parent, child, or the same reported parent). Used on developer pages when the live lookup finds
+// no exact LEI, and to list the other tracked developers in the same family. Companies only: GLEIF holds no people.
+let FAM = { t: 0, v: null };
+export async function familyData(env) {
+  if (FAM.v !== null && Date.now() - FAM.t < 600000) return FAM.v;
+  let r = null;
+  try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/gleif-family.json')); } catch (e) { r = null; }
+  if (!r || !r.ok) { try { r = await fetch(ORIGIN + '/data/gleif-family.json?w=1', { cf: { cacheTtl: 300, cacheEverything: true } }); } catch (e) { r = null; } }
+  const v = r && r.ok ? await r.json().catch(() => null) : null;
+  FAM = { t: Date.now(), v: v || false }; return v;
+}
+// the file's entry for one developer, shaped like the live lookup (m) and gleifNet() (net)
+export function famNet(fam, s) {
+  const o = fam && fam.devs && fam.devs[s]; if (!o) return null;
+  const at = String(fam.updated || '').slice(0, 10);
+  return { m: { lei: o.lei, legal: o.legal, country: o.country, jur: o.jur || o.country, st: o.st, ls: o.reg, reg: o.since || '' },
+    net: { ok: true, at, parent: o.parent, ultimate: o.ultimate, children: o.children || [], children_total: o.children_total || 0, exception: o.parent ? null : o.parent_x } };
+}
+const FT = {
+  en: { h: 'Developers we track in the same corporate family', none: 'None of the other developers we track is in this company\'s GLEIF family (weekly copy of {d}).',
+    parent: '{a} is the direct parent of {b}.', ultimate: '{a} is the ultimate parent of {b}.', same_parent: '{a} and {b} report the same direct parent: {p}.', same_ultimate: '{a} and {b} report the same ultimate parent: {p}.',
+    note: 'Parent and child here mean accounting consolidation as reported to GLEIF. It does not say who builds, sells or manages a project.', src: 'GLEIF level 2, CC0' },
+  es: { h: 'Promotores que seguimos en el mismo grupo empresarial', none: 'Ninguno de los otros promotores que seguimos está en el grupo GLEIF de esta empresa (copia semanal del {d}).',
+    parent: '{a} es la matriz directa de {b}.', ultimate: '{a} es la matriz última de {b}.', same_parent: '{a} y {b} declaran la misma matriz directa: {p}.', same_ultimate: '{a} y {b} declaran la misma matriz última: {p}.',
+    note: 'Matriz y filial significan aquí consolidación contable declarada a GLEIF. No indica quién construye, vende o gestiona un proyecto.', src: 'GLEIF nivel 2, CC0' },
+  de: { h: 'Bauträger in unserer Liste aus demselben Konzern', none: 'Keiner der anderen Bauträger, die wir verfolgen, gehört laut GLEIF zum Konzern dieses Unternehmens (Wochenkopie vom {d}).',
+    parent: '{a} ist die direkte Muttergesellschaft von {b}.', ultimate: '{a} ist die oberste Muttergesellschaft von {b}.', same_parent: '{a} und {b} melden dieselbe direkte Muttergesellschaft: {p}.', same_ultimate: '{a} und {b} melden dieselbe oberste Muttergesellschaft: {p}.',
+    note: 'Mutter und Tochter bedeuten hier bilanzielle Konsolidierung, wie an GLEIF gemeldet. Das sagt nicht, wer ein Projekt baut, verkauft oder verwaltet.', src: 'GLEIF Level 2, CC0' },
+  fr: { h: 'Promoteurs suivis dans le même groupe de sociétés', none: 'Aucun des autres promoteurs que nous suivons n\'appartient au groupe GLEIF de cette société (copie hebdomadaire du {d}).',
+    parent: '{a} est la société mère directe de {b}.', ultimate: '{a} est la société mère ultime de {b}.', same_parent: '{a} et {b} déclarent la même société mère directe : {p}.', same_ultimate: '{a} et {b} déclarent la même société mère ultime : {p}.',
+    note: 'Mère et filiale désignent ici la consolidation comptable déclarée à GLEIF. Cela ne dit pas qui construit, vend ou gère un projet.', src: 'GLEIF niveau 2, CC0' },
+  nl: { h: 'Ontwikkelaars die we volgen in hetzelfde concern', none: 'Geen van de andere ontwikkelaars die we volgen hoort volgens GLEIF bij het concern van dit bedrijf (wekelijkse kopie van {d}).',
+    parent: '{a} is de directe moedermaatschappij van {b}.', ultimate: '{a} is de uiteindelijke moedermaatschappij van {b}.', same_parent: '{a} en {b} melden dezelfde directe moedermaatschappij: {p}.', same_ultimate: '{a} en {b} melden dezelfde uiteindelijke moedermaatschappij: {p}.',
+    note: 'Moeder en dochter betekenen hier boekhoudkundige consolidatie zoals gemeld aan GLEIF. Het zegt niet wie een project bouwt, verkoopt of beheert.', src: 'GLEIF niveau 2, CC0' },
+  ru: { h: 'Застройщики из нашего списка в той же группе компаний', none: 'Ни один из других застройщиков, которых мы отслеживаем, не входит в группу этой компании по данным GLEIF (еженедельная копия от {d}).',
+    parent: '{a} является прямой материнской компанией {b}.', ultimate: '{a} является конечной материнской компанией {b}.', same_parent: '{a} и {b} указывают одну и ту же прямую материнскую компанию: {p}.', same_ultimate: '{a} и {b} указывают одну и ту же конечную материнскую компанию: {p}.',
+    note: 'Материнская и дочерняя компания здесь означают бухгалтерскую консолидацию по данным, переданным в GLEIF. Это не говорит о том, кто строит, продаёт или управляет проектом.', src: 'GLEIF, уровень 2, CC0' },
+  zh: { h: '我们追踪的同一企业集团内的开发商', none: '根据 GLEIF，我们追踪的其他开发商都不属于该公司的集团（{d} 的每周副本）。',
+    parent: '{a} 是 {b} 的直接母公司。', ultimate: '{a} 是 {b} 的最终母公司。', same_parent: '{a} 和 {b} 申报了同一家直接母公司：{p}。', same_ultimate: '{a} 和 {b} 申报了同一家最终母公司：{p}。',
+    note: '这里的母公司和子公司指向 GLEIF 申报的会计合并关系，并不说明由谁建造、销售或管理项目。', src: 'GLEIF 二级数据，CC0' },
+  ar: { h: 'مطورون نتابعهم ضمن المجموعة نفسها', none: 'لا ينتمي أي من المطورين الآخرين الذين نتابعهم إلى مجموعة هذه الشركة وفق GLEIF (نسخة أسبوعية بتاريخ {d}).',
+    parent: '{a} هي الشركة الأم المباشرة لـ {b}.', ultimate: '{a} هي الشركة الأم النهائية لـ {b}.', same_parent: '{a} و{b} تصرّحان بالشركة الأم المباشرة نفسها: {p}.', same_ultimate: '{a} و{b} تصرّحان بالشركة الأم النهائية نفسها: {p}.',
+    note: 'الشركة الأم والتابعة هنا تعني التوحيد المحاسبي كما صُرّح به لدى GLEIF، ولا تحدد من يبني المشروع أو يبيعه أو يديره.', src: 'GLEIF المستوى 2، رخصة CC0' },
+};
+// s: this developer's slug; pre: language prefix. Empty when the developer has no LEI in the file.
+export function familyHtml(fam, s, lang, pre) {
+  const o = fam && fam.devs && fam.devs[s]; if (!o) return '';
+  const t = (k, v) => { const x = (FT[lang] && FT[lang][k]) || FT.en[k]; return v ? x.replace(/\{(\w+)\}/g, (m, y) => v[y] != null ? v[y] : m) : x; };
+  const D = fam.devs, d = String(fam.updated || '').slice(0, 10), rec = l => 'https://search.gleif.org/#/record/' + l;
+  const dl = x => '<a href="' + pre + '/developers/' + esc(x) + '/">' + esc(D[x].name) + '</a>';
+  const co = x => esc(D[x].legal) + ' (' + dl(x) + ')';
+  const items = [];
+  for (const L of fam.links || []) {
+    if (L.a !== s && L.b !== s) continue;
+    const other = L.a === s ? L.b : L.a, A = D[s], B = D[other]; if (!A || !B) continue;
+    for (const why of L.why) {
+      let html = '', lei = D[other].lei;
+      if (why === 'parent' || why === 'ultimate' || why === 'child') {
+        const pl = (x, k) => (x[k] || {}).lei, kid = (x, y) => (x.children || []).some(c => c.lei === y.lei);
+        const r = pl(B, 'parent') === A.lei || kid(A, B) ? ['parent', s, other] : pl(B, 'ultimate') === A.lei ? ['ultimate', s, other]
+          : pl(A, 'parent') === B.lei || kid(B, A) ? ['parent', other, s] : ['ultimate', other, s];
+        html = t(r[0], { a: co(r[1]), b: co(r[2]) });
+      } else {
+        const k = why === 'same_parent' ? 'parent' : 'ultimate';
+        html = t(why, { a: co(s), b: co(other), p: esc((A[k] || {}).legal || '') }); lei = (A[k] || {}).lei || lei;
+      }
+      items.push('<li class="kfact">' + html + src(rec(lei), t('src')) + '</li>');
+    }
+  }
+  return '<h3 class="kfam-h">' + esc(t('h')) + '</h3><ul class="fl">' + (items.length ? [...new Set(items)].join('') : '<li class="kfact">' + esc(t('none', { d })) + src(ORIGIN + '/data/gleif-family.json', 'gleif-family.json') + '</li>') + '</ul>' +
+    (items.length ? '<p class="ki">' + esc(t('note')) + '</p>' : '');
+}

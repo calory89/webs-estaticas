@@ -84,3 +84,9 @@ details.ft-more[open] summary{margin-bottom:10px}
 /* site.css hides any .ok element (form success box); keep tool cards and tags with class ok visible */
 .ft-f.ok{display:block}.ft-tag.ok{display:inline;border:0}
 .ft-mx{border-radius:4px;padding:0 2px}.ft-mx.hot{background:var(--t-warn-bg,#FFE7DB);color:inherit;outline:1px solid #F7B697}
+/* n19e: jump links to the tool groups */
+.ft-jump{display:flex;flex-wrap:wrap;gap:8px;margin-top:var(--k-5,24px)}
+.ft-jump a{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 14px;border:1px solid var(--k-line-2,var(--line));border-radius:var(--k-r-md,10px);background:var(--k-surface,#fff);color:var(--k-ink,var(--ink));text-decoration:none;font-size:var(--k-fs-sm,15px)}
+.ft-jump a:hover{background:var(--k-sea-soft,#e6f0f3)}
+.ft-jump small{color:var(--k-muted,var(--muted));font-variant-numeric:tabular-nums}
+[id=sent],[id=money],[id=choose]{scroll-margin-top:84px}

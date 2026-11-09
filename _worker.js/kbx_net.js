@@ -11,6 +11,7 @@
 import { data as namedData, isListing, host, pre, esc } from './kbx_named.js';
 import { rpc } from './kolaboro.js';
 import { LAND } from './kbx_net_land.js';
+import { familyData } from './kbx_named_plus.js';   // batch 19 (n19e): corporate family from GLEIF level 2 (/data/gleif-family.json)
 import { webGroups } from './kbx_web.js';   // batch 18 (n18a): identifiers shared by developer websites (/data/dev-links.json)   // land mask: 1 bit per 2x2 degree cell (180 x 90), rows from 90N, from Natural Earth 110m land (public domain)
 
 const ORIGIN = 'https://kolaboro.com';
@@ -74,14 +75,14 @@ function regDomain(h) {
 }
 const nameKey = n => fold(n).replace(/\b(by|the|residences?|residence|resort|villas?|apartments?|tower|towers|project|phase \d+)\b/g, ' ').replace(/[^a-z0-9]+/g, ' ').replace(/\s+/g, ' ').trim();
 
-export function buildGraph(P, web) {
+export function buildGraph(P, web, fam) {
   const devs = new Map();
   for (const x of P) {
     if (!x.dvs || !x.dv) continue;
     let d = devs.get(x.dvs); if (!d) devs.set(x.dvs, d = { s: x.dvs, n: x.dv, p: [], mk: new Map(), co: new Set() });
     d.p.push(x); d.mk.set(x.mk, (d.mk.get(x.mk) || 0) + 1); if (x.co) d.co.add(x.co);
   }
-  const TYPES = ['company', 'regid', 'domain', 'address', 'name', 'web'];
+  const TYPES = ['company', 'regid', 'domain', 'address', 'name', 'web', 'family'];
   const idx = Object.fromEntries(TYPES.map(t => [t, new Map()]));   // type -> key -> Map(dev -> [{project, label}])
   const add = (t, key, dev, x, label) => {
     if (!key) return; const m = idx[t]; let e = m.get(key); if (!e) m.set(key, e = new Map());
@@ -106,10 +107,18 @@ export function buildGraph(P, web) {
   }
   // n18a: the same public identifier in the source, DNS or TLS certificate of the developers' own websites (read daily by dev_web.py)
   for (const g of (web && web.groups) || []) for (const s of g.devs || []) { const d = devs.get(s); if (!d) continue; const dm = (g.doms || []).filter(x => g.dom && g.dom[x] === s); add('web', g.t + ':' + g.v, s, d.p[0], g.label + (dm.length ? ' (' + dm.join(', ') + ')' : '')); }
+  // n19e: GLEIF level 2: one developer is the other's direct or ultimate parent or direct child, or both report the same parent
+  const FD = (fam && fam.devs) || {}, WHY = { parent: 'direct parent or child', child: 'direct parent or child', ultimate: 'ultimate parent', same_parent: 'same direct parent', same_ultimate: 'same ultimate parent' };
+  for (const l of (fam && fam.links) || []) {
+    const da = devs.get(l.a), db = devs.get(l.b); if (!da || !db || !FD[l.a] || !FD[l.b]) continue;
+    const pk = l.why.includes('same_parent') ? 'parent' : l.why.includes('same_ultimate') ? 'ultimate' : null;
+    const v = l.why.map(w => WHY[w]).filter((w, i, a) => a.indexOf(w) === i).join(', ') + ' (LEI ' + FD[l.a].lei + ' / ' + FD[l.b].lei + (pk && FD[l.a][pk] ? '; parent ' + FD[l.a][pk].legal : '') + ')';
+    add('family', 'gl:' + l.a + '|' + l.b, l.a, da.p[0], v); add('family', 'gl:' + l.a + '|' + l.b, l.b, db.p[0], v);
+  }
   const links = new Map(), hubs = Object.fromEntries(TYPES.map(t => [t, 0])), shared = Object.fromEntries(TYPES.map(t => [t, 0]));
   for (const t of TYPES) for (const [key, e] of idx[t]) {
     if (e.size < 2) continue;
-    if (e.size > (t === 'web' ? 8 : HUB)) { hubs[t]++; continue; }
+    if (t !== 'family' && e.size > (t === 'web' ? 8 : HUB)) { hubs[t]++; continue; }
     shared[t]++;
     const ds = [...e.keys()].sort();
     for (let i = 0; i < ds.length; i++) for (let j = i + 1; j < ds.length; j++) {
@@ -163,6 +172,18 @@ const T = {
   zh: { t_web: "相同网站标识符", m9: "网站标识符：开发商自有网站上相同的公开 ID，每天从首页源代码、DNS 和 TLS 证书读取一次：分析、跟踪代码管理器、广告、像素或聊天 ID，定制 WordPress 主题，首页 HTML 骨架，共享证书，自有域名服务器或独立服务器地址。平台和共享主机已排除。共享 ID 通常意味着同一家营销公司、网页工作室或托管账户，而不是同一个所有者。", close: '关闭', dev: '开发商', m1: "来源：每个追踪项目在其页面上公布的研究记录（/data/named.json）。没有新的抓取，没有个人数据。", m2: "法律实体：带有法律形式（PT、LLC、Ltd、S.L. 等）的相同法定名称，忽略大小写、重音和标点。", m3: "注册号：公司名称旁公布的相同商业或税务号码（至少六位数字）。", m4: "网站域名：自有网站的相同域名，即域名中含有开发商或项目名称中的词。门户、代理、新闻网站和登记机构不计。", m5: "地址：带门牌号的相同街道级公司地址。只有城市的地址不会连线。", m6: "项目名称：同一国家内两个开发商名下的相同项目名称。", m7: "被 4 家以上开发商共用的标识视为门户、代理或模板，予以剔除。不按托管或董事连线：共享托管会把无关公司连在一起，而我们的公开登记数据只在项目内标记董事。", m8: "松巴岛项目不公开名称，因此不在此图中（利益冲突，见我们的独立性政策）。", g_title: '开发商关系网络', g_desc: '我们追踪的开发商中，哪些共用同一公司、注册号、网站、地址或项目名称。仅用我们的公开数据，每条连线都有来源。', g_lead: '当两家开发商的项目公布了相同的标识时，二者相连。连线是需要核实的事实，不是结论：集团、合资企业和代理商共用名称和网站很常见。', t_company: '同一法律实体', t_regid: '同一注册号', t_domain: '同一网站域名', t_address: '同一公司地址', t_name: '同一项目名称', search: '查找开发商', search_ph: '开发商名称', show_all: '显示没有连线的开发商', reset: '重置视图', s_dev: '家开发商', s_linked: '至少有一条连线', s_links: '条连线', s_clusters: '个群组', pick: '在图中选择开发商或搜索。', projects: '个项目', open: '打开开发商页面', nolinks: '我们的数据中没有该开发商的共用标识。', linkto: '连接到', via: '依据', on: '项目', how_h: '连线如何生成', loading: '正在加载…', err: '无法加载图。请刷新页面。', table_h: '全部连线', data: 'JSON 数据', dl: '下载 JSON', updated: '数据更新', kbd: '键盘：Tab 到列表，Enter 打开开发商。' },
   ar: { t_web: "معرّف الموقع نفسه", m9: "معرّف الموقع: المعرّف العام نفسه على المواقع الخاصة بالمطورين، يُقرأ مرة يومياً من شيفرة الصفحة الرئيسية وDNS وشهادة TLS: معرّف التحليلات أو مدير العلامات أو الإعلانات أو البكسل أو الدردشة، قالب WordPress خاص، هيكل HTML للصفحة الرئيسية، شهادة مشتركة، خوادم أسماء خاصة أو عنوان خادم مخصص. تُستبعد المنصات والاستضافة المشتركة. المعرّف المشترك يعني عادة وكالة التسويق نفسها أو استوديو الويب نفسه أو حساب الاستضافة نفسه، وليس المالك نفسه.", close: 'إغلاق', dev: 'المطور', m1: "المصدر: سجل البحث لكل مشروع نتابعه كما هو منشور في صفحته (/data/named.json). بلا جمع جديد للبيانات وبلا بيانات شخصية.", m2: "الشركة القانونية: الاسم القانوني نفسه مع الشكل القانوني (PT وLLC وLtd وS.L. وغيرها) بعد تجاهل حالة الأحرف والتشكيل وعلامات الترقيم.", m3: "رقم التسجيل: رقم السجل التجاري أو الضريبي نفسه (ستة أرقام أو أكثر) المنشور بجانب اسم الشركة.", m4: "نطاق الموقع: النطاق نفسه لموقع خاص، أي نطاق يحمل كلمة من اسم المطور أو المشروع. لا تُحتسب البوابات والوكلاء والمواقع الإخبارية والسجلات.", m5: "العنوان: عنوان الشركة نفسه على مستوى الشارع مع رقم المبنى. العناوين التي تذكر المدينة فقط لا تربط أبدًا.", m6: "اسم المشروع: اسم المشروع نفسه في البلد نفسه تحت اسمي مطورين.", m7: "المعرّف الذي يتشاركه أكثر من 4 مطورين يُعامل كبوابة أو وكالة أو قالب ويُستبعد. لا نربط بالاستضافة ولا بالمديرين: الاستضافة المشتركة تجمع شركات لا علاقة بينها، وبيانات السجلات العامة لدينا تميّز المديرين داخل كل مشروع فقط.", m8: "مشاريع سومبا لا تُسمّى، لذلك ليست في هذا الرسم (تضارب مصالح، راجع سياسة الاستقلالية).", g_title: 'شبكة المطورين', g_desc: 'أي المطورين الذين نتابعهم يتشاركون شركة أو رقم تسجيل أو موقعًا أو عنوانًا أو اسم مشروع. من بياناتنا العامة فقط، ولكل رابط مصدره.', g_lead: 'يرتبط مطوران عندما تنشر مشاريع لكليهما المعرّف نفسه. الرابط أمر يستحق التحقق، وليس حكمًا: المجموعات والمشاريع المشتركة والوكلاء يتشاركون الأسماء والمواقع لأسباب عادية.', t_company: 'الشركة القانونية نفسها', t_regid: 'رقم التسجيل نفسه', t_domain: 'نطاق الموقع نفسه', t_address: 'عنوان الشركة نفسه', t_name: 'اسم المشروع نفسه', search: 'ابحث عن مطور', search_ph: 'اسم المطور', show_all: 'إظهار المطورين بلا روابط', reset: 'إعادة العرض', s_dev: 'مطورًا', s_linked: 'لديهم رابط واحد على الأقل', s_links: 'روابط', s_clusters: 'مجموعات', pick: 'اختر مطورًا في الرسم أو ابحث عنه.', projects: 'مشاريع', open: 'افتح صفحة المطور', nolinks: 'لا يوجد معرّف مشترك في بياناتنا لهذا المطور.', linkto: 'مرتبط بـ', via: 'عبر', on: 'في', how_h: 'كيف تُبنى الروابط', loading: 'جارٍ التحميل…', err: 'تعذر تحميل الرسم. أعد تحميل الصفحة.', table_h: 'كل الروابط', data: 'بيانات JSON', dl: 'تنزيل JSON', updated: 'تحديث البيانات', kbd: 'لوحة المفاتيح: Tab إلى القائمة، Enter يفتح المطور.' },
 };
+// n19e (batch 19): corporate family link type
+const FAMT = {
+  en: { t_family: 'Same corporate family (GLEIF)', m10: 'Corporate family: the GLEIF level 2 data (CC0) of the LEI matched to each developer by exact legal name and country, read weekly: one is the direct or ultimate parent or a direct child of the other, or both report the same parent. That is accounting consolidation, not who builds or sells a project.' },
+  es: { t_family: 'Mismo grupo empresarial (GLEIF)', m10: 'Grupo empresarial: los datos de nivel 2 de GLEIF (CC0) del LEI asignado a cada promotor por nombre legal exacto y país, leídos cada semana: uno es la matriz directa o última o una filial directa del otro, o ambos declaran la misma matriz. Es consolidación contable, no quién construye o vende un proyecto.' },
+  de: { t_family: 'Gleicher Konzern (GLEIF)', m10: 'Konzern: die GLEIF-Level-2-Daten (CC0) der LEI, die jedem Bauträger über exakten Firmennamen und Land zugeordnet ist, wöchentlich gelesen: einer ist direkte oder oberste Mutter oder direkte Tochter des anderen, oder beide melden dieselbe Mutter. Das ist bilanzielle Konsolidierung, nicht wer ein Projekt baut oder verkauft.' },
+  fr: { t_family: 'Même groupe de sociétés (GLEIF)', m10: 'Groupe : les données de niveau 2 de GLEIF (CC0) du LEI attribué à chaque promoteur par nom légal exact et pays, lues chaque semaine : l\'un est la société mère directe ou ultime ou une filiale directe de l\'autre, ou les deux déclarent la même mère. C\'est la consolidation comptable, pas qui construit ou vend un projet.' },
+  nl: { t_family: 'Zelfde concern (GLEIF)', m10: 'Concern: de GLEIF niveau 2-gegevens (CC0) van de LEI die bij elke ontwikkelaar hoort op exacte bedrijfsnaam en land, wekelijks gelezen: de ene is directe of uiteindelijke moeder of directe dochter van de andere, of beide melden dezelfde moeder. Dat is boekhoudkundige consolidatie, niet wie een project bouwt of verkoopt.' },
+  ru: { t_family: 'Одна группа компаний (GLEIF)', m10: 'Группа компаний: данные GLEIF уровня 2 (CC0) по LEI, сопоставленному с застройщиком по точному юридическому названию и стране, читаются еженедельно: одна компания является прямой или конечной материнской или прямой дочерней для другой, или обе указывают одну материнскую компанию. Это бухгалтерская консолидация, а не то, кто строит или продаёт проект.' },
+  zh: { t_family: '同一企业集团（GLEIF）', m10: '企业集团：按确切法定名称和国家与每个开发商匹配的 LEI 的 GLEIF 二级数据（CC0），每周读取：一方是另一方的直接或最终母公司或直接子公司，或双方申报同一母公司。这是会计合并关系，不代表由谁建造或销售项目。' },
+  ar: { t_family: 'المجموعة نفسها (GLEIF)', m10: 'المجموعة: بيانات المستوى 2 من GLEIF (رخصة CC0) لمعرّف LEI المطابق لكل مطور بالاسم القانوني الدقيق والبلد، تُقرأ أسبوعياً: إحداهما الشركة الأم المباشرة أو النهائية أو تابعة مباشرة للأخرى، أو تصرّح الاثنتان بالشركة الأم نفسها. هذا توحيد محاسبي، وليس من يبني المشروع أو يبيعه.' },
+};
+for (const l of Object.keys(FAMT)) T[l] = Object.assign(T[l] || {}, FAMT[l]);
 const LT = {
   en: { l_title: 'X-rays running now', l_desc: 'A live globe of Project X-rays as people run them: the market of each check and how many evidence cards it produced. No links, no names, no project.', l_lead: 'Every dot is one X-ray, placed at the public point of its market, not at the project. We show the time, the market and the number of cards. Nothing else leaves the database.', c_all: 'X-rays run', c_24: 'in the last 24 hours', c_1: 'in the last hour', c_mk: 'markets', c_cards: 'evidence cards', recent: 'Most recent', none: 'No X-ray in the last 24 hours yet. Run one and watch it appear.', run: 'Run an X-ray', nomk: 'market not identified', cards: 'cards', ago_s: 'just now', ago_m: '{n} min ago', ago_h: '{n} h ago', ago_d: '{n} d ago', how_h: 'What this shows', h1: 'Source: our table of sealed X-rays, read through a public database function that returns only time (to the minute), market and card count.', h2: 'The dot sits on the market\'s public point (Natural Earth and GeoNames), the same point our map uses. The project\'s own location is never sent.', h3: 'X-rays of Sumba projects and X-rays where we could not place a market are counted but not drawn.', h4: 'The page asks for new X-rays every 15 seconds.', land: 'Land outline: Natural Earth (public domain).', paused: 'Paused', pause: 'Pause rotation', play: 'Resume rotation', loading: 'Connecting…', err: 'Live data is not available right now. The page will try again.', count_note: 'Counts start on 7 Nov 2026, when sealed X-rays began to be stored.', data: 'Data as JSON' },
   es: { l_title: 'Rayos X en curso', l_desc: 'Un globo en directo de los Rayos X de proyectos que se ejecutan: el mercado de cada comprobación y cuántas tarjetas de evidencia produjo. Sin enlaces, sin nombres, sin proyecto.', l_lead: 'Cada punto es un Rayo X, situado en el punto público de su mercado, no en el proyecto. Mostramos la hora, el mercado y el número de tarjetas. Nada más sale de la base de datos.', c_all: 'Rayos X ejecutados', c_24: 'en las últimas 24 horas', c_1: 'en la última hora', c_mk: 'mercados', c_cards: 'tarjetas de evidencia', recent: 'Más recientes', none: 'Aún no hay Rayos X en las últimas 24 horas. Ejecuta uno y verás cómo aparece.', run: 'Ejecutar un Rayo X', nomk: 'mercado no identificado', cards: 'tarjetas', ago_s: 'ahora', ago_m: 'hace {n} min', ago_h: 'hace {n} h', ago_d: 'hace {n} d', how_h: 'Qué muestra', h1: 'Fuente: nuestra tabla de Rayos X sellados, leída con una función pública que solo devuelve la hora (al minuto), el mercado y el número de tarjetas.', h2: 'El punto está en el punto público del mercado (Natural Earth y GeoNames), el mismo de nuestro mapa. Nunca se envía la ubicación del proyecto.', h3: 'Los Rayos X de proyectos en Sumba y los que no tienen mercado se cuentan pero no se dibujan.', h4: 'La página pide nuevos Rayos X cada 15 segundos.', land: 'Contorno de tierra: Natural Earth (dominio público).', paused: 'En pausa', pause: 'Pausar la rotación', play: 'Reanudar la rotación', loading: 'Conectando…', err: 'Los datos en directo no están disponibles ahora. La página lo reintentará.', count_note: 'El recuento empieza el 7 nov 2026, cuando se empezaron a guardar los Rayos X sellados.', data: 'Datos en JSON' },
@@ -182,13 +203,16 @@ let GMEMO = null;
 async function graph(env) {
   const ix = await namedData(env);
   const web = await webGroups(env).catch(() => ({ groups: [] }));
-  const key = (ix.named.updated || '') + '|' + ix.P.length + '|' + (web.updated || '');
+  const fam = await familyData(env).catch(() => null);
+  const key = (ix.named.updated || '') + '|' + ix.P.length + '|' + (web.updated || '') + '|' + ((fam && fam.updated) || '');
   if (GMEMO && GMEMO.key === key) return GMEMO.g;
-  const g = buildGraph(ix.P, web);
+  const g = buildGraph(ix.P, web, fam);
   g.version = GRAPH_V; g.updated = ix.named.updated || null; g.generated_at = new Date().toISOString();
   g.source = { named: ORIGIN + '/data/named.json', pages: ORIGIN + '/projects/<slug>/', licence: 'CC BY 4.0, Kolaboro' };
   g.types = { company: 'same legal company name', regid: 'same company registry or tax number', domain: 'same own-website registrable domain', address: 'same street-level company address', name: 'same project name in the same country', web: 'the same public identifier on both developers\' own websites: analytics, tag manager, ads, pixel or chat id, custom WordPress theme, homepage HTML skeleton, TLS certificate, own name servers or dedicated server address (/data/dev-links.json, read daily). Usually the same marketing agency, web studio or hosting account, not the same owner' };
   g.web_updated = web.updated || null;
+  g.types.family = 'GLEIF level 2 (CC0): one developer\'s matched LEI is the other\'s direct or ultimate parent or direct child, or both report the same direct or ultimate parent (/data/gleif-family.json, weekly). Accounting consolidation as reported to GLEIF.';
+  g.family_updated = (fam && fam.updated) || null;
   g.not_linked = ['hosting (shared hosts join unrelated companies)', 'directors (our public register data labels directors per project only; private individuals are never named)'];
   g.hub_rule = 'identifiers shared by more than ' + HUB + ' developers are dropped as portals, agencies or templates';
   GMEMO = { key, g }; return g;
@@ -264,8 +288,8 @@ const CSS = `<style id="knet14">
 
 function graphBody(lang) {
   const t = tr(T, lang), p = pre(lang);
-  const sw = (ty) => ({ company: '<svg width="34" height="10" aria-hidden="true"><line x1="1" y1="5" x2="33" y2="5" stroke="currentColor" stroke-width="3"/></svg>', regid: '<svg width="34" height="10" aria-hidden="true"><line x1="1" y1="3" x2="33" y2="3" stroke="currentColor" stroke-width="1.6"/><line x1="1" y1="7" x2="33" y2="7" stroke="currentColor" stroke-width="1.6"/></svg>', domain: '<svg width="34" height="10" aria-hidden="true"><line x1="1" y1="5" x2="33" y2="5" stroke="currentColor" stroke-width="2.4" stroke-dasharray="7 4"/></svg>', address: '<svg width="34" height="10" aria-hidden="true"><line x1="1" y1="5" x2="33" y2="5" stroke="currentColor" stroke-width="2.4" stroke-dasharray="2 4" stroke-linecap="round"/></svg>', name: '<svg width="34" height="10" aria-hidden="true"><line x1="1" y1="5" x2="33" y2="5" stroke="currentColor" stroke-width="1.2"/></svg>', web: '<svg width="34" height="10" aria-hidden="true"><line x1="1" y1="5" x2="33" y2="5" stroke="currentColor" stroke-width="1.6" stroke-dasharray="10 3 2 3"/></svg>' })[ty];
-  const types = ['company', 'regid', 'domain', 'address', 'name', 'web'];
+  const sw = (ty) => ({ company: '<svg width="34" height="10" aria-hidden="true"><line x1="1" y1="5" x2="33" y2="5" stroke="currentColor" stroke-width="3"/></svg>', regid: '<svg width="34" height="10" aria-hidden="true"><line x1="1" y1="3" x2="33" y2="3" stroke="currentColor" stroke-width="1.6"/><line x1="1" y1="7" x2="33" y2="7" stroke="currentColor" stroke-width="1.6"/></svg>', domain: '<svg width="34" height="10" aria-hidden="true"><line x1="1" y1="5" x2="33" y2="5" stroke="currentColor" stroke-width="2.4" stroke-dasharray="7 4"/></svg>', address: '<svg width="34" height="10" aria-hidden="true"><line x1="1" y1="5" x2="33" y2="5" stroke="currentColor" stroke-width="2.4" stroke-dasharray="2 4" stroke-linecap="round"/></svg>', name: '<svg width="34" height="10" aria-hidden="true"><line x1="1" y1="5" x2="33" y2="5" stroke="currentColor" stroke-width="1.2"/></svg>', web: '<svg width="34" height="10" aria-hidden="true"><line x1="1" y1="5" x2="33" y2="5" stroke="currentColor" stroke-width="1.6" stroke-dasharray="10 3 2 3"/></svg>', family: '<svg width="34" height="10" aria-hidden="true"><line x1="1" y1="5" x2="33" y2="5" stroke="currentColor" stroke-width="2.8" stroke-dasharray="1 3" stroke-linecap="round"/></svg>' })[ty];
+  const types = ['company', 'regid', 'domain', 'address', 'name', 'web', 'family'];
   return '<div class="kn14" data-kn14 data-lang="' + lang + '" data-pre="' + p + '" data-t="' + esc(JSON.stringify(t)) + '">' +
     '<header class="k-phead k-wrap"><nav class="k-crumb" aria-label="Breadcrumb"><a href="' + p + '/">Kolaboro</a> / <a href="/graph/">Company graph</a> / <span aria-current="page">' + esc(t.g_title) + '</span></nav>' +
     '<h1>' + esc(t.g_title) + '</h1><p class="lead">' + esc(t.g_lead) + '</p>' +
@@ -276,15 +300,15 @@ function graphBody(lang) {
     '<fieldset class="kn-card"><legend class="k-vh">Link types</legend><ul class="kn-legend">' + types.map(ty => '<li><label><input type="checkbox" checked data-ty="' + ty + '"> ' + sw(ty) + ' ' + esc(t['t_' + ty]) + ' <small data-ct="' + ty + '"></small></label></li>').join('') +
     '<li><label><input type="checkbox" id="kn-iso"> ' + esc(t.show_all) + '</label></li></ul></fieldset>' +
     '<div class="kn-card" id="kn-info" aria-live="polite"><p class="k-muted">' + esc(t.pick) + '</p></div></aside></div>' +
-    '<div class="kn-how k-prose"><h2>' + esc(t.how_h) + '</h2><ul>' + ['m1', 'm2', 'm3', 'm4', 'm5', 'm6', 'm9', 'm7', 'm8'].map(k => '<li>' + esc(t[k] || T.en[k]) + '</li>').join('') + '</ul>' +
+    '<div class="kn-how k-prose"><h2>' + esc(t.how_h) + '</h2><ul>' + ['m1', 'm2', 'm3', 'm4', 'm5', 'm6', 'm9', 'm10', 'm7', 'm8'].map(k => '<li>' + esc(t[k] || T.en[k]) + '</li>').join('') + '</ul>' +
     '<p><a href="/api/x/net/graph">' + esc(t.data) + '</a> · <a href="/data/named.json">named.json</a> · <a href="/independence/">Independence policy</a></p></div>' +
     '<div class="kn-all"><h2>' + esc(t.table_h) + '</h2><div class="k-table-wrap"><table class="k-table k-table--dense k-table--stack"><thead><tr><th>' + esc(t.dev) + '</th><th>' + esc(t.dev) + '</th><th>' + esc(t.via) + '</th></tr></thead><tbody id="kn-tb"></tbody></table></div></div></section></div>';
 }
 const GRAPH_JS = String.raw`(function(){
 var R=document.querySelector('[data-kn14]');if(!R)return;var T=JSON.parse(R.getAttribute('data-t')),PRE=R.getAttribute('data-pre'),RTL=document.documentElement.dir==='rtl';
 var cv=document.getElementById('kn-c'),cx=cv.getContext('2d'),plate=document.getElementById('kn-plate'),tip=document.getElementById('kn-tip'),msg=document.getElementById('kn-msg'),info=document.getElementById('kn-info');
-var TY=['company','regid','domain','address','name','web'],DASH={company:[],regid:[],domain:[7,4],address:[2,4],name:[],web:[10,3,2,3]},W={company:2.6,regid:1.6,domain:2,address:2,name:1,web:1.6};
-var G,N=[],L=[],on={company:1,regid:1,domain:1,address:1,name:1,web:1},iso=false,sel=-1,hov=-1,dpr=1,Wd=0,Ht=0,FONT='13px Archivo,system-ui,sans-serif';
+var TY=['company','regid','domain','address','name','web','family'],DASH={company:[],regid:[],domain:[7,4],address:[2,4],name:[],web:[10,3,2,3],family:[1,3]},W={company:2.6,regid:1.6,domain:2,address:2,name:1,web:1.6,family:2.8};
+var G,N=[],L=[],on={company:1,regid:1,domain:1,address:1,name:1,web:1,family:1},iso=false,sel=-1,hov=-1,dpr=1,Wd=0,Ht=0,FONT='13px Archivo,system-ui,sans-serif';
 function css(v){return getComputedStyle(document.documentElement).getPropertyValue(v).trim()||'#333'}
 var C={};function pal(){C={ink:css('--k-ink'),muted:css('--k-muted'),line:css('--k-line-2'),sea:css('--k-sea'),surf:css('--k-surface'),brand:css('--k-brand'),faint:css('--k-faint'),sunk:css('--k-sunken')}}
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}

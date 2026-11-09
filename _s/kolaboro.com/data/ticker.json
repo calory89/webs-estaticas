@@ -4,6 +4,20 @@
   {
    "date": "2026-11-09",
    "kind": "shipped",
+   "text": "Site check on 560 page views and 3,078 links: the two account checks merged into one, clearer tool descriptions and jump links, a country search, an accessible pricing table and a tidier free check on phones",
+   "tl": {
+    "es": "Revisión del sitio en 560 páginas y 3.078 enlaces: las dos comprobaciones de cuenta unidas en una, descripciones de herramientas más claras, buscador de países, tabla de precios accesible y comprobación gratuita más clara en el móvil",
+    "fr": "Vérification du site sur 560 pages et 3 078 liens : les deux vérifications de compte réunies, des descriptions d'outils plus claires, une recherche de pays, un tableau des prix accessible et une vérification gratuite plus nette sur mobile",
+    "de": "Website-Prüfung über 560 Seitenaufrufe und 3.078 Links: die zwei Kontoprüfungen zusammengelegt, klarere Werkzeugbeschreibungen, eine Ländersuche, eine barrierefreie Preistabelle und ein aufgeräumter Gratis-Check auf dem Handy",
+    "nl": "Sitecontrole op 560 paginaweergaven en 3.078 links: de twee rekeningchecks samengevoegd, duidelijkere toolbeschrijvingen, een landenzoeker, een toegankelijke prijstabel en een nettere gratis check op de telefoon",
+    "ru": "Проверка сайта на 560 страницах и 3078 ссылках: две проверки счёта объединены, описания инструментов стали понятнее, появился поиск страны, доступная таблица цен и аккуратная бесплатная проверка на телефоне",
+    "zh": "全站检查 560 次页面浏览和 3,078 个链接：两个账户核查合并为一个，工具说明更清楚，新增国家搜索，价格表更易访问，手机上的免费核查更整洁",
+    "ar": "فحص الموقع على 560 صفحة و3,078 رابطاً: دمج فحصَي الحساب في فحص واحد، وأوصاف أوضح للأدوات، وبحث عن الدول، وجدول أسعار ميسّر، وفحص مجاني أوضح على الهاتف"
+   }
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "shipped",
    "text": "Short-let reality check on 28 project pages: Inside Airbnb listings within 1 km, median nightly price and their occupancy estimate, next to any rental yield the page we track prints",
    "tl": {
     "es": "Comprobación del alquiler turístico en 28 proyectos: anuncios de Inside Airbnb a menos de 1 km, precio mediano por noche y su estimación de ocupación, junto a la rentabilidad que imprime la página que seguimos",
