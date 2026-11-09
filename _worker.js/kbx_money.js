@@ -239,8 +239,8 @@ function soldHtml(sn, x, lang) {
   h += '<p class="kfact">' + fill(lang, 'so_reg', { reg: H(regA), a: fdt(r.from, lang), b: fdt(r.to, lang) }) + '</p>';
   const th = t(lang, 'so_th');
   const rows = (ROWS[r.reg] || []).filter(([k]) => r[k] && r[k].n);
-  h += '<div class="k-table-wrap kmo-tw"><table class="k-table k-table--dense"><thead><tr><th scope="col">' + esc(th[0]) + '</th><th scope="col" class="k-n">' + esc(th[1]) + '</th><th scope="col" class="k-n">' + esc(th[2]) + '</th><th scope="col" class="k-n">' + esc(th[3]) + '</th></tr></thead><tbody>' +
-    rows.map(([k, lbl]) => { const s = r[k]; return '<tr><th scope="row">' + esc(t(lang, lbl)) + '</th><td class="k-n">' + ltr(fnum(s.n, lang)) + '</td><td class="k-n">' + (ok(s) ? ltr(P(s.p50)) : '<span class="k-muted">-</span>') + '</td><td class="k-n">' + (ok(s) ? ltr(P(s.p25)) + ' - ' + ltr(P(s.p75)) : '<span class="k-muted">-</span>') + '</td></tr>'; }).join('') + '</tbody></table></div>';
+  h += '<div class="k-table-wrap kmo-tw"><table class="k-table k-table--dense"><thead><tr><th scope="col">' + esc(th[0]) + '</th><th scope="col" class="k-n">' + esc(th[1]) + '</th><th scope="col" class="k-n">' + esc(th[2]) + '<br><small class="k-muted">' + esc(th[3]) + '</small></th></tr></thead><tbody>' +
+    rows.map(([k, lbl]) => { const s = r[k]; return '<tr><th scope="row">' + esc(t(lang, lbl)) + '</th><td class="k-n">' + ltr(fnum(s.n, lang)) + '</td><td class="k-n">' + (ok(s) ? '<b>' + ltr(P(s.p50)) + '</b><br><small class="k-muted">' + ltr(P(s.p25)) + ' - ' + ltr(P(s.p75)) + '</small>' : '<span class="k-muted">-</span>') + '</td></tr>'; }).join('') + '</tbody></table></div>';
   const L = [];
   if (r.reg === 'dvf') {
     if (ok(r.m2)) L.push(fill(lang, 'so_m2', { p50: P(r.m2.p50), p25: P(r.m2.p25), p75: P(r.m2.p75), n: fnum(r.m2.n, lang) }));
@@ -264,7 +264,7 @@ function soldHtml(sn, x, lang) {
 }
 
 export const MONEY_CSS = '.kmo-q{margin:8px 0;padding:6px 14px;border-inline-start:3px solid var(--k-line-2,var(--line));color:var(--k-ink-2,var(--ink));font-size:var(--k-fs-sm,15px);overflow-wrap:anywhere}.kmo-l{margin:12px 0 4px;font-weight:600}' +
-  '.kmo-tw{margin:12px 0;max-width:640px;overflow-x:auto}.kmo-tw caption{text-align:start;padding:0 0 6px;caption-side:top}.kmo-tw .k-n{text-align:end;white-space:nowrap}.kmo .fl{overflow-wrap:anywhere}';
+  '.kmo-tw{margin:12px 0;max-width:640px;overflow-x:auto}.kmo-tw caption{text-align:start;padding:0 0 6px;caption-side:top}.kmo-tw .k-n{text-align:end;white-space:nowrap}.kmo-tw th[scope=row]{min-width:0}@media (max-width:480px){.kmo-tw th,.kmo-tw td{padding-inline:8px}}.kmo .fl{overflow-wrap:anywhere}';
 
 // whole section body for the named page ('' when nothing near this project)
 export function moneyHtml(md, x, lang) {

@@ -31,7 +31,8 @@ import { seoLd } from './kbx_lastmod.js';   // batch 15 (s15b): true dateModifie
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v40';   // v40: protected land (#land) and map history (#maphist) (n19c)
+const CACHE_V = 'named-v41';   // v41: #money sales table in 3 columns on phones (n19b)
+//     // 'named-v40';   // v40: protected land (#land) and map history (#maphist) (n19c)
 //     // 'named-v39';   // v39: corporate family from GLEIF level 2 on developer pages (n19e)
 //     // 'named-v38';   // v38: rent and resale near the site #money (n19b)
 //     // 'named-v37';   // v37: UX sweep (n19f): price copies merged, singular forms, Arabic name isolation, short-answer meta line
