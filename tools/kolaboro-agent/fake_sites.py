@@ -411,7 +411,9 @@ def main():
     todo = []
     for cand, e in sorted(found.items(), key=lambda kv: (kv[0] not in old, kv[1]['src'] != 'ct', kv[0])):
         c = enr.get(cand)
-        if not c or (NOW - datetime.fromisoformat(c['at'] + 'T00:00:00+00:00')).days >= 7:
+        age = (NOW - datetime.fromisoformat(c['at'] + 'T00:00:00+00:00')).days if c else 99
+        recent_reg = bool(c and c.get('reg')) and (NOW.date() - datetime.strptime(c['reg'], '%Y-%m-%d').date()).days <= WINDOW
+        if age >= 7 or (recent_reg and not c.get('cert') and age >= 1 and not c.get('crt_ok')):
             todo.append(cand)
     todo = todo[:budget]
 
@@ -428,7 +430,7 @@ def main():
             a = crt_json_all(cand)           # full certificate history: the earliest one stands in for the registration date
             ds = sorted(d for d in ((x.get('not_before') or '')[:10] for x in (a or [])) if d and (not reg or d >= reg))   # since this registration
             cert, first = (ds[0], True) if ds else (None, a is not None)
-        enr[cand] = {'at': TODAY, 'reg': reg, 'rst': rst, 'cert': cert, 'first': first, 'ns': ns_of(cand)}
+        enr[cand] = {'at': TODAY, 'reg': reg, 'rst': rst, 'cert': cert, 'first': first, 'ns': ns_of(cand), 'crt_ok': bool(cert) or first}
     rdap('example.com')   # loads the IANA bootstrap once before the threads start
     with cf.ThreadPoolExecutor(6) as ex:
         list(ex.map(enrich, todo))
