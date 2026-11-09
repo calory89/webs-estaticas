@@ -1,0 +1,56 @@
+name: Kolaboro corporate family (GLEIF level 2)
+# Weekly: every developer on the named pages (kolaboro.com/data/named.json), matched to a Legal Entity Identifier record on the
+# GLEIF API (CC0, no key) by exact legal name plus country, with its direct and ultimate parents and direct children.
+# Publishes kolaboro.com/data/gleif-family.json (read by developer pages and /graph/developers/). Companies only, no people.
+# Light by design (budget rule, 9 Nov): incremental from the published file, at most 400 GLEIF requests (a few minutes),
+# nothing is committed when nothing changed.
+on:
+  schedule:
+    - cron: '41 3 * * 2'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+concurrency:
+  group: kolaboro-gleif-family
+  cancel-in-progress: false
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          sparse-checkout: |
+            tools/kolaboro-w
+          sparse-checkout-cone-mode: false
+      - name: Build
+        run: |
+          set -e
+          mkdir -p "$RUNNER_TEMP/site/data"
+          curl -sSf --retry 3 -o "$RUNNER_TEMP/named.json" "https://kolaboro.com/data/named.json?w=gleif-family"
+          curl -sSf --retry 3 -o "$RUNNER_TEMP/prev.json" "https://kolaboro.com/data/gleif-family.json?w=gleif-family" || rm -f "$RUNNER_TEMP/prev.json"
+          [ -s "$RUNNER_TEMP/prev.json" ] || { echo "no published file to build on (a full build is a manual run of the script): not running"; echo "SKIP=1" >> $GITHUB_ENV; exit 0; }
+          set +e
+          python3 -I tools/kolaboro-w/gleif_family.py "$RUNNER_TEMP/named.json" "$RUNNER_TEMP/site/data/gleif-family.json" "$RUNNER_TEMP/prev.json" 400 2> "$RUNNER_TEMP/log.txt"
+          RC=$?; set -e; tail -2 "$RUNNER_TEMP/log.txt"
+          if [ "$RC" = "3" ]; then echo "SKIP=1" >> $GITHUB_ENV; exit 0; fi
+          [ "$RC" = "0" ] || { tail -20 "$RUNNER_TEMP/log.txt"; exit 1; }
+      - name: Publish to kolaboro.com
+        if: env.SKIP != '1'
+        run: |
+          set -e
+          git config user.name "kolaboro-agent"; git config user.email "agent@kolaboro.com"
+          git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          for i in 1 2 3 4 5; do
+            P=$(git rev-parse FETCH_HEAD)
+            export GIT_INDEX_FILE=$RUNNER_TEMP/idx; rm -f $GIT_INDEX_FILE; git read-tree $P
+            H=$(git hash-object -w "$RUNNER_TEMP/site/data/gleif-family.json")
+            git update-index --add --cacheinfo 100644,$H,_s/kolaboro.com/data/gleif-family.json
+            T=$(git write-tree --missing-ok); unset GIT_INDEX_FILE
+            [ "$(git rev-parse $P^{tree})" = "$T" ] && { echo "no change"; exit 0; }
+            C=$(git commit-tree $T -p $P -m "kolaboro.com: corporate family (GLEIF level 2) $(date -u +%F)")
+            git push -q origin $C:refs/heads/pub/_lovable && exit 0
+            sleep 7; git fetch -q --depth=1 --filter=blob:none origin pub/_lovable
+          done; exit 1
