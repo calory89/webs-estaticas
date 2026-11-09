@@ -328,8 +328,8 @@
   }
 
   function load() {
-    var ref = ST.ref;
     render();
+    var ref = ST.ref;   // n20f: read after render(), which picks the first saved project when none is chosen yet; read before, the chart of a first-time visitor stayed on "Loading…" until the next refresh
     var a = ST.items === null ? api('list', {}) : Promise.resolve(null);
     var b = ref ? series(ref) : Promise.resolve(null);
     return Promise.all([a, b]).then(function (r) {
@@ -338,7 +338,7 @@
       if (!ST.ref) { var R = refs(); ST.ref = R.all[0] || null; if (ST.ref) return load(); }
       render();
       // names for the project picker (cached by the CDN for 10 minutes)
-      refs().all.slice(0, 15).forEach(function (x) { if (!ST.series[x]) { series(x).then(function (v) { ST.series[x].done = true; ST.series[x].v = v; var o = ST.el && ST.el.querySelector('#kpay-p option[value="' + x + '"]'); if (o && v && v.name) o.textContent = v.name + ' (' + x + ')' + (refs().saved.indexOf(x) < 0 ? ', ' + t('unsaved') : ''); }); } });
+      refs().all.slice(0, 15).forEach(function (x) { if (!ST.series[x]) { series(x).then(function (v) { var was = ST.series[x].done; ST.series[x].done = true; ST.series[x].v = v; if (!was && x === ST.ref && ST.edit == null && !(document.activeElement && document.activeElement.closest && document.activeElement.closest('#kpay-f'))) { render(); return; } var o = ST.el && ST.el.querySelector('#kpay-p option[value="' + x + '"]'); if (o && v && v.name) o.textContent = v.name + ' (' + x + ')' + (refs().saved.indexOf(x) < 0 ? ', ' + t('unsaved') : ''); }); } });
     });
   }
 
