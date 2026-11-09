@@ -632,13 +632,19 @@
                "null",
                "string"
               ]
+             },
+             "tl": {
+              "type": "object",
+              "description": "The same line in other languages, keyed by language code, when available.",
+              "additionalProperties": {
+               "type": "string"
+              }
              }
             },
             "required": [
              "d",
              "k",
-             "t",
-             "u"
+             "t"
             ]
            }
           }
@@ -16461,7 +16467,6 @@
             },
             "required": [
              "id",
-             "note",
              "objective",
              "source",
              "state"

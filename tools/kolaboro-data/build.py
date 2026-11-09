@@ -30,6 +30,21 @@ REPO = os.environ.get('GITHUB_REPOSITORY', 'calory89/webs-estaticas')
 LIC_URI = {'CC BY 4.0': 'https://creativecommons.org/licenses/by/4.0/', 'Public domain': 'https://www.naturalearthdata.com/about/terms-of-use/'}
 MEDIA = {'json': 'application/json', 'parquet': 'application/vnd.apache.parquet', 'webp': 'image/webp', 'bin': 'application/octet-stream', 'html': 'text/html'}
 FREQ = {1: 'HOURLY', 24: 'DAILY', 168: 'WEEKLY', 744: 'MONTHLY'}
+
+
+def freq_of(h):
+    # EU frequency vocabulary term for an update interval in hours. Intervals that are not exactly hourly, daily, weekly or monthly
+    # (a cron moved to every 2 days, a 720 hour month...) map to the nearest term instead of None, which crashed the DCAT export.
+    try: h = float(h)
+    except (TypeError, ValueError): return 'IRREG'
+    if h in FREQ: return FREQ[h]
+    if h <= 1.5: return 'HOURLY'
+    if h <= 36: return 'DAILY'
+    if h <= 252: return 'WEEKLY'
+    if h <= 504: return 'BIWEEKLY'
+    if h <= 1100: return 'MONTHLY'
+    if h <= 3300: return 'QUARTERLY'
+    return 'ANNUAL'
 NOW = datetime.now(timezone.utc)
 STAMP = NOW.strftime('%Y-%m-%dT%H:%M:%SZ')
 
@@ -280,7 +295,7 @@ def main():
         fr['status'] = status_of(fr)
         entry['freshness'] = fr
         entry['last_updated'] = fr['data_as_of']
-        entry['frequency'] = FREQ.get(d.get('interval_hours')) if d.get('interval_hours') else ('IRREG' if d.get('event') or d.get('workflow') else ('NEVER' if d['kind'] in ('tiles', 'sample') else 'IRREG'))
+        entry['frequency'] = freq_of(d.get('interval_hours')) if d.get('interval_hours') else ('IRREG' if d.get('event') or d.get('workflow') else ('NEVER' if d['kind'] in ('tiles', 'sample') else 'IRREG'))
         datasets.append(entry)
 
     # ------------------------------------------------------------------ API contract check against the live API
@@ -411,7 +426,7 @@ def dcat(cat, spec):
         d = {'@id': BASE + '/data/#' + x['id'], '@type': 'dcat:Dataset', 'dct:identifier': x['id'], 'dct:title': x['title'], 'dct:description': x['description'],
              'dcat:keyword': x.get('keywords') or [], 'dct:publisher': {'@id': BASE + '/#org'}, 'dct:license': {'@id': lic_uri(x['licence'])}, 'dct:rights': x['licence'],
              'dcat:landingPage': {'@id': BASE + '/data/#' + x['id']}, 'dcat:distribution': [dist],
-             'dct:accrualPeriodicity': {'@id': 'http://publications.europa.eu/resource/authority/frequency/' + x['frequency']}}
+             'dct:accrualPeriodicity': {'@id': 'http://publications.europa.eu/resource/authority/frequency/' + (x.get('frequency') or 'IRREG')}}
         if x.get('last_updated'): d['dct:modified'] = {'@value': x['last_updated'], '@type': 'xsd:dateTime'}
         if x.get('schema_url'): d['dct:conformsTo'] = {'@id': x['schema_url']}
         ds.append(d)
