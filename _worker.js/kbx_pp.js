@@ -422,7 +422,7 @@ document.querySelectorAll('[data-pp-sample]').forEach(function(b){b.addEventList
  show(c);sel.value=b.getAttribute('data-pp-sample')==='es'?'spa':b.getAttribute('data-pp-sample')==='id'?'ind':'eng';run()})});
 // ---------- OCR (tesseract.js 5.1.1 from jsDelivr, loaded on first use) ----------
 var TJS='${TJS}';
-function lib(){return new Promise(function(ok,no){if(window.Tesseract)return ok(window.Tesseract);var s=document.createElement('script');s.src=TJS;s.crossOrigin='anonymous';s.onload=function(){ok(window.Tesseract)};s.onerror=function(){no(new Error('script'))};document.head.appendChild(s)})}
+function lib(){return new Promise(function(ok,no){if(window.Tesseract)return ok(window.Tesseract);var s=document.createElement('script');s.src=TJS;s.integrity='sha384-GJqSu7vueQ9qN0E9yLPb3Wtpd7OrgK8KmYzC8T1IysG1bcvxvIO4qtYR/D3A991F';s.crossOrigin='anonymous';s.onload=function(){ok(window.Tesseract)};s.onerror=function(){no(new Error('script'))};document.head.appendChild(s)})}
 function langs(){var l=sel.value;return l==='eng'?'eng':'eng+'+l}
 function getWorker(){var L=langs();if(worker&&wlang===L)return Promise.resolve(worker);
  var old=worker;worker=null;if(old)old.terminate();say(T.st_load);setProg(0);

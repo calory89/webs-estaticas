@@ -181,8 +181,8 @@ export function seeHtml(sd, id, lang, fd, name) {
 // ------------------------------------------------------------------------------------------------ 3D viewer (browser)
 const VIEWER = `(function(){
 var ML="${ML_CDN}";
-function css(){if(document.getElementById("ksee-ml-css"))return;var l=document.createElement("link");l.id="ksee-ml-css";l.rel="stylesheet";l.href=ML+"maplibre-gl.min.css";document.head.appendChild(l);}
-function lib(){return new Promise(function(ok,no){if(window.maplibregl)return ok();var s=document.createElement("script");s.src=ML+"maplibre-gl.min.js";s.crossOrigin="anonymous";s.onload=function(){ok()};s.onerror=no;document.head.appendChild(s);});}
+function css(){if(document.getElementById("ksee-ml-css"))return;var l=document.createElement("link");l.id="ksee-ml-css";l.rel="stylesheet";l.href=ML+"maplibre-gl.min.css";l.integrity="sha384-K282sW/zFjTkrjR/+yr1H+gCukuy4OEYrkXRybV88g7pk+kZZYpNV6SAV59NcgFg";l.crossOrigin="anonymous";document.head.appendChild(l);}
+function lib(){return new Promise(function(ok,no){if(window.maplibregl)return ok();var s=document.createElement("script");s.src=ML+"maplibre-gl.min.js";s.integrity="sha384-KKgyz2mG25bKJ1O2PyqTJPlAF8Kw2BpDmsLTNBXslICOBvhTAyF5F0XhLWF2ZovY";s.crossOrigin="anonymous";s.onload=function(){ok()};s.onerror=no;document.head.appendChild(s);});}
 function gl(){try{var c=document.createElement("canvas");return !!(c.getContext("webgl2")||c.getContext("webgl"));}catch(e){return false}}
 function circle(lat,lng,r,n){var k=Math.cos(lat*Math.PI/180),o=[];for(var i=0;i<=n;i++){var a=i/n*2*Math.PI;o.push([lng+Math.cos(a)*r/(111320*k),lat+Math.sin(a)*r/110540]);}return o;}
 window.kSee3D=function(r){

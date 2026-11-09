@@ -518,7 +518,9 @@ function imgIndex(idx) {
   IMX = { src: idx, F, C, ids: it.map(x => x[0]) }; return IMX;
 }
 async function fetchImage(u, referer) {
+  if (!publicUrl(u)) throw new Error('not a public address');   // n20s: picture addresses come from the pasted page, so they pass the same address rules as the page itself
   const r = await withTimeout(fetch(u, { headers: { accept: 'image/jpeg,image/png;q=0.9,image/*;q=0.2', 'user-agent': BUA, referer } }), 5000, 'image');
+  if (r.url && r.url !== u && !publicUrl(r.url)) { try { r.body && r.body.cancel(); } catch (e) {} throw new Error('not a public address'); }
   if (!r.ok) { try { r.body && r.body.cancel(); } catch (e) {} throw new Error('HTTP ' + r.status); }
   const b = await readMax(r, 3000000); if (!b) throw new Error('larger than 3 MB');
   return b;

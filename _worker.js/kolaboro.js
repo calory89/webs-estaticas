@@ -43,6 +43,8 @@ function json(o, s = 200) {
 function okUrl(raw) {
   let u; try { u = new URL(/^https?:\/\//i.test(raw) ? raw : 'https://' + raw); } catch (e) { return null; }
   if (!/^https?:$/.test(u.protocol)) return null;
+  if (u.port && !['80', '443', '8080', '8443'].includes(u.port)) return null;   // n20s: web ports only, so the reader cannot be pointed at other services
+  u.username = ''; u.password = '';                                             // n20s: never send credentials embedded in a pasted link
   const h = u.hostname.toLowerCase();
   if (h === 'localhost' || h.endsWith('.local') || h.endsWith('.internal') || h.endsWith('.localhost') || /^[\d.]+$/.test(h) || /(^|\.)\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}(\.|$)/.test(h) || /\b(nip|sslip|xip)\.io$/.test(h) || h.includes(':') || !h.includes('.')) return null;
   if (h.endsWith('kolaboro.com')) return null;

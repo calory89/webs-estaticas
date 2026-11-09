@@ -130,6 +130,17 @@ async function bicName(b) {
   } catch (e) { return { bic: b, found: null, reason: 'unavailable', src: url }; }
 }
 
+async function limited(req, ctx, max) {
+  try {
+    const ip0 = req.headers.get('cf-connecting-ip') || 'x', ip = ip0.includes(':') ? ip0.split(':').slice(0, 4).join(':') : ip0, hour = new Date().toISOString().slice(0, 13);
+    const k = new Request('https://kolaboro.com/__fraud_rl/' + encodeURIComponent(ip) + '/' + hour);
+    const hit = await caches.default.match(k), n = hit ? (+(await hit.text()) || 0) : 0;
+    if (n >= max) return true;
+    const p = caches.default.put(k, new Response(String(n + 1), { headers: { 'cache-control': 'max-age=3600' } }));
+    if (ctx && ctx.waitUntil) ctx.waitUntil(p.catch(() => {})); else await p.catch(() => {});
+  } catch (e) {}
+  return false;
+}
 export async function handle(req, u, env, ctx) {
   if (req.method !== 'GET' && req.method !== 'HEAD') return out({ error: 'method' }, 405, 'no-store');
   const p = u.pathname.replace(/\/+$/, '');
@@ -143,6 +154,8 @@ export async function handle(req, u, env, ctx) {
     if (isB ? !/^[A-Z]{4}[A-Z]{2}[A-Z0-9]{2}([A-Z0-9]{3})?$/.test(v) : !HOST_RX.test(v)) return out({ error: isB ? 'a SWIFT/BIC code has 8 or 11 letters and digits' : 'one domain name, like example.com' }, 400, 'no-store');
     const cache = caches.default, key = new Request('https://kolaboro.com/__c/fraud-v1/' + (isB ? 'b/' : 'd/') + v);
     try { const hit = await cache.match(key); if (hit) return hit; } catch (e) {}
+    // n20s: answers already made are served from the cache without limit; new lookups (each one asks DNS, RDAP or GLEIF) are limited per address
+    if (await limited(req, ctx, 120)) return out({ error: 'rate', note: 'At most 120 new lookups per hour from one address. Try again later.' }, 429, 'no-store');
     const body = isB ? await bicName(v) : await domainFacts(v);
     const ok = isB ? body.found !== null : (body.spf.lookup === 'ok' || body.rdap.found);
     const res = out(body, 200, ok ? 'public, max-age=21600' : 'no-store');

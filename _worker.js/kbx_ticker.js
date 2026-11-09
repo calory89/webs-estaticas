@@ -44,11 +44,17 @@ export async function tickerHtml(env) {
   return h;
 }
 
+// n20s (9 Nov 2026), defence in depth on every HTML page: a link whose address is a script or data URL (it could only come from
+// third-party text such as an OpenStreetMap tag, a register record or a developer page) is made inert. Escaping alone does not stop these.
+// The selector only fires on the rare href that contains "script" or starts with "data:", so normal pages pay nothing.
+const BAD_HREF = 'a[href*="script" i], a[href^="data:" i], area[href*="script" i]';
+function safeHref(e) { const v = (e.getAttribute('href') || '').replace(/[\t\n\r]/g, ''); if (/^[\u0000-\u0020]*(?:javascript|vbscript|data):/i.test(v)) { e.setAttribute('href', '#'); e.removeAttribute('target'); } }
 export async function kbTick(req, r, env) {
   try {
     if (req.method !== 'GET' || !r || r.status !== 200 || !/text\/html/.test(r.headers.get('content-type') || '')) return r;
     const h = await tickerHtml(env);
-    if (!h) return r;
-    return new HTMLRewriter().on('.ship-g', { element(e) { e.setInnerContent(h, { html: true }); } }).on('script[src^="/k/site.js"]', { element(e) { e.setAttribute('src', '/k/site.js?v=' + SITE_V); } }).transform(r);
+    let rw = new HTMLRewriter().on(BAD_HREF, { element: safeHref });
+    if (h) rw = rw.on('.ship-g', { element(e) { e.setInnerContent(h, { html: true }); } }).on('script[src^="/k/site.js"]', { element(e) { e.setAttribute('src', '/k/site.js?v=' + SITE_V); } });
+    return rw.transform(r);
   } catch (e) { return r; }
 }

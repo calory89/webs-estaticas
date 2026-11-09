@@ -4,6 +4,20 @@
   {
    "date": "2026-11-09",
    "kind": "shipped",
+   "text": "Security hardening: pages now refuse inline script handlers, links built from third-party data cannot run scripts, the map and text-reading libraries are pinned with integrity hashes, and payment-check lookups are rate limited",
+   "tl": {
+    "es": "Refuerzo de seguridad: las páginas rechazan los manejadores de script en línea, los enlaces creados con datos de terceros no pueden ejecutar scripts, las bibliotecas de mapas y de lectura de texto quedan fijadas con hashes de integridad y las consultas de comprobación de pagos tienen límite de frecuencia",
+    "fr": "Sécurité renforcée : les pages refusent les gestionnaires de script en ligne, les liens créés à partir de données tierces ne peuvent pas exécuter de script, les bibliothèques de carte et de lecture de texte sont figées avec des empreintes d'intégrité et les vérifications de paiement ont une limite de fréquence",
+    "de": "Sicherheit verstärkt: Seiten lehnen Inline-Skript-Handler ab, Links aus Daten Dritter können keine Skripte ausführen, die Karten- und Texterkennungsbibliotheken sind mit Integritäts-Hashes fixiert und die Zahlungsprüfungen haben ein Abfragelimit",
+    "nl": "Beveiliging aangescherpt: pagina's weigeren inline scripthandlers, links uit gegevens van derden kunnen geen scripts uitvoeren, de kaart- en tekstherkenningsbibliotheken zijn vastgezet met integriteitshashes en de betalingscontroles hebben een limiet per adres",
+    "ru": "Усиление безопасности: страницы отклоняют встроенные обработчики скриптов, ссылки из сторонних данных не могут запускать скрипты, библиотеки карт и распознавания текста закреплены хешами целостности, а проверки платежей ограничены по частоте",
+    "zh": "安全加固：页面拒绝内联脚本处理程序，由第三方数据生成的链接无法运行脚本，地图和文字识别库已用完整性哈希固定，付款核查查询设有频率限制",
+    "ar": "تعزيز الأمان: الصفحات ترفض معالجات السكربت المضمنة، والروابط المبنية من بيانات أطراف ثالثة لا يمكنها تشغيل سكربتات، ومكتبات الخرائط وقراءة النصوص مثبتة ببصمات سلامة، واستعلامات فحص الدفع لها حد للتكرار"
+   }
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "shipped",
    "text": "Lookalike websites: a daily watch for new websites whose names resemble the developer and project websites we track, with registration and certificate dates, on developer pages and at /watch/lookalikes/",
    "tl": {
     "es": "Webs parecidas: vigilancia diaria de webs nuevas cuyo nombre se parece a las webs de promotores y proyectos que seguimos, con fechas de registro y de certificado, en las páginas de promotores y en /watch/lookalikes/",
