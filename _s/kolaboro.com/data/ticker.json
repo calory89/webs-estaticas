@@ -4,6 +4,20 @@
   {
    "date": "2026-11-09",
    "kind": "shipped",
+   "text": "Project and developer pages are easier to read: identical price copies merged into one row, the overdue date sits next to the date it is about, correct singular wording, Arabic names no longer flip punctuation, and the website-health method is translated",
+   "tl": {
+    "es": "Las páginas de proyectos y promotores se leen mejor: copias de precios idénticas en una sola fila, el retraso junto a la fecha a la que se refiere, singular correcto, los nombres latinos en árabe ya no desplazan la puntuación y el método de salud de la web está traducido",
+    "fr": "Les pages projets et promoteurs se lisent mieux : copies de prix identiques regroupées en une ligne, le retard à côté de la date concernée, singulier correct, les noms latins en arabe ne déplacent plus la ponctuation, et la méthode de santé du site est traduite",
+    "de": "Projekt- und Bauträgerseiten lesen sich besser: gleiche Preiskopien in einer Zeile, der Verzug steht beim betroffenen Termin, richtige Einzahl, lateinische Namen auf Arabisch verschieben keine Satzzeichen mehr, und die Methode der Website-Prüfung ist übersetzt",
+    "nl": "Project- en ontwikkelaarspagina's lezen beter: identieke prijskopieën in één rij, de vertraging staat bij de datum waar het om gaat, juist enkelvoud, Latijnse namen in het Arabisch verschuiven geen leestekens meer, en de methode van de websitecontrole is vertaald",
+    "ru": "Страницы проектов и застройщиков читаются легче: одинаковые копии цен в одной строке, просрочка рядом с датой, к которой относится, верное единственное число, латинские названия в арабской версии больше не сдвигают знаки препинания, метод проверки сайта переведён",
+    "zh": "项目和开发商页面更易读：相同的价格副本合并为一行，逾期信息紧跟相关日期，单数用词正确，阿拉伯语页面中的拉丁名称不再打乱标点，网站健康检查方法已翻译",
+    "ar": "صفحات المشاريع والمطوّرين أسهل قراءة: دمج نسخ الأسعار المتطابقة في صف واحد، ووضع التأخير بجانب الموعد الذي يخصه، وصيغة المفرد الصحيحة، ولم تعد الأسماء اللاتينية في العربية تقلب علامات الترقيم، وترجمة منهج فحص صحة الموقع"
+   }
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "shipped",
    "text": "Any plot from space: pin any spot and get one clear Sentinel-2 picture per quarter since 2017, made on demand, and turn it or a project's time machine into a shareable time-lapse GIF",
    "tl": {
     "es": "Cualquier parcela desde el espacio: marca cualquier punto y obtén una imagen despejada de Sentinel-2 por trimestre desde 2017, creada al momento, y conviértela, o la máquina del tiempo de un proyecto, en un GIF para compartir",

@@ -723,4 +723,18 @@ const B15 = {
     img_sat: 'صور شهرية من القمر الصناعي Sentinel-2 لموقع {n}، من {a} إلى {b}', sat_tile: 'موقع {n}، Sentinel-2، {d}' }
 };
 for (const [l, o] of Object.entries(B15)) Object.assign({ en, es, de, fr, nl, ru, zh, ar }[l], o);
+// Batch 19 (n19f, 9 Nov 2026): singular forms (used by tr() when the count is 1) and a follow-up line for the overdue date that
+// does not repeat "the handover date on record" right after the sentence that names it.
+const B19 = {
+  en: { g_over2: 'That date passed {m} months ago, according to our records.', g_moved_1: 'The handover date moved once in our records, by {mm} months.', pr_moved_1: 'moved once, by {mm} months', g_d_1: 'We track 1 project by {dev} in {mks}.',
+    g_claims: 'Of {c} developer claims we checked: {v} confirmed by a register or an independent source, {u} not yet verified, {x} contradicted by another source.' },
+  es: { g_over2: 'Según nuestros registros, esa fecha pasó hace {m} meses.', g_moved_1: 'La fecha de entrega cambió una vez en nuestros registros, {mm} meses.', pr_moved_1: 'aplazada una vez, {mm} meses', g_d_1: 'Seguimos 1 proyecto de {dev} en {mks}.' },
+  de: { g_over2: 'Laut unseren Aufzeichnungen ist dieser Termin seit {m} Monaten verstrichen.', g_moved_1: 'Der Übergabetermin wurde in unseren Aufzeichnungen einmal verschoben, um {mm} Monate.', pr_moved_1: 'einmal verschoben, um {mm} Monate', g_d_1: 'Wir verfolgen 1 Projekt von {dev} in {mks}.' },
+  fr: { g_over2: 'Selon nos relevés, cette date est dépassée depuis {m} mois.', g_moved_1: 'La date de livraison a été déplacée une fois dans nos relevés, de {mm} mois.', pr_moved_1: 'repoussée une fois, de {mm} mois', g_d_1: 'Nous suivons 1 projet de {dev} à {mks}.' },
+  nl: { g_over2: 'Volgens onze gegevens is die datum {m} maanden geleden verstreken.', g_moved_1: 'De opleverdatum is in onze gegevens één keer verschoven, met {mm} maanden.', pr_moved_1: 'één keer verschoven, {mm} maanden', g_d_1: 'We volgen 1 project van {dev} in {mks}.' },
+  ru: { g_over2: 'По нашим данным, этот срок прошёл {m} мес. назад.', g_moved_1: 'Срок сдачи в наших данных переносился один раз, на {mm} мес.', pr_moved_1: 'перенесено один раз, на {mm} мес.', g_d_1: 'Мы отслеживаем 1 проект {dev}: {mks}.' },
+  zh: { g_over2: '根据我们的记录，该日期已过去 {m} 个月。' },
+  ar: { g_over2: 'وفق سجلاتنا، مضى على هذا الموعد {m} شهرًا.', g_moved_1: 'تغيّر موعد التسليم في سجلاتنا مرة واحدة، بمقدار {mm} شهرًا.', pr_moved_1: 'تأجّل مرة واحدة، بمقدار {mm} شهرًا', g_d_1: 'نتابع مشروعًا واحدًا لـ {dev} في {mks}.' }
+};
+for (const [l, o] of Object.entries(B19)) Object.assign({ en, es, de, fr, nl, ru, zh, ar }[l], o);
 export const T = { en, es, de, fr, nl, ru, zh, ar };

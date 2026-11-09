@@ -11,7 +11,7 @@ export const FT = {
     g_dev: 'Based on {n} projects by {g} whose first promised handover has passed; {k} recorded as handed over.',
     g_all: 'All markets pooled: {n} projects whose first promised handover has passed; {k} recorded as handed over.',
     cond: 'This project is not recorded as handed over {m} months after its first promised date, so the chances below assume that.',
-    nd: 'Not enough data for {g} yet: {n} projects past their first promised handover and {k} handovers recorded. We show an estimate from {N} projects and {K} handovers.',
+    nd: 'Not enough data for {g} yet: {n} projects past their first promised handover and {k} handovers recorded. We show an estimate once a group has {N} projects and {K} handovers.',
     pool: 'All markets pooled, for context only. This is not an estimate for this project.',
     none: 'No dated handover promise in our records, so there is no forecast.',
     done: 'Recorded as handed over, so there is no forecast.',

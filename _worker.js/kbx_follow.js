@@ -45,6 +45,8 @@ const S = {
     w_sent: 'اقتربنا: أرسلنا رابط تأكيد إلى {e}. افتحه لبدء المتابعة.', w_ok: 'أنت تتابع {n}. سنراسلك عند حدوث أي تغيير.', w_bad: 'أدخل عنوان بريد إلكتروني صالحًا.', w_err: 'تعذّر الحفظ الآن. حاول مرة أخرى بعد دقيقة.', w_busy: 'طلبات كثيرة من هذا الاتصال. حاول لاحقًا.',
     w_note: 'نرسل أولًا رابطًا للتأكيد. كل رسالة تتضمن رابطًا لإيقاف المتابعة.', f_lbl: 'تابِع التغييرات في قارئ الخلاصات:', sx_lbl: 'ابحث في المشاريع والمطورين', sx_ph: 'مشروع أو مطوّر أو سوق أو رقم (BALI-014)…', sx_chk: 'غير مُتابَع بعد؟ شغّل الفحص المجاني', sx_none: 'لا توجد نتائج لـ «{q}».', sx_dev: 'مطوّر', sx_k: '{k} مشاريع', sx_k1: 'مشروع واحد', sx_cnt: '{p} مشروعًا و{d} مطوّرًا', sx_res: '{k} نتيجة' }
 };
+const R1 = {"en": "1 result", "es": "1 resultado", "de": "1 Treffer", "fr": "1 résultat", "nl": "1 resultaat", "ru": "результатов: 1", "zh": "1 个结果", "ar": "نتيجة واحدة"};   // n19f: '1 results'
+for (const [l, v] of Object.entries(R1)) if (S[l]) S[l].sx_res1 = v;
 const t9 = (lang, k, v) => { const s = (S[lang] && S[lang][k]) || S.en[k]; return v ? s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m) : s; };
 
 export function feedLinks(lang, path, name) {
@@ -53,14 +55,14 @@ export function feedLinks(lang, path, name) {
 export function watchBox(lang, id, name, path) {
   const m = { id, ok: t9(lang, 'w_ok', { n: name }), sent: t9(lang, 'w_sent', { e: '%E%' }), bad: t9(lang, 'w_bad'), err: t9(lang, 'w_err'), busy: t9(lang, 'w_busy'), as: t9(lang, 'w_as', { e: '%E%' }) };
   return '<div class="kwatch" id="watch" data-kw="' + esc(JSON.stringify(m)) + '"><div class="kw-t"><b>' + esc(t9(lang, 'w_h')) + '</b><p>' + esc(t9(lang, 'w_txt', { n: name })) + '</p></div>' +
-    '<div class="kw-a"><button type="button" class="btn btn-hi kbtn" data-kw-btn>' + esc(t9(lang, 'w_btn')) + '</button>' +
+    '<div class="kw-a"><button type="button" class="k-btn k-btn--dark kbtn" data-kw-btn>' + esc(t9(lang, 'w_btn')) + '</button>' +
     '<p class="kw-as" data-kw-as hidden><span></span> <button type="button" class="kw-lnk" data-kw-change>' + esc(t9(lang, 'w_change')) + '</button></p>' +
     '<form class="kw-f" novalidate hidden><label for="kw-e">' + esc(t9(lang, 'w_email')) + '</label><div><input id="kw-e" type="email" name="email" autocomplete="email" inputmode="email" placeholder="you@email.com" required>' +
-    '<input type="text" name="hp" tabindex="-1" autocomplete="off" aria-hidden="true" class="kw-hp"><button type="submit" class="btn btn-hi kbtn">' + esc(t9(lang, 'w_go')) + '</button></div></form>' +
+    '<input type="text" name="hp" tabindex="-1" autocomplete="off" aria-hidden="true" class="kw-hp"><button type="submit" class="k-btn k-btn--dark kbtn">' + esc(t9(lang, 'w_go')) + '</button></div></form>' +
     '<p class="kw-out" role="status" aria-live="polite"></p><p class="kw-n">' + esc(t9(lang, 'w_note')) + '</p></div>' + feedLinks(lang, path, name) + '</div>';
 }
 export function searchBox(lang, np, nd) {
-  const m = { pre: pre(lang), none: t9(lang, 'sx_none', { q: '%Q%' }), chk: t9(lang, 'sx_chk'), dev: t9(lang, 'sx_dev'), k: t9(lang, 'sx_k', { k: '%K%' }), k1: t9(lang, 'sx_k1'), res: t9(lang, 'sx_res', { k: '%K%' }), cnt: t9(lang, 'sx_cnt', { p: np, d: nd }) };
+  const m = { pre: pre(lang), none: t9(lang, 'sx_none', { q: '%Q%' }), chk: t9(lang, 'sx_chk'), dev: t9(lang, 'sx_dev'), k: t9(lang, 'sx_k', { k: '%K%' }), k1: t9(lang, 'sx_k1'), res: t9(lang, 'sx_res', { k: '%K%' }), res1: t9(lang, 'sx_res1'), cnt: t9(lang, 'sx_cnt', { p: np, d: nd }) };
   return '<div class="kx" role="search" data-kx="' + esc(JSON.stringify(m)) + '"><label for="kx-q">' + esc(t9(lang, 'sx_lbl')) + '</label><input id="kx-q" type="search" autocomplete="off" spellcheck="false" placeholder="' + esc(t9(lang, 'sx_ph')) + '" aria-describedby="kx-st" aria-controls="kx-out">' +
     '<p class="kx-st" id="kx-st" aria-live="polite">' + esc(m.cnt) + '</p><ul class="kx-out" id="kx-out" hidden></ul></div>';
 }
@@ -93,7 +95,7 @@ export const W9JS = "(function(){function ls(k,v){try{if(v===undefined)return lo
   "function run(){var v=q.value,ws=norm(v).split(' ').filter(Boolean);try{var uu=new URL(location.href);if(v)uu.searchParams.set('q',v);else uu.searchParams.delete('q');history.replaceState(null,'',uu);}catch(e){}" +
   "if(!ws.length){ul.hidden=true;ul.innerHTML='';if(L)L.hidden=false;st.textContent=M2.cnt;return;}load().then(function(){if(!IX||q.value!==v)return;var R=[];" +
   "IX.forEach(function(it){var s=0;for(var i=0;i<ws.length;i++){var w=ws[i],k=it.h.indexOf(w);if(k<0)return;s+=(it.nn.indexOf(' '+w)>=0?30:it.nn.indexOf(w)>=0?16:it.h.charAt(k-1)===' '?8:3);}if(it.dev)s+=2;R.push([s-it.n.length/100,it]);});" +
-  "R.sort(function(a,b){return b[0]-a[0];});st.textContent=M2.res.replace('%K%',R.length);if(L)L.hidden=true;ul.hidden=false;" +
+  "R.sort(function(a,b){return b[0]-a[0];});st.textContent=R.length===1&&M2.res1?M2.res1:M2.res.replace('%K%',R.length);if(L)L.hidden=true;ul.hidden=false;" +
   "ul.innerHTML='';if(!R.length){var e=document.createElement('li');e.className='kx-e';e.textContent=M2.none.replace('%Q%',v);if(M2.chk&&v.trim().length>2){var ca=document.createElement('a');ca.href=M2.pre+'/check/?q='+encodeURIComponent(v.trim());ca.textContent=M2.chk;ca.style.cssText='display:inline;padding:0;min-height:0;text-decoration:underline';e.appendChild(document.createTextNode(' '));e.appendChild(ca);}ul.appendChild(e);return;}" +
   "R.slice(0,40).forEach(function(r){var it=r[1],li=document.createElement('li'),a=document.createElement('a'),b=document.createElement('b'),sm=document.createElement('small');a.href=it.u;if(it.dev){var tg=document.createElement('span');tg.className='kx-tag';tg.textContent=M2.dev;b.appendChild(tg);}b.appendChild(document.createTextNode(it.n));sm.textContent=it.s;a.appendChild(b);a.appendChild(sm);li.appendChild(a);ul.appendChild(li);});});}" +
   "var tm;q.addEventListener('input',function(){clearTimeout(tm);tm=setTimeout(run,60);});q.addEventListener('focus',load,{once:true});" +

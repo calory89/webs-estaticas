@@ -29,7 +29,9 @@ import { seoLd } from './kbx_lastmod.js';   // batch 15 (s15b): true dateModifie
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v36';   // v36: time machine GIF share button (n19d)
+const CACHE_V = 'named-v37';   // v37: UX sweep (n19f): price copies merged, singular forms, Arabic name isolation, short-answer meta line
+//     // 'named-v36';   // v36: time machine GIF share button (n19d)
+//     // v35: 3D view script version (n18c)
 //     // v34: street photos two per row on phones, map attribution marker (n18c)
 //     // v33: street-level photos and 3D view section #ground (n18c)
 //     // v32: small price changes with 2 decimals, planning table labels (n18d)
@@ -98,7 +100,9 @@ const fixU = u => typeof u === 'string' ? u.trim().replace(/ /g, '%20') : u;
 const okHttp = u => typeof u === 'string' && /^https?:\/\/[^\s"<>]+$/.test(fixU(u));
 const slugM = m => encodeURIComponent(String(m).toLowerCase().replace(/\s+/g, '-'));
 const decodeSafe = u => { try { return decodeURIComponent(u); } catch (e) { return u; } };
+const PLURAL1 = { g_moved: 'k', pr_moved: 'k', g_d: 'k' };   // n19f: a key_1 form exists for these in most languages; used when the count is 1
 function tr(lang, k, v) {
+  if (v && PLURAL1[k] && +v[PLURAL1[k]] === 1 && T[lang] && T[lang][k + '_1']) k = k + '_1';
   const s = (T[lang] && T[lang][k]) || T.en[k] || k;
   return v ? s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m) : s;
 }
@@ -125,6 +129,15 @@ const srcA = (u, label) => typeof u === 'string' && (u.startsWith(ORIGIN + '/') 
   : okHttp(u) ? ' <a class="src" href="' + esc(fixU(u)) + '" rel="nofollow noopener" target="_blank">' + esc(label || host(u)) + '</a>' : '';
 // a URL whose words could read as a verdict shows its site name only
 const srcLi = u => '<li><a href="' + esc(fixU(u)) + '" rel="nofollow noopener" target="_blank">' + esc(host(u)) + '</a>' + (OPINION_RX.test(decodeSafe(u)) ? '' : ' <small>' + esc(u.length > 90 ? u.slice(0, 90) + '...' : u) + '</small>') + '</li>';
+// n19f: in Arabic pages a Latin project, developer or place name next to Arabic text and punctuation is isolated with <bdi>,
+// so a colon or comma lands on the right side. Only applied to text-only fragments (no attributes carry these names there).
+const bidi = (lang, html, names) => {
+  if (lang !== 'ar') return html;
+  const E = [...new Set(names.filter(n => n && String(n).length > 2 && !/[\u0600-\u06FF]/.test(n)).map(esc))].sort((a, b) => b.length - a.length);
+  if (!E.length) return html;
+  const rx = new RegExp(E.map(e => e.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|'), 'g');
+  return html.split(/(<[^>]*>)/).map((t, i) => i % 2 ? t : t.replace(rx, '<bdi>$&</bdi>')).join('');   // text between tags only
+};
 const own = (path, label) => '<a href="' + esc(path) + '">' + esc(label) + '</a>';
 const en = t => '<span lang="en" dir="ltr">' + esc(t) + '</span>';
 const fact = (inner, u, label) => '<li class="kfact">' + inner + srcA(u, label) + '</li>';   // a fact always carries its link
@@ -190,10 +203,10 @@ function projectPage(ix, x, lang, extra) {
   if (!rvd) g.push('<li class="knote">' + esc(nrB) + '. ' + esc(tr(lang, 'nr_txt')) + '</li>');
   g.push(fact(esc(x.dv ? tr(lang, 'g_listed_dev', { n: name, stage, place, dev: x.dv }) : tr(lang, 'g_listed', { n: name, stage, place })), page));
   g.push(fact(esc(ho ? tr(lang, 'g_h', { h: fd(ho.d, lang) }) : tr(lang, 'g_h_none')), page));
+  if (c.overdue) g.push(fact(esc(tr(lang, ho ? 'g_over2' : 'g_over', { m: c.overdue })), '/promises/', tr(lang, 'm_promises')));   // n19f: next to the date it is about
+  else if (hand && hand.mv) g.push(fact(esc(tr(lang, 'g_moved', { k: hand.mv, mm: hand.mm })), '/promises/', tr(lang, 'm_promises')));
   g.push(fact(esc(x.pn ? tr(lang, 'g_pn') : tr(lang, 'g_pn_none')), x.du || page));
   if (cN && rvd) g.push(fact(esc(tr(lang, 'g_claims', { c: cN, v: cl.verified, u: cl.unverified, x: cl.contradicted })), rec, tr(lang, 'k_record')));
-  if (c.overdue) g.push(fact(esc(tr(lang, 'g_over', { m: c.overdue })), '/promises/', tr(lang, 'm_promises')));
-  else if (hand && hand.mv) g.push(fact(esc(tr(lang, 'g_moved', { k: hand.mv, mm: hand.mm })), '/promises/', tr(lang, 'm_promises')));
 
   // key facts strip
   const kf = (k, v, src) => '<div class="kf"><dt>' + esc(tr(lang, k)) + '</dt><dd>' + v + (src ? srcA(src) : '') + '</dd></div>';
@@ -315,9 +328,9 @@ function projectPage(ix, x, lang, extra) {
 
   // FAQ built from the data above
   const factsTxt = [rvd ? '' : nrB + '.', x.pn ? tr(lang, 'g_pn') : tr(lang, 'g_pn_none'), cN && rvd ? tr(lang, 'g_claims', { c: cN, v: cl.verified, u: cl.unverified, x: cl.contradicted }) : '', ho ? tr(lang, 'g_h', { h: fd(ho.d, lang) }) : tr(lang, 'g_h_none'),
-    c.overdue ? tr(lang, 'g_over', { m: c.overdue }) : '', FL.length ? FL.map(f => tr(lang, 'rc_' + f[0])).join('; ') + '.' : tr(lang, 'no_reports')].filter(Boolean).join(' ');
+    c.overdue ? tr(lang, ho ? 'g_over2' : 'g_over', { m: c.overdue }) : '', FL.length ? FL.map(f => tr(lang, 'rc_' + f[0])).join('; ') + '.' : tr(lang, 'no_reports')].filter(Boolean).join(' ');
   const FAQ = [[tr(lang, 'q_legit', { n: name }), tr(lang, 'a_legit', { facts: factsTxt })],
-    [tr(lang, 'q_deliv', { n: name }), ho ? tr(lang, 'a_deliv', { h: fd(ho.d, lang) }) + (hand && hand.mv ? ' ' + tr(lang, 'g_moved', { k: hand.mv, mm: hand.mm }) : '') + (c.overdue ? ' ' + tr(lang, 'g_over', { m: c.overdue }) : '') : tr(lang, 'a_deliv_none')],
+    [tr(lang, 'q_deliv', { n: name }), ho ? tr(lang, 'a_deliv', { h: fd(ho.d, lang) }) + (hand && hand.mv ? ' ' + tr(lang, 'g_moved', { k: hand.mv, mm: hand.mm }) : '') + (c.overdue ? ' ' + tr(lang, 'g_over2', { m: c.overdue }) : '') : tr(lang, 'a_deliv_none')],
     [tr(lang, 'q_dev', { n: name }), x.dv ? tr(lang, 'a_dev', { dev: x.dv }) : tr(lang, 'a_dev_none')],
     [tr(lang, 'q_permit', { n: name }), vf.permit === 'registry' ? tr(lang, 'a_permit_reg') : x.pn ? tr(lang, 'a_permit_pn', { pn: x.pn }) : tr(lang, 'a_permit_none')],
     [tr(lang, 'q_rev2', { n: name }), rv.approved_total ? tr(lang, 'rev_some', { k: rv.approved_total }) : tr(lang, 'a_rev')]];
@@ -340,13 +353,13 @@ function projectPage(ix, x, lang, extra) {
 
   // s15a: short answer at the top (what people search: legit, delivery date, permit, developer, reviews), built from the facts below
   const aS = [x.dv ? tr(lang, 'g_listed_dev', { n: name, stage, place, dev: x.dv }) : tr(lang, 'g_listed', { n: name, stage, place }),
-    ho ? tr(lang, 'g_h', { h: fd(ho.d, lang) }) : tr(lang, 'g_h_none'), c.overdue ? tr(lang, 'g_over', { m: c.overdue }) : hand && hand.mv ? tr(lang, 'g_moved', { k: hand.mv, mm: hand.mm }) : '',
+    ho ? tr(lang, 'g_h', { h: fd(ho.d, lang) }) : tr(lang, 'g_h_none'), c.overdue ? tr(lang, ho ? 'g_over2' : 'g_over', { m: c.overdue }) : hand && hand.mv ? tr(lang, 'g_moved', { k: hand.mv, mm: hand.mm }) : '',
     x.pn ? tr(lang, 'g_pn') : tr(lang, 'g_pn_none'), rvd ? (cN ? tr(lang, 'g_claims', { c: cN, v: cl.verified, u: cl.unverified, x: cl.contradicted }) : '') : nrB + '.',
     rvN ? tr(lang, 'ans_rev', { k: num(rvN, lang) }) : tr(lang, 'ans_rev0')].filter(Boolean);
-  const fresh = '<time datetime="' + esc(checked) + '">' + esc(tr(lang, 'upd_checked', { d: fd(checked, lang) })) + '</time>' +
-    (ph && ph.n > 1 ? ' · ' + esc(tr(lang, 'upd_ver', { n: ph.n, a: fd(ph.first, lang), c: ph.changed })) : '') + (ph && ph.n ? ' · <a href="' + chg + '">' + esc(tr(lang, 'upd_log')) + '</a>' : '') +
-    ' · <a href="#glance">' + esc(tr(lang, 'ans_more')) + '</a>';
-  const answer = '<div class="kans" id="answer"><p class="kans-t"><b class="kans-l">' + esc(tr(lang, 'ans_lbl')) + '</b> ' + esc(dot(aS.join(' '))) + '</p><p class="kans-u">' + fresh + '</p></div>';
+  const fresh = '<span><time datetime="' + esc(checked) + '">' + esc(tr(lang, 'upd_checked', { d: fd(checked, lang) })) + '</time></span>' +
+    (ph && ph.n > 1 ? '<span>' + esc(tr(lang, 'upd_ver', { n: ph.n, a: fd(ph.first, lang), c: ph.changed })) + '</span>' : '') + (ph && ph.n ? '<span><a href="' + chg + '">' + esc(tr(lang, 'upd_log')) + '</a></span>' : '') +
+    '<span><a href="#glance">' + esc(tr(lang, 'ans_more')) + '</a></span>';
+  const answer = '<div class="kans" id="answer"><p class="kans-t"><b class="kans-l">' + esc(tr(lang, 'ans_lbl')) + '</b> ' + bidi(lang, esc(dot(aS.join(' '))), [name, place, x.dv || '']) + '</p><p class="kans-u">' + fresh + '</p></div>';
 
   // s15a: related pages (same developer, same area, similar, side-by-side, market and country hubs)
   const AR = x.ar && x.ar !== x.mk ? (ix.byAr.get(x.mk + '|' + x.ar) || []).filter(o => o.id !== x.id).slice(0, 8) : [];
@@ -364,9 +377,9 @@ function projectPage(ix, x, lang, extra) {
   const priceH = extra.paper ? pricesHtml(extra.paper, x, lang) : '', planH = extra.paper ? planningHtml(extra.paper, x, lang) : '';   // n18d
   const toc = [['glance', 's_glance'], ['promise', 's_promise'], ...(priceH ? [['prices', null, paperHeading(lang, 'ph_toc')]] : []), ['ppm', 's_ppm_toc'], ['delivery', 's_delivery'], ...(satHtml ? [['space', null]] : []), ...(seeSec ? [['ground', null, seeToc(lang)]] : []), ['permits', 's_permits'], ...(planH ? [['planning', null, paperHeading(lang, 'pl_toc')]] : []), ['checks', 's_checks'], ['claims', 's_claims'], ['history', 's_history'], ['reports', 's_reports'], ['developer', 's_devsec'], ...(webHtml ? [['web', null, webHeading(lang, 'h')]] : []), ['reviews', 's_reviews'], ['reply', 's_reply'], ['faq', 's_faq'], ['sources', 's_sources']];
   const body = '<section class="phero kp"><div class="wrap"><p class="crumb">' + crumbs.slice(0, 3).map(([l, u]) => '<a href="' + esc(u.replace(ORIGIN, '')) + '">' + esc(l) + '</a>').join(' / ') + '</p>' +
-    '<h1>' + h1x(tr(lang, 'h1_p', { n: name }), name) + '</h1><p class="lead">' + esc(tr(lang, 'lead_p', { n: name, place })) + '</p>' + answer + keys + watchBox(lang, x.id, name, '/projects/' + x.s + '/') + (extra.coh || '') + '</div></section>' +
+    '<h1>' + h1x(tr(lang, 'h1_p', { n: name }), name) + '</h1><p class="lead">' + bidi(lang, esc(tr(lang, 'lead_p', { n: name, place })), [name, place]) + '</p>' + answer + keys + watchBox(lang, x.id, name, '/projects/' + x.s + '/') + (extra.coh || '') + '</div></section>' +
     '<div class="wrap kwrap"><nav class="ktoc" aria-label="' + esc(tr(lang, 's_glance')) + '">' + toc.map(([i, k, lbl]) => '<a href="#' + i + '">' + esc(lbl || (k ? tr(lang, k) : satToc(lang))) + '</a>').join('') + '</nav>' +
-    sec('glance', esc(tr(lang, 's_glance')), '<ul class="fl glance">' + g.join('') + '</ul>') + sec('promise', esc(tr(lang, 's_promise')), promised) + (priceH ? sec('prices', esc(paperHeading(lang, 'ph_h')), '<style>' + PAPER_CSS + '</style>' + priceH) : '') + sec('ppm', esc(tr(lang, 's_ppm')), ppmSection(x, lang).html) + sec('delivery', esc(tr(lang, 's_delivery')), delivery) + (satHtml ? sec('space', esc(satHeading(lang)), satHtml) : '') + (seeSec ? sec('ground', esc(seeHeading(lang)), seeSec) : '') +
+    sec('glance', esc(tr(lang, 's_glance')), '<ul class="fl glance">' + bidi(lang, g.join(''), [name, place, x.dv || '']) + '</ul>') + sec('promise', esc(tr(lang, 's_promise')), promised) + (priceH ? sec('prices', esc(paperHeading(lang, 'ph_h')), '<style>' + PAPER_CSS + '</style>' + priceH) : '') + sec('ppm', esc(tr(lang, 's_ppm')), ppmSection(x, lang).html) + sec('delivery', esc(tr(lang, 's_delivery')), delivery) + (satHtml ? sec('space', esc(satHeading(lang)), satHtml) : '') + (seeSec ? sec('ground', esc(seeHeading(lang)), seeSec) : '') +
     sec('permits', esc(tr(lang, 's_permits')), permits) + (planH ? sec('planning', esc(paperHeading(lang, 'pl_h')), (priceH ? '' : '<style>' + PAPER_CSS + '</style>') + planH) : '') + sec('checks', esc(tr(lang, 's_checks')), checks) + sec('claims', esc(tr(lang, 's_claims')), claims) + sec('history', esc(tr(lang, 's_history')), history) +
     sec('reports', esc(tr(lang, 's_reports')), reports) + sec('developer', esc(tr(lang, 's_devsec')), devsec) + (webHtml ? sec('web', esc(webHeading(lang, 'h')), webHtml) : '') + (similar ? sec('similar', esc(tr(lang, 's_similar')), similar) : '') +
     sec('market', esc(tr(lang, 's_market', { mk: x.mk })), market) + sec('related', esc(tr(lang, 'rel_h')), related) + sec('reviews', esc(tr(lang, 's_reviews')), reviews) + sec('reply', esc(tr(lang, 's_reply')), reply) +
@@ -444,7 +457,7 @@ function devPage(ix, dv, lang, extra) {
   FAQ.splice(1, 0, [tr(lang, 'q_dreg', { dev: name }), gl.matches.length ? gl.matches.slice(0, 2).map(m => tr(lang, 'gleif_found', { legal: m.legal, lei: m.lei, jur: m.jur, st: m.st, ls: m.ls, reg: fd(m.reg, lang) })).join(' ') : gl.ok ? tr(lang, 'a_dreg_none', { d: fd(gl.at, lang) }) : tr(lang, 'a_dreg_err')]);
   FAQ.splice(2, 0, [tr(lang, 'q_ddeliv', { dev: name }), P.length ? tr(lang, 'g_d_rec', { p: P.length, kept: cnt('kept'), broken: cnt('broken'), moved: cnt('moved'), pending: cnt('pending') }) : tr(lang, 'drec_none')]);
   FAQ.push([tr(lang, 'q_drev', { dev: name }), tr(lang, 'a_drev')]);
-  const answer = '<div class="kans" id="answer"><p class="kans-t"><b class="kans-l">' + esc(tr(lang, 'ans_lbl')) + '</b> ' + esc(factsTxt) + '</p><p class="kans-u"><time datetime="' + esc(checked) + '">' + esc(tr(lang, 'upd_checked', { d: fd(checked, lang) })) + '</time> · <a href="#glance">' + esc(tr(lang, 'ans_more')) + '</a></p></div>';
+  const answer = '<div class="kans" id="answer"><p class="kans-t"><b class="kans-l">' + esc(tr(lang, 'ans_lbl')) + '</b> ' + esc(factsTxt) + '</p><p class="kans-u"><span><time datetime="' + esc(checked) + '">' + esc(tr(lang, 'upd_checked', { d: fd(checked, lang) })) + '</time></span><span><a href="#glance">' + esc(tr(lang, 'ans_more')) + '</a></span></p></div>';
   for (const f of FAQ) f[1] = dot(f[1]);
   const faq = FAQ.map(([q, a]) => '<details class="kfaq"><summary>' + esc(q) + '</summary><p>' + esc(a) + '</p></details>').join('');
   const S = [...new Set(L.flatMap(x => [x.url, x.du]).concat(FLu.map(f => f[1])).filter(okHttp))];
@@ -499,7 +512,7 @@ const JS = "(function(){var b=document.querySelector('[data-live]');if(!b)return
   ".catch(function(){o.textContent=M.err;b.disabled=false;});});})();";
 
 // d12b: the page name leads the H1; the ": reviews and facts" tail sits on a smaller second line (same text for search engines)
-function h1x(h, name) { if (h.indexOf(name) !== 0 || h.length <= name.length) return esc(h); const t = h.slice(name.length), m = t.match(/^\s*[:\uFF1A]\s*/); return esc(name) + (m ? esc(m[0].trim()) + ' ' : '') + '<span class="kh1s">' + esc(m ? t.slice(m[0].length) : t) + '</span>'; }
+function h1x(h, name) { if (h.indexOf(name) !== 0 || h.length <= name.length) return esc(h); const t = h.slice(name.length), m = t.match(/^\s*[:\uFF1A]\s*/); return '<bdi>' + esc(name) + '</bdi>' + (m ? esc(m[0].trim()) + ' ' : '') + '<span class="kh1s">' + esc(m ? t.slice(m[0].length) : t) + '</span>'; }
 // d12b: every plain .tw table gets its header text on each cell (data-l) so phones can show rows as labelled cards
 function cardify(html) {
   return html.replace(/<div class="tw"><table><thead><tr>([\s\S]*?)<\/tr><\/thead><tbody>([\s\S]*?)<\/tbody><\/table><\/div>/g, (m, hr, rows) => {
@@ -524,7 +537,7 @@ const D12CSS = '<style id="kd12b-css">' +
   '.kwrap>.ktoc a{min-height:36px;border:0;border-radius:8px;padding:0 12px;background:none;border-inline-start:2px solid var(--line);border-radius:0;white-space:normal;line-height:1.25;padding-block:6px}.kwrap>.ktoc a:hover{color:var(--ink);border-inline-start-color:var(--ink)}.kwrap>.ktoc a[aria-current]{background:none;color:var(--ink);font-weight:700;border-inline-start-color:var(--k-sea,#155C75)}.kwrap:has(>.ktoc)>:not(.ktoc){grid-column:2}}' +
   '.ks h2 small{font-size:.5em;font-weight:500;color:var(--muted);margin-inline-start:8px;font-variant-numeric:tabular-nums;letter-spacing:0}[data-kx-lists] .lk{list-style:none;padding:0;column-gap:40px}[data-kx-lists] .lk li{margin:0;padding:7px 0;break-inside:avoid;border-bottom:1px solid var(--line)}[data-kx-lists] .lk small{display:block;font-size:.84rem;margin-top:1px}[data-kx-lists] .ks{padding-top:36px}' +
   '.kmkt summary{list-style:none;display:flex;align-items:center;gap:8px}.kmkt summary::-webkit-details-marker{display:none}.kmkt summary::after{content:"";width:7px;height:7px;border:solid currentColor;border-width:0 2px 2px 0;transform:rotate(45deg) translateY(-2px)}.kmkt[open] summary::after{transform:rotate(-135deg) translateY(-2px)}.kmkt a{border-radius:var(--k-r-md,10px)}' +
-  '.kans{margin:22px 0 0;padding:16px 20px;border:1px solid var(--line);border-inline-start:4px solid var(--k-sea,#155C75);border-radius:var(--k-r-lg,14px);background:var(--card,var(--paper));max-width:80ch}.kans p{margin:0}.kans-t{font-size:1.04rem;line-height:1.55;text-wrap:pretty}.kans-l{display:block;font-size:.82rem;font-weight:700;color:var(--muted);margin-bottom:4px}.kans-u{margin-top:10px!important;font-size:.86rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:2px 6px}.kans-u a{color:var(--ink-2);font-weight:600}' +
+  '.kans{margin:22px 0 0;padding:16px 20px;border:1px solid var(--line);border-inline-start:4px solid var(--k-sea,#155C75);border-radius:var(--k-r-lg,14px);background:var(--card,var(--paper));max-width:80ch}.kans p{margin:0}.kans-t{font-size:1.04rem;line-height:1.55;text-wrap:pretty}.kans-l{display:block;font-size:.82rem;font-weight:700;color:var(--muted);margin-bottom:4px}.kans-u{margin-top:10px!important;font-size:.86rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 18px}.kans-u a{color:var(--ink-2);font-weight:600}' +
   '@media(prefers-reduced-motion:reduce){a.src{transition:none}}</style>';
 
 function head(pg, lang) {
