@@ -1,6 +1,20 @@
 {
  "deploys": [
   {
+   "at": "2026-11-09T10:50:30Z",
+   "commit": "3e04bba37367103d95ccffedbbf90162bb853bd4",
+   "checks_passed": 32,
+   "checks_total": 32,
+   "failed": [],
+   "run": "https://github.com/calory89/webs-estaticas/actions/runs/42603534778",
+   "result": "pass",
+   "wait_s": 182,
+   "changes": [
+    "bde9d59d52e1",
+    "3e04bba37367"
+   ]
+  },
+  {
    "at": "2026-11-09T10:38:05Z",
    "commit": "6b49e6dbeeb92ac42d88d78b5a459bfe1da81396",
    "checks_passed": 32,
@@ -2738,18 +2752,6 @@
     "8b45454748f6",
     "b18354194a67"
    ]
-  },
-  {
-   "at": "2026-11-03T21:13:49Z",
-   "commit": "545f16769f4651a6124907a99109d0a8391e0c54",
-   "result": "not_deployed",
-   "checks_passed": 0,
-   "checks_total": 0,
-   "failed": [
-    "commit not live after 12 minutes"
-   ],
-   "wait_s": 725,
-   "run": "https://github.com/calory89/webs-estaticas/actions/runs/41717829900"
   }
  ],
  "drills": [],
@@ -2757,13 +2759,13 @@
  "canary": "Cloudflare Pages sends each push to all visitors at once and offers no percentage canary, so none is claimed. A bad push can be visible for a few minutes until the rollback is live.",
  "rollback_mode": "Rollback: a git commit restoring the files changed since the last passing commit; Pages deploys it in about 1 to 2 minutes. An instant Cloudflare API rollback is built in but needs a Pages-scoped token, not configured yet.",
  "latest_checks": {
-  "at": "2026-11-09T10:38:05.370Z",
-  "commit": "6b49e6dbeeb92ac42d88d78b5a459bfe1da81396",
+  "at": "2026-11-09T10:50:30.901Z",
+  "commit": "3e04bba37367103d95ccffedbbf90162bb853bd4",
   "checks": [
    {
     "name": "build: live commit",
     "ok": true,
-    "detail": "live 6b49e6dbeeb9"
+    "detail": "live 3e04bba37367"
    },
    {
     "name": "page /",
@@ -2808,7 +2810,7 @@
    {
     "name": "page /changelog/",
     "ok": true,
-    "detail": "200, 79482 bytes"
+    "detail": "200, 81939 bytes"
    },
    {
     "name": "page /docs/api/",
@@ -2922,7 +2924,7 @@
    }
   ]
  },
- "last_checked": "6b49e6dbeeb92ac42d88d78b5a459bfe1da81396",
- "last_good": "6b49e6dbeeb92ac42d88d78b5a459bfe1da81396",
- "updated": "2026-11-09T10:38:05Z"
+ "last_checked": "3e04bba37367103d95ccffedbbf90162bb853bd4",
+ "last_good": "3e04bba37367103d95ccffedbbf90162bb853bd4",
+ "updated": "2026-11-09T10:50:30Z"
 }
