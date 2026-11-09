@@ -58,6 +58,7 @@ function out(o, s, cc) { return new Response(JSON.stringify(o), { status: s || 2
 let MEMO = {};
 async function file(env, name, ttl) {
   const m = MEMO[name]; if (m && Date.now() - m.t < (ttl || 300000)) return m.v;
+  const sh = (globalThis.__kbJson || {})[name]; if (sh && sh.v && Date.now() - sh.t < (ttl || 300000)) { MEMO[name] = { t: sh.t, v: sh.v }; return sh.v; }   // n20p: reuse the copy kbx_named.js already parsed
   let r = null;
   try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/' + name)); } catch (e) { r = null; }
   if (!r || !r.ok) r = await fetch(ORIGIN + '/data/' + name, { cf: { cacheTtl: 120, cacheEverything: true } });
@@ -271,7 +272,24 @@ export const rsHeading = lang => t(lang, 'rs_h');
 export async function fcDevGroup(env, slug) { try { const fc = await fcData(env), d = await devGroups(env, fc); return d.get(slug) || null; } catch (e) { return null; } }
 
 // ------------------------------------------------------------------------------------------------ /open data
-async function openNumbers(env) {
+// n20p: /open made six database calls on every view (about 1 s before the first byte). The figures are now kept for 60 s per
+// isolate and at the edge; a copy up to 10 minutes old is answered at once and refreshed in the background. The page prints the
+// time the figures were read ("generated"), so a reader always sees how old they are.
+let ON = null, ON_BUSY = null;
+const ON_KEY = ORIGIN + '/__fc_open/v1', ON_FRESH = 60000, ON_STALE = 600000;
+async function openNumbers(env, ctx) {
+  const age = v => Date.now() - Date.parse(v.generated);
+  const load = () => ON_BUSY || (ON_BUSY = openNumbers0(env).then(v => {
+    ON = v; ON_BUSY = null;
+    try { const p = caches.default.put(new Request(ON_KEY), new Response(JSON.stringify(v), { headers: { 'content-type': 'application/json', 'cache-control': 'max-age=' + ON_STALE / 1000 } })); if (ctx && ctx.waitUntil) ctx.waitUntil(p.catch(() => {})); } catch (e) {}
+    return v;
+  }, e => { ON_BUSY = null; throw e; }));
+  if (!ON || age(ON) > ON_FRESH) { try { const hit = await caches.default.match(new Request(ON_KEY)); if (hit) { const v = await hit.json(); if (v && v.generated && (!ON || Date.parse(v.generated) > Date.parse(ON.generated))) ON = v; } } catch (e) {} }
+  if (ON && age(ON) <= ON_FRESH) return ON;
+  if (ON && age(ON) <= ON_STALE && ctx && ctx.waitUntil) { ctx.waitUntil(load().catch(() => {})); return ON; }
+  return load();
+}
+async function openNumbers0(env) {
   const S = p => p.then(v => ({ ok: true, v }), () => ({ ok: false, v: null }));
   const [xl, met, push, al, log, tr, dep, ship, nmod, xl7] = await Promise.all([S(rpc('kolaboro_xray_live', { p_hours: 24 })), S(rpc('kolaboro_metrics_public', {})), S(rpc('kolaboro_push_public', {})),
     S(rpc('kolaboro_y_alerts_public', {})), S(rpc('kolaboro_log_public', {})), S(file(env, 'traction.json', 120000)), S(file(env, 'deploys.json', 120000)), S(file(env, 'shipping.json', 120000)), S(import('./kbx_named.js')), S(rpc('kolaboro_xray_live', { p_hours: 168 }))]);
@@ -442,7 +460,7 @@ export async function handle(req, u, env, ctx, shell) {
         const a = rsAgg(rs, dv.ids);
         return out({ developer: dv.n, slug, projects: dv.ids.length, questions_reported: a.reported, questions_opened: a.opened, answered: a.answered, median_days_to_answer: a.median_days, medians_by_project: a.meds && a.meds.length > 1 ? a.meds : undefined, median_shown_from: RS_MIN, live: !!rs.live, replies_approved: a.replies, counted: rs.generated, source: '/data/dev-response.json', method: rs.sources, licence: rs.licence });
       }
-      if (q === '/api/x/fc/open') return out(await openNumbers(env), 200, 'public, max-age=60');
+      if (q === '/api/x/fc/open') return out(await openNumbers(env, ctx), 200, 'public, max-age=60');
     } catch (e) { return out({ error: 'unavailable', detail: String(e && e.message || e).slice(0, 120) }, 503, 'no-store'); }
     return out({ error: 'not found', module: 'fc' }, 404, 'public, max-age=60');
   }
@@ -452,7 +470,7 @@ export async function handle(req, u, env, ctx, shell) {
   const sh = await shell(pre(lang) + '/how-we-score/');
   let o;
   if (kind === 'open') {
-    const d = await openNumbers(env);
+    const d = await openNumbers(env, ctx);
     o = { lang, path: '/open/', title: t(lang, 'o_title'), desc: t(lang, 'o_desc'), body: openBody(d, lang),
       ld: { '@context': 'https://schema.org', '@graph': [{ '@type': 'WebPage', '@id': ORIGIN + pre(lang) + '/open/#page', url: ORIGIN + pre(lang) + '/open/', name: t(lang, 'o_title'), description: t(lang, 'o_desc'), inLanguage: lang, dateModified: d.generated, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' } },
         { '@type': 'Dataset', name: 'Kolaboro open numbers', description: FT.en.o_desc, url: ORIGIN + '/open/', license: 'https://creativecommons.org/licenses/by/4.0/', isAccessibleForFree: true, creator: { '@type': 'Organization', name: 'Kolaboro', url: ORIGIN + '/' }, distribution: [{ '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: ORIGIN + '/api/x/fc/open' }, { '@type': 'DataDownload', encodingFormat: 'application/json', contentUrl: ORIGIN + '/data/traction.json' }] },

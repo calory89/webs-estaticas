@@ -18,6 +18,7 @@ export const PATHS = /^\/api\/x\/web\/(?:project\/[A-Za-z0-9-]{3,20}|dev\/[a-z0-
 
 let MEMO = null;
 async function loadOne(env, name) {
+  const sh = (globalThis.__kbJson || {})[name]; if (sh && sh.v && Date.now() - sh.t < 600000) return sh.v;   // n20p: reuse the copy kbx_named.js already parsed (named.json is 3.9 MB)
   let r = null;
   try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/' + name)); } catch (e) { r = null; }
   if (!r || !r.ok) { try { r = await fetch(ORIGIN + '/data/' + name, { cf: { cacheTtl: 300, cacheEverything: true } }); } catch (e) { r = null; } }

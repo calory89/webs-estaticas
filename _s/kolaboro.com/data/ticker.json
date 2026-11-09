@@ -18,6 +18,20 @@
   {
    "date": "2026-11-09",
    "kind": "shipped",
+   "text": "Speed: project and developer pages are answered from the edge copy before any data is read and load their data in parallel, the open numbers page keeps its figures for a minute, and analytics waits for the first tap on the tools pages",
+   "tl": {
+    "es": "Velocidad: las páginas de proyectos y promotores se sirven desde la copia en el borde antes de leer datos y cargan sus datos en paralelo, la página de cifras abiertas guarda sus cifras un minuto y la analítica espera al primer toque en las páginas de herramientas",
+    "fr": "Vitesse : les pages projets et promoteurs sont servies depuis la copie en périphérie avant toute lecture de données et chargent leurs données en parallèle, la page des chiffres ouverts garde ses chiffres une minute et la mesure d'audience attend le premier geste sur les pages d'outils",
+    "de": "Tempo: Projekt- und Bauträgerseiten kommen aus der Kopie am Netzrand, bevor Daten gelesen werden, und laden ihre Daten parallel, die Seite mit den offenen Zahlen behält ihre Zahlen eine Minute, und die Analyse wartet auf den Werkzeugseiten bis zur ersten Berührung",
+    "nl": "Snelheid: project- en ontwikkelaarspagina's komen uit de kopie aan de rand van het netwerk voordat er data wordt gelezen en laden hun data parallel, de pagina met open cijfers bewaart haar cijfers een minuut en de statistieken wachten op de toolpagina's tot de eerste tik",
+    "ru": "Скорость: страницы проектов и застройщиков отдаются из копии на границе сети до чтения данных и загружают данные параллельно, страница открытых цифр хранит цифры одну минуту, а аналитика на страницах инструментов ждёт первого касания",
+    "zh": "速度：项目和开发商页面在读取数据之前先由边缘副本响应，并行加载数据；公开数据页面的数字保留一分钟；工具页面的统计代码等到首次点击后才加载",
+    "ar": "السرعة: صفحات المشاريع والمطورين تُقدَّم من النسخة المحفوظة على حافة الشبكة قبل قراءة أي بيانات وتُحمَّل بياناتها بالتوازي، وصفحة الأرقام المفتوحة تحتفظ بأرقامها دقيقة واحدة، والتحليلات تنتظر أول لمسة في صفحات الأدوات"
+   }
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "shipped",
    "text": "Lookalike websites: a daily watch for new websites whose names resemble the developer and project websites we track, with registration and certificate dates, on developer pages and at /watch/lookalikes/",
    "tl": {
     "es": "Webs parecidas: vigilancia diaria de webs nuevas cuyo nombre se parece a las webs de promotores y proyectos que seguimos, con fechas de registro y de certificado, en las páginas de promotores y en /watch/lookalikes/",

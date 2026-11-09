@@ -10,7 +10,8 @@
 //   GET /api/seo/scan?type=p|d&lang=xx&from=0&n=100   legal-safety scan of generated pages (opinion words, facts without a source)
 // Data: /data/named.json (names, developer, pages read, sourced facts; built by tools/kolaboro-agent/named.py on every agent run,
 // so new projects appear automatically) joined with the public files /data/bali-cases.json, promises.json, findings-by-project.json,
-// similar.json and delay-index.json. Rendered HTML is cached at the edge for an hour per URL and data version; the page shell
+// similar.json and delay-index.json. Rendered HTML is cached at the edge per URL (see handle: answered at once, checked against
+// the data version in the background, 6 hours at most); the page shell
 // (header, footer, styles) is the site's own static page for that language.
 // Legal rules: facts only, each with its source link; no opinion words and no verdicts about a named company in any language;
 // no Review or AggregateRating schema (no verified reviews exist yet); private individuals are never named (named.py drops them).
@@ -62,8 +63,17 @@ export const OPINION_RX = /\b(scam\w*|fraud\w*|ponzi|swindl\w*|rip-?off|avoid\w*
 
 // ------------------------------------------------------------------------------------------------ data
 let MEMO = {};
-async function loadJson(env, name, ttl) {
-  const m = MEMO[name]; if (m && Date.now() - m.t < (ttl || 600000)) return m.v;
+// n20p: one fetch and one parse per file per isolate. Requests that arrive while a file is loading share that load, and the parsed
+// copy of named.json, bali-cases.json and promises.json is shared with kbx_web.js and kbx_fc.js (they used to parse their own).
+const SHARED = (globalThis.__kbJson = globalThis.__kbJson || {}), LOADING = {};
+function loadJson(env, name, ttl) {
+  const m = MEMO[name]; if (m && Date.now() - m.t < (ttl || 600000)) return Promise.resolve(m.v);
+  if (LOADING[name]) return LOADING[name];
+  const p = loadJson0(env, name).then(v => { SHARED[name] = { t: Date.now(), v }; return v; });
+  LOADING[name] = p; const done = () => { if (LOADING[name] === p) delete LOADING[name]; }; p.then(done, done);
+  return p;
+}
+async function loadJson0(env, name) {
   let r = null;
   try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/' + name)); } catch (e) { r = null; }
   if (!r || !r.ok) r = await fetch(ORIGIN + '/data/' + name, { cf: { cacheTtl: 300, cacheEverything: true } });
@@ -623,19 +633,24 @@ export async function render(ix, kind, key, lang, env, ctx) {   // exported for 
   if (kind === 'i') return indexPage(ix, lang);
   if (kind === 'projects') {
     const x = ix.bySlug.get(key); if (!x) return null;
-    let reviews = null;
-    try { const k = new Request(ORIGIN + '/__named_rev/v1/' + x.id), hit = await caches.default.match(k); if (hit) reviews = await hit.json(); else { reviews = await rpc('kolaboro_t_reports_public', { p_project: x.id }); const p = caches.default.put(k, new Response(JSON.stringify(reviews || {}), { headers: { 'cache-control': 'max-age=1800' } })); if (ctx && ctx.waitUntil) ctx.waitUntil(p.catch(() => {})); } } catch (e) { reviews = null; }
-    let replies = [];
-    try { const k = new Request(ORIGIN + '/__named_dr/v1/' + x.id + '/' + (await repliesPublished())), hit = await caches.default.match(k); if (hit) replies = await hit.json(); else { replies = (await rpc('kolaboro_devreply_public', { p_id: x.id })) || []; const p = caches.default.put(k, new Response(JSON.stringify(replies), { headers: { 'cache-control': 'max-age=3600' } })); if (ctx && ctx.waitUntil) ctx.waitUntil(p.catch(() => {})); } } catch (e) { replies = []; }
-    let ph = null, phErr = false; try { ph = await phSummary(env, x.id); } catch (e) { ph = null; phErr = true; }
-    let sat = null; try { sat = await satData(env); } catch (e) { sat = null; }
-    let fc = null, fdg = null; try { fc = await fcData(env); fdg = x.dvs ? await fcDevGroup(env, x.dvs) : null; } catch (e) { fc = null; }
-    let web = null; try { web = await webData(env); } catch (e) { web = null; }
-    let coh = ''; try { coh = await cohortCard(env, lang, x.id); } catch (e) { coh = ''; }
-    let paper = null; try { paper = await paperData(env); } catch (e) { paper = null; }   // n18d
-    let see = null; try { see = await seeData(env); } catch (e) { see = null; }
-    let money = null; try { money = await moneyData(env); } catch (e) { money = null; }   // n19b
-    let land = null; try { land = await landData(env); } catch (e) { land = null; }   // n19c
+    // n20p: the thirteen reads below are independent, so they run together (they used to run one after another, which made a page
+    // that was not in the edge cache take 1 to 5 s on a fresh isolate). Each still fails on its own without breaking the page.
+    const soft = (f, d) => (async () => { try { return await f(); } catch (e) { return d; } })();
+    let phErr = false;
+    let [reviews, replies, ph, sat, fcs, web, coh, paper, see, money, land] = await Promise.all([
+      soft(async () => { const k = new Request(ORIGIN + '/__named_rev/v1/' + x.id), hit = await caches.default.match(k); if (hit) return await hit.json(); const rv = await rpc('kolaboro_t_reports_public', { p_project: x.id }); const p = caches.default.put(k, new Response(JSON.stringify(rv || {}), { headers: { 'cache-control': 'max-age=1800' } })); if (ctx && ctx.waitUntil) ctx.waitUntil(p.catch(() => {})); return rv; }, null),
+      soft(async () => { const k = new Request(ORIGIN + '/__named_dr/v1/' + x.id + '/' + (await repliesPublished())), hit = await caches.default.match(k); if (hit) return await hit.json(); const rp = (await rpc('kolaboro_devreply_public', { p_id: x.id })) || []; const p = caches.default.put(k, new Response(JSON.stringify(rp), { headers: { 'cache-control': 'max-age=3600' } })); if (ctx && ctx.waitUntil) ctx.waitUntil(p.catch(() => {})); return rp; }, []),
+      (async () => { try { return await phSummary(env, x.id); } catch (e) { phErr = true; return null; } })(),
+      soft(() => satData(env), null),
+      (async () => { let fc = null, fdg = null; try { fc = await fcData(env); fdg = x.dvs ? await fcDevGroup(env, x.dvs) : null; } catch (e) { fc = null; } return { fc, fdg }; })(),
+      soft(() => webData(env), null),
+      soft(() => cohortCard(env, lang, x.id), ''),
+      soft(() => paperData(env), null),   // n18d
+      soft(() => seeData(env), null),
+      soft(() => moneyData(env), null),   // n19b
+      soft(() => landData(env), null),   // n19c
+    ]);
+    const fc = fcs.fc, fdg = fcs.fdg;
     // n19f: sections computed from a pin that was later corrected are hidden for that project until the data is rebuilt with the
     // new pin. PIN_HOLD lists hand corrections (date of the fix); data files that store the pin they used are also compared with
     // the current pin and dropped for this page when they are more than 2 km apart.
@@ -647,12 +662,13 @@ export async function render(ix, kind, key, lang, env, ctx) {   // exported for 
     return pg;
   }
   const dv = ix.devs.get(key); if (!dv) return null;
-  const gl = await gleif(dv.n, ctx), m0 = gl.matches[0], cs = new Set(dv.ids.map(i => ix.byId.get(i)).filter(Boolean).map(x => COUNTRY_ISO[x.co] || x.co));
-  const netOk = !!(m0 && cs.has(m0.country)), net = netOk ? await gleifNet(m0.lei, ctx) : null;   // a same-name company in another country is not shown as this developer's group
-  let rs = null; try { rs = await rsData(env); } catch (e) { rs = null; }
-  let web = null; try { web = await webData(env); } catch (e) { web = null; }
-  let fam = null; try { fam = await familyData(env); } catch (e) { fam = null; }
-  let watch = null; try { watch = await watchData(env); } catch (e) { watch = null; }   // n19a
+  const softD = f => (async () => { try { return await f(); } catch (e) { return null; } })();   // n20p: the register lookup and the four data files load together
+  const [gn, rs, web, fam, watch] = await Promise.all([
+    (async () => { const gl = await gleif(dv.n, ctx), m0 = gl.matches[0], cs = new Set(dv.ids.map(i => ix.byId.get(i)).filter(Boolean).map(x => COUNTRY_ISO[x.co] || x.co));
+      const netOk = !!(m0 && cs.has(m0.country)), net = netOk ? await gleifNet(m0.lei, ctx) : null;   // a same-name company in another country is not shown as this developer's group
+      return { gl, netOk, net }; })(),
+    softD(() => rsData(env)), softD(() => webData(env)), softD(() => familyData(env)), softD(() => watchData(env))]);   // watch: n19a
+  const gl = gn.gl, netOk = gn.netOk, net = gn.net;
   return devPage(ix, dv, lang, { gleif: gl, net, netOk, rs, web, fam, fm: netOk ? null : famNet(fam, dv.s), watch });
 }
 
@@ -668,19 +684,54 @@ export async function handle(req, u, env, ctx, shell) {
   if (!key && kind === 'developers') return null;                       // /developers/ is the static developer hub
   if (key && kind === 'developers' && RESERVED.has(key)) return null;   // /developers/reply/ etc. stay static
   if (!p.endsWith('/')) return new Response(null, { status: 301, headers: { location: p + '/' + u.search, 'cache-control': 'public, max-age=86400' } });
+  // n20p (9 Nov 2026): the rendered page is kept at the edge under a key that needs no data to compute (code version + path), so a
+  // cached page is answered before any data file is read. Each copy remembers the data version it was built from. A copy older
+  // than a minute is still answered at once and checked in the background: same data version, its clock restarts; new data (a
+  // publish, an approved developer reply), the page is rendered again for the next reader. Copies live 6 hours at most.
+  const fk = new Request(ORIGIN + '/__named_fast/' + CACHE_V + cohortKey(env) + p), t0 = Date.now();
+  try {
+    const hit = await caches.default.match(fk);
+    if (hit) {
+      const age = Date.now() - (+hit.headers.get('x-at') || 0), stale = age > FAST_FRESH;
+      if (stale && ctx && ctx.waitUntil && !REFRESHING.has(p)) {
+        const copy = hit.clone(); REFRESHING.add(p);
+        ctx.waitUntil(refresh(copy, fk, p, kind, key, lang, env, ctx, shell).catch(() => {}).then(() => { REFRESHING.delete(p); }));
+      }
+      const hh = { 'content-type': 'text/html; charset=utf-8', 'x-named-cache': stale ? 'stale' : 'hit', 'cache-control': 'no-cache', 'server-timing': 'cache;desc=' + (stale ? 'stale' : 'hit') + ';dur=' + (Date.now() - t0) };
+      if (hit.headers.get('x-lm')) hh['last-modified'] = hit.headers.get('x-lm');
+      return new Response(hit.body, { status: 200, headers: hh });
+    }
+  } catch (e) {}
   let ix; try { ix = await data(env); } catch (e) { return null; }
-  const ck = new Request(ORIGIN + '/__named_html/' + CACHE_V + cohortKey(env) + '/' + encodeURIComponent(ix.updated + '|' + (ix.named.count || 0) + '|' + ix.P.length + '|' + (ix.named.updated || '') + '|r' + (key && kind === 'projects' ? await repliesPublished() : 0) + '|s' + (key && kind === 'projects' ? (sd => (sd.updated || '') + '|' + ((sd.space || {}).v || ''))((await satData(env).catch(() => null)) || {}) + '|g' + (((await seeData(env).catch(() => null)) || {}).v || '') + '|l' + (((await landData(env).catch(() => null)) || {}).v || '') : '') + (key && kind === 'developers' ? '|f' + (((await familyData(env).catch(() => null)) || {}).updated || '') : '')) + p);
-  try { const hit = await caches.default.match(ck); if (hit) return new Response(hit.body, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'x-named-cache': 'hit', 'cache-control': 'no-cache' } }); } catch (e) {}
+  const t1 = Date.now(), shP = shell(pre(lang) + '/how-we-score/'); shP.catch(() => {});   // the page shell loads while the page is rendered
   const pg = await render(ix, key ? kind : 'i', key, lang, env, ctx);
   if (pg && key) try { await seoLd(pg, env, kind, key); } catch (e) {}
-  const sh = await shell(pre(lang) + '/how-we-score/');
+  const t2 = Date.now(), sh = await shP;
   if (!pg) {
     const nf = { title: tr(lang, 'nf_h') + ' | Kolaboro', desc: tr(lang, 'nf_p'), canon: ORIGIN + p, noindex: true, body: '<section class="phero"><div class="wrap"><h1>' + esc(tr(lang, 'nf_h')) + '</h1><p class="lead">' + esc(tr(lang, 'nf_p')) + '</p><p class="bts"><a class="btn btn-hi kbtn" href="' + pre(lang) + '/projects/">' + esc(tr(lang, 'h1_i')) + '</a> <a class="btn btn-line kbtn" href="/database/">' + esc(tr(lang, 'search_db')) + '</a></p></div></section>', ld: { '@context': 'https://schema.org', '@type': 'WebPage', name: tr(lang, 'nf_h') }, lastmod: '', alt: l => ORIGIN + pre(l) + '/projects/' };
     return new Response(await assemble(nf, lang, sh), { status: 404, headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'no-cache' } });
   }
-  const html = await assemble(pg, lang, sh);
-  if (!pg.nocache) try { const put = caches.default.put(ck, new Response(html, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'max-age=3600' } })); if (ctx && ctx.waitUntil) ctx.waitUntil(put.catch(() => {})); } catch (e) {}
-  return new Response(html, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'x-named-cache': 'miss', 'cache-control': 'no-cache', 'last-modified': new Date((pg.lastmod || '2026-11-01') + 'T00:00:00Z').toUTCString() } });
+  const html = await assemble(pg, lang, sh), lm = new Date((pg.lastmod || '2026-11-01') + 'T00:00:00Z').toUTCString(), t3 = Date.now();
+  if (!pg.nocache) try { const put = fastPut(fk, html, await dataVer(ix, env, kind, key), lm); if (ctx && ctx.waitUntil) ctx.waitUntil(put.catch(() => {})); } catch (e) {}
+  return new Response(html, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'x-named-cache': 'miss', 'cache-control': 'no-cache', 'last-modified': lm, 'server-timing': 'data;dur=' + (t1 - t0) + ', render;dur=' + (t2 - t1) + ', page;dur=' + (t3 - t2) } });
+}
+const FAST_FRESH = 60000, FAST_TTL = 21600, REFRESHING = new Set();
+// the data version a page was built from: any change here means the page must be rendered again
+async function dataVer(ix, env, kind, key) {
+  const pj = key && kind === 'projects', dv = key && kind === 'developers', nul = () => null;
+  const [rp, sd, se, la, fa] = await Promise.all([pj ? repliesPublished() : 0, pj ? satData(env).catch(nul) : null, pj ? seeData(env).catch(nul) : null, pj ? landData(env).catch(nul) : null, dv ? familyData(env).catch(nul) : null]);
+  return ix.updated + '|' + (ix.named.count || 0) + '|' + ix.P.length + '|' + (ix.named.updated || '') + '|r' + rp + '|s' + (pj ? ((sd || {}).updated || '') + '|' + (((sd || {}).space || {}).v || '') + '|g' + ((se || {}).v || '') + '|l' + ((la || {}).v || '') : '') + (dv ? '|f' + ((fa || {}).updated || '') : '');
+}
+const fastPut = (fk, html, ver, lm) => caches.default.put(fk, new Response(html, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'max-age=' + FAST_TTL, 'x-at': String(Date.now()), 'x-ver': encodeURIComponent(ver), 'x-lm': lm || '' } }));
+async function refresh(copy, fk, p, kind, key, lang, env, ctx, shell) {
+  const ix = await data(env), ver = await dataVer(ix, env, kind, key);
+  if (copy.headers.get('x-ver') === encodeURIComponent(ver)) return fastPut(fk, await copy.text(), ver, copy.headers.get('x-lm'));
+  const pg = await render(ix, key ? kind : 'i', key, lang, env, ctx);
+  if (!pg) return caches.default.delete(fk);   // the project or developer is no longer published
+  if (key) try { await seoLd(pg, env, kind, key); } catch (e) {}
+  if (pg.nocache) return;
+  const html = await assemble(pg, lang, await shell(pre(lang) + '/how-we-score/'));
+  return fastPut(fk, html, ver, new Date((pg.lastmod || '2026-11-01') + 'T00:00:00Z').toUTCString());
 }
 
 async function urls(env) {
