@@ -447,7 +447,7 @@ ARTICLES.append({"section":"living","slug":"el-nino-late-rainy-season-ntt-sumba-
 
 # Daily story 2026-11-09 (06:00 WITA)
 ARTICLES.append({"section":"business","slug":"ntt-foreign-arrivals-september-2026-west-sumba-hotels","date":"2026-11-09","time":"06:00",
-"dateline":"KUPANG","kind":"brief","top":True,
+"dateline":"KUPANG","kind":"brief",
 "slugs":{"es":"turistas-extranjeros-ntt-septiembre-2026-hoteles-sumba-occidental","id":"kunjungan-wisman-ntt-september-2026-hotel-sumba-barat"},
 "keywords":{"en":["Sumba tourism statistics","NTT foreign tourists 2026","West Sumba hotel occupancy","Sumba hotel occupancy","East Nusa Tenggara tourism","Sumba investment tourism"],
 "es":["turismo en Sumba cifras","turistas extranjeros NTT 2026","ocupación hotelera Sumba","Sumba Occidental hoteles","Nusa Tenggara Oriental turismo"],
