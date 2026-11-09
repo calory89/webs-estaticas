@@ -3,6 +3,34 @@
  "items": [
   {
    "date": "2026-11-09",
+   "kind": "shipped",
+   "text": "Lookalike websites: a daily watch for new websites whose names resemble the developer and project websites we track, with registration and certificate dates, on developer pages and at /watch/lookalikes/",
+   "tl": {
+    "es": "Webs parecidas: vigilancia diaria de webs nuevas cuyo nombre se parece a las webs de promotores y proyectos que seguimos, con fechas de registro y de certificado, en las páginas de promotores y en /watch/lookalikes/",
+    "fr": "Sites ressemblants : veille quotidienne des nouveaux sites dont le nom ressemble aux sites des promoteurs et projets suivis, avec dates d'enregistrement et de certificat, sur les pages promoteurs et sur /watch/lookalikes/",
+    "de": "Ähnliche Websites: tägliche Suche nach neuen Websites, deren Namen den Websites der verfolgten Bauträger und Projekte ähneln, mit Registrierungs- und Zertifikatsdatum, auf Bauträgerseiten und unter /watch/lookalikes/",
+    "nl": "Gelijkende websites: dagelijkse controle op nieuwe websites waarvan de naam lijkt op de websites van gevolgde ontwikkelaars en projecten, met registratie- en certificaatdatum, op ontwikkelaarspagina's en op /watch/lookalikes/",
+    "ru": "Похожие сайты: ежедневный поиск новых сайтов с именами, похожими на сайты отслеживаемых застройщиков и проектов, с датами регистрации и сертификата, на страницах застройщиков и на /watch/lookalikes/",
+    "zh": "相似网站：每日查找名称与我们跟踪的开发商和项目网站相似的新网站，附注册和证书日期，见开发商页面和 /watch/lookalikes/",
+    "ar": "مواقع مشابهة: مراقبة يومية للمواقع الجديدة التي تشبه أسماؤها مواقع المطوّرين والمشاريع التي نتابعها، مع تاريخي التسجيل والشهادة، في صفحات المطوّرين وعلى /watch/lookalikes/"
+   }
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "data",
+   "text": "Sanctions lists: developer company names are screened daily against the entity entries of the OFAC, UK and UN lists; developer pages show the lists and date when there is no match",
+   "tl": {
+    "es": "Listas de sanciones: los nombres de las empresas promotoras se cotejan a diario con las entidades de las listas de OFAC, Reino Unido y ONU; las páginas de promotores muestran las listas y la fecha cuando no hay coincidencia",
+    "fr": "Listes de sanctions : les noms des sociétés de promotion sont comparés chaque jour aux entités des listes OFAC, Royaume-Uni et ONU ; les pages promoteurs indiquent les listes et la date en l'absence de correspondance",
+    "de": "Sanktionslisten: Firmennamen der Bauträger werden täglich mit den Unternehmenseinträgen der Listen von OFAC, Vereinigtem Königreich und UN abgeglichen; Bauträgerseiten zeigen Listen und Datum, wenn es keinen Treffer gibt",
+    "nl": "Sanctielijsten: bedrijfsnamen van ontwikkelaars worden dagelijks vergeleken met de entiteiten op de lijsten van OFAC, het VK en de VN; ontwikkelaarspagina's tonen de lijsten en datum als er geen overeenkomst is",
+    "ru": "Санкционные списки: названия компаний-застройщиков ежедневно сверяются с организациями в списках OFAC, Великобритании и ООН; при отсутствии совпадений страницы застройщиков показывают списки и дату",
+    "zh": "制裁名单：开发商公司名称每天与 OFAC、英国和联合国名单中的实体条目比对；无匹配时，开发商页面显示所比对的名单和日期",
+    "ar": "قوائم العقوبات: تُقارن أسماء شركات التطوير يوميًا مع كيانات قوائم OFAC والمملكة المتحدة والأمم المتحدة؛ وتعرض صفحات المطوّرين القوائم والتاريخ عند عدم وجود تطابق"
+   }
+  },
+  {
+   "date": "2026-11-09",
    "kind": "data",
    "text": "Corporate family on developer pages: parents and subsidiaries from the GLEIF register (CC0) for 39 developers matched by exact legal name, and a new family link type in the developer graph",
    "tl": {
