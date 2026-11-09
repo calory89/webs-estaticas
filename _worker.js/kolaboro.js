@@ -1023,13 +1023,23 @@ async function reportDraft(req, env, ctx) {
 // ---------- Pilot API for agencies, lenders and lawyers ----------
 const API_DOC = { name: 'Kolaboro pilot API', version: 'v1', auth: 'Send your key in the x-api-key header. Get one at https://kolaboro.com/api-pilot', limits: '200 calls a day per key during the pilot',
   endpoints: [
-    { method: 'GET', path: '/api/v1/markets', does: 'What developers advertise in each of the 9 markets we track: title types, lease terms, extension promises, guaranteed-return language, permit numbers published, price bands. Advertised claims, not verified facts.' },
+    { method: 'GET', path: '/api/v1/markets', does: 'What developers advertise in each market we track: title types, lease terms, extension promises, guaranteed-return language, permit numbers published, price bands. Advertised claims, not verified facts.' },
     { method: 'GET', path: '/api/v1/cases', does: 'Anonymised cases from every market our research agent is following, with the questions a buyer must get answered.' },
     { method: 'POST', path: '/api/v1/projects/check', body: '{ "url": "https://developer-site/project" }', does: 'Desk review of a project page: what it promises, what it leaves out, what to ask before paying.' },
     { method: 'POST', path: '/api/v1/documents/read', body: '{ "type": "auto|certificate|contract|permit|company|invoice", "files": ["data:image/jpeg;base64,…" or "data:application/pdf;base64,…"], "claim": "what the seller told the buyer", "lang": "en" }', does: 'Reads a land certificate, contract, permit, company deed or invoice and compares it with the claim.' },
     { method: 'GET', path: '/api/v1/verify/{sha256}', does: 'Whether a file fingerprint has a Bitcoin timestamp (OpenTimestamps) and when.' },
     { method: 'GET', path: '/api/v1/attestations/{share_token}', does: 'The status of a buyer\'s case they chose to share with you: stage, verdict, evidence counts, chain head and dates.' }
-  ] };
+  ],
+  // n20f: the index listed only the key-protected pilot calls; the open /api/v1 calls described in the OpenAPI file were missing
+  open_endpoints: [
+    { method: 'GET', path: '/api/v1/projects', does: 'Every named project page with its market, developer and links. No key.' },
+    { method: 'GET', path: '/api/v1/projects/{slug}', does: 'One named project: sourced facts, dates, feeds. No key.' },
+    { method: 'GET', path: '/api/v1/developers', does: 'Every developer page with its project count. No key.' },
+    { method: 'GET', path: '/api/v1/developers/{slug}', does: 'One developer and its tracked projects. No key.' },
+    { method: 'GET', path: '/api/v1/search-index', does: 'Compact search index of projects and developers. No key.' },
+    { method: 'POST', path: '/api/v1/xray', body: '{ "url": "https://developer-site/project" }', does: 'Project X-ray as one JSON answer: register and free checks. No key for the free checks; description at /api/v1/xray/openapi.json.' }
+  ],
+  openapi: 'https://kolaboro.com/docs/api/openapi.json' };
 function cors(r) { const h = new Headers(r.headers); h.set('access-control-allow-origin', '*'); h.set('access-control-allow-headers', 'x-api-key, content-type'); h.set('access-control-allow-methods', 'GET, POST, OPTIONS'); return new Response(r.body, { status: r.status, headers: h }); }
 // decoy pilot key: it appears only in an HTML comment on /api-pilot; nobody legitimate ever sends it, so any use means someone is scraping for secrets
 const HONEY_API = '2466ab2fe25f1162fbe9a6aeebfa2dee031873a44164b20f4818715e78013c52';
@@ -1400,7 +1410,9 @@ export async function open(req, u, env) {
   const res = (await extraRoutes(req, u, path, env)) || await openRoutes(req, u, path, L, env);
   if (!res || !/json|csv|xml/.test(res.headers.get('content-type') || '')) return res;
   // every answer carries the fingerprint of the dataset it came from, and supports conditional requests
-  const tag = '"' + L.sha.slice(0, 20) + '-' + (await sha(u.pathname + u.search)).slice(0, 8) + '"', h = new Headers(res.headers);
+  let tag = '"' + L.sha.slice(0, 20) + '-' + (await sha(u.pathname + u.search)).slice(0, 8) + '"'; const h = new Headers(res.headers);
+  // n20f: these three also carry the ticker lines, which change without the dataset changing; their ETag follows the body, or a reader that revalidates would get 304 for an old feed
+  if (res.status === 200 && (path === '/feed.json' || path === '/feed.xml' || path === '/api/open/summary')) { try { tag = '"' + L.sha.slice(0, 12) + '-' + (await sha(await res.clone().text())).slice(0, 16) + '"'; } catch (e) {} }
   h.set('x-kolaboro-dataset-sha256', L.sha); h.set('etag', tag); if (env && env.CF_PAGES_COMMIT_SHA) h.set('x-kolaboro-build', env.CF_PAGES_COMMIT_SHA.slice(0, 12)); h.append('access-control-expose-headers', 'x-kolaboro-dataset-sha256, etag');
   if ((req.headers.get('if-none-match') || '').split(',').map(x => x.trim().replace(/^W\//, '')).indexOf(tag) >= 0 && res.status === 200) return new Response(null, { status: 304, headers: h });
   const body = await res.text();

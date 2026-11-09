@@ -688,6 +688,7 @@ export async function handle(req, u, env, ctx, shell) {
   if (p === '/api/seo/scan') return scan(u, env);
   const dm = p.match(/^\/projects\/([a-z0-9-]{1,90})\/changes\/(?:([0-9a-f]{64})\.txt)?$/);
   if (dm) { let ix; try { ix = await data(env); } catch (e) { return null; } const x = ix.bySlug.get(dm[1]); if (!x) return null; return diffRoute(req, u, env, ctx, shell, x, dm[2] || null); }
+  if (/^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?projects$/.test(p)) return new Response(null, { status: 301, headers: { location: p + '/' + u.search, 'cache-control': 'public, max-age=86400' } });   // n20f: /projects without the slash was a 404
   const m = p.match(RX); if (!m) return null;
   const lang = m[1] || 'en', kind = m[2], key = m[3];
   if (!key && kind === 'developers') return null;                       // /developers/ is the static developer hub
