@@ -517,9 +517,11 @@ def render_page(src, cat, con, spec):
 <div class="kd-k kd-k3"><div><b>{cs['files_pass']}</b><span>files pass</span></div><div><b class="{'kd-late-t' if cs['files_fail'] else ''}">{cs['files_fail']}</b><span>files fail</span></div><div><b>{cs['api_pass']}/{cs['api_pass'] + cs['api_fail']}</b><span>API operations match</span></div></div>
 <p class="kd-meta">Validator: {E(con['validator'])}. OpenAPI description {'valid' if cs['spec_valid'] else 'INVALID'} ({E(cs['spec_validator'])}). Full results: <a href="/data/contracts.json">/data/contracts.json</a>.</p>
 <div class="kd-tw"><table class="kd-t"><thead><tr><th>File</th><th>Result</th><th>First errors</th></tr></thead><tbody>''')
+    seen_c = set()   # a dataset with several files gets the anchor on its first row only (the id was repeated on every row)
     for c in sorted(con['files'], key=lambda c: (c['status'] != 'fail', c['path'])):
         res = {'pass': '<span class="kd-ok-t">pass</span>', 'fail': '<b class="kd-late-t">fail</b>', 'no_contract': 'no contract', 'not_live': 'not served yet'}[c['status']]
-        parts.append(f'<tr id="c-{E(c["dataset"])}"><td><code>{E(c["path"])}</code></td><td>{res}</td><td>{"<br>".join(E(e) for e in c.get("errors") or []) or "&nbsp;"}</td></tr>')
+        cid = '' if c['dataset'] in seen_c else f' id="c-{E(c["dataset"])}"'; seen_c.add(c['dataset'])
+        parts.append(f'<tr{cid}><td><code>{E(c["path"])}</code></td><td>{res}</td><td>{"<br>".join(E(e) for e in c.get("errors") or []) or "&nbsp;"}</td></tr>')
     parts.append('</tbody></table></div><h3 class="kd-h3">API answers against the OpenAPI description</h3><div class="kd-tw"><table class="kd-t"><thead><tr><th>Operation</th><th>HTTP</th><th>Result</th><th>First errors</th></tr></thead><tbody>')
     for c in sorted(con['api'], key=lambda c: (c['status'] != 'fail', c['path'])):
         res = '<span class="kd-ok-t">pass</span>' if c['status'] == 'pass' else '<b class="kd-late-t">fail</b>'
