@@ -13,17 +13,31 @@
  ],
  "items": [
   {
-   "id": "https://kolaboro.com/shipping/#d-2026-11-07",
-   "url": "https://kolaboro.com/shipping/#d-2026-11-07",
-   "title": "7 November 2026: 57 changes shipped so far",
-   "content_text": "- Replace outdated 'anonymous until verification / 10 working days' statements with the named-pages policy in 8 languages; cases cards link to named pages; /p/?id= 301s too\n- Redesign: login, sign-up, reset and thanks screens on the design system; sentence case on registers, status, security and tools; calmer tool cards and status tiles\n- Developer network graph laid out as packed clusters with labels (readable on phones), bottom sheet for details on phones, globe pulse fix (no negative radius)\n- Project X-ray evidence cards 11-18 (location, Sentinel-2 now, image reuse, price per m2, market base rates, developer record, law, similar) at /api/xev\n- Construction progress from space on named project pages (monthly Sentinel-2 thumbnails, change index chart with the developer's dates, 8 languages)\n- Portal and admin console, part 2: design-system tokens, vertical stage list on phones, numeric columns, inbox empty states, destructive buttons\n\nDay in progress: summary taken from the commit subjects so far.",
-   "content_html": "<ul><li>Replace outdated &#x27;anonymous until verification / 10 working days&#x27; statements with the named-pages policy in 8 languages; cases cards link to named pages; /p/?id= 301s too</li><li>Redesign: login, sign-up, reset and thanks screens on the design system; sentence case on registers, status, security and tools; calmer tool cards and status tiles</li><li>Developer network graph laid out as packed clusters with labels (readable on phones), bottom sheet for details on phones, globe pulse fix (no negative radius)</li><li>Project X-ray evidence cards 11-18 (location, Sentinel-2 now, image reuse, price per m2, market base rates, developer record, law, similar) at /api/xev</li><li>Construction progress from space on named project pages (monthly Sentinel-2 thumbnails, change index chart with the developer&#x27;s dates, 8 languages)</li><li>Portal and admin console, part 2: design-system tokens, vertical stage list on phones, numeric columns, inbox empty states, destructive buttons</li></ul><p>Day in progress: summary taken from the commit subjects so far.</p>",
-   "date_published": "2026-11-07T00:00:00Z",
-   "date_modified": "2026-11-07T14:38:02Z",
+   "id": "https://kolaboro.com/shipping/#d-2026-11-08",
+   "url": "https://kolaboro.com/changelog/2026-11-08/",
+   "title": "8 November 2026: 30 changes shipped",
+   "content_text": "- Kolaboro X-ray extension 2.1.0 with the payment email check on Gmail web; email check ranks whole-word lookalikes first and never quotes account numbers (n17a)\n- /open refreshes on its own (live developer answers, new weeks from public data, paying-customer count); buyer groups per project behind a switch (/cohort/)\n- See the site: open street-level photos near the pin and a 3D view (terrain, Overture buildings, 150 m circle, pin accuracy) on named project pages\n- Prices over time shows a headline only after a word like from or price; stacked tables on phones; England live check without console error (n18d)\n- Stage estimate states a building first-seen date only when the Overture registry has one; release dates formatted; method page breadcrumb\n- Radar through the clouds and building footprints in the from-space section, /api/x/space, sealed site-visit record (/tools/site-visit/)\n\nSummary taken from the day's commit subjects.",
+   "content_html": "<ul><li>Kolaboro X-ray extension 2.1.0 with the payment email check on Gmail web; email check ranks whole-word lookalikes first and never quotes account numbers (n17a)</li><li>/open refreshes on its own (live developer answers, new weeks from public data, paying-customer count); buyer groups per project behind a switch (/cohort/)</li><li>See the site: open street-level photos near the pin and a 3D view (terrain, Overture buildings, 150 m circle, pin accuracy) on named project pages</li><li>Prices over time shows a headline only after a word like from or price; stacked tables on phones; England live check without console error (n18d)</li><li>Stage estimate states a building first-seen date only when the Overture registry has one; release dates formatted; method page breadcrumb</li><li>Radar through the clouds and building footprints in the from-space section, /api/x/space, sealed site-visit record (/tools/site-visit/)</li></ul><p>Summary taken from the day&#x27;s commit subjects.</p>",
+   "date_published": "2026-11-08T00:00:00Z",
+   "date_modified": "2026-11-08T22:33:45Z",
    "_kolaboro": {
-    "ships": 57,
-    "data_updates": 41,
-    "method": "so-far"
+    "ships": 30,
+    "data_updates": 31,
+    "method": "deterministic"
+   }
+  },
+  {
+   "id": "https://kolaboro.com/shipping/#d-2026-11-07",
+   "url": "https://kolaboro.com/changelog/2026-11-07/",
+   "title": "7 November 2026: 71 changes shipped",
+   "content_text": "- Free project checks now show results as they load, with evidence cards on location, price per m2, developer record and local law.\n- The satellite card now picks the newest picture with a clear view around the pin location.\n- Project pages now show construction progress from space, using monthly satellite images and a chart set against the developer's own dates.\n- The buyer portal now compares the payments you have made with how far the building has progressed.\n- A new map shows links between developers, such as a shared company, registry number or address.\n- Sign-up from translated check pages no longer lands on a missing page, and the country count is now the same everywhere (94).\n\nSummary written by AI from the day's commits and checked by code.",
+   "content_html": "<ul><li>Free project checks now show results as they load, with evidence cards on location, price per m2, developer record and local law.</li><li>The satellite card now picks the newest picture with a clear view around the pin location.</li><li>Project pages now show construction progress from space, using monthly satellite images and a chart set against the developer&#x27;s own dates.</li><li>The buyer portal now compares the payments you have made with how far the building has progressed.</li><li>A new map shows links between developers, such as a shared company, registry number or address.</li><li>Sign-up from translated check pages no longer lands on a missing page, and the country count is now the same everywhere (94).</li></ul><p>Summary written by AI from the day&#x27;s commits and checked by code.</p>",
+   "date_published": "2026-11-07T00:00:00Z",
+   "date_modified": "2026-11-07T22:22:51Z",
+   "_kolaboro": {
+    "ships": 71,
+    "data_updates": 57,
+    "method": "ai-checked"
    }
   },
   {
