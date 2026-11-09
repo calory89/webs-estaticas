@@ -107,9 +107,9 @@ function kbHeaders(r, u) {
   h.set('cache-control', priv ? 'no-store' : 'no-cache'); // a nonce must never be reused from a cache
   const out = new Response(r.body, { status: r.status, statusText: r.statusText, headers: h });
   // design system (d12a, 7 Nov 2026): /k/ds.css goes right after site.css or app.css, or at the end of <head> when a page has neither
-  let ds = false, lsw = 0; const DSL = '<link rel="stylesheet" href="/k/ds.css?v=' + KB_DS_V + '">';
+  let ds = false; const styleIds = new Set(); const DSL = '<link rel="stylesheet" href="/k/ds.css?v=' + KB_DS_V + '">';
   return new HTMLRewriter().on('script', { element(e) { e.setAttribute('nonce', nonce); } })
-    .on('style#lsw-css', { element(e) { if (lsw++) e.remove(); } })   // n19f: 36 static pages carry the language-menu style twice (duplicate id)
+    .on('style[id]', { element(e) { const id = e.getAttribute('id'); if (styleIds.has(id)) e.remove(); else styleIds.add(id); } })   // n19f: a style block repeated with the same id (36 static pages, sections that each carry their CSS) is kept once
     .on('link[rel="stylesheet"]', { element(e) { if (!ds && /^\/k\/(site|app)\.css/.test(e.getAttribute('href') || '')) { e.after(DSL, { html: true }); ds = true; } } })
     .on('head', { element(e) { e.prepend('<script nonce="' + nonce + '">' + KB_LATE + '</script>', { html: true }); e.onEndTag(t => { if (!ds) { t.before(DSL, { html: true }); ds = true; } }); } }).transform(out);
 }
