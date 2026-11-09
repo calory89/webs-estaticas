@@ -358,6 +358,8 @@ async function encodePng(rgb, w, h, year) {
   const parts = [new Uint8Array([137, 80, 78, 71, 13, 10, 26, 10]), chunk('IHDR', ih), chunk('tEXt', txt), chunk('IDAT', z), chunk('IEND', new Uint8Array(0))];
   const out = new Uint8Array(parts.reduce((a, p) => a + p.length, 0)); let o = 0; for (const p of parts) { out.set(p, o); o += p.length; } return out;
 }
+// n19d (batch 19): the same COG reader and PNG encoder serve the on-demand plot frames of /satellite/plot/ (kbx_g.js frame route)
+export { cogWindow as satCogWindow, pixelOf as satPixelOf, encodePng as satEncodePng };
 const SAT_PX = 256;   // 256 x 256 pixels of 10 m = 2.56 km box
 async function satPick(lat, lng, stat, c) {
   const body = { collections: ['sentinel-2-l2a'], intersects: { type: 'Point', coordinates: [lng, lat] }, query: { 'eo:cloud_cover': { lt: 70 } }, sortby: [{ field: 'properties.datetime', direction: 'desc' }], limit: 30,

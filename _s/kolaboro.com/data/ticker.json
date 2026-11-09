@@ -2,6 +2,20 @@
  "about": "Lines for the 'Shipping daily' bar at the top of every kolaboro.com page, newest first. Added in the same commit as each change. Rendered by _worker.js/kbx_ticker.js. Optional 'tl' holds the line in other page languages; translated pages show only lines that have one (or fixed agent templates).",
  "items": [
   {
+   "date": "2026-11-09",
+   "kind": "shipped",
+   "text": "Any plot from space: pin any spot and get one clear Sentinel-2 picture per quarter since 2017, made on demand, and turn it or a project's time machine into a shareable time-lapse GIF",
+   "tl": {
+    "es": "Cualquier parcela desde el espacio: marca cualquier punto y obtén una imagen despejada de Sentinel-2 por trimestre desde 2017, creada al momento, y conviértela, o la máquina del tiempo de un proyecto, en un GIF para compartir",
+    "fr": "N'importe quel terrain vu de l'espace : placez un repère et obtenez une image Sentinel-2 dégagée par trimestre depuis 2017, créée à la demande, puis un GIF à partager, aussi depuis la machine à remonter le temps des projets",
+    "de": "Jedes Grundstück aus dem All: Punkt setzen und ein klares Sentinel-2-Bild pro Quartal seit 2017 erhalten, auf Abruf erstellt, dazu ein teilbares Zeitraffer-GIF, auch aus der Zeitmaschine der Projektseiten",
+    "nl": "Elk perceel vanuit de ruimte: zet een speld en krijg per kwartaal één heldere Sentinel-2-opname sinds 2017, op aanvraag gemaakt, plus een deelbare time-lapse-GIF, ook vanuit de tijdmachine van projecten",
+    "ru": "Любой участок из космоса: поставьте метку и получите ясный снимок Sentinel-2 за каждый квартал с 2017 года, созданный по запросу, а также GIF-таймлапс для отправки, в том числе из машины времени проектов",
+    "zh": "从太空看任意地块：标记任意地点，即可获得 2017 年以来每季度一张按需生成的晴朗 Sentinel-2 影像，并可将其或项目时光机制作成可分享的延时 GIF",
+    "ar": "أي قطعة أرض من الفضاء: ضع علامة على أي مكان واحصل على صورة Sentinel-2 صافية لكل ربع سنة منذ 2017 تُنشأ عند الطلب، وحوّلها أو آلة الزمن في صفحات المشاريع إلى ملف GIF متسارع للمشاركة"
+   }
+  },
+  {
    "date": "2026-11-08",
    "kind": "data",
    "text": "Satellite images back to January 2017: the monthly Sentinel-2 series on 125 project pages now covers almost ten years",
