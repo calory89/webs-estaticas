@@ -239,7 +239,7 @@ _RDAP_LOCK = threading.Lock()
 
 
 def crt_json(q, timeout=60, tries=2, live_only=True):
-    if past(0.7):
+    if live_only and past(0.4):   # label scans stop early; the per-site lookups below keep their own limit
         return None
     with _CRT_LOCK:
         wait = 4.0 - (time.time() - _CRT_LAST[0])
