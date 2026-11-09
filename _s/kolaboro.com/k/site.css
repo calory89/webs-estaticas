@@ -349,7 +349,7 @@ footer{padding:40px 0 48px;font-size:.9rem;color:var(--muted)}
 .mcta.show{transform:none}
 @media (max-width:760px){.mcta{display:block}}
 /* the sticky button must never hide what the buyer is typing or reading at the end of a page */
-@media (max-width:760px){main{padding-bottom:76px}body:has(input:focus,textarea:focus,select:focus) .mcta{transform:translateY(130%)}}
+@media (max-width:760px){main{padding-bottom:76px}body.kb-typing:not(i) .mcta{transform:translateY(130%)}}
 
 /* footer */
 footer{padding:56px 0 40px;font-size:.92rem;color:var(--muted);border-top:1px solid var(--line)}

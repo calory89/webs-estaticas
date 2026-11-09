@@ -116,6 +116,8 @@ function kbHeaders(r, u) {
   const out = new Response(r.body, { status: r.status, statusText: r.statusText, headers: h });
   // design system (d12a, 7 Nov 2026): /k/ds.css goes right after site.css or app.css, or at the end of <head> when a page has neither
   let ds = false; const styleIds = new Set(); const DSL = '<link rel="stylesheet" href="/k/ds.css?v=' + KB_DS_V + '">';
+  // n20p: pages that load site.css get /k/ds-site.css, the same rules without the :has() page test (see that file's first lines)
+  const DSLS = KB_DSS_V === KB_DS_V ? '<link rel="stylesheet" href="/k/ds-site.css?v=' + KB_DS_V + '">' : DSL;
   // n20s (9 Nov 2026): the account-wide "analytics-all" worker adds Google Analytics to any page whose <head> does not carry it, without a
   // nonce and without waiting (that was every strict-CSP report: about 35 page types). Pages without the tag now get the same tag from
   // here, with the nonce and held until the first interaction like on every other page; analytics-all then sees it and adds nothing.
@@ -123,13 +125,14 @@ function kbHeaders(r, u) {
   return new HTMLRewriter().on('script', { element(e) { e.setAttribute('nonce', nonce); } })
     .on('head script', { element(e) { gaTail = ''; if ((e.getAttribute('src') || '').includes(KB_GA)) ga = true; }, text(t) { if (ga) return; const x = gaTail + t.text; if (x.includes(KB_GA)) ga = true; gaTail = t.lastInTextNode ? '' : x.slice(-12); } })
     .on('style[id]', { element(e) { const id = e.getAttribute('id'); if (styleIds.has(id)) e.remove(); else styleIds.add(id); } })   // n19f: a style block repeated with the same id (36 static pages, sections that each carry their CSS) is kept once
-    .on('link[rel="stylesheet"]', { element(e) { if (!ds && /^\/k\/(site|app)\.css/.test(e.getAttribute('href') || '')) { e.after(DSL, { html: true }); ds = true; } } })
+    .on('link[rel="stylesheet"]', { element(e) { const hf = e.getAttribute('href') || ''; if (!ds && /^\/k\/(site|app)\.css/.test(hf)) { e.after(/^\/k\/site\.css/.test(hf) ? DSLS : DSL, { html: true }); ds = true; } } })
     .on('head', { element(e) { e.prepend('<script nonce="' + nonce + '">' + KB_LATE + '</script>', { html: true }); e.onEndTag(t => { if (!ds) { t.before(DSL, { html: true }); ds = true; } if (!ga) { t.before('<script nonce="' + nonce + '">' + KB_GA_JS + '</script>', { html: true }); ga = true; } }); } }).transform(out);
 }
 const KB_GA = 'G-FJKJE77K4V';
 const KB_GA_JS = '(window.kbLate||function(f){addEventListener("load",function(){setTimeout(f,1500)})})(function(){var s=document.createElement("script");s.async=1;s.src="https://www.googletagmanager.com/gtag/js?id=' + KB_GA + '";document.head.appendChild(s)});' +
   "window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','" + KB_GA + "');";
 const KB_DS_V = '2a099a898b';   // bump with ds.css (scratchpad d12a/dsv.sh does it)
+const KB_DSS_V = '2a099a898b';   // the ds.css version /k/ds-site.css was generated from; when it differs from KB_DS_V every page gets plain ds.css
 // kolaboro.com mobile speed (b9c, 6 Nov 2026): third-party tags wait for the first interaction (tap, key, scroll, mouse move)
 // or 8 s after load, whichever comes first. window.kbLate(fn) queues work for that moment (the static pages load gtag through it);
 // Cloudflare Zaraz (Clarity) is held the same way by deferring its zaraz.init call. Events queued before that are kept.

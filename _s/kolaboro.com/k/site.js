@@ -121,7 +121,8 @@
   // shipping log ticker: live database numbers plus the dated log of what shipped
   var shipT = document.getElementById('shipT');
   if (shipT) {
-    var shipDur = function () { var g = shipT.firstElementChild; if (g) shipT.style.setProperty('--ship-dur', Math.max(30, Math.round(g.scrollWidth / 55)) + 's'); };
+    // measured in the next frame, when the browser has laid the page out anyway (measuring here forced an extra layout of the whole page)
+    var shipDur = function () { requestAnimationFrame(function () { var g = shipT.firstElementChild; if (g) shipT.style.setProperty('--ship-dur', Math.max(30, Math.round(g.scrollWidth / 55)) + 's'); }); };
     shipDur();
     getData().then(function (d) {
       if (!d || !d.ships || !d.ships.length) return;
@@ -217,6 +218,10 @@
     if (foot && 'IntersectionObserver' in window) new IntersectionObserver(function (es) { footVisible = es[0].isIntersecting; upd(); }, { threshold: 0 }).observe(foot);
     function upd() { m.classList.toggle('show', scrollY > 520 && !heroVisible && !formVisible && !heroForm && !footVisible); }
     addEventListener('scroll', upd, { passive: true }); upd();
+    // hidden while the reader types in a field. site.css did this with body:has(input:focus), and :has() on the body made the
+    // browser restyle the whole page after every DOM change; a class on the body costs nothing (n20p, 9 Nov 2026)
+    var typ = function () { var a = document.activeElement; document.body.classList.toggle('kb-typing', !!a && /^(INPUT|TEXTAREA|SELECT)$/.test(a.tagName)); };
+    document.addEventListener('focusin', typ); document.addEventListener('focusout', function () { setTimeout(typ, 0); }); typ();
   }
 
   // quick "check a project" boxes -> /check?q=
@@ -911,7 +916,6 @@ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.c
     links.forEach(function (a, i) { if (i === cur) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current'); });
     var a = links[cur]; if (a && !side) { var r = a.getBoundingClientRect(), tr = toc.getBoundingClientRect(); if (r.left < tr.left || r.right > tr.right) toc.scrollTo({ left: a.offsetLeft - 16, behavior: 'smooth' }); }
   };
-  if (toc) { addEventListener('scroll', spy, { passive: true }); addEventListener('resize', spy); spy(); }
   // long lists: first 6 shown, the rest behind one button (everything stays in the page for search engines and Ctrl+F)
   D.querySelectorAll('.kwrap ul.fl:not(.glance), .kwrap ol.srcs, .kwrap .tw tbody, [data-kx-lists] ul.lk').forEach(function (ul) {
     var li = ul.children; if (li.length <= (ul.classList.contains('lk') ? 12 : 8)) return;
@@ -921,6 +925,8 @@ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.c
     b.addEventListener('click', function () { var o = ul.classList.toggle('kopen'); b.setAttribute('aria-expanded', o ? 'true' : 'false'); b.textContent = o ? T[1] : T[0].replace('{n}', li.length); if (!o) (ul.closest('.tw') || ul).scrollIntoView({ block: 'nearest' }); });
     var at = ul.closest('.tw') || ul; at.parentNode.insertBefore(b, at.nextSibling); ul._kb = b;
   });
+  // the section spy measures the page, so it starts after the lists are folded and in the next frame (one layout instead of three)
+  if (toc) { addEventListener('scroll', spy, { passive: true }); addEventListener('resize', spy); requestAnimationFrame(spy); }
   // a link to a folded item (or Ctrl+F landing inside one) opens the list
   var openFor = function (el) { var ul = el && el.closest && el.closest('.kfold'); if (ul && !ul.classList.contains('kopen') && ul._kb) ul._kb.click(); };
   addEventListener('hashchange', function () { try { openFor(D.querySelector(location.hash)); } catch (e) {} });
