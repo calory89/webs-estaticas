@@ -32,7 +32,8 @@ import { seoLd } from './kbx_lastmod.js';   // batch 15 (s15b): true dateModifie
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v45';   // v45: lookalike websites and sanctions screening on developer pages (n19a)
+const CACHE_V = 'named-v46';   // v46: lookalike list shows 6, certificate not checked yet wording (n19a)
+//     // 'named-v45';   // v45: lookalike websites and sanctions screening on developer pages (n19a)
 //     // 'named-v44';   // v44: pin hold for corrected pins, inline card labels on phones (n19f)
 //     // 'named-v43';   // v43: bidi isolation of names and tags in #land and #maphist (n19c)
 //     // 'named-v42';   // v42: protected land and map history ledger layout (n19c)

@@ -46,7 +46,7 @@ export async function watchData(env) {
 const S = {
   en: { h: 'Lookalike websites and sanctions lists', la_h: 'Websites that look like this developer\'s',
     la_intro: 'Every day we look for new websites whose names resemble {doms}: new TLS certificates in public Certificate Transparency logs, and newly registered names with another ending, changed letters or added words. A similar name is a fact about the name only: agents, resellers and developers themselves register such names too. Pay only into the account named in your contract, after confirming it by phone.',
-    item: '{d} resembles {o} ({why}).', reg: 'Registered on {d}.', noreg: 'The registry does not publish a registration date.', cert2: 'Certificate issued on {d}.', cert: 'First certificate issued on {d}.', nocert: 'No certificate found.',
+    item: '{d} resembles {o} ({why}).', reg: 'Registered on {d}.', noreg: 'The registry does not publish a registration date.', cert2: 'Certificate issued on {d}.', cert: 'First certificate issued on {d}.', nocert2: 'Certificate not checked yet.', nocert: 'No certificate found.',
     res1: 'Resolves to an address today.', res0: 'Does not resolve today.', gone: 'No longer registered on {d}.', none: 'None found in the last 12 months (checked {d}).', all: 'All lookalike websites',
     why: { hyphen: 'same name with or without a hyphen', tld: 'same name, different ending', glyph: 'letters that look alike', typo: 'one or two letters different', word: 'the name plus another word', contains: 'contains the name' },
     sa_h: 'Sanctions lists', sa_ok: 'Company name screened on {d} against {lists}: no match.', sa_note: 'A name check, not an identity check: a company can also trade under another name. Possible matches are reviewed by a person and are not published.',
@@ -59,7 +59,7 @@ const S = {
     p_src: 'Sources', p_upd: 'Updated {d}.', p_pay: 'Before paying: check the payment email', p_dev: 'Developer page' },
   es: { h: 'Webs parecidas y listas de sanciones', la_h: 'Webs que se parecen a las de este promotor',
     la_intro: 'Cada día buscamos webs nuevas cuyo nombre se parece a {doms}: certificados TLS nuevos en los registros públicos de Certificate Transparency y nombres recién registrados con otra terminación, letras cambiadas o palabras añadidas. Un nombre parecido es un dato sobre el nombre, nada más: agentes, revendedores y los propios promotores también registran nombres así. Pague solo a la cuenta que figura en su contrato, después de confirmarla por teléfono.',
-    item: '{d} se parece a {o} ({why}).', reg: 'Registrado el {d}.', noreg: 'El registro no publica la fecha de alta.', cert2: 'Certificado emitido el {d}.', cert: 'Primer certificado emitido el {d}.', nocert: 'No se encontró ningún certificado.',
+    item: '{d} se parece a {o} ({why}).', reg: 'Registrado el {d}.', noreg: 'El registro no publica la fecha de alta.', cert2: 'Certificado emitido el {d}.', cert: 'Primer certificado emitido el {d}.', nocert2: 'Certificado aún no comprobado.', nocert: 'No se encontró ningún certificado.',
     res1: 'Hoy resuelve a una dirección.', res0: 'Hoy no resuelve.', gone: 'Ya no está registrado el {d}.', none: 'Ninguna encontrada en los últimos 12 meses (comprobado el {d}).', all: 'Todas las webs parecidas',
     why: { hyphen: 'mismo nombre con o sin guion', tld: 'mismo nombre, otra terminación', glyph: 'letras que se parecen', typo: 'una o dos letras distintas', word: 'el nombre más otra palabra', contains: 'contiene el nombre' },
     sa_h: 'Listas de sanciones', sa_ok: 'Nombre de la empresa cotejado el {d} con {lists}: sin coincidencia.', sa_note: 'Es una comprobación del nombre, no de la identidad: una empresa también puede operar con otro nombre. Las posibles coincidencias las revisa una persona y no se publican.',
@@ -72,7 +72,7 @@ const S = {
     p_src: 'Fuentes', p_upd: 'Actualizado el {d}.', p_pay: 'Antes de pagar: compruebe el email de pago', p_dev: 'Página del promotor' },
   de: { h: 'Ähnliche Websites und Sanktionslisten', la_h: 'Websites, die denen dieses Bauträgers ähneln',
     la_intro: 'Jeden Tag suchen wir neue Websites, deren Namen {doms} ähneln: neue TLS-Zertifikate in den öffentlichen Certificate-Transparency-Logs und neu registrierte Namen mit anderer Endung, vertauschten Buchstaben oder zusätzlichen Wörtern. Ein ähnlicher Name ist nur eine Tatsache über den Namen: Makler, Wiederverkäufer und Bauträger selbst registrieren solche Namen auch. Zahlen Sie nur auf das Konto aus Ihrem Vertrag, nachdem Sie es telefonisch bestätigt haben.',
-    item: '{d} ähnelt {o} ({why}).', reg: 'Registriert am {d}.', noreg: 'Die Registry veröffentlicht kein Registrierungsdatum.', cert2: 'Zertifikat ausgestellt am {d}.', cert: 'Erstes Zertifikat ausgestellt am {d}.', nocert: 'Kein Zertifikat gefunden.',
+    item: '{d} ähnelt {o} ({why}).', reg: 'Registriert am {d}.', noreg: 'Die Registry veröffentlicht kein Registrierungsdatum.', cert2: 'Zertifikat ausgestellt am {d}.', cert: 'Erstes Zertifikat ausgestellt am {d}.', nocert2: 'Zertifikat noch nicht geprüft.', nocert: 'Kein Zertifikat gefunden.',
     res1: 'Löst heute auf eine Adresse auf.', res0: 'Löst heute nicht auf.', gone: 'Seit {d} nicht mehr registriert.', none: 'In den letzten 12 Monaten keine gefunden (geprüft am {d}).', all: 'Alle ähnlichen Websites',
     why: { hyphen: 'gleicher Name mit oder ohne Bindestrich', tld: 'gleicher Name, andere Endung', glyph: 'ähnlich aussehende Buchstaben', typo: 'ein oder zwei Buchstaben anders', word: 'der Name plus ein weiteres Wort', contains: 'enthält den Namen' },
     sa_h: 'Sanktionslisten', sa_ok: 'Firmenname am {d} mit {lists} abgeglichen: kein Treffer.', sa_note: 'Ein Namensabgleich, keine Identitätsprüfung: Ein Unternehmen kann auch unter einem anderen Namen auftreten. Mögliche Treffer prüft ein Mensch, sie werden nicht veröffentlicht.',
@@ -85,7 +85,7 @@ const S = {
     p_src: 'Quellen', p_upd: 'Aktualisiert am {d}.', p_pay: 'Vor dem Zahlen: Zahlungs-E-Mail prüfen', p_dev: 'Bauträgerseite' },
   fr: { h: 'Sites ressemblants et listes de sanctions', la_h: 'Sites qui ressemblent à ceux de ce promoteur',
     la_intro: 'Chaque jour, nous cherchons de nouveaux sites dont le nom ressemble à {doms} : nouveaux certificats TLS dans les journaux publics Certificate Transparency, et noms récemment enregistrés avec une autre extension, des lettres changées ou des mots ajoutés. Un nom ressemblant est un fait sur le nom, rien de plus : agents, revendeurs et promoteurs eux-mêmes enregistrent aussi de tels noms. Ne payez que sur le compte indiqué dans votre contrat, après l\'avoir confirmé par téléphone.',
-    item: '{d} ressemble à {o} ({why}).', reg: 'Enregistré le {d}.', noreg: 'Le registre ne publie pas de date d\'enregistrement.', cert2: 'Certificat émis le {d}.', cert: 'Premier certificat émis le {d}.', nocert: 'Aucun certificat trouvé.',
+    item: '{d} ressemble à {o} ({why}).', reg: 'Enregistré le {d}.', noreg: 'Le registre ne publie pas de date d\'enregistrement.', cert2: 'Certificat émis le {d}.', cert: 'Premier certificat émis le {d}.', nocert2: 'Certificat pas encore vérifié.', nocert: 'Aucun certificat trouvé.',
     res1: 'Résout vers une adresse aujourd\'hui.', res0: 'Ne résout pas aujourd\'hui.', gone: 'Plus enregistré le {d}.', none: 'Aucun trouvé ces 12 derniers mois (vérifié le {d}).', all: 'Tous les sites ressemblants',
     why: { hyphen: 'même nom avec ou sans tiret', tld: 'même nom, autre extension', glyph: 'lettres qui se ressemblent', typo: 'une ou deux lettres différentes', word: 'le nom plus un autre mot', contains: 'contient le nom' },
     sa_h: 'Listes de sanctions', sa_ok: 'Nom de la société comparé le {d} à {lists} : aucune correspondance.', sa_note: 'Une vérification du nom, pas de l\'identité : une société peut aussi opérer sous un autre nom. Les correspondances possibles sont examinées par une personne et ne sont pas publiées.',
@@ -98,7 +98,7 @@ const S = {
     p_src: 'Sources', p_upd: 'Mis à jour le {d}.', p_pay: 'Avant de payer : vérifiez l\'email de paiement', p_dev: 'Page du promoteur' },
   nl: { h: 'Gelijkende websites en sanctielijsten', la_h: 'Websites die lijken op die van deze ontwikkelaar',
     la_intro: 'Elke dag zoeken we nieuwe websites waarvan de naam lijkt op {doms}: nieuwe TLS-certificaten in de openbare Certificate Transparency-logs en nieuw geregistreerde namen met een andere extensie, gewijzigde letters of toegevoegde woorden. Een gelijkende naam is alleen een feit over de naam: makelaars, wederverkopers en ontwikkelaars zelf registreren zulke namen ook. Betaal alleen op de rekening uit uw contract, nadat u die telefonisch hebt bevestigd.',
-    item: '{d} lijkt op {o} ({why}).', reg: 'Geregistreerd op {d}.', noreg: 'Het register publiceert geen registratiedatum.', cert2: 'Certificaat uitgegeven op {d}.', cert: 'Eerste certificaat uitgegeven op {d}.', nocert: 'Geen certificaat gevonden.',
+    item: '{d} lijkt op {o} ({why}).', reg: 'Geregistreerd op {d}.', noreg: 'Het register publiceert geen registratiedatum.', cert2: 'Certificaat uitgegeven op {d}.', cert: 'Eerste certificaat uitgegeven op {d}.', nocert2: 'Certificaat nog niet gecontroleerd.', nocert: 'Geen certificaat gevonden.',
     res1: 'Verwijst vandaag naar een adres.', res0: 'Verwijst vandaag nergens naar.', gone: 'Niet meer geregistreerd op {d}.', none: 'Geen gevonden in de afgelopen 12 maanden (gecontroleerd op {d}).', all: 'Alle gelijkende websites',
     why: { hyphen: 'zelfde naam met of zonder streepje', tld: 'zelfde naam, andere extensie', glyph: 'letters die op elkaar lijken', typo: 'een of twee letters anders', word: 'de naam plus een ander woord', contains: 'bevat de naam' },
     sa_h: 'Sanctielijsten', sa_ok: 'Bedrijfsnaam op {d} vergeleken met {lists}: geen overeenkomst.', sa_note: 'Een naamcontrole, geen identiteitscontrole: een bedrijf kan ook onder een andere naam werken. Mogelijke overeenkomsten worden door een mens bekeken en niet gepubliceerd.',
@@ -111,7 +111,7 @@ const S = {
     p_src: 'Bronnen', p_upd: 'Bijgewerkt op {d}.', p_pay: 'Voor het betalen: controleer de betalingsmail', p_dev: 'Ontwikkelaarspagina' },
   ru: { h: 'Похожие сайты и санкционные списки', la_h: 'Сайты, похожие на сайты этого застройщика',
     la_intro: 'Каждый день мы ищем новые сайты, чьи имена похожи на {doms}: новые TLS-сертификаты в публичных журналах Certificate Transparency и недавно зарегистрированные имена с другим окончанием, изменёнными буквами или добавленными словами. Похожее имя говорит только об имени: такие имена регистрируют и агенты, и перепродавцы, и сами застройщики. Платите только на счёт, указанный в договоре, подтвердив его по телефону.',
-    item: '{d} похож на {o} ({why}).', reg: 'Зарегистрирован {d}.', noreg: 'Реестр не публикует дату регистрации.', cert2: 'Сертификат выпущен {d}.', cert: 'Первый сертификат выпущен {d}.', nocert: 'Сертификат не найден.',
+    item: '{d} похож на {o} ({why}).', reg: 'Зарегистрирован {d}.', noreg: 'Реестр не публикует дату регистрации.', cert2: 'Сертификат выпущен {d}.', cert: 'Первый сертификат выпущен {d}.', nocert2: 'Сертификат ещё не проверен.', nocert: 'Сертификат не найден.',
     res1: 'Сегодня указывает на адрес.', res0: 'Сегодня не указывает на адрес.', gone: 'С {d} больше не зарегистрирован.', none: 'За последние 12 месяцев не найдено (проверено {d}).', all: 'Все похожие сайты',
     why: { hyphen: 'то же имя с дефисом или без', tld: 'то же имя, другое окончание', glyph: 'похожие буквы', typo: 'одна или две буквы отличаются', word: 'имя плюс другое слово', contains: 'содержит имя' },
     sa_h: 'Санкционные списки', sa_ok: 'Название компании сверено {d} со списками {lists}: совпадений нет.', sa_note: 'Это проверка названия, а не личности: компания может работать и под другим названием. Возможные совпадения проверяет человек, они не публикуются.',
@@ -124,7 +124,7 @@ const S = {
     p_src: 'Источники', p_upd: 'Обновлено {d}.', p_pay: 'Перед оплатой: проверьте письмо с реквизитами', p_dev: 'Страница застройщика' },
   zh: { h: '相似网站与制裁名单', la_h: '与该开发商网站相似的网站',
     la_intro: '我们每天查找名称与 {doms} 相似的新网站：公开证书透明度（Certificate Transparency）日志中的新 TLS 证书，以及新注册的、后缀不同、字母改动或加了词的域名。名称相似只是关于名称的事实：代理、转售商和开发商本身也会注册这类名称。只向合同中写明的账户付款，并先通过电话确认。',
-    item: '{d} 与 {o} 相似（{why}）。', reg: '注册于 {d}。', noreg: '注册局未公布注册日期。', cert2: '证书签发于 {d}。', cert: '首张证书签发于 {d}。', nocert: '未找到证书。',
+    item: '{d} 与 {o} 相似（{why}）。', reg: '注册于 {d}。', noreg: '注册局未公布注册日期。', cert2: '证书签发于 {d}。', cert: '首张证书签发于 {d}。', nocert2: '证书尚未检查。', nocert: '未找到证书。',
     res1: '今天可解析到地址。', res0: '今天无法解析。', gone: '{d} 起已不再注册。', none: '过去 12 个月内未发现（检查于 {d}）。', all: '全部相似网站',
     why: { hyphen: '同名，有无连字符', tld: '同名，后缀不同', glyph: '字形相似的字母', typo: '一两个字母不同', word: '名称加另一个词', contains: '包含该名称' },
     sa_h: '制裁名单', sa_ok: '公司名称于 {d} 与 {lists} 比对：无匹配。', sa_note: '这是名称比对，不是身份核验：公司也可能以其他名称经营。可能的匹配由人工审核，不予公布。',
@@ -137,7 +137,7 @@ const S = {
     p_src: '来源', p_upd: '更新于 {d}。', p_pay: '付款前：检查付款邮件', p_dev: '开发商页面' },
   ar: { h: 'مواقع مشابهة وقوائم العقوبات', la_h: 'مواقع تشبه مواقع هذا المطوّر',
     la_intro: 'نبحث كل يوم عن مواقع جديدة تشبه أسماؤها {doms}: شهادات TLS جديدة في سجلات شفافية الشهادات (Certificate Transparency) العامة، وأسماء مسجلة حديثًا بامتداد آخر أو بأحرف مغيّرة أو بكلمات مضافة. تشابه الاسم حقيقة عن الاسم فقط: يسجّل الوكلاء والبائعون والمطوّرون أنفسهم أسماء كهذه أيضًا. ادفع فقط إلى الحساب المذكور في عقدك بعد تأكيده هاتفيًا.',
-    item: '{d} يشبه {o} ({why}).', reg: 'سُجّل في {d}.', noreg: 'لا ينشر السجل تاريخ التسجيل.', cert2: 'صدرت شهادة في {d}.', cert: 'صدرت أول شهادة في {d}.', nocert: 'لم يُعثر على شهادة.',
+    item: '{d} يشبه {o} ({why}).', reg: 'سُجّل في {d}.', noreg: 'لا ينشر السجل تاريخ التسجيل.', cert2: 'صدرت شهادة في {d}.', cert: 'صدرت أول شهادة في {d}.', nocert2: 'لم تُفحص الشهادة بعد.', nocert: 'لم يُعثر على شهادة.',
     res1: 'يشير اليوم إلى عنوان.', res0: 'لا يشير اليوم إلى عنوان.', gone: 'لم يعد مسجلًا في {d}.', none: 'لم يُعثر على شيء خلال آخر 12 شهرًا (فُحص في {d}).', all: 'كل المواقع المشابهة',
     why: { hyphen: 'الاسم نفسه مع شرطة أو بدونها', tld: 'الاسم نفسه بامتداد مختلف', glyph: 'أحرف متشابهة الشكل', typo: 'حرف أو حرفان مختلفان', word: 'الاسم مع كلمة أخرى', contains: 'يحتوي على الاسم' },
     sa_h: 'قوائم العقوبات', sa_ok: 'قورن اسم الشركة في {d} مع {lists}: لا تطابق.', sa_note: 'هذه مقارنة للاسم لا تحقق من الهوية: قد تعمل الشركة أيضًا باسم آخر. يراجع شخصٌ التطابقات المحتملة ولا تُنشر.',
@@ -154,10 +154,10 @@ export const watchHeading = lang => t(lang, 'h');
 
 const rdapUrl = d => 'https://client.rdap.org/?type=domain&object=' + encodeURIComponent(d);
 const crtUrl = d => 'https://crt.sh/?q=' + encodeURIComponent(d);
-const CSS = '<style id="kwatch-css">.kwa-l{list-style:none;padding:0;margin:var(--k-3,12px) 0;display:grid;gap:var(--k-3,12px)}.kwa-l li{padding:var(--k-3,12px) var(--k-4,16px);border:1px solid var(--k-line,#D5DAD8);border-radius:var(--k-r-md,10px);background:var(--k-surface,#fff);overflow-wrap:anywhere}.kwa-l b{font-weight:650}.kwa-l .kwa-m{display:block;color:var(--k-muted,#56636F);font-size:var(--k-fs-sm,15px);margin-top:4px}.kwa-l .src{margin-inline-start:6px}.kwa-sa{margin-top:var(--k-5,24px)}.kwa-sa h3,.kwa-la h3{margin:0 0 var(--k-2,8px);font-size:var(--k-fs-lg,20px)}</style>';
+const CSS = '<style id="kwatch-css">.kwa-l{list-style:none;padding:0;margin:var(--k-3,12px) 0;display:grid;gap:var(--k-3,12px)}.kwa-l li{padding:var(--k-3,12px) var(--k-4,16px);border:1px solid var(--k-line,#D5DAD8);border-radius:var(--k-r-md,10px);background:var(--k-surface,#fff);overflow-wrap:anywhere}.kwa-l b{font-weight:650}.kwa-l .kwa-m{display:block;color:var(--k-muted,#56636F);font-size:var(--k-fs-sm,15px);margin-top:4px}.kwa-l .src{margin-inline-start:6px}.kwa-sa{margin-top:var(--k-5,24px)}.kwa-lk{display:flex;flex-wrap:wrap;gap:var(--k-2,8px) var(--k-5,24px)}.kwa-sa h3,.kwa-la h3{margin:0 0 var(--k-2,8px);font-size:var(--k-fs-lg,20px)}</style>';
 
 function itemHtml(x, lang) {
-  const meta = [x.reg ? t(lang, 'reg', { d: fdt(x.reg, lang) }) : t(lang, 'noreg'), x.cert ? t(lang, x.cert_first ? 'cert' : 'cert2', { d: fdt(x.cert, lang) }) : t(lang, 'nocert'), x.gone ? t(lang, 'gone', { d: fdt(x.gone, lang) }) : t(lang, x.res ? 'res1' : 'res0')].join(' ');
+  const meta = [x.reg ? t(lang, 'reg', { d: fdt(x.reg, lang) }) : t(lang, 'noreg'), x.cert ? t(lang, x.cert_first ? 'cert' : 'cert2', { d: fdt(x.cert, lang) }) : t(lang, x.cert_first ? 'nocert' : 'nocert2'), x.gone ? t(lang, 'gone', { d: fdt(x.gone, lang) }) : t(lang, x.res ? 'res1' : 'res0')].join(' ');
   return '<li class="kfact"><b dir="ltr">' + esc(x.u || x.d) + '</b> ' + esc(t(lang, 'item', { d: '', o: x.o, why: (t(lang, 'why') || {})[x.why] || x.why }).replace(/^\s+/, '')) +
     '<span class="kwa-m">' + esc(meta) + ' <a class="src" href="' + esc(rdapUrl(x.d)) + '" rel="nofollow noopener" target="_blank">RDAP</a> <a class="src" href="' + esc(crtUrl(x.d)) + '" rel="nofollow noopener" target="_blank">crt.sh</a></span></li>';
 }
@@ -171,10 +171,10 @@ export function watchDevHtml(wd, slug, lang) {
   const doms = (la && la.w && la.w[url]) || [];
   let h = '';
   if (la && doms.length) {
-    const L = (wd.byUrl.get(url) || []).slice(0, 12);
+    const L = (wd.byUrl.get(url) || []).slice(0, 6);
     h += '<div class="kwa-la"><h3>' + esc(t(lang, 'la_h')) + '</h3><p class="ki">' + esc(t(lang, 'la_intro', { doms: doms.slice(0, 6).join(', ') })) + '</p>' +
       (L.length ? '<ul class="kwa-l">' + L.map(x => itemHtml(x, lang)).join('') + '</ul>' : '<ul class="fl"><li class="kfact">' + esc(t(lang, 'none', { d: fdt(la.updated, lang) })) + ' <a class="src" href="/watch/lookalikes/">kolaboro.com</a></li></ul>') +
-      '<p><a class="more" href="' + pre(lang) + '/watch/lookalikes/">' + esc(t(lang, 'all')) + '</a> <a class="more" href="' + pre(lang) + '/tools/payment-email-check/">' + esc(t(lang, 'p_pay')) + '</a></p></div>';
+      '<p class="kwa-lk"><a class="more" href="' + pre(lang) + '/watch/lookalikes/">' + esc(t(lang, 'all')) + '</a> <a class="more" href="' + pre(lang) + '/tools/payment-email-check/">' + esc(t(lang, 'p_pay')) + '</a></p></div>';
   }
   const ok = sa ? (sa.lists || []).filter(l => l.ok) : [];
   if (sa && wd.clean.has(slug) && ok.length) {
@@ -192,7 +192,7 @@ const FILTER_JS = '(function(){var i=document.getElementById("kwa-q"),rows=[].sl
 function pageBody(la, lang) {
   const items = (la && la.items) || [], k = new Set(items.map(x => x.o)).size;
   const rows = items.map(x => '<tr><td data-label="' + esc(t(lang, 'th')[0]) + '" dir="ltr"><b>' + esc(x.u || x.d) + '</b></td><td data-label="' + esc(t(lang, 'th')[1]) + '"><span dir="ltr">' + esc(x.o) + '</span>' + (x.dv ? '<br><a href="' + esc(pre(lang) + (x.url || '')) + '">' + esc(x.dv) + '</a>' : '') + '</td><td data-label="' + esc(t(lang, 'th')[2]) + '">' + esc((t(lang, 'why') || {})[x.why] || x.why) + '</td>' +
-    '<td data-label="' + esc(t(lang, 'th')[3]) + '"><a href="' + esc(rdapUrl(x.d)) + '" rel="nofollow noopener" target="_blank">' + esc(x.reg ? fdt(x.reg, lang) : t(lang, 'np')) + '</a></td><td data-label="' + esc(t(lang, 'th')[4]) + '"><a href="' + esc(crtUrl(x.d)) + '" rel="nofollow noopener" target="_blank">' + esc(x.cert ? fdt(x.cert, lang) : t(lang, 'nf')) + '</a></td><td data-label="' + esc(t(lang, 'th')[5]) + '">' + esc(x.gone ? t(lang, 'gone', { d: fdt(x.gone, lang) }) : t(lang, x.res ? 'yes' : 'no')) + '</td></tr>').join('');
+    '<td data-label="' + esc(t(lang, 'th')[3]) + '"><a href="' + esc(rdapUrl(x.d)) + '" rel="nofollow noopener" target="_blank">' + esc(x.reg ? fdt(x.reg, lang) : t(lang, 'np')) + '</a></td><td data-label="' + esc(t(lang, 'th')[4]) + '"><a href="' + esc(crtUrl(x.d)) + '" rel="nofollow noopener" target="_blank">' + esc(x.cert ? fdt(x.cert, lang) : x.cert_first ? t(lang, 'nf') : '-') + '</a></td><td data-label="' + esc(t(lang, 'th')[5]) + '">' + esc(x.gone ? t(lang, 'gone', { d: fdt(x.gone, lang) }) : t(lang, x.res ? 'yes' : 'no')) + '</td></tr>').join('');
   const table = items.length ? '<div class="kwa-f"><label for="kwa-q">' + esc(t(lang, 'p_filter')) + '</label><input id="kwa-q" type="search" placeholder="' + esc(t(lang, 'p_ph')) + '" autocomplete="off"><span id="kwa-c" class="k-muted" aria-live="polite"></span></div>' +
     '<div class="k-table-wrap"><table class="k-table k-table--dense k-table--stack" id="kwa-t"><thead><tr>' + t(lang, 'th').map(h => '<th scope="col">' + esc(h) + '</th>').join('') + '</tr></thead><tbody>' + rows + '</tbody></table></div><script>' + FILTER_JS + '</script>'
     : '<div class="k-empty"><strong>' + esc(t(lang, 'p_empty')) + '</strong></div>';
