@@ -16,12 +16,12 @@ const ORIGIN = 'https://kolaboro.com';
 const ML = '4.7.1', ML_CDN = 'https://cdnjs.cloudflare.com/ajax/libs/maplibre-gl/' + ML + '/';
 let MEMO = {};
 async function loadOne(env, name) {
-  const m = MEMO[name]; if (m && Date.now() - m.t < 600000) return m.v;
-  let r = null;
-  try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/' + name)); } catch (e) { r = null; }
+  const m = MEMO[name]; if (m && (m.a || Date.now() - m.t < 600000)) return m.v;   // n20p: a file read from this deployment's assets (a) does not expire
+  let r = null, a = false;
+  try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/' + name)); a = !!(r && r.ok); } catch (e) { r = null; }
   if (!r || !r.ok) { try { r = await fetch(ORIGIN + '/data/' + name + '?w=1', { cf: { cacheTtl: 300, cacheEverything: true } }); } catch (e) { r = null; } }
   const v = r && r.ok ? await r.json().catch(() => null) : null;
-  MEMO[name] = { t: Date.now(), v }; return v;
+  MEMO[name] = { t: Date.now(), v, a: a && v != null }; return v;
 }
 export async function seeData(env) {
   const [ph, d3] = await Promise.all([loadOne(env, 'street-photos.json'), loadOne(env, 'site-3d.json')]);

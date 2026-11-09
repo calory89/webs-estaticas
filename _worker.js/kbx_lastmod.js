@@ -47,19 +47,29 @@ export function compute(files, pin) {
 
 // worker loader: reads the published files once per isolate and data version
 let MEMO = null;
+let NET = false;   // n20p: true when a file had to come over the network; only then does the result expire
 async function json(env, name) {
   try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/' + name)); if (r.ok) return await r.json(); } catch (e) {}
+  NET = true;
   try { const r = await fetch(ORIGIN + '/data/' + name, { cf: { cacheTtl: 300, cacheEverything: true } }); if (r.ok) return await r.json(); } catch (e) {}
   return null;
 }
 export async function trueLastmod(env) {
-  if (MEMO && Date.now() - MEMO.t < 300000) return MEMO.v;
+  // the six files come from this deployment's own assets and cannot change while the isolate lives; fingerprinting 1,100 projects
+  // again every 5 minutes cost several hundred ms of CPU on the first named page after each expiry (n20p)
+  if (MEMO && (MEMO.a || Date.now() - MEMO.t < 300000)) return MEMO.v;
+  if (BUSY) return BUSY;
+  return BUSY = trueLastmod0(env).then(v => { BUSY = null; return v; }, e => { BUSY = null; throw e; });
+}
+let BUSY = null;
+async function trueLastmod0(env) {
+  NET = false;
   const [named, cases, prom, find, prog, pin] = await Promise.all(['named.json', 'bali-cases.json', 'promises.json', 'findings-by-project.json', 'construction-progress.json', 'lastmod.json'].map(n => json(env, n)));
   const r = compute({ named, cases, prom, find, prog }, pin);
   const dev = new Map(), slug = new Map();
   for (const x of (named && named.projects) || []) { const d = r.byId.get(x.id); if (x.s && d) slug.set(x.s, d); if (x.dvs && d && (!dev.has(x.dvs) || d > dev.get(x.dvs))) dev.set(x.dvs, d); }
   const v = { project: r.byId, slug, developer: dev, state: r.state, files: r.files, pinned: pin ? (pin.updated || null) : null, pinCount: pin && pin.p ? Object.keys(pin.p).length : 0 };
-  MEMO = { t: Date.now(), v }; return v;
+  MEMO = { t: Date.now(), v, a: !NET }; return v;
 }
 // GET /api/seo/lastmod: the computed state, in the format of /data/lastmod.json (the pin job publishes it as is)
 export async function lastmodRoute(env) {

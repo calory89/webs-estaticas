@@ -26,12 +26,12 @@ const MASK = s => String(s || '').replace(/[\w.+-]+@[\w-]+\.[\w.]+/g, '[e-mail]'
 // ------------------------------------------------------------------------------------------------ data
 let MEMO = {};
 async function loadOne(env, path, ttl) {
-  const m = MEMO[path]; if (m && Date.now() - m.t < (ttl || 600000)) return m.v;
-  let r = null;
-  try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com' + path)); } catch (e) { r = null; }
+  const m = MEMO[path]; if (m && (m.a || Date.now() - m.t < (ttl || 600000))) return m.v;   // n20p: a file read from this deployment's assets (a) does not expire
+  let r = null, a = false;
+  try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com' + path)); a = !!(r && r.ok); } catch (e) { r = null; }
   if (!r || !r.ok) { try { r = await fetch(ORIGIN + path + '?v=' + Math.floor(Date.now() / 600000), { cf: { cacheTtl: 300, cacheEverything: true } }); } catch (e) { r = null; } }
   const v = r && r.ok ? await r.json().catch(() => null) : null;
-  MEMO[path] = { t: Date.now(), v }; return v;
+  MEMO[path] = { t: Date.now(), v, a: a && v != null }; return v;
 }
 export async function paperData(env) {
   const [ph, pl] = await Promise.all([loadOne(env, '/data/price-history.json'), loadOne(env, '/data/planning.json')]);

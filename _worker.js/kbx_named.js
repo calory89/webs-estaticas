@@ -67,18 +67,20 @@ let MEMO = {};
 // copy of named.json, bali-cases.json and promises.json is shared with kbx_web.js and kbx_fc.js (they used to parse their own).
 const SHARED = (globalThis.__kbJson = globalThis.__kbJson || {}), LOADING = {};
 function loadJson(env, name, ttl) {
-  const m = MEMO[name]; if (m && Date.now() - m.t < (ttl || 600000)) return Promise.resolve(m.v);
+  // a file read from this deployment's own assets cannot change while the isolate lives, so it is kept for good (flag a);
+  // only a copy that had to come over the network expires. Re-reading 11 MB of JSON every 10 minutes cost about a second of CPU.
+  const m = MEMO[name]; if (m && (m.a || Date.now() - m.t < (ttl || 600000))) return Promise.resolve(m.v);
   if (LOADING[name]) return LOADING[name];
-  const p = loadJson0(env, name).then(v => { SHARED[name] = { t: Date.now(), v }; return v; });
+  const p = loadJson0(env, name).then(v => { SHARED[name] = { t: Date.now(), v, a: !!(MEMO[name] && MEMO[name].a) }; return v; });
   LOADING[name] = p; const done = () => { if (LOADING[name] === p) delete LOADING[name]; }; p.then(done, done);
   return p;
 }
 async function loadJson0(env, name) {
-  let r = null;
-  try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/' + name)); } catch (e) { r = null; }
+  let r = null, a = false;
+  try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/' + name)); a = !!(r && r.ok); } catch (e) { r = null; }
   if (!r || !r.ok) r = await fetch(ORIGIN + '/data/' + name, { cf: { cacheTtl: 300, cacheEverything: true } });
   if (!r.ok) throw new Error(name + ' ' + r.status);
-  const v = await r.json(); MEMO[name] = { t: Date.now(), v }; return v;
+  const v = await r.json(); MEMO[name] = { t: Date.now(), v, a }; return v;
 }
 const COI_MARKETS = new Set(['sumba']);
 // display name: drop research notes the discovery model left inside parentheses ("not the X in Y", "listing 1097")

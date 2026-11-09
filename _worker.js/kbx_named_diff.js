@@ -14,12 +14,12 @@ const SHARDS = 3;
 const shardOf = id => [...id].reduce((a, c) => a + c.charCodeAt(0), 0) % SHARDS;
 const MEMO = {};
 async function shard(env, k) {
-  const m = MEMO[k]; if (m && Date.now() - m.t < 600000) return m.v;
-  let r = null;
-  try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/page-history-' + k + '.json')); } catch (e) { r = null; }
+  const m = MEMO[k]; if (m && (m.a || Date.now() - m.t < 600000)) return m.v;   // n20p: a shard read from this deployment's assets (a) does not expire (4.3 MB each)
+  let r = null, a = false;
+  try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/page-history-' + k + '.json')); a = !!(r && r.ok); } catch (e) { r = null; }
   if (!r || !r.ok) r = await fetch(ORIGIN + '/data/page-history-' + k + '.json', { cf: { cacheTtl: 600, cacheEverything: true } });
   if (!r.ok) throw new Error('page-history ' + r.status);
-  const v = await r.json(); MEMO[k] = { t: Date.now(), v }; return v;
+  const v = await r.json(); MEMO[k] = { t: Date.now(), v, a }; return v;
 }
 async function project(env, id) { const s = await shard(env, shardOf(id)); return { p: (s.projects || {})[id] || null, updated: s.updated }; }
 const textOf = (p, v) => v.ix.map(i => p.seg[i]).join('');

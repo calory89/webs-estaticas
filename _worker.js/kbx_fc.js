@@ -60,13 +60,13 @@ function out(o, s, cc) { return new Response(JSON.stringify(o), { status: s || 2
 
 let MEMO = {};
 async function file(env, name, ttl) {
-  const m = MEMO[name]; if (m && Date.now() - m.t < (ttl || 300000)) return m.v;
-  const sh = (globalThis.__kbJson || {})[name]; if (sh && sh.v && Date.now() - sh.t < (ttl || 300000)) { MEMO[name] = { t: sh.t, v: sh.v }; return sh.v; }   // n20p: reuse the copy kbx_named.js already parsed
-  let r = null;
-  try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/' + name)); } catch (e) { r = null; }
+  const m = MEMO[name]; if (m && (m.a || Date.now() - m.t < (ttl || 300000))) return m.v;   // n20p: a copy read from this deployment's assets (a) does not expire
+  const sh = (globalThis.__kbJson || {})[name]; if (sh && sh.v && (sh.a || Date.now() - sh.t < (ttl || 300000))) { MEMO[name] = { t: sh.t, v: sh.v, a: sh.a }; return sh.v; }   // n20p: reuse the copy kbx_named.js already parsed
+  let r = null, a = false;
+  try { if (env && env.ASSETS) r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/' + name)); a = !!(r && r.ok); } catch (e) { r = null; }
   if (!r || !r.ok) r = await fetch(ORIGIN + '/data/' + name, { cf: { cacheTtl: 120, cacheEverything: true } });
   if (!r.ok) throw new Error(name + ' ' + r.status);
-  const v = await r.json(); MEMO[name] = { t: Date.now(), v }; return v;
+  const v = await r.json(); MEMO[name] = { t: Date.now(), v, a }; return v;
 }
 
 // ------------------------------------------------------------------------------------------------ Kaplan-Meier
