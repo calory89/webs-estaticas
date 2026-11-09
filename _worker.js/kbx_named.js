@@ -31,7 +31,8 @@ import { seoLd } from './kbx_lastmod.js';   // batch 15 (s15b): true dateModifie
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v43';   // v43: bidi isolation of names and tags in #land and #maphist (n19c)
+const CACHE_V = 'named-v44';   // v44: pin hold for corrected pins, inline card labels on phones (n19f)
+//     // 'named-v43';   // v43: bidi isolation of names and tags in #land and #maphist (n19c)
 //     // 'named-v42';   // v42: protected land and map history ledger layout (n19c)
 //     // 'named-v41';   // v41: #money sales table in 3 columns on phones (n19b)
 //     // 'named-v40';   // v40: protected land (#land) and map history (#maphist) (n19c)
@@ -600,6 +601,21 @@ export async function redirectP(u, env) {   // /p/<id>/ -> /projects/<slug>/ (30
   } catch (e) { return null; }
 }
 
+// n19f (9 Nov 2026): pins corrected by hand; the satellite, street, 3D, buildings, stage, short-let, sale-price, land and planning
+// sections for these projects were computed from the wrong pin and stay hidden until the next monthly rebuild uses the new one.
+// Remove an entry once construction-progress.json, satellite-radar.json, buildings.json, street-photos.json and short-lets.json
+// have been rebuilt after the date shown.
+const PIN_HOLD = { 'BHX-002': '2026-11-09', 'BHX-003': '2026-11-09' };
+function pinOff(x) {
+  const la = +(x.fx || {}).lat, lo = +(x.fx || {}).lng;
+  return p => {
+    if (p == null || !isFinite(la) || !isFinite(lo)) return false;
+    const q = Array.isArray(p) ? p.map(Number) : String(p).split(',').map(Number);
+    if (q.length < 2 || !isFinite(q[0]) || !isFinite(q[1])) return false;
+    const r = Math.PI / 180, a = Math.sin((q[0] - la) * r / 2) ** 2 + Math.cos(la * r) * Math.cos(q[0] * r) * Math.sin((q[1] - lo) * r / 2) ** 2;
+    return 12742 * Math.asin(Math.sqrt(a)) > 2;
+  };
+}
 export async function render(ix, kind, key, lang, env, ctx) {   // exported for the local test and the scan endpoint
   if (kind === 'i') return indexPage(ix, lang);
   if (kind === 'projects') {
@@ -617,6 +633,13 @@ export async function render(ix, kind, key, lang, env, ctx) {   // exported for 
     let see = null; try { see = await seeData(env); } catch (e) { see = null; }
     let money = null; try { money = await moneyData(env); } catch (e) { money = null; }   // n19b
     let land = null; try { land = await landData(env); } catch (e) { land = null; }   // n19c
+    // n19f: sections computed from a pin that was later corrected are hidden for that project until the data is rebuilt with the
+    // new pin. PIN_HOLD lists hand corrections (date of the fix); data files that store the pin they used are also compared with
+    // the current pin and dropped for this page when they are more than 2 km apart.
+    const hold = PIN_HOLD[x.id], off = pinOff(x);
+    if (hold) { sat = null; see = null; money = null; }
+    if (hold || off(land && land.lr && land.lr.projects && land.lr.projects[x.id] && land.lr.projects[x.id].pin)) land = null;
+    if (paper && paper.pl && paper.pl.projects && paper.pl.projects[x.id] && (hold || off(paper.pl.projects[x.id].pin))) paper = Object.assign({}, paper, { pl: Object.assign({}, paper.pl, { projects: Object.assign({}, paper.pl.projects, { [x.id]: undefined }) }) });
     const pg = projectPage(ix, x, lang, { reviews, replies, ph, sat, fc, fdg, web, coh, paper, see, money, land }); if (phErr) pg.nocache = true;   // page history not loaded: do not cache
     return pg;
   }
@@ -663,7 +686,7 @@ async function urls(env) {
   const add = (type, f, base, lm, en_) => { for (const l of LANGS) out.push(Object.assign({ url: f(l), lang: l, type, lastmod: lm }, base, l === 'en' ? Object.assign({ alternates: alt(f) }, en_ || {}) : {})); };
   add('index', l => ORIGIN + pre(l) + '/projects/', {}, iso(ix.updated));
   let sat = null; try { sat = await satData(env); } catch (e) { sat = null; }
-  for (const x of ix.P) add('project', l => pUrl(l, x.s), { id: x.id, reviewed: reviewed(ix.caseBy.get(x.id)) }, lastmod(ix, x), { images: projImages(x, 'en', pUrl('en', x.s), sat).map(i => ({ loc: i.contentUrl, title: i.name, caption: i.caption })), added: x.ad || null, listing_page: okHttp(x.url) && isListing(x.url), name: x.n, developer: x.dv || null, developer_url: x.dvs && ix.devs.has(x.dvs) ? dUrl('en', x.dvs) : null, market: x.mk, country: x.co });
+  for (const x of ix.P) add('project', l => pUrl(l, x.s), { id: x.id, reviewed: reviewed(ix.caseBy.get(x.id)) }, lastmod(ix, x), { images: projImages(x, 'en', pUrl('en', x.s), PIN_HOLD[x.id] ? null : sat).map(i => ({ loc: i.contentUrl, title: i.name, caption: i.caption })), added: x.ad || null, listing_page: okHttp(x.url) && isListing(x.url), name: x.n, developer: x.dv || null, developer_url: x.dvs && ix.devs.has(x.dvs) ? dUrl('en', x.dvs) : null, market: x.mk, country: x.co });
   for (const d of ix.devs.values()) { const lm = d.ids.map(i => lastmod(ix, ix.byId.get(i))).sort(); add('developer', l => dUrl(l, d.s), {}, lm[lm.length - 1], { name: d.n, projects: d.ids }); }
   return jsonOut({ version: 'seo-urls-1', updated: ix.updated, languages: LANGS, note: 'One entry per URL and language. English project entries carry images (share card and, where we have one, the monthly satellite strip) with captions for an image sitemap. The English entry carries the hreflang alternates and the names; the others share its path under /<lang>/. reviewed=false: not yet reviewed by Kolaboro, show facts only, no score, checks or label.',
     counts: { projects: ix.P.length, developers: ix.devs.size, languages: LANGS.length, urls: out.length }, redirects: [{ from: '/p/{id}/', to: '/projects/{slug}/', status: 301 }], urls: out });

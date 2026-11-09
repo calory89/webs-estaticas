@@ -3,6 +3,20 @@
  "items": [
   {
    "date": "2026-11-09",
+   "kind": "data",
+   "text": "Two Birmingham project pins corrected (they sat one degree too far north); their map-based sections stay hidden until the next monthly rebuild uses the new pins",
+   "tl": {
+    "es": "Corregidos los puntos de dos proyectos de Birmingham (estaban un grado más al norte); sus secciones basadas en el mapa quedan ocultas hasta la próxima actualización mensual con los puntos nuevos",
+    "fr": "Repères de deux projets de Birmingham corrigés (ils étaient un degré trop au nord) ; leurs sections cartographiques restent masquées jusqu'à la prochaine mise à jour mensuelle avec les nouveaux repères",
+    "de": "Standorte von zwei Projekten in Birmingham korrigiert (sie lagen einen Breitengrad zu weit nördlich); ihre kartenbasierten Abschnitte bleiben bis zur nächsten monatlichen Neuberechnung mit den neuen Standorten ausgeblendet",
+    "nl": "Locaties van twee projecten in Birmingham gecorrigeerd (ze lagen een breedtegraad te noordelijk); hun kaartsecties blijven verborgen tot de volgende maandelijkse herberekening met de nieuwe locaties",
+    "ru": "Исправлены метки двух проектов в Бирмингеме (они стояли на градус севернее); разделы на основе карты скрыты до следующего ежемесячного пересчёта с новыми метками",
+    "zh": "已更正伯明翰两个项目的位置点（原先偏北一个纬度）；在下次按新位置点的月度重算之前，其基于地图的板块暂不显示",
+    "ar": "تصحيح موقعي مشروعين في برمنغهام (كانا أبعد شمالًا بدرجة عرض واحدة)؛ تبقى أقسامهما المعتمدة على الخريطة مخفية حتى إعادة الحساب الشهرية التالية بالموقعين الجديدين"
+   }
+  },
+  {
+   "date": "2026-11-09",
    "kind": "shipped",
    "text": "Protected land near the pin on 125 project pages: Natura 2000 sites within 2 km, England green belt and other designations, the Spanish coast law easements and mapped nature reserves, with distances and layer dates",
    "tl": {
