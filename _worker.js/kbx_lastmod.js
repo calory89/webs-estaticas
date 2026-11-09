@@ -33,17 +33,41 @@ export function compute(files, pin) {
   const today = new Date().toISOString().slice(0, 10), out = new Map(), state = {};
   for (const x of (F.named && F.named.projects) || []) {
     if (!x || !x.id) continue;
-    const old = P[x.id] || {}, st = {}; let best = isoDay(x.ad) || null;
-    for (const k of PARTS) {
-      const h = fingerprint(k === 'n' ? x : part[k](x.id));
-      const o = old[k], d = o && o[0] === h && isoDay(o[1]) ? o[1] : (h || (o && o[0]) ? fileDay[k] || today : null);   // a part that appeared, changed or disappeared
-      st[k] = [h, d];
-      if (d && (!best || d > best)) best = d;
-    }
-    state[x.id] = st; out.set(x.id, best || fileDay.n || today);
+    const r = one(x, P, part, fileDay, today);
+    state[x.id] = r.st; out.set(x.id, r.d);
   }
   return { byId: out, state, files: fileDay };
 }
+function one(x, P, part, fileDay, today) {   // one project: its five fingerprints and the date of its last real change
+  const old = P[x.id] || {}, st = {}; let best = isoDay(x.ad) || null;
+  for (const k of PARTS) {
+    const h = fingerprint(k === 'n' ? x : part[k](x.id));
+    const o = old[k], d = o && o[0] === h && isoDay(o[1]) ? o[1] : (h || (o && o[0]) ? fileDay[k] || today : null);   // a part that appeared, changed or disappeared
+    st[k] = [h, d];
+    if (d && (!best || d > best)) best = d;
+  }
+  return { st, d: best || fileDay.n || today };
+}
+// n20p: the same date for ONE page, from files the caller has already parsed. A named page only needs its own project (a developer
+// page: that developer's projects), so it no longer waits for 6.7 MB to be parsed again and 1,100 projects to be fingerprinted on
+// a fresh isolate. q = { named, cases, caseBy, prom, find, prog, raw(x) } where raw(x) returns the entry exactly as published
+// (kbx_named.js tidies display names in place). Returns null when a file is missing, and the caller falls back to trueLastmod().
+const QIX = new WeakMap();
+export function quickLastmod(q, pin, kind, key) {
+  if (!q || !q.named || !q.cases || !q.caseBy || !q.prom || !q.find || !q.prog || !pin) return null;
+  let ix = QIX.get(q.named);
+  if (!ix) { ix = { slug: new Map(), dev: new Map() }; for (const x of q.named.projects || []) { if (!x || !x.id) continue; if (x.s) ix.slug.set(x.s, x); if (x.dvs) { if (!ix.dev.has(x.dvs)) ix.dev.set(x.dvs, []); ix.dev.get(x.dvs).push(x); } } QIX.set(q.named, ix); }
+  const xs = kind === 'projects' ? [ix.slug.get(key)].filter(Boolean) : kind === 'developers' ? ix.dev.get(key) || [] : [];
+  if (!xs.length) return null;
+  const P = pin.p || {}, today = new Date().toISOString().slice(0, 10);
+  const part = { n: null, c: id => q.caseBy.get(id), p: id => (q.prom.projects || {})[id], f: id => ((q.find.projects || {})[id] || {}).f, s: id => (q.prog.projects || {})[id] };
+  const fileDay = { n: isoDay(q.named.updated), c: isoDay(q.cases.updated), p: isoDay(q.prom.updated), f: isoDay(q.find.updated), s: isoDay(q.prog.updated) };
+  let best = null;
+  for (const x of xs) { const d = one(q.raw ? q.raw(x) : x, P, part, fileDay, today).d; if (d && (!best || d > best)) best = d; }
+  return best;
+}
+let PIN = null;
+export async function pinFile(env) { if (PIN) return PIN; const v = await json(env, 'lastmod.json'); if (v) PIN = v; return v; }
 
 // worker loader: reads the published files once per isolate and data version
 let MEMO = null;
@@ -81,10 +105,11 @@ export async function lastmodRoute(env) {
 // Structured data for a rendered named page (called by kbx_named.js before the page is assembled and cached):
 //  - WebPage/ProfilePage and Dataset dateModified = the true lastmod above (the visible "last checked" date is left as it is);
 //  - an ImageObject for the page's 1200x630 share card (rendered by kbx_og.js from the same facts), linked as primaryImageOfPage.
-export async function seoLd(pg, env, kind, key) {
+export async function seoLd(pg, env, kind, key, q) {
   if (!pg || !pg.ld || !Array.isArray(pg.ld['@graph']) || !pg.feed || !pg.canon) return pg;
-  const T = await trueLastmod(env).catch(() => null);
-  const d = T && (kind === 'projects' ? T.slug.get(key) : kind === 'developers' ? T.developer.get(key) : null);
+  let d = null;
+  if (q && !(MEMO && MEMO.a)) { try { d = quickLastmod(q, await pinFile(env), kind, key); } catch (e) { d = null; } }   // n20p: one page's date without the full pass
+  if (!d) { const T = await trueLastmod(env).catch(() => null); d = T && (kind === 'projects' ? T.slug.get(key) : kind === 'developers' ? T.developer.get(key) : null); }
   const G = pg.ld['@graph'], img = ORIGIN + '/og' + pg.feed.path.replace(/\/$/, '') + '.png', id = pg.canon + '#og';
   for (const n of G) {
     if (!n || typeof n !== 'object') continue;

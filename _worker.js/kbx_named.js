@@ -91,6 +91,7 @@ function cleanName(n) {
   }).trim();
 }
 let IDX = null;
+const RAWN = new WeakMap();
 async function data(env) {
   const [named, cases] = await Promise.all([loadJson(env, 'named.json'), loadJson(env, 'bali-cases.json')]);
   if (IDX && IDX.named === named && IDX.cases === cases) return IDX;
@@ -100,7 +101,7 @@ async function data(env) {
   // Conflict of interest: a Kolaboro founder develops a project in Sumba (Eco Beach City), so projects in that market are never
   // named or scored by name; they stay anonymous (/p/<id>/, market only). Same rule as the published independence policy.
   const P = (named.projects || []).filter(x => caseBy.has(x.id) && !COI_MARKETS.has(String(x.mk || '').toLowerCase()));
-  for (const x of P) if (x.n) x.n = cleanName(x.n);
+  for (const x of P) if (x.n) { const c = cleanName(x.n); if (c !== x.n) { RAWN.set(x, x.n); x.n = c; } }   // RAWN keeps the published name for the lastmod fingerprint (n20p)
   const byId = new Map(P.map(x => [x.id, x])), bySlug = new Map(P.map(x => [x.s, x])), devs = new Map(), mk = new Map(), byAr = new Map();
   for (const x of P) {
     if (x.dvs && !RESERVED.has(x.dvs)) { if (!devs.has(x.dvs)) devs.set(x.dvs, { s: x.dvs, n: x.dv, ids: [] }); devs.get(x.dvs).ids.push(x.id); }
@@ -721,7 +722,7 @@ export async function handle(req, u, env, ctx, shell) {
   let ix; try { ix = await data(env); } catch (e) { return null; }
   const t1 = Date.now(), shP = shell(pre(lang) + '/how-we-score/'); shP.catch(() => {});   // the page shell loads while the page is rendered
   const pg = await render(ix, key ? kind : 'i', key, lang, env, ctx);
-  if (pg && key) try { await seoLd(pg, env, kind, key); } catch (e) {}
+  if (pg && key) try { await seoLd(pg, env, kind, key, await lmFiles(ix, env)); } catch (e) {}
   const t2 = Date.now(), sh = await shP;
   if (!pg) {
     const nf = { title: tr(lang, 'nf_h') + ' | Kolaboro', desc: tr(lang, 'nf_p'), canon: ORIGIN + p, noindex: true, body: '<section class="phero"><div class="wrap"><h1>' + esc(tr(lang, 'nf_h')) + '</h1><p class="lead">' + esc(tr(lang, 'nf_p')) + '</p><p class="bts"><a class="btn btn-hi kbtn" href="' + pre(lang) + '/projects/">' + esc(tr(lang, 'h1_i')) + '</a> <a class="btn btn-line kbtn" href="/database/">' + esc(tr(lang, 'search_db')) + '</a></p></div></section>', ld: { '@context': 'https://schema.org', '@type': 'WebPage', name: tr(lang, 'nf_h') }, lastmod: '', alt: l => ORIGIN + pre(l) + '/projects/' };
@@ -730,6 +731,14 @@ export async function handle(req, u, env, ctx, shell) {
   const html = await assemble(pg, lang, sh), lm = new Date((pg.lastmod || '2026-11-01') + 'T00:00:00Z').toUTCString(), t3 = Date.now();
   if (!pg.nocache) try { const put = fastPut(fk, html, await dataVer(ix, env, kind, key), lm); if (ctx && ctx.waitUntil) ctx.waitUntil(put.catch(() => {})); } catch (e) {}
   return new Response(html, { status: 200, headers: { 'content-type': 'text/html; charset=utf-8', 'x-named-cache': 'miss', 'cache-control': 'no-cache', 'last-modified': lm, 'server-timing': 'data;dur=' + (t1 - t0) + ', render;dur=' + (t2 - t1) + ', page;dur=' + (t3 - t2) + (pg.tm ? ', ' + pg.tm : '') } });
+}
+// the parsed files the lastmod date of one page is computed from (all already in memory after a render); null if one is missing
+async function lmFiles(ix, env) {
+  try {
+    const [prom, find, prog] = await Promise.all([loadJson(env, 'promises.json'), loadJson(env, 'findings-by-project.json'), satData(env)]);
+    if (!prom || !find || !prog) return null;
+    return { named: ix.named, cases: ix.cases, caseBy: ix.caseBy, prom, find, prog, raw: x => RAWN.has(x) ? Object.assign({}, x, { n: RAWN.get(x) }) : x };
+  } catch (e) { return null; }
 }
 const FAST_FRESH = 60000, FAST_TTL = 21600, REFRESHING = new Set();
 // the data version a page was built from: any change here means the page must be rendered again
@@ -744,7 +753,7 @@ async function refresh(copy, fk, p, kind, key, lang, env, ctx, shell) {
   if (copy.headers.get('x-ver') === encodeURIComponent(ver)) return fastPut(fk, await copy.text(), ver, copy.headers.get('x-lm'));
   const pg = await render(ix, key ? kind : 'i', key, lang, env, ctx);
   if (!pg) return caches.default.delete(fk);   // the project or developer is no longer published
-  if (key) try { await seoLd(pg, env, kind, key); } catch (e) {}
+  if (key) try { await seoLd(pg, env, kind, key, await lmFiles(ix, env)); } catch (e) {}
   if (pg.nocache) return;
   const html = await assemble(pg, lang, await shell(pre(lang) + '/how-we-score/'));
   return fastPut(fk, html, ver, new Date((pg.lastmod || '2026-11-01') + 'T00:00:00Z').toUTCString());
