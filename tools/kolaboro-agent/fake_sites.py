@@ -7,7 +7,7 @@ Looks every day for websites that imitate the developer and project websites in 
 (https://kolaboro.com/api/x/fraud/domains: registrable domains we link for exactly one developer or project):
   1. Certificate Transparency: new TLS certificates whose names contain one of those website names. The public crt.sh
      PostgreSQL interface (one batched full-text query per 20 names, certificates issued in the last 3 days) when it answers,
-     else the crt.sh JSON search for a rotating share of the names (one request every 4 s).
+     else the crt.sh JSON prefix search (name%) for a rotating share of the names (one request every 4 s).
   2. Registered lookalike names: the same name with another ending, one or two letters changed, letters that look alike
      (0 for o, rn for m, Cyrillic a), and added words such as -sales, -invest or -official. Checked in public DNS (DNS over
      HTTPS, Cloudflare and Google) for a fourteenth of the websites each day, so every website is swept every two weeks.
@@ -364,7 +364,7 @@ def main():
     n_json = int(arg('--ct-labels', '5' if rows is not None else '15'))
     labels = sorted(by_label, key=lambda L: hashlib.sha256((L + TODAY).encode()).hexdigest())[:n_json]
     for L in labels:
-        a = crt_json(L, timeout=45, tries=1)
+        a = crt_json(L + '%', timeout=45, tries=1)   # names that start with the website's name (crt.sh answers prefix searches)
         ct['json_queries'] += 1
         if a is None:
             ct['json_failed'] += 1
