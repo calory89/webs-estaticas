@@ -9,7 +9,7 @@ Usage: gleif_family.py NAMED_JSON OUT_JSON [PREV_JSON] [MAX_REQUESTS]
               minutes), so the weekly job stays light. A full rebuild is a run without PREV_JSON and a large MAX_REQUESTS.
 
 Matching (same precision-first rule as gleif_graph.py): for each company name a developer's tracked projects publish
-(the developer name and the "developer_company" field), the GLEIF full-text search gives candidates; a record matches only if its
+(the developer name, and names in the "developer_company" field that share a distinctive word with the developer name), the GLEIF full-text search gives candidates; a record matches only if its
 legal name or a registered other name is EXACTLY the name after normalising case, accents, punctuation and legal-form words, AND
 its legal or headquarters address is in the project's country. Two or more LEIs passing both tests: ambiguous, nothing matched.
 No fuzzy matching.
@@ -88,6 +88,8 @@ def rel(lei, kind):
     if x and x.get('data'): return None, (x['data'].get('attributes') or {}).get('reason') or 'EXCEPTION'
     return None, None
 
+GENERIC = {'GROUP', 'HOLDING', 'HOLDINGS', 'PROPERTIES', 'PROPERTY', 'DEVELOPMENT', 'DEVELOPMENTS', 'DEVELOPERS', 'REAL', 'ESTATE', 'INVESTMENT',
+           'INVESTMENTS', 'HOMES', 'CONSTRUCTION', 'REALTY', 'LAND', 'CAPITAL', 'INTERNATIONAL', 'GLOBAL', 'RESIDENCES', 'RESIDENCE', 'BUILDERS'}
 named = json.load(open(NAMED))
 devs = {}
 for p in named['projects']:
@@ -96,9 +98,13 @@ for p in named['projects']:
     d = devs.setdefault(s, {'n': p['dv'], 'names': [], 'isos': set()})
     co = p.get('co') or ''
     d['isos'].update(ISO_ALT.get(co) or ([ISO[co]] if co in ISO else []))
-    for src in (p['dv'], (p.get('fx') or {}).get('developer_company')):
+    # names from the developer field, plus company names from "developer_company" that share a distinctive word with the developer's
+    # name (that field also names landowners, partners and project companies of other groups, which are not this developer)
+    own = {w for w in norm(p['dv']).split() if len(w) >= 4 and w not in GENERIC}
+    for i, src in enumerate((p['dv'], (p.get('fx') or {}).get('developer_company'))):
         if isinstance(src, str):
             for c in candidates(src):
+                if i and not (own & set(norm(c).split())): continue
                 if c not in d['names']: d['names'].append(c)
 
 prev = None
@@ -127,12 +133,12 @@ try:
         for c in d['names'][:6]:
             r, why = match(c, sorted(d['isos'])); cov['names_checked'] += 1
             if why == 'ambiguous': cov['ambiguous_names'] += 1
-            if r: found[r['id']] = r
+            if r: found[r['id']] = r; via = c
         if len(found) != 1:                 # none, or the developer's names point to two different companies: not shown as one family
             out.pop(s, None)
         else:
             r = list(found.values())[0]
-            o = dict(ent(r), **relations(r['id'])); o['name'] = d['n']; out[s] = o
+            o = dict(ent(r), **relations(r['id'])); o['name'] = d['n']; o['via'] = via; out[s] = o
         checked[s] = TODAY; cov['searched_this_run'] += 1
         print(s, len(out), nreq[0], file=sys.stderr)
     for s in sorted(out, key=lambda s: out[s].get('rel_at') or ''):
