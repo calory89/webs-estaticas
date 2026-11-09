@@ -4,6 +4,34 @@
   {
    "date": "2026-11-09",
    "kind": "shipped",
+   "text": "Protected land near the pin on 125 project pages: Natura 2000 sites within 2 km, England green belt and other designations, the Spanish coast law easements and mapped nature reserves, with distances and layer dates",
+   "tl": {
+    "es": "Suelo protegido cerca del punto en 125 proyectos: espacios Natura 2000 a menos de 2 km, cinturón verde y otras protecciones de Inglaterra, las servidumbres de la Ley de Costas y reservas cartografiadas, con distancias y fechas de cada capa",
+    "fr": "Terrains protégés près du point sur 125 projets : sites Natura 2000 à moins de 2 km, ceinture verte et autres protections en Angleterre, servitudes de la loi littoral espagnole et réserves cartographiées, avec distances et dates des couches",
+    "de": "Schutzgebiete nahe dem Punkt auf 125 Projektseiten: Natura-2000-Gebiete im Umkreis von 2 km, Grüngürtel und andere Ausweisungen in England, die Dienstbarkeiten des spanischen Küstengesetzes und kartierte Naturschutzgebiete, mit Abständen und Datum jeder Ebene",
+    "nl": "Beschermde grond bij het punt op 125 projectpagina's: Natura 2000-gebieden binnen 2 km, groene gordel en andere aanwijzingen in Engeland, de erfdienstbaarheden van de Spaanse kustwet en gekarteerde natuurreservaten, met afstanden en datum van elke laag",
+    "ru": "Охраняемые земли рядом с точкой на 125 страницах проектов: территории Natura 2000 в пределах 2 км, зелёный пояс и другие зоны Англии, сервитуты испанского закона о побережье и заповедники на карте, с расстояниями и датами слоёв",
+    "zh": "125 个项目页新增定位点附近的保护区：2 公里内的 Natura 2000 保护地、英格兰绿化带等规划保护区、西班牙海岸法地役区及已绘制的自然保护区，附距离和图层日期",
+    "ar": "الأراضي المحمية قرب النقطة في 125 صفحة مشروع: مواقع ناتورا 2000 ضمن 2 كم، والحزام الأخضر وتصنيفات أخرى في إنجلترا، وارتفاقات قانون السواحل الإسباني، والمحميات المرسومة، مع المسافات وتاريخ كل طبقة"
+   }
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "shipped",
+   "text": "The map's own history at each plot: when the buildings, roads and land use within 150 m were first drawn in OpenStreetMap and last changed, as a small timeline on 125 project pages",
+   "tl": {
+    "es": "La historia del propio mapa en cada parcela: cuándo se dibujaron por primera vez en OpenStreetMap los edificios, calles y usos del suelo a menos de 150 m y cuándo cambiaron por última vez, en una cronología en 125 proyectos",
+    "fr": "L'histoire de la carte sur chaque parcelle : quand les bâtiments, routes et occupations du sol à moins de 150 m ont été dessinés pour la première fois dans OpenStreetMap et modifiés pour la dernière fois, en chronologie sur 125 projets",
+    "de": "Die Geschichte der Karte an jedem Grundstück: wann Gebäude, Straßen und Landnutzung im Umkreis von 150 m zuerst in OpenStreetMap gezeichnet und zuletzt geändert wurden, als kleine Zeitleiste auf 125 Projektseiten",
+    "nl": "De geschiedenis van de kaart op elk perceel: wanneer gebouwen, wegen en grondgebruik binnen 150 m voor het eerst in OpenStreetMap werden getekend en laatst gewijzigd, als kleine tijdlijn op 125 projectpagina's",
+    "ru": "История самой карты на каждом участке: когда здания, дороги и землепользование в пределах 150 м впервые появились в OpenStreetMap и когда менялись в последний раз, небольшой хронологией на 125 страницах",
+    "zh": "每个地块上地图本身的历史：150 米内的建筑、道路和土地利用何时首次绘入 OpenStreetMap、何时最后修改，以小时间线显示在 125 个项目页",
+    "ar": "تاريخ الخريطة نفسها عند كل قطعة: متى رُسمت المباني والطرق واستخدامات الأرض ضمن 150 م لأول مرة في OpenStreetMap ومتى تغيّرت آخر مرة، في خط زمني صغير على 125 صفحة مشروع"
+   }
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "shipped",
    "text": "Site check on 560 page views and 3,078 links: the two account checks merged into one, clearer tool descriptions and jump links, a country search, an accessible pricing table and a tidier free check on phones",
    "tl": {
     "es": "Revisión del sitio en 560 páginas y 3.078 enlaces: las dos comprobaciones de cuenta unidas en una, descripciones de herramientas más claras, buscador de países, tabla de precios accesible y comprobación gratuita más clara en el móvil",
