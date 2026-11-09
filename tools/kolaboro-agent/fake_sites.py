@@ -25,7 +25,7 @@ from datetime import datetime, timezone, timedelta
 UA = 'Mozilla/5.0 (compatible; KolaboroResearchAgent/1.0; +https://kolaboro.com/data-policy)'
 NOW = datetime.now(timezone.utc)
 T0 = time.time()
-BUDGET_S = 13 * 60   # the whole run stays under the workflow's 20 minutes
+BUDGET_S = 14 * 60   # the whole run stays under the workflow's 20 minutes
 
 
 def past(f):
@@ -262,29 +262,41 @@ def crt_json_all(d):
     return crt_json(d, timeout=40, tries=1, live_only=False)
 
 
-def ct_db(labels):
-    """[(name, not_before)] from the crt.sh PostgreSQL interface, certificates issued in the last 3 days; None if unreachable."""
+def ct_db(labels, budget_s=150):
+    """[(name, not_before)] from the crt.sh PostgreSQL interface, certificates issued in the last 3 days; None if unreachable.
+    The guest interface is shared and slow: at most budget_s seconds in total, 45 s per query, batches rotate by day."""
     if not shutil.which('psql') or os.environ.get('CT_DB', '1') == '0':
-        return None
-    out, ok = [], False
-    for i in range(0, len(labels), 20):
-        q = ' | '.join(re.sub(r'[^a-z0-9]', '', x) for x in labels[i:i + 20] if re.sub(r'[^a-z0-9]', '', x))
+        return None, 'no psql'
+    out, done, t0 = [], 0, time.time()
+    B = [labels[i:i + 25] for i in range(0, len(labels), 25)]
+    k = NOW.toordinal() % max(1, len(B))
+    B = B[k:] + B[:k]
+    for b in B:
+        left = budget_s - (time.time() - t0)
+        if left < 20:
+            break
+        q = ' | '.join(re.sub(r'[^a-z0-9]', '', x) for x in b if re.sub(r'[^a-z0-9]', '', x))
         sql = ("SELECT DISTINCT lower(cai.name_value), to_char(x509_notBefore(cai.certificate), 'YYYY-MM-DD') FROM certificate_and_identities cai "
                "WHERE to_tsquery('certwatch', '" + q + "') @@ identities(cai.certificate) AND x509_notBefore(cai.certificate) >= now() - interval '3 days' "
                "AND cai.name_type IN ('2.5.4.3', 'san:dNSName') LIMIT 5000;")
         try:
-            r = subprocess.run(['psql', '-h', 'crt.sh', '-p', '5432', '-U', 'guest', '-d', 'certwatch', '-At', '-F', '\t', '-v', 'ON_ERROR_STOP=1', '-c', 'SET statement_timeout = 120000;', '-c', sql],
-                               capture_output=True, text=True, timeout=150, env=dict(os.environ, PGCONNECT_TIMEOUT='15'))
+            r = subprocess.run(['psql', '-h', 'crt.sh', '-p', '5432', '-U', 'guest', '-d', 'certwatch', '-At', '-F', '\t', '-v', 'ON_ERROR_STOP=1', '-c', 'SET statement_timeout = 45000;', '-c', sql],
+                               capture_output=True, text=True, timeout=min(60, left), env=dict(os.environ, PGCONNECT_TIMEOUT='10'))
         except Exception:
+            if not done:
+                break                    # the first query did not come back: do not wait on the others
             continue
-        if r.returncode == 0:
-            ok = True
-            for line in r.stdout.splitlines():
-                p = line.split('\t')
-                if len(p) == 2 and p[1]:
-                    out.append((p[0], p[1]))
-        time.sleep(3)
-    return out if ok else None
+        if r.returncode != 0:
+            if not done:
+                print('crt.sh db:', (r.stderr or '')[:160])
+                break
+            continue
+        done += 1
+        for line in r.stdout.splitlines():
+            p = line.split('\t')
+            if len(p) == 2 and p[1]:
+                out.append((p[0], p[1]))
+    return (out if done else None), '%d of %d batches' % (done, len(B))
 
 
 # ------------------------------------------------------------------------------------------------ main
@@ -341,7 +353,7 @@ def main():
 
     # 1. Certificate Transparency
     ct = {'db': 'not tried', 'json_queries': 0, 'json_failed': 0, 'names': 0}
-    rows = ct_db(sorted(by_label)) if not only else None
+    rows, ct['db_batches'] = ct_db(sorted(by_label)) if not only else (None, 'skipped')
     if rows is not None:
         ct['db'] = 'ok'
         ct['names'] = len(rows)
@@ -349,7 +361,7 @@ def main():
             match_host(name, nb)
     else:
         ct['db'] = 'unavailable' if not only else 'skipped'
-    n_json = int(arg('--ct-labels', '0' if rows is not None else '25'))
+    n_json = int(arg('--ct-labels', '10' if rows is not None else '25'))
     labels = sorted(by_label, key=lambda L: hashlib.sha256((L + TODAY).encode()).hexdigest())[:n_json]
     for L in labels:
         a = crt_json(L, timeout=45, tries=1)
