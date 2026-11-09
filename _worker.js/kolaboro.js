@@ -3,7 +3,7 @@
 
 const MODELS = ['claude-haiku-5-5', 'claude-sonnet-5-5'];
 const MAX_TEXT = 14000;
-const PER_IP_HOUR = 12;
+const PER_IP_HOUR = 3;   // 9 Nov 2026 (owner): was 12
 const TRACKED = ['every-bali.com', 'balitecture.com', 'breig-property.com', 'magnumestate.com', 'teus-group.com', 'lyvinproperties.co',
   'investlandbali.com', 'globalbalihome.com', 'urbanescape.id', 'coreconceptliving.com', 'axoradevelopments.com', 'cocodevelopmentgroup.com',
   'movepropertygroup.com', 'aravitaresidence.com'];
@@ -460,7 +460,7 @@ async function rateLimited(req, ctx) {
 }
 
 // ---------- AI spend circuit breaker: every model call is costed (estimate from token usage) and the website's AI stops at a daily cap ----------
-const PRICE = { haiku: [1, 5], sonnet: [3, 15], opus: [15, 75] };   // USD per million input / output tokens, conservative estimates
+const PRICE = { haiku: [0.1, 0.5], sonnet: [3, 15], opus: [15, 75] };   // USD per million input / output tokens (9 Nov 2026: Haiku 5.5 list price; x5 above 100K input tokens, see aiCost)
 let BUDGET = { t: 0, allowed: true };
 async function aiAllowed() {
   if (Date.now() - BUDGET.t < 60000) return BUDGET.allowed;
@@ -469,12 +469,17 @@ async function aiAllowed() {
 }
 function aiCost(model, usage) {
   const p = PRICE[/opus/.test(model) ? 'opus' : /sonnet/.test(model) ? 'sonnet' : 'haiku'], u = usage || {};
-  return ((u.input_tokens || 0) + (u.cache_creation_input_tokens || 0) + (u.cache_read_input_tokens || 0) * 0.1) * p[0] / 1e6 + (u.output_tokens || 0) * p[1] / 1e6;
+  const tin = (u.input_tokens || 0) + (u.cache_creation_input_tokens || 0) + (u.cache_read_input_tokens || 0);
+  const k = (!/opus|sonnet/.test(model) && tin > 100000) ? 5 : 1;   // Haiku 5.5 prompts over 100K tokens cost 5 times more
+  return k * (((u.input_tokens || 0) + (u.cache_creation_input_tokens || 0) + (u.cache_read_input_tokens || 0) * 0.1) * p[0] / 1e6 + (u.output_tokens || 0) * p[1] / 1e6);
 }
 // Hard deadline per model call (covers connect, headers and reading the body): a hung model must not hold a request for minutes.
 const AI_TIMEOUT = model => /opus/.test(model) ? 120000 : /sonnet/.test(model) ? 75000 : 60000;
 async function anthropic(env, body, opts) {
   if (!(await aiAllowed())) { const e = new Error('daily AI budget reached'); e.budget = true; throw e; }
+  // 9 Nov 2026 (owner): Kolaboro AI capped at 10 USD a week in total -> website calls run on Haiku only, at most 2000 output tokens
+  if (body && /sonnet|opus/.test(String(body.model || ''))) body = Object.assign({}, body, { model: 'claude-haiku-5-5' });
+  if (body && (body.max_tokens || 0) > 2000) body = Object.assign({}, body, { max_tokens: 2000 });
   const ms = (opts && opts.timeoutMs) || AI_TIMEOUT(String(body && body.model || ''));
   let r;
   try { r = await fetch('https://api.anthropic.com/v1/messages', { method: 'POST', headers: { 'x-api-key': env.ANTHROPIC_API_KEY, 'anthropic-version': '2023-06-01', 'content-type': 'application/json' }, body: JSON.stringify(body), signal: AbortSignal.timeout(ms) }); }
