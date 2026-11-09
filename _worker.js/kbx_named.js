@@ -31,7 +31,8 @@ import { seoLd } from './kbx_lastmod.js';   // batch 15 (s15b): true dateModifie
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v42';   // v42: protected land and map history ledger layout (n19c)
+const CACHE_V = 'named-v43';   // v43: bidi isolation of names and tags in #land and #maphist (n19c)
+//     // 'named-v42';   // v42: protected land and map history ledger layout (n19c)
 //     // 'named-v41';   // v41: #money sales table in 3 columns on phones (n19b)
 //     // 'named-v40';   // v40: protected land (#land) and map history (#maphist) (n19c)
 //     // 'named-v39';   // v39: corporate family from GLEIF level 2 on developer pages (n19e)

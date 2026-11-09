@@ -227,7 +227,7 @@ export function landHtml(ld, x, lang, fd) {
   if (r.n2k || (r.scope || []).includes('n2k')) {
     const n = r.n2k || {}, s = S0.n2k || {}, rel = n.release ? fd(n.release) : '';
     let dd;
-    const site = o => esc(o.name || o.code) + ' (' + esc(o.code) + ', ' + esc(tm(lang, 'ty', o.type) || o.type || '') + ')' + (okU(s.sdf) ? ' ' + src(s.sdf + encodeURIComponent(o.code), t(lang, 'sdf')) : '');
+    const site = o => '<bdi>' + esc(o.name || o.code) + '</bdi> (' + esc(o.code) + ', ' + esc(tm(lang, 'ty', o.type) || o.type || '') + ')' + (okU(s.sdf) ? ' ' + src(s.sdf + encodeURIComponent(o.code), t(lang, 'sdf')) : '');
     if (!n.ok) dd = '<span class="k-muted">' + esc(t(lang, 'unav', { d: ck })) + '</span>';
     else if ((n.in || []).length) dd = n.in.map(o => esc(t(lang, 'n2in', { n: o.name || o.code, c: o.code, t: tm(lang, 'ty', o.type) || o.type || '' })) + (okU(s.sdf) ? ' ' + src(s.sdf + encodeURIComponent(o.code), t(lang, 'sdf')) : '')).join('<br>') +
       ((n.near || []).length ? '<ul class="kl">' + n.near.map(o => '<li>' + site(o) + ', ' + esc(m(o.d)) + '</li>').join('') + '</ul>' : '');
@@ -248,7 +248,7 @@ export function landHtml(ld, x, lang, fd) {
     const open = lat != null ? 'https://www.planning.data.gov.uk/map/#' + (+lat).toFixed(5) + ',' + (+lng).toFixed(5) + ',16z' : 'https://www.planning.data.gov.uk/map/';
     let dd;
     if (!e.ok) dd = '<span class="k-muted">' + esc(t(lang, 'engerr', { d: ck })) + '</span> ' + src(open, t(lang, 'engopen'));
-    else if ((e.hits || []).length) dd = '<ul class="kl">' + e.hits.map(h => '<li>' + esc(tm(lang, 'ds', h.ds) || h.ds) + (h.name ? ': ' + esc(h.name) : '') + ', ' + esc(h.in ? t(lang, 'engin') : m(h.d)) +
+    else if ((e.hits || []).length) dd = '<ul class="kl">' + e.hits.map(h => '<li>' + esc(tm(lang, 'ds', h.ds) || h.ds) + (h.name ? ': <bdi>' + esc(h.name) + '</bdi>' : '') + ', ' + esc(h.in ? t(lang, 'engin') : m(h.d)) +
       (h.entity ? ' ' + src('https://www.planning.data.gov.uk/entity/' + encodeURIComponent(h.entity), (h.ref || String(h.entity))) : '') + '</li>').join('') + '</ul>';
     else dd = esc(t(lang, 'engnone', { l: (s.datasets || []).map(k => tm(lang, 'ds', k) || k).join(', ') }));
     rows.push([t(lang, 'eng'), dd + ' ' + src(s.url, t(lang, 'engsrc'))]);
@@ -260,7 +260,7 @@ export function landHtml(ld, x, lang, fd) {
     if (!o.ok) dd = '<span class="k-muted">' + esc(t(lang, 'unav', { d: ck })) + '</span>';
     else {
       dd = (o.in || []).map(a => esc(t(lang, 'osin', { k: kn(a.kind), n: a.name ? '"' + a.name + '"' : '' }).replace(/\s+\./, '.'))).join('<br>');
-      if ((o.near || []).length) dd += (dd ? '<br>' : esc(t(lang, 'osnear'))) + '<ul class="kl">' + o.near.map(a => '<li>' + esc(kn(a.kind)) + (a.name ? ' "' + esc(a.name) + '"' : '') + ', ' + esc(m(a.d)) + '</li>').join('') + '</ul>';
+      if ((o.near || []).length) dd += (dd ? '<br>' : esc(t(lang, 'osnear'))) + '<ul class="kl">' + o.near.map(a => '<li>' + esc(kn(a.kind)) + (a.name ? ' <bdi>"' + esc(a.name) + '"</bdi>' : '') + ', ' + esc(m(a.d)) + '</li>').join('') + '</ul>';
       if (!dd) dd = esc(t(lang, 'osnone'));
     }
     rows.push([t(lang, 'osm'), dd + '<br><span class="k-muted k-small">' + esc(t(lang, 'oslim')) + '</span> ' + src(s.url, t(lang, 'ossrc', { b: fd(o.build || s.build || lr.updated) }))]);
@@ -288,7 +288,7 @@ export function histHtml(ld, x, lang, fd) {
   if (!r.ok) return CSS + '<div class="kland"><p class="k-muted">' + esc(t(lang, 'unav', { d: fd(r.checked || mh.updated) })) + '</p></div>';
   const b = r.b || {}, rd = r.r || {}, l = r.l || {};
   const line = o => o && o.n ? esc(t(lang, 'mn', { n: num(o.n, lang), a: fd(o.first), b: fd(o.last) })) : '<span class="k-muted">' + esc(t(lang, 'm0')) + '</span>';
-  const tagHtml = tag => { const lb = tagLabel(lang, tag); return lb ? esc(lb) + ' <code>' + esc(tag) + '</code>' : '<code>' + esc(tag) + '</code>'; };
+  const tagHtml = tag => { const lb = tagLabel(lang, tag); return lb ? esc(lb) + ' <bdi><code>' + esc(tag) + '</code></bdi>' : '<bdi><code>' + esc(tag) + '</code></bdi>'; };
   const rows = [[t(lang, 'mb'), line(b)], [t(lang, 'mr'), line(rd)]];
   const land = [];   // one row per kind and name: several unnamed forest patches read as one line
   for (const a of (r.land || []).filter(a => a.first)) {
@@ -296,7 +296,7 @@ export function histHtml(ld, x, lang, fd) {
     if (!g) land.push(Object.assign({ k: 1 }, a));
     else { g.k++; if (a.first < g.first) Object.assign(g, { first: a.first, t: a.t, id: a.id }); if ((a.last || '') > (g.last || '')) g.last = a.last; }
   }
-  rows.push([t(lang, 'ml'), land.length ? '<ul class="kl">' + land.map(a => '<li>' + tagHtml(a.tag) + (a.name ? ' "' + esc(a.name) + '"' : '') + (a.k > 1 ? ' (' + num(a.k, lang) + ')' : '') + ': ' + esc(fd(a.first)) + (a.last && a.last !== a.first ? ', ' + esc(fd(a.last)) : '') + ' ' + src(osmU(a.t, a.id), t(lang, 'hist')) + '</li>').join('') + '</ul>' : '<span class="k-muted">' + esc(t(lang, 'm0')) + '</span>']);
+  rows.push([t(lang, 'ml'), land.length ? '<ul class="kl">' + land.map(a => '<li>' + tagHtml(a.tag) + (a.name ? ' <bdi>"' + esc(a.name) + '"</bdi>' : '') + (a.k > 1 ? ' (' + num(a.k, lang) + ')' : '') + ': ' + '<bdi>' + esc(fd(a.first)) + (a.last && a.last !== a.first ? ', ' + esc(fd(a.last)) : '') + '</bdi>' + ' ' + src(osmU(a.t, a.id), t(lang, 'hist')) + '</li>').join('') + '</ul>' : '<span class="k-muted">' + esc(t(lang, 'm0')) + '</span>']);
   const cons = (r.cons || []).filter(c => c.first);
   if (cons.length) rows.push([t(lang, 'mcons'), esc(t(lang, 'mcn', { n: num(cons.length, lang), a: fd(cons[0].first) })) + ' ' + src(osmU(cons[0].t, cons[0].id), t(lang, 'hist'))]);
   if (!b.n && !rd.n && !l.n) return CSS + '<div class="kland"><p class="ki">' + esc(t(lang, 'mintro')) + '</p><p>' + esc(t(lang, 'none')) + '</p><p class="srcl">' + src(s.url, t(lang, 'msrc')) + '</p></div>';
