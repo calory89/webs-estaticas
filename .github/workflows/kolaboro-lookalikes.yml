@@ -1,7 +1,7 @@
 name: Kolaboro lookalike websites
 # Daily (n19a, batch 19): new websites whose names resemble the developer and project websites in the named project data.
 # Certificate Transparency (crt.sh PostgreSQL, else a rotating crt.sh JSON search), registered lookalike names in public DNS
-# (a seventh of the websites per day), registry RDAP registration dates. The lookalike sites are never opened. No model calls.
+# (a fourteenth of the websites per day, about 6 minutes in all), registry RDAP registration dates. The lookalike sites are never opened. No model calls.
 # tools/kolaboro-agent/fake_sites.py publishes kolaboro.com/data/lookalikes.json; private state stays in the Actions cache.
 on:
   schedule:
@@ -18,7 +18,7 @@ concurrency:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
         with:

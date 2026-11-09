@@ -10,7 +10,7 @@ Looks every day for websites that imitate the developer and project websites in 
      else the crt.sh JSON search for a rotating share of the names (one request every 4 s).
   2. Registered lookalike names: the same name with another ending, one or two letters changed, letters that look alike
      (0 for o, rn for m, Cyrillic a), and added words such as -sales, -invest or -official. Checked in public DNS (DNS over
-     HTTPS, Cloudflare and Google) for a seventh of the websites each day, so every website is swept once a week.
+     HTTPS, Cloudflare and Google) for a fourteenth of the websites each day, so every website is swept every two weeks.
 For each lookalike that exists: registration date (registry RDAP via the IANA bootstrap), first certificate date (crt.sh,
 whether the name resolves to an address today, and its name servers.
 Published (kolaboro.com/data/lookalikes.json): lookalikes registered, or first given a certificate, in the last 365 days.
@@ -25,7 +25,7 @@ from datetime import datetime, timezone, timedelta
 UA = 'Mozilla/5.0 (compatible; KolaboroResearchAgent/1.0; +https://kolaboro.com/data-policy)'
 NOW = datetime.now(timezone.utc)
 T0 = time.time()
-BUDGET_S = 14 * 60   # the whole run stays under the workflow's 20 minutes
+BUDGET_S = 6 * 60   # the whole run stays under the workflow's 20 minutes
 
 
 def past(f):
@@ -262,7 +262,7 @@ def crt_json_all(d):
     return crt_json(d, timeout=40, tries=1, live_only=False)
 
 
-def ct_db(labels, budget_s=150):
+def ct_db(labels, budget_s=60):
     """[(name, not_before)] from the crt.sh PostgreSQL interface, certificates issued in the last 3 days; None if unreachable.
     The guest interface is shared and slow: at most budget_s seconds in total, 45 s per query, batches rotate by day."""
     if not shutil.which('psql') or os.environ.get('CT_DB', '1') == '0':
@@ -361,7 +361,7 @@ def main():
             match_host(name, nb)
     else:
         ct['db'] = 'unavailable' if not only else 'skipped'
-    n_json = int(arg('--ct-labels', '10' if rows is not None else '25'))
+    n_json = int(arg('--ct-labels', '5' if rows is not None else '15'))
     labels = sorted(by_label, key=lambda L: hashlib.sha256((L + TODAY).encode()).hexdigest())[:n_json]
     for L in labels:
         a = crt_json(L, timeout=45, tries=1)
@@ -374,9 +374,9 @@ def main():
                 ct['names'] += 1
                 match_host(h, (x.get('not_before') or '')[:10] or None)
 
-    # 2. Registered lookalike names (a seventh of the websites per day, or all with --sweep-all / --only)
-    day = NOW.toordinal() % 7
-    sweep = [d for d in watch if only or '--sweep-all' in ARGS or int(hashlib.sha256(d.encode()).hexdigest(), 16) % 7 == day]
+    # 2. Registered lookalike names (a fourteenth of the websites per day, or all with --sweep-all / --only)
+    day = NOW.toordinal() % 14
+    sweep = [d for d in watch if only or '--sweep-all' in ARGS or int(hashlib.sha256(d.encode()).hexdigest(), 16) % 14 == day]
     cands = []
     for d in sweep:
         for p in sorted(permutations(d)):
