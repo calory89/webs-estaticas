@@ -907,9 +907,12 @@ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.c
   var T = { en: ['Show all {n}', 'Show fewer'], es: ['Ver los {n}', 'Ver menos'], de: ['Alle {n} zeigen', 'Weniger zeigen'], fr: ['Voir les {n}', 'Voir moins'], nl: ['Toon alle {n}', 'Toon minder'], ru: ['Показать все ({n})', 'Свернуть'], zh: ['显示全部 {n} 项', '收起'], ar: ['عرض الكل ({n})', 'عرض أقل'] }[L] || ['Show all {n}', 'Show fewer'];
   var links = toc ? Array.prototype.slice.call(toc.querySelectorAll('a[href^="#"]')) : [];
   var secs = links.map(function (a) { return D.getElementById(a.getAttribute('href').slice(1)); });
-  var hdr = D.querySelector('header.nav'), last = null;
+  var hdr = D.querySelector('header.nav'), last = null, smt = null;
   var spy = function () {
     var side = toc.offsetHeight > 120, top = (hdr ? Math.max(0, hdr.getBoundingClientRect().bottom) : 0) + (side ? 0 : toc.offsetHeight) + 24, cur = -1;   // side: the contents list is a column beside the text on wide screens (d12b)
+    // a section opened from the contents list stops at its scroll margin; the mark must count it as reached (on wide screens it marked the one before)
+    if (smt === null) { smt = 0; try { var s0 = secs.filter(Boolean)[0]; if (s0) smt = parseFloat(getComputedStyle(s0).scrollMarginTop) || 0; } catch (e) {} }
+    if (smt) top = Math.max(top, smt + 4);
     toc.style.top = (hdr ? hdr.offsetHeight : 0) + 'px';
     secs.forEach(function (s, i) { if (s && s.getBoundingClientRect().top < top) cur = i; });
     if (cur === last) return; last = cur;
