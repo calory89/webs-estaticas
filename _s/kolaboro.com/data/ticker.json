@@ -4,6 +4,20 @@
   {
    "date": "2026-11-09",
    "kind": "data",
+   "text": "Corporate family on developer pages: parents and subsidiaries from the GLEIF register (CC0) for 39 developers matched by exact legal name, and a new family link type in the developer graph",
+   "tl": {
+    "es": "Grupo empresarial en las páginas de promotores: matrices y filiales del registro GLEIF (CC0) para 39 promotores identificados por nombre legal exacto, y un nuevo tipo de vínculo de grupo en el grafo de promotores",
+    "fr": "Groupe de sociétés sur les pages promoteurs : sociétés mères et filiales du registre GLEIF (CC0) pour 39 promoteurs identifiés par leur nom légal exact, et un nouveau type de lien de groupe dans le graphe des promoteurs",
+    "de": "Konzern auf Bauträgerseiten: Mutter- und Tochtergesellschaften aus dem GLEIF-Register (CC0) für 39 über den exakten Firmennamen zugeordnete Bauträger, und eine neue Konzern-Verbindung im Bauträger-Graphen",
+    "nl": "Concern op ontwikkelaarspagina's: moeder- en dochterbedrijven uit het GLEIF-register (CC0) voor 39 ontwikkelaars gevonden op exacte bedrijfsnaam, en een nieuw concern-verbandtype in de ontwikkelaarsgraaf",
+    "ru": "Группа компаний на страницах застройщиков: материнские и дочерние компании из реестра GLEIF (CC0) для 39 застройщиков, найденных по точному юридическому названию, и новый тип связи «группа» в графе застройщиков",
+    "zh": "开发商页面新增企业集团信息：来自 GLEIF 登记（CC0）的母公司和子公司，覆盖按确切法定名称匹配的 39 家开发商，开发商关系图新增集团关联类型",
+    "ar": "المجموعة على صفحات المطورين: الشركات الأم والتابعة من سجل GLEIF (رخصة CC0) لـ 39 مطوراً مطابقين بالاسم القانوني الدقيق، ونوع ربط جديد للمجموعة في شبكة المطورين"
+   }
+  },
+  {
+   "date": "2026-11-09",
+   "kind": "data",
    "text": "Two Birmingham project pins corrected (they sat one degree too far north); their map-based sections stay hidden until the next monthly rebuild uses the new pins",
    "tl": {
     "es": "Corregidos los puntos de dos proyectos de Birmingham (estaban un grado más al norte); sus secciones basadas en el mapa quedan ocultas hasta la próxima actualización mensual con los puntos nuevos",
