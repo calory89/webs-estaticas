@@ -1,14 +1,14 @@
 {
- "date": "2026-11-02",
- "drill_at": "2026-11-03T09:12:58Z",
- "backup_file": "2026-11-02.json.gz",
- "backup_sha256": "b2e5823a4c0f4572e126292c896dfbb323adde418523406fdba4ed945cd5b4be",
+ "date": "2026-11-08",
+ "drill_at": "2026-11-09T11:32:10Z",
+ "backup_file": "2026-11-08.json.gz",
+ "backup_sha256": "c7db9da6866f58e5502e64b91c049c5d4dbde19e1c77200b7405b408b28160de",
  "backup_age_days": 1,
  "postgres": "16.15 (Debian 16.15-1.pgdg13+2)",
  "tables": [
   {
    "name": "cases",
-   "rows": 1,
+   "rows": 3,
    "ok": true
   },
   {
@@ -18,12 +18,12 @@
   },
   {
    "name": "users",
-   "rows": 1,
+   "rows": 2,
    "ok": true
   },
   {
    "name": "watch",
-   "rows": 0,
+   "rows": 1,
    "ok": true
   },
   {
@@ -33,27 +33,27 @@
   },
   {
    "name": "stamps",
-   "rows": 23,
+   "rows": 571,
    "ok": true
   },
   {
    "name": "history",
-   "rows": 3832,
+   "rows": 4901,
    "ok": true
   },
   {
    "name": "case_log",
-   "rows": 6,
+   "rows": 8,
    "ok": true
   },
   {
    "name": "evidence",
-   "rows": 7,
+   "rows": 8,
    "ok": true
   },
   {
    "name": "messages",
-   "rows": 6,
+   "rows": 8,
    "ok": true
   },
   {
@@ -63,12 +63,12 @@
   },
   {
    "name": "events_30d",
-   "rows": 56,
+   "rows": 7343,
    "ok": true
   },
   {
    "name": "files_index",
-   "rows": 5,
+   "rows": 6,
    "ok": true
   },
   {
@@ -77,11 +77,11 @@
    "ok": true
   }
  ],
- "rows_total": 3960,
- "evidence_files_checked": 5,
+ "rows_total": 12874,
+ "evidence_files_checked": 6,
  "evidence_missing": 0,
  "evidence_bad_hash": 0,
  "evidence_ok": true,
  "ok": true,
- "duration_s": 1.82
+ "duration_s": 2.69
 }
