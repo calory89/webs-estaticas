@@ -47,8 +47,9 @@ export async function tickerHtml(env) {
 // n20s (9 Nov 2026), defence in depth on every HTML page: a link whose address is a script or data URL (it could only come from
 // third-party text such as an OpenStreetMap tag, a register record or a developer page) is made inert. Escaping alone does not stop these.
 // The selector only fires on the rare href that contains "script" or starts with "data:", so normal pages pay nothing.
-const BAD_HREF = 'a[href*="script" i], a[href^="data:" i], area[href*="script" i]';
-function safeHref(e) { const v = (e.getAttribute('href') || '').replace(/[\t\n\r]/g, ''); if (/^[\u0000-\u0020]*(?:javascript|vbscript|data):/i.test(v)) { e.setAttribute('href', '#'); e.removeAttribute('target'); } }
+const BAD_HREF = 'a[href*="script" i], a[href^="data:" i], a[href*="&#"], a[href*="&colon" i], a[href*="&tab" i], a[href*="&newline" i], area[href*="script" i]';
+const deEnt = v => v.replace(/&#x([0-9a-f]{1,6});?/gi, (m, h) => { try { return String.fromCodePoint(parseInt(h, 16)); } catch (e) { return ''; } }).replace(/&#(\d{1,7});?/g, (m, n) => { try { return String.fromCodePoint(+n); } catch (e) { return ''; } }).replace(/&colon;/gi, ':').replace(/&(?:tab|newline);/gi, '');
+function safeHref(e) { const v = deEnt(e.getAttribute('href') || '').replace(/[\t\n\r]/g, ''); if (/^[\u0000- ]*(?:javascript|vbscript|data):/i.test(v)) { e.setAttribute('href', '#'); e.removeAttribute('target'); } }
 export async function kbTick(req, r, env) {
   try {
     if (req.method !== 'GET' || !r || r.status !== 200 || !/text\/html/.test(r.headers.get('content-type') || '')) return r;
