@@ -259,7 +259,14 @@ def crt_json(q, timeout=60, tries=2, live_only=True):
 
 def crt_json_all(d):
     """Every certificate crt.sh holds for d and its subdomains, expired ones included (None if crt.sh did not answer)."""
-    return crt_json(d, timeout=40, tries=1, live_only=False)
+    return crt_json(d, timeout=40, tries=2, live_only=False)
+
+
+def certspotter(d):
+    """Start date of the newest current certificate for d (Cert Spotter, public CT monitor), or None."""
+    j = get_json('https://api.certspotter.com/v1/issuances?domain=' + urllib.parse.quote(d) + '&include_subdomains=true', timeout=20)
+    ds = sorted((x.get('not_before') or '')[:10] for x in j if x.get('not_before')) if isinstance(j, list) else []
+    return ds[-1] if ds else None
 
 
 def ct_db(labels, budget_s=60):
@@ -430,7 +437,9 @@ def main():
             a = crt_json_all(cand)           # full certificate history: the earliest one stands in for the registration date
             ds = sorted(d for d in ((x.get('not_before') or '')[:10] for x in (a or [])) if d and (not reg or d >= reg))   # since this registration
             cert, first = (ds[0], True) if ds else (None, a is not None)
-        enr[cand] = {'at': TODAY, 'reg': reg, 'rst': rst, 'cert': cert, 'first': first, 'ns': ns_of(cand), 'crt_ok': bool(cert) or first}
+            if a is None:                    # crt.sh did not answer: the current certificate from Cert Spotter (not the first one)
+                cert = certspotter(cand)
+        enr[cand] = {'at': TODAY, 'reg': reg, 'rst': rst, 'cert': cert, 'first': first, 'ns': ns_of(cand), 'crt_ok': first}
     rdap('example.com')   # loads the IANA bootstrap once before the threads start
     with cf.ThreadPoolExecutor(6) as ex:
         list(ex.map(enrich, todo))
@@ -482,6 +491,7 @@ def main():
         'method': {'ct': ct, 'dns': {'websites_swept_today': len(sweep), 'names_checked': len(cands), 'lookup_failed': dns_fail}, 'rdap': 'IANA bootstrap, registry RDAP servers'},
         'sources': [
             {'name': 'crt.sh (Certificate Transparency logs search, Sectigo)', 'url': 'https://crt.sh/', 'licence': 'Certificate Transparency log data, public (RFC 6962)'},
+            {'name': 'Cert Spotter API (SSLMate), when crt.sh does not answer', 'url': 'https://sslmate.com/certspotter/api/', 'licence': 'public Certificate Transparency data'},
             {'name': 'Registry RDAP (IANA bootstrap)', 'url': 'https://data.iana.org/rdap/dns.json', 'licence': 'public registration data'},
             {'name': 'Public DNS over HTTPS (Cloudflare 1.1.1.1, Google 8.8.8.8)', 'url': 'https://developers.cloudflare.com/1.1.1.1/encryption/dns-over-https/', 'licence': 'public DNS'}],
         'w': ws,
