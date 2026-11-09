@@ -105,6 +105,8 @@ function kbHeaders(r, u) {
   const nonce = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(16))));
   h.set('content-security-policy-report-only', KB_CSP.replace(/\{N\}/g, nonce).replace('{FA}', priv ? "'none'" : embed ? '*' : "'self'"));
   h.set('reporting-endpoints', 'csp="/api/kb/csp"');
+  // n20s: opt-in trial of the strict policy as ENFORCED on one page view (add ?csp=strict), to see what would break before it becomes the default
+  if (u.searchParams.get('csp') === 'strict') h.set('content-security-policy', h.get('content-security-policy-report-only') + '; upgrade-insecure-requests');
   h.set('cross-origin-opener-policy', 'same-origin-allow-popups');
   if (priv) { h.set('cache-control', 'no-store'); h.set('x-robots-tag', 'noindex, nofollow'); }
   h.delete('access-control-allow-origin');
