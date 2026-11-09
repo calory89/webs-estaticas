@@ -29,16 +29,27 @@ async function fx(u, ctx) {
   const series = [...new Set(want.map(c => PEGS[c] ? PEGS[c].base : c))].sort();
   const key = series.join('+') || 'none';
   const query = 'https://data-api.ecb.europa.eu/service/data/EXR/D.' + (series.length ? series.join('+') : 'USD') + '.EUR.SP00.A?startPeriod=' + from + '&detail=dataonly&format=csvdata';
-  const ck = new Request('https://kolaboro.com/__kbx_x/fx-v1/' + key + '/' + from + '/' + want.slice().sort().join('+'));
+  // n20f (9 Nov 2026): one edge location answered Cloudflare's own 502 page for one currency pair and date on every call (a stored
+  // copy that could not be streamed, left by a slow ECB answer). The stored copy is now read and checked before it is used, a bad
+  // one is dropped, the key is new (v2), the ECB call gives up after 12 s and is no longer kept by the edge on its own.
+  const ck = new Request('https://kolaboro.com/__kbx_x/fx-v2/' + key + '/' + from + '/' + want.slice().sort().join('+'));
   const cache = caches.default;
-  const hit = await cache.match(ck);
-  if (hit) { const r = new Response(hit.body, hit); r.headers.set('x-kb-cache', 'hit'); return r; }
+  try {
+    const hit = await cache.match(ck);
+    if (hit) {
+      const t = await hit.text(); let ok = false;
+      try { const j = JSON.parse(t); ok = !!(j && j.rates && Array.isArray(j.dates)); } catch (e) {}
+      if (ok) return new Response(t, { headers: hdr({ 'cache-control': hit.headers.get('cache-control') || 'public, max-age=3600', 'x-kb-cache': 'hit' }) });
+      await cache.delete(ck).catch(() => {});
+    }
+  } catch (e) { try { await cache.delete(ck); } catch (x) {} }
 
   let txt = '';
   try {
-    const r = await fetch(query, { headers: { accept: 'text/csv', 'user-agent': 'kolaboro.com currency-risk tool (+https://kolaboro.com/tools/currency-risk/)' }, cf: { cacheTtl: 3600 } });
-    if (!r.ok) return json({ error: 'ECB data portal answered ' + r.status, query }, 502);
-    txt = await r.text();
+    const ac = new AbortController(), tm = setTimeout(() => ac.abort(), 12000);
+    const r = await fetch(query, { headers: { accept: 'text/csv', 'user-agent': 'kolaboro.com currency-risk tool (+https://kolaboro.com/tools/currency-risk/)' }, signal: ac.signal });
+    if (!r.ok) { clearTimeout(tm); return json({ error: 'ECB data portal answered ' + r.status, query }, 502); }
+    txt = await r.text(); clearTimeout(tm);
   } catch (e) {
     return json({ error: 'ECB data portal not reachable', query }, 502);
   }
@@ -77,10 +88,9 @@ async function fx(u, ctx) {
     dates,
     rates: out
   };
-  const res = new Response(JSON.stringify(body), { headers: hdr({ 'cache-control': 'public, max-age=' + TTL }) });
-  if (ctx && ctx.waitUntil) ctx.waitUntil(cache.put(ck, res.clone()).catch(() => {}));
-  else await cache.put(ck, res.clone()).catch(() => {});
-  const r2 = new Response(res.body, res); r2.headers.set('x-kb-cache', 'miss'); return r2;
+  const text = JSON.stringify(body), put = cache.put(ck, new Response(text, { headers: hdr({ 'cache-control': 'public, max-age=' + TTL }) })).catch(() => {});
+  if (ctx && ctx.waitUntil) ctx.waitUntil(put); else await put;
+  return new Response(text, { headers: hdr({ 'cache-control': 'public, max-age=' + TTL, 'x-kb-cache': 'miss' }) });
 }
 
 export async function handle(req, u, env, ctx) {
