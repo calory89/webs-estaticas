@@ -1,7 +1,7 @@
 ## RealHunt AI score
-Scored now: 18 · total: 553 · approx cost (Haiku): $0.12
+Scored now: 5 · total: 558 · approx cost (Haiku): $0.01
 
-### Homes to review (338)
+### Homes to review (339)
 | home | beauty | condition | cover ok | keep | flags |
 |---|---|---|---|---|---|
 | [fr-esperaza-86k-sxd5p3](https://realhunt.co/deal/fr-esperaza-86k-sxd5p3) | 45 | 50 | False | False | dated kitchen cabinets and appliances, worn tile flooring throughout, cluttered, |
@@ -326,6 +326,7 @@ Scored now: 18 · total: 553 · approx cost (Haiku): $0.12
 | [it-pollina-cefalu-sea-view-30k-685163](https://realhunt.co/deal/it-pollina-cefalu-sea-view-30k-685163) | 75 | 55 | False | False | aged terracotta roof needs attention, worn building facades, deteriorated exteri |
 | [us-doral-8290-236-285k](https://realhunt.co/deal/us-doral-8290-236-285k) | 75 | 80 | False | True | balcony needs cleaning and refresh, dated railing style, visible wear on concret |
 | [us-plantation-485-36-298k](https://realhunt.co/deal/us-plantation-485-36-298k) | 75 | 78 | False | False | exterior looks dated and weathered, dark brown facade feels gloomy, cover photo  |
+| [live-pisos-402uzp](https://realhunt.co/deal/live-pisos-402uzp) | 75 | 70 | True | False | needs finishing touches, exposed brick needs sealing, bathroom appears incomplet |
 | [lake-como-peglio-85000](https://realhunt.co/deal/lake-como-peglio-85000) | 78 | 75 | False | True | exterior arches appear aged and weathered, surrounding village looks somewhat ru |
 | [es-costa-del-silencio-239k-481637](https://realhunt.co/deal/es-costa-del-silencio-239k-481637) | 78 | 82 | False | True | Photo 0 shows dated complex architecture and cluttered pool area, Communal areas |
 | [us-dora-84k-329130](https://realhunt.co/deal/us-dora-84k-329130) | 78 | 82 | False | True | exterior siding appears dated and weathered, cover photo lacks curb appeal, mode |
