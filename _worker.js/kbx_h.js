@@ -9,7 +9,7 @@
 //                                        SHA-256 and a timestamp, and the record is kept so anyone can fetch it again:
 //   GET /api/x/h/archive/{sha256}[?raw=1]
 // The static files are written by batch jobs; this module only reads them, so the site keeps working if a job is late.
-import { rpc } from './kolaboro.js';
+import { rpc, WKEY } from './kolaboro.js';
 export const PATHS = /^\/api\/x\/h(\/|$)/;
 
 const UA = 'KolaboroRegisterCheck/1.0 (+https://kolaboro.com/registers/)';
@@ -89,7 +89,7 @@ async function lookup(req, u, env, ctx) {
     bytes: buf.byteLength, sha256: s, result: blocked ? { found: null, blocked: true } : parsed,
     note: 'sha256 is the SHA-256 of the exact bytes the register returned. Fetch them again with /api/x/h/archive/' + s + '?raw=1 and hash them yourself.' };
   let durable = false;
-  try { const d = await rpc('kolaboro_register_lookup_put', { p_sha256: s, p_register: id, p_query: n, p_url: url, p_fetched_at: at, p_http: r.status, p_bytes: buf.byteLength, p_result: rec.result }); durable = !!d; } catch (e) { durable = false; }
+  try { const d = await rpc('kolaboro_register_lookup_put', { p_wkey: WKEY, p_sha256: s, p_register: id, p_query: n, p_url: url, p_fetched_at: at, p_http: r.status, p_bytes: buf.byteLength, p_result: rec.result }); durable = !!d; } catch (e) { durable = false; }
   rec.archive = { url: 'https://kolaboro.com/api/x/h/archive/' + s, edge_cache_days: 30, durable,
     durable_note: durable ? 'Stored in the Kolaboro database.' : 'Kept in the edge cache for up to 30 days. The permanent archive table is waiting for approval; until then, save this record if you need it.' };
   const ttl = { headers: { 'cache-control': 'public, max-age=2592000', 'content-type': 'application/json' } };
