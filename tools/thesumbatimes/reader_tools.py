@@ -4,10 +4,10 @@ embeddable weather widget and road/fuel report form. Standalone module in the st
 
 WHERE TO CALL EACH FUNCTION (wiring in build.py; nothing here edits build.py)
 ---------------------------------------------------------------------------
-0. import reader_tools                      next to `import newsletter`
-   CSS = CSS + reader_tools.CSS             right after the big CSS string (head() inlines the global CSS on every page)
-   reader_tools.build(globals())            next to `newsletter.build(globals())` at the end of the build
-                                            -> writes /en|es|id/saved/ (noindex) and /widget/weather.html
+0. import reader_tools                      next to `import newsletter, seo_extra`
+   MODULES = [seo_extra, reader_tools]      build.py then adds reader_tools.CSS to /s.<hash>.css (css_all) and calls
+                                            reader_tools.build(globals()) -> writes /en|es|id/saved/ (noindex) and
+                                            /widget/weather.html (noindex). No SITEMAP on purpose: both are noindex.
 
 1. PLANNER  (page /LANG/plan/, inside plan_page(l), e.g. right before {calc_html(l)})
    reader_tools.planner_html(l, reader_tools.places_for(globals(), l))

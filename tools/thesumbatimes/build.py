@@ -35,8 +35,8 @@ ARTICLES = ARTICLES + [g for g in _GUIDES if g["slug"] not in _have]
 
 BASE = "https://thesumbatimes.com"
 INDEXNOW = "7f3c1e9a5b2d4c8e9f0a1b2c3d4e5f60"   # public IndexNow key (served at /<key>.txt)
-import newsletter, seo_extra
-MODULES = [seo_extra]   # extra page modules: each has build(g) and optional SITEMAP / CSS
+import newsletter, seo_extra, reader_tools
+MODULES = [seo_extra, reader_tools]   # extra page modules: each has build(g) and optional SITEMAP / CSS
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "out")
 CLARITY = "z9xpaay63s"
 SB_URL = "https://oykcsmextclpdnugixqz.supabase.co"
@@ -280,6 +280,7 @@ article p:first-of-type .dl+*{}
 .sa-f button{width:46px;border:0;border-radius:10px;background:#a3271c;color:#fff;font-size:18px;cursor:pointer}.sa-n{margin:0;padding:0 12px 10px;font-size:11.5px;color:var(--muted)}
 @media(max-width:600px){.sa-b span{display:none}.sa-b{padding:13px}.sa-p{right:0;bottom:0;width:100vw;max-width:100vw;height:100dvh;border-radius:0}}
 @media print{.sa{display:none}}
+.rtb{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0 4px}
 .tags{margin:18px 0 0;font-family:Inter,Arial,sans-serif;font-size:14px}.tags a{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 11px;margin:4px 4px 0 0;text-decoration:none;color:var(--ink)}.tags a:hover{border-color:var(--accent);color:var(--accent)}
 .pager{display:flex;justify-content:space-between;gap:12px;margin:26px 0;font-family:Inter,Arial,sans-serif}.pager a{border:1px solid var(--line);border-radius:999px;padding:9px 16px;text-decoration:none;color:var(--ink)}
 .pop{position:fixed;inset:0;background:rgba(20,18,15,.55);z-index:90;display:flex;align-items:center;justify-content:center;padding:16px}.pop[hidden]{display:none}
@@ -382,8 +383,8 @@ else if(s===503)add('assistant',TX.off+'\n\n→ '+'The Sumba Times | https://the
 def footer(l):
     u = UI[l]; x = X[l]
     links = "".join(f'<a href="/{l}/{s}/">{esc(sec_name(l,s))}</a>' for s in NAV)
-    return f"""<div class="w"><footer><div class="links">{links}</div><p><b>The Sumba Times</b> · <a href="/{l}/about/">{x["about"]}</a> · <a href="/{l}/newsletter/">{newsletter.S[l]["name"]}</a> · <a href="/{l}/feed.xml">{x["rss"]}</a> · <a href="mailto:{CONTACT}">{CONTACT}</a><br>
-<a href="https://ecobeachcity.com/" rel="noopener">{u["published_by"]}</a>. {u["disclosure"]}<br>© {NOW.year} The Sumba Times</p></footer></div>{sub_js(l)}{assistant(l)}<script>if('serviceWorker' in navigator)addEventListener('load',function(){{navigator.serviceWorker.register('/sw.js').catch(function(){{}})}})</script></body></html>"""
+    return f"""<div class="w"><footer><div class="links">{links}</div><p><b>The Sumba Times</b> · <a href="/{l}/about/">{x["about"]}</a> · <a href="/{l}/newsletter/">{newsletter.S[l]["name"]}</a> · {reader_tools.saved_link(l)} · <a href="/{l}/feed.xml">{x["rss"]}</a> · <a href="mailto:{CONTACT}">{CONTACT}</a><br>
+<a href="https://ecobeachcity.com/" rel="noopener">{u["published_by"]}</a>. {u["disclosure"]}<br>© {NOW.year} The Sumba Times</p></footer></div>{sub_js(l)}{reader_tools.saved_js(l)}{assistant(l)}<script>if('serviceWorker' in navigator)addEventListener('load',function(){{navigator.serviceWorker.register('/sw.js').catch(function(){{}})}})</script></body></html>"""
 
 def picture(a, l, sizes="(max-width: 820px) 100vw, 760px", eager=False, cap=True):
     im = img_of(a)
@@ -618,9 +619,10 @@ def article_page(a, l):
     s += f"""<main id="main" class="w"><article class="nar">{crumbs}<p class="k">{badge(a)}{esc(kicker(a,l))}</p>
 <h1>{esc(c["title"])}</h1><p class="dek">{esc(c["dek"])}</p>
 <div class="meta"><span><b>{x["desk"]}</b></span><span>{x["pub"]} <time datetime="{iso(a)}">{fdate(a,l)}</time></span>{upd}{seo_extra.reviewed_html(globals(), a, l)}<span>{mins(a,l)} {x["min"]}</span></div>
+<div class="rtb">{reader_tools.listen_button(l)}{reader_tools.save_button(l)}</div>
 {picture(a,l,eager=True)}{top_x}{toc}<div class="{"body" if not a.get("dateline") and kind_of(a) != "letter" else "body0"}">{b}</div>{bot_x}{seo_extra.topics_html(a, l)}{plan_cta}{share(a,l)}
 <div class="src"><b>{u["sources"]}</b><ol>{srcs}</ol><p class="corr">{x["corr"]} <a href="mailto:{CONTACT}">{CONTACT}</a>.</p></div>
-<div style="margin-top:26px">{subscribe(l, False, newsletter.topic_of(a), "article-end")}</div></article>{related(a,l)}</main>""" + footer(l)
+<div style="margin-top:26px">{subscribe(l, False, newsletter.topic_of(a), "article-end")}</div></article>{related(a,l)}</main>""" + footer(l) + reader_tools.listen_js(l)
     write(tpl[l], s)
 
 PAGER = {"en": ("Newer", "Older", "Page"), "es": ("Más recientes", "Anteriores", "Página"), "id": ("Lebih baru", "Sebelumnya", "Halaman")}
@@ -716,7 +718,7 @@ def home(l):
 {('<ul class="rel">' + "".join(f'<li><a href="{url_of(a,l)}">{esc(a[l]["title"])}</a></li>' for a in rel) + '</ul>') if rel else ''}</div>"""
     brief_col = f'<div class="brf"><h2 class="rh">{n["brief_t"]}</h2>' + "".join(
         f'<div class="bi"><time datetime="{iso(a)}">{dt(a).strftime("%d/%m · %H:%M")}</time><a href="{url_of(a,l)}">{esc(a[l]["title"])}</a></div>' for a in briefs[:7]) + f'<a class="more" href="/{l}/news/">{n["more_news"]} →</a><a class="more" href="/{l}/week/">{WEEK_T[l][0]} →</a></div>'
-    rail = f"""<div class="rail">{live_box(l)}<section class="desk"><h2 class="rh">{n["travel_desk"]}</h2>{hl(feat, l, img=True, when=False)}
+    rail = f"""<div class="rail">{reader_tools.live_box_plus(live_box(l), l)}<section class="desk"><h2 class="rh">{n["travel_desk"]}</h2>{hl(feat, l, img=True, when=False)}
 <a class="plan" href="/{l}/plan/"><b>{n["start"]}</b><span>{t["plan_cta_p"]}</span></a></section></div>"""
     s += f"""<main id="main" class="w"><div class="ticker" aria-label="{x["ticker"]}"><b>{x["ticker"]}</b>{ticker}</div>
 <section class="fp">{brief_col}{lead}{rail}</section>"""
@@ -744,7 +746,7 @@ def home(l):
     ess = "".join(f'<li><a href="{url_of(a,l)}">{esc(a[l]["title"])}</a></li>' for a in guides[:10])
     s += f"""<section class="bottom">{figures(l)}<section class="ess"><h2 class="rh">{n["essential_t"]}</h2><ol>{ess}</ol></section>
 <section class="letter"><h2 class="rh">{n["letter_t"]}</h2>{hl(LETTER, l, img=False, when=True)}{subscribe(l)}</section></section>"""
-    s += "</main>" + footer(l) + live_js(l)
+    s += "</main>" + footer(l) + live_js(l) + reader_tools.live_extra_js(l)
     write(tpl.format(l=l), s)
 
 WEEK_T = {"en": ("This week in Sumba", "Every story we published on Sumba in the last seven days, in one page: transport, weather, culture, business and life on the island."),
@@ -828,10 +830,10 @@ def plan_page(l):
     if faqs: ld.append({"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": l, "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": an}} for q, an, _ in faqs]})
     s = head(l, t["plan_title"] + " · The Sumba Times", t["plan_dek"], tpl, extra=f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>') + masthead(l, tpl, "plan")
     faq_html = "".join(f'<details><summary>{esc(q)}</summary><p>{esc(an)} <a href="{url_of(a,l)}">→</a></p></details>' for q, an, a in faqs)
-    s += f"""<main id="main" class="w"><div class="nar"><div class="crumbs"><a href="/{l}/">{x["home"]}</a></div><h1>{t["plan_title"]}</h1><p class="dek">{t["plan_dek"]}</p>{t["plan_intro"]}</div>
+    s += f"""<main id="main" class="w"><div class="nar"><div class="crumbs"><a href="/{l}/">{x["home"]}</a></div><h1>{t["plan_title"]}</h1><p class="dek">{t["plan_dek"]}</p><p><a class="btnp" href="#planner">{reader_tools.S[l]["pl_t"]} →</a></p>{t["plan_intro"]}</div>
 {facts_strip(l)}{blocks}
 <section class="block" id="map"><div class="hd"><h2>{t["map_t"]}</h2></div><div class="mf" role="group" aria-label="{t["map_t"]}">{"".join(f'<button type="button" class="on" data-k="{k}" aria-pressed="true"><i style="background:{c}"></i>{esc(nm[l])}</button>' for k, (c, nm) in PTYPES.items())}</div><div id="stmap" class="map"><button type="button" onclick="stMap()">{t["map_btn"]}</button></div><p class="when">{t["map_note"]}</p></section>
-{calc_html(l)}{f'<section class="block nar faq"><div class="hd"><h2>{t["faq_t"]}</h2></div>{faq_html}</section>' if faqs else ''}{qform_html(l)}
+{reader_tools.planner_html(l, reader_tools.places_for(globals(), l))}{calc_html(l)}{f'<section class="block nar faq"><div class="hd"><h2>{t["faq_t"]}</h2></div>{faq_html}</section>' if faqs else ''}{qform_html(l)}{reader_tools.report_form_html(l)}
 <div class="nar" style="margin-top:26px">{subscribe(l)}</div></main>
 <script>var STP={json.dumps(pts, ensure_ascii=False)},STC={json.dumps({k: c for k, (c, _) in PTYPES.items()})},STM=[];var stMapOn=false;
 document.querySelectorAll('.mf button').forEach(function(b){{b.onclick=function(){{var on=b.classList.toggle('on');b.setAttribute('aria-pressed',on);STM.forEach(function(x){{if(x.k===b.dataset.k)x.m.getElement().style.display=on?'':'none'}});try{{clarity('event','map_filter')}}catch(e){{}}}}}});
