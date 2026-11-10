@@ -1,0 +1,6022 @@
+{
+ "noindex_copies": 77,
+ "written_by_hand": {
+  "pages": 580,
+  "words": 228603,
+  "english": 0,
+  "failed": []
+ },
+ "max_english_share": 0.004,
+ "max_english_words": 0,
+ "twins": 704,
+ "groups": {
+  "homes": {
+   "pages": 561,
+   "twins": 561,
+   "words": 0,
+   "english": 0,
+   "by_hand": 561,
+   "spanish_pct": 0
+  },
+  "places": {
+   "pages": 151,
+   "twins": 151,
+   "words": 68021,
+   "english": 0,
+   "by_hand": 18,
+   "spanish_pct": 100
+  },
+  "pages": {
+   "pages": 41,
+   "twins": 8,
+   "words": 3133,
+   "english": 418,
+   "by_hand": 1,
+   "spanish_pct": 86.66
+  },
+  "content": {
+   "pages": 641,
+   "twins": 564,
+   "words": 536327,
+   "english": 701,
+   "spanish_pct": 99.87
+  },
+  "top": {
+   "pages": 434,
+   "twins": 0,
+   "words": 39631,
+   "english": 4351,
+   "spanish_pct": 89.02
+  }
+ },
+ "not_published": 544,
+ "not_published_sample": [
+  {
+   "url": "https://realhunt.co/extension",
+   "english": 13,
+   "words": 40,
+   "hits": [
+    "(no static body)"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/extension/privacy",
+   "english": 7,
+   "words": 16,
+   "hits": [
+    "(no static body)"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/find-my-home",
+   "english": 16,
+   "words": 37,
+   "hits": [
+    "(no static body)"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/find-my-home/madrid",
+   "english": 11,
+   "words": 26,
+   "hits": [
+    "(no static body)"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/find-my-home/barcelona",
+   "english": 11,
+   "words": 26,
+   "hits": [
+    "(no static body)"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/find-my-home/valencia",
+   "english": 11,
+   "words": 26,
+   "hits": [
+    "(no static body)"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/find-my-home/malaga",
+   "english": 11,
+   "words": 26,
+   "hits": [
+    "(no static body)"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/find-my-home/sevilla",
+   "english": 11,
+   "words": 26,
+   "hits": [
+    "(no static body)"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/find-my-home/lisbon",
+   "english": 11,
+   "words": 26,
+   "hits": [
+    "(no static body)"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/find-my-home/porto",
+   "english": 11,
+   "words": 26,
+   "hits": [
+    "(no static body)"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/find-my-home/paris",
+   "english": 11,
+   "words": 26,
+   "hits": [
+    "(no static body)"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/find-my-home/london",
+   "english": 11,
+   "words": 26,
+   "hits": [
+    "(no static body)"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/find-my-home/rome",
+   "english": 11,
+   "words": 26,
+   "hits": [
+    "(no static body)"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/find-my-home/milan",
+   "english": 11,
+   "words": 26,
+   "hits": [
+    "(no static body)"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/find-my-home/berlin",
+   "english": 11,
+   "words": 26,
+   "hits": [
+    "(no static body)"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/swipe",
+   "english": 11,
+   "words": 17,
+   "hits": [
+    "(no static body)"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/leaderboard",
+   "english": 5,
+   "words": 10,
+   "hits": [
+    "(no static body)"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/winners",
+   "english": 15,
+   "words": 19,
+   "hits": [
+    "(no static body)"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/help-buying",
+   "english": 7,
+   "words": 22,
+   "hits": [
+    "(no static body)"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/insider",
+   "english": 7,
+   "words": 25,
+   "hits": [
+    "(no static body)"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/legal/privacy",
+   "english": 5,
+   "words": 16,
+   "hits": [
+    "(no static body)"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/legal/terms",
+   "english": 8,
+   "words": 19,
+   "hits": [
+    "(no static body)"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/legal/cookies",
+   "english": 2,
+   "words": 18,
+   "hits": [
+    "(no static body)"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/legal/takedown",
+   "english": 14,
+   "words": 25,
+   "hits": [
+    "(no static body)"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses",
+   "english": 19,
+   "words": 728,
+   "hits": [
+    "Cheap",
+    "houses",
+    "for",
+    "by",
+    "what",
+    "you",
+    "are",
+    "looking",
+    "for",
+    "Every",
+    "homes",
+    "scored"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/by-the-sea",
+   "english": 7,
+   "words": 2348,
+   "hits": [
+    "homes",
+    "by",
+    "the",
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/by-the-sea-in-spain",
+   "english": 4,
+   "words": 1846,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/by-the-sea-in-italy",
+   "english": 4,
+   "words": 1094,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/by-the-sea-in-united-states",
+   "english": 4,
+   "words": 967,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/by-the-sea-in-denmark",
+   "english": 4,
+   "words": 1188,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/by-the-sea-in-sweden",
+   "english": 4,
+   "words": 724,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/by-the-sea-in-japan",
+   "english": 4,
+   "words": 1166,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/by-the-sea-in-greece",
+   "english": 4,
+   "words": 918,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/by-the-sea-in-mexico",
+   "english": 4,
+   "words": 691,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/by-the-sea-in-canada",
+   "english": 4,
+   "words": 652,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/by-the-sea-in-bulgaria",
+   "english": 4,
+   "words": 733,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/near-a-lake",
+   "english": 6,
+   "words": 2351,
+   "hits": [
+    "homes",
+    "near",
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/near-a-lake-in-italy",
+   "english": 4,
+   "words": 923,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/near-a-lake-in-united-states",
+   "english": 4,
+   "words": 1045,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/near-a-lake-in-denmark",
+   "english": 4,
+   "words": 612,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/near-a-lake-in-sweden",
+   "english": 4,
+   "words": 954,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/near-a-lake-in-japan",
+   "english": 4,
+   "words": 662,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/near-a-lake-in-poland",
+   "english": 46,
+   "words": 647,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated",
+    "tax",
+    "on",
+    "notary",
+    "about",
+    "to",
+    "fees",
+    "the",
+    "buyer"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/near-a-lake-in-canada",
+   "english": 4,
+   "words": 598,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/with-garden",
+   "english": 6,
+   "words": 2165,
+   "hits": [
+    "homes",
+    "with",
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/with-garden-in-spain",
+   "english": 4,
+   "words": 1764,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/with-garden-in-italy",
+   "english": 4,
+   "words": 951,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/with-garden-in-united-states",
+   "english": 4,
+   "words": 1188,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/with-garden-in-denmark",
+   "english": 4,
+   "words": 1049,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/with-garden-in-sweden",
+   "english": 4,
+   "words": 1116,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/with-garden-in-france",
+   "english": 4,
+   "words": 635,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/with-garden-in-japan",
+   "english": 4,
+   "words": 584,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/with-garden-in-poland",
+   "english": 46,
+   "words": 597,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated",
+    "tax",
+    "on",
+    "notary",
+    "about",
+    "to",
+    "fees",
+    "the",
+    "buyer"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/with-garden-in-germany",
+   "english": 4,
+   "words": 583,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/with-garden-in-greece",
+   "english": 4,
+   "words": 626,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/with-garden-in-switzerland",
+   "english": 34,
+   "words": 666,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated",
+    "tax",
+    "to",
+    "on",
+    "the",
+    "notary",
+    "and",
+    "about",
+    "to"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/with-sauna",
+   "english": 6,
+   "words": 721,
+   "hits": [
+    "homes",
+    "with",
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/with-sauna-in-sweden",
+   "english": 4,
+   "words": 557,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/stone-houses",
+   "english": 7,
+   "words": 1800,
+   "hits": [
+    "homes",
+    "made",
+    "of",
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/stone-houses-in-spain",
+   "english": 4,
+   "words": 639,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/stone-houses-in-italy",
+   "english": 4,
+   "words": 1095,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/stone-houses-in-united-states",
+   "english": 4,
+   "words": 616,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/stone-houses-in-france",
+   "english": 4,
+   "words": 565,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/stone-houses-in-greece",
+   "english": 4,
+   "words": 732,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/cabins-and-cottages",
+   "english": 5,
+   "words": 2013,
+   "hits": [
+    "and",
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/cabins-and-cottages-in-spain",
+   "english": 4,
+   "words": 689,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/cabins-and-cottages-in-italy",
+   "english": 4,
+   "words": 571,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/cabins-and-cottages-in-united-states",
+   "english": 4,
+   "words": 753,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/cabins-and-cottages-in-denmark",
+   "english": 4,
+   "words": 563,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/cabins-and-cottages-in-sweden",
+   "english": 4,
+   "words": 804,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/cabins-and-cottages-in-japan",
+   "english": 4,
+   "words": 760,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/cabins-and-cottages-in-switzerland",
+   "english": 34,
+   "words": 649,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated",
+    "tax",
+    "to",
+    "on",
+    "the",
+    "notary",
+    "and",
+    "about",
+    "to"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/cabins-and-cottages-in-canada",
+   "english": 4,
+   "words": 551,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/with-a-terrace",
+   "english": 6,
+   "words": 2112,
+   "hits": [
+    "homes",
+    "with",
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-spain",
+   "english": 4,
+   "words": 1873,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-italy",
+   "english": 4,
+   "words": 1638,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-united-states",
+   "english": 4,
+   "words": 1157,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-denmark",
+   "english": 4,
+   "words": 875,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-sweden",
+   "english": 4,
+   "words": 681,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-france",
+   "english": 4,
+   "words": 755,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-japan",
+   "english": 4,
+   "words": 553,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-poland",
+   "english": 46,
+   "words": 865,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated",
+    "tax",
+    "on",
+    "notary",
+    "about",
+    "to",
+    "fees",
+    "the",
+    "buyer"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-germany",
+   "english": 4,
+   "words": 683,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-netherlands",
+   "english": 48,
+   "words": 1036,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated",
+    "tax",
+    "on",
+    "home",
+    "you",
+    "will",
+    "in",
+    "for",
+    "buyers"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-greece",
+   "english": 4,
+   "words": 833,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-switzerland",
+   "english": 34,
+   "words": 580,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated",
+    "tax",
+    "to",
+    "on",
+    "the",
+    "notary",
+    "and",
+    "about",
+    "to"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/with-a-terrace-in-bulgaria",
+   "english": 4,
+   "words": 697,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/village-houses",
+   "english": 6,
+   "words": 2192,
+   "hits": [
+    "homes",
+    "in",
+    "from",
+    "Checked",
+    "by",
+    "updated"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/village-houses-in-spain",
+   "english": 5,
+   "words": 1813,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated",
+    "in"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/village-houses-in-italy",
+   "english": 5,
+   "words": 1857,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated",
+    "in"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/village-houses-in-united-states",
+   "english": 6,
+   "words": 1204,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated",
+    "in",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/village-houses-in-denmark",
+   "english": 5,
+   "words": 1672,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated",
+    "in"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/village-houses-in-sweden",
+   "english": 5,
+   "words": 1269,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated",
+    "in"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/village-houses-in-france",
+   "english": 5,
+   "words": 999,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated",
+    "in"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/village-houses-in-japan",
+   "english": 5,
+   "words": 1252,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated",
+    "in"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/village-houses-in-greece",
+   "english": 5,
+   "words": 595,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated",
+    "in"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/village-houses-in-switzerland",
+   "english": 35,
+   "words": 877,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated",
+    "in",
+    "tax",
+    "to",
+    "on",
+    "the",
+    "notary",
+    "and",
+    "about"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/village-houses-in-mexico",
+   "english": 5,
+   "words": 537,
+   "hits": [
+    "from",
+    "Checked",
+    "by",
+    "updated",
+    "in"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/under-75000-in-poland",
+   "english": 42,
+   "words": 1051,
+   "hits": [
+    "tax",
+    "on",
+    "notary",
+    "about",
+    "to",
+    "fees",
+    "the",
+    "buyer",
+    "to",
+    "some",
+    "listings",
+    "can"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/cheap-houses/under-75000-in-switzerland",
+   "english": 30,
+   "words": 750,
+   "hits": [
+    "tax",
+    "to",
+    "on",
+    "the",
+    "notary",
+    "and",
+    "about",
+    "to",
+    "from",
+    "the",
+    "need",
+    "and"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top",
+   "english": 37,
+   "words": 88,
+   "hits": [
+    "The",
+    "best",
+    "new",
+    "in",
+    "ranked",
+    "by",
+    "price",
+    "and",
+    "then",
+    "by",
+    "buyers",
+    "new"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/how-we-rank",
+   "english": 37,
+   "words": 136,
+   "hits": [
+    "Every",
+    "scores",
+    "from",
+    "to",
+    "price",
+    "and",
+    "listing",
+    "The",
+    "is",
+    "the",
+    "of",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali",
+   "english": 111,
+   "words": 777,
+   "hits": [
+    "Ranked",
+    "by",
+    "score",
+    "from",
+    "price",
+    "price",
+    "and",
+    "then",
+    "buyer",
+    "and",
+    "questions",
+    "from"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/the-springs-jimbaran-bali",
+   "english": 9,
+   "words": 83,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/grey-stone-villa-ungasan-bali",
+   "english": 9,
+   "words": 90,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/the-umalas-signature-bali",
+   "english": 9,
+   "words": 86,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/sunny-village-berawa-bali",
+   "english": 9,
+   "words": 85,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/plagoo-residence-benoa-bali",
+   "english": 9,
+   "words": 95,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/hideaway-villas-uluwatu-bali",
+   "english": 9,
+   "words": 78,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/villa-roma-ubud-bali",
+   "english": 9,
+   "words": 83,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/adva-village-canggu-bali",
+   "english": 9,
+   "words": 83,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/premier-apartments-canggu-bali",
+   "english": 9,
+   "words": 75,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/bellevue-villa-complex-pererenan-bali",
+   "english": 9,
+   "words": 82,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/berawa-week-bali",
+   "english": 9,
+   "words": 91,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/adva-six-stars-north-kuta-bali",
+   "english": 9,
+   "words": 90,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/loyo-villas-tegallalang-bali",
+   "english": 9,
+   "words": 88,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/the-heights-seseh-bali",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/every-bali-ungasan-bali",
+   "english": 9,
+   "words": 101,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/inika-seaside-denpasar-bali",
+   "english": 9,
+   "words": 89,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/gate-11-denpasar-bali",
+   "english": 9,
+   "words": 83,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/royal-arkadia-pecatu-bali",
+   "english": 9,
+   "words": 89,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/lumara-canggu-bali",
+   "english": 9,
+   "words": 78,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/piece-of-paradise-cemagi-bali",
+   "english": 9,
+   "words": 89,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/grand-apartments-pererenan-bali",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/tava-villas-suite-jimbaran-bali",
+   "english": 9,
+   "words": 77,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/predmet-babakan-canggu-bali",
+   "english": 9,
+   "words": 73,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/sem-village-seminyak-bali",
+   "english": 9,
+   "words": 75,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/kerobokan-residence-bali",
+   "english": 9,
+   "words": 82,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/senja-villas-ii-pecatu-bali",
+   "english": 9,
+   "words": 90,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/desa-harmonis-uluwatu-bali",
+   "english": 9,
+   "words": 75,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/casa-amadeo-seminyak-bali",
+   "english": 9,
+   "words": 78,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/ako-villas-north-kuta-bali",
+   "english": 9,
+   "words": 86,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/umalas-green-dream-bali",
+   "english": 9,
+   "words": 78,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/bocoa-jimbaran-bali",
+   "english": 9,
+   "words": 77,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/beraban-luxury-lofts-bali",
+   "english": 9,
+   "words": 94,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/villa-alicante-ubud-bali",
+   "english": 9,
+   "words": 75,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/casita-alas-kerobokan-bali",
+   "english": 9,
+   "words": 74,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/senja-pecatu-bali",
+   "english": 9,
+   "words": 80,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/kiara-ocean-place-north-kuta-bali",
+   "english": 9,
+   "words": 85,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/umah-ubud-bali",
+   "english": 9,
+   "words": 72,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/just-residence-ungasan-bali",
+   "english": 9,
+   "words": 88,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/tao-club-house-pererenan-bali",
+   "english": 9,
+   "words": 78,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/ubud-dream-bali",
+   "english": 9,
+   "words": 81,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/sunset-village-denpasar-bali",
+   "english": 9,
+   "words": 78,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/art-villas-ubud-bali",
+   "english": 12,
+   "words": 86,
+   "hits": [
+    "The",
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "The",
+    "The",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/bingin-palm-residence-bali",
+   "english": 9,
+   "words": 86,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/onyx-beach-hotel-canggu-bali",
+   "english": 9,
+   "words": 75,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/oxo-townhouses-berawa-bali",
+   "english": 9,
+   "words": 79,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/abadi-residence-seminyak-bali",
+   "english": 9,
+   "words": 75,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/bingin-villas-bali",
+   "english": 9,
+   "words": 79,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/vodopad-ubud-bali",
+   "english": 9,
+   "words": 79,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/minori-seminyak-bali",
+   "english": 9,
+   "words": 75,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/suku-residences-ungasan-bali",
+   "english": 9,
+   "words": 82,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/rahya-villas-complex-pandawa-bali",
+   "english": 9,
+   "words": 78,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/mango-village-apartment-pecatu-bali",
+   "english": 9,
+   "words": 89,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/zen-luxury-complex-cemagi-bali",
+   "english": 9,
+   "words": 79,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/zen-ungasan-bali",
+   "english": 9,
+   "words": 76,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/av-complex-7-canggu-bali",
+   "english": 9,
+   "words": 73,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/black-rock-ungasan-bali",
+   "english": 9,
+   "words": 82,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/celest-villas-kerobokan-bali",
+   "english": 9,
+   "words": 90,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/budda-club-house-north-kuta-bali",
+   "english": 9,
+   "words": 78,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/villa-nadi-pererenan-bali",
+   "english": 9,
+   "words": 81,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/umalas-private-suite-bali",
+   "english": 9,
+   "words": 80,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/aster-apartment-canggu-bali",
+   "english": 9,
+   "words": 75,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/xo-project-canggu-bali",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/najaa-padma-ubud-bali",
+   "english": 9,
+   "words": 78,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/pandawa-dream-bali",
+   "english": 9,
+   "words": 81,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/habbi-melasti-residence-bali",
+   "english": 9,
+   "words": 91,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/oxo-townhouses-umalas-bali",
+   "english": 9,
+   "words": 75,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/amandine-luxary-villa-badung-bali",
+   "english": 9,
+   "words": 81,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/sunny-nine-north-kuta-bali",
+   "english": 9,
+   "words": 82,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/savanna-villas-kutuh-bali",
+   "english": 9,
+   "words": 80,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/b25-balangan-bali",
+   "english": 9,
+   "words": 76,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/pandawa-hills-bali",
+   "english": 9,
+   "words": 89,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/melasti-arcade-bali",
+   "english": 9,
+   "words": 82,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/axis-pecatu-bali",
+   "english": 9,
+   "words": 74,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/villa-tove-ungasan-bali",
+   "english": 9,
+   "words": 79,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/earth-villa-canggu-bali",
+   "english": 9,
+   "words": 78,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/dolphinhill-gianyar-bali",
+   "english": 9,
+   "words": 70,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/villa-in-tumbak-bayuh-badung-bali",
+   "english": 9,
+   "words": 92,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/dreamland-feeels-pecatu-bali",
+   "english": 9,
+   "words": 83,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/sunny-ocean-berawa-bali",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/pantai-lima-residense-pererenan-bali",
+   "english": 9,
+   "words": 94,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/indari-by-balix-ubud-bali",
+   "english": 9,
+   "words": 78,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/waits-estate-villas-pecatu-bali",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/temple-heights-north-kuta-bali",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/manta-livin-pecatu-bali",
+   "english": 9,
+   "words": 86,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/natha-loka-north-kuta-bali",
+   "english": 9,
+   "words": 88,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/damara-village-jimbaran-hijau-bali",
+   "english": 9,
+   "words": 78,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/surfside-pecatu-bali",
+   "english": 9,
+   "words": 73,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/marco-villas-pandawa-bali",
+   "english": 9,
+   "words": 81,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/sunny-aparts-ii-canggu-bali",
+   "english": 9,
+   "words": 91,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/oasis-iii-apartments-berawa-bali",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/summerland-villas-seseh-bali",
+   "english": 9,
+   "words": 72,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/vasana-tabanan-bali",
+   "english": 9,
+   "words": 70,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/puri-sidem-tegallalang-bali",
+   "english": 9,
+   "words": 80,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/ten-kutuh-bali",
+   "english": 9,
+   "words": 66,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/nyang-nyang-residence-bali",
+   "english": 9,
+   "words": 86,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/serenity-spring-retreat-cemagi-bali",
+   "english": 9,
+   "words": 75,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/elio-villas-canggu-bali",
+   "english": 9,
+   "words": 86,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/asai-villas-jimbaran-bali",
+   "english": 9,
+   "words": 75,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/the-sand-villas-sanur-bali",
+   "english": 9,
+   "words": 75,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/bali/oasis-ii-canggu-bali",
+   "english": 9,
+   "words": 90,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket",
+   "english": 91,
+   "words": 935,
+   "hits": [
+    "Ranked",
+    "by",
+    "score",
+    "from",
+    "price",
+    "price",
+    "and",
+    "then",
+    "buyer",
+    "and",
+    "questions",
+    "from"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/patong-bay-hill-phuket",
+   "english": 9,
+   "words": 106,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/the-one-nai-harn-phuket",
+   "english": 9,
+   "words": 101,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/vega-condominium-layan-phuket",
+   "english": 9,
+   "words": 77,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/sole-mio-condominium-bang-tao-phuket",
+   "english": 9,
+   "words": 95,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/the-ozone-oasis-condominium-phase-ii-bang-tao-phuket",
+   "english": 9,
+   "words": 110,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/wallaya-residence-nai-harn-rawai-phuket",
+   "english": 9,
+   "words": 91,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/palmetto-condominium-karon-phuket",
+   "english": 9,
+   "words": 98,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/vip-karon-condominium-kata-phuket",
+   "english": 9,
+   "words": 91,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/aristo-1-layan-phuket",
+   "english": 9,
+   "words": 79,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/aileen-residence-bangtao-cherng-talay-phuket",
+   "english": 9,
+   "words": 80,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/lavisco-living-nai-yang-phuket",
+   "english": 9,
+   "words": 88,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/essence-naiharn-hills-phuket",
+   "english": 9,
+   "words": 82,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/aura-condominium-chalong-phuket",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/arise-vibe-thalang-phuket",
+   "english": 9,
+   "words": 81,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/calypso-garden-rawai-phuket",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/zero-bangtao-laguna-phuket",
+   "english": 9,
+   "words": 85,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/rawayana-beachfront-village-rawai-phuket",
+   "english": 9,
+   "words": 91,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/owoh-condo-phase1-laguna-phuket",
+   "english": 9,
+   "words": 88,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/vip-venus-karon-phuket",
+   "english": 9,
+   "words": 85,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/the-regent-bangtao-laguna-phuket",
+   "english": 9,
+   "words": 97,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/the-ozone-signature-condominium-bang-tao-phuket",
+   "english": 9,
+   "words": 104,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/8-atelier-residence-cherng-talay-phuket",
+   "english": 9,
+   "words": 85,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/andaman-atrium-laguna-phuket",
+   "english": 9,
+   "words": 83,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/the-proud-condominium-rawai-phuket",
+   "english": 9,
+   "words": 93,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/above-element-condominium-laguna-phuket",
+   "english": 9,
+   "words": 97,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/atrium-laguna-phuket",
+   "english": 9,
+   "words": 82,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/blue-canyon-heights-nai-yang-phuket",
+   "english": 9,
+   "words": 98,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/wallaya-hill-by-wallaya-villas-kamala-phuket",
+   "english": 9,
+   "words": 82,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/peylaa-phuket-bang-tao-phuket",
+   "english": 9,
+   "words": 100,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/sun-hills-layan-on-layan-beach-thailand-130488-phuket",
+   "english": 9,
+   "words": 91,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/next-point-condominium-naiharn-hills-phuket",
+   "english": 9,
+   "words": 101,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/wekata-3-phuket",
+   "english": 9,
+   "words": 85,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/bellevue-lagoon-bang-tao-phuket",
+   "english": 9,
+   "words": 94,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/bamboo-forest-layan-phuket",
+   "english": 9,
+   "words": 81,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/the-balance-by-the-beach-kata-phuket",
+   "english": 9,
+   "words": 99,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/the-trees-residence-laguna-phuket",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/pu-condo-patong-phuket",
+   "english": 9,
+   "words": 79,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/ever-prime-residences-kata-phuket",
+   "english": 9,
+   "words": 85,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/the-sunny-moon-nai-harn-phuket",
+   "english": 9,
+   "words": 88,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/citygate-condominium-kamala-phuket",
+   "english": 9,
+   "words": 100,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/sun-hills-lakeside-layan-phuket",
+   "english": 9,
+   "words": 80,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/city-life-condominium-patong-phuket",
+   "english": 9,
+   "words": 78,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/aileen-villas-phase-6-nai-thon-phuket",
+   "english": 9,
+   "words": 90,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/botanica-louvre-cherng-talay-phuket",
+   "english": 9,
+   "words": 80,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/citygate-condominium-phase-ii-kamala-phuket",
+   "english": 9,
+   "words": 100,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/babylon-sky-garden-2-rawai-phuket",
+   "english": 9,
+   "words": 93,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/saturdays-residence-naiharn-hills-phuket",
+   "english": 9,
+   "words": 96,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/vinzita-elite-residences-cherng-talay-phuket",
+   "english": 9,
+   "words": 95,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/the-marin-phuket-kamala-phuket",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/botanica-grand-sea-through-naiharn-hills-phuket",
+   "english": 9,
+   "words": 82,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/four-seasons-kamala-phuket",
+   "english": 9,
+   "words": 78,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/the-element-by-anocha-kamala-phuket",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/utopia-loft-nai-harn-phuket",
+   "english": 9,
+   "words": 94,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/tierra-cuatro-layan-phuket",
+   "english": 9,
+   "words": 88,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/sunrise-lake-cherng-talay-phuket",
+   "english": 9,
+   "words": 80,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/sea-theatre-rawai-kata-phuket",
+   "english": 9,
+   "words": 82,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/platinum-bay-kamala-phuket",
+   "english": 9,
+   "words": 90,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/layan-green-park-phuket",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/poetry-villas-bang-tao-phuket",
+   "english": 9,
+   "words": 89,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/ayana-soluna-villas-cherng-talay-phuket",
+   "english": 9,
+   "words": 86,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/surfhouse-residences-layan-phuket",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/the-petit-tycoon-on-surin-beach-thailand-130485-phuket",
+   "english": 9,
+   "words": 90,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/montazure-lakeside-kamala-phuket",
+   "english": 9,
+   "words": 88,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/sunrise-palms-cherng-talay-phuket",
+   "english": 9,
+   "words": 68,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/ayana-heights-seaview-residence-layan-phuket",
+   "english": 9,
+   "words": 93,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/enigma-residence-rawai-phuket",
+   "english": 9,
+   "words": 90,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/bellevue-beachfront-condo-layan-phuket",
+   "english": 9,
+   "words": 91,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/andaman-riviera-laguna-phuket",
+   "english": 9,
+   "words": 93,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/mouana-serenity-cherng-talay-phuket",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/layan-green-park-ii-phuket",
+   "english": 9,
+   "words": 96,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/the-aqua-laguna-phuket",
+   "english": 9,
+   "words": 97,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/vibe-residence-karon-phuket",
+   "english": 9,
+   "words": 81,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/bright-phuket-bang-tao-phuket",
+   "english": 9,
+   "words": 99,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/mgallery-residences-kamala-phuket",
+   "english": 9,
+   "words": 88,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/coral-beach-oceanview-resort-patong-phuket",
+   "english": 9,
+   "words": 96,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/bluepoint-condominiums-patong-phuket",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/vista-del-mar-nai-thon-phuket",
+   "english": 9,
+   "words": 89,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/greenfield-residence-thalang-phuket",
+   "english": 9,
+   "words": 85,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/balini-villas-thalang-phuket",
+   "english": 9,
+   "words": 60,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/twinpalms-residences-kamala-phuket",
+   "english": 9,
+   "words": 88,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/sudara-laguna-phuket",
+   "english": 9,
+   "words": 75,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/isola-sky-layan-phuket",
+   "english": 9,
+   "words": 70,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/aileen-residence-lagoon-bang-tao-phuket",
+   "english": 9,
+   "words": 80,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/avadina-hills-by-anantara-layan-phuket",
+   "english": 9,
+   "words": 70,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/the-trinity-village-cherng-talay-phuket",
+   "english": 9,
+   "words": 77,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/anchan-tropicana-layan-phuket",
+   "english": 9,
+   "words": 63,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/kiara-reserve-residences-layan-phuket",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/wilawan-luxury-villas-layan-phuket",
+   "english": 9,
+   "words": 73,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/grand-view-residences-lagoon-laguna-phuket",
+   "english": 9,
+   "words": 79,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/highland-park-condominium-bangtao-beach-laguna-phuket",
+   "english": 9,
+   "words": 96,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/the-greens-naiharn-hills-phuket",
+   "english": 9,
+   "words": 74,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/phuvista-1-naithon-nai-thon-phuket",
+   "english": 9,
+   "words": 71,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/anchan-indigo-layan-phuket",
+   "english": 9,
+   "words": 63,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/erawana-grand-cherng-talay-phuket",
+   "english": 9,
+   "words": 67,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/phuvista-3-naiyang-nai-yang-phuket",
+   "english": 9,
+   "words": 71,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/villa-qabalah-cherng-talay-phuket",
+   "english": 9,
+   "words": 77,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/sri-panwa-lagoon-laguna-phuket",
+   "english": 9,
+   "words": 82,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/the-regent-villas-pasak-cherng-talay-phuket",
+   "english": 9,
+   "words": 70,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/coco-kamala-phuket",
+   "english": 9,
+   "words": 67,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/phuket/zenithy-luxe-villas-cherng-talay-phuket",
+   "english": 9,
+   "words": 74,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum",
+   "english": 105,
+   "words": 717,
+   "hits": [
+    "Ranked",
+    "by",
+    "score",
+    "from",
+    "price",
+    "price",
+    "and",
+    "then",
+    "buyer",
+    "and",
+    "questions",
+    "from"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/buongiorno-living-residence-aldea-zama-tulum",
+   "english": 9,
+   "words": 90,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/elementus-la-veleta-tulum",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/aldea-savia-region-15-tulum",
+   "english": 9,
+   "words": 83,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/nativa-tulum-region-15-tulum",
+   "english": 9,
+   "words": 83,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/town-center-zam-aldea-zama-tulum",
+   "english": 9,
+   "words": 90,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/casalba-veleta-la-veleta-tulum",
+   "english": 9,
+   "words": 90,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/casalba-alana-region-15-tulum",
+   "english": 9,
+   "words": 86,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/lik-zama-ii-aldea-zama-tulum",
+   "english": 9,
+   "words": 90,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/palma-y-arco-selvazama-tulum",
+   "english": 9,
+   "words": 89,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/saumeria-holistika-tulum",
+   "english": 9,
+   "words": 80,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/co-tulum-holistika-tulum",
+   "english": 9,
+   "words": 83,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/ik-residences-la-veleta-tulum",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/hana-region-15-tulum",
+   "english": 12,
+   "words": 80,
+   "hits": [
+    "listings",
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "listings",
+    "listings",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/xiimbal-la-veleta-tulum",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/the-curve-aldea-zama-tulum",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/baxal-tulum-holistika-tulum",
+   "english": 9,
+   "words": 83,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/regina-black-la-veleta-tulum",
+   "english": 9,
+   "words": 96,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/hideaways-tulum-beach-tulum",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/adhonai-la-veleta-tulum",
+   "english": 9,
+   "words": 90,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/naia-uhm-la-veleta-tulum",
+   "english": 9,
+   "words": 90,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/xamira-ii-la-veleta-tulum",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/akar-la-veleta-tulum",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/antal-tankah-tulum",
+   "english": 9,
+   "words": 80,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/dal-i-la-veleta-tulum",
+   "english": 9,
+   "words": 81,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/hygge-la-veleta-tulum",
+   "english": 9,
+   "words": 90,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/loch-la-veleta-tulum",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/naia-n-ay-la-veleta-tulum",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/k-iin-tulum-la-veleta-tulum",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/natum-tulum-region-15-tulum",
+   "english": 9,
+   "words": 86,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/tierra-selvazama-tulum",
+   "english": 9,
+   "words": 80,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/ulumi-region-15-tulum",
+   "english": 12,
+   "words": 83,
+   "hits": [
+    "AT",
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "AT",
+    "AT",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/okom-selvazama-tulum",
+   "english": 9,
+   "words": 80,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/aukai-holistika-tulum",
+   "english": 9,
+   "words": 83,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/nodo-la-veleta-tulum",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/akua-reserve-aldea-zama-tulum",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/aroma-tulum-centro-tulum",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/ix-tulum-tulum-centro-tulum",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/hunab-residences-by-anah-aldea-zama-tulum",
+   "english": 9,
+   "words": 90,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/beutiful-aldea-zama-tulum",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/bodhi-tulum-selvazama-tulum",
+   "english": 9,
+   "words": 83,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/tson-tulum-la-veleta-tulum",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/lu-um-neen-holistika-tulum",
+   "english": 9,
+   "words": 83,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/f-brica-tulum-la-veleta-tulum",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/hunab-lmnt-aldea-zama-tulum",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/zel-va-la-veleta-tulum",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/yemaya-aldea-zama-tulum",
+   "english": 9,
+   "words": 90,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/zatara-tulum-beach-tulum",
+   "english": 9,
+   "words": 81,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/brahma-aldea-zama-tulum",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/julia-by-dk-selvazama-tulum",
+   "english": 9,
+   "words": 89,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/zen-tulum-la-veleta-tulum",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/cocay-lofts-selvazama-tulum",
+   "english": 9,
+   "words": 86,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/xentum-guardians-selvazama-tulum",
+   "english": 9,
+   "words": 83,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/tuan-aldea-tulum-tulum",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/paramar-black-aldea-zama-tulum",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/solum-aldea-zama-tulum",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/ramia-by-tulum-101-aldea-zama-tulum",
+   "english": 9,
+   "words": 90,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/mizu-selvazama-tulum",
+   "english": 9,
+   "words": 71,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/becan-aldea-zama-tulum",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/amistad-tulum-aldea-zama-tulum",
+   "english": 9,
+   "words": 90,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/itz-selva-selvazama-tulum",
+   "english": 9,
+   "words": 86,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/uxul-aldea-zama-tulum",
+   "english": 9,
+   "words": 81,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/tutuma-holistika-tulum",
+   "english": 9,
+   "words": 68,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/artem-by-dk-tulum-beach-tulum",
+   "english": 9,
+   "words": 93,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/tuk-origen-aldea-tulum-tulum",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/zun-aldea-zama-tulum",
+   "english": 9,
+   "words": 81,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/xiib-kaab-tulum-beach-tulum",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/tanah-slowliving-la-veleta-tulum",
+   "english": 9,
+   "words": 93,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/selva-mbar-selvazama-tulum",
+   "english": 9,
+   "words": 89,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/kitam-tulum-tulum-centro-tulum",
+   "english": 9,
+   "words": 90,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/mistiq-gardens-ii-selvazama-tulum",
+   "english": 9,
+   "words": 86,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/grand-selva-selvazama-tulum",
+   "english": 9,
+   "words": 83,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/cocay-pi-selvazama-tulum",
+   "english": 9,
+   "words": 74,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/no-l-zam-ii-aldea-zama-tulum",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/cautiva-selvazama-tulum",
+   "english": 9,
+   "words": 80,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/karanda-la-veleta-tulum",
+   "english": 9,
+   "words": 81,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/itz-selva-ii-selvazama-tulum",
+   "english": 9,
+   "words": 89,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/irie-aldea-zama-tulum",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/zyanya-la-veleta-tulum",
+   "english": 9,
+   "words": 90,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/elenia-tulum-holistika-tulum",
+   "english": 9,
+   "words": 83,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/mistiq-premium-selvazama-tulum",
+   "english": 9,
+   "words": 83,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/costa-caribe-aldea-zama-tulum",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/aldea-tulum-plus-tulum",
+   "english": 9,
+   "words": 74,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/seremonia-selva-la-veleta-tulum",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/n-mas-la-veleta-tulum",
+   "english": 9,
+   "words": 87,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/nygma-aldea-tulum-tulum",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/casa-chichil-aldea-zama-tulum",
+   "english": 9,
+   "words": 90,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/mirval-tulum-beach-tulum",
+   "english": 9,
+   "words": 90,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/waye-aldea-zama-tulum",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/soul-living-tulum-la-veleta-tulum",
+   "english": 9,
+   "words": 93,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/senzik-tulum-tulum",
+   "english": 9,
+   "words": 80,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/gran-tulum-aldea-zama-tulum",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/zelen-akumal-tulum",
+   "english": 9,
+   "words": 71,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/baikal-residences-akumal-tulum",
+   "english": 9,
+   "words": 83,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/xatum-aldea-zama-tulum",
+   "english": 9,
+   "words": 84,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  },
+  {
+   "url": "https://realhunt.co/top/tulum/green-view-tulum-tulum",
+   "english": 9,
+   "words": 86,
+   "hits": [
+    "Ranked",
+    "in",
+    "the",
+    "new",
+    "builds",
+    "by",
+    "buyers",
+    "See",
+    "the"
+   ]
+  }
+ ]
+}
