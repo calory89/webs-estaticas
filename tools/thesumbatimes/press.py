@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-
 """Press kit for The Sumba Times: /LANG/press/ (what we are, facts about the publication computed from the site,
 how to cite us, boilerplate in three languages, logo downloads, data pages, feeds and contact).
-Wire it with ONE line at the very end of build.py's main block, after assets():
-    import press; press.build(globals())
-Called there, it also adds its URLs to out/sitemap.xml (SITEMAP is exposed in case you prefer add() inside sitemaps()).
-The page carries its own CSS through head(extra=...), so nothing else has to change."""
+Wire it with ONE line in build.py, right after the MODULES = [...] line:
+    import press; MODULES.append(press)
+build.py then calls press.build(globals()), adds SITEMAP to sitemap.xml and CSS to the site stylesheet.
+It also works standalone (import press; press.build(globals()) at the end of the main block): in that case the page
+inlines its own CSS and adds its URLs to out/sitemap.xml itself."""
 import json, os, re, html
 
 BASE = "https://thesumbatimes.com"
@@ -213,7 +214,8 @@ def page(g, l):
           {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
               {"@type": "ListItem", "position": 1, "name": "The Sumba Times", "item": f"{BASE}/{l}/"},
               {"@type": "ListItem", "position": 2, "name": s["title"], "item": url}]}]
-    extra = f"<style>{CSS}</style>" + "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in ld)
+    wired = any(getattr(m, "__name__", "") == __name__ for m in (g.get("MODULES") or []))   # build.py already ships our CSS
+    extra = ("" if wired else f"<style>{CSS}</style>") + "".join(f'<script type="application/ld+json">{json.dumps(x, ensure_ascii=False)}</script>' for x in ld)
     pg = g["head"](l, s["h1"] if "The Sumba Times" in s["h1"] else s["h1"] + " · The Sumba Times", s["desc"], tpl, extra=extra) + g["masthead"](l, tpl)
     pg += f'<main id="main" class="w"><article class="nar prs"><div class="crumbs"><a href="/{l}/">{g["X"][l]["home"]}</a> › {s["title"]}</div>{body}</article></main>' + g["footer"](l)
     g["write"](tpl.format(l=l), pg)
