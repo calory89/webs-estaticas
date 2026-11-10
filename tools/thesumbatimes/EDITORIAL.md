@@ -138,3 +138,8 @@ Read this before writing any story. The build already does the items marked [aut
 98. Log what was published in the coordination file (claude-ops coord).
 99. If the deploy fails, retry once, then leave the story committed and report it.
 100. Once a week, update one older story or guide with new facts ("updated" date) instead of only writing new ones.
+
+## Newsletter and alerts (10 Nov 2026)
+- The Sunday newsletter "Sumba this week" is built automatically from the week's briefs (newsletter.py -> /nl/<lang>/latest.json and the public archive /LANG/newsletter/<year>-w<week>/). The Sunday 06:41 WITA build must be deployed before 07:00 WITA: that is the edition that gets sent.
+- To email an alert to subscribers of a topic, add `"alert": "pasola"` (or travel, culture, business, surf) to the story. Use it only for real news that subscribers asked for (Pasola dates confirmed, a new flight, a ferry suspended). The alert goes out once, within the hour, for 5 days after the story date.
+- Dek = the email preview line. Write deks that make sense on their own.

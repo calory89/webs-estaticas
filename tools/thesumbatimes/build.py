@@ -311,6 +311,12 @@ body{padding-bottom:64px}
 
 THEME_JS = "<script>try{var t=localStorage.getItem('st-theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>"
 
+_CSSH = []
+def css_all(): return CSS + "".join("\n" + getattr(m, "CSS", "") for m in MODULES)
+def css_hash():
+    if not _CSSH:
+        import hashlib; _CSSH.append(hashlib.sha1(css_all().encode()).hexdigest()[:10])
+    return _CSSH[0]
 def head(l, title, desc, path_tpl, og_type="website", extra="", image=None, noindex=False):
     alts = "".join(f'<link rel="alternate" hreflang="{x}" href="{BASE}{P(path_tpl, x)}">' for x in LANGS)
     xdef = "/" if P(path_tpl, "en") == "/en/" else P(path_tpl, "en")
@@ -326,7 +332,7 @@ def head(l, title, desc, path_tpl, og_type="website", extra="", image=None, noin
 <link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="manifest" href="/manifest.webmanifest">
 <link rel="alternate" type="application/rss+xml" title="The Sumba Times" href="{BASE}/{l}/feed.xml"><link rel="search" type="application/opensearchdescription+xml" title="The Sumba Times" href="/opensearch.xml">
 <link rel="preload" href="/fonts/cormorant-garamond-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin><style>@font-face{{font-family:"Cormorant Garamond";font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/cormorant-garamond-latin-700-normal.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}}@font-face{{font-family:"Cormorant Garamond";font-style:normal;font-weight:700;font-display:swap;src:url(/fonts/cormorant-garamond-latin-ext-700-normal.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}}</style>
-{THEME_JS}<style>{CSS}</style>
+{THEME_JS}<link rel="stylesheet" href="/s.{css_hash()}.css">
 <script>(function(c,l,a,r,i,t,y){{c[a]=c[a]||function(){{(c[a].q=c[a].q||[]).push(arguments)}};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);}})(window,document,"clarity","script","{CLARITY}");</script>
 {extra}</head><body><a class="skip" href="#main">{X[l]["skip"]}</a>"""
 
@@ -961,6 +967,7 @@ SW_JS = "const V='tst-v1';\nself.addEventListener('install',e=>{self.skipWaiting
 
 def assets():
     write("/sw.js", SW_JS)
+    write(f"/s.{css_hash()}.css", css_all())
     import shutil
     os.makedirs(os.path.join(OUT, "fonts"), exist_ok=True)
     for fn in os.listdir(os.path.join(os.path.dirname(OUT), "static", "fonts")):
