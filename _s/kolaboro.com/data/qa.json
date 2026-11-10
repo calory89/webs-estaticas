@@ -1,23 +1,23 @@
 {
- "date": "2026-11-05T13:39:32.092Z",
+ "date": "2026-11-10T13:56:17.031Z",
  "ok": false,
- "pages": 215,
- "links": 1187,
+ "pages": 214,
+ "links": 891,
  "checks": [
   {
    "name": "Every page, mobile and desktop",
-   "ok": false,
-   "detail": "215 pages, 1187 internal links checked: 2 problems"
+   "ok": true,
+   "detail": "214 pages, 891 internal links checked: no broken links, JS errors or overflow"
   },
   {
    "name": "Trust Scores reproduced from open code and data",
    "ok": true,
-   "detail": "1016 of 1016 projects recomputed with /open/scoring.py match the published score, confirmed score and tier (dataset sha256 ac7854895ec6\u2026, scoring code sha256 637ecf506205\u2026)"
+   "detail": "1124 of 1124 projects recomputed with /open/scoring.py match the published score, confirmed score and tier (dataset sha256 ceb03e66de59\u2026, scoring code sha256 637ecf506205\u2026)"
   },
   {
    "name": "Speed /",
-   "ok": true,
-   "detail": "589 KB ours, 1749 KB total, loaded in 0.8 s on mobile (budget 700 KB / 2600 KB / 4 s)"
+   "ok": false,
+   "detail": "716 KB ours, 1878 KB total, loaded in 2.1 s on mobile (budget 700 KB / 2600 KB / 4 s)"
   },
   {
    "name": "Accessibility /",
@@ -26,8 +26,8 @@
   },
   {
    "name": "Speed /check",
-   "ok": true,
-   "detail": "488 KB ours, 1646 KB total, loaded in 0.6 s on mobile (budget 700 KB / 2600 KB / 4 s)"
+   "ok": false,
+   "detail": "1012 KB ours, 2172 KB total, loaded in 1.7 s on mobile (budget 700 KB / 2600 KB / 4 s)"
   },
   {
    "name": "Accessibility /check",
@@ -37,7 +37,7 @@
   {
    "name": "Speed /pricing/",
    "ok": true,
-   "detail": "389 KB ours, 1548 KB total, loaded in 0.5 s on mobile (budget 700 KB / 2600 KB / 4 s)"
+   "detail": "498 KB ours, 1659 KB total, loaded in 0.5 s on mobile (budget 700 KB / 2600 KB / 4 s)"
   },
   {
    "name": "Accessibility /pricing/",
@@ -47,7 +47,7 @@
   {
    "name": "Speed /book/",
    "ok": true,
-   "detail": "380 KB ours, 1539 KB total, loaded in 0.5 s on mobile (budget 700 KB / 2600 KB / 4 s)"
+   "detail": "488 KB ours, 1648 KB total, loaded in 0.4 s on mobile (budget 700 KB / 2600 KB / 4 s)"
   },
   {
    "name": "Accessibility /book/",
@@ -56,8 +56,8 @@
   },
   {
    "name": "Speed /database/",
-   "ok": true,
-   "detail": "3419 KB ours, 4577 KB total, loaded in 0.7 s on mobile (budget 3500 KB / 5000 KB / 4 s)"
+   "ok": false,
+   "detail": "3859 KB ours, 5019 KB total, loaded in 0.4 s on mobile (budget 3500 KB / 5000 KB / 4 s)"
   },
   {
    "name": "Accessibility /database/",
@@ -67,7 +67,7 @@
   {
    "name": "Speed /login/",
    "ok": true,
-   "detail": "143 KB ours, 1302 KB total, loaded in 0.4 s on mobile (budget 700 KB / 2600 KB / 4 s)"
+   "detail": "230 KB ours, 1391 KB total, loaded in 0.5 s on mobile (budget 700 KB / 2600 KB / 4 s)"
   },
   {
    "name": "Accessibility /login/",
@@ -77,17 +77,17 @@
   {
    "name": "Speed /status/",
    "ok": false,
-   "detail": "1490 KB ours, 2650 KB total, loaded in 0.6 s on mobile (budget 700 KB / 2600 KB / 4 s)"
+   "detail": "1626 KB ours, 2788 KB total, loaded in 0.6 s on mobile (budget 700 KB / 2600 KB / 4 s)"
   },
   {
    "name": "Accessibility /status/",
-   "ok": false,
-   "detail": "serious issues: scrollable-region-focusable (1)"
+   "ok": true,
+   "detail": "no serious or critical WCAG 2 AA issues found by axe-core"
   },
   {
    "name": "Speed /metrics/",
    "ok": true,
-   "detail": "382 KB ours, 1545 KB total, loaded in 0.5 s on mobile (budget 700 KB / 2600 KB / 4 s)"
+   "detail": "489 KB ours, 1653 KB total, loaded in 0.5 s on mobile (budget 700 KB / 2600 KB / 4 s)"
   },
   {
    "name": "Accessibility /metrics/",
@@ -95,20 +95,5 @@
    "detail": "no serious or critical WCAG 2 AA issues found by axe-core"
   }
  ],
- "problems": [
-  {
-   "page": "/p/DAD-001/",
-   "device": "link",
-   "errors": [
-    "broken link 404"
-   ]
-  },
-  {
-   "page": "/p/SLV-001/",
-   "device": "link",
-   "errors": [
-    "broken link 404"
-   ]
-  }
- ]
+ "problems": []
 }
