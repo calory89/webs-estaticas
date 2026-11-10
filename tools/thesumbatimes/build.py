@@ -35,7 +35,8 @@ ARTICLES = ARTICLES + [g for g in _GUIDES if g["slug"] not in _have]
 
 BASE = "https://thesumbatimes.com"
 INDEXNOW = "7f3c1e9a5b2d4c8e9f0a1b2c3d4e5f60"   # public IndexNow key (served at /<key>.txt)
-import newsletter
+import newsletter, seo_extra
+MODULES = [seo_extra]   # extra page modules: each has build(g) and optional SITEMAP / CSS
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "out")
 CLARITY = "z9xpaay63s"
 SB_URL = "https://oykcsmextclpdnugixqz.supabase.co"
@@ -279,6 +280,8 @@ article p:first-of-type .dl+*{}
 .sa-f button{width:46px;border:0;border-radius:10px;background:#a3271c;color:#fff;font-size:18px;cursor:pointer}.sa-n{margin:0;padding:0 12px 10px;font-size:11.5px;color:var(--muted)}
 @media(max-width:600px){.sa-b span{display:none}.sa-b{padding:13px}.sa-p{right:0;bottom:0;width:100vw;max-width:100vw;height:100dvh;border-radius:0}}
 @media print{.sa{display:none}}
+.tags{margin:18px 0 0;font-family:Inter,Arial,sans-serif;font-size:14px}.tags a{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:5px 11px;margin:4px 4px 0 0;text-decoration:none;color:var(--ink)}.tags a:hover{border-color:var(--accent);color:var(--accent)}
+.pager{display:flex;justify-content:space-between;gap:12px;margin:26px 0;font-family:Inter,Arial,sans-serif}.pager a{border:1px solid var(--line);border-radius:999px;padding:9px 16px;text-decoration:none;color:var(--ink)}
 .pop{position:fixed;inset:0;background:rgba(20,18,15,.55);z-index:90;display:flex;align-items:center;justify-content:center;padding:16px}.pop[hidden]{display:none}
 .pop-b{background:var(--bg);color:var(--ink);max-width:460px;width:100%;padding:26px 24px 18px;border:1px solid var(--ink);position:relative;box-shadow:0 20px 60px rgba(0,0,0,.3)}.pop-b h3{font-size:26px;margin:0 0 8px;line-height:1.15}.pop-b form{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 8px}.pop-b input[type=email]{flex:1;min-width:180px;padding:12px;border:1px solid var(--ink);background:var(--bg);color:var(--ink);font:inherit}.pop-b form button{padding:12px 16px;background:var(--ink);color:var(--bg);border:0;font:inherit;cursor:pointer}
 .pop-x{position:absolute;top:6px;right:8px;border:0;background:none;font-size:26px;line-height:1;cursor:pointer;color:var(--ink);min-width:44px;min-height:44px}.pop-no{border:0;background:none;color:var(--muted);text-decoration:underline;cursor:pointer;font:inherit;font-size:14px;padding:8px 0}
@@ -579,15 +582,19 @@ def article_ld(a, l, url, imgs, grp):
              "containedInPlace": {"@type": "Place", "name": (p.get("area") or "Sumba") + ", Indonesia"}}} for i, p in enumerate(a["places"])]})
     return ld
 
+OGJ = []
 def article_page(a, l):
     u = UI[l]; c = a[l]; x = X[l]
     tpl = paths_of(a)
     url = BASE + tpl[l]
     im = img_of(a)
-    og = f"{BASE}/og/{img_key(a)}.jpg" if im else None
+    og = f"{BASE}/og/{a['slug']}-{l}.jpg" if im else None
+    if im: OGJ.append({"k": f"og/{a['slug']}-{l}.jpg", "src": f"img/{img_key(a)}-1280.webp", "t": c["title"], "fb": img_key(a)})
     imgs = [og, f"{BASE}/img/{img_key(a)}-1280.webp"] if im else [BASE + "/og.png"]
     grp = group_of(a)
     ld = article_ld(a, l, url, imgs, grp)
+    _ds = seo_extra.dataset_ld(a, l, url)
+    if _ds: ld = (ld if isinstance(ld, list) else [ld]) + [_ds]
     extra = f'<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script><meta property="article:published_time" content="{iso(a)}"><meta property="article:section" content="{esc(sec_name(l,grp))}">'
     if a.get("updated"): extra += f'<meta property="article:modified_time" content="{a["updated"]}">'
     kw = (a.get("keywords") or {}).get(l) if isinstance(a.get("keywords"), dict) else a.get("keywords")
@@ -596,7 +603,7 @@ def article_page(a, l):
     srcs = "".join(f'<li><a href="{esc(h)}" rel="nofollow noopener" target="_blank">{esc(t)}</a></li>' for t, h in a.get("sources", []))
     b, toc = with_toc(place_links(fix_links(body_raw(a, l)), a, l), l)
     if a.get("dateline"):
-        b = re.sub(r"^<p>", f'<p><span class="dl">{esc(a["dateline"])} —</span> ', b, count=1)
+        b = re.sub(r"^<p>", f'<p><span class="dl">{esc(a["dateline"])}.</span> ', b, count=1)
     if kind_of(a) != "letter": b = inline_sub(b, l, a)
     top_x, bot_x = extras_html(a, l)
     upd = f'<span>{x["upd"]} <time datetime="{a["updated"]}">{fdate(dict(a, date=a["updated"]), l, False)}</time></span>' if a.get("updated") and a["updated"] != a["date"] else ""
@@ -604,24 +611,32 @@ def article_page(a, l):
     plan_cta = "" if kind_of(a) == "letter" else f'<div class="pcta"><b>{T[l]["plan_cta_t"]}</b> {T[l]["plan_cta_p"]} <a href="/{l}/plan/">{T[l]["plan_cta_b"]} →</a></div>'
     s += f"""<main id="main" class="w"><article class="nar">{crumbs}<p class="k">{badge(a)}{esc(kicker(a,l))}</p>
 <h1>{esc(c["title"])}</h1><p class="dek">{esc(c["dek"])}</p>
-<div class="meta"><span><b>{x["desk"]}</b></span><span>{x["pub"]} <time datetime="{iso(a)}">{fdate(a,l)}</time></span>{upd}<span>{mins(a,l)} {x["min"]}</span></div>
-{picture(a,l,eager=True)}{top_x}{toc}<div class="{"body" if not a.get("dateline") and kind_of(a) != "letter" else "body0"}">{b}</div>{bot_x}{plan_cta}{share(a,l)}
+<div class="meta"><span><b>{x["desk"]}</b></span><span>{x["pub"]} <time datetime="{iso(a)}">{fdate(a,l)}</time></span>{upd}{seo_extra.reviewed_html(globals(), a, l)}<span>{mins(a,l)} {x["min"]}</span></div>
+{picture(a,l,eager=True)}{top_x}{toc}<div class="{"body" if not a.get("dateline") and kind_of(a) != "letter" else "body0"}">{b}</div>{bot_x}{seo_extra.topics_html(a, l)}{plan_cta}{share(a,l)}
 <div class="src"><b>{u["sources"]}</b><ol>{srcs}</ol><p class="corr">{x["corr"]} <a href="mailto:{CONTACT}">{CONTACT}</a>.</p></div>
 <div style="margin-top:26px">{subscribe(l, False, newsletter.topic_of(a), "article-end")}</div></article>{related(a,l)}</main>""" + footer(l)
     write(tpl[l], s)
 
+PAGER = {"en": ("Newer", "Older", "Page"), "es": ("Más recientes", "Anteriores", "Página"), "id": ("Lebih baru", "Sebelumnya", "Halaman")}
 def section_page(sec, l):
-    x = X[l]; tpl = "/{l}/" + sec + "/"
+    x = X[l]; per = 30
     if sec == "guides": items = [a for a in all_items() if kind_of(a) == "guide"]
     elif sec in LEGACY: items = [a for a in all_items() if a["section"] == sec]
     else: items = [a for a in all_items() if group_of(a) == sec]
-    s = head(l, sec_name(l, sec) + " · The Sumba Times", sec_desc(l, sec), tpl) + masthead(l, tpl, GROUP.get(sec, sec))
-    grid = "".join(card(a, l) for a in items) or f'<p>{UI[l]["coming"]}</p>'
-    s += f'<main id="main" class="w"><div class="crumbs"><a href="/{l}/">{x["home"]}</a>' + (f' › <a href="/{l}/{GROUP[sec]}/">{esc(sec_name(l,GROUP[sec]))}</a>' if sec in GROUP else '') + '</div>'
-    s += f'<div class="sec-h"><h1>{esc(sec_name(l,sec))}</h1><p>{esc(sec_desc(l,sec))}</p></div><div class="grid">{grid}</div>'
-    if sec == "low-tide": s += f'<div class="nar">{subscribe(l)}</div>'
-    s += '</main>' + footer(l)
-    write(tpl.format(l=l), s)
+    pages = max(1, -(-len(items) // per)); nw, od, pgn = PAGER[l]
+    for n in range(1, pages + 1):
+        tpl = "/{l}/" + sec + "/" + (f"page/{n}/" if n > 1 else "")
+        pu = lambda k: f"/{l}/{sec}/" + (f"page/{k}/" if k > 1 else "")
+        rel = (f'<link rel="prev" href="{BASE}{pu(n-1)}">' if n > 1 else "") + (f'<link rel="next" href="{BASE}{pu(n+1)}">' if n < pages else "")
+        ttl = sec_name(l, sec) + (f" · {pgn} {n}" if n > 1 else "") + " · The Sumba Times"
+        s = head(l, ttl, sec_desc(l, sec), tpl, extra=rel) + masthead(l, tpl, GROUP.get(sec, sec))
+        grid = "".join(card(a, l) for a in items[(n - 1) * per:n * per]) or f'<p>{UI[l]["coming"]}</p>'
+        s += f'<main id="main" class="w"><div class="crumbs"><a href="/{l}/">{x["home"]}</a>' + (f' › <a href="/{l}/{GROUP[sec]}/">{esc(sec_name(l,GROUP[sec]))}</a>' if sec in GROUP else '') + '</div>'
+        s += f'<div class="sec-h"><h1>{esc(sec_name(l,sec))}' + (f' <small>· {pgn} {n}</small>' if n > 1 else '') + f'</h1><p>{esc(sec_desc(l,sec))}</p></div><div class="grid">{grid}</div>'
+        if pages > 1: s += '<div class="pager">' + (f'<a href="{pu(n-1)}">← {nw}</a>' if n > 1 else '<span></span>') + (f'<a href="{pu(n+1)}">{od} →</a>' if n < pages else '<span></span>') + '</div>'
+        s += f'<div class="nar" style="margin-top:20px">{subscribe(l, False, "business" if sec in ("business", "projects") else ("culture" if sec == "culture" else None), "section")}</div>'
+        s += '</main>' + footer(l)
+        write(tpl.format(l=l), s)
 
 def travel_guides():
     order = ["things-to-do", "getting-here", "culture", "where-to-stay", "travel", "projects", "business", "living"]
@@ -882,6 +897,8 @@ def sitemaps():
     for ed in sorted(glob.glob(os.path.join(OUT, "en", "newsletter", "20*"))): add("/{l}/newsletter/" + os.path.basename(ed) + "/")
     for s in NAV + LEGACY: add("/{l}/" + s + "/", NOW.date().isoformat() if s in ("plan", "guides", "news") else None)
     add("/{l}/about/")
+    for m in MODULES:
+        for t in getattr(m, "SITEMAP", []): add(t, NOW.date().isoformat())
     for a in all_items(): add(paths_of(a), a.get("updated") or a["date"])
     imgs = []
     for a in all_items():
@@ -981,5 +998,7 @@ if __name__ == "__main__":
             if s != "plan": section_page(s, l)
         for a in all_items(): article_page(a, l)
     newsletter.build(globals())
+    for m in MODULES: m.build(globals())
+    write("/_og.json", json.dumps(OGJ, ensure_ascii=False))
     root(); sitemaps(); redirects(); assets()
     n = sum(len(f) for _, _, f in os.walk(OUT)); print("files", n)

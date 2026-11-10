@@ -13,7 +13,10 @@ for root, _, files in os.walk(OUT):
         if p.startswith("/img/"): continue
         if f.endswith(TEXT): F[p] = {"t": open(fp, encoding="utf-8").read()}
         else: F[p] = {"b64": base64.b64encode(open(fp, "rb").read()).decode()}
-JS = "const F=" + json.dumps(F, ensure_ascii=False) + r""";
+OGF = {}
+if "/_og.json" in F:
+    for j in json.loads(F.pop("/_og.json")["t"]): OGF[j["k"][3:]] = j["fb"]
+JS = "const F=" + json.dumps(F, ensure_ascii=False) + ";\nconst OGF=" + json.dumps(OGF) + r""";
 const RD=F['/_redirects.json']?JSON.parse(F['/_redirects.json'].t):{};
 const ES=new Set(['ES','MX','AR','CO','CL','PE','VE','EC','GT','CU','BO','DO','HN','PY','SV','NI','CR','PA','UY','PR','GQ']);
 const BOT=/bot|crawl|spider|slurp|facebookexternalhit|embedly|preview|whatsapp|telegram|lighthouse|headless|gptbot|claude|anthropic|perplexity|google-extended|ccbot|bytespider|applebot|bingpreview/i;
@@ -99,7 +102,7 @@ export default{async fetch(req,env){const u=new URL(req.url);
    return new Response(null,{status:302,headers:Object.assign({'location':'/'+l+'/'+u.search,'cache-control':'private, no-store','vary':'Cookie, Accept-Language'},SEC)});}}
  if(RD[p]||RD[p+'/']){return Response.redirect(u.origin+(RD[p]||RD[p+'/'])+u.search,301);}
  if(p.startsWith('/pdf/')){const k=p.slice(1);const v=env.IMG?await env.IMG.get(k,{type:'arrayBuffer'}):null;if(v){return new Response(v,{headers:Object.assign({'content-type':'application/pdf','cache-control':'public, max-age=86400','x-robots-tag':'noindex'},SEC)});}const m=p.match(/-(en|es|id)\.pdf$/);return Response.redirect(u.origin+'/'+(m?m[1]:'en')+'/guide/sumba-7-days/',302);}
- if(p.startsWith('/img/')||p.startsWith('/og/')){const k=p.slice(1);const v=env.IMG?await env.IMG.get(k,{type:'arrayBuffer'}):null;if(v){return new Response(v,{headers:hdr(k.split('.').pop(),'public, max-age=2592000')});}return new Response('Not found',{status:404,headers:hdr('txt','public, max-age=60')});}
+ if(p.startsWith('/img/')||p.startsWith('/og/')){const k=p.slice(1);const v=env.IMG?await env.IMG.get(k,{type:'arrayBuffer'}):null;if(v){return new Response(v,{headers:hdr(k.split('.').pop(),p.startsWith('/og/')?'public, max-age=86400':'public, max-age=2592000')});}const fb=OGF[p.slice(4)];if(fb){const v2=await env.IMG.get('og/'+fb+'.jpg',{type:'arrayBuffer'});if(v2)return new Response(v2,{headers:hdr('jpg','public, max-age=3600')});}return new Response('Not found',{status:404,headers:hdr('txt','public, max-age=60')});}
  if(p.endsWith('/'))p+='index.html';
  if(F[p])return resp(p,200);
  if(!/\.[a-z0-9]{2,12}$/i.test(p)&&F[p+'/index.html']){return Response.redirect(u.origin+u.pathname+'/'+u.search,301);}
