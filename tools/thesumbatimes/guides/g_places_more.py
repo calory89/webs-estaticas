@@ -2312,5 +2312,9 @@ GUIDES = [
 },
 ]
 
-# Real Wikimedia Commons photos verified to exist (filled below).
-IMAGE_CANDIDATES = []
+# Real Wikimedia Commons photos verified to exist (file page and metadata checked via the Wikimedia API, 10 Nov 2026).
+# Only places with a verified photo of THAT place are listed; the others had no suitable landscape photo >=1280 px.
+IMAGE_CANDIDATES = [
+ {"slug": "wunga-village", "commons_file": "File:Rumah_Kampung_Wungga_-_Sumba_Timur.jpg", "license": "CC BY-SA 4.0", "author": "Allwyn Wawyn",
+  "note": "4624x3468, landscape, 3 Aug 2020; described on Commons as 'Wunga Village, East Sumba ... the first village of the Sumbanese'. Check for identifiable people before use."},
+]

@@ -938,3 +938,7 @@ GUIDES = [
 ],
 },
 ]
+
+# No new route-specific Commons photo was verified. The existing images.py key "how-to-get-to-sumba-from-bali"
+# (Tambolaka airport, CC BY-SA 4.0, Davidelit) could be reused via "img_key" if the desk wants one.
+IMAGE_CANDIDATES = []
