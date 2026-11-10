@@ -18,6 +18,7 @@ Today: 561 homes in 18 countries. Updated 2026-11-10.
 - [New builds Top 100](https://realhunt.co/top): Bali, Phuket, Tulum, Batumi, Koh Samui.
 - [Research and guides](https://realhunt.co/blog) and [RSS](https://realhunt.co/blog/rss.xml)
 - [Site map](https://realhunt.co/sitemap)
+- [Full reference text](https://realhunt.co/llms-full.txt): method, costs, guides and every home in one file.
 
 ## Countries
 
