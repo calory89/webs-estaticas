@@ -4,8 +4,156 @@
 WA = "https://www.waingapu.com/"
 BRIEFS = [
 {
+ "section": "projects",
+ "slug": "waingapu-shrimp-farm-nearly-20-percent-built-2028",
+ "date": "2026-11-11",
+ "time": "06:30",
+ "dateline": "WAINGAPU",
+ "kind": "brief",
+ "top": True,
+ "img_key": "waikelo-sape-ferry-reopens",
+ "slugs": {
+  "es": "granja-camarones-waingapu-casi-20-por-ciento-obra-2028",
+  "id": "tambak-udang-waingapu-hampir-20-persen-beroperasi-2028"
+ },
+ "keywords": {
+  "en": [
+   "Waingapu shrimp farm",
+   "East Sumba shrimp farm",
+   "Sumba integrated shrimp farming",
+   "Rp7.2 trillion Sumba project",
+   "Sumba investment 2026",
+   "Sumba jobs shrimp farm"
+  ],
+  "es": [
+   "granja de camarones Waingapu",
+   "camarones Sumba Oriental",
+   "inversión en Sumba 2026",
+   "proyecto de 7,2 billones de rupias",
+   "empleo en Sumba"
+  ],
+  "id": [
+   "tambak udang Waingapu",
+   "tambak udang terintegrasi Sumba Timur",
+   "investasi Sumba Timur 2026",
+   "proyek Rp7,2 triliun Sumba",
+   "lapangan kerja Sumba Timur"
+  ]
+ },
+ "en": {
+  "title": "Waingapu shrimp farm nearly 20% built, aims to open in 2028",
+  "dek": "The Rp7.2 trillion project in East Sumba is due at 50% in December. The ministry expects construction to end in late 2027 and operations in early 2028.",
+  "answer": "The integrated shrimp farm that Indonesia's Ministry of Marine Affairs and Fisheries (KKP) is building at Waingapu, East Sumba, was close to 20% complete in early November 2026, CNBC Indonesia reported on 8 November. The ministry wants 50% by December 2026, construction finished by the end of 2027 and operations from early 2028, at a planned 52,800 tonnes of shrimp a year.",
+  "keys": [
+   "CNBC Indonesia reported on 8 November 2026 that construction was close to 20% complete; the target for December 2026 is 50%.",
+   "The contract was shortened from three years to two at the request of President Prabowo Subianto, so building must finish by the end of 2027 and operations start in early 2028.",
+   "The site covers about 2,150 hectares in Pandawai district: 12 clusters, 1,536 culture ponds, 192 reservoir ponds and 48 wastewater treatment units.",
+   "Investment is US$500 million (about Rp7.2 trillion); target output is 52,800 tonnes of shrimp a year at full operation.",
+   "Earlier reports cite about 3,000 local workers to be trained and around 7,000 jobs across the supply chain; none of the new reports covers environmental impact."
+  ],
+  "visitors": "This is an industrial construction site, not a visitor attraction, and none of the reports mentions public access or tours. If you plan to invest, work or stay long term around Waingapu, the project is worth following: it will shape local jobs, transport and the coastline. For sightseeing, nothing changes for now.",
+  "body": "<p>The integrated shrimp farm under construction at Waingapu, East Sumba, is close to 20% complete, according to CNBC Indonesia, which reported on Sunday 8 November 2026 that the Ministry of Marine Affairs and Fisheries (KKP) wants it at 50% by December. The ministry expects construction to finish at the end of 2027 and the farm to start operating in early 2028. Times are WITA (UTC+8).</p><h2>How far along is the Waingapu shrimp farm?</h2><p>Tb Haeru Rahayu, KKP's Director General of Aquaculture, said progress was close to 20% in early November. The 50% target for December is measured by \"material on site\", meaning materials already delivered, and every part of the project is being built at once rather than one cluster after another. \"We build it all at once, so progress is calculated overall,\" he said, in CNBC's translation of his remarks. InvestorTrust had reported 10% physical progress as of 29 July 2026, with more than 300 heavy equipment units on site. The reports do not say whether the two percentages use the same method.</p><p>The original contract ran for three years. CNBC reports that President Prabowo Subianto asked Minister Sakti Wahyu Trenggono to shorten it to two. Haeru said that in that case all construction must be finished by the end of 2027. A shrimp cycle takes about four months from stocking to harvest, so CNBC says the first harvest could come around mid-2028.</p><h2>What is being built in Pandawai district</h2><p>The site covers about 2,150 hectares in Palakahembi village and Watumbaka urban village, in Pandawai district, according to KKP. CNBC lists 12 clusters, 1,536 culture ponds, 192 reservoir ponds and 48 cluster wastewater treatment units, plus a seawater intake, a quarantine area, production roads and processing facilities. KKP calls it roughly 20 times larger than its Kebumen farm in Central Java. Antara reported in April that the land was previously savanna.</p><p>The investment is US$500 million, about Rp7.2 trillion, financed through foreign private credit. Antara breaks it down as Rp6.1 trillion in foreign loans and Rp1.1 trillion in counterpart rupiah funds. At full operation the farm is meant to produce about 52,800 tonnes of shrimp a year, from two to 2.5 cycles annually.</p><h2>Jobs and local hiring</h2><p>KKP opened online recruitment for 3,000 local workers on 10 February 2026, with free training. In April, Nyoman Radiarta, who heads KKP's human resources agency, said the classes would last 12 to 16 months. On 2 September, Muhammad Qodari, head of the Government Communication Agency, said the project is projected to absorb about 7,000 workers across its industrial chain, which InvestorTrust says includes hatcheries, feed mills, cold storage and ice factories. Arif Maramba, head of Palakahembi village, called the project a \"new economic engine\" in KKP's press release.</p><h2>What it means</h2><p>The farm is an industrial project, not a tourism one, but it will shape the <a href=\"/en/places/east-sumba-regency/\">East Sumba</a> economy, labour market and coastline around <a href=\"/en/places/waingapu-town/\">Waingapu</a> for years. If it works as planned, it could increase demand for housing, transport and services; that is our reading, not a claim in the reports. The CNBC report does not address environmental impact or effects on neighbouring communities, and KKP's press release mentions only a wastewater treatment plant, greening and good aquaculture practices. We will report on those points when they are published. For other large works on the island, see <a href=\"/en/projects/what-is-being-built-in-sumba/\">what is being built in Sumba</a>.</p>",
+  "faq": [
+   [
+    "When will the Waingapu shrimp farm start operating?",
+    "KKP aims to finish construction by the end of 2027 and begin operations in early 2028, CNBC Indonesia reported on 8 November 2026. Some earlier reports said a few units might start in 2027."
+   ],
+   [
+    "How big is the Waingapu shrimp farm?",
+    "About 2,150 hectares in Pandawai district, East Sumba, with 1,536 culture ponds, and a planned output of 52,800 tonnes of shrimp a year, according to KKP and CNBC."
+   ],
+   [
+    "How many jobs will the Waingapu shrimp farm create?",
+    "KKP has recruited 3,000 local workers for training, and the government projects about 7,000 jobs across the industrial chain."
+   ]
+  ]
+ },
+ "es": {
+  "title": "La granja de camarones de Waingapu alcanza casi el 20% de obra",
+  "dek": "El proyecto de 7,2 billones de rupias en Sumba Oriental aspira al 50% en diciembre. La obra acabaría en 2027 y la actividad empezaría en 2028.",
+  "answer": "La granja integrada de camarones que construye el Ministerio de Asuntos Marítimos y Pesca (KKP) en Waingapu, en Sumba Oriental, estaba cerca del 20% de obra a principios de noviembre de 2026, según informó CNBC Indonesia el 8 de noviembre. El ministerio quiere llegar al 50% en diciembre, terminar la construcción a finales de 2027 y empezar a operar a principios de 2028, con una producción prevista de 52.800 toneladas de camarón al año.",
+  "keys": [
+   "CNBC Indonesia informó el 8 de noviembre de 2026 de que la obra va por casi el 20%; el objetivo para diciembre de 2026 es el 50%.",
+   "El plazo del contrato se acortó de tres años a dos a petición del presidente Prabowo Subianto: la obra debe acabar a finales de 2027 y la actividad empezar a principios de 2028.",
+   "El recinto ocupa unas 2.150 hectáreas en el distrito de Pandawai: 12 clústeres, 1.536 estanques de cultivo, 192 estanques de reserva y 48 unidades de depuración.",
+   "La inversión es de 500 millones de dólares (unos 7,2 billones de rupias); la producción prevista es de 52.800 toneladas de camarón al año.",
+   "Informaciones anteriores hablan de unos 3.000 trabajadores locales en formación y unos 7.000 empleos en toda la cadena; las nuevas crónicas no abordan el impacto ambiental."
+  ],
+  "visitors": "Es una obra industrial, no un reclamo turístico, y ninguna de las crónicas menciona visitas ni acceso público. Si piensas invertir, trabajar o vivir una temporada en los alrededores de Waingapu, conviene seguir el proyecto: influirá en el empleo, el transporte y el litoral. Para quien viaja de turismo, de momento no cambia nada.",
+  "body": "<p>La granja integrada de camarones que se construye en Waingapu, en Sumba Oriental, lleva casi un 20% de obra, según CNBC Indonesia, que informó el domingo 8 de noviembre de 2026 de que el Ministerio de Asuntos Marítimos y Pesca (KKP) quiere alcanzar el 50% en diciembre. El ministerio prevé terminar la construcción a finales de 2027 y empezar a operar a principios de 2028. Las horas son WITA (UTC+8).</p><h2>¿Cuánto falta para terminar la granja de camarones de Waingapu?</h2><p>Tb Haeru Rahayu, director general de Acuicultura del KKP, explicó que el avance rondaba el 20% a principios de noviembre. El objetivo del 50% para diciembre se mide por «material en obra», es decir, los materiales ya entregados, y todas las partes del proyecto se construyen a la vez, no un clúster tras otro. «Lo construimos todo a la vez, así que el avance se calcula en conjunto», dijo, según la traducción de CNBC. InvestorTrust había informado de un avance físico del 10% al 29 de julio de 2026, con más de 300 máquinas pesadas en el terreno. Las crónicas no aclaran si ambos porcentajes se calculan con el mismo método.</p><p>El contrato original era de tres años. Según CNBC, el presidente Prabowo Subianto pidió al ministro Sakti Wahyu Trenggono que lo redujera a dos. Haeru indicó que, en ese caso, toda la construcción tiene que estar terminada a finales de 2027. Un ciclo de cultivo dura unos cuatro meses, de la siembra a la cosecha, de modo que la primera cosecha podría llegar hacia mediados de 2028, según CNBC.</p><h2>Qué se construye en el distrito de Pandawai</h2><p>El recinto ocupa unas 2.150 hectáreas entre la aldea de Palakahembi y el barrio urbano de Watumbaka, en el distrito de Pandawai, según el KKP. CNBC enumera 12 clústeres, 1.536 estanques de cultivo, 192 estanques de reserva y 48 unidades de depuración por clúster, además de una toma de agua de mar, una zona de cuarentena, caminos de producción e instalaciones de procesado. El KKP la describe como unas 20 veces mayor que su granja de Kebumen, en Java Central. Antara informó en abril de que los terrenos eran antes sabana.</p><p>La inversión es de 500 millones de dólares, unos 7,2 billones de rupias, financiada con crédito privado extranjero. Antara la desglosa en 6,1 billones de rupias de préstamos extranjeros y 1,1 billones de fondos públicos de contrapartida en rupias. Cuando funcione a pleno rendimiento, la granja debe producir unas 52.800 toneladas de camarón al año, con entre dos y dos ciclos y medio al año.</p><h2>Empleo y contratación local</h2><p>El KKP abrió el 10 de febrero de 2026 una convocatoria en línea para 3.000 trabajadores locales, con formación gratuita. En abril, Nyoman Radiarta, responsable de la agencia de recursos humanos del KKP, precisó que las clases durarán entre 12 y 16 meses. El 2 de septiembre, Muhammad Qodari, jefe de la Agencia de Comunicación del Gobierno, dijo que el proyecto empleará a unas 7.000 personas en toda su cadena industrial, que según InvestorTrust incluye criaderos, fábricas de pienso, cámaras frigoríficas y fábricas de hielo. Arif Maramba, jefe de la aldea de Palakahembi, lo calificó de «nuevo motor económico» en el comunicado del KKP.</p><h2>Qué significa</h2><p>La granja es un proyecto industrial, no turístico, pero marcará durante años la economía, el mercado laboral y el litoral de <a href=\"/es/places/east-sumba-regency/\">Sumba Oriental</a> en torno a <a href=\"/es/places/waingapu-town/\">Waingapu</a>. Si sale según lo previsto, podría aumentar la demanda de vivienda, transporte y servicios; es una lectura nuestra, no una afirmación de las crónicas. El reportaje de CNBC no aborda el impacto ambiental ni los efectos sobre las comunidades vecinas, y el comunicado del KKP solo menciona una planta de depuración, la reforestación y las buenas prácticas de acuicultura. Informaremos de ello cuando se publique. Para otras obras de gran tamaño en la isla, consulta <a href=\"/es/projects/what-is-being-built-in-sumba/\">qué se está construyendo en Sumba</a>.</p>",
+  "faq": [
+   [
+    "¿Cuándo empezará a funcionar la granja de camarones de Waingapu?",
+    "El KKP prevé terminar la obra a finales de 2027 y empezar a operar a principios de 2028, según informó CNBC Indonesia el 8 de noviembre de 2026. Informaciones anteriores apuntaban a que algunas unidades podrían arrancar en 2027."
+   ],
+   [
+    "¿Qué tamaño tiene la granja de camarones de Waingapu?",
+    "Unas 2.150 hectáreas en el distrito de Pandawai, en Sumba Oriental, con 1.536 estanques de cultivo y una producción prevista de 52.800 toneladas de camarón al año, según el KKP y CNBC."
+   ],
+   [
+    "¿Cuántos empleos creará la granja de camarones de Waingapu?",
+    "El KKP ha convocado a 3.000 trabajadores locales para formarlos, y el Gobierno calcula unos 7.000 empleos en toda la cadena industrial."
+   ]
+  ]
+ },
+ "id": {
+  "title": "Tambak udang Waingapu hampir 20 persen jadi, beroperasi awal 2028",
+  "dek": "Proyek Rp7,2 triliun di Sumba Timur ditargetkan 50 persen pada Desember. KKP memperkirakan konstruksi selesai akhir 2027 dan beroperasi awal 2028.",
+  "answer": "Kawasan tambak udang terintegrasi yang dibangun Kementerian Kelautan dan Perikanan (KKP) di Waingapu, Sumba Timur, hampir 20 persen jadi pada awal November 2026, menurut CNBC Indonesia pada 8 November. KKP menargetkan progres 50 persen pada Desember 2026, konstruksi rampung akhir 2027, dan operasi mulai awal 2028 dengan produksi direncanakan 52.800 ton udang per tahun.",
+  "keys": [
+   "CNBC Indonesia melaporkan pada 8 November 2026 bahwa konstruksi hampir 20 persen; target Desember 2026 adalah 50 persen.",
+   "Masa kontrak dipersingkat dari tiga tahun menjadi dua tahun atas permintaan Presiden Prabowo Subianto, sehingga konstruksi harus rampung akhir 2027 dan operasi dimulai awal 2028.",
+   "Kawasan seluas sekitar 2.150 hektare di Kecamatan Pandawai ini terdiri atas 12 klaster, 1.536 petak tambak budi daya, 192 petak tandon, dan 48 unit pengolahan limbah (IPAL).",
+   "Nilai investasi US$500 juta (sekitar Rp7,2 triliun); target produksi 52.800 ton udang per tahun saat beroperasi penuh.",
+   "Laporan sebelumnya menyebut sekitar 3.000 tenaga kerja lokal dilatih dan sekitar 7.000 lapangan kerja sepanjang rantai industri; laporan terbaru tidak membahas dampak lingkungan."
+  ],
+  "visitors": "Lokasi ini adalah proyek konstruksi industri, bukan objek wisata, dan tidak ada laporan yang menyebut akses publik atau kunjungan. Jika Anda berencana berinvestasi, bekerja, atau tinggal lama di sekitar Waingapu, proyek ini layak diikuti karena akan memengaruhi lapangan kerja, transportasi, dan pesisir. Bagi wisatawan, untuk saat ini tidak ada yang berubah.",
+  "body": "<p>Kawasan tambak udang terintegrasi yang sedang dibangun di Waingapu, Sumba Timur, hampir 20 persen jadi, menurut CNBC Indonesia, yang pada Minggu, 8 November 2026 melaporkan bahwa Kementerian Kelautan dan Perikanan (KKP) menargetkan progres 50 persen pada Desember. KKP memperkirakan konstruksi selesai pada akhir 2027 dan tambak mulai beroperasi pada awal 2028. Semua waktu dalam WITA.</p><h2>Sudah sejauh mana pembangunan tambak udang Waingapu?</h2><p>Direktur Jenderal Perikanan Budi Daya KKP, Tb Haeru Rahayu, menyebut progres mendekati 20 persen pada awal November. Target 50 persen pada Desember diukur dengan Material On Site (MOS), yakni material yang sudah tiba di lokasi, dan seluruh bagian proyek dibangun bersamaan, bukan klaster demi klaster. \"Kita sekaligus membangunnya, jadi progres keseluruhan,\" kata Haeru kepada CNBC Indonesia. InvestorTrust sebelumnya melaporkan progres fisik 10 persen per 29 Juli 2026 dengan lebih dari 300 unit alat berat di lokasi. Laporan-laporan itu tidak menjelaskan apakah kedua angka dihitung dengan metode yang sama.</p><p>Kontrak awal berjangka tiga tahun. Menurut CNBC, Presiden Prabowo Subianto meminta Menteri Kelautan dan Perikanan Sakti Wahyu Trenggono mempersingkatnya menjadi dua tahun. Haeru mengatakan, dengan begitu, akhir 2027 konstruksi harus sudah selesai semua. Satu siklus budi daya udang berlangsung sekitar empat bulan dari tebar hingga panen, sehingga CNBC menyebut panen pertama bisa terjadi sekitar pertengahan 2028.</p><h2>Apa yang dibangun di Kecamatan Pandawai</h2><p>Menurut KKP, kawasan seluas sekitar 2.150 hektare ini berada di Desa Palakahembi dan Kelurahan Watumbaka, Kecamatan Pandawai. CNBC merinci 12 klaster, 1.536 petak tambak budi daya, 192 petak tandon, dan 48 unit IPAL klaster, ditambah saluran masuk air laut, area karantina, jalan produksi, dan fasilitas pengolahan. KKP menyebut kawasan ini sekitar 20 kali lebih besar daripada tambak Kebumen di Jawa Tengah. Antara melaporkan pada April bahwa lahan tersebut sebelumnya berupa savana.</p><p>Nilai investasinya US$500 juta, sekitar Rp7,2 triliun, dengan skema kredit swasta asing. Antara merinci Rp6,1 triliun berasal dari pinjaman luar negeri dan Rp1,1 triliun dari dana rupiah murni pendamping. Pada operasi penuh, tambak ditargetkan menghasilkan sekitar 52.800 ton udang per tahun dengan dua hingga 2,5 siklus setahun.</p><h2>Lapangan kerja dan perekrutan warga lokal</h2><p>KKP membuka pendaftaran daring untuk 3.000 tenaga kerja lokal pada 10 Februari 2026, dengan pelatihan gratis. Pada April, Kepala BPPSDM KP Nyoman Radiarta mengatakan kelas khusus berlangsung 12 hingga 16 bulan. Pada 2 September, Kepala Badan Komunikasi Pemerintah Muhammad Qodari menyebut proyek ini diproyeksikan menyerap sekitar 7.000 tenaga kerja sepanjang rantai industri, yang menurut InvestorTrust mencakup pembenihan, pabrik pakan, gudang pendingin, dan pabrik es. Kepala Desa Palakahembi, Arif Maramba, menyebut proyek ini \"penggerak ekonomi baru\" dalam siaran pers KKP.</p><h2>Apa artinya</h2><p>Tambak ini proyek industri, bukan pariwisata, tetapi akan membentuk perekonomian, pasar kerja, dan pesisir <a href=\"/id/places/east-sumba-regency/\">Sumba Timur</a> di sekitar <a href=\"/id/places/waingapu-town/\">Waingapu</a> selama bertahun-tahun. Jika berjalan sesuai rencana, proyek ini bisa meningkatkan permintaan perumahan, transportasi, dan jasa; itu pembacaan kami, bukan klaim dalam laporan. Laporan CNBC tidak membahas dampak lingkungan atau dampak bagi masyarakat sekitar, dan siaran pers KKP hanya menyebut instalasi pengolahan air limbah, penghijauan, dan praktik budi daya yang baik. Kami akan melaporkannya bila informasinya terbit. Untuk proyek besar lain di pulau ini, baca <a href=\"/id/projects/what-is-being-built-in-sumba/\">apa saja yang sedang dibangun di Sumba</a>.</p>",
+  "faq": [
+   [
+    "Kapan tambak udang Waingapu mulai beroperasi?",
+    "KKP menargetkan konstruksi selesai akhir 2027 dan operasi dimulai awal 2028, menurut CNBC Indonesia pada 8 November 2026. Laporan sebelumnya menyebut sebagian unit mungkin mulai berproduksi pada 2027."
+   ],
+   [
+    "Seberapa luas tambak udang Waingapu?",
+    "Sekitar 2.150 hektare di Kecamatan Pandawai, Sumba Timur, dengan 1.536 petak tambak budi daya dan target produksi 52.800 ton udang per tahun, menurut KKP dan CNBC."
+   ],
+   [
+    "Berapa lapangan kerja yang tercipta dari tambak udang Waingapu?",
+    "KKP membuka pelatihan untuk 3.000 tenaga kerja lokal, dan pemerintah memproyeksikan sekitar 7.000 tenaga kerja sepanjang rantai industri."
+   ]
+  ]
+ },
+ "sources": [
+  [
+   "KKP: KKP Mulai Pembangunan Tambak Udang Terintegrasi di Waingapu (press release, 11 Feb 2026)",
+   "https://kkp.go.id/news/news-detail/kkp-mulai-pembangunan-tambak-udang-terintegrasi-di-waingapu-gnx3.html"
+  ],
+  [
+   "CNBC Indonesia: Trenggono Bangun Tambak Udang Raksasa di NTT, Begini Progresnya (8 Nov 2026)",
+   "https://www.cnbcindonesia.com/news/20261107213133-4-783215/trenggono-bangun-tambak-udang-raksasa-di-ntt-begini-progresnya"
+  ],
+  [
+   "InvestorTrust: Proyek Tambak Udang Terintegrasi Waingapu Senilai Rp 7,2 Triliun Beroperasi 2028, Serap 7.000 Tenaga Kerja (3 Sep 2026)",
+   "https://investortrust.id/business/115050/proyek-tambak-udang-terintegrasi-waingapu-senilai-rp-7-2-triliun-beroperasi-2028-serap-7000-tenaga-kerja"
+  ],
+  [
+   "ANTARA: Tambak udang Waingapu ditargetkan mulai beroperasi tahun depan (1 Apr 2026)",
+   "https://www.antaranews.com/berita/5504485/tambak-udang-waingapu-ditargetkan-mulai-beroperasi-tahun-depan"
+  ],
+  [
+   "ANTARA: KKP pastikan tenaga kerja lokal terlibat dalam tambak udang Waingapu (2 Apr 2026)",
+   "https://www.antaranews.com/berita/5507349/kkp-pastikan-tenaga-kerja-lokal-terlibat-dalam-tambak-udang-waingapu"
+  ],
+  [
+   "ANTARA: KKP buka rekrutmen 3.000 tenaga kerja dukung tambak udang di Waingapu (11 Feb 2026)",
+   "https://jogja.antaranews.com/berita/804642/kkp-buka-rekrutmen-3000-tenaga-kerja-dukung-tambak-udang-di-waingapu"
+  ]
+ ]
+},
+{
  "section": "living", "slug": "waingapu-fuel-queues-continue-202-motorbikes-seized", "date": "2026-11-10", "time": "07:00",
- "dateline": "WAINGAPU", "kind": "brief", "top": True,
+ "dateline": "WAINGAPU", "kind": "brief",
  "img_key": "pertamina-fuel-shipment-sumba-queues",
  "slugs": {"es": "colas-gasolina-waingapu-policia-devuelve-202-motos", "id": "antrean-bbm-waingapu-polisi-kembalikan-202-motor"},
  "keywords": {
