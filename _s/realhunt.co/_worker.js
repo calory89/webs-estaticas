@@ -72,12 +72,17 @@ async function pages(req, env, u) {
   }
   if (r.status >= 300 && r.status < 400) { const l = new URL(r.headers.get('location') || '/', u); const h = new Headers(r.headers); h.set('location', (l.origin === u.origin ? '' : l.origin) + l.pathname + l.search); return new Response(null, { status: r.status, headers: h }); }
   if (r.status === 404 && !/\.[a-z0-9]{2,5}$/i.test(u.pathname)) {
-    const s = await asset(env, req, '/');
+    /* rh-es-1 (10 Nov 2026): Spanish app pages without their own file (/es/saved, /es/alerts...) get the Spanish shell, are judged known or not by the path after /es, and no shell carries the front page's hreflang */
+    const isEs = u.pathname === '/es' || u.pathname.startsWith('/es/');
+    let s = isEs ? await asset(env, req, '/es/') : null;
+    if (!s || s.status !== 200) s = await asset(env, req, '/');
     const h = new Headers(s.headers); h.set('x-robots-tag', 'noindex');
     /* rh-404-1 (10 Nov 2026): a path whose first part is no page of the app answers 404 (still with the app, which shows its own not-found page); before, every unknown address answered 200 */
-    const known = RH_KNOWN.has(u.pathname.split('/')[1] || '');
+    const parts = u.pathname.split('/');
+    const known = isEs ? (parts.length < 3 || !parts[2] || RH_KNOWN.has(parts[2])) : RH_KNOWN.has(parts[1] || '');
     return new HTMLRewriter()
       .on('link[rel="canonical"]', { element(e) { e.remove(); } })
+      .on('link[rel="alternate"][hreflang]', { element(e) { e.remove(); } })
       .on('meta[name="robots"]', { element(e) { e.setAttribute('content', 'noindex, follow'); } })
       .on('meta[property="og:url"]', { element(e) { e.setAttribute('content', 'https://realhunt.co' + u.pathname); } })
       .on('#rh-home-static', { element(e) { e.remove(); } })
