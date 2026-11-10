@@ -32,7 +32,7 @@ Images live in Workers KV namespace `thesumbatimes-img` (id f0aa5acc53a44f3194e7
 The old Composio route (CLOUDFLARE_MCP_EXECUTE) does NOT work: that connection was never authorised, so the daily story was written but not published. Publish like this instead:
 1. Add calory89/claude-ops to the session with push access and clone it to /home/claude/claude-ops.
 2. Here: `python3 build.py && python3 check.py --recent && python3 deploy.py` (check.py must report 0 errors) (from a fresh clone of main, so the guides/ and travel.py are included).
-3. `gzip -9 -c worker/index.js > /home/claude/claude-ops/data/thesumbatimes/index.js.gz` and `cp worker/metadata.json /home/claude/claude-ops/data/thesumbatimes/`.
+3. `gzip -9 -c worker/index.js > /home/claude/claude-ops/data/thesumbatimes/index.js.gz` and `cp worker/metadata.json /home/claude/claude-ops/data/thesumbatimes/`. Also `cp out/_og.json /home/claude/claude-ops/data/thesumbatimes/og.json` (the deploy job renders the per-language share images for new headlines).
 4. In claude-ops: write `webs-estaticas <short sha> <UTC time>` to `data/thesumbatimes/BUILD`, append a line `# <UTC time> <what>` to `jobs/tst_deploy.sh` (the push of a job file is what triggers it), commit and push to main.
 5. About a minute later `git pull` and read `out/tst_deploy.txt`: it must say `upload http 200`, `success True` and end with `# exit=0`; it also pings IndexNow. Then check the story on https://thesumbatimes.com/en/.
 New photos for KV: add {slug: commons direct url} to `data/thesumbatimes/images.json` and push `jobs/tst_images.py` (or keep using the img/ upload you already do). Worker secret TST_SECRET (assistant) is kept automatically (metadata keep_bindings).
@@ -43,3 +43,8 @@ New photos for KV: add {slug: commons direct url} to `data/thesumbatimes/images.
 - New pages: `/LANG/plan/` (hub + MapLibre/OpenFreeMap map), `/llms.txt`, `/llms-full.txt`. robots.txt explicitly allows AI crawlers.
 - Worker: `/` redirects by cookie `st_lang` (set when the reader clicks EN/ES/ID), then country (Spanish-speaking countries → /es/, ID → /id/), then Accept-Language, else /en/. Bots are never redirected (they get the language chooser, hreflang x-default).
 - Daily briefs can keep English-only slugs; nothing else changes for the daily task.
+
+## Newsletter, topics and extra modules (10 Nov 2026)
+- `newsletter.py`: "Sumba this week" (landing /LANG/newsletter/, weekly edition + archive, welcome series, alerts, subscription boxes, exit popup, free guide /LANG/guide/sumba-7-days/). Emails are sent by the Supabase function `tst-newsletter` (code in claude-ops data/thesumbatimes/supabase/functions/tst-newsletter; activation steps in data/thesumbatimes/pending/README.md). Until it is activated the forms fall back to the old table `newsletter_subscribers`.
+- Free guide PDF: after build run `python3 make_pdf.py`, copy pdf/*.pdf to claude-ops data/thesumbatimes/pdf/ and touch jobs/tst_pdf.py (uploads to KV, served at /pdf/...).
+- `seo_extra.py`: topic hubs /LANG/topic/<tag>/, Dataset schema, reviewed date. Extra page modules are listed in `MODULES` in build.py (each has build(g), optional SITEMAP and CSS). The stylesheet is one shared file /s.<hash>.css.
