@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 # The Sumba Times v2 generator: newspaper front page, 3 languages (en/es/id), hero photos from Workers KV.
 # python3 build.py -> out/ ; the Worker `thesumbatimes` serves out/ (embedded) and /img/*, /og/* from KV (binding IMG).
-import os, re, json, html, shutil, datetime
+import os, re, json, html, shutil, datetime, glob
 from content import LANGS, UI, ARTICLES, LETTER, stay_table
 try:
     from news_briefs import BRIEFS
@@ -35,6 +35,7 @@ ARTICLES = ARTICLES + [g for g in _GUIDES if g["slug"] not in _have]
 
 BASE = "https://thesumbatimes.com"
 INDEXNOW = "7f3c1e9a5b2d4c8e9f0a1b2c3d4e5f60"   # public IndexNow key (served at /<key>.txt)
+import newsletter
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "out")
 CLARITY = "z9xpaay63s"
 SB_URL = "https://oykcsmextclpdnugixqz.supabase.co"
@@ -278,6 +279,15 @@ article p:first-of-type .dl+*{}
 .sa-f button{width:46px;border:0;border-radius:10px;background:#a3271c;color:#fff;font-size:18px;cursor:pointer}.sa-n{margin:0;padding:0 12px 10px;font-size:11.5px;color:var(--muted)}
 @media(max-width:600px){.sa-b span{display:none}.sa-b{padding:13px}.sa-p{right:0;bottom:0;width:100vw;max-width:100vw;height:100dvh;border-radius:0}}
 @media print{.sa{display:none}}
+.pop{position:fixed;inset:0;background:rgba(20,18,15,.55);z-index:90;display:flex;align-items:center;justify-content:center;padding:16px}.pop[hidden]{display:none}
+.pop-b{background:var(--bg);color:var(--ink);max-width:460px;width:100%;padding:26px 24px 18px;border:1px solid var(--ink);position:relative;box-shadow:0 20px 60px rgba(0,0,0,.3)}.pop-b h3{font-size:26px;margin:0 0 8px;line-height:1.15}.pop-b form{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 8px}.pop-b input[type=email]{flex:1;min-width:180px;padding:12px;border:1px solid var(--ink);background:var(--bg);color:var(--ink);font:inherit}.pop-b form button{padding:12px 16px;background:var(--ink);color:var(--bg);border:0;font:inherit;cursor:pointer}
+.pop-x{position:absolute;top:6px;right:8px;border:0;background:none;font-size:26px;line-height:1;cursor:pointer;color:var(--ink);min-width:44px;min-height:44px}.pop-no{border:0;background:none;color:var(--muted);text-decoration:underline;cursor:pointer;font:inherit;font-size:14px;padding:8px 0}
+.nlg{list-style:none;padding:0;margin:14px 0 22px}.nlg li{padding:9px 0 9px 28px;border-bottom:1px solid var(--line);position:relative}.nlg li:before{content:"✓";position:absolute;left:4px;color:var(--accent);font-weight:700}
+.tpc{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 14px}.tpc label{border:1px solid currentColor;border-radius:999px;padding:8px 13px;cursor:pointer;font-size:15px;display:inline-flex;gap:7px;align-items:center;min-height:40px;font-family:Inter,Arial,sans-serif}.tpc input[type=checkbox]{width:16px!important;height:16px!important;min-height:0!important;padding:0!important;margin:0;flex:none!important;accent-color:var(--accent)}
+.ed h2{font-size:24px;margin:26px 0 8px;border-top:1px solid var(--ink);padding-top:14px}.ed .it{padding:10px 0;border-bottom:1px solid var(--line)}.ed .it h3{margin:0 0 4px;font-size:20px}.ed .it p{margin:0}
+.btnp{display:inline-block;background:var(--accent);color:#fff;padding:13px 20px;text-decoration:none;border-radius:4px;border:0;font:inherit;cursor:pointer}.btnp:hover{opacity:.9;color:#fff}
+@media print{.m,.bar,nav,footer,.sa,.pop,.np,.ticker{display:none!important}body{background:#fff;padding:0}.gpdf h2{break-after:avoid}.gpdf section{break-inside:auto}a{text-decoration:none;color:#000}}
+.gpdf .cover{border:3px double var(--ink);padding:34px 22px;text-align:center;margin:10px 0 26px}.gpdf .cover h1{font-size:44px;margin:8px 0}.gpdf table{width:100%;border-collapse:collapse}.gpdf td,.gpdf th{border-bottom:1px solid var(--line);padding:7px 6px;text-align:left;vertical-align:top}
 .ticker{position:relative;-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent)}
 .bar .tb{border:0;width:36px;justify-content:center;color:var(--ink)}.bar .tb svg{display:block}
 .more{border:1px solid var(--line);border-radius:999px;padding:7px 13px;text-decoration:none;color:var(--ink);margin-right:6px;min-height:36px}.more:hover{border-color:var(--accent);color:var(--accent)}
@@ -327,21 +337,12 @@ def masthead(l, path_tpl, active=None, front=False):
 <nav class="s" aria-label="{esc(sec_name(l,'news'))}"><div class="in">{nav}</div></nav></div>
 <script>function stLang(x){{try{{document.cookie='st_lang='+x+';path=/;max-age=31536000;samesite=lax'}}catch(e){{}}}}function stTheme(){{var d=document.documentElement,c=d.getAttribute('data-theme'),dark=c?c==='dark':matchMedia('(prefers-color-scheme: dark)').matches,n=dark?'light':'dark';d.setAttribute('data-theme',n);try{{localStorage.setItem('st-theme',n)}}catch(e){{}}}}</script>"""
 
-def subscribe(l, inline=False):
-    u = UI[l]
-    cls = "sub in" if inline else "sub"
-    hid = '' if inline else ' id="subscribe"'
-    return f"""<div class="{cls}"{hid}><h3>{u["sub_title"]}</h3><p>{u["sub_text"]}</p>
-<form onsubmit="return stSub(event,this)"><input type="email" name="email" required autocomplete="email" placeholder="{esc(u["sub_ph"])}" aria-label="{esc(u["sub_ph"])}"><button type="submit">{u["sub_btn"]}</button></form>
-<div class="msg" role="status" aria-live="polite"></div><small>{u["privacy"]}</small></div>"""
+def subscribe(l, inline=False, topic=None, src=""):
+    return newsletter.box(l, inline, topic, src)
 
 def sub_js(l):
     u = UI[l]
-    return f"""<script>function stSub(e,f){{e.preventDefault();var m=f.parentNode.querySelector('.msg');var em=f.email.value.trim().toLowerCase();
-fetch('{SB_URL}/rest/v1/newsletter_subscribers',{{method:'POST',headers:{{'apikey':'{SB_ANON}','Authorization':'Bearer {SB_ANON}','Content-Type':'application/json','Prefer':'return=minimal'}},body:JSON.stringify({{email:em,name:'The Sumba Times ({l})'}})}})
-.then(function(r){{if(r.ok||r.status===409){{m.textContent={json.dumps(u["sub_ok"])};f.reset();try{{clarity('event','subscribe')}}catch(_){{}}}}else{{m.textContent={json.dumps(u["sub_err"])}}}}})
-.catch(function(){{m.textContent={json.dumps(u["sub_err"])}}});return false}}
-(function(){{var n=new Date(new Date().toLocaleString('en-US',{{timeZone:'Asia/Makassar'}}));var t=n.getFullYear()+'-'+('0'+(n.getMonth()+1)).slice(-2)+'-'+('0'+n.getDate()).slice(-2);
+    return newsletter.popup(l) + newsletter.js(l, SB_URL, SB_ANON) + f"""<script>(function(){{var n=new Date(new Date().toLocaleString('en-US',{{timeZone:'Asia/Makassar'}}));var t=n.getFullYear()+'-'+('0'+(n.getMonth()+1)).slice(-2)+'-'+('0'+n.getDate()).slice(-2);
 try{{var td=document.getElementById('st-today');if(td)td.textContent=new Intl.DateTimeFormat('{l}',{{weekday:'long',day:'numeric',month:'long',year:'numeric',timeZone:'Asia/Makassar'}}).format(new Date())}}catch(e){{}}
 document.querySelectorAll('[data-date]').forEach(function(el){{if(el.getAttribute('data-date')===t){{el.textContent={json.dumps(X[l]["today"])};el.hidden=false}}}})}})();</script>"""
 
@@ -372,7 +373,7 @@ else if(s===503)add('assistant',TX.off+'\n\n→ '+'The Sumba Times | https://the
 def footer(l):
     u = UI[l]; x = X[l]
     links = "".join(f'<a href="/{l}/{s}/">{esc(sec_name(l,s))}</a>' for s in NAV)
-    return f"""<div class="w"><footer><div class="links">{links}</div><p><b>The Sumba Times</b> · <a href="/{l}/about/">{x["about"]}</a> · <a href="/{l}/feed.xml">{x["rss"]}</a> · <a href="mailto:{CONTACT}">{CONTACT}</a><br>
+    return f"""<div class="w"><footer><div class="links">{links}</div><p><b>The Sumba Times</b> · <a href="/{l}/about/">{x["about"]}</a> · <a href="/{l}/newsletter/">{newsletter.S[l]["name"]}</a> · <a href="/{l}/feed.xml">{x["rss"]}</a> · <a href="mailto:{CONTACT}">{CONTACT}</a><br>
 <a href="https://ecobeachcity.com/" rel="noopener">{u["published_by"]}</a>. {u["disclosure"]}<br>© {NOW.year} The Sumba Times</p></footer></div>{sub_js(l)}{assistant(l)}<script>if('serviceWorker' in navigator)addEventListener('load',function(){{navigator.serviceWorker.register('/sw.js').catch(function(){{}})}})</script></body></html>"""
 
 def picture(a, l, sizes="(max-width: 820px) 100vw, 760px", eager=False, cap=True):
@@ -433,10 +434,10 @@ def with_toc(b, l):
     toc = f'<nav class="toc" aria-label="{X[l]["toc"]}"><b>{X[l]["toc"]}</b><ol>' + "".join(f'<li><a href="#{i}">{h}</a></li>' for i, h in zip(ids, hs)) + "</ol></nav>"
     return b2, toc
 
-def inline_sub(b, l):
+def inline_sub(b, l, a=None):
     parts = b.split("</p>")
     if len(parts) < 7: return b
-    return "</p>".join(parts[:3]) + "</p>" + subscribe(l, True) + "</p>".join(parts[3:])
+    return "</p>".join(parts[:3]) + "</p>" + subscribe(l, True, newsletter.topic_of(a), "article") + "</p>".join(parts[3:])
 
 def share(a, l):
     x = X[l]; u = BASE + url_of(a, l); t = a[l]["title"]
@@ -596,7 +597,7 @@ def article_page(a, l):
     b, toc = with_toc(place_links(fix_links(body_raw(a, l)), a, l), l)
     if a.get("dateline"):
         b = re.sub(r"^<p>", f'<p><span class="dl">{esc(a["dateline"])} —</span> ', b, count=1)
-    if kind_of(a) != "letter": b = inline_sub(b, l)
+    if kind_of(a) != "letter": b = inline_sub(b, l, a)
     top_x, bot_x = extras_html(a, l)
     upd = f'<span>{x["upd"]} <time datetime="{a["updated"]}">{fdate(dict(a, date=a["updated"]), l, False)}</time></span>' if a.get("updated") and a["updated"] != a["date"] else ""
     crumbs = f'<div class="crumbs"><a href="/{l}/">{x["home"]}</a> › <a href="/{l}/{grp}/">{esc(sec_name(l,grp))}</a></div>'
@@ -606,7 +607,7 @@ def article_page(a, l):
 <div class="meta"><span><b>{x["desk"]}</b></span><span>{x["pub"]} <time datetime="{iso(a)}">{fdate(a,l)}</time></span>{upd}<span>{mins(a,l)} {x["min"]}</span></div>
 {picture(a,l,eager=True)}{top_x}{toc}<div class="{"body" if not a.get("dateline") and kind_of(a) != "letter" else "body0"}">{b}</div>{bot_x}{plan_cta}{share(a,l)}
 <div class="src"><b>{u["sources"]}</b><ol>{srcs}</ol><p class="corr">{x["corr"]} <a href="mailto:{CONTACT}">{CONTACT}</a>.</p></div>
-<div style="margin-top:26px">{subscribe(l)}</div></article>{related(a,l)}</main>""" + footer(l)
+<div style="margin-top:26px">{subscribe(l, False, newsletter.topic_of(a), "article-end")}</div></article>{related(a,l)}</main>""" + footer(l)
     write(tpl[l], s)
 
 def section_page(sec, l):
@@ -877,6 +878,8 @@ def sitemaps():
         for l in LANGS: urls.append(f"<url><loc>{BASE}{P(tpl, l)}</loc>{lm}{alts}</url>")
     add("/{l}/", NOW.date().isoformat())
     add("/{l}/week/", NOW.date().isoformat())
+    add("/{l}/newsletter/", NOW.date().isoformat())
+    for ed in sorted(glob.glob(os.path.join(OUT, "en", "newsletter", "20*"))): add("/{l}/newsletter/" + os.path.basename(ed) + "/")
     for s in NAV + LEGACY: add("/{l}/" + s + "/", NOW.date().isoformat() if s in ("plan", "guides", "news") else None)
     add("/{l}/about/")
     for a in all_items(): add(paths_of(a), a.get("updated") or a["date"])
@@ -977,5 +980,6 @@ if __name__ == "__main__":
         for s in NAV + LEGACY:
             if s != "plan": section_page(s, l)
         for a in all_items(): article_page(a, l)
+    newsletter.build(globals())
     root(); sitemaps(); redirects(); assets()
     n = sum(len(f) for _, _, f in os.walk(OUT)); print("files", n)

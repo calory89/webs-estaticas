@@ -61,7 +61,33 @@ async function question(req,env){const H=Object.assign({'content-type':'applicat
  const k='q/'+new Date().toISOString()+'-'+Math.random().toString(36).slice(2,8);
  await env.IMG.put(k,JSON.stringify({q,e,lang:['en','es','id'].includes(b.lang)?b.lang:'en',page:String(b.page||'').slice(0,200),country:(req.cf&&req.cf.country)||'',at:new Date().toISOString()}));
  return new Response('{"ok":true}',{headers:H})}
+const NL_URL='https://oykcsmextclpdnugixqz.supabase.co/functions/v1/tst-newsletter';
+async function nlCall(env,op,qs,body){const r=await fetch(NL_URL+'?op='+op+(qs||''),{method:body?'POST':'GET',headers:{'content-type':'application/json','x-tst-nl':env.TST_NL_SECRET},body:body?JSON.stringify(body):undefined});let j={};try{j=await r.json()}catch(e){}return{ok:r.ok,j}}
+async function nl(req,env,u){const H=Object.assign({'content-type':'application/json; charset=utf-8','cache-control':'no-store'},SEC);const op=u.pathname.slice(8);
+ const L=x=>['en','es','id'].includes(x)?x:'en';const go=(to)=>new Response(null,{status:302,headers:Object.assign({'location':to,'cache-control':'no-store'},SEC)});
+ if(!env.TST_NL_SECRET)return new Response('{"error":"off"}',{status:503,headers:H});
+ const t=(u.searchParams.get('t')||'').slice(0,40);
+ try{
+ if(op==='subscribe'){if(req.method!=='POST')return new Response('{}',{status:405,headers:H});
+  const o=req.headers.get('origin')||'';if(o&&!/^https:\/\/(www\.)?thesumbatimes\.com$/.test(o))return new Response('{}',{status:403,headers:H});
+  let b={};try{b=await req.json()}catch(e){return new Response('{}',{status:400,headers:H})}
+  if(b.w)return new Response('{"ok":true}',{headers:H});
+  const ip=req.headers.get('cf-connecting-ip')||'x',d=new Date().toISOString().slice(0,10),kl='nllim/'+d+'/'+ip,c=+(await env.IMG.get(kl))||0;if(c>=6)return new Response('{"error":"limit"}',{status:429,headers:H});
+  await env.IMG.put(kl,String(c+1),{expirationTtl:172800});
+  const r=await nlCall(env,'subscribe','',{email:String(b.email||'').slice(0,200),lang:L(b.lang),topics:Array.isArray(b.topics)?b.topics.slice(0,6):[],src:String(b.src||'').slice(0,80),ref:String(b.ref||'').slice(0,16)});
+  return new Response(JSON.stringify(r.j),{status:r.ok?200:400,headers:H})}
+ if(op==='confirm'){const r=await nlCall(env,'confirm','&t='+t);return go(r.ok?'/'+L(r.j.lang)+'/newsletter/welcome/?ref='+(r.j.ref||''):'/en/newsletter/?e=token')}
+ if(op==='unsub'){const r=await nlCall(env,'unsub','&t='+t,req.method==='POST'?{t}:null);if(req.method==='POST')return new Response('{"ok":true}',{headers:H});return go(r.ok?'/'+L(r.j.lang)+'/newsletter/bye/':'/en/newsletter/?e=token')}
+ if(op==='prefs'){let b=null;if(req.method==='POST'){try{b=await req.json()}catch(e){b={}}b={t,topics:Array.isArray(b.topics)?b.topics.slice(0,6):[],lang:L(b.lang)}}
+  const r=await nlCall(env,'prefs','&t='+t,b);return new Response(JSON.stringify(r.j),{status:r.ok?200:404,headers:H})}
+ if(op==='vote'){const r=await nlCall(env,'vote','&t='+t+'&p='+encodeURIComponent((u.searchParams.get('p')||'').slice(0,40))+'&o='+(parseInt(u.searchParams.get('o'),10)||0));return go('/'+L(r.j.lang)+'/newsletter/?voted=1')}
+ if(op==='results'||op==='count'){const ck='nlc/'+op+'/'+(u.searchParams.get('p')||'').slice(0,40);let v=await env.IMG.get(ck);
+  if(!v){const r=await nlCall(env,op,'&p='+encodeURIComponent((u.searchParams.get('p')||'').slice(0,40)));v=JSON.stringify(r.j);await env.IMG.put(ck,v,{expirationTtl:3600})}
+  return new Response(v,{headers:Object.assign({},H,{'cache-control':'public, max-age=600'})})}
+ }catch(e){return new Response('{"error":"upstream"}',{status:502,headers:H})}
+ return new Response('{}',{status:404,headers:H})}
 export default{async fetch(req,env){const u=new URL(req.url);
+ if(u.pathname.startsWith('/api/nl/'))return nl(req,env,u);
  if(u.pathname==='/api/ask')return ask(req,env);
  if(u.pathname==='/api/question')return question(req,env);
  if(u.hostname.startsWith('www.')){u.hostname=u.hostname.slice(4);return Response.redirect(u.toString(),301);}
@@ -72,6 +98,7 @@ export default{async fetch(req,env){const u=new URL(req.url);
    if(!l){const al=(req.headers.get('accept-language')||'').toLowerCase().slice(0,2);l=al==='es'?'es':(al==='id'||al==='ms')?'id':'en';}
    return new Response(null,{status:302,headers:Object.assign({'location':'/'+l+'/'+u.search,'cache-control':'private, no-store','vary':'Cookie, Accept-Language'},SEC)});}}
  if(RD[p]||RD[p+'/']){return Response.redirect(u.origin+(RD[p]||RD[p+'/'])+u.search,301);}
+ if(p.startsWith('/pdf/')){const k=p.slice(1);const v=env.IMG?await env.IMG.get(k,{type:'arrayBuffer'}):null;if(v){return new Response(v,{headers:Object.assign({'content-type':'application/pdf','cache-control':'public, max-age=86400','x-robots-tag':'noindex'},SEC)});}const m=p.match(/-(en|es|id)\.pdf$/);return Response.redirect(u.origin+'/'+(m?m[1]:'en')+'/guide/sumba-7-days/',302);}
  if(p.startsWith('/img/')||p.startsWith('/og/')){const k=p.slice(1);const v=env.IMG?await env.IMG.get(k,{type:'arrayBuffer'}):null;if(v){return new Response(v,{headers:hdr(k.split('.').pop(),'public, max-age=2592000')});}return new Response('Not found',{status:404,headers:hdr('txt','public, max-age=60')});}
  if(p.endsWith('/'))p+='index.html';
  if(F[p])return resp(p,200);
