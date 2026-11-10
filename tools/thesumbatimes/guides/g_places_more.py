@@ -807,7 +807,7 @@ GUIDES = [
 <ul>
 <li><a href="/en/places/tambolaka-town/">Tambolaka</a>, with its market, the airport and nearby beaches.</li>
 <li><a href="/en/places/waikelo-sawah-waterfall/">Waikelo Sawah waterfall</a>, a cave-fed waterfall among rice fields.</li>
-<li><a href="/en/places/weekuri-lagoon/">Weekuri lagoon</a>, about 1-1.5 hours west.</li>
+<li><a href="/en/places/weekuri-lagoon/">Weekuri lagoon</a>, about 1.5-2 hours west.</li>
 <li><a href="/en/places/southwest-sumba-regency/">Southwest Sumba Regency</a>, our overview of the region.</li>
 </ul>"""
  },
@@ -854,7 +854,7 @@ GUIDES = [
 <ul>
 <li><a href="/es/places/tambolaka-town/">Tambolaka</a>, con su mercado, el aeropuerto y playas cercanas.</li>
 <li><a href="/es/places/waikelo-sawah-waterfall/">La cascada de Waikelo Sawah</a>, que brota de una cueva entre arrozales.</li>
-<li><a href="/es/places/weekuri-lagoon/">La laguna Weekuri</a>, a 1-1,5 horas al oeste.</li>
+<li><a href="/es/places/weekuri-lagoon/">La laguna Weekuri</a>, a 1,5-2 horas al oeste.</li>
 <li><a href="/es/places/southwest-sumba-regency/">La regencia de Sumba Suroccidental</a>, nuestra guía de la zona.</li>
 </ul>"""
  },
@@ -901,7 +901,7 @@ GUIDES = [
 <ul>
 <li><a href="/id/places/tambolaka-town/">Tambolaka</a>, dengan pasar, bandara, dan pantai-pantai di sekitarnya.</li>
 <li><a href="/id/places/waikelo-sawah-waterfall/">Air Terjun Waikelo Sawah</a>, air terjun yang keluar dari gua di tengah sawah.</li>
-<li><a href="/id/places/weekuri-lagoon/">Danau Weekuri</a>, sekitar 1-1,5 jam ke barat.</li>
+<li><a href="/id/places/weekuri-lagoon/">Danau Weekuri</a>, sekitar 1,5-2 jam ke barat.</li>
 <li><a href="/id/places/southwest-sumba-regency/">Kabupaten Sumba Barat Daya</a>, ulasan kami tentang wilayah ini.</li>
 </ul>"""
  },

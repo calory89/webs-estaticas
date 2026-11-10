@@ -5,6 +5,1057 @@
 GUIDES = []
 
 # ---------------------------------------------------------------------------
+# 1) Explained: customary (adat) land in Sumba
+# ---------------------------------------------------------------------------
+
+ADAT_EN = """<p>Drive across East Sumba in the dry season and the land seems to belong to no one: folded hills of pale grass, a line of lontar palms, a few horses, then nothing for kilometres. It is an illusion. Almost every slope, spring and stretch of beach is tied to a clan, a founding ancestor and a set of rules older than the Indonesian state. The stone tombs you pass at the edge of a village are not only graves; they are also a statement about who first opened that land.</p>
+<p><strong>The short answer:</strong> much of Sumba is customary (<em>adat</em>) land, held collectively by clans (<em>kabihu</em>) and governed by their elders rather than by a land certificate. Indonesian law recognises customary law communities, the <em>masyarakat hukum adat</em>, and their communal right over land (<em>hak ulayat</em>), but only a small part of that land has ever been mapped or registered. That gap between custom and paper is the main reason land disputes are common on the island, and it is what every buyer, investor and curious visitor needs to understand first.</p>
+
+<h2>What "masyarakat hukum adat" means</h2>
+<p><em>Masyarakat hukum adat</em> translates as "customary law community": a group bound by descent or territory that still lives by its own customary rules, has its own institutions (elders, ritual leaders, a meeting house) and controls a defined territory. The Indonesian Constitution recognises these communities in Article 18B(2), which says the state recognises and respects customary law communities and their traditional rights "as long as they are still alive" and in line with the development of society and the unitary state. The Basic Agrarian Law of 1960 (UUPA) gives the concept of <em>hak ulayat</em>, the community's authority over the land, water, plants and animals of its territory.</p>
+<p>In 2013 Indonesia's Constitutional Court (ruling 35/PUU-X/2012) went further for forests, ruling that customary forests belong to customary communities and should not be classed as state forest. For land outside forests, the Ministry of Agrarian Affairs and Spatial Planning (ATR/BPN) issued Regulation 14 of 2024 on the administration and registration of <em>ulayat</em> land. According to a Hukumonline report of September 2025, the ministry said it had issued 57 management-right certificates (<em>Hak Pengelolaan</em>, HPL) to 18 customary communities across Indonesia since 2023, covering about 987 hectares. Academics still debate whether giving communities an HPL title strengthens their rights or quietly turns customary land into state-administered land.</p>
+
+<h2>How customary land works in Sumba</h2>
+<p>Sumbanese society is organised in patrilineal clans, the <em>kabihu</em>. Each clan traces itself to a founding ancestor who first obtained the right to settle and work an area, and the clan's senior house keeps that memory alive in ritual. Researchers Jacqueline Vel and Stepanus Makambombu, who studied access to land justice in Sumba, describe the traditional pattern as <em>tana kabihu</em>: clan land where members may farm, gather and graze, and where outsiders need the clan leaders' permission. Over time, rice fields and house plots became "individual adat land", often backed only by village letters or land-tax receipts rather than a certificate.</p>
+<p>Three features matter for anyone looking at a piece of land:</p>
+<ul>
+<li><strong>Rights are layered.</strong> A family may farm a field, the clan may claim the wider territory, and the state may hold it on paper as state land. All three can be "true" at the same time.</li>
+<li><strong>Not everyone speaks for the land.</strong> The same research found that companies and local governments often negotiated mainly with chiefs and landowners, leaving out landless cultivators, women and lower-status families who also depend on the land.</li>
+<li><strong>Debts and pledges move land quietly.</strong> Under customary pledging, a lender can hold a field until a loan is repaid in full, so the person using a plot is not always its owner.</li>
+</ul>
+
+<h2>Why land disputes happen</h2>
+<p>Land on Sumba was long cheap and rarely sold. That changed as roads, airports and tourism made coastal and roadside land valuable. Disputes typically come from a few recurring situations:</p>
+<ul>
+<li><strong>Overlapping claims.</strong> Two clans, or two branches of the same clan, remember the boundaries differently. Without maps, both versions survive.</li>
+<li><strong>Sales by the wrong person.</strong> An individual sells land that the wider clan considers collective, or a sale is made while relatives who also hold rights are absent.</li>
+<li><strong>Old deals, new value.</strong> Land "sold" decades ago for a small sum is contested once a project starts, especially when the original agreement was oral.</li>
+<li><strong>Certificates over customary land.</strong> A certificate issued by the land office can clash with a community's claim that the land was never theirs to sell.</li>
+</ul>
+<p>Disputes are usually settled "within the family" (<em>secara keluarga</em>) by elders, with village heads acting as mediators. Courts handle relatively few cases, partly because, as Vel and Makambombu note, customary norms require whole groups to attend and to be fed, which makes litigation expensive. Sometimes disputes turn violent. In April 2018, during a land survey for a tourism company in Patiala Bawa village, Lamboya district (West Sumba), a resident named Poroduka was killed. The company said it had bought about 50 hectares from residents in 1994 and held building-rights (HGB) certificates; residents said they had never sold the land, according to CNN Indonesia.</p>
+
+<h2>The first communal land certificates</h2>
+<p>A new chapter may be opening. In November 2026 East Sumba's deputy regent, Yonathan Hani, said three customary law communities were applying for communal certificates at the regency land office, and that one file was nearly complete. If issued, it could be the first customary land certificate in East Nusa Tenggara. The process requires a customary institution that is organised and formally recognised, and clearly defined communal rights over its territory. Read our news report: <a href="/en/business/east-sumba-first-customary-land-certificate/">East Sumba could issue NTT's first customary land certificate</a>.</p>
+<p>Communal titles would not end every dispute, but they would put on paper who holds rights over an area, which is exactly what is missing today.</p>
+
+<h2>What it means for buyers and investors</h2>
+<p>If you are thinking of leasing land, building or investing, customary land is the first risk to understand, before price, view or access road. A land certificate checked at the land office (BPN) is essential, but it does not by itself settle customary claims. International law firm DFDL warned in 2026 that on uncertified or customary land backed by village letters or tax receipts, the seller may lack authority and adat or community claims "may be asserted after closing". Practical consequences:</p>
+<ul>
+<li>Ask who the land belongs to in custom, not only on paper, and which clan and elders must agree.</li>
+<li>Make sure the family members and clan representatives with rights are present and sign, not one intermediary.</li>
+<li>Check the history of the plot: earlier sales, pledges, disputes and graves or ritual sites on it.</li>
+<li>Use an independent notary and land deed official (PPAT) and a lawyer who works in the area.</li>
+</ul>
+<p>Our guide to <a href="/en/business/buying-land-property-sumba-foreigner/">buying land or property in Sumba as a foreigner</a> explains the legal titles (Hak Pakai, HGB, PT PMA) and the nominee trap. This page is general information, not legal advice.</p>
+
+<h2>What it means for visitors</h2>
+<p>For travellers, customary land is mostly invisible, but it shapes how you should move around:</p>
+<ul>
+<li><strong>Beaches and fields are not public parks.</strong> A quiet beach may be clan land or sacred ground. Ask before camping, flying a drone or holding a party.</li>
+<li><strong>Small fees are often customary.</strong> A parking charge or contribution at a village or viewpoint usually goes to the landholding community. Pay it with good grace.</li>
+<li><strong>Graves and stones are on purpose.</strong> Megalithic tombs, standing stones and offering sites mark ancestral claims. Never sit on them or move anything.</li>
+<li><strong>Stay out of disputes.</strong> If you see a barricade, a sign reading <em>tanah sengketa</em> (disputed land) or a tense gathering, turn back.</li>
+</ul>
+<p>To understand the belief system behind all this, read our guide to <a href="/en/culture/marapu-ikat-traditional-villages/">Marapu, ikat and traditional villages</a>, and for the island's past, <a href="/en/culture/short-history-of-sumba/">a short history of Sumba</a>.</p>
+
+<h2>Key terms</h2>
+<table>
+<thead><tr><th>Term</th><th>Meaning</th></tr></thead>
+<tbody>
+<tr><td><em>Adat</em></td><td>Custom, customary law</td></tr>
+<tr><td><em>Masyarakat hukum adat</em></td><td>Customary law community recognised by the state</td></tr>
+<tr><td><em>Hak ulayat</em></td><td>A community's collective right over its territory</td></tr>
+<tr><td><em>Kabihu</em></td><td>Sumbanese patrilineal clan</td></tr>
+<tr><td><em>Tanah sengketa</em></td><td>Disputed land</td></tr>
+<tr><td>BPN / ATR</td><td>National Land Agency / Ministry of Agrarian Affairs</td></tr>
+<tr><td>HPL</td><td>Management right, the title now used for some registered customary land</td></tr>
+</tbody>
+</table>"""
+
+ADAT_ES = """<p>Si se cruza Sumba Oriental en la estación seca, la tierra parece no ser de nadie: colinas onduladas de hierba pálida, una hilera de palmeras lontar, algunos caballos y después kilómetros de nada. Es una ilusión. Casi cada ladera, manantial y tramo de playa está ligado a un clan, a un antepasado fundador y a unas normas más antiguas que el propio Estado indonesio. Las tumbas de piedra que se ven a la entrada de los pueblos no son solo sepulturas: también dicen quién abrió primero esa tierra.</p>
+<p><strong>La respuesta corta:</strong> buena parte de Sumba es tierra consuetudinaria (<em>adat</em>), que pertenece de forma colectiva a los clanes (<em>kabihu</em>) y que gobiernan sus ancianos, no un título de propiedad. La ley indonesia reconoce a las comunidades de derecho consuetudinario, las <em>masyarakat hukum adat</em>, y su derecho comunal sobre la tierra (<em>hak ulayat</em>), pero solo una pequeña parte de esas tierras se ha cartografiado o inscrito alguna vez. Esa distancia entre la costumbre y el papel explica que los conflictos por la tierra sean frecuentes en la isla, y es lo primero que debe entender cualquier comprador, inversor o viajero curioso.</p>
+
+<h2>Qué significa "masyarakat hukum adat"</h2>
+<p><em>Masyarakat hukum adat</em> significa "comunidad de derecho consuetudinario": un grupo unido por el linaje o el territorio que sigue viviendo según sus propias normas, tiene instituciones propias (ancianos, autoridades rituales, una casa de reunión) y controla un territorio definido. La Constitución indonesia reconoce a estas comunidades en el artículo 18B(2), según el cual el Estado reconoce y respeta a las comunidades de derecho consuetudinario y sus derechos tradicionales "mientras sigan vivos" y de acuerdo con la evolución de la sociedad y con el Estado unitario. La Ley Agraria Básica de 1960 (UUPA) recoge el concepto de <em>hak ulayat</em>, la autoridad de la comunidad sobre la tierra, el agua, las plantas y los animales de su territorio.</p>
+<p>En 2013 el Tribunal Constitucional (sentencia 35/PUU-X/2012) fue más allá en el caso de los bosques: dictaminó que los bosques consuetudinarios pertenecen a las comunidades y no deben clasificarse como bosque estatal. Para las tierras fuera de los bosques, el Ministerio de Asuntos Agrarios y Ordenación del Territorio (ATR/BPN) aprobó el Reglamento 14 de 2024 sobre la administración y el registro de las tierras <em>ulayat</em>. Según informó Hukumonline en septiembre de 2025, el ministerio había emitido desde 2023 un total de 57 certificados de derecho de gestión (<em>Hak Pengelolaan</em>, HPL) a 18 comunidades de todo el país, con unas 987 hectáreas. Los académicos siguen debatiendo si ese título refuerza los derechos de las comunidades o convierte discretamente la tierra consuetudinaria en tierra administrada por el Estado.</p>
+
+<h2>Cómo funciona la tierra consuetudinaria en Sumba</h2>
+<p>La sociedad de Sumba se organiza en clanes patrilineales, los <em>kabihu</em>. Cada clan desciende de un antepasado fundador que obtuvo el derecho a asentarse y cultivar una zona, y la casa principal del clan mantiene viva esa memoria en los rituales. Los investigadores Jacqueline Vel y Stepanus Makambombu, que estudiaron el acceso a la justicia agraria en Sumba, describen el modelo tradicional como <em>tana kabihu</em>: tierra del clan donde sus miembros pueden cultivar, recolectar y pastorear, y donde los forasteros necesitan el permiso de los jefes. Con el tiempo, los arrozales y los solares de las casas pasaron a ser "tierra adat individual", a menudo respaldada solo por cartas del pueblo o recibos del impuesto sobre la tierra, no por un título.</p>
+<p>Hay tres rasgos que importan a quien se fija en un terreno:</p>
+<ul>
+<li><strong>Los derechos se superponen.</strong> Una familia puede cultivar un campo, el clan reclamar el territorio que lo rodea y el Estado tenerlo inscrito como tierra estatal. Las tres cosas pueden ser "ciertas" a la vez.</li>
+<li><strong>No todos hablan por la tierra.</strong> La misma investigación constató que empresas y gobiernos locales negociaban sobre todo con los jefes y los propietarios, y dejaban fuera a jornaleros sin tierra, mujeres y familias de menor rango que también dependen de ella.</li>
+<li><strong>Deudas y prendas mueven la tierra sin ruido.</strong> Según la costumbre, un prestamista puede quedarse con un campo hasta que se le devuelva todo el préstamo, de modo que quien trabaja una parcela no siempre es su dueño.</li>
+</ul>
+
+<h2>Por qué hay conflictos por la tierra</h2>
+<p>Durante mucho tiempo la tierra en Sumba fue barata y casi nunca se vendía. Eso cambió cuando las carreteras, los aeropuertos y el turismo dieron valor a los terrenos de la costa y junto a las carreteras. Los conflictos suelen surgir de unas pocas situaciones que se repiten:</p>
+<ul>
+<li><strong>Reclamaciones superpuestas.</strong> Dos clanes, o dos ramas del mismo clan, recuerdan los linderos de forma distinta. Sin mapas, ambas versiones sobreviven.</li>
+<li><strong>Ventas hechas por quien no debía.</strong> Una persona vende una tierra que el clan considera colectiva, o la venta se cierra en ausencia de parientes que también tienen derechos.</li>
+<li><strong>Tratos viejos, valor nuevo.</strong> Terrenos "vendidos" hace décadas por poco dinero se disputan en cuanto arranca un proyecto, sobre todo si el acuerdo fue verbal.</li>
+<li><strong>Títulos sobre tierra consuetudinaria.</strong> Un certificado expedido por el catastro puede chocar con una comunidad que sostiene que esa tierra nunca se pudo vender.</li>
+</ul>
+<p>Lo habitual es resolverlos "en familia" (<em>secara keluarga</em>) con los ancianos, y con los jefes de aldea como mediadores. Los tribunales ven relativamente pocos casos, en parte porque, como señalan Vel y Makambombu, la costumbre obliga a que acudan grupos enteros y a darles de comer, lo que encarece mucho un pleito. A veces los conflictos acaban en violencia. En abril de 2018, durante una medición de tierras para una empresa turística en la aldea de Patiala Bawa, distrito de Lamboya (Sumba Occidental), murió un vecino llamado Poroduka. La empresa afirmaba haber comprado unas 50 hectáreas a los vecinos en 1994 y tener certificados de derecho de edificación (HGB); los vecinos aseguraban que nunca las vendieron, según CNN Indonesia.</p>
+
+<h2>Los primeros títulos de tierras comunales</h2>
+<p>Puede que se abra una nueva etapa. En noviembre de 2026 el vicerregente de Sumba Oriental, Yonathan Hani, explicó que tres comunidades de derecho consuetudinario tramitaban certificados comunales en el catastro de la regencia y que uno de los expedientes estaba casi listo. Si se expide, podría ser el primer certificado de tierras consuetudinarias de Nusa Tenggara Oriental. El trámite exige una institución tradicional organizada y reconocida formalmente, y derechos comunales bien definidos sobre su territorio. Lee nuestra noticia: <a href="/es/business/east-sumba-first-customary-land-certificate/">Sumba Oriental podría expedir el primer título de tierras comunales de NTT</a>.</p>
+<p>Los títulos comunales no acabarán con todos los conflictos, pero dejarán por escrito quién tiene derechos sobre cada zona, que es justo lo que hoy falta.</p>
+
+<h2>Qué significa para compradores e inversores</h2>
+<p>Si piensas arrendar un terreno, construir o invertir, la tierra consuetudinaria es el primer riesgo que hay que entender, antes que el precio, las vistas o el camino de acceso. Comprobar el título en el catastro (BPN) es imprescindible, pero eso no resuelve por sí solo las reclamaciones tradicionales. El bufete internacional DFDL advertía en 2026 de que, en tierras sin título o consuetudinarias respaldadas por cartas del pueblo o recibos fiscales, el vendedor puede no tener autoridad y las reclamaciones adat o comunitarias "pueden plantearse después del cierre". En la práctica:</p>
+<ul>
+<li>Pregunta a quién pertenece la tierra según la costumbre, no solo sobre el papel, y qué clan y qué ancianos deben dar su acuerdo.</li>
+<li>Asegúrate de que estén presentes y firmen los familiares y representantes del clan con derechos, no un solo intermediario.</li>
+<li>Revisa la historia de la parcela: ventas anteriores, prendas, conflictos y tumbas o lugares rituales.</li>
+<li>Recurre a un notario y funcionario de escrituras (PPAT) independiente y a un abogado que conozca la zona.</li>
+</ul>
+<p>Nuestra guía sobre <a href="/es/business/buying-land-property-sumba-foreigner/">cómo comprar un terreno o una casa en Sumba siendo extranjero</a> explica los títulos legales (Hak Pakai, HGB, PT PMA) y la trampa del testaferro. Esta página es información general, no asesoramiento jurídico.</p>
+
+<h2>Qué significa para quien viaja</h2>
+<p>Para el viajero, la tierra consuetudinaria es casi invisible, pero condiciona cómo moverse por la isla:</p>
+<ul>
+<li><strong>Playas y campos no son parques públicos.</strong> Una playa tranquila puede ser tierra de un clan o un lugar sagrado. Pregunta antes de acampar, volar un dron o montar una fiesta.</li>
+<li><strong>Las pequeñas tasas suelen ser tradicionales.</strong> Lo que se paga por aparcar o como aportación en un pueblo o un mirador suele ir a la comunidad dueña de la tierra. Págalo de buen grado.</li>
+<li><strong>Tumbas y piedras están ahí por algo.</strong> Las tumbas megalíticas, las piedras erguidas y los lugares de ofrenda señalan derechos ancestrales. No te sientes en ellos ni muevas nada.</li>
+<li><strong>Mantente al margen de los conflictos.</strong> Si ves una barrera, un cartel de <em>tanah sengketa</em> (tierra en litigio) o una reunión tensa, da media vuelta.</li>
+</ul>
+<p>Para entender las creencias que hay detrás, lee nuestra guía sobre <a href="/es/culture/marapu-ikat-traditional-villages/">marapu, ikat y pueblos tradicionales</a>, y para el pasado de la isla, <a href="/es/culture/short-history-of-sumba/">una breve historia de Sumba</a>.</p>
+
+<h2>Términos clave</h2>
+<table>
+<thead><tr><th>Término</th><th>Significado</th></tr></thead>
+<tbody>
+<tr><td><em>Adat</em></td><td>Costumbre, derecho consuetudinario</td></tr>
+<tr><td><em>Masyarakat hukum adat</em></td><td>Comunidad de derecho consuetudinario reconocida por el Estado</td></tr>
+<tr><td><em>Hak ulayat</em></td><td>Derecho colectivo de una comunidad sobre su territorio</td></tr>
+<tr><td><em>Kabihu</em></td><td>Clan patrilineal de Sumba</td></tr>
+<tr><td><em>Tanah sengketa</em></td><td>Tierra en litigio</td></tr>
+<tr><td>BPN / ATR</td><td>Agencia Nacional de Tierras / Ministerio de Asuntos Agrarios</td></tr>
+<tr><td>HPL</td><td>Derecho de gestión, el título que se usa ahora para parte de la tierra consuetudinaria inscrita</td></tr>
+</tbody>
+</table>"""
+
+ADAT_ID = """<p>Melintasi Sumba Timur pada musim kemarau, tanahnya seolah tak bertuan: bukit bergelombang berselimut rumput pucat, sederet pohon lontar, beberapa ekor kuda, lalu kosong berkilo-kilometer. Itu hanya kesan. Hampir setiap lereng, mata air, dan bentangan pantai terikat pada sebuah kabihu, leluhur pendiri, dan aturan yang lebih tua daripada negara Indonesia. Kubur batu di tepi kampung bukan sekadar makam, melainkan juga penanda siapa yang pertama kali membuka tanah itu.</p>
+<p><strong>Jawaban singkat:</strong> sebagian besar tanah di Sumba adalah tanah adat yang dimiliki bersama oleh kabihu (klan) dan diatur para tetua, bukan oleh sertifikat. Hukum Indonesia mengakui masyarakat hukum adat dan hak komunal mereka atas tanah (<em>hak ulayat</em>), tetapi baru sebagian kecil tanah itu yang pernah dipetakan atau didaftarkan. Jurang antara adat dan dokumen inilah penyebab utama sengketa tanah di pulau ini, dan hal pertama yang perlu dipahami pembeli, investor, maupun wisatawan.</p>
+
+<h2>Apa arti masyarakat hukum adat</h2>
+<p>Masyarakat hukum adat adalah kelompok yang terikat oleh garis keturunan atau wilayah, masih hidup menurut aturan adatnya sendiri, memiliki kelembagaan sendiri (tetua, pemimpin ritual, rumah adat), dan menguasai wilayah tertentu. UUD 1945 mengakuinya dalam Pasal 18B ayat (2): negara mengakui dan menghormati kesatuan masyarakat hukum adat beserta hak-hak tradisionalnya "sepanjang masih hidup" dan sesuai dengan perkembangan masyarakat serta prinsip Negara Kesatuan Republik Indonesia. Undang-Undang Pokok Agraria 1960 (UUPA) memuat konsep hak ulayat, yakni kewenangan masyarakat adat atas tanah, air, tumbuhan, dan hewan di wilayahnya.</p>
+<p>Pada 2013 Mahkamah Konstitusi melalui putusan 35/PUU-X/2012 menegaskan bahwa hutan adat adalah milik masyarakat adat dan bukan hutan negara. Untuk tanah di luar kawasan hutan, Kementerian Agraria dan Tata Ruang/Badan Pertanahan Nasional (ATR/BPN) menerbitkan Peraturan Menteri Nomor 14 Tahun 2024 tentang penyelenggaraan administrasi pertanahan dan pendaftaran tanah ulayat. Menurut Hukumonline pada September 2025, kementerian menyebut telah menerbitkan 57 sertifikat Hak Pengelolaan (HPL) untuk 18 masyarakat hukum adat di seluruh Indonesia sejak 2023, dengan luas sekitar 987 hektare. Kalangan akademisi masih berdebat apakah HPL memperkuat hak masyarakat adat atau justru menjadikan tanah ulayat sebagai tanah yang dikelola negara.</p>
+
+<h2>Bagaimana tanah adat bekerja di Sumba</h2>
+<p>Masyarakat Sumba tersusun dalam kabihu, klan patrilineal. Setiap kabihu menelusuri asal-usulnya pada leluhur pendiri yang pertama kali memperoleh hak menetap dan mengolah suatu wilayah, dan rumah besar kabihu menjaga ingatan itu lewat ritual. Peneliti Jacqueline Vel dan Stepanus Makambombu, yang meneliti akses keadilan agraria di Sumba, menggambarkan pola tradisionalnya sebagai <em>tana kabihu</em>: tanah klan tempat anggota boleh berladang, meramu, dan menggembala, sedangkan orang luar harus mendapat izin pemimpin klan. Lambat laun sawah dan pekarangan rumah menjadi "tanah adat perorangan", sering kali hanya berbekal surat keterangan desa atau bukti pajak bumi, bukan sertifikat.</p>
+<p>Ada tiga hal penting bagi siapa pun yang mengincar sebidang tanah:</p>
+<ul>
+<li><strong>Hak bertumpuk.</strong> Sebuah keluarga menggarap ladang, kabihu mengklaim wilayah di sekitarnya, dan negara mencatatnya sebagai tanah negara. Ketiganya bisa sama-sama "benar".</li>
+<li><strong>Tidak semua orang berhak bicara atas tanah.</strong> Penelitian yang sama menemukan perusahaan dan pemerintah daerah kerap hanya bernegosiasi dengan tokoh adat dan pemilik tanah, tanpa melibatkan penggarap tak bertanah, perempuan, dan keluarga berstatus rendah yang juga bergantung pada tanah itu.</li>
+<li><strong>Utang dan gadai memindahkan tanah diam-diam.</strong> Menurut aturan gadai adat, pemberi pinjaman bisa menguasai ladang sampai utang lunas, sehingga penggarap sebidang tanah belum tentu pemiliknya.</li>
+</ul>
+
+<h2>Mengapa sengketa tanah terjadi</h2>
+<p>Lama sekali tanah di Sumba murah dan jarang diperjualbelikan. Keadaan berubah ketika jalan, bandara, dan pariwisata membuat tanah di pesisir dan tepi jalan bernilai tinggi. Sengketa biasanya muncul dari beberapa pola yang berulang:</p>
+<ul>
+<li><strong>Klaim tumpang tindih.</strong> Dua kabihu, atau dua cabang dari kabihu yang sama, mengingat batas tanah secara berbeda. Tanpa peta, kedua versi bertahan.</li>
+<li><strong>Dijual oleh orang yang tidak berhak.</strong> Seseorang menjual tanah yang dianggap milik bersama oleh kabihu, atau transaksi dilakukan tanpa kehadiran kerabat yang juga punya hak.</li>
+<li><strong>Kesepakatan lama, nilai baru.</strong> Tanah yang "dijual" puluhan tahun lalu dengan harga murah digugat begitu proyek dimulai, terutama bila kesepakatannya hanya lisan.</li>
+<li><strong>Sertifikat di atas tanah adat.</strong> Sertifikat dari kantor pertanahan bisa berbenturan dengan klaim masyarakat bahwa tanah itu tak pernah boleh dijual.</li>
+</ul>
+<p>Sengketa umumnya diselesaikan "secara keluarga" oleh para tetua, dengan kepala desa sebagai penengah. Hanya sedikit yang sampai ke pengadilan, antara lain karena, seperti dicatat Vel dan Makambombu, adat mewajibkan seluruh rombongan hadir dan dijamu sehingga berperkara menjadi sangat mahal. Ada kalanya sengketa berujung kekerasan. Pada April 2018, saat pengukuran tanah untuk sebuah perusahaan pariwisata di Desa Patiala Bawa, Kecamatan Lamboya, Sumba Barat, seorang warga bernama Poroduka tewas. Perusahaan mengaku membeli sekitar 50 hektare dari warga pada 1994 dan memegang sertifikat HGB, sedangkan warga menyatakan tidak pernah menjualnya, menurut CNN Indonesia.</p>
+
+<h2>Sertifikat tanah komunal pertama</h2>
+<p>Babak baru mungkin segera dimulai. Pada November 2026 Wakil Bupati Sumba Timur Yonathan Hani menyampaikan bahwa tiga masyarakat hukum adat sedang mengurus sertifikat komunal di Kantor Pertanahan kabupaten dan satu berkas hampir rampung. Jika terbit, itu bisa menjadi sertifikat tanah adat pertama di Nusa Tenggara Timur. Prosesnya menuntut lembaga adat yang tertata dan diakui secara resmi, serta kejelasan hak komunal atas wilayahnya. Baca berita kami: <a href="/id/business/east-sumba-first-customary-land-certificate/">Sumba Timur bisa menerbitkan sertifikat tanah adat pertama di NTT</a>.</p>
+<p>Sertifikat komunal tidak akan mengakhiri semua sengketa, tetapi akan mencatat di atas kertas siapa pemegang hak atas suatu wilayah, sesuatu yang justru belum ada saat ini.</p>
+
+<h2>Apa artinya bagi pembeli dan investor</h2>
+<p>Jika Anda berencana menyewa lahan, membangun, atau berinvestasi, tanah adat adalah risiko pertama yang harus dipahami, sebelum harga, pemandangan, atau akses jalan. Memeriksa sertifikat di kantor pertanahan (BPN) wajib, tetapi itu saja belum menyelesaikan klaim adat. Firma hukum internasional DFDL pada 2026 mengingatkan bahwa pada tanah yang belum bersertifikat atau tanah adat yang hanya berbekal surat desa atau bukti pajak, penjual bisa saja tidak berwenang, dan klaim adat atau komunitas "bisa diajukan setelah transaksi selesai". Dalam praktiknya:</p>
+<ul>
+<li>Tanyakan siapa pemilik tanah menurut adat, bukan hanya menurut dokumen, serta kabihu dan tetua mana yang harus menyetujui.</li>
+<li>Pastikan anggota keluarga dan wakil kabihu yang berhak hadir dan ikut menandatangani, bukan satu perantara saja.</li>
+<li>Telusuri riwayat bidang tanah: penjualan sebelumnya, gadai, sengketa, serta kubur atau tempat ritual di atasnya.</li>
+<li>Gunakan notaris dan PPAT yang independen serta pengacara yang mengenal wilayah tersebut.</li>
+</ul>
+<p>Panduan kami tentang <a href="/id/business/buying-land-property-sumba-foreigner/">membeli tanah atau properti di Sumba bagi warga asing</a> menjelaskan jenis hak (Hak Pakai, HGB, PT PMA) dan jebakan pinjam nama. Halaman ini berisi informasi umum, bukan nasihat hukum.</p>
+
+<h2>Apa artinya bagi wisatawan</h2>
+<p>Bagi wisatawan, tanah adat hampir tak terlihat, tetapi memengaruhi cara Anda bepergian:</p>
+<ul>
+<li><strong>Pantai dan padang bukan taman umum.</strong> Pantai yang sepi bisa jadi tanah kabihu atau tempat keramat. Mintalah izin sebelum berkemah, menerbangkan drone, atau berpesta.</li>
+<li><strong>Pungutan kecil sering bersifat adat.</strong> Uang parkir atau sumbangan di kampung atau tempat wisata biasanya masuk ke masyarakat pemilik tanah. Bayarlah dengan lapang hati.</li>
+<li><strong>Kubur dan batu ada maknanya.</strong> Kubur megalitik, batu tegak, dan tempat sesaji menandai hak leluhur. Jangan duduk di atasnya atau memindahkan apa pun.</li>
+<li><strong>Jangan ikut campur sengketa.</strong> Jika melihat palang, papan bertuliskan "tanah sengketa", atau kerumunan yang tegang, putar balik.</li>
+</ul>
+<p>Untuk memahami kepercayaan di baliknya, baca panduan kami tentang <a href="/id/culture/marapu-ikat-traditional-villages/">Marapu, tenun ikat, dan kampung adat</a>, dan untuk masa lalu pulau ini, <a href="/id/culture/short-history-of-sumba/">sejarah singkat Sumba</a>.</p>
+
+<h2>Istilah penting</h2>
+<table>
+<thead><tr><th>Istilah</th><th>Arti</th></tr></thead>
+<tbody>
+<tr><td>Adat</td><td>Kebiasaan, hukum adat</td></tr>
+<tr><td>Masyarakat hukum adat</td><td>Kesatuan masyarakat adat yang diakui negara</td></tr>
+<tr><td>Hak ulayat</td><td>Hak bersama masyarakat adat atas wilayahnya</td></tr>
+<tr><td>Kabihu</td><td>Klan patrilineal Sumba</td></tr>
+<tr><td>Tanah sengketa</td><td>Tanah yang sedang diperselisihkan</td></tr>
+<tr><td>BPN / ATR</td><td>Badan Pertanahan Nasional / Kementerian Agraria dan Tata Ruang</td></tr>
+<tr><td>HPL</td><td>Hak Pengelolaan, jenis hak yang kini dipakai untuk sebagian tanah ulayat terdaftar</td></tr>
+</tbody>
+</table>"""
+
+GUIDES.append({
+ "section": "culture", "slug": "customary-adat-land-sumba-explained", "date": "2026-11-10", "time": "08:00", "kind": "guide",
+ "slugs": {"es": "tierra-consuetudinaria-adat-en-sumba", "id": "tanah-adat-di-sumba-dijelaskan"},
+ "img_key": "east-sumba-first-customary-land-certificate",
+ "en": {
+  "title": "Customary (adat) land in Sumba explained: clans, rights and disputes",
+  "dek": "Why most of Sumba's land belongs to clans rather than certificates, what masyarakat hukum adat means, and what it changes for buyers and visitors.",
+  "answer": "Much of Sumba is customary (adat) land held collectively by clans (kabihu) and governed by their elders, and Indonesian law recognises these customary law communities (masyarakat hukum adat) and their communal right over land (hak ulayat). Because little of this land is mapped or registered, overlapping claims, sales by people without full authority and old deals revisited when land gains value make disputes common. In November 2026 three East Sumba communities were applying for what could be NTT's first communal land certificate.",
+  "body": ADAT_EN},
+ "es": {
+  "title": "La tierra consuetudinaria (adat) en Sumba: clanes, derechos y conflictos",
+  "dek": "Por qué casi toda la tierra de Sumba pertenece a clanes y no a títulos, qué es una masyarakat hukum adat y qué cambia para compradores y viajeros.",
+  "answer": "Buena parte de Sumba es tierra consuetudinaria (adat) que pertenece de forma colectiva a los clanes (kabihu) y que gobiernan sus ancianos; la ley indonesia reconoce a estas comunidades de derecho consuetudinario (masyarakat hukum adat) y su derecho comunal sobre la tierra (hak ulayat). Como casi nada está cartografiado ni inscrito, las reclamaciones superpuestas, las ventas hechas sin autoridad suficiente y los tratos antiguos que se reabren cuando la tierra se revaloriza hacen frecuentes los conflictos. En noviembre de 2026 tres comunidades de Sumba Oriental tramitaban el que podría ser el primer título de tierras comunales de NTT.",
+  "body": ADAT_ES},
+ "id": {
+  "title": "Tanah adat di Sumba dijelaskan: kabihu, hak ulayat, dan sengketa",
+  "dek": "Mengapa sebagian besar tanah Sumba milik kabihu, bukan sertifikat, apa arti masyarakat hukum adat, dan apa dampaknya bagi pembeli dan wisatawan.",
+  "answer": "Sebagian besar tanah di Sumba adalah tanah adat yang dimiliki bersama oleh kabihu dan diatur para tetua, dan hukum Indonesia mengakui masyarakat hukum adat beserta hak ulayatnya. Karena sedikit sekali yang sudah dipetakan atau didaftarkan, klaim tumpang tindih, penjualan oleh pihak yang tidak sepenuhnya berwenang, dan kesepakatan lama yang digugat ketika harga tanah naik membuat sengketa sering terjadi. Pada November 2026 tiga masyarakat hukum adat di Sumba Timur sedang mengurus sertifikat komunal yang bisa menjadi yang pertama di NTT.",
+  "body": ADAT_ID},
+ "facts": {
+  "en": [
+   ["Legal basis", "Constitution Art. 18B(2); Basic Agrarian Law 1960 (hak ulayat)"],
+   ["Who holds it", "Clans (kabihu), through their elders and senior houses"],
+   ["Registration", "ATR/BPN Regulation 14/2024; 57 HPL titles to 18 communities nationwide (2023-Sep 2025)"],
+   ["Sumba milestone", "Three East Sumba communities applying for communal titles (Nov 2026)"],
+   ["Main dispute causes", "Overlapping claims, sales without full authority, old deals, certificates over adat land"],
+   ["For visitors", "Ask before camping or flying drones; pay customary fees; never touch tombs"]],
+  "es": [
+   ["Base legal", "Constitución, art. 18B(2); Ley Agraria Básica de 1960 (hak ulayat)"],
+   ["Quién la tiene", "Los clanes (kabihu), a través de sus ancianos y casas principales"],
+   ["Registro", "Reglamento ATR/BPN 14/2024; 57 títulos HPL para 18 comunidades en todo el país (2023-sep. 2025)"],
+   ["Hito en Sumba", "Tres comunidades de Sumba Oriental tramitan títulos comunales (nov. 2026)"],
+   ["Causas de conflicto", "Reclamaciones superpuestas, ventas sin autoridad, tratos antiguos, títulos sobre tierra adat"],
+   ["Para viajeros", "Pide permiso para acampar o volar drones; paga las tasas tradicionales; no toques las tumbas"]],
+  "id": [
+   ["Dasar hukum", "UUD 1945 Pasal 18B ayat (2); UUPA 1960 (hak ulayat)"],
+   ["Pemegang hak", "Kabihu, melalui tetua dan rumah besar"],
+   ["Pendaftaran", "Permen ATR/BPN 14/2024; 57 sertifikat HPL untuk 18 masyarakat adat secara nasional (2023-Sep 2025)"],
+   ["Tonggak di Sumba", "Tiga masyarakat hukum adat di Sumba Timur mengurus sertifikat komunal (Nov 2026)"],
+   ["Penyebab sengketa", "Klaim tumpang tindih, penjualan tanpa kewenangan, kesepakatan lama, sertifikat di atas tanah adat"],
+   ["Bagi wisatawan", "Minta izin sebelum berkemah atau menerbangkan drone; bayar pungutan adat; jangan sentuh kubur"]]},
+ "faq": {
+  "en": [
+   ["What is adat land in Sumba?", "Adat land is customary land held collectively by a clan (kabihu) and managed by its elders under customary law, often without a state land certificate. Individual families may farm parts of it, but the wider territory is tied to the clan and its founding ancestor."],
+   ["What does masyarakat hukum adat mean?", "It means customary law community: a group that still lives by its own customary rules, has its own institutions and controls a defined territory. The Indonesian Constitution (Article 18B(2)) recognises these communities and their traditional rights as long as they are still alive."],
+   ["Why are there so many land disputes in Sumba?", "Because most land was never mapped or registered, rights overlap between families, clans and the state, and land gained value with roads and tourism. Disputes arise from overlapping boundaries, sales by people without full authority, old oral deals and certificates issued over land a community considers customary."],
+   ["Can customary land be sold to a foreigner?", "Foreigners cannot hold freehold (Hak Milik) land in Indonesia at all. Beyond that, buying or leasing customary land carries the risk that clan members later contest the deal, so any transaction needs a checked certificate, the agreement of all rights holders and independent legal advice."],
+   ["Has Sumba issued communal land certificates?", "Not yet, as of 10 November 2026. In November 2026 East Sumba's deputy regent said three customary communities were applying at the regency land office and one file was nearly complete, which could become the first customary land certificate in East Nusa Tenggara."],
+   ["Do visitors need to worry about adat land?", "Not much, but it explains local rules. Beaches and grasslands may belong to clans, small fees often go to the landholding community, and tombs and ritual stones must not be touched. Ask before camping or flying a drone, and avoid any area marked as disputed."]],
+  "es": [
+   ["¿Qué es la tierra adat en Sumba?", "Es tierra consuetudinaria que pertenece de forma colectiva a un clan (kabihu) y que gestionan sus ancianos según el derecho tradicional, a menudo sin título estatal. Algunas familias cultivan partes, pero el territorio está ligado al clan y a su antepasado fundador."],
+   ["¿Qué significa masyarakat hukum adat?", "Significa comunidad de derecho consuetudinario: un grupo que vive según sus propias normas, tiene instituciones propias y controla un territorio definido. La Constitución indonesia (art. 18B(2)) reconoce a estas comunidades y sus derechos tradicionales mientras sigan vivos."],
+   ["¿Por qué hay tantos conflictos de tierras en Sumba?", "Porque casi nada se ha cartografiado ni inscrito, los derechos de familias, clanes y Estado se superponen y la tierra se ha revalorizado con las carreteras y el turismo. Los conflictos nacen de linderos discutidos, ventas sin autoridad suficiente, tratos verbales antiguos y títulos expedidos sobre tierras que una comunidad considera suyas."],
+   ["¿Puede venderse tierra consuetudinaria a un extranjero?", "Los extranjeros no pueden tener tierra en plena propiedad (Hak Milik) en Indonesia. Además, comprar o arrendar tierra consuetudinaria supone el riesgo de que miembros del clan impugnen el trato, así que cualquier operación exige un título comprobado, el acuerdo de todos los titulares de derechos y asesoramiento jurídico independiente."],
+   ["¿Ha expedido Sumba títulos de tierras comunales?", "Todavía no, a 10 de noviembre de 2026. Ese mes, el vicerregente de Sumba Oriental informó de que tres comunidades tramitaban sus títulos en el catastro de la regencia y que uno estaba casi listo; podría ser el primero de Nusa Tenggara Oriental."],
+   ["¿Debe preocuparse el viajero por la tierra adat?", "No mucho, pero explica las normas locales. Playas y praderas pueden ser de un clan, las pequeñas tasas suelen ir a la comunidad dueña de la tierra y no se deben tocar tumbas ni piedras rituales. Pide permiso para acampar o volar un dron y evita las zonas en litigio."]],
+  "id": [
+   ["Apa itu tanah adat di Sumba?", "Tanah adat adalah tanah yang dimiliki bersama oleh kabihu dan dikelola para tetua menurut hukum adat, sering tanpa sertifikat negara. Keluarga bisa menggarap sebagian, tetapi wilayahnya terikat pada kabihu dan leluhur pendirinya."],
+   ["Apa arti masyarakat hukum adat?", "Kelompok yang masih hidup menurut aturan adatnya, memiliki kelembagaan sendiri, dan menguasai wilayah tertentu. UUD 1945 Pasal 18B ayat (2) mengakui masyarakat hukum adat beserta hak tradisionalnya sepanjang masih hidup."],
+   ["Mengapa sengketa tanah sering terjadi di Sumba?", "Karena sebagian besar tanah belum dipetakan atau didaftarkan, hak keluarga, kabihu, dan negara saling bertumpuk, dan harga tanah naik seiring jalan dan pariwisata. Sengketa muncul dari batas yang diperdebatkan, penjualan oleh pihak yang tidak sepenuhnya berwenang, kesepakatan lisan lama, dan sertifikat di atas tanah yang dianggap tanah adat."],
+   ["Bolehkah tanah adat dijual kepada warga asing?", "Warga asing sama sekali tidak bisa memiliki tanah Hak Milik di Indonesia. Selain itu, membeli atau menyewa tanah adat berisiko digugat anggota kabihu di kemudian hari, sehingga setiap transaksi memerlukan sertifikat yang sudah dicek, persetujuan semua pemegang hak, dan nasihat hukum independen."],
+   ["Apakah Sumba sudah menerbitkan sertifikat tanah komunal?", "Belum, per 10 November 2026. Pada bulan itu Wakil Bupati Sumba Timur menyebut tiga masyarakat hukum adat sedang mengurusnya di Kantor Pertanahan dan satu berkas hampir rampung; bisa menjadi sertifikat tanah adat pertama di NTT."],
+   ["Apakah wisatawan perlu memikirkan tanah adat?", "Tidak terlalu, tetapi ini menjelaskan aturan setempat. Pantai dan padang bisa milik kabihu, pungutan kecil biasanya untuk masyarakat pemilik tanah, dan kubur serta batu ritual tidak boleh disentuh. Minta izin sebelum berkemah atau menerbangkan drone, dan hindari lokasi sengketa."]]},
+ "places": [
+  {"name": "Waingapu", "lat": -9.6497, "lon": 120.2637, "area": "East Sumba"},
+  {"name": "Marosi beach (Lamboya)", "lat": -9.7624, "lon": 119.3146, "area": "Lamboya, West Sumba"}],
+ "sources": [
+  ["Dalam acara temu pisah Kepala ATR/BPN Sumba Timur, semangat sertifikasi tanah adat menggema, Waingapu.Com, 7 Nov 2026", "https://www.waingapu.com/dalam-acara-temu-pisah-kepala-atr-bpn-sumba-timur-semangat-sertifikasi-tanah-adat-menggema/"],
+  ["Access to Agrarian Justice in Sumba, Eastern Indonesia, J. Vel and S. Makambombu, Law, Social Justice and Global Development Journal, 2010", "https://warwick.ac.uk/fac/soc/law/elj/lgd/2010_1/vel_makambombu"],
+  ["Sertifikat HPL atas tanah ulayat: antara kepastian hukum dan kritik akademisi, Hukumonline, 27 Sep 2025", "https://www.hukumonline.com/berita/a/sertifikat-hpl-atas-tanah-ulayat--antara-kepastian-hukum-dan-kritik-akademisi-lt68d7bc805517d?page=all"],
+  ["Kronologi konflik lahan tewaskan warga NTT, CNN Indonesia, 30 Apr 2018", "https://www.cnnindonesia.com/nasional/20180430180108-20-294743/kronologi-konflik-lahan-tewaskan-warga-ntt"],
+  ["Land purchase disputes in Indonesia: what foreign investors need to know, DFDL, Jul 2026 (updated Aug 2026)", "https://www.dfdl.com/insights/content-hub/articles/land-purchase-disputes-in-indonesia-foreign-investors/"],
+  ["Indonesia's Constitutional Court ruling on customary forests, REDD-Monitor, 2013", "https://redd-monitor.org/?p=14424"]]
+})
+
+# ---------------------------------------------------------------------------
+# 2) Explained: Indonesian visas for a trip to Sumba
+# ---------------------------------------------------------------------------
+
+VISA_EN = """<p>The small propeller plane drops towards Tambolaka over a patchwork of maize fields and thatched roofs, and there is no immigration desk waiting at the bottom of the steps, only a warm wind and a baggage trolley. By the time you reach Sumba, the paperwork is long done. Every foreign visitor clears Indonesian immigration at the first international airport they land in, usually Bali or Jakarta, and that is where your visa matters.</p>
+<p><strong>The short answer:</strong> most visitors to Sumba travel on Indonesia's visa on arrival (VoA, officially a B1 visit visa), which costs IDR 500,000 (around USD 30 or EUR 26 in 2026), gives up to 30 days and can be extended once for another 30. You can buy it online in advance as an e-VoA at the official site evisa.imigrasi.go.id or at the airport on arrival. Citizens of ASEAN countries enter visa-free for up to 30 days, without extension. Your passport needs at least six months of validity, and you must show a ticket out of Indonesia. <strong>Information verified on 10 November 2026 on evisa.imigrasi.go.id. Rules change: always check the official site before you book.</strong></p>
+
+<h2>First, the geography of a Sumba trip</h2>
+<p>Sumba's two airports, Tambolaka (TMC) in the west and Waingapu (WGP) in the east, only handle domestic flights. That means:</p>
+<ul>
+<li>You enter Indonesia at an international gateway, most often Bali (Ngurah Rai, DPS), and then take a domestic flight. See <a href="/en/getting-here/how-to-get-to-sumba-from-bali/">how to get to Sumba from Bali</a>.</li>
+<li>The visa you receive at that first airport covers your whole trip in Indonesia, including Sumba, Flores or anywhere else. There is no separate permit for Sumba.</li>
+<li>If you spend time in Bali on the way, the Bali provincial tourist levy (IDR 150,000 per person, paid once per trip at lovebali.baliprov.go.id) is a separate charge from your visa.</li>
+</ul>
+
+<h2>Your options at a glance</h2>
+<table>
+<thead><tr><th>Option</th><th>Who</th><th>Cost</th><th>Stay</th><th>Extension</th></tr></thead>
+<tbody>
+<tr><td>Visa exemption</td><td>ASEAN passport holders (and a few others on the official list)</td><td>Free</td><td>Up to 30 days</td><td>Not extendable</td></tr>
+<tr><td>e-VoA (B1, online)</td><td>Nationalities on the VoA list</td><td>IDR 500,000</td><td>Up to 30 days</td><td>Once, +30 days</td></tr>
+<tr><td>VoA (B1, at the airport)</td><td>Same list</td><td>IDR 500,000</td><td>Up to 30 days</td><td>Once, +30 days</td></tr>
+<tr><td>Social activities visit visa (C6)</td><td>Volunteers, humanitarian work, longer visits</td><td>IDR 2,000,000</td><td>Up to 60 days</td><td>Extendable</td></tr>
+</tbody>
+</table>
+<p>Fees and lengths are those published on evisa.imigrasi.go.id as of 10 November 2026.</p>
+
+<h2>Visa exemption (visa-free entry)</h2>
+<p>Citizens of ASEAN member states can visit Indonesia for tourism without a visa for up to 30 days. This stay <strong>cannot be extended</strong>, so if you are, for example, a Thai, Malaysian, Singaporean or Filipino traveller planning more than 30 days, apply for an e-VoA instead. A small number of non-ASEAN countries also have visa-free arrangements; check the current list on the official site, as it has changed several times.</p>
+
+<h2>Visa on arrival and e-VoA: the details</h2>
+<p>The B1 visa on arrival is the standard tourist option for most Europeans, Americans, Australians and many others. According to the official e-Visa site:</p>
+<ul>
+<li><strong>Fee:</strong> IDR 500,000.</li>
+<li><strong>Stay:</strong> up to 30 days, extendable once for another 30 days (60 days in total).</li>
+<li><strong>Use it within 90 days:</strong> an e-VoA must be used within 90 days of the date it is issued.</li>
+<li><strong>Passport:</strong> valid for at least six months; travel guides also advise at least one blank page.</li>
+<li><strong>Onward ticket:</strong> you must show a ticket for leaving Indonesia.</li>
+<li><strong>Funds and purpose:</strong> you must be able to support yourself and use the visa only for visiting, not for work.</li>
+<li><strong>Group applications:</strong> one e-VoA application can cover up to five people.</li>
+</ul>
+<p><strong>e-VoA or VoA at the airport?</strong> The price is the same. Applying online in advance, at least two days before your flight (three or four in holiday periods), lets you skip the visa payment queue on arrival in Bali. Buying it at the airport works too, but queues can be long at peak times. Pay by Visa, Mastercard or JCB card on the official site.</p>
+<p><strong>Use only the official site.</strong> Many look-alike websites sell the same e-VoA with large mark-ups. The genuine address is evisa.imigrasi.go.id, a government <em>.go.id</em> domain.</p>
+
+<h2>The arrival card</h2>
+<p>All travellers must also fill in the digital All Indonesia arrival card within three days before arriving in Indonesia. Fill it in at allindonesia.imigrasi.go.id and keep the confirmation on your phone for the airport.</p>
+
+<h2>Extending your stay from Sumba</h2>
+<p>Thirty days goes quickly on an island where a single drive can take half a day. If you want to stay longer on a VoA:</p>
+<ol>
+<li><strong>Start online.</strong> On evisa.imigrasi.go.id, find your existing stay permit and choose Extend. You can apply from 14 days before your permit expires and no later than one day before.</li>
+<li><strong>Pay IDR 500,000.</strong> The extension adds 30 days, for a maximum of 60.</li>
+<li><strong>Enter your address carefully.</strong> Your address and postal code decide which immigration office handles your file.</li>
+<li><strong>Visit the office for your photo.</strong> According to Indonesian immigration, applicants must have their photo taken at the immigration office about one working day after payment. Dress smartly; sandals and flip-flops are not allowed.</li>
+</ol>
+<p>Because of that office visit, check early which immigration office covers your address. We could not confirm a fully operating immigration office on Sumba itself as of November 2026, so the nearest office may be off the island; plan the extension around a stop in Bali or elsewhere if needed, and ask your host or the immigration helpdesk.</p>
+<p><strong>Do not overstay.</strong> The fine is IDR 1,000,000 per day (around USD 60), and immigration can impose further sanctions.</p>
+
+<h2>Volunteering, work and other plans</h2>
+<p>A tourist visa does not allow paid work, and volunteering is a grey area that immigration takes seriously. Indonesia's C6 social activities visit visa covers volunteer programmes, humanitarian work and social activities: IDR 2,000,000 for up to 60 days, with a bank statement showing at least USD 2,000, a guarantor and a letter from the organisation about your activities. Holders may not sell goods or services or receive wages. Read our guide to <a href="/en/things-to-do/volunteering-in-sumba-responsibly/">volunteering in Sumba responsibly</a>.</p>
+<p>Thinking of buying a house? A visitor visa is only the start; see <a href="/en/business/buying-land-property-sumba-foreigner/">buying land or property in Sumba as a foreigner</a>.</p>
+
+<h2>Checklist before you fly</h2>
+<ul>
+<li>Passport valid for six months or more from your arrival date, with a blank page.</li>
+<li>Return or onward ticket out of Indonesia.</li>
+<li>e-VoA bought on evisa.imigrasi.go.id (or cash or card ready for the airport VoA).</li>
+<li>All Indonesia arrival card completed within three days before arrival.</li>
+<li>Bali levy paid if you are staying in Bali.</li>
+<li>Your domestic flight to Tambolaka or Waingapu booked with enough connection time after immigration.</li>
+<li>A note of your visa expiry date, and a plan for the extension if you will stay more than 30 days.</li>
+</ul>
+<p>For health, insurance and safety on the island, read <a href="/en/getting-here/sumba-travel-safety-health/">our Sumba safety and health guide</a>.</p>
+<p><em>This page summarises official information checked on 10 November 2026 and is not legal advice. Visa rules, fees and eligible countries change, sometimes at short notice: always confirm on evisa.imigrasi.go.id or imigrasi.go.id before you travel.</em></p>"""
+
+VISA_ES = """<p>La avioneta de hélices desciende hacia Tambolaka sobre un mosaico de maizales y tejados de paja, y al pie de la escalerilla no espera ningún control de pasaportes, solo un viento cálido y un carrito de equipajes. Cuando uno llega a Sumba, el papeleo ya está hecho. Todo visitante extranjero pasa el control de inmigración indonesio en el primer aeropuerto internacional al que llega, normalmente Bali o Yakarta, y es ahí donde importa el visado.</p>
+<p><strong>La respuesta corta:</strong> la mayoría de quienes viajan a Sumba lo hacen con el visado a la llegada de Indonesia (VoA, oficialmente visado de visita B1), que cuesta 500.000 rupias (unos 30 dólares o 26 euros en 2026), permite estancias de hasta 30 días y puede prorrogarse una vez otros 30. Se compra por internet con antelación como e-VoA en la web oficial evisa.imigrasi.go.id o en el aeropuerto al llegar. Los ciudadanos de la ASEAN entran sin visado hasta 30 días, sin prórroga. El pasaporte debe tener al menos seis meses de validez y hay que mostrar un billete de salida de Indonesia. <strong>Información comprobada el 10 de noviembre de 2026 en evisa.imigrasi.go.id. Las normas cambian: consulta siempre la web oficial antes de reservar.</strong></p>
+
+<h2>Primero, la geografía del viaje</h2>
+<p>Los dos aeropuertos de Sumba, Tambolaka (TMC) en el oeste y Waingapu (WGP) en el este, solo operan vuelos nacionales. Eso significa que:</p>
+<ul>
+<li>Se entra en Indonesia por un aeropuerto internacional, casi siempre Bali (Ngurah Rai, DPS), y después se toma un vuelo interno. Consulta <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a>.</li>
+<li>El visado que se obtiene en ese primer aeropuerto vale para todo el viaje por Indonesia, incluidas Sumba, Flores o cualquier otra isla. No existe un permiso aparte para Sumba.</li>
+<li>Si pasas unos días en Bali, la tasa turística provincial de Bali (150.000 rupias por persona, una vez por viaje, en lovebali.baliprov.go.id) se paga aparte del visado.</li>
+</ul>
+
+<h2>Las opciones de un vistazo</h2>
+<table>
+<thead><tr><th>Opción</th><th>Para quién</th><th>Precio</th><th>Estancia</th><th>Prórroga</th></tr></thead>
+<tbody>
+<tr><td>Exención de visado</td><td>Pasaportes de la ASEAN (y algunos más de la lista oficial)</td><td>Gratis</td><td>Hasta 30 días</td><td>No prorrogable</td></tr>
+<tr><td>e-VoA (B1, por internet)</td><td>Nacionalidades de la lista VoA</td><td>500.000 rupias</td><td>Hasta 30 días</td><td>Una vez, +30 días</td></tr>
+<tr><td>VoA (B1, en el aeropuerto)</td><td>La misma lista</td><td>500.000 rupias</td><td>Hasta 30 días</td><td>Una vez, +30 días</td></tr>
+<tr><td>Visado de visita para actividades sociales (C6)</td><td>Voluntariado, labor humanitaria, visitas largas</td><td>2.000.000 rupias</td><td>Hasta 60 días</td><td>Prorrogable</td></tr>
+</tbody>
+</table>
+<p>Precios y duraciones publicados en evisa.imigrasi.go.id a 10 de noviembre de 2026.</p>
+
+<h2>Exención de visado</h2>
+<p>Los ciudadanos de los países de la ASEAN pueden visitar Indonesia por turismo sin visado durante un máximo de 30 días. Esa estancia <strong>no se puede prorrogar</strong>, así que un viajero tailandés, malasio, singapurense o filipino que piense quedarse más de 30 días debe solicitar un e-VoA. Algunos países de fuera de la ASEAN también tienen acuerdos de exención; consulta la lista vigente en la web oficial, porque ha cambiado varias veces.</p>
+
+<h2>Visado a la llegada y e-VoA: los detalles</h2>
+<p>El visado B1 a la llegada es la opción turística habitual para la mayoría de europeos, latinoamericanos, estadounidenses, australianos y muchos otros. Según la web oficial de visados electrónicos:</p>
+<ul>
+<li><strong>Precio:</strong> 500.000 rupias.</li>
+<li><strong>Estancia:</strong> hasta 30 días, prorrogable una vez otros 30 (60 días en total).</li>
+<li><strong>Úsalo en 90 días:</strong> el e-VoA debe utilizarse en los 90 días siguientes a su emisión.</li>
+<li><strong>Pasaporte:</strong> con al menos seis meses de validez; las guías de viaje recomiendan además tener una página en blanco.</li>
+<li><strong>Billete de salida:</strong> hay que mostrar un billete para salir de Indonesia.</li>
+<li><strong>Medios y finalidad:</strong> debes poder costearte la estancia y usar el visado solo para visitas, no para trabajar.</li>
+<li><strong>Solicitudes en grupo:</strong> una sola solicitud de e-VoA puede incluir hasta cinco personas.</li>
+</ul>
+<p><strong>¿e-VoA o VoA en el aeropuerto?</strong> Cuestan lo mismo. Si lo pides por internet con antelación, al menos dos días antes del vuelo (tres o cuatro en temporada de vacaciones), te ahorras la cola del pago del visado al llegar a Bali. Comprarlo en el aeropuerto también funciona, pero en temporada alta las colas pueden ser largas. En la web oficial se paga con tarjeta Visa, Mastercard o JCB.</p>
+<p><strong>Usa solo la web oficial.</strong> Hay muchas páginas que imitan a la oficial y venden el mismo e-VoA con grandes recargos. La dirección auténtica es evisa.imigrasi.go.id, un dominio gubernamental <em>.go.id</em>.</p>
+
+<h2>La tarjeta de llegada</h2>
+<p>Todos los viajeros deben rellenar además la tarjeta de llegada digital All Indonesia en los tres días anteriores a su llegada al país. Se rellena en allindonesia.imigrasi.go.id; guarda la confirmación en el móvil para el aeropuerto.</p>
+
+<h2>Cómo prorrogar la estancia desde Sumba</h2>
+<p>Treinta días pasan volando en una isla donde un solo trayecto en coche puede ocupar media jornada. Si quieres quedarte más tiempo con un VoA:</p>
+<ol>
+<li><strong>Empieza por internet.</strong> En evisa.imigrasi.go.id busca tu permiso de estancia y elige la opción de prórroga. Puedes solicitarla desde 14 días antes del vencimiento y, como tarde, un día antes.</li>
+<li><strong>Paga 500.000 rupias.</strong> La prórroga añade 30 días, hasta un máximo de 60.</li>
+<li><strong>Escribe bien tu dirección.</strong> La dirección y el código postal determinan qué oficina de inmigración tramita el expediente.</li>
+<li><strong>Acude a la oficina para la foto.</strong> Según la inmigración indonesia, hay que hacerse la foto en la oficina aproximadamente un día hábil después del pago. Ve bien vestido: no se admiten sandalias ni chanclas.</li>
+</ol>
+<p>Por esa visita obligatoria, comprueba pronto qué oficina corresponde a tu dirección. A noviembre de 2026 no hemos podido confirmar que haya una oficina de inmigración en pleno funcionamiento en la propia Sumba, así que la más cercana puede estar en otra isla; si hace falta, organiza la prórroga en torno a una escala en Bali u otro lugar, y pregunta a tu alojamiento o al servicio de atención de inmigración.</p>
+<p><strong>No te quedes más días de los permitidos.</strong> La multa es de 1.000.000 de rupias por día (unos 60 dólares), y inmigración puede imponer otras sanciones.</p>
+
+<h2>Voluntariado, trabajo y otros planes</h2>
+<p>El visado turístico no permite trabajar, y el voluntariado es una zona gris que inmigración se toma en serio. El visado de visita para actividades sociales C6 cubre programas de voluntariado, labor humanitaria y actividades sociales: 2.000.000 de rupias por un máximo de 60 días, con un extracto bancario de al menos 2.000 dólares, un avalista y una carta de la organización que describa las actividades. Su titular no puede vender bienes o servicios ni cobrar un salario. Lee nuestra guía sobre <a href="/es/things-to-do/volunteering-in-sumba-responsibly/">cómo hacer voluntariado en Sumba de forma responsable</a>.</p>
+<p>¿Piensas comprar una casa? El visado de visita es solo el principio; consulta <a href="/es/business/buying-land-property-sumba-foreigner/">cómo comprar un terreno o una casa en Sumba siendo extranjero</a>.</p>
+
+<h2>Lista de comprobación antes de volar</h2>
+<ul>
+<li>Pasaporte con seis meses o más de validez desde la fecha de llegada y una página en blanco.</li>
+<li>Billete de vuelta o de salida de Indonesia.</li>
+<li>e-VoA comprado en evisa.imigrasi.go.id (o efectivo o tarjeta para el VoA del aeropuerto).</li>
+<li>Tarjeta de llegada All Indonesia rellenada en los tres días previos.</li>
+<li>Tasa de Bali pagada si vas a alojarte en Bali.</li>
+<li>Vuelo interno a Tambolaka o Waingapu reservado con margen suficiente tras el control de inmigración.</li>
+<li>La fecha de caducidad del visado apuntada y un plan de prórroga si vas a quedarte más de 30 días.</li>
+</ul>
+<p>Para salud, seguro y seguridad en la isla, lee <a href="/es/getting-here/sumba-travel-safety-health/">nuestra guía de seguridad y salud en Sumba</a>.</p>
+<p><em>Esta página resume información oficial comprobada el 10 de noviembre de 2026 y no constituye asesoramiento jurídico. Las normas de visado, las tasas y los países admitidos cambian, a veces sin apenas aviso: confírmalo siempre en evisa.imigrasi.go.id o imigrasi.go.id antes de viajar.</em></p>"""
+
+VISA_ID = """<p>Pesawat baling-baling kecil turun menuju Tambolaka di atas petak-petak ladang jagung dan atap ilalang, dan di ujung tangga tidak ada loket imigrasi, hanya angin hangat dan troli bagasi. Begitu tiba di Sumba, urusan dokumen sudah lama beres. Setiap wisatawan asing melewati pemeriksaan imigrasi di bandara internasional pertama tempat mereka mendarat, biasanya Bali atau Jakarta, dan di situlah visa berperan.</p>
+<p><strong>Jawaban singkat:</strong> sebagian besar wisatawan asing ke Sumba memakai visa kunjungan saat kedatangan (VoA, resminya visa kunjungan B1) seharga Rp 500.000 (sekitar 30 dolar AS atau 26 euro pada 2026), berlaku untuk tinggal hingga 30 hari dan bisa diperpanjang sekali untuk 30 hari lagi. Visa ini bisa dibeli daring lebih dulu sebagai e-VoA di situs resmi evisa.imigrasi.go.id atau di bandara saat tiba. Warga negara ASEAN bebas visa hingga 30 hari tanpa perpanjangan. Paspor harus berlaku minimal enam bulan, dan Anda wajib menunjukkan tiket keluar dari Indonesia. <strong>Informasi diperiksa pada 10 November 2026 di evisa.imigrasi.go.id. Aturan bisa berubah: selalu cek situs resmi sebelum memesan.</strong></p>
+
+<h2>Pertama, pahami rute perjalanan ke Sumba</h2>
+<p>Dua bandara di Sumba, Tambolaka (TMC) di barat dan Waingapu (WGP) di timur, hanya melayani penerbangan domestik. Artinya:</p>
+<ul>
+<li>Wisatawan asing masuk ke Indonesia lewat bandara internasional, paling sering Bali (Ngurah Rai, DPS), lalu melanjutkan dengan penerbangan domestik. Lihat <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a>.</li>
+<li>Visa yang diperoleh di bandara pertama berlaku untuk seluruh perjalanan di Indonesia, termasuk Sumba, Flores, atau pulau lain. Tidak ada izin khusus untuk Sumba.</li>
+<li>Jika singgah di Bali, pungutan wisatawan asing Provinsi Bali (Rp 150.000 per orang, sekali per kunjungan, di lovebali.baliprov.go.id) terpisah dari biaya visa.</li>
+</ul>
+
+<h2>Ringkasan pilihan</h2>
+<table>
+<thead><tr><th>Pilihan</th><th>Untuk siapa</th><th>Biaya</th><th>Lama tinggal</th><th>Perpanjangan</th></tr></thead>
+<tbody>
+<tr><td>Bebas visa kunjungan</td><td>Pemegang paspor ASEAN (dan beberapa negara lain di daftar resmi)</td><td>Gratis</td><td>Hingga 30 hari</td><td>Tidak bisa</td></tr>
+<tr><td>e-VoA (B1, daring)</td><td>Negara dalam daftar VoA</td><td>Rp 500.000</td><td>Hingga 30 hari</td><td>Sekali, +30 hari</td></tr>
+<tr><td>VoA (B1, di bandara)</td><td>Daftar yang sama</td><td>Rp 500.000</td><td>Hingga 30 hari</td><td>Sekali, +30 hari</td></tr>
+<tr><td>Visa kunjungan kegiatan sosial (C6)</td><td>Relawan, kegiatan kemanusiaan, kunjungan lebih lama</td><td>Rp 2.000.000</td><td>Hingga 60 hari</td><td>Bisa diperpanjang</td></tr>
+</tbody>
+</table>
+<p>Biaya dan masa tinggal sesuai yang tercantum di evisa.imigrasi.go.id per 10 November 2026.</p>
+
+<h2>Bebas visa kunjungan</h2>
+<p>Warga negara anggota ASEAN dapat berkunjung ke Indonesia untuk wisata tanpa visa hingga 30 hari. Izin tinggal ini <strong>tidak dapat diperpanjang</strong>, jadi wisatawan dari Thailand, Malaysia, Singapura, atau Filipina yang berencana tinggal lebih dari 30 hari sebaiknya mengajukan e-VoA. Beberapa negara di luar ASEAN juga mendapat fasilitas bebas visa; cek daftar terbaru di situs resmi karena sudah beberapa kali berubah.</p>
+
+<h2>Visa saat kedatangan dan e-VoA: rinciannya</h2>
+<p>Visa B1 saat kedatangan adalah pilihan wisata standar bagi kebanyakan warga Eropa, Amerika, Australia, dan banyak negara lain. Menurut situs resmi e-Visa:</p>
+<ul>
+<li><strong>Biaya:</strong> Rp 500.000.</li>
+<li><strong>Lama tinggal:</strong> hingga 30 hari, bisa diperpanjang sekali untuk 30 hari (total 60 hari).</li>
+<li><strong>Gunakan dalam 90 hari:</strong> e-VoA harus dipakai paling lambat 90 hari sejak diterbitkan.</li>
+<li><strong>Paspor:</strong> berlaku minimal enam bulan; panduan wisata juga menyarankan minimal satu halaman kosong.</li>
+<li><strong>Tiket keluar:</strong> wajib menunjukkan tiket meninggalkan Indonesia.</li>
+<li><strong>Biaya hidup dan tujuan:</strong> harus mampu membiayai diri selama tinggal dan memakai visa hanya untuk berkunjung, bukan bekerja.</li>
+<li><strong>Pengajuan rombongan:</strong> satu permohonan e-VoA bisa mencakup hingga lima orang.</li>
+</ul>
+<p><strong>e-VoA atau VoA di bandara?</strong> Harganya sama. Mengajukan secara daring setidaknya dua hari sebelum terbang (tiga sampai empat hari pada musim liburan) membuat Anda tak perlu antre membayar visa saat tiba di Bali. Membeli di bandara juga bisa, tetapi antrean bisa panjang pada musim ramai. Di situs resmi, pembayaran bisa dengan kartu Visa, Mastercard, atau JCB.</p>
+<p><strong>Gunakan hanya situs resmi.</strong> Banyak situs tiruan menjual e-VoA yang sama dengan tambahan biaya besar. Alamat resminya evisa.imigrasi.go.id, berdomain pemerintah <em>.go.id</em>.</p>
+
+<h2>Kartu kedatangan</h2>
+<p>Semua pelaku perjalanan juga wajib mengisi kartu kedatangan digital All Indonesia paling lambat tiga hari sebelum tiba di Indonesia. Isi di allindonesia.imigrasi.go.id dan simpan bukti pengisiannya di ponsel untuk ditunjukkan di bandara.</p>
+
+<h2>Memperpanjang izin tinggal dari Sumba</h2>
+<p>Tiga puluh hari terasa singkat di pulau tempat satu perjalanan darat bisa memakan setengah hari. Jika ingin tinggal lebih lama dengan VoA:</p>
+<ol>
+<li><strong>Mulai secara daring.</strong> Di evisa.imigrasi.go.id, cari izin tinggal Anda lalu pilih perpanjangan. Permohonan bisa diajukan mulai 14 hari sebelum izin berakhir dan paling lambat sehari sebelumnya.</li>
+<li><strong>Bayar Rp 500.000.</strong> Perpanjangan menambah 30 hari, hingga maksimal 60 hari.</li>
+<li><strong>Isi alamat dengan cermat.</strong> Alamat dan kode pos menentukan kantor imigrasi yang memproses berkas Anda.</li>
+<li><strong>Datang ke kantor untuk foto.</strong> Menurut Imigrasi, pemohon harus difoto di kantor imigrasi sekitar satu hari kerja setelah pembayaran. Berpakaianlah rapi; sandal dan sandal jepit tidak diperbolehkan.</li>
+</ol>
+<p>Karena ada kewajiban datang ke kantor, cek sejak awal kantor imigrasi mana yang mencakup alamat Anda. Per November 2026 kami belum dapat memastikan adanya kantor imigrasi yang beroperasi penuh di Pulau Sumba, sehingga kantor terdekat mungkin berada di pulau lain; bila perlu, atur perpanjangan sambil singgah di Bali atau kota lain, dan tanyakan kepada tempat menginap atau layanan bantuan Imigrasi.</p>
+<p><strong>Jangan melewati batas izin tinggal.</strong> Dendanya Rp 1.000.000 per hari (sekitar 60 dolar AS), dan Imigrasi dapat menjatuhkan sanksi lain.</p>
+
+<h2>Relawan, bekerja, dan rencana lain</h2>
+<p>Visa wisata tidak membolehkan bekerja, dan kegiatan relawan termasuk wilayah abu-abu yang ditanggapi serius oleh Imigrasi. Visa kunjungan kegiatan sosial C6 mencakup program relawan, kegiatan kemanusiaan, dan kegiatan sosial: Rp 2.000.000 untuk hingga 60 hari, dengan rekening koran minimal 2.000 dolar AS, penjamin, dan surat dari lembaga tentang kegiatan Anda. Pemegangnya tidak boleh menjual barang atau jasa maupun menerima upah. Baca panduan kami tentang <a href="/id/things-to-do/volunteering-in-sumba-responsibly/">menjadi relawan di Sumba secara bertanggung jawab</a>.</p>
+<p>Berencana membeli rumah? Visa kunjungan baru langkah awal; lihat <a href="/id/business/buying-land-property-sumba-foreigner/">membeli tanah atau properti di Sumba bagi warga asing</a>.</p>
+
+<h2>Daftar periksa sebelum terbang</h2>
+<ul>
+<li>Paspor berlaku enam bulan atau lebih sejak tanggal tiba, dengan satu halaman kosong.</li>
+<li>Tiket pulang atau tiket lanjutan keluar dari Indonesia.</li>
+<li>e-VoA dibeli di evisa.imigrasi.go.id (atau siapkan uang tunai atau kartu untuk VoA di bandara).</li>
+<li>Kartu kedatangan All Indonesia diisi dalam tiga hari sebelum tiba.</li>
+<li>Pungutan Bali dibayar jika menginap di Bali.</li>
+<li>Penerbangan domestik ke Tambolaka atau Waingapu dipesan dengan jeda cukup setelah pemeriksaan imigrasi.</li>
+<li>Catat tanggal berakhirnya visa dan rencana perpanjangan jika tinggal lebih dari 30 hari.</li>
+</ul>
+<p>Untuk kesehatan, asuransi, dan keamanan di pulau ini, baca <a href="/id/getting-here/sumba-travel-safety-health/">panduan keamanan dan kesehatan di Sumba</a>.</p>
+<p><em>Halaman ini merangkum informasi resmi yang diperiksa pada 10 November 2026 dan bukan nasihat hukum. Aturan visa, biaya, dan daftar negara bisa berubah, terkadang mendadak: selalu pastikan di evisa.imigrasi.go.id atau imigrasi.go.id sebelum berangkat.</em></p>"""
+
+GUIDES.append({
+ "section": "getting-here", "slug": "indonesia-visa-for-sumba-explained", "date": "2026-11-10", "time": "08:30", "kind": "guide",
+ "slugs": {"es": "visado-de-indonesia-para-viajar-a-sumba", "id": "visa-indonesia-untuk-ke-sumba"},
+ "img_key": "how-to-get-to-sumba-from-bali",
+ "en": {
+  "title": "Indonesia visa for Sumba: VoA, e-VoA, visa-free entry and extensions",
+  "dek": "What you need to enter Indonesia for a trip to Sumba, what it costs, how long you can stay and how to extend, checked on the official site on 10 November 2026.",
+  "answer": "Most visitors to Sumba use Indonesia's visa on arrival (B1), which costs IDR 500,000, allows up to 30 days and can be extended once for 30 more; buy it online as an e-VoA on evisa.imigrasi.go.id or at the airport in Bali or Jakarta, since Sumba's airports are domestic only. ASEAN citizens enter visa-free for up to 30 days, not extendable. You need a passport valid for at least six months and an onward ticket; verified on 10 November 2026, always check the official site before travelling.",
+  "body": VISA_EN},
+ "es": {
+  "title": "Visado de Indonesia para Sumba: VoA, e-VoA, exención y prórrogas",
+  "dek": "Qué hace falta para entrar en Indonesia y viajar a Sumba, cuánto cuesta, cuánto tiempo se puede estar y cómo prorrogar, según la web oficial a 10 de noviembre de 2026.",
+  "answer": "La mayoría de los viajeros a Sumba usa el visado a la llegada de Indonesia (B1), que cuesta 500.000 rupias, permite hasta 30 días y se prorroga una vez otros 30; se compra por internet como e-VoA en evisa.imigrasi.go.id o en el aeropuerto de Bali o Yakarta, porque los aeropuertos de Sumba solo tienen vuelos nacionales. Los ciudadanos de la ASEAN entran sin visado hasta 30 días, sin prórroga. Se exige pasaporte con al menos seis meses de validez y billete de salida; datos comprobados el 10 de noviembre de 2026, consulta siempre la web oficial antes de viajar.",
+  "body": VISA_ES},
+ "id": {
+  "title": "Visa Indonesia untuk ke Sumba: VoA, e-VoA, bebas visa, dan perpanjangan",
+  "dek": "Apa yang dibutuhkan wisatawan asing untuk masuk Indonesia dan ke Sumba, berapa biayanya, berapa lama boleh tinggal, dan cara memperpanjang, per 10 November 2026.",
+  "answer": "Sebagian besar wisatawan asing ke Sumba memakai visa kunjungan saat kedatangan (B1) seharga Rp 500.000 untuk tinggal hingga 30 hari, dapat diperpanjang sekali 30 hari; beli secara daring sebagai e-VoA di evisa.imigrasi.go.id atau di bandara Bali atau Jakarta, karena bandara di Sumba hanya melayani penerbangan domestik. Warga ASEAN bebas visa hingga 30 hari tanpa perpanjangan. Paspor wajib berlaku minimal enam bulan dan ada tiket keluar; diperiksa 10 November 2026, selalu cek situs resmi sebelum berangkat.",
+  "body": VISA_ID},
+ "facts": {
+  "en": [
+   ["Visa on arrival (B1)", "IDR 500,000; up to 30 days; extendable once for 30 days"],
+   ["Visa-free", "ASEAN citizens, up to 30 days, not extendable"],
+   ["Passport", "At least 6 months' validity; onward ticket required"],
+   ["Where to apply", "evisa.imigrasi.go.id (official), or at the airport on arrival"],
+   ["Overstay fine", "IDR 1,000,000 per day"],
+   ["Verified", "10 November 2026; check the official site before travel"]],
+  "es": [
+   ["Visado a la llegada (B1)", "500.000 rupias; hasta 30 días; prorrogable una vez 30 días"],
+   ["Sin visado", "Ciudadanos de la ASEAN, hasta 30 días, sin prórroga"],
+   ["Pasaporte", "Al menos 6 meses de validez; billete de salida obligatorio"],
+   ["Dónde solicitarlo", "evisa.imigrasi.go.id (oficial) o en el aeropuerto al llegar"],
+   ["Multa por exceso", "1.000.000 de rupias por día"],
+   ["Comprobado", "10 de noviembre de 2026; consulta la web oficial antes de viajar"]],
+  "id": [
+   ["Visa saat kedatangan (B1)", "Rp 500.000; hingga 30 hari; bisa diperpanjang sekali 30 hari"],
+   ["Bebas visa", "Warga ASEAN, hingga 30 hari, tidak bisa diperpanjang"],
+   ["Paspor", "Berlaku minimal 6 bulan; wajib tiket keluar"],
+   ["Tempat pengajuan", "evisa.imigrasi.go.id (resmi) atau di bandara saat tiba"],
+   ["Denda overstay", "Rp 1.000.000 per hari"],
+   ["Diperiksa", "10 November 2026; cek situs resmi sebelum berangkat"]]},
+ "faq": {
+  "en": [
+   ["Do I need a visa to visit Sumba?", "You need whatever visa lets you enter Indonesia; there is no separate permit for Sumba. Most nationalities use the visa on arrival (B1, IDR 500,000, up to 30 days), while ASEAN citizens enter visa-free for up to 30 days. You clear immigration at your first international airport, usually Bali, before flying on to Tambolaka or Waingapu."],
+   ["Can I get a visa on arrival at Tambolaka or Waingapu airport?", "No. Both Sumba airports handle only domestic flights, so immigration and the visa on arrival happen at your international entry point, such as Bali (Ngurah Rai) or Jakarta. Buying an e-VoA online beforehand saves queuing there."],
+   ["How much is the Indonesia e-VoA and how long is it valid?", "IDR 500,000 (around USD 30). It gives a stay of up to 30 days, extendable once for another 30, and must be used within 90 days of issue. Buy it only on the official site, evisa.imigrasi.go.id."],
+   ["How do I extend my visa on arrival while in Sumba?", "Apply on evisa.imigrasi.go.id between 14 days and 1 day before your permit expires, pay IDR 500,000, then attend the immigration office that covers your address for a photo about one working day after payment. Check early which office that is, as it may be off the island."],
+   ["How long must my passport be valid for Indonesia?", "At least six months from your arrival, with a blank page recommended. You also need a return or onward ticket out of Indonesia."],
+   ["What happens if I overstay in Indonesia?", "You pay a fine of IDR 1,000,000 per day of overstay, and immigration can impose further sanctions. Note your expiry date and extend in time."]],
+  "es": [
+   ["¿Necesito visado para visitar Sumba?", "Necesitas el visado que te permita entrar en Indonesia; no hay un permiso aparte para Sumba. La mayoría de nacionalidades usa el visado a la llegada (B1, 500.000 rupias, hasta 30 días) y los ciudadanos de la ASEAN entran sin visado hasta 30 días. El control de inmigración se pasa en el primer aeropuerto internacional, normalmente Bali, antes de volar a Tambolaka o Waingapu."],
+   ["¿Se puede obtener el visado a la llegada en Tambolaka o Waingapu?", "No. Los dos aeropuertos de Sumba solo tienen vuelos nacionales, así que inmigración y el visado a la llegada se tramitan en el punto de entrada internacional, como Bali (Ngurah Rai) o Yakarta. Comprar antes el e-VoA por internet ahorra colas."],
+   ["¿Cuánto cuesta el e-VoA de Indonesia y cuánto dura?", "500.000 rupias (unos 30 dólares). Permite estar hasta 30 días, prorrogables una vez otros 30, y debe usarse en los 90 días siguientes a su emisión. Cómpralo solo en la web oficial, evisa.imigrasi.go.id."],
+   ["¿Cómo prorrogo el visado a la llegada estando en Sumba?", "Solicítalo en evisa.imigrasi.go.id entre 14 días y un día antes del vencimiento, paga 500.000 rupias y acude a la oficina de inmigración que corresponda a tu dirección para la foto, más o menos un día hábil después del pago. Comprueba pronto cuál es, porque puede estar fuera de la isla."],
+   ["¿Cuánta validez debe tener el pasaporte para Indonesia?", "Al menos seis meses desde la llegada, y conviene tener una página en blanco. También necesitas billete de vuelta o de salida de Indonesia."],
+   ["¿Qué pasa si me quedo más tiempo del permitido?", "Se paga una multa de 1.000.000 de rupias por cada día de exceso, e inmigración puede imponer otras sanciones. Apunta la fecha de caducidad y prorroga a tiempo."]],
+  "id": [
+   ["Apakah perlu visa untuk ke Sumba?", "Yang dibutuhkan adalah visa untuk masuk Indonesia; tidak ada izin khusus untuk Sumba. Kebanyakan warga negara asing memakai visa saat kedatangan (B1, Rp 500.000, hingga 30 hari), sedangkan warga ASEAN bebas visa hingga 30 hari. Pemeriksaan imigrasi dilakukan di bandara internasional pertama, biasanya Bali, sebelum terbang ke Tambolaka atau Waingapu."],
+   ["Bisakah mendapat VoA di Bandara Tambolaka atau Waingapu?", "Tidak. Kedua bandara di Sumba hanya melayani penerbangan domestik, jadi pemeriksaan imigrasi dan VoA dilakukan di pintu masuk internasional seperti Bali (Ngurah Rai) atau Jakarta. Membeli e-VoA secara daring sebelumnya menghemat waktu antre."],
+   ["Berapa biaya e-VoA dan berapa lama berlakunya?", "Rp 500.000 (sekitar 30 dolar AS). Berlaku untuk tinggal hingga 30 hari, dapat diperpanjang sekali 30 hari, dan harus dipakai paling lambat 90 hari sejak terbit. Beli hanya di situs resmi evisa.imigrasi.go.id."],
+   ["Bagaimana memperpanjang VoA saat berada di Sumba?", "Ajukan di evisa.imigrasi.go.id antara 14 hari hingga sehari sebelum izin tinggal berakhir, bayar Rp 500.000, lalu datang ke kantor imigrasi sesuai alamat Anda untuk difoto sekitar satu hari kerja setelah pembayaran. Pastikan sejak awal kantor mana yang dimaksud karena bisa berada di luar pulau."],
+   ["Berapa lama masa berlaku paspor yang disyaratkan?", "Minimal enam bulan sejak tanggal tiba, sebaiknya dengan satu halaman kosong. Anda juga perlu tiket pulang atau tiket keluar dari Indonesia."],
+   ["Apa akibatnya jika melebihi izin tinggal?", "Denda Rp 1.000.000 per hari keterlambatan, dan Imigrasi dapat menjatuhkan sanksi lain. Catat tanggal berakhirnya izin dan perpanjang tepat waktu."]]},
+ "places": [
+  {"name": "Tambolaka Airport (TMC)", "lat": -9.4102, "lon": 119.2433, "area": "Southwest Sumba"},
+  {"name": "Umbu Mehang Kunda Airport, Waingapu (WGP)", "lat": -9.6678, "lon": 120.3008, "area": "East Sumba"}],
+ "sources": [
+  ["Visa on arrival general information (fee, stay, extension, passport), e-Visa Directorate General of Immigration, accessed 10 Nov 2026", "https://evisa.imigrasi.go.id/front/faq/59e5c2c3-525d-485b-928b-ed25079d0fd1"],
+  ["Visa general information (30 days extendable, Rp 500.000, outbound ticket), e-Visa Directorate General of Immigration, accessed 10 Nov 2026", "https://evisa.imigrasi.go.id/front/faq/c356bfad-967c-4dac-8c3a-aba94526fa07"],
+  ["Social activities visit visa (voluntary programmes, IDR 2,000,000, 60 days), e-Visa Directorate General of Immigration, accessed 10 Nov 2026", "https://evisa.imigrasi.go.id/front/faq/22b12e35-af49-4e0b-86d9-cdb727b701bc"],
+  ["Extending Indonesia visa on arrival through evisa.imigrasi.go.id, Kantor Imigrasi Yogyakarta, updated 4 Nov 2025", "https://jogja.imigrasi.go.id/extending-indonesia-visa-on-arrival-101/"],
+  ["Indonesia e-VOA (B1) 2026: visa on arrival, visa-free entry and longer stays, Issa Compass, 30 Oct 2026", "https://www.issacompass.com/insights/indonesia-e-voa-b1-visa-on-arrival-guide"],
+  ["Visa for Indonesia: the complete guide to VoA, e-VOA and entry requirements, WeRoad, updated 19 May 2026", "https://www.weroad.com/blog/visa-indonesia"]]
+})
+
+# ---------------------------------------------------------------------------
+# 3) Weddings, funerals and ceremonies in Sumba: if you are invited
+# ---------------------------------------------------------------------------
+
+CER_EN = """<p>You hear a Sumbanese funeral before you see it: the steady beat of gongs and drums rolling across the valley, sometimes for days. In the yard of the clan house, dozens of relatives sit on mats under a tarpaulin, women in dark ikat sarongs, men in head cloths, betel boxes passed from hand to hand. Buffalo stand tethered by the stone tombs. If a Sumbanese friend, guide or host invites you to something like this, it is an honour, and a few simple rules will help you accept it well.</p>
+<p><strong>The short answer:</strong> if you are invited to a wedding, funeral or other ceremony in Sumba, go with your host, dress modestly (shoulders and knees covered; a woven cloth is appreciated), accept the betel nut or coffee you are offered, and ask your host what gift is appropriate rather than guessing. Expect animal sacrifice, often buffalo, horses or pigs, which is a religious and social duty, not a show. Never photograph the body, the rituals or the sacrifice without clear permission, and follow the elders' lead.</p>
+
+<h2>The background: Marapu, church and adat</h2>
+<p>Most Sumbanese today are Christian: in 2023 about 63% were Protestant and 30% Catholic, while the ancestral Marapu religion and others accounted for a little over 3%, according to figures compiled on Wikipedia. But the old customs (<em>adat</em>) run through everyone's life. Many families hold a church service and then follow the customary rites; the exchange of animals and cloth between clans continues regardless of religion. In Marapu belief the dead join the ancestors, who in turn bless or punish the living, which is why funerals are the biggest and most carefully staged events in Sumbanese life. For more on the faith, see our guide to <a href="/en/culture/marapu-ikat-traditional-villages/">Marapu, ikat and traditional villages</a>.</p>
+
+<h2>Funerals: what happens</h2>
+<p>A Sumbanese funeral is less a single day than a long process. Key elements you may see:</p>
+<ul>
+<li><strong>The long wait.</strong> Burial can be delayed for months or even years while the family gathers relatives, animals and money. The body is kept in the house, wrapped and carefully tended, and relatives make offerings of betel or cigarettes. In May 2023, for example, a nobleman of the customary village of Praiyawang in Rindi (East Sumba) who died on 1 January 2022 was buried with full rites on 25 May 2023.</li>
+<li><strong>Cloth.</strong> The body is wrapped in layers of ikat: a man usually in the <em>hinggi</em> men's cloth, a woman in the <em>lau</em> sarong. Each relative usually brings a cloth as a final tribute; the more cloth, the greater the honour. At the 2023 Praiyawang funeral the body was wrapped in more than 100 East Sumba cloths. A large hand-woven cloth can cost from a few million to more than ten million rupiah.</li>
+<li><strong>The seated position.</strong> In East Sumba the dead are traditionally placed seated, knees bent and chin resting on the knees.</li>
+<li><strong>Sacrifice.</strong> Buffalo, horses and pigs are slaughtered to accompany the dead and to feed the guests. At the 2023 funeral in Praiyawang, buffalo and horses were killed in front of the house before the burial, and another pair of each afterwards. The number of animals reflects the family's standing and its obligations to other clans.</li>
+<li><strong>The stone tomb.</strong> Nobles are buried in megalithic tombs; the Praiyawang tomb, a <em>watu mbeni</em>, weighed between one and five tons. Building a stone tomb takes time and the collective effort of the community.</li>
+<li><strong>Hospitality.</strong> Guests are received with betel nut and areca (<em>sirih pinang</em>), tea, coffee and food. Mourners bring something to ease the burden on the bereaved family.</li>
+</ul>
+
+<h2>Weddings and bridewealth</h2>
+<p>A Sumbanese marriage joins two clans, and the bridewealth (<em>belis</em>) is at its heart. The groom's side gives horses and buffalo, often with a gold ear pendant; the bride's side answers with pigs and woven cloth. Anthropologists working in Kodi and East Sumba recorded minimum bridewealths of around ten animals, with larger amounts depending on the bride's family. Part of the bridewealth is often deferred, which keeps the relationship between the two families alive for years.</p>
+<p>As a guest you will see speeches, negotiations, gongs, dancing and a big shared meal. You are not part of the exchange, and nobody will expect you to bring a horse.</p>
+
+<h2>If you are invited: before you go</h2>
+<ul>
+<li><strong>Go with your host.</strong> Arrive with the person who invited you, and let them introduce you to the family and elders. They will tell you where to sit (seating has its own rules) and when to greet the family.</li>
+<li><strong>Ask about a gift.</strong> Customs differ by region, by family and by the type of ceremony. Ask your host directly what would be appropriate for you as an outsider and how to hand it over. Relatives bring cloth or animals; for a visitor, your host may suggest something practical for the household or a modest contribution.</li>
+<li><strong>Dress modestly.</strong> Cover shoulders and knees. Dark, simple clothes are a safe choice for a funeral. If your host offers you an ikat cloth or sarong to wear, accept it; wearing a woven cloth at important events is appreciated.</li>
+<li><strong>Bring cash and patience.</strong> Ceremonies run for hours and timings are approximate. Bring water, a hat and small notes.</li>
+</ul>
+
+<h2>At the ceremony: etiquette</h2>
+<ul>
+<li><strong>Accept the betel.</strong> Serving <em>sirih pinang</em> (in East Sumba, the <em>pahappa</em> ritual) is a gesture of respect to guests. If you do not chew betel, you can touch the box with a smile and accept coffee instead, which hosts often offer to those who do not take betel.</li>
+<li><strong>Follow the elders.</strong> Sit where you are placed, stand when others stand and keep your voice low during prayers and speeches.</li>
+<li><strong>The sacrifice.</strong> The animals are killed in public, often in front of the house. If you find it hard to watch, step back quietly; do not show disgust or leave noisily. Do not intervene.</li>
+<li><strong>Do not touch</strong> the body, the coffin, the tomb, offerings or ritual objects, and do not sit or climb on stone tombs.</li>
+<li><strong>Eat what is offered,</strong> at least a little. Sharing the meal is part of the ritual. If you do not eat meat, quietly explain to your host.</li>
+<li><strong>No alcohol</strong> unless your hosts offer it, and never arrive drunk.</li>
+</ul>
+
+<h2>Photos and video</h2>
+<p>Ceremonies are photogenic, but they are family events, and permission is not automatic, especially at funerals or private rituals. Ask your host before you raise a camera, and ask again before photographing people close up. Never photograph or film the body, and do not film the slaughter unless the family clearly agrees. Turn off the flash and stay out of the way of the ritual specialists. Drones should stay in the bag. Posting images online also deserves a question: some families are happy to share, others are not.</p>
+
+<h2>Other ceremonies you may come across</h2>
+<ul>
+<li><strong>Pasola.</strong> The mounted spear ritual of western Sumba in February and March is public; see our <a href="/en/culture/pasola-explained/">Pasola explainer</a>.</li>
+<li><strong>Tomb building.</strong> Raising a new stone tomb is a community effort that can take a long time.</li>
+</ul>
+<p>Whatever the occasion, the rule is the same: you are a guest in a family's most important moments. Watch, listen, ask, and leave a little more than you take.</p>"""
+
+CER_ES = """<p>Un funeral en Sumba se oye antes de verse: el golpeteo constante de gongs y tambores que recorre el valle, a veces durante días. En el patio de la casa del clan, decenas de parientes se sientan en esteras bajo una lona, las mujeres con sarongs ikat oscuros y los hombres con tocados de tela, y las cajitas de betel pasan de mano en mano. Junto a las tumbas de piedra esperan búfalos atados. Si un amigo, un guía o un anfitrión sumbanés te invita a algo así, es un honor, y unas pocas normas sencillas te ayudarán a estar a la altura.</p>
+<p><strong>La respuesta corta:</strong> si te invitan a una boda, un funeral u otra ceremonia en Sumba, ve con tu anfitrión, vístete con discreción (hombros y rodillas cubiertos; se agradece llevar una tela tejida), acepta el betel o el café que te ofrezcan y pregunta a tu anfitrión qué regalo es adecuado en lugar de improvisar. Habrá sacrificio de animales, a menudo búfalos, caballos o cerdos, que es una obligación religiosa y social, no un espectáculo. No fotografíes nunca al difunto, los ritos ni el sacrificio sin un permiso claro, y sigue en todo a los ancianos.</p>
+
+<h2>El contexto: marapu, iglesia y adat</h2>
+<p>La mayoría de los sumbaneses son hoy cristianos: en 2023, alrededor del 63% era protestante y el 30% católico, mientras que la religión ancestral marapu y otras sumaban algo más del 3%, según las cifras recogidas en Wikipedia. Pero la costumbre (<em>adat</em>) atraviesa la vida de todos. Muchas familias celebran una misa o un culto y después siguen los ritos tradicionales; el intercambio de animales y telas entre clanes continúa sea cual sea la religión. En la creencia marapu los muertos se reúnen con los antepasados, que a su vez bendicen o castigan a los vivos, y por eso los funerales son los acontecimientos más grandes y cuidados de la vida en Sumba. Para saber más sobre esta fe, consulta nuestra guía sobre <a href="/es/culture/marapu-ikat-traditional-villages/">marapu, ikat y pueblos tradicionales</a>.</p>
+
+<h2>Funerales: qué ocurre</h2>
+<p>Un funeral en Sumba no es un solo día, sino un proceso largo. Estos son algunos elementos que puedes encontrar:</p>
+<ul>
+<li><strong>La larga espera.</strong> El entierro puede aplazarse meses o incluso años mientras la familia reúne a los parientes, los animales y el dinero. El cuerpo permanece en la casa, envuelto y cuidado, y los parientes le ofrecen betel o cigarrillos. En mayo de 2023, por ejemplo, un noble del pueblo tradicional de Praiyawang, en Rindi (Sumba Oriental), fallecido el 1 de enero de 2022, recibió sepultura con todos los ritos el 25 de mayo de 2023.</li>
+<li><strong>Las telas.</strong> El cuerpo se envuelve en capas de ikat: a los hombres, por lo general, con la tela masculina <em>hinggi</em>, y a las mujeres con el sarong <em>lau</em>. Cada pariente suele llevar una tela como último homenaje; cuantas más telas, mayor el honor. En el funeral de Praiyawang de 2023 el cuerpo se envolvió en más de 100 telas de Sumba Oriental. Una tela grande tejida a mano puede costar desde unos pocos millones hasta más de diez millones de rupias.</li>
+<li><strong>La postura sentada.</strong> En Sumba Oriental el difunto se coloca tradicionalmente sentado, con las rodillas dobladas y la barbilla apoyada en ellas.</li>
+<li><strong>El sacrificio.</strong> Se sacrifican búfalos, caballos y cerdos para acompañar al difunto y alimentar a los invitados. En el funeral de Praiyawang de 2023 se mataron búfalos y caballos ante la casa antes del entierro, y otra pareja de cada uno después. El número de animales refleja la posición de la familia y sus obligaciones con otros clanes.</li>
+<li><strong>La tumba de piedra.</strong> Los nobles reciben sepultura en tumbas megalíticas; la de Praiyawang, una <em>watu mbeni</em>, pesaba entre una y cinco toneladas. Levantar una tumba de piedra exige tiempo y el esfuerzo colectivo de la comunidad.</li>
+<li><strong>La hospitalidad.</strong> A los invitados se les recibe con betel y areca (<em>sirih pinang</em>), té, café y comida. Quienes acuden llevan algo para aliviar la carga de la familia en duelo.</li>
+</ul>
+
+<h2>Bodas y precio de la novia</h2>
+<p>Un matrimonio en Sumba une a dos clanes, y en su centro está el precio de la novia (<em>belis</em>). La familia del novio entrega caballos y búfalos, a menudo con un colgante de oro para la oreja; la de la novia responde con cerdos y telas tejidas. Los antropólogos que trabajaron en Kodi y en Sumba Oriental documentaron mínimos de unos diez animales, y las cantidades mayores dependen de la familia de la novia. Parte del <em>belis</em> suele aplazarse, lo que mantiene viva durante años la relación entre las dos familias.</p>
+<p>Como invitado verás discursos, negociaciones, gongs, bailes y una gran comida compartida. No formas parte del intercambio y nadie esperará que lleves un caballo.</p>
+
+<h2>Si te invitan: antes de ir</h2>
+<ul>
+<li><strong>Ve con tu anfitrión.</strong> Llega con quien te invitó y deja que te presente a la familia y a los ancianos. Te dirá dónde sentarte (los asientos tienen sus propias reglas) y cuándo saludar a la familia.</li>
+<li><strong>Pregunta por el regalo.</strong> Las costumbres varían según la zona, la familia y el tipo de ceremonia. Pregunta directamente a tu anfitrión qué sería adecuado para ti como forastero y cómo entregarlo. Los parientes llevan telas o animales; a un visitante, el anfitrión puede sugerirle algo práctico para la casa o una aportación modesta.</li>
+<li><strong>Vístete con discreción.</strong> Hombros y rodillas cubiertos. Para un funeral, ropa oscura y sencilla es una apuesta segura. Si tu anfitrión te ofrece una tela ikat o un sarong, acéptalo; llevar una tela tejida en las grandes ocasiones se agradece.</li>
+<li><strong>Lleva efectivo y paciencia.</strong> Las ceremonias duran horas y los horarios son aproximados. Lleva agua, sombrero y billetes pequeños.</li>
+</ul>
+
+<h2>Durante la ceremonia: normas de cortesía</h2>
+<ul>
+<li><strong>Acepta el betel.</strong> Ofrecer <em>sirih pinang</em> (en Sumba Oriental, el ritual del <em>pahappa</em>) es un gesto de respeto hacia el invitado. Si no mascas betel, puedes tocar la caja con una sonrisa y aceptar un café, que los anfitriones suelen ofrecer a quien no lo toma.</li>
+<li><strong>Sigue a los ancianos.</strong> Siéntate donde te indiquen, levántate cuando lo hagan los demás y habla en voz baja durante los rezos y los discursos.</li>
+<li><strong>El sacrificio.</strong> Los animales se sacrifican en público, a menudo delante de la casa. Si te cuesta mirar, retírate en silencio; no muestres repugnancia ni te marches haciendo ruido. No intervengas.</li>
+<li><strong>No toques</strong> el cuerpo, el ataúd, la tumba, las ofrendas ni los objetos rituales, y no te sientes ni te subas a las tumbas de piedra.</li>
+<li><strong>Come lo que te ofrezcan,</strong> aunque sea un poco. Compartir la comida forma parte del rito. Si no comes carne, explícaselo con discreción a tu anfitrión.</li>
+<li><strong>Nada de alcohol</strong> salvo que lo ofrezcan los anfitriones, y nunca llegues bebido.</li>
+</ul>
+
+<h2>Fotos y vídeo</h2>
+<p>Las ceremonias son muy fotogénicas, pero son actos familiares y el permiso no es automático, sobre todo en funerales o ritos privados. Pregunta a tu anfitrión antes de sacar la cámara y vuelve a preguntar antes de retratar a alguien de cerca. No fotografíes ni grabes nunca al difunto, y no grabes el sacrificio salvo que la familia lo acepte claramente. Apaga el flash y no estorbes a los oficiantes. El dron, mejor en la mochila. Publicar las imágenes en internet también merece una pregunta: a algunas familias les gusta compartirlas y a otras no.</p>
+
+<h2>Otras ceremonias que puedes encontrar</h2>
+<ul>
+<li><strong>La Pasola.</strong> El rito de lanzas a caballo del oeste de Sumba, en febrero y marzo, es público; consulta nuestra <a href="/es/culture/pasola-explained/">explicación de la Pasola</a>.</li>
+<li><strong>La construcción de tumbas.</strong> Levantar una nueva tumba de piedra es un esfuerzo colectivo que puede llevar mucho tiempo.</li>
+</ul>
+<p>Sea cual sea la ocasión, la regla es la misma: eres un invitado en los momentos más importantes de una familia. Observa, escucha, pregunta y deja un poco más de lo que te llevas.</p>"""
+
+CER_ID = """<p>Upacara kematian di Sumba terdengar sebelum terlihat: tabuhan gong dan tambur yang terus bergema di lembah, kadang berhari-hari. Di halaman rumah adat, puluhan kerabat duduk di atas tikar di bawah tenda terpal, kaum perempuan bersarung tenun gelap, kaum lelaki berikat kepala, dan tempat sirih pinang berpindah dari tangan ke tangan. Kerbau-kerbau tertambat di dekat kubur batu. Jika seorang sahabat, pemandu, atau tuan rumah orang Sumba mengundang Anda ke acara seperti ini, itu sebuah kehormatan, dan beberapa aturan sederhana akan membantu Anda membawa diri dengan baik.</p>
+<p><strong>Jawaban singkat:</strong> jika diundang ke pernikahan, upacara kematian, atau upacara adat lain di Sumba, datanglah bersama tuan rumah, berpakaian sopan (bahu dan lutut tertutup; mengenakan kain tenun dihargai), terima sirih pinang atau kopi yang disuguhkan, dan tanyakan kepada tuan rumah buah tangan yang pantas alih-alih menebak sendiri. Bersiaplah melihat penyembelihan hewan, sering kerbau, kuda, atau babi, yang merupakan kewajiban religius dan sosial, bukan tontonan. Jangan memotret jenazah, ritual, atau penyembelihan tanpa izin yang jelas, dan ikuti arahan para tetua.</p>
+
+<h2>Latar belakang: Marapu, gereja, dan adat</h2>
+<p>Sebagian besar orang Sumba kini beragama Kristen: pada 2023 sekitar 63% Protestan dan 30% Katolik, sedangkan penganut kepercayaan leluhur Marapu dan lainnya sedikit di atas 3%, menurut data yang dihimpun Wikipedia. Namun adat tetap mewarnai kehidupan semua orang. Banyak keluarga menggelar ibadah gereja lalu melanjutkan dengan ritus adat; pertukaran hewan dan kain antarkabihu tetap berjalan apa pun agamanya. Dalam kepercayaan Marapu, orang yang meninggal bergabung dengan para leluhur yang kemudian memberkati atau menghukum yang masih hidup, sehingga upacara kematian menjadi peristiwa terbesar dan paling cermat dipersiapkan dalam kehidupan orang Sumba. Selengkapnya, baca panduan kami tentang <a href="/id/culture/marapu-ikat-traditional-villages/">Marapu, tenun ikat, dan kampung adat</a>.</p>
+
+<h2>Upacara kematian: apa yang terjadi</h2>
+<p>Upacara kematian di Sumba bukan peristiwa sehari, melainkan proses panjang. Beberapa unsur yang mungkin Anda saksikan:</p>
+<ul>
+<li><strong>Penantian panjang.</strong> Pemakaman bisa ditunda berbulan-bulan bahkan bertahun-tahun sementara keluarga mengumpulkan kerabat, hewan, dan biaya. Jenazah disemayamkan di rumah, dibungkus dan dirawat, dan kerabat mempersembahkan sirih atau rokok. Pada Mei 2023, misalnya, seorang bangsawan dari Kampung Adat Praiyawang di Rindi, Sumba Timur, yang wafat pada 1 Januari 2022 baru dimakamkan secara adat pada 25 Mei 2023.</li>
+<li><strong>Kain.</strong> Jenazah dibungkus berlapis-lapis kain tenun: laki-laki umumnya dengan kain <em>hinggi</em>, perempuan dengan sarung <em>lau</em>. Setiap kerabat biasanya membawa selembar kain sebagai penghormatan terakhir; makin banyak kain, makin besar penghormatannya. Pada upacara di Praiyawang tahun 2023, jenazah dibungkus lebih dari 100 lembar kain tenun Sumba Timur. Selembar kain tenun besar bisa berharga jutaan hingga belasan juta rupiah.</li>
+<li><strong>Posisi duduk.</strong> Di Sumba Timur jenazah secara adat diletakkan dalam posisi duduk, lutut ditekuk dan dagu bertumpu pada lutut.</li>
+<li><strong>Penyembelihan.</strong> Kerbau, kuda, dan babi disembelih untuk mengantar arwah dan menjamu tamu. Pada upacara di Praiyawang 2023, kerbau dan kuda disembelih di depan rumah duka sebelum pemakaman, dan sepasang kerbau serta sepasang kuda lagi sesudahnya. Jumlah hewan mencerminkan kedudukan keluarga dan kewajibannya terhadap kabihu lain.</li>
+<li><strong>Kubur batu.</strong> Kaum bangsawan dimakamkan di kubur megalitik; kubur di Praiyawang, sebuah <em>watu mbeni</em>, beratnya satu hingga lima ton. Membangun kubur batu memerlukan waktu dan kerja bersama seluruh warga.</li>
+<li><strong>Keramahan.</strong> Tamu disambut dengan sirih pinang, teh, kopi, dan makanan. Para pelayat membawa sesuatu untuk meringankan beban keluarga yang berduka.</li>
+</ul>
+
+<h2>Pernikahan dan belis</h2>
+<p>Pernikahan di Sumba menyatukan dua kabihu, dan belis (mas kawin adat) menjadi intinya. Pihak laki-laki menyerahkan kuda dan kerbau, sering disertai anting emas; pihak perempuan membalas dengan babi dan kain tenun. Antropolog yang meneliti di Kodi dan Sumba Timur mencatat belis minimal sekitar sepuluh ekor hewan, dan jumlah yang lebih besar bergantung pada keluarga perempuan. Sebagian belis kerap ditunda pembayarannya, sehingga hubungan kedua keluarga terus terjaga bertahun-tahun.</p>
+<p>Sebagai tamu, Anda akan menyaksikan pidato adat, perundingan, gong, tarian, dan makan bersama. Anda tidak termasuk dalam pertukaran itu, dan tak seorang pun mengharapkan Anda membawa kuda.</p>
+
+<h2>Jika diundang: sebelum berangkat</h2>
+<ul>
+<li><strong>Datang bersama tuan rumah.</strong> Tibalah bersama orang yang mengundang Anda dan biarkan ia memperkenalkan Anda kepada keluarga dan tetua. Ia akan menunjukkan tempat duduk (tempat duduk punya aturannya sendiri) dan kapan menyalami keluarga.</li>
+<li><strong>Tanyakan soal buah tangan.</strong> Kebiasaan berbeda menurut wilayah, keluarga, dan jenis upacara. Tanyakan langsung kepada tuan rumah apa yang pantas bagi Anda sebagai orang luar dan bagaimana menyerahkannya. Kerabat membawa kain atau hewan; bagi tamu, tuan rumah mungkin menyarankan barang keperluan rumah tangga atau sumbangan sederhana.</li>
+<li><strong>Berpakaian sopan.</strong> Tutupi bahu dan lutut. Untuk upacara kematian, pakaian gelap dan sederhana adalah pilihan aman. Jika tuan rumah menawarkan kain tenun atau sarung untuk dikenakan, terimalah; mengenakan kain tenun pada acara penting sangat dihargai.</li>
+<li><strong>Bawa uang tunai dan kesabaran.</strong> Upacara berlangsung berjam-jam dan jadwalnya tidak pasti. Bawa air minum, topi, dan uang pecahan kecil.</li>
+</ul>
+
+<h2>Saat upacara: tata krama</h2>
+<ul>
+<li><strong>Terima sirih pinang.</strong> Menyuguhkan sirih pinang (di Sumba Timur disebut <em>pahappa</em>) adalah tanda hormat kepada tamu. Jika tidak mengunyah sirih, sentuh tempatnya sambil tersenyum lalu terima kopi, yang biasa disuguhkan kepada tamu yang tidak makan sirih.</li>
+<li><strong>Ikuti para tetua.</strong> Duduk di tempat yang ditunjukkan, berdiri saat yang lain berdiri, dan pelankan suara selama doa dan pidato adat.</li>
+<li><strong>Penyembelihan.</strong> Hewan disembelih di depan umum, sering di depan rumah duka. Jika tak sanggup melihat, mundurlah dengan tenang; jangan menunjukkan rasa jijik atau pergi dengan gaduh. Jangan ikut campur.</li>
+<li><strong>Jangan menyentuh</strong> jenazah, peti, kubur, sesaji, atau benda ritual, dan jangan duduk atau naik ke atas kubur batu.</li>
+<li><strong>Makan hidangan yang disuguhkan,</strong> walau sedikit. Makan bersama adalah bagian dari ritual. Jika tidak makan daging, sampaikan dengan sopan kepada tuan rumah.</li>
+<li><strong>Jangan minum alkohol</strong> kecuali ditawari tuan rumah, dan jangan datang dalam keadaan mabuk.</li>
+</ul>
+
+<h2>Foto dan video</h2>
+<p>Upacara adat memang memikat untuk difoto, tetapi ini acara keluarga dan izin tidak otomatis diberikan, terutama pada upacara kematian atau ritual tertutup. Tanyakan kepada tuan rumah sebelum mengangkat kamera, dan tanyakan lagi sebelum memotret orang dari dekat. Jangan pernah memotret atau merekam jenazah, dan jangan merekam penyembelihan kecuali keluarga jelas mengizinkan. Matikan lampu kilat dan jangan menghalangi para pemimpin ritual. Drone sebaiknya tetap di tas. Mengunggah foto ke internet juga perlu ditanyakan: sebagian keluarga senang, sebagian tidak.</p>
+
+<h2>Upacara lain yang mungkin Anda jumpai</h2>
+<ul>
+<li><strong>Pasola.</strong> Ritual adu lembing berkuda di Sumba bagian barat pada Februari dan Maret terbuka untuk umum; baca <a href="/id/culture/pasola-explained/">penjelasan kami tentang Pasola</a>.</li>
+<li><strong>Membangun kubur batu.</strong> Mendirikan kubur batu baru adalah kerja bersama yang bisa memakan waktu lama.</li>
+</ul>
+<p>Apa pun acaranya, prinsipnya sama: Anda adalah tamu dalam saat-saat terpenting sebuah keluarga. Amati, dengarkan, bertanya, dan tinggalkan sedikit lebih banyak daripada yang Anda bawa pulang.</p>"""
+
+GUIDES.append({
+ "section": "culture", "slug": "sumba-weddings-funerals-ceremonies", "date": "2026-11-10", "time": "09:00", "kind": "guide",
+ "slugs": {"es": "bodas-funerales-y-ceremonias-en-sumba", "id": "pernikahan-kematian-dan-upacara-adat-sumba"},
+ "img_key": "marapu-ikat-traditional-villages",
+ "en": {
+  "title": "Weddings, funerals and ceremonies in Sumba: what to do if you are invited",
+  "dek": "Gifts, dress, betel nut, animal sacrifice and photo etiquette: how to be a good guest at the most important moments of Sumbanese family life.",
+  "answer": "If you are invited to a ceremony in Sumba, go with your host, dress modestly with shoulders and knees covered, accept the betel nut or coffee offered and ask your host what gift suits you as an outsider. Funerals and weddings involve the exchange of animals and ikat cloth and the sacrifice of buffalo, horses or pigs, a religious and social duty rooted in Marapu belief. Never photograph the body, rituals or sacrifice without clear permission.",
+  "body": CER_EN},
+ "es": {
+  "title": "Bodas, funerales y ceremonias en Sumba: qué hacer si te invitan",
+  "dek": "Regalos, vestimenta, betel, sacrificio de animales y fotos: cómo ser un buen invitado en los momentos más importantes de una familia sumbanesa.",
+  "answer": "Si te invitan a una ceremonia en Sumba, ve con tu anfitrión, vístete con discreción y con hombros y rodillas cubiertos, acepta el betel o el café que te ofrezcan y pregunta qué regalo es adecuado para ti como forastero. Funerales y bodas implican el intercambio de animales y telas ikat y el sacrificio de búfalos, caballos o cerdos, una obligación religiosa y social con raíces en la creencia marapu. No fotografíes nunca al difunto, los ritos ni el sacrificio sin un permiso claro.",
+  "body": CER_ES},
+ "id": {
+  "title": "Pernikahan, kematian, dan upacara adat Sumba: etiket jika diundang",
+  "dek": "Buah tangan, pakaian, sirih pinang, penyembelihan hewan, dan etika memotret: cara menjadi tamu yang baik dalam momen terpenting keluarga Sumba.",
+  "answer": "Jika diundang ke upacara adat di Sumba, datanglah bersama tuan rumah, berpakaian sopan dengan bahu dan lutut tertutup, terima sirih pinang atau kopi yang disuguhkan, dan tanyakan buah tangan yang pantas bagi orang luar. Upacara kematian dan pernikahan melibatkan pertukaran hewan dan kain tenun serta penyembelihan kerbau, kuda, atau babi, kewajiban religius dan sosial yang berakar pada kepercayaan Marapu. Jangan memotret jenazah, ritual, atau penyembelihan tanpa izin yang jelas.",
+  "body": CER_ID},
+ "facts": {
+  "en": [
+   ["Dress", "Shoulders and knees covered; dark, simple clothes for funerals; woven cloth appreciated"],
+   ["Welcome", "Betel nut and areca (sirih pinang), tea or coffee"],
+   ["Gifts", "Relatives bring ikat cloth or animals; visitors ask the host what is appropriate"],
+   ["Sacrifice", "Buffalo, horses and pigs; a religious and social duty"],
+   ["Photos", "Ask first; never photograph the body; film the sacrifice only with clear consent"],
+   ["Religion", "About 63% Protestant, 30% Catholic, a little over 3% Marapu and others (2023)"]],
+  "es": [
+   ["Vestimenta", "Hombros y rodillas cubiertos; ropa oscura y sencilla en funerales; se agradece una tela tejida"],
+   ["Bienvenida", "Betel y areca (sirih pinang), té o café"],
+   ["Regalos", "Los parientes llevan telas ikat o animales; el visitante pregunta al anfitrión"],
+   ["Sacrificio", "Búfalos, caballos y cerdos; una obligación religiosa y social"],
+   ["Fotos", "Pide permiso; nunca al difunto; el sacrificio solo con consentimiento claro"],
+   ["Religión", "Alrededor del 63% protestante, 30% católica, algo más del 3% marapu y otras (2023)"]],
+  "id": [
+   ["Pakaian", "Bahu dan lutut tertutup; pakaian gelap dan sederhana untuk upacara kematian; kain tenun dihargai"],
+   ["Sambutan", "Sirih pinang, teh, atau kopi"],
+   ["Buah tangan", "Kerabat membawa kain tenun atau hewan; tamu bertanya kepada tuan rumah"],
+   ["Penyembelihan", "Kerbau, kuda, dan babi; kewajiban religius dan sosial"],
+   ["Foto", "Minta izin; jangan memotret jenazah; rekam penyembelihan hanya dengan izin jelas"],
+   ["Agama", "Sekitar 63% Protestan, 30% Katolik, sedikit di atas 3% Marapu dan lainnya (2023)"]]},
+ "faq": {
+  "en": [
+   ["What should I bring to a funeral in Sumba?", "Ask your host. Relatives traditionally bring ikat cloth or animals, and mourners bring something to ease the family's burden. As an outsider you are not expected to bring an animal; your host may suggest something practical for the household or a modest contribution."],
+   ["What should I wear to a Sumbanese ceremony?", "Modest clothes that cover shoulders and knees; for funerals, dark and simple. If your host offers an ikat cloth or sarong, wear it, as woven cloth is appreciated at important events. Closed shoes and a hat help on dusty village grounds."],
+   ["Why are animals sacrificed at Sumba funerals?", "In Marapu belief the animals accompany the dead to the world of the ancestors, and they also feed the many guests and repay obligations between clans. The number of buffalo, horses and pigs reflects the family's standing. It is a spiritual duty, not a spectacle."],
+   ["Can I take photos at a Sumba funeral?", "Only with permission, which is not automatic at funerals. Ask your host first, never photograph the body, and film the sacrifice only if the family clearly agrees. Turn off the flash and do not fly drones."],
+   ["Why are bodies kept at home for so long in Sumba?", "Because a proper funeral requires gathering relatives, animals, cloth and money, which can take months or years. The body is wrapped in ikat and tended in the house, and relatives bring offerings until the burial."],
+   ["What is belis in Sumba?", "Belis is the bridewealth exchanged at a marriage: the groom's family gives horses and buffalo, often with gold ornaments, and the bride's family answers with pigs and woven cloth. Part is often deferred, which keeps the two families bound for years."]],
+  "es": [
+   ["¿Qué llevo a un funeral en Sumba?", "Pregunta a tu anfitrión. Los parientes llevan por tradición telas ikat o animales, y quienes acuden aportan algo para aliviar la carga de la familia. A un forastero no se le pide un animal; el anfitrión puede sugerir algo práctico para la casa o una aportación modesta."],
+   ["¿Cómo debo vestirme para una ceremonia en Sumba?", "Con ropa discreta que cubra hombros y rodillas; en los funerales, oscura y sencilla. Si el anfitrión te ofrece una tela ikat o un sarong, póntelo, porque se aprecia en las grandes ocasiones. Calzado cerrado y sombrero ayudan en los patios polvorientos."],
+   ["¿Por qué se sacrifican animales en los funerales de Sumba?", "En la creencia marapu los animales acompañan al difunto al mundo de los antepasados, y además alimentan a los invitados y saldan obligaciones entre clanes. El número de búfalos, caballos y cerdos refleja la posición de la familia. Es un deber espiritual, no un espectáculo."],
+   ["¿Puedo hacer fotos en un funeral en Sumba?", "Solo con permiso, que en un funeral no es automático. Pregunta primero al anfitrión, no fotografíes nunca al difunto y graba el sacrificio solo si la familia lo acepta claramente. Apaga el flash y no vueles drones."],
+   ["¿Por qué se guardan los cuerpos tanto tiempo en casa?", "Porque un funeral como es debido exige reunir parientes, animales, telas y dinero, y eso puede llevar meses o años. El cuerpo se envuelve en ikat y se cuida en la casa, y los parientes le llevan ofrendas hasta el entierro."],
+   ["¿Qué es el belis en Sumba?", "Es el precio de la novia que se intercambia en una boda: la familia del novio entrega caballos y búfalos, a menudo con adornos de oro, y la de la novia responde con cerdos y telas tejidas. Parte suele aplazarse, lo que mantiene unidas a las dos familias durante años."]],
+  "id": [
+   ["Apa yang dibawa ke upacara kematian di Sumba?", "Tanyakan kepada tuan rumah. Secara adat kerabat membawa kain tenun atau hewan, dan pelayat membawa sesuatu untuk meringankan beban keluarga. Orang luar tidak diharapkan membawa hewan; tuan rumah mungkin menyarankan barang keperluan rumah tangga atau sumbangan sederhana."],
+   ["Pakaian apa yang pantas untuk upacara adat Sumba?", "Pakaian sopan yang menutupi bahu dan lutut; untuk upacara kematian, gelap dan sederhana. Jika tuan rumah menawarkan kain tenun atau sarung, kenakanlah, karena kain tenun dihargai pada acara penting. Sepatu tertutup dan topi membantu di halaman kampung yang berdebu."],
+   ["Mengapa hewan disembelih dalam upacara kematian di Sumba?", "Dalam kepercayaan Marapu, hewan mengantar arwah ke alam leluhur, sekaligus menjamu banyak tamu dan melunasi kewajiban antarkabihu. Jumlah kerbau, kuda, dan babi mencerminkan kedudukan keluarga. Ini kewajiban spiritual, bukan tontonan."],
+   ["Bolehkah memotret di upacara kematian di Sumba?", "Hanya dengan izin, yang tidak otomatis diberikan pada upacara kematian. Tanyakan dulu kepada tuan rumah, jangan memotret jenazah, dan rekam penyembelihan hanya jika keluarga jelas mengizinkan. Matikan lampu kilat dan jangan menerbangkan drone."],
+   ["Mengapa jenazah disemayamkan lama di rumah?", "Karena pemakaman adat yang layak menuntut kehadiran kerabat, hewan, kain, dan biaya, yang bisa memakan waktu berbulan-bulan atau bertahun-tahun. Jenazah dibungkus kain tenun dan dirawat di rumah, dan kerabat membawa sesaji hingga hari pemakaman."],
+   ["Apa itu belis di Sumba?", "Belis adalah mas kawin adat dalam pernikahan: keluarga laki-laki menyerahkan kuda dan kerbau, sering dengan perhiasan emas, dan keluarga perempuan membalas dengan babi dan kain tenun. Sebagian kerap ditunda, sehingga kedua keluarga terikat bertahun-tahun."]]},
+ "places": [
+  {"name": "Praiyawang, Rende", "lat": -9.9356, "lon": 120.67, "area": "Rindi, East Sumba"}],
+ "sources": [
+  ["Kemenko PMK hadiri upacara pemakaman adat Umbu Kanabu Ndaung di Kampung Adat Praiyawang, Kemenko PMK, 30 May 2023", "https://kemenkopmk.go.id/node/3965"],
+  ["Kain tenun Sumba dalam prosesi kematian sebagai simbol penghormatan masyarakat Marapu, Good News From Indonesia, 29 Jul 2026", "https://www.goodnewsfromindonesia.id/2026/07/29/kain-tenun-sumba-dalam-prosesi-kematian-sebagai-simbol-penghormatan-masyarakat-marapu"],
+  ["Pahappa, tradisi keramahan nan autentik dari Sumba Timur, TIMES Indonesia, 6 Sep 2023", "https://timesindonesia.co.id/wisata/467800/pahappa-tradisi-keramahan-nan-autentik-dari-sumba-timur"],
+  ["Marapu in Sumba: what it is and what visitors should know, Backindo, 20 Feb 2026 (updated Jul 2026)", "https://www.backindo.com/?p=8333"],
+  ["Sumbanese culture: birth, life and death, The Spice Route End", "https://thespicerouteend.com/sumba-culture-birth-life-death/"],
+  ["Sumba (religion figures 2023), Wikipedia", "https://en.wikipedia.org/wiki/Sumba"]]
+})
+
+# ---------------------------------------------------------------------------
+# 4) Volunteering in Sumba responsibly
+# ---------------------------------------------------------------------------
+
+VOL_EN = """<p>Spend a few days in rural Sumba and you will see both sides of the island at once: villages of great dignity and generosity, and the everyday reality of long walks for water, schools short of books and clinics hours away by road. It is natural to want to help. The question is how to help without doing harm, and that question matters more on an island this small, where a single badly run project can shape how a whole community sees outsiders.</p>
+<p><strong>The short answer:</strong> volunteer in Sumba only through an established, locally led organisation that asks for skills it actually needs, commits you for weeks or months rather than days, has a child-protection policy and is registered in Indonesia. Avoid orphanage visits and short-term work with children altogether. Get the right visa: volunteering on a tourist visa is not allowed, and Indonesia's C6 social activities visa (IDR 2,000,000 for up to 60 days, checked on 10 November 2026) exists for volunteer programmes. Often the most useful thing you can do is spend your money locally and donate to proven organisations instead of going yourself.</p>
+
+<h2>What actually helps</h2>
+<p>The best volunteer placements share a few features. Use them as a test:</p>
+<ul>
+<li><strong>Local leadership.</strong> The project is run or co-run by Sumbanese people who decide the priorities. You support their plan; you do not bring your own.</li>
+<li><strong>Real skills.</strong> Nurses, doctors, engineers, teachers with qualifications, accountants, agronomists and people who can train local staff are far more useful than general labour. If you would not be allowed to do the job at home, you should not do it in Sumba.</li>
+<li><strong>Time.</strong> Weeks or months, not a few days. Short stays cost the host organisation time to train and supervise you.</li>
+<li><strong>Training, not replacing.</strong> Good placements leave skills behind: you teach a local nurse a technique, you help a cooperative with bookkeeping, you build a website that local staff can keep updating.</li>
+<li><strong>Honest money.</strong> Fees you pay should be explained: how much goes to your board and lodging, how much to the project, how much to an agency.</li>
+</ul>
+
+<h2>What to avoid: orphanage tourism</h2>
+<p>The clearest rule is the simplest: <strong>do not visit or volunteer in orphanages.</strong> Child-protection organisations are unanimous on this. Save the Children notes that about 80% of children living in orphanages worldwide have at least one surviving parent, and the Better Care Network says almost all have extended family. Children end up in residential care mostly because of poverty, lack of access to schools or disability, not because they have no one.</p>
+<p>Indonesia is no exception. A study by Save the Children, the Ministry of Social Affairs and UNICEF published in 2007 estimated that some 7,000 childcare institutions were caring for up to half a million children across the country, and found that families often placed children in them to secure food, shelter and schooling. In the Aceh tsunami survey cited by the study, more than 85% of children placed in institutions had at least one living parent.</p>
+<p>Why visits and short volunteering do harm:</p>
+<ul>
+<li><strong>Attachment.</strong> Children who bond with a stream of visitors who then leave suffer repeated loss; institutional care already lacks the consistent caregiver children need.</li>
+<li><strong>Safety.</strong> Unvetted visitors gain access to highly vulnerable children.</li>
+<li><strong>Demand.</strong> Money and attention from visitors can keep orphanages open, or even encourage new ones, and make operators resist efforts to send children home to their families.</li>
+<li><strong>Exploitation.</strong> ReThink Orphanages warns that near tourist areas children may be made to perform dances, sell souvenirs or beg for visitors.</li>
+</ul>
+<p>If you want to help children, support organisations that keep families together: school fees and supplies through schools, family support programmes, health and nutrition work. Volunteer <em>for</em> children, not <em>with</em> them.</p>
+
+<h2>Other things to be careful about</h2>
+<ul>
+<li><strong>Short-term teaching.</strong> A week of English lessons by a new face every month disrupts classes more than it helps. If you are a qualified teacher, look for programmes that train local teachers.</li>
+<li><strong>Building projects.</strong> Unskilled volunteers building a school or a water tank often take paid work away from local builders and produce lower-quality results. Funding local labour is usually better.</li>
+<li><strong>Medical work without a licence.</strong> Do not give treatment, distribute medicines or examine people unless you are a licensed professional working under a registered programme.</li>
+<li><strong>Handouts.</strong> Giving sweets, money or gifts to children in villages encourages begging and can create tension. Give through the village head, the school or the church instead, and ask first.</li>
+<li><strong>Photos for social media.</strong> Do not photograph children or patients for your profile. If a project asks you to post images of children to raise money, that is a warning sign.</li>
+<li><strong>Cultural mistakes.</strong> Sumba's villages are homes with their own customs and Marapu sacred places; read our guide to <a href="/en/culture/marapu-ikat-traditional-villages/">Marapu, ikat and traditional villages</a> before you go.</li>
+</ul>
+
+<h2>How to check an organisation</h2>
+<p>Before you sign up or donate, ask these questions and expect clear answers in writing:</p>
+<ol>
+<li><strong>Is it legally registered in Indonesia?</strong> Ask for its registration details (many Indonesian non-profits are foundations, <em>yayasan</em>) and the name of the person responsible on the island.</li>
+<li><strong>Who runs it?</strong> Are Sumbanese staff in decision-making roles? How long has it been working in the area?</li>
+<li><strong>What exactly will you do,</strong> and why can that job not be done by a local person who could be paid for it?</li>
+<li><strong>Does it have a child-protection policy?</strong> Will it ask for a criminal record check from you? Organisations that work with children and do not ask are a red flag.</li>
+<li><strong>Where does your money go?</strong> Ask for a breakdown of fees and for the latest annual report or accounts.</li>
+<li><strong>Which visa will you need?</strong> A serious organisation will tell you that a tourist visa is not enough and help with a social activities visa letter.</li>
+<li><strong>Does it run or promote orphanage volunteering or visits?</strong> If yes, walk away.</li>
+</ol>
+<p>We do not recommend specific organisations. Search for groups working in health, water, education or livelihoods on the island, check them with the questions above, and ask people who have worked with them for at least a year.</p>
+
+<h2>The visa question</h2>
+<p>Volunteering is an activity under Indonesian immigration law, and immigration takes it seriously. According to the official e-Visa site, the social activities visit visa (C6) covers voluntary programmes and humanitarian and social activities, along with tourism and family visits. As of 10 November 2026 it costs IDR 2,000,000 (around USD 120) for a stay of up to 60 days, extendable. You need a passport valid for at least six months, a bank statement from the past three months showing at least USD 2,000, a photo, a guarantor and a letter from the organisation describing your activities. Holders may not sell goods or services or receive wages in Indonesia. Read our <a href="/en/getting-here/indonesia-visa-for-sumba-explained/">Indonesia visa guide for Sumba</a>, and always confirm on evisa.imigrasi.go.id.</p>
+
+<h2>Helping without volunteering</h2>
+<p>For most travellers, the most effective help does not need a placement at all:</p>
+<ul>
+<li><strong>Spend locally.</strong> Hire local drivers and guides, eat at family-run warungs, and pay entrance contributions at villages with good grace.</li>
+<li><strong>Buy ikat from weavers.</strong> Buying directly from weavers and cooperatives puts money into households; see our guide to <a href="/en/culture/sumba-ikat-weaving-where-to-buy/">Sumba ikat and where to buy it</a>.</li>
+<li><strong>Donate money, not goods.</strong> Shipping clothes or books is expensive and rarely what is needed. Money to a well-run local organisation can buy exactly what is missing, from local suppliers.</li>
+<li><strong>Use your skills remotely.</strong> Translation, design, grant writing or accounting can be offered from home to an organisation you trust.</li>
+<li><strong>Come back.</strong> Long relationships with one community, built over several visits, are worth more than a week of intense activity.</li>
+</ul>
+<p>Sumba does not need saviours. It needs visitors who listen, respect local leadership and leave the island a little better than they found it.</p>"""
+
+VOL_ES = """<p>Basta pasar unos días en la Sumba rural para ver a la vez las dos caras de la isla: pueblos de enorme dignidad y generosidad, y una vida diaria de largas caminatas en busca de agua, escuelas con pocos libros y centros de salud a horas por carretera. Querer ayudar es natural. La cuestión es cómo hacerlo sin causar daño, y eso pesa más en una isla tan pequeña, donde un solo proyecto mal gestionado puede marcar la imagen que toda una comunidad tiene de los forasteros.</p>
+<p><strong>La respuesta corta:</strong> haz voluntariado en Sumba solo a través de una organización consolidada y dirigida por gente local, que pida capacidades que de verdad necesita, que te comprometa semanas o meses y no unos pocos días, que tenga una política de protección infantil y que esté registrada en Indonesia. Evita por completo las visitas a orfanatos y el trabajo de corta duración con niños. Consigue el visado adecuado: no se permite hacer voluntariado con un visado de turista, y para eso existe el visado de actividades sociales C6 (2.000.000 de rupias por un máximo de 60 días, comprobado el 10 de noviembre de 2026). A menudo, lo más útil es gastar el dinero en la isla y donar a organizaciones solventes en lugar de ir uno mismo.</p>
+
+<h2>Lo que de verdad ayuda</h2>
+<p>Los buenos voluntariados comparten algunos rasgos. Úsalos como prueba:</p>
+<ul>
+<li><strong>Liderazgo local.</strong> El proyecto lo dirigen o codirigen sumbaneses que fijan las prioridades. Tú apoyas su plan; no traes el tuyo.</li>
+<li><strong>Capacidades reales.</strong> Enfermeras, médicos, ingenieros, docentes titulados, contables, agrónomos y personas capaces de formar al personal local son mucho más útiles que la mano de obra sin cualificar. Si en tu país no te dejarían hacer ese trabajo, tampoco deberías hacerlo en Sumba.</li>
+<li><strong>Tiempo.</strong> Semanas o meses, no unos días. Las estancias cortas obligan a la organización a dedicar tiempo a formarte y supervisarte.</li>
+<li><strong>Formar, no sustituir.</strong> Los buenos voluntariados dejan conocimientos: enseñas una técnica a una enfermera local, ayudas a una cooperativa con la contabilidad, creas una web que el personal pueda seguir actualizando.</li>
+<li><strong>Cuentas claras.</strong> Las cuotas que pagas deben estar explicadas: cuánto va a tu alojamiento y comida, cuánto al proyecto y cuánto a una agencia.</li>
+</ul>
+
+<h2>Lo que hay que evitar: el turismo de orfanatos</h2>
+<p>La regla más clara es también la más sencilla: <strong>no visites orfanatos ni hagas voluntariado en ellos.</strong> Las organizaciones de protección de la infancia coinciden en este punto. Save the Children recuerda que alrededor del 80% de los niños que viven en orfanatos en el mundo tiene al menos un progenitor vivo, y la Better Care Network señala que casi todos tienen familia extensa. Los niños acaban en centros sobre todo por la pobreza, la falta de acceso a la escuela o la discapacidad, no porque no tengan a nadie.</p>
+<p>Indonesia no es una excepción. Un estudio de Save the Children, el Ministerio de Asuntos Sociales y UNICEF publicado en 2007 calculó que unas 7.000 instituciones atendían a hasta medio millón de niños en el país, y constató que las familias los internaban a menudo para asegurarles comida, techo y escuela. En la encuesta sobre el tsunami de Aceh que cita el estudio, más del 85% de los niños internados tenía al menos un progenitor vivo.</p>
+<p>Por qué las visitas y el voluntariado corto hacen daño:</p>
+<ul>
+<li><strong>El apego.</strong> Los niños que se encariñan con un desfile de visitantes que luego se marchan sufren pérdidas repetidas; la atención institucional ya carece de la figura estable que necesitan.</li>
+<li><strong>La seguridad.</strong> Visitantes sin ningún control acceden a niños muy vulnerables.</li>
+<li><strong>La demanda.</strong> El dinero y la atención de los visitantes pueden mantener abiertos los orfanatos, incluso fomentar otros nuevos, y hacer que sus gestores se resistan a que los niños vuelvan con sus familias.</li>
+<li><strong>La explotación.</strong> ReThink Orphanages advierte de que, cerca de las zonas turísticas, se puede obligar a los niños a bailar, vender recuerdos o pedir dinero a los visitantes.</li>
+</ul>
+<p>Si quieres ayudar a la infancia, apoya a organizaciones que mantienen unidas a las familias: matrículas y material a través de las escuelas, programas de apoyo familiar, trabajo en salud y nutrición. Haz voluntariado <em>por</em> los niños, no <em>con</em> ellos.</p>
+
+<h2>Otras cosas con las que conviene tener cuidado</h2>
+<ul>
+<li><strong>Dar clases unos días.</strong> Una semana de inglés con una cara nueva cada mes desordena más las clases de lo que ayuda. Si eres docente titulado, busca programas que formen a los maestros locales.</li>
+<li><strong>Proyectos de construcción.</strong> Los voluntarios sin oficio que levantan una escuela o un depósito de agua suelen quitar trabajo remunerado a los albañiles locales y obtener peores resultados. Suele ser mejor financiar mano de obra local.</li>
+<li><strong>Trabajo sanitario sin licencia.</strong> No trates, no repartas medicamentos ni examines a nadie salvo que seas un profesional colegiado dentro de un programa registrado.</li>
+<li><strong>Regalos sueltos.</strong> Dar caramelos, dinero o regalos a los niños en los pueblos fomenta la mendicidad y puede crear tensiones. Canalízalo a través del jefe de la aldea, la escuela o la iglesia, y pregunta antes.</li>
+<li><strong>Fotos para redes sociales.</strong> No fotografíes a niños o pacientes para tu perfil. Si un proyecto te pide publicar imágenes de niños para recaudar dinero, es una señal de alarma.</li>
+<li><strong>Errores culturales.</strong> Los pueblos de Sumba son hogares con sus propias costumbres y lugares sagrados marapu; lee antes nuestra guía sobre <a href="/es/culture/marapu-ikat-traditional-villages/">marapu, ikat y pueblos tradicionales</a>.</li>
+</ul>
+
+<h2>Cómo comprobar una organización</h2>
+<p>Antes de inscribirte o donar, haz estas preguntas y pide respuestas claras por escrito:</p>
+<ol>
+<li><strong>¿Está registrada legalmente en Indonesia?</strong> Pide sus datos de registro (muchas entidades sin ánimo de lucro indonesias son fundaciones, <em>yayasan</em>) y el nombre del responsable en la isla.</li>
+<li><strong>¿Quién la dirige?</strong> ¿Hay personal sumbanés en puestos de decisión? ¿Cuánto tiempo lleva trabajando en la zona?</li>
+<li><strong>¿Qué vas a hacer exactamente,</strong> y por qué no puede hacerlo una persona local a la que se pague por ello?</li>
+<li><strong>¿Tiene una política de protección infantil?</strong> ¿Te pedirá un certificado de antecedentes penales? Si trabaja con niños y no lo pide, es una señal de alarma.</li>
+<li><strong>¿Adónde va tu dinero?</strong> Pide el desglose de las cuotas y la última memoria anual o las cuentas.</li>
+<li><strong>¿Qué visado necesitarás?</strong> Una organización seria te dirá que el visado de turista no basta y te ayudará con la carta para el visado de actividades sociales.</li>
+<li><strong>¿Organiza o promueve voluntariado o visitas en orfanatos?</strong> Si es así, márchate.</li>
+</ol>
+<p>No recomendamos organizaciones concretas. Busca grupos que trabajen en salud, agua, educación o medios de vida en la isla, compruébalos con estas preguntas y habla con personas que hayan colaborado con ellos al menos un año.</p>
+
+<h2>La cuestión del visado</h2>
+<p>El voluntariado es una actividad regulada por la ley de inmigración indonesia, y las autoridades se lo toman en serio. Según la web oficial de visados electrónicos, el visado de visita para actividades sociales (C6) cubre programas de voluntariado y actividades humanitarias y sociales, además de turismo y visitas familiares. A 10 de noviembre de 2026 cuesta 2.000.000 de rupias (unos 120 dólares) por una estancia de hasta 60 días, prorrogable. Hace falta un pasaporte con al menos seis meses de validez, un extracto bancario de los últimos tres meses con un saldo mínimo de 2.000 dólares, una foto, un avalista y una carta de la organización que describa tus actividades. Su titular no puede vender bienes o servicios ni cobrar un salario en Indonesia. Lee nuestra <a href="/es/getting-here/indonesia-visa-for-sumba-explained/">guía de visados de Indonesia para Sumba</a> y confírmalo siempre en evisa.imigrasi.go.id.</p>
+
+<h2>Ayudar sin hacer voluntariado</h2>
+<p>Para la mayoría de los viajeros, la ayuda más eficaz no exige ningún voluntariado:</p>
+<ul>
+<li><strong>Gasta en la isla.</strong> Contrata conductores y guías locales, come en <em>warungs</em> familiares y paga de buen grado las aportaciones de entrada a los pueblos.</li>
+<li><strong>Compra ikat a las tejedoras.</strong> Comprar directamente a tejedoras y cooperativas lleva el dinero a los hogares; consulta nuestra guía sobre <a href="/es/culture/sumba-ikat-weaving-where-to-buy/">el ikat de Sumba y dónde comprarlo</a>.</li>
+<li><strong>Dona dinero, no objetos.</strong> Enviar ropa o libros es caro y rara vez es lo que falta. El dinero a una organización local bien gestionada permite comprar justo lo necesario a proveedores de la zona.</li>
+<li><strong>Usa tus capacidades a distancia.</strong> Traducción, diseño, redacción de subvenciones o contabilidad pueden ofrecerse desde casa a una organización de confianza.</li>
+<li><strong>Vuelve.</strong> Una relación larga con una comunidad, construida a lo largo de varias visitas, vale más que una semana de actividad intensa.</li>
+</ul>
+<p>Sumba no necesita salvadores. Necesita visitantes que escuchen, respeten el liderazgo local y dejen la isla un poco mejor de como la encontraron.</p>"""
+
+VOL_ID = """<p>Cukup beberapa hari di pedesaan Sumba untuk melihat dua wajah pulau ini sekaligus: kampung-kampung yang penuh martabat dan kemurahan hati, serta kenyataan sehari-hari berupa perjalanan jauh untuk mengambil air, sekolah yang kekurangan buku, dan puskesmas yang berjam-jam jauhnya. Keinginan untuk membantu itu wajar. Pertanyaannya, bagaimana membantu tanpa merugikan, dan itu makin penting di pulau sekecil ini, tempat satu proyek yang dikelola buruk bisa membentuk cara seluruh komunitas memandang orang luar.</p>
+<p><strong>Jawaban singkat:</strong> jadilah relawan di Sumba hanya melalui lembaga yang mapan dan dipimpin warga setempat, yang meminta keahlian yang memang dibutuhkan, melibatkan Anda berminggu-minggu atau berbulan-bulan alih-alih beberapa hari, memiliki kebijakan perlindungan anak, dan terdaftar di Indonesia. Hindari sama sekali kunjungan ke panti asuhan dan kegiatan singkat bersama anak-anak. Urus visa yang tepat: kegiatan relawan tidak boleh dilakukan dengan visa wisata, dan untuk itu tersedia visa kunjungan kegiatan sosial C6 (Rp 2.000.000 untuk hingga 60 hari, diperiksa 10 November 2026). Sering kali bantuan paling berguna adalah membelanjakan uang di tingkat lokal dan berdonasi kepada lembaga yang terbukti baik, alih-alih datang sendiri.</p>
+
+<h2>Bantuan yang benar-benar berguna</h2>
+<p>Penempatan relawan yang baik punya beberapa ciri yang sama. Jadikan ini ukuran:</p>
+<ul>
+<li><strong>Dipimpin warga setempat.</strong> Proyek dijalankan atau dipimpin bersama oleh orang Sumba yang menentukan prioritasnya. Anda mendukung rencana mereka, bukan membawa rencana sendiri.</li>
+<li><strong>Keahlian nyata.</strong> Perawat, dokter, insinyur, guru bersertifikat, akuntan, ahli pertanian, dan orang yang mampu melatih staf lokal jauh lebih berguna daripada tenaga kasar. Jika di negara Anda sendiri Anda tidak boleh mengerjakan pekerjaan itu, jangan mengerjakannya di Sumba.</li>
+<li><strong>Waktu.</strong> Berminggu-minggu atau berbulan-bulan, bukan beberapa hari. Kunjungan singkat justru menyita waktu lembaga untuk melatih dan mengawasi Anda.</li>
+<li><strong>Melatih, bukan menggantikan.</strong> Penempatan yang baik meninggalkan keterampilan: mengajarkan teknik kepada perawat setempat, membantu koperasi menata pembukuan, membuat situs yang bisa terus diperbarui staf lokal.</li>
+<li><strong>Keuangan yang jujur.</strong> Biaya yang Anda bayar harus dijelaskan: berapa untuk makan dan menginap, berapa untuk proyek, berapa untuk agen.</li>
+</ul>
+
+<h2>Yang harus dihindari: wisata panti asuhan</h2>
+<p>Aturan paling jelas sekaligus paling sederhana: <strong>jangan berkunjung atau menjadi relawan di panti asuhan.</strong> Lembaga perlindungan anak sepakat soal ini. Save the Children mencatat sekitar 80% anak yang tinggal di panti asuhan di seluruh dunia masih memiliki setidaknya satu orang tua, dan Better Care Network menyebut hampir semuanya masih punya keluarga besar. Anak-anak masuk panti terutama karena kemiskinan, keterbatasan akses sekolah, atau disabilitas, bukan karena tidak punya siapa-siapa.</p>
+<p>Indonesia tidak terkecuali. Kajian Save the Children, Kementerian Sosial, dan UNICEF yang terbit pada 2007 memperkirakan sekitar 7.000 lembaga pengasuhan anak merawat hingga setengah juta anak di seluruh Indonesia, dan menemukan bahwa keluarga kerap menitipkan anak agar mendapat makan, tempat tinggal, dan sekolah. Dalam survei pascatsunami Aceh yang dikutip kajian itu, lebih dari 85% anak yang ditempatkan di panti masih memiliki setidaknya satu orang tua.</p>
+<p>Mengapa kunjungan dan kegiatan relawan singkat merugikan:</p>
+<ul>
+<li><strong>Kelekatan.</strong> Anak yang terikat secara emosional dengan pengunjung yang silih berganti lalu pergi mengalami kehilangan berulang; pengasuhan di panti sendiri sudah kekurangan pengasuh tetap yang dibutuhkan anak.</li>
+<li><strong>Keamanan.</strong> Pengunjung yang tidak diperiksa bisa mengakses anak-anak yang sangat rentan.</li>
+<li><strong>Permintaan.</strong> Uang dan perhatian pengunjung bisa membuat panti terus beroperasi, bahkan mendorong berdirinya panti baru, dan membuat pengelola enggan memulangkan anak ke keluarganya.</li>
+<li><strong>Eksploitasi.</strong> ReThink Orphanages memperingatkan bahwa di sekitar kawasan wisata anak-anak bisa disuruh menari, menjual suvenir, atau meminta-minta kepada pengunjung.</li>
+</ul>
+<p>Jika ingin membantu anak-anak, dukunglah lembaga yang menjaga keutuhan keluarga: biaya dan perlengkapan sekolah melalui sekolah, program pendampingan keluarga, kegiatan kesehatan dan gizi. Jadilah relawan <em>untuk</em> anak-anak, bukan <em>bersama</em> mereka.</p>
+
+<h2>Hal lain yang perlu diwaspadai</h2>
+<ul>
+<li><strong>Mengajar sebentar.</strong> Seminggu pelajaran bahasa Inggris dengan wajah baru setiap bulan lebih mengganggu kelas daripada membantu. Jika Anda guru bersertifikat, carilah program yang melatih guru setempat.</li>
+<li><strong>Proyek pembangunan.</strong> Relawan tanpa keahlian yang membangun sekolah atau bak air sering mengambil pekerjaan berbayar dari tukang lokal dan hasilnya kurang baik. Membiayai tenaga kerja lokal biasanya lebih tepat.</li>
+<li><strong>Layanan medis tanpa izin.</strong> Jangan mengobati, membagikan obat, atau memeriksa orang kecuali Anda tenaga kesehatan berizin dalam program yang terdaftar.</li>
+<li><strong>Memberi langsung.</strong> Membagikan permen, uang, atau hadiah kepada anak-anak di kampung mendorong kebiasaan meminta dan bisa menimbulkan ketegangan. Salurkan melalui kepala desa, sekolah, atau gereja, dan tanyakan dulu.</li>
+<li><strong>Foto untuk media sosial.</strong> Jangan memotret anak atau pasien untuk akun pribadi Anda. Jika sebuah proyek meminta Anda mengunggah foto anak-anak untuk menggalang dana, itu tanda bahaya.</li>
+<li><strong>Kekeliruan budaya.</strong> Kampung-kampung di Sumba adalah tempat tinggal dengan adat dan tempat keramat Marapu; baca dulu panduan kami tentang <a href="/id/culture/marapu-ikat-traditional-villages/">Marapu, tenun ikat, dan kampung adat</a>.</li>
+</ul>
+
+<h2>Cara memeriksa sebuah lembaga</h2>
+<p>Sebelum mendaftar atau berdonasi, ajukan pertanyaan berikut dan mintalah jawaban tertulis yang jelas:</p>
+<ol>
+<li><strong>Apakah terdaftar secara hukum di Indonesia?</strong> Minta data badan hukumnya (banyak lembaga nirlaba di Indonesia berbentuk yayasan) dan nama penanggung jawab di pulau ini.</li>
+<li><strong>Siapa pengelolanya?</strong> Apakah ada staf orang Sumba di posisi pengambil keputusan? Sudah berapa lama bekerja di wilayah ini?</li>
+<li><strong>Apa persisnya tugas Anda,</strong> dan mengapa pekerjaan itu tidak bisa dikerjakan warga setempat yang dibayar?</li>
+<li><strong>Apakah ada kebijakan perlindungan anak?</strong> Apakah Anda akan diminta surat keterangan catatan kepolisian? Lembaga yang bekerja dengan anak-anak tetapi tidak memintanya patut dicurigai.</li>
+<li><strong>Ke mana uang Anda mengalir?</strong> Minta rincian biaya dan laporan tahunan atau laporan keuangan terbaru.</li>
+<li><strong>Visa apa yang diperlukan?</strong> Lembaga yang serius akan menjelaskan bahwa visa wisata tidak cukup dan membantu surat untuk visa kegiatan sosial.</li>
+<li><strong>Apakah lembaga itu menyelenggarakan atau mempromosikan kegiatan relawan atau kunjungan ke panti asuhan?</strong> Jika ya, tinggalkan.</li>
+</ol>
+<p>Kami tidak merekomendasikan lembaga tertentu. Carilah kelompok yang bergerak di bidang kesehatan, air bersih, pendidikan, atau mata pencaharian di pulau ini, periksa dengan pertanyaan di atas, dan tanyakan kepada orang yang sudah bekerja sama dengan mereka setidaknya setahun.</p>
+
+<h2>Soal visa</h2>
+<p>Kegiatan relawan diatur dalam hukum keimigrasian Indonesia, dan Imigrasi menanggapinya dengan serius. Menurut situs resmi e-Visa, visa kunjungan kegiatan sosial (C6) mencakup program relawan serta kegiatan kemanusiaan dan sosial, selain wisata dan kunjungan keluarga. Per 10 November 2026 biayanya Rp 2.000.000 (sekitar 120 dolar AS) untuk tinggal hingga 60 hari dan dapat diperpanjang. Syaratnya paspor berlaku minimal enam bulan, rekening koran tiga bulan terakhir dengan saldo minimal 2.000 dolar AS, foto, penjamin, dan surat dari lembaga yang menjelaskan kegiatan Anda. Pemegangnya tidak boleh menjual barang atau jasa maupun menerima upah di Indonesia. Baca <a href="/id/getting-here/indonesia-visa-for-sumba-explained/">panduan visa Indonesia untuk ke Sumba</a>, dan selalu pastikan di evisa.imigrasi.go.id.</p>
+
+<h2>Membantu tanpa menjadi relawan</h2>
+<p>Bagi kebanyakan wisatawan, bantuan paling efektif tidak memerlukan penempatan sama sekali:</p>
+<ul>
+<li><strong>Belanja di tingkat lokal.</strong> Gunakan sopir dan pemandu setempat, makan di warung keluarga, dan bayar sumbangan masuk kampung dengan lapang hati.</li>
+<li><strong>Beli tenun langsung dari penenun.</strong> Membeli langsung dari penenun dan koperasi membuat uang sampai ke rumah tangga; baca panduan kami tentang <a href="/id/culture/sumba-ikat-weaving-where-to-buy/">tenun ikat Sumba dan tempat membelinya</a>.</li>
+<li><strong>Donasikan uang, bukan barang.</strong> Mengirim pakaian atau buku itu mahal dan jarang sesuai kebutuhan. Uang untuk lembaga lokal yang dikelola baik bisa dibelanjakan tepat untuk apa yang kurang, dari pemasok setempat.</li>
+<li><strong>Sumbangkan keahlian dari jauh.</strong> Penerjemahan, desain, penulisan proposal hibah, atau akuntansi bisa diberikan dari rumah untuk lembaga yang Anda percaya.</li>
+<li><strong>Kembali lagi.</strong> Hubungan panjang dengan satu komunitas, yang dibangun lewat beberapa kunjungan, lebih bernilai daripada seminggu kegiatan padat.</li>
+</ul>
+<p>Sumba tidak membutuhkan penyelamat. Sumba membutuhkan pengunjung yang mau mendengar, menghormati kepemimpinan warga setempat, dan meninggalkan pulau ini sedikit lebih baik daripada saat mereka datang.</p>"""
+
+GUIDES.append({
+ "section": "things-to-do", "slug": "volunteering-in-sumba-responsibly", "date": "2026-11-10", "time": "09:30", "kind": "guide",
+ "slugs": {"es": "voluntariado-en-sumba-de-forma-responsable", "id": "menjadi-relawan-di-sumba-secara-bertanggung-jawab"},
+ "img_key": "east-sumba-visitor-numbers-2025",
+ "en": {
+  "title": "Volunteering in Sumba responsibly: what helps, what harms, how to check",
+  "dek": "Why orphanage visits do harm, which placements genuinely help, the questions to ask any organisation, and the visa volunteers need in Indonesia.",
+  "answer": "Volunteer in Sumba only through a registered, locally led organisation that needs your specific skills, commits you for weeks or months and has a child-protection policy; avoid orphanage visits and short-term work with children, since about 80% of children in orphanages have a living parent. A tourist visa does not cover volunteering: Indonesia's C6 social activities visa (IDR 2,000,000 for up to 60 days, checked 10 November 2026) does. Spending locally and donating to proven organisations often helps more than going yourself.",
+  "body": VOL_EN},
+ "es": {
+  "title": "Voluntariado en Sumba responsable: qué ayuda, qué daña y cómo comprobarlo",
+  "dek": "Por qué las visitas a orfanatos hacen daño, qué voluntariados ayudan de verdad, qué preguntar a cualquier organización y qué visado se necesita en Indonesia.",
+  "answer": "Haz voluntariado en Sumba solo con una organización registrada y dirigida por gente local que necesite tus capacidades concretas, te comprometa semanas o meses y tenga una política de protección infantil; evita las visitas a orfanatos y el trabajo corto con niños, porque alrededor del 80% de los niños en orfanatos tiene un progenitor vivo. El visado de turista no cubre el voluntariado: sí lo hace el visado de actividades sociales C6 (2.000.000 de rupias hasta 60 días, comprobado el 10 de noviembre de 2026). Gastar en la isla y donar a organizaciones solventes suele ayudar más que ir uno mismo.",
+  "body": VOL_ES},
+ "id": {
+  "title": "Menjadi relawan di Sumba secara bertanggung jawab: panduan dan cara cek",
+  "dek": "Mengapa kunjungan ke panti asuhan merugikan, penempatan mana yang benar-benar membantu, pertanyaan untuk setiap lembaga, dan visa yang diperlukan relawan.",
+  "answer": "Jadilah relawan di Sumba hanya melalui lembaga terdaftar yang dipimpin warga setempat, membutuhkan keahlian khusus Anda, melibatkan Anda berminggu-minggu atau berbulan-bulan, dan memiliki kebijakan perlindungan anak; hindari kunjungan ke panti asuhan dan kegiatan singkat bersama anak, karena sekitar 80% anak di panti masih punya orang tua. Visa wisata tidak mencakup kegiatan relawan, sedangkan visa kegiatan sosial C6 (Rp 2.000.000 untuk hingga 60 hari, diperiksa 10 November 2026) mencakupnya. Belanja lokal dan berdonasi ke lembaga yang terbukti sering lebih membantu daripada datang sendiri.",
+  "body": VOL_ID},
+ "facts": {
+  "en": [
+   ["Golden rule", "No orphanage visits or short-term work with children"],
+   ["Children in orphanages with a living parent", "About 80% worldwide (Save the Children)"],
+   ["Indonesia (2007 study)", "About 7,000 childcare institutions, up to 500,000 children"],
+   ["Visa for volunteers", "C6 social activities visa: IDR 2,000,000, up to 60 days (checked 10 Nov 2026)"],
+   ["Good placement", "Locally led, skills-based, weeks or months, child-protection policy"],
+   ["Often better", "Spend locally, buy from weavers, donate money to proven groups"]],
+  "es": [
+   ["Regla de oro", "Nada de visitas a orfanatos ni trabajo corto con niños"],
+   ["Niños en orfanatos con un progenitor vivo", "Alrededor del 80% en el mundo (Save the Children)"],
+   ["Indonesia (estudio de 2007)", "Unas 7.000 instituciones, hasta 500.000 niños"],
+   ["Visado para voluntarios", "Visado de actividades sociales C6: 2.000.000 de rupias, hasta 60 días (comprobado el 10 nov. 2026)"],
+   ["Buen voluntariado", "Dirigido localmente, basado en capacidades, semanas o meses, con protección infantil"],
+   ["A menudo es mejor", "Gastar en la isla, comprar a las tejedoras, donar dinero a grupos solventes"]],
+  "id": [
+   ["Aturan utama", "Tidak berkunjung ke panti asuhan atau kegiatan singkat bersama anak"],
+   ["Anak di panti yang masih punya orang tua", "Sekitar 80% di seluruh dunia (Save the Children)"],
+   ["Indonesia (kajian 2007)", "Sekitar 7.000 lembaga pengasuhan, hingga 500.000 anak"],
+   ["Visa relawan", "Visa kegiatan sosial C6: Rp 2.000.000, hingga 60 hari (diperiksa 10 Nov 2026)"],
+   ["Penempatan yang baik", "Dipimpin warga lokal, berbasis keahlian, berminggu-minggu atau berbulan-bulan, ada perlindungan anak"],
+   ["Sering lebih baik", "Belanja lokal, beli dari penenun, donasi uang ke lembaga tepercaya"]]},
+ "faq": {
+  "en": [
+   ["Can I volunteer in Sumba on a tourist visa?", "No. Volunteering is not covered by the visa on arrival or visa exemption. Indonesia's C6 social activities visit visa covers voluntary programmes: as of 10 November 2026 it costs IDR 2,000,000 for up to 60 days and requires a letter from the organisation, a guarantor and proof of funds. Check evisa.imigrasi.go.id."],
+   ["Is it OK to visit an orphanage in Sumba?", "No. Child-protection organisations advise against orphanage visits and volunteering everywhere: about 80% of children in orphanages have at least one living parent, and visits can harm attachment, expose children to risk and keep institutions running. Support family-based care and schools instead."],
+   ["How can I check if a volunteer organisation in Sumba is legitimate?", "Ask whether it is legally registered in Indonesia, who leads it locally, what exactly you will do and why a local person cannot be paid to do it, whether it has a child-protection policy and asks for a criminal record check, where fees go, and which visa it will support. Walk away if it offers orphanage visits."],
+   ["What kind of volunteering actually helps in Sumba?", "Skills-based placements of weeks or months with locally led organisations, where you train local staff rather than replace them: health professionals, qualified teachers training teachers, engineers, accountants or agronomists. General labour and short teaching stints rarely help."],
+   ["Should I bring donations of clothes or school supplies?", "Usually not. Shipping goods is costly and rarely matches needs. Money given to a well-run local organisation can buy exactly what is missing from local suppliers. Never hand out sweets or money to children in villages."],
+   ["How can I help Sumba without volunteering?", "Hire local drivers and guides, eat at family warungs, pay village contributions willingly, buy ikat directly from weavers, donate money to proven organisations and offer professional skills remotely."]],
+  "es": [
+   ["¿Puedo hacer voluntariado en Sumba con visado de turista?", "No. El voluntariado no está cubierto por el visado a la llegada ni por la exención. El visado de visita para actividades sociales C6 sí cubre programas de voluntariado: a 10 de noviembre de 2026 cuesta 2.000.000 de rupias por un máximo de 60 días y exige una carta de la organización, un avalista y prueba de fondos. Consulta evisa.imigrasi.go.id."],
+   ["¿Está bien visitar un orfanato en Sumba?", "No. Las organizaciones de protección infantil desaconsejan visitar orfanatos y hacer voluntariado en ellos en cualquier lugar: alrededor del 80% de los niños internados tiene al menos un progenitor vivo, y las visitas dañan el apego, exponen a los niños a riesgos y mantienen abiertas las instituciones. Apoya mejor la atención en familia y las escuelas."],
+   ["¿Cómo sé si una organización de voluntariado en Sumba es fiable?", "Pregunta si está registrada legalmente en Indonesia, quién la dirige en la isla, qué harás exactamente y por qué no se paga a una persona local para hacerlo, si tiene política de protección infantil y pide antecedentes penales, adónde van las cuotas y qué visado te tramitará. Si ofrece visitas a orfanatos, márchate."],
+   ["¿Qué voluntariado ayuda de verdad en Sumba?", "El basado en capacidades, de semanas o meses, con organizaciones dirigidas localmente, en el que formas al personal local en lugar de sustituirlo: profesionales sanitarios, docentes titulados que forman a otros docentes, ingenieros, contables o agrónomos. La mano de obra general y las clases de pocos días rara vez ayudan."],
+   ["¿Llevo donaciones de ropa o material escolar?", "Normalmente no. Enviar objetos es caro y rara vez coincide con lo que se necesita. El dinero a una organización local bien gestionada permite comprar justo lo que falta a proveedores de la zona. No repartas nunca caramelos ni dinero a los niños en los pueblos."],
+   ["¿Cómo puedo ayudar a Sumba sin hacer voluntariado?", "Contrata conductores y guías locales, come en warungs familiares, paga de buen grado las aportaciones de los pueblos, compra ikat directamente a las tejedoras, dona dinero a organizaciones solventes y ofrece tus capacidades profesionales a distancia."]],
+  "id": [
+   ["Bolehkah menjadi relawan di Sumba dengan visa wisata?", "Tidak. Kegiatan relawan tidak tercakup dalam visa saat kedatangan maupun bebas visa. Visa kunjungan kegiatan sosial C6 mencakup program relawan: per 10 November 2026 biayanya Rp 2.000.000 untuk hingga 60 hari dan mensyaratkan surat dari lembaga, penjamin, serta bukti keuangan. Cek evisa.imigrasi.go.id."],
+   ["Bolehkah berkunjung ke panti asuhan di Sumba?", "Sebaiknya tidak. Lembaga perlindungan anak menyarankan untuk tidak berkunjung atau menjadi relawan di panti asuhan di mana pun: sekitar 80% anak di panti masih punya setidaknya satu orang tua, dan kunjungan bisa merusak kelekatan, membahayakan anak, dan membuat panti terus beroperasi. Dukung pengasuhan berbasis keluarga dan sekolah."],
+   ["Bagaimana memastikan lembaga relawan di Sumba tepercaya?", "Tanyakan apakah terdaftar secara hukum di Indonesia, siapa pemimpinnya di Sumba, apa tugas Anda dan mengapa tidak dikerjakan warga lokal yang dibayar, apakah ada kebijakan perlindungan anak dan pemeriksaan catatan kepolisian, ke mana biaya mengalir, serta visa apa yang akan dibantu. Tinggalkan jika menawarkan kunjungan ke panti asuhan."],
+   ["Kegiatan relawan seperti apa yang benar-benar membantu di Sumba?", "Penempatan berbasis keahlian selama berminggu-minggu atau berbulan-bulan bersama lembaga yang dipimpin warga lokal, dengan melatih staf setempat alih-alih menggantikannya: tenaga kesehatan, guru bersertifikat yang melatih guru, insinyur, akuntan, atau ahli pertanian. Tenaga kasar dan mengajar beberapa hari jarang membantu."],
+   ["Perlukah membawa sumbangan pakaian atau alat sekolah?", "Biasanya tidak. Mengirim barang itu mahal dan jarang sesuai kebutuhan. Uang untuk lembaga lokal yang dikelola baik bisa dibelanjakan tepat untuk apa yang kurang, dari pemasok setempat. Jangan membagikan permen atau uang kepada anak-anak di kampung."],
+   ["Bagaimana membantu Sumba tanpa menjadi relawan?", "Gunakan sopir dan pemandu lokal, makan di warung keluarga, bayar sumbangan kampung dengan lapang hati, beli tenun langsung dari penenun, donasikan uang ke lembaga tepercaya, dan tawarkan keahlian profesional dari jauh."]]},
+ "places": [],
+ "sources": [
+  ["Why we don't support orphanage volunteering, Save the Children UK, 24 May 2016", "https://www.savethechildren.org.uk/blogs/2016/why-we-dont-support-orphanage-volunteering"],
+  ["The problem with orphanages, Better Care Network / ReThink Orphanages", "https://bettercarenetwork.org/rethinkorphanages/the-problem-with-orphanages"],
+  ["Someone that matters: the quality of care in childcare institutions in Indonesia, Save the Children, Ministry of Social Affairs and UNICEF, 2007", "https://bettercarenetwork.org/library/the-continuum-of-care/residential-care/someone-that-matters-the-quality-of-care-in-childcare-institutions-in-indonesia"],
+  ["Get informed, ReThink Orphanages Australia", "https://au.rethinkorphanages.org/get-informed"],
+  ["Social activities visit visa (voluntary programmes), e-Visa Directorate General of Immigration, accessed 10 Nov 2026", "https://evisa.imigrasi.go.id/front/faq/22b12e35-af49-4e0b-86d9-cdb727b701bc"],
+  ["Visa and immigration (C6 social activities visit visa), Indonesia Travel, Ministry of Tourism, updated 10 Jun 2026", "https://www.indonesia.travel/gb/en/general-information/visa-immigration"]]
+})
+
+# ---------------------------------------------------------------------------
 # 5) Hiking in Sumba: national parks, hills and safety (hub)
 # ---------------------------------------------------------------------------
 
