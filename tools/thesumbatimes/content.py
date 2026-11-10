@@ -53,7 +53,9 @@ UI = {
 
 S_FLIGHT = [("ANTARA News Bali, 17 Jul 2026","https://bali.antaranews.com/berita/409805/bandara-ngurah-rai-tambah-dua-rute-baru-ke-waingapu-dan-wakatobi"),
             ("Times Indonesia, 12 Jul 2026","https://timesindonesia.co.id/ekonomi/598638/transnusa-buka-rute-waingapudenpasar-bupati-sumba-timur-tantangannya-menjaga-penerbangan-tetap-beroperasi")]
-S_GET = S_FLIGHT + [("Bali.live, Wings Air Bali-Sumba, 1 Aug 2024","https://bali.live/p/wings-air-takes-off-with-new-direct-flights-from-bali-to-sumba")]
+S_GET = S_FLIGHT + [("detikBali, Batik Air Denpasar-Tambolaka, 9 Jan 2026","https://www.detik.com/bali/bisnis/d-8300266/bandara-i-gusti-ngurah-rai-tambah-rute-penerbangan-ke-tambolaka-ntt"),
+            ("SWA, Batik Air buka rute Denpasar-Tambolaka, 10 Jan 2026","https://swa.co.id/read/468183/batik-air-buka-rute-denpasartambolaka-perkuat-akses-balisumba"),
+            ("Bali.live, Wings Air Bali-Sumba, 1 Aug 2024","https://bali.live/p/wings-air-takes-off-with-new-direct-flights-from-bali-to-sumba")]
 S_PASOLA = [("Backindo, Pasola Festival guide","https://www.backindo.com/pasola-sumba"),("Explore Sumba, festivals","https://exploresumba.com/sumba-island-indonesia/festivals")]
 S_CULT = [("Topologica, Sumba island guide","https://topologica.co/local-guides/indonesia/sumba-island-pasola-megaliths-guide")]
 S_BEACH = [("Seek Sophie, Sumba guide","https://www.seeksophie.com/en/magazine/a/sumba-ultimate-guide"),("Topologica, Sumba island guide","https://topologica.co/local-guides/indonesia/sumba-island-pasola-megaliths-guide")]
@@ -97,7 +99,7 @@ ARTICLES.append({"section":"news","slug":"new-direct-flights-bali-waingapu","dat
 <p>Singkatnya: kalau ingin rute ini bertahan, gunakanlah. Jadwal bisa berubah, jadi pastikan ke maskapai sebelum memesan.</p>"""},
 "sources":S_FLIGHT})
 
-ARTICLES.append({"section":"getting-here","slug":"how-to-get-to-sumba-from-bali","date":"2026-11-07",
+ARTICLES.append({"section":"getting-here","slug":"how-to-get-to-sumba-from-bali","date":"2026-11-07","updated":"2026-11-10",
 "en":{"title":"How to get to Sumba from Bali: flights, airports and the route that works best",
  "dek":"Two airports, short flights and one simple rule: arrive at one end of the island and leave from the other.",
  "body":"""<p>Sumba sits south-east of Bali and has no direct international flights. Almost everyone arrives by a short domestic flight from Bali (Denpasar, DPS).</p>
@@ -105,9 +107,9 @@ ARTICLES.append({"section":"getting-here","slug":"how-to-get-to-sumba-from-bali"
 <ul><li><strong>Tambolaka (TMC)</strong>, in the north-west. The main gateway for West and Southwest Sumba: Kodi, Lamboya, Wanokaka, the traditional villages and the Pasola fields.</li>
 <li><strong>Waingapu (WGP)</strong>, in the east. Closest to the savannas, Wairinding hill, Walakiri beach and Tanggedu waterfall.</li></ul>
 <h2>Flights from Bali</h2>
-<ul><li><strong>Bali-Tambolaka:</strong> Wings Air has flown several daily flights, about 1 h 30 each way.</li>
+<ul><li><strong>Bali-Tambolaka:</strong> as of November 2026, schedule listings show Batik Air flying daily (since 9 January 2026, on an Airbus A320, about 1 h 15) and Nam Air and Sriwijaya Air several times a week. Wings Air, which used to fly the route, no longer appears.</li>
 <li><strong>Bali-Waingapu:</strong> TransNusa has flown non-stop four times a week since 15 July 2026 (Tuesday, Wednesday, Friday, Saturday).</li></ul>
-<p>Schedules on small regional routes change often. Always check the airline before booking.</p>
+<p>Schedules on small regional routes change often. Always check the airline before booking; our <a href="/en/flights/">flights page</a> lists the current routes and the date they were last checked.</p>
 <h2>The route that works best</h2>
 <p>Sumba is about 200 km long and roughly twice the size of Bali. Roads are slow. The easiest plan is to <strong>fly into Tambolaka and out of Waingapu</strong>, or the other way round, and cross the island by car.</p>
 <h2>Practical tips</h2>
@@ -122,9 +124,9 @@ ARTICLES.append({"section":"getting-here","slug":"how-to-get-to-sumba-from-bali"
 <ul><li><strong>Tambolaka (TMC)</strong>, en el noroeste. Es la principal puerta de entrada al oeste y el suroeste de Sumba: Kodi, Lamboya, Wanokaka, los pueblos tradicionales y los campos de la Pasola.</li>
 <li><strong>Waingapu (WGP)</strong>, en el este. El más cercano a las sabanas, la colina de Wairinding, la playa de Walakiri y la cascada de Tanggedu.</li></ul>
 <h2>Vuelos desde Bali</h2>
-<ul><li><strong>Bali-Tambolaka:</strong> Wings Air ha operado varios vuelos diarios, de una hora y media de duración aproximada.</li>
+<ul><li><strong>Bali-Tambolaka:</strong> en noviembre de 2026, los horarios publicados recogen un vuelo diario de Batik Air (desde el 9 de enero de 2026, en Airbus A320, alrededor de 1 h 15) y varios semanales de Nam Air y Sriwijaya Air. Wings Air, que antes cubría la ruta, ya no figura.</li>
 <li><strong>Bali-Waingapu:</strong> TransNusa vuela sin escalas cuatro veces por semana desde el 15 de julio de 2026 (martes, miércoles, viernes y sábado).</li></ul>
-<p>En estas rutas regionales los horarios cambian a menudo. Confírmalos siempre con la aerolínea antes de reservar.</p>
+<p>En estas rutas regionales los horarios cambian a menudo. Confírmalos siempre con la aerolínea antes de reservar; en nuestra <a href="/es/flights/">página de vuelos</a> están las rutas actuales y la fecha de la última comprobación.</p>
 <h2>La ruta que mejor funciona</h2>
 <p>Sumba mide unos 200 km de largo y su superficie duplica aproximadamente la de Bali. Las carreteras son lentas. Lo más fácil es <strong>llegar a Tambolaka y salir desde Waingapu</strong>, o al revés, y cruzar la isla en coche.</p>
 <h2>Consejos prácticos</h2>
@@ -139,9 +141,9 @@ ARTICLES.append({"section":"getting-here","slug":"how-to-get-to-sumba-from-bali"
 <ul><li><strong>Tambolaka (TMC)</strong>, di barat laut. Gerbang utama ke Sumba Barat dan Sumba Barat Daya: Kodi, Lamboya, Wanokaka, kampung adat, dan lapangan Pasola.</li>
 <li><strong>Waingapu (WGP)</strong>, di timur. Paling dekat ke sabana, Bukit Wairinding, Pantai Walakiri, dan Air Terjun Tanggedu.</li></ul>
 <h2>Penerbangan dari Bali</h2>
-<ul><li><strong>Bali-Tambolaka:</strong> Wings Air telah melayani beberapa penerbangan setiap hari, dengan waktu tempuh sekitar 1 jam 30 menit.</li>
+<ul><li><strong>Bali-Tambolaka:</strong> per November 2026, jadwal yang tercantum menunjukkan Batik Air terbang setiap hari (sejak 9 Januari 2026, dengan Airbus A320, sekitar 1 jam 15 menit), sedangkan Nam Air dan Sriwijaya Air beberapa kali seminggu. Wings Air, yang dulu melayani rute ini, tidak lagi tercantum.</li>
 <li><strong>Bali-Waingapu:</strong> TransNusa terbang tanpa transit empat kali seminggu sejak 15 Juli 2026 (Selasa, Rabu, Jumat, Sabtu).</li></ul>
-<p>Jadwal rute regional sering berubah. Selalu cek ke maskapai sebelum memesan.</p>
+<p>Jadwal rute regional sering berubah. Selalu cek ke maskapai sebelum memesan; <a href="/id/flights/">halaman penerbangan</a> kami memuat rute terkini beserta tanggal pengecekan terakhir.</p>
 <h2>Rute terbaik</h2>
 <p>Panjang Sumba sekitar 200 km dan luasnya kira-kira dua kali Bali. Jalannya lambat. Rencana termudah adalah <strong>tiba di Tambolaka dan pulang dari Waingapu</strong>, atau sebaliknya, lalu menyeberangi pulau dengan mobil.</p>
 <h2>Tips praktis</h2>

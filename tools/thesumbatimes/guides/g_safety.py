@@ -369,7 +369,7 @@ GUIDES = [
 # ---------------------------------------------------------------------------
 {
 "section": "things-to-do",
-"img_key": "magnitude-6-1-earthquake-southwest-sumba", "slug": "sumba-vs-bali-flores",
+"img_key": "magnitude-6-1-earthquake-southwest-sumba", "updated": "2026-11-10", "slug": "sumba-vs-bali-flores",
 "date": "2026-11-07",
 "time": "13:00",
 "kind": "guide",
@@ -432,7 +432,7 @@ GUIDES = [
 <h2>How to combine them</h2>
 <p>All three islands sit along the same chain east of Java, and the main hub is Bali (Denpasar, DPS). Some useful connections, as of late 2026 (schedules change, always check with the airline):</p>
 <ul>
-<li><strong>Bali to Sumba:</strong> Wings Air flies Bali-Tambolaka several times a day (about 1h30), and TransNusa has flown Bali-Waingapu non-stop four times a week (Tuesday, Wednesday, Friday, Saturday) since 15 July 2026. Details in <a href="/en/getting-here/how-to-get-to-sumba-from-bali/">how to get to Sumba from Bali</a>.</li>
+<li><strong>Bali to Sumba:</strong> Batik Air flies Bali-Tambolaka daily (about 1h15), with Nam Air and Sriwijaya Air adding several flights a week, and TransNusa has flown Bali-Waingapu non-stop four times a week (Tuesday, Wednesday, Friday, Saturday) since 15 July 2026. Details in <a href="/en/getting-here/how-to-get-to-sumba-from-bali/">how to get to Sumba from Bali</a>.</li>
 <li><strong>Sumba to Flores:</strong> Wings Air flies Tambolaka-Labuan Bajo non-stop about three times a week, a flight of roughly 45 minutes.</li>
 <li><strong>Flores to Bali:</strong> Labuan Bajo has frequent direct flights to Bali and Jakarta.</li>
 </ul>
@@ -506,7 +506,7 @@ GUIDES = [
 <h2>Cómo combinarlas</h2>
 <p>Las tres islas están en la misma cadena al este de Java, y el gran nudo de conexiones es Bali (Denpasar, DPS). Algunas conexiones útiles a finales de 2026 (los horarios cambian, confírmalos siempre con la aerolínea):</p>
 <ul>
-<li><strong>Bali a Sumba:</strong> Wings Air vuela entre Bali y Tambolaka varias veces al día (una hora y media de trayecto), y TransNusa opera Bali-Waingapu sin escalas cuatro veces por semana (martes, miércoles, viernes y sábado) desde el 15 de julio de 2026. Detalles en <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a>.</li>
+<li><strong>Bali a Sumba:</strong> Batik Air vuela a diario entre Bali y Tambolaka (alrededor de 1 h 15 de trayecto), Nam Air y Sriwijaya Air suman varios vuelos por semana, y TransNusa opera Bali-Waingapu sin escalas cuatro veces por semana (martes, miércoles, viernes y sábado) desde el 15 de julio de 2026. Detalles en <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a>.</li>
 <li><strong>Sumba a Flores:</strong> Wings Air vuela Tambolaka-Labuan Bajo sin escalas unas tres veces por semana, en unos 45 minutos.</li>
 <li><strong>Flores a Bali:</strong> Labuan Bajo tiene vuelos directos frecuentes a Bali y a Yakarta.</li>
 </ul>
@@ -580,7 +580,7 @@ GUIDES = [
 <h2>Cara menggabungkannya</h2>
 <p>Ketiga pulau berada di rangkaian yang sama di timur Jawa, dan pusat penghubung utamanya adalah Bali (Denpasar, DPS). Beberapa koneksi penting per akhir 2026 (jadwal bisa berubah, selalu cek ke maskapai):</p>
 <ul>
-<li><strong>Bali ke Sumba:</strong> Wings Air terbang Bali-Tambolaka beberapa kali sehari (sekitar 1 jam 30 menit), dan TransNusa melayani Bali-Waingapu langsung empat kali seminggu (Selasa, Rabu, Jumat, Sabtu) sejak 15 Juli 2026. Detailnya di <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a>.</li>
+<li><strong>Bali ke Sumba:</strong> Batik Air terbang Bali-Tambolaka setiap hari (sekitar 1 jam 15 menit), Nam Air dan Sriwijaya Air menambah beberapa penerbangan seminggu, dan TransNusa melayani Bali-Waingapu langsung empat kali seminggu (Selasa, Rabu, Jumat, Sabtu) sejak 15 Juli 2026. Detailnya di <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a>.</li>
 <li><strong>Sumba ke Flores:</strong> Wings Air terbang langsung Tambolaka-Labuan Bajo sekitar tiga kali seminggu, dengan waktu tempuh sekitar 45 menit.</li>
 <li><strong>Flores ke Bali:</strong> Labuan Bajo memiliki penerbangan langsung yang sering ke Bali dan Jakarta.</li>
 </ul>
@@ -601,7 +601,7 @@ GUIDES = [
 ["Least crowded", "Sumba (East Sumba: 41,524 visitors in 2025)"],
 ["Busiest", "Bali (about 7 million foreign arrivals in 2025)"],
 ["Komodo National Park", "432,217 visitors in 2025; cap of 1,000/day since 1 Apr 2026"],
-["Bali to Sumba", "About 1h30 by air (Wings Air to Tambolaka; TransNusa to Waingapu 4x/week)"],
+["Bali to Sumba", "About 1h15 to 1h30 by air (Batik Air daily to Tambolaka; TransNusa to Waingapu 4x/week)"],
 ["Sumba to Flores", "Wings Air Tambolaka-Labuan Bajo, about 45 min, about 3x/week"],
 ["Best season (all three)", "Dry season, roughly May-September"]
 ],
@@ -609,7 +609,7 @@ GUIDES = [
 ["Menos masificada", "Sumba (Sumba Oriental: 41.524 visitantes en 2025)"],
 ["Más concurrida", "Bali (unos 7 millones de llegadas extranjeras en 2025)"],
 ["Parque Nacional de Komodo", "432.217 visitantes en 2025; límite de 1.000 al día desde el 1 de abril de 2026"],
-["Bali a Sumba", "Hora y media en avión (Wings Air a Tambolaka; TransNusa a Waingapu, 4 veces por semana)"],
+["Bali a Sumba", "Entre 1 h 15 y 1 h 30 en avión (Batik Air a diario a Tambolaka; TransNusa a Waingapu, 4 veces por semana)"],
 ["Sumba a Flores", "Wings Air Tambolaka-Labuan Bajo, unos 45 min, unas 3 veces por semana"],
 ["Mejor época (las tres)", "Estación seca, aproximadamente mayo-septiembre"]
 ],
@@ -617,7 +617,7 @@ GUIDES = [
 ["Paling sepi", "Sumba (Sumba Timur: 41.524 pengunjung pada 2025)"],
 ["Paling ramai", "Bali (sekitar 7 juta kunjungan wisman pada 2025)"],
 ["Taman Nasional Komodo", "432.217 pengunjung pada 2025; batas 1.000 pengunjung per hari sejak 1 April 2026"],
-["Bali ke Sumba", "Sekitar 1 jam 30 menit (Wings Air ke Tambolaka; TransNusa ke Waingapu 4x/minggu)"],
+["Bali ke Sumba", "Sekitar 1 jam 15 menit sampai 1 jam 30 menit (Batik Air setiap hari ke Tambolaka; TransNusa ke Waingapu 4x/minggu)"],
 ["Sumba ke Flores", "Wings Air Tambolaka-Labuan Bajo, sekitar 45 menit, sekitar 3x/minggu"],
 ["Musim terbaik (ketiganya)", "Kemarau, kira-kira Mei-September"]
 ]
@@ -654,6 +654,7 @@ GUIDES = [
 {"name": "Labuan Bajo", "lat": -8.500, "lon": 119.883, "area": "West Manggarai, Flores"}
 ],
 "sources": [
+["Bandara I Gusti Ngurah Rai tambah rute penerbangan ke Tambolaka NTT, detikBali, 9 January 2026", "https://www.detik.com/bali/bisnis/d-8300266/bandara-i-gusti-ngurah-rai-tambah-rute-penerbangan-ke-tambolaka-ntt"],
 ["Kunjungan wisatawan mancanegara ke Bali tahun 2025 tembus 7 juta, Antara Bali, 1 Jan 2026", "https://bali.antaranews.com/berita/395311/kunjungan-wisatawan-mancanegara-ke-bali-tahun-2025-tembus-7-juta"],
 ["432.217 wisatawan liburan di TN Komodo sepanjang 2025, turis asing mendominasi, detikBali, Jan 2026", "https://www.detik.com/bali/wisata/d-8300564/432-217-wisatawan-liburan-di-tn-komodo-sepanjang-2025-turis-asing-mendominasi"],
 ["Komodo National Park visitor quota 2026, Ocean Earth Travels, 2026", "https://www.oceanearthtravels.com/travel-tips/komodo-national-park-visitor-quota-2026"],

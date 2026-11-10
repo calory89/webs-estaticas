@@ -2,7 +2,7 @@
 # The Sumba Times: planning guides (itinerary + best time to visit). Written 2026-11-07.
 
 G1 = {
-"section": "things-to-do", "slug": "sumba-itinerary-5-7-10-days", "date": "2026-11-07", "time": "08:00", "kind": "guide",
+"section": "things-to-do", "slug": "sumba-itinerary-5-7-10-days", "date": "2026-11-07", "updated": "2026-11-10", "time": "08:00", "kind": "guide",
 "slugs": {"es": "itinerario-sumba-5-7-10-dias", "id": "itinerary-sumba-5-7-10-hari"},
 "en": {
  "title": "Sumba itinerary: 5, 7 and 10 days from west to east",
@@ -27,7 +27,7 @@ G1 = {
 <tr><td>Waingapu to Walakiri beach</td><td>about 22 km</td><td>30-40 min</td></tr>
 <tr><td>Waingapu to Tarimbang</td><td>about 85 km</td><td>3 h or more</td></tr>
 </table>
-<p>Flights decide the shape of everything else. Wings Air flies Bali to Tambolaka several times a day (about 1 h 30), and since 15 July 2026 TransNusa flies Bali to Waingapu non-stop four times a week (Tuesday, Wednesday, Friday and Saturday). Check which days your flight out of Waingapu runs before you fix the itinerary, and keep a buffer: schedules change and flights are sometimes rescheduled. Our guide on <a href="/en/getting-here/how-to-get-to-sumba-from-bali/">how to get to Sumba from Bali</a> has the details.</p>
+<p>Flights decide the shape of everything else. Batik Air flies Bali to Tambolaka daily (about 1 h 15), with Nam Air and Sriwijaya Air adding several flights a week, and since 15 July 2026 TransNusa flies Bali to Waingapu non-stop four times a week (Tuesday, Wednesday, Friday and Saturday). Check which days your flight out of Waingapu runs before you fix the itinerary, and keep a buffer: schedules change and flights are sometimes rescheduled. Our guide on <a href="/en/getting-here/how-to-get-to-sumba-from-bali/">how to get to Sumba from Bali</a> has the details, and the <a href="/en/flights/">flights page</a> lists the current routes.</p>
 <p>The easiest way to travel is a <strong>car with a local driver</strong>, who also knows which villages welcome visitors that day and can introduce you. Lonely Planet (2026) quotes around USD 75 a day with driver, roughly IDR 1.2 million (about EUR 70), and prices vary with the season and the car. See <a href="/en/getting-here/getting-around-sumba/">getting around Sumba</a> and <a href="/en/getting-here/sumba-travel-costs/">Sumba travel costs</a>.</p>
 
 <h2>5 days: the fast crossing</h2>
@@ -108,7 +108,7 @@ G1 = {
 <tr><td>Waingapu a la playa de Walakiri</td><td>unos 22 km</td><td>30-40 min</td></tr>
 <tr><td>Waingapu a Tarimbang</td><td>unos 85 km</td><td>3 h o más</td></tr>
 </table>
-<p>Los vuelos marcan todo lo demás. Wings Air vuela de Bali a Tambolaka varias veces al día (alrededor de 1 h 30) y, desde el 15 de julio de 2026, TransNusa conecta Bali y Waingapu sin escalas cuatro veces por semana (martes, miércoles, viernes y sábado). Comprueba qué días sale tu vuelo desde Waingapu antes de cerrar la ruta y deja margen: los horarios cambian y a veces los vuelos se reprograman. Te lo explicamos en <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a>.</p>
+<p>Los vuelos marcan todo lo demás. Batik Air vuela a diario de Bali a Tambolaka (alrededor de 1 h 15), Nam Air y Sriwijaya Air suman varios vuelos por semana y, desde el 15 de julio de 2026, TransNusa conecta Bali y Waingapu sin escalas cuatro veces por semana (martes, miércoles, viernes y sábado). Comprueba qué días sale tu vuelo desde Waingapu antes de cerrar la ruta y deja margen: los horarios cambian y a veces los vuelos se reprograman. Te lo explicamos en <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a>, y las rutas actuales están en la <a href="/es/flights/">página de vuelos</a>.</p>
 <p>Lo más cómodo es un <strong>coche con conductor local</strong>, que además sabe qué aldeas reciben visitas ese día y puede presentarte a los vecinos. Lonely Planet (2026) calcula unos 75 dólares al día con conductor, alrededor de 1,2 millones de rupias (unos 70 euros), aunque el precio varía según la temporada y el vehículo. Más información en <a href="/es/getting-here/getting-around-sumba/">cómo moverse por Sumba</a> y <a href="/es/getting-here/sumba-travel-costs/">cuánto cuesta viajar a Sumba</a>.</p>
 
 <h2>5 días: la travesía rápida</h2>
@@ -189,7 +189,7 @@ G1 = {
 <tr><td>Waingapu ke Pantai Walakiri</td><td>sekitar 22 km</td><td>30-40 menit</td></tr>
 <tr><td>Waingapu ke Tarimbang</td><td>sekitar 85 km</td><td>3 jam atau lebih</td></tr>
 </table>
-<p>Jadwal penerbangan menentukan segalanya. Wings Air terbang dari Bali ke Tambolaka beberapa kali sehari (sekitar 1 jam 30 menit), dan sejak 15 Juli 2026 TransNusa terbang langsung Bali-Waingapu empat kali seminggu (Selasa, Rabu, Jumat, dan Sabtu). Pastikan hari penerbangan pulang dari Waingapu sebelum mengunci rute, dan sisakan waktu cadangan: jadwal bisa berubah dan penerbangan kadang dijadwalkan ulang. Detailnya ada di panduan <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a>.</p>
+<p>Jadwal penerbangan menentukan segalanya. Batik Air terbang setiap hari dari Bali ke Tambolaka (sekitar 1 jam 15 menit), Nam Air dan Sriwijaya Air menambah beberapa penerbangan seminggu, dan sejak 15 Juli 2026 TransNusa terbang langsung Bali-Waingapu empat kali seminggu (Selasa, Rabu, Jumat, dan Sabtu). Pastikan hari penerbangan pulang dari Waingapu sebelum mengunci rute, dan sisakan waktu cadangan: jadwal bisa berubah dan penerbangan kadang dijadwalkan ulang. Detailnya ada di panduan <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a>, dan rute terkini ada di <a href="/id/flights/">halaman penerbangan</a>.</p>
 <p>Cara paling nyaman adalah <strong>mobil dengan sopir lokal</strong>, yang juga tahu kampung mana yang menerima tamu hari itu dan bisa memperkenalkan Anda. Lonely Planet (2026) menyebut sekitar USD 75 per hari dengan sopir, kira-kira Rp 1,2 juta (sekitar EUR 70), dan harganya bervariasi menurut musim dan jenis mobil. Lihat <a href="/id/getting-here/getting-around-sumba/">transportasi di Sumba</a> dan <a href="/id/getting-here/sumba-travel-costs/">biaya liburan ke Sumba</a>.</p>
 
 <h2>5 hari: lintas Sumba kilat</h2>
@@ -304,6 +304,7 @@ G1 = {
  {"name": "Laiwangi Wanggameti National Park", "lat": -10.0667, "lon": 120.1833, "area": "East Sumba"}
 ],
 "sources": [
+ ["Bandara I Gusti Ngurah Rai tambah rute penerbangan ke Tambolaka NTT, detikBali, 9 January 2026", "https://www.detik.com/bali/bisnis/d-8300266/bandara-i-gusti-ngurah-rai-tambah-rute-penerbangan-ke-tambolaka-ntt"],
  ["A guide to Sumba, Indonesia, Lonely Planet (Charukesi Ramadurai), 10 April 2026", "https://www.lonelyplanet.com/articles/a-guide-to-sumba-indonesia"],
  ["Sumba Adventure 7D6N package, Dinas Pariwisata Kabupaten Sumba Barat Daya", "https://dispar.sbdkab.go.id/trip/sumba-adventure-7d6n-package/"],
  ["Sumba ultimate guide, Seek Sophie", "https://www.seeksophie.com/en/magazine/a/sumba-ultimate-guide"],

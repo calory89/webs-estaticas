@@ -236,7 +236,7 @@ GUIDES = [
 # ---------------------------------------------------------------------------
 # 2) WEST SUMBA REGENCY
 # ---------------------------------------------------------------------------
-{"section": "places", "slug": "west-sumba-regency", "date": "2026-11-08", "time": "10:15", "kind": "guide",
+{"section": "places", "slug": "west-sumba-regency", "date": "2026-11-08", "updated": "2026-11-10", "time": "10:15", "kind": "guide",
  "slugs": {"es": "sumba-occidental-regencia", "id": "kabupaten-sumba-barat"},
  "en": {
   "title": "West Sumba (Sumba Barat): what to know before you go",
@@ -251,7 +251,7 @@ GUIDES = [
 
 <h2>How to get there</h2>
 <ul>
-<li><strong>From Tambolaka airport (TMC):</strong> about 42 km, roughly 1 hour by car; minibuses from Tambolaka (Waitabula) take about 1.5 hours. Wings Air flies Bali to Tambolaka several times a day (about 1h30).</li>
+<li><strong>From Tambolaka airport (TMC):</strong> about 42 km, roughly 1 hour by car; minibuses from Tambolaka (Waitabula) take about 1.5 hours. Batik Air flies Bali to Tambolaka daily (about 1h15), and Nam Air and Sriwijaya Air add several flights a week.</li>
 <li><strong>From Waingapu (WGP):</strong> about 135 km, 3.5-4.5 hours by car via Waibakul; public buses take around 4.5-5 hours.</li>
 <li><strong>Getting around:</strong> the town and its villages are walkable and ojek motorbike taxis are easy to find. For waterfalls and beaches, hire a car with driver or a scooter.</li>
 </ul>
@@ -311,7 +311,7 @@ GUIDES = [
 
 <h2>Cómo llegar</h2>
 <ul>
-<li><strong>Desde el aeropuerto de Tambolaka (TMC):</strong> unos 42 km, alrededor de 1 hora en coche; los minibuses desde Tambolaka (Waitabula) tardan una hora y media. Wings Air vuela de Bali a Tambolaka varias veces al día (1 h 30 min aprox.).</li>
+<li><strong>Desde el aeropuerto de Tambolaka (TMC):</strong> unos 42 km, alrededor de 1 hora en coche; los minibuses desde Tambolaka (Waitabula) tardan una hora y media. Batik Air vuela a diario de Bali a Tambolaka (1 h 15 min aprox.) y Nam Air y Sriwijaya Air suman varios vuelos por semana.</li>
 <li><strong>Desde Waingapu (WGP):</strong> unos 135 km, 3,5-4,5 horas en coche por Waibakul; el autobús tarda unas 4,5-5 horas.</li>
 <li><strong>Para moverse:</strong> la ciudad y sus aldeas se recorren a pie y hay mototaxis (ojek) por todas partes. Para cascadas y playas, alquila coche con conductor o una moto.</li>
 </ul>
@@ -371,7 +371,7 @@ GUIDES = [
 
 <h2>Cara ke sana</h2>
 <ul>
-<li><strong>Dari Bandara Tambolaka (TMC):</strong> sekitar 42 km, kira-kira 1 jam bermobil; angkutan umum dari Tambolaka (Waitabula) sekitar 1,5 jam. Wings Air terbang Bali-Tambolaka beberapa kali sehari (sekitar 1 jam 30 menit).</li>
+<li><strong>Dari Bandara Tambolaka (TMC):</strong> sekitar 42 km, kira-kira 1 jam bermobil; angkutan umum dari Tambolaka (Waitabula) sekitar 1,5 jam. Batik Air terbang Bali-Tambolaka setiap hari (sekitar 1 jam 15 menit), sedangkan Nam Air dan Sriwijaya Air menambah beberapa penerbangan seminggu.</li>
 <li><strong>Dari Waingapu (WGP):</strong> sekitar 135 km, 3,5-4,5 jam bermobil lewat Waibakul; bus umum sekitar 4,5-5 jam.</li>
 <li><strong>Berkeliling:</strong> kota dan kampung-kampungnya bisa dijelajahi dengan berjalan kaki, dan ojek mudah ditemukan. Untuk air terjun dan pantai, sewa mobil dengan sopir atau sepeda motor.</li>
 </ul>
@@ -448,6 +448,7 @@ GUIDES = [
  },
  "places": [{"name": "Waikabubak", "lat": -9.6356, "lon": 119.4101, "area": "West Sumba"}],
  "sources": [
+  ["Bandara I Gusti Ngurah Rai tambah rute penerbangan ke Tambolaka NTT, detikBali, 9 January 2026", "https://www.detik.com/bali/bisnis/d-8300266/bandara-i-gusti-ngurah-rai-tambah-rute-penerbangan-ke-tambolaka-ntt"],
   ["West Sumba Regency, Wikipedia (area, districts, BPS mid-2025 population)", "https://en.wikipedia.org/wiki/West_Sumba_Regency"],
   ["Waikabubak and Surroundings, Sumba Information (Matthias Jungk), accessed Nov 2026", "https://sumba-information.com/where-to-go6"],
   ["The Southwest of Sumba (Wanukaka, Lamboya, Kodi), Sumba Information, accessed Nov 2026", "https://sumba-information.com/where-to-go7"],
@@ -462,7 +463,7 @@ GUIDES = [
 # ---------------------------------------------------------------------------
 # 3) SOUTHWEST SUMBA REGENCY
 # ---------------------------------------------------------------------------
-{"section": "places", "slug": "southwest-sumba-regency", "date": "2026-11-08", "time": "10:30", "kind": "guide",
+{"section": "places", "slug": "southwest-sumba-regency", "date": "2026-11-08", "updated": "2026-11-10", "time": "10:30", "kind": "guide",
  "slugs": {"es": "sumba-suroccidental-regencia", "id": "kabupaten-sumba-barat-daya"},
  "en": {
   "title": "Southwest Sumba (Sumba Barat Daya): what to know before you go",
@@ -478,7 +479,7 @@ GUIDES = [
 
 <h2>How to get there</h2>
 <ul>
-<li><strong>By air:</strong> Tambolaka airport (TMC, also called Lede Kalumbang) is just north of town. Wings Air flies from Bali several times a day, about 1h30. See <a href="/en/getting-here/how-to-get-to-sumba-from-bali/">how to get to Sumba from Bali</a>.</li>
+<li><strong>By air:</strong> Tambolaka airport (TMC, also called Lede Kalumbang) is just north of town. Batik Air flies from Bali daily, about 1h15, and Nam Air and Sriwijaya Air add several flights a week. See <a href="/en/getting-here/how-to-get-to-sumba-from-bali/">how to get to Sumba from Bali</a> and the <a href="/en/flights/">flights page</a>.</li>
 <li><strong>By sea:</strong> the Waikelo-Sape ferry to Sumbawa reopened in May 2026.</li>
 <li><strong>From Waingapu:</strong> about 170 km and 4-5 hours by car, or roughly 4-6 hours by bus or shared car via Waikabubak.</li>
 <li><strong>To Kodi:</strong> shared minibuses from Tambolaka to Bondo Kodi take about an hour; most of the coast's sights need your own car and driver.</li>
@@ -538,7 +539,7 @@ GUIDES = [
 
 <h2>Cómo llegar</h2>
 <ul>
-<li><strong>En avión:</strong> el aeropuerto de Tambolaka (TMC, también llamado Lede Kalumbang) está justo al norte de la ciudad. Wings Air vuela desde Bali varias veces al día, en 1 h 30 min aproximadamente. Más información en <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a>.</li>
+<li><strong>En avión:</strong> el aeropuerto de Tambolaka (TMC, también llamado Lede Kalumbang) está justo al norte de la ciudad. Batik Air vuela desde Bali a diario, en 1 h 15 min aproximadamente, y Nam Air y Sriwijaya Air suman varios vuelos por semana. Más información en <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a> y en la <a href="/es/flights/">página de vuelos</a>.</li>
 <li><strong>Por mar:</strong> el ferri Waikelo-Sape, a Sumbawa, volvió a funcionar en mayo de 2026.</li>
 <li><strong>Desde Waingapu:</strong> unos 170 km y 4-5 horas en coche, o unas 4-6 horas en autobús o coche compartido por Waikabubak.</li>
 <li><strong>Hacia Kodi:</strong> los minibuses compartidos de Tambolaka a Bondo Kodi tardan alrededor de una hora; para casi todo lo demás en la costa necesitas coche con conductor.</li>
@@ -598,7 +599,7 @@ GUIDES = [
 
 <h2>Cara ke sana</h2>
 <ul>
-<li><strong>Pesawat:</strong> Bandara Tambolaka (TMC, juga disebut Lede Kalumbang) berada tepat di utara kota. Wings Air terbang dari Bali beberapa kali sehari, sekitar 1 jam 30 menit. Baca <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a>.</li>
+<li><strong>Pesawat:</strong> Bandara Tambolaka (TMC, juga disebut Lede Kalumbang) berada tepat di utara kota. Batik Air terbang dari Bali setiap hari, sekitar 1 jam 15 menit, sedangkan Nam Air dan Sriwijaya Air menambah beberapa penerbangan seminggu. Baca <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a> dan <a href="/id/flights/">halaman penerbangan</a>.</li>
 <li><strong>Laut:</strong> penyeberangan Waikelo-Sape ke Sumbawa beroperasi kembali sejak Mei 2026.</li>
 <li><strong>Dari Waingapu:</strong> sekitar 170 km dan 4-5 jam bermobil, atau kira-kira 4-6 jam dengan bus atau mobil travel lewat Waikabubak.</li>
 <li><strong>Ke Kodi:</strong> angkutan umum dari Tambolaka ke Bondo Kodi sekitar satu jam; sebagian besar objek di pesisir membutuhkan mobil sewaan dengan sopir.</li>
@@ -674,6 +675,7 @@ GUIDES = [
  },
  "places": [{"name": "Tambolaka", "lat": -9.4242, "lon": 119.2448, "area": "Southwest Sumba"}],
  "sources": [
+  ["Bandara I Gusti Ngurah Rai tambah rute penerbangan ke Tambolaka NTT, detikBali, 9 January 2026", "https://www.detik.com/bali/bisnis/d-8300266/bandara-i-gusti-ngurah-rai-tambah-rute-penerbangan-ke-tambolaka-ntt"],
   ["Southwest Sumba Regency, Wikipedia (area, districts, BPS mid-2025 population, tourism)", "https://en.wikipedia.org/wiki/Southwest_Sumba_Regency"],
   ["Waitabula, Tambolaka and Surroundings, Sumba Information (Matthias Jungk), accessed Nov 2026", "https://sumba-information.com/where-to-go8"],
   ["The Southwest of Sumba (Kodi coast, Wainyapu), Sumba Information, accessed Nov 2026", "https://sumba-information.com/where-to-go7"],

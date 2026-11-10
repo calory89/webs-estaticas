@@ -1546,7 +1546,7 @@ GUIDES = [
 # ---------------------------------------------------------------------------
 # 10) TAMBOLAKA TOWN
 # ---------------------------------------------------------------------------
-{"section": "places", "slug": "tambolaka-town", "date": "2026-11-07", "time": "09:15", "kind": "guide",
+{"section": "places", "slug": "tambolaka-town", "date": "2026-11-07", "updated": "2026-11-10", "time": "09:15", "kind": "guide",
  "slugs": {"es": "tambolaka-ciudad", "id": "kota-tambolaka"},
  "en": {
   "title": "Tambolaka, Sumba: the airport town, what to do and what to know",
@@ -1558,7 +1558,7 @@ GUIDES = [
 <h2>What Tambolaka is and why stop</h2>
 <p>Tambolaka is the capital of Southwest Sumba regency, created in 2007 from West Sumba. The town was long known by its local name, <strong>Waitabula</strong> (also written Weetabula), and the name Tambolaka spread with the airport. The Kota Tambolaka district had around 36,000 people at the 2020 census and an estimated 38,000 in 2025.</p>
 <ul>
-<li><strong>The airport:</strong> Tambolaka (TMC), also called Lede Kalumbang, is north of town, about 1.5 km from central Waitabula. Wings Air flies several times daily from Bali (about 1h30). See <a href="/en/getting-here/how-to-get-to-sumba-from-bali/">how to get to Sumba from Bali</a>.</li>
+<li><strong>The airport:</strong> Tambolaka (TMC), also called Lede Kalumbang, is north of town, about 1.5 km from central Waitabula. Batik Air flies daily from Bali (about 1h15), and Nam Air and Sriwijaya Air add several flights a week. See <a href="/en/getting-here/how-to-get-to-sumba-from-bali/">how to get to Sumba from Bali</a> and the <a href="/en/flights/">flights page</a>.</li>
 <li><strong>The market:</strong> Waitabula has what local guides describe as the largest permanent market on Sumba, a trading centre for the villages of the west.</li>
 <li><strong>The Catholic centre:</strong> the town has a cathedral, a hospital and religious houses.</li>
 <li><strong>Waikelo port:</strong> about 6 km north, the harbour for larger vessels; the Waikelo-Sape (Sumbawa) ferry reopened in May 2026.</li>
@@ -1605,7 +1605,7 @@ GUIDES = [
 <h2>Qué es Tambolaka y por qué detenerse</h2>
 <p>Tambolaka es la capital de la regencia de Sumba Suroccidental, creado en 2007 a partir de Sumba Occidental. La ciudad se conoció durante mucho tiempo por su nombre local, <strong>Waitabula</strong> (también Weetabula), y el nombre de Tambolaka se extendió con el aeropuerto. El distrito de Kota Tambolaka tenía unos 36.000 habitantes en el censo de 2020 y unos 38.000 estimados en 2025.</p>
 <ul>
-<li><strong>El aeropuerto:</strong> Tambolaka (TMC), también llamado Lede Kalumbang, está al norte de la ciudad, a unos 1,5 km del centro de Waitabula. Wings Air vuela varias veces al día desde Bali (alrededor de 1 h 30). Lee <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a>.</li>
+<li><strong>El aeropuerto:</strong> Tambolaka (TMC), también llamado Lede Kalumbang, está al norte de la ciudad, a unos 1,5 km del centro de Waitabula. Batik Air vuela a diario desde Bali (alrededor de 1 h 15) y Nam Air y Sriwijaya Air suman varios vuelos por semana. Lee <a href="/es/getting-here/how-to-get-to-sumba-from-bali/">cómo llegar a Sumba desde Bali</a> y consulta la <a href="/es/flights/">página de vuelos</a>.</li>
 <li><strong>El mercado:</strong> Waitabula tiene lo que las guías locales describen como el mayor mercado permanente de Sumba, centro comercial de las aldeas del oeste.</li>
 <li><strong>Centro católico:</strong> la ciudad tiene catedral, hospital y casas religiosas.</li>
 <li><strong>Puerto de Waikelo:</strong> a unos 6 km al norte, el puerto para barcos grandes; el ferri Waikelo-Sape (Sumbawa) se reanudó en mayo de 2026.</li>
@@ -1652,7 +1652,7 @@ GUIDES = [
 <h2>Apa itu Tambolaka dan mengapa layak disinggahi</h2>
 <p>Tambolaka adalah ibu kota Kabupaten Sumba Barat Daya, yang dibentuk pada 2007 dari Sumba Barat. Kota ini lama dikenal dengan nama lokalnya, <strong>Waitabula</strong> (juga ditulis Weetabula), dan nama Tambolaka makin dikenal bersama bandaranya. Kecamatan Kota Tambolaka berpenduduk sekitar 36.000 jiwa pada sensus 2020 dan diperkirakan sekitar 38.000 pada 2025.</p>
 <ul>
-<li><strong>Bandara:</strong> Bandara Tambolaka (TMC), juga disebut Lede Kalumbang, berada di utara kota, sekitar 1,5 km dari pusat Waitabula. Wings Air terbang beberapa kali sehari dari Bali (sekitar 1 jam 30 menit). Baca <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a>.</li>
+<li><strong>Bandara:</strong> Bandara Tambolaka (TMC), juga disebut Lede Kalumbang, berada di utara kota, sekitar 1,5 km dari pusat Waitabula. Batik Air terbang setiap hari dari Bali (sekitar 1 jam 15 menit), sedangkan Nam Air dan Sriwijaya Air menambah beberapa penerbangan seminggu. Baca <a href="/id/getting-here/how-to-get-to-sumba-from-bali/">cara ke Sumba dari Bali</a> dan <a href="/id/flights/">halaman penerbangan</a>.</li>
 <li><strong>Pasar:</strong> Waitabula memiliki pasar yang oleh pemandu lokal disebut pasar permanen terbesar di Sumba, pusat dagang bagi kampung-kampung di barat.</li>
 <li><strong>Pusat Katolik:</strong> kota ini memiliki katedral, rumah sakit, dan rumah-rumah biara.</li>
 <li><strong>Pelabuhan Waikelo:</strong> sekitar 6 km ke utara, pelabuhan untuk kapal besar; kapal feri Waikelo-Sape (Sumbawa) kembali beroperasi pada Mei 2026.</li>
@@ -1719,6 +1719,7 @@ GUIDES = [
  },
  "places": [{"name": "Tambolaka (Waitabula)", "lat": -9.4242, "lon": 119.2448, "area": "Southwest Sumba"}],
  "sources": [
+  ["Bandara I Gusti Ngurah Rai tambah rute penerbangan ke Tambolaka NTT, detikBali, 9 January 2026", "https://www.detik.com/bali/bisnis/d-8300266/bandara-i-gusti-ngurah-rai-tambah-rute-penerbangan-ke-tambolaka-ntt"],
   ["Tambolaka, Wikipedia", "https://en.wikipedia.org/wiki/Tambolaka"],
   ["Southwest Sumba Regency, Wikipedia", "https://en.wikipedia.org/wiki/Southwest_Sumba_Regency"],
   ["Waitabula, Tambolaka and Surroundings, Sumba Information", "https://sumba-information.com/where-to-go8"],

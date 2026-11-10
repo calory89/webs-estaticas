@@ -35,7 +35,7 @@ Each guide dict:
 - Spanish slugs: lowercase, hyphens, no accents (e.g. "mejor-epoca-para-viajar-a-sumba"). Indonesian slugs similar (e.g. "waktu-terbaik-ke-sumba").
 
 ## Known facts already published on the site (stay consistent)
-- Two airports: Tambolaka (TMC, north-west) and Waingapu (WGP, Umbu Mehang Kunda, east). Wings Air Bali-Tambolaka several daily (~1h30); TransNusa Bali-Waingapu non-stop 4x/week since 15 July 2026 (Tue, Wed, Fri, Sat).
+- Two airports: Tambolaka (TMC, north-west) and Waingapu (WGP, Umbu Mehang Kunda, east). Bali-Tambolaka: Batik Air daily since 9 Jan 2026 (A320, ~1h15) plus Nam Air / Sriwijaya Air several a week; Wings Air no longer appears on this route (schedule listings checked 10 Nov 2026, reference table: pages_live.FLIGHTS; Wings Air still flies Kupang-Tambolaka, Kupang-Waingapu, Labuan Bajo-Tambolaka and Lombok-Waingapu); TransNusa Bali-Waingapu non-stop 4x/week since 15 July 2026 (Tue, Wed, Fri, Sat).
 - Sumba is about 200 km long, roughly twice the size of Bali. Four regencies: West Sumba (Waikabubak), Southwest Sumba (Tambolaka), Central Sumba (Waibakul), East Sumba (Waingapu).
 - Ferry Waikelo (Sumba) - Sape (Sumbawa) reopened May 2026.
 - East Sumba counted 41,524 visitors in 2025; about 1 in 8 foreign; average stay 3 nights.
