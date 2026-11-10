@@ -13,6 +13,20 @@
  ],
  "items": [
   {
+   "id": "https://kolaboro.com/shipping/#d-2026-11-09",
+   "url": "https://kolaboro.com/changelog/2026-11-09/",
+   "title": "9 November 2026: 36 changes shipped",
+   "content_text": "- Speed (n20p): date and number formatters built once per isolate (named page render 10x less CPU), database reads on named pages capped at 2.5 s, per-step Server-Timing\n- UX sweep part A (tools merge and clarity, check, pricing table, country search, 404 link) and corporate family code (GLEIF level 2) for developer pages and graph\n- AI spend cut (owner, 9 Nov): website model calls on Haiku only, max 2000 output tokens, real Haiku 5.5 prices in the spend guard, 3 desk reviews per IP per hour\n- Any plot from space since 2017 (on-demand Sentinel-2 frames per quarter, 8 languages) and time-lapse GIF share on the plot tool and the named-page time machine\n- Speed (n20p): named pages answered from the edge copy before any data is read, parallel data loads, /open figures kept 60 s, analytics deferred on tools pages\n- Login and sign-up pages on phones: rows no longer stretch to the screen height, so adding the passkey button does not move the page (CLS 0.26 to 0.01) (n19f)\n\nSummary taken from the day's commit subjects.",
+   "content_html": "<ul><li>Speed (n20p): date and number formatters built once per isolate (named page render 10x less CPU), database reads on named pages capped at 2.5 s, per-step Server-Timing</li><li>UX sweep part A (tools merge and clarity, check, pricing table, country search, 404 link) and corporate family code (GLEIF level 2) for developer pages and graph</li><li>AI spend cut (owner, 9 Nov): website model calls on Haiku only, max 2000 output tokens, real Haiku 5.5 prices in the spend guard, 3 desk reviews per IP per hour</li><li>Any plot from space since 2017 (on-demand Sentinel-2 frames per quarter, 8 languages) and time-lapse GIF share on the plot tool and the named-page time machine</li><li>Speed (n20p): named pages answered from the edge copy before any data is read, parallel data loads, /open figures kept 60 s, analytics deferred on tools pages</li><li>Login and sign-up pages on phones: rows no longer stretch to the screen height, so adding the passkey button does not move the page (CLS 0.26 to 0.01) (n19f)</li></ul><p>Summary taken from the day&#x27;s commit subjects.</p>",
+   "date_published": "2026-11-09T00:00:00Z",
+   "date_modified": "2026-11-09T23:34:52Z",
+   "_kolaboro": {
+    "ships": 36,
+    "data_updates": 32,
+    "method": "deterministic"
+   }
+  },
+  {
    "id": "https://kolaboro.com/shipping/#d-2026-11-08",
    "url": "https://kolaboro.com/changelog/2026-11-08/",
    "title": "8 November 2026: 30 changes shipped",
