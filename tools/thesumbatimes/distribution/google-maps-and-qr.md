@@ -16,7 +16,7 @@ Why: travellers look at Google Maps before anything else, and many places in Sum
 ### What to photograph
 
 - [ ] Only places you have actually visited, with photos you took yourself. Never upload a photo from the site's library: most of those belong to other photographers under Creative Commons licences and are not yours to give to Google.
-- [ ] Start with the places that have a page on the site (35 place pages): lagoons, beaches, waterfalls, hills, villages, towns, the two national park areas.
+- [ ] Start with the places that have a page on the site (the place pages): lagoons, beaches, waterfalls, hills, villages, towns, the two national park areas.
 - [ ] For each place, 5 to 10 photos that answer a visitor's questions:
   - the view people come for, in good light;
   - the access: the turn-off from the road, the parking area, the path or the steps;

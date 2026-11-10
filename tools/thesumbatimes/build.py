@@ -35,8 +35,8 @@ ARTICLES = ARTICLES + [g for g in _GUIDES if g["slug"] not in _have]
 
 BASE = "https://thesumbatimes.com"
 INDEXNOW = "7f3c1e9a5b2d4c8e9f0a1b2c3d4e5f60"   # public IndexNow key (served at /<key>.txt)
-import newsletter, seo_extra, reader_tools, pages_live
-MODULES = [seo_extra, reader_tools, pages_live]   # extra page modules: each has build(g) and optional SITEMAP / CSS
+import newsletter, seo_extra, reader_tools, pages_live, press
+MODULES = [seo_extra, reader_tools, pages_live, press]   # extra page modules: each has build(g) and optional SITEMAP / CSS
 OUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "out")
 CLARITY = "z9xpaay63s"
 SB_URL = "https://oykcsmextclpdnugixqz.supabase.co"
