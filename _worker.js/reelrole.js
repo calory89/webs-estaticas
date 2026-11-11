@@ -8,8 +8,8 @@
 const ORIGIN = 'https://reelrole.com';
 const SB = 'https://mfyfqtlozspmiautbgef.supabase.co/rest/v1/';
 const SB_URL = 'https://mfyfqtlozspmiautbgef.supabase.co';
-// Public anon key (already shipped in the site's JavaScript). Row-level security applies.
-const ANON = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1meWZxdGxvenNwbWlhdXRiZ2VmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDc3MDc3NDksImV4cCI6MjA2MzI4Mzc0OX0.9R0vxQpI_lg3nrfImjxICw91RCTQNX9jmSj2SOsUAf8';
+// Public publishable key (new Supabase key format; safe in the browser). Row-level security applies.
+const ANON = 'sb_publishable_m3p4bAQ2IufrhXsRR_-tpA_r-HbC4Vd';
 const OG_IMAGE = ORIGIN + '/og-image.png';
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
