@@ -4,6 +4,20 @@
   {
    "date": "2026-11-11",
    "kind": "shipped",
+   "text": "39 developer pages of listed companies now show the exchange, the ticker and a link to the official filings, with the latest annual report date for those filing with the US SEC. No share prices, no advice",
+   "tl": {
+    "es": "39 páginas de promotores cotizados muestran ahora la bolsa, el símbolo y un enlace a la información oficial, con la fecha del último informe anual de los que presentan ante la SEC de EE. UU. Sin cotizaciones ni consejos",
+    "fr": "39 pages de promoteurs cotés affichent désormais la bourse, le symbole et un lien vers les publications officielles, avec la date du dernier rapport annuel pour ceux qui déposent auprès de la SEC américaine. Ni cours ni conseils",
+    "de": "39 Seiten börsennotierter Bauträger zeigen jetzt Börse, Kürzel und einen Link zu den amtlichen Meldungen, mit dem Datum des letzten Jahresberichts bei Einreichung an die US-SEC. Keine Kurse, keine Empfehlungen",
+    "nl": "39 pagina's van beursgenoteerde ontwikkelaars tonen nu de beurs, de ticker en een link naar de officiële publicaties, met de datum van het laatste jaarverslag voor wie bij de Amerikaanse SEC indient. Geen koersen, geen advies",
+    "ru": "На 39 страницах публичных застройщиков теперь указаны биржа, тикер и ссылка на официальную отчётность, а для подающих отчёты в SEC США также дата последнего годового отчёта. Без котировок и советов",
+    "zh": "39 个上市开发商页面现在显示交易所、代码和官方披露链接，向美国 SEC 报送的公司还显示最新年报日期。不显示股价，不提供建议",
+    "ar": "39 صفحة لمطوّرين مدرجين تعرض الآن السوق والرمز ورابط الإفصاحات الرسمية، مع تاريخ آخر تقرير سنوي لمن يودعون لدى هيئة الأوراق المالية الأمريكية. بلا أسعار أسهم ولا نصائح"
+   }
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "shipped",
    "text": "Stricter script rules on every page: a script runs only when our own page loaded it, so injected code is blocked by the browser; tested first on 271 pages, every tool, the portal and the admin",
    "tl": {
     "es": "Reglas de scripts más estrictas en todas las páginas: un script solo se ejecuta si lo cargó nuestra propia página, así el navegador bloquea el código inyectado; probado antes en 271 páginas, todas las herramientas, el portal y la administración",

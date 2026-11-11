@@ -112,22 +112,22 @@ export function rulesFor(rd, x, ds) {
 function srcMark(rd, id, lang) {
   const s = rd.sources && rd.sources[id]; if (!s) return '';
   const pub = String(s.n).split(',')[0], when = s.d ? String(t(lang, 'dk')[s.dk || 'page'] || '{d}').replace('{d}', s.dk === 'edition' ? s.d.slice(0, 4) : fdt(s.d, lang)) : String(t(lang, 'read')).replace('{d}', fdt(s.read, lang));
-  return '<a class="k-src" href="' + esc(s.u) + '" rel="noopener" target="_blank">' + ltr(pub) + ', ' + esc(when) + '</a>';
+  return '<a class="k-src" href="' + esc(s.u) + '" rel="noopener" target="_blank"><span>' + ltr(pub) + ', ' + esc(when) + '</span></a>';
 }
 function cellHtml(rd, c, lang) {
   if (!c || c.s === 'nc') return '<span class="k-muted">' + esc(t(lang, 'nc')) + '</span>';
   if (c.s === 'nf') return '<span class="k-muted">' + esc(t(lang, 'nf')) + '</span>';
   if (c.s === 'up') return '<span class="k-muted">' + esc(t(lang, 'up')) + '</span>';
   const txt = (c.t && (c.t[lang] || c.t.en)) || '';
-  return '<span class="ksr-t">' + esc(txt) + '</span>' + (c.q ? ' <q class="ksr-q" lang="' + esc(c.q.l) + '" dir="ltr">' + esc(c.q.t) + '</q>' : '') + ' ' + (c.src || []).map(i => srcMark(rd, i, lang)).join(' ');
+  return '<div class="ksr-c"><span class="ksr-t">' + esc(txt) + '</span>' + (c.q ? ' <q class="ksr-q" lang="' + esc(c.q.l) + '" dir="ltr">' + esc(c.q.t) + '</q>' : '') + ' ' + (c.src || []).map(i => srcMark(rd, i, lang)).join(' ') + '</div>';
 }
 function tableHtml(rd, ids, lang, quotes) {
   const cols = t(lang, 'cols');
   return '<div class="k-table-wrap ksr-tw"><table class="k-table k-table--dense k-table--stack ksr"><thead><tr>' + cols.map(c => '<th scope="col">' + esc(c) + '</th>').join('') + '</tr></thead><tbody>' +
     ids.map(i => { const j = rd.rules[i]; return '<tr id="r-' + esc(i) + '"><th scope="row" data-label="' + esc(cols[0]) + '">' + ltr(j.name) + '</th>' + CELLS.map((c, n) => '<td data-label="' + esc(cols[n + 1]) + '">' + cellHtml(rd, quotes ? j[c] : Object.assign({}, j[c], { q: null }), lang) + '</td>').join('') + '</tr>'; }).join('') + '</tbody></table></div>';
 }
-export const RULES_CSS = '.ksr-tw{margin:12px 0;overflow-x:auto}.ksr th[scope=row]{min-width:7.5em;font-weight:600}.ksr td{min-width:11em;vertical-align:top;font-size:var(--k-fs-sm,15px);overflow-wrap:anywhere}.ksr .k-src{white-space:normal}.ksr-q{display:block;margin:4px 0;color:var(--k-muted,var(--muted));font-size:var(--k-fs-xs,13px);unicode-bidi:isolate}' +
-  '@media (max-width:640px){.ksr td,.ksr th[scope=row]{min-width:0}}';
+export const RULES_CSS = '.ksr-tw{margin:12px 0;overflow-x:auto}.ksr th[scope=row]{min-width:6.5em;font-weight:600}.ksr td{min-width:9.5em;vertical-align:top;font-size:var(--k-fs-sm,15px)}.ksr .k-src{display:flex;white-space:normal;margin-top:4px;width:fit-content;max-width:100%}.ksr-t{display:block}.ksr-q{display:block;margin:4px 0;color:var(--k-muted,var(--muted));font-size:var(--k-fs-xs,13px);unicode-bidi:isolate}' +
+  '@media (max-width:640px){.ksr td,.ksr th[scope=row]{min-width:0}.ksr.k-table--stack td{display:block;text-align:start;padding:6px 0}.ksr.k-table--stack td::before{display:block;margin-bottom:2px;font-size:var(--k-fs-xs,13px)}.ksr.k-table--stack th[scope=row]{display:block;padding:2px 0 4px;font-size:var(--k-fs-md,17px);text-align:start}}';
 
 // block for the named project page ('' when no rule set covers the project)
 export function rulesHtml(rd, x, lang, ds) {
