@@ -13,6 +13,20 @@
  ],
  "items": [
   {
+   "id": "https://kolaboro.com/shipping/#d-2026-11-11",
+   "url": "https://kolaboro.com/shipping/#d-2026-11-11",
+   "title": "11 November 2026: 1 change shipped so far",
+   "content_text": "- Supabase: clave publica nueva en el worker (kolaboro, jurimatch, jobersity, realhunt)\n\nDay in progress: summary taken from the commit subjects so far.",
+   "content_html": "<ul><li>Supabase: clave publica nueva en el worker (kolaboro, jurimatch, jobersity, realhunt)</li></ul><p>Day in progress: summary taken from the commit subjects so far.</p>",
+   "date_published": "2026-11-11T00:00:00Z",
+   "date_modified": "2026-11-11T06:38:21Z",
+   "_kolaboro": {
+    "ships": 1,
+    "data_updates": 0,
+    "method": "so-far"
+   }
+  },
+  {
    "id": "https://kolaboro.com/shipping/#d-2026-11-09",
    "url": "https://kolaboro.com/changelog/2026-11-09/",
    "title": "9 November 2026: 36 changes shipped",
