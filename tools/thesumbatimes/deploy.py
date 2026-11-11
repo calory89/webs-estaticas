@@ -89,7 +89,17 @@ async function nl(req,env,u){const H=Object.assign({'content-type':'application/
   return new Response(v,{headers:Object.assign({},H,{'cache-control':'public, max-age=600'})})}
  }catch(e){return new Response('{"error":"upstream"}',{status:502,headers:H})}
  return new Response('{}',{status:404,headers:H})}
-export default{async fetch(req,env){const u=new URL(req.url);
+// Own first-party page counter (no cookies, no IPs stored): one KV record per UTC day with totals by language, page,
+// country and referrer host. Bots are skipped. Read by claude-ops jobs/tst_metrics.py for the weekly panel.
+async function hit(req,env,u,p){try{const ua=(req.headers.get('user-agent')||'').toLowerCase();if(!ua||BOT.test(ua)||req.method!=='GET')return;
+ if((req.headers.get('sec-fetch-dest')||'document')!=='document'||(req.headers.get('purpose')||req.headers.get('sec-purpose')||'').includes('prefetch'))return;
+ const k='st/'+new Date().toISOString().slice(0,10);let d={pv:0,l:{},p:{},c:{},r:{},s:{}};const v=await env.IMG.get(k);if(v){try{d=JSON.parse(v)}catch(e){}}
+ if(d.pv>20000&&Math.random()>0.1)return;const w=d.pv>20000?10:1;const inc=(o,key)=>{if(o[key]||Object.keys(o).length<400)o[key]=(o[key]||0)+w};
+ d.pv+=w;const m=p.match(/^\/(en|es|id)\//);inc(d.l,m?m[1]:'-');inc(d.p,p.replace(/index\.html$/,''));inc(d.c,(req.cf&&req.cf.country)||'-');
+ let rh='';try{rh=new URL(req.headers.get('referer')||'').hostname.replace(/^www\./,'')}catch(e){}if(rh&&rh!=='thesumbatimes.com')inc(d.r,rh);
+ const us=u.searchParams.get('utm_source');if(us)inc(d.s,us.slice(0,30).toLowerCase());
+ await env.IMG.put(k,JSON.stringify(d),{expirationTtl:86400*120})}catch(e){}}
+export default{async fetch(req,env,ctx){const u=new URL(req.url);
  if(u.pathname.startsWith('/api/nl/'))return nl(req,env,u);
  if(u.pathname==='/api/ask')return ask(req,env);
  if(u.pathname==='/api/question')return question(req,env);
@@ -104,7 +114,7 @@ export default{async fetch(req,env){const u=new URL(req.url);
  if(p.startsWith('/pdf/')){const k=p.slice(1);const v=env.IMG?await env.IMG.get(k,{type:'arrayBuffer'}):null;if(v){return new Response(v,{headers:Object.assign({'content-type':'application/pdf','cache-control':'public, max-age=86400','x-robots-tag':'noindex'},SEC)});}const m=p.match(/-(en|es|id)\.pdf$/);return Response.redirect(u.origin+'/'+(m?m[1]:'en')+'/guide/sumba-7-days/',302);}
  if(p.startsWith('/img/')||p.startsWith('/og/')){const k=p.slice(1);const v=env.IMG?await env.IMG.get(k,{type:'arrayBuffer'}):null;if(v){return new Response(v,{headers:hdr(k.split('.').pop(),p.startsWith('/og/')?'public, max-age=86400':'public, max-age=2592000')});}const fb=OGF[p.slice(4)];if(fb){const v2=await env.IMG.get('og/'+fb+'.jpg',{type:'arrayBuffer'});if(v2)return new Response(v2,{headers:hdr('jpg','public, max-age=3600')});}return new Response('Not found',{status:404,headers:hdr('txt','public, max-age=60')});}
  if(p.endsWith('/'))p+='index.html';
- if(F[p])return resp(p,200);
+ if(F[p]){if(p.endsWith('.html')&&env.IMG&&ctx)ctx.waitUntil(hit(req,env,u,p));return resp(p,200);}
  if(!/\.[a-z0-9]{2,12}$/i.test(p)&&F[p+'/index.html']){return Response.redirect(u.origin+u.pathname+'/'+u.search,301);}
  const m=p.match(/^\/(en|es|id)\//);return resp(m&&F['/'+m[1]+'/404.html']?'/'+m[1]+'/404.html':'/404.html',404);}};
 """
