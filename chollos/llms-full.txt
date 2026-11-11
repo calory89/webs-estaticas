@@ -1,6 +1,6 @@
 # Happy Low Cost: chollos de vuelos activos (11 nov 2026)
 
-> 34 chollos de vuelos de ida y vuelta, cada uno al menos un 40 % por debajo del precio habitual de su ruta. Actualizado: 2026-11-11T16:09:28Z. Los precios cambian por horas: comprueba siempre el precio en la página del chollo. Mismo contenido en JSON: https://www.happylowcost.com/chollos/feed.json
+> 33 chollos de vuelos de ida y vuelta, cada uno al menos un 40 % por debajo del precio habitual de su ruta. Actualizado: 2026-11-11T22:41:21Z. Los precios cambian por horas: comprueba siempre el precio en la página del chollo. Mismo contenido en JSON: https://www.happylowcost.com/chollos/feed.json
 
 Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelos verificados, sobre todo con salida desde España. Método: https://www.happylowcost.com/como-verificamos/
 
@@ -11,14 +11,13 @@ Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelo
 - [Alicante → Estocolmo (Suecia): 78 € ida y vuelta](https://www.happylowcost.com/chollos/alicante-estocolmo-78-euros-2027-01-25/), Ryanair, directo, 25 ene 2027 a 6 feb 2027. Precio habitual 140 € (−44 %). Comprobado el 11 nov 2026.
 
 ## Desde Barcelona (España)
-- [Barcelona → Edimburgo (Reino Unido): 59 € ida y vuelta](https://www.happylowcost.com/chollos/barcelona-edimburgo-59-euros-2027-01-23/), Ryanair, directo, 23 ene 2027 a 29 ene 2027. Precio habitual 120 € (−51 %). Comprobado el 10 nov 2026.
-- [Barcelona → Miami (Estados Unidos): 379 € ida y vuelta](https://www.happylowcost.com/chollos/barcelona-miami-379-euros-2026-11-17/), TAP Portugal, 17 nov 2026 a 25 nov 2026. Precio habitual 640 € (−41 %). Comprobado el 10 nov 2026.
+- [Barcelona → Edimburgo (Reino Unido): 59 € ida y vuelta](https://www.happylowcost.com/chollos/barcelona-edimburgo-59-euros-2027-01-23/), Ryanair, directo, 23 ene 2027 a 29 ene 2027. Precio habitual 120 € (−51 %). Comprobado el 11 nov 2026.
+- [Barcelona → Miami (Estados Unidos): 379 € ida y vuelta](https://www.happylowcost.com/chollos/barcelona-miami-379-euros-2026-11-17/), TAP Portugal, 17 nov 2026 a 25 nov 2026. Precio habitual 640 € (−41 %). Comprobado el 11 nov 2026.
 
 ## Desde Bilbao (España)
-- [Bilbao → Miami (Estados Unidos): 373 € ida y vuelta](https://www.happylowcost.com/chollos/bilbao-miami-373-euros-2026-11-17/), TAP Portugal, 17 nov 2026 a 24 nov 2026. Precio habitual 820 € (−55 %). Comprobado el 10 nov 2026.
+- [Bilbao → Miami (Estados Unidos): 373 € ida y vuelta](https://www.happylowcost.com/chollos/bilbao-miami-373-euros-2026-11-17/), TAP Portugal, 17 nov 2026 a 24 nov 2026. Precio habitual 820 € (−55 %). Comprobado el 11 nov 2026.
 
 ## Desde Gran Canaria (España)
-- [Gran Canaria → Hamburgo (Alemania): 114 € ida y vuelta](https://www.happylowcost.com/chollos/gran-canaria-hamburgo-114-euros-2026-11-11/), Eurowings, directo, 11 nov 2026 a 22 nov 2026. Precio habitual 210 € (−46 %). Comprobado el 11 nov 2026.
 - [Gran Canaria → Salzburgo (Austria): 129 € ida y vuelta](https://www.happylowcost.com/chollos/gran-canaria-salzburgo-129-euros-2026-12-30/), Eurowings, directo, 30 dic 2026 a 6 ene 2027. Precio habitual 240 € (−46 %). Comprobado el 11 nov 2026.
 
 ## Desde Ibiza (España)
@@ -26,12 +25,11 @@ Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelo
 
 ## Desde Madrid (España)
 - [Madrid → Luxemburgo (Luxemburgo): 41 € ida y vuelta](https://www.happylowcost.com/chollos/madrid-luxemburgo-41-euros-2026-11-28/), Ryanair, directo, 28 nov 2026 a 4 dic 2026. Precio habitual 120 € (−66 %). Comprobado el 11 nov 2026.
-- [Madrid → Catania (Italia): 50 € ida y vuelta](https://www.happylowcost.com/chollos/madrid-catania-50-euros-2026-12-12/), Ryanair, directo, 12 dic 2026 a 16 dic 2026. Precio habitual 90 € (−44 %). Comprobado el 10 nov 2026.
+- [Madrid → Catania (Italia): 50 € ida y vuelta](https://www.happylowcost.com/chollos/madrid-catania-50-euros-2026-12-12/), Ryanair, directo, 12 dic 2026 a 16 dic 2026. Precio habitual 90 € (−44 %). Comprobado el 11 nov 2026.
 - [Madrid → Bucarest (Rumanía): 56 € ida y vuelta](https://www.happylowcost.com/chollos/madrid-bucarest-56-euros-2027-02-01/), Ryanair, directo, 1 feb 2027 a 4 feb 2027. Precio habitual 100 € (−44 %). Comprobado el 11 nov 2026.
 
 ## Desde Málaga (España)
-- [Málaga → Viena (Austria): 57 € ida y vuelta](https://www.happylowcost.com/chollos/malaga-viena-57-euros-2027-02-02/), Ryanair, directo, 2 feb 2027 a 10 feb 2027. Precio habitual 100 € (−43 %). Comprobado el 10 nov 2026.
-- [Málaga → Edimburgo (Reino Unido): 68 € ida y vuelta](https://www.happylowcost.com/chollos/malaga-edimburgo-68-euros-2026-11-26/), Ryanair, directo, 26 nov 2026 a 6 dic 2026. Precio habitual 120 € (−43 %). Comprobado el 10 nov 2026.
+- [Málaga → Viena (Austria): 57 € ida y vuelta](https://www.happylowcost.com/chollos/malaga-viena-57-euros-2027-02-02/), Ryanair, directo, 2 feb 2027 a 10 feb 2027. Precio habitual 100 € (−43 %). Comprobado el 11 nov 2026.
 - [Málaga → Hamburgo (Alemania): 74 € ida y vuelta](https://www.happylowcost.com/chollos/malaga-hamburgo-74-euros-2027-01-28/), Ryanair, directo, 28 ene 2027 a 4 feb 2027. Precio habitual 170 € (−56 %). Comprobado el 11 nov 2026.
 - [Málaga → Praga (República Checa): 91 € ida y vuelta](https://www.happylowcost.com/chollos/malaga-praga-91-euros-2027-02-01/), Ryanair, directo, 1 feb 2027 a 2 feb 2027. Precio habitual 160 € (−43 %). Comprobado el 11 nov 2026.
 - [Málaga → Riga (Letonia): 96 € ida y vuelta](https://www.happylowcost.com/chollos/malaga-riga-96-euros-2027-02-04/), Ryanair, directo, 4 feb 2027 a 8 feb 2027. Precio habitual 160 € (−40 %). Comprobado el 11 nov 2026.
@@ -69,3 +67,4 @@ Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelo
 
 ## Desde Ámsterdam (Países Bajos)
 - [Ámsterdam → Bonaire (Bonaire): 447 € ida y vuelta](https://www.happylowcost.com/chollos/amsterdam-bonaire-447-euros-2026-11-17/), Corendon Dutch Airlines B.V., directo, 17 nov 2026 a 1 dic 2026. Precio habitual 790 € (−43 %). Comprobado el 11 nov 2026.
+- [Ámsterdam → Curazao (Curazao): 450 € ida y vuelta](https://www.happylowcost.com/chollos/amsterdam-curazao-450-euros-2026-12-02/), Corendon Dutch Airlines B.V., directo, 2 dic 2026 a 12 dic 2026. Precio habitual 990 € (−55 %). Comprobado el 11 nov 2026.
