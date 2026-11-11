@@ -44,6 +44,7 @@ let kca = null; const KCA = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?tools\/contract-a
 let knet = null; const KNET = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:graph\/developers|live\/xrays)\/?$|^\/api\/x\/net\/(?:graph|live)$/;   // b14 f14c: developer network graph + live X-ray globe (keep equal to PATHS in kbx_net.js)
 let kplot = null; const KPLOT = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?satellite\/plot\/?$/;   // n19d (batch 19): any plot from space, 8 languages (see kbx_plot.js)
 let kwat = null; const KWAT = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?watch\/lookalikes\/?$|^\/__k\/kwatch-admin\.js$/;   // n19a (batch 19): lookalike websites feed, admin Screening tab (see kbx_watch.js)
+let krul = null; const KRUL = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?guides\/short-let-rules\/?$/;   // n21c (batch 21): short-let rules by city (see kbx_rules.js)
 let kstg = null; const KSTG = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?methods\/construction-stage\/?$/;   // n18b (batch 18): construction stage method page (see kbx_stage.js)
 let kfc = null; const KFC = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:open|methods\/delivery-forecast)\/?$/;   // n17c (batch 17): /open live figures, delivery-forecast method page (see kbx_fc.js)
 let knm = null; const KNM = /^\/(?:(?:es|de|fr|nl|ru|zh|ar)\/)?(?:projects|developers)(?:\/|$)|^\/api\/seo\/(?:urls|scan)$/;   // seoP named pages, keep equal to PATHS in kbx_named.js
@@ -374,6 +375,13 @@ export default {
       if (u.pathname === '/__k/kwatch-admin.js') return new Response(kwat.ADMIN_JS, { headers: { 'content-type': 'application/javascript; charset=utf-8', 'cache-control': 'no-store' } });
       const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
       const r = await kwat.page(req, u, env, ctx, shell);
+      if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
+    }
+    // kolaboro.com (n21c, batch 21): /guides/short-let-rules/ in 8 languages (see kbx_rules.js)
+    if (host === 'kolaboro.com' && (req.method === 'GET' || req.method === 'HEAD') && KRUL.test(u.pathname)) {
+      if (!krul) krul = await import('./kbx_rules.js');
+      const shell = p => { const su = new URL(p, u); return this.site(new Request(su, { method: 'GET', headers: { accept: 'text/html' } }), env, ctx, su, host); };
+      const r = await krul.page(req, u, env, ctx, shell);
       if (r) return /text\/html/.test(r.headers.get('content-type') || '') ? kbHeaders(r, u) : r;
     }
     // kolaboro.com (n18b, batch 18): /methods/construction-stage/ in 8 languages (see kbx_stage.js)

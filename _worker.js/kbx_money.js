@@ -11,6 +11,7 @@
 // Routes:
 //   GET /api/x/money/            coverage summary
 //   GET /api/x/money/<ID>        short lets and recorded sales near one named project (public JSON)
+import { rulesData, rulesHtml, rulesJson, RULES_CSS } from './kbx_rules.js';   // batch 21 (n21c): short-let rules next to the short-let figures
 const ORIGIN = 'https://kolaboro.com';
 export const PATHS = /^\/api\/x\/money(\/|$)/;
 const LOC = { en: 'en-GB', es: 'es-ES', de: 'de-DE', fr: 'fr-FR', nl: 'nl-NL', ru: 'ru-RU', zh: 'zh-CN', ar: 'ar' };
@@ -29,8 +30,8 @@ async function loadOne(env, path) {
   MEMO[path] = { t: Date.now(), v }; return v;
 }
 export async function moneyData(env) {
-  const [sl, sn] = await Promise.all([loadOne(env, '/data/short-lets.json'), loadOne(env, '/data/sales-nearby.json')]);
-  return { sl, sn, v: ((sl && sl.updated) || '') + '/' + ((sn && sn.updated) || '') };
+  const [sl, sn, ru] = await Promise.all([loadOne(env, '/data/short-lets.json'), loadOne(env, '/data/sales-nearby.json'), rulesData(env).catch(() => null)]);   // ru: n21c
+  return { sl, sn, ru, v: ((sl && sl.updated) || '') + '/' + ((sn && sn.updated) || '') };
 }
 
 // ------------------------------------------------------------------------------------------------ strings (8 languages)
@@ -273,8 +274,10 @@ export const MONEY_CSS = '.kmo-q{margin:8px 0;padding:6px 14px;border-inline-sta
 export function moneyHtml(md, x, lang) {
   if (!md) return '';
   const a = shortletHtml(md.sl, x, lang), b = soldHtml(md.sn, x, lang);
-  if (!a && !b) return '';
-  return '<style>' + MONEY_CSS + '</style><div class="kmo">' + a + b + '<p class="k-small"><a href="/prices/">' + esc(t(lang, 'so_more')) + '</a> <a class="k-src" href="/api/x/money/' + esc(x.id) + '">' + esc(t(lang, 'json')) + '</a> <span class="k-muted">' + esc(t(lang, 'upd', { d: fdt(((md.sn && md.sn.updated) || (md.sl && md.sl.updated) || '').slice(0, 10), lang) })) + '</span></p></div>';
+  const slr = md.sl && md.sl.projects && md.sl.projects[x.id], c = md.ru ? rulesHtml(md.ru, x, lang, slr && !slr.outside ? slr.ds : null) : '';   // n21c: can you legally short-let here
+  if (!a && !b && !c) return '';
+  if (!a && !b) return '<style>' + RULES_CSS + '</style><div class="kmo">' + c + '</div>';
+  return '<style>' + MONEY_CSS + RULES_CSS + '</style><div class="kmo">' + a + c + b + '<p class="k-small"><a href="/prices/">' + esc(t(lang, 'so_more')) + '</a> <a class="k-src" href="/api/x/money/' + esc(x.id) + '">' + esc(t(lang, 'json')) + '</a> <span class="k-muted">' + esc(t(lang, 'upd', { d: fdt(((md.sn && md.sn.updated) || (md.sl && md.sl.updated) || '').slice(0, 10), lang) })) + '</span></p></div>';
 }
 
 // ------------------------------------------------------------------------------------------------ API
@@ -287,10 +290,13 @@ export async function handle(req, u, env, ctx) {
     if (!m) return out({ what: 'Short lets (Inside Airbnb) and recorded sale prices (official registers) within 1 km of each pinned named project.', short_lets: { updated: sl.updated, source: sl.source, method: sl.method, datasets: sl.datasets, summary: sl.summary, projects: Object.keys(sl.projects || {}).filter(k => !(sl.projects[k] || {}).outside) },
       recorded_sales: { updated: sn.updated, registers: sn.registers, method: sn.method, not_covered: sn.not_covered, summary: sn.summary, projects: Object.keys(sn.projects || {}) }, per_project: ORIGIN + '/api/x/money/<ID>', files: [ORIGIN + '/data/short-lets.json', ORIGIN + '/data/sales-nearby.json'] });
     const id = m[1].toUpperCase(), a = (sl.projects || {})[id], b = (sn.projects || {})[id];
+    if (!a && !b && md.ru) { const { data } = await import('./kbx_named.js'); const ix = await data(env).catch(() => null); const x = ix && ix.byId.get(id); const rj = x ? rulesJson(md.ru, x, null) : null;
+      if (rj) return out({ id, name: x.n, url: ORIGIN + '/projects/' + x.s + '/#money', short_lets: null, recorded_sales: null, short_let_rules: rj }); }
     if (!a && !b) return out({ id, error: 'not_covered', note: 'Only projects with a plot-level pin in a city covered by Inside Airbnb or by an official open sales register are covered.' }, 404);
     const { data } = await import('./kbx_named.js'); const ix = await data(env).catch(() => null); const x = ix && ix.byId.get(id);
     return out({ id, name: x ? x.n : null, url: x ? ORIGIN + '/projects/' + x.s + '/#money' : null, radius_m: 1000,
       short_lets: a && !a.outside ? Object.assign({ dataset: Object.assign({ path: a.ds }, (sl.datasets || {})[a.ds] || {}), source: sl.source, updated: sl.updated }, a, { claim: a.claim ? Object.assign({}, a.claim, { copy: x ? ORIGIN + '/projects/' + x.s + '/changes/' + a.claim.sha + '.txt' : null }) : null }) : null,
-      recorded_sales: b && (!b.skip || b.skip === 'scotland') ? Object.assign({ register: (sn.registers || {})[b.reg] || null, updated: sn.updated }, b) : null });
+      recorded_sales: b && (!b.skip || b.skip === 'scotland') ? Object.assign({ register: (sn.registers || {})[b.reg] || null, updated: sn.updated }, b) : null,
+      short_let_rules: md.ru && x ? rulesJson(md.ru, x, a && !a.outside ? a.ds : null) : null });
   } catch (e) { return out({ error: 'server' }, 500, 'no-store'); }
 }

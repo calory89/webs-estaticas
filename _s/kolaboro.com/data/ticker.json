@@ -4,6 +4,20 @@
   {
    "date": "2026-11-11",
    "kind": "shipped",
+   "text": "Can you legally short-let there? Project pages and a new guide show licence or registration, caps and zones, night limits and building rules for 23 places, each linked to the official source and its date",
+   "tl": {
+    "es": "¿Se puede alquilar allí por días legalmente? Las páginas de proyecto y una nueva guía muestran licencia o registro, cupos y zonas, límites de noches y normas del edificio en 23 lugares, cada dato enlazado a la fuente oficial y su fecha",
+    "fr": "Peut-on légalement y louer en courte durée ? Les pages projet et un nouveau guide indiquent licence ou enregistrement, quotas et zones, plafonds de nuits et règles d'immeuble pour 23 lieux, chaque règle liée à la source officielle et à sa date",
+    "de": "Darf man dort legal kurzzeitig vermieten? Projektseiten und ein neuer Ratgeber zeigen Lizenz oder Registrierung, Obergrenzen und Zonen, Nächtegrenzen und Hausregeln für 23 Orte, jeweils mit Link zur amtlichen Quelle und Datum",
+    "nl": "Mag je daar legaal kort verhuren? Projectpagina's en een nieuwe gids tonen vergunning of registratie, plafonds en zones, nachtlimieten en gebouwregels voor 23 plaatsen, elk gekoppeld aan de officiële bron en datum",
+    "ru": "Можно ли там законно сдавать посуточно? Страницы проектов и новый гид показывают лицензию или регистрацию, квоты и зоны, лимиты ночей и правила дома для 23 мест, каждое правило со ссылкой на официальный источник и датой",
+    "zh": "那里可以合法短租吗？项目页面和新指南列出 23 个地方的许可或登记、配额和分区、晚数上限及楼宇规定，每条都链接到官方来源及其日期",
+    "ar": "هل يمكن التأجير القصير هناك قانونياً؟ صفحات المشاريع ودليل جديد تعرض الترخيص أو التسجيل، الحصص والمناطق، حدود الليالي وقواعد المبنى في 23 مكاناً، وكل قاعدة مرتبطة بالمصدر الرسمي وتاريخه"
+   }
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "shipped",
    "text": "Developer pages now compare the company name with official regulator warning lists of unauthorised firms (FCA, AMF, MAS, SFC, FINMA, Central Bank of Ireland, SEC) and show a no-match result with each list's date; possible matches go to a private review and are never published",
    "tl": {
     "es": "Las páginas de promotores comparan ahora el nombre de la empresa con listas oficiales de advertencias de reguladores sobre entidades no autorizadas (FCA, AMF, MAS, SFC, FINMA, Banco Central de Irlanda, SEC) y muestran el resultado sin coincidencias con la fecha de cada lista; las posibles coincidencias pasan a revisión privada y nunca se publican",

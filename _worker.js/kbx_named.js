@@ -28,6 +28,7 @@ import { gazDevHtml, gazHeading } from './kbx_gaz.js';   // batch 21 (n21a): off
 import { cohortCard, cohortKey } from './kbx_cohort.js';
 import { paperData, pricesHtml, planningHtml, paperHeading, PAPER_CSS } from './kbx_paper.js';   // batch 18 (n18d): prices over time, planning records near the site   // batch 18 (n18e): buyer group card, empty while the feature is off
 import { seeData, seeHtml, seeToc, seeHeading } from './kbx_see.js';
+import { filingsData, filingsDevHtml, filingsHeading } from './kbx_filings.js';   // batch 21 (n21c): official filings of listed developers
 import { moneyData, moneyHtml, moneyToc, moneyHeading } from './kbx_money.js';   // batch 19 (n19b): short lets and recorded sale prices within 1 km   // batch 18 (n18c): street-level photos and 3D view
 import { landData, landHtml, histHtml, landToc, landHeading, histToc, histHeading } from './kbx_land.js';   // batch 19 (n19c): protected land (#land), map history (#maphist)
 import { calHtml, CAL_CSS } from './kbx_cal.js';   // batch 21 (n21d): where it should be by now, promised dates as a calendar file
@@ -35,7 +36,7 @@ import { seoLd } from './kbx_lastmod.js';   // batch 15 (s15b): true dateModifie
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v51';   // v51: regulator warning lists line, gazette notices section on developer pages (n21a)   // was   // v50: accessibility pass (n21e)   // was    // v49: where it should be by now + calendar file (n21d)   // was   // v48: off-screen sections rendered on approach (n20p)   // was   // v47: save-to-my-list star on project pages (n20f)   // was   // v46: lookalike list shows 6, certificate not checked yet wording (n19a)
+const CACHE_V = 'named-v52';   // v52: short-let rules next to the short-let figures, filings section on developer pages (n21c)   // was   // v51: regulator warning lists line, gazette notices section on developer pages (n21a)   // was   // v50: accessibility pass (n21e)   // was    // v49: where it should be by now + calendar file (n21d)   // was   // v48: off-screen sections rendered on approach (n20p)   // was   // v47: save-to-my-list star on project pages (n20f)   // was   // v46: lookalike list shows 6, certificate not checked yet wording (n19a)
 //     // 'named-v45';   // v45: lookalike websites and sanctions screening on developer pages (n19a)
 //     // 'named-v44';   // v44: pin hold for corrected pins, inline card labels on phones (n19f)
 //     // 'named-v43';   // v43: bidi isolation of names and tags in #land and #maphist (n19c)
@@ -499,7 +500,7 @@ function devPage(ix, dv, lang, extra) {
   const crumbs = [[tr(lang, 'crumb_home'), ORIGIN + pre(lang) + '/'], [tr(lang, 'crumb_devs'), ORIGIN + '/developers/'], [name, canon]];
   const body = '<section class="phero kp"><div class="wrap"><p class="crumb">' + crumbs.slice(0, 2).map(([l, u]) => '<a href="' + esc(u.replace(ORIGIN, '')) + '">' + esc(l) + '</a>').join(' / ') + '</p><h1>' + h1x(tr(lang, 'h1_d', { dev: name }), name) + '</h1><p class="lead">' + esc(tr(lang, 'lead_d', { dev: name })) + '</p>' + answer + feedLinks(lang, '/developers/' + dv.s + '/', name) + '</div></section>' +
     '<div class="wrap kwrap">' + sec('glance', esc(tr(lang, 's_glance')), '<ul class="fl glance">' + g.join('') + '</ul>') + sec('projects', esc(tr(lang, 's_dprojects')), projects) + sec('network', esc(tr(lang, 's_network')), networkHtml(name, extra.netOk ? gl.matches[0] : extra.fm ? extra.fm.m : null, extra.netOk ? extra.net : extra.fm ? extra.fm.net : null, L, pre(lang), '/developers/' + dv.s + '/', extra.netOk || extra.fm ? null : gl.matches[0], lang) + familyHtml(extra.fam, dv.s, lang, pre(lang)) + NET_CSS + '<script>' + NET_JS + '</script>') + (extra.web && webDevHealthHtml(extra.web, dv.s, lang) ? sec('webhealth', esc(webHeading(lang, 'h')), webDevHealthHtml(extra.web, dv.s, lang)) + sec('weblinks', esc(webHeading(lang, 'l')), webDevLinksHtml(extra.web, dv.s, lang)) : '') + (extra.watch && watchDevHtml(extra.watch, dv.s, lang) ? sec('watch', esc(watchHeading(lang)), watchDevHtml(extra.watch, dv.s, lang)) : '') + (extra.watch && gazDevHtml(extra.watch.gz, dv.s, lang) ? sec('gazette', esc(gazHeading(lang)), gazDevHtml(extra.watch.gz, dv.s, lang)) : '') + sec('record', esc(tr(lang, 's_drecord')), record) +
-    sec('registers', esc(tr(lang, 's_dreg')), reg) + sec('reports', esc(tr(lang, 's_dreports')), reports) + (extra.rs ? sec('answers', esc(rsHeading(lang)), rsDevHtml(extra.rs, dv, lang, first.id)) : '') + sec('reply', esc(tr(lang, 's_reply')), reply) + sec('cta', esc(tr(lang, 's_cta')), cta) + sec('faq', esc(tr(lang, 's_faq')), faq) + sec('sources', esc(tr(lang, 's_sources')), sources) +
+    sec('registers', esc(tr(lang, 's_dreg')), reg) + (extra.fil && filingsDevHtml(extra.fil, dv.s, lang) ? sec('filings', esc(filingsHeading(lang)), filingsDevHtml(extra.fil, dv.s, lang)) : '') + sec('reports', esc(tr(lang, 's_dreports')), reports) + (extra.rs ? sec('answers', esc(rsHeading(lang)), rsDevHtml(extra.rs, dv, lang, first.id)) : '') + sec('reply', esc(tr(lang, 's_reply')), reply) + sec('cta', esc(tr(lang, 's_cta')), cta) + sec('faq', esc(tr(lang, 's_faq')), faq) + sec('sources', esc(tr(lang, 's_sources')), sources) +
     '<p class="ki kfoot">' + tr(lang, 'foot', { d: esc(fd(checked, lang)), link: own('/data-policy/', tr(lang, 'm_data_policy')) }) + '</p></div>';
   const ld = { '@context': 'https://schema.org', '@graph': [
     { '@type': 'ProfilePage', '@id': canon + '#page', url: canon, name: title.replace(/ \| Kolaboro$/, ''), description: desc, inLanguage: lang, dateModified: checked, speakable: { '@type': 'SpeakableSpecification', cssSelector: ['#answer .kans-t'] }, isPartOf: { '@type': 'WebSite', name: 'Kolaboro', url: ORIGIN + '/' }, publisher: { '@id': ORIGIN + '/#org' }, mainEntity: { '@id': dUrl('en', dv.s) + '#org' }, breadcrumb: { '@id': canon + '#bc' } },
@@ -682,13 +683,13 @@ export async function render(ix, kind, key, lang, env, ctx) {   // exported for 
   }
   const dv = ix.devs.get(key); if (!dv) return null;
   const softD = f => (async () => { try { return await f(); } catch (e) { return null; } })();   // n20p: the register lookup and the four data files load together
-  const [gn, rs, web, fam, watch] = await Promise.all([
+  const [gn, rs, web, fam, watch, fil] = await Promise.all([
     (async () => { const gl = await gleif(dv.n, ctx), m0 = gl.matches[0], cs = new Set(dv.ids.map(i => ix.byId.get(i)).filter(Boolean).map(x => COUNTRY_ISO[x.co] || x.co));
       const netOk = !!(m0 && cs.has(m0.country)), net = netOk ? await gleifNet(m0.lei, ctx) : null;   // a same-name company in another country is not shown as this developer's group
       return { gl, netOk, net }; })(),
-    softD(() => rsData(env)), softD(() => webData(env)), softD(() => familyData(env)), softD(() => watchData(env))]);   // watch: n19a
+    softD(() => rsData(env)), softD(() => webData(env)), softD(() => familyData(env)), softD(() => watchData(env)), softD(() => filingsData(env))]);   // watch: n19a
   const gl = gn.gl, netOk = gn.netOk, net = gn.net;
-  return devPage(ix, dv, lang, { gleif: gl, net, netOk, rs, web, fam, fm: netOk ? null : famNet(fam, dv.s), watch });
+  return devPage(ix, dv, lang, { gleif: gl, net, netOk, rs, web, fam, fm: netOk ? null : famNet(fam, dv.s), watch, fil });
 }
 
 // shell(path) -> Response of the site's static page at that path (header, footer, styles of that language)
