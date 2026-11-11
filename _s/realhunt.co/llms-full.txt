@@ -2,7 +2,7 @@
 
 > RealHunt (https://realhunt.co) is where foreigners find, check and buy property: homes for sale around the world, each checked by a person and graded from 70 to 98 against every other home on the site, with buying rules, taxes and costs by country. It is not an estate agent; every home links to its original listing. Legal and tax notes are general information, not advice.
 
-Updated 2026-11-10. 561 homes. Short index: https://realhunt.co/llms.txt. You may quote this content with a link to the page it comes from.
+Updated 2026-11-11. 561 homes. Short index: https://realhunt.co/llms.txt. You may quote this content with a link to the page it comes from.
 
 
 ---
@@ -50,11 +50,11 @@ It is not a survey or a valuation. Photos can flatter and listings go out of dat
 
 
 ---
-Source: https://realhunt.co/research/prices (updated 2026-11-10)
+Source: https://realhunt.co/research/prices (updated 2026-11-11)
 
 ## What a cheap home costs, country by country
 
-From the 561 homes on RealHunt, each checked by a person. Sorted by median price per square metre, cheapest first. Updated 2026-11-10. Free to quote with a link to this page.
+From the 561 homes on RealHunt, each checked by a person. Sorted by median price per square metre, cheapest first. Updated 2026-11-11. Free to quote with a link to this page.
 
 Country | Homes | Median €/m² | Median price | Cheapest | Median score
 [Japan](https://realhunt.co/homes/japan) | 30 | €340 | €39,560 | €7,400 | 86
@@ -12598,8 +12598,8 @@ By region: [Tuscany (12)](https://realhunt.co/homes/italy/tuscany) · [Calabria 
 - [€24,000 · Stone house with a swimming pool in a Tuscan village](https://realhunt.co/deal/Dc6Y4UKDLyc) · Tuscany, Italy · score 85
 - [€59,000 · Restored stone home with two panoramic terraces near a lake in Abruzzo](https://realhunt.co/deal/DdOGB56ABXI) · Bomba, Chieti, Abruzzo, Italy · score 85
 - [€39,000 · Sea-view terrace in Acquappesa, Calabria](https://realhunt.co/deal/acquappesa-sea-view-39000) · Acquappesa, Cosenza, Calabria, Italy · score 84 · 40 m² · 1 bed
-- [€38,000 · 1-bed house 11 minutes from Lake Como](https://realhunt.co/deal/DcjBmxJjKHY) · Lake Como, Italy · score 84
 - [€35,000 · Furnished historic tower house](https://realhunt.co/deal/Dcmar6QDXXm) · Sardinia, Italy · score 84
+- [€38,000 · 1-bed house 11 minutes from Lake Como](https://realhunt.co/deal/DcjBmxJjKHY) · Lake Como, Italy · score 84
 - [€45,000 · Sea-view studio five minutes from the beach](https://realhunt.co/deal/DcyzSIdjOz6) · Sicily, Italy · score 84
 - [€49,000 · Sea-view home with a panoramic terrace](https://realhunt.co/deal/Dclv5CJDdhi) · Sicily, Italy · score 84
 - [€85,000 · 2-bedroom flat with a Lake Como view terrace](https://realhunt.co/deal/lake-como-peglio-85000) · Peglio, Lake Como, Italy · score 83 · 69 m² · 2 bed
@@ -12853,8 +12853,8 @@ Source: https://realhunt.co/homes/italy/under-100000 (updated 2026-11-02)
 - [€24,000 · Stone house with a swimming pool in a Tuscan village](https://realhunt.co/deal/Dc6Y4UKDLyc) · Tuscany, Italy · score 85
 - [€59,000 · Restored stone home with two panoramic terraces near a lake in Abruzzo](https://realhunt.co/deal/DdOGB56ABXI) · Bomba, Chieti, Abruzzo, Italy · score 85
 - [€39,000 · Sea-view terrace in Acquappesa, Calabria](https://realhunt.co/deal/acquappesa-sea-view-39000) · Acquappesa, Cosenza, Calabria, Italy · score 84 · 40 m² · 1 bed
-- [€38,000 · 1-bed house 11 minutes from Lake Como](https://realhunt.co/deal/DcjBmxJjKHY) · Lake Como, Italy · score 84
 - [€35,000 · Furnished historic tower house](https://realhunt.co/deal/Dcmar6QDXXm) · Sardinia, Italy · score 84
+- [€38,000 · 1-bed house 11 minutes from Lake Como](https://realhunt.co/deal/DcjBmxJjKHY) · Lake Como, Italy · score 84
 - [€45,000 · Sea-view studio five minutes from the beach](https://realhunt.co/deal/DcyzSIdjOz6) · Sicily, Italy · score 84
 - [€49,000 · Sea-view home with a panoramic terrace](https://realhunt.co/deal/Dclv5CJDdhi) · Sicily, Italy · score 84
 - [€85,000 · 2-bedroom flat with a Lake Como view terrace](https://realhunt.co/deal/lake-como-peglio-85000) · Peglio, Lake Como, Italy · score 83 · 69 m² · 2 bed
@@ -12913,8 +12913,8 @@ Source: https://realhunt.co/homes/italy/under-150000 (updated 2026-11-09)
 - [€24,000 · Stone house with a swimming pool in a Tuscan village](https://realhunt.co/deal/Dc6Y4UKDLyc) · Tuscany, Italy · score 85
 - [€59,000 · Restored stone home with two panoramic terraces near a lake in Abruzzo](https://realhunt.co/deal/DdOGB56ABXI) · Bomba, Chieti, Abruzzo, Italy · score 85
 - [€39,000 · Sea-view terrace in Acquappesa, Calabria](https://realhunt.co/deal/acquappesa-sea-view-39000) · Acquappesa, Cosenza, Calabria, Italy · score 84 · 40 m² · 1 bed
-- [€38,000 · 1-bed house 11 minutes from Lake Como](https://realhunt.co/deal/DcjBmxJjKHY) · Lake Como, Italy · score 84
 - [€35,000 · Furnished historic tower house](https://realhunt.co/deal/Dcmar6QDXXm) · Sardinia, Italy · score 84
+- [€38,000 · 1-bed house 11 minutes from Lake Como](https://realhunt.co/deal/DcjBmxJjKHY) · Lake Como, Italy · score 84
 - [€45,000 · Sea-view studio five minutes from the beach](https://realhunt.co/deal/DcyzSIdjOz6) · Sicily, Italy · score 84
 - [€49,000 · Sea-view home with a panoramic terrace](https://realhunt.co/deal/Dclv5CJDdhi) · Sicily, Italy · score 84
 - [€85,000 · 2-bedroom flat with a Lake Como view terrace](https://realhunt.co/deal/lake-como-peglio-85000) · Peglio, Lake Como, Italy · score 83 · 69 m² · 2 bed
@@ -12979,8 +12979,8 @@ Source: https://realhunt.co/homes/italy/under-40000 (updated 2026-11-02)
 - [€34,000 · 5-bed house with a terrace and courtyard](https://realhunt.co/deal/Dc8TyIDkexU) · Como area, Italy · score 85
 - [€24,000 · Stone house with a swimming pool in a Tuscan village](https://realhunt.co/deal/Dc6Y4UKDLyc) · Tuscany, Italy · score 85
 - [€39,000 · Sea-view terrace in Acquappesa, Calabria](https://realhunt.co/deal/acquappesa-sea-view-39000) · Acquappesa, Cosenza, Calabria, Italy · score 84 · 40 m² · 1 bed
-- [€38,000 · 1-bed house 11 minutes from Lake Como](https://realhunt.co/deal/DcjBmxJjKHY) · Lake Como, Italy · score 84
 - [€35,000 · Furnished historic tower house](https://realhunt.co/deal/Dcmar6QDXXm) · Sardinia, Italy · score 84
+- [€38,000 · 1-bed house 11 minutes from Lake Como](https://realhunt.co/deal/DcjBmxJjKHY) · Lake Como, Italy · score 84
 - [€39,000 · 2-bed village house 30 minutes from the beach](https://realhunt.co/deal/Dcq2xGyDDey) · Sardinia, Italy · score 83
 - [€16,000 · Two-bedroom apartment with two balconies in a historic village](https://realhunt.co/deal/Dcsm9sZoDMp) · Fiamignano, Rieti, Lazio, Italy · score 83 · 40 m²
 - [€16,000 · Two-bedroom apartment with terrace in a historic Tuscan village](https://realhunt.co/deal/DdSm-JkiJem) · Montieri, Grosseto, Tuscany, Italy · score 82 · 51 m² · 2 bed
@@ -13013,8 +13013,8 @@ Source: https://realhunt.co/homes/italy/under-60000 (updated 2026-11-02)
 - [€24,000 · Stone house with a swimming pool in a Tuscan village](https://realhunt.co/deal/Dc6Y4UKDLyc) · Tuscany, Italy · score 85
 - [€59,000 · Restored stone home with two panoramic terraces near a lake in Abruzzo](https://realhunt.co/deal/DdOGB56ABXI) · Bomba, Chieti, Abruzzo, Italy · score 85
 - [€39,000 · Sea-view terrace in Acquappesa, Calabria](https://realhunt.co/deal/acquappesa-sea-view-39000) · Acquappesa, Cosenza, Calabria, Italy · score 84 · 40 m² · 1 bed
-- [€38,000 · 1-bed house 11 minutes from Lake Como](https://realhunt.co/deal/DcjBmxJjKHY) · Lake Como, Italy · score 84
 - [€35,000 · Furnished historic tower house](https://realhunt.co/deal/Dcmar6QDXXm) · Sardinia, Italy · score 84
+- [€38,000 · 1-bed house 11 minutes from Lake Como](https://realhunt.co/deal/DcjBmxJjKHY) · Lake Como, Italy · score 84
 - [€45,000 · Sea-view studio five minutes from the beach](https://realhunt.co/deal/DcyzSIdjOz6) · Sicily, Italy · score 84
 - [€49,000 · Sea-view home with a panoramic terrace](https://realhunt.co/deal/Dclv5CJDdhi) · Sicily, Italy · score 84
 - [€49,000 · Vaulted house near the Puglia coast](https://realhunt.co/deal/DceAZ_xjMzt) · Puglia, Italy · score 83
@@ -13059,8 +13059,8 @@ Source: https://realhunt.co/homes/italy/under-80000 (updated 2026-11-02)
 - [€24,000 · Stone house with a swimming pool in a Tuscan village](https://realhunt.co/deal/Dc6Y4UKDLyc) · Tuscany, Italy · score 85
 - [€59,000 · Restored stone home with two panoramic terraces near a lake in Abruzzo](https://realhunt.co/deal/DdOGB56ABXI) · Bomba, Chieti, Abruzzo, Italy · score 85
 - [€39,000 · Sea-view terrace in Acquappesa, Calabria](https://realhunt.co/deal/acquappesa-sea-view-39000) · Acquappesa, Cosenza, Calabria, Italy · score 84 · 40 m² · 1 bed
-- [€38,000 · 1-bed house 11 minutes from Lake Como](https://realhunt.co/deal/DcjBmxJjKHY) · Lake Como, Italy · score 84
 - [€35,000 · Furnished historic tower house](https://realhunt.co/deal/Dcmar6QDXXm) · Sardinia, Italy · score 84
+- [€38,000 · 1-bed house 11 minutes from Lake Como](https://realhunt.co/deal/DcjBmxJjKHY) · Lake Como, Italy · score 84
 - [€45,000 · Sea-view studio five minutes from the beach](https://realhunt.co/deal/DcyzSIdjOz6) · Sicily, Italy · score 84
 - [€49,000 · Sea-view home with a panoramic terrace](https://realhunt.co/deal/Dclv5CJDdhi) · Sicily, Italy · score 84
 - [€49,000 · Vaulted house near the Puglia coast](https://realhunt.co/deal/DceAZ_xjMzt) · Puglia, Italy · score 83
@@ -13109,8 +13109,8 @@ Median price €59,000.
 - [€150,000 · Medieval-village house with a terrace above a sea of clouds in Tuscany](https://realhunt.co/deal/it-tuscany-pescia-sea-of-clouds-150k) · Svizzera Pesciatina, near Pescia, Tuscany · score 85 · 148 m² · 3 bed
 - [€34,000 · 5-bed house with a terrace and courtyard](https://realhunt.co/deal/Dc8TyIDkexU) · Como area, Italy · score 85
 - [€24,000 · Stone house with a swimming pool in a Tuscan village](https://realhunt.co/deal/Dc6Y4UKDLyc) · Tuscany, Italy · score 85
-- [€38,000 · 1-bed house 11 minutes from Lake Como](https://realhunt.co/deal/DcjBmxJjKHY) · Lake Como, Italy · score 84
 - [€35,000 · Furnished historic tower house](https://realhunt.co/deal/Dcmar6QDXXm) · Sardinia, Italy · score 84
+- [€38,000 · 1-bed house 11 minutes from Lake Como](https://realhunt.co/deal/DcjBmxJjKHY) · Lake Como, Italy · score 84
 - [€85,000 · 2-bedroom flat with a Lake Como view terrace](https://realhunt.co/deal/lake-como-peglio-85000) · Peglio, Lake Como, Italy · score 83 · 69 m² · 2 bed
 - [€49,000 · Vaulted house near the Puglia coast](https://realhunt.co/deal/DceAZ_xjMzt) · Puglia, Italy · score 83
 - [€16,000 · Two-bedroom apartment with two balconies in a historic village](https://realhunt.co/deal/Dcsm9sZoDMp) · Fiamignano, Rieti, Lazio, Italy · score 83 · 40 m²
@@ -13692,6 +13692,7 @@ Source: https://realhunt.co/best
 - A white cave house perched above Galera | Spain | €84,000 | size n/a | 84 | https://realhunt.co/deal/galera-hillside-cave-84000
 - Renovated Galera home with a rooftop over the white village | Spain | €95,000 | 82 m² | 84 | https://realhunt.co/deal/galera-rooftop-patio-95000
 - Sea-view terrace in Acquappesa, Calabria | Italy | €39,000 | 40 m² | 84 | https://realhunt.co/deal/acquappesa-sea-view-39000
+- Furnished historic tower house | Italy | €35,000 | size n/a | 84 | https://realhunt.co/deal/Dcmar6QDXXm
 - Fenced 2.5-room camping house with a sunny terrace in Raron | Switzerland | €42,600 | 45 m² | 84 | https://realhunt.co/deal/ch-raron-40k-76568
 - 4-bedroom house with patio in Arroyomolinos de León | Spain | €95,000 | 162 m² | 84 | https://realhunt.co/deal/es-arroyomolinos-de-leon-95k-99226
 - 1-bedroom apartment with pool in Torrevieja | Spain | €94,900 | 45 m² | 84 | https://realhunt.co/deal/es-torrevieja-94k-95673
@@ -13707,7 +13708,6 @@ Source: https://realhunt.co/best
 - 2-bedroom flat with mountain views in El Perelló | Spain | €98,000 | 79 m² | 84 | https://realhunt.co/deal/es-el-perello-98k-73036
 - 3-bedroom house with fireplace in Quirós | Spain | €93,000 | 240 m² | 84 | https://realhunt.co/deal/es-quiros-93k-41930
 - 1-bed house 11 minutes from Lake Como | Italy | €38,000 | size n/a | 84 | https://realhunt.co/deal/DcjBmxJjKHY
-- Furnished historic tower house | Italy | €35,000 | size n/a | 84 | https://realhunt.co/deal/Dcmar6QDXXm
 - Sea-view studio five minutes from the beach | Italy | €45,000 | size n/a | 84 | https://realhunt.co/deal/DcyzSIdjOz6
 - House on 7,600 m² with a new guest cabin | Sweden | €53,000 | size n/a | 84 | https://realhunt.co/deal/DbC0D4RoLzc
 - Wooden house with a private beachfront | Japan | €56,120 | size n/a | 84 | https://realhunt.co/deal/DcEQh3AjBbN
@@ -13788,6 +13788,7 @@ Source: https://realhunt.co/best
 - Sunny four-room flat with a balcony near the lakes in Wałcz | Poland | €73,114 | 58 m² | 82 | https://realhunt.co/deal/pl-walcz-73k-787380
 - Easy-living garden townhouse in quiet Herborg | Denmark | €89,100 | 79 m² | 82 | https://realhunt.co/deal/dk-herborg-89k-d18595
 - Old railway house in the forest on a 2,080 m² plot | Denmark | €80,300 | 70 m² | 82 | https://realhunt.co/deal/dk-tylstrup-80k-3cfe80
+- Two-bedroom apartment with terrace in a historic Tuscan village | Italy | €16,000 | 51 m² | 82 | https://realhunt.co/deal/DdSm-JkiJem
 - Renovated chalet with garden in a green campsite in the Neuchâtel hills | Switzerland | €70,100 | 30 m² | 82 | https://realhunt.co/deal/ch-lignieres-65k-24005
 - 2-bedroom ground-floor flat with garden and mountain views in Anna | Spain | €96,000 | 61 m² | 82 | https://realhunt.co/deal/es-anna-96k-34774
 - 3-bedroom flat in Torrelavega | Spain | €95,000 | 64 m² | 82 | https://realhunt.co/deal/es-torrelavega-95k-04565
@@ -13796,7 +13797,6 @@ Source: https://realhunt.co/best
 - 2-bedroom apartment with mountain views in Garrucha | Spain | €98,000 | 59 m² | 82 | https://realhunt.co/deal/es-garrucha-98k-95417
 - 2-bedroom house with fireplace in Cumbres de San Bartolomé | Spain | €43,000 | 70 m² | 82 | https://realhunt.co/deal/es-cumbres-de-san-bartolome-43k-76551
 - 1-bedroom apartment in Murcia | Spain | €85,000 | 46 m² | 82 | https://realhunt.co/deal/es-murcia-85k-23435
-- Two-bedroom apartment with terrace in a historic Tuscan village | Italy | €16,000 | 51 m² | 82 | https://realhunt.co/deal/DdSm-JkiJem
 - Well-kept family home on a big plot | Sweden | €83,000 | size n/a | 82 | https://realhunt.co/deal/Db91qMLIG7D
 - 1930s home kept by one family for 50 years, with courtyard, fruit trees and greenhouse | Scandinavia | €70,840 | size n/a | 82 | https://realhunt.co/deal/Dc-hu2ajorQ
 - Mountain country house with big outdoor space | Spain | €60,000 | size n/a | 82 | https://realhunt.co/deal/Dc26I9MkYDj
