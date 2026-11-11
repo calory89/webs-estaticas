@@ -1,0 +1,22 @@
+# Real photos from Wikimedia Commons (author, licence, file page). Thumbs via upload.wikimedia.org.
+def C(path, a, l, f): return {"p": path, "a": a, "l": l, "f": f}
+U = "https://upload.wikimedia.org/wikipedia/commons/"
+GALLERY = {
+ "weekuri-lagoon": [C("a/a9/Danau_Weekuri%2C_Sumba_Barat_Daya.jpg","Zahrasrtn","CC BY-SA 4.0","Danau_Weekuri,_Sumba_Barat_Daya.jpg"),C("8/8f/Danau_Weekuri_Sumba.jpg","Zahrasrtn","CC BY-SA 4.0","Danau_Weekuri_Sumba.jpg"),C("e/e7/Weekuri_Lake%2C_Sumba_02.jpg","06Ivonne","CC BY-SA 4.0","Weekuri_Lake,_Sumba_02.jpg"),C("e/e3/Weekuri_Lake%2C_Sumba_03.jpg","06Ivonne","CC BY-SA 4.0","Weekuri_Lake,_Sumba_03.jpg"),C("8/87/Weekuri_Lake%2C_Sumba_04.jpg","06Ivonne","CC BY-SA 4.0","Weekuri_Lake,_Sumba_04.jpg"),C("7/70/Weekuri_Lake%2C_Sumba_01.jpg","06Ivonne","CC BY-SA 4.0","Weekuri_Lake,_Sumba_01.jpg")],
+ "mandorak-beach": [C("2/21/Pantai_Mandorak%2C_Sumba_Barat_Daya.jpg","Zahrasrtn","CC BY-SA 4.0","Pantai_Mandorak,_Sumba_Barat_Daya.jpg")],
+ "ratenggaro": [C("b/b8/Wisata_Kampung_Adat_Ratenggaro.jpg","Allwyn Wawyn","CC BY-SA 4.0","Wisata_Kampung_Adat_Ratenggaro.jpg"),C("9/97/Rumah_Kampung_Adat_Ratenggaro_-_Sumba_Barat_Daya.jpg","Allwyn Wawyn","CC BY-SA 4.0","Rumah_Kampung_Adat_Ratenggaro_-_Sumba_Barat_Daya.jpg"),C("6/62/Kampung_Adat_Ratenggaro_-_Sumba.jpg","Sandhi Irawan","CC BY-SA 4.0","Kampung_Adat_Ratenggaro_-_Sumba.jpg"),C("5/59/Rumah_Kampung_adat_Ratenggaro_-_Sumba_Barat_Daya.jpg","Allwyn Wawyn","CC BY-SA 4.0","Rumah_Kampung_adat_Ratenggaro_-_Sumba_Barat_Daya.jpg")],
+ "wainyapu": [C("1/1e/Traditional_Sumba_House.jpg","monica renata","CC BY 2.0","Traditional_Sumba_House.jpg")],
+ "lapopu-waterfall": [C("1/11/Air_Terjun_Lapopu%2C_Sumba_Barat.jpg","Zahrasrtn","CC BY-SA 4.0","Air_Terjun_Lapopu,_Sumba_Barat.jpg"),C("8/83/Keindahan-air-terjun-Lapopu-krd-TN-Manupeu-Tanah-Daru.jpg","Kementerian Lingkungan Hidup dan Kehutanan","Public domain","Keindahan-air-terjun-Lapopu-krd-TN-Manupeu-Tanah-Daru.jpg")],
+ "pasola-wanokaka": [C("8/8e/Pasola.jpg","RaiyaniM","CC BY-SA 4.0","Pasola.jpg"),C("7/7f/PasolaTerreinSoemba.JPG","Wybe","CC BY-SA 3.0","PasolaTerreinSoemba.JPG")],
+ "wairinding-hill": [C("3/31/Bukit_Wairinding%2C_Sumba_Timur.jpg","Zahrasrtn","CC BY-SA 4.0","Bukit_Wairinding,_Sumba_Timur.jpg"),C("e/ee/Bukit_Wairinding%2C_Sumba_Timur%2C_Nusa_Tenggara_Timur_20170527.jpg","Supomo Hanasti","CC BY-SA 4.0","Bukit_Wairinding,_Sumba_Timur,_Nusa_Tenggara_Timur_20170527.jpg"),C("f/f7/Bukit_Wairinding-Sumba_Timur.jpg","Djakartacaver","CC BY-SA 4.0","Bukit_Wairinding-Sumba_Timur.jpg"),C("e/ec/Panorama_Bukit_Wairinding.jpg","Rafly Rinaldy","CC BY-SA 4.0","Panorama_Bukit_Wairinding.jpg")],
+ "walakiri-beach": [C("0/07/Pantai_Walakiri%2C_Sumba_Timur%2C_Nusa_Tenggara_Timur_20170610.jpg","Supomo Hanasti","CC BY-SA 4.0","Pantai_Walakiri,_Sumba_Timur,_Nusa_Tenggara_Timur_20170610.jpg"),C("2/21/Dancing_tree_in_sumba.jpg","Ignaskunda8","CC BY-SA 4.0","Dancing_tree_in_sumba.jpg"),C("c/cb/Bakau_di_walakiri_beach.jpg","Ignaskunda8","CC BY-SA 4.0","Bakau_di_walakiri_beach.jpg"),C("1/1e/Let%27s_go_to_Walakiri_beach.jpg","반 성","CC BY-SA 4.0","Let's_go_to_Walakiri_beach.jpg")],
+ "puru-kambera": [C("7/7e/Puru_Kambera%2C_Sumba_Timur.jpg","Djakartacaver","CC BY-SA 4.0","Puru_Kambera,_Sumba_Timur.jpg")],
+ "praiyawang-rende": [C("e/e2/Traditional_Sumba_House_in_Rende_Village.jpg","Irfantraveller","CC BY-SA 4.0","Traditional_Sumba_House_in_Rende_Village.jpg")],
+ "waimarang-waterfall": [C("4/49/Surga_tersembunyi_di_Waimarang%2C_Sumba.jpg","Jordan siva","CC BY-SA 4.0","Surga_tersembunyi_di_Waimarang,_Sumba.jpg")],
+ "wanggameti": [C("c/c1/Pejantan_Julang_Sumba.jpg","Muhammad Soleh K505","CC BY-SA 4.0","Pejantan_Julang_Sumba.jpg"),C("f/f0/Paragomphus_tachyerges_Endemik_Pulau_Sumba.jpg","Frendi Apen Irawan","CC BY-SA 4.0","Paragomphus_tachyerges_Endemik_Pulau_Sumba.jpg")],
+ "tanggedu-waterfall": [C("5/5c/Air_Terjun_Tanggedu%2C_Sumba_Timur.jpg","Zahrasrtn","CC BY-SA 4.0","Air_Terjun_Tanggedu,_Sumba_Timur.jpg"),C("6/6a/Tanggedu_Waterfall_Jordan_siva.jpg","Jordan siva","CC BY-SA 4.0","Tanggedu_Waterfall_Jordan_siva.jpg"),C("e/e0/Tanggedu_Waterfall.jpg","Herry Wibowo81","CC BY-SA 3.0","Tanggedu_Waterfall.jpg"),C("d/df/Tanggedu_Waterfall_2.jpg","Herry Wibowo81","CC BY-SA 3.0","Tanggedu_Waterfall_2.jpg"),C("c/cf/Tanggedu_Waterfall_3.jpg","Herry Wibowo81","CC BY-SA 3.0","Tanggedu_Waterfall_3.jpg")],
+ "padadita-beach": [C("3/32/Padadita_Beach%2C_Waingapu_03.jpg","06Ivonne","CC BY-SA 4.0","Padadita_Beach,_Waingapu_03.jpg")],
+}
+def thumb(path, w):
+    fn = path.split("/")[-1]
+    return f"{U}thumb/{path}/{w}px-{fn}"

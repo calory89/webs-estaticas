@@ -57,7 +57,7 @@ article.pl{max-width:760px;margin:0 auto}article.pl h1{font-family:Fraunces,Geor
 .band{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 footer{padding:36px 0;color:var(--mute);font-size:14px;border-top:1px solid var(--line);margin-top:30px}footer a{color:var(--mute)}
 .two{display:grid;grid-template-columns:1.4fr 1fr;gap:28px}@media(max-width:820px){.two{grid-template-columns:1fr}.hero p{font-size:16px}header.top .w{flex-wrap:wrap;gap:6px 10px;padding-top:8px}.logo{font-size:21px;flex:1}nav.main{order:3;flex-basis:100%;margin:0 -16px;padding:0 12px 6px}.net .d{display:none}.net .w{gap:10px;flex-wrap:nowrap;overflow-x:auto;white-space:nowrap}}
-.leaflet-popup-content a{font-weight:600}.leaflet-popup-content{font:14px/1.45 Inter,system-ui,sans-serif}`;
+.h1{font-family:Fraunces,Georgia,serif;font-size:clamp(30px,4vw,46px);margin:6px 0 4px;letter-spacing:-.02em}.h2s{font-size:24px!important;margin-top:28px!important}.gal{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:18px 0}.gal figure{margin:0}.gal figure:first-child{grid-column:1/-1}.gal img{border-radius:12px;width:100%;aspect-ratio:3/2;object-fit:cover}.gal figure:first-child img{aspect-ratio:16/9}.gal figcaption{font-size:12px;color:var(--mute);margin-top:4px}.faq details{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin:8px 0}.faq summary{font-weight:600;cursor:pointer}.faq p{margin:8px 0 0}.acts .btn{margin-bottom:8px}.btn.alt2{background:var(--paper);color:var(--ink);border:1px solid var(--line)}.upd{color:var(--mute);font-size:14px;margin-top:28px}.itin ol{margin:8px 0 0;padding-left:20px}.itin li{margin:4px 0}a.chip{text-decoration:none;display:inline-block}.leaflet-popup-content a{font-weight:600}.leaflet-popup-content{font:14px/1.45 Inter,system-ui,sans-serif}`;
 
 function analytics() {
   return `<script async src="https://www.googletagmanager.com/gtag/js?id=G-FJKJE77K4V"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-FJKJE77K4V');</script>
@@ -71,28 +71,21 @@ function page(l, path, o) {
     .map(([p, t]) => `<a href="/${l}${p}"${p === path ? ' class="on"' : ""}>${esc(t)}</a>`).join("") + `<a href="${TIMES}/${D.tl[l]}/">${esc(u.news)} ↗</a>`;
   const opts = L.map(x => `<option value="/${x}${path}"${x === l ? " selected" : ""}>${esc(D.lname[x])}</option>`).join("");
   const title = o.title ? `${o.title} · Sumba Secrets` : `Sumba Secrets · ${u.tag}`;
-  const ogimg = o.img ? img(o.img, 1280) : img("magnitude-6-1-earthquake-southwest-sumba", 1280);
+  const ogimg = o.ogimg || (o.img ? img(o.img, 1280) : img("magnitude-6-1-earthquake-southwest-sumba", 1280));
   return `<!doctype html><html lang="${l}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)}</title><meta name="description" content="${esc(o.desc || u.hero_d)}"><link rel="canonical" href="${BASE}/${l}${path}">${alts}
 <meta property="og:type" content="website"><meta property="og:site_name" content="Sumba Secrets"><meta property="og:title" content="${esc(o.title || "Sumba Secrets")}"><meta property="og:description" content="${esc(o.desc || u.hero_d)}"><meta property="og:image" content="${ogimg}"><meta property="og:url" content="${BASE}/${l}${path}"><meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0e6f66"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e6f66'/%3E%3Cpath d='M10 42c8-6 14-6 22 0s14 6 22 0' stroke='%23f7f2e8' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='44' cy='22' r='7' fill='%23e0ad55'/%3E%3C/svg%3E">
+<meta name="theme-color" content="#0e6f66"><link rel="manifest" href="/manifest.webmanifest"><link rel="apple-touch-icon" href="/icon.svg"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230e6f66'/%3E%3Cpath d='M10 42c8-6 14-6 22 0s14 6 22 0' stroke='%23f7f2e8' stroke-width='5' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='44' cy='22' r='7' fill='%23e0ad55'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 ${o.leaflet ? '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">' : ""}
-<style>${CSS}</style>${o.ld ? `<script type="application/ld+json">${JSON.stringify(o.ld)}</script>` : ""}${analytics()}</head><body>
+<style>${CSS}</style>${o.ld ? [].concat(o.ld).map(x => `<script type="application/ld+json">${JSON.stringify(x)}</script>`).join("") : ""}${analytics()}</head><body>
 <div class="net"><div class="w"><b>${esc(u.network)}:</b><a href="${TIMES}/${D.tl[l]}/">The Sumba Times<span class="d"> · ${esc(u.times_d)}</span></a><a href="/${l}/"><b>Sumba Secrets</b><span class="d"> · ${esc(u.secrets_n)}</span></a></div></div>
 <header class="top"><div class="w"><a class="logo" href="/${l}/">Sumba <span>Secrets</span></a><nav class="main" aria-label="Main">${nav}</nav>
 <select class="lang" aria-label="${esc(u.lang)}" onchange="location.href=this.value">${opts}</select></div></header>
 <main>${o.body}</main>
 <footer><div class="w"><p><b>Sumba Secrets</b> · <a href="/${l}/about/">${esc(u.about)}</a> · <a href="${TIMES}/${D.tl[l]}/">The Sumba Times</a> · <a href="mailto:info@ecobeachcity.com">info@ecobeachcity.com</a></p>
-<p>${L.map(x => `<a href="/${x}${path}">${esc(D.lname[x])}</a>`).join(" · ")}</p><p>© ${new Date().getUTCFullYear()} Sumba Secrets. Published by Eco Beach City. Map data © OpenStreetMap contributors. Weather: Open-Meteo.</p></div></footer>
+<p>${Object.keys(D.rslug).map(r => `<a href="/${l}/region/${D.rslug[r]}/">${esc(D.ui[l].reg[r])}</a>`).join(" · ")}<br>${Object.keys(D.cslug).map(c => `<a href="/${l}/${D.cslug[c]}/">${esc(D.ui[l].cat[c])}</a>`).join(" · ")} · <a href="/${l}/secret-spots/">${esc(D.ui[l].secrets)}</a> · <a href="/map">${esc(D.ui2[l].fullmap)}</a></p><p>${L.map(x => `<a href="/${x}${path}" hreflang="${x}">${esc(D.lname[x])}</a>`).join(" · ")}</p><p>© ${new Date().getUTCFullYear()} Sumba Secrets. Published by Eco Beach City. Map data © OpenStreetMap contributors. Weather: Open-Meteo.</p></div></footer>
 ${o.leaflet ? '<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>' : ""}${o.js ? `<script>${o.js}</script>` : ""}</body></html>`;
-}
-
-function card(p, l) {
-  const u = D.ui[l], t = P(p, l);
-  const ph = p.img ? `<img src="${img(p.img, 640)}" alt="${esc(t.n)}" loading="lazy" width="640" height="400">` : "";
-  return `<a class="card" href="/${l}/place/${p.s}/"><div class="ph" style="--c:${CAT_COLOR[p.c]}">${ph}<span class="k">${esc(u.cat[p.c])}</span>${p.sec ? `<span class="badge">${esc(u.secret_badge)}</span>` : ""}</div>
-<div class="tx"><h3>${esc(t.n)}</h3><p class="rg">${esc(u.reg[p.r])}</p><p>${esc(t.t.split(". ")[0])}.</p></div></a>`;
 }
 
 function mapJS(l, items, opts) {
@@ -142,12 +135,13 @@ function home(l) {
   const body = `<div class="hero"><img src="${img("magnitude-6-1-earthquake-southwest-sumba", 1280)}" alt="Weekuri" width="1280" height="720" fetchpriority="high"><div class="in"><div class="w"><h1>${esc(u.hero_t)}</h1><p>${esc(u.hero_d)}</p>
 <a class="btn" href="/${l}/map/">${esc(u.explore)}</a><a class="btn alt" href="/${l}/secret-spots/">${esc(u.see_secrets)}</a></div></div></div>
 <section><div class="w"><h2 class="sec">${esc(u.now)}</h2><p class="lead">${esc(u.weather_d)} <a href="/${l}/weather/">${esc(u.forecast)} →</a></p>${wxBoxes(l, D.towns)}</div></section>
-<section class="band"><div class="w"><h2 class="sec">${esc(u.map)}</h2><p class="lead">${esc(u.map_d)}</p>${chips(l)}<div id="map"></div></div></section>
+<section class="band"><div class="w"><h2 class="sec">${esc(u.map)}</h2><p class="lead">${esc(u.map_d)} <a href="/${l}/map/">${esc(D.ui2[l].fullmap)} →</a></p>${chips(l)}<div id="map"></div><p><a class="btn" href="/${l}/map/">🗺️ ${esc(D.ui2[l].fullmap)}</a></p></div></section>
+<section><div class="w"><h2 class="sec">${esc(D.ui2[l].zones)}</h2><div class="grid">${Object.keys(D.rslug).map(r => { const it = D.places.filter(p => p.r === r); const ph = it.map(p => photos(p)[0]).find(Boolean); return `<a class="card" href="/${l}/region/${D.rslug[r]}/"><div class="ph">${ph ? `<img src="${ph.s}" alt="${esc(u.reg[r])}" loading="lazy">` : ""}<span class="k">${it.length} ${esc(u.count)}</span></div><div class="tx"><h3>${esc(u.reg[r])}</h3><p>${esc(D.rtxt[r][l])}</p></div></a>`; }).join("")}</div></div></section>
 <section><div class="w"><h2 class="sec">${esc(u.secrets)}</h2><p class="lead">${esc(u.secrets_d)}</p><div class="grid">${secrets.map(p => card(p, l)).join("")}</div></div></section>
 <section class="band"><div class="w two"><div><h2 class="sec">${esc(u.guides)}</h2><div class="grid" style="grid-template-columns:1fr">${D.guides.map(g => guideCard(g, l)).join("")}</div></div>
 <div><h2 class="sec" style="font-size:26px">${esc(u.latest)}</h2>${newsBox(l)}</div></div></section>
-<section><div class="w"><h2 class="sec">${esc(u.places)}</h2><div class="grid">${D.places.filter(p => !p.sec).map(p => card(p, l)).join("")}</div></div></section>`;
-  const ld = { "@context": "https://schema.org", "@type": "WebSite", name: "Sumba Secrets", url: BASE + "/" + l + "/", inLanguage: l, publisher: { "@type": "Organization", name: "Eco Beach City" } };
+${itinerary(l)}<section><div class="w"><h2 class="sec">${esc(u.places)}</h2><div class="grid">${D.places.filter(p => !p.sec).map(p => card(p, l)).join("")}</div></div></section>`;
+  const ld = [{ "@context": "https://schema.org", "@type": "WebSite", name: "Sumba Secrets", url: BASE + "/" + l + "/", inLanguage: l, publisher: { "@type": "Organization", name: "Eco Beach City" } }, { "@context": "https://schema.org", "@type": "TouristDestination", name: "Sumba", description: u.hero_d, geo: { "@type": "GeoCoordinates", latitude: -9.68, longitude: 119.75 }, containsPlace: D.places.map(p => ({ "@type": "TouristAttraction", name: P(p, l).n, url: `${BASE}/${l}/place/${p.s}/` })) }];
   return page(l, "/", { body, leaflet: true, js: mapJS(l, D.places, { fit: true }) + wxJS(l, D.towns, false) + newsJS(l), ld });
 }
 
@@ -156,36 +150,10 @@ function guideCard(g, l) {
   return `<a class="card" href="/${l}/guide/${g.s}/" style="flex-direction:row"><div class="ph" style="width:38%;aspect-ratio:auto;min-height:120px"><img src="${img(g.img, 640)}" alt="" loading="lazy"></div><div class="tx"><h3>${esc(t.t)}</h3><p>${esc(t.d)}</p></div></a>`;
 }
 
-function mapPage(l) {
-  const u = D.ui[l];
-  const body = `<section><div class="w"><h1 class="sec" style="font-family:Fraunces,Georgia,serif;font-size:clamp(30px,4vw,44px);margin:0">${esc(u.map)}</h1><p class="lead">${esc(u.map_d)}</p>${chips(l)}<div id="map"></div>
-<div class="grid" style="margin-top:24px">${D.places.map(p => `<div data-cat="${p.c}" data-sec="${p.sec ? 1 : 0}">${card(p, l)}</div>`).join("")}</div></div></section>`;
-  return page(l, "/map/", { title: u.map, desc: u.map_d, body, leaflet: true, js: mapJS(l, D.places, { fit: true }) });
-}
-
 function listPage(l, path, title, lead, items, withMap) {
   const body = `<section><div class="w"><h1 class="sec" style="font-family:Fraunces,Georgia,serif;font-size:clamp(30px,4vw,44px);margin:0">${esc(title)}</h1><p class="lead">${esc(lead)}</p>
 ${withMap ? `<div id="map" style="height:420px;margin-bottom:24px"></div>` : ""}<div class="grid">${items.map(p => card(p, l)).join("")}</div></div></section>`;
   return page(l, path, { title, desc: lead, body, leaflet: withMap, js: withMap ? mapJS(l, items, { fit: true }) : "" });
-}
-
-function placePage(l, p) {
-  const u = D.ui[l], t = P(p, l);
-  const near = D.places.filter(x => x.s !== p.s).map(x => [km(p.ll, x.ll), x]).sort((a, b) => a[0] - b[0]).slice(0, 4);
-  const cr = p.img && D.credits[p.img];
-  const fig = p.img ? `<figure class="fig"><img src="${img(p.img, 1280)}" alt="${esc(t.n)}" width="1280" height="720"><figcaption>${esc(u.photo)}: ${esc(cr ? cr[0] : "")} · <a href="${cr ? cr[2] : "#"}" rel="nofollow">${esc(cr ? cr[1] : "")}</a>, Wikimedia Commons</figcaption></figure>` : `<div class="nofig" style="--c:${CAT_COLOR[p.c]}">${esc(u.cat[p.c])} · ${esc(u.nophoto)}</div>`;
-  const town = D.towns.slice().sort((a, b) => km(p.ll, a.ll) - km(p.ll, b.ll))[0];
-  const body = `<div class="w"><article class="pl"><div class="crumbs"><a href="/${l}/">Sumba Secrets</a> › <a href="/${l}/places/">${esc(u.places)}</a> › ${esc(u.reg[p.r])}</div>
-<p style="margin:14px 0 0"><span class="badge" style="background:${CAT_COLOR[p.c]};color:#fff">${esc(u.cat[p.c])}</span> ${p.sec ? `<span class="badge">${esc(u.secret_badge)}</span>` : ""}</p>
-<h1>${esc(t.n)}</h1><p class="rg" style="color:var(--mute);margin:0">${esc(u.reg[p.r])} · ${p.ll[0].toFixed(4)}, ${p.ll[1].toFixed(4)}</p>${fig}
-<div class="body"><p>${esc(t.t)}</p></div><div class="tipb"><b>${esc(u.tip)}</b>${esc(t.tip)}</div>
-<p><a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=${p.ll[0]},${p.ll[1]}" rel="nofollow">${esc(u.directions)}</a></p>
-<h2 class="sec" style="font-size:24px;margin-top:28px">${esc(u.now)} · ${esc(town.n)}</h2>${wxBoxes(l, [town])}
-<h2 class="sec" style="font-size:24px;margin-top:28px">${esc(u.map)}</h2><div id="map" class="mapsm"></div>
-<h2 class="sec" style="font-size:24px;margin-top:28px">${esc(u.nearby)}</h2><div class="grid">${near.map(([d, x]) => card(x, l)).join("")}</div></article></div>`;
-  const ld = { "@context": "https://schema.org", "@type": "TouristAttraction", name: t.n, description: t.t, url: `${BASE}/${l}/place/${p.s}/`, geo: { "@type": "GeoCoordinates", latitude: p.ll[0], longitude: p.ll[1] }, address: { "@type": "PostalAddress", addressRegion: u.reg[p.r], addressCountry: "ID" }, ...(p.img ? { image: img(p.img, 1280) } : {}) };
-  return page(l, `/place/${p.s}/`, { title: t.n, desc: t.t.split(". ")[0] + ".", img: p.img, body, leaflet: true, ld,
-    js: mapJS(l, [p].concat(near.map(n => n[1])), { center: p.ll, zoom: 11 }) + wxJS(l, [town], true) });
 }
 
 function weatherPage(l) {
@@ -220,12 +188,6 @@ function notFound(l) {
   return page(l, "/", { title: u.nf, body: `<div class="w"><article class="pl" style="padding:60px 0"><h1>${esc(u.nf)}</h1><p><a class="btn" href="/${l}/">${esc(u.back)}</a></p></article></div>` });
 }
 
-function sitemap() {
-  const paths = ["/", "/map/", "/secret-spots/", "/places/", "/weather/", "/guides/", "/about/"].concat(D.places.map(p => `/place/${p.s}/`), D.guides.map(g => `/guide/${g.s}/`));
-  const urls = paths.map(p => L.map(l => `<url><loc>${BASE}/${l}${p}</loc>${L.map(x => `<xhtml:link rel="alternate" hreflang="${x}" href="${BASE}/${x}${p}"/>`).join("")}<lastmod>${D.built}</lastmod></url>`).join("")).join("");
-  return `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">${urls}</urlset>`;
-}
-
 async function news(l, ctx) {
   const key = new Request(`${BASE}/api/news?l=${l}`);
   const cache = caches.default; let r = await cache.match(key); if (r) return r;
@@ -245,43 +207,241 @@ async function news(l, ctx) {
   return r;
 }
 
-const H = { "content-type": "text/html; charset=utf-8", "cache-control": "public, max-age=300", "x-content-type-options": "nosniff", "referrer-policy": "strict-origin-when-cross-origin" };
+
+// ---------- v2 ----------
+const U2 = l => D.ui2[l];
+const CAT_ICON = { beach:"🏖️", waterfall:"💧", village:"🛖", viewpoint:"⛰️", culture:"🐎" };
+const tpl = (s, o) => s.replace(/\{(\w+)\}/g, (_, k) => o[k] != null ? o[k] : "");
+function gthumb(c, w) { const fn = c.p.split("/").pop(); return `https://upload.wikimedia.org/wikipedia/commons/thumb/${c.p}/${w}px-${fn}`; }
+function photos(p) {
+  const g = (D.gallery[p.s] || []).map(c => ({ s: gthumb(c, 500), b: gthumb(c, 1280), a: c.a, l: c.l, f: "https://commons.wikimedia.org/wiki/File:" + encodeURIComponent(c.f) }));
+  if (!g.length && p.img) { const cr = D.credits[p.img]; g.push({ s: img(p.img, 640), b: img(p.img, 1280), a: cr[0], l: cr[1], f: cr[2] }); }
+  return g;
+}
+function nearestOf(ll, arr) { return arr.map(x => [km(ll, x.ll), x]).sort((a, b) => a[0] - b[0])[0]; }
+const regionPath = (l, r) => `/${l}/region/${D.rslug[r]}/`;
+const catPath = (l, c) => `/${l}/${D.cslug[c]}/`;
+
+function card(p, l) {
+  const u = D.ui[l], t = P(p, l), ph = photos(p)[0];
+  return `<a class="card" href="/${l}/place/${p.s}/"><div class="ph" style="--c:${CAT_COLOR[p.c]}">${ph ? `<img src="${ph.s}" alt="${esc(t.n)}, Sumba" loading="lazy" width="500" height="312" onerror="this.remove()">` : `<span style="position:absolute;inset:0;display:grid;place-items:center;font-size:44px;opacity:.5">${CAT_ICON[p.c]}</span>`}<span class="k">${esc(u.cat[p.c])}</span>${p.sec ? `<span class="badge">${esc(u.secret_badge)}</span>` : ""}</div>
+<div class="tx"><h3>${esc(t.n)}</h3><p class="rg">${esc(u.reg[p.r])}</p><p>${esc(t.t.split(". ")[0])}.</p></div></a>`;
+}
+
+function crumbsLD(items) { return { "@context": "https://schema.org", "@type": "BreadcrumbList", itemListElement: items.map((x, i) => ({ "@type": "ListItem", position: i + 1, name: x[0], item: BASE + x[1] })) }; }
+function itemListLD(l, items) { return { "@context": "https://schema.org", "@type": "ItemList", itemListElement: items.map((p, i) => ({ "@type": "ListItem", position: i + 1, url: `${BASE}/${l}/place/${p.s}/`, name: P(p, l).n })) }; }
+
+function placePage(l, p) {
+  const u = D.ui[l], u2 = U2(l), t = P(p, l);
+  const near = D.places.filter(x => x.s !== p.s).map(x => [km(p.ll, x.ll), x]).sort((a, b) => a[0] - b[0]).slice(0, 4);
+  const [tk, town] = nearestOf(p.ll, D.towns), [ak, ap] = nearestOf(p.ll, D.airports);
+  const ph = photos(p);
+  const gal = ph.length ? `<div class="gal">${ph.map((x, i) => `<figure><a href="${x.b}" target="_blank" rel="noopener"><img src="${i ? x.s : x.b}" alt="${esc(t.n)}, ${esc(u.reg[p.r])}, Sumba${i ? " (" + (i + 1) + ")" : ""}" ${i ? 'loading="lazy"' : 'fetchpriority="high"'} width="${i ? 500 : 1280}" height="${i ? 333 : 853}"></a><figcaption>${esc(u.photo)}: ${esc(x.a)} · <a href="${x.f}" rel="nofollow noopener" target="_blank">${esc(x.l)}</a>, Wikimedia Commons</figcaption></figure>`).join("")}</div>` : `<div class="nofig" style="--c:${CAT_COLOR[p.c]}">${CAT_ICON[p.c]} ${esc(u.cat[p.c])} · ${esc(u.nophoto)}</div>`;
+  const ll = `${p.ll[0].toFixed(4)}, ${p.ll[1].toFixed(4)}`;
+  const faq = [[tpl(u2.q_where, { n: t.n }), tpl(u2.a_where, { n: t.n, r: u.reg[p.r], ll, t: town.n, tk: Math.round(tk) })],
+    [tpl(u2.q_when, { n: t.n }), D.season[p.c][l]],
+    [tpl(u2.q_get, { n: t.n }), tpl(u2.a_get, { ap: ap.n, ak: Math.round(ak) })],
+    [tpl(u2.q_tip, { n: t.n }), t.tip]];
+  const yt = `https://www.youtube.com/results?search_query=${encodeURIComponent(t.n + " Sumba")}`;
+  const body = `<div class="w"><article class="pl"><nav class="crumbs" aria-label="breadcrumb"><a href="/${l}/">Sumba Secrets</a> › <a href="${regionPath(l, p.r)}">${esc(u.reg[p.r])}</a> › <a href="${catPath(l, p.c)}">${esc(u.cat[p.c])}</a></nav>
+<p style="margin:14px 0 0"><a class="badge" style="background:${CAT_COLOR[p.c]};color:#fff;text-decoration:none" href="${catPath(l, p.c)}">${CAT_ICON[p.c]} ${esc(u.cat[p.c])}</a> ${p.sec ? `<a class="badge" style="text-decoration:none" href="/${l}/secret-spots/">${esc(u.secret_badge)}</a>` : ""}</p>
+<h1>${esc(t.n)}</h1><p class="rg" style="color:var(--mute);margin:0"><a href="${regionPath(l, p.r)}">${esc(u.reg[p.r])}</a> · ${esc(u2.coords)} ${ll} · ${Math.round(tk)} ${esc(u2.km_from)} ${esc(town.n)}</p>${gal}
+<div class="body"><p>${esc(t.t)}</p></div><div class="tipb"><b>${esc(u.tip)}</b>${esc(t.tip)}</div>
+<p class="acts"><a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=${p.ll[0]},${p.ll[1]}" rel="nofollow noopener" target="_blank">${esc(u.directions)}</a><a class="btn alt2" href="https://maps.apple.com/?daddr=${p.ll[0]},${p.ll[1]}" rel="nofollow noopener" target="_blank">${esc(u2.apple)}</a><a class="btn alt2" href="${yt}" rel="nofollow noopener" target="_blank">▶ ${esc(u2.videos)}</a><a class="btn alt2" href="/${l}/map/#${p.s}">🗺️ ${esc(u2.fullmap)}</a></p>
+<h2 class="sec h2s">${esc(u.now)} · ${esc(town.n)}</h2>${wxBoxes(l, [town])}
+<h2 class="sec h2s">${esc(u.map)}</h2><div id="map" class="mapsm"></div>
+<h2 class="sec h2s">${esc(u2.faq)}</h2><div class="faq">${faq.map(([q, a]) => `<details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join("")}</div>
+<h2 class="sec h2s">${esc(u.nearby)}</h2><div class="grid">${near.map(([d, x]) => card(x, l)).join("")}</div>
+<p class="upd">${esc(u2.updated)}: ${D.built} · <a href="${regionPath(l, p.r)}">${esc(u2.explore_region)}: ${esc(u.reg[p.r])}</a></p></article></div>`;
+  const ld = [{ "@context": "https://schema.org", "@type": "TouristAttraction", name: t.n, description: t.t, url: `${BASE}/${l}/place/${p.s}/`, inLanguage: l, isAccessibleForFree: true,
+      geo: { "@type": "GeoCoordinates", latitude: p.ll[0], longitude: p.ll[1] }, address: { "@type": "PostalAddress", addressRegion: u.reg[p.r], addressCountry: "ID" },
+      containedInPlace: { "@type": "TouristDestination", name: "Sumba", url: `${BASE}/${l}/` }, ...(ph.length ? { image: ph.map(x => x.b) } : {}) },
+    { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })) },
+    crumbsLD([["Sumba Secrets", `/${l}/`], [u.reg[p.r], regionPath(l, p.r)], [u.cat[p.c], catPath(l, p.c)], [t.n, `/${l}/place/${p.s}/`]])];
+  return page(l, `/place/${p.s}/`, { title: `${t.n}, Sumba: ${u.guide_l.toLowerCase()}, ${u.map.toLowerCase()} & ${u.tip.toLowerCase()}`, desc: t.t.split(". ").slice(0, 2).join(". ").slice(0, 155), ogimg: ph[0] && ph[0].b, body, leaflet: true, ld,
+    js: mapJS(l, [p].concat(near.map(n => n[1])), { center: p.ll, zoom: 11 }) + wxJS(l, [town], true) });
+}
+
+function regionPage(l, r) {
+  const u = D.ui[l], u2 = U2(l), items = D.places.filter(p => p.r === r);
+  const body = `<section><div class="w"><nav class="crumbs" aria-label="breadcrumb"><a href="/${l}/">Sumba Secrets</a> › ${esc(u2.zones)}</nav><h1 class="h1">${esc(u.reg[r])}</h1><p class="lead">${esc(D.rtxt[r][l])}</p>
+<div id="map" style="height:440px;margin-bottom:24px"></div><h2 class="sec h2s">${esc(u2.in_region)} (${items.length})</h2><div class="grid">${items.map(p => card(p, l)).join("")}</div>
+<h2 class="sec h2s">${esc(u2.zones)}</h2><div class="chips">${Object.keys(D.rslug).filter(x => x !== r).map(x => `<a class="chip" href="${regionPath(l, x)}">${esc(u.reg[x])}</a>`).join("")}</div></div></section>`;
+  const ld = [itemListLD(l, items), crumbsLD([["Sumba Secrets", `/${l}/`], [u.reg[r], regionPath(l, r)]]),
+    { "@context": "https://schema.org", "@type": "TouristDestination", name: `${u.reg[r]}, Sumba`, description: D.rtxt[r][l], url: BASE + regionPath(l, r) }];
+  const ph = items.map(p => photos(p)[0]).find(Boolean);
+  return page(l, regionPath(l, r).slice(3), { title: `${u.reg[r]}: ${u.places.toLowerCase()}, ${u.map.toLowerCase()} & ${u.weather.toLowerCase()}`, desc: D.rtxt[r][l], body, leaflet: true, ld, ogimg: ph && ph.b,
+    js: mapJS(l, items, { fit: true, region: r }) });
+}
+
+function catPage(l, c) {
+  const u = D.ui[l], u2 = U2(l), items = D.places.filter(p => p.c === c);
+  const body = `<section><div class="w"><nav class="crumbs" aria-label="breadcrumb"><a href="/${l}/">Sumba Secrets</a> › ${esc(u2.categories)}</nav><h1 class="h1">${CAT_ICON[c]} ${esc(u.cat[c])} · Sumba</h1><p class="lead">${esc(D.ctxt[c][l])} ${esc(D.season[c][l])}</p>
+<div id="map" style="height:420px;margin-bottom:24px"></div><div class="grid">${items.map(p => card(p, l)).join("")}</div>
+<h2 class="sec h2s">${esc(u2.categories)}</h2><div class="chips">${Object.keys(D.cslug).filter(x => x !== c).map(x => `<a class="chip" href="${catPath(l, x)}">${CAT_ICON[x]} ${esc(u.cat[x])}</a>`).join("")}</div></div></section>`;
+  const ph = items.map(p => photos(p)[0]).find(Boolean);
+  return page(l, catPath(l, c).slice(3), { title: `${u.cat[c]} in Sumba (${items.length}): ${u.map.toLowerCase()} & ${u.guide_l.toLowerCase()}`.replace(" in Sumba", l === "en" ? " in Sumba" : " · Sumba"), desc: D.ctxt[c][l], body, leaflet: true, ogimg: ph && ph.b,
+    ld: [itemListLD(l, items), crumbsLD([["Sumba Secrets", `/${l}/`], [u.cat[c], catPath(l, c)]])], js: mapJS(l, items, { fit: true }) });
+}
+
+function itinerary(l) {
+  const u = D.ui[l], u2 = U2(l);
+  const order = ["sbd", "sb", "st", "stim"];
+  return `<section><div class="w"><h2 class="sec">${esc(u2.itin)}</h2><p class="lead">${esc(u2.itin_d)}</p><div class="grid itin">${order.map((r, i) => {
+    const it = D.places.filter(p => p.r === r).sort((a, b) => a.ll[1] - b.ll[1]).slice(0, 5);
+    return `<div class="wxc"><h3>${esc(u2.day)} ${i + 1} · <a href="${regionPath(l, r)}">${esc(u.reg[r])}</a></h3><ol>${it.map(p => `<li><a href="/${l}/place/${p.s}/">${esc(P(p, l).n)}</a></li>`).join("")}</ol></div>`; }).join("")}</div></div></section>`;
+}
+
+// ---------- full-screen map app ----------
+const MAPCSS = `html,body{height:100%;margin:0}body{overflow:hidden;font:15px/1.45 Inter,system-ui,sans-serif;color:#1b2722;background:#dfe9e6}
+#m{position:fixed;inset:0;z-index:1}.top{position:fixed;z-index:1000;left:12px;right:12px;top:12px;display:flex;gap:8px;align-items:flex-start;pointer-events:none}
+.box{pointer-events:auto;background:rgba(255,253,248,.96);backdrop-filter:blur(8px);border-radius:14px;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+.brand{padding:8px 12px;font-family:Fraunces,Georgia,serif;font-weight:700;font-size:19px;text-decoration:none;color:#1b2722;white-space:nowrap}.brand span{color:#0e6f66}
+.sb{flex:1;max-width:520px;padding:6px}.sb input{width:100%;border:0;background:transparent;font:inherit;font-size:16px;padding:8px 10px;outline:none}
+.ch{display:flex;gap:6px;overflow-x:auto;scrollbar-width:none;padding:2px 4px 4px}.ch::-webkit-scrollbar{display:none}
+.ch button{border:1px solid #e4dccb;background:#fff;border-radius:999px;padding:6px 11px;font:inherit;font-size:13px;white-space:nowrap;cursor:pointer}.ch button.on{background:#1b2722;color:#fff;border-color:#1b2722}
+select.lg{pointer-events:auto;border:0;border-radius:12px;padding:10px;font:inherit;font-size:14px;background:rgba(255,253,248,.96);box-shadow:0 4px 24px rgba(0,0,0,.18)}
+.pan{position:fixed;z-index:1000;right:12px;top:118px;bottom:12px;width:380px;overflow:auto;padding:0}
+.it{display:flex;gap:10px;padding:10px 12px;border-bottom:1px solid #eee5d4;cursor:pointer;align-items:center}.it:hover{background:#f7f2e8}.it img,.it .ph{width:64px;height:48px;border-radius:8px;object-fit:cover;flex:none;background:#0e6f66;display:grid;place-items:center;color:#fff;font-size:22px}
+.it b{display:block;font-size:15px}.it small{color:#5d6a63}.it .g{color:#c08a2b;font-weight:700}
+.det .gl{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:4px;border-radius:14px 14px 0 0}.det .gl img{scroll-snap-align:start;flex:none;width:100%;height:230px;object-fit:cover}
+.det .in{padding:14px 16px}.det h2{font-family:Fraunces,Georgia,serif;font-size:26px;margin:4px 0 2px;line-height:1.1}.det .meta{color:#5d6a63;font-size:13px}
+.det .tip{background:#fbf6ea;border-left:4px solid #c08a2b;padding:10px 12px;border-radius:8px;margin:10px 0}.det .cr{font-size:11px;color:#5d6a63;padding:4px 16px 0}
+.bt{display:inline-block;margin:4px 6px 0 0;padding:9px 13px;border-radius:999px;background:#0e6f66;color:#fff;text-decoration:none;font-weight:600;font-size:14px;border:0;cursor:pointer;font-family:inherit}.bt.l{background:#efe8d8;color:#1b2722}
+.x{float:right;border:0;background:#efe8d8;border-radius:999px;width:32px;height:32px;font-size:18px;cursor:pointer}
+.wxl{font-size:14px;margin-top:8px}.bdg{display:inline-block;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;padding:2px 8px;border-radius:999px;color:#fff}
+.pin{width:34px;height:34px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);display:grid;place-items:center;border:2px solid #fff;box-shadow:0 2px 8px rgba(0,0,0,.35)}.pin span{transform:rotate(45deg);font-size:16px}.pin.sec{border:3px solid #e0ad55;box-shadow:0 0 0 4px rgba(224,173,85,.45),0 2px 8px rgba(0,0,0,.35)}
+.twn{display:inline-block;transform:translate(-50%,-140%);background:#1b2722;color:#fff;padding:3px 8px;border-radius:999px;font-size:12px;font-weight:600;white-space:nowrap;box-shadow:0 2px 6px rgba(0,0,0,.3)}.apt{white-space:nowrap;display:inline-block;background:#fff;color:#1b2722;padding:3px 7px;border-radius:6px;font-size:12px;font-weight:700;border:1px solid #1b2722}
+.hidelab .rlab{display:none}.rlab{transform:translate(-50%,-50%);display:inline-block;opacity:.85;font-size:13px!important;font-family:Fraunces,Georgia,serif;font-weight:700;font-size:15px;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,.7);white-space:nowrap}
+.fab{position:fixed;z-index:1000;left:12px;bottom:24px;display:flex;flex-direction:column;gap:8px}.fab button{pointer-events:auto;border:0;width:44px;height:44px;border-radius:12px;background:rgba(255,253,248,.96);box-shadow:0 4px 18px rgba(0,0,0,.2);font-size:20px;cursor:pointer}
+.leaflet-top.leaflet-right{top:118px}.toast{position:fixed;z-index:2000;left:50%;bottom:30px;transform:translateX(-50%);background:#1b2722;color:#fff;padding:8px 14px;border-radius:999px;display:none}
+.grab{display:none}
+@media(max-width:760px){.top{flex-wrap:wrap}.sb{max-width:none;order:3;flex-basis:100%}.brand{font-size:17px}.pan{left:0;right:0;width:auto;top:auto;bottom:0;height:42vh;border-radius:18px 18px 0 0;transition:height .25s}.pan.min{height:64px}.pan.max{height:82vh}.grab{display:block;width:44px;height:5px;border-radius:9px;background:#cfc6b4;margin:8px auto}.fab{bottom:calc(42vh + 14px)}.leaflet-top.leaflet-right{top:150px}.det .gl img{height:190px}}`;
+
+function mapApp(l, canonicalPath) {
+  const u = D.ui[l], u2 = U2(l);
+  const pts = D.places.map(p => { const t = P(p, l); const ph = photos(p); const [tk, town] = nearestOf(p.ll, D.towns); const [ak, ap] = nearestOf(p.ll, D.airports);
+    return { s: p.s, n: t.n, c: p.c, r: p.r, sec: p.sec, ll: p.ll, t: t.t, tip: t.tip, ph: ph.map(x => [x.s, x.b, x.a, x.l]), town: town.s, tk: Math.round(tk), ap: ap.code, ak: Math.round(ak) }; });
+  const S = { cat: u.cat, reg: u.reg, sb: u.secret_badge, tip: u.tip, dir: u.directions, vid: u2.videos, share: u2.share, copied: u2.copied, guide: u.readmore, km: u2.km_from, wx: WX[l], close: u2.close, nophoto: u.nophoto, photo: u.photo };
+  const js = `(function(){var P=${JSON.stringify(pts)},T=${JSON.stringify(D.towns)},A=${JSON.stringify(D.airports)},R=${JSON.stringify(D.regions)},RS=${JSON.stringify(D.rslug)},S=${JSON.stringify(S)},C=${JSON.stringify(CAT_COLOR)},IC=${JSON.stringify(CAT_ICON)},LG=${JSON.stringify(l)};
+var RC={sbd:'#0e7c86',sb:'#6c8a2e',st:'#2f6fb5',stim:'#c08a2b'};
+var m=L.map('m',{zoomControl:false,attributionControl:true}).setView([-9.68,119.75],9);L.control.zoom({position:'topright'}).addTo(m);L.control.scale({imperial:false,position:'bottomright'}).addTo(m);
+var base={${JSON.stringify(u2.l_map)}:L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap &copy; CARTO'}),
+${JSON.stringify(u2.l_sat)}:L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:19,attribution:'Imagery &copy; Esri, Maxar, Earthstar Geographics'}),
+${JSON.stringify(u2.l_topo)}:L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png',{maxZoom:17,attribution:'&copy; OpenStreetMap, SRTM | OpenTopoMap (CC-BY-SA)'})};
+base[${JSON.stringify(u2.l_sat)}].addTo(m);
+var zones=L.layerGroup(),towns=L.layerGroup(),apts=L.layerGroup();
+Object.keys(R).forEach(function(k){if(!R[k])return;var g=L.geoJSON(R[k],{style:{color:RC[k],weight:2,fillColor:RC[k],fillOpacity:.10,dashArray:'6 4'}});g.on('mouseover',function(e){e.layer.setStyle({fillOpacity:.25})});g.on('mouseout',function(e){e.layer.setStyle({fillOpacity:.10})});
+g.on('click',function(){m.fitBounds(g.getBounds(),{padding:[30,30]});filt('reg:'+k)});g.bindTooltip(S.reg[k],{sticky:true});zones.addLayer(g);
+var c=g.getBounds().getCenter();zones.addLayer(L.marker(c,{interactive:false,icon:L.divIcon({className:'',html:'<div class="rlab">'+S.reg[k]+'</div>',iconSize:[0,0]})}));});
+zones.addTo(m);
+T.forEach(function(t){var mk=L.marker(t.ll,{icon:L.divIcon({className:'',html:'<div class="twn" id="tw-'+t.s+'">'+t.n+'</div>',iconSize:[0,0]})});towns.addLayer(mk)});towns.addTo(m);
+A.forEach(function(a){apts.addLayer(L.marker(a.ll,{icon:L.divIcon({className:'',html:'<div class="apt">✈ '+a.code+'</div>',iconSize:[0,0],iconAnchor:[20,10]})}).bindTooltip(a.n))});apts.addTo(m);
+var ov={};ov[${JSON.stringify(u2.zones)}]=zones;ov[${JSON.stringify(u2.towns)}]=towns;ov[${JSON.stringify(u2.airports)}]=apts;L.control.layers(base,ov,{position:'topright',collapsed:true}).addTo(m);
+var MK={};P.forEach(function(p){var mk=L.marker(p.ll,{title:p.n,icon:L.divIcon({className:'',html:'<div class="pin'+(p.sec?' sec':'')+'" style="background:'+C[p.c]+'"><span>'+IC[p.c]+'</span></div>',iconSize:[34,34],iconAnchor:[17,34]})}).addTo(m);mk.on('click',function(){open(p.s)});MK[p.s]=mk});
+var wide=innerWidth>760;m.fitBounds(L.latLngBounds(P.map(function(p){return p.ll})),{paddingTopLeft:[20,wide?110:150],paddingBottomRight:[wide?400:20,wide?20:innerHeight*.42]});function lab(){document.getElementById('m').classList.toggle('hidelab',m.getZoom()>10)}m.on('zoomend',lab);lab();
+var pan=document.getElementById('pan'),list=document.getElementById('list'),det=document.getElementById('det'),q=document.getElementById('q'),cur='all';
+function e(s){var d=document.createElement('div');d.textContent=s;return d.innerHTML}
+function vis(p){var f=cur,s=(q.value||'').toLowerCase();if(s&&(p.n+' '+S.reg[p.r]+' '+S.cat[p.c]).toLowerCase().indexOf(s)<0)return false;if(f==='all')return true;if(f==='secret')return p.sec;if(f.indexOf('reg:')===0)return p.r===f.slice(4);return p.c===f}
+function draw(){var h='';P.forEach(function(p){var v=vis(p);if(v){MK[p.s].addTo(m)}else{m.removeLayer(MK[p.s])}if(!v)return;h+='<div class="it" data-s="'+p.s+'">'+(p.ph[0]?'<img src="'+p.ph[0][0]+'" alt="" loading="lazy" onerror="this.style.visibility=\\'hidden\\'">':'<div class="ph" style="background:'+C[p.c]+'">'+IC[p.c]+'</div>')+'<div><b>'+e(p.n)+'</b><small>'+IC[p.c]+' '+e(S.cat[p.c])+' · '+e(S.reg[p.r])+(p.sec?' · <span class="g">★ '+e(S.sb)+'</span>':'')+'</small></div></div>'});list.innerHTML=h;
+list.querySelectorAll('.it').forEach(function(x){x.onclick=function(){open(x.dataset.s)}})}
+window.filt=function(f){cur=f;document.querySelectorAll('.ch button').forEach(function(b){b.classList.toggle('on',b.dataset.f===f)});det.style.display='none';list.style.display='';draw()};
+document.querySelectorAll('.ch button').forEach(function(b){b.onclick=function(){filt(b.dataset.f)}});q.oninput=function(){det.style.display='none';list.style.display='';draw()};
+var WXD={};function wxc(c){return c===0?0:c<=2?1:c===3?2:c<=48?3:c<=57?4:c<=67?5:c<=82?6:7}var WI=['☀️','⛅','☁️','🌫️','🌦️','🌧️','🌦️','⛈️'];
+fetch('https://api.open-meteo.com/v1/forecast?latitude='+T.map(function(t){return t.ll[0]}).join(',')+'&longitude='+T.map(function(t){return t.ll[1]}).join(',')+'&current=temperature_2m,weather_code&timezone=Asia%2FMakassar').then(function(r){return r.json()}).then(function(d){if(!Array.isArray(d))d=[d];d.forEach(function(x,i){WXD[T[i].s]=x.current;var el=document.getElementById('tw-'+T[i].s);if(el)el.innerHTML=T[i].n+' '+WI[wxc(x.current.weather_code)]+' '+Math.round(x.current.temperature_2m)+'°'})}).catch(function(){});
+function open(s){var p=P.filter(function(x){return x.s===s})[0];if(!p)return;var tw=T.filter(function(t){return t.s===p.town})[0],w=WXD[p.town];
+det.innerHTML=(p.ph.length?'<div class="gl">'+p.ph.map(function(x){return '<img src="'+x[0]+'" alt="'+e(p.n)+'" loading="lazy">'}).join('')+'</div><div class="cr">'+e(S.photo)+': '+p.ph.map(function(x){return e(x[2])+' ('+e(x[3])+')'}).join(', ')+', Wikimedia Commons</div>':'')+
+'<div class="in"><button class="x" aria-label="'+e(S.close)+'" onclick="filt(\\''+cur+'\\')">×</button><span class="bdg" style="background:'+C[p.c]+'">'+IC[p.c]+' '+e(S.cat[p.c])+'</span> '+(p.sec?'<span class="bdg" style="background:#c08a2b">★ '+e(S.sb)+'</span>':'')+
+'<h2>'+e(p.n)+'</h2><div class="meta">'+e(S.reg[p.r])+' · '+p.tk+' '+e(S.km)+' '+e(tw.n)+' · ✈ '+p.ak+' '+e(S.km)+' '+p.ap+'</div><p>'+e(p.t)+'</p><div class="tip"><b>'+e(S.tip)+':</b> '+e(p.tip)+'</div>'+
+(w?'<div class="wxl">'+WI[wxc(w.weather_code)]+' '+Math.round(w.temperature_2m)+'° · '+e(S.wx[wxc(w.weather_code)])+' ('+e(tw.n)+')</div>':'')+
+'<p><a class="bt" href="/'+LG+'/place/'+p.s+'/">'+e(S.guide)+' →</a><a class="bt l" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination='+p.ll[0]+','+p.ll[1]+'">'+e(S.dir)+'</a><a class="bt l" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query='+encodeURIComponent(p.n+' Sumba')+'">▶ '+e(S.vid)+'</a><button class="bt l" id="shr">'+e(S.share)+'</button></p></div>';
+list.style.display='none';det.style.display='';det.className='det';pan.classList.remove('min');(function(){var z=Math.max(m.getZoom(),13),pt=m.project(p.ll,z);if(innerWidth>760){pt=pt.add([190,0])}else{pt=pt.add([0,innerHeight*.21])}m.flyTo(m.unproject(pt,z),z,{duration:.8})})();history.replaceState(null,'','#'+p.s);
+document.getElementById('shr').onclick=function(){var url=location.origin+'/'+LG+'/place/'+p.s+'/';if(navigator.share){navigator.share({title:p.n+' · Sumba Secrets',url:url}).catch(function(){})}else{navigator.clipboard&&navigator.clipboard.writeText(url);toast(S.copied)}};
+try{clarity('event','map_open_place')}catch(x){}}
+window.openPlace=open;function toast(t){var x=document.getElementById('toast');x.textContent=t;x.style.display='block';setTimeout(function(){x.style.display='none'},1800)}
+document.getElementById('loc').onclick=function(){m.locate({setView:true,maxZoom:12})};m.on('locationfound',function(ev){L.circleMarker(ev.latlng,{radius:8,color:'#fff',weight:3,fillColor:'#2f6fb5',fillOpacity:1}).addTo(m)});
+document.getElementById('rnd').onclick=function(){var v=P.filter(vis);open(v[Math.floor(Math.random()*v.length)].s)};
+document.getElementById('fs').onclick=function(){var d=document.documentElement;if(!document.fullscreenElement){d.requestFullscreen&&d.requestFullscreen()}else{document.exitFullscreen()}};
+document.getElementById('grab').onclick=function(){pan.classList.toggle('max')};
+document.addEventListener('keydown',function(ev){if(ev.key==='Escape')filt(cur)});
+draw();var h=location.hash.slice(1);if(h&&MK[h])setTimeout(function(){open(h)},300);})();`;
+  const title = `${u.map} · Sumba: ${u.cat.beach.toLowerCase()}, ${u.cat.waterfall.toLowerCase()}, ${u.cat.village.toLowerCase()} & ${u.secrets.toLowerCase()}`;
+  const opts = L.map(x => `<option value="/${x}/map/"${x === l ? " selected" : ""}>${x.toUpperCase()}</option>`).join("");
+  const alts = L.map(x => `<link rel="alternate" hreflang="${x}" href="${BASE}/${x}/map/">`).join("") + `<link rel="alternate" hreflang="x-default" href="${BASE}/map">`;
+  const filters = ["all", "secret", "beach", "waterfall", "village", "viewpoint", "culture"].map((f, i) => `<button class="${i ? "" : "on"}" data-f="${f}">${f === "secret" ? "★ " : (CAT_ICON[f] ? CAT_ICON[f] + " " : "")}${esc(u.cat[f])}</button>`).join("") + Object.keys(D.rslug).map(r => `<button data-f="reg:${r}">📍 ${esc(u.reg[r])}</button>`).join("");
+  const ld = { "@context": "https://schema.org", "@type": "Map", name: title, url: `${BASE}${canonicalPath}`, inLanguage: l, mapType: "VenueMap", about: { "@type": "TouristDestination", name: "Sumba", geo: { "@type": "GeoCoordinates", latitude: -9.68, longitude: 119.75 } } };
+  return `<!doctype html><html lang="${l}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>${esc(title)} · Sumba Secrets</title>
+<meta name="description" content="${esc(u.map_d + " " + u.hero_d)}"><link rel="canonical" href="${BASE}${canonicalPath}">${alts}
+<meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(u.map_d)}"><meta property="og:image" content="${gthumb(D.gallery["weekuri-lagoon"][0], 1280)}"><meta property="og:url" content="${BASE}${canonicalPath}"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#0e6f66">
+<link rel="manifest" href="/manifest.webmanifest"><link rel="icon" href="/icon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css"><style>${MAPCSS}</style><script type="application/ld+json">${JSON.stringify(ld)}</script>${analytics()}</head><body>
+<h1 style="position:absolute;left:-9999px">${esc(title)}</h1><div id="m" role="application" aria-label="${esc(u.map)}"></div>
+<div class="top"><a class="box brand" href="/${l}/">Sumba <span>Secrets</span></a><div class="box sb"><input id="q" type="search" placeholder="🔎 ${esc(u2.search)}" aria-label="${esc(u2.search)}"><div class="ch">${filters}</div></div><select class="lg" aria-label="${esc(u.lang)}" onchange="location.href=this.value+location.hash">${opts}</select></div>
+<div class="box pan" id="pan"><div class="grab" id="grab"></div><div id="list"></div><div id="det" style="display:none"></div></div>
+<div class="fab"><button id="loc" title="${esc(u2.locate)}" aria-label="${esc(u2.locate)}">📍</button><button id="rnd" title="${esc(u2.surprise)}" aria-label="${esc(u2.surprise)}">🎲</button><button id="fs" title="Fullscreen" aria-label="Fullscreen">⛶</button></div>
+<div class="toast" id="toast"></div>
+<noscript><ul>${D.places.map(p => `<li><a href="/${l}/place/${p.s}/">${esc(P(p, l).n)}</a></li>`).join("")}</ul></noscript>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script><script>${js}</script></body></html>`;
+}
+
+function sitemap() {
+  const paths = ["/", "/map/", "/secret-spots/", "/places/", "/weather/", "/guides/", "/about/"]
+    .concat(Object.values(D.rslug).map(r => `/region/${r}/`), Object.values(D.cslug).map(c => `/${c}/`), D.places.map(p => `/place/${p.s}/`), D.guides.map(g => `/guide/${g.s}/`));
+  const imgs = p => { const m = p.match(/^\/place\/([a-z0-9-]+)\/$/); if (!m) return ""; const pl = D.places.find(x => x.s === m[1]); return photos(pl).map(x => `<image:image><image:loc>${esc(x.b)}</image:loc></image:image>`).join(""); };
+  const urls = paths.map(p => L.map(l => `<url><loc>${BASE}/${l}${p}</loc>${L.map(x => `<xhtml:link rel="alternate" hreflang="${x}" href="${BASE}/${x}${p}"/>`).join("")}<xhtml:link rel="alternate" hreflang="x-default" href="${BASE}/en${p}"/><lastmod>${D.built}</lastmod>${imgs(p)}</url>`).join("")).join("") + `<url><loc>${BASE}/map</loc><lastmod>${D.built}</lastmod></url>`;
+  return `<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">${urls}</urlset>`;
+}
+
+function llms() {
+  return `# Sumba Secrets\n\n> Travel guide to the island of Sumba (East Nusa Tenggara, Indonesia): interactive map, secret spots, live weather and guides in English, Spanish, Indonesian, German, French and Dutch. Sister site of The Sumba Times (${TIMES}), the island's daily news.\n\n## Key pages\n- Interactive map: ${BASE}/map\n- Secret spots: ${BASE}/en/secret-spots/\n- Weather: ${BASE}/en/weather/\n${Object.values(D.rslug).map(r => `- ${r}: ${BASE}/en/region/${r}/`).join("\n")}\n\n## Places\n${D.places.map(p => `- [${p.en.n}](${BASE}/en/place/${p.s}/): ${p.en.t.split(". ")[0]}. (${p.ll[0]}, ${p.ll[1]})`).join("\n")}\n\n## Guides\n${D.guides.map(g => `- [${g.en.t}](${BASE}/en/guide/${g.s}/)`).join("\n")}\n`;
+}
+
+const ICON = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="14" fill="#0e6f66"/><path d="M10 42c8-6 14-6 22 0s14 6 22 0" stroke="#f7f2e8" stroke-width="5" fill="none" stroke-linecap="round"/><circle cx="44" cy="22" r="7" fill="#e0ad55"/></svg>`;
+const MANIFEST = JSON.stringify({ name: "Sumba Secrets", short_name: "Sumba", start_url: "/map", display: "standalone", background_color: "#f7f2e8", theme_color: "#0e6f66", icons: [{ src: "/icon.svg", sizes: "any", type: "image/svg+xml", purpose: "any maskable" }] });
+
+const H = { "content-type": "text/html; charset=utf-8", "cache-control": "public, max-age=600", "x-content-type-options": "nosniff", "referrer-policy": "strict-origin-when-cross-origin", "strict-transport-security": "max-age=31536000; includeSubDomains", "x-frame-options": "SAMEORIGIN", "permissions-policy": "geolocation=(self), camera=(), microphone=()" };
+const pickLang = req => { const al = (req.headers.get("accept-language") || "").toLowerCase(); return al.split(",").map(x => x.trim().slice(0, 2)).find(x => L.includes(x)) || "en"; };
+
+function route(req, url) {
+  const p = url.pathname;
+  if (p === "/map" || p === "/map/") return [200, mapApp(pickLang(req), "/map")];
+  const m = p.match(/^\/([a-z]{2})(\/.*)?$/);
+  if (!m || !L.includes(m[1])) return null;
+  const l = m[1], rest = m[2] || "/", u = D.ui[l];
+  if (!rest.endsWith("/")) return [301, `${BASE}/${l}${rest}/`];
+  if (rest === "/") return [200, home(l)];
+  if (rest === "/map/") return [200, mapApp(l, `/${l}/map/`)];
+  if (rest === "/secret-spots/") return [200, listPage(l, rest, u.secrets, u.secrets_d, D.places.filter(x => x.sec), true)];
+  if (rest === "/places/") return [200, listPage(l, rest, u.places, u.map_d, D.places, true)];
+  if (rest === "/weather/") return [200, weatherPage(l)];
+  if (rest === "/guides/") return [200, guidesPage(l)];
+  if (rest === "/about/") return [200, aboutPage(l)];
+  let mm = rest.match(/^\/place\/([a-z0-9-]+)\/$/); if (mm) { const pl = D.places.find(x => x.s === mm[1]); if (pl) return [200, placePage(l, pl)]; }
+  mm = rest.match(/^\/guide\/([a-z0-9-]+)\/$/); if (mm) { const g = D.guides.find(x => x.s === mm[1]); if (g) return [200, guidePage(l, g)]; }
+  mm = rest.match(/^\/region\/([a-z-]+)\/$/); if (mm) { const r = Object.keys(D.rslug).find(k => D.rslug[k] === mm[1]); if (r) return [200, regionPage(l, r)]; }
+  mm = rest.match(/^\/([a-z]+)\/$/); if (mm) { const c = Object.keys(D.cslug).find(k => D.cslug[k] === mm[1]); if (c) return [200, catPage(l, c)]; }
+  return [404, notFound(l)];
+}
 
 export default {
   async fetch(req, env, ctx) {
     const url = new URL(req.url);
-    if (url.hostname.startsWith("www.")) return Response.redirect(`${BASE}${url.pathname}${url.search}`, 301);
+    if (url.hostname.startsWith("www.") || url.protocol === "http:") return Response.redirect(`${BASE}${url.pathname}${url.search}`, 301);
     const p = url.pathname;
-    if (p === "/robots.txt") return new Response(`User-agent: *\nAllow: /\nSitemap: ${BASE}/sitemap.xml\n`, { headers: { "content-type": "text/plain" } });
+    if (p === "/robots.txt") return new Response(`User-agent: *\nAllow: /\nDisallow: /api/\n\nSitemap: ${BASE}/sitemap.xml\n`, { headers: { "content-type": "text/plain" } });
     if (p === "/sitemap.xml") return new Response(sitemap(), { headers: { "content-type": "application/xml; charset=utf-8", "cache-control": "public, max-age=3600" } });
+    if (p === "/llms.txt") return new Response(llms(), { headers: { "content-type": "text/plain; charset=utf-8" } });
+    if (p === "/icon.svg") return new Response(ICON, { headers: { "content-type": "image/svg+xml", "cache-control": "public, max-age=604800" } });
+    if (p === "/favicon.ico") return Response.redirect(`${BASE}/icon.svg`, 301);
+    if (p === "/manifest.webmanifest") return new Response(MANIFEST, { headers: { "content-type": "application/manifest+json" } });
+    if (p === `/${D.indexnow}.txt`) return new Response(D.indexnow, { headers: { "content-type": "text/plain" } });
     if (p === "/api/news") { const l = url.searchParams.get("l"); return news(["en", "es", "id"].includes(l) ? l : "en", ctx); }
-    if (p === "/" || p === "") {
-      const al = (req.headers.get("accept-language") || "").toLowerCase();
-      const l = al.split(",").map(x => x.trim().slice(0, 2)).find(x => L.includes(x)) || "en";
-      return new Response(null, { status: 302, headers: { location: `/${l}/`, vary: "accept-language", "cache-control": "no-store" } });
-    }
-    const m = p.match(/^\/([a-z]{2})(\/.*)?$/);
-    if (!m || !L.includes(m[1])) {
-      // Old URLs from the hacked WordPress: tell search engines they are gone for good
-      return new Response("Gone", { status: 410, headers: { "content-type": "text/plain", "x-robots-tag": "noindex" } });
-    }
-    const l = m[1]; let rest = m[2] || "/";
-    if (!rest.endsWith("/")) return Response.redirect(`${BASE}/${l}${rest}/`, 301);
-    const u = D.ui[l]; let html = null;
-    if (rest === "/") html = home(l);
-    else if (rest === "/map/") html = mapPage(l);
-    else if (rest === "/secret-spots/") html = listPage(l, rest, u.secrets, u.secrets_d, D.places.filter(x => x.sec), true);
-    else if (rest === "/places/") html = listPage(l, rest, u.places, u.map_d, D.places, false);
-    else if (rest === "/weather/") html = weatherPage(l);
-    else if (rest === "/guides/") html = guidesPage(l);
-    else if (rest === "/about/") html = aboutPage(l);
-    else {
-      let mm = rest.match(/^\/place\/([a-z0-9-]+)\/$/); const pl = mm && D.places.find(x => x.s === mm[1]);
-      if (pl) html = placePage(l, pl);
-      mm = rest.match(/^\/guide\/([a-z0-9-]+)\/$/); const gd = mm && D.guides.find(x => x.s === mm[1]);
-      if (gd) html = guidePage(l, gd);
-    }
-    if (!html) return new Response(notFound(l), { status: 404, headers: H });
-    return new Response(html, { headers: H });
+    if (p === "/" || p === "") return new Response(null, { status: 302, headers: { location: `/${pickLang(req)}/`, vary: "accept-language", "cache-control": "no-store" } });
+    const r = route(req, url);
+    if (!r) return new Response("Gone", { status: 410, headers: { "content-type": "text/plain", "x-robots-tag": "noindex" } });
+    if (r[0] === 301) return Response.redirect(r[1], 301);
+    const h = Object.assign({}, H); if (r[0] === 404) h["x-robots-tag"] = "noindex"; if (p === "/map" || p === "/map/") { h["vary"] = "accept-language"; h["cache-control"] = "private, max-age=300"; }
+    return new Response(r[1], { status: r[0], headers: h });
   }
 };
