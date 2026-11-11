@@ -2,6 +2,48 @@
  "about": "Lines for the 'Shipping daily' bar at the top of every kolaboro.com page, newest first. Added in the same commit as each change. Rendered by _worker.js/kbx_ticker.js. Optional 'tl' holds the line in other page languages; translated pages show only lines that have one (or fixed agent templates).",
  "items": [
   {
+   "date": "2026-11-11",
+   "kind": "shipped",
+   "text": "Project pages now say where the developer's own schedule puts the project today, and the promised dates download as a calendar file (.ics) or a subscription that updates when a date moves; the portal exports your payment schedule the same way",
+   "tl": {
+    "es": "Las páginas de proyecto dicen ahora dónde sitúa hoy el proyecto el calendario del propio promotor, y las fechas prometidas se descargan como archivo de calendario (.ics) o como suscripción que se actualiza si una fecha se aplaza; el portal exporta igual tu calendario de pagos",
+    "fr": "Les pages projet indiquent désormais où le calendrier du promoteur lui-même situe le projet aujourd’hui, et les dates promises se téléchargent en fichier d’agenda (.ics) ou en abonnement mis à jour quand une date est repoussée ; le portail exporte de la même façon votre échéancier de paiement",
+    "de": "Projektseiten zeigen jetzt, wo das Projekt nach dem eigenen Zeitplan des Bauträgers heute stehen sollte; die zugesagten Termine gibt es als Kalenderdatei (.ics) oder als Abo, das sich bei einer Verschiebung aktualisiert. Das Portal exportiert Ihren Zahlungsplan genauso",
+    "nl": "Projectpagina's tonen nu waar het project volgens de eigen planning van de ontwikkelaar vandaag zou moeten staan, en de beloofde data zijn te downloaden als agendabestand (.ics) of als abonnement dat meeverandert als een datum verschuift; het portaal exporteert je betaalschema op dezelfde manier",
+    "ru": "Страницы проектов теперь показывают, где проект должен быть сегодня по собственному графику застройщика, а обещанные даты можно скачать файлом календаря (.ics) или подписаться, чтобы перенос даты обновлялся сам; портал так же выгружает ваш график платежей",
+    "zh": "项目页面现在会显示按开发商自己的时间表项目今天应到哪一步，承诺日期可下载为日历文件（.ics）或订阅，日期推迟时自动更新；门户也能以同样方式导出你的付款计划",
+    "ar": "صفحات المشاريع تبيّن الآن أين يُفترض أن يكون المشروع اليوم بحسب جدول المطوّر نفسه، ويمكن تنزيل المواعيد الموعودة كملف تقويم (.ics) أو الاشتراك فيها لتتحدّث عند تأجيل موعد؛ والبوابة تصدّر جدول دفعاتك بالطريقة نفسها"
+   }
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "shipped",
+   "text": "Bulk check for agents and lenders: paste or upload up to 100 project names, developer names or links and your browser matches them against our public index (handover date on record, moved dates, permit number, website health, lookalike websites), with CSV export; nothing is uploaded",
+   "tl": {
+    "es": "Comprobación en lote para agentes y entidades financieras: pega o sube hasta 100 nombres de proyectos, promotores o enlaces y tu navegador los compara con nuestro índice público (entrega registrada, fechas aplazadas, número de licencia, estado de la web, webs parecidas), con exportación CSV; no se sube nada",
+    "fr": "Vérification en lot pour agents et prêteurs : collez ou importez jusqu’à 100 noms de projets, de promoteurs ou liens et votre navigateur les compare à notre index public (livraison enregistrée, dates repoussées, numéro de permis, état du site, sites ressemblants), avec export CSV ; rien n’est envoyé",
+    "de": "Sammelprüfung für Makler und Kreditgeber: bis zu 100 Projektnamen, Bauträgernamen oder Links einfügen oder hochladen, Ihr Browser gleicht sie mit unserem öffentlichen Index ab (erfasste Übergabe, verschobene Termine, Genehmigungsnummer, Website-Zustand, ähnliche Websites), mit CSV-Export; nichts wird hochgeladen",
+    "nl": "Bulkcheck voor makelaars en kredietverstrekkers: plak of upload tot 100 projectnamen, ontwikkelaars of links en je browser vergelijkt ze met onze openbare index (vastgelegde oplevering, verschoven data, vergunningsnummer, staat van de website, gelijkende websites), met CSV-export; er wordt niets geüpload",
+    "ru": "Пакетная проверка для агентов и кредиторов: вставьте или загрузите до 100 названий проектов, застройщиков или ссылок, и браузер сверит их с нашим открытым индексом (срок сдачи в записи, перенесённые даты, номер разрешения, состояние сайта, похожие сайты), с экспортом в CSV; ничего не отправляется",
+    "zh": "面向中介和贷款机构的批量核查：粘贴或上传最多 100 个项目名称、开发商名称或链接，浏览器会与我们的公开索引比对（在案交付日期、日期推迟、许可证号、网站状态、相似网站），可导出 CSV；不上传任何内容",
+    "ar": "فحص بالجملة للوسطاء وجهات التمويل: الصق أو ارفع حتى 100 اسم مشروع أو مطوّر أو رابط ليطابقها متصفحك مع فهرسنا العام (التسليم المسجَّل، المواعيد المؤجَّلة، رقم الترخيص، حالة الموقع، المواقع المشابهة) مع تصدير CSV؛ لا يُرفع أي شيء"
+   }
+  },
+  {
+   "date": "2026-11-11",
+   "kind": "shipped",
+   "text": "The sealed X-ray page now reads in 8 languages (the language it was run in, or the one you pick); the sealed data, its fingerprint and the in-browser verification are unchanged",
+   "tl": {
+    "es": "La página de la radiografía sellada se lee ahora en 8 idiomas (el idioma en que se hizo, o el que elijas); los datos sellados, su huella y la verificación en el navegador no cambian",
+    "fr": "La page de la radiographie scellée se lit désormais en 8 langues (celle dans laquelle elle a été lancée, ou celle que vous choisissez) ; les données scellées, leur empreinte et la vérification dans le navigateur sont inchangées",
+    "de": "Die Seite des versiegelten Röntgens gibt es jetzt in 8 Sprachen (in der Sprache des Laufs oder in der gewählten); die versiegelten Daten, ihr Fingerabdruck und die Prüfung im Browser bleiben unverändert",
+    "nl": "De pagina van de verzegelde röntgen is nu in 8 talen te lezen (de taal waarin hij is uitgevoerd, of de taal die je kiest); de verzegelde gegevens, de vingerafdruk en de verificatie in de browser zijn ongewijzigd",
+    "ru": "Страница запечатанного рентгена теперь доступна на 8 языках (на языке запуска или на выбранном вами); запечатанные данные, их отпечаток и проверка в браузере не изменились",
+    "zh": "封存的 X 光页面现在支持 8 种语言（运行时的语言，或你选择的语言）；封存的数据、指纹和浏览器内验证均未改变",
+    "ar": "صفحة الأشعة المختومة تُقرأ الآن بثماني لغات (لغة التشغيل أو اللغة التي تختارها)؛ البيانات المختومة وبصمتها والتحقق داخل المتصفح لم تتغير"
+   }
+  },
+  {
    "date": "2026-11-09",
    "kind": "shipped",
    "text": "Full working test of the site (checks, tools, accounts, feeds, API): a saved X-ray now shows in your dashboard, project pages have a Save to my list button again, and the update feed is current",

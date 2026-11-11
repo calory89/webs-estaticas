@@ -35,6 +35,7 @@
       e_label: 'Give the instalment a name.', e_due: 'Enter a valid due date.', e_pct: 'Enter a percentage between 0 and 100 (up to 2 decimals).', e_amount: 'Enter an amount (numbers only, up to 2 decimals).', e_currency: 'Choose a currency.',
       e_value: 'Enter a percentage or an amount.', e_pct_total: 'The percentages for this project would add up to more than 100% ({n}% left).', e_not_saved: 'Save this project first.', e_limit: 'Limit reached for this project.',
       e_demo: 'This is the demo account: nothing is saved.', e_admin_view: 'Admin view: read only.', e_auth: 'Your session ended. Log in again.', e_network: 'Could not reach the server. Try again.', e_other: 'Could not save ({e}). Try again.',
+      cal_btn: 'Add these dates to your calendar (.ics)', cal_note: 'The file is made in your browser from the schedule above. Nothing new is stored or sent.', cal_name: '{n}: my payments and promised dates', cal_inst: '{n}: instalment due, {l}', cal_inst_d: 'Instalment {i} of {t} in your schedule. {s}', cal_ms: '{n}: {k}, the developer\'s date ({p})', cal_ms_d: 'Date published by the developer: {p}. A period is placed on its last day. This is the developer\'s date, not a confirmation by Kolaboro.', cal_rem: 'Instalment due in 7 days: {l}', cal_src: 'Sources: {u}', cal_done: 'Calendar file saved', cal_proj: 'Project',
       ro: 'Read only.', k: { handover: 'Handover', construction_start: 'Start', structure: 'Topping out', milestone: 'Milestone', permit: 'Permit', rental: 'Rental start' }
     },
     es: {
@@ -65,6 +66,7 @@
       e_label: 'Ponle un nombre a la cuota.', e_due: 'Introduce una fecha válida.', e_pct: 'Introduce un porcentaje entre 0 y 100 (hasta 2 decimales).', e_amount: 'Introduce un importe (solo números, hasta 2 decimales).', e_currency: 'Elige una moneda.',
       e_value: 'Introduce un porcentaje o un importe.', e_pct_total: 'Los porcentajes de este proyecto sumarían más del 100 % (quedan {n} %).', e_not_saved: 'Primero guarda este proyecto.', e_limit: 'Has llegado al límite para este proyecto.',
       e_demo: 'Es la cuenta de demostración: no se guarda nada.', e_admin_view: 'Vista de administrador: solo lectura.', e_auth: 'Tu sesión ha terminado. Vuelve a entrar.', e_network: 'No se pudo conectar con el servidor. Inténtalo de nuevo.', e_other: 'No se pudo guardar ({e}). Inténtalo de nuevo.',
+      cal_btn: 'Añadir estas fechas a tu calendario (.ics)', cal_note: 'El archivo se crea en tu navegador a partir del calendario de arriba. No se guarda ni se envía nada nuevo.', cal_name: '{n}: mis pagos y fechas prometidas', cal_inst: '{n}: vence el plazo, {l}', cal_inst_d: 'Plazo {i} de {t} de tu calendario. {s}', cal_ms: '{n}: {k}, fecha del promotor ({p})', cal_ms_d: 'Fecha publicada por el promotor: {p}. Un periodo se coloca en su último día. Es la fecha del promotor, no una confirmación de Kolaboro.', cal_rem: 'Plazo que vence en 7 días: {l}', cal_src: 'Fuentes: {u}', cal_done: 'Archivo de calendario guardado', cal_proj: 'Proyecto',
       ro: 'Solo lectura.', k: { handover: 'Entrega', construction_start: 'Inicio', structure: 'Estructura', milestone: 'Hito', permit: 'Licencia', rental: 'Alquiler' }
     }
   };
@@ -264,6 +266,8 @@
           '<td data-label="' + esc(th[4]) + '" class="kpay-s">' + statusCell(cmp[k]) + '</td><td data-label="' + esc(th[5]) + '">' + rem + '</td><td class="kpay-a">' + (ST.ro ? '' : '<button type="button" class="k-btn k-btn--ghost k-btn--sm" data-edit="' + p.id + '">' + esc(t('edit')) + '</button><button type="button" class="k-btn k-btn--ghost k-btn--sm" data-del="' + p.id + '">' + esc(t('del')) + '</button>') + '</td></tr>';
       }).join('') + '</tbody></table></div>';
     } else h += '<p class="ap-small ap-muted">' + esc(t('empty_rows')) + '</p>';
+    // n21d: the buyer's own schedule and the developer's promised dates as a calendar file, made in the browser (nothing new stored or sent)
+    if (rows.length || ((S && S.milestones) || []).some(function (o) { return !o.old && span(o.d); })) h += '<p class="kpay-cal"><button type="button" class="k-btn k-btn--sm" data-act="ics">' + esc(t('cal_btn')) + '</button> <span class="ap-small ap-muted">' + esc(t('cal_note')) + '</span></p>';
     if (!ST.ro && R.saved.indexOf(ref) >= 0) h += formHtml(ref, ST.edit && rows.filter(function (p) { return p.id === ST.edit; })[0]);
     var src = S && S.source;
     h += '<p class="kpay-lim">' + esc(t('lim')) + '</p><p class="ap-small ap-muted kpay-src">' + esc(t('private')) + (src ? ' ' + esc(t('src')) + '. <a class="k-src" href="' + esc(src.url) + '" rel="noopener" target="_blank">Copernicus Sentinel-2 L2A</a> <a class="k-src" href="' + esc(src.method) + '">' + esc(t('meth')) + ', ' + esc(t('upd', { d: fd(S.updated) })) + '</a>' : '') +
@@ -271,6 +275,43 @@
     el.classList.toggle('is-narrow', el.clientWidth < 720); el.innerHTML = h; bind();
     syncObs(rows, cmp);
     if (!ST.scrolled && location.hash === '#kpay') { ST.scrolled = true; el.scrollIntoView(); }
+  }
+
+  // n21d: iCalendar (RFC 5545) built on the device from the rows on screen: one all-day entry per instalment (with a reminder 7 days
+  // before) and one per current promised date of the developer (a period goes on its last day)
+  function icsText(rows, S, ref) {
+    var X = function (v) { return String(v == null ? '' : v).replace(/\\/g, '\\\\').replace(/;/g, '\\;').replace(/,/g, '\\,').replace(/\r?\n/g, '\\n'); };
+    var fold = function (line) { var out = [], cur = '', n = 0, enc = new TextEncoder(); Array.from(line).forEach(function (ch) { var b = enc.encode(ch).length; if (n + b > (out.length ? 74 : 75)) { out.push(cur); cur = ''; n = 0; } cur += ch; n += b; }); out.push(cur); return out.join('\r\n '); };
+    var p2 = function (n) { return String(n).padStart(2, '0'); }, ymd = function (d) { return d.getUTCFullYear() + p2(d.getUTCMonth() + 1) + p2(d.getUTCDate()); };
+    var now = new Date(), stamp = ymd(now) + 'T' + p2(now.getUTCHours()) + p2(now.getUTCMinutes()) + p2(now.getUTCSeconds()) + 'Z';
+    var name = (S && S.name) || ref, page = S && S.url ? 'https://kolaboro.com' + S.url + '#delivery' : '', portal = 'https://kolaboro.com/portal/#kpay=' + ref;
+    var L = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Kolaboro//Payments and promised dates 1.0//EN', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH', 'X-WR-CALNAME:' + X(t('cal_name', { n: name }))];
+    var ev = function (uid, day, sum, desc, url, alarm) {
+      var d = new Date(day), e = new Date(day + 864e5);
+      L.push('BEGIN:VEVENT', 'UID:' + uid + '@kolaboro.com', 'DTSTAMP:' + stamp, 'DTSTART;VALUE=DATE:' + ymd(d), 'DTEND;VALUE=DATE:' + ymd(e), 'SUMMARY:' + X(sum), 'DESCRIPTION:' + X(desc));
+      if (url) L.push('URL:' + url);
+      L.push('TRANSP:TRANSPARENT');
+      if (alarm) L.push('BEGIN:VALARM', 'ACTION:DISPLAY', 'DESCRIPTION:' + X(alarm), 'TRIGGER:-P7D', 'END:VALARM');
+      L.push('END:VEVENT');
+    };
+    rows.forEach(function (p, k) {
+      var m = String(p.due).match(/^(\d{4})-(\d{2})-(\d{2})/); if (!m) return;
+      ev('pay-' + ref + '-' + p.id, Date.UTC(+m[1], +m[2] - 1, +m[3]), t('cal_inst', { n: name, l: p.label }), t('cal_inst_d', { i: k + 1, t: rows.length, s: share(p) }) + '\n' + portal, portal, t('cal_rem', { l: p.label }));
+    });
+    var seen = {};
+    ((S && S.milestones) || []).forEach(function (o) {
+      var sp = span(o.d); if (o.old || !sp || seen[o.k + o.d]) return; seen[o.k + o.d] = 1;
+      var dm = String(o.d).match(/^(\d{4})-(\d{2})-(\d{2})$/), day = dm ? Date.UTC(+dm[1], +dm[2] - 1, +dm[3]) : Date.UTC(Math.floor(sp[1] / 12), sp[1] % 12 + 1, 0);
+      ev('promise-' + ref + '-' + o.k + '-' + String(o.d).replace(/[^0-9A-Za-z]/g, ''), day, t('cal_ms', { n: name, k: t('k')[o.k] || o.k, p: fdp(o.d) }), t('cal_ms_d', { p: fdp(o.d) }) + (page ? '\n' + t('cal_src', { u: page }) : ''), page, null);
+    });
+    L.push('END:VCALENDAR');
+    return L.map(fold).join('\r\n') + '\r\n';
+  }
+  function icsSave() {
+    var ref = ST.ref, S = ST.series[ref] && ST.series[ref].v, rows = (ST.items || []).filter(function (p) { return p.ref === ref; }).sort(function (a, b) { return a.due < b.due ? -1 : a.due > b.due ? 1 : a.id - b.id; });
+    var blob = new Blob([icsText(rows, S, ref)], { type: 'text/calendar;charset=utf-8' }), a = document.createElement('a');
+    a.href = URL.createObjectURL(blob); a.download = 'kolaboro-' + String(ref).toLowerCase() + '-payments.ics'; document.body.appendChild(a); a.click();
+    setTimeout(function () { URL.revokeObjectURL(a.href); a.remove(); }, 1500); toast(t('cal_done'), 'ok');
   }
 
   // store what the chart showed, so an opt-in reminder can quote it with its month (structured fields only; the database validates them)
@@ -303,6 +344,7 @@
     el.querySelectorAll('[data-edit]').forEach(function (b) { b.onclick = function () { ST.edit = +b.dataset.edit; var p = ST.items.filter(function (x) { return x.id === ST.edit; })[0]; if (p) ST.kind = p.pct != null ? 'pct' : 'amt'; render(); var f = el.querySelector('#kpay-l'); if (f) { f.focus(); f.scrollIntoView({ block: 'center' }); } }; });
     el.querySelectorAll('[data-rem]').forEach(function (c) { c.onchange = function () { c.disabled = true; api('remind', { id: +c.dataset.rem, on: c.checked, lang: L }).then(function (d) { var r = apply(d, t(c.checked ? 'rem_on' : 'rem_off')); if (r !== true && r) { toast(errText(r), 'bad'); c.checked = !c.checked; c.disabled = false; } }); }; });
     var cn = el.querySelector('[data-act="cancel"]'); if (cn) cn.onclick = function () { ST.edit = null; render(); };
+    var ic = el.querySelector('[data-act="ics"]'); if (ic) ic.onclick = icsSave;
     var f = el.querySelector('#kpay-f');
     if (f) f.onsubmit = function (e) {
       e.preventDefault();
@@ -346,6 +388,7 @@
   window.addEventListener('resize', function () { clearTimeout(rz); rz = setTimeout(function () { if (ST.items && ST.ref && ST.series[ST.ref] && ST.series[ST.ref].done) render(); }, 200); });
 
   window.KBPay = {
+    icsText: icsText,
     // ctx: { token, rpc(fn, body) -> Promise<json>, refs: [saved project refs], toast(text) }
     mount: function (el, ctx) {
       if (!el) return;
@@ -358,7 +401,7 @@
   };
 
   var css = document.createElement('style'); css.id = 'kpay-css';
-  css.textContent = '#kpay .k-badge{white-space:normal;text-align:start;line-height:1.35}#kpay .kpay-in{margin-top:0}#kpay .kpay-sel{max-width:420px;margin:0 0 var(--k-3)}#kpay .kpay-sum{list-style:none;margin:0 0 var(--k-3);padding:0}#kpay .kpay-sum li{border-top:1px solid var(--k-line);padding:var(--k-2) 0;line-height:1.5;font-size:var(--k-fs-sm);color:var(--k-ink-2)}' +
+  css.textContent = '#kpay .kpay-cal{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center;margin:var(--k-3) 0}#kpay .k-badge{white-space:normal;text-align:start;line-height:1.35}#kpay .kpay-in{margin-top:0}#kpay .kpay-sel{max-width:420px;margin:0 0 var(--k-3)}#kpay .kpay-sum{list-style:none;margin:0 0 var(--k-3);padding:0}#kpay .kpay-sum li{border-top:1px solid var(--k-line);padding:var(--k-2) 0;line-height:1.5;font-size:var(--k-fs-sm);color:var(--k-ink-2)}' +
     '#kpay .kpay-ch{margin:0 0 var(--k-4);padding:var(--k-3) 0 0;border-top:1px solid var(--k-line)}#kpay .kpay-ch>div{overflow-x:auto}#kpay svg{display:block;max-width:100%;height:auto;overflow:visible}#kpay svg text{fill:var(--k-muted);font-size:11px;font-variant-numeric:tabular-nums}' +
     '#kpay .ax{stroke:var(--k-line-2);stroke-width:1}#kpay .gl{stroke:var(--k-line);stroke-width:1;stroke-dasharray:2 4}#kpay .bd{fill:color-mix(in srgb,var(--k-sea) 9%,transparent)}#kpay .lx{fill:none;stroke:var(--k-sea);stroke-width:2.2;stroke-linejoin:round}#kpay .px{fill:var(--k-sea)}' +
     '#kpay .ms{fill:color-mix(in srgb,var(--k-ink) 7%,transparent)}#kpay .ml{stroke:var(--k-ink);stroke-width:1.5}#kpay .mo{stroke:var(--k-muted);stroke-width:1;stroke-dasharray:3 3}#kpay svg .mt{fill:var(--k-ink);font-weight:600}#kpay svg .rp{fill:var(--k-ink-2)}' +

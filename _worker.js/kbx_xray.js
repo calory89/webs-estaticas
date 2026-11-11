@@ -593,30 +593,48 @@ async function vc(root, env) {
   return out(v, 200, { 'content-type': 'application/vc+ld+json; charset=utf-8', 'cache-control': 'public, max-age=3600', 'content-disposition': 'inline; filename="kolaboro-xray-' + root.slice(0, 12) + '.vc.json"' });
 }
 const escH = t => String(t == null ? '' : t).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-async function page(root, env, ctx, shell) {
+// n21d (batch 21): the sealed page's own words in 8 languages. The sealed data (cards, hashes, root) is embedded unchanged, so the
+// seal and the in-browser verification are the same in every language. Language: ?lang=xx, else the language the X-ray was run in.
+const XP = {
+  en: { check: 'Check a project', xray: 'X-ray', title: 'Project X-ray: {n}', title_nf: 'Project X-ray not found', h1: 'X-ray of {n}', h1_nf: 'This X-ray is not stored here', lead: 'What free public sources said about this project on {d} at {t} UTC. Every fact links to its source. The copy is sealed, so any change would show.', fp: 'Fingerprint (SHA-256)', again: 'Run it again today', lead_nf: 'Sealed X-rays are kept in our edge cache and database. This one is not there, or the link is incomplete.', fresh: 'Run a new X-ray', desc: 'A sealed Kolaboro Project X-ray: what free public sources and the project page said, each item with its source and SHA-256.' },
+  es: { check: 'Comprueba un proyecto', xray: 'Radiografía', title: 'Radiografía del proyecto: {n}', title_nf: 'Radiografía no encontrada', h1: 'Radiografía de {n}', h1_nf: 'Esta radiografía no está guardada aquí', lead: 'Lo que decían las fuentes públicas gratuitas sobre este proyecto el {d} a las {t} UTC. Cada dato enlaza a su fuente. La copia está sellada, así que cualquier cambio se notaría.', fp: 'Huella (SHA-256)', again: 'Repetirla hoy', lead_nf: 'Las radiografías selladas se guardan en nuestra caché y en nuestra base de datos. Esta no está, o el enlace está incompleto.', fresh: 'Hacer una radiografía nueva', desc: 'Una radiografía de proyecto de Kolaboro sellada: lo que decían las fuentes públicas gratuitas y la página del proyecto, cada dato con su fuente y su SHA-256.' },
+  de: { check: 'Projekt prüfen', xray: 'Röntgen', title: 'Projekt-Röntgen: {n}', title_nf: 'Projekt-Röntgen nicht gefunden', h1: 'Röntgen von {n}', h1_nf: 'Dieses Röntgen ist hier nicht gespeichert', lead: 'Was kostenlose öffentliche Quellen am {d} um {t} UTC über dieses Projekt sagten. Jede Angabe verweist auf ihre Quelle. Die Kopie ist versiegelt, jede Änderung würde auffallen.', fp: 'Fingerabdruck (SHA-256)', again: 'Heute erneut ausführen', lead_nf: 'Versiegelte Röntgen liegen in unserem Cache und in unserer Datenbank. Dieses ist nicht dabei, oder der Link ist unvollständig.', fresh: 'Neues Röntgen starten', desc: 'Ein versiegeltes Kolaboro-Projekt-Röntgen: was kostenlose öffentliche Quellen und die Projektseite sagten, jede Angabe mit Quelle und SHA-256.' },
+  fr: { check: 'Vérifier un projet', xray: 'Radiographie', title: 'Radiographie du projet : {n}', title_nf: 'Radiographie introuvable', h1: 'Radiographie de {n}', h1_nf: 'Cette radiographie n’est pas conservée ici', lead: 'Ce que disaient les sources publiques gratuites sur ce projet le {d} à {t} UTC. Chaque fait renvoie à sa source. La copie est scellée : tout changement se verrait.', fp: 'Empreinte (SHA-256)', again: 'La relancer aujourd’hui', lead_nf: 'Les radiographies scellées sont conservées dans notre cache et notre base de données. Celle-ci n’y est pas, ou le lien est incomplet.', fresh: 'Lancer une nouvelle radiographie', desc: 'Une radiographie de projet Kolaboro scellée : ce que disaient les sources publiques gratuites et la page du projet, chaque élément avec sa source et son SHA-256.' },
+  nl: { check: 'Check een project', xray: 'Röntgen', title: 'Projectröntgen: {n}', title_nf: 'Projectröntgen niet gevonden', h1: 'Röntgen van {n}', h1_nf: 'Deze röntgen is hier niet opgeslagen', lead: 'Wat gratis openbare bronnen over dit project zeiden op {d} om {t} UTC. Elk feit verwijst naar zijn bron. De kopie is verzegeld, dus elke wijziging zou opvallen.', fp: 'Vingerafdruk (SHA-256)', again: 'Vandaag opnieuw uitvoeren', lead_nf: 'Verzegelde röntgens staan in onze cache en database. Deze staat er niet, of de link is onvolledig.', fresh: 'Nieuwe röntgen starten', desc: 'Een verzegelde Kolaboro-projectröntgen: wat gratis openbare bronnen en de projectpagina zeiden, elk onderdeel met bron en SHA-256.' },
+  ru: { check: 'Проверить проект', xray: 'Рентген', title: 'Рентген проекта: {n}', title_nf: 'Рентген проекта не найден', h1: 'Рентген: {n}', h1_nf: 'Этот рентген здесь не хранится', lead: 'Что говорили бесплатные открытые источники об этом проекте {d} в {t} UTC. Каждый факт ведёт к своему источнику. Копия запечатана, поэтому любое изменение будет заметно.', fp: 'Отпечаток (SHA-256)', again: 'Запустить снова сегодня', lead_nf: 'Запечатанные рентгены хранятся в нашем кэше и базе данных. Этого там нет, или ссылка неполная.', fresh: 'Запустить новый рентген', desc: 'Запечатанный рентген проекта Kolaboro: что говорили бесплатные открытые источники и страница проекта, каждый пункт с источником и SHA-256.' },
+  zh: { check: '核查项目', xray: 'X 光', title: '项目 X 光：{n}', title_nf: '未找到该项目 X 光', h1: '{n} 的 X 光', h1_nf: '这份 X 光未保存在这里', lead: '免费公开来源在 {d} {t} UTC 对该项目的说法。每条事实都链接到来源。副本已封存，任何改动都会显现。', fp: '指纹（SHA-256）', again: '今天重新运行', lead_nf: '封存的 X 光保存在我们的缓存和数据库中。这一份不在其中，或链接不完整。', fresh: '运行新的 X 光', desc: '一份封存的 Kolaboro 项目 X 光：免费公开来源和项目页面的说法，每一项都附来源和 SHA-256。' },
+  ar: { check: 'افحص مشروعًا', xray: 'أشعة', title: 'أشعة المشروع: {n}', title_nf: 'لم يُعثر على أشعة المشروع', h1: 'أشعة {n}', h1_nf: 'هذه الأشعة غير محفوظة هنا', lead: 'ما قالته المصادر العامة المجانية عن هذا المشروع في {d} الساعة {t} UTC. كل معلومة مرتبطة بمصدرها. النسخة مختومة، فأي تغيير سيظهر.', fp: 'البصمة (SHA-256)', again: 'شغّلها مجددًا اليوم', lead_nf: 'تُحفظ الأشعة المختومة في ذاكرتنا المؤقتة وقاعدة بياناتنا. هذه غير موجودة، أو الرابط ناقص.', fresh: 'شغّل أشعة جديدة', desc: 'أشعة مشروع مختومة من Kolaboro: ما قالته المصادر العامة المجانية وصفحة المشروع، كل بند مع مصدره وبصمة SHA-256.' },
+};
+async function page(root, env, ctx, shell, qlang) {
   const d = await load(root, env);
-  const base = await shell('/about/');   // a plain page shell (header, footer, styles); /check/ has inline scripts that need its form
+  const lang = LANGS.includes(qlang) ? qlang : d && LANGS.includes(d.lang || (d.meta || {}).lang) ? (d.lang || d.meta.lang) : 'en';
+  const X = (k, v) => { const s = (XP[lang] && XP[lang][k]) || XP.en[k]; return v ? s.replace(/\{(\w+)\}/g, (m, x) => v[x] != null ? v[x] : m) : s; }, pl = lang === 'en' ? '' : '/' + lang;
+  let base = await shell(pl + '/about/');   // a plain page shell (header, footer, styles) in the page's language; /check/ has inline scripts that need its form
+  if (pl && (!base || base.status !== 200)) base = await shell('/about/');
   const name = d ? ((d.cards.find(c => c.id === 'match') || {}).project || {}).name || (d.meta.input.url ? d.meta.input.url.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '') : d.meta.input.q) : null;
-  const title = d ? 'Project X-ray: ' + clip(name, 60) + ' | Kolaboro' : 'Project X-ray not found | Kolaboro';
+  const title = (d ? X('title', { n: clip(name, 60) }) : X('title_nf')) + ' | Kolaboro';
   const noJs = d ? '<noscript><ol>' + d.cards.map(c => '<li><b>' + escH(c.title) + '</b>: ' + escH(c.summary || c.status) + '<ul>' + (c.facts || []).map(f => '<li>' + escH(f.k) + ': ' + escH(f.v) + (f.q ? ' "' + escH(f.q) + '"' : '') + (f.src ? ' (' + escH(f.src) + ')' : '') + '</li>').join('') + '</ul></li>').join('') + '</ol></noscript>' : '';
-  const main = '<section class="phero tight"><div class="wrap"><p class="crumb"><a href="/">Kolaboro</a> / <a href="/check/">Check a project</a> / X-ray</p><h1 class="xr-h1">' + (d ? 'X-ray of ' + escH(clip(name, 80)) : 'This X-ray is not stored here') + '</h1>' +
-    (d ? '<p class="lead">What free public sources said about this project on ' + escH(String(d.meta.started_at).slice(0, 10)) + ' at ' + escH(String(d.meta.started_at).slice(11, 16)) + ' UTC. Every fact links to its source. The copy is sealed, so any change would show.</p><p class="xr-fp">Fingerprint (SHA-256)<code>' + root + '</code></p><p class="xr-hcta"><a class="btn btn-line btn-sm" href="/check/' + (d.meta.input.url ? '?url=' + encodeURIComponent(d.meta.input.url) : '') + '">Run it again today</a></p>' : '<p class="lead">Sealed X-rays are kept in our edge cache and database. This one is not there, or the link is incomplete.</p><p><a class="btn btn-hi" href="/check/">Run a new X-ray</a></p>') + '</div></section>' +
+  const ltr = t => '<bdi dir="ltr">' + escH(t) + '</bdi>';
+  const main = '<section class="phero tight"><div class="wrap"><p class="crumb"><a href="' + pl + '/">Kolaboro</a> / <a href="' + pl + '/check/">' + escH(X('check')) + '</a> / ' + escH(X('xray')) + '</p><h1 class="xr-h1">' + (d ? escH(X('h1', { n: '\u0001' })).replace('\u0001', '<bdi>' + escH(clip(name, 80)) + '</bdi>') : escH(X('h1_nf'))) + '</h1>' +
+    (d ? '<p class="lead">' + escH(X('lead', { d: '\u0001', t: '\u0002' })).replace('\u0001', ltr(String(d.meta.started_at).slice(0, 10))).replace('\u0002', ltr(String(d.meta.started_at).slice(11, 16))) + '</p><p class="xr-fp">' + escH(X('fp')) + '<code dir="ltr">' + root + '</code></p><p class="xr-hcta"><a class="btn btn-line btn-sm" href="' + pl + '/check/' + (d.meta.input.url ? '?url=' + encodeURIComponent(d.meta.input.url) : '') + '">' + escH(X('again')) + '</a></p>' : '<p class="lead">' + escH(X('lead_nf')) + '</p><p><a class="btn btn-hi" href="' + pl + '/check/">' + escH(X('fresh')) + '</a></p>') + '</div></section>' +
     '<style>.xr-h1{font-size:clamp(1.9rem,5vw,3.2rem);line-height:1.05;overflow-wrap:anywhere;max-width:22ch}.xr-fp{font-size:.82rem;color:var(--muted);margin:10px 0 0;overflow-wrap:anywhere}.xr-fp code{font:600 .8rem ui-monospace,Menlo,monospace;color:var(--ink-2);margin-inline-start:6px}.xr-hcta{margin:14px 0 0}#analyze.sec{padding-top:8px}</style>' +
     '<section class="sec" id="analyze"><div class="wrap"><div id="xr-sealed" data-root="' + root + '"></div>' + noJs + '</div></section>' +
     '<script src="/k/xray.js?v=' + XV + '" defer></script><script src="/k/xray-cta.js?v=n20f1" defer></script>' + (d ? '<script type="application/json" id="xr-data">' + JSON.stringify(d).replace(/</g, '\\u003c') + '</script>' : '');
   const r = new HTMLRewriter()
     .on('title', { element(e) { e.setInnerContent(title); } })
-    .on('meta[name="description"]', { element(e) { e.setAttribute('content', 'A sealed Kolaboro Project X-ray: what free public sources and the project page said, each item with its source and SHA-256.'); } })
+    .on('meta[name="description"]', { element(e) { e.setAttribute('content', X('desc')); } })
     .on('meta[property="og:title"]', { element(e) { e.setAttribute('content', title); } })
+    .on('meta[property="og:description"]', { element(e) { e.setAttribute('content', X('desc')); } })
     .on('meta[property="og:url"]', { element(e) { e.setAttribute('content', ORIGIN + '/x/' + root + '/'); } })
     .on('link[rel="canonical"]', { element(e) { e.setAttribute('href', ORIGIN + '/x/' + root + '/'); } })
     .on('link[rel="alternate"][hreflang]', { element(e) { e.remove(); } })
+    .on('details.lsw a[hreflang]', { element(e) { const l = e.getAttribute('hreflang'); if (LANGS.includes(l)) { e.setAttribute('href', '/x/' + root + '/?lang=' + l); if (l === lang) e.setAttribute('aria-current', 'page'); else e.removeAttribute('aria-current'); } } })
     .on('head', { element(e) { e.append('<meta name="robots" content="noindex, follow">', { html: true }); } })
     .on('main', { element(e) { e.setInnerContent(main, { html: true }); } })
     .on('script[src^="/k/cycle.js"]', { element(e) { e.remove(); } })
     .on('script[type="application/ld+json"]', { element(e) { e.remove(); } })
     .transform(base);
-  const h = new Headers(r.headers); h.set('x-robots-tag', 'noindex, follow');
+  const h = new Headers(r.headers); h.set('x-robots-tag', 'noindex, follow'); h.set('content-language', lang);
   return new Response(r.body, { status: d ? 200 : 404, headers: h });
 }
 export async function handle(req, u, env, ctx, shell) {
@@ -644,7 +662,7 @@ export async function handle(req, u, env, ctx, shell) {
     if (m[2] === '.json') { const d = await load(m[1], env); return d ? out(d, 200, { 'cache-control': 'public, max-age=300' }) : out({ error: 'not_found' }, 404); }
     if (m[2] === '/vc') return vc(m[1], env);
     if (!m[2]) return new Response(null, { status: 301, headers: { location: '/x/' + m[1] + '/' } });
-    return page(m[1], env, ctx, shell);
+    return page(m[1], env, ctx, shell, u.searchParams.get('lang'));
   }
   return null;
 }

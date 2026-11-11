@@ -29,11 +29,12 @@ import { paperData, pricesHtml, planningHtml, paperHeading, PAPER_CSS } from './
 import { seeData, seeHtml, seeToc, seeHeading } from './kbx_see.js';
 import { moneyData, moneyHtml, moneyToc, moneyHeading } from './kbx_money.js';   // batch 19 (n19b): short lets and recorded sale prices within 1 km   // batch 18 (n18c): street-level photos and 3D view
 import { landData, landHtml, histHtml, landToc, landHeading, histToc, histHeading } from './kbx_land.js';   // batch 19 (n19c): protected land (#land), map history (#maphist)
+import { calHtml, CAL_CSS } from './kbx_cal.js';   // batch 21 (n21d): where it should be by now, promised dates as a calendar file
 import { seoLd } from './kbx_lastmod.js';   // batch 15 (s15b): true dateModified and ImageObject in the JSON-LD   // batch 14 (f14b): construction progress from space   // batch 10 (b10c): price per m2 vs official data, company network graph
 
 const ORIGIN = 'https://kolaboro.com';
 const RESERVED = new Set(['benchmark', 'reply', 'self-check', 'templates', 'index', 'index.html']);
-const CACHE_V = 'named-v48';   // v48: off-screen sections rendered on approach (n20p)   // was   // v47: save-to-my-list star on project pages (n20f)   // was   // v46: lookalike list shows 6, certificate not checked yet wording (n19a)
+const CACHE_V = 'named-v49';   // v49: where it should be by now + calendar file (n21d)   // was   // v48: off-screen sections rendered on approach (n20p)   // was   // v47: save-to-my-list star on project pages (n20f)   // was   // v46: lookalike list shows 6, certificate not checked yet wording (n19a)
 //     // 'named-v45';   // v45: lookalike websites and sanctions screening on developer pages (n19a)
 //     // 'named-v44';   // v44: pin hold for corrected pins, inline card labels on phones (n19f)
 //     // 'named-v43';   // v43: bidi isolation of names and tags in #land and #maphist (n19c)
@@ -275,7 +276,8 @@ function projectPage(ix, x, lang, extra) {
   }).join('');
   const delivery = '<p class="ki">' + tr(lang, 'del_intro', { link: own('/promises/', tr(lang, 'm_promises')) }) + '</p><ul class="fl">' + (prLi || '<li>' + esc(tr(lang, 'no_promises')) + '</li>') +
     (c.overdue ? fact(esc(tr(lang, 'over_line', { m: c.overdue })), '/promises/', tr(lang, 'm_promises')) : '') +
-    (c.delay ? fact(esc(tr(lang, 'delay_line', { m: c.delay })), page) : '') + '</ul>' + (extra.fc ? fcProjectHtml(extra.fc, x, lang, extra.fdg) : '');
+    (c.delay ? fact(esc(tr(lang, 'delay_line', { m: c.delay })), page) : '') + '</ul>' + (extra.fc ? fcProjectHtml(extra.fc, x, lang, extra.fdg) : '')
+    + (h => h ? '<style id="kcal-css">' + CAL_CSS + '</style>' + h : '')(calHtml(x, ix.prom[x.id], lang, k => tr(lang, 'pk_' + k), d => fd(d, lang)));   // n21d
 
   // construction progress from space (only projects with a plot-level pin and a Sentinel-2 series)
   const webHtml = extra.web ? webProjectHtml(extra.web, x, lang) : '';   // n18a
@@ -745,7 +747,7 @@ const FAST_FRESH = 60000, FAST_TTL = 21600, REFRESHING = new Set();
 async function dataVer(ix, env, kind, key) {
   const pj = key && kind === 'projects', dv = key && kind === 'developers', nul = () => null;
   const [rp, sd, se, la, fa] = await Promise.all([pj ? repliesPublished() : 0, pj ? satData(env).catch(nul) : null, pj ? seeData(env).catch(nul) : null, pj ? landData(env).catch(nul) : null, dv ? familyData(env).catch(nul) : null]);
-  return ix.updated + '|' + (ix.named.count || 0) + '|' + ix.P.length + '|' + (ix.named.updated || '') + '|r' + rp + '|s' + (pj ? ((sd || {}).updated || '') + '|' + (((sd || {}).space || {}).v || '') + '|g' + ((se || {}).v || '') + '|l' + ((la || {}).v || '') : '') + (dv ? '|f' + ((fa || {}).updated || '') : '');
+  return (pj ? new Date().toISOString().slice(0, 10) + '|' : '') + ix.updated + '|' + (ix.named.count || 0) + '|' + ix.P.length + '|' + (ix.named.updated || '') + '|r' + rp + '|s' + (pj ? ((sd || {}).updated || '') + '|' + (((sd || {}).space || {}).v || '') + '|g' + ((se || {}).v || '') + '|l' + ((la || {}).v || '') : '') + (dv ? '|f' + ((fa || {}).updated || '') : '');
 }
 const fastPut = (fk, html, ver, lm) => caches.default.put(fk, new Response(html, { headers: { 'content-type': 'text/html; charset=utf-8', 'cache-control': 'max-age=' + FAST_TTL, 'x-at': String(Date.now()), 'x-ver': encodeURIComponent(ver), 'x-lm': lm || '' } }));
 async function refresh(copy, fk, p, kind, key, lang, env, ctx, shell) {
