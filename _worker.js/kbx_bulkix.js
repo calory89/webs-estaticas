@@ -175,10 +175,10 @@ const LOCK = '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="10.5" w
 
 function body(lang) {
   const L = k => esc(t(lang, k)), p = pre(lang);
-  return '<div class="bk21"><section class="bk-hero"><div class="wrap"><p class="crumb"><a href="' + p + '/">Kolaboro</a> / <a href="/tools/">' + L('tools') + '</a> / ' + L('crumb') + '</p><h1>' + L('h1') + '</h1><p class="lead">' + L('lead') + '</p>' +
+  return '<div class="bk21" data-clarity-mask="true"><section class="bk-hero"><div class="wrap"><p class="crumb"><a href="' + p + '/">Kolaboro</a> / <a href="/tools/">' + L('tools') + '</a> / ' + L('crumb') + '</p><h1>' + L('h1') + '</h1><p class="lead">' + L('lead') + '</p>' +
     '<p class="bk-priv">' + LOCK + '<span><b>' + L('priv_b') + '</b> ' + L('priv') + '</span></p></div></section>' +
     '<section class="bk-sec" aria-labelledby="bk-h-in"><div class="wrap"><h2 id="bk-h-in">' + L('h_in') + '</h2><form class="bk-in" id="bkform" novalidate><div class="k-field"><label class="k-label" for="bkin">' + L('in_label') + '</label>' +
-    '<textarea class="k-textarea" id="bkin" dir="auto" spellcheck="false" autocomplete="off" autocapitalize="off" placeholder="' + L('ph') + '"></textarea></div>' +
+    '<textarea class="k-textarea" id="bkin" data-clarity-mask="true" dir="auto" spellcheck="false" autocomplete="off" autocapitalize="off" placeholder="' + L('ph') + '"></textarea></div>' +
     '<div class="bk-row"><button class="btn btn-hi" type="submit" id="bkrun">' + L('run') + '</button><label class="k-btn bk-file"><span>' + L('file') + '</span><input type="file" id="bkfile" accept=".csv,.tsv,.txt,text/csv,text/plain"></label><button class="k-btn k-btn--ghost" type="button" id="bksample">' + L('sample') + '</button><button class="k-btn k-btn--ghost" type="button" id="bkclear">' + L('clear') + '</button><span class="bk-drop">' + L('drop') + '</span></div>' +
     '<p class="bk-status" id="bkstatus" role="status" aria-live="polite"></p></form></div></section>' +
     '<section class="bk-sec" id="bkres" aria-labelledby="bk-h-res" hidden><div class="wrap"><h2 id="bk-h-res" tabindex="-1">' + L('h_res') + '</h2><div class="bk-stats" id="bkstats"></div><div class="bk-tools"><button class="k-btn" type="button" id="bkexp">' + L('exp') + '</button></div>' +

@@ -629,7 +629,7 @@ async function page(root, env, ctx, shell, qlang) {
     .on('link[rel="canonical"]', { element(e) { e.setAttribute('href', ORIGIN + '/x/' + root + '/'); } })
     .on('link[rel="alternate"][hreflang]', { element(e) { e.remove(); } })
     .on('details.lsw a[hreflang]', { element(e) { const l = e.getAttribute('hreflang'); if (LANGS.includes(l)) { e.setAttribute('href', '/x/' + root + '/?lang=' + l); if (l === lang) e.setAttribute('aria-current', 'page'); else e.removeAttribute('aria-current'); } } })
-    .on('head', { element(e) { e.append('<meta name="robots" content="noindex, follow">', { html: true }); } })
+    .on('head', { element(e) { e.append('<meta name="robots" content="noindex, follow">' + LANGS.map(l => '<link rel="alternate" hreflang="' + l + '" href="/x/' + root + '/?lang=' + l + '">').join(''), { html: true }); } })   // the header's language menu (site.js) reads these
     .on('main', { element(e) { e.setInnerContent(main, { html: true }); } })
     .on('script[src^="/k/cycle.js"]', { element(e) { e.remove(); } })
     .on('script[type="application/ld+json"]', { element(e) { e.remove(); } })

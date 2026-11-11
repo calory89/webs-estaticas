@@ -267,7 +267,7 @@
       }).join('') + '</tbody></table></div>';
     } else h += '<p class="ap-small ap-muted">' + esc(t('empty_rows')) + '</p>';
     // n21d: the buyer's own schedule and the developer's promised dates as a calendar file, made in the browser (nothing new stored or sent)
-    if (rows.length || ((S && S.milestones) || []).some(function (o) { return !o.old && span(o.d); })) h += '<p class="kpay-cal"><button type="button" class="k-btn k-btn--sm" data-act="ics">' + esc(t('cal_btn')) + '</button> <span class="ap-small ap-muted">' + esc(t('cal_note')) + '</span></p>';
+    if (rows.length || ((S && S.milestones) || []).some(function (o) { return !o.old && span(o.d); })) h += '<p class="kpay-cal"><button type="button" class="k-btn" data-act="ics">' + esc(t('cal_btn')) + '</button> <span class="ap-small ap-muted">' + esc(t('cal_note')) + '</span></p>';
     if (!ST.ro && R.saved.indexOf(ref) >= 0) h += formHtml(ref, ST.edit && rows.filter(function (p) { return p.id === ST.edit; })[0]);
     var src = S && S.source;
     h += '<p class="kpay-lim">' + esc(t('lim')) + '</p><p class="ap-small ap-muted kpay-src">' + esc(t('private')) + (src ? ' ' + esc(t('src')) + '. <a class="k-src" href="' + esc(src.url) + '" rel="noopener" target="_blank">Copernicus Sentinel-2 L2A</a> <a class="k-src" href="' + esc(src.method) + '">' + esc(t('meth')) + ', ' + esc(t('upd', { d: fd(S.updated) })) + '</a>' : '') +
