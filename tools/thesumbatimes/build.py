@@ -345,7 +345,7 @@ def masthead(l, path_tpl, active=None, front=False):
     nav = "".join(f'<a href="/{l}/{s}/" class="{"on" if s==active else ""}{" pl" if s=="plan" else ""}">{esc(sec_name(l,s))}</a>' for s in NAV)
     return f"""<div class="w"><div class="bar"><span><time id="st-today" datetime="{NOW.date().isoformat()}">{today_str(l)}</time> · <span class="daily">{x["daily"]}</span></span>
 <span class="r"><a href="/{l}/search/" aria-label="{x["search"]}">&#9906; {x["search"]}</a>{langs}<button type="button" class="tb" onclick="stTheme()" aria-label="{x["dark"]}" title="{x["dark"]}"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button></span></div>
-<header class="m">{('<div class="ear l"><b>' + N[l]["ed"] + '</b><span>Sumba · ' + {"en": "East Nusa Tenggara", "es": "Nusa Tenggara Oriental", "id": "Nusa Tenggara Timur"}[l] + '</span></div><div class="ear r"><b>' + N[l]["wx"] + '</b><span id="ear-wx">Waingapu</span></div>') if front else ''}{'<h1 class="mh">' if front else ''}<a class="mt" href="/{l}/">The Sumba Times</a>{'</h1>' if front else ''}<div class="tg">{esc(UI[l]["tagline"])}</div></header>
+<header class="m">{('<div class="ear l"><b>' + N[l]["ed"] + '</b><span>Sumba · ' + {"en": "East Nusa Tenggara", "es": "Nusa Tenggara Oriental", "id": "Nusa Tenggara Timur"}[l] + '</span></div><div class="ear r"><b>' + N[l]["wx"] + '</b><a href="https://sumbasecrets.com/' + l + '/weather/" style="color:inherit"><span id="ear-wx">Waingapu</span></a></div>') if front else ''}{'<h1 class="mh">' if front else ''}<a class="mt" href="/{l}/">The Sumba Times</a>{'</h1>' if front else ''}<div class="tg">{esc(UI[l]["tagline"])}</div></header>
 <nav class="s" aria-label="{esc(sec_name(l,'news'))}"><div class="in">{nav}<a href="https://sumbasecrets.com/{l}/">{SS_LAB[l]} &#8599;</a></div></nav></div>
 <script>function stLang(x){{try{{document.cookie='st_lang='+x+';path=/;max-age=31536000;samesite=lax'}}catch(e){{}}}}function stTheme(){{var d=document.documentElement,c=d.getAttribute('data-theme'),dark=c?c==='dark':matchMedia('(prefers-color-scheme: dark)').matches,n=dark?'light':'dark';d.setAttribute('data-theme',n);try{{localStorage.setItem('st-theme',n)}}catch(e){{}}}}</script>"""
 
@@ -592,6 +592,32 @@ def article_ld(a, l, url, imgs, grp):
     return ld
 
 OGJ = []
+
+# Sumba Secrets: link the first mention of each place to its guide on sumbasecrets.com (sister site)
+SS_PLACES = {"Weekuri": "weekuri-lagoon", "Mandorak": "mandorak-beach", "Ratenggaro": "ratenggaro", "Wainyapu": "wainyapu", "Pero": "pero-beach",
+  "Marosi": "marosi-beach", "Lapopu": "lapopu-waterfall", "Matayangu": "matayangu-waterfall", "Tarung": "tarung-village", "Wairinding": "wairinding-hill",
+  "Prailiu": "prailiu-village", "Walakiri": "walakiri-beach", "Puru Kambera": "puru-kambera", "Waimarang": "waimarang-waterfall", "Tarimbang": "tarimbang-bay",
+  "Wanggameti": "wanggameti", "Tanggedu": "tanggedu-waterfall", "Watu Maladong": "watu-maladong", "Wunga": "wunga-village", "Londa Lima": "londa-lima-beach",
+  "Padadita": "padadita-beach", "Napu": "napu-valley", "Praiyawang": "praiyawang-rende"}
+def ss_links(html, l):
+    parts = re.split(r"(<[^>]+>)", html); depth = 0; done = set()
+    for i, p in enumerate(parts):
+        if p.startswith("<"):
+            if re.match(r"<a[\s>]", p): depth += 1
+            elif p.startswith("</a"): depth = max(0, depth - 1)
+            elif re.match(r"<h[1-6][\s>]", p): depth += 1
+            elif re.match(r"</h[1-6]>", p): depth = max(0, depth - 1)
+            continue
+        if depth: continue
+        for name, slug in SS_PLACES.items():
+            if slug in done: continue
+            m = re.search(r"\b" + re.escape(name) + r"\b", p)
+            if m:
+                p = p[:m.start()] + f'<a href="https://sumbasecrets.com/{l}/place/{slug}/">{name}</a>' + p[m.end():]; done.add(slug)
+                break
+        parts[i] = p
+    return "".join(parts)
+
 def article_page(a, l):
     u = UI[l]; c = a[l]; x = X[l]
     tpl = paths_of(a)
@@ -610,7 +636,7 @@ def article_page(a, l):
     if kw: extra += "".join(f'<meta property="article:tag" content="{esc(k.strip())}">' for k in (kw.split(",") if isinstance(kw, str) else kw))
     s = head(l, c["title"] + " · The Sumba Times", c["dek"], tpl, "article", extra, og) + masthead(l, tpl, grp)
     srcs = "".join(f'<li><a href="{esc(h)}" rel="nofollow noopener" target="_blank">{esc(t)}</a></li>' for t, h in a.get("sources", []))
-    b, toc = with_toc(place_links(fix_links(body_raw(a, l)), a, l), l)
+    b, toc = with_toc(ss_links(place_links(fix_links(body_raw(a, l)), a, l), l), l)
     if a.get("dateline"):
         b = re.sub(r"^<p>", f'<p><span class="dl">{esc(a["dateline"])}.</span> ', b, count=1)
     if kind_of(a) != "letter": b = inline_sub(b, l, a)

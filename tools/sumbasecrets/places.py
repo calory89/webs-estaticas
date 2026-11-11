@@ -260,3 +260,14 @@ AIRPORTS = [
  {"code":"TMC","n":"Tambolaka Airport (TMC)","ll":[-9.4097,119.2445]},
  {"code":"WGP","n":"Waingapu Airport (WGP)","ll":[-9.6692,120.3020]},
 ]
+
+PLACES += [
+ {"s":"napu-valley","c":"viewpoint","sec":True,"r":"stim","ll":[-9.39504,119.92855],"img":None,
+  "n":{"id":"Bukit Lembah Napu"},
+  "en":{"n":"Napu Valley","t":"Wide grassy hills and a green river valley around the village of Napu, in Haharu on the north coast of East Sumba. Few visitors make it this far, and the light at the start and end of the day is spectacular.","tip":"Combine it with Wunga, which is nearby. Bring water and fuel: there is little on this coast."},
+  "es":{"n":"Valle de Napu","t":"Amplias colinas de hierba y un valle verde con río alrededor del pueblo de Napu, en Haharu, en la costa norte de Sumba Oriental. Pocos visitantes llegan hasta aquí, y la luz al principio y al final del día es espectacular.","tip":"Combínalo con Wunga, que está cerca. Lleva agua y combustible: en esta costa hay poco."},
+  "id":{"n":"Bukit Lembah Napu","t":"Bukit-bukit rumput yang luas dan lembah sungai hijau di sekitar Desa Napu, Haharu, pesisir utara Sumba Timur. Sedikit pengunjung sampai ke sini, dan cahaya pagi dan sore sangat memukau.","tip":"Gabungkan dengan Wunga yang berdekatan. Bawa air dan bensin: di pesisir ini hampir tidak ada apa-apa."},
+  "de":{"n":"Napu-Tal","t":"Weite Grashügel und ein grünes Flusstal rund um das Dorf Napu in Haharu an der Nordküste Ost-Sumbas. Nur wenige Besucher kommen so weit, und das Licht am Morgen und Abend ist spektakulär.","tip":"Mit dem nahen Wunga verbinden. Wasser und Treibstoff mitnehmen: An dieser Küste gibt es wenig."},
+  "fr":{"n":"Vallée de Napu","t":"De vastes collines herbeuses et une vallée fluviale verte autour du village de Napu, à Haharu, sur la côte nord de l'est de Sumba. Peu de visiteurs viennent jusqu'ici, et la lumière du matin et du soir est spectaculaire.","tip":"À combiner avec Wunga, tout proche. Prévoyez eau et carburant : il y a peu de choses sur cette côte."},
+  "nl":{"n":"Napu-vallei","t":"Weidse grasheuvels en een groene riviervallei rond het dorp Napu, in Haharu aan de noordkust van Oost-Sumba. Weinig bezoekers komen zo ver, en het licht aan het begin en eind van de dag is spectaculair.","tip":"Combineer met Wunga, dat vlakbij ligt. Neem water en brandstof mee: aan deze kust is weinig."}},
+]

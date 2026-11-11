@@ -20,3 +20,30 @@ GALLERY = {
 def thumb(path, w):
     fn = path.split("/")[-1]
     return f"{U}thumb/{path}/{w}px-{fn}"
+
+import hashlib as _h, urllib.parse as _u
+def F(fn, a, l, fp=False):
+    fn = fn.replace(" ", "_"); h = _h.md5(fn.encode()).hexdigest()
+    d = {"p": f"{h[0]}/{h[:2]}/" + _u.quote(fn, safe=""), "a": a, "l": l, "f": fn}
+    if fp: d["fp"] = 1
+    return d
+# Exact photos of the place
+GALLERY["pero-beach"] = [F("Pero Beach.jpg","monica renata","CC BY 2.0")]
+GALLERY["watu-maladong"] = [F("Watu Maladong.jpg","Nathan Veritas","CC BY-SA 4.0")]
+GALLERY["napu-valley"] = [F(f"Bukit Lembah Napu, Sumba Timur 0{i}.jpg","06Ivonne","CC BY-SA 4.0") for i in range(1,6)]
+GALLERY["padadita-beach"] += [F("Padadita Beach, Waingapu 01.jpg","06Ivonne","CC BY-SA 4.0"),F("Padadita Beach, Waingapu 02.jpg","06Ivonne","CC BY-SA 4.0")]
+GALLERY["puru-kambera"] += [F("Purukambera.jpg","AgungSetiawanSamuelPutra","CC BY-SA 4.0")]
+# File photos: real Sumba photos of the same kind of place, labelled "file photo"
+GALLERY["marosi-beach"] = [F("Beach of Sumba.jpg","Bimantara.prawoto","CC BY-SA 4.0",1)]
+GALLERY["rua-beach"] = [F("Sumba sunset.jpg","orangpelupa","CC BY 4.0",1)]
+GALLERY["tarimbang-bay"] = [F("KodiEastcoastSumba.JPG","Wybe","CC BY-SA 4.0",1)]
+GALLERY["londa-lima-beach"] = [F("Padang Sabana.jpg","Triy Purnama","CC BY-SA 4.0",1)]
+GALLERY["matayangu-waterfall"] = [F("Liarnya keindahan Sumba.jpg","Jordan siva","CC BY-SA 4.0",1)]
+GALLERY["tarung-village"] = [F("Houses bondokodi sumba.JPG","Wybe","CC BY-SA 3.0",1)]
+GALLERY["waigalli-village"] = [F("Kampung Adat Praijing, Sumba Barat.jpg","Zahrasrtn","CC BY-SA 4.0",1)]
+GALLERY["prailiu-village"] = [F("Tenun Ikat Sumba.jpg","06Ivonne","CC BY-SA 4.0",1),F("Detail from Sumba hinggi 2.JPG","Chris Hazzard","CC BY-SA 3.0",1)]
+GALLERY["wunga-village"] = [F("Gersang Sabana.jpg","Triy Purnama","CC BY-SA 4.0",1),F("Savana Humba.jpg","Handayanindjp","CC BY-SA 4.0",1)]
+GALLERY["brotherhood-hill"] = [F("Sumba Pulau Seribu Bukit.jpg","Zahrasrtn","CC BY-SA 4.0",1),F("Savana di sumba.jpg","반 성","CC BY-SA 4.0",1)]
+GALLERY["wanggameti"] += [F("Padang Rumput dan Kuda Sandalwood.jpg","Waskito Kukuh W","CC BY-SA 4.0",1)]
+GALLERY["mandorak-beach"] += []
+GALLERY["pasola-wanokaka"] += [F("HorsesSumba.JPG","Wybe","CC BY-SA 3.0",1)]
