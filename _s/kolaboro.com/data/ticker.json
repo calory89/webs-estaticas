@@ -3,6 +3,20 @@
  "items": [
   {
    "date": "2026-11-11",
+   "kind": "data",
+   "text": "50 more projects added in 21 countries, from the UAE, Spain and the UK to Australia, Malaysia and Greece (1,174 tracked in total): each has its developer page, the handover date as published or \"not published\", and a source link for every fact; none is reviewed or scored yet",
+   "tl": {
+    "es": "50 proyectos más añadidos en 21 países, de EAU, España y Reino Unido a Australia, Malasia y Grecia (1.174 en seguimiento en total): cada uno con la página del promotor, la fecha de entrega tal como se publica o \"no publicada\", y un enlace a la fuente de cada dato; ninguno está revisado ni puntuado todavía",
+    "fr": "50 projets de plus ajoutés dans 21 pays, des EAU, de l'Espagne et du Royaume-Uni à l'Australie, la Malaisie et la Grèce (1 174 suivis au total) : chacun avec la page du promoteur, la date de livraison telle que publiée ou « non publiée », et un lien source pour chaque fait ; aucun n'est encore examiné ni noté",
+    "de": "50 weitere Projekte in 21 Ländern hinzugefügt, von den VAE, Spanien und Großbritannien bis Australien, Malaysia und Griechenland (insgesamt 1.174 verfolgt): jedes mit der Seite des Bauträgers, dem Übergabetermin wie veröffentlicht oder \"nicht veröffentlicht\" und einem Quellenlink zu jeder Angabe; noch keines ist geprüft oder bewertet",
+    "nl": "50 projecten toegevoegd in 21 landen, van de VAE, Spanje en het VK tot Australië, Maleisië en Griekenland (1.174 gevolgd in totaal): elk met de pagina van de ontwikkelaar, de opleverdatum zoals gepubliceerd of \"niet gepubliceerd\", en een bronlink bij elk feit; nog geen enkel project is beoordeeld of gescoord",
+    "ru": "Добавлено ещё 50 проектов в 21 стране, от ОАЭ, Испании и Великобритании до Австралии, Малайзии и Греции (всего отслеживается 1 174): у каждого указаны страница застройщика, срок сдачи в том виде, как он опубликован, или «не опубликован», и ссылка на источник каждого факта; ни один пока не проверен и не оценён",
+    "zh": "新增 50 个项目,覆盖 21 个国家,从阿联酋、西班牙、英国到澳大利亚、马来西亚和希腊(共跟踪 1,174 个):每个项目都有开发商页面、按原文公布的交付日期或“未公布”,以及每项事实的来源链接;目前均未审核、未评分",
+    "ar": "أضيف 50 مشروعا آخر في 21 دولة، من الإمارات وإسبانيا والمملكة المتحدة إلى أستراليا وماليزيا واليونان (المجموع 1,174 مشروعا قيد المتابعة): لكل مشروع صفحة المطور وتاريخ التسليم كما هو منشور أو \"غير منشور\" ورابط مصدر لكل معلومة؛ لم يراجع أي منها ولم يقيّم بعد"
+   }
+  },
+  {
+   "date": "2026-11-11",
    "kind": "shipped",
    "text": "Can you legally short-let there? Project pages and a new guide show licence or registration, caps and zones, night limits and building rules for 23 places, each linked to the official source and its date",
    "tl": {
