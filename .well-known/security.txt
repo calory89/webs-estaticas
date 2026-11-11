@@ -1,0 +1,5 @@
+Contact: https://www.happylowcost.com/contacto/
+Contact: mailto:carlos@equinoxinvestmentgroup.com
+Expires: 2027-11-11T00:00:00.000Z
+Preferred-Languages: es, en
+Canonical: https://www.happylowcost.com/.well-known/security.txt

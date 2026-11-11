@@ -23,7 +23,7 @@ ES_QA = [
     ('¿De dónde salen los chollos?', 'Leemos a todas horas las ofertas que publican webs de chollos de varios países (España, Europa, Estados Unidos y Australia) y las que encuentra nuestro propio rastreador de rutas. Cada oferta encontrada es solo un punto de partida: no se publica hasta pasar las comprobaciones de abajo.'),
     ('¿Cómo comprobáis el precio?', 'Buscamos ese mismo vuelo en Kiwi.com, con la ruta y las fechas anunciadas (con un margen de unos días), desde el aeropuerto anunciado o uno cercano. Si el precio real de ese momento es más de un 20 % mayor que el anunciado, el chollo se descarta.'),
     ('¿Qué es el «precio habitual»?', 'Para la misma ruta y la misma duración de viaje consultamos el vuelo más barato en tres fechas distintas, 3, 6 y 9 semanas después de la fecha del chollo, y nos quedamos con la mediana, redondeada a 10 €. El descuento que ves se calcula frente a ese precio.'),
-    ('¿Cuánto tiene que bajar para ser un chollo?', 'Nuestro agente descarta todo lo que no esté al menos un 20 % por debajo del precio habitual, y en la web solo enseñamos los que bajan un 25 % o más.'),
+    ('¿Cuánto tiene que bajar para ser un chollo?', 'Nuestro agente descarta todo lo que no esté al menos un 20 % por debajo del precio habitual, y en la web solo enseñamos los que bajan un 40 % o más.'),
     ('¿Publicáis vuelos solo de ida?', 'Casi nunca: publicamos ida y vuelta, salvo cuando es un error de tarifa claro.'),
     ('¿Qué pasa si el mismo vuelo ya estaba publicado?', 'Si ya teníamos esa ruta igual o más barata, el nuevo no se publica. Si el nuevo es más barato, sustituye al anterior.'),
     ('¿Cuándo se comprobó cada chollo?', 'Cada chollo muestra la fecha y la hora exactas de la última comprobación. Los precios de los vuelos cambian a menudo, a veces en horas: si al reservar ves otro precio, prueba fechas cercanas.'),
@@ -35,7 +35,7 @@ EN_QA = [
     ('Where do the deals come from?', 'Around the clock we read the fares published by deal sites in several countries (Spain, Europe, the United States and Australia) and those found by our own route scanner. A fare we find is only a starting point: it is not published until it passes the checks below.'),
     ('How do you check the price?', 'We search for the same flight on Kiwi.com, on the advertised route and dates (give or take a few days), from the advertised airport or a nearby one. If the real price at that moment is more than 20% above the advertised one, the deal is dropped.'),
     ('What is the "usual price"?', 'For the same route and the same trip length we look up the cheapest flight on three other dates, 3, 6 and 9 weeks after the deal date, and take the median, rounded to €10. The saving you see is measured against that price.'),
-    ('How big does the drop have to be?', 'Our agent rejects anything that is not at least 20% below the usual price, and the website only shows deals that are 25% or more below it.'),
+    ('How big does the drop have to be?', 'Our agent rejects anything that is not at least 20% below the usual price, and the website only shows deals that are 40% or more below it.'),
     ('Do you publish one-way flights?', 'Rarely: we publish return trips, except for clear error fares.'),
     ('What if the same flight was already published?', 'If we already had that route at the same price or cheaper, the new one is not published. If the new one is cheaper, it replaces the old one.'),
     ('When was each deal checked?', 'Every deal shows the exact date and time of the latest check. Flight prices change often, sometimes within hours: if you see a different price when booking, try nearby dates.'),
@@ -259,6 +259,30 @@ def main():
     os.makedirs('en/legal', exist_ok=True)
     open('en/legal/index.html', 'w', encoding='utf-8').write(page)
 
+    # ---------- aviso legal en español con el diseño nuevo (el texto legal vive en partials/legal-es.html) ----------
+    legal_es = open(os.path.join(ROOT, '_hlc', 'partials', 'legal-es.html'), encoding='utf-8').read()
+    lurl = f'{SITE}/aviso-legal-datos-cookies/'
+    lalt = f'<link rel="alternate" hreflang="es" href="{lurl}"><link rel="alternate" hreflang="en" href="{SITE}/en/legal/">'
+    pg = G.head(title='Aviso legal, privacidad y cookies · Happy Low Cost', desc='Quién está detrás de Happy Low Cost, cómo funcionan los precios y los enlaces de afiliado, qué datos guardamos para las alertas y cuáles son tus derechos.',
+                canonical=lurl, og_type='website', og_image=f'{SITE}/hlc/brand/og-default.jpg', extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + lalt, body_class='legal')
+    pg += (f'<main class="sec" style="padding-top:26px"><div class="wrap" style="max-width:820px"><div class="kicker">Legal</div><h1 class="x-h1">Aviso legal, privacidad y cookies</h1>'
+           f'<article class="txt guide">{legal_es}</article></div></main></body></html>')
+    os.makedirs('aviso-legal-datos-cookies', exist_ok=True)
+    open('aviso-legal-datos-cookies/index.html', 'w', encoding='utf-8').write(pg)
+
+    # ---------- 404 con el diseño nuevo: buscador, chollos de hoy y accesos ----------
+    p404 = G.head(title='Página no encontrada · Happy Low Cost', desc='Esta página ya no existe. Mira los chollos de vuelos de hoy o busca un destino.', canonical=f'{SITE}/404', robots='noindex, follow', og_type='website',
+                  og_image=f'{SITE}/hlc/brand/og-default.jpg', extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">', body_class='e404')
+    p404 = p404.replace(f'<link rel="canonical" href="{SITE}/404">\n', '')
+    p404 += ('<main class="sec" style="padding-top:40px"><div class="wrap" style="max-width:760px;text-align:center"><div class="kicker">Error 404</div>'
+             '<h1 class="x-h1">Este vuelo ya ha despegado</h1><p style="font-size:18px;line-height:1.6">La página que buscas no existe o el chollo ha caducado. Los chollos duran poco: estos son los caminos más cortos para encontrar uno vivo.</p>'
+             '<form action="/buscar/" method="get" role="search" style="display:flex;gap:8px;max-width:520px;margin:22px auto"><input type="search" name="q" placeholder="Busca un destino: Roma, Tokio, Bali…" aria-label="Buscar" '
+             'style="flex:1;min-height:52px;border-radius:14px;border:1.5px solid #EADCC4;background:#fff;padding:0 16px;font:16px Inter,sans-serif;color:#14213D"><button class="hlc-btn" type="submit" style="min-height:52px">Buscar</button></form>'
+             '<p style="display:flex;gap:10px;flex-wrap:wrap;justify-content:center"><a class="hlc-btn" href="/chollos/">Ver los chollos de hoy</a><a class="hlc-btn o" href="/alertas/">Crear alerta gratis</a></p>'
+             '<p style="margin-top:22px;color:#4A5468"><a href="/chollos/desde/espana/">Chollos desde España</a> · <a href="/vuelos/">Rutas de vuelos</a> · <a href="/destinos/">Destinos y guías</a> · <a href="/blog/">Blog</a> · <a href="/en/">English</a></p>'
+             '</div></main></body></html>')
+    open('404.html', 'w', encoding='utf-8').write(p404)
+
     # ---------- panel semanal (interno, sin indexar): alertas, chollos publicados y clics a reserva ----------
     ph = G.head(title='Panel semanal · Happy Low Cost', desc='Panel interno.', canonical=f'{SITE}/panel/', robots='noindex, nofollow', og_type='website', og_image=f'{SITE}/hlc/brand/og-default.jpg',
                 extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">', body_class='panel')
@@ -289,7 +313,7 @@ g('hlc_panel_top?select=*').then(function(l){document.querySelector('#top tbody'
     import gen_blog
     gen_blog.main()
     pages = ['/como-verificamos/', '/herramientas/', '/herramientas/equipaje/', '/herramientas/es-buen-precio/', '/alertas/', '/destinos/', '/vuelos/',
-             '/hoteles/', '/en/hotels/', '/contacto/', '/en/contact/', '/blog/', '/guias/errores-de-tarifa/', '/en/guides/error-fares/', '/en/how-we-verify/', '/en/legal/', '/en/tools/', '/en/tools/baggage/', '/en/tools/is-it-a-good-price/']
+             '/hoteles/', '/en/hotels/', '/aviso-legal-datos-cookies/', '/contacto/', '/en/contact/', '/blog/', '/guias/errores-de-tarifa/', '/en/guides/error-fares/', '/en/how-we-verify/', '/en/legal/', '/en/tools/', '/en/tools/baggage/', '/en/tools/is-it-a-good-price/']
     import datetime as _dt
     today = _dt.date.today().isoformat()
     open('paginas-sitemap.xml', 'w', encoding='utf-8').write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' + ''.join(f'<url><loc>{SITE}{p}</loc><lastmod>{today}</lastmod></url>' for p in pages) + '</urlset>\n')

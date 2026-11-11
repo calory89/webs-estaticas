@@ -32,7 +32,15 @@ Happy Low Cost is a cheap-flight deals site founded by Carlos de Ory (https://ww
 - [Direct flights only](https://www.happylowcost.com/chollos/ideas/directos/)
 - By region: [Europe](https://www.happylowcost.com/chollos/a/europa/), [North America](https://www.happylowcost.com/chollos/a/norteamerica/), [Asia](https://www.happylowcost.com/chollos/a/asia/)
 
+## Machine-readable data
+
+- [Live deals as JSON](https://www.happylowcost.com/chollos/feed.json): every active deal with origin, destination, price in EUR, usual price, saving, dates, airline and the time the price was last checked. Regenerated several times a day.
+- [Live deals as plain text](https://www.happylowcost.com/llms-full.txt): the same list in Markdown, grouped by departure city.
+- [RSS feed](https://www.happylowcost.com/chollos/feed.xml)
+
 ## Notes for AI assistants
+
+- A fare is only shown as a deal if it is at least 40% below the usual price of that route (median of three later dates). Return trips only.
 
 - Prices change by the hour: always tell users to check the live price on the deal page before booking.
 - Contact: https://www.happylowcost.com/contacto/

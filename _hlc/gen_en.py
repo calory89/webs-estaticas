@@ -84,10 +84,10 @@ FOOTER = '''<footer class="fx"><div class="fx-in">
 <p>We hunt the cheapest flights in the world and check every price before we publish it. More than 420,000 travellers have followed us since 2012.</p></div>
 <div><h2 class="fx-h">Deals</h2><a href="/en/deals/">Today's deals</a><a href="/en/deals/?orden=precio">Cheapest deals</a><a href="/en/flights/">Flight routes</a><a href="/en/how-we-verify/">How we verify</a><a href="/en/tools/">Tools</a><a href="/en/guides/error-fares/">Error fares</a><a href="/en/contact/">Contact</a></div>
 <div><h2 class="fx-h">Explore</h2><a href="/en/destinations/">Destination guides</a><a href="/en/hotels/">Where to stay</a><a href="/en/deals/?cont=asia">Asia</a><a href="/en/deals/?cont=europa">Europe</a><a href="/en/deals/?cont=norteamerica">North America</a></div>
-<div><h2 class="fx-h">Follow us</h2><a href="https://www.facebook.com/happylowcostofficialpage/" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/happylowcost/" target="_blank" rel="noopener">Instagram</a><a href="https://twitter.com/happylowcost" target="_blank" rel="noopener">X / Twitter</a><a href="/">🇪🇸 Versión en español</a></div>
+<div><h2 class="fx-h">Follow us</h2><a href="https://www.facebook.com/happylowcostofficialpage/" target="_blank" rel="noopener">Facebook</a><a href="https://www.instagram.com/happylowcost/" target="_blank" rel="noopener">Instagram</a><a href="https://x.com/happylowcost" target="_blank" rel="noopener">X / Twitter</a><a href="/">🇪🇸 Versión en español</a></div>
 </div>
 <div class="fx-legal">Some links are affiliate links: if you book through them we may earn a small commission at no extra cost to you. Prices were checked on the date shown on each deal and can change. Destination photos: Wikimedia Commons (credits on each page). <a href="/en/legal/" style="display:inline;color:#D6DCEA!important;text-decoration:underline">Legal notice, privacy &amp; cookies</a> · © 2012-2026 Happy Low Cost</div>
-</footer><script src="/hlc/hlc.js?v=43" defer></script>'''
+</footer><script src="/hlc/hlc.js?v=44" defer></script>'''
 
 
 def head(title, desc, canonical, es_url=None, og_image=None, og_type='website', ld=None, robots='index, follow, max-image-preview:large', body_class=''):
@@ -113,7 +113,7 @@ def dates_en(f):
 
 
 def level_en(p):
-    return '' if not p else ('Exceptional' if p >= 50 else ('Very good' if p >= 35 else 'Good'))
+    return '' if not p else ('Exceptional' if p >= 50 else 'Very good')
 
 
 def stops_en(f):
@@ -136,13 +136,14 @@ def card(x):
     cs = G.cont_of(f)[0]
     o, d = names(x)
     img = G.photo_url(x)
-    bg = f"background-image:url('{img}'),linear-gradient(135deg,#FF5A36,#2E6BF0)" if img else 'background:linear-gradient(135deg,#FF5A36,#2E6BF0)'
+    bg = 'background:linear-gradient(135deg,#FF5A36,#2E6BF0)'
+    ph = f'<img class="dc-ph" src="{e(img)}" alt="{e(d)}{(", " + e(country(f, "destino"))) if country(f, "destino") else ""}" loading="lazy" decoding="async" width="800" height="533">' if img else ''
     cn, ce = CONT.get(cs, ('', ''))
     oc = slugify(country(f, 'origen'))
     q = slugify(' '.join([o, d, f.get('origen', ''), f.get('destino', ''), country(f, 'origen'), country(f, 'destino')]))
     return (f'<a class="dc" href="/en/deals/{e(G.en_deal_slug(x))}/" data-slug="{e(x["slug"])}" data-oc="{e(oc)}" data-occ="{e(f.get("origen_cc", ""))}" data-orig="{e(f.get("origen", ""))}" data-cont="{e(cs)}" '
             f'data-price="{e(x.get("price"))}" data-ida="{e(f.get("ida", ""))}" data-dir="{1 if f.get("escalas") == 0 else 0}" data-tipo="{"rt" if f.get("vuelta") else "ow"}" data-clase="{e(G.clase_of(f))}" data-n="{G.nights_of(f)}" data-ts="{e(G.ago_iso(G.checked(x)))}" aria-label="{e(o)} to {e(d)}, {e(x.get("price"))} euros{(", was " + e(f.get("precio_normal")) + " euros") if f.get("precio_normal") else ""}, {e(dates_en(f))}" data-q="{e(q)}">'
-            f'<div class="dc-img" style="{bg}">{f"<span class=dc-save>−{f.get('ahorro_pct')} % · {level_en(f.get('ahorro_pct'))}</span>" if f.get("ahorro_pct") else ""}<span class="dc-ok" data-ok-ts>✓ Verified {e(date_en(G.checked(x)))}</span><span class="dc-fav" role="button" tabindex="0" aria-label="Save to favourites" data-fav="{e(x["slug"])}">♡</span>'
+            f'<div class="dc-img" style="{bg}">{ph}{f"<span class=dc-save>−{f.get('ahorro_pct')} % · {level_en(f.get('ahorro_pct'))}</span>" if f.get("ahorro_pct") else ""}<span class="dc-ok" data-ok-ts>✓ Verified {e(date_en(G.checked(x)))}</span><span class="dc-fav" role="button" tabindex="0" aria-label="Save to favourites" data-fav="{e(x["slug"])}">♡</span>'
             f'<span class="dc-city">{e(d)}</span>{f"<span class=dc-cont>{ce} {e(cn.replace("the ", "").title() if cn.startswith("the ") else cn)}</span>" if cs else ""}</div>'
             f'<div class="dc-b"><div><div class="dc-r"><span class="dc-flag" title="{e(country(f, "origen"))}">{flag(f.get("origen_cc"))}</span> {e(o)} → {e(d)} <span class="dc-flag">{flag(f.get("destino_cc"))}</span></div>'
             f'<div class="dc-m">{trip(f)} · {e(stops_en(f))}{(" · " + e(f.get("aerolinea"))) if f.get("aerolinea") else ""} · {e(dates_en(f))}</div></div><div class="dc-p">{f'<s>€{e(f.get("precio_normal"))}</s>' if f.get('precio_normal') else ''}€{e(x.get("price"))}{f'<small class="dc-loc">{e(G.local(x.get("price"), f.get("origen_cc"), True))}</small>' if G.local(x.get("price"), f.get("origen_cc"), True) else ''}</div></div></a>')
@@ -228,7 +229,8 @@ def main():
         eslug = G.en_deal_slug(x)
         url = f'{SITE}/en/deals/{eslug}/'
         es_url = f'{SITE}/chollos/{slug}/'
-        title = en.get('title') or f'{o} → {d} from €{x["price"]} {trip(f)}'
+        title = G.clean_title(en.get('title') or f'{o} → {d} from €{x["price"]} {trip(f)}')
+        qa = G.deal_faq(x, True)
         seo_t = en.get('seo_title') or f'Flights {o} → {d} for €{x["price"]} ({trip(f)}) · Verified deal'
         desc = en.get('meta_description') or en.get('excerpt') or title
         ls_ = G.lib_slug(f)
@@ -240,13 +242,13 @@ def main():
         offer = {"@type": "Offer", "name": title, "url": url, "price": x.get('price'), "priceCurrency": "EUR", "availability": "https://schema.org/InStock", "validThrough": f.get('ida'),
                  "category": "Flight", "itemOffered": {"@type": "Flight", "name": f"{o} → {d}", "departureAirport": {"@type": "Airport", "iataCode": f.get('origen_iata'), "name": o},
                                                        "arrivalAirport": {"@type": "Airport", "iataCode": f.get('destino_iata'), "name": d}, "departureTime": f.get('ida')}}
-        art = {"@type": "Article", "headline": title[:110], "description": desc, "image": og, "datePublished": x.get('approved_at'), "dateModified": x.get('approved_at'), "inLanguage": "en",
-               "author": {"@type": "Organization", "name": "Happy Low Cost", "url": SITE + '/en/'}, "publisher": {"@type": "Organization", "name": "Happy Low Cost", "logo": {"@type": "ImageObject", "url": f"{SITE}/hlc/brand/icon-512.png"}}, "mainEntityOfPage": url}
+        art = {"@type": "Article", "headline": title[:110], "description": desc, "image": og, "datePublished": x.get('approved_at'), "dateModified": G.checked(x) or x.get('approved_at'), "inLanguage": "en",
+               "author": {"@type": "Organization", "@id": SITE + '/#org', "name": "Happy Low Cost", "url": SITE + '/en/'}, "publisher": {"@type": "Organization", "name": "Happy Low Cost", "logo": {"@type": "ImageObject", "url": f"{SITE}/hlc/brand/icon-512.png"}}, "mainEntityOfPage": url}
         rel = G.related(x, deals)
         guide = f'<a class="hlc-btn o" href="/en/destinations/{G.en_dest_slug(ls_)}/">📖 Full {e(NAMES.get(ls_, d))} travel guide</a>' if ls_ and ls_ in dmap else ''
         fl, ht = to_en_link(x.get('cta_flight')), G.BK.with_dates(hotels(d), f.get('ida'), f.get('vuelta'))
         share = quote(f'{title} {url}')
-        page = head(seo_t, desc, url, es_url, og, 'article', [art, cld, offer], body_class='deal')
+        page = head(seo_t, desc, url, es_url, og, 'article', [art, cld, offer, G.faq_ld(qa, 'en')], body_class='deal')
         page += f'''<main data-deal-slug="{e(slug)}" data-deal-ida="{e(f.get('ida', ''))}">
 <section class="deal-hero" style="{f'background-image:url({hero})' if hero else ''}"{G.photos_attr(ls_) if ls_ else ''}><div class="wrap">
 {ch.replace('class="crumbs"', 'class="crumbs crumbs-l"')}
@@ -256,8 +258,9 @@ def main():
 <div class="deal-days" data-days></div>
 </div></section>
 <div class="wrap"><div class="deal-body">
-<article class="txt"><div class="howbook"><b>How to book it in 3 steps</b><ol><li>Tap “See flight & dates”: the search opens with these dates.</li><li>If the price has changed, try a day earlier or later; similar dates are usually there.</li><li>Before paying, check which baggage the fare includes.</li></ol></div>{G.bag_box(f, True)}{en.get('body_html') or ''}
-{f'<p>{guide}</p>' if guide else ''}</article>
+<article class="txt"><p class="deal-quick"><strong>In short:</strong> {e(o)} to {e(d)} for €{e(x.get('price'))} {trip(f)}{(' with ' + e(f.get('aerolinea'))) if f.get('aerolinea') else ''}{', nonstop' if f.get('escalas') == 0 else ''}, {e(dates_en(f))}.{(' The usual price is about €' + e(f.get('precio_normal')) + ' (you save ' + e(f.get('ahorro_pct')) + '%).') if f.get('precio_normal') else ''} Price checked on {e(date_en(verified))}.</p><div class="howbook"><b>How to book it in 3 steps</b><ol><li>Tap “See flight & dates”: the search opens with these dates.</li><li>If the price has changed, try a day earlier or later; similar dates are usually there.</li><li>Before paying, check which baggage the fare includes.</li></ol></div>{G.bag_box(f, True)}{en.get('body_html') or ''}
+{f'<p>{guide}</p>' if guide else ''}
+{G.faq_html(qa, True)}</article>
 <aside class="deal-card">
 <div class="facts">
 <div><small>From</small><b>{flag(f.get('origen_cc'))} {e(o)}</b></div><div><small>To</small><b>{flag(f.get('destino_cc'))} {e(d)}</b></div>
@@ -350,7 +353,8 @@ def main():
         cheapest = min((x['price'] for x in sub), default=None)
         intro_ = (f"{desc_} {len(sub)} deals right now" + (f", from €{cheapest}." if cheapest else ".") + " Prices re-checked every day.") if sub else f"{desc_} None right now: new fares land every hour."
         ch_, cld_ = crumbs([('Home', '/en/'), ('Deals', '/en/deals/'), (h1_, None)])
-        pg = head(f'{h1_}: cheap flight deals · Happy Low Cost', G.smart_desc(intro_), f'{SITE}/en/deals/ideas/{k_}/', None, ld=[cld_], body_class='chollos',
+        es_k = {v: k for k, v in G.IDEAS_EN.items()}.get(k_)
+        pg = head(f'{h1_}: cheap flight deals · Happy Low Cost', G.smart_desc(intro_), f'{SITE}/en/deals/ideas/{k_}/', (f'{SITE}/chollos/ideas/{es_k}/' if es_k and os.path.isdir(f'chollos/ideas/{es_k}') else None), ld=[cld_], body_class='chollos',
                   robots='index, follow, max-image-preview:large' if sub else 'noindex, follow')
         pg += f'''<main class="sec" style="padding-top:26px"><div class="wrap">
 {ch_}
@@ -364,7 +368,7 @@ def main():
     hero_imgs = [p for p in ('bali', 'tokio', 'nueva-york', 'santorini', 'maldivas', 'lisboa')]
     guides_hub = ''.join(f'<a class="hub-l" href="/en/destinations/{G.en_dest_slug(s_)}/">{e(NAMES.get(s_, g["name"]))}</a>' for s_, g in dmap.items())
     org = {"@type": "Organization", "@id": f"{SITE}/#org", "name": "Happy Low Cost", "url": f"{SITE}/en/", "logo": f"{SITE}/hlc/brand/icon-512.png", "foundingDate": "2012",
-           "sameAs": ["https://www.facebook.com/happylowcostofficialpage/", "https://www.instagram.com/happylowcost/", "https://twitter.com/happylowcost"],
+           "sameAs": ["https://www.facebook.com/happylowcostofficialpage/", "https://www.instagram.com/happylowcost/", "https://x.com/happylowcost"],
            "contactPoint": {"@type": "ContactPoint", "contactType": "customer support", "url": "https://www.happylowcost.com/contacto/", "availableLanguage": ["es", "en"]}, "publishingPrinciples": f"{SITE}/en/how-we-verify/"}
     web = {"@type": "WebSite", "url": f"{SITE}/en/", "name": "Happy Low Cost", "inLanguage": "en", "publisher": {"@id": f"{SITE}/#org"},
            "potentialAction": {"@type": "SearchAction", "target": {"@type": "EntryPoint", "urlTemplate": f"{SITE}/en/search/?q={{search_term_string}}"}, "query-input": "required name=search_term_string"}}

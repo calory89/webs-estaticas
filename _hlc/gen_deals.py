@@ -86,7 +86,68 @@ def smart_desc(t, n=155):
     return t[:n - 1].rsplit(' ', 1)[0].rstrip(',;:') + '…'
 
 
-MIN_SAVE = 25  # % mínimo frente al precio habitual para enseñar un chollo en la web (el agente exige 20 %)
+MIN_SAVE = 40  # % mínimo frente al precio habitual para enseñar un chollo en la web (el agente exige 20 %). Carlos, 11-nov-2026: listón arriba, solo chollos de verdad
+
+
+def clean_title(t):
+    """Título sin emoji ni símbolos delante: para el H1 y los datos estructurados."""
+    return re.sub(r'^[^0-9A-Za-zÀ-ÿ¿¡]+', '', t or '').strip()
+
+
+def madrid(iso):
+    """Fecha ISO en UTC -> 'AAAA-MM-DD HH:MM' en hora peninsular española."""
+    try:
+        from zoneinfo import ZoneInfo
+        d = datetime.datetime.fromisoformat((iso or '').replace('Z', '+00:00'))
+        if d.tzinfo is None:
+            d = d.replace(tzinfo=datetime.timezone.utc)
+        return d.astimezone(ZoneInfo('Europe/Madrid')).strftime('%Y-%m-%d %H:%M')
+    except Exception:
+        return (iso or '')[:16].replace('T', ' ')
+
+
+def deal_faq(x, en=False):
+    """Preguntas y respuestas de una ficha, solo con datos del chollo (para la página y para FAQPage)."""
+    f = x['facts']
+    o, d_, p = f.get('origen'), f.get('destino'), x.get('price')
+    air = f.get('aerolinea')
+    direct = f.get('escalas') == 0
+    qa = []
+    if en:
+        import gen_en as _E
+        o, d_ = _E.names(x)
+        qa.append((f'How much is the flight from {o} to {d_}?', f'€{p} return' + (f' with {air}' if air else '') + f', leaving {_E.date_en(f.get("ida"))}' + (f' and coming back {_E.date_en(f.get("vuelta"))}' if f.get('vuelta') else '') + f'. Price last checked on {_E.date_en(checked(x))}.'))
+        if f.get('precio_normal'):
+            qa.append(('How much do I save?', f'The usual price for this route and trip length is about €{f.get("precio_normal")}, so this fare is {f.get("ahorro_pct")}% cheaper.'))
+        qa.append(('Is it a nonstop flight?', 'Yes, it is nonstop.' if direct else (f'No, it has {f.get("escalas")} stop(s).' if f.get('escalas') else 'Check the stops on the booking page before you pay.')))
+        qa.append(('Is a suitcase included?', 'The cheapest fare usually includes only a small bag under the seat. Check the baggage of your fare before paying: adding a cabin bag or a checked bag changes the final price.'))
+        qa.append(('How long will this price last?', 'Nobody knows: fares like this can disappear in hours. We re-check every live deal once a day and remove it if it has gone up more than 10%.'))
+    else:
+        qa.append((f'¿Cuánto cuesta el vuelo de {o} a {d_}?', f'{p} € ida y vuelta' + (f' con {air}' if air else '') + f', saliendo el {fecha(f.get("ida"))}' + (f' y volviendo el {fecha(f.get("vuelta"))}' if f.get('vuelta') else '') + f'. Precio comprobado por última vez el {fecha(madrid(checked(x)))}.'))
+        if f.get('precio_normal'):
+            qa.append(('¿Cuánto se ahorra?', f'El precio habitual de esta ruta para un viaje de la misma duración ronda los {f.get("precio_normal")} €, así que esta tarifa sale un {f.get("ahorro_pct")} % más barata.'))
+        qa.append(('¿Es un vuelo directo?', 'Sí, es un vuelo sin escalas.' if direct else (f'No, tiene {f.get("escalas")} escala(s).' if f.get('escalas') else 'Revisa las escalas en la página de reserva antes de pagar.')))
+        qa.append(('¿Incluye maleta?', 'La tarifa más barata suele incluir solo un bolso pequeño bajo el asiento. Revisa el equipaje de tu tarifa antes de pagar: añadir maleta de cabina o facturada cambia el precio final.'))
+        qa.append(('¿Hasta cuándo dura este precio?', 'No se puede saber: tarifas así pueden desaparecer en horas. Volvemos a comprobar cada chollo activo una vez al día y lo retiramos si ha subido más de un 10 %.'))
+    return qa
+
+
+def faq_html(qa, en=False):
+    return ('<section class="deal-faq"><h2>' + ('Quick questions' if en else 'Preguntas rápidas') + '</h2>'
+            + ''.join(f'<details><summary>{e(q)}</summary><p>{e(a)}</p></details>' for q, a in qa) + '</section>')
+
+
+def faq_ld(qa, lang):
+    return {"@type": "FAQPage", "inLanguage": lang, "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}} for q, a in qa]}
+
+
+def quick_answer(x):
+    f = x['facts']
+    air = f' con {f.get("aerolinea")}' if f.get('aerolinea') else ''
+    stops = ', sin escalas' if f.get('escalas') == 0 else ''
+    was = f' Lo habitual en esta ruta son unos {f.get("precio_normal")} € (ahorras un {f.get("ahorro_pct")} %).' if f.get('precio_normal') else ''
+    return (f'<p class="deal-quick"><strong>En corto:</strong> vuelo de {e(f.get("origen"))} a {e(f.get("destino"))} por {e(x.get("price"))} € ida y vuelta{e(air)}{stops}, '
+            f'del {e(fecha(f.get("ida")))} al {e(fecha(f.get("vuelta")))}.{e(was)} Precio comprobado el {e(fecha(madrid(checked(x))))}.</p>')
 
 
 def keep_deal(x):
@@ -433,6 +494,10 @@ def head(**k):
     d.update(k)
     d.setdefault('og_title', d['title'])
     d.setdefault('og_alt', d['title'])
+    xh = d.get('extra_head') or ''
+    m_es = re.search(r'<link rel="alternate" hreflang="es" href="([^"]+)">', xh)
+    if m_es and 'hreflang="x-default"' not in xh:  # toda pareja es/en lleva también x-default (la española)
+        d['extra_head'] = xh.replace(m_es.group(0), m_es.group(0) + f'<link rel="alternate" hreflang="x-default" href="{m_es.group(1)}">', 1)
     h = HEAD
     for key, v in d.items():
         h = h.replace('{' + key + '}', v)
@@ -457,7 +522,7 @@ def nights_of(f):
 
 
 def level_es(p):
-    return '' if not p else ('Excepcional' if p >= 50 else ('Muy bueno' if p >= 35 else 'Bueno'))
+    return '' if not p else ('Excepcional' if p >= 50 else 'Muy bueno')
 
 
 def dates_es(f):
@@ -549,11 +614,12 @@ def card(x):
     f = x['facts']
     cs, cn, ce = cont_of(f)
     img = photo_url(x)
-    bg = f"background-image:url('{img}'),linear-gradient(135deg,#FF5A36,#2E6BF0)" if img else 'background:linear-gradient(135deg,#FF5A36,#2E6BF0)'
+    bg = 'background:linear-gradient(135deg,#FF5A36,#2E6BF0)'
+    ph = f'<img class="dc-ph" src="{e(img)}" alt="{e(f.get("destino"))}{(", " + e(f.get("pais"))) if f.get("pais") else ""}" loading="lazy" decoding="async" width="800" height="533">' if img else ''
     oc = slugify(f.get('origen_pais') or '')
     return (f'<a class="dc" href="/chollos/{e(x["slug"])}/" data-slug="{e(x["slug"])}" data-oc="{e(oc)}" data-occ="{e(f.get("origen_cc", ""))}" data-orig="{e(f.get("origen", ""))}" data-cont="{e(cs)}" '
             f'data-price="{e(x.get("price"))}" data-ida="{e(f.get("ida", ""))}" data-dir="{1 if f.get("escalas") == 0 else 0}" data-tipo="{"rt" if f.get("vuelta") else "ow"}" data-clase="{e(clase_of(f))}" data-n="{nights_of(f)}" data-ts="{e(ago_iso(checked(x)))}" aria-label="{e(f.get("origen"))} a {e(f.get("destino"))}, {e(x.get("price"))} euros{(", antes " + e(f.get("precio_normal")) + " euros") if f.get("precio_normal") else ""}, {e(dates_es(f))}" data-q="{e(slugify((f.get("origen", "") + " " + f.get("destino", "") + " " + (f.get("pais") or "") + " " + (f.get("origen_pais") or ""))))}">'
-            f'<div class="dc-img" style="{bg}">{f"<span class=dc-save title='{level_es(f.get(chr(97)+chr(104)+chr(111)+chr(114)+chr(114)+chr(111)+chr(95)+chr(112)+chr(99)+chr(116)))}'>−{f.get(chr(97)+chr(104)+chr(111)+chr(114)+chr(114)+chr(111)+chr(95)+chr(112)+chr(99)+chr(116))} % · {level_es(f.get('ahorro_pct'))}</span>" if f.get("ahorro_pct") else ""}<span class="dc-ok" data-ok-ts>✓ Verificado {e(fecha(checked(x)))}</span><span class="dc-fav" role="button" tabindex="0" aria-label="Guardar en favoritos" data-fav="{e(x["slug"])}">♡</span>'
+            f'<div class="dc-img" style="{bg}">{ph}{f"<span class=dc-save title='{level_es(f.get(chr(97)+chr(104)+chr(111)+chr(114)+chr(114)+chr(111)+chr(95)+chr(112)+chr(99)+chr(116)))}'>−{f.get(chr(97)+chr(104)+chr(111)+chr(114)+chr(114)+chr(111)+chr(95)+chr(112)+chr(99)+chr(116))} % · {level_es(f.get('ahorro_pct'))}</span>" if f.get("ahorro_pct") else ""}<span class="dc-ok" data-ok-ts>✓ Verificado {e(fecha(checked(x)))}</span><span class="dc-fav" role="button" tabindex="0" aria-label="Guardar en favoritos" data-fav="{e(x["slug"])}">♡</span>'
             f'<span class="dc-city">{e(f.get("destino"))}</span></div>'
             f'<div class="dc-b"><div><div class="dc-r"><span class="dc-flag" title="{e(f.get("origen_pais") or "")}">{flag(f.get("origen_cc"))}</span> {e(f.get("origen"))} → {e(f.get("destino"))} <span class="dc-flag" title="{e(f.get("pais") or "")}">{flag(f.get("destino_cc"))}</span></div>'
             f'<div class="dc-m">{e(f.get("tipo", ""))} · {e(stops_es(f))}{(" · " + e(f.get("aerolinea"))) if f.get("aerolinea") else ""} · {e(dates_es(f))}</div></div><div class="dc-p">{f'<s>{e(f.get("precio_normal"))} €</s>' if f.get('precio_normal') else ''}{e(x.get("price"))} €{f'<small class="dc-loc">{e(local(x.get("price"), f.get("origen_cc")))}</small>' if local(x.get("price"), f.get("origen_cc")) else ''}</div></div></a>')
@@ -619,13 +685,17 @@ def filters_html(deals):
 </div>'''
 
 
+IDEAS_EN = {'fin-de-semana': 'weekend-getaways', 'menos-de-50-euros': 'under-50', 'menos-de-100-euros': 'under-100', 'larga-distancia': 'long-haul', 'directos': 'nonstop', 'navidad-2026': 'christmas-2026'}
+EN_ALT = {'chollos': '/en/deals/', **{f'chollos/ideas/{k}': f'/en/deals/ideas/{v}/' for k, v in IDEAS_EN.items()}}
+
+
 def list_page(path, title, h1, kicker, intro, deals, canonical, crumb_items, extra_links='', explorer=False, noindex=False, seo_html=''):
     ch, cld = crumbs(crumb_items)
-    items = [{"@type": "ListItem", "position": i + 1, "url": f"{SITE}/chollos/{x['slug']}/", "name": x.get('title') or ''} for i, x in enumerate(deals[:50])]
+    items = [{"@type": "ListItem", "position": i + 1, "url": f"{SITE}/chollos/{x['slug']}/", "name": clean_title(x.get('title') or '')} for i, x in enumerate(deals[:50])]
     graph = [cld, {"@type": "CollectionPage", "name": h1, "url": canonical, "inLanguage": "es-ES", "description": intro, "mainEntity": {"@type": "ItemList", "numberOfItems": len(deals), "itemListElement": items}}]
     desc = smart_desc(intro)
     page = head(title=e(title), desc=e(desc), canonical=canonical, og_type='website', og_image=f'{SITE}/hlc/brand/og-default.jpg', robots='noindex, follow' if noindex else 'index, follow, max-image-preview:large',
-                extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12"><link rel="alternate" type="application/rss+xml" title="Chollos Happy Low Cost" href="/chollos/feed.xml">' + ('<link rel="alternate" hreflang="es" href="' + canonical + '"><link rel="alternate" hreflang="en" href="' + f'{SITE}/en/deals/' + '"><link rel="alternate" hreflang="x-default" href="' + canonical + '">' if path == 'chollos' else '') + ld_script(graph), body_class='chollos')
+                extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12"><link rel="alternate" type="application/rss+xml" title="Chollos Happy Low Cost" href="/chollos/feed.xml">' + ('<link rel="alternate" hreflang="es" href="' + canonical + '"><link rel="alternate" hreflang="en" href="' + SITE + EN_ALT[path] + '"><link rel="alternate" hreflang="x-default" href="' + canonical + '">' if path in EN_ALT and os.path.isdir(EN_ALT[path].strip('/')) else '') + ld_script(graph), body_class='chollos')
     cards = ''.join(card(x) for x in deals) or EMPTY
     page += f'''<main class="sec" style="padding-top:26px"><div class="wrap">
 {ch}
@@ -682,10 +752,7 @@ def main():
     deals = [norm_deal(x) for x in deals]
     for x in deals:
         x['cta_flight'] = BK.fix_flight(x.get('cta_flight'))
-    for x in deals:  # chollos por debajo del umbral: fuera también su página (la web y el JS los esconden)
-        if not keep_deal(x) and x.get('slug') and os.path.isdir(os.path.join('chollos', x['slug'])):
-            import shutil
-            shutil.rmtree(os.path.join('chollos', x['slug']))
+    # los chollos por debajo del umbral salen de los listados; si ya tenían página, pasa a «caducado» más abajo (no un 404: hay enlaces desde Facebook y Google)
     deals = [x for x in deals if keep_deal(x)]
     load_fx()
     deals.sort(key=lambda x: x.get('approved_at') or '', reverse=True)
@@ -759,10 +826,12 @@ def main():
         hero = (f"/hlc/img/cities/{lib_slug(f)}.jpg" if lp else (f"/chollos/{slug}/foto.jpg" if os.path.exists(os.path.join(out, 'foto.jpg')) else (x.get('image_url') or '')))
         url = f'{SITE}/chollos/{slug}/'
         title = x.get('title') or f"{f.get('origen')} → {f.get('destino')} desde {f.get('precio')} €"
-        seo_t = f"Vuelos {f.get('origen')} → {f.get('destino')} por {x.get('price')} € ({f.get('tipo', '')}) · Chollo verificado"
+        h1t = clean_title(title)
+        seo_t = f"Vuelos {f.get('origen')} → {f.get('destino')} por {x.get('price')} € {f.get('tipo', '')}" + (f" en {f.get('periodo')}" if f.get('periodo') else '') + (f" con {f.get('aerolinea')}" if f.get('aerolinea') and len(f.get('aerolinea')) < 22 else '')
+        qa = deal_faq(x)
         excerpt = x.get('excerpt') or f"Chollo de vuelo {f.get('origen')} - {f.get('destino')} por {x.get('price')} € {f.get('tipo', '')}, comprobado hoy."
         share_txt = quote(f"{title} {url}")
-        verified = checked(x)[:16].replace('T', ' ')
+        verified = madrid(checked(x))
         cs, cn, ce = cont_of(f)
         oc = slugify(f.get('origen_pais') or '')
         dls = lib_slug(f)
@@ -772,29 +841,30 @@ def main():
             items.append((f"Desde {f.get('origen')}", f'/chollos/desde/{oc}/{slugify(f.get("origen") or "")}/'))
         items.append((f"{f.get('origen')} → {f.get('destino')}", None))
         ch, cld = crumbs(items)
-        offer = {"@type": "Offer", "name": title, "url": url, "price": x.get('price'), "priceCurrency": "EUR", "availability": "https://schema.org/InStock",
+        offer = {"@type": "Offer", "name": h1t, "url": url, "price": x.get('price'), "priceCurrency": "EUR", "availability": "https://schema.org/InStock",
                  "validThrough": f.get('ida'), "category": "Vuelo", "itemOffered": {"@type": "Flight", "name": f"{f.get('origen')} → {f.get('destino')}",
                  "departureAirport": {"@type": "Airport", "iataCode": f.get('origen_iata'), "name": f.get('origen')},
                  "arrivalAirport": {"@type": "Airport", "iataCode": f.get('destino_iata'), "name": f.get('destino')}, "departureTime": f.get('ida')}}
-        art = {"@type": "Article", "headline": title[:110], "description": excerpt, "image": f"{url}og.jpg", "datePublished": x.get('approved_at'), "dateModified": checked(x) or x.get('approved_at'), "inLanguage": "es-ES",
-               "author": {"@type": "Organization", "name": "Happy Low Cost", "url": SITE + '/'}, "publisher": {"@type": "Organization", "name": "Happy Low Cost", "logo": {"@type": "ImageObject", "url": f"{SITE}/hlc/brand/icon-512.png"}}, "mainEntityOfPage": url}
+        art = {"@type": "Article", "headline": h1t[:110], "description": excerpt, "image": f"{url}og.jpg", "datePublished": x.get('approved_at'), "dateModified": checked(x) or x.get('approved_at'), "inLanguage": "es-ES",
+               "author": {"@type": "Organization", "@id": SITE + '/#org', "name": "Happy Low Cost", "url": SITE + '/'}, "publisher": {"@type": "Organization", "@id": SITE + '/#org', "name": "Happy Low Cost", "logo": {"@type": "ImageObject", "url": f"{SITE}/hlc/brand/icon-512.png"}}, "mainEntityOfPage": url}
         rel = related(x, deals)
         rel_html = ''.join(card(y) for y in rel)
         guide_link = f'<a class="hlc-btn o" href="/destinos/{dls}/">📖 Guía completa de {e(dmap[dls]["name"])}</a>' if dls and dls in dmap else ''
         page = head(title=e(seo_t), desc=e(excerpt), canonical=url, og_image=url + 'og.jpg', og_title=e(title),
-                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + ('<link rel="alternate" hreflang="es" href="' + url + '"><link rel="alternate" hreflang="en" href="' + f'{SITE}/en/deals/{en_deal_slug(x)}/' + '"><link rel="alternate" hreflang="x-default" href="' + url + '">' if x.get('en') else '') + ld_script([art, cld, offer]), body_class='deal')
+                    extra_head='<link rel="stylesheet" href="/hlc/home.css?v=12">' + ('<link rel="alternate" hreflang="es" href="' + url + '"><link rel="alternate" hreflang="en" href="' + f'{SITE}/en/deals/{en_deal_slug(x)}/' + '"><link rel="alternate" hreflang="x-default" href="' + url + '">' if x.get('en') else '') + ld_script([art, cld, offer, faq_ld(qa, 'es-ES')]), body_class='deal')
         page += f'''<main data-deal-slug="{e(slug)}" data-deal-ida="{e(f.get('ida', ''))}">
 <section class="deal-hero" style="{f'background-image:url({hero})' if hero else ''}"{photos_attr(lib_slug(f)) if lp else ''}><div class="wrap">
 {ch.replace('class="crumbs"', 'class="crumbs crumbs-l"')}
-<div class="kicker" style="color:#FFC531">✓ Precio {"comprobado de nuevo" if (x.get("facts") or {}).get("checked_at") else "verificado"} el {e(fecha(verified))} a las {e(verified[11:16])} (UTC){f" · {ce} {e(cn)}" if cs else ""} · <a href="/como-verificamos/" style="color:#FFC531;text-decoration:underline">cómo lo comprobamos</a></div>
-<h1>{e(title)}</h1>
+<div class="kicker" style="color:#FFC531">✓ Precio {"comprobado de nuevo" if (x.get("facts") or {}).get("checked_at") else "verificado"} el {e(fecha(verified))} a las {e(verified[11:16])} (hora peninsular){f" · {ce} {e(cn)}" if cs else ""} · <a href="/como-verificamos/" style="color:#FFC531;text-decoration:underline">cómo lo comprobamos</a></div>
+<h1>{e(h1t)}</h1>
 <div class="deal-cta"><a class="price-tag" href="{e(x.get('cta_flight', '#'))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_precio">{e(f.get('precio'))} € <small>{e(f.get('tipo', ''))}</small></a>{f'<span class="price-was">Precio habitual <s>{e(f.get("precio_normal"))} €</s> · ahorras un {e(f.get("ahorro_pct"))} %</span>' if f.get('precio_normal') else ''}{f'<span class="price-was">{e(local(x.get("price"), f.get("origen_cc")))} al cambio de hoy</span>' if local(x.get("price"), f.get("origen_cc")) else ''}<a class="hlc-btn" href="{e(x.get('cta_flight', '#'))}" target="_blank" rel="sponsored nofollow noopener" data-hlc="deal_vuelo" style="min-height:56px;font-size:17px">Ver vuelo y fechas ✈️</a><span class="dc-fav big" role="button" tabindex="0" aria-label="Guardar en favoritos" data-fav="{e(slug)}">♡</span></div>
 <div class="deal-days" data-days></div>
 </div></section>
 <div class="wrap"><div class="deal-body">
-<article class="txt"><div class="howbook"><b>Cómo reservarlo en 3 pasos</b><ol><li>Pulsa «Ver vuelo y fechas»: se abre la búsqueda con estas fechas.</li><li>Si el precio ha cambiado, prueba un día antes o después; suele haber fechas parecidas.</li><li>Antes de pagar, revisa qué equipaje incluye la tarifa.</li></ol></div>{bag_box(f)}{x.get('body_html') or ''}
+<article class="txt">{quick_answer(x)}<div class="howbook"><b>Cómo reservarlo en 3 pasos</b><ol><li>Pulsa «Ver vuelo y fechas»: se abre la búsqueda con estas fechas.</li><li>Si el precio ha cambiado, prueba un día antes o después; suele haber fechas parecidas.</li><li>Antes de pagar, revisa qué equipaje incluye la tarifa.</li></ol></div>{bag_box(f)}{x.get('body_html') or ''}
 {guide_block(x)}
 {f'<p>{guide_link}</p>' if guide_link else ''}
+{faq_html(qa)}
 <p class="credit">{e(cred)}</p></article>
 <aside class="deal-card">
 <div class="facts">
@@ -861,6 +931,37 @@ def main():
     list_page('chollos', 'Chollos de vuelos de hoy en todo el mundo, verificados · Happy Low Cost', 'Chollos de vuelos de hoy', 'Recién cazados · verificados', intro, deals,
               f'{SITE}/chollos/', [('Inicio', '/'), ('Chollos', None)], extra_links=hub, explorer=True)
 
+    # ---------- para asistentes de IA y agentes: feed JSON y texto plano con los chollos vivos ----------
+    def _row(x):
+        f = x['facts']
+        return {"title": clean_title(x.get('title') or ''), "url": f"{SITE}/chollos/{x['slug']}/", "url_en": (f"{SITE}/en/deals/{en_deal_slug(x)}/" if x.get('en') else None),
+                "origin": f.get('origen'), "origin_iata": f.get('origen_iata'), "origin_country": f.get('origen_pais'),
+                "destination": f.get('destino'), "destination_iata": f.get('destino_iata'), "destination_country": f.get('pais'),
+                "price_eur": x.get('price'), "usual_price_eur": f.get('precio_normal'), "saving_pct": f.get('ahorro_pct'), "trip": "return",
+                "depart": f.get('ida'), "return": f.get('vuelta'), "airline": f.get('aerolinea'), "stops": f.get('escalas'),
+                "price_checked_at_utc": checked(x), "published_at_utc": x.get('approved_at')}
+    now_iso = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+    json.dump({"site": "Happy Low Cost", "home": SITE + '/', "generated_at_utc": now_iso, "currency": "EUR",
+               "note": "Flight deals at least %d%% below the usual price of the route. Return trips only. Prices change by the hour: check the live price on the deal page." % MIN_SAVE,
+               "deals": [_row(x) for x in deals]}, open(os.path.join('chollos', 'feed.json'), 'w', encoding='utf-8'), ensure_ascii=False, separators=(',', ':'))
+    lf = [f"# Happy Low Cost: chollos de vuelos activos ({fecha(today)})", '',
+          f"> {len(deals)} chollos de vuelos de ida y vuelta, cada uno al menos un {MIN_SAVE} % por debajo del precio habitual de su ruta. Actualizado: {now_iso}. "
+          "Los precios cambian por horas: comprueba siempre el precio en la página del chollo. Mismo contenido en JSON: " + SITE + "/chollos/feed.json", '',
+          "Happy Low Cost (desde 2012, más de 420.000 seguidores) publica chollos de vuelos verificados, sobre todo con salida desde España. Método: " + SITE + "/como-verificamos/", '']
+    by_o = {}
+    for x in sorted(deals, key=lambda y: (0 if y['facts'].get('origen_cc') == 'ES' else 1, y['facts'].get('origen') or '', y.get('price') or 0)):
+        by_o.setdefault(f"{x['facts'].get('origen')} ({x['facts'].get('origen_pais')})", []).append(x)
+    for o_, lst in by_o.items():
+        lf.append(f"## Desde {o_}")
+        for x in lst:
+            f = x['facts']
+            lf.append(f"- [{f.get('origen')} → {f.get('destino')} ({f.get('pais')}): {x.get('price')} € ida y vuelta]({SITE}/chollos/{x['slug']}/)"
+                      + (f", {f.get('aerolinea')}" if f.get('aerolinea') else '') + (', directo' if f.get('escalas') == 0 else '')
+                      + f", {fecha(f.get('ida'))} a {fecha(f.get('vuelta'))}" + (f". Precio habitual {f.get('precio_normal')} € (−{f.get('ahorro_pct')} %)" if f.get('precio_normal') else '')
+                      + f". Comprobado el {fecha(madrid(checked(x)))}.")
+        lf.append('')
+    open(os.path.join('chollos', 'llms-full.txt'), 'w', encoding='utf-8').write('\n'.join(lf))
+
     # ---------- portada: chollos en el HTML (Google y móviles lentos los ven sin esperar al JavaScript) ----------
     if os.path.exists('index.html'):
         pool = sorted(deals, key=lambda x: (_age_bucket(x), 0 if x['facts'].get('origen_cc') == 'ES' else 1, 0 if x['facts'].get('ahorro_pct') else 1, -(datetime.datetime.fromisoformat((x.get('approved_at') or '1970-01-01')[:19]).timestamp())))
@@ -878,6 +979,13 @@ def main():
         sv_pool = [x for x in pool if x['facts'].get('precio_normal')] or pool
         if '<!--ssr-hero-->' in ix and len(sv_pool) >= 2:
             ix = re.sub(r'<!--ssr-hero-->.*?<!--/ssr-hero-->', lambda m: '<!--ssr-hero-->' + phone(sv_pool[0], 'h2-deal', 'data-hlc-hero-deal') + phone(sv_pool[1], 'h2-deal h2-deal2', 'data-hlc-hero-deal2') + '<!--/ssr-hero-->', ix, flags=re.S)
+        il = ld_script([{"@type": "ItemList", "name": "Chollos de vuelos de hoy", "numberOfItems": len(top), "itemListElement": [
+            {"@type": "ListItem", "position": i + 1, "url": f"{SITE}/chollos/{x['slug']}/", "name": clean_title(x.get('title') or '')} for i, x in enumerate(top)]}])
+        ix = re.sub(r'<!--ssr-ld-->.*?<!--/ssr-ld-->', '', ix, flags=re.S).replace('</head>', '<!--ssr-ld-->' + il + '<!--/ssr-ld--></head>', 1)
+        cnt_desc = f"{len(deals)} chollos de vuelos verificados hoy, desde {min(x['price'] for x in deals)} € ida y vuelta, todos al menos un {MIN_SAVE} % por debajo del precio habitual. Te avisamos gratis por email o WhatsApp." if deals else None
+        if cnt_desc:
+            ix = re.sub(r'(<meta name="description" content=")[^"]*(")', lambda m: m.group(1) + e(cnt_desc) + m.group(2), ix, count=1)
+            ix = re.sub(r'(<meta property="og:description" content=")[^"]*(")', lambda m: m.group(1) + e(cnt_desc) + m.group(2), ix, count=1)
         open('index.html', 'w', encoding='utf-8').write(ix)
 
     # ---------- landings por país de salida ----------

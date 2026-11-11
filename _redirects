@@ -1,4 +1,11 @@
 # Happy Low Cost: redirecciones (Cloudflare Pages). Estáticas primero, splats después.
+# 11-nov-2026: sitemap antiguo, feed antiguo de WordPress y texto para IA
+/sitemap.xml /sitemap_index.xml 301
+/wp-sitemap.xml /sitemap_index.xml 301
+/feed /chollos/feed.xml 301
+/feed/ /chollos/feed.xml 301
+/llms-full.txt /chollos/llms-full.txt 200
+/feed.json /chollos/feed.json 200
 /vuelosofertas-de-vuelos /chollos/ 301
 /vuelosofertas-de-vuelos/ /chollos/ 301
 /vuelosofertas-de-vuelos/* /chollos/ 301

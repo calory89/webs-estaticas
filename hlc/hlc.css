@@ -289,3 +289,12 @@ input[type=checkbox]{width:22px;height:22px}
 @keyframes hlcsk{to{background-position:-200% 0}}
 @media (prefers-reduced-motion:reduce){.mapx-load .sk{animation:none}}
 @media (pointer:coarse),(max-width:860px){.mapx-reg button,.chips button{min-height:44px}}
+/* 11-nov-2026: foto de la tarjeta como <img> (alt + carga diferida), respuesta rápida y preguntas en la ficha */
+.dc-ph{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.deal-quick{background:#FFF3D6;border-left:4px solid #FFC531;border-radius:12px;padding:14px 16px;font-size:17px;line-height:1.55;margin:0 0 18px}
+.deal-faq{margin:28px 0 8px}.deal-faq h2{margin:0 0 10px}
+.deal-faq details{border-top:1px solid #EADCC4;padding:12px 0}.deal-faq details:last-child{border-bottom:1px solid #EADCC4}
+.deal-faq summary{cursor:pointer;font:700 17px/1.35 Inter,sans-serif;color:#14213D;list-style:none;display:flex;justify-content:space-between;gap:12px;min-height:28px;align-items:center}
+.deal-faq summary::-webkit-details-marker{display:none}.deal-faq summary:after{content:"+";font-weight:800;color:#FF5A36;font-size:22px;line-height:1}
+.deal-faq details[open] summary:after{content:"–"}.deal-faq details p{margin:8px 0 0;color:#4A5468}
+.skip{position:absolute;left:-999px;top:0;background:#14213D;color:#fff;padding:10px 14px;border-radius:0 0 10px 0;z-index:9999;font:700 15px Inter,sans-serif}.skip:focus{left:0}

@@ -18,7 +18,33 @@
   X-Robots-Tag: noindex, nofollow
 
 /hlc/*.js
-  Cache-Control: public, max-age=86400
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
 
 /hlc/*.css
-  Cache-Control: public, max-age=86400
+  Cache-Control: public, max-age=604800, stale-while-revalidate=86400
+
+/hlc/img/*
+  Cache-Control: public, max-age=2592000, stale-while-revalidate=604800
+
+/hlc/brand/*
+  Cache-Control: public, max-age=604800
+
+/wp-content/uploads/*
+  Cache-Control: public, max-age=2592000
+
+/chollos/:slug/og.jpg
+  Cache-Control: public, max-age=604800
+
+/chollos/feed.json
+  Cache-Control: public, max-age=900
+  Access-Control-Allow-Origin: *
+
+/chollos/llms-full.txt
+  Cache-Control: public, max-age=900
+  Content-Type: text/plain; charset=utf-8
+
+/llms.txt
+  Content-Type: text/plain; charset=utf-8
+
+/favicon.ico
+  Cache-Control: public, max-age=604800
