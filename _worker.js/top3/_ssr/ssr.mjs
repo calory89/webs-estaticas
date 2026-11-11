@@ -16335,6 +16335,21 @@ var overrides_default = {
 		"total": 443.68,
 		"checked": "27 Oct 2026",
 		"reason": "A central budget pick in Vancouver Waterfront, rated 9 from 104 Booking.com reviews."
+	} },
+	"frankfurt-germany": { "Luxury": {
+		"id": 66126,
+		"name": "Steigenberger Icon Frankfurter Hof",
+		"area": "City centre",
+		"address": "Am Kaiserplatz, 60311 Frankfurt/Main",
+		"lat": 50.110155,
+		"lng": 8.675766,
+		"url": "https://www.booking.com/hotel/de/steigenberger-frankfurter-hof.html",
+		"score": 8.6,
+		"count": 2656,
+		"stars": 5,
+		"total": 829,
+		"checked": "11 Nov 2026",
+		"reason": "Frankfurt's classic grand hotel on Kaiserplatz, an official 5-star in the very centre, rated 8.6/10 by 2,656 guests on Booking.com."
 	} }
 };
 var booking_dest_default = {
