@@ -114,9 +114,9 @@ export function gazDevHtml(gz, slug, lang) {
   const tbl = rows => '<div class="k-table-wrap"><table class="k-table k-table--dense k-table--stack">' + head + '<tbody>' + rows.map(r => row(r, lang)).join('') + '</tbody></table></div>';
   let body;
   if (!all.length) body = '<ul class="fl"><li class="kfact">' + esc(t(lang, 'g_none')) + ' ' + srcs + '</li></ul>';
-  else body = '<p><b>' + esc(t(lang, 'g_n', { n: d.total })) + '</b>' + (d.total > all.length ? ' ' + esc(t(lang, 'g_cap', { n: all.length })) : '') + ' ' + srcs + '</p>' + tbl(all.slice(0, 8)) +
-    (all.length > 8 ? '<details><summary>' + esc(t(lang, 'g_more', { n: all.length })) + '</summary>' + tbl(all.slice(8)) + '</details>' : '');
-  return CSS + '<div class="kgz"><p class="ki">' + esc(t(lang, 'g_intro')) + '</p>' + names + '<ul class="kgz-s">' + sl.map(x => '<li>' + esc(x) + '</li>').join('') + '</ul>' + body + '<p class="k-xs"><a href="/api/x/gazette?dev=' + esc(slug) + '">/api/x/gazette</a> · <a href="/data/gazette.json">gazette.json</a></p></div>';
+  else body = '<p><b>' + esc(t(lang, 'g_n', { n: d.total })) + '</b>' + (d.total > all.length ? ' ' + esc(t(lang, 'g_cap', { n: all.length })) : '') + ' ' + srcs + '</p>' + tbl(all.slice(0, 5)) +
+    (all.length > 5 ? '<details><summary>' + esc(t(lang, 'g_more', { n: all.length })) + '</summary>' + tbl(all.slice(5)) + '</details>' : '');
+  return CSS + '<div class="kgz"><p class="ki">' + esc(t(lang, 'g_intro')) + '</p>' + names + '<ul class="kgz-s">' + sl.map(x => '<li>' + esc(x) + '</li>').join('') + '</ul>' + body + '<p class="k-xs"><a href="/api/x/gazette?dev=' + esc(slug) + '"><bdi dir="ltr">/api/x/gazette</bdi></a> · <a href="/data/gazette.json"><bdi dir="ltr">gazette.json</bdi></a></p></div>';
 }
 
 // ------------------------------------------------------------------------------------------------ JSON API
