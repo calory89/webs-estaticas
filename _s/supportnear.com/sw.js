@@ -10,7 +10,7 @@ const TILES = V + '-tiles';
 // porque este fichero cambia con cada publicacion (BUILD es la huella de la
 // portada): el navegador instala el nuevo, guarda la portada nueva y la app ensena
 // «Hay una version nueva». V no cambia: asi no se borran las teselas guardadas.
-const BUILD = /*__BUILD__*/'1a4bf48ad9';
+const BUILD = /*__BUILD__*/'5a5b2ed54b';
 const SHELL = /*__SHELL__*/["./a/leaflet-1db10cdc26.js", "./a/app-d7e3f231e7.js"];
 // Lo que el usuario ha guardado a proposito para usarlo sin internet.
 // Va en su propia cache y NUNCA se borra por hacer sitio: si alguien se
