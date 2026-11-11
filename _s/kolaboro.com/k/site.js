@@ -977,7 +977,7 @@ document.addEventListener('click',function(e){var b=e.target.closest&&e.target.c
   function scrollers() {
     if (!('IntersectionObserver' in window)) return;
     var io = new IntersectionObserver(function (es) { es.forEach(function (x) { if (x.isIntersecting) { io.unobserve(x.target); one(x.target); } }); }, { rootMargin: '200px' });
-    q('.eg-code,.api-b,.bm-code,.wq-tw,.tw,pre,.ship-v').forEach(function (el) { io.observe(el); });
+    q('.eg-code,.api-b,.bm-code,.wq-tw,.tw,.pi-tw,.y-scroll,.h-tw,.sh-tw,pre,.ship-v').forEach(function (el) { io.observe(el); });
   }
   if (D.readyState === 'complete') setTimeout(scrollers, 300); else addEventListener('load', function () { setTimeout(scrollers, 300); });
   // empty header cells (corner of a comparison table) are presentational
