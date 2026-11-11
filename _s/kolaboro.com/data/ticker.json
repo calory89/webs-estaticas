@@ -3,6 +3,20 @@
  "items": [
   {
    "date": "2026-11-11",
+   "kind": "shipped",
+   "text": "Stricter script rules on every page: a script runs only when our own page loaded it, so injected code is blocked by the browser; tested first on 271 pages, every tool, the portal and the admin",
+   "tl": {
+    "es": "Reglas de scripts más estrictas en todas las páginas: un script solo se ejecuta si lo cargó nuestra propia página, así el navegador bloquea el código inyectado; probado antes en 271 páginas, todas las herramientas, el portal y la administración",
+    "fr": "Règles de scripts plus strictes sur toutes les pages : un script ne s'exécute que si notre propre page l'a chargé, le navigateur bloque donc le code injecté ; testé d'abord sur 271 pages, tous les outils, le portail et l'administration",
+    "de": "Strengere Skriptregeln auf jeder Seite: Ein Skript läuft nur, wenn unsere eigene Seite es geladen hat, eingeschleuster Code wird vom Browser blockiert; zuvor auf 271 Seiten, mit allen Werkzeugen, dem Portal und der Verwaltung getestet",
+    "nl": "Strengere scriptregels op elke pagina: een script draait alleen als onze eigen pagina het heeft geladen, dus geïnjecteerde code wordt door de browser geblokkeerd; eerst getest op 271 pagina's, alle tools, het portaal en het beheer",
+    "ru": "Более строгие правила для скриптов на каждой странице: скрипт выполняется, только если его загрузила наша страница, поэтому внедрённый код блокируется браузером; сначала проверено на 271 странице, во всех инструментах, в кабинете и в админке",
+    "zh": "所有页面采用更严格的脚本规则：只有我们自己的页面加载的脚本才能运行，被注入的代码会被浏览器拦截；上线前已在 271 个页面、所有工具、用户门户和管理后台测试",
+    "ar": "قواعد أكثر صرامة للسكربتات في كل صفحة: لا يعمل السكربت إلا إذا حمّلته صفحتنا نفسها، فيحظر المتصفح أي كود محقون؛ اختُبر أولًا على 271 صفحة وكل الأدوات والبوابة ولوحة الإدارة"
+   }
+  },
+  {
+   "date": "2026-11-11",
    "kind": "data",
    "text": "50 more projects added in 21 countries, from the UAE, Spain and the UK to Australia, Malaysia and Greece (1,174 tracked in total): each has its developer page, the handover date as published or \"not published\", and a source link for every fact; none is reviewed or scored yet",
    "tl": {
