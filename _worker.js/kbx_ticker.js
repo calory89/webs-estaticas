@@ -8,7 +8,7 @@ const MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const day = s => { const x = new Date(String(s).slice(0, 10) + 'T00:00:00Z'); return isNaN(x) ? '' : MON[x.getUTCMonth()] + ' ' + x.getUTCDate(); };
 let C = { t: 0, h: null };
-const SITE_V = 'n21e331171ae'; // bump when _s/kolaboro.com/k/site.js changes (pages hard-code an older ?v=)
+const SITE_V = 'n21ea357d636'; // bump when _s/kolaboro.com/k/site.js changes (pages hard-code an older ?v=)
 
 async function file(env, n) {
   try { const r = await env.ASSETS.fetch(new Request(ORIGIN + '/_s/kolaboro.com/data/' + n)); if (r.ok) return await r.json(); } catch (e) {}
